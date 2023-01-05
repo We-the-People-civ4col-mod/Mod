@@ -46211,9 +46211,9 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_HARDWOOD_START</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_HARDWOOD_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -46231,13 +46231,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46250,17 +46250,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartPortRoyalTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46602,9 +46602,9 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_FOOD_START</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_FOOD_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -46622,13 +46622,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46641,17 +46641,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartPortRoyalTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46927,9 +46927,9 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_STONE_START</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_STONE_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -46947,13 +46947,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46966,17 +46966,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartPortRoyalTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -47252,9 +47252,9 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_LUMBER_START</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_LUMBER_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -47272,13 +47272,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -47291,17 +47291,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartPortRoyalTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -47577,9 +47577,9 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_CLAY_START</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_CLAY_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -47597,13 +47597,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -47616,17 +47616,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartPortRoyalTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -47902,9 +47902,9 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_START</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -47922,13 +47922,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -47941,17 +47941,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartPortRoyalTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -48293,9 +48293,9 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_BEER_START</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_BEER_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -48313,13 +48313,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -48332,17 +48332,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartPortRoyalTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -48618,9 +48618,9 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_HOOCH_START</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_HOOCH_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -48638,13 +48638,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -48657,17 +48657,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartPortRoyalTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -48943,9 +48943,9 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_BLACK_POWDER_START</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_BLACK_POWDER_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -48963,13 +48963,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -48982,17 +48982,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartPortRoyalTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -49334,9 +49334,9 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_YERBA_TEA_START</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_YERBA_TEA_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -49354,13 +49354,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -49373,17 +49373,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartPortRoyalTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -50699,6 +50699,72 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_FOOD_DONE_3</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_3</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MULATTO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_FOOD_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_FOOD</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_FOOD_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_4</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
@@ -50716,6 +50782,72 @@
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
 			<UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
+			<iNumFreeUnits>2</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_FOOD_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_FOOD</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_FOOD_DONE_5</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_5</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_SLAVE_HUNTER</UnitClass>
 			<iNumFreeUnits>2</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -50958,6 +51090,72 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_LUMBER_DONE_3</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_3</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MULATTO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_LUMBER_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_LUMBER</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_LUMBER_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_4</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
@@ -50975,6 +51173,72 @@
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
 			<UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
+			<iNumFreeUnits>2</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_LUMBER_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_LUMBER</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_LUMBER_DONE_5</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_5</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_SLAVE_HUNTER</UnitClass>
 			<iNumFreeUnits>2</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -51217,7 +51481,139 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_STONE_DONE_3</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_3</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MULATTO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_STONE_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_STONE</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_STONE_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_4</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
+			<iNumFreeUnits>2</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_STONE_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_STONE</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_STONE_DONE_5</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_5</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -51476,6 +51872,72 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_HORSES_DONE_3</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_3</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MULATTO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_HORSES_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_HORSES</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_HORSES_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_4</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
@@ -51493,6 +51955,72 @@
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
 			<UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
+			<iNumFreeUnits>2</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_HORSES_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_HORSES</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_HORSES_DONE_5</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_5</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_SLAVE_HUNTER</UnitClass>
 			<iNumFreeUnits>2</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -51735,7 +52263,139 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_ORE_DONE_3</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_3</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MULATTO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_ORE_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_ORE</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_ORE_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_4</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
+			<iNumFreeUnits>2</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_ORE_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_ORE</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_ORE_DONE_5</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_5</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -51994,6 +52654,72 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_SILVER_DONE_3</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_3</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MULATTO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_SILVER_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_SILVER</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_SILVER_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_4</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
@@ -52011,6 +52737,72 @@
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
 			<UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
+			<iNumFreeUnits>2</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_SILVER_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_SILVER</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_SILVER_DONE_5</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_5</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_SLAVE_HUNTER</UnitClass>
 			<iNumFreeUnits>2</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -52253,7 +53045,139 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_CATTLE_DONE_3</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_3</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MULATTO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_CATTLE_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_CATTLE</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_CATTLE_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_4</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
+			<iNumFreeUnits>2</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_CATTLE_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_CATTLE</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_CATTLE_DONE_5</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_5</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -52512,6 +53436,72 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_SHEEP_DONE_3</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_3</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MULATTO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_SHEEP_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_SHEEP</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_SHEEP_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_4</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
@@ -52529,6 +53519,72 @@
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
 			<UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
+			<iNumFreeUnits>2</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_SHEEP_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_SHEEP</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_SHEEP_DONE_5</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_5</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_SLAVE_HUNTER</UnitClass>
 			<iNumFreeUnits>2</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -52771,7 +53827,139 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_TOOLS_DONE_3</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_3</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MULATTO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_TOOLS_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_TOOLS</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_TOOLS_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_4</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
+			<iNumFreeUnits>2</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_TOOLS_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_TOOLS</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_TOOLS_DONE_5</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_5</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -53030,6 +54218,72 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_GUNS_DONE_3</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_3</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MULATTO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_GUNS_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_MUSKETS</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_GUNS_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_4</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
@@ -53047,6 +54301,72 @@
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
 			<UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
+			<iNumFreeUnits>2</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_GUNS_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_MUSKETS</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_GUNS_DONE_5</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_5</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_SLAVE_HUNTER</UnitClass>
 			<iNumFreeUnits>2</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -53289,7 +54609,139 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_CLOTH_DONE_3</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_3</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MULATTO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_CLOTH_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_CLOTH</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_CLOTH_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_4</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
+			<iNumFreeUnits>2</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_CLOTH_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_CLOTH</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_CLOTH_DONE_5</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_5</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -53548,6 +55000,72 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_SALT_DONE_3</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_3</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MULATTO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_SALT_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_SALT</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_SALT_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_4</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
@@ -53565,6 +55083,72 @@
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
 			<UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
+			<iNumFreeUnits>2</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_SALT_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_SALT</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_SALT_DONE_5</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_5</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_SLAVE_HUNTER</UnitClass>
 			<iNumFreeUnits>2</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -53807,7 +55391,139 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_SPICES_DONE_3</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_3</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MULATTO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_SPICES_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_SPICES</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_SPICES_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_4</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
+			<iNumFreeUnits>2</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_SPICES_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_SPICES</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_SPICES_DONE_5</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_5</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -54066,6 +55782,72 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_COCA_LEAVES_DONE_3</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_3</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MULATTO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_COCA_LEAVES_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_COCA_LEAVES</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_COCA_LEAVES_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_4</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
@@ -54083,6 +55865,72 @@
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
 			<UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
+			<iNumFreeUnits>2</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_COCA_LEAVES_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_COCA_LEAVES</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_COCA_LEAVES_DONE_5</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_5</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_SLAVE_HUNTER</UnitClass>
 			<iNumFreeUnits>2</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -54324,8 +56172,140 @@
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
-			<Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE_3</Type>
+			<Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_4</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MULATTO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_TRADE_GOODS</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE_4</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_4</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
+			<iNumFreeUnits>2</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneAfricaTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneAfricaTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_TRADE_GOODS</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE_5</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_5</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -54849,9 +56829,9 @@
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_INDIGO_START</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_INDIGO_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -54869,13 +56849,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -54888,17 +56868,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartAfricaTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -55240,9 +57220,9 @@
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_LOGWOOD_START</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_LOGWOOD_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -55260,13 +57240,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -55279,17 +57259,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartAfricaTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -55697,9 +57677,9 @@
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_COCHINEAL_START</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_COCHINEAL_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -55717,13 +57697,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -55736,17 +57716,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartAfricaTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -56154,9 +58134,9 @@
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_COFFEE_BERRIES_START</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_COFFEE_BERRIES_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -56174,13 +58154,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -56193,17 +58173,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartAfricaTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -56611,9 +58591,9 @@
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_PEANUTS_START</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_PEANUTS_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -56631,13 +58611,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -56650,17 +58630,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartAfricaTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -57068,9 +59048,9 @@
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_RED_PEPPER_START</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_RED_PEPPER_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -57088,13 +59068,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -57107,17 +59087,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartAfricaTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -57525,9 +59505,9 @@
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_VANILLA_PODS_START</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_VANILLA_PODS_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -57545,13 +59525,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -57564,17 +59544,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartAfricaTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -57916,9 +59896,9 @@
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_MAPLE_SIRUP_START</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_MAPLE_SIRUP_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -57936,13 +59916,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -57955,17 +59935,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartAfricaTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -58373,9 +60353,9 @@
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_KAUTSCHUK_START</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_KAUTSCHUK_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -58393,13 +60373,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -58412,17 +60392,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartAfricaTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
