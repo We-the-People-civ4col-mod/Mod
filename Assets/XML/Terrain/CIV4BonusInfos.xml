@@ -84,6 +84,10 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -489,6 +493,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -790,6 +798,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -1035,6 +1047,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -1233,6 +1249,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -1437,6 +1457,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -1638,6 +1662,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -1787,6 +1815,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -1917,6 +1949,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -2043,6 +2079,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2177,6 +2217,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2315,6 +2359,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2536,6 +2584,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -2650,6 +2702,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2779,6 +2835,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -2901,6 +2961,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -3020,6 +3084,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -3258,6 +3326,10 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -3376,6 +3448,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -3728,6 +3804,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -4600,6 +4680,10 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -4719,6 +4803,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -4845,6 +4933,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -6326,6 +6418,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -7322,6 +7418,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -7452,6 +7552,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -7574,6 +7678,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -7693,6 +7801,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -7827,6 +7939,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -7977,6 +8093,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -8236,6 +8356,10 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -8377,6 +8501,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -9270,6 +9398,10 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -9397,6 +9529,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -9542,6 +9678,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -9964,6 +10104,10 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -10187,6 +10331,10 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -10312,6 +10460,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -10444,6 +10596,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -10558,6 +10714,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -10734,6 +10894,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -10848,6 +11012,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -10972,6 +11140,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -11090,6 +11262,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -11284,6 +11460,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -11402,6 +11582,10 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -11517,6 +11701,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -11764,6 +11952,10 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -11873,6 +12065,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -11975,6 +12171,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -12096,6 +12296,10 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -12211,6 +12415,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -12352,6 +12560,10 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -12475,6 +12687,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -12645,6 +12861,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -12893,6 +13113,10 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -13135,6 +13359,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
