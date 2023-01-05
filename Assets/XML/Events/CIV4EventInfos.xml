@@ -10550,7 +10550,7 @@
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
 			<UnitClass>NONE</UnitClass>
-			<iNumFreeUnits/>
+			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
@@ -10809,7 +10809,7 @@
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
 			<UnitClass>NONE</UnitClass>
-			<iNumFreeUnits/>
+			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
@@ -28461,7 +28461,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<UnitClass/>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>1</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -28644,7 +28644,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<UnitClass/>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -50567,7 +50567,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_FOOD_DONE_1</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_1</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -50633,7 +50633,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_FOOD_DONE_2</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -50699,7 +50699,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_FOOD_DONE_3</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -50826,7 +50826,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_LUMBER_DONE_1</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_1</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -50892,7 +50892,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_LUMBER_DONE_2</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -50958,7 +50958,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_LUMBER_DONE_3</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -51085,7 +51085,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_STONE_DONE_1</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_1</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -51151,7 +51151,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_STONE_DONE_2</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -51217,7 +51217,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_STONE_DONE_3</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -51344,7 +51344,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_HORSES_DONE_1</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_1</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -51410,7 +51410,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_HORSES_DONE_2</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -51476,7 +51476,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_HORSES_DONE_3</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -51603,7 +51603,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_ORE_DONE_1</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_1</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -51669,7 +51669,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_ORE_DONE_2</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -51735,7 +51735,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_ORE_DONE_3</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -51862,7 +51862,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_SILVER_DONE_1</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_1</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -51928,7 +51928,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_SILVER_DONE_2</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -51994,7 +51994,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_SILVER_DONE_3</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -52121,7 +52121,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_CATTLE_DONE_1</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_1</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -52187,7 +52187,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_CATTLE_DONE_2</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -52253,7 +52253,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_CATTLE_DONE_3</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -52380,7 +52380,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_SHEEP_DONE_1</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_1</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -52446,7 +52446,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_SHEEP_DONE_2</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -52512,7 +52512,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_SHEEP_DONE_3</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -52639,7 +52639,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_TOOLS_DONE_1</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_1</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -52705,7 +52705,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_TOOLS_DONE_2</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -52771,7 +52771,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_TOOLS_DONE_3</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -52898,7 +52898,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_GUNS_DONE_1</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_1</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -52964,7 +52964,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_GUNS_DONE_2</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -53030,7 +53030,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_GUNS_DONE_3</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -53157,7 +53157,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_CLOTH_DONE_1</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_1</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -53223,7 +53223,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_CLOTH_DONE_2</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -53289,7 +53289,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_CLOTH_DONE_3</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -53416,7 +53416,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_SALT_DONE_1</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_1</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -53482,7 +53482,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_SALT_DONE_2</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -53548,7 +53548,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_SALT_DONE_3</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -53675,7 +53675,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_SPICES_DONE_1</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_1</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -53741,7 +53741,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_SPICES_DONE_2</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -53807,7 +53807,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_SPICES_DONE_3</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -53934,7 +53934,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_COCA_LEAVES_DONE_1</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_1</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -54000,7 +54000,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_COCA_LEAVES_DONE_2</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -54066,7 +54066,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_COCA_LEAVES_DONE_3</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -54193,7 +54193,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE_1</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_1</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -54259,7 +54259,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE_2</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -54325,7 +54325,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE_3</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
