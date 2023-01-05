@@ -6382,6 +6382,10 @@
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -7551,6 +7555,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -8729,6 +8737,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -9912,6 +9924,10 @@
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -11092,6 +11108,10 @@
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -12263,6 +12283,10 @@
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -13431,6 +13455,10 @@
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -14597,6 +14625,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -15788,6 +15820,10 @@
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -16969,6 +17005,10 @@
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -18137,6 +18177,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -19330,6 +19374,10 @@
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -20500,6 +20548,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -21674,6 +21726,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -22851,6 +22907,10 @@
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -24023,6 +24083,10 @@
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -25193,6 +25257,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -26376,6 +26444,10 @@
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -27526,6 +27598,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -28709,6 +28785,10 @@
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -29876,6 +29956,10 @@
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -31037,6 +31121,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -32205,6 +32293,10 @@
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -33360,6 +33452,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -34533,6 +34629,10 @@
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -35700,6 +35800,10 @@
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -36862,6 +36966,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -38027,6 +38135,10 @@
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -39190,6 +39302,10 @@
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -40345,6 +40461,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -41617,6 +41737,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SLAVE_BARQUE</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
