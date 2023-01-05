@@ -5010,32 +5010,6 @@ def canTriggerPortRoyalTradeQuest_SPICES_DONE(argsList):
 	
 	return bTrigger
 
-def canTriggerPortRoyalTradeQuest_SPICES_START(argsList):
-	
-	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
-	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_SPICES_START")
-	event = gc.getEventInfo(eEvent)
-	iYieldID = event.getGenericParameter(2)
-	iQuantity = event.getGenericParameter(1) # for Quest Start this should be e.g. 200
-
-	# Now we call the Generic Helper Function
-	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
-	
-	return bTrigger
-
-def canTriggerPortRoyalTradeQuest_SPICES_DONE(argsList):
-	
-	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
-	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE_1")
-	event = gc.getEventInfo(eEvent)
-	iYieldID = event.getGenericParameter(2)
-	iQuantity = event.getGenericParameter(1) # for Quest Done this should be e.g. 1000
-
-	# Now we call the Generic Helper Function
-	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
-	
-	return bTrigger
-
 def canTriggerPortRoyalTradeQuest_SALT_START(argsList):
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
@@ -5313,6 +5287,293 @@ def canTriggerPortRoyalTradeQuest_HARDWOOD_DONE(argsList):
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_HARDWOOD_DONE_1")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Done this should be e.g. 1000
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerPortRoyalTradeQuest_FOOD_START(argsList):
+	
+	# Read Parameters 12 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_FOOD_START")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Start this should be e.g. 200
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerPortRoyalTradeQuest_FOOD_DONE(argsList):
+	
+	# Read Parameters 12 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_FOOD_DONE_1")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Done this should be e.g. 1000
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerPortRoyalTradeQuest_STONE_START(argsList):
+	
+	# Read Parameters 12 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_STONE_START")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Start this should be e.g. 200
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerPortRoyalTradeQuest_STONE_DONE(argsList):
+	
+	# Read Parameters 12 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_STONE_DONE_1")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Done this should be e.g. 1000
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerPortRoyalTradeQuest_LUMBER_START(argsList):
+	
+	# Read Parameters 12 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_LUMBER_START")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Start this should be e.g. 200
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerPortRoyalTradeQuest_LUMBER_DONE(argsList):
+	
+	# Read Parameters 12 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_LUMBER_DONE_1")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Done this should be e.g. 1000
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerPortRoyalTradeQuest_CLAY_START(argsList):
+	
+	# Read Parameters 12 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_CLAY_START")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Start this should be e.g. 200
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerPortRoyalTradeQuest_CLAY_DONE(argsList):
+	
+	# Read Parameters 12 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_CLAY_DONE_1")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Done this should be e.g. 1000
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerPortRoyalTradeQuest_BAKERY_GOODS_START(argsList):
+	
+	# Read Parameters 12 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_START")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Start this should be e.g. 200
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerPortRoyalTradeQuest_BAKERY_GOODS_DONE(argsList):
+	
+	# Read Parameters 12 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE_1")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Done this should be e.g. 1000
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerPortRoyalTradeQuest_BEER_START(argsList):
+	
+	# Read Parameters 12 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_BEER_START")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Start this should be e.g. 200
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerPortRoyalTradeQuest_BEER_DONE(argsList):
+	
+	# Read Parameters 12 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_BEER_DONE_1")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Done this should be e.g. 1000
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerPortRoyalTradeQuest_HOOCH_START(argsList):
+	
+	# Read Parameters 12 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_HOOCH_START")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Start this should be e.g. 200
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerPortRoyalTradeQuest_HOOCH_DONE(argsList):
+	
+	# Read Parameters 12 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_HOOCH_DONE_1")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Done this should be e.g. 1000
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+
+def canTriggerPortRoyalTradeQuest_YERBA_TEA_START(argsList):
+	
+	# Read Parameters 12 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_YERBA_TEA_START")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Start this should be e.g. 200
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerPortRoyalTradeQuest_YERBA_TEA_DONE(argsList):
+	
+	# Read Parameters 12 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_YERBA_TEA_DONE_1")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Done this should be e.g. 1000
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerPortRoyalTradeQuest_BLACK_POWDER_START(argsList):
+	
+	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_BLACK_POWDER_START")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Start this should be e.g. 200
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerPortRoyalTradeQuest_BLACK_POWDER_DONE(argsList):
+	
+	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_BLACK_POWDER_DONE_1")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Done this should be e.g. 1000
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerPortRoyalTradeQuest_RICE_START(argsList):
+	
+	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_RICE_START")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Start this should be e.g. 200
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerPortRoyalTradeQuest_RICE_DONE(argsList):
+	
+	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_RICE_DONE_1")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Done this should be e.g. 1000
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerPortRoyalTradeQuest_CASSAVA_START(argsList):
+	
+	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_CASSAVA_START")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Start this should be e.g. 200
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerPortRoyalTradeQuest_CASSAVA_DONE(argsList):
+	
+	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_PORTROYAL_TRADE_QUEST_CASSAVA_DONE_1")
 	event = gc.getEventInfo(eEvent)
 	iYieldID = event.getGenericParameter(2)
 	iQuantity = event.getGenericParameter(1) # for Quest Done this should be e.g. 1000

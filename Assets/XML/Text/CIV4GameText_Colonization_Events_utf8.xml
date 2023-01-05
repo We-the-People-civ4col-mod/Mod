@@ -2705,6 +2705,21 @@
         <German>Das ist ein hervorragendes Angebot! Wir kaufen die Galleone gerne zu diesem Preis.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_THREE_GALLEONS</Tag>
+        <English>Milord, his Majesty is worried that our treasure fleet is not protected enough. Thus his Majesty offers us a mighty [COLOR_HIGHLIGHT_TEXT]royal frigate[COLOR_REVERT] for a discounted price to ensure safe passage.</English>
+        <German>Milord, Ihre Majestät ist besorgt, dass unsere Schatzflotte nicht genug geschützt ist. Daher bietet uns Ihre Majestät eine mächtige [COLOR_HIGHLIGHT_TEXT]Königliche Fregatte[COLOR_REVERT] zu einem günstigen Preis an, um eine sichere Überfahrt zu gewährleisten.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_THREE_GALLEONS_1</Tag>
+        <English>We kindly refuse this offer. We do not require another war ship to protect our treasure fleet.</English>
+        <German>Wir lehnen höflichst ab. Wir benötigen kein weiteres Kriegsschiff zum Schutz unserer Schatzflotte.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_THREE_GALLEONS_2</Tag>
+        <English>We of course accept. We could never turn down this unique opportunity to acquire such a mighty ship</English>
+        <German>Wir nehmen das Angebot natürlich an. Wir könnten niemals diese einzigartige Gelegenheit zum Erwerb eines solch mächtigen Schifes ablehnen.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BURNING_CORN_CHAMBER</Tag>
         <English>A corn chamber in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] caught fire.</English>
         <French>Un grenier à maïs à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a pris feu.</French>
@@ -3594,44 +3609,49 @@
         <German>Wir werden der Aufforderung des Gouverneurs nachkommen!</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1_COLONIES</Tag>
+        <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1</Tag>
         <English>The governor isn't a rich man, but he can enforce higher sales prices!</English>
         <German>Der Gouverneur ist kein reicher Mann, aber höhere Verkaufspreise kann er durchsetzten!</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2_COLONIES</Tag>
+        <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2</Tag>
         <English>For the glory and wealth of our colonies! Let the smuggling with Port Royal flourish! However, the king will not be very pleased!</English>
         <German>Für Ruhm und Reichtum unserer Kolonien! Möge der Schmuggel mit Port Royal erblühen! Allerdings wird der König nicht sehr erfreut sein!</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_3_COLONIES</Tag>
+        <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_3</Tag>
         <English>For the glory and wealth of our colonies! Death and destruction to foreign merchant fleets!</English>
         <German>Für Ruhm und Reichtum unserer Kolonien! Tod und verderben den fremden Handelsflotten!</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_4_COLONIES</Tag>
+        <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_4</Tag>
         <English>For the glory and wealth of our colonies! Let's sink the enemy fleets!</English>
         <German>Für Ruhm und Reichtum unserer Kolonien! Lasst uns die gegnerischen Flotten versenken!</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_5_COLONIES</Tag>
+        <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_5</Tag>
         <English>For the glory and wealth of our colonies! Hopefully the mercenaries will not turn against us!</English>
         <German>Für Ruhm und Reichtum unserer Kolonien! Hoffentlich wenden sich die Söldner nicht gegen uns!</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6_COLONIES</Tag>
+        <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6</Tag>
         <English>For the glory and wealth of our colonies! The natives seem to have skillful hands!</English>
         <German>Für Ruhm und Reichtum unserer Kolonien! Die Ureinwohner scheinen geschickte Hände zu haben!</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7_COLONIES</Tag>
+        <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Tag>
         <English>For the glory and wealth of our colonies! Mestizzos? They can certainly also grip well!</English>
         <German>Für Ruhm und Reichtum unserer Kolonien! Mestizzos? Die können bestimmt auch gut zupacken!</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_8_COLONIES</Tag>
+        <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_8</Tag>
         <English>For the glory and wealth of our colonies! Finally we can now also transfer specialists from Port Royal!</English>
         <German>Für Ruhm und Reichtum unserer Kolonien! Endlich können wir jetzt auch Spezialisten von Port Royal überführen!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_9</Tag>
+        <English>For the glory and wealth of our colonies! Such specialists only gets here!</English>
+        <German>Für Ruhm und Reichtum unserer Kolonien! Solche Spezialisten bekommt nur hier!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_YIELD_AND_TARGET_AMOUNT_HELP</Tag>
@@ -5398,6 +5418,281 @@
         <English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] from PortRoyal.</English>
         <German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Harthölzern[COLOR_REVERT] in PortRoyal zu werden.</German>
     </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FOOD_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]food[COLOR_REVERT] from PortRoyal has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit PortRoyal hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FOOD_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]food[COLOR_REVERT] from PortRoyal.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit PortRoyal zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_FOOD_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]food[COLOR_REVERT] from PortRoyal.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit PortRoyal begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_FOOD_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]food[COLOR_REVERT] from PortRoyal.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] in PortRoyal zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_FOOD_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]food[COLOR_REVERT] from PortRoyal.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] in PortRoyal zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_STONE_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]STONE[COLOR_REVERT] from PortRoyal has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]STONE[COLOR_REVERT] mit PortRoyal hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_STONE_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]stone[COLOR_REVERT] from PortRoyal.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] mit PortRoyal zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_STONE_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]stone[COLOR_REVERT] from PortRoyal.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] mit PortRoyal begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_STONE_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]stone[COLOR_REVERT] from PortRoyal.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Steine[COLOR_REVERT] in PortRoyal zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_STONE_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]stone[COLOR_REVERT] from PortRoyal.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] in PortRoyal zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]lumber[COLOR_REVERT] from PortRoyal has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit PortRoyal hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]lumber[COLOR_REVERT] from PortRoyal.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit PortRoyal zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]lumber[COLOR_REVERT] from PortRoyal.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit PortRoyal begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_LUMBER_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]lumber[COLOR_REVERT] from PortRoyal.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] in PortRoyal zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]lumber[COLOR_REVERT] from PortRoyal.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] in PortRoyal zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CLAY_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]clay[COLOR_REVERT] from PortRoyal has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Tonerde[COLOR_REVERT] mit PortRoyal hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CLAY_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]clay[COLOR_REVERT] from PortRoyal.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Tonerde[COLOR_REVERT] mit PortRoyal zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CLAY_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]clay[COLOR_REVERT] from PortRoyal.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Tonerde[COLOR_REVERT] mit PortRoyal begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_CLAY_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]clay[COLOR_REVERT] from PortRoyal.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Tonerde[COLOR_REVERT] in PortRoyal zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CLAY_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]clay[COLOR_REVERT] from PortRoyal.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Tonerde[COLOR_REVERT] in PortRoyal zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]baker goods[COLOR_REVERT] from PortRoyal has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit PortRoyal hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]baker goods[COLOR_REVERT] from PortRoyal.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit PortRoyal zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]baker goods[COLOR_REVERT] from PortRoyal.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit PortRoyal begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]baker goods[COLOR_REVERT] from PortRoyal.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] in PortRoyal zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]baker goods[COLOR_REVERT] from PortRoyal.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] in PortRoyal zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BEER_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]beer[COLOR_REVERT] from PortRoyal has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit PortRoyal hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BEER_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]beer[COLOR_REVERT] from PortRoyal.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit PortRoyal zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BEER_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]beer[COLOR_REVERT] from PortRoyal.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit PortRoyal begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_BEER_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]beer[COLOR_REVERT] from PortRoyal.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Bier[COLOR_REVERT] in PortRoyal zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BEER_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]beer[COLOR_REVERT] from PortRoyal.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Bier[COLOR_REVERT] in PortRoyal zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_HOOCH_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]hooch[COLOR_REVERT] from PortRoyal has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Fusel[COLOR_REVERT] mit PortRoyal hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_HOOCH_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]hooch[COLOR_REVERT] from PortRoyal.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Fusel[COLOR_REVERT] mit PortRoyal zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_HOOCH_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]hooch[COLOR_REVERT] from PortRoyal.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Fusel[COLOR_REVERT] mit PortRoyal begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_HOOCH_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]hooch[COLOR_REVERT] from PortRoyal.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Fusel[COLOR_REVERT] in PortRoyal zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_HOOCH_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]hooch[COLOR_REVERT] from PortRoyal.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Fusel[COLOR_REVERT] in PortRoyal zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_YERBA_TEA_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]yerba tea[COLOR_REVERT] from PortRoyal has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Yerba-Tee[COLOR_REVERT] mit PortRoyal hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_YERBA_TEA_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]yerba tea[COLOR_REVERT] from PortRoyal.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Yerba-Tee[COLOR_REVERT] mit PortRoyal zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_YERBA_TEA_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]yerba tea[COLOR_REVERT] from PortRoyal.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Yerba-Tee[COLOR_REVERT] mit PortRoyal begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_YERBA_TEA_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]yerba tea[COLOR_REVERT] from PortRoyal.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Yerba-Tee[COLOR_REVERT] in PortRoyal zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_YERBA_TEA_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]yerba tea[COLOR_REVERT] from PortRoyal.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Yerba-Tee[COLOR_REVERT] in PortRoyal zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]black powder[COLOR_REVERT] from PortRoyal has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit PortRoyal hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]black powder[COLOR_REVERT] from PortRoyal.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit PortRoyal zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]black powder[COLOR_REVERT] from PortRoyal.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit PortRoyal begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_BLACK_POWDER_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]black powder[COLOR_REVERT] from PortRoyal.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] in PortRoyal zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]black powder[COLOR_REVERT] from PortRoyal.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] in PortRoyal zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_RICE_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]rice[COLOR_REVERT] from PortRoyal has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit PortRoyal hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_RICE_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]rice[COLOR_REVERT] from PortRoyal.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit PortRoyal zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_RICE_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]rice[COLOR_REVERT] from PortRoyal.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit PortRoyal begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_RICE_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]rice[COLOR_REVERT] from PortRoyal.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Reis[COLOR_REVERT] in PortRoyal zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_RICE_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]rice[COLOR_REVERT] from PortRoyal.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Reis[COLOR_REVERT] in PortRoyal zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CASSAVA_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]cassava[COLOR_REVERT] from PortRoyal has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit PortRoyal hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CASSAVA_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]cassava[COLOR_REVERT] from PortRoyal.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit PortRoyal zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CASSAVA_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]cassava[COLOR_REVERT] from PortRoyal.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit PortRoyal begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_CASSAVA_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]cassava[COLOR_REVERT] from PortRoyal.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] in PortRoyal zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CASSAVA_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]cassava[COLOR_REVERT] from PortRoyal.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] in PortRoyal zu werden.</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_START</Tag>
         <English>We will fulfill the orders of his Majesty!</English>

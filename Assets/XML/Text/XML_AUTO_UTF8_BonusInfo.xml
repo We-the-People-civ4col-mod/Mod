@@ -63,6 +63,20 @@
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Gerste[COLOR_REVERT] wächst in hügeligem [LINK=TERRAIN_GRASS]Grasland[\LINK]. Gelegentlich können besonders gute Anbaugebiete für Gerste auch von [LINK=FEATURE_FOREST]Wald[\LINK] oder [LINK=FEATURE_LIGHT_FOREST]Buschland[\LINK] überwachsen sein.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Gerste[COLOR_REVERT] ist eine der ältesten Getreidesorten, die die Menschheit kennt. Bezüglich des Stärkegehalts und der Mehlerzeugung ist sie nicht so ergiebig, wie andere Getreidesorten, so zum Beispiel Weizen, aber sie eignet sich hervorragend zur Herstellung von Bier.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BONUS_WHEAT</Tag>
+        <English>Wheat</English>
+        <German>
+            <Text>Weizen</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_WHEAT_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT] grows on flat [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_PLAINS_FERTILE]plains[\LINK] terrain that is either open or overgrown by [LINK=FEATURE_LIGHT_FOREST]light forest[\LINK]. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT] is one of the oldest types of corn humanity knows. It is commonly the most used plant for making flour.</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Weizen[COLOR_REVERT] wächst in hügeligem [LINK=TERRAIN_GRASS]Grasland[\LINK] und [LINK=TERRAIN_PLAINS_FERTILE]fruchtbaren Ebenen[\LINK]. Gelegentlich können besonders gute Anbaugebiete für Gerste auch von [LINK=FEATURE_FOREST]Wald[\LINK] oder [LINK=FEATURE_LIGHT_FOREST]Buschland[\LINK] überwachsen sein.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Weizen[COLOR_REVERT] ist eine der ältesten Getreidesorten, die die Menschheit kennt. Bezüglich des Stärkegehalts zur Mehlerzeugung ist sie Weizen die ergiebigste Getreidesorte.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BONUS_BISON</Tag>
         <English>Bison</English>
         <French>
