@@ -3171,14 +3171,6 @@
                     <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_CHICKEN</YieldType>
-                    <iValue>1</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_GEESE</YieldType>
-                    <iValue>1</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
                     <iValue>-1</iValue>
                 </YieldIntegerPair>
@@ -3278,14 +3270,6 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_HORSES</YieldType>
-                    <iValue>1</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_CHICKEN</YieldType>
-                    <iValue>1</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_GEESE</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
             </RiverYieldIncreases>
