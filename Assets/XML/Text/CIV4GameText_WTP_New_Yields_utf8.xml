@@ -96,7 +96,7 @@
 	<!-- CHICKEN -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHICKEN</Tag>
-        <English>Chicken</English>
+        <English>Chickens</English>
         <French>Poules</French>
         <German>
             <Text>Hühner</Text>
@@ -106,7 +106,7 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_CHICKEN</Tag>
-        <English>Chicken</English>
+        <English>Chickens</English>
         <French>Poules</French>
         <German>
             <Text>Hühner</Text>
@@ -116,7 +116,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHICKEN</Tag>
-        <English>Chicken</English>
+        <English>Chickens</English>
         <French>Poules</French>
         <German>
             <Text>Hühner</Text>
@@ -228,7 +228,7 @@
 	<!-- PIG_SKIN -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIG_SKIN</Tag>
-        <English>Pig Skins</English>
+        <English>Pigskins</English>
         <French>Peaux de porcs</French>
         <German>
             <Text>Schweinehäute</Text>
@@ -238,7 +238,7 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_PIG_SKIN</Tag>
-        <English>Pig Skins</English>
+        <English>Pigskins</English>
         <French>Peaux de porcs</French>
         <German>
             <Text>Schweinehäute</Text>
@@ -248,7 +248,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PIG_SKIN</Tag>
-        <English>Pig Skins</English>
+        <English>Pigskins</English>
         <French>Peaux de porcs</French>
         <German>
             <Text>Schweinehäute</Text>
@@ -258,7 +258,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIG_SKIN_PEDIA</Tag>
-        <English>[TAB][H1]Pig Skins[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Pig Skins[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pigskins[COLOR_REVERT] come from butchered [LINK=YIELD_PIGS]pigs[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_BUTCHER_PIGS]pig butcher[\LINK] profession in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK] or one of its upgrades. The output of pigskins can be doubled by commissioning [LINK=UNIT_BUTCHER]master butchers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Pigskin is softer than cow leather and is preferred for detailed items such as gloves. Pigskin jackets are more supple than the heavier cow leather jacket, which however is more durable. Pig leather is easier to work, so garments typically have a finer finish.</English>
         <German>[TAB][H1]Schweinehäute[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -272,7 +272,7 @@
 	<!-- DOWNS -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_DOWNS</Tag>
-        <English>Downs</English>
+        <English>Down</English>
         <French>Duvet</French>
         <German>
             <Text>Daunen</Text>
@@ -282,7 +282,7 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_DOWNS</Tag>
-        <English>Downs</English>
+        <English>Down</English>
         <French>Duvet</French>
         <German>
             <Text>Daunen</Text>
@@ -292,7 +292,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_DOWNS</Tag>
-        <English>Downs</English>
+        <English>Down</English>
         <French>Duvet</French>
         <German>
             <Text>Daunen</Text>
@@ -302,7 +302,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_DOWNS_PEDIA</Tag>
-        <English>[TAB][H1]Downs[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Downs[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Down[COLOR_REVERT] comes from butchered [LINK=YIELD_GEESE]geese[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_BUTCHER_GEESE]goose butcher[\LINK] profession in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK] or one of its upgrades. The output of down can be doubled by commissioning [LINK=UNIT_BUTCHER]master butchers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Down is the warm inner feathers plucked from waterfowl. It's used as a lightweight insulator in clothing and bedding.</English>
         <German>[TAB][H1]Daunen[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -326,7 +326,7 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_WILD_FEATHERS</Tag>
-        <English>Wildbird Feathers</English>
+        <English>Wild Bird Feathers</English>
         <French>Plumes</French>
         <German>
             <Text>Wildvogelfedern</Text>
@@ -336,7 +336,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_WILD_FEATHERS</Tag>
-        <English>Wildbird Feathers</English>
+        <English>Wild Bird Feathers</English>
         <French>Plumes</French>
         <German>
             <Text>Wildvogelfedern</Text>
@@ -346,7 +346,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_WILD_FEATHERS_PEDIA</Tag>
-        <English>[TAB][H1]Wildbird Feathers[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Wildbird Feathers[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Wild bird feathers[COLOR_REVERT] come from [LINK=YIELD_GEESE]wild birds[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_HUNTER_BIRDS]bird hunter[\LINK] profession. The output of wild bird feathers can be doubled by commissioning [LINK=UNIT_HUNTER]expert hunters[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Wild bird feathers were valued for clothing decoration, hats in particular. The biggest demand was for feathers from brightly coloured tropical birds.</English>
         <German>[TAB][H1]Wildvogelfedern[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -390,7 +390,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_GOAT_HIDE_BOOTS_PEDIA</Tag>
-        <English>[TAB][H1]Goathide Boots[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Goathide Boots[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Goat hide boots[COLOR_REVERT] are made from [LINK=YIELD_GOAT_HIDE]goat hide[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_TAILOR_LEATHER]leather tailor[\LINK] profession in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades. The output of goat hide boots can be doubled by commissioning [LINK=UNIT_TAILOR]master tailors[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Goat hide can be used for finely crafted dress boots, gloves for the feet, or the boots can be insulated for cold weather use.</English>
         <German>[TAB][H1]Ziegenlederstiefel[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -404,7 +404,7 @@
 	<!-- PIG_LEATHER -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIG_LEATHER</Tag>
-        <English>Pigleather Aprons</English>
+        <English>Pig Leather Aprons</English>
         <French>Tabliers en peau de porc</French>
         <German>
             <Text>Schweinelederschürzen</Text>
@@ -414,7 +414,7 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_PIG_LEATHER</Tag>
-        <English>Pigleather Aprons</English>
+        <English>Pig Leather Aprons</English>
         <French>Tabliers en peau de porc</French>
         <German>
             <Text>Schweinelederschürzen</Text>
@@ -434,7 +434,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIG_LEATHER_PEDIA</Tag>
-        <English>[TAB][H1]Pigleather Aprons[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Pigleather Aprons[\H1][PARAGRAPH:2][BOLDStrategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pig leather aprons[COLOR_REVERT] are made from [LINK=YIELD_PIG_SKINS]pigskins[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_TAILOR_LEATHER]leather tailor[\LINK] profession in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades. The output of pig leather aprons can be doubled by commissioning [LINK=UNIT_TAILOR]master tailors[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Pig leather aprons are hard-wearing work clothing, used by blacksmiths to block sparks from the forge and by butchers in case knives slip.</English>
         <German>[TAB][H1]Schweinelederschürzen[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
