@@ -3499,7 +3499,7 @@
         <French>Milord, un messager est arrivé. Une de nos compagnies commerciales veut installer un fort à la frontière. Cela nous serait bénéfique, mais provoquerait la colère de nos voisins. Que devons-nous faire ?</French>
         <German>Milord, ein Bote ist angekommen. Eine unserer Handelsgesellschaften möchte an der Grenze ein Handelsfort errichten. Dies würde uns nützen, aber unsere Nachbarn erzürnen. Was sollen wir tun?</German>
     </TEXT>
-   <TEXT>
+	<TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_TRADEFORT2</Tag>
         <English>A trading fort does business that could disturb nearby settlers.</English>
         <French>Un fort de commerce fait des affaires qui pourraient déranger les colons voisins.</French>
@@ -3517,7 +3517,7 @@
         <French>Milord, un messager est arrivé. Nos voisins exigent que nous démolissions immédiatement le nouveau fort commercial. Ils sont très mécontents.</French>
         <German>Milord, ein Bote ist angekommen. Unsere Nachbarn verlangen, dass wir das neue Handelsfort umgehend wieder abreißen. Sie sind wirklich ungehalten.</German>
     </TEXT>
-   <TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_TRADEFORT3</Tag>
         <English>The Crown expresses its disapproval of your arbitrary actions!</English>
         <French>La Couronne exprime son mécontentement face à vos actions hautaines !</French>
@@ -3529,7 +3529,7 @@
         <French>Milord, Sa Majesté a entendu dire que vous avez démoli le fort de la Royal Trading Company juste pour vous attirer les bonnes grâces de vos voisins.</French>
         <German>Milord, Seiner Majestät ist zu Ohren gekommen, dass Ihr ein Fort der königlichen Handelsgesellschaft zerstört habt, nur um Euch bei Euren Nachbarn lieb Kind zu machen.</German>
     </TEXT>
-   <TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_RIVER_FISHING_1</Tag>
         <English>A boatman discovered a vast shoal of fish in one of the large rivers!</English>
         <French>Un batelier a découvert un vaste banc de poissons dans l'une des grandes rivières !</French>
@@ -3541,7 +3541,7 @@
         <French>"[COLOR_SELECTED_TEXT]Capitaine, regardez ! La rivière est si pleine de poissons qu'ils sautent hors de l'eau. Si seulement ils sautaient dans nos filets, nous serions des hommes riches ![COLOR_REVERT]"</French>
         <German>"[COLOR_SELECTED_TEXT]Captain, seht nur! Der Fluss ist so voller Fische, dass sie sogar aus dem Wasser springen. Wenn sie uns nur auch so in die Netze springen, sind wir gemachte Leute![COLOR_REVERT]"</German>
     </TEXT>
-   <TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_LOST_SHIP_1</Tag>
         <English>A ship ran aground in the fog.</English>
         <French>Un navire s'est échoué par mauvaise visibilité.</French>
@@ -5713,6 +5713,11 @@
 		<English>For the Glory and Wealth of our colonies! Capable field workers are always welcome!</English>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Fähige Feldarbeiter sind immer willkommen!</German>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_7</Tag>
+		<English>For the Glory and Wealth of our colonies! Finally we can safely ship our slaves to the New World!</English>
+		<German>Für Ruhm und Reichtum unserer Kolonien! Endlich können wir unsere Sklaven sicher in die Neue Welt schippern!</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_YIELD_AND_TARGET_AMOUNT_HELP</Tag>
         <English>Trade this quantity of goods with Africa [COLOR_FONT_GOLD]before any other nation [COLOR_REVERT]can :[NEWLINE]%D1_amount %F2_yield</English>
@@ -6347,5 +6352,105 @@
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_KAUTSCHUK_DONE</Tag>
 		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]kautschuk[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] in Africa zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_HARDWOOD_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] from Africa has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Harthölzer[COLOR_REVERT] mit Africa hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_HARDWOOD_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] from Africa.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Harthölzer[COLOR_REVERT] mit Africa zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_HARDWOOD_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] from Africa.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Harthölzer[COLOR_REVERT] mit Africa begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_HARDWOOD_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] from Africa.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Harthölzer[COLOR_REVERT] in Africa zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_HARDWOOD_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] from Africa.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Harthölzer[COLOR_REVERT] in Africa zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_BLACK_POWDER_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]black powder[COLOR_REVERT] from Africa has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Africa hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]black powder[COLOR_REVERT] from Africa.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Africa zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_BLACK_POWDER_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]black powder[COLOR_REVERT] from Africa.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Africa begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_BLACK_POWDER_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]black powder[COLOR_REVERT] from Africa.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] in Africa zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]black powder[COLOR_REVERT] from Africa.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] in Africa zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_BLADES_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]blades[COLOR_REVERT] from Africa has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Geschütze[COLOR_REVERT] mit Africa hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_BLADES_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]blades[COLOR_REVERT] from Africa.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Geschützen[COLOR_REVERT] mit Africa zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_BLADES_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]blades[COLOR_REVERT] from Africa.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Geschützen[COLOR_REVERT] mit Africa begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_BLADES_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]blades[COLOR_REVERT] from Africa.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Geschütze[COLOR_REVERT] in Africa zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_BLADES_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]blades[COLOR_REVERT] from Africa.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Geschützen[COLOR_REVERT] in Africa zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_CANNONS_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]cannons[COLOR_REVERT] from Africa has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Geschütze[COLOR_REVERT] mit Africa hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_CANNONS_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]cannons[COLOR_REVERT] from Africa.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Geschützen[COLOR_REVERT] mit Africa zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_CANNONS_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]cannons[COLOR_REVERT] from Africa.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Geschützen[COLOR_REVERT] mit Africa begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_CANNONS_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]cannons[COLOR_REVERT] from Africa.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Geschütze[COLOR_REVERT] mit Africa zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_CANNONS_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]cannons[COLOR_REVERT] from Africa.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Geschützen[COLOR_REVERT] in Africa zu werden.</German>
 	</TEXT>
 </Civ4GameText>
