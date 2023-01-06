@@ -16586,6 +16586,13 @@ int CvPlayer::getEuropeUnitBuyPrice(UnitTypes eUnit, bool bIncrease) const
 	}
 	// TAC - AI purchases military units - koma13 - END
 
+	// WTP, ray, capping UnitBuyPrices at 200 percent - START
+	if (iCost > kUnit.getEuropeCost() * 2)
+	{
+		iCost = kUnit.getEuropeCost() * 2;
+	}
+	// WTP, ray, capping UnitBuyPrices at 200 percent - END
+
 	iCost *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 	iCost /= 100;
 
@@ -17961,6 +17968,13 @@ int CvPlayer::getAfricaUnitBuyPrice(UnitTypes eUnit) const
 
 	iCost += GET_TEAM(getTeam()).getUnitsPurchasedHistory((UnitClassTypes) kUnit.getUnitClassType()) * kUnit.getAfricaCostIncrease();
 
+	// WTP, ray, capping UnitBuyPrices at 200 percent - START
+	if (iCost > kUnit.getAfricaCost() * 2)
+	{
+		iCost = kUnit.getAfricaCost() * 2;
+	}
+	// WTP, ray, capping UnitBuyPrices at 200 percent - END
+
 	iCost *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 	iCost /= 100;
 
@@ -18060,6 +18074,13 @@ int CvPlayer::getPortRoyalUnitBuyPrice(UnitTypes eUnit) const
 	}
 
 	iCost += GET_TEAM(getTeam()).getUnitsPurchasedHistory((UnitClassTypes) kUnit.getUnitClassType()) * kUnit.getPortRoyalCostIncrease();
+
+	// WTP, ray, capping UnitBuyPrices at 200 percent - START
+	if (iCost > kUnit.getPortRoyalCost() * 2)
+	{
+		iCost = kUnit.getPortRoyalCost() * 2;
+	}
+	// WTP, ray, capping UnitBuyPrices at 200 percent - END
 
 	iCost *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 	iCost /= 100;
