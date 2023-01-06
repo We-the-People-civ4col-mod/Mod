@@ -424,7 +424,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PIG_LEATHER</Tag>
-        <English>Pigleather Aprons</English>
+        <English>Pig Leather Aprons</English>
         <French>Tabliers en peau de porc</French>
         <German>
             <Text>Schweinelederschürzen</Text>
@@ -434,7 +434,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIG_LEATHER_PEDIA</Tag>
-        <English>[TAB][H1]Pigleather Aprons[\H1][PARAGRAPH:2][BOLDStrategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pig leather aprons[COLOR_REVERT] are made from [LINK=YIELD_PIG_SKINS]pigskins[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_TAILOR_LEATHER]leather tailor[\LINK] profession in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades. The output of pig leather aprons can be doubled by commissioning [LINK=UNIT_TAILOR]master tailors[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Pig leather aprons are hard-wearing work clothing, used by blacksmiths to block sparks from the forge and by butchers in case knives slip.</English>
+        <English>[TAB][H1]Pig Leather Aprons[\H1][PARAGRAPH:2][BOLDStrategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pig leather aprons[COLOR_REVERT] are made from [LINK=YIELD_PIG_SKINS]pigskins[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_TAILOR_LEATHER]leather tailor[\LINK] profession in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades. The output of pig leather aprons can be doubled by commissioning [LINK=UNIT_TAILOR]master tailors[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Pig leather aprons are hard-wearing work clothing, used by blacksmiths to block sparks from the forge and by butchers in case knives slip.</English>
         <German>[TAB][H1]Schweinelederschürzen[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -448,7 +448,7 @@
 	<!-- FRUITS -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_FRUITS</Tag>
-        <English>Fruits</English>
+        <English>Fruit</English>
         <French>Fruits</French>
         <German>
             <Text>Früchte</Text>
@@ -458,7 +458,7 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_FRUITS</Tag>
-        <English>Fruits</English>
+        <English>Fruit</English>
         <French>Fruits</French>
         <German>
             <Text>Früchte</Text>
@@ -468,7 +468,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FRUITS</Tag>
-        <English>Fruits</English>
+        <English>Fruit</English>
         <French>Fruits</French>
         <German>
             <Text>Früchte</Text>
@@ -478,7 +478,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_FRUITS_PEDIA</Tag>
-        <English>[TAB][H1]Fruits[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Fruit[COLOR_REVERT] grows on many different terrains. To harvest it, a colonist needs to have the [LINK=PROFESSION_FRUITS_PICKER]fruit picker[\LINK] profession. The fruit harvest can be doubled by commissioning [LINK=UNIT_FRUITS_PICKER]expert fruit pickers[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Because the fruit varieties mature at different times throughout the season, fruit pickers are often migrant, moving among the orchards and farms as needed. In the tropics fruit grows year-round. Bananas are the world's most popular fruit. Apples are common in temperate zones, and some berries grow in the taiga or tundra.</English>
+        <English>[TAB][H1]Fruit[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Fruit[COLOR_REVERT] grows on many different terrains. To harvest it, a colonist needs to have the [LINK=PROFESSION_FRUITS_PICKER]fruit picker[\LINK] profession. The fruit harvest can be doubled by commissioning [LINK=UNIT_FRUITS_PICKER]expert fruit pickers[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Because the fruit varieties mature at different times throughout the season, fruit pickers are often migrant, moving among the orchards and farms as needed. In the tropics fruit grows year-round. Bananas are the world's most popular fruit. Apples are common in temperate zones, and some berries grow in the taiga or tundra.</English>
         <German>[TAB][H1]Früchte[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
