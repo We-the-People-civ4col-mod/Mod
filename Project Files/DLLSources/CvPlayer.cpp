@@ -24713,6 +24713,20 @@ int CvPlayer::getNumTradeGroups() const
 
 // R&R mod, vetiarvind, trade groups - end
 
+CvCivilizationInfo& CvPlayer::getCivilizationInfo() const
+{
+	return GC.getCivilizationInfo(getCivilizationType());
+}
+
+BuildingTypes CvPlayer::getBuilding(BuildingClassTypes eBuildingClass) const
+{
+	return (BuildingTypes)getCivilizationInfo().getCivilizationBuildings(eBuildingClass);
+}
+
+UnitTypes CvPlayer::getUnit(UnitClassTypes eUnitClass) const
+{
+	return (UnitTypes)getCivilizationInfo().getCivilizationUnits(eUnitClass);
+}
 
 namespace
 {
