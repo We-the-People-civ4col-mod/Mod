@@ -478,7 +478,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_FRUITS_PEDIA</Tag>
-        <English>[TAB][H1]Fruits[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Fruits[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Fruit[COLOR_REVERT] grows on many different terrains. To harvest it, a colonist needs to have the [LINK=PROFESSION_FRUITS_PICKER]fruit picker[\LINK] profession. The fruit harvest can be doubled by commissioning [LINK=UNIT_FRUITS_PICKER]expert fruit pickers[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Because the fruit varieties mature at different times throughout the season, fruit pickers are often migrant, moving among the orchards and farms as needed. In the tropics fruit grows year-round. Bananas are the world's most popular fruit. Apples are common in temperate zones, and some berries grow in the taiga or tundra.</English>
         <German>[TAB][H1]Früchte[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
