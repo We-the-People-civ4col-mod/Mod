@@ -950,8 +950,8 @@ public:
 
 	// get constant (including xml) info
 	CvCivilizationInfo& getCivilizationInfo() const;
-	BuildingTypes getBuilding(BuildingClassTypes eBuildingClass) const;
-	UnitTypes getUnit(UnitClassTypes eUnitClass) const;
+	BuildingTypes getBuildingType(BuildingClassTypes eBuildingClass) const;
+	UnitTypes getUnitType(UnitClassTypes eUnitClass) const;
 
 	void writeDesyncLog(FILE *f) const;
 

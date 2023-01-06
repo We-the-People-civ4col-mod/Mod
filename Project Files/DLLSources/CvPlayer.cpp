@@ -24718,12 +24718,12 @@ CvCivilizationInfo& CvPlayer::getCivilizationInfo() const
 	return GC.getCivilizationInfo(getCivilizationType());
 }
 
-BuildingTypes CvPlayer::getBuilding(BuildingClassTypes eBuildingClass) const
+BuildingTypes CvPlayer::getBuildingType(BuildingClassTypes eBuildingClass) const
 {
 	return (BuildingTypes)getCivilizationInfo().getCivilizationBuildings(eBuildingClass);
 }
 
-UnitTypes CvPlayer::getUnit(UnitClassTypes eUnitClass) const
+UnitTypes CvPlayer::getUnitType(UnitClassTypes eUnitClass) const
 {
 	return (UnitTypes)getCivilizationInfo().getCivilizationUnits(eUnitClass);
 }
