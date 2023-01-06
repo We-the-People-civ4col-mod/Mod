@@ -735,7 +735,7 @@ public:
 	UnitClassTypes getTeachUnitClass() const;
 	void setTeachUnitClass(UnitClassTypes eUnitClass);
 	void ejectTeachUnits();
-
+	void ejectMissionariesAndTraders();
 	bool canProduceYield(YieldTypes eYield);
 
 	bool educateStudent(int iUnitId, UnitTypes eUnit);
