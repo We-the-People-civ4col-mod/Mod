@@ -56172,8 +56172,8 @@
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
-			<Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE_4</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_4</Description>
+			<Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE_3</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_3</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
