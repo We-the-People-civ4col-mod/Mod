@@ -56238,8 +56238,8 @@
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
-			<Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE_4</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_4</Description>
+			<Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE_5</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_5</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -56304,8 +56304,8 @@
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
-			<Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE_5</Type>
-			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_5</Description>
+			<Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE_6</Type>
+			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_6</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
