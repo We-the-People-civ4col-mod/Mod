@@ -123,6 +123,16 @@
         <German>Milord, die Ureinwohner von [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] haben Euren Missionar mit Prügeln aus dem Dorf verjagt, nachdem ein Missionar einer anderen Nation seinen Platz eingenommen hat und ihn der Teufelsanbetung beschuldigte.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_MISSIONARY_EJECTED_FROM_GIFTED_CITY</Tag>
+        <English>Milord, the Natives have given up their settlement [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Our missionary there is available for duty again.</English>
+        <German>Milord, die Ureinwohner haben ihre Siedlung [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] aufgegeben. Unser Missionar dort ist nun bereit für einen neuen Auftrag.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRADER_EJECTED_FROM_GIFTED_CITY</Tag>
+        <English>Milord, the Natives have given up their settlement [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Our trader there is available for duty again.</English>
+        <German>Milord, die Ureinwohner haben ihre Siedlung [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] aufgegeben. Unser Händler dort ist nun bereit für einen neuen Auftrag.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_CITIZEN_HELP_PROFESSION_NAME_DISPLAY</Tag>
         <English>[COLOR_UNIT_TEXT]%s1_Profession_Name[COLOR_REVERT]</English>
         <German>[COLOR_UNIT_TEXT]%s1_Profession_Name[COLOR_REVERT]</German>

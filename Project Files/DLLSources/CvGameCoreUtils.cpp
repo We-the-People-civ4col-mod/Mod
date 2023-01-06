@@ -1771,7 +1771,7 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 	// K-Mod end
 	FAssert(pSelectionGroup->getNumUnits() > 0);
 
-	int iTurns = GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM;
+	int iTurns = 1;
 	int iMoves = MAX_INT;
 
 	if (data == ASNC_INITIALADD)
@@ -1779,15 +1779,6 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 		bool bMaxMoves = (iFlags & MOVE_MAX_MOVES);
 		// K-Mod. I've moved the code from here into separate functions.
 		iMoves = bMaxMoves ? pSelectionGroup->maxMoves() : pSelectionGroup->movesLeft();
-		
-		#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
-			while (iMoves <= 0)
-			{
-				++iTurns;
-				iMoves += pSelectionGroup->maxMoves();
-			}
-		#endif
-
 		// K-Mod end
 	}
 	else
@@ -1795,7 +1786,7 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 		CvPlot const& kFromPlot = GC.getMap().getPlot(parent->m_iX, parent->m_iY);
 		CvPlot const& kToPlot = GC.getMap().getPlot(node->m_iX, node->m_iY);
 
-		iMoves = parent->m_iData1;
+		int iStartMoves = parent->m_iData1;
 		iTurns = parent->m_iData2;
 		/*if (iStartMoves == 0)
 		iTurns++;
@@ -1810,22 +1801,14 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 		// (eg. the most obvious example is when a group with 1-move units and 2-move units is moving on a railroad. - In this situation,
 		//  the original code would consistently underestimate the remaining moves at every step.)
 #if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
-		bool bNewTurn = iMoves == 0;
+		bool bNewTurn = iStartMoves == 0;
 
 		if (bNewTurn)
 		{
 			++iTurns;
-			iMoves = pSelectionGroup->maxMoves();
-		}
-#else // GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 0
-		// add how many turns it takes before the unit can move again
-		while (iMoves <= 0)
-		{
-			++iTurns;
-			iMoves += pSelectionGroup->maxMoves();
+			iStartMoves = pSelectionGroup->maxMoves();
 		}
 #endif
-
 		CLLNode<IDInfo> const* pUnitNode = pSelectionGroup->headUnitNode();
 		int iMoveCost = kToPlot.movementCost(::getUnit(pUnitNode->m_data), &kFromPlot/*,
 			false*/); // advc.001i
@@ -1845,12 +1828,12 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 		{
 			// the simple, normal case
 #if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
-			iMoves = std::max(0, iMoves - iMoveCost);
+			iMoves = std::max(0, iStartMoves - iMoveCost);
 #else
-			iMoves -= iMoveCost;
+			iMoves = iStartMoves - iMoveCost;
 #endif
 		}
-		else // is this part ready for new movement system? (is it even needed?)
+		else
 		{
 			PROFILE("pathAdd - non-uniform cost");
 			// Move costs are uneven for units in this group.
@@ -1884,12 +1867,19 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 		// K-Mod end
 	}
 
-#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
-	FAssertMsg(iMoves >= 0, "iMoves is expected to be non-negative (invalid Index)");
+#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 0
+	// add how many turns it takes before the unit can move again
+	while (iMoves <= 0)
+	{
+		++iTurns;
+		iMoves += pSelectionGroup->maxMoves();
+	}
 #endif
 
+	FAssertMsg(iMoves >= 0, "iMoves is expected to be non-negative (invalid Index)");
+
 	node->m_iData1 = iMoves;
-	node->m_iData2 = iTurns > 0 ? iTurns : 1; // this avoids saving 0 turns, which might (?) lead to a div by 0 crash
+	node->m_iData2 = iTurns;
 
 	return 1;
 }

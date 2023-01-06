@@ -1504,7 +1504,7 @@
 	<!-- Movement System -->
 	<Define>
 		<DefineName>USE_CLASSIC_MOVEMENT_SYSTEM</DefineName>
-		<iDefineIntVal>1</iDefineIntVal>
+		<iDefineIntVal>0</iDefineIntVal>
 		<bAlwaysHardcoded>1</bAlwaysHardcoded>
 	</Define>
 	<Define>
