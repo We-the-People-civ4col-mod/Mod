@@ -3497,7 +3497,7 @@
             <bNoImprovement>0</bNoImprovement>
             <bVisibleAlways>0</bVisibleAlways>
             <OnUnitChangeTo/>
-            <TerrainBooleans>>
+            <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_WETLAND</TerrainType>
                     <bTerrain>1</bTerrain>
