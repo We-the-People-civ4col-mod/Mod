@@ -11121,7 +11121,8 @@ void CvCity::updateCityLaw()
 {
 	int iTotalCityLaw = 0;
 
-	iTotalCityLaw += getBaseRawYieldProduced(YIELD_LAW);
+	//iTotalCityLaw += getBaseRawYieldProduced(YIELD_LAW);
+	iTotalCityLaw= calculateNetYield(YIELD_LAW);
 	iTotalCityLaw += getLawFromCityDefenders();
 	iTotalCityLaw += getLawFromCrosses();
 
