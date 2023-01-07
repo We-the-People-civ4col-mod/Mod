@@ -948,6 +948,11 @@ public:
 	int getNumTradeGroups() const;
 	// R&R mod, vetiarvind, trade groups - end
 
+	// get constant (including xml) info
+	CvCivilizationInfo& getCivilizationInfo() const;
+	BuildingTypes getBuildingType(BuildingClassTypes eBuildingClass) const;
+	UnitTypes getUnitType(UnitClassTypes eUnitClass) const;
+
 	void writeDesyncLog(FILE *f) const;
 
 protected:

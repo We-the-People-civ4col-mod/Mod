@@ -246,7 +246,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iEuropeCost>500</iEuropeCost>
-            <iEuropeCostIncrease>70</iEuropeCostIncrease>
+            <iEuropeCostIncrease>75</iEuropeCostIncrease>
             <iImmigrationWeight>800</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>-1</iMinAreaSize>
@@ -5320,8 +5320,8 @@
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iEuropeCost>-1</iEuropeCost>
             <iEuropeCostIncrease>0</iEuropeCostIncrease>
-            <iPortRoyalCost>100</iPortRoyalCost>
-            <iPortRoyalCostIncrease>50</iPortRoyalCostIncrease>
+            <iPortRoyalCost>150</iPortRoyalCost>
+            <iPortRoyalCostIncrease>25</iPortRoyalCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>-1</iMinAreaSize>
@@ -5582,7 +5582,7 @@
                     <YieldType>YIELD_VANILLA_PODS</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
-                                <YieldChange>
+                <YieldChange>
                     <YieldType>YIELD_COCOA</YieldType>
                     <iChange>-2</iChange>
                 </YieldChange>
@@ -6145,8 +6145,8 @@
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iEuropeCost>-1</iEuropeCost>
             <iEuropeCostIncrease>0</iEuropeCostIncrease>
-            <iAfricaCost>100</iAfricaCost>
-            <iAfricaCostIncrease>50</iAfricaCostIncrease>
+            <iAfricaCost>150</iAfricaCost>
+            <iAfricaCostIncrease>25</iAfricaCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>-1</iMinAreaSize>

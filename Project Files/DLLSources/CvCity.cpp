@@ -9260,17 +9260,19 @@ void CvCity::ejectTeachUnits()
 
 void CvCity::ejectMissionary()
 {
+	static const ProfessionTypes eProfessionMissionary = getIndexOfTypeInit(eProfessionMissionary, "PROFESSION_MISSIONARY");
+
 	int missionaryRate = getMissionaryRate();
 	if (missionaryRate > 0) {
 		PlayerTypes missionaryPlayer = getMissionaryPlayer();
 
 		UnitTypes EjectedMissionaryType = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(missionaryPlayer).getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_COLONIST"));
 
-		if (missionaryRate > GC.getProfessionInfo(PROFESSION_MISSIONARY).getMissionaryRate() ) {
-			EjectedMissionaryType = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(missionaryPlayer).getCivilizationType()).getCivilizationUnits(GC.getProfessionInfo(PROFESSION_MISSIONARY).LbD_getExpert());
+		if (missionaryRate > GC.getProfessionInfo(eProfessionMissionary).getMissionaryRate() ) {
+			EjectedMissionaryType = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(missionaryPlayer).getCivilizationType()).getCivilizationUnits(GC.getProfessionInfo(eProfessionMissionary).LbD_getExpert());
 		}
 
-		CvUnit* EjectedMissionaryUnit = GET_PLAYER(missionaryPlayer).initUnit(EjectedMissionaryType, PROFESSION_MISSIONARY, getX_INLINE(), getY_INLINE());
+		CvUnit* EjectedMissionaryUnit = GET_PLAYER(missionaryPlayer).initUnit(EjectedMissionaryType, eProfessionMissionary, getX_INLINE(), getY_INLINE());
 
 		CvWString szBuffer = gDLL->getText("TXT_KEY_MISSIONARY_EJECTED_FROM_GIFTED_CITY", plot()->getPlotCity()->getNameKey());
 		gDLL->getInterfaceIFace()->addMessage(missionaryPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_MISSION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
@@ -9282,17 +9284,18 @@ void CvCity::ejectMissionary()
 
 void CvCity::ejectTrader()
 {
+	static const ProfessionTypes eProfessionNativeTrader = getIndexOfTypeInit(eProfessionNativeTrader, "PROFESSION_NATIVE_TRADER");
 	int nativeTradeRate = getNativeTradeRate();
 	if (nativeTradeRate > 0) {
 		PlayerTypes tradePostPlayer = getTradePostPlayer();
 
 		UnitTypes EjectedTraderType = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(tradePostPlayer).getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_COLONIST"));
 
-		if (nativeTradeRate > GC.getProfessionInfo(PROFESSION_NATIVE_TRADER).getNativeTradeRate() ) {
-			EjectedTraderType = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(tradePostPlayer).getCivilizationType()).getCivilizationUnits(GC.getProfessionInfo(PROFESSION_NATIVE_TRADER).LbD_getExpert());
+		if (nativeTradeRate > GC.getProfessionInfo(eProfessionNativeTrader).getNativeTradeRate() ) {
+			EjectedTraderType = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(tradePostPlayer).getCivilizationType()).getCivilizationUnits(GC.getProfessionInfo(eProfessionNativeTrader).LbD_getExpert());
 		}
 
-		CvUnit* EjectedTraderUnit = GET_PLAYER(tradePostPlayer).initUnit(EjectedTraderType, PROFESSION_NATIVE_TRADER, getX_INLINE(), getY_INLINE());
+		CvUnit* EjectedTraderUnit = GET_PLAYER(tradePostPlayer).initUnit(EjectedTraderType, eProfessionNativeTrader, getX_INLINE(), getY_INLINE());
 
 		CvWString szBuffer = gDLL->getText("TXT_KEY_TRADER_EJECTED_FROM_GIFTED_CITY", plot()->getPlotCity()->getNameKey());
 		gDLL->getInterfaceIFace()->addMessage(tradePostPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_TRADE_POST).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);

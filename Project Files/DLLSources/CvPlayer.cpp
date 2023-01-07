@@ -16586,6 +16586,13 @@ int CvPlayer::getEuropeUnitBuyPrice(UnitTypes eUnit, bool bIncrease) const
 	}
 	// TAC - AI purchases military units - koma13 - END
 
+	// WTP, ray, capping UnitBuyPrices at 200 percent - START
+	if (iCost > kUnit.getEuropeCost() * 2)
+	{
+		iCost = kUnit.getEuropeCost() * 2;
+	}
+	// WTP, ray, capping UnitBuyPrices at 200 percent - END
+
 	iCost *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 	iCost /= 100;
 
@@ -17961,6 +17968,13 @@ int CvPlayer::getAfricaUnitBuyPrice(UnitTypes eUnit) const
 
 	iCost += GET_TEAM(getTeam()).getUnitsPurchasedHistory((UnitClassTypes) kUnit.getUnitClassType()) * kUnit.getAfricaCostIncrease();
 
+	// WTP, ray, capping UnitBuyPrices at 200 percent - START
+	if (iCost > kUnit.getAfricaCost() * 2)
+	{
+		iCost = kUnit.getAfricaCost() * 2;
+	}
+	// WTP, ray, capping UnitBuyPrices at 200 percent - END
+
 	iCost *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 	iCost /= 100;
 
@@ -18060,6 +18074,13 @@ int CvPlayer::getPortRoyalUnitBuyPrice(UnitTypes eUnit) const
 	}
 
 	iCost += GET_TEAM(getTeam()).getUnitsPurchasedHistory((UnitClassTypes) kUnit.getUnitClassType()) * kUnit.getPortRoyalCostIncrease();
+
+	// WTP, ray, capping UnitBuyPrices at 200 percent - START
+	if (iCost > kUnit.getPortRoyalCost() * 2)
+	{
+		iCost = kUnit.getPortRoyalCost() * 2;
+	}
+	// WTP, ray, capping UnitBuyPrices at 200 percent - END
 
 	iCost *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 	iCost /= 100;
@@ -19586,7 +19607,35 @@ int CvPlayer::getHurryGold(HurryTypes eHurry, int iIndex) const
 	iGold += GC.getHurryInfo(eHurry).getFlatGold() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() / 100;
 	if (iIndex != -1)
 	{
-		int iImmigrationPrice = std::abs(getEuropeUnitBuyPrice(getDocksNextUnit(iIndex))) * iCrossesLeft / std::max(1, iThreshold);
+		// WTP, ray, disconnect hurry Gold on Docks from Unit Buy Price - START
+		// instead hurrying will never be more expensive than original buy price
+		int iMaxBuyPriceHurry = GC.getUnitInfo(getDocksNextUnit(iIndex)).getEuropeCost();
+		iMaxBuyPriceHurry *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+		iMaxBuyPriceHurry /= 100;
+
+		iMaxBuyPriceHurry *= GC.getEraInfo(GC.getGameINLINE().getStartEra()).getTrainPercent();
+		iMaxBuyPriceHurry /= 100;
+
+		for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
+		{
+			if (hasTrait((TraitTypes) iTrait))
+			{
+				iMaxBuyPriceHurry *= std::max(0, (100 - GC.getTraitInfo((TraitTypes) iTrait).getRecruitPriceDiscount()));
+				iMaxBuyPriceHurry /= 100;
+			}
+		}
+
+		if (!isHuman())
+		{
+			iMaxBuyPriceHurry *= GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAITrainPercent();
+			iMaxBuyPriceHurry /= 100;
+
+			iMaxBuyPriceHurry *= std::max(0, ((GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAIPerEraModifier() * getCurrentEra()) + 100));
+			iMaxBuyPriceHurry /= 100;
+		}
+
+		int iImmigrationPrice = std::abs(iMaxBuyPriceHurry) * iCrossesLeft / std::max(1, iThreshold);
+		// WTP, ray, disconnect hurry Gold on Docks from Unit Buy Price - END
 		iGold = std::min(iGold, iImmigrationPrice);
 	}
 
@@ -24713,6 +24762,20 @@ int CvPlayer::getNumTradeGroups() const
 
 // R&R mod, vetiarvind, trade groups - end
 
+CvCivilizationInfo& CvPlayer::getCivilizationInfo() const
+{
+	return GC.getCivilizationInfo(getCivilizationType());
+}
+
+BuildingTypes CvPlayer::getBuildingType(BuildingClassTypes eBuildingClass) const
+{
+	return (BuildingTypes)getCivilizationInfo().getCivilizationBuildings(eBuildingClass);
+}
+
+UnitTypes CvPlayer::getUnitType(UnitClassTypes eUnitClass) const
+{
+	return (UnitTypes)getCivilizationInfo().getCivilizationUnits(eUnitClass);
+}
 
 namespace
 {

@@ -26,6 +26,13 @@ static T getIndexOfType(T& eIndex, const char* szType)
 	return eIndex;
 }
 
+template <typename T>
+static T getIndexOfTypeInit(const T eIndex, const char* szType)
+{
+	T buffer;
+	return getIndexOfType(buffer, szType);
+}
+
 
 template <typename T>
 struct VARINFO
