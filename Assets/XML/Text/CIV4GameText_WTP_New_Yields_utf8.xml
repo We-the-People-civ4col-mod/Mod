@@ -522,7 +522,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HOOCH_PEDIA</Tag>
-        <English>[TAB][H1]Hooch[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Fruit Brandy[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Fruit brandy and liqueurs[COLOR_REVERT] are made from a variety of [LINK=YIELD_FRUITS]fruits[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_DISTILLER]distiller\LINK] profession in the [LINK=BUILDING_DISTILLERS_HOUSE]distiller's house[\LINK] or one of its upgrades. The output of fruit brandies can be doubled by commissioning [LINK=UNIT_DISTILLER]master distillers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Fruit brandy can be distilled from different orchard fruits or field berries. The liquor can be distilled until it's clear, much like a light-flavoured vodka.[NEWLINE]Flavoured liqueurs made from fruit are popular in monasteries.</English>
         <German>[TAB][H1]Schnapps[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -566,7 +566,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_FLAX_PEDIA</Tag>
-        <English>[TAB][H1]Flax[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Flax[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Flax[COLOR_REVERT] grows on many different terrains. To harvest it, a colonist needs to have the [LINK=PROFESSION_FLAX_PICKER]flax picker[\LINK] profession. The flax harvest can be doubled by commissioning [LINK=UNIT_FLAX_PICKER]expert flax pickers[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Linen fabrics woven from wild flax date back over 30,000 years. Devout colonists all know that linen is frequently mentioned in the Bible.[NEWLINE]Linen is comfortable to wear in hot weather. The fabric is strong and absorbent, though it does wrinkle./English>
         <German>[TAB][H1]Flachs[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -610,7 +610,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PADDED_FURNITURE_PEDIA</Tag>
-        <English>[TAB][H1]Padded Furniture[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Padded Furniture[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Upholstered furniture is made from [LINK=YIELD_LEATHER]leather[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_CABINET_MAKER]cabinet maker[\LINK] profession in the [LINK=BUILDING_CABINET_MAKERS_HOUSE]cabinet maker's house[\LINK] or one of its upgrades. Upholstered furniture output can be doubled by commissioning [LINK=UNIT_CABINET_MAKER]master cabinet makers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Rugged wooden furniture is all well and good for settlers out on the frontier, but citizens who've earned a little comfort appreciate an easy chair and a big soft couch to sink into. They'll pay extra for that pleasure, which is why the upholsterer is in a good trade.</English>
         <German>[TAB][H1]Gepolsterte Möbel[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -654,7 +654,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HARDWOOD_PEDIA</Tag>
-        <English>[TAB][H1]Hardwood[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Hardwood[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Hardwood[COLOR_REVERT] grows in [LINK=TERRAIN_FOREST]forests[\LINK] and [LINK=TERRAIN_JUNGLE]jungles[\LINK]. To harvest it, a colonist needs to have the [LINK=PROFESSION_LUMBERJACK_HARDWOOD]lumberjack[\LINK] profession. The hardwood harvest can be doubled by commissioning [LINK=UNIT_LUMBERJACK]expert lumberjacks[\LINK] who can be hired in Europe or trained in Native villages. Hardwood is needed to build large ships.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Hardwood comes from deciduous trees. Softwood, the most common type of lumber, is from evergreens.[NEWLINE]Hardwood is used for fuel, tools, construction, boat building, furniture making, musical instruments, flooring, cooking, barrels, and the manufacture of charcoal. The density adds to durability, appearance, and performance.</English>
         <German>[TAB][H1]Hartholz[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -698,7 +698,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_MAPLE_SIRUP_PEDIA</Tag>
-        <English>[TAB][H1]Maple Sirup[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Maple Syrup[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Maple syrup[COLOR_REVERT] is the sap from maple trees, which grow in [LINK=TERRAIN_FOREST]forests[\LINK]. To collect it, a colonist needs to have the [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]maple syrup collector[\LINK] profession. The maple syrup supply can be doubled by commissioning [LINK=UNIT_MAPLE_SIRUP_COLLECTOR]expert maple syrup collectors[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]In the spring when sap starts to flow in the maple forests, tappers hammer spouts into the bark and collect a thin fluid that's then distilled over a slow fire into a rich thick syrup. It can also be poured on snow to make maple sugar.</English>
         <German>[TAB][H1]Ahornsaft[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -742,7 +742,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_YERBA_LEAVES_PEDIA</Tag>
-        <English>[TAB][H1]Yerba Leaves[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Yerba Leaves[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Yerba leaves[COLOR_REVERT] come from the yerba plant which grows in [LINK=TERRAIN_JUNGLE]jungles[\LINK]. To collect it, a colonist needs to have the [LINK=PROFESSION_YERBA_PLANTER]yerba planter[\LINK] profession. The yerba leaf supply can be doubled by commissioning [LINK=UNIT_YERBA_PLANTER]expert yerba planters[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]The Guarani and Tupi cultivated yerba mate prior to European colonization. After the Jesuits started using it, yerba mate became widespread in what's now Paraguay and throughout other Spanish colonies.[NEWLINE]Yerba leaves are steeped in hot water to make a caffeinated beverage: yerba mate. Brewed cold, it is used to make terere.</English>
         <German>[TAB][H1]Yerbablätter[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -786,7 +786,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_LOGWOOD_PEDIA</Tag>
-        <English>[TAB][H1]Logwood[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Logwood[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Logwood[COLOR_REVERT] is found in [LINK=TERRAIN_JUNGLE]jungles[\LINK]. To collect it, a colonist needs to have the [LINK=PROFESSION_LOGWOOD_COLLECTOR]logwood collector[\LINK] profession. The logwood harvest can be doubled by commissioning [LINK=UNIT_LOGWOOD_COLLECTOR]expert logwood collectors[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]The tree was of great economic importance in the colonial era when it was exported to Europe for dyeing fabrics. Defying Spanish territorial claims, foreign sailors cut and collected trees for shipment back to Europe. Spain responded by commissioning privateers to attack them.[NEWLINE]Under attack from Spanish privateers, logwood cutters formed their own pirate crews to raid the Spanish. Blackbeard turned captured logwood sloops into pirate ships.</English>
         <German>[TAB][H1]Färbholz[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -830,7 +830,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_YERBA_TEA_PEDIA</Tag>
-        <English>[TAB][H1]Yerba Tea[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Yerba Tea[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Yerba tea is made from [LINK=YIELD_YERBA]yerba leaves[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_YERBA_TRADER]yerba tea trader[\LINK] profession in the [LINK=BUILDING_YERBA_TRADERS_HOUSE]yerba trader's house[\LINK] or one of its upgrades. Yerba tea output can be doubled by commissioning [LINK=UNIT_YERBA_TRADER]master yerba traders[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Getting started in the yerba trade meant dealing with two especially dangerous Indigenous nations: the Guarani and Tupi. To add to the challenge, it was found in only two regions, Amambay and Alto Parana. After the Jesuits started using it, yerba mate became widespread in what's now Paraguay and throughout other Spanish colonies.</English>
         <German>[TAB][H1]Yerbatee[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -874,7 +874,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COLOURED_WOOL_CLOTH_PEDIA</Tag>
-        <English>[TAB][H1]Coloured Wool Cloth[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Coloured Wool Cloth[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Yerba tea is made from [LINK=YIELD_YERBA]yerba leaves[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_YERBA_TRADER]yerba tea trader[\LINK] profession in the [LINK=BUILDING_YERBA_TRADERS_HOUSE]yerba trader's house[\LINK] or one of its upgrades. Yerba tea output can be doubled by commissioning [LINK=UNIT_YERBA_TRADER]master yerba traders[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Getting started in the yerba trade meant dealing with two especially dangerous Indigenous nations: the Guarani and Tupi. To add to the challenge, it was found in only two regions, Amambay and Alto Parana. After the Jesuits started using it, yerba mate became widespread in what's now Paraguay and throughout other Spanish colonies.</English>
         <German>[TAB][H1]Gefärbter Wollstoff[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -918,7 +918,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CLAY_PEDIA</Tag>
-        <English>[TAB][H1]Vanilla[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Clay[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Clay[COLOR_REVERT] is found on [LINK=TERRAIN_HILLS]hills[\LINK]. To collect it, a colonist needs to have the [LINK=PROFESSION_CLAY_MINER]clay miner[\LINK] profession. The supply of clay can be doubled by commissioning [LINK=UNIT_PEAT_CUTTER]expert peat and clay cutters[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Clay develops plasticity when wet, due to a molecular film of water surrounding the clay particles, but becomes hard, brittle and non-plastic upon drying or firing. Shale, formed largely from clay, is the most common sedimentary rock.[NEWLINE]Clay is the oldest known ceramic material. Prehistoric humans used it for making pottery. Early pottery shards have been dated to 14,000 BC, and clay tablets are the first known writing medium.</English>
         <German>[TAB][H1]Vanille[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -962,7 +962,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COAL_PEDIA</Tag>
-        <English>[TAB][H1]Coal[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Coal[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Coal[COLOR_REVERT] is found on [LINK=TERRAIN_HILLS]hills[\LINK]. To collect it, a colonist needs to have the [LINK=PROFESSION_COAL_MINER]coal miner[\LINK] profession. The supply of coal can be doubled by commissioning [LINK=UNIT_MINER]expert miners[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Coal mining causes premature death and illness, but it's a soft rock that doesn't need as many explosives as hard rock mining. Even though it's a job where labourers use picks and shovels, and don't get paid much, their daughters are proud of them.</English>
         <German>[TAB][H1]Kohle[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
