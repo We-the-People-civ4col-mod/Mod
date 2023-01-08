@@ -3452,7 +3452,20 @@
             <Description>TXT_KEY_IMPROVEMENT_PASTURE</Description>
             <Civilopedia>TXT_KEY_IMPROVEMENT_PASTURE_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_IMPROVEMENT_PASTURE</ArtDefineTag>
-            <PrereqNatureYields/>
+            <PrereqNatureYields>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_SHEEP</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_CATTLE</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_HORSES</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+            </PrereqNatureYields>
             <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_SHEEP</YieldType>
@@ -3573,7 +3586,24 @@
             <Description>TXT_KEY_IMPROVEMENT_PEN</Description>
             <Civilopedia>TXT_KEY_IMPROVEMENT_PEN_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_IMPROVEMENT_PEN</ArtDefineTag>
-            <PrereqNatureYields/>
+            <PrereqNatureYields>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_GOATS</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_PIGS</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_CHICKEN</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_GEESE</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+            </PrereqNatureYields>
             <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_GOATS</YieldType>
@@ -5919,7 +5949,20 @@
             <Description>TXT_KEY_IMPROVEMENT_LARGE_PASTURE</Description>
             <Civilopedia>TXT_KEY_IMPROVEMENT_LARGE_PASTURE_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_IMPROVEMENT_LARGE_PASTURE</ArtDefineTag>
-            <PrereqNatureYields/>
+            <PrereqNatureYields>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_SHEEP</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_CATTLE</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_HORSES</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+            </PrereqNatureYields>
             <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_SHEEP</YieldType>
@@ -6040,7 +6083,24 @@
             <Description>TXT_KEY_IMPROVEMENT_LARGE_PEN</Description>
             <Civilopedia>TXT_KEY_IMPROVEMENT_LARGE_PEN_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_IMPROVEMENT_LARGE_PEN</ArtDefineTag>
-            <PrereqNatureYields/>
+            <PrereqNatureYields>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_GOATS</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_PIGS</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_CHICKEN</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_GEESE</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+            </PrereqNatureYields>
             <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_GOATS</YieldType>
