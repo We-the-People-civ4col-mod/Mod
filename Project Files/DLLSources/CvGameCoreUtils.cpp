@@ -1773,14 +1773,14 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 
 	int iTurns = GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM;
 	int iMoves = MAX_INT;
+	const bool bMoveMaxMoves = (iFlags & MOVE_MAX_MOVES);
 
 	if (data == ASNC_INITIALADD)
 	{
-		bool bMaxMoves = (iFlags & MOVE_MAX_MOVES);
 		// K-Mod. I've moved the code from here into separate functions.
-		iMoves = bMaxMoves ? pSelectionGroup->maxMoves() : pSelectionGroup->movesLeft();
+		iMoves = bMoveMaxMoves ? pSelectionGroup->maxMoves() : pSelectionGroup->movesLeft();
 		
-		#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
+		#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 0
 			while (iMoves <= 0)
 			{
 				++iTurns;
@@ -1809,22 +1809,22 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 		// K-Mod. The original code would give incorrect results for groups where one unit had more moves but also had higher move cost.
 		// (eg. the most obvious example is when a group with 1-move units and 2-move units is moving on a railroad. - In this situation,
 		//  the original code would consistently underestimate the remaining moves at every step.)
-#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
-		bool bNewTurn = iMoves == 0;
-
-		if (bNewTurn)
-		{
-			++iTurns;
-			iMoves = pSelectionGroup->maxMoves();
-		}
-#else // GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 0
+		#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
+			const bool bNewTurn = iMoves == 0;
+ 
+			if (bNewTurn)
+			{
+				++iTurns;
+				iMoves = pSelectionGroup->maxMoves();
+			}
+		#else // GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 0
 		// add how many turns it takes before the unit can move again
-		while (iMoves <= 0)
-		{
-			++iTurns;
-			iMoves += pSelectionGroup->maxMoves();
-		}
-#endif
+			while (iMoves <= 0)
+			{
+				++iTurns;
+				iMoves += pSelectionGroup->maxMoves();
+			}
+		#endif
 
 		CLLNode<IDInfo> const* pUnitNode = pSelectionGroup->headUnitNode();
 		int iMoveCost = kToPlot.movementCost(::getUnit(pUnitNode->m_data), &kFromPlot/*,
@@ -1844,13 +1844,13 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 		if (bUniformCost)
 		{
 			// the simple, normal case
-#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
-			iMoves = std::max(0, iMoves - iMoveCost);
-#else
-			iMoves -= iMoveCost;
-#endif
+			#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
+				iMoves = std::max(0, iMoves - iMoveCost);
+			#else
+				iMoves -= iMoveCost;
+			#endif
 		}
-		else // is this part ready for new movement system? (is it even needed?)
+		else
 		{
 			PROFILE("pathAdd - non-uniform cost");
 			// Move costs are uneven for units in this group.
@@ -1865,7 +1865,7 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 				plot_list.push_back(GC.getMap().plotSoren(pStartNode->m_iX, pStartNode->m_iY));
 			}
 			iMoves = MAX_INT;
-			bool bMaxMoves = pStartNode->m_iData1 == 0 || iFlags & MOVE_MAX_MOVES;
+			const bool bMaxMoves = pStartNode->m_iData1 == 0 || bMoveMaxMoves;
 
 			for (pUnitNode = pSelectionGroup->headUnitNode(); pUnitNode != NULL; pUnitNode = pSelectionGroup->nextUnitNode(pUnitNode))
 			{
@@ -1877,16 +1877,18 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 						false*/); // advc.001i
 					FAssert(iUnitMoves > 0 || i == 1);
 				}
-				iUnitMoves = std::max(iUnitMoves, 0);
+				#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
+					iUnitMoves = std::max(iUnitMoves, 0);
+				#endif
 				iMoves = std::min(iMoves, iUnitMoves);
 			}
 		}
 		// K-Mod end
 	}
 
-#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
-	FAssertMsg(iMoves >= 0, "iMoves is expected to be non-negative (invalid Index)");
-#endif
+	#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
+		FAssertMsg(iMoves >= 0, "iMoves is expected to be non-negative (invalid Index)");
+	#endif
 
 	node->m_iData1 = iMoves;
 	node->m_iData2 = iTurns > 0 ? iTurns : 1; // this avoids saving 0 turns, which might (?) lead to a div by 0 crash
