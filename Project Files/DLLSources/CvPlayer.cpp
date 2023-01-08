@@ -24829,7 +24829,9 @@ namespace
 		// Erik: Sort the units by the absolute value
 		// since some units may have a negative cost
 		// to signify that they cannot be purchased
-		return abs(pUnitA->getUnitInfo().getEuropeCost()) > abs(pUnitB->getUnitInfo().getEuropeCost());
+		const int iUnitValueA = pUnitA->canFound(NULL) ? INT_MAX : abs(pUnitA->getUnitInfo().getEuropeCost());
+		const int iUnitValueB = pUnitB->canFound(NULL) ? INT_MAX : abs(pUnitB->getUnitInfo().getEuropeCost());
+		return iUnitValueA > iUnitValueB;
 	}
 }
 
