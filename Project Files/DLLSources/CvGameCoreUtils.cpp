@@ -1771,7 +1771,7 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 	// K-Mod end
 	FAssert(pSelectionGroup->getNumUnits() > 0);
 
-	int iTurns = GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM;
+	int iTurns = 1;
 	int iMoves = MAX_INT;
 	const bool bMoveMaxMoves = (iFlags & MOVE_MAX_MOVES);
 
