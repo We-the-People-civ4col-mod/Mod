@@ -1641,7 +1641,7 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
-                    <bMakesValid>0</bMakesValid>
+                    <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_MARSH</TerrainType>
@@ -4135,7 +4135,7 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
-                    <bMakesValid>0</bMakesValid>
+                    <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_MARSH</TerrainType>
