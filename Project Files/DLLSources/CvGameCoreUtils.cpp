@@ -1771,9 +1771,18 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 	// K-Mod end
 	FAssert(pSelectionGroup->getNumUnits() > 0);
 
-	int iTurns = GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM;
+	int iTurns = 1;
 	int iMoves = MAX_INT;
 	const bool bMoveMaxMoves = (iFlags & MOVE_MAX_MOVES);
+
+	if (pSelectionGroup->maxMoves() == 0)
+	// there is a unit in the group that cannot move at all e.g. construction supplies
+	{
+		node->m_iData1 = 0;
+		node->m_iData2 = MAX_INT;
+
+		return 0;
+	}
 
 	if (data == ASNC_INITIALADD)
 	{
