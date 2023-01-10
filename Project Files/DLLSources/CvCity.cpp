@@ -9266,6 +9266,11 @@ void CvCity::ejectMissionary()
 	if (missionaryRate > 0) {
 		PlayerTypes missionaryPlayer = getMissionaryPlayer();
 
+		if (missionaryPlayer == NO_PLAYER)
+		{
+			return;
+		}
+
 		UnitTypes EjectedMissionaryType = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(missionaryPlayer).getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_COLONIST"));
 
 		if (missionaryRate > GC.getProfessionInfo(eProfessionMissionary).getMissionaryRate() ) {
@@ -9288,6 +9293,11 @@ void CvCity::ejectTrader()
 	int nativeTradeRate = getNativeTradeRate();
 	if (nativeTradeRate > 0) {
 		PlayerTypes tradePostPlayer = getTradePostPlayer();
+
+		if (tradePostPlayer == NO_PLAYER)
+		{
+			return;
+		}
 
 		UnitTypes EjectedTraderType = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(tradePostPlayer).getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_COLONIST"));
 
