@@ -258,7 +258,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIG_SKIN_PEDIA</Tag>
-        <English>[TAB][H1]Pig Skins[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pigskins[COLOR_REVERT] come from butchered [LINK=YIELD_PIGS]pigs[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_BUTCHER_PIGS]pig butcher[\LINK] profession in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK] or one of its upgrades. The output of pigskins can be doubled by commissioning [LINK=UNIT_BUTCHER]master butchers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Pigskin is softer than cow leather and is preferred for detailed items such as gloves. Pigskin jackets are more supple than the heavier cow leather jacket, which however is more durable. Pig leather is easier to work, so garments typically have a finer finish.</English>
+        <English>[TAB][H1]Pigskins[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pigskins[COLOR_REVERT] come from butchered [LINK=YIELD_PIGS]pigs[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_BUTCHER_PIGS]pig butcher[\LINK] profession in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK] or one of its upgrades. The output of pigskins can be doubled by commissioning [LINK=UNIT_BUTCHER]master butchers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Pigskin is softer than cow leather and is preferred for detailed items such as gloves. Pigskin jackets are more supple than the heavier cow leather jacket, which however is more durable. Pig leather is easier to work, so garments typically have a finer finish.</English>
         <German>[TAB][H1]Schweinehäute[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -302,7 +302,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_DOWNS_PEDIA</Tag>
-        <English>[TAB][H1]Downs[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Down[COLOR_REVERT] comes from butchered [LINK=YIELD_GEESE]geese[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_BUTCHER_GEESE]goose butcher[\LINK] profession in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK] or one of its upgrades. The output of down can be doubled by commissioning [LINK=UNIT_BUTCHER]master butchers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Down is the warm inner feathers plucked from waterfowl. It's used as a lightweight insulator in clothing and bedding.</English>
+        <English>[TAB][H1]Down[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Down[COLOR_REVERT] comes from butchered [LINK=YIELD_GEESE]geese[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_BUTCHER_GEESE]goose butcher[\LINK] profession in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK] or one of its upgrades. The output of down can be doubled by commissioning [LINK=UNIT_BUTCHER]master butchers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Down is the warm inner feathers plucked from waterfowl. It's used as a lightweight insulator in clothing and bedding.</English>
         <German>[TAB][H1]Daunen[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -346,7 +346,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_WILD_FEATHERS_PEDIA</Tag>
-        <English>[TAB][H1]Wildbird Feathers[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Wild bird feathers[COLOR_REVERT] come from [LINK=YIELD_GEESE]wild birds[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_HUNTER_BIRDS]bird hunter[\LINK] profession. The output of wild bird feathers can be doubled by commissioning [LINK=UNIT_HUNTER]expert hunters[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Wild bird feathers were valued for clothing decoration, hats in particular. The biggest demand was for feathers from brightly coloured tropical birds.</English>
+        <English>[TAB][H1]Wild Bird Feathers[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Wild bird feathers[COLOR_REVERT] come from [LINK=YIELD_GEESE]wild birds[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_HUNTER_BIRDS]bird hunter[\LINK] profession. The output of wild bird feathers can be doubled by commissioning [LINK=UNIT_HUNTER]expert hunters[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Wild bird feathers were valued for clothing decoration, hats in particular. The biggest demand was for feathers from brightly coloured tropical birds.</English>
         <German>[TAB][H1]Wildvogelfedern[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -492,7 +492,7 @@
 	<!-- HOOCH -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_HOOCH</Tag>
-        <English>Hooch</English>
+        <English>Fruit Brandy</English>
         <French>Schnaps</French>
         <German>
             <Text>Schnapps</Text>
@@ -502,7 +502,7 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_HOOCH</Tag>
-        <English>Hooch</English>
+        <English>Fruit Brandy</English>
         <French>Schnaps</French>
         <German>
             <Text>Schnapps</Text>
@@ -512,7 +512,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HOOCH</Tag>
-        <English>Hooch</English>
+        <English>Fruit Brandy</English>
         <French>Schnaps</French>
         <German>
             <Text>Schnapps</Text>
@@ -580,7 +580,7 @@
 	<!-- PADDED_FURNITURE -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_PADDED_FURNITURE</Tag>
-        <English>Padded Furniture</English>
+        <English>Upholstered Furniture</English>
         <French>Meubles capitonnés</French>
         <German>
             <Text>Gepolsterte Möbel</Text>
@@ -590,7 +590,7 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_PADDED_FURNITURE</Tag>
-        <English>Padded Furniture</English>
+        <English>Upholstered Furniture</English>
         <French>Meubles capitonnés</French>
         <German>
             <Text>Gepolsterte Möbel</Text>
@@ -600,7 +600,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PADDED_FURNITURE</Tag>
-        <English>Padded Furniture</English>
+        <English>Upholstered Furniture</English>
         <French>Meubles capitonnés</French>
         <German>
             <Text>Gepolsterte Möbel</Text>
@@ -610,7 +610,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PADDED_FURNITURE_PEDIA</Tag>
-        <English>[TAB][H1]Padded Furniture[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Upholstered furniture is made from [LINK=YIELD_LEATHER]leather[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_CABINET_MAKER]cabinet maker[\LINK] profession in the [LINK=BUILDING_CABINET_MAKERS_HOUSE]cabinet maker's house[\LINK] or one of its upgrades. Upholstered furniture output can be doubled by commissioning [LINK=UNIT_CABINET_MAKER]master cabinet makers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Rugged wooden furniture is all well and good for settlers out on the frontier, but citizens who've earned a little comfort appreciate an easy chair and a big soft couch to sink into. They'll pay extra for that pleasure, which is why the upholsterer is in a good trade.</English>
+        <English>[TAB][H1]Upholstered Furniture[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Upholstered furniture is made from [LINK=YIELD_LEATHER]leather[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_CABINET_MAKER]cabinet maker[\LINK] profession in the [LINK=BUILDING_CABINET_MAKERS_HOUSE]cabinet maker's house[\LINK] or one of its upgrades. Upholstered furniture output can be doubled by commissioning [LINK=UNIT_CABINET_MAKER]master cabinet makers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Rugged wooden furniture is all well and good for settlers out on the frontier, but citizens who've earned a little comfort appreciate an easy chair and a big soft couch to sink into. They'll pay extra for that pleasure, which is why the upholsterer is in a good trade.</English>
         <German>[TAB][H1]Gepolsterte Möbel[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -1006,7 +1006,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHAR_COAL_PEDIA</Tag>
-        <English>[TAB][H1]Charcoal[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Charcoal[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Charcoal[COLOR_REVERT] is made in [LINK=TERRAIN_FORESTS]forests[\LINK]. To create it, a colonist needs to have the [LINK=PROFESSION_CHARCOAL_BURNER]charcoal burner[\LINK] profession. The supply of charcoal can be doubled by commissioning [LINK=UNIT_CHARCOAL_BURNER]expert charcoal burners[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Charcoal comes from wood cooked in a kiln over six to eight days, sometimes longer. Charcoal burns at 1,100 degrees Celsius. The melting point of iron is 1,200 degrees. By using a bellows on charcoal a blacksmith can get to work.</English>
         <German>[TAB][H1]Holzkohle[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -1020,7 +1020,7 @@
     <!-- BLACK_POWDER -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_BLACK_POWDER</Tag>
-        <English>Blackpowder</English>
+        <English>Gunpowder</English>
         <French>Poudre à canon</French>
         <German>
             <Text>Schwarzpulver</Text>
@@ -1030,7 +1030,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BLACK_POWDER</Tag>
-        <English>Blackpowder</English>
+        <English>Gunpowder</English>
         <French>Poudre à canon</French>
         <German>
             <Text>Schwarzpulver</Text>
@@ -1040,7 +1040,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BLACK_POWDER</Tag>
-        <English>Blackpowder</English>
+        <English>Gunpowder</English>
         <French>Poudre à canon</French>
         <German>
             <Text>Schwarzpulver</Text>
@@ -1050,7 +1050,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_BLACK_POWDER_PEDIA</Tag>
-        <English>[TAB][H1]Blackpowder[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Gunpowder[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Gunpowder[COLOR_REVERT] is made from [LINK=YIELD_CHARCOAL]charcoal[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_FIREWORKER]gunpowde mixer[\LINK] profession in the [LINK=BUILDING_FIREWORKERS_HOUSE]gunpowder mixer's house[\LINK] or one of its upgrades. The output of  gunpowder can be doubled by commissioning [LINK=UNIT_FIREWORKER]master gunpowder mixers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Well away from other buildings they carefully mix gunpowder from sulphur, charcoal and saltpeter: ammunition for the soldiers' guns. In colonial times it's the only available explosive (dynamite will be invented in 1867) so it's also used for artillery, mining and road building.[NEWLINE]Gunpowder may be dangerous, but it's not as dangerous as having a weak army without enough ammunition.</English>
         <German>[TAB][H1]Schwarzpulver[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -1094,7 +1094,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_BAKERY_GOODS_PEDIA</Tag>
-        <English>[TAB][H1]Bakery Products[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Bakery Products[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Baked goods[COLOR_REVERT] are available in the [LINK=BUILDINGS_BAKER_HOUSE]baker's house[\LINK] or one of its upgrades.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]At first every household bakes its own bread but soon the baker's house centralizes food production. The baker starts work well before dawn so that households can have their daily bread. Settlers who remember the early starvation days continue to grow squash, beans and corn but new arrivals prefer familiar food from the old country.[NEWLINE]Having a bakery means each household doesn't need to bake its own bread. That allows other colonists to spend time on what they do best. Specialization helps the economy to grow, a concept soon popularized in books by economists Adam Smith and David Ricardo.</English>
         <German>[TAB][H1]Backwaren[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -1138,7 +1138,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_VANILLA_PEDIA</Tag>
-        <English>[TAB][H1]Vanilla[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Vanilla[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Vanilla[COLOR_REVERT] is made from [LINK=YIELD_VANILLA_PODS]green vanilla pods[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_CONFECTIONER] confectioner[\LINK] profession in the [LINK=BUILDING_CONFECTIONERS_HOUSE]confectioner's house[\LINK] or one of its upgrades. The output of vanilla can be doubled by commissioning [LINK=UNIT_CONFECTIONER]master confectioners[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Vanilla is a spice derived from orchids. There are three major species, all derived from the original Mexican plant. It can be pollinated by hand to produce the vanilla bean.</English>
         <German>[TAB][H1]Vanille[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -1182,7 +1182,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_VANILLA_PODS_PEDIA</Tag>
-        <English>[TAB][H1]Green Vanilla Pods[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Green Vanilla Pods[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Vanilla pods[COLOR_REVERT] are picked in [LINK=TERRAIN_JUNGLE]jungles[\LINK]. To gather green vanilla pods, a colonist needs to have the [LINK=PROFESSION_VANILLA_COLLECTOR]vanilla collector[\LINK] profession. The supply of green vanilla beans can be doubled by commissioning [LINK=UNIT_VANILLA_COLLECTOR]]expert vanilla collectors[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Vanilla is a spice derived from orchids. There are three major species, all derived from the original Mexican plant. It can be pollinated by hand to produce the vanilla bean.</English>
         <German>[TAB][H1]Grüne Vanilleschote[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -1226,7 +1226,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PEAT_PEDIA</Tag>
-        <English>[TAB][H1]Peat[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Peat[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Peat[COLOR_REVERT] is found in [LINK=TERRAIN_BOGS]bogs[\LINK]. To collect it, a colonist needs to have the [LINK=PROFESSION_PEAT_CUTTER]peat cutter[\LINK] profession. The stockpile of peat can be doubled by commissioning [LINK=UNIT_PEAT_CUTTER]expert peat cutters[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Peat is a peasant fuel, warming the poor and slaves at low or no cost. Peat is the world's most efficient carbon sink, storing 42% of all soil carbon, more than all other vegetation types, including the world's forests. It's not renewable.</English>
         <German>[TAB][H1]Torf[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -1270,7 +1270,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PEANUTS_PEDIA</Tag>
-        <English>[TAB][H1]Peanuts[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Peanuts[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Peanuts[COLOR_REVERT] grow in [LINK=TERRAIN_JUNGLE]jungles[\LINK]. To dig up peanuts, a colonist needs to have the [LINK=PROFESSION_PEANUT_PLANTER]peanut planter[\LINK] profession. The supply of peanuts can be doubled by commissioning [LINK=UNIT_PEANUT_PLANTER]expert peanut planters[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]The peanut is a legume grown mainly for its edible seeds. It's widely grown in the tropics and subtropics. It's valuable both as a grain legume and, due to its high oil content, as an oil crop. Cultivation was well-established in the Americas before the Spanish arrived. Conquistadors found the tlalcacahuatl (the plant's Nahuatl name) being offered for sale in the marketplace of Tenochtitlan.</English>
         <German>[TAB][H1]Erdnüsse[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -1314,7 +1314,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_ROASTED_PEANUTS_PEDIA</Tag>
-        <English>[TAB][H1]Roasted Peanuts[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Roasted Peanuts[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Roasted peanuts[COLOR_REVERT] are made from [LINK=YIELD_PEANUTS]peanuts[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_ROASTER] roaster[\LINK] profession in the [LINK=BUILDING_ROASTERS_HOUSE]roaster's house[\LINK] or one of its upgrades. The output of roasted peanuts can be doubled by commissioning [LINK=UNIT_ROASTER]master roasters[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]The peanut is a legume grown mainly for its edible seeds. It's widely grown in the tropics and subtropics. It's valuable both as a grain legume and, due to its high oil content, as an oil crop. Cultivation was well-established in the Americas before the Spanish arrived. Conquistadors found the tlalcacahuatl (the plant's Nahuatl name) being offered for sale in the marketplace of Tenochtitlan.</English>
         <German>[TAB][H1]Geröstete Erdnüsse[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -1358,7 +1358,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_OLIVES_PEDIA</Tag>
-        <English>[TAB][H1]Olives[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Olives[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Olives[COLOR_REVERT] grow in [LINK=TERRAIN_PLAINS]plains[\LINK]. To grow olives, a colonist needs to have the [LINK=PROFESSION_OLIVES_PLANTER]olive planter[\LINK] profession. The supply of olives can be doubled by commissioning [LINK=UNIT_OLIVES_PLANTER]expert olive planters[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]The olive is a small tree originating in the Mediterranean basin. Olives are one of the core ingredients in Mediterranean cuisine. The olive tree has thousands of cultivars.</English>
         <German>[TAB][H1]Oliven[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -1446,7 +1446,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_OLIVE_OIL_PEDIA</Tag>
-        <English>[TAB][H1]Olive Oil[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Olive Oil[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Olive oil[COLOR_REVERT] is made from [LINK=YIELD_OLIVES]olives[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_OLIVE_OIL_TRADER] olive oil trader[\LINK] profession in the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK] or one of its upgrades. The output of olive oil can be doubled by commissioning [LINK=UNIT_OIL_TRADER]master olive oil traders[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Pressing oil is an ancient craft in Europe, particularly in Mediterranean cultures. Equipment that crushes olives for their oil can be adapted to work with rapeseed.[NEWLINE]Before European contact cooking oil was essential for Pacific Northwest Native nations. Oolichan oil from candlefish made up so much of Native commerce that the trade routes were called grease trails.</English>
         <German>[TAB][H1]Olivenöl[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -1460,7 +1460,7 @@
 	<!-- RAPE_OIL -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_RAPE_OIL</Tag>
-        <English>Rape Oil</English>
+        <English>Rapeseed Oil</English>
         <French>Huile de colza</French>
         <German>
             <Text>Rapsöl</Text>
@@ -1470,7 +1470,7 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_RAPE_OIL</Tag>
-        <English>Rape Oil</English>
+        <English>Rapeseed Oil</English>
         <French>Huile de colza</French>
         <German>
             <Text>Rapsöl</Text>
@@ -1480,7 +1480,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RAPE_OIL</Tag>
-        <English>Rape Oil</English>
+        <English>Rapeseed Oil</English>
         <French>Huile de colza</French>
         <German>
             <Text>Rapsöl</Text>
@@ -1490,7 +1490,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_RAPE_OIL_PEDIA</Tag>
-        <English>[TAB][H1]Rape Oil[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Rapeseed Oil[\H1][PARAGRAPH:2][BOLD] Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rapeseed oil[COLOR_REVERT] is made from [LINK=YIELD_OLIVES]rapeseed[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_RAPE_OIL_TRADER] rapeseed oil trader[\LINK] profession in the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK] or one of its upgrades. The output of rapeseed oil can be doubled by commissioning [LINK=UNIT_OIL_TRADER]master rapeseed oil traders[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Rapeseed with its bright yellow flowers is cultivated mainly for its oil-rich seed, which has appreciable amounts of erucic acid. Rapeseed meal, left after the oil is extracted, is a high-protein animal feed.[NEWLINE]Rapeseed is a valuable oil crop. Once the oil is extracted, what's left is used as fodder for domestic animals, mainly cattle, but also pigs and poultry. It's a member of the cabbage family.</English>
         <German>[TAB][H1]Rapsöl[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -1622,7 +1622,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_RICE_PEDIA</Tag>
-        <English>[TAB][H1]Rice[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Rice[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT] is grown on [LINK=TERRAIN_PLAIN]plains[\LINK]. To grow rice, a colonist needs to have the [LINK=PROFESSION_RICE_FARMER]rice farmer[\LINK] profession. The supply of rice can be doubled by commissioning [LINK=UNIT_RICE_FARMER]expert rice farmers[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]In tropical areas rice can survive as a perennial. It grows in water. Rice seeds are milled with a huller to remove the chaff , creating brown rice. Removing the bran creates white rice.[NEWLINE]Rice is nutritious and light to carry. Scouts may have a loaf of bread for their first day on the trail but it's the bag of dried rice that feeds them for the rest of the trip.</English>
         <German>[TAB][H1]Reis[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -1666,7 +1666,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CASSAVA_PEDIA</Tag>
-        <English>[TAB][H1]Cassava[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Cassava[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Cassava[COLOR_REVERT] is grown on [LINK=TERRAIN_PLAIN]jungle[\LINK] terrain. To grow cassava, a colonist needs to have the [LINK=PROFESSION_CASSAVA_PLANTER]cassava planter[\LINK] profession. The supply of cassava can be doubled by commissioning [LINK=UNIT_CASSAVA_PLANTER]expert cassava planters[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Cassava is a woody shrub native to South America where it is extensively cultivated as an annual crop in tropical and subtropical regions for its edible starchy tuberous root, a major source of carbohydrates. Cassava is the third-largest source of food carbohydrates in the tropics, after rice and maize. It must be properly prepared before consumption, as improper preparation of cassava can leave enough residual cyanide to cause acute cyanide intoxication.</English>
         <German>[TAB][H1]Cassava[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -1710,7 +1710,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COCHINEAL_PEDIA</Tag>
-        <English>[TAB][H1]Cochineal[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Cochineal[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Cochineal[COLOR_REVERT] comes from insects on [LINK=TERRAIN_DESERT]desert[\LINK] cacti. To collect cochineal, a colonist needs to have the [LINK=PROFESSION_COCHINEAL_COLLECTOR] cochineal collector[\LINK] profession. The supply of cochineal can be doubled by commissioning [LINK=UNIT_COCHINEAL_COLLECTOR]expert cochineal collectors[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]The cochineal insects found on prickly pear cactus pads produce carminic acid, a predator-deterring chemical. When mixed with aluminum or calcium salts cochineal becomes carmine dye. Collectors gather the bugs by brushing them off the cactus pads.</English>
         <German>[TAB][H1]Cochineal[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -1768,7 +1768,7 @@
 	<!-- PADDED_LEATHER_COATS -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_PADDED_LEATHER_COATS</Tag>
-        <English>Padded Leather Coats</English>
+        <English>Lined Leather Coats</English>
         <French>Manteaux en cuir matelassés</French>
         <German>
             <Text>Geplosterte Ledermäntel</Text>
@@ -1778,7 +1778,7 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_PADDED_LEATHER_COATS</Tag>
-        <English>Padded Leather Coats</English>
+        <English>Lined Leather Coats</English>
         <French>Manteaux en cuir matelassés</French>
         <German>
             <Text>Geplosterte Ledermäntel</Text>
@@ -1788,7 +1788,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PADDED_LEATHER_COATS</Tag>
-        <English>Padded Leather Coats</English>
+        <English>Lined Leather Coats</English>
         <French>Manteaux en cuir matelassés</French>
         <German>
             <Text>Geplosterte Ledermäntel</Text>
@@ -1798,7 +1798,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PADDED_LEATHER_COATS_PEDIA</Tag>
-        <English>[TAB][H1]Padded Leather Coats[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Padded leather coats[COLOR_REVERT] are manufactured from [LINK=YIELD_HIDES]hides[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_PADDED_LEATHER_COAT]leather clothier[\LINK] profession in the [LINK=BUILDING_PADDED_LEATHER_COAT_MAKERS_HOUSE] padded leather coat house[\LINK] or one of its upgrades. The output of coats can be doubled by commissioning a [LINK=UNIT_PADDED_LEATHER_COAT_MAKER]master leather clothier[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Leather is good at keeping out the wind but when the temperature drops it still feels cold. Putting padding into leather coats keeps people warm when the snow flies. Sewing padding into leather doesn't just make the clothes more comfortable. By adding insulation it also improves health for those working outside, and can even save their lives.</English>
+        <English>[TAB][H1]Lined Leather Coats[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Lined leather coats[COLOR_REVERT] are manufactured from [LINK=YIELD_HIDES]hides[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_PADDED_LEATHER_COAT]leather clothier[\LINK] profession in the [LINK=BUILDING_PADDED_LEATHER_COAT_MAKERS_HOUSE] leather coat maker's house[\LINK] or one of its upgrades. The output of coats can be doubled by commissioning a [LINK=UNIT_PADDED_LEATHER_COAT_MAKER]master leather clothier[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Leather is good at keeping out the wind but when the temperature drops it still feels cold. Putting linings into leather coats keeps people warm when the snow flies. Sewing padding into leather doesn't just make the clothes more comfortable. By adding insulation it also improves health for those working outside, and can even save their lives.</English>
         <German>[TAB][H1]Geplosterte Ledermäntel[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -2018,7 +2018,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_EVERYDAY_CLOTHES_PEDIA</Tag>
-        <English>[TAB][H1]Everyday Clothes[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Everyday Clothes[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Everyday clothes[COLOR_REVERT] are made in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades. To do this, a colonist needs to have the [LINK=PROFESSION_Tailor]tailor[\LINK] profession. The output of everyday clothing can be doubled by commissioning [LINK=UNIT_TAILOR]master tailors[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Everyday clothes have to be hard-wearing but they still should look good. Most people can afford a change of clothes. Owning a variety of styles and colours is a sign of modest prosperity.</English>
         <German>[TAB][H1]Alltagskleidung[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -2032,7 +2032,7 @@
 	<!-- FESTIVE_CLOTHES -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_FESTIVE_CLOTHES</Tag>
-        <English>Festive Clothes</English>
+        <English>Formal Clothes</English>
         <French>Vêtements festifs</French>
         <German>
             <Text>Festliche Kleidung</Text>
@@ -2042,7 +2042,7 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_FESTIVE_CLOTHES</Tag>
-        <English>Festive Clothes</English>
+        <English>Formal Clothes</English>
         <French>Vêtements festifs</French>
         <German>
             <Text>Festliche Kleidung</Text>
@@ -2052,7 +2052,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FESTIVE_CLOTHES</Tag>
-        <English>Festive Clothes</English>
+        <English>Formal Clothes</English>
         <French>Vêtements festifs</French>
         <German>
             <Text>Festliche Kleidung</Text>
@@ -2062,7 +2062,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_FESTIVE_CLOTHES_PEDIA</Tag>
-        <English>[TAB][H1]Festive Clothes[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Formal Clothes[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Formal clothes[COLOR_REVERT] are made in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades. To do this, a colonist needs to have the [LINK=PROFESSION_Tailor]tailor[\LINK] profession. The output of formal clothing can be doubled by commissioning [LINK=UNIT_TAILOR]master tailors[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]The tailor creates the well-dressed man and the stylish woman. In a growing town with a fashionable tailor, everyone from the merchant to the entertainer to the blacksmith buys there to look their best.</English>
         <German>[TAB][H1]Festliche Kleidung[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
