@@ -18912,6 +18912,7 @@ void CvPlayer::burnMissions(PlayerTypes ePlayer)
 	{
 		if (pCity->getMissionaryPlayer() == ePlayer)
 		{
+			pCity->setMissionaryRate(0);
 			pCity->setMissionaryPlayer(NO_PLAYER);
 		}
 	}
@@ -18976,6 +18977,7 @@ void CvPlayer::burnTradePosts(PlayerTypes ePlayer)
 		if (pCity->getTradePostPlayer() == ePlayer)
 		{
 			pCity->setTradePostPlayer(NO_PLAYER);
+			pCity->setNativeTradeRate(0);
 			pCity->setNativeTradePostGold(0);
 		}
 	}
