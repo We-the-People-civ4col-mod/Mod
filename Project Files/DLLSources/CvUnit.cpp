@@ -4344,6 +4344,20 @@ bool CvUnit::shouldLoadOnMove(const CvPlot* pPlot) const
 		//WTP, ray, fix for Transports catching Units on Large River - could happen on Fords and on Ferries - START
 		if (pPlot->getFeatureType() == NO_FEATURE && pPlot->getImprovementType() == NO_IMPROVEMENT)
 		{
+			// Added destination check by Nightinggale
+			CvSelectionGroup* pGroup = getGroup();
+			if (pGroup && pGroup->headMissionQueueNode() && pGroup->headMissionQueueNode()->m_data.eMissionType == MISSION_MOVE_TO)
+			{
+				// unit is moving into terrain, which will normally require loading on to a ship
+				if (pGroup->headMissionQueueNode()->m_data.iData1 != pPlot->getX_INLINE()
+					|| pGroup->headMissionQueueNode()->m_data.iData2 != pPlot->getY_INLINE())
+				{
+					// unit is moving on to a plot on the other side, possibly with automated moves
+					// unit should not board and instead let it continue to the other side
+					return false;
+				}
+
+			}
 			return true;
 		}
 		else
