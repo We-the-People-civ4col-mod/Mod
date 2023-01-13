@@ -189,6 +189,12 @@ bool KmodPathFinder::GeneratePath(const CvPlot* pToPlot)
 {
 	if (!settings.pGroup || !pToPlot)
 		return false;
+
+	if (settings.pGroup->plot() == NULL)
+	{
+		FAssertMsg(false, "empty selection group trying to generate path");
+		return false;
+	}
 	return GeneratePath(settings.pGroup->plot()->getX(), settings.pGroup->plot()->getY(),
 		pToPlot->getX(), pToPlot->getY());
 }
