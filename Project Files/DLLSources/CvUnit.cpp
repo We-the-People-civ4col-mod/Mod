@@ -4339,18 +4339,23 @@ bool CvUnit::shouldLoadOnMove(const CvPlot* pPlot) const
 		return false;
 	}
 
-	if (!pPlot->isValidDomainForLocation(*this))
-	{
-		return true;
-	}
-
 	if (m_pUnitInfo->getTerrainImpassable(pPlot->getTerrainType()))
 	{
-		//WTP, ray, fix for Transports catching Units on Large River - could happen on Fords and on Ferries
+		//WTP, ray, fix for Transports catching Units on Large River - could happen on Fords and on Ferries - START
 		if (pPlot->getFeatureType() == NO_FEATURE && pPlot->getImprovementType() == NO_IMPROVEMENT)
 		{
 			return true;
 		}
+		else
+		{
+			return false;
+		}
+		//WTP, ray, fix for Transports catching Units on Large River - could happen on Fords and on Ferries - END
+	}
+
+	if (!pPlot->isValidDomainForLocation(*this))
+	{
+		return true;
 	}
 
 	return false;
