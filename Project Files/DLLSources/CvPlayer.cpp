@@ -14752,18 +14752,32 @@ void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdate
 					pUnitCity = getPrimaryCity();
 				}
 
-				if (GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_SEA && GC.getUnitInfo(eUnit).getTerrainImpassable(TERRAIN_SHALLOW_COAST))
-				{ // Ships that cannot pass shallow coast ...
-				if (NULL != pUnitCity && !pUnitCity->plot()->hasDeepWaterCoast())
-					pUnitCity = NULL; // ... will cancel the city selected before
+				// WTP, ray, let us do this for all Ships, it is safer
+				// if (GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_SEA && GC.getUnitInfo(eUnit).getTerrainImpassable(TERRAIN_SHALLOW_COAST))
+				if (GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_SEA)
+				{	
+					// let us see if we need to do anything at all
+					bool bFoundCityIsAlreadySuitable = false;
 
-				int iLoop;
-				for (CvCity* pLoopCity = firstCity(&iLoop); NULL != pLoopCity; pLoopCity = nextCity(&iLoop))
-					{ // ... and search for a coastal city with deep water coast ...
-						if (pLoopCity->isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()) && pLoopCity->plot()->hasDeepWaterCoast())
-						{
-							pUnitCity = pLoopCity;
-							break;
+					if (pUnitCity->isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()) && pUnitCity->plot()->hasDeepWaterCoast())
+					{
+						// the city is fine, nothing needs to be done
+						bFoundCityIsAlreadySuitable = true;
+					}
+
+					// we try to find a suitable city
+					if (bFoundCityIsAlreadySuitable == false)
+					{
+						// ... will cancel the city selected before and try to find a new one;
+						pUnitCity = NULL; 
+						int iLoop;
+						for (CvCity* pLoopCity = firstCity(&iLoop); NULL != pLoopCity; pLoopCity = nextCity(&iLoop))
+						{ // ... and search for a coastal city with deep water coast ...
+							if (pLoopCity->isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()) && pLoopCity->plot()->hasDeepWaterCoast())
+							{
+								pUnitCity = pLoopCity;
+								break;
+							}
 						}
 					}
 				}
@@ -14775,8 +14789,10 @@ void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdate
 					{
 						initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pUnitCity->getX_INLINE(), pUnitCity->getY_INLINE());
 					}
-				} else if (GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_SEA) {
-				// ... or if there is no such city and units to spawn are ships, spawn them at the starting plot
+				} 
+				else if (GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_SEA) 
+				{ // ... or if there is no such city and units to spawn are ships, spawn them at the starting plot
+					
 					CvPlot *pStartingPlot = getStartingPlot();
 					if (pStartingPlot != NULL)
 					{
