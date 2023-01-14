@@ -6549,37 +6549,41 @@ bool CvUnitAI::AI_europe()
 		kOwner.AI_doEurope();
 	}
 	
+	if (!kOwner.getNumCities() == 0)
+	{	// only do this if we have not lost all our cities!
+		// Otherwise we'll get our transport units stuck in a loop to Europe and back
 	// TAC - AI purchases military units - koma13 - START
-	for (int i = 0; i < kOwner.getNumEuropeUnits(); ++i)
-	{
-		CvUnit* pLoopUnit = kOwner.getEuropeUnit(i);
-		if (!isFull() && pLoopUnit->canAttack())
+		for (int i = 0; i < kOwner.getNumEuropeUnits(); ++i)
 		{
-			if (pLoopUnit->canLoadUnit(this, plot(), false))
+			CvUnit* pLoopUnit = kOwner.getEuropeUnit(i);
+			if (!isFull() && pLoopUnit->canAttack())
 			{
-				bool bLoadUnit = (GET_TEAM(getTeam()).getAnyWarPlanCount() > 0) ? true : false;
-
-				if (!bLoadUnit && (pLoopUnit->AI_getUnitAIType() == UNITAI_DEFENSIVE))
+				if (pLoopUnit->canLoadUnit(this, plot(), false))
 				{
-					int iUndefended = 0;
-					int iNeeded = kOwner.AI_totalDefendersNeeded(&iUndefended);
-					
-					if (iUndefended > 0)
+					bool bLoadUnit = (GET_TEAM(getTeam()).getAnyWarPlanCount() > 0) ? true : false;
+
+					if (!bLoadUnit && (pLoopUnit->AI_getUnitAIType() == UNITAI_DEFENSIVE))
 					{
-						if (GC.getGameINLINE().getSorenRandNum(100, "AI load military unit?") < 50)
+						int iUndefended = 0;
+						int iNeeded = kOwner.AI_totalDefendersNeeded(&iUndefended);
+					
+						if (iUndefended > 0)
 						{
-							bLoadUnit = true;
+							if (GC.getGameINLINE().getSorenRandNum(100, "AI load military unit?") < 50)
+							{
+								bLoadUnit = true;
+							}
 						}
 					}
-				}
 							
-				if (bLoadUnit)
-				{
-					kOwner.loadUnitFromEurope(pLoopUnit, this);
-					if (getGroup()->getAutomateType() == AUTOMATE_FULL)
+					if (bLoadUnit)
 					{
-						FAssert(pLoopUnit->getGroup() != NULL);
-						pLoopUnit->getGroup()->setAutomateType(AUTOMATE_FULL);
+						kOwner.loadUnitFromEurope(pLoopUnit, this);
+						if (getGroup()->getAutomateType() == AUTOMATE_FULL)
+						{
+							FAssert(pLoopUnit->getGroup() != NULL);
+							pLoopUnit->getGroup()->setAutomateType(AUTOMATE_FULL);
+						}
 					}
 				}
 			}
