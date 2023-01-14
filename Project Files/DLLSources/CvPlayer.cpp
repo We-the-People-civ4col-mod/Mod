@@ -8382,7 +8382,8 @@ void CvPlayer::verifyAlive()
 				// TAC - RESPAWN Option - Ray - Start
 				// WTP, ray, fix for Colonial AI not being possible to eliminate a Colonial AI - Check for "No more Settler" removed because causing Problems with Settler is Europe
 				// Added veto check for having at least a single settler
-				if (!isNative() && !isHuman() && GC.getGameINLINE().getGameTurn() > iMinTurnForAIRespawningOff && GC.getDefineINT("KI_RESPAWN_OFF") == 1 && AI_getNumAIUnits(UNITAI_SETTLER) == 0 && (getNumUnits() < 5 || AI_getNumAIUnits(UNITAI_TRANSPORT_SEA) == 0))
+				// only count units which are not treasures (because AI usually has a lot of them stuck somewhere on the map and they are useless if a player has nothing else left)
+				if (!isNative() && !isHuman() && GC.getGameINLINE().getGameTurn() > iMinTurnForAIRespawningOff && GC.getDefineINT("KI_RESPAWN_OFF") == 1 && AI_getNumAIUnits(UNITAI_SETTLER) == 0 && ((getNumUnits() - AI_getNumAIUnits(UNITAI_TREASURE)) < 5 || AI_getNumAIUnits(UNITAI_TRANSPORT_SEA) == 0))
 				{
 					bKill = true;
 					bRespawnDeactivated = true;
