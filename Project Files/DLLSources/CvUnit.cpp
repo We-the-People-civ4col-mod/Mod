@@ -2993,6 +2993,14 @@ bool CvUnit::canEnterTerritory(PlayerTypes ePlayer, bool bIgnoreRightOfPassage) 
 		return true;
 	}
 
+	// WTP, ray, prevent first Settler Units to be caught in deadends by other Territory - START
+	// for most of the "Forced Peace Period" - We will allow Units to pass other Territory
+	if (GC.getGame().getRemainingForcedPeaceTurns() > 2)
+	{
+		return true;
+	}
+	// WTP, ray, prevent first Settler Units to be caught in deadends by other Territory - END
+
 	// R&R, ray, Fleeing Units START
 	if(AI_getUnitAIType() == UNITAI_FLEEING)
 	{
