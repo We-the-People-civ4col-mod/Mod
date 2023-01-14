@@ -14752,11 +14752,38 @@ void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdate
 					pUnitCity = getPrimaryCity();
 				}
 
+				if (GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_SEA && GC.getUnitInfo(eUnit).getTerrainImpassable(TERRAIN_SHALLOW_COAST))
+				{ // Ships that cannot pass shallow coast ...
+				if (NULL != pUnitCity && !pUnitCity->plot()->hasDeepWaterCoast())
+					pUnitCity = NULL; // ... will cancel the city selected before
+
+				int iLoop;
+				for (CvCity* pLoopCity = firstCity(&iLoop); NULL != pLoopCity; pLoopCity = nextCity(&iLoop))
+					{ // ... and search for a coastal city with deep water coast ...
+						if (pLoopCity->isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()) && pLoopCity->plot()->hasDeepWaterCoast())
+						{
+							pUnitCity = pLoopCity;
+							break;
+						}
+					}
+				}
+
+				// if we have a suitable city, spawn units there ...
 				if (NULL != pUnitCity)
 				{
 					for (int i = 0; i < kEvent.getNumUnits(); ++i)
 					{
 						initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pUnitCity->getX_INLINE(), pUnitCity->getY_INLINE());
+					}
+				} else if (GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_SEA) {
+				// ... or if there is no such city and units to spawn are ships, spawn them at the starting plot
+					CvPlot *pStartingPlot = getStartingPlot();
+					if (pStartingPlot != NULL)
+					{
+						for (int i = 0; i < kEvent.getNumUnits(); ++i)
+						{
+							initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pStartingPlot->getX_INLINE(), pStartingPlot->getY_INLINE());
+						}
 					}
 				}
 			}
