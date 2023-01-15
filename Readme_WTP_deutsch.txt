@@ -63,6 +63,8 @@ Aktuelle aktive WTP Teammitglieder
 	Fürstbischof
 	Kendon
 	Raubwürger
+	Liet
+	jooe
 
 Ehemalige (jetzt inaktive) RaR Mitglieder:
 

@@ -65,6 +65,8 @@ Current WTP team members
 	Kendon
 	Raubwürger
 	Flavius Belisarius
+	Liet
+	jooe
 
 Former (now inactive) RaR members:
 
