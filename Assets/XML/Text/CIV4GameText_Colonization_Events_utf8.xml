@@ -5420,7 +5420,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_FOOD_FAILED</Tag>
-		<English>Another colonial power succeeded first in cornering the market in the colonies for [COLOR_FONT_GOLD]food[COLOR_REVERT] from Port Royal.</English>
+		<English>Another colonial power is the first to corner the market in the colonies for [COLOR_FONT_GOLD]food[COLOR_REVERT] from Port Royal.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] in PortRoyal zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
@@ -5435,32 +5435,32 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_STONE_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]stone[COLOR_REVERT] from PortRoyal.</English>
+		<English>We are now the lead trader of [COLOR_FONT_GOLD]stone[COLOR_REVERT] from Port Royal.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] mit PortRoyal zu werden.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_STONE_START</Tag>
-		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]stone[COLOR_REVERT] from PortRoyal.</English>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]stone[COLOR_REVERT] from Port Royal.</English>
 		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] mit PortRoyal begeistert.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_STONE_FAILED</Tag>
-		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]stone[COLOR_REVERT] from PortRoyal.</English>
+		<English>Another colonial power is the first to corner the market in the colonies for [COLOR_FONT_GOLD]stone[COLOR_REVERT] from Port Royal.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Steine[COLOR_REVERT] in PortRoyal zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_STONE_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]stone[COLOR_REVERT] from PortRoyal.</English>
+		<English>We are now the lead trader of [COLOR_FONT_GOLD]stone[COLOR_REVERT] from Port Royal.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] in PortRoyal zu werden.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_START</Tag>
-		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]lumber[COLOR_REVERT] from PortRoyal has begun.</English>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]lumber[COLOR_REVERT] from Port Royal has begun.</English>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit PortRoyal hat begonnen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]lumber[COLOR_REVERT] from PortRoyal.</English>
+		<English>We are now the lead trader in [COLOR_FONT_GOLD]lumber[COLOR_REVERT] from Port Royal.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit PortRoyal zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -5470,12 +5470,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_LUMBER_FAILED</Tag>
-		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]lumber[COLOR_REVERT] from PortRoyal.</English>
+		<English>Another colonial power is the first to corner the market in the colonies for [COLOR_FONT_GOLD]lumber[COLOR_REVERT] from Port Royal.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] in PortRoyal zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]lumber[COLOR_REVERT] from PortRoyal.</English>
+		<English>We are now the lead trader in [COLOR_FONT_GOLD]lumber[COLOR_REVERT] from Port Royal.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] in PortRoyal zu werden.</German>
 	</TEXT>
 	<TEXT>
