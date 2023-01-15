@@ -1245,8 +1245,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_LEARNING_BY_DOING_FREE_MODIFIER</Tag>
-        <English>[ICON_BULLET]%D1%% chance for unfree workers to become free colonists by hard work</English>
-        <German>[ICON_BULLET]%D1%% Chance für Unfreie durch harte Arbeit zum freien Kolonisten zu werden</German>
+        <English>[ICON_BULLET]%D1%% chance for unfree workers to become free by hard work</English>
+        <German>[ICON_BULLET]%D1%% Chance für Unfreie durch harte Arbeit frei zu werden</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_LEARNING_BY_DOING_RUNAWAY_MODIFIER</Tag>
