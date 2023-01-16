@@ -4735,7 +4735,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLADES_DONE</Tag>
-        <English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] from Port Royal.</English>
+        <English>We are now the top trader in [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] from Port Royal.</English>
         <German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] aus Port Royal zu werden.</German>
     </TEXT>
     <TEXT>
@@ -4745,12 +4745,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_BLADES_FAILED</Tag>
-        <English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] from Port Royal.</English>
+        <English>Another colonial power has cornered the market  in the colonies for [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] from Port Royal.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in den Kolonien für [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] aus Port Royal zu beherrschen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLADES_DONE</Tag>
-        <English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] from Port Royal. The governor of Port Royal is extremely satisfied.</English>
+        <English>We are now the top trader in [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] from Port Royal. The governor of Port Royal is extremely satisfied.</English>
         <German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] aus Port Royal zu werden. Der Gouverneur von Port Royal ist äusserst zufrieden.</German>
     </TEXT>
     <TEXT>
@@ -4760,7 +4760,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE</Tag>
-        <English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] from Port Royal.</English>
+        <English>We are now the top trader in [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] from Port Royal.</English>
         <German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Segelzeug[COLOR_REVERT] aus Port Royal zu werden.</German>
     </TEXT>
     <TEXT>
@@ -4770,12 +4770,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_SAILCLOTH_FAILED</Tag>
-        <English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] from Port Royal.</English>
+        <English>Another colonial power has cornered the market  in the colonies for [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] from Port Royal.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in den Kolonien für [COLOR_FONT_GOLD]Segelzeug[COLOR_REVERT] aus Port Royal zu beherrschen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE</Tag>
-        <English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] from Port Royal. The governor of Port Royal is extremely satisfied.</English>
+        <English>We are now the top trader in [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] from Port Royal. The governor of Port Royal is extremely satisfied.</English>
         <German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Segelzeug[COLOR_REVERT] aus Port Royal zu werden. Der Gouverneur von Port Royal ist äusserst zufrieden.</German>
     </TEXT>
     <TEXT>
@@ -5075,7 +5075,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_DONE</Tag>
-        <English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]coffee[COLOR_REVERT] from Port Royal. The governor of Port Royal finds himself energized.</English>
+        <English>We are now the top trader in [COLOR_FONT_GOLD]coffee[COLOR_REVERT] from Port Royal. The governor of Port Royal finds himself energized.</English>
         <German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] aus Port Royal zu werden. Der Gouverneur von Port Royal ist äusserst zufrieden.</German>
     </TEXT>
     <TEXT>
@@ -5495,7 +5495,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_3</Tag>
-		<English>For the glory and wealth of our colonies! Aha, mulattos! Let's see what they are good for...</English>
+		<English>For the glory and wealth of our colonies! Aha, mulattos! Let's see what they're good for...</English>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Oha, Mulatten! Mal sehen für was die gut sind...</German>
 	</TEXT>
 	<TEXT>
@@ -5505,17 +5505,17 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_5</Tag>
-		<English>For the Glory and Wealth of our colonies! Slave hunters might also be useful!</English>
+		<English>For the glory and wealth of our colonies! Slave hunters will certainly be useful!</English>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Sklavenjäger könnten auch nützlich sein!</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_6</Tag>
-		<English>For the Glory and Wealth of our colonies! Capable field workers are always welcome!</English>
+		<English>For the glory and wealth of our colonies! Capable field workers are always welcome!</English>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Fähige Feldarbeiter sind immer willkommen!</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_7</Tag>
-		<English>For the Glory and Wealth of our colonies! Finally we can safely ship our slaves to the New World!</English>
+		<English>For the glory and wealth of our colonies! Finally we can safely ship our slaves to the New World!</English>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Endlich können wir unsere Sklaven sicher in die Neue Welt schippern!</German>
 	</TEXT>
     <TEXT>
@@ -5610,7 +5610,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_HORSES_DONE</Tag>
-        <English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]horses[COLOR_REVERT] from Africa.</English>
+        <English>We are now the top trader in [COLOR_FONT_GOLD]horses[COLOR_REVERT] from Africa.</English>
         <German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Pferden[COLOR_REVERT] aus Afrika zu werden.</German>
     </TEXT>
     <TEXT>
@@ -5905,27 +5905,27 @@
     </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COTTON_START</Tag>
-		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]COTTON[COLOR_REVERT] from Africa has begun.</English>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]cotton[COLOR_REVERT] from Africa has begun.</English>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]COTTON[COLOR_REVERT] mit Africa hat begonnen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COTTON_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]COTTON[COLOR_REVERT] from Africa.</English>
+		<English>We are now the top trader in [COLOR_FONT_GOLD]cotton[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]COTTON[COLOR_REVERT] mit Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COTTON_START</Tag>
-		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]COTTON[COLOR_REVERT] from Africa.</English>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]cotton[COLOR_REVERT] from Africa.</English>
 		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]COTTON[COLOR_REVERT] mit Africa begeistert.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_COTTON_FAILED</Tag>
-		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]COTTON[COLOR_REVERT] from Africa.</English>
+		<English>Another colonial power has cornered the market in the colonies for [COLOR_FONT_GOLD]cotton[COLOR_REVERT] from Africa.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]COTTON[COLOR_REVERT] in Africa zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COTTON_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]COTTON[COLOR_REVERT] from Africa.</English>
+		<English>We are now the leading trader in [COLOR_FONT_GOLD]cotton[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]COTTON[COLOR_REVERT] in Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -5935,7 +5935,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_INDIGO_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]indigo[COLOR_REVERT] from Africa.</English>
+		<English>We are now the top trader in [COLOR_FONT_GOLD]indigo[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] mit Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -5945,12 +5945,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_INDIGO_FAILED</Tag>
-		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]indigo[COLOR_REVERT] from Africa.</English>
+		<English>Another colonial power has cornered the market in the colonies for [COLOR_FONT_GOLD]indigo[COLOR_REVERT] from Africa.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] in Africa zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_INDIGO_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]indigo[COLOR_REVERT] from Africa.</English>
+		<English>We are now the leading trader of [COLOR_FONT_GOLD]indigo[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] in Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -5960,7 +5960,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_LOGWOOD_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]logwood[COLOR_REVERT] from Africa.</English>
+		<English>We are now the leading trader in [COLOR_FONT_GOLD]logwood[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Färbeholz[COLOR_REVERT] mit Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -5970,12 +5970,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_LOGWOOD_FAILED</Tag>
-		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]logwood[COLOR_REVERT] from Africa.</English>
+		<English>Another colonial power has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]logwood[COLOR_REVERT] from Africa.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Färbeholz[COLOR_REVERT] in Africa zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_LOGWOOD_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]logwood[COLOR_REVERT] from Africa.</English>
+		<English>We are now the leading trader in [COLOR_FONT_GOLD]logwood[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Färbeholz[COLOR_REVERT] in Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -5985,7 +5985,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COCHINEAL_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] from Africa.</English>
+		<English>We are now the leading trader in [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Purpurschnecken[COLOR_REVERT] mit Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -5995,12 +5995,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_COCHINEAL_FAILED</Tag>
-		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] from Africa.</English>
+		<English>Another colonial power has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] from Africa.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Purpurschnecken[COLOR_REVERT] in Africa zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COCHINEAL_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] from Africa.</English>
+		<English>We are now the dominant trader in [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Purpurschnecken[COLOR_REVERT] in Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -6010,7 +6010,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COFFEE_BERRIES_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]coffee berries[COLOR_REVERT] from Africa.</English>
+		<English>We are now the dominant trader in [COLOR_FONT_GOLD]coffee berries[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] mit Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -6020,12 +6020,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_COFFEE_BERRIES_FAILED</Tag>
-		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]coffee berries[COLOR_REVERT] from Africa.</English>
+		<English>Another colonial power has cornered the market in the colonies for [COLOR_FONT_GOLD]coffee berries[COLOR_REVERT] from Africa.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] in Africa zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COFFEE_BERRIES_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]coffee berries[COLOR_REVERT] from Africa.</English>
+		<English>We are now the dominant trader in [COLOR_FONT_GOLD]coffee berries[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] in Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -6035,7 +6035,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_PEANUTS_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] from Africa.</English>
+		<English>We are now the dominant trader in [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] mit Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -6045,12 +6045,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_PEANUTS_FAILED</Tag>
-		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] from Africa.</English>
+		<English>Another colonial power has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] from Africa.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] in Africa zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_PEANUTS_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] from Africa.</English>
+		<English>We are now the dominant trader in [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] in Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -6060,7 +6060,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_RED_PEPPER_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] from Africa.</English>
+		<English>We are now the top trader in [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]rotem Pfeffer[COLOR_REVERT] mit Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -6070,12 +6070,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_RED_PEPPER_FAILED</Tag>
-		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] from Africa.</English>
+		<English>Another colonial power has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] from Africa.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]roten Pfeffer[COLOR_REVERT] in Africa zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_RED_PEPPER_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] from Africa.</English>
+		<English>We are now the dominant trader in [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]rotem Pfeffer[COLOR_REVERT] in Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -6085,7 +6085,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_VANILLA_PODS_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]vanilla pods[COLOR_REVERT] from Africa.</English>
+		<English>We are now the top trader in [COLOR_FONT_GOLD]vanilla pods[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Vanilleschoten[COLOR_REVERT] mit Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -6095,37 +6095,37 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_VANILLA_PODS_FAILED</Tag>
-		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]vanilla pods[COLOR_REVERT] from Africa.</English>
+		<English>Another colonial power has cornered the market in the colonies for [COLOR_FONT_GOLD]vanilla pods[COLOR_REVERT] from Africa.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Vanilleschoten[COLOR_REVERT] in Africa zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_VANILLA_PODS_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]vanilla pods[COLOR_REVERT] from Africa.</English>
+		<English>We are now the top trader in [COLOR_FONT_GOLD]vanilla pods[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Vanilleschoten[COLOR_REVERT] in Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_MAPLE_SIRUP_START</Tag>
 		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]MAPLE_SIRUP[COLOR_REVERT] from Africa has begun.</English>
-		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]MAPLE_SIRUP[COLOR_REVERT] mit Africa hat begonnen.</German>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] mit Africa hat begonnen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_MAPLE_SIRUP_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]MAPLE_SIRUP[COLOR_REVERT] from Africa.</English>
+		<English>We are now the top trader in [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]MAPLE_SIRUP[COLOR_REVERT] mit Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_MAPLE_SIRUP_START</Tag>
-		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]MAPLE_SIRUP[COLOR_REVERT] from Africa.</English>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] from Africa.</English>
 		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]MAPLE_SIRUP[COLOR_REVERT] mit Africa begeistert.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_MAPLE_SIRUP_FAILED</Tag>
-		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]MAPLE_SIRUP[COLOR_REVERT] from Africa.</English>
+		<English>Another colonial power has cornered the market in the colonies for [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] from Africa.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]MAPLE_SIRUP[COLOR_REVERT] in Africa zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_MAPLE_SIRUP_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]MAPLE_SIRUP[COLOR_REVERT] from Africa.</English>
+		<English>We are now the top trader in [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]MAPLE_SIRUP[COLOR_REVERT] in Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -6135,22 +6135,22 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_KAUTSCHUK_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]kautschuk[COLOR_REVERT] from Africa.</English>
+		<English>We are now the top trader in [COLOR_FONT_GOLD]rubber[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] mit Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_KAUTSCHUK_START</Tag>
-		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]kautschuk[COLOR_REVERT] from Africa.</English>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]rubber[COLOR_REVERT] from Africa.</English>
 		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] mit Africa begeistert.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_KAUTSCHUK_FAILED</Tag>
-		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]kautschuk[COLOR_REVERT] from Africa.</English>
+		<English>Another colonial power has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]rubber[COLOR_REVERT] from Africa.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] in Africa zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_KAUTSCHUK_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]kautschuk[COLOR_REVERT] from Africa.</English>
+		<English>We are now the top trader in [COLOR_FONT_GOLD]rubber[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] in Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -6160,7 +6160,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_HARDWOOD_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] from Africa.</English>
+		<English>We are now the top trader in [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Harthölzer[COLOR_REVERT] mit Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -6170,37 +6170,37 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_HARDWOOD_FAILED</Tag>
-		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] from Africa.</English>
+		<English>Another colonial power has cornered the market in the colonies for [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] from Africa.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Harthölzer[COLOR_REVERT] in Africa zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_HARDWOOD_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] from Africa.</English>
+		<English>We are now the top trader in [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Harthölzer[COLOR_REVERT] in Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_BLACK_POWDER_START</Tag>
-		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]black powder[COLOR_REVERT] from Africa has begun.</English>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] from Africa has begun.</English>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Africa hat begonnen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]black powder[COLOR_REVERT] from Africa.</English>
+		<English>We are now the top trader in [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_BLACK_POWDER_START</Tag>
-		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]black powder[COLOR_REVERT] from Africa.</English>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] from Africa.</English>
 		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Africa begeistert.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_BLACK_POWDER_FAILED</Tag>
-		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]black powder[COLOR_REVERT] from Africa.</English>
+		<English>Another colonial power has cornered the market in the colonies for [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] from Africa.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] in Africa zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]black powder[COLOR_REVERT] from Africa.</English>
+		<English>We are now the top trader in [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] in Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -6210,7 +6210,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_BLADES_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]blades[COLOR_REVERT] from Africa.</English>
+		<English>We are now the top trader in [COLOR_FONT_GOLD]blades[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Geschützen[COLOR_REVERT] mit Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -6220,12 +6220,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_BLADES_FAILED</Tag>
-		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]blades[COLOR_REVERT] from Africa.</English>
+		<English>Another colonial power has cornered the market  in the colonies for [COLOR_FONT_GOLD]blades[COLOR_REVERT] from Africa.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Geschütze[COLOR_REVERT] in Africa zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_BLADES_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]blades[COLOR_REVERT] from Africa.</English>
+		<English>We are now the top trader in [COLOR_FONT_GOLD]blades[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Geschützen[COLOR_REVERT] in Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -6235,7 +6235,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_CANNONS_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]cannons[COLOR_REVERT] from Africa.</English>
+		<English>We are now the top trader in [COLOR_FONT_GOLD]cannons[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Geschützen[COLOR_REVERT] mit Africa zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -6245,12 +6245,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_CANNONS_FAILED</Tag>
-		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]cannons[COLOR_REVERT] from Africa.</English>
+		<English>Another colonial power has cornered the market  in the colonies for [COLOR_FONT_GOLD]cannons[COLOR_REVERT] from Africa.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Geschütze[COLOR_REVERT] mit Africa zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_CANNONS_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]cannons[COLOR_REVERT] from Africa.</English>
+		<English>We are now the top trader in [COLOR_FONT_GOLD]cannons[COLOR_REVERT] from Africa.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Geschützen[COLOR_REVERT] in Africa zu werden.</German>
 	</TEXT>
 </Civ4GameText>
