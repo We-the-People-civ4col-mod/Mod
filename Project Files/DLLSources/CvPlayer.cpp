@@ -8432,10 +8432,11 @@ void CvPlayer::verifyAlive()
 				{
 					// use 50 turns as a safety fallback (if the setting was changed to a very low value or even 0)
 					// because otherwise we might kill AI off in early game or scale the minimum too fast!
-					int iUnitsRequiredMultiplier = std::min(100, 100 * GC.getGameINLINE().getGameTurn() / (iMinTurnForAIRespawningOff + 50*gameSpeedMod / 100));
-					int iNumUsefulUnits = getNumUnits() - AI_getNumAIUnits(UNITAI_TREASURE) - AI_getNumAIUnits(UNITAI_WAGON) - AI_getNumAIUnits(UNITAI_WORKER_SEA);
+					const int iUnitsRequiredPercentMultiplier = (100 * iTurn) / ((iMinTurnForAIRespawningOff + 50 * gameSpeedMod) / 100);
+					const int iUnitsRequired = 5*iUnitsRequiredPercentMultiplier / 100;
+					const int iNumUsefulUnits = getNumUnits() - AI_getNumAIUnits(UNITAI_TREASURE) - AI_getNumAIUnits(UNITAI_WAGON) - AI_getNumAIUnits(UNITAI_WORKER_SEA);
 
-					if (iNumUsefulUnits*100 < 5*iUnitsRequiredMultiplier)
+					if (iNumUsefulUnits < iUnitsRequired)
 					bKill = true;
 				}
 
