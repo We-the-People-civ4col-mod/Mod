@@ -8426,14 +8426,14 @@ void CvPlayer::verifyAlive()
 				}
 
 				// WTP, jooe: after the respawn threshold timer has passed, check how many units we have left
-				// if they are less than 5 (scaling slowly with time; treasures, wagons, working boat do not count as they won't help fighting or re-founding our colonies)
+				// if they are less than 3 (scaling slowly with time; treasures, wagons, working boat do not count as they won't help fighting or re-founding our colonies)
 				// then set bKill to true
 				if(iTurn > iMinTurnForAIRespawningOff && iMinTurnForAIRespawningOff > 50)
 				{
 					// use 50 turns as a safety fallback (if the setting was changed to a very low value or even 0)
 					// because otherwise we might kill AI off in early game or scale the minimum too fast!
 					const int iUnitsRequiredPercentMultiplier = (100 * iTurn) / ((iMinTurnForAIRespawningOff + 50 * gameSpeedMod) / 100);
-					const int iUnitsRequired = 5*iUnitsRequiredPercentMultiplier / 100;
+					const int iUnitsRequired = 3*iUnitsRequiredPercentMultiplier / 100;
 					const int iNumUsefulUnits = getNumUnits() - AI_getNumAIUnits(UNITAI_TREASURE) - AI_getNumAIUnits(UNITAI_WAGON) - AI_getNumAIUnits(UNITAI_WORKER_SEA);
 
 					if (iNumUsefulUnits < iUnitsRequired)
