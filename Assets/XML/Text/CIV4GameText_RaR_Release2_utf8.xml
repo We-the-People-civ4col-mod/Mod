@@ -113,13 +113,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_HUGE</Tag>
-        <English>(68x128 plots) Map of the Americas : faithful map with historical locations of Natives and resources</English>
+        <English>(68x128 plots) Optimized for a "New Hope" release. Map of the Americas : faithful map with historical locations of Natives and resources</English>
         <French>(68x128 cases) Carte des Amériques : représentation fidèle des Amériques, avec distribution historique des indigènes et des ressources</French>
         <German>(68x128 Geländefelder) Karte von Amerika : genaue Karte mit korrekten Ressourcen und historischen Siedlungsgebieten der Eingeborenen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_HUGE_RANDOM</Tag>
-        <English>(68x128 plots) Map of the Americas : faithful map with random locations of Natives, resources and starting locations for Europeans</English>
+        <English>(68x128 plots) Optimized for a "New Hope" release. Map of the Americas : faithful map with random locations of Natives, resources and starting locations for Europeans</English>
         <French>(68x128 cases) Carte des Amériques : représentation fidèle des Amériques, avec distribution aléatoire des indigènes, des ressources et des points de départs pour les européens</French>
         <German>(68x128 Geländefelder) Karte von Amerika : genaue Karte mit zufälligen Ressourcen und Siedlungsgebieten der Eingeborenen sowie Startplätzen für die Europäer</German>
     </TEXT>
