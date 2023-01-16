@@ -8494,7 +8494,7 @@ void CvPlayer::verifyAlive()
 			}
 		}
 
-		if(bKill && (bRespawn || !isHuman())) // we should be killed, but have a respawn chance / human players always respawn
+		if(bKill && (bRespawn || isHuman())) // we should be killed, but have a respawn chance / human players always respawn
 		{
 			initFreeUnits();
 
