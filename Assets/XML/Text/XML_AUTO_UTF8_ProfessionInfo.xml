@@ -635,7 +635,7 @@
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COFFEE_ROASTER</Tag>
         <English>
-            <Text>Coffee roaster:Coffee roasters</Text>
+            <Text>Coffee Roaster:Coffee Roasters</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
@@ -650,12 +650,12 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Coffee roaster:Coffee roasters</Text>
+            <Text>Coffee Roaster:Coffee Roasters</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Coffee roaster:Coffee roasters</Text>
+            <Text>Coffee Roaster:Coffee Roasters</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
