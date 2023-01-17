@@ -2206,7 +2206,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_STATUE_GOVERNOR_STRATEGY</Tag>
-        <English>The [COLOR_BUILDING_TEXT]Statue of the Governor[COLOR_REVERT] is a symbol of appreciation of the citizens of teh colony for their governor. It generates additional [LINK=YIELD_HAPPINESS]happiness[\LINK] and [LINK=YIELD_CULTURE]culture[\LINK] in the city. Due to its high requirements it is usually build in endgame.</English>
+        <English>The [COLOR_BUILDING_TEXT]Statue of the Governor[COLOR_REVERT] shows the high regard citizens of the colony have for their governor. It generates additional [LINK=YIELD_HAPPINESS]happiness[\LINK] and [LINK=YIELD_CULTURE]culture[\LINK] in the city. Due to its high requirements it isn't usually built till the end game.</English>
         <German>Die [COLOR_BUILDING_TEXT]Statue des Gouverneurs[COLOR_REVERT] ist ein Symbol der Wertschätung der Bürger der Kolonie für ihren Gouverneur. Sie erzeugt zusätzliche [LINK=YIELD_HAPPINESS]Zufriedenheit[\LINK] und [LINK=YIELD_CULTURE]Kultur[\LINK] in der Stadt. Aufgrund der hohen Voraussetzungen wird sie üblicherweise erst im späteren Spielverlauf gebaut.</German>
     </TEXT>
     <TEXT>
