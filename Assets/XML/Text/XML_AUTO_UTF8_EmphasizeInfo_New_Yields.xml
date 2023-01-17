@@ -42,12 +42,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_BLACK_POWDER</Tag>
-        <English>Emphasize Blackpowder</English>
+        <English>Emphasize Gunpowder</English>
         <German>Schwerpunkt Schwarzpulver</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_NO_BLACK_POWDER</Tag>
-        <English>Deemphasize Blackpowder</English>
+        <English>Deemphasize Gunpowder</English>
         <German>Schwerpunkt Schwarzpulver aufheben</German>
     </TEXT>
     <TEXT>
@@ -92,12 +92,12 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_EMPHASIZE_CHICKEN</Tag>
-        <English>Emphasize Chicken</English>
+        <English>Emphasize Chickens</English>
         <German>Schwerpunkt Hühner</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_NO_CHICKEN</Tag>
-        <English>Deemphasize Chicken</English>
+        <English>Deemphasize Chickens</English>
         <German>Schwerpunkt Hühner aufheben</German>
     </TEXT>
 	<TEXT>
@@ -162,22 +162,22 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_EMPHASIZE_PIG_SKIN</Tag>
-        <English>Emphasize Pig Skin</English>
+        <English>Emphasize Pigskin</English>
         <German>Schwerpunkt Schweinehäute</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_NO_PIG_SKIN</Tag>
-        <English>Deemphasize Pig Skin</English>
+        <English>Deemphasize Pigskin</English>
         <German>Schwerpunkt Schweinehäute aufheben</German>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_EMPHASIZE_DOWNS</Tag>
-        <English>Emphasize Downs</English>
+        <English>Emphasize Down</English>
         <German>Schwerpunkt Daunen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_NO_DOWNS</Tag>
-        <English>Deemphasize Downs</English>
+        <English>Deemphasize Down</English>
         <German>Schwerpunkt Daunen aufheben</German>
     </TEXT>
 	<TEXT>
@@ -192,12 +192,12 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_EMPHASIZE_FRUITS</Tag>
-        <English>Emphasize Fruits</English>
+        <English>Emphasize Fruit</English>
         <German>Schwerpunkt Früchte</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_NO_FRUITS</Tag>
-        <English>Deemphasize Fruits</English>
+        <English>Deemphasize Fruit</English>
         <German>Schwerpunkt Früchte aufheben</German>
     </TEXT>
 	<TEXT>
@@ -212,22 +212,22 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_EMPHASIZE_RAPE</Tag>
-        <English>Emphasize Rape</English>
+        <English>Emphasize Rapeseed</English>
         <German>Schwerpunkt Raps</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_NO_RAPE</Tag>
-        <English>Deemphasize Rape</English>
+        <English>Deemphasize Rapeseed</English>
         <German>Schwerpunkt Raps aufheben</German>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_EMPHASIZE_WILD_FEATHERS</Tag>
-        <English>Emphasize Wild Feathres</English>
+        <English>Emphasize Wild Feathers</English>
         <German>Schwerpunkt Wildfedern</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_NO_WILD_FEATHERS</Tag>
-        <English>Deemphasize Wild Feathres</English>
+        <English>Deemphasize Wild Feathers</English>
         <German>Schwerpunkt Wildfedern aufheben</German>
     </TEXT>
 	<TEXT>
@@ -262,12 +262,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_KAUTSCHUK</Tag>
-        <English>Emphasize Kautschuk</English>
+        <English>Emphasize Rubber</English>
         <German>Schwerpunkt Kautschuk</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_NO_KAUTSCHUK</Tag>
-        <English>Deemphasize Kautschuk</English>
+        <English>Deemphasize Rubber</English>
         <German>Schwerpunkt Kautschuk aufheben</German>
     </TEXT>
 	<TEXT>
@@ -402,12 +402,12 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_EMPHASIZE_HOOCH</Tag>
-        <English>Emphasize Hooch</English>
+        <English>Emphasize Fruit Brandy</English>
         <German>Schwerpunkt Schnapps</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_NO_HOOCH</Tag>
-        <English>Deemphasize Hooch</English>
+        <English>Deemphasize Fruit Brandy</English>
         <German>Schwerpunkt Schnapps aufheben</German>
     </TEXT>
 	<TEXT>
@@ -442,12 +442,12 @@
     </TEXT>	
 	<TEXT>
         <Tag>TXT_KEY_EMPHASIZE_FIELD_WORKER_TOOLS</Tag>
-        <English>Emphasize Field Worker Tools</English>
+        <English>Emphasize Fieldworker Tools</English>
         <German>Schwerpunkt Feldarbeiterwerkzeuge</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_NO_FIELD_WORKER_TOOLS</Tag>
-        <English>Deemphasize Field Worker Tools</English>
+        <English>Deemphasize Fieldworker Tools</English>
         <German>Schwerpunkt Feldarbeiterwerkzeuge aufheben</German>
     </TEXT>
 	<TEXT>
@@ -457,7 +457,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_NO_HOUSEHOLD_GOODS</Tag>
-        <English>Deemphasize Field Worker Tools</English>
+        <English>Deemphasize Household Goods</English>
         <German>Schwerpunkt Haushaltswaren aufheben</German>
     </TEXT>
 	<TEXT>
