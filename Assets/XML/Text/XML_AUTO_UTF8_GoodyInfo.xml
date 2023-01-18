@@ -47,7 +47,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_BUCCANNEER</Tag>
-        <English>You've discovered a [COLOR_UNIT_TEXT]buccanneer[COLOR_REVERT]! [NEWLINE]It first seems he will attack but after a few seconds of indecisions he lowers his weapons and asks to join you.</English>
+        <English>You've discovered a [COLOR_UNIT_TEXT]buccanneer[COLOR_REVERT]! [NEWLINE]At first he seems ready to attack but after a moment of indecision he lowers his weapons and asks to join you.</English>
         <German>Ihr habt einen [COLOR_UNIT_TEXT]Bukanier[COLOR_REVERT] entdeckt! [NEWLINE]Zuerst scheint es er würde angreifen, aber nach kurzer Zeit senkt er seine Waffen und bittet sich uns anschließen zu dürfen.</German>
     </TEXT>
     <TEXT>
@@ -62,12 +62,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_MESTIZZO</Tag>
-        <English>You've discovered a [COLOR_UNIT_TEXT]young Native[COLOR_REVERT] in the woods! [NEWLINE]At closer look you realize that one of his parents might have been White and ask him to come with you.</English>
+        <English>You've discovered a [COLOR_UNIT_TEXT]young Native man[COLOR_REVERT] in the woods. [NEWLINE]Taking a closer look you guess that one of his parents might have been white. You ask him to come with you.</English>
         <German>Ihr habt einen [COLOR_UNIT_TEXT]jungen Uhreinwohner[COLOR_REVERT] in den Wäldern entdeckt! [NEWLINE]Bei näherer Betrachtung fällt euch auf, dass einer seiner Elternteile Europäisch gewesen zu sein scheint.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_MULATTO</Tag>
-        <English>You've discovered a [COLOR_UNIT_TEXT]young Black[COLOR_REVERT]! [NEWLINE]Your first thought was that he is a runaway slave. But he tells you that his father was the white owner of his black mother who sent her into the wilderness when she got pregnant.</English>
+        <English>You've discovered a [COLOR_UNIT_TEXT]young Black man[COLOR_REVERT]! [NEWLINE]Your first thought is that he's a runaway slave. Then he tells you that his father was the white owner of his black mother who drove her out into the wilderness when she got pregnant.</English>
         <German>Ihr habt einen [COLOR_UNIT_TEXT]jungen Schwarzen[COLOR_REVERT] in den Wäldern entdeckt! [NEWLINE] Ihr haltet ihn zuerst für einen entlaufenen Sklaven. Doch er erzählt euch, dass sein Vater der weiße Besitzer seiner Mutter war, der sie in die Wildnis schickte als sie schwanger wurde.</German>
     </TEXT>
     <TEXT>
@@ -275,7 +275,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHIEF_NATIVE_MERC</Tag>
-        <English>One of our young warriors seeks glory in battle. He asks to be allowed to fight shoulder by shoulder against your enemies.</English>
+        <English>One of our young warriors seeks glory in battle. He asks to be allowed to fight beside you shoulder by shoulder against your enemies.</English>
         <German>Einer unsere jungen Krieger sucht den Ruhm des Kampfes. Er fragt, ob er mit euch Schulter an Schulter gegen eure Feinde kämpfen kann.</German>
     </TEXT>
     <TEXT>
@@ -410,7 +410,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_CRAZY_SECT_OF_MISSIONARIES</Tag>
-        <English>Milord, we've found [COLOR_WARNING_TEXT]Christian missionaries[COLOR_REVERT] in the wilderness who seem to have gone crazy. They pray to small yellow blue frogs in a pool of water.</English>
+        <English>Milord, we've found [COLOR_WARNING_TEXT]Christian missionaries[COLOR_REVERT] in the wilderness who seem to have gone crazy. They pray to small yellow-blue frogs in a pool of water.</English>
         <German>Milord, wir haben [COLOR_WARNING_TEXT]christliche Missionare[COLOR_REVERT] in der Wildnis gefunden, die anscheinend verrückt sind. Sie beten kleine bunte Frösche in einem Tümpel an.</German>
     </TEXT>
     <TEXT>
@@ -420,7 +420,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_SEVEN_CITIES_OF_CIBOLA</Tag>
-        <English>We've found the legendary golden city of [COLOR_SELECTED_TEXT]Cibola[COLOR_REVERT]. Unfortunately other [COLOR_WARNING_TEXT]conquistadores[COLOR_REVERT] got here before us. They don't want to share its wealth.</English>
+        <English>We've found [COLOR_SELECTED_TEXT]Cibola[COLOR_REVERT], the legendary city of gold. Unfortunately other [COLOR_WARNING_TEXT]conquistadores[COLOR_REVERT] got here before us. They don't want to share its wealth.</English>
         <German>Wir haben die legendäre goldene Stadt [COLOR_SELECTED_TEXT]Cibola[COLOR_REVERT] gefunden. Leider haben andere [COLOR_WARNING_TEXT]Konquistadoren[COLOR_REVERT] sie vor uns entdeckt. Sie sind nicht bereit, deren Reichtümer zu teilen.</German>
     </TEXT>
     <TEXT>
@@ -460,7 +460,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_RUNAWAY_SERVANT</Tag>
-        <English>Milord, we've found an [COLOR_WARNING_TEXT]indentured servant[COLOR_REVERT] who fled a harsh master. He was so scared that he attacked us rather than being brought home.</English>
+        <English>Milord, we've found an [COLOR_WARNING_TEXT]indentured servant[COLOR_REVERT] who fled a harsh master. He was so scared that he attacked us to avoid being brought home.</English>
         <German>Milord, wir haben einen [COLOR_WARNING_TEXT]Schuldknecht[COLOR_REVERT] gefunden, der von den Züchtigungen seines Herrn geflohen ist. Er war so verängstigt, wieder dorthin zurückgebracht zu werden, daß er uns angriff.</German>
     </TEXT>
     <TEXT>
@@ -510,7 +510,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_MOTHER_BEAR</Tag>
-        <English>Milord, we stumbled across a [COLOR_WARNING_TEXT]black mother bear[COLOR_REVERT] with her cubs. She's charging!</English>
+        <English>Milord, we stumbled across a [COLOR_WARNING_TEXT]mother black bear[COLOR_REVERT] with her cubs. She's charging!</English>
         <German>Milord, wir sind über eine [COLOR_WARNING_TEXT]Schwarzbärin[COLOR_REVERT] mit ihrem Jungen gestolpert. Die Mutter stürmt nun auf uns zu, um uns anzugreifen!</German>
     </TEXT>
     <TEXT>
