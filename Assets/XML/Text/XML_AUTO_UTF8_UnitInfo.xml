@@ -1316,7 +1316,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_SLAVE_MASTER</Tag>
         <English>
-            <Text>Slave Master:Slave Masters</Text>
+            <Text>Slave Overseer:Slave Overseers</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
@@ -1333,7 +1333,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_SLAVE_MASTER_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Slave Master[COLOR_REVERT] are capable of making Slaves, Criminals and Indentured Servants work harder to produce more. You can only acquire them by recruitment in Africa or by rare events.</English>
+        <English>[COLOR_UNIT_TEXT]Slave overseers[COLOR_REVERT] drive slaves, criminals and indentured servants to work harder to produce more. You can only acquire them by recruitment in Africa or by rare events.</English>
         <German>[COLOR_UNIT_TEXT]Sklavenbesitzer[COLOR_REVERT] sind in der Lage Sklaven, Kriminelle und Leibeigene härter arbeiten zu lassen um mehr zu produzieren. Sie können lediglich in Afrika rekrutiert werden oder durch seltene Ereignisse erhalten werden.</German>
     </TEXT>
     <TEXT>
