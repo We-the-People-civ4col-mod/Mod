@@ -2706,17 +2706,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_THREE_GALLEONS</Tag>
-        <English>Milord, his Majesty is worried that our treasure fleet is not protected enough. Thus his Majesty offers us a mighty [COLOR_HIGHLIGHT_TEXT]royal frigate[COLOR_REVERT] for a discounted price to ensure safe passage.</English>
+        <English>Milord, His Majesty is worried that our treasure fleet needs better protection. To ensure safe passage His Majesty offers us a mighty [COLOR_HIGHLIGHT_TEXT]royal frigate[COLOR_REVERT] for a discounted price.</English>
         <German>Milord, Ihre Majestät ist besorgt, dass unsere Schatzflotte nicht genug geschützt ist. Daher bietet uns Ihre Majestät eine mächtige [COLOR_HIGHLIGHT_TEXT]Königliche Fregatte[COLOR_REVERT] zu einem günstigen Preis an, um eine sichere Überfahrt zu gewährleisten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THREE_GALLEONS_1</Tag>
-        <English>We kindly refuse this offer. We do not require another war ship to protect our treasure fleet.</English>
+        <English>We regretfully refuse this offer. We do not require another war ship to protect our treasure fleet.</English>
         <German>Wir lehnen höflichst ab. Wir benötigen kein weiteres Kriegsschiff zum Schutz unserer Schatzflotte.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THREE_GALLEONS_2</Tag>
-        <English>We of course accept. We could never turn down this unique opportunity to acquire such a mighty ship</English>
+        <English>We of course accept. We would never turn down the opportunity to get such a mighty ship</English>
         <German>Wir nehmen das Angebot natürlich an. Wir könnten niemals diese einzigartige Gelegenheit zum Erwerb eines solch mächtigen Schifes ablehnen.</German>
     </TEXT>
     <TEXT>
