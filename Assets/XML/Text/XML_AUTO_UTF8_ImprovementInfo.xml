@@ -1025,7 +1025,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_TRAPPER_HUT_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Trapper huts[COLOR_REVERT] can be built in [LINK=FEATURE_FOREST]forests[\LINK], [LINK=FEATURE_LIGHT_FOREST]light forests[\LINK] and [LINK=FEATURE_FOREST_TUNDRA]taiga[\LINK], on [LINK=TERRAIN_TUNDRA]tundra[\LINK] and [LINK=TERRAIN_SNOW]permafrost[\LINK] terrain, as well as tiles with the [LINK=BONUS_BISON]bison[\LINK] bonus. They boost the production of [LINK=YIELD_FUR]fur[\LINK] and [LINK=YIELD_PREMIUM_FUR]premium fur[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Hunting wild animals like deer and beaver is a lonely job far from civilization and cities. During the trapping season hunters and trappers live in their trappers' huts, leaving only to sell their furs.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Trapper huts[COLOR_REVERT] can be built in [LINK=FEATURE_FOREST]forests[\LINK], [LINK=FEATURE_LIGHT_FOREST]light forests[\LINK] and [LINK=FEATURE_FOREST_TUNDRA]taiga[\LINK], on [LINK=TERRAIN_TUNDRA]tundra[\LINK] and [LINK=TERRAIN_SNOW]permafrost[\LINK] terrain, as well as tiles with the [LINK=BONUS_BISON]bison[\LINK] bonus. They boost the production of [LINK=YIELD_FUR]fur[\LINK] and [LINK=YIELD_PREMIUM_FUR]luxury fur[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Hunting wild animals like deer and beaver is a lonely job far from civilization and cities. During the trapping season hunters and trappers live in their trappers' huts, leaving only to sell their furs.</English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Chasser et trapper les animaux sauvages comme les cerfs ou les visons a été pendant longtemp un travail solitaire loin de la civilization et des grandes villes. Pendant les mois de chasse, les chasseurs et trappeurs vivaient dans des huttes qu'ils ne quittaient que pour vendre leurs fourrures.</French>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Jagdhütten[COLOR_REVERT] können in [LINK=FEATURE_FOREST]Wäldern[\LINK], im [LINK=FEATURE_LIGHT_FOREST]Buschland[\LINK] und der [LINK=FEATURE_FOREST_TUNDRA]Taiga[\LINK], sogar auf [LINK=TERRAIN_TUNDRA]Tundra[\LINK] und [LINK=TERRAIN_SNOW]Permafrost[\LINK] sowie auf Geländefeldern mit der Bonusressource [LINK=BONUS_BISON]Büffel[\LINK] angelegt werden. Sie steigern die Ausbeute an [LINK=YIELD_FUR]Pelzen[\LINK] und [LINK=YIELD_PREMIUM_FUR]Hochwertigen Pelzen[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Die Jagd auf Rehe, Biber und andere Tiere fand meist weit abseits der Städte statt. Während der Jagdsaison lebten die Jäger und Trapper oft monatelang in einsamen Jagdhütten und verliessen diese nur zum Verkauf ihrer Waren in den Städten.</German>
     </TEXT>
@@ -1055,7 +1055,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_TRAPPER_CAMP_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Trapper camps[COLOR_REVERT] are the upgrades of [LINK=IMPROVEMENT_TRAPPER_HUT]trapper huts[\LINK]. They boost the production of [LINK=YIELD_FUR]fur[\LINK] and [LINK=YIELD_PREMIUM_FUR]premium fur[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Hunting wild animals like deer and beaver is a lonely job far from civilization and cities. During the trapping season hunters and trappers live in their trappers' huts, leaving only to sell their furs.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Trapper camps[COLOR_REVERT] are the upgrades of [LINK=IMPROVEMENT_TRAPPER_HUT]trapper huts[\LINK]. They boost the production of [LINK=YIELD_FUR]fur[\LINK] and [LINK=YIELD_PREMIUM_FUR]luxury fur[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Hunting wild animals like deer and beaver is a lonely job far from civilization and cities. During the trapping season hunters and trappers live in their trappers' huts, leaving only to sell their furs.</English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Chasser et trapper les animaux sauvages comme les cerfs ou les visons a été pendant longtemp un travail solitaire loin de la civilization et des grandes villes. Pendant les mois de chasse, les chasseurs et trappeurs vivaient dans des huttes qu'ils ne quittaient que pour vendre leurs fourrures.</French>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Trappercamps[COLOR_REVERT] sind die Erweiterung der [LINK=IMPROVEMENT_TRAPPER_HUT]Jagdhütte[\LINK]. Sie verbessern die Ausbeute an [LINK=YIELD_FUR]Pelzen[\LINK] und [LINK=YIELD_PREMIUM_FUR]Hochwertigen Pelzen[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Die Jagd auf Rehe, Biber und andere Tiere fand meist weit abseits der Städte statt. Während der Jagdsaison lebten die Jäger und Trapper oft monatelang in einsamen Jagdhütten und verliessen diese nur zum Verkauf ihrer Waren in den Städten.</German>
     </TEXT>
@@ -1125,7 +1125,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_WATER_WORKED</Tag>
-        <English>Water worked</English>
+        <English>Waterworks</English>
         <French>
             <Text>Mer travaillée</Text>
             <Gender>Male</Gender>
@@ -1149,13 +1149,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_WATER_WORKED_PEDIA</Tag>
-        <English>Water has the chemical formula H2O: one oxygen and two hydrogen ions connected by covalent bonds. Water is a liquid at ambient conditions, but on this planet it often co-exists with its solid state, ice, and gaseous state (water vapor or steam). Water also can form into a liquid crystal state near hydrophilic surfaces.</English>
+        <English>Waterworks are crucial for a community of any size. Clean abundant water is often the difference between health and death.</English>
         <French>L'eau est un composé chimique ubiquitaire sur la Terre, essentiel pour tous les organismes vivants connus. C'est le milieu de vie de la plupart des êtres vivants. Elle se trouve en général dans son état liquide répondant à la formule chimique H2O : la molécule contient un atome d'oxygène et deux atomes d'hydrogène.</French>
         <German>Wasser ist eine chemische Substanz mit der Formel H2O. Es enthält also Sauerstoff und Wasserstoff. Bei Raumtemperatur ist es flüssig, existiert aber auf der Erde auch oft in gefrorener Form als Eis oder Schnee oder in Gasform als Wasserdampf.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_RAFT_STATION</Tag>
-        <English>River ferry station</English>
+        <English>River Ferry Station</English>
         <German>
             <Text>Flussfährenstation</Text>
             <Gender>Female</Gender>
