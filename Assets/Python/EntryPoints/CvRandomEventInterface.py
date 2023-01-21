@@ -4112,32 +4112,6 @@ def canTriggerEuropeTradeQuest_SPICES_DONE(argsList):
 	
 	return bTrigger
 	
-def canTriggerEuropeTradeQuest_SPICES_START(argsList): 
-	
-	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
-	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_SPICES_START")
-	event = gc.getEventInfo(eEvent)
-	iYieldID = event.getGenericParameter(2)
-	iQuantity = event.getGenericParameter(1) # for Quest Start this should be e.g. 200
-	 
-	# Now we call the Generic Helper Function
-	bTrigger = CanDoEuropeTrade(argsList, iYieldID, iQuantity)
-	 
-	return bTrigger
-	
-def canTriggerEuropeTradeQuest_SPICES_DONE(argsList): 
-	
-	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
-	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_SPICES_DONE_1")
-	event = gc.getEventInfo(eEvent)
-	iYieldID = event.getGenericParameter(2)
-	iQuantity = event.getGenericParameter(1) # for Quest Done this should be e.g. 1000
-	
-	# Now we call the Generic Helper Function
-	bTrigger = CanDoEuropeTrade(argsList, iYieldID, iQuantity)
-	
-	return bTrigger
-	
 def canTriggerEuropeTradeQuest_BEER_START(argsList):
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
