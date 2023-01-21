@@ -73,7 +73,7 @@
             <iFeatureGrainChange>1</iFeatureGrainChange>
             <iFatherPercent>140</iFatherPercent>
             <iAdvancedStartPointsMod>110</iAdvancedStartPointsMod>
-            <iAIImmigrationModifier>150</iAIImmigrationModifier>
+            <iAIImmigrationModifier>100</iAIImmigrationModifier>
         </WorldInfo>
         <WorldInfo>
             <Type>WORLDSIZE_HUGE</Type>
@@ -90,7 +90,7 @@
             <iFeatureGrainChange>1</iFeatureGrainChange>
             <iFatherPercent>150</iFatherPercent>
             <iAdvancedStartPointsMod>120</iAdvancedStartPointsMod>
-            <iAIImmigrationModifier>200</iAIImmigrationModifier>
+            <iAIImmigrationModifier>100</iAIImmigrationModifier>
         </WorldInfo>
         <WorldInfo>
             <Type>WORLDSIZE_GIGANTIC</Type>
@@ -107,7 +107,7 @@
             <iFeatureGrainChange>1</iFeatureGrainChange>
             <iFatherPercent>150</iFatherPercent>
             <iAdvancedStartPointsMod>120</iAdvancedStartPointsMod>
-            <iAIImmigrationModifier>200</iAIImmigrationModifier>
+            <iAIImmigrationModifier>100</iAIImmigrationModifier>
         </WorldInfo>
     </WorldInfos>
 </Civ4WorldInfo>
