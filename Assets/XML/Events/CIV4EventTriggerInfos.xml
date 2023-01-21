@@ -14965,6 +14965,284 @@
 			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_SUGAR_START</Type>
+			<WorldNewsTexts>
+				<Text>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_SUGAR_START</Text>
+			</WorldNewsTexts>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_SUGAR_START</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<bTutorial>0</bTutorial>
+			<bSinglePlayer>0</bSinglePlayer>
+			<EventArt>,Art/EventImages/quest_image1.dds</EventArt>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>-1</iWeight>
+			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+			<eCivic>NONE</eCivic>
+			<iMinTreasury>0</iMinTreasury>
+			<iMinPopulation>0</iMinPopulation>
+			<iMaxPopulation>-1</iMaxPopulation>
+			<iMinMapLandmass>0</iMinMapLandmass>
+			<iMinOurLandmass>0</iMinOurLandmass>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<eMinDifficulty>NONE</eMinDifficulty>
+			<UnitsRequired />
+			<iNumUnits>0</iNumUnits>
+			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iUnitDamagedWeight>0</iUnitDamagedWeight>
+			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitExperienceWeight>0</iUnitExperienceWeight>
+			<bUnitsOnPlot>0</bUnitsOnPlot>
+			<BuildingsRequired />
+			<iNumBuildings>0</iNumBuildings>
+			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+			<iNumPlotsRequired>0</iNumPlotsRequired>
+			<bOwnPlot>0</bOwnPlot>
+			<ePlotType>NONE</ePlotType>
+			<FeaturesRequired />
+			<TerrainsRequired />
+			<ImprovementsRequired />
+			<RoutesRequired />
+			<Events>
+				<Event>EVENT_EUROPE_TRADE_QUEST_SUGAR_START</Event>
+			</Events>
+			<PrereqEvents />
+			<bPrereqEventPlot>0</bPrereqEventPlot>
+			<bRecurring>0</bRecurring>
+			<bTeam>0</bTeam>
+			<bGlobal>1</bGlobal>
+			<bPickPlayer>0</bPickPlayer>
+			<bOtherPlayerWar>0</bOtherPlayerWar>
+			<bOtherPlayerAI>0</bOtherPlayerAI>
+			<bOtherPlayerNative>0</bOtherPlayerNative>
+			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bShowPlot>1</bShowPlot>
+			<bFrontPopup>0</bFrontPopup>
+			<iCityFoodWeight>0</iCityFoodWeight>
+			<PythonCanDo />
+			<PythonCanDoCity>canTriggerEuropeTradeQuest_SUGAR_START</PythonCanDoCity>
+			<PythonCanDoUnit />
+			<PythonCallback />
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_SUGAR_DONE</Type>
+			<WorldNewsTexts>
+				<Text>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_SUGAR_DONE</Text>
+			</WorldNewsTexts>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_SUGAR_DONE</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<bTutorial>0</bTutorial>
+			<bSinglePlayer>0</bSinglePlayer>
+			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>-1</iWeight>
+			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+			<eCivic>NONE</eCivic>
+			<iMinTreasury>0</iMinTreasury>
+			<iMinPopulation>0</iMinPopulation>
+			<iMaxPopulation>0</iMaxPopulation>
+			<iMinMapLandmass>0</iMinMapLandmass>
+			<iMinOurLandmass>0</iMinOurLandmass>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<eMinDifficulty>NONE</eMinDifficulty>
+			<UnitsRequired />
+			<iNumUnits>0</iNumUnits>
+			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iUnitDamagedWeight>0</iUnitDamagedWeight>
+			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitExperienceWeight>0</iUnitExperienceWeight>
+			<bUnitsOnPlot>0</bUnitsOnPlot>
+			<BuildingsRequired />
+			<iNumBuildings>0</iNumBuildings>
+			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+			<iNumPlotsRequired>0</iNumPlotsRequired>
+			<bOwnPlot>1</bOwnPlot>
+			<ePlotType>NONE</ePlotType>
+			<FeaturesRequired />
+			<TerrainsRequired />
+			<ImprovementsRequired />
+			<RoutesRequired />
+			<Events>
+				<Event>EVENT_EUROPE_TRADE_QUEST_SUGAR_DONE_1</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_SUGAR_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_SUGAR_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_SUGAR_DONE_4</Event>
+			</Events>
+			<PrereqEvents>
+				<Event>EVENT_EUROPE_TRADE_QUEST_SUGAR_START</Event>
+			</PrereqEvents>
+			<bPrereqEventPlot>1</bPrereqEventPlot>
+			<bRecurring>0</bRecurring>
+			<bTeam>0</bTeam>
+			<bGlobal>1</bGlobal>
+			<bPickPlayer>0</bPickPlayer>
+			<bOtherPlayerWar>0</bOtherPlayerWar>
+			<bOtherPlayerAI>0</bOtherPlayerAI>
+			<bOtherPlayerNative>0</bOtherPlayerNative>
+			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bShowPlot>1</bShowPlot>
+			<bFrontPopup>0</bFrontPopup>
+			<iCityFoodWeight>0</iCityFoodWeight>
+			<PythonCanDo />
+			<PythonCanDoCity>canTriggerEuropeTradeQuest_SUGAR_DONE</PythonCanDoCity>
+			<PythonCanDoUnit />
+			<PythonCallback />
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_TOBACCO_START</Type>
+			<WorldNewsTexts>
+				<Text>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_TOBACCO_START</Text>
+			</WorldNewsTexts>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_TOBACCO_START</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<bTutorial>0</bTutorial>
+			<bSinglePlayer>0</bSinglePlayer>
+			<EventArt>,Art/EventImages/quest_image1.dds</EventArt>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>-1</iWeight>
+			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+			<eCivic>NONE</eCivic>
+			<iMinTreasury>0</iMinTreasury>
+			<iMinPopulation>0</iMinPopulation>
+			<iMaxPopulation>-1</iMaxPopulation>
+			<iMinMapLandmass>0</iMinMapLandmass>
+			<iMinOurLandmass>0</iMinOurLandmass>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<eMinDifficulty>NONE</eMinDifficulty>
+			<UnitsRequired />
+			<iNumUnits>0</iNumUnits>
+			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iUnitDamagedWeight>0</iUnitDamagedWeight>
+			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitExperienceWeight>0</iUnitExperienceWeight>
+			<bUnitsOnPlot>0</bUnitsOnPlot>
+			<BuildingsRequired />
+			<iNumBuildings>0</iNumBuildings>
+			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+			<iNumPlotsRequired>0</iNumPlotsRequired>
+			<bOwnPlot>0</bOwnPlot>
+			<ePlotType>NONE</ePlotType>
+			<FeaturesRequired />
+			<TerrainsRequired />
+			<ImprovementsRequired />
+			<RoutesRequired />
+			<Events>
+				<Event>EVENT_EUROPE_TRADE_QUEST_TOBACCO_START</Event>
+			</Events>
+			<PrereqEvents />
+			<bPrereqEventPlot>0</bPrereqEventPlot>
+			<bRecurring>0</bRecurring>
+			<bTeam>0</bTeam>
+			<bGlobal>1</bGlobal>
+			<bPickPlayer>0</bPickPlayer>
+			<bOtherPlayerWar>0</bOtherPlayerWar>
+			<bOtherPlayerAI>0</bOtherPlayerAI>
+			<bOtherPlayerNative>0</bOtherPlayerNative>
+			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bShowPlot>1</bShowPlot>
+			<bFrontPopup>0</bFrontPopup>
+			<iCityFoodWeight>0</iCityFoodWeight>
+			<PythonCanDo />
+			<PythonCanDoCity>canTriggerEuropeTradeQuest_TOBACCO_START</PythonCanDoCity>
+			<PythonCanDoUnit />
+			<PythonCallback />
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_TOBACCO_DONE</Type>
+			<WorldNewsTexts>
+				<Text>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_TOBACCO_DONE</Text>
+			</WorldNewsTexts>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_TOBACCO_DONE</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<bTutorial>0</bTutorial>
+			<bSinglePlayer>0</bSinglePlayer>
+			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>-1</iWeight>
+			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+			<eCivic>NONE</eCivic>
+			<iMinTreasury>0</iMinTreasury>
+			<iMinPopulation>0</iMinPopulation>
+			<iMaxPopulation>0</iMaxPopulation>
+			<iMinMapLandmass>0</iMinMapLandmass>
+			<iMinOurLandmass>0</iMinOurLandmass>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<eMinDifficulty>NONE</eMinDifficulty>
+			<UnitsRequired />
+			<iNumUnits>0</iNumUnits>
+			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iUnitDamagedWeight>0</iUnitDamagedWeight>
+			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitExperienceWeight>0</iUnitExperienceWeight>
+			<bUnitsOnPlot>0</bUnitsOnPlot>
+			<BuildingsRequired />
+			<iNumBuildings>0</iNumBuildings>
+			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+			<iNumPlotsRequired>0</iNumPlotsRequired>
+			<bOwnPlot>1</bOwnPlot>
+			<ePlotType>NONE</ePlotType>
+			<FeaturesRequired />
+			<TerrainsRequired />
+			<ImprovementsRequired />
+			<RoutesRequired />
+			<Events>
+				<Event>EVENT_EUROPE_TRADE_QUEST_TOBACCO_DONE_1</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_TOBACCO_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_TOBACCO_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_TOBACCO_DONE_4</Event>
+			</Events>
+			<PrereqEvents>
+				<Event>EVENT_EUROPE_TRADE_QUEST_TOBACCO_START</Event>
+			</PrereqEvents>
+			<bPrereqEventPlot>1</bPrereqEventPlot>
+			<bRecurring>0</bRecurring>
+			<bTeam>0</bTeam>
+			<bGlobal>1</bGlobal>
+			<bPickPlayer>0</bPickPlayer>
+			<bOtherPlayerWar>0</bOtherPlayerWar>
+			<bOtherPlayerAI>0</bOtherPlayerAI>
+			<bOtherPlayerNative>0</bOtherPlayerNative>
+			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bShowPlot>1</bShowPlot>
+			<bFrontPopup>0</bFrontPopup>
+			<iCityFoodWeight>0</iCityFoodWeight>
+			<PythonCanDo />
+			<PythonCanDoCity>canTriggerEuropeTradeQuest_TOBACCO_DONE</PythonCanDoCity>
+			<PythonCanDoUnit />
+			<PythonCallback />
+		</EventTriggerInfo>
+		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_FOOD_START</Type>
 			<WorldNewsTexts>
 				<Text>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_FOOD_START</Text>
@@ -15078,6 +15356,8 @@
 				<Event>EVENT_EUROPE_TRADE_QUEST_FOOD_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_FOOD_DONE_2</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_FOOD_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_FOOD_DONE_4</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_FOOD_DONE_5</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_FOOD_START</Event>
@@ -15128,27 +15408,27 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired/>
+			<UnitsRequired />
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired/>
+			<BuildingsRequired />
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired/>
-			<TerrainsRequired/>
-			<ImprovementsRequired/>
-			<RoutesRequired/>
+			<FeaturesRequired />
+			<TerrainsRequired />
+			<ImprovementsRequired />
+			<RoutesRequired />
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_LUMBER_START</Event>
 			</Events>
-			<PrereqEvents/>
+			<PrereqEvents />
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
@@ -15164,10 +15444,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo/>
+			<PythonCanDo />
 			<PythonCanDoCity>canTriggerEuropeTradeQuest_LUMBER_START</PythonCanDoCity>
-			<PythonCanDoUnit/>
-			<PythonCallback/>
+			<PythonCanDoUnit />
+			<PythonCallback />
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_LUMBER_DONE</Type>
@@ -15195,26 +15475,28 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired/>
+			<UnitsRequired />
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired/>
+			<BuildingsRequired />
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>1</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired/>
-			<TerrainsRequired/>
-			<ImprovementsRequired/>
-			<RoutesRequired/>
+			<FeaturesRequired />
+			<TerrainsRequired />
+			<ImprovementsRequired />
+			<RoutesRequired />
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_LUMBER_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_LUMBER_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_LUMBER_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_LUMBER_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_LUMBER_START</Event>
@@ -15234,10 +15516,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo/>
+			<PythonCanDo />
 			<PythonCanDoCity>canTriggerEuropeTradeQuest_LUMBER_DONE</PythonCanDoCity>
-			<PythonCanDoUnit/>
-			<PythonCallback/>
+			<PythonCanDoUnit />
+			<PythonCallback />
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_ORE_START</Type>
@@ -15352,6 +15634,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_ORE_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_ORE_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_ORE_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_ORE_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_ORE_START</Event>
@@ -15489,6 +15773,9 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_STONE_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_STONE_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_STONE_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_STONE_DONE_4</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_STONE_DONE_7</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_STONE_START</Event>
@@ -15626,6 +15913,7 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_HEMP_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_HEMP_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_HEMP_DONE_3</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_HEMP_START</Event>
@@ -15764,6 +16052,8 @@
 				<Event>EVENT_EUROPE_TRADE_QUEST_SHEEP_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_SHEEP_DONE_2</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_SHEEP_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_SHEEP_DONE_4</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_SHEEP_DONE_8</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_SHEEP_START</Event>
@@ -15902,6 +16192,8 @@
 				<Event>EVENT_EUROPE_TRADE_QUEST_CATTLE_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_CATTLE_DONE_2</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_CATTLE_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_CATTLE_DONE_4</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_CATTLE_DONE_8</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_CATTLE_START</Event>
@@ -16040,6 +16332,8 @@
 				<Event>EVENT_EUROPE_TRADE_QUEST_HORSES_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_HORSES_DONE_2</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_HORSES_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_HORSES_DONE_4</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_HORSES_DONE_8</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_HORSES_START</Event>
@@ -16063,6 +16357,284 @@
 			<PythonCanDoCity>canTriggerEuropeTradeQuest_HORSES_DONE</PythonCanDoCity>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_COCOA_FRUITS_START</Type>
+			<WorldNewsTexts>
+				<Text>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COCOA_FRUITS_START</Text>
+			</WorldNewsTexts>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COCOA_FRUITS_START</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<bTutorial>0</bTutorial>
+			<bSinglePlayer>0</bSinglePlayer>
+			<EventArt>,Art/EventImages/quest_image1.dds</EventArt>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>-1</iWeight>
+			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+			<eCivic>NONE</eCivic>
+			<iMinTreasury>0</iMinTreasury>
+			<iMinPopulation>0</iMinPopulation>
+			<iMaxPopulation>-1</iMaxPopulation>
+			<iMinMapLandmass>0</iMinMapLandmass>
+			<iMinOurLandmass>0</iMinOurLandmass>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<eMinDifficulty>NONE</eMinDifficulty>
+			<UnitsRequired />
+			<iNumUnits>0</iNumUnits>
+			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iUnitDamagedWeight>0</iUnitDamagedWeight>
+			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitExperienceWeight>0</iUnitExperienceWeight>
+			<bUnitsOnPlot>0</bUnitsOnPlot>
+			<BuildingsRequired />
+			<iNumBuildings>0</iNumBuildings>
+			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+			<iNumPlotsRequired>0</iNumPlotsRequired>
+			<bOwnPlot>0</bOwnPlot>
+			<ePlotType>NONE</ePlotType>
+			<FeaturesRequired />
+			<TerrainsRequired />
+			<ImprovementsRequired />
+			<RoutesRequired />
+			<Events>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COCOA_FRUITS_START</Event>
+			</Events>
+			<PrereqEvents />
+			<bPrereqEventPlot>0</bPrereqEventPlot>
+			<bRecurring>0</bRecurring>
+			<bTeam>0</bTeam>
+			<bGlobal>1</bGlobal>
+			<bPickPlayer>0</bPickPlayer>
+			<bOtherPlayerWar>0</bOtherPlayerWar>
+			<bOtherPlayerAI>0</bOtherPlayerAI>
+			<bOtherPlayerNative>0</bOtherPlayerNative>
+			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bShowPlot>1</bShowPlot>
+			<bFrontPopup>0</bFrontPopup>
+			<iCityFoodWeight>0</iCityFoodWeight>
+			<PythonCanDo />
+			<PythonCanDoCity>canTriggerEuropeTradeQuest_COCOA_FRUITS_START</PythonCanDoCity>
+			<PythonCanDoUnit />
+			<PythonCallback />
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_COCOA_FRUITS_DONE</Type>
+			<WorldNewsTexts>
+				<Text>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COCOA_FRUITS_DONE</Text>
+			</WorldNewsTexts>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COCOA_FRUITS_DONE</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<bTutorial>0</bTutorial>
+			<bSinglePlayer>0</bSinglePlayer>
+			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>-1</iWeight>
+			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+			<eCivic>NONE</eCivic>
+			<iMinTreasury>0</iMinTreasury>
+			<iMinPopulation>0</iMinPopulation>
+			<iMaxPopulation>0</iMaxPopulation>
+			<iMinMapLandmass>0</iMinMapLandmass>
+			<iMinOurLandmass>0</iMinOurLandmass>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<eMinDifficulty>NONE</eMinDifficulty>
+			<UnitsRequired />
+			<iNumUnits>0</iNumUnits>
+			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iUnitDamagedWeight>0</iUnitDamagedWeight>
+			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitExperienceWeight>0</iUnitExperienceWeight>
+			<bUnitsOnPlot>0</bUnitsOnPlot>
+			<BuildingsRequired />
+			<iNumBuildings>0</iNumBuildings>
+			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+			<iNumPlotsRequired>0</iNumPlotsRequired>
+			<bOwnPlot>1</bOwnPlot>
+			<ePlotType>NONE</ePlotType>
+			<FeaturesRequired />
+			<TerrainsRequired />
+			<ImprovementsRequired />
+			<RoutesRequired />
+			<Events>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COCOA_FRUITS_DONE_1</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COCOA_FRUITS_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COCOA_FRUITS_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COCOA_FRUITS_DONE_4</Event>
+			</Events>
+			<PrereqEvents>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COCOA_FRUITS_START</Event>
+			</PrereqEvents>
+			<bPrereqEventPlot>1</bPrereqEventPlot>
+			<bRecurring>0</bRecurring>
+			<bTeam>0</bTeam>
+			<bGlobal>1</bGlobal>
+			<bPickPlayer>0</bPickPlayer>
+			<bOtherPlayerWar>0</bOtherPlayerWar>
+			<bOtherPlayerAI>0</bOtherPlayerAI>
+			<bOtherPlayerNative>0</bOtherPlayerNative>
+			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bShowPlot>1</bShowPlot>
+			<bFrontPopup>0</bFrontPopup>
+			<iCityFoodWeight>0</iCityFoodWeight>
+			<PythonCanDo />
+			<PythonCanDoCity>canTriggerEuropeTradeQuest_COCOA_FRUITS_DONE</PythonCanDoCity>
+			<PythonCanDoUnit />
+			<PythonCallback />
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_COCA_LEAVES_START</Type>
+			<WorldNewsTexts>
+				<Text>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COCA_LEAVES_START</Text>
+			</WorldNewsTexts>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COCA_LEAVES_START</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<bTutorial>0</bTutorial>
+			<bSinglePlayer>0</bSinglePlayer>
+			<EventArt>,Art/EventImages/quest_image1.dds</EventArt>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>-1</iWeight>
+			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+			<eCivic>NONE</eCivic>
+			<iMinTreasury>0</iMinTreasury>
+			<iMinPopulation>0</iMinPopulation>
+			<iMaxPopulation>-1</iMaxPopulation>
+			<iMinMapLandmass>0</iMinMapLandmass>
+			<iMinOurLandmass>0</iMinOurLandmass>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<eMinDifficulty>NONE</eMinDifficulty>
+			<UnitsRequired />
+			<iNumUnits>0</iNumUnits>
+			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iUnitDamagedWeight>0</iUnitDamagedWeight>
+			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitExperienceWeight>0</iUnitExperienceWeight>
+			<bUnitsOnPlot>0</bUnitsOnPlot>
+			<BuildingsRequired />
+			<iNumBuildings>0</iNumBuildings>
+			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+			<iNumPlotsRequired>0</iNumPlotsRequired>
+			<bOwnPlot>0</bOwnPlot>
+			<ePlotType>NONE</ePlotType>
+			<FeaturesRequired />
+			<TerrainsRequired />
+			<ImprovementsRequired />
+			<RoutesRequired />
+			<Events>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COCA_LEAVES_START</Event>
+			</Events>
+			<PrereqEvents />
+			<bPrereqEventPlot>0</bPrereqEventPlot>
+			<bRecurring>0</bRecurring>
+			<bTeam>0</bTeam>
+			<bGlobal>1</bGlobal>
+			<bPickPlayer>0</bPickPlayer>
+			<bOtherPlayerWar>0</bOtherPlayerWar>
+			<bOtherPlayerAI>0</bOtherPlayerAI>
+			<bOtherPlayerNative>0</bOtherPlayerNative>
+			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bShowPlot>1</bShowPlot>
+			<bFrontPopup>0</bFrontPopup>
+			<iCityFoodWeight>0</iCityFoodWeight>
+			<PythonCanDo />
+			<PythonCanDoCity>canTriggerEuropeTradeQuest_COCA_LEAVES_START</PythonCanDoCity>
+			<PythonCanDoUnit />
+			<PythonCallback />
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_COCA_LEAVES_DONE</Type>
+			<WorldNewsTexts>
+				<Text>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COCA_LEAVES_DONE</Text>
+			</WorldNewsTexts>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COCA_LEAVES_DONE</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<bTutorial>0</bTutorial>
+			<bSinglePlayer>0</bSinglePlayer>
+			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>-1</iWeight>
+			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+			<eCivic>NONE</eCivic>
+			<iMinTreasury>0</iMinTreasury>
+			<iMinPopulation>0</iMinPopulation>
+			<iMaxPopulation>0</iMaxPopulation>
+			<iMinMapLandmass>0</iMinMapLandmass>
+			<iMinOurLandmass>0</iMinOurLandmass>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<eMinDifficulty>NONE</eMinDifficulty>
+			<UnitsRequired />
+			<iNumUnits>0</iNumUnits>
+			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iUnitDamagedWeight>0</iUnitDamagedWeight>
+			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitExperienceWeight>0</iUnitExperienceWeight>
+			<bUnitsOnPlot>0</bUnitsOnPlot>
+			<BuildingsRequired />
+			<iNumBuildings>0</iNumBuildings>
+			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+			<iNumPlotsRequired>0</iNumPlotsRequired>
+			<bOwnPlot>1</bOwnPlot>
+			<ePlotType>NONE</ePlotType>
+			<FeaturesRequired />
+			<TerrainsRequired />
+			<ImprovementsRequired />
+			<RoutesRequired />
+			<Events>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COCA_LEAVES_DONE_1</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COCA_LEAVES_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COCA_LEAVES_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COCA_LEAVES_DONE_4</Event>
+			</Events>
+			<PrereqEvents>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COCA_LEAVES_START</Event>
+			</PrereqEvents>
+			<bPrereqEventPlot>1</bPrereqEventPlot>
+			<bRecurring>0</bRecurring>
+			<bTeam>0</bTeam>
+			<bGlobal>1</bGlobal>
+			<bPickPlayer>0</bPickPlayer>
+			<bOtherPlayerWar>0</bOtherPlayerWar>
+			<bOtherPlayerAI>0</bOtherPlayerAI>
+			<bOtherPlayerNative>0</bOtherPlayerNative>
+			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bShowPlot>1</bShowPlot>
+			<bFrontPopup>0</bFrontPopup>
+			<iCityFoodWeight>0</iCityFoodWeight>
+			<PythonCanDo />
+			<PythonCanDoCity>canTriggerEuropeTradeQuest_COCA_LEAVES_DONE</PythonCanDoCity>
+			<PythonCanDoUnit />
+			<PythonCallback />
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_FUR_START</Type>
@@ -16179,6 +16751,7 @@
 				<Event>EVENT_EUROPE_TRADE_QUEST_FUR_DONE_2</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_FUR_DONE_3</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_FUR_DONE_4</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_FUR_DONE_5</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_FUR_START</Event>
@@ -16202,6 +16775,145 @@
 			<PythonCanDoCity>canTriggerEuropeTradeQuest_FUR_DONE</PythonCanDoCity>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_COFFEE_BERRIES_START</Type>
+			<WorldNewsTexts>
+				<Text>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COFFEE_BERRIES_START</Text>
+			</WorldNewsTexts>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COFFEE_BERRIES_START</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<bTutorial>0</bTutorial>
+			<bSinglePlayer>0</bSinglePlayer>
+			<EventArt>,Art/EventImages/quest_image1.dds</EventArt>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>-1</iWeight>
+			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+			<eCivic>NONE</eCivic>
+			<iMinTreasury>0</iMinTreasury>
+			<iMinPopulation>0</iMinPopulation>
+			<iMaxPopulation>-1</iMaxPopulation>
+			<iMinMapLandmass>0</iMinMapLandmass>
+			<iMinOurLandmass>0</iMinOurLandmass>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<eMinDifficulty>NONE</eMinDifficulty>
+			<UnitsRequired />
+			<iNumUnits>0</iNumUnits>
+			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iUnitDamagedWeight>0</iUnitDamagedWeight>
+			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitExperienceWeight>0</iUnitExperienceWeight>
+			<bUnitsOnPlot>0</bUnitsOnPlot>
+			<BuildingsRequired />
+			<iNumBuildings>0</iNumBuildings>
+			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+			<iNumPlotsRequired>0</iNumPlotsRequired>
+			<bOwnPlot>0</bOwnPlot>
+			<ePlotType>NONE</ePlotType>
+			<FeaturesRequired />
+			<TerrainsRequired />
+			<ImprovementsRequired />
+			<RoutesRequired />
+			<Events>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COFFEE_BERRIES_START</Event>
+			</Events>
+			<PrereqEvents />
+			<bPrereqEventPlot>0</bPrereqEventPlot>
+			<bRecurring>0</bRecurring>
+			<bTeam>0</bTeam>
+			<bGlobal>1</bGlobal>
+			<bPickPlayer>0</bPickPlayer>
+			<bOtherPlayerWar>0</bOtherPlayerWar>
+			<bOtherPlayerAI>0</bOtherPlayerAI>
+			<bOtherPlayerNative>0</bOtherPlayerNative>
+			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bShowPlot>1</bShowPlot>
+			<bFrontPopup>0</bFrontPopup>
+			<iCityFoodWeight>0</iCityFoodWeight>
+			<PythonCanDo />
+			<PythonCanDoCity>canTriggerEuropeTradeQuest_COFFEE_BERRIES_START</PythonCanDoCity>
+			<PythonCanDoUnit />
+			<PythonCallback />
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_COFFEE_BERRIES_DONE</Type>
+			<WorldNewsTexts>
+				<Text>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COFFEE_BERRIES_DONE</Text>
+			</WorldNewsTexts>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COFFEE_BERRIES_DONE</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<bTutorial>0</bTutorial>
+			<bSinglePlayer>0</bSinglePlayer>
+			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>-1</iWeight>
+			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+			<eCivic>NONE</eCivic>
+			<iMinTreasury>0</iMinTreasury>
+			<iMinPopulation>0</iMinPopulation>
+			<iMaxPopulation>0</iMaxPopulation>
+			<iMinMapLandmass>0</iMinMapLandmass>
+			<iMinOurLandmass>0</iMinOurLandmass>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<eMinDifficulty>NONE</eMinDifficulty>
+			<UnitsRequired />
+			<iNumUnits>0</iNumUnits>
+			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iUnitDamagedWeight>0</iUnitDamagedWeight>
+			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitExperienceWeight>0</iUnitExperienceWeight>
+			<bUnitsOnPlot>0</bUnitsOnPlot>
+			<BuildingsRequired />
+			<iNumBuildings>0</iNumBuildings>
+			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+			<iNumPlotsRequired>0</iNumPlotsRequired>
+			<bOwnPlot>1</bOwnPlot>
+			<ePlotType>NONE</ePlotType>
+			<FeaturesRequired />
+			<TerrainsRequired />
+			<ImprovementsRequired />
+			<RoutesRequired />
+			<Events>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COFFEE_BERRIES_DONE_1</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COFFEE_BERRIES_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COFFEE_BERRIES_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COFFEE_BERRIES_DONE_4</Event>
+			</Events>
+			<PrereqEvents>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COFFEE_BERRIES_START</Event>
+			</PrereqEvents>
+			<bPrereqEventPlot>1</bPrereqEventPlot>
+			<bRecurring>0</bRecurring>
+			<bTeam>0</bTeam>
+			<bGlobal>1</bGlobal>
+			<bPickPlayer>0</bPickPlayer>
+			<bOtherPlayerWar>0</bOtherPlayerWar>
+			<bOtherPlayerAI>0</bOtherPlayerAI>
+			<bOtherPlayerNative>0</bOtherPlayerNative>
+			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bShowPlot>1</bShowPlot>
+			<bFrontPopup>0</bFrontPopup>
+			<iCityFoodWeight>0</iCityFoodWeight>
+			<PythonCanDo />
+			<PythonCanDoCity>canTriggerEuropeTradeQuest_COFFEE_BERRIES_DONE</PythonCanDoCity>
+			<PythonCanDoUnit />
+			<PythonCallback />
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_WOOL_START</Type>
@@ -16316,6 +17028,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_WOOL_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_WOOL_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_WOOL_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_WOOL_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_WOOL_START</Event>
@@ -16339,6 +17053,284 @@
 			<PythonCanDoCity>canTriggerEuropeTradeQuest_WOOL_DONE</PythonCanDoCity>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_COTTON_START</Type>
+			<WorldNewsTexts>
+				<Text>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COTTON_START</Text>
+			</WorldNewsTexts>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COTTON_START</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<bTutorial>0</bTutorial>
+			<bSinglePlayer>0</bSinglePlayer>
+			<EventArt>,Art/EventImages/quest_image1.dds</EventArt>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>-1</iWeight>
+			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+			<eCivic>NONE</eCivic>
+			<iMinTreasury>0</iMinTreasury>
+			<iMinPopulation>0</iMinPopulation>
+			<iMaxPopulation>-1</iMaxPopulation>
+			<iMinMapLandmass>0</iMinMapLandmass>
+			<iMinOurLandmass>0</iMinOurLandmass>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<eMinDifficulty>NONE</eMinDifficulty>
+			<UnitsRequired />
+			<iNumUnits>0</iNumUnits>
+			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iUnitDamagedWeight>0</iUnitDamagedWeight>
+			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitExperienceWeight>0</iUnitExperienceWeight>
+			<bUnitsOnPlot>0</bUnitsOnPlot>
+			<BuildingsRequired />
+			<iNumBuildings>0</iNumBuildings>
+			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+			<iNumPlotsRequired>0</iNumPlotsRequired>
+			<bOwnPlot>0</bOwnPlot>
+			<ePlotType>NONE</ePlotType>
+			<FeaturesRequired />
+			<TerrainsRequired />
+			<ImprovementsRequired />
+			<RoutesRequired />
+			<Events>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COTTON_START</Event>
+			</Events>
+			<PrereqEvents />
+			<bPrereqEventPlot>0</bPrereqEventPlot>
+			<bRecurring>0</bRecurring>
+			<bTeam>0</bTeam>
+			<bGlobal>1</bGlobal>
+			<bPickPlayer>0</bPickPlayer>
+			<bOtherPlayerWar>0</bOtherPlayerWar>
+			<bOtherPlayerAI>0</bOtherPlayerAI>
+			<bOtherPlayerNative>0</bOtherPlayerNative>
+			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bShowPlot>1</bShowPlot>
+			<bFrontPopup>0</bFrontPopup>
+			<iCityFoodWeight>0</iCityFoodWeight>
+			<PythonCanDo />
+			<PythonCanDoCity>canTriggerEuropeTradeQuest_COTTON_START</PythonCanDoCity>
+			<PythonCanDoUnit />
+			<PythonCallback />
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_COTTON_DONE</Type>
+			<WorldNewsTexts>
+				<Text>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COTTON_DONE</Text>
+			</WorldNewsTexts>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COTTON_DONE</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<bTutorial>0</bTutorial>
+			<bSinglePlayer>0</bSinglePlayer>
+			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>-1</iWeight>
+			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+			<eCivic>NONE</eCivic>
+			<iMinTreasury>0</iMinTreasury>
+			<iMinPopulation>0</iMinPopulation>
+			<iMaxPopulation>0</iMaxPopulation>
+			<iMinMapLandmass>0</iMinMapLandmass>
+			<iMinOurLandmass>0</iMinOurLandmass>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<eMinDifficulty>NONE</eMinDifficulty>
+			<UnitsRequired />
+			<iNumUnits>0</iNumUnits>
+			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iUnitDamagedWeight>0</iUnitDamagedWeight>
+			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitExperienceWeight>0</iUnitExperienceWeight>
+			<bUnitsOnPlot>0</bUnitsOnPlot>
+			<BuildingsRequired />
+			<iNumBuildings>0</iNumBuildings>
+			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+			<iNumPlotsRequired>0</iNumPlotsRequired>
+			<bOwnPlot>1</bOwnPlot>
+			<ePlotType>NONE</ePlotType>
+			<FeaturesRequired />
+			<TerrainsRequired />
+			<ImprovementsRequired />
+			<RoutesRequired />
+			<Events>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COTTON_DONE_1</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COTTON_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COTTON_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COTTON_DONE_4</Event>
+			</Events>
+			<PrereqEvents>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COTTON_START</Event>
+			</PrereqEvents>
+			<bPrereqEventPlot>1</bPrereqEventPlot>
+			<bRecurring>0</bRecurring>
+			<bTeam>0</bTeam>
+			<bGlobal>1</bGlobal>
+			<bPickPlayer>0</bPickPlayer>
+			<bOtherPlayerWar>0</bOtherPlayerWar>
+			<bOtherPlayerAI>0</bOtherPlayerAI>
+			<bOtherPlayerNative>0</bOtherPlayerNative>
+			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bShowPlot>1</bShowPlot>
+			<bFrontPopup>0</bFrontPopup>
+			<iCityFoodWeight>0</iCityFoodWeight>
+			<PythonCanDo />
+			<PythonCanDoCity>canTriggerEuropeTradeQuest_COTTON_DONE</PythonCanDoCity>
+			<PythonCanDoUnit />
+			<PythonCallback />
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_INDIGO_START</Type>
+			<WorldNewsTexts>
+				<Text>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_INDIGO_START</Text>
+			</WorldNewsTexts>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_INDIGO_START</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<bTutorial>0</bTutorial>
+			<bSinglePlayer>0</bSinglePlayer>
+			<EventArt>,Art/EventImages/quest_image1.dds</EventArt>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>-1</iWeight>
+			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+			<eCivic>NONE</eCivic>
+			<iMinTreasury>0</iMinTreasury>
+			<iMinPopulation>0</iMinPopulation>
+			<iMaxPopulation>-1</iMaxPopulation>
+			<iMinMapLandmass>0</iMinMapLandmass>
+			<iMinOurLandmass>0</iMinOurLandmass>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<eMinDifficulty>NONE</eMinDifficulty>
+			<UnitsRequired />
+			<iNumUnits>0</iNumUnits>
+			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iUnitDamagedWeight>0</iUnitDamagedWeight>
+			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitExperienceWeight>0</iUnitExperienceWeight>
+			<bUnitsOnPlot>0</bUnitsOnPlot>
+			<BuildingsRequired />
+			<iNumBuildings>0</iNumBuildings>
+			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+			<iNumPlotsRequired>0</iNumPlotsRequired>
+			<bOwnPlot>0</bOwnPlot>
+			<ePlotType>NONE</ePlotType>
+			<FeaturesRequired />
+			<TerrainsRequired />
+			<ImprovementsRequired />
+			<RoutesRequired />
+			<Events>
+				<Event>EVENT_EUROPE_TRADE_QUEST_INDIGO_START</Event>
+			</Events>
+			<PrereqEvents />
+			<bPrereqEventPlot>0</bPrereqEventPlot>
+			<bRecurring>0</bRecurring>
+			<bTeam>0</bTeam>
+			<bGlobal>1</bGlobal>
+			<bPickPlayer>0</bPickPlayer>
+			<bOtherPlayerWar>0</bOtherPlayerWar>
+			<bOtherPlayerAI>0</bOtherPlayerAI>
+			<bOtherPlayerNative>0</bOtherPlayerNative>
+			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bShowPlot>1</bShowPlot>
+			<bFrontPopup>0</bFrontPopup>
+			<iCityFoodWeight>0</iCityFoodWeight>
+			<PythonCanDo />
+			<PythonCanDoCity>canTriggerEuropeTradeQuest_INDIGO_START</PythonCanDoCity>
+			<PythonCanDoUnit />
+			<PythonCallback />
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_INDIGO_DONE</Type>
+			<WorldNewsTexts>
+				<Text>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_INDIGO_DONE</Text>
+			</WorldNewsTexts>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_INDIGO_DONE</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<bTutorial>0</bTutorial>
+			<bSinglePlayer>0</bSinglePlayer>
+			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>-1</iWeight>
+			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+			<eCivic>NONE</eCivic>
+			<iMinTreasury>0</iMinTreasury>
+			<iMinPopulation>0</iMinPopulation>
+			<iMaxPopulation>0</iMaxPopulation>
+			<iMinMapLandmass>0</iMinMapLandmass>
+			<iMinOurLandmass>0</iMinOurLandmass>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<eMinDifficulty>NONE</eMinDifficulty>
+			<UnitsRequired />
+			<iNumUnits>0</iNumUnits>
+			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iUnitDamagedWeight>0</iUnitDamagedWeight>
+			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitExperienceWeight>0</iUnitExperienceWeight>
+			<bUnitsOnPlot>0</bUnitsOnPlot>
+			<BuildingsRequired />
+			<iNumBuildings>0</iNumBuildings>
+			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+			<iNumPlotsRequired>0</iNumPlotsRequired>
+			<bOwnPlot>1</bOwnPlot>
+			<ePlotType>NONE</ePlotType>
+			<FeaturesRequired />
+			<TerrainsRequired />
+			<ImprovementsRequired />
+			<RoutesRequired />
+			<Events>
+				<Event>EVENT_EUROPE_TRADE_QUEST_INDIGO_DONE_1</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_INDIGO_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_INDIGO_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_INDIGO_DONE_4</Event>
+			</Events>
+			<PrereqEvents>
+				<Event>EVENT_EUROPE_TRADE_QUEST_INDIGO_START</Event>
+			</PrereqEvents>
+			<bPrereqEventPlot>1</bPrereqEventPlot>
+			<bRecurring>0</bRecurring>
+			<bTeam>0</bTeam>
+			<bGlobal>1</bGlobal>
+			<bPickPlayer>0</bPickPlayer>
+			<bOtherPlayerWar>0</bOtherPlayerWar>
+			<bOtherPlayerAI>0</bOtherPlayerAI>
+			<bOtherPlayerNative>0</bOtherPlayerNative>
+			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bShowPlot>1</bShowPlot>
+			<bFrontPopup>0</bFrontPopup>
+			<iCityFoodWeight>0</iCityFoodWeight>
+			<PythonCanDo />
+			<PythonCanDoCity>canTriggerEuropeTradeQuest_INDIGO_DONE</PythonCanDoCity>
+			<PythonCanDoUnit />
+			<PythonCallback />
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_HIDES_START</Type>
@@ -16453,6 +17445,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_HIDES_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_HIDES_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_HIDES_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_HIDES_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_HIDES_START</Event>
@@ -16591,7 +17585,6 @@
 				<Event>EVENT_EUROPE_TRADE_QUEST_PREMIUM_FUR_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_PREMIUM_FUR_DONE_2</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_PREMIUM_FUR_DONE_3</Event>
-				<Event>EVENT_EUROPE_TRADE_QUEST_PREMIUM_FUR_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_PREMIUM_FUR_START</Event>
@@ -16756,6 +17749,145 @@
 			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_RED_PEPPER_START</Type>
+			<WorldNewsTexts>
+				<Text>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_RED_PEPPER_START</Text>
+			</WorldNewsTexts>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_RED_PEPPER_START</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<bTutorial>0</bTutorial>
+			<bSinglePlayer>0</bSinglePlayer>
+			<EventArt>,Art/EventImages/quest_image1.dds</EventArt>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>-1</iWeight>
+			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+			<eCivic>NONE</eCivic>
+			<iMinTreasury>0</iMinTreasury>
+			<iMinPopulation>0</iMinPopulation>
+			<iMaxPopulation>-1</iMaxPopulation>
+			<iMinMapLandmass>0</iMinMapLandmass>
+			<iMinOurLandmass>0</iMinOurLandmass>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<eMinDifficulty>NONE</eMinDifficulty>
+			<UnitsRequired />
+			<iNumUnits>0</iNumUnits>
+			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iUnitDamagedWeight>0</iUnitDamagedWeight>
+			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitExperienceWeight>0</iUnitExperienceWeight>
+			<bUnitsOnPlot>0</bUnitsOnPlot>
+			<BuildingsRequired />
+			<iNumBuildings>0</iNumBuildings>
+			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+			<iNumPlotsRequired>0</iNumPlotsRequired>
+			<bOwnPlot>0</bOwnPlot>
+			<ePlotType>NONE</ePlotType>
+			<FeaturesRequired />
+			<TerrainsRequired />
+			<ImprovementsRequired />
+			<RoutesRequired />
+			<Events>
+				<Event>EVENT_EUROPE_TRADE_QUEST_RED_PEPPER_START</Event>
+			</Events>
+			<PrereqEvents />
+			<bPrereqEventPlot>0</bPrereqEventPlot>
+			<bRecurring>0</bRecurring>
+			<bTeam>0</bTeam>
+			<bGlobal>1</bGlobal>
+			<bPickPlayer>0</bPickPlayer>
+			<bOtherPlayerWar>0</bOtherPlayerWar>
+			<bOtherPlayerAI>0</bOtherPlayerAI>
+			<bOtherPlayerNative>0</bOtherPlayerNative>
+			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bShowPlot>1</bShowPlot>
+			<bFrontPopup>0</bFrontPopup>
+			<iCityFoodWeight>0</iCityFoodWeight>
+			<PythonCanDo />
+			<PythonCanDoCity>canTriggerEuropeTradeQuest_RED_PEPPER_START</PythonCanDoCity>
+			<PythonCanDoUnit />
+			<PythonCallback />
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_RED_PEPPER_DONE</Type>
+			<WorldNewsTexts>
+				<Text>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_RED_PEPPER_DONE</Text>
+			</WorldNewsTexts>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_RED_PEPPER_DONE</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<bTutorial>0</bTutorial>
+			<bSinglePlayer>0</bSinglePlayer>
+			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>-1</iWeight>
+			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+			<eCivic>NONE</eCivic>
+			<iMinTreasury>0</iMinTreasury>
+			<iMinPopulation>0</iMinPopulation>
+			<iMaxPopulation>0</iMaxPopulation>
+			<iMinMapLandmass>0</iMinMapLandmass>
+			<iMinOurLandmass>0</iMinOurLandmass>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<eMinDifficulty>NONE</eMinDifficulty>
+			<UnitsRequired />
+			<iNumUnits>0</iNumUnits>
+			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iUnitDamagedWeight>0</iUnitDamagedWeight>
+			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitExperienceWeight>0</iUnitExperienceWeight>
+			<bUnitsOnPlot>0</bUnitsOnPlot>
+			<BuildingsRequired />
+			<iNumBuildings>0</iNumBuildings>
+			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+			<iNumPlotsRequired>0</iNumPlotsRequired>
+			<bOwnPlot>1</bOwnPlot>
+			<ePlotType>NONE</ePlotType>
+			<FeaturesRequired />
+			<TerrainsRequired />
+			<ImprovementsRequired />
+			<RoutesRequired />
+			<Events>
+				<Event>EVENT_EUROPE_TRADE_QUEST_RED_PEPPER_DONE_1</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_RED_PEPPER_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_RED_PEPPER_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_RED_PEPPER_DONE_4</Event>
+			</Events>
+			<PrereqEvents>
+				<Event>EVENT_EUROPE_TRADE_QUEST_RED_PEPPER_START</Event>
+			</PrereqEvents>
+			<bPrereqEventPlot>1</bPrereqEventPlot>
+			<bRecurring>0</bRecurring>
+			<bTeam>0</bTeam>
+			<bGlobal>1</bGlobal>
+			<bPickPlayer>0</bPickPlayer>
+			<bOtherPlayerWar>0</bOtherPlayerWar>
+			<bOtherPlayerAI>0</bOtherPlayerAI>
+			<bOtherPlayerNative>0</bOtherPlayerNative>
+			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bShowPlot>1</bShowPlot>
+			<bFrontPopup>0</bFrontPopup>
+			<iCityFoodWeight>0</iCityFoodWeight>
+			<PythonCanDo />
+			<PythonCanDoCity>canTriggerEuropeTradeQuest_RED_PEPPER_DONE</PythonCanDoCity>
+			<PythonCanDoUnit />
+			<PythonCallback />
+		</EventTriggerInfo>
+		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_BARLEY_START</Type>
 			<WorldNewsTexts>
 				<Text>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_BARLEY_START</Text>
@@ -16868,6 +18000,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_BARLEY_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_BARLEY_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_BARLEY_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_BARLEY_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_BARLEY_START</Event>
@@ -17005,6 +18139,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_GRAPES_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_GRAPES_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_GRAPES_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_GRAPES_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_GRAPES_START</Event>
@@ -17141,7 +18277,7 @@
 			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_WHALE_BLUBBER_DONE_1</Event>
-				<Event>EVENT_EUROPE_TRADE_QUEST_WHALE_BLUBBER_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_WHALE_BLUBBER_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_WHALE_BLUBBER_START</Event>
@@ -17279,6 +18415,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_VALUABLE_WOOD_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_VALUABLE_WOOD_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_VALUABLE_WOOD_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_VALUABLE_WOOD_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_VALUABLE_WOOD_START</Event>
@@ -17415,7 +18553,7 @@
 			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_TRADE_GOODS_DONE_1</Event>
-				<Event>EVENT_EUROPE_TRADE_QUEST_TRADE_GOODS_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_TRADE_GOODS_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_TRADE_GOODS_START</Event>
@@ -17553,6 +18691,9 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_SAILCLOTH_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_SAILCLOTH_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_SAILCLOTH_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_SAILCLOTH_DONE_4</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_SAILCLOTH_DONE_8</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_SAILCLOTH_START</Event>
@@ -17691,6 +18832,8 @@
 				<Event>EVENT_EUROPE_TRADE_QUEST_TOOLS_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_TOOLS_DONE_2</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_TOOLS_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_TOOLS_DONE_4</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_TOOLS_DONE_8</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_TOOLS_START</Event>
@@ -17829,6 +18972,8 @@
 				<Event>EVENT_EUROPE_TRADE_QUEST_BLADES_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_BLADES_DONE_2</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_BLADES_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_BLADES_DONE_4</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_BLADES_DONE_8</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_BLADES_START</Event>
@@ -17967,6 +19112,8 @@
 				<Event>EVENT_EUROPE_TRADE_QUEST_MUSKETS_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_MUSKETS_DONE_2</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_MUSKETS_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_MUSKETS_DONE_4</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_MUSKETS_DONE_8</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_MUSKETS_START</Event>
@@ -18105,6 +19252,8 @@
 				<Event>EVENT_EUROPE_TRADE_QUEST_CANNONS_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_CANNONS_DONE_2</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_CANNONS_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_CANNONS_DONE_4</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_CANNONS_DONE_8</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_CANNONS_START</Event>
@@ -18242,6 +19391,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_ROPE_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_ROPE_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_ROPE_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_ROPE_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_ROPE_START</Event>
@@ -18379,6 +19530,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_SILVER_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_SILVER_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_SILVER_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_SILVER_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_SILVER_START</Event>
@@ -18516,6 +19669,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_GOLD_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_GOLD_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_GOLD_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_GOLD_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_GOLD_START</Event>
@@ -18653,6 +19808,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_GEMS_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_GEMS_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_GEMS_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_GEMS_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_GEMS_START</Event>
@@ -18790,6 +19947,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_COCOA_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_COCOA_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COCOA_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COCOA_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_COCOA_START</Event>
@@ -18927,6 +20086,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_COFFEE_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_COFFEE_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COFFEE_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COFFEE_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_COFFEE_START</Event>
@@ -19064,6 +20225,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_CIGARS_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_CIGARS_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_CIGARS_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_CIGARS_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_CIGARS_START</Event>
@@ -19338,6 +20501,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_CLOTH_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_CLOTH_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_CLOTH_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_CLOTH_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_CLOTH_START</Event>
@@ -19475,6 +20640,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_COLOURED_CLOTH_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_COLOURED_CLOTH_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COLOURED_CLOTH_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COLOURED_CLOTH_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_COLOURED_CLOTH_START</Event>
@@ -19612,6 +20779,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_LEATHER_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_LEATHER_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_LEATHER_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_LEATHER_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_LEATHER_START</Event>
@@ -19749,6 +20918,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_COATS_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_COATS_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COATS_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_COATS_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_COATS_START</Event>
@@ -19886,6 +21057,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_PREMIUM_COATS_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_PREMIUM_COATS_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_PREMIUM_COATS_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_PREMIUM_COATS_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_PREMIUM_COATS_START</Event>
@@ -20023,6 +21196,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_SPICES_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_SPICES_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_SPICES_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_SPICES_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_SPICES_START</Event>
@@ -20160,6 +21335,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_FURNITURE_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_FURNITURE_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_FURNITURE_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_FURNITURE_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_FURNITURE_START</Event>
@@ -20297,6 +21474,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_WHALE_OIL_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_WHALE_OIL_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_WHALE_OIL_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_WHALE_OIL_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_WHALE_OIL_START</Event>
@@ -20434,6 +21613,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_WINE_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_WINE_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_WINE_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_WINE_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_WINE_START</Event>
@@ -20571,6 +21752,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_BEER_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_BEER_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_BEER_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_BEER_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_BEER_START</Event>
@@ -20708,6 +21891,8 @@
 			<Events>
 				<Event>EVENT_EUROPE_TRADE_QUEST_SALT_DONE_1</Event>
 				<Event>EVENT_EUROPE_TRADE_QUEST_SALT_DONE_2</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_SALT_DONE_3</Event>
+				<Event>EVENT_EUROPE_TRADE_QUEST_SALT_DONE_4</Event>
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_EUROPE_TRADE_QUEST_SALT_START</Event>
