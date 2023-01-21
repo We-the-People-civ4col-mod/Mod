@@ -29633,27 +29633,27 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired></UnitsRequired>
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired></BuildingsRequired>
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired></FeaturesRequired>
-			<TerrainsRequired></TerrainsRequired>
-			<ImprovementsRequired></ImprovementsRequired>
-			<RoutesRequired></RoutesRequired>
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_AFRICA_TRADE_QUEST_HARDWOOD_START</Event>
 			</Events>
-			<PrereqEvents></PrereqEvents>
+			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
@@ -29669,10 +29669,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo></PythonCanDo>
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerAfricaTradeQuest_HARDWOOD_START</PythonCanDoCity>
-			<PythonCanDoUnit></PythonCanDoUnit>
-			<PythonCallback></PythonCallback>
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_AFRICA_TRADE_QUEST_HARDWOOD_DONE</Type>
