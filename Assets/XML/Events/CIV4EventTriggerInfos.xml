@@ -12532,10 +12532,8 @@
 				<Event>EVENT_WHALING_1</Event>
 				<Event>EVENT_WHALING_2</Event>
 			</Events>
-			<PrereqEvents>
-				<Event>EVENT_WHALE_OIL_COOKER_1</Event>
-			</PrereqEvents>
-			<bPrereqEventPlot>1</bPrereqEventPlot>
+			<PrereqEvents/>
+			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
 			<bGlobal>0</bGlobal>
