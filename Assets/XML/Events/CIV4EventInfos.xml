@@ -28995,9 +28995,9 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_LUMBER_START</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText></LocalInfoText>
+			<WorldNewsTexts></WorldNewsTexts>
+			<OtherPlayerPopup></OtherPlayerPopup>
 			<QuestFailText>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_LUMBER_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -29015,13 +29015,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion></UnitPromotion>
+			<UnitName></UnitName>
+			<UnitCombatPromotions></UnitCombatPromotions>
+			<UnitClassPromotions></UnitClassPromotions>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields></BuildingExtraYields>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -29034,17 +29034,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields></PlotExtraYields>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents></AdditionalEvents>
+			<EventTimes></EventTimes>
+			<ClearEvents></ClearEvents>
+			<PythonCallback></PythonCallback>
+			<PythonExpireCheck></PythonExpireCheck>
+			<PythonCanDo></PythonCanDo>
 			<PythonHelp>getHelpQuestStartEuropeTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -29320,9 +29320,9 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_SUGAR_START</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText></LocalInfoText>
+			<WorldNewsTexts></WorldNewsTexts>
+			<OtherPlayerPopup></OtherPlayerPopup>
 			<QuestFailText>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_SUGAR_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -29340,13 +29340,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion></UnitPromotion>
+			<UnitName></UnitName>
+			<UnitCombatPromotions></UnitCombatPromotions>
+			<UnitClassPromotions></UnitClassPromotions>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields></BuildingExtraYields>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -29359,17 +29359,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields></PlotExtraYields>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents></AdditionalEvents>
+			<EventTimes></EventTimes>
+			<ClearEvents></ClearEvents>
+			<PythonCallback></PythonCallback>
+			<PythonExpireCheck></PythonExpireCheck>
+			<PythonCanDo></PythonCanDo>
 			<PythonHelp>getHelpQuestStartEuropeTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -29645,9 +29645,9 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_TOBACCO_START</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText></LocalInfoText>
+			<WorldNewsTexts></WorldNewsTexts>
+			<OtherPlayerPopup></OtherPlayerPopup>
 			<QuestFailText>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_TOBACCO_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -29665,13 +29665,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion></UnitPromotion>
+			<UnitName></UnitName>
+			<UnitCombatPromotions></UnitCombatPromotions>
+			<UnitClassPromotions></UnitClassPromotions>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields></BuildingExtraYields>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -29684,17 +29684,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields></PlotExtraYields>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents></AdditionalEvents>
+			<EventTimes></EventTimes>
+			<ClearEvents></ClearEvents>
+			<PythonCallback></PythonCallback>
+			<PythonExpireCheck></PythonExpireCheck>
+			<PythonCanDo></PythonCanDo>
 			<PythonHelp>getHelpQuestStartEuropeTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -32118,9 +32118,9 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_COCOA_FRUITS_START</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText></LocalInfoText>
+			<WorldNewsTexts></WorldNewsTexts>
+			<OtherPlayerPopup></OtherPlayerPopup>
 			<QuestFailText>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_COCOA_FRUITS_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -32138,13 +32138,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion></UnitPromotion>
+			<UnitName></UnitName>
+			<UnitCombatPromotions></UnitCombatPromotions>
+			<UnitClassPromotions></UnitClassPromotions>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields></BuildingExtraYields>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -32157,17 +32157,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields></PlotExtraYields>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents></AdditionalEvents>
+			<EventTimes></EventTimes>
+			<ClearEvents></ClearEvents>
+			<PythonCallback></PythonCallback>
+			<PythonExpireCheck></PythonExpireCheck>
+			<PythonCanDo></PythonCanDo>
 			<PythonHelp>getHelpQuestStartEuropeTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -32443,9 +32443,9 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_COCA_LEAVES_START</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText></LocalInfoText>
+			<WorldNewsTexts></WorldNewsTexts>
+			<OtherPlayerPopup></OtherPlayerPopup>
 			<QuestFailText>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_COCA_LEAVES_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -32463,13 +32463,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion></UnitPromotion>
+			<UnitName></UnitName>
+			<UnitCombatPromotions></UnitCombatPromotions>
+			<UnitClassPromotions></UnitClassPromotions>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields></BuildingExtraYields>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -32482,17 +32482,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields></PlotExtraYields>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents></AdditionalEvents>
+			<EventTimes></EventTimes>
+			<ClearEvents></ClearEvents>
+			<PythonCallback></PythonCallback>
+			<PythonExpireCheck></PythonExpireCheck>
+			<PythonCanDo></PythonCanDo>
 			<PythonHelp>getHelpQuestStartEuropeTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -33159,9 +33159,9 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_COFFEE_BERRIES_START</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText></LocalInfoText>
+			<WorldNewsTexts></WorldNewsTexts>
+			<OtherPlayerPopup></OtherPlayerPopup>
 			<QuestFailText>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_COFFEE_BERRIES_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -33179,13 +33179,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion></UnitPromotion>
+			<UnitName></UnitName>
+			<UnitCombatPromotions></UnitCombatPromotions>
+			<UnitClassPromotions></UnitClassPromotions>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields></BuildingExtraYields>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -33198,17 +33198,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields></PlotExtraYields>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents></AdditionalEvents>
+			<EventTimes></EventTimes>
+			<ClearEvents></ClearEvents>
+			<PythonCallback></PythonCallback>
+			<PythonExpireCheck></PythonExpireCheck>
+			<PythonCanDo></PythonCanDo>
 			<PythonHelp>getHelpQuestStartEuropeTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -35759,9 +35759,9 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_INDIGO_START</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText></LocalInfoText>
+			<WorldNewsTexts></WorldNewsTexts>
+			<OtherPlayerPopup></OtherPlayerPopup>
 			<QuestFailText>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_INDIGO_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -35779,13 +35779,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion></UnitPromotion>
+			<UnitName></UnitName>
+			<UnitCombatPromotions></UnitCombatPromotions>
+			<UnitClassPromotions></UnitClassPromotions>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields></BuildingExtraYields>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -35798,17 +35798,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields></PlotExtraYields>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents></AdditionalEvents>
+			<EventTimes></EventTimes>
+			<ClearEvents></ClearEvents>
+			<PythonCallback></PythonCallback>
+			<PythonExpireCheck></PythonExpireCheck>
+			<PythonCanDo></PythonCanDo>
 			<PythonHelp>getHelpQuestStartEuropeTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -45311,9 +45311,9 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_COTTON_START</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText></LocalInfoText>
+			<WorldNewsTexts></WorldNewsTexts>
+			<OtherPlayerPopup></OtherPlayerPopup>
 			<QuestFailText>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_COTTON_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -45331,13 +45331,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion></UnitPromotion>
+			<UnitName></UnitName>
+			<UnitCombatPromotions></UnitCombatPromotions>
+			<UnitClassPromotions></UnitClassPromotions>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields></BuildingExtraYields>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -45350,17 +45350,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields></PlotExtraYields>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents></AdditionalEvents>
+			<EventTimes></EventTimes>
+			<ClearEvents></ClearEvents>
+			<PythonCallback></PythonCallback>
+			<PythonExpireCheck></PythonExpireCheck>
+			<PythonCanDo></PythonCanDo>
 			<PythonHelp>getHelpQuestStartEuropeTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -66745,9 +66745,9 @@
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_BLACK_POWDER_START</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText></LocalInfoText>
+			<WorldNewsTexts></WorldNewsTexts>
+			<OtherPlayerPopup></OtherPlayerPopup>
 			<QuestFailText>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_BLACK_POWDER_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -66765,13 +66765,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion></UnitPromotion>
+			<UnitName></UnitName>
+			<UnitCombatPromotions></UnitCombatPromotions>
+			<UnitClassPromotions></UnitClassPromotions>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields></BuildingExtraYields>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -66784,17 +66784,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields></PlotExtraYields>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents></AdditionalEvents>
+			<EventTimes></EventTimes>
+			<ClearEvents></ClearEvents>
+			<PythonCallback></PythonCallback>
+			<PythonExpireCheck></PythonExpireCheck>
+			<PythonCanDo></PythonCanDo>
 			<PythonHelp>getHelpQuestStartAfricaTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -67202,9 +67202,9 @@
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_BLADES_START</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText></LocalInfoText>
+			<WorldNewsTexts></WorldNewsTexts>
+			<OtherPlayerPopup></OtherPlayerPopup>
 			<QuestFailText>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_BLADES_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -67222,13 +67222,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion></UnitPromotion>
+			<UnitName></UnitName>
+			<UnitCombatPromotions></UnitCombatPromotions>
+			<UnitClassPromotions></UnitClassPromotions>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields></BuildingExtraYields>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -67241,17 +67241,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields></PlotExtraYields>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents></AdditionalEvents>
+			<EventTimes></EventTimes>
+			<ClearEvents></ClearEvents>
+			<PythonCallback></PythonCallback>
+			<PythonExpireCheck></PythonExpireCheck>
+			<PythonCanDo></PythonCanDo>
 			<PythonHelp>getHelpQuestStartAfricaTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -67659,9 +67659,9 @@
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_CANNONS_START</Type>
 			<Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_START</Description>
-			<LocalInfoText />
-			<WorldNewsTexts />
-			<OtherPlayerPopup />
+			<LocalInfoText></LocalInfoText>
+			<WorldNewsTexts></WorldNewsTexts>
+			<OtherPlayerPopup></OtherPlayerPopup>
 			<QuestFailText>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_CANNONS_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -67679,13 +67679,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion />
-			<UnitName />
-			<UnitCombatPromotions />
-			<UnitClassPromotions />
+			<UnitPromotion></UnitPromotion>
+			<UnitName></UnitName>
+			<UnitCombatPromotions></UnitCombatPromotions>
+			<UnitClassPromotions></UnitClassPromotions>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields />
+			<BuildingExtraYields></BuildingExtraYields>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -67698,17 +67698,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields />
+			<PlotExtraYields></PlotExtraYields>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents />
-			<EventTimes />
-			<ClearEvents />
-			<PythonCallback />
-			<PythonExpireCheck />
-			<PythonCanDo />
+			<AdditionalEvents></AdditionalEvents>
+			<EventTimes></EventTimes>
+			<ClearEvents></ClearEvents>
+			<PythonCallback></PythonCallback>
+			<PythonExpireCheck></PythonExpireCheck>
+			<PythonCanDo></PythonCanDo>
 			<PythonHelp>getHelpQuestStartAfricaTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
