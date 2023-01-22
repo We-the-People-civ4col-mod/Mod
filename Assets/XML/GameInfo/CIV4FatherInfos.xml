@@ -142,7 +142,12 @@
             <Civilopedia>TXT_KEY_FATHER_GIOVANNI_DA_VERRAZANO_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_FATHER_GIOVANNI_DA_VERRAZANO_STRATEGY</Strategy>
             <FatherCategory>FATHERCATEGORY_EXPLORATION</FatherCategory>
-            <RevealImprovements/>
+            <RevealImprovements>
+                <RevealImprovement>
+                    <ImprovementType>IMPROVEMENT_GOODY_HUT3</ImprovementType>
+                    <bReveal>1</bReveal>
+                </RevealImprovement>
+            </RevealImprovements>
             <FreeUnits>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_GALLEON</UnitClass>
@@ -613,7 +618,12 @@
             <Civilopedia>TXT_KEY_FATHER_PIET_HEYN_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_FATHER_PIET_HEYN_STRATEGY</Strategy>
             <FatherCategory>FATHERCATEGORY_EXPLORATION</FatherCategory>
-            <RevealImprovements/>
+            <RevealImprovements>
+                <RevealImprovement>
+                    <ImprovementType>IMPROVEMENT_GOODY_HUT4</ImprovementType>
+                    <bReveal>1</bReveal>
+                </RevealImprovement>
+            </RevealImprovements>
             <FreeUnits>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_WEST_INDIAMAN</UnitClass>
@@ -2181,7 +2191,12 @@
             <Civilopedia>TXT_KEY_FATHER_PEDRO_DE_VALDIVIA_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_FATHER_PEDRO_DE_VALDIVIA_STRATEGY</Strategy>
             <FatherCategory>FATHERCATEGORY_MILITARY</FatherCategory>
-            <RevealImprovements/>
+            <RevealImprovements>
+                <RevealImprovement>
+                    <ImprovementType>IMPROVEMENT_GOODY_HUT6</ImprovementType>
+                    <bReveal>1</bReveal>
+                </RevealImprovement>
+            </RevealImprovements>
             <FreeUnits>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_CONQUISTADOR</UnitClass>
@@ -2339,7 +2354,12 @@
             <Civilopedia>TXT_KEY_FATHER_CHIEF_POWHATAN_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_FATHER_CHIEF_POWHATAN_STRATEGY</Strategy>
             <FatherCategory>FATHERCATEGORY_MILITARY</FatherCategory>
-            <RevealImprovements/>
+            <RevealImprovements>
+                <RevealImprovement>
+                    <ImprovementType>IMPROVEMENT_GOODY_HUT7</ImprovementType>
+                    <bReveal>1</bReveal>
+                </RevealImprovement>
+            </RevealImprovements>
             <FreeUnits>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_CONVERTED_NATIVE</UnitClass>
@@ -2934,7 +2954,12 @@
             <Civilopedia>TXT_KEY_FATHER_POCAHONTAS_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_FATHER_POCAHONTAS_STRATEGY</Strategy>
             <FatherCategory>FATHERCATEGORY_POLITICS</FatherCategory>
-            <RevealImprovements/>
+            <RevealImprovements>
+                <RevealImprovement>
+                    <ImprovementType>IMPROVEMENT_GOODY_HUT8</ImprovementType>
+                    <bReveal>1</bReveal>
+                </RevealImprovement>
+            </RevealImprovements>
             <FreeUnits/>
             <FatherPointCosts>
                 <FatherPointCost>
