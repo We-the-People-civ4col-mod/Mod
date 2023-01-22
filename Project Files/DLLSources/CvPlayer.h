@@ -112,7 +112,7 @@ public:
 	void checkForEuropeanWars(); //TAC European Wars
 
 	void checkForStealingImmigrant(); // R&R, Stealing Immigrant
-	
+
 	void checkForContinentalGuard(); // R&R, ray, Continental Guard - START
 
 	void checkForMortar(); // R&R, ray, Mortar - START
@@ -220,7 +220,8 @@ public:
 	bool isCityNameValid(const CvWString& szName, bool bTestDestroyed = true) const;
 	DllExport CvUnit* initUnit(UnitTypes eUnit, ProfessionTypes eProfession, int iX, int iY, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION, int iYieldStored = 0);
 	CvUnit* initEuropeUnit(UnitTypes eUnit, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION);
-	void initEuropeSettler(bool bPayEquipment);
+	bool initEuropeSettler(bool bPayEquipment);
+	bool initEuropeTransport(bool bPay);
 	CvUnit* initAfricaUnit(UnitTypes eUnit, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION); /*** TRIANGLETRADE 10/23/08 by DPII ***/
 	CvUnit* initPortRoyalUnit(UnitTypes eUnit, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION); // R&R, ray, Port Royal
 	void killUnits();
@@ -783,7 +784,7 @@ public:
 	void CvPlayer::changeYieldTradedTotalPortRoyal(YieldTypes eYield, int iChange, int iUnitPrice = -1); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 	//void changeYieldTradedTotal(YieldTypes eYield, int iChange);
 	// R&R, vetiarvind, Price dependent tax rate change - End
-	
+
 	int getYieldBoughtTotal(YieldTypes eYield) const;
 	void setYieldBoughtTotal(YieldTypes eYield, int iValue);
 	void changeYieldBoughtTotal(YieldTypes eYield, int iChange);
@@ -943,7 +944,7 @@ public:
 	int addTradeRouteGroup(const std::wstring groupName);
 	bool editTradeRouteGroup(int iId, const std::wstring groupName);
 	bool removeTradeRouteGroup(int iId);
-	CvTradeRouteGroup* getTradeRouteGroupById(int tradeGroupId) const; 
+	CvTradeRouteGroup* getTradeRouteGroupById(int tradeGroupId) const;
 	CvTradeRouteGroup* getTradeRouteGroup(int iIndex) const;
 	int getNumTradeGroups() const;
 	// R&R mod, vetiarvind, trade groups - end
@@ -1077,7 +1078,7 @@ protected:
 	//WTP, ray Kings Used Ship - END
 
 	// WTP, ray, Foreign Kings, buy Immigrants - START
-	int m_iTimerForeignImmigrants; 
+	int m_iTimerForeignImmigrants;
 	int m_iCachedForeignImmigrantPrice;
 	int m_iCachedForeignImmigrantClassTypeID;
 	// WTP, ray, Foreign Kings, buy Immigrants - END
@@ -1198,7 +1199,7 @@ protected:
 	// for serialization
 	virtual void read(FDataStreamBase* pStream);
 	virtual void write(FDataStreamBase* pStream);
-	
+
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);
 
