@@ -1314,8 +1314,9 @@ void CvUnit::updateCombat(bool bQuick)
 				// if suitable eject Plot found, give some random damage and move to eject Plot
 				if (pEjectPlot != NULL)
 				{
-					int iDamageRand = std::max(10, GC.getGameINLINE().getSorenRandNum(75, "random ship damage"));
-					pDefender->setDamage(GC.getMAX_HIT_POINTS() * iDamageRand / 100);
+					const int iDamageRand = std::max(10, GC.getGameINLINE().getSorenRandNum(75, "random ship damage"));
+					const int iRemainingHitPoints = (currHitPoints() * 100 / maxHitPoints());
+					pDefender->changeDamage(maxHitPoints() * iRemainingHitPoints * iDamageRand / (100 * 100));
 
 					// clean up to avoid Asserts when changing positon
 					setCombatUnit(NULL);
