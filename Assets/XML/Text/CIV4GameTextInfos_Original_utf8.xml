@@ -9042,6 +9042,7 @@
         <German>Englisch</German>
         <Italian>Inglese</Italian>
         <Spanish>Inglés</Spanish>
+		<Russian>Английский</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LANGUAGE_1</Tag>
@@ -9050,6 +9051,7 @@
         <German>Französisch</German>
         <Italian>Francese</Italian>
         <Spanish>Francés</Spanish>
+		<Russian>Французский</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LANGUAGE_2</Tag>
@@ -9058,6 +9060,7 @@
         <German>Deutsch</German>
         <Italian>Tedesco</Italian>
         <Spanish>Alemán</Spanish>
+		<Russian>Немецкий</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LANGUAGE_3</Tag>
@@ -9066,6 +9069,7 @@
         <German>Italienisch</German>
         <Italian>Italiano</Italian>
         <Spanish>Italiano</Spanish>
+		<Russian>Итальянский</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LANGUAGE_4</Tag>
@@ -9074,6 +9078,7 @@
         <German>Spanisch</German>
         <Italian>Spagnolo</Italian>
         <Spanish>Español</Spanish>
+		<Russian>Испанский</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LANGUAGE_5</Tag>
@@ -9083,6 +9088,17 @@
         <Italian>Ungherese</Italian>
         <Spanish>Húngaro</Spanish>
         <Hungarian>Magyar</Hungarian>
+		<Russian>Венгерский</Russian>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_LANGUAGE_6</Tag>
+        <English>Russian</English>
+        <French>Russe</French>
+        <German>Russisch</German>
+        <Italian>Russo</Italian>
+        <Spanish>Ruso</Spanish>
+        <Hungarian>Orosz</Hungarian>
+		<Russian>Русский</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GOLD_FROM_PLAYER</Tag>
