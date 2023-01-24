@@ -8587,13 +8587,16 @@ void CvPlayer::verifyAlive()
 				// WTP, jooe: This was commented out, but I think it is the right place for that call
 				setAlive(false);
 
-				// Send a message that the player was destroyed
-				CvWString szBuffer = gDLL->getText("TXT_KEY_NO_MORE_RESPAWN", getCivilizationShortDescriptionKey());
-				for (int iI = 0; iI < MAX_PLAYERS; iI++)
+				if(getParent() != NO_PLAYER)
 				{
-					if (GET_PLAYER((PlayerTypes)iI).isAlive())
+					// Send a message that the player was destroyed
+					CvWString szBuffer = gDLL->getText("TXT_KEY_NO_MORE_RESPAWN", getCivilizationShortDescriptionKey());
+					for (int iI = 0; iI < MAX_PLAYERS; iI++)
 					{
-						gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVDESTROYED", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
+						if (GET_PLAYER((PlayerTypes)iI).isAlive())
+						{
+							gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVDESTROYED", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
+						}
 					}
 				}
 			}
