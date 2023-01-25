@@ -7,7 +7,7 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
         <Tag>TXT_KEY_AND</Tag>
-        <English>[SPACE]and[SPACE]</English>
+        <English>[SPACE]и[SPACE]</English>
         <French>[SPACE]et[SPACE]</French>
         <German>[SPACE]und[SPACE]</German>
         <Italian>[SPACE]e[SPACE]</Italian>
@@ -15,7 +15,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OR</Tag>
-        <English>[SPACE]or[SPACE]</English>
+        <English>[SPACE]или[SPACE]</English>
         <French>[SPACE]ou[SPACE]</French>
         <German>[SPACE]oder[SPACE]</German>
         <Italian>[SPACE]o[SPACE]</Italian>
@@ -132,6 +132,7 @@
         <German>%s1 (%d2 [NUM2:Runde:Runden])</German>
         <Italian>%s1 (%d2 [NUM2:turno:turni])</Italian>
         <Spanish>%s1 (%d2 [NUM2:turno:turnos])</Spanish>
+        <Russian>%s1 (%d2 [NUM2:ход:ходов])</Russian>
     </TEXT>
     <TEXT>
         <Tag>INTERFACE_CITY_TURNS</Tag>
@@ -140,6 +141,7 @@
         <German>(%d1 [NUM1:Runde:Runden])</German>
         <Italian>(%d1 [NUM1:turno:turni])</Italian>
         <Spanish>(%d1 [NUM1:turno:turnos])</Spanish>
+        <Russian>%s1 (%d2 [NUM2:ход:ходов])</Russian>
     </TEXT>
     <TEXT>
         <Tag>INTERFACE_PANE_UNIT_NAME</Tag>
@@ -164,6 +166,7 @@
         <German>Stärke :</German>
         <Italian>Forza :</Italian>
         <Spanish>Fuerza :</Spanish>
+        <Russian>Сила :</Russian>
     </TEXT>
     <TEXT>
         <Tag>INTERFACE_PANE_MOVEMENT</Tag>
@@ -172,6 +175,7 @@
         <German>Fortbewegung :</German>
         <Italian>Movimento :</Italian>
         <Spanish>Movimiento :</Spanish>
+        <Russian>Движение :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_LOAD</Tag>
@@ -308,6 +312,7 @@
         <German>[ICON_BULLET]Kann nur im Flachland errichtet werden</German>
         <Italian>[ICON_BULLET]Si può costruire solo in pianura</Italian>
         <Spanish>[ICON_BULLET]Solo se puede construir en llanos</Spanish>
+        <Russian>[ICON_BULLET]Может быть построено только на ровной местности</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_REQUIRES_RIVER</Tag>
@@ -316,6 +321,7 @@
         <German>[ICON_BULLET]Erfordert einen Fluss</German>
         <Italian>[ICON_BULLET]Richiede un fiume</Italian>
         <Spanish>[ICON_BULLET]Requiere un río</Spanish>
+        <Russian>[ICON_BULLET]Требует наличие реки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_NOT_ALLOWED_NEXT_TO_ITSELF</Tag>
@@ -799,6 +805,7 @@
         <German>[ICON_BULLET]Beginnt mit[SPACE]</German>
         <Italian>[ICON_BULLET]Inizia con[SPACE]</Italian>
         <Spanish>[ICON_BULLET]Empieza con[SPACE]</Spanish>
+        <Russian>[ICON_BULLET]Начинает с[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_REQUIRES_STRING</Tag>
@@ -942,6 +949,7 @@
         <German>[ICON_BULLET]Erforderlich zum Bau von :[SPACE]</German>
         <Italian>[ICON_BULLET]Necessario per costruire[SPACE]</Italian>
         <Spanish>[ICON_BULLET]Se requiere para construir[SPACE]</Spanish>
+        <Russian>[ICON_BULLET]Для постройки требуется[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FREE_START_ERA</Tag>
@@ -1030,6 +1038,7 @@
         <German>[ICON_BULLET]Verdoppelt die Zahl erzeugter Hämmer beim Bau von[SPACE]</German>
         <Italian>[ICON_BULLET]Raddoppia la velocità di produzione di[SPACE]</Italian>
         <Spanish>[ICON_BULLET]Dobla la velocidad de producción de[SPACE]</Spanish>
+        <Russian>[ICON_BULLET]Двойная скорость строительства[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_PRODUCTION_MODIFIER</Tag>
@@ -1078,6 +1087,7 @@
         <German>Beenden</German>
         <Italian>Esci</Italian>
         <Spanish>Salir</Spanish>
+        <Russian>Выход</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_SCREEN_LOAD_GROUP</Tag>
@@ -1094,6 +1104,7 @@
         <German>Zurück</German>
         <Italian>Indietro</Italian>
         <Spanish>Atrás</Spanish>
+        <Russian>Назад</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_SCREEN_FORWARD</Tag>
@@ -1102,6 +1113,7 @@
         <German>Weiter</German>
         <Italian>Successivo</Italian>
         <Spanish>Siguiente</Spanish>
+        <Russian>Дальше</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_SCREEN_TOP</Tag>
@@ -1286,6 +1298,7 @@
         <German>Goldreserven</German>
         <Italian>PIL (oro)</Italian>
         <Spanish>PNB (oro)</Spanish>
+        <Russian>Казна</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DEMO_SCREEN_ECONOMY_MEASURE</Tag>
@@ -1390,6 +1403,7 @@
         <German>Abbrechen</German>
         <Italian>Annulla</Italian>
         <Spanish>Cancelar</Spanish>
+        <Russian>Отмена</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SCREEN_CONTINUE</Tag>
@@ -1614,6 +1628,7 @@
         <German>Frieden schließen mit</German>
         <Italian>Fai la pace con</Italian>
         <Spanish>Firmar la paz con</Spanish>
+        <Russian>Заключить мир с</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_DECLARE_WAR_ON</Tag>
@@ -1622,6 +1637,7 @@
         <German>Krieg erklären gegen</German>
         <Italian>Dichiara guerra a</Italian>
         <Spanish>Declararle la guerra a</Spanish>
+        <Russian>Объявить войну</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_STOP_TRADING_WITH</Tag>
@@ -1630,6 +1646,7 @@
         <German>Einstellung des Handels mit</German>
         <Italian>Interrompi il commercio con</Italian>
         <Spanish>Dejar de comerciar con</Spanish>
+        <Russian>Прекратить торговлю с</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_PLAYER_HAS</Tag>
@@ -1686,6 +1703,7 @@
         <German>Frieden mit[SPACE]</German>
         <Italian>Pace con[SPACE]</Italian>
         <Spanish>Paz con[SPACE]</Spanish>
+        <Russian>Мир с[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_WAR_WITH</Tag>
@@ -1694,6 +1712,7 @@
         <German>Krieg mit[SPACE]</German>
         <Italian>Guerra con[SPACE]</Italian>
         <Spanish>Guerra con[SPACE]</Spanish>
+        <Russian>Война с[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_GOLD_TO_OFFER</Tag>
@@ -2118,6 +2137,7 @@
         <German>Optionen</German>
         <Italian>Opzioni</Italian>
         <Spanish>Opciones</Spanish>
+        <Russian>Настройки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_GAME</Tag>
@@ -2126,6 +2146,7 @@
         <German>Spiel</German>
         <Italian>Partita</Italian>
         <Spanish>Juego</Spanish>
+        <Russian>Игра</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_GRAPHICS</Tag>
@@ -2134,6 +2155,7 @@
         <German>Grafik</German>
         <Italian>Grafica</Italian>
         <Spanish>Gráficos</Spanish>
+        <Russian>Графика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_AUDIO</Tag>
@@ -2142,6 +2164,7 @@
         <German>Audio</German>
         <Italian>Sonoro</Italian>
         <Spanish>Sonido</Spanish>
+        <Russian>Звук</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_CLOCK</Tag>
@@ -2150,6 +2173,7 @@
         <German>Uhr</German>
         <Italian>Orologio</Italian>
         <Spanish>Reloj</Spanish>
+        <Russian>Часы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_NEW_PROFILE</Tag>
@@ -2158,6 +2182,7 @@
         <German>Neues Profil erstellen</German>
         <Italian>Crea un nuovo profilo</Italian>
         <Spanish>Crear nuevo perfil</Spanish>
+        <Russian>Создать новый профиль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_DELETE_PROFILE</Tag>
@@ -2166,6 +2191,7 @@
         <German>Profil löschen</German>
         <Italian>Elimina profilo</Italian>
         <Spanish>Borrar perfil</Spanish>
+        <Russian>Удалить профиль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_LOADED_PROFILE</Tag>
@@ -2206,6 +2232,7 @@
         <German>Auflösung</German>
         <Italian>Risoluzione video</Italian>
         <Spanish>Resolución de pantalla</Spanish>
+        <Russian>Разрешение экрана</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_ANTIALIAS</Tag>
@@ -2214,6 +2241,7 @@
         <German>Antialiasing MultiSample</German>
         <Italian>Multi Sample di Antialias</Italian>
         <Spanish>Anti-Aliasing MultiSamples</Spanish>
+        <Russian>Сглаживание мульти-сэмплов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_MASTERVOLUME</Tag>
@@ -2222,6 +2250,7 @@
         <German>Gesamt-Lautstärke</German>
         <Italian>Volume principale</Italian>
         <Spanish>General</Spanish>
+        <Russian>Основная громкость</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_CUSTOM_MUSIC</Tag>
@@ -2230,6 +2259,7 @@
         <German>Eigener Musikordner</German>
         <Italian>Musica personalizzata</Italian>
         <Spanish>Carpeta de música personalizada</Spanish>
+        <Russian>Выбрать папку с музыкой</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_BROWSE</Tag>
@@ -2246,6 +2276,7 @@
         <German>Standardeinstellungen wiederherstellen</German>
         <Italian>Ripristina predefiniti</Italian>
         <Spanish>Restablecer valores predeterminados</Spanish>
+        <Russian>Восстановить исходные настройки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_SPEAKERS</Tag>
@@ -2254,6 +2285,7 @@
         <German>Lautsprecher</German>
         <Italian>Altoparlanti</Italian>
         <Spanish>Altavoces</Spanish>
+        <Russian>Динамики</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_CLOCK_ON</Tag>
@@ -2262,6 +2294,7 @@
         <German>Uhr ein</German>
         <Italian>Orologio attivo</Italian>
         <Spanish>Reloj activado</Spanish>
+        <Russian>Включить часы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_24CLOCK</Tag>
@@ -2270,6 +2303,7 @@
         <German>24-Stunden-Anzeige</German>
         <Italian>Orologio a 24 ore</Italian>
         <Spanish>Reloj de 24 horas</Spanish>
+        <Russian>24 часовой формат</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_ALARMON</Tag>
@@ -2278,6 +2312,7 @@
         <German>Alarm ein</German>
         <Italian>Allarme attivo</Italian>
         <Spanish>Alarma activada</Spanish>
+        <Russian>Включить сигнал</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_HOURS</Tag>
@@ -2286,6 +2321,7 @@
         <German>Stunden :</German>
         <Italian>Ore :</Italian>
         <Spanish>Horas :</Spanish>
+        <Russian>Часы сигнала</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_MINS</Tag>
@@ -2294,6 +2330,7 @@
         <German>Minuten :</German>
         <Italian>Minuti :</Italian>
         <Spanish>Minutos</Spanish>
+        <Russian>Минуты сигнала</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_NEED_TO_RESTART</Tag>
@@ -2302,6 +2339,7 @@
         <German>Zur Übernahme der Änderungen muss das Programm neu gestartet werden</German>
         <Italian>Il programma deve essere riavviato prima che i cambiamenti abbiano effetto</Italian>
         <Spanish>Hay que reiniciar el programa para que los cambios surtan efecto</Spanish>
+        <Russian>Для вступление изменений в силу, перейдите в основное меню</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_CONSTRUCTED_WORK_ON_NEXT</Tag>
@@ -2374,6 +2412,7 @@
         <German>Ja, dies sei meine Entscheidung.</German>
         <Italian>Sì, che questa sia la mia decisione.</Italian>
         <Spanish>Sí, que sea mi decisión.</Spanish>
+        <Russian>Да, это мой выбор.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_NO</Tag>
@@ -2382,6 +2421,7 @@
         <German>Nein, natürlich nicht.</German>
         <Italian>No, certo che no.</Italian>
         <Spanish>No, por supuesto que no.</Spanish>
+        <Russian>Нет, конечно нет.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_ENTER_LANDS_WAR</Tag>
@@ -2414,6 +2454,7 @@
         <German>Zurück in den Alltag</German>
         <Italian>Vai al desktop</Italian>
         <Spanish>Salir al escritorio</Spanish>
+        <Russian>Выход на Рабочий стол</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_EXIT_TO_MAIN_MENU</Tag>
@@ -2422,6 +2463,7 @@
         <German>Zurück zum Hauptmenü</German>
         <Italian>Vai al menu principale</Italian>
         <Spanish>Salir al menú principal</Spanish>
+        <Russian>Выход в Основное меню</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_LOAD_GAME</Tag>
@@ -2430,6 +2472,7 @@
         <German>Spiel laden</German>
         <Italian>Carica partita</Italian>
         <Spanish>Cargar partida</Spanish>
+        <Russian>Загрузить игру</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_SAVE_GAME</Tag>
@@ -2438,6 +2481,7 @@
         <German>Spiel speichern</German>
         <Italian>Salva partita</Italian>
         <Spanish>Guardar partida</Spanish>
+        <Russian>Сохранить игру</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_OPTIONS</Tag>
@@ -2446,6 +2490,7 @@
         <German>Optionen</German>
         <Italian>Opzioni</Italian>
         <Spanish>Opciones</Spanish>
+        <Russian>Настройки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_ENTER_WB</Tag>
@@ -2454,6 +2499,7 @@
         <German>Weltenbauer öffnen</German>
         <Italian>Entra nell'editor</Italian>
         <Spanish>Entrar en el Creador de mundos</Spanish>
+        <Russian>Открыть Строитель мира</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_CANCEL</Tag>
@@ -2462,6 +2508,7 @@
         <German>Abbrechen</German>
         <Italian>Annulla</Italian>
         <Spanish>Cancelar</Spanish>
+        <Russian>Отменить</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PLOT_BONUS</Tag>
@@ -2730,6 +2777,7 @@
         <German>Zurück</German>
         <Italian>Indietro</Italian>
         <Spanish>Atrás</Spanish>
+        <Russian>Назад</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_PEDIA_FORWARD</Tag>
@@ -2738,6 +2786,7 @@
         <German>Vor</German>
         <Italian>Avanti</Italian>
         <Spanish>Adelante</Spanish>
+        <Russian>Вперед</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CLOSE_SCREEN</Tag>
@@ -2746,6 +2795,7 @@
         <German>Schließen</German>
         <Italian>Chiudi schermata</Italian>
         <Spanish>Cerrar la pantalla</Spanish>
+        <Russian>Закрыть окно</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HISTORICAL_INFO</Tag>
@@ -3074,6 +3124,7 @@
         <German>RIIIIIIIIING! Es ist jetzt %s1_TimeStr.</German>
         <Italian>DRIIIIIIIIIN! Sono le %s1_TimeStr.</Italian>
         <Spanish>¡RIIIIIIIIING! Hora: %s1_TimeStr.</Spanish>
+        <Russian>АЛЯРМА!!! На часы давно смотрел??? %s1_TimeStr.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ALARM_WILL_GO_OFF</Tag>
@@ -3146,6 +3197,7 @@
         <German>Schnellstart auf Zufallskarte</German>
         <Italian>Gioca ora!</Italian>
         <Spanish>Jugar ya</Spanish>
+        <Russian>Играть сейчас</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_LOAD_GAME</Tag>
@@ -3154,6 +3206,7 @@
         <German>Spiel laden</German>
         <Italian>Carica partita</Italian>
         <Spanish>Cargar partida</Spanish>
+        <Russian>Загрузить игру</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_CUSTOM_GAME</Tag>
@@ -3162,6 +3215,7 @@
         <German>Zufallskarte</German>
         <Italian>Partita personalizzata</Italian>
         <Spanish>Personalizar partida</Spanish>
+        <Russian>Пользовательская игра</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_SCENARIO</Tag>
@@ -3170,6 +3224,7 @@
         <German>Szenario Schnellstart</German>
         <Italian>Gioca uno scenario</Italian>
         <Spanish>Jugar un escenario</Spanish>
+        <Russian>Играть Сценарий</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_UPDATES</Tag>
@@ -3178,6 +3233,7 @@
         <German>Updates für Colonization suchen</German>
         <Italian>Verifica aggiornamenti</Italian>
         <Spanish>Comprobar actualizaciones</Spanish>
+        <Russian>Проверить обновления</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_LOAD_MOD</Tag>
@@ -3186,6 +3242,7 @@
         <German>Andere Mod laden</German>
         <Italian>Carica un mod</Italian>
         <Spanish>Cargar un mod</Spanish>
+        <Russian>Загрузить модификацию</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_CIVILOPEDIA</Tag>
@@ -3194,6 +3251,7 @@
         <German>Colopädie</German>
         <Italian>Colopedia</Italian>
         <Spanish>Colopedia</Spanish>
+        <Russian>Колопедия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WIDGET_HELP</Tag>
@@ -3202,6 +3260,7 @@
         <German>Colopädie</German>
         <Italian>Colopedia</Italian>
         <Spanish>Colopedia</Spanish>
+        <Russian>Колопедия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_OPTIONS</Tag>
@@ -3210,6 +3269,7 @@
         <German>Optionen</German>
         <Italian>Opzioni</Italian>
         <Spanish>Opciones</Spanish>
+        <Russian>Настройки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_SELECT_GAME_SPEED</Tag>
@@ -3218,6 +3278,7 @@
         <German>Wie schnell soll das Spiel laufen?</German>
         <Italian>Quanto veloce deve essere il gioco?</Italian>
         <Spanish>¿A qué velocidad ha de ir el juego?</Spanish>
+        <Russian>Насколько быстрой должна быть игра?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_PLAYERS</Tag>
@@ -3226,6 +3287,7 @@
         <German>Spieler</German>
         <Italian>Giocatori</Italian>
         <Spanish>Jugadores</Spanish>
+        <Russian>Игроки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_CUSTOM_SETUP_OPTIONS</Tag>
@@ -3234,6 +3296,7 @@
         <German>Optionen</German>
         <Italian>Opzioni</Italian>
         <Spanish>Opciones</Spanish>
+        <Russian>Настройки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_LAUNCH</Tag>
@@ -3242,6 +3305,7 @@
         <German>Start!</German>
         <Italian>Avvia!</Italian>
         <Spanish>Iniciar</Spanish>
+        <Russian>Поднять паруса!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_SAVE_GAME_TITLE</Tag>
@@ -3250,6 +3314,7 @@
         <German>Spiel speichern</German>
         <Italian>Salva partita</Italian>
         <Spanish>Guardar partida</Spanish>
+        <Russian>Сохранить игру</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_LOADSAVE_GAME_FOLDER</Tag>
@@ -3258,6 +3323,7 @@
         <German>Ordner</German>
         <Italian>Directory</Italian>
         <Spanish>Carpeta</Spanish>
+        <Russian>Папка</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_LOADSAVE_FILE_NAME</Tag>
@@ -3266,6 +3332,7 @@
         <German>Dateiname</German>
         <Italian>Nome del file</Italian>
         <Spanish>Nombre del archivo</Spanish>
+        <Russian>Имя файла</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_LOADSAVE_SIZE</Tag>
@@ -3274,6 +3341,7 @@
         <German>Größe</German>
         <Italian>Dimensione</Italian>
         <Spanish>Tamaño</Spanish>
+        <Russian>Размер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_LOADSAVE_MODIFIED</Tag>
@@ -3282,6 +3350,7 @@
         <German>Modifiziert</German>
         <Italian>Modificato</Italian>
         <Spanish>Modificada</Spanish>
+        <Russian>Изменен</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_LOADSAVE_CANCEL</Tag>
@@ -3290,6 +3359,7 @@
         <German>Abbrechen</German>
         <Italian>Annulla</Italian>
         <Spanish>Cancelar</Spanish>
+        <Russian>Отмена</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_LOADSAVE_FILETYPE</Tag>
@@ -3298,6 +3368,7 @@
         <German>Dateityp</German>
         <Italian>Tipo di file</Italian>
         <Spanish>Tipo de archivo</Spanish>
+        <Russian>Тип файла</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_OK</Tag>
@@ -3306,6 +3377,7 @@
         <German>OK</German>
         <Italian>OK</Italian>
         <Spanish>Aceptar</Spanish>
+        <Russian>Ок</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_GO_BACK</Tag>
@@ -3314,6 +3386,7 @@
         <German>Zurück</German>
         <Italian>Torna indietro</Italian>
         <Spanish>Volver</Spanish>
+        <Russian>Вернуться</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_RANDOM</Tag>
@@ -3322,6 +3395,7 @@
         <German>Zufällig</German>
         <Italian>Casuale</Italian>
         <Spanish>Al azar</Spanish>
+        <Russian>Случайно</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_MULTIPLAYER_LAN</Tag>
@@ -3330,6 +3404,7 @@
         <German>LAN-Spiele</German>
         <Italian>Partite in LAN</Italian>
         <Spanish>Partidas en red local</Spanish>
+        <Russian>Игра по локальной сети</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_MULTIPLAYER_INTERNET_GAMES</Tag>
@@ -3338,6 +3413,7 @@
         <German>Internet-Spiele</German>
         <Italian>Partite Internet</Italian>
         <Spanish>Partidas en Internet</Spanish>
+        <Russian>Игра через Интернет</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_MULTIPLAYER_DIRECTIP</Tag>
@@ -3346,6 +3422,7 @@
         <German>Direkte IP-Verbindung</German>
         <Italian>Connessione diretta IP</Italian>
         <Spanish>Conexión directa con IP</Spanish>
+        <Russian>Прямое IP-соединение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_PLAYER_NAME</Tag>
@@ -3354,6 +3431,7 @@
         <German>Spielername</German>
         <Italian>Nome giocatore</Italian>
         <Spanish>Nombre del jugador</Spanish>
+        <Russian>Имя игрока</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_GAME_NAME</Tag>
@@ -3362,6 +3440,7 @@
         <German>Spielname :</German>
         <Italian>Nome della partita</Italian>
         <Spanish>Nombre de la partida</Spanish>
+        <Russian>Название игры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_NETWORK_ADDRESS</Tag>
@@ -3370,6 +3449,7 @@
         <German>Netzwerkadresse</German>
         <Italian>Indirizzo di rete</Italian>
         <Spanish>Dirección de red</Spanish>
+        <Russian>Сетевой адрес</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_CONNECT</Tag>
@@ -3394,6 +3474,7 @@
         <German>Am Spiel teilnehmen</German>
         <Italian>Partecipa alla partita</Italian>
         <Spanish>Unirse a partida</Spanish>
+        <Russian>Присоединиться к игре</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_CREATE_A_GAME</Tag>
@@ -3402,6 +3483,7 @@
         <German>Ein Spiel erstellen!</German>
         <Italian>Crea una partita!</Italian>
         <Spanish>Crear una partida</Spanish>
+        <Russian>Создать игру!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_JOIN</Tag>
@@ -3410,6 +3492,7 @@
         <German>Teilnehmen</German>
         <Italian>Partecipa</Italian>
         <Spanish>Unirse</Spanish>
+        <Russian>Присоединиться</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_NEW_GAME</Tag>
@@ -3418,6 +3501,7 @@
         <German>Neues Spiel</German>
         <Italian>Nuova partita</Italian>
         <Spanish>Nueva partida</Spanish>
+        <Russian>Новая игра</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_NEW_SCENARIO</Tag>
@@ -3426,6 +3510,7 @@
         <German>Neues Szenario</German>
         <Italian>Nuovo scenario</Italian>
         <Spanish>Nuevo escenario</Spanish>
+        <Russian>Новый Сценарий</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_REFRESH_LIST</Tag>
@@ -3434,6 +3519,7 @@
         <German>Liste aktualisieren </German>
         <Italian>Aggiorna elenco</Italian>
         <Spanish>Actualizar lista</Spanish>
+        <Russian>Обновить список</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_HOST_PING</Tag>
@@ -3458,6 +3544,7 @@
         <German>Neuen Account anlegen</German>
         <Italian>Crea nuovo account</Italian>
         <Spanish>Crear nueva cuenta</Spanish>
+        <Russian>Создать новый аккаунт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMESPY_CREATE_ACCOUNT</Tag>
@@ -3522,6 +3609,7 @@
         <German>Über diese Version</German>
         <Italian>Informazioni su questa build</Italian>
         <Spanish>Acerca de esta versión</Spanish>
+        <Russian>Об этой сборке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_SAVE_VERSION</Tag>
@@ -3538,6 +3626,7 @@
         <German>Version :</German>
         <Italian>Versione della build :</Italian>
         <Spanish>Versión de la build :</Spanish>
+        <Russian>Версия сборки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_BUILD_DATE</Tag>
@@ -3554,6 +3643,7 @@
         <German>Mod-Name :</German>
         <Italian>Nome del mod :</Italian>
         <Spanish>Nombre del mod :</Spanish>
+        <Russian>Имя модификации</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SYSTEM_ERROR_TITLE</Tag>
@@ -3746,6 +3836,7 @@
         <German>Heißer Stuhl</German>
         <Italian>Stesso computer</Italian>
         <Spanish>De uno en uno</Spanish>
+        <Russian>Hot Seat - Несколько игроков на одном компьютере</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_SELECT_A_DIFFICULTY</Tag>
@@ -3754,6 +3845,7 @@
         <German>Schwierigkeitsgrad wählen</German>
         <Italian>Seleziona la difficoltà</Italian>
         <Spanish>Seleccionar una dificultad</Spanish>
+        <Russian>Выбрать сложность</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_SELECT_A_MAP</Tag>
@@ -3762,6 +3854,7 @@
         <German>Karte wählen</German>
         <Italian>Seleziona una mappa</Italian>
         <Spanish>Seleccionar un mapa</Spanish>
+        <Russian>Выбрать карту</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_SELECT_A</Tag>
@@ -3778,6 +3871,7 @@
         <German>Einzelspieler-Partie</German>
         <Italian>Giocatore singolo</Italian>
         <Spanish>Un jugador</Spanish>
+        <Russian>Одиночная игра</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_MULTIPLAYER</Tag>
@@ -3786,6 +3880,7 @@
         <German>Mehrspieler-Partie</German>
         <Italian>Multigiocatore</Italian>
         <Spanish>Multijugador</Spanish>
+        <Russian>Многопользовательская игра</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_EXIT_GAME</Tag>
@@ -3794,6 +3889,7 @@
         <German>Zurück in den Alltag</German>
         <Italian>Esci dalla partita</Italian>
         <Spanish>Salir del juego</Spanish>
+        <Russian>Выйти из игры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_HUMAN</Tag>
@@ -3802,6 +3898,7 @@
         <German>Menschlich</German>
         <Italian>Umano</Italian>
         <Spanish>Humano</Spanish>
+        <Russian>Человек</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_CHOOSE_GAME_LOAD</Tag>
@@ -3810,6 +3907,7 @@
         <German>Zu ladendes Spiel wählen!</German>
         <Italian>Scegli una partita da caricare!</Italian>
         <Spanish>Elegir la partida a cargar</Spanish>
+        <Russian>Выберите игру для загрузки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_OPEN</Tag>
@@ -3818,6 +3916,7 @@
         <German>Offen</German>
         <Italian>Aperto</Italian>
         <Spanish>Abierto</Spanish>
+        <Russian>Открыть</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_AI</Tag>
@@ -3826,6 +3925,7 @@
         <German>KI</German>
         <Italian>IA</Italian>
         <Spanish>IA</Spanish>
+        <Russian>ИИ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_CLOSED</Tag>
@@ -3834,6 +3934,7 @@
         <German>Geschlossen</German>
         <Italian>Chiuso</Italian>
         <Spanish>Cerrado</Spanish>
+        <Russian>Закрыть</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_READY</Tag>
@@ -3842,6 +3943,7 @@
         <German>Bereit</German>
         <Italian>Pronto</Italian>
         <Spanish>Listo</Spanish>
+        <Russian>Готов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_NOT_READY</Tag>
@@ -3850,6 +3952,7 @@
         <German>Nicht bereit</German>
         <Italian>Non pronto</Italian>
         <Spanish>No está listo</Spanish>
+        <Russian>Не готов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_ERROR</Tag>
@@ -3954,6 +4057,7 @@
         <German>Euer Steckbrief :</German>
         <Italian>I tuoi dettagli :</Italian>
         <Spanish>Detalles :</Spanish>
+        <Russian>Ваши данные</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MENU_LEADER_NAME</Tag>
@@ -3962,6 +4066,7 @@
         <German>Name des Anführers :</German>
         <Italian>Nome leader :</Italian>
         <Spanish>Nombre del líder :</Spanish>
+        <Russian>Имя лидера</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MENU_CIV_DESC</Tag>
@@ -3970,6 +4075,7 @@
         <German>Ziv.-Beschreibung :</German>
         <Italian>Descriz. civiltà :</Italian>
         <Spanish>Civilización :</Spanish>
+        <Russian>Описание цивилизации</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MENU_CIV_SHORT_DESC</Tag>
@@ -3978,6 +4084,7 @@
         <German>Kurzbeschreibung :</German>
         <Italian>Br. descriz. civ. :</Italian>
         <Spanish>Descripción :</Spanish>
+        <Russian>Короткое описание</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MENU_CIV_ADJ</Tag>
@@ -4026,6 +4133,7 @@
         <German>Fortbewegen nach (%d1_NumTurns)</German>
         <Italian>Muovi a (%d1_NumTurns)</Italian>
         <Spanish>Mover a (%d1_NumTurns [NUM1:turno:turnos])</Spanish>
+        <Russian>Двигаться к (%d1_NumTurns)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FLYOUT_MENU_SELECT_ALL</Tag>
@@ -4034,6 +4142,7 @@
         <German>Alle auswählen</German>
         <Italian>Seleziona tutto</Italian>
         <Spanish>Seleccionar todo</Spanish>
+        <Russian>Выбрать всех</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FLYOUT_MENU_WAKE_ALL</Tag>
@@ -4122,6 +4231,7 @@
         <German>Per E-Mail spielen</German>
         <Italian>Gioca tramite e-mail</Italian>
         <Spanish>Juego por e-mail</Spanish>
+        <Russian>Играть через e-mail</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PBEM_ENTER_ADDRESS</Tag>
@@ -4234,6 +4344,7 @@
         <German>Zurück zum Hauptmenü</German>
         <Italian>Vai al menu principale</Italian>
         <Spanish>Salir al menú principal</Spanish>
+        <Russian>Выйти в Основное меню</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEAT_ACCOMPLISHED_OK</Tag>
@@ -4242,6 +4353,7 @@
         <German>Na schön, weiter geht's ...</German>
         <Italian>Molto bene, continua pure...</Italian>
         <Spanish>Muy bien, seguid así...</Spanish>
+        <Russian>Ну что же, давайте продолжим</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEAT_ACCOMPLISHED_MORE</Tag>
@@ -4250,6 +4362,7 @@
         <German>Wie ist die Lage?</German>
         <Italian>Qual è il grande piano?</Italian>
         <Spanish>¿Cuál es la visión de conjunto?</Spanish>
+        <Russian>Показать общую картину</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMAIL_SENT</Tag>
@@ -4274,6 +4387,7 @@
         <German>Siege</German>
         <Italian>Vittorie</Italian>
         <Spanish>Victorias</Spanish>
+        <Russian>Условия победы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VISIT_GAMESPYID</Tag>
@@ -4298,6 +4412,7 @@
         <German>Klima : %s1</German>
         <Italian>Clima %s1</Italian>
         <Spanish>Clima : %s1</Spanish>
+        <Russian>%s1 климат</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HOF_SCREEN_SIZE</Tag>
@@ -4306,6 +4421,7 @@
         <German>Weltgröße</German>
         <Italian>Dimensione</Italian>
         <Spanish>Tamaño</Spanish>
+        <Russian>Размер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SETTINGS_SEA_LEVEL</Tag>
@@ -4314,6 +4430,7 @@
         <German>Meeresspiegel : %s1</German>
         <Italian>Livello del mare %s1</Italian>
         <Spanish>Nivel del mar : %s1</Spanish>
+        <Russian>%s1 уровень моря</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SETTINGS_STARTING_ERA</Tag>
@@ -4322,6 +4439,7 @@
         <German>Startzeitalter %s1</German>
         <Italian>Era iniziale %s1</Italian>
         <Spanish>Época de inicio : %s1</Spanish>
+        <Russian>%s1 начальная эра</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HOF_SCREEN_STARTING_ERA</Tag>
@@ -4338,6 +4456,7 @@
         <German>Spielgeschwindigkeit : %s1</German>
         <Italian>Velocità di gioco %s1</Italian>
         <Spanish>Velocidad de juego : %s1</Spanish>
+        <Russian>%s1 скорость игры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HOF_SCREEN_GAME_SPEED</Tag>
@@ -4346,6 +4465,7 @@
         <German>Geschwindigkeit</German>
         <Italian>Velocità</Italian>
         <Spanish>Velocidad</Spanish>
+        <Russian>Скорость игры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_RIVALS_MET</Tag>
@@ -4362,6 +4482,7 @@
         <German>Alle Oberhäupter</German>
         <Italian>Tutti i leader</Italian>
         <Spanish>Todos los líderes</Spanish>
+        <Russian>Все лидеры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ALL_DIFFICULTIES</Tag>
@@ -4370,6 +4491,7 @@
         <German>Alle Schwierigkeitsgr.</German>
         <Italian>Tutte le difficoltà</Italian>
         <Spanish>Todas las dificultades</Spanish>
+        <Russian>Все сложности</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ALL_ERAS</Tag>
@@ -4378,6 +4500,7 @@
         <German>Alle Startzeitalter</German>
         <Italian>Tutte le ere iniziali</Italian>
         <Spanish>Todas las épocas</Spanish>
+        <Russian>Все начальные эпохи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ALL_GAME_SPEEDS</Tag>
@@ -4386,6 +4509,7 @@
         <German>Spielgeschwindigkeiten</German>
         <Italian>Tutte le velocità di gioco</Italian>
         <Spanish>Velocidad de juego</Spanish>
+        <Russian>Все скорости игры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ALL_VICTORIES</Tag>
@@ -4394,6 +4518,7 @@
         <German>Siege</German>
         <Italian>Tutte le vittorie</Italian>
         <Spanish>Todas las victorias</Spanish>
+        <Russian>Все победы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ATTITUDE_TOWARDS</Tag>
@@ -4514,6 +4639,7 @@
         <German>Besiegte</German>
         <Italian>Uccisi</Italian>
         <Spanish>Bajas</Spanish>
+        <Russian>Убито</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INFO_SCREEN_LOST</Tag>
@@ -4522,6 +4648,7 @@
         <German>Verluste</German>
         <Italian>Persi</Italian>
         <Spanish>Pérdidas</Spanish>
+        <Russian>Потеряно</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INFO_SCREEN_BUILT</Tag>
@@ -4530,6 +4657,7 @@
         <German>Errichtet</German>
         <Italian>Realizzati</Italian>
         <Spanish>Construido</Spanish>
+        <Russian>Построено</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_SCREEN_PROFILES</Tag>
@@ -4538,6 +4666,7 @@
         <German>Profile</German>
         <Italian>Profili</Italian>
         <Spanish>Perfiles</Spanish>
+        <Russian>Профили</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_SCREEN_PROFILE_NAME</Tag>
@@ -4554,6 +4683,7 @@
         <German>Gewünschten Musikordner wählen</German>
         <Italian>Scegli la cartella contenente la musica desiderata</Italian>
         <Spanish>Escoge una carpeta desde donde reproducir la música</Spanish>
+        <Russian>Выберите папку, из которой будет воспроизводиться музыка</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_VOICE</Tag>
@@ -4570,6 +4700,7 @@
         <German>Sprachaufnahmegerät</German>
         <Italian>Periferica di registrazione vocale</Italian>
         <Spanish>Dispositivo de captura de la voz</Spanish>
+        <Russian>Устройство захвата голоса</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_PLAYBACK_DEVICE</Tag>
@@ -4578,6 +4709,7 @@
         <German>Sprachwiedergabegerät</German>
         <Italian>Periferica di riproduzione vocale</Italian>
         <Spanish>Dispositivo de reproducción de la voz</Spanish>
+        <Russian>Устройство воспроизведения голоса</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_CAPTUREVOLUME</Tag>
@@ -4586,6 +4718,7 @@
         <German>Sprachwiedergabelautstärke</German>
         <Italian>Volume di registrazione vocale</Italian>
         <Spanish>Volumen de captura de la voz</Spanish>
+        <Russian>Громкость голосового захвата</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NORMALIZED_SCORE</Tag>
@@ -4674,6 +4807,7 @@
         <German>Alle Spieler einblenden</German>
         <Italian>Mostra tutti i giocatori</Italian>
         <Spanish>Mostrar a todos</Spanish>
+        <Russian>Показать всех игроков</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_LEADERS_TITLE</Tag>
@@ -4682,6 +4816,7 @@
         <German>ANFÜHRER</German>
         <Italian>LEADER</Italian>
         <Spanish>LÍDERES</Spanish>
+        <Russian>ЛИДЕРЫ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_SELECT_WORLD_SETUP</Tag>
@@ -4690,6 +4825,7 @@
         <German>WELTGRÖSSE</German>
         <Italian>DIMENSIONI DEL MONDO</Italian>
         <Spanish>TAMAÑO DEL MUNDO</Spanish>
+        <Russian>РАЗМЕР МИРА</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_SELECT_WORLD_SIZE_TITLE</Tag>
@@ -4698,6 +4834,7 @@
         <German>WELTGRÖSSE</German>
         <Italian>DIMENSIONI DEL MONDO</Italian>
         <Spanish>TAMAÑO DEL MUNDO</Spanish>
+        <Russian>РАЗМЕР МИРА</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_RANDOM_DESC</Tag>
@@ -4706,6 +4843,7 @@
         <German>Der Anführer wird zufällig ausgewählt.</German>
         <Italian>Il tuo leader verrà scelto casualmente.</Italian>
         <Spanish>Tu líder se elegirá al azar.</Spanish>
+        <Russian>Ваш лидер будет выбран случайным образом</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MENU_FINAL_SETUP</Tag>
@@ -4722,6 +4860,7 @@
         <German>SCHWIERIGKEIT</German>
         <Italian>DIFFICOLTà</Italian>
         <Spanish>DIFICULTAD</Spanish>
+        <Russian>СЛОЖНОСТЬ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_SELECT_GAME_SPEED_TITLE</Tag>
@@ -4730,6 +4869,7 @@
         <German>GESCHWINDIGKEIT</German>
         <Italian>VEL. DI GIOCO</Italian>
         <Spanish>VELOCID. DE JUEGO</Spanish>
+        <Russian>СКОРОСТЬ ИГРЫ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MENU_MAP</Tag>
@@ -4738,6 +4878,7 @@
         <German>Karte :</German>
         <Italian>Mappa :</Italian>
         <Spanish>Mapa :</Spanish>
+        <Russian>Карта :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MENU_SIZE</Tag>
@@ -4746,6 +4887,7 @@
         <German>Größe :</German>
         <Italian>Dimensione :</Italian>
         <Spanish>Tamaño :</Spanish>
+        <Russian>Размер :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MENU_CLIMATE</Tag>
@@ -4754,6 +4896,7 @@
         <German>Klima :</German>
         <Italian>Clima :</Italian>
         <Spanish>Clima :</Spanish>
+        <Russian>Климат :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MENU_SEALEVEL</Tag>
@@ -4762,6 +4905,7 @@
         <German>Meeresspiegel :</German>
         <Italian>Livello del mare :</Italian>
         <Spanish>Nivel del mar :</Spanish>
+        <Russian>Уровень мира :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MENU_ERA</Tag>
@@ -4770,6 +4914,7 @@
         <German>Zeitalter :</German>
         <Italian>Era :</Italian>
         <Spanish>Época :</Spanish>
+        <Russian>Эпоха :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MENU_SPEED</Tag>
@@ -4778,6 +4923,7 @@
         <German>Geschwindigkeit :</German>
         <Italian>Velocità :</Italian>
         <Spanish>Velocidad :</Spanish>
+        <Russian>Скорость :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MENU_LEADER_TYPE</Tag>
@@ -4786,6 +4932,7 @@
         <German>Typ des Anführers :</German>
         <Italian>Tipo di leader :</Italian>
         <Spanish>Tipo de líder :</Spanish>
+        <Russian>Тип лидера :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DIPLOMACY_TITLE</Tag>
@@ -5594,6 +5741,7 @@
         <German>EIGENES SPIEL</German>
         <Italian>PARTITA PERSONALIZZATA</Italian>
         <Spanish>PERSONALIZAR PARTIDA</Spanish>
+        <Russian>ПОЛЬЗОВАТЕЛЬСКАЯ ИГРА</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_STAGING_ROOM_TITLE</Tag>
@@ -5642,6 +5790,7 @@
         <German>Wollen Sie diese Auflösung beibehalten?</German>
         <Italian>Vuoi mantenere questa risoluzione?</Italian>
         <Spanish>¿Quieres conservar esta resolución?</Spanish>
+        <Russian>Вы хотите сохранить это разрешение экрана?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_DETAILS_DEFAULT</Tag>
@@ -6306,6 +6455,7 @@
         <German>Verlassen</German>
         <Italian>Ritirati</Italian>
         <Spanish>Retirarse</Spanish>
+        <Russian>Уйти в отставку</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_SCREEN_LANGUAGE</Tag>
@@ -6314,6 +6464,7 @@
         <German>Sprache</German>
         <Italian>Lingua</Italian>
         <Spanish>Idioma</Spanish>
+        <Russian>Язык</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONN_UPDATE_LEFT</Tag>
@@ -6786,6 +6937,7 @@
         <German>ERWEITERT</German>
         <Italian>IMPOSTAZIONI AVANZATE</Italian>
         <Spanish>AVANZADO</Spanish>
+        <Russian>Дополнительно</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_VISIT_WEBSITE</Tag>
@@ -6802,6 +6954,7 @@
         <German>Credits für Colonization</German>
         <Italian>RICONOSCIMENTI</Italian>
         <Spanish>CRÉDITOS</Spanish>
+        <Russian>АВТОРЫ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_DIRECTIP_PASSWORD</Tag>
@@ -6930,6 +7083,7 @@
         <German>Netzwerk</German>
         <Italian>Rete</Italian>
         <Spanish>Red</Spanish>
+        <Russian>Сеть</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_BANDWIDTH_DESC</Tag>
@@ -7026,6 +7180,7 @@
         <German>Grafikstufe</German>
         <Italian>Dettaglio grafico</Italian>
         <Spanish>Nivel gráfico</Spanish>
+        <Russian>Уровень графики</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_RENAME_UNIT</Tag>
@@ -7146,6 +7301,7 @@
         <German>Fertig !</German>
         <Italian>Fatto !</Italian>
         <Spanish>Finalizado !</Spanish>
+        <Russian>Завершение!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INIT_INITIALIZING</Tag>
@@ -7154,6 +7310,7 @@
         <German>Wird initialisiert</German>
         <Italian>Inizializzazione</Italian>
         <Spanish>Iniciando</Spanish>
+        <Russian>Инициализация ...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INIT_GRAPHICS</Tag>
@@ -7162,6 +7319,7 @@
         <German>Grafiken initialisieren</German>
         <Italian>Iniz. grafica</Italian>
         <Spanish>Inic. gráficos</Spanish>
+        <Russian>Инициализация графики ...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INIT_SETUP_PLAYERS</Tag>
@@ -7170,6 +7328,7 @@
         <German>Spieler-Setup</German>
         <Italian>Impostazione giocatori</Italian>
         <Spanish>Config. jugadores</Spanish>
+        <Russian>Настройка игроков ...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INIT_SETUP_MAP</Tag>
@@ -7178,6 +7337,7 @@
         <German>Karten-Setup</German>
         <Italian>Impostazione mappa</Italian>
         <Spanish>Config. mapa</Spanish>
+        <Russian>Настройка карты ...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INIT_SETUP_INTERFACE</Tag>
@@ -7186,6 +7346,7 @@
         <German>Interface-Setup</German>
         <Italian>Impostazione interfaccia</Italian>
         <Spanish>Config. interfaz</Spanish>
+        <Russian>Настройка интерфейса ...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CURRENT</Tag>
@@ -7202,6 +7363,7 @@
         <German>Systemkonfiguration verwenden</German>
         <Italian>Usa configurazione di sistema</Italian>
         <Spanish>Usar config. sistema</Spanish>
+        <Russian>Использовать настройки ситемы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTION_SOUND_HEADPHONES</Tag>
@@ -7210,6 +7372,7 @@
         <German>Lautsprecher</German>
         <Italian>Cuffie</Italian>
         <Spanish>Auriculares</Spanish>
+        <Russian>Наушники</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OVERWRITE_FILE</Tag>
@@ -7234,6 +7397,7 @@
         <German>Sonstige</German>
         <Italian>Altro</Italian>
         <Spanish>Otros</Spanish>
+        <Russian>Другие</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SAVING_GAME</Tag>
@@ -7242,6 +7406,7 @@
         <German>Speichervorgang ...</German>
         <Italian>Salvataggio in corso...</Italian>
         <Spanish>Guardando la partida...</Spanish>
+        <Russian>Сохранение игры...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_QUICK_SAVING</Tag>
@@ -7250,6 +7415,7 @@
         <German>Schnellspeichern ...</German>
         <Italian>Salvataggio rapido in corso...</Italian>
         <Spanish>Guardado rápido...</Spanish>
+        <Russian>Быстрое сохранение...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_AUTOSAVING</Tag>
@@ -7258,6 +7424,7 @@
         <German>Automatisches Speichern ...</German>
         <Italian>Salvataggio automatico...</Italian>
         <Spanish>Guardado automático...</Spanish>
+        <Russian>Автосохранение...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MOVE_FOCUS_BACK_TO</Tag>
@@ -7274,6 +7441,7 @@
         <German>Ihr wollt Euer Amt ruhen lassen, Milord?</German>
         <Italian>Sei sicuro?</Italian>
         <Spanish>¿Seguro?</Spanish>
+        <Russian>Вы уверены?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CANCEL_PATCH_DOWNLOAD</Tag>
@@ -7690,6 +7858,7 @@
         <German>Mono</German>
         <Italian>Mono</Italian>
         <Spanish>Mono</Spanish>
+        <Russian>Моно</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTION_SOUND_STEREO</Tag>
@@ -7698,6 +7867,7 @@
         <German>Stereo</German>
         <Italian>Stereo</Italian>
         <Spanish>Estereo</Spanish>
+        <Russian>Стерео</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GLOBELAYER_STRATEGY_DELETE_LINES</Tag>
@@ -8026,6 +8196,7 @@
         <German>Klima :</German>
         <Italian>Clima :</Italian>
         <Spanish>Clima :</Spanish>
+        <Russian>Климат :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_SEALEVEL</Tag>
@@ -8034,6 +8205,7 @@
         <German>Meeresspiegel :</German>
         <Italian>Livello del mare :</Italian>
         <Spanish>Nivel del mar :</Spanish>
+        <Russian>Уровень моря :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INFO_NUM_TURNS</Tag>
@@ -8314,6 +8486,7 @@
         <German>Neues Spiel</German>
         <Italian>Nuova partita</Italian>
         <Spanish>Nueva partida</Spanish>
+        <Russian>Новая игра</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_LOADGAME</Tag>
@@ -8322,6 +8495,7 @@
         <German>Spiel laden</German>
         <Italian>Carica partita</Italian>
         <Spanish>Cargar partida</Spanish>
+        <Russian>Загрузить игру</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_PATCH_AVAILABLE_TITLE</Tag>
@@ -8866,6 +9040,7 @@
         <German>Szenario</German>
         <Italian>Scenario personalizzato</Italian>
         <Spanish>Escenario personalizado</Spanish>
+        <Russian>Пользовательский сценарий</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_MAX_TURN</Tag>
@@ -9010,6 +9185,7 @@
         <German>Gebäude</German>
         <Italian>Edifici</Italian>
         <Spanish>Edificios</Spanish>
+        <Russian>Строения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITS</Tag>
@@ -9018,6 +9194,7 @@
         <German>Einheiten</German>
         <Italian>Unità</Italian>
         <Spanish>Unidades</Spanish>
+        <Russian>Юниты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADERS</Tag>
@@ -9026,6 +9203,7 @@
         <German>Anführer</German>
         <Italian>Leader</Italian>
         <Spanish>Líderes</Spanish>
+        <Russian>Лидеры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DIPLOMACY</Tag>
@@ -9034,6 +9212,7 @@
         <German>Diplomatie</German>
         <Italian>Diplomazia</Italian>
         <Spanish>Diplomacia</Spanish>
+        <Russian>Дипломатия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LANGUAGE_0</Tag>
@@ -9471,6 +9650,7 @@
         <German>Kosten : %d1_cost[ICON_GOLD]</German>
         <Italian>Costo : %d1_cost[ICON_GOLD]</Italian>
         <Spanish>Coste : %d1_cost[ICON_GOLD]</Spanish>
+        <Russian>Стоимость : %d1_cost[ICON_GOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_REPLACED_BY_UNIT</Tag>
@@ -9615,6 +9795,7 @@
         <German>Quests</German>
         <Italian>Imprese</Italian>
         <Spanish>Misiones</Spanish>
+        <Russian>Задачи (Квесты)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ADVANCED_START_PEACE_REMAINING</Tag>
@@ -9663,6 +9844,7 @@
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1]</German>
         <Italian>[BOLD]Strategia :[\BOLD][PARAGRAPH:1]</Italian>
         <Spanish>[BOLD]Estrategia :[\BOLD][PARAGRAPH:1]</Spanish>
+        <Russian>[BOLD]Стратегия :[\BOLD][PARAGRAPH:1]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILOPEDIA_BACKGROUND</Tag>
@@ -9679,6 +9861,7 @@
         <German>Kein Ton</German>
         <Italian>Nessun suono</Italian>
         <Spanish>Sin sonido</Spanish>
+        <Russian>Без звука</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_EFFECTSVOLUME</Tag>
@@ -9687,6 +9870,7 @@
         <German>Effekte</German>
         <Italian>Volume effetti sonori</Italian>
         <Spanish>Volumen de los efectos de sonido</Spanish>
+        <Russian>Эффекты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HALL_OF_FAME_SCREEN_TITLE</Tag>
@@ -9695,6 +9879,7 @@
         <German>Annalen</German>
         <Italian>Categoria dei migliori</Italian>
         <Spanish>Salón de la Fama</Spanish>
+        <Russian>Зал славы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_REGENERATE_MAP</Tag>
@@ -9711,6 +9896,7 @@
         <German>Anfangsmenü</German>
         <Italian>Menu d'apertura</Italian>
         <Spanish>Menú inicial</Spanish>
+        <Russian>Открытие меню</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_AUTOMATE_EXPLORE_HELP</Tag>
@@ -9775,6 +9961,7 @@
         <German>Einzigartige Gebäude</German>
         <Italian>Edifici unici</Italian>
         <Spanish>Edificios exclusivos</Spanish>
+        <Russian>Уникальные строения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_PILLAGE_CHANGE_TEXT</Tag>
@@ -9905,8 +10092,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CC_BORN_SOMEWHERE</Tag>
-        <English>In a distant region, a young sailor is making a name for himself as a capable captian.</English>
+        <English>In a distant region, a young sailor is making a name for himself as a capable captain.</English>
         <German>In einer fernen Gegend macht ein junger Seeman als ein fähiger Kapitän von sich reden.</German>
+        <Russian>Люди говорят, где-то далеко молодой моряк смог стать умелым капитаном.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CC_BORN_FIELD</Tag>
@@ -10072,6 +10260,7 @@
         <German>WTP deaktivieren</German>
         <Italian>Annulla WTP</Italian>
         <Spanish>Descargar WTP</Spanish>
+        <Russian>Выгрузить WtP</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DIPLOMACY_BUSY</Tag>
@@ -10096,6 +10285,7 @@
         <German>Größe ändern</German>
         <Italian>Dimensioni</Italian>
         <Spanish>Tamaño</Spanish>
+        <Russian>Размер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WINDOW_MINIMIZE</Tag>
@@ -10160,6 +10350,7 @@
         <German>Schließen</German>
         <Italian>Chiudi</Italian>
         <Spanish>Close</Spanish>
+        <Russian>Закрыть</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_NOT_UNIQUE_TITLE</Tag>
@@ -10200,6 +10391,7 @@
         <German>Musik</German>
         <Italian>Volume musica</Italian>
         <Spanish>Música</Spanish>
+        <Russian>Музыка</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_SPEECHVOLUME</Tag>
@@ -10208,6 +10400,7 @@
         <German>Sprache</German>
         <Italian>Volume del parlato</Italian>
         <Spanish>Diálogos</Spanish>
+        <Russian>Речь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_AMBIENCEVOLUME</Tag>
@@ -10216,6 +10409,7 @@
         <German>Umgebung</German>
         <Italian>Volume ambientale</Italian>
         <Spanish>Sonido ambiental</Spanish>
+        <Russian>Окружение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_INTERFACEVOLUME</Tag>
@@ -10224,6 +10418,7 @@
         <German>Interface</German>
         <Italian>Volume interfaccia</Italian>
         <Spanish>Interfaz</Spanish>
+        <Russian>Интерфейс</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ALL_WORLD_SIZES</Tag>
@@ -10272,6 +10467,7 @@
         <German>Einstellungen</German>
         <Italian>Impostazioni</Italian>
         <Spanish>Configuración</Spanish>
+        <Russian>Настройки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_FOUNDED_IN</Tag>
@@ -10288,6 +10484,7 @@
         <German>Fraktion</German>
         <Italian>Squad.</Italian>
         <Spanish>Equipo</Spanish>
+        <Russian>Команда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SYSTEM_TEAM</Tag>
@@ -10312,6 +10509,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Команда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_PILLAGE_YIELDS</Tag>
@@ -10349,6 +10547,7 @@
         <German>Kampf-Log</German>
         <Italian>Registro combattimenti</Italian>
         <Spanish>Historial del combate</Spanish>
+        <Russian>Боевой журнал</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_MESSAGE_ODDS</Tag>
@@ -10357,6 +10556,7 @@
         <German>Kampfchancen :</German>
         <Italian>Probabilità di combattimento :</Italian>
         <Spanish>Probabilidades del combate :</Spanish>
+        <Russian>Шансы на победу :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_MESSAGE_HIT</Tag>
