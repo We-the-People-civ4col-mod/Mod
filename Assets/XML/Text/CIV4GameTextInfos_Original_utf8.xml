@@ -7,19 +7,21 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
         <Tag>TXT_KEY_AND</Tag>
-        <English>[SPACE]и[SPACE]</English>
+        <English>[SPACE]and[SPACE]</English>
         <French>[SPACE]et[SPACE]</French>
         <German>[SPACE]und[SPACE]</German>
         <Italian>[SPACE]e[SPACE]</Italian>
         <Spanish>[SPACE]y[SPACE]</Spanish>
+        <Russian>[SPACE]и[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OR</Tag>
-        <English>[SPACE]или[SPACE]</English>
+        <English>[SPACE]or[SPACE]</English>
         <French>[SPACE]ou[SPACE]</French>
         <German>[SPACE]oder[SPACE]</German>
         <Italian>[SPACE]o[SPACE]</Italian>
         <Spanish>[SPACE]o[SPACE]</Spanish>
+        <Russian>[SPACE]или[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NONE</Tag>
