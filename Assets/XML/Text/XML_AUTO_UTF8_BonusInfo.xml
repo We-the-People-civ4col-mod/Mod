@@ -892,8 +892,8 @@
         </German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BONUS_OLIVE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Olive trees[COLOR_REVERT]  grow on[COLOR_REVERT] [LINK=TERRAIN_GRASS]grass[\LINK] terrain.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]]The olive is a small tree originating in the Mediterranean basin. Olives are one of the core ingredients in Mediterranean cuisine. The olive tree has thousands of cultivars..</English>
+        <Tag>TXT_KEY_BONUS_OLIVES_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Olive trees[COLOR_REVERT] grow on[COLOR_REVERT] [LINK=TERRAIN_GRASS]grass[\LINK] terrain.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]]The olive is a small tree originating in the Mediterranean basin. Olives are one of the core ingredients in Mediterranean cuisine. The olive tree has thousands of cultivars..</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Olivenbäume[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1] TODO.</German>
     </TEXT>
     <TEXT>
@@ -1433,7 +1433,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_MAPLE_TREES_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rubber trees[COLOR_REVERT] grow in [LINK=TERRAIN_JUNGLE]jungle[\LINK] terrain</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rubber trees[COLOR_REVERT] grow in [LINK=TERRAIN_JUNGLE]jungle[\LINK] terrain.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kautschukbäume[COLOR_REVERT] TODO</German>
     </TEXT>	
     <TEXT>
