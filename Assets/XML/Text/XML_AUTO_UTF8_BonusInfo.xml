@@ -400,19 +400,19 @@
         <Tag>TXT_KEY_BONUS_CARIBOU</Tag>
         <English>Caribous</English>
         <German>
-            <Text>Caribous</Text>
+            <Text>Caribou</Text>
             <Gender>Neuters</Gender>
             <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CARIBOU_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][PARAGRAPH:1][COLOR_UNIT_TEXT]Caribous[COLOR_REVERT] migrate across tundra and [LINK=FEATURE_FOREST_TUNDRA]taiga[\LINK] in vast herds. They are also found in smaller groups in northern [LINK=FEATURE_LIGHT_FOREST]light forests[\LINK]or in [LINK=FEATURE_FOREST]forests[\LINK].[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The North American range of caribou extends from Alaska through the Yukon, the Northwest Territories and Nunavut into the boreal forest and south through the Canadian Rockies. Porcupine caribou and barren-ground caribou form large herds which undertake lengthy seasonal migrations from birthing grounds to feeding grounds in the tundra and taiga, some of the longest migrations of any mammal. Arctic people depend on caribou for food, clothing, and shelter. Woodland caribou swim high out of the water, unlike any other mammal, because their hollow, air-filled, quill-like hair acts as a supporting life jacket.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][PARAGRAPH:1][COLOR_UNIT_TEXT]Caribou[COLOR_REVERT] migrate across tundra and [LINK=FEATURE_FOREST_TUNDRA]taiga[\LINK] in vast herds. They are also found in smaller groups in northern [LINK=FEATURE_LIGHT_FOREST]light forests[\LINK]or in [LINK=FEATURE_FOREST]forests[\LINK].[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The North American range of caribou extends from Alaska through the Yukon, the Northwest Territories and Nunavut into the boreal forest and south through the Canadian Rockies. Barren-ground caribou form large herds which undertake lengthy seasonal migrations from birthing grounds to feeding grounds in the tundra and taiga, some of the longest migrations of any mammal. Arctic people depend on caribou for food, clothing, and shelter. Woodland caribou swim high out of the water, unlike any other mammal, because their hollow, air-filled, quill-like hair acts as a supporting life jacket.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Caribous[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_MOOSE</Tag>
-        <English>Mooses</English>
+        <English>Moose</English>
         <German>
             <Text>Elche</Text>
             <Gender>Male</Gender>
@@ -421,7 +421,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_MOOSE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_UNIT_TEXT]Mooses[COLOR_REVERT] are solitary, fond of browsing on water plants in ponds and lakes. They are the most dangerous member of the deer family. Moose are found in northern [LINK=FEATURE_LIGHT_FOREST]light forests[\LINK]or in [LINK=FEATURE_FOREST]forests[\LINK], especially near rivers and lakes.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The moose is the largest and heaviest member of the deer family, standing two meters high at the shoulder and weighing up to 700 kilograms. It has distinctive broad palm-shaped antlers. Solitary animals, moose eat aquatic plants. On land they browse. The word "moose" is borrowed from the Algonquian language, first entering English in 1606. Birds, carnivores and rodents eat dropped antlers which are full of protein. In terms of raw numbers, moose attack more people than bears and wolves combined.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_UNIT_TEXT]Moose[COLOR_REVERT] are solitary, fond of browsing on water plants in ponds and lakes. They are the most dangerous member of the deer family. Moose are found in northern [LINK=FEATURE_LIGHT_FOREST]light forests[\LINK]or in [LINK=FEATURE_FOREST]forests[\LINK], especially near rivers and lakes.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The moose is the largest and heaviest member of the deer family, standing two meters high at the shoulder and weighing up to 700 kilograms. It has distinctive broad palm-shaped antlers. Solitary animals, moose eat aquatic plants. On land they browse. The word "moose" is borrowed from the Algonquian language, first entering English in 1606. Birds, carnivores and rodents eat dropped antlers which are full of protein. In terms of raw numbers, moose attack more people than bears and wolves combined.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Elche[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
