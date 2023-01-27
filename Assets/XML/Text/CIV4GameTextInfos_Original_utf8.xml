@@ -175,7 +175,7 @@
         <German>Fortbewegung :</German>
         <Italian>Movimento :</Italian>
         <Spanish>Movimiento :</Spanish>
-        <Russian>Движение :</Russian>
+        <Russian>Очков движения :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_LOAD</Tag>
@@ -949,7 +949,7 @@
         <German>[ICON_BULLET]Erforderlich zum Bau von :[SPACE]</German>
         <Italian>[ICON_BULLET]Necessario per costruire[SPACE]</Italian>
         <Spanish>[ICON_BULLET]Se requiere para construir[SPACE]</Spanish>
-        <Russian>[ICON_BULLET]Для постройки требуется[SPACE]</Russian>
+        <Russian>[ICON_BULLET]Требуется для постройки :[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FREE_START_ERA</Tag>
@@ -2454,7 +2454,7 @@
         <German>Zurück in den Alltag</German>
         <Italian>Vai al desktop</Italian>
         <Spanish>Salir al escritorio</Spanish>
-        <Russian>Выход на Рабочий стол</Russian>
+        <Russian>Выход в Windows</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_EXIT_TO_MAIN_MENU</Tag>
