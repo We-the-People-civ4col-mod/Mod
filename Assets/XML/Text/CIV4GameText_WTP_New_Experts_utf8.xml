@@ -14,6 +14,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный птицевод:Опытные птицеводы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BREEDER</Tag>
@@ -23,6 +24,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный птицевод:Опытные птицеводы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BREEDER_PEDIA</Tag>
@@ -43,6 +45,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный плантатор маниоки:Опытные плантаторы маниоки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CASSAVA_PLANTER</Tag>
@@ -52,6 +55,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный плантатор маниоки:Опытные плантаторы маниоки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CASSAVA_PLANTER_PEDIA</Tag>
@@ -72,6 +76,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный сборщик кошенили:Опытные сборщики кошенили</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR</Tag>
@@ -81,6 +86,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный сборщик кошенили:Опытные сборщики кошенили</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR_PEDIA</Tag>
@@ -101,6 +107,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный плантатор льна:Опытные плантаторы льна</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LINEN_PLANTER</Tag>
@@ -110,6 +117,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный плантатор льна</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LINEN_PLANTER_PEDIA</Tag>
@@ -130,6 +138,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный сборщик кампеша:Опытные сборщики кампеша</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LOGWOOD_COLLECTOR</Tag>
@@ -139,6 +148,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный сборщик кампеша:Опытные сборщики кампеша</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LOGWOOD_COLLECTOR_PEDIA</Tag>
@@ -159,6 +169,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный плантатор оливок:Опытные плантаторы оливок</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OLIVES_PLANTER</Tag>
@@ -168,6 +179,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный плантатор оливок:Опытные плантаторы оливок</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OLIVES_PLANTER_PEDIA</Tag>
@@ -188,6 +200,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный плантатор арахиса:Опытные плантаторы арахиса</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEANUT_PLANTER</Tag>
@@ -197,6 +210,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный плантатор арахиса:Опытные плантаторы арахиса</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEANUT_PLANTER_PEDIA</Tag>
@@ -217,6 +231,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный добытчик торфа и глины:Опытные добытчики торфа и глины</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEAT_CUTTER</Tag>
@@ -226,6 +241,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный добытчик торфа и глины:Опытные добытчики торфа и глины</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEAT_CUTTER_PEDIA</Tag>
@@ -246,6 +262,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный плантатор рапса:Опытные плантаторы рапса</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RAPE_PLANTER</Tag>
@@ -255,6 +272,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный плантатор рапса:Опытные плантаторы рапса</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RAPE_PLANTER_PEDIA</Tag>
@@ -275,6 +293,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный рисовод:Опытные рисоводы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RICE_FARMER</Tag>
@@ -284,6 +303,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный рисовод:Опытные рисоводы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RICE_FARMER_PEDIA</Tag>
@@ -304,6 +324,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный сборщик ванили:Опытные сборщики ванили</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_VANILLA_COLLECTOR</Tag>
@@ -313,6 +334,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный сборщик ванили:Опытные сборщики ванили</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_VANILLA_COLLECTOR_PEDIA</Tag>
@@ -333,6 +355,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный плантатор йерба-матте:Опытные плантаторы йерба-матте</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_PLANTER</Tag>
@@ -342,6 +365,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный плантатор йерба-матте:Опытные плантаторы йерба-матте</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_PLANTER_PEDIA</Tag>
@@ -362,6 +386,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный пастух:Опытные пастухи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HERDER</Tag>
@@ -371,6 +396,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный пастух:Опытные пастухи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HERDER_PEDIA</Tag>
@@ -391,6 +417,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный сборщик кленового сиропа:Опытные сборщики кленового сиропа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR</Tag>
@@ -400,6 +427,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный сборщик кленового сиропа:Опытные сборщики кленового сиропа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR_PEDIA</Tag>
@@ -420,6 +448,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный сборщик каучука:Опытные сборщики каучука</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR</Tag>
@@ -429,6 +458,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный сборщик каучука:Опытные сборщики каучука</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR_PEDIA</Tag>
@@ -449,6 +479,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер кондитер:Мастера кондитеры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONFECTIONER</Tag>
@@ -458,6 +489,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер кондитер:Мастера кондитеры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONFECTIONER_PEDIA</Tag>
@@ -478,6 +510,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер производства хозтоваров:Мастера производства хозтоваров</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HOUSEHOLD_TRADER</Tag>
@@ -487,6 +520,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер производства хозтоваров:Мастера производства хозтоваров</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HOUSEHOLD_TRADER_PEDIA</Tag>
@@ -507,6 +541,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер производства чая:Мастера производства чая</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_TRADER</Tag>
@@ -516,6 +551,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер производства чая:Мастера производства чая</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_TRADER_PEDIA</Tag>
@@ -536,6 +572,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер производства растительного масла:Мастера производства растительного масла</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OIL_TRADER</Tag>
@@ -545,6 +582,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер производства растительного масла:Мастера производства растительного масла</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OIL_TRADER_PEDIA</Tag>
@@ -565,6 +603,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный сборщик фруктов:Опытные сборщики фруктов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FRUITS_PICKER</Tag>
@@ -574,6 +613,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный сборщик фруктов:Опытные сборщики фруктов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FRUITS_PICKER_PEDIA</Tag>
@@ -594,6 +634,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер забоя птицы:Мастера забоя птицы </Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POULTRY_BUTCHER</Tag>
@@ -603,6 +644,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер забоя птицы:Мастера забоя птицы </Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POULTRY_BUTCHER_PEDIA</Tag>
@@ -623,6 +665,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный угольщик:Опытные угольщики</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COAL_MINER</Tag>
@@ -632,6 +675,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытный угольщик:Опытные угольщики</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COAL_MINER_PEDIA</Tag>
@@ -652,6 +696,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер кожевник:Мастера кожевники</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LEATHER_TAYLOR</Tag>
@@ -661,6 +706,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер кожевник:Мастера кожевники</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LEATHER_TAYLOR_PEDIA</Tag>
@@ -681,6 +727,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер портной:Мастера портные</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CLOTH_TAYLOR</Tag>
@@ -690,6 +737,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер портной:Мастера портные</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CLOTH_TAYLOR_PEDIA</Tag>
@@ -710,6 +758,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер обжарки:Мастера обжарки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROASTER</Tag>
@@ -719,6 +768,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер обжарки:Мастера обжарки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROASTER_PEDIA</Tag>
@@ -741,6 +791,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер гончар:Мастера гончары</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POTTER</Tag>
@@ -750,6 +801,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер гончар:Мастера гончары</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POTTER_PEDIA</Tag>
@@ -770,6 +822,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытная доярка:Опытные доярки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MILK_MAID</Tag>
@@ -779,6 +832,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Опытная доярка:Опытные доярки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MILK_MAID_PEDIA</Tag>
@@ -799,6 +853,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер сыровар:Мастера сыровары</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHEESE_MAKER</Tag>
@@ -808,6 +863,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер сыровар:Мастера сыровары</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHEESE_MAKER_PEDIA</Tag>
@@ -828,6 +884,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер обжига древесного угля:Мастера обжига древесного угля</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHARCOAL_BURNER</Tag>
@@ -837,6 +894,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер обжига древесного угля:Мастера обжига древесного угля</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHARCOAL_BURNER_PEDIA</Tag>
@@ -857,6 +915,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер пекарь:Мастера пекари</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BAKER</Tag>
@@ -866,6 +925,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер пекарь:Мастера пекари</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BAKER_PEDIA</Tag>
@@ -886,6 +946,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер производства пороха:Мастера производства пороха</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FIREWORKER</Tag>
@@ -895,6 +956,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастер производства пороха:Мастера производства пороха</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FIREWORKER_PEDIA</Tag>
@@ -915,6 +977,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Метис:Метисы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MESTIZZO</Tag>
@@ -924,6 +987,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Метис:Метисы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MESTIZZO_PEDIA</Tag>
@@ -944,6 +1008,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мулат:Мулаты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MULATTO</Tag>
@@ -953,6 +1018,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мулат:Мулаты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MULATTO_PEDIA</Tag>
@@ -973,6 +1039,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Строительные материалы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES</Tag>
@@ -982,6 +1049,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Строительные материалы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES_PEDIA</Tag>
@@ -1002,6 +1070,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Храбрый Лейтенант:Храбрые Лейтенанты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BRAVE_LIEUTENANT</Tag>
@@ -1011,6 +1080,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Храбрый Лейтенант:Храбрые Лейтенанты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BRAVE_LIEUTENANT_PEDIA</Tag>
@@ -1031,6 +1101,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Умелый Капитан:Умелые Капитаны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN</Tag>
@@ -1040,6 +1111,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Умелый Капитан:Умелые Капитаны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN_PEDIA</Tag>
@@ -1060,6 +1132,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Известная актриса:Известные актрисы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ENTERTAINER</Tag>
@@ -1069,6 +1142,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Известная актриса:Известные актрисы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ENTERTAINER_PEDIA</Tag>
@@ -1089,6 +1163,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Соблазнительная блудница:Соблазнительные блудницы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HARLOT</Tag>
@@ -1098,6 +1173,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Соблазнительная блудница:Соблазнительные блудницы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HARLOT_PEDIA</Tag>
@@ -1118,6 +1194,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Заслуженный судья:Заслуженные судьи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_JUDGE</Tag>
@@ -1127,6 +1204,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Заслуженный судья:Заслуженные судьи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_JUDGE_PEDIA</Tag>
