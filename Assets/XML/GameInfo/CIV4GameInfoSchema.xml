@@ -203,7 +203,7 @@
 	<ElementType name="iAIUnitUpgradePercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iAIHurryPercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iAIImmigration" content="textOnly" dt:type="int"/>
-	<ElementType name="iAIMinimumStorageLossSellPercentage" content="textOnly" dt:type="int"/><!-- AI cheat! The percentage of the price in europe, at which the AI can sell a cities loss from the storage right away, without the need of buildings (see iStorageLossSellPercentage in buildings schema). -->
+	<ElementType name="iAIMinimumStorageLossSellPercentage" content="textOnly" dt:type="int"/> <!-- AI cheat! The percentage of the price in europe, at which the AI can sell a cities loss from the storage right away, without the need of buildings (see iStorageLossSellPercentage in buildings schema). -->
 	<ElementType name="iAIMaxTaxrate" content="textOnly" dt:type="int"/>
 	<ElementType name="iAIExtraTradePercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iAIPerEraModifier" content="textOnly" dt:type="int"/>

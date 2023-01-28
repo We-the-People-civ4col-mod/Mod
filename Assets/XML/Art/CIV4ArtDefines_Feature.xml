@@ -294,7 +294,7 @@
                         <ModelFile>Art/Terrain/Features/shrub/strauch_03.nif</ModelFile>
                         <ModelFile>Art/Terrain/Features/shrub/strauch_04.nif</ModelFile>
                         <ModelFile>Art/Terrain/Features/shrub/strauch_05.nif</ModelFile>
-                        <Connections></Connections>
+                        <Connections/>
                     </FeatureArtPiece>
                 </FeatureArtPieces>
                 <iModelCopies>7</iModelCopies>
@@ -1248,7 +1248,7 @@
                     <FeatureArtPiece>
                         <ModelFile>Art/Terrain/Features/Coral_Rock/Coral1.nif</ModelFile>
                         <ModelFile>Art/Terrain/Features/Coral_Rock/Coral2.nif</ModelFile>
-                        <Connections></Connections>
+                        <Connections/>
                     </FeatureArtPiece>
                 </FeatureArtPieces>
                 <iModelCopies>1</iModelCopies>
