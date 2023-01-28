@@ -29318,6 +29318,72 @@
 			<iGenericParameter4>1</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
+			<Type>EVENT_EUROPE_TRADE_QUEST_LUMBER_DONE_7</Type>
+			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_7</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClass>
+			<iNumFreeUnits>8</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_EUROPE_TRADE_QUEST_LUMBER_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneEuropeTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_LUMBER</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>1</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_SUGAR_START</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_START</Description>
 			<LocalInfoText/>
@@ -34734,6 +34800,72 @@
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
 			<UnitClass>UNITCLASS_INDENTURED_SERVANT</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_EUROPE_TRADE_QUEST_PREMIUM_FUR_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneEuropeTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>5000</iGenericParameter1>
+			<iGenericParameter2>YIELD_PREMIUM_FUR</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>1</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_EUROPE_TRADE_QUEST_PREMIUM_FUR_DONE_4</Type>
+			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_4</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_TRAPPER</UnitClass>
 			<iNumFreeUnits>4</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -41472,11 +41604,143 @@
 			<iGenericParameter1>5000</iGenericParameter1>
 			<iGenericParameter2>YIELD_WOOL_CLOTH</iGenericParameter2>
 			<iGenericParameter3>1</iGenericParameter3>
-			<iGenericParameter4>0</iGenericParameter4>
+			<iGenericParameter4>1</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_WOOL_CLOTH_DONE_2</Type>
-			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
+			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_2</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_CRIMINAL</UnitClass>
+			<iNumFreeUnits>8</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_EUROPE_TRADE_QUEST_WOOL_CLOTH_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneEuropeTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>5000</iGenericParameter1>
+			<iGenericParameter2>YIELD_WOOL_CLOTH</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_EUROPE_TRADE_QUEST_WOOL_CLOTH_DONE_3</Type>
+			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_3</Description>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_INDENTURED_SERVANT</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields/>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields/>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_EUROPE_TRADE_QUEST_WOOL_CLOTH_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDoneEuropeTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
+			<PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>5000</iGenericParameter1>
+			<iGenericParameter2>YIELD_WOOL_CLOTH</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_EUROPE_TRADE_QUEST_WOOL_CLOTH_DONE_4</Type>
+			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_4</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -41493,7 +41757,7 @@
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
 			<UnitClass>UNITCLASS_WEAVER</UnitClass>
-			<iNumFreeUnits>1</iNumFreeUnits>
+			<iNumFreeUnits>2</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
@@ -41665,7 +41929,7 @@
 			<iGenericParameter1>5000</iGenericParameter1>
 			<iGenericParameter2>YIELD_CLOTH</iGenericParameter2>
 			<iGenericParameter3>1</iGenericParameter3>
-			<iGenericParameter4>1</iGenericParameter4>
+			<iGenericParameter4>-2</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_CLOTH_DONE_2</Type>
@@ -44984,8 +45248,8 @@
 			<iGenericParameter4>1</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
-			<Type>EVENT_EUROPE_TRADE_QUEST_BEER_DONE_4</Type>
-			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_4</Description>
+			<Type>EVENT_EUROPE_TRADE_QUEST_BEER_DONE_3</Type>
+			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_3</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -45001,7 +45265,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<UnitClass>UNITCLASS_BREWER</UnitClass>
+			<UnitClass>UNITCLASS_INDENTURED_SERVANT</UnitClass>
 			<iNumFreeUnits>2</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -45050,8 +45314,8 @@
 			<iGenericParameter4>1</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
-			<Type>EVENT_EUROPE_TRADE_QUEST_BEER_DONE_3</Type>
-			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_3</Description>
+			<Type>EVENT_EUROPE_TRADE_QUEST_BEER_DONE_4</Type>
+			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_4</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -45067,7 +45331,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<UnitClass>UNITCLASS_INDENTURED_SERVANT</UnitClass>
+			<UnitClass>UNITCLASS_BREWER</UnitClass>
 			<iNumFreeUnits>4</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -45178,7 +45442,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_LUXURY_GOODS_DONE_1</Type>
-			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
+			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_1</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
@@ -45240,11 +45504,11 @@
 			<iGenericParameter1>2000</iGenericParameter1>
 			<iGenericParameter2>YIELD_LUXURY_GOODS</iGenericParameter2>
 			<iGenericParameter3>1</iGenericParameter3>
-			<iGenericParameter4>0</iGenericParameter4>
+			<iGenericParameter4>-2</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
-			<Type>EVENT_EUROPE_TRADE_QUEST_LUXURY_GOODS_DONE_2</Type>
-			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
+			<Type>EVENT_EUROPE_TRADE_QUEST_LUXURY_GOODS_DONE_4</Type>
+			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_4</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
