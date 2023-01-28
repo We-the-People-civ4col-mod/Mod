@@ -208,8 +208,8 @@
 	</ElementType>
 	<ElementType name="eUnitClass" content="textOnly"/>
 	<ElementType name="AIUnitClassWeight" content="eltOnly">
-		<element type="eUnitClass" />
-		<element type="iWeight" />
+		<element type="eUnitClass"/>
+		<element type="iWeight"/>
 	</ElementType>
 	<ElementType name="AIUnitClassWeights" content="eltOnly">
 		<element type="AIUnitClassWeight" minOccurs="0" maxOccurs="*"/>
