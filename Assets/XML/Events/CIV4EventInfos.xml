@@ -45900,7 +45900,7 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_CLAY_START</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_START</Description>
-			<LocalInfoTex/>
+			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_CLAY_FAILED</QuestFailText>
@@ -45961,7 +45961,7 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_CLAY_DONE_1</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_1</Description>
-			<LocalInfoTex/>
+			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
 			<QuestFailText/>
@@ -46027,7 +46027,7 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_CLAY_DONE_2</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_2</Description>
-			<LocalInfoTex/>
+			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
 			<QuestFailText/>
@@ -46093,7 +46093,7 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_CLAY_DONE_3</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_3</Description>
-			<LocalInfoTex/>
+			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
 			<QuestFailText/>
@@ -46159,7 +46159,7 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_CLAY_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_4</Description>
-			<LocalInfoTex/>
+			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
 			<QuestFailText/>
@@ -46225,7 +46225,7 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_CLAY_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoTex/>
+			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
 			<QuestFailText/>
@@ -46352,7 +46352,7 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_PEAT_DONE_1</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_1</Description>
-			<LocalInfoTex/>
+			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
 			<QuestFailText/>
@@ -46418,7 +46418,7 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_PEAT_DONE_2</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_2</Description>
-			<LocalInfoTex/>
+			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
 			<QuestFailText/>
@@ -46484,7 +46484,7 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_PEAT_DONE_3</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_3</Description>
-			<LocalInfoTex/>
+			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
 			<QuestFailText/>
@@ -46550,7 +46550,7 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_PEAT_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_4</Description>
-			<LocalInfoTex/>
+			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
 			<QuestFailText/>
@@ -46616,7 +46616,7 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_PEAT_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoTex/>
+			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
 			<QuestFailText/>
@@ -46743,7 +46743,7 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_RICE_DONE_1</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_1</Description>
-			<LocalInfoTex/>
+			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
 			<QuestFailText/>
@@ -46809,7 +46809,7 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_RICE_DONE_2</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_2</Description>
-			<LocalInfoTex/>
+			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
 			<QuestFailText/>
@@ -46875,7 +46875,7 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_RICE_DONE_3</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_3</Description>
-			<LocalInfoTex/>
+			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
 			<QuestFailText/>
@@ -46941,7 +46941,7 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_RICE_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_4</Description>
-			<LocalInfoTex/>
+			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
 			<QuestFailText/>
@@ -47068,7 +47068,7 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_CASSAVA_DONE_1</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_1</Description>
-			<LocalInfoTex/>
+			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
 			<QuestFailText/>
@@ -47134,7 +47134,7 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_CASSAVA_DONE_2</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_2</Description>
-			<LocalInfoTex/>
+			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
 			<QuestFailText/>
@@ -47200,7 +47200,7 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_CASSAVA_DONE_3</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_3</Description>
-			<LocalInfoTex/>
+			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
 			<QuestFailText/>
@@ -47266,7 +47266,7 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_CASSAVA_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_4</Description>
-			<LocalInfoTex/>
+			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
 			<QuestFailText/>
