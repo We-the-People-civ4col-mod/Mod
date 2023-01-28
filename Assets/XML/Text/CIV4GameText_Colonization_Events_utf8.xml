@@ -5023,6 +5023,131 @@
         <English>Milord, in accordance with His Majesty's command we now dominate trading in European [COLOR_FONT_GOLD]luxury goods[COLOR_REVERT]. His Majesty is in a generous mood and wants to reward us.</English>
         <German>Milord, es ist uns gelungen, die Befehle Ihrer Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Luxusgütern[COLOR_REVERT] aus Europa geworden. Seine Majestät will uns dafür belohnen.</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_TRADE_GOODS_START</Tag>
+        <English>The race is on to be the market leader for [COLOR_FONT_GOLD]trading goods[COLOR_REVERT] in the colonies.</English>
+        <German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Tand[COLOR_REVERT] aus Europa hat begonnen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_TRADE_GOODS_START</Tag>
+        <English>His Majesty and His subjects in Europe ship European [COLOR_FONT_GOLD]trading goods[COLOR_REVERT] to the colonies. His Majesty thus orders you to increase to the utmost the sale of luxury goods.</English>
+        <German>Seine Majestät und die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Tand[COLOR_REVERT] aus Europa in den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_TRADE_GOODS_FAILED</Tag>
+        <English>Milord, another colonial nation now dominates the [COLOR_FONT_GOLD]trading goods[COLOR_REVERT] market.</English>
+        <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Tand[COLOR_REVERT] aus Europa zu beherrschen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_TRADE_GOODS_DONE</Tag>
+        <English>Milord, we now have the largest market for European [COLOR_FONT_GOLD]trading goods[COLOR_REVERT].</English>
+        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Tand[COLOR_REVERT] aus Europa zu werden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_TRADE_GOODS_DONE</Tag>
+        <English>Milord, in accordance with His Majesty's command we now dominate trading in European [COLOR_FONT_GOLD]trading goods[COLOR_REVERT]. His Majesty is in a generous mood and wants to reward us.</English>
+        <German>Milord, es ist uns gelungen, die Befehle Ihrer Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Tand[COLOR_REVERT] aus Europa geworden. Seine Majestät will uns dafür belohnen.</German>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CLAY_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]clay[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CLAY_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]clay[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CLAY_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]clay[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_CLAY_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]clay[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CLAY_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]clay[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PEAT_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]peat[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Torf[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PEAT_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]peat[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Torf[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PEAT_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]peat[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Torf[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_PEAT_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]peat[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Torf[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PEAT_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]peat[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Torf[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_RICE_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]rice[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_RICE_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]rice[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_RICE_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]rice[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_RICE_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]rice[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Reis[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_RICE_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]rice[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Reis[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CASSAVA_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]cassava[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CASSAVA_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]cassava[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CASSAVA_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]cassava[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_CASSAVA_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]cassava[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CASSAVA_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]cassava[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
 	<TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLADES_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] from Port Royal has begun.</English>
