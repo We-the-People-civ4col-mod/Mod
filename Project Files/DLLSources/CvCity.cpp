@@ -524,10 +524,15 @@ void CvCity::doTurn()
 	const bool bAllowNoProduction = !doCheckProduction();
 
 	doSpecialists();
-	doYields();
-	doGrowth();
-	doCulture();
-	doPlotCulture(false, getOwnerINLINE(), getCultureRate());
+
+	if (!isDisorder())
+	{
+		doYields();
+		doGrowth();
+		doCulture();
+		doPlotCulture(false, getOwnerINLINE(), getCultureRate());
+		doProduction(bAllowNoProduction);
+	}
 	
 	if (!m_bHasHurried && !isHuman() && !isNative())
 	{
@@ -535,8 +540,6 @@ void CvCity::doTurn()
 		// the hurried yields from being used for other purposes
 		static_cast<CvCityAI*>(this)->AI_doHurry();
 	}
-	
-	doProduction(bAllowNoProduction);
 	
 	if (!isNative())
 	{
