@@ -58,7 +58,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BARLEY_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Barley[COLOR_REVERT] grows on flat [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain that is either open or overgrown by [LINK=FEATURE_LIGHT_FOREST]light forest[\LINK]. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Barley[COLOR_REVERT] is one of the oldest types of corn humanity knows. It is not as good for flour as wheat, for example, but is very well suited for making [COLOR_HIGHLIGHT_TEXT]beer[COLOR_REVERT].</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Barley[COLOR_REVERT] grows on flat [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain that is either open or overgrown by [LINK=FEATURE_LIGHT_FOREST]light forest[\LINK]. It can be used for beer and baked goods. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Barley[COLOR_REVERT] is one of the oldest types of corn humanity knows. It is not as good for flour as wheat, for example, but is very well suited for making [COLOR_HIGHLIGHT_TEXT]beer[COLOR_REVERT].</English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]L'orge commune (Hordeum vulgare) est une céréale à paille, plante herbacée annuelle de la famille des poacées. Elle est la plus ancienne céréale cultivée.[réf. nécessaire] Bien adaptée au climat méditerranéen du fait de sa rusticité, elle constituait ainsi la principale céréale cultivée dans l'Antiquité grecque et était consommée sous forme de galette ou de bouillie (maza). L'orge pousse aussi bien sous les tropiques qu'à 4 500 m d'altitude au Tibet.</French>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Gerste[COLOR_REVERT] wächst in hügeligem [LINK=TERRAIN_GRASS]Grasland[\LINK]. Gelegentlich können besonders gute Anbaugebiete für Gerste auch von [LINK=FEATURE_FOREST]Wald[\LINK] oder [LINK=FEATURE_LIGHT_FOREST]Buschland[\LINK] überwachsen sein.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Gerste[COLOR_REVERT] ist eine der ältesten Getreidesorten, die die Menschheit kennt. Bezüglich des Stärkegehalts und der Mehlerzeugung ist sie nicht so ergiebig, wie andere Getreidesorten, so zum Beispiel Weizen, aber sie eignet sich hervorragend zur Herstellung von Bier.</German>
     </TEXT>
@@ -73,7 +73,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_WHEAT_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT] grows on flat [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_PLAINS_FERTILE]plains[\LINK] terrain that is either open or overgrown by [LINK=FEATURE_LIGHT_FOREST]light forest[\LINK]. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT] is one of the oldest types of corn humanity knows. It is commonly the most used plant for making flour.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT] grows on flat [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_PLAINS_FERTILE]plains[\LINK] terrain that is either open or overgrown by [LINK=FEATURE_LIGHT_FOREST]light forest[\LINK]. It can be used for baked goods.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT] is one of the oldest types of corn humanity knows. It is commonly the most used plant for making flour.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Weizen[COLOR_REVERT] wächst in hügeligem [LINK=TERRAIN_GRASS]Grasland[\LINK] und [LINK=TERRAIN_PLAINS_FERTILE]fruchtbaren Ebenen[\LINK]. Gelegentlich können besonders gute Anbaugebiete für Gerste auch von [LINK=FEATURE_FOREST]Wald[\LINK] oder [LINK=FEATURE_LIGHT_FOREST]Buschland[\LINK] überwachsen sein.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Weizen[COLOR_REVERT] ist eine der ältesten Getreidesorten, die die Menschheit kennt. Bezüglich des Stärkegehalts zur Mehlerzeugung ist sie Weizen die ergiebigste Getreidesorte.</German>
     </TEXT>
     <TEXT>
@@ -135,7 +135,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HARDWOOD_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hardwood[COLOR_REVERT] TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hardwood[COLOR_REVERT]] is found in broad-leaved temperate and tropical forests. Tropical hardwoods like mahogany, are valued for furniture. Teak, while not native, can be grown in the Caribbean and is important in ship-building.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hartholz[COLOR_REVERT] TODO</German>
     </TEXT>	
     <TEXT>
@@ -197,7 +197,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_YERBA_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_UNIT_TEXT]Yerba plants[COLOR_REVERT] TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]]The leaves of [COLOR_UNIT_TEXT]yerba plants[COLOR_REVERT] are steeped in hot water to make a caffeinated beverage: yerba mate. Brewed cold, it is used to make tereré. The Guaraní and Tupí cultivated yerba mate prior to European colonization.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Yerbapflanzen[COLOR_REVERT] </German>
     </TEXT>	
     <TEXT>
@@ -398,7 +398,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CARIBOU</Tag>
-        <English>Caribous</English>
+        <English>Caribou</English>
         <German>
             <Text>Caribou</Text>
             <Gender>Neuters</Gender>
@@ -673,7 +673,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_DOMESTIC_GOOSE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Domestic Geese[COLOR_REVERT] TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Geese[COLOR_REVERT] are the fastest growers among domestic birds. They're hardy and disease free when given constant care. Geese can be brought up on green pasture, which lowers production cost substantially.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hausgänse[COLOR_REVERT] TODO</German>
     </TEXT>
     <TEXT>
@@ -802,7 +802,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_GIANT_TREE</Tag>
-        <English>Giant trees</English>
+        <English>Giant Trees</English>
         <French>Acajou</French>
         <German>
             <Text>Urwaldriesen</Text>
@@ -907,7 +907,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_RAPE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rapeseed plants grow on[COLOR_REVERT] [LINK=TERRAIN_GRASS]grass[\LINK] terrain.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Rapeseed with its bright yellow flowers is cultivated mainly for its oil-rich seed, which has appreciable amounts of erucic acid. Rapeseed meal, left after the oil is extracted, is a high-protein animal feed..</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rapeseed grows on[COLOR_REVERT] [LINK=TERRAIN_GRASS]grass[\LINK] terrain.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Rapeseed with its bright yellow flowers is cultivated mainly for its oil-rich seed, which has appreciable amounts of erucic acid. Rapeseed meal, left after the oil is extracted, is a high-protein animal feed..</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rapspflanzen[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1] TODO.</German>
     </TEXT>
     <TEXT>
@@ -951,7 +951,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_FLAX_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Flax plants[COLOR_REVERT] grow on flat [LINK=TERRAIN_GRASS]grass[\LINK] terrain that is either open or overgrown by [LINK=FEATURE_FOREST]forest[\LINK] or [LINK=FEATURE_LIGHT_FOREST]light forest[\LINK]. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Flax, also known as common flax or linseed, is a flowering plant and cultivated as a food and fiber crop in regions of the world with temperate climates. Textiles made from flax are known in Western countries as linen and are traditionally used for bed sheets, underclothes, and table linen. Its oil is known as linseed oil. In addition to referring to the plant, the word "flax" may refer to the unspun fibers of the flax plant. The plant species is known only as a cultivated plant and appears to have been domesticated just once from the wild species Linum bienne, called pale flax.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Flax plants[COLOR_REVERT] grow on flat [LINK=TERRAIN_GRASS]grass[\LINK] terrain that is either open or overgrown by [LINK=FEATURE_FOREST]forest[\LINK] or [LINK=FEATURE_LIGHT_FOREST]light forest[\LINK]. It can be used for sails or to braid rope.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Flax, also known as common flax or linseed, is a flowering plant and cultivated as a food and fiber crop in regions of the world with temperate climates. Textiles made from flax are known in Western countries as linen and are traditionally used for bed sheets, underclothes, and table linen. Its oil is known as linseed oil. In addition to referring to the plant, the word "flax" may refer to the unspun fibers of the flax plant. The plant species is known only as a cultivated plant and appears to have been domesticated just once from the wild species Linum bienne, called pale flax.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Flachs[COLOR_REVERT] wächst im flachem [LINK=TERRAIN_GRASS]Grasland[\LINK]. Gelegentlich können besonders gute Anbaugebiete für Hanf auch von [LINK=FEATURE_FOREST]Wald[\LINK] oder [LINK=FEATURE_LIGHT_FOREST]Buschland[\LINK] überwachsen sein.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Gemeiner Lein (Linum usitatissimum), auch Saat-Lein und Flachs genannt, ist eine alte Kulturpflanze, die zur Faser- (Faserlein) und zur Ölgewinnung (Öllein, Leinsamen, Leinöl) angebaut wird. Er ist eine Art aus der Gattung Lein (Linum) in der Familie der Leingewächse (Linaceae) und die einzige Lein-Art, deren Anbau eine wirtschaftliche Bedeutung hat. Es gibt etliche Sorten. In der Praxis wird nach der Hauptverwendung Faserlein und Öllein unterschieden.</German>
     </TEXT>	
     <TEXT>
@@ -1101,7 +1101,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BLOODWOOD_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bloodwood Trees[COLOR_REVERT] TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bloodwood trees[COLOR_REVERT]produce a versatile dye, used for both textiles and paper. It can also be used as a pH indicator, yellow-reddish under acidic conditions and purple when alkaline. The bark and leaves are also used in various medical applications.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Blutholzbäume[COLOR_REVERT] TODO</German>
     </TEXT>	
     <TEXT>
@@ -1419,7 +1419,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_MAPLE_TREES_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Maple Trees[COLOR_REVERT] TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]Maple syrup comes from [COLOR_HIGHLIGHT_TEXT]maple trees[COLOR_REVERT] which grow in north temperate regions. In spring when sap starts to flow in the maple forests, tappers hammer spouts through the bark and collect a thin fluid that's then distilled over a slow fire into a rich thick syrup. It can also be poured on snow to make maple sugar.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ahornbäume[COLOR_REVERT] TODO</German>
     </TEXT>
 	<TEXT>
@@ -1432,13 +1432,13 @@
         </German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BONUS_MAPLE_TREES_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rubber trees[COLOR_REVERT] grow in [LINK=TERRAIN_JUNGLE]jungle[\LINK] terrain.</English>
+        <Tag>TXT_KEY_BONUS_KAUTSCHUK_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rubber trees[COLOR_REVERT] grow in [LINK=TERRAIN_JUNGLE]jungle[\LINK] terrain. Rubber has a large stretch ratio, high resilience and is also water-proof. It's classified as an elastomer.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kautschukbäume[COLOR_REVERT] TODO</German>
     </TEXT>	
     <TEXT>
         <Tag>TXT_KEY_BONUS_SALT</Tag>
-        <English>Salt deposits</English>
+        <English>Salt Deposits</English>
         <French>
             <Text>Gisement de sel</Text>
             <Gender>Male</Gender>
@@ -1470,7 +1470,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CACTUS</Tag>
-        <English>Cactus trees</English>
+        <English>Cactus Trees</English>
         <French>
             <Text>Cactus</Text>
             <Gender>Male</Gender>
@@ -1679,7 +1679,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CLAY_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Clay[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1] TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Clay[COLOR_REVERT] develops plasticity when wet, due to a molecular film of water surrounding the clay particles, but becomes hard, brittle and non-plastic upon drying or firing. Clay can be used as a building material, providing smooth interior walls for the town hall and its upgrades.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Clay is the oldest known ceramic material. Prehistoric humans used it for making pottery. Early pottery shards have been dated to 14,000 BC, and clay tablets are the first known writing medium.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Lehm[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1] TODO</German>
     </TEXT>
 	<TEXT>
@@ -1693,7 +1693,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_COAL_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Coal[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1] TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Coal[COLOR_REVERT] is formed when dead plant matter decays into peat and is converted by the heat and pressure of deep burial over millions of years. For most of colonial times coal is used for heating, not for industry. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]In 1709 in Coalbrookdale, England, Adam Darby begins using coal instead of charcoal as a way to smelt pig iron cheaply because of coal's much greater energy intensity. It's the start of the Industrial Revolution.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kohle[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1] TODO</German>
     </TEXT>
 	<TEXT>
@@ -1707,7 +1707,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PEAT_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Peat[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1] TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A swamp dries and over centuries turns into a [COLOR_HIGHLIGHT_TEXT]peat[COLOR_REVERT] bog, which offers cheap fuel where wood and coal aren't available. Peat cutters don't need much equipment to do their work, just a cutter and a hod to carry chunks of peat on their back.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Peat is a peasant fuel, warming the poor and slaves at low or no cost. Peat is the world's most efficient carbon sink, storing 42% of all soil carbon, more than all other vegetation types, including the world's forests. It's not renewable.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Torf[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1] TODO</German>
     </TEXT>
 	<TEXT>
@@ -1721,7 +1721,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_VANILLA_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Vanilla[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1] TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Vanilla[COLOR_REVERT] is a spice derived from orchids. There are three major species, all derived from the original Mexican plant. It can be pollinated by hand to produce the vanilla bean.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1] Vanilla is one of the two most popular flavours for sweet treats, the other being chocolate. It's used in candy, baking and liqueurs, all of which would be familiar to monks in colonial missions.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Vanille[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1] TODO</German>
     </TEXT>	
     <TEXT>
@@ -1878,7 +1878,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PENGUIN</Tag>
-        <English>Penguin</English>
+        <English>Penguins</English>
         <German>
             <Text>Pinguine</Text>
             <Gender>Male</Gender>
@@ -1892,7 +1892,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_WHALE</Tag>
-        <English>Sperm whales</English>
+        <English>Sperm Whales</English>
         <French>
             <Text>Cachalots</Text>
             <Gender>Female</Gender>
