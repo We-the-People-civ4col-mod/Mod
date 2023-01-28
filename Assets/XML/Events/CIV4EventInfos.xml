@@ -45900,9 +45900,9 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_CLAY_START</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_START</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
+			<LocalInfoTex/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_CLAY_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -45920,13 +45920,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -45939,17 +45939,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
-			<ClearEvents></ClearEvents>
-			<PythonCallback></PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartEuropeTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -45961,10 +45961,10 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_CLAY_DONE_1</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_1</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoTex/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -45981,13 +45981,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46000,13 +46000,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_EUROPE_TRADE_QUEST_CLAY_START</Event>
@@ -46014,8 +46014,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDoneEuropeTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46027,10 +46027,10 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_CLAY_DONE_2</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_2</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoTex/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46047,13 +46047,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46066,13 +46066,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_EUROPE_TRADE_QUEST_CLAY_START</Event>
@@ -46080,8 +46080,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDoneEuropeTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46093,10 +46093,10 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_CLAY_DONE_3</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_3</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoTex/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46113,13 +46113,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46132,13 +46132,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_EUROPE_TRADE_QUEST_CLAY_START</Event>
@@ -46146,8 +46146,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDoneEuropeTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46159,10 +46159,10 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_CLAY_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_4</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoTex/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46179,13 +46179,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46198,13 +46198,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_EUROPE_TRADE_QUEST_CLAY_START</Event>
@@ -46212,8 +46212,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDoneEuropeTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46225,10 +46225,10 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_CLAY_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoTex/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46245,13 +46245,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46264,13 +46264,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_EUROPE_TRADE_QUEST_CLAY_START</Event>
@@ -46278,8 +46278,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDoneEuropeTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46352,10 +46352,10 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_PEAT_DONE_1</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_1</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoTex/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46372,13 +46372,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46391,13 +46391,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_EUROPE_TRADE_QUEST_PEAT_START</Event>
@@ -46405,8 +46405,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDoneEuropeTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46418,10 +46418,10 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_PEAT_DONE_2</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_2</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoTex/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46438,13 +46438,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46457,13 +46457,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_EUROPE_TRADE_QUEST_PEAT_START</Event>
@@ -46471,8 +46471,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDoneEuropeTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46484,10 +46484,10 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_PEAT_DONE_3</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_3</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoTex/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46504,13 +46504,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46523,13 +46523,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_EUROPE_TRADE_QUEST_PEAT_START</Event>
@@ -46537,8 +46537,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDoneEuropeTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46550,10 +46550,10 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_PEAT_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_4</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoTex/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46570,13 +46570,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46589,13 +46589,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_EUROPE_TRADE_QUEST_PEAT_START</Event>
@@ -46603,8 +46603,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDoneEuropeTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46616,10 +46616,10 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_PEAT_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoTex/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46636,13 +46636,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46655,13 +46655,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_EUROPE_TRADE_QUEST_PEAT_START</Event>
@@ -46669,8 +46669,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDoneEuropeTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46743,10 +46743,10 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_RICE_DONE_1</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_1</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoTex/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46763,13 +46763,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46782,13 +46782,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_EUROPE_TRADE_QUEST_RICE_START</Event>
@@ -46796,8 +46796,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDoneEuropeTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46809,10 +46809,10 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_RICE_DONE_2</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_2</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoTex/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46829,13 +46829,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46848,13 +46848,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_EUROPE_TRADE_QUEST_RICE_START</Event>
@@ -46862,8 +46862,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDoneEuropeTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46875,10 +46875,10 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_RICE_DONE_3</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_3</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoTex/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46895,13 +46895,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46914,13 +46914,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_EUROPE_TRADE_QUEST_RICE_START</Event>
@@ -46928,8 +46928,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDoneEuropeTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46941,10 +46941,10 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_RICE_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_4</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoTex/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46961,13 +46961,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46980,13 +46980,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_EUROPE_TRADE_QUEST_RICE_START</Event>
@@ -46994,8 +46994,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDoneEuropeTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -47068,10 +47068,10 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_CASSAVA_DONE_1</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_1</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoTex/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -47088,13 +47088,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -47107,13 +47107,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_EUROPE_TRADE_QUEST_CASSAVA_START</Event>
@@ -47121,8 +47121,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDoneEuropeTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -47134,10 +47134,10 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_CASSAVA_DONE_2</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_2</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoTex/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -47154,13 +47154,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -47173,13 +47173,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_EUROPE_TRADE_QUEST_CASSAVA_START</Event>
@@ -47187,8 +47187,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDoneEuropeTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -47200,10 +47200,10 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_CASSAVA_DONE_3</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_3</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoTex/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -47220,13 +47220,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -47239,13 +47239,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_EUROPE_TRADE_QUEST_CASSAVA_START</Event>
@@ -47253,8 +47253,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDoneEuropeTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -47266,10 +47266,10 @@
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_CASSAVA_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_4</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoTex/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -47286,13 +47286,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -47305,13 +47305,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_EUROPE_TRADE_QUEST_CASSAVA_START</Event>
@@ -47319,8 +47319,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDoneEuropeTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>

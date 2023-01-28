@@ -76,9 +76,9 @@
 	<ElementType name="iYieldStorage" content="textOnly" dt:type="int"/>
 	<ElementType name="iMaxHarbourSpaceProvided" content="textOnly" dt:type="int"/>
 	<ElementType name="iMaxBarracksSpaceProvided" content="textOnly" dt:type="int"/>
-	<ElementType name="iStorageLossSellPercentage" content="textOnly" dt:type="int"/><!-- The percentage of the price in europe, at which the loss of goods in a cities storage is sold. -->
-	<ElementType name="bIgnoresBoycott" content="textOnly" dt:type="boolean"/><!-- If this building allows a city to ignore european boycotts, when selling lost goods from the storage. -->
-	<ElementType name="bUnlocksStorageLossTradeSettings" content="textOnly" dt:type="boolean"/><!-- If this building unlocks the trade settings for the storage loss (aka "Customs house popup") -->
+	<ElementType name="iStorageLossSellPercentage" content="textOnly" dt:type="int"/> <!-- The percentage of the price in europe, at which the loss of goods in a cities storage is sold. -->
+	<ElementType name="bIgnoresBoycott" content="textOnly" dt:type="boolean"/> <!-- If this building allows a city to ignore european boycotts, when selling lost goods from the storage. -->
+	<ElementType name="bUnlocksStorageLossTradeSettings" content="textOnly" dt:type="boolean"/> <!-- If this building unlocks the trade settings for the storage loss (aka "Customs house popup") -->
 	<ElementType name="iSpecialBuildingPriority" content="textOnly" dt:type="int"/>
 	<ElementType name="fVisibilityPriority" content="textOnly"/>
 	<ElementType name="FreePromotion" content="textOnly"/>
