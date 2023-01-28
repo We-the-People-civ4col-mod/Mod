@@ -1419,7 +1419,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_MAPLE_TREES_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]Maple syrup depends on [COLOR_HIGHLIGHT_TEXT]Maple trees[COLOR_REVERT] which grow in north temperate regions. In spring when sap starts to flow in the maple forests, tappers hammer spouts through the bark and collect a thin fluid that's then distilled over a slow fire into a rich thick syrup. It can also be poured on snow to make maple sugar.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]Maple syrup comes from [COLOR_HIGHLIGHT_TEXT]maple trees[COLOR_REVERT] which grow in north temperate regions. In spring when sap starts to flow in the maple forests, tappers hammer spouts through the bark and collect a thin fluid that's then distilled over a slow fire into a rich thick syrup. It can also be poured on snow to make maple sugar.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ahornbäume[COLOR_REVERT] TODO</German>
     </TEXT>
 	<TEXT>
@@ -1432,13 +1432,13 @@
         </German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BONUS_MAPLE_TREES_PEDIA</Tag>
+        <Tag>TXT_KEY_BONUS_KAUTSCHUK_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rubber trees[COLOR_REVERT] grow in [LINK=TERRAIN_JUNGLE]jungle[\LINK] terrain. Rubber has a large stretch ratio, high resilience and is also water-proof. It's classified as an elastomer.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kautschukbäume[COLOR_REVERT] TODO</German>
     </TEXT>	
     <TEXT>
         <Tag>TXT_KEY_BONUS_SALT</Tag>
-        <English>Salt deposits</English>
+        <English>Salt Deposits</English>
         <French>
             <Text>Gisement de sel</Text>
             <Gender>Male</Gender>
@@ -1470,7 +1470,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CACTUS</Tag>
-        <English>Cactus trees</English>
+        <English>Cactus Trees</English>
         <French>
             <Text>Cactus</Text>
             <Gender>Male</Gender>
