@@ -531,7 +531,6 @@ void CvCity::doTurn()
 		doGrowth();
 		doCulture();
 		doPlotCulture(false, getOwnerINLINE(), getCultureRate());
-		doProduction(bAllowNoProduction);
 	}
 	
 	if (!m_bHasHurried && !isHuman() && !isNative())
@@ -541,6 +540,11 @@ void CvCity::doTurn()
 		static_cast<CvCityAI*>(this)->AI_doHurry();
 	}
 	
+	if (!isDisorder())
+	{
+		doProduction(bAllowNoProduction);
+	}
+
 	if (!isNative())
 	{
 		// WTP, ray fixing Asserts by functions being called during disorder - START
