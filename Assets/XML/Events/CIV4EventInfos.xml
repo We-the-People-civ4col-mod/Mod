@@ -37115,7 +37115,7 @@
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_TRADE_GOODS</iGenericParameter2>
 			<iGenericParameter3>3000</iGenericParameter3>
-			<iGenericParameter4>0</iGenericParameter4>
+			<iGenericParameter4>-2</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_TRADE_GOODS_DONE_1</Type>
@@ -37181,7 +37181,7 @@
 			<iGenericParameter1>3000</iGenericParameter1>
 			<iGenericParameter2>YIELD_TRADE_GOODS</iGenericParameter2>
 			<iGenericParameter3>1</iGenericParameter3>
-			<iGenericParameter4>1</iGenericParameter4>
+			<iGenericParameter4>-2</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_TRADE_GOODS_DONE_4</Type>
@@ -37247,7 +37247,7 @@
 			<iGenericParameter1>3000</iGenericParameter1>
 			<iGenericParameter2>YIELD_TRADE_GOODS</iGenericParameter2>
 			<iGenericParameter3>0</iGenericParameter3>
-			<iGenericParameter4>0</iGenericParameter4>
+			<iGenericParameter4>-2</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_EUROPE_TRADE_QUEST_SAILCLOTH_START</Type>
@@ -63277,7 +63277,7 @@
 			<iGenericParameter1>1000</iGenericParameter1>
 			<iGenericParameter2>YIELD_TRADE_GOODS</iGenericParameter2>
 			<iGenericParameter3>1</iGenericParameter3>
-			<iGenericParameter4>2</iGenericParameter4>
+			<iGenericParameter4>-2</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE_2</Type>
@@ -63343,7 +63343,7 @@
 			<iGenericParameter1>1000</iGenericParameter1>
 			<iGenericParameter2>YIELD_TRADE_GOODS</iGenericParameter2>
 			<iGenericParameter3>0</iGenericParameter3>
-			<iGenericParameter4>0</iGenericParameter4>
+			<iGenericParameter4>-2</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE_3</Type>
@@ -63409,7 +63409,7 @@
 			<iGenericParameter1>1000</iGenericParameter1>
 			<iGenericParameter2>YIELD_TRADE_GOODS</iGenericParameter2>
 			<iGenericParameter3>0</iGenericParameter3>
-			<iGenericParameter4>0</iGenericParameter4>
+			<iGenericParameter4>-2</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE_4</Type>
@@ -63475,7 +63475,7 @@
 			<iGenericParameter1>1000</iGenericParameter1>
 			<iGenericParameter2>YIELD_TRADE_GOODS</iGenericParameter2>
 			<iGenericParameter3>0</iGenericParameter3>
-			<iGenericParameter4>0</iGenericParameter4>
+			<iGenericParameter4>-2</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE_5</Type>
@@ -63541,7 +63541,7 @@
 			<iGenericParameter1>1000</iGenericParameter1>
 			<iGenericParameter2>YIELD_TRADE_GOODS</iGenericParameter2>
 			<iGenericParameter3>0</iGenericParameter3>
-			<iGenericParameter4>0</iGenericParameter4>
+			<iGenericParameter4>-2</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_AFRICA_TRADE_QUEST_COTTON_START</Type>
