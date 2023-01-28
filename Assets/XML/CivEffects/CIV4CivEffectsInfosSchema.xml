@@ -14,125 +14,122 @@
 	<ElementType name="eRoute" content="textOnly"/>
 	<ElementType name="eUnitClass" content="textOnly"/>
 	<ElementType name="eYield" content="textOnly"/>
-	
-	<ElementType name="iAllow" content="textOnly" dt:type="int" />
-	<ElementType name="iAllowFoundCity" content="textOnly" dt:type="int" />
-	<ElementType name="iCanUseDomesticMarket" content="textOnly" dt:type="int" />
+	<ElementType name="iAllow" content="textOnly" dt:type="int"/>
+	<ElementType name="iAllowFoundCity" content="textOnly" dt:type="int"/>
+	<ElementType name="iCanUseDomesticMarket" content="textOnly" dt:type="int"/>
 	<ElementType name="iLearningByDoingModifier" content="textOnly" dt:type="int"/>
-	<ElementType name="iNumUnitsOnDockChange" content="textOnly" dt:type="int" />
-	
-
+	<ElementType name="iNumUnitsOnDockChange" content="textOnly" dt:type="int"/>
 	<ElementType name="AllowBonus" content="eltOnly">
-		<element type="eBonus" />
-		<element type="iAllow" />
+		<element type="eBonus"/>
+		<element type="iAllow"/>
 	</ElementType>
 	<ElementType name="AllowBuild" content="eltOnly">
-		<element type="eBuild" />
-		<element type="iAllow" />
+		<element type="eBuild"/>
+		<element type="iAllow"/>
 	</ElementType>
 	<ElementType name="AllowBuildingClass" content="eltOnly">
-		<element type="eBuildingClass" />
-		<element type="iAllow" />
+		<element type="eBuildingClass"/>
+		<element type="iAllow"/>
 	</ElementType>
 	<ElementType name="AllowCivic" content="eltOnly">
-		<element type="eCivic" />
-		<element type="iAllow" />
+		<element type="eCivic"/>
+		<element type="iAllow"/>
 	</ElementType>
 	<ElementType name="AllowConqueringCity" content="eltOnly">
-		<element type="eCivCategory" />
-		<element type="iAllow" />
+		<element type="eCivCategory"/>
+		<element type="iAllow"/>
 	</ElementType>
 	<ElementType name="AllowImmigrant" content="eltOnly">
-		<element type="eUnitClass" />
-		<element type="iAllow" />
+		<element type="eUnitClass"/>
+		<element type="iAllow"/>
 	</ElementType>
 	<ElementType name="AllowImprovement" content="eltOnly">
-		<element type="eImprovement" />
-		<element type="iAllow" />
+		<element type="eImprovement"/>
+		<element type="iAllow"/>
 	</ElementType>
 	<ElementType name="AllowProfession" content="eltOnly">
-		<element type="eProfession" />
-		<element type="iAllow" />
+		<element type="eProfession"/>
+		<element type="iAllow"/>
 	</ElementType>
 	<ElementType name="AllowPromotion" content="eltOnly">
-		<element type="ePromotion" />
-		<element type="iAllow" />
+		<element type="ePromotion"/>
+		<element type="iAllow"/>
 	</ElementType>
 	<ElementType name="AllowRoute" content="eltOnly">
-		<element type="eRoute" />
-		<element type="iAllow" />
+		<element type="eRoute"/>
+		<element type="iAllow"/>
 	</ElementType>
 	<ElementType name="AllowUnitClass" content="eltOnly">
-		<element type="eUnitClass" />
-		<element type="iAllow" />
+		<element type="eUnitClass"/>
+		<element type="iAllow"/>
 	</ElementType>
 	<ElementType name="AllowYield" content="eltOnly">
-		<element type="eYield" />
-		<element type="iAllow" />
+		<element type="eYield"/>
+		<element type="iAllow"/>
 	</ElementType>
 	
 	<ElementType name="AllowBonuses" content="eltOnly">
-		<element type="AllowBonus" minOccurs="0" maxOccurs="*" />
+		<element type="AllowBonus" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="AllowBuilds" content="eltOnly">
-		<element type="AllowBuild" minOccurs="0" maxOccurs="*" />
+		<element type="AllowBuild" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="AllowBuildingClasses" content="eltOnly">
-		<element type="AllowBuildingClass" minOccurs="0" maxOccurs="*" />
+		<element type="AllowBuildingClass" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="AllowCivics" content="eltOnly">
-		<element type="AllowCivic" minOccurs="0" maxOccurs="*" />
+		<element type="AllowCivic" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="AllowConqueringCities" content="eltOnly">
-		<element type="AllowConqueringCity" minOccurs="0" maxOccurs="*" />
+		<element type="AllowConqueringCity" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="AllowImmigrants" content="eltOnly">
-		<element type="AllowImmigrant" minOccurs="0" maxOccurs="*" />
+		<element type="AllowImmigrant" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="AllowImprovements" content="eltOnly">
-		<element type="AllowImprovement" minOccurs="0" maxOccurs="*" />
+		<element type="AllowImprovement" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="AllowProfessions" content="eltOnly">
-		<element type="AllowProfession" minOccurs="0" maxOccurs="*" />
+		<element type="AllowProfession" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="AllowPromotions" content="eltOnly">
-		<element type="AllowPromotion" minOccurs="0" maxOccurs="*" />
+		<element type="AllowPromotion" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="AllowRoutes" content="eltOnly">
-		<element type="AllowRoute" minOccurs="0" maxOccurs="*" />
+		<element type="AllowRoute" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="AllowUnitClasses" content="eltOnly">
-		<element type="AllowUnitClass" minOccurs="0" maxOccurs="*" />
+		<element type="AllowUnitClass" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="AllowYields" content="eltOnly">
-		<element type="AllowYield" minOccurs="0" maxOccurs="*" />
+		<element type="AllowYield" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	
 	
 	
 	<ElementType name="TagGroupAllow" content="eltOnly">
-		<element type="AllowBonuses" minOccurs="0" />
-		<element type="AllowBuilds" minOccurs="0" />
-		<element type="AllowBuildingClasses" minOccurs="0" />
-		<element type="AllowCivics" minOccurs="0" />
-		<element type="AllowConqueringCities" minOccurs="0" />
-		<element type="AllowImmigrants" minOccurs="0" />
-		<element type="AllowImprovements" minOccurs="0" />
-		<element type="AllowProfessions" minOccurs="0" />
-		<element type="AllowPromotions" minOccurs="0" />
-		<element type="AllowRoutes" minOccurs="0" />
-		<element type="AllowUnitClasses" minOccurs="0" />
-		<element type="AllowYields" minOccurs="0" />
-		<element type="iAllowFoundCity" minOccurs="0" />
+		<element type="AllowBonuses" minOccurs="0"/>
+		<element type="AllowBuilds" minOccurs="0"/>
+		<element type="AllowBuildingClasses" minOccurs="0"/>
+		<element type="AllowCivics" minOccurs="0"/>
+		<element type="AllowConqueringCities" minOccurs="0"/>
+		<element type="AllowImmigrants" minOccurs="0"/>
+		<element type="AllowImprovements" minOccurs="0"/>
+		<element type="AllowProfessions" minOccurs="0"/>
+		<element type="AllowPromotions" minOccurs="0"/>
+		<element type="AllowRoutes" minOccurs="0"/>
+		<element type="AllowUnitClasses" minOccurs="0"/>
+		<element type="AllowYields" minOccurs="0"/>
+		<element type="iAllowFoundCity" minOccurs="0"/>
 	</ElementType>
 
 	<ElementType name="TagGroupCity" content="eltOnly">
-		<element type="iCanUseDomesticMarket" minOccurs="0" />
+		<element type="iCanUseDomesticMarket" minOccurs="0"/>
 	</ElementType>
 
 	<ElementType name="TagGroupGrowth" content="eltOnly">
-		<element type="iLearningByDoingModifier" minOccurs="0" />
-		<element type="iNumUnitsOnDockChange" minOccurs="0" />
+		<element type="iLearningByDoingModifier" minOccurs="0"/>
+		<element type="iNumUnitsOnDockChange" minOccurs="0"/>
 	</ElementType>
 	
 	<ElementType name="CivEffectInfo" content="eltOnly">
