@@ -5055,7 +5055,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CLAY_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]clay[COLOR_REVERT] from Europe.</English>
+		<English>We are now the leader trading [COLOR_FONT_GOLD]clay[COLOR_REVERT] from Europe.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Europe zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -5065,12 +5065,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_CLAY_FAILED</Tag>
-		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]clay[COLOR_REVERT] from Europe.</English>
+		<English>Another colonial power has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]clay[COLOR_REVERT] from Europe.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] in Europe zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CLAY_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]clay[COLOR_REVERT] from Europe.</English>
+		<English>We are now dominant in the European [COLOR_FONT_GOLD]clay[COLOR_REVERT] trade.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] in Europe zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -5080,7 +5080,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PEAT_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]peat[COLOR_REVERT] from Europe.</English>
+		<English>We have managed to become the dominant trader of [COLOR_FONT_GOLD]peat[COLOR_REVERT] from Europe.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Torf[COLOR_REVERT] mit Europe zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -5090,12 +5090,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_PEAT_FAILED</Tag>
-		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]peat[COLOR_REVERT] from Europe.</English>
+		<English>Another colonial power has cornered the market in the colonies for [COLOR_FONT_GOLD]peat[COLOR_REVERT] from Europe.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Torf[COLOR_REVERT] in Europe zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PEAT_DONE</Tag>
-		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]peat[COLOR_REVERT] from Europe.</English>
+		<English>We have managed to dominate the trade of [COLOR_FONT_GOLD]peat[COLOR_REVERT] from Europe.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Torf[COLOR_REVERT] in Europe zu werden.</German>
 	</TEXT>
 	<TEXT>
