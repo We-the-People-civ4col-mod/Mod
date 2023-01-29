@@ -3610,8 +3610,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_9</Tag>
-		<English>For the Glory and Wealth of our colonies! Higher sale prices are always welcome!</English>
-		<German>Für Ruhm und Reichtum unserer Kolonien! Höhere Verkaufspreise sind immer willkommen!</German>
+		<English>You can never have enough free colonists, welcome to our prosperous colony!</English>
+		<German>Freie Kolonisten kann man nie genug haben, willkommen in unserer prosperierenden Kolonie!</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_10</Tag>
@@ -3620,8 +3620,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_11</Tag>
-		<English>For the Glory and Wealth of our colonies! Higher sale prices are always welcome!</English>
-		<German>Für Ruhm und Reichtum unserer Kolonien! Höhere Verkaufspreise sind immer willkommen!</German>
+		<English>It is only a small warship, but it should be enough to protect our merchant fleet!</English>
+		<German>Es ist zwar nur ein kleines Kriegsschiff, aber für den Schutz unserer Handelsflotte sollte es allemal genügen!</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_12</Tag>
@@ -5147,6 +5147,106 @@
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CASSAVA_DONE</Tag>
 		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]cassava[COLOR_REVERT] from Europe.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_HARDWOOD_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Harthölzer[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_HARDWOOD_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_HARDWOOD_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Harthölzern[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_HARDWOOD_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Harthölzern[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_HARDWOOD_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Harthölzern[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_FLAX_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]flax[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Flachs[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_FLAX_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]flax[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Flachs[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_FLAX_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]flax[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Flachs[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_FLAX_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]flax[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Flachs[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_FLAX_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]flax[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Flachs[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PEANUTS_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PEANUTS_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Erdnüssen[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PEANUTS_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Erdnüssen[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_PEANUTS_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PEANUTS_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Erdnüssen[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_FRUITS_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]fruits[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Zitrusfrüchte[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_FRUITS_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]fruits[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Zitrusfrüchten[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_FRUITS_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]fruits[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Zitrusfrüchten[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_FRUITS_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]fruits[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Zitrusfrüchte[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_FRUITS_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]fruits[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Zitrusfrüchten[COLOR_REVERT] in Europe zu werden.</German>
 	</TEXT>
 	<TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLADES_START</Tag>
