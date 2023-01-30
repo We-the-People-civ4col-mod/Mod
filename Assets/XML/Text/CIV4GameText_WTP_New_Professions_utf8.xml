@@ -819,8 +819,8 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
-
-        <Russian>Производитель мягкой мебели:Производители мягкой мебели</Russian>    </TEXT>
+        <Russian>Производитель мягкой мебели:Производители мягкой мебели</Russian>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PADDED_FURNITURE_MAKER_HELP</Tag>
         <English>????</English>
