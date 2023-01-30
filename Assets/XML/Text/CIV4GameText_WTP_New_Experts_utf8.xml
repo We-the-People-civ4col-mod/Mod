@@ -634,7 +634,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
-        <Russian>Мастер забоя птицы:Мастера забоя птицы </Russian>
+        <Russian>Мастер мясник птицы и свинины:Мастера мясник птицы и свинины</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POULTRY_BUTCHER</Tag>
@@ -644,7 +644,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
-        <Russian>Мастер забоя птицы:Мастера забоя птицы </Russian>
+        <Russian>Мастер мясник птицы и свинины:Мастера мясник птицы и свинины</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POULTRY_BUTCHER_PEDIA</Tag>
