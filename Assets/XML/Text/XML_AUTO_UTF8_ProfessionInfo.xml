@@ -27,6 +27,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Воин индейцев с ружьем:Воины индейцев с ружьями</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_ARMED_BRAVE_HELP</Tag>
@@ -75,6 +76,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Конный воин индейцев с ружьем:Конные воины индейцев с ружьями</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_ARMED_MOUNTED_BRAVE_HELP</Tag>
@@ -123,6 +125,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Сборщик ячменя:Сборщики ячменя</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BARLEY_FARMER_HELP</Tag>
@@ -165,6 +168,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Кузнец (инструменты):Кузнецы (инструменты)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BLACKSMITH_HELP</Tag>
@@ -213,6 +217,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Кузнец (клинки):Кузнец (клинки)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BLADESMITH_HELP</Tag>
@@ -259,6 +264,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Воин индейцев:Воины индейцев</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BRAVE_HELP</Tag>
@@ -307,6 +313,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Пивовар:Пивовары</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BREWER_HELP</Tag>
@@ -351,6 +358,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мясник (коровы):Мясники (коровы)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_CATTLE_HELP</Tag>
@@ -393,6 +401,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мясник (овцы):Мясники (овцы)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_SHEEP_HELP</Tag>
@@ -437,6 +446,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Пушкарь:Пушкари</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CANNONSMITH_HELP</Tag>
@@ -481,6 +491,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Плотник:Плотники</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CARPENTER_HELP</Tag>
@@ -525,6 +536,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Сборщик коки:Сборщики коки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COCA_COLLECTOR_HELP</Tag>
@@ -569,6 +581,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Обжарщик какао:Обжарщики какао</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COCOA_ROASTER_HELP</Tag>
@@ -615,6 +628,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Плантатор какао:Плантаторы какао</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COCOA_PLANTER_HELP</Tag>
@@ -659,6 +673,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Обжарщик кофе:Обжарщики кофе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COFFEE_ROASTER_HELP</Tag>
@@ -701,6 +716,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Плантатор кофе:Плантаторы кофе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COFFEE_PLANTER_HELP</Tag>
@@ -747,6 +763,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Колониальное ополчение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COLONIAL_MILITIA_HELP</Tag>
@@ -795,6 +812,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Колонист:Колонисты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COLONIST_HELP</Tag>
@@ -843,6 +861,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Плантатор хлопка:Плантаторы хлопка</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COTTON_PLANTER_HELP</Tag>
@@ -887,6 +906,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Скотовод (коровы):Скотоводы (коровы)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COWBOY_HELP</Tag>
@@ -929,6 +949,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Винокур (ром):Винокуры (ром)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_DISTILLER_HELP</Tag>
@@ -977,6 +998,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Драгун:Драгуны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_DRAGOON_HELP</Tag>
@@ -1033,6 +1055,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Красильщик ткани (индиго):Красильщики ткани (индиго)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_DYER_HELP</Tag>
@@ -1073,6 +1096,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Красильщик шерсти (индиго):Красильщики шерсти (индиго)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FARMER</Tag>
@@ -1101,6 +1125,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Фермер:Фермеры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FARMER_HELP</Tag>
@@ -1149,6 +1174,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Рыбак:Рыбаки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FISHERMAN_HELP</Tag>
@@ -1193,6 +1219,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Рыбацкая лодка:Рыбацкие лодки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FISHING_BOAT_WORKING_HELP</Tag>
@@ -1235,6 +1262,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Краснодеревщик:Краснодеревщики</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FURNITURE_MAKER_HELP</Tag>
@@ -1279,6 +1307,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Скорняк (пальто):Скорняки (пальто)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FUR_TRADER_HELP</Tag>
@@ -1327,6 +1356,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Охотник за пушным зверем:Охотники за пушным зверем</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FUR_TRAPPER_HELP</Tag>
@@ -1375,6 +1405,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Охотник на каланов:Охотники на каланов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FUR_TRAPPER_WATER_HELP</Tag>
@@ -1421,6 +1452,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Добытчик драгоценностей:Добытчики драгоценностей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_GEMSTONES_MINER_HELP</Tag>
@@ -1467,6 +1499,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Золотодобытчик:Золотодобытчики</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_GOLD_MINER_HELP</Tag>
@@ -1515,6 +1548,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Сборщик винограда:Сборщики винограда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_GRAPES_PICKER_HELP</Tag>
@@ -1561,6 +1595,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Оружейник:Оружейники</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_GUNSMITH_HELP</Tag>
@@ -1589,6 +1624,7 @@
         <German>Heiler</German>
         <Italian>Healer</Italian>
         <Spanish>Healer</Spanish>
+        <Russian>Целитель:Целители</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HEALER_HELP</Tag>
@@ -1633,6 +1669,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Тяжелая кавалерия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HEAVY_CAVALRY_HELP</Tag>
@@ -1673,6 +1710,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Плантатор конопли:Плантаторы конопли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HEMP_PLANTER_HELP</Tag>
@@ -1717,6 +1755,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Охотник:Охотники</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HUNTER_HELP</Tag>
@@ -1761,6 +1800,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Плантатор индиго:Плантаторы индиго</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_INDIGO_PLANTER_HELP</Tag>
@@ -1805,6 +1845,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Линейная пехота</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_LINE_INFANTRY_HELP</Tag>
@@ -1845,6 +1886,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Лесоруб:Лесорубы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_LUMBERJACK_HELP</Tag>
@@ -1893,6 +1935,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Миссионер:Миссионеры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_MISSIONARY_HELP</Tag>
@@ -1941,6 +1984,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Конный воин индейцев:Конные воины индейцев</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_MOUNTED_BRAVE_HELP</Tag>
@@ -1989,6 +2033,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Рудокоп:Рудокопы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_ORE_MINER_HELP</Tag>
@@ -2037,6 +2082,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Ныряльщик за жемчугом:Ныряльщики за жемчугом</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PEARLS_HUNTER_HELP</Tag>
@@ -2083,6 +2129,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Первопроходец:Первопроходцы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PIONEER_HELP</Tag>
@@ -2131,6 +2178,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Проповедник:Проповедники</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PREACHER_HELP</Tag>
@@ -2179,6 +2227,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Скорняк (премиумные шубы):Скорняки (премиумные шубы)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PREMIUM_FUR_TRADER_HELP</Tag>
@@ -2227,6 +2276,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Пастух (лошади):Пастухи (лошади)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_RANCHER_HELP</Tag>
@@ -2271,6 +2321,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Плантатор красного перца:Плантаторы красного перца</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_RED_PEPPER_PLANTER_HELP</Tag>
@@ -2301,6 +2352,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Russian>Канатный мастер (конопля):Канатные мастера (конопля)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_ROPES_MAKER_FLAX</Tag>
@@ -2315,6 +2367,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Russian>Канатный мастер (лен):Канатные мастера (лен)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_ROPES_MAKER_HELP</Tag>
@@ -2359,6 +2412,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Королевская кавалерия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_ROYAL_CAVALRY_HELP</Tag>
@@ -2399,6 +2453,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Королевские драгуны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_ROYAL_DRAGOON_HELP</Tag>
@@ -2439,6 +2494,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Королевская легкая пехота</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_ROYAL_LIGHT_INFANTRY_HELP</Tag>
@@ -2479,6 +2535,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Королевская линейная пехота</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_ROYAL_LINE_INFANTRY_HELP</Tag>
@@ -2505,6 +2562,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Russian>Парусный мастер (лен):Парусные мастера (лен)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SAILCLOTH_MAKER_HEMP</Tag>
@@ -2519,6 +2577,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Russian>Парусный мастер (конопля):Парусные мастера (конопля)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SAILCLOTH_MAKER_HELP</Tag>
@@ -2563,6 +2622,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Добытчик соли:Добытчики соли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SALT_MINER_HELP</Tag>
@@ -2605,6 +2665,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Производитель соли:Производители соли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SALT_TRADER_HELP</Tag>
@@ -2649,6 +2710,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Разведчик:Разведчики</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SCOUT_HELP</Tag>
@@ -2697,6 +2759,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Охотник на тюленей:Охотники на тюленей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SEAL_HUNTER_HELP</Tag>
@@ -2737,6 +2800,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Пастух (овцы):Пастухи (овцы)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SHEPHERD_HELP</Tag>
@@ -2783,6 +2847,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Рудокоп (серебро):Рудокопы (серебро)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SILVER_MINER_HELP</Tag>
@@ -2831,6 +2896,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Производитель специй:Производители специй</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SPICE_TRADER_HELP</Tag>
@@ -2873,6 +2939,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Политик:Политики</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_STATESMAN_HELP</Tag>
@@ -2921,6 +2988,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Каменотес:Каменотесы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_STONECUTTER_HELP</Tag>
@@ -2965,6 +3033,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Студент:Студенты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_STUDENT_HELP</Tag>
@@ -3013,6 +3082,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Плантатор сахарного тростника:Плантаторы сахарного тростника</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SUGAR_PLANTER_HELP</Tag>
@@ -3042,6 +3112,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Russian>Дубильщик коровьих шкур:Дубильщики коровьих шкур</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_TANNER_HELP</Tag>
@@ -3086,6 +3157,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Крутильщик сигар:Крутильщики сигар</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_TOBACCONIST_HELP</Tag>
@@ -3134,6 +3206,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Плантатор табака:Плантаторы табака</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_TOBACCO_PLANTER_HELP</Tag>
@@ -3182,6 +3255,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Лесоруб (ценная древесина):Лесорубы (ценная древесина)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_VALUABLE_WOOD_LUMBERJACK_HELP</Tag>
@@ -3224,6 +3298,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Ткач (хлопок):Ткачи (хлопок)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_WEAVER_HELP</Tag>
@@ -3272,6 +3347,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Ткач (шерсть):Ткачи (шерсть)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_WEAVER_WOOL_HELP</Tag>
@@ -3314,6 +3390,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Производитель ворвани:Производители ворвани</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_WHALE_OIL_COOKER_HELP</Tag>
@@ -3354,6 +3431,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Китобойное судно:Китобойные суда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_WHALING_BOAT_WORKING_HELP</Tag>
@@ -3400,6 +3478,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Винодел:Виноделы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_WINE_MAKER_HELP</Tag>
@@ -3446,6 +3525,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Городская стража</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_TOWN_GUARD_STRATEGY</Tag>
@@ -3486,6 +3566,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Королевские алебардщики</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_NATIVE_TRADER</Tag>
@@ -3514,6 +3595,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Торговец с индейцами:Торговцы с индейцами</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_NATIVE_TRADER_HELP</Tag>
@@ -3533,6 +3615,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Russian>Поселенец:Поселенцы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SETTLER_HELP</Tag>
@@ -3562,5 +3645,6 @@
         <English>[ICON_BULLET]Can cross large rivers</English>
         <French>[ICON_BULLET]Peut traverser de grandes rivières</French>
         <German>[ICON_BULLET]Kann grosse Flüsse überqueren</German>
+        <Russian>[ICON_BULLET]Может пересекать большие реки</Russian>
     </TEXT>
 </Civ4GameText>

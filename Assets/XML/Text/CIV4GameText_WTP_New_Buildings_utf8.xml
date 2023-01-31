@@ -24,6 +24,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Кладбище</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_GRAVEYARD</Tag>
@@ -33,6 +34,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Кладбище</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GRAVEYARD</Tag>
@@ -42,6 +44,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Кладбище</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GRAVEYARD_PEDIA</Tag>
@@ -71,6 +74,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Дом кондитера</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_SHOP</Tag>
@@ -80,6 +84,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Кондитерская</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_FACTORY</Tag>
@@ -89,6 +94,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Фабрика сладостей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE</Tag>
@@ -98,6 +104,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Дом кондитера</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP</Tag>
@@ -107,6 +114,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Кондитерская</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY</Tag>
@@ -116,6 +124,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Фабрика сладостей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE_PEDIA</Tag>
@@ -165,6 +174,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Дом кожевника</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_SHOP</Tag>
@@ -174,6 +184,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастерская кожевника</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_FACTORY</Tag>
@@ -183,6 +194,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Кожевенная фабрика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE</Tag>
@@ -192,6 +204,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Дом кожевника</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP</Tag>
@@ -201,6 +214,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастерская кожевника</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY</Tag>
@@ -210,6 +224,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Кожевенная фабрика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE_PEDIA</Tag>
@@ -259,6 +274,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Дом изготовителя масла</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_SHOP</Tag>
@@ -268,6 +284,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастерская по изготовлению масла</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_FACTORY</Tag>
@@ -277,6 +294,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Фабрика по изготовлению масла</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE</Tag>
@@ -286,6 +304,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Дом изготовителя масла</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP</Tag>
@@ -295,6 +314,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастерская по изготовлению масла</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY</Tag>
@@ -304,6 +324,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Фабрика по изготовлению масла</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE_PEDIA</Tag>
@@ -353,6 +374,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Дом обжарщика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_ROASTER_SHOP</Tag>
@@ -362,6 +384,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастерская обжарки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_ROASTER_FACTORY</Tag>
@@ -371,6 +394,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Фабрика обжарки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_HOUSE</Tag>
@@ -380,6 +404,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Дом обжарщика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_SHOP</Tag>
@@ -389,6 +414,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастерская обжарки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_FACTORY</Tag>
@@ -398,6 +424,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Фабрика обжарки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_HOUSE_PEDIA</Tag>
@@ -447,6 +474,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Дом гончара</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_POTTERY_SHOP</Tag>
@@ -456,6 +484,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Гончарная мастерская</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_POTTERY_FACTORY</Tag>
@@ -465,6 +494,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Фабрика гончарных изделий</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_HOUSE</Tag>
@@ -474,6 +504,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Дом гончара</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_SHOP</Tag>
@@ -483,6 +514,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Гончарная мастерская</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_FACTORY</Tag>
@@ -492,6 +524,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Фабрика гончарных изделий</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_HOUSE_PEDIA</Tag>
@@ -541,6 +574,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Дом портного</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_TAILOR_SHOP</Tag>
@@ -550,6 +584,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастерская портного</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_TAILOR_FACTORY</Tag>
@@ -559,6 +594,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Фабрика одежды</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_HOUSE</Tag>
@@ -568,6 +604,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Дом портного</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_SHOP</Tag>
@@ -577,6 +614,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастерская портного</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_FACTORY</Tag>
@@ -586,6 +624,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Фабрика одежды</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_HOUSE_PEDIA</Tag>
@@ -635,6 +674,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Дом пороховщика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_SHOP</Tag>
@@ -644,6 +684,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастерская по изготовлению пороха</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_FACTORY</Tag>
@@ -653,6 +694,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Фабрика взрывчатки</Russian>
     </TEXT>
    <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE</Tag>
@@ -662,6 +704,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Дом пороховщика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP</Tag>
@@ -671,6 +714,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мастерская по изготовлению пороха</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY</Tag>
@@ -680,6 +724,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Фабрика взрывчатки</Russian>
     </TEXT>
      <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE_PEDIA</Tag>
@@ -729,6 +774,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Дом пекаря</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_BAKER_SHOP</Tag>
@@ -738,6 +784,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Пекарня</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_BAKERY</Tag>
@@ -747,6 +794,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Фабрика выпечки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_HOUSE</Tag>
@@ -756,6 +804,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Дом пекаря</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_SHOP</Tag>
@@ -765,6 +814,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Пекарня</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKERY</Tag>
@@ -774,6 +824,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Фабрика выпечки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_HOUSE_PEDIA</Tag>
@@ -823,6 +874,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Здание суда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_TOWN_COURT</Tag>
@@ -832,6 +884,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Городской суд</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_CITY_COURT</Tag>
@@ -841,6 +894,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Окружной суд</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_SUPREME_COURT</Tag>
@@ -850,6 +904,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Верховный суд</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_VILLAGE_COURT</Tag>
@@ -859,6 +914,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Здание суда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOWN_COURT</Tag>
@@ -868,6 +924,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Городской суд</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CITY_COURT</Tag>
@@ -877,6 +934,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Окружной суд</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SUPREME_COURT</Tag>
@@ -945,6 +1003,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Тюрьма</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_JAIL</Tag>
@@ -954,6 +1013,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Тюрьма</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GRAVEYARD_JAIL</Tag>

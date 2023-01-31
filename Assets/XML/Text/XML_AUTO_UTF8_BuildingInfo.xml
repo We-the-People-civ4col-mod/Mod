@@ -81,6 +81,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Жертвенный алтарь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_AZTEC_SACRIFICIAL_ALTAR_PEDIA</Tag>
@@ -107,6 +108,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>Basislager</German>
+        <Russian>Базовый лагерь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BASECAMP_PEDIA</Tag>
@@ -159,6 +161,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Дом кузнеца</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BLACKSMITH_HOUSE_PEDIA</Tag>
@@ -213,6 +216,7 @@
         <English>Brewer's House</English>
         <French>Maison du brasseur</French>
         <German>Brauhaus</German>
+        <Russian>Дом пивовара</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BREWERS_HOUSE_PEDIA</Tag>
@@ -249,6 +253,7 @@
         <English>Butcher's House</English>
         <French>Maison du Boucher</French>
         <German>Metzgerhaus</German>
+        <Russian>Дом мясника</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BUTCHERS_HOUSE_PEDIA</Tag>
@@ -299,6 +304,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Дом плотника</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CARPENTER_SHOP_PEDIA</Tag>
@@ -335,6 +341,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Аббатство</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CATHEDRAL_PEDIA</Tag>
@@ -400,6 +407,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Часовня</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CHAPEL_PEDIA</Tag>
@@ -428,6 +436,7 @@
         <German>Chickee</German>
         <Italian>Chickee</Italian>
         <Spanish>Chickee</Spanish>
+        <Russian>Навес</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CHICKEE_PEDIA</Tag>
@@ -460,6 +469,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Церковь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CHURCH_PEDIA</Tag>
@@ -594,6 +604,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Колледж</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_COLLEGE_PEDIA</Tag>
@@ -624,6 +635,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Континентальный конгресс</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_COLONIAL_CONGRESS_PEDIA</Tag>
@@ -734,6 +746,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Дом винокура</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_DISTILLERS_HOUSE_PEDIA</Tag>
@@ -806,6 +819,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Док</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_DOCK_PEDIA</Tag>
@@ -840,6 +854,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Сухой док</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_DRYDOCK_PEDIA</Tag>
@@ -862,6 +877,7 @@
         <English>Dyer's House</English>
         <French>Maison du teinturier</French>
         <German>Färberhaus</German>
+        <Russian>Дом красильщика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_DYERS_HOUSE_PEDIA</Tag>
@@ -916,6 +932,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Укрепление</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FORT_PEDIA</Tag>
@@ -954,6 +971,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Форт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FORTRESS_PEDIA</Tag>
@@ -992,6 +1010,7 @@
         <English>Cabinetmaker's House</English>
         <French>Maison de l'ébéniste</French>
         <German>Möbelmacherhaus</German>
+        <Russian>Дом краснодеревщика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FURNITURE_MAKERS_HOUSE_PEDIA</Tag>
@@ -1078,6 +1097,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Дом скорняка</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FUR_TRADERS_HOUSE_PEDIA</Tag>
@@ -1164,6 +1184,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>Großes Zeughaus</German>
+        <Russian>Большой арсенал</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GREAT_ARSENAL_PEDIA</Tag>
@@ -1228,6 +1249,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Собор</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GREAT_CATHEDRAL_PEDIA</Tag>
@@ -1254,6 +1276,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>Marinehafen</German>
+        <Russian>Военно-морской порт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GREAT_SHIPYARD_PEDIA</Tag>
@@ -1313,6 +1336,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Большой университет</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GREAT_UNIVERSITY_PEDIA</Tag>
@@ -1423,6 +1447,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>Bootssteg</German>
+        <Russian>Причал</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LANDING_STAGE_PEDIA</Tag>
@@ -1749,6 +1774,7 @@
         <German>Stadtmauer</German>
         <Italian>Native Wall</Italian>
         <Spanish>Native Wall</Spanish>
+        <Russian>Укрепление индейцев</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_NATIVE_WALL_PEDIA</Tag>
@@ -1835,6 +1861,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>Regierungspalast</German>
+        <Russian>Правительственный дворец</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_PALACE_PEDIA</Tag>
@@ -1899,6 +1926,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Колониальное издательство</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_PUBLISHING_PEDIA</Tag>
@@ -1995,6 +2023,7 @@
         <English>Saloon</English>
         <French>Saloon</French>
         <German>Saloon</German>
+        <Russian>Салун</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SALOON_PEDIA</Tag>
@@ -2027,6 +2056,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Школа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SCHOOLHOUSE_PEDIA</Tag>
@@ -2121,6 +2151,7 @@
         <English>Spice Trader's House</English>
         <French>Maison de l'épicier</French>
         <German>Gewürzhändlerhaus</German>
+        <Russian>Дом изготовителя специй</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SPICE_TRADERS_HOUSE_PEDIA</Tag>
@@ -2197,6 +2228,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>Statue des Gouverneurs</German>
+        <Russian>Статуя Губернатора</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_STATUE_GOVERNOR_PEDIA</Tag>
@@ -2220,6 +2252,7 @@
         <German>Friesische Reiter</German>
         <Italian>Cavallo di Frisia</Italian>
         <Spanish>Chevaux de Frise</Spanish>
+        <Russian>Частокол</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_STOCKADE_PEDIA</Tag>
@@ -2274,6 +2307,7 @@
         <English>Tanners House</English>
         <French>Maison du Tanneur</French>
         <German>Gerberhaus</German>
+        <Russian>Дом дубильщика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TANNERS_HOUSE_PEDIA</Tag>
@@ -2310,6 +2344,7 @@
         <English>Tavern</English>
         <French>Taverne</French>
         <German>Taverne</German>
+        <Russian>Таверна</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAVERN_PEDIA</Tag>
@@ -2372,6 +2407,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Театр</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_THEATRE_PEDIA</Tag>
@@ -2566,6 +2602,7 @@
         <English>Waystation</English>
         <French>Relais de poste</French>
         <German>Postreiter- und Pferdewechselstation</German>
+        <Russian>Станция</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TRAIN_STATION_PEDIA</Tag>
@@ -2597,6 +2634,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Университет</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_UNIVERSITY_PEDIA</Tag>
@@ -2643,6 +2681,7 @@
         <English>Village Well</English>
         <French>Lavoir</French>
         <German>Dorfbrunnen</German>
+        <Russian>Колодец</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_VILLAGE_WELL_PEDIA</Tag>
@@ -2661,6 +2700,7 @@
         <English>Vintager's House</English>
         <French>Maison du vigneron</French>
         <German>Winzerhaus</German>
+        <Russian>Дом винодела</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_VINTAGERS_HOUSE_PEDIA</Tag>
@@ -2785,6 +2825,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Russian>Водяная мельница:Водяные мельницы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WATERMILL_PEDIA</Tag>
@@ -2817,6 +2858,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Дом ткача</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WEAVERS_HOUSE_PEDIA</Tag>
@@ -2953,6 +2995,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Russian>Ветряная мельница</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WINDMILL_PEDIA</Tag>

@@ -231,7 +231,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
-        <Russian>Козопас:Козопасы</Russian>
+        <Russian>Пастух (козы):Пастух (козы)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_GOATHERD_HELP</Tag>
@@ -258,8 +258,8 @@
             <Text>Schweinezüchter:Schweinezüchter</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
-        <Russian>Свиновод:Свиноводы</Russian>
         </German>
+        <Russian>Скотовод (свиньи):Скотоводы (свиньи)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PIG_BREEDER_HELP</Tag>
@@ -1359,7 +1359,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
-        <Russian>Портной-кожевник (куртки с пухом):Портные-кожевники (куртки с пухом)</Russian>
+        <Russian>Портной-кожевник (утепленные куртки):Портные-кожевники (утепленные куртки)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_LEATHER_PADDER_COATS_HELP</Tag>

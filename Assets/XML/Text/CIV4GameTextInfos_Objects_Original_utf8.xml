@@ -24,6 +24,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Полярный лед</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_AZTEC_SHORT_DESC</Tag>
@@ -48,6 +49,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ацтеки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_INCA_SHORT_DESC</Tag>
@@ -72,6 +74,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Инки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_BARBARIAN_SHORT_DESC</Tag>
@@ -96,6 +99,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Дикие животные</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY</Tag>
@@ -120,6 +124,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Победа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WAR</Tag>
@@ -144,6 +149,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Война</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_CEASE_FIRE_STRING</Tag>
@@ -168,6 +174,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Прекращение огня</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_WORLD_MAP_STRING</Tag>
@@ -192,6 +199,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Карта мира</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_OPEN_BORDERS_STRING</Tag>
@@ -216,6 +224,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Открытые границы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_DEFENSIVE_PACT_STRING</Tag>
@@ -240,6 +249,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Оборонительный союз</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_PERMANENT_ALLIANCE_STRING</Tag>
@@ -264,6 +274,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Постоянный союз</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_CATEGORY_BONUS</Tag>
@@ -288,6 +299,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Ресурсы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_CATEGORY_BUILDING</Tag>
@@ -312,6 +324,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Строения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_CATEGORY_CIV</Tag>
@@ -332,6 +345,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Колонии / Индейцы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_CATEGORY_CIVIC</Tag>
@@ -352,6 +366,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Статьи Конституции</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_CATEGORY_CONCEPT</Tag>
@@ -376,6 +391,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Игровые концепции</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_CATEGORY_FATHERS</Tag>
@@ -384,6 +400,7 @@
         <German>Gründerväter</German>
         <Italian>Padri Fondatori</Italian>
         <Spanish>Padres fundadores</Spanish>
+        <Russian>Отцы основатели</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_CATEGORY_FEATURE</Tag>
@@ -408,6 +425,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Свойства ландшафтов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_CATEGORY_HINTS</Tag>
@@ -432,6 +450,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Исторические цитаты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_CATEGORY_IMPROVEMENT</Tag>
@@ -456,6 +475,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Улучшения ландшафта</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_CATEGORY_LEADER</Tag>
@@ -480,6 +500,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Лидеры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_CATEGORY_PROFESSION</Tag>
@@ -488,6 +509,7 @@
         <German>Berufe</German>
         <Italian>Professioni</Italian>
         <Spanish>Profesiones</Spanish>
+        <Russian>Профессии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_CATEGORY_PROMOTION</Tag>
@@ -512,6 +534,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Повышения для юнитов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_CATEGORY_TERRAIN</Tag>
@@ -536,6 +559,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Базовые ландшафты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_CATEGORY_UNIT</Tag>
@@ -560,6 +584,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Юниты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_CATEGORY_YIELDS</Tag>
@@ -568,6 +593,7 @@
         <German>Rohstoffe und Waren</German>
         <Italian>Beni e materiali</Italian>
         <Spanish>Mercancías y materias primas</Spanish>
+        <Russian>Товары и материалы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SYSTEM_ALL</Tag>

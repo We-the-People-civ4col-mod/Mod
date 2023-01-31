@@ -3217,7 +3217,7 @@
         <German>Zufallskarte</German>
         <Italian>Partita personalizzata</Italian>
         <Spanish>Personalizar partida</Spanish>
-        <Russian>Пользовательская игра</Russian>
+        <Russian>Игра с настройками пользователя</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_SCENARIO</Tag>
@@ -3226,7 +3226,7 @@
         <German>Szenario Schnellstart</German>
         <Italian>Gioca uno scenario</Italian>
         <Spanish>Jugar un escenario</Spanish>
-        <Russian>Играть Сценарий</Russian>
+        <Russian>Выбрать Сценарий</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_UPDATES</Tag>
@@ -3253,7 +3253,7 @@
         <German>Colopädie</German>
         <Italian>Colopedia</Italian>
         <Spanish>Colopedia</Spanish>
-        <Russian>Колопедия</Russian>
+        <Russian>Колонопедия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WIDGET_HELP</Tag>
@@ -3262,7 +3262,7 @@
         <German>Colopädie</German>
         <Italian>Colopedia</Italian>
         <Spanish>Colopedia</Spanish>
-        <Russian>Колопедия</Russian>
+        <Russian>Колонопедия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_OPTIONS</Tag>
@@ -4907,7 +4907,7 @@
         <German>Meeresspiegel :</German>
         <Italian>Livello del mare :</Italian>
         <Spanish>Nivel del mar :</Spanish>
-        <Russian>Уровень мира :</Russian>
+        <Russian>Уровень моря :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MENU_ERA</Tag>
@@ -5743,7 +5743,7 @@
         <German>EIGENES SPIEL</German>
         <Italian>PARTITA PERSONALIZZATA</Italian>
         <Spanish>PERSONALIZAR PARTIDA</Spanish>
-        <Russian>ПОЛЬЗОВАТЕЛЬСКАЯ ИГРА</Russian>
+        <Russian>ИГРА С НАСТРОЙКАМИ ПОЛЬЗОВАТЕЛЯ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_STAGING_ROOM_TITLE</Tag>
@@ -9042,7 +9042,7 @@
         <German>Szenario</German>
         <Italian>Scenario personalizzato</Italian>
         <Spanish>Escenario personalizado</Spanish>
-        <Russian>Пользовательский сценарий</Russian>
+        <Russian>Сценарий с настройками пользователя</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_MAX_TURN</Tag>
