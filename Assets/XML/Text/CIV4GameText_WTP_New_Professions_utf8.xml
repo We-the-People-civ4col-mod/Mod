@@ -235,7 +235,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_GOATHERD_STRATEGY</Tag>
-        <English>Plains tiles let you raise [LINK=YIELD_GOATS]goats[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]goatherd[COLOR_REVERT] profession. Goat herds can be increased by assigning an [LINK=UNIT_GOATHERD]expert goatherd[\LINK] to the job.</English>
+        <English>Plains tiles let you raise [LINK=YIELD_GOATS]goats[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]goatherd[COLOR_REVERT] profession. Goat herds can be increased by assigning an [LINK=UNIT_HERDER]expert goatherd[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -262,7 +262,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PIG_BREEDER_STRATEGY</Tag>
-        <English>Plains tiles let you raise [LINK=YIELD_PIGS]pigs[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]pig breeder[COLOR_REVERT] profession. Pig production can be increased by assigning an [LINK=UNIT_PIG_BREEDER]expert pig breeder[\LINK] to the job.</English>
+        <English>Plains tiles let you raise [LINK=YIELD_PIGS]pigs[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]pig breeder[COLOR_REVERT] profession. Pig production can be increased by assigning an [LINK=UNIT_HERDER]expert pig breeder[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -284,12 +284,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CHICKEN_BREEDER_PEDIA</Tag>
-        <English>Free-range poultry farming allows chickens to roam during the day, although they are usually confined in coops at night to protect them from predators. They're also kept indoors when the weather is bad.[NEWLINE]Hens begin laying eggs at 16–21 weeks of age, although production starts declining after 25 weeks of age. Since the egg economics no longer make sense, chickens are slaughtered after approximately 12 months of egg production.</English>
+        <English>Free-range poultry farming allows chickens to roam during the day, although they are usually confined in coops at night to protect them from predators. They're also kept indoors when the weather is bad.[NEWLINE]Hens begin laying eggs at 16-21 weeks of age, although production starts declining after 25 weeks of age. Since the egg economics no longer make sense, chickens are slaughtered after approximately 12 months of egg production.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CHICKEN_BREEDER_STRATEGY</Tag>
-        <English>Plains tiles let you raise [LINK=YIELD_CHICKENS]chickens[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]chicken breeder[COLOR_REVERT] profession. Chicken production can be increased by assigning an [LINK=UNIT_CHICKEN_BREEDER]expert chicken breeder[\LINK] to the job.</English>
+        <English>Plains tiles let you raise [LINK=YIELD_CHICKENS]chickens[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]chicken breeder[COLOR_REVERT] profession. Chicken production can be increased by assigning an [LINK=UNIT_BREEDER]expert chicken breeder[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -316,7 +316,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_GEESE_BREEDER_STRATEGY</Tag>
-        <English>Plains tiles let you raise [LINK=YIELD_GEESE]geese[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]goose breeder[COLOR_REVERT] profession. Goose production can be increased by assigning an [LINK=UNIT_GEESE_BREEDER]expert goose breeder[\LINK] to the job.</English>
+        <English>Plains tiles let you raise [LINK=YIELD_GEESE]geese[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]goose breeder[COLOR_REVERT] profession. Goose production can be increased by assigning an [LINK=UNIT_BREEDER]expert goose breeder[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -424,7 +424,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FLAX_PLANTER_STRATEGY</Tag>
-        <English>Shoreline tiles let you grow [LINK=YIELD_FLAX]flax[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]flax planter[COLOR_REVERT] profession. The flax harvest can be increased by assigning an [LINK=UNIT_FLAX_PLANTER]expert flax planter[\LINK] to the job.</English>
+        <English>Shoreline tiles let you grow [LINK=YIELD_FLAX]flax[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]flax planter[COLOR_REVERT] profession. LIke hemp, flax can be used to make sails and ropes. The flax harvest can be increased by assigning an [LINK=UNIT_FLAX_PLANTER]expert flax planter[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -592,7 +592,7 @@
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_KAUTSCHUK_COLLECTOR</Tag>
         <English>
-            <Text>Kautschuk Collector:Kautschuk Collectors</Text>
+            <Text>Rubber Collector:Rubber Collectors</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
@@ -689,12 +689,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CLAY_MINER_PEDIA</Tag>
-        <English>Clay develops plasticity when wet, due to a molecular film of water surrounding the clay particles, but becomes hard, brittle and non–plastic upon drying or firing. Shale, formed largely from clay, is the most common sedimentary rock.[NEWLINE]Clay is the oldest known ceramic material. Prehistoric humans used it for making pottery. Early pottery shards have been dated to 14,000 BC, and clay tablets are the first known writing medium.</English>
+        <English>Clay develops plasticity when wet, due to a molecular film of water surrounding the clay particles, but becomes hard, brittle and non-plastic upon drying or firing. Shale, formed largely from clay, is the most common sedimentary rock.[NEWLINE]Clay is the oldest known ceramic material. Prehistoric humans used it for making pottery. Early pottery shards have been dated to 14,000 BC, and clay tablets are the first known writing medium.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CLAY_MINER_STRATEGY</Tag>
-        <English>Mountain and hill tiles let you gather [LINK=YIELD_CLAY]clay[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT] clay miner[COLOR_REVERT] profession. Clay production can be increased by assigning an [LINK=UNIT_MINER]expert clay miner[\LINK] to the job.</English>
+        <English>Mountain and hill tiles let you gather [LINK=YIELD_CLAY]clay[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT] clay miner[COLOR_REVERT] profession. To give a smooth finish to the walls of buildings, clay can be trowelled on by a mason. Clay production can be increased by assigning an [LINK=UNIT_MINER]expert clay miner[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -770,12 +770,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HOOCH_DISTILLER_PEDIA</Tag>
-        <English>Whisky was in the baggage of many Scottish immigrants who wanted something similar in their new home. Malted barley was the main ingredient in Europe but it was never as successful in the New World.[NEWLINE]Corn whiskey, later called bourbon, became the American standard. Commercial distilleries also began to make whiskey from wheat and rye starting in the late 18th century.[NEWLINE]During the Civil War excise taxes were introduced. That led to moonshine, high-proof liquor made illegally at night in the woods, especially in the American South.</English>
+        <English>Fruit brandy is made from a variety of fruits ranging from berries and plums to apples. Commercial distilleries began to make fruit brandy starting in the late 18th century.[NEWLINE]During the Civil War excise taxes were introduced. That led to moonshine, high-proof liquor made illegally at night in the woods, especially in the American South.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HOOCH_DISTILLER_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Whiskey distillers[COLOR_REVERT] can work in the [LINK=BUILDING_DISTILLERS_HOUSE]distiller's house[\LINK] or one of its upgrades to produce [LINK=YIELD_HOOCH]whiskey[\LINK] from [LINK=YIELD_CORN]corn[\LINK]. [LINK=UNIT_DISTILLER]Master whiskey distillers[\LINK] excel at this craft, and can greatly boost your production of whiskey.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Fruit brandy distillers[COLOR_REVERT] can work in the [LINK=BUILDING_DISTILLERS_HOUSE]distiller's house[\LINK] or one of its upgrades to produce [LINK=YIELD_HOOCH]fruit brandy[\LINK] from [LINK=YIELD_FRUITS]fruit[\LINK]. [LINK=UNIT_DISTILLER]Master fruit brandy distillers[\LINK] excel at this craft, and can greatly boost your production of fruit brandy.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -802,7 +802,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PADDED_FURNITURE_MAKER_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Upholsterers[COLOR_REVERT] can work in the [LINK=BUILDING_FURNITURE_MAKERS_HOUSE]furniture maker's house[\LINK] or one of its upgrades to produce [LINK=YIELD_PADDED_FURNITURE]padded furniture[\LINK] from [LINK=YIELD_LEATHER]leather[\LINK]. [LINK=UNIT_FURNITURE_MAKER]Master upholsterers[\LINK] excel at this craft, and can greatly boost your production of padded furniture.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Upholsterers[COLOR_REVERT] can work in the [LINK=BUILDING_FURNITURE_MAKERS_HOUSE]furniture maker's house[\LINK] or one of its upgrades to produce [LINK=YIELD_PADDED_FURNITURE]padded furniture[\LINK] from [LINK=YIELD_VALUABLE_WOOD]exotic wood[\LINK] and [LINK=YIELD_DOWNS]down[\LINK]. [LINK=UNIT_FURNITURE_MAKER]Master upholsterers[\LINK] excel at this craft, and can greatly boost your production of padded furniture.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -825,7 +825,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_TANNER_PIG_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Pigskin tanners[COLOR_REVERT] can work in the [LINK=BUILDING_TANNERS_HOUSE]tanner's house[\LINK] or one of its upgrades to produce [LINK=YIELD_PIG_SKINS]pigskins[\LINK] from [LINK=YIELD_PIGS]pigs[\LINK]. [LINK=UNIT_TANNER_PIG]Master pigskin tanners[\LINK] excel at this craft, and can greatly boost your production of pigskin.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Pigskin tanners[COLOR_REVERT] can work in the [LINK=BUILDING_TANNERS_HOUSE]tanner's house[\LINK] or one of its upgrades to produce [LINK=YIELD_PIG_SKINS]pigskins[\LINK] from [LINK=YIELD_PIGS]pigs[\LINK]. [LINK=UNIT_TANNER]Master pigskin tanners[\LINK] excel at this craft, and can greatly boost your production of pigskin.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -843,7 +843,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_POTTER_PEDIA</Tag>
-        <English>Pottery is an ancient way to store grain. Early pottery shards have been dated to 14,000 BC.[NEWLINE]In the rainy insect-ridden New World pots hold enough grain to keep settlers alive through the winter until in the spring when they can finally plant their new crops.[NEWLINE]Clay for pottery develops plasticity when wet, due to a molecular film of water surrounding the clay particles, but becomes hard, brittle and non–plastic upon drying or firing.</English>
+        <English>Pottery is an ancient way to store grain. Early pottery shards have been dated to 14,000 BC.[NEWLINE]In the rainy insect-ridden New World pots hold enough grain to keep settlers alive through the winter until in the spring when they can finally plant their new crops.[NEWLINE]Clay for pottery develops plasticity when wet, due to a molecular film of water surrounding the clay particles, but becomes hard, brittle and non-plastic upon drying or firing.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -871,7 +871,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FIELD_WORKER_TOOLS_TRADER_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Fieldworker tools traders[COLOR_REVERT] can work in the [LINK=BUILDING_VILLAGE_MARKET]village market[\LINK] or one of its upgrades to sell [LINK=YIELD_FIELD_WORKER_TOOLS]fieldworker tools[\LINK]. [LINK=UNIT_FIELD_WORKER_TOOLS_TRADER]Master fieldworker tools traders[\LINK] excel at this craft, and can greatly boost your sales of fieldworker tools.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Fieldworker tools traders[COLOR_REVERT] can work in the [LINK=BUILDING_VILLAGE_MARKET]village market[\LINK] or one of its upgrades to sell [LINK=YIELD_FIELD_WORKER_TOOLS]fieldworker tools[\LINK]. Making fieldworker tools requires [LINK=YIELD_HARDWOOD]hardwood[\LINK] and [LINK=YIELD_PIG_SKINS]pigskins[\LINK]. [LINK=UNIT_FIELD_WORKER_TOOLS_TRADER]Master fieldworker tools traders[\LINK] excel at this craft, and can greatly boost your sales of fieldworker tools.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -894,7 +894,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HOUSEHOLD_GOODS_TRADER_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Household goods traders[COLOR_REVERT] can work in the [LINK=BUILDING_VILLAGE_MARKET]village market[\LINK] or one of its upgrades to sell [LINK=YIELD_HOUSEHOLD_GOODS]household goods[\LINK]. [LINK=UNIT_HOUSEHOLD_GOODS_TRADER]Master household goods traders[\LINK] excel at this craft, and can greatly boost your sales of household goods.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Household goods traders[COLOR_REVERT] can work in the [LINK=BUILDING_VILLAGE_MARKET]village market[\LINK] or one of its upgrades to sell [LINK=YIELD_HOUSEHOLD_GOODS]household goods[\LINK]. Making household goods requires [LINK=YIELD_VALUABLE_WOOD]exotic wood[\LINK] and [LINK=YIELD_GOAT_SKINS]goat hides[\LINK]. [LINK=UNIT_HOUSEHOLD_GOODS_TRADER]Master household goods traders[\LINK] excel at this craft, and can greatly boost your sales of household goods.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1052,7 +1052,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_MILKMAID_CATTLE_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Milkmaids[COLOR_REVERT] can work in the [LINK=BUILDING_RANCHERS_HOUSE]rancher's house[\LINK] or one of its upgrades to produce dairy cow [LINK=YIELD_FIELD_MILK]milk[\LINK]. [LINK=UNIT_MILKMAID_CATTLE]Expert milkmaids[\LINK] excel at this craft. They dramatically boost your production of cow milk.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Milkmaids[COLOR_REVERT] can work in the [LINK=BUILDING_RANCHERS_HOUSE]rancher's house[\LINK] or one of its upgrades to produce dairy cow [LINK=YIELD_FIELD_MILK]milk[\LINK]. [LINK=UNIT_MILKMAID]Expert milkmaids[\LINK] excel at this craft. They dramatically boost your production of cow milk.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1079,7 +1079,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_MILKMAID_SHEEP_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Milkmaids[COLOR_REVERT] can work in the [LINK=BUILDING_RANCHERS_HOUSE]rancher's house[\LINK] or one of its upgrades to produce sheep [LINK=YIELD_FIELD_MILK]milk[\LINK]. [LINK=UNIT_MILKMAID_SHEEP]Expert milkmaids[\LINK] excel at this craft. They dramatically boost your production of sheep milk.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Milkmaids[COLOR_REVERT] can work in the [LINK=BUILDING_RANCHERS_HOUSE]rancher's house[\LINK] or one of its upgrades to produce sheep [LINK=YIELD_FIELD_MILK]milk[\LINK]. [LINK=UNIT_MILKMAID]Expert milkmaids[\LINK] excel at this craft. They dramatically boost your production of sheep milk.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1106,7 +1106,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_MILKMAID_GOATS_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Milkmaids[COLOR_REVERT] can work in the [LINK=BUILDING_RANCHERS_HOUSE]rancher's house[\LINK] or one of its upgrades to produce goat[LINK=YIELD_FIELD_MILK]milk[\LINK]. [LINK=UNIT_MILKMAID_GOATS]Expert milkmaids[\LINK] excel at this craft. They dramatically boost your production of goat milk.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Milkmaids[COLOR_REVERT] can work in the [LINK=BUILDING_RANCHERS_HOUSE]rancher's house[\LINK] or one of its upgrades to produce goat[LINK=YIELD_FIELD_MILK]milk[\LINK]. [LINK=UNIT_MILKMAID]Expert milkmaids[\LINK] excel at this craft. They dramatically boost your production of goat milk.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1133,13 +1133,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CHEESE_MAKER_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Cheesemakers[COLOR_REVERT] can work in the [LINK=BUILDING_CHEESE_MAKERS_HOUSE]cheesemaker's house[\LINK] or one of its upgrades to produce [LINK=YIELD_FIELD_CHEESE]cheese[\LINK] from [LINK=YIELD_FIELD_MILK]milk[\LINK]. [LINK=UNIT_BUTCHER]Master cheesemakers[\LINK] excel at this craft. They dramatically boost your production of cheese.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Cheesemakers[COLOR_REVERT] can work in the [LINK=BUILDING_CHEESE_MAKERS_HOUSE]cheesemaker's house[\LINK] or one of its upgrades to produce [LINK=YIELD_FIELD_CHEESE]cheese[\LINK] from [LINK=YIELD_FIELD_MILK]milk[\LINK]. [LINK=UNIT_CHEESE_MAKERS]Master cheesemakers[\LINK] excel at this craft. They dramatically boost your production of cheese.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_RAPE_OIL_TRADER</Tag>
         <English>
-            <Text>Oil Trader (Canola Oil):Cheese Makers (Canola Oil)</Text>
+            <Text>Oil Trader (Canola Oil):Oil Traders (Canola Oil)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
@@ -1160,7 +1160,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_RAPE_OIL_TRADER_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Rapeseed oil traders[COLOR_REVERT] can work in the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK] or one of its upgrades to produce [LINK=YIELD_FIELD_RAPE_OIL]rapeseed oil[\LINK] . [LINK=UNIT_RAPE_OIL_TRADER]Master rapeseed oil traders[\LINK] excel at this craft. They dramatically boost your production of rapeseed oil.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Rapeseed oil traders[COLOR_REVERT] can work in the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK] or one of its upgrades to produce [LINK=YIELD_FIELD_RAPE_OIL]rapeseed oil[\LINK] . [LINK=UNIT_OIL_TRADER]Master rapeseed oil traders[\LINK] excel at this craft. They dramatically boost your production of rapeseed oil.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1187,7 +1187,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_OLIVE_OIL_TRADER_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Olive oil traders[COLOR_REVERT] can work in the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK] or one of its upgrades to produce [LINK=YIELD_FIELD_OLIVE_OIL]olive oil[\LINK] . [LINK=UNIT_OLIVE_OIL_TRADER]Master olive oil traders[\LINK] excel at this craft. They dramatically boost your production of olive oil.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Olive oil traders[COLOR_REVERT] can work in the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK] or one of its upgrades to produce [LINK=YIELD_FIELD_OLIVE_OIL]olive oil[\LINK] . [LINK=UNIT_OIL_TRADER]Master olive oil traders[\LINK] excel at this craft. They dramatically boost your production of olive oil.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1214,7 +1214,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FESTIVE_CLOTHES_TAILOR_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Formal wear tailors[COLOR_REVERT] can work in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades to produce [LINK=YIELD_FESTIVE_CLOTHES]clothing for festive events[\LINK] . [LINK=UNIT_CLOTH_TAILOR]Master formal wear tailors[\LINK] excel at this craft. They dramatically boost your production of stylish clothing for special occasions.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Formal wear tailors[COLOR_REVERT] can work in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades to produce [LINK=YIELD_FESTIVE_CLOTHES]clothing for festive events[\LINK]. To make fancy dress outfits tailors need coloured cloth. [LINK=UNIT_CLOTH_TAYLOR]Master formal wear tailors[\LINK] excel at this craft. They dramatically boost your production of stylish clothing for special occasions.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1241,7 +1241,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_EVERYDAY_CLOTHES_TAILOR_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Workwear tailors[COLOR_REVERT] can work in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades to produce [LINK=YIELD_EVERYDAY_CLOTHES]clothing for everyday life[\LINK] . [LINK=UNIT_CLOTH_TAILOR]Master workwear tailors[\LINK] excel at this craft. They dramatically boost your production of practical clothing for day-to-day living.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Workwear tailors[COLOR_REVERT] can stitch away in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades to produce [LINK=YIELD_EVERYDAY_CLOTHES]clothing for everyday life[\LINK]. To make practical clothing tailors need coloured wool cloth.[LINK=UNIT_CLOTH_TAYLOR]Master workwear tailors[\LINK] excel at this craft. They dramatically boost your production of practical clothing for day-to-day living.</English>
         <German>TBD</German>
     </TEXT>    
     <TEXT>
@@ -1268,7 +1268,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CONFECTIONER_CHOCOLATE_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Chocolatiers[COLOR_REVERT] can work in the [LINK=BUILDING_CONFECTIONERS_HOUSE]confectioner's house[\LINK] or one of its upgrades to produce [LINK=YIELD_CHOCOLATE]a variety of chocolates[\LINK] . [LINK=UNIT_CONFECTIONER]Master chocolatiers[\LINK] excel at this craft. They dramatically boost your production of chocolates.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Chocolatiers[COLOR_REVERT] can work in the [LINK=BUILDING_CONFECTIONERS_HOUSE]confectioner's house[\LINK] or one of its upgrades to produce [LINK=YIELD_CHOCOLATE]a variety of chocolates[\LINK]. To make chocolates the confectioner needs cocoa and sugar. [LINK=UNIT_CONFECTIONER]Master chocolatiers[\LINK] excel at this craft. They dramatically boost your production of chocolates.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1295,7 +1295,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CONFECTIONER_VANILLA_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Confectioners[COLOR_REVERT] can work in the [LINK=BUILDING_CONFECTIONERS_HOUSE]confectioner's house[\LINK] or one of its upgrades to produce [LINK=YIELD_CHOCOLATE]vanilla treats[\LINK] . [LINK=UNIT_CONFECTIONER]Master chocolatiers[\LINK] excel at this craft. They dramatically boost your production of vanilla cakes and candies.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Confectioners[COLOR_REVERT] can work in the [LINK=BUILDING_CONFECTIONERS_HOUSE]confectioner's house[\LINK] or one of its upgrades to produce [LINK=YIELD_CHOCOLATE]vanilla treats[\LINK]. To make vanilla delicacies the confectioner needs vanilla pods.[LINK=UNIT_CONFECTIONER]Master confectioners[\LINK] excel at this craft. They dramatically boost your production of vanilla cakes and candies.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1322,7 +1322,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_LEATHER_PADDER_COATS_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Leather tailors[COLOR_REVERT] can work in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades to produce [LINK=YIELD_PADDED_COATS]padded coats[\LINK]. [LINK=UNIT_LEATHER_TAILOR]Master leather tailors[\LINK] excel at this craft. They dramatically boost your production of coats with linings.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Leatherworkers[COLOR_REVERT] can work in the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's house[\LINK] or one of its upgrades to produce [LINK=YIELD_PADDED_COATS]padded coats[\LINK]. To make an insulated coat leatherworkers need hides and down.  [LINK=UNIT_LEATHER_TAYLOR]Master leatherworkers[\LINK] excel at this craft. They dramatically boost your production of coats with linings.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1349,7 +1349,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_LEATHER_PADDER_BOOTS_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Leather tailors[COLOR_REVERT] can work in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades to produce [LINK=YIELD_PADDED_BOOTS]leather boots with linings[\LINK]. [LINK=UNIT_LEATHER_TAILOR]Master leather tailors[\LINK] excel at this craft. They dramatically boost your production of leather boots.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Leatherworkers[COLOR_REVERT] can work in the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's house[\LINK] or one of its upgrades to produce [LINK=YIELD_PADDED_BOOTS]goathide boots with linings[\LINK]. To make the boots leatherworkers need [LINK=YIELD_GOAT_HIDES]goat hides[\LINK] and [LINK=YIELD_WOOL]wool[\LINK] [LINK=UNIT_LEATHER_TAYLOR]Master leatherworkers[\LINK] excel at this craft. They dramatically boost your production of leather boots.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1403,7 +1403,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FIREWORKER_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Powder makers[COLOR_REVERT] can work in the [LINK=BUILDING_FIREWORKERS_HOUSE]powder magazine[\LINK] or one of its upgrades to produce [LINK=YIELD_GUNPOWDER]gunpowder[\LINK]. [LINK=UNIT_FIREWORKER]Master powder makers[\LINK] excel at this craft. They dramatically boost your production of gunpowder.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Powder makers[COLOR_REVERT] can work in the [LINK=BUILDING_FIREWORKERS_HOUSE]powder magazine[\LINK] or one of its upgrades to produce [LINK=YIELD_GUNPOWDER]gunpowder[\LINK]. To make gunpowder the powder makers needs charcoal. [LINK=UNIT_FIREWORKER]Master powder makers[\LINK] excel at this craft. They dramatically boost your production of gunpowder.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
