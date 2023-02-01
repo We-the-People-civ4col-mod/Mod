@@ -231,7 +231,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
-        <Russian>Пастух (козы):Пастух (козы)</Russian>
+        <Russian>Пастух (козы):Пастухи (козы)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_GOATHERD_HELP</Tag>

@@ -19,6 +19,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Оружейная</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ARMORY_PEDIA</Tag>
@@ -55,6 +56,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Арсенал</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ARSENAL_PEDIA</Tag>
@@ -129,6 +131,7 @@
         <English>Beer Factory</English>
         <French>Brasserie industrielle</French>
         <German>Bierfabrik</German>
+        <Russian>Фабрика пива</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BEER_FACTORY_PEDIA</Tag>
@@ -196,6 +199,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Кузница</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BLACKSMITH_SHOP_PEDIA</Tag>
@@ -235,6 +239,7 @@
         <English>Brewery</English>
         <French>Brasserie</French>
         <German>Brauerei</German>
+        <Russian>Пивоварня</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BREWERY_PEDIA</Tag>
@@ -272,6 +277,7 @@
         <English>Butchery</English>
         <French>Boucherie</French>
         <German>Metzgerei</German>
+        <Russian>Цех по заготовке мяса</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BUTCHERY_PEDIA</Tag>
@@ -371,6 +377,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Региональный рынок</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CENTRAL_CITY_MARKET_PEDIA</Tag>
@@ -506,6 +513,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Фабрика сигар и чая</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CIGAR_FACTORY_PEDIA</Tag>
@@ -532,6 +540,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>Zitadelle</German>
+        <Russian>Цитадель</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CITADEL_PEDIA</Tag>
@@ -556,6 +565,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>Rathaus</German>
+        <Russian>Здание муниципалитета</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CITYHALL_PEDIA</Tag>
@@ -572,6 +582,7 @@
         <English>City Hospital</English>
         <French>Hôpital</French>
         <German>Bezirkskrankenhaus</German>
+        <Russian>Городской госпиталь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CITY_HOSPITAL_PEDIA</Tag>
@@ -662,6 +673,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Амбар</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CORN_CHAMBER_PEDIA</Tag>
@@ -684,6 +696,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>Zollhaus</German>
+        <Russian>Таможня</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CUSTOM_HOUSE_PEDIA</Tag>
@@ -712,6 +725,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Центральное таможенное управление</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CUSTOM_OFFICE_PEDIA</Tag>
@@ -783,6 +797,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Винокурня</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_DISTILLERY_PEDIA</Tag>
@@ -898,6 +913,7 @@
         <English>Dyery</English>
         <French>Teinturerie</French>
         <German>Färberei</German>
+        <Russian>Красильня</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_DYERY_PEDIA</Tag>
@@ -992,6 +1008,7 @@
         <English>Furniture Factory</English>
         <French>Usine de meubles</French>
         <German>Möbelfabrik</German>
+        <Russian>Мебельная фабрика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FURNITURE_FACTORY_PEDIA</Tag>
@@ -1029,6 +1046,7 @@
         <English>Cabinetmaker's Shop</English>
         <French>Ebenisterie</French>
         <German>Möbelschreinerei</German>
+        <Russian>Столярная мастерская</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FURNITURY_PEDIA</Tag>
@@ -1061,6 +1079,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Меховая фабрика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FUR_FACTORY_PEDIA</Tag>
@@ -1134,6 +1153,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Скорняжный цех</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FUR_TRADING_POST_PEDIA</Tag>
@@ -1164,6 +1184,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Зернохранилище</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GRANARY_PEDIA</Tag>
@@ -1213,6 +1234,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Большой бастион</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GREAT_BASTION_PEDIA</Tag>
@@ -1301,6 +1323,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>Große Eisenwarenfabrik</German>
+        <Russian>Завод инструментов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GREAT_TOOL_FACTORY_PEDIA</Tag>
@@ -1363,6 +1386,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>Holzmanufaktur</German>
+        <Russian>Фабрика обработки древесины</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GREAT_WHEELWRIGHTS_WORKSHOP_PEDIA</Tag>
@@ -1391,6 +1415,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Большая скотоводческая ферма</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_HORSE_MARKET_PEDIA</Tag>
@@ -1423,6 +1448,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Кузнечный цех</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_IRONWORKS_PEDIA</Tag>
@@ -1468,6 +1494,7 @@
         <English>Large Dyery</English>
         <French>Teinturerie industrielle</French>
         <German>Große Färberei</German>
+        <Russian>Большая красильня</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LARGE_DYERY_PEDIA</Tag>
@@ -1488,6 +1515,7 @@
         <English>Leather Factory</English>
         <French>Tannerie industrielle</French>
         <German>Lederfabrik</German>
+        <Russian>Фабрика по выделке кожи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_FACTORY_PEDIA</Tag>
@@ -1520,6 +1548,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Плотницкий цех</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LUMBER_MILL_PEDIA</Tag>
@@ -1556,6 +1585,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Военный склад</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_MAGAZINE_PEDIA</Tag>
@@ -1594,6 +1624,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Деревенский рынок</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_MARKET_PEDIA</Tag>
@@ -1612,6 +1643,7 @@
         <English>Medical Office</English>
         <French>Cabinet médical</French>
         <German>Arztpraxis</German>
+        <Russian>Дом врача</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_MEDICAL_OFFICE_PEDIA</Tag>
@@ -1638,6 +1670,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Кафедральный собор</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_MINSTER_PEDIA</Tag>
@@ -1676,6 +1709,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Тотем</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_NATIVE_AMERICA_TOTEM_PEDIA</Tag>
@@ -1716,6 +1750,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Кукурузная хижина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_NATIVE_CORN_CHAMBER_PEDIA</Tag>
@@ -1748,6 +1783,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Загон для лошадей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_NATIVE_STABLE_PEDIA</Tag>
@@ -1809,6 +1845,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Городская газета</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_NEWSPAPER_PEDIA</Tag>
@@ -1839,6 +1876,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Большой оперный театр</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OPERA_PEDIA</Tag>
@@ -1896,6 +1934,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Печатный пресс</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_PRINTING_PRESS_PEDIA</Tag>
@@ -1967,6 +2006,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Обустроенное ранчо</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_RANCH_PEDIA</Tag>
@@ -2001,6 +2041,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Фабрика крепкого алкоголя</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_RUM_FACTORY_PEDIA</Tag>
@@ -2093,6 +2134,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Судоверфь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SHIPYARD_PEDIA</Tag>
@@ -2115,6 +2157,7 @@
         <English>Slaughterhouse</English>
         <French>Abattoir</French>
         <German>Schlachthaus</German>
+        <Russian>Скотобойня</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SLAUGHTERHOUSE_PEDIA</Tag>
@@ -2133,6 +2176,7 @@
         <English>Spice Trader's Hall</English>
         <French>Halle aux Épices</French>
         <German>Gewürzhandelshalle</German>
+        <Russian>Фабрика специй</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SPICE_TRADERS_HALL_PEDIA</Tag>
@@ -2170,6 +2214,7 @@
         <English>Spice Trading Post</English>
         <French>Epicerie</French>
         <German>Gewürzhandelsposten</German>
+        <Russian>Цех по производству специй</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SPICE_TRADERS_POST_PEDIA</Tag>
@@ -2202,6 +2247,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Загон для скота</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_STABLE_PEDIA</Tag>
@@ -2287,6 +2333,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Крепость</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_STRONGHOLD_PEDIA</Tag>
@@ -2326,6 +2373,7 @@
         <English>Tannery</English>
         <French>Tannerie</French>
         <German>Gerberei</German>
+        <Russian>Дубильня</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TANNERY_PEDIA</Tag>
@@ -2377,6 +2425,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Текстильная фабрика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TEXTILE_MILL_PEDIA</Tag>
@@ -2440,6 +2489,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Табачно-чайный дом</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOBACCONIST_HOUSE_PEDIA</Tag>
@@ -2476,6 +2526,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Табачно-чайный цех</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOBACCONIST_SHOP_PEDIA</Tag>
@@ -2502,6 +2553,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>Eisenwarenfabrik</German>
+        <Russian>Фабрика инструментов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOOL_FACTORY_PEDIA</Tag>
@@ -2536,6 +2588,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Ратуша</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOWNHALL_PEDIA</Tag>
@@ -2558,6 +2611,7 @@
         <English>Town Hospital</English>
         <French>Clinique</French>
         <German>Stadtkrankenhaus</German>
+        <Russian>Городская больница</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOWN_HOSPITAL_PEDIA</Tag>
@@ -2584,6 +2638,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Russian>Городской рынок</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOWN_MARKET_PEDIA</Tag>
@@ -2661,6 +2716,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>Gemeindehaus</German>
+        <Russian>Администрация поселения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_VILLAGEHALL_PEDIA</Tag>
@@ -2735,6 +2791,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Склад</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WAREHOUSE_PEDIA</Tag>
@@ -2769,6 +2826,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Хранилище</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WAREHOUSE_EXPANSION_PEDIA</Tag>
@@ -2793,6 +2851,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>Große Lagerhauserweiterung</German>
+        <Russian>Расширенное хранилище</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WAREHOUSE_EXPANSION_2_PEDIA</Tag>
@@ -2895,6 +2954,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Ткацкий цех</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WEAVERS_SHOP_PEDIA</Tag>
@@ -2921,6 +2981,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>Tranfabrik</German>
+        <Russian>Завод ворвани</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WHALE_OIL_FACTORY_PEDIA</Tag>
@@ -2943,6 +3004,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>Trankocherei</German>
+        <Russian>Фабрика ворвани</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WHALE_OIL_HOUSE_PEDIA</Tag>
@@ -2965,6 +3027,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>Wagnerei</German>
+        <Russian>Мастерская обработки древесины</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WHEELWRIGHTS_WORKSHOP_PEDIA</Tag>
@@ -3014,6 +3077,7 @@
         <English>Winery</English>
         <French>Chai à vin</French>
         <German>Winzerei</German>
+        <Russian>Цех виноделов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WINERY_PEDIA</Tag>
@@ -3034,6 +3098,7 @@
         <English>Wine Factory</English>
         <French>Domaine viticole</French>
         <German>Weinfabrik</German>
+        <Russian>Фабрика вина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WINE_FACTORY_PEDIA</Tag>

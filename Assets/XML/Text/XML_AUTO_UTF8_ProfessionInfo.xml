@@ -217,7 +217,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
-        <Russian>Кузнец (клинки):Кузнец (клинки)</Russian>
+        <Russian>Кузнец (клинки):Кузнецы (клинки)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BLADESMITH_HELP</Tag>
