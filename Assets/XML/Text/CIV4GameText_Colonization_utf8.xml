@@ -634,7 +634,8 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] hat Euren Steuersatz von %d2_old_rate%% auf %d3_new_rate%% erhöht</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] ha aumentato la tua percentuale di tasse dal %d2_old_rate%% al %d3_new_rate%%</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] ha subido vuestra carga impositiva de %d2_old_rate%% a %d3_new_rate%%.</Spanish>
-        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] повысил ставку налога для вас с %d2_old_rate%% до %d3_new_rate%%</Russian>    </TEXT>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] повысил ставку налога для вас с %d2_old_rate%% до %d3_new_rate%%</Russian>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BOSTON_TEA_PARTY</Tag>
         <English>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Angry %s1_civ_adjective colonists destroy all shipments of %s3_yield in protest for excessive taxation without representation !</English>
