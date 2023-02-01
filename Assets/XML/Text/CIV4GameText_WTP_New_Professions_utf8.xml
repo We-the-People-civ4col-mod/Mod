@@ -440,7 +440,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FLAX_PLANTER_STRATEGY</Tag>
-        <English>Shoreline tiles let you grow [LINK=YIELD_FLAX]flax[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]flax planter[COLOR_REVERT] profession. Like hemp, flax can be used to make sails and ropes. The flax harvest can be increased by assigning an [LINK=UNIT_FLAX_PLANTER]expert flax planter[\LINK] to the job.</English>
+        <English>Many different terrains let you grow [LINK=YIELD_FLAX]flax[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]flax planter[COLOR_REVERT] profession. Like hemp, flax can be used to make sails and ropes. The flax harvest can be increased by assigning an [LINK=UNIT_FLAX_PLANTER]expert flax planter[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
