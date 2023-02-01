@@ -1480,6 +1480,7 @@
         <German>Euer Abenteuer kann beginnen ...</German>
         <Italian>Statuto reale</Italian>
         <Spanish>Correo Real</Spanish>
+        <Russian>Королевская грамота</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DAWN_OF_MAN_SCREEN_STARTING_UNITS</Tag>
@@ -1488,6 +1489,7 @@
         <German>Einheiten zu Beginn:</German>
         <Italian>Unità iniziali:</Italian>
         <Spanish>Unidades iniciales:</Spanish>
+        <Russian>Начальные юниты</Russian>
     </TEXT>
     <TEXT>
         <Tag>INTERFACE_REVOLUTION</Tag>

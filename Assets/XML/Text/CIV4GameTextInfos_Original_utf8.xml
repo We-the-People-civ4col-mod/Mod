@@ -1414,6 +1414,7 @@
         <German>Fortfahren</German>
         <Italian>Continua</Italian>
         <Spanish>Continuar</Spanish>
+        <Russian>Продолжить</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_ADVISOR_NAME</Tag>
@@ -3856,7 +3857,7 @@
         <German>Karte wählen</German>
         <Italian>Seleziona una mappa</Italian>
         <Spanish>Seleccionar un mapa</Spanish>
-        <Russian>Выбрать карту</Russian>
+        <Russian>Выберите карту</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_SELECT_A</Tag>
@@ -3865,6 +3866,7 @@
         <German>Wählen[SPACE]</German>
         <Italian>Seleziona [SPACE]</Italian>
         <Spanish>Seleccionar [SPACE]</Spanish>
+        <Russian>Выберите [SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_SINGLE_PLAYER</Tag>
