@@ -23,6 +23,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ячмень</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_BARLEY_PEDIA</Tag>
@@ -53,6 +54,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Пиво</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_BEER_PEDIA</Tag>
@@ -83,6 +85,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Колокола свободы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_BELLS_PEDIA</Tag>
@@ -115,6 +118,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Клинки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_BLADES_PEDIA</Tag>
@@ -132,6 +136,7 @@
         </German>
         <Italian>Cannoni</Italian>
         <Spanish>Cañones</Spanish>
+        <Russian>Пушки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CANNONS_PEDIA</Tag>
@@ -150,6 +155,7 @@
         </German>
         <Italian>Bovini</Italian>
         <Spanish>Bovinos</Spanish>
+        <Russian>Коровы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CATTLE_PEDIA</Tag>
@@ -176,6 +182,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Сигары</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CIGARS_PEDIA</Tag>
@@ -208,6 +215,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ткань</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CLOTH_PEDIA</Tag>
@@ -236,6 +244,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Пальто</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COATS_PEDIA</Tag>
@@ -268,6 +277,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Листья коки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COCA_LEAVES_PEDIA</Tag>
@@ -294,6 +304,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Какао</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COCOA_PEDIA</Tag>
@@ -312,6 +323,7 @@
         </German>
         <Italian>Frutta di cacao</Italian>
         <Spanish>Fruta del cacao</Spanish>
+        <Russian>Плоды какао</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COCOA_FRUITS_PEDIA</Tag>
@@ -342,6 +354,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Кофе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COFFEE_PEDIA</Tag>
@@ -362,6 +375,7 @@
         </German>
         <Italian>Bacche di caffè</Italian>
         <Spanish>Bayas de café</Spanish>
+        <Russian>Кофейные ягоды</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COFFEE_BERRIES_PEDIA</Tag>
@@ -394,6 +408,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Цветная ткань</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COLOURED_CLOTH_PEDIA</Tag>
@@ -424,6 +439,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Хлопок</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COTTON_PEDIA</Tag>
@@ -452,6 +468,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Кресты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CROSSES_PEDIA</Tag>
@@ -484,6 +501,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Культура</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CULTURE_PEDIA</Tag>
@@ -514,6 +532,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Образование</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_EDUCATION_PEDIA</Tag>
@@ -546,6 +565,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Еда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_FOOD_PEDIA</Tag>
@@ -574,6 +594,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Мех</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_FUR_PEDIA</Tag>
@@ -594,6 +615,7 @@
         </German>
         <Italian>Mobili</Italian>
         <Spanish>Muebles</Spanish>
+        <Russian>Мебель</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_FURNITURE_PEDIA</Tag>
@@ -624,6 +646,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Драгоценные камни</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_GEMS_PEDIA</Tag>
@@ -656,6 +679,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Золото</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_GOLD_PEDIA</Tag>
@@ -688,6 +712,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Виноград</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_GRAPES_PEDIA</Tag>
@@ -720,6 +745,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Молотки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HAMMERS_PEDIA</Tag>
@@ -736,6 +762,7 @@
         <German>Gesundheit</German>
         <Italian>Health</Italian>
         <Spanish>Health</Spanish>
+        <Russian>Здоровье</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HEALTH_PEDIA</Tag>
@@ -766,6 +793,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Конопля</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HEMP_PEDIA</Tag>
@@ -796,6 +824,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Коровьи шкуры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HIDES_PEDIA</Tag>
@@ -826,6 +855,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Лошади</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HORSES_PEDIA</Tag>
@@ -858,6 +888,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Индиго</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_INDIGO_PEDIA</Tag>
@@ -890,6 +921,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Выделанная кожа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_LEATHER_PEDIA</Tag>
@@ -916,6 +948,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Пиломатериалы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_LUMBER_PEDIA</Tag>
@@ -952,6 +985,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Предметы роскоши</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_LUXURY_GOODS_PEDIA</Tag>
@@ -986,7 +1020,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
-
+        <Russian>Мушкеты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_MUSKETS_PEDIA</Tag>
@@ -1015,6 +1049,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Руда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_ORE_PEDIA</Tag>
@@ -1047,6 +1082,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Премиумные шубы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PREMIUM_COATS_PEDIA</Tag>
@@ -1079,6 +1115,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Премиальный мех</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PREMIUM_FUR_PEDIA</Tag>
@@ -1111,6 +1148,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Каменная соль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_RAW_SALT_PEDIA</Tag>
@@ -1143,6 +1181,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Красный перец</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_RED_PEPPER_PEDIA</Tag>
@@ -1173,6 +1212,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Канаты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_ROPE_PEDIA</Tag>
@@ -1203,6 +1243,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ром</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_RUM_PEDIA</Tag>
@@ -1239,6 +1280,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Парусина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_SAILCLOTH_PEDIA</Tag>
@@ -1269,6 +1311,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Соль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_SALT_PEDIA</Tag>
@@ -1289,6 +1332,7 @@
         </German>
         <Italian>Pecore</Italian>
         <Spanish>Ovejas</Spanish>
+        <Russian>Овцы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_SHEEP_PEDIA</Tag>
@@ -1315,6 +1359,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Серебро</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_SILVER_PEDIA</Tag>
@@ -1348,6 +1393,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Специи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_SPICES_PEDIA</Tag>
@@ -1382,6 +1428,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Камень:Камни</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_STONE_PEDIA</Tag>
@@ -1414,6 +1461,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Сахар</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_SUGAR_PEDIA</Tag>
@@ -1450,6 +1498,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Табак</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_TOBACCO_PEDIA</Tag>
@@ -1486,6 +1535,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Инструменты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_TOOLS_PEDIA</Tag>
@@ -1522,6 +1572,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Мануфактура</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_TRADE_GOODS_PEDIA</Tag>
@@ -1542,6 +1593,7 @@
         </German>
         <Italian>Legno pregiato</Italian>
         <Spanish>Madera fina</Spanish>
+        <Russian>Ценная древесина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_VALUABLE_WOOD_PEDIA</Tag>
@@ -1572,6 +1624,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Китовый жир</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_WHALE_BLUBBER_PEDIA</Tag>
@@ -1602,6 +1655,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ворвань</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_WHALE_OIL_PEDIA</Tag>
@@ -1632,6 +1686,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Вино</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_WINE_PEDIA</Tag>
@@ -1664,6 +1719,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Шерсть</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_WOOL_PEDIA</Tag>
@@ -1694,6 +1750,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Шерстяная ткань</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_WOOL_CLOTH_PEDIA</Tag>
@@ -1708,6 +1765,7 @@
         <German>Zufriedenheit</German>
         <Italian>Soddisfazione</Italian>
         <Spanish>Satisfacción</Spanish>
+        <Russian>Счастье</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HAPPINESS_PEDIA</Tag>
@@ -1721,6 +1779,7 @@
         <German>Unzufriedenheit</German>
         <Italian>Malcontento</Italian>
         <Spanish>Insatisfacción</Spanish>
+        <Russian>Несчастье</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_UNHAPPINESS_PEDIA</Tag>
@@ -1731,6 +1790,7 @@
         <Tag>TXT_KEY_YIELD_LAW</Tag>
         <English>Law</English>
         <German>Gesetz</German>
+        <Russian>Закон</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_LAW_PEDIA</Tag>
@@ -1741,6 +1801,7 @@
         <Tag>TXT_KEY_YIELD_CRIME</Tag>
         <English>Crime</English>
         <German>Verbrechen</German>
+        <Russian>Преступность</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CRIME_PEDIA</Tag>

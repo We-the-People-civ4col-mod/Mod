@@ -1002,6 +1002,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Уголь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COAL</Tag>
@@ -1012,6 +1013,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Уголь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COAL</Tag>
@@ -1022,6 +1024,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Уголь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COAL_PEDIA</Tag>
@@ -1046,6 +1049,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Древесный уголь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CHAR_COAL</Tag>
@@ -1056,6 +1060,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Древесный уголь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHAR_COAL</Tag>
@@ -1066,6 +1071,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Древесный уголь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHAR_COAL_PEDIA</Tag>
@@ -1090,6 +1096,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Порох</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BLACK_POWDER</Tag>
@@ -1100,6 +1107,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Порох</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BLACK_POWDER</Tag>
@@ -1110,6 +1118,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Порох</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_BLACK_POWDER_PEDIA</Tag>
@@ -1134,6 +1143,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Хлебобулочные изделия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BAKERY_GOODS</Tag>
@@ -1144,6 +1154,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Хлебобулочные изделия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BAKERY_GOODS</Tag>
@@ -1154,6 +1165,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Хлебобулочные изделия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_BAKERY_GOODS_PEDIA</Tag>
@@ -1178,6 +1190,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Ваниль</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_VANILLA</Tag>
@@ -1188,6 +1201,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Ваниль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_VANILLA</Tag>
@@ -1198,6 +1212,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Ваниль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_VANILLA_PEDIA</Tag>
@@ -1222,6 +1237,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Стручки ванили</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_VANILLA_PODS</Tag>
@@ -1232,6 +1248,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Стручки ванили</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_VANILLA_PODS</Tag>
@@ -1242,6 +1259,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Стручки ванили</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_VANILLA_PODS_PEDIA</Tag>
@@ -1266,6 +1284,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Торф</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_PEAT</Tag>
@@ -1276,6 +1295,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Торф</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEAT</Tag>
@@ -1286,6 +1306,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Торф</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PEAT_PEDIA</Tag>
@@ -1310,6 +1331,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Арахис</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_PEANUTS</Tag>
@@ -1320,6 +1342,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Арахис</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEANUTS</Tag>
@@ -1330,6 +1353,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Арахис</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PEANUTS_PEDIA</Tag>
@@ -1354,6 +1378,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Жареный арахис</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROASTED_PEANUTS</Tag>
@@ -1364,6 +1389,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Жареный арахис</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROASTED_PEANUTS</Tag>
@@ -1374,6 +1400,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Жареный арахис</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_ROASTED_PEANUTS_PEDIA</Tag>
@@ -1398,6 +1425,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Оливки</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_OLIVES</Tag>
@@ -1408,6 +1436,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Оливки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OLIVES</Tag>
@@ -1418,6 +1447,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Оливки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_OLIVES_PEDIA</Tag>
@@ -1442,6 +1472,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Рапс</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_RAPE</Tag>
@@ -1452,6 +1483,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Рапс</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RAPE</Tag>
@@ -1462,6 +1494,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Рапс</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_RAPE_PEDIA</Tag>
@@ -1486,6 +1519,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Оливковое масло</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_OLIVE_OIL</Tag>
@@ -1496,6 +1530,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Оливковое масло</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OLIVE_OIL</Tag>
@@ -1506,6 +1541,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Оливковое масло</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_OLIVE_OIL_PEDIA</Tag>
@@ -1530,6 +1566,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Рапсовое масло</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_RAPE_OIL</Tag>
@@ -1540,6 +1577,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Рапсовое масло</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RAPE_OIL</Tag>
@@ -1550,6 +1588,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Рапсовое масло</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_RAPE_OIL_PEDIA</Tag>
@@ -1574,6 +1613,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Товары для домашнего хозяйства</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_HOUSEHOLD_GOODS</Tag>
@@ -1584,6 +1624,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Товары для домашнего хозяйства</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HOUSEHOLD_GOODS</Tag>
@@ -1594,6 +1635,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Товары для домашнего хозяйства</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HOUSEHOLD_GOODS_PEDIA</Tag>
@@ -1618,6 +1660,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Товары для полевых работ</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_FIELD_WORKER_TOOLS</Tag>
@@ -1628,6 +1671,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Товары для полевых работ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FIELD_WORKER_TOOLS</Tag>
@@ -1638,6 +1682,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Товары для полевых работ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_FIELD_WORKER_TOOLS_PEDIA</Tag>
@@ -1662,6 +1707,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Рис</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_RICE</Tag>
@@ -1672,6 +1718,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Рис</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RICE</Tag>
@@ -1682,6 +1729,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Рис</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_RICE_PEDIA</Tag>
@@ -1706,6 +1754,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Маниока</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_CASSAVA</Tag>
@@ -1716,6 +1765,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Маниока</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CASSAVA</Tag>
@@ -1726,6 +1776,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Маниока</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CASSAVA_PEDIA</Tag>
@@ -1750,6 +1801,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Кошениль</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_COCHINEAL</Tag>
@@ -1760,6 +1812,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Кошениль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCHINEAL</Tag>
@@ -1770,6 +1823,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Кошениль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COCHINEAL_PEDIA</Tag>
@@ -1794,6 +1848,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Шоколад</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_CHOCOLATE</Tag>
@@ -1804,6 +1859,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Шоколад</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHOCOLATE</Tag>
@@ -1814,6 +1870,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Шоколад</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHOCOLATE_PEDIA</Tag>
@@ -1838,6 +1895,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Утепленные куртки</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_PADDED_LEATHER_COATS</Tag>
@@ -1848,6 +1906,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Утепленные куртки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PADDED_LEATHER_COATS</Tag>
@@ -1858,6 +1917,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Утепленные куртки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PADDED_LEATHER_COATS_PEDIA</Tag>
@@ -1882,6 +1942,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Молоко</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_MILK</Tag>
@@ -1892,6 +1953,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Молоко</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MILK</Tag>
@@ -1902,6 +1964,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Молоко</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_MILK_PEDIA</Tag>
@@ -1926,6 +1989,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Каучук</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_KAUTSCHUK</Tag>
@@ -1936,6 +2000,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Каучук</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_KAUTSCHUK</Tag>
@@ -1946,6 +2011,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Каучук</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_KAUTSCHUK_PEDIA</Tag>
@@ -1970,6 +2036,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Сыр</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_CHEESE</Tag>
@@ -1980,6 +2047,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Сыр</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHEESE</Tag>
@@ -1990,6 +2058,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Сыр</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHEESE_PEDIA</Tag>
@@ -2014,6 +2083,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Керамика</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_POTTERY</Tag>
@@ -2024,6 +2094,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Керамика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POTTERY</Tag>
@@ -2034,6 +2105,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Керамика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_POTTERY_PEDIA</Tag>
@@ -2058,6 +2130,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Повседневная одежда</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_EVERYDAY_CLOTHES</Tag>
@@ -2068,6 +2141,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Повседневная одежда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_EVERYDAY_CLOTHES</Tag>
@@ -2078,6 +2152,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Повседневная одежда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_EVERYDAY_CLOTHES_PEDIA</Tag>
@@ -2102,6 +2177,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Праздничная одежда</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_FESTIVE_CLOTHES</Tag>
@@ -2112,6 +2188,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Праздничная одежда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FESTIVE_CLOTHES</Tag>
@@ -2122,6 +2199,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Праздничная одежда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_FESTIVE_CLOTHES_PEDIA</Tag>
