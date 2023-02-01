@@ -4,13 +4,16 @@
     <TEXT>
         <Tag>TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS</Tag>
         <English>Colony land size</English>
+        <Russian>Размер колонии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS_1_PLOT</Tag>
         <English>1 plot radius</English>
+        <Russian>Радиус 1 клетка</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS_2_PLOT</Tag>
         <English>2 plot radius</English>
+        <Russian>Радиус 2 клетки</Russian>
     </TEXT>
 </Civ4GameText>
