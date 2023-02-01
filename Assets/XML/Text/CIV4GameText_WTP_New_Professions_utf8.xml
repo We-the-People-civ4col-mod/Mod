@@ -791,7 +791,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
-        <Russian>Винокур (самогон):Винокуры (самогон)</Russian>
+        <Russian>Винокур (бренди):Винокуры (бренди)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HOOCH_DISTILLER_HELP</Tag>

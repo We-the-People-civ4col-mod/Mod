@@ -12,6 +12,7 @@
         <German>Nation und Anführer werden zufällig ausgewählt.</German>
         <Italian>Leader e nazione verranno scelti casualmente.</Italian>
         <Spanish>La nación y el líder se elegirán al azar.</Spanish>
+        <Russian>Нация и Лидер будут выбраны случайным образом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_MAIN_MENU_CIV_PROTECT_DESC</Tag>
@@ -28,6 +29,7 @@
         <German>Nationen:</German>
         <Italian>Nazioni:</Italian>
         <Spanish>Naciones:</Spanish>
+        <Russian>Нации :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_CIV_VERSION</Tag>
@@ -36,6 +38,7 @@
         <German>Colonization-Version:</German>
         <Italian>Versione di Colonization:</Italian>
         <Spanish>Versión de Colonization:</Spanish>
+        <Russian>Версия Колонизации :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HAVENT_MET_CIV</Tag>
@@ -156,6 +159,7 @@
         <German>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT][NEWLINE][NEWLINE]Was wollt Ihr in dieser Siedlung errichten?</German>
         <Italian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT][NEWLINE][NEWLINE]Cosa ti piacerebbe costruire in questo insediamento?</Italian>
         <Spanish>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT][NEWLINE][NEWLINE]¿Qué os gustaría construir en este asentamiento?</Spanish>
+        <Russian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT][NEWLINE][NEWLINE]Что бы вы хотели построить в этом поселении?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_EXAMINE_CITY</Tag>
@@ -164,6 +168,7 @@
         <German>Siedlung untersuchen</German>
         <Italian>Esamina insediamento</Italian>
         <Spanish>Examinar el asentamiento</Spanish>
+        <Russian>Осмотреть поселение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SETTLE_NEW_CITY_NAME</Tag>
@@ -172,6 +177,7 @@
         <German>Siedlungsname :</German>
         <Italian>Nome insediamento :</Italian>
         <Spanish>Nombre del asentamiento :</Spanish>
+        <Russian>Наименование поселения :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CANNOT_CAPTURE</Tag>
@@ -292,6 +298,7 @@
         <German>Einen Beruf wählen für die Einheit [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] (%s2_current_profession)</German>
         <Italian>Scegli una professione per l'unità [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] (%s2_current_profession)</Italian>
         <Spanish>Elegir una profesión para [NUM1:el:la:los:las] [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] (%s2_current_profession)</Spanish>
+        <Russian>Выберите профессию для [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] (%s2_current_profession)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHOOSE_PROFESSION_ITEM_MAX</Tag>
@@ -366,6 +373,7 @@
         <German>Einheit zur Anwerbung auswählen</German>
         <Italian>Scegli un'unità da acquistare</Italian>
         <Spanish>Elegir una unidad para comprar</Spanish>
+        <Russian>Выберите юнит, который хотите купить</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NEW_IMMIGRANT_AVAILABLE</Tag>
@@ -374,6 +382,7 @@
         <German>[COLOR_REVERT]Ein [COLOR_UNIT_TEXT]%s2[COLOR_REVERT] wünscht, in die Kolonien auszuwandern. Er hat vernommen, dass ihm in der Neuen Welt kein Landesherr Vorschriften macht, in welche Kirche er zu gehen habe, und wie gut das Leben dort sei.</German>
         <Italian>[COLOR_REVERT]I disordini religiosi in %s1_europe hanno causato un aumento dell'emigrazione. [COLOR_UNIT_TEXT]%s2[COLOR_REVERT] attende in Europa.</Italian>
         <Spanish>[COLOR_REVERT]El malestar religioso en %s1_europe ha aumentado la emigración. [NUM2:Un:Una] [COLOR_UNIT_TEXT]%s2[COLOR_REVERT] aguarda en Europa.</Spanish>
+        <Russian>[COLOR_REVERT][COLOR_UNIT_TEXT]%s2[COLOR_REVERT] хочет эмигрировать в колонии. Он слышал, как хороша жизнь в Новом Свете. Там никто не будет диктовать ему, в какую церковь ходить.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NEW_IMMIGRANT_AVAILABLE_SHORT</Tag>
@@ -382,6 +391,7 @@
         <German>[COLOR_REVERT]Ein [COLOR_UNIT_TEXT]%s2[COLOR_REVERT] wünscht, in die Kolonien auszuwandern.</German>
         <Italian>[COLOR_REVERT][COLOR_UNIT_TEXT]%s2[COLOR_REVERT] attende in Europa.</Italian>
         <Spanish>[COLOR_REVERT][NUM2:Un:Una] [COLOR_UNIT_TEXT]%s2[COLOR_REVERT] aguarda en Europa.</Spanish>
+        <Russian>[COLOR_REVERT]A [COLOR_UNIT_TEXT]%s2[COLOR_REVERT] хочет эмигрировать в колонии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMMIGRATION_BAR</Tag>
@@ -414,6 +424,7 @@
         <German>Güter</German>
         <Italian>Beni</Italian>
         <Spanish>Mercancías</Spanish>
+        <Russian>Товары</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CONSUMED</Tag>
@@ -454,6 +465,7 @@
         <German>Arbeitet in Gebäuden</German>
         <Italian>Lavora negli edifici</Italian>
         <Spanish>Trabaja en edificios</Spanish>
+        <Russian>Работает в зданиях</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YIELD_MODIFIER</Tag>
@@ -550,6 +562,7 @@
         <German>Der Preis für [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] in %s2_civ ist auf %d3[ICON_GOLD] gestiegen</German>
         <Italian>Il prezzo di [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] in %s2_civ è salito a %d3[ICON_GOLD]</Italian>
         <Spanish>El precio [NUM1:del:de la:de los:de las] [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] en %s2_civ ha subido a %d3[ICON_GOLD].</Spanish>
+        <Russian>Цена на [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] в %s2_civ поднялась до %d3[ICON_GOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PRICE_FALL</Tag>
@@ -558,6 +571,7 @@
         <German>Der Preis für [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] in %s2_civ ist auf %d3[ICON_GOLD] gefallen</German>
         <Italian>Il prezzo di [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] in %s2_civ è sceso a %d3[ICON_GOLD]</Italian>
         <Spanish>El precio [NUM1:del:de la:de los:de las] [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] en %s2_civ ha bajado a %d3[ICON_GOLD].</Spanish>
+        <Russian>Цена на [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] в %s2_civ упала до %d3[ICON_GOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUY_AND_SELL_YIELD</Tag>
@@ -566,6 +580,7 @@
         <German>Europa     [TAB]Verkauf: %d1_Price[ICON_GOLD] / Kauf: %d2_Price[ICON_GOLD]</German>
         <Italian>Europe     [TAB]Vendere: %d1_Price[ICON_GOLD] / Comperare: %d2_Price[ICON_GOLD]</Italian>
         <Spanish>Europe     [TAB]Vender: %d1_Price[ICON_GOLD] / Comprar: %d2_Price[ICON_GOLD]</Spanish>
+        <Russian>Европа       Прод. : %d1_Price[ICON_GOLD] / Куп. : %d2_Price[ICON_GOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUY_AND_SELL_YIELD_AFRICA</Tag>
@@ -574,6 +589,7 @@
         <German>Afrika      [TAB]Verkauf: %d1_Price[ICON_GOLD] / Kauf: %d2_Price[ICON_GOLD]</German>
         <Italian>Africa      [TAB]Vendere: %d1_Price[ICON_GOLD] / Comperare: %d2_Price[ICON_GOLD]</Italian>
         <Spanish>África      [TAB]Vender: %d1_Price[ICON_GOLD] / Comprar: %d2_Price[ICON_GOLD]</Spanish>
+        <Russian>Африка      Прод. : %d1_Price[ICON_GOLD] / Куп. : %d2_Price[ICON_GOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUY_AND_SELL_YIELD_PORT_ROYAL</Tag>
@@ -582,6 +598,7 @@
         <German>Port Royal[TAB]Verkauf: %d1_Price[ICON_GOLD] / Kauf: %d2_Price[ICON_GOLD]</German>
         <Italian>Port Royal[TAB]Vendere: %d1_Price[ICON_GOLD] / Comperare: %d2_Price[ICON_GOLD]</Italian>
         <Spanish>Port Royal[TAB]Vender: %d1_Price[ICON_GOLD] / Comprar: %d2_Price[ICON_GOLD]</Spanish>
+        <Russian>Порт Роял  Прод. : %d1_Price[ICON_GOLD] / Куп. : %d2_Price[ICON_GOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_TAX_RATE</Tag>
@@ -590,6 +607,7 @@
         <German>Steuersatz : %d1%% (max. %d2%%)</German>
         <Italian>Percentuale tasse : %d1%% (%d2%%)</Italian>
         <Spanish>Carga impositiva : %d1%% (%d2%%)</Spanish>
+        <Russian>Ставка налога : %d1%% (max. %d2%%)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_BRIBE_RATE</Tag>
@@ -598,6 +616,7 @@
         <German>Steuersatz : %d1%%</German>
         <Italian>Percentuale tasse : %d1%%</Italian>
         <Spanish>Carga impositiva : %d1%%</Spanish>
+        <Russian>Ставка налога : %d1%%</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TAX_RATE_LOWERED</Tag>
@@ -606,6 +625,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] hat Ihren Steuersatz von %d2_old_rate%% auf %d3_new_rate%% gesenkt.</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] ha abbassato la tua percentuale di tasse da %d2_old_rate%% a %d3_new_rate%%</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] ha reducido vuestra carga impositiva de %d2_old_rate%% a %d3_new_rate%%.</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] понизил ставку налога для вас с %d2_old_rate%% до %d3_new_rate%%</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TAX_RATE_CHANGED</Tag>
@@ -614,7 +634,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] hat Euren Steuersatz von %d2_old_rate%% auf %d3_new_rate%% erhöht</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] ha aumentato la tua percentuale di tasse dal %d2_old_rate%% al %d3_new_rate%%</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] ha subido vuestra carga impositiva de %d2_old_rate%% a %d3_new_rate%%.</Spanish>
-    </TEXT>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] повысил ставку налога для вас с %d2_old_rate%% до %d3_new_rate%%</Russian>    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BOSTON_TEA_PARTY</Tag>
         <English>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Angry %s1_civ_adjective colonists destroy all shipments of %s3_yield in protest for excessive taxation without representation !</English>
@@ -630,6 +650,7 @@
         <German>[COLOR_WARNING_TEXT]%s3_city : [COLOR_REVERT]Wegen fehlendem Lagerraum gehen %d1_number%F2_yield_icon verloren !</German>
         <Italian>%d1_number%F2_yield_icon distrutti a %s3_city a causa della limitata capienza dei depositi</Italian>
         <Spanish>Se [NUM1:ha:han] perdido %d1_number %F2_yield_icon en %s3_city debido la capacidad de almacenamiento limitada.</Spanish>
+        <Russian>[COLOR_WARNING_TEXT]%s3_city : [COLOR_REVERT]%d1_number%F2_yield_icon было потеряно из-за ограниченной емкости хранилища !</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_YIELD_STORAGE</Tag>
@@ -1353,6 +1374,7 @@
         <German>Garnison</German>
         <Italian>Guarnigione</Italian>
         <Spanish>Guarnición</Spanish>
+        <Russian>Гарнизон</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ADVISOR_HOME_TERRITORY</Tag>
@@ -1473,6 +1495,7 @@
         <German>Revolution starten</German>
         <Italian>Scatena la rivoluzione</Italian>
         <Spanish>Iniciar Revolución</Spanish>
+        <Russian>Начать Революцию!</Russian>
     </TEXT>
     <TEXT>
         <Tag>INTERFACE_ROYAL_EXPEDITIONARY_FORCES</Tag>
@@ -1481,6 +1504,7 @@
         <German>Expeditionsstreitmacht des Königs</German>
         <Italian>Corpo di spedizione reale</Italian>
         <Spanish>Real Fuerza Expedicionaria</Spanish>
+        <Russian>Королевские экспедиционные войска</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_TOTAL</Tag>
@@ -1625,6 +1649,7 @@
         <German>[ICON_BULLET]Kann neue Kolonien gründen</German>
         <Italian>[ICON_BULLET]Può fondare nuove colonie</Italian>
         <Spanish>[ICON_BULLET]Puede fundar nuevas colonias</Spanish>
+        <Russian>[ICON_BULLET]Может основывать новые колонии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_CITY_EXTRA_YIELD</Tag>
@@ -1767,6 +1792,7 @@
         <German>Diesen Bürger automatisieren</German>
         <Italian>Automatizza questo cittadino</Italian>
         <Spanish>Automatizar a este ciudadano</Spanish>
+        <Russian>Автоматизировать работу этого горожанина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_TAX_RATE_THRESHOLD_MOD</Tag>
@@ -1807,6 +1833,7 @@
         <German>[ICON_BULLET]Kann im Beruf Siedler neue Kolonien gründen</German>
         <Italian>[ICON_BULLET]Può fondare nuove colonie en trabajo colono</Italian>
         <Spanish>[ICON_BULLET]Puede fundar nuevas colonias en trabajo colono</Spanish>
+        <Russian>[ICON_BULLET]Может основывать новые колонии, имея профессию "Поселенец"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_BOMBARD_TEXT</Tag>
@@ -1945,6 +1972,7 @@
         <German>Karte</German>
         <Italian>Mappa</Italian>
         <Spanish>Mapa</Spanish>
+        <Russian>Карта</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INTERFACE_BUILD_TOGGLE</Tag>
@@ -1953,6 +1981,7 @@
         <German>Bauen</German>
         <Italian>Il tasto di scelta rapida</Italian>
         <Spanish>Construir</Spanish>
+        <Russian>Строительство</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INTERFACE_GOVERNOR_TOGGLE</Tag>
@@ -1961,6 +1990,7 @@
         <German>Gouverneur</German>
         <Italian>Governatore</Italian>
         <Spanish>Gobernante</Spanish>
+        <Russian>Губернатор</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_NO_CITIES</Tag>
@@ -2064,6 +2094,7 @@
         <German>Beförderung wählen</German>
         <Italian>Scegli una promozione</Italian>
         <Spanish>Elegir un ascenso</Spanish>
+        <Russian>Выберите повышение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EJECT_CITIZEN</Tag>
@@ -2104,6 +2135,7 @@
         <German>Importe\Exporte bearbeiten</German>
         <Italian>Modifica importazioni\esportazioni</Italian>
         <Spanish>Editar importaciones\exportaciones</Spanish>
+        <Russian>Изменить настройки Импорта/Экспорта</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HELP_EDIT_CONDENSED_IMPORTS_EXPORTS</Tag>
@@ -2112,6 +2144,7 @@
         <German>Bearbeiten Sie produzierte und gehandelte Waren</German>
         <Italian>Modifica beni creati e scambiati</Italian>
         <Spanish>Edite los bienes creados y comercializados</Spanish>
+        <Russian>Изменить настройки производимых и продаваемых товаров</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAPTURES_CARGO</Tag>
@@ -2263,6 +2296,7 @@
         <German>In die [COLOR_HIGHLIGHT_TEXT]Neue Welt[COLOR_REVERT] segeln</German>
         <Italian>Fai vela per il [COLOR_HIGHLIGHT_TEXT]Nuovo Mondo[COLOR_REVERT]</Italian>
         <Spanish>Navegar al [COLOR_HIGHLIGHT_TEXT]Nuevo Mundo[COLOR_REVERT]</Spanish>
+        <Russian>Отплыть в [COLOR_HIGHLIGHT_TEXT]Новый мир[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SELL_ALL</Tag>
@@ -2271,6 +2305,7 @@
         <German>Alle Güter verkaufen</German>
         <Italian>Vendi tutti i beni</Italian>
         <Spanish>Vender todo</Spanish>
+        <Russian>Продать все товары</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LOAD_ALL_EUROPE</Tag>
@@ -2287,6 +2322,7 @@
         <German>[COLOR_UNIT_TEXT]Experten[COLOR_REVERT], [COLOR_UNIT_TEXT]Schiffe[COLOR_REVERT] oder [COLOR_UNIT_TEXT]Truppen[COLOR_REVERT] im Vaterland anwerben</German>
         <Italian>Acquista [COLOR_UNIT_TEXT]specialisti[COLOR_REVERT], [COLOR_UNIT_TEXT]navi[COLOR_REVERT] o [COLOR_UNIT_TEXT]soldati[COLOR_REVERT] dalla madrepatria</Italian>
         <Spanish>Comprar [COLOR_UNIT_TEXT]especialistas[COLOR_REVERT], [COLOR_UNIT_TEXT]barcos[COLOR_REVERT] o [COLOR_UNIT_TEXT]Cañones[COLOR_REVERT] en la madre patria</Spanish>
+        <Russian>Купить [COLOR_UNIT_TEXT]корабли[COLOR_REVERT], нанять [COLOR_UNIT_TEXT]специалистов[COLOR_REVERT] или [COLOR_UNIT_TEXT]войска[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HURRY_IMMIGRATION</Tag>
@@ -2465,6 +2501,7 @@
         <German>Transporte</German>
         <Italian>Trasporti</Italian>
         <Spanish>Transportes</Spanish>
+        <Russian>Транспорты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GARRISON_PANEL</Tag>
@@ -2473,6 +2510,7 @@
         <German>Garnison</German>
         <Italian>Guarnigione</Italian>
         <Spanish>Guarnición</Spanish>
+        <Russian>Гарнизон</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_JOIN_MOVE</Tag>
@@ -2617,6 +2655,7 @@
         <German>Zugang zu Europa</German>
         <Italian>Accesso all'Europa</Italian>
         <Spanish>Acceso a Europa</Spanish>
+        <Russian>Путь в Европу</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOTO_EUROPE_POPUP</Tag>
@@ -2625,6 +2664,7 @@
         <German>Möchtet Ihr nach Europa segeln?</German>
         <Italian>Vuoi far vela per l'Europa?</Italian>
         <Spanish>¿Queréis navegar a Europa?</Spanish>
+        <Russian>Вы желаете плыть в Европу?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOTO_EUROPE_POPUP_YES</Tag>
@@ -2633,6 +2673,7 @@
         <German>Ja, immer weiter so!</German>
         <Italian>Sì, via così!</Italian>
         <Spanish>Sí, ¡más rápido que volando!</Spanish>
+        <Russian>Да! И как можно скорее!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOTO_EUROPE_POPUP_NO</Tag>
@@ -2641,6 +2682,7 @@
         <German>Nein, danke.</German>
         <Italian>No, grazie.</Italian>
         <Spanish>No, gracias</Spanish>
+        <Russian>Нет, я передумал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOTO_EUROPE_POPUP_NEVER_AGAIN</Tag>
@@ -2649,6 +2691,7 @@
         <German>Nein, und fragt bitte nicht noch einmal.</German>
         <Italian>No. Non chiedermelo più.</Italian>
         <Spanish>No, y no me lo volváis a preguntar</Spanish>
+        <Russian>Нет и больше не напоминайте мне об этом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_UNITS_POPUP</Tag>
@@ -2657,6 +2700,7 @@
         <German>Schiffe in Europa warten auf Eure Befehle.</German>
         <Italian>Hai delle navi in Europa in attesa di ordini.</Italian>
         <Spanish>Tenéis barcos aguardando órdenes en Europa.</Spanish>
+        <Russian>У вас есть корабли, ожидающие приказов в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_UNITS_POPUP_OK</Tag>
@@ -2665,6 +2709,7 @@
         <German>Ich weiß, danke.</German>
         <Italian>Lo so, grazie.</Italian>
         <Spanish>Lo sé, gracias.</Spanish>
+        <Russian>Я знаю, спасибо.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_UNITS_POPUP_NO_MORE</Tag>
@@ -2673,6 +2718,7 @@
         <German>Erinnert mich nicht noch einmal daran.</German>
         <Italian>Non ricordarmelo più.</Italian>
         <Spanish>No me lo volváis a recordar</Spanish>
+        <Russian>Больше не напоминать</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_UNITS_POPUP_SHOW</Tag>
@@ -2681,6 +2727,7 @@
         <German>Das möchte ich mir näher ansehen.</German>
         <Italian>Fammi dare un'occhiata.</Italian>
         <Spanish>Dejadme que lo mire más detenidamente.</Spanish>
+        <Russian>Давайте посмотрим на них.</Russian>
     </TEXT>
     <TEXT>
         <Tag>INTERFACE_COLONIAL_FORCES</Tag>
@@ -2737,6 +2784,7 @@
         <German>[SPACE](außerhalb der Siedlung)</German>
         <Italian>[SPACE](fuori dall'insediamento)</Italian>
         <Spanish>[SPACE](fuera del asentamiento)</Spanish>
+        <Russian>[SPACE](вне поселения)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_ADVISOR_STATE_GENERAL</Tag>
@@ -2749,6 +2797,7 @@
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_ADVISOR_STATE_DOMESTIC_MARKET</Tag>
         <English>Domestic Market</English>
+        <Russian>Внутренний рынок</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_ADVISOR_STATE_CITIZEN</Tag>
@@ -2781,6 +2830,7 @@
         <German>Wählt Eure Persönlichkeit</German>
         <Italian>Seleziona una nazione e un leader</Italian>
         <Spanish>Seleccionar una nación y a un líder</Spanish>
+        <Russian>Выберите Нацию и Лидера</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_SCREEN_VILLAGE_CHIEF</Tag>
@@ -2805,6 +2855,7 @@
         <German>Um ein Gespräch mit dem Häuptling bitten</German>
         <Italian>Chiedi di parlare con il capo.</Italian>
         <Spanish>Pido hablar con el jefe</Spanish>
+        <Russian>Просить разговора с вождем</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TALK_NATIVES_POPUP_LEARN</Tag>
@@ -2813,6 +2864,7 @@
         <German>Bei den Ureinwohnern leben und von ihnen lernen</German>
         <Italian>Vivi tra i nativi.</Italian>
         <Spanish>Vivir entre los Nativos</Spanish>
+        <Russian>Жить среди индейцев</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TALK_NATIVES_POPUP_MISSION</Tag>
@@ -2821,6 +2873,7 @@
         <German>Eine Mission errichten</German>
         <Italian>Fonda una missione.</Italian>
         <Spanish>Fundar una misión</Spanish>
+        <Russian>Основать миссию</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TALK_NATIVES_POPUP_MISSION2</Tag>
@@ -2858,6 +2911,7 @@
         <Tag>TXT_KEY_TALK_NATIVES_POPUP_TRADE_POST</Tag>
         <English>Establish a trading post</English>
         <German>Einen Handelsposten einrichten</German>
+        <Russian>Установить торговый пост</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TALK_NATIVES_POPUP_TRADE_POST2</Tag>
@@ -2927,6 +2981,7 @@
         <German>Bürgerautomatisierung ausschalten</German>
         <Italian>Disattiva automazione cittadini</Italian>
         <Spanish>Desactivar la automatización de los ciudadanos</Spanish>
+        <Russian>Выключить автоматическое распределение горожан на работы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_TRANSACTIONS</Tag>
@@ -3063,6 +3118,7 @@
         <German>%d1%F2 pro Runde</German>
         <Italian>%d1%F2 per turno</Italian>
         <Spanish>%d1%F2 por turno</Spanish>
+        <Russian>%d1%F2 за ход</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ROYAL_CHARTER_BODY_2</Tag>
@@ -3079,6 +3135,7 @@
         <German>Gegründet : %s1</German>
         <Italian>Fondata : %s1</Italian>
         <Spanish>Fundada : %s1</Spanish>
+        <Russian>Дата основания : %s1</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TIME_AD</Tag>
@@ -3087,6 +3144,7 @@
         <German>%d1_Date n. Chr.</German>
         <Italian>%d1_Date d.C.</Italian>
         <Spanish>%d1_Date d. C.</Spanish>
+        <Russian>%d1_Date от Р.Х.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_POPULATION</Tag>
@@ -3095,31 +3153,37 @@
         <German>[NEWLINE]Bevölkerung : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</German>
         <Italian>Popolazione: %d1</Italian>
         <Spanish>Población: %d1</Spanish>
+        <Russian>[NEWLINE]Количество жителей : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_SLAVE_REVOLT_REDUCTION_BONUS</Tag>
         <English>Reduction of Slave Revolts : [COLOR_HIGHLIGHT_TEXT]%d1%%[COLOR_REVERT]</English>
         <German>Reduktion von Sklavenaufständen : [COLOR_HIGHLIGHT_TEXT]%d1%%[COLOR_REVERT]</German>
+        <Russian>Уменьшение шанса восстания рабов : [COLOR_HIGHLIGHT_TEXT]%d1%%[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_SLAVE_WORKER_PRODUCTION_BONUS</Tag>
         <English>Slave Production Bonus : [COLOR_HIGHLIGHT_TEXT]%d1%%[COLOR_REVERT]</English>
         <German>Produktionsbonus für Sklaven : [COLOR_HIGHLIGHT_TEXT]%d1%%[COLOR_REVERT]</German>
+        <Russian>Бонус производства от рабов : [COLOR_HIGHLIGHT_TEXT]%d1%%[COLOR_REVERT]</Russian>
     </TEXT>	
     <TEXT>
         <Tag>TXT_KEY_CITY_DEFAULT_STORAGE</Tag>
         <English>Storage Capacity by Buildings : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</English>
         <German>Lagerkapazität durch Gebäude: [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</German>
+        <Russian>Емкость хранилища от строений : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_IMPROVEMENT_STORAGE</Tag>
         <English>Storage Capacity by Improvements : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</English>
         <German>Lagerkapazität durch Geländeverbesserungen: [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</German>
+        <Russian>Емкость хранилища от улучшений : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_RESULTING_CITY_TOTAL_STORAGE</Tag>
         <English>Total Resulting Storage Capacity : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</English>
         <German>Resultierende Gesamtlagerkapzität: [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</German>
+        <Russian>Общая емкость хранилища : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</Russian>
     </TEXT>	
     <TEXT>
         <Tag>TXT_KEY_CHANGE_NAME_CITY</Tag>
@@ -3128,6 +3192,7 @@
         <German>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT][NEWLINE]um den Namen der Kolonie zu ändern</German>
         <Italian>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Clicca &gt;[COLOR_REVERT][NEWLINE]qui per cambiare il nome</Italian>
         <Spanish>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Haz clic &gt;[COLOR_REVERT][NEWLINE]para cambiar el nombre de la colonia</Spanish>
+        <Russian>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Нажмите &gt;[COLOR_REVERT][NEWLINE]для изменения названия колонии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHANGE_NAME_UNIT</Tag>
@@ -3136,6 +3201,7 @@
         <German>[COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT], um den Namen der Einheit zu ändern</German>
         <Italian>[COLOR:140:255:40:255]&lt; Clicca &gt;[COLOR_REVERT] qui per cambiare il nome</Italian>
         <Spanish>[COLOR:140:255:40:255]&lt; Haz clic &gt;[COLOR_REVERT] para cambiar el nombre</Spanish>
+        <Russian>[COLOR:140:255:40:255]&lt; Нажмите &gt;[COLOR_REVERT] для изменения наименования юнита</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NAME_CITY</Tag>
@@ -3144,6 +3210,7 @@
         <German>Wie soll diese Siedlung heißen?</German>
         <Italian>Come vuoi chiamare questo insediamento?</Italian>
         <Spanish>¿Cómo quieres que se llame el asentamiento?</Spanish>
+        <Russian>Как вы хотите назвать это поселение?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IN</Tag>

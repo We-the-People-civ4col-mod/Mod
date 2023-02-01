@@ -15,6 +15,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Козы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_GOATS</Tag>
@@ -25,6 +26,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Козы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GOATS</Tag>
@@ -35,6 +37,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Козы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_GOATS_PEDIA</Tag>
@@ -59,6 +62,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Свиньи</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_PIGS</Tag>
@@ -69,6 +73,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Свиньи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PIGS</Tag>
@@ -79,6 +84,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Свиньи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIGS_PEDIA</Tag>
@@ -103,6 +109,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Куры</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_CHICKEN</Tag>
@@ -113,6 +120,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Куры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHICKEN</Tag>
@@ -123,6 +131,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Куры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHICKEN_PEDIA</Tag>
@@ -147,6 +156,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Гуси</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_GEESE</Tag>
@@ -157,6 +167,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Гуси</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GEESE</Tag>
@@ -167,6 +178,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Гуси</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_GEESE_PEDIA</Tag>
@@ -191,6 +203,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Козьи шкуры</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_GOAT_HIDES</Tag>
@@ -201,6 +214,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Козьи шкуры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GOAT_HIDES</Tag>
@@ -211,6 +225,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Козьи шкуры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_GOAT_HIDES_PEDIA</Tag>
@@ -235,6 +250,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Свиная кожа</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_PIG_SKIN</Tag>
@@ -245,6 +261,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Свиная кожа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PIG_SKIN</Tag>
@@ -255,6 +272,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Свиная кожа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIG_SKIN_PEDIA</Tag>
@@ -279,6 +297,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Пух</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_DOWNS</Tag>
@@ -289,6 +308,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Пух</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_DOWNS</Tag>
@@ -299,6 +319,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Пух</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_DOWNS_PEDIA</Tag>
@@ -323,6 +344,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Перья диких птиц</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_WILD_FEATHERS</Tag>
@@ -333,6 +355,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Перья диких птиц</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_WILD_FEATHERS</Tag>
@@ -343,6 +366,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Перья диких птиц</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_WILD_FEATHERS_PEDIA</Tag>
@@ -367,6 +391,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Сапоги из козьих шкур</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_GOAT_HIDE_BOOTS</Tag>
@@ -377,6 +402,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Сапоги из козьих шкур</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GOAT_HIDE_BOOTS</Tag>
@@ -387,6 +413,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Сапоги из козьих шкур</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_GOAT_HIDE_BOOTS_PEDIA</Tag>
@@ -411,6 +438,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Фартуки из свиной кожи</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_PIG_LEATHER</Tag>
@@ -421,6 +449,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Фартуки из свиной кожи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PIG_LEATHER</Tag>
@@ -431,6 +460,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Фартуки из свиной кожи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIG_LEATHER_PEDIA</Tag>
@@ -455,6 +485,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Фрукты</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_FRUITS</Tag>
@@ -465,6 +496,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Фрукты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FRUITS</Tag>
@@ -475,6 +507,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Фрукты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_FRUITS_PEDIA</Tag>
@@ -499,6 +532,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Фруктовый бренди</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_HOOCH</Tag>
@@ -509,6 +543,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Фруктовый бренди</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HOOCH</Tag>
@@ -519,6 +554,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Фруктовый бренди</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HOOCH_PEDIA</Tag>
@@ -543,6 +579,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Лен</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_FLAX</Tag>
@@ -553,6 +590,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Лен</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FLAX</Tag>
@@ -563,6 +601,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Лен</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_FLAX_PEDIA</Tag>
@@ -587,6 +626,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Мягкая мебель</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_PADDED_FURNITURE</Tag>
@@ -597,6 +637,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Мягкая мебель</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PADDED_FURNITURE</Tag>
@@ -607,6 +648,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Мягкая мебель</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PADDED_FURNITURE_PEDIA</Tag>
@@ -631,6 +673,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Твердая древесина</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_HARDWOOD</Tag>
@@ -641,6 +684,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Твердая древесина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HARDWOOD</Tag>
@@ -651,6 +695,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Твердая древесина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HARDWOOD_PEDIA</Tag>
@@ -675,6 +720,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Кленовый сироп</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MAPLE_SIRUP</Tag>
@@ -685,6 +731,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Кленовый сироп</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MAPLE_SIRUP</Tag>
@@ -695,6 +742,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Кленовый сироп</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_MAPLE_SIRUP_PEDIA</Tag>
@@ -719,6 +767,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Чайные листья</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_YERBA_LEAVES</Tag>
@@ -729,6 +778,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Чайные листья</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_LEAVES</Tag>
@@ -739,6 +789,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Чайные листья</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_YERBA_LEAVES_PEDIA</Tag>
@@ -763,6 +814,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Кампеш</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_LOGWOOD</Tag>
@@ -773,6 +825,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Кампеш</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LOGWOOD</Tag>
@@ -783,6 +836,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Кампеш</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_LOGWOOD_PEDIA</Tag>
@@ -807,6 +861,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Чай</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_YERBA_TEA</Tag>
@@ -817,6 +872,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Чай</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_TEA</Tag>
@@ -827,6 +883,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Чай</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_YERBA_TEA_PEDIA</Tag>
@@ -851,6 +908,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Цветная шерстяная ткань</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_COLOURED_WOOL_CLOTH</Tag>
@@ -861,6 +919,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Цветная шерстяная ткань</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COLOURED_WOOL_CLOTH</Tag>
@@ -871,6 +930,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Цветная шерстяная ткань</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COLOURED_WOOL_CLOTH_PEDIA</Tag>
@@ -895,6 +955,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Глина</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_CLAY</Tag>
@@ -905,6 +966,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Глина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CLAY</Tag>
@@ -915,6 +977,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Глина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CLAY_PEDIA</Tag>
