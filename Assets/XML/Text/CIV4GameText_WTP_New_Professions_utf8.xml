@@ -1568,7 +1568,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BAKER_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Bakers[COLOR_REVERT] can work in the [LINK=BUILDING_BAKERS_HOUSE]baker's house[\LINK] or one of its upgrades to produce [LINK=YIELD_BAKERY_GOODS]bakery goods[\LINK]. [LINK=UNIT_DISTILLER]Master bakers[\LINK] excel at this craft, and can greatly boost your production of fresh baking.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Bakers[COLOR_REVERT] can work in the [LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] or one of its upgrades to produce [LINK=YIELD_BAKERY_GOODS]bakery goods[\LINK]. [LINK=UNIT_DISTILLER]Master bakers[\LINK] excel at this craft, and can greatly boost your production of fresh baking.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
