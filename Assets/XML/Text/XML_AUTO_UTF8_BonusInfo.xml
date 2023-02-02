@@ -23,6 +23,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Банановые пальмы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BANANA_PEDIA</Tag>
@@ -55,6 +56,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ячмень</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BARLEY_PEDIA</Tag>
@@ -70,6 +72,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Пшеница</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_WHEAT_PEDIA</Tag>
@@ -99,6 +102,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Бизоны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BISON_PEDIA</Tag>
@@ -117,6 +121,7 @@
         </German>
         <Italian>Boreal Forest</Italian>
         <Spanish>Boreal Forest</Spanish>
+        <Russian>Бореальный лес</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BOREAL_FOREST_PEDIA</Tag>
@@ -132,6 +137,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Твердая древесина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HARDWOOD_PEDIA</Tag>
@@ -149,6 +155,7 @@
         </German>
         <Italian>Bovini</Italian>
         <Spanish>Bovinos</Spanish>
+        <Russian>Коровы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CATTLE_PEDIA</Tag>
@@ -179,6 +186,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Заросли коки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_COCA_PEDIA</Tag>
@@ -194,6 +202,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Чайные заросли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_YERBA_PEDIA</Tag>
@@ -211,6 +220,7 @@
         </German>
         <Italian>Cacao</Italian>
         <Spanish>Árbol de cacao</Spanish>
+        <Russian>Какао деревья</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_COCOA_PEDIA</Tag>
@@ -241,6 +251,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Кокосовые пальмы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_COCONUT_PEDIA</Tag>
@@ -259,6 +270,7 @@
         </German>
         <Italian>Coffee</Italian>
         <Spanish>Coffee</Spanish>
+        <Russian>Кофейные кусты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_COFFEE_PEDIA</Tag>
@@ -291,6 +303,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Кукуруза</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CORN_PEDIA</Tag>
@@ -323,6 +336,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Заросли хлопка</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_COTTON_PEDIA</Tag>
@@ -355,6 +369,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Крабы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CRAB_PEDIA</Tag>
@@ -387,6 +402,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Олени</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_DEER_PEDIA</Tag>
@@ -404,6 +420,7 @@
             <Gender>Neuters</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Карибу</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CARIBOU_PEDIA</Tag>
@@ -418,6 +435,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Лоси</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_MOOSE_PEDIA</Tag>
@@ -432,6 +450,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Толсторогие бараны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BIG_HORN_PEDIA</Tag>
@@ -446,6 +465,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Козы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_GOAT_PEDIA</Tag>
@@ -460,6 +480,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Овцебык</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_MUSK_OX_PEDIA</Tag>
@@ -474,6 +495,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Ламы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_LLAMA_PEDIA</Tag>
@@ -488,6 +510,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Олуши</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BOOBY_PEDIA</Tag>
@@ -502,6 +525,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Чайки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_GULL_PEDIA</Tag>
@@ -516,6 +540,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Утки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_DUCK_PEDIA</Tag>
@@ -530,6 +555,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Гагары</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_LOON_PEDIA</Tag>
@@ -544,6 +570,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Канадские гуси</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CANADA_GOOSE_PEDIA</Tag>
@@ -558,6 +585,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Морские свинки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_GUINEA_PIG_PEDIA</Tag>
@@ -572,6 +600,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Попугаи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PARROTS_PEDIA</Tag>
@@ -586,6 +615,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Туканы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_TOUCAN_PEDIA</Tag>
@@ -600,6 +630,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Капибары</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CAPYBARA_PEDIA</Tag>
@@ -614,6 +645,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Тапиры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_TAPIR_PEDIA</Tag>
@@ -628,6 +660,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Кролики</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_RABBIT_PEDIA</Tag>
@@ -642,6 +675,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Свиньи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PIG_PEDIA</Tag>
@@ -656,6 +690,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Куры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CHICKEN_PEDIA</Tag>
@@ -670,6 +705,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Домашние гуси</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_DOMESTIC_GOOSE_PEDIA</Tag>
@@ -699,6 +735,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Рыба</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_FISH_PEDIA</Tag>
@@ -731,6 +768,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Бобры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_FUR_PEDIA</Tag>
@@ -748,6 +786,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Полярные лисы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_POLAR_FOX_PEDIA</Tag>
@@ -762,6 +801,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Рыжие лисы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_RED_FOX_PEDIA</Tag>
@@ -791,6 +831,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Месторождение драгоценных камней</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_GEMS_PEDIA</Tag>
@@ -811,6 +852,7 @@
         </German>
         <Italian>Giant Trees</Italian>
         <Spanish>Giant Trees</Spanish>
+        <Russian>Гигантские деревья</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_GIANT_TREE_PEDIA</Tag>
@@ -841,6 +883,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Месторождение золота</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_GOLD_PEDIA</Tag>
@@ -873,6 +916,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Виноградная лоза</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_GRAPES_PEDIA</Tag>
@@ -890,6 +934,7 @@
             <Gender>Maale</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Оливковые деревья</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_OLIVES_PEDIA</Tag>
@@ -904,6 +949,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Рапсовые заросли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_RAPE_PEDIA</Tag>
@@ -933,6 +979,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Заросли конопли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HEMP_PEDIA</Tag>
@@ -948,6 +995,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Заросли льна</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_FLAX_PEDIA</Tag>
@@ -977,6 +1025,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Треска</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HIGH_SEA_FISH_PEDIA</Tag>
@@ -992,6 +1041,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Скумбрия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HIGH_SEA_FISH2_PEDIA</Tag>
@@ -1006,6 +1056,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Синний марлин</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HIGH_SEA_FISH3_PEDIA</Tag>
@@ -1020,6 +1071,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Тунец</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HIGH_SEA_FISH4_PEDIA</Tag>
@@ -1049,6 +1101,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Лошади</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HORSES_PEDIA</Tag>
@@ -1081,6 +1134,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Кусты индиго</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_INDIGO_PEDIA</Tag>
@@ -1098,6 +1152,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Кампешевые деревья</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BLOODWOOD_PEDIA</Tag>
@@ -1127,6 +1182,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Залежи железной руды</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_IRON_PEDIA</Tag>
@@ -1144,6 +1200,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Болотное железо</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BOG_ORE_PEDIA</Tag>
@@ -1173,6 +1230,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Арбузы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_MELON_PEDIA</Tag>
@@ -1191,6 +1249,7 @@
         </German>
         <Italian>Mineral Resources</Italian>
         <Spanish>Mineral Resources</Spanish>
+        <Russian>Минеральные ресурсы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_MINERALS_PEDIA</Tag>
@@ -1223,6 +1282,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Оазис</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_OASIS_PEDIA</Tag>
@@ -1238,6 +1298,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Russian>Водопой диких животных</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_WATERHOLE_PEDIA</Tag>
@@ -1267,6 +1328,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Молюски</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PEARLS_PEDIA</Tag>
@@ -1299,6 +1361,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Жемчуг</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PEARLS_2_PEDIA</Tag>
@@ -1339,6 +1402,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Картофель</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_POTATO_PEDIA</Tag>
@@ -1371,6 +1435,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Тыквы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PUMPKIN_PEDIA</Tag>
@@ -1401,6 +1466,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Заросли красного перца</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_RED_PEPPER_PEDIA</Tag>
@@ -1416,6 +1482,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Кленовый лес</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_MAPLE_TREES_PEDIA</Tag>
@@ -1430,6 +1497,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Каучуковые деревья</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_KAUTSCHUK_PEDIA</Tag>
@@ -1459,6 +1527,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Соляные месторождения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_SALT_PEDIA</Tag>
@@ -1491,6 +1560,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Кактусовые деревья</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CACTUS_PEDIA</Tag>
@@ -1506,6 +1576,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Грифы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_VULTURE_PEDIA</Tag>
@@ -1520,6 +1591,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Игуаны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_IGUANA_PEDIA</Tag>
@@ -1549,6 +1621,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Тюлени</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_SEALS_PEDIA</Tag>
@@ -1579,6 +1652,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Каланы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_SEA_OTTERS_PEDIA</Tag>
@@ -1597,6 +1671,7 @@
         </German>
         <Italian>Pecore</Italian>
         <Spanish>Ovejas</Spanish>
+        <Russian>Овцы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_SHEEP_PEDIA</Tag>
@@ -1627,6 +1702,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Месторождение серебра</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_SILVER_PEDIA</Tag>
@@ -1659,6 +1735,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Известняк</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_STONE_PEDIA</Tag>
@@ -1676,6 +1753,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Глина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CLAY_PEDIA</Tag>
@@ -1690,6 +1768,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Уголь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_COAL_PEDIA</Tag>
@@ -1704,6 +1783,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Торф</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PEAT_PEDIA</Tag>
@@ -1718,6 +1798,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Ваниль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_VANILLA_PEDIA</Tag>
@@ -1747,6 +1828,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Сахарный тростник</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_SUGAR_PEDIA</Tag>
@@ -1763,6 +1845,7 @@
         <German>Bauholz</German>
         <Italian>Legname</Italian>
         <Spanish>Madera</Spanish>
+        <Russian>Бревна</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_TIMBER_PEDIA</Tag>
@@ -1793,6 +1876,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Заросли табака</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_TOBACCO_PEDIA</Tag>
@@ -1825,6 +1909,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Индейки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_TURKEYS_PEDIA</Tag>
@@ -1840,6 +1925,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Морские котики</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_FUR_SEAL_PEDIA</Tag>
@@ -1869,6 +1955,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Моржи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_WALRUSS_PEDIA</Tag>
@@ -1884,6 +1971,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Пингвины</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PENGUIN_PEDIA</Tag>
@@ -1913,6 +2001,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Кашалот</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_WHALE_PEDIA</Tag>
@@ -1930,6 +2019,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Горбатый кит</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HUMPBACK_WHALE_PEDIA</Tag>
@@ -1944,6 +2034,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Батат</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_SWEET_POTATO_PEDIA</Tag>
@@ -1958,6 +2049,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Кабачки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_SQUASH_PEDIA</Tag>
@@ -1972,6 +2064,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Авокадо</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_AVOCADO_PEDIA</Tag>
@@ -1986,6 +2079,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Опунция</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PRICKLY_PEAR_PEDIA</Tag>
@@ -2005,6 +2099,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Яблони</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_APPLES_PEDIA</Tag>
@@ -2020,6 +2115,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Вишня</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CHERRIES_PEDIA</Tag>
@@ -2034,6 +2130,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Ананасовые заросли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PINE_APPLE_PEDIA</Tag>
@@ -2048,6 +2145,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Маракуйя</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PASSION_FRUIT_PEDIA</Tag>
@@ -2062,6 +2160,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Гуайява</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_GUAVA_PEDIA</Tag>
@@ -2076,6 +2175,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Папайя</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PAPAYA_PEDIA</Tag>
@@ -2095,6 +2195,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Лимонное дерево</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_LEMONS_PEDIA</Tag>
@@ -2114,6 +2215,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Кусты томатов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_TOMATO_PEDIA</Tag>
@@ -2134,6 +2236,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Арахис</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PEANUT_PEDIA</Tag>
@@ -2149,6 +2252,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Брусника</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_TUNDRA_BERRIES_PEDIA</Tag>
@@ -2163,6 +2267,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Черника</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HUCKLE_BERRIES_PEDIA</Tag>
@@ -2177,6 +2282,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Голубика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BLUE_BERRIES_PEDIA</Tag>
@@ -2191,6 +2297,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Клюква</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CRAN_BERRIES_PEDIA</Tag>
@@ -2210,6 +2317,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Креветки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_SHRIMP_PEDIA</Tag>
@@ -2229,6 +2337,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Рис</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_RICE_PEDIA</Tag>
@@ -2243,6 +2352,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Маниока</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CASSAVA_PEDIA</Tag>
@@ -2257,6 +2367,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Бобы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BEANS_PEDIA</Tag>
@@ -2276,6 +2387,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Грибы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_MUSHROOMS_PEDIA</Tag>
@@ -2305,6 +2417,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Пчелиные ульи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BEE_HIVE_PEDIA</Tag>

@@ -3147,7 +3147,7 @@
         <German>%d1_Date n. Chr.</German>
         <Italian>%d1_Date d.C.</Italian>
         <Spanish>%d1_Date d. C.</Spanish>
-        <Russian>%d1_Date от Р.Х.</Russian>
+        <Russian>%d1_Date г. от Р.Х.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_POPULATION</Tag>

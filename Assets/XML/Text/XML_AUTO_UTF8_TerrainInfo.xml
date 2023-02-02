@@ -23,6 +23,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Побережье</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_COAST_PEDIA</Tag>
@@ -38,6 +39,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мелководье</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_SHALLOW_COAST_PEDIA</Tag>
@@ -52,6 +54,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Каменистые степи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_ROCK_STEPPES_PEDIA</Tag>
@@ -81,6 +84,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Пустыня</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_DESERT_PEDIA</Tag>
@@ -111,6 +115,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Луга</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_GRASS_PEDIA</Tag>
@@ -126,6 +131,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Заболоченная местность</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_WETLAND_PEDIA</Tag>
@@ -140,6 +146,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Кустарниковая местность</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_SHRUBLAND_PEDIA</Tag>
@@ -169,6 +176,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Холмы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_HILL_PEDIA</Tag>
@@ -195,6 +203,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Болото</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_MARSH_PEDIA</Tag>
@@ -225,6 +234,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Океан</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_OCEAN_PEDIA</Tag>
@@ -255,6 +265,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Горы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_PEAK_PEDIA</Tag>
@@ -275,6 +286,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Прерии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_PLAINS_PEDIA</Tag>
@@ -305,6 +317,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Саванна</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_SAVANNAH_PEDIA</Tag>
@@ -335,6 +348,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Равнины</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_PLAINS_PEDIA</Tag>
@@ -361,6 +375,7 @@
         </German>
         <Italian>Permafrost</Italian>
         <Spanish>Permafrost</Spanish>
+        <Russian>Вечная мерзлота</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_SNOW_PEDIA</Tag>
@@ -391,6 +406,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Тундра</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_TUNDRA_PEDIA</Tag>
@@ -421,6 +437,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Тайга</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_TAIGA_PEDIA</Tag>
@@ -435,6 +452,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Большая река</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LARGE_RIVERS_PEDIA</Tag>
@@ -448,6 +466,7 @@
         <German>Süßwassersee</German>
         <Italian>Lago d'acqua dolce</Italian>
         <Spanish>Lago de agua dulce</Spanish>
+        <Russian>Пресноводное озеро</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LAKE_PEDIA</Tag>
@@ -458,6 +477,7 @@
         <Tag>TXT_KEY_TERRAIN_ICE_LAKE</Tag>
         <English>Ice Lake</English>
         <German>Eissee</German>
+        <Russian>Заледеневшее озеро</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_ICE_LAKE_PEDIA</Tag>

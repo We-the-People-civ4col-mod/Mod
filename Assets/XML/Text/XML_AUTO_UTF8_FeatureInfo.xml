@@ -8,6 +8,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Лиственный лес</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_FOREST_PEDIA</Tag>
@@ -23,6 +24,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Хвойный лес</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_FOREST_EVERGREEN_PEDIA</Tag>
@@ -40,6 +42,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Густой лес</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_DENSE_FOREST_PEDIA</Tag>
@@ -54,6 +57,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Северный лес</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ANCIENT_FOREST</Tag>
@@ -63,6 +67,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Старый северный лес</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ANCIENT_FOREST_PEDIA</Tag>
@@ -94,6 +99,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Полярный лед</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ICE_PEDIA</Tag>
@@ -124,6 +130,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Джунгли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_JUNGLE_PEDIA</Tag>
@@ -139,6 +146,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Манговые заросли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_MANGROVE_PEDIA</Tag>
@@ -153,6 +161,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Тропическая роща</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_TROPICAL_GROVES_PEDIA</Tag>
@@ -167,6 +176,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Битумная яма</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_TAR_PIT_PEDIA</Tag>
@@ -181,6 +191,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Соляная пустыня</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_SALT_PAN_PEDIA</Tag>
@@ -195,6 +206,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Солончаки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_SALT_DRAINAGE_PEDIA</Tag>
@@ -209,6 +221,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Плодородные поймы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_FLOOD_PLAINS_PEDIA</Tag>
@@ -223,6 +236,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Метеоритный кратер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_CRATER_PEDIA</Tag>
@@ -237,6 +251,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Непроходимые горы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_IMPASSABLE_MOUNTAIN_PEDIA</Tag>
@@ -251,6 +266,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Скальные образования (пустыня)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_DESERT_PEDIA</Tag>
@@ -265,6 +281,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Скальные образования (умеренный климат)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_TEMPERATE_PEDIA</Tag>
@@ -279,6 +296,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Скальные образования (полярные)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_POLAR_PEDIA</Tag>
@@ -304,6 +322,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Редколесье</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_LIGHT_FOREST_PEDIA</Tag>
@@ -319,6 +338,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Трясина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_SWAMP_PEDIA</Tag>
@@ -333,6 +353,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Топь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_BOG_PEDIA</Tag>
@@ -347,6 +368,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Поле бочковых кактусов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_BARREL_CACTUS_PEDIA</Tag>
@@ -361,6 +383,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Кактусовые деревья</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_CACTUS_TREES_PEDIA</Tag>
@@ -375,6 +398,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Лишайник</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_LICHEN_PEDIA</Tag>
@@ -389,6 +413,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Мох</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_MOSS_PEDIA</Tag>
@@ -403,6 +428,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Заросли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_THICKET_PEDIA</Tag>
@@ -432,6 +458,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Шторм</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_STORM_PEDIA</Tag>
@@ -447,6 +474,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Песчаная буря</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_SANDSTORM_PEDIA</Tag>
@@ -461,6 +489,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Снежная буря</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_SANDSTORM_PEDIA</Tag>
@@ -475,6 +504,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Туман</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_FOG_PEDIA</Tag>
@@ -489,6 +519,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Коралловый риф</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_REEF_PEDIA</Tag>
@@ -503,6 +534,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Скалистый риф</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_STONE_REEF_PEDIA</Tag>
@@ -517,6 +549,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Жемчужный риф</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_PEARL_REEF_PEDIA</Tag>
@@ -531,6 +564,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Бурые водоросли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_KELP_PEDIA</Tag>
@@ -545,6 +579,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Водоросли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_SEAGRASS_PEDIA</Tag>
@@ -559,6 +594,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Северное течение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_N_PEDIA</Tag>
@@ -573,6 +609,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Южное течение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_S_PEDIA</Tag>
@@ -587,6 +624,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Восточное течение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_E_PEDIA</Tag>
@@ -601,6 +639,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Западное течение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_W_PEDIA</Tag>
@@ -615,6 +654,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Северо-восточное течение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_NE_PEDIA</Tag>
@@ -629,6 +669,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Северо-западное течение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_NW_PEDIA</Tag>
@@ -643,6 +684,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Юго-восточное течение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_SE_PEDIA</Tag>
@@ -657,6 +699,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Юго-западное течение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_SW_PEDIA</Tag>
@@ -671,6 +714,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Сочная трава</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_LUSHGRASS_PEDIA</Tag>
@@ -685,6 +729,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Дикие цветы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_WILD_FLOWERS_PEDIA</Tag>
@@ -699,6 +744,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Горный луг</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_MEADOW_PEDIA</Tag>
@@ -713,6 +759,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Непролазный кустарник</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_SHRUB_PEDIA</Tag>
@@ -726,6 +773,7 @@
         <German>Tornado</German>
         <Italian>Tornado</Italian>
         <Spanish>Tornado</Spanish>
+        <Russian>Торнадо</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_TORNADO_PEDIA</Tag>
@@ -756,6 +804,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Неблагоприятный ветер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_VENT_DEF_PEDIA</Tag>
@@ -786,6 +835,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Благоприятный ветер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_VENT_FAV_PEDIA</Tag>
@@ -800,6 +850,7 @@
         <German>Vulkan</German>
         <Italian>Vulcano</Italian>
         <Spanish>Volcán</Spanish>
+        <Russian>Вулкан</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_VOLCANO_PEDIA</Tag>
@@ -811,6 +862,7 @@
         <Tag>TXT_KEY_FEATURE_RIVER_FORD</Tag>
         <English>River Ford</English>
         <German>Flussfurt</German>
+        <Russian>Речной брод</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_RIVER_FORD_PEDIA</Tag>
