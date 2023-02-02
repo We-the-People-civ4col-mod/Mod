@@ -91,6 +91,7 @@
         <German>Verschanzen</German>
         <Italian>Fortifica</Italian>
         <Spanish>Fortificar</Spanish>
+        <Russian>Укрепить</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_FORTIFY_HELP</Tag>
@@ -99,6 +100,7 @@
         <German>Die Einheit "gräbt sich ein", um dem Feind besser standhalten zu können. Der Defensivbonus erhöht sich um 5% für jede Runde, die die Einheit befestigt ist (maximal 25%).</German>
         <Italian>L'unità si "trincera" per poter fronteggiare meglio l'attacco nemico. Un'unità guadagna il 5% di bonus difensivo per ogni turno che rimane fortificata, fino a un massimo del 25%.</Italian>
         <Spanish>La unidad se "atrinchera" para aguantar mejor los ataques del enemigo. Obtiene una bonificación defensiva del 5% por cada turno que se fortifique hasta un máximo de un 25%.</Spanish>
+        <Russian>Юнит окапывается, чтобы лучше противостоять вражеской атаке. Отряд получает 5% бонус к защите за каждый ход, когда он укреплен (максимум - 25%).</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_FOUND</Tag>
@@ -107,6 +109,7 @@
         <German>Siedlung gründen</German>
         <Italian>Costruisci insediamento</Italian>
         <Spanish>Construir asentamiento</Spanish>
+        <Russian>Основать поселение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_FOUND_HELP</Tag>
@@ -123,6 +126,7 @@
         <German>Bis zur vollständigen Heilung verschanzen</German>
         <Italian>Fortifica finché non raggiunge il massimo della salute</Italian>
         <Spanish>Fortificar hasta curarse</Spanish>
+        <Russian>Укрепить до полного исцеления</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_HEAL_HELP</Tag>
@@ -223,6 +227,7 @@
         <German>Plünderung</German>
         <Italian>Saccheggia</Italian>
         <Spanish>Saquear</Spanish>
+        <Russian>Разграбить</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_PILLAGE_HELP</Tag>
@@ -255,6 +260,7 @@
         <German>Wache</German>
         <Italian>Sentinella</Italian>
         <Spanish>Vigilar</Spanish>
+        <Russian>Режим часового</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_SENTRY_HELP</Tag>
@@ -263,6 +269,7 @@
         <German>Die Einheit bleibt inaktiv, bis eine feindliche Einheit in Sichtweite ist.</German>
         <Italian>L'unità rimane inattiva finché un'unità nemica non diventa visibile.</Italian>
         <Spanish>La unidad permanecerá inactiva hasta que una unidad enemiga se sitúe al alcance de la visibilidad.</Spanish>
+        <Russian>Отряд остается неактивным до тех пор, пока вражеский отряд не войдет в зону его видимости.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_SKIP</Tag>
@@ -271,6 +278,7 @@
         <German>Runde überspringen</German>
         <Italian>Salta turno</Italian>
         <Spanish>Saltar turno</Spanish>
+        <Russian>Пропустить ход</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_SKIP_HELP</Tag>
@@ -287,6 +295,7 @@
         <German>Ausruhen</German>
         <Italian>Dormi</Italian>
         <Spanish>Dormir</Spanish>
+        <Russian>Бездействовать</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_SLEEP_HELP</Tag>
@@ -295,6 +304,7 @@
         <German>Einheit bleibt tatenlos an dieser Stelle, bis sie wieder angeklickt wird.</German>
         <Italian>Ordina all'unità di riposare finché non viene attivata dal giocatore.</Italian>
         <Spanish>Para ordenarle a la unidad que duerma hasta que la activéis.</Spanish>
+        <Russian>Юнит будет бездействовать до тех пор, пока игрок не активирует его снова.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_SURRENDER</Tag>

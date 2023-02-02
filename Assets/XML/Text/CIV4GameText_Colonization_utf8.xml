@@ -474,6 +474,7 @@
         <German>[ICON_BULLET]%D1_Modifier%% Produktion von %s2_list_of_icons</German>
         <Italian>[ICON_BULLET]%D1_Modifier%% produzione di %s2_list_of_icons</Italian>
         <Spanish>[ICON_BULLET]%D1_Modifier%% a la producción de %s2_list_of_icons</Spanish>
+        <Russian>[ICON_BULLET]%D1_Modifier%% к производству %s2_list_of_icons</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YIELD_CHANGE</Tag>
@@ -482,6 +483,7 @@
         <German>[ICON_BULLET]%D1_Modifier Produktion von %s2_list_of_icons</German>
         <Italian>[ICON_BULLET]%D1_Modifier produzione di %s2_list_of_icons</Italian>
         <Spanish>[ICON_BULLET]%D1_Modifier a la producción de %s2_list_of_icons</Spanish>
+        <Russian>[ICON_BULLET]%D1_Modifier к производству %s2_list_of_icons</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_REQUIRES_YIELD_QUANTITY_STRING</Tag>
@@ -660,6 +662,7 @@
         <German>[ICON_BULLET]%D1 Güter gelagert</German>
         <Italian>[ICON_BULLET]%D1 deposito beni</Italian>
         <Spanish>[ICON_BULLET]%D1 mercancías almacenadas</Spanish>
+        <Russian>[ICON_BULLET]%D1 к вместимости склада</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IN_BOUND</Tag>
@@ -1516,6 +1519,7 @@
         <German>Gesamt [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] = %d2%F3</German>
         <Italian>Totale [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] = %d2%F3</Italian>
         <Spanish>Total [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] = %d2%F3</Spanish>
+        <Russian>Всего [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] = %d2%F3</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_TOTAL_FLOAT</Tag>
@@ -1564,6 +1568,7 @@
         <German>Transporteinheit komplett automatisieren</German>
         <Italian>Automatizza i trasporti</Italian>
         <Spanish>Automatizar transporte</Spanish>
+        <Russian>Автоматизировать транспорт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_AUTOMATE_FULL</Tag>
@@ -1580,6 +1585,7 @@
         <German>Einheit transportiert Waren komplett automatisch zwischen den Siedlungen</German>
         <Italian>Automatizza totalmente il trasporto</Italian>
         <Spanish>Automatizar completamente el transporte</Spanish>
+        <Russian>Автоматизировать транспорт для доставки товаров</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_AUTOMATE_FULL_HELP</Tag>

@@ -23,6 +23,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Руины</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_CITY_RUINS_PEDIA</Tag>
@@ -53,6 +54,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Фруктовая плантация</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_FRUIT_PLANTATION_PEDIA</Tag>
@@ -83,6 +85,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Большая фруктовая плантация</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_FRUIT_PLANTATION_PEDIA</Tag>
@@ -113,6 +116,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Лагерь сборщиков</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_COLLECTORS_POST_PEDIA</Tag>
@@ -143,6 +147,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Хранилище сборщиков</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_COLLECTORS_DEPOT_PEDIA</Tag>
@@ -173,6 +178,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Лагерь плантаторов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_COLLECTORS_POST2_PEDIA</Tag>
@@ -203,6 +209,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Хранилище плантаторов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_COLLECTORS_DEPOT2_PEDIA</Tag>
@@ -233,6 +240,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Ферма</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_FARM_PEDIA</Tag>
@@ -263,6 +271,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Большая ферма</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_FARM_PEDIA</Tag>
@@ -278,6 +287,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Ветряк</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_WIND_MILL_PEDIA</Tag>
@@ -292,11 +302,12 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Железная мельница</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_IRON_MILL_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Iron mills[COLOR_REVERT] on the map add a bonus percentage to the total production of [LINK=YIELD_TOOLS]tools[\LINK] in their city when they are worked by a citizen of the city.[NEWLINE]They can be built only on those terrains that already have [LINK=YIELD_TOOLS]iron ore[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]An iron mill relies on a power source and gearing. It can increase the volume of forced air for smelting, or drive a mechanical process for grinding, rolling, or hammering. Such processes accelerate the production of many metal products.</English>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Eisenmühlen[COLOR_REVERT] auf der Karte geben einen prozentualen Bonus auf die gesamte Herstellung von [LINK=YIELD_TOOLS]Werkzeuge[\LINK] der Stadt, wenn sie von einem Bürger in der Stadt bearbeitet werden.[NEWLINE]Sie können nur auf Terrain gebaut werden, welches bereits einen Basiswert von [LINK=YIELD_TOOLS]Eisenerz[\LINK] hat.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Eine Wassermühle ist eine meist historische technische Anlage, die mittels einer Wasserkraftmaschine durch Wasserkraft angetrieben wird und die kinetische Energie des Wassers nutzt. Bei der Anlage kann es sich um eine Mühle im engeren Sinne handeln, in der etwas gemahlen bzw. zerkleinert wird (Mahlmühle), oder um eine Mühle, in der sonstige Maschinen angetrieben werden (z. B. Hammerwerk, Sägemühle, Schleifmühle, Papiermühle, Pumpwerk, Pochmühle). Für die Umsetzung der Wasserenergie in mechanische Arbeit kommen bei historischen Mühlen fast ausschließlich Wasserräder zum Einsatz; diese wurden in neuerer Zeit oft durch Wasserturbinen ersetzt. Das zum Antrieb nötige Wasser (Aufschlagwasser) wird normalerweise einem Fließgewässer entnommen. Je nach örtlichen Gegebenheiten sind zur Erhöhung der Fallhöhe und zur Speicherung von Wasser Teiche, Stauwehre, Kanäle oder andere Wasserbauwerke erforderlich, siehe dazu auch Schlacht (Wasserbauwerk).</German>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Iron mills[COLOR_REVERT] on the map add a bonus percentage to the total production of [LINK=YIELD_TOOLS]tools[\LINK] in their city when they are worked by a citizen of the city.[NEWLINE]They can be built only on those terrains that already have [LINK=YIELD_ORE]iron ore[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]An iron mill relies on a power source and gearing. It can increase the volume of forced air for smelting, or drive a mechanical process for grinding, rolling, or hammering. Such processes accelerate the production of many metal products.</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Eisenmühlen[COLOR_REVERT] auf der Karte geben einen prozentualen Bonus auf die gesamte Herstellung von [LINK=YIELD_TOOLS]Werkzeuge[\LINK] der Stadt, wenn sie von einem Bürger in der Stadt bearbeitet werden.[NEWLINE]Sie können nur auf Terrain gebaut werden, welches bereits einen Basiswert von [LINK=YIELD_ORE]Eisenerz[\LINK] hat.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Eine Wassermühle ist eine meist historische technische Anlage, die mittels einer Wasserkraftmaschine durch Wasserkraft angetrieben wird und die kinetische Energie des Wassers nutzt. Bei der Anlage kann es sich um eine Mühle im engeren Sinne handeln, in der etwas gemahlen bzw. zerkleinert wird (Mahlmühle), oder um eine Mühle, in der sonstige Maschinen angetrieben werden (z. B. Hammerwerk, Sägemühle, Schleifmühle, Papiermühle, Pumpwerk, Pochmühle). Für die Umsetzung der Wasserenergie in mechanische Arbeit kommen bei historischen Mühlen fast ausschließlich Wasserräder zum Einsatz; diese wurden in neuerer Zeit oft durch Wasserturbinen ersetzt. Das zum Antrieb nötige Wasser (Aufschlagwasser) wird normalerweise einem Fließgewässer entnommen. Je nach örtlichen Gegebenheiten sind zur Erhöhung der Fallhöhe und zur Speicherung von Wasser Teiche, Stauwehre, Kanäle oder andere Wasserbauwerke erforderlich, siehe dazu auch Schlacht (Wasserbauwerk).</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_SUPPLY_DEPOT</Tag>
@@ -306,6 +317,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Склад припасов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_SUPPLY_DEPOT_PEDIA</Tag>
@@ -320,6 +332,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Большой склад припасов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_SUPPLY_DEPOT_PEDIA</Tag>
@@ -334,6 +347,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Канал</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_CANAL_PEDIA</Tag>
@@ -363,6 +377,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Форт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_FORT_PEDIA</Tag>
@@ -393,6 +408,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Большой форт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_FORT_PEDIA</Tag>
@@ -429,6 +445,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Древние руины</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT2_PEDIA</Tag>
@@ -459,6 +476,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Обломки корабля</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT3_PEDIA</Tag>
@@ -489,6 +507,7 @@
             <Gender>Neutral</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Кораблекрушение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT4_PEDIA</Tag>
@@ -519,6 +538,7 @@
             <Gender>Neutral</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Лагерь с костром</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT5_PEDIA</Tag>
@@ -534,6 +554,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Лагерь разбойников</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT6_PEDIA</Tag>
@@ -548,6 +569,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Логово животных</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT7_PEDIA</Tag>
@@ -562,6 +584,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Деревня враждебных индейцев</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT8_PEDIA</Tag>
@@ -617,6 +640,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Домик лесорубов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LODGE_PEDIA</Tag>
@@ -647,6 +671,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Лагерь лесорубов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LUMBERJACK_CAMP_PEDIA</Tag>
@@ -677,11 +702,12 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Лесопилка</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LUMBERMILL_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sawmills[COLOR_REVERT] on the map give a percentual bonus on the total production of [LINK=YIELD_HAMMMERS]hammers[\LINK] in their City if they are worked by a citizen of the city.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Lumberjacks are known for their music and cameraderie at the end of a hard day's work.</English>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sägewerk[COLOR_REVERT] auf der Karte geben einen prozentualen Bonus auf die gesamte [LINK=YIELD_HAMMMERS]Bauproduktion[\LINK] der Stadt, wenn sie von einem Bürger in der Stadt bearbeitet werden.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Holzfäller sind bekannt für ihre Kameradschaft und Musik am Ende eines harten Arbeitstages</German>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sawmills[COLOR_REVERT] on the map give a percentual bonus on the total production of [LINK=YIELD_HAMMERS]hammers[\LINK] in their City if they are worked by a citizen of the city.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Lumberjacks are known for their music and cameraderie at the end of a hard day's work.</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sägewerk[COLOR_REVERT] auf der Karte geben einen prozentualen Bonus auf die gesamte [LINK=YIELD_HAMMERS]Bauproduktion[\LINK] der Stadt, wenn sie von einem Bürger in der Stadt bearbeitet werden.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Holzfäller sind bekannt für ihre Kameradschaft und Musik am Ende eines harten Arbeitstages</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_MINE</Tag>
@@ -706,6 +732,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Шахта</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_MINE_PEDIA</Tag>
@@ -736,6 +763,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Большая шахта</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_DEEP_MINE_PEDIA</Tag>
@@ -766,12 +794,13 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Монастырь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_MONASTERY_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Monasteries[COLOR_REVERT] only function as long as they are inhabited by monks. A colonist with the [LINK=PROFESSION_MISSIONARY]missionary[\LINK] profession needs to be fortified in the monastery. Employing [LINK=UNIT_CHRISTIAN_MISSIONARY]Jesuit missionaries[\LINK] or [LINK=UNIT_CHRISTIAN_MISSIONARY_PROT]firebrand preachers[\LINK] increases the effectiveness of the monastery.[PARAGRAPH:2]For more information on managing monasteries, see [LINK=CONCEPT_MONASTERIES]Monasteries[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]"Monastery" denotes the building, or complex of buildings, comprising the domestic quarters and workplace(s) of monastics, whether monks or nuns, and whether living in community or alone (hermits).[PARAGRAPH:1]The monastery includes a place reserved for prayer which may be a chapel, church or temple, and may also serve as an oratory. A monastery complex can include a church, dormitory, cloister, refectory, library, balneary and infirmary.[PARAGRAPH:1]Depending on the location, the monastic order and the occupation of its inhabitants, the complex may also have buildings to aid self-sufficiency and community service. These may include a hospice, a school, and agricultural and manufacturing buildings such as a barn, a forge or a brewery.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Monasteries[COLOR_REVERT] only function as long as they are inhabited by monks. A colonist with the [LINK=PROFESSION_MISSIONARY]missionary[\LINK] profession needs to be fortified in the monastery. Employing [LINK=UNIT_CHRISTIAN_MISSIONARY]Jesuit missionaries[\LINK] or [LINK=UNIT_PREACHER]firebrand preachers[\LINK] increases the effectiveness of the monastery.[PARAGRAPH:2]For more information on managing monasteries, see [LINK=CONCEPT_MONASTERIES]Monasteries[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]"Monastery" denotes the building, or complex of buildings, comprising the domestic quarters and workplace(s) of monastics, whether monks or nuns, and whether living in community or alone (hermits).[PARAGRAPH:1]The monastery includes a place reserved for prayer which may be a chapel, church or temple, and may also serve as an oratory. A monastery complex can include a church, dormitory, cloister, refectory, library, balneary and infirmary.[PARAGRAPH:1]Depending on the location, the monastic order and the occupation of its inhabitants, the complex may also have buildings to aid self-sufficiency and community service. These may include a hospice, a school, and agricultural and manufacturing buildings such as a barn, a forge or a brewery.</English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Un monastère (du grec monos, « seul ») est un ensemble de bâtiments où habite une communauté religieuse de moines ou de moniales. On parle également d'abbaye s'il est dirigé par un abbé ou de prieuré s'il est dépendant ou de moindre importance. Souvent, le prieuré est dépendant d'une abbaye ou monastère. Les monastères des ordres militaires du Moyen âge sont appelés commanderies. On parle de couvent pour les résidences de Franciscains et Dominicains, ainsi que d'autres ordres, tandis que les Bénédictins ou Prémontrés habitent des abbayes ou prieurés.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1]Ein [COLOR_HIGHLIGHT_TEXT]Kloster[COLOR_REVERT] ist nur aktiv, wenn Mönche darin leben. Dafür muss ein Kolonist im Beruf [LINK=PROFESSION_MISSIONARY]Missionar[\LINK] im Kloster befestigt werden. Wird ein [LINK=UNIT_CHRISTIAN_MISSIONARY]Jesuitenmissionar[\LINK] oder ein [LINK=UNIT_CHRISTIAN_MISSIONARY_PROT]Evangelist[\LINK] eingesetzt, erhöht sich die Effektivität des Klosters.[PARAGRAPH:2]Für weitere Informationen siehe [LINK=CONCEPT_MONASTERIES]Klöster[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Der Begriff 'Kloster' steht für ein Gebäude oder einen Komplex mehrerer Gebäude, welches üblicherweise von Mönchen oder Nonnen bewohnt wird. Ein Kloster beinhaltet üblicherweise Gebetsstellen, wie eine Kapelle, eine Kirche oder einen Tempel, aber auch Räume oder Gebäude für den Alltag und die Selbstversorgung, wie einen Schlafsaal, Speisesaal, Werkstellen, Scheunen, Schmieden und manchmal Brauereien. In manchen größeren Klöstern findet man auch Büchereien, Schulen oder Krankenhäuser, die dann auch oft den umliegenden Gemeinden Dienste anbieten.</German>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1]Ein [COLOR_HIGHLIGHT_TEXT]Kloster[COLOR_REVERT] ist nur aktiv, wenn Mönche darin leben. Dafür muss ein Kolonist im Beruf [LINK=PROFESSION_MISSIONARY]Missionar[\LINK] im Kloster befestigt werden. Wird ein [LINK=UNIT_CHRISTIAN_MISSIONARY]Jesuitenmissionar[\LINK] oder ein [LINK=UNIT_CHRISTIAN_MISSIONARY]Evangelist[\LINK] eingesetzt, erhöht sich die Effektivität des Klosters.[PARAGRAPH:2]Für weitere Informationen siehe [LINK=CONCEPT_MONASTERIES]Klöster[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Der Begriff 'Kloster' steht für ein Gebäude oder einen Komplex mehrerer Gebäude, welches üblicherweise von Mönchen oder Nonnen bewohnt wird. Ein Kloster beinhaltet üblicherweise Gebetsstellen, wie eine Kapelle, eine Kirche oder einen Tempel, aber auch Räume oder Gebäude für den Alltag und die Selbstversorgung, wie einen Schlafsaal, Speisesaal, Werkstellen, Scheunen, Schmieden und manchmal Brauereien. In manchen größeren Klöstern findet man auch Büchereien, Schulen oder Krankenhäuser, die dann auch oft den umliegenden Gemeinden Dienste anbieten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_MONASTERY</Tag>
@@ -796,12 +825,13 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Большой монастырь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_MONASTERY_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]large monastery[COLOR_REVERT] is the upgrade of the [LINK=IMPROVEMENT_MONASTERY]monastery[\LINK].[PARAGRAPH:1]Monasteries work only while they're inhabited by monks. A colonist with the [LINK=PROFESSION_MISSIONARY]missionary[\LINK] profession needs to be fortified on the plot with the monastery. Employing [LINK=UNIT_CHRISTIAN_MISSIONARY]Jesuit missionaries[\LINK] or [LINK=UNIT_CHRISTIAN_MISSIONARY_PROT]firebrand preachers[\LINK] increases the effectiveness of the monastery.[PARAGRAPH:2]For more information on monasteries, see [LINK=CONCEPT_MONASTERIES]Monasteries[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]"Monastery" denotes the building, or complex of buildings, comprising the domestic quarters of monastics, whether monks or nuns, and whether living in community or alone (hermits). The monastery generally includes a place reserved for prayer which may be a chapel, church or temple, and may also serve as an oratory.[PARAGRAPH:1]A monastery complex typically has buildings which include a church, dormitory, cloister, refectory, library, balneary and infirmary. Depending on the location, the monastic order and the occupation of its inhabitants, the complex may also include buildings to aid self-sufficiency and service to the community. These could include a hospice, a school, and agricultural and manufacturing buildings such as a barn, forge or brewery.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]large monastery[COLOR_REVERT] is the upgrade of the [LINK=IMPROVEMENT_MONASTERY]monastery[\LINK].[PARAGRAPH:1]Monasteries work only while they're inhabited by monks. A colonist with the [LINK=PROFESSION_MISSIONARY]missionary[\LINK] profession needs to be fortified on the plot with the monastery. Employing [LINK=UNIT_CHRISTIAN_MISSIONARY]Jesuit missionaries[\LINK] or [LINK=UNIT_PREACHER]firebrand preachers[\LINK] increases the effectiveness of the monastery.[PARAGRAPH:2]For more information on monasteries, see [LINK=CONCEPT_MONASTERIES]Monasteries[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]"Monastery" denotes the building, or complex of buildings, comprising the domestic quarters of monastics, whether monks or nuns, and whether living in community or alone (hermits). The monastery generally includes a place reserved for prayer which may be a chapel, church or temple, and may also serve as an oratory.[PARAGRAPH:1]A monastery complex typically has buildings which include a church, dormitory, cloister, refectory, library, balneary and infirmary. Depending on the location, the monastic order and the occupation of its inhabitants, the complex may also include buildings to aid self-sufficiency and service to the community. These could include a hospice, a school, and agricultural and manufacturing buildings such as a barn, forge or brewery.</English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Un monastère (du grec monos, « seul ») est un ensemble de bâtiments où habite une communauté religieuse de moines ou de moniales. On parle également d'abbaye s'il est dirigé par un abbé ou de prieuré s'il est dépendant ou de moindre importance. Souvent, le prieuré est dépendant d'une abbaye ou monastère. Les monastères des ordres militaires du Moyen âge sont appelés commanderies. On parle de couvent pour les résidences de Franciscains et Dominicains, ainsi que d'autres ordres, tandis que les Bénédictins ou Prémontrés habitent des abbayes ou prieurés.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1]Das [COLOR_HIGHLIGHT_TEXT]Große Kloster[COLOR_REVERT] ist die Erweiterung des [LINK=IMPROVEMENT_MONASTERY]Klosters[\LINK].[PARAGRAPH:1]Ein [COLOR_HIGHLIGHT_TEXT]Kloster[COLOR_REVERT] ist nur aktiv, wenn Mönche darin leben. Dafür muss ein Kolonist im Beruf [LINK=PROFESSION_MISSIONARY]Missionar[\LINK] im Kloster befestigt werden. Wird ein [LINK=UNIT_CHRISTIAN_MISSIONARY]Jesuitenmissionar[\LINK] oder ein [LINK=UNIT_CHRISTIAN_MISSIONARY_PROT]Evangelist[\LINK] eingesetzt, erhöht sich die Effektivität des Klosters.[PARAGRAPH:2]Für weitere Informationen siehe [LINK=CONCEPT_MONASTERIES]Klöster[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Der Begriff 'Kloster' steht für ein Gebäude oder einen Komplex mehrerer Gebäude, welches üblicherweise von Mönchen oder Nonnen bewohnt wird. Ein Kloster beinhaltet üblicherweise Gebetsstellen, wie eine Kapelle, eine Kirche oder einen Tempel, aber auch Räume oder Gebäude für den Alltag und die Selbstversorgung, wie einen Schlafsaal, Speisesaal, Werkstellen, Scheunen, Schmieden und manchmal Brauereien. In manchen größeren Klöstern findet man auch Büchereien, Schulen oder Krankenhäuser, die dann auch oft den umliegenden Gemeinden Dienste anbieten.</German>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1]Das [COLOR_HIGHLIGHT_TEXT]Große Kloster[COLOR_REVERT] ist die Erweiterung des [LINK=IMPROVEMENT_MONASTERY]Klosters[\LINK].[PARAGRAPH:1]Ein [COLOR_HIGHLIGHT_TEXT]Kloster[COLOR_REVERT] ist nur aktiv, wenn Mönche darin leben. Dafür muss ein Kolonist im Beruf [LINK=PROFESSION_MISSIONARY]Missionar[\LINK] im Kloster befestigt werden. Wird ein [LINK=UNIT_CHRISTIAN_MISSIONARY]Jesuitenmissionar[\LINK] oder ein [LINK=UNIT_CHRISTIAN_MISSIONARY]Evangelist[\LINK] eingesetzt, erhöht sich die Effektivität des Klosters.[PARAGRAPH:2]Für weitere Informationen siehe [LINK=CONCEPT_MONASTERIES]Klöster[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Der Begriff 'Kloster' steht für ein Gebäude oder einen Komplex mehrerer Gebäude, welches üblicherweise von Mönchen oder Nonnen bewohnt wird. Ein Kloster beinhaltet üblicherweise Gebetsstellen, wie eine Kapelle, eine Kirche oder einen Tempel, aber auch Räume oder Gebäude für den Alltag und die Selbstversorgung, wie einen Schlafsaal, Speisesaal, Werkstellen, Scheunen, Schmieden und manchmal Brauereien. In manchen größeren Klöstern findet man auch Büchereien, Schulen oder Krankenhäuser, die dann auch oft den umliegenden Gemeinden Dienste anbieten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_PASTURE</Tag>
@@ -826,6 +856,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Пастбище</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_PASTURE_PEDIA</Tag>
@@ -841,6 +872,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Загон для скота</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_PEN_PEDIA</Tag>
@@ -855,6 +887,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Большой загон для скота</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_PEN_PEDIA</Tag>
@@ -884,6 +917,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Большое пастбище</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_PASTURE_PEDIA</Tag>
@@ -902,6 +936,7 @@
         </German>
         <Italian>Piantagione</Italian>
         <Spanish>Plantacion</Spanish>
+        <Russian>Плантация</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_PLANTATION_PEDIA</Tag>
@@ -932,6 +967,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Большая плантация</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_PLANTATION_PEDIA</Tag>
@@ -962,6 +998,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Каменоломня</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_QUARRY_PEDIA</Tag>
@@ -992,6 +1029,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Большая каменоломня</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_QUARRY_PEDIA</Tag>
@@ -1022,6 +1060,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Домик охотника</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_TRAPPER_HUT_PEDIA</Tag>
@@ -1052,6 +1091,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Лагерь охотников</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_TRAPPER_CAMP_PEDIA</Tag>
@@ -1082,6 +1122,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Виноградник</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_VINEYARD_PEDIA</Tag>
@@ -1114,6 +1155,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Старый виноградник</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_VINEYARD_PEDIA</Tag>
@@ -1161,6 +1203,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Речная паромная переправа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_RAFT_STATION_PEDIA</Tag>
@@ -1185,6 +1228,7 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Russian>Рыболовные сети</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_FISHING_NETS_PEDIA</Tag>
@@ -1199,6 +1243,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Охотничье укрытие</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_HUNTERS_STAGE_PEDIA</Tag>
@@ -1213,6 +1258,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Соляной рудник</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_SALINA_PEDIA</Tag>
@@ -1227,6 +1273,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Russian>Большой соляной рудник</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_SALINA_PEDIA</Tag>
@@ -1237,31 +1284,37 @@
         <Tag>TXT_KEY_IMPROVEMENT_BUILD_ONLY_LARGE_RIVERS</Tag>
         <English>[ICON_BULLET]Can only be built on [LINK=TERRAIN_LARGE_RIVERS]large rivers[\LINK]</English>
         <German>[ICON_BULLET]Kann nur auf [LINK=TERRAIN_LARGE_RIVERS]Großen Flüssen[\LINK] gebaut werden.</German>
+        <Russian>[ICON_BULLET]Можно строить только на [LINK=TERRAIN_LARGE_RIVERS]больших реках[\LINK]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_BUILD_ONLY_LAKE</Tag>
         <English>[ICON_BULLET]Can only be built on [LINK=TERRAIN_LAKE]fresh water lakes[\LINK], [LINK=TERRAIN_ICE_LAKE]ice lakes[\LINK], [LINK=TERRAIN_ICE_LAKE]coasts[\LINK] or [LINK=TERRAIN_ICE_LAKE]shallow coasts[\LINK]</English>
         <German>[ICON_BULLET]Kann nur auf [LINK=TERRAIN_LAKE]Süßwassersee[\LINK], [LINK=TERRAIN_ICE_LAKE]Eisseen[\LINK], [LINK=TERRAIN_ICE_LAKE]Küsten[\LINK] oderr [LINK=TERRAIN_ICE_LAKE]flachen Küsten[\LINK] gebaut werden.</German>
+        <Russian>[ICON_BULLET]Можно строить только на [LINK=TERRAIN_LAKE]пресноводном озере[\LINK], [LINK=TERRAIN_ICE_LAKE]замерзшем озере[\LINK], [LINK=TERRAIN_ICE_LAKE]побережье[\LINK] или [LINK=TERRAIN_ICE_LAKE]мелководье[\LINK]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_FOR_SPAWNING_UNITS</Tag>
         <English>[ICON_BULLET]Can spawn friendly units when explored.</English>
         <German>[ICON_BULLET]Kann freundliche Einheiten hervorbringen, wenn es erkundet wird.</German>
+        <Russian>[ICON_BULLET]При исследовании может создавать дружественные юниты.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_FOR_SPAWNING_HOSTILE_ANIMALS</Tag>
         <English>[ICON_BULLET]Spawns wild animals that then guard it.</English>
         <German>[ICON_BULLET]Erzeugt Wilde Tiere als Beschützer.</German>
+        <Russian>[ICON_BULLET]Порождает диких животных, которые потом охраняют его.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_FOR_SPAWNING_HOSTILE_NATIVES</Tag>
         <English>[ICON_BULLET]Spawns hostile Natives who guard it.</English>
         <German>[ICON_BULLET]Erzeugt Feindliche Ureinwohner als Beschützer.</German>
+        <Russian>[ICON_BULLET]Порождает враждебных туземцев, которые его охраняют..</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_FOR_SPAWNING_HOSTILE_CRIMINALS</Tag>
         <English>[ICON_BULLET]Spawns outlaws who guard their hideout.</English>
         <German>[ICON_BULLET]Erzeugt Revoltierende Sklaven und Kriminelle als Beschützer.</German>
+        <Russian>[ICON_BULLET]Порождает преступников, которые охраняют свое убежище.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_CLAY_PIT</Tag>
@@ -1286,6 +1339,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Глиняный карьер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_CLAY_PIT_PEDIA</Tag>
@@ -1316,6 +1370,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Открытый глиняный рудник</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_OPEN_CLAY_MINE_PEDIA</Tag>
@@ -1346,6 +1401,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Торфяной карьер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_PEAT_PIT_PEDIA</Tag>
@@ -1376,6 +1432,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Открытая торфяная шахта</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_OPEN_PEAT_MINE_PEDIA</Tag>

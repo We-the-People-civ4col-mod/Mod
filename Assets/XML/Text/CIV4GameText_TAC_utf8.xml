@@ -968,6 +968,7 @@
         <English>You cannot declare war within the first 20 turns of the game.</English>
         <French>Vous ne pouvez pas déclarer la guerre dnas les 20 premiers tours du jeu.</French>
         <German>Mäßigt Euch! Ihr könnt in den ersten 20 Runden keinen Krieg erklären!</German>
+        <Russian>Вы не можете объявить войну в первый 20 ходов игры.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FORCE_START_PEACE</Tag>
@@ -1028,6 +1029,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Карта Нового мира</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_WORLD_MAP</Tag>
@@ -1052,6 +1054,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Карта мира</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_HURRY_SHORTAGE</Tag>

@@ -143,7 +143,7 @@
         <German>(%d1 [NUM1:Runde:Runden])</German>
         <Italian>(%d1 [NUM1:turno:turni])</Italian>
         <Spanish>(%d1 [NUM1:turno:turnos])</Spanish>
-        <Russian>%s1 (%d2 [NUM2:ход:ходов])</Russian>
+        <Russian>(%d1 [NUM1:ход:ходов])</Russian>
     </TEXT>
     <TEXT>
         <Tag>INTERFACE_PANE_UNIT_NAME</Tag>
@@ -194,6 +194,7 @@
         <German>Modernisierungen bauen (automatisch)</German>
         <Italian>Costruire i miglioramenti (automaticamente)</Italian>
         <Spanish>Construir mejoras (automatizado)</Spanish>
+        <Russian>Строить улучшения (авто)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_AUTOMATE_EXPLORE</Tag>
@@ -202,6 +203,7 @@
         <German>Erkunden (automatisch)</German>
         <Italian>Esplora (automaticamente)</Italian>
         <Spanish>Explorar (automatizado)</Spanish>
+        <Russian>Исследовать территорию (авто)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_DESTROY_IMP</Tag>
@@ -290,6 +292,7 @@
         <German>[SPACE]([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] für alle Einheiten)</German>
         <Italian>[SPACE]([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] per tutte le unità)</Italian>
         <Spanish>[SPACE]([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] para todas las unidades)</Spanish>
+        <Russian>[SPACE]([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] для всех юнитов)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_GOES_TO_CIV</Tag>
@@ -361,6 +364,7 @@
         <German>[ICON_BULLET]Fortbewegungskosten : %d1[ICON_MOVES]</German>
         <Italian>[ICON_BULLET]Costo movimento : %d1[ICON_MOVES]</Italian>
         <Spanish>[ICON_BULLET]Coste del movimiento : %d1 [ICON_MOVES]</Spanish>
+        <Russian>[ICON_BULLET]Стоимость передвижения : %d1[ICON_MOVES]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_BUILD_MODIFIER</Tag>
@@ -984,6 +988,7 @@
         <German>[COLOR_WARNING_TEXT]Erfordert : [LINK=literal]%s1_Name[\LINK][COLOR_REVERT]</German>
         <Italian>[COLOR_WARNING_TEXT]Richiede [LINK=literal]%s1_Name[\LINK][COLOR_REVERT]</Italian>
         <Spanish>[COLOR_WARNING_TEXT]Requiere [LINK=literal]%s1_Name[\LINK][COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_WARNING_TEXT]Требует наличия [LINK=literal]%s1_Name[\LINK][COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_REQUIRES_UNIT_LEVEL</Tag>
@@ -2351,6 +2356,7 @@
         <German>[COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT][NEWLINE][NEWLINE]"[COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT] gebaut!" melden Eure Bürger. Was wollt Ihr nun in Auftrag geben?</German>
         <Italian>Hai costruito l'edificio [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT] a [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]. Cosa vuoi realizzare adesso?</Italian>
         <Spanish>Habéis construido [NUM1:un:una:unos:unas] [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT] en [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]. ¿Qué queréis hacer a continuación?</Spanish>
+        <Russian>[COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT][NEWLINE][NEWLINE]Горожане докладывают: "Строительство [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT] закончено!" Над чем будем работать дальше?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_RECOMMENDED</Tag>
@@ -4195,6 +4201,7 @@
         <German>[ICON_BULLET]Spezielle Einheit für %s1_civ</German>
         <Italian>[ICON_BULLET]Unità unica per la civiltà %s1_civ</Italian>
         <Spanish>[ICON_BULLET]Unidad exclusiva de %s1_civ</Spanish>
+        <Russian>[ICON_BULLET]Уникальный юнит для %s1_civ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_REPLACES_UNIT</Tag>
@@ -4203,6 +4210,7 @@
         <German>[ICON_BULLET]Ersetzt [COLOR_UNIT_TEXT]%s1_default_unit[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET]Sostituisce l'unità [COLOR_UNIT_TEXT]%s1_default_unit[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]Reemplaza a la unidad de [COLOR_UNIT_TEXT]%s1_default_unit[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]Замещает [COLOR_UNIT_TEXT]%s1_default_unit[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_UNIT_BUILDING_HURRY</Tag>

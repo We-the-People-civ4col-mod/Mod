@@ -625,6 +625,7 @@
         <German>Lokaler Markt</German>
         <Italian>Domestic Market</Italian>
         <Spanish>Mercado Interior</Spanish>
+        <Russian>Внутренний рынок</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_DEMAND</Tag>
@@ -909,6 +910,7 @@
         <German>Schaden pro Runde : %d1_Amt%%</German>
         <Italian>Danno per turno : %d1_Amt%%</Italian>
         <Spanish>Daño por turno : %d1_Amt%%</Spanish>
+        <Russian>Повреждений за ход : %d1_Amt%%</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_MOVEMENT_COST</Tag>
@@ -917,6 +919,7 @@
         <German>Fortbewegungskosten : %d1[ICON_MOVES]</German>
         <Italian>Costo movimento : %d1[ICON_MOVES]</Italian>
         <Spanish>Coste del movimiento : %d1 [ICON_MOVES]</Spanish>
+        <Russian>Стоимость передвижения : %d1[ICON_MOVES]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_ADVISOR_WAREHOUSE</Tag>

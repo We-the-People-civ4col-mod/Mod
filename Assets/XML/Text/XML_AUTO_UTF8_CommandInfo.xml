@@ -28,7 +28,7 @@
         <German>Letzte Mission abbrechen</German>
         <Italian>Annulla l'ultima missione</Italian>
         <Spanish>Cancelar última misión</Spanish>
-        <Russian>Отменить последнее распоряжение</Russian>
+        <Russian>Отменить распоряжение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_CANCEL_HELP</Tag>

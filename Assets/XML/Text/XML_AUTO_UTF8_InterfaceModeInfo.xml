@@ -19,6 +19,7 @@
         <German>Gehe-zu-Modus</German>
         <Italian>Modalità 'Vai'</Italian>
         <Spanish>Modo Ir a</Spanish>
+        <Russian>Идти к выбраной точке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INTERFACEMODE_GO_TO_ALL</Tag>
@@ -27,6 +28,7 @@
         <German>Gehe-zu-Modus (Alle Einheiten)</German>
         <Italian>Modalità 'Vai' (tutte le unità)</Italian>
         <Spanish>Modo Ir a (todas las unidades)</Spanish>
+        <Russian>Идти к выбраной точке (все юниты)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INTERFACEMODE_GO_TO_ALL_HELP</Tag>
