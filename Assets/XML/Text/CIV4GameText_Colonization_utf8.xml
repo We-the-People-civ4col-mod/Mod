@@ -2334,6 +2334,7 @@
         <German>Auswanderung beschleunigen</German>
         <Italian>Accelera l'immigrazione</Italian>
         <Spanish>Acelerar la inmigración</Spanish>
+        <Russian>Ускорить эмиграцию.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_CHANGE_PROFESSION_REFUND</Tag>
@@ -3213,7 +3214,7 @@
         <German>Wie soll diese Siedlung heißen?</German>
         <Italian>Come vuoi chiamare questo insediamento?</Italian>
         <Spanish>¿Cómo quieres que se llame el asentamiento?</Spanish>
-        <Russian>Как вы хотите назвать это поселение?</Russian>
+        <Russian>Как вы хотите назвать эту колонию?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IN</Tag>

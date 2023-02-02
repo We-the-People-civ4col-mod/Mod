@@ -15,6 +15,7 @@
         <German>Einheit automatisieren</German>
         <Italian>Automatizza l'unità</Italian>
         <Spanish>Automatizar la unidad</Spanish>
+        <Russian>Автоматизировать юнит</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_AUTOMATE_HELP</Tag>
@@ -27,6 +28,7 @@
         <German>Letzte Mission abbrechen</German>
         <Italian>Annulla l'ultima missione</Italian>
         <Spanish>Cancelar última misión</Spanish>
+        <Russian>Отменить последнее распоряжение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_CANCEL_HELP</Tag>
@@ -43,6 +45,7 @@
         <German>Alle Einsätze abbrechen</German>
         <Italian>Annulla tutte le missioni</Italian>
         <Spanish>Cancelar todas las misiones</Spanish>
+        <Russian>Отменить все задачи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_CANCEL_ALL_HELP</Tag>
@@ -59,6 +62,7 @@
         <German>Transportrouten zuweisen</German>
         <Italian>Assegna rotte commerciali (automaticamente)</Italian>
         <Spanish>Asignar rutas comerciales (automatizar)</Spanish>
+        <Russian>Назначить транспортные машруты (автоматизированные)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_CHOOSE_TRADE_ROUTES_HELP</Tag>
@@ -75,6 +79,7 @@
         <German>Expertenfähigkeit entfernen</German>
         <Italian>Rimuovi specializzazione</Italian>
         <Spanish>Borrar especialidad</Spanish>
+        <Russian>Очистить специальность</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_CLEAR_SPECIALTY_HELP</Tag>
@@ -91,6 +96,7 @@
         <German>Einheit auflösen</German>
         <Italian>Elimina l'unità</Italian>
         <Spanish>Borrar la unidad</Spanish>
+        <Russian>Уничтожить юнит</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_DELETE_HELP</Tag>
@@ -107,6 +113,7 @@
         <German>Mission errichten</German>
         <Italian>Fonda missione</Italian>
         <Spanish>Fundar misión</Spanish>
+        <Russian>Основать миссию</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_ESTABLISH_MISSION_HELP</Tag>
@@ -123,6 +130,7 @@
         <German>Einheit verschenken</German>
         <Italian>Dona l'unità</Italian>
         <Spanish>Regalar la unidad</Spanish>
+        <Russian>Подарить юнит</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_GIFT_HELP</Tag>
@@ -139,6 +147,7 @@
         <German>Gehe-zu-Modus (Stadtliste)</German>
         <Italian>Vai alla modalità (selezione della città)</Italian>
         <Spanish>Modo ir a (selección de ciudad)</Spanish>
+        <Russian>Идти к выбранному городу</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_GOTO_MENU_HELP</Tag>
@@ -167,6 +176,7 @@
         <German>Feinde in Sichtweite ignorieren</German>
         <Italian>Ignora i nemici in vista</Italian>
         <Spanish>Ignorar a los enemigos a la vista</Spanish>
+        <Russian>Игнорировать опасность</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_IGNORE_DANGER_HELP</Tag>
@@ -183,6 +193,7 @@
         <German>Schatz verkaufen</German>
         <Italian>Vendi tesoro</Italian>
         <Spanish>Vender tesoro</Spanish>
+        <Russian>Продать сокровище</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_KING_TRANSPORT_HELP</Tag>
@@ -199,6 +210,7 @@
         <German>Fähigkeit lernen</German>
         <Italian>Impara abilità</Italian>
         <Spanish>Aprender habilidad</Spanish>
+        <Russian>Выучить профессию</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_LEARN_HELP</Tag>
@@ -215,6 +227,7 @@
         <German>Laden</German>
         <Italian>Imbarca</Italian>
         <Spanish>Embarcar</Spanish>
+        <Russian>Погрузиться в транспорт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_LOAD_HELP</Tag>
@@ -231,6 +244,7 @@
         <German>Beladen</German>
         <Italian>Carica beni</Italian>
         <Spanish>Cargar mercancías</Spanish>
+        <Russian>Загрузить (товары)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_LOAD_CARGO_HELP</Tag>
@@ -247,6 +261,7 @@
         <German>Einheit beladen</German>
         <Italian>Carica sull'unità</Italian>
         <Spanish>Embarcar la unidad</Spanish>
+        <Russian>Погрузить в транспорт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_LOAD_UNIT_HELP</Tag>
@@ -271,6 +286,7 @@
         <German>Beruf wechseln</German>
         <Italian>Cambia professione</Italian>
         <Spanish>Cambiar de profesión</Spanish>
+        <Russian>Изменить профессию</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_PROFESSION_HELP</Tag>
@@ -299,6 +315,7 @@
         <German>Einheit befördern</German>
         <Italian>Promuovi unità</Italian>
         <Spanish>Ascender unidad</Spanish>
+        <Russian>Повысить юнит</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_PROMOTION_HELP</Tag>
@@ -311,6 +328,7 @@
         <German>Nach Afrika segeln</German>
         <Italian>Fai vela per l'Africa</Italian>
         <Spanish>Navegar a Africa</Spanish>
+        <Russian>Плыть в Африку</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_SAIL_TO_AFRICA_HELP</Tag>
@@ -327,6 +345,7 @@
         <German>Nach Europa segeln</German>
         <Italian>Fai vela per l'Europa</Italian>
         <Spanish>Navegar a Europa</Spanish>
+        <Russian>Плыть в Европу</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_SAIL_TO_EUROPE_HELP</Tag>
@@ -343,6 +362,7 @@
         <German>Nach Port Royal segeln</German>
         <Italian>Fai vela per Port Royal</Italian>
         <Spanish>Navegar a Port Royal</Spanish>
+        <Russian>Плыть в Порт Роял</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_SAIL_TO_PORT_ROYAL_HELP</Tag>
@@ -359,6 +379,7 @@
         <German>Mit dem Häuptling sprechen</German>
         <Italian>Parla col capo</Italian>
         <Spanish>Hablar con el jefe</Spanish>
+        <Russian>Говорить с вождем</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_SPEAK_WITH_CHIEF_HELP</Tag>
@@ -375,6 +396,7 @@
         <German>Ureinwohner aufstacheln</German>
         <Italian>Incitare i nativi</Italian>
         <Spanish>Revuelva hasta natives</Spanish>
+        <Russian>Раздражать индейцев</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_STIR_UP_NATIVES_HELP</Tag>
@@ -383,6 +405,7 @@
         <German>Aufstacheln der Ureinwohner führt zu Überfällen.</German>
         <Italian>Mescolando up nativi li farà andare in raid.</Italian>
         <Spanish>Revolviendo los nativos los hará ir a las redadas.</Spanish>
+        <Russian>Это заставит их начать совершать набеги. </Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_STOP_AUTOMATION</Tag>
@@ -391,6 +414,7 @@
         <German>Automatisierung stoppen</German>
         <Italian>Interrompi l'automazione</Italian>
         <Spanish>Detener la automatización</Spanish>
+        <Russian>Отменить автоматизацию юнита</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_STOP_AUTOMATION_HELP</Tag>
@@ -407,6 +431,7 @@
         <German>Entladen</German>
         <Italian>Sbarca</Italian>
         <Spanish>Desembarcar</Spanish>
+        <Russian>Выгрузить</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_UNLOAD_HELP</Tag>
@@ -423,6 +448,7 @@
         <German>Alle entladen</German>
         <Italian>Sbarca tutto</Italian>
         <Spanish>Desembarcar todas</Spanish>
+        <Russian>Выгрузить все</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_UNLOAD_ALL_HELP</Tag>
@@ -451,6 +477,7 @@
         <German>Einheit wecken</German>
         <Italian>Sveglia l'unità</Italian>
         <Spanish>Despertar a la unidad</Spanish>
+        <Russian>Активировать юнит</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_WAKE_HELP</Tag>
@@ -467,6 +494,7 @@
         <German>Mit Siedlung Handel treiben</German>
         <Italian>Commercia con l'insediamento</Italian>
         <Spanish>Intercambiar con asentamiento</Spanish>
+        <Russian>Торговать с поселением</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_YIELD_TRADE_HELP</Tag>
@@ -483,6 +511,7 @@
         <German>Schätze vereinen</German>
         <Italian>Unire i tesori</Italian>
         <Spanish>Fusionar tesoros</Spanish>
+        <Russian>Объединить сокровища</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_MERGE_TREASURES_HELP</Tag>
@@ -499,6 +528,7 @@
         <German>Handelsposten einrichten</German>
         <Italian>Stabilire un posto di scambio</Italian>
         <Spanish>Establecer un puesto comercial</Spanish>
+        <Russian>Установить торговый пост</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_ESTABLISH_TRADE_POST_HELP</Tag>
@@ -512,6 +542,7 @@
         <Tag>TXT_KEY_COMMAND_USE_CONSTRUCTION_SUPPLIES</Tag>
         <English>Use Construction Supplies</English>
         <German>Baumaterial verwenden</German>
+        <Russian>Использовать Строительные материалы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_USE_CONSTRUCTION_SUPPLIES_HELP</Tag>

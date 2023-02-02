@@ -2375,6 +2375,7 @@
         <German>Milord, Ihr habt die Stadt [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] eingenommen! Wollt Ihr sie behalten?</German>
         <Italian>Hai conquistato [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]! Vuoi tenerla?</Italian>
         <Spanish>Habéis capturado [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. ¿Deseáis conservarla?</Spanish>
+        <Russian>Милорд, мы захватили город [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]!!! Стоит ли нам оставить его себе?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_KEEP_CAPTURED_CITY</Tag>
@@ -2383,6 +2384,7 @@
         <German>Ja! Benennt einen neuen Statthalter ...</German>
         <Italian>Sì! Instaura un nuovo governatore...</Italian>
         <Spanish>Sí. Que tome posesión un nuevo gobernante.</Spanish>
+        <Russian>Да! Этот городишко нам еще пригодится.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_RAZE_CAPTURED_CITY</Tag>
@@ -2391,6 +2393,7 @@
         <German>Nein! Brennt sie nieder!</German>
         <Italian>No! BRUCIAMO TUTTO!</Italian>
         <Spanish>¡No! ¡REDUCIDLA A CENIZAS!</Spanish>
+        <Russian>Нет! Сожгите здесь все дотла!!!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_RETURN_ALLIED_CITY</Tag>
@@ -2424,7 +2427,7 @@
         <German>Nein, natürlich nicht.</German>
         <Italian>No, certo che no.</Italian>
         <Spanish>No, por supuesto que no.</Spanish>
-        <Russian>Нет, конечно нет.</Russian>
+        <Russian>Нет, я передумал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_ENTER_LANDS_WAR</Tag>
@@ -2520,6 +2523,7 @@
         <German>Defensivbonus : %D1_Mod%%</German>
         <Italian>Bonus difensivo : %D1_Mod%%</Italian>
         <Spanish>Bonificación de defensa : %D1_Mod%%</Spanish>
+        <Russian>Бонус к защите : %D1_Mod%%</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_PLOT_BONUS_CITY</Tag>
@@ -2528,26 +2532,31 @@
         <German>Defensivbonus : %D1_Mod%%%F2_Icon</German>
         <Italian>Bonus difensivo : %D1_Mod%%%F2_Icon</Italian>
         <Spanish>Bonificación de defensa : %D1_Mod%%%F2_Icon</Spanish>
+        <Russian>Бонус к защите : %D1_Mod%%%F2_Icon</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_CITY_BUILDING_DEFENSE_MODIFIER</Tag>
         <English>From Buildings : %D1_Mod%%%F2_Icon</English>
         <German>Durch Gebäude : %D1_Mod%%%F2_Icon</German>
+        <Russian>От строений : %D1_Mod%%%F2_Icon</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_CITY_FORT_DEFENSE_MODIFIER</Tag>
         <English>From forts close by : %D1_Mod%%%F2_Icon</English>
         <German>Von Forts im Umland : %D1_Mod%%%F2_Icon</German>
+        <Russian>От фортов поблизости : %D1_Mod%%%F2_Icon</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_CITY_HILL_DEFENSE_MODIFIER</Tag>
         <English>From hill location : %D1_Mod%%%F2_Icon</English>
         <German>Durch Standort auf Hügeln : +%D1_Mod%%%F2_Icon</German>
+        <Russian>От расположения на холме : %D1_Mod%%%F2_Icon</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_CITY_PLAYER_TRAITS_DEFENSE_MODIFIER</Tag>
         <English>From player bonuses : %D1_Mod%%%F2_Icon</English>
         <German>Durch Spielereigenschaften : %D1_Mod%%%F2_Icon</German>
+        <Russian>От бонуса игрока : %D1_Mod%%%F2_Icon</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PLOT_PEAK</Tag>
@@ -2556,6 +2565,7 @@
         <German>Berg</German>
         <Italian>Montagna</Italian>
         <Spanish>Pico</Spanish>
+        <Russian>Горы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PLOT_HILLS</Tag>
@@ -2564,6 +2574,7 @@
         <German>Hügel/</German>
         <Italian>Colline/</Italian>
         <Spanish>Colina/</Spanish>
+        <Russian>Холмы/</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PLOT_FRESH_WATER_LAKE</Tag>
@@ -2572,6 +2583,7 @@
         <German>Süßwassersee</German>
         <Italian>Lago d'acqua dolce</Italian>
         <Spanish>Lago de agua dulce</Spanish>
+        <Russian>Пресноводное озеро</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PLOT_IMPASSABLE</Tag>
@@ -2660,6 +2672,7 @@
         <German>[COLOR_UNIT_TEXT]%s1_ProdName[COLOR_REVERT] beschleunigen</German>
         <Italian>Accelera [COLOR_UNIT_TEXT]%s1_ProdName[COLOR_REVERT]</Italian>
         <Spanish>Acelerar [COLOR_UNIT_TEXT]%s1_ProdName[COLOR_REVERT]</Spanish>
+        <Russian>Ускорить [COLOR_UNIT_TEXT]%s1_ProdName[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HURRY_GOLD</Tag>
@@ -2668,6 +2681,7 @@
         <German>[ICON_BULLET]Kostet %d1_Num[ICON_GOLD]</German>
         <Italian>[ICON_BULLET]Costa %d1_Num[ICON_GOLD]</Italian>
         <Spanish>[ICON_BULLET]Cuesta %d1_Num[ICON_GOLD]</Spanish>
+        <Russian>[ICON_BULLET]Стоимость %d1_Num[ICON_GOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HURRY_POP</Tag>
@@ -2676,6 +2690,7 @@
         <German>[ICON_BULLET]Kostet %d1_Num Bevölkerung</German>
         <Italian>[ICON_BULLET]Costa %d1_Num abitanti</Italian>
         <Spanish>[ICON_BULLET]Cuesta %d1_Num de población</Spanish>
+        <Russian>[ICON_BULLET]Расходы %d1_Num population</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_MAX_POP_HURRY</Tag>
@@ -2748,6 +2763,7 @@
         <German>Bürgerautomatisierung einschalten</German>
         <Italian>Attiva l'automazione dei cittadini</Italian>
         <Spanish>Activar la automatización de los ciudadanos</Spanish>
+        <Russian>Включить автоматическое распределение горожан на работы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_OFF_PROD_AUTO</Tag>
