@@ -1601,8 +1601,8 @@
         <French>[COLOR_HIGHLIGHT_TEXT]Diviser le groupe[COLOR_REVERT]</French>
         <German>[COLOR_HIGHLIGHT_TEXT]Löst eine Gruppe auf[COLOR_REVERT]</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]Separa il gruppo[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_HIGHLIGHT_TEXT]Распустить группу[COLOR_REVERT]</Spanish>
-        <Russian></Russian>
+        <Spanish>[COLOR_HIGHLIGHT_TEXT]Separa el grupo[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]Распустить группу[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FINANCIAL_ADVISOR_TREASURY</Tag>
