@@ -706,7 +706,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LUMBERMILL_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sawmills[COLOR_REVERT] on the map give a percentual bonus on the total production of [LINK=YIELD_HAMMERS]hammers[\LINK] in their City if they are worked by a citizen of the city.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Lumberjacks are known for their music and cameraderie at the end of a hard day's work.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sawmills[COLOR_REVERT] give a percentage bonus on [LINK=YIELD_HAMMERS]hammer[\LINK] production in their city when worked by a citizen.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Lumberjacks are known for their music and cameraderie at the end of a hard day's work.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sägewerk[COLOR_REVERT] auf der Karte geben einen prozentualen Bonus auf die gesamte [LINK=YIELD_HAMMERS]Bauproduktion[\LINK] der Stadt, wenn sie von einem Bürger in der Stadt bearbeitet werden.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Holzfäller sind bekannt für ihre Kameradschaft und Musik am Ende eines harten Arbeitstages</German>
     </TEXT>
     <TEXT>
