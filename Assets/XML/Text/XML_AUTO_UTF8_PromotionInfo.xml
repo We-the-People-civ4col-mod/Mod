@@ -23,6 +23,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Энергичный пловец</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_ARTILLERY</Tag>
@@ -59,6 +60,7 @@
         <German>Bajonettkämpfer</German>
         <Italian>Bayonet</Italian>
         <Spanish>Bayonet</Spanish>
+        <Russian>В штыки!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_BOMBI</Tag>
@@ -79,6 +81,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Взрывчатка I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_BOMBII</Tag>
@@ -99,6 +102,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Взрывчатка II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_BOMBIII</Tag>
@@ -119,6 +123,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Взрывчатка III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_BRAVE</Tag>
@@ -155,6 +160,7 @@
         <German>Breitseite</German>
         <Italian>Broadside</Italian>
         <Spanish>Broadside</Spanish>
+        <Russian>Бортовой залп</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_CANNISTER_SHOT</Tag>
@@ -175,6 +181,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Картечь I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_CANNISTER_SHOTII</Tag>
@@ -195,6 +202,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Картечь II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_CANNISTER_SHOTIII</Tag>
@@ -215,10 +223,12 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Картечь III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_EVENT_CARGOSPACE</Tag>
         <English>Shipwright's Upgrade (Event)</English>
+        <Russian>Искусный корабел (Событие)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_CHARGE</Tag>
@@ -243,6 +253,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>В атаку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_DISCOVERER</Tag>
@@ -251,6 +262,7 @@
         <German>Großer Entdecker</German>
         <Italian>Great Discoverer</Italian>
         <Spanish>Great Discoverer</Spanish>
+        <Russian>Великий исследователь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_DRAGOON</Tag>
@@ -299,6 +311,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Опытный боец</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_EXPLORER1</Tag>
@@ -319,6 +332,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Исследователь I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_EXPLORER2</Tag>
@@ -339,6 +353,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Исследователь II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_EXPLORER3</Tag>
@@ -359,6 +374,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Исследователь III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_FEINT</Tag>
@@ -383,6 +399,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Кавалерийские маневры I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_FEINT2</Tag>
@@ -407,6 +424,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Кавалерийские маневры II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_FORCED_MARCH1</Tag>
@@ -427,6 +445,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Марш-бросок I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_FORCED_MARCH2</Tag>
@@ -447,6 +466,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Марш-бросок II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_FORMATION</Tag>
@@ -471,6 +491,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Бесстрашный</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_GRENADIER1</Tag>
@@ -491,6 +512,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ближний бой I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_GRENADIER2</Tag>
@@ -511,6 +533,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ближний бой II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_GRENADIER3</Tag>
@@ -531,6 +554,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ближний бой III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_GUARD</Tag>
@@ -555,6 +579,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Защитник</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_HEAVY_CAVALRY</Tag>
@@ -583,6 +608,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Страж Родины I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_HOMELAND_GUARD2</Tag>
@@ -607,6 +633,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Страж Родины II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_HOMELAND_GUARD3</Tag>
@@ -631,6 +658,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Страж Родины III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_HUNTER1</Tag>
@@ -655,6 +683,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Охотник на диких животных I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_HUNTER2</Tag>
@@ -679,6 +708,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Охотник на диких животных II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_INFANTRY</Tag>
@@ -711,6 +741,7 @@
         <German>Angeführt von Großem General</German>
         <Italian>Condotto da un Grande Generale</Italian>
         <Spanish>Al mando de un Gran general</Spanish>
+        <Russian>Под командованием Великого Генерала</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_LEADER2</Tag>
@@ -719,6 +750,7 @@
         <German>Angeführt von Großem Admiral</German>
         <Italian>Condotto da un Grande Admirale</Italian>
         <Spanish>Al mando de un Gran Admiral</Spanish>
+        <Russian>Под командованием Великого Адмирала</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_LEADERSHIP</Tag>
@@ -727,6 +759,7 @@
         <German>Führerschaft</German>
         <Italian>Comando</Italian>
         <Spanish>Liderazgo</Spanish>
+        <Russian>Лидерство</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_LEADERSHIP2</Tag>
@@ -735,6 +768,7 @@
         <German>Führerschaft II</German>
         <Italian>Comando II</Italian>
         <Spanish>Liderazgo II</Spanish>
+        <Russian>Лидерство II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_LIGHT_INFANTRY</Tag>
@@ -767,6 +801,7 @@
         <German>Plünderer</German>
         <Italian>Saccheggiatore</Italian>
         <Spanish>Saqueo</Spanish>
+        <Russian>Мародер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_MINUTEMAN1</Tag>
@@ -787,6 +822,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Народный ополченец I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_MINUTEMAN2</Tag>
@@ -807,6 +843,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Народный ополченец II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_MINUTEMAN3</Tag>
@@ -827,6 +864,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Народный ополченец III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_MOBILITY1</Tag>
@@ -851,6 +889,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Маневренность I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_MOBILITY2</Tag>
@@ -875,6 +914,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Маневренность II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_MOUNTAINEER1</Tag>
@@ -895,6 +935,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Горный стрелок I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_MOUNTAINEER2</Tag>
@@ -915,6 +956,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Горный стрелок II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_MOUNTAINEER3</Tag>
@@ -935,6 +977,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Горный стрелок III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_NAVAL_TRADE1</Tag>
@@ -943,6 +986,7 @@
         <German>Handelsschiff I</German>
         <Italian>Nave mercantile I</Italian>
         <Spanish>Buque mercante I</Spanish>
+        <Russian>Торговое судно I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_NAVAL_TRADE2</Tag>
@@ -951,6 +995,7 @@
         <German>Handelsschiff II</German>
         <Italian>Nave mercantile II</Italian>
         <Spanish>Buque mercante II</Spanish>
+        <Russian>Торговое судно II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_NAVIGATION1</Tag>
@@ -975,6 +1020,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Навигация I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_NAVIGATION2</Tag>
@@ -999,6 +1045,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Навигация II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_NAVIGATION3</Tag>
@@ -1019,6 +1066,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Навигация III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_PIRACY1</Tag>
@@ -1043,6 +1091,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Пиратство I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_PIRACY2</Tag>
@@ -1067,6 +1116,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Пиратство II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_PIRACY3</Tag>
@@ -1091,6 +1141,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Пиратство III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_RANGER1</Tag>
@@ -1111,6 +1162,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Егерь I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_RANGER2</Tag>
@@ -1131,6 +1183,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Егерь II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_RANGER3</Tag>
@@ -1151,6 +1204,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Егерь III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_RELIEF_BATTALION</Tag>
@@ -1159,6 +1213,7 @@
         <German>Reserve-Bataillon</German>
         <Italian>Relief Battalion</Italian>
         <Spanish>Relief Battalion</Spanish>
+        <Russian>Резервный батальон</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SAILING1</Tag>
@@ -1167,6 +1222,7 @@
         <German>Seekrieg I</German>
         <Italian>Guerra Marittima I</Italian>
         <Spanish>Guerra Naval I</Spanish>
+        <Russian>Военно-морские маневры I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SAILING2</Tag>
@@ -1175,6 +1231,7 @@
         <German>Seekrieg II</German>
         <Italian>Guerra Marittima II</Italian>
         <Spanish>Guerra Naval II</Spanish>
+        <Russian>Военно-морские маневры II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SAILING3</Tag>
@@ -1183,6 +1240,7 @@
         <German>Seekrieg III</German>
         <Italian>Guerra Marittima III</Italian>
         <Spanish>Guerra Naval III</Spanish>
+        <Russian>Военно-морские маневры III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SAILING4</Tag>
@@ -1191,6 +1249,7 @@
         <German>Seekrieg IV</German>
         <Italian>Guerra Marittima IV</Italian>
         <Spanish>Guerra Naval IV</Spanish>
+        <Russian>Военно-морские маневры IV</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SAILING5</Tag>
@@ -1199,6 +1258,7 @@
         <German>Seekrieg V</German>
         <Italian>Guerra Marittima V</Italian>
         <Spanish>Guerra Naval V</Spanish>
+        <Russian>Военно-морские маневры V</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SAILING6</Tag>
@@ -1207,6 +1267,7 @@
         <German>Seekrieg VI</German>
         <Italian>Guerra Marittima VI</Italian>
         <Spanish>Guerra Naval VI</Spanish>
+        <Russian>Военно-морские маневры VI</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_LARGE_RIVER_SAILING</Tag>
@@ -1215,6 +1276,7 @@
         <German>Flußsegler</German>
         <Italian>Fiume Veloce</Italian>
         <Spanish>Río Swift</Spanish>
+        <Russian>Речной моряк</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_LARGE_RIVER_SCOUT</Tag>
@@ -1239,6 +1301,7 @@
         <German>Entdecker der Meere</German>
         <Italian>Sea Explorer</Italian>
         <Spanish>Sea Explorer</Spanish>
+        <Russian>Исследователь морей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SEEHUNTER1</Tag>
@@ -1263,6 +1326,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Морской охотник I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SEEHUNTER2</Tag>
@@ -1287,6 +1351,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Морской охотник IШ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SHIP_CARPENTER1</Tag>
@@ -1295,6 +1360,7 @@
         <German>Schiffszimmermann I</German>
         <Italian>Ship Carpenter I</Italian>
         <Spanish>Ship Carpenter I</Spanish>
+        <Russian>Корабельный плотник I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SHIP_CARPENTER2</Tag>
@@ -1303,6 +1369,7 @@
         <German>Schiffszimmermann II</German>
         <Italian>Ship Carpenter II</Italian>
         <Spanish>Ship Carpenter II</Spanish>
+        <Russian>Корабельный плотник II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SIEGE</Tag>
@@ -1347,6 +1414,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Партизан I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SKIRMISHER2</Tag>
@@ -1367,6 +1435,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Партизан II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SKIRMISHER3</Tag>
@@ -1387,6 +1456,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Партизан III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SOLID_SHOTI</Tag>
@@ -1407,6 +1477,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Осадный канонир I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SOLID_SHOTII</Tag>
@@ -1427,6 +1498,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Осадный канонир II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SOLID_SHOTIII</Tag>
@@ -1447,6 +1519,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Осадный канонир III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_STORM_ATTACK1</Tag>
@@ -1467,6 +1540,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Свирепый штурм I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_STORM_ATTACK2</Tag>
@@ -1487,6 +1561,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Свирепый штурм II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_STORM_ATTACK3</Tag>
@@ -1507,6 +1582,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Свирепый штурм III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SURGEON1</Tag>
@@ -1527,6 +1603,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Военный врач I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SURGEON2</Tag>
@@ -1547,6 +1624,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Военный врач II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SURGEON3</Tag>
@@ -1567,6 +1645,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Военный врач III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SWAMP_FOX1</Tag>
@@ -1587,6 +1666,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Болотный лис I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SWAMP_FOX2</Tag>
@@ -1607,6 +1687,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Болотный лис II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SWAMP_FOX3</Tag>
@@ -1627,6 +1708,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Болотный лис III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_VETERAN1</Tag>
@@ -1647,6 +1729,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ветеран I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_VETERAN2</Tag>
@@ -1667,6 +1750,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ветеран II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_VETERAN3</Tag>
@@ -1687,6 +1771,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ветеран III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_VETERAN4</Tag>
@@ -1707,6 +1792,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ветеран IV</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_VETERAN5</Tag>
@@ -1727,6 +1813,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ветеран V</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_VETERAN6</Tag>
@@ -1747,6 +1834,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ветеран VI</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_TOWN_GUARD</Tag>
@@ -1760,90 +1848,108 @@
         <Tag>TXT_KEY_PROMOTION_SLAVE_HUNTER_1</Tag>
         <English>Slave Hunter I</English>
         <German>Sklavenjäger I</German>
+        <Russian>Охотник за рабами I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SLAVE_HUNTER_2</Tag>
         <English>Slave Hunter II</English>
         <German>Sklavenjäger II</German>
+        <Russian>Охотник за рабами II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SLAVE_HUNTER_3</Tag>
         <English>Slave Hunter III</English>
         <German>Sklavenjäger III</German>
+        <Russian>Охотник за рабами III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SLAVE_MASTER_1</Tag>
         <English>Slave Master I</English>
         <German>Sklavenmeister I</German>
+        <Russian>Надсмоторщик I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SLAVE_MASTER_2</Tag>
         <English>Slave Master II</English>
         <German>Sklavenmeister II</German>
+        <Russian>Надсмоторщик II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SLAVE_MASTER_3</Tag>
         <English>Slave Master III</English>
         <German>Sklavenmeister III</German>
+        <Russian>Надсмоторщик III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_LAW_KEEPER_1</Tag>
         <English>Law Keeper I</English>
         <German>Gesetzeshüter I</German>
+        <Russian>Блюститель закона I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_LAW_KEEPER_2</Tag>
         <English>Law Keeper II</English>
         <German>Gesetzeshüter II</German>
+        <Russian>Блюститель закона II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_LAW_KEEPER_3</Tag>
         <English>Law Keeper III</English>
         <German>Gesetzeshüter III</German>
+        <Russian>Блюститель закона III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_BRAVE_LIEUTENANT</Tag>
         <English>Commandeered by Brave Lieutenant</English>
         <German>Befehligt durch Mutigen Leutnant</German>
+        <Russian>Под началом Храброго лейтенанта</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_CAPABLE_CAPTAIN</Tag>
         <English>Commandeered by Capable Captain</English>
         <German>Commandeered by Capable Captain</German>
+        <Russian>Под началом Умелого капитана</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_NEGATIVE_LEAKING_HULL</Tag>
         <English>(Negative) Leaking Hull</English>
         <German>(Negativ) Undichter Rumpf</German>
+        <Russian>(Недостаток) Пробоина в корпусе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_NEGATIVE_TORN_SAILS</Tag>
         <English>(Negative) Torn Sails</English>
         <German>(Negativ) Gerissene Segel</German>
+        <Russian>(Недостаток) Порванный парус</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_NEGATIVE_BROKEN_CANNONS</Tag>
         <English>(Negative) Broken Cannons</English>
         <German>(Negativ) Zerbrochene Kannonen</German>
+        <Russian>(Недостаток) Сломанные пушки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_NEGATIVE_INFECTED_WOUNDS</Tag>
         <English>(Negative) Infected Wounds</English>
         <German>(Negativ) Infizierte Wunden</German>
+        <Russian>(Недостаток) Зараженные раны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_NEGATIVE_WOUNDED_HORSES</Tag>
         <English>(Negative) Wounded Horses</English>
         <German>(Negativ) Verletzte Pferde</German>
+        <Russian>(Недостаток) Раненые лошади</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_NEGATIVE_BROKEN_BLADES</Tag>
         <English>(Negative) Broken Blades</English>
         <German>(Negativ) Zerbrochene Klingen</German>
+        <Russian>(Недостаток) Сломанные клинки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_NEGATIVE_BROKEN_GUNS</Tag>
         <English>(Negative) Broken Guns</English>
         <German>(Negativ) Zerbrochene Gewehre</German>
+        <Russian>(Недостаток) Сломанные ружья</Russian>
     </TEXT>
 </Civ4GameText>
