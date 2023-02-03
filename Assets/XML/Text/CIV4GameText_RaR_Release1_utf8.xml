@@ -1296,6 +1296,7 @@
         <German>[NEWLINE]    Europa[TAB][TAB]</German>
         <Italian>[NEWLINE]    Europa[TAB][TAB]</Italian>
         <Spanish>[NEWLINE]    Europa[TAB][TAB]</Spanish>
+        <Russian>[NEWLINE]    Европа[TAB][TAB]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_AFRICA_PRICE_HELP</Tag>
@@ -1304,6 +1305,7 @@
         <German>[NEWLINE]    Afrika[TAB][TAB]</German>
         <Italian>[NEWLINE]    Africa[TAB][TAB]</Italian>
         <Spanish>[NEWLINE]    África[TAB][TAB]</Spanish>
+        <Russian>[NEWLINE]    Африка[TAB][TAB]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PORT_ROYAL_PRICE_HELP</Tag>
@@ -1312,6 +1314,7 @@
         <German>[NEWLINE]    Port Royal[TAB]</German>
         <Italian>[NEWLINE]    Port Royal[TAB]</Italian>
         <Spanish>[NEWLINE]    Port Royal[TAB]</Spanish>
+        <Russian>[NEWLINE]    Порт Ройал[TAB]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TOTAL_CITY_HEALTH</Tag>

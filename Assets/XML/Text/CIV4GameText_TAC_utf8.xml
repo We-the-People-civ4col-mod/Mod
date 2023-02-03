@@ -1821,12 +1821,14 @@
         <English>Sail to the New World - East Coast</English>
         <French>Partir pour le Nouveau Monde par l'Atlantique</French>
         <German>Segelt in die Neue Welt - Ostküste!</German>
+        <Russian>Плыть в Новый свет - Восточное побережье</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SAIL_WEST</Tag>
         <English>Sail to the New World - West Coast</English>
         <French>Partir pour le Nouveau Monde par le Pacifique</French>
         <German>Segelt in die Neue Welt - Westküste!</German>
+        <Russian>Плыть в Новый свет - Западное побережье</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_WAREHOUSE_INFO</Tag>
@@ -1841,12 +1843,14 @@
         <English>Show trade log</English>
         <French>Afficher le registre</French>
         <German>Handelsbuch aufklappen</German>
+        <Russian>Показать торговый журнал</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_HIDE_TRADE_LOG</Tag>
         <English>Hide trade log</English>
         <French>Cacher le registre</French>
         <German>Handelsbuch verbergen</German>
+        <Russian>Скрыть торговый журнал</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_TRADE_LOG_1</Tag>
@@ -1855,6 +1859,7 @@
         <German>Ware</German>
         <Italian>Yield</Italian>
         <Spanish>Yield</Spanish>
+        <Russian>Товар</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_TRADE_LOG_2</Tag>
@@ -1863,6 +1868,7 @@
         <German>Aktion</German>
         <Italian>Action</Italian>
         <Spanish>Action</Spanish>
+        <Russian>Действие</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_TRADE_LOG_SOLD</Tag>
@@ -1871,6 +1877,7 @@
         <German>verkauft</German>
         <Italian>sold</Italian>
         <Spanish>sold</Spanish>
+        <Russian>продано</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_TRADE_LOG_BOUGHT</Tag>
@@ -1879,6 +1886,7 @@
         <German>gekauft</German>
         <Italian>bought</Italian>
         <Spanish>bought</Spanish>
+        <Russian>куплено</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_TRADE_LOG_3</Tag>
@@ -1895,12 +1903,14 @@
         <German>Steuern</German>
         <Italian>Tax</Italian>
         <Spanish>Tax</Spanish>
+        <Russian>Налог</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_SELL_LABEL</Tag>
         <English>Sell this ship?</English>
         <French>Vendre votre bateau ?</French>
         <German>Schiff verkaufen?</German>
+        <Russian>Продать этот корабль?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_SELL_MESSAGE</Tag>
@@ -1913,6 +1923,7 @@
         <English>Sell your [COLOR_UNIT_TEXT]%s1[COLOR_REVERT] for [COLOR_YELLOW]%d2[COLOR_REVERT][ICON_GOLD]?</English>
         <French>Vendre votre [COLOR_UNIT_TEXT]%s1[COLOR_REVERT] pour [COLOR_YELLOW]%d2[COLOR_REVERT][ICON_GOLD] ?</French>
         <German>[COLOR_UNIT_TEXT]%s1[COLOR_REVERT] für [COLOR_YELLOW]%d2[COLOR_REVERT][ICON_GOLD] verkaufen?</German>
+        <Russian>Продать [COLOR_UNIT_TEXT]%s1[COLOR_REVERT] за [COLOR_YELLOW]%d2[COLOR_REVERT][ICON_GOLD]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_DIALOG_ACCEPT</Tag>

@@ -655,16 +655,19 @@
         <German>[ICON_BULLET]Frachtraum : %d1_Num</German>
         <Italian>[ICON_BULLET]Spazio di carico : %d1_Num</Italian>
         <Spanish>[ICON_BULLET]Bodega : %d1_Num</Spanish>
+        <Russian>[ICON_BULLET]Места для груза : %d1_Num</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HARBOR_SPACE_NEEDED</Tag>
         <English>[ICON_BULLET]Dock Space Needed : %d1_Num%F2_Icon</English>
         <German>[ICON_BULLET]Braucht zum Andocken : %d1_Num%F2_Icon</German>
+        <Russian>[ICON_BULLET]Требуется места в гавани : %d1_Num%F2_Icon</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BARRACKS_SPACE_NEEDED</Tag>
         <English>[ICON_BULLET]Barracks Space Needed : %d1_Num%F2_Icon</English>
         <German>[ICON_BULLET]Braucht Kasernenplatz : %d1_Num%F2_Icon</German>
+        <Russian>[ICON_BULLET]Требуется места в казармах : %d1_Num%F2_Icon</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ADDITIONAL_LAW_TO_CITY</Tag>
@@ -726,6 +729,7 @@
         <German>[ICON_BULLET]Kann nur verteidigen</German>
         <Italian>[ICON_BULLET]Può solo difendere</Italian>
         <Spanish>[ICON_BULLET]Sólo puede defender</Spanish>
+        <Russian>[ICON_BULLET]Только обороняется</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_EXPLORE_RIVAL</Tag>
@@ -734,6 +738,7 @@
         <German>[ICON_BULLET]Kann gegnerisches Territorium erkunden</German>
         <Italian>[ICON_BULLET]Può esplorare il territorio rivale</Italian>
         <Spanish>[ICON_BULLET]Puede explorar el territorio enemigo</Spanish>
+        <Russian>[ICON_BULLET]Может исследовать чужие территории</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_IMPROVE_PLOTS</Tag>
@@ -742,6 +747,7 @@
         <German>[ICON_BULLET]Kann Geländefelder modernisieren</German>
         <Italian>[ICON_BULLET]Può migliorare le caselle</Italian>
         <Spanish>[ICON_BULLET]Puede mejorar casillas</Spanish>
+        <Russian>[ICON_BULLET]Может строить улучшения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAN</Tag>
@@ -758,6 +764,7 @@
         <German>[ICON_BULLET]Erhält keine Verteidigungsboni</German>
         <Italian>[ICON_BULLET]Non riceve bonus difensivi</Italian>
         <Spanish>[ICON_BULLET]No recibe bonificaciones defensivas</Spanish>
+        <Russian>[ICON_BULLET]Не получает бонусы к защите</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_WITHDRAWL_PROBABILITY_SHORT</Tag>
@@ -766,6 +773,7 @@
         <German>[ICON_BULLET]Rückzugschance : %d1_Amount%%</German>
         <Italian>[ICON_BULLET]Probabilità di ritirata : %d1_Amount%%</Italian>
         <Spanish>[ICON_BULLET]Probabilidad de retirarse : %d1_Amount%%</Spanish>
+        <Russian>[ICON_BULLET]Шанс отступить : %d1_Amount%%</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_WITHDRAWL_PROBABILITY</Tag>
@@ -774,6 +782,7 @@
         <German>[ICON_BULLET]Kann im Kampf den Rückzug antreten (Wahrscheinlichkeit: %d1_Amount%%)</German>
         <Italian>[ICON_BULLET]Può ritirarsi dal combattimento (%d1_Amount%% di probabilità)</Italian>
         <Spanish>[ICON_BULLET]Puede retirarse del combate (probabilidad del %d1_Amount%%)</Spanish>
+        <Russian>[ICON_BULLET]Может выйти из боя (шанс %d1_Amount%%)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MOD_VS_TYPE</Tag>
@@ -843,6 +852,7 @@
         <German>Frachtraum : %d1_Curr / %d2_Max</German>
         <Italian>Spazio di carico : %d1_Curr / %d2_Max</Italian>
         <Spanish>Bodega : %d1_Curr / %d2_Max</Spanish>
+        <Russian>Место для груза : %d1_Curr / %d2_Max</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HELP_LEVEL</Tag>
@@ -898,6 +908,7 @@
         <Tag>TXT_KEY_PLOT_HELP_IMPROVEMENT_STORAGE</Tag>
         <English>[ICON_BULLET]Adds %d1_StorageCapacity [COLOR_CYAN]Storage Capacity[COLOR_REVERT] to City if worked</English>
         <German>[ICON_BULLET]Gibt Stadt %d1_StorageCapacity [COLOR_CYAN]Lagerkapazität[COLOR_REVERT] wenn bearbeitet</German>
+        <Russian>[ICON_BULLET]Добавляет %d1_StorageCapacity к [COLOR_CYAN]объему хранилища[COLOR_REVERT] в городе, если на клетке работает горожанин</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_HEAL_MOD</Tag>
@@ -954,6 +965,7 @@
         <German>[ICON_BULLET]Erforderlich für die Ausbildung[SPACE]</German>
         <Italian>[ICON_BULLET]Necessario per addestrare[SPACE]</Italian>
         <Spanish>[ICON_BULLET]Se requiere para entrenar[SPACE]</Spanish>
+        <Russian>[ICON_BULLET]Требуется для обучения[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_REQUIRED_TO_BUILD</Tag>
@@ -1101,6 +1113,7 @@
         <German>Spezielle Einheiten</German>
         <Italian>Unità uniche</Italian>
         <Spanish>Unidades exclusivas</Spanish>
+        <Russian>Уникальный юнит</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_SCREEN_EXIT</Tag>
@@ -1144,6 +1157,7 @@
         <German>Nach oben</German>
         <Italian>Torna a colonizopedia</Italian>
         <Spanish>Inicio</Spanish>
+        <Russian>Вверх</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_COST</Tag>
@@ -1152,6 +1166,7 @@
         <German>Kosten : %d1_Num</German>
         <Italian>Costo : %d1_Num</Italian>
         <Spanish>Coste : %d1_Num</Spanish>
+        <Russian>Расходы : %d1_Num</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_STRENGTH</Tag>
@@ -1160,6 +1175,7 @@
         <German>Stärke : %d1_Num</German>
         <Italian>Forza : %d1_Num</Italian>
         <Spanish>Fuerza : %d1_Num</Spanish>
+        <Russian>Сила : %d1_Num</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_MOVEMENT</Tag>
@@ -1168,6 +1184,7 @@
         <German>Fortbewegung : %d1_Num</German>
         <Italian>Movimento : %d1_Num</Italian>
         <Spanish>Movimiento : %d1_Num</Spanish>
+        <Russian>Количество ходов : %d1_Num</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_LEADS_TO</Tag>
@@ -1185,7 +1202,7 @@
         <German>Erfordert</German>
         <Italian>Richiede</Italian>
         <Spanish>Requiere</Spanish>
-        <Russian>Не хватает</Russian>
+        <Russian>Нужно</Russian>
     </TEXT>
 <!-- ZorG. colony screen. lack of materials for the construction of the building. END -->
     <TEXT>
@@ -1219,6 +1236,7 @@
         <German> %s1 : %D2%F3 (auf Hügeln)</German>
         <Italian>%s1 : %D2%F3 (sulle colline)</Italian>
         <Spanish>%s1 : %D2%F3 (en colinas)</Spanish>
+        <Russian>%s1 : %D2%F3 (на холмах)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_RIVER_YIELD</Tag>
@@ -1227,6 +1245,7 @@
         <German>%s1 : %D2%F3 (an einem Fluß)</German>
         <Italian>%s1 : %D2%F3 (vicino a un fiume)</Italian>
         <Spanish>%s1 : %D2%F3 (junto a un río)</Spanish>
+        <Russian>%s1 : %D2%F3 (рядом с рекой)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_CIVIC_YIELD</Tag>
@@ -1574,6 +1593,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]Bildet eine Gruppe[COLOR_REVERT]</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]Crea un gruppo[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]Crea un grupo[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]Создать группу[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WIDGET_DELETE_GROUP</Tag>
@@ -1581,7 +1601,8 @@
         <French>[COLOR_HIGHLIGHT_TEXT]Diviser le groupe[COLOR_REVERT]</French>
         <German>[COLOR_HIGHLIGHT_TEXT]Löst eine Gruppe auf[COLOR_REVERT]</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]Separa il gruppo[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_HIGHLIGHT_TEXT]Separa el grupo[COLOR_REVERT]</Spanish>
+        <Spanish>[COLOR_HIGHLIGHT_TEXT]Распустить группу[COLOR_REVERT]</Spanish>
+        <Russian></Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FINANCIAL_ADVISOR_TREASURY</Tag>
@@ -1599,6 +1620,7 @@
         <German>Geldbetrag in Eurer Goldreserve</German>
         <Italian>Quantitativo di denaro che si trova nelle tue riserve d'oro</Italian>
         <Spanish>Cantidad de dinero en las reservas de oro</Spanish>
+        <Russian>Ваш золотой запас</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_MAKE_PEACE</Tag>
@@ -1647,6 +1669,7 @@
         <German>VERHANDLUNGSTISCH LEEREN</German>
         <Italian>PULISCI TABELLA</Italian>
         <Spanish>LIMPIAR TABLA</Spanish>
+        <Russian>ОЧИСТИТЬ ТАБЛИЦУ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_MAKE_PEACE_WITH</Tag>
@@ -1682,6 +1705,7 @@
         <German>%s1_PlName HAT</German>
         <Italian>%s1_PlName HA</Italian>
         <Spanish>%s1_PlName TIENE</Spanish>
+        <Russian>У %s1_PlName ЕСТЬ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_YOU_HAVE</Tag>
@@ -1690,6 +1714,7 @@
         <German>IHR HABT</German>
         <Italian>TU HAI</Italian>
         <Spanish>TENÉIS</Spanish>
+        <Russian>У ВАС ЕСТЬ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_PLAYER_OFFERS</Tag>
@@ -1698,6 +1723,7 @@
         <German>%s1_PlName BIETET</German>
         <Italian>%s1_PlName OFFRE</Italian>
         <Spanish>%s1_PlName OFRECE</Spanish>
+        <Russian>ПРЕДЛОЖЕНИЕ %s1_PlName</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_YOU_OFFER</Tag>
@@ -1706,6 +1732,7 @@
         <German>IHR BIETET</German>
         <Italian>TU OFFRI</Italian>
         <Spanish>OFRECÉIS</Spanish>
+        <Russian>ВАШЕ ПРЕДЛОЖЕНИЕ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_GOLD_NUM</Tag>
@@ -1714,6 +1741,7 @@
         <German>Gold (%d1_Num)</German>
         <Italian>Oro (%d1_Num)</Italian>
         <Spanish>Oro (%d1_Num)</Spanish>
+        <Russian>Золото (%d1_Num)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_PEACE_TREATY_STRING</Tag>
@@ -1722,6 +1750,7 @@
         <German>Friedensvertrag (%d1_Num [NUM1:Runde:Runden])</German>
         <Italian>Trattato di pace (%d1_Num [NUM1:turno:turni])</Italian>
         <Spanish>Tratado de paz (%d1_Num [NUM1:turno:turnos])</Spanish>
+        <Russian>Мирный договр (%d1_Num [NUM1:ход:ходов])</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_PEACE_WITH</Tag>
@@ -1748,6 +1777,7 @@
         <German>Wie viel Gold möchtet Ihr anbieten?</German>
         <Italian>Quanto oro vuoi offrire?</Italian>
         <Spanish>¿Cuánto oro queréis ofrecer?</Spanish>
+        <Russian>Сколько золота вы хотите предложить?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_GOLD_FROM_THEM</Tag>
@@ -1756,6 +1786,7 @@
         <German>Wie viel Gold fordert Ihr von ihnen?</German>
         <Italian>Quanto oro vuoi richiedere?</Italian>
         <Spanish>¿Cuánto oro queréis que os den?</Spanish>
+        <Russian>Сколько золота вы хотите потребовать?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_SELECT_NETWORK</Tag>
@@ -4998,6 +5029,7 @@
         <German>Schon gut ...</German>
         <Italian>Non importa...</Italian>
         <Spanish>No importa...</Spanish>
+        <Russian>Ничего не нужно</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONNECT_UPDATE_HOST_ATTEMPT</Tag>

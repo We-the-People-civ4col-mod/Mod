@@ -3188,6 +3188,7 @@
         <German>Wir akzeptieren Euer Angebot.</German>
         <Italian>Accettiamo la tua offerta.</Italian>
         <Spanish>Aceptamos vuestra propuesta.</Spanish>
+        <Russian>Мы принимаем ваше предложение.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_REJECT_1</Tag>
@@ -3196,6 +3197,7 @@
         <German>Tut mir Leid, aber darauf können wir uns nicht einlassen.</German>
         <Italian>Mi spiace, ma non possiamo accettare una proposta del genere.</Italian>
         <Spanish>Lo sentimos, no podemos aceptar un trato así.</Spanish>
+        <Russian>Извините, такое предложение нам не подходит.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_OFFER_1</Tag>
@@ -3204,6 +3206,7 @@
         <German>Was verlangt Ihr dafür?</German>
         <Italian>Cosa vuoi in cambio?</Italian>
         <Spanish>¿Qué queréis por esto?</Spanish>
+        <Russian>Что вы хотите за это?</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_GIFT_1</Tag>
@@ -3212,6 +3215,7 @@
         <German>Bitte, nehmt dieses Geschenk an.</German>
         <Italian>Ti prego, accetta questo dono.</Italian>
         <Spanish>Por favor, aceptad este regalo.</Spanish>
+        <Russian>Пожалуйста, примите этот дар.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_NEVERMIND_1</Tag>
@@ -3220,6 +3224,7 @@
         <German>Schon gut ...</German>
         <Italian>Non importa...</Italian>
         <Spanish>No importa...</Spanish>
+        <Russian>Забудь про это...</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_PROPOSAL_1</Tag>
@@ -3228,6 +3233,7 @@
         <German>Wir möchten Euch einen Handel vorschlagen...</German>
         <Italian>Vorremmo fare un'offerta commerciale.</Italian>
         <Spanish>Nos gustaría proponeros un intercambio.</Spanish>
+        <Russian>Мы хотим сделать торговое предложение...</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_COMPLETE_DEAL_1</Tag>
@@ -3236,6 +3242,7 @@
         <German>Wie können wir handelseinig werden?</German>
         <Italian>Cosa chiedi in cambio per concludere l'affare?</Italian>
         <Spanish>¿Qué hace falta para que este trato llegue a buen puerto?</Spanish>
+        <Russian>Как помочь состояться этой сделке?</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_FISH_FOR_DEAL_1</Tag>
@@ -3244,6 +3251,7 @@
         <German>Was werdet Ihr mir hierfür geben?</German>
         <Italian>Cosa puoi darmi in cambio di questo?</Italian>
         <Spanish>¿Qué nos dais por esto?</Spanish>
+        <Russian>Что ты можешь предложить мне за это?</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_SUGGEST_PEACE_1</Tag>
@@ -3268,6 +3276,7 @@
         <German>Welche Vereinbarungen haben wir bisher getroffen?</German>
         <Italian>Che accordi abbiamo in comune?</Italian>
         <Spanish>¿Qué tratos tenemos actualmente?</Spanish>
+        <Russian>Какие общие дела у нас есть сейчас?</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ASK_1</Tag>
@@ -3276,6 +3285,7 @@
         <German>Würdet Ihr einem guten Freund diesen kleinen Gefallen tun?</German>
         <Italian>Avresti un po' di questi, in nome della nostra amicizia?</Italian>
         <Spanish>¿Podríais darles esto a unos buenos amigos?</Spanish>
+        <Russian>Не могли бы вы пожертвовать этим для хорошего друга?</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_DEMAND_1</Tag>
@@ -3284,6 +3294,7 @@
         <German>Wir verlangen, dass Ihr dies als Tribut an uns entrichtet!</German>
         <Italian>Ti chiediamo di darci questo tributo.</Italian>
         <Spanish>Exigimos que nos deis esto como tributo.</Spanish>
+        <Russian>Мы требуем, чтобы вы отдали это нам в качестве дани!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_DEMAND_TEAM_1</Tag>
@@ -3292,6 +3303,7 @@
         <German>Das käme sicher gelegen ...</German>
         <Italian>Tornerà sicuramente utile...</Italian>
         <Spanish>Seguro que nos vendrá muy bien...</Spanish>
+        <Russian>Это наверняка пригодится.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACCEPT_OFFER_1</Tag>
@@ -3300,6 +3312,7 @@
         <German>Dann sind wir uns ja einig.</German>
         <Italian>Sembra un affare!</Italian>
         <Spanish>¡Parece que hay trato!</Spanish>
+        <Russian>Отличная сделка!!!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_REJECT_OFFER_1</Tag>
@@ -3308,6 +3321,7 @@
         <German>Das wird nicht passieren.</German>
         <Italian>Non succederà.</Italian>
         <Spanish>Ni en broma.</Spanish>
+        <Russian>Этого не будет.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_RENEGOTIATE_1</Tag>
@@ -3316,6 +3330,7 @@
         <German>Wollt Ihr neu verhandeln?</German>
         <Italian>Vuoi negoziare di nuovo?</Italian>
         <Spanish>¿Os importaría renegociar?</Spanish>
+        <Russian>Может пересмотрим условия?</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_NO_RENEGOTIATE_1</Tag>
@@ -3324,6 +3339,7 @@
         <German>Auch gut. (Ende)</German>
         <Italian>Abbastanza onesto. (Esci)</Italian>
         <Spanish>Ya está bien. (Salir)</Spanish>
+        <Russian>Справедливо. (Уйти)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_GIVE_HELP_1</Tag>
@@ -3332,6 +3348,7 @@
         <German>Sicher! Wir helfen doch immer gern!</German>
         <Italian>Certo! Siamo sempre felici di aiutare.</Italian>
         <Spanish>¡Claro! ¡Siempre estamos dispuestos a ayudar!</Spanish>
+        <Russian>Конечно! Мы всегда рады помочь!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_REFUSE_HELP_1</Tag>
@@ -3340,6 +3357,7 @@
         <German>Tut mir leid - nein.</German>
         <Italian>Mi spiace, ma questo non è un giardino di rose.</Italian>
         <Spanish>Lo sentimos, pero esto tampoco es un jardín de rosas.</Spanish>
+        <Russian>Извини, но нет.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACCEPT_DEMAND_1</Tag>
@@ -3348,6 +3366,7 @@
         <German>Nun, wenn Ihr darauf besteht ...</German>
         <Italian>Bene, se insisti...</Italian>
         <Spanish>Bueno, si insistís...</Spanish>
+        <Russian>Ну, если вы настаиваете...</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_REJECT_DEMAND_1</Tag>
@@ -3356,6 +3375,7 @@
         <German>Wir lassen uns von Euren Drohungen nicht einschüchtern!</German>
         <Italian>Ignoriamo le tue vuote minacce!</Italian>
         <Spanish>¡No cederemos ante vuestras amenazas vacías!</Spanish>
+        <Russian>Мы смеемся над вашими пустыми угрозами!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CONVERT_1</Tag>
@@ -3364,6 +3384,7 @@
         <German>Einverstanden. Wir werden sofort zur Religion [COLOR_SELECTED_TEXT][OUR_STATE_RELIGION][COLOR_REVERT] konvertieren. (Religion konvertieren)</German>
         <Italian>D'accordo. Ci convertiremo alla religione [COLOR_SELECTED_TEXT][OUR_STATE_RELIGION:2][COLOR_REVERT] immediatamente. (Conversione religiosa)</Italian>
         <Spanish>Aceptamos. Nos convertiremos al [COLOR_SELECTED_TEXT][OUR_STATE_RELIGION][COLOR_REVERT] de inmediato. (Convertirse a una religión)</Spanish>
+        <Russian></Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_NO_CONVERT_1</Tag>
@@ -3452,6 +3473,7 @@
         <German>Auf Wiedersehen ... (Ende)</German>
         <Italian>Addio... (Esci)</Italian>
         <Spanish>Adiós... (Salir)</Spanish>
+        <Russian>Прощайте! (Уйти)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_FURIOUS_1</Tag>
@@ -6644,6 +6666,7 @@
         <German>Das ist viel zu teuer. (Um niedrigeren Preis feilschen)</German>
         <Italian>Questo è troppo costoso. (Affare per un prezzo più basso)</Italian>
         <Spanish>Eso es demasiado caro. (Ganga para un precio más bajo)</Spanish>
+        <Russian>Это очень дорого. (Торговаться за снижение стоимости)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_BARGAIN_SELL</Tag>
@@ -6652,6 +6675,7 @@
         <German>Das ist viel zu wenig. (Um höheren Preis feilschen)</German>
         <Italian>Questo non è sufficiente. (Contrattare per un prezzo più alto)</Italian>
         <Spanish>Eso no es suficiente. (Regateo por un precio más alto)</Spanish>
+        <Russian>Этого недостаточно. (Торговаться за повышение стоимости)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_BARGAIN_ACCEPT</Tag>
@@ -6660,6 +6684,7 @@
         <German>Wir akzeptieren diesen fairen Handel. (Feilschen annehmen)</German>
         <Italian>Accettiamo questo giusto accordo. (Accettare l'affare)</Italian>
         <Spanish>Aceptamos este trato justo. (Aceptar el trato)</Spanish>
+        <Russian>Эта цена нас устраивает. (Закончить торг)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_BARGAIN_SUCCESS</Tag>

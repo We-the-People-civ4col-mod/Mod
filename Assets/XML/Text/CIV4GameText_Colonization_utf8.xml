@@ -604,7 +604,7 @@
         <German>Port Royal[TAB]Verkauf: %d1_Price[ICON_GOLD] / Kauf: %d2_Price[ICON_GOLD]</German>
         <Italian>Port Royal[TAB]Vendere: %d1_Price[ICON_GOLD] / Comperare: %d2_Price[ICON_GOLD]</Italian>
         <Spanish>Port Royal[TAB]Vender: %d1_Price[ICON_GOLD] / Comprar: %d2_Price[ICON_GOLD]</Spanish>
-        <Russian>Порт Роял  Прод. : %d1_Price[ICON_GOLD] / Куп. : %d2_Price[ICON_GOLD]</Russian>
+        <Russian>Порт Ройал  Прод. : %d1_Price[ICON_GOLD] / Куп. : %d2_Price[ICON_GOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_TAX_RATE</Tag>

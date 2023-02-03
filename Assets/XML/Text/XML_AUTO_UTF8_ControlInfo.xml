@@ -7,11 +7,12 @@
         <German>Ereignischronik</German>
         <Italian>Cronaca</Italian>
         <Spanish>Crónica</Spanish>
-        <Russian>Хроника</Russian>
+        <Russian>Летопись</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_ACHIEVE_SCREEN_HELP</Tag>
         <English>????</English>
+        <Russian>Описание всех знаковых событий</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_DIPLOMACY</Tag>
@@ -20,11 +21,12 @@
         <German>Diplomatische Verhandlungen beginnen</German>
         <Italian>Avvia diplomazia</Italian>
         <Spanish>Iniciar diplomacia</Spanish>
-        <Russian>Общение с другими Лидерами</Russian>
+        <Russian>Дипломатия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_DIPLOMACY_HELP</Tag>
         <English>????</English>
+        <Russian>Общение с другими Лидерами</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_TURN_LOG</Tag>
@@ -68,7 +70,7 @@
         <German>Stadtliste</German>
         <Italian>Consigliere interno</Italian>
         <Spanish>Consejero de Interior</Spanish>
-        <Russian>Внутренний советник</Russian>
+        <Russian>Советник по внутренним делам</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_DOMESTIC_SCREEN_HELP</Tag>
@@ -86,6 +88,7 @@
     <TEXT>
         <Tag>TXT_KEY_CONTROL_EUROPE_SCREEN_HELP</Tag>
         <English>????</English>
+        <Russian>Отправляйтесь в столицу вашей страны, чтобы продать товары из Нового света, приобрести корабли, нанять войска и лучших специалистов для своих поселений.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_AFRICA_SCREEN</Tag>
@@ -99,6 +102,7 @@
     <TEXT>
         <Tag>TXT_KEY_CONTROL_AFRICA_SCREEN_HELP</Tag>
         <English>????</English>
+        <Russian>Черный континент славится своими трудолюбивыми (хе-хе) жителями. А также теми, кто может заставить их работать, пока солнце еще высоко. Да и корабли там можно прикупить.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_PORT_ROYAL_SCREEN</Tag>
@@ -107,11 +111,12 @@
         <German>Port Royal</German>
         <Italian>Port Royal</Italian>
         <Spanish>Port Royal</Spanish>
-        <Russian>Порт Роял</Russian>
+        <Russian>Порт Ройал</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_PORT_ROYAL_SCREEN_HELP</Tag>
         <English>????</English>
+        <Russian>Веселые бродяги с удовольствием пойдут к вам на службу за тугой кошель звонких монет. Йо-хо-хо, и бутылка рома!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_REVOLUTION_SCREEN</Tag>
@@ -120,7 +125,7 @@
         <German>Revolution</German>
         <Italian>Consigliere per la rivoluzione</Italian>
         <Spanish>Consejero de la Revolución</Spanish>
-        <Russian>Советник по революции</Russian>
+        <Russian>Революционный советник</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_REVOLUTION_SCREEN_HELP</Tag>
@@ -285,6 +290,7 @@
         <German>Chat-Log</German>
         <Italian>Registro chat</Italian>
         <Spanish>Historial del chat</Spanish>
+        <Russian>Журнал чата</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_CHAT_ALL_HELP</Tag>
