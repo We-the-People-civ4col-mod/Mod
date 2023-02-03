@@ -485,6 +485,7 @@
         <Spanish>[ICON_BULLET]%D1_Modifier a la producción de %s2_list_of_icons</Spanish>
         <Russian>[ICON_BULLET]%D1_Modifier к производству %s2_list_of_icons</Russian>
     </TEXT>
+<!-- ZorG. colopedia. unit equipment. START -->
     <TEXT>
         <Tag>TXT_KEY_UNIT_REQUIRES_YIELD_QUANTITY_STRING</Tag>
         <English>[ICON_BULLET]Requires %d1_Quantity %F2_Icon</English>
@@ -492,7 +493,9 @@
         <German>[ICON_BULLET]Benötigt %d1_Quantity %F2_Icon</German>
         <Italian>[ICON_BULLET]Richiede %d1_Quantity %F2_Icon</Italian>
         <Spanish>[ICON_BULLET]Requiere %d1_Quantity de %F2_Icon</Spanish>
+        <Russian>[ICON_BULLET]Требуется : %d1_Quantity %F2_Icon</Russian>
     </TEXT>
+<!-- ZorG. colopedia. unit equipment. END -->
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_FOUND</Tag>
         <English>[COLOR_WARNING_TEXT]Cannot found within %d1_Num [NUM1:plot:plots] of Settlement[COLOR_REVERT]</English>
@@ -524,6 +527,7 @@
         <German>%d1%F2 pro Bürger</German>
         <Italian>%d1%F2 per cittad</Italian>
         <Spanish>%d1%F2 por ciudadano</Spanish>
+        <Russian>%d1%F2 на работника</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_OUTPUT_BY_RESOURCE</Tag>
@@ -912,6 +916,7 @@
         <German>%d1%% des Volkes wollen die Unabhängigkeit.</German>
         <Italian>%d1%% della popolazione supporta l'indipendenza.</Italian>
         <Spanish>El %d1%% de la gente apoya la independencia.</Spanish>
+        <Russian>%d1%% жителей поддерживают независимость.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONSTITUTION_POPUP</Tag>
@@ -1528,6 +1533,7 @@
         <German>Gesamt [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] = %s2%F3</German>
         <Italian>Totale [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] = %s2%F3</Italian>
         <Spanish>Total [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] = %s2%F3</Spanish>
+        <Russian>Всего [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] = %s2%F3</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_YIELD_FATHER</Tag>
@@ -1544,6 +1550,7 @@
         <German>[ICON_BULLET]%D1%%%F2[TAB]durch rebellische Stimmung</German>
         <Italian>[ICON_BULLET]%D1%%%F2[TAB]dal sentimento di ribellione</Italian>
         <Spanish>[ICON_BULLET]%D1%%%F2[TAB]por sentimiento de rebelión</Spanish>
+        <Russian>[ICON_BULLET]%D1%%%F2[TAB]от протестных настроений</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_BASE_CITIZEN_YIELD</Tag>
@@ -2178,6 +2185,7 @@
         <English>[ICON_BULLET]Gives %d1 [COLOR_CYAN]production[COLOR_REVERT] to a city when used</English>
         <German>[ICON_BULLET]Gibt einer Stadt %d1 [COLOR_CYAN]Produktion[COLOR_REVERT], wenn verwendet</German>
     </TEXT>
+<!-- ZorG. colopedia. equipment and materials for the construction of units and buildings. START -->
     <TEXT>
         <Tag>TXT_KEY_BUILD_CANNOT_AFFORD</Tag>
         <English>[COLOR_WARNING_TEXT]Requires %d1%F2_yield[COLOR_REVERT]</English>
@@ -2185,7 +2193,9 @@
         <German>[COLOR_WARNING_TEXT]Erfordert %d1%F2_yield[COLOR_REVERT]</German>
         <Italian>[COLOR_WARNING_TEXT]Richiede %d1%F2_yield[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_WARNING_TEXT]Requiere %d1 de %F2_yield[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_WARNING_TEXT]Требуется %d1%F2_yield[COLOR_REVERT]</Russian>
     </TEXT>
+<!-- ZorG. colopedia. equipment and materials for the construction of units and buildings. END -->
     <TEXT>
         <Tag>TXT_KEY_MINIMIZED_CHOOSE_EDUCATION</Tag>
         <English>%s2_City : A [COLOR_HIGHLIGHT_TEXT]%s1_profession[COLOR_REVERT] has graduated from the %s3_building.</English>

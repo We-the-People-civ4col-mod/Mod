@@ -463,6 +463,7 @@
         <German>[ICON_BULLET]Wandelt %s1_symbol_list in %F2_yield um</German>
         <Italian>[ICON_BULLET]Converte %s1_symbol_list in %F2_yield</Italian>
         <Spanish>[ICON_BULLET]Convierte %s1_symbol_list en %F2_yield</Spanish>
+        <Russian>[ICON_BULLET]Преобразует %s1_symbol_list в %F2_yield</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELDS_PRODUCED_WITH_CHAR</Tag>
@@ -976,6 +977,7 @@
         <English>[ICON_BULLET]Requires [COLOR_WARNING_TEXT]plastered country roads[COLOR_REVERT] to travel</English>
         <French>[ICON_BULLET][COLOR_WARNING_TEXT]Nécessite une route pavée[COLOR_REVERT] pour voyager</French>
         <German>[ICON_BULLET]Kann nur auf [COLOR_WARNING_TEXT]gepflasterten Landstraßen[COLOR_REVERT] fahren</German>
+        <Russian>[ICON_BULLET]Требует [COLOR_WARNING_TEXT]plastered country roads[COLOR_REVERT] для передвижения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ANIMAL</Tag>
@@ -1318,6 +1320,7 @@
         <German>Gesundheit der Stadt : %d1%F2_Icon</German>
         <Italian>Salute della città : %d1 %F2_Icon</Italian>
         <Spanish>Salud de la ciudad : %d1 %F2_Icon</Spanish>
+        <Russian>Здоровье в городе : %d1%F2_Icon</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_BONUS_RESOURCE_IS_WATER</Tag>
@@ -1356,6 +1359,7 @@
         <German>[ICON_BULLET]%D1%%%F2[TAB]durch Gesundheit der Stadt</German>
         <Italian>[ICON_BULLET]%D1%%%F2 attraverso la salute della città</Italian>
         <Spanish>[ICON_BULLET]%D1%%%F2 por la salud de la ciudad</Spanish>
+        <Russian>[ICON_BULLET]%D1%%%F2[TAB]от Здоровья в городе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HEALTH_POP_CHANGE</Tag>

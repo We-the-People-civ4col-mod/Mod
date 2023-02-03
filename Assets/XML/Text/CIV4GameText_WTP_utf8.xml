@@ -46,11 +46,13 @@
         <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_FREE_TURNS_WORKED</Tag>
         <English>Working for %d1_turns [NUM1:turn:turns] to gain freedom</English>
         <German>Arbeitet seit %d1_turns [NUM1:Runde:Runden] für seine Freiheit</German>
+        <Russian>Работает в течении %d1_turns [NUM1:ход:ходов], чтобы получить свободу</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED</Tag>
         <English>Working for %d1_turns [NUM1:turn:turns] to become an [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT]</English>
         <German>Arbeitet seit %d1_turns [NUM1:Runde:Runden] darauf hin, [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] zu werden</German>
+        <Russian>Работает в течении %d1_turns [NUM1:ход:ходов], чтобы стать [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED_MAP</Tag>

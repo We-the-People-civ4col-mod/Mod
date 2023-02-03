@@ -63,6 +63,7 @@
         <Italian>[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_REVERT]</Spanish>
     </TEXT>
+<!-- ZorG. I can find where it is used. START -->
     <TEXT>
         <Tag>TXT_KEY_REQUIRES</Tag>
         <English>[COLOR_WARNING_TEXT]Requires[SPACE]</English>
@@ -71,6 +72,7 @@
         <Italian>[COLOR_WARNING_TEXT]Richiede[SPACE]</Italian>
         <Spanish>[COLOR_WARNING_TEXT]Requiere[SPACE]</Spanish>
     </TEXT>
+<!-- ZorG. I can find where it is used. END -->
     <TEXT>
         <Tag>SYSTEM_GAME_PAUSED</Tag>
         <English>Game Paused by %s1</English>
@@ -284,6 +286,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%d1_Num[COLOR_REVERT] [NUM1:Runde:Runden]</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%d1_Num[COLOR_REVERT] [NUM1:turno:turni]</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%d1_Num[COLOR_REVERT] [NUM1:turno:turnos]</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%d1_Num[COLOR_REVERT] [NUM1:ход:ходов]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_ALL_UNITS</Tag>
@@ -813,6 +816,7 @@
         <Spanish>[ICON_BULLET]Empieza con[SPACE]</Spanish>
         <Russian>[ICON_BULLET]Начинает с[SPACE]</Russian>
     </TEXT>
+<!-- ZorG. colopedia. which building is required to build a unit. START --> 
     <TEXT>
         <Tag>TXT_KEY_UNIT_REQUIRES_STRING</Tag>
         <English>[ICON_BULLET][COLOR_WARNING_TEXT]Requires %s1_Text[COLOR_REVERT]</English>
@@ -820,7 +824,9 @@
         <German>[ICON_BULLET][COLOR_WARNING_TEXT]Erfordert : %s1_Text[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET][COLOR_WARNING_TEXT]Richiede %s1_Text[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET][COLOR_WARNING_TEXT]Requiere %s1_Text[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET][COLOR_WARNING_TEXT]Требует наличия : %s1_Text[COLOR_REVERT]</Russian>
     </TEXT>
+<!-- ZorG. colopedia. which building is required to build a unit. END --> 
     <TEXT>
         <Tag>TXT_KEY_UNIT_TURNS</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turn:turns][COLOR_REVERT]</English>
@@ -828,6 +834,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:Runde:Runden][COLOR_REVERT]</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turno:turni][COLOR_REVERT]</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turno:turnos][COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:ход:ходов][COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HELP_CARGO_SPACE</Tag>
@@ -965,6 +972,7 @@
         <Italian>[ICON_BULLET]Disponibile gratuitamente al raggiungimento di %s1_EraName</Italian>
         <Spanish>[ICON_BULLET]Disponible gratis a partir [NUM1:del:de la:de los:de las] %s1_EraName e inicios posteriores</Spanish>
     </TEXT>
+<!-- ZorG. I can find where it is used. START -->
     <TEXT>
         <Tag>TXT_KEY_BUILDING_REQUIRES_NUM_SPECIAL_BUILDINGS</Tag>
         <English>[COLOR_WARNING_TEXT]Requires %s1_Name (%d2_NumCurr/%d3_NumTotal total)[COLOR_REVERT]</English>
@@ -973,6 +981,8 @@
         <Italian>[COLOR_WARNING_TEXT]Richiede %s1_Name (%d2_NumCurr/%d3_NumTotal totali)[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_WARNING_TEXT]Requiere %s1_Name (%d2_NumCurr de un total de %d3_NumTotal)[COLOR_REVERT]</Spanish>
     </TEXT>
+<!-- ZorG. I can find where it is used. END -->
+<!-- ZorG. colopedia. which building is required to construct a building. START -->
     <TEXT>
         <Tag>TXT_KEY_BUILDING_REQUIRES_NUM_SPECIAL_BUILDINGS_NO_CITY</Tag>
         <English>[COLOR_WARNING_TEXT]Requires %s1_Name (%d2_NumTotal for each)[COLOR_REVERT]</English>
@@ -980,6 +990,7 @@
         <German>[COLOR_WARNING_TEXT]Erfordert : %s1_Name (%d2_NumTotal für jedes)[COLOR_REVERT]</German>
         <Italian>[COLOR_WARNING_TEXT]Richiede %s1_Name (%d2_NumTotal ogni)[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_WARNING_TEXT]Requiere %s1_Name (%d2_NumTotal de cada)[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_WARNING_TEXT]Требуется : %s1_Name (%d2_NumTotal на каждую постройку)[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_REQUIRES_STRING</Tag>
@@ -988,8 +999,10 @@
         <German>[COLOR_WARNING_TEXT]Erfordert : [LINK=literal]%s1_Name[\LINK][COLOR_REVERT]</German>
         <Italian>[COLOR_WARNING_TEXT]Richiede [LINK=literal]%s1_Name[\LINK][COLOR_REVERT]</Italian>
         <Spanish>[COLOR_WARNING_TEXT]Requiere [LINK=literal]%s1_Name[\LINK][COLOR_REVERT]</Spanish>
-        <Russian>[COLOR_WARNING_TEXT]Требует наличия [LINK=literal]%s1_Name[\LINK][COLOR_REVERT]</Russian>
+        <Russian>[COLOR_WARNING_TEXT]Требует наличия : [LINK=literal]%s1_Name[\LINK][COLOR_REVERT]</Russian>
     </TEXT>
+<!-- ZorG. colopedia. which building is required to construct a building. END -->
+<!-- ZorG. I can find where it is used. START -->
     <TEXT>
         <Tag>TXT_KEY_BUILDING_REQUIRES_UNIT_LEVEL</Tag>
         <English>[COLOR_WARNING_TEXT]Requires a unit of level %d1_Num experience[COLOR_REVERT]</English>
@@ -998,6 +1011,7 @@
         <Italian>[COLOR_WARNING_TEXT]Richiede un'unità di livello d'esperienza %d1_Num[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_WARNING_TEXT]Requiere una unidad de nivel %d1_Num de experiencia[COLOR_REVERT]</Spanish>
     </TEXT>
+<!-- ZorG. I can find where it is used. END -->
     <TEXT>
         <Tag>TXT_KEY_BUILDING_REQUIRES_VICTORY</Tag>
         <English>[ICON_BULLET]%s1_Name "Victory" must be enabled</English>
@@ -1029,6 +1043,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:Runde:Runden][COLOR_REVERT]</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turno:turni][COLOR_REVERT]</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turno:turnos][COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:ход:ходов][COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BOMBARD_DEFENSE_MOD</Tag>
@@ -1162,6 +1177,7 @@
         <Italian>Conduce a</Italian>
         <Spanish>Lleva a</Spanish>
     </TEXT>
+<!-- ZorG. colony screen. lack of materials for the construction of the building. START -->
     <TEXT>
         <Tag>TXT_KEY_PEDIA_REQUIRES</Tag>
         <English>Requires</English>
@@ -1169,7 +1185,9 @@
         <German>Erfordert</German>
         <Italian>Richiede</Italian>
         <Spanish>Requiere</Spanish>
+        <Russian>Не хватает</Russian>
     </TEXT>
+<!-- ZorG. colony screen. lack of materials for the construction of the building. END -->
     <TEXT>
         <Tag>TXT_KEY_PEDIA_SPECIAL_ABILITIES</Tag>
         <English>Special Characteristics</English>
@@ -1572,6 +1590,7 @@
         <German>Schatzkammer : %d1[ICON_GOLD]</German>
         <Italian>Tesoro : %d1[ICON_GOLD]</Italian>
         <Spanish>Tesoro : %d1[ICON_GOLD]</Spanish>
+        <Russian>Казна : %d1[ICON_GOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ECON_GOLD_RESERVE</Tag>
@@ -3781,6 +3800,7 @@
         <German>[ICON_BULLET]%D1%%%F2[TAB]durch Gebäude</German>
         <Italian>[ICON_BULLET]%D1%%%F2[TAB]dagli edifici</Italian>
         <Spanish>[ICON_BULLET]%D1%%%F2[TAB]por edificios</Spanish>
+        <Russian>[ICON_BULLET]%D1%%%F2[TAB]от строений</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_YIELD_CIVICS</Tag>
@@ -3805,6 +3825,7 @@
         <German>[ICON_BULLET]%d1%F2[TAB]durch Gebäude</German>
         <Italian>[ICON_BULLET]%d1%F2[TAB]dagli edifici</Italian>
         <Spanish>[ICON_BULLET]%d1%F2[TAB]por edificios</Spanish>
+        <Russian>[ICON_BULLET]%d1%F2[TAB]от строений</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_PROD_OVERFLOW</Tag>
@@ -9338,6 +9359,7 @@
         <German>[ICON_BULLET]%d1[ICON_GOLD] aus Eurer Schatzkammer entnehmen</German>
         <Italian>[ICON_BULLET]Sottrai %d1[ICON_GOLD] dal tuo tesoro</Italian>
         <Spanish>[ICON_BULLET]Quitar %d1[ICON_GOLD] del tesoro</Spanish>
+        <Russian>[ICON_BULLET]Вычтите %d1[ICON_GOLD] из вашей казны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GOLD_RANGE_FROM_PLAYER</Tag>
@@ -9362,6 +9384,7 @@
         <German>[ICON_BULLET]Zwischen %d1[ICON_GOLD] und %d2[ICON_GOLD] erhalten</German>
         <Italian>[ICON_BULLET]Ricevi tra %d1[ICON_GOLD] e %d2[ICON_GOLD]</Italian>
         <Spanish>[ICON_BULLET]Recibir entre %d1[ICON_GOLD] y %d2[ICON_GOLD]</Spanish>
+        <Russian>[ICON_BULLET]Получите от %d1[ICON_GOLD] до %d2[ICON_GOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GOLD_RANGE_LOST</Tag>
@@ -9370,6 +9393,7 @@
         <German>[ICON_BULLET]Zwischen %d1[ICON_GOLD] und %d2[ICON_GOLD] aus Eurer Schatzkammer entnehmen</German>
         <Italian>[ICON_BULLET]Sottrai tra %d1[ICON_GOLD] e %d2[ICON_GOLD] dal tuo tesoro</Italian>
         <Spanish>[ICON_BULLET]Quitar entre %d1[ICON_GOLD] y %d2[ICON_GOLD] del tesoro</Spanish>
+        <Russian>[ICON_BULLET]Вычтите от %d1[ICON_GOLD] до %d2[ICON_GOLD] из вашей казны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_POPULATION_CHANGE_CITY</Tag>
