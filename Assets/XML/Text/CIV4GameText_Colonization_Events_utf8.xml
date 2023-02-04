@@ -5225,27 +5225,27 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_FRUITS_START</Tag>
-		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]fruits[COLOR_REVERT] from Europe has begun.</English>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]fruit[COLOR_REVERT] from Europe has begun.</English>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Zitrusfrüchte[COLOR_REVERT] mit Europe hat begonnen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_FRUITS_DONE</Tag>
-		<English>We are now the leader trading [COLOR_FONT_GOLD]fruits[COLOR_REVERT] from Europe.</English>
+		<English>We are now the leader trading [COLOR_FONT_GOLD]fruit[COLOR_REVERT] from Europe.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Zitrusfrüchten[COLOR_REVERT] mit Europe zu werden.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_FRUITS_START</Tag>
-		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]fruits[COLOR_REVERT] from Europe.</English>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]fruit[COLOR_REVERT] from Europe.</English>
 		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Zitrusfrüchten[COLOR_REVERT] mit Europe begeistert.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_FRUITS_FAILED</Tag>
-		<English>Another colonial power has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]fruits[COLOR_REVERT] from Europe.</English>
+		<English>Another colonial power has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]fruit[COLOR_REVERT] from Europe.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Zitrusfrüchte[COLOR_REVERT] in Europe zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_FRUITS_DONE</Tag>
-		<English>We are now the leader trading [COLOR_FONT_GOLD]fruits[COLOR_REVERT] from Europe.</English>
+		<English>We are now the leader trading [COLOR_FONT_GOLD]fruit[COLOR_REVERT] from Europe.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Zitrusfrüchten[COLOR_REVERT] in Europe zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -5350,52 +5350,52 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_MAPLE_SIRUP_START</Tag>
-		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]maple sirup[COLOR_REVERT] from Europe has begun.</English>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] from Europe has begun.</English>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Ahornsirup[COLOR_REVERT] mit Europe hat begonnen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_MAPLE_SIRUP_DONE</Tag>
-		<English>We are now the leader trading [COLOR_FONT_GOLD]maple sirup[COLOR_REVERT] from Europe.</English>
+		<English>We are now the leader trading [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] from Europe.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Ahornsirup[COLOR_REVERT] mit Europe zu werden.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_MAPLE_SIRUP_START</Tag>
-		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]maple sirup[COLOR_REVERT] from Europe.</English>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] from Europe.</English>
 		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Ahornsirup[COLOR_REVERT] mit Europe begeistert.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_MAPLE_SIRUP_FAILED</Tag>
-		<English>Another colonial power has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]maple sirup[COLOR_REVERT] from Europe.</English>
+		<English>Another colonial power has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] from Europe.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Ahornsirup[COLOR_REVERT] in Europe zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_MAPLE_SIRUP_DONE</Tag>
-		<English>We are now the leader trading [COLOR_FONT_GOLD]maple sirup[COLOR_REVERT] from Europe.</English>
+		<English>We are now the leader trading [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] from Europe.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Ahornsirup[COLOR_REVERT] in Europe zu werden.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_KAUTSCHUK_START</Tag>
-		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]kautschuk[COLOR_REVERT] from Europe has begun.</English>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]rubber[COLOR_REVERT] from Europe has begun.</English>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] mit Europe hat begonnen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_KAUTSCHUK_DONE</Tag>
-		<English>We are now the leader trading [COLOR_FONT_GOLD]kautschuk[COLOR_REVERT] from Europe.</English>
+		<English>We are now the leader trading [COLOR_FONT_GOLD]rubber[COLOR_REVERT] from Europe.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] mit Europe zu werden.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_KAUTSCHUK_START</Tag>
-		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]kautschuk[COLOR_REVERT] from Europe.</English>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]rubber[COLOR_REVERT] from Europe.</English>
 		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] mit Europe begeistert.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_KAUTSCHUK_FAILED</Tag>
-		<English>Another colonial power has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]kautschuk[COLOR_REVERT] from Europe.</English>
+		<English>Another colonial power has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]rubber[COLOR_REVERT] from Europe.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] in Europe zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_KAUTSCHUK_DONE</Tag>
-		<English>We are now the leader trading [COLOR_FONT_GOLD]kautschuk[COLOR_REVERT] from Europe.</English>
+		<English>We are now the leader trading [COLOR_FONT_GOLD]rubber[COLOR_REVERT] from Europe.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] in Europe zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -5415,7 +5415,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_BLADES_FAILED</Tag>
-        <English>Another colonial power has cornered the market  in the colonies for [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] from Port Royal.</English>
+        <English>Another colonial power has cornered the market in the colonies for [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] from Port Royal.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in den Kolonien für [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] aus Port Royal zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -5440,7 +5440,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_SAILCLOTH_FAILED</Tag>
-        <English>Another colonial power has cornered the market  in the colonies for [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] from Port Royal.</English>
+        <English>Another colonial power has cornered the market in the colonies for [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] from Port Royal.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in den Kolonien für [COLOR_FONT_GOLD]Segelzeug[COLOR_REVERT] aus Port Royal zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -5470,7 +5470,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CANNONS_DONE</Tag>
-        <English>We have managed to become dominant trading [COLOR_FONT_GOLD]cannons[COLOR_REVERT] from Port Royal. The governor of Port Royal is extremely satisfied.</English>
+        <English>We have managed to dominate trading in [COLOR_FONT_GOLD]cannons[COLOR_REVERT] from Port Royal. The governor of Port Royal is extremely satisfied.</English>
         <German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] aus Port Royal zu werden. Der Gouverneur von Port Royal ist äusserst zufrieden.</German>
     </TEXT>
     <TEXT>
@@ -5480,7 +5480,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GUNS_DONE</Tag>
-        <English>We have managed to dominate the trade in [COLOR_FONT_GOLD]guns[COLOR_REVERT] from Port Royal.</English>
+        <English>We now dominate the trade in [COLOR_FONT_GOLD]guns[COLOR_REVERT] from Port Royal.</English>
         <German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Musketen[COLOR_REVERT] aus Port Royal zu werden.</German>
     </TEXT>
     <TEXT>
@@ -5930,7 +5930,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_DONE</Tag>
-		<English>We are now the lead trader in [COLOR_FONT_GOLD]lumber[COLOR_REVERT] from Port Royal.</English>
+		<English>We are now the top trader in [COLOR_FONT_GOLD]lumber[COLOR_REVERT] from Port Royal.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit PortRoyal zu werden.</German>
 	</TEXT>
 	<TEXT>
@@ -6775,7 +6775,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_MAPLE_SIRUP_START</Tag>
-		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]MAPLE_SIRUP[COLOR_REVERT] from Africa has begun.</English>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] from Africa has begun.</English>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] mit Africa hat begonnen.</German>
 	</TEXT>
 	<TEXT>
@@ -6800,7 +6800,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_KAUTSCHUK_START</Tag>
-		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]kautschuk[COLOR_REVERT] from Africa has begun.</English>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]rubber[COLOR_REVERT] from Africa has begun.</English>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] mit Africa hat begonnen.</German>
 	</TEXT>
 	<TEXT>
@@ -6890,7 +6890,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_BLADES_FAILED</Tag>
-		<English>Another colonial power has cornered the market  in the colonies for [COLOR_FONT_GOLD]blades[COLOR_REVERT] from Africa.</English>
+		<English>Another colonial power has cornered the market in the colonies for [COLOR_FONT_GOLD]blades[COLOR_REVERT] from Africa.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Geschütze[COLOR_REVERT] in Africa zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
@@ -6915,7 +6915,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_CANNONS_FAILED</Tag>
-		<English>Another colonial power has cornered the market  in the colonies for [COLOR_FONT_GOLD]cannons[COLOR_REVERT] from Africa.</English>
+		<English>Another colonial power has cornered the market in the colonies for [COLOR_FONT_GOLD]cannons[COLOR_REVERT] from Africa.</English>
 		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Geschütze[COLOR_REVERT] mit Africa zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
