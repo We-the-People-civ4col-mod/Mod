@@ -19,6 +19,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Разведка</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHERCATEGORY_MILITARY</Tag>
@@ -39,6 +40,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Военное дело</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHERCATEGORY_POLITICS</Tag>
@@ -59,6 +61,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Политика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHERCATEGORY_RELIGION</Tag>
@@ -79,6 +82,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Религия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHERCATEGORY_TRADE</Tag>
@@ -99,5 +103,6 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Торговля</Russian>
     </TEXT>
 </Civ4GameText>

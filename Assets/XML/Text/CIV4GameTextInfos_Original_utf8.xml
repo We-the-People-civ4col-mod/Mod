@@ -902,11 +902,13 @@
         <Tag>TXT_KEY_BUILDING_MAX_HARBOUR_SPACE_PROVIDED</Tag>
         <English>[ICON_BULLET]Offers maximum %d1_HarbourSpace%F2_Icon</English>
         <German>[ICON_BULLET]Bietet maximal %d1_HarbourSpace%F2_Icon</German>
+        <Russian>[ICON_BULLET]Максимальная вместимость %d1_HarbourSpace%F2_Icon</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_MAX_BARRACKS_SPACE_PROVIDED</Tag>
         <English>[ICON_BULLET]Offers maximum %d1_HarbourSpace%F2_Icon</English>
         <German>[ICON_BULLET]Bietet maximal %d1_HarbourSpace%F2_Icon</German>
+        <Russian>[ICON_BULLET]Максимальная вместимость %d1_HarbourSpace%F2_Icon</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PLOT_HELP_IMPROVEMENT_STORAGE</Tag>
@@ -937,6 +939,7 @@
         <German>Wasser-Geländefelder</German>
         <Italian>Caselle d'acqua</Italian>
         <Spanish>Casillas de agua</Spanish>
+        <Russian>Клетки воды</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LAND_PLOTS</Tag>
@@ -2840,6 +2843,7 @@
         <German>Produktionsautomatisierung einschalten</German>
         <Italian>Attiva la produzione automatica</Italian>
         <Spanish>Activar la automatización de la producción</Spanish>
+        <Russian>Включить автоматическое строительство зданий</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CULTURE</Tag>
@@ -2848,6 +2852,7 @@
         <German>Kultur : %d1_Curr/%d2_Need %F3</German>
         <Italian>Cultura : %d1_Curr/%d2_Need %F3</Italian>
         <Spanish>Cultura : %d1_Curr/%d2_Need %F3</Spanish>
+        <Russian>Культура : %d1_Curr/%d2_Need %F3</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_PEDIA_BACK</Tag>

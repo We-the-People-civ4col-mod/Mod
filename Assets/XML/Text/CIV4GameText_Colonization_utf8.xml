@@ -2057,6 +2057,7 @@
         <German>[ICON_BULLET]%d1_Mod%% Verteidigung</German>
         <Italian>[ICON_BULLET]%d1_Mod%% alla difesa</Italian>
         <Spanish>[ICON_BULLET]%d1_Mod%% a la defensa</Spanish>
+        <Russian>[ICON_BULLET]%d1_Mod%% к защите</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SOURCE</Tag>
@@ -2665,6 +2666,7 @@
         <German>[ICON_BULLET]Benötigt %d1%F2_icon</German>
         <Italian>[ICON_BULLET]Consuma %d1%F2_icon</Italian>
         <Spanish>[ICON_BULLET]Consume %d1%F2_icon</Spanish>
+        <Russian>[ICON_BULLET]Будет использовано %d1%F2_icon</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_UNPRODUCED_CITY_YIELD_SPECIFIC</Tag>

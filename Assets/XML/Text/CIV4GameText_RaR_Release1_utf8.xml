@@ -1191,6 +1191,7 @@
         <English>[ICON_BULLET]Generates [ICON_GOLD] from %F1_yield</English>
         <French>[ICON_BULLET]Génère [ICON_GOLD] à partir de %F1_yield</French>
         <German>[ICON_BULLET]Erwirtschaftet [ICON_GOLD] durch %F1_yield</German>
+        <Russian>[ICON_BULLET]Генерирует [ICON_GOLD] из %F1_yield</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ENTERTAINMENT_BUILDING_INCREASED</Tag>
@@ -1203,18 +1204,21 @@
         <English>[ICON_BULLET]Generates [ICON_GOLD] by selling goods on the domestic market</English>
         <French>[ICON_BULLET]Génère [ICON_GOLD] en vendant des biens sur le marché intérieur</French>
         <German>[ICON_BULLET]Erwirtschaftet [ICON_GOLD] durch Verkauf von Waren an die Einwohner der Stadt</German>
+        <Russian>[ICON_BULLET]Генерирует [ICON_GOLD] при продаже товаров на Внутреннем рынке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_MARKET_BUILDING_INCREASED</Tag>
         <English>[ICON_BULLET]Increases demand for goods on the domestic market</English>
         <French>[ICON_BULLET]Augmente la demande de bien sur le marché intérieur</French>
         <German>[ICON_BULLET]Erhöht die Nachfrage nach Waren in der Stadt</German>
+        <Russian>[ICON_BULLET]увеличивает спрос на товары на Внутреннем рынке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_EXTRA_TRADE_MODIFIER</Tag>
         <English>[ICON_BULLET]%D1%% better prices from bargaining and trading posts</English>
         <French>[ICON_BULLET]%D1%% permet d'obtenir des meilleur prix en négociant</French>
         <German>[ICON_BULLET]%D1%% bessere Preise durch Feilschen und Handelsposten</German>
+        <Russian>[ICON_BULLET]%D1%% более выгодные цены при торге, ускорение работы Торговых постов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_LEVIED_MILITIA_FOR_PROTECTION</Tag>
@@ -1547,5 +1551,6 @@
         <Tag>TXT_KEY_CULTURE_FROM_POPULATION</Tag>
         <English>[ICON_BULLET]%d2%F3_Icon[TAB]from Population</English>
         <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Stadgröße</German>
+        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от населения</Russian>
     </TEXT>
 </Civ4GameText>

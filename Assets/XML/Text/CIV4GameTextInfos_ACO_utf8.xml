@@ -80,7 +80,7 @@
         <German>[COLOR_UNIT_TEXT]Rückzug[COLOR_REVERT]</German>
         <Italian>[COLOR_UNIT_TEXT]Ritirata[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_UNIT_TEXT]Retirada[COLOR_REVERT]</Spanish>
-        <Russian>[COLOR_UNIT_TEXT]Сбежать[COLOR_REVERT]</Russian>
+        <Russian>[COLOR_UNIT_TEXT]Отступить[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_ACO_AverageHP</Tag>
