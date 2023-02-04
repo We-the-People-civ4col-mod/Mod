@@ -1261,7 +1261,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COLOURED_CLOTH_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Master dyers[COLOR_REVERT] produce double the amount of [COLOR_HIGHLIGHT_TEXT]coloured cloth[COLOR_REVERT] from cloth and indigo.</English>
+        <English>[COLOR_UNIT_TEXT]Master dyers[COLOR_REVERT] produce double the amount of [COLOR_HIGHLIGHT_TEXT]coloured cloth[COLOR_REVERT] from cloth and indigo or cochineal or logwood.</English>
         <French>Les [COLOR_UNIT_TEXT]maîtres teinturiers[COLOR_REVERT] produisent deux fois plus de [COLOR_HIGHLIGHT_TEXT]costumes teintés[COLOR_REVERT] à partir de tissu et d'indigo.</French>
         <German>[COLOR_UNIT_TEXT]Meister-Färber[COLOR_REVERT] verarbeiten doppelt soviele Stoffe und Indigo zu [COLOR_HIGHLIGHT_TEXT]Gefärbten Stoffen[COLOR_REVERT] wie andere Kolonisten.</German>
     </TEXT>
@@ -1690,7 +1690,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_DISTILLER_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Master distillers[COLOR_REVERT] are artisans of inebriation, capable of producing double the amount of [LINK=YIELD_RUM]rum[\LINK] from [LINK=YIELD_SUGAR]sugar[\LINK] that an average colonist might make in the same period of time, when assigned to the [LINK=PROFESSION_DISTILLER]distiller[\LINK] profession.[PARAGRAPH:1]Master distillers can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]trained[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its upgrades.</English>
+        <English>[COLOR_UNIT_TEXT]Master distillers[COLOR_REVERT] are artisans of inebriation, capable of producing double the amount of [LINK=YIELD_RUM]rum[\LINK] from [LINK=YIELD_SUGAR]sugar[\LINK] that an average colonist might make in the same period of time, when assigned to the [LINK=PROFESSION_DISTILLER]distiller[\LINK] profession. Master distillers also create fruit brandy fom fruit.[PARAGRAPH:1]Master distillers can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]trained[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its upgrades.</English>
         <French>Les [COLOR_UNIT_TEXT]Maîtres distillateurs[COLOR_REVERT] sont des spécialistes de l'ébriété, capables de produire deux fois plus de [COLOR_HIGHLIGHT_TEXT]rhum[COLOR_REVERT] que ne le ferait un [COLOR_UNIT_TEXT]colon libre[COLOR_REVERT] durant le même laps de temps !</French>
         <German>[COLOR_UNIT_TEXT]Brennermeister[COLOR_REVERT] arbeiten im Beruf des Rumbrenners bei der Herstellung von [COLOR_HIGHLIGHT_TEXT]Rum[COLOR_REVERT] doppelt so produktiv wie Freie Kolonisten. Prost!</German>
         <Italian>I [COLOR_UNIT_TEXT]mastri distillatori[COLOR_REVERT] sono artigiani del bere, in grado di produrre il doppio di [COLOR_HIGHLIGHT_TEXT]rum[COLOR_REVERT] rispetto a quello che potrebbe distillare un [COLOR_UNIT_TEXT]libero colono[COLOR_REVERT] nello stesso tempo!</Italian>
@@ -3231,7 +3231,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LEATHER_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Master tanners[COLOR_REVERT] produce double the amount of [COLOR_HIGHLIGHT_TEXT]leather[COLOR_REVERT].</English>
+        <English>[COLOR_UNIT_TEXT]Master tanners[COLOR_REVERT] produce double the amount of [COLOR_HIGHLIGHT_TEXT]leather[COLOR_REVERT]from cattle, or pigskin from pigs.</English>
         <French>Les [COLOR_UNIT_TEXT]maîtres tanneurs[COLOR_REVERT] produisent deux fois plus de [COLOR_HIGHLIGHT_TEXT]cuir[COLOR_REVERT] à partir de [COLOR_HIGHLIGHT_TEXT]peaux[COLOR_REVERT].</French>
         <German>[COLOR_UNIT_TEXT]Gerbermeister[COLOR_REVERT] verarbeiten doppelt soviele Rinderhäute in [COLOR_HIGHLIGHT_TEXT]Lederwaren[COLOR_REVERT], wie andere Kolonisten.</German>
     </TEXT>
@@ -4676,7 +4676,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROPE_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Master ropers[COLOR_REVERT] produce double the amount of [COLOR_HIGHLIGHT_TEXT]ropes[COLOR_REVERT] from [COLOR_HIGHLIGHT_TEXT]hemp[COLOR_REVERT].</English>
+        <English>[COLOR_UNIT_TEXT]Master ropers[COLOR_REVERT] produce double the amount of [COLOR_HIGHLIGHT_TEXT]ropes[COLOR_REVERT] from [COLOR_HIGHLIGHT_TEXT]hemp[COLOR_REVERT] or flax.</English>
         <French>Les [COLOR_UNIT_TEXT]Maîtres cordeliers[COLOR_REVERT] produisent deux fois plus de [COLOR_HIGHLIGHT_TEXT]cordages[COLOR_REVERT] à partir de [COLOR_HIGHLIGHT_TEXT]chanvre[COLOR_REVERT].</French>
         <German>[COLOR_UNIT_TEXT]Seilermeister[COLOR_REVERT] verarbeiten doppelt soviel [COLOR_HIGHLIGHT_TEXT]Hanf[COLOR_REVERT] zu [COLOR_HIGHLIGHT_TEXT]Seilen[COLOR_REVERT], wie andere Kolonisten.</German>
     </TEXT>
@@ -5037,7 +5037,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_SAILCLOTH_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Master sailmakers[COLOR_REVERT] produce double the amount of [COLOR_HIGHLIGHT_TEXT]sailcloth[COLOR_REVERT] from [COLOR_HIGHLIGHT_TEXT]hemp[COLOR_REVERT].</English>
+        <English>[COLOR_UNIT_TEXT]Master sailmakers[COLOR_REVERT] produce double the amount of [COLOR_HIGHLIGHT_TEXT]sailcloth[COLOR_REVERT] from [COLOR_HIGHLIGHT_TEXT]hemp[COLOR_REVERT] or flax.</English>
         <French>Les [COLOR_UNIT_TEXT]maîtres voiliers[COLOR_REVERT] produisent deux fois plus de [COLOR_HIGHLIGHT_TEXT]voiles[COLOR_REVERT] à partir de [COLOR_HIGHLIGHT_TEXT]chanvre[COLOR_REVERT].</French>
         <German>[COLOR_UNIT_TEXT]Meister-Segelmacher[COLOR_REVERT] verarbeiten doppelt soviel [COLOR_HIGHLIGHT_TEXT]Hanf[COLOR_REVERT] zu [COLOR_HIGHLIGHT_TEXT]Segeltuch[COLOR_REVERT], wie andere Kolonisten.</German>
     </TEXT>
