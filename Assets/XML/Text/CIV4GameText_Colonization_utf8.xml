@@ -311,7 +311,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHOOSE_PROFESSION_ITEM</Tag>
-	  <English>%s1 %F3_icon =!= %d2_yield</English>
+        <English>%s1 %F3_icon =!= %d2_yield</English>
 <!--         <English>%s1 %d2_yield %F3_icon</English> -->
         <French>%s1 %d2_yield %F3_icon</French>
         <German>%s1 %d2_yield %F3_icon</German>
@@ -325,6 +325,7 @@
         <German>[ICON_BULLET]%d1%F2[TAB]durch Siedlung</German>
         <Italian>[ICON_BULLET]%d1%F2[TAB]dall'insediamento</Italian>
         <Spanish>[ICON_BULLET]%d1%F2[TAB]del asentamiento</Spanish>
+        <Russian>[ICON_BULLET]%d1%F2[TAB]от поселения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CONSUMED_FOOD</Tag>
@@ -341,6 +342,7 @@
         <German>-----------------------[NEWLINE]Letzte [COLOR_HIGHLIGHT_TEXT]Produktion[COLOR_REVERT]: %d1%F2_Icon</German>
         <Italian>-----------------------[NEWLINE][COLOR_HIGHLIGHT_TEXT]Produzione[COLOR_REVERT] finale: %d1%F2_Icon</Italian>
         <Spanish>-----------------------[NEWLINE][COLOR_HIGHLIGHT_TEXT]Producción[COLOR_REVERT] final: %d1 %F2_Icon</Spanish>
+        <Russian>-----------------------[NEWLINE]Итого [COLOR_HIGHLIGHT_TEXT]Производство[COLOR_REVERT] : %d1%F2_Icon</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHOOSE_GOODS</Tag>
@@ -349,6 +351,7 @@
         <German>Güter zum Aufladen wählen[NEWLINE][NEWLINE]</German>
         <Italian>Scegli i beni da caricare[NEWLINE][NEWLINE]</Italian>
         <Spanish>Elegir mercancías para cargar[NEWLINE][NEWLINE]</Spanish>
+        <Russian>Выберите товары для погрузки[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_LOAD_YIELD</Tag>
@@ -1021,6 +1024,7 @@
         <German>[ICON_BULLET]%D1_Change%F2_Icon durch die Modernisierung[SPACE]</German>
         <Italian>[ICON_BULLET]%D1_Change%F2_Icon da[SPACE]</Italian>
         <Spanish>[ICON_BULLET]%D1_Change%F2_Icon por[SPACE]</Spanish>
+        <Russian>[ICON_BULLET]%D1_Change%F2_Icon от[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_GREAT_GENERAL_MOD</Tag>
@@ -1029,6 +1033,7 @@
         <German>[ICON_BULLET]%D1_Mod%% Produktion Großer Generäle</German>
         <Italian>[ICON_BULLET]%D1_Mod%% comparsa di un Grande Generale</Italian>
         <Spanish>[ICON_BULLET]%D1_Mod%% a la aparición de Gran general</Spanish>
+        <Russian>[ICON_BULLET]%D1_Mod%% Появление Великого Генерала</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_CIVIC_LEVEL_MODIFIER</Tag>
@@ -1351,6 +1356,7 @@
         <German>[ICON_BULLET]Wert : %d1[ICON_GOLD]</German>
         <Italian>[ICON_BULLET]Vale %d1[ICON_GOLD]</Italian>
         <Spanish>[ICON_BULLET]Por valor de %d1[ICON_GOLD]</Spanish>
+        <Russian>[ICON_BULLET]Ценность %d1[ICON_GOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CARGO</Tag>
@@ -1542,6 +1548,7 @@
         <German>[ICON_BULLET]%D1%%%F2[TAB]durch [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET]%D1%%%F2[TAB]da [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]%D1%%%F2[TAB]por [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]%D1%%%F2[TAB]от [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_YIELD_REBEL</Tag>
@@ -2015,21 +2022,25 @@
         <German>[ICON_BULLET]Kann hier keine Siedlungen bauen[SPACE]</German>
         <Italian>[ICON_BULLET]Qui è impossibile costruire un insediamento[SPACE]</Italian>
         <Spanish>[ICON_BULLET]Aquí no se pueden construir asentamientos[SPACE]</Spanish>
+        <Russian>[ICON_BULLET]Здесь нельзя строить поселения[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_BAD_CITY_LOCATION</Tag>
         <English>[ICON_BULLET]Unhealthy terrain to found settlements[SPACE]</English>
         <German>[ICON_BULLET]Ungesundes Terrain für Stadgründungen[SPACE]</German>
+        <Russian>[ICON_BULLET]Нездоровая местность для основания поселений[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PLOT_FRESHWATER</Tag>
         <English>[ICON_BULLET]Plot with direct fresh water access[SPACE]</English>
         <German>[ICON_BULLET]Feld mit direktem Süßwasserzugang[SPACE]</German>
+        <Russian>[ICON_BULLET]Участок с прямым доступом к пресной воде[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_PROVIDES_FRESHWATER</Tag>
         <English>[ICON_BULLET]Provides fresh water access to adjacent plots[SPACE]</English>
         <German>[ICON_BULLET]Gibt angrenzenden Feldern Süßwasserzugang[SPACE]</German>
+        <Russian>[ICON_BULLET]Обеспечивает соседним участкам доступ к пресной воде[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_PROD_TRAIT</Tag>
@@ -2595,6 +2606,7 @@
         <German>[ICON_BULLET]Überlebenschance bei Niederlage ([COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT])</German>
         <Italian>[ICON_BULLET]Probabilità di sopravvivere alla sconfitta ([COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT])</Italian>
         <Spanish>[ICON_BULLET]Probabilidad de sobrevivir a derrota ([COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT])</Spanish>
+        <Russian>[ICON_BULLET]Шанс пережить поражение ([COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT])</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_EVASION_WITH_CITY</Tag>
@@ -2603,6 +2615,7 @@
         <German>[ICON_BULLET]Fluchtchance nach Niederlage zur Siedlung [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET]Probabilità di fuggire a [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] dopo aver perso una battaglia</Italian>
         <Spanish>[ICON_BULLET]Probabilidad de escapar de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] tras perder una batalla</Spanish>
+        <Russian>[ICON_BULLET]Шанс сбежать в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] после поражения в бою</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_EVASION_SHORT</Tag>
@@ -2611,6 +2624,7 @@
         <German>[ICON_BULLET]Überlebenschance bei Niederlage</German>
         <Italian>[ICON_BULLET]Probabilità di sopravvivere alla sconfitta</Italian>
         <Spanish>[ICON_BULLET]Probabilidad de sobrevivir a derrota</Spanish>
+        <Russian>[ICON_BULLET]Шанс пережить поражение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_EVASION_BUILDINGS</Tag>
@@ -3082,6 +3096,7 @@
         <German>%d1 vom Steuersatz</German>
         <Italian>%d1 della percentuale di tasse</Italian>
         <Spanish>%d1 por carga impositiva</Spanish>
+        <Russian>%d1 от ставки налога</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMBERS</Tag>
@@ -3098,6 +3113,7 @@
         <German>(Ankunft in %d2 [NUM2:Runde:Runden])</German>
         <Italian>Arr. fra %d2 [NUM2:turno:turni]</Italian>
         <Spanish>Llegará en %d2 [NUM2:turno:turnos]</Spanish>
+        <Russian>(Прибудет через %d2 [NUM2:ход:хода])</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_STRATEGY</Tag>
@@ -3114,6 +3130,7 @@
         <German>[COLOR_WARNING_TEXT]Wird bereits gebaut[COLOR_REVERT]</German>
         <Italian>[COLOR_WARNING_TEXT]Già in costruzione[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_WARNING_TEXT]Ya se está construyendo[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_WARNING_TEXT]Строительство уже ведется[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ALARM_INVALID_INPUT</Tag>

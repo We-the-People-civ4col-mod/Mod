@@ -36,6 +36,7 @@
         <German>Überlebenswahrscheinlichkeit :[SPACE]</German>
         <Italian>Probabilità di sopravvivenza :[SPACE]</Italian>
         <Spanish>Probabilidad de sobrevivencia :[SPACE]</Spanish>
+        <Russian>Шансы на выживание :[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_ACO_SurvivalGuaranteed</Tag>
@@ -52,6 +53,7 @@
         <German>[COLOR_POSITIVE_TEXT]Sieg[COLOR_REVERT]</German>
         <Italian>[COLOR_POSITIVE_TEXT]Vittoria[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_POSITIVE_TEXT]Victoria[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_POSITIVE_TEXT]Победить[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_ACO_Defeat</Tag>
@@ -60,6 +62,7 @@
         <German>[COLOR_NEGATIVE_TEXT]Niederlage[COLOR_REVERT]</German>
         <Italian>[COLOR_NEGATIVE_TEXT]Sconfitta[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_NEGATIVE_TEXT]Derrota[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_NEGATIVE_TEXT]Проиграть[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_ACO_Withdraw</Tag>
@@ -68,6 +71,7 @@
         <German>[COLOR_POSITIVE_TEXT]Flucht[COLOR_REVERT]</German>
         <Italian>[COLOR_POSITIVE_TEXT]Fuga[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_POSITIVE_TEXT]Repliegue[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_POSITIVE_TEXT]Уклониться[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_ACO_Retreat</Tag>
@@ -76,6 +80,7 @@
         <German>[COLOR_UNIT_TEXT]Rückzug[COLOR_REVERT]</German>
         <Italian>[COLOR_UNIT_TEXT]Ritirata[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_UNIT_TEXT]Retirada[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_UNIT_TEXT]Сбежать[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_ACO_AverageHP</Tag>

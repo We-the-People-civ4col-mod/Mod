@@ -771,6 +771,7 @@
         <German>%D1: "Ihr habt uns unser Land geraubt!"</German>
         <Italian>%D1: "Hai rubato la nostra terra!"</Italian>
         <Spanish>%D1: "¡Nos habéis arrebatado nuestra tierra!"</Spanish>
+        <Russian>%D1: "Вы украли нашу землю!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_ALARM</Tag>
@@ -779,12 +780,14 @@
         <German>%D1: "Eure Lebensweise ist eine Gefahr für uns."</German>
         <Italian>%D1: "Il tuo stile di vita è una minaccia per il nostro."</Italian>
         <Spanish>%D1: "Vuestro modo de vida amenaza el nuestro."</Spanish>
+        <Russian>%D1: "Ваш образ жизни угрожает нам."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_NATIVE_ATTITUDE</Tag>
         <English>%D1: "Your strange customs intrigue us."</English>
         <French>%D1: "Vos coutumes nous intriguent."</French>
         <German>%D1: "Eure seltsamen Sitten verwirren uns."</German>
+        <Russian>%D1: "Ваши странные обычаи заинтриговали нас."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_EXTRA_GOOD</Tag>
@@ -793,6 +796,7 @@
         <German>%D1: "Die vergangenen Ereignisse haben Eure guten Absichten bewiesen."</German>
         <Italian>%D1: "Gli eventi passati ci hanno dimostrato la tua buona natura."</Italian>
         <Spanish>%D1: "Los acontecimientos pasados nos han demostrado vuestra bondad."</Spanish>
+        <Russian>%D1: "Прошлые события сплотили наших людей."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_EXTRA_BAD</Tag>
@@ -801,6 +805,7 @@
         <German>%D1: "Die vergangenen Ereignisse haben Eure schlechten Absichten bewiesen. "</German>
         <Italian>%D1: "Gli eventi passati ci hanno dimostrato la tua natura malvagia."</Italian>
         <Spanish>%D1: "Los acontecimientos pasados nos han demostrado vuestra maldad."</Spanish>
+        <Russian>%D1: "Прошлые события разлучили наши народы."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_LOST_WAR_ATTITUDE</Tag>
@@ -977,7 +982,7 @@
         <English>[ICON_BULLET]Requires [COLOR_WARNING_TEXT]plastered country roads[COLOR_REVERT] to travel</English>
         <French>[ICON_BULLET][COLOR_WARNING_TEXT]Nécessite une route pavée[COLOR_REVERT] pour voyager</French>
         <German>[ICON_BULLET]Kann nur auf [COLOR_WARNING_TEXT]gepflasterten Landstraßen[COLOR_REVERT] fahren</German>
-        <Russian>[ICON_BULLET]Требует [COLOR_WARNING_TEXT]plastered country roads[COLOR_REVERT] для передвижения</Russian>
+        <Russian>[ICON_BULLET]Требует [COLOR_WARNING_TEXT]вымощенную камнем дорогу[COLOR_REVERT] для передвижения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ANIMAL</Tag>

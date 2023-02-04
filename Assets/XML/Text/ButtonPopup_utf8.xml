@@ -258,6 +258,7 @@
         <German>von</German>
         <Italian>from</Italian>
         <Spanish>from</Spanish>
+        <Russian>из</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_MAIN_TABLE_4</Tag>
@@ -266,6 +267,7 @@
         <German>nach</German>
         <Italian>to</Italian>
         <Spanish>to</Spanish>
+        <Russian>в</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_MISSING_YIELD</Tag>

@@ -15,6 +15,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Исследовательские очки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_POINT_MILITARY</Tag>
@@ -31,6 +32,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Военные очки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_POINT_POLITICAL</Tag>
@@ -47,6 +49,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Политические очки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_POINT_RELIGION</Tag>
@@ -63,6 +66,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Религиозные очки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_POINT_TRADE</Tag>
@@ -79,5 +83,6 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Торговые очки</Russian>
     </TEXT>
 </Civ4GameText>

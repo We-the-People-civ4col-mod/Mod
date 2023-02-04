@@ -112,6 +112,7 @@
         <German>[COLOR:140:255:40:255]Wachstum[COLOR_REVERT] (%d1 [NUM1:Runde:Runden])</German>
         <Italian>[COLOR:140:255:40:255]Crescita[COLOR_REVERT] (%d1 [NUM1:turno:turni])</Italian>
         <Spanish>[COLOR:140:255:40:255]Creciendo[COLOR_REVERT] (%d1 [NUM1:turno:turnos])</Spanish>
+        <Russian>[COLOR:140:255:40:255]Растет[COLOR_REVERT] (%d1 [NUM1:ход:ходов])</Russian>
     </TEXT>
     <TEXT>
         <Tag>INTERFACE_CITY_STARVING</Tag>
@@ -120,6 +121,7 @@
         <German>[COLOR_WARNING_TEXT]HUNGERSNOT ![COLOR_REVERT]</German>
         <Italian>[COLOR_WARNING_TEXT]CARESTIA ![COLOR_REVERT]</Italian>
         <Spanish>[COLOR_WARNING_TEXT]¡HAMBRUNA ![COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_WARNING_TEXT]ГОЛОД![COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>INTERFACE_CITY_STAGNANT</Tag>
@@ -128,6 +130,7 @@
         <German>Stagnation</German>
         <Italian>Stagnante</Italian>
         <Spanish>Estancada</Spanish>
+        <Russian>Развития нет</Russian>
     </TEXT>
     <TEXT>
         <Tag>INTERFACE_CITY_PRODUCTION</Tag>
@@ -196,7 +199,7 @@
         <German>Modernisierungen bauen (automatisch)</German>
         <Italian>Costruire i miglioramenti (automaticamente)</Italian>
         <Spanish>Construir mejoras (automatizado)</Spanish>
-        <Russian>Строить улучшения (авто)</Russian>
+        <Russian>Строить улучшения (автоматически)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_AUTOMATE_EXPLORE</Tag>
@@ -205,7 +208,7 @@
         <German>Erkunden (automatisch)</German>
         <Italian>Esplora (automaticamente)</Italian>
         <Spanish>Explorar (automatizado)</Spanish>
-        <Russian>Исследовать территорию (авто)</Russian>
+        <Russian>Исследовать территорию (авто.)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_DESTROY_IMP</Tag>
@@ -869,6 +872,7 @@
         <German>Verschanzungsbonus : %d1_Mod%%</German>
         <Italian>Bonus per la fortificazione : %d1_Mod%%</Italian>
         <Spanish>Bonif. a fortif. : %d1_Mod%%</Spanish>
+        <Russian>Бонус укрепленного отряда : %d1_Mod%%</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FUTURE_QUOTE</Tag>
@@ -1705,7 +1709,7 @@
         <German>%s1_PlName HAT</German>
         <Italian>%s1_PlName HA</Italian>
         <Spanish>%s1_PlName TIENE</Spanish>
-        <Russian>У %s1_PlName ЕСТЬ</Russian>
+        <Russian>%s1_PlName ИМЕЕТ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_YOU_HAVE</Tag>
@@ -1723,7 +1727,7 @@
         <German>%s1_PlName BIETET</German>
         <Italian>%s1_PlName OFFRE</Italian>
         <Spanish>%s1_PlName OFRECE</Spanish>
-        <Russian>ПРЕДЛОЖЕНИЕ %s1_PlName</Russian>
+        <Russian>%s1_PlName ПРЕДЛАГАЕТ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_YOU_OFFER</Tag>
@@ -3452,7 +3456,7 @@
         <German>OK</German>
         <Italian>OK</Italian>
         <Spanish>Aceptar</Spanish>
-        <Russian>Ок</Russian>
+        <Russian>ОК</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_GO_BACK</Tag>
@@ -3865,6 +3869,7 @@
         <German>Überschuss aus vorherigem Bauprojekt : %d1%F2_Icon</German>
         <Italian>In eccedenza dalla precedente costruzione : %d1%F2_Icon</Italian>
         <Spanish>En exceso por construcción anterior : %d1 %F2_Icon</Spanish>
+        <Russian>Избыток от предыдущего строительства : %d1%F2_Icon</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_TURN_BEGINS</Tag>
@@ -4119,6 +4124,7 @@
         <German>Nahrung : %d1_Num / %d2_Threshold[ICON_FOOD]</German>
         <Italian>Cibo : %d1_Num / %d2_Threshold[ICON_FOOD]</Italian>
         <Spanish>Alimentos : %d1_Num / %d2_Threshold[ICON_FOOD]</Spanish>
+        <Russian>Еды для роста : %d1_Num / %d2_Threshold[ICON_FOOD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_TURNS_LEFT</Tag>
@@ -4162,7 +4168,7 @@
         <German>Kurzbeschreibung :</German>
         <Italian>Br. descriz. civ. :</Italian>
         <Spanish>Descripción :</Spanish>
-        <Russian>Короткое описание</Russian>
+        <Russian>Краткое описание</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MENU_CIV_ADJ</Tag>
@@ -4171,6 +4177,7 @@
         <German>Ziv.-Adjektiv :</German>
         <Italian>Aggettivo :</Italian>
         <Spanish>Adjetivo :</Spanish>
+        <Russian>Характеристика цивилизации</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SYSTEM_BUDDY_REQUEST_TITLE</Tag>
@@ -4271,6 +4278,7 @@
         <German>[COLOR_WARNING_TEXT]Kann nur die Produktion einer Einheit oder eines Gebäudes beschleunigen.[COLOR_REVERT]</German>
         <Italian>[COLOR_WARNING_TEXT]Puoi solamente accelerare la produzione di un'unità o un edificio.[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_WARNING_TEXT]Solo se puede acelerar la producción de una unidad o un edificio.[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_WARNING_TEXT]Ускорить можно только строительство юнита или здания.[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_CANCEL_DEAL</Tag>
@@ -4279,6 +4287,7 @@
         <German>Wollt Ihr diesen Handel wirklich aufkündigen?</German>
         <Italian>Sei sicuro di voler annullare questo affare?</Italian>
         <Spanish>¿Seguro que queréis cancelar este trato?</Spanish>
+        <Russian>Вы уверены, что хотите отменить эту сделку?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_CANCEL_DEAL_YES</Tag>
@@ -4287,6 +4296,7 @@
         <German>Unbedingt! Dieser Handel wird aufgekündigt!</German>
         <Italian>Certamente, annulla l'affare.</Italian>
         <Spanish>Por supuesto, cancelémoslo.</Spanish>
+        <Russian>Конечно, отменить сделку</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_CANCEL_DEAL_NO</Tag>
@@ -4295,6 +4305,7 @@
         <German>Hmmm, vielleicht sollte ich das noch mal überdenken?</German>
         <Italian>Uhm, forse dovremmo ripensarci?</Italian>
         <Spanish>Quizá debamos replanteárnoslo.</Spanish>
+        <Russian>Хммм.. Нет, я передумал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_CANNOT_CANCEL_DEAL</Tag>
@@ -4303,6 +4314,7 @@
         <German>Dieser Handel kann zurzeit nicht aufgekündigt werden.</German>
         <Italian>L'accordo non può essere annullato in questo momento.</Italian>
         <Spanish>Este trato no puede cancelarse ahora mismo.</Spanish>
+        <Russian>В настоящее время эта сделка не может быть отменена.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_PBEM</Tag>
@@ -7148,6 +7160,7 @@
         <German>Handelsgüter</German>
         <Italian>Oggetti commerciabili</Italian>
         <Spanish>Elementos intercambiables</Spanish>
+        <Russian>Предметы торговли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEACE_ERROR</Tag>
@@ -9367,6 +9380,7 @@
         <German>[ICON_BULLET]%d1[ICON_GOLD] von [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET]Ricevi %d1[ICON_GOLD] da [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]Recibir %d1[ICON_GOLD] de [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]Получите %d1[ICON_GOLD] от [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GOLD_TO_PLAYER</Tag>
@@ -9375,6 +9389,7 @@
         <German>[ICON_BULLET]%d1[ICON_GOLD] an [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET]Dai %d1[ICON_GOLD] a [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]Dar %d1[ICON_GOLD] a [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]Передайте %d1[ICON_GOLD] [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GOLD_GAINED</Tag>
@@ -9383,6 +9398,7 @@
         <German>[ICON_BULLET]%d1[ICON_GOLD] erhalten</German>
         <Italian>[ICON_BULLET]Ricevi %d1[ICON_GOLD]</Italian>
         <Spanish>[ICON_BULLET]Recibir %d1[ICON_GOLD]</Spanish>
+        <Russian>[ICON_BULLET]Получите %d1[ICON_GOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GOLD_LOST</Tag>
@@ -10857,6 +10873,7 @@
         <German>[ICON_BULLET]%D1_Bonus%% Stärke</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% di forza</Italian>
         <Spanish>[ICON_BULLET]%D1_Bonus%% a la fuerza</Spanish>
+        <Russian>[ICON_BULLET]%D1_Bonus%% к силе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_PLOT_MOD_VS_TYPE</Tag>
@@ -10873,6 +10890,7 @@
         <German>[ICON_BULLET]%D1_Bonus%% durch Geländefeld-Verteidigung</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% dalla difesa della casella</Italian>
         <Spanish>[ICON_BULLET]%D1_Bonus%% por defensa de la casilla</Spanish>
+        <Russian>[ICON_BULLET]%D1_Bonus%% от бонуса защиты клетки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_PLOT_FORTIFY_MOD</Tag>
@@ -10881,6 +10899,7 @@
         <German>[ICON_BULLET]%D1_Bonus%% durch Einheitenverschanzung</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% per la fortificazione dell'unità</Italian>
         <Spanish>[ICON_BULLET]%D1_Bonus%% por fortificación de unidades</Spanish>
+        <Russian>[ICON_BULLET]%D1_Bonus%% от укрепленного отряда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_PLOT_HILLS_MOD</Tag>
@@ -10889,6 +10908,7 @@
         <German>[ICON_BULLET]%D1_Bonus%% durch Hügel (Einheitenfähigkeit)</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% dalle colline (abilità dell'unità)</Italian>
         <Spanish>[ICON_BULLET]%D1_Bonus%% por colinas (capacidad de unidad)</Spanish>
+        <Russian>[ICON_BULLET]%D1_Bonus%% от холмов (способность)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_PLOT_DOMESTIC_BONUS</Tag>
@@ -10897,6 +10917,8 @@
         <German>[ICON_BULLET]%D1_Bonus%% innerhalb der eigenen Grenzen</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% inside Cultural Borders (abilità dell'unità)</Italian>
         <Spanish>[ICON_BULLET]%D1_Bonus%% inside Cultural Borders (capacidad de unidad)</Spanish>
+        <Russian>[ICON_BULLET]%D1_Bonus%% внутри культурных границ (способность)</Russian>
+<!--        <Russian>[ICON_BULLET]%D1_Bonus%% на своей земле (способность)</Russian>-->
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_PLOT_UNIT_MOD</Tag>
@@ -10905,6 +10927,7 @@
         <German>[ICON_BULLET]%D1_Bonus%% durch %s2_TerrOrFeat (Einheitenfähigkeit)</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% per %s2_TerrOrFeat (abilità dell'unità)</Italian>
         <Spanish>[ICON_BULLET]%D1_Bonus%% por %s2_TerrOrFeat (capacidad de unidad)</Spanish>
+        <Russian>[ICON_BULLET]%D1_Bonus%% от %s2_TerrOrFeat (способность)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_PLOT_RIVER_MOD</Tag>
@@ -10913,6 +10936,7 @@
         <German>[ICON_BULLET]%D1_Bonus%% durch Flussüberquerung</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% per il guado del fiume</Italian>
         <Spanish>[ICON_BULLET]%D1_Bonus%% por cruzar un río</Spanish>
+        <Russian>[ICON_BULLET]%D1_Bonus%% от пересечения реки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_PLOT_AMPHIB_MOD</Tag>
@@ -10921,6 +10945,7 @@
         <German>[ICON_BULLET]%D1_Bonus%% durch Landung von See</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% per l'atterraggio anfibio</Italian>
         <Spanish>[ICON_BULLET]%D1_Bonus%% por desembarco anfibio</Spanish>
+        <Russian>[ICON_BULLET]%D1_Bonus%% от высадки на берег</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_YOU_UNIT_DIED_ATTACKING</Tag>

@@ -193,7 +193,7 @@
         <German>Schatz verkaufen</German>
         <Italian>Vendi tesoro</Italian>
         <Spanish>Vender tesoro</Spanish>
-        <Russian>Продать сокровище</Russian>
+        <Russian>Продать сокровище Королю</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_KING_TRANSPORT_HELP</Tag>
@@ -202,6 +202,7 @@
         <German>König kontaktieren, um diesen Schatz gegen eine Gebühr zu transportieren.</German>
         <Italian>Contatta il re per il trasporto del tesoro, in cambio di un onorario.</Italian>
         <Spanish>Contactar con el rey para que transporte este Tesoro a cambio de una comisión.</Spanish>
+        <Russian>Попросить Короля переправить Сокровище в Европу. Стоимость транспортировки равна ценности Сокровища плюс ставка налога.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_LEARN</Tag>

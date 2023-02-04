@@ -88,6 +88,7 @@
         <Tag>TXT_KEY_PRODUCTION_PERCENT_MODIFIER_CITIZENHELP</Tag>
         <English>Production modifier of %d1_NewVal%% :</English>
         <German>Produktionsmodifikator von %d1_NewVal%% :</German>
+        <Russian>Модификатор производства %d1_NewVal%% :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SLAVE_PRODUCTION_PERCENT_MODIFIER_CITIZENHELP</Tag>
@@ -103,6 +104,7 @@
         <Tag>TXT_KEY_PRODUCTION_PLUS_MODIFIER_CITIZENHELP</Tag>
         <English>Production modifier of %d1_NewVal :</English>
         <German>Produktionsmodifikator von %d1_NewVal :</German>
+        <Russian>Модификатор производства %d1_NewVal :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NATIVES_NOT_WILLING_ALREADY_COLONIST_LEARNING</Tag>

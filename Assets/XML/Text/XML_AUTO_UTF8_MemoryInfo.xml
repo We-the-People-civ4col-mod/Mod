@@ -119,6 +119,7 @@
         <German>"Ihr habt eine völlig überzogene Forderung gestellt!"</German>
         <Italian>"Hai fatto una richiesta arrogante!"</Italian>
         <Spanish>"¡Nos hicisteis una exigencia arrogante!"</Spanish>
+        <Russian>"Вы выдвинули высокомерное требование!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_MADE_DEMAND_RECENT</Tag>
@@ -127,6 +128,7 @@
         <German>"Ihr habt kürzlich eine völlig überzogene Forderung gestellt!"</German>
         <Italian>"Recentemente hai fatto una richiesta arrogante!"</Italian>
         <Spanish>"¡Hace poco nos hicisteis una exigencia arrogante!"</Spanish>
+        <Russian>"Недавно вы выдвигали наглые требования!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_MISSIONARY_FAIL</Tag>

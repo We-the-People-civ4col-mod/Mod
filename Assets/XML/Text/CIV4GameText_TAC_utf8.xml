@@ -1741,6 +1741,7 @@
         <English>Select destination</English>
         <French>Assigner la destination</French>
         <German>Zielsiedlung wählen</German>
+        <Russian>Выберите пункт назначения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_GOTO_MENU_SELECTION</Tag>
@@ -1755,6 +1756,7 @@
         <English>Select destination in the [COLOR_HIGHLIGHT_TEXT]New World[COLOR_REVERT]</English>
         <French>Cap sur le [COLOR_HIGHLIGHT_TEXT]Nouveau Monde[COLOR_REVERT]</French>
         <German>Reiseziel in der [COLOR_HIGHLIGHT_TEXT]Neuen Welt[COLOR_REVERT] auswählen</German>
+        <Russian>Выберите, куда плыть в [COLOR_HIGHLIGHT_TEXT]Новом мире[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_PREVIEW_MODE</Tag>
@@ -1767,12 +1769,14 @@
         <English>[COLOR_REVERT]Crossing the Atlantic</English>
         <French>Atlantique</French>
         <German>[COLOR_REVERT]Überquert den Atlantik</German>
+        <Russian>[COLOR_REVERT]Пересекает Атлантику</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_SAIL_WEST</Tag>
         <English>[COLOR_REVERT]Rounding Cape Horn to the Pacific</English>
         <French>Pacifique</French>
         <German>[COLOR_REVERT]Umrundet Kap Hoorn in Richtung Pazifik</German>
+        <Russian>[COLOR_REVERT]Огибает мыс Горн в сторону Тихого океана</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_ROUTE</Tag>
@@ -1809,12 +1813,14 @@
         <English>New World - [COLOR_HIGHLIGHT_TEXT]crossing the Atlantic[COLOR_REVERT]</English>
         <French>Nouveau monde - [COLOR_HIGHLIGHT_TEXT]Atlantique[COLOR_REVERT]</French>
         <German>Neue Welt - [COLOR_HIGHLIGHT_TEXT]überquert den Atlantik[COLOR_REVERT]</German>
+        <Russian>Новый мир - [COLOR_HIGHLIGHT_TEXT]пересекает Атлантику[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_SAIL_WEST_MESSAGE</Tag>
         <English>New World - [COLOR_HIGHLIGHT_TEXT]rounding Cape Horn[COLOR_REVERT]</English>
         <French>Nouveau monde - [COLOR_HIGHLIGHT_TEXT]Pacifique[COLOR_REVERT]</French>
         <German>Neue Welt - [COLOR_HIGHLIGHT_TEXT]umrundet Kap Hoorn[COLOR_REVERT]</German>
+        <Russian>Новый мир - [COLOR_HIGHLIGHT_TEXT]огибает мыс Горн[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SAIL_EAST</Tag>

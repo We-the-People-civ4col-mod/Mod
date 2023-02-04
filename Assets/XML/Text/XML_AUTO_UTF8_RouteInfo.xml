@@ -7,6 +7,7 @@
         <German>Landstraße</German>
         <Italian>Country Road</Italian>
         <Spanish>Country Road</Spanish>
+        <Russian>Гравийная дорога</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ROUTE_RAILROAD</Tag>
@@ -15,6 +16,7 @@
         <German>gepflasterte Landstraße</German>
         <Italian>Plastered Country Road</Italian>
         <Spanish>Plastered Country Road</Spanish>
+        <Russian>Вымощенная камнем дорога</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ROUTE_ROAD</Tag>
@@ -39,5 +41,6 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Дорога</Russian>
     </TEXT>
 </Civ4GameText>

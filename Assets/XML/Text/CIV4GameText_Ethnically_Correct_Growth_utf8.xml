@@ -9,45 +9,54 @@
         <Tag>TXT_KEY_ETHNICITY_EUROPEAN</Tag>
         <English>[ICON_BULLET]Ethnicity: [COLOR_HIGHLIGHT_TEXT]European[COLOR_REVERT]</English>
         <German>[ICON_BULLET]Abstammung: [COLOR_HIGHLIGHT_TEXT]Europäisch[COLOR_REVERT]</German>
+        <Russian>[ICON_BULLET]Этнос: [COLOR_HIGHLIGHT_TEXT]Европеец[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ETHNICITY_INDIO</Tag>
         <English>[ICON_BULLET]Ethnicity: [COLOR_HIGHLIGHT_TEXT]Native[COLOR_REVERT]</English>
         <German>[ICON_BULLET]Abstammung: [COLOR_HIGHLIGHT_TEXT]Indio[COLOR_REVERT]</German>
+        <Russian>[ICON_BULLET]Этнос: [COLOR_HIGHLIGHT_TEXT]Индеец[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ETHNICITY_AFRICAN</Tag>
         <English>[ICON_BULLET]Ethnicity: [COLOR_HIGHLIGHT_TEXT]African[COLOR_REVERT]</English>
         <German>[ICON_BULLET]Abstammung: [COLOR_HIGHLIGHT_TEXT]Afrikanisch[COLOR_REVERT]</German>
+        <Russian>[ICON_BULLET]Этнос: [COLOR_HIGHLIGHT_TEXT]Африканец[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ETHNICITY_MESTIZZO</Tag>
         <English>[ICON_BULLET]Ethnicity: [COLOR_HIGHLIGHT_TEXT]Mestizo[COLOR_REVERT]</English>
         <German>[ICON_BULLET]Abstammung: [COLOR_HIGHLIGHT_TEXT]Mestizzo[COLOR_REVERT]</German>
+        <Russian>[ICON_BULLET]Этнос: [COLOR_HIGHLIGHT_TEXT]Метис[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ETHNICITY_MULATTO</Tag>
         <English>[ICON_BULLET]Ethnicity: [COLOR_HIGHLIGHT_TEXT]Mulatto[COLOR_REVERT]</English>
         <German>[ICON_BULLET]Abstammung: [COLOR_HIGHLIGHT_TEXT]Mulatto[COLOR_REVERT]</German>
+        <Russian>[ICON_BULLET]Этнос: [COLOR_HIGHLIGHT_TEXT]Мулат[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITIZEN_STATUS_FREE</Tag>
         <English>[ICON_BULLET]Citizen Status: [COLOR_HIGHLIGHT_TEXT]Free Citizen[COLOR_REVERT]</English>
         <German>[ICON_BULLET]Bürgerstatus: [COLOR_HIGHLIGHT_TEXT]Freier Bürger[COLOR_REVERT]</German>
+        <Russian>[ICON_BULLET]Гражданский статус: [COLOR_HIGHLIGHT_TEXT]Свободный гражданин[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITIZEN_STATUS_INDENTURED</Tag>
         <English>[ICON_BULLET]Citizen Status: [COLOR_HIGHLIGHT_TEXT]Indentured Worker[COLOR_REVERT]</English>
         <German>[ICON_BULLET]Bürgerstatus: [COLOR_HIGHLIGHT_TEXT]Verpflichteter Arbeiter[COLOR_REVERT]</German>
+        <Russian>[ICON_BULLET]Гражданский статус: [COLOR_HIGHLIGHT_TEXT]Наемный работник[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITIZEN_STATUS_ENSLAVED</Tag>
         <English>[ICON_BULLET]Citizen Status: [COLOR_HIGHLIGHT_TEXT]Enslaved Worker[COLOR_REVERT]</English>
         <German>[ICON_BULLET]Bürgerstatus: [COLOR_HIGHLIGHT_TEXT]Enslaved Worker[COLOR_REVERT]</German>
+        <Russian>[ICON_BULLET]Гражданский статус: [COLOR_HIGHLIGHT_TEXT]Порабощенный работник[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITIZEN_STATUS_ELITE</Tag>
         <English>[ICON_BULLET]Citizen Status: [COLOR_HIGHLIGHT_TEXT]Privileged[COLOR_REVERT]</English>
         <German>[ICON_BULLET]Bürgerstatus: [COLOR_HIGHLIGHT_TEXT]Priviligiert[COLOR_REVERT]</German>
+        <Russian>[ICON_BULLET]Гражданский статус: [COLOR_HIGHLIGHT_TEXT]Привилегированный[COLOR_REVERT]</Russian>
     </TEXT>
 </Civ4GameText>
