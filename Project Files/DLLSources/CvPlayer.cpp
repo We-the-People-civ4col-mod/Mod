@@ -7093,7 +7093,7 @@ void CvPlayer::processFatherOnce(FatherTypes eFather)
 			for (CvCity* pPortCity = firstCity(&iLoopWater); pPortCity != NULL && pPortPlot == NULL; pPortCity = nextCity(&iLoopWater))
 			{
 				CvPlot* pPortCityPlot = pPortCity->plot();
-				if (pPortCity->isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()) && pPortCityPlot->isEuropeAccessable())
+				if (pPortCity->isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()) && pPortCityPlot->isEuropeAccessable() && pPortCityPlot->hasDeepWaterCoast())
 				{
 					pPortPlot = pPortCityPlot;
 				}
