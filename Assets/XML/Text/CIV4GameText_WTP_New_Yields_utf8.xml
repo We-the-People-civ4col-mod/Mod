@@ -1993,7 +1993,7 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_KAUTSCHUK</Tag>
-        <English>Kautschuk</English>
+        <English>Rubber</English>
         <French>Caoutchouc</French>
         <German>
             <Text>Kautschuk</Text>
@@ -2004,7 +2004,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_KAUTSCHUK</Tag>
-        <English>Kautschuk</English>
+        <English>Rubber</English>
         <French>Caoutchouc</French>
         <German>
             <Text>Kautschuk</Text>
@@ -2015,7 +2015,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_KAUTSCHUK_PEDIA</Tag>
-        <English>[TAB][H1]Kautschuk[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rubber[COLOR_REVERT] can be collected in [LINK=TERRAIN_JUNGLE]jungle[\LINK] terrain. To make colonists produce rubber, assign them to the [LINK=PROFESSION_KAUTSCHUK_COLLECTOR]rubber collector[\LINK] profession.[NEWLINE]Rubber production is highest on plots bearing the [LINK=BONUS_KAUTSCHUK]rubber[\LINK] bonus, and can be increased by employing [LINK=UNIT_KAUTSCHUK_COLLECTOR]expert rubber collectors[\LINK]. These experts can be trained in Native villages or hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rubber[COLOR_REVERT] is harvested by making incisions in the bark of rubber trees. The latex is heated to create rubber that can be dried into waterproof sheets, along with other industrial products. Rubber has a large stretch ratio, high resilience and is also waterproof. It's classified as an elastomer.</English>
+        <English>[TAB][H1]Rubber[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rubber[COLOR_REVERT] can be collected in [LINK=TERRAIN_JUNGLE]jungle[\LINK] terrain. To make colonists produce rubber, assign them to the [LINK=PROFESSION_KAUTSCHUK_COLLECTOR]rubber collector[\LINK] profession.[NEWLINE]Rubber production is highest on plots bearing the [LINK=BONUS_KAUTSCHUK]rubber[\LINK] bonus, and can be increased by employing [LINK=UNIT_KAUTSCHUK_COLLECTOR]expert rubber collectors[\LINK]. These experts can be trained in Native villages or hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rubber[COLOR_REVERT] is harvested by making incisions in the bark of rubber trees. The latex is heated to create rubber that can be dried into waterproof sheets, along with other industrial products. Rubber has a large stretch ratio, high resilience and is also waterproof. It's classified as an elastomer.</English>
         <German>[TAB][H1]Kautschuk[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
