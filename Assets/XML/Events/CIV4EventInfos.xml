@@ -29441,7 +29441,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_SUGAR</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>4000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -29766,7 +29766,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_TOBACCO</iGenericParameter2>
-			<iGenericParameter3>2000</iGenericParameter3>
+			<iGenericParameter3>4000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -30091,7 +30091,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_ORE</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>4000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -30416,7 +30416,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_STONE</iGenericParameter2>
-			<iGenericParameter3>2000</iGenericParameter3>
+			<iGenericParameter3>3000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -30807,7 +30807,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_HEMP</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>4000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -31066,7 +31066,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_SHEEP</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>2000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -31457,7 +31457,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_CATTLE</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>2000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -32889,7 +32889,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_FUR</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>4000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -33280,7 +33280,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_COFFEE_BERRIES</iGenericParameter2>
-			<iGenericParameter3>2000</iGenericParameter3>
+			<iGenericParameter3>3000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -33605,7 +33605,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_WOOL</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>2000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -34321,7 +34321,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_HIDES</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>4000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -34646,7 +34646,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_PREMIUM_FUR</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>3000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -34971,7 +34971,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_RAW_SALT</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>4000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -35296,7 +35296,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_RED_PEPPER</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>3000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -35621,7 +35621,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_BARLEY</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>3000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -36271,7 +36271,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_GRAPES</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>3000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -36789,7 +36789,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_VALUABLE_WOOD</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>3000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -37307,7 +37307,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_SAILCLOTH</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>2000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -37698,7 +37698,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_TOOLS</iGenericParameter2>
-			<iGenericParameter3>3000</iGenericParameter3>
+			<iGenericParameter3>2000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -38089,7 +38089,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_BLADES</iGenericParameter2>
-			<iGenericParameter3>3000</iGenericParameter3>
+			<iGenericParameter3>2000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -38480,7 +38480,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_CANNONS</iGenericParameter2>
-			<iGenericParameter3>3000</iGenericParameter3>
+			<iGenericParameter3>2000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -38871,7 +38871,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_MUSKETS</iGenericParameter2>
-			<iGenericParameter3>3000</iGenericParameter3>
+			<iGenericParameter3>2000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -39262,7 +39262,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_ROPE</iGenericParameter2>
-			<iGenericParameter3>3000</iGenericParameter3>
+			<iGenericParameter3>2000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -40237,7 +40237,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_CIGARS</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>3000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -40562,7 +40562,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_COFFEE</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>3000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -40887,7 +40887,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_COCOA</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>3000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -41537,7 +41537,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_WOOL_CLOTH</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>3000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -41862,7 +41862,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_CLOTH</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>3000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -42187,7 +42187,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_COLOURED_CLOTH</iGenericParameter2>
-			<iGenericParameter3>4000</iGenericParameter3>
+			<iGenericParameter3>3000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -42512,7 +42512,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_LEATHER</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>3000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -42837,7 +42837,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_COATS</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>3000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -43162,7 +43162,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_PREMIUM_COATS</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>3000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -43487,7 +43487,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_SPICES</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>3000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -43812,7 +43812,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_FURNITURE</iGenericParameter2>
-			<iGenericParameter3>4000</iGenericParameter3>
+			<iGenericParameter3>3000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -44462,7 +44462,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_WINE</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>3000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -45112,7 +45112,7 @@
 			<iAIValue>800</iAIValue>
 			<iGenericParameter1>100</iGenericParameter1>
 			<iGenericParameter2>YIELD_BEER</iGenericParameter2>
-			<iGenericParameter3>5000</iGenericParameter3>
+			<iGenericParameter3>3000</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
