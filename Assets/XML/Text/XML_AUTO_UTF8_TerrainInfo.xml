@@ -150,7 +150,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_SHRUBLAND_PEDIA</Tag>
-        <English>[TAB]Shrubland</English>
+        <English>[TAB]Shrubland suits a variety of yields. Food, cassava, cochineal, pigs, chickens, red peppers, grapes, clay, coca, olives, yerba leaves and sheep may all be found there. Along shrubland rivers there could be goats, ore, silver, gold or gems.</English>
         <German>[TAB]Buschland</German>
     </TEXT>
     <TEXT>
@@ -289,7 +289,7 @@
         <Russian>Прерии</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_TERRAIN_PLAINS_PEDIA</Tag>
+        <Tag>TXT_KEY_TERRAIN_PRAIRIE_PEDIA</Tag>
         <English>Prairies are ecosystems considered part of the temperate grasslands, savannas, and shrublands biome by ecologists, based on similar temperate climates, moderate rainfall, and a composition of grasses, herbs, and shrubs, rather than trees, as the dominant vegetation type. Temperate grassland regions include the Pampas of Argentina, Brazil and Uruguay as well as the steppes of Eurasia. Lands referred to as "prairie" tend to be in North America. The term encompasses the area referred to as the Interior Lowlands of the United States, Canada and Mexico, which includes all of the Great Plains as well as the wetter, somewhat hillier land to the east. In the U.S., the area is constituted by most or all of the states of North Dakota, South Dakota, Nebraska, Kansas, and Oklahoma, and sizable parts of the states of Montana, Wyoming, Colorado, New Mexico, Texas, Missouri, Iowa, Illinois, Indiana, Wisconsin, and western and southern Minnesota. The Central Valley of California is also a prairie. The Canadian Prairies extend across vast areas of Manitoba, Saskatchewan and Alberta.</English>
         <French>La Prairie (anglais : Tallgrass Prairie) occupe les Grandes Plaines entre les Appalaches et les Montagnes Rocheuses. Cette écorégion à prairie de zone tempérée est constituée d'une flore herbeuse de graminées, de composées et de légumineuses. Son nom lui vient des explorateurs français et n'a pas été anglicisé. Elle est l'équivalent de la steppe en Eurasie et de la pampa en Amérique du Sud. Aux États-Unis et au Canada, on fait parfois la distinction entre la végétation de taille basse des Hautes Plaines à l'ouest du 104e méridien terrestre et la végétation de taille moyenne et haute de l'est (depuis le sud du Manitoba jusqu'au centre du Texas). Lorsque cette distinction est faite, il est habituel de limiter le mot "prairie" aux zones de végétation moyenne à haute. La plus grande partie de ce territoire a été convertie en zone cultivée au cours des deux cents dernières années.</French>
         <German>Als Prärie bezeichnet man ein Gebiet, das von Gräsern und Sträuchen dominiert wird, aber durch relativ hohe Temperaturen und vergleichsweise niedrige Niederschläge keinen starken Pflanzenbewuchs, wie beispielsweise die Savanne, aufweist.</German>
@@ -461,7 +461,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_LAKE</Tag>
-        <English>Fresh Water Lake</English>
+        <English>Lake</English>
         <French>Lac d'eau douce</French>
         <German>Süßwassersee</German>
         <Italian>Lago d'acqua dolce</Italian>
