@@ -3605,8 +3605,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_8</Tag>
-		<English>Well, well! Our request to lower the selling price has been heard!</English>
-		<German>Sieh an, sieh an! Unsere Bitte auf Senkung des Verkaufspreises wurde erhört!</German>
+		<English>Well, well! Our request to lower the selling price have been heard!</English>
+		<German>Sieh an, sieh an! Unsere Bitte um Senkung des Verkaufspreises wurde erhört!</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_9</Tag>
@@ -3625,8 +3625,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_12</Tag>
-		<English>For the Glory and Wealth of our colonies! Higher sale prices are always welcome!</English>
-		<German>Für Ruhm und Reichtum unserer Kolonien! Höhere Verkaufspreise sind immer willkommen!</German>
+		<English>Brave fighters are essential to protect our borders!</English>
+		<German>Tapfere Kämpfer sind für den Schutz unserer Grenzen unabdingbar!</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_13</Tag>
@@ -5397,6 +5397,116 @@
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_KAUTSCHUK_DONE</Tag>
 		<English>We are now the leader trading [COLOR_FONT_GOLD]rubber[COLOR_REVERT] from Europe.</English>
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COAL_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]coal[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Kohle[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COAL_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]coal[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Kohle[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COAL_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]coal[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Kohle[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_COAL_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]coal[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Kohle[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COAL_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]coal[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Kohle[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CHAR_COAL_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]char coal[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Holzkohle[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CHAR_COAL_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]char coal[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Holzkohle[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CHAR_COAL_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]char coal[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Holzkohle[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_CHAR_COAL_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]char coal[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Holzkohle[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CHAR_COAL_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]char coal[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Holzkohle[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_BAKERY_GOODS_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]bakery goods[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_BAKERY_GOODS_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]bakery goods[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_BAKERY_GOODS_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]bakery goods[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_BAKERY_GOODS_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]bakery goods[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_BAKERY_GOODS_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]bakery goods[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_5</Tag>
+		<English>For the Glory and Wealth of our colonies! Higher sale prices are always welcome!</English>
+		<German>Für Ruhm und Reichtum unserer Kolonien! Höhere Verkaufspreise sind immer willkommen!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_BLACK_POWDER_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]black powder[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]black powder[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_BLACK_POWDER_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]black powder[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_BLACK_POWDER_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]black powder[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]black powder[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_6</Tag>
+		<English>For the Glory and Wealth of our colonies! Higher sale prices are always welcome!</English>
+		<German>Für Ruhm und Reichtum unserer Kolonien! Höhere Verkaufspreise sind immer willkommen!</German>
 	</TEXT>
 	<TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLADES_START</Tag>
