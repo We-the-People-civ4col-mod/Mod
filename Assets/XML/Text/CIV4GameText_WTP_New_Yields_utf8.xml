@@ -5,7 +5,7 @@
 <!-- -->
 <!-- Game Text Infos -->
 <Civ4GameText xmlns="http://www.firaxis.com">
-	<!-- GOATS -->
+    <!-- GOATS -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_GOATS</Tag>
         <English>Goats</English>
@@ -15,6 +15,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Capre</Italian>
+        <Spanish>Cabras</Spanish>
         <Russian>Козы</Russian>
     </TEXT>
     <TEXT>
@@ -26,6 +28,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Capre</Italian>
+        <Spanish>Cabras</Spanish>
         <Russian>Козы</Russian>
     </TEXT>
     <TEXT>
@@ -37,12 +41,18 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Capre</Italian>
+        <Spanish>Cabras</Spanish>
         <Russian>Козы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_GOATS_PEDIA</Tag>
-        <English>[TAB][H1]Goats[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Goats[COLOR_REVERT] can be raised on flatlands on [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain. To make a colonist herd goats, assign him to the [LINK=PROFESSION_GOATHERD]goatherd[\LINK] profession.[NEWLINE]Goat production is highest on plots bearing the [LINK=BONUS_GOAT]goat[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_RANCH]ranches[\LINK] on goat-producing plots and employing [LINK=UNIT_GOATHERD]expert goatherds[\LINK]. These experts can be trained in Native villages or hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Goats will eat vegetation that most other domesticated livestock decline, so they can subsist on very poor land. The number of animals that a goat farmer can sustain depends on the quality of the pasture. A poor man with poor land can still raise goats.[NEWLINE]Perhaps because of their adaptability, goats have become a symbol of evil. Witches are said to cavort with goats. Satan has goat horns.</English>
-        <German>[TAB][H1]Ziegen[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <English>[TAB][H1]Goats[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Goats[COLOR_REVERT] can be raised on flatlands on [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain. To make a colonist herd goats, assign him to the [LINK=PROFESSION_GOATHERD]goatherd[\LINK] profession.[NEWLINE]Goat production is highest on plots bearing the [LINK=BONUS_GOAT]goat[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_RANCH]ranches[\LINK] on goat-producing plots and employing [LINK=UNIT_HERDER]expert herders[\LINK]. These experts can be trained in Native villages or hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Goats will eat vegetation that most other domesticated livestock decline, so they can subsist on very poor land. The number of animals that a goat farmer can sustain depends on the quality of the pasture. A poor man with poor land can still raise goats.[NEWLINE]Perhaps because of their adaptability, goats have become a symbol of evil. Witches are said to cavort with goats. Satan has goat horns.</English>
+        <French>[TAB][H1]Chèvres[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]Les chèvres mangent des végétaux que la plupart des autres animaux domestiques refusent, ce qui leur permet de subsister sur des terres très pauvres. Le nombre d'animaux qu'un éleveur de chèvres peut faire vivre dépend de la qualité du pâturage. Un homme pauvre disposant d'une terre pauvre peut tout de même élever des chèvres.[NEWLINE]Peut-être en raison de leur adaptabilité, les chèvres sont devenues un symbole du mal. On dit que les sorcières se promènent avec des chèvres. Satan a des cornes de chèvre.</French>
+        <German>[TAB][H1]Ziegen[\H1][PARAGRAPH:2][BOLD]Strategie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][NEWLINE]Ziegen fressen Pflanzen, die von den meisten anderen Haustieren verschmäht werden, so dass sie auch auf sehr kargen Böden überleben können. Die Anzahl der Tiere, die ein Ziegenhalter halten kann, hängt von der Qualität der Weide ab. Ein armer Mann mit schlechtem Land kann immer noch Ziegen züchten.[NEWLINE]Vielleicht ist die Ziege wegen ihrer Anpassungsfähigkeit zu einem Symbol des Bösen geworden. Man sagt, dass sich Hexen mit Ziegen tummeln. Satan hat Ziegenhörner.</German>
+        <Italian>[TAB][H1]Capre[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]Le capre mangiano la vegetazione che la maggior parte degli altri animali domestici rifiuta, per cui possono sopravvivere anche su terreni molto poveri. Il numero di animali che un allevatore di capre può mantenere dipende dalla qualità del pascolo. Un uomo povero con terreni poveri può comunque allevare capre.[NEWLINE]Forse per la loro adattabilità, le capre sono diventate un simbolo del male. Si dice che le streghe cavalchino con le capre. Satana ha corna di capra.</Italian>
+        <Spanish>[TAB][H1]Cabras[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]Las cabras comen vegetación que la mayoría del resto del ganado doméstico rechaza, por lo que pueden subsistir en tierras muy pobres. El número de animales que puede mantener un criador de cabras depende de la calidad de los pastos. Un hombre pobre con tierras pobres puede criar cabras.[NEWLINE]Quizá por su adaptabilidad, las cabras se han convertido en un símbolo del mal. Se dice que las brujas retozan con cabras. Satán tiene cuernos de cabra.</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GOATS_PEDIA</Tag>
@@ -52,7 +62,7 @@
         <Tag>TXT_KEY_UNIT_SHEEP_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- PIGS -->
+    <!-- PIGS -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIGS</Tag>
         <English>Pigs</English>
@@ -62,9 +72,11 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Maiali</Italian>
+        <Spanish>Cerdos</Spanish>
         <Russian>Свиньи</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PIGS</Tag>
         <English>Pigs</English>
         <French>Porcs</French>
@@ -73,6 +85,8 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Maiali</Italian>
+        <Spanish>Cerdos</Spanish>
         <Russian>Свиньи</Russian>
     </TEXT>
     <TEXT>
@@ -84,12 +98,18 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Maiali</Italian>
+        <Spanish>Cerdos</Spanish>
         <Russian>Свиньи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIGS_PEDIA</Tag>
-        <English>[TAB][H1]Pigs[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT] can be raised on flatlands on [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain. To make a colonist raise pigs, assign him to the [LINK=PROFESSION_PIG_FARMER]pig farmer[\LINK] profession.[NEWLINE]Pig production is highest on plots bearing the [LINK=BONUS_PIG]pig[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_RANCH]ranches[\LINK] on pig-producing plots and employing [LINK=UNIT_GOATHERD]expert pig farmers[\LINK]. These experts can be trained in Native villages or hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Historically a few pigs would be kept near the owner's residence. They could be tethered in a simple shelter or kept in a pen outside the owner's house.[NEWLINE]Hog farming is when pigs are bred on a domestic or industrial scale. Pigs are raised for food and skins.[NEWLINE]They're valued for their ability to convert inedible food into meat and manure, and can be fed household food waste. On a large scale pigs are one way to dispose of municipal garbage.</English>
-        <German>[TAB][H1]Schweine[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <English>[TAB][H1]Pigs[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT] can be raised on flatlands on [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain. To make a colonist raise pigs, assign him to the [LINK=PROFESSION_PIG_BREEDER]pig breeder[\LINK] profession.[NEWLINE]Pig production is highest on plots bearing the [LINK=BONUS_PIG]pig[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_RANCH]ranches[\LINK] on pig-producing plots and employing [LINK=UNIT_HERDER]expert herders[\LINK]. These experts can be trained in Native villages or hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Historically a few pigs would be kept near the owner's residence. They could be tethered in a simple shelter or kept in a pen outside the owner's house.[NEWLINE]Hog farming is when pigs are bred on a domestic or industrial scale. Pigs are raised for food and skins.[NEWLINE]They're valued for their ability to convert inedible food into meat and manure, and can be fed household food waste. On a large scale pigs are one way to dispose of municipal garbage.</English>
+        <French>Historiquement, quelques porcs étaient élevés près de la résidence du propriétaire, ou dans le même village ou la même ville. Ils peuvent être attachés dans un simple abri ou gardés dans un enclos à l'extérieur de la maison du propriétaire.[NEWLINE]Les porcs sont élevés pour la nourriture et les peaux. Ils sont appréciés pour leur capacité à transformer les aliments non comestibles en viande et en fumier, et peuvent être nourris avec des déchets alimentaires ménagers. À grande échelle, les porcs sont un moyen d'éliminer les déchets municipaux.</French>
+        <German>[TAB][H1]Schweine[\H1][PARAGRAPH:2][BOLD]Strategie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][NEWLINE]Früher wurden einige wenige Schweine in der Nähe des Wohnsitzes des Besitzers oder im selben Dorf oder Stadt gehalten. Die Schweine können in einem einfachen Stall angebunden oder in einem Pferch vor dem Haus des Besitzers gehalten werden.[NEWLINE]Schweine werden als Nahrungsmittel und zum Häuten gezüchtet. Sie werden wegen ihrer Fähigkeit geschätzt, ungenießbare Lebensmittel in Fleisch und Dung zu verwandeln, und können mit Lebensmittelabfällen aus dem Haushalt gefüttert werden. In großem Maßstab sind Schweine eine Möglichkeit, kommunale Abfälle zu entsorgen.</German>
+        <Italian>Storicamente, alcuni maiali venivano allevati vicino alla residenza del proprietario, o nello stesso villaggio o città. Possono essere legati in un semplice ricovero o tenuti in un recinto fuori dalla casa del proprietario.[NEWLINE]I maiali sono allevati per il cibo e le pelli. Sono apprezzati per la loro capacità di convertire il cibo non commestibile in carne e letame e possono essere alimentati con rifiuti alimentari domestici. Su larga scala, i maiali sono un modo per smaltire i rifiuti urbani.</Italian>
+        <Spanish>Históricamente se criaban unos cuantos cerdos cerca de la residencia del propietario, o en el mismo pueblo o ciudad. Los cerdos se crían para obtener alimentos y pieles.[NEWLINE]Se valoran por su capacidad para convertir alimentos no comestibles en carne y estiércol, y pueden alimentarse con residuos de comida doméstica. A gran escala, los cerdos son una forma de eliminar la basura municipal.</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PIGS_PEDIA</Tag>
@@ -99,7 +119,7 @@
         <Tag>TXT_KEY_UNIT_PIGS_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- CHICKEN -->
+    <!-- CHICKEN -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHICKEN</Tag>
         <English>Chickens</English>
@@ -109,9 +129,11 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Galline</Italian>
+        <Spanish>Gallinas</Spanish>
         <Russian>Куры</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CHICKEN</Tag>
         <English>Chickens</English>
         <French>Poules</French>
@@ -120,6 +142,8 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Galline</Italian>
+        <Spanish>Gallinas</Spanish>
         <Russian>Куры</Russian>
     </TEXT>
     <TEXT>
@@ -131,12 +155,18 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Galline</Italian>
+        <Spanish>Gallinas</Spanish>
         <Russian>Куры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHICKEN_PEDIA</Tag>
-        <English>[TAB][H1]Chicken[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Chickens[COLOR_REVERT] can be raised on flatlands on [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain. To make a colonist raise chickens, assign him to the [LINK=PROFESSION_CHICKEN_FARMER]chicken farmer[\LINK] profession.[NEWLINE]Chicken production is highest on plots bearing the [LINK=BONUS_CHICKEN]chicken[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_RANCH]ranches[\LINK] on chicken-producing plots and employing [LINK=UNIT_CHICKEN_FARMER]expert chicken farmers[\LINK]. These experts can be trained in Native villages or hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Free-range poultry farming allows chickens to roam during the day, although they are usually confined in coops at night to protect them from predators. They're also kept indoors when the weather is bad.</English>
-        <German>[TAB][H1]Hühner[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <English>[TAB][H1]Chicken[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Chickens[COLOR_REVERT] can be raised on flatlands on [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain. To make a colonist raise chickens, assign him to the [LINK=PROFESSION_CHICKEN_BREEDER]chicken breeder[\LINK] profession.[NEWLINE]Chicken production is highest on plots bearing the [LINK=BONUS_CHICKEN]chicken[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_RANCH]ranches[\LINK] on chicken-producing plots and employing [LINK=UNIT_BREEDER]expert poultry breeders[\LINK]. These experts can be trained in Native villages or hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Free-range poultry farming allows chickens to roam during the day, although they are usually confined in coops at night to protect them from predators. They're also kept indoors when the weather is bad.</English>
+        <French>L'élevage de volailles en liberté permet aux poulets de se déplacer pendant la journée, bien qu'ils soient généralement confinés dans des cages la nuit pour les protéger des prédateurs.</French>
+        <German>[TAB][H1]Hühner[\H1][PARAGRAPH:2][BOLD]Strategie :[\BOLD][NEWLINE]TODO, anderen Yield Eintrag als Beispiel nehmen[PARAGRAPH:2][BOLD]In der Freilandhaltung können sich die Hühner tagsüber frei bewegen, während sie nachts zum Schutz vor Raubtieren normalerweise in Ställen eingesperrt sind.</German>
+        <Italian>L'allevamento all'aperto consente alle galline di razzolare durante il giorno, anche se di notte sono generalmente confinate in pollai per proteggerle dai predatori.</Italian>
+        <Spanish>La avicultura al aire libre permite a las gallinas deambular durante el día, aunque suelen estar confinadas en gallineros por la noche para protegerlas de los depredadores.</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHICKEN_PEDIA</Tag>
@@ -146,7 +176,7 @@
         <Tag>TXT_KEY_UNIT_CHICKEN_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- GEESE -->
+    <!-- GEESE -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_GEESE</Tag>
         <English>Domestic Geese</English>
@@ -156,9 +186,11 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Oche</Italian>
+        <Spanish>Gansos</Spanish>
         <Russian>Гуси</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_GEESE</Tag>
         <English>Domestic Geese</English>
         <French>Oies</French>
@@ -167,6 +199,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Oche</Italian>
+        <Spanish>Gansos</Spanish>
         <Russian>Гуси</Russian>
     </TEXT>
     <TEXT>
@@ -178,12 +212,18 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Oche</Italian>
+        <Spanish>Gansos</Spanish>
         <Russian>Гуси</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_GEESE_PEDIA</Tag>
-        <English>[TAB][H1]Domestic Geese[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Geese[COLOR_REVERT] can be raised on flatlands on [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain. To make a colonist raise geese, assign him to the [LINK=PROFESSION_GOOSE_FARMER]goose farmer[\LINK] profession.[NEWLINE]Goose production is highest on plots bearing the [LINK=BONUS_GOOSE]goose[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_RANCH]ranches[\LINK] on goose-producing plots and employing [LINK=UNIT_GOOSE_FARMER]expert goose farmers[\LINK]. These experts can be trained in Native villages or hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Geese are the fastest growers among domestic birds. They're hardy and disease free when given constant care. Geese can be brought up on green pasture, which lowers production cost substantially.</English>
-        <German>[TAB][H1]Hausgänse[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <English>[TAB][H1]Domestic Geese[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Geese[COLOR_REVERT] can be raised on flatlands on [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain. To make a colonist raise geese, assign him to the [LINK=PROFESSION_GEESE_BREEDER]geese breeder[\LINK] profession.[NEWLINE]Goose production is highest on plots bearing the [LINK=BONUS_GOOSE]goose[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_RANCH]ranches[\LINK] on goose-producing plots and employing [LINK=UNIT_BREEDER]expert poultry breeders[\LINK]. These experts can be trained in Native villages or hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Geese are the fastest growers among domestic birds. They're hardy and disease free when given constant care. Geese can be brought up on green pasture, which lowers production cost substantially.</English>
+        <French>Les oies ont la croissance la plus rapide parmi les oiseaux domestiques. Elles sont rustiques et exemptes de maladies lorsqu'elles reçoivent des soins constants. Les oies peuvent être élevées sur des pâturages verts, ce qui réduit considérablement les coûts de production.</French>
+        <German>[TAB][H1]Hausgänse[\H1][PARAGRAPH:2][BOLD]Strategie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][NEWLINE]Gänse sind unter den Hausvögeln die am schnellsten wachsenden Tiere. Sie sind widerstandsfähig und bei ständiger Pflege frei von Krankheiten. Gänse können auf grünen Weiden aufgezogen werden, was die Produktionskosten erheblich senkt.</German>
+        <Italian>Le oche sono gli uccelli domestici che crescono più rapidamente. Sono resistenti e prive di malattie se sottoposte a cure costanti. Le oche possono essere allevate su pascoli verdi, il che riduce notevolmente i costi di produzione.</Italian>
+        <Spanish>Los gansos son las aves domésticas que crecen más rápido. Son resistentes y no padecen enfermedades cuando se les proporcionan cuidados constantes. Los gansos pueden criarse en pastos verdes, lo que reduce considerablemente los costes de producción.</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GEESE_PEDIA</Tag>
@@ -193,44 +233,54 @@
         <Tag>TXT_KEY_UNIT_GEESE_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- GOAT_HIDES -->
+    <!-- GOAT_HIDES -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_GOAT_HIDES</Tag>
-        <English>Goat Hides</English>
+        <English>Goatskins</English>
         <French>Peaux de chèvres</French>
         <German>
             <Text>Ziegenfelle</Text>
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Pelli di capra</Italian>
+        <Spanish>Pieles de cabra</Spanish>
         <Russian>Козьи шкуры</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_GOAT_HIDES</Tag>
-        <English>Goat Hides</English>
+        <English>Goatskins</English>
         <French>Peaux de chèvres</French>
         <German>
             <Text>Ziegenfelle</Text>
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Pelli di capra</Italian>
+        <Spanish>Pieles de cabra</Spanish>
         <Russian>Козьи шкуры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GOAT_HIDES</Tag>
-        <English>Goat Hides</English>
+        <English>Goatskins</English>
         <French>Peaux de chèvres</French>
         <German>
             <Text>Ziegenfelle</Text>
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Pelli di capra</Italian>
+        <Spanish>Pieles de cabra</Spanish>
         <Russian>Козьи шкуры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_GOAT_HIDES_PEDIA</Tag>
-        <English>[TAB][H1]Goat Hides[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Goat hides[COLOR_REVERT] come from butchered  [LINK=YIELD_GOATS]goats[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_BUTCHER_GOATS]goat butcher[\LINK] profession in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK] or one of its upgrades. The output of goat hides can be doubled by commissioning [LINK=UNIT_BUTCHER]master butchers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]The goat is one of the oldest domesticated animals. There's archaeological evidence for goats in Iran 10,000 years ago. Goats are used for milk, meat, fur, and skins across much of the world.</English>
+        <English>[TAB][H1]Goatskins[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Goatskins[COLOR_REVERT] come from butchered [LINK=YIELD_GOATS]goats[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_BUTCHER_GOATS]goat butcher[\LINK] profession in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK] or one of its upgrades. The output of goatskins can be doubled by commissioning [LINK=UNIT_BUTCHER]master butchers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]The goat is one of the oldest domesticated animals. Archaeological evidence shows it was herded in Persia 10,000 years ago. Goats are used for milk, meat, fur, and skins across much of the world.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Ziegenfelle[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GOAT_HIDES_PEDIA</Tag>
@@ -240,7 +290,7 @@
         <Tag>TXT_KEY_UNIT_GOAT_HIDES_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- PIG_SKIN -->
+    <!-- PIG_SKIN -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIG_SKIN</Tag>
         <English>Pigskins</English>
@@ -250,9 +300,11 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Pelli di maiale</Italian>
+        <Spanish>Pieles de cerdo</Spanish>
         <Russian>Свиная кожа</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PIG_SKIN</Tag>
         <English>Pigskins</English>
         <French>Peaux de porcs</French>
@@ -261,6 +313,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Pelli di maiale</Italian>
+        <Spanish>Pieles de cerdo</Spanish>
         <Russian>Свиная кожа</Russian>
     </TEXT>
     <TEXT>
@@ -272,12 +326,18 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Pelli di maiale</Italian>
+        <Spanish>Pieles de cerdo</Spanish>
         <Russian>Свиная кожа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIG_SKIN_PEDIA</Tag>
         <English>[TAB][H1]Pigskins[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pigskins[COLOR_REVERT] come from butchered [LINK=YIELD_PIGS]pigs[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_BUTCHER_PIGS]pig butcher[\LINK] profession in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK] or one of its upgrades. The output of pigskins can be doubled by commissioning [LINK=UNIT_BUTCHER]master butchers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Pigskin is softer than cow leather and is preferred for detailed items such as gloves. Pigskin jackets are more supple than the heavier cow leather jacket, which however is more durable. Pig leather is easier to work, so garments typically have a finer finish.</English>
-        <German>[TAB][H1]Schweinehäute[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <French>La peau de porc est plus souple que le cuir de vache et est préférée pour les articles détaillés tels que les gants. Les vestes en peau de porc sont plus souples que celles en cuir de vachette, plus lourdes, mais plus durables. Le cuir de porc est plus facile à travailler, de sorte que les vêtements ont généralement une finition plus fine.</French>
+        <German>[TAB][H1]Schweinehäute[\H1][PARAGRAPH:2][BOLD]Strategie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][NEWLINE]Schweinsleder ist weicher als Rindsleder und wird für detaillierte Gegenstände wie Handschuhe bevorzugt. Jacken aus Schweinsleder sind geschmeidiger als die schwereren Jacken aus Rindsleder, die jedoch haltbarer sind. Schweinsleder lässt sich leichter verarbeiten, so dass die Kleidungsstücke in der Regel ein feineres Finish aufweisen.</German>
+        <Italian>La pelle di maiale è più morbida della pelle di mucca e viene preferita per articoli dettagliati come i guanti. Le giacche in pelle di maiale sono più morbide della più pesante giacca in pelle di mucca, che tuttavia è più resistente. La pelle di maiale è più facile da lavorare, quindi i capi hanno in genere una finitura più fine.</Italian>
+        <Spanish>La piel de cerdo es más suave que la de vaca y se prefiere para artículos detallados como los guantes. Las chaquetas de piel de cerdo son más flexibles que las de piel de vaca, más pesadas, pero más duraderas. La piel de cerdo es más fácil de trabajar, por lo que las prendas suelen tener un acabado más fino.</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PIG_SKIN_PEDIA</Tag>
@@ -287,7 +347,7 @@
         <Tag>TXT_KEY_UNIT_PIG_SKIN_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- DOWNS -->
+    <!-- DOWNS -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_DOWNS</Tag>
         <English>Down</English>
@@ -297,9 +357,11 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Giù</Italian>
+        <Spanish>Abajo</Spanish>
         <Russian>Пух</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_DOWNS</Tag>
         <English>Down</English>
         <French>Duvet</French>
@@ -308,6 +370,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Giù</Italian>
+        <Spanish>Abajo</Spanish>
         <Russian>Пух</Russian>
     </TEXT>
     <TEXT>
@@ -319,12 +383,18 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Giù</Italian>
+        <Spanish>Abajo</Spanish>
         <Russian>Пух</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_DOWNS_PEDIA</Tag>
         <English>[TAB][H1]Down[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Down[COLOR_REVERT] comes from butchered [LINK=YIELD_GEESE]geese[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_BUTCHER_GEESE]goose butcher[\LINK] profession in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK] or one of its upgrades. The output of down can be doubled by commissioning [LINK=UNIT_BUTCHER]master butchers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Down is the warm inner feathers plucked from waterfowl. It's used as a lightweight insulator in clothing and bedding.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Daunen[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_DOWNS_PEDIA</Tag>
@@ -334,44 +404,54 @@
         <Tag>TXT_KEY_UNIT_DOWNS_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- WILD_FEATHERS -->
+    <!-- WILD_FEATHERS -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_WILD_FEATHERS</Tag>
         <English>Wild Bird Feathers</English>
-        <French>Plumes</French>
+        <French>Plumes d'oiseaux sauvages</French>
         <German>
             <Text>Wildvogelfedern</Text>
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Piume di uccelli selvatici</Italian>
+        <Spanish>Plumas de aves silvestres</Spanish>
         <Russian>Перья диких птиц</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_WILD_FEATHERS</Tag>
         <English>Wild Bird Feathers</English>
-        <French>Plumes</French>
+        <French>Plumes d'oiseaux sauvages</French>
         <German>
             <Text>Wildvogelfedern</Text>
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Piume di uccelli selvatici</Italian>
+        <Spanish>Plumas de aves silvestres</Spanish>
         <Russian>Перья диких птиц</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_WILD_FEATHERS</Tag>
         <English>Wild Bird Feathers</English>
-        <French>Plumes</French>
+        <French>Plumes d'oiseaux sauvages</French>
         <German>
             <Text>Wildvogelfedern</Text>
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Piume di uccelli selvatici</Italian>
+        <Spanish>Plumas de aves silvestres</Spanish>
         <Russian>Перья диких птиц</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_WILD_FEATHERS_PEDIA</Tag>
-        <English>[TAB][H1]Wild Bird Feathers[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Wild bird feathers[COLOR_REVERT] come from [LINK=YIELD_GEESE]wild birds[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_HUNTER_BIRDS]bird hunter[\LINK] profession. The output of wild bird feathers can be doubled by commissioning [LINK=UNIT_HUNTER]expert hunters[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Wild bird feathers were valued for clothing decoration, hats in particular. The biggest demand was for feathers from brightly coloured tropical birds.</English>
+        <English>[TAB][H1]Wild Bird Feathers[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Wild bird feathers[COLOR_REVERT] come from [LINK=YIELD_GEESE]wild birds[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_BIRD_HUNTER]bird hunter[\LINK] profession. The output of wild bird feathers can be doubled by commissioning [LINK=UNIT_HUNTER]expert hunters[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Wild bird feathers were valued for clothing decoration, hats in particular. The biggest demand was for feathers from brightly coloured tropical birds.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Wildvogelfedern[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_WILD_FEATHERS_PEDIA</Tag>
@@ -381,44 +461,42 @@
         <Tag>TXT_KEY_UNIT_WILD_FEATHERS_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- GOAT_HIDE_BOOTS -->
+    <!-- GOAT_HIDE_BOOTS -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_GOAT_HIDE_BOOTS</Tag>
-        <English>Goathide Boots</English>
-        <French>Bottes en peau de chèvre</French>
-        <German>
-            <Text>Ziegenlederstiefel</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </German>
+        <English>Lined Goathide Boots</English>
+        <French>Bottes fourrées en cuir de chèvre</French>
+        <German>Gefütterte Ziegenlederstiefel</German>
+        <Italian>Stivali in pelle di capra foderati</Italian>
+        <Spanish>Botas de piel de cabra forradas</Spanish>
         <Russian>Сапоги из козьих шкур</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_GOAT_HIDE_BOOTS</Tag>
-        <English>Goathide Boots</English>
-        <French>Bottes en peau de chèvre</French>
-        <German>
-            <Text>Ziegenlederstiefel</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </German>
+        <English>Lined Goathide Boots</English>
+        <French>Bottes fourrées en cuir de chèvre</French>
+        <German>Gefütterte Ziegenlederstiefel</German>
+        <Italian>Stivali in pelle di capra foderati</Italian>
+        <Spanish>Botas de piel de cabra forradas</Spanish>
         <Russian>Сапоги из козьих шкур</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GOAT_HIDE_BOOTS</Tag>
-        <English>Goathide Boots</English>
-        <French>Bottes en peau de chèvre</French>
-        <German>
-            <Text>Ziegenlederstiefel</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </German>
+        <English>Lined Goathide Boots</English>
+        <French>Bottes fourrées en cuir de chèvre</French>
+        <German>Gefütterte Ziegenlederstiefel</German>
+        <Italian>Stivali in pelle di capra foderati</Italian>
+        <Spanish>Botas de piel de cabra forradas</Spanish>
         <Russian>Сапоги из козьих шкур</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_GOAT_HIDE_BOOTS_PEDIA</Tag>
-        <English>[TAB][H1]Goathide Boots[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Goat hide boots[COLOR_REVERT] are made from [LINK=YIELD_GOAT_HIDE]goat hide[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_TAILOR_LEATHER]leather tailor[\LINK] profession in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades. The output of goat hide boots can be doubled by commissioning [LINK=UNIT_TAILOR]master tailors[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Goat hide can be used for finely crafted dress boots, gloves for the feet, or the boots can be insulated for cold weather use.</English>
-        <German>[TAB][H1]Ziegenlederstiefel[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <English>[TAB][H1]Lined Goathide Boots[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Goat hide boots[COLOR_REVERT] are made from [LINK=YIELD_GOAT_HIDES]goatskins[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_TAILOR_LEATHER]bootmaker[\LINK] profession in the [LINK=BUILDING_LEATHER_PADDER_HOUSE]tailor's house[\LINK] or one of its upgrades. The output of goat hide boots can be doubled by commissioning [LINK=UNIT_LEATHER_TAYLOR]master leatherworkers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Goat hide can be used for finely crafted dress boots, gloves for the feet, or the boots can be insulated for cold weather use.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
+        <German>[TAB][H1]Gefütterte Ziegenlederstiefel[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GOAT_HIDE_BOOTS_PEDIA</Tag>
@@ -428,7 +506,7 @@
         <Tag>TXT_KEY_UNIT_GOAT_HIDE_BOOTS_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- PIG_LEATHER -->
+    <!-- PIG_LEATHER -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIG_LEATHER</Tag>
         <English>Pig Leather Aprons</English>
@@ -438,9 +516,11 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Grembiuli in pelle di maiale</Italian>
+        <Spanish>Delantales de piel de cerdo</Spanish>
         <Russian>Фартуки из свиной кожи</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PIG_LEATHER</Tag>
         <English>Pig Leather Aprons</English>
         <French>Tabliers en peau de porc</French>
@@ -449,6 +529,8 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Grembiuli in pelle di maiale</Italian>
+        <Spanish>Delantales de piel de cerdo</Spanish>
         <Russian>Фартуки из свиной кожи</Russian>
     </TEXT>
     <TEXT>
@@ -460,12 +542,18 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Grembiuli in pelle di maiale</Italian>
+        <Spanish>Delantales de piel de cerdo</Spanish>
         <Russian>Фартуки из свиной кожи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIG_LEATHER_PEDIA</Tag>
-        <English>[TAB][H1]Pig Leather Aprons[\H1][PARAGRAPH:2][BOLDStrategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pig leather aprons[COLOR_REVERT] are made from [LINK=YIELD_PIG_SKINS]pigskins[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_TAILOR_LEATHER]leather tailor[\LINK] profession in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades. The output of pig leather aprons can be doubled by commissioning [LINK=UNIT_TAILOR]master tailors[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Pig leather aprons are hard-wearing work clothing, used by blacksmiths to block sparks from the forge and by butchers in case knives slip.</English>
+        <English>[TAB][H1]Pig Leather Aprons[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pig leather aprons[COLOR_REVERT] are made from [LINK=YIELD_PIG_SKIN]pigskins[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_TAILOR_LEATHER]leather tailor[\LINK] profession in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades. The output of pig leather aprons can be doubled by commissioning [LINK=UNIT_TAILOR]master tailors[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Pig leather aprons are hard-wearing work clothing, used by blacksmiths to block sparks from the forge and by butchers in case knives slip.</English>
+        <French>[TAB][H1]Tabliers en peau de porc[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Schweinelederschürzen[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]Grembiuli in pelle di maiale[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]Delantales de piel de cerdo[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PIG_LEATHER_PEDIA</Tag>
@@ -475,7 +563,7 @@
         <Tag>TXT_KEY_UNIT_PIG_LEATHER_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- FRUITS -->
+    <!-- FRUITS -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_FRUITS</Tag>
         <English>Fruit</English>
@@ -485,9 +573,11 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Frutta</Italian>
+        <Spanish>Fruta</Spanish>
         <Russian>Фрукты</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FRUITS</Tag>
         <English>Fruit</English>
         <French>Fruits</French>
@@ -496,6 +586,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Frutta</Italian>
+        <Spanish>Fruta</Spanish>
         <Russian>Фрукты</Russian>
     </TEXT>
     <TEXT>
@@ -507,12 +599,18 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Frutta</Italian>
+        <Spanish>Fruta</Spanish>
         <Russian>Фрукты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_FRUITS_PEDIA</Tag>
-        <English>[TAB][H1]Fruit[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Fruit[COLOR_REVERT] grows on many different terrains. To harvest it, a colonist needs to have the [LINK=PROFESSION_FRUITS_PICKER]fruit picker[\LINK] profession. The fruit harvest can be doubled by commissioning [LINK=UNIT_FRUITS_PICKER]expert fruit pickers[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Because the fruit varieties mature at different times throughout the season, fruit pickers are often migrant, moving among the orchards and farms as needed. In the tropics fruit grows year-round. Bananas are the world's most popular fruit. Apples are common in temperate zones, and some berries grow in the taiga or tundra.</English>
+        <English>[TAB][H1]Fruit[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Fruit[COLOR_REVERT] grows on many different terrains. To harvest it, a colonist needs to have the [LINK=PROFESSION_FRUITS_PICKER]fruit picker[\LINK] profession. The fruit harvest can be doubled by commissioning [LINK=UNIT_FRUITS_PICKER]expert fruit pickers[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Because fruit varieties mature at different times throughout the season, fruit pickers are often migrant, moving among the orchards and farms as needed. In the tropics fruit grows year-round. Bananas are the world's most popular fruit. Apples are common in temperate zones, and some berries grow in the taiga or tundra.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Früchte[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FRUITS_PEDIA</Tag>
@@ -522,44 +620,54 @@
         <Tag>TXT_KEY_UNIT_FRUITS_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- HOOCH -->
+    <!-- HOOCH -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_HOOCH</Tag>
         <English>Fruit Brandy</English>
-        <French>Schnaps</French>
+        <French>Eau-de-vie de fruits</French>
         <German>
-            <Text>Schnapps</Text>
+            <Text>Schnaps</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Acquavite di frutta</Italian>
+        <Spanish>Aguardiente de fruta</Spanish>
         <Russian>Фруктовый бренди</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_HOOCH</Tag>
         <English>Fruit Brandy</English>
-        <French>Schnaps</French>
+        <French>Eau-de-vie de fruits</French>
         <German>
-            <Text>Schnapps</Text>
+            <Text>Schnaps</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Acquavite di frutta</Italian>
+        <Spanish>Aguardiente de fruta</Spanish>
         <Russian>Фруктовый бренди</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HOOCH</Tag>
         <English>Fruit Brandy</English>
-        <French>Schnaps</French>
+        <French>Eau-de-vie de fruits</French>
         <German>
-            <Text>Schnapps</Text>
+            <Text>Schnaps</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Acquavite di frutta</Italian>
+        <Spanish>Aguardiente de fruta</Spanish>
         <Russian>Фруктовый бренди</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HOOCH_PEDIA</Tag>
-        <English>[TAB][H1]Fruit Brandy[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Fruit brandy and liqueurs[COLOR_REVERT] are made from a variety of [LINK=YIELD_FRUITS]fruits[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_DISTILLER]distiller[\LINK] profession in the [LINK=BUILDING_DISTILLERS_HOUSE]distiller's house[\LINK] or one of its upgrades. The output of fruit brandies can be doubled by commissioning [LINK=UNIT_DISTILLER]master distillers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Fruit brandy can be distilled from different orchard fruits or field berries. The liquor can be distilled until it's clear, much like a light-flavoured vodka.[NEWLINE]Flavoured liqueurs made from fruit are popular in monasteries.</English>
-        <German>[TAB][H1]Schnapps[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <English>[TAB][H1]Fruit Brandy[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Fruit brandy and liqueurs[COLOR_REVERT] are made from a variety of [LINK=YIELD_FRUITS]fruits[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_HOOCH_DISTILLER]fruit brandy distiller[\LINK] profession in the [LINK=BUILDING_DISTILLERS_HOUSE]distiller's house[\LINK] or one of its upgrades. The output of fruit brandies can be doubled by commissioning [LINK=UNIT_DISTILLER]master distillers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Fruit brandy can be distilled from different orchard fruits or field berries. The liquor can be distilled until it's clear, much like a light-flavoured vodka.[NEWLINE]Flavoured liqueurs made from fruit are popular in monasteries.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
+        <German>[TAB][H1]Schnaps[\H1][PARAGRAPH:2][BOLD] TODO</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HOOCH_PEDIA</Tag>
@@ -568,8 +676,8 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_HOOCH_STRATEGY</Tag>
         <English>Can be left empty</English>
-    </TEXT>	
-	<!-- FLAX -->
+    </TEXT>
+    <!-- FLAX -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_FLAX</Tag>
         <English>Flax</English>
@@ -579,9 +687,11 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Lino</Italian>
+        <Spanish>Lino</Spanish>
         <Russian>Лен</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FLAX</Tag>
         <English>Flax</English>
         <French>Lin</French>
@@ -590,6 +700,8 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Lino</Italian>
+        <Spanish>Lino</Spanish>
         <Russian>Лен</Russian>
     </TEXT>
     <TEXT>
@@ -601,12 +713,18 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Lino</Italian>
+        <Spanish>Lino</Spanish>
         <Russian>Лен</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_FLAX_PEDIA</Tag>
-        <English>[TAB][H1]Flax[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Flax[COLOR_REVERT] grows on many different terrains. To harvest it, a colonist needs to have the [LINK=PROFESSION_FLAX_PICKER]flax picker[\LINK] profession. The flax harvest can be doubled by commissioning [LINK=UNIT_FLAX_PICKER]expert flax pickers[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Linen fabrics woven from wild flax date back over 30,000 years. Devout colonists all know that linen is frequently mentioned in the Bible.[NEWLINE]Linen is comfortable to wear in hot weather. The fabric is strong and absorbent, though it does wrinkle.</English>
+        <English>[TAB][H1]Flax[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Flax[COLOR_REVERT] grows on many different terrains. To harvest it, a colonist needs to have the [LINK=PROFESSION_FLAX_PLANTER]flax picker[\LINK] profession. The flax harvest can be doubled by commissioning [LINK=UNIT_LINEN_PLANTER]expert flax planters[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Linen fabrics woven from wild flax date back over 30,000 years. Devout colonists all know that linen is frequently mentioned in the Bible.[NEWLINE]Linen is comfortable to wear in hot weather. The fabric is strong and absorbent, though it does wrinkle.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Flachs[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FLAX_PEDIA</Tag>
@@ -615,28 +733,32 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_FLAX_STRATEGY</Tag>
         <English>Can be left empty</English>
-    </TEXT>		
-	<!-- PADDED_FURNITURE -->
+    </TEXT>
+    <!-- PADDED_FURNITURE -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_PADDED_FURNITURE</Tag>
         <English>Upholstered Furniture</English>
         <French>Meubles capitonnés</French>
         <German>
-            <Text>Gepolsterte Möbel</Text>
+            <Text>Polstermöbel</Text>
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Mobili imbottiti</Italian>
+        <Spanish>Muebles acolchados</Spanish>
         <Russian>Мягкая мебель</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PADDED_FURNITURE</Tag>
         <English>Upholstered Furniture</English>
         <French>Meubles capitonnés</French>
         <German>
-            <Text>Gepolsterte Möbel</Text>
+            <Text>Polstermöbel</Text>
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Mobili imbottiti</Italian>
+        <Spanish>Muebles acolchados</Spanish>
         <Russian>Мягкая мебель</Russian>
     </TEXT>
     <TEXT>
@@ -644,16 +766,22 @@
         <English>Upholstered Furniture</English>
         <French>Meubles capitonnés</French>
         <German>
-            <Text>Gepolsterte Möbel</Text>
+            <Text>Polstermöbel</Text>
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Mobili imbottiti</Italian>
+        <Spanish>Muebles acolchados</Spanish>
         <Russian>Мягкая мебель</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PADDED_FURNITURE_PEDIA</Tag>
-        <English>[TAB][H1]Upholstered Furniture[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Upholstered furniture is made from [LINK=YIELD_LEATHER]leather[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_CABINET_MAKER]cabinet maker[\LINK] profession in the [LINK=BUILDING_CABINET_MAKERS_HOUSE]cabinet maker's house[\LINK] or one of its upgrades. Upholstered furniture output can be doubled by commissioning [LINK=UNIT_CABINET_MAKER]master cabinet makers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Rugged wooden furniture is all well and good for settlers out on the frontier, but citizens who've earned a little comfort appreciate an easy chair and a big soft couch to sink into. They'll pay extra for that pleasure, which is why the upholsterer is in a good trade.</English>
-        <German>[TAB][H1]Gepolsterte Möbel[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <English>[TAB][H1]Upholstered Furniture[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Upholstered furniture[COLOR_REVERT] is made from [LINK=YIELD_LEATHER]leather[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_CABINET_MAKER]cabinet maker[\LINK] profession in the [LINK=BUILDING_CABINET_MAKERS_HOUSE]cabinet maker's house[\LINK] or one of its upgrades. Upholstered furniture output can be doubled by commissioning [LINK=UNIT_CABINET_MAKER]master cabinet makers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Rugged wooden furniture is all well and good for settlers out on the frontier, but citizens who've earned a little comfort appreciate an easy chair and a big soft couch to sink into. They'll pay extra for that pleasure, which is why the upholsterer is in a good trade.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
+        <German>[TAB][H1]Polstermöbel[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PADDED_FURNITURE_PEDIA</Tag>
@@ -663,7 +791,7 @@
         <Tag>TXT_KEY_UNIT_PADDED_FURNITURE_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- HARDWOOD -->
+    <!-- HARDWOOD -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_HARDWOOD</Tag>
         <English>Hardwood</English>
@@ -673,9 +801,11 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Legno duro</Italian>
+        <Spanish>Madera dura</Spanish>
         <Russian>Твердая древесина</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_HARDWOOD</Tag>
         <English>Hardwood</English>
         <French>Bois dur</French>
@@ -684,6 +814,8 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Legno duro</Italian>
+        <Spanish>Madera dura</Spanish>
         <Russian>Твердая древесина</Russian>
     </TEXT>
     <TEXT>
@@ -695,12 +827,18 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Legno duro</Italian>
+        <Spanish>Madera dura</Spanish>
         <Russian>Твердая древесина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HARDWOOD_PEDIA</Tag>
         <English>[TAB][H1]Hardwood[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Hardwood[COLOR_REVERT] grows in [LINK=TERRAIN_FOREST]forests[\LINK] and [LINK=TERRAIN_JUNGLE]jungles[\LINK]. To harvest it, a colonist needs to have the [LINK=PROFESSION_LUMBERJACK_HARDWOOD]lumberjack[\LINK] profession. The hardwood harvest can be doubled by commissioning [LINK=UNIT_LUMBERJACK]expert lumberjacks[\LINK] who can be hired in Europe or trained in Native villages. Hardwood is needed to build large ships.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Hardwood comes from deciduous trees. Softwood, the most common type of lumber, is from evergreens.[NEWLINE]Hardwood is used for fuel, tools, construction, boat building, furniture making, musical instruments, flooring, cooking, barrels, and the manufacture of charcoal. The density adds to durability, appearance, and performance.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Hartholz[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HARDWOOD_PEDIA</Tag>
@@ -720,6 +858,8 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Sciroppo d'acero</Italian>
+        <Spanish>Sirope de arce</Spanish>
         <Russian>Кленовый сироп</Russian>
     </TEXT>
     <TEXT>
@@ -731,6 +871,8 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Sciroppo d'acero</Italian>
+        <Spanish>Sirope de arce</Spanish>
         <Russian>Кленовый сироп</Russian>
     </TEXT>
     <TEXT>
@@ -742,12 +884,18 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Sciroppo d'acero</Italian>
+        <Spanish>Sirope de arce</Spanish>
         <Russian>Кленовый сироп</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_MAPLE_SIRUP_PEDIA</Tag>
         <English>[TAB][H1]Maple Syrup[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Maple syrup[COLOR_REVERT] is the sap from maple trees, which grow in [LINK=TERRAIN_FOREST]forests[\LINK]. To collect it, a colonist needs to have the [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]maple syrup collector[\LINK] profession. The maple syrup supply can be doubled by commissioning [LINK=UNIT_MAPLE_SIRUP_COLLECTOR]expert maple syrup collectors[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]In the spring when sap starts to flow in the maple forests, tappers hammer spouts into the bark and collect a thin fluid that's then distilled over a slow fire into a rich thick syrup. It can also be poured on snow to make maple sugar.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Ahornsaft[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_PEDIA</Tag>
@@ -757,27 +905,31 @@
         <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- YERBA_LEAVES -->
+    <!-- YERBA_LEAVES -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_YERBA_LEAVES</Tag>
         <English>Yerba Leaves</English>
         <French>Feuilles de yerba maté</French>
         <German>
-            <Text>Yerbablätter</Text>
+            <Text>Mateblätter</Text>
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Foglie di yerba</Italian>
+        <Spanish>Hojas de yerba</Spanish>
         <Russian>Чайные листья</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_YERBA_LEAVES</Tag>
         <English>Yerba Leaves</English>
         <French>Feuilles de yerba maté</French>
         <German>
-            <Text>Yerbablätter</Text>
+            <Text>Mateblätter</Text>
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Foglie di yerba</Italian>
+        <Spanish>Hojas de yerba</Spanish>
         <Russian>Чайные листья</Russian>
     </TEXT>
     <TEXT>
@@ -785,16 +937,22 @@
         <English>Yerba Leaves</English>
         <French>Feuilles de yerba maté</French>
         <German>
-            <Text>Yerbablätter</Text>
+            <Text>Mateblätter</Text>
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Foglie di yerba</Italian>
+        <Spanish>Hojas de yerba</Spanish>
         <Russian>Чайные листья</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_YERBA_LEAVES_PEDIA</Tag>
         <English>[TAB][H1]Yerba Leaves[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Yerba leaves[COLOR_REVERT] come from the yerba plant which grows in [LINK=TERRAIN_JUNGLE]jungles[\LINK]. To collect it, a colonist needs to have the [LINK=PROFESSION_YERBA_PLANTER]yerba planter[\LINK] profession. The yerba leaf supply can be doubled by commissioning [LINK=UNIT_YERBA_PLANTER]expert yerba planters[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]The Guarani and Tupi cultivated yerba mate prior to European colonization. After the Jesuits started using it, yerba mate became widespread in what's now Paraguay and throughout other Spanish colonies.[NEWLINE]Yerba leaves are steeped in hot water to make a caffeinated beverage: yerba mate. Brewed cold, it is used to make terere.</English>
-        <German>[TAB][H1]Yerbablätter[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <French>[TAB][H1]Feuilles de yerba maté[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]Les Guarani et les Tupi cultivaient la yerba mate avant la colonisation européenne. Après que les Jésuites aient commencé à l'utiliser, le yerba mate s'est répandu dans ce qui est aujourd'hui le Paraguay et dans d'autres colonies espagnoles.[NEWLINE]Les feuilles de yerba sont infusées dans de l'eau chaude pour obtenir une boisson caféinée : le yerba mate. Brassée froide, elle est utilisée pour faire du terere.</French>
+        <German>[TAB][H1]Mateblätter[\H1][PARAGRAPH:2][BOLD]Strategie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][NEWLINE]Die Guarani und Tupi bauten Yerba Mate bereits vor der europäischen Kolonisierung an. Nachdem die Jesuiten damit begonnen hatten, wurde Mate-Tee im heutigen Paraguay und in anderen spanischen Kolonien weit verbreitet.[NEWLINE]Yerba-Blätter werden in heißem Wasser eingeweicht, um ein koffeinhaltiges Getränk herzustellen: Mate-Tee. Kalt gebraut, wird er zur Herstellung von Terere verwendet.</German>
+        <Italian>[TAB][H1]Foglie di yerba[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]I Guarani e i Tupi coltivavano la yerba mate prima della colonizzazione europea. Dopo che i gesuiti iniziarono a usarla, la yerba mate si diffuse nell'attuale Paraguay e in altre colonie spagnole.[NEWLINE]Le foglie di yerba vengono messe in infusione in acqua calda per ottenere una bevanda a base di caffeina: la yerba mate. Preparato a freddo, viene usato per fare il terere.</Italian>
+        <Spanish>[TAB][H1]Hojas de yerba[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]Los guaraníes y los tupíes cultivaban la yerba mate antes de la colonización europea. Después de que los jesuitas empezaran a utilizarla, la yerba mate se generalizó en lo que hoy es Paraguay y en otras colonias españolas.[NEWLINE]Las hojas de yerba se remojan en agua caliente para preparar una bebida con cafeína: la yerba mate. Elaborado en frío, se utiliza para hacer terere.</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_LEAVES_PEDIA</Tag>
@@ -804,27 +962,31 @@
         <Tag>TXT_KEY_UNIT_YERBA_LEAVES_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- LOGWOOD -->
+    <!-- LOGWOOD -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_LOGWOOD</Tag>
         <English>Logwood</English>
         <French>Bois de Campêche</French>
         <German>
-            <Text>Färbholz</Text>
+            <Text>Blauholz</Text>
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Campeggio</Italian>
+        <Spanish>Palo de Campeche</Spanish>
         <Russian>Кампеш</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_LOGWOOD</Tag>
         <English>Logwood</English>
         <French>Bois de Campêche</French>
         <German>
-            <Text>Färbholz</Text>
+            <Text>Blauholz</Text>
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Campeggio</Italian>
+        <Spanish>Palo de Campeche</Spanish>
         <Russian>Кампеш</Russian>
     </TEXT>
     <TEXT>
@@ -832,16 +994,22 @@
         <English>Logwood</English>
         <French>Bois de Campêche</French>
         <German>
-            <Text>Färbholz</Text>
+            <Text>Blauholz</Text>
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Campeggio</Italian>
+        <Spanish>Palo de Campeche</Spanish>
         <Russian>Кампеш</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_LOGWOOD_PEDIA</Tag>
         <English>[TAB][H1]Logwood[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Logwood[COLOR_REVERT] is found in [LINK=TERRAIN_JUNGLE]jungles[\LINK]. To collect it, a colonist needs to have the [LINK=PROFESSION_LOGWOOD_COLLECTOR]logwood collector[\LINK] profession. The logwood harvest can be doubled by commissioning [LINK=UNIT_LOGWOOD_COLLECTOR]expert logwood collectors[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]The tree was of great economic importance in the colonial era when it was exported to Europe for dyeing fabrics. Defying Spanish territorial claims, foreign sailors cut and collected trees for shipment back to Europe. Spain responded by commissioning privateers to attack them.[NEWLINE]Under attack from Spanish privateers, logwood cutters formed their own pirate crews to raid the Spanish. Blackbeard turned captured logwood sloops into pirate ships.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Färbholz[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LOGWOOD_PEDIA</Tag>
@@ -851,27 +1019,31 @@
         <Tag>TXT_KEY_UNIT_LOGWOOD_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- YERBA_TEA -->
+    <!-- YERBA_TEA -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_YERBA_TEA</Tag>
-        <English>Yerba Tea</English>
+        <English>Yerba-Mate</English>
         <French>Maté</French>
         <German>
-            <Text>Yerbatee</Text>
+            <Text>Mate-Tee</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Mate</Italian>
+        <Spanish>Yerba mate</Spanish>
         <Russian>Чай</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_YERBA_TEA</Tag>
         <English>Yerba Tea</English>
         <French>Maté</French>
         <German>
-            <Text>Yerbatee</Text>
+            <Text>Mate-Tee</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Mate</Italian>
+        <Spanish>Yerba mate</Spanish>
         <Russian>Чай</Russian>
     </TEXT>
     <TEXT>
@@ -879,16 +1051,22 @@
         <English>Yerba Tea</English>
         <French>Maté</French>
         <German>
-            <Text>Yerbatee</Text>
+            <Text>Mate-Tee</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Mate</Italian>
+        <Spanish>Yerba mate</Spanish>
         <Russian>Чай</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_YERBA_TEA_PEDIA</Tag>
-        <English>[TAB][H1]Yerba Tea[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Yerba tea is made from [LINK=YIELD_YERBA]yerba leaves[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_YERBA_TRADER]yerba tea trader[\LINK] profession in the [LINK=BUILDING_YERBA_TRADERS_HOUSE]yerba trader's house[\LINK] or one of its upgrades. Yerba tea output can be doubled by commissioning [LINK=UNIT_YERBA_TRADER]master yerba traders[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Getting started in the yerba trade meant dealing with two especially dangerous Indigenous nations: the Guarani and Tupi. To add to the challenge, it was found in only two regions, Amambay and Alto Parana. After the Jesuits started using it, yerba mate became widespread in what's now Paraguay and throughout other Spanish colonies.</English>
-        <German>[TAB][H1]Yerbatee[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <English>[TAB][H1]Yerba Tea[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Yerba tea[COLOR_REVERT] is made from [LINK=YIELD_YERBA]yerba leaves[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_YERBA_TRADER]yerba-mate trader[\LINK] profession in the [LINK=BUILDING_TOBACCONIST_HOUSE]Tobacco and Yerba House[\LINK] or one of its upgrades. The output of yerba-mate can be doubled by commissioning [LINK=UNIT_YERBA_TRADER]master yerba-mate traders[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Getting started in the yerba-mate trade meant dealing with two especially dangerous Indigenous nations: the Guarani and Tupi. To add to the challenge, it was found in only two regions, Amambay and Alto Parana. After the Jesuits started using it, yerba mate became widespread in what's now Paraguay and throughout other Spanish colonies.</English>
+        <French>[TAB][H1]Maté[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]Pour se lancer dans le commerce de la yerba, il fallait traiter avec deux nations indigènes particulièrement dangereuses : les Guarani et les Tupi. Pour ajouter au défi, on ne la trouvait que dans deux régions, Amambay et Alto Parana. Après que les Jésuites aient commencé à l'utiliser, le yerba mate s'est répandu dans ce qui est aujourd'hui le Paraguay et dans d'autres colonies espagnoles.</French>
+        <German>[TAB][H1]Mate-Tee[\H1][PARAGRAPH:2][BOLD]xxx[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Um in den Yerba-Handel einzusteigen, musste man sich mit zwei besonders gefährlichen indigenen Völkern auseinandersetzen: den Guarani und den Tupi. Erschwerend kam hinzu, dass die Yerba nur in zwei Regionen zu finden war: Amambay und Alto Parana. Nachdem die Jesuiten dies übernommen hatten, verbreitete sich Mate-Tee weit über das heutige Paraguay hinaus in die anderen spanischen Kolonien Süd-Amerikas.</German>
+        <Italian>[TAB][H1]Mate[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]Iniziare il commercio della yerba significava avere a che fare con due popoli indigeni particolarmente pericolosi: i Guarani e i Tupi. Inoltre, la yerba si trovava solo in due regioni, Amambay e Alto Parana. Dopo che i gesuiti iniziarono a usarla, la yerba mate si diffuse nell'attuale Paraguay e in altre colonie spagnole.</Italian>
+        <Spanish>[TAB][H1]Yerba mate[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]Iniciarse en el comercio de la yerba significaba tratar con dos naciones indígenas especialmente peligrosas: los guaraníes y los tupíes. Para colmo de males, sólo se encontraba en dos regiones, Amambay y Alto Paraná. Después de que los jesuitas empezaran a utilizarla, la yerba mate se generalizó en lo que hoy es Paraguay y en otras colonias españolas.</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_TEA_PEDIA</Tag>
@@ -897,8 +1075,8 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_TEA_STRATEGY</Tag>
         <English>Can be left empty</English>
-    </TEXT>	
-	<!-- COLOURED_WOOL_CLOTH -->
+    </TEXT>
+    <!-- COLOURED_WOOL_CLOTH -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_COLOURED_WOOL_CLOTH</Tag>
         <English>Coloured Wool Cloth</English>
@@ -908,9 +1086,11 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Tessuto di lana colorato</Italian>
+        <Spanish>Tejido de lana de colores</Spanish>
         <Russian>Цветная шерстяная ткань</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COLOURED_WOOL_CLOTH</Tag>
         <English>Coloured Wool Cloth</English>
         <French>Laine teinte</French>
@@ -919,6 +1099,8 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Tessuto di lana colorato</Italian>
+        <Spanish>Tejido de lana de colores</Spanish>
         <Russian>Цветная шерстяная ткань</Russian>
     </TEXT>
     <TEXT>
@@ -930,12 +1112,18 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Tessuto di lana colorato</Italian>
+        <Spanish>Tejido de lana de colores</Spanish>
         <Russian>Цветная шерстяная ткань</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COLOURED_WOOL_CLOTH_PEDIA</Tag>
-        <English>[TAB][H1]Coloured Wool Cloth[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Yerba tea is made from [LINK=YIELD_YERBA]yerba leaves[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_YERBA_TRADER]yerba tea trader[\LINK] profession in the [LINK=BUILDING_YERBA_TRADERS_HOUSE]yerba trader's house[\LINK] or one of its upgrades. Yerba tea output can be doubled by commissioning [LINK=UNIT_YERBA_TRADER]master yerba traders[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Getting started in the yerba trade meant dealing with two especially dangerous Indigenous nations: the Guarani and Tupi. To add to the challenge, it was found in only two regions, Amambay and Alto Parana. After the Jesuits started using it, yerba mate became widespread in what's now Paraguay and throughout other Spanish colonies.</English>
+        <English>[TAB][H1]Coloured Wool Cloth[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE]TODO</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Gefärbter Wollstoff[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COLOURED_WOOL_CLOTH_PEDIA</Tag>
@@ -945,7 +1133,7 @@
         <Tag>TXT_KEY_UNIT_COLOURED_WOOL_CLOTH_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- CLAY -->
+    <!-- CLAY -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_CLAY</Tag>
         <English>Clay</English>
@@ -955,9 +1143,11 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Argilla</Italian>
+        <Spanish>Arcilla</Spanish>
         <Russian>Глина</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CLAY</Tag>
         <English>Clay</English>
         <French>Argile</French>
@@ -966,6 +1156,8 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Argilla</Italian>
+        <Spanish>Arcilla</Spanish>
         <Russian>Глина</Russian>
     </TEXT>
     <TEXT>
@@ -977,12 +1169,18 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Argilla</Italian>
+        <Spanish>Arcilla</Spanish>
         <Russian>Глина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CLAY_PEDIA</Tag>
         <English>[TAB][H1]Clay[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Clay[COLOR_REVERT] is found on [LINK=TERRAIN_HILLS]hills[\LINK]. To collect it, a colonist needs to have the [LINK=PROFESSION_CLAY_MINER]clay miner[\LINK] profession. The supply of clay can be doubled by commissioning [LINK=UNIT_PEAT_CUTTER]expert peat and clay cutters[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Clay develops plasticity when wet, due to a molecular film of water surrounding the clay particles, but becomes hard, brittle and non-plastic upon drying or firing. Shale, formed largely from clay, is the most common sedimentary rock.[NEWLINE]Clay is the oldest known ceramic material. Prehistoric humans used it for making pottery. Early pottery shards have been dated to 14,000 BC, and clay tablets are the first known writing medium.</English>
-        <German>[TAB][H1]Vanille[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <French>L'argile développe une plasticité lorsqu'elle est humide, en raison d'un film moléculaire d'eau entourant les particules d'argile, mais elle devient dure, cassante et non plastique lorsqu'elle est séchée ou cuite. Le schiste, formé en grande partie d'argile, est la roche sédimentaire la plus courante. L'argile est le plus ancien matériau céramique connu. Les hommes préhistoriques l'utilisaient pour fabriquer des poteries. Les premiers tessons de poterie ont été datés de 14 000 ans avant J.-C., et les tablettes d'argile sont le premier support d'écriture connu.</French>
+        <German>[TAB][H1]Lehm[\H1][PARAGRAPH:2][BOLD]Strategie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][NEWLINE]Ton ist im nassen Zustand aufgrund eines molekularen Wasserfilms, der die Tonpartikel umgibt, plastisch, wird aber beim Trocknen oder Brennen hart, spröde und nicht plastisch. Schiefer, der größtenteils aus Ton besteht, ist das häufigste Sedimentgestein.[NEWLINE]Ton ist das älteste bekannte keramische Material. Prähistorische Menschen nutzten ihn zur Herstellung von Töpferwaren. Frühe Tonscherben wurden auf 14.000 v. Chr. datiert, und Tontafeln sind das erste bekannte Schreibmedium.</German>
+        <Italian>L'argilla sviluppa plasticità quando è bagnata, a causa di una pellicola molecolare di acqua che circonda le particelle di argilla, ma diventa dura, fragile e non plastica quando si asciuga o si cuoce. L'argilla, formata in gran parte da argilla, è la roccia sedimentaria più comune.[NEWLINE]L'argilla è il più antico materiale ceramico conosciuto. Gli esseri umani preistorici la usavano per produrre vasellame. I primi cocci di ceramica sono stati datati al 14.000 a.C. e le tavolette di argilla sono il primo supporto di scrittura conosciuto.</Italian>
+        <Spanish>La arcilla desarrolla plasticidad cuando está húmeda, debido a una película molecular de agua que rodea las partículas de arcilla, pero se vuelve dura, quebradiza y no plástica al secarse o cocerse. El esquisto, formado en gran parte por arcilla, es la roca sedimentaria más común[NEWLINE]La arcilla es el material cerámico más antiguo que se conoce. Los humanos prehistóricos la utilizaban para fabricar alfarería. Los primeros fragmentos de cerámica datan del 14.000 a.C., y las tablillas de arcilla son el primer medio de escritura conocido.</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CLAY_PEDIA</Tag>
@@ -1002,6 +1200,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Carbone</Italian>
+        <Spanish>Carbón</Spanish>
         <Russian>Уголь</Russian>
     </TEXT>
     <TEXT>
@@ -1013,6 +1213,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Carbone</Italian>
+        <Spanish>Carbón</Spanish>
         <Russian>Уголь</Russian>
     </TEXT>
     <TEXT>
@@ -1024,12 +1226,18 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Carbone</Italian>
+        <Spanish>Carbón</Spanish>
         <Russian>Уголь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COAL_PEDIA</Tag>
         <English>[TAB][H1]Coal[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Coal[COLOR_REVERT] is found on [LINK=TERRAIN_HILLS]hills[\LINK]. To collect it, a colonist needs to have the [LINK=PROFESSION_COAL_MINER]coal miner[\LINK] profession. The supply of coal can be doubled by commissioning [LINK=UNIT_MINER]expert miners[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Coal mining causes premature death and illness, but it's a soft rock that doesn't need as many explosives as hard rock mining. Even though it's a job where labourers use picks and shovels, and don't get paid much, their daughters are proud of them.</English>
-        <German>[TAB][H1]Kohle[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <French>L'exploitation du charbon provoque des décès prématurés et des maladies, mais il s'agit d'une roche tendre qui ne nécessite pas autant d'explosifs que les mines de roche dure. C'est un travail où les ouvriers utilisent des pioches et des pelles, et ils ne sont pas très bien payés.</French>
+        <German>[TAB][H1]Kohle[\H1][PARAGRAPH:2][BOLD]Der Kohleabbau führt zu vorzeitigem Tod und Krankheit, aber es handelt sich um ein weiches Gestein, für das nicht so viele Sprengstoffe benötigt werden wie für den Abbau von Hartgestein. Es ist ein Job, bei dem die Arbeiter mit Spitzhacke und Schaufel arbeiten, und sie werden nicht gut bezahlt.</German>
+        <Italian>L'estrazione del carbone causa morti premature e malattie, ma si tratta di una roccia morbida che non richiede l'uso di esplosivi come l'estrazione di rocce dure. È un lavoro in cui i manovali usano picconi e pale e non vengono pagati molto.</Italian>
+        <Spanish>La minería del carbón causa muertes prematuras y enfermedades, pero es una roca blanda que no necesita tantos explosivos como la minería de roca dura. Es un trabajo en el que los obreros utilizan picos y palas, y no cobran mucho.</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COAL_PEDIA</Tag>
@@ -1049,6 +1257,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Carbone di legna</Italian>
+        <Spanish>Carbón vegetal</Spanish>
         <Russian>Древесный уголь</Russian>
     </TEXT>
     <TEXT>
@@ -1060,6 +1270,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Carbone di legna</Italian>
+        <Spanish>Carbón vegetal</Spanish>
         <Russian>Древесный уголь</Russian>
     </TEXT>
     <TEXT>
@@ -1071,12 +1283,18 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Carbone di legna</Italian>
+        <Spanish>Carbón vegetal</Spanish>
         <Russian>Древесный уголь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHAR_COAL_PEDIA</Tag>
         <English>[TAB][H1]Charcoal[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Charcoal[COLOR_REVERT] is made in [LINK=TERRAIN_FORESTS]forests[\LINK]. To create it, a colonist needs to have the [LINK=PROFESSION_CHARCOAL_BURNER]charcoal burner[\LINK] profession. The supply of charcoal can be doubled by commissioning [LINK=UNIT_CHARCOAL_BURNER]expert charcoal burners[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Charcoal comes from wood cooked in a kiln over six to eight days, sometimes longer. Charcoal burns at 1,100 degrees Celsius. The melting point of iron is 1,200 degrees. By using a bellows on charcoal a blacksmith can get to work.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Holzkohle[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHAR_COAL_PEDIA</Tag>
@@ -1096,6 +1314,8 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Polvere da sparo</Italian>
+        <Spanish>Pólvora</Spanish>
         <Russian>Порох</Russian>
     </TEXT>
     <TEXT>
@@ -1107,6 +1327,8 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Polvere da sparo</Italian>
+        <Spanish>Pólvora</Spanish>
         <Russian>Порох</Russian>
     </TEXT>
     <TEXT>
@@ -1118,12 +1340,18 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Polvere da sparo</Italian>
+        <Spanish>Pólvora</Spanish>
         <Russian>Порох</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_BLACK_POWDER_PEDIA</Tag>
-        <English>[TAB][H1]Gunpowder[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Gunpowder[COLOR_REVERT] is made from [LINK=YIELD_CHARCOAL]charcoal[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_FIREWORKER]gunpowde mixer[\LINK] profession in the [LINK=BUILDING_FIREWORKERS_HOUSE]gunpowder mixer's house[\LINK] or one of its upgrades. It takes 20 kegs of gunpowder to equip colonial militia, dragoons or Royal Light Infantry. Line infantry needs 40 kegs. 50 kegs will supply light artillery, 75 for heavy artillery. The output of  gunpowder can be doubled by commissioning [LINK=UNIT_FIREWORKER]master gunpowder mixers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Well away from other buildings they carefully mix gunpowder from sulphur, charcoal and saltpeter: ammunition for the soldiers' guns. In colonial times it's the only available explosive (dynamite will be invented in 1867) so it's also used for artillery, mining and road building.[NEWLINE]Gunpowder may be dangerous, but it's not as dangerous as having a weak army without enough ammunition.</English>
+        <English>[TAB][H1]Gunpowder[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Gunpowder[COLOR_REVERT] is made from [LINK=YIELD_CHAR_COAL]charcoal[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_FIREWORKER]gunpowde mixer[\LINK] profession in the [LINK=BUILDING_FIREWORKERS_HOUSE]gunpowder mixer's house[\LINK] or one of its upgrades. The output of gunpowder can be doubled by commissioning [LINK=UNIT_FIREWORKER]master gunpowder mixers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Well away from other buildings they carefully mix gunpowder from sulphur, charcoal and saltpeter: ammunition for the soldiers' guns. In colonial times it's the only available explosive (dynamite will be invented in 1867) so it's also used for artillery, mining and road building.[NEWLINE]Gunpowder may be dangerous, but it's not as dangerous as having a weak army without enough ammunition.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Schwarzpulver[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BLACK_POWDER_PEDIA</Tag>
@@ -1143,6 +1371,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Prodotti da forno</Italian>
+        <Spanish>Productos de panadería</Spanish>
         <Russian>Хлебобулочные изделия</Russian>
     </TEXT>
     <TEXT>
@@ -1154,6 +1384,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Prodotti da forno</Italian>
+        <Spanish>Productos de panadería</Spanish>
         <Russian>Хлебобулочные изделия</Russian>
     </TEXT>
     <TEXT>
@@ -1165,12 +1397,18 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Prodotti da forno</Italian>
+        <Spanish>Productos de panadería</Spanish>
         <Russian>Хлебобулочные изделия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_BAKERY_GOODS_PEDIA</Tag>
         <English>[TAB][H1]Bakery Products[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Baked goods[COLOR_REVERT] are available in the [LINK=BUILDINGS_BAKER_HOUSE]baker's house[\LINK] or one of its upgrades. 50 baked goods are needed to equip pioneers and missionaries. Scouts, town guards and Royal Halberdiers need 20 baked goods.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]At first every household bakes its own bread but soon the baker's house centralizes food production. The baker starts work well before dawn so that households can have their daily bread. Settlers who remember the early starvation days continue to grow squash, beans and corn but new arrivals prefer familiar food from the old country.[NEWLINE]Having a bakery means each household doesn't need to bake its own bread. That allows other colonists to spend time on what they do best. Specialization helps the economy to grow, a concept soon popularized in books by economists Adam Smith and David Ricardo.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Backwaren[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BAKERY_GOODS_PEDIA</Tag>
@@ -1190,9 +1428,11 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Vaniglia</Italian>
+        <Spanish>Vainilla</Spanish>
         <Russian>Ваниль</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_VANILLA</Tag>
         <English>Vanilla</English>
         <French>Vanille</French>
@@ -1201,6 +1441,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Vaniglia</Italian>
+        <Spanish>Vainilla</Spanish>
         <Russian>Ваниль</Russian>
     </TEXT>
     <TEXT>
@@ -1212,12 +1454,18 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Vaniglia</Italian>
+        <Spanish>Vainilla</Spanish>
         <Russian>Ваниль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_VANILLA_PEDIA</Tag>
-        <English>[TAB][H1]Vanilla[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Vanilla[COLOR_REVERT] is made from [LINK=YIELD_VANILLA_PODS]green vanilla pods[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_CONFECTIONER] confectioner[\LINK] profession in the [LINK=BUILDING_CONFECTIONERS_HOUSE]confectioner's house[\LINK] or one of its upgrades. The output of vanilla can be doubled by commissioning [LINK=UNIT_CONFECTIONER]master confectioners[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Vanilla is a spice derived from orchids. There are three major species, all derived from the original Mexican plant. It can be pollinated by hand to produce the vanilla bean.</English>
+        <English>[TAB][H1]Vanilla[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Vanilla[COLOR_REVERT] is made from [LINK=YIELD_VANILLA_PODS]green vanilla pods[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_CONFECTIONER]confectioner[\LINK] profession in the [LINK=BUILDING_CONFECTIONER_HOUSE]confectioner's house[\LINK] or one of its upgrades. The output of vanilla can be doubled by commissioning [LINK=UNIT_CONFECTIONER]master confectioners[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Vanilla is a spice derived from orchids. There are three major species, all derived from the original Mexican plant. It can be pollinated by hand to produce the vanilla bean.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Vanille[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_VANILLA_PEDIA</Tag>
@@ -1226,8 +1474,8 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_VANILLA_STRATEGY</Tag>
         <English>Can be left empty</English>
-    </TEXT>	
-	<!-- VANILLA Pods, green -->
+    </TEXT>
+    <!-- VANILLA Pods, green -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_VANILLA_PODS</Tag>
         <English>Green Vanilla Pods</English>
@@ -1237,9 +1485,11 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Baccelli di vaniglia verde</Italian>
+        <Spanish>Vainas de vainilla verde</Spanish>
         <Russian>Стручки ванили</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_VANILLA_PODS</Tag>
         <English>Green Vanilla Pods</English>
         <French>Gousses de vanille vertes</French>
@@ -1248,6 +1498,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Baccelli di vaniglia verde</Italian>
+        <Spanish>Vainas de vainilla verde</Spanish>
         <Russian>Стручки ванили</Russian>
     </TEXT>
     <TEXT>
@@ -1259,12 +1511,18 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Baccelli di vaniglia verde</Italian>
+        <Spanish>Vainas de vainilla verde</Spanish>
         <Russian>Стручки ванили</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_VANILLA_PODS_PEDIA</Tag>
         <English>[TAB][H1]Green Vanilla Pods[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Vanilla pods[COLOR_REVERT] are picked in [LINK=TERRAIN_JUNGLE]jungles[\LINK]. To gather green vanilla pods, a colonist needs to have the [LINK=PROFESSION_VANILLA_COLLECTOR]vanilla collector[\LINK] profession. The supply of green vanilla beans can be doubled by commissioning [LINK=UNIT_VANILLA_COLLECTOR]]expert vanilla collectors[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Vanilla is a spice derived from orchids. There are three major species, all derived from the original Mexican plant. It can be pollinated by hand to produce the vanilla bean.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Grüne Vanilleschote[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_VANILLA_PODS_PEDIA</Tag>
@@ -1273,8 +1531,8 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_VANILLA_PODS_STRATEGY</Tag>
         <English>Can be left empty</English>
-    </TEXT>	
-	<!-- PEAT -->
+    </TEXT>
+    <!-- PEAT -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_PEAT</Tag>
         <English>Peat</English>
@@ -1284,9 +1542,11 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Torba</Italian>
+        <Spanish>Turba</Spanish>
         <Russian>Торф</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PEAT</Tag>
         <English>Peat</English>
         <French>Tourbe</French>
@@ -1295,6 +1555,8 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Torba</Italian>
+        <Spanish>Turba</Spanish>
         <Russian>Торф</Russian>
     </TEXT>
     <TEXT>
@@ -1306,12 +1568,18 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Torba</Italian>
+        <Spanish>Turba</Spanish>
         <Russian>Торф</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PEAT_PEDIA</Tag>
         <English>[TAB][H1]Peat[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Peat[COLOR_REVERT] is found in [LINK=TERRAIN_BOGS]bogs[\LINK]. To collect it, a colonist needs to have the [LINK=PROFESSION_PEAT_CUTTER]peat cutter[\LINK] profession. The stockpile of peat can be doubled by commissioning [LINK=UNIT_PEAT_CUTTER]expert peat cutters[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Peat is a peasant fuel, warming the poor and slaves at low or no cost. Peat is the world's most efficient carbon sink, storing 42% of all soil carbon, more than all other vegetation types, including the world's forests. It's not renewable.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Torf[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEAT_PEDIA</Tag>
@@ -1320,45 +1588,55 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEAT_STRATEGY</Tag>
         <English>Can be left empty</English>
-    </TEXT>	
-	<!-- PEANUTS -->
+    </TEXT>
+    <!-- PEANUTS -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_PEANUTS</Tag>
         <English>Peanuts</English>
-        <French>Arachides</French>
+        <French>Cacahuètes</French>
         <German>
             <Text>Erdnüsse</Text>
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Arachidi</Italian>
+        <Spanish>Cacahuetes</Spanish>
         <Russian>Арахис</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PEANUTS</Tag>
         <English>Peanuts</English>
-        <French>Arachides</French>
+        <French>Cacahuètes</French>
         <German>
             <Text>Erdnüsse</Text>
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Arachidi</Italian>
+        <Spanish>Cacahuetes</Spanish>
         <Russian>Арахис</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEANUTS</Tag>
         <English>Peanuts</English>
-        <French>Arachides</French>
+        <French>Cacahuètes</French>
         <German>
             <Text>Erdnüsse</Text>
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Arachidi</Italian>
+        <Spanish>Cacahuetes</Spanish>
         <Russian>Арахис</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PEANUTS_PEDIA</Tag>
-        <English>[TAB][H1]Peanuts[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Peanuts[COLOR_REVERT] grow in [LINK=TERRAIN_JUNGLE]jungles[\LINK]. To dig up peanuts, a colonist needs to have the [LINK=PROFESSION_PEANUT_PLANTER]peanut planter[\LINK] profession. The supply of peanuts can be doubled by commissioning [LINK=UNIT_PEANUT_PLANTER]expert peanut planters[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]The peanut is a legume grown mainly for its edible seeds. It's widely grown in the tropics and subtropics. It's valuable both as a grain legume and, due to its high oil content, as an oil crop. Cultivation was well-established in the Americas before the Spanish arrived. Conquistadors found the tlalcacahuatl (the plant's Nahuatl name) being offered for sale in the marketplace of Tenochtitlan.</English>
-        <German>[TAB][H1]Erdnüsse[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <English>[TAB][H1]Peanuts[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Peanuts[COLOR_REVERT] grow in [LINK=TERRAIN_JUNGLE]jungles[\LINK]. To dig up peanuts, a colonist needs to have the [LINK=PROFESSION_PEANUT_PLANTER]peanut planter[\LINK] profession. The supply of peanuts can be doubled by commissioning [LINK=UNIT_PEANUT_PLANTER]expert peanut planters[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]The peanut is a legume grown mainly for its edible seeds. It's widely grown in the tropics and subtropics. The peanut is valuable both as a grain legume and, due to its high oil content, as an oil crop. Cultivation was well-established in the Americas before the Spanish arrived. Conquistadors found the tlalcacahuatl (the plant's Nahuatl name) being offered for sale in the marketplace of Tenochtitlan.</English>
+        <French>L'arachide est une légumineuse cultivée principalement pour ses graines comestibles. Elle est largement cultivée dans les régions tropicales et subtropicales. L'arachide est précieuse à la fois comme légumineuse à graines et, en raison de sa forte teneur en huile, comme plante oléagineuse. La culture était bien établie dans les Amériques avant l'arrivée des Espagnols. Les conquistadors ont trouvé le tlalcacahuatl (nom nahuatl de la plante) proposé à la vente sur la place du marché de Tenochtitlan.</French>
+        <German>[TAB][H1]Erdnüsse[\H1][PARAGRAPH:2][BOLD]Die Erdnuss ist eine Hülsenfrucht, die hauptsächlich wegen ihrer essbaren Samen angebaut wird. Sie wird in den Tropen und Subtropen weit verbreitet angebaut. Die Erdnuss ist sowohl als Körnerleguminose als auch aufgrund ihres hohen Ölgehalts als Ölpflanze wertvoll. Der Anbau war auf dem amerikanischen Kontinent bereits vor der Ankunft der Spanier etabliert. Die Konquistadoren fanden die tlalcacahuatl (der Nahuatl-Name der Pflanze) auf dem Markt von Tenochtitlan zum Verkauf angeboten.</German>
+        <Italian>L'arachide è un legume coltivato principalmente per i suoi semi commestibili. È ampiamente coltivata nei tropici e nelle regioni subtropicali. L'arachide è preziosa sia come legume da granella sia, grazie al suo elevato contenuto di olio, come coltura oleosa. La coltivazione era ben radicata nelle Americhe prima dell'arrivo degli spagnoli. I conquistadores trovarono il tlalcacahuatl (nome nahuatl della pianta) in vendita nel mercato di Tenochtitlan.</Italian>
+        <Spanish>El cacahuete es una leguminosa cultivada principalmente por sus semillas comestibles. Se cultiva ampliamente en los trópicos y subtrópicos. El cacahuete es valioso como legumbre de grano y, por su alto contenido en aceite, como oleaginosa. Su cultivo estaba muy arraigado en América antes de la llegada de los españoles. Los conquistadores encontraron el tlalcacahuatl (nombre náhuatl de la planta) a la venta en el mercado de Tenochtitlan.</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEANUTS_PEDIA</Tag>
@@ -1368,7 +1646,7 @@
         <Tag>TXT_KEY_UNIT_PEANUTS_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- ROASTED PEANUTS -->
+    <!-- ROASTED PEANUTS -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_ROASTED_PEANUTS</Tag>
         <English>Roasted Peanuts</English>
@@ -1378,9 +1656,11 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Arachidi arrostite</Italian>
+        <Spanish>Cacahuetes tostados</Spanish>
         <Russian>Жареный арахис</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROASTED_PEANUTS</Tag>
         <English>Roasted Peanuts</English>
         <French>Cacahuètes grillées</French>
@@ -1389,6 +1669,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Arachidi arrostite</Italian>
+        <Spanish>Cacahuetes tostados</Spanish>
         <Russian>Жареный арахис</Russian>
     </TEXT>
     <TEXT>
@@ -1400,12 +1682,18 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Arachidi arrostite</Italian>
+        <Spanish>Cacahuetes tostados</Spanish>
         <Russian>Жареный арахис</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_ROASTED_PEANUTS_PEDIA</Tag>
         <English>[TAB][H1]Roasted Peanuts[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Roasted peanuts[COLOR_REVERT] are made from [LINK=YIELD_PEANUTS]peanuts[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_ROASTER] roaster[\LINK] profession in the [LINK=BUILDING_ROASTERS_HOUSE]roaster's house[\LINK] or one of its upgrades. The output of roasted peanuts can be doubled by commissioning [LINK=UNIT_ROASTER]master roasters[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]The peanut is a legume grown mainly for its edible seeds. It's widely grown in the tropics and subtropics. It's valuable both as a grain legume and, due to its high oil content, as an oil crop. Cultivation was well-established in the Americas before the Spanish arrived. Conquistadors found the tlalcacahuatl (the plant's Nahuatl name) being offered for sale in the marketplace of Tenochtitlan.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Geröstete Erdnüsse[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROASTED_PEANUTS_PEDIA</Tag>
@@ -1414,8 +1702,8 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROASTED_PEANUTS_STRATEGY</Tag>
         <English>Can be left empty</English>
-    </TEXT>		
-	<!-- OLIVES -->
+    </TEXT>
+    <!-- OLIVES -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_OLIVES</Tag>
         <English>Olives</English>
@@ -1425,9 +1713,11 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Olive</Italian>
+        <Spanish>Aceitunas</Spanish>
         <Russian>Оливки</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_OLIVES</Tag>
         <English>Olives</English>
         <French>Olives</French>
@@ -1436,6 +1726,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Olive</Italian>
+        <Spanish>Aceitunas</Spanish>
         <Russian>Оливки</Russian>
     </TEXT>
     <TEXT>
@@ -1447,12 +1739,18 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Olive</Italian>
+        <Spanish>Aceitunas</Spanish>
         <Russian>Оливки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_OLIVES_PEDIA</Tag>
         <English>[TAB][H1]Olives[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Olives[COLOR_REVERT] grow in [LINK=TERRAIN_PLAINS]plains[\LINK]. To grow olives, a colonist needs to have the [LINK=PROFESSION_OLIVES_PLANTER]olive planter[\LINK] profession. The supply of olives can be doubled by commissioning [LINK=UNIT_OLIVES_PLANTER]expert olive planters[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]The olive is a small tree originating in the Mediterranean basin. Olives are one of the core ingredients in Mediterranean cuisine. The olive tree has thousands of cultivars.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Oliven[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OLIVES_PEDIA</Tag>
@@ -1462,7 +1760,7 @@
         <Tag>TXT_KEY_UNIT_OLIVES_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- RAPE -->
+    <!-- RAPE -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_RAPE</Tag>
         <English>Rapeseed</English>
@@ -1472,9 +1770,11 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Colza</Italian>
+        <Spanish>Colza</Spanish>
         <Russian>Рапс</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_RAPE</Tag>
         <English>Rapeseed</English>
         <French>Colza</French>
@@ -1483,6 +1783,8 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Colza</Italian>
+        <Spanish>Colza</Spanish>
         <Russian>Рапс</Russian>
     </TEXT>
     <TEXT>
@@ -1494,12 +1796,18 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Colza</Italian>
+        <Spanish>Colza</Spanish>
         <Russian>Рапс</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_RAPE_PEDIA</Tag>
-        <English>[TAB][H1]Rapeseed[\H1][PARAGRAPH:2][BOLD] >The Romans introduced rapeseed to Western Europe. During the Middle Ages farmers used it in crop rotation to keep weeds down and improve the soil.[PARAGRAPH:1]Rapeseed oil was rarely eaten by humans. The old strains were horribly bitter and contained high levels of toxic erucic acid. The oil was used in animal feed for centuries and later as a lubricant during the Industrial Revolution.[PARAGRAPH:1]In the 1970s farmers developed new strains of rapeseed with low levels of erucic acid. This palatable oil, known as canola oil in North America, is widely marketed as a cooking oil.</English>
+        <English>[TAB][H1]Rapeseed[\H1][PARAGRAPH:2][\BOLD]The Romans introduced rapeseed to Western Europe. During the Middle Ages farmers used it in crop rotation to keep weeds down and improve the soil.[PARAGRAPH:1]Rapeseed oil was rarely eaten by humans. The old strains were horribly bitter and contained high levels of toxic erucic acid. The oil was used in animal feed for centuries and later as a lubricant during the Industrial Revolution.[PARAGRAPH:1]In the 1970s farmers developed new strains of rapeseed with low levels of erucic acid. This palatable oil, known as canola oil in North America, is widely marketed as a cooking oil.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Raps[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RAPE_PEDIA</Tag>
@@ -1507,9 +1815,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RAPE_STRATEGY</Tag>
-        <English>>Rapeseed oil was rarely eaten by humans since it was horribly bitter and contained high levels of toxic erucic acid. The oil was used in animal feed for centuries and later as a lubricant during the Industrial Revolution.</English>
+        <English>Rapeseed oil was rarely eaten by humans since it was horribly bitter and contained high levels of toxic erucic acid. The oil was used in animal feed for centuries and later as a lubricant during the Industrial Revolution.</English>
     </TEXT>
-	<!-- OLIVE_OIL -->
+    <!-- OLIVE_OIL -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_OLIVE_OIL</Tag>
         <English>Olive Oil</English>
@@ -1519,9 +1827,11 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Olio d'oliva</Italian>
+        <Spanish>Aceite de oliva</Spanish>
         <Russian>Оливковое масло</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_OLIVE_OIL</Tag>
         <English>Olive Oil</English>
         <French>Huile d'olive</French>
@@ -1530,6 +1840,8 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Olio d'oliva</Italian>
+        <Spanish>Aceite de oliva</Spanish>
         <Russian>Оливковое масло</Russian>
     </TEXT>
     <TEXT>
@@ -1541,12 +1853,18 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Olio d'oliva</Italian>
+        <Spanish>Aceite de oliva</Spanish>
         <Russian>Оливковое масло</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_OLIVE_OIL_PEDIA</Tag>
-        <English>[TAB][H1]Olive Oil[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Olive oil[COLOR_REVERT] is made from [LINK=YIELD_OLIVES]olives[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_OLIVE_OIL_TRADER] olive oil trader[\LINK] profession in the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK] or one of its upgrades. The output of olive oil can be doubled by commissioning [LINK=UNIT_OIL_TRADER]master olive oil traders[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Pressing oil is an ancient craft in Europe, particularly in Mediterranean cultures. Equipment that crushes olives for their oil can be adapted to work with rapeseed.[NEWLINE]Before European contact cooking oil was essential for Pacific Northwest Native nations. Oolichan oil from candlefish made up so much of Native commerce that the trade routes were called grease trails.</English>
-        <German>[TAB][H1]Olivenöl[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <English>[TAB][H1]Olive Oil[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Olive oil[COLOR_REVERT] is made from [LINK=YIELD_OLIVES]olives[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_OLIVE_OIL_TRADER]olive oil trader[\LINK] profession in the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK] or one of its upgrades. The output of olive oil can be doubled by commissioning [LINK=UNIT_OIL_TRADER]master cooking oil traders[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Pressing oil is an ancient craft in Europe, particularly in Mediterranean cultures. Equipment that crushes olives for their oil can be adapted to work with rapeseed.[NEWLINE]Before European contact cooking oil was essential for Pacific Northwest Native nations. Oolichan oil from candlefish made up so much of Native commerce that the trade routes were called "grease trails".</English>
+        <French>Le pressage de l'huile est un artisanat ancien en Europe, notamment dans les cultures méditerranéennes. Les équipements qui écrasent les olives pour en extraire l'huile peuvent être adaptés au colza.[NEWLINE]Avant le contact avec les Européens, l'huile de cuisson était essentielle pour les nations autochtones du nord-ouest du Pacifique. L'huile d'oolichan provenant de la chandelle constituait une si grande partie du commerce amérindien que les routes commerciales étaient appelées "pistes de graisse".</French>
+        <German>[TAB][H1]Olivenöl[\H1][PARAGRAPH:2][BOLD]Das Pressen von Öl ist ein altes Handwerk in Europa, insbesondere in den Mittelmeerkulturen. Die Geräte, mit denen Oliven zur Gewinnung von Öl gepresst werden, können auch für die Verarbeitung von Raps verwendet werden.[NEWLINE]Vor dem Kontakt mit den Europäern war Speiseöl für die Ureinwohner des pazifischen Nordwestens lebenswichtig. Oolichan-Öl aus Kerzenfisch machte einen so großen Teil des Handels der Ureinwohner aus, dass die Handelsrouten als "Fettstraßen" bezeichnet wurden.</German>
+        <Italian>La spremitura dell'olio è un'attività antica in Europa, in particolare nelle culture mediterranee. Le attrezzature che schiacciano le olive per ricavarne l'olio possono essere adattate alla colza.[NEWLINE]Prima del contatto europeo, l'olio da cucina era essenziale per i nativi del Pacifico nordoccidentale. L'olio di oolichan ricavato dal pesce candela costituiva una parte così importante del commercio dei nativi che le rotte commerciali venivano chiamate "vie del grasso".</Italian>
+        <Spanish>El prensado del aceite es un antiguo oficio en Europa, sobre todo en las culturas mediterráneas. Los equipos que trituran aceitunas para obtener su aceite pueden adaptarse para trabajar con colza.[NEWLINE]Antes del contacto europeo, el aceite de cocina era esencial para las naciones indígenas del noroeste del Pacífico. El aceite de oolichan procedente del pez vela constituía una parte tan importante del comercio nativo que las rutas comerciales se llamaban "rutas de la grasa".</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OLIVE_OIL_PEDIA</Tag>
@@ -1556,7 +1874,7 @@
         <Tag>TXT_KEY_UNIT_OLIVE_OIL_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- RAPE_OIL -->
+    <!-- RAPE_OIL -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_RAPE_OIL</Tag>
         <English>Rapeseed Oil</English>
@@ -1566,9 +1884,11 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Olio di colza</Italian>
+        <Spanish>Aceite de colza</Spanish>
         <Russian>Рапсовое масло</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_RAPE_OIL</Tag>
         <English>Rapeseed Oil</English>
         <French>Huile de colza</French>
@@ -1577,6 +1897,8 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Olio di colza</Italian>
+        <Spanish>Aceite de colza</Spanish>
         <Russian>Рапсовое масло</Russian>
     </TEXT>
     <TEXT>
@@ -1588,12 +1910,18 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Olio di colza</Italian>
+        <Spanish>Aceite de colza</Spanish>
         <Russian>Рапсовое масло</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_RAPE_OIL_PEDIA</Tag>
-        <English>[TAB][H1]Rapeseed Oil[\H1][PARAGRAPH:2][BOLD] Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rapeseed oil[COLOR_REVERT] is made from [LINK=YIELD_OLIVES]rapeseed[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_RAPE_OIL_TRADER] rapeseed oil trader[\LINK] profession in the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK] or one of its upgrades. The output of rapeseed oil can be doubled by commissioning [LINK=UNIT_OIL_TRADER]master rapeseed oil traders[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Rapeseed with its bright yellow flowers is cultivated mainly for its oil-rich seed, which has appreciable amounts of erucic acid. Rapeseed meal, left after the oil is extracted, is a high-protein animal feed.[NEWLINE]Rapeseed is a valuable oil crop. Once the oil is extracted, what's left is used as fodder for domestic animals, mainly cattle, but also pigs and poultry. It's a member of the cabbage family.</English>
+        <English>[TAB][H1]Rapeseed Oil[\H1][PARAGRAPH:2][BOLD] Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rapeseed oil[COLOR_REVERT] is made from [LINK=YIELD_OLIVES]rapeseed[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_RAPE_OIL_TRADER] rapeseed oil trader[\LINK] profession in the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK] or one of its upgrades. The output of rapeseed oil can be doubled by commissioning [LINK=UNIT_OIL_TRADER]master cooking oil traders[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Rapeseed with its bright yellow flowers is cultivated mainly for its oil-rich seed, which has appreciable amounts of erucic acid. Rapeseed meal, left after the oil is extracted, is a high-protein animal feed.[NEWLINE]Rapeseed is a valuable oil crop. Once the oil is extracted, what's left is used as fodder for domestic animals, mainly cattle, but also pigs and poultry. It's a member of the cabbage family.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Rapsöl[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RAPE_OIL_PEDIA</Tag>
@@ -1603,7 +1931,7 @@
         <Tag>TXT_KEY_UNIT_RAPE_OIL_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- HOUSEHOLD_GOODS -->
+    <!-- HOUSEHOLD_GOODS -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_HOUSEHOLD_GOODS</Tag>
         <English>Household Goods</English>
@@ -1613,9 +1941,11 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Articoli per la casa</Italian>
+        <Spanish>Artículos domésticos</Spanish>
         <Russian>Товары для домашнего хозяйства</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_HOUSEHOLD_GOODS</Tag>
         <English>Household Goods</English>
         <French>Articles ménagers</French>
@@ -1624,6 +1954,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Articoli per la casa</Italian>
+        <Spanish>Artículos domésticos</Spanish>
         <Russian>Товары для домашнего хозяйства</Russian>
     </TEXT>
     <TEXT>
@@ -1635,12 +1967,18 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Articoli per la casa</Italian>
+        <Spanish>Artículos domésticos</Spanish>
         <Russian>Товары для домашнего хозяйства</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HOUSEHOLD_GOODS_PEDIA</Tag>
         <English>[TAB][H1]Household Goods[\H1][PARAGRAPH:2][BOLD][TAB][H1]Household Goods[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Household goods[COLOR_REVERT] are purchased in the [LINK=BUILDING_VILLAGE_MARKET]village market[\LINK] or one of its upgrades.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]As a young man Benjamin Franklin calculated each household individually made 95% of everything needed. Money was only used for nails and to pay taxes. With population growth that certainly changed. Markets became an important part of every community.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Haushaltswaren[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HOUSEHOLD_GOODS_PEDIA</Tag>
@@ -1650,7 +1988,7 @@
         <Tag>TXT_KEY_UNIT_HOUSEHOLD_GOODS_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- FIELD_WORKER_TOOLS -->
+    <!-- FIELD_WORKER_TOOLS -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_FIELD_WORKER_TOOLS</Tag>
         <English>Fieldworker Tools</English>
@@ -1660,9 +1998,11 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Attrezzi da lavoro</Italian>
+        <Spanish>Herramientas de campo</Spanish>
         <Russian>Товары для полевых работ</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FIELD_WORKER_TOOLS</Tag>
         <English>Fieldworker Tools</English>
         <French>Outils agricoles</French>
@@ -1671,6 +2011,8 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Attrezzi da lavoro</Italian>
+        <Spanish>Herramientas de campo</Spanish>
         <Russian>Товары для полевых работ</Russian>
     </TEXT>
     <TEXT>
@@ -1682,12 +2024,18 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Attrezzi da lavoro</Italian>
+        <Spanish>Herramientas de campo</Spanish>
         <Russian>Товары для полевых работ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_FIELD_WORKER_TOOLS_PEDIA</Tag>
         <English>[TAB][H1]Fieldworker Tools[\H1][PARAGRAPH:2][BOLD][TAB][H1]Fieldworker Tools[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Fieldworker tools[COLOR_REVERT] are purchased in the [LINK=BUILDING_VILLAGE_MARKET]village market[\LINK] or one of its upgrades.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Field workers can be hard on their tools. Axes get dull, shovels bend and hammer heads fly off the handle. A good market will have a hardware section where workers can get what they need.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Feldarbeiterwerkzeuge[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FIELD_WORKER_TOOLS_PEDIA</Tag>
@@ -1697,7 +2045,7 @@
         <Tag>TXT_KEY_UNIT_FIELD_WORKER_TOOLS_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- RICE -->
+    <!-- RICE -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_RICE</Tag>
         <English>Rice</English>
@@ -1707,9 +2055,11 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Riso</Italian>
+        <Spanish>Arroz</Spanish>
         <Russian>Рис</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_RICE</Tag>
         <English>Rice</English>
         <French>Riz</French>
@@ -1718,6 +2068,8 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Riso</Italian>
+        <Spanish>Arroz</Spanish>
         <Russian>Рис</Russian>
     </TEXT>
     <TEXT>
@@ -1729,12 +2081,18 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Riso</Italian>
+        <Spanish>Arroz</Spanish>
         <Russian>Рис</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_RICE_PEDIA</Tag>
         <English>[TAB][H1]Rice[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT] is grown on [LINK=TERRAIN_PLAIN]plains[\LINK]. To grow rice, a colonist needs to have the [LINK=PROFESSION_RICE_FARMER]rice farmer[\LINK] profession. The supply of rice can be doubled by commissioning [LINK=UNIT_RICE_FARMER]expert rice farmers[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]In tropical areas rice can survive as a perennial. It grows in water. Rice seeds are milled with a huller to remove the chaff , creating brown rice. Removing the bran creates white rice.[NEWLINE]Rice is nutritious and light to carry. Scouts may have a loaf of bread for their first day on the trail but it's the bag of dried rice that feeds them for the rest of the trip.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Reis[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RICE_PEDIA</Tag>
@@ -1744,27 +2102,31 @@
         <Tag>TXT_KEY_UNIT_RICE_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- CASSAVA -->
+    <!-- CASSAVA -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_CASSAVA</Tag>
         <English>Cassava</English>
         <French>Manioc</French>
         <German>
-            <Text>Cassava</Text>
+            <Text>Maniok</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Cassava</Italian>
+        <Spanish>Yuca</Spanish>
         <Russian>Маниока</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CASSAVA</Tag>
         <English>Cassava</English>
         <French>Manioc</French>
         <German>
-            <Text>Cassava</Text>
+            <Text>Maniok</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Cassava</Italian>
+        <Spanish>Yuca</Spanish>
         <Russian>Маниока</Russian>
     </TEXT>
     <TEXT>
@@ -1772,16 +2134,22 @@
         <English>Cassava</English>
         <French>Manioc</French>
         <German>
-            <Text>Cassava</Text>
+            <Text>Maniok</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Cassava</Italian>
+        <Spanish>Yuca</Spanish>
         <Russian>Маниока</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CASSAVA_PEDIA</Tag>
         <English>[TAB][H1]Cassava[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Cassava[COLOR_REVERT] is grown on [LINK=TERRAIN_PLAIN]jungle[\LINK] terrain. To grow cassava, a colonist needs to have the [LINK=PROFESSION_CASSAVA_PLANTER]cassava planter[\LINK] profession. The supply of cassava can be doubled by commissioning [LINK=UNIT_CASSAVA_PLANTER]expert cassava planters[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Cassava is a woody shrub native to South America where it is extensively cultivated as an annual crop in tropical and subtropical regions for its edible starchy tuberous root, a major source of carbohydrates. Cassava is the third-largest source of food carbohydrates in the tropics, after rice and maize. It must be properly prepared before consumption, as improper preparation of cassava can leave enough residual cyanide to cause acute cyanide intoxication.</English>
-        <German>[TAB][H1]Cassava[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
+        <German>[TAB][H1]Maniok[\H1][PARAGRAPH:2][BOLD]Strategie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][NEWLINE]TBD</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CASSAVA_PEDIA</Tag>
@@ -1791,44 +2159,54 @@
         <Tag>TXT_KEY_UNIT_CASSAVA_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- COCHINEAL -->
+    <!-- COCHINEAL -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_COCHINEAL</Tag>
         <English>Cochineal</English>
-        <French>Cochenille</French>
+        <French>Cochenilles</French>
         <German>
-            <Text>Cochineal</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
+            <Text>Cochenille-Schildläuse</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
         </German>
+        <Italian>Cocciniglia del carminio</Italian>
+        <Spanish>Cochinilla del carmín</Spanish>
         <Russian>Кошениль</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COCHINEAL</Tag>
         <English>Cochineal</English>
-        <French>Cochenille</French>
+        <French>Cochenilles</French>
         <German>
-            <Text>Cochineal</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
+            <Text>Cochenille-Schildläuse</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
         </German>
+        <Italian>Cocciniglia del carminio</Italian>
+        <Spanish>Cochinilla del carmín</Spanish>
         <Russian>Кошениль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCHINEAL</Tag>
         <English>Cochineal</English>
-        <French>Cochenille</French>
+        <French>Cochenilles</French>
         <German>
-            <Text>Cochineal</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
+            <Text>Cochenille-Schildläuse</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
         </German>
+        <Italian>Cocciniglia del carminio</Italian>
+        <Spanish>Cochinilla del carmín</Spanish>
         <Russian>Кошениль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COCHINEAL_PEDIA</Tag>
         <English>[TAB][H1]Cochineal[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Cochineal[COLOR_REVERT] comes from insects on [LINK=TERRAIN_DESERT]desert[\LINK] cacti. To collect cochineal, a colonist needs to have the [LINK=PROFESSION_COCHINEAL_COLLECTOR] cochineal collector[\LINK] profession. The supply of cochineal can be doubled by commissioning [LINK=UNIT_COCHINEAL_COLLECTOR]expert cochineal collectors[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]The cochineal insects found on prickly pear cactus pads produce carminic acid, a predator-deterring chemical. When mixed with aluminum or calcium salts cochineal becomes carmine dye. Collectors gather the bugs by brushing them off the cactus pads.</English>
-        <German>[TAB][H1]Cochineal[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
+        <German>[TAB][H1]Cochenille-Schildläuse[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCHINEAL_PEDIA</Tag>
@@ -1838,44 +2216,54 @@
         <Tag>TXT_KEY_UNIT_COCHINEAL_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- CHOCOLATE -->
+    <!-- CHOCOLATE -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHOCOLATE</Tag>
         <English>Chocolate</English>
-        <French>Chocolat</French>
+        <French>Chocolats</French>
         <German>
             <Text>Schokolade</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Cioccolatini</Italian>
+        <Spanish>Chocolates</Spanish>
         <Russian>Шоколад</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CHOCOLATE</Tag>
         <English>Chocolate</English>
-        <French>Chocolat</French>
+        <French>Chocolats</French>
         <German>
             <Text>Schokolade</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Cioccolatini</Italian>
+        <Spanish>Chocolates</Spanish>
         <Russian>Шоколад</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHOCOLATE</Tag>
         <English>Chocolate</English>
-        <French>Chocolat</French>
+        <French>Chocolats</French>
         <German>
             <Text>Schokolade</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Cioccolatini</Italian>
+        <Spanish>Chocolates</Spanish>
         <Russian>Шоколад</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHOCOLATE_PEDIA</Tag>
         <English>[TAB][H1]Chocolate[\H1][PARAGRAPH:2][BOLD[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Chocolate[COLOR_REVERT] is created from [LINK=YIELD_COCOA_BEANS]cocoa[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_CONFECTIONER]confectioner[\LINK] profession in the [LINK=BUILDING_CONFECTIONER_SHOP]confectioner's shop[\LINK] or one of its upgrades. The output of chocolate can be doubled by commissioning [LINK=UNIT_CONFECTIONER]master confectioners[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Having a chocolate shop means that the settlers and their children don't need to wait for the ship to come in from Europe to satisfy their sweet tooth. The local confectioner makes everybody happy, the dentist in particular.[NEWLINE]One trick to making good chocolate is grinding the sugar so fine that the candy has a smooth consistency.[NEWLINE]Some chocolatiers even set up tables where tea is served to accompany the treats. A very few offer coffee, at first considered scandalous, because the drink is so stimulating.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Schokolade[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHOCOLATE_PEDIA</Tag>
@@ -1885,27 +2273,31 @@
         <Tag>TXT_KEY_UNIT_CHOCOLATE_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- PADDED_LEATHER_COATS -->
+    <!-- PADDED_LEATHER_COATS -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_PADDED_LEATHER_COATS</Tag>
         <English>Lined Leather Coats</English>
         <French>Manteaux en cuir matelassés</French>
         <German>
-            <Text>Geplosterte Ledermäntel</Text>
+            <Text>Gepolsterte Ledermäntel</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Cappotti di pelle foderati</Italian>
+        <Spanish>Abrigos de cuero forrados</Spanish>
         <Russian>Утепленные куртки</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PADDED_LEATHER_COATS</Tag>
         <English>Lined Leather Coats</English>
         <French>Manteaux en cuir matelassés</French>
         <German>
-            <Text>Geplosterte Ledermäntel</Text>
+            <Text>Gepolsterte Ledermäntel</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Cappotti di pelle foderati</Italian>
+        <Spanish>Abrigos de cuero forrados</Spanish>
         <Russian>Утепленные куртки</Russian>
     </TEXT>
     <TEXT>
@@ -1913,16 +2305,22 @@
         <English>Lined Leather Coats</English>
         <French>Manteaux en cuir matelassés</French>
         <German>
-            <Text>Geplosterte Ledermäntel</Text>
+            <Text>Gepolsterte Ledermäntel</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Cappotti di pelle foderati</Italian>
+        <Spanish>Abrigos de cuero forrados</Spanish>
         <Russian>Утепленные куртки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PADDED_LEATHER_COATS_PEDIA</Tag>
-        <English>[TAB][H1]Lined Leather Coats[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Lined leather coats[COLOR_REVERT] are manufactured from [LINK=YIELD_HIDES]hides[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_PADDED_LEATHER_COAT]leather clothier[\LINK] profession in the [LINK=BUILDING_PADDED_LEATHER_COAT_MAKERS_HOUSE] leather coat maker's house[\LINK] or one of its upgrades. The output of coats can be doubled by commissioning a [LINK=UNIT_PADDED_LEATHER_COAT_MAKER]master leather clothier[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Leather is good at keeping out the wind but when the temperature drops it still feels cold. Putting linings into leather coats keeps people warm when the snow flies. Sewing padding into leather doesn't just make the clothes more comfortable. By adding insulation it also improves health for those working outside, and can even save their lives.</English>
-        <German>[TAB][H1]Geplosterte Ledermäntel[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <English>[TAB][H1]Lined Leather Coats[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Lined leather coats[COLOR_REVERT] are manufactured from [LINK=YIELD_HIDES]cowhides[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_PADDED_LEATHER_COAT]leather clothier[\LINK] profession in the [LINK=BUILDING_PADDED_LEATHER_COAT_MAKERS_HOUSE] leather coat maker's house[\LINK] or one of its upgrades. The output of coats can be doubled by commissioning a [LINK=UNIT_PADDED_LEATHER_COAT_MAKER]master leather clothier[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Leather is good at keeping out the wind but when the temperature drops it still feels cold. Putting linings into leather coats keeps people warm when the snow flies. Sewing padding into leather doesn't just make the clothes more comfortable. By adding insulation it also improves health for those working outside, and can even save their lives.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
+        <German>[TAB][H1]Gepolsterte Ledermäntel[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PADDED_LEATHER_COATS_PEDIA</Tag>
@@ -1932,7 +2330,7 @@
         <Tag>TXT_KEY_UNIT_PADDED_LEATHER_COATS_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- MILK -->
+    <!-- MILK -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_MILK</Tag>
         <English>Milk</English>
@@ -1942,9 +2340,11 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Latte</Italian>
+        <Spanish>Leche</Spanish>
         <Russian>Молоко</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MILK</Tag>
         <English>Milk</English>
         <French>Lait</French>
@@ -1953,6 +2353,8 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Latte</Italian>
+        <Spanish>Leche</Spanish>
         <Russian>Молоко</Russian>
     </TEXT>
     <TEXT>
@@ -1964,12 +2366,18 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Latte</Italian>
+        <Spanish>Leche</Spanish>
         <Russian>Молоко</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_MILK_PEDIA</Tag>
-        <English>[TAB][H1]Milk[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Milk[COLOR_REVERT] comes from cows, sheep or goats on [LINK=TERRAIN_HILL]hill[\LINK] or [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain. To make a colonist produce milk, assign her to the [LINK=PROFESSION_MILKMAID]milkmaid[\LINK] profession.[NEWLINE]Milk production is highest on plots bearing the [LINK=BONUS_CATTLE]cattle[\LINK], [LINK=BONUS_SHEEP]sheep[\LINK] or [LINK=BONUS_GOATS]goats[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_RANCH]ranches[\LINK] on livestock-producing plots and employing [LINK=UNIT_MILKMAID]expert milkmaids[\LINK]. These experts can be hired in Europe.[NEWLINE]Milk is the raw material for making [LINK=YIELD_CHEESE]cheese[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Milk[COLOR_REVERT] as a business usually means the milk of cows, goats, or sheep. It's a good source of  protein and fat. When used to make [COLOR_HIGHLIGHT_TEXT]cheese[COLOR_REVERT], milk is acidified and the enzymes of either rennet or other bacterial enzymes are added to cause the casein to coagulate.</English>
+        <English>[TAB][H1]Milk[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Milk[COLOR_REVERT] comes from cows, sheep or goats on [LINK=TERRAIN_HILL]hill[\LINK] or [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain. To make a colonist produce milk, assign her to the [LINK=PROFESSION_MILKMAID]milkmaid[\LINK] profession.[NEWLINE]Milk production is highest on plots bearing the [LINK=BONUS_CATTLE]cattle[\LINK], [LINK=BONUS_SHEEP]sheep[\LINK] or [LINK=BONUS_GOATS]goats[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_RANCH]ranches[\LINK] on livestock-producing plots and employing [LINK=UNIT_MILKMAID]skilled milkmaids[\LINK]. These experts can be hired in Europe.[NEWLINE]Milk is the raw material for making [LINK=YIELD_CHEESE]cheese[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Milk[COLOR_REVERT] as a business usually means the milk of cows, goats, or sheep. It's a good source of protein and fat. When used to make [COLOR_HIGHLIGHT_TEXT]cheese[COLOR_REVERT], milk is acidified and the enzymes of either rennet or other bacterial enzymes are added to cause the casein to coagulate.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Milch[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MILK_PEDIA</Tag>
@@ -1979,19 +2387,21 @@
         <Tag>TXT_KEY_UNIT_MILK_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- KAUTSCHUK -->
+    <!-- KAUTSCHUK -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_KAUTSCHUK</Tag>
-        <English>Kautschuk</English>
+        <English>Rubber</English>
         <French>Caoutchouc</French>
         <German>
             <Text>Kautschuk</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Gomma</Italian>
+        <Spanish>Caucho</Spanish>
         <Russian>Каучук</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_KAUTSCHUK</Tag>
         <English>Rubber</English>
         <French>Caoutchouc</French>
@@ -2000,6 +2410,8 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Gomma</Italian>
+        <Spanish>Caucho</Spanish>
         <Russian>Каучук</Russian>
     </TEXT>
     <TEXT>
@@ -2011,12 +2423,18 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Gomma</Italian>
+        <Spanish>Caucho</Spanish>
         <Russian>Каучук</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_KAUTSCHUK_PEDIA</Tag>
         <English>[TAB][H1]Rubber[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rubber[COLOR_REVERT] can be collected in [LINK=TERRAIN_JUNGLE]jungle[\LINK] terrain. To make colonists produce rubber, assign them to the [LINK=PROFESSION_KAUTSCHUK_COLLECTOR]rubber collector[\LINK] profession.[NEWLINE]Rubber production is highest on plots bearing the [LINK=BONUS_KAUTSCHUK]rubber[\LINK] bonus, and can be increased by employing [LINK=UNIT_KAUTSCHUK_COLLECTOR]expert rubber collectors[\LINK]. These experts can be trained in Native villages or hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rubber[COLOR_REVERT] is harvested by making incisions in the bark of rubber trees. The latex is heated to create rubber that can be dried into waterproof sheets, along with other industrial products. Rubber has a large stretch ratio, high resilience and is also waterproof. It's classified as an elastomer.</English>
-        <German>[TAB][H1]Kautschuk[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <French>L'hévéa est récolté en pratiquant des incisions dans l'écorce des arbres à caoutchouc. Le latex est chauffé pour créer du caoutchouc qui peut être séché en feuilles imperméables avant d'être traité ultérieurement. Le caoutchouc présente un fort taux d'étirement, une grande résilience et est également imperméable. Il est classé dans la catégorie des élastomères.</French>
+        <German>[TAB][H1]Kautschuk[\H1][PARAGRAPH:2][BOLD]Kautschuk wird durch Einschnitte in die Rinde von Kautschukbäumen geerntet. Der Latex wird erhitzt, um Kautschuk zu erzeugen, der vor der Weiterverarbeitung zu wasserdichten Bahnen getrocknet werden kann. Kautschuk hat ein großes Dehnungsverhältnis, eine hohe Elastizität und ist außerdem wasserdicht. Er wird zu den Elastomeren gezählt.</German>
+        <Italian>La gomma viene raccolta praticando incisioni nella corteccia degli alberi della gomma. Il lattice viene riscaldato per creare gomma che può essere essiccata in fogli impermeabili prima di essere lavorata ulteriormente. La gomma ha un grande rapporto di elasticità, un'elevata resilienza ed è anche impermeabile. È classificata come elastomero.</Italian>
+        <Spanish>El caucho se recolecta haciendo incisiones en la corteza de los árboles del caucho. El látex se calienta para crear caucho que puede secarse en láminas impermeables antes de seguir procesándolo. El caucho tiene una gran elasticidad, una gran resistencia y es impermeable. Se clasifica como elastómero.</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_KAUTSCHUK_PEDIA</Tag>
@@ -2026,7 +2444,7 @@
         <Tag>TXT_KEY_UNIT_KAUTSCHUK_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- CHEESE -->
+    <!-- CHEESE -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHEESE</Tag>
         <English>Cheese</English>
@@ -2036,9 +2454,11 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Formaggio</Italian>
+        <Spanish>Queso</Spanish>
         <Russian>Сыр</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CHEESE</Tag>
         <English>Cheese</English>
         <French>Fromage</French>
@@ -2047,6 +2467,8 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Formaggio</Italian>
+        <Spanish>Queso</Spanish>
         <Russian>Сыр</Russian>
     </TEXT>
     <TEXT>
@@ -2058,12 +2480,18 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Formaggio</Italian>
+        <Spanish>Queso</Spanish>
         <Russian>Сыр</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHEESE_PEDIA</Tag>
-        <English>[TAB][H1]Cheese[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Cheese[COLOR_REVERT] is made from [LINK=YIELD_MILK]milk[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_CHEESE_MAKER]cheesemaker[\LINK] profession in the [LINK=BUILDING_CHEESEMAKERS_HOUSE]cheesemaker's house[\LINK] or one of its upgrades. The output of cheese can be doubled by commissioning [LINK=UNIT_CHEESE_MAKER]master cheesemakers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Cheese is produced in a wide range of flavours and textures by coagulation of the milk protein casein. It's made of proteins and fat from milk, usually the milk of cows, goats, or sheep. During production, milk is acidified and the enzymes of either rennet or other bacterial enzymes are added to cause the casein to coagulate. The solid curds are then separated from the liquid whey and pressed into finished cheese.</English>
-        <German>[TAB][H1]Käse[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <English>[TAB][H1]Cheese[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Cheese[COLOR_REVERT] is made from [LINK=YIELD_MILK]milk[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_CHEESE_MAKER]cheesemaker[\LINK] profession in the [LINK=BUILDING_STABLE]stable[\LINK] or one of its upgrades. The output of cheese can be doubled by commissioning [LINK=UNIT_CHEESE_MAKER]master cheesemakers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Cheese is produced in a wide range of flavours and textures by coagulation of the milk protein casein. It's made of proteins and fat from milk, usually the milk of cows, goats, or sheep. During production, milk is acidified and the enzymes of either rennet or other bacterial enzymes are added to cause the casein to coagulate. The solid curds are then separated from the liquid whey and pressed into finished cheese.</English>
+        <French>Le fromage est produit dans une large gamme de saveurs et de textures par la coagulation de la caséine, une protéine du lait. Il est composé de protéines et de matières grasses, provenant généralement du lait de vache, de chèvre ou de brebis. Pendant la production, le lait est acidifié et les enzymes de la présure ou d'autres enzymes bactériennes sont ajoutées pour provoquer la coagulation de la caséine. Le caillé solide est ensuite séparé du petit-lait liquide et pressé en fromage fini.</French>
+        <German>[TAB][H1]Käse[\H1][PARAGRAPH:2][BOLD]Käse wird durch Gerinnung des Milcheiweißes Kasein in einer breiten Palette von Geschmacksrichtungen und Texturen hergestellt. Er besteht aus Proteinen und Fett und wird normalerweise aus der Milch von Kühen, Ziegen oder Schafen gewonnen. Bei der Herstellung wird die Milch angesäuert und die Enzyme des Labs oder andere bakterielle Enzyme werden hinzugefügt, um das Kasein zur Gerinnung zu bringen. Der feste Käsebruch wird dann von der flüssigen Molke getrennt und zu fertigem Käse gepresst.</German>
+        <Italian>Il formaggio viene prodotto in un'ampia gamma di sapori e consistenze attraverso la coagulazione della proteina del latte, la caseina. È composto da proteine e grassi, solitamente provenienti dal latte di mucca, capra o pecora. Durante la produzione, il latte viene acidificato e vengono aggiunti gli enzimi del caglio o altri enzimi batterici per provocare la coagulazione della caseina. La cagliata solida viene quindi separata dal siero liquido e pressata per ottenere il formaggio finito.</Italian>
+        <Spanish>El queso se produce en una amplia gama de sabores y texturas por coagulación de la proteína láctea caseína. Está compuesto de proteínas y grasa, y suele proceder de la leche de vaca, cabra u oveja. Durante la producción, se acidifica la leche y se añaden las enzimas del cuajo u otras enzimas bacterianas para provocar la coagulación de la caseína. A continuación, la cuajada sólida se separa del suero líquido y se prensa para obtener el queso acabado.</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHEESE_PEDIA</Tag>
@@ -2073,7 +2501,7 @@
         <Tag>TXT_KEY_UNIT_CHEESE_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- POTTERY -->
+    <!-- POTTERY -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_POTTERY</Tag>
         <English>Pottery</English>
@@ -2083,9 +2511,11 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Ceramica</Italian>
+        <Spanish>Cerámica</Spanish>
         <Russian>Керамика</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_POTTERY</Tag>
         <English>Pottery</English>
         <French>Poteries</French>
@@ -2094,6 +2524,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Ceramica</Italian>
+        <Spanish>Cerámica</Spanish>
         <Russian>Керамика</Russian>
     </TEXT>
     <TEXT>
@@ -2105,12 +2537,18 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
+        <Italian>Ceramica</Italian>
+        <Spanish>Cerámica</Spanish>
         <Russian>Керамика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_POTTERY_PEDIA</Tag>
-        <English>[TAB][H1]Pottery[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pottery[COLOR_REVERT] is thrown from [LINK=YIELD_CLAY]clay[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_POTTER]potter[\LINK] profession in the [LINK=BUILDING_POTTERS_HOUSE]potter's house[\LINK] or one of its upgrades. The output of pottery can be doubled by commissioning a [LINK=UNIT_POTTER]master potter[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Pottery is an ancient way to store grain. Pottery thwarts the rats, mice and insects that would otherwise devour the crop and leave everyone to starve. A few creative types fashion imaginative vessels with decorative patterns, some merely for display. The Puritans strongly object.</English>
+        <English>[TAB][H1]Pottery[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pottery[COLOR_REVERT] is thrown from [LINK=YIELD_CLAY]clay[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_POTTER]potter[\LINK] profession in the [LINK=BUILDING_POTTERY_HOUSE]potter's house[\LINK] or one of its upgrades. The output of pottery can be doubled by commissioning a [LINK=UNIT_POTTER]master potter[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Pottery is an ancient way to store grain. Pottery thwarts the rats, mice and insects that would otherwise devour the crop and leave everyone to starve. A few creative types fashion imaginative vessels with decorative patterns, some merely for display. The Puritans strongly object.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Töpferwaren[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POTTERY_PEDIA</Tag>
@@ -2120,7 +2558,7 @@
         <Tag>TXT_KEY_UNIT_POTTERY_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- EVERYDAY_CLOTHES -->
+    <!-- EVERYDAY_CLOTHES -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_EVERYDAY_CLOTHES</Tag>
         <English>Everyday Clothes</English>
@@ -2130,9 +2568,11 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Abbigliamento per tutti i giorni</Italian>
+        <Spanish>Ropa de trabajo</Spanish>
         <Russian>Повседневная одежда</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_EVERYDAY_CLOTHES</Tag>
         <English>Everyday Clothes</English>
         <French>Vêtements ordinaires</French>
@@ -2141,6 +2581,8 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Abbigliamento per tutti i giorni</Italian>
+        <Spanish>Ropa de trabajo</Spanish>
         <Russian>Повседневная одежда</Russian>
     </TEXT>
     <TEXT>
@@ -2152,12 +2594,18 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Abbigliamento per tutti i giorni</Italian>
+        <Spanish>Ropa de trabajo</Spanish>
         <Russian>Повседневная одежда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_EVERYDAY_CLOTHES_PEDIA</Tag>
         <English>[TAB][H1]Everyday Clothes[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Everyday clothes[COLOR_REVERT] are made in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades. To do this, a colonist needs to have the [LINK=PROFESSION_Tailor]tailor[\LINK] profession. The output of everyday clothing can be doubled by commissioning [LINK=UNIT_TAILOR]master tailors[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Everyday clothes have to be hard-wearing but they still should look good. Most people can afford a change of clothes. Owning a variety of styles and colours is a sign of modest prosperity.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Alltagskleidung[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_EVERYDAY_CLOTHES_PEDIA</Tag>
@@ -2167,7 +2615,7 @@
         <Tag>TXT_KEY_UNIT_EVERYDAY_CLOTHES_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- FESTIVE_CLOTHES -->
+    <!-- FESTIVE_CLOTHES -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_FESTIVE_CLOTHES</Tag>
         <English>Formal Clothes</English>
@@ -2177,9 +2625,11 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Abiti da cerimonia</Italian>
+        <Spanish>Ropa formal</Spanish>
         <Russian>Праздничная одежда</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FESTIVE_CLOTHES</Tag>
         <English>Formal Clothes</English>
         <French>Vêtements festifs</French>
@@ -2188,6 +2638,8 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Abiti da cerimonia</Italian>
+        <Spanish>Ropa formal</Spanish>
         <Russian>Праздничная одежда</Russian>
     </TEXT>
     <TEXT>
@@ -2199,12 +2651,18 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>Abiti da cerimonia</Italian>
+        <Spanish>Ropa formal</Spanish>
         <Russian>Праздничная одежда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_FESTIVE_CLOTHES_PEDIA</Tag>
         <English>[TAB][H1]Formal Clothes[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Formal clothes[COLOR_REVERT] are made in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades. To do this, a colonist needs to have the [LINK=PROFESSION_Tailor]tailor[\LINK] profession. The output of formal clothing can be doubled by commissioning [LINK=UNIT_TAILOR]master tailors[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]The tailor creates the well-dressed man and the stylish woman. In a growing town with a fashionable tailor, everyone from the merchant to the entertainer to the blacksmith buys there to look their best.</English>
+        <French>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Stratégie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Contexte :[\BOLD][NEWLINE]</French>
         <German>[TAB][H1]Festliche Kleidung[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+        <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
+        <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FESTIVE_CLOTHES_PEDIA</Tag>

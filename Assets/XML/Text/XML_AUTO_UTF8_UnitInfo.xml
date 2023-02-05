@@ -33,7 +33,7 @@
         <Tag>TXT_KEY_UNIT_AFRICAN_SLAVE_PEDIA</Tag>
         <English>An estimated 12 million Africans arrived in the Americas from the 16th to the 19th centuries.[NEWLINE]Of these, an estimated 645,000 were brought to what is now the United States.[NEWLINE]The usual estimate is that about 15 per cent of slaves died during the voyage, with mortality rates considerably higher in Africa itself in the process of capturing and transporting local people to the ships.[NEWLINE]Approximately 6 million black Africans were killed by others in tribal wars.</English>
         <French>On estime à 12 millions le nombre d'africains arrivés aux Amériques entre le 16ème et le 19ème siècle. Parmi ceux-ci, environ 645 000 sont arrivés aux actuels Etats-Unis. On estime généralement à 15% le taux de mortalité des captifs pendant le voyage.</French>
-        <German>Die Kolonisierung Amerikas vom 16. bis 19. Jahrhundert ging mit einer Massenversklavung von Afrikanern einher, die in allen Teilen des dünn besiedelten Doppelkontinents als billige Arbeitskräfte eingesetzt wurden. Dies betrifft nicht nur die britischen, niederländischen, schwedischen, französischen und spanischen Kolonien, aus denen später die Vereinigten Staaten entstanden sind, sondern in noch grösserem Umfang Brasilien und die europäischen Kolonien in der Karibik. Auf dem nordamerikanischen Festland erlangte die Sklaverei jedoch Ausprägungsformen, die auf dem Doppelkontinent einzigartig waren, und nach der Gründung der Vereinigten Staaten stand sie im Spannungsfeld zwischen einer Ökonomie, die auf der Arbeitsleistung von Sklaven erbaut war, und dem politischen Programm einer jungen Nation, deren Selbstverständnis prominent die Idee der Freiheit zugrundelag.</German>
+        <German>Die Kolonisierung Amerikas vom 16. bis 19. Jahrhundert ging mit einer Massenversklavung von Afrikanern einher, die in allen Teilen des dünn besiedelten Doppelkontinents als billige Arbeitskräfte eingesetzt wurden. Dies betrifft nicht nur die britischen, niederländischen, schwedischen, französischen und spanischen Kolonien, aus denen später die Vereinigten Staaten entstanden sind, sondern in noch größerem Umfang Brasilien und die europäischen Kolonien in der Karibik. Auf dem nordamerikanischen Festland erlangte die Sklaverei jedoch Ausprägungsformen, die auf dem Doppelkontinent einzigartig waren, und nach der Gründung der Vereinigten Staaten stand sie im Spannungsfeld zwischen einer Ökonomie, die auf der Arbeitsleistung von Sklaven erbaut war, und dem politischen Programm einer jungen Nation, deren Selbstverständnis prominent die Idee der Freiheit zugrundelag.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_AFRICAN_SLAVE_STRATEGY</Tag>
@@ -436,7 +436,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_SLAVE_BARQUE_STRATEGY</Tag>
         <English>[COLOR_UNIT_TEXT]Slave barques[COLOR_REVERT] are relatively pricey [COLOR_HIGHLIGHT_TEXT]merchant ships[COLOR_REVERT] Like ships with hidden nationality they can sail to Port Royal. They can carry only [COLOR_HIGHLIGHT_TEXT]goods[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]slaves[COLOR_REVERT]. They have five cargo slots with a speed of five tiles and are stronger than [LINK=UNIT_BRIGANTINE]brigantines[\LINK]. [PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Slave barques[COLOR_REVERT] can be bought in [LINK=CONCEPT_AFRICA]Africa[\LINK] or built in colonies with a [LINK=BUILDING_DRYDOCK]drydock[\LINK] or one of its upgrades. Like most ships, they require [LINK=YIELD_CANNONS]cannons[\LINK], [LINK=YIELD_ROPE]ropes[\LINK], [LINK=YIELD_SAILCLOTH]sailcloth[\LINK] and [LINK=YIELD_TOOLS]tools[\LINK].[PARAGRAPH:2]For a comparison of all available ships, see [LINK=CONCEPT_SHIPS]Ships[\LINK].</English>
-        <German>[COLOR_UNIT_TEXT]Sklavenbarken[COLOR_REVERT] sind relativ teure [COLOR_HIGHLIGHT_TEXT]Handelsschiffe[COLOR_REVERT], die wie sonst nur Schiffe unter versteckter auch nach Port Royal segeln können. Allerdings können sie lediglich [COLOR_HIGHLIGHT_TEXT]Güter[COLOR_REVERT] oder [COLOR_HIGHLIGHT_TEXT]Sklaven[COLOR_REVERT] laden. Sie haben fünf und auch eine Geschwindigkeit von fünf Feldern pro Zug und sind stärker als eine [LINK=UNIT_BRIGANTINE]Brigantine[\LINK]. [PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sklavenbarken[COLOR_REVERT] können in [LINK=CONCEPT_AFRICA]Afrika[\LINK] erworben oder in den Kolonien mit einem [LINK=BUILDING_DRYDOCK]Trockendock[\LINK] oder dessen Ausbauten gebaut werden. Wie die meisten Schiffe benötigen sie dazu [LINK=YIELD_CANNONS]Kannonen[\LINK], [LINK=YIELD_ROPE]Seile[\LINK], [LINK=YIELD_SAILCLOTH]Segeln[\LINK] und [LINK=YIELD_TOOLS]Werkzeuge[\LINK].</German>
+        <German>[COLOR_UNIT_TEXT]Sklavenbarken[COLOR_REVERT] sind relativ teure [COLOR_HIGHLIGHT_TEXT]Handelsschiffe[COLOR_REVERT], die wie sonst nur Schiffe unter versteckter Nationalität auch nach Port Royal segeln können. Allerdings können sie lediglich [COLOR_HIGHLIGHT_TEXT]Güter[COLOR_REVERT] oder [COLOR_HIGHLIGHT_TEXT]Sklaven[COLOR_REVERT] laden. Sie haben fünf und auch eine Geschwindigkeit von fünf Feldern pro Zug und sind stärker als eine [LINK=UNIT_BRIGANTINE]Brigantine[\LINK]. [PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sklavenbarken[COLOR_REVERT] können in [LINK=CONCEPT_AFRICA]Afrika[\LINK] erworben oder in den Kolonien mit einem [LINK=BUILDING_DRYDOCK]Trockendock[\LINK] oder dessen Ausbauten gebaut werden. Wie die meisten Schiffe benötigen sie dazu [LINK=YIELD_CANNONS]Kanonen[\LINK], [LINK=YIELD_ROPE]Seile[\LINK], [LINK=YIELD_SAILCLOTH]Segeln[\LINK] und [LINK=YIELD_TOOLS]Werkzeuge[\LINK].</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BUTCHER</Tag>
@@ -456,12 +456,12 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Master Butcher:Master Butchers</Text>
+            <Text>Mastro Macellaio:Mastri Macellai</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Master Butcher:Master Butchers</Text>
+            <Text>Maestro Carnicero:Maestros Carniceros</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -475,7 +475,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BUTCHER_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Master butchers[COLOR_REVERT] are valuable cogs in your food-production machinery. These specialists slaughter double the[LINK=YIELD_SHEEP]sheep[\LINK] or [LINK=YIELD_CATTLE]cattle[\LINK] in the time a [COLOR_UNIT_TEXT]free colonist[COLOR_REVERT] would take, when assigned to either the [LINK=PROFESSION_BUTCHER_SHEEP]butcher (sheep)[\LINK] or [LINK=PROFESSION_BUTCHER_CATTLE]butcher (cattle)[\LINK] profession. They deliver twice the [LINK=YIELD_WOOL]wool[\LINK] and [LINK=YIELD_HIDES]cowhides[\LINK] and, of course, master butchers produce [LINK=YIELD_FOOD]food[\LINK] as well![PARAGRAPH:1]Master butchers can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]trained[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its upgrades.</English>
+        <English>[COLOR_UNIT_TEXT]Master butchers[COLOR_REVERT] are valuable cogs in your food-production machinery. These specialists slaughter double the [LINK=YIELD_SHEEP]sheep[\LINK] or [LINK=YIELD_CATTLE]cattle[\LINK] in the time a [COLOR_UNIT_TEXT]free colonist[COLOR_REVERT] would take, when assigned to either the [LINK=PROFESSION_BUTCHER_SHEEP]butcher (sheep)[\LINK] or [LINK=PROFESSION_BUTCHER_CATTLE]butcher (cattle)[\LINK] profession. They deliver twice the [LINK=YIELD_WOOL]wool[\LINK] and [LINK=YIELD_HIDES]cowhides[\LINK] and, of course, master butchers produce [LINK=YIELD_FOOD]food[\LINK] as well![PARAGRAPH:1]Master butchers can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]trained[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its upgrades.</English>
         <French>Les [COLOR_UNIT_TEXT]maîtres bouchers[COLOR_REVERT] produisent deux fois plus de [COLOR_HIGHLIGHT_TEXT]nourriture[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]laine[COLOR_REVERT] et [COLOR_HIGHLIGHT_TEXT]peaux[COLOR_REVERT] à partir de [COLOR_HIGHLIGHT_TEXT]mouton[COLOR_REVERT] et de [COLOR_HIGHLIGHT_TEXT]bétail[COLOR_REVERT].</French>
         <German>[COLOR_UNIT_TEXT]Fleischermeister[COLOR_REVERT] produzieren doppelt so viel [COLOR_HIGHLIGHT_TEXT]Nahrung[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wolle[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]Tierhäute[COLOR_REVERT] von [COLOR_HIGHLIGHT_TEXT]Schafen[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]Rindern[COLOR_REVERT].</German>
     </TEXT>
@@ -988,7 +988,7 @@
         <French>
             <Text>Feuilles de coca</Text>
             <Gender>Female</Gender>
-           <Plural>1</Plural>
+            <Plural>1</Plural>
         </French>
         <German>
             <Text>Cocablätter</Text>
@@ -1074,8 +1074,8 @@
         <English>Expert Cocoa Planter:Expert Cocoa Planters</English>
         <French>Expert planteur de cacao:Experts planteurs de cacao</French>
         <German>Erfahrener Kakaopflücker:Erfahrene Kakaopflücker</German>
-        <Italian>Expert Cocoa Planter:Expert Cocoa Planters</Italian>
-        <Spanish>Expert Cocoa Planter:Expert Cocoa Planters</Spanish>
+        <Italian>Esperto piantatore di cacao:Esperti piantatori di cacao</Italian>
+        <Spanish>Experto plantador de cacao:Expertos plantador de cacao</Spanish>
         <Russian>Опытный плантатор какао:Опытные плантаторы какао</Russian>
     </TEXT>
     <TEXT>
@@ -1121,7 +1121,7 @@
         <French>L'histoire du café commence au 9ème siècle. On pense que cela avoir provenu des montagnes de l'Ethiopie et se écarterait au reste du monde par l'intermédiaire de l'Egypte et de l'Europe. Le café de mot est dérivé du mot arabe Qah'wa, au-dessus du tabouret Kahve turc, qui a à l'origine signifié le vin ou d'autres boissons alcoolisées intoxiquantes. Partiellement dû à la prohibition islamique sur le café d'alcool, de préparation et de boissons potable est devenu un rituel social important. Au 15ème siècle, les musulmans ont présenté le café en Perse, Egypte, Afrique nordique et la Turquie, où le premier cafétéria, Kiva Han, s'est ouvert en 1475 à Constantinople. L'effet de stimulant de boire du café l'a causé d'être interdit parmi des imams orthodoxes et conservateurs dans Mecque en 1511 et au Caire en 1532 par une cour théologique. En Egypte, les cafés et les entrepôts contenant des cerises de café étaient sacked. Mais la popularité du produit, en particulier parmi des intellectuels, a mené à l'inversion de cette décision en 1524 par un ordre du Sultan turc Selim I de tabouret. Du monde musulman, le café s'est écarté en Europe, où il est devenu populaire au 17ème siècle. Les commerçants hollandais étaient les premiers pour engager l'importation à grande échelle du café dans l'Europe.</French>
         <German>Die Geschichte des Kaffees fängt im 9. Jahrhundert an. Es wird vermutet, daß die Kaffeepflanze ursprünglich aus dem Hochland von Äthiopien stammt, von wo sich das Kaffeetrinken über Ägypten und Europa in den Rest der Welt verbreitete. Der Wort Kaffee stammt vom arabischen Wort Qah'wa, in Osmanischem Türkisch auch Kahve, ab, das ursprünglich Wein oder andere berauschende Getränke bedeutete. Unter anderem aufgrund des islamischen Alkoholverbots wurde die Zubereitung und das Trinken von Kaffee zu einem wichtigen gesellschaftlichen Ritual. Im 15. Jahrhundert führten Moslems Kaffee in Persien, Ägypten, Nordafrika und in der Türkei ein, wo die erste Cafeteria, Kiva Han, im Jahre 1475 in Konstantinopel eröffnet wurde. Die anregende Wirkung des Kaffeetrinkens führte 1511 zum Verbot durch orthodoxe und konservative Imame in Mekka und 1532 durch ein theologisches Gericht in Kairo. In Ägypten wurden daraufhin die Cafés und Lagerhäuser, die Kaffeebeeren enthielten, geplündert. Aber die Popularität des Produktes, besonders unter Intellektuellen, führten zur Rücknahme der Entscheidung 1524 durch einen Auftrag des Osmanischen Sultans Selim I. Von der moslemischen Welt verbreitete sich das Kaffeetrinken nach Europa, wo es im 17. Jahrhundert populär wurde. Holländische Händler waren die ersten, die im grossen Stil den Import von Kaffee nach Europa begannen.</German>
         <Italian>La storia di caffè comincia nel nono secolo. Si pensa per provenire dagli altopiani dell'Etiopia e per spargersi al resto del mondo via l'Egitto ed Europa. Il caffè di parola è derivato dalla parola araba Qah'wa, sopra il ottoman Kahve turco, che originalmente ha significato il vino o altri liquori intoxicating. Parzialmente dovuto la proibizione islamica sul caffè di preparazione e di bevanda bevente dell'alcool, è diventato un rituale sociale importante. Nel quindicesimo secolo, i musulmani hanno introdotto il caffè nella Persia, Egitto, Africa del Nord e la Turchia, in cui il primo self-service, Kiva Han, si è aperto in 1475 a Constantinople. L'effetto dello stimolante di bere il caffè lo ha indotto ad essere proibito a fra i imams ortodossi e conservatori in Mecca in 1511 ed a Cairo in 1532 da una corte theological. Nell'Egitto, i coffeehouses ed i magazzini che contengono le ciliege del caffè erano sacked. Ma la popolarità del prodotto, specialmente fra gli intellettuali, ha condotto all'inversione di questa decisione in 1524 da un ordine del ottoman Sultan turco Selim I. Dal mondo musulmano, il caffè si è sparso ad Europa, in cui è diventato popolare nel diciassettesimo secolo. I commercianti olandesi erano i primi per avviare l'importazione della grande scala di caffè in Europa.</Italian>
-        <Spanish>La historia del café comienza en el 9no siglo. Se piensa para haber originado en las montañas de Etiopía y para haberse separado al resto del mundo vía Egipto y Europa. El café de la palabra se deriva de la palabra árabe Qah'wa, sobre el otomano Kahve turco, que significó originalmente el vino u otros licores que intoxicaban. En parte  debido a la prohibición islámica en el café del alcohol que bebía, de la preparación y el beber llegó a ser un ritual social importante. En el décimo quinto siglo, los musulmanes introdujeron el café en Persia, Egipto, África norteña y Turquía, adonde la primera cafetería, Kiva Han, se abrió en 1475 en Constantinople. El efecto del estimulante de beber el café lo hizo ser prohibido entre imams ortodoxos y conservadores en Mecca en 1511 y en El Cairo en 1532 por una corte teológica. En Egipto, los cafés y los almacenes que contenían cerezas del café estaban sacked. Pero el renombre del producto, particularmente entre intelectuales, condujo a la revocación de esta decisión en 1524 por una orden del Sultán turco Selim I del otomano. Del mundo musulmán, el café se separó a Europa, en donde llegó a ser popular en el 17mo siglo. Los comerciantes holandeses eran los primeros para encender la importación de la escala grande del café en Europa.</Spanish>
+        <Spanish>La historia del café comienza en el 9no siglo. Se piensa para haber originado en las montañas de Etiopía y para haberse separado al resto del mundo vía Egipto y Europa. El café de la palabra se deriva de la palabra árabe Qah'wa, sobre el otomano Kahve turco, que significó originalmente el vino u otros licores que intoxicaban. En parte debido a la prohibición islámica en el café del alcohol que bebía, de la preparación y el beber llegó a ser un ritual social importante. En el décimo quinto siglo, los musulmanes introdujeron el café en Persia, Egipto, África norteña y Turquía, adonde la primera cafetería, Kiva Han, se abrió en 1475 en Constantinople. El efecto del estimulante de beber el café lo hizo ser prohibido entre imams ortodoxos y conservadores en Mecca en 1511 y en El Cairo en 1532 por una corte teológica. En Egipto, los cafés y los almacenes que contenían cerezas del café estaban sacked. Pero el renombre del producto, particularmente entre intelectuales, condujo a la revocación de esta decisión en 1524 por una orden del Sultán turco Selim I del otomano. Del mundo musulmán, el café se separó a Europa, en donde llegó a ser popular en el 17mo siglo. Los comerciantes holandeses eran los primeros para encender la importación de la escala grande del café en Europa.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COFFEE_STRATEGY</Tag>
@@ -1146,7 +1146,7 @@
         <French>L'histoire du café commence au 9ème siècle. On pense que cela avoir provenu des montagnes de l'Ethiopie et se écarterait au reste du monde par l'intermédiaire de l'Egypte et de l'Europe. Le café de mot est dérivé du mot arabe Qah'wa, au-dessus du tabouret Kahve turc, qui a à l'origine signifié le vin ou d'autres boissons alcoolisées intoxiquantes. Partiellement dû à la prohibition islamique sur le café d'alcool, de préparation et de boissons potable est devenu un rituel social important. Au 15ème siècle, les musulmans ont présenté le café en Perse, Egypte, Afrique nordique et la Turquie, où le premier cafétéria, Kiva Han, s'est ouvert en 1475 à Constantinople. L'effet de stimulant de boire du café l'a causé d'être interdit parmi des imams orthodoxes et conservateurs dans Mecque en 1511 et au Caire en 1532 par une cour théologique. En Egypte, les cafés et les entrepôts contenant des cerises de café étaient sacked. Mais la popularité du produit, en particulier parmi des intellectuels, a mené à l'inversion de cette décision en 1524 par un ordre du Sultan turc Selim I de tabouret. Du monde musulman, le café s'est écarté en Europe, où il est devenu populaire au 17ème siècle. Les commerçants hollandais étaient les premiers pour engager l'importation à grande échelle du café dans l'Europe.</French>
         <German>Die Geschichte des Kaffees fängt im 9. Jahrhundert an. Es wird vermutet, daß die Kaffeepflanze ursprünglich aus dem Hochland von Äthiopien stammt, von wo sich das Kaffeetrinken über Ägypten und Europa in den Rest der Welt verbreitete. Der Wort Kaffee stammt vom arabischen Wort Qah'wa, in Osmanischem Türkisch auch Kahve, ab, das ursprünglich Wein oder andere berauschende Getränke bedeutete. Unter anderem aufgrund des islamischen Alkoholverbots wurde die Zubereitung und das Trinken von Kaffee zu einem wichtigen gesellschaftlichen Ritual. Im 15. Jahrhundert führten Moslems Kaffee in Persien, Ägypten, Nordafrika und in der Türkei ein, wo die erste Cafeteria, Kiva Han, im Jahre 1475 in Konstantinopel eröffnet wurde. Die anregende Wirkung des Kaffeetrinkens führte 1511 zum Verbot durch orthodoxe und konservative Imame in Mekka und 1532 durch ein theologisches Gericht in Kairo. In Ägypten wurden daraufhin die Cafés und Lagerhäuser, die Kaffeebeeren enthielten, geplündert. Aber die Popularität des Produktes, besonders unter Intellektuellen, führten zur Rücknahme der Entscheidung 1524 durch einen Auftrag des Osmanischen Sultans Selim I. Von der moslemischen Welt verbreitete sich das Kaffeetrinken nach Europa, wo es im 17. Jahrhundert populär wurde. Holländische Händler waren die ersten, die im grossen Stil den Import von Kaffee nach Europa begannen.</German>
         <Italian>La storia di caffè comincia nel nono secolo. Si pensa per provenire dagli altopiani dell'Etiopia e per spargersi al resto del mondo via l'Egitto ed Europa. Il caffè di parola è derivato dalla parola araba Qah'wa, sopra il ottoman Kahve turco, che originalmente ha significato il vino o altri liquori intoxicating. Parzialmente dovuto la proibizione islamica sul caffè di preparazione e di bevanda bevente dell'alcool, è diventato un rituale sociale importante. Nel quindicesimo secolo, i musulmani hanno introdotto il caffè nella Persia, Egitto, Africa del Nord e la Turchia, in cui il primo self-service, Kiva Han, si è aperto in 1475 a Constantinople. L'effetto dello stimolante di bere il caffè lo ha indotto ad essere proibito a fra i imams ortodossi e conservatori in Mecca in 1511 ed a Cairo in 1532 da una corte theological. Nell'Egitto, i coffeehouses ed i magazzini che contengono le ciliege del caffè erano sacked. Ma la popolarità del prodotto, specialmente fra gli intellettuali, ha condotto all'inversione di questa decisione in 1524 da un ordine del ottoman Sultan turco Selim I. Dal mondo musulmano, il caffè si è sparso ad Europa, in cui è diventato popolare nel diciassettesimo secolo. I commercianti olandesi erano i primi per avviare l'importazione della grande scala di caffè in Europa.</Italian>
-        <Spanish>La historia del café comienza en el 9no siglo. Se piensa para haber originado en las montañas de Etiopía y para haberse separado al resto del mundo vía Egipto y Europa. El café de la palabra se deriva de la palabra árabe Qah'wa, sobre el otomano Kahve turco, que significó originalmente el vino u otros licores que intoxicaban. En parte  debido a la prohibición islámica en el café del alcohol que bebía, de la preparación y el beber llegó a ser un ritual social importante. En el décimo quinto siglo, los musulmanes introdujeron el café en Persia, Egipto, África norteña y Turquía, adonde la primera cafetería, Kiva Han, se abrió en 1475 en Constantinople. El efecto del estimulante de beber el café lo hizo ser prohibido entre imams ortodoxos y conservadores en Mecca en 1511 y en El Cairo en 1532 por una corte teológica. En Egipto, los cafés y los almacenes que contenían cerezas del café estaban sacked. Pero el renombre del producto, particularmente entre intelectuales, condujo a la revocación de esta decisión en 1524 por una orden del Sultán turco Selim I del otomano. Del mundo musulmán, el café se separó a Europa, en donde llegó a ser popular en el 17mo siglo. Los comerciantes holandeses eran los primeros para encender la importación de la escala grande del café en Europa.</Spanish>
+        <Spanish>La historia del café comienza en el 9no siglo. Se piensa para haber originado en las montañas de Etiopía y para haberse separado al resto del mundo vía Egipto y Europa. El café de la palabra se deriva de la palabra árabe Qah'wa, sobre el otomano Kahve turco, que significó originalmente el vino u otros licores que intoxicaban. En parte debido a la prohibición islámica en el café del alcohol que bebía, de la preparación y el beber llegó a ser un ritual social importante. En el décimo quinto siglo, los musulmanes introdujeron el café en Persia, Egipto, África norteña y Turquía, adonde la primera cafetería, Kiva Han, se abrió en 1475 en Constantinople. El efecto del estimulante de beber el café lo hizo ser prohibido entre imams ortodoxos y conservadores en Mecca en 1511 y en El Cairo en 1532 por una corte teológica. En Egipto, los cafés y los almacenes que contenían cerezas del café estaban sacked. Pero el renombre del producto, particularmente entre intelectuales, condujo a la revocación de esta decisión en 1524 por una orden del Sultán turco Selim I del otomano. Del mundo musulmán, el café se separó a Europa, en donde llegó a ser popular en el 17mo siglo. Los comerciantes holandeses eran los primeros para encender la importación de la escala grande del café en Europa.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COFFEE_BERRIES_STRATEGY</Tag>
@@ -1166,12 +1166,12 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Coltivatore esp. di Caffè:Coltivatori esp. di Caffè</Text>
+            <Text>Esperto piantatore di caffè:Esperti piantatori di caffè</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Café experto:Café expertos</Text>
+            <Text>Experto plantador de café:Expertos plantador de café</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -1362,7 +1362,7 @@
             <Plural>0:1</Plural>
         </English>
         <German>
-            <Text>Sklavenbesitzer:Sklavenbesitzer</Text>
+            <Text>Sklavenaufseher:Sklavenaufseher</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -1376,7 +1376,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_SLAVE_MASTER_STRATEGY</Tag>
         <English>[COLOR_UNIT_TEXT]Slave overseers[COLOR_REVERT] drive slaves, criminals and indentured servants to work harder to produce more. You can only acquire them by recruitment in Africa or by rare events.</English>
-        <German>[COLOR_UNIT_TEXT]Sklavenbesitzer[COLOR_REVERT] sind in der Lage Sklaven, Kriminelle und Leibeigene härter arbeiten zu lassen um mehr zu produzieren. Sie können lediglich in Afrika rekrutiert werden oder durch seltene Ereignisse erhalten werden.</German>
+        <German>[COLOR_UNIT_TEXT]Sklavenaufseher[COLOR_REVERT] sind in der Lage Sklaven, Kriminelle und Leibeigene härter arbeiten zu lassen, um mehr zu produzieren. Sie können lediglich in Afrika rekrutiert werden oder durch seltene Ereignisse erhalten werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONTINENTAL_GUARD</Tag>
@@ -1477,23 +1477,23 @@
         <Tag>TXT_KEY_UNIT_CORVETTE_PEDIA</Tag>
         <English>During the Age of Sail, corvettes were one of many types of small warships.[NEWLINE]The role of the corvette was coastal patrol, fighting minor wars, supporting large fleets or participating in show-the-flag missions.[NEWLINE]The English Navy began using small ships in the 1650s, but described them as sloops-of-war rather than corvettes.[NEWLINE]The first reference to a corvette was with the French Navy in the 1670s. The Royal Navy did not use the term until after the Napoleonic Wars to describe a small unrated vessel somewhat larger than a sloop and smaller than a frigate.</English>
         <French>La corvette est une catégorie de petit navire de guerre, léger et rapide, qui apparaît en France à la fin du XVIIe siècle. C'est d'abord un petit trois mâts, qui n'est jamais armé de plus de vingt canons en batterie, qui sert à effectuer des missions de découverte. Il sert aussi de liaison pour transmettre des ordres ou des courriers. De nombreuses corvettes serviront par la suite au transport marchand. Sa taille au fil des siècles augmente au point que les corvettes de l'ère révolutionnaire valent les Frégates légères, de 6 et de 8, du siècle précédent.</French>
-        <German>Während des Zeitalters der Segelschiffe waren Korvetten kleinere bis mittlere Kriegsschiffe.[NEWLINE]Aufgaben der Korvetten waren üblicherweise Küstenpatrouillen, die Bekämpfung von Piraten oder die Aufklärung für grössere Flotten.[NEWLINE]Die Englische Marine begann die Nutzung solch kleiner Schiffe in den 1650'ern, nannte sie aber zu Beginn allerdings Sloop-of-War.[NEWLINE]Die erste namentliche Referenz einer Korvette findet sich in der Französischen Marine um 1670 und gilt als der Ursprung dieser Bezeichnung. Die Bezeichnung Korvette diente ab diesem Zeitpunkt zur Beschreibung eines Schiffes, welches kleiner als eine Fregatte, aber größer als eine Sloop war.</German>
+        <German>Während des Zeitalters der Segelschiffe waren Korvetten kleinere bis mittlere Kriegsschiffe.[NEWLINE]Aufgaben der Korvetten waren üblicherweise Küstenpatrouillen, die Bekämpfung von Piraten oder die Aufklärung für größere Flotten.[NEWLINE]Die Englische Marine begann die Nutzung solch kleiner Schiffe in den 1650'ern, nannte sie aber zu Beginn allerdings Sloop-of-War.[NEWLINE]Die erste namentliche Referenz einer Korvette findet sich in der Französischen Marine um 1670 und gilt als der Ursprung dieser Bezeichnung. Die Bezeichnung Korvette diente ab diesem Zeitpunkt zur Beschreibung eines Schiffes, welches kleiner als eine Fregatte, aber größer als eine Sloop war.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CORVETTE_STRATEGY</Tag>
         <English>[COLOR_UNIT_TEXT]Corvettes[COLOR_REVERT] are excellent escorts for your merchant ships and especially well-suited for hunting [LINK=UNIT_PRIVATEER]privateers[\LINK] and [LINK=UNIT_PIRATE_FRIGATE]pirate frigates[\LINK], receiving a 20% attack bonus against both.[NEWLINE]They are fast units, and cheaper to purchase than [LINK=UNIT_FRIGATE]frigates[\LINK].[NEWLINE]In combat, though, they will not stand much of a chance against frigates or other stronger ships.[NEWLINE][COLOR_HIGHLIGHT_TEXT]Corvettes[COLOR_REVERT] can be acquired in [LINK=CONCEPT_EUROPE]Europe[\LINK] and be built in colonies with a [LINK=BUILDING_SHIPYARD]shipyard[\LINK] or one of its upgrades.[NEWLINE]Like most ships, they require [LINK=YIELD_CANNONS]cannons[\LINK], [LINK=YIELD_BLADES]blades[\LINK], [LINK=YIELD_ROPE]ropes[\LINK], [LINK=YIELD_SAILCLOTH]sailcloth[\LINK] and [LINK=YIELD_TOOLS]tools[\LINK].[PARAGRAPH:2]For a comparison of all available ships, see [LINK=CONCEPT_SHIPS]Ships[\LINK].</English>
         <French>Les [COLOR_UNIT_TEXT]corvettes[COLOR_REVERT] sont d'excellentes escortes pour vos navires marchands et particulièrement adaptés à la chasse aux corsaires. Elles ne font cependant pas le poids face à des navires de guerres plus imposants comme les frégates et ne peuvent pas bombarder les villes.</French>
-        <German>[COLOR_UNIT_TEXT]Korvetten[COLOR_REVERT] sind exzellent als Eskorte für Handelsschiffe oder zur Jagd auf Piraten geeignet. Für grössere Kriegsschiffe, wie eine Fregatte, ein Linienschiff oder gar ein königliches Linienschiff, stellen sie jedoch keine ernsthafte Herausforderung dar. Desweiteren können sie keine Städte bombardieren.</German>
+        <German>[COLOR_UNIT_TEXT]Korvetten[COLOR_REVERT] sind exzellent als Eskorte für Handelsschiffe oder zur Jagd auf Piraten geeignet. Für größere Kriegsschiffe, wie eine Fregatte, ein Linienschiff oder gar ein königliches Linienschiff, stellen sie jedoch keine ernsthafte Herausforderung dar. Desweiteren können sie keine Städte bombardieren.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_NAVAL_BRIG</Tag>
         <English>
-            <Text>Naval Brig:Naval Brigs</Text>
+            <Text>Brig-of-war:Brigs-of-war</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </English>
         <German>
-            <Text>Flottenbrigg:Flottenbriggs</Text>
+            <Text>Kanonenbrigg:Kanonenbriggs</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -1506,8 +1506,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_NAVAL_BRIG_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Naval brigs[COLOR_REVERT] are the ideal ships to board and capture other ships due to their maneuverability. They are also excellent escorts for merchant ships since they are especially well-suited for attacking [LINK=UNIT_PRIVATEER]privateers[\LINK] and [LINK=UNIT_PIRATE_FRIGATE]pirate frigates[\LINK], receiving a small attack bonus against both.[NEWLINE]They are fast units, and cheaper to purchase than [LINK=UNIT_FRIGATE]frigates[\LINK].[NEWLINE]In combat, though, they will not stand much of a chance against frigates or other stronger ships.[NEWLINE][COLOR_HIGHLIGHT_TEXT]Naval brigs[COLOR_REVERT] can be purchased in [LINK=CONCEPT_EUROPE]Europe[\LINK] or built in colonies with a [LINK=BUILDING_SHIPYARD]shipyard[\LINK] or one of its upgrades.[NEWLINE]Like most ships, they need [LINK=YIELD_CANNONS]cannons[\LINK], [LINK=YIELD_BLADES]blades[\LINK], [LINK=YIELD_ROPE]ropes[\LINK], [LINK=YIELD_SAILCLOTH]sailcloth[\LINK] and [LINK=YIELD_TOOLS]tools[\LINK].[PARAGRAPH:2]For a comparison of all available ships, see [LINK=CONCEPT_SHIPS]Ships[\LINK].</English>
-        <German>[COLOR_UNIT_TEXT]Flottenbriggs[COLOR_REVERT] sind die besten Schiffe und andere Schiffe zu borden und zu übernehmen. Sie sind zudem exzellent als Eskorte für Handelsschiffe oder zur Jagd auf Piraten geeignet. Für grössere Kriegsschiffe, wie eine Fregatte, ein Linienschiff oder gar ein königliches Linienschiff, stellen sie jedoch keine ernsthafte Herausforderung dar. Desweiteren können sie keine Städte bombardieren.</German>
+        <English>[COLOR_UNIT_TEXT]Brigs-of-war[COLOR_REVERT] are the ideal ships to board and capture other ships due to their maneuverability. They are also excellent escorts for merchant ships since they are especially well-suited for attacking [LINK=UNIT_PRIVATEER]privateers[\LINK] and [LINK=UNIT_PIRATE_FRIGATE]pirate frigates[\LINK], receiving a small attack bonus against both.[NEWLINE]They are fast units, and cheaper to purchase than [LINK=UNIT_FRIGATE]frigates[\LINK].[NEWLINE]In combat, though, they will not stand much of a chance against frigates or other stronger ships.[NEWLINE][COLOR_HIGHLIGHT_TEXT]Brigs-of-war[COLOR_REVERT] can be purchased in [LINK=CONCEPT_EUROPE]Europe[\LINK] or built in colonies with a [LINK=BUILDING_SHIPYARD]shipyard[\LINK] or one of its upgrades.[NEWLINE]Like most ships, they need [LINK=YIELD_CANNONS]cannons[\LINK], [LINK=YIELD_BLADES]blades[\LINK], [LINK=YIELD_ROPE]ropes[\LINK], [LINK=YIELD_SAILCLOTH]sailcloth[\LINK] and [LINK=YIELD_TOOLS]tools[\LINK].[PARAGRAPH:2]For a comparison of all available ships, see [LINK=CONCEPT_SHIPS]Ships[\LINK].</English>
+        <German>[COLOR_UNIT_TEXT]Kanonenbriggs[COLOR_REVERT] sind die besten Schiffe, um andere Schiffe zu entern und als Prise zu nehmen. Sie sind zudem exzellent als Eskorte für Handelsschiffe oder zur Jagd auf Piraten geeignet. Für jedes größere Kriegsschiff, wie eine Fregatte, ein Linienschiff oder gar ein königliches Linienschiff, stellen sie jedoch keine ernsthafte Herausforderung dar. Desweiteren können sie keine Städte bombardieren.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COTTON</Tag>
@@ -1556,12 +1556,12 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Coltivatore esperto di cotone:Coltivatori esperti di cotone</Text>
+            <Text>Esperto piantatore di cotone:Esperti piantatori di cotone</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Algodonero experto:Plantadores de algodón expertos</Text>
+            <Text>Experto plantador de algodón:Expertos plantador de algodón</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -1641,7 +1641,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CRIMINAL_PEDIA</Tag>
-        <English>Facing a two-fold increase in population and crime, Europe's leaders decided to take a creative approach to penal reform: rather than building more prisons, they  simply shipped criminals to distant colonies to serve out their terms.[NEWLINE]The English colony of Georgia was initially to be settled almost exclusively by occupants of debtors' prisons.[NEWLINE]Vast sections of Australia were also settled in this manner, with thousands of convicts sent to cities like Fremantle to labour on public works projects.[NEWLINE]If they survived, these convicts could eventually earn the right to charge for their work and perhaps even purchase their freedom, rejoining the society against which they had once plotted.</English>
+        <English>Facing a two-fold increase in population and crime, Europe's leaders decided to take a creative approach to penal reform: rather than building more prisons, they simply shipped criminals to distant colonies to serve out their terms.[NEWLINE]The English colony of Georgia was initially to be settled almost exclusively by occupants of debtors' prisons.[NEWLINE]Vast sections of Australia were also settled in this manner, with thousands of convicts sent to cities like Fremantle to labour on public works projects.[NEWLINE]If they survived, these convicts could eventually earn the right to charge for their work and perhaps even purchase their freedom, rejoining the society against which they had once plotted.</English>
         <French>Confrontés à une importante augmentation de la population et du crime, les chefs d'Etat européens décident d'adopter une approche novatrice vis-à-vis de la réforme pénale : plutôt que de construire de nouvelles prisons, les criminels sont simplement expédiés dans des colonies lointaines pour purger leur peine. La colonie anglaise de Georgie est à l'origine prévue pour être peuplée presque exclusivement de migrants emprisonnés en Angleterre pour dette. Une grande partie des régions d'Australie sont également colonisées de cette manière et des milliers de détenus sont envoyés dans des villes comme Fremantle pour exécuter divers projets de travaux publics. S'ils survivent, ces détenus peuvent alors prétendre à un salaire et même acheter leur liberté, redevenant ainsi des membres de la société contre qui ils avaient autrefois péché.</French>
         <German>In Anbetracht der Zunahme sowohl der Bevölkerung als auch der Kriminalität, entschieden sich die europäischen Machthaber für einen kreativen Weg der Sicherheitsverwahrung. Anstatt immer weiter neue Gefängnisse zu errichten, wurden Kriminelle einfach in entfernte Kolonien entsandt, um dort die Zeit ihrer Strafe zu verbringen. Die britische Kolonie Georgia sollte ursprünglich ausschließlich mit ehemaligen Insassen aus Schuldnergefängnissen besiedelt werden. Auch weite Teile Australiens wurden auf diese Weise besiedelt, indem Verurteilte in Städte wie Fremantle entsandt wurden, um dort in verschiedenen öffentlichen Projekten zu arbeiten. Die Verurteilten, die überlebten, konnten sich schließlich das Recht auf Bezahlung für ihre Arbeit verdienen und schließlich vielleicht sogar ihre Freiheit kaufen, wodurch sie wieder ein Teil der Gesellschaft wurden, der sie vormals Schaden zugefügt hatten.</German>
         <Italian>Di fronte al contemporaneo aumento di popolazione e crimine, i leader europei decisero di assumere un approccio creativo alle riforme penali: piuttosto di costruire ulteriori prigioni, i criminali venivano semplicemente inviati nelle distanti colonie per scontare la propria pena. La colonia inglese della Georgia doveva inizialmente venire colonizzata quasi esclusivamente da precedenti galeotti, finiti in prigione per debiti. Anche gran parte dell'Australia fu colonizzata in questo modo, con migliaia di condannati inviati in città come Fremantle per lavorare nei diversi progetti pubblici. Se fossero sopravvissuti, i condannati avrebbero infine potuto ottenere il diritto di guadagnare con il proprio lavoro e forse addirittura acquistare la propria libertà, tornando a essere membri della società contro cui avevano precedentemente errato.</Italian>
@@ -1684,7 +1684,7 @@
         <Tag>TXT_KEY_UNIT_DISTILLER_PEDIA</Tag>
         <English>While sugar was a valued commodity in Europe, it took a lot of it to be worthwhile, and the cost of shipping tonnes of the product to Europe ate up much of the profit.[NEWLINE]Struggling to survive, desperate colonists were always on the lookout for ways to increase their income from crops.[NEWLINE]Enter the distiller.[NEWLINE]A distiller has an almost magical ability to turn a tonne of raw sugar, worth a pittance after shipping costs, into a couple of barrels of really tasty rum which are not only more valuable than the sugar they came from, but also much lighter and thus cheaper to ship to Europe.[NEWLINE]A top-quality distillery could increase the profitability of a sugar plantation exponentially.</English>
         <French>Le sucre est une denrée très appréciée en Europe, mais il faut en vendre des quantités industrielles pour espérer en vivre, et les coûts d'expédition engloutissent une large part du bénéfice.[NEWLINE]Luttant pour survivre, les colons sont constamment à la recherche de nouvelles façons d'augmenter les revenus qu'ils tirent de leurs récoltes.[NEWLINE]C'est là qu'entre en scène le Distillateur.[NEWLINE]Le Distillateur a le pouvoir presque magique de transformer une tonne de sucre brut, d'une valeur dérisoire une fois les coûts d'expédition payés, en rhum savoureux, plus précieux que le sucre dont il est dérivé mais également plus léger et donc moins cher à expédier en Europe.[NEWLINE]Une distillerie de haute qualité peut aisément augmenter la rentabilité d'une plantation de sucre de façon exponentielle.</French>
-        <German>Auch wenn Zucker in Europa ein geschätztes Gut war, musste man doch zunächst eine ganze Menge davon verkaufen, um genug Geld zum Leben damit zu verdienen. Und die Kosten für die Verschiffung einer Tonne des Produktes nach Europa verschlangen bereits einen großen Teil des Profits.[NEWLINE]In ihrem Kampf ums Überleben waren Kolonisten stets auf der Suche nach Möglichkeiten, um das Einkommen aus ihrer Ernte zu erhöhen.[NEWLINE]Auftritt: der Rumbrenner![NEWLINE]Ein Rumbrenner hat die fast schon magische Fähigkeit, eine Tonne rohen Zuckers, der abzüglich der Transportkosten nur noch einen Hungerlohn wert ist, in ein paar Fässer köstlichen Rums zu verwandeln. Der Rum ist nicht nur wertvoller als der Zucker, sondern auch leichter und  somit günstiger nach Europa zu transportieren.[NEWLINE]Eine Rumbrennerei konnte die Rentabilität einer Zuckerplantage leicht exponentiell erhöhen.</German>
+        <German>Auch wenn Zucker in Europa ein geschätztes Gut war, musste man doch zunächst eine ganze Menge davon verkaufen, um genug Geld zum Leben damit zu verdienen. Und die Kosten für die Verschiffung einer Tonne des Produktes nach Europa verschlangen bereits einen großen Teil des Profits.[NEWLINE]In ihrem Kampf ums Überleben waren Kolonisten stets auf der Suche nach Möglichkeiten, um das Einkommen aus ihrer Ernte zu erhöhen.[NEWLINE]Auftritt: der Rumbrenner![NEWLINE]Ein Rumbrenner hat die fast schon magische Fähigkeit, eine Tonne rohen Zuckers, der abzüglich der Transportkosten nur noch einen Hungerlohn wert ist, in ein paar Fässer köstlichen Rums zu verwandeln. Der Rum ist nicht nur wertvoller als der Zucker, sondern auch leichter und somit günstiger nach Europa zu transportieren.[NEWLINE]Eine Rumbrennerei konnte die Rentabilität einer Zuckerplantage leicht exponentiell erhöhen.</German>
         <Italian>Pur essendo lo zucchero un bene prezioso in Europa, era necessario venderne una grande quantità per realizzare abbastanza soldi per sopravvivere, e i costi di spedizione di tonnellate di prodotto in Europa si portavano via gran parte del profitto.[NEWLINE]Cercando di sopravvivere, i disperati coloni continuavano a cercare nuovi modi per aumentare il profitto dei raccolti.[NEWLINE]E qui entra in gioco il distillatore.[NEWLINE]Un distillatore ha l'abilità quasi magica di trasformare una tonnellata di zucchero non raffinato, che dedotti i costi di spedizione valeva un'inezia, in un paio di barili di gustoso rum; i quali non solo valevano di più dello zucchero da cui erano ricavati, ma erano anche molto più leggeri e quindi meno costosi da spedire in Europa.[NEWLINE]Una distilleria di prima qualità può aumentare in maniera esponenziale i profitti di una piantagione di zucchero.</Italian>
         <Spanish>Aunque el Azúcar era una mercancía muy preciada en Europa, se tenía que vender una gran cantidad de éste para conseguir el dinero necesario para subsistir, y los costes de embarcar a Europa toneladas de este producto se comían gran parte de los beneficios.[NEWLINE]En la lucha por la supervivencia, los desesperados Colonos siempre buscaban una manera de aumentar el rendimiento de sus cultivos.[NEWLINE]Y ahí entraba el Destilador.[NEWLINE]Un Destilador tenía la habilidad casi mágica de convertir una tonelada de azúcar en bruto, que valía una miseria tras deducir los costes de transporte, en un par de barriles de un delicioso Ron, que no solo era más valioso que todo el Azúcar que contenía, sino que además era mucho más ligero y, por tanto, más barato de transportar.[NEWLINE]Una buena Destilería de ron podía con facilidad aumentar exponencialmente los dividendos de una plantación de Azúcar.</Spanish>
     </TEXT>
@@ -1747,12 +1747,12 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Master Dyer:Master Dyers</Text>
+            <Text>Mastro tintore:Mastri tintori</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Master Dyer:Master Dyers</Text>
+            <Text>Maestro tintorero:Maestros tintoreros</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -1768,7 +1768,7 @@
         <Tag>TXT_KEY_UNIT_DYER_STRATEGY</Tag>
         <English>[COLOR_UNIT_TEXT]Master dyers[COLOR_REVERT] are very proficient at making valuable [LINK=YIELD_COLOURED_CLOTH]coloured cloth[\LINK], like Flags of Independence that will soon fly over every one of your colonies.[NEWLINE]These specialists are capable of creating twice the quantity of coloured cloth from [LINK=YIELD_CLOTH]cloth[\LINK] and [LINK=YIELD_INDIGO]indigo[\LINK] in the same amount of time as a [COLOR_UNIT_TEXT]free colonist[COLOR_REVERT] would, when assigned to the [LINK=PROFESSION_DYER]dyer[\LINK] profession.[NEWLINE]Coloured cloth is the most valuable item in Europe other than [LINK=YIELD_GEMS]gems[\LINK] or [LINK=YIELD_GOLD]gold[\LINK].[PARAGRAPH:1]Master dyers can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]educated[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its upgrades.</English>
         <French>Les [COLOR_UNIT_TEXT]maîtres teinturiers[COLOR_REVERT]sont très compétents pour fabriquer de précieuses [LINK=YIELD_COLOURED_CLOTH]costumes teintés[\LINK], comme les drapeaux coloniaux qui flotteront bientôt sur toutes vos colonies. Ces spécialistes sont capables de créer deux fois plus de tissus colorés à partir de [LINK=YIELD_CLOTH]tissu[\LINK] et [LINK=YIELD_INDIGO]indigo[\LINK] dans le même laps de temps qu'un [COLOR_UNIT_TEXT]colon libre[COLOR_REVERT] affecté à la profession de [LINK=PROFESSION_DYER]teinturier[\LINK]. Le costume teinté est le bien le plus précieux en Europe, à part les [LINK=YIELD_GEMS]pierres précieuses[\LINK] et l'[LINK=YIELD_GOLD]or[\LINK].[PARAGRAPH:1]Les maîtres teinturiers peuvent être recrutés en [LINK=CONCEPT_EUROPE]Europe[\LINK], et ils peuvent également être [LINK=CONCEPT_TRAINING]formés[\LINK] dans une colonie possédant un [LINK=BUILDING_COLLEGE]Collège[\LINK] ou l'une de ses améliorations.</French>
-        <German>[COLOR_UNIT_TEXT]Meister-Färber[COLOR_REVERT] sind sehr geübt in der Herstellung von wertvollem [LINK=YIELD_COLOURED_CLOTH]Gefärbten Stoffen[\LINK], wie die Kolonialflaggen, die bald über jeder Ihrer Kolonien wehen werden.[NEWLINE]Diese Spezialisten sind in der Lage, die doppelte Menge an Gefärbten Stoffen aus [LINK=YIELD_INDIGO]Indigo[\LINK] und [LINK=YIELD_CLOTH]Stoffen[\LINK] oder  in der gleichen Zeit herzustellen wie ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT], wenn er dem Beruf [LINK=PROFESSION_DYER]Leinenfärber[\LINK] zugeordnet ist. Gefärbte Stoffe sind das wertvollste Gut in Europa neben [LINK=YIELD_GEMS]Edelsteinen[\LINK] und [LINK=YIELD_GOLD]Gold[\LINK].[PARAGRAPH:1]Meister-Färber können in [LINK=CONCEPT_EUROPE]Europa[\LINK] rekrutiert werden, und sie können auch in einer Kolonie mit einem [LINK=BUILDING_COLLEGE]College[\LINK] oder einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
+        <German>[COLOR_UNIT_TEXT]Meister-Färber[COLOR_REVERT] sind sehr geübt in der Herstellung von wertvollem [LINK=YIELD_COLOURED_CLOTH]Gefärbten Stoffen[\LINK], wie die Kolonialflaggen, die bald über jeder Ihrer Kolonien wehen werden.[NEWLINE]Diese Spezialisten sind in der Lage, die doppelte Menge an Gefärbten Stoffen aus [LINK=YIELD_INDIGO]Indigo[\LINK] und [LINK=YIELD_CLOTH]Stoffen[\LINK] oder in der gleichen Zeit herzustellen wie ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT], wenn er dem Beruf [LINK=PROFESSION_DYER]Leinenfärber[\LINK] zugeordnet ist. Gefärbte Stoffe sind das wertvollste Gut in Europa neben [LINK=YIELD_GEMS]Edelsteinen[\LINK] und [LINK=YIELD_GOLD]Gold[\LINK].[PARAGRAPH:1]Meister-Färber können in [LINK=CONCEPT_EUROPE]Europa[\LINK] rekrutiert werden, und sie können auch in einer Kolonie mit einem [LINK=BUILDING_COLLEGE]College[\LINK] oder einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_EMIGRANT</Tag>
@@ -2081,8 +2081,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_FRIGATE_STRATEGY</Tag>
         <English>[COLOR_UNIT_TEXT]Frigates[COLOR_REVERT] are powerful warships, capable of sinking merchant or [LINK=CONCEPT_SMUGGLING]pirate ships[\LINK].[NEWLINE]If they earn enough [COLOR_HIGHLIGHT_TEXT]combat experience[COLOR_REVERT] to get a few promotions, they will even have a sporting chance against the more powerful [LINK=UNIT_SHIP_OF_THE_LINE]Ship of the Line[\LINK], which is slower, but normally stronger than the frigate.[NEWLINE]Your [LINK=CONCEPT_RELATIONS_TO_KING]King's[\LINK] [LINK=UNIT_ROYAL_MAN_O_WAR]Man-o-Wars[\LINK], however, are too powerful even for experienced frigates.[PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Frigates[COLOR_REVERT] can be acquired in [LINK=CONCEPT_EUROPE]Europe[\LINK] and built in colonies with a [LINK=BUILDING_SHIPYARD]shipyard[\LINK] or one of its upgrades.[NEWLINE]Like most ships, they need [LINK=YIELD_CANNONS]cannons[\LINK], [LINK=YIELD_BLADES]blades[\LINK], [LINK=YIELD_ROPE]ropes[\LINK], [LINK=YIELD_SAILCLOTH]sailcloth[\LINK] and [LINK=YIELD_TOOLS]tools[\LINK].[PARAGRAPH:2]For a comparison of all ships that are available, see [LINK=CONCEPT_SHIPS]Ships[\LINK].</English>
-        <French>
-        Les [COLOR_UNIT_TEXT]Frégates[COLOR_REVERT] sont des navires de guerre puissants, capables de couler des navires marchands ou des [LINK=CONCEPT_SMUGGLING]Navires pirates[\LINK]. S'ils gagnent suffisamment d'[COLOR_HIGHLIGHT_TEXT]Expérience de combat[COLOR_REVERT] pour obtenir quelques promotions, ils auront même une chance contre le plus puissant [LINK=UNIT_SHIP_OF_THE_LINE]Navire de ligne[\LINK], qui est plus lent, mais normalement plus fort que la frégate. Les [LINK=CONCEPT_RELATIONS_TO_KING]King[\LINK] de votre [LINK=UNIT_ROYAL_MAN_O_WAR]vaisseaux de guerre[\LINK], cependant, sont trop puissants même pour les frégates expérimentées.[PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]frégates[COLOR_REVERT] peuvent être acquises en [LIEN=CONCEPT_EUROPE]Europe[\LINK] et construites dans les colonies dotées d'un [LIEN=BUILDING_SHIPYARD]Chantier naval[\LINK] ou d'une de ses améliorations. Comme la plupart des navires, ils ont besoin de [LINK=YIELD_CANNONS]Canons[\LINK], [LINK=YIELD_BLADES]Lames[\LINK], [LINK=YIELD_ROPE]Cordes[\LINK], [LINK=YIELD_SAILCLOTH]Toile à voile[\LINK] et [LINK=YIELD_TOOLS]Outils[\LINK].[PARAGRAPH:2]Pour une comparaison de tous les navires disponibles, voir [LINK=CONCEPT_SHIPS]Navires[\LINK].</French>
+        <French>Les [COLOR_UNIT_TEXT]Frégates[COLOR_REVERT] sont des navires de guerre puissants, capables de couler des navires marchands ou des [LINK=CONCEPT_SMUGGLING]Navires pirates[\LINK]. S'ils gagnent suffisamment d'[COLOR_HIGHLIGHT_TEXT]Expérience de combat[COLOR_REVERT] pour obtenir quelques promotions, ils auront même une chance contre le plus puissant [LINK=UNIT_SHIP_OF_THE_LINE]Navire de ligne[\LINK], qui est plus lent, mais normalement plus fort que la frégate. Les [LINK=CONCEPT_RELATIONS_TO_KING]King[\LINK] de votre [LINK=UNIT_ROYAL_MAN_O_WAR]vaisseaux de guerre[\LINK], cependant, sont trop puissants même pour les frégates expérimentées.[PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]frégates[COLOR_REVERT] peuvent être acquises en [LIEN=CONCEPT_EUROPE]Europe[\LINK] et construites dans les colonies dotées d'un [LIEN=BUILDING_SHIPYARD]Chantier naval[\LINK] ou d'une de ses améliorations. Comme la plupart des navires, ils ont besoin de [LINK=YIELD_CANNONS]Canons[\LINK], [LINK=YIELD_BLADES]Lames[\LINK], [LINK=YIELD_ROPE]Cordes[\LINK], [LINK=YIELD_SAILCLOTH]Toile à voile[\LINK] et [LINK=YIELD_TOOLS]Outils[\LINK].[PARAGRAPH:2]Pour une comparaison de tous les navires disponibles, voir [LINK=CONCEPT_SHIPS]Navires[\LINK].</French>
         <German>[COLOR_UNIT_TEXT]Fregatten[COLOR_REVERT] sind mächtige Kriegsschiffe, die Handels- oder [LINK=CONCEPT_SMUGGLING]Piratenschiffe[\LINK] versenken können. Wenn sie genug [COLOR_HIGHLIGHT_TEXT]Kampferfahrung[COLOR_REVERT] sammeln, um ein paar Beförderungen zu erhalten, haben sie sogar eine sportliche Chance gegen das mächtigere [LINK=UNIT_SHIP_OF_THE_LINE]Linienschiff[\LINK], das langsamer, aber normalerweise stärker als die Fregatte ist. Die [LINK=UNIT_ROYAL_MAN_O_WAR]Königliche Linienschiffe[\LINK] des [LINK=CONCEPT_RELATIONS_TO_KING]Königs[\LINK] sind jedoch selbst für erfahrene Fregatten zu mächtig.[PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fregatten[COLOR_REVERT] können in [LINK=CONCEPT_EUROPE]Europa[\LINK] erworben und in Kolonien mit einer [LINK=BUILDING_SHIPYARD]Schiffswerft[\LINK] oder einer ihrer Erweiterungen gebaut werden. Wie die meisten Schiffe benötigen sie [LINK=YIELD_CANNONS]Kanonen[\LINK], [LINK=YIELD_BLADES]Klingenwaffen[\LINK], [LINK=YIELD_ROPE]Seile[\LINK], [LINK=YIELD_SAILCLOTH]Segeltuch[\LINK] und [LINK=YIELD_TOOLS]Werkzeuge[\LINK].[PARAGRAPH:2]Einen Vergleich aller verfügbaren Schiffe finden Sie unter [LINK=CONCEPT_SHIPS]Schiffe[\LINK].</German>
         <Italian>Le [COLOR_UNIT_TEXT]Fregate[COLOR_REVERT] sono potenti navi da guerra, capaci di affondare navi mercantili o [LINK=CONCEPT_SMUGGLING]pirata[\LINK]. Se guadagnano abbastanza [COLOR_HIGHLIGHT_TEXT]Esperienza di Combattimento[COLOR_REVERT] da ottenere qualche promozione, avranno anche una possibilità sportiva contro la più potente [LINK=UNIT_SHIP_OF_THE_LINE]Nave di Linea[\LINK], che è più lenta, ma normalmente più forte della Fregata. Il tuo [LINK=CONCEPT_RELATIONS_TO_KING]Re[\LINK] di [LINK=UNIT_ROYAL_MAN_O_WAR]Navi da guerra[\LINK], tuttavia, sono troppo potenti anche per le Fregate esperte.[PARAGRAPH:1]Le [COLOR_HIGHLIGHT_TEXT]Fregate[COLOR_REVERT] possono essere acquistate in [LINK=CONCEPT_EUROPE]Europa[\LINK] e costruite nelle colonie con un [LINK=BUILDING_SHIPYARD]Cantiere[\LINK] o uno dei suoi aggiornamenti. Come la maggior parte delle navi, richiedono [LINK=YIELD_CANNONS]Cannoni[\LINK], [LINK=YIELD_BLADES]Lame[\LINK], [LINK=YIELD_ROPE]Corde[\LINK], [LINK=YIELD_SAILCLOTH]Vele[\LINK] e [LINK=YIELD_TOOLS]Strumenti[\LINK].[PARAGRAPH:2]Per un confronto di tutte le navi disponibili, vedi [LINK=CONCEPT_SHIPS]Navi[\LINK].</Italian>
         <Spanish>Las [COLOR_UNIT_TEXT]Fragatas[COLOR_REVERT] son poderosos buques de guerra, capaces de hundir barcos mercantes o [LINK=CONCEPT_SMUGGLING]Piratas[\LINK]. Si ganan suficiente [COLOR_HIGHLIGHT_TEXT]Experiencia en combate[COLOR_REVERT] para conseguir algunos ascensos, tendrán incluso una oportunidad deportiva contra el más poderoso [LINK=UNIT_SHIP_OF_THE_LINE]Buque de línea[\LINK], que es más lento, pero normalmente más fuerte que la Fragata. Sin embargo, los [LINK=CONCEPT_RELATIONS_TO_KING]King[\LINK]'s [LINK=UNIT_ROYAL_MAN_O_WAR]Buques de guerra[\LINK] son demasiado poderosos incluso para las Fragatas experimentadas.[PARAGRAPH:1]Las [COLOR_HIGHLIGHT_TEXT]fragatas[COLOR_REVERT] pueden adquirirse en [LINK=CONCEPT_EUROPE]Europa[\LINK] y construirse en colonias con un [LINK=BUILDING_SHIPYARD]Astillero[\LINK] o una de sus mejoras. Como la mayoría de los barcos, necesitan [LINK=YIELD_CANNONS]Cañones[\LINK], [LINK=YIELD_BLADES]Hojas[\LINK], [LINK=YIELD_ROPE]Cuerdas[\LINK], [LINK=YIELD_SAILCLOTH]Tela de vela[\LINK] y [LINK=YIELD_TOOLS]Herramientas[\LINK].[PARAGRAPH:2]Para una comparación de todos los barcos disponibles, ver [LINK=CONCEPT_SHIPS]Barcos[\LINK].</Spanish>
@@ -2157,12 +2156,12 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Master Cabinet Maker:Master Cabinet Makers</Text>
+            <Text>Mastro ebanista:Mastri ebanisti</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Master Cabinet Maker:Master Cabinet Makers</Text>
+            <Text>Maestro ebanista:Maestros ebanistas</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -2280,7 +2279,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROYAL_TROOP_GALLEON_STRATEGY</Tag>
         <English>[COLOR_UNIT_TEXT]Royal Troop Galleons[COLOR_REVERT] are the main transport ships used by the [COLOR_HIGHLIGHT_TEXT]European kings[COLOR_REVERT] to transport their troops. They are also able to transport goods.[NEWLINE]They have six cargo slots, like other galleons the most of any naval unit in the game.[NEWLINE]Stronger than normal [LINK=UNIT_GALLEON]galleons[\LINK], they have the ability to attack other ships.[NEWLINE]They can put up a good fight against attacking colonial ships during the [LINK=WAR_OF_INDEPENDENCE]War of Independence[\LINK].[NEWLINE]Given the opportunity they can finish off damaged attackers.[NEWLINE][COLOR_HIGHLIGHT_TEXT]Royal Troop Galleons[COLOR_REVERT] are only available to the European kings, but on rare occasions they can be captured.</English>
-        <German>[COLOR_UNIT_TEXT]Königliche Truppengaleonen[COLOR_REVERT] sind das primäre Transportschiff der [COLOR_HIGHLIGHT_TEXT]Europäischen Könige[COLOR_REVERT] um ihre Truppen zu transportieren, können aber auch Güter befördern.[NEWLINE]Sie haben 6 Frachträume und somit mehr als jedes andere Schiff, außer anderen Galleonen.[NEWLINE]Sie sind stärker als normale [LINK=UNIT_GALLEON]Galleonen[\LINK] und können andere Schiffe auch angreifen.[NEWLINE]Während des [LINK=WAR_OF_INDEPENDENCE]Unabhängigkeitskrieges[\LINK] können sie den Schiffen der Kolonien einen guten Kampf liefern.[NEWLINE][COLOR_HIGHLIGHT_TEXT]Königliche Truppengaleonen[COLOR_REVERT] stehen nur den Königen Europas zur Verfügung.</German>
+        <German>[COLOR_UNIT_TEXT]Königliche Truppengaleonen[COLOR_REVERT] sind das primäre Transportschiff der [COLOR_HIGHLIGHT_TEXT]Europäischen Könige[COLOR_REVERT] um ihre Truppen zu transportieren, können aber auch Güter befördern.[NEWLINE]Sie haben 6 Frachträume und somit mehr als jedes andere Schiff, außer anderen Galeonen.[NEWLINE]Sie sind stärker als normale [LINK=UNIT_GALLEON]Galleonen[\LINK] und können andere Schiffe auch angreifen.[NEWLINE]Während des [LINK=WAR_OF_INDEPENDENCE]Unabhängigkeitskrieges[\LINK] können sie den Schiffen der Kolonien einen guten Kampf liefern.[NEWLINE][COLOR_HIGHLIGHT_TEXT]Königliche Truppengaleonen[COLOR_REVERT] stehen nur den Königen Europas zur Verfügung.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GEMS</Tag>
@@ -2742,7 +2741,7 @@
         </Spanish>
         <Russian>Тяжелая артиллерия</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY_VETERAN_EXPERT</Tag>
         <English>
             <Text>Veteran Heavy Artillerist:Veteran Heavy Artillerists</Text>
@@ -2823,12 +2822,12 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Planteur de Chanvre professionnel:Planteurs de Chanvre professionnel</Text>
+            <Text>Esperto piantatore di chanvre:Esperti piantatori di chanvre</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Expert Hemp Planter:Expert Hemp Planters</Text>
+            <Text>Experto plantador de cáñamo:Expertos plantador de cáñamo</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -3099,14 +3098,18 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Erfahrener Indigopflanzer:Erfahrene Indigopflanzer</German>
+        <German>
+            <Text>Erfahrener Indigopflanzer:Erfahrene Indigopflanzer</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
         <Italian>
-            <Text>Coltivatore esp. di Indicado:Coltivatori esp. di Indicado</Text>
+            <Text>Esperto piantatore di indicado:Esperti piantatori di indicado</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Indigo experto:Indigo expertos</Text>
+            <Text>Experto plantador de indigo:Expertos plantador de indigo</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -3473,7 +3476,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROYAL_MAN_O_WAR_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Man-o-Wars[COLOR_REVERT] are the the absolute monarchs of the sea.[NEWLINE] The colonies can not buy [COLOR_UNIT_TEXT]Man-o-Wars[COLOR_REVERT] in Europe but they can build them in the colonies, once advanced enough. However [COLOR_UNIT_TEXT]Royal Man-o-Wars[COLOR_REVERT] can only be acquired by your [LINK=CONCEPT_RELATIONS_TO_KING]King[\LINK] in Europe and are much stronger than any ship you will ever have.[NEWLINE]When you fight your [LINK=CONCEPT_INDEPENDENCE_WAR]War Of Independence[\LINK] your King will send wave after wave of Man-o-Wars to carry his Royal Expeditionary Force to your shores, and the only way to sink them is to throw multiple [LINK=UNIT_SHIP_OF_THE_LINE]Ships of the Line[\LINK] at a single Man-o-War. Fortunately, to win the Independance War you only have to destroy the King's land units, not his warships.[PARAGRAPH:2]For a comparison of all ships that are available, see [LINK=CONCEPT_SHIPS]Ships[\LINK].</English>
+        <English>[COLOR_UNIT_TEXT]Man-o-Wars[COLOR_REVERT] are the the absolute monarchs of the sea.[NEWLINE]The colonies can not buy [COLOR_UNIT_TEXT]Man-o-Wars[COLOR_REVERT] in Europe but they can build them in the colonies, once advanced enough. However [COLOR_UNIT_TEXT]Royal Man-o-Wars[COLOR_REVERT] can only be acquired by your [LINK=CONCEPT_RELATIONS_TO_KING]King[\LINK] in Europe and are much stronger than any ship you will ever have.[NEWLINE]When you fight your [LINK=CONCEPT_INDEPENDENCE_WAR]War Of Independence[\LINK] your King will send wave after wave of Man-o-Wars to carry his Royal Expeditionary Force to your shores, and the only way to sink them is to throw multiple [LINK=UNIT_SHIP_OF_THE_LINE]Ships of the Line[\LINK] at a single Man-o-War. Fortunately, to win the Independance War you only have to destroy the King's land units, not his warships.[PARAGRAPH:2]For a comparison of all ships that are available, see [LINK=CONCEPT_SHIPS]Ships[\LINK].</English>
         <French>Le [COLOR_UNIT_TEXT]Vaisseau de guerre[COLOR_REVERT] est le navire le plus puissant d'Europe. Leur conception est un secret jalousement gardé, ce qui signifie qu'aucune colonie ne pourra jamais en fabriquer. La meilleure défense contre ce navire est le [COLOR_UNIT_TEXT]galion de guerre[COLOR_REVERT], vaisseau de puissance comparable.</French>
         <German>Über das [COLOR_UNIT_TEXT]Königliche Linienschiff[COLOR_REVERT], die Herrscherin der Meere, verfügt nur der Monarch in seiner Expeditionsflotte. Jedoch können die Kolonien auch ihre eigenen [COLOR_UNIT_TEXT]Linienschiff[COLOR_REVERT] bauen, wenn sie weit genug entwickelt sind. [PARAGRAPH:2]Im Unabhängigkeitskrieg transportieren die Königlichen Linienschiffe die Landtruppen des Monarchen in die Neue Welt. Jede Welle ist stärker als die vorige. Nachdem die Schiffe ihre Armeen abgeladen haben, kreuzen sie an der amerikanischen Küste, bedrohen die zivile Schifffahrt oder bombardieren die Verteidigungswälle der Städte herunter. Es empfiehlt sich, zumindest die ersten Wellen von Feindschiffen möglichst rasch zu versenken.</German>
         <Italian>Le [COLOR_UNIT_TEXT]navi da guerra[COLOR_REVERT] sono le più potenti navi europee. Il loro progetto è un segreto custodito gelosamente, il che significa che nessuna colonia ne potrà mai costruire una. La miglior difesa contro questo tipo di nave è la [COLOR_UNIT_TEXT]nave da prima linea[COLOR_REVERT], di comparabile potenza.</Italian>
@@ -3514,7 +3517,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COLONIAL_MAN_O_WAR_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Man-o-Wars[COLOR_REVERT] are the the absolute monarchs of the sea.[NEWLINE] The colonies can not buy [COLOR_UNIT_TEXT]Man-o-Wars[COLOR_REVERT] in Europe but they can build them in the colonies, once advanced enough. However [COLOR_UNIT_TEXT]Royal Man-o-Wars[COLOR_REVERT] can only be built by your [LINK=CONCEPT_RELATIONS_TO_KING]King[\LINK] in Europe and are much stronger than any ship you will ever have.[NEWLINE]When you fight your [LINK=CONCEPT_INDEPENDENCE_WAR]War Of Independence[\LINK] your King will send wave after wave of Man-o-Wars to carry his Royal Expeditionary Force to your shores, and the only way to sink them is to throw multiple [LINK=UNIT_SHIP_OF_THE_LINE]Ships of the Line[\LINK] at a single Man-o-War. Fortunately, to win the Independance War you only have to destroy the King's land units, not his warships.[PARAGRAPH:2]For a comparison of all ships that are available, see [LINK=CONCEPT_SHIPS]Ships[\LINK].</English>
+        <English>[COLOR_UNIT_TEXT]Man-o-Wars[COLOR_REVERT] are the the absolute monarchs of the sea.[NEWLINE]The colonies can not buy [COLOR_UNIT_TEXT]Man-o-Wars[COLOR_REVERT] in Europe but they can build them in the colonies, once advanced enough. However [COLOR_UNIT_TEXT]Royal Man-o-Wars[COLOR_REVERT] can only be built by your [LINK=CONCEPT_RELATIONS_TO_KING]King[\LINK] in Europe and are much stronger than any ship you will ever have.[NEWLINE]When you fight your [LINK=CONCEPT_INDEPENDENCE_WAR]War Of Independence[\LINK] your King will send wave after wave of Man-o-Wars to carry his Royal Expeditionary Force to your shores, and the only way to sink them is to throw multiple [LINK=UNIT_SHIP_OF_THE_LINE]Ships of the Line[\LINK] at a single Man-o-War. Fortunately, to win the Independance War you only have to destroy the King's land units, not his warships.[PARAGRAPH:2]For a comparison of all ships that are available, see [LINK=CONCEPT_SHIPS]Ships[\LINK].</English>
         <French>Le [COLOR_UNIT_TEXT]Vaisseau de guerre[COLOR_REVERT] est le navire le plus puissant d'Europe. Leur conception est un secret jalousement gardé, ce qui signifie qu'aucune colonie ne pourra jamais en fabriquer. La meilleure défense contre ce navire est le [COLOR_UNIT_TEXT]galion de guerre[COLOR_REVERT], vaisseau de puissance comparable.</French>
         <German>Über das [COLOR_UNIT_TEXT]Königliche Linienschiff[COLOR_REVERT], die Herrscherin der Meere, verfügt nur der Monarch in seiner Expeditionsflotte. Jedoch können die Kolonien auch ihre eigenen [COLOR_UNIT_TEXT]Linienschiff[COLOR_REVERT] bauen, wenn sie weit genug entwickelt sind. [PARAGRAPH:2]Im Unabhängigkeitskrieg transportieren die Königlichen Linienschiffe die Landtruppen des Monarchen in die Neue Welt. Jede Welle ist stärker als die vorige. Nachdem die Schiffe ihre Armeen abgeladen haben, kreuzen sie an der amerikanischen Küste, bedrohen die zivile Schifffahrt oder bombardieren die Verteidigungswälle der Städte herunter. Es empfiehlt sich, zumindest die ersten Wellen von Feindschiffen möglichst rasch zu versenken.</German>
         <Italian>Le [COLOR_UNIT_TEXT]navi da guerra[COLOR_REVERT] sono le più potenti navi europee. Il loro progetto è un segreto custodito gelosamente, il che significa che nessuna colonia ne potrà mai costruire una. La miglior difesa contro questo tipo di nave è la [COLOR_UNIT_TEXT]nave da prima linea[COLOR_REVERT], di comparabile potenza.</Italian>
@@ -3610,7 +3613,11 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Erfahrener Minenarbeiter:Erfahrene Minenarbeiter</German>
+        <German>
+            <Text>Erfahrener Bergmann:Erfahrene Bergleute</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
         <Italian>
             <Text>Minatore esperto:Minatori esperti</Text>
             <Gender>Male</Gender>
@@ -3627,7 +3634,7 @@
         <Tag>TXT_KEY_UNIT_MINER_PEDIA</Tag>
         <English>Once a vein of ore or salt is discovered, it is no small challenge to successfully remove it from the earth.[NEWLINE]Mining remains one of the most dangerous professions in the world.[NEWLINE]Poorly designed mines collapse, crushing those within.[NEWLINE]Unventilated mines fill with noxious gases, suffocating the victims before they are aware of their peril.[NEWLINE]Mines explode, or flood with water.[NEWLINE]Clearly, mining is no work for the amateur.[NEWLINE]The skilled miner understands the system of braces, pumps and carts needed to allow access to the precious ore below and can keep a mine running while minimizing the peril to himself and his fellow workers.</English>
         <French>Une fois qu'une veine de minerais est découverte, réussir à l'extraire n'est pas une mince affaire.[NEWLINE]L'extraction minière demeure l'une des professions les plus dangereuses au monde.[NEWLINE]Les mines mal conçues s'effondrent, écrasant les mineurs coincés à l'intérieur.[NEWLINE]D'autres, non ventilées, se remplissent de gaz toxiques, étouffant les victimes avant même qu'elles ne soient conscientes du danger.[NEWLINE]D'autres encore explosent ou sont inondées d'eau.[NEWLINE]Il est évident que l'extraction minière n'est pas affaire d'amateur.[NEWLINE]Les Mineurs expérimentés savent comment utiliser les entretoises, les pompes et les chariots pour pouvoir accéder au précieux minerai et sont capables de faire fonctionner une mine tout en réduisant au minimum les risques pour leur propre personne et les autres ouvriers.</French>
-        <German>Eine entdeckte Eisenerzader oder Salzader aus der Erde freizulegen, ist keine leichte Aufgabe.[NEWLINE]Minenarbeit zählt auch heute noch zu den gefährlichsten Berufen der Welt.[NEWLINE]Schlecht geplante Minen stürzen ein und begraben alles in ihrem Inneren.[NEWLINE]Schlecht belüftete Minen füllen sich mit gefährlichen Gasen, in denen Arbeiter ersticken können, noch bevor sie sich der Gefahr überhaupt bewusst sind.[NEWLINE]Immer wieder kommt es zu Minenexplosionen oder Wassereinbrüchen.[NEWLINE]Bergbau ist eindeutig nichts für Amateure.[NEWLINE]Ein erfahrener Minenarbeiter versteht das System aus Streben, Pumpen und Loren, dank derer er Zugang zum wertvollen Eisenerz unter der Erde erlangt, und ist in der Lage, eine Mine am Laufen zu halten und gleichzeitig die Gefahr für sich selbst und seine Arbeitskollegen auf ein Minimum zu reduzieren.</German>
+        <German>Eine entdeckte Eisenerzader oder Salzader aus der Erde freizulegen, ist keine leichte Aufgabe.[NEWLINE]Minenarbeit zählt auch heute noch zu den gefährlichsten Berufen der Welt.[NEWLINE]Schlecht geplante Minen stürzen ein und begraben alles in ihrem Inneren.[NEWLINE]Schlecht belüftete Minen füllen sich mit gefährlichen Gasen, in denen Arbeiter ersticken können, noch bevor sie sich der Gefahr überhaupt bewusst sind.[NEWLINE]Immer wieder kommt es zu Minenexplosionen oder Wassereinbrüchen.[NEWLINE]Bergbau ist eindeutig nichts für Amateure.[NEWLINE]Ein erfahrener Bergmann versteht das System aus Streben, Pumpen und Loren, dank derer er Zugang zum wertvollen Eisenerz unter der Erde erlangt, und ist in der Lage, eine Mine am Laufen zu halten und gleichzeitig die Gefahr für sich selbst und seine Arbeitskollegen auf ein Minimum zu reduzieren.</German>
         <Italian>Una volta scoperto un giacimento di minerale, il processo di estrazione non è certo cosa facile.[NEWLINE]Quella del minatore rimane una delle professioni più pericolose al mondo.[NEWLINE]Le miniere progettate male crollano schiacciando chiunque ci lavori dentro.[NEWLINE]Le miniere non ventilate si riempiono di gas pericolosi, in grado di soffocare le vittime prima che queste possano rendersi conto del pericolo.[NEWLINE]Le miniere possono esplodere, oppure allagarsi.[NEWLINE]Chiaramente quello del minatore non è un mestiere da dilettanti.[NEWLINE]Un minatore abile comprende il sistema di puntelli, pompe e carrelli necessario per accedere al prezioso minerale ed è in grado di mantenere funzionante una miniera minimizzando il pericolo per se stesso e per i suoi compagni lavoratori.</Italian>
         <Spanish>Cuando se descubre una veta de Mineral, no es un reto baladí intentar arrancarla de la tierra.[NEWLINE]La minería sigue siendo una de las profesiones más peligrosas del mundo.[NEWLINE]Las minas mal diseñadas se derrumban, aplastando a todos los que se encuentren en ellas.[NEWLINE]Los pozos mal ventilados se llenan de gases nocivos y asfixian a sus víctimas antes siquiera de que se den cuenta del peligro.[NEWLINE]Las minas también explotan o se inundan.[NEWLINE]Está claro que la minería no es para aficionados.[NEWLINE]El Minero habilidoso comprende el sistema de, apuntalamientos, bombas y vagonetas necesario para permitir el acceso al preciado Mineral subterráneo y es capaz de mantener una mina en marcha a la vez que minimiza el peligro para sí mismo y para sus camaradas.</Spanish>
     </TEXT>
@@ -3635,7 +3642,7 @@
         <Tag>TXT_KEY_UNIT_MINER_STRATEGY</Tag>
         <English>[COLOR_UNIT_TEXT]Expert miners[COLOR_REVERT] are able to extract a wealth of [LINK=YIELD_ORE]ore[\LINK] or [LINK=YIELD_RAW_SALT]rock salt[\LINK] from any tile that has it, producing twice as much of these resources as other colonists would when assigned to the [LINK=PROFESSION_MINER]ore miner[\LINK] or [LINK=PROFESSION_SALT_MINER]salt miner[\LINK] profession.[PARAGRAPH:1]Expert miners can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK] or be trained by [LINK=CONCEPT_NATIVES]Natives[\LINK], and they can also be [LINK=CONCEPT_TRAINING]taught[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
         <French>Les [COLOR_UNIT_TEXT]Mineurs professionnels[COLOR_REVERT] sont capables d'extraire une grande quantité de minerais de fer à partir de n'importe quelle case susceptible d'en contenir. Un mineur professionnel doublera la production de [COLOR_HIGHLIGHT_TEXT]Minerais de fer[COLOR_REVERT] dans la case où il travaille.</French>
-        <German>Ein [COLOR_UNIT_TEXT]Erfahrener Minenarbeiter[COLOR_REVERT] verdoppelt die [COLOR_HIGHLIGHT_TEXT]Eisen[COLOR_REVERT]produktion oder die [COLOR_HIGHLIGHT_TEXT]Steinsalz[COLOR_REVERT]produktion des Geländefeldes, auf dem er arbeitet.</German>
+        <German>Ein [COLOR_UNIT_TEXT]Erfahrener Bergmann[COLOR_REVERT] verdoppelt den Abbau von [COLOR_HIGHLIGHT_TEXT]Eisenerz[COLOR_REVERT] oder [COLOR_HIGHLIGHT_TEXT]Steinsalz[COLOR_REVERT] des Geländefeldes, auf dem er arbeitet.</German>
         <Italian>I [COLOR_UNIT_TEXT]minatori esperti[COLOR_REVERT] possono estrarre una grande quantità di minerali da qualsiasi casella in grado di produrne. Un minatore esperto raddoppia la produzione di [COLOR_HIGHLIGHT_TEXT]minerale[COLOR_REVERT] della casella in cui lavora.</Italian>
         <Spanish>Los [COLOR_UNIT_TEXT]Mineros expertos[COLOR_REVERT] son capaces de extraer gran cantidad de Mineral de cualquier casilla que pueda darlo. Un Minero experto doblará la producción de [COLOR_HIGHLIGHT_TEXT]Mineral[COLOR_REVERT] de la casilla en la que trabaje.</Spanish>
     </TEXT>
@@ -4006,7 +4013,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEARLS_HUNTER</Tag>
-        <English>Expert Pearl Hunter:Expert Pearl Hunters</English>
+        <English>Expert Pearl Diver:Expert Pearl Divers</English>
         <French>
             <Text>Expert chasseur de perles</Text>
             <Gender>Male</Gender>
@@ -4039,7 +4046,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEARLS_HUNTER_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Expert pearl hunters[COLOR_REVERT] dive deep to provide their fellow citizens with [COLOR_HIGHLIGHT_TEXT]pearls[COLOR_REVERT], which are valuable [LINK=YIELD_GEMS]gems[\LINK].[NEWLINE]Assigning an expert pearl hunter to work a sea tile with the [LINK=BONUS_PEARLS_2]pearls[\LINK] resource as a [LINK=PROFESSION_PEARLS_HUNTER]pearl hunter[\LINK] will provide 3 more gems each turn than a less skilled colonist would.[PARAGRAPH:1]Expert pearl hunters can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK] and be trained by [LINK=CONCEPT_NATIVES]Natives[\LINK], and they can also be [LINK=CONCEPT_TRAINING]taught[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Expert pearl divers[COLOR_REVERT] dive deep to provide their fellow citizens with [COLOR_HIGHLIGHT_TEXT]pearls[COLOR_REVERT], which are valuable [LINK=YIELD_GEMS]gems[\LINK].[NEWLINE]Assigning an expert pearl diver to work a sea tile with the [LINK=BONUS_PEARLS_2]pearls[\LINK] resource as a [LINK=PROFESSION_PEARLS_HUNTER]pearl diver[\LINK] will provide 3 more gems each turn than a less skilled colonist would.[PARAGRAPH:1]Expert pearl divers can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK] and be trained by [LINK=CONCEPT_NATIVES]Natives[\LINK], and they can also be [LINK=CONCEPT_TRAINING]taught[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
         <French>Les [COLOR_UNIT_TEXT]Experts chasseurs de perles[COLOR_REVERT] sont les maîtres des fonds marins. Tout océan ou côte travaillé augmente significativement en production de [COLOR_HIGHLIGHT_TEXT]perles[COLOR_REVERT].</French>
         <German>[COLOR_UNIT_TEXT]Erfahrene Perlentaucher[COLOR_REVERT] sind Meister der Küste und des Ozeans. Sie können dort beträchtliche Mengen an [LINK=YIELD_GEMS]Perlen[\LINK] gewinnen.</German>
     </TEXT>
@@ -4620,12 +4627,12 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Expert Red Pepper Planter:Expert Red Pepper Planters</Text>
+            <Text>Esperto piantatore di peperoni rossi:Esperti piantatori di peperoni rossi</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Expert Red Pepper Planter:Expert Red Pepper Planters</Text>
+            <Text>Experto plantador de pimientos rojos:Expertos plantador de pimientos rojos</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -5003,7 +5010,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_SAILCLOTH</Tag>
         <English>
-          <Text>Sailcloth</Text>
+            <Text>Sailcloth</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </English>
@@ -5044,7 +5051,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_SAILCLOTH_MAKER</Tag>
         <English>
-          <Text>Master Sailmaker:Master Sailmakers</Text>
+            <Text>Master Sailmaker:Master Sailmakers</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
@@ -5059,12 +5066,12 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-          <Text>Master Sailmaker:Master Sailmakers</Text>
+            <Text>Master Sailmaker:Master Sailmakers</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-          <Text>Master Sailmaker:Master Sailmakers</Text>
+            <Text>Master Sailmaker:Master Sailmakers</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -5349,7 +5356,7 @@
         <Tag>TXT_KEY_UNIT_SLOOP_PEDIA</Tag>
         <English>In the 18th and the earlier part of the 19th centuries, a sloop-of-war was a small sailing warship, an escort, with a single gun deck that carried anything up to eighteen cannons.[NEWLINE]As the rating system covered all vessels with 20 guns and above, this meant that the term sloop-of-war encompassed all the unrated combat vessels including very small gun-brigs and cutters.[NEWLINE]In technical terms, the more specialised bomb vessels and fireships were classed as sloops-of-war, and in practice these were employed in the sloop role when not carrying out their specialised functions.[NEWLINE]A sloop was generally the equivalent of the smaller corvette of the French Navy (although the French term also covered ships up up to 24 guns, which were classed as 'post ships' within the Sixth Rate of the British Navy).[NEWLINE]The name 'corvette' was subsequently applied to British vessels, but not until the 1830s.[NEWLINE]A sloop-of-war was smaller than a sailing frigate and outside the rating system.[NEWLINE]In general, a sloop-of-war would be under the command of a master and commander rather than a post captain, although in day-to-day use at sea the commanding officer of any naval vessels would be addressed as "captain".[NEWLINE]Until 1794 the master and commander, strictly speaking, held the permanent rank of lieutenant and reverted to that rank when he gave up command of the sloop-of-war.[NEWLINE]In 1794 the rank of commander was created.</English>
         <French>Au temps de la marine à voile, le sloop (de la même origine étymologique que le français chaloupe), ou plus exactement le sloop-of-war, désignait en Angleterre, les navires plus petits que les frégates, armés de dix à dix-huit canons sur un seul pont. Les Anglais distinguaient deux variantes principales de sloop : le ship sloop qui, avec ses trois mâts, équivalait à peu près à la corvette française; le brig sloop avec deux mâts, est appelé brick en France. Au début du XXe siècle, le terme sloop désignait un navire d'escorte anti sous-marin, armé de canon de 102 mm et de grenades sous-marines. Lors de la Seconde Guerre mondiale, il a cédé la place aux corvettes, puis aux frégates.</French>
-        <German>Die Kriegsschiffbezeichnung Sloop (Schaluppe) hat ihren Ursprung in dem gleichnamigen einmastigen Schiffstyp. Sie bildeten im 17. Jahrhundert die kleinsten bewaffneten Marineeinheiten für Unterstützungsaufgaben wie Nachrichtenübermittlung und Aufklärung und waren im Gegensatz zu grösseren Schiffen nicht klassifiziert. Diese Fahrzeuge hatten zunächst einen Leutnant als Kommandanten, jedoch ohne weiteren Offizier, vor allem aber keinen Navigator/Segelmeister (engl. Sailing-Master oder kurz Master). Weil Unterstützungsfahrzeuge in der Seekriegsführung im Verlaufe des 17. Jahrhundert immer bedeutender wurden und vor allem auch abseits der Küsten operierten, wurde auch ein Navigator notwendig. Daraus entstand der Rang des Master and Commander, ein kommandierender Seeoffizier, der zugleich Navigator war.</German>
+        <German>Die Kriegsschiffbezeichnung Sloop (Schaluppe) hat ihren Ursprung in dem gleichnamigen einmastigen Schiffstyp. Sie bildeten im 17. Jahrhundert die kleinsten bewaffneten Marineeinheiten für Unterstützungsaufgaben wie Nachrichtenübermittlung und Aufklärung und waren im Gegensatz zu größeren Schiffen nicht klassifiziert. Diese Fahrzeuge hatten zunächst einen Leutnant als Kommandanten, jedoch ohne weiteren Offizier, vor allem aber keinen Navigator/Segelmeister (engl. Sailing-Master oder kurz Master). Weil Unterstützungsfahrzeuge in der Seekriegsführung im Verlaufe des 17. Jahrhundert immer bedeutender wurden und vor allem auch abseits der Küsten operierten, wurde auch ein Navigator notwendig. Daraus entstand der Rang des Master and Commander, ein kommandierender Seeoffizier, der zugleich Navigator war.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_SLOOP_STRATEGY</Tag>
@@ -5662,7 +5669,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Erfahrener Steinbergarbeiter:Erfahrene Steinbergarbeiter</Text>
+            <Text>Erfahrener Steinbrucharbeiter:Erfahrene Steinbrucharbeiter</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -5688,7 +5695,7 @@
         <Tag>TXT_KEY_UNIT_STONECUTTER_STRATEGY</Tag>
         <English>To make the most of a bountiful [LINK=YIELD_STONE]stone[\LINK] [LINK=IMPROVEMENT_QUARRY]quarry[\LINK], bring in an [COLOR_UNIT_TEXT]expert stonecutter[COLOR_REVERT].[NEWLINE]Expert stonecutters are able to produce double the amount of [COLOR_HIGHLIGHT_TEXT]stone[COLOR_REVERT] from a stone-producing tile.[PARAGRAPH:1]Expert stonecutters can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also [LINK=CONCEPT_TRAINING]apprentice[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
         <French>Pour exploiter au mieux une carrière de pierres, faites la travailler par un [COLOR_UNIT_TEXT]expert tailleur[COLOR_REVERT]. Les experts tailleurs puisent deux fois plus de [COLOR_HIGHLIGHT_TEXT]pierres[COLOR_REVERT] que les autres colons.</French>
-        <German>Nutzen Sie wenn möglich [COLOR_UNIT_TEXT]Erfahrene Steinbergarbeiter[COLOR_REVERT], da diese die doppelte Menge [COLOR_HIGHLIGHT_TEXT]Stein[COLOR_REVERT] erzeugen.</German>
+        <German>Nutzen Sie wenn möglich [COLOR_UNIT_TEXT]Erfahrene Steinbrucharbeiter[COLOR_REVERT], da diese die doppelte Menge [COLOR_HIGHLIGHT_TEXT]Stein[COLOR_REVERT] erzeugen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_SUGAR</Tag>
@@ -5737,12 +5744,12 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Coltivatore esperto di zucchero:Coltivatori esperti di zucchero</Text>
+            <Text>Esperto piantatore di zucchero:Esperti piantatori di zucchero</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Experto en azúcar:Expertos en azúcar</Text>
+            <Text>Experto plantador de azúcar:Expertos plantador de azúcar</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -5778,12 +5785,12 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Master Tanner:Master Tanners</Text>
+            <Text>Mastro conciatore:Mastri conciatori</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Master Tanner:Master Tanners</Text>
+            <Text>Maestro curtidor:Maestros curtidores</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -5866,7 +5873,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_TOBACCONIST_PEDIA</Tag>
         <English>Tobacco is not a difficult plant to manage.[NEWLINE]It's a weed and one plant can produce enough seeds to cover an entire field.[NEWLINE]The true art comes in the drying, curing and rolling the tobacco into cigars, cigarettes and chewing tobacco.[NEWLINE]It is the tobacconist who decides if the leaves will be dried in the heat of the sun or the cool of the air, when to rotate the leaves as they ferment to ensure a uniform flavour amid dozens of other miniscule considerations that must be taken into account before a fine cigar can be made.[NEWLINE]In fact, a top-quality tobacconist can dramatically increase your tobacco profitability, making the difference between financial catastrophe and comfortable success.</English>
-        <French>Le tabac n'est pas une plante difficile à cultiver.[NEWLINE]Elle pousse facilement et il suffit d'une plante pour produire des graines qui recouvriront bientôt un champ entier.[NEWLINE]Le véritable art réside dans la manière de sécher et de rouler le tabac en cigares, cigarettes et tabac à mâcher.[NEWLINE]C'est le marchand de tabac qui décide si les feuilles seront séchées au soleil ou à l'air, à quel moment tourner les feuilles fermentées pour garantir un goût uniforme, et autres considérations devant être prises en compte avant  de réaliser un cigare de qualité.[NEWLINE]Un bon Marchand de tabac peut considérablement augmenter la rentabilité des cultures de tabac d'une colonie et sauver votre colonie d'une catastrophe financière.</French>
+        <French>Le tabac n'est pas une plante difficile à cultiver.[NEWLINE]Elle pousse facilement et il suffit d'une plante pour produire des graines qui recouvriront bientôt un champ entier.[NEWLINE]Le véritable art réside dans la manière de sécher et de rouler le tabac en cigares, cigarettes et tabac à mâcher.[NEWLINE]C'est le marchand de tabac qui décide si les feuilles seront séchées au soleil ou à l'air, à quel moment tourner les feuilles fermentées pour garantir un goût uniforme, et autres considérations devant être prises en compte avant de réaliser un cigare de qualité.[NEWLINE]Un bon Marchand de tabac peut considérablement augmenter la rentabilité des cultures de tabac d'une colonie et sauver votre colonie d'une catastrophe financière.</French>
         <German>Die Aufzucht der Tabakpflanze ist keine große Kunst.[NEWLINE]Sie ist pflegeleicht und eine einzige Pflanze kann oft genug Samen produzieren, um damit ein komplettes Feld zu bepflanzen.[NEWLINE]Die wirkliche Kunst ist es, die Pflanze fachgerecht zu trocknen, zu konservieren und schließlich zu Zigarren oder Zigaretten zu rollen oder zu Kautabak zu verarbeiten.[NEWLINE]Es ist der Zigarrendreher, der entscheidet, ob die Blätter in der Hitze der Sonne zu trocknen oder an der Luft zu kühlen sind, wann sie gewendet werden müssen, um durch die Fermentierung einen einheitlichen Geschmack zu erhalten, und Dutzende anderer Details, die für die Produktion einer feinen Zigarre nötig sind.[NEWLINE]Ein Zigarrendreher kann den Wert einer Ernte drastisch steigern, was den Unterschied zwischen einer wirtschaftlichen Katastrophe und einem komfortablen Erfolg ausmacht.</German>
         <Italian>Il tabacco non è una pianta difficile da gestire.[NEWLINE]Cresce facilmente e una singola pianta spesso produce abbastanza semi per un intero campo.[NEWLINE]La vera arte sta nell'asciugare, curare e arrotolare il tabacco per fare sigari, sigarette e tabacco da masticare.[NEWLINE]È il tabaccaio che decide se le foglie andranno asciugate al calore del sole o con l'aria fresca, quando girare le foglie durante la fermentazione per creare un aroma uniforme, e le altre decine di piccole cose che bisogna considerare prima di poter confezionare un buon sigaro[NEWLINE]In effetti, un tabaccaio di prima qualità può aumentare incredibilmente la redditività del raccolto di tabacco di una colonia, facendo la differenza tra la catastrofe fiscale e un confortevole successo.</Italian>
         <Spanish>El Tabaco no es una planta fácil de manejar.[NEWLINE]Aunque es fácil cultivarla y una sola planta puede dar bastantes semillas para sembrar todo un campo.[NEWLINE]El verdadero arte se da en el secado, la curación y el liado del Tabaco para convertirlo en Puros, cigarrillos y tabaco de mascar.[NEWLINE]Es el Tabaquero el que decide las hojas que se han de dejar secar al calor del sol o al fresco, cuándo hay que darles la vuelta para asegurarse de que tengan un sabor uniforme y las decenas de detalles que se han de tener en cuenta para poder hacer un buen puro.[NEWLINE]De hecho, un buen Tabaquero es capaz de aumentar drásticamente los beneficios que da una cosecha de Tabaco, lo cual marca la diferencia entre una catástrofe financiera y un éxito holgado.</Spanish>
@@ -5893,12 +5900,12 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Coltivatori esperto di tabacco:Coltivatori esperti di tabacco</Text>
+            <Text>Esperto piantatore di tabacco:Esperti piantatori di tabacco</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Plantador de tabaco experto:Plantadores de tabaco expertos</Text>
+            <Text>Experto plantador de tabaco:Expertos plantador de tabaco</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -6161,7 +6168,7 @@
             <Text>Veteran Cavalryman:Veteran Cavalrymen</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
-	  </English>
+        </English>
         <French>
             <Text>Cavalier vétéran:Cavaliers vétérans</Text>
             <Gender>Male</Gender>
@@ -6200,7 +6207,7 @@
             <Text>Veteran Dragoon:Veteran Dragoons</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
-	  </English>
+        </English>
         <French>
             <Text>Dragon vétéran:Dragons vétérans</Text>
             <Gender>Male</Gender>
@@ -6239,7 +6246,7 @@
             <Text>Veteran Infantry Soldier:Veteran Infantry Soldiers</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
-	  </English>
+        </English>
         <French>
             <Text>Veteran Infantry Soldier:Veteran Infantry Soldiers</Text>
             <Gender>Male</Gender>
@@ -6761,7 +6768,7 @@
         <Tag>TXT_KEY_UNIT_WOOL_CLOTH_PEDIA</Tag>
         <English>Wool clothes have been worn for thousands of years.[NEWLINE]Once sheep came to the colonies in the New World, wool clothes became quite common.[NEWLINE]Until the middle of the 19th century, in Northern Europe textiles were the most important manufacturing activity.[NEWLINE]During the 18th century wool cloth was the preeminent textile.[NEWLINE]The rise of drapery in the 10th century led to the production of different kinds of woollen fabrics and contributed to the economic revival of the West.[NEWLINE]Textile activity was then concentrated in a few centres such as Flanders from the 11th century, Brabant and Northern Italy from the 13th century and England in the 14th century.</English>
         <French>Jusqu'au milieu du XIXe siècle, le textile reste l'activité de fabrication la plus importante d'Europe du nord et jusqu'au milieu du XVIIIe siècle, la laine et son principal dérivé, le drap, fut la principale activité textile. L'essor de la draperie au Xe siècle va entraîner la production de différentes sortes de tissus de laine et contribuer au redémarrage économique de l'occident. L'activité textile se concentre alors dans quelques centres tels que la Flandre à partir du XIe siècle, le Brabant et l'Italie du Nord dès le XIIIe siècle ou l'Angleterre au XIVe siècle.</French>
-        <German>Wollkleidung war über Jahrtausende eine der wichtigsten Kleidungsarten in der Alten Welt. Während der Kolonisation wurden grössere Mengen an Schafen in die Neue Welt gebracht und dort gezüchtet, wodurch Wollkleidung auch dort üblich wurde.</German>
+        <German>Wollkleidung war über Jahrtausende eine der wichtigsten Kleidungsarten in der Alten Welt. Während der Kolonisation wurden größere Mengen an Schafen in die Neue Welt gebracht und dort gezüchtet, wodurch Wollkleidung auch dort üblich wurde.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_WOOL_CLOTH_STRATEGY</Tag>
@@ -6807,7 +6814,7 @@
         <Tag>TXT_KEY_UNIT_FREED_SLAVE_PEDIA</Tag>
         <English>Roughly 12 million Africans arrived in the Americas from the 16th to the 19th centuries.[NEWLINE]Of these, an estimated 645,000 were brought to what is now the United States.[NEWLINE]About 15 per cent of slaves died during the voyage.[NEWLINE]In Africa itself mortality was high due to capturing and transporting local people to the ships.[NEWLINE]Approximately 6 million black Africans were killed in tribal wars.[NEWLINE]Only a few of them were granted freedom by their owners for loyal service. Ultimately slavery was abolished by the Northern states under the government of Abraham Lincoln. After the Confederacy was defeated in 1865 all slaves were officially freed.</English>
         <French>On estime à 12 millions le nombre d'africains arrivés aux Amériques entre le 16ème et le 19ème siècle. Parmi ceux-ci, environ 645 000 sont arrivés aux actuels Etats-Unis. On estime généralement à 15% le taux de mortalité des captifs pendant le voyage.</French>
-        <German>Die Kolonisierung Amerikas vom 16. bis 19. Jahrhundert ging mit einer Massenversklavung von Afrikanern einher, die in allen Teilen des dünn besiedelten Doppelkontinents als billige Arbeitskräfte eingesetzt wurden. Dies betrifft nicht nur die britischen, niederländischen, schwedischen, französischen und spanischen Kolonien, aus denen später die Vereinigten Staaten entstanden sind, sondern in noch grösserem Umfang Brasilien und die europäischen Kolonien in der Karibik. Auf dem nordamerikanischen Festland erlangte die Sklaverei jedoch Ausprägungsformen, die auf dem Doppelkontinent einzigartig waren, und nach der Gründung der Vereinigten Staaten stand sie im Spannungsfeld zwischen einer Ökonomie, die auf der Arbeitsleistung von Sklaven erbaut war, und dem politischen Programm einer jungen Nation, deren Selbstverständnis prominent die Idee der Freiheit zugrundelag. Nur wenigen Sklaven wurde von ihren Besitzern die Freiheit geschenkt, bis 1862 die Nordstaaten unter der Führung von Abraham Lincoln die Sklaverei in den Vereinigten Staaten abschafften.</German>
+        <German>Die Kolonisierung Amerikas vom 16. bis 19. Jahrhundert ging mit einer Massenversklavung von Afrikanern einher, die in allen Teilen des dünn besiedelten Doppelkontinents als billige Arbeitskräfte eingesetzt wurden. Dies betrifft nicht nur die britischen, niederländischen, schwedischen, französischen und spanischen Kolonien, aus denen später die Vereinigten Staaten entstanden sind, sondern in noch größerem Umfang Brasilien und die europäischen Kolonien in der Karibik. Auf dem nordamerikanischen Festland erlangte die Sklaverei jedoch Ausprägungsformen, die auf dem Doppelkontinent einzigartig waren, und nach der Gründung der Vereinigten Staaten stand sie im Spannungsfeld zwischen einer Ökonomie, die auf der Arbeitsleistung von Sklaven erbaut war, und dem politischen Programm einer jungen Nation, deren Selbstverständnis prominent die Idee der Freiheit zugrundelag. Nur wenigen Sklaven wurde von ihren Besitzern die Freiheit geschenkt, bis 1862 die Nordstaaten unter der Führung von Abraham Lincoln die Sklaverei in den Vereinigten Staaten abschafften.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_REVOLTING_SLAVE</Tag>
@@ -6848,7 +6855,7 @@
         <Tag>TXT_KEY_UNIT_REVOLTING_SLAVE_PEDIA</Tag>
         <English>12 million Africans arrived in the Americas from the 16th to the 19th centuries.[NEWLINE]Of these, an estimated 645,000 were brought to what is now the United States.[NEWLINE]Many slaves died during the voyage.[NEWLINE]In Africa itself mortality rates were high during the fighting to capture and transport local people to the ships.[NEWLINE]Approximately 6 million black Africans were killed in tribal wars.[NEWLINE]Only a few were later granted freedom by their owners for loyal service. Slaves were emancipated by President Abraham Lincoln early in 1863 during the American Civil War, and all slaves were freed when the Confederacy was defeated in 1865.</English>
         <French>On estime à 12 millions le nombre d'africains arrivés aux Amériques entre le 16ème et le 19ème siècle. Parmi ceux-ci, environ 645 000 sont arrivés aux actuels Etats-Unis. On estime généralement à 15% le taux de mortalité des captifs pendant le voyage.</French>
-        <German>Die Kolonisierung Amerikas vom 16. bis 19. Jahrhundert ging mit einer Massenversklavung von Afrikanern einher, die in allen Teilen des dünn besiedelten Doppelkontinents als billige Arbeitskräfte eingesetzt wurden. Dies betrifft nicht nur die britischen, niederländischen, schwedischen, französischen und spanischen Kolonien, aus denen später die Vereinigten Staaten entstanden sind, sondern in noch grösserem Umfang Brasilien und die europäischen Kolonien in der Karibik. Auf dem nordamerikanischen Festland erlangte die Sklaverei jedoch Ausprägungsformen, die auf dem Doppelkontinent einzigartig waren, und nach der Gründung der Vereinigten Staaten stand sie im Spannungsfeld zwischen einer Ökonomie, die auf der Arbeitsleistung von Sklaven erbaut war, und dem politischen Programm einer jungen Nation, deren Selbstverständnis prominent die Idee der Freiheit zugrundelag. Nur wenigen Sklaven wurde von ihren Besitzern die Freiheit geschenkt, bis 1862 die Nordstaaten der Vereinigten Staaten unter der Führung von Abraham Lincoln die Sklaverei abschafften.</German>
+        <German>Die Kolonisierung Amerikas vom 16. bis 19. Jahrhundert ging mit einer Massenversklavung von Afrikanern einher, die in allen Teilen des dünn besiedelten Doppelkontinents als billige Arbeitskräfte eingesetzt wurden. Dies betrifft nicht nur die britischen, niederländischen, schwedischen, französischen und spanischen Kolonien, aus denen später die Vereinigten Staaten entstanden sind, sondern in noch größerem Umfang Brasilien und die europäischen Kolonien in der Karibik. Auf dem nordamerikanischen Festland erlangte die Sklaverei jedoch Ausprägungsformen, die auf dem Doppelkontinent einzigartig waren, und nach der Gründung der Vereinigten Staaten stand sie im Spannungsfeld zwischen einer Ökonomie, die auf der Arbeitsleistung von Sklaven erbaut war, und dem politischen Programm einer jungen Nation, deren Selbstverständnis prominent die Idee der Freiheit zugrundelag. Nur wenigen Sklaven wurde von ihren Besitzern die Freiheit geschenkt, bis 1862 die Nordstaaten der Vereinigten Staaten unter der Führung von Abraham Lincoln die Sklaverei abschafften.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_REVOLTING_CRIMINAL</Tag>
@@ -6984,7 +6991,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Feindlicher Ureinwohner:Feindliche Ureinwohner</Text>
+            <Text>Feindseliger Ureinwohner:Feindselige Ureinwohner</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -7003,6 +7010,6 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_HOSTILE_NATIVE_STRATEGY</Tag>
         <English>[COLOR_UNIT_TEXT]Hostile Natives[COLOR_REVERT] cannot be acquired.[NEWLINE]They are hostile to the player.[NEWLINE]They organize opposition in [COLOR_HIGHLIGHT_TEXT]hostile Native villages[COLOR_REVERT].[NEWLINE]They will protect their village until death and attack the player if their village is destroyed.</English>
-        <German>[COLOR_UNIT_TEXT]Feindliche Ureinwohner[COLOR_REVERT] können nicht erworben werden.[NEWLINE]Sie sind dem Spieler gegenüber feindselig und meist nur in [COLOR_HIGHLIGHT_TEXT]Feindlichen Ureinwohnerdörfern[COLOR_REVERT] zu finden.[NEWLINE]Sie werden ihr Dorf bis zum Tod verteidigen und greifen den Spieler an, wenn dieses zerstört wird.</German>
+        <German>[COLOR_UNIT_TEXT]Feindselige Ureinwohner[COLOR_REVERT] können nicht erworben werden.[NEWLINE]Sie sind dem Spieler gegenüber feindlich gesonnen und meist nur in [COLOR_HIGHLIGHT_TEXT]feindseligen Ureinwohnerdörfern[COLOR_REVERT] zu finden.[NEWLINE]Sie werden ihr Dorf bis zum Tod verteidigen und greifen den Spieler an, wenn dieses zerstört wird.</German>
     </TEXT>
 </Civ4GameText>
