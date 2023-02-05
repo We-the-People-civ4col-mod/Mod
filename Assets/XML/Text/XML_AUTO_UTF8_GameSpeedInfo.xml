@@ -1,131 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
-        <Tag>TXT_KEY_GAMESPEED_TAC_EPIC</Tag>
-        <English>Epic</English>
-        <French>
-            <Text>Épique</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Episch</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Epica</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Épica</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
+        <Tag>TXT_KEY_GAMESPEED_TAC_QUICK</Tag>
+        <English>(16 months/turn) Quick</English>
+        <French>(16 mois/tour) Rapide</French>
+        <German>(16 Monate/Zug) Schnell</German>
+        <Italian>(16 mesi/turno) Veloce</Italian>
+        <Spanish>(16 meses/turno) Rápida</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_GAMESPEED_TAC_EPIC_HELP</Tag>
-        <English>Noticably slower game speed</English>
-        <French>Les données du jeu sont équilibrées pour rendre la partie plus longue.</French>
-        <German>Spürbar langsameres Spieltempo.</German>
-        <Italian>Noticably slower game speed</Italian>
-        <Spanish>Noticably slower game speed</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GAMESPEED_TAC_MARATHON</Tag>
-        <English>Marathon</English>
-        <French>
-            <Text>Marathon</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Marathon</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Maratona</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Maratn</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GAMESPEED_TAC_MARATHON_HELP</Tag>
-        <English>Extremely slow game speed</English>
-        <French>Vitesse de jeu très lente</French>
-        <German>Extrem langsames Spieltempo</German>
-        <Italian>Velocità di gioco incredibilmente lunga</Italian>
-        <Spanish>Velocidad prolongada</Spanish>
+        <Tag>TXT_KEY_GAMESPEED_TAC_QUICK_HELP</Tag>
+        <English>Slightly faster game speed : The game data is balanced to shorten the game duration.</English>
+        <French>Vitesse de jeu légèrement plus rapide :Les données de jeu sont équilibrées afin de réduire la durée du jeu.</French>
+        <German>Leicht schnelleres Spieltempo : Die Spieldaten werden ausbalanciert, um die Spieldauer zu verkürzen.</German>
+        <Italian>Velocità di gioco leggermente superiore: I dati di gioco sono stati bilanciati per ridurre la durata del gioco.</Italian>
+        <Spanish>Velocidad de juego ligeramente más rápida : Los datos del juego están equilibrados para acortar la duración del juego.</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMESPEED_TAC_NORMAL</Tag>
-        <English>Normal</English>
-        <French>
-            <Text>Normale</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Normal</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Normale</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Normal</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
+        <English>(12 months/turn) Normal</English>
+        <French>(12 mois/tour) Normale</French>
+        <German>(12 Monate/Zug) Normal</German>
+        <Italian>(12 mesi/turno) Normale</Italian>
+        <Spanish>(12 meses/turno) Normal</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMESPEED_TAC_NORMAL_HELP</Tag>
         <English>Normal game speed</English>
         <French>Vitesse de jeu normale</French>
         <German>Normales Spieltempo</German>
-        <Italian>Normal game speed</Italian>
-        <Spanish>Normal game speed</Spanish>
+        <Italian>Velocità di gioco normale</Italian>
+        <Spanish>Velocidad de juego normal</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_GAMESPEED_TAC_QUICK</Tag>
-        <English>Quick</English>
-        <French>
-            <Text>Rapide</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Schnell</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Veloce</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Rpida</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
+        <Tag>TXT_KEY_GAMESPEED_TAC_EPIC</Tag>
+        <English>(6 months/turn) Epic</English>
+        <French>(6 mois/tour) Épique</French>
+        <German>(6 Monate/Zug) Episch</German>
+        <Italian>(6 mesi/turno) Epica</Italian>
+        <Spanish>(6 meses/turno) Épica</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_GAMESPEED_TAC_QUICK_HELP</Tag>
-        <English>Slightly faster game speed</English>
-        <French>Tout se déroulera plus vite à cette vitesse</French>
-        <German>Leicht schnelleres Spieltempo</German>
-        <Italian>Slightly faster game speed</Italian>
-        <Spanish>Slightly faster game speed</Spanish>
+        <Tag>TXT_KEY_GAMESPEED_TAC_EPIC_HELP</Tag>
+        <English>Slow Game Speed : The game data is balanced to significantly extend the game duration.</English>
+        <French>Vitesse de jeu lente : Les données de jeu sont équilibrées afin de prolonger sensiblement la durée du jeu.</French>
+        <German>Langsames Spieltempo : Die Spieldaten werden ausbalanciert, um die Spieldauer deutlich zu verlängern.</German>
+        <Italian>Velocità di gioco lenta : I dati di gioco sono bilanciati per prolungare in modo significativo la durata del gioco.</Italian>
+        <Spanish>Velocidad de juego lenta : Los datos del juego están equilibrados para prolongar significativamente la duración del juego.</Spanish>
+        <Russian>TBD</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GAMESPEED_TAC_MARATHON</Tag>
+        <English>(4 months/turn) Marathon</English>
+        <French>(4 mois/tour) Marathon</French>
+        <German>(4 Monate/Zug) Marathon</German>
+        <Italian>(4 mesi/turno) Maratona</Italian>
+        <Spanish>(4 meses/turno) Maratón</Spanish>
+        <Russian>TBD</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GAMESPEED_TAC_MARATHON_HELP</Tag>
+        <English>Extremely slow game speed : The game data is balanced to significantly extend the game duration.</English>
+        <French>Vitesse de jeu très lente : Les données de jeu sont équilibrées afin de prolonger sensiblement la durée du jeu.</French>
+        <German>Extrem langsames Spieltempo : Die Spieldaten werden ausbalanciert, um die Spieldauer deutlich zu verlängern.</German>
+        <Italian>Velocità di gioco incredibilmente lunga : I dati di gioco sono bilanciati per prolungare in modo significativo la durata del gioco. </Italian>
+        <Spanish>Velocidad de juego extremadamente lento : Los datos del juego están equilibrados para prolongar significativamente la duración del juego.</Spanish>
+        <Russian>TBD</Russian>
     </TEXT>
 </Civ4GameText>

@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
-        <Tag>TXT_KEY_ROUTE_PLASTERED_ROAD</Tag>
-        <English>Country Road</English>
-        <French>Route de gravier</French>
-        <German>Landstraße</German>
-        <Italian>Country Road</Italian>
-        <Spanish>Country Road</Spanish>
-        <Russian>Гравийная дорога</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ROUTE_RAILROAD</Tag>
-        <English>Plastered Country Road</English>
-        <French>Route pavée</French>
-        <German>gepflasterte Landstraße</German>
-        <Italian>Plastered Country Road</Italian>
-        <Spanish>Plastered Country Road</Spanish>
-        <Russian>Вымощенная камнем дорога</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_ROUTE_ROAD</Tag>
         <English>Road</English>
         <French>
@@ -27,9 +9,9 @@
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Straße</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Text>Straße:Straßen</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
         </German>
         <Italian>
             <Text>Strada:Strade</Text>
@@ -42,5 +24,23 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Дорога</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ROUTE_PLASTERED_ROAD</Tag>
+        <English>Country Road</English>
+        <French>Route de gravier</French>
+        <German>Landstraße</German>
+        <Italian>Strada di campagna</Italian>
+        <Spanish>Carretera rural</Spanish>
+        <Russian>Гравийная дорога</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ROUTE_RAILROAD</Tag>
+        <English>Plastered Country Road</English>
+        <French>Route pavée</French>
+        <German>gepflasterte Landstraße</German>
+        <Italian>Strada di campagna intonacata</Italian>
+        <Spanish>Carretera rural enlucida</Spanish>
+        <Russian>Вымощенная камнем дорога</Russian>
     </TEXT>
 </Civ4GameText>

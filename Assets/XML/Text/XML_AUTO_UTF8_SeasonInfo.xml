@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
-        <Tag>TXT_KEY_SEASON_FALL</Tag>
-        <English>Fall</English>
-        <French>
-            <Text>Automne</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Herbst</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Autunno</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Otoño</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_SEASON_SPRING</Tag>
         <English>Spring</English>
         <French>
@@ -47,6 +23,11 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>
+            <Text>TBD</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SEASON_SUMMER</Tag>
@@ -71,6 +52,40 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>
+            <Text>TBD</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SEASON_FALL</Tag>
+        <English>Fall</English>
+        <French>
+            <Text>Automne</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Herbst</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Autunno</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Otoño</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+        <Russian>
+            <Text>TBD</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SEASON_WINTER</Tag>
@@ -95,5 +110,10 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>
+            <Text>TBD</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Russian>
     </TEXT>
 </Civ4GameText>
