@@ -19,6 +19,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Алгонкины</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_PEDIA</Tag>
@@ -45,6 +46,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Апачи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_APACHE_PEDIA</Tag>
@@ -73,6 +75,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Араваки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_ARAWAK_PEDIA</Tag>
@@ -105,6 +108,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Империя Ацтеков</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_AZTEC_PEDIA</Tag>
@@ -137,6 +141,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Дикие животные</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_BARBARIAN_PEDIA</Tag>
@@ -163,6 +168,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Черноногие</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_PEDIA</Tag>
@@ -189,6 +195,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Карибы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_CARIBS_PEDIA</Tag>
@@ -215,6 +222,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Чероки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_CHEROKEE_PEDIA</Tag>
@@ -247,6 +255,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Святая Церковь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_CHURCH_PEDIA</Tag>
@@ -273,6 +282,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Команчи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_COMANCHE_PEDIA</Tag>
@@ -299,6 +309,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Кроу</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_CROW_PEDIA</Tag>
@@ -313,6 +324,7 @@
         <German>Dänische Kolonien</German>
         <Italian>Danish Colonies</Italian>
         <Spanish>Danish Colonies</Spanish>
+        <Russian>Датские колонии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE</Tag>
@@ -321,6 +333,7 @@
         <German>Königreich von Dänemark</German>
         <Italian>Kingdom of Denmark</Italian>
         <Spanish>Kingdom of Denmark</Spanish>
+        <Russian>Королевство Дания-Норвегия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_PEDIA</Tag>
@@ -329,6 +342,7 @@
         <German>Dänemark</German>
         <Italian>Denmark</Italian>
         <Spanish>Denmark</Spanish>
+        <Russian>Дания-Норвегия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_DENMARK_PEDIA</Tag>
@@ -355,6 +369,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Голландские колонии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE</Tag>
@@ -375,6 +390,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Голландия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_PEDIA</Tag>
@@ -407,6 +423,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Английские колонии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE</Tag>
@@ -427,6 +444,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Британская империя</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_PEDIA</Tag>
@@ -459,6 +477,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Французские колонии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE</Tag>
@@ -479,6 +498,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Королевство Франция</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_PEDIA</Tag>
@@ -507,6 +527,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Гуарани</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_GUARANI_PEDIA</Tag>
@@ -533,6 +554,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Нгабе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_GUAYMI_PEDIA</Tag>
@@ -559,6 +581,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Гуроны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_HURON_PEDIA</Tag>
@@ -589,6 +612,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Империя Инков</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_INCA_PEDIA</Tag>
@@ -617,6 +641,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Инуиты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_INUIT_PEDIA</Tag>
@@ -643,6 +668,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ирокезы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_IROQUOIS_PEDIA</Tag>
@@ -671,6 +697,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Мачипаро</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_MACHIPARO_PEDIA</Tag>
@@ -697,6 +724,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Мапуче</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_MAPUCHE_PEDIA</Tag>
@@ -723,6 +751,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Империя Майа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_MAYA_PEDIA</Tag>
@@ -749,6 +778,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Миштеки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_MIXTEC_PEDIA</Tag>
@@ -775,6 +805,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Муиски</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_MUISCA_PEDIA</Tag>
@@ -801,6 +832,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Навахо</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_NAVAJO_PEDIA</Tag>
@@ -827,6 +859,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Не-Персе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_PEDIA</Tag>
@@ -853,6 +886,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Омагуа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_OMAGUA_PEDIA</Tag>
@@ -867,6 +901,7 @@
         <German>Colónias Portuguesas</German>
         <Italian>Colonie portoghesi</Italian>
         <Spanish>Portuguese Colonies</Spanish>
+        <Russian>Португальские колонии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE</Tag>
@@ -875,6 +910,7 @@
         <German>Königreich Portugal</German>
         <Italian>Impero Portoghese</Italian>
         <Spanish>Imperio portugués</Spanish>
+        <Russian>Португальская империя</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_PEDIA</Tag>
@@ -883,6 +919,7 @@
         <German>Portugal</German>
         <Italian>Portogallo</Italian>
         <Spanish>Portugal</Spanish>
+        <Russian>Португалия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_PORTUGAL_PEDIA</Tag>
@@ -897,6 +934,7 @@
         <German>Russische Kolonien</German>
         <Italian>Russian Colonies</Italian>
         <Spanish>Russian Colonies</Spanish>
+        <Russian>Русские колонии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE</Tag>
@@ -905,6 +943,7 @@
         <German>Russisches Reich</German>
         <Italian>Russian Empire</Italian>
         <Spanish>Russian Empire</Spanish>
+        <Russian>Российская Империя</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_PEDIA</Tag>
@@ -913,6 +952,7 @@
         <German>Russland</German>
         <Italian>Russia</Italian>
         <Spanish>Russia</Spanish>
+        <Russian>Россия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_RUSSIA_PEDIA</Tag>
@@ -941,6 +981,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Шошоны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_SHOSHONE_PEDIA</Tag>
@@ -967,6 +1008,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Шуар</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_SHUAR_PEDIA</Tag>
@@ -993,6 +1035,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Сиу</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_SIOUX_PEDIA</Tag>
@@ -1021,6 +1064,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Испанские колонии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE</Tag>
@@ -1041,6 +1085,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Испанская империя</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_PEDIA</Tag>
@@ -1061,6 +1106,7 @@
         <German>Schwedische Kolonien</German>
         <Italian>Swedish Colonies</Italian>
         <Spanish>Swedish Colonies</Spanish>
+        <Russian>Шведские колонии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE</Tag>
@@ -1069,6 +1115,7 @@
         <German>Königreich von Schwden</German>
         <Italian>Kingdom of Sweden</Italian>
         <Spanish>Kingdom of Sweden</Spanish>
+        <Russian>Королевство Швеция</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_PEDIA</Tag>
@@ -1077,6 +1124,7 @@
         <German>Schweden</German>
         <Italian>Sweden</Italian>
         <Spanish>Sweden</Spanish>
+        <Russian>Швеция</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_SWEDEN_PEDIA</Tag>
@@ -1103,6 +1151,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Тараски</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_TARASCANS_PEDIA</Tag>
@@ -1129,6 +1178,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Теуэльче</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_PEDIA</Tag>
@@ -1155,6 +1205,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Торомона</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_TOROMONA_PEDIA</Tag>
@@ -1181,6 +1232,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Тупи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_TUPI_PEDIA</Tag>
@@ -1209,6 +1261,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Сапотеки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_PEDIA</Tag>
