@@ -24,6 +24,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Церковь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_CHURCH_ADJECTIVE</Tag>
@@ -36,6 +37,7 @@
         <German>kirchlicher:kirchliche:kirchliche:kirchliche</German>
         <Italian>Church</Italian>
         <Spanish>Church</Spanish>
+        <Russian>Церковь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_ARAWAK_ADJECTIVE</Tag>
@@ -56,6 +58,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0:0:1:1</Plural>
         </Spanish>
+        <Russian>Араваки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_TUPI_ADJECTIVE</Tag>
@@ -76,6 +79,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0:0:1:1</Plural>
         </Spanish>
+        <Russian>Тупи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_CHEROKEE_ADJECTIVE</Tag>
@@ -96,6 +100,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0:0:1:1</Plural>
         </Spanish>
+        <Russian>Чироки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_IROQUOIS_ADJECTIVE</Tag>
@@ -116,6 +121,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0:0:1:1</Plural>
         </Spanish>
+        <Russian>Ирокезы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SIOUX_ADJECTIVE</Tag>
@@ -136,6 +142,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0:0:1:1</Plural>
         </Spanish>
+        <Russian>Сиу</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_NEZ_PERCE_ADJECTIVE</Tag>
@@ -156,6 +163,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0:0:1:1</Plural>
         </Spanish>
+        <Russian>Не-Персе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_APACHE_ADJECTIVE</Tag>
@@ -176,6 +184,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0:0:1:1</Plural>
         </Spanish>
+        <Russian>Апачи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_AZTEC_ADJECTIVE</Tag>
@@ -204,6 +213,7 @@
             <Gender>Male:Female:Male:Female</Gender>
             <Plural>0:0:1:1</Plural>
         </Spanish>
+        <Russian>Ацтеки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_INCA_ADJECTIVE</Tag>
@@ -232,6 +242,7 @@
             <Gender>Male:Female:Male:Female</Gender>
             <Plural>0:0:1:1</Plural>
         </Spanish>
+        <Russian>Инки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SHUAR_ADJECTIVE</Tag>
@@ -252,6 +263,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Шуар</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SHUAR_SHORT_DESC</Tag>
@@ -272,6 +284,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Шуар</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SHUAR_DESC</Tag>
@@ -292,6 +305,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Шуар</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_TEHUELCHE_ADJECTIVE</Tag>
@@ -312,6 +326,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Теуэльче</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_TEHUELCHE_SHORT_DESC</Tag>
@@ -332,6 +347,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Теуэльче</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_TEHUELCHE_DESC</Tag>
@@ -352,6 +368,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Теуэльче</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_MAYA_ADJECTIVE</Tag>
@@ -372,6 +389,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Майа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_MAYA_DESC</Tag>
@@ -392,6 +410,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Империя Майа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_MAYA_SHORT_DESC</Tag>
@@ -412,6 +431,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Майа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_NATIVE_NORTH</Tag>
@@ -432,6 +452,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Индейцы Северной Америки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_BARBARIAN_ADJECTIVE</Tag>
@@ -468,6 +489,7 @@
         <German>See</German>
         <Italian>Sea</Italian>
         <Spanish>Sea</Spanish>
+        <Russian>Мор.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_UNDEMANDING_SHORT</Tag>
@@ -476,6 +498,7 @@
         <German>Gen</German>
         <Italian>Und</Italian>
         <Spanish>Und</Spanish>
+        <Russian>Нетреб.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_ADMINISTRATIVE_SHORT</Tag>
@@ -484,6 +507,7 @@
         <German>Adm</German>
         <Italian>Amm</Italian>
         <Spanish>Adm</Spanish>
+        <Russian>Управл.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_PIONEER_SHORT</Tag>
@@ -492,6 +516,7 @@
         <German>Pio</German>
         <Italian>Pio</Italian>
         <Spanish>Pio</Spanish>
+        <Russian>Перво.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_CAPITALIST_SHORT</Tag>
@@ -500,6 +525,7 @@
         <German>Kap</German>
         <Italian>Cap</Italian>
         <Spanish>Cap</Spanish>
+        <Russian>Капит.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_SOPHISTICATED_SHORT</Tag>
@@ -540,6 +566,7 @@
         <German>Landw</German>
         <Italian>Agr</Italian>
         <Spanish>Agr</Spanish>
+        <Russian>Землед.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_IMPERIALIST_SHORT</Tag>
@@ -548,6 +575,7 @@
         <German>Imp</German>
         <Italian>Imp</Italian>
         <Spanish>Imp</Spanish>
+        <Russian>Импер.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_PATRIARCH_SHORT</Tag>
@@ -564,6 +592,7 @@
         <German>Sam</German>
         <Italian>Gat</Italian>
         <Spanish>Gat</Spanish>
+        <Russian>Соб.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_DISCIPLINED_SHORT</Tag>
@@ -580,6 +609,7 @@
         <German>Reb</German>
         <Italian>Lib</Italian>
         <Spanish>Lib.</Spanish>
+        <Russian>Либер.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_COOPERATIVE_SHORT</Tag>
@@ -736,6 +766,7 @@
         <German>Fromm</German>
         <Italian>Devoto</Italian>
         <Spanish>Devout</Spanish>
+        <Russian>Набожный</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_DEVOUT_SHORT</Tag>
@@ -744,6 +775,7 @@
         <German>Frm</German>
         <Italian>Dev</Italian>
         <Spanish>Dev</Spanish>
+        <Russian>Наб.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_EXPLORERS_SHORT</Tag>
@@ -892,6 +924,7 @@
         <English>Turn trade messages [COLOR_HIGHLIGHT_TEXT]on/off[COLOR_REVERT]</English>
         <French>Activer les messages commerciaux [COLOR_HIGHLIGHT_TEXT]marche/arrêt[COLOR_REVERT]</French>
         <German>Handels-Anzeige [COLOR_HIGHLIGHT_TEXT]Ein/Aus[COLOR_REVERT]</German>
+        <Russian>Торговые сообщения [COLOR_HIGHLIGHT_TEXT]вкл/выкл[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTE_DESCRIPTION</Tag>
@@ -900,6 +933,7 @@
         <German>%s1_yield von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] nach [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</German>
         <Italian>%s1_yield da [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</Italian>
         <Spanish>%s1_yield por ruta de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</Spanish>
+        <Russian>%s1_yield из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] в [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTE_MAINTAIN</Tag>
@@ -924,6 +958,7 @@
         <German>Vulkan</German>
         <Italian>Vulcano</Italian>
         <Spanish>Volcán</Spanish>
+        <Russian>Вулкан</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_VULKAN_PEDIA</Tag>
@@ -932,6 +967,7 @@
         <German>Vulkan</German>
         <Italian>Vulcano</Italian>
         <Spanish>Volcán</Spanish>
+        <Russian>Вулкан</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_SCRIPT_LANDMASS_TYPE</Tag>
@@ -948,6 +984,7 @@
         <German>Ihr habt %d1[ICON_GOLD] von Eurem Feind erbeutet</German>
         <Italian>Hai catturato %d1[ICON_GOLD] dal nemico</Italian>
         <Spanish>You captured %d1[ICON_GOLD] from the enemy</Spanish>
+        <Russian>Вызахватили %d1[ICON_GOLD] у врага</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HIM_GOLD_CAPTURE</Tag>
@@ -956,12 +993,14 @@
         <German>Piraten konnten %d1[ICON_GOLD] von Euch erbeuten</German>
         <Italian>I pirati ti hanno estorto %d1[ICON_GOLD]</Italian>
         <Spanish>You lost %d1[ICON_GOLD] to Pirates</Spanish>
+        <Russian>Вы потеряли %d1[ICON_GOLD] из-за пиратов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YOU_UNITS_EUROPE_INTERCEPTED</Tag>
         <English>Milord, your ship [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] was captured by the Royal Navy off the coast of Europe.</English>
         <French>Votre [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] a été intercepté en Europe par votre Roi.</French>
         <German>Milord, Euer Schiff [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] wurde vor der Küste Europas von der königlichen Marine aufgebracht.</German>
+        <Russian>Милорд, ваш корабль [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] был захвачен Королевским флотом у берегов Европы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORCE_START_PEACE</Tag>
@@ -987,24 +1026,28 @@
         <English>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]The storage space for %F1_yield_icon is almost completely used up ...</English>
         <French>Vous n'avez presque plus de place pour %F1_yield_icon à %s2_city en raison d'une capacité de stockage limitée</French>
         <German>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Der Lagerraum für %F1_yield_icon ist fast vollständig ausgenutzt ...</German>
+        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Место для хранения %F1_yield_icon почти закончилось ...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NO_RAW</Tag>
         <English>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]The city has run out of %F2_yield_icon available. Our citizens can no longer produce %F3_yield_icon and are twiddling their thumbs.</English>
         <French>%s1_city est à cours de %F2_yield_icon et ne peut ainsi plus produire %F3_yield_icon.</French>
         <German>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Es steht keinerlei %F2_yield_icon mehr zur Verfügung. Unsere Bürger können keine %F3_yield_icon mehr herstellen und drehen Däumchen.</German>
+        <Russian>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Вгороде закончились %F2_yield_icon. Горожане больше не могут производить %F3_yield_icon и сидят без дела.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ALMOST_NO_RAW</Tag>
         <English>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]The stock of %F2_yield_icon is declining. We will soon have a problem with the production of %F3_yield_icon.</English>
         <French>%s1_city est presque à cours de %F2_yield_icon et ne pourra en conséquence plus produire de %F3_yield_icon.</French>
         <German>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Es neigt sich der Lagervorrat an %F2_yield_icon. Bei der Herstellung von %F3_yield_icon werden wir bald ein Problem bekommen.</German>
+        <Russian>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Запас %F2_yield_icon снижается. Скоро у нас возникнут проблемы с производством %F3_yield_icon.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NOT_ENOUGH_RAW</Tag>
         <English>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]We could produce more %F3_yield_icon if we had more %F2_yield_icon available there.</English>
         <French>%s1_city est à cours de %F2_yield_icon et ne peut ainsi plus produire de %F3_yield_icon.</French>
         <German>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Wir könnten mehr %F3_yield_icon herstellen, stünde uns dort mehr %F2_yield_icon zur Verfügung.</German>
+        <Russian>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Мы могли бы производить больше %F3_yield_icon, если бы у нас было больше %F2_yield_icon.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_WORLD_MAP_STRING</Tag>
@@ -1071,6 +1114,7 @@
         <German>Eroberung</German>
         <Italian>Conquista</Italian>
         <Spanish>Conquista</Spanish>
+        <Russian>Завоевание</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_CONQUEST_PEDIA</Tag>
@@ -1079,6 +1123,7 @@
         <German>Vernichte alle Rivalen ...</German>
         <Italian>Eliminare tutti i rivali</Italian>
         <Spanish>Eliminar a todos los rivales</Spanish>
+        <Russian>Устранить всех соперников</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_TRADE</Tag>
@@ -1087,6 +1132,7 @@
         <German>Handel</German>
         <Italian>Economic</Italian>
         <Spanish>Economic</Spanish>
+        <Russian>Экономическая</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_PRODUCTION_RATE</Tag>
@@ -1095,6 +1141,7 @@
         <German>Industrielle Revolution (Produktionsrate pro Runde)</German>
         <Italian>Iniziare la rivoluzione industriale (tasso di produzione per turno)</Italian>
         <Spanish>Iniciar la revolución industrial (tasa de producción por turno)</Spanish>
+        <Russian>Начать промышленную революцию (производство за ход)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_TOTAL_PROD_RATE</Tag>
@@ -1103,6 +1150,7 @@
         <German>Gesamtproduktionsrate :</German>
         <Italian>Tasso di produzione totale :</Italian>
         <Spanish>Tasa de producción total :</Spanish>
+        <Russian>Общая производительность :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_PRODUCTION_OF</Tag>
@@ -1139,6 +1187,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Трясина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DALETEST</Tag>
@@ -1155,6 +1204,7 @@
         <German>[COLOR_CYAN]Berater-Menü[COLOR_REVERT]</German>
         <Italian>[COLOR_CYAN]Menu Ausiliario[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_CYAN]Menú Asesor[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_CYAN]Меню советника[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_SENTRY_WHILE_HEAL</Tag>
@@ -1283,18 +1333,21 @@
         <English>%s2_city : A striving citizen will finish his education at the %s3_building in %d1_Num [NUM1:turn:turns].</English>
         <French>%s2_city : Un étudiant va bientôt achever sa formation dans l'%s3_building : %d1_Num [NUM1:turn:turns].</French>
         <German>%s2_city : In %d1 [NUM1:Runde:Runden] wird ein strebsamer Bürger an der %s3_building seine Ausbildung beenden.</German>
+        <Russian>%s2_city : Способный горожанин закончит обучение в %s3_building через %d1_Num [NUM1:ход:хода].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_EXPERT</Tag>
         <English>A free colonist who has worked long in his profession has now gained enough knowledge to be considered [COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT].</English>
         <French>[COLOR_POSITIVE_TEXT]Un colon a été promu %s1_expert.[COLOR_REVERT]</French>
         <German>Ein Freier Kolonist, der lange in seinem Beruf gearbeitet hat, hat nun genug Wissen erlangt, um als [COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT] zu gelten.</German>
+        <Russian>Свободный колонист, который долгое время работал по своей профессии, теперь получил достаточно знаний, чтобы считаться [COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_EXPERT_IN_CITY</Tag>
         <English>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]A free colonist who has worked long in his profession has now gained enough knowledge to be considered [COLOR_UNIT_TEXT]%s2_expert[COLOR_REVERT].</English>
         <French>[COLOR_POSITIVE_TEXT]Un colon a été promu expert %s2_expert.[COLOR_REVERT]</French>
         <German>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Ein Freier Kolonist, der lange in seinem Beruf gearbeitet hat, hat nun genug Wissen erlangt, um als [COLOR_UNIT_TEXT]%s2_expert[COLOR_REVERT] zu gelten.</German>
+        <Russian>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Свободный колонист, долго трудившийся по своей профессии, теперь получил достаточно знаний, чтобы стать [COLOR_UNIT_TEXT]%s2_expert[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_FREE</Tag>
@@ -1796,7 +1849,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_NEAR_CITY</Tag>
-	  <English>[SPACE]</English>
+        <English>[SPACE]</English>
         <French>aux abords de [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</French>
         <German>[SPACE]</German>
         <Italian>near [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Italian>
@@ -1938,6 +1991,7 @@
         <German>Großzügig! Habt Dank.</German>
         <Italian>Great! Thank you.</Italian>
         <Spanish>Great! Thank you.</Spanish>
+        <Russian>Здорово! Спасибо.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_BOYCOTT_LABEL</Tag>
@@ -1954,6 +2008,7 @@
         <German>Zahlt Uns %d1[ICON_GOLD] und Ihr dürft wieder [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] hier in der Heimat verkaufen.</German>
         <Italian>Pay us %d1[ICON_GOLD] and you can trade with [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] again.</Italian>
         <Spanish>Pay us %d1[ICON_GOLD] and you can trade with [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] again.</Spanish>
+        <Russian>Вы должны заплатить Нам %d1[ICON_GOLD] и тогда снова можете торговать [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_SELECT_DESTINATION</Tag>
@@ -1962,6 +2017,7 @@
         <German>Ziel auswählen</German>
         <Italian>Select your destination</Italian>
         <Spanish>Select your destination</Spanish>
+        <Russian>Выберите пункт назначения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_DIALOG_DECLINE</Tag>
@@ -1970,6 +2026,7 @@
         <German>Vorerst nicht.</German>
         <Italian>Maybe later.</Italian>
         <Spanish>Maybe later.</Spanish>
+        <Russian>Может быть позже...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_DENMARK_DESC</Tag>
@@ -1978,6 +2035,7 @@
         <German>Dänische Kolonien</German>
         <Italian>Colonie danesi</Italian>
         <Spanish>Colonias danesas</Spanish>
+        <Russian>Датские колонии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_DENMARK_SHORT_DESC</Tag>
@@ -1986,6 +2044,7 @@
         <German>Neu-Dänemark</German>
         <Italian>New Denmark</Italian>
         <Spanish>New Denmark</Spanish>
+        <Russian>Новая Дания</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_DENMARK_ADJECTIVE</Tag>
@@ -1998,6 +2057,7 @@
         <German>dänisch</German>
         <Italian>Danish</Italian>
         <Spanish>Danish</Spanish>
+        <Russian>Дания</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_DENMARK_EUROPE_ADJECTIVE</Tag>
@@ -2024,6 +2084,7 @@
         <German>Dänemark</German>
         <Italian>Danimarca</Italian>
         <Spanish>Dinamarca</Spanish>
+        <Russian>Королевство Дания-Норвегия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_DUTCH_ADJECTIVE</Tag>
