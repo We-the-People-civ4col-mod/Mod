@@ -24,6 +24,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Араваки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_TUPI_DESC</Tag>
@@ -44,6 +45,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Тупи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_CHEROKEE_DESC</Tag>
@@ -64,6 +66,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Чироки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_IROQUOIS_DESC</Tag>
@@ -84,6 +87,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ирокезы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SIOUX_DESC</Tag>
@@ -104,6 +108,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Сиу</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_NEZ_PERCE_DESC</Tag>
@@ -124,6 +129,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Не-Персе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_APACHE_DESC</Tag>
@@ -144,6 +150,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Апачи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_INUIT_DESC</Tag>
@@ -164,6 +171,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Инуиты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_HURON_DESC</Tag>
@@ -184,6 +192,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Гуроны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_ZAPOTEC_DESC</Tag>
@@ -204,6 +213,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Сапотеки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_GUARANI_DESC</Tag>
@@ -220,6 +230,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Гуарани</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_CARIBS_DESC</Tag>
@@ -240,6 +251,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Карибы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_NAVAJO_DESC</Tag>
@@ -260,6 +272,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Навахо</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_ALGONQUIAN_DESC</Tag>
@@ -280,6 +293,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Алгонкины</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_MACHIPARO_DESC</Tag>
@@ -300,6 +314,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Мачипаро</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_MIXTEC_DESC</Tag>
@@ -320,6 +335,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Миштеки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_MUISCA_DESC</Tag>
@@ -340,6 +356,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Муиски</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_COMANCHE_DESC</Tag>
@@ -360,6 +377,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Команчи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SHOSHONE_DESC</Tag>
@@ -380,6 +398,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Шошоны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_TOROMONA_DESC</Tag>
@@ -400,6 +419,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Торомона</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_CROW_DESC</Tag>
@@ -420,6 +440,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Кроу</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_BLACKFOOT_DESC</Tag>
@@ -440,6 +461,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Черноногие</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_GUAYMI_DESC</Tag>
@@ -460,6 +482,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Нгабе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_TARASCANS_DESC</Tag>
@@ -480,6 +503,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Тараски</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_OMAGUA_DESC</Tag>
@@ -500,6 +524,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Омагуа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_MAPUCHE_DESC</Tag>
@@ -520,5 +545,6 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Мапуче</Russian>
     </TEXT>
 </Civ4GameText>

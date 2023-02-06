@@ -2778,6 +2778,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] von %s2_CivName kontaktieren</German>
         <Italian>Contatta il giocatore [COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] della civiltà %s2:2_CivName</Italian>
         <Spanish>Contactar con [COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] del %s2_CivName</Spanish>
+        <Russian>Связаться с [COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] %s2_CivName</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_SHIFT_SEND_CHAT</Tag>
@@ -2794,6 +2795,7 @@
         <German>[COLOR_WARNING_TEXT]Ist nicht gesprächsbereit[COLOR_REVERT]</German>
         <Italian>[COLOR_WARNING_TEXT]Rifiuta di parlare[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_WARNING_TEXT]Se niega a hablar[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_WARNING_TEXT]Отказывается говорить[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CANNOT_DECLARE_WAR</Tag>
@@ -2835,6 +2837,7 @@
         <German>Produktionsautomatisierung ausschalten</German>
         <Italian>Disattiva la produzione automatica</Italian>
         <Spanish>Desactivar la automatización de la producción</Spanish>
+        <Russian>Выключить автоматическое строительство зданий</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ON_PROD_AUTO</Tag>

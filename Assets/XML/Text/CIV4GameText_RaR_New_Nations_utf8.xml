@@ -24,6 +24,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Инуиты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_INUIT_ADJECTIVE</Tag>
@@ -36,6 +37,7 @@
         <German>Inuit:Inuit:Inuit:Inuit</German>
         <Italian>Inuit</Italian>
         <Spanish>Inuit</Spanish>
+        <Russian>Инуиты</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_TUGLAWINA_1</Tag>
@@ -106,6 +108,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Гуроны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_HURON_ADJECTIVE</Tag>
@@ -126,6 +129,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0:0:1:1</Plural>
         </Spanish>
+        <Russian>Гуроны</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_KONDIARONK_1</Tag>
@@ -194,6 +198,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Сапотеки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_ZAPOTEC_ADJECTIVE</Tag>
@@ -206,6 +211,7 @@
         <German>Zapotec:Zapotec:Zapotec:Zapotec</German>
         <Italian>Zapotec</Italian>
         <Spanish>Zapotec</Spanish>
+        <Russian>Сапотеки</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_COCIJOEZA_1</Tag>
@@ -276,6 +282,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Гуарани</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_GUARANI_ADJECTIVE</Tag>
@@ -296,6 +303,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0:0:1:1</Plural>
         </Spanish>
+        <Russian>Гуарани</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_SEPE_TIARAJU_1</Tag>
@@ -690,6 +698,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Карибы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_CARIBS_ADJECTIVE</Tag>
@@ -702,6 +711,7 @@
         <German>Carib:Carib:Carib:Carib</German>
         <Italian>Carib</Italian>
         <Spanish>Carib</Spanish>
+        <Russian>Карибы</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_JAUREYBO_1</Tag>
@@ -770,6 +780,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Навахо</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_NAVAJO_ADJECTIVE</Tag>
@@ -782,6 +793,7 @@
         <German>Navajo:Navajo:Navajo:Navajo</German>
         <Italian>Navajo</Italian>
         <Spanish>Navajo</Spanish>
+        <Russian>Навахо</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_NARBONA_1</Tag>
@@ -850,6 +862,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Алгонкины</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_ALGONQUIAN_ADJECTIVE</Tag>
@@ -862,6 +875,7 @@
         <German>Algonquian:Algonquian:Algonquian:Algonquian</German>
         <Italian>Algonquian</Italian>
         <Spanish>Algonquian</Spanish>
+        <Russian>Алгонкины</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_OPPUSSOQUIONUSKE_1</Tag>
@@ -930,6 +944,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Мачипаро</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_MACHIPARO_ADJECTIVE</Tag>
@@ -942,6 +957,7 @@
         <German>Machiparo:Machiparo:Machiparo:Machiparo</German>
         <Italian>Machiparo</Italian>
         <Spanish>Machiparo</Spanish>
+        <Russian>Мачипаро</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_MACHIPARA_1</Tag>
@@ -1010,6 +1026,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Миштеки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_MIXTEC_ADJECTIVE</Tag>
@@ -1022,6 +1039,7 @@
         <German>Mixtec:Mixtec:Mixtec:Mixtec</German>
         <Italian>Mixtec</Italian>
         <Spanish>Mixtec</Spanish>
+        <Russian>Миштеки</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_SERPENT_QUECHQUEMITL_1</Tag>
@@ -1090,6 +1108,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Муиски</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_MUISCA_ADJECTIVE</Tag>
@@ -1102,6 +1121,7 @@
         <German>Muisca:Muisca:Muisca:Muisca</German>
         <Italian>Muisca</Italian>
         <Spanish>Muisca</Spanish>
+        <Russian>Муиски</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_QUEMUENCHATOCHA_1</Tag>
@@ -1170,6 +1190,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Команчи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_COMANCHE_ADJECTIVE</Tag>
@@ -1182,6 +1203,7 @@
         <German>Comanche:Comanche:Comanche:Comanche</German>
         <Italian>Comanche</Italian>
         <Spanish>Comanche</Spanish>
+        <Russian>Команчи</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_IRON_JACKET_1</Tag>
@@ -1250,6 +1272,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Шошоны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SHOSHONE_ADJECTIVE</Tag>
@@ -1262,6 +1285,7 @@
         <German>Shoshone:Shoshone:Shoshone:Shoshone</German>
         <Italian>Shoshone</Italian>
         <Spanish>Shoshone</Spanish>
+        <Russian>Шошоны</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_WASHAKIE_1</Tag>
@@ -1332,6 +1356,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Торомона</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_TOROMONA_ADJECTIVE</Tag>
@@ -1344,6 +1369,7 @@
         <German>Toromona:Toromona:Toromona:Toromona</German>
         <Italian>Toromona</Italian>
         <Spanish>Toromona</Spanish>
+        <Russian>Торомона</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_TARANO_1</Tag>
@@ -1414,6 +1440,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Кроу</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_CROW_ADJECTIVE</Tag>
@@ -1426,6 +1453,7 @@
         <German>Crow:Crow:Crow:Crow</German>
         <Italian>Crow</Italian>
         <Spanish>Crow</Spanish>
+        <Russian>Кроу</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_PINE_LEAF_1</Tag>
@@ -1494,6 +1522,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Черноногие</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_BLACKFOOT_ADJECTIVE</Tag>
@@ -1506,6 +1535,7 @@
         <German>Blackfoot:Blackfoot:Blackfoot:Blackfoot</German>
         <Italian>Blackfoot</Italian>
         <Spanish>Blackfoot</Spanish>
+        <Russian>Черноногие</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_RUNNING_EAGLE_1</Tag>
@@ -1574,6 +1604,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Нгабе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_GUAYMI_ADJECTIVE</Tag>
@@ -1586,6 +1617,7 @@
         <German>Guaymi:Guaymi:Guaymi:Guaymi</German>
         <Italian>Guaymi</Italian>
         <Spanish>Guaymi</Spanish>
+        <Russian>Нгабе</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_URRACA_1</Tag>
@@ -1654,6 +1686,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Тараски</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_TARASCANS_ADJECTIVE</Tag>
@@ -1666,6 +1699,7 @@
         <German>Tarascan:Tarascan:Tarascan:Tarascan</German>
         <Italian>Tarascan</Italian>
         <Spanish>Tarascan</Spanish>
+        <Russian>Тараски</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_ERENDIRA_1</Tag>
@@ -1734,6 +1768,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Омагуа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_OMAGUA_ADJECTIVE</Tag>
@@ -1746,6 +1781,7 @@
         <German>Omagua:Omagua:Omagua:Omagua</German>
         <Italian>Omagua</Italian>
         <Spanish>Omagua</Spanish>
+        <Russian>Омагуа</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_AOMAGUA_1</Tag>
@@ -1814,6 +1850,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Мапуче</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_MAPUCHE_ADJECTIVE</Tag>
@@ -1826,6 +1863,7 @@
         <German>Mapuche:Mapuche:Mapuche:Mapuche</German>
         <Italian>Mapuche</Italian>
         <Spanish>Mapuche</Spanish>
+        <Russian>Мапуче</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_LAUTARO_1</Tag>
