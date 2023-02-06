@@ -381,16 +381,17 @@ void CyEnumsPythonInterface()
 	python::enum_<CustomMapOptionTypes>("CustomMapOptionTypes")
 		.value("NO_CUSTOM_MAPOPTION", NO_CUSTOM_MAPOPTION)
 		;
-	python::enum_<WorldSizeTypes>("WorldSizeTypes")
-		.value("NO_WORLDSIZE", NO_WORLDSIZE)
-		.value("WORLDSIZE_TINY", WORLDSIZE_TINY)
-		.value("WORLDSIZE_SMALL", WORLDSIZE_SMALL)
-		.value("WORLDSIZE_STANDARD", WORLDSIZE_STANDARD)
-		.value("WORLDSIZE_LARGE", WORLDSIZE_LARGE)
-		.value("WORLDSIZE_HUGE", WORLDSIZE_HUGE)
-		.value("WORLDSIZE_GIGANTIC", WORLDSIZE_GIGANTIC)
-		.value("NUM_WORLDSIZE_TYPES", NUM_WORLDSIZE_TYPES)
-		;
+	{
+		// rewritten to use xml values rather than hardcoding - Nightinggale
+		boost::python::enum_<WorldSizeTypes> WorldSizeTable = python::enum_<WorldSizeTypes>("WorldSizeTypes")
+			.value("NO_WORLDSIZE", NO_WORLDSIZE)
+			.value("NUM_WORLDSIZE_TYPES", NUM_WORLDSIZE_TYPES)
+			;
+		for (WorldSizeTypes eSize = FIRST_WORLDSIZE; eSize < NUM_WORLDSIZE_TYPES; ++eSize)
+		{
+			WorldSizeTable.value(getTypeStr(eSize), eSize);
+		}
+	}
 	python::enum_<TerrainTypes>("TerrainTypes")
 		// WTP, ray, making at least fresh water terraubs available to Python
 		.value("TERRAIN_LARGE_RIVERS", TERRAIN_LARGE_RIVERS)

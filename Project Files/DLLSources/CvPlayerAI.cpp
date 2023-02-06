@@ -2202,7 +2202,7 @@ int CvPlayerAI::AI_foundValueNative(int iX, int iY, bool allowSettleOnBonus) con
 	}
 
 	// R&R, ray, adjustment for Mapsize Gigantic
-	bool giganticMap = (GC.getMapINLINE().getWorldSize() == WORLDSIZE_GIGANTIC);
+	bool giganticMap = (strcmp(getTypeStr(GC.getMapINLINE().getWorldSize()), "WORLDSIZE_GIGANTIC") == 0);
 
 	int iBadTileCount = 0;
 	for (int iI = 0; iI < NUM_CITY_PLOTS; ++iI)
