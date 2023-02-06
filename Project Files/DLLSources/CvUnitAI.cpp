@@ -7911,9 +7911,14 @@ int CvUnitAI::AI_promotionValue(PromotionTypes ePromotion)
 
 	if (kPromotion.isBlitz())
 	{
-		if ((eUnitAI != UNITAI_DEFENSIVE) && canAttack())
-		{
-			iValue += ((getMoves()) - 1) * 20;
+		const int iExtraAttacks = baseMoves() - 1;
+
+		if (iExtraAttacks > 0)
+		{ 
+			if ((eUnitAI != UNITAI_DEFENSIVE) && canAttack())
+			{
+				iValue += iExtraAttacks * 20;
+			}
 		}
 	}
 	
