@@ -1452,8 +1452,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_VASCO_DA_GAMA_PEDIA</Tag>
-        <English>[H1]Vasco da Gama, 1.º Conde da Vidigueira[\H1][NEWLINE][BOLD]Lived : [\BOLD]1469 - 1524[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Vasco da Gama, 1st Count of Vidigueira, was a Portuguese explorer and the first European to reach India by sea.</English>
-        <German>[H1]Vasco da Gama, 1.º Conde da Vidigueira[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1469 - 1524[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]Dom Vasco da Gama, Graf von Vidigueira, war ein portugiesischer Seefahrer und Entdecker des Seewegs um das Kap der Guten Hoffnung nach Indien sowie der 2. Vizekönig Portugiesisch-Indiens.</German>
+        <English>[H1]Vasco da Gama, 1st Conde da Vidigueira[\H1][NEWLINE][BOLD]Lived : [\BOLD]1469 - 1524[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Vasco da Gama, 1st Count of Vidigueira, was a Portuguese explorer and the first European to reach India by sea.</English>
+        <German>[H1]Vasco da Gama, 1st Conde da Vidigueira[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1469 - 1524[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]Dom Vasco da Gama, Graf von Vidigueira, war ein portugiesischer Seefahrer und Entdecker des Seewegs um das Kap der Guten Hoffnung nach Indien sowie der 2. Vizekönig Portugiesisch-Indiens.</German>
+        <Russian>[H1]Васко да Гама, первый граф Видигейра[\H1][NEWLINE][BOLD]Годы жизни : [\BOLD]1469 - 1524[NEWLINE][NEWLINE][BOLD]Историческая справка :[\BOLD][PARAGRAPH:1:1]Васко да Гама был португальским исследователем и первым европейцем, достигшим Индии морем.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_VASCO_DA_GAMA_STRATEGY</Tag>
