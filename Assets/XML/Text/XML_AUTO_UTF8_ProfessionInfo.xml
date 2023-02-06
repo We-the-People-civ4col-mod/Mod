@@ -142,7 +142,6 @@
         <German>Wenn Sie einen Bürger anweisen, ein [LINK=TERRAIN_PLAINS]Prärie-[\LINK] oder [LINK=TERRAIN_GRASS]Grasland-[\LINK]Geländefeld zu bearbeiten, können Sie sich entscheiden, diesen Kolonisten den Beruf [COLOR_HIGHLIGHT_TEXT]Bauer (Gerste)[COLOR_REVERT] zuzuweisen, wodurch Ihre Siedlung eine Menge [LINK=YIELD_BARLEY]Gerste[\LINK] erhält. Wenn Sie diesem Beruf einen [LINK=UNIT_FARMER]Erfahrenen Bauern[\LINK] zuweisen, werden Ihre Lagerhäuser vor Gerste überquellen!</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BLACKSMITH</Tag>
@@ -241,7 +240,6 @@
         <German>Man kann [LINK=YIELD_ORE]Eisenerz[\LINK] in [LINK=YIELD_BLADES]Klingenwaffen[\LINK] umwandeln, wenn man einem Siedler den Beruf des [LINK=PROFESSION_BLADESMITH]Klingenschmieds[\LINK] zuweist, welcher in der [LINK=BUILDING_BLACKSMITH_HOUSE]Dorfschmiede[\LINK] oder einer ihrer Ausbauten ausgeübt wird. Wird dieser Beruf einem [LINK=UNIT_BLACKSMITH]Meister-Schmied[\LINK] zugewiesen, so erhöht sich die Produktion der Klingen um das doppelte, so lange genug Eisenerz verfügbar ist.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BRAVE</Tag>
@@ -332,7 +330,6 @@
         <German>Brauen ist die Herstellung von Bier durch Einweichen einer Stärkequelle (üblicherweise Getreidekörner) in Wasser und anschließende Gärung mit Hefe. Gebraut wird seit etwa dem 6. Jahrtausend vor Christus, und archäologische Beweise deuten darauf hin, dass diese Technik im alten Ägypten verwendet wurde.[PARAGRAPH:1]Die Puritaner auf der Mayflower brachten mehr Bier als Wasser mit. Die Erfahrung in Europa hatte sie gelehrt, dass das Trinken von Bier sicherer war als das Trinken von Wasser, das oft mit Abwässern oder Müll verunreinigt sein konnte.[PARAGRAPH:1]Außerdem erwies sich Alkohol als wirksames Schmerzmittel, das nicht nur die nötige Energie für harte Arbeit lieferte, sondern auch die Lebensqualität steigerte.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BREWER_STRATEGY</Tag>
@@ -341,7 +338,6 @@
         <German>[COLOR_HIGHLIGHT_TEXT]Bierbrauer[COLOR_REVERT] produzieren [LINK=YIELD_BEER]Bier[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK]. Dieser Prozess ist noch effektiver, wenn Sie dem Beruf einen [COLOR_UNIT_TEXT]Braumeister[COLOR_REVERT] zuweisen.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_CATTLE</Tag>
@@ -387,7 +383,6 @@
         <German>Metzger erzeugen [COLOR_HIGHLIGHT_TEXT]Nahrung[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]Rinderhäute[COLOR_REVERT] aus [COLOR_HIGHLIGHT_TEXT]Vieh[COLOR_REVERT].</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_SHEEP</Tag>
@@ -429,7 +424,6 @@
         <German>Der Fleischer, auch Metzger oder Schlachter, ist einer der älteren Handwerksberufe. Fleischer beschäftigen sich mit der Schlachtung und mit der Herstellung von Fleisch- und Wurstwaren, sie arbeiten in Schlachthöfen und in Fleischereien.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_SHEEP_STRATEGY</Tag>
@@ -438,7 +432,6 @@
         <German>Metzger erzeugen [COLOR_HIGHLIGHT_TEXT]Nahrung[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]Wolle[COLOR_REVERT] aus [COLOR_HIGHLIGHT_TEXT]Schafen[COLOR_REVERT].</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CANNONSMITH</Tag>
@@ -480,7 +473,6 @@
         <German>[TAB]Stückgießer waren hochbezahlte Spezialisten, die mit ihrem Ruf für die Stabilität und Sicherheit ihrer Produkte garantierten.[NEWLINE]Die ersten Kanonen entstanden Mitte des 15. Jahrhunderts. Ein Vorgänger der Kanone war die Bombarde. Einer der ersten Einsätze von Kanonen im großen Stil erfolgte im Jahr 1494 während der Italienkriege. Die machmal aus Bronze, gegen später aber meist aus Eisen gegossenen Kanonen, verschossen je nach Einsatz verschiedenste Munition, meist waren es aber Eisenkugeln. In Bezug auf Mobilität, Feuerkraft und Schußrate waren sie Bombarden überlegen. In Feldschlachten und bei Belagerungen, aber auch in Seegefechten, waren Kanonen bald für Jahrhunderte eine der dominierenden Waffengattungen.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CANNONSMITH_STRATEGY</Tag>
@@ -489,7 +481,6 @@
         <German>[COLOR_HIGHLIGHT_TEXT]Stückgießer[COLOR_REVERT] stellen Kanonen her. [COLOR_HIGHLIGHT_TEXT]Kanonen[COLOR_REVERT] werden zum Bau von Schiffen oder Artillerieeinheiten benötigt.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CARPENTER</Tag>
@@ -580,7 +571,6 @@
         <German>Der Begriff [LINK=YIELD_COCA_LEAVES]Cocablätter[\LINK] bezieht sich meist auf Blätter der kultivierten Planzen aus der Familie der Cocapflanzen (Erythoxylaceae), welche im westlichen Teil Süd-Amerikas beheimatet sind. Sowohl in der alten Geschichte, wie auch in der modernen Zeit wurden diese Pflanzen sehr hoch geschätzt, da sie psychoaktive Substanzen beinhalten, die man durch das Kauen der Blätter oder durch den Konsum des daraus aufgebrühten Tees aufnehmen kann. In der heutigen Zeit, wird aus diesen Blättern auch die Droge Kokain gewonnen.[PARAGRAPH:1]Weniger bedenkliche Anwirkungen der Cocablätter sind aber beispielsweise die Anwendung in geringeren Mengen als Mittel gegen Höhenkrankheit oder gegen Hungergefühle, Durstgefühle oder Müdigkeit. Ausserdem kann Coca auch zur Betäubung von Schmerzen verwendet werden.[PARAGRAPH:1]Cocablätter wurden jeher in den Regionen der Anden zu relgiösen, medizinischen und nahrungsergänzenden Zwecken eingesetzt. Wahrscheinlich sogar schon seit mehr als 8000 Jahren. In dieser langen Zeitperiode wurde die Cocapflanze irgendwann domestiziert. Heutzutage wird sie in vier unterschiedlichen Gattungen bzw. Unterarten gezüchtet. Im Inkareich glaubte man an einen göttlichen Ursprung der Planze und verwendete die Blätter als Opfergabe, aber auch als Mittel um die Zukunft vorherzusagen oder einfach nur um Gebete und Zeremonien vorzubereiten. Die Pflanze breitete sich schliesslich über ein sehr grosses Gebiet von Kolumbien im Norden bis Chile im Süden aus.[PARAGRAPH:2]Nach der spanischen Eroberung des Inkareiches wurde die Einnahme der Pflanze weiterhin von den Spaniern toleriert, da sie die Leistung der Zwangsarbeiter steigerte. Die religiöse Verwendung der Pflanze wurde aber verboten. Den Spaniern selbst wurde vom Konsum der Blätter abgeraten. Obwohl bereits im 16. Jahrhundert Cocablätter in Europa bekannt waren, erlangten diese dort zu dieser Zeit nie Beliebtheit. Dies änderte sich erst, als im 19. Jahrhundert Kokain entdeckt wurde.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COCA_COLLECTOR_STRATEGY</Tag>
@@ -589,7 +579,6 @@
         <German>[COLOR_UNIT_TEXT]Cocasammler[COLOR_REVERT] können [LINK=YIELD_COCA_LEAVES]Cocablätter[\LINK] von Hügeln auf Regionen der [LINK=TERRAIN_SAVANNAH]Savanne[\LINK] sammeln. Der Ertrag ist höher, wenn es auf dem Feld auch die Bonusresource [LINK=BONUS_COCA]Cocapflanzen[\LINK] gibt, und kann noch weiter erhöht werden, wenn man darauf die Geländeverbesserung [LINK=IMPROVEMENT_COLLECTORS_POST2]Cocasammelstelle[\LINK] errichtet. Wenn ein nicht spezialisierter Kolonist lange genug diesen Beruf ausübt, kann er irgendwann zu einem [LINK=UNIT_COCA_COLLECTOR]Erfahrenen Cocasammler[\LINK] werden, der doppelt soviele Cocablätter ernten kann.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COCOA_ROASTER</Tag>
@@ -631,7 +620,6 @@
         <German>Das erste wirkliche europäische Wissen über Schokolade kam in Form eines Getränks, das den Spaniern bei ihrem Treffen mit Moctezuma in der aztekischen Hauptstadt Tenochtitlan im Jahr 1519 vorgestellt wurde. Cortés und andere bemerkten die riesigen Mengen dieses Getränks, die der Aztekenkaiser konsumierte, und wie es zuvor von seinen Dienern sorgfältig aufgeschlagen wurde. Beispiele von Kakaofrüchten wurden zusammen mit anderen landwirtschaftlichen Produkten zu dieser Zeit nach Spanien gebracht, aber es scheint, dass das aus Kakao hergestellte Getränk 1544 von Kekchi Maya-Adligen, die von Dominikanermönchen aus der Neuen Welt nach Spanien gebracht wurden, um Prinz Philip zu treffen, am spanischen Hof eingeführt wurde. Innerhalb eines Jahrhunderts verbreitete sich die kulinarische und medizinische Verwendung von Schokolade in Frankreich, England und anderswo in Westeuropa. Die Nachfrage nach diesem Getränk veranlasste die Franzosen, Kakaoplantagen in der Karibik anzulegen.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COCOA_ROASTER_STRATEGY</Tag>
@@ -681,7 +669,6 @@
         <German>Bei den Azteken galt die Kakaopflanze als heilig, sie wurde als Geschenk des Gottes Quetzalcoatl verehrt. Die Kakaobohnen wurden als Opfergabe verwendet, als Zahlungsmittel und zur Zubereitung eines Trankes. Das Getränk bestand aus Wasser, Kakao, Mais, Vanille, Cayenne-Pfeffer und etwas Salz und schmeckte weitaus herber als heutzutage. Als die spanischen Konquistadoren Mexiko eroberten und die Azteken unterwarfen, fanden sie in den Schatzkammern Montezumas 25.000 Zentner Kakao, den seine Beamten als Steuer eingezogen hatten. Eine astronomisch hohe Summe - zum Vergleich: ein Sklave kostete zu dieser Zeit gerade einmal einhundert Kakaobohnen. An den europäischen Königshöfen wurde Kakao als exotische Delikatesse serviert. Die Kolonialherren ließen das "Braune Gold" in der Neuen Welt bald in ausgedehnten Plantagen von Sklaven anbauen und ernten.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COCOA_PLANTER_STRATEGY</Tag>
@@ -690,7 +677,6 @@
         <German>Auf [LINK=FEATURE_JUNGLE]Dschungelfeldern[\LINK] können Bürger wertvollen [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] für den Export gewinnen. Setzt man im Stadtbildschirm einen Bürger dort zur Arbeit ein, kann man ihm den Beruf des [COLOR_HIGHLIGHT_TEXT]Kakaopflückers[COLOR_REVERT] zuweisen.[PARAGRAPH:2][LINK=UNIT_COCOA_PLANTER]Erfahrene Kakaopflücker[\LINK] sind im Beruf des Kakaopflückers besonders effektiv, denn sie verdoppeln die Erträge.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COFFEE_ROASTER</Tag>
@@ -736,7 +722,6 @@
         <German>[LINK=UNIT_ROASTER]Meister Röster[\LINK] rösten [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] zu [LINK=YIELD_COFFEE]Kaffee[\LINK]. Dieser Prozess ist noch effektiver, wenn Sie dem Beruf einen [LINK=UNIT_ROASTER]Meister Röster[\LINK] zuweisen.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COFFEE_PLANTER</Tag>
@@ -778,7 +763,6 @@
         <German>[TAB]Der Franzose Gabriel-Mathieu d'Erchigny, Sieur de Clieu, war der erste, der den Kaffee in der Neuen Welt einführte, indem er die Pflanze auf die Insel Martinique in der Karibik brachte. Bald gedieh der Kaffee in den wärmeren Gebieten der Karibik, Latein- und Süd-Amerikas. Ab 1734 wurde der Kaffee in Saint-Domingue (heute Haiti) angebaut.[PARAGRAPH:1]Um 1788 lieferte es die Hälfte der Weltproduktion an Kaffee. Die Kaffeepflanzer benötigten große Plantagen, auf denen die Pflanze in riesigen Mengen angebaut werden konnte, da bei den traditionellen Anbaumethoden die Chance bestand, dass bis zu 50% der gepflanzten Samen nicht aufkeimten. Bis zum mechanisierten Zeitalter wurden die Kaffeebeeren von Hand gepflückt, eine zermürbende, arbeitsintensive Aufgabe, die hauptsächlich von Sklaven ausgeführt wurde.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COFFEE_PLANTER_STRATEGY</Tag>
@@ -975,7 +959,6 @@
         <German>Wenn Sie einen Bürger anweisen, ein Ebenen-Geländefeld zu bearbeiten, können Sie sich entscheiden, diesen Kolonisten den Beruf [COLOR_HIGHLIGHT_TEXT]Rinderhirte[COLOR_REVERT] zuzuweisen, wodurch Ihre Siedlung eine Menge [COLOR_HIGHLIGHT_TEXT]Rinder[COLOR_REVERT] erhält. Wenn Sie diesem Beruf einen [COLOR_UNIT_TEXT]Erfahrenen Züchter[COLOR_REVERT] zuweisen, werden Ihre Lagerhäuser vor Rindern überquellen!</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_DISTILLER</Tag>
@@ -1123,7 +1106,6 @@
         <German>Über viele Jahrhunderte hinweg waren Materialien zum Färben von Stoffen sehr selten. Besonders für einige Farben, wie beispielsweise Blau, waren diese nur sehr schwer zu bekommen.[NEWLINE]Dies sorgte dafür, dass gefärbte Stoffe sehr selten waren und meist nur für die Oberschicht bezahlbar waren.[NEWLINE]Selbst als in der Neuen Welt große Indigo-Plantagen entstanden, änderte sich daran nur wenig.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_DYER_STRATEGY</Tag>
@@ -1133,7 +1115,6 @@
 	  oder [LINK=YIELD_WOOL]Wolle[\LINK] mittels [LINK=YIELD_INDIGO]Indigo[\LINK], [LINK=YIELD_LOGWOOD]Blauholz[\LINK] oder [LINK=YIELD_COCHINEAL]Cochenille[\LINK], wodurch [LINK=YIELD_COLOURED_CLOTH]gefärbte Stoffe[\LINK] oder [LINK=YIELD_COLOURED_WOOL_CLOTH]gefärbtes Wolltuch[\LINK] entstehen. Dieser Prozess findet meist im [LINK=BUILDING_DYERS_HOUSE]Färberhaus[\LINK] oder einer seiner Erweiterungen statt und ist noch effektiver, wenn Sie dem Beruf einen [LINK=UNIT_DYER]Meister-Färber[\LINK] zuweisen, die doppelt so schnell arbeiten, solange genügend Indigo und Stoff vorhanden sind.</German>
         <Italian>I [COLOR_HIGHLIGHT_TEXT]tintori[COLOR_REVERT] tingono [LINK=YIELD_CLOTH]stoffe[\LINK] o [LINK=YIELD_WOOL]lana[\LINK] con [LINK=YIELD_INDIGO]indaco[\LINK], [LINK=YIELD_LOGWOOD]logwood[\LINK] o [LINK=YIELD_COCHINEAL]cocciniglia[\LINK] per fare [LINK=YIELD_COLOURED_CLOTH]tessuti colorati[\LINK] o [LINK=YIELD_COLOURED_WOOL_CLOTH]panno di lana colorato[\LINK] nella [LINK=BUILDING_DYERS_HOUSE]casa del tintore[\LINK] o in uno dei suoi potenziamenti. I maghi di questo mestiere sono [LINK=UNIT_DYER]mastri tintori[\LINK], che lavorano due volte più velocemente finché sono disponibili abbastanza indaco e stoffa.</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]Tintoreros[COLOR_REVERT] tiñen [LINK=YIELD_CLOTH]tela[\LINK] o [LINK=YIELD_WOOL]lana[\LINK] con [LINK=YIELD_INDIGO]índigo[\LINK], [LINK=YIELD_LOGWOOD]leña[\LINK] o [LINK=YIELD_COCHINEAL]cochinilla[\LINK] para hacer [LINK=YIELD_COLOURED_CLOTH]tela de color[\LINK] o [LINK=YIELD_COLOURED_WOOL_CLOTH]tela de lana de colores[\LINK] en la [LINK=BUILDING_DYERS_HOUSE]casa del tintorero[\LINK] o en una de sus mejoras. Los magos de este oficio son [LINK=UNIT_DYER]maestros tintoreros[\LINK], que trabajan el doble de rápido siempre que haya suficiente índigo y tela disponibles.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_WOOL_DYER</Tag>
@@ -1294,7 +1275,6 @@
         <German>Die Entwicklung von Fischerbooten verlief parallel zu Booten, die für Handel und Krieg gebaut wurden. Frühe Seefahrer verwendeten Tierhäute oder gewebte Stoffe für Segel. Diese Segel, die an einem senkrecht im Boot aufgestellten Mast wehten, gaben den frühen Booten eine größere Reichweite und ermöglichten Entdeckungsreisen.[PARAGRAPH:1]Im 15. Jahrhundert entwickelten die Holländer einen seetüchtigen Heringstreiber, der zur Blaupause für europäische Fischerboote wurde. Im 17. Jahrhundert hatten die Briten den Dogger, einen frühen Typ von Segeltrawler oder Longliner, der in der Nordsee eingesetzt wurde. Der Dogger hat seinen Namen vom holländischen Wort dogger, was soviel bedeutet wie ein Fischereifahrzeug, das ein Schleppnetz zieht. Holländische Schleppnetzboote waren in der Nordsee weit verbreitet, und das Wort Dogger wurde dem Gebiet gegeben, in dem sie oft fischten, das als Doggerbank bekannt wurde. Dogger waren langsam, aber robust und konnten unter den rauen Bedingungen der Nordsee fischen.[PARAGRAPH:1]Wie die Heringsbusse waren sie breitbalkig und schrägbrüstig, aber wesentlich kleiner, etwa 15 Meter lang, mit einer maximalen Breite von 4,5 Metern, einem Tiefgang von 1,5 Metern und einer Verdrängung von etwa 13 Tonnen. Sie konnten eine Tonne Köder, drei Tonnen Salz, je eine halbe Tonne Lebensmittel und Brennholz für die Besatzung transportieren und mit sechs Tonnen Fisch zurückkehren. Vorn und achtern befindliche Decksflächen boten Unterkunft, Stauraum und einen Kochbereich. Ein Anker ermöglichte ausgedehntes Fischen an der gleichen Stelle in bis zu 18 Meter tiefen Gewässern. Der Dogger trug auch ein kleines Ruderboot, um die Leinen zu warten und an Land zu gehen.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FISHING_BOAT_WORKING_STRATEGY</Tag>
@@ -1340,7 +1320,6 @@
         <German>Möbelmacher in der Kolonialzeit waren einfach gelernte Schreiner mit Werkstätten in ländlichen Dörfern. Dort bauten und reparierten sie alle Waren, die von den Bauernfamilien benötigt wurden. Kolonisten, die über Geld verfügten, zogen es vor, ihre Möbel direkt aus Europa zu importieren, da sie besser verarbeitet waren und den neuesten europäischen Stilen entsprachen. Einigen kolonialen Möbelherstellern gelang es jedoch, solche europäischen Stile zu replizieren, und mit der Zeit entwickelten koloniale Möbel ihren eigenen einzigartigen Charakter.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FURNITURE_MAKER_STRATEGY</Tag>
@@ -1349,7 +1328,6 @@
         <German>[COLOR_HIGHLIGHT_TEXT]Möbelschreiner[COLOR_REVERT] können im [LINK=BUILDING_FURNITURE_MAKERS_HOUSE]Möbelmacherhaus[\LINK] oder einer seiner Erweiterungen arbeiten, um [LINK=YIELD_FURNITURE]Möbel[\LINK] aus [LINK=YIELD_VALUABLE_WOOD]Wertvollem Holz[\LINK] herzustellen. [LINK=UNIT_FURNITURE_MAKER]Schreinermeister[\LINK] beherrschen dieses Handwerk hervorragend und können Ihre Produktion von Möbeln erheblich steigern.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FUR_TRADER</Tag>
@@ -1489,7 +1467,6 @@
         <German>Der [COLOR_UNIT_TEXT]Seeotter[COLOR_REVERT] ist eine Raubtierart aus der Unterfamilie der Otter (Lutrinae). Er ist neben dem Küstenotter des Südpazifiks die einzige Otterart, die nur im Meer lebt. Seeotter gelten als intelligent und lernfähig, bekannt sind sie vor allem wegen des regelmäßigen Gebrauchs von Werkzeugen. Die Art war bis Anfang des 20. Jahrhunderts wegen ihres Fells fast ausgerottet; nach dem Jagdverbot im Jahr 1911 erholten sich die Bestände wieder.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FUR_TRAPPER_WATER_STRATEGY</Tag>
@@ -1547,7 +1524,6 @@
         <German>[COLOR_HIGHLIGHT_TEXT]Edelsteinschürfer[COLOR_REVERT] tun nur eins: Sie erhöhen Ihren Profit. [LINK=YIELD_GEMS]Edelsteine[\LINK], die nur auf Geländefeldern mit [LINK=BONUS_GEMS]Edelsteinen[\LINK] gefunden werden können und nicht weiterverarbeitet werden, erzielen aber beim Verkauf einen hohen Preis. Wenn Sie diesem Beruf einen [LINK=UNIT_PROSPECTOR]Erfahrenen Schürfer[\LINK] zuweisen, erhalten Sie sogar noch mehr von den glitzernden Steinen!</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_GOLD_MINER</Tag>
@@ -1646,7 +1622,6 @@
         <German>Auf Hügeln, die auf [LINK=TERRAIN_GRASS]Graslandfeldern[\LINK] gelegen sind, können [LINK=YIELD_GRAPES]Weintrauben[\LINK] geerntet werden, wenn ein Kolonist dort als [COLOR_HIGHLIGHT_TEXT]Traubenleser[COLOR_REVERT] arbeitet. Ihre Weintraubenernte kann erheblich gesteigert werden, wenn Sie dem Beruf einen [LINK=UNIT_GRAPES_PICKER]Erfahrenen Weintraubensammler[\LINK] zuweisen.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_GUNSMITH</Tag>
@@ -1717,7 +1692,6 @@
         <German>[COLOR_HIGHLIGHT_TEXT]Ärzte[COLOR_REVERT] waren zur damaligen Zeit vor allem dort anzutreffen, wo es am meisten Arbeit für sie gab, so z.B. beim Militär, wo sie Wundarzt oder Feldscher genannt wurden. Es gab jedoch auch immer mehr Ärzte und Heiler, die - ähnlich wie heute - in größeren Ansiedlungen eigene Praxen betrieben oder als Wanderärzte durch die Lande zogen. Auch bei Hofe waren Ärzte zur persönlichen Betreuung bessergestellter Persönlichkeiten angestellt. Ärzte waren bei allerlei Krankheiten wichtige Anlaufstellen für die Bevölkerung.[PARAGRAPH:2]Ärzte hatten in der Regel eine handwerkliche Ausbildung, sprich eine Handwerkslehre bei einem Bader oder Barbier, mit abschließender Gesellenprüfung, absolviert. Um die Ausbildung und Ausübung der Wundheilkunde qualitativ sicherzustellen und sich vor Missbrauch und Scharlatanerie zu schützen, wurden Berufsordnungen erlassen, die die Tätigkeit der Ärzte regelten. Ein [COLOR_BUILDING_TEXT]Heiler[COLOR_REVERT] ist meist weniger oder gar nicht ausgebildet, sondern übt seine Tätigkeit aufgrund eigener Erfahrungen mit bestimmten Heilkräutern und Heilmethoden aus. Bestimmte Verrichtungen durften beispielsweise nur unter Aufsicht oder nach Anweisung eines gelehrten Arztes vorgenommen werden.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HEALER_STRATEGY</Tag>
@@ -1726,7 +1700,6 @@
         <German>[COLOR_BUILDING_TEXT]Heiler[COLOR_REVERT] steigern die Gesundheit der Bevölkerung, wenn sie sich in einer Arztpraxis oder einem Krankenhaus aufhalten, jedoch weniger gut als ein [COLOR_BUILDING_TEXT]ausgebildeter Arzt[COLOR_REVERT]. Je mehr Heiler oder ausgebildete Ärzte in einer Kolonie leben, desto stärker wirkt sich dies auf den [COLOR_BUILDING_TEXT]allgemeinen Gesundheitszustand[COLOR_REVERT] der gesamten Bevölkerung aus. Dies steigert die [COLOR_BUILDING_TEXT]Geburtenrate, die Produktivität und die Heilung in der Kolonie stationierter Truppen[COLOR_REVERT].</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HEAVY_CAVALRY</Tag>
@@ -1813,7 +1786,6 @@
         <German>[TAB]Hanf war bereits im Mittelalter einer der wichtigsten Rohstoffe, um stabile Stoffe, Seile oder andere Güter herzustellen. Während der Kolonisierung der Neuen Welt fand auch Hanf seinen Weg in die Plantagen der Kolonien. George Washington besass beispielsweise selbst Hanf-Plantagen.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HEMP_PLANTER_STRATEGY</Tag>
@@ -1822,7 +1794,6 @@
         <German>Wenn Sie einen Bürger anweisen, ein [LINK=TERRAIN_GRASS]Ebenen[\LINK]-Geländefeld zu bearbeiten, können Sie sich entscheiden, diesen Kolonisten den Beruf [COLOR_HIGHLIGHT_TEXT]Hanfpflanzer[COLOR_REVERT] zuzuweisen, wodurch Ihre Siedlung eine Menge [LINK=YIELD_HEMP]Hanf[\LINK] erhält. Wenn Sie diesem Beruf einen [LINK=UNIT_HEMP_PLANTER]Erfahrenen Hanfpflanzer[\LINK] zuweisen, werden Ihre Lagerhäuser vor Hanf überquellen!</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HUNTER</Tag>
@@ -1864,7 +1835,6 @@
         <German>Der Beruf des Jägers ist zusammen mit dem Beruf des Sammlers der älteste Beruf, den die Menschheit kennt.[NEWLINE]Teile der erbeuteten Tiere wurde für unterschiedlichste Aspekte genutzt, am wichtigsten jedoch sicherlich Nahrung und Herstellung von Kleidung.[NEWLINE]Als die ersten Kolonisten in der Neuen Welt eintrafen, fanden sie eine florierende Tierwelt vor und begannnen natürlich auch sofort damit, diese zu jagen.[NEWLINE]Dabei wurden sie allerdings sehr schnell so gierig, dass viele Tiere, wie z.B. die Bisons fast bis zur Ausrottung gejagt wurden, wodurch wiederum auch viele Konflikte mit den Ureinwohnern entstanden.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HUNTER_STRATEGY</Tag>
@@ -1873,7 +1843,6 @@
         <German>[LINK=UNIT_HUNTER]Erfahrene Jäger[\LINK] sind im Beruf [COLOR_HIGHLIGHT_TEXT]Jäger[COLOR_REVERT] viel effektiver als andere Kolonisten. Dieser Beruf ist auf bestimmten Bonusressourcen besonders profitabel, wie z.B. [COLOR_HIGHLIGHT_TEXT]Büffel[COLOR_REVERT] oder [COLOR_HIGHLIGHT_TEXT]Hirschen[COLOR_REVERT] ausgeübt werden und erzeugt sowohl [LINK=YIELD_FUR]Felle[\LINK], wie auch [LINK=YIELD_FOOD]Nahrung[\LINK].</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_INDIGO_PLANTER</Tag>
@@ -2205,7 +2174,6 @@
         <German>[COLOR_HIGHLIGHT_TEXT]Perlentaucher[COLOR_REVERT] suchen in den Gewässern entlang der Küste nach [LINK=YIELD_GEMS]Perlen[\LINK]. Wird ein Kolonist der Arbeit auf einem Feld mit [LINK=BONUS_PEARLS_2]Perlen[\LINK] zugewiesen, wird er dadurch automatisch zum Perlentaucher. Nutzen Sie, wenn möglich, einen [LINK=UNIT_PEARLS_HUNTER]Erfahrenen Perlentaucher[\LINK], um deutlich mehr [COLOR_HIGHLIGHT_TEXT]Perlen[COLOR_REVERT] zu finden.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PIONEER</Tag>
@@ -2439,7 +2407,6 @@
         <German>Der Cayenne-Pfeffer, auch bekannt als Guinea-Gewürz oder auch Roter Pfeffer, ist ein scharfer roter Chili-Pfeffer, der genutzt wird, um Gerichte zu verfeinern, oder auch als Medizin Anwendung findet. Benannt nach der Stadt Cayenne in Französisch-Guayana, ist sie eine Sorte von Capsicum annuum, verwandt mit Paprika, Jalapenos und anderen. Capsicum genus zählt zu den Nachtschattengewächsen.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_RED_PEPPER_PLANTER_STRATEGY</Tag>
@@ -2448,7 +2415,6 @@
         <German>Hügelfelder in der [LINK=TERRAIN_PLAINS]Prärie[\LINK] können [LINK=YIELD_RED_PEPPER]Roten Pfeffer[\LINK] hervorbringen, wenn dem dort arbeitenden Kolonisten der Beruf [COLOR_HIGHLIGHT_TEXT]Pfefferpflanzer[COLOR_REVERT] zugewiesen wurde. Ihre Pfefferernte kann erheblich gesteigert werden, wenn Sie dem Beruf einen [LINK=UNIT_RED_PEPPER_PLANTER]Erfahrenen Pfefferpflanzer[\LINK] zuweisen.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_ROPES_MAKER</Tag>
@@ -2491,7 +2457,6 @@
         <German>Seile sind seit prähistorischen Zeiten ein unverzichtbares Werkzeug zum Jagen, Ziehen, Befestigen, Anbinden, Tragen, Heben und Klettern. Fünfhundert Jahre lang, bis zum Ende des 18. Jahrhunderts, wurde die Seilherstellung in ganz Europa und in den europäischen Überseekolonien in langen Gebäuden, den sogenannten Reeperbahnen, durchgeführt, die es den Reepschlägern ermöglichten, die Hanffasern auszubreiten, sie zu schlagen und zu Seilen zusammenzudrehen. Die große Länge der Reeperbahnen ermöglichte die Herstellung von Seilen mit einer Länge von bis zu 300 Metern.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_ROPES_MAKER_STRATEGY</Tag>
@@ -2500,7 +2465,6 @@
         <German>[COLOR_UNIT_TEXT]Reepschläger[COLOR_REVERT] stellen [LINK=YIELD_ROPE]Seile[\LINK] aus [LINK=YIELD_HEMP]Hanf[\LINK] oder [LINK=YIELD_FLAX]Flachs[\LINK] her. Die Herstellung findet meist in Gebäuden der Hafengegend statt, also dem [LINK=BUILDING_DOCK]Landungssteg[\LINK] oder einer seiner Ausbaustufen. Der effektivste Kolonist in diesem Handwerk ist der [LINK=UNIT_ROPES_MAKER]Seilermeister[\LINK].</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_ROYAL_CAVALRY</Tag>
@@ -2707,7 +2671,6 @@
         <German>Die Herstellung von Segeltuch gilt seit langem als eine hohe Kunst.[NEWLINE]Segelmacher entwerfen und messen sorgfältig mehrere Bahnen, die geschnitten und aufwendig zusammengenäht werden, um die Oberfläche für jedes Segel zu bilden.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SAILCLOTH_MAKER_STRATEGY</Tag>
@@ -2716,7 +2679,6 @@
         <German>[COLOR_UNIT_TEXT]Segelmacher[COLOR_REVERT] verarbeiten [LINK=YIELD_HEMP]Hanf[\LINK] oder [LINK=YIELD_FLAX]Flachs[\LINK] zu [LINK=YIELD_SAILCLOTH]Segeltuch[\LINK]. Die Herstellung findet meist in Gebäuden des [LINK=BUILDING_DOCK]Hafens[\LINK] statt und ist noch effektiver, wenn Sie dem Beruf einen [LINK=UNIT_SAILCLOTH_MAKER]Meister-Segelmacher[\LINK] zuweisen.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SALT_MINER</Tag>
@@ -2762,7 +2724,6 @@
         <German>[COLOR_HIGHLIGHT_TEXT]Steinsalz[COLOR_REVERT] kann zu [COLOR_HIGHLIGHT_TEXT]Salz[COLOR_REVERT] weiterverarbeitet werden. Dieses erzielt beim Verkauf einen hohen Preis, sowohl in Europa, wie auch auf dem Binnenmarkt der Kolonien. Wenn Sie diesem Beruf einen [COLOR_UNIT_TEXT]Erfahrenen Minenarbeiter[COLOR_REVERT] zuweisen, erhalten Sie sogar noch mehr von diesem durchaus lohnenden Gut!</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SALT_TRADER</Tag>
@@ -2804,7 +2765,6 @@
         <German>Die europäische Erkundung der Neuen Welt führte zur Entdeckung von Steinsalzvorkommen, die schon seit der Antike gefragt waren, als Karthago Sklaven aus Britannien und Germanien für die Salzminen einfing. Der Rohstoff konnte exportiert werden, war aber verarbeitet viel wertvoller, und die Industrie wurde auch durch eine starke Binnennachfrage unterstützt.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SALT_TRADER_STRATEGY</Tag>
@@ -2813,7 +2773,6 @@
         <German>Salzhändler verarbeiten [COLOR_HIGHLIGHT_TEXT]Steinsalz[COLOR_REVERT] zu [COLOR_HIGHLIGHT_TEXT]Salt[COLOR_REVERT]. Dieser Prozess ist noch effektiver, wenn Sie dem Beruf einen [COLOR_UNIT_TEXT]Meister-Gewürzhändler[COLOR_REVERT] zuweisen.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SCOUT</Tag>
@@ -2904,7 +2863,6 @@
         <German>[COLOR_UNIT_TEXT]Walrösser[COLOR_REVERT] und [COLOR_UNIT_TEXT]Seelöwen[COLOR_REVERT] wurden schon sehr bald nach der Entdeckung der Neuen Welt exzessiv gejagt. Die teuren und extrem hochwertigen Felle und die sehr teuren Walross-Stosszähne, das Walross-Elfenbein, machten deren Jagd extrem lukrativ. Aber auch das Fleisch und die großen Fettmengen waren als Nahrung sehr geschätzt. An vielen Küsten der Neuen Welt wurden sie für Jahrhunderte ausgerottet und kehren erst in den letzten Jahrzehnten an manchen Stellen wieder zurück.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SEAL_HUNTER_STRATEGY</Tag>
@@ -2913,7 +2871,6 @@
         <German>Seelöwenjäger jagen entlang der Küste und auf dem ewigen Eis um ihre Mitbürger mit Nahrung zu versorgen und um wertvolle Felle zu erbeuten. Wird ein Kolonist der Arbeit auf einer Bonusressource Seelöwen zugewiesen, so wird er automatisch Seelüwenjäger. Wird dieser Beruf einem [COLOR_UNIT_TEXT]Erfahrenen Seelüwenjäger[COLOR_REVERT] zugewiesen, so verdoppelt sich der Ertrag an [COLOR_HIGHLIGHT_TEXT]Fellen[COLOR_REVERT].</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SHEPHERD</Tag>
@@ -2959,7 +2916,6 @@
         <German>Wenn Sie einen Bürger anweisen, ein Hügel-Geländefeld zu bearbeiten, können Sie sich entscheiden, diesen Kolonisten den Beruf [COLOR_HIGHLIGHT_TEXT]Schäfer[COLOR_REVERT] zuzuweisen, wodurch Ihre Siedlung eine Menge [COLOR_HIGHLIGHT_TEXT]Schafe[COLOR_REVERT] erhält. Wenn Sie diesem Beruf einen [COLOR_UNIT_TEXT]Erfahrenen Züchter[COLOR_REVERT] zuweisen, werden Ihre Lagerhäuser vor Schafen überquellen!</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SILVER_MINER</Tag>
@@ -3054,7 +3010,6 @@
         <German>Gewürzhändler trocknen [COLOR_HIGHLIGHT_TEXT]Roten Pfeffer[COLOR_REVERT] zu [COLOR_HIGHLIGHT_TEXT]Gewürzen[COLOR_REVERT]. Dieser Prozess ist noch effektiver, wenn Sie dem Beruf einen [COLOR_UNIT_TEXT]Meister-Gewürzhändler[COLOR_REVERT] zuweisen.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_STATESMAN</Tag>
@@ -3145,7 +3100,6 @@
         <German>Das schiere Volumen des in der Neuen Welt verfügbaren Steins, macht den Steinabbau zu einem einfachen Geschäft. Im Allgemeinen werden Steinbrüche genutzt um Stein abzubauen.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_STONECUTTER_STRATEGY</Tag>
@@ -3154,7 +3108,6 @@
         <German>Beim Zuweisen eines Kolonisten zu einem Feld, welches Steinabbau erlaubt, kann dem Arbeiter der Beruf Steinbrucharbeiter zugewiesen werden.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_STUDENT</Tag>
@@ -3275,7 +3228,6 @@
         <German>[TAB]Leder war in der menschlichen Geschichte eines der wichtigsten Materialien. Meist aus Rinderhäuten hergestellt, diente Leder verschiedensten Zwecken, üblicherweise jedoch der Herstellung von Kleidung. Ledergerber war zwar einer der am wenigsten angesehenen Berufe oder Stände, aber essentiell für jede damalige Gesellschaft. Auch in der Neuen Welt spielte die Herstellung von Leder eine bedeutende Rolle.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_TANNER_STRATEGY</Tag>
@@ -3284,7 +3236,6 @@
         <German>[COLOR_HIGHLIGHT_TEXT]Ledergerber[COLOR_REVERT] verarbeiten [LINK=YIELD_HIDES]Rinderhäute[\LINK] zu [LINK=YIELD_LEATHER]Leder[\LINK]. Dieser Prozess ist noch effektiver, wenn Sie dem Beruf einen [LINK=UNIT_TANNER]Gerbermeister[\LINK] zuweisen.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_TOBACCONIST</Tag>
@@ -3428,7 +3379,6 @@
         <German>[COLOR_HIGHLIGHT_TEXT]Edelholz[COLOR_REVERT] findet sich im [COLOR_HIGHLIGHT_TEXT]Dschungel[COLOR_REVERT] und in der [COLOR_HIGHLIGHT_TEXT]Taiga[COLOR_REVERT]. Wenn einem [COLOR_UNIT_TEXT]Erfahrenem Holzfäller[COLOR_REVERT] dieser Beruf zugewiesen wird, wird er erheblich mehr [COLOR_HIGHLIGHT_TEXT]Edelholz[COLOR_REVERT] als ein normaler Kolonist schlagen.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_WEAVER</Tag>
@@ -3523,7 +3473,6 @@
         <German>Weber schneidern [COLOR_HIGHLIGHT_TEXT]Wollkleidung[COLOR_REVERT] aus [COLOR_HIGHLIGHT_TEXT]Wolle[COLOR_REVERT]. Dieser Prozess findet in Gebäuden für Wollkleidungsproduktion statt und ist noch effektiver, wenn Sie dem Beruf einen [COLOR_UNIT_TEXT]Meister-Weber[COLOR_REVERT] zuweisen.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_WHALE_OIL_COOKER</Tag>
@@ -3565,7 +3514,6 @@
         <German>Im 17. Jahrhundert begannen die europäischen Kolonisten in Nord-Amerika, mit Kuttern und Harpunen Jagd auf die Walschulen zu machen, die an der Nordostküste der Neuen Welt beheimatet waren. Tran ist ein aus dem Fettgewebe von Walen und Robben, dem so genannten Blubber, durch Erhitzen, Auspressen, Ausschmelzen oder einfaches Ausklopfen gewonnenes Öl. Der durch Kochen zerstückelten Walspecks gewonnene Waltran wurde bis Anfang des 20. Jahrhunderts als Lampenöl benutzt; er war der erste in großen Mengen verfügbare flüssige Brennstoff und seine Gewinnung war die wirtschaftliche Hauptantriebskraft des Walfangs. Dieser wurde vor allem im 17. und 18. Jahrhundert in sehr großem Stil inbesondere von Seefahrern aus England und den Niederlanden betrieben.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_WHALE_OIL_COOKER_STRATEGY</Tag>
@@ -3574,7 +3522,6 @@
         <German>Wenn man einen Bürger anweist, in einer [COLOR_BUILDING_TEXT]Trankocherei[COLOR_REVERT] zu arbeiten, nimmt er den Beruf des Trankochers an und verarbeitet [COLOR_HIGHLIGHT_TEXT]Walspeck[COLOR_REVERT] zu [COLOR_HIGHLIGHT_TEXT]Tran[COLOR_REVERT]. Wenn man dem Beruf einen [COLOR_UNIT_TEXT]Meister-Trankocher[COLOR_REVERT] zuweist, verdoppelt sich damit die Menge des produzierten Trans, vorausgesetzt, es ist genügend Walspeck da.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_WHALING_BOAT_WORKING</Tag>
@@ -3620,7 +3567,6 @@
         <German>Der [COLOR_UNIT_TEXT]Walfänger[COLOR_REVERT] kann als Schiff den Befehl "Waljagd" ausführen. Aus technischen Gründen wird diese Tätigkeit hier in dieser Rubrik aufgeführt, obwohl es sich strenggenommen um keinen frei wählbaren Beruf handelt.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_WINE_MAKER</Tag>
@@ -3670,7 +3616,6 @@
         <German>Kolonisten, die im [LINK=BUILDING_WINE_MAKERS_HOUSE]Winzerhaus[\LINK] oder einem seiner Upgrades arbeiten, werden zu [COLOR_HIGHLIGHT_TEXT]Winzern[COLOR_REVERT], die [LINK=YIELD_GRAPES]Weintrauben[\LINK] zu Traubensaft pressen, der dann vergoren wird und zu [LINK=YIELD_WINE]Wein[\LINK] reift. Dieser Prozess ist noch effektiver, wenn Sie dem Beruf einen [LINK=UNIT_WINE_MAKER]Meister-Winzer[\LINK] zuweisen.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_TOWN_GUARD</Tag>
@@ -3708,7 +3653,6 @@
         <German>[COLOR_UNIT_TEXT]Stadtwachen[COLOR_REVERT] sind günstige Militäreinheiten, die ausgerüstet werden können, um als erste Verteidigungslinie zu dienen, wenn eine Kolonie angegriffen wird. Sie haben keine Schusswaffen, sondern benutzen [LINK=YIELD_BLADES]Klingenwaffen[\LINK] als Waffen ihrer Wahl. Aufgrund der langen Hellebarden sind sie besonders im Kampf gegen berittene Einheiten effektiv. Wenn ein Kolonist diesen Beruf lange genug ausübt, kann er schließlich ein [LINK=UNIT_VETERAN_TOWN_GUARD]Veteran[\LINK] werden.[PARAGRAPH:2]Weitere Informationen finden Sie unter [LINK=CONCEPT_MILITARY_UNITS]Militäreinheiten[\LINK].</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_TOWN_GUARD_PEDIA</Tag>
@@ -3717,7 +3661,6 @@
         <German>Während des Kolonialzeitaltes erforderten die vielen Konflikte sowohl mit den Ureinwohnern wie auch mit rivalisierenden Kolonialmächten, dass die einzelnen Siedlungen lose organisierte Milizen mit Zivilisten und in grösseren Siedlungen auch reguläre Stadtwachen aufstellten. Diese Truppen dienten dazu, die Siedlungen vor Feinden zu schützen, aber auch die innere Ordnung aufrecht zu erhalten. Aufgrund der oft fehlenden Ausbildung mangelte es diese Truppen aber meist an der Schlagkraft professioneller Soldaten. Jedoch glichen sie dieses oft durch Mut, angespornt durch den Willen zur Verteidigung ihrer Heimat, wieder aus.[PARAGRAPH:1]Während des Unabhängigkeitskrieges spielten Milizen und Stadtwachen eine nicht zu vernachlässigende Rolle bei der Zurückschlagung der britischen Invasion. Als der Krieg jedoch immer länger andauerte, machte sich auch Unzufriedenheit bei diesen Truppen breit, da ihnen Aufgaben und Kämpfe mit der Kontinentalarmee zugeteilt wurden, die sie weitab ihrer Heimatstädte führten. Dadurch blieben sie im späteren Verlauf des Krieges meist in der Nähe ihrer Heimatstädte und es wurden ihnen eher Aufgaben zugeteilt, die der Rolle von internen Polizeikräften und Sicherungstruppen entsprach. So schlugen sie beispielsweise Sklavenaufstände nieder oder wehrten kleinere Raubzüge von Ureinwohnern ab oder versuchten die Loyalisten in Schach zu halten.[PARAGRAPH:1]Nach dem Revolutionskrieg wurde die Rolle der Miliz in der Verfassung der Vereinigten Staaten als grundlegende militärische Kraft der entstehenden Nation festgelegt, und die Einberufung in die Miliz wurde für jeden männlichen Amerikaner obligatorisch.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_ROYAL_TOWN_GUARD</Tag>
@@ -3788,7 +3731,6 @@
         <German>[LINK=PROFESSION_NATIVE_TRADER]Ureinwohnerhändler[\LINK] sind spezielle [LINK=CONCEPT_UNITS]Einheiten[\LINK], die [COLOR_HIGHLIGHT_TEXT]Handelsposten[COLOR_REVERT] in [LINK=CONCEPT_NATIVES]Ureinwohnerdörfern[\LINK] errichten können.[NEWLINE]Von Zeit zu Zeit erzeugen Handelsposten einen [LINK=UNIT_TREASURE]Schatz[\LINK], mit dem das in der Zwischenzeit verdiente Gold zurück in die Kolonien geschickt wird.[PARAGRAPH:1]Nutzt man einen [LINK=UNIT_EXPERT_TRADER]Erfahrenen Ureinwohnerhändler[\LINK], werden deutlich häufiger [LINK=UNIT_TREASURE]Schätze[\LINK] erzeugt.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SETTLER</Tag>
@@ -3806,7 +3748,6 @@
         <German>Kann neue Siedlungen gründen.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_NATIVE_TRADER_PEDIA</Tag>
@@ -3815,7 +3756,6 @@
         <German>Der Pelzhandel war vom späten 16. Jahrhundert bis zur Mitte des 19. Jahrhunderts eine der wichtigsten wirtschaftlichen Aktivitäten in Nord-Amerika. Zu dieser Zeit stieg die Nachfrage nach Pelzen in Europa, wo sie zur Herstellung von Filz und modischen Hüten verwendet wurden. Aus Daten, die im 18. Jahrhundert in England gesammelt wurden, geht hervor, dass in den Jahren von 1746 bis 1763 ein Anstieg von 12 Schilling pro Pelz zu verzeichnen war. Man hat errechnet, dass allein von 1700 bis 1770 über 20 Millionen Biberhüte aus England exportiert wurden. Die Handelspartner im Pelzhandel, amerikanische Ureinwohner und Europäer, schufen einen komparativen Vorteil. Die Opportunitätskosten des Biberfangs in Europa waren extrem hoch: Im siebzehnten und achtzehnten Jahrhundert war der eurasische Biber in England und Frankreich fast ausgerottet. Auf der anderen Seite dachten die Händler und Fallensteller, dass die Wildnis in der Neuen Welt im Wesentlichen grenzenlos sei. Die amerikanischen Ureinwohner verlangten nach Handelswaren, insbesondere nach Messern, Äxten und Gewehren. Der Pelzhandel bot vielen amerikanischen Ureinwohnern ein stabiles Einkommen bis zur Mitte des 19. Jahrhunderts, als veränderte Modetrends in Europa und ein Rückgang der Biberpopulation in Nord-Amerika zu einem Einbruch der Nachfrage nach Pelzen führten.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SETTLER_STRATEGY</Tag>
@@ -3824,7 +3764,6 @@
         <German>[LINK=PROFESSION_SETTLER]Siedlungsgründer[\LINK] sind der einzige [LINK=CONCEPT_PROFESSION]Beruf[\LINK] der neue [LINK=CONCEPT_SETTLEMENTS]Siedlungen[\LINK] gründen kann.[PARAGRAPH:1]Dafür brauchen sie aber [COLOR_HIGHLIGHT_TEXT]Ausrüstung[COLOR_REVERT]. Man kann Kolonisten als Siedlungsgründer entweder in einer Siedlung ausrüsten, wenn diese die Ausrüstung gelagert hat, oder aber schon gleich in Europa, sofern man das nötige Gold für die Ausrüstung hat.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SETTLER_PEDIA</Tag>
@@ -3833,7 +3772,6 @@
         <German>Für rund ein Jahrhundert nach der Entdeckung Amerikas durch Christoph Kolumbus 1492 konzentrierte sich das Interesse der europäischen Mächte (Spanien, Portugal, England und Frankreich) auf Süd- und Mittel-Amerika. Auch wenn einige wenige Siedlungsversuche in Süd- und Mittel-Amerika scheiterten, waren die meisten Siedlungsversuche auf den Inselns und an den Küsten Süd- und Mittel-Amerikas erfolgreich und viele dieser Siedulungen haben bis heute Bestand.[PARAGRAPH:1]Die ersten frühen Siedlungsversuche in Nord-Amerika in den Jahren 1585 und 1587 scheiterten jedoch. Darunter war der Versuch eine englische Kolonie auf Roanoke Island vor der Küste des heutigen North Carolina zu etablieren. Die zurückgelassenen Siedler wurden entweder von den Indianern getötet oder starben an Hunger und Krankheiten.[PARAGRAPH:1]Erst 1607 gelang es England mit der Gründung von Jamestown dauerhaft Fuß zu fassen, doch war auch dieser Erfolg teuer erkauft, denn von den 105 Siedlern überlebten nur 33 die ersten sieben Monate. Eine zweite englische Kolonie, Sagadahoc im heutigen Maine, musste nach kaum einem Jahr 1608 wieder aufgegeben werden. Spätere Siedlungen der Niederlande, England und Frankreich waren aber deutlich erfolgreicher, da die Kolonialmächte aus ihren Fehlern gelernt hatten. Québec, 1542 verlassen und 1608 dauerhaft besiedelt, ist eine der ältesten europäischen Siedlungen in Nord-Amerika und die einzige befestigte Stadt nördlich von Mexiko, deren Mauern noch erhalten sind.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CAN_CROSS_LARGE_RIVERS</Tag>

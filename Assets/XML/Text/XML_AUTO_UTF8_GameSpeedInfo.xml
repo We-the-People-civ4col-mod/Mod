@@ -7,7 +7,6 @@
         <German>(16 Monate/Zug) Schnell</German>
         <Italian>(16 mesi/turno) Veloce</Italian>
         <Spanish>(16 meses/turno) Rápida</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMESPEED_TAC_QUICK_HELP</Tag>
@@ -16,7 +15,6 @@
         <German>Leicht schnelleres Spieltempo : Die Spieldaten werden ausbalanciert, um die Spieldauer zu verkürzen.</German>
         <Italian>Velocità di gioco leggermente superiore: I dati di gioco sono stati bilanciati per ridurre la durata del gioco.</Italian>
         <Spanish>Velocidad de juego ligeramente más rápida : Los datos del juego están equilibrados para acortar la duración del juego.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMESPEED_TAC_NORMAL</Tag>
@@ -25,7 +23,6 @@
         <German>(12 Monate/Zug) Normal</German>
         <Italian>(12 mesi/turno) Normale</Italian>
         <Spanish>(12 meses/turno) Normal</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMESPEED_TAC_NORMAL_HELP</Tag>
@@ -34,7 +31,6 @@
         <German>Normales Spieltempo</German>
         <Italian>Velocità di gioco normale</Italian>
         <Spanish>Velocidad de juego normal</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMESPEED_TAC_EPIC</Tag>
@@ -43,7 +39,6 @@
         <German>(6 Monate/Zug) Episch</German>
         <Italian>(6 mesi/turno) Epica</Italian>
         <Spanish>(6 meses/turno) Épica</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMESPEED_TAC_EPIC_HELP</Tag>
@@ -52,7 +47,6 @@
         <German>Langsames Spieltempo : Die Spieldaten werden ausbalanciert, um die Spieldauer deutlich zu verlängern.</German>
         <Italian>Velocità di gioco lenta : I dati di gioco sono bilanciati per prolungare in modo significativo la durata del gioco.</Italian>
         <Spanish>Velocidad de juego lenta : Los datos del juego están equilibrados para prolongar significativamente la duración del juego.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMESPEED_TAC_MARATHON</Tag>
@@ -61,7 +55,6 @@
         <German>(4 Monate/Zug) Marathon</German>
         <Italian>(4 mesi/turno) Maratona</Italian>
         <Spanish>(4 meses/turno) Maratón</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMESPEED_TAC_MARATHON_HELP</Tag>
@@ -70,6 +63,5 @@
         <German>Extrem langsames Spieltempo : Die Spieldaten werden ausbalanciert, um die Spieldauer deutlich zu verlängern.</German>
         <Italian>Velocità di gioco incredibilmente lunga : I dati di gioco sono bilanciati per prolungare in modo significativo la durata del gioco. </Italian>
         <Spanish>Velocidad de juego extremadamente lento : Los datos del juego están equilibrados para prolongar significativamente la duración del juego.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
 </Civ4GameText>

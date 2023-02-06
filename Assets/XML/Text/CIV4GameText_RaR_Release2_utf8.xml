@@ -12,7 +12,6 @@
         <German>(108x215) WTP Unentdeckte Welt - eine generierte Karte, die verändert wurde</German>
         <Italian>(108x215) WTP Undiscovered World - una mappa generata e modificata</Italian>
         <Spanish>(108x215) WTP Undiscovered World - un mapa generado que ha sido modificado</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_NEW_ENGLAND</Tag>
@@ -21,7 +20,6 @@
         <German>(30x70) Karte von Neu-England</German>
         <Italian>(30x70) Mappa del New England</Italian>
         <Spanish>(30x70) Mapa de Nueva Inglaterra</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_NORTH_AMERICA</Tag>
@@ -30,7 +28,6 @@
         <German>(50x90) Karte von Nord-Amerika</German>
         <Italian>(50x90) Mappa del Nord America</Italian>
         <Spanish>(50x90) Mapa de Norteamérica</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_WEST_INDIES</Tag>
@@ -39,7 +36,6 @@
         <German>(88x58) Karte von West-Indien</German>
         <Italian>(88x58) Mappa delle Antille</Italian>
         <Spanish>(88x58) Mapa de las Antillas</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_HEMI_DESC</Tag>
@@ -48,7 +44,6 @@
         <German>(49x70) Karte der Westlichen Hemisphäre (unveränderte Karte aus dem Originalspiel) : hinterlassen Sie in diesem Szenario Ihre Spuren in allem, was westlich des Atlantiks liegt!</German>
         <Italian>(49x70) Mappa dell'emisfero occidentale : lasciate il vostro segno su tutto ciò che si trova a ovest dell'Atlantico in questo scenario!</Italian>
         <Spanish>(49x70) Mapa del hemisferio occidental : ¡deja tu huella en todo lo que hay al oeste del Atlántico en este escenario!</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_HEMI_HUGE_DESC</Tag>
@@ -57,7 +52,6 @@
         <German>(72x100) Karte der Westlichen Hemisphäre (unveränderte Karte aus dem Originalspiel) : kolonisieren Sie die gesamte Neue Welt in diesem Szenario</German>
         <Italian>(72x100) Mappa dell'emisfero occidentale : colonizzare tutto il Nuovo Mondo in questo scenario</Italian>
         <Spanish>(72x100) Mapa del hemisferio occidental : coloniza todo el Nuevo Mundo en este escenario</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_SOUTH_AMERICA_DESC</Tag>
@@ -66,7 +60,6 @@
         <German>(40x53) Karte von Süd-Amerika (unveränderte Karte aus dem Originalspiel) : erkundet den Amazonasdschungel und die Gipfel der Anden und segelt um den Südzipfel der Neuen Welt!</German>
         <Italian>(40x53) Mappa del Sud America : conquistate le giungle dell'Amazzonia, le vette delle Ande e le pianure della Patagonia in questo scenario</Italian>
         <Spanish>(40x53) Mapa de Sudamérica : conquista las selvas del Amazonas, las cumbres de los Andes y las llanuras de la Patagonia en este escenario</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_NORTHWEST_DESC</Tag>
@@ -75,7 +68,6 @@
         <German>(80x59) Karte der Nordwest-Passage (unveränderte Karte aus dem Originalspiel) : Durchkreuzt die eisigen Gewässer und erforscht die Großen Seen im Landesinneren!</German>
         <Italian>(80x59) Mappa del Passaggio a Nord-Ovest : in questo scenario, esplorate le acque ghiacciate del Nord America e del Canada</Italian>
         <Spanish>(80x59) Mapa del Paso del Noroeste : surca las gélidas aguas de Norteamérica y Canadá en este escenario</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_TAC_AMERICA_DESC</Tag>
@@ -84,7 +76,6 @@
         <German>(72x100) Karte der Westlichen Hemisphäre : authentische und zusammenhängende Klimazonen, authentische Flüsse, authentische Höhenzüge, korrekt platzierte Inseln, fair verteilte Überfahrtsfelder nach Europa</German>
         <Italian>(72x100) Mappa dell'emisfero occidentale : zone temperate realistiche e coerenti, fiumi autentici, montagne autentiche, isole autentiche, trame di trasferimento e posizioni di partenza equamente bilanciate</Italian>
         <Spanish>(72x100) Mapa del hemisferio occidental : zonas templadas realistas y coherentes, ríos auténticos, montañas auténticas, islas auténticas, parcelas de transferencia y posiciones de partida equilibradas</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_TAC_NORTHWEST_DESC</Tag>
@@ -93,7 +84,6 @@
         <German>(80x59) Karte der Nordwest-Passage : nur Indianervölker aus Nord-Amerika, authentische und zusammenhängende Klimazonen, authentische Flüsse, authentische Höhenzüge, erstmals Pazifik-Überfahrtsfelder, nur noch fünf, fair verteilte Überfahrtsfelder im Atlantik, die als Startpositionen in verschiedene Klimazonen führen, die unterschiedliche Herausforderungen bieten</German>
         <Italian>(80x59) Mappa del Passaggio a Nord-Ovest : solo tribù native del Nord America, zone temperate realistiche e coerenti, fiumi autentici, montagne autentiche, nuove trame di trasferimento del Pacifico, solo cinque trame di trasferimento dell'Atlantico e posizioni di partenza per diverse zone temperate e diverse esperienze di gioco</Italian>
         <Spanish>(80x59) Mapa del Paso del Noroeste : sólo tribus nativas de Norteamérica, zonas templadas realistas y coherentes, ríos auténticos, montañas auténticas, nuevas parcelas de transferencia del Pacífico, sólo cinco parcelas de transferencia del Atlántico y posiciones de partida para diferentes zonas templadas y diferentes experiencias de juego</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_TAC_SOUTH_AMERICA_DESC</Tag>
@@ -102,7 +92,6 @@
         <German>(40x53) Karte von Süd-Amerika : nur Indianervölker aus Süd-Amerika, mehr Dschungel, mehr Berge, mehr Flüsse, ausgeglichener balancierte Atlantik-Überfahrtsfelder, erstmals Pazifik-Überfahrtsfelder, Südzipfel mit weniger Wüste und erstmals mit Holzquellen</German>
         <Italian>(40x53) Mappa del Sudamerica : solo tribù native del Sudamerica, ottimizzazione delle parcelle di trasferimento, più fiumi, più parcelle con giungla e cime, Patagonia con meno parcelle desertiche e più legname</Italian>
         <Spanish>(40x53) Mapa de Sudamérica : sólo tribus nativas de Sudamérica, parcelas de transferencia optimizadas, más ríos, más parcelas con selva y picos, Patagonia con menos parcelas desérticas y más madereras</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_TAC_CENTRAL_AMERICA_DESC</Tag>
@@ -111,7 +100,6 @@
         <German>(64x64) Karte von Mittel-Amerika : von den Karibischen Inseln bis Mexiko, vom Mississippi-Delta bis hin zu den Dschungeln des Amazonas</German>
         <Italian>(64x64) Mappa dell'America centrale : dal Mar dei Caraibi al Messico, dal fiume Mississippi al Rio delle Amazzoni</Italian>
         <Spanish>(64x64) Mapa de América Central : del Mar Caribe a México, del río Mississippi al Amazonas</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_TAC_EAST_COAST_DESC</Tag>
@@ -120,7 +108,6 @@
         <German>(72x96) Karte der Ostküste Nord-Amerikas : von Neufundland bis Florida, von den Großen Seen bis zur Atlantikküste. Technisch als "kleine" Karte ausgewiesen, damit sie nur von den vier Indianerstämmen des Nordens besiedelt ist.</German>
         <Italian>(72x96) Mappa della costa orientale del Nord America : Terranova a sud fino alla Florida, i Grandi Laghi a est fino all'Atlantico. Definita come una mappa piccola, per cui solo quattro tribù native nordamericane hanno insediamenti.</Italian>
         <Spanish>(72x96) Mapa de la costa este de Norteamérica : Terranova al sur hasta Florida, los Grandes Lagos al este hasta el Atlántico. Definido como un mapa pequeño, por lo que sólo cuatro tribus nativas de América del Norte tienen asentamientos.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERAYCA</Tag>
@@ -129,7 +116,6 @@
         <German>(110x215) Optimiert für das Spielen des Mods. Weder geographisch noch historisch korrekt.</German>
         <Italian>(110x215) Non è corretto né geograficamente né storicamente.</Italian>
         <Spanish>(110x215) Ni geográfica ni históricamente correcto.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_THE_NEW_WORLD</Tag>
@@ -138,7 +124,6 @@
         <German>(110x215) Geographisch korrekte Karte der Neuen Welt.</German>
         <Italian>(110x215) Mappa geograficamente corretta del Nuovo Mondo.</Italian>
         <Spanish>(110x215) Mapa geográficamente correcto del Nuevo Mundo.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_TWO_CONTINENTS</Tag>
@@ -147,7 +132,6 @@
         <German>(110x215) Je ein großer Kontinent in der Nördlichen und in der Südlichen Hemisphäre, beide voneinander getrennt durch eine breite Wasserstraße.</German>
         <Italian>(110x215) Due giganteschi continenti situati nell'emisfero settentrionale e meridionale, separati da un ampio stretto.</Italian>
         <Spanish>(110x215) Dos gigantescos continentes situados en los hemisferios Norte y Sur, separados por un ancho estrecho.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_COLONIAL_AMERICA</Tag>
@@ -156,7 +140,6 @@
         <German>(40x100) Karte von Nord-Amerika : zufällige Ressourcen und Siedlungsgebiete der Eingeborenen sowie Startplätze für die Europäer</German>
         <Italian>(40x100) Mappa del Nord America : posizione casuale dei nativi, risorse e luoghi di partenza per gli europei.</Italian>
         <Spanish>(40x100) Mapa de Norteamérica : ubicaciones aleatorias de los nativos, recursos y lugares de partida de los europeos</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_GIGANTIC</Tag>
@@ -165,7 +148,6 @@
         <German>(136x256) Karte von Amerika : genaue Karte mit korrekten Ressourcen und historischen Siedlungsgebieten der Eingeborenen</German>
         <Italian>(136x256) Mappa delle Americhe : mappa fedele con le posizioni storiche dei nativi e delle risorse</Italian>
         <Spanish>(136x256) Mapa de las Américas : mapa fiel con ubicaciones históricas de nativos y recursos</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_GIGANTIC_RANDOM</Tag>
@@ -174,7 +156,6 @@
         <German>(136x256) Karte von Amerika : genaue Karte mit zufälligen Ressourcen und Siedlungsgebieten der Eingeborenen sowie Startplätzen für die Europäer</German>
         <Italian>(136x256) Mappa delle Americhe : mappa fedele con le posizioni casuali dei nativi, le risorse e le posizioni di partenza degli europei.</Italian>
         <Spanish>(136x256) Mapa de las Américas : mapa fiel con ubicaciones aleatorias de los nativos, recursos y ubicaciones iniciales para los europeos</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_HUGE</Tag>
@@ -183,7 +164,6 @@
         <German>(68x128) Karte von Amerika : genaue Karte mit korrekten Ressourcen und historischen Siedlungsgebieten der Eingeborenen</German>
         <Italian>(68x128) Mappa delle Americhe : mappa fedele con le posizioni casuali dei nativi, le risorse e le posizioni iniziali degli europei.</Italian>
         <Spanish>(68x128) Mapa de las Américas : mapa fiel con ubicaciones aleatorias de los nativos, recursos y ubicaciones iniciales para los europeos</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_HUGE_RANDOM</Tag>
@@ -192,7 +172,6 @@
         <German>(68x128) Karte von Amerika : genaue Karte mit zufälligen Ressourcen und Siedlungsgebieten der Eingeborenen sowie Startplätzen für die Europäer</German>
         <Italian>(68x128) Mappa delle Americhe : mappa fedele con le posizioni casuali dei nativi, le risorse e le posizioni di partenza degli europei.</Italian>
         <Spanish>(68x128) Mapa de las Américas : mapa fiel con ubicaciones aleatorias de los nativos, recursos y ubicaciones iniciales para los europeos</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_SCRIPT_ANEWWORLD_DESCR</Tag>
@@ -201,7 +180,6 @@
         <German>Zufallsgenerierte Welt mit einem großen Kontinent, der vom Nord- bis zum Südpol reicht</German>
         <Italian>Un Nuovo Mondo attende di essere scoperto. Lo script di questa mappa crea un continente che si estende dal Polo Nord al Polo Sud.</Italian>
         <Spanish>Un Nuevo Mundo aguarda a ser descubierto. Esta secuencia de comandos del mapa genera un continente que se extiende desde el Polo Norte al Polo Sur.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_SCRIPT_CARIBBEAN_DESCR</Tag>
@@ -210,7 +188,6 @@
         <German>Zufallsgenerierte Inselwelt, die der Karibik ähnelt.</German>
         <Italian>Fai una vacanza al mare e conquista un intero arcipelago, in questa mappa caraibica semi-casuale.</Italian>
         <Spanish>Dejaos seducir por el ambiente de las islas y apoderaos de ellas en este mapa semialeatorio del Caribe.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_DISTANCE</Tag>
@@ -219,7 +196,6 @@
         <German>Distanz Küste zu Europa : </German>
         <Italian>Distanza dall'Europa : </Italian>
         <Spanish>Distancia hasta Europa : </Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_NORTHERN_BORDER</Tag>
@@ -228,7 +204,6 @@
         <German>Nördliche Grenze : </German>
         <Italian>Confine nord : </Italian>
         <Spanish>Frontera norte : </Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_SOUTHERN_BORDER</Tag>
@@ -237,7 +212,6 @@
         <German>Südliche Grenze : </German>
         <Italian>Confine sud : </Italian>
         <Spanish>Frontera sur : </Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_LAND_ALLOCATION</Tag>
@@ -246,7 +220,6 @@
         <German>Landverteilung : </German>
         <Italian>Assegnazione del terreno : </Italian>
         <Spanish>Asignación de terrenos : </Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_3_FIELDS</Tag>
@@ -255,7 +228,6 @@
         <German>3 Geländefelder : </German>
         <Italian>3 caselle : </Italian>
         <Spanish>3 casillas : </Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_4_FIELDS</Tag>
@@ -264,7 +236,6 @@
         <German>4 Geländefelder (Standard) : </German>
         <Italian>4 caselle (predefinita) : </Italian>
         <Spanish>4 casillas (por defecto) : </Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_6_FIELDS</Tag>
@@ -273,7 +244,6 @@
         <German>6 Geländefelder : </German>
         <Italian>6 caselle : </Italian>
         <Spanish>6 casillas : </Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_8_FIELDS</Tag>
@@ -282,7 +252,6 @@
         <German>8 Geländefelder : </German>
         <Italian>8 caselle : </Italian>
         <Spanish>8 casillas : </Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_MANY_ISLES_0</Tag>
@@ -291,7 +260,6 @@
         <German>Wenige Inseln (Standard)</German>
         <Italian>Poche isole (predefinito)</Italian>
         <Spanish>Pocas islas (por defecto)</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_MANY_ISLES_1</Tag>
@@ -300,7 +268,6 @@
         <German>Viele Inseln</German>
         <Italian>Molte isole</Italian>
         <Spanish>Muchas islas</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_SELECT_NORTHERN_BORDER_0</Tag>
@@ -309,7 +276,6 @@
         <German>90°N (nördliche Breite, Standard)</German>
         <Italian>Latitudine 90 gradi nord (predefinita)</Italian>
         <Spanish>Latitud 90 grados norte (por defecto)</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_SELECT_NORTHERN_BORDER_1</Tag>
@@ -318,7 +284,6 @@
         <German>90°S (südliche Breite)</German>
         <Italian>Latitudine 90 gradi sud</Italian>
         <Spanish>Latitud 90 grados sur</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_SELECT_SOUTHERN_BORDER_0</Tag>
@@ -327,7 +292,6 @@
         <German>90°N (nördliche Breite)</German>
         <Italian>Latitudine 90 gradi nord</Italian>
         <Spanish>Latitud 90 grados norte</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_SELECT_SOUTHERN_BORDER_1</Tag>
@@ -336,7 +300,6 @@
         <German>90°S (südliche Breite, Standard)</German>
         <Italian>Latitudine 90 gradi sud (predefinita)</Italian>
         <Spanish>Latitud 90 grados sur (por defecto)</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_SELECT_EQUATOR</Tag>
@@ -345,7 +308,6 @@
         <German>0° Äquator</German>
         <Italian>0° Equatore</Italian>
         <Spanish>0° Ecuador</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_AS_MAX_UNITS_PER_CITY</Tag>
@@ -354,7 +316,6 @@
         <German>[COLOR_WARNING_TEXT]Maximal %d1 [NUM1:Einheit:Einheiten] pro Siedlung[COLOR_REVERT]</German>
         <Italian>[COLOR_WARNING_TEXT]Massimo %d1 unità per insediamento[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_WARNING_TEXT]%d1 [NUM1:unidad:unidades] como máximo por asentamiento[COLOR_REVERT]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_CITY_DATA</Tag>
@@ -363,7 +324,6 @@
         <German>Siedlungsdaten</German>
         <Italian>Dati dell'insediamento</Italian>
         <Spanish>Datos del asentamiento</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_EDIT_CITY</Tag>
@@ -372,7 +332,6 @@
         <German>Siedlungsmodus bearbeiten</German>
         <Italian>Modifica modalità insediamento</Italian>
         <Spanish>Modo Editar asentamiento</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_HEADER_CITY_EDIT</Tag>
@@ -381,7 +340,6 @@
         <German>Siedlungseditor : </German>
         <Italian>Editor insediamento : </Italian>
         <Spanish>Editor de asentamientos : </Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_AS_CITIES</Tag>
@@ -390,7 +348,6 @@
         <German>Siedlungen</German>
         <Italian>Insediamenti</Italian>
         <Spanish>Asentamientos</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_CITY_EDIT_POP</Tag>
@@ -399,7 +356,6 @@
         <German>Bevölkerungsanpassung eingeben : </German>
         <Italian>Regola la popolazione : </Italian>
         <Spanish>Introducir ajustes a la población : </Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_EXIT</Tag>
@@ -408,7 +364,6 @@
         <German>Weltenbauer beenden</German>
         <Italian>Esci dall'editor</Italian>
         <Spanish>Salir del Creador de mundos</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_LANDMARK_PLOTS</Tag>
@@ -417,7 +372,6 @@
         <German>Wahrzeichenmodus starten</German>
         <Italian>Modalità punto di riferimento</Italian>
         <Spanish>Activar modo "Lugar de referencia"</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_ERASE_PLOTS</Tag>
@@ -426,7 +380,6 @@
         <German>Löschmodus starten</German>
         <Italian>Modalità elimina</Italian>
         <Spanish>Activar modo "Borrar"</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_PLOT_TYPE_MOUNTAIN</Tag>
@@ -435,7 +388,6 @@
         <German>Geländefeld zu Gebirge ändern</German>
         <Italian>Cambia la casella in una montagna</Italian>
         <Spanish>Cambiar casilla a montaña</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_PLOT_TYPE_HILL</Tag>
@@ -444,7 +396,6 @@
         <German>Geländefeld zu Hügel ändern</German>
         <Italian>Cambia la casella in una collina</Italian>
         <Spanish>Cambiar casilla a colina</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_PLOT_TYPE_PLAINS</Tag>
@@ -453,7 +404,6 @@
         <German>Geländefeld zu Ebene ändern</German>
         <Italian>Cambia la casella in una pianura</Italian>
         <Spanish>Cambiar casilla a llanura</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_PLOT_TYPE_OCEAN</Tag>
@@ -462,7 +412,6 @@
         <German>Geländefeld zu Ozean ändern</German>
         <Italian>Cambia la casella in un oceano</Italian>
         <Spanish>Cambiar casilla a océano</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_RIVER_PLACEMENT</Tag>
@@ -471,7 +420,6 @@
         <German>Flussplatzierungs-Modus starten</German>
         <Italian>Modalità disposizione dei fiumi</Italian>
         <Spanish>Activar modo "Colocar río"</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_SCRIPT</Tag>
@@ -480,7 +428,6 @@
         <German>Skriptnamen eingeben</German>
         <Italian>Inserisci il nome del tuo script</Italian>
         <Spanish>Escribe el nombre de la secuencia de comandos</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WBREAD_FAILURE</Tag>
@@ -489,7 +436,6 @@
         <German>Weltenbauer-Datei "%s1_WBName" konnte nicht gelesen werden...</German>
         <Italian>Impossibile leggere il file dell'editor "%1_WBName"</Italian>
         <Spanish>No se ha podido leer el archivo "%s1_WBName" del Creador de mundos</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_EDIT_UNIT</Tag>
@@ -498,7 +444,6 @@
         <German>Einheiten-Modus bearbeiten</German>
         <Italian>Modifica modalità unità</Italian>
         <Spanish>Modo Editar unidad</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_NORMAL_PLAYER</Tag>
@@ -507,7 +452,6 @@
         <German>Spieler-Modus</German>
         <Italian>Modalità giocatore</Italian>
         <Spanish>Modo Jugador</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_NORMAL_MAP</Tag>
@@ -516,7 +460,6 @@
         <German>Karten-Modus</German>
         <Italian>Modalità mappa</Italian>
         <Spanish>Modo Mapa</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_DIPLOMACY</Tag>
@@ -525,7 +468,6 @@
         <German>Diplomatie-Modus</German>
         <Italian>Modalità diplomatica</Italian>
         <Spanish>Modo Diplomacia</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_REVEAL_TILE</Tag>
@@ -534,7 +476,6 @@
         <German>Geländefelder-einblenden-Modus</German>
         <Italian>Modalità scopri caselle</Italian>
         <Spanish>Modo Mostrar casilla</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_REVEAL_ALL</Tag>
@@ -543,7 +484,6 @@
         <German>Alle Geländefelder einblenden</German>
         <Italian>Rivela tutte le caselle</Italian>
         <Spanish>Mostrar todas las casillas</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_UNREVEAL_ALL</Tag>
@@ -552,7 +492,6 @@
         <German>Alle Geländefelder ausblenden</German>
         <Italian>Copri tutte le caselle</Italian>
         <Spanish>Ocultar todas las casillas</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_IMPROVEMENTS</Tag>
@@ -561,7 +500,6 @@
         <German>Modernisierungen</German>
         <Italian>Miglioramenti</Italian>
         <Spanish>Mejoras</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_BONUSES</Tag>
@@ -570,7 +508,6 @@
         <German>Boni</German>
         <Italian>Bonus</Italian>
         <Spanish>Bonificaciones</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_TERRAINS</Tag>
@@ -579,7 +516,6 @@
         <German>Gelände</German>
         <Italian>Terreni</Italian>
         <Spanish>Terrenos</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_CHOOSE_UNIT</Tag>
@@ -588,7 +524,6 @@
         <German>Einheit wählen</German>
         <Italian>Scegli unità</Italian>
         <Spanish>Elegir unidad</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_UNITS</Tag>
@@ -597,7 +532,6 @@
         <German>Einheiten</German>
         <Italian>Unità</Italian>
         <Spanish>Unidades</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_BUILDINGS</Tag>
@@ -606,7 +540,6 @@
         <German>Gebäude</German>
         <Italian>Edifici</Italian>
         <Spanish>Edificios</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_ADD_MOUNTAIN</Tag>
@@ -615,7 +548,6 @@
         <German>Berg hinzufügen</German>
         <Italian>Aggiungi montagna</Italian>
         <Spanish>Agregar montaña</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_ADD_HILL</Tag>
@@ -624,7 +556,6 @@
         <German>Hügel hinzufügen</German>
         <Italian>Aggiungi collina</Italian>
         <Spanish>Agregar colina</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_ADD_GRASS</Tag>
@@ -633,7 +564,6 @@
         <German>Gras hinzufügen</German>
         <Italian>Aggiungi prato</Italian>
         <Spanish>Agregar pradera</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_ADD_OCEAN</Tag>
@@ -642,7 +572,6 @@
         <German>Ozean hinzufügen</German>
         <Italian>Aggiungi oceano </Italian>
         <Spanish>Agregar océano</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_EXPERIENCE</Tag>
@@ -651,7 +580,6 @@
         <German>Erfahrung : </German>
         <Italian>Esperienza : </Italian>
         <Spanish>Experiencia : </Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_LEVEL</Tag>
@@ -660,7 +588,6 @@
         <German>Stufe : </German>
         <Italian>Livello : </Italian>
         <Spanish>Nivel : </Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_ADD_SCRIPT</Tag>
@@ -669,7 +596,6 @@
         <German>Skript hinzufügen</German>
         <Italian>Aggiungi script</Italian>
         <Spanish>Agregar secuencia de comandos</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_POPULATION</Tag>
@@ -678,7 +604,6 @@
         <German>Bevölkerung : </German>
         <Italian>Popolazione : </Italian>
         <Spanish>Población : </Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_CULTURE</Tag>
@@ -687,7 +612,6 @@
         <German>Kultur : </German>
         <Italian>Cultura : </Italian>
         <Spanish>Cultura : </Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_GOLD</Tag>
@@ -696,7 +620,6 @@
         <German>Gold : </German>
         <Italian>Oro : </Italian>
         <Spanish>Oro : </Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_ADD_SCRIPT_TO_PLOT</Tag>
@@ -705,7 +628,6 @@
         <German>Skript zum Geländefeld hinzufügen</German>
         <Italian>Aggiungi script alla casella</Italian>
         <Spanish>Agregar secuencia de comandos a la casilla</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_CHANGE_START_YEAR</Tag>
@@ -714,7 +636,6 @@
         <German>Startjahr ändern</German>
         <Italian>Cambia l'anno iniziale</Italian>
         <Spanish>Cambiar año de comienzo</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_1_BY_1</Tag>
@@ -723,7 +644,6 @@
         <German>1x1</German>
         <Italian>1x1</Italian>
         <Spanish>1x1</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_3_BY_3</Tag>
@@ -732,7 +652,6 @@
         <German>3x3</German>
         <Italian>3x3</Italian>
         <Spanish>3x3</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_5_BY_5</Tag>
@@ -741,7 +660,6 @@
         <German>5x5</German>
         <Italian>5x5</Italian>
         <Spanish>5x5</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_PLAYER_MODE</Tag>
@@ -750,7 +668,6 @@
         <German>Spieler-Modus</German>
         <Italian>Modalità giocatore</Italian>
         <Spanish>Modo Jugador</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_MAP_MODE</Tag>
@@ -759,7 +676,6 @@
         <German>Karten-Modus</German>
         <Italian>Modalità mappa</Italian>
         <Spanish>Modo Mapa</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_WORLD_BUILDER_EDIT_CONTROL</Tag>
@@ -768,7 +684,6 @@
         <German>Weltenbauer-Bearbeitungssteuerung</German>
         <Italian>Comandi dell'editor</Italian>
         <Spanish>Control de edición del Creador de mundos</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_PROMOTIONS</Tag>
@@ -777,7 +692,6 @@
         <German>Beförderungen</German>
         <Italian>Promozioni</Italian>
         <Spanish>Ascensos</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_SIZE_TAG</Tag>
@@ -786,7 +700,6 @@
         <German>Kartengröße : %s1_size</German>
         <Italian>Dimensioni mappa : %s1_size</Italian>
         <Spanish>Tamaño : %s1_size</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_REGENERATE_MAP</Tag>
@@ -795,7 +708,6 @@
         <German>Karte auf Basis des aktuellen Kartenskripts neu generieren</German>
         <Italian>Rigenera la mappa utilizzando l'attuale script</Italian>
         <Spanish>Regenerar mapa empleando la actual secuencia de comandos de mapa</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_TERRITORY</Tag>
@@ -804,7 +716,6 @@
         <German>Territorium</German>
         <Italian>Territorio</Italian>
         <Spanish>Territorio</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_AS_POINTS</Tag>
@@ -813,7 +724,6 @@
         <German>[ICON_GOLD]%d1_Num</German>
         <Italian>[ICON_GOLD]%d1_Num</Italian>
         <Spanish>[ICON_GOLD]%d1_Num</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_AS_UNITS</Tag>
@@ -822,7 +732,6 @@
         <German>Einheiten</German>
         <Italian>Unità</Italian>
         <Spanish>Unidades</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_AS_IMPROVEMENTS</Tag>
@@ -831,7 +740,6 @@
         <German>Modernisierungen</German>
         <Italian>Miglioramenti</Italian>
         <Spanish>Mejoras</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_AS_VISIBILITY</Tag>
@@ -840,7 +748,6 @@
         <German>Sicht</German>
         <Italian>Visibilità</Italian>
         <Spanish>Visibilidad</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_AS_COST_THIS_LOCATION</Tag>
@@ -849,7 +756,6 @@
         <German>Kosten hier : %d1_Amount[ICON_GOLD]</German>
         <Italian>Costo qui : %d1_Amount[ICON_GOLD]</Italian>
         <Spanish>Coste aquí : %d1_Amount[ICON_GOLD]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_AS_POPULATION</Tag>
@@ -858,7 +764,6 @@
         <German>Bevölkerungspunkt</German>
         <Italian>Punto della popolazione</Italian>
         <Spanish>Punto de población</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_AI_ATTITUDE</Tag>
@@ -867,7 +772,6 @@
         <German>Gewichtung KI-Haltung</German>
         <Italian>Peso dell'atteggiamento dell'IA</Italian>
         <Spanish>Peso de la actitud de la IA</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_CHANGE_ALL_PLOTS</Tag>
@@ -876,7 +780,6 @@
         <German>Alle Geländefelder ändern</German>
         <Italian>Cambia tutti i terreni</Italian>
         <Spanish>Cambiar todas</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_CITY_EDIT_CULTURE</Tag>
@@ -885,7 +788,6 @@
         <German>[SPACE]Kultur anpassen : (%d1)</German>
         <Italian>[SPACE]Regola la cultura : (%d1)</Italian>
         <Spanish>[SPACE]Ajustar cultura : (%d1)</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_CITY_NOTHING</Tag>
@@ -894,7 +796,6 @@
         <German>Ohne</German>
         <Italian>Nessuna</Italian>
         <Spanish>Ninguna</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_CITY_ALL</Tag>
@@ -903,7 +804,6 @@
         <German>Alle</German>
         <Italian>Tutte</Italian>
         <Spanish>Todas</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_CITY_ADD_REMOVE</Tag>
@@ -912,7 +812,6 @@
         <German>Zum Hinzufügen oder Entfernen auswählen : </German>
         <Italian>Seleziona Aggiungi o Rimuovi : </Italian>
         <Spanish>Seleccionar para añadir o eliminar : </Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_CITY_ADD</Tag>
@@ -921,7 +820,6 @@
         <German>Hinzufügen</German>
         <Italian>Aggiungi</Italian>
         <Spanish>Añadir</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_CITY_REMOVE</Tag>
@@ -930,7 +828,6 @@
         <German>Entfernen</German>
         <Italian>Rimuovi</Italian>
         <Spanish>Eliminar</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_CITY_NOCHANGE</Tag>
@@ -939,7 +836,6 @@
         <German>Keine Änderung</German>
         <Italian>Nessun cambiamento</Italian>
         <Spanish>Sin cambios</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NEW_LANGUAGE_RESTART_REQUIRED</Tag>
@@ -948,6 +844,5 @@
         <German>Sie müssen das Spiel neu starten, damit die Änderungen wirksam werden.</German>
         <Italian>Devi riavviare il gioco affinché le modifiche abbiano effetto.</Italian>
         <Spanish>Debes reiniciar el juego para que los cambios surtan efecto.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
 </Civ4GameText>

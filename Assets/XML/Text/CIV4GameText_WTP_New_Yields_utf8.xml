@@ -52,7 +52,6 @@
         <German>[TAB][H1]Ziegen[\H1][PARAGRAPH:2][BOLD]Strategie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][NEWLINE]Ziegen fressen Pflanzen, die von den meisten anderen Haustieren verschmäht werden, so dass sie auch auf sehr kargen Böden überleben können. Die Anzahl der Tiere, die ein Ziegenhalter halten kann, hängt von der Qualität der Weide ab. Ein armer Mann mit schlechtem Land kann immer noch Ziegen züchten.[NEWLINE]Vielleicht ist die Ziege wegen ihrer Anpassungsfähigkeit zu einem Symbol des Bösen geworden. Man sagt, dass sich Hexen mit Ziegen tummeln. Satan hat Ziegenhörner.</German>
         <Italian>[TAB][H1]Capre[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]Le capre mangiano la vegetazione che la maggior parte degli altri animali domestici rifiuta, per cui possono sopravvivere anche su terreni molto poveri. Il numero di animali che un allevatore di capre può mantenere dipende dalla qualità del pascolo. Un uomo povero con terreni poveri può comunque allevare capre.[NEWLINE]Forse per la loro adattabilità, le capre sono diventate un simbolo del male. Si dice che le streghe cavalchino con le capre. Satana ha corna di capra.</Italian>
         <Spanish>[TAB][H1]Cabras[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]Las cabras comen vegetación que la mayoría del resto del ganado doméstico rechaza, por lo que pueden subsistir en tierras muy pobres. El número de animales que puede mantener un criador de cabras depende de la calidad de los pastos. Un hombre pobre con tierras pobres puede criar cabras.[NEWLINE]Quizá por su adaptabilidad, las cabras se han convertido en un símbolo del mal. Se dice que las brujas retozan con cabras. Satán tiene cuernos de cabra.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GOATS_PEDIA</Tag>
@@ -109,7 +108,6 @@
         <German>[TAB][H1]Schweine[\H1][PARAGRAPH:2][BOLD]Strategie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][NEWLINE]Früher wurden einige wenige Schweine in der Nähe des Wohnsitzes des Besitzers oder im selben Dorf oder Stadt gehalten. Die Schweine können in einem einfachen Stall angebunden oder in einem Pferch vor dem Haus des Besitzers gehalten werden.[NEWLINE]Schweine werden als Nahrungsmittel und zum Häuten gezüchtet. Sie werden wegen ihrer Fähigkeit geschätzt, ungenießbare Lebensmittel in Fleisch und Dung zu verwandeln, und können mit Lebensmittelabfällen aus dem Haushalt gefüttert werden. In großem Maßstab sind Schweine eine Möglichkeit, kommunale Abfälle zu entsorgen.</German>
         <Italian>Storicamente, alcuni maiali venivano allevati vicino alla residenza del proprietario, o nello stesso villaggio o città. Possono essere legati in un semplice ricovero o tenuti in un recinto fuori dalla casa del proprietario.[NEWLINE]I maiali sono allevati per il cibo e le pelli. Sono apprezzati per la loro capacità di convertire il cibo non commestibile in carne e letame e possono essere alimentati con rifiuti alimentari domestici. Su larga scala, i maiali sono un modo per smaltire i rifiuti urbani.</Italian>
         <Spanish>Históricamente se criaban unos cuantos cerdos cerca de la residencia del propietario, o en el mismo pueblo o ciudad. Los cerdos se crían para obtener alimentos y pieles.[NEWLINE]Se valoran por su capacidad para convertir alimentos no comestibles en carne y estiércol, y pueden alimentarse con residuos de comida doméstica. A gran escala, los cerdos son una forma de eliminar la basura municipal.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PIGS_PEDIA</Tag>
@@ -166,7 +164,6 @@
         <German>[TAB][H1]Hühner[\H1][PARAGRAPH:2][BOLD]Strategie :[\BOLD][NEWLINE]TODO, anderen Yield Eintrag als Beispiel nehmen[PARAGRAPH:2][BOLD]In der Freilandhaltung können sich die Hühner tagsüber frei bewegen, während sie nachts zum Schutz vor Raubtieren normalerweise in Ställen eingesperrt sind.</German>
         <Italian>L'allevamento all'aperto consente alle galline di razzolare durante il giorno, anche se di notte sono generalmente confinate in pollai per proteggerle dai predatori.</Italian>
         <Spanish>La avicultura al aire libre permite a las gallinas deambular durante el día, aunque suelen estar confinadas en gallineros por la noche para protegerlas de los depredadores.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHICKEN_PEDIA</Tag>
@@ -223,7 +220,6 @@
         <German>[TAB][H1]Hausgänse[\H1][PARAGRAPH:2][BOLD]Strategie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][NEWLINE]Gänse sind unter den Hausvögeln die am schnellsten wachsenden Tiere. Sie sind widerstandsfähig und bei ständiger Pflege frei von Krankheiten. Gänse können auf grünen Weiden aufgezogen werden, was die Produktionskosten erheblich senkt.</German>
         <Italian>Le oche sono gli uccelli domestici che crescono più rapidamente. Sono resistenti e prive di malattie se sottoposte a cure costanti. Le oche possono essere allevate su pascoli verdi, il che riduce notevolmente i costi di produzione.</Italian>
         <Spanish>Los gansos son las aves domésticas que crecen más rápido. Son resistentes y no padecen enfermedades cuando se les proporcionan cuidados constantes. Los gansos pueden criarse en pastos verdes, lo que reduce considerablemente los costes de producción.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GEESE_PEDIA</Tag>
@@ -280,7 +276,6 @@
         <German>[TAB][H1]Ziegenfelle[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GOAT_HIDES_PEDIA</Tag>
@@ -337,7 +332,6 @@
         <German>[TAB][H1]Schweinehäute[\H1][PARAGRAPH:2][BOLD]Strategie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][NEWLINE]Schweinsleder ist weicher als Rindsleder und wird für detaillierte Gegenstände wie Handschuhe bevorzugt. Jacken aus Schweinsleder sind geschmeidiger als die schwereren Jacken aus Rindsleder, die jedoch haltbarer sind. Schweinsleder lässt sich leichter verarbeiten, so dass die Kleidungsstücke in der Regel ein feineres Finish aufweisen.</German>
         <Italian>La pelle di maiale è più morbida della pelle di mucca e viene preferita per articoli dettagliati come i guanti. Le giacche in pelle di maiale sono più morbide della più pesante giacca in pelle di mucca, che tuttavia è più resistente. La pelle di maiale è più facile da lavorare, quindi i capi hanno in genere una finitura più fine.</Italian>
         <Spanish>La piel de cerdo es más suave que la de vaca y se prefiere para artículos detallados como los guantes. Las chaquetas de piel de cerdo son más flexibles que las de piel de vaca, más pesadas, pero más duraderas. La piel de cerdo es más fácil de trabajar, por lo que las prendas suelen tener un acabado más fino.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PIG_SKIN_PEDIA</Tag>
@@ -394,7 +388,6 @@
         <German>[TAB][H1]Daunen[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_DOWNS_PEDIA</Tag>
@@ -451,7 +444,6 @@
         <German>[TAB][H1]Wildvogelfedern[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_WILD_FEATHERS_PEDIA</Tag>
@@ -496,7 +488,6 @@
         <German>[TAB][H1]Gefütterte Ziegenlederstiefel[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GOAT_HIDE_BOOTS_PEDIA</Tag>
@@ -553,7 +544,6 @@
         <German>[TAB][H1]Schweinelederschürzen[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]Grembiuli in pelle di maiale[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]Delantales de piel de cerdo[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PIG_LEATHER_PEDIA</Tag>
@@ -610,7 +600,6 @@
         <German>[TAB][H1]Früchte[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FRUITS_PEDIA</Tag>
@@ -667,7 +656,6 @@
         <German>[TAB][H1]Schnaps[\H1][PARAGRAPH:2][BOLD] TODO</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HOOCH_PEDIA</Tag>
@@ -724,7 +712,6 @@
         <German>[TAB][H1]Flachs[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FLAX_PEDIA</Tag>
@@ -781,7 +768,6 @@
         <German>[TAB][H1]Polstermöbel[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PADDED_FURNITURE_PEDIA</Tag>
@@ -838,7 +824,6 @@
         <German>[TAB][H1]Hartholz[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HARDWOOD_PEDIA</Tag>
@@ -895,7 +880,6 @@
         <German>[TAB][H1]Ahornsaft[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_PEDIA</Tag>
@@ -952,7 +936,6 @@
         <German>[TAB][H1]Mateblätter[\H1][PARAGRAPH:2][BOLD]Strategie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][NEWLINE]Die Guarani und Tupi bauten Yerba Mate bereits vor der europäischen Kolonisierung an. Nachdem die Jesuiten damit begonnen hatten, wurde Mate-Tee im heutigen Paraguay und in anderen spanischen Kolonien weit verbreitet.[NEWLINE]Yerba-Blätter werden in heißem Wasser eingeweicht, um ein koffeinhaltiges Getränk herzustellen: Mate-Tee. Kalt gebraut, wird er zur Herstellung von Terere verwendet.</German>
         <Italian>[TAB][H1]Foglie di yerba[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]I Guarani e i Tupi coltivavano la yerba mate prima della colonizzazione europea. Dopo che i gesuiti iniziarono a usarla, la yerba mate si diffuse nell'attuale Paraguay e in altre colonie spagnole.[NEWLINE]Le foglie di yerba vengono messe in infusione in acqua calda per ottenere una bevanda a base di caffeina: la yerba mate. Preparato a freddo, viene usato per fare il terere.</Italian>
         <Spanish>[TAB][H1]Hojas de yerba[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]Los guaraníes y los tupíes cultivaban la yerba mate antes de la colonización europea. Después de que los jesuitas empezaran a utilizarla, la yerba mate se generalizó en lo que hoy es Paraguay y en otras colonias españolas.[NEWLINE]Las hojas de yerba se remojan en agua caliente para preparar una bebida con cafeína: la yerba mate. Elaborado en frío, se utiliza para hacer terere.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_LEAVES_PEDIA</Tag>
@@ -1009,7 +992,6 @@
         <German>[TAB][H1]Färbholz[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LOGWOOD_PEDIA</Tag>
@@ -1066,7 +1048,6 @@
         <German>[TAB][H1]Mate-Tee[\H1][PARAGRAPH:2][BOLD]xxx[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Um in den Yerba-Handel einzusteigen, musste man sich mit zwei besonders gefährlichen indigenen Völkern auseinandersetzen: den Guarani und den Tupi. Erschwerend kam hinzu, dass die Yerba nur in zwei Regionen zu finden war: Amambay und Alto Parana. Nachdem die Jesuiten dies übernommen hatten, verbreitete sich Mate-Tee weit über das heutige Paraguay hinaus in die anderen spanischen Kolonien Süd-Amerikas.</German>
         <Italian>[TAB][H1]Mate[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]Iniziare il commercio della yerba significava avere a che fare con due popoli indigeni particolarmente pericolosi: i Guarani e i Tupi. Inoltre, la yerba si trovava solo in due regioni, Amambay e Alto Parana. Dopo che i gesuiti iniziarono a usarla, la yerba mate si diffuse nell'attuale Paraguay e in altre colonie spagnole.</Italian>
         <Spanish>[TAB][H1]Yerba mate[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]Iniciarse en el comercio de la yerba significaba tratar con dos naciones indígenas especialmente peligrosas: los guaraníes y los tupíes. Para colmo de males, sólo se encontraba en dos regiones, Amambay y Alto Paraná. Después de que los jesuitas empezaran a utilizarla, la yerba mate se generalizó en lo que hoy es Paraguay y en otras colonias españolas.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_TEA_PEDIA</Tag>
@@ -1123,7 +1104,6 @@
         <German>[TAB][H1]Gefärbter Wollstoff[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COLOURED_WOOL_CLOTH_PEDIA</Tag>
@@ -1180,7 +1160,6 @@
         <German>[TAB][H1]Lehm[\H1][PARAGRAPH:2][BOLD]Strategie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][NEWLINE]Ton ist im nassen Zustand aufgrund eines molekularen Wasserfilms, der die Tonpartikel umgibt, plastisch, wird aber beim Trocknen oder Brennen hart, spröde und nicht plastisch. Schiefer, der größtenteils aus Ton besteht, ist das häufigste Sedimentgestein.[NEWLINE]Ton ist das älteste bekannte keramische Material. Prähistorische Menschen nutzten ihn zur Herstellung von Töpferwaren. Frühe Tonscherben wurden auf 14.000 v. Chr. datiert, und Tontafeln sind das erste bekannte Schreibmedium.</German>
         <Italian>L'argilla sviluppa plasticità quando è bagnata, a causa di una pellicola molecolare di acqua che circonda le particelle di argilla, ma diventa dura, fragile e non plastica quando si asciuga o si cuoce. L'argilla, formata in gran parte da argilla, è la roccia sedimentaria più comune.[NEWLINE]L'argilla è il più antico materiale ceramico conosciuto. Gli esseri umani preistorici la usavano per produrre vasellame. I primi cocci di ceramica sono stati datati al 14.000 a.C. e le tavolette di argilla sono il primo supporto di scrittura conosciuto.</Italian>
         <Spanish>La arcilla desarrolla plasticidad cuando está húmeda, debido a una película molecular de agua que rodea las partículas de arcilla, pero se vuelve dura, quebradiza y no plástica al secarse o cocerse. El esquisto, formado en gran parte por arcilla, es la roca sedimentaria más común[NEWLINE]La arcilla es el material cerámico más antiguo que se conoce. Los humanos prehistóricos la utilizaban para fabricar alfarería. Los primeros fragmentos de cerámica datan del 14.000 a.C., y las tablillas de arcilla son el primer medio de escritura conocido.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CLAY_PEDIA</Tag>
@@ -1237,7 +1216,6 @@
         <German>[TAB][H1]Kohle[\H1][PARAGRAPH:2][BOLD]Der Kohleabbau führt zu vorzeitigem Tod und Krankheit, aber es handelt sich um ein weiches Gestein, für das nicht so viele Sprengstoffe benötigt werden wie für den Abbau von Hartgestein. Es ist ein Job, bei dem die Arbeiter mit Spitzhacke und Schaufel arbeiten, und sie werden nicht gut bezahlt.</German>
         <Italian>L'estrazione del carbone causa morti premature e malattie, ma si tratta di una roccia morbida che non richiede l'uso di esplosivi come l'estrazione di rocce dure. È un lavoro in cui i manovali usano picconi e pale e non vengono pagati molto.</Italian>
         <Spanish>La minería del carbón causa muertes prematuras y enfermedades, pero es una roca blanda que no necesita tantos explosivos como la minería de roca dura. Es un trabajo en el que los obreros utilizan picos y palas, y no cobran mucho.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COAL_PEDIA</Tag>
@@ -1294,7 +1272,6 @@
         <German>[TAB][H1]Holzkohle[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHAR_COAL_PEDIA</Tag>
@@ -1351,7 +1328,6 @@
         <German>[TAB][H1]Schwarzpulver[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BLACK_POWDER_PEDIA</Tag>
@@ -1408,7 +1384,6 @@
         <German>[TAB][H1]Backwaren[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BAKERY_GOODS_PEDIA</Tag>
@@ -1465,7 +1440,6 @@
         <German>[TAB][H1]Vanille[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_VANILLA_PEDIA</Tag>
@@ -1522,7 +1496,6 @@
         <German>[TAB][H1]Grüne Vanilleschote[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_VANILLA_PODS_PEDIA</Tag>
@@ -1579,7 +1552,6 @@
         <German>[TAB][H1]Torf[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEAT_PEDIA</Tag>
@@ -1636,7 +1608,6 @@
         <German>[TAB][H1]Erdnüsse[\H1][PARAGRAPH:2][BOLD]Die Erdnuss ist eine Hülsenfrucht, die hauptsächlich wegen ihrer essbaren Samen angebaut wird. Sie wird in den Tropen und Subtropen weit verbreitet angebaut. Die Erdnuss ist sowohl als Körnerleguminose als auch aufgrund ihres hohen Ölgehalts als Ölpflanze wertvoll. Der Anbau war auf dem amerikanischen Kontinent bereits vor der Ankunft der Spanier etabliert. Die Konquistadoren fanden die tlalcacahuatl (der Nahuatl-Name der Pflanze) auf dem Markt von Tenochtitlan zum Verkauf angeboten.</German>
         <Italian>L'arachide è un legume coltivato principalmente per i suoi semi commestibili. È ampiamente coltivata nei tropici e nelle regioni subtropicali. L'arachide è preziosa sia come legume da granella sia, grazie al suo elevato contenuto di olio, come coltura oleosa. La coltivazione era ben radicata nelle Americhe prima dell'arrivo degli spagnoli. I conquistadores trovarono il tlalcacahuatl (nome nahuatl della pianta) in vendita nel mercato di Tenochtitlan.</Italian>
         <Spanish>El cacahuete es una leguminosa cultivada principalmente por sus semillas comestibles. Se cultiva ampliamente en los trópicos y subtrópicos. El cacahuete es valioso como legumbre de grano y, por su alto contenido en aceite, como oleaginosa. Su cultivo estaba muy arraigado en América antes de la llegada de los españoles. Los conquistadores encontraron el tlalcacahuatl (nombre náhuatl de la planta) a la venta en el mercado de Tenochtitlan.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEANUTS_PEDIA</Tag>
@@ -1693,7 +1664,6 @@
         <German>[TAB][H1]Geröstete Erdnüsse[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROASTED_PEANUTS_PEDIA</Tag>
@@ -1750,7 +1720,6 @@
         <German>[TAB][H1]Oliven[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OLIVES_PEDIA</Tag>
@@ -1807,7 +1776,6 @@
         <German>[TAB][H1]Raps[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RAPE_PEDIA</Tag>
@@ -1864,7 +1832,6 @@
         <German>[TAB][H1]Olivenöl[\H1][PARAGRAPH:2][BOLD]Das Pressen von Öl ist ein altes Handwerk in Europa, insbesondere in den Mittelmeerkulturen. Die Geräte, mit denen Oliven zur Gewinnung von Öl gepresst werden, können auch für die Verarbeitung von Raps verwendet werden.[NEWLINE]Vor dem Kontakt mit den Europäern war Speiseöl für die Ureinwohner des pazifischen Nordwestens lebenswichtig. Oolichan-Öl aus Kerzenfisch machte einen so großen Teil des Handels der Ureinwohner aus, dass die Handelsrouten als "Fettstraßen" bezeichnet wurden.</German>
         <Italian>La spremitura dell'olio è un'attività antica in Europa, in particolare nelle culture mediterranee. Le attrezzature che schiacciano le olive per ricavarne l'olio possono essere adattate alla colza.[NEWLINE]Prima del contatto europeo, l'olio da cucina era essenziale per i nativi del Pacifico nordoccidentale. L'olio di oolichan ricavato dal pesce candela costituiva una parte così importante del commercio dei nativi che le rotte commerciali venivano chiamate "vie del grasso".</Italian>
         <Spanish>El prensado del aceite es un antiguo oficio en Europa, sobre todo en las culturas mediterráneas. Los equipos que trituran aceitunas para obtener su aceite pueden adaptarse para trabajar con colza.[NEWLINE]Antes del contacto europeo, el aceite de cocina era esencial para las naciones indígenas del noroeste del Pacífico. El aceite de oolichan procedente del pez vela constituía una parte tan importante del comercio nativo que las rutas comerciales se llamaban "rutas de la grasa".</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OLIVE_OIL_PEDIA</Tag>
@@ -1921,7 +1888,6 @@
         <German>[TAB][H1]Rapsöl[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RAPE_OIL_PEDIA</Tag>
@@ -1978,7 +1944,6 @@
         <German>[TAB][H1]Haushaltswaren[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HOUSEHOLD_GOODS_PEDIA</Tag>
@@ -2035,7 +2000,6 @@
         <German>[TAB][H1]Feldarbeiterwerkzeuge[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FIELD_WORKER_TOOLS_PEDIA</Tag>
@@ -2092,7 +2056,6 @@
         <German>[TAB][H1]Reis[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RICE_PEDIA</Tag>
@@ -2149,7 +2112,6 @@
         <German>[TAB][H1]Maniok[\H1][PARAGRAPH:2][BOLD]Strategie :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][NEWLINE]TBD</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CASSAVA_PEDIA</Tag>
@@ -2206,7 +2168,6 @@
         <German>[TAB][H1]Cochenille-Schildläuse[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCHINEAL_PEDIA</Tag>
@@ -2263,7 +2224,6 @@
         <German>[TAB][H1]Schokolade[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHOCOLATE_PEDIA</Tag>
@@ -2320,7 +2280,6 @@
         <German>[TAB][H1]Gepolsterte Ledermäntel[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PADDED_LEATHER_COATS_PEDIA</Tag>
@@ -2377,7 +2336,6 @@
         <German>[TAB][H1]Milch[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MILK_PEDIA</Tag>
@@ -2434,7 +2392,6 @@
         <German>[TAB][H1]Kautschuk[\H1][PARAGRAPH:2][BOLD]Kautschuk wird durch Einschnitte in die Rinde von Kautschukbäumen geerntet. Der Latex wird erhitzt, um Kautschuk zu erzeugen, der vor der Weiterverarbeitung zu wasserdichten Bahnen getrocknet werden kann. Kautschuk hat ein großes Dehnungsverhältnis, eine hohe Elastizität und ist außerdem wasserdicht. Er wird zu den Elastomeren gezählt.</German>
         <Italian>La gomma viene raccolta praticando incisioni nella corteccia degli alberi della gomma. Il lattice viene riscaldato per creare gomma che può essere essiccata in fogli impermeabili prima di essere lavorata ulteriormente. La gomma ha un grande rapporto di elasticità, un'elevata resilienza ed è anche impermeabile. È classificata come elastomero.</Italian>
         <Spanish>El caucho se recolecta haciendo incisiones en la corteza de los árboles del caucho. El látex se calienta para crear caucho que puede secarse en láminas impermeables antes de seguir procesándolo. El caucho tiene una gran elasticidad, una gran resistencia y es impermeable. Se clasifica como elastómero.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_KAUTSCHUK_PEDIA</Tag>
@@ -2491,7 +2448,6 @@
         <German>[TAB][H1]Käse[\H1][PARAGRAPH:2][BOLD]Käse wird durch Gerinnung des Milcheiweißes Kasein in einer breiten Palette von Geschmacksrichtungen und Texturen hergestellt. Er besteht aus Proteinen und Fett und wird normalerweise aus der Milch von Kühen, Ziegen oder Schafen gewonnen. Bei der Herstellung wird die Milch angesäuert und die Enzyme des Labs oder andere bakterielle Enzyme werden hinzugefügt, um das Kasein zur Gerinnung zu bringen. Der feste Käsebruch wird dann von der flüssigen Molke getrennt und zu fertigem Käse gepresst.</German>
         <Italian>Il formaggio viene prodotto in un'ampia gamma di sapori e consistenze attraverso la coagulazione della proteina del latte, la caseina. È composto da proteine e grassi, solitamente provenienti dal latte di mucca, capra o pecora. Durante la produzione, il latte viene acidificato e vengono aggiunti gli enzimi del caglio o altri enzimi batterici per provocare la coagulazione della caseina. La cagliata solida viene quindi separata dal siero liquido e pressata per ottenere il formaggio finito.</Italian>
         <Spanish>El queso se produce en una amplia gama de sabores y texturas por coagulación de la proteína láctea caseína. Está compuesto de proteínas y grasa, y suele proceder de la leche de vaca, cabra u oveja. Durante la producción, se acidifica la leche y se añaden las enzimas del cuajo u otras enzimas bacterianas para provocar la coagulación de la caseína. A continuación, la cuajada sólida se separa del suero líquido y se prensa para obtener el queso acabado.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHEESE_PEDIA</Tag>
@@ -2548,7 +2504,6 @@
         <German>[TAB][H1]Töpferwaren[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POTTERY_PEDIA</Tag>
@@ -2605,7 +2560,6 @@
         <German>[TAB][H1]Alltagskleidung[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_EVERYDAY_CLOTHES_PEDIA</Tag>
@@ -2662,7 +2616,6 @@
         <German>[TAB][H1]Festliche Kleidung[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
         <Italian>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Strategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Sfondo :[\BOLD][NEWLINE]xxx</Italian>
         <Spanish>[TAB][H1]yyy[\H1][PARAGRAPH:2][BOLD]Estrategia :[\BOLD][NEWLINE]xxx[PARAGRAPH:2][BOLD]Antecedentes :[\BOLD][NEWLINE]</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FESTIVE_CLOTHES_PEDIA</Tag>

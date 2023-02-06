@@ -63,7 +63,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BREEDER_STRATEGY</Tag>
@@ -72,7 +71,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- CASSAVA_PLANTER -->
     <TEXT>
@@ -132,7 +130,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CASSAVA_PLANTER_STRATEGY</Tag>
@@ -141,7 +138,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- COCHINEAL_COLLECTOR -->
     <TEXT>
@@ -201,7 +197,6 @@
         <German>Die Cochenille-Schildläuse, die auf den Blättern des Feigenkaktus zu finden sind, produzieren Karminsäure, eine Chemikalie, die Raubtiere abschreckt. In Verbindung mit Aluminium- oder Kalziumsalzen wird aus den getrockneten Cochenille-Schildläusen ein karminroter Farbstoff. Sammler sammeln die Schildläuse ein, indem sie sie von den Kaktusblättern abbürsten.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR_STRATEGY</Tag>
@@ -210,7 +205,6 @@
         <German>Der leuchtend rote Karminfarbstoff, der in Amerika zum Färben von Stoffen verwendet wurde, wurde ab Mitte des 16. Jahrhunderts zu einem wichtigen Exportgut. Cochenille-Insekten kommen in den Gebieten vor, die heute als Peru, Mexiko, Chile und Argentinien bekannt sind.[NEWLINE]Wenn ein Experte den Beruf des Cochenille-Sammlers ausübt, kann er die doppelte Menge an Cochenille-Schildläusen in der gleichen Zeit sammeln, die ein normaler Kolonist benötigen würde.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- LINEN_PLANTER -->
     <TEXT>
@@ -270,7 +264,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LINEN_PLANTER_STRATEGY</Tag>
@@ -279,7 +272,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- LOGWOOD_COLLECTOR -->
     <TEXT>
@@ -339,7 +331,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LOGWOOD_COLLECTOR_STRATEGY</Tag>
@@ -348,7 +339,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- LOGWOOD_OLIVES_PLANTER -->
     <TEXT>
@@ -408,7 +398,6 @@
         <German>Olivenbäume liefern entweder Tafeloliven oder Oliven zur Ölgewinnung. Spanische Kolonisten brachten die Olive im Jahr 1560 in die Neue Welt, wo ihr Anbau im heutigen Peru, Chile und Argentinien florierte. Im 18. Jahrhundert pflanzten spanische Missionare Olivenbäume in Kalifornien.[NEWLINE]Vor dem Kontakt mit den Europäern war Speiseöl für die Ureinwohner des pazifischen Nordwestens lebenswichtig. Der Handel Oolichan-Öl aus Kerzenfisch hatte eine so große Bedeutung für die Ureinwohner, dass die Handelsrouten als "Fettstraßen" bezeichnet wurden.</German>
         <Italian>Gli olivi producono olive da tavola o olive da olio. I coloni spagnoli portarono l'olivo nel Nuovo Mondo nel 1560, dove la sua coltivazione prosperò negli attuali Perù, Cile e Argentina. Nel XVIII secolo i missionari spagnoli piantarono olivi in California.[NEWLINE]Prima del contatto europeo, l'olio da cucina era essenziale per i nativi del Pacifico nordoccidentale. L'olio di oolichan ricavato dal pesce candela costituiva una parte così importante del commercio dei nativi che le rotte commerciali venivano chiamate "vie del grasso".</Italian>
         <Spanish>Los olivos producen aceitunas de mesa o aceitunas para aceite. Los colonos españoles llevaron el olivo al Nuevo Mundo en 1560, donde su cultivo prosperó en los actuales Perú, Chile y Argentina. En el siglo XVIII, los misioneros españoles plantaron olivos en California.[NEWLINE]Antes del contacto europeo, el aceite de cocina era esencial para las naciones indígenas del noroeste del Pacífico. El aceite de oolichan procedente del pez vela constituía una parte tan importante del comercio nativo que las rutas comerciales se llamaban "rutas de la grasa".</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OLIVES_PLANTER_STRATEGY</Tag>
@@ -417,7 +406,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- PEANUT_PLANTER -->
     <TEXT>
@@ -477,7 +465,6 @@
         <German>Erdnüsse sind Hülsenfrüchte, die wegen ihrer essbaren Samen angebaut werden. Sie werden in den Tropen und Subtropen sowohl von kleinen als auch großen kommerziellen Erzeugern angebaut. Die Erdnuss ist sowohl eine Körnerleguminose als auch, aufgrund ihres hohen Ölgehalts, eine Ölpflanze.</German>
         <Italian>Le arachidi sono legumi coltivati per i loro semi commestibili. Sono ampiamente coltivate nei tropici e nelle regioni subtropicali da piccoli e grandi produttori commerciali. L'arachide è sia una leguminosa da granella sia, grazie al suo elevato contenuto di olio, una coltura oleosa.</Italian>
         <Spanish>Los cacahuetes son leguminosas que se cultivan por sus semillas comestibles. Su cultivo está muy extendido en los trópicos y subtrópicos, tanto por pequeños como por grandes productores comerciales. El cacahuete es a la vez una leguminosa de grano y, por su alto contenido en aceite, un cultivo oleaginoso.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEANUT_PLANTER_STRATEGY</Tag>
@@ -486,7 +473,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- PEAT_CUTTER -->
     <TEXT>
@@ -546,7 +532,6 @@
         <German>Ein Sumpf trocknet aus und verwandelt sich sehr langsam in ein Torfmoor, das billigen Brennstoff bietet, wenn Holz und Kohle nicht verfügbar sind. Torfstecher brauchen nicht viel Ausrüstung für ihre Arbeit, nur einen Stecher und eine Hacke, mit der sie die Torfstücke auf dem Rücken tragen können.</German>
         <Italian>Una palude si asciuga e molto lentamente si trasforma in una torbiera, che offre combustibile a basso costo laddove legno e carbone non sono disponibili. I tagliatori di torba non hanno bisogno di molte attrezzature per svolgere il loro lavoro, solo di una taglierina e di un'ascia per trasportare i pezzi di torba sulla schiena.</Italian>
         <Spanish>Un pantano se seca y se convierte muy lentamente en una turbera, que ofrece combustible barato allí donde no se dispone de leña ni carbón. Los cortadores de turba no necesitan mucho equipo para hacer su trabajo, sólo un cortador y un hod para transportar trozos de turba a la espalda.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEAT_CUTTER_STRATEGY</Tag>
@@ -555,7 +540,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- RAPE_PLANTER -->
     <TEXT>
@@ -615,7 +599,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RAPE_PLANTER_STRATEGY</Tag>
@@ -624,7 +607,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- RICE_FARMER -->
     <TEXT>
@@ -684,7 +666,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RICE_FARMER_STRATEGY</Tag>
@@ -693,7 +674,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- VANILLA_COLLECTOR -->
     <TEXT>
@@ -753,7 +733,6 @@
         <German>Vanille ist ein aus Orchideen gewonnenes Gewürz. Es gibt drei Hauptarten, die alle von der ursprünglichen mexikanischen Pflanze abstammen. Sie kann von Hand bestäubt werden, um die Vanilleschote zu gewinnen.</German>
         <Italian>La vaniglia è una spezia derivata dalle orchidee. Esistono tre specie principali, tutte derivate dalla pianta originale messicana. Può essere impollinata a mano per produrre il baccello di vaniglia.</Italian>
         <Spanish>La vainilla es una especia derivada de las orquídeas. Hay tres especies principales, todas derivadas de la planta mexicana original. Se puede polinizar a mano para producir la vaina de vainilla.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_VANILLA_COLLECTOR_STRATEGY</Tag>
@@ -762,7 +741,6 @@
         <German>Vanille ist neben Schokolade eine der beiden beliebtesten Geschmacksrichtungen für süße Leckereien. Sie wird in Süßigkeiten, zum Backen und für Liköre verwendet, alles Dinge, die Mönchen in kolonialen Missionen vertraut sind.[NEWLINE]Wenn der Experte den Beruf des Vanille-Sammlers ausübt, kann er in derselben Zeit doppelt so viele Vanilleschoten sammeln wie ein normaler Kolonist.</German>
         <Italian>La vaniglia è uno dei due aromi più popolari per i dolci, l'altro è il cioccolato. Si usa nei dolci, nella pasticceria e nei liquori, tutti aromi familiari ai monaci delle missioni coloniali.[NEWLINE]Quando viene assegnato alla professione di Raccoglitore di Vaniglia, l'esperto può raccogliere il doppio dei semi di vaniglia nello stesso tempo di un normale colono.</Italian>
         <Spanish>La vainilla es uno de los dos sabores más populares de los dulces, el otro es el chocolate. Se utiliza en dulces, repostería y licores, todo lo cual sería familiar a los monjes de las misiones coloniales.[NEWLINE]Cuando se le asigna la profesión de Recolector de Vainilla, el experto puede recolectar el doble de vainas de vainilla en el mismo tiempo que un colono normal.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- YERBA_PLANTER -->
     <TEXT>
@@ -830,7 +808,6 @@
         <German>Die Guarani und Tupi bauten Yerba Mate bereits vor der europäischen Kolonisierung an. Nachdem die Jesuiten damit begonnen hatten, wurde Mate-Tee im heutigen Paraguay und in anderen spanischen Kolonien weit verbreitet.</German>
         <Italian>I Guarani e i Tupi coltivavano la yerba mate prima della colonizzazione europea. Dopo che i gesuiti iniziarono a usarla, la yerba mate si diffuse nell'attuale Paraguay e in altre colonie spagnole.</Italian>
         <Spanish>Los guaraníes y los tupíes cultivaban la yerba mate antes de la colonización europea. Después de que los jesuitas empezaran a utilizarla, la yerba mate se generalizó en lo que hoy es Paraguay y en otras colonias españolas.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_PLANTER_STRATEGY</Tag>
@@ -839,7 +816,6 @@
         <German>Yerba-Blätter werden in heißem Wasser eingeweicht, um ein koffeinhaltiges Getränk herzustellen: Mate-Tee. Kalt gebraut, wird er zur Herstellung von Terere verwendet.[NEWLINE]Als Yerba-Pflanzer kann ein [LINK=UNIT_YERBA_PLANTER]erfahrener Yerba-Pflanzer[\LINK] doppelt so viele Yerba-Blätter in derselben Zeit sammeln wie ein normaler Kolonist.</German>
         <Italian>Le foglie di yerba vengono messe in infusione in acqua calda per ottenere una bevanda a base di caffeina: la yerba mate. Preparato a freddo, viene usato per fare il terere.[NEWLINE]Se assegnato alla professione di piantatore di yerba, il [LINK=UNIT_YERBA_PLANTER]piantatore di yerba esperto[\LINK] può raccogliere il doppio delle foglie di yerba nello stesso tempo di un normale colono.</Italian>
         <Spanish>Las hojas de yerba se remojan en agua caliente para preparar una bebida con cafeína: la yerba mate. Elaborado en frío, se utiliza para hacer terere.[NEWLINE]Cuando se le asigna la profesión de plantador de yerba, el [LINK=UNIT_YERBA_PLANTER]plantador de yerba experto[\LINK] puede recolectar el doble de hojas de yerba en el mismo tiempo que un colono normal.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- HERDER -->
     <TEXT>
@@ -899,7 +875,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HERDER_STRATEGY</Tag>
@@ -908,7 +883,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- MAPLE_SIRUP_COLLECTOR -->
     <TEXT>
@@ -968,7 +942,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR_STRATEGY</Tag>
@@ -977,7 +950,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- KAUTSCHUK_COLLECTOR -->
     <TEXT>
@@ -1037,7 +1009,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR_STRATEGY</Tag>
@@ -1046,7 +1017,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- CONFECTIONER -->
     <TEXT>
@@ -1106,7 +1076,6 @@
         <German>Ein Zuckerbäcker macht aus Plantagenzucker ein hochwertiges Produkt, indem er ihn aromatisiert - etwa mit Schokolade oder Vanille. Es ist wichtig, den Zucker fein zu mahlen, damit die Süßigkeit eine glatte Konsistenz erhält.</German>
         <Italian>Il pasticcere trasforma lo zucchero di piantagione in un prodotto di alto valore aromatizzandolo, magari con cioccolato o vaniglia. È importante macinare lo zucchero finemente in modo che le caramelle abbiano una consistenza omogenea.</Italian>
         <Spanish>Un confitero convierte el azúcar de plantación en un producto de alto valor aromatizándolo, quizá con chocolate o vainilla. Es importante moler el azúcar finamente para que el caramelo tenga una consistencia suave.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONFECTIONER_STRATEGY</Tag>
@@ -1115,7 +1084,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- HOUSEHOLD_TRADER -->
     <TEXT>
@@ -1175,7 +1143,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HOUSEHOLD_TRADER_STRATEGY</Tag>
@@ -1184,7 +1151,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- YERBA_TRADER -->
     <TEXT>
@@ -1244,7 +1210,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_TRADER_STRATEGY</Tag>
@@ -1253,7 +1218,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- OIL_TRADER -->
     <TEXT>
@@ -1313,7 +1277,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OIL_TRADER_STRATEGY</Tag>
@@ -1322,7 +1285,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- FRUITS_PICKER -->
     <TEXT>
@@ -1382,7 +1344,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FRUITS_PICKER_STRATEGY</Tag>
@@ -1391,7 +1352,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- POULTRY_BUTCHER -->
     <TEXT>
@@ -1451,7 +1411,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POULTRY_BUTCHER_STRATEGY</Tag>
@@ -1460,7 +1419,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- COAL_MINER -->
     <TEXT>
@@ -1520,8 +1478,6 @@
         <German>Kohle entsteht, wenn abgestorbenes Pflanzenmaterial zu Torf zerfällt und durch die Hitze und den Druck der oberen Erdschichten über Millionen von Jahren in Kohle umgewandelt wird. In der Kolonialzeit wurde Kohle zum Heizen verwendet, nicht für die Industrie.</German>
         <Italian>Il carbone si forma quando la materia vegetale morta si decompone in torba e viene convertita in carbone dal calore e dalla pressione della sepoltura profonda per milioni di anni. Durante l'epoca coloniale il carbone viene utilizzato per il riscaldamento, non per l'industria.</Italian>
         <Spanish>El carbón se forma cuando la materia vegetal muerta se descompone en turba y se convierte en carbón por el calor y la presión del enterramiento profundo durante millones de años. En la época colonial, el carbón se utiliza para calefacción, no para la industria.</Spanish>
-        <Russian>TBD</Russian>
-
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COAL_MINER_STRATEGY</Tag>
@@ -1530,7 +1486,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- LEATHER_TAYLOR -->
     <TEXT>
@@ -1590,7 +1545,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LEATHER_TAYLOR_STRATEGY</Tag>
@@ -1599,7 +1553,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- CLOTH_TAYLOR -->
     <TEXT>
@@ -1659,7 +1612,6 @@
         <German>Die Schneiderei umfasst Teilgewerke. Der Schneider näht nur selten das Kleidungsstück. Ein anderer wählt den perfekten Stoff aus. In einer wachsenden Stadt mit einem modischen Schneider kauft jeder, vom Kaufmann bis zum Schmied, dort ein, um gut auszusehen.</German>
         <Italian>La sartoria comprende dei sub-lavori. Il tagliatore raramente cuce il capo. Un altro sceglie il tessuto perfetto. In una città in crescita con un sarto alla moda, tutti, dal mercante al fabbro, acquistano lì per apparire al meglio.</Italian>
         <Spanish>La sastrería incluye oficios secundarios. El cortador rara vez cose la prenda. Otro elige la tela perfecta. En una ciudad en expansión con un sastre a la moda, todos, desde el comerciante hasta el herrero, compran allí para lucir lo mejor posible.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CLOTH_TAYLOR_STRATEGY</Tag>
@@ -1668,7 +1620,6 @@
         <German>Der Schneider erschafft den gut gekleideten Mann, stilvoll und bereit, in der Diplomatie, im Geschäftsleben und in der Romantik erfolgreich zu sein.[NEWLINE]Wenn er dem Beruf des Schneiders zugewiesen wird, kann der Schneidermeister doppelt so viele Kleidungsstücke in derselben Zeit anfertigen wie ein normaler Kolonist.</German>
         <Italian>Il sarto crea l'uomo ben vestito, elegante e pronto ad avere successo nella diplomazia, negli affari e nel romanticismo.[NEWLINE]Quando è assegnato alla professione di sarto, il maestro sarto può completare il doppio dei vestiti nello stesso tempo di un normale colono.</Italian>
         <Spanish>El sastre crea al hombre bien vestido, con estilo y listo para triunfar en la diplomacia, los negocios y el romance.[NEWLINE]Cuando se le asigna la profesión de Sastre, el maestro sastre puede completar el doble de ropa en el mismo tiempo que un colono normal.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- ROASTER -->
     <TEXT>
@@ -1728,7 +1679,6 @@
         <German>Nach dem Pflücken der Kaffeebeeren werden diese fermentiert, um die schleimige Schicht, die sich noch auf der Kaffeebohne befindet, zu entfernen. Ist die Fermentation beendet, werden die Bohnen gewaschen und getrocknet. Danach werden sie nach Reifegrad und Farbe sortiert und meist maschinell das Fruchtfleisch der Beere entfernt. Die Kerne - meist Bohnen genannt - werden dann fermentiert, um die noch vorhandene schleimige Schicht der Bohne zu entfernen. Nach Beendigung der Fermentation werden die Bohnen mit großen Mengen Frischwasser gewaschen, um die Fermentationsrückstände zu entfernen, wodurch große Mengen an Kaffeeabwasser entstehen. Schließlich werden die Samen getrocknet.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROASTER_STRATEGY</Tag>
@@ -1737,7 +1687,6 @@
         <German>[COLOR_UNIT_TEXT]Meister Röster[COLOR_REVERT] verarbeiten doppelt soviele [LINK=YIELD_PEANUTS]Erdnüsse[\LINK], [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] oder [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] zu gerösteten [LINK=YIELD_ROASTED_PEANUTS]Erdnüssen[\LINK], [LINK=YIELD_COFFEE]Kaffee[\LINK] bzw. [LINK=YIELD_COCOA]Kakao[\LINK], wie andere Kolonisten.[PARAGRAPH:1]Meister-Fermentierer können in [LINK=CONCEPT_EUROPE]Europa[\LINK] rekrutiert werden, und sie können auch in einer Kolonie mit einem [LINK=BUILDING_COLLEGE]College[\LINK] oder einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- POTTER -->
     <TEXT>
@@ -1797,7 +1746,6 @@
         <German>Töpferwaren sind eine uralte Methode zur Lagerung von Getreide. In der regnerischen, von Insekten heimgesuchten Neuen Welt enthielten die Töpfe genug Getreide, um die Siedler über den Winter am Leben zu erhalten, bis sie im Frühjahr endlich ihre neue Ernte einpflanzen konnten. Einige kreative Typen formen phantasievolle Gefäße mit dekorativen Mustern, andere nur zum Ausstellen. Töpfern wird zu einer Kunstform im Landhausstil.</German>
         <Italian>La ceramica è un modo antico di conservare il grano. Nel Nuovo Mondo, caratterizzato da piogge e insetti, i vasi contengono abbastanza grano per mantenere i coloni in vita durante l'inverno, fino a quando non possono piantare le nuove colture in primavera. Alcuni tipi creativi modellano vasi fantasiosi con motivi decorativi, altri solo per esposizione. La ceramica diventa una forma d'arte domestica.</Italian>
         <Spanish>La cerámica es una forma antigua de almacenar grano. En el lluvioso Nuevo Mundo, plagado de insectos, las vasijas contienen grano suficiente para mantener vivos a los colonos durante el invierno, hasta que por fin pueden plantar sus nuevas cosechas en primavera. Algunos tipos creativos dan forma a imaginativas vasijas con motivos decorativos, otros simplemente para exhibirlas. La alfarería se convierte en un arte artesanal.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POTTER_STRATEGY</Tag>
@@ -1806,7 +1754,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- MILK_MAID -->
     <TEXT>
@@ -1866,7 +1813,6 @@
         <German>Milchmädchen holen die Milch von Kühen, Ziegen, Schafen und anderen genossenschaftlichen Säugetieren. Ihre Arbeit ernährt die Kinder der Stadt, verbessert den Geschmack von Tee oder Kaffee und liefert den Rohstoff für Käsereien.</German>
         <Italian>Le lattaie ricavano il latte da mucche, capre, pecore e qualsiasi altro mammifero in cooperazione. Il loro lavoro nutre i bambini della città, migliora il sapore del tè o del caffè e fornisce la materia prima ai casari.</Italian>
         <Spanish>Las lecheras obtienen leche de vacas, cabras, ovejas y cualquier otro mamífero cooperativo. Su trabajo alimenta a los niños del pueblo, mejora el sabor del té o el café y proporciona la materia prima a los queseros.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MILK_MAID_STRATEGY</Tag>
@@ -1875,7 +1821,6 @@
         <German>Milchmädchen arbeiten hart, um die Siedler, ob jung oder alt, mit dem dringend benötigten Eiweiß zu versorgen. Wer glaubt, dass die Arbeit leicht ist, war noch nicht nah genug am Arbeitsende einer Kuh. Milchmädchen sind auch immun gegen Pocken, ein seltener Vorteil in der Kolonialzeit.[NEWLINE]Wenn sie den Beruf des Milchmädchens ausübt, kann sie in der gleichen Zeit doppelt so viel Milch wie ein normaler Kolonist produzieren.</German>
         <Italian>Le lattaie lavorano duramente per fornire le proteine tanto necessarie ai coloni giovani e anziani. Chiunque pensi che il lavoro sia facile non è stato abbastanza vicino alla parte commerciale di una mucca. Le lattaie sono anche immuni al vaiolo, un vantaggio raro in epoca coloniale.[NEWLINE]Se assegnata alla professione di lattaio, la lattaia esperta può ottenere il doppio del latte nello stesso tempo di un normale colono.</Italian>
         <Spanish>Las lecheras trabajan duro para suministrar las proteínas que tanto necesitan los colonos jóvenes y viejos. Cualquiera que piense que el trabajo es fácil no se ha acercado lo suficiente al negocio de una vaca. Las lecheras también son inmunes a la viruela, una ventaja poco común en la época colonial.[NEWLINE]Cuando se le asigna la profesión de lechera, la lechera experta puede obtener el doble de leche en el mismo tiempo que un colono normal.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- CHEESE_MAKER -->
     <TEXT>
@@ -1935,7 +1880,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHEESE_MAKER_STRATEGY</Tag>
@@ -1944,7 +1888,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- CHARCOAL_BURNER -->
     <TEXT>
@@ -2004,7 +1947,6 @@
         <German>Holzkohle wird aus Holz hergestellt, das sechs bis acht Tage lang, manchmal auch länger, in einem Ofen gebrannt wurde. Holzkohle brennt bei 1.100 Grad Celsius. Der Schmelzpunkt von Eisen liegt bei 1.200 Grad. Mit einem Blasebalg auf einem Holzkohlefeuer kann ein Schmied seine Arbeit aufnehmen.</German>
         <Italian>Il carbone di legna proviene da legna cotta in una fornace per sei-otto giorni, a volte anche di più. Il carbone di legna brucia a 1.100 gradi Celsius. Il punto di fusione del ferro è di 1.200 gradi. Utilizzando un soffietto su un fuoco di carbone, il fabbro può mettersi al lavoro.</Italian>
         <Spanish>El carbón vegetal procede de madera cocida en un horno durante seis u ocho días, a veces más. El carbón arde a 1.100 grados Celsius. El punto de fusión del hierro es de 1.200 grados. </Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHARCOAL_BURNER_STRATEGY</Tag>
@@ -2013,7 +1955,6 @@
         <German>Der Köhler beobachtet den Rauch, der den Ofen verlässt. Wenn der Rauch dick und grau ist, ist das Holz noch roh; dünner, blauer Rauch deutet auf eine gute Verkohlung hin.[NEWLINE]Wenn ein Experte den Beruf [LINK=PROFESSION_CHARCOAL_BURNER]Köhler[\LINK] ausübt, kann er in derselben Zeit doppelt so viel [LINK=UNIT_CHAR_COAL]Holzkohle[\LINK] herstellen wie ein normaler Kolonist.</German>
         <Italian>Il carbonaio osserva il fumo che esce dal forno. Se il fumo è denso e grigio, il legno è ancora grezzo; un fumo sottile e blu indica una buona carbonizzazione.[NEWLINE]Se assegnato alla professione di [LINK=PROFESSION_CHARCOAL_BURNER]carbonaro[\LINK], l'esperto può ottenere il doppio del [LINK=UNIT_CHAR_COAL]carbone[\LINK] nello stesso tempo di un normale colono.</Italian>
         <Spanish>El carbonero observa el humo que sale del horno. Si el humo es espeso y gris, la madera aún está cruda; un humo fino y azul indica una buena carbonización.[NEWLINE]Cuando se le asigna la profesión [LINK=PROFESSION_CHARCOAL_BURNER]carbonero[\LINK], el experto puede conseguir el doble de [LINK=UNIT_CHAR_COAL]carbón[\LINK] en el mismo tiempo que un colono normal.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- BAKER -->
     <TEXT>
@@ -2049,7 +1990,6 @@
         <German>Der Bäcker beginnt seine Arbeit lange vor der Morgendämmerung, damit die Haushalte ihr tägliches Brot bekommen können. Wenn die Bäckerei wächst und Kekse und Gebäck anbietet, wird sie zu einem sozialen Zentrum. Einige Bäcker stellen sogar Tische auf, an denen Tee zu den Leckereien serviert wird.</German>
         <Italian>Il panettiere inizia a lavorare ben prima dell'alba, in modo che le famiglie possano avere il pane quotidiano. Man mano che il panificio cresce, offrendo biscotti e pasticcini, diventa un centro sociale. Alcuni panettieri allestiscono persino dei tavoli dove viene servito il tè per accompagnare le prelibatezze.</Italian>
         <Spanish>El panadero empieza a trabajar mucho antes del amanecer para que los hogares puedan tener el pan de cada día. A medida que la panadería crece, ofreciendo galletas y pasteles, se convierte en un centro social. Algunos panaderos incluso instalan mesas donde se sirve té para acompañar los dulces.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BAKER_STRATEGY</Tag>
@@ -2058,7 +1998,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- FIREWORKER -->
     <TEXT>
@@ -2118,7 +2057,6 @@
         <German>Weit entfernt von anderen Gebäuden mischt der Pulvermacher Schießpulver aus Schwefel, Holzkohle und Salpeter für die Gewehre der Soldaten. Während der Kolonialzeit ist es der einzige verfügbare Sprengstoff (Dynamit wird erst 1867 erfunden) und wird auch für die Artillerie, den Bergbau und den Straßenbau verwendet.</German>
         <Italian>Ben lontano da altri edifici, il fabbricante di polvere da sparo mescola la polvere da sparo con zolfo, carbone e salnitro: munizioni per i cannoni dei soldati. In epoca coloniale è l'unico esplosivo disponibile (la dinamite sarà inventata nel 1867), quindi viene utilizzato anche per l'artiglieria, le miniere e la costruzione di strade.</Italian>
         <Spanish>Alejado de otros edificios, el polvorero mezcla pólvora a partir de azufre, carbón vegetal y salitre: munición para las armas de los soldados. En la época colonial es el único explosivo disponible (la dinamita se inventará en 1867), por lo que también se utiliza para la artillería, la minería y la construcción de carreteras.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FIREWORKER_STRATEGY</Tag>
@@ -2127,7 +2065,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- MESTIZZO -->
     <TEXT>
@@ -2187,7 +2124,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MESTIZZO_STRATEGY</Tag>
@@ -2196,7 +2132,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- MULATTO -->
     <TEXT>
@@ -2256,7 +2191,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MULATTO_STRATEGY</Tag>
@@ -2265,7 +2199,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- CONSTRUCTION_SUPPLIES -->
     <TEXT>
@@ -2325,7 +2258,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES_STRATEGY</Tag>
@@ -2334,7 +2266,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- BRAVE_LIEUTENANT -->
     <TEXT>
@@ -2394,7 +2325,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BRAVE_LIEUTENANT_STRATEGY</Tag>
@@ -2403,7 +2333,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- CAPABLE_CAPTAIN -->
     <TEXT>
@@ -2463,7 +2392,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN_STRATEGY</Tag>
@@ -2472,7 +2400,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- ENTERTAINER -->
     <TEXT>
@@ -2540,7 +2467,6 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ENTERTAINER_STRATEGY</Tag>
@@ -2549,7 +2475,6 @@
         <German>Der Mensch ist ein Gesellschaftstier. Ruhm ist ein gutes Zugpferd Menschen zusammenzubringen, ihnen Unterhaltung zu bieten, damit sie sehen und gesehen werden können. Der Auftritt einer Berühmtheit zieht die ganze Stadt und das Umland in ihren Bann. Die Anwesenheit einer berühmten Schauspielerin verbessert den Ruf einer Stadt. Je mehr gebrochene Herzen sie hinter sich lässt, desto mehr wächst ihre Legende.</German>
         <Italian>Gli esseri umani sono animali sociali, la fama riunisce le persone per essere intrattenute, per vedere ed essere viste. Un'esibizione di una celebrità attira l'intera campagna. Avere un'attrice famosa residente migliora la reputazione di qualsiasi comunità. Lasciando dietro di sé una scia di cuori infranti, la sua leggenda cresce.</Italian>
         <Spanish>Los humanos somos animales sociales, la Fama reúne a la gente para entretenerse, para ver y ser vistos. La actuación de una celebridad atrae a todo el campo. Tener una actriz famosa residente mejora la reputación de cualquier comunidad. Dejando tras de sí un rastro de corazones rotos, su leyenda crece.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- HARLOT -->
     <TEXT>
@@ -2617,7 +2542,6 @@
         <German>Frömmlerische Damen mögen auf eine ehrliche Hure herabblicken, aber Huren haben oft Einfluß bei den Mächtigen, auch in der Kirche. Die Prostitution ist so vielfältig wie die Gesellschaft selbst. Eine verführerische Hure mag eine lukrative Karriere haben, aber sie ist nur kurz. Manche, denen das Leben gefällt, eröffnen nach den Jahren, in denen sie am meisten Geld verdient haben, ein eigenes Etablissement auf.</German>
         <Italian>Le signore che frequentano la chiesa possono guardare dall'alto in basso una prostituta onesta, ma le prostitute hanno spesso influenza sui potenti, compresi quelli della chiesa. La prostituzione è varia come la società stessa. La prostituta seducente può avere una carriera redditizia, ma breve. Alcune che amano questa vita si dedicano all'amministrazione dopo gli anni di massimo guadagno personale.</Italian>
         <Spanish>Las señoras que van a la iglesia pueden despreciar a una puta honesta, pero las rameras suelen tener influencia con los altos y poderosos, incluidos los de la iglesia. La prostitución es tan diversa como la propia sociedad. La prostituta seductora puede tener una carrera lucrativa, pero corta. Algunas, a las que les gusta la vida, se dedican a la administración después de sus mejores años de ganancias personales.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HARLOT_STRATEGY</Tag>
@@ -2626,7 +2550,6 @@
         <German>Einsame Männer finden oft ihr Glück bei einer Hure, die auch ein guter Zuhörer ist. Für die Hure selbst bedeutet die Tatsache, dass in einer Welt mit fünf Männern auf eine Frau fünf Männer kommen, die Chance, ihren eigenen Ehemann zu finden, anstatt von ihren Eltern verheiratet zu werden.</German>
         <Italian>Gli uomini soli spesso trovano la felicità con una prostituta che sa anche essere una buona ascoltatrice. Per la prostituta stessa, trovarsi in un mondo con cinque uomini per ogni donna significa avere la possibilità di trovarsi un marito da sola, invece di avere un matrimonio combinato dai genitori.</Italian>
         <Spanish>Los hombres solitarios suelen encontrar la felicidad con una ramera que también sabe escuchar bien. Para la propia ramera, estar en un mundo con cinco hombres por cada mujer significa tener la oportunidad de encontrar su propio marido en lugar de que sus padres le arreglen el matrimonio.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <!-- JUDGE -->
     <TEXT>
@@ -2662,7 +2585,6 @@
         <German>Ein Richter leitet die Verhandlung, hört alle Zeugen und alle anderen von den Anwälten vorgelegten Beweise an, beurteilt die Glaubwürdigkeit und die Argumente der Parteien und fällt dann auf der Grundlage seiner Rechtsauffassung und seines persönlichen Urteils eine Entscheidung in der Sache. Von einem Richter wird erwartet, dass er die Verhandlung unparteiisch und in öffentlicher Sitzung führt.</German>
         <Italian>Un giudice presiede il procedimento giudiziario, ascolta tutti i testimoni e qualsiasi altra prova presentata dagli avvocati o dai legali della causa, valuta la credibilità e le argomentazioni delle parti, quindi emette una sentenza sulla base della sua interpretazione della legge e del suo giudizio personale. Il giudice è tenuto a condurre il processo in modo imparziale in un'aula aperta.</Italian>
         <Spanish>El juez preside los procedimientos judiciales, escucha a todos los testigos y cualquier otra prueba presentada por los abogados o procuradores del caso, evalúa la credibilidad y los argumentos de las partes y, a continuación, dicta sentencia en el caso basándose en su interpretación de la ley y en su propio criterio personal. El juez debe dirigir el juicio con imparcialidad en audiencia pública.</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_JUDGE_STRATEGY</Tag>
@@ -2671,6 +2593,5 @@
         <German>xxx</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
-        <Russian>TBD</Russian>
     </TEXT>
 </Civ4GameText>
