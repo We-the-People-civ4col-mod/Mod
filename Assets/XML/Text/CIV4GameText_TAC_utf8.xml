@@ -2084,7 +2084,7 @@
         <German>Dänemark</German>
         <Italian>Danimarca</Italian>
         <Spanish>Dinamarca</Spanish>
-        <Russian>Королевство Дания-Норвегия</Russian>
+        <Russian>Дания</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_DUTCH_ADJECTIVE</Tag>
@@ -2105,6 +2105,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0:0:1:1</Plural>
         </Spanish>
+        <Russian>Голландия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_DUTCH_EUROPE_ADJECTIVE</Tag>
@@ -2229,6 +2230,7 @@
         <German>Colónias Portuguesas</German>
         <Italian>Colonie portoghesi</Italian>
         <Spanish>Colonias portuguesas</Spanish>
+        <Russian>Португальские колонии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_PORTUGAL_SHORT_DESC</Tag>
@@ -2237,6 +2239,7 @@
         <German>Neu-Portugal</German>
         <Italian>Nuovo Portogallo</Italian>
         <Spanish>Nuevo Portugal</Spanish>
+        <Russian>Новая Португалия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_PORTUGAL_ADJECTIVE</Tag>
@@ -2277,6 +2280,7 @@
         <German>Königreich Portugal</German>
         <Italian>Impero Portoghese</Italian>
         <Spanish>Imperio portugués</Spanish>
+        <Russian>Португальская империя</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_PORTUGAL_EUROPE_SHORT_DESC</Tag>
@@ -2285,6 +2289,7 @@
         <German>Portugal</German>
         <Italian>Portogallo</Italian>
         <Spanish>Portugal</Spanish>
+        <Russian>Португалия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SWEDEN_DESC</Tag>
@@ -2293,6 +2298,7 @@
         <German>Schwedische Kolonien</German>
         <Italian>Colonie svedesi</Italian>
         <Spanish>Colonias suecas</Spanish>
+        <Russian>Шведские колонии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SWEDEN_SHORT_DESC</Tag>
@@ -2301,6 +2307,7 @@
         <German>Neu-Schweden</German>
         <Italian>New Sweden</Italian>
         <Spanish>New Sweden</Spanish>
+        <Russian>Новая Швеция</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SWEDEN_ADJECTIVE</Tag>
@@ -2331,6 +2338,7 @@
         <German>Königreich von Schweden</German>
         <Italian>Regno di Svezia</Italian>
         <Spanish>Reino de Suecia</Spanish>
+        <Russian>Королевство Швеция</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SWEDEN_EUROPE_SHORT_DESC</Tag>
@@ -2339,6 +2347,7 @@
         <German>Schweden</German>
         <Italian>Svezia</Italian>
         <Spanish>Suecia</Spanish>
+        <Russian>Швеция</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_RUSSIA_DESC</Tag>
@@ -2347,6 +2356,7 @@
         <German>Russische Kolonien</German>
         <Italian>Colonie russe</Italian>
         <Spanish>Colonias rusas</Spanish>
+        <Russian>Русские колонии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_RUSSIA_SHORT_DESC</Tag>
@@ -2355,6 +2365,7 @@
         <German>Neu-Russland</German>
         <Italian>New Russia</Italian>
         <Spanish>New Russia</Spanish>
+        <Russian>Новая Россия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_RUSSIA_ADJECTIVE</Tag>
@@ -2367,6 +2378,7 @@
         <German>russisch</German>
         <Italian>russo</Italian>
         <Spanish>ruso</Spanish>
+        <Russian>Россия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_RUSSIA_EUROPE_ADJECTIVE</Tag>
@@ -2385,6 +2397,7 @@
         <German>Russisches Reich</German>
         <Italian>Impero russo</Italian>
         <Spanish>Imperio ruso</Spanish>
+        <Russian>Российская Империя</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_RUSSIA_EUROPE_SHORT_DESC</Tag>
@@ -2393,6 +2406,7 @@
         <German>Russland</German>
         <Italian>Russia</Italian>
         <Spanish>Rusia</Spanish>
+        <Russian>Россия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SPAIN_ADJECTIVE</Tag>
@@ -2421,6 +2435,7 @@
             <Gender>Male:Female:Male:Female</Gender>
             <Plural>0:0:1:1</Plural>
         </Spanish>
+        <Russian>Испанцы:Испанцы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SPAIN_EUROPE_ADJECTIVE</Tag>
