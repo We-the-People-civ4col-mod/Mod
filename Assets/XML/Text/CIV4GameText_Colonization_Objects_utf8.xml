@@ -24,6 +24,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Милитарист</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_ENGLAND_SHORT_DESC</Tag>
@@ -44,6 +45,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Новая Англия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_ENGLAND_EUROPE_SHORT_DESC</Tag>
@@ -64,6 +66,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Англия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_FRANCE_SHORT_DESC</Tag>
@@ -84,6 +87,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Новая Франция</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_FRANCE_EUROPE_SHORT_DESC</Tag>
@@ -104,6 +108,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Франция</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SPAIN_SHORT_DESC</Tag>
@@ -124,6 +129,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Новая Испания</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SPAIN_EUROPE_SHORT_DESC</Tag>
@@ -144,6 +150,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Испания</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_DUTCH_SHORT_DESC</Tag>
@@ -164,6 +171,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Новые Нидерланды</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_DUTCH_EUROPE_SHORT_DESC</Tag>
@@ -184,6 +192,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Нидерланды</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_IDLE_CITIZEN</Tag>
@@ -212,6 +221,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Безработный:Безработные</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_ARAWAK_SHORT_DESC</Tag>
@@ -232,6 +242,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Араваки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_TUPI_SHORT_DESC</Tag>
@@ -252,6 +263,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Тупи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_CHEROKEE_SHORT_DESC</Tag>
@@ -272,6 +284,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Чероки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_IROQUOIS_SHORT_DESC</Tag>
@@ -292,6 +305,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ирокезы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SIOUX_SHORT_DESC</Tag>
@@ -312,6 +326,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Сиу</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_NEZ_PERCE_SHORT_DESC</Tag>
@@ -332,6 +347,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Не-Персе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_APACHE_SHORT_DESC</Tag>
@@ -352,6 +368,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Апачи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_NAME_JAMESTOWN</Tag>
@@ -4568,6 +4585,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Древние руины</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_CITIES</Tag>
@@ -4588,6 +4606,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Города</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_LANGLADE</Tag>
@@ -4608,6 +4627,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Шарль Мишель де Ланглад</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_BRADDOCK</Tag>
@@ -4628,6 +4648,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Эдвард Брэддок</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_MALGUE</Tag>
@@ -4648,6 +4669,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Поль Марин де ла Мальг</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_TANACHARISON</Tag>
@@ -4668,6 +4690,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Таначарисон</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_PHILIP</Tag>
@@ -4688,6 +4711,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Король Филипп</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_BELLECOMBE</Tag>
@@ -4708,6 +4732,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Гийом де Белькомб</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_PUTNAM</Tag>
@@ -4728,6 +4753,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Израэль Патнэм</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_ROCHAMBEAU</Tag>
@@ -4748,6 +4774,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Граф де Рошамбо</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_GREENE</Tag>
@@ -4768,6 +4795,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Натаниэль Грин</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_GATES</Tag>
@@ -4788,6 +4816,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Горацио Гейтс</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_GALVEZ</Tag>
@@ -4808,6 +4837,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Бернардо де Гальвес</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_HIGGINS</Tag>
@@ -4828,6 +4858,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Бернардо О’Хиггинс</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_CARRERA</Tag>
@@ -4848,6 +4879,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Хосе Мигель де ла Каррера</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_AUITZOTL</Tag>
@@ -4868,6 +4900,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ахвицотль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_DE_WITT</Tag>
@@ -4888,6 +4921,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Корнелис де Витт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_KNOX</Tag>
@@ -4908,6 +4942,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Генри Нокс</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_BELGRANO</Tag>
@@ -4928,6 +4963,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Мануэль Бельграно</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_MENDOZA</Tag>
@@ -4948,6 +4984,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Кристобаль де Мендоса</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_LOUVERTURE</Tag>
@@ -4968,6 +5005,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Туссен-Лувертюр</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_SANTA_ANNA</Tag>
@@ -4988,6 +5026,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Антонио Лопес де Санта-Анна</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_HIDALGO</Tag>
@@ -5008,6 +5047,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Мигель Идальго-и-Костилья</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_MACKENZIE</Tag>
@@ -5028,6 +5068,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Уильям Лайон Макензи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_COCHRANE</Tag>
@@ -5048,6 +5089,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Томас Кокрейн</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_ARNOLD</Tag>
@@ -5068,6 +5110,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Бенедикт Арнольд</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_NAME_PIABUYU</Tag>
@@ -6468,5 +6511,6 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Королем</Russian>
     </TEXT>
 </Civ4GameText>

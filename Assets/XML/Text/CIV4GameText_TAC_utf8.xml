@@ -1293,18 +1293,21 @@
         <German>Wähle alle Einheiten desselben Typs</German>
         <Italian>Seleziona tutte le unità (della stessa professione)</Italian>
         <Spanish>Seleccionar todas las unidades (de la misma profesion)</Spanish>
+        <Russian>Выделить все юниты (одной профессии)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAME_OPTION_CITY_BOMBARD</Tag>
         <English>Enable city bombard</English>
         <French>Bombardement automatique</French>
         <German>Automatische Bombardierung</German>
+        <Russian>Включить городские пушки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAME_OPTION_CITY_BOMBARD_HELP</Tag>
         <English>Cities bombard automatically when encountering hostile ships</English>
         <French>Les villes bombardent automatiquement à l'approche de navires hostiles</French>
         <German>Städte beschießen automatisch vorbeifahrende feindliche Schiffe</German>
+        <Russian>Города будут автоматически стрелять по проходящим мимо вражеским кораблям.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAME_OPTION_NEW_AI</Tag>
@@ -1327,6 +1330,7 @@
         <English>[ICON_BULLET]Cannot enter native villages</English>
         <French>[ICON_BULLET]Ne peut rentrer dans les villages indigènes</French>
         <German>[ICON_BULLET]Kann Siedlungen der Ureinwohner nicht anlaufen</German>
+        <Russian>[ICON_BULLET]Не может заходить в поселения индейцев</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_STUDENT_ALMOST_GRADUATED</Tag>
@@ -1354,36 +1358,42 @@
         <English>An unfree colonist has earned his [COLOR_POSITIVE_TEXT]freedom[COLOR_REVERT] through hard work.</English>
         <French>[COLOR_POSITIVE_TEXT]Un colon a gagné sa liberté.[COLOR_REVERT]</French>
         <German>Ein Unfreier hat sich durch harte Arbeit seine [COLOR_POSITIVE_TEXT]Freiheit[COLOR_REVERT] verdient.</German>
+        <Russian>Несвободный колонист тяжелым трудом заработал себе [COLOR_POSITIVE_TEXT]свободу[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_FREE_IN_CITY</Tag>
         <English>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]An unfree colonist has earned his freedom through hard work.</English>
         <French>[COLOR_POSITIVE_TEXT]Un colon a gagné sa liberté.[COLOR_REVERT]</French>
         <German>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Ein Unfreier hat sich durch harte Arbeit seine Freiheit verdient.</German>
+        <Russian>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Несвободный колонист добился освобождения своим упорным трудом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_ESCAPE</Tag>
         <English>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]An unfree colonist has disappeared. It is suspected that he has fled into the wilderness.</English>
         <French>[COLOR_WARNING_TEXT]Un captif s'est enfui de %s1_city.[COLOR_REVERT]</French>
         <German>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Ein Unfreier ist verschwunden. Man vermutet, dass er in die Wildnis geflohen ist.</German>
+        <Russian>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Несвободный колонист сбежал из колонии! Срочно собрать поисковую партию, он не мог далеко уйти!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_REVOLT</Tag>
         <English>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]An unfree colonist has revolted. He is believed to have fled into the wilderness.</English>
         <French>[COLOR_WARNING_TEXT]Un captif s'est revolté et enfui de %s1_city.[COLOR_REVERT]</French>
         <German>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Ein Unfreier hat revoltiert. Man vermutet, dass er in die Wildnis geflohen ist.</German>
+        <Russian>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Несвободный колонист взбунтовался, где-то раздобыл оружие и сбежал из колонии! Все, кто свободен от работ, к оружию! Убьем негодяя!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_VETERAN_BY_MILITARY_SERVICE</Tag>
         <English>[COLOR_POSITIVE_TEXT]A free colonist has gained enough experience through combat to become a [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT]</English>
         <French>[COLOR_POSITIVE_TEXT]Un colon libre a gagné suffisamment d'expérience pour devenir %s1_expert[COLOR_REVERT]</French>
         <German>[COLOR_POSITIVE_TEXT]Ein Freier Kolonist hat im Kampf genug Erfahrung gesammelt, um jetzt als [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT][COLOR_POSITIVE_TEXT] zu gelten.[COLOR_REVERT]</German>
+        <Russian>[COLOR_POSITIVE_TEXT]Свободный колонист набрал достаточно опыта в боях, чтобы стать [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_FREE_BY_MILITARY_SERVICE</Tag>
         <English>[COLOR_POSITIVE_TEXT]An unfree colonist has become free for his bravery in battle.[COLOR_REVERT]</English>
         <French>[COLOR_POSITIVE_TEXT]Un combattant a gagné le droit de devenir un colon libre par sa bravoure dans la bataille.[COLOR_REVERT]</French>
         <German>[COLOR_POSITIVE_TEXT]Ein Unfreier hat sich durch Mut und Einsatz im Kampf seine Freiheit verdient.[COLOR_REVERT]</German>
+        <Russian>[COLOR_POSITIVE_TEXT]Несвободный колонист стал свободным благодаря своей храбрости в бою.[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_MAX_WORKERS</Tag>
@@ -1392,6 +1402,7 @@
         <German>[ICON_BULLET]Bietet %d1_Num [NUM1:Arbeitsplatz:Arbeitsplätze]</German>
         <Italian>[ICON_BULLET]Offerte %d1_Num [NUM1:luogo di lavoro:luoghi di lavoro]</Italian>
         <Spanish>[ICON_BULLET]Ofrece %d1_Num [NUM1:lugar de trabajo:lugares de trabajo]</Spanish>
+        <Russian>[ICON_BULLET]ПРЕДЛАГАЕТ %d1_Num [NUM1:раб.место:раб.мест]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_MAX_WORKERS2</Tag>
@@ -1400,78 +1411,91 @@
         <German>%d1_Num [NUM1:Arbeitsplatz:Arbeitsplätze]</German>
         <Italian>%d1_Num [NUM1:luogo di lavoro:luoghi di lavoro]</Italian>
         <Spanish>%d1_Num [NUM1:lugar de trabajo:lugares de trabajo]</Spanish>
+        <Russian>%d1_Num [NUM1:раб.место:раб.мест]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMPETITIOR_INDEPENDENCE_WAR</Tag>
         <English>The community of the world's peoples is holding its breath: The [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] colonies have risen up against their king. They no longer want to bow to the heel of a tyrant.</English>
         <French>Les colonies [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] ont déclaré la guerre contre leur propre roi !! Ils se battront pour leurs droits jusqu'à ce qu'ils gagnent leur liberté.</French>
         <German>Die Gemeinschaft der Völker dieser Welt hält den Atem an: Die [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Kolonien haben sich gegen ihren König erhoben. Sie wollen sich nicht länger der Knute eines Tyrannen beugen.</German>
+        <Russian>Сообщество народов мира затаило дыхание: [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] колонии восстали против своего короля. Они больше не хотят жить под пятой этого тирана.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SCHOOL_BUILDING_NEEDED</Tag>
         <English>[ICON_BULLET]Can be trained in [COLOR_BUILDING_TEXT][LINK=literal]%s1_building[\LINK][COLOR_REVERT]</English>
         <French>[ICON_BULLET]Peut être formé dans les [COLOR_BUILDING_TEXT][LINK=literal]%s1:2_building[\LINK][COLOR_REVERT]</French>
         <German>[ICON_BULLET]Ausbildung möglich in [COLOR_BUILDING_TEXT][LINK=literal]%s1_building[\LINK][COLOR_REVERT]</German>
+        <Russian>[ICON_BULLET]Можно обучить в [COLOR_BUILDING_TEXT][LINK=literal]%s1_building[\LINK][COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_AIONLY</Tag>
         <English>[ICON_BULLET][COLOR_WARNING_TEXT]Only available to AI colonial powers[COLOR_REVERT]</English>
         <French>[ICON_BULLET][COLOR_WARNING_TEXT]Uniquement disponible pour les puissances coloniales contrôlées par IA[COLOR_REVERT]</French>
         <German>[ICON_BULLET][COLOR_WARNING_TEXT]Steht nur vom Computer gesteuerten Kolonialmächten zur Verfügung[COLOR_REVERT]</German>
+        <Russian>[ICON_BULLET][COLOR_WARNING_TEXT]Доступно только колониальным державам ИИ[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LBD</Tag>
         <English>[ICON_BULLET]Can become an expert through hard work</English>
         <French>[ICON_BULLET]Peut devenir un expert en travaillant dur</French>
         <German>[ICON_BULLET]Kann durch harte Arbeit zum Experten werden</German>
+        <Russian>[ICON_BULLET]Может стать экспертом благодаря упорному труду</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FREE</Tag>
         <English>[ICON_BULLET]Can become a free colonist through hard work</English>
         <French>[ICON_BULLET]Peut devenir un colon libre en travaillant dur</French>
         <German>[ICON_BULLET]Kann durch harte Arbeit zum Freien Kolonisten werden</German>
+        <Russian>[ICON_BULLET]Может стать свободным колонистом благодаря упорному труду</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ESCAPE</Tag>
         <English>[ICON_BULLET]Can flee to avoid his fate</English>
         <French>[ICON_BULLET]Peut s'enfuir</French>
         <German>[ICON_BULLET]Kann fliehen, um sich seinem Schicksal zu entziehen</German>
+        <Russian>[ICON_BULLET]Может совершить побег, чтобы избежать своей участи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_REVOLT</Tag>
         <English>[ICON_BULLET]Can revolt and become a threat</English>
         <French>[ICON_BULLET]Peut revolter</French>
         <German>[ICON_BULLET]Kann revoltieren und zur Bedrohung werden</German>
+        <Russian>[ICON_BULLET]Может взбунтоваться и стать угрозой для колоний</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROF_LBD1</Tag>
         <English>[ICON_BULLET]A free colonist can become an expert in this profession after some time</English>
         <French>[ICON_BULLET]Un colon libre exerçant cette profession peut devenir un expert au bout d'un certain temps</French>
         <German>[ICON_BULLET]Ein Freier Kolonist kann nach einiger Zeit zum Experten in diesem Beruf werden</German>
+        <Russian>[ICON_BULLET]Через некоторое время Свободный колонист может стать экспертом в этой профессии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROF_LBD2</Tag>
         <English>[ICON_BULLET]A free colonist can become an expert in the profession after a long time</English>
         <French>[ICON_BULLET]Un colon libre exerçant cette profession peut devenir un expert au bout d'un certain temps</French>
         <German>[ICON_BULLET]Ein Freier Kolonist kann nach langer Zeit zum Experten in diesem Beruf werden</German>
+        <Russian>[ICON_BULLET]Свободный колонист может стать экспертом в этой профессии спустя долгое время.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROF_LBD3</Tag>
         <English>[ICON_BULLET]A free colonist can become an expert in the profession after a very long time</English>
         <French>[ICON_BULLET]Un colon libre exerçant cette profession peut devenir un expert au bout d'une très longue période</French>
         <German>[ICON_BULLET]Ein Freier Kolonist kann nach sehr langer Zeit zum Experten in diesem Beruf werden</German>
+        <Russian>[ICON_BULLET]Свободный колонист может стать экспертом в своей профессии спустя очень долгое время</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAPTURED_AFTER_FIGHT</Tag>
         <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]We have been able to overwhelm and capture an enemy [COLOR_WARNING_TEXT]%s1_unit[COLOR_REVERT]!</English>
         <French>L'unité ennemie %s1_unit a été capturée après la bataille.</French>
         <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Wir haben einen feindlichen [COLOR_WARNING_TEXT]%s1_unit[COLOR_REVERT] überwältigen und gefangennehmen können!</German>
+        <Russian>[COLOR_POSITIVE_TEXT]Хорошие новости, Милорд! [COLOR_REVERT]Нам удалось сокрушить и захватить вражеский [COLOR_WARNING_TEXT]%s1_unit[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_YOU_UNIT_CAPTURED_ENEMY_SHIP</Tag>
         <English>[COLOR_POSITIVE_TEXT]Victory, Milord! [COLOR_REVERT]We were able to capture an enemy [COLOR_WARNING_TEXT]ship[COLOR_REVERT]!</English>
         <French>Une unité ennemie a été capturé après le combat.</French>
         <German>[COLOR_POSITIVE_TEXT]Sieg, Milord! [COLOR_REVERT]Wir konnten ein feindliches [COLOR_WARNING_TEXT]Schiff[COLOR_REVERT] kapern !</German>
+        <Russian>[COLOR_POSITIVE_TEXT]Победа, Милорд! [COLOR_REVERT]К тому же, нам удалось захватить вражеский [COLOR_WARNING_TEXT]корабль[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_YOU_UNIT_ESCAPED</Tag>
@@ -1480,6 +1504,7 @@
         <German>[COLOR_WARNING_TEXT]Schlechte Nachrichten, Milord! [COLOR_REVERT]Trotz drohender Niederlage gegen Euer Schiff [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] gelang es dem Schiff [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] noch in der aufkommenden Dunkelheit zu entkommen !</German>
         <Italian>Dopo essere stata sconfitta dalla tua unità %s1_UnitName, un'unità %s2_EnUName è riuscita a fuggire</Italian>
         <Spanish>[NUM1:Un:Una:Unos:Unas] %s2_EnUName [NUM1:ha escapado tras ser derrotado:ha escapado tras ser derrotada:han escapado tras ser derrotados:han escapado tras ser derrotadas] por [NUM1:vuestro:vuestra:vuestros:vuestras] %s1_UnitName</Spanish>
+        <Russian>[COLOR_WARNING_TEXT]Плохие новости, Милорд! [COLOR_REVERT][COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] почти проиграл бой с нашим [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT], но дьявол помог им сбежать!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ENEMY_UNIT_ESCAPED</Tag>
@@ -1488,54 +1513,63 @@
         <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Trotz drohender Niederlage im Kampf gegen [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] gelang es Eurem Schiff [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] in der aufkommenden Dunkelheit zu entkommen. Das Schiff wird nun in der Werft von [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] repariert.</German>
         <Italian>La tua unità %s1_UnitName è sopravvissuta al combattimento con l'unità %s2_EnUName e ora si sta riprendendo a %s3_city</Italian>
         <Spanish>[NUM1:Vuestro:Vuestra:Vuestros:Vuestras]%s1_UnitName [NUM1:ha:ha:han:han] sobrevivido al combate con [NUM1:un:una:unos:unas] %s2_EnUName y se [NUM1:encuentra:encuentra:encuentran:encuentran] reparándose en %s3_city</Spanish>
+        <Russian>[COLOR_POSITIVE_TEXT]Отличные новости, Милорд! [COLOR_REVERT]Ваш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] чудом выжил в бою с [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT], сумев сбежать на закате. Сейчас корабль находится на ремонте в порту города [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NO_MORE_RESPAWN</Tag>
         <English>First, [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT]'s luck in battle has deserted him - and now he is also losing the favour of his king, who is tired of being the laughing stock of the whole world. His Majesty deigns to order all explorers, soldiers and colonists from the New World back to Europe.</English>
         <French>Las de l'insuccès de [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT], son Roi a décidé de retirer du Nouveau Monde l'ensemble de ses explorateurs, soldats et colons.</French>
         <German>Zunächst hat [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] das Schlachtenglück verlassen - und nun verliert er auch noch die Gunst seines Königs, der es leid ist, zum Gespött der ganzen Welt zu werden. Seine Majestät geruhen, alle Entdecker, Soldaten und Kolonisten aus der Neuen Welt zurück nach Europa zu beordern.</German>
+        <Russian>Недавно удача на поле боя покинула [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT]! А теперь он потерял благосклонность своего Короля, которому надоело быть посмешищем всего мира. Его Величество соизволит приказать всем исследователям, солдатам и колонистам Нового Света вернуться в Европу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_NATIVE_MERC</Tag>
         <English>Milord, you have acquired [COLOR_UNIT_TEXT]Native Mercenaries[COLOR_REVERT].</English>
         <French>Vous avez acquis une unité de mercenaires indigènes.</French>
         <German>Milord, unsere [COLOR_UNIT_TEXT]Indianischen Söldner[COLOR_REVERT] stehen bereit.</German>
+        <Russian>Милорд, мы приобрели [COLOR_UNIT_TEXT]Индейских наемников[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_REV_SUPPORT_ARRIVED</Tag>
         <English>Milord, the reinforcement troops sent by the [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT] have arrived.</English>
         <French>Les renforts du %s1_king sont arrivés.</French>
         <German>Milord, die Unterstützungstruppen des [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT] sind eingetroffen.</German>
+        <Russian>Милорд, подкрепление из войск, отправленное [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT], достигло колоний.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WAR_KING_DECREASED_MAX_TAX</Tag>
         <English>Pleased with our obedience, His Majesty has reduced the maximum tax rate by %d1_decrease.</English>
         <French>Le Roi est satisfait et accepte de réduire notre taux maximal d'imposition.</French>
         <German>Erfreut über unseren Gehorsam hat Seine Majestät den maximalen Steuersatz um %d1_decrease gesenkt.</German>
+        <Russian>Довольный нашей покорностью, Его Величество милостливо снизил максимальную ставку налога на %d1_decrease.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS</Tag>
         <English>Milord, the reinforcement troops sent by His Majesty have arrived. We have heard rumours that your enemy's king has also sent reinforcements as well.</English>
         <French>Les renforts de notre roi sont arrivés. Les renforts du otre roi sont arrivés aussi.</French>
         <German>Milord, die von Seiner Majestät entsandten Unterstützungstruppen sind eingetroffen. Wir haben Gerüchte gehört, dass der Gegner Seiner Majestät auch Unterstützungstruppen in die Neue Welt entsandt hat.</German>
+        <Russian>Милорд, войска, отправленные Его Величеством нам на подмогу, прибыли. До нас дошли слухи, что король вашего врага тоже прислал подкрепление.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WAR_KING_INCCREASED_MAX_TAX</Tag>
         <English>Angered by our disobedience, His Majesty has increased our maximum tax rate by %d1_increase.[NEWLINE]However, our relationship with [COLOR_HIGHLIGHT_TEXT]%s2_nation[COLOR_REVERT] has improved.</English>
         <French>Irrité par notre désobéissance, le roi a augmenté notre taux maximal d'imposition de %d1_increase.[NEWLINE]Notre relation avec [COLOR_HIGHLIGHT_TEXT]%s2_nation[COLOR_REVERT] mais s'est améliorée.</French>
         <German>Verärgert über unseren Ungehorsam hat Seine Majestät unseren maximalen Steuersatz um %d1_increase erhöht.[NEWLINE]Unsere Beziehung zu [COLOR_HIGHLIGHT_TEXT]%s2_nation[COLOR_REVERT] hat sich jedoch verbessert.</German>
+        <Russian>Разгневанный вашим неповиновением, Его Величество повысил ставку налога на %d1_increase.[NEWLINE]Однако, наши отношения с [COLOR_HIGHLIGHT_TEXT]%s2_nation[COLOR_REVERT] улучшились.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAKE_PEACE_AFTER_ACQUIRE_CITY</Tag>
         <English>Convinced by our compensation of our good intentions, [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] has buried the hatchet again.</English>
         <French>Convaincu par notre tribu, [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] accepte la paix.</French>
         <German>Durch unsere Entschädigung von unseren guten Absichten überzeugt, hat [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] das Kriegsbeil wieder begraben.</German>
+        <Russian>Убедившись в наших добрых намерениях, [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] закопал топор войны.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_WHALING_UNLOAD</Tag>
         <English>Whaling ship hunts whales automatically</English>
         <French>Automatiser la chasse à la baleine</French>
         <German>Walfänger jagt Wale automatisch</German>
+        <Russian>Китобои сами будут искать китов для охоты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_WHALING_UNLOAD_HELP</Tag>
@@ -1552,6 +1586,7 @@
         <German>Fischfang automatisieren</German>
         <Italian>Automatizza i peschereccio</Italian>
         <Spanish>Automatizar barco pesquero</Spanish>
+        <Russian>Автоматизировать ловлю рыбы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_AUTOMATE_FISHINGBOAT_HELP</Tag>
@@ -1566,6 +1601,7 @@
         <English>Milord, your whaling ship [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] has unloaded its cargo and is ready for another voyage.</English>
         <French>Votre [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] a déchargé sa marchandise et est prêt pour un nouveau voyage.</French>
         <German>Milord, Euer Walfänger [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] hat allen Walspeck entladen und ist wieder bereit auszulaufen.</German>
+        <Russian>Милорд, наш китобой [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] выгрузил свой груз и готов к следующему выходу в море.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WHALER_HELP</Tag>
@@ -1574,6 +1610,7 @@
         <German>(%s1_symbol_list pro Runde)</German>
         <Italian>(%s1_symbol_list per turno)</Italian>
         <Spanish>(%s1_symbol_list por turno)</Spanish>
+        <Russian>(%s1_symbol_list за ход)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WHALER_FULL</Tag>
@@ -1582,6 +1619,7 @@
         <German>Milord, Euer Walfänger [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] hat jetzt so viel Walspeck an Bord, wie er fassen kann.</German>
         <Italian>Il vostro [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] è riempito al bordo con il cibo dal mare.</Italian>
         <Spanish>Su [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] está llena hasta el tope con los alimentos del mar.</Spanish>
+        <Russian>Милорд, наше китобойное судно [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] заполнено добычей до отказа.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WHALER_FULL_UNLOAD</Tag>
@@ -1590,60 +1628,70 @@
         <German>Milord, Euer Walfänger [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] hat jetzt so viel Walspeck an Bord, wie er fassen kann. Er kehrt nun nach [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] zum Entladen zurück.</German>
         <Italian>Il vostro [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] è riempito al bordo con il cibo dal mare.</Italian>
         <Spanish>Su [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] está llena hasta el tope con los alimentos del mar.</Spanish>
+        <Russian>Милорд, наш китобой [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] до краев заполнен китовым жиром и возвращается в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] для разгрузки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SELECT_RETURN_CITY</Tag>
         <English>Milord, select a City for your [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] to return when cargo hold is full!</English>
         <French>Sélectionner la ville dans laquelle votre [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] doit revenir une fois plein!</French>
         <German>Milord, wählen Sie eine Küstenstadt aus, zu der das Schiff [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] fahren soll, wenn sein Frachtraum voll ist!</German>
+        <Russian>Милорд, выберите город, в который [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] должен будет вернуться, когда трюмы будут полны добычи.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_WHALE_CITY_RADIUS</Tag>
         <English>[COLOR_WARNING_TEXT]Must be outside city radius[COLOR_REVERT]</English>
         <French>[COLOR_WARNING_TEXT]Ne peut pêcher qu'à l'extérieur du rayon d'une ville[COLOR_REVERT]</French>
         <German>[COLOR_WARNING_TEXT]Muss außerhalb des Stadtradius liegen[COLOR_REVERT]</German>
+        <Russian>[COLOR_WARNING_TEXT]Должен быть за пределами города[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_WHALE_CITY_RADIUS_PLOT_WORKED</Tag>
         <English>[COLOR_WARNING_TEXT]This spot is already being worked by the neighbouring city[COLOR_REVERT]</English>
         <French>[COLOR_WARNING_TEXT]Cette zone est déjà exploitée par les citoyen d'une ville proche[COLOR_REVERT]</French>
         <German>[COLOR_WARNING_TEXT]Diese Bonusressource wird bereits durch eine benachbarte Stadt bewirtschaftet[COLOR_REVERT]</German>
+        <Russian>[COLOR_WARNING_TEXT]Это место уже занято работником из соседнего города[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_WHALE_NO_FISH</Tag>
         <English>[COLOR_WARNING_TEXT]Sperm whales bonus is required[COLOR_REVERT]</English>
         <French>[COLOR_WARNING_TEXT]Un bonus de baleine est nécessaire[COLOR_REVERT]</French>
         <German>[COLOR_WARNING_TEXT]Bonusressource Pottwale wird benötigt[COLOR_REVERT]</German>
+        <Russian>[COLOR_WARNING_TEXT]Требуется бонусный ресурс киты[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_WHALE_NEEDS_WHALER</Tag>
         <English>[COLOR_WARNING_TEXT]Whaling ship required to gather resource[COLOR_REVERT]</English>
         <French>[COLOR_WARNING_TEXT]Un baleinier est nécessaire pour pêcher cette ressource[COLOR_REVERT]</French>
         <German>[COLOR_WARNING_TEXT]Walfänger wird benötigt[COLOR_REVERT]</German>
+        <Russian>[COLOR_WARNING_TEXT]Для сбора ресурса требуется китобойное судно[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_WHALE_FULL</Tag>
         <English>[COLOR_WARNING_TEXT]No more room in cargo for food[COLOR_REVERT]</English>
         <French>[COLOR_WARNING_TEXT]Plus de place en cargaison pour de la[COLOR_REVERT]</French>
         <German>[COLOR_WARNING_TEXT]La soute est pleine ![COLOR_REVERT]</German>
+        <Russian>[COLOR_WARNING_TEXT]В грузовом отсеке больше нет места для жира[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_WHALE_TAKEN</Tag>
         <English>[COLOR_WARNING_TEXT]Another ship is already whaling here - only one whaling ship per resource![COLOR_REVERT]</English>
         <French>[COLOR_WARNING_TEXT]Cette zone est déjà exploitée par un autre navire de pêche ![COLOR_REVERT]</French>
         <German>[COLOR_WARNING_TEXT]Ein anderes Schiff geht hier bereits auf Walfang - nur ein Walfänger pro Bonusressource![COLOR_REVERT]</German>
+        <Russian>[COLOR_WARNING_TEXT]Здесь уже промышляет другой китобой. Только один корабль может заниматься добычей на клетке с ресурсом![COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GATHER_BOAT_WHALING</Tag>
         <English>[ICON_BULLET]Can gather whale fat from sea resource whale</English>
         <French>[ICON_BULLET]Peut pêcher de la graisse de baleine en exploitant la ressource maritime Baleine</French>
         <German>[ICON_BULLET]Kann Walspeck auf Bonusressource Wale gewinnen</German>
+        <Russian>[ICON_BULLET]Может собирать китовый жир с морского ресурса [COLOR_HIGHLIGHT_TEXT]киты[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NO_RAW_ON_FIELD</Tag>
         <English>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]A Colonist, whom you had ordered to produce %F2_yield_icon, reports that he has nothing to do at present.</English>
         <French>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Un colon ne peut plus produire de %F2_yield_icon sur sa case.</French>
         <German>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Ein Kolonist, dem Ihr befohlen hattet, %F2_yield_icon einzubringen, meldet, dass er derzeit nichts zu tun hat.</German>
+        <Russian>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Колонист, которому вы приказали производить %F2_yield_icon, сообщает, что ему сейчас нечего делать.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHEATMENU_TITLE</Tag>
@@ -1708,6 +1756,7 @@
         <German>[COLOR_FONT_CREAM]Runde :[COLOR_REVERT] %d1 / %d2[NEWLINE][NEWLINE]</German>
         <Italian>[COLOR_FONT_CREAM]Turno :[COLOR_REVERT] %d1 / %d2[NEWLINE][NEWLINE]</Italian>
         <Spanish>[COLOR_FONT_CREAM]Turno :[COLOR_REVERT] %d1 / %d2[NEWLINE][NEWLINE]</Spanish>
+        <Russian>[COLOR_FONT_CREAM]Ход :[COLOR_REVERT] %d1 / %d2[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TIMETEXT_TURN_NO_LIMIT</Tag>
@@ -1716,6 +1765,7 @@
         <German>[COLOR_FONT_CREAM]Runde :[COLOR_REVERT] %d1 / Kein Rundenlimit[NEWLINE][NEWLINE]</German>
         <Italian>[COLOR_FONT_CREAM]Turno :[COLOR_REVERT] %d1 / Nessun limite[NEWLINE][NEWLINE]</Italian>
         <Spanish>[COLOR_FONT_CREAM]Turno :[COLOR_REVERT] %d1 / Sin límite[NEWLINE][NEWLINE]</Spanish>
+        <Russian>[COLOR_FONT_CREAM]Ход :[COLOR_REVERT] %d1 / Без лимита[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TIMETEXT_IMMIGRATION_TITLE</Tag>
@@ -1724,6 +1774,7 @@
         <German>[COLOR_FONT_CREAM]Auswanderung :[COLOR_REVERT][NEWLINE]</German>
         <Italian>[COLOR_FONT_CREAM]Immigration :[COLOR_REVERT][NEWLINE]</Italian>
         <Spanish>[COLOR_FONT_CREAM]Immigration :[COLOR_REVERT][NEWLINE]</Spanish>
+        <Russian>[COLOR_FONT_CREAM]Эмиграция :[COLOR_REVERT][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TIMETEXT_IMMIGRATION</Tag>
@@ -1756,6 +1807,7 @@
         <German>[COLOR_FONT_CREAM]Großer General :[COLOR_REVERT][NEWLINE]</German>
         <Italian>[COLOR_FONT_CREAM]Grande Generale :[COLOR_REVERT][NEWLINE]</Italian>
         <Spanish>[COLOR_FONT_CREAM]Gran general :[COLOR_REVERT][NEWLINE]</Spanish>
+        <Russian>[COLOR_FONT_CREAM]Великий Генерал :[COLOR_REVERT][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TIMETEXT_GENERALS</Tag>
@@ -1896,6 +1948,7 @@
         <German>[COLOR_SELECTED_TEXT]%s1[COLOR_REVERT] (Kapazität des Lagerhauses : %d2)</German>
         <Italian>%s1 - warehouse (max %d2):</Italian>
         <Spanish>%s1 - warehouse (max %d2):</Spanish>
+        <Russian>[COLOR_SELECTED_TEXT]%s1[COLOR_REVERT] (вместимость склада : %d2)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_SHOW_TRADE_LOG</Tag>
@@ -1976,6 +2029,7 @@
         <English>That floating coffin named [COLOR_UNIT_TEXT]%s1[COLOR_REVERT]? Well, I'll give you %d2[ICON_GOLD].</English>
         <French>Ce raffiot que vous appelez [COLOR_UNIT_TEXT]%s1[COLOR_REVERT] ? Et bien ... je vous en donne %d2[ICON_GOLD].</French>
         <German>Diesen morschen Kahn namens [COLOR_UNIT_TEXT]%s1[COLOR_REVERT]? Nun, %d2[ICON_GOLD] seien Euch gewährt.</German>
+        <Russian>[COLOR_UNIT_TEXT]%s1[COLOR_REVERT], этот плаваяющий гроб? Хмм, что ж, я дам вам за него %d2[ICON_GOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_SELL_SHORT</Tag>
@@ -2000,6 +2054,7 @@
         <German>Boykott aufheben?</German>
         <Italian>Togliere il boicottaggio?</Italian>
         <Spanish>¿Levantar el boicot?</Spanish>
+        <Russian>Отменить бойкот на этот товар?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_BOYCOTT_MESSAGE</Tag>
@@ -2057,7 +2112,7 @@
         <German>dänisch</German>
         <Italian>Danish</Italian>
         <Spanish>Danish</Spanish>
-        <Russian>Дания</Russian>
+        <Russian>Дании</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_DENMARK_EUROPE_ADJECTIVE</Tag>
@@ -2076,6 +2131,7 @@
         <German>Königreich von Dänemark</German>
         <Italian>Regno di Danimarca</Italian>
         <Spanish>Reino de Dinamarca</Spanish>
+        <Russian>Датское королевство</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_DENMARK_EUROPE_SHORT_DESC</Tag>
@@ -2084,7 +2140,7 @@
         <German>Dänemark</German>
         <Italian>Danimarca</Italian>
         <Spanish>Dinamarca</Spanish>
-        <Russian>Дания</Russian>
+        <Russian>Дании</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_DUTCH_ADJECTIVE</Tag>
@@ -2105,7 +2161,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0:0:1:1</Plural>
         </Spanish>
-        <Russian>Голландия</Russian>
+        <Russian>Голландцы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_DUTCH_EUROPE_ADJECTIVE</Tag>
@@ -2154,6 +2210,7 @@
             <Gender>Male:Female:Male:Female</Gender>
             <Plural>0:0:1:1</Plural>
         </Spanish>
+        <Russian>Англичане</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_ENGLAND_EUROPE_ADJECTIVE</Tag>
@@ -2202,6 +2259,7 @@
             <Gender>Male:Female:Male:Female</Gender>
             <Plural>0:0:1:1</Plural>
         </Spanish>
+        <Russian>Французы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_FRANCE_EUROPE_ADJECTIVE</Tag>
@@ -2256,6 +2314,7 @@
         </German>
         <Italian>Portoghese</Italian>
         <Spanish>Portugues</Spanish>
+        <Russian>Португальцы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_PORTUGAL_EUROPE_ADJECTIVE</Tag>
@@ -2289,7 +2348,7 @@
         <German>Portugal</German>
         <Italian>Portogallo</Italian>
         <Spanish>Portugal</Spanish>
-        <Russian>Португалия</Russian>
+        <Russian>Португалии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SWEDEN_DESC</Tag>
@@ -2320,6 +2379,7 @@
         <German>schwedisch</German>
         <Italian>svedese</Italian>
         <Spanish>sueco</Spanish>
+        <Russian>Шведы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SWEDEN_EUROPE_ADJECTIVE</Tag>
@@ -2347,7 +2407,7 @@
         <German>Schweden</German>
         <Italian>Svezia</Italian>
         <Spanish>Suecia</Spanish>
-        <Russian>Швеция</Russian>
+        <Russian>Швеции</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_RUSSIA_DESC</Tag>
@@ -2406,7 +2466,7 @@
         <German>Russland</German>
         <Italian>Russia</Italian>
         <Spanish>Rusia</Spanish>
-        <Russian>Россия</Russian>
+        <Russian>России</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SPAIN_ADJECTIVE</Tag>
