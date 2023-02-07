@@ -5474,11 +5474,6 @@
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] in Europe zu werden.</German>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_5</Tag>
-		<English>For the Glory and Wealth of our colonies! Higher sale prices are always welcome!</English>
-		<German>Für Ruhm und Reichtum unserer Kolonien! Höhere Verkaufspreise sind immer willkommen!</German>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_BLACK_POWDER_START</Tag>
 		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]black powder[COLOR_REVERT] from Europe has begun.</English>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Europe hat begonnen.</German>
@@ -5504,9 +5499,104 @@
 		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] in Europe zu werden.</German>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_6</Tag>
-		<English>For the Glory and Wealth of our colonies! Higher sale prices are always welcome!</English>
-		<German>Für Ruhm und Reichtum unserer Kolonien! Höhere Verkaufspreise sind immer willkommen!</German>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GEESE_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]geese[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Gänse[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GEESE_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]geese[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Gänsen[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GEESE_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]geese[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Gänsen[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_GEESE_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]geese[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Gänse[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GEESE_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]geese[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Gänsen[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CHICKEN_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]chicken[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Hühner[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CHICKEN_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]chicken[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Hühnern[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CHICKEN_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]chicken[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Hühnern[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_CHICKEN_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]chicken[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Hühner[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CHICKEN_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]chicken[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Hühnern[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PIGS_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]pigs[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Schweine[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PIGS_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]pigs[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Schweinen[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PIGS_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]pigs[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Schweinen[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_PIGS_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]pigs[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Schweine[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PIGS_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]pigs[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Schweinen[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GOATS_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]goats[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Ziegen[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GOATS_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]goats[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Ziegen[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GOATS_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]goats[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Ziegen[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_GOATS_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]goats[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Ziegen[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GOATS_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]goats[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Ziegen[COLOR_REVERT] in Europe zu werden.</German>
 	</TEXT>
 	<TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLADES_START</Tag>
