@@ -27,6 +27,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Агуэйбана</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_AGUEYBANA_PEDIA</Tag>
@@ -59,6 +60,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Аомагуа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_AOMAGUA_PEDIA</Tag>
@@ -73,6 +75,7 @@
         <German>Aleksandr Baranov</German>
         <Italian>Aleksandr Baranov</Italian>
         <Spanish>Aleksandr Baranov</Spanish>
+        <Russian>Александр Баранов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_BARANOV_PEDIA</Tag>
@@ -87,6 +90,7 @@
         <German>Wilde Tiere</German>
         <Italian>Animali selvatici</Italian>
         <Spanish>Animales salvajes</Spanish>
+        <Russian>Дикие животные</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_BARBARIAN_PEDIA</Tag>
@@ -119,6 +123,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Симон Боливар</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_BOLIVAR_PEDIA</Tag>
@@ -155,6 +160,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Самюэль де Шамплен</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_CHAMPLAIN_PEDIA</Tag>
@@ -187,6 +193,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Вождь Джозеф</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_CHIEF_JOSEPH_PEDIA</Tag>
@@ -217,6 +224,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Кардинал</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_CHURCH_PEDIA</Tag>
@@ -245,6 +253,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Косихоэза</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_COCIJOEZA_PEDIA</Tag>
@@ -279,6 +288,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Кунхамбебе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_CUNHAMBEBE_PEDIA</Tag>
@@ -295,6 +305,7 @@
         <German>König von Dänemark</German>
         <Italian>King of Denmark</Italian>
         <Spanish>King of Denmark</Spanish>
+        <Russian>Король Дании</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_DANISH_KING_PEDIA</Tag>
@@ -309,6 +320,7 @@
         <German>Mem de Sá</German>
         <Italian>Mem de Sá</Italian>
         <Spanish>Mem de Sá</Spanish>
+        <Russian>Мем ди Са</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_DE_SA_PEDIA</Tag>
@@ -343,6 +355,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Адриан ван дер Донк</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_DONCK_PEDIA</Tag>
@@ -379,6 +392,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Правитель Нидерландов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_DUTCH_KING_PEDIA</Tag>
@@ -395,6 +409,7 @@
         <German>Hans Egede</German>
         <Italian>Hans Egede</Italian>
         <Spanish>Hans Egede</Spanish>
+        <Russian>Ханс Эгеде</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_EGEDE_PEDIA</Tag>
@@ -429,6 +444,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Король Англии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_ENGLISH_KING_PEDIA</Tag>
@@ -465,6 +481,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Эрендира</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_ERENDIRA_PEDIA</Tag>
@@ -479,6 +496,7 @@
         <German>Jermak Timofejewitsch</German>
         <Italian>Ermak Timofeyevich</Italian>
         <Spanish>Ermak Timofeyevich</Spanish>
+        <Russian>Ермак Тимофеевич</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_ERMAK_PEDIA</Tag>
@@ -513,6 +531,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Король Франции</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_FRENCH_KING_PEDIA</Tag>
@@ -549,6 +568,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Луи де Фронтеньяк</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_FRONTENAC_PEDIA</Tag>
@@ -585,6 +605,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Фернандо Кортес</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_HERNAN_CORTES_PEDIA</Tag>
@@ -617,6 +638,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Уайна Капак</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_HUAYNA_CAPAC_PEDIA</Tag>
@@ -649,6 +671,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Железная куртка</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_IRON_JACKET_PEDIA</Tag>
@@ -679,6 +702,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Джаурейбо</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_JAUREYBO_PEDIA</Tag>
@@ -709,6 +733,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Кондиаронк</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_KONDIARONK_PEDIA</Tag>
@@ -739,6 +764,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Лаутаро</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_LAUTARO_PEDIA</Tag>
@@ -773,6 +799,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Логан</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_LOGAN_PEDIA</Tag>
@@ -805,6 +832,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Мачипара</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_MACHIPARA_PEDIA</Tag>
@@ -839,6 +867,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Мангас Колорадос</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_MANGAS_COLORADAS_PEDIA</Tag>
@@ -871,6 +900,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Монтесума</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_MONTEZUMA_PEDIA</Tag>
@@ -887,6 +917,7 @@
         <German>Jens Munk</German>
         <Italian>Jens Munk</Italian>
         <Spanish>Jens Munk</Spanish>
+        <Russian>Йенс Мунк</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_MUNK_PEDIA</Tag>
@@ -917,6 +948,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Нарбона</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_NARBONA_PEDIA</Tag>
@@ -951,6 +983,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Оконостота</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_OCONOSTOTA_PEDIA</Tag>
@@ -987,6 +1020,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Опоссуноквонуске</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_OPPUSSOQUIONUSKE_PEDIA</Tag>
@@ -1017,6 +1051,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Оркеке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_ORKEKE_PEDIA</Tag>
@@ -1047,6 +1082,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Текун Уман</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_PACAL_PEDIA</Tag>
@@ -1081,6 +1117,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Уильям Пенн</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_PENN_PEDIA</Tag>
@@ -1115,6 +1152,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Сосновый Лист</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_PINE_LEAF_PEDIA</Tag>
@@ -1129,6 +1167,7 @@
         <German>König von Portugal</German>
         <Italian>Re di Portogallo</Italian>
         <Spanish>King of Portugal</Spanish>
+        <Russian>Король Португалии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_PORTUGUESE_KING_PEDIA</Tag>
@@ -1143,6 +1182,7 @@
         <German>Johan Printz</German>
         <Italian>Johan Printz</Italian>
         <Spanish>Johan Printz</Spanish>
+        <Russian>Юхан Принц</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_PRINTZ_PEDIA</Tag>
@@ -1173,6 +1213,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Кьюмьюнчатача</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_QUEMUENCHATOCHA_PEDIA</Tag>
@@ -1187,6 +1228,7 @@
         <German>Johan Risingh</German>
         <Italian>Johan Risingh</Italian>
         <Spanish>Johan Risingh</Spanish>
+        <Russian>Юхан Рисинг</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_RISING_PEDIA</Tag>
@@ -1221,6 +1263,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Бегущий Орел</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_RUNNING_EAGLE_PEDIA</Tag>
@@ -1235,6 +1278,7 @@
         <German>Zar von Russland</German>
         <Italian>Tsar of Russia</Italian>
         <Spanish>Tsar of Russia</Spanish>
+        <Russian>Царь России</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_RUSSIAN_KING_PEDIA</Tag>
@@ -1265,6 +1309,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Сепе Тиаражу</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_SEPE_TIARAJU_PEDIA</Tag>
@@ -1299,6 +1344,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Змея Кечкемитль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_SERPENT_QUECHQUEMITL_PEDIA</Tag>
@@ -1333,6 +1379,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Нункуи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_SHUAR_PEDIA</Tag>
@@ -1363,6 +1410,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Сидящий Бык</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_SITTING_BULL_PEDIA</Tag>
@@ -1379,6 +1427,7 @@
         <German>Martim Afonso de Sousa</German>
         <Italian>Martim Afonso de Sousa</Italian>
         <Spanish>Martim Afonso de Sousa</Spanish>
+        <Russian>Мартин Афонсу де Соуза</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_SOUSA_PEDIA</Tag>
@@ -1413,6 +1462,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Король Испании</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_SPANISH_KING_PEDIA</Tag>
@@ -1449,6 +1499,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Петер Стейвесант</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_STUYVESANT_PEDIA</Tag>
@@ -1465,6 +1516,7 @@
         <German>König von Schweden</German>
         <Italian>King of Sweden</Italian>
         <Spanish>King of Sweden</Spanish>
+        <Russian>Король Швеции</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_SWEDISH_KING_PEDIA</Tag>
@@ -1495,6 +1547,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Тарано</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_TARANO_PEDIA</Tag>
@@ -1525,6 +1578,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Туглавина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_TUGLAWINA_PEDIA</Tag>
@@ -1555,6 +1609,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Уррака</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_URRACA_PEDIA</Tag>
@@ -1585,6 +1640,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Вашаки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_WASHAKIE_PEDIA</Tag>
@@ -1615,6 +1671,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Джорж Вашингтон</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_WASHINGTON_PEDIA</Tag>

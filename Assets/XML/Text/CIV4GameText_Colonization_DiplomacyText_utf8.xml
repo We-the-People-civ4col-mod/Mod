@@ -5730,7 +5730,7 @@
         <German>Ihr werdet beglückt sein zu hören, dass Eure Majestät Euch erneut eine Gelegenheit offeriert, Eure Loyalität zu beweisen. Gebt Unserem Schatzmeister %d1[ICON_GOLD], kniet und küsst Unseren Ring. Und dann lasst Uns ruhen - die unermüdliche Arbeit für Euer Wohl hat Uns erschöpft.</German>
         <Italian>Sarete lieti di sapere che Vostra Maestà vi offre ancora una volta la possibilità di dimostrare la vostra fedeltà. Dai al nostro tesoriere %d1[ICON_GOLD], inginocchiati e bacia il Nostro anello. E poi lasciaci riposare - questo lavoro senza fine per il tuo beneficio ci ha esaurito.</Italian>
         <Spanish>Os complacerá saber que Su Majestad os ofrece de nuevo la oportunidad de demostrar vuestra lealtad. Entrega a nuestro tesorero %d1[ICON_GOLD], arrodíllate y besa Nuestro anillo. Y luego déjanos descansar: este interminable trabajo en tu beneficio nos ha agotado.</Spanish>
-        <Russian>Вам наверняка будет приятно услышать, что Ваше Величество в очередной раз предлагает вам возможность доказать свою лояльность. Встаньте на колени и поцелуйте Наше кольцо. Да, и не забудьте передать нашему казначею %d1[ICON_GOLD], как знак вашей искренной преданности.</Russian>
+        <Russian>Вам наверняка будет приятно услышать, что Наше Величество в очередной раз предлагает вам возможность доказать свою лояльность. Встаньте на колени и поцелуйте Наше кольцо. Да, и не забудьте передать казначею %d1[ICON_GOLD], как знак вашей искренной преданности.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_ASK_FOR_GOLD_5</Tag>
@@ -5739,7 +5739,7 @@
         <German>Der Schoßhund Unserer Großnichte hat demnächst Geburtstag. Ihr dürft Uns %d1[ICON_GOLD] für das Geschmeide seines neuen Halsbandes schenken. Nein, dankt Uns nicht. Küsst einfach Unseren Ring und zieht Euch zurück.</German>
         <Italian>Puoi baciare il nostro anello con sigillo per la piccola somma di %d1[ICON_GOLD]. No, non ringraziarci. Bacia l'anello e ritirati.</Italian>
         <Spanish>Puedes besar nuestro anillo de sello por la pequeña cuota de %d1[ICON_GOLD]. No, no nos des las gracias. Sólo besa el anillo y retírate.</Spanish>
-        <Russian>Вы можете поцеловать Наш перстень с этим прекрасным камнем. И не забудьте про уплату взноса за аудиенцию с вашим обожаемым монархом (сущие пустяки, всего лишь %d1[ICON_GOLD]). Нет, не благодарите Нас. Просто поцелуйте кольцо и уйди.</Russian>
+        <Russian>Вы можете поцеловать Наш перстень с этим прекрасным камнем. И не забудьте про уплату взноса за аудиенцию с вашим обожаемым монархом (сущие пустяки, всего лишь %d1[ICON_GOLD]). Нет, не благодарите Нас. Просто поцелуйте кольцо и уходите.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_ASK_FOR_GOLD_6</Tag>
@@ -5829,7 +5829,7 @@
         <German>Jawohl, Eure Majestät ! Aber sicher! Gerne. (Forderung erfüllen, maximaler Steuersatz sinkt)</German>
         <Italian>Sì, Vostra Maestà! Certamente! Con piacere. (Soddisfare la domanda, l'aliquota massima diminuisce)</Italian>
         <Spanish>¡Sí, Su Majestad! ¡Por supuesto! Con mucho gusto. (Satisfacer la demanda, la tasa máxima de impuestos disminuye)</Spanish>
-        <Russian>Да, ваше величество! Конечно! С превиликим удовольствием! (Заплатить требуемую сумму, максимальная налоговая ставка снижается)</Russian>
+        <Russian>Да, ваше величество! Конечно! С превеликим удовольствием! (Заплатить требуемую сумму, максимальная налоговая ставка снижается)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_KING_REFUSE_GOLD_1</Tag>
@@ -5847,7 +5847,7 @@
         <German>Eure Majestät, Ihr verwechselt mich mit Sankt Nikolaus. (König verärgern, maximaler Steuersatz steigt)</German>
         <Italian>Vostra Maestà, voi mi confondete con San Nicola. (Fai arrabbiare il re, il tasso massimo di tasse aumenta)</Italian>
         <Spanish>Su Majestad, me confunde con San Nicolás. (Enojar al rey, aumenta la tasa máxima de impuestos)</Spanish>
-        <Russian>Ваше Величество, Вы путаете меня со Святым Николаем. (Разгневать Короля, максимальная ставка налога увеличивается)</Russian>
+        <Russian>Ваше Величество, Вы путаете меня с Золотой антилопой. (Разгневать Короля, максимальная ставка налога увеличивается)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_KING_REFUSE_GOLD_3</Tag>
