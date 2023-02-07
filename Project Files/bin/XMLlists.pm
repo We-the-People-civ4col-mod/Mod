@@ -32,20 +32,20 @@ our @EXPORT = qw(
 # this means changing any of those files in a way that will alter the list of Types will require a recompile.
 sub isAlwaysHardcodedEnum
 {
-	my $file = shift;
+	my $type = shift;
 	
-	return 1 if $file eq "BasicInfos/CIV4DomainInfos.xml";
-	return 1 if $file eq "BasicInfos/CIV4UnitAIInfos.xml";
-	return 1 if $file eq "BasicInfos/CIV4InvisibleInfos.xml";
-	return 1 if $file eq "GameInfo/CIV4GameOptionInfos.xml";
-	return 1 if $file eq "GameInfo/CIV4PlayerOptionInfos.xml";
-	return 1 if $file eq "GameInfo/CIV4TradeScreenInfo.xml";
-	return 1 if $file eq "Terrain/CIV4TerrainInfos.xml";
-	return 1 if $file eq "Terrain/CIV4YieldInfos.xml";
-	return 1 if $file eq "Units/CIV4AutomateInfos.xml";
-	return 1 if $file eq "Units/CIV4CommandInfos.xml";
-	return 1 if $file eq "Units/CIV4ControlInfos.xml";
-	return 1 if $file eq "Units/CIV4MissionInfos.xml";
+	return 1 if $type eq "DomainTypes";
+	return 1 if $type eq "UnitAITypes";
+	return 1 if $type eq "InvisibleTypes";
+	return 1 if $type eq "GameOptionTypes";
+	return 1 if $type eq "PlayerOptionTypes";
+	return 1 if $type eq "TradeScreenTypes";
+	return 1 if $type eq "TerrainTypes";
+	return 1 if $type eq "YieldTypes";
+	return 1 if $type eq "AutomateTypes";
+	return 1 if $type eq "CommandTypes";
+	return 1 if $type eq "ControlTypes";
+	return 1 if $type eq "MissionTypes";
 	
 	return 0;
 }

@@ -77,8 +77,8 @@ EnumMapCore<IndexType, LengthType, VARIABLE_LENGTH_UNKNOWN>::EnumMapCore()
 
 template<class IndexType, class LengthType>
 EnumMapCore<IndexType, LengthType, VARIABLE_LENGTH_FIRST_KNOWN>::EnumMapCore()
-	: LAST(VARINFO<LengthType>::last())
-	, NUM_ELEMENTS(VARINFO<LengthType>::numElements())
+	: LAST(VARINFO<LengthType>::LAST)
+	, NUM_ELEMENTS(VARINFO<LengthType>::NUM_ELEMENTS)
 {
 }
 

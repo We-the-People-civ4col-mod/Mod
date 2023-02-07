@@ -95,6 +95,7 @@ foreach my $enum (@enums)
 	$output .= "\tstatic const VariableTypes TYPE = (int)" . $numTypes . " < 128 ? VARIABLE_TYPE_CHAR : VARIABLE_TYPE_SHORT;\n";
 	$output .= "\tstatic const VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING = VARIABLE_LENGTH_ALL_KNOWN;\n";
 	$output .= "\tstatic const $enum FIRST = " . $first . ";\n";
+	$output .= "\tstatic const $enum END = " . $numTypes . ";\n";
 	$output .= "\tstatic const $enum LAST = " . $numTypes . ";\n";
 	$output .= "\tstatic const $enum NUM_ELEMENTS = " . $numTypes . ";\n";
 	$output .= "\tstatic const $enum LENGTH = " . $numTypes . ";\n";

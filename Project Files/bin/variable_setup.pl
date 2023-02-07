@@ -19,6 +19,8 @@ my %var;
 my $output = "";
 my $output_cpp = "";
 my $output_case = "";
+my $output_cpp_init = "";
+my $output_cpp_declare = "";
 my @comparison_operators = ("==", "!=", "> ", "< ", ">=", "<=");
 
 my @compatible_variables = (
@@ -27,65 +29,65 @@ my @compatible_variables = (
 );
 
 
-$var{Achieve}          = {not_strict => 1};
+$var{Achieve}          = {not_strict => 1, XML => 1};
 $var{AreaAI}           = {not_strict => 1, JIT => "NO_JIT_ARRAY_TYPE"};
-$var{ArtStyle}         = {not_strict => 1};
-$var{Bonus}            = {not_strict => 1};
-$var{Build}            = {not_strict => 1};
-$var{Building}         = {not_strict => 1};
-$var{BuildingClass}    = {not_strict => 1};
-$var{SpecialBuilding}  = {not_strict => 1, JIT => "JIT_ARRAY_BUILDING_SPECIAL"};
-$var{CivCategory}      = {not_strict => 1, JIT => "JIT_ARRAY_CIV_CATEGORY", NUM => "NUM_CIV_CATEGORY_TYPES", COMPILE => "COMPILE_TIME_NUM_CIV_CATEGORY_TYPES"};
-$var{CivEffect}        = {not_strict => 1, JIT => "JIT_ARRAY_CIV_EFFECT", NUM => "NUM_CIV_EFFECT_TYPES", COMPILE => "COMPILE_TIME_NUM_CIV_EFFECT_TYPES"};
-$var{Civic}            = {not_strict => 1};
-$var{CivicOption}      = {not_strict => 1};
-$var{Civilization}     = {not_strict => 1};
+$var{ArtStyle}         = {not_strict => 1, XML => 1};
+$var{Bonus}            = {not_strict => 1, XML => 1};
+$var{Build}            = {not_strict => 1, XML => 1};
+$var{Building}         = {not_strict => 1, XML => 1};
+$var{BuildingClass}    = {not_strict => 1, XML => 1};
+$var{SpecialBuilding}  = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_BUILDING_SPECIAL"};
+$var{CivCategory}      = {not_strict => 1, JIT => "JIT_ARRAY_CIV_CATEGORY", NUM => "NUM_CIV_CATEGORY_TYPES", COMPILE => "COMPILE_TIME_NUM_CIV_CATEGORY_TYPES", HARDCODED => 1};
+$var{CivEffect}        = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_CIV_EFFECT", NUM => "NUM_CIV_EFFECT_TYPES", COMPILE => "COMPILE_TIME_NUM_CIV_EFFECT_TYPES"};
+$var{Civic}            = {not_strict => 1, XML => 1};
+$var{CivicOption}      = {not_strict => 1, XML => 1};
+$var{Civilization}     = {not_strict => 1, XML => 1};
 $var{CityPlot}         = {not_strict => 1, JIT => "NO_JIT_ARRAY_TYPE", NUM => "NUM_CITY_PLOTS", COMPILE => "NUM_CITY_PLOTS_2_PLOTS", LENGTH_KNOWN_WHILE_COMPILING => "0"};
-$var{Climate}          = {not_strict => 1};
+$var{Climate}          = {not_strict => 1, XML => 1};
 $var{Contact}          = {not_strict => 1};
-$var{Culture}          = {not_strict => 1, type => "CultureLevelTypes", NUM => "NUM_CULTURELEVEL_TYPES", COMPILE => "COMPILE_TIME_NUM_CULTURELEVEL_TYPES"};
-$var{Diplomacy}        = {};
-$var{Domain}           = {not_strict => 1};
+$var{Culture}          = {not_strict => 1, XML => 1, type => "CultureLevelTypes", NUM => "NUM_CULTURELEVEL_TYPES", COMPILE => "COMPILE_TIME_NUM_CULTURELEVEL_TYPES"};
+$var{Diplomacy}        = {XML => 1};
+$var{Domain}           = {not_strict => 1, XML => 1};
 $var{Emotion}          = {not_strict => 1};
-$var{Era}              = {not_strict => 1};
-$var{Emphasize}        = {not_strict => 1};
+$var{Era}              = {not_strict => 1, XML => 1};
+$var{Emphasize}        = {not_strict => 1, XML => 1};
 $var{Europe}           = {not_strict => 1};
-$var{Event}            = {not_strict => 1};
-$var{EventTrigger}     = {not_strict => 1, JIT => "JIT_ARRAY_EVENT_TRIGGER"};
-$var{Father}           = {not_strict => 1};
-$var{FatherPoint}      = {not_strict => 1, JIT => "JIT_ARRAY_FATHER_POINT", NUM => "NUM_FATHER_POINT_TYPES", COMPILE => "COMPILE_TIME_NUM_FATHER_POINT_TYPES"};
+$var{Event}            = {not_strict => 1, XML => 1};
+$var{EventTrigger}     = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_EVENT_TRIGGER"};
+$var{Father}           = {not_strict => 1, XML => 1};
+$var{FatherPoint}      = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_FATHER_POINT", NUM => "NUM_FATHER_POINT_TYPES", COMPILE => "COMPILE_TIME_NUM_FATHER_POINT_TYPES"};
 $var{Feat}             = {not_strict => 1};
-$var{Feature}          = {not_strict => 1};
-$var{GameOption}       = {not_strict => 1, JIT => "JIT_ARRAY_GAME_OPTION"};
-$var{GameSpeed}        = {not_strict => 1, JIT => "JIT_ARRAY_GAME_SPEED"};
-$var{Goody}            = {not_strict => 1};
-$var{Handicap}         = {not_strict => 1};
-$var{Hurry}            = {not_strict => 1};
-$var{Improvement}      = {not_strict => 1};
-$var{Invisible}        = {not_strict => 1};
-$var{LeaderHead}       = {not_strict => 1, JIT => "JIT_ARRAY_LEADER", NUM => "NUM_LEADER_TYPES", COMPILE => "COMPILE_TIME_NUM_LEADER_TYPES"};
+$var{Feature}          = {not_strict => 1, XML => 1};
+$var{GameOption}       = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_GAME_OPTION"};
+$var{GameSpeed}        = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_GAME_SPEED"};
+$var{Goody}            = {not_strict => 1, XML => 1};
+$var{Handicap}         = {not_strict => 1, XML => 1};
+$var{Hurry}            = {not_strict => 1, XML => 1};
+$var{Improvement}      = {not_strict => 1, XML => 1};
+$var{Invisible}        = {not_strict => 1, XML => 1};
+$var{LeaderHead}       = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_LEADER", NUM => "NUM_LEADER_TYPES", COMPILE => "COMPILE_TIME_NUM_LEADER_TYPES"};
 $var{Memory}           = {not_strict => 1};
 $var{Player}           = {not_strict => 1};
 $var{PlayerColor}      = {not_strict => 1, JIT => "JIT_ARRAY_PLAYER_COLOR"};
-$var{PlayerOption}     = {not_strict => 1, JIT => "JIT_ARRAY_PLAYER_OPTION"};
+$var{PlayerOption}     = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_PLAYER_OPTION"};
 $var{Plot}             = {not_strict => 1, get => "getPlotType", JIT => "JIT_ARRAY_PLOT_TYPE"};
-$var{Profession}       = {not_strict => 1};
-$var{Promotion}        = {not_strict => 1};
-$var{Route}            = {not_strict => 1};
-$var{SeaLevel}         = {not_strict => 1, JIT => "JIT_ARRAY_SEA_LEVEL"};
+$var{Profession}       = {not_strict => 1, XML => 1};
+$var{Promotion}        = {not_strict => 1, XML => 1};
+$var{Route}            = {not_strict => 1, XML => 1};
+$var{SeaLevel}         = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_SEA_LEVEL"};
 $var{Strategy}         = {not_strict => 1};
 $var{Team}             = {not_strict => 1};
-$var{Terrain}          = {not_strict => 1};
-$var{Trait}            = {};
-$var{Unit}             = {not_strict => 1};
-$var{UnitAI}           = {not_strict => 1};
-$var{UnitClass}        = {not_strict => 1};
-$var{UnitCombat}       = {not_strict => 1};
-$var{SpecialUnit}      = {not_strict => 1, JIT => "JIT_ARRAY_UNIT_SPECIAL"};
-$var{Victory}          = {not_strict => 1};
+$var{Terrain}          = {not_strict => 1, XML => 1};
+$var{Trait}            = {XML => 1};
+$var{Unit}             = {not_strict => 1, XML => 1};
+$var{UnitAI}           = {not_strict => 1, XML => 1};
+$var{UnitClass}        = {not_strict => 1, XML => 1};
+$var{UnitCombat}       = {not_strict => 1, XML => 1};
+$var{SpecialUnit}      = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_UNIT_SPECIAL"};
+$var{Victory}          = {not_strict => 1, XML => 1};
 $var{WarPlan}          = {not_strict => 1, JIT => "NO_JIT_ARRAY_TYPE"};
-$var{WorldSize}        = {not_strict => 1, JIT => "JIT_ARRAY_WORLD_SIZE"};
-$var{Yield}            = {not_strict => 1};
+$var{WorldSize}        = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_WORLD_SIZE"};
+$var{Yield}            = {not_strict => 1, XML => 1};
 
 
 $var{int}              = {var => 1, get => "getInt"};
@@ -122,6 +124,8 @@ foreach my $name (sort(keys %var))
 	$var{$name}{COMPILE} = "COMPILE_TIME_NUM_" . $NAME . "_TYPES" unless exists $var{$name}{COMPILE};
 	$var{$name}{START} = "static_cast<$type>(0)" unless exists $var{$name}{START};
 	$var{$name}{END} = $var{$name}{NUM} unless exists $var{$name}{END};
+	$var{$name}{HARDCODED} = exists $var{$name}{XML} ? isAlwaysHardcodedEnum($type) : 1;
+	
 	
 	if (exists $var{$name}{LENGTH_KNOWN_WHILE_COMPILING})
 	{
@@ -140,6 +144,18 @@ foreach my $name (sort(keys %var))
 	
 	$output .= "\n"; # extra newline between different variables
 }
+
+$output_cpp .= "// Here there is a static const reference from the classes pointing to non-const local yet persistent variable.\n";
+$output_cpp .= "// This way the variables can be read only except for in this file there they are set once at startup.\n";
+$output_cpp .= "// Yes it looks messy. That's why they are autogenerated to ensure completeness despite looking ugly.\n";
+$output_cpp .= "#ifndef HARDCODE_XML_VALUES\n";
+$output_cpp .= $output_cpp_declare;
+$output_cpp .= "#endif\n\n";
+$output_cpp .= "void setupVARINFO()\n{\n";
+$output_cpp .= "#ifndef HARDCODE_XML_VALUES\n";
+$output_cpp .= $output_cpp_init;
+$output_cpp .= "#endif\n}\n\n";
+
 
 $output .= "#endif // !ENUM_SPECIALIZED_FUNCTIONS_H\n";
 $output_cpp .= "#endif // !ENUM_SPECIALIZED_FUNCTIONS_CPP_H\n";
@@ -270,10 +286,25 @@ sub handleStruct
 	$output .= "};\n";
 }
 
+sub addVariableConstant
+{
+	my $name = shift;
+	my $var = shift;
+	my $initVal = shift;
+	
+	my $type = $var{$name}{type};
+	
+	$output .= "\tconst static $type& $var;\n";
+	$output_cpp_init .= "\tVARINFO_" . $type . "_$var = $initVal;\n";
+	$output_cpp_declare .= "$type VARINFO_" . $type . "_$var;\n";
+	$output_cpp_declare .= "const $type& VARINFO<$type>::$var = VARINFO_" . $type . "_$var;\n";
+}
+
 sub structEnum
 {
 	my $name = shift;
 	my $type = $var{$name}{type};
+	my $hardcoded = $var{$name}{HARDCODED};
 	
 	addgetIndexOfTypeCase($type, $var{$name}{JIT});
 	
@@ -281,28 +312,30 @@ sub structEnum
 	$output .= "\tstatic const VariableTypes TYPE = (int)" . $var{$name}{COMPILE} . " < 128 ? VARIABLE_TYPE_CHAR : VARIABLE_TYPE_SHORT;\n";
 	$output .= "\tstatic const VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING = (int)" . $var{$name}{LENGTH_KNOWN_WHILE_COMPILING} . " != MAX_SHORT ? VARIABLE_LENGTH_ALL_KNOWN : VARIABLE_LENGTH_FIRST_KNOWN;\n";
 	$output .= "\tstatic const $type FIRST = " . $var{$name}{START} . ";\n";
-	$output .= "\tstatic const $type LAST = static_cast<" . $type . ">((int)" . $var{$name}{END} . " - 1);\n";
-	$output .= "\tstatic const $type NUM_ELEMENTS = static_cast<" . $type . ">((int)LAST - (int)FIRST + 1);\n";
+	
+	$output .= "#ifdef HARDCODE_XML_VALUES\n" unless $hardcoded;
+	$output .= "\tstatic const $type END = $var{$name}{END};\n";
+	$output .= "\tstatic const $type LAST = static_cast<" . $type . ">((int)END - 1);\n";
+	$output .= "\tstatic const $type NUM_ELEMENTS = static_cast<" . $type . ">((int)END - (int)FIRST);\n";
+	
+	unless ($hardcoded)
+	{
+		$output .= "#else\n";
+		
+		addVariableConstant($name, "END", "$var{$name}{END}");
+		addVariableConstant($name, "LAST", "$var{$name}{END} - static_cast<$type>(1)");
+		addVariableConstant($name, "NUM_ELEMENTS", "VARINFO<$type>::END - VARINFO<$type>::FIRST");
+		
+		$output .= "#endif\n";
+	}
 	$output .= "\tstatic const $type LENGTH = " . $var{$name}{COMPILE} . ";\n";
-	$output .= "\tstatic $type first() { return " . $var{$name}{START} . ";}\n";
-	$output .= "\tstatic $type last() { return " . $var{$name}{END} . " - static_cast<" . $type . ">(1);}\n";
-	$output .= "\tstatic $type numElements() { return last() - first() + static_cast<" . $type . ">(1);}\n";
-	$output .= "\tstatic $type start() { return " . $var{$name}{START} . ";}\n";
-	$output .= "\tstatic $type end() { return " . $var{$name}{END} . ";}\n";
-	$output .= "\tstatic $type length() { return end() - start();}\n";
-	$output .= "\tstatic bool isInRange($type eIndex) { return _isInRange<LENGTH_KNOWN_WHILE_COMPILING>(eIndex);}\n";
+	$output .= "\tstatic bool isInRange($type eIndex) { return eIndex >= FIRST && eIndex < END; }\n";
 	$output .= "\ttemplate <int T> struct STATIC {\n";
 	$output .= "\t\tstatic const VariableStaticTypes VAL = T * ((int)TYPE == (int)VARIABLE_TYPE_CHAR ? 1 : 2) <= 4 ? VARIABLE_TYPE_STATIC : VARIABLE_TYPE_DYNAMIC;\n";
 	$output .= "\t};\n";
 	$output .= "\ttemplate <int T> struct COMPATIBLE {\n";
 	$output .= "\t\tstatic const bool VAL = boost::is_same<" . $type . ", T>::VAL;\n";
 	$output .= "\t};\n";
-	$output .= "protected:\n";
-	$output .= "\ttemplate<int KNOWN>	static bool _isInRange(" . $type . " eIndex) {}\n";
-	$output .= "\ttemplate<>	static bool _isInRange<0>(" . $type . " eIndex) { return eIndex >= first() && eIndex <= last(); }\n";
-	$output .= "\ttemplate<>	static bool _isInRange<1>(" . $type . " eIndex) { return eIndex >= FIRST && eIndex <= last(); }\n";
-	$output .= "\ttemplate<>	static bool _isInRange<2>(" . $type . " eIndex) { return eIndex >= FIRST && eIndex <= LAST; }\n";
-
 	$output_cpp .= "template<>\nconst char* getTypeStr($type eIndex)\n{\n";
 	$output_cpp .= "\treturn getArrayType(VARINFO<$type>::JIT, eIndex);\n";
 	$output_cpp .= "}\n\n";

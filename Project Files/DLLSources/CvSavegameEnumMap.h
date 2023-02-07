@@ -17,7 +17,7 @@ inline void CvSavegameReader::ReadEnumMap<VARIABLE_TYPE_BOOL>::Read(CvSavegameRe
 	BOOST_STATIC_ASSERT(bValid);
 	em.reset();
 
-	const int iLength = reader.GetXmlSize(VARINFO<LengthType>::JIT) > 0 ? reader.GetXmlSize(VARINFO<LengthType>::JIT) : VARINFO<LengthType>::length();
+	const int iLength = reader.GetXmlSize(VARINFO<LengthType>::JIT) > 0 ? reader.GetXmlSize(VARINFO<LengthType>::JIT) : VARINFO<LengthType>::NUM_ELEMENTS;
 
 	LengthType eStart;
 	LengthType eEnd;
@@ -179,8 +179,7 @@ inline void CvSavegameWriter::WriteEnumMap<TYPE2>::Write(CvSavegameWriter& kWrit
 	SavegameEnumMapTokenWrite<IndexType, LengthType>* Token = NULL;
 	std::list<SavegameEnumMapTokenWrite<IndexType, LengthType>* > tokens;
 
-	const IndexType eEnd = (IndexType)VARINFO<LengthType>::end();
-	for (IndexType i = (IndexType)VARINFO<LengthType>::start(); i < eEnd; ++i)
+	for (IndexType i = (IndexType)VARINFO<LengthType>::FIRST; i < (IndexType)VARINFO<LengthType>::END; ++i)
 	{
 		if (em.getDefault() != em.get(i))
 		{
@@ -269,8 +268,7 @@ inline void CvSavegameWriter::WriteEnumMap<VARIABLE_TYPE_CLASS>::Write(CvSavegam
 	SavegameEnumMapTokenWrite<IndexType, LengthType>* Token = NULL;
 	std::list<SavegameEnumMapTokenWrite<IndexType, LengthType>* > tokens;
 
-	const IndexType eEnd = (IndexType)VARINFO<LengthType>::end();
-	for (IndexType i = (IndexType)VARINFO<LengthType>::start(); i < eEnd; ++i)
+	for (IndexType i = (IndexType)VARINFO<LengthType>::FIRST; i < (IndexType)VARINFO<LengthType>::END; ++i)
 	{
 		if (em[i].hasContent())
 		{

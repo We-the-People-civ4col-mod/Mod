@@ -14,7 +14,7 @@ static T getIndexOfType(T& eIndex, const char* szType)
 {
 	if (*szType != 0 && strcmp(szType, "NONE") != 0)
 	{
-		for (eIndex = VARINFO<T>::start(); eIndex < VARINFO<T>::end(); ++eIndex)
+		for (eIndex = VARINFO<T>::FIRST; eIndex < VARINFO<T>::END; ++eIndex)
 		{
 			if (strcmp(getTypeStr(eIndex), szType) == 0)
 			{

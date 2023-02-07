@@ -104,7 +104,7 @@
 
 	template<typename T, typename T2>
 	inline SavegameEnumMapTokenRead<T, T2>::SavegameEnumMapTokenRead(CvSavegameReader& kReader)
-		: SavegameEnumMapToken<T>(kReader.GetXmlSize(VARINFO<T2>::JIT) > 0 ? kReader.GetXmlSize(VARINFO<T2>::JIT) : VARINFO<T2>::length())
+		: SavegameEnumMapToken<T>(kReader.GetXmlSize(VARINFO<T2>::JIT) > 0 ? kReader.GetXmlSize(VARINFO<T2>::JIT) : VARINFO<T2>::NUM_ELEMENTS)
 	{
 		kReader.Read(m_Array[0]);
 		if (m_iMode != 0) // two byte start index
@@ -131,7 +131,7 @@
 	
 	template<typename T, typename T2>
 	inline SavegameEnumMapTokenWrite<T, T2>::SavegameEnumMapTokenWrite()
-		: SavegameEnumMapToken<T>(VARINFO<T2>::length())
+		: SavegameEnumMapToken<T>(VARINFO<T2>::NUM_ELEMENTS)
 	{
 	}
 

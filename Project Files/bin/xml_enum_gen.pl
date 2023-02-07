@@ -114,7 +114,7 @@ sub processFile
 
 	my ($basename, $enum, $TYPE) = getXMLKeywords($filename);
 	
-	my $isHardcoded = isAlwaysHardcodedEnum($filename);
+	my $isHardcoded = isAlwaysHardcodedEnum($enum);
 	
 	my $hardcodedBool = "true";
 	$hardcodedBool = "false" unless $isHardcoded;
