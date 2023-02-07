@@ -6,6 +6,16 @@
 //
 // Python interface for free enums
 //
+
+template<typename T>
+static void addEnumValues(boost::python::enum_<T>& enumReference)
+{
+	for (T eLoopVar = VARINFO<T>::FIRST; eLoopVar < VARINFO<T>::END; ++eLoopVar)
+	{
+		enumReference.value(getTypeStr(eLoopVar), eLoopVar);
+	}
+}
+
 void CyEnumsPythonInterface()
 {
 	OutputDebugString("Python Extension Module - CyEnumsPythonInterface\n");
@@ -387,10 +397,7 @@ void CyEnumsPythonInterface()
 			.value("NO_WORLDSIZE", NO_WORLDSIZE)
 			.value("NUM_WORLDSIZE_TYPES", NUM_WORLDSIZE_TYPES)
 			;
-		for (WorldSizeTypes eSize = FIRST_WORLDSIZE; eSize < NUM_WORLDSIZE_TYPES; ++eSize)
-		{
-			WorldSizeTable.value(getTypeStr(eSize), eSize);
-		}
+		addEnumValues(WorldSizeTable);
 	}
 	python::enum_<TerrainTypes>("TerrainTypes")
 		// WTP, ray, making at least fresh water terraubs available to Python
