@@ -2011,7 +2011,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FREE_IN_CITY</Tag>
-        <English>[ICON_BULLET]Free[LINK=literal]%s1_Name[\LINK] in every settlement</English>
+        <English>[ICON_BULLET]Free [LINK=literal]%s1_Name[\LINK] in every settlement</English>
         <French>[ICON_BULLET]Un bâtiment : [LINK=literal]%s1_Name[\LINK] gratuit dans chaque colonie</French>
         <German>[ICON_BULLET]Freies Gebäude [LINK=literal]%s1_Name[\LINK] in jeder Siedlung</German>
         <Italian>[ICON_BULLET][LINK=literal]%s1_Name[\LINK] [NUM1:gratuito:gratuita:gratuiti:gratuite] in ogni insediamento</Italian>

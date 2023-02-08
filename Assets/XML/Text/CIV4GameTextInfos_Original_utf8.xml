@@ -10230,6 +10230,7 @@
         <German>[ICON_BULLET]%D1%% Produktion Großer Generäle</German>
         <Italian>[ICON_BULLET]%D1%% comparsa di un Grande Generale</Italian>
         <Spanish>[ICON_BULLET]%D1%% de aparición de Gran general</Spanish>
+        <Russian>[ICON_BULLET]%D1%% к скорости появления Великого Генерала</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_DOMESTIC_GREAT_GENERAL_MODIFIER</Tag>
@@ -10238,6 +10239,7 @@
         <German>[ICON_BULLET]%D1%% Produktion Großer Generäle innerhalb der kulturellen Grenzen</German>
         <Italian>[ICON_BULLET]%D1%% comparsa di un Grande Generale all'interno dei confini culturali</Italian>
         <Spanish>[ICON_BULLET]%D1%% de aparición de un Gran general dentro de las fronteras culturales</Spanish>
+        <Russian>[ICON_BULLET]%D1%% к скорости появления Великого Генерала (внутри культурных границ)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_GREAT_GENERAL_MODIFIER</Tag>
@@ -10246,6 +10248,7 @@
         <German>[ICON_BULLET]%D1_Mod%% Produktion Großer Generäle innerhalb der kulturellen Grenzen</German>
         <Italian>[ICON_BULLET]%D1_Mod%% comparsa di un Grande Generale all'interno dei confini culturali</Italian>
         <Spanish>[ICON_BULLET]%D1_Mod%% a la aparición de un Gran general dentro de las fronteras culturales</Spanish>
+        <Russian>[ICON_BULLET]%D1_Mod%% к скорости появления Великого Генерала (внутри культурных границ)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LEADER_EXPERIENCE</Tag>
@@ -10254,6 +10257,7 @@
         <German>[ICON_BULLET]Kann bis zu %d1 EP auf jede Einheit auf demselben Geländefeld übertragen</German>
         <Italian>[ICON_BULLET]Può dare %d1 di esperienza alle unità presenti nella stessa casella</Italian>
         <Spanish>[ICON_BULLET]Puede dar hasta %d1 PX a cada unidad que esté en la misma casilla.</Spanish>
+        <Russian>[ICON_BULLET]Может дать до %d1 XP каждому юниту на одной клетке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_GREAT_GENERAL</Tag>
@@ -10262,6 +10266,7 @@
         <German>Großer General : %d1_Curr/%d2_Need Erfahrung</German>
         <Italian>Grande Generale : %d1_Curr/%d2_Need esperienza</Italian>
         <Spanish>Gran general : %d1_Curr/%d2_Need de experiencia</Spanish>
+        <Russian>Великий Генерал : %d1_Curr/%d2_Need опыта</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_GREAT_ADMIRAL</Tag>
@@ -10270,6 +10275,7 @@
         <German>Großer Admiral : %d1_Curr/%d2_Need Erfahrung</German>
         <Italian>Grande Admirale : %d1_Curr/%d2_Need esperienza</Italian>
         <Spanish>Gran admiral : %d1_Curr/%d2_Need de experiencia</Spanish>
+        <Russian>Великий Адмирал : %d1_Curr/%d2_Need опыта</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_GENERAL_KILLED</Tag>
@@ -10278,6 +10284,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1_warlord[COLOR_REVERT] ist im Kampf gefallen!</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1_warlord[COLOR_REVERT] è morto in battaglia!</Italian>
         <Spanish>¡[COLOR_HIGHLIGHT_TEXT]%s1_warlord[COLOR_REVERT] ha muerto en combate!</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_warlord[COLOR_REVERT] погиб в неравном бою!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DROP_VOTE_HEADER_CORRECTED</Tag>
@@ -10318,6 +10325,7 @@
         <German>Rückzugschance : %s1%%</German>
         <Italian>Probabilità di ritirata : %s1%%</Italian>
         <Spanish>Probabilidades de retirada : %s1%%</Spanish>
+        <Russian>Шанс на отступление : %s1%%</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_LOADSAVE_CREATE</Tag>
