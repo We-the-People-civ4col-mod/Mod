@@ -10,12 +10,6 @@
 
 
 #ifndef CHECK_GLOBAL_CONSTANTS
-
-extern CityPlotTypes NUM_CITY_PLOTS;
-extern CityPlotTypes LAST_CITY_PLOT;
-extern CityPlotTypes CITY_PLOTS_DIAMETER;
-extern CityPlotTypes CITY_PLOTS_RADIUS;
-
 extern ArtStyleTypes NUM_ARTSTYLE_TYPES;
 extern ColorTypes NUM_COLOR_TYPES;
 extern PlayerColorTypes NUM_PLAYERCOLOR_TYPES;

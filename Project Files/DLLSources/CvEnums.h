@@ -161,13 +161,12 @@ enum CityPlotTypes
 
 	NUM_CITY_PLOTS_1_PLOT = 9,
 	NUM_CITY_PLOTS_2_PLOTS = 25,
-
-#ifdef CHECK_GLOBAL_CONSTANTS
-	CITY_PLOTS_RADIUS,
-	NUM_CITY_PLOTS,
-	CITY_PLOTS_DIAMETER,
-#endif
 };
+
+extern const CityPlotTypes& CITY_PLOTS_RADIUS;
+extern const CityPlotTypes& NUM_CITY_PLOTS;
+extern const CityPlotTypes& LAST_CITY_PLOT;
+extern const CityPlotTypes& CITY_PLOTS_DIAMETER;
 
 #define NUM_CityPlot_TYPES NUM_CITY_PLOTS
 

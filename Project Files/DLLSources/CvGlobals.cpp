@@ -553,40 +553,6 @@ void CvGlobals::init()
 	this->setCityCatchmentRadius(0);
 }
 
-void CvGlobals::setCityCatchmentRadius(int iRadius)
-{
-	// Ideally this assert should trigger if altered after players are added, but it doesn't look like there are any way to check that.
-	// What really should be checked here is that the total count of cities in the game should be 0.
-//	FAssert(!GC.getGameINLINE().isFinalInitialized());
-#ifndef CHECK_GLOBAL_CONSTANTS
-	CITY_PLOTS_RADIUS = static_cast<CityPlotTypes>(iRadius);
-	if (iRadius == 1)
-	{
-		m_aaiXYCityPlot = m_aaiXYCityPlot_1_plot;
-		NUM_CITY_PLOTS = NUM_CITY_PLOTS_1_PLOT;
-		CITY_PLOTS_DIAMETER = static_cast<CityPlotTypes>(3);
-		m_iMIN_CITY_RANGE = getDefineINT("MIN_CITY_RANGE");
-		GC.setDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE", GC.getDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE_ONE_PLOT"));
-	}
-	else if (iRadius == 2)
-	{
-		m_aaiXYCityPlot = m_aaiXYCityPlot_2_plot;
-		NUM_CITY_PLOTS = NUM_CITY_PLOTS_2_PLOTS;
-		CITY_PLOTS_DIAMETER = static_cast<CityPlotTypes>(5);
-		m_iMIN_CITY_RANGE = getDefineINT("MIN_CITY_RANGE_TWO_PLOT");
-		GC.setDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE", GC.getDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE_TWO_PLOT"));
-	}
-	else
-	{
-		// invalid setting (likely 0). Use UserSetting value.
-		// Odds are that a scenario is read and the radius isn't specified.
-		UserSettings settings;
-		setCityCatchmentRadius(settings.getColonyRadius());
-	}
-	LAST_CITY_PLOT = NUM_CITY_PLOTS - static_cast<CityPlotTypes>(1);
-#endif
-}
-
 //
 // free
 //

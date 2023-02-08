@@ -179,6 +179,7 @@ inline void CvSavegameWriter::WriteEnumMap<TYPE2>::Write(CvSavegameWriter& kWrit
 	SavegameEnumMapTokenWrite<IndexType, LengthType>* Token = NULL;
 	std::list<SavegameEnumMapTokenWrite<IndexType, LengthType>* > tokens;
 
+	FAssertMsg((int)VARINFO<LengthType>::END != 0, CvString::format("Saving EnumMap of length 0. Type: %s", VARINFO<LengthType>::getName()));
 	for (IndexType i = (IndexType)VARINFO<LengthType>::FIRST; i < (IndexType)VARINFO<LengthType>::END; ++i)
 	{
 		if (em.getDefault() != em.get(i))
@@ -268,6 +269,7 @@ inline void CvSavegameWriter::WriteEnumMap<VARIABLE_TYPE_CLASS>::Write(CvSavegam
 	SavegameEnumMapTokenWrite<IndexType, LengthType>* Token = NULL;
 	std::list<SavegameEnumMapTokenWrite<IndexType, LengthType>* > tokens;
 
+	FAssertMsg((int)VARINFO<LengthType>::END != 0, CvString::format("Saving EnumMap of length 0. Type: %s", VARINFO<LengthType>::getName()));
 	for (IndexType i = (IndexType)VARINFO<LengthType>::FIRST; i < (IndexType)VARINFO<LengthType>::END; ++i)
 	{
 		if (em[i].hasContent())

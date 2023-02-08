@@ -286,6 +286,23 @@ sub handleStruct
 	$output .= "};\n";
 }
 
+sub assignCustomFirstEnd
+{
+	my $name = shift;
+	
+	if ($name eq "CityPlot")
+	{
+		$output .= "\tstatic const CityPlotTypes& END;\n";
+		$output .= "\tstatic const CityPlotTypes& LAST;\n";
+		$output .= "\tstatic const CityPlotTypes& NUM_ELEMENTS;\n";
+	}
+	else
+	{
+		return 0;
+	}
+	return 1;
+}
+
 sub addVariableConstant
 {
 	my $name = shift;
@@ -313,20 +330,23 @@ sub structEnum
 	$output .= "\tstatic const VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING = (int)" . $var{$name}{LENGTH_KNOWN_WHILE_COMPILING} . " != MAX_SHORT ? VARIABLE_LENGTH_ALL_KNOWN : VARIABLE_LENGTH_FIRST_KNOWN;\n";
 	$output .= "\tstatic const $type FIRST = " . $var{$name}{START} . ";\n";
 	
-	$output .= "#ifdef HARDCODE_XML_VALUES\n" unless $hardcoded;
-	$output .= "\tstatic const $type END = $var{$name}{END};\n";
-	$output .= "\tstatic const $type LAST = static_cast<" . $type . ">((int)END - 1);\n";
-	$output .= "\tstatic const $type NUM_ELEMENTS = static_cast<" . $type . ">((int)END - (int)FIRST);\n";
-	
-	unless ($hardcoded)
+	unless (assignCustomFirstEnd($name))
 	{
-		$output .= "#else\n";
+		$output .= "#ifdef HARDCODE_XML_VALUES\n" unless $hardcoded;
+		$output .= "\tstatic const $type END = $var{$name}{END};\n";
+		$output .= "\tstatic const $type LAST = static_cast<" . $type . ">((int)END - 1);\n";
+		$output .= "\tstatic const $type NUM_ELEMENTS = static_cast<" . $type . ">((int)END - (int)FIRST);\n";
 		
-		addVariableConstant($name, "END", "$var{$name}{END}");
-		addVariableConstant($name, "LAST", "$var{$name}{END} - static_cast<$type>(1)");
-		addVariableConstant($name, "NUM_ELEMENTS", "VARINFO<$type>::END - VARINFO<$type>::FIRST");
-		
-		$output .= "#endif\n";
+		unless ($hardcoded)
+		{
+			$output .= "#else\n";
+			
+			addVariableConstant($name, "END", "$var{$name}{END}");
+			addVariableConstant($name, "LAST", "$var{$name}{END} - static_cast<$type>(1)");
+			addVariableConstant($name, "NUM_ELEMENTS", "VARINFO<$type>::END - VARINFO<$type>::FIRST");
+			
+			$output .= "#endif\n";
+		}
 	}
 	$output .= "\tstatic const $type LENGTH = " . $var{$name}{COMPILE} . ";\n";
 	$output .= "\tstatic bool isInRange($type eIndex) { return eIndex >= FIRST && eIndex < END; }\n";
