@@ -2511,7 +2511,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_MINSTER</Tag>
-        <English>Milord, the church commands us to make every effors to spread the word of God. We are ordered to build a Cathedral of the Archbishop to show the glory and light of Christ to the common people. In return we are promised that, if we are the first to achieve this, more bishops will be sent to our colonies.</English>
+        <English>Milord, the church commands us to make every effort to spread the word of God. We are ordered to build a Cathedral of the Archbishop to show the glory and light of Christ to the common people. In return we are promised that, if we are the first to achieve this, more bishops will be sent to our colonies.</English>
         <German>Milord, die Kirche befiehlt uns unsere Anstrengungen das Wort Gottes zu verbreiten zu verstärken. Uns wurde aufgetragen eine Kathedrale für den Erzbischof zu errichten um auch dem einfachen Volk den Ruhm und das Licht Christi zu zeigen. Uns wurde versprochen, dass weitere Bischöfe in die Kolonien geschickt werden, wenn wir dies als erste erreichen.</German>
     </TEXT>
     <TEXT>
@@ -2536,7 +2536,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_MINSTER_DONE_1</Tag>
-        <English>We trust that our new bishops will take good care of souls of our citizens.</English>
+        <English>We trust that our new bishops will take good care of the souls of our citizens.</English>
         <German>Wir vertrauen darauf, dass unsere neuen Bischöfe sich gut um die Seelen unserer Bürger kümmern werden.</German>
     </TEXT>
     <TEXT>
@@ -2601,7 +2601,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SIX_WARSHIPS_QUEST</Tag>
-        <English>Milord, His Majesty and the court are delighted with the first warships we acquired. We are promised that, once we have a war fleet of at least [COLOR_HIGHLIGHT_TEXT]six ships at least the size of a frigate[COLOR_REVERT], His Majesty will deliver to us one of his finest [COLOR_HIGHLIGHT_TEXT]royal man-o-wars[COLOR_REVERT] as flagship for our fleet.</English>
+        <English>Milord, His Majesty and the court are delighted with the first warships we acquired. We are promised that, once we have a war fleet of at least [COLOR_HIGHLIGHT_TEXT]six ships frigate-size or better[COLOR_REVERT], His Majesty will deliver one of his finest [COLOR_HIGHLIGHT_TEXT]royal man-o-wars[COLOR_REVERT] to us as flagship for our fleet.</English>
         <German>Milord, Ihre Majestät und der Hof sind hocherfreut über die ersten Kriegsschiffe, die wir erworben haben. Unse wurde versprochen dass sobald wir eine Kriegsflotte von mindestens [COLOR_HIGHLIGHT_TEXT]sechs Schiffen der Größe einer Frigate[COLOR_REVERT] oder mehr haben, uns Ihre Majestät eine seiner feinsten [COLOR_HIGHLIGHT_TEXT]Königlichen Schlachtschiffe[COLOR_REVERT] als Flagschiff unserer Flotte überläßt.</German>
     </TEXT>
     <TEXT>
@@ -3575,7 +3575,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_2</Tag>
-		<English>Are so many criminals good? It doesn't matter, as long as they have strong backs!</English>
+		<English>Is it good to have so many criminals? It doesn't matter, as long as they have strong backs!</English>
 		<German>Ob so viele Kriminelle gut sind? Naja egal, Hauptsache sie können gut zupacken!</German>
 	</TEXT>
 	<TEXT>
@@ -3600,7 +3600,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_7</Tag>
-		<English>Fortunately, all the building materials have been delivered. That quantity would be hopelessly overburden our trading fleet.</English>
+		<English>Fortunately, all the building materials have been delivered. That quantity would hopelessly overburden our trading fleet.</English>
 		<German>Zum Glück werden die ganzen Baumaterialien geliefert! Unsere Handelsflotte wäre damit heillos überfordert.</German>
 	</TEXT>
 	<TEXT>
