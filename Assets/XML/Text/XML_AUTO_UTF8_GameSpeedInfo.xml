@@ -7,6 +7,7 @@
         <German>(16 Monate/Zug) Schnell</German>
         <Italian>(16 mesi/turno) Veloce</Italian>
         <Spanish>(16 meses/turno) Rápida</Spanish>
+        <Russian>Быстрая (16 месяцев/ход)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMESPEED_TAC_QUICK_HELP</Tag>
@@ -23,6 +24,7 @@
         <German>(12 Monate/Zug) Normal</German>
         <Italian>(12 mesi/turno) Normale</Italian>
         <Spanish>(12 meses/turno) Normal</Spanish>
+        <Russian>Нормальная (12 месяцев/ход)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMESPEED_TAC_NORMAL_HELP</Tag>
@@ -39,6 +41,7 @@
         <German>(6 Monate/Zug) Episch</German>
         <Italian>(6 mesi/turno) Epica</Italian>
         <Spanish>(6 meses/turno) Épica</Spanish>
+        <Russian>Эпичная (6 месяцев/ход)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMESPEED_TAC_EPIC_HELP</Tag>
@@ -55,6 +58,7 @@
         <German>(4 Monate/Zug) Marathon</German>
         <Italian>(4 mesi/turno) Maratona</Italian>
         <Spanish>(4 meses/turno) Maratón</Spanish>
+        <Russian>Марафон (4 месяца/ход)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMESPEED_TAC_MARATHON_HELP</Tag>

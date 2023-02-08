@@ -7,6 +7,7 @@
         <German>Pilger (am leichtesten)</German>
         <Italian>Pellegrino (diff. min.)</Italian>
         <Spanish>Peregrino (más fácil)</Spanish>
+        <Russian>Пилигрим (самый простой)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HANDICAP_PILGRIM_HELP</Tag>
@@ -23,6 +24,7 @@
         <German>Pionier</German>
         <Italian>Pioniere</Italian>
         <Spanish>Pionero</Spanish>
+        <Russian>Первопроходец</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HANDICAP_PIONEER_HELP</Tag>
@@ -39,6 +41,7 @@
         <German>Kundschafter (Ausgewogen)</German>
         <Italian>Esploratore</Italian>
         <Spanish>Explorador</Spanish>
+        <Russian>Исследователь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HANDICAP_EXPLORER_HELP</Tag>
@@ -55,6 +58,7 @@
         <German>Eroberer</German>
         <Italian>Conquistador</Italian>
         <Spanish>Conquistador</Spanish>
+        <Russian>Конкистадор</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HANDICAP_CONQUISTADOR_HELP</Tag>
@@ -71,6 +75,7 @@
         <German>Gouverneur</German>
         <Italian>Governatore</Italian>
         <Spanish>Gobernante</Spanish>
+        <Russian>Губернатор</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HANDICAP_GOVERNOR_HELP</Tag>
@@ -87,6 +92,7 @@
         <German>Patriot</German>
         <Italian>Patriota</Italian>
         <Spanish>Patriota</Spanish>
+        <Russian>Патриот</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HANDICAP_PATRIOT_HELP</Tag>
@@ -103,6 +109,7 @@
         <German>Revolutionär (am schwierigsten)</German>
         <Italian>Rivoluzionario (max)</Italian>
         <Spanish>Revoluc. (más difícil)</Spanish>
+        <Russian>Революционер (самый сложный)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HANDICAP_REVOLUTIONARY_HELP</Tag>

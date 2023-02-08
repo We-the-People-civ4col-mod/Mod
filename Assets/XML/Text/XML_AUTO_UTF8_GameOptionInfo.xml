@@ -103,6 +103,7 @@
         <German>Neuer Random Seed bei erneutem Laden</German>
         <Italian>Nuova estrazione casuale per ricarica</Italian>
         <Spanish>Nueva "seed" aleatoria al volver a cargar</Spanish>
+        <Russian>Новый случайный результат после загрузки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NEW_RANDOM_SEED_HELP</Tag>
@@ -135,6 +136,7 @@
         <German>Keine Siedlungsvernichtung</German>
         <Italian>Nessuna possibilità di razziare gli insediamenti</Italian>
         <Spanish>Sin arrasar asentamientos</Spanish>
+        <Russian>Без уничтожения городов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_CITY_RAZING_HELP</Tag>
@@ -151,6 +153,7 @@
         <German>Keine Zufallsereignisse</German>
         <Italian>Nessun evento casuale</Italian>
         <Spanish>Sin sucesos al azar</Spanish>
+        <Russian>Без рандомных событий</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_EVENTS_HELP</Tag>
@@ -167,6 +170,7 @@
         <German>Keine antiken Ruinen</German>
         <Italian>Nessuna antica rovina</Italian>
         <Spanish>Sin Ruinas antiguas</Spanish>
+        <Russian>Без Древних руин</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_GOODY_HUTS_HELP</Tag>
@@ -183,6 +187,7 @@
         <German>Keine versteckten Variablen mehr</German>
         <Italian>Niente più variabili nascoste</Italian>
         <Spanish>No hay más variables ocultas</Spanish>
+        <Russian>Без скрытых переменных</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_MORE_VARIABLES_HIDDEN_HELP</Tag>
@@ -199,6 +204,7 @@
         <German>Keine Wilden Tiere an Land</German>
         <Italian>Nessun animale selvatico della terra</Italian>
         <Spanish>No hay animales terrestres salvajes</Spanish>
+        <Russian>Без Диких животных на земле</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_WILD_LAND_ANIMALS_HELP</Tag>
@@ -215,6 +221,7 @@
         <German>Keine Wilden Tiere im Wasser</German>
         <Italian>Nessun animale marino selvaggio</Italian>
         <Spanish>No hay animales marinos salvajes</Spanish>
+        <Russian>Без Диких животных на море</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_WILD_SEA_ANIMALS_HELP</Tag>
@@ -231,6 +238,7 @@
         <German>Einzelsiedlungswettkampf</German>
         <Italian>Sfida con un singolo insediamento</Italian>
         <Spanish>Reto de un solo asentamiento</Spanish>
+        <Russian>Испытание одним городом</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ONE_CITY_CHALLENGE_HELP</Tag>
@@ -247,6 +255,7 @@
         <German>Allianzen</German>
         <Italian>Alleanze permanenti</Italian>
         <Spanish>Alianzas permanentes</Spanish>
+        <Russian>Постоянные союзы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_PERMANENT_ALLIANCES_HELP</Tag>
@@ -263,6 +272,7 @@
         <German>Beliebige Siedlungsgebiete der Ureinwohner</German>
         <Italian>Aree di insediamento casuali di nativi</Italian>
         <Spanish>Zonas de asentamiento aleatorio de nativos</Spanish>
+        <Russian>Случайные районы расселения коренных жителей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_RANDOM_SETTLEMENT_AREAS_HELP</Tag>
@@ -279,6 +289,7 @@
         <German>Reduzierte Distanz zwischen Kolonien</German>
         <Italian>Distanza ridotta tra le colonie</Italian>
         <Spanish>Reducción de la distancia entre colonias</Spanish>
+        <Russian>Уменьшить растояние между колониями</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_REDUCED_CITY_DISTANCE_HELP</Tag>
@@ -295,6 +306,7 @@
         <German>Ohne World Builder spielen</German>
         <Italian>Rimuovere il World Builder</Italian>
         <Spanish>Eliminar el World Builder</Spanish>
+        <Russian>Убрать Строитель мира</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_REMOVE_WORLD_BUILDER_HELP</Tag>
@@ -308,6 +320,7 @@
         <Tag>TXT_KEY_GAMEOPTION_DEACTIVATE_HEMISPHERE_RESTRICTIONS</Tag>
         <English>No Hemisphere Restrictions for Resources</English>
         <German>Keine Einschränkung der Hemispheren für Ressourcen</German>
+        <Russian>Нет ограничений полушария для ресурсов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_DEACTIVATE_HEMISPHERE_RESTRICTIONS_HELP</Tag>
@@ -318,6 +331,7 @@
         <Tag>TXT_KEY_GAMEOPTION_GOODIES_ALWAYS_DISPLAY_COLOURED_CIRCLE</Tag>
         <English>Revealed goodies always display coloured circles</English>
         <German>Entdeckte Goodies zeigen immer Farbkreis als Hinweis</German>
+        <Russian>Выявленные Goodies всегда отображаются цветными кругами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_GOODIES_ALWAYS_DISPLAY_COLOURED_CIRCLE_HELP</Tag>
@@ -328,6 +342,7 @@
         <Tag>TXT_KEY_GAMEOPTION_UNREST_TURNS_DEPEND_ON_CITY_SIZE</Tag>
         <English>Occupation turns after conquering a city depend more heavily on size of city</English>
         <German>Dauer der Aufstände in einer Stadt nach Eroberung hängt deutlich stärker von Stadtgröße ab</German>
+        <Russian>Время восстановления порядка после завоевания города больше зависит от его размера</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_UNREST_TURNS_DEPEND_ON_CITY_SIZE_HELP</Tag>
@@ -341,6 +356,7 @@
         <German>Nur 1 Schüler gleichzeitig je Siedlung der Ureinwohner</German>
         <Italian>Solo 1 studente alla volta per insediamento nativo</Italian>
         <Spanish>Sólo 1 estudiante a la vez por asentamiento nativo</Spanish>
+        <Russian>Только один колонист может обучаться в деревне индейцев</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE_HELP</Tag>
@@ -357,6 +373,7 @@
         <German>Kleineres Königliches Expeditionskorps</German>
         <Italian>Piccola forza di spedizione reale</Italian>
         <Spanish>Reducción de la Real Fuerza Expedicionaria</Spanish>
+        <Russian>Уменьшить Королевские Экспедиционные Войска</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_REDUCED_REF_HELP</Tag>
@@ -373,6 +390,7 @@
         <German>Altes Gründervätersystem benutzen</German>
         <Italian>Utilizzare vecchio sistema per Padre fondatore</Italian>
         <Spanish>Utilice antiguo sistema de Padre de la Patria</Spanish>
+        <Russian>Использовать старую систему Отцов Основателей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_USE_OLD_FOUNDING_FATHER_SYSTEM_HELP</Tag>
