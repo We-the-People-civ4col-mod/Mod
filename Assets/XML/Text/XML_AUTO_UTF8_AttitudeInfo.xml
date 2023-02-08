@@ -7,6 +7,7 @@
         <German>Verärgert</German>
         <Italian>Infastidito:Infastidita</Italian>
         <Spanish>Molesta</Spanish>
+        <Russian>Раздраженный</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ATTITUDE_CAUTIOUS</Tag>
@@ -15,6 +16,7 @@
         <German>Vorsichtig</German>
         <Italian>Cauto:Cauta</Italian>
         <Spanish>Cauta</Spanish>
+        <Russian>Настороженный</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ATTITUDE_FRIENDLY</Tag>
@@ -23,6 +25,7 @@
         <German>Liebevoll</German>
         <Italian>Amichevole:Amichevole</Italian>
         <Spanish>Amistosa</Spanish>
+        <Russian>Дружелюбный</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ATTITUDE_FURIOUS</Tag>
@@ -31,6 +34,7 @@
         <German>Wütend</German>
         <Italian>Furioso:Furiosa</Italian>
         <Spanish>Furiosa</Spanish>
+        <Russian>Взбешенный</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ATTITUDE_PLEASED</Tag>
@@ -39,5 +43,6 @@
         <German>Erfreut</German>
         <Italian>Soddisfatto:Soddisfatta</Italian>
         <Spanish>Amable</Spanish>
+        <Russian>Довольный</Russian>
     </TEXT>
 </Civ4GameText>

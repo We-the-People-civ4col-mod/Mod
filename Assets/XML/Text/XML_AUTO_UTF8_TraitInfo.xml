@@ -11,6 +11,7 @@
         <German>Administrativ</German>
         <Italian>Amministrativo</Italian>
         <Spanish>Administrativo</Spanish>
+        <Russian>Администратор</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_ADMIRAL</Tag>
@@ -19,6 +20,7 @@
         <German>Erfahrener Admiral</German>
         <Italian>Experienced Admiral</Italian>
         <Spanish>Experienced Admiral</Spanish>
+        <Russian>Опытный Адмирал</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_AGRICULTURAL</Tag>
@@ -27,6 +29,7 @@
         <German>Landwirtschaft</German>
         <Italian>Agricultural</Italian>
         <Spanish>Agricultural</Spanish>
+        <Russian>Земледелец</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_ALEXANDER_HAMILTON</Tag>
@@ -83,6 +86,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Капиталист</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_CHARISMATIC</Tag>
@@ -107,6 +111,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Харизматичный</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_CHARLES_CARROLL</Tag>
@@ -135,6 +140,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Зажиточный</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_CLIMBER</Tag>
@@ -155,6 +161,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Скалолаз</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_COASTALWARRIORS</Tag>
@@ -175,6 +182,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Прибрежные воины</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_COMTE_DE_VERGENNES</Tag>
@@ -199,6 +207,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Конкистадор</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_COOPERATIVE</Tag>
@@ -219,6 +228,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Объединенный?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_CYRUS_MCCORMICK</Tag>
@@ -243,6 +253,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Решительный</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_DE_GRASSE</Tag>
@@ -267,6 +278,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Дисциплинированный</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_DOM_PEDRO_I</Tag>
@@ -295,6 +307,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Предприимчивый</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_ETHAN_ALLEN</Tag>
@@ -307,6 +320,7 @@
         <German>Expansiv</German>
         <Italian>Espansivo</Italian>
         <Spanish>Expansivo</Spanish>
+        <Russian>Несдержанный</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_EXPLORERS</Tag>
@@ -319,6 +333,7 @@
         <German>Geschickter Diplomat</German>
         <Italian>Explorers</Italian>
         <Spanish>Explorers</Spanish>
+        <Russian>Исследователь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_FARMERS</Tag>
@@ -339,6 +354,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Фермеры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_FERDINAND_MAGELLAN</Tag>
@@ -363,6 +379,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Лесные воины</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_FRANCISCO_DE_CORONADO</Tag>
@@ -403,6 +420,7 @@
         <German>Sammler</German>
         <Italian>Gatherer</Italian>
         <Spanish>Gatherer</Spanish>
+        <Russian>Собиратель</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_GENERAL</Tag>
@@ -415,6 +433,7 @@
         <German>Erfahrener General</German>
         <Italian>Esperto Generale</Italian>
         <Spanish>Experimentado General</Spanish>
+        <Russian>Опытный Генерал</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_GEORGE_FOX</Tag>
@@ -495,6 +514,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Охотники</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_IMPERIALIST</Tag>
@@ -503,6 +523,7 @@
         <German>Imperialist</German>
         <Italian>Imperialist</Italian>
         <Spanish>Imperialist</Spanish>
+        <Russian>Империалист</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_INDUSTRIOUS</Tag>
@@ -527,6 +548,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Трудолюбивый</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_JACQUES_CARTIER</Tag>
@@ -635,6 +657,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Мятежный лидер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_LORD_BALTIMORE</Tag>
@@ -663,6 +686,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Наставник</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_MERCANTILE</Tag>
@@ -683,6 +707,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Меркантильный</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_MICHIEL_DE_RUYTER</Tag>
@@ -719,6 +744,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Кочевники</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_PATRIARCH</Tag>
@@ -727,6 +753,7 @@
         <German>Stammeshäuptling</German>
         <Italian>Patriarch</Italian>
         <Spanish>Patriarch</Spanish>
+        <Russian>Бесстрашный</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_PATRICK_HENRY</Tag>
@@ -775,6 +802,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Первопроходец</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_POCAHONTAS</Tag>
@@ -799,6 +827,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ученик/Любознательный</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_RAIDERS</Tag>
@@ -819,6 +848,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Налетчики</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_RESOURCEFUL</Tag>
@@ -839,6 +869,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Находчивый</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_ROBERT_LA_SALLE</Tag>
@@ -867,6 +898,7 @@
         <German>Seefahrer</German>
         <Italian>Seafarers</Italian>
         <Spanish>Seafarers</Spanish>
+        <Russian>Мореходы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_SOPHISTICATED</Tag>
@@ -887,6 +919,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Культурный</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_SOR_JUANA</Tag>
@@ -919,6 +952,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Толерантный</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_TRADER</Tag>
@@ -939,6 +973,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Торговец</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_UNDEMANDING</Tag>
@@ -947,6 +982,7 @@
         <German>Genügsam</German>
         <Italian>Undemanding</Italian>
         <Spanish>Undemanding</Spanish>
+        <Russian>Нетребовательный</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_VACO_NUNEZ_DE_BALBOA</Tag>

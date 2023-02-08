@@ -17,5 +17,6 @@
         <Tag>TXT_KEY_UNIT_CAN_MOVE_PEAK</Tag>
         <English>[ICON_BULLET]Can move on mountain peaks</English>
         <German>[ICON_BULLET]Kann Berge überqueren</German>
+        <Russian>[ICON_BULLET]Может передвигаться по клеткам гор</Russian>
     </TEXT>
 </Civ4GameText>

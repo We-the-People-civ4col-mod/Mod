@@ -486,6 +486,7 @@
         <English>Demands %s1_symbol_list</English>
         <French>Demande %s1_symbol_list</French>
         <German>Will %s1_symbol_list</German>
+        <Russian>Потребляет %s1_symbol_list</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODS_DOMESTIC_SOLD</Tag>
@@ -997,6 +998,7 @@
         <English>[ICON_BULLET]Cannot enter player territories</English>
         <French>[ICON_BULLET]Ne peut rentrer dans le territoire du joueur</French>
         <German>[ICON_BULLET]Kann das Gebiet des Spielers nicht betreten</German>
+        <Russian>[ICON_BULLET]Не может заходить на территорию игрока</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ANIMAL_KILLING_REWARD</Tag>
@@ -1218,7 +1220,7 @@
         <English>[ICON_BULLET]%D1%% better prices from bargaining and trading posts</English>
         <French>[ICON_BULLET]%D1%% permet d'obtenir des meilleur prix en négociant</French>
         <German>[ICON_BULLET]%D1%% bessere Preise durch Feilschen und Handelsposten</German>
-        <Russian>[ICON_BULLET]%D1%% более выгодные цены при торге, ускорение работы Торговых постов</Russian>
+        <Russian>[ICON_BULLET]%D1%% к цене при торге, ускорение работы Торговых постов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_LEVIED_MILITIA_FOR_PROTECTION</Tag>

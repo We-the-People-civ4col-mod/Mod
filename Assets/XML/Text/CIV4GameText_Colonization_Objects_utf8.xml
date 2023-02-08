@@ -66,7 +66,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>Англия</Russian>
+        <Russian>Англии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_FRANCE_SHORT_DESC</Tag>
@@ -108,7 +108,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>Франция</Russian>
+        <Russian>Франции</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SPAIN_SHORT_DESC</Tag>
@@ -150,7 +150,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>Испания</Russian>
+        <Russian>Испании</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_DUTCH_SHORT_DESC</Tag>
@@ -192,7 +192,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>Нидерланды</Russian>
+        <Russian>Нидерландов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_IDLE_CITIZEN</Tag>

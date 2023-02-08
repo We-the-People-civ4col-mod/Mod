@@ -700,6 +700,7 @@
         <German>[ICON_BULLET]Keine Fortbewegung auf</German>
         <Italian>[ICON_BULLET]Non può entrare nell'</Italian>
         <Spanish>[ICON_BULLET]No puede entrar en</Spanish>
+        <Russian>[ICON_BULLET]Не заходить в</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_INVISIBLE_ALL</Tag>
@@ -1096,6 +1097,7 @@
         <German>[ICON_BULLET]+1%F1_yield auf Geländefeldern mit %d2%F3_yield</German>
         <Italian>[ICON_BULLET]+1%F1_yield su caselle con %d2%F3_yield</Italian>
         <Spanish>[ICON_BULLET]+1%F1_yield en las casillas con %d2%F3_yield</Spanish>
+        <Russian>[ICON_BULLET]+1%F1_yield на клетках с %d2%F3_yield</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_FREE_PROMOTIONS</Tag>
@@ -1104,6 +1106,7 @@
         <German>[ICON_BULLET]Gratis-Beförderung (%s1)</German>
         <Italian>[ICON_BULLET]Promozione gratuita (%s1)</Italian>
         <Spanish>[ICON_BULLET]Ascenso gratis (%s1)</Spanish>
+        <Russian>[ICON_BULLET]Бесплатное повышение (%s1)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_PLAYER_UNKNOWN</Tag>
@@ -1200,6 +1203,7 @@
         <German>Führt zu</German>
         <Italian>Conduce a</Italian>
         <Spanish>Lleva a</Spanish>
+        <Russian>Ведет к</Russian>
     </TEXT>
 <!-- ZorG. colony screen. lack of materials for the construction of the building. START -->
     <TEXT>
@@ -1227,6 +1231,7 @@
         <German>Verfügbar für</German>
         <Italian>Disponibile a</Italian>
         <Spanish>Disponible para</Spanish>
+        <Russian>Доступно для</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_EFFECTS</Tag>
@@ -4627,6 +4632,7 @@
         <German>%s1_attitude gegenüber %s2_leader</German>
         <Italian>%s1_attitude nei confronti di %s2_leader</Italian>
         <Spanish>Actitud hacia %s2_leader: %s1_attitude</Spanish>
+        <Russian>%s1_attitude по отношению к %s2_leader</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_CIV_DESCRIPTION</Tag>
@@ -4635,6 +4641,7 @@
         <German>%s1_leader von %s2_civ_short_name</German>
         <Italian>%s1_leader della civiltà %s2:2_civ_short_name</Italian>
         <Spanish>%s1_leader de %s2_civ_short_name</Spanish>
+        <Russian>%s1_leader %s2_civ_short_name</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GLOBELAYER_CULTURE</Tag>
@@ -4792,6 +4799,7 @@
         <German>Sprachchat ein</German>
         <Italian>Attiva chat vocale</Italian>
         <Spanish>Activar conversaciones de voz</Spanish>
+        <Russian>Активировать голосовую связь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_CAPTURE_DEVICE</Tag>
@@ -4835,6 +4843,7 @@
         <German>Punktestand</German>
         <Italian>Punteggio</Italian>
         <Spanish>Puntuación</Spanish>
+        <Russian>Очки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_STOP_SLIDESHOW</Tag>
@@ -4859,6 +4868,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]Sids Tipps: [COLOR_REVERT]</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]Il suggerimento di Sid: [COLOR_REVERT]</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]Consejo de Sid: [COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]Подсказки Сида: [COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HALL_OF_FAME_SORT_BY_NORMALIZED_SCORE</Tag>
@@ -7072,6 +7082,7 @@
         <German>Kontaktieren</German>
         <Italian>Contatta</Italian>
         <Spanish>Contactar</Spanish>
+        <Russian>Контакты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MINIMIZED_CHOOSE_PRODUCTION_UNIT</Tag>
@@ -9961,6 +9972,7 @@
         <German>[BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]</German>
         <Italian>[BOLD]Informazioni :[\BOLD][PARAGRAPH:1]</Italian>
         <Spanish>[BOLD]Historia :[\BOLD][PARAGRAPH:1]</Spanish>
+        <Russian>[BOLD]Историческая справка :[\BOLD][PARAGRAPH:1]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_NO_SOUND</Tag>
@@ -10145,6 +10157,7 @@
         <German>Einzigartiges Gebäude für: [LINK=literal]%s1_civDesc[\LINK]</German>
         <Italian>Edificio unico [LINK=literal]%s1_civDesc[\LINK]</Italian>
         <Spanish>Edificio exclusivo del [LINK=literal]%s1_civDesc[\LINK]</Spanish>
+        <Russian>Уникальное здание для [LINK=literal]%s1_civDesc[\LINK]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MP_DIPLO_CANCEL_CURRENT_DEALS</Tag>
@@ -10153,6 +10166,7 @@
         <German>Aktuelle Handelsvereinbarungen annullieren ...</German>
         <Italian>Annulla gli accordi attuali...</Italian>
         <Spanish>Cancelar los tratos actuales...</Spanish>
+        <Russian>Отменить текущие сделки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_GP_BORN</Tag>
