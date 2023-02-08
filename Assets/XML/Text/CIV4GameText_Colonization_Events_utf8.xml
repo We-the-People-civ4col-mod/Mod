@@ -1076,7 +1076,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SILVER_MINE_ROBBERY_1</Tag>
-        <English>Mylord, there's a report from the foreman of one of our silver mines that buccaneers bribe workers there to let them steal some of the mined silver.</English>
+        <English>Milord, there's a report from the foreman of one of our silver mines that buccaneers bribe workers there to let them steal some of the mined silver.</English>
         <German>Mylord, einer der Vorarbetier einer unserer Silberminen berichtet, dass Bukkanniere regelmäßig die Minenarbeiter bestechen, damit diese sie einen Teil des Silbers stehlen lassen.</German>
     </TEXT>
     <TEXT>
@@ -2235,7 +2235,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_DOCKS_DONE</Tag>
-        <English>A colonial power has built harbours in five cities ahead of every other colony.</English>
+        <English>Another colonial power has built harbours in five cities ahead of every other colony.</English>
         <French>Une colonie a été la première a construire 5 ports avant les autres.</French>
         <German>Eine Kolonialmacht konnte vor allen anderen in 5 Städten Häfen errichten.</German>
     </TEXT>
@@ -2276,7 +2276,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_GRAVEYARDS_DONE</Tag>
-        <English>A colonial power is the first to have graveyards in five cities.</English>
+        <English>Another colonial power is the first to have graveyards in five cities.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Friedhöfe errichten.</German>
     </TEXT>
     <TEXT>
@@ -2306,7 +2306,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_BAKERIES_DONE</Tag>
-        <English>A colonial power is the first to have bakeries in five cities.</English>
+        <English>Another colonial power is the first to have bakeries in five cities.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Bäckereien errichten.</German>
     </TEXT>
     <TEXT>
@@ -2331,27 +2331,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BUTCHERS</Tag>
-        <English>Milord, some Hessian mercenaries are looking for a new contract. But they have made this strange condition that they will only work for the country with the best sausages. Maybe if we build butcheries in five of our cities we could convince them to come to us.</English>
+        <English>Milord, some Hessian mercenaries are looking for a new contract. But they include a strange demand that they will only work for the country with the best sausages. Maybe if we build butcheries in five of our cities we could convince them to come to us.</English>
         <German>Milord, einige hessische Söldner suchen nach einem neuen Auftrag. Aber sie stellen die seltsame Bedingung dass sie nur für das Land mit den besten Würsten arbeiten wollen. Vielleicht können wir sie davon überzeugen zu uns zu kommen indem wir in fünf unserer Städte Metzgereien errichten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_BUTCHERS_DONE</Tag>
-        <English>A colonial power is the first to have butchers in five cities.</English>
+        <English>Another colonial power is the first to have butcheries in five cities.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Metzgereien errichten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BUTCHERS_DONE</Tag>
-        <English>Milord, you've built butchers in five cities before any other colony could. That convinced the Hessian mercenaries to fight for us.</English>
+        <English>Milord, you've built butcheries in five cities before any other colony could. That convinced the Hessian mercenaries to fight for us.</English>
         <German>Milord, Eure Kolonie konnte vor allen anderen in fünf Städten Metzgereien errichten. Das hat die hessischen Söldner überzeugt für uns zu kämpfen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIVE_BUTCHERS</Tag>
-        <English>Milord, the governor of another colony has built butchers in five cities before you. You've missed the chance to hire the Hessian mercenaries.</English>
+        <English>Milord, the governor of another colony has built butcheries in five cities before you. You've missed the chance to hire the Hessian mercenaries.</English>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor euch in 5 Städten Metzgereien errichten. Dadurch habt Ihr die Chance auf die hessischen Söldner vertan.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_BUTCHERS</Tag>
-        <English>We shall show them that our butchers make the best sausages in the World!</English>
+        <English>We shall show them that our butchers make the best sausages in the world!</English>
         <German>Wir werden beweisen, dass unsere Metzger die besten Würste der Welt machen!</German>
     </TEXT>
     <TEXT>
@@ -2361,12 +2361,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_MEDICAL_OFFICES</Tag>
-        <English>Milord, our ships that return from Europe bring bad news. There seem to have been outbreaks of the plague in major cities of several countries. Our citizens are thus worried and demand that we build hospitals in at least five cities to be prepared for the worst. They even offer to raise money to hire more doctors.</English>
+        <English>Milord, our ships that return from Europe bring bad news. There have been outbreaks of the plague in major cities of several countries. Our citizens are worried and demand that we build hospitals in at least five cities to be prepared for the worst. They even offer to raise money to hire more doctors.</English>
         <German>Milord, unsere Schiffe die aus Europa zurückkehren bringen schlechte Neuigkeiten. Es scheint als hätte es Ausbrüche der Pest in den den Großstädten mehrerer Länder gegeben. Unsere Bürger sind daher beunruhigt und verlangen dass wir Krankenhäuser in midetens fünf Städten bauen um auf das Schlimmste vorbereitet zu sein. Sie bieten sogar an Geld für die Anstellung von mehr Ärzten zu sammeln.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_MEDICAL_OFFICES_DONE</Tag>
-        <English>A colonial power is the first to have hospitals in five cities.</English>
+        <English>Another colonial power is the first to have hospitals in five cities.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Krankenhäuser errichten.</German>
     </TEXT>
     <TEXT>
@@ -2391,12 +2391,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_OPERA</Tag>
-        <English>Milord, our diplomats in Europe report that the European high society claims that we are uncivilized barbarians without culture. If we were the first to build an opera in the New World we would change that image. That would surely even convince some famous artists and actors to come to our colonies.</English>
+        <English>Milord, our diplomats in Europe have heard how European high society claims that we're uncivilized barbarians with no culture. If we're the first to build an opera in the New World we would change that image. That would also convince famous artists and actors to come to our colonies.</English>
         <German>Milord, unsere Dimplomaten in Europa berichten dass die europäischen Adeligen und die Reichen der Oberschicht behaupten wir wären Barbaren ohne Kultur. Wenn wir die ersten in der Neuen Welt wären, die eine Oper bauen würden, könnten wir dieses Bild ändern. Das würde sicherlich auch berühmte Schauspieler und Künstler überzeugen in unsere Kolonien zu kommen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_OPERA_DONE</Tag>
-        <English>A colonial power is the first to have built an opera.</English>
+        <English>Another colonial power is the first to have built an opera.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen eine Oper errichten.</German>
     </TEXT>
     <TEXT>
@@ -2406,7 +2406,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIRST_OPERA</Tag>
-        <English>Milord, the governor of another colony has built an Opra before you. You've missed the chance to convince famous entertainers to come to our colonies.</English>
+        <English>Milord, the governor of another colony has built an opera before you. You've missed the chance to convince famous entertainers to come to our colonies.</English>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor euch eine Oper errichten. Dadurch habt Ihr die Chance vertan berühmte Schauspieler anzulocken.</German>
     </TEXT>
     <TEXT>
@@ -2421,12 +2421,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_SUPREME_COURT</Tag>
-        <English>Milord, European Nobles claim that we are not trustworthy business partners because our legal system is not centralized and thus not stable. We could change that by being the first in the New World to build a Supreme Court. If we do so, this would surely also motivate judges from Europe to migrate to our colonies.</English>
+        <English>Milord, European nobles claim that we are not trustworthy business partners because our legal system is not centralized, thus unstable. We could change that by being the first in the New World to build a Supreme Court. If we do so, it would surely motivate judges from Europe to come to our colonies.</English>
         <German>Milord, europäische Adlige behaupten, dass wir keine vertrauenswürdinge Geschäftspartner seine, da unser Rechtssystem nicht zentralisiert und daher nicht stabil sei. Wir könnten dies dadurch ändern, indem wir die ersten in der Neuen Welt sind, die einen Obersten Gerichtshof bauen. Wenn wir dies erreichen, wird dies sicherlich auch Richter aus Europe davon überzeugen in die neue Welt zu migrieren.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_SUPREME_COURT_DONE</Tag>
-        <English>A colonial power is the first to have built a Supreme Court.</English>
+        <English>Another colonial power is the first to have built a Supreme Court.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen einen Obersten Gerichtshof errichten.</German>
     </TEXT>
     <TEXT>
@@ -2446,17 +2446,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_SUPREME_COURT_DONE_1</Tag>
-        <English>The judges shall get to work. There shall be law and order in our colonies.</English>
+        <English>The judges shall get to work. There will be law and order in our colonies.</English>
         <German>Die Richter sollen ans Werk gehen. Es soll Recht und Ordnung in useren Kolonien herrschen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_COLONIAL_CONGRESS</Tag>
-        <English>Milord, our diplomats returning from negotiations with other colonies report that we give the impression of being politically fragmented. We should install a Colonial Congress to consolidate political opinions. This would surely also allow us to find more qualified statesmen.</English>
+        <English>Milord, our diplomats negotiating with the other colonies report that we seem politically fragmented. We should install a Colonial Congress to consolidate political opinions. This would also attract more qualified statesmen.</English>
         <German>Milord, unsere Diplmaten, die von Verhandlungen mit anderen Kolonialmächten zurückkehren berichten dass wir den Eindruck vermitteln politisch uneins zu sein. Wir sollten einen Kolonialkongress gründen um die politische Meinungen zu konsolidieren. Dies würde sicherlich auch dazu führen, dass wir weitere begabte Staasmänner findne.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_COLONIAL_CONGRESS_DONE</Tag>
-        <English>A colonial power is the first to have built a Colonial Congress.</English>
+        <English>Another colonial power is the first to have built a Colonial Congress.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen einen Kolonialkongress errichten.</German>
     </TEXT>
     <TEXT>
@@ -2476,77 +2476,77 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_COLONIAL_CONGRESS_DONE_1</Tag>
-        <English>The new statesmen shall get to work. Our colonies shall speak with one political voice in negotations with foreign powers from now on.</English>
+        <English>The new statesmen shall get to work. From now on our colonies shall speak with one political voice in negotations with foreign powers.</English>
         <German>Die neuen Staatsmänner sollen ans Werk gene. Unsere Kolonien sollen von nun an in Verhandlungen mit anderne Mächten mit einer einzigen politischen Stimme sprechen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_CUSTOM_OFFICE</Tag>
-        <English>Milord, our customs officers report that our customs system is flawed and corrupt. Thus we lose money each day. We need to establish a Central Customs Auhtority to regulate affairs and prevent such corruption. This will proably also force some black market traders to work for us legally.</English>
+        <English>Milord, our customs officers report that our customs system is flawed and corrupt. We lose money each day. We need to establish a Central Customs Auhtority to regulate affairs and root out such corruption. Some black market traders might end up working for us legally.</English>
         <German>Milord, unsere Zollbeamten berichten das unser Zollsystem unfähig und korrupt ist. Wir verlieren dadurch jeden Tag Geld. Wir müssen eine Zentrales Zollamt errichten um dies zu regeln und die Korruption zu beenden. Dadurch werden eventuell auch Schwarzmarkthändler gezwungen für uns legal zu arbeiten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_CUSTOM_OFFICE_DONE</Tag>
-        <English>A colonial power is the first to have built a Central Customs Authority.</English>
+        <English>Another colonial power is the first to have built a Central Customs Authority.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen ein Zentrales Zollamt errichten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_CUSTOM_OFFICE_DONE</Tag>
-        <English>Milord, you've built a Central Customs Authority before any other colony could. As promised some black market traders are now forced to work for us.</English>
+        <English>Milord, you've built a Central Customs Authority before any other colony. As promised, several black market traders now work instead for us.</English>
         <German>Milord, Eure Kolonie konnte vor allen anderen ein Zentrales Zollamt errichten. Wie versprochen müssen einige Schwarzmarkthändler nun für uns arbeiten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIRST_CUSTOM_OFFICE</Tag>
-        <English>Milord, the governor of another colony has built a Central Customs Authority before you. You've missed the chance to force the black marekt traders to work for us.</English>
+        <English>Milord, the governor of another colony has built a Central Customs Authority before you. You've missed the chance to force the black market traders to work for us.</English>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor euch ein Zentrales Zollamt errichten. Dadurch habt Ihr die Chance vertan die Schwarzmarkthändler zu zwingen für uns zu arbeiten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_CUSTOM_OFFICE</Tag>
-        <English>We will build the Central Customs Authority to end the corruption once and for all.</English>
+        <English>We will build the Central Customs Authority to end corruption once and for all.</English>
         <German>Wir werden das Zentrale Zollamt errichten um die Korrupiton ein für alle Mal zu beenden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_CUSTOM_OFFICE_DONE_1</Tag>
-        <English>Send these black market trader to the Natives to establish Trade Posts. It will be the best use for their talents.</English>
+        <English>Send these black market trader to the Natives to establish trading posts. It will be the most appropriate use for their talents.</English>
         <German>Schickt die Schwarzmarkthändler zu den Ureinwohnern um Handelsposten zu errichten. Dort werden ihre Fähigkeiten am nützlichsten sein.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_MINSTER</Tag>
-        <English>Milord, the church orders us to increase our efforts to spread the word of god. We are commanded to build a Cathedral for the archbishop to show the glory and light of Christ to the common people. We are promise that if we are the first to achieve this further bishops will be sent to our colonies.</English>
+        <English>Milord, the church commands us to make every effort to spread the word of God. We are ordered to build a Cathedral of the Archbishop to show the glory and light of Christ to the common people. In return we are promised that, if we are the first to achieve this, more bishops will be sent to our colonies.</English>
         <German>Milord, die Kirche befiehlt uns unsere Anstrengungen das Wort Gottes zu verbreiten zu verstärken. Uns wurde aufgetragen eine Kathedrale für den Erzbischof zu errichten um auch dem einfachen Volk den Ruhm und das Licht Christi zu zeigen. Uns wurde versprochen, dass weitere Bischöfe in die Kolonien geschickt werden, wenn wir dies als erste erreichen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_MINSTER_DONE</Tag>
-        <English>A colonial power is the first to have built a Cathedral for the Archbishop.</English>
+        <English>Another colonial power is the first to have built the Cathedral of the Archbishop.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen eine Kathedrale für den Erzbischof errichten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_MINSTER_DONE</Tag>
-        <English>Milord, you've built a Cathedral for the Archbishop before any other colony could. As promised bishops have recently arrived in the capitol.</English>
+        <English>Milord, you've built the Cathedral of the Archbishop before any other colony could. As promised bishops have recently arrived in the capitol.</English>
         <German>Milord, Eure Kolonie konnte vor allen anderen eine Kathedrale für den Erzbischof errichten. Wie versprochen sind Bischöfe in der Haupstadt eingetroffen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIRST_MINSTER</Tag>
-        <English>Milord, the governor of another colony has built Cathedral for the Archbishop before you. You've missed the chance to acquire further bishops from the church.</English>
+        <English>Milord, the governor of another colony has built the Cathedral of the Archbishop before you. You've missed the chance to get extra bishops from the church.</English>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor euch eine Kathedrale für den Erzbischof errichten. Dadurch habt Ihr die Chance vertan weitere Bischöfe von der Kirche zu erhalten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_MINSTER</Tag>
-        <English>We will built the Cathedral for the Archbishop and so the light of Christ will shine brightly.</English>
+        <English>We will built the Cathedral of the Archbishop and so the light of Christ will shine brightly.</English>
         <German>Wir werden die Kathedrale für den Erzbischof bauen, damit das Licht Christi hell erstrahlen möge.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_MINSTER_DONE_1</Tag>
-        <English>We trust that our new bishops take good care of souls of our citizens.</English>
+        <English>We trust that our new bishops will take good care of the souls of our citizens.</English>
         <German>Wir vertrauen darauf, dass unsere neuen Bischöfe sich gut um die Seelen unserer Bürger kümmern werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_HORSE_MARKET</Tag>
-        <English>Milord, our most prosperous ranchers propose that we build a Grand Horse and Cattle Market to draw even more business to us. They believe that this would even cause ranchers from other colonies to want to become citizens of our colonies.</English>
+        <English>Milord, our most prosperous ranchers propose that we build a Grand Horse and Cattle Market to draw more business to us. They believe that this would even cause ranchers from other colonies to want to become citizens of our colonies.</English>
         <German>Milord, unsere reichsten Tierzüchter schlagen vor, dass wir einen Großen Viehmarkt errichten, damit wir noch mehr Geschäft anziehen. Sie glauben, dass dies sogar dazu führen wird dass Züchter anderer Kolonien lieber zu Bürgern unserer Kolonien werden würden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_HORSE_MARKET_DONE</Tag>
-        <English>A colonial power is the first to have built a Grand Horse and Cattle Market.</English>
+        <English>Another colonial power is the first to have built a Grand Horse and Cattle Market.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen einen Großen Viehmarkt errichten.</German>
     </TEXT>
     <TEXT>
@@ -2566,27 +2566,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_HORSE_MARKET_DONE_1</Tag>
-        <English>These new ranchers are of course welcome as they will bring more business to our newly built Grand Horse and Cattle Market.</English>
+        <English>These new ranchers are welcome, of course. They'll bring more business to our newly built Grand Horse and Cattle Market.</English>
         <German>Die neuen Züchter sind gerne gesehen. Sie werden sicherlich für noch mehr Geschäft auf unserem neuen Großen Viehmarkt sorgen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_PUBLISHING</Tag>
-        <English>Milord, many of our literate citizens are unhappy because in most cities there are not enough newspapers to read. This also causes many educated people to not want to migrate to our colonies. We should build a Colonial Publisher to change the situation and convince more educated people from Europe to migrate to the colonies.</English>
+        <English>Milord, many of our literate citizens are unhappy. Most cities don't have enough newspapers to read. That means many educated people don't want to come to our colonies. We should build a Colonial Publisher. That will convince educated people from Europe to migrate to our colony.</English>
         <German>Milord, viele unser Bürger, die des Lesens mächtig sind beschweren sich, dass es nicht genug Zeitungen in useren Städten gibt. Die sorgt auch dafür dass viele Gebildete nicht in die Kolonien auswandern wollten. Wir sollten einen Kolonialen Zeitungverlag bauen um diese Situation zu ändern und mehr Gebildete aus Europa zu überzeugen in die Kolonien auszuwandern.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_PUBLISHING_DONE</Tag>
-        <English>A colonial power is the first to have built a a Colonial Publisher.</English>
+        <English>Another colonial power is the first to have built the Colonial Publisher.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen einen Kolonialen Zeitungverlag errichten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_PUBLISHING_DONE</Tag>
-        <English>Milord, you've built a Colonial Publisher before any other colony could. As promised more educated people from Europe now migrate to the colonies.</English>
+        <English>Milord, you've built the Colonial Publisher before any other colony could. As promised more educated people from Europe now migrate to our colony.</English>
         <German>Milord, Eure Kolonie konnte vor allen anderen einen Kolonialen Zeitungverlag errichten. Wie versprochen wandern nun mehr Gebildete aus Europa in die Kolonien aus.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIRST_PUBLISHING</Tag>
-        <English>Milord, the governor of another colony has built a Colonial Publisher before you. You've missed the chance to convince more educated people from Europe to migrate.</English>
+        <English>Milord, the governor of another colony has built the Colonial Publisher before you. You've missed the chance to convince more educated people from Europe to migrate.</English>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor euch einen Kolonialen Zeitungverlag errichten. Dadurch habt Ihr die Chance vertan mehr Gebildete aus Europe von einer Auswanderung zu überzeugen.</German>
     </TEXT>
     <TEXT>
@@ -2596,47 +2596,47 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_PUBLISHING_DONE_1</Tag>
-        <English>Very well, but have those educated migrants also do something useful with their time other than just reading Newspapers.</English>
+        <English>Very well, but make sure those educated migrants do something useful with their time rather than just reading newspapers.</English>
         <German>Sehr gut, aber stellt sicher dass diese gebildeten Migranten auch etwas sinnvolles mit ihrer Zeit anfangen und nicht nur Zeitung lesen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SIX_WARSHIPS_QUEST</Tag>
-        <English>Milord, his Majesty and the court are delighted about the first warships we acquired. We have been promised that once we have a war fleet of at least [COLOR_HIGHLIGHT_TEXT]six ships the size of a frigate[COLOR_REVERT] or larger, his Majesty will entrust us one of his finest [COLOR_HIGHLIGHT_TEXT]royal man-o-wars[COLOR_REVERT] as flagship for our fleet.</English>
+        <English>Milord, His Majesty and the court are delighted with the first warships we acquired. We are promised that, once we have a war fleet of at least [COLOR_HIGHLIGHT_TEXT]six ships frigate-size or better[COLOR_REVERT], His Majesty will deliver one of his finest [COLOR_HIGHLIGHT_TEXT]royal man-o-wars[COLOR_REVERT] to us as flagship for our fleet.</English>
         <German>Milord, Ihre Majestät und der Hof sind hocherfreut über die ersten Kriegsschiffe, die wir erworben haben. Unse wurde versprochen dass sobald wir eine Kriegsflotte von mindestens [COLOR_HIGHLIGHT_TEXT]sechs Schiffen der Größe einer Frigate[COLOR_REVERT] oder mehr haben, uns Ihre Majestät eine seiner feinsten [COLOR_HIGHLIGHT_TEXT]Königlichen Schlachtschiffe[COLOR_REVERT] als Flagschiff unserer Flotte überläßt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SIX_WARSHIPS_QUEST_DONE_WORLD</Tag>
-        <English>A colonial power is the first to have a war fleet of at least six ships the size of a frigate or larger.</English>
+        <English>Another colonial power is the first to have a war fleet of at least six ships the size of a frigate or larger.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen eine Kriegsfloote von sechs Schiffen der Größe einer Frigate oder mehr erreichen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SIX_WARSHIPS_QUEST_DONE</Tag>
-        <English>Milord, you've acquired six warships the size of a frigte or larger before any other colony could. His Majesty now sends us the promised flagship.</English>
+        <English>Milord, you've acquired six warships aat least the size of a frigate, before any other colony could. His Majesty now sends us the promised flagship.</English>
         <German>Milord, Eure Kolonie konnte vor allen anderen sechs Kriegsschiffe der Größe einer Frigate oder mehr errichten. Ihre Majestät schickt uns das versprochene Flagschiff.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_SIX_WARSHIPS_QUEST</Tag>
-        <English>Milord, the governor of another colony has acquired six warships the size of a frigte or larger before you. You've missed the chance to acquire the flagship from his Majesty.</English>
+        <English>Milord, the governor of another colony has acquired six warships the size of a frigate or larger before you. You've missed the chance to get the flagship from his Majesty.</English>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor euch sechs Kriegsschiffe der Größe einer Frigate oder mehr errichten. Dadurch habt Ihr die Chance auf das Flagschiff Ihrer Majestät vertan.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SIX_WARSHIPS_QUEST</Tag>
-        <English>We shall build the strongest war fleet in the colonies worthy of such a glorious flagship!</English>
+        <English>We shall build the strongest war fleet in the colonies, worthy of such a glorious flagship!</English>
         <German>Wir werden die stärkste Kriegsflotte in den Kolonien bauen, die eines solchen glorreichen Flagsschiffes wert ist!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SIX_WARSHIPS_QUEST_DONE_1</Tag>
-        <English>Wonderful, let it sail out of the harbour and fire a salute.</English>
+        <English>Wonderful! Let it sail out into the harbour and fire a salute.</English>
         <German>Wundervoll, lasst es aus dem Hafen segeln und eine Salut feuern.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SIX_PRIVATEERS_QUEST</Tag>
-        <English>Milord, a small outpost of buccanneers has recently been razed by the fleet of another colonial power. The surviving buccanneers now search for a new place to live and offer their loyalty to the first colonial nation that successfully builds a fleet of [COLOR_HIGHLIGHT_TEXT]six ships sailing with hidden nationality[COLOR_REVERT]. If we win them for our cause this could become very useful.</English>
+        <English>Milord, a small outpost of buccanneers has recently been destroyed by the fleet of another colonial power. The surviving buccanneers need a new place to live. They offer their loyalty to the first colonial nation that successfully builds a fleet of [COLOR_HIGHLIGHT_TEXT]six ships sailing with hidden nationality[COLOR_REVERT]. If we win them for our cause they could be very useful.</English>
         <German>Milord, ein kleiner Außenposten von Bukanieren wurde kürzlich durch die Flotte einer anderen Kolonialmacht aufgerieben. Die überlebenden Bukaniere suchen nun nach einem neuen Platz zum leben und bieten ihre Loyalität der ersten Kolonialmacht an, die erfolgreich eine Flotte von [COLOR_HIGHLIGHT_TEXT]von sechs Schiffen mit versteckter Nationlität[COLOR_REVERT] aufbaut. Wenn wir sie für unsere Sache gewinnen, kann das sehr hilfreich sein.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SIX_PRIVATEERS_QUEST_DONE_WORLD</Tag>
-        <English>A colonial power is the first to have a fleet of six ships with hidden nationality.</English>
+        <English>Another colonial power is the first to have a fleet of six ships with hidden nationality.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen eine Flotte von sechs Schiffen mit versteckter Nationalität aufbauen.</German>
     </TEXT>
     <TEXT>
@@ -2646,32 +2646,32 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_SIX_PRIVATEERS_QUEST</Tag>
-        <English>Milord, the governor of another colony has acquired a fleet of six ships with hidden nationality before you. You've missed the chance to win the buccaneers for your cause.</English>
+        <English>Milord, the governor of another colony has acquired a fleet of six ships with hidden nationality before you. You no longer have the chance to win the buccaneers for your cause.</English>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor euch eine Flotte von sechs Schiffen mit versteckter Nationalität aufbauen. Dadurch habt Ihr die Chance vertan die Bukaniere für euch zu gewinnen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SIX_PRIVATEERS_QUEST</Tag>
-        <English>We will acquire this fleet with hidden nationality. This alliance with the buccaneers could become valuable.</English>
+        <English>We will get this fleet with hidden nationality. This alliance with the buccaneers could become valuable.</English>
         <German>Wir werden diese Flotte mit versteckter Nationalität erwerben. Diese Allianz mit den Bukanieren könnte wertvoll werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SIX_PRIVATEERS_QUEST_DONE_1</Tag>
-        <English>That is great. But keep a good eye on them so they do not cause trouble. Or better, send them to cause trouble for our enemies.</English>
+        <English>That's great, but keep a good eye on them in case they cause trouble. Or better, send them to cause trouble for our enemies.</English>
         <German>Das ist großartig. Aber behaltet sie im Auge, sodass sie keinen Ärger verursachen. Oder noch besser, schickt sie los um unseren Feinden Ärger zu verursachen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SLAVE_TRADER_QUEST</Tag>
-        <English>Milord, our plantation owners in the colonies are very pleased that we have brought the first slaves to the colonies. They now want us to enter the profitable slave trade business ourselves rather than leaving it to others. They suggest we acquire [COLOR_HIGHLIGHT_TEXT]two slave barques[COLOR_REVERT] before all other colonial powers. If we are the first they promise to pay for experienced [COLOR_HIGHLIGHT_TEXT]slave overseers[COLOR_REVERT].</English>
+        <English>Milord, our plantation owners in the colonies are very pleased that we have brought the first slaves to the colonies. Now they want us to enter the profitable slave trade business ourselves rather than leaving it to others. They suggest we acquire [COLOR_HIGHLIGHT_TEXT]two slave barques[COLOR_REVERT] before any other colonial power. If we are the first they promise to pay for experienced [COLOR_HIGHLIGHT_TEXT]slave overseers[COLOR_REVERT].</English>
         <German>Milord, unsere Plantagenbesitzer sind sehr zufrieden damit, dass wir die ersten Sklaven in die Kolonien gebracht haben. Aber sie verlangen, dass wir selbst in das profitable Geschäft des Slavenhandels einsteigen anstatt es andere zu überlassen. Sie schlagen daher vor, dass wir [COLOR_HIGHLIGHT_TEXT]zwei Slavenschiffe[COLOR_REVERT] erwerben, noch bevor dies andere Nationenmächte tun. Wenn wir dies als erstes schaffen versprechen sie sogar die Kosten für die Bezahlung erfahrener [COLOR_HIGHLIGHT_TEXT]Sklavenmeister[COLOR_REVERT] zu übernehmen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SLAVE_TRADER_QUEST_DONE_WORLD</Tag>
-        <English>A colonial power is the first to have acquired two slave barques.</English>
+        <English>Another colonial power is the first to have acquired two slave barques.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen zwei Sklavenschiffe erwerben.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SLAVE_TRADER_QUEST_DONE</Tag>
-        <English>Milord, you've acquired two slave barques before any other colony could. The planation owners kept their word and hired slave overseers.</English>
+        <English>Milord, you've acquired two slave barques before any other colony could. The planation owners have kept their word and hired slave overseers.</English>
         <German>Milord, Eure Kolonie konnte vor allen anderen zwei Sklavenschiffe erwerben. Die Plantagenbesitzer haben ihr Wort gehalten und Sklavenmeister angeworben.</German>
     </TEXT>
     <TEXT>
@@ -2691,7 +2691,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FOUR_TREASURES</Tag>
-        <English>Milord, His Majesty is very discontent that so many treasures are not being shipped in time to Europe. To solve this issue He offers us a [COLOR_HIGHLIGHT_TEXT]galleon[COLOR_REVERT] for a discounted price.</English>
+        <English>Milord, His Majesty is deeply discontented that so many treasures are not being shipped in time to Europe. To solve this issue He offers us a [COLOR_HIGHLIGHT_TEXT]galleon[COLOR_REVERT] for a discounted price.</English>
         <German>Milord, Ihre Majestät ist sehr unzufrieden, dass so viele Schätze nicht rechtzeitig nach Europa verschifft werden. Um das Problem zu lösen bietet man uns eine [COLOR_HIGHLIGHT_TEXT]Galleone[COLOR_REVERT] zu einem vergünstigten Preis an.</German>
     </TEXT>
     <TEXT>
@@ -2716,7 +2716,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THREE_GALLEONS_2</Tag>
-        <English>We of course accept. We would never turn down the opportunity to get such a mighty ship</English>
+        <English>We of course accept. We would never turn down the opportunity to get such a powerful ship</English>
         <German>Wir nehmen das Angebot natürlich an. Wir könnten niemals diese einzigartige Gelegenheit zum Erwerb eines solch mächtigen Schifes ablehnen.</German>
     </TEXT>
     <TEXT>
@@ -2793,13 +2793,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_CATTLE_AND_SHEEP</Tag>
-        <English>Range war between cowboys and shepherds in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
+        <English>Range war between cowboys and sheep herders in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
         <French>Contflit entre des éleveurs et des bergers à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>Streit zwischen Rinderzüchtern und Schafzüchtern in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CATTLE_AND_SHEEP</Tag>
-        <English>A range war between cowboys and shepherds is heating up in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Each group says the other has too many animals which destroy pastures and waterholes.</English>
+        <English>A range war between cowboys and sheep herders is heating up in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Each group says the other has too many animals which destroy pastures and waterholes.</English>
         <French>Un conflit sérieux entre des cowboys et des bergers a éclaté à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Les deux camps considèrent que l'autre élève trop d'animaux et leur limite leur zone de pâturage.</French>
         <German>Ein ernsthafter Konflikt zwischen Rinderzüchtern und Schafzüchtern in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] keimt auf. Jede Seite behauptet, dass die andere die Weiden überweidet und die Wasserstellen verschmutzt.</German>
     </TEXT>
@@ -2943,13 +2943,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_PRINTING_PRESS</Tag>
-        <English>The printing ress in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] still functions.</English>
+        <English>The printing press in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] still functions.</English>
         <French>L'imprimerie de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] n'est pas utilisée à pleine capacité.</French>
         <German>Die Druckerpresse in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hat noch freie Druckkapazität.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PRINTING_PRESS</Tag>
-        <English>The printing press in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] still is working. Citizens would like to see something besides political pamphlets printed.</English>
+        <English>The printing press in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] is still working. Citizens would like to see something besides political pamphlets printed.</English>
         <French>L'imprimerie de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] n'est pas utilisée à pleine capacité. Les citoyens demandent si nous ne pourrions pas imprimer autre chose que des pamphlets politiques.</French>
         <German>Die Druckerpresse in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hat noch freie Druckkapazität. Die Bewohner der Stadt bitten aber, dass etwas anderes als politische Pamphlete gedruckt werden solle.</German>
     </TEXT>
@@ -3555,7 +3555,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_START</Tag>
-        <English>We will fulfill the orders of his Majesty!</English>
+        <English>We will fulfill the orders of His Majesty!</English>
         <German>Wir werden den Befehl Seiner Majestät erfüllen!</German>
     </TEXT>
     <TEXT>
@@ -3570,72 +3570,72 @@
     </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_1</Tag>
-		<English>For the Glory and Wealth of the motherland! Higher sale prices are always welcome!</English>
+		<English>For the glory and wealth of the motherland! Higher market prices are always welcome!</English>
 		<German>Für Ruhm und Reichtum des Heimatlandes! Höhere Verkaufspreise sind immer willkommen!</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_2</Tag>
-		<English>Whether so many criminals are good? Well, no matter, the main thing is that they can grab well!</English>
+		<English>Is it good to have so many criminals? It doesn't matter, as long as they have strong backs!</English>
 		<German>Ob so viele Kriminelle gut sind? Naja egal, Hauptsache sie können gut zupacken!</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_3</Tag>
-		<English>Indentured servants are at least used to working. But there could be a little more...</English>
+		<English>Indentured servants are at least used to working. We could use a few more...</English>
 		<German>Leibeigene sind wenigstens das Arbeiten gewöhnt. Aber es könnten gerne ein paar mehr sein...</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_4</Tag>
-		<English>Specialists are always welcome! After all, they do the work for several untrained.</English>
+		<English>Specialists are always welcome. They produce as much as several untrained workers!</English>
 		<German>Spezialisten sind immer gerne gesehen! Die verrichten schließlich Arbeit für mehrere unausgebildete.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_5</Tag>
-		<English>Specialists are always welcome! After all, they do the work for several untrained.</English>
+		<English>Specialists are always welcome. They produce as much as several untrained workers.</English>
 		<German>Spezialisten sind immer gerne gesehen! Die verrichten schließlich Arbeit für mehrere unausgebildete.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_6</Tag>
-		<English>Specialists are always welcome! After all, they do the work for several untrained.</English>
+		<English>Specialists are always welcome. They produce as much as several untrained workers.</English>
 		<German>Spezialisten sind immer gerne gesehen! Die verrichten schließlich Arbeit für mehrere unausgebildete.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_7</Tag>
-		<English>Fortunately, all the building materials are delivered! Our trading fleet would be hopelessly overburdened with it.</English>
+		<English>Fortunately, all the building materials have been delivered. That quantity would hopelessly overburden our trading fleet.</English>
 		<German>Zum Glück werden die ganzen Baumaterialien geliefert! Unsere Handelsflotte wäre damit heillos überfordert.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_8</Tag>
-		<English>Well, well! Our request to lower the selling price have been heard!</English>
+		<English>Well, well! Our request to lower the selling price was heard!</English>
 		<German>Sieh an, sieh an! Unsere Bitte um Senkung des Verkaufspreises wurde erhört!</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_9</Tag>
-		<English>You can never have enough free colonists, welcome to our prosperous colony!</English>
+		<English>You can never have enough free colonists/ Welcome to our prosperous colony!</English>
 		<German>Freie Kolonisten kann man nie genug haben, willkommen in unserer prosperierenden Kolonie!</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_10</Tag>
-		<English>Each additional merchant ship contributes to the flourishing of our colonies!</English>
+		<English>Each additional merchant ship shows how our colonies  flourish!</English>
 		<German>Jedes weiter Handelsschiff trägt zum erblühen unserer Kolonien bei!</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_11</Tag>
-		<English>It is only a small warship, but it should be enough to protect our merchant fleet!</English>
+		<English>It is only a small warship, but it should be enough to protect our merchant fleet.</English>
 		<German>Es ist zwar nur ein kleines Kriegsschiff, aber für den Schutz unserer Handelsflotte sollte es allemal genügen!</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_12</Tag>
-		<English>Brave fighters are essential to protect our borders!</English>
+		<English>Brave fighters are essential to protect our borders.</English>
 		<German>Tapfere Kämpfer sind für den Schutz unserer Grenzen unabdingbar!</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_13</Tag>
-		<English>For the Glory and Wealth of our colonies! Higher sale prices are always welcome!</English>
+		<English>For the glory and wealth of our colonies! Higher market prices are always welcome!</English>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Höhere Verkaufspreise sind immer willkommen!</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_14</Tag>
-		<English>For the Glory and Wealth of our colonies! Higher sale prices are always welcome!</English>
+		<English>For the glory and wealth of our colonies! Higher market prices are always welcome!</English>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Höhere Verkaufspreise sind immer willkommen!</German>
 	</TEXT>
     <TEXT>
@@ -3665,7 +3665,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1</Tag>
-        <English>The governor isn't a rich man, but he can enforce higher sales prices!</English>
+        <English>The governor isn't a rich man, but he can enforce higher prices!</English>
         <German>Der Gouverneur ist kein reicher Mann, aber höhere Verkaufspreise kann er durchsetzten!</German>
     </TEXT>
     <TEXT>
@@ -3685,17 +3685,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_5</Tag>
-        <English>For the glory and wealth of our colonies! Hopefully the mercenaries will not turn against us!</English>
+        <English>For the glory and wealth of our colonies! Let's hope the mercenaries don't turn against us!</English>
         <German>Für Ruhm und Reichtum unserer Kolonien! Hoffentlich wenden sich die Söldner nicht gegen uns!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6</Tag>
-        <English>For the glory and wealth of our colonies! The Natives seem to have skillful hands!</English>
+        <English>For the glory and wealth of our colonies! The Natives have skillful hands!</English>
         <German>Für Ruhm und Reichtum unserer Kolonien! Die Ureinwohner scheinen geschickte Hände zu haben!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Tag>
-        <English>For the glory and wealth of our colonies! Mestizos? They certainly have a good grip on things!</English>
+        <English>For the glory and wealth of our colonies! Mestizos? They certainly work hard!</English>
         <German>Für Ruhm und Reichtum unserer Kolonien! Mestizzos? Die können bestimmt auch gut zupacken!</German>
     </TEXT>
     <TEXT>
