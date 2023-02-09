@@ -1033,7 +1033,7 @@
         <English>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]The city has run out of %F2_yield_icon available. Our citizens can no longer produce %F3_yield_icon and are twiddling their thumbs.</English>
         <French>%s1_city est à cours de %F2_yield_icon et ne peut ainsi plus produire %F3_yield_icon.</French>
         <German>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Es steht keinerlei %F2_yield_icon mehr zur Verfügung. Unsere Bürger können keine %F3_yield_icon mehr herstellen und drehen Däumchen.</German>
-        <Russian>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Вгороде закончились %F2_yield_icon. Горожане больше не могут производить %F3_yield_icon и сидят без дела.</Russian>
+        <Russian>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]В городе закончились %F2_yield_icon. Горожане больше не могут производить %F3_yield_icon и сидят без дела.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ALMOST_NO_RAW</Tag>

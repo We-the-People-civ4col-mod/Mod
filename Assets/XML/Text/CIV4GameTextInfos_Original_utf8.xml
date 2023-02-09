@@ -3214,7 +3214,7 @@
         <German>%s3_CityName : Euer Pionier hat einen %s1_FeatName gerodet. %d2_Num%F4 konnten eingelagert werden.</German>
         <Italian>Sgombrando una casella di %s1_FeatName si è creata %d2_Num%F4 per %s3_CityName.</Italian>
         <Spanish>Despejar [NUM1:el:la:los:las] %s1_FeatName ha generado %d2_Num%F4 para %s3_CityName.</Spanish>
-        <Russian>%s3_CityName : Ваш первопроходец очистил %s1_FeatName. %d2_Num%F4 could be stored.</Russian>
+        <Russian>%s3_CityName : Ваш первопроходец очистил %s1_FeatName. %d2_Num%F4 было передано на склад.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_FEATURE_GROWN_NEAR_CITY</Tag>
@@ -9619,7 +9619,7 @@
         <German>[ICON_BULLET]%d1 [NUM1:Runde:Runden] Unruhe in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET]%d1 [NUM1:turno:turni] di disordini a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]%d1 [NUM1:turno:turnos] de desórdenes en [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Spanish>
-        <Russian>[ICON_BULLET]%d1 [NUM1:ход:ходов] беспорядков в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Russian>
+        <Russian>[ICON_BULLET]%d1 [NUM1:ход:хода] беспорядков в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PILLAGE_CITY</Tag>
@@ -9817,7 +9817,7 @@
         <German>[ICON_BULLET]Gebäude [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT] erhalten</German>
         <Italian>[ICON_BULLET]Ricevere [NUM1:un:una] [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]Recibir [NUM1:un:una:unos:unas] [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT]</Spanish>
-        <Russian>[ICON_BULLET]Получено [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT]</Russian>
+        <Russian>[ICON_BULLET]Получена [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_REMOVE_BUILDING</Tag>
