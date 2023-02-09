@@ -8389,7 +8389,6 @@ void CvPlayer::verifyAlive()
 	{
 		bool bKill = false;
 		bool bRespawn = false;
-		CvPlayer& kParent = GET_PLAYER(getParent());
 
 		if (getNumCities() == 0 && !isEurope() && getAdvancedStartPoints() < 0)
 		{
@@ -8400,10 +8399,9 @@ void CvPlayer::verifyAlive()
 			else
 			{
 				//WTP, ray, make AI elimination threshold XML configurable and also adjust to Gamespeed
-				int iTurn = GC.getGameINLINE().getGameTurn();
-				int iMinTurnForAIRespawningOff = GC.getDefineINT("KI_RESPAWN_OFF_MIN_TURN");
-				int gameSpeedMod =  GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
-				iMinTurnForAIRespawningOff = iMinTurnForAIRespawningOff * gameSpeedMod /100;
+				const int iTurn = GC.getGameINLINE().getGameTurn();
+				const int gameSpeedMod =  GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
+				const int iMinTurnForAIRespawningOff = GLOBAL_DEFINE_KI_RESPAWN_OFF_MIN_TURN * gameSpeedMod /100;
 
 				// WTP, jooe: no settlers left? pay for one in Europe!
 				// if we cannot pay, set bKill to true
@@ -8456,8 +8454,9 @@ void CvPlayer::verifyAlive()
 		if (!bKill)
 		{
 			// Only Colonial Players, but not Kings, not Natives, not Animals, ...
-			if (getParent() != NO_PLAYER)
+			if (getParent() != NO_PLAYER && getCivCategoryTypes() == CIV_CATEGORY_EUROPEAN)
 			{
+				const CvPlayer& kParent = GET_PLAYER(getParent());
 				// we check that there is no War of Independence and other small things
 				if(kParent.isAlive() && kParent.isEurope() && !::atWar(getTeam(), kParent.getTeam()) && (GC.getGameINLINE().getAIAutoPlay() == 0 || GC.getGameINLINE().getActivePlayer() != getID()))
 				{
@@ -8524,9 +8523,9 @@ void CvPlayer::verifyAlive()
 
 			/** NBMOD TAX **/
 
-			if (isHuman())
+			if (isHuman() && getParent() != NO_PLAYER)
 			{
-				CvDiploParameters* pDiplo = new CvDiploParameters(kParent.getID());
+				CvDiploParameters* pDiplo = new CvDiploParameters(GET_PLAYER(getParent()).getID());
 				pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_KING_REVIVE"));
 				pDiplo->addDiploCommentVariable(iNewTaxRate);
 				pDiplo->setAIContact(true);
@@ -8537,7 +8536,7 @@ void CvPlayer::verifyAlive()
 		}
 
 		// if we should be killed and have no more respawn chances (only colonial players or natives)
-		if (bKill && (getParent() != NO_PLAYER || isNative()))
+		if (bKill && (getCivCategoryTypes() == CIV_CATEGORY_EUROPEAN || isNative()))
 		{
 			// WTP, jooe: why would we not kill players in independence war? commenting this check out
 			// CvPlayer& kEurope = GET_PLAYER(getParent());
@@ -8558,11 +8557,11 @@ void CvPlayer::verifyAlive()
 				}
 
 				// destroy missions and trade posts for colonial players
-				if(getParent() != NO_PLAYER)
+				if(getCivCategoryTypes() == CIV_CATEGORY_EUROPEAN)
 				{
-					for (int iI = 0; iI < MAX_PLAYERS; iI++)
+					for (PlayerTypes eLoopPlayer = FIRST_PLAYER; eLoopPlayer < NUM_PLAYER_TYPES; ++eLoopPlayer)
 					{
-						CvPlayer& kLoopPlayer = GET_PLAYER((PlayerTypes) iI);
+						CvPlayer& kLoopPlayer = GET_PLAYER(eLoopPlayer);
 						if (kLoopPlayer.isAlive() && kLoopPlayer.isNative())
 						{
 							int iLoop;
@@ -8587,15 +8586,15 @@ void CvPlayer::verifyAlive()
 				// WTP, jooe: This was commented out, but I think it is the right place for that call
 				setAlive(false);
 
-				if(getParent() != NO_PLAYER)
+				if(getCivCategoryTypes() == CIV_CATEGORY_EUROPEAN)
 				{
 					// Send a message that the player was destroyed
 					CvWString szBuffer = gDLL->getText("TXT_KEY_NO_MORE_RESPAWN", getCivilizationShortDescriptionKey());
-					for (int iI = 0; iI < MAX_PLAYERS; iI++)
+					for (PlayerTypes eLoopPlayer = FIRST_PLAYER; eLoopPlayer < NUM_PLAYER_TYPES; ++eLoopPlayer)
 					{
-						if (GET_PLAYER((PlayerTypes)iI).isAlive())
+						if (GET_PLAYER(eLoopPlayer).isAlive())
 						{
-							gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVDESTROYED", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
+							gDLL->getInterfaceIFace()->addMessage((eLoopPlayer), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVDESTROYED", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
 						}
 					}
 				}
