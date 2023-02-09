@@ -2209,6 +2209,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Пиратский фрегат:Пиратские фрегаты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PIRATE_CUTTER</Tag>
@@ -2222,6 +2223,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Russian>Пиратский катер:Пиратские катера</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PREACHER</Tag>
@@ -2318,6 +2320,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Капер:Каперы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PROSPECTOR</Tag>

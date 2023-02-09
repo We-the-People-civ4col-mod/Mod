@@ -471,6 +471,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Док</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_DRYDOCK</Tag>
@@ -491,6 +492,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Сухой док</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_DYERS_HOUSE</Tag>
@@ -701,6 +703,7 @@
         <German>Marinehafen</German>
         <Italian>Naval Port</Italian>
         <Spanish>Naval Port</Spanish>
+        <Russian>Военно-морской порт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_GREAT_TOOL_FACTORY</Tag>
@@ -1117,6 +1120,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Судоверфь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_SLAUGHTERHOUSE</Tag>

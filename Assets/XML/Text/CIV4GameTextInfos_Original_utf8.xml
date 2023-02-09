@@ -80,6 +80,7 @@
         <German>%s1 hat das Spiel unterbrochen</German>
         <Italian>%s1 ha messo in pausa la partita.</Italian>
         <Spanish>%s1 ha detenido la partida.</Spanish>
+        <Russian>Игра приостановлена игроком %s1</Russian>
     </TEXT>
     <TEXT>
         <Tag>SYSTEM_WAITING_FOR_PLAYER</Tag>
@@ -96,6 +97,7 @@
         <German>%s1 (Spieler %d2) schließt sich dem Spiel an. Bitte warten ...</German>
         <Italian>%s1 (giocatore %d2) sta partecipando alla partita. Attendere...</Italian>
         <Spanish>%s1 (el jugador %d2) se está uniendo a la partida. Un momento...</Spanish>
+        <Russian>%s1 (Player %d2) присоединяется к игре. Пожалуйста, подождите...</Russian>
     </TEXT>
     <TEXT>
         <Tag>SYSTEM_WAITING_FOR_YOU</Tag>
@@ -104,6 +106,7 @@
         <German>Warten auf Beendigung der Runde durch EUCH ...</German>
         <Italian>In attesa della fine del TUO turno...</Italian>
         <Spanish>Esperando a que termines el turno...</Spanish>
+        <Russian>Ждем, пока ВЫ закончите ход.</Russian>
     </TEXT>
     <TEXT>
         <Tag>INTERFACE_CITY_GROWING</Tag>
@@ -233,6 +236,7 @@
         <German>[ICON_BULLET]%D1_Change %F3 in %s2_CityName</German>
         <Italian>[ICON_BULLET]%D1_Change %F3 a %s2_CityName</Italian>
         <Spanish>[ICON_BULLET]%D1_Change %F3 en %s2_CityName</Spanish>
+        <Russian>[ICON_BULLET]%D1_Change %F3 в %s2_CityName</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_REMOVE_FEATURE</Tag>
@@ -424,6 +428,7 @@
         <German>[ICON_BULLET]Kann mehrmals pro Runde angreifen</German>
         <Italian>[ICON_BULLET]Permette di attaccare più volte durante lo stesso turno</Italian>
         <Spanish>[ICON_BULLET]Puede atacar varias veces por turno</Spanish>
+        <Russian>[ICON_BULLET]Может атаковать несколько раз за ход</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_AMPHIB_TEXT</Tag>
@@ -432,6 +437,7 @@
         <German>[ICON_BULLET]Keine Kampfstrafe für Angriffe von See</German>
         <Italian>[ICON_BULLET]Nessuna penalità di combattimento quando si attacca dal mare</Italian>
         <Spanish>[ICON_BULLET]No sufre penalización al combate por atacar desde el mar</Spanish>
+        <Russian>[ICON_BULLET]Нет штрафа за атаку с моря</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_RIVER_ATTACK_TEXT</Tag>
@@ -440,6 +446,7 @@
         <German>[ICON_BULLET]Keine Kampfstrafe für Flussüberquerung</German>
         <Italian>[ICON_BULLET]Nessuna penalità nel guado di un fiume</Italian>
         <Spanish>[ICON_BULLET]No sufre penalización al combate por cruzar un río</Spanish>
+        <Russian>[ICON_BULLET]Нет штрафа за пересечение реки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_ENEMY_ROADS_TEXT</Tag>
@@ -448,6 +455,7 @@
         <German>[ICON_BULLET]Kann feindliche Straßen nutzen</German>
         <Italian>[ICON_BULLET]Permette di usare le strade nemiche</Italian>
         <Spanish>[ICON_BULLET]Puede usar las carreteras enemigas</Spanish>
+        <Russian>[ICON_BULLET]Может использовать вражеские дороги</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_ALWAYS_HEAL_TEXT</Tag>
@@ -456,6 +464,7 @@
         <German>[ICON_BULLET]Kann während der Fortbewegung heilen</German>
         <Italian>[ICON_BULLET]Permette la cura in movimento</Italian>
         <Spanish>[ICON_BULLET]Se cura a la vez que se mueve</Spanish>
+        <Russian>[ICON_BULLET]Может восстанавливать здоровье во время движения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SUFFER_DAMAGE_EACH_TURN_TEXT</Tag>
@@ -469,6 +478,7 @@
         <German>[ICON_BULLET]Doppelte Fortbewegung in Hügeln</German>
         <Italian>[ICON_BULLET]Movimento raddoppiato in collina</Italian>
         <Spanish>[ICON_BULLET]Movimiento doble en Colinas</Spanish>
+        <Russian>[ICON_BULLET]Двойное движение в холмах</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_DOUBLE_MOVE_TEXT</Tag>
@@ -477,6 +487,7 @@
         <German>[ICON_BULLET]Doppelte Fortbewegung in folgendem Gelände: %s1_TerrFeatType</German>
         <Italian>[ICON_BULLET]Movimento raddoppiato nelle caselle di %s1_TerrFeatType</Italian>
         <Spanish>[ICON_BULLET]Movimiento doble en %s1:2_TerrFeatType</Spanish>
+        <Russian>[ICON_BULLET]Двойное движение в %s1_TerrFeatType</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_VISIBILITY_TEXT</Tag>
@@ -485,6 +496,7 @@
         <German>[ICON_BULLET]%D1_Change Sichtweite</German>
         <Italian>[ICON_BULLET]%D1_Change raggio di visibilità</Italian>
         <Spanish>[ICON_BULLET]%D1_Change al alcance de la visibilidad</Spanish>
+        <Russian>[ICON_BULLET]%D1_Change радиусу видимости</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_MOVE_TEXT</Tag>
@@ -493,6 +505,7 @@
         <German>[ICON_BULLET]%D1_Change Fortbewegungsradius</German>
         <Italian>[ICON_BULLET]%D1_Change raggio di movimento</Italian>
         <Spanish>[ICON_BULLET]%D1_Change al alcance del movimiento</Spanish>
+        <Russian>[ICON_BULLET]%D1_Change к очкам движения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_MOVE_DISCOUNT_TEXT</Tag>
@@ -501,6 +514,7 @@
         <German>[ICON_BULLET]%D1_Discount Gelände-Fortbewegungskosten</German>
         <Italian>[ICON_BULLET]%D1_Discount costo di movimento sul terreno</Italian>
         <Spanish>[ICON_BULLET]%D1_Discount al coste del movimiento por terreno</Spanish>
+        <Russian>[ICON_BULLET]%D1_Discount к стоимости перемещения на местности</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_WITHDRAWAL_TEXT</Tag>
@@ -509,6 +523,7 @@
         <German>[ICON_BULLET]%D1_Change%% Rückzugswahrscheinlichkeit</German>
         <Italian>[ICON_BULLET]%D1_Change%% di probabilità di ritirata</Italian>
         <Spanish>[ICON_BULLET]%D1_Change%% a la probabilidad de retirarse</Spanish>
+        <Russian>[ICON_BULLET]%D1_Change%% к шансу выйти из боя</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_HEALS_EXTRA_TEXT</Tag>
@@ -517,11 +532,13 @@
         <German>[ICON_BULLET]%d1_Amount%%[SPACE]schnellere Heilung[SPACE]</German>
         <Italian>[ICON_BULLET]Cura il %d1_Amount%% supplementare[SPACE]</Italian>
         <Spanish>[ICON_BULLET]Cura un %d1_Amount%% más de[SPACE]</Spanish>
+        <Russian>[ICON_BULLET]Лечится %d1_Amount%%[SPACE]быстрее[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_HEALS_NEGATIVE_TEXT</Tag>
         <English>[ICON_BULLET]Heals %d1_Amount%% slower[SPACE]</English>
         <German>[ICON_BULLET]%d1_Amount%%[SPACE]langsamere Heilung[SPACE]</German>
+        <Russian>[ICON_BULLET]Лечится %d1_Amount%% медленнее[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_ENEMY_LANDS_TEXT</Tag>
@@ -530,6 +547,7 @@
         <German>auf feindlichem Territorium</German>
         <Italian>in territorio nemico</Italian>
         <Spanish>en tierra enemiga</Spanish>
+        <Russian>на вражеской территории</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_NEUTRAL_LANDS_TEXT</Tag>
@@ -538,6 +556,7 @@
         <German>Schaden/Runde auf neutralem Territorium</German>
         <Italian>Danno/turno in territorio neutrale</Italian>
         <Spanish>Daño/turno en tierra neutral</Spanish>
+        <Russian>Повреждений/ход на нейтральной территории</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_FRIENDLY_LANDS_TEXT</Tag>
@@ -546,6 +565,7 @@
         <German>Schaden/Runde auf freundlichem Territorium</German>
         <Italian>Danno/turno in territorio amico</Italian>
         <Spanish>Daño/turno en tierra amiga</Spanish>
+        <Russian>Повреждений/ход на дружеской территории</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_HEALS_SAME_TEXT</Tag>
@@ -554,6 +574,7 @@
         <German>[ICON_BULLET]Heilt Einheiten auf demselben Geländefeld um zusätzliche %d1_Amount%%[SPACE]</German>
         <Italian>[ICON_BULLET]Cura le unità nella stessa casella del %d1_Amount%%[SPACE]</Italian>
         <Spanish>[ICON_BULLET]Cura a las unidades en la misma casilla un %d1_Amount%% más de[SPACE]</Spanish>
+        <Russian>[ICON_BULLET]Дополнительно исцеляет юнитов на этой же клетке %d1_Amount%%[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_DAMAGE_TURN_TEXT</Tag>
@@ -562,6 +583,7 @@
         <German>Schaden/Runde</German>
         <Italian>Danno/turno</Italian>
         <Spanish>Daño/turno</Spanish>
+        <Russian>Повреждений/ход</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_HEALS_ADJACENT_TEXT</Tag>
@@ -570,6 +592,7 @@
         <German>[ICON_BULLET]Heilt Einheiten auf benachbarten Geländefeldern um zusätzliche %d1_Heals%%[SPACE]</German>
         <Italian>[ICON_BULLET]Cura le unità nelle caselle adiacenti del %d1_Heals%%[SPACE]</Italian>
         <Spanish>[ICON_BULLET]Cura a las unidades en casillas adyacentes un %d1_Amount%% más de[SPACE]</Spanish>
+        <Russian>[ICON_BULLET]Дополнительно исцеляет юниты на соседних клетках %d1_Heals%%[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ATTACK</Tag>
@@ -578,6 +601,7 @@
         <German>[ICON_BULLET]%D1_Change%% %s2_TerrOrFeat-Angriff</German>
         <Italian>[ICON_BULLET]%D1_Change%% all'attacco in %s2_TerrOrFeat</Italian>
         <Spanish>[ICON_BULLET]%D1_Change%% a ataque a %s2:2_TerrOrFeat</Spanish>
+        <Russian>[ICON_BULLET]%D1_Change%% %s2_TerrOrFeat к атаке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_ATTACK_TEXT</Tag>
@@ -586,6 +610,7 @@
         <German>[ICON_BULLET]%D1_Bonus%% %s2_TerrFeat-Angriff</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% di attacco in %s2_TerrFeat</Italian>
         <Spanish>[ICON_BULLET]%D1_Bonus%% a ataque a %s2:2_TerrFeat</Spanish>
+        <Russian>[ICON_BULLET]%D1_Bonus%% %s2_TerrFeat к атаке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_STRENGTH</Tag>
@@ -594,6 +619,7 @@
         <German>[ICON_BULLET]%D1_Change%% %s2_TerrOrFeat-Stärke</German>
         <Italian>[ICON_BULLET]%D1_Change%% alla forza in %s2_TerrOrFeat</Italian>
         <Spanish>[ICON_BULLET]%D1_Change%% a fuerza en %s2:2_TerrOrFeat</Spanish>
+        <Russian>[ICON_BULLET]%D1_Change%% %s2_TerrOrFeat к силе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_STRENGTH_TEXT</Tag>
@@ -602,6 +628,7 @@
         <German>[ICON_BULLET]%D1_Bonus%% Stärke</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% di forza</Italian>
         <Spanish>[ICON_BULLET]%D1_Bonus%% a la fuerza</Spanish>
+        <Russian>[ICON_BULLET]%D1_Bonus%% к силе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HILLS_DEFENSE</Tag>
@@ -610,6 +637,7 @@
         <German>[ICON_BULLET]%D1_Change%% Hügel-Verteidigung</German>
         <Italian>[ICON_BULLET]%D1_Change%% di difesa in collina</Italian>
         <Spanish>[ICON_BULLET]%D1_Change%% a defender colinas</Spanish>
+        <Russian>[ICON_BULLET]%D1_Change%% к защите на холмах</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_HILLS_DEFENSE_TEXT</Tag>
@@ -618,6 +646,7 @@
         <German>[ICON_BULLET]%D1_Bonus%% Hügel-Verteidigung</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% di difesa in collina</Italian>
         <Spanish>[ICON_BULLET]%D1_Bonus%% a defender colinas</Spanish>
+        <Russian>[ICON_BULLET]%D1_Bonus%% к защите на холмах</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_DOMESTIC_BONUS</Tag>
@@ -626,6 +655,7 @@
         <German>[ICON_BULLET]%D1_Change%% Stärke innerhalb der eigenen Grenzen</German>
         <Italian>[ICON_BULLET]%D1_Change%% di forza all'interno dei confini culturali</Italian>
         <Spanish>[ICON_BULLET]%D1_Change%% de fuerza dentro de las fronteras culturales</Spanish>
+        <Russian>[ICON_BULLET]%D1_Change%% к силе внутри культурных границ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_DOMESTIC_BONUS_TEXT</Tag>
@@ -634,6 +664,7 @@
         <German>[ICON_BULLET]%D1_Bonus%% Verteidigungsbonus innerhalb der eigenen Grenzen</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% di forza all'interno dei confini culturali</Italian>
         <Spanish>[ICON_BULLET]%D1_Bonus%% de fuerza dentro de las fronteras culturales</Spanish>
+        <Russian>[ICON_BULLET]%D1_Bonus%% к силе внутри культурных границ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_DEFENSE</Tag>
@@ -642,6 +673,7 @@
         <German>[ICON_BULLET]%D1_Change%% Verteidigung für %s2_TerrOrFeat</German>
         <Italian>[ICON_BULLET]%D1_Change%% di difesa nella %s2:2_TerrOrFeat</Italian>
         <Spanish>[ICON_BULLET]%D1_Change%% a defender %s2:2_TerrOrFeat</Spanish>
+        <Russian>[ICON_BULLET]%D1_Change%% %s2_TerrOrFeat к защите</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_DEFENSE_TEXT</Tag>
@@ -650,6 +682,7 @@
         <German>[ICON_BULLET]%D1_Bonus%% Verteidigung für %s2_TerrFeat</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% difensivo nelle caselle di %s2:1_TerrFeat</Italian>
         <Spanish>[ICON_BULLET]%D1_Bonus%% a defender %s2:2_TerrFeat</Spanish>
+        <Russian>[ICON_BULLET]%D1_Bonus%% %s2_TerrFeat к защите</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CARGO_SPACE</Tag>
@@ -676,6 +709,7 @@
         <Tag>TXT_KEY_UNIT_ADDITIONAL_LAW_TO_CITY</Tag>
         <English>[ICON_BULLET]Additional Law: +%d1_Num%F2_Icon (if population not too low)</English>
         <German>[ICON_BULLET]Zusätzliches Gesetz: +%d1_Num%F2_Icon (falls Bevölkerung nicht zu niedrig)</German>
+        <Russian>[ICON_BULLET]Прибавка к закону: +%d1_Num%F2_Icon (если население не слишком мало)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BOMBARD_RATE_CHANGE</Tag>
@@ -684,6 +718,7 @@
         <German>[ICON_BULLET]%D1_DmgChange%%%F2_Icon Siedlungs-Bombardierungsschaden</German>
         <Italian>[ICON_BULLET]%D1_DmgChange%%%F2_Icon di danno da bombardamento sull'insediamento</Italian>
         <Spanish>[ICON_BULLET]%D1_DmgChange%%%F2_Icon al daño al cañonear asentamientos</Spanish>
+        <Russian>[ICON_BULLET]%D1_DmgChange%%%F2_Icon к бомбардировке поселений</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CARRIES</Tag>
@@ -692,6 +727,7 @@
         <German>[SPACE](Befördert %s1_Name)</German>
         <Italian>[SPACE](trasporta %s1_Name)</Italian>
         <Spanish>[SPACE](%s1_Name)</Spanish>
+        <Russian>[SPACE](перевозит %s1_Name)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CANNOT_ENTER</Tag>
@@ -811,6 +847,7 @@
         <German>[ICON_BULLET]%D1_Change%% Angriff gegen [LINK=literal]%s2_Class[\LINK]</German>
         <Italian>[ICON_BULLET]%D1_Change%% di attacco contro [LINK=literal]%s2:2_Class[\LINK]</Italian>
         <Spanish>[ICON_BULLET]%D1_Change%% al ataque contra [LINK=literal]%s2:2_Class[\LINK]</Spanish>
+        <Russian>[ICON_BULLET]%D1_Change%% к атаке vs. [LINK=literal]%s2_Class[\LINK]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_DEFENSE_MOD_VS_CLASS</Tag>
@@ -819,6 +856,7 @@
         <German>[ICON_BULLET]%D1_Change%% Verteidigung gegen [LINK=literal]%s2_Class[\LINK]</German>
         <Italian>[ICON_BULLET]%D1_Change%% quando difende contro [LINK=literal]%s2:2_Class[\LINK]</Italian>
         <Spanish>[ICON_BULLET]%D1_Change%% al defender contra [LINK=literal]%s2:2_Type[\LINK]</Spanish>
+        <Russian>[ICON_BULLET]%D1_Change%% к обороне vs. [LINK=literal]%s2_Type[\LINK]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_STARTS_WITH</Tag>
@@ -865,6 +903,7 @@
         <German>, EP: (%d1_Curr/%d2_Needed)</German>
         <Italian>, PE: (%d1_Curr/%d2_Needed)</Italian>
         <Spanish>, PX: (%d1_Curr/%d2_Needed)</Spanish>
+        <Russian>, EXP: (%d1_Curr/%d2_Needed)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HELP_FORTIFY_BONUS</Tag>
@@ -882,6 +921,7 @@
         <German>"Morgen wird die Zukunft besser sein." - Dan Quayle</German>
         <Italian>"Domani, il futuro sarà migliore." - Dan Quayle</Italian>
         <Spanish>"El futuro será mejor mañana." - Dan Quayle</Spanish>
+        <Russian>"Будущее будет лучше завтра". - Дэн Куэйл</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FREE_XP_UNITS</Tag>
@@ -890,6 +930,7 @@
         <German>[ICON_BULLET]Neue Einheiten erhalten %D1_Change [NUM1:Erfahrungspunkt:Erfahrungspunkte]</German>
         <Italian>[ICON_BULLET]Le nuove unità ricevono %D1_Change [NUM1:punto esperienza:punti esperienza]</Italian>
         <Spanish>[ICON_BULLET]Las nuevas unidades reciben %D1_Change [NUM1:punto de experiencia:puntos de experiencia]</Spanish>
+        <Russian>[ICON_BULLET]Новые юниты получают %D1_Change [NUM1:очко опыта:очков опыта]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_STORES_FOOD</Tag>
@@ -934,6 +975,7 @@
         <German>[ICON_BULLET]%D1_Mod%% Produktion von Militäreinheiten</German>
         <Italian>[ICON_BULLET]%D1_Mod%% di produzione nelle unità militari</Italian>
         <Spanish>[ICON_BULLET]%D1_Mod%% a la producción de unidades militares</Spanish>
+        <Russian>[ICON_BULLET]%D1_Mod%% к производству военных юнитов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WATER_PLOTS</Tag>
@@ -951,6 +993,7 @@
         <German>Land-Geländefelder</German>
         <Italian>Land Tiles</Italian>
         <Spanish>Land Tiles</Spanish>
+        <Russian>Клетки земли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FREE_XP</Tag>
@@ -1268,6 +1311,7 @@
         <German>Modernisierung %s1 : %D2%F3 (mit Bonusgut [LINK=literal]%s4[\LINK])</German>
         <Italian>%s1 : %D2%F3 (con [LINK=literal]%s4[\LINK])</Italian>
         <Spanish>%s1 : %D2%F3 (con [LINK=literal]%s4[\LINK])</Spanish>
+        <Russian>Улучшение %s1 : %D2%F3 (с бонусным ресурсом [LINK=literal]%s4[\LINK])</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_ROUTE_YIELD</Tag>
@@ -1276,6 +1320,7 @@
         <German>Modernisierung %s1 : %D2%F3 (mit Bonusgut %s4)</German>
         <Italian>%s1 : %D2%F3 (con %s4)</Italian>
         <Spanish>%s1 : %D2%F3 (con %s4)</Spanish>
+        <Russian>Улучшение %s1 : %D2%F3 (с бонусным ресурсом %s4)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_ALL_UNITS</Tag>
@@ -1284,6 +1329,7 @@
         <German>Alle Einheiten</German>
         <Italian>Tutte le unità</Italian>
         <Spanish>Todas las unidades</Spanish>
+        <Russian>Все юниты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_TRAITS</Tag>
@@ -1292,6 +1338,7 @@
         <German>Merkmale</German>
         <Italian>Punti di forza</Italian>
         <Spanish>Rasgos</Spanish>
+        <Russian>Черты характера</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DEMO_SCREEN_TITLE</Tag>
@@ -1381,6 +1428,7 @@
         <German> Tonnen</German>
         <Italian> tonnellate</Italian>
         <Spanish> toneladas</Spanish>
+        <Russian> тонн</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DEMO_SCREEN_AGRICULTURE_TEXT</Tag>
@@ -1405,6 +1453,7 @@
         <German>Soldaten</German>
         <Italian>Soldati</Italian>
         <Spanish>Soldados</Spanish>
+        <Russian>Солдаты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DEMO_SCREEN_LAND_AREA_TEXT</Tag>
@@ -1421,6 +1470,7 @@
         <German> Quadratkilometer</German>
         <Italian> Km quadrati</Italian>
         <Spanish> Km cuad.</Spanish>
+        <Russian> км²</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DEMO_SCREEN_POPULATION_TEXT</Tag>
@@ -1429,6 +1479,7 @@
         <German>Bevölkerung</German>
         <Italian>Popolazione</Italian>
         <Spanish>Población</Spanish>
+        <Russian>Население</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DEMO_SCREEN_IMPORTS_TEXT</Tag>
@@ -1437,6 +1488,7 @@
         <German>Importe</German>
         <Italian>Importazioni</Italian>
         <Spanish>Importaciones</Spanish>
+        <Russian>Импорт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DEMO_SCREEN_EXPORTS_TEXT</Tag>
@@ -1445,6 +1497,7 @@
         <German>Exporte</German>
         <Italian>Esportazioni</Italian>
         <Spanish>Exportaciones</Spanish>
+        <Russian>Экспорт</Russian>
     </TEXT>
     <TEXT>
         <Tag>UNUSED_TXT_KEY_DEMO_SCREEN_CONDENSED_IMPEXP_TEXT</Tag>
@@ -1583,6 +1636,7 @@
         <German>%d1%% der Weltbevölkerung</German>
         <Italian>%d1%% della popolazione mondiale</Italian>
         <Spanish>%d1%% de la población mundial</Spanish>
+        <Russian>%d1%% от мирового населения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_SCREEN_PERCENT_LAND</Tag>
@@ -1591,6 +1645,7 @@
         <German>%d1%% des Landgebiets</German>
         <Italian>%d1%% della superficie</Italian>
         <Spanish>%d1%% del área terrestre</Spanish>
+        <Russian>%d1%% от площади земли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_SCREEN_PERCENT_CULTURE</Tag>
@@ -1599,6 +1654,7 @@
         <German>%d1%% der Kultur</German>
         <Italian>%d1%% di cultura</Italian>
         <Spanish>%d1%% de cultura</Spanish>
+        <Russian>%d1%% от культуры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WIDGET_CREATE_GROUP</Tag>
@@ -1643,6 +1699,7 @@
         <German>Veranlasst %s1_You, mit %s2_Them Frieden zu schließen.</German>
         <Italian>Farà in modo che %s1_You faccia pace con %s2_Them.</Italian>
         <Spanish>Hará que %s1_You firme la paz con %s2_Them.</Spanish>
+        <Russian>Заставить %s1_You заключить мир с %s2_Them.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_MAKE_WAR</Tag>
@@ -1651,6 +1708,7 @@
         <German>Veranlasst %s1_You, %s2_Them den Krieg zu erklären.</German>
         <Italian>Farà in modo che %s1_You dichiari guerra a %s2_Them.</Italian>
         <Spanish>Hará que %s1_You le declare la guerra a %s2_Them.</Spanish>
+        <Russian>Заставить %s1_You объявить войну %s2_Them</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_STOP_TRADING</Tag>
@@ -1659,6 +1717,7 @@
         <German>Veranlasst %s1_You, die Handelsbeziehungen mit %s2_Them einzustellen.</German>
         <Italian>Farà in modo che %s1_You interrompa il commercio con %s2_Them.</Italian>
         <Spanish>Hará que %s1_You deje de comerciar con %s2_Them.</Spanish>
+        <Russian>Will cause %s1_You прекратить торговлю с %s2_Them</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_GOLD</Tag>
@@ -2340,6 +2399,7 @@
         <German>Durchsuchen ...</German>
         <Italian>Esplora...</Italian>
         <Spanish>Examinar...</Spanish>
+        <Russian>Смотреть...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_RESET</Tag>
@@ -2429,6 +2489,7 @@
         <German>%s1_ProdName (%d2_NumTurns) [COLOR_HIGHLIGHT_TEXT]empfohlen[COLOR_REVERT]</German>
         <Italian>%s1_ProdName (%d2_NumTurns) [COLOR_HIGHLIGHT_TEXT]Consigliato[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]Se recomienda crear:[COLOR_REVERT] %s1_ProdName (%d2_NumTurns [NUM2:turno:turnos])</Spanish>
+        <Russian>%s1_ProdName (%d2_NumTurns) [COLOR_HIGHLIGHT_TEXT]Рекомендовано[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_GOLD_CITY_CAPTURE</Tag>
@@ -2437,6 +2498,7 @@
         <German>Milord, Ihr habt bei der Eroberung von [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] %d1_Num[ICON_GOLD] erbeutet! Wollt Ihr die Stadt behalten?</German>
         <Italian>Hai saccheggiato %d1_Num[ICON_GOLD] dalla conquista di [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]!!! Vuoi mantenerla?</Italian>
         <Spanish>Habéis saqueado %d1_Num[ICON_GOLD] con la captura de [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]. ¿Deseáis conservarla?</Spanish>
+        <Russian>Милорд! При захвате [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] мы награбили %d1_Num[ICON_GOLD]!!! Стоит ли нам оставить его себе?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_CITY_CAPTURE_KEEP</Tag>
@@ -2480,6 +2542,7 @@
         <German>Alarm</German>
         <Italian>Allarme</Italian>
         <Spanish>Alarma</Spanish>
+        <Russian>АЛЯРМА!!!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_YES</Tag>
@@ -2506,6 +2569,7 @@
         <German>Milord, wenn Ihr Eure Leute in [COLOR_HIGHLIGHT_TEXT]%s1_CivAdj[COLOR_REVERT] Territorium schickt, löst Ihr einen Krieg aus. Eure Tollkühnheit wird viele Weiber zu Witwen machen. Haltet Ihr Euren Angriff für tugendhaft und gerecht?</German>
         <Italian>Entrando nel territorio [COLOR_HIGHLIGHT_TEXT]%s1_CivAdj[COLOR_REVERT] scatenerai una GUERRA! Sei sicuro?</Italian>
         <Spanish>¡Entrar en las tierras de los [COLOR_HIGHLIGHT_TEXT]%s1:3_CivAdj[COLOR_REVERT] significará la GUERRA! ¿Seguro que eso es lo que queréis?</Spanish>
+        <Russian>Милорд, если вы отправите своих людей на территорию [COLOR_HIGHLIGHT_TEXT]%s1_CivAdj[COLOR_REVERT], вы начнете войну. Ваше безрассудство сделает многих женщин вдовами. Вы уверены, что нам это нужно?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_ENTER_WITH_OPEN_BORDERS</Tag>
@@ -2514,6 +2578,7 @@
         <German>[SPACE](Wenn Ihr eine Grenzöffnungsvereinbarung schließt, könnten wir das Gebiet gefahrlos betreten.)</German>
         <Italian>[SPACE](Puoi entrare pacificamente se decidi di siglare un accordo di diritto di passaggio.)</Italian>
         <Spanish>[SPACE](Podéis entrar pacíficamente si firmáis un tratado de apertura de fronteras.)</Spanish>
+        <Russian>[SPACE](Вы можете войти мирным путем, если подпишете договор об открытых границах.)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_DOES_THIS_MEAN_WAR</Tag>
@@ -2522,6 +2587,7 @@
         <German>Soll das Krieg bedeuten? (gegen [COLOR_HIGHLIGHT_TEXT]%s1_Team[COLOR_REVERT])</German>
         <Italian>Ciò vuol dire GUERRA? (contro [COLOR_HIGHLIGHT_TEXT]%s1_Team [COLOR_REVERT])</Italian>
         <Spanish>¿Esto es la GUERRA? (contra [COLOR_HIGHLIGHT_TEXT]%s1_Team[COLOR_REVERT])</Spanish>
+        <Russian>Это означает ВОЙНУ?! (vs. [COLOR_HIGHLIGHT_TEXT]%s1_Team[COLOR_REVERT])</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_EXIT_TO_DESKTOP</Tag>
@@ -2662,6 +2728,7 @@
         <German>[COLOR_WARNING_TEXT]UNPASSIERBAR[COLOR_REVERT]</German>
         <Italian>[COLOR_WARNING_TEXT]INVALICABILE[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_WARNING_TEXT]INFRANQUEABLE[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_WARNING_TEXT]НЕПРОХОДИМЫЙ[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PLOT_IMP_UPGRADE</Tag>
@@ -2678,6 +2745,7 @@
         <German>[ICON_BULLET]Kann Wasser-Geländefelder bewirtschaften</German>
         <Italian>[ICON_BULLET]Permette di usare le caselle d'acqua</Italian>
         <Spanish>[ICON_BULLET]Se puede trabajar en casillas de agua</Spanish>
+        <Russian>[ICON_BULLET]Может работать на водных клетках</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ON_HILLS</Tag>
@@ -2686,6 +2754,7 @@
         <German>[SPACE]auf Hügeln</German>
         <Italian>[SPACE]sulle colline</Italian>
         <Spanish>[SPACE]en una colina</Spanish>
+        <Russian>[SPACE]на холмах</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ALONG_RIVER</Tag>
@@ -2694,6 +2763,7 @@
         <German>[SPACE]entlang eines Flusses</German>
         <Italian>[SPACE]lungo il fiume</Italian>
         <Spanish>[SPACE]junto a un río</Spanish>
+        <Russian>[SPACE]вдоль реки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_GOLD</Tag>
@@ -2702,6 +2772,7 @@
         <German>Gold (%d1_Num)</German>
         <Italian>Oro (%d1_Num)</Italian>
         <Spanish>Oro (%d1_Num)</Spanish>
+        <Russian>Золото (%d1_Num)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_OPEN_BORDERS</Tag>
@@ -2710,6 +2781,7 @@
         <German>Offene Grenzen</German>
         <Italian>Diritto di passaggio</Italian>
         <Spanish>Apertura de fronteras</Spanish>
+        <Russian>Открытые границы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_DEFENSIVE_PACT</Tag>
@@ -2718,6 +2790,7 @@
         <German>Verteidigungsbündnis</German>
         <Italian>Alleanza difensiva</Italian>
         <Spanish>Acuerdo de protección</Spanish>
+        <Russian>Оборонительный пакт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_PERMANENT_ALLIANCE</Tag>
@@ -2726,6 +2799,7 @@
         <German>Allianz</German>
         <Italian>Alleanza permanente</Italian>
         <Spanish>Alianza permanente</Spanish>
+        <Russian>Постоянный союз</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_PEACE_TREATY</Tag>
@@ -2734,6 +2808,7 @@
         <German>Friedensvertrag (%d1_Num [NUM1:Runde:Runden])</German>
         <Italian>Trattato di pace (%d1_Num [NUM1:turno:turni])</Italian>
         <Spanish>Tratado de paz (%d1_Num [NUM1:turno:turnos])</Spanish>
+        <Russian>Мирный договор (%d1_Num [NUM1:ход:ходов])</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HURRY_PROD</Tag>
@@ -2811,6 +2886,7 @@
         <German>[COLOR_WARNING_TEXT]Kann keinen Krieg erklären[COLOR_REVERT]</German>
         <Italian>[COLOR_WARNING_TEXT]Impossibile dichiarare guerra[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_WARNING_TEXT]No se puede declarar la guerra[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_WARNING_TEXT]Нельзя объявлять войну[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ALT_DECLARE_WAR</Tag>
@@ -2819,6 +2895,7 @@
         <German>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] für eine Kriegserklärung)</German>
         <Italian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] per dichiarare guerra)</Italian>
         <Spanish>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] para declarar la guerra)</Spanish>
+        <Russian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] для объявления войны)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_WARNING</Tag>
@@ -2827,6 +2904,7 @@
         <German>Warnung!</German>
         <Italian>Attenzione!</Italian>
         <Spanish>¡Aviso!</Spanish>
+        <Russian>Внимание!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ON_CITIZEN_AUTO</Tag>
@@ -2906,6 +2984,7 @@
         <German>Hier klicken, um abzubrechen</German>
         <Italian>Clicca per annullare</Italian>
         <Spanish>Hacer clic para cancelar</Spanish>
+        <Russian>Нажмите для отмены</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_SAY_TO_TEAM</Tag>
@@ -2986,6 +3065,7 @@
         <German>[COLOR_POSITIVE_TEXT]%s1_CityName : [COLOR_REVERT]Die Grenzen der Stadt wurden erweitert!</German>
         <Italian>I confini di %s1_CityName si sono espansi!</Italian>
         <Spanish>Las fronteras de %s1_CityName se han ampliado.</Spanish>
+        <Russian>[COLOR_POSITIVE_TEXT]%s1_CityName : [COLOR_REVERT]Границы города расширились!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CULTURE_LEVEL</Tag>
@@ -3010,6 +3090,7 @@
         <German>Die Stadt [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] wurde gegründet.</German>
         <Italian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] è stata fondata.</Italian>
         <Spanish>Se ha fundado [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT].</Spanish>
+        <Russian>Был основан город [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CITY_IS_FOUNDED</Tag>
@@ -3018,6 +3099,7 @@
         <German>Die Stadt [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] wird gegründet.</German>
         <Italian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] fondata.</Italian>
         <Spanish>Se funda [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT].</Spanish>
+        <Russian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] основан.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_TRAINED_UNIT_IN</Tag>
@@ -3026,6 +3108,7 @@
         <German>%s2_CityName : Ihr habt einen [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] ausgebildet.</German>
         <Italian>Hai addestrato [NUM1:un:una:dei:delle] %s1_UnitName a %s2_CityName.</Italian>
         <Spanish>Habéis entrenado a [NUM1:un:una:unos:unas] %s1_UnitName en %s2_CityName.</Spanish>
+        <Russian>%s2_CityName : Был создан юнит [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CONSTRUCTED_BUILD_IN</Tag>
@@ -3034,6 +3117,7 @@
         <German>%s2_CityName : Ein [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT] wurde errichtet.</German>
         <Italian>Hai costruito l'edificio %s1_BldgName a %s2_CityName.</Italian>
         <Spanish>Habéis construido [NUM1:un:una:unos:unas] %s1_BldgName en %s2_CityName.</Spanish>
+        <Russian>%s2_CityName : Было построено здание [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_WORK_HAS_BEGUN</Tag>
@@ -3050,6 +3134,7 @@
         <German>Milord, Eure Männer haben in [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] %d1_Num[ICON_GOLD] für Euch erbeutet!</German>
         <Italian>Hai saccheggiato %d1_Num[ICON_GOLD] dalla distruzione di [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]!</Italian>
         <Spanish>Habéis saqueado %d1_Num[ICON_GOLD] con la destrucción de [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</Spanish>
+        <Russian>Милорд, ваши люди награбили для вас %d1_Num[ICON_GOLD] в [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CITY_HAS_BEEN_RAZED_BY</Tag>
@@ -3058,6 +3143,7 @@
         <German>Das [COLOR_HIGHLIGHT_TEXT]%s2:2_CivName[COLOR_REVERT] hat [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] vernichtet!</German>
         <Italian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] è stata razziata dall'[COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT]!</Italian>
         <Spanish>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] ha sido arrasada por el [COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT].</Spanish>
+        <Russian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] был разрушен [COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT]!!!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CITY_RAZED_BY</Tag>
@@ -3066,6 +3152,7 @@
         <German>Das [COLOR_HIGHLIGHT_TEXT]%s2:2_CivName[COLOR_REVERT] vernichtet [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]!</German>
         <Italian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] è stata razziata dall'[COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT]!!!</Italian>
         <Spanish>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT], arrasada por el [COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT].</Spanish>
+        <Russian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] разрушен [COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT]!!!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CAPTURED_CITY</Tag>
@@ -3074,6 +3161,7 @@
         <German>[COLOR_POSITIVE_TEXT]Triumph, Milord! [COLOR_REVERT]Eure wackeren Soldaten haben [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] in ihre Gewalt gebracht.</German>
         <Italian>Hai conquistato %s1_CityName!!!</Italian>
         <Spanish>Habéis capturado %s1_CityName.</Spanish>
+        <Russian>[COLOR_POSITIVE_TEXT]Триумф, Милорд! [COLOR_REVERT]Ваши храбрые солдаты взяли под контроль [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CITY_CAPTURED_BY</Tag>
@@ -3082,6 +3170,7 @@
         <German>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] steht jetzt unter der Herrschaft von [COLOR_HIGHLIGHT_TEXT]%s2:2_CivName[COLOR_REVERT]!</German>
         <Italian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] è stata conquistata dall'[COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT]!!!</Italian>
         <Spanish>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] ha sido capturada por el [COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT].</Spanish>
+        <Russian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] сейчас находится под властью [COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CITY_WAS_CAPTURED_BY</Tag>
@@ -3090,6 +3179,7 @@
         <German>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] steht jetzt unter der Herrschaft von [COLOR_HIGHLIGHT_TEXT]%s2:2_CivName[COLOR_REVERT]!</German>
         <Italian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] è stata conquistata dall'[COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT]!!!</Italian>
         <Spanish>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT], capturada por el [COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT].</Spanish>
+        <Russian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] был захвачен [COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_RECEIVED_GOLD</Tag>
@@ -3098,6 +3188,7 @@
         <German>[SPACE]Ihr habt %d1_Num[ICON_GOLD] erhalten!</German>
         <Italian>[SPACE]Hai ricevuto %d1_Num[ICON_GOLD]!</Italian>
         <Spanish>[SPACE]Habéis recibido %d1_Num[ICON_GOLD].</Spanish>
+        <Russian>[SPACE]Вы получили %d1_Num[ICON_GOLD]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_PLAYER_ADOPTED_CIVIC</Tag>
@@ -3114,6 +3205,7 @@
         <German>[COLOR_WARNING_TEXT]%s1_CityName : [COLOR_REVERT]Feindliche Truppen wurden in der Nähe gesichtet !</German>
         <Italian>Truppe nemiche avvistate nei pressi di %s1_CityName!</Italian>
         <Spanish>Se han avistado tropas enemigas cerca de %s1_CityName.</Spanish>
+        <Russian>[COLOR_WARNING_TEXT]%s1_CityName : [COLOR_REVERT]В окрестностях были замечены вражеские войска!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CLEARING_FEATURE_BONUS</Tag>
@@ -3122,6 +3214,7 @@
         <German>%s3_CityName : Euer Pionier hat einen %s1_FeatName gerodet. %d2_Num%F4 konnten eingelagert werden.</German>
         <Italian>Sgombrando una casella di %s1_FeatName si è creata %d2_Num%F4 per %s3_CityName.</Italian>
         <Spanish>Despejar [NUM1:el:la:los:las] %s1_FeatName ha generado %d2_Num%F4 para %s3_CityName.</Spanish>
+        <Russian>%s3_CityName : Ваш первопроходец очистил %s1_FeatName. %d2_Num%F4 could be stored.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_FEATURE_GROWN_NEAR_CITY</Tag>
@@ -3130,6 +3223,7 @@
         <German>Ein %s1_FeatName ist nahe der Stadt [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] entstanden.</German>
         <Italian>Vicino a [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] [NUM1:è sorto:è sorta] %s1_FeatName</Italian>
         <Spanish>Ha aparecido [NUM1:un:una:unos:unas] %s1_FeatName cerca de [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</Spanish>
+        <Russian>%s1_FeatName dshjc hzljv c [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_DISCOVERED_NEW_RESOURCE</Tag>
@@ -3154,6 +3248,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] hat Euch den Krieg erklärt! Wappnet Euch, Milord!</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] ti ha dichiarato guerra!</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] os han declarado la guerra.</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] объявил нам войну!!!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_SOMEONE_DECLARED_WAR</Tag>
@@ -3162,6 +3257,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] hat [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT] den Krieg erklärt!</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] ha dichiarato guerra a [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT]!</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] le ha declarado la guerra a [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT].</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] объявил войну [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_SOMEONE_DECLARES_WAR</Tag>
@@ -3170,6 +3266,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] erklärt [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT] den Krieg!</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] dichiara guerra a [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT]!</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] le declara la guerra a [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT].</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] объявляет войу [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_SOMEONE_MADE_PEACE</Tag>
@@ -3178,6 +3275,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] hat mit [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT] Frieden geschlossen!</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] ha siglato la pace con [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT]!</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] ha firmado la paz con [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT].</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] заключил мир с [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_YOU_UNITS_UNDER_ATTACK</Tag>
@@ -3186,6 +3284,7 @@
         <German>Eure Truppen werden angegriffen (%s1_player)!</German>
         <Italian>Le tue forze sono sotto attacco (%s1_player)!</Italian>
         <Spanish>Atacan a vuestras fuerzas (%s1_player).</Spanish>
+        <Russian>Наши войска атакованы %s1_player!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_GIFTED_UNIT_TO_YOU</Tag>
@@ -3210,6 +3309,7 @@
         <German>Eine Modernisierung %s1_ImpName wurde zerstört - %s2_UnitName ([COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT])!</German>
         <Italian>[NUM1:Un:Una] %s1_ImpName è [NUM1:stato sabotato:stata sabotata] - %s2_UnitName ([COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT])!</Italian>
         <Spanish>[NUM1:Un:Una:Unos:Unas] %s1_ImpName [NUM1:ha sido destruido:ha sido destruida:han sido destruidos:han sido destruidas] - %s2_UnitName ([COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT]).</Spanish>
+        <Russian>%s1_ImpName уничтожена [COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT] %s2_UnitName!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ALARM_GOES_OFF</Tag>
@@ -3275,6 +3375,7 @@
         <German>Runde : %d1_TurnNum</German>
         <Italian>Turno : %d1_TurnNum</Italian>
         <Spanish>Turno : %d1_TurnNum</Spanish>
+        <Russian>Ход : %d1_TurnNum</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TIME_WEEK</Tag>
@@ -3283,6 +3384,7 @@
         <German>Woche : %d1_WeekNum</German>
         <Italian>Settimana %d1_WeekNum</Italian>
         <Spanish>Semana : %d1_WeekNum</Spanish>
+        <Russian>Неделя %d1_WeekNum</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_PLAY_NOW</Tag>
@@ -3746,6 +3848,7 @@
         <German>SYSTEMFEHLER</German>
         <Italian>ERRORE DI SISTEMA</Italian>
         <Spanish>ERROR DEL SISTEMA</Spanish>
+        <Russian>СИСТЕМНЫЙ ЕРРОР</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SYSTEM_ERROR_GAME_SETUP_FAILED</Tag>
@@ -3794,6 +3897,7 @@
         <German>[COLOR_WARNING_TEXT]Handel annulliert [COLOR_REVERT]</German>
         <Italian>Affare annullato</Italian>
         <Spanish>Trato cancelado</Spanish>
+        <Russian>[COLOR_WARNING_TEXT]Сделка отменена [COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_OUR_DEAL</Tag>
@@ -3826,6 +3930,7 @@
         <German>Dieser Handel kann in %d1 [NUM1:Runde:Runden] aufgekündigt werden</German>
         <Italian>Questo affare può essere annullato tra %d1 [NUM1:turno:turni]</Italian>
         <Spanish>Este trato puede cancelarse en %d1 [NUM1:turno:turnos]</Spanish>
+        <Russian>Эта сделка может быть отменена через %d1 [NUM1:ход:ходов]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_PROD_DOMAIN</Tag>
@@ -4379,6 +4484,7 @@
         <German>Also schön, dann sollten wir das bei nächster Gelegenheit tun.</German>
         <Italian>Bene, fallo alla prossima opportunità.</Italian>
         <Spanish>Bien, hacedlo en cuanto se presente la oportunidad.</Spanish>
+        <Russian>Ладно, сделай это при первой же возможности.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_DEMAND_REFUSE</Tag>
@@ -4387,6 +4493,7 @@
         <German>Kommt nicht in Frage! Und schließlich entscheide immer noch ich!</German>
         <Italian>Scordatelo, qui comando io!</Italian>
         <Spanish>Olvidadlo, ¡aquí soy yo quien manda!</Spanish>
+        <Russian>Забудь об этом!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_DETAILS_EMAIL</Tag>
@@ -4469,7 +4576,7 @@
         <German>Wie ist die Lage?</German>
         <Italian>Qual è il grande piano?</Italian>
         <Spanish>¿Cuál es la visión de conjunto?</Spanish>
-        <Russian>Показать общую картину</Russian>
+        <Russian>Показать всех кандидатов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMAIL_SENT</Tag>
@@ -4708,6 +4815,7 @@
         <German>Neue Linie</German>
         <Italian>Nuova linea</Italian>
         <Spanish>Nueva línea</Spanish>
+        <Russian>Новая линия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GLOBELAYER_STRATEGY_NEW_SIGN</Tag>
@@ -4724,6 +4832,7 @@
         <German>Löschen</German>
         <Italian>Elimina</Italian>
         <Spanish>Borrar</Spanish>
+        <Russian>Удалить</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INFO_SCREEN_STATISTICS_TITLE</Tag>
@@ -5053,6 +5162,7 @@
         <German>Bei wem wollt Ihr vorsprechen?</German>
         <Italian>Chi vuoi contattare?</Italian>
         <Spanish>¿Con quién quieres contactar?</Spanish>
+        <Russian>С кем вы хотите связаться?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NEVER_MIND</Tag>
@@ -7093,6 +7203,7 @@
         <German>%s2_City : Ihr habt eine Einheit [COLOR_UNIT_TEXT]%s1_Unit[COLOR_REVERT] ausgebildet ...</German>
         <Italian>Hai addestrato l'unità ([COLOR_UNIT_TEXT]%s1_Unit[COLOR_REVERT]) a %s2_City...</Italian>
         <Spanish>Habéis entrenado a [NUM1:un:una:unos:unas] [COLOR_UNIT_TEXT]%s1_Unit[COLOR_REVERT] en %s2_City...</Spanish>
+        <Russian>%s2_City : был создан юнит [COLOR_UNIT_TEXT]%s1_Unit[COLOR_REVERT] ...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MINIMIZED_CHOOSE_PRODUCTION_BUILDING</Tag>
@@ -7101,6 +7212,7 @@
         <German>%s2_City : Ihr habt ein Gebäude ([COLOR_BUILDING_TEXT]%s1_Building[COLOR_REVERT]) errichtet ...</German>
         <Italian>Hai costruito l'edificio ([COLOR_BUILDING_TEXT]%s1_Building[COLOR_REVERT]) a %s2_City...</Italian>
         <Spanish>Habéis construido [NUM1:un:una:unos:unas] [COLOR_BUILDING_TEXT]%s1_Building[COLOR_REVERT] en %s2_City...</Spanish>
+        <Russian>%s2_City : было построено здание [COLOR_BUILDING_TEXT]%s1_Building[COLOR_REVERT] ...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MINIMIZED_CHOOSE_PRODUCTION</Tag>
@@ -7109,6 +7221,7 @@
         <German>Wählt die Produktion in %s1_City ...</German>
         <Italian>Scegli la produzione a %s1_City...</Italian>
         <Spanish>Elegid la producción de %s1_City...</Spanish>
+        <Russian>Выберите, что производить в %s1_City</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_ADMIN_ALLOW_CHEATS</Tag>
@@ -7125,6 +7238,7 @@
         <German>BEV</German>
         <Italian>POP</Italian>
         <Spanish>POB</Spanish>
+        <Russian>НАС</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_REFUSE_GIFT</Tag>
@@ -7133,6 +7247,7 @@
         <German>[COLOR_WARNING_TEXT]%s1_Leader wird die Schenkung nicht akzeptieren.[COLOR_REVERT]</German>
         <Italian>[COLOR_WARNING_TEXT]%s1_Leader non accetterà il dono[COLOR_REVERT].</Italian>
         <Spanish>[COLOR_WARNING_TEXT]%s1_Leader no aceptará el regalo.[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_WARNING_TEXT]%s1_Leader не принимает подарок.[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_MAIN_MENU_CIV_PASSWORD_TITLEBAR</Tag>
@@ -7207,6 +7322,7 @@
         <German>Wählen Sie eine Verbindungsgeschwindigkeit</German>
         <Italian>Seleziona la velocità della tua connessione</Italian>
         <Spanish>Selecciona tu velocidad de conexión</Spanish>
+        <Russian>Выберите скорость подключения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_BROADBAND_LBL</Tag>
@@ -7215,6 +7331,7 @@
         <German>Breitband (Kabel/DSL)</German>
         <Italian>Banda larga (Cavo/DSL)</Italian>
         <Spanish>Banda ancha (Cable/ADSL)</Spanish>
+        <Russian>Широкополосный доступ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_MODEM_LBL</Tag>
@@ -7223,6 +7340,7 @@
         <German>Modem</German>
         <Italian>Modem</Italian>
         <Spanish>Módem</Spanish>
+        <Russian>Модем</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_RELOAD</Tag>
@@ -7408,6 +7526,7 @@
         <German>Kultur</German>
         <Italian>Cultura</Italian>
         <Spanish>Cultura</Spanish>
+        <Russian>Культура</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INIT_ELAPSED_TIME</Tag>
@@ -7496,6 +7615,7 @@
         <German>In Euren Archiven gibt es bereits eine Schrift, die diesen Namen trägt. Wollt Ihr sie vernichten lassen und unter demselben Titel ein neues Dokument hinterlegen?</German>
         <Italian>File di salvataggio di Civilization IV %s1 già esistente.[NEWLINE]Premi OK per continuare e sovrascrivere il file.</Italian>
         <Spanish>Ya existe el archivo %s1.[NEWLINE]Pulsa 'Aceptar' para continuar y sobrescribirlo.</Spanish>
+        <Russian>Файл %s1 уже существует.[NEWLINE]Нажмите [COLOR_HIGHLIGHT_TEXT]OK[COLOR_REVERT] для продолжения и перезаписи файла.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILOPEDIA_HISTORY</Tag>
@@ -8159,6 +8279,7 @@
         <German>Produktion ändern</German>
         <Italian>Cambia produzione</Italian>
         <Spanish>Cambiar producción</Spanish>
+        <Russian>Изменить производство</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HURRY_PRODUCTION</Tag>
@@ -8167,6 +8288,7 @@
         <German>Produktion beschleunigen</German>
         <Italian>Produzione accelerata</Italian>
         <Spanish>Acelerar la producción</Spanish>
+        <Russian>Ускорить производство</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HURRY_PRODUCTION_GOLD</Tag>
@@ -8345,6 +8467,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] unterzeichnet ein Verteidigungsabkommen mit [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT]</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] firma un'alleanza difensiva con [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] ha firmado un acuerdo de protección con [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT].</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] подписывает оборонительный договор с [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_EMAIL_SUBJECT</Tag>
@@ -8987,6 +9110,7 @@
         <German>Ja, dieser Krieg ist ehrenhaft!</German>
         <Italian>Sì, DICHIARA GUERRA!</Italian>
         <Spanish>Sí, ¡DECLAREMOS LA GUERRA!</Spanish>
+        <Russian>Да, это будет славная война!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DECLARE_WAR_NO</Tag>
@@ -8995,6 +9119,7 @@
         <German>Nein, ich werde den Frieden respektieren.</German>
         <Italian>No, meglio ripensarci...</Italian>
         <Spanish>No, reconsiderémoslo...</Spanish>
+        <Russian>Нет, нам важнее мир.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INFO_GRAPH</Tag>
@@ -9011,6 +9136,7 @@
         <German>Ihr habt Frieden mit Team [COLOR_HIGHLIGHT_TEXT]%s1_TeamName[COLOR_REVERT] geschlossen!</German>
         <Italian>Hai fatto pace con [COLOR_HIGHLIGHT_TEXT]%s1_TeamName[COLOR_REVERT]!</Italian>
         <Spanish>Habéis firmado la paz con [COLOR_HIGHLIGHT_TEXT]%s1_TeamName[COLOR_REVERT]</Spanish>
+        <Russian>Вы заключили мир с [COLOR_HIGHLIGHT_TEXT]%s1_TeamName[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FLAT_MOVEMENT</Tag>
@@ -9019,6 +9145,7 @@
         <German>[ICON_BULLET]Fortbewegungskosten - flach</German>
         <Italian>[ICON_BULLET]Costi di movimento in pianura</Italian>
         <Spanish>[ICON_BULLET]Costes de movimiento en llano</Spanish>
+        <Russian>[ICON_BULLET]Стоимость передвижения по равнине</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_SCRIPT_FRACTAL_DESCR</Tag>
@@ -9164,6 +9291,7 @@
         <German>Spiel-Runden-Limit : </German>
         <Italian>Limite turni della partita : </Italian>
         <Spanish>Límite de turnos de la partida : </Spanish>
+        <Russian>Лимит игровых ходов :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_MAXTURN_ERROR_DESC</Tag>
@@ -9336,7 +9464,7 @@
         <German>Englisch</German>
         <Italian>Inglese</Italian>
         <Spanish>Inglés</Spanish>
-		<Russian>Английский</Russian>
+        <Russian>Английский</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LANGUAGE_1</Tag>
@@ -9345,7 +9473,7 @@
         <German>Französisch</German>
         <Italian>Francese</Italian>
         <Spanish>Francés</Spanish>
-		<Russian>Французский</Russian>
+        <Russian>Французский</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LANGUAGE_2</Tag>
@@ -9354,7 +9482,7 @@
         <German>Deutsch</German>
         <Italian>Tedesco</Italian>
         <Spanish>Alemán</Spanish>
-		<Russian>Немецкий</Russian>
+        <Russian>Немецкий</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LANGUAGE_3</Tag>
@@ -9363,7 +9491,7 @@
         <German>Italienisch</German>
         <Italian>Italiano</Italian>
         <Spanish>Italiano</Spanish>
-		<Russian>Итальянский</Russian>
+        <Russian>Итальянский</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LANGUAGE_4</Tag>
@@ -9372,7 +9500,7 @@
         <German>Spanisch</German>
         <Italian>Spagnolo</Italian>
         <Spanish>Español</Spanish>
-		<Russian>Испанский</Russian>
+        <Russian>Испанский</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LANGUAGE_5</Tag>
@@ -9382,9 +9510,9 @@
         <Italian>Ungherese</Italian>
         <Spanish>Húngaro</Spanish>
         <Hungarian>Magyar</Hungarian>
-		<Russian>Венгерский</Russian>
+        <Russian>Венгерский</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_LANGUAGE_6</Tag>
         <English>Russian</English>
         <French>Russe</French>
@@ -9392,7 +9520,7 @@
         <Italian>Russo</Italian>
         <Spanish>Ruso</Spanish>
         <Hungarian>Orosz</Hungarian>
-		<Russian>Русский</Russian>
+        <Russian>Русский</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GOLD_FROM_PLAYER</Tag>
@@ -9437,6 +9565,7 @@
         <German>[ICON_BULLET]Zwischen %d1[ICON_GOLD] und %d2[ICON_GOLD] von [COLOR_HIGHLIGHT_TEXT]%s3_playerName[COLOR_REVERT] erhalten</German>
         <Italian>[ICON_BULLET]Ricevi tra %d1[ICON_GOLD] e %d2[ICON_GOLD] da [COLOR_HIGHLIGHT_TEXT]%s3_playerName[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]Recibir entre %d1[ICON_GOLD] y %d2[ICON_GOLD] de [COLOR_HIGHLIGHT_TEXT]%s3_playerName[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]Получите от %d1[ICON_GOLD] до %d2[ICON_GOLD] от [COLOR_HIGHLIGHT_TEXT]%s3_playerName[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GOLD_RANGE_TO_PLAYER</Tag>
@@ -9445,6 +9574,7 @@
         <German>[ICON_BULLET]Zwischen %d1[ICON_GOLD] und %d2[ICON_GOLD] an [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT] übergeben</German>
         <Italian>[ICON_BULLET]Dai tra %d1[ICON_GOLD] e %d2[ICON_GOLD] a [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]Dar entre %d1[ICON_GOLD] y %d2[ICON_GOLD] a [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]Отдайте от %d1[ICON_GOLD] до %d2[ICON_GOLD] [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GOLD_RANGE_GAINED</Tag>
@@ -9471,6 +9601,7 @@
         <German>[ICON_BULLET]%D1 Bevölkerung in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET]%D1 di popolazione a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]%D1 de población en [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]%D1 населения в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CULTURE_CITY</Tag>
@@ -9479,6 +9610,7 @@
         <German>[ICON_BULLET]%D1 [ICON_CULTURE] in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET]%D1 [ICON_CULTURE] a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]%D1 [ICON_CULTURE] en [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]%D1 [ICON_CULTURE] в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_REVOLT_TURNS</Tag>
@@ -9487,6 +9619,7 @@
         <German>[ICON_BULLET]%d1 [NUM1:Runde:Runden] Unruhe in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET]%d1 [NUM1:turno:turni] di disordini a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]%d1 [NUM1:turno:turnos] de desórdenes en [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]%d1 [NUM1:ход:ходов] беспорядков в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PILLAGE_CITY</Tag>
@@ -9495,6 +9628,7 @@
         <German>[ICON_BULLET]%d1 Gelände-[NUM1:Modernisierung:Modernisierungen] bei [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] zerstört</German>
         <Italian>[ICON_BULLET][NUM1:Distrutto:Distrutti] %d1 [NUM1:miglioramento:miglioramenti] del terreno nella zona di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]%d1 [NUM1:mejora de terreno destruida:mejoras de terreno destruidas] en la zona de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]%d1 [NUM1:улучшение:улучшения] уничтожено рядом с [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PILLAGE_RANGE_CITY</Tag>
@@ -9503,6 +9637,7 @@
         <German>[ICON_BULLET]Zwischen %d1 und %d2 Gelände-Modernisierungen bei [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] zerstört</German>
         <Italian>[ICON_BULLET]Distrutti tra %d1 e %d2 miglioramenti del terreno nella zona di [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]Entre %d1 y %d2 mejoras de terreno destruidas en la zona de [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]От %d1 до %d2 улучшений уничтожено рядом с [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PILLAGE</Tag>
@@ -9511,6 +9646,7 @@
         <German>[ICON_BULLET]%d1 Gelände-[NUM1:Modernisierung:Modernisierungen] zerstört</German>
         <Italian>[ICON_BULLET][NUM1:Distrutto:Distrutti] %d1 [NUM1:miglioramento:miglioramenti] del terreno</Italian>
         <Spanish>[ICON_BULLET]%d1 [NUM1:mejora de terreno destruida:mejoras de terreno destruidas]</Spanish>
+        <Russian>[ICON_BULLET]%d1 [NUM1:улучшение:улучшений] уничтожено</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PILLAGE_RANGE</Tag>
@@ -9519,6 +9655,7 @@
         <German>[ICON_BULLET]Zwischen %d1 und %d2 Gelände-Modernisierungen zerstört</German>
         <Italian>[ICON_BULLET]Distrutti tra %d1 e %d2 miglioramenti del terreno</Italian>
         <Spanish>[ICON_BULLET]Entre %d1 y %d2 mejoras de terreno destruidas</Spanish>
+        <Russian>[ICON_BULLET]От %d1 до %d2 улучшений уничтожено</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CITY_IMPROVEMENT_DESTROYED</Tag>
@@ -9527,6 +9664,7 @@
         <German>Eure Modernisierung %s1_improvement wurde zerstört</German>
         <Italian>[NUM1:Il tuo:La tua] %s1_improvement è [NUM1:stato distrutto:stata distrutta]</Italian>
         <Spanish>[NUM1:Vuestro:Vuestra:Vuestros:Vuestras] %s1_improvement [NUM1:ha quedado destruido:ha quedado destruida:han quedado destruidos:han quedado destruidas]</Spanish>
+        <Russian>Ваше %s1_improvement было уничтожено</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_NUM_CITY_IMPROVEMENTS_DESTROYED</Tag>
@@ -9535,6 +9673,7 @@
         <German>%d1 %s2:3_civ_adjective [NUM1:Modernisierung wurde:Modernisierungen wurden] zerstört</German>
         <Italian>%d1 [NUM1:miglioramento:miglioramenti] della civiltà %s2:2_civ_adjective [NUM1:è stato distrutto:sono stati distrutti]</Italian>
         <Spanish>%d1 [NUM1:mejora:mejoras] de la civilización %s2:2_civ_adjective [NUM1:ha sido destruida:han sido destruidas]</Spanish>
+        <Russian>%d1 %s2_civ_adjective [NUM1:улучшение было:улучшения были] [NUM1:уничтожено:уничтожены]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_BONUS_UNIT</Tag>
@@ -9543,6 +9682,7 @@
         <German>[ICON_BULLET]%d1 Einheit(en) [COLOR_UNIT_TEXT]%s2_units[COLOR_REVERT] erhalten</German>
         <Italian>[ICON_BULLET]Ricevere %d1 [COLOR_UNIT_TEXT]%s2_units[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]Recibir %d1 [COLOR_UNIT_TEXT]%s2:2_units[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]Получите %d1 [COLOR_UNIT_TEXT]%s2_units[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FOOD_CITY</Tag>
@@ -9551,6 +9691,7 @@
         <German>[ICON_BULLET]%D1[ICON_FOOD] in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] eingelagert</German>
         <Italian>[ICON_BULLET]%D1[ICON_FOOD][NUM1:conservato:conservati] a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]%D1[ICON_FOOD] almacenados en [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]%D1[ICON_FOOD] хранится в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FOOD_PERCENT_CITY</Tag>
@@ -9559,6 +9700,7 @@
         <German>[ICON_BULLET]Nahrungsvorräte in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] : %d1%%[ICON_FOOD]</German>
         <Italian>[ICON_BULLET]Riserve di cibo a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] : %d1%%[ICON_FOOD]</Italian>
         <Spanish>[ICON_BULLET]Alimentos almacenados en [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] : %d1%%[ICON_FOOD]</Spanish>
+        <Russian>[ICON_BULLET]Еды хранится в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] : %d1%%[ICON_FOOD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FEATURE_GROWTH</Tag>
@@ -9567,6 +9709,7 @@
         <German>[ICON_BULLET]Die Geländeart [COLOR_HIGHLIGHT_TEXT]%s1_feature[COLOR_REVERT] wächst</German>
         <Italian>[ICON_BULLET]Cresce [NUM1:un:una] [COLOR_HIGHLIGHT_TEXT]%s1_feature[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET][NUM1:Aparece un:Aparece una:Aparecen unos:Aparecen unas] [COLOR_HIGHLIGHT_TEXT]%s1:1_feature[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_feature[COLOR_REVERT] улучшилось</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FEATURE_REMOVE</Tag>
@@ -9575,6 +9718,7 @@
         <German>[ICON_BULLET]Die Geländeart %s1_feature wird entfernt</German>
         <Italian>[ICON_BULLET][NUM1:Il:La] %s1_feature [NUM1:è stato eliminato:è stata eliminata] </Italian>
         <Spanish>[ICON_BULLET][NUM1:Ha desaparecido el:Ha desaparecido la:Han desaparecido los:Han desaparecido las] %s1:1_feature</Spanish>
+        <Russian>[ICON_BULLET]%s1_feature очищено</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_IMPROVEMENT_GROWTH</Tag>
@@ -9583,6 +9727,7 @@
         <German>[ICON_BULLET]Die Modernisierung [COLOR_HIGHLIGHT_TEXT]%s1_improvement[COLOR_REVERT] wird errichtet</German>
         <Italian>[ICON_BULLET][NUM1:È stato costruito un:È stata costruita una] [COLOR_HIGHLIGHT_TEXT]%s1_improvement[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]Se [NUM1:ha construido un:ha construido una:han construido unos:han construido unas] [COLOR_HIGHLIGHT_TEXT]%s1:1_improvement[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_improvement[COLOR_REVERT] построено</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_IMPROVEMENT_REMOVE</Tag>
@@ -9591,6 +9736,7 @@
         <German>[ICON_BULLET]Die Modernisierung %s1_improvement wird zerstört</German>
         <Italian>[ICON_BULLET]%s1_improvement [NUM1:distrutto:distrutta] </Italian>
         <Spanish>[ICON_BULLET][NUM1:El:La:Los:Las] %s1:1_improvement [NUM1:ha quedado destruido:ha quedado destruida:han quedado destruidos:han quedado destruidas]</Spanish>
+        <Russian>[ICON_BULLET]The %s1_improvement is destroyed</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_ROUTE_GROWTH</Tag>
@@ -9599,6 +9745,7 @@
         <German>[ICON_BULLET]Die Infrastruktur wird ausgebaut ([COLOR_HIGHLIGHT_TEXT]%s1_route[COLOR_REVERT])</German>
         <Italian>[ICON_BULLET][NUM1:Costruito un nuovo:Costruita una nuova] [COLOR_HIGHLIGHT_TEXT]%s1_route[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]Se [NUM1:ha construido un nuevo:ha construido una nueva:han construido unos nuevos:han construido unas nuevas] [COLOR_HIGHLIGHT_TEXT]%s1_route[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]Новая (дорога) [COLOR_HIGHLIGHT_TEXT]%s1_route[COLOR_REVERT] построена</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_ROUTE_REMOVE</Tag>
@@ -9607,6 +9754,7 @@
         <German>[ICON_BULLET]Die Infrastruktur ([COLOR_HIGHLIGHT_TEXT]%s1_route[COLOR_REVERT]) wird zerstört</German>
         <Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_route[COLOR_REVERT] [NUM1:distrutto:distrutta] </Italian>
         <Spanish>[ICON_BULLET]Se [NUM1:ha destruido el:ha destruido la:han destruido los:han destruido las] [COLOR_HIGHLIGHT_TEXT]%s1_route[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_route[COLOR_REVERT] уничтожена</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_UNIT_EXPERIENCE</Tag>
@@ -9615,6 +9763,7 @@
         <German>[ICON_BULLET]Die Einheit [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] erhält %d1 EP</German>
         <Italian>[ICON_BULLET]L'unità [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] riceve %d1 PE</Italian>
         <Spanish>[ICON_BULLET][NUM2:El:La:Los:Las] [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] [NUM2:recibe:recibe:reciben:reciben] %d1 PX</Spanish>
+        <Russian>[ICON_BULLET][COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] получил %d1 XP</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_UNIT_DISBAND</Tag>
@@ -9623,6 +9772,7 @@
         <German>[ICON_BULLET]Verlust der Einheit [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET]L'unità [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] è perduta</Italian>
         <Spanish>[ICON_BULLET]Se [NUM1:ha perdido el:ha perdido la:han perdido los:han perdido las] [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET][COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] потерян</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_UNIT_PROMOTION</Tag>
@@ -9631,6 +9781,7 @@
         <German>[ICON_BULLET]Die Einheit [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] erhält die Beförderung [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET]L'unità [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] riceve la promozione [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET][NUM1:El:La:Los:Las] [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] [NUM1:asciende:asciende:ascienden:ascienden] a [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] повышен до [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_UNIT_COMBAT_PROMOTION</Tag>
@@ -9639,6 +9790,7 @@
         <German>[ICON_BULLET]Alle Einheiten [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] erhalten die Beförderung [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET]Tutte le unità [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] ricevono la promozione [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET][NUM1:Todos los:Todas las:Todos los:Todos las] %s1:2_units ascienden a [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]Все [COLOR_UNIT_TEXT]%s1_units[COLOR_REVERT] повышены до [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_ATTITUDE_GOOD</Tag>
@@ -9647,6 +9799,7 @@
         <German>[ICON_BULLET]Verbesserung der Beziehungen mit [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT] um [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET]Migliorare di [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] le relazioni con [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]Ganar un [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] de mejora de las relaciones con [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]Получите [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] к улучшению отношений с [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_ATTITUDE_BAD</Tag>
@@ -9655,6 +9808,7 @@
         <German>[ICON_BULLET]Verschlechterung der Beziehungen mit [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT] um [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET]Peggiorare di [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] le relazioni con [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]Sufrir un [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] de empeoramiento de las relaciones con [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]Получите [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] к ухудшению отношений с [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_BONUS_BUILDING</Tag>
@@ -9663,6 +9817,7 @@
         <German>[ICON_BULLET]Gebäude [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT] erhalten</German>
         <Italian>[ICON_BULLET]Ricevere [NUM1:un:una] [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]Recibir [NUM1:un:una:unos:unas] [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]Получено [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_REMOVE_BUILDING</Tag>
@@ -9671,6 +9826,7 @@
         <German>[ICON_BULLET]Gebäude [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT] entfernen</German>
         <Italian>[ICON_BULLET]Perdere [NUM1:un:una] [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]Perder [NUM1:el:la:los:las] [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]Потеряно [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_BONUS_REVEALED</Tag>
@@ -9679,6 +9835,7 @@
         <German>[ICON_BULLET]Alle Bonusgüter [COLOR_HIGHLIGHT_TEXT]%s1_bonus[COLOR_REVERT] enthüllen</German>
         <Italian>[ICON_BULLET]Rivelare tutti i [COLOR_HIGHLIGHT_TEXT]%s1_bonus[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]Mostrar [NUM1:todo el:toda la:todos los:todas las] [COLOR_HIGHLIGHT_TEXT]%s1_bonus[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]Раскрыты все [COLOR_HIGHLIGHT_TEXT]%s1_bonus[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_IMMOBILE_UNIT</Tag>
@@ -9687,6 +9844,7 @@
         <German>[ICON_BULLET]Die Einheit [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] ist %d1 [NUM1:Runde:Runden] lang beschäftigt und für keine andere Aufgabe außer Selbstverteidigung verfügbar</German>
         <Italian>[ICON_BULLET]L'unità [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] sarà occupata per %d1 [NUM1:turno:turni], e non farà altro eccetto difendersi.</Italian>
         <Spanish>[ICON_BULLET][NUM2:El:La:Los:Las] [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] [NUM2:no estará disponible:no estará disponible:no estarán disponibles:no estarán disponibles] durante %d1 [NUM1:turno:turnos], para ningún cometido que no sea su propia defensa</Spanish>
+        <Russian>[ICON_BULLET][COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] будет занят %d1 [NUM1:ход:ходов] и не сможет выполнять никаких распоряжений, кроме самообороны.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_RIVER_PLOTS</Tag>
@@ -9695,6 +9853,7 @@
         <German>Fluss-Geländefelder</German>
         <Italian>Caselle di fiume</Italian>
         <Spanish>Casillas de río</Spanish>
+        <Russian>Речные клетки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOUBLE_SPEED_TRAIT</Tag>
@@ -9703,6 +9862,7 @@
         <German>[ICON_BULLET]Doppelte Produktionsgeschwindigkeit für %s1:2_trait Anführer</German>
         <Italian>[ICON_BULLET]Doppia velocità produttiva con un leader %s1_trait</Italian>
         <Spanish>[ICON_BULLET]Doble velocidad de producción con líder %s1:1_trait</Spanish>
+        <Russian>[ICON_BULLET]Двойная скорость производства для %s1_trait leaders</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PRODUCTION_MODIFIER_TRAIT</Tag>
@@ -9711,6 +9871,7 @@
         <German>[ICON_BULLET]%D1_change%% Produktionsgeschwindigkeit für %s2:2_trait Anführer</German>
         <Italian>[ICON_BULLET]%D1_change%% di velocità produttiva con un leader %s2_trait</Italian>
         <Spanish>[ICON_BULLET]%D1_change%% de velocidad de producción con líder %s2:1_trait</Spanish>
+        <Russian>[ICON_BULLET]%D1_change%% к скорости производства для %s2_trait leaders</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GLOBELAYER_UNITS_ENEMY_TERRITORY_MILITARY</Tag>
@@ -9727,26 +9888,31 @@
         <German>[ICON_BULLET]Versteckte Nationalität</German>
         <Italian>[ICON_BULLET]Nazionalità nascosta</Italian>
         <Spanish>[ICON_BULLET]Nacionalidad oculta</Spanish>
+        <Russian>[ICON_BULLET]Национальность скрыта</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAN_SAIL_TO_PORT_ROYAL</Tag>
         <English>[ICON_BULLET]Can sail to Port Royal</English>
         <German>[ICON_BULLET]Kann nach Port Royal segeln</German>
+        <Russian>[ICON_BULLET]Может плыть в Порт Ройал</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_IS_SLAVE_SHIP</Tag>
         <English>[ICON_BULLET]Can carry only goods or [COLOR_HIGHLIGHT_TEXT]slaves[COLOR_REVERT]</English>
         <German>[ICON_BULLET]Kann nur Güter oder [COLOR_HIGHLIGHT_TEXT]Sklaven[COLOR_REVERT] laden</German>
+        <Russian>[ICON_BULLET]Может перевозить только товары и [COLOR_HIGHLIGHT_TEXT]рабов[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_IS_TREASURE_SHIP</Tag>
         <English>[ICON_BULLET]Can carry only goods or [COLOR_HIGHLIGHT_TEXT]treasures[COLOR_REVERT]</English>
         <German>[ICON_BULLET]Kann nur Güter oder [COLOR_HIGHLIGHT_TEXT]Schätze[COLOR_REVERT] laden</German>
+        <Russian>[ICON_BULLET]Может перевозить только товары и [COLOR_HIGHLIGHT_TEXT]сокровища[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_IS_TROOP_SHIP</Tag>
         <English>[ICON_BULLET]Can carry only goods or [COLOR_HIGHLIGHT_TEXT]troops[COLOR_REVERT]</English>
         <German>[ICON_BULLET]Kann nur Güter oder [COLOR_HIGHLIGHT_TEXT]Truppen[COLOR_REVERT] laden</German>
+        <Russian>[ICON_BULLET]Может перевозить только товары и [COLOR_HIGHLIGHT_TEXT]войска[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ALWAYS_HOSTILE</Tag>
@@ -9755,6 +9921,7 @@
         <German>[ICON_BULLET]Kann ohne Kriegserklärung angreifen</German>
         <Italian>[ICON_BULLET]Può attaccare senza dichiarare guerra</Italian>
         <Spanish>[ICON_BULLET]Puede atacar sin declarar la guerra</Spanish>
+        <Russian>[ICON_BULLET]Может атаковать без объявления войны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SPECIAL_BUILDING_VALID</Tag>
@@ -9763,6 +9930,7 @@
         <German>Ihr könnt nun das Gebäude %s1_building errichten</German>
         <Italian>Ora puoi costruire [NUM1:un:una] %s1_building</Italian>
         <Spanish>Ya podéis construir [NUM1:el:la:los:las] %s1_building</Spanish>
+        <Russian>Теперь вы можете построить %s1_building</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_COST</Tag>
@@ -9780,6 +9948,7 @@
         <German>[ICON_BULLET]Ersetzt durch Einheit [COLOR_UNIT_TEXT]%s1_default_unit[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET]Sostituita dall'unità [COLOR_UNIT_TEXT]%s1_default_unit[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]Sustituida por una unidad de [COLOR_UNIT_TEXT]%s1_default_unit[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]Заменяется [COLOR_UNIT_TEXT]%s1_default_unit[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_UNIT_IMMOBILE</Tag>
@@ -9788,6 +9957,7 @@
         <German>Eure Einheit [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] kann sich %d2 [NUM2:Runde:Runden] nicht bewegen</German>
         <Italian>La tua unità [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] non può muoversi per %d2 [NUM2:turno:turni]</Italian>
         <Spanish>[NUM1:Vuestro:Vuestra:Vuestros:Vuestras] [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] [NUM1:no puede:no puede:no pueden:no pueden] moverse durante %d2 [NUM2:turno:turnos]</Spanish>
+        <Russian>Ваш [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] не может двигаться %d2 [NUM2:ход:хода]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HELP_IMMOBILE</Tag>
@@ -9796,6 +9966,7 @@
         <German>[COLOR_WARNING_TEXT]Unbeweglich (%d1 [NUM1:Runde:Runden])[COLOR_REVERT]</German>
         <Italian>Impossibile muovere (%d1)</Italian>
         <Spanish>No se puede mover (%d1)</Spanish>
+        <Russian>[COLOR_WARNING_TEXT]Не может двигаться (%d1 [NUM1:ход:хода])[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_YIELD_CHANGE_PLOT</Tag>
@@ -9804,6 +9975,7 @@
         <German>[ICON_BULLET]%s1 auf dem Geländefeld</German>
         <Italian>[ICON_BULLET]%s1 nella casella</Italian>
         <Spanish>[ICON_BULLET]%s1 en la casilla</Spanish>
+        <Russian>[ICON_BULLET]%s1 на клетке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_YIELD_CHANGE_BUILDING</Tag>
@@ -9820,6 +9992,7 @@
         <German>[ICON_BULLET]Zusätzlich %s2_txt_key_event_delay_below %d1%% Wahrscheinlichkeit für :</German>
         <Italian>[ICON_BULLET]Inoltre %s2_txt_key_event_delay_below, %d1%% di probabilità che :</Italian>
         <Spanish>[ICON_BULLET]Además%s2_txt_key_event_delay_below, %d1%% de probabilidad de :</Spanish>
+        <Russian>[ICON_BULLET]Кроме того%s2_txt_key_event_delay_below, %d1%% шанс для :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DELAY</Tag>
@@ -9828,6 +10001,7 @@
         <German>[ICON_BULLET]Zusätzlich %s1_txt_key_event_delay_below :</German>
         <Italian>[ICON_BULLET]Inoltre %s1_txt_key_event_delay_below :</Italian>
         <Spanish>[ICON_BULLET]Además%s1_txt_key_event_delay_below :</Spanish>
+        <Russian>[ICON_BULLET]Кроме того%s1_txt_key_event_delay_below :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DELAY_TURNS</Tag>
@@ -9836,6 +10010,7 @@
         <German> in %d1 [NUM1:Runde:Runden]</German>
         <Italian>, in %d1 [NUM1:turno:turni]</Italian>
         <Spanish>, en %d1 [NUM1:turno:turnos]</Spanish>
+        <Russian>, за %d1 [NUM1:ход:ходов]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DECLARE_WAR</Tag>
@@ -9844,6 +10019,7 @@
         <German>[ICON_BULLET]Die [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Aktionen als Kriegserklärung gegen Euch auffassen</German>
         <Italian>[ICON_BULLET]Interpreta le azioni [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] come una dichiarazione di guerra nei tuoi confronti</Italian>
         <Spanish>[ICON_BULLET]Considerar los actos [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] como una declaración de guerra contra vos</Spanish>
+        <Russian>[ICON_BULLET]Считайте действия [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] объявлением вам войны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_MORE_GROWTH</Tag>
@@ -9852,6 +10028,7 @@
         <German>[ICON_BULLET]Gelände hat eine höhere Ausbreitungsschance</German>
         <Italian>[ICON_BULLET]Dà al terreno una maggiore probabilità di espandersi</Italian>
         <Spanish>[ICON_BULLET]Da más posibilidades de propagarse a un terreno</Spanish>
+        <Russian>[ICON_BULLET]Дает местности более высокий шанс распространения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ADVANCED_START_BEGIN_GAME</Tag>
@@ -9876,6 +10053,7 @@
         <German>[ICON_BULLET]%D1_Change Frachtraum</German>
         <Italian>[ICON_BULLET]%D1_Change spazio di carico</Italian>
         <Spanish>[ICON_BULLET]Bodega : %D1_Change</Spanish>
+        <Russian>[ICON_BULLET]%D1_Change места для груза</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_UNIT_CLASS_PROMOTION</Tag>
@@ -9884,6 +10062,7 @@
         <German>[ICON_BULLET]Alle Einheiten [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] erhalten die Beförderung [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET]Ogni unità [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] viene promossa con [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET][NUM1:Todos los:Todas las:Todos los:Todas las] [COLOR_UNIT_TEXT]%s1:2_unit[COLOR_REVERT] [NUM1:son ascendidos:son ascendidas:son ascendidos:son ascendidas] a [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]Каждый [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] улучшен до [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_YOU_UNITS_UNDER_ATTACK_UNKNOWN</Tag>
@@ -9892,6 +10071,7 @@
         <German>Eure Truppen werden angegriffen!</German>
         <Italian>Le tue forze sono sotto attacco!</Italian>
         <Spanish>Atacan a vuestras fuerzas.</Spanish>
+        <Russian>Ваши войска атакованы!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ADVANCED_START_POINTS</Tag>
@@ -10043,6 +10223,7 @@
         <German>[ICON_BULLET]Kann %d1_Num Erfahrungspunkte auf Einheiten auf demselben Geländefeld übertragen</German>
         <Italian>[ICON_BULLET]Può dare %d1_Num di esperienza alle unità presenti nella stessa casella</Italian>
         <Spanish>[ICON_BULLET]Puede dar un total de %d1_Num de experiencia a las unidades en la misma casilla</Spanish>
+        <Russian>[ICON_BULLET]Может дать %d1_Num опыта юнитам на одной клетке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHOOSE_UNIT_TO_LEAD</Tag>
@@ -10059,6 +10240,7 @@
         <German>Wenn im Gefolge einer Einheit :</German>
         <Italian>Quando legato a un'unità :</Italian>
         <Spanish>Cuando se agrega a una unidad :</Spanish>
+        <Russian>Когда прикреплен к юниту :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HILLS_STRENGTH</Tag>

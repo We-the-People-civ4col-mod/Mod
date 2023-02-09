@@ -619,6 +619,7 @@
         <German>[ICON_BULLET]Kann keine neue Siedlung gründen</German>
         <Italian>[ICON_BULLET]Può fondare un nuovo insediamento</Italian>
         <Spanish>[ICON_BULLET]Puede fundar un nuevo asentamiento</Spanish>
+        <Russian>[ICON_BULLET]Не может основывать новые поселения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_MARKET</Tag>
@@ -992,6 +993,7 @@
         <German>[ICON_BULLET]Wildes Tier</German>
         <Italian>[ICON_BULLET]Animale selvatico</Italian>
         <Spanish>[ICON_BULLET]Animal salvaje</Spanish>
+        <Russian>[ICON_BULLET]Дикое животное</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ANIMAL_CANNOT_ENTER_PLAYER_TERRITORY</Tag>
@@ -1012,7 +1014,7 @@
         <English>[ICON_BULLET]Native to %s1_Desc terrain</English>
         <French>[ICON_BULLET]Indigène vers le terrain %s1_Desc</French>
         <German>[ICON_BULLET]Heimisch auf %s1_Desc Terrain</German>
-        <Russian>[ICON_BULLET]Уроженец to %s1_Desc местности</Russian>
+        <Russian>[ICON_BULLET]Уроженец %s1_Desc</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ANIMAL_REWARD</Tag>
