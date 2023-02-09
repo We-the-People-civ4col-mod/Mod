@@ -2249,6 +2249,7 @@
         <Tag>TXT_KEY_UNIT_GIVES_PRODUCTION_WHEN_USED</Tag>
         <English>[ICON_BULLET]Gives %d1 [COLOR_CYAN]production[COLOR_REVERT] to a city when used</English>
         <German>[ICON_BULLET]Gibt einer Stadt %d1 [COLOR_CYAN]Produktion[COLOR_REVERT], wenn verwendet</German>
+        <Russian>[ICON_BULLET]Дает %d1 [COLOR_CYAN]продукции[COLOR_REVERT] городу при использовании</Russian>
     </TEXT>
 <!-- ZorG. colopedia. equipment and materials for the construction of units and buildings. START -->
     <TEXT>
@@ -2660,6 +2661,7 @@
         <German>[ICON_BULLET]Die Hälfte der Lagerüberschüsse wird zu Rundenbeginn zu %d1%% des Preises in Europa verkauft</German>
         <Italian>[ICON_BULLET]I beni che superano la capienza dei depositi vengono venduti al %d1%% del prezzo in Europa</Italian>
         <Spanish>[ICON_BULLET]Las mercancías que sobrepasan la capacidad de almacenamiento se venden al %d1%% de su precio en Europa.</Spanish>
+        <Russian>[ICON_BULLET]Товары сверх вместимости продаются за %d1%% от цены в Европе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_AUTOMATE_BUILD_HELP</Tag>

@@ -65,12 +65,14 @@
         <English>[ICON_BULLET]Can gather fish from sea resources</English>
         <French>[ICON_BULLET]Peut pêcher du poisson à partir de la mer</French>
         <German>[ICON_BULLET]Kann Fisch auf Bonusressourcen gewinnen</German>
+        <Russian>[ICON_BULLET]Может ловить рыбу на определенных морских ресурсах</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_FISHING_UNLOAD</Tag>
         <English>Automate fishing</English>
         <French>Automatisation de la pêche</French>
         <German>Fischfang automatisieren</German>
+        <Russian>Автоматизировать рыбную ловлю</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_FISHING_UNLOAD_HELP</Tag>
@@ -85,6 +87,7 @@
         <English>[COLOR_PLAYER_RED]Must be outside city radius[COLOR_REVERT]</English>
         <French>[COLOR_PLAYER_RED]Doit être en dehors de votre territoire[COLOR_REVERT]</French>
         <German>[COLOR_PLAYER_RED]Muss außerhalb des Stadtradius liegen[COLOR_REVERT]</German>
+        <Russian>[COLOR_PLAYER_RED]Должен быть за пределами радиуса колонии[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_FISH_CITY_RADIUS_PLOT_WORKED</Tag>

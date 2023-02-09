@@ -7,6 +7,7 @@
         <German>Hoch</German>
         <Italian>Alto</Italian>
         <Spanish>Alto</Spanish>
+        <Russian>Высокий</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SEALEVEL_LOW</Tag>
@@ -15,6 +16,7 @@
         <German>Niedrig</German>
         <Italian>Basso</Italian>
         <Spanish>Bajo</Spanish>
+        <Russian>Низкий</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SEALEVEL_MEDIUM</Tag>
@@ -23,5 +25,6 @@
         <German>Mittel</German>
         <Italian>Medio</Italian>
         <Spanish>Medio</Spanish>
+        <Russian>Средний</Russian>
     </TEXT>
 </Civ4GameText>

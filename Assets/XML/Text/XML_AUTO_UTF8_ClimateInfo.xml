@@ -7,6 +7,7 @@
         <German>Felsig</German>
         <Italian>Continentale</Italian>
         <Spanish>Rocoso</Spanish>
+        <Russian>Суровый</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CLIMATE_TEMPERATE</Tag>
@@ -15,6 +16,7 @@
         <German>Gemäßigt</German>
         <Italian>Temperato</Italian>
         <Spanish>Templado</Spanish>
+        <Russian>Умеренный</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CLIMATE_TROPICAL</Tag>
@@ -23,5 +25,6 @@
         <German>Tropisch</German>
         <Italian>Tropicale</Italian>
         <Spanish>Tropical</Spanish>
+        <Russian>Тропический</Russian>
     </TEXT>
 </Civ4GameText>

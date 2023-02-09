@@ -700,7 +700,7 @@
         <German>[ICON_BULLET]Keine Fortbewegung auf</German>
         <Italian>[ICON_BULLET]Non può entrare nell'</Italian>
         <Spanish>[ICON_BULLET]No puede entrar en</Spanish>
-        <Russian>[ICON_BULLET]Не заходить в</Russian>
+        <Russian>[ICON_BULLET]Не может заходить в</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_INVISIBLE_ALL</Tag>
@@ -898,6 +898,7 @@
         <German>[ICON_BULLET]Speichert %d1_Mod%%[ICON_FOOD] nach Wachstum</German>
         <Italian>[ICON_BULLET]Immagazzina %d1_Mod%% di [ICON_FOOD] dopo la crescita</Italian>
         <Spanish>[ICON_BULLET]Almacena el %d1_Mod%% de los [ICON_FOOD] tras el crecimiento</Spanish>
+        <Russian>[ICON_BULLET]Сохраняет %d1_Mod%% [ICON_FOOD] после роста города</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_MAX_HARBOUR_SPACE_PROVIDED</Tag>
@@ -924,6 +925,7 @@
         <German>[ICON_BULLET]Heilt zusätzlich %d1_Mod%% Schaden/Runde bei Einheiten</German>
         <Italian>[ICON_BULLET]Cura le unità del %d1_Mod%% di danno extra per turno.</Italian>
         <Spanish>[ICON_BULLET]Cura a las unidades un %d1_Mod%% de daño extra por turno</Spanish>
+        <Russian>[ICON_BULLET]Дополнительно исцеляет %d1_Mod%% здоровья юнитов/ход</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_MILITARY_MOD</Tag>

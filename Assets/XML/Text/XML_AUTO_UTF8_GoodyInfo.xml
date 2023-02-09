@@ -65,23 +65,27 @@
         <Tag>TXT_KEY_GOODY_MESTIZZO</Tag>
         <English>You've discovered a [COLOR_UNIT_TEXT]young Native man[COLOR_REVERT] in the woods. [NEWLINE]Taking a closer look you guess that one of his parents might have been white. You ask him to come with you.</English>
         <German>Ihr habt einen [COLOR_UNIT_TEXT]jungen Uhreinwohner[COLOR_REVERT] in den Wäldern entdeckt! [NEWLINE]Bei näherer Betrachtung fällt euch auf, dass einer seiner Elternteile Europäisch gewesen zu sein scheint.</German>
+        <Russian>йцукен</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_MULATTO</Tag>
         <English>You've discovered a [COLOR_UNIT_TEXT]young Black man[COLOR_REVERT]! [NEWLINE]Your first thought is that he's a runaway slave. Then he tells you that his father was the white owner of his black mother who drove her out into the wilderness when she got pregnant.</English>
         <German>Ihr habt einen [COLOR_UNIT_TEXT]jungen Schwarzen[COLOR_REVERT] in den Wäldern entdeckt! [NEWLINE] Ihr haltet ihn zuerst für einen entlaufenen Sklaven. Doch er erzählt euch, dass sein Vater der weiße Besitzer seiner Mutter war, der sie in die Wildnis schickte als sie schwanger wurde.</German>
+        <Russian>йцукен</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_CONQUISTADOR</Tag>
         <English>You've discovered a lost [COLOR_UNIT_TEXT]conquistador[COLOR_REVERT] who was separated from his fellows!</English>
         <French>Vous avez découvert un [COLOR_UNIT_TEXT]conquistador[COLOR_REVERT] perdu abandonné par les siens !</French>
         <German>Ihr habt einen [COLOR_UNIT_TEXT]Konquistador[COLOR_REVERT] entdeckt, der von seiner Truppe getrennt wurde!</German>
+        <Russian>Вы обнаружили пропавшего [COLOR_UNIT_TEXT]конкистадора[COLOR_REVERT], который был разлучен со своими собратьями!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_DESERTED_SHIP</Tag>
         <English>You've discovered a [COLOR_UNIT_TEXT]ship[COLOR_REVERT] drifting on the sea! All the sailors are dead. They seem to have died of thirst.</English>
         <French>Vous avez découvert un [COLOR_UNIT_TEXT]navire[COLOR_REVERT] flottant sur les mers ! Tous les marins sont morts. Il semble par déshydratation.</French>
         <German>Ihr habt auf hoher See ein steuerlos dahintreibendes [COLOR_UNIT_TEXT]Schiff[COLOR_REVERT] entdeckt! Die gesamte Besatzung ist tot. Es sieht so aus, als ob alle verdurstet seien.</German>
+        <Russian>Вы обнаружили дрейфующий в море [COLOR_UNIT_TEXT]корабль[COLOR_REVERT]! Все матросы мертвы. Кажется, они умерли от жажды...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_EXPERIENCE</Tag>
@@ -98,6 +102,7 @@
         <German>Durch diese Entdeckung hat Eure Einheit an Erfahrung gewonnen!</German>
         <Italian>La scoperta ha fatto crescere l'esperienza dell'unità!</Italian>
         <Spanish>¡El descubrimiento le ha dado experiencia a la unidad!</Spanish>
+        <Russian>Исследование дало вашему отряду немного опыта!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_EXPERIENCE_SEA</Tag>
@@ -108,6 +113,7 @@
         <English>The crew of your ship has gained some experience!</English>
         <French>L'équipage de votre navire a gagné de l'expérience !</French>
         <German>Die Crew eures Schiffes hat etwas Erfahrung gewonnen!</German>
+        <Russian>Экипаж вашего корабля получил немного опыта!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_HEALING</Tag>

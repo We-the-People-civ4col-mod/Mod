@@ -112,6 +112,7 @@
         <German>Jedes Mal, wenn das Spiel neu geladen wird, wird ein neuer Zufallswert generiert, was zum Beispiel zu unterschiedlichen Kampfausgängen führen kann.</German>
         <Italian>Ogni volta che ricaricherai il gioco verrà generata una nuova estrazione casuale, portando, per esempio, a diversi risultati di combattimento.</Italian>
         <Spanish>En cada partida se genera una nueva "seed" al azar que, por ejemplo, arrojará resultados diferentes en el combate.</Spanish>
+        <Russian>Каждый раз при загрузке сохраненной игры генерируются новые данные для событий. Например, это может привести к совершенно другим результатам при обыске руин.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_CHANGING_WAR_PEACE</Tag>
@@ -145,6 +146,7 @@
         <German>Europäische Siedlungen können nach der Einnahme durch andere Europäer nicht mehr zerstört werden.</German>
         <Italian>Gli insediamenti europei non possono essere razziati da altri europei dopo la conquista.</Italian>
         <Spanish>Los asentamientos europeos no pueden ser arrasados después de que otros europeos los capturen.</Spanish>
+        <Russian>Европейские поселения не могут быть разрушены другими европейцами после захвата.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_EVENTS</Tag>
@@ -153,7 +155,7 @@
         <German>Keine Zufallsereignisse</German>
         <Italian>Nessun evento casuale</Italian>
         <Spanish>Sin sucesos al azar</Spanish>
-        <Russian>Без рандомных событий</Russian>
+        <Russian>Без случайных событий</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_EVENTS_HELP</Tag>
@@ -162,6 +164,7 @@
         <German>Es finden keine Zufallsereignisse ausgelöst.</German>
         <Italian>Non si verificano eventi casuali</Italian>
         <Spanish>No ocurren sucesos al azar.</Spanish>
+        <Russian>Не происходят случайные события. Например, никто не сможет найти "Фонтан молодости".</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_GOODY_HUTS</Tag>
@@ -179,6 +182,7 @@
         <German>Der Zufallskartengenerator platziert keine Ruinen und Grabstätten auf der Karte.</German>
         <Italian>Il generatore di mappe casuali non collocherà alcun villaggio tribale (le capanne "utili") sulla mappa.</Italian>
         <Spanish>El generador aleatorio de mapas no pone en ellos aldeas tribales (con sus típicas "golosinas").</Spanish>
+        <Russian>Генератор карт не размещает на местности какие-либо древние руины.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_MORE_VARIABLES_HIDDEN</Tag>
@@ -187,7 +191,7 @@
         <German>Keine versteckten Variablen mehr</German>
         <Italian>Niente più variabili nascoste</Italian>
         <Spanish>No hay más variables ocultas</Spanish>
-        <Russian>Без скрытых переменных</Russian>
+        <Russian>Нет скрытых данных</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_MORE_VARIABLES_HIDDEN_HELP</Tag>
@@ -196,6 +200,7 @@
         <German>Im Spiel werden zusätzliche Informationen angzeigt. Zur Attitude, zu den Steuern, zu den Ureinwohnern, etc...</German>
         <Italian>Ulteriori informazioni vengono visualizzate nel gioco. Sull'atteggiamento, sulle tasse, sugli aborigeni, ecc...</Italian>
         <Spanish>En el juego se muestra información adicional. Sobre la actitud, sobre los impuestos, sobre los aborígenes, etc...</Spanish>
+        <Russian>В игре отображается дополнительную информация об отношениях, налогах, туземцах и т.д.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_WILD_LAND_ANIMALS</Tag>
@@ -213,6 +218,7 @@
         <German>Es werden keine Wilden Tiere an Land erzeugt.</German>
         <Italian>Non si producono animali selvatici sulla terraferma.</Italian>
         <Spanish>No se producen animales salvajes en tierra.</Spanish>
+        <Russian>Дикие наземные животные не будут появляться.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_WILD_SEA_ANIMALS</Tag>
@@ -221,7 +227,7 @@
         <German>Keine Wilden Tiere im Wasser</German>
         <Italian>Nessun animale marino selvaggio</Italian>
         <Spanish>No hay animales marinos salvajes</Spanish>
-        <Russian>Без Диких животных на море</Russian>
+        <Russian>Без Диких морских животных</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_WILD_SEA_ANIMALS_HELP</Tag>
@@ -230,6 +236,7 @@
         <German>Es werden keine Wilden Tiere im Wasser erzeugt.</German>
         <Italian>Non si creano animali selvatici nell'acqua.</Italian>
         <Spanish>No se crean animales salvajes en el agua.</Spanish>
+        <Russian>Дикие морские животные не будут появляться.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ONE_CITY_CHALLENGE</Tag>
@@ -247,6 +254,7 @@
         <German>Der menschliche Spieler kann maximal eine Siedlung kontrollieren.</German>
         <Italian>Il giocatore non può mai controllare più di un insediamento.</Italian>
         <Spanish>El jugador humano nunca podrá controlar más de un asentamiento.</Spanish>
+        <Russian>Игрок-человек никогда не может контролировать более одного поселения.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_PERMANENT_ALLIANCES</Tag>
@@ -264,6 +272,7 @@
         <German>Zwei Kolonien können eine Allianz schließen, die die restliche Spielzeit überdauert.</German>
         <Italian>Due colonie possono formare una alleanza permanente che duri fino alla fine della partita.</Italian>
         <Spanish>Dos colonias pueden formar una alianza permanente que dure hasta que acabe la partida.</Spanish>
+        <Russian>Две колониальные державы могут сформировать постоянный союз, который продлится до конца игры.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_RANDOM_SETTLEMENT_AREAS</Tag>
@@ -281,6 +290,7 @@
         <German>Siedlungen der Ureinwohner werden auf der Nord-Süd-Achse zufällig und nicht historisch korrekt platziert.</German>
         <Italian>Gli insediamenti nativi sono collocati sull'asse nord-sud in modo casuale e non storicamente accurato.</Italian>
         <Spanish>Los asentamientos nativos se sitúan en el eje norte-sur de forma aleatoria y no son históricamente precisos.</Spanish>
+        <Russian>Случайные районы расселения коренных жителей вместо использования географически правильного размещения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_REDUCED_CITY_DISTANCE</Tag>
@@ -298,6 +308,7 @@
         <German>Verringert den Mindestabstand zu anderen Kolonien um 1, wenn der Spieler bereits die Gründungsparzelle und alle angrenzenden Parzellen besitzt (3x3-Raster).</German>
         <Italian>Ridurre la distanza minima dalle altre colonie di 1 se il giocatore possiede già il lotto fondatore e tutti i lotti vicini (griglia 3x3).</Italian>
         <Spanish>Reducir la distancia mínima a otras colonias en 1 si el jugador ya posee la parcela fundadora y todas las parcelas contiguas (cuadrícula 3x3).</Spanish>
+        <Russian>Уменьшает минимальное расстояние до других колоний на 1 клетку, если игрок уже владеет участком основания и всеми участками рядом с ним (сетка 3x3).</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_REMOVE_WORLD_BUILDER</Tag>
@@ -315,6 +326,7 @@
         <German>Entfernt die Möglichkeit, den World Builder zu benutzen.[NEWLINE]Der World Builder ist ein bekannter Weg, um zu betrügen, und einige Spieler wollen diese Option vielleicht nicht, sei es für eine Art von kompetitivem Spiel oder einfach nur, um der Versuchung zu entgehen.</German>
         <Italian>Rimuove la possibilità di entrare nel World Builder.[NEWLINE]Il World Builder è un modo noto per barare e la gente potrebbe non volere questa opzione, sia per una sorta di gioco competitivo o semplicemente per rimuovere la tentazione.</Italian>
         <Spanish>Elimina la posibilidad de entrar en el World Builder.[NEWLINE]El World Builder es una forma conocida de hacer trampas y la gente podría no querer esta opción, ya sea para algún tipo de juego competitivo o simplemente para eliminar la tentación.</Spanish>
+        <Russian>Удаляет возможность запуска Строителя мира.[NEWLINE]Строитель мира – известный способ обмана и людям может не понадобиться эта опция, будь то соревновательная игра или просто избавление от искушения.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_DEACTIVATE_HEMISPHERE_RESTRICTIONS</Tag>
@@ -326,28 +338,31 @@
         <Tag>TXT_KEY_GAMEOPTION_DEACTIVATE_HEMISPHERE_RESTRICTIONS_HELP</Tag>
         <English>Normally some bonus resources (like the walrus, penguin, capybara, ...) are restricted for immersion either to the northern or southern hemisphere. If you activate this setting that restriction is removed.</English>
         <German>Standardmäßig sind viele Bonus-Ressourcen (wie z.B. Walross, Pinguin, Cabyara, ...) aus Gründen der Realitätstreue entweder auf die nördliche oder südliche Hemisphere beschränkt. Mit Aktivierung dieser Option wird diese Einschränkung aufgehoben.</German>
+        <Russian>Обычно расположение некоторых дополнительных ресурсов (такие как моржи, пингвины, капибара и т.д.) для реалистичности ограничено определенным полушарием. Если вы активируете этот параметр, ограничение будет отменено.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_GOODIES_ALWAYS_DISPLAY_COLOURED_CIRCLE</Tag>
         <English>Revealed goodies always display coloured circles</English>
         <German>Entdeckte Goodies zeigen immer Farbkreis als Hinweis</German>
-        <Russian>Выявленные Goodies всегда отображаются цветными кругами.</Russian>
+        <Russian>Обнаруженные Goodies всегда подсвечиваются цветными кругами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_GOODIES_ALWAYS_DISPLAY_COLOURED_CIRCLE_HELP</Tag>
         <English>This helps to easily identify goodies on the map once revealed</English>
         <German>Hilft bereits entdeckte Goodies auf der Karte einfach zu finden</German>
+        <Russian>Это помогает легко идентифицировать Goodies на карте после их обнаружения.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_UNREST_TURNS_DEPEND_ON_CITY_SIZE</Tag>
         <English>Occupation turns after conquering a city depend more heavily on size of city</English>
         <German>Dauer der Aufstände in einer Stadt nach Eroberung hängt deutlich stärker von Stadtgröße ab</German>
-        <Russian>Время восстановления порядка после завоевания города больше зависит от его размера</Russian>
+        <Russian>Время восстановления порядка после завоевания города зависит от его размера</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_UNREST_TURNS_DEPEND_ON_CITY_SIZE_HELP</Tag>
         <English>A conquered city will stay longer in unrest if it is bigger</English>
         <German>Eine erobertert Stadt leidet läger unter Aufständen, wenn sie größer ist</German>
+        <Russian>Чем больше жителей в завоеванном городе, тем дольше будут продолжаться в нем беспорядки</Russian>
     </TEXT>	
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE</Tag>
@@ -365,6 +380,7 @@
         <German>Nur 1 Kolonist darf zur selben Zeit in einer Siedlung der Ureinwohner leben und von ihnen lernen. Der nächste muss warten, bis dieser seine Ausbildung beendet hat.</German>
         <Italian>Solo 1 colono può vivere in un insediamento nativo alla volta e imparare da loro. Il prossimo deve aspettare che questo abbia finito la sua educazione.</Italian>
         <Spanish>Sólo un colono puede vivir en un asentamiento nativo a la vez y aprender de ellos. El siguiente tiene que esperar hasta que éste haya terminado su educación.</Spanish>
+        <Russian>Только один колонист может жить и учиться в деревне индейцев в любой момент времени. После того, как он получил профессию, можно начать обучение следующего колониста.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_REDUCED_REF</Tag>
@@ -382,6 +398,7 @@
         <German>Das Königliche Expeditionskorps wird für den Spieler halbiert.</German>
         <Italian>La forza di spedizione reale è dimezzato per il giocatore.</Italian>
         <Spanish>El Real Fuerza Expedicionario se reduce a la mitad para el jugador.</Spanish>
+        <Russian>Размер Королевских Экспедиционных Войск уменьшен вдвое</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_USE_OLD_FOUNDING_FATHER_SYSTEM</Tag>
@@ -399,5 +416,6 @@
         <German>Beim neuen System werden Gründerväter wieder verfügbar, wenn die bisher besitzende Civ vernichtet wird.</German>
         <Italian>Con il nuovo sistema, FFs saranno disponibili nuovamente se in possesso di Civ è distrutto.</Italian>
         <Spanish>Con el nuevo sistema, FFs vuelven a estar disponibles si se destruye la posesión de Civilization.</Spanish>
+        <Russian>С новой системой Отцы Основатели снова становятся доступными всякий раз, когда нанявшая их цивилизация уничтожается.</Russian>
     </TEXT>
 </Civ4GameText>

@@ -1005,24 +1005,28 @@
         <English>[ICON_BULLET]Small reward when killed</English>
         <French>[ICON_BULLET]Offre des petites récompenses lorsqu'il est abattu</French>
         <German>[ICON_BULLET]Kleine Belohung für Tötung</German>
+        <Russian>[ICON_BULLET]Небольшая награда за убийство</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_TERRAIN_NATIVE</Tag>
         <English>[ICON_BULLET]Native to %s1_Desc terrain</English>
         <French>[ICON_BULLET]Indigène vers le terrain %s1_Desc</French>
         <German>[ICON_BULLET]Heimisch auf %s1_Desc Terrain</German>
+        <Russian>[ICON_BULLET]Уроженец to %s1_Desc местности</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ANIMAL_REWARD</Tag>
         <English>[COLOR_POSITIVE_TEXT]Successful hunting! [COLOR_REVERT]Once cleaned and dressed the [COLOR_UNIT_TEXT]%s1_animal[COLOR_REVERT] you killed is worth %d2[ICON_GOLD]!</English>
         <French>Les restes de l'animal tué ([COLOR_UNIT_TEXT]%s1_animal[COLOR_REVERT]) vous rapportent %d2[ICON_GOLD] !</French>
         <German>[COLOR_POSITIVE_TEXT]Erfolgreiche Jagd! [COLOR_REVERT]Die Körperteile [NUM1:des:der] getöteten [COLOR_UNIT_TEXT]%s1_animal[COLOR_REVERT] sind %d2[ICON_GOLD] wert!</German>
+        <Russian>[COLOR_POSITIVE_TEXT]Удачная охота! [COLOR_REVERT]Шкуру [COLOR_UNIT_TEXT]%s1_animal[COLOR_REVERT] удалось продать за %d2[ICON_GOLD]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ANIMALS_SPOTTED</Tag>
         <English>[COLOR_WARNING_TEXT]%s1_CityName : [COLOR_REVERT]Wild animals have been spotted nearby!</English>
         <French>Des animaux sauvages ont été repérés près de %s1_CityName!</French>
         <German>[COLOR_WARNING_TEXT]%s1_CityName : [COLOR_REVERT]Ein Kundschafter meldet wilde Tiere in der Nähe!</German>
+        <Russian>[COLOR_WARNING_TEXT]%s1_CityName : [COLOR_REVERT]Жители жалуются на диких животных, бродящих поблизости от города!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ANACONDA</Tag>
@@ -1047,6 +1051,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Анаконда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BLACKBEAR_PEDIA</Tag>
@@ -1061,132 +1066,155 @@
         <German>[ICON_BULLET][COLOR_CYAN]Nationales Wunder[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET][COLOR_CYAN]Miracolo nazionale[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET][COLOR_CYAN]Milagro nacional[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET][COLOR_CYAN]Национальное чудо[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_FORT_FEATURES</Tag>
         <English>[ICON_BULLET]Protects an area against raiding Natives, wild animals and other enemies</English>
         <French>[ICON_BULLET]Protège une zone des raids indigènes, des animaux sauvages et d'autres ennemies</French>
         <German>[ICON_BULLET]Schützt ein Gebiet vor Überfallen der Ureinwohner, Wilden Tiere und anderen Gegnern</German>
+        <Russian>[ICON_BULLET]Позволяет защитить территорию от набегов туземцев, диких животных и других врагов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_MONASTERY_FEATURES</Tag>
         <English>[ICON_BULLET]Might convert nearby Natives or convince them to bring gifts to your cities.</English>
         <French>[ICON_BULLET]permet de convertir des indigènes de passage et de les convaincre d'apporter des présents dans vos villes.</French>
         <German>[ICON_BULLET]Kann in manchen Fällen Ureinwohner überzeugen, zu konvertieren oder Geschenke zu bringen.</German>
+        <Russian>[ICON_BULLET]Может обратить индейцев в вашу веру или убедить их принести подарки в ваши города.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_FORT_DEFENSE_MODIFIER_IF_WORKED</Tag>
         <English>[ICON_BULLET]Adds additional %d1_defensebonus%%%F2_Icon to a city if the fort is defended by soldiers and its plot is worked by a citizen inside the city</English>
         <German>[ICON_BULLET]Gibt der Stadt zusätzliche %d1_defensebonus%%%F2_Icon wenn das Fort durch Soldaten bewacht ist und dessen Feld durch einen Arbeiter in der Stadt bearbeitet wird</German>
+        <Russian>[ICON_BULLET]Дает дополнительный бонус %d1_defensebonus%%%F2_Icon к защите города, если форт защищают солдаты, а его участок внутри города обрабатывается горожанином.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_MONASTERY_CROSSS_MODIFIER_IF_WORKED</Tag>
         <English>[ICON_BULLET]Adds additional %d1_crossesbonus%%%F2_Icon if the monastery has missionaries and its plot is worked by a citizen inside the city</English>
         <German>[ICON_BULLET]Gibt der Stadt einen zusätzliche %d1_crossesbonus%%%F2_Icon, wenn das Kloster durch Mönche besetzt ist und dessen Feld durch einen Arbeiter in der Stadt bearbeitet wird</German>
+        <Russian>[ICON_BULLET]Дает дополнительный бонус %d1_crossesbonus%%%F2_Icon, если в нем находится миссионер, а его участок внутри города обрабатывается горожанином.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_FOOD_MODIFIER_IF_WORKED</Tag>
         <English>[ICON_BULLET]Adds additional %d1_millbonus%%%F2_Icon to its city if its plot is worked by a citizen inside the city.</English>
         <German>[ICON_BULLET]Gibt der Stadt zusätzliche %d1_millbonus%%%F2_Icon, wenn dessen Feld von einem Bürger der Stadt bearbeitet wird.</German>
+        <Russian>[ICON_BULLET]Дает городу дополнительный бонус %d1_millbonus%%%F2_Icon, если участок внутри города обрабатывается горожанином.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_HAMMERS_MODIFIER_IF_WORKED</Tag>
         <English>[ICON_BULLET]Adds additional %d1_millbonus%%%F2_Icon to its city if its plot is worked by a citizen inside the city.</English>
         <German>[ICON_BULLET]Gibt der Stadt zusätzliche %d1_millbonus%%%F2_Icon, wenn dessen Feld von einem Bürger der Stadt bearbeitet wird.</German>
+        <Russian>[ICON_BULLET]Дает городу дополнительный бонус %d1_millbonus%%%F2_Icon, если участок внутри города обрабатывается горожанином.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_TOOLS_MODIFIER_IF_WORKED</Tag>
         <English>[ICON_BULLET]Adds additional %d1_millbonus%%%F2_Icon to its city if its plot is worked by a citizen inside the city.</English>
         <German>[ICON_BULLET]Gibt der Stadt zusätzliche %d1_millbonus%%%F2_Icon, wenn dessen Feld von einem Bürger der Stadt bearbeitet wird.</German>
+        <Russian>[ICON_BULLET]Дает городу дополнительный бонус %d1_millbonus%%%F2, если участок внутри города обрабатывается горожанином.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_STORAGE_MODIFIER_IF_WORKED</Tag>
         <English>[ICON_BULLET]Adds additional %d1_millbonus [COLOR_CYAN]Storage Capacity[COLOR_REVERT] to its city if its plot is worked by a citizen inside the city.</English>
         <German>[ICON_BULLET]Gibt der Stadt zusätzliche %d1_millbonus [COLOR_CYAN]Lagerkapazität[COLOR_REVERT], wenn dessen Feld von einem Bürger der Stadt bearbeitet wird.</German>
+        <Russian>[ICON_BULLET]Дает дополнительный бонус %d1_millbonus к [COLOR_CYAN]вместимости склада[COLOR_REVERT], если участок внутри города обрабатывается горожанином.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NATIVE_RAID_ATTACKED_FORT</Tag>
         <English>[COLOR_WARNING_TEXT]Bad news, Milord! [COLOR_REVERT]Your Fort was attacked by marauding Natives.</English>
         <French>Votre fort a été attaqué par des indigènes lors d'un raid.</French>
         <German>[COLOR_WARNING_TEXT]Schlechte Nachrichten, Milord! [COLOR_REVERT]Unser Fort wurde durch Ureinwohner überfallen.</German>
+        <Russian>[COLOR_WARNING_TEXT]Плохие новости, Милорд! [COLOR_REVERT]Наш форт был атакован злобными индейцами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NATIVE_RAID_ATTACKED_FORT_BUT_DEFEATED</Tag>
         <English>[COLOR_POSITIVE_TEXT]Victory, Milord! [COLOR_REVERT]The Troops in your fort defeated some Natives out on a raid.</English>
         <French>Les troupes de votre fort ont été vaincues par des indigènes lors d'un raid.</French>
         <German>[COLOR_POSITIVE_TEXT]Sieg, Milord! [COLOR_REVERT]Die Besatzung eures Forts hat einen Überfall der Ureinwohner abgewehrt.</German>
+        <Russian>[COLOR_POSITIVE_TEXT]Победа, Милорд! [COLOR_REVERT]Войска нашего форта отбили набег индейцев с большим уроном для них.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORT_IMPROVEMENT_DESTROYED_GOOD</Tag>
         <English>[COLOR_POSITIVE_TEXT]Victory, Milord! [COLOR_REVERT]Our fort has fired at enemy troops and eliminated them!</English>
         <French>Un fort a tiré sur des troupes ennemies et les a détruites !</French>
         <German>[COLOR_POSITIVE_TEXT]Sieg, Milord! [COLOR_REVERT]Unser Fort hat auf feindliche Truppen gefeuert und diese vernichtet!</German>
+        <Russian>[COLOR_POSITIVE_TEXT]Победа, Милорд! [COLOR_REVERT]Наш форт обстрелял вражеские войска и уничтожил их!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORT_IMPROVEMENT_DESTROYED_BAD</Tag>
         <English>[COLOR_WARNING_TEXT]Defeat, Milord! [COLOR_REVERT]A fort has fired at our troops and massacred them!</English>
         <French>Un fort a tiré sur nos troupes et les a détruites !</French>
         <German>[COLOR_WARNING_TEXT]Niederlage, Milord! [COLOR_REVERT]Ein Fort hat auf unsere Truppen gefeuert und sie massakriert!</German>
+        <Russian>[COLOR_WARNING_TEXT]Поражение, Милорд! [COLOR_REVERT]Форт обстрелял наши войска и уничтожил их!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORT_IMPROVEMENT_HIT_LAND_GOOD</Tag>
         <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]Our fort fired at enemy troops causing serious casualties!</English>
         <French>Un fort a tiré sur des troupes ennemies et les a endommagées !</French>
         <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Unser Fort hat auf feindliche Truppen gefeuert und diesen Verluste zugefügt!</German>
+        <Russian>[COLOR_POSITIVE_TEXT]Хорошие новости, Милорд! [COLOR_REVERT]Наш форт обстрелял вражеские войска и нанес им существенный рон!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORT_IMPROVEMENT_HIT_LAND_BAD</Tag>
         <English>[COLOR_WARNING_TEXT]Bad news, Milord! [COLOR_REVERT]A fort has fired at our troops. We've suffered some casualties.</English>
         <French>Un fort a tiré sur vos troupes et les a endommagées !</French>
         <German>[COLOR_WARNING_TEXT]Schlechte Nachrichten, Milord! [COLOR_REVERT]Ein Fort hat auf unsere Truppen gefeuert und diesen Verluste zugefügt!</German>
+        <Russian>[COLOR_WARNING_TEXT]Плохие новости, Милорд! [COLOR_REVERT]Форт обстрелял наши войска. Мы понесли потери.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORT_IMPROVEMENT_MISS_LAND_BAD</Tag>
         <English>[COLOR_WARNING_TEXT]Bad news, Milord! [COLOR_REVERT]Our fort fired at enemy troops without effect.</English>
         <French>Un fort a tiré sur des troupes ennemies, mais les a manquées !</French>
         <German>[COLOR_WARNING_TEXT]Schlechte Nachrichten, Milord! [COLOR_REVERT]Unser Fort hat auf feindliche Truppen gefeuert, diesen aber anscheinend keine Verluste beigebracht!</German>
+        <Russian>[COLOR_WARNING_TEXT]Плохие новости, Милорд! [COLOR_REVERT]Обстрел вражеских войск нашим фортом не причинил им никакого вреда .</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORT_IMPROVEMENT_MISS_LAND_GOOD</Tag>
         <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]A fort fired at our troops but we had no casualties.</English>
         <French>Un fort a tiré sur vos troupes, mais les a manquées !</French>
         <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Ein Fort hat auf unsere Truppen gefeuert, diesen aber keine Verluste beigebracht!</German>
+        <Russian>[COLOR_POSITIVE_TEXT]Хорошие новости, Милорд! [COLOR_REVERT]Наши войска были обстреляны фортом, но мы сумели избежать потерь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORT_IMPROVEMENT_KILLED_ANIMAL</Tag>
         <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]The troops in a fort killed a dangerous animal that got inside! The remains are worth %d1[ICON_GOLD]!</English>
         <French>Les troupes en garde dans un fort ont tué un animal errant ! Ses restes ont été vendus pour %d1[ICON_GOLD]!</French>
         <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Die Besatzung eines Forts hat ein herumwanderndes Tier getötet, dessen Körperteile %d1[ICON_GOLD] wert sind!</German>
+        <Russian>[COLOR_POSITIVE_TEXT]Хорошие новости, Милорд! [COLOR_REVERT]Гарнизон форта убил опасное животное, проникшее внутрь! За его шкуру мы выручили %d1[ICON_GOLD]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MONASTERY_IMPROVEMENT_APEASED_RAIDING_NATIVE</Tag>
         <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]A monastery successfully deterred some young Natives from a raid!</English>
         <French>Un monastère a calmé avec succès des jeunes indigènes partis pour un raid !</French>
         <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Ein Kloster hat erfolgreich einen Ureinwohner von einem Raubzug abgehalten!</German>
+        <Russian>[COLOR_POSITIVE_TEXT]Хорошие новости, Милорд! [COLOR_REVERT]Монастырь успешно удержал некоторых молодых туземцев от набега!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MONASTERY_IMPROVEMENT_GOT_PRESENT</Tag>
         <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]Natives brought a monastery gifts worth %d1[ICON_GOLD]!</English>
         <French>Des indigènes ont apportés des présents dans un monastère pour une valeur de %d1[ICON_GOLD]!</French>
         <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Ureinwohner haben einem Kloster Geschenke im Wert von %d1[ICON_GOLD] gebracht!</German>
+        <Russian>[COLOR_POSITIVE_TEXT]Хорошие новости, Милорд! [COLOR_REVERT]Индейцы принесли монастырю дары на %d1[ICON_GOLD]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MONASTERY_IMPROVEMENT_CONVERTED_NATIVE</Tag>
         <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]A monastery has successfully converted a visiting Native!</English>
         <French>Un monastère a converti avec succès des indigènes de passage !</French>
         <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Ein Kloster hat erfolgreich einen Ureinwohner konvertiert!</German>
+        <Russian>[COLOR_POSITIVE_TEXT]Хорошие новости, Милорд! [COLOR_REVERT]Монастырь обратил проезжавшего мимо индейца в нашу веру!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HIRED_PIRATES</Tag>
         <English>Milord, the [COLOR_UNIT_TEXT]pirates[COLOR_REVERT] we have hired await your orders in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
         <French>Les pirates que nous avons recrutés attendent vos ordres %s1_city, Sir.</French>
         <German>Milord, die angeheuerten [COLOR_UNIT_TEXT]Piraten[COLOR_REVERT] erwarten Eure Befehle in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</German>
+        <Russian>Милорд, [COLOR_UNIT_TEXT]пираты[COLOR_REVERT], которых мы наняли, ожидают приказов в гавани [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOLD_BY_ENTERTAINMENT</Tag>
         <English>%s2_city : The %s1_building has generated %d3[ICON_GOLD]</English>
         <French>%s2_city : Votre %s1_building a généré %d3[ICON_GOLD] de profit</French>
         <German>%s2_city : Das Gebäude %s1_building hat %d3[ICON_GOLD] Gewinn erwirtschaftet</German>
+        <Russian>%s2_city : %s1_building сгенерировал %d3[ICON_GOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ENTERTAINMENT_BUILDING</Tag>
@@ -1200,6 +1228,7 @@
         <English>[ICON_BULLET]Increases generation of [ICON_GOLD] from %F1_yield by: %d2_increase%%</English>
         <French>[ICON_BULLET]Génère davantage de [ICON_GOLD] à partir de %F1_yield à: %d2_increase%%</French>
         <German>[ICON_BULLET]Erhöht die Rate von [ICON_GOLD] durch %F1_yield um: %d2_increase%%</German>
+        <Russian>[ICON_BULLET]Увеличивает генерацию [ICON_GOLD] from %F1_yield by: %d2_increase%%</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_MARKET_BUILDING</Tag>
