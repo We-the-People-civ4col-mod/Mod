@@ -544,7 +544,7 @@
     <!-- RAPE_PLANTER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_RAPE_PLANTER</Tag>
-        <English>Expert Rape Planter:Expert Rape Planters</English>
+        <English>Expert Rapeseed Planter:Expert Rapeseed Planters</English>
         <French>
             <Text>Expert planteur de colza:Experts planteurs de colza</Text>
             <Gender>Male</Gender>
@@ -569,7 +569,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RAPE_PLANTER</Tag>
-        <English>Expert Rape Planter:Expert Rape Planters</English>
+        <English>Expert Rapeseed Planter:Expert Rapeseed Planters</English>
         <French>
             <Text>Expert planteur de colza:Experts planteurs de colza</Text>
             <Gender>Male</Gender>
