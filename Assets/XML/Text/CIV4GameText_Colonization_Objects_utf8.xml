@@ -4566,6 +4566,9 @@
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
+<!-- ZorG. for some reason unknown to me, the TXT_KEY_IMPROVEMENT_GOODY_HUT description was duplicated.
+GOODY_HUT is Burial Grounds. I noticed when I looked at the list of FFs and in the description of Malinche it was mentioned twice about Ancient Ruins.
+although the description was correct before. Ancient Ruins is GOODY_HUT2. this is specified in XML_AUTO_UTF8_ImprovementInfo.xml
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT</Tag>
         <English>Ancient Ruins</English>
@@ -4586,7 +4589,7 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Древние руины</Russian>
-    </TEXT>
+    </TEXT> -->
     <TEXT>
         <Tag>TXT_KEY_TRADE_CITIES</Tag>
         <English>Settlements</English>
