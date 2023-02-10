@@ -1864,20 +1864,20 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SLAVE_MASTER_1</Tag>
-        <English>Slave Master I</English>
-        <German>Sklavenmeister I</German>
+        <English>Slave Overseer I</English>
+        <German>Sklavenaufseher I</German>
         <Russian>Надсмоторщик I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SLAVE_MASTER_2</Tag>
-        <English>Slave Master II</English>
-        <German>Sklavenmeister II</German>
+        <English>Slave Overseer II</English>
+        <German>Sklavenaufseher II</German>
         <Russian>Надсмоторщик II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SLAVE_MASTER_3</Tag>
-        <English>Slave Master III</English>
-        <German>Sklavenmeister III</German>
+        <English>Slave Overseer III</English>
+        <German>Sklavenaufseher III</German>
         <Russian>Надсмоторщик III</Russian>
     </TEXT>
     <TEXT>
