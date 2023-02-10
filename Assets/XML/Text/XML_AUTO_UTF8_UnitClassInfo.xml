@@ -284,6 +284,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мастер пивовар:Мастера пивовары</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BRIGANTINE</Tag>
@@ -312,6 +313,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Бригантина:Бригантины</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SLAVE_BARQUE</Tag>
@@ -325,6 +327,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Russian>Невольничий барк:Невольничьи барки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BUTCHER</Tag>
@@ -353,6 +356,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мастер мясник:Мастера мясники</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CANNONS</Tag>
@@ -365,6 +369,7 @@
         </German>
         <Italian>Cannoni</Italian>
         <Spanish>Cañones</Spanish>
+        <Russian>Пушки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CARAVEL</Tag>
@@ -397,6 +402,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Каравелла Редонда:Каравеллы Редонды</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CARPENTER</Tag>
@@ -421,6 +427,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мастер плотник:Мастера плотники</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CARRACK</Tag>
@@ -437,6 +444,7 @@
         </German>
         <Italian>Caracca:Caracche</Italian>
         <Spanish>Carrack:Carracks</Spanish>
+        <Russian>Каракка:Каракки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CARRIER</Tag>
@@ -453,6 +461,7 @@
         </German>
         <Italian>Conestoga:Conestogas</Italian>
         <Spanish>Conestoga:Conestogas</Spanish>
+        <Russian>Конестогская повозка:Конестогские повозки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CATTLE</Tag>
@@ -465,6 +474,7 @@
         </German>
         <Italian>Bovini</Italian>
         <Spanish>Bovinos</Spanish>
+        <Russian>Коровы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CHRISTIAN_MISSIONARY</Tag>
@@ -493,6 +503,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Сигары</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CLOTH</Tag>
@@ -517,6 +528,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ткань</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COATS</Tag>
@@ -537,6 +549,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Пальто</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COCA_COLLECTOR</Tag>
@@ -561,6 +574,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Опытный сборщик коки:Опытные сборщики коки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COCA_LEAVES</Tag>
@@ -585,6 +599,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Листья коки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COCOA</Tag>
@@ -605,6 +620,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Какао</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COCOA_FRUITS</Tag>
@@ -617,6 +633,7 @@
         </German>
         <Italian>Frutta di cacao</Italian>
         <Spanish>Fruta del cacao</Spanish>
+        <Russian>Плоды какао</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COCOA_PLANTER</Tag>
@@ -625,6 +642,7 @@
         <German>Erfahrener Kakaopflücker:Erfahrene Kakaopflücker</German>
         <Italian>Expert Cocoa Planter:Expert Cocoa Planters</Italian>
         <Spanish>Expert Cocoa Planter:Expert Cocoa Planters</Spanish>
+        <Russian>Опытный плантатор какао:Опытные плантаторы какао</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COFFEE</Tag>
@@ -649,6 +667,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Кофе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COFFEE_BERRIES</Tag>
@@ -661,6 +680,7 @@
         </German>
         <Italian>Bacche di caffè</Italian>
         <Spanish>Bayas de café</Spanish>
+        <Russian>Кофейные ягоды</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COFFEE_PLANTER</Tag>
@@ -685,6 +705,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Опытный плантатор кофе:Опытные плантаторы кофе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COLONIST</Tag>
@@ -713,6 +734,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Цветная ткань</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CONQUISTADOR</Tag>
@@ -725,6 +747,7 @@
         <German>Kontinentalgarde:Kontinentalgarde</German>
         <Italian>Continental Guard:Continental Guards</Italian>
         <Spanish>Continental Guard:Continental Guards</Spanish>
+        <Russian>Континентальная гвардия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BUCCANNEER</Tag>
@@ -761,6 +784,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Крещеный индеец:Крещеные индейцы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CORVETTE</Tag>
@@ -789,6 +813,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Корвет:Корветы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_NAVAL_BRIG</Tag>
@@ -802,6 +827,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Russian>Военно-морской бриг:Военно-морские бриги</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COTTON</Tag>
@@ -826,6 +852,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Хлопок</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COTTON_PLANTER</Tag>
@@ -850,6 +877,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Опытный хлопкороб:Опытные хлопкоробы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COUGAR</Tag>
@@ -874,6 +902,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Пума</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CRIMINAL</Tag>
@@ -919,6 +948,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мастер винокур:Мастера винокуры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_DOCTOR</Tag>
@@ -943,6 +973,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Знаменитый медик:Знаменитые медики</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_DYER</Tag>
@@ -967,6 +998,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мастер красильщик:Мастера красильщики</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_EMIGRANT</Tag>
@@ -991,6 +1023,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Политический беженец:Политические беженцы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_EUROPEAN_LINE_INFANTRY</Tag>
@@ -1015,6 +1048,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Европейская линейная пехота:Европейские линейные пехоты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FARMER</Tag>
@@ -1039,6 +1073,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Опытный фермер:Опытные фермеры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FISHERMAN</Tag>
@@ -1063,6 +1098,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Опытный рыболов:Опытные рыболовы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FISHING_BOAT</Tag>
@@ -1083,6 +1119,7 @@
         </German>
         <Italian>Fluyt:Fluyts</Italian>
         <Spanish>Fluyt:Fluyts</Spanish>
+        <Russian>Флейт:Флейты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FOOD</Tag>
@@ -1103,6 +1140,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Еда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FRIGATE</Tag>
@@ -1127,6 +1165,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Фрегат:Фрегаты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROYAL_FRIGATE</Tag>
@@ -1151,6 +1190,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Королевский фрегат:Королевские фрегаты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FUR</Tag>
@@ -1171,6 +1211,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Мех</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FURNITURE</Tag>
@@ -1183,6 +1224,7 @@
         </German>
         <Italian>Mobili</Italian>
         <Spanish>Muebles</Spanish>
+        <Russian>Мебель</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FURNITURE_MAKER</Tag>
@@ -1211,6 +1253,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мастер краснодеревщик:Мастера краснодеревщики</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FUR_TRADER</Tag>
@@ -1235,6 +1278,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мастер скорняк:Мастера скорняки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_GALLEON</Tag>
@@ -1259,6 +1303,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Галеон:Галеоны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROYAL_TROOP_GALLEON</Tag>
@@ -1268,6 +1313,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Russian>Галеон Королевских войск:Галеоны Королевских войск</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_GEMS</Tag>
@@ -1292,6 +1338,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Драгоценные камни</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_GOLD</Tag>
@@ -1316,6 +1363,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Золото</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_GOVERNOR</Tag>
@@ -1340,6 +1388,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Губернатор:Губернаторы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_GRAPES</Tag>
@@ -1364,6 +1413,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Виноград</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_GRAPES_PICKER</Tag>
@@ -1392,6 +1442,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Опытный сборщик винограда:Опытные сборщики винограда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_GREATWHITE</Tag>
@@ -1416,6 +1467,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Большая белая акула</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_GREAT_ADMIRAL</Tag>
@@ -1444,6 +1496,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Великий Адмирал:Великие Адмиралы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_GREAT_GENERAL</Tag>
@@ -1472,6 +1525,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Великий Генерал:Великие Генералы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_GRIZZLY</Tag>
@@ -1496,6 +1550,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Гризли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_GUNSMITH</Tag>
@@ -1520,6 +1575,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мастер оружейник:Мастера оружейники</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_HEAVY_ARTILLERY</Tag>
@@ -1548,6 +1604,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Тяжелая артиллерия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_HEMP</Tag>
@@ -1572,6 +1629,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Конопля</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_HEMP_PLANTER</Tag>
@@ -1596,6 +1654,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Опытный плантатор конопли:Опытные плантаторы конопли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_HESSIAN</Tag>
@@ -1604,6 +1663,7 @@
         <German>Hessischer Söldner:Hessische Söldner</German>
         <Italian>Hessian:Hessians</Italian>
         <Spanish>Hessian:Hessians</Spanish>
+        <Russian>Гессенские наемники</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_HIDES</Tag>
@@ -1628,6 +1688,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Коровьи шкуры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_HORSES</Tag>
@@ -1652,6 +1713,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Лошади</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_HUMPBACK_WHALE</Tag>
@@ -1676,6 +1738,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Горбатый кит</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_HUNTER</Tag>
@@ -1704,6 +1767,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Опытный охотник:Опытные охотники</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_INDENTURED_SERVANT</Tag>
@@ -1732,6 +1796,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Индиго</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_INDIGO_PLANTER</Tag>
@@ -1752,6 +1817,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Опытный плантатор индиго:Опытные плантаторы индиго</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_JAGUAR</Tag>
@@ -1776,6 +1842,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ягуар</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_KRAKEN</Tag>
@@ -1800,6 +1867,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Кракен</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_LEATHER</Tag>
@@ -1824,6 +1892,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Выделанная кожа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_LIGHT_ARTILLERY</Tag>
@@ -1852,6 +1921,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Легкая артиллерия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_LUMBER</Tag>
@@ -1872,6 +1942,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Пиломатериалы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_LUMBERJACK</Tag>
@@ -1896,6 +1967,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Опытный лесоруб:Опытные лесорубы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_LUXURY_GOODS</Tag>
@@ -1924,6 +1996,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Предметы роскоши</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_LYNX</Tag>
@@ -1948,6 +2021,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Рысь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MERCHANTMAN</Tag>
@@ -1972,6 +2046,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Торговый корабль:Торговые корабли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MILITIA</Tag>
@@ -1996,6 +2071,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Опытный рудокоп:Опытные рудокопы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MORTAR</Tag>
@@ -2024,6 +2100,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мортира:Мортиры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MOUNTED_CONQUISTADOR</Tag>
@@ -2056,6 +2133,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мушкеты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_NATIVE_MERC</Tag>
@@ -2092,6 +2170,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Потомственный дворянин:Потомственные дворяне</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ORCA</Tag>
@@ -2116,6 +2195,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Косатка</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ORE</Tag>
@@ -2136,6 +2216,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Руда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_OXCART</Tag>
@@ -2164,6 +2245,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Воловья упряжь:Воловьи упряжки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PEARLS_HUNTER</Tag>
@@ -2192,6 +2274,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Отважный первопроходец:Отважные первопроходцы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PIRATE_FRIGATE</Tag>
@@ -2259,6 +2342,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Рьяный проповедник:Рьяные проповедники</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PREMIUM_COATS</Tag>
@@ -2283,6 +2367,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Премиумные шубы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PREMIUM_FUR</Tag>
@@ -2307,6 +2392,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Премиальный мех</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PRIVATEER</Tag>
@@ -2360,6 +2446,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Опытный старатель:Опытные старатели</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_RANCHER</Tag>
@@ -2384,6 +2471,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Опытный скотовод:Опытные скотоводы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_RANGER</Tag>
@@ -2412,6 +2500,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Каменная соль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_RED_PEPPER</Tag>
@@ -2436,6 +2525,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Красный перец</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_RED_PEPPER_PLANTER</Tag>
@@ -2464,6 +2554,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Опытный сборщик красного перца:Опытные сборщики красного перца</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROPE</Tag>
@@ -2488,6 +2579,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Канаты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROPES_MAKER</Tag>
@@ -2512,6 +2604,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мастер плетения канатов:Мастера плетения канатов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROYAL_CAVALRY</Tag>
@@ -2540,6 +2633,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Королевский кавалерист:Королевские кавалеристы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROYAL_DRAGOON</Tag>
@@ -2568,6 +2662,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Королевский драгун:Королевские драгуны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROYAL_LIGHT_INFANTRY</Tag>
@@ -2596,6 +2691,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Королевская легкая пехота</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROYAL_LINE_INFANTRY</Tag>
@@ -2624,6 +2720,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Королевская линейная пехота</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_RUM</Tag>
@@ -2648,6 +2745,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ром</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SAILCLOTH</Tag>
@@ -2676,6 +2774,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Парусина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SAILCLOTH_MAKER</Tag>
@@ -2700,6 +2799,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мастер раскройки парусины:Мастера раскройки парусины</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SALT</Tag>
@@ -2724,6 +2824,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Соль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SCOUT</Tag>
@@ -2737,6 +2838,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Russian>Подготовленный поселенец:Подготовленные поселенцы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SEALS_HUNTER</Tag>
@@ -2765,6 +2867,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Опытный охотник на тюленей:Опытные охотники на тюленей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SHEEP</Tag>
@@ -2777,6 +2880,7 @@
         </German>
         <Italian>Pecore</Italian>
         <Spanish>Ovejas</Spanish>
+        <Russian>Овцы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SHIP_OF_THE_LINE</Tag>
@@ -2801,6 +2905,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Линейный корабль:Линейные корабли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROYAL_SHIP_OF_THE_LINE</Tag>
@@ -2825,6 +2930,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Королевский линейный корабль:Королевские линейные корабли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROYAL_MAN_O_WAR</Tag>
@@ -2834,6 +2940,7 @@
             <Gender>Neuter</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Russian>Королевский Военный корабль:Королевские Военные корабли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COLONIAL_MAN_O_WAR</Tag>
@@ -2843,6 +2950,7 @@
             <Gender>Neuter</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Russian>Военный корабль:Военные корабли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SILVER</Tag>
@@ -2863,6 +2971,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Серебро</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SLOOP</Tag>
@@ -2891,6 +3000,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Шлюп:Шлюпы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SCHOONER</Tag>
@@ -2904,6 +3014,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Russian>Шхуна:Шхуны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SMALL_COASTAL_SHIP</Tag>
@@ -2927,6 +3038,7 @@
             <Text>Small Coastal Ship:Small Coastal Ships</Text>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Малый прибрежный корабль:Малые прибрежные корабли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SMUGGLING_SHIP</Tag>
@@ -2955,6 +3067,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Контрабандистский корабль:Контрабандистские корабли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SPICES</Tag>
@@ -2983,6 +3096,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Специи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SPICE_TRADER</Tag>
@@ -3011,6 +3125,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мастер приготовления специй:Мастера приготовления специй</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_STAGECOACH</Tag>
@@ -3027,6 +3142,7 @@
         </German>
         <Italian>Stagecoach:Stagecoaches</Italian>
         <Spanish>Stagecoach:Stagecoaches</Spanish>
+        <Russian>Дилижанс:Дилижансы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_STATESMAN</Tag>
@@ -3051,6 +3167,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Маститый политик:Маститые политики</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_STONE</Tag>
@@ -3079,6 +3196,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Камень:Камни</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_STONECUTTER</Tag>
@@ -3103,6 +3221,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Опытный каменотес:Опытные каменотесы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SUGAR</Tag>
@@ -3127,6 +3246,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Сахар</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SUGAR_PLANTER</Tag>
@@ -3151,6 +3271,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Опытный сахарный фермер:Опытные сахарные фермеры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_TANNER</Tag>
@@ -3175,6 +3296,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мастер дубильщик:Мастера дубильщики</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_TOBACCO</Tag>
@@ -3203,6 +3325,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Табак</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_TOBACCONIST</Tag>
@@ -3227,6 +3350,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мастер табачник:Мастера табачники</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_TOBACCO_PLANTER</Tag>
@@ -3251,6 +3375,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Опытный плантатор табака:Опытные плантаторы табака</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_TOOLS</Tag>
@@ -3279,6 +3404,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Инструменты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_TRADE_GOODS</Tag>
@@ -3307,6 +3433,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Мануфактура</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_TRAIN</Tag>
@@ -3319,6 +3446,7 @@
         </German>
         <Italian>Carriage:Carriages</Italian>
         <Spanish>Carriage:Carriages</Spanish>
+        <Russian>Обозы:Обозы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_TRAPPER</Tag>
@@ -3343,6 +3471,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Опытный зверолов:Опытные звероловы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_TREASURE</Tag>
@@ -3363,6 +3492,7 @@
         </German>
         <Italian>Trek:Treks</Italian>
         <Spanish>Trek:Treks</Spanish>
+        <Russian>Фургон:Фургоны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_VALUABLE_WOOD</Tag>
@@ -3375,6 +3505,7 @@
         </German>
         <Italian>Legno pregiato</Italian>
         <Spanish>Madera fina</Spanish>
+        <Russian>Ценная древесина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_VETERAN</Tag>
@@ -3399,6 +3530,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Ветеран пехоты:Ветераны пехоты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_VETERAN_CAVALRY</Tag>
@@ -3423,6 +3555,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Ветеран кавалерист:Ветераны кавалеристы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_VETERAN_DRAGOON</Tag>
@@ -3447,6 +3580,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Ветеран драгун:Ветераны драгуны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_WAGON_TRAIN</Tag>
@@ -3471,6 +3605,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Повозка:Повозки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_WEAVER</Tag>
@@ -3495,6 +3630,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мастер ткач:Мастера ткачи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_WEST_INDIAMAN</Tag>
@@ -3523,6 +3659,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Корабль Вест-Индской компании:Корабли Вест-Индской компании</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_WHALE_BLUBBER</Tag>
@@ -3547,6 +3684,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Китовый жир</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_WHALE_OIL</Tag>
@@ -3571,6 +3709,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ворвань</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_WHALE_OIL_COOKER</Tag>
@@ -3599,6 +3738,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мастер вытопки ворвани:Мастера вытопки ворвани</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_WHALING_BOAT</Tag>
@@ -3627,6 +3767,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Вино</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_WINE_MAKER</Tag>
@@ -3655,6 +3796,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мастер винодел:Мастера виноделы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_WOLF</Tag>
@@ -3679,6 +3821,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Волк</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_WOOL</Tag>
@@ -3703,6 +3846,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Шерсть</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_WOOL_CLOTH</Tag>
@@ -3727,6 +3871,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Шерстяная ткань</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FREED_SLAVE</Tag>
@@ -3755,6 +3900,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Освобожденный раб:Освобожденные рабы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_REVOLTING_SLAVE</Tag>
@@ -3866,6 +4012,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Опытный торговец с индейцами:Опытные торговцы с индейцами</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_HOSTILE_NATIVE</Tag>

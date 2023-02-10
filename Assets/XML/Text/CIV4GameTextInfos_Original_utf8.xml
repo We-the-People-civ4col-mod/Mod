@@ -10325,6 +10325,7 @@
         <Tag>TXT_KEY_PROMOTION_CAN_NOT_BE_EARNED_BY_XP</Tag>
         <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Cannot be earned by XP.[COLOR_REVERT]</English>
         <German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Kann nicht durch EP erworben werden.[COLOR_REVERT]</German>
+        <Russian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Не лечится с помощью EXP во время повышения.[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_UPGRADE_DISCOUNT_FREE_TEXT</Tag>

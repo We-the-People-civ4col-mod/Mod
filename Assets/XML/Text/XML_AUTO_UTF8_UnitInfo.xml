@@ -1830,7 +1830,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
-        <Russian>Европейская линейная пехота</Russian>
+        <Russian>Европейская линейная пехота:Европейские линейные пехоты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_EUROPEAN_LINE_INFANTRY_PEDIA</Tag>
