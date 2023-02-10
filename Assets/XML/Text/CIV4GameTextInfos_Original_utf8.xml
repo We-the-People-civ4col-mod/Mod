@@ -991,10 +991,10 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LAND_PLOTS</Tag>
         <English>Land tiles</English>
-        <French>Land Tiles[SPACE]</French>
+        <French>Cases de terrain[SPACE]</French>
         <German>Land-Geländefelder</German>
-        <Italian>Land Tiles</Italian>
-        <Spanish>Land Tiles</Spanish>
+        <Italian>Caselle di terra</Italian>
+        <Spanish>Casillas de tierra</Spanish>
         <Russian>Клетки земли</Russian>
     </TEXT>
     <TEXT>
@@ -1255,7 +1255,7 @@
 <!-- ZorG. colony screen. lack of materials for the construction of the building. START -->
     <TEXT>
         <Tag>TXT_KEY_PEDIA_REQUIRES</Tag>
-        <English>Requires</English>
+        <English>Requirements</English>
         <French>Requiert</French>
         <German>Erfordert</German>
         <Italian>Richiede</Italian>
@@ -1265,9 +1265,9 @@
 <!-- ZorG. colony screen. lack of materials for the construction of the building. END -->
     <TEXT>
         <Tag>TXT_KEY_PEDIA_SPECIAL_ABILITIES</Tag>
-        <English>Special Characteristics</English>
+        <English>Characteristics</English>
         <French>Characteristics spéciales</French>
-        <German>Spezielle Eigenschaften</German>
+        <German>Besonderheiten</German>
         <Italian>Abilità speciali</Italian>
         <Spanish>Capacidades especiales</Spanish>
         <Russian>Особенности</Russian>
@@ -2040,6 +2040,7 @@
         <German>Geschwindigkeit :</German>
         <Italian>Velocità :</Italian>
         <Spanish>Velocidad :</Spanish>
+        <Russian>Скорость :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_TITLE</Tag>
@@ -2665,7 +2666,7 @@
         <Spanish>Bonificación de defensa : %D1_Mod%%</Spanish>
         <Russian>Бонус к защите : %D1_Mod%%</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PLOT_BONUS_CITY</Tag>
         <English>Defense bonus : %D1_Mod%%%F2_Icon</English>
         <French>Bonus de défense : %D1_Mod%%%F2_Icon</French>
@@ -2674,25 +2675,25 @@
         <Spanish>Bonificación de defensa : %D1_Mod%%%F2_Icon</Spanish>
         <Russian>Бонус к защите : %D1_Mod%%%F2_Icon</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_CITY_BUILDING_DEFENSE_MODIFIER</Tag>
         <English>From Buildings : %D1_Mod%%%F2_Icon</English>
         <German>Durch Gebäude : %D1_Mod%%%F2_Icon</German>
         <Russian>От строений : %D1_Mod%%%F2_Icon</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_CITY_FORT_DEFENSE_MODIFIER</Tag>
         <English>From forts close by : %D1_Mod%%%F2_Icon</English>
         <German>Von Forts im Umland : %D1_Mod%%%F2_Icon</German>
         <Russian>От фортов поблизости : %D1_Mod%%%F2_Icon</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_CITY_HILL_DEFENSE_MODIFIER</Tag>
         <English>From hill location : %D1_Mod%%%F2_Icon</English>
         <German>Durch Standort auf Hügeln : +%D1_Mod%%%F2_Icon</German>
         <Russian>От расположения на холме : %D1_Mod%%%F2_Icon</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_CITY_PLAYER_TRAITS_DEFENSE_MODIFIER</Tag>
         <English>From player bonuses : %D1_Mod%%%F2_Icon</English>
         <German>Durch Spielereigenschaften : %D1_Mod%%%F2_Icon</German>
@@ -5129,7 +5130,7 @@
         <Tag>TXT_KEY_MENU_SEALEVEL</Tag>
         <English>Sea Level :</English>
         <French>Niveau de la mer :</French>
-        <German>Meeresspiegel :</German>
+        <German>Ozeananteil :</German>
         <Italian>Livello del mare :</Italian>
         <Spanish>Nivel del mar :</Spanish>
         <Russian>Уровень моря :</Russian>
@@ -5145,11 +5146,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MENU_SPEED</Tag>
-        <English>Speed :</English>
-        <French>Vitesse :</French>
-        <German>Geschwindigkeit :</German>
-        <Italian>Velocità :</Italian>
-        <Spanish>Velocidad :</Spanish>
+        <English>Game Speed :</English>
+        <French>Vitesse du jeu:</French>
+        <German>Spielgeschwindigkeit :</German>
+        <Italian>Velocità di gioco:</Italian>
+        <Spanish>Velocidad de juego:</Spanish>
         <Russian>Скорость :</Russian>
     </TEXT>
     <TEXT>
@@ -7625,11 +7626,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILOPEDIA_HISTORY</Tag>
-        <English>Trivia</English>
-        <French>Anecdotes</French>
-        <German>Wissenswertes</German>
-        <Italian>Trivia</Italian>
-        <Spanish>Trivia</Spanish>
+        <English>Background</English>
+        <French>Histoire</French>
+        <German>Hintergrund</German>
+        <Italian>Informazioni</Italian>
+        <Spanish>Historia</Spanish>
         <Russian>Описание</Russian>
     </TEXT>
     <TEXT>
