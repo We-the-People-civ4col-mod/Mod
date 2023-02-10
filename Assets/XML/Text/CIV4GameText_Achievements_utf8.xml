@@ -63,7 +63,7 @@
         <Tag>TXT_KEY_ACHIEVE_PACIFIC_TEXT</Tag>
         <English>Not long ago your explorer peered into the distance in disbelief. Beyond the beach, an endless expanse of water stretched to the horizon. A sea as wide as the sky.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]He was right,[COLOR_REVERT]" he murmurs, "[COLOR_SELECTED_TEXT]the governor was right.[COLOR_REVERT]" There is a sea route leading west from the New World, out into the endless expanse of a new ocean.[NEWLINE][NEWLINE]An ocean whose calm swells seem so peaceful, as if the thought of storms was just an old sailor's yarn. "[COLOR_SELECTED_TEXT]It shall be called the 'Pacific Ocean'. The 'Pacificus'![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Lorsque votre navire s'éloigne de la côte, vous réalisez que vous avez découvert l'Océan Pacifique. La route des Indes est enfin ouverte... Mais n'est-elle pas plus longue que Colomb l'imaginait ?[NEWLINE][NEWLINE]</French>
-        <German>Ungläubig starrt Euer Entdecker in die Ferne. Jenseits der Küstenlinie dehnt sich eine schier endlose Wasserfläche bis zum Horizont. Ein Meer, so weit wie der Himmel. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Er hatte recht,[COLOR_REVERT]" murmelt er, "[COLOR_SELECTED_TEXT]der Gouverneur hatte recht.[COLOR_REVERT]" Es gibt einen Seeweg, der von der Neuen Welt aus Richtung Westen führt, hinaus in die endlose Weite eines neuen Ozeans. [NEWLINE][NEWLINE]Ein Ozean, dessen ruhiger Wellengang so friedlich wirkt, als wäre der Gedanke an Unwetter nur Seemannsgarn. "[COLOR_SELECTED_TEXT]Der 'Stille Ozean' soll er heißen. Der 'Pacificus'![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+        <German>Ungläubig starrt Euer Entdecker in die Ferne. Jenseits der Küstenlinie dehnt sich eine schier endlose Wasserfläche bis zum Horizont. Ein Meer, so weit wie der Himmel.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Er hatte recht,[COLOR_REVERT]" murmelt er, "[COLOR_SELECTED_TEXT]der Gouverneur hatte recht.[COLOR_REVERT]" Es gibt einen Seeweg, der von der Neuen Welt aus Richtung Westen führt, hinaus in die endlose Weite eines neuen Ozeans.[NEWLINE][NEWLINE]Ein Ozean, dessen ruhiger Wellengang so friedlich wirkt, als wäre der Gedanke an Unwetter nur Seemannsgarn. "[COLOR_SELECTED_TEXT]Der 'Stille Ozean' soll er heißen. Der 'Pacificus'![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ATLANTIC</Tag>
@@ -1409,7 +1409,7 @@
         <Tag>TXT_KEY_ACHIEVE_ONE_WEAVERS_HOUSE</Tag>
         <English>Your first weaver's house</English>
         <French>Première maison de tisserand</French>
-        <German>Eure erste Weberei</German>
+        <German>Euer erstes Weberhaus</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ONE_WEAVERS_HOUSE_HEAD</Tag>
@@ -1427,7 +1427,7 @@
         <Tag>TXT_KEY_ACHIEVE_THREE_WEAVERS_HOUSE</Tag>
         <English>Three weavers' houses</English>
         <French>Trois maisons de tisserand</French>
-        <German>Mehr Webereien</German>
+        <German>Mehr Weberhäuser</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_WEAVERS_HOUSE_HEAD</Tag>
@@ -1625,7 +1625,7 @@
         <Tag>TXT_KEY_ACHIEVE_FIVE_LANDING_STAGE</Tag>
         <English>Many landing stages (5)</English>
         <French>De nombreux embarcadères</French>
-        <German>Viele Bootsstege (5)</German>
+        <German>Viele Landungsstege (5)</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_LANDING_STAGE_HEAD</Tag>
@@ -2515,8 +2515,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_PIRATE_CUTTER_TEXT</Tag>
-        <English>Captain, you now have your first fast pirate cutter, which you can use to disrupt enemy coastal shipping and fill your treasury. [NEWLINE][NEWLINE]In Port Royal you can make a name for yourself, enjoy harlots and heavy rum. But do you really want that? Where is your fear of God, sire? An honorable service for the king or Jolly Roger and eternal damnation? [NEWLINE][NEWLINE]You can still take the right path... but after all, the colony has to be financed somehow... maybe you should...[NEWLINE][NEWLINE]</English>
-        <French>Captain, you now have your first fast pirate cutter, which you can use to disrupt enemy coastal shipping and fill your treasury. [NEWLINE][NEWLINE]In Port Royal you can make a name for yourself, enjoy harlots and heavy rum. But do you really want that? Where is your fear of God, sire? An honorable service for the king or Jolly Roger and eternal damnation? [NEWLINE][NEWLINE]You can still take the right path... but after all, the colony has to be financed somehow... maybe you should...[NEWLINE][NEWLINE]</French>
-        <German>Wohlan Captain, Ihr habt nun Euren ersten schnelle Piratensegler, mit dem Ihr die Küstenschifffahrt des Feindes stören und Eure Schatzkammer füllen könnt. [NEWLINE][NEWLINE]In Port Royal könnt Ihr Euch einen Namen machen, leichte Mädchen und schweren Rum genießen. Aber wollt Ihr das wirklich? Wo bleibt Eure Gottesfurcht, Sire? Ein ehrenvoller Dienst fürs Vaterland oder Jolly Roger und ewige Verdammnis? [NEWLINE][NEWLINE]Noch könnt Ihr den richtigen Weg einschlagen...aber schließlich muss die Kolonie ja auch irgendwie finanziert werden...vielleicht sollte man doch...[NEWLINE][NEWLINE]</German>
+        <English>"[COLOR_SELECTED_TEXT]Captain, you now have your first fast pirate cutter, which you can use to disrupt enemy coastal shipping and fill your treasury.[NEWLINE][NEWLINE]In Port Royal you can make a name for yourself, enjoy harlots and heavy rum. But do you really want that? Where is your fear of God, Milord? An honorable service for the king or Jolly Roger and eternal damnation?[COLOR_REVERT]"[NEWLINE][NEWLINE]You can still take the right path... but after all, the colony has to be financed somehow... maybe you should...[NEWLINE][NEWLINE]</English>
+        <French>"[COLOR_SELECTED_TEXT]Captain, you now have your first fast pirate cutter, which you can use to disrupt enemy coastal shipping and fill your treasury.[NEWLINE][NEWLINE]In Port Royal you can make a name for yourself, enjoy harlots and heavy rum. But do you really want that? Where is your fear of God, seigneur? An honorable service for the king or Jolly Roger and eternal damnation?[COLOR_REVERT]"[NEWLINE][NEWLINE]You can still take the right path... but after all, the colony has to be financed somehow... maybe you should...[NEWLINE][NEWLINE]</French>
+        <German>"[COLOR_SELECTED_TEXT]Wohlan Käpt'n, Ihr habt nun Euer erstes schnelles Piratenschiff, mit dem Ihr die Küstenschifffahrt des Feindes stören und Eure Schatzkammer füllen könnt.[NEWLINE][NEWLINE]In Port Royal könnt Ihr Euch einen Namen machen, leichte Mädchen und schweren Rum genießen. Aber wollt Ihr das wirklich? Wo bleibt Eure Gottesfurcht, Milord? Ein ehrenvoller Dienst fürs Vaterland oder Jolly Roger und ewige Verdammnis?[COLOR_REVERT]"[NEWLINE][NEWLINE]Noch könnt Ihr den richtigen Weg einschlagen...aber schließlich muss die Kolonie ja auch irgendwie finanziert werden...vielleicht sollte man doch...[NEWLINE][NEWLINE]</German>
     </TEXT>
 </Civ4GameText>
