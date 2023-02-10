@@ -963,7 +963,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOWN_COURT_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>With three jobs the town courthouse produces four law and two culture. Before it can be built the settlement needs a town hall and a village courthouse.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -973,7 +973,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CITY_COURT_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>With four jobs the city courthouse produces five law and three culture.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -983,7 +983,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SUPREME_COURT_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>With six jobs the Supreme Court produces six law and five culture. The colony must have three city courthouses before the Supreme Court can be built.</English>
         <German>TBD</German>
     </TEXT>
     <!-- JAIL -->
