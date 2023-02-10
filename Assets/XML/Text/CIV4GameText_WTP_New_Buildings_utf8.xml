@@ -958,7 +958,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOWN_COURT_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The town courthouse expands its purview to contracts and business law. It still hears criminal cases but they're a distraction from the decisions that really matter. There's a long list of hanging offences.
+</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -968,7 +969,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CITY_COURT_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The city courthouse still has to control violence and money, but dangerous ideas are increasingly subject to regulation. The jails have political prisoners alongside drunks and con artists. Sometimes all three are the same person.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -978,7 +979,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SUPREME_COURT_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The Supreme Court exists as a counterbalance to government. Rules are made consistent. Many laws have a strong religious component. Precedent remains important, so the Supreme Court is a force for social continuity.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
