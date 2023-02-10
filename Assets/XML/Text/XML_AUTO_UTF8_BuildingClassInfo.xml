@@ -108,7 +108,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_BREWERS_HOUSE</Tag>
         <English>Brewer's House</English>
         <French>Maison du brasseur</French>
-        <German>Brauhaus</German>
+        <German>Haus des Brauers</German>
         <Italian>Brewers House</Italian>
         <Spanish>Brewers House</Spanish>
     </TEXT>
@@ -124,7 +124,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_BUTCHERS_HOUSE</Tag>
         <English>Butcher's House</English>
         <French>Maison du Boucher</French>
-        <German>Metzgerhaus</German>
+        <German>Haus des Schlachters</German>
         <Italian>Butchers House</Italian>
         <Spanish>Butchers House</Spanish>
     </TEXT>
@@ -132,7 +132,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_BUTCHERY</Tag>
         <English>Butchery</English>
         <French>Boucherie</French>
-        <German>Metzgerei</German>
+        <German>Schlachterei</German>
         <Italian>Butchery</Italian>
         <Spanish>Butchery</Spanish>
     </TEXT>
@@ -420,7 +420,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Brennerei</German>
+        <German>Haus des Brenners</German>
         <Italian>
             <Text>Casa del distillatore</Text>
             <Gender>Female</Gender>
@@ -498,7 +498,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_DYERS_HOUSE</Tag>
         <English>Dyer's House</English>
         <French>Maison du teinturier</French>
-        <German>Färberhaus</German>
+        <German>Haus des Färbers</German>
         <Italian>Dyers House</Italian>
         <Spanish>Dyers House</Spanish>
     </TEXT>
@@ -801,7 +801,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Bootssteg</German>
+        <German>Landungssteg</German>
         <Italian>Landing Stage</Italian>
         <Spanish>Landing Stage</Spanish>
     </TEXT>
@@ -1045,7 +1045,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Rum- und Schnappsfabrik</German>
+        <German>Rum- und Schnapsfabrik</German>
         <Italian>
             <Text>Fabbrica di rum</Text>
             <Gender>Female</Gender>
@@ -1142,7 +1142,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_SPICE_TRADERS_HOUSE</Tag>
         <English>Spice Trader's House</English>
         <French>Maison de l'épicier</French>
-        <German>Gewürzhändlerhaus</German>
+        <German>Haus des Gewürzhändlers</German>
         <Italian>Spice Trader's House</Italian>
         <Spanish>Spice Trader's House</Spanish>
     </TEXT>
@@ -1222,7 +1222,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_TANNERS_HOUSE</Tag>
         <English>Tanner's House</English>
         <French>Maison du Tanneur</French>
-        <German>Gerberhaus</German>
+        <German>Haus des Gerbers</German>
         <Italian>Tanners House</Italian>
         <Spanish>Tanners House</Spanish>
     </TEXT>
@@ -1446,7 +1446,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_VINTAGERS_HOUSE</Tag>
         <English>Vintager's House</English>
         <French>Maison du vigneron</French>
-        <German>Winzerhaus</German>
+        <German>Haus des Winzers</German>
         <Italian>Vintager's House</Italian>
         <Spanish>Vintager's House</Spanish>
     </TEXT>
@@ -1546,7 +1546,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Weberei</German>
+        <German>Haus des Webers</German>
         <Italian>
             <Text>Casa del tessitore</Text>
             <Gender>Female</Gender>
@@ -1598,7 +1598,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Trankocherei</German>
+        <German>Haus des Trankochers</German>
         <Italian>Train Oil Manufactory</Italian>
         <Spanish>Train Oil Manufactory</Spanish>
     </TEXT>
