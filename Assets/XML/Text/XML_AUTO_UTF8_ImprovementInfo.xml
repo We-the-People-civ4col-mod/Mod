@@ -40,7 +40,7 @@
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Fruchtplantage</Text>
+            <Text>Obstplantage</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
@@ -60,7 +60,7 @@
         <Tag>TXT_KEY_IMPROVEMENT_FRUIT_PLANTATION_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fruit plantations[COLOR_REVERT] can be built only in [LINK=FEATURE_JUNGLE]jungles[\LINK] or on Bonus Resources for Fruits. They increase the production of [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK], [LINK=YIELD_FRUITS]fruits[\LINK] and [LINK=YIELD_FOOD]food[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Fruit plantations are usually a mixture of many different kinds of trees and not a monoculture. This ensures a healthy environment for the precious fruits.</English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]plantations de fruits[COLOR_REVERT] sont généralement un mélange de plusieurs types d'arbres et non pas une monoculture. C'est ce qui assure un environnement sain pour les fruits précieux.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fruchtplantagen[COLOR_REVERT] können nur im [LINK=FEATURE_JUNGLE]Dschungel[\LINK] oder auf Bonusresourcen für Früchte angelegt werden. Sie steigern die Produktion von [LINK=YIELD_COCOA_FRUITS]Kakaofrüchten[\LINK], [LINK=YIELD_FRUITS]Früchten[\LINK] und [LINK=YIELD_FOOD]Nahrung[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Im Gegensatz zu den Monokulturen anderen Plantagen sind Fruchtplantagen normalerweise eine Mischung verschiedenster Bäume und Sträucher. Dies ermöglicht ein gesundes Umfeld für die wertvollen Früchte.</German>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Obstplantagen[COLOR_REVERT] können nur im [LINK=FEATURE_JUNGLE]Dschungel[\LINK] oder auf Bonusresourcen für Früchte angelegt werden. Sie steigern die Produktion von [LINK=YIELD_COCOA_FRUITS]Kakaofrüchten[\LINK], [LINK=YIELD_FRUITS]Früchten[\LINK] und [LINK=YIELD_FOOD]Nahrung[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Im Gegensatz zu den Monokulturen anderen Plantagen sind Obstplantagen normalerweise eine Mischung verschiedenster Bäume und Sträucher. Dies ermöglicht ein gesundes Umfeld für die wertvollen Früchte.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_FRUIT_PLANTATION</Tag>
@@ -71,7 +71,7 @@
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Große Fruchtplantage</Text>
+            <Text>Große Obstplantage</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
@@ -91,7 +91,7 @@
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_FRUIT_PLANTATION_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Large fruit plantations[COLOR_REVERT] are upgrades of [LINK=IMPROVEMENT_FRUIT_PLANTATION]fruit plantations[\LINK]. They increase the production of [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK], [LINK=YIELD_FRUITS]fruits[\LINK] and [LINK=YIELD_FOOD]food[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Fruit plantations are usually a mixture of many different kinds of trees and not a monoculture. This ensures a healthy environment for the precious fruits.</English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]plantations de fruits[COLOR_REVERT] sont généralement un mélange de plusieurs types d'arbres et non pas une monoculture. C'est ce qui assure un environnement sain pour les fruits précieux.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Große Fruchtplantagen[COLOR_REVERT] sind eine Erweiterung von [LINK=IMPROVEMENT_FRUIT_PLANTATION]Fruchtplantagen[\LINK]. Sie verbessern die Produktion von [LINK=YIELD_COCOA_FRUITS]Kakaofrüchten[\LINK], [LINK=YIELD_FRUITS]Früchten[\LINK] und [LINK=YIELD_FOOD]Nahrung[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Im Gegensatz zu den Monokulturen anderen Plantagen sind Fruchtplantagen normalerweise eine Mischung verschiedenster Bäume und Sträucher. Dies ermöglicht ein gesundes Umfeld für die wertvollen Früchte.</German>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Große Obstplantagen[COLOR_REVERT] sind eine Erweiterung von [LINK=IMPROVEMENT_FRUIT_PLANTATION]Obstplantagen[\LINK]. Sie verbessern die Produktion von [LINK=YIELD_COCOA_FRUITS]Kakaofrüchten[\LINK], [LINK=YIELD_FRUITS]Früchten[\LINK] und [LINK=YIELD_FOOD]Nahrung[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Im Gegensatz zu den Monokulturen anderen Plantagen sind Obstplantagen normalerweise eine Mischung verschiedenster Bäume und Sträucher. Dies ermöglicht ein gesundes Umfeld für die wertvollen Früchte.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_COLLECTORS_POST</Tag>
@@ -322,7 +322,7 @@
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_SUPPLY_DEPOT_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Supply Depots[COLOR_REVERT] on the map give additional storage capacity to their city if they are worked by a citizen of the city.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Supply depots were first used by used by the military to store battlefield supplies so they could be distributed to units in the field. They would hold all types of materiel, except ammunition. In times of peace they offered added storage for the civilian community.</English>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Versorgungslager[COLOR_REVERT] auf der Karte geben ihrer Stadt zusätzliche Lagerkapazität, wenn sie von einem Bürger in der Stadt bearbeitet werden.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]tbd</German>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Versorgungslager[COLOR_REVERT] auf der Karte geben ihrer Stadt zusätzliche Lagerkapazität, wenn sie von einem Bürger in der Stadt bearbeitet werden.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_SUPPLY_DEPOT</Tag>
@@ -337,7 +337,7 @@
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_SUPPLY_DEPOT_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Supply Depots[COLOR_REVERT] on the map give additional storage capacity to their City if they are worked by a citizen of the city.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Supply depots were first used by used by the military to store battlefield supplies so they could be distributed to units in the field. They would hold all types of materiel, except ammunition. In times of peace they offered added storage for the civilian community.</English>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Versorgungslager[COLOR_REVERT] auf der Karte geben ihrer Stadt zusätzliche Lagerkapazität, wenn sie von einem Bürger in der Stadt bearbeitet werden.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]tbd</German>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Versorgungslager[COLOR_REVERT] auf der Karte geben ihrer Stadt zusätzliche Lagerkapazität, wenn sie von einem Bürger in der Stadt bearbeitet werden.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_CANAL</Tag>
@@ -864,7 +864,7 @@
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Le pâturage est une forme d'alimentation des animaux herbivores qui se nourrissent de plantes (telles que les graminées). Le pâturage diffère de la prédation parce que l'organisme mangé n'est généralement pas tué, et du parasitisme parce que les deux organismes n'ont pas de relation symbiotique et que le « brouteur » n'est généralement pas limité dans le choix des espèces qu'il peut consommer (voir espèces généraliste et spécialisée).</French>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1]Als 'Weideland' bezeichnet man Flächen mit Vegetation, die der Viehzucht dienen. Oft gehören diese Flächen zu einer Farm oder einer Ranch. In vielen Fällen dient dazu Land, das ansonsten für den Anbau von Nutzpflanzen nicht geeignet ist.</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_PEN</Tag>
         <English>Breeding Pen</English>
         <German>
@@ -874,12 +874,12 @@
         </German>
         <Russian>Загон для скота</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_PEN_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Breeding Pen[COLOR_REVERT] TBD</English>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Zuchtstall[COLOR_REVERT] TBD</German>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Breeding Pen[COLOR_REVERT]TODO</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Zuchtstall[COLOR_REVERT]TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_PEN</Tag>
         <English>Large Breeding Pen</English>
         <German>
@@ -889,10 +889,10 @@
         </German>
         <Russian>Большой загон для скота</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_PEN_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Large Breeding Pen[COLOR_REVERT] TBD</English>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Großer Zuchtbetrieb[COLOR_REVERT] TBD</German>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Large Breeding Pen[COLOR_REVERT]TODO</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Großer Zuchtbetrieb[COLOR_REVERT]TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_PASTURE</Tag>
