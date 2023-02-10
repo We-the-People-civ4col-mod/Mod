@@ -692,6 +692,7 @@
         <English>[ICON_BULLET]Relations to [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] king are improved by [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT]</English>
         <French>[ICON_BULLET]Vos relations avec le roi [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] se sont ameliorées de [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT]</French>
         <German>[ICON_BULLET]Beziehungen zum [COLOR_HIGHLIGHT_TEXT]%s2:2_civ_adjective[COLOR_REVERT] König verbessern sich um [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT]</German>
+        <Russian>[ICON_BULLET]Отношения с [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] Королем улучшились на [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_YIELD_LOOSE</Tag>
@@ -1822,6 +1823,7 @@
         <English>The Royal Court has been taken with the picturesque garb and customs of certain of our converted Native subjects, and has sent for them to be transported to Europe.</English>
         <French>La Cour Royale a été saisie de joie en voyant les tenues pittoresques des sauvages. Le Roi souhaite que vous rapportiez un converti à la Cour.</French>
         <German>Der königliche Hof ist fasziniert von der Kunst und Geschichten der Ureinwohner. Man wünscht, dass wir einen Konvertierten Ureinwohner nach Europa schicken.</German>
+        <Russian>Королевский двор принял живописные одежды и обычаи некоторых из наших крещеных туземных подданных и послал за ними для перевозки в Европу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_REQUISITION_LUMBER</Tag>
@@ -1882,6 +1884,7 @@
         <English>Relations with your King have improved.</English>
         <French>Votre Roi est satisfait de votre réponse!</French>
         <German>Seine Majestät ist über diese Antwort sehr erfreut.</German>
+        <Russian>Отношения с вашим Королем улучшились.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_KING_ANGRY_HELP</Tag>
@@ -3642,6 +3645,7 @@
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_YIELD_AND_TARGET_AMOUNT_HELP</Tag>
         <English>Trade this quantity of goods with Europe [COLOR_FONT_GOLD]before any other nation [COLOR_REVERT]can :[NEWLINE]%D1_amount %F2_yield</English>
         <German>Liefere die folgende Warenmenge nach Europa [COLOR_FONT_GOLD]bevor es eine andere Nation [COLOR_REVERT]tut :[NEWLINE]%D1_amount %F2_yield</German>
+        <Russian>Купите или продайте товар в указанном количестве в Европе [COLOR_FONT_GOLD]прежде, чем другая нация сможет это [COLOR_REVERT]сделать первой :[NEWLINE]%D1_amount %F2_yield</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY</Tag>
@@ -3712,6 +3716,7 @@
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_YIELD_AND_TARGET_AMOUNT_HELP</Tag>
         <English>Trade this quantity of goods with Port Royal [COLOR_FONT_GOLD]before any other nation [COLOR_REVERT]can :[NEWLINE]%D1_amount %F2_yield</English>
         <German>Liefere die folgende Warenmenge nach Port Royal [COLOR_FONT_GOLD]bevor es eine andere Nation [COLOR_REVERT]tut :[NEWLINE]%D1_amount %F2_yield</German>
+        <Russian>Купите или продайте товар в указанном количестве в Порт Ройале [COLOR_FONT_GOLD]прежде, чем другая нация сможет это [COLOR_REVERT]сделать первой :[NEWLINE]%D1_amount %F2_yield</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY</Tag>
@@ -4352,6 +4357,7 @@
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_TRADE_GOODS_START</Tag>
         <English>The race is on to be the market leader handling [COLOR_FONT_GOLD]trade goods[COLOR_REVERT] in the colonies.</English>
         <German>Das Rennen zur Beherrschung des Markt in den Kolonien für [COLOR_FONT_GOLD]Handelsgüter[COLOR_REVERT] aus Europa hat begonnen.</German>
+        <Russian>Начинается гонка за лидерство на рынке [COLOR_FONT_GOLD]товаров[COLOR_REVERT] в колониях.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_TRADE_GOODS_START</Tag>
@@ -6767,6 +6773,7 @@
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_YIELD_AND_TARGET_AMOUNT_HELP</Tag>
         <English>Trade this quantity of goods with Africa [COLOR_FONT_GOLD]before any other nation [COLOR_REVERT]can :[NEWLINE]%D1_amount %F2_yield</English>
         <German>Liefere die folgende Warenmenge nach Afrika [COLOR_FONT_GOLD]bevor es eine andere Nation [COLOR_REVERT]tut :[NEWLINE]%D1_amount %F2_yield</German>
+        <Russian>Купите или продайте товар в указанном количестве в Африке [COLOR_FONT_GOLD]прежде, чем другая нация сможет это [COLOR_REVERT]сделать первой :[NEWLINE]%D1_amount %F2_yield</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY</Tag>

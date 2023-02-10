@@ -3433,6 +3433,7 @@
         <German>Wohlan, lasst uns über etwas anderes reden...</German>
         <Italian>Parliamo d'altro...</Italian>
         <Spanish>Hablemos de otra cosa...</Spanish>
+        <Russian>Давайте обсудим еще что-нибудь...</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ATTITUDE_1</Tag>
@@ -3441,6 +3442,7 @@
         <German>Was haltet Ihr von ...</German>
         <Italian>Che ne pensi di...</Italian>
         <Spanish>¿Qué pensáis de...</Spanish>
+        <Russian>Что вы думаете о...</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ATTITUDE_PLAYER_1</Tag>
@@ -3457,6 +3459,7 @@
         <German>Warum startet Ihr keinen Angriff gegen ...</German>
         <Italian>Perché non attacchi...</Italian>
         <Spanish>¿Por qué no atacáis...</Spanish>
+        <Russian>Почему бы вам не напасть на...</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_TARGET_CITY_1</Tag>
@@ -5995,6 +5998,7 @@
         <German>Wir akzeptieren Euren Preis. (Siedlung gründen, Land kaufen)</German>
         <Italian>Accettiamo il vostro prezzo. (Costruisci insediamento, acquista terra)</Italian>
         <Spanish>Aceptamos el precio que pedís. (Fundar asentamiento, comprar tierra)</Spanish>
+        <Russian>Нас устраивает эта цена. (Основать поселение, выкупив землю)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_FOUND_CITY_TAKE_2</Tag>
@@ -6003,6 +6007,7 @@
         <German>Dieses Land gehört von Rechts wegen uns. (Siedlung gründen, Eingeborene verärgern)</German>
         <Italian>Questa terra ci appartiene di diritto. (Costruisci insediamento, fai arrabbiare i nativi)</Italian>
         <Spanish>Esta tierra nos pertenece por derecho. (Fundar asentamiento, enojar a los Nativos)</Spanish>
+        <Russian>Эта земля принадлежит нам по праву. (Основать поселение, разозлив индейцев)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACQUIRE_CITY_BUY_2</Tag>
@@ -6011,6 +6016,7 @@
         <German>Das klingt gerecht! (Land kaufen)</German>
         <Italian>Mi sembra giusto. (Comprare la terra)</Italian>
         <Spanish>Me parece justo. (Comprar tierra)</Spanish>
+        <Russian>Звучит справедливо. (Купить землю)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACQUIRE_CITY_TAKE_2</Tag>
@@ -6019,6 +6025,7 @@
         <German>Solche Geschichten kann ja jeder erzählen. (Land beschlagnahmen, Eingeborene verärgern)</German>
         <Italian>Chiunque può raccontare storie del genere. (Confiscare la terra, far arrabbiare i nativi)</Italian>
         <Spanish>Cualquiera puede contar historias así. (Confiscar tierras, enfurecer a los nativos)</Spanish>
+        <Russian>Такие истории может сочинить каждый. (Конфисковать землю, разозлив индейцев)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACQUIRE_MERC</Tag>
@@ -6027,6 +6034,7 @@
         <German>Hervorragend, wir können Eure Kämpfer gut gebrauchen! (Söldner anwerben)</German>
         <Italian>Eccellente, possiamo fare buon uso dei vostri guerrieri! (Assumere mercenari)</Italian>
         <Spanish>¡Excelente, podemos hacer buen uso de sus guerreros! (Contratar mercenarios)</Spanish>
+        <Russian>Отлично, мы найдем применение вашим воинам! (Нанять индейцев)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACQUIRE_MERC_CHEAP</Tag>
@@ -6035,6 +6043,7 @@
         <German>Das ist viel Gold für solche unerfahrenen Burschen. Wir geben euch die Hälfte. (Söldner zum halben Preis anwerben, 50% Wahrscheinlichkeit für Beziehungsmalus von -1)</German>
         <Italian>È un sacco di oro per gente così inesperta. Vi daremo la metà. (Reclutamento di mercenari a metà prezzo, 50% di possibilità di penalità di relazione di -1)</Italian>
         <Spanish>Es mucho oro para unos tipos tan inexpertos. Te daremos la mitad. (Reclutar mercenarios a mitad de precio, 50% de posibilidades de penalización por relación de -1)</Spanish>
+        <Russian>Это слишком много для таких неопытных воинов. Мы дадим вам половину того, что вы просите. (Нанять индейцев за полцены, 50% вероятность штрафа к отношениям в -1)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACQUIRE_MERC_CANNOT</Tag>
@@ -6043,6 +6052,7 @@
         <German>Ein freundliches Angebot! Derzeit aber nicht. (Söldner nicht anwerben)</German>
         <Italian>Un'offerta amichevole! Ma non al momento. (Non reclutare mercenari)</Italian>
         <Spanish>¡Una oferta amistosa! Pero no en este momento. (No reclutar mercenarios)</Spanish>
+        <Russian>Чудесное предложение! Но не сейчас. (Отказаться от наемников)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACQUIRE_NATIVE_SLAVE</Tag>
@@ -6355,6 +6365,7 @@
         <German>Lasst mich das überdenken. (Keine Siedlung gründen)</German>
         <Italian>Fammici pensare. (Non costruire l'insediamento)</Italian>
         <Spanish>Dejad que lo piense. (No fundar asentamiento)</Spanish>
+        <Russian>Дайте нам время подумать об этом. (Не основывать поселение)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_PACAL_1</Tag>

@@ -403,6 +403,7 @@
         <German>Auswanderer (%d1/%d2%F3)</German>
         <Italian>Immigranti (%d1/%d2%F3)</Italian>
         <Spanish>Inmigrante (%d1/%d2%F3)</Spanish>
+        <Russian>Эмиграция (%d1/%d2%F3)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_UNIT_BUY_PRICE</Tag>
@@ -1059,6 +1060,7 @@
         <German>Gründervater-Typ</German>
         <Italian>Tipo di Padre Fondatore</Italian>
         <Spanish>Tipo de Padre fundador</Spanish>
+        <Russian>Относится к группе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FOUNDING_FATHER_OFFERS_POPUP</Tag>
@@ -1083,12 +1085,14 @@
         <German>[COLOR_FONT_CREAM]%s1_person[COLOR_REVERT] kann sich unserer Sache nun nicht mehr anschließen.</German>
         <Italian>[COLOR_FONT_CREAM]%s1_person[COLOR_REVERT] non è più disponibile per unirsi alla nostra causa.</Italian>
         <Spanish>[COLOR_FONT_CREAM]%s1_person[COLOR_REVERT] ya no [NUM1:está disponible:está disponible:están disponibles:están disponibles] para unirse a nuestra causa.</Spanish>
+        <Russian>[COLOR_FONT_CREAM]%s1_person[COLOR_REVERT] больше не может присоединиться к нашему делу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_REJECTED</Tag>
         <English>Rejected Founding Father</English>
         <French>Père fondateur refusé</French>
         <German>Abgelehnter Gründervater</German>
+        <Russian>Отвергнутый Отец Основатель</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_FREE_UNITS</Tag>
@@ -1097,6 +1101,7 @@
         <German>[ICON_BULLET]Bringt %d1 [LINK=literal]%s2:2[\LINK] mit</German>
         <Italian>[ICON_BULLET]Fornisce %d1 [LINK=literal]%s2:2[\LINK]</Italian>
         <Spanish>[ICON_BULLET]Proporciona %d1 [LINK=literal]%s2:2[\LINK]</Spanish>
+        <Russian>[ICON_BULLET]Предоставляет %d1 [LINK=literal]%s2:2[\LINK]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_NATIVE_ATTITUDE_GOOD</Tag>
@@ -1151,6 +1156,7 @@
         <German>[ICON_BULLET]Deckt alle [LINK=literal]%s1_improvement[\LINK] auf</German>
         <Italian>[ICON_BULLET]Mostra tutte le caselle con il miglioramento [LINK=literal]%s1_improvement[\LINK]</Italian>
         <Spanish>[ICON_BULLET]Muestra todas las casillas que tengan [NUM1:un:una:unos:unas] [LINK=literal]%s1_improvement[\LINK].</Spanish>
+        <Russian>[ICON_BULLET]Показывает все клетки с [LINK=literal]%s1_improvement[\LINK]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_CITY_DEFENSE</Tag>

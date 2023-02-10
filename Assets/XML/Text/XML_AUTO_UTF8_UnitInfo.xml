@@ -3591,7 +3591,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
-        <Russian>Вооруженный поселенец:Вооруженные поселенцы</Russian>
+        <Russian>Вооруженный колонист:Вооруженные колонисты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MILITIA_PEDIA</Tag>

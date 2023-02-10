@@ -81,6 +81,7 @@
         <Tag>TXT_KEY_HAPPINESS_TREATIES</Tag>
         <English>[ICON_BULLET]%d2%F3_Icon[TAB]by Treaties with other Europeans</English>
         <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Verträge mit anderen Europäern</German>
+        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]by Treaties with other Europeans</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_UNHAPPINESS_PRODUCED</Tag>
@@ -283,21 +284,25 @@
         <Tag>TXT_KEY_CITY_UNREST_BECAUSE_UNHAPPINESS</Tag>
         <English>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high Unhappiness has caused Unrest.</English>
         <German>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Unzufriedenheit in der Stadt hat zu Unruhen geführt.</German>
+        <Russian>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Высокий уровень несчастья привел к беспорядкам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FESTIVITIES_BECAUSE_HAPPINESS</Tag>
         <English>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high Happiness has led to festivities that generated %d2 [COLOR_HIGHLIGHT_TEXT]%s3_father_points[COLOR_REVERT].</English>
         <German>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Zufriedenheit in der Stadt hat zu Feierlichkeiten geführt, die %d2 [COLOR_HIGHLIGHT_TEXT]%s3_father_points[COLOR_REVERT] erzeugt haben.</German>
+        <Russian>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Высокое счастье привело к празднествам, которые принесли %d2 [COLOR_HIGHLIGHT_TEXT]%s3_father_points[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_UNREST_BECAUSE_CRIME</Tag>
         <English>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high crime in the city has caused unrest.</English>
         <German>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Kriminalität in der Stadt hat zu Unruhen geführt.</German>
+        <Russian>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Высокая преступность в городе вызвала беспорядки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_GOLD_STOLEN_BECAUSE_CRIME</Tag>
         <English>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high crime in the city has led to gold being stolen.</English>
         <German>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Kriminalität in der Stadt hat dazu geführt, dass Gold gestohlen wurde.</German>
+        <Russian>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Высокий уровень преступности в городе привел к краже золота.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_UNHAPPINESS_SLAVES_MODIFIER</Tag>
@@ -309,10 +314,12 @@
         <Tag>TXT_KEY_CITY_DOMESTIC_MARKET_EVENT_POSITIVE</Tag>
         <English>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high happiness has caused increased domestic demand and prices.</English>
         <German>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Zufriedenheit hat zu erhöhten Preisen und starker Nachfrage geführt.</German>
+        <Russian>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Высокий уровень счастья вызвал увеличение внутреннего спроса и цен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_DOMESTIC_MARKET_EVENT_NEGATIVE</Tag>
         <English>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high unhappiness has caused decreased domestic demand and prices.</English>
         <German>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Unzufriedenheit hat zu reduzierten Preisen und geringer Nachfrage geführt.</German>
+        <Russian>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Из-за недовольства снизился внутренний спрос и цены.</Russian>
     </TEXT>
 </Civ4GameText>

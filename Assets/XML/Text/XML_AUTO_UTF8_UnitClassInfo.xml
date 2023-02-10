@@ -27,6 +27,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Африканский раб:Африканские рабы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ALLIGATOR</Tag>
@@ -51,6 +52,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Аллигатор</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BARLEY</Tag>
@@ -75,6 +77,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ячмень</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BEAR_BLACK</Tag>
@@ -99,6 +102,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Черный медведь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BEAR_POLAR</Tag>
@@ -123,6 +127,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Полярный медведь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BEER</Tag>
@@ -147,6 +152,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Пиво</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BIG_COASTAL_SHIP</Tag>
@@ -170,6 +176,7 @@
             <Text>Big Coastal Ship:Big Coastal Ships</Text>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Большой прибрежный корабль:Большие прибрежные корабли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BISHOP</Tag>
@@ -198,6 +205,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Епископ:Епископы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BLACKSMITH</Tag>
@@ -222,6 +230,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мастер кузнец:Мастера кузнецы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BLADES</Tag>
@@ -246,6 +255,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Клинки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BREWER</Tag>
@@ -884,6 +894,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Каторжник:Каторжники</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_DISTILLER</Tag>
@@ -3772,6 +3783,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мятежный африканский раб:Мятежные африканские рабы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_REVOLTING_NATIVE_SLAVE</Tag>
@@ -3800,6 +3812,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мятежный туземный раб:Мятежные туземные рабы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_REVOLTING_CRIMINAL</Tag>
@@ -3824,6 +3837,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Мятежный каторжник:Мятежные каторжники</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_EXPERT_TRADER</Tag>
@@ -3876,5 +3890,6 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Враждебные индейцы</Russian>
     </TEXT>
 </Civ4GameText>

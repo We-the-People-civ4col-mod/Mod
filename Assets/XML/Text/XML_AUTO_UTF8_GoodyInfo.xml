@@ -28,38 +28,45 @@
         <German>Ihr habt etwas entdeckt, das wie eine Grabstätte der Ureinwohner aussieht. Wollt Ihr nach Schätzen suchen?</German>
         <Italian>Hai scoperto quello che sembra un cimitero dei nativi. Vuoi cercare dei tesori?</Italian>
         <Spanish>Habéis descubierto lo que parecen ser Túmulos funerarios de los Nativos. ¿Queréis buscar tesoros?</Spanish>
+        <Russian>Вы обнаружили место, похожее на захоронение индейцев. Вы хотите поискать сокровища?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_CHRISTIAN_MISSIONARY</Tag>
         <English>You've discovered a lost [COLOR_UNIT_TEXT]missionary[COLOR_REVERT]!</English>
         <French>Vous avez découvert un [COLOR_UNIT_TEXT]missionnaire[COLOR_REVERT] perdu !</French>
         <German>Ihr habt einen verlaufenen [COLOR_UNIT_TEXT]Missionar[COLOR_REVERT] entdeckt!</German>
+        <Russian>Вы обнаружили пропавшего [COLOR_UNIT_TEXT]миссионера[COLOR_REVERT], который согласен присоединиться к нам!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_FAILED_MISSIONARY</Tag>
         <English>You've discovered a [COLOR_UNIT_TEXT]failed missionary[COLOR_REVERT] on the return from his mission!</English>
         <German>Ihr habt einen [COLOR_UNIT_TEXT]gescheiterten Missionar[COLOR_REVERT] auf der Heimkehr von seiner Mission entdeckt!</German>
+        <Russian>Вы обнаружили [COLOR_UNIT_TEXT]разочаровавшегося миссионера[COLOR_REVERT], который бесцельно брел по тропе. Надо взять его с собой, иначе один он тут пропадет!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_COLONIST</Tag>
         <English>You've discovered a lost [COLOR_UNIT_TEXT]colonist[COLOR_REVERT] from an earlier colony that failed!</English>
         <French>Vous avez découvert un [COLOR_UNIT_TEXT]colon[COLOR_REVERT] perdu d'une ancienne colonie !</French>
         <German>Ihr habt einen verlorenen [COLOR_UNIT_TEXT]Kolonisten[COLOR_REVERT] einer gescheiterten Kolonie entdeckt!</German>
+        <Russian>Вы обнаружили пропавшего [COLOR_UNIT_TEXT]колониста[COLOR_REVERT] из колонии, которую сожгли индейцы!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_BUCCANNEER</Tag>
         <English>You've discovered a [COLOR_UNIT_TEXT]buccanneer[COLOR_REVERT]! [NEWLINE]At first he seems ready to attack but after a moment of indecision he lowers his weapons and asks to join you.</English>
         <German>Ihr habt einen [COLOR_UNIT_TEXT]Bukanier[COLOR_REVERT] entdeckt! [NEWLINE]Zuerst scheint es er würde angreifen, aber nach kurzer Zeit senkt er seine Waffen und bittet sich uns anschließen zu dürfen.</German>
+        <Russian>Вы обнаружили [COLOR_UNIT_TEXT]буканьера[COLOR_REVERT]! [NEWLINE]Сначала кажется, что он хочет атаковать вас, но после секундной нерешительности опускает оружие и просит разрешения присоединиться к вам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_SLAVE_HUNTER</Tag>
         <English>You've discovered a [COLOR_UNIT_TEXT]slave hunter[COLOR_REVERT] searching for his bounty!</English>
         <German>Ihr habt einen [COLOR_UNIT_TEXT]Sklavenjäger[COLOR_REVERT] auf der Suche nach Entflohene entdeckt!</German>
+        <Russian>Вы обнаружили [COLOR_UNIT_TEXT]охотника за рабами[COLOR_REVERT], который пропал без вести во время погони за одним из своих беглых рабов!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_SLAVE_MASTER</Tag>
         <English>You've discovered a [COLOR_UNIT_TEXT]slave master[COLOR_REVERT] gone missing while hunting one of his runaway slaves!</English>
         <German>Ihr habt einen [COLOR_UNIT_TEXT]Sklavenhalter[COLOR_REVERT] gefunden, der einen seiner entlaufenen Sklaven sucht!</German>
+        <Russian>Вы обнаружили [COLOR_UNIT_TEXT]надсмоторщика за рабами[COLOR_REVERT], который ищет работу. Нам пригодятся его умения!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_MESTIZZO</Tag>
@@ -142,6 +149,7 @@
         <German>Ein Ureinwohnerstamm hat Eure Einheit geheilt!</German>
         <Italian>Una tribù di nativi ha curato l'unità!</Italian>
         <Spanish>¡Una tribu nativa ha curado a vuestra unidad!</Spanish>
+        <Russian>Шаман племени индейцев вылечил ваш отряд!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_HIGH_GOLD</Tag>
@@ -170,6 +178,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Золото</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ANNOUNCE_GOLD</Tag>
@@ -178,6 +187,7 @@
         <German>Ihr habt wertvolle Artefakte entdeckt!</German>
         <Italian>Hai scoperto preziosi manufatti!</Italian>
         <Spanish>¡Habéis descubierto artefactos valiosos!</Spanish>
+        <Russian>Найдены ценные артефакты!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_LOW_GOLD_SEA</Tag>
@@ -188,6 +198,7 @@
         <English>You've discovered some gold in a shipwreck!</English>
         <French>Vous avez découvert de l'or dans l'épave !</French>
         <German>Ihr habt etwas Gold in den Überresten eines verunglückten Schiffes entdeckt!</German>
+        <Russian>Вы нашли золото среди обломков корабля!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_HOSTILE_STRONG</Tag>
@@ -212,6 +223,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Враждебные индейцы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ANNOUNCE_HOSTILE</Tag>
@@ -220,6 +232,7 @@
         <German>Ihr habt die Ureinwohner beleidigt. Sie greifen Euch aus Rache an!</German>
         <Italian>Hai offeso i nativi, che attaccano la tua unità!</Italian>
         <Spanish>¡Habéis ofendido a los Nativos, que atacan a vuestra unidad como venganza!</Spanish>
+        <Russian>Вы оскорбили туземцев, которые в отместку за это нападают на ваш отряд!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_MAP</Tag>
@@ -244,6 +257,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Карта</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ANNOUNCE_MAP</Tag>
@@ -252,6 +266,7 @@
         <German>Einheimische Jäger haben in das alte Gemäuer eine Skizze der Umgebung eingeritzt. Welch hilfreicher Fund!</German>
         <Italian>Hai scoperto un'antica mappa!</Italian>
         <Spanish>¡Habéis descubierto un mapa antiguo!</Spanish>
+        <Russian>Местные охотники вырезали на старом пне план окрестностей. Какая полезная находка!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_MAP_SEA</Tag>
@@ -262,6 +277,7 @@
         <English>You've discovered a map in a shipwreck!</English>
         <French>Vous avez découvert une carte dans l'épave !</French>
         <German>Ihr habt eine Karte in den Überresten eines verunglückten Schiffes entdeckt!</German>
+        <Russian>Вы нашли карту среди обломков затонувшего корабля!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_NATIVE_MERC</Tag>
@@ -392,6 +408,7 @@
         <German>Ihr habt einen antiken Schatz entdeckt!</German>
         <Italian>Hai scoperto un antico tesoro!</Italian>
         <Spanish>¡Habéis descubierto un antiguo tesoro!</Spanish>
+        <Russian>Вы обнаружили древнее сокровище!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_WAR</Tag>
@@ -409,11 +426,13 @@
         <Tag>TXT_KEY_GOODY_RANGER</Tag>
         <English>You have discovered a wounded [COLOR_UNIT_TEXT]ranger[COLOR_REVERT] who gratefully offers his services to us!</English>
         <German>Ihr habt einen verwundeten [COLOR_UNIT_TEXT]Ranger[COLOR_REVERT] entdeckt, der uns für unsere Hilfe seine Dienste anbietet!</German>
+        <Russian>Вы обнаружили раненого [COLOR_UNIT_TEXT]рейнджера[COLOR_REVERT] и помогли ему. В благодарность за это он желает присоединиться к нам!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_NATIVE_TRADER</Tag>
         <English>You have discovered a [COLOR_UNIT_TEXT]Native trader[COLOR_REVERT] who had gotten lost. He now wants to work with you!</English>
         <German>Ihr habt einen [COLOR_UNIT_TEXT]Ureinwohnerhändler[COLOR_REVERT] entdeckt, der die Orientierung verloren hatte und Euch nun seine Dienste anbietet!</German>
+        <Russian>Вы обнаружили [COLOR_UNIT_TEXT]торговца с индейцами[COLOR_REVERT], который заблудился в этих диких местах. Он хочет остаться и работать вместе с нами!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_CRAZY_SECT_OF_MISSIONARIES</Tag>
