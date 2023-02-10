@@ -948,12 +948,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_VILLAGE_COURT_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Village courthouses handle small property disputes and local misbehaviour. Some use common law, where the judge recalls what was decided the last time that the cow broke through the fence and grazed in the neighbour's field. Others rely on written rules from the governor or the overseas monarch.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_VILLAGE_COURT_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>With two jobs the village courthouse produces three law and one culture.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1018,12 +1018,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GRAVEYARD_JAIL</Tag>
-        <English>TBD</English>
+        <English>Jail is how the settlement handles drunks, domestic disputes, witches and thieves. Murderers don't stay in jail for long because they're hanged. Thieves are hanged later.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GRAVEYARD_JAIL</Tag>
-        <English>TBD</English>
+        <English>Jail is how the settlement handles drunks, domestic disputes, witches and thieves. Murderers don't stay in jail for long because they're hanged. Thieves are hanged later.</English>
         <German>TBD</German>
     </TEXT>
 </Civ4GameText>
