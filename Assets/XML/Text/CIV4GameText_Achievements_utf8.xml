@@ -164,12 +164,14 @@
         <English>Your sixth colony</English>
         <French>Votre sixième colonie</French>
         <German>Eure sechste Siedlung</German>
+        <Russian>Ваша шестая колония</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_COLONIES_HEAD</Tag>
         <English>The oracle</English>
         <French>« Mais que recherchent ces gens chez nous ? »</French>
         <German>Das Orakel</German>
+        <Russian>Оракул</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_COLONIES_TEXT</Tag>

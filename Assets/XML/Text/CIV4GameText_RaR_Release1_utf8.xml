@@ -494,12 +494,14 @@
         <English>%s1_city : Goods worth %d2[ICON_GOLD] have been sold on the domestic market.</English>
         <French>%s1_city : Marchandises d'une valeur de %d2[ICON_GOLD] ont été vendus sur le marché intérieur.</French>
         <German>%s1_city : Auf dem Markt wurden Güter für %d2[ICON_GOLD] verkauft.</German>
+        <Russian>%s1_city : Товары на сумму %d2[ICON_GOLD] были проданы на внутреннем рынке.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_INFO_YIELD</Tag>
         <English>[NEWLINE][COLOR_HIGHLIGHT_TEXT]Domestic Demand : [COLOR_REVERT][TAB]%d1[NEWLINE][COLOR_HIGHLIGHT_TEXT]Domestic Price : [COLOR_REVERT][TAB]%d2[ICON_GOLD][NEWLINE]</English>
         <French>[COLOR_HIGHLIGHT_TEXT]Demande intérieure : [COLOR_REVERT][TAB]%d1[NEWLINE][COLOR_HIGHLIGHT_TEXT]Prix intérieur : [COLOR_REVERT][TAB]%d2[ICON_GOLD]</French>
         <German>[NEWLINE][COLOR_HIGHLIGHT_TEXT]Lokale Nachfrage : [COLOR_REVERT][TAB]%d1[NEWLINE][COLOR_HIGHLIGHT_TEXT]Lokaler Preis : [COLOR_REVERT][TAB][TAB]%d2[ICON_GOLD][NEWLINE]</German>
+        <Russian>[NEWLINE][COLOR_HIGHLIGHT_TEXT]Внутренний спрос : [COLOR_REVERT][TAB]%d1[NEWLINE][COLOR_HIGHLIGHT_TEXT]Внутренняя цена : [COLOR_REVERT][TAB]%d2[ICON_GOLD][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_BISHOP</Tag>
@@ -1218,7 +1220,7 @@
         <English>%s2_city : The %s1_building has generated %d3[ICON_GOLD]</English>
         <French>%s2_city : Votre %s1_building a généré %d3[ICON_GOLD] de profit</French>
         <German>%s2_city : Das Gebäude %s1_building hat %d3[ICON_GOLD] Gewinn erwirtschaftet</German>
-        <Russian>%s2_city : %s1_building сгенерировал %d3[ICON_GOLD]</Russian>
+        <Russian>%s2_city : %d3[ICON_GOLD] было сгенерировано в %s1_building</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ENTERTAINMENT_BUILDING</Tag>

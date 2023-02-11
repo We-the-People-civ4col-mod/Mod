@@ -717,36 +717,42 @@
         <English>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in %s3_player</English>
         <French>[ICON_BULLET]Le prix augmente de [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield chez %s3_player</French>
         <German>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in %s3_player</German>
+        <Russian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в %s3_player</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PRICE_DECREASE</Tag>
         <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in %s3_player</English>
         <French>[ICON_BULLET]Le prix diminue de [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield chez %s3_player</French>
         <German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in %s3_player</German>
+        <Russian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в %s3_player</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PRICE_INCREASE_AFRICA</Tag>
         <English>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in Africa</English>
         <French>[ICON_BULLET]Le prix augmente de [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield chez Africa</French>
         <German>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in Afrika</German>
+        <Russian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в Африке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PRICE_DECREASE_AFRICA</Tag>
         <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in Africa</English>
         <French>[ICON_BULLET]Le prix diminue de [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield chez Africa</French>
         <German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in Afrika</German>
+        <Russian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в Африке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PRICE_INCREASE_PORT_ROYAL</Tag>
         <English>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in Port Royal</English>
         <French>[ICON_BULLET]Le prix augmente de [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield chez Port Royal</French>
         <German>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in Port Royal</German>
+        <Russian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в Порт Ройале</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PRICE_DECREASE_PORT_ROYAL</Tag>
         <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in Port Royal</English>
         <French>[ICON_BULLET]Le prix diminue de [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield chez Port Royal</French>
         <German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in Port Royal</German>
+        <Russian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в Порт Ройале</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FATHER_POINTS</Tag>

@@ -220,6 +220,7 @@
         <German>[ICON_BULLET]Vernichtet die Modernisierung [COLOR_HIGHLIGHT_TEXT]%s1_ImpName[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET]Distruggi [NUM1:il:la:gli:le] [COLOR_HIGHLIGHT_TEXT]%s1_ImpName[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]Destruye [NUM1:el:la:los:las] [COLOR_HIGHLIGHT_TEXT]%s1:2_ImpName[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]Уничтожает [COLOR_HIGHLIGHT_TEXT]%s1_ImpName[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_NEEDS_CULTURE_BORDER</Tag>
@@ -270,6 +271,7 @@
         <German>[ICON_BULLET]Wird in %d2_Num [NUM2:Runde:Runden] zur Modernisierung [LINK=literal]%s1_ImpName[\LINK]</German>
         <Italian>[ICON_BULLET]Diventa [NUM1:un:una] [LINK=literal]%s1_ImpName[\LINK] in %d2_Num [NUM2:turno:turni]</Italian>
         <Spanish>[ICON_BULLET]Se convierte en [LINK=literal]%s1_ImpName[\LINK] en %d2_Num [NUM2:turno:turnos]</Spanish>
+        <Russian>[ICON_BULLET]Улучшится до [LINK=literal]%s1_ImpName[\LINK] через %d2_Num [NUM2:ход:ходов]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_WILL_DESTROY_IMP</Tag>
@@ -558,7 +560,7 @@
         <German>Schaden/Runde auf neutralem Territorium</German>
         <Italian>Danno/turno in territorio neutrale</Italian>
         <Spanish>Daño/turno en tierra neutral</Spanish>
-        <Russian>Повреждений/ход на нейтральной территории</Russian>
+        <Russian>повреждений/ход на нейтральной территории</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_FRIENDLY_LANDS_TEXT</Tag>
@@ -567,7 +569,7 @@
         <German>Schaden/Runde auf freundlichem Territorium</German>
         <Italian>Danno/turno in territorio amico</Italian>
         <Spanish>Daño/turno en tierra amiga</Spanish>
-        <Russian>Повреждений/ход на дружеской территории</Russian>
+        <Russian>повреждений/ход на дружеской территории</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_HEALS_SAME_TEXT</Tag>
@@ -585,7 +587,7 @@
         <German>Schaden/Runde</German>
         <Italian>Danno/turno</Italian>
         <Spanish>Daño/turno</Spanish>
-        <Russian>Повреждений/ход</Russian>
+        <Russian>повреждений/ход</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_HEALS_ADJACENT_TEXT</Tag>
@@ -3307,6 +3309,7 @@
         <German>Milord, Ihr habt durch die Plünderung der Modernisierung %s2_ImpName %d1_Num[ICON_GOLD] erbeutet!</German>
         <Italian>Hai saccheggiato %d1_Num[ICON_GOLD] da %s2_ImpName!</Italian>
         <Spanish>Habéis saqueado %d1_Num[ICON_GOLD] [NUM2:del:de la:de los:de las] %s2_ImpName.</Spanish>
+        <Russian>Милорд, мы нашли %d1_Num[ICON_GOLD] при разграблении %s2_ImpName!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_IMP_DESTROYED</Tag>
@@ -10018,7 +10021,7 @@
         <German> in %d1 [NUM1:Runde:Runden]</German>
         <Italian>, in %d1 [NUM1:turno:turni]</Italian>
         <Spanish>, en %d1 [NUM1:turno:turnos]</Spanish>
-        <Russian>, за %d1 [NUM1:ход:ходов]</Russian>
+        <Russian>, через %d1 [NUM1:ход:ходов]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DECLARE_WAR</Tag>
@@ -10378,6 +10381,7 @@
         <German>Der unerschrockene [COLOR_UNIT_TEXT]%s1_GPName[COLOR_REVERT] gilt den in [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] stationierten Kämpfern als ein Vorbild an Tapferkeit und Manneszucht. Landauf und landab eilt ihm der Ruf voraus, ein wahrhaft großer Krieger und General zu sein.</German>
         <Italian>%s1_GPName è nato a [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]!</Italian>
         <Spanish>%s1_GPName ha nacido en [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</Spanish>
+        <Russian>Во всех колониях [COLOR_UNIT_TEXT]%s1_GPName[COLOR_REVERT] знают, как великого воина и полководца. Гарнизон [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] рад прибытию этого прославленного генерала.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_GP_BORN_SOMEWHERE</Tag>
@@ -10386,6 +10390,7 @@
         <German>In einer fernen Gegend macht [COLOR_UNIT_TEXT]%s1_GPName[COLOR_REVERT] als ein Großer General von sich reden. Gebt acht, Milord!</German>
         <Italian>%s1_GPName è [NUM1:nato:nata] in una terra lontana!</Italian>
         <Spanish>%s1_GPName ha nacido en una tierra muy lejana.</Spanish>
+        <Russian>В городах распространяются слухи, что где-то в далеких колониях [COLOR_UNIT_TEXT]%s1_GPName[COLOR_REVERT] прославился как великий полководец. Нам надо быть начеку, милорд!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_GP_BORN_FIELD</Tag>
@@ -10399,6 +10404,7 @@
         <Tag>TXT_KEY_MISC_BL_BORN</Tag>
         <English>The warriors stationed in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] look up to their lieutenant for his courage.</English>
         <German>Der unerschrockene Leutnant gilt den in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] stationierten Kämpfern als ein Vorbild an Tapferkeit und Manneszucht.</German>
+        <Russian>Воины в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] уважают своего лейтенанта за его храбрость.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_BL_BORN_SOMEWHERE</Tag>
@@ -10409,11 +10415,13 @@
         <Tag>TXT_KEY_MISC_BL_BORN_FIELD</Tag>
         <English>In the recent battle a young soldier fell upon his enemies like a wolf among the lambs. He is now known everywhere as a truly brave lieutenant.</English>
         <German>In der jüngsten Schlacht fiel ein junger Soldat über seine Feinde her wie der Wolf über die Lämmer. Er gilt nun allerorten als mutiger Leutnant.</German>
+        <Russian>В недавнем сражении молодой воин, бросался на своих врагов, как волк на ягнят. Теперь повсюду он известен как поистине храбрый лейтенант.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CC_BORN</Tag>
         <English>The warriors stationed in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] respect their captain for his leadership and tactics.</English>
         <German>Der fähiger Seemann gilt den in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] stationierten Kämpfern als ein Vorbild an Fähigkeit und Schläue.</German>
+        <Russian>Воины в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] уважают своего капитана за его умелое руководство и знания тактики.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CC_BORN_SOMEWHERE</Tag>
@@ -11190,7 +11198,7 @@
         <German>[COLOR_WARNING_TEXT]Niederlage, Milord! [COLOR_REVERT]Eure Einheit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] unterlag im Kampf gegen eine feindliche Einheit [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT]. Möge der Herr ihren Seelen gnädig sein.</German>
         <Italian>La tua unità di %s1_UnitName è [NUM1:morto:morta] attaccando %s2_EnUName!</Italian>
         <Spanish>[NUM1:Vuestro:Vuestra:Vuestros:Vuestras] %s1_UnitName [NUM1:ha:ha:han:han] muerto intentando atacar a [NUM2:un:una:unos:unas] %s2_EnUName.</Spanish>
-        <Russian>[COLOR_WARNING_TEXT]Поражение, Милорд! [COLOR_REVERT]Наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] был побежден в бою с вражеским [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT]. Упокой Господь их души...</Russian>
+        <Russian>[COLOR_WARNING_TEXT]Поражение, Милорд! [COLOR_REVERT]Наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] был побежден вражеским [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT]. Упокой Господь их души...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_YOU_KILLED_ENEMY_UNIT</Tag>
@@ -11199,7 +11207,7 @@
         <German>[COLOR_POSITIVE_TEXT]Sieg, Milord! [COLOR_REVERT]Eure Einheit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] hat sich erfolgreich gegen feindliche %s3_owner_adjective [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] gewehrt. Wacker gekämpft!</German>
         <Italian>Difendendo, la tua unità %s1_UnitName ha ucciso l'unità nemica %s2_EnUName (%s3_owner_adjective)!</Italian>
         <Spanish>Mientras se [NUM1:defendía:defendía:defendían:defendían], [NUM1:vuestro:vuestra:vuestros:vuestras] %s1_UnitName [NUM1:ha:ha:han:han] acabado con [NUM2:un:una:unos:unas] %s2_EnUName (%s3_owner_adjective).</Spanish>
-        <Russian>[COLOR_POSITIVE_TEXT]Победа, Милорд! [COLOR_REVERT]Наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] успешно отбился от вражеского [COLOR_HIGHLIGHT_TEXT]%s3_owner_adjective[COLOR_REVERT] [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT]. Славная битва!</Russian>
+        <Russian>[COLOR_POSITIVE_TEXT]Победа, Милорд! [COLOR_REVERT]Наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] успешно отбился от [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s3_owner_adjective[COLOR_REVERT]. Славная была битва!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_YOU_UNIT_DESTROYED_ENEMY</Tag>

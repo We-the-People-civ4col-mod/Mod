@@ -2500,6 +2500,7 @@
         <German>Wärt Ihr vielleicht bereit, uns diese Bitte zu erfüllen, [CT_NAME]?</German>
         <Italian>Potresti darci un po' di questa roba che ti avanza, [CT_NAME]?</Italian>
         <Spanish>¿Podríais prestarnos un poco de esto, [CT_NAME]?</Spanish>
+        <Russian>Не могли бы вы дать нам это, [CT_NAME]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_ASK_FOR_HELP_1</Tag>
@@ -5338,41 +5339,49 @@
         <Tag>USER_DIPLO_ASK_TO_BUY_USED_SHIP</Tag>
         <English>Could your Majesty help us to acquire a used ship for a good price?</English>
         <German>Könnte Ihre Majestät uns helfen günstig ein gebrauchtes Schiffe zu erwerben?</German>
+        <Russian>Ваше Величество, не могли бы Вы помочь нам приобрести подержанный корабль по сходной цене?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_OFFERS_USED_SHIP</Tag>
         <English>We know a ship trader willing to sell a %s3_unit for %d1[ICON_GOLD]. We could arrange that deal.</English>
         <German>Wir kennen einen Schiffshändler, der ein Schiff des Typs %s3_unit für %d1[ICON_GOLD] verkaufen möchte.</German>
+        <Russian>Мы знаем одного торговца кораблями, который хочет продать [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] за %d1[ICON_GOLD]. Мы могли бы устроить эту сделку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_REFUSES_TO_OFFER_USED_SHIP</Tag>
         <English>Currently we cannot be bothered with such business. Ask again in a few months.</English>
         <German>Im Moment können wir mit solch Lapalien nicht belästigt werden. Vielleicht können wir aber in einigen Monaten helfen.</German>
+        <Russian>В настоящее время Мы заняты более важными делами и не можем ничем вам помочь. Рады были увидеть вас в добром здравии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACCEPT_BUY_USED_SHIP</Tag>
         <English>Thank you, your Majesty. We appreciate your support and will gladly buy the ship.</English>
         <German>Danke Eure Majestät. Wir schätzen eure Unterstätzung und erwerben das Schiff gerne.</German>
+        <Russian>Благодарю вас, Ваше Величество. Мы ценим Вашу поддержку и с радостью выкупим этот чудесный корабль.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ASK_FOREIGN_KING_BUY_IMMIGRANTS</Tag>
         <English>Would your Majesty help us to hire skilled workers for our colony? We will pay a good price.</English>
         <German>Könnte Ihre Majestät uns helfen willige und fähige Arbeiter für unsere Kolonie zu suchen? Wir bezahlen auch einen guten Preis.</German>
+        <Russian>Ваше Величество, не поможете ли нам нанять квалифицированных рабочих для нашей колонии? Мы заплатим хорошую цену.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FOREIGN_KING_OFFERS_IMMIGRANTS</Tag>
-        <English>We heard of a %s3_unit looking for a new home and for %d1[ICON_GOLD] we might arrange their passage.</English>
-        <German>Wir haben von einem %s3_unit gehört, der eine neue Heimat sucht und für %d1[ICON_GOLD] könnten wir ihre Überfahrt arrangieren.</German>
+        <English>We heard of a [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] looking for a new home and for %d1[ICON_GOLD] we might arrange their passage.</English>
+        <German>Wir haben von einem [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] gehört, der eine neue Heimat sucht und für %d1[ICON_GOLD] könnten wir ihre Überfahrt arrangieren.</German>
+        <Russian>Мы слышали, что [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] ищет возможность перебраться в колонии и за скромную сумму в %d1[ICON_GOLD] мы готовы ему в этом помочь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FOREIGN_KING_REFUSES_IMMIGRANTS</Tag>
         <English>Currently we cannot be bothered with such business. Come back in a few months.</English>
         <German>Im Moment können wir mit solch Lapalien nicht belästigt werden. Vielleicht können wir aber in einigen Monaten helfen.</German>
+        <Russian>В настоящее время Мы заняты более важными делами и не можем ничем вам помочь. Рады были увидеть вас в добром здравии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACCEPT_FOREIGN_IMMIGRANTS</Tag>
         <English>Thank you, your Majesty. We appreciate your support and will gladly hire the workers.</English>
         <German>Danke Eure Majestät. Wir schätzen eure Unterstätzung und werben die Arbeiter freudig an.</German>
+        <Russian>Спасибо, Ваше Величество. Мы ценим Вашу поддержку и с удовольствием наймем этого опытного работника.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_REVIVE_1</Tag>
