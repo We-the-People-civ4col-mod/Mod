@@ -806,6 +806,7 @@
         <German>Milord, Eure Mission in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat einen Ureinwohner zum wahren christlichen Glauben bekehrt. Gelobt sei der Herr!</German>
         <Italian>La tua missione ha convertito un nativo a [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]</Italian>
         <Spanish>Vuestra misión ha convertido a un Nativo en [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Spanish>
+        <Russian>Милорд, наша мисиия в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] обратила в истинную христианскую веру одного из индейцев. Братья, вознесем хвалу нашему Господу!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_ESTABLISHED</Tag>
@@ -814,6 +815,7 @@
         <German>Eine [COLOR_HIGHLIGHT_TEXT]%s2:3_civ_adjective[COLOR_REVERT] Mission wurde in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] errichtet.</German>
         <Italian>È stata fondata una missione [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] a [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]</Italian>
         <Spanish>Se ha fundado una misión [COLOR_HIGHLIGHT_TEXT]%s2:2_civ_adjective[COLOR_REVERT] en [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] основали миссию в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_REMOVED</Tag>
@@ -1077,6 +1079,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s2_team[COLOR_REVERT] hat die Unterstützung von [COLOR_FONT_CREAM]%s1_person[COLOR_REVERT] gewinnen können.</German>
         <Italian>[COLOR_FONT_CREAM]%s1_person[COLOR_REVERT] si è unito alla squadra [COLOR_HIGHLIGHT_TEXT]%s2_team[COLOR_REVERT].</Italian>
         <Spanish>[COLOR_FONT_CREAM]%s1_person[COLOR_REVERT] [NUM1:se ha:se ha:se han:se han] unido a [COLOR_HIGHLIGHT_TEXT]%s2_team[COLOR_REVERT].</Spanish>
+        <Russian>[COLOR_FONT_CREAM]%s1_person[COLOR_REVERT] вошел в состав Континентального конгресса [COLOR_HIGHLIGHT_TEXT]%s2_team[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JOINED_UNKNOWN</Tag>
@@ -2493,6 +2496,7 @@
         <German>[COLOR_SELECTED_TEXT]%s2_CityName%s3[COLOR_REVERT][NEWLINE][NEWLINE]Ihr könnt die Errichtung des Gebäudes [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT] nicht abschließen. Was wollt Ihr stattdessen tun?</German>
         <Italian>Non puoi continuare a costruire l'edificio [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT] a %s2_CityName%s3. Cosa vuoi realizzare al suo posto?</Italian>
         <Spanish>No podéis construir [NUM1:un:una:unos:unas] [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT] en %s2_CityName%s3. ¿Qué queréis hacer en su lugar?</Spanish>
+        <Russian>[COLOR_SELECTED_TEXT]%s2_CityName%s3[COLOR_REVERT][NEWLINE][NEWLINE]Невозможно продолжать строительство [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT]. Над чем бы вы хотели работать вместо этого?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_REQUIRES</Tag>
@@ -2501,6 +2505,7 @@
         <German>[NEWLINE] [COLOR_WARNING_TEXT](erfordert %s1_list_of_comma_separated_amounts_of_yields)[COLOR_REVERT]</German>
         <Italian>[NEWLINE] [COLOR_WARNING_TEXT](richiede %s1_list_of_comma_separated_amounts_of_yields)[COLOR_REVERT]</Italian>
         <Spanish>[NEWLINE] [COLOR_WARNING_TEXT](requiere %s1_list_of_comma_separated_amounts_of_yields)[COLOR_REVERT]</Spanish>
+        <Russian>[NEWLINE] [COLOR_WARNING_TEXT](нужны для окончания строительства: %s1_list_of_comma_separated_amounts_of_yields)[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_CHOOSE_COMLPETED_BUILD</Tag>
@@ -2753,6 +2758,7 @@
         <German>[ICON_BULLET]%D1%F2[TAB]aufgrund von Mangel an %s3_symbol_list</German>
         <Italian>[ICON_BULLET]%D1%F2[TAB]per mancanza di %s3_symbol_list</Italian>
         <Spanish>[ICON_BULLET]%D1%F2[TAB]por falta de %s3_symbol_list</Spanish>
+        <Russian>[ICON_BULLET]%D1%F2[TAB]из-за отсутствия %s3_symbol_list</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CONSUMED_CITY_YIELD_SPECIFIC</Tag>

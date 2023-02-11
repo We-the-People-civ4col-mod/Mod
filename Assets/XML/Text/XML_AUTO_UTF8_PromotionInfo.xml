@@ -733,6 +733,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Пехотинец</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_LEADER</Tag>
