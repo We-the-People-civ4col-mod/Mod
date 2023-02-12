@@ -61,7 +61,7 @@
         <Tag>TXT_KEY_SPECIALBUILDING_CONFECTIONER</Tag>
         <English>Confectioner</English>
         <German>
-            <Text>Süßwarenhändler</Text>
+            <Text>Konditor</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
@@ -70,7 +70,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_HOUSE</Tag>
         <English>Confectioner's House</English>
         <German>
-            <Text>Süßwarenhändlerhaus</Text>
+            <Text>Haus des Konditors</Text>
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
@@ -80,7 +80,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_SHOP</Tag>
         <English>Confectioner's Shop</English>
         <German>
-            <Text>Süßwarenhändlerladen</Text>
+            <Text>Konditorladen</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
@@ -90,7 +90,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_FACTORY</Tag>
         <English>Confectionery</English>
         <German>
-            <Text>Süßwarenfabrik</Text>
+            <Text>Konditorei</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
@@ -100,7 +100,7 @@
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE</Tag>
         <English>Confectioner's House</English>
         <German>
-            <Text>Süßwarenhändlerhaus</Text>
+            <Text>Haus des Konditors</Text>
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
@@ -110,7 +110,7 @@
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP</Tag>
         <English>Confectioner's Shop</English>
         <German>
-            <Text>Süßwarenhändlerladen</Text>
+            <Text>Konditorladen</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
@@ -120,7 +120,7 @@
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY</Tag>
         <English>Confectionery</English>
         <German>
-            <Text>Süßwarenfabrik</Text>
+            <Text>Konditorei</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
@@ -170,7 +170,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_HOUSE</Tag>
         <English>Leather Padder's House</English>
         <German>
-            <Text>Ledermäntelhaus</Text>
+            <Text>Haus des Lederschneiders</Text>
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
@@ -180,7 +180,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_SHOP</Tag>
         <English>Leather Padder's Shop</English>
         <German>
-            <Text>Ledermmänteladen</Text>
+            <Text>Lederwarenladen</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
@@ -190,7 +190,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_FACTORY</Tag>
         <English>Leather Padding Factory</English>
         <German>
-            <Text>Ledermmäntelfabrik</Text>
+            <Text>Lederwarenfabrik</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
@@ -200,7 +200,7 @@
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE</Tag>
         <English>Leather Padder's House</English>
         <German>
-            <Text>Ledermäntelhaus</Text>
+            <Text>Haus des Lederschneiders</Text>
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
@@ -210,7 +210,7 @@
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP</Tag>
         <English>Leather Padder's Shop</English>
         <German>
-            <Text>Ledermmänteladen</Text>
+            <Text>Lederwarenladen</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
@@ -220,7 +220,7 @@
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY</Tag>
         <English>Leather Coat Factory</English>
         <German>
-            <Text>Ledermmäntelfabrik</Text>
+            <Text>Lederwarenfabrik</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
@@ -234,16 +234,19 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE_STRATEGY</Tag>
         <English>Sewing padding into leather doesn't just make the clothes more comfortable. By adding insulation the leather clothier improves health for those working outside, which can even save their lives.</English>
-        <German>TBD</German>
+        <French>Coudre un rembourrage et une doublure dans le cuir ne rend pas seulement le vêtement plus confortable. En ajoutant de l'isolation, il améliore également la santé des personnes travaillant à l'extérieur, et peut même leur sauver la vie.</French>
+        <German>Das Einnähen von Polstern und Futter in Leder macht das Kleidungsstück nicht nur bequemer. Durch die zusätzliche Isolierung wird auch die Gesundheit derjenigen verbessert, die im Freien arbeiten, und kann sogar ihr Leben retten.</German>
+        <Italian>Cucire un'imbottitura e una fodera nella pelle non rende solo l'indumento più confortevole. L'aggiunta di isolamento migliora anche la salute di chi lavora all'aperto e può addirittura salvargli la vita.</Italian>
+        <Spanish>Coser acolchado y forro a la piel no sólo hace que la prenda sea más cómoda. Al añadir aislamiento, también mejora la salud de quienes trabajan al aire libre, e incluso puede salvarles la vida.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP_PEDIA</Tag>
-        <English>A bigger business can produce a little more for export, not just to Europe but also to the surrounding First Nations and outdoor workers who appreciate warm clothing.  A fashionable leather clothier relies on word of mouth to increase business.</English>
+        <English>A bigger business can produce a little more for export, not just to Europe but also to the surrounding First Nations and outdoor workers who appreciate warm clothing. A fashionable leather clothier relies on word of mouth to increase business.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP_STRATEGY</Tag>
-        <English>Practical eople see the advantage of insulated clothing in a cold climate. Devout settlers are obsessed with religious prohibitions, so women of easy virtue can earn extra money wearing leather in private to dominate the pious.</English>
+        <English>Practical people see the advantage of insulated clothing in a cold climate. Devout settlers are obsessed with religious prohibitions, so women of easy virtue can earn extra money wearing leather in private to dominate the pious.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -261,7 +264,7 @@
         <Tag>TXT_KEY_SPECIALBUILDING_OIL_TRADER</Tag>
         <English>Cooking Oil Trader</English>
         <German>
-            <Text>Kochölhändler</Text>
+            <Text>Speiseölhändler</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
@@ -270,7 +273,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_HOUSE</Tag>
         <English>Cooking Oil Trader's House</English>
         <German>
-            <Text>Kochölhändlerhaus</Text>
+            <Text>Haus des Ölhändlers</Text>
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
@@ -280,7 +283,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_SHOP</Tag>
         <English>Cooking Oil Trader's Shop</English>
         <German>
-            <Text>Kochölhändlerladen</Text>
+            <Text>Speiseölladen</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
@@ -290,7 +293,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_FACTORY</Tag>
         <English>Cooking Oil Trader Factory</English>
         <German>
-            <Text>Kochölhändlerfabrik</Text>
+            <Text>Speiseölfabrik</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
@@ -300,7 +303,7 @@
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE</Tag>
         <English>Cooking Oil Trader's House</English>
         <German>
-            <Text>Kochölhändlerhaus</Text>
+            <Text>Haus des Ölhändlers</Text>
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
@@ -310,7 +313,7 @@
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP</Tag>
         <English>Cooking Oil Trader's Shop</English>
         <German>
-            <Text>Kochölhändlerladen</Text>
+            <Text>Speiseölladen</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
@@ -320,7 +323,7 @@
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY</Tag>
         <English>Cooking Oil Factory</English>
         <German>
-            <Text>Kochölhändlerfabrik</Text>
+            <Text>Speiseölfabrik</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
@@ -328,8 +331,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE_PEDIA</Tag>
-        <English>Pressing oil is an ancient craft in Europe, particularly in Mediterranean cultures. Equipment that crushes olives for their oil can be adapted to work with rapeseed.[NEWLINE]Before European contact cooking oil was essential for Pacific Northwest Native nations. Oolichan oil from candlefish made up so much of Native commerce that the trade routes were called grease trails.</English>
-        <German>TBD</German>
+        <English>Pressing oil is an ancient craft in Europe, particularly in Mediterranean cultures. Equipment that crushes olives for their oil can be adapted to work with rapeseed.[NEWLINE]Before European contact cooking oil was essential for Pacific Northwest Native nations. Oolichan oil from candlefish made up so much of Native commerce that the trade routes were called "grease trails".</English>
+        <French>Le pressage de l'huile est un artisanat ancien en Europe, notamment dans les cultures méditerranéennes. Les équipements qui écrasent les olives pour en extraire l'huile peuvent être adaptés au colza. Avant le contact avec les Européens, l'huile de cuisson était essentielle pour les nations autochtones du nord-ouest du Pacifique. L'huile d'oolichan provenant de la chandelle constituait une si grande partie du commerce amérindien que les routes commerciales étaient appelées "pistes de graisse".</French>
+        <German>Das Pressen von Öl ist ein altes Handwerk in Europa, insbesondere in den Mittelmeerkulturen. Die Geräte, mit denen Oliven zur Gewinnung von Öl gepresst werden, können auch für die Verarbeitung von Raps verwendet werden.[NEWLINE]Vor dem Kontakt mit den Europäern war Speiseöl für die Ureinwohner des pazifischen Nordwestens lebenswichtig. Oolichan-Öl aus Kerzenfisch machte einen so großen Teil des Handels der Ureinwohner aus, daß die Handelsrouten als "Fettstraßen" bezeichnet wurden.</German>
+        <Italian>La spremitura dell'olio è un'attività antica in Europa, in particolare nelle culture mediterranee. Le attrezzature che schiacciano le olive per ricavarne l'olio possono essere adattate alla colza.[NEWLINE]Prima del contatto europeo, l'olio da cucina era essenziale per i nativi del Pacifico nordoccidentale. L'olio di oolichan ricavato dal pesce candela costituiva una parte così importante del commercio dei nativi che le rotte commerciali venivano chiamate "vie del grasso".</Italian>
+        <Spanish>El prensado del aceite es un antiguo oficio en Europa, sobre todo en las culturas mediterráneas. Antes del contacto europeo, el aceite de cocina era esencial para las naciones indígenas del noroeste del Pacífico. El aceite de oolichan procedente del pez vela constituía una parte tan importante del comercio nativo que las rutas comerciales se llamaban "rutas de la grasa".</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE_STRATEGY</Tag>
@@ -361,7 +367,7 @@
         <Tag>TXT_KEY_SPECIALBUILDING_ROASTER</Tag>
         <English>Roastery</English>
         <German>
-            <Text>Erdnusrösterei</Text>
+            <Text>Erdnussrösterei</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
@@ -370,7 +376,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_ROASTER_HOUSE</Tag>
         <English>Roaster's House</English>
         <German>
-            <Text>Rösterhaus</Text>
+            <Text>Haus des Rösters</Text>
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
@@ -380,7 +386,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_ROASTER_SHOP</Tag>
         <English>Roaster's Shop</English>
         <German>
-            <Text>Rösterladen</Text>
+            <Text>Röstwarenladen</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
@@ -400,7 +406,7 @@
         <Tag>TXT_KEY_BUILDING_ROASTER_HOUSE</Tag>
         <English>Roaster's House</English>
         <German>
-            <Text>Rösterhaus</Text>
+            <Text>Haus des Rösters</Text>
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
@@ -410,7 +416,7 @@
         <Tag>TXT_KEY_BUILDING_ROASTER_SHOP</Tag>
         <English>Roaster's Shop</English>
         <German>
-            <Text>Erdnusrösterladen</Text>
+            <Text>Röstwarenladen</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
@@ -429,7 +435,10 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_HOUSE_PEDIA</Tag>
         <English>Peanuts are widely grown in the tropics and subtropics. Botanically they're a member of the bean family but in cooking they're used like a nut. Unlike most legumes peanut pods mature underground.</English>
-        <German>TBD</German>
+        <French>Les cacahuètes sont largement cultivées dans les régions tropicales et subtropicales. Sur le plan botanique, elles font partie de la famille des haricots, mais en cuisine, elles sont utilisées comme des noix. Contrairement à la plupart des légumineuses, les gousses d'arachide mûrissent sous terre.</French>
+        <German>Erdnüsse werden in den Tropen und Subtropen weit verbreitet angebaut. Botanisch gesehen gehören sie zur Familie der Bohnengewächse, aber in der Küche werden sie wie eine Nuss verwendet. Im Gegensatz zu den meisten Hülsenfrüchten reifen Erdnussschoten unterirdisch.</German>
+        <Italian>Le arachidi sono ampiamente coltivate nei tropici e nelle regioni subtropicali. Dal punto di vista botanico fanno parte della famiglia dei fagioli, ma in cucina vengono utilizzate come una noce. A differenza della maggior parte dei legumi, i baccelli delle arachidi maturano sottoterra.</Italian>
+        <Spanish>Los cacahuetes se cultivan ampliamente en las zonas tropicales y subtropicales. Botánicamente pertenecen a la familia de las judías, pero en la cocina se utilizan como frutos secos. A diferencia de la mayoría de las legumbres, las vainas de los cacahuetes maduran bajo tierra.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_HOUSE_STRATEGY</Tag>
@@ -470,7 +479,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_POTTERY_HOUSE</Tag>
         <English>Potter's House</English>
         <German>
-            <Text>Töpferhaus</Text>
+            <Text>Haus des Töpfers</Text>
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
@@ -500,7 +509,7 @@
         <Tag>TXT_KEY_BUILDING_POTTERY_HOUSE</Tag>
         <English>Potter's House</English>
         <German>
-            <Text>Töpferhaus</Text>
+            <Text>Haus des Töpfers</Text>
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
@@ -528,8 +537,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_HOUSE_PEDIA</Tag>
-        <English>Pottery is an ancient way to store grain. In the rainy insect-ridden New World pots hold enough grain to keep settlers alive through the winter until in the spring they can finally plant their new crops.</English>
-        <German>TBD</German>
+        <English>Pottery is an ancient way to store grain. In the rainy insect-ridden New World pots hold enough grain to keep settlers alive through the winter until they can finally plant their new crops in spring.</English>
+        <French>La poterie est un moyen ancien de stocker le grain. Dans le Nouveau Monde pluvieux et infesté d'insectes, les pots contiennent suffisamment de céréales pour permettre aux colons de survivre pendant l'hiver jusqu'à ce qu'ils puissent enfin planter leurs nouvelles cultures au printemps.</French>
+        <German>Töpferwaren sind eine uralte Methode zur Lagerung von Getreide. In der regnerischen, von Insekten heimgesuchten Neuen Welt enthielten die Töpfe genug Getreide, um die Siedler über den Winter am Leben zu erhalten, bis sie im Frühjahr endlich ihre neue Ernte einpflanzen konnten.</German>
+        <Italian>La ceramica è un modo antico di conservare il grano. Nel Nuovo Mondo, caratterizzato da piogge e insetti, i vasi contengono abbastanza grano per mantenere i coloni in vita durante l'inverno, fino a quando non possono piantare le nuove colture in primavera.</Italian>
+        <Spanish>La cerámica es una forma antigua de almacenar grano. En el lluvioso Nuevo Mundo, plagado de insectos, las vasijas contienen grano suficiente para mantener vivos a los colonos durante el invierno, hasta que por fin pueden plantar sus nuevas cosechas en primavera.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_HOUSE_STRATEGY</Tag>
@@ -570,7 +582,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_TAILOR_HOUSE</Tag>
         <English>Tailor's House</English>
         <German>
-            <Text>Schneiderhaus</Text>
+            <Text>Haus des Schneiders</Text>
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
@@ -600,7 +612,7 @@
         <Tag>TXT_KEY_BUILDING_TAILOR_HOUSE</Tag>
         <English>Tailor's House</English>
         <German>
-            <Text>Schneiderhaus</Text>
+            <Text>Haus des Schneiders</Text>
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
@@ -656,7 +668,7 @@
         <English>The tailors' factory demonstrates that menswear is widely available. It's proof that a city has arrived socially.</English>
         <German>TBD</German>
     </TEXT>
-   <!-- FIREWORKER -->
+    <!-- FIREWORKER -->
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_BLACK_POWDER</Tag>
         <English>Powder Shed</English>
@@ -669,11 +681,10 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_HOUSE</Tag>
         <English>Powder Maker's House</English>
-        <German>
-            <Text>Haus des Pulvermachers</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
+        <French>Maison du fabricant de poudre</French>
+        <German>Haus des Pulvermachers</German>
+        <Italian>Casa del polveriere</Italian>
+        <Spanish>Casa del polvorero</Spanish>
         <Russian>Дом пороховщика</Russian>
     </TEXT>
     <TEXT>
@@ -696,14 +707,13 @@
         </German>
         <Russian>Фабрика взрывчатки</Russian>
     </TEXT>
-   <TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE</Tag>
         <English>Powder Maker's House</English>
-        <German>
-            <Text>Haus des Pulvermachers</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
+        <French>Maison du fabricant de poudre</French>
+        <German>Haus des Pulvermachers</German>
+        <Italian>Casa del polveriere</Italian>
+        <Spanish>Casa del polvorero</Spanish>
         <Russian>Дом пороховщика</Russian>
     </TEXT>
     <TEXT>
@@ -726,10 +736,14 @@
         </German>
         <Russian>Фабрика взрывчатки</Russian>
     </TEXT>
-     <TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE_PEDIA</Tag>
         <English>Well away from other buildings the powder maker mixes gunpowder from sulphur, charcoal and saltpeter: ammunition for the soldiers' guns. In colonial times it's the only available explosive (dynamite will be invented in 1867) so it's also used for artillery, mining and road building.</English>
-        <German>TBD</German>
+        <French>A l'écart des autres bâtiments, le poudrier mélange la poudre à canon à partir de soufre, de charbon de bois et de salpêtre : des munitions pour les fusils des soldats. À l'époque coloniale, c'est le seul explosif disponible (la dynamite sera inventée en 1867). Elle est donc également utilisée pour l'artillerie, l'exploitation minière et la construction de routes.</French>
+        <German>Weit entfernt von anderen Gebäuden mischt der Pulvermacher Schießpulver aus Schwefel, Holzkohle und Salpeter für die Gewehre der Soldaten. In der Kolonialzeit ist es der einzige verfügbare Sprengstoff (Dynamit wird erst 1867 erfunden) und wird auch für die Artillerie, den Bergbau und den Straßenbau verwendet.</German>
+        <Italian>Ben lontano da altri edifici, il polveriere mescola la polvere da sparo con zolfo, carbone e salnitro: munizioni per i cannoni dei soldati. In epoca coloniale è l'unico esplosivo disponibile (la dinamite sarà inventata nel 1867), quindi viene utilizzato anche per l'artiglieria, le miniere e la costruzione di strade.</Italian>
+        <Spanish>Alejado de otros edificios, el polvorero mezcla pólvora a partir de azufre, carbón vegetal y salitre: munición para las armas de los soldados. En la época colonial es el único explosivo disponible (la dinamita se inventará en 1867), por lo que también se utiliza para la artillería, la minería y la construcción de carreteras.</Spanish>
+        <Russian>xxx</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE_STRATEGY</Tag>
@@ -760,27 +774,25 @@
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_BAKER</Tag>
         <English>Baker</English>
-        <German>
-            <Text>Bäckerei</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
+        <French>Boulanger</French>
+        <German>Bäcker</German>
+        <Italian>Fornaio</Italian>
+        <Spanish>Panadero</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_BAKER_HOUSE</Tag>
         <English>Baker's House</English>
-        <German>
-            <Text>Bäckerhaus</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
+        <French>Maison du boulanger</French>
+        <German>Haus des Bäckers</German>
+        <Italian>Casa del fornaio</Italian>
+        <Spanish>Casa del panadero</Spanish>
         <Russian>Дом пекаря</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_BAKER_SHOP</Tag>
         <English>Baker's Shop</English>
         <German>
-            <Text>Backladen</Text>
+            <Text>Bäckerladen</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
@@ -789,21 +801,19 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_BAKERY</Tag>
         <English>Bakery</English>
-        <German>
-            <Text>Bäckerei</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
+        <French>Boulangerie</French>
+        <German>Bäckerei</German>
+        <Italian>Panificio</Italian>
+        <Spanish>Panadería</Spanish>
         <Russian>Фабрика выпечки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_HOUSE</Tag>
         <English>Baker's House</English>
-        <German>
-            <Text>Bäckerhaus</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
+        <French>Maison du boulanger</French>
+        <German>Haus des Bäckers</German>
+        <Italian>Casa del fornaio</Italian>
+        <Spanish>Casa del panadero</Spanish>
         <Russian>Дом пекаря</Russian>
     </TEXT>
     <TEXT>
@@ -819,22 +829,27 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKERY</Tag>
         <English>Bakery</English>
-        <German>
-            <Text>Bäckerei</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
+        <French>Boulangerie</French>
+        <German>Bäckerei</German>
+        <Italian>Panificio</Italian>
+        <Spanish>Panadería</Spanish>
         <Russian>Фабрика выпечки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_HOUSE_PEDIA</Tag>
         <English>At first every household bakes its own bread but soon the baker's house centralizes food production. The baker starts work well before dawn so that households can have their daily bread. Settlers who remember the early starvation days continue to grow squash, beans and corn but new arrivals prefer familiar food from the old country.</English>
-        <German>TBD</German>
+        <French>Au début, chaque foyer cuit son propre pain, mais bientôt la maison du boulanger centralise la production alimentaire. Le boulanger commence à travailler bien avant l'aube pour que les ménages puissent avoir leur pain quotidien. Les colons qui se souviennent des premiers jours de famine continuent de cultiver des courges, des haricots et du maïs, mais les nouveaux arrivants préfèrent les aliments familiers du vieux pays.</French>
+        <German>Zunächst bäckt jeder Haushalt sein eigenes Brot, doch schon bald wird die Lebensmittelproduktion durch die Bäckereien zentralisiert. Der Bäcker beginnt seine Arbeit lange vor dem Morgengrauen, damit die Haushalte ihr tägliches Brot bekommen. Siedler, die sich an die frühen Hungertage erinnern, bauen weiterhin Kürbisse, Bohnen und Mais an, aber Neuankömmlinge bevorzugen die vertrauten Lebensmittel aus dem alten Land.</German>
+        <Italian>All'inizio ogni famiglia prepara il proprio pane, ma presto la casa del fornaio centralizza la produzione di cibo. Il fornaio inizia a lavorare molto prima dell'alba, in modo che le famiglie possano avere il pane quotidiano. I coloni che ricordano i primi tempi di fame continuano a coltivare zucche, fagioli e mais, ma i nuovi arrivati preferiscono il cibo familiare del vecchio Paese.</Italian>
+        <Spanish>Al principio, cada hogar hornea su propio pan, pero pronto la casa del panadero centraliza la producción de alimentos. El panadero empieza a trabajar mucho antes del amanecer para que los hogares puedan tener su pan diario. Los colonos que recuerdan los primeros días de hambruna siguen cultivando calabaza, judías y maíz, pero los recién llegados prefieren la comida familiar del viejo país.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_HOUSE_STRATEGY</Tag>
         <English>Having a bakery means each household doesn't need to bake its own bread. That allows other colonists to spend time on what they do best. Specialization helps the economy to grow, a concept soon popularized in books by economists Adam Smith and David Ricardo.</English>
-        <German>TBD</German>
+        <French>Le fait d'avoir une boulangerie signifie que chaque foyer n'a pas besoin de cuire son propre pain. Cela permet aux autres colons de consacrer du temps à ce qu'ils font le mieux. La spécialisation favorise la croissance de l'économie, un concept bientôt popularisé dans les livres des économistes Adam Smith et David Ricardo.</French>
+        <German>Mit einer Bäckerei muss nicht jeder Haushalt sein eigenes Brot backen. So können die anderen Kolonisten ihre Zeit mit dem verbringen, was sie am besten können. Spezialisierung hilft der Wirtschaft zu wachsen, ein Konzept, das schon bald in den Büchern der Ökonomen Adam Smith und David Ricardo popularisiert wurde.</German>
+        <Italian>Avere un panificio significa che ogni famiglia non ha bisogno di cuocere il proprio pane. Questo permette agli altri coloni di dedicare il loro tempo a ciò che sanno fare meglio. La specializzazione aiuta l'economia a crescere, un concetto presto reso popolare nei libri degli economisti Adam Smith e David Ricardo.</Italian>
+        <Spanish>Tener una panadería significa que cada hogar no necesita hornear su propio pan. Eso permite a los demás colonos dedicar su tiempo a lo que mejor saben hacer. La especialización contribuye al crecimiento de la economía, un concepto que pronto se popularizó en los libros de los economistas Adam Smith y David Ricardo.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_SHOP_PEDIA</Tag>

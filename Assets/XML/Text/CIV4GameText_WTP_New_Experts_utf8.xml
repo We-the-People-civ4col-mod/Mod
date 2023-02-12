@@ -343,24 +343,24 @@
     <!-- LOGWOOD_OLIVES_PLANTER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_OLIVES_PLANTER</Tag>
-        <English>Expert Olives Planter:Expert Olives Planters</English>
+        <English>Expert Olive Picker:Expert Olive Pickers</English>
         <French>
-            <Text>Expert planteur de olives:Experts planteurs de olives</Text>
+            <Text>Cueilleur de olives expert:Cueilleurs de olives expert</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Erfahrener Olivenpflanzer:Erfahrene Olivenpflanzer</Text>
+            <Text>Erfahrener Oliven-Sammler:Erfahrene Oliven-Sammler</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Esperto piantatore di olive:Esperti piantatori di olive</Text>
+            <Text>Raccoglitore di olive esperto:Raccoglitori di olive esperti</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Experto plantador de aceitunas:Expertos plantador de aceitunas</Text>
+            <Text>Recolector de aceitunas experto:Recolectores de aceitunas expertos</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -368,24 +368,24 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OLIVES_PLANTER</Tag>
-        <English>Expert Olive Planter:Expert Olive Planters</English>
+        <English>Expert Olive Picker:Expert Olive Pickers</English>
         <French>
-            <Text>Expert planteur de olives:Experts planteurs de olives</Text>
+            <Text>Cueilleur de olives expert:Cueilleurs de olives expert</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Erfahrener Olivenpflanzer:Erfahrene Olivenpflanzer</Text>
+            <Text>Erfahrener Oliven-Sammler:Erfahrene Oliven-Sammler</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Esperto piantatore di olive:Esperti piantatori di olive</Text>
+            <Text>Raccoglitore di olive esperto:Raccoglitori di olive esperti</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Experto plantador de aceitunas:Expertos plantador de aceitunas</Text>
+            <Text>Recolector de aceitunas experto:Recolectores de aceitunas expertos</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -395,17 +395,17 @@
         <Tag>TXT_KEY_UNIT_OLIVES_PLANTER_PEDIA</Tag>
         <English>Olive trees produce either table olives or olives for oil. Spanish colonists brought the olive to the New World in 1560, where its cultivation prospered in present-day Peru, Chile, and Argentina. In the 18th century Spanish missionaries planted olive trees in California.[NEWLINE]Before European contact cooking oil was essential for Pacific Northwest Native nations. Candlefish oil was so central to Native commerce that the trade routes were called grease trails.</English>
         <French>Les oliviers produisent soit des olives de table, soit des olives à huile. Les colons espagnols ont introduit l'olive dans le Nouveau Monde en 1560, où sa culture a prospéré dans les pays actuels que sont le Pérou, le Chili et l'Argentine. Au XVIIIe siècle, les missionnaires espagnols ont planté des oliviers en Californie.[NEWLINE]Avant le contact avec les Européens, l'huile de cuisson était essentielle pour les nations autochtones du nord-ouest du Pacifique. L'huile d'oolichan provenant de la chandelle constituait une si grande partie du commerce amérindien que les routes commerciales étaient appelées "pistes de graisse".</French>
-        <German>Olivenbäume liefern entweder Tafeloliven oder Oliven zur Ölgewinnung. Spanische Kolonisten brachten die Olive im Jahr 1560 in die Neue Welt, wo ihr Anbau im heutigen Peru, Chile und Argentinien florierte. Im 18. Jahrhundert pflanzten spanische Missionare Olivenbäume in Kalifornien.[NEWLINE]Vor dem Kontakt mit den Europäern war Speiseöl für die Ureinwohner des pazifischen Nordwestens lebenswichtig. Der Handel Oolichan-Öl aus Kerzenfisch hatte eine so große Bedeutung für die Ureinwohner, dass die Handelsrouten als "Fettstraßen" bezeichnet wurden.</German>
+        <German>Olivenbäume liefern entweder Tafeloliven oder Oliven zur Ölgewinnung. Spanische Kolonisten brachten die Olive im Jahr 1560 in die Neue Welt, wo ihr Anbau im heutigen Peru, Chile und Argentinien florierte. Im 18. Jahrhundert pflanzten spanische Missionare Olivenbäume in Kalifornien.[NEWLINE]Vor dem Kontakt mit den Europäern war Speiseöl für die Ureinwohner des pazifischen Nordwestens lebenswichtig. Der Handel Oolichan-Öl aus Kerzenfisch hatte eine so große Bedeutung für die Ureinwohner, daß die Handelsrouten als "Fettstraßen" bezeichnet wurden.</German>
         <Italian>Gli olivi producono olive da tavola o olive da olio. I coloni spagnoli portarono l'olivo nel Nuovo Mondo nel 1560, dove la sua coltivazione prosperò negli attuali Perù, Cile e Argentina. Nel XVIII secolo i missionari spagnoli piantarono olivi in California.[NEWLINE]Prima del contatto europeo, l'olio da cucina era essenziale per i nativi del Pacifico nordoccidentale. L'olio di oolichan ricavato dal pesce candela costituiva una parte così importante del commercio dei nativi che le rotte commerciali venivano chiamate "vie del grasso".</Italian>
         <Spanish>Los olivos producen aceitunas de mesa o aceitunas para aceite. Los colonos españoles llevaron el olivo al Nuevo Mundo en 1560, donde su cultivo prosperó en los actuales Perú, Chile y Argentina. En el siglo XVIII, los misioneros españoles plantaron olivos en California.[NEWLINE]Antes del contacto europeo, el aceite de cocina era esencial para las naciones indígenas del noroeste del Pacífico. El aceite de oolichan procedente del pez vela constituía una parte tan importante del comercio nativo que las rutas comerciales se llamaban "rutas de la grasa".</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OLIVES_PLANTER_STRATEGY</Tag>
-        <English>The olive is a small tree originating in the Mediterranean basin. Olives are one of the core ingredients in Mediterranean cuisine. The olive tree has thousands of cultivars.[NEWLINE]When assigned to the Olive Planter profession, the expert can gather double the olives in the same amount of time it would take a regular colonist.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
+        <English>The olive is a small tree originating in the Mediterranean basin. Olives are one of the core ingredients in Mediterranean cuisine. The olive tree has thousands of cultivars.[NEWLINE]When assigned to the Olive Picker profession, the expert can gather double the olives in the same amount of time it would take a regular colonist.</English>
+        <French>L'olive est un petit arbre originaire du bassin méditerranéen. L'olive est l'un des principaux ingrédients de la cuisine méditerranéenne. L'olivier compte des milliers de cultivars.</French>
+        <German>Die Olive ist ein kleiner Baum, der im Mittelmeerraum beheimatet ist. Oliven sind eine der wichtigsten Zutaten der mediterranen Küche. Der Olivenbaum hat Tausende von Kultivaren.</German>
+        <Italian>L'olivo è un piccolo albero originario del bacino del Mediterraneo. Le olive sono uno degli ingredienti principali della cucina mediterranea. L'olivo ha migliaia di cultivar.</Italian>
+        <Spanish>El olivo es un árbol pequeño originario de la cuenca mediterránea. Las aceitunas son uno de los ingredientes básicos de la cocina mediterránea. El olivo tiene miles de variedades.</Spanish>
     </TEXT>
     <!-- PEANUT_PLANTER -->
     <TEXT>
@@ -811,11 +811,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_PLANTER_STRATEGY</Tag>
-        <English>Yerba leaves are steeped in hot water to make a caffeinated beverage: yerba mate. Brewed cold, it is used to make tereré.[NEWLINE]When assigned to the yerba planter profession, the [LINK=UNIT_YERBA_PLANTER]expert yerba planter[\LINK] can gather twice as many yerba leaves in the same time as a regular colonist.</English>
-        <French>Les feuilles de yerba sont infusées dans de l'eau chaude pour obtenir une boisson caféinée : le yerba mate. Brassée froide, elle est utilisée pour faire du terere.[NEWLINE]Lorsqu'il est affecté à la profession de planteur de yerba, le [LINK=UNIT_YERBA_PLANTER]planteur de yerba expert[\LINK] peut récolter deux fois plus de feuilles de yerba dans le même temps qu'un colon ordinaire.</French>
-        <German>Yerba-Blätter werden in heißem Wasser eingeweicht, um ein koffeinhaltiges Getränk herzustellen: Mate-Tee. Kalt gebraut, wird er zur Herstellung von Terere verwendet.[NEWLINE]Als Yerba-Pflanzer kann ein [LINK=UNIT_YERBA_PLANTER]erfahrener Yerba-Pflanzer[\LINK] doppelt so viele Yerba-Blätter in derselben Zeit sammeln wie ein normaler Kolonist.</German>
-        <Italian>Le foglie di yerba vengono messe in infusione in acqua calda per ottenere una bevanda a base di caffeina: la yerba mate. Preparato a freddo, viene usato per fare il terere.[NEWLINE]Se assegnato alla professione di piantatore di yerba, il [LINK=UNIT_YERBA_PLANTER]piantatore di yerba esperto[\LINK] può raccogliere il doppio delle foglie di yerba nello stesso tempo di un normale colono.</Italian>
-        <Spanish>Las hojas de yerba se remojan en agua caliente para preparar una bebida con cafeína: la yerba mate. Elaborado en frío, se utiliza para hacer terere.[NEWLINE]Cuando se le asigna la profesión de plantador de yerba, el [LINK=UNIT_YERBA_PLANTER]plantador de yerba experto[\LINK] puede recolectar el doble de hojas de yerba en el mismo tiempo que un colono normal.</Spanish>
+        <English>Yerba leaves are steeped in hot water to make a caffeinated beverage: yerba mate. Brewed cold, it is used to make tereré.[NEWLINE]When assigned to the [LINK=PROFESSION_YERBA_COLLECTOR]yerba collector[\LINK] profession, the expert yerba planter can gather twice as many yerba leaves in the same time as a regular colonist.</English>
+        <French>Les feuilles de yerba sont infusées dans de l'eau chaude pour obtenir une boisson caféinée : le yerba mate. Brassée froide, elle est utilisée pour faire du terere.[NEWLINE]Lorsqu'il est affecté à la profession de [LINK=PROFESSION_YERBA_COLLECTOR]collecteur de yerba[\LINK], le planteur de yerba expert peut récolter deux fois plus de feuilles de yerba dans le même temps qu'un colon ordinaire.</French>
+        <German>Mate-Blätter werden in heißem Wasser eingeweicht, um ein koffeinhaltiges Getränk herzustellen: Mate-Tee. Kalt gebraut, wird er zur Herstellung von Terere verwendet.[NEWLINE]Als [LINK=PROFESSION_YERBA_COLLECTOR]Yerba-Sammler[\LINK] kann ein erfahrener Yerba-Pflanzer doppelt so viele Mate-Blätter in derselben Zeit sammeln wie ein normaler Kolonist.</German>
+        <Italian>Le foglie di yerba vengono messe in infusione in acqua calda per ottenere una bevanda a base di caffeina: la yerba mate. Preparato a freddo, viene usato per fare il terere.[NEWLINE]Se assegnato alla professione di [LINK=PROFESSION_YERBA_COLLECTOR]raccoglitore di yerba[\LINK], il piantatore di yerba esperto può raccogliere il doppio delle foglie di yerba nello stesso tempo di un normale colono.</Italian>
+        <Spanish>Las hojas de yerba se remojan en agua caliente para preparar una bebida con cafeína: la yerba mate. Elaborado en frío, se utiliza para hacer terere.[NEWLINE]Cuando se le asigna la profesión de [LINK=PROFESSION_YERBA_COLLECTOR]recolector de yerba[\LINK], el plantador de yerba experto puede recolectar el doble de hojas de yerba en el mismo tiempo que un colono normal.</Spanish>
     </TEXT>
     <!-- HERDER -->
     <TEXT>
@@ -1155,9 +1155,9 @@
     <!-- YERBA_TRADER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_YERBA_TRADER</Tag>
-        <English>Master Yerba-Mate Trader:Master Yerba-Mate Traders</English>
+        <English>Master Yerba-Maté Trader:Master Yerba-Maté Traders</English>
         <French>
-            <Text>Maître négociant en maté:Maîtres négociants en maté</Text>
+            <Text>Maître marchand en maté:Maîtres marchands en maté</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -1180,9 +1180,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_TRADER</Tag>
-        <English>Master Yerba-Mate Trader:Master Yerba-Mate Traders</English>
+        <English>Master Yerba-Maté Trader:Master Yerba-Maté Traders</English>
         <French>
-            <Text>Maître négociant en maté:Maîtres négociants en maté</Text>
+            <Text>Maître marchand en maté:Maîtres marchands en maté</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -1205,7 +1205,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_TRADER_PEDIA</Tag>
-        <English>Getting started in the yerba-mate trade meant dealing with two especially dangerous Indigenous nations: the Guaraní and Tupí. To add to the challenge, yerba was found in only two regions, Amambay and Alto Paraná.</English>
+        <English>Getting started in the yerba-maté trade meant dealing with two especially dangerous Indigenous nations: the Guaraní and Tupí. To add to the challenge, yerba was found in only two regions, Amambay and Alto Paraná.</English>
         <French>xxx</French>
         <German>xxx</German>
         <Italian>xxx</Italian>
@@ -1213,7 +1213,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_TRADER_STRATEGY</Tag>
-        <English>Yerba leaves are steeped in hot water to make a caffeinated beverage: yerba-mate. Brewed cold, it is used to make tereré.[NEWLINE]When assigned to the Yerba-Mate Trader profession, the master can market twice the quantity of yerba leaves in the same time as a regular colonist.</English>
+        <English>Yerba leaves are steeped in hot water to make a caffeinated beverage: yerba-maté. Brewed cold, it is used to make tereré.[NEWLINE]When assigned to the yerba-maté trader profession, the master can market twice the quantity of yerba leaves in the same time as a regular colonist.</English>
         <French>xxx</French>
         <German>xxx</German>
         <Italian>xxx</Italian>
@@ -1478,6 +1478,7 @@
         <German>Kohle entsteht, wenn abgestorbenes Pflanzenmaterial zu Torf zerfällt und durch die Hitze und den Druck der oberen Erdschichten über Millionen von Jahren in Kohle umgewandelt wird. In der Kolonialzeit wurde Kohle zum Heizen verwendet, nicht für die Industrie.</German>
         <Italian>Il carbone si forma quando la materia vegetale morta si decompone in torba e viene convertita in carbone dal calore e dalla pressione della sepoltura profonda per milioni di anni. Durante l'epoca coloniale il carbone viene utilizzato per il riscaldamento, non per l'industria.</Italian>
         <Spanish>El carbón se forma cuando la materia vegetal muerta se descompone en turba y se convierte en carbón por el calor y la presión del enterramiento profundo durante millones de años. En la época colonial, el carbón se utiliza para calefacción, no para la industria.</Spanish>
+
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COAL_MINER_STRATEGY</Tag>
@@ -1618,7 +1619,7 @@
         <English>The tailor creates the well-dressed man, stylish and ready to succeed at diplomacy, business and romance.[NEWLINE]When assigned to the Tailor profession, the master tailor can complete twice the clothes in the same time as a regular colonist.</English>
         <French>Le tailleur crée l'homme bien habillé, élégant et prêt à réussir dans la diplomatie, les affaires et la romance.[NEWLINE]Lorsqu'il est affecté à la profession de tailleur, le maître tailleur peut réaliser deux fois plus de vêtements dans le même temps qu'un colon ordinaire.</French>
         <German>Der Schneider erschafft den gut gekleideten Mann, stilvoll und bereit, in der Diplomatie, im Geschäftsleben und in der Romantik erfolgreich zu sein.[NEWLINE]Wenn er dem Beruf des Schneiders zugewiesen wird, kann der Schneidermeister doppelt so viele Kleidungsstücke in derselben Zeit anfertigen wie ein normaler Kolonist.</German>
-        <Italian>Il sarto crea l'uomo ben vestito, elegante e pronto ad avere successo nella diplomazia, negli affari e nel romanticismo.[NEWLINE]Quando è assegnato alla professione di sarto, il maestro sarto può completare il doppio dei vestiti nello stesso tempo di un normale colono.</Italian>
+        <Italian>Il sarto crea l'uomo ben vestito, elegante e pronto ad avere successo nella diplomazia, negli affari e nel romanticismo.[NEWLINE]Quando è assegnato alla professione di sarto, il mastro sarto può completare il doppio dei vestiti nello stesso tempo di un normale colono.</Italian>
         <Spanish>El sastre crea al hombre bien vestido, con estilo y listo para triunfar en la diplomacia, los negocios y el romance.[NEWLINE]Cuando se le asigna la profesión de Sastre, el maestro sastre puede completar el doble de ropa en el mismo tiempo que un colono normal.</Spanish>
     </TEXT>
     <!-- ROASTER -->
@@ -1818,7 +1819,7 @@
         <Tag>TXT_KEY_UNIT_MILK_MAID_STRATEGY</Tag>
         <English>Milkmaids work hard to deliver much-needed protein to settlers young and old. Anyone who thinks the work is easy hasn't been close enough to the business end of a cow. Milkmaids are also immune to smallpox, a rare advantage in colonial times.[NEWLINE]When assigned to the Milkmaid profession, the skilled milkmaid can get twice the milk in the same time as a regular colonist.</English>
         <French>Les laitières travaillent dur pour fournir les protéines dont les colons, jeunes et vieux, ont tant besoin. Quiconque pense que ce travail est facile n'a jamais été assez près de l'extrémité d'une vache. Les laitières sont également immunisées contre la variole, un avantage rare à l'époque coloniale.[NEWLINE]Lorsqu'elle est affectée à la profession de laitière, la laitière qualifiée peut obtenir deux fois plus de lait dans le même temps qu'un colon ordinaire.</French>
-        <German>Milchmädchen arbeiten hart, um die Siedler, ob jung oder alt, mit dem dringend benötigten Eiweiß zu versorgen. Wer glaubt, dass die Arbeit leicht ist, war noch nicht nah genug am Arbeitsende einer Kuh. Milchmädchen sind auch immun gegen Pocken, ein seltener Vorteil in der Kolonialzeit.[NEWLINE]Wenn sie den Beruf des Milchmädchens ausübt, kann sie in der gleichen Zeit doppelt so viel Milch wie ein normaler Kolonist produzieren.</German>
+        <German>Milchmädchen arbeiten hart, um die Siedler, ob jung oder alt, mit dem dringend benötigten Eiweiß zu versorgen. Wer glaubt, daß die Arbeit leicht ist, war noch nicht nah genug am Hinterteil einer Kuh. Milchmädchen sind auch immun gegen Pocken, ein seltener Vorteil in der Kolonialzeit.[NEWLINE]Wenn ein fleißiges Milchmädchen den Beruf des Milchmädchens ausübt, kann sie in der gleichen Zeit doppelt so viel Milch wie ein normaler Kolonist produzieren.</German>
         <Italian>Le lattaie lavorano duramente per fornire le proteine tanto necessarie ai coloni giovani e anziani. Chiunque pensi che il lavoro sia facile non è stato abbastanza vicino alla parte commerciale di una mucca. Le lattaie sono anche immuni al vaiolo, un vantaggio raro in epoca coloniale.[NEWLINE]Se assegnata alla professione di lattaio, la lattaia esperta può ottenere il doppio del latte nello stesso tempo di un normale colono.</Italian>
         <Spanish>Las lecheras trabajan duro para suministrar las proteínas que tanto necesitan los colonos jóvenes y viejos. Cualquiera que piense que el trabajo es fácil no se ha acercado lo suficiente al negocio de una vaca. Las lecheras también son inmunes a la viruela, una ventaja poco común en la época colonial.[NEWLINE]Cuando se le asigna la profesión de lechera, la lechera experta puede obtener el doble de leche en el mismo tiempo que un colono normal.</Spanish>
     </TEXT>
@@ -2547,7 +2548,7 @@
         <Tag>TXT_KEY_UNIT_HARLOT_STRATEGY</Tag>
         <English>Lonely men often find happiness with a whore who also knows how to be a good listener. For the harlot herself, being in a world with five men for every woman means the chance to find her own husband instead of having her marriage arranged by her parents.</English>
         <French>Les hommes solitaires trouvent souvent le bonheur auprès d'une prostituée qui sait aussi être à l'écoute. Pour la prostituée elle-même, le fait d'être dans un monde où il y a cinq hommes pour chaque femme signifie la possibilité de trouver son propre mari au lieu de voir son mariage arrangé par ses parents.</French>
-        <German>Einsame Männer finden oft ihr Glück bei einer Hure, die auch ein guter Zuhörer ist. Für die Hure selbst bedeutet die Tatsache, dass in einer Welt mit fünf Männern auf eine Frau fünf Männer kommen, die Chance, ihren eigenen Ehemann zu finden, anstatt von ihren Eltern verheiratet zu werden.</German>
+        <German>Einsame Männer finden oft ihr Glück bei einer Hure, die auch ein guter Zuhörer ist. Für die Hure selbst bedeutet die Tatsache, daß in einer Welt mit fünf Männern auf eine Frau fünf Männer kommen, die Chance, ihren eigenen Ehemann zu finden, anstatt von ihren Eltern verheiratet zu werden.</German>
         <Italian>Gli uomini soli spesso trovano la felicità con una prostituta che sa anche essere una buona ascoltatrice. Per la prostituta stessa, trovarsi in un mondo con cinque uomini per ogni donna significa avere la possibilità di trovarsi un marito da sola, invece di avere un matrimonio combinato dai genitori.</Italian>
         <Spanish>Los hombres solitarios suelen encontrar la felicidad con una ramera que también sabe escuchar bien. Para la propia ramera, estar en un mundo con cinco hombres por cada mujer significa tener la oportunidad de encontrar su propio marido en lugar de que sus padres le arreglen el matrimonio.</Spanish>
     </TEXT>
@@ -2582,7 +2583,7 @@
         <Tag>TXT_KEY_UNIT_JUDGE_PEDIA</Tag>
         <English>A judge presides over court proceedings, hears all the witnesses and any other evidence presented by the barristers or solicitors of the case, assesses the credibility and arguments of the parties, and then issues a ruling in the case based on his interpretation of the law and his own personal judgment. A judge is expected to conduct the trial impartially in an open court.</English>
         <French>Un juge préside les procédures judiciaires, entend tous les témoins et toute autre preuve présentée par les avocats ou les avoués de l'affaire, évalue la crédibilité et les arguments des parties, puis rend une décision sur l'affaire en se basant sur son interprétation de la loi et son jugement personnel. On attend d'un juge qu'il mène le procès de manière impartiale dans un tribunal ouvert.</French>
-        <German>Ein Richter leitet die Verhandlung, hört alle Zeugen und alle anderen von den Anwälten vorgelegten Beweise an, beurteilt die Glaubwürdigkeit und die Argumente der Parteien und fällt dann auf der Grundlage seiner Rechtsauffassung und seines persönlichen Urteils eine Entscheidung in der Sache. Von einem Richter wird erwartet, dass er die Verhandlung unparteiisch und in öffentlicher Sitzung führt.</German>
+        <German>Ein Richter leitet die Verhandlung, hört alle Zeugen und alle anderen von den Anwälten vorgelegten Beweise an, beurteilt die Glaubwürdigkeit und die Argumente der Parteien und fällt dann auf der Grundlage seiner Rechtsauffassung und seines persönlichen Urteils eine Entscheidung in der Sache. Von einem Richter wird erwartet, daß er die Verhandlung unparteiisch und in öffentlicher Sitzung führt.</German>
         <Italian>Un giudice presiede il procedimento giudiziario, ascolta tutti i testimoni e qualsiasi altra prova presentata dagli avvocati o dai legali della causa, valuta la credibilità e le argomentazioni delle parti, quindi emette una sentenza sulla base della sua interpretazione della legge e del suo giudizio personale. Il giudice è tenuto a condurre il processo in modo imparziale in un'aula aperta.</Italian>
         <Spanish>El juez preside los procedimientos judiciales, escucha a todos los testigos y cualquier otra prueba presentada por los abogados o procuradores del caso, evalúa la credibilidad y los argumentos de las partes y, a continuación, dicta sentencia en el caso basándose en su interpretación de la ley y en su propio criterio personal. El juez debe dirigir el juicio con imparcialidad en audiencia pública.</Spanish>
     </TEXT>
