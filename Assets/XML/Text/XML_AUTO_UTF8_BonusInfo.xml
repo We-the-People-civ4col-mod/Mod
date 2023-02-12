@@ -141,7 +141,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HARDWOOD_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hardwood[COLOR_REVERT]] is found in broad-leaved temperate and tropical forests. Tropical hardwoods like mahogany, are valued for furniture. Teak, while not native, can be grown in the Caribbean and is important in ship-building.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hardwood[COLOR_REVERT] is found in broad-leaved temperate and tropical forests. Tropical hardwoods like mahogany, are valued for furniture. Teak, while not native, can be grown in the Caribbean and is important in ship-building.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hartholz[COLOR_REVERT] TODO</German>
     </TEXT>	
     <TEXT>
@@ -206,7 +206,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_YERBA_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]]The leaves of [COLOR_UNIT_TEXT]yerba plants[COLOR_REVERT] are steeped in hot water to make a caffeinated beverage: yerba mate. Brewed cold, it is used to make tereré. The Guaraní and Tupí cultivated yerba mate prior to European colonization.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]]The leaves of [COLOR_UNIT_TEXT]yerba plants[COLOR_REVERT] are steeped in hot water to make a caffeinated beverage: yerba maté. Brewed cold, it is used to make tereré. The Guarani and Tupi cultivated yerba mate prior to European colonization.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Yerbapflanzen[COLOR_REVERT] </German>
     </TEXT>	
     <TEXT>
@@ -574,7 +574,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CANADA_GOOSE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]One[COLOR_HIGHLIGHT_TEXT]Canada goose[COLOR_REVERT] is a big meal for a hunting party.  In the north wild game is often very lean. Geese are a good source of fat in temperate or cold climates. Geese are strong fliers. Flocks of geese can be found anywhere on land or water.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The Canada goose is a large aquatic bird. As a black goose it's in a different genera from domestic grey and white geese. Fairly tolerant of cold, as winter comes it migrates south in large V-shaped flocks. It's hunted and is an especially good source of fat. A single cooked goose will provide several bowls of grease. With its wing an adult goose can break a man's arm.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]One [COLOR_HIGHLIGHT_TEXT]Canada goose[COLOR_REVERT] is a big meal for a hunting party.  In the north wild game is often very lean. Geese are a good source of fat in temperate or cold climates. Geese are strong fliers. Flocks of geese can be found anywhere on land or water.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The Canada goose is a large aquatic bird. As a black goose it's in a different genera from domestic grey and white geese. Fairly tolerant of cold, as winter comes it migrates south in large V-shaped flocks. It's hunted and is an especially good source of fat. A single cooked goose will provide several bowls of grease. With its wing an adult goose can break a man's arm.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kanadagans[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -604,7 +604,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PARROTS_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The[COLOR_HIGHLIGHT_TEXT]parrot[COLOR_REVERT], a tropical bird, is valuable for its colourful feathers. [PARAGRAPH:1]It's also an exotic pet. Pirate captains in particular are expected have parrots on their shoulder.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]There are 398 species of parrots, birds found mostly in tropical and subtropical regions. Many parrots are vividly coloured, and some are multi-coloured. Parrots, along with ravens, crows, jays, and magpies, are among the most intelligent birds, and the ability of some species to imitate human speech enhances their popularity as pets. Parrots invariably require an enormous amount of attention, care, and intellectual stimulation to thrive, akin to that required by a three-year-old child, which many people find themselves unable to provide in the long term.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]parrot[COLOR_REVERT], a tropical bird, is valuable for its colourful feathers. [PARAGRAPH:1]It's also an exotic pet. Pirate captains in particular are expected have parrots on their shoulder.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]There are 398 species of parrots, birds found mostly in tropical and subtropical regions. Many parrots are vividly coloured, and some are multi-coloured. Parrots, along with ravens, crows, jays, and magpies, are among the most intelligent birds, and the ability of some species to imitate human speech enhances their popularity as pets. Parrots invariably require an enormous amount of attention, care, and intellectual stimulation to thrive, akin to that required by a three-year-old child, which many people find themselves unable to provide in the long term.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Papageien[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -938,7 +938,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_OLIVES_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Olive trees[COLOR_REVERT] grow on[COLOR_REVERT] [LINK=TERRAIN_GRASS]grass[\LINK] terrain.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]]The olive is a small tree originating in the Mediterranean basin. Olives are one of the core ingredients in Mediterranean cuisine. The olive tree has thousands of cultivars..</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Olive trees[COLOR_REVERT] grow on[COLOR_REVERT] [LINK=TERRAIN_GRASS]grass[\LINK] terrain.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The olive is a small tree originating in the Mediterranean basin. Olives are one of the core ingredients in Mediterranean cuisine. The olive tree has thousands of cultivars..</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Olivenbäume[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1] TODO.</German>
     </TEXT>
     <TEXT>
