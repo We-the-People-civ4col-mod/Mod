@@ -54,17 +54,20 @@
         <English>[ICON_BULLET]Migrates from Europe</English>
         <French>[ICON_BULLET]Migre depuis l'Europe</French>
         <German>[ICON_BULLET]Migriert aus Europa</German>
+        <Russian>[ICON_BULLET]Мигрирует из Европы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BUYABLE_IN_EUROPE</Tag>
         <English>[ICON_BULLET]Buyable in Europe</English>
         <French>[ICON_BULLET]Achetable en Europe</French>
         <German>[ICON_BULLET]Kaufbar in Europa</German>
+        <Russian>[ICON_BULLET]Можно купить в Европе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_TAUGHT_BY_NATIVES</Tag>
         <English>[ICON_BULLET]Trained by Natives</English>
         <French>[ICON_BULLET]Formé par les indigènes</French>
         <German>[ICON_BULLET]Ausbildbar durch Ureinwohner</German>
+        <Russian>[ICON_BULLET]Обучается у индейцев</Russian>
     </TEXT>
 </Civ4GameText>

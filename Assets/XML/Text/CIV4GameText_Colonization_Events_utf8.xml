@@ -674,18 +674,21 @@
         <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT]Maximum Tax increase to %D2% total</English>
         <French>[ICON_BULLET]Augmentation maximale du taux d'impôt de [COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] pour atteindre %D2%</French>
         <German>[ICON_BULLET]Maximalsteuer erhöht sich um [COLOR_NEGATIVE_TEXT]%D1%[COLOR_REVERT] auf %D2%</German>
+        <Russian>[ICON_BULLET]Максимальная налоговая ставка повышена на [COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] до %D2%</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MAXTAXDECREASE</Tag>
         <English>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1%%[COLOR_REVERT]Maximum Tax decrease to %D2% total</English>
         <French>[ICON_BULLET]Réduction maximale du taux d'impôt de [COLOR_POSITIVE_TEXT]%D1%%[COLOR_REVERT] pour atteindre %D2% total</French>
         <German>[ICON_BULLET]Maximalsteuer sinkt um [COLOR_POSITIVE_TEXT]%D1%[COLOR_REVERT] auf %D2%</German>
+        <Russian>[ICON_BULLET]Максимальная налоговая ставка понижена на [COLOR_POSITIVE_TEXT]%D1%%[COLOR_REVERT] до %D2%</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_RELATION_KING_DECREASE</Tag>
         <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] relations hit with [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] king</English>
         <French>[ICON_BULLET]Vos relations avec le Roi [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] ont été dégradées de [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT]</French>
         <German>[ICON_BULLET]Beziehungen zum [COLOR_HIGHLIGHT_TEXT]%s2:2_civ_adjective[COLOR_REVERT] König verschlechtern sich um [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT]</German>
+        <Russian>[ICON_BULLET]Отношения с [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] Королем ухудшились на [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_RELATION_KING_INCREASE</Tag>

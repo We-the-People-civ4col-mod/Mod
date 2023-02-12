@@ -143,6 +143,7 @@
         <German>Ihr habt [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] zerstört!</German>
         <Italian>Hai distrutto l'insediamento di [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]!</Italian>
         <Spanish>Habéis destruido el asentamiento de [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT].</Spanish>
+        <Russian>Вы разрушили поселение [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]!!!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PLOT_WORK_TO_UPGRADE</Tag>
@@ -874,6 +875,7 @@
         <German>[ICON_BULLET]%D1%% %F2 in allen Siedlungen</German>
         <Italian>[ICON_BULLET]%D1%% %F2 in tutti gli insediam.</Italian>
         <Spanish>[ICON_BULLET]%D1%% %F2 en todos los asentamientos</Spanish>
+        <Russian>[ICON_BULLET]%D1%% %F2 во всех поселениях</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TAX_RATE_YIELD_INCREASE</Tag>
@@ -882,6 +884,7 @@
         <German>[ICON_BULLET]Erhöht die Produktion von %F1 um den Steuersatz</German>
         <Italian>[ICON_BULLET]Aumenta la produzione di %F1 della percentuale di tasse</Italian>
         <Spanish>[ICON_BULLET]Aumenta la producción de %F1 por la carga impositiva</Spanish>
+        <Russian>[ICON_BULLET]Увеличивает производство %F1 на величину налоговой ставки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_YIELD_INCREASE</Tag>
@@ -898,6 +901,7 @@
         <German>[ICON_BULLET]%D1[ICON_MOVES]für [LINK=literal]%s2_unit[\LINK]</German>
         <Italian>[ICON_BULLET]%D1[ICON_MOVES]per l'unità [LINK=literal]%s2_unit[\LINK]</Italian>
         <Spanish>[ICON_BULLET]%D1[ICON_MOVES]para [LINK=literal]%s2_unit[\LINK]</Spanish>
+        <Russian>[ICON_BULLET]%D1[ICON_MOVES]для [LINK=literal]%s2_unit[\LINK]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_STRENGTH_INCREASE</Tag>
@@ -1339,6 +1343,7 @@
         <German>[ICON_BULLET]%d1 [NUM1:Punkt:Punkte] pro %F2_icon</German>
         <Italian>[ICON_BULLET]%d1 [NUM1:punto:punti] per %F2_icon</Italian>
         <Spanish>[ICON_BULLET]%d1 [NUM1:punto:puntos] por %F2_icon</Spanish>
+        <Russian>[ICON_BULLET]%d1 [NUM1:очко:очка] за %F2_icon</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_POINT_FATHERS</Tag>
@@ -1347,6 +1352,7 @@
         <German>[NEWLINE]Benötigt von [COLOR_HIGHLIGHT_TEXT]%s1_comma_separated_list_of_founding_fathers[COLOR_REVERT]</German>
         <Italian>[NEWLINE]Richiesti da [COLOR_HIGHLIGHT_TEXT]%s1_comma_separated_list_of_founding_fathers[COLOR_REVERT]</Italian>
         <Spanish>[NEWLINE]Es necesario para [COLOR_HIGHLIGHT_TEXT]%s1_comma_separated_list_of_founding_fathers[COLOR_REVERT]</Spanish>
+        <Russian>[NEWLINE]Требуются для [COLOR_HIGHLIGHT_TEXT]%s1_comma_separated_list_of_founding_fathers[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_POINT_FATHERS_ALL</Tag>
@@ -2767,6 +2773,7 @@
         <German>[ICON_BULLET][COLOR_WARNING_TEXT]%D1%F2[COLOR_REVERT] umgewandelt in %s3_symbol_list</German>
         <Italian>[ICON_BULLET][COLOR_WARNING_TEXT]%D1%F2[COLOR_REVERT] trasformati in %s3_symbol_list</Italian>
         <Spanish>[ICON_BULLET]Se ha convertido [COLOR_WARNING_TEXT]%D1%F2[COLOR_REVERT] en %s3_symbol_list</Spanish>
+        <Russian>[ICON_BULLET][COLOR_WARNING_TEXT]%D1%F2[COLOR_REVERT] преобразовано в %s3_symbol_list</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PLOT_EUROPE</Tag>

@@ -514,30 +514,35 @@
         <English>Teacher List Pop-up Screen</English>
         <French>Liste des formateurs</French>
         <German>Ausbildungs-Screen</German>
+        <Russian>Всплывающее окно списка учителей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EDIT_TEACHER_LIST_POPUP_TEXT</Tag>
         <English>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]We can train the following units. Select how many units you want to be trained of each profession.</English>
         <French>%s1_city peut former les unités suivantes. Sélectionner le nombre d'unités que vous souhaitez former pour chaque profession.</French>
         <German>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Wir können die folgenden Einheiten ausbilden. Legt die Anzahl der Einheiten fest, die in jedem Beruf ausgebildet werden sollen.</German>
+        <Russian>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Мы можем обучить следующие отряды. Выберите профессию и количество юнитов, которых вы хотели бы обучить.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EDIT_TEACHER_LIST_POPUP_NO_SCHOOL_TEXT</Tag>
         <English>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]A proper education system is missing!</English>
         <French>%s1_city n'a pas d'infrastructure éducative.</French>
         <German>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Es fehlt ein geeignetes Ausbildungssystem!</German>
+        <Russian>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Система образования отсутствует!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EDIT_TEACHER_LIST_POPUP_RESET_ALL_TEXT</Tag>
         <English>Reset all</English>
         <French>Annuler tout</French>
         <German>Alles zurücksetzen</German>
+        <Russian>Очистить все</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EDIT_TEACHER_LIST_POPUP_RESET_ALL_HELP</Tag>
         <English>Clear all repeats and set all units to 0.</English>
         <French>Effacer les répétitions et mettre toutes les unités à 0.</French>
         <German>Alle Wiederholungen auf 0 setzen.</German>
+        <Russian>Очистите все повторы и установите для всех юнитов значение 0.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EDIT_TEACHER_LIST_POPUP_REPEAT_TEXT</Tag>
@@ -546,6 +551,7 @@
         <German>Wiederholen</German>
         <Italian>Ripetere</Italian>
         <Spanish>Repetir</Spanish>
+        <Russian>Повторить</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EDIT_TEACHER_LIST_POPUP_REPEAT_HELP</Tag>
@@ -558,12 +564,14 @@
         <English>%s1_unit : [COLOR_WARNING_TEXT]NO[COLOR_REVERT] teacher</English>
         <French>%s1_unit : [COLOR_WARNING_TEXT]PAS[COLOR_REVERT] de formateur</French>
         <German>%s1_unit : [COLOR_WARNING_TEXT]KEIN[COLOR_REVERT] Lehrer</German>
+        <Russian>%s1_unit : [COLOR_WARNING_TEXT]НЕТ[COLOR_REVERT] учителя</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EDIT_CUSTOM_HOUSE</Tag>
         <English>Custom House Pop-up Screen</English>
         <French>Determiner les paramètres du poste de douane</French>
         <German>Zollhaus-Einstellungen</German>
+        <Russian>Всплывающее окно таможни</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EDIT_CUSTOM_HOUSE_TEXT</Tag>
@@ -588,6 +596,7 @@
         <English>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]You have not built a Custom House yet. Settings will be stored, but they will have no effect until you do build the Custom House.</English>
         <French>Vous n'avez pas encore de poste de douane à %s1_city. Les paramètres seront sauvegardés, mais ils n'auront aucun effet tant que vous n'aurez pas construit un poste de douane.</French>
         <German>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Es gibt noch kein Zollhaus in der Stadt. Einstellungen werden zwar gespeichert, sind aber noch nicht wirksam.</German>
+        <Russian>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Вы еще не построили здание таможни. Настройки будут сохранены, но они не будут действовать до тех пор, пока вы не построите таможню.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_NEVER_SELL</Tag>
@@ -596,6 +605,7 @@
         <German>Nicht verkaufen</German>
         <Italian>Mai vendere</Italian>
         <Spanish>Nunca Vender</Spanish>
+        <Russian>Никогда не продавать</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODS_SOLD_CUSTOM_HOUSE</Tag>
@@ -640,6 +650,7 @@
         <German>Bedarf</German>
         <Italian>Domanda</Italian>
         <Spanish>Demanda</Spanish>
+        <Russian>Потребность</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_PRICE</Tag>
@@ -648,6 +659,7 @@
         <German>Preis</German>
         <Italian>Prezzo</Italian>
         <Spanish>Precio</Spanish>
+        <Russian>Цена</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_MARKET_POPUP</Tag>
@@ -656,6 +668,7 @@
         <German>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Lokaler Markt :</German>
         <Italian>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Mercato domestico :</Italian>
         <Spanish>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Mercado Interior :</Spanish>
+        <Russian>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Внутренний рынок :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_STORED</Tag>
@@ -664,6 +677,7 @@
         <German>Lager</German>
         <Italian>Stored</Italian>
         <Spanish>Stored</Spanish>
+        <Russian>Хранится</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_FROM_HANDICAP</Tag>
@@ -1234,7 +1248,7 @@
         <English>[ICON_BULLET]Increases generation of [ICON_GOLD] from %F1_yield by: %d2_increase%%</English>
         <French>[ICON_BULLET]Génère davantage de [ICON_GOLD] à partir de %F1_yield à: %d2_increase%%</French>
         <German>[ICON_BULLET]Erhöht die Rate von [ICON_GOLD] durch %F1_yield um: %d2_increase%%</German>
-        <Russian>[ICON_BULLET]Увеличивает генерацию [ICON_GOLD] from %F1_yield by: %d2_increase%%</Russian>
+        <Russian>[ICON_BULLET]Увеличивает генерацию [ICON_GOLD] из %F1_yield на %d2_increase%%</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_MARKET_BUILDING</Tag>
@@ -1538,6 +1552,7 @@
         <English>[ICON_BULLET][COLOR_SELECTED_TEXT]%s1_ImpName[COLOR_REVERT] has revolted and joined [COLOR_HIGHLIGHT_TEXT]%s2_CivDesc[COLOR_REVERT]</English>
         <French>[ICON_BULLET]A %s1_ImpName s'est révolté et a rejoint %s2_CivDesc</French>
         <German>[ICON_BULLET][COLOR_SELECTED_TEXT]%s1_ImpName[COLOR_REVERT] hat rebelliert und trat [COLOR_HIGHLIGHT_TEXT]%s2_CivDesc[COLOR_REVERT] bei</German>
+        <Russian>[ICON_BULLET][COLOR_SELECTED_TEXT]%s1_ImpName[COLOR_REVERT] поднял восстание и присоединился к [COLOR_HIGHLIGHT_TEXT]%s2_CivDesc[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_FLATLAND</Tag>

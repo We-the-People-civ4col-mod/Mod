@@ -11225,7 +11225,7 @@
         <German>[COLOR_WARNING_TEXT]Niederlage, Milord! [COLOR_REVERT]Eure Einheit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] wurde von einer [COLOR_HIGHLIGHT_TEXT]%s3_owner_adjective[COLOR_REVERT] Einheit [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] angegriffen und vernichtet.</German>
         <Italian>Difendendo, la tua unità %s1_UnitName è stata distrutta dall'unità nemica %s2_EnUName (%s3_owner_adjective)!</Italian>
         <Spanish>Mientras se [NUM1:defendía:defendía:defendían:defendían], [NUM1:vuestro:vuestra:vuestros:vuestras] %s1_UnitName [NUM1:ha sido destruido:ha sido destruida:han sido destruidos:han sido destruidas] por [NUM2:un:una:unos:unas] %s2_EnUName (%s3_owner_adjective).</Spanish>
-        <Russian>[COLOR_WARNING_TEXT]Поражение, Милорд! [COLOR_REVERT]Наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] был атакован и уничтожен [COLOR_HIGHLIGHT_TEXT]%s3_owner_adjective[COLOR_REVERT] [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT].</Russian>
+        <Russian>[COLOR_WARNING_TEXT]Поражение, Милорд! [COLOR_REVERT]Наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] был атакован и уничтожен [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s3_owner_adjective[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_YOU_UNIT_WAS_DESTROYED_UNKNOWN</Tag>
