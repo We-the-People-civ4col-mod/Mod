@@ -5,10 +5,12 @@
 		<Tag>TXT_KEY_DOMESTIC_ADVISOR_JUMP_TO_SETTLEMENT</Tag>
 		<English>Jump to settlement</English>
 		<German>Siedlung anzeigen</German>
+		<Spanish>Ir a Asentamiento</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOMESTIC_ADVISOR_JUMP_TO_SETTLEMENT_CITY</Tag>
 		<English>Jump to %s1_city</English>
 		<German>%s1_city anzeigen</German>
+		<Spanish>Ir a [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]</Spanish>
 	</TEXT>
 </Civ4GameText>
