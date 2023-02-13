@@ -7,6 +7,7 @@
         <German>Effekte deaktiviert</German>
         <Italian>Effetti disattivati</Italian>
         <Spanish>Efectos desactivados</Spanish>
+        <Russian>Отключить эффекты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GRAPHICOPTION_EFFECTS_DISABLED_HELP</Tag>
@@ -15,6 +16,7 @@
         <German>Schaltet Partikeleffekte aus</German>
         <Italian>Disattiva effetti particellari</Italian>
         <Spanish>Desactiva los efectos de partículas.</Spanish>
+        <Russian>Взрывы, шлейфы, дым...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GRAPHICOPTION_FULLSCREEN</Tag>
@@ -23,6 +25,7 @@
         <German>Vollbild-Modus</German>
         <Italian>Modalità a schermo intero</Italian>
         <Spanish>Modo pantalla completa</Spanish>
+        <Russian>Полноэкранный режим</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GRAPHICOPTION_FULLSCREEN_HELP</Tag>
@@ -31,6 +34,7 @@
         <German>Wenn dieser nicht eingestellt ist, läuft das Spiel in einem Fenster.</German>
         <Italian>Se non selezionata, il gioco verrà avviato in una finestra.</Italian>
         <Spanish>El juego se ejecutará en una ventana cuando no se indique lo contrario.</Spanish>
+        <Russian>Если не активно, игра будет работать в оконном режиме</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GRAPHICOPTION_GLOBE_VIEW_BUILDINGS_DISABLED</Tag>
@@ -39,6 +43,7 @@
         <German>Globusansicht Gebäude deaktiviert</German>
         <Italian>Edifici disattivati nella visuale globale</Italian>
         <Spanish>Edificios desactivados en vista global</Spanish>
+        <Russian>Без построек на карте</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GRAPHICOPTION_GLOBE_VIEW_BUILDINGS_DISABLED_HELP</Tag>
@@ -47,6 +52,7 @@
         <German>Gebäudemodelle erscheinen nicht in Globusansicht</German>
         <Italian>I modelli degli edifici non verranno mostrati nella visuale globale</Italian>
         <Spanish>Los modelos de los edificios no se mostrarán en la vista global.</Spanish>
+        <Russian>Здания, построенные в колониях, не будут отображаться на глобальной карте</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GRAPHICOPTION_HIRES_TERRAIN</Tag>
@@ -55,6 +61,7 @@
         <German>Hohe Geländedetails</German>
         <Italian>Dettaglio alto del terreno</Italian>
         <Spanish>Detalle del terreno alto</Spanish>
+        <Russian>Высокая детализация местности</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GRAPHICOPTION_HIRES_TERRAIN_HELP</Tag>
@@ -63,6 +70,7 @@
         <German>Es werden hohe Geländedetails verwendet</German>
         <Italian>Verrà utilizzato un dettaglio alto del terreno</Italian>
         <Spanish>Se usará un nivel de detalle del terreno más alto</Spanish>
+        <Russian>При активации будет использоваться высокая детализация рельефа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GRAPHICOPTION_LOWRES_TEXTURES</Tag>
@@ -71,6 +79,7 @@
         <German>Texturen mit niedriger Auflösung</German>
         <Italian>Texture a bassa risoluzione</Italian>
         <Spanish>Texturas de baja resolución</Spanish>
+        <Russian>Текстуры низкого качества</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GRAPHICOPTION_LOWRES_TEXTURES_HELP</Tag>
@@ -79,6 +88,7 @@
         <German>Texturen mit geringerer Auflösung werden verwendet</German>
         <Italian>Verranno utilizzate delle texture a risoluzione minore</Italian>
         <Spanish>Se utilizarán texturas de inferior resolución.</Spanish>
+        <Russian>При активации будут использоваться текстуры с более низким разрешением</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GRAPHICOPTION_NO_MOVIES</Tag>
@@ -87,6 +97,7 @@
         <German>Keine Filme</German>
         <Italian>Nessun filmato</Italian>
         <Spanish>Sin películas</Spanish>
+        <Russian>Без роликов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GRAPHICOPTION_NO_MOVIES_HELP</Tag>
@@ -95,6 +106,7 @@
         <German>Einleitung, Revolution und Siegesszenen überspringen</German>
         <Italian>Salta i filmati di introduzione, rivoluzione e vittoria</Italian>
         <Spanish>Se salta las películas de introducción, revolución y victoria</Spanish>
+        <Russian>Анимированные ролики в начале игры, при провозглашении революции и после победы будут отключены</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GRAPHIC_OPTION_FROZEN_ANIMATIONS</Tag>
@@ -103,6 +115,7 @@
         <German>Animationen gestoppt</German>
         <Italian>Animazioni bloccate</Italian>
         <Spanish>Animaciones estáticas</Spanish>
+        <Russian>Отключить анимацию</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GRAPHIC_OPTION_FROZEN_ANIMATIONS_HELP</Tag>
@@ -111,6 +124,7 @@
         <German>Keine animierten Einheiten oder Modernisierungen</German>
         <Italian>Nessuna animazione di unità e miglioramenti</Italian>
         <Spanish>Sin animaciones ni mejoras de unidades</Spanish>
+        <Russian>Анимация юнитов и улучшений ландшафта будет отключена</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PLAYER_OPTION_NO_COMBAT_ZOOM</Tag>
@@ -119,6 +133,7 @@
         <German>Kein Kampfzoom</German>
         <Italian>Nessuno zoom in combattimento</Italian>
         <Spanish>Sin zoom de combate</Spanish>
+        <Russian>Отключить боевую камеру</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PLAYER_OPTION_NO_COMBAT_ZOOM_HELP</Tag>
@@ -127,6 +142,7 @@
         <German>Kein Kamerazoom im Kampf</German>
         <Italian>Disattiva lo zoom della visuale durante i combattimenti</Italian>
         <Spanish>La cámara no se acerca durante el combate.</Spanish>
+        <Russian>Во время сражений камера не будет приближать поле боя</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PLAYER_OPTION_NO_ENEMY_GLOW</Tag>
@@ -135,6 +151,7 @@
         <German>Keine Feindkennzeichnung</German>
         <Italian>Non evidenziare il nemico</Italian>
         <Spanish>Sin brillo enemigo</Spanish>
+        <Russian>Без подсветки противника</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PLAYER_OPTION_NO_ENEMY_GLOW_HELP</Tag>
@@ -143,6 +160,7 @@
         <German>Feindliche Einheiten auf Ihrem Territorium werden nicht auf der Karte gekennzeichnet</German>
         <Italian>Le unità nemiche nel tuo territorio non vengono segnalate sulla mappa.</Italian>
         <Spanish>Las unidades enemigas en vuestro territorio no aparecen resaltadas en el mapa</Spanish>
+        <Russian>Вражеские юниты на вашей территории не будут выделяться</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PLAYER_OPTION_SHOW_HEALTH_BARS</Tag>
@@ -151,6 +169,7 @@
         <German>Lebensbalken einblenden</German>
         <Italian>Mostra le barre della salute</Italian>
         <Spanish>Mostrar barras de salud</Spanish>
+        <Russian>Показать панель здоровья</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PLAYER_OPTION_SHOW_HEALTH_BARS_HELP</Tag>
@@ -159,5 +178,6 @@
         <German>Lebensbalken der Einheiten einblenden</German>
         <Italian>Mostra la barra dell'energia delle unità</Italian>
         <Spanish>Mostrar barras de Salud de las unidades.</Spanish>
+        <Russian>Если активно, над юнитами будет показана полоса здоровья</Russian>
     </TEXT>
 </Civ4GameText>
