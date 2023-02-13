@@ -76,6 +76,7 @@
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_FEEDER</Tag>
         <English>Feeder</English>
+	<Spanish>Alimentador</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_FEEDER_HELP</Tag>
@@ -122,6 +123,7 @@
         <English>Available transport routes :</English>
         <French>Route commerciale :</French>
         <German>Liste verfügbarer Transportrouten</German>
+	<Spanish>Rutas de transporte disponibles</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_YIELD_PREVIEW</Tag>
@@ -129,7 +131,7 @@
         <French>Ressources</French>
         <German>Waren</German>
         <Italian>Yields</Italian>
-        <Spanish>Yields</Spanish>
+        <Spanish>Recursos</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_YIELD_HELP</Tag>
@@ -137,7 +139,7 @@
         <French>Sélectionner une ressource</French>
         <German>Warentyp für neue Transportroute auswählen</German>
         <Italian>Select a yield type</Italian>
-        <Spanish>Select a yield type</Spanish>
+        <Spanish>Seleccione un tipo de recurso para la nueva ruta de transporte</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_EXPORT_PREVIEW</Tag>
@@ -153,7 +155,7 @@
         <French>Sélectionner une colonie exportatrice</French>
         <German>Exportsiedlung für neue Transportroute auswählen (Mindestbestände von Waren, die nicht abtransportiert werden sollen, lassen sich vor Ort im Siedlungsbildschirm einstellen)</German>
         <Italian>Select an export city</Italian>
-        <Spanish>Select an export city</Spanish>
+        <Spanish>Seleccione una ciudad de exportacion para la nueva ruta de transporte (La cantidad minima de bienes que no seran transportados puede ser configurada localmente en la pantalla del Asentamiento)</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_IMPORT_PREVIEW</Tag>
@@ -169,31 +171,35 @@
         <French>Sélectionner une colonie importatrice</French>
         <German>Importsiedlung für neue Transportroute auswählen</German>
         <Italian>Select an import city</Italian>
-        <Spanish>Select an import city</Spanish>
+        <Spanish>Seleccione una ciudad de importacion, para la nueva ruta de transporte</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_NEW_ROUTE</Tag>
         <English>Create new transport route :</English>
         <French>Créer une nouvelle route commerciale :</French>
         <German>Neue Transportroute erstellen :</German>
+	<Spanish>Crear nueva ruta de transporte</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_YIELD_TABLE</Tag>
         <English>Yield types :</English>
         <French>Ressource :</French>
         <German>Warentyp :</German>
+	<Spanish>Tipos de Recursos</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_EXPORT_TABLE</Tag>
         <English>Source city :</English>
         <French>Provenance :</French>
         <German>Exportsiedlung :</German>
+	<Spanish>Ciudad de origen</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_IMPORT_TABLE</Tag>
         <English>Destination city :</English>
         <French>Destination :</French>
         <German>Importsiedlung :</German>
+	<Spanish>Ciudad destino</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_LOAD_GROUP_TABLE</Tag>
@@ -209,7 +215,7 @@
         <French> (cliquer pour charger)</French>
         <German> ([COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT], um zu laden)</German>
         <Italian> (clicca per caricare)</Italian>
-        <Spanish> (clic para cargar)</Spanish>
+        <Spanish> ([COLOR:140:255:40:255]&lt; Clic &gt;[COLOR_REVERT] para cargar)</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NAME_COL_TRADE_GROUP</Tag>
@@ -241,7 +247,7 @@
         <French> (cliquer pour effacer)</French>
         <German> ([COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT], um zu löschen)</German>
         <Italian> (clic per rimuovere)</Italian>
-        <Spanish> (clic para quitar)</Spanish>
+        <Spanish> ([COLOR:140:255:40:255]&lt; Clic &gt;[COLOR_REVERT] para borrar)</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_EXPORT_TABLE_2</Tag>
@@ -249,7 +255,7 @@
         <French>Nom</French>
         <German>Name</German>
         <Italian>Name</Italian>
-        <Spanish>Name</Spanish>
+        <Spanish>Nombre</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_MAIN_TABLE_3</Tag>
@@ -257,7 +263,7 @@
         <French>de</French>
         <German>von</German>
         <Italian>from</Italian>
-        <Spanish>from</Spanish>
+        <Spanish>de</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_MAIN_TABLE_4</Tag>
@@ -265,7 +271,7 @@
         <French>vers</French>
         <German>nach</German>
         <Italian>to</Italian>
-        <Spanish>to</Spanish>
+        <Spanish>hasta</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_MISSING_YIELD</Tag>
@@ -289,7 +295,7 @@
         <French>Annuler la sélection</French>
         <German>Auswahl löschen</German>
         <Italian>Remove selection</Italian>
-        <Spanish>Remove selection</Spanish>
+        <Spanish>Remover seleccion</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_SELECT_ROUTES_HELP</Tag>
@@ -297,13 +303,14 @@
         <French>Activer toutes les routes commerciales</French>
         <German>Alle Transportrouten dieser Liste der Einheit zuweisen</German>
         <Italian>Activate all shown trade routes</Italian>
-        <Spanish>Activate all shown trade routes</Spanish>
+        <Spanish>Asignar todas las rutas de transporte de esta lista a la unidad</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_DESELECT_ROUTES_HELP</Tag>
         <English>Deactivate all currently assigned transport routes for this unit</English>
         <French>Désactiver toutes les routes commerciales</French>
         <German>Alle derzeit zugewiesenen Transportrouten für diese Einheit deaktivieren</German>
+	<Spanish>Desactivar todos los transportes asignados actualmente para esta unidad</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_RETURN_HELP</Tag>
@@ -311,25 +318,28 @@
         <French>Retourner au menu principal des routes commerciales</French>
         <German>Zur Routenübersicht zurückkehren</German>
         <Italian>Return to trade routes main view</Italian>
-        <Spanish>Return to trade routes main view</Spanish>
+        <Spanish>Regresar a la vista principal</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_IGNORE_DANGER_HELP</Tag>
         <English>Unit does currently stop when an enemy comes into view ([COLOR:140:255:40:255]&lt; Click &gt;[COLOR_REVERT] to change)</English>
         <French>Ignorer les dangers</French>
         <German>Einheit hält derzeit an, wenn ein Feind in Sichtweite gerät ([COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT], um das zu ändern)</German>
+	<Spanish>Unidad se detendrá cuando aparezca un enemigo ([COLOR:140:255:40:255]&lt; Clic &gt;[COLOR_REVERT] para cambiar)</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_CANCEL_IGNORE_DANGER_HELP</Tag>
         <English>Unit does not currently stop when an enemy comes into view ([COLOR:140:255:40:255]&lt; Click &gt;[COLOR_REVERT] to change)</English>
         <French>Annuler l'ordre d'ignorer les dangers</French>
         <German>Einheit hält nicht derzeit an, wenn ein Feind in Sichtweite gerät ([COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT], um das zu ändern)</German>
+	<Spanish>Unidad no se detendrá cuando un enemigo aparezca ([COLOR:140:255:40:255]&lt; Clic &gt;[COLOR_REVERT] para cambiar)</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_ADD_SELECTION_HELP</Tag>
         <English>Confirm this transport route and make it available for transport units</English>
         <French>Ajouter la sélection en tant que nouvelle route commerciale</French>
         <German>Diese Transportroute bestätigen und für Transporteinheiten zur Verfügung stellen</German>
+	<Spanish>Confirmar esta ruta de transporte y hacerla disponible para las unidades de transporte</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_HELP_HELP</Tag>
@@ -337,10 +347,11 @@
         <French>: Aide</French>
         <German>: Anleitung</German>
         <Italian>: Help</Italian>
-        <Spanish>: Help</Spanish>
+        <Spanish>: Ayuda</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_CHOOSE_PROFESSION_UNREST</Tag>
         <English>The colony is in chaos. Nobody will be able to leave before order is restored.</English>
+	<Spanish>La colonia es un caos. Nadie podra irse hasta que el orden sea restaurado</Spanish>
     </TEXT>
 </Civ4GameText>
