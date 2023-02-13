@@ -19,6 +19,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Право на ношение оружия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_BEAR_ARMS_PEDIA</Tag>
@@ -51,6 +52,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Контроль оружия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_CONTROLLED_ARMS_PEDIA</Tag>
@@ -83,6 +85,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Выборы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_ELECTIONS_PEDIA</Tag>
@@ -115,6 +118,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Все люди свободны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_FREEDOM_PEDIA</Tag>
@@ -147,6 +151,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Явное предначертание</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_MANIFEST_DESTINY_PEDIA</Tag>
@@ -179,6 +184,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Монархия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_MONARCHY_PEDIA</Tag>
@@ -211,6 +217,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Права коренных народов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_NATIVE_RIGHTS_PEDIA</Tag>
@@ -243,6 +250,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Разделение церкви и государства</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_SEPARATION_CHURCH_STATE_PEDIA</Tag>
@@ -275,6 +283,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Рабство</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_SLAVERY_PEDIA</Tag>
@@ -307,6 +316,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Теократия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_THEOCRACY_PEDIA</Tag>

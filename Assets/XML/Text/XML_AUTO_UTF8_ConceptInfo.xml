@@ -7,6 +7,7 @@
         <German>Afrika</German>
         <Italian>Africa</Italian>
         <Spanish>África</Spanish>
+        <Russian>Африка</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_AFRICA_PEDIA</Tag>
@@ -21,6 +22,7 @@
         <German>Wilde Tiere</German>
         <Italian>Animali selvatici</Italian>
         <Spanish>Animales salvajes</Spanish>
+        <Russian>Дикие животные</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_ANIMALS_PEDIA</Tag>
@@ -49,6 +51,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Границы и культура</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_BORDERS_PEDIA</Tag>
@@ -77,6 +80,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Строения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_BUILDINGS_PEDIA</Tag>
@@ -93,6 +97,7 @@
         <German>Pferde-, Rinder- und Schafszucht</German>
         <Italian>Allevamento di cavalli, bovini e ovini</Italian>
         <Spanish>Cría de caballos, ganado vacuno y ovino</Spanish>
+        <Russian>Разведение лошадей, крупного рогатого скота и овец (в будущем козы, свиньи и домашняя птица)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_CATTLE_OR_SHEEP_BREEDING_PEDIA</Tag>
@@ -107,6 +112,7 @@
         <German>Hinweise zu Schätzen</German>
         <Italian>Note sui tesori</Italian>
         <Spanish>Notas sobre los tesoros</Spanish>
+        <Russian>Примечания о сокровищах</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_CHANGES_TO_TREASURES_PEDIA</Tag>
@@ -137,6 +143,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Церковь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_CHURCH_PEDIA</Tag>
@@ -162,6 +169,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Сражения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_COMBAT_PEDIA</Tag>
@@ -190,6 +198,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Дипломатия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_DIPLOMACY_PEDIA</Tag>
@@ -206,6 +215,7 @@
         <German>Heimischer Markt</German>
         <Italian>Economia interna</Italian>
         <Spanish>Economía doméstica</Spanish>
+        <Russian>Внутренняя экономика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_DOMESTIC_MARKETS_PEDIA</Tag>
@@ -232,6 +242,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Экономика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_ECONOMY_PEDIA</Tag>
@@ -260,6 +271,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Европа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_EUROPE_PEDIA</Tag>
@@ -276,6 +288,7 @@
         <German>Ereignisse und Taten</German>
         <Italian>Eventi e atti</Italian>
         <Spanish>Eventos y actos</Spanish>
+        <Russian>События</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_EVENTS_PEDIA</Tag>
@@ -331,6 +344,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Еда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_FOOD_PEDIA</Tag>
@@ -347,6 +361,7 @@
         <German>Forts</German>
         <Italian>Forti</Italian>
         <Spanish>Fuertes</Spanish>
+        <Russian>Форты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_FORTS_PEDIA</Tag>
@@ -372,6 +387,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Великие Генералы и Адмиралы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_GREAT_GENERALS_PEDIA</Tag>
@@ -388,6 +404,7 @@
         <German>Schußwaffen, Kanonen und Klingenwaffen</German>
         <Italian>Armi</Italian>
         <Spanish>Armas</Spanish>
+        <Russian>Мушкеты, пушки и клинки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_GUNS_PEDIA</Tag>
@@ -404,6 +421,7 @@
         <German>Gesundheit und medizinische Versorgung</German>
         <Italian>Salute e assistenza medica</Italian>
         <Spanish>Salud y asistencia médica</Spanish>
+        <Russian>Здоровье и медицинское обслуживание</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_HEALTH_PEDIA</Tag>
@@ -430,6 +448,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Иммиграция</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_IMMIGRATION_PEDIA</Tag>
@@ -458,6 +477,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Первопроходцы и улучшения ландшафта</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_IMPROVEMENTS_PEDIA</Tag>
@@ -474,6 +494,7 @@
         <German>Unabhängigkeitskrieg</German>
         <Italian>Guerra d'indipendenza</Italian>
         <Spanish>Guerra de la Independencia</Spanish>
+        <Russian>Война за независимость</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_INDEPENDENCE_WAR_PEDIA</Tag>
@@ -499,6 +520,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Лидеры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_LEADERS_PEDIA</Tag>
@@ -515,6 +537,7 @@
         <German>Militäreinheiten</German>
         <Italian>Unità militari</Italian>
         <Spanish>Unidades militares</Spanish>
+        <Russian>Военные отряды</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_MILITARY_UNITS_PEDIA</Tag>
@@ -540,6 +563,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Миссионеры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_MISSIONARIES_PEDIA</Tag>
@@ -556,6 +580,7 @@
         <German>Handelsposten in Ureinwohnerdörfern</German>
         <Italian>Posti di scambio nei villaggi indigeni</Italian>
         <Spanish>Puestos de comercio en pueblos indígenas</Spanish>
+        <Russian>Торговые посты в деревнях индейцев</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_NATIVE_TRADERS_PEDIA</Tag>
@@ -569,6 +594,7 @@
         <German>Klöster</German>
         <Italian>Monasteri</Italian>
         <Spanish>Monasterios</Spanish>
+        <Russian>Монастыри</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_MONASTERIES_PEDIA</Tag>
@@ -595,6 +621,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Передвижение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_MOVEMENT_PEDIA</Tag>
@@ -623,6 +650,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Индейцы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_NATIVES_PEDIA</Tag>
@@ -651,6 +679,7 @@
         <Tag>TXT_KEY_CONCEPT_NEW_HARBOUR_SYSTEM</Tag>
         <English>Harbour Space</English>
         <German>Ankerplätze</German>
+        <Russian>Гавани и места для кораблей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_NEW_HARBOUR_SYSTEM_PEDIA</Tag>
@@ -661,6 +690,7 @@
         <Tag>TXT_KEY_CONCEPT_NEW_BARRACKS_SYSTEM</Tag>
         <English>Barracks Space</English>
         <German>Kasernenplätze</German>
+        <Russian>Городской гарнизон</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_NEW_BARRACKS_SYSTEM_PEDIA</Tag>
@@ -671,6 +701,7 @@
         <Tag>TXT_KEY_CONCEPT_NEW_MOVEMENT_SYSTEM</Tag>
         <English>New Movement System</English>
         <German>Neues Bewegungssystem</German>
+        <Russian>Новая система перемещения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_NEW_MOVEMENT_SYSTEM_PEDIA</Tag>
@@ -696,6 +727,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Новый мир</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_THE_NEW_WORLD_PEDIA</Tag>
@@ -712,6 +744,7 @@
         <German>Piraterie und Schmuggel</German>
         <Italian>Pirateria e contrabbando</Italian>
         <Spanish>Piratería y contrabando</Spanish>
+        <Russian>Пиратство и контрабанда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_PIRACY_AND_SMUGGLING_PEDIA</Tag>
@@ -726,6 +759,7 @@
         <German>Port Royal</German>
         <Italian>Port Royal</Italian>
         <Spanish>Port Royal</Spanish>
+        <Russian>Порт Ройал</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_PORT_ROYAL_PEDIA</Tag>
@@ -754,6 +788,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Производство</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_PRODUCTION_PEDIA</Tag>
@@ -782,6 +817,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Профессии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_PROFESSIONS_PEDIA</Tag>
@@ -810,6 +846,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Повышения юнитов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_PROMOTIONS_PEDIA</Tag>
@@ -826,6 +863,7 @@
         <German>Rebellische Stimmung</German>
         <Italian>Sentimento ribelle</Italian>
         <Spanish>Sentimiento rebelde</Spanish>
+        <Russian>Протестные настроения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_REBEL_SENTIMENT_PEDIA</Tag>
@@ -842,6 +880,7 @@
         <German>Beziehungen zum König</German>
         <Italian>Il Re</Italian>
         <Spanish>El Rey</Spanish>
+        <Russian>Король</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_RELATIONS_TO_KING_PEDIA</Tag>
@@ -856,6 +895,7 @@
         <German>Rivalisierende Kolonialmächte</German>
         <Italian>Potenze coloniali rivali</Italian>
         <Spanish>Potencias coloniales rivales</Spanish>
+        <Russian>Конкурирующие колонии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_RIVAL_COLONIES_PEDIA</Tag>
@@ -869,6 +909,7 @@
         <German>Flüsse</German>
         <Italian>Fiumi</Italian>
         <Spanish>Ríos</Spanish>
+        <Russian>Реки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_RIVERS_PEDIA</Tag>
@@ -894,6 +935,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Поселения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_SETTLEMENTS_PEDIA</Tag>
@@ -910,6 +952,7 @@
         <German>Schiffe</German>
         <Italian>Navi</Italian>
         <Spanish>Naves</Spanish>
+        <Russian>Корабли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_SHIPS_PEDIA</Tag>
@@ -923,6 +966,7 @@
         <German>Schuldknechte, Kriminelle und Sklaven</German>
         <Italian>Servi per contratto, criminali e schiavi</Italian>
         <Spanish>Siervos por deudas, criminales y esclavos</Spanish>
+        <Russian>Слуги, преступники и рабы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_SLAVES_PEDIA</Tag>
@@ -948,6 +992,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Специалисты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_SPECIALISTS_PEDIA</Tag>
@@ -964,6 +1009,7 @@
         <German>Steuerrate</German>
         <Italian>Aliquota fiscale</Italian>
         <Spanish>Tipo impositivo</Spanish>
+        <Russian>Налоговая ставка</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_TAX_RATE_PEDIA</Tag>
@@ -977,6 +1023,7 @@
         <German>Eisenwaren</German>
         <Italian>Attrezzi</Italian>
         <Spanish>Herramientas</Spanish>
+        <Russian>Инструменты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_TOOLS_PEDIA</Tag>
@@ -1005,6 +1052,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Торговля</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_TRADE_PEDIA</Tag>
@@ -1033,6 +1081,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Планирование машрутов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_TRADE_ROUTE_PEDIA</Tag>
@@ -1047,6 +1096,7 @@
         <German>Automatisierung von Transporten</German>
         <Italian>Automazione dei trasporti</Italian>
         <Spanish>Automatización de los transportes</Spanish>
+        <Russian>Автоматизация транспортов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_AUTO_IMPORT_EXPORT_PEDIA</Tag>
@@ -1071,6 +1121,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Образование</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_TRAINING_PEDIA</Tag>
@@ -1099,6 +1150,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Транспорты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_TRANSPORT_PEDIA</Tag>
@@ -1127,6 +1179,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Юниты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_UNITS_PEDIA</Tag>
@@ -1155,6 +1208,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Победа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_VICTORY_PEDIA</Tag>
@@ -1183,6 +1237,7 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Видимость и исследование</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_VISIBILITY_PEDIA</Tag>
@@ -1211,6 +1266,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Война</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_WAR_PEDIA</Tag>
@@ -1227,6 +1283,7 @@
         <German>Walfang und Fischfang</German>
         <Italian>Caccia alle balene e pesca</Italian>
         <Spanish>La caza de ballenas y la pesca</Spanish>
+        <Russian>Китобойный промысел и рыболовство</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_WHALING_PEDIA</Tag>
@@ -1241,6 +1298,7 @@
         <German>Wind und Stürme</German>
         <Italian>Venti e tempeste</Italian>
         <Spanish>Vientos y tormentas</Spanish>
+        <Russian>Ветры и штормы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_WINDS_AND_STORMS_PEDIA</Tag>
@@ -1255,6 +1313,7 @@
         <German>Zufriedenheit und Unzufriedenheit</German>
         <Italian>Soddisfazione e Malcontento</Italian>
         <Spanish>Satisfacción e Insatisfacción</Spanish>
+        <Russian>Счастье</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HAPPINESS_UNHAPPINESS_PEDIA</Tag>
@@ -1269,6 +1328,7 @@
         <German>Große Flüsse</German>
         <Italian>Grandi fiumi</Italian>
         <Spanish>Grandes ríos</Spanish>
+        <Russian>Большие реки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_LARGE_RIVERS_PEDIA</Tag>
