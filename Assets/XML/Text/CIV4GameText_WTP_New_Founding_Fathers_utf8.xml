@@ -33,6 +33,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Карл Линней</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_CARL_VON_LINNES</Tag>
@@ -76,6 +77,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Томас Гейтс</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_SIR_THOMAS_GATES</Tag>
@@ -119,6 +121,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Эусебио Франсиско Кино</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_EUSEBIO_FRANCISO_KINO_PEDIA</Tag>
@@ -158,6 +161,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Хемфри Гилберт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_HUMPHREY_GILBERT_PEDIA</Tag>
@@ -197,6 +201,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Роберт Бейкуэлл</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_ROBERT_BAKEWELL</Tag>
@@ -240,6 +245,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Томас Уэст</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_THOMAS_WEST_DE_LA_WARR</Tag>
@@ -283,6 +289,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Джеймс Бейкер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_JAMES_BAKER</Tag>
@@ -326,6 +333,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Уильям Стрейчи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_WILLIAM_STRACHEY</Tag>
@@ -369,6 +377,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Джон Харви</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_SIR_JOHN_HARVEY</Tag>
@@ -412,6 +421,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Иоганн Мориц Нассау-Зигенский</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_JOHN_MAURICE</Tag>
@@ -455,6 +465,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Уильям Тейлер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_WILLIAM_TAILER</Tag>
@@ -498,6 +509,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Сэмюэл Николас</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_SAMUEL_NICHOLAS</Tag>
@@ -541,6 +553,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Джон Уинтроп</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_JOHN_WINTHROP_THE_YOUNGER</Tag>
@@ -584,6 +597,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Бенджамин Киссам</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_BENJAMIN_KISSAM</Tag>
@@ -627,6 +641,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Хуан де Пареха</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_JUAN_DE_PAREJA</Tag>

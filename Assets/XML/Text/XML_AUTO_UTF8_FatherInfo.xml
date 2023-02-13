@@ -27,6 +27,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Адам Смит</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_ADAM_SMITH_PEDIA</Tag>
@@ -71,6 +72,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Александр Гамильтон</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_ALEXANDER_HAMILTON_PEDIA</Tag>
@@ -115,6 +117,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Александр фон Гумбольт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_ALEXANDER_VON_HUMBOLDT_PEDIA</Tag>
@@ -159,6 +162,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Алексис де Токвиль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_ALEXIS_DE_TOCQUEVILLE_PEDIA</Tag>
@@ -201,6 +205,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Бартоломе де лас Касас</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_BARTOLOME_DE_LAS_CASAS_PEDIA</Tag>
@@ -243,6 +248,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Бенжамин Линкольн</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_BENJAMIN_LINCOLN_PEDIA</Tag>
@@ -283,6 +289,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Бенжамин Раш</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_BENJAMIN_RUSH_PEDIA</Tag>
@@ -323,6 +330,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Бенжамин Франклин</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_BEN_FRANKLIN_PEDIA</Tag>
@@ -367,6 +375,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Бетси Росс</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_BETSY_ROSS_PEDIA</Tag>
@@ -409,6 +418,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Эдвард Тич "Черная борода"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_BLACKBEARD_PEDIA</Tag>
@@ -449,6 +459,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Чарльз Кэрролл</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_CHARLES_CARROLL_PEDIA</Tag>
@@ -489,6 +500,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Вождь Поухатан</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_CHIEF_POWHATAN_PEDIA</Tag>
@@ -533,6 +545,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Шарль Гравье</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_COMTE_DE_VERGENNES_PEDIA</Tag>
@@ -573,6 +586,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Сайрус Маккормик</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_CYRUS_MCCORMICK_PEDIA</Tag>
@@ -617,6 +631,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Диего Веласкес де Куэльяр</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_DEIGO_VELAZQUEZ_DE_CUELLAR_PEDIA</Tag>
@@ -661,6 +676,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Франсуа Жосеф Поль де Грасс</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_DE_GRASSE_PEDIA</Tag>
@@ -701,6 +717,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Дон Педро I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_DOM_PEDRO_I_PEDIA</Tag>
@@ -745,6 +762,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Эли Уитни</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_ELI_WHITNEY_PEDIA</Tag>
@@ -789,6 +807,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Итан Аллен</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_ETHAN_ALLEN_PEDIA</Tag>
@@ -833,6 +852,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Фернан Магеллан</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_FERDINAND_MAGELLAN_PEDIA</Tag>
@@ -873,6 +893,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Франсиско Васкес де Коронадо</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_FRANCISCO_DE_CORONADO_PEDIA</Tag>
@@ -917,6 +938,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Франсиско де Орельяна</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_FRANCISCO_DE_ORELLANA_PEDIA</Tag>
@@ -957,6 +979,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Франсиско Писарро</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_FRANCISCO_PIZARRO_PEDIA</Tag>
@@ -1001,6 +1024,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Фрэнсис Дрейк</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_FRANCIS_DRAKE_PEDIA</Tag>
@@ -1041,6 +1065,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Фридрих Вильгельм фон Штойбен</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_FRIEDRICH_WILHELM_VON_STEUBEN_PEDIA</Tag>
@@ -1081,6 +1106,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Габриэль-Матье Франсуа де Кльё</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_GABRIEL_DE_CLIEU_PEDIA</Tag>
@@ -1121,6 +1147,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Габриель Лалеман</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_GABRIEL_LALLEMANT_PEDIA</Tag>
@@ -1165,6 +1192,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Джорж Фокс</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_GEORGE_FOX_PEDIA</Tag>
@@ -1205,6 +1233,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Джованни да Верраццано</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_GIOVANNI_DA_VERRAZANO_PEDIA</Tag>
@@ -1249,6 +1278,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Гонсало Хименес де Кесада</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_GONZALO_JIMENEZ_DE_QUESADA_PEDIA</Tag>
@@ -1291,6 +1321,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Грегориу де Матус Герра</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_GREGORIO_DE_MATTOS_E_GUERRA_PEDIA</Tag>
@@ -1335,6 +1366,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Роберт Картер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_ROBERT_KING_CARTER_I_PEDIA</Tag>
@@ -1373,6 +1405,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Луи Жолье</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_LOUIS_JOLLIET_PEDIA</Tag>
@@ -1411,6 +1444,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Джеймс Кук</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JAMES_COOK_PEDIA</Tag>
@@ -1449,6 +1483,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Васко да Гама</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_VASCO_DA_GAMA_PEDIA</Tag>
@@ -1488,6 +1523,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Уильям Пенн</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_ADMIRAL_WILLIAM_PENN_PEDIA</Tag>
@@ -1526,6 +1562,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Отто Фридрих фон дер Гребен</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_OTTO_FRIEDRICH_VON_DER_GROEBEN_PEDIA</Tag>
@@ -1564,6 +1601,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Уильям Дампир</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_WILLIAM_DAMPIER_PEDIA</Tag>
@@ -1602,6 +1640,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Джеймс Ланкастер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JAMES_LANCASTER_PEDIA</Tag>
@@ -1640,6 +1679,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Генри Шрапнель</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_HENRY_SHRAPNEL_PEDIA</Tag>
@@ -1680,6 +1720,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Эрнандо де Сото</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_HERNADO_DE_SOTO_PEDIA</Tag>
@@ -1724,6 +1765,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Жак Картье</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JACQUES_CARTIER_PEDIA</Tag>
@@ -1764,6 +1806,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Жак Маркетт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JACQUES_MARQUETTE_PEDIA</Tag>
@@ -1808,6 +1851,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Якоб Фуггер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JAKOB_FUGGER_PEDIA</Tag>
@@ -1852,6 +1896,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Джеймс Мэдисон</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JAMES_MADISON_PEDIA</Tag>
@@ -1896,6 +1941,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Джеймс Уилсон</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JAMES_WILSON_PEDIA</Tag>
@@ -1936,6 +1982,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Ян де Витт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JAN_DE_WITT_PEDIA</Tag>
@@ -1980,6 +2027,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Жан де Бребёф</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JEAN_DE_BREBEUF_PEDIA</Tag>
@@ -2020,6 +2068,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Жан Талон</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JEAN_TALON_PEDIA</Tag>
@@ -2060,6 +2109,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Джон Адамс</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JOHN_ADAMS_PEDIA</Tag>
@@ -2102,6 +2152,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Джон Саттер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JOHN_AUGUST_SUTTER_PEDIA</Tag>
@@ -2142,6 +2193,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Джон Гарвард</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JOHN_HARVARD_PEDIA</Tag>
@@ -2186,6 +2238,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Джон Джейкоб Астор</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JOHN_JACOB_ASTOR_PEDIA</Tag>
@@ -2230,6 +2283,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Джон Джей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JOHN_JAY_PEDIA</Tag>
@@ -2272,6 +2326,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Джон Пол Джонс</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JOHN_PAUL_JONES_PEDIA</Tag>
@@ -2316,6 +2371,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Джон Рольф</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JOHN_ROLFE_PEDIA</Tag>
@@ -2360,6 +2416,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Джон Смит</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JOHN_SMITH_PEDIA</Tag>
@@ -2404,6 +2461,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Джон Уинтроп</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JOHN_WINTHROP_PEDIA</Tag>
@@ -2446,6 +2504,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Хосе де Сан-Мартин</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JOSE_DE_SAN_MARTIN_PEDIA</Tag>
@@ -2486,6 +2545,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Хуан Бермудес</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JUAN_DE_BERMUDEZ_PEDIA</Tag>
@@ -2530,6 +2590,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Хуан Хинес де Сепульведа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JUAN_DE_SEPULVEDA_PEDIA</Tag>
@@ -2572,6 +2633,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Томас Чиппендейл</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_THOMAS_CHIPPENDALE_PEDIA</Tag>
@@ -2610,6 +2672,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Хуан Понсе де Леон</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JUAN_PONCE_DE_LEON_PEDIA</Tag>
@@ -2652,6 +2715,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Хуниперо Серра</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JUNIPERO_SERRA_PEDIA</Tag>
@@ -2692,6 +2756,7 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+        <Russian>Льюис и Кларк</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_LEWIS_AND_CLARK_PEDIA</Tag>
@@ -2736,6 +2801,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Джордж Калверт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_LORD_BALTIMORE_PEDIA</Tag>
@@ -2778,6 +2844,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Малинче</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_MALINCHE_PEDIA</Tag>
@@ -2818,6 +2885,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Жильбер де Ла Файет</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_MAQUIS_DE_LA_FAYETTE_PEDIA</Tag>
@@ -2862,6 +2930,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Мишель Адриансун де Рюйтер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_MICHIEL_DE_RUYTER_PEDIA</Tag>
@@ -2902,6 +2971,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Мигель Идальго-и-Костилья</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_MIGUEL_HIDALGO_PEDIA</Tag>
@@ -2942,6 +3012,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Натаниэль Готорн</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_NATHANIAL_HAWTHORNE_PEDIA</Tag>
@@ -2986,6 +3057,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Николя Дюран де Виллеганьон</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_NICOLAS_DE_VILLEGAGNON_PEDIA</Tag>
@@ -3026,6 +3098,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Патрик Генри</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_PATRICK_HENRY_PEDIA</Tag>
@@ -3070,6 +3143,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Поль Шомеде де Мезоннёв</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_PAUL_CHOMEDEY_DE_MAISONNEUVE_PEDIA</Tag>
@@ -3114,6 +3188,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Пол Ревир</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_PAUL_REVERE_PEDIA</Tag>
@@ -3154,6 +3229,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Педру Алвариш Кабрал</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_PEDRO_ALVARES_CABRAL_PEDIA</Tag>
@@ -3198,6 +3274,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Педро де Вальдивия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_PEDRO_DE_VALDIVIA_PEDIA</Tag>
@@ -3238,6 +3315,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Педро Менендес де Авилес</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_PEDRO_MENENDEZ_DE_AVILES_PEDIA</Tag>
@@ -3278,6 +3356,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Петер Минёйт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_PETER_MINUIT_PEDIA</Tag>
@@ -3322,6 +3401,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Пит Питерсон Хайн</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_PIET_HEYN_PEDIA</Tag>
@@ -3362,6 +3442,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Покахонтас</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_POCAHONTAS_PEDIA</Tag>
@@ -3406,6 +3487,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Рене-Робер Кавелье де Ла Саль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_ROBERT_LA_SALLE_PEDIA</Tag>
@@ -3448,6 +3530,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Роберт Моррис</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_ROBERT_MORRIS_PEDIA</Tag>
@@ -3488,6 +3571,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Роджер Уильямс</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_ROGER_WILLIAMS_PEDIA</Tag>
@@ -3532,6 +3616,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Сэмюэл Адамс</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_SAMUEL_ADAMS_PEDIA</Tag>
@@ -3576,6 +3661,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Сэмуел Бломмерт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_SAMUEL_BLOMMAERT_PEDIA</Tag>
@@ -3616,6 +3702,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Николас Монардес</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_SAMUEL_NICOLAS_MONARDES_PEDIA</Tag>
@@ -3656,6 +3743,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Хуана Инес де ла Крус</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_SOR_JUANA_PEDIA</Tag>
@@ -3700,6 +3788,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Томас Хукер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_THOMAS_HOOKER_PEDIA</Tag>
@@ -3744,6 +3833,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Томас Джефферсон</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_THOMAS_JEFFERSON_PEDIA</Tag>
@@ -3784,6 +3874,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Томас Пейн</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_THOMAS_PAINE_PEDIA</Tag>
@@ -3828,6 +3919,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Томе де Соуза</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_TOME_DE_SOUSA_PEDIA</Tag>
@@ -3868,6 +3960,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Васко Нуньес де Бальбоа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_VACO_NUNEZ_DE_BALBOA_PEDIA</Tag>
@@ -3912,6 +4005,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Уолтер Рэли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_WALTER_RALEIGH_PEDIA</Tag>
@@ -3952,6 +4046,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Вашингтон Ирвинг</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_WASHINGTON_IRVING_PEDIA</Tag>
@@ -3996,6 +4091,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Виллем Баренц</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_WILLEM_BARENTS_PEDIA</Tag>
@@ -4036,6 +4132,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Иоганн Мориц Нассау-Зигенский</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JOHANN_MORITZ_PEDIA</Tag>
@@ -4080,6 +4177,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Герман Аляскинский</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_HERMAN_OF_ALASKA_PEDIA</Tag>
@@ -4118,6 +4216,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Николай Петрович Резанов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_NIKOLAI_REZANOV_PEDIA</Tag>
@@ -4156,6 +4255,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Иван Александрович Кусков</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_IVAN_KUSKOV_PEDIA</Tag>
@@ -4170,30 +4270,31 @@
     <TEXT>
         <Tag>TXT_KEY_FATHER_IVAN_KRUZENSHTERN</Tag>
         <English>
-            <Text>Adam Johann von Krusenstern</Text>
+            <Text>Ivan Fyodorovich Krusenstern</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </English>
         <French>
-            <Text>Adam Johann von Krusenstern</Text>
+            <Text>Ivan Fyodorovich Krusenstern</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Adam Johann von Krusenstern</Text>
+            <Text>Ivan Fyodorovich Krusenstern</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Adam Johann von Krusenstern</Text>
+            <Text>Ivan Fyodorovich Krusenstern</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Adam Johann von Krusenstern</Text>
+            <Text>Ivan Fyodorovich Krusenstern</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Иван Федорович Крузенштерн</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_IVAN_KRUZENSHTERN_PEDIA</Tag>
