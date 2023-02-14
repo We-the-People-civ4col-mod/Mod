@@ -682,7 +682,7 @@ void CvTeam::declareWarNoRevolution(TeamTypes eTeam, bool bNewDiplo, WarPlanType
 				AI_setWarPlan(eTeam, WARPLAN_DOGPILE);
 			}
 		}
-		
+
 		GET_TEAM(getID()).AI_doDamages(eTeam, false);
 
 		GC.getMapINLINE().verifyUnitValidPlot();
@@ -742,7 +742,7 @@ void CvTeam::declareWarNoRevolution(TeamTypes eTeam, bool bNewDiplo, WarPlanType
 								// Check if the target has a parent (Europe)
 								if (GET_PLAYER((PlayerTypes)iJ).getParent() != NO_PLAYER)
 								{
-									// Erik: If the player declares war on the colonies of another European nation, add a major diplo penalty 
+									// Erik: If the player declares war on the colonies of another European nation, add a major diplo penalty
 									// with its king as well UNLESS they are already at war
 									if (!GET_TEAM(GET_PLAYER(GET_PLAYER((PlayerTypes)iJ).getParent()).getTeam()).isAtWar(GET_PLAYER((PlayerTypes)iJ).getTeam()))
 									{
@@ -862,7 +862,7 @@ void CvTeam::declareWarNoRevolution(TeamTypes eTeam, bool bNewDiplo, WarPlanType
 		}
 
 		gDLL->getEventReporterIFace()->changeWar(true, getID(), eTeam);
-		if (gTeamLogLevel >= 1) 
+		if (gTeamLogLevel >= 1)
 			logBBAI(" Team %d (%S) declares war on team %d", getID(), GET_PLAYER(getLeaderID()).getCivilizationDescription(0), eTeam); // BETTER_BTS_AI_MOD (10/02/09, jdog5000): AI logging
 
 		cancelDefensivePacts(getID());
@@ -894,7 +894,7 @@ void CvTeam::declareWar(TeamTypes eTeam, bool bNewDiplo, WarPlanTypes eWarPlan)
 
 		// TAC - Messages - Ray - START
 		//Alert all Human Players of Revolution
-		
+
 		CvPlayer& iPlayer = GET_PLAYER((PlayerTypes) getID());
 		PlayerTypes kingID = iPlayer.getParent();
 		CvPlayer& King = GET_PLAYER(kingID);
@@ -903,11 +903,11 @@ void CvTeam::declareWar(TeamTypes eTeam, bool bNewDiplo, WarPlanTypes eWarPlan)
 		{
 			CvPlayer& kPlayer = GET_PLAYER((PlayerTypes) i);
 			if (kPlayer.isAlive() && kPlayer.isHuman())
-			{	
+			{
 				PlayerTypes kingID = kPlayer.getParent();
 				CvPlayer& King = GET_PLAYER(kingID);
 				CvWString szMessage = gDLL->getText("TXT_KEY_COMPETITIOR_INDEPENDENCE_WAR", iPlayer.getCivilizationAdjectiveKey(), King.getCivilizationDescription());
-				gDLL->getInterfaceIFace()->addMessage(kPlayer.getID(), true, GC.getEVENT_MESSAGE_TIME(), szMessage, "AS2D_CITY_REVOLT", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), NULL, NULL, false, false);			
+				gDLL->getInterfaceIFace()->addMessage(kPlayer.getID(), true, GC.getEVENT_MESSAGE_TIME(), szMessage, "AS2D_CITY_REVOLT", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), NULL, NULL, false, false);
 			}
 		}
 		// TAC - Messages - Ray - END
@@ -985,7 +985,7 @@ void CvTeam::makePeace(TeamTypes eTeam, bool bBumpUnits)
 		GC.getGameINLINE().addReplayMessage(REPLAY_MESSAGE_MAJOR_EVENT, getLeaderID(), szBuffer, -1, -1, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
 
 		gDLL->getEventReporterIFace()->changeWar(false, getID(), eTeam);
-		if (gTeamLogLevel >= 1) 
+		if (gTeamLogLevel >= 1)
 			logBBAI(" Team % d(% S) and team % d(% S) make peace", getID(), GET_PLAYER(getLeaderID()).getCivilizationDescription(0), eTeam, GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationDescription(0)); // BETTER_BTS_AI_MOD, AI logging, 05/21/10, jdog5000
 	}
 }
@@ -1028,7 +1028,7 @@ void CvTeam::meet(TeamTypes eTeam, bool bNewDiplo)
 	{
 		makeHasMet(eTeam, bNewDiplo);
 		GET_TEAM(eTeam).makeHasMet(getID(), bNewDiplo);
-		if (gTeamLogLevel >= 2 && GC.getGame().isFinalInitialized() && eTeam != getID() && isAlive() && GET_TEAM(eTeam).isAlive()) 
+		if (gTeamLogLevel >= 2 && GC.getGame().isFinalInitialized() && eTeam != getID() && isAlive() && GET_TEAM(eTeam).isAlive())
 			logBBAI(" Team % d(% S) meets team % d(% S)", getID(), GET_PLAYER(getLeaderID()).getCivilizationDescription(0), eTeam, GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationDescription(0)); // BETTER_BTS_AI_MOD, AI logging, 02/20/10, jdog5000
 	}
 }
@@ -1105,8 +1105,8 @@ bool CvTeam::canSignDefensivePact(TeamTypes eTeam)
 				}
 
 				if (isPermanentWarPeace((TeamTypes)iTeam) != GET_TEAM(eTeam).isPermanentWarPeace((TeamTypes)iTeam))
-				{				
-					return false;			
+				{
+					return false;
 				}
 			}
 		}
@@ -1756,7 +1756,9 @@ void CvTeam::convinceFather(FatherTypes eFather, bool bAccept)
 		setFatherIgnore(eFather, true);
 	}
 
-	testFoundingFather();
+	// This is a recursive call, because we are called from testFoundingFather! Why?
+	// If we disable it, there will only be one FF offered to each team per turn, which is preferable for balancing IMHO:
+	//testFoundingFather();
 }
 
 bool CvTeam::isHuman() const
@@ -1951,6 +1953,23 @@ void CvTeam::changeAliveCount(int iChange)
 }
 
 
+void CvTeam::addAliveMember(PlayerTypes ePlayer)
+{
+	changeAliveCount(1);
+}
+
+
+void CvTeam::removeAliveMember(PlayerTypes ePlayer)
+{
+	changeAliveCount(-1);
+
+	if (!isAlive())
+	{
+		kill();
+	}
+}
+
+
 int CvTeam::getEverAliveCount() const
 {
 	return m_iEverAliveCount;
@@ -1967,6 +1986,50 @@ void CvTeam::changeEverAliveCount(int iChange)
 {
 	m_iEverAliveCount += iChange;
 	FAssert(getEverAliveCount() >= 0);
+}
+
+
+void CvTeam::addEverAliveMember(PlayerTypes ePlayer)
+{
+	changeEverAliveCount(1);
+}
+
+
+void CvTeam::kill()
+{
+	if (!GC.getGameINLINE().isOption(GAMEOPTION_USE_OLD_FOUNDING_FATHER_SYSTEM))
+	{
+		freeFathers();
+	}
+}
+
+
+void CvTeam::freeFathers()
+{
+	FAssert(!GC.getGameINLINE().isOption(GAMEOPTION_USE_OLD_FOUNDING_FATHER_SYSTEM));
+
+	for (int iFather = 0; iFather < GC.getNumFatherInfos(); ++iFather)
+	{
+		FatherTypes eFather = (FatherTypes) iFather;
+		if(GC.getGameINLINE().getFatherTeam(eFather) == getID())
+		{
+			GC.getGameINLINE().setFatherTeam(eFather, NO_TEAM);
+			for (int iI = 0; iI < MAX_TEAMS; iI++)
+			{
+				// notify all teams that this FF is available again
+				GET_TEAM((TeamTypes)iI).notifyFatherAvailability(eFather, true);
+			}
+		}
+	}
+}
+
+
+void CvTeam::notifyFatherAvailability(FatherTypes eFather, bool bAvailability)
+{
+	if(isFatherIgnore(eFather))
+	{
+		setFatherIgnore(eFather, false);
+	}
 }
 
 
