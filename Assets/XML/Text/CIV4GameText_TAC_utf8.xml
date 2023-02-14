@@ -1520,7 +1520,7 @@
         <English>First, [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT]'s luck in battle has deserted him - and now he is also losing the favour of his king, who is tired of being the laughing stock of the whole world. His Majesty deigns to order all explorers, soldiers and colonists from the New World back to Europe.</English>
         <French>Las de l'insuccès de [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT], son Roi a décidé de retirer du Nouveau Monde l'ensemble de ses explorateurs, soldats et colons.</French>
         <German>Zunächst hat [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] das Schlachtenglück verlassen - und nun verliert er auch noch die Gunst seines Königs, der es leid ist, zum Gespött der ganzen Welt zu werden. Seine Majestät geruhen, alle Entdecker, Soldaten und Kolonisten aus der Neuen Welt zurück nach Europa zu beordern.</German>
-        <Russian>Недавно удача на поле боя покинула [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT]! А теперь он потерял благосклонность своего Короля, которому надоело быть посмешищем всего мира. Его Величество соизволит приказать всем исследователям, солдатам и колонистам Нового Света вернуться в Европу.</Russian>
+        <Russian>Недавно удача на поле боя покинула [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT]! А теперь они потеряли благосклонность своего Короля, которому надоело быть посмешищем всего мира. Его Величество соизволит приказать всем исследователям, солдатам и колонистам Нового Света вернуться в Европу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_NATIVE_MERC</Tag>

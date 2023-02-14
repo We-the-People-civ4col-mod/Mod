@@ -1087,7 +1087,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s2_team[COLOR_REVERT] hat die Unterstützung von [COLOR_FONT_CREAM]%s1_person[COLOR_REVERT] gewinnen können.</German>
         <Italian>[COLOR_FONT_CREAM]%s1_person[COLOR_REVERT] si è unito alla squadra [COLOR_HIGHLIGHT_TEXT]%s2_team[COLOR_REVERT].</Italian>
         <Spanish>[COLOR_FONT_CREAM]%s1_person[COLOR_REVERT] [NUM1:se ha:se ha:se han:se han] unido a [COLOR_HIGHLIGHT_TEXT]%s2_team[COLOR_REVERT].</Spanish>
-        <Russian>[COLOR_FONT_CREAM]%s1_person[COLOR_REVERT] вошел в состав Континентального конгресса [COLOR_HIGHLIGHT_TEXT]%s2_team[COLOR_REVERT].</Russian>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_person[COLOR_REVERT] вошел в состав Континентального конгресса [COLOR_HIGHLIGHT_TEXT]%s2_team[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JOINED_UNKNOWN</Tag>
@@ -1096,7 +1096,7 @@
         <German>[COLOR_FONT_CREAM]%s1_person[COLOR_REVERT] kann sich unserer Sache nun nicht mehr anschließen.</German>
         <Italian>[COLOR_FONT_CREAM]%s1_person[COLOR_REVERT] non è più disponibile per unirsi alla nostra causa.</Italian>
         <Spanish>[COLOR_FONT_CREAM]%s1_person[COLOR_REVERT] ya no [NUM1:está disponible:está disponible:están disponibles:están disponibles] para unirse a nuestra causa.</Spanish>
-        <Russian>[COLOR_FONT_CREAM]%s1_person[COLOR_REVERT] больше не может присоединиться к нашему делу.</Russian>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_person[COLOR_REVERT] больше не может присоединиться к нашему делу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_REJECTED</Tag>
@@ -1981,6 +1981,7 @@
         <German>[ICON_BULLET]Siedlung bombardieren : -%d1_Mod%%/Runde%F2_Icon</German>
         <Italian>[ICON_BULLET]Bombarda insediamento : -%d1_Mod%%/turno%F2_Icon</Italian>
         <Spanish>[ICON_BULLET]Cañonear asentamiento : -%d1_Mod%%/turno%F2_Icon</Spanish>
+        <Russian>[ICON_BULLET]Бомбардировка поселений : -%d1_Mod%%/ход%F2_Icon</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_OF</Tag>
