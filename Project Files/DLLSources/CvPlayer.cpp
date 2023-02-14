@@ -8292,9 +8292,6 @@ void CvPlayer::setAlive(bool bNewValue)
 	}
 	else // coming alive or dying
 	{
-		CvWString szBuffer;
-		int iI;
-
 		m_bAlive = bNewValue;
 
 		// Report event to Python
@@ -8363,9 +8360,9 @@ void CvPlayer::setAlive(bool bNewValue)
 
 			if (GC.getGameINLINE().getElapsedGameTurns() > 0)
 			{
-				szBuffer = gDLL->getText("TXT_KEY_MISC_CIV_DESTROYED", getCivilizationAdjectiveKey());
+				CvWString szBuffer = gDLL->getText("TXT_KEY_MISC_CIV_DESTROYED", getCivilizationAdjectiveKey());
 
-				for (iI = 0; iI < MAX_PLAYERS; iI++)
+				for (int iI = 0; iI < MAX_PLAYERS; iI++)
 				{
 					if (GET_PLAYER((PlayerTypes)iI).isAlive())
 					{
