@@ -37,6 +37,7 @@
         <German>Löschen Sie den letzten Befehl in der Befehlsliste der Einheit. Haben Sie dieser versehentlich einen falschen Befehl erteilt, ist diese Funktion sehr nützlich.</German>
         <Italian>Questo comando annulla l'ultimo ordine nella coda delle azioni dell'unità. Estremamente utile se si sbaglia a impostare la coda degli ordini.</Italian>
         <Spanish>Esto cancelará la última orden en la cola de órdenes de la unidad. Es muy útil si ponéis sin querer una orden incorrecta en la cola.</Spanish>
+        <Russian>Отменяет последний приказ, отданный юниту</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_CANCEL_ALL</Tag>
@@ -54,6 +55,7 @@
         <German>Löschen Sie alle Befehle der aktuellen Einheit.</German>
         <Italian>Per annullare tutti gli ordini in coda dell'unità selezionata.</Italian>
         <Spanish>Esto cancelará todas las órdenes que haya en cola para la unidad que tengáis seleccionada.</Spanish>
+        <Russian>Отменяет все стоящие в очереди приказы для выбранного юнита</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_CHOOSE_TRADE_ROUTES</Tag>
@@ -71,6 +73,7 @@
         <German>Routenverwaltung aufrufen, um Transportrouten einzurichten und zuzuweisen.</German>
         <Italian>Automatizza questo trasporto scegliendo le rotte commerciali che dovrebbe seguire.</Italian>
         <Spanish>Automatizar este transporte seleccionando las rutas comerciales que debe seguir.</Spanish>
+        <Russian>Автоматизируйте этот транспорт, выбрав транспортные маршруты, по которым он должен следовать</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_CLEAR_SPECIALTY</Tag>
@@ -88,6 +91,7 @@
         <German>Wandelt diesen Experten in einen Freien Kolonisten um, der dann eine andere Expertenfähigkeit erlernen könnte.</German>
         <Italian>Cambia l'unità in modo che possa ottenere una diversa specializzazione.</Italian>
         <Spanish>Convierte esta unidad para que pueda adquirir una especialidad distinta.</Spanish>
+        <Russian>Текущая специальность юнита сбрасывается для того, чтобы появилась возможность обучиться другой</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_DELETE</Tag>
@@ -105,6 +109,7 @@
         <German>Klicken Sie hier, um die Einheit aus dem Spiel zu entfernen.</German>
         <Italian>Clicca su questo ordine per rimuovere l'unità dalla partita.</Italian>
         <Spanish>Hacer clic en esta orden para eliminar a la unidad de la partida.</Spanish>
+        <Russian>Данный приказ навсегда удаляет отряд из игры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_ESTABLISH_MISSION</Tag>
@@ -122,6 +127,7 @@
         <German>Eine Mission errichten, um Konvertierte Ureinwohner zu gewinnen.</German>
         <Italian>Fonda una missione nel villaggio per convertire gradualmente i nativi alla tua fede.</Italian>
         <Spanish>Fundad una misión en la aldea para ir convirtiendo gradualmente a los nativos a vuestra fe.</Spanish>
+        <Russian>Создайте в деревне индейцев христианскую миссию, чтобы постепенно обращать туземцев в свою веру</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_GIFT</Tag>
@@ -139,6 +145,7 @@
         <German>Übergeben Sie die aktuelle Einheit dem Spieler, der ihren Standort kontrolliert. Möchten Sie die Einheit einem anderen Spieler übergeben, müssen Sie sie zuerst in dessen Territorium verlegen.</German>
         <Italian>Questo comando serve per consegnare l'unità attualmente selezionata al giocatore che controlla il territorio sul quale si trova l'unità. Per dare l'unità a un altro giocatore devi prima muovere l'unità nel territorio prescelto.</Italian>
         <Spanish>Con esto le daréis la unidad seleccionada al jugador que controle la tierra en la que se encuentre dicha unidad. Para darle la unidad a otro jugador, antes tendréis que moverla a un territorio que le pertenezca.</Spanish>
+        <Russian>Позволяет передать выбранный юнит игроку, на территории которого тот находится</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_GOTO_MENU</Tag>
@@ -156,6 +163,7 @@
         <German>Öffnet ein Menü, mit dem man die gewählte Einheit zu einer bestimmten Stadt schicken kann.</German>
         <English>Apre un menu che permette di inviare l'unità selezionata a una città specifica.</English>
         <English>Abre un menú que permite enviar la unidad seleccionada a una ciudad concreta.</English>
+        <Russian>Открывает меню, позволяющее отправить выбранный юнит в нужный город</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_HOTKEY</Tag>
@@ -185,6 +193,7 @@
         <German>Einheit wird nicht stoppen, wenn ein Feind in Sichtweite gerät.</German>
         <Italian>L'unità non si ferma quando un nemico entra in vista.</Italian>
         <Spanish>La unidad no se detendrá cuando un enemigo esté a la vista.</Spanish>
+        <Russian>Юнит не прекратит движение или действия, даже когда в поле зрения появятся вражеские отряды</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_KING_TRANSPORT</Tag>
@@ -220,6 +229,7 @@
         <German>Bei den Ureinwohnern leben und eine Expertenfähigkeit erlernen.</German>
         <Italian>Vivi tra i nativi e impara un'abilità a livello esperto.</Italian>
         <Spanish>Vivid entre los nativos y conseguid una habilidad experta.</Spanish>
+        <Russian>Живите среди туземцев и приобретайте экспертные навыки профессии, которой они могут обучить</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_LOAD</Tag>
@@ -237,6 +247,7 @@
         <German>Einheit verladen.</German>
         <Italian>Per muovere un'unità a bordo di un trasporto.</Italian>
         <Spanish>Con esto subiréis la unidad a un transporte.</Spanish>
+        <Russian>Позволяет переместить юнит в транспорт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_LOAD_CARGO</Tag>
@@ -254,6 +265,7 @@
         <German>Güter auf eine Transporteinheit verladen.</German>
         <Italian>Per caricare su un trasporto i beni immagazzinati.</Italian>
         <Spanish>Esto cargará en el transporte las mercancías almacenadas.</Spanish>
+        <Russian>Позволяет загрузить товары из складов в транспорт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_LOAD_UNIT</Tag>
@@ -271,6 +283,7 @@
         <German>Die Einheit wird in die gewählte Transporteinheit geladen.</German>
         <Italian>Per muovere un'unità sul trasporto specificato.</Italian>
         <Spanish>Con esto, la unidad embarcará en el transporte especificado.</Spanish>
+        <Russian>Позволяет загрузить юнит в выбранный транспорт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_LOAD_YIELD</Tag>
@@ -296,6 +309,7 @@
         <German>Aus einer Liste der verfügbaren Berufe wählen.</German>
         <Italian>Scegli tra una lista delle professioni disponibili.</Italian>
         <Spanish>Elegir de una lista de profesiones disponibles.</Spanish>
+        <Russian>Выбрать из списка доступных профессий, нужную в данный момент</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_PROMOTE</Tag>
@@ -308,6 +322,7 @@
         <German>Aus einer Liste der verfügbaren Beförderungen wählen.</German>
         <Italian>Scegli da una lista delle promozioni disponibili.</Italian>
         <Spanish>Elegir de una lista de ascensos disponibles.</Spanish>
+        <Russian>Выбрать из списка доступных нужное повышение юнита</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_PROMOTION</Tag>
@@ -338,6 +353,7 @@
         <German>Das Schiff segelt über die Karte hinaus und ist dann über den Afrika-Bildschirm verfügbar.</German>
         <Italian>La nave salpa al di fuori della mappa; puoi accedervi attraverso la schermata Africa.</Italian>
         <Spanish>El barco navega hasta salir del mapa, pero se puede acceder a él mediante la pantalla de Africa.</Spanish>
+        <Russian>Корабль в автоматическом режиме достигает клеток "Путь в Европу" и через несколько ходов появляется на экране Африки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_SAIL_TO_EUROPE</Tag>
@@ -355,6 +371,7 @@
         <German>Das Schiff segelt über die Karte hinaus und ist dann im Europa-Bildschirm verfügbar</German>
         <Italian>La nave salpa al di fuori della mappa; puoi accedervi attraverso la schermata Europa.</Italian>
         <Spanish>El barco navega hasta salir del mapa, pero se puede acceder a él mediante la pantalla de Europa.</Spanish>
+        <Russian>Корабль в автоматическом режиме достигает клеток "Путь в Европу" и через несколько ходов появляется на экране Европы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_SAIL_TO_PORT_ROYAL</Tag>
@@ -372,6 +389,7 @@
         <German>Das Schiff segelt über die Karte hinaus und ist dann über den Port Royal-Bildschirm verfügbar.</German>
         <Italian>La nave salpa al di fuori della mappa; puoi accedervi attraverso la schermata Port Royal.</Italian>
         <Spanish>El barco navega hasta salir del mapa, pero se puede acceder a él mediante la pantalla de Port Royal.</Spanish>
+        <Russian>Корабль в автоматическом режиме достигает клеток "Путь в Европу" и через несколько ходов появляется на экране Порт Ройала</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_SPEAK_WITH_CHIEF</Tag>
@@ -389,6 +407,7 @@
         <German>Mit dem Häuptling sprechen, um vielleicht Geschenke zu erlangen.</German>
         <Italian>Incontra il capo sperando di imparare di più sullo stile di vita dei nativi.</Italian>
         <Spanish>Reuníos con el jefe con la esperanza de aprender más sobre el modo de vida indígena.</Spanish>
+        <Russian>Встретьтесь с вождем, чтобы узнать больше об образе жизни коренных жителей, их возможностях и пожеланиях</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_STIR_UP_NATIVES</Tag>
@@ -424,6 +443,7 @@
         <German>Widerrufen Sie den Automatisierungsbefehl der Einheit. Diese wartet anschließend auf weitere Befehle.</German>
         <Italian>Per annullare l'ordine di automazione di un'unità e riprenderne completamente il controllo.</Italian>
         <Spanish>Sirve para cancelar la orden de automatizarse de la unidad. Ésta pasará a obedecer solo las órdenes que le deis.</Spanish>
+        <Russian>Это отменит автоматизированные действия юнита и вам опять придется назначать ему задания вручную</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_UNLOAD</Tag>
@@ -441,6 +461,7 @@
         <German>Entladen Sie eine zuvor eingeladene Einheit.</German>
         <Italian>Per scaricare un'unità precedentemente caricata su un trasporto.</Italian>
         <Spanish>Con esto bajaréis del transporte a una unidad previamente embarcada en él.</Spanish>
+        <Russian>Позволяет выгрузить юнит из транспорта</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_UNLOAD_ALL</Tag>
@@ -458,6 +479,7 @@
         <German>Entladen Sie alle transportierten Einheiten.</German>
         <Italian>Per scaricare tutte le unità a bordo del trasporto.</Italian>
         <Spanish>Con esto desembarcarán todas las unidades transportadas.</Spanish>
+        <Russian>Позволяет выгрузить сразу всею юниты, находящиеся в транспорте</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_UPGRADE</Tag>
@@ -487,6 +509,7 @@
         <German>Wecken Sie eine Einheit auf und erteilen Sie ihr Befehle. Die Einheit verliert dadurch nicht ihren Befestigungsbonus.</German>
         <Italian>Questo comando sveglierà l'unità, in modo che possa ricevere ordini. Svegliando un'unità non si perde il bonus della sua fortificazione.</Italian>
         <Spanish>Esto despertará a la unidad para que se le puedan dar órdenes. Despertar a una unidad no elimina las bonificaciones que tenga por fortificación.</Spanish>
+        <Russian>Позволяет активировать юнит для дальнейших действий. Активация не снимает его бонус укрепления</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_YIELD_TRADE</Tag>
@@ -504,6 +527,7 @@
         <German>Benutzen Sie Ihre Transporteinheiten, um mit den Einwohnern Handel zu treiben.</German>
         <Italian>Usa il tuo trasporto per commerciare con i locali.</Italian>
         <Spanish>Usad vuestro transporte para comerciar con los lugareños.</Spanish>
+        <Russian>Используйте свой транспорт, чтобы торговать с местными жителями</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_MERGE_TREASURES</Tag>
@@ -521,6 +545,7 @@
         <German>Vereine die Schätze auf dem Geländefeld zu einer Einheit.</German>
         <Italian>Unire i tesori della trama in una sola unità.</Italian>
         <Spanish>Fusiona los tesoros de la parcela en una unidad.</Spanish>
+        <Russian>Позволяет объединить несколько сокровищ в один юнит с максимальной ценностью в 3000 золотых</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_ESTABLISH_TRADE_POST</Tag>
@@ -538,6 +563,7 @@
         <German>Einen Handelsposten errichten, um mit den Ureinwohnern Handel zu treiben und Schätze zu erzeugen.</German>
         <Italian>Stabilire un Trading Post nel villaggio per generare gradualmente dei tesori.</Italian>
         <Spanish>Establecer un puesto de comercio en el pueblo para generar gradualmente tesoros.</Spanish>
+        <Russian>Откройте торговый пост, чтобы постепенно генерировать сокровища. Чем больше жителей в поселении, тем быстрее они будут появляться</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_USE_CONSTRUCTION_SUPPLIES</Tag>
@@ -549,5 +575,6 @@
         <Tag>TXT_KEY_COMMAND_USE_CONSTRUCTION_SUPPLIES_HELP</Tag>
         <English>Use the Construction Supply to transform it into Production of the City.</English>
         <German>Benutze das Baumaterial, um es in Produktion der Stadt umzuwandeln.</German>
+        <Russian>Используйте строительные материалы, чтобы ускорить производство в городе</Russian>
     </TEXT>
 </Civ4GameText>

@@ -19,16 +19,19 @@
         <Tag>TXT_KEY_CITY_CONSTRUCTION_SUPPLIES_USED</Tag>
         <English>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Construction Supplies were added to the City.</English>
         <German>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Baumaterialien wurden der Stadt hinzugefügt.</German>
+        <Russian>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Construction Supplies were added to the City.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_YOU_SHIP_ESCAPED_CITY</Tag>
         <English>Milord, the ship called [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] could escape the seizure of [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] by the enemy.</English>
         <German>Milord, Euer Schiff [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] konnte vor der Einnahme von [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] durch den Feind noch Segel setzen und auf hohe See entkommen.</German>
+        <Russian>йцукен</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ENEMY_SHIP_ESCAPED_CITY</Tag>
         <English>Milord, the enemy ship [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] could escape when your troops captured [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</English>
         <German>Milord, das feindliche Schiff [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] konnte vor der Einnahme von [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] den Hafen verlassen und so der Beschlagnahme durch Eure Truppen entgehen.</German>
+        <Russian>йцукен</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_TIME_NO_TRADE</Tag>
@@ -64,6 +67,7 @@
         <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED_MAP</Tag>
         <English>Worked to become [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] :[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] Turns</English>
         <German>Arbeitet um [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] zu werden :[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] Runden</German>
+        <Russian>Работал, чтобы стать [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] :[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] ходов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_MONASTERY_BONUS</Tag>

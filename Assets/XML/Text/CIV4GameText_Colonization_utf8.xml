@@ -187,6 +187,7 @@
         <German>[ICON_BULLET]Kann keine feindlichen Siedlungen oder Einheiten erobern</German>
         <Italian>[ICON_BULLET]Non può conquistare insediamenti o unità nemiche</Italian>
         <Spanish>[ICON_BULLET]No puede capturar asentamientos o unidades del enemigo</Spanish>
+        <Russian>[ICON_BULLET]Не может захватывать вражеские поселения и юниты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ADVANCED_START_POINTS_HELP</Tag>
@@ -219,6 +220,7 @@
         <German>[ICON_BULLET]%D1 [ICON_CULTURE] in allen Siedlungen</German>
         <Italian>[ICON_BULLET]%D1 [ICON_CULTURE] in tutti gli insediamenti</Italian>
         <Spanish>[ICON_BULLET]%D1 [ICON_CULTURE] en todos los asentamientos</Spanish>
+        <Russian>[ICON_BULLET]%D1 [ICON_CULTURE] во всех поселениях</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_POPULATION_CHANGE</Tag>
@@ -275,6 +277,7 @@
         <German>Bedeutendste Städte</German>
         <Italian>I primi 5 insediam.</Italian>
         <Spanish>5 mejores ciudades</Spanish>
+        <Russian>5 лучших городов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_REQUIRES_NUM_CITIES</Tag>
@@ -335,6 +338,7 @@
         <German>[ICON_BULLET][COLOR_WARNING_TEXT]%d1[COLOR_REVERT][ICON_EATENFOOD][TAB]verbraucht</German>
         <Italian>[ICON_BULLET][COLOR_WARNING_TEXT]%d1[COLOR_REVERT][ICON_EATENFOOD][TAB]consumato</Italian>
         <Spanish>[ICON_BULLET][COLOR_WARNING_TEXT]%d1[COLOR_REVERT][ICON_EATENFOOD][TAB]consumidos</Spanish>
+        <Russian>[ICON_BULLET][COLOR_WARNING_TEXT]%d1[COLOR_REVERT][ICON_EATENFOOD][TAB]израсходовано</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_PROD_FINAL_YIELD</Tag>
@@ -2204,6 +2208,7 @@
         <German>Abschluss in %d1 [NUM1:Runde:Runden]</German>
         <Italian>Diploma fra %d1 [NUM1:turno:turni]</Italian>
         <Spanish>Graduación en %d1 [NUM1:turno:turnos]</Spanish>
+        <Russian>Обучится через %d1 [NUM1:ход:ходов]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_GRADUATION_CHANCE</Tag>
@@ -2553,6 +2558,7 @@
         <German>[ICON_BULLET]%D1 Produktion von %s2_list_of_icons an Land</German>
         <Italian>[ICON_BULLET]%D1 produzione di %s2_list_of_icons a terra</Italian>
         <Spanish>[ICON_BULLET]%D1 a la producción de %s2_list_of_icons en tierra</Spanish>
+        <Russian>[ICON_BULLET]%D1 к производству %s2_list_of_icons на клетках земли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YIELD_MODIFIER_WATER</Tag>
@@ -2570,6 +2576,7 @@
         <German>[ICON_BULLET]%D1 Produktion von %s2_list_of_icons zu Wasser</German>
         <Italian>[ICON_BULLET]%D1 produzione di %s2_list_of_icons in acqua</Italian>
         <Spanish>[ICON_BULLET]%D1 a la producción de %s2_list_of_icons en agua</Spanish>
+        <Russian>[ICON_BULLET]%D1 к производству %s2_list_of_icons на клетках воды</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NEW_EUROPE_ARMY</Tag>
@@ -2578,6 +2585,7 @@
         <German>Eure Politik und das Wachstum Eurer Kolonien werden daheim in Europa von Eurem König mit Argwohn verfolgt. Seine Majestät haben befohlen, sein Expeditionskorps um eine Einheit %s3_unit zu verstärken.</German>
         <Italian>Il re di %s1_civ_short è allarmato dal sentimento di ribellione in %s2_civ_short. Ha aggiunto un'unità di %s3:2_unit al corpo di spedizione reale %s4_adjective.</Italian>
         <Spanish>El rey de %s1_civ_short está alarmado por el sentimiento de rebelión que se respira en %s2_civ_short. Ha añadido unidades de %s3_unit a la Real Fuerza Expedicionaria %s4:2_adjective.</Spanish>
+        <Russian>Король с подозрением следит за ростом колоний в Новом свете и за вашей политикой. Его Величество распорядился усилить Королевский экспедиционный корпус отрядом %s3_unit.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_STARVING</Tag>
@@ -2586,11 +2594,13 @@
         <German>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Die Bürger verlassen die Stadt auf der Suche nach Nahrung[COLOR_REVERT]</German>
         <Italian>I cittadini abbandonano [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] alla ricerca di cibo</Italian>
         <Spanish>Los ciudadanos abandonan [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] en busca de Alimentos.</Spanish>
+        <Russian>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Жители покидают город в поисках еды[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_STARVING_AND_REVOLTING</Tag>
         <English>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Citizens are starving. The lack of support from the government has caused them to rebel[COLOR_REVERT]</English>
         <German>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Die Bürger verhunger. Die ausbleibende Unterstützung durch die Regierung hat zu Revolten geführt.[COLOR_REVERT]</German>
+        <Russian>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Жители голодают. Отсутствие поддержки со стороны правительства побудило их к восстанию.[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_STARVING_BUT_COLONIES_PAID</Tag>
@@ -2670,6 +2680,7 @@
         <German>%s3_city : Aus Mangel an freier Lagerkapazität wurde ein Überschuss von %d1_number%F2_yield_icon für %d4[ICON_GOLD] verramscht.</German>
         <Italian>Un eccesso di %d1_number%F2_yield_icon a %s3_city è stato venduto per %d4[ICON_GOLD] a causa della limitata capienza dei depositi</Italian>
         <Spanish>Un superávit de %d1_number%F2_yield_icon en %s3_city se ha vendido por %d4[ICON_GOLD] debido al límite de la capacidad de almacenamiento.</Spanish>
+        <Russian>%s3_city : Из-за ограниченной емкости хранилища излишки %d1_number%F2_yield_icon были проданы за %d4[ICON_GOLD].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_YIELD_OVERFLOW_SELL_PERCENT</Tag>
@@ -2863,6 +2874,7 @@
         <German>Kolonialtruppen</German>
         <Italian>Forze coloniali</Italian>
         <Spanish>Fuerzas coloniales</Spanish>
+        <Russian>Колониальные войска</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CIV_DESTROYED</Tag>
@@ -2871,6 +2883,7 @@
         <German>Ein historischer Augenblick : Die [COLOR_HIGHLIGHT_TEXT]%s1:3_CivAdj[COLOR_REVERT] Nation wurde vernichtet!</German>
         <Italian>%s1:2_CivAdj sconfitti!</Italian>
         <Spanish>¡Los %s1:3_CivAdj han sido derrotados!</Spanish>
+        <Russian>Исторический момент : [COLOR_HIGHLIGHT_TEXT]%s1:2_CivAdj[COLOR_REVERT] побежден!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BONUS_YIELD_CHANGE</Tag>
@@ -2888,6 +2901,7 @@
         <German>Ungenügende Mittel, um Einheit [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] zu erwerben (benötigt %d2[ICON_GOLD])</German>
         <Italian>Fondi insufficienti per acquistare l'unità %s1_unit (richiede %d2[ICON_GOLD])</Italian>
         <Spanish>No hay fondos suficientes para comprar unidades de %s1_unit (se necesita %d2[ICON_GOLD])</Spanish>
+        <Russian>Недостаточно средств для покупки [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] (требуется %d2[ICON_GOLD])</Russian>
     </TEXT>
     <TEXT>
         <Tag>EUROPE_SCREEN_RECRUIT_UNIT_LACK_FUNDS</Tag>
@@ -2896,6 +2910,7 @@
         <German>Ungenügende Mittel, um die Fertigstellung von [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] zu beschleunigen (benötigt %d2[ICON_GOLD])</German>
         <Italian>Fondi insufficienti per affrettare l'unità %s1_unit (richiede %d2[ICON_GOLD])</Italian>
         <Spanish>No hay fondos suficientes para acelerar las unidades de %s1_unit (se necesita %d2[ICON_GOLD])</Spanish>
+        <Russian>Недостаточно средств для ускорения производства [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] (требуется %d2[ICON_GOLD])</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_NEEDED_FOR_PROFESSION</Tag>
@@ -2904,6 +2919,7 @@
         <German>[ICON_BULLET]%d1 erforderlich, um [COLOR_UNIT_TEXT]%s2:2_profession[COLOR_REVERT] auszurüsten</German>
         <Italian>[ICON_BULLET]%d1 necessari per equipaggiare l'unità [COLOR_UNIT_TEXT]%s2:2_profession[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]Se necesita %d1 para equipar a las unidades de [COLOR_UNIT_TEXT]%s2_profession[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]%d1 нужно для экипировки [COLOR_UNIT_TEXT]%s2:2_profession[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_NON_CITIZEN</Tag>
@@ -2967,6 +2983,7 @@
         <German>Häuptling von %s1_city - %s2_tribe</German>
         <Italian>Capo di %s1_city - %s2_tribe</Italian>
         <Spanish>Jefe de %s1_city (%s2_tribe)</Spanish>
+        <Russian>Вождь %s1_city - %s2_tribe</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TALK_NATIVES_POPUP</Tag>
@@ -2975,6 +2992,7 @@
         <German>Ihr habt [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] betreten. Was möchtet Ihr tun?</German>
         <Italian>Sei entrato a [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. Cosa vuoi fare?</Italian>
         <Spanish>Habéis entrado en [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. ¿Qué queréis hacer?</Spanish>
+        <Russian>Вы вошли в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. Что вы хотите сделать?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TALK_NATIVES_POPUP_CHIEF</Tag>
@@ -3010,6 +3028,7 @@
         <German>Eine Mission errichten[NEWLINE]Erfolgschance : %d1_success</German>
         <Italian>Fonda una missione.[NEWLINE]Success rate : %d1_success</Italian>
         <Spanish>Fundar una misión[NEWLINE]Success rate : %d1_success</Spanish>
+        <Russian>Попытаться основать христианскую миссию в деревне индейцев[NEWLINE]Шанс успеха : %d1_success</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TALK_NATIVES_POPUP_TRADE</Tag>
@@ -3018,6 +3037,7 @@
         <German>Handelsverhandlungen starten</German>
         <Italian>Avvia trattative commerciali.</Italian>
         <Spanish>Negociar intercambios</Spanish>
+        <Russian>Вступить в торговые переговоры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TALK_NATIVES_POPUP_NOTHING</Tag>
@@ -3026,6 +3046,7 @@
         <German>Nur auf der Durchreise</German>
         <Italian>Sono solo di passaggio.</Italian>
         <Spanish>Solo pasaba por aquí</Spanish>
+        <Russian>Мы просто идем мимо</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TALK_NATIVES_POPUP_NEVER</Tag>
@@ -3034,6 +3055,7 @@
         <German>Nichts, und fragt bitte nie wieder!</German>
         <Italian>Niente. Non chiedermelo più.</Italian>
         <Spanish>Nada, y no me lo volváis a preguntar</Spanish>
+        <Russian>Ничего, и пожалуйста, больше не спрашивайте!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TALK_NATIVES_POPUP_TRADE_POST</Tag>
@@ -3045,16 +3067,19 @@
         <Tag>TXT_KEY_TALK_NATIVES_POPUP_TRADE_POST2</Tag>
         <English>Establish a trading post [NEWLINE]Success rate : %d1_success</English>
         <German>Einen Handelsposten einrichten[NEWLINE]Erfolgschance : %d1_success</German>
+        <Russian>Попытаться установить торговый пост в деревне индейцев [NEWLINE]Шанс успеха : %d1_success</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_POST_FAILED</Tag>
         <English>Your native trader failed to set up a trading post in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT].</English>
         <German>Eurem Ureinwohnerhändler ist es nicht gelungen, in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] einen Handelsposten einzurichten.</German>
+        <Russian>Наш торговец с индейцами не смог договориться об установке торгового поста в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Кажется, с него сняли скальп...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_POST_CREATED_TREASURE</Tag>
         <English>Milord, your trading post in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] sends the earned wealth back to our colony.</English>
         <German>Milord, Euer Handelsposten in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] sendet die erwirtschafteten Reichtümer zurück in unsere Kolonie.</German>
+        <Russian>Милорд, наш торговый пост в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] собрал достаточно прибыли и готов переправить ее в ближайшую колонию.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_MISSION_FAIL</Tag>
@@ -3069,6 +3094,7 @@
         <English>Milord, your missionary failed to establish a mission in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT].</English>
         <French>Votre missionnaire n'a pas réussi à établir une mission à %s1_CityName.</French>
         <German>Milord, Eurem Missionar ist es nicht gelungen, in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] eine Mission zu errichten.</German>
+        <Russian>Милорд, нашему миссионеру не удалось договориться с индейцами об установке миссии в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Помолимся, братья...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE</Tag>
@@ -3126,6 +3152,7 @@
         <German>%d1 [NUM1:Kriegsschiff:Kriegsschiffe]</German>
         <Italian>%d1 [NUM1:nave da guerra:navi da guerra]</Italian>
         <Spanish>%d1 [NUM1:Barco de guerra:Barcos de guerra]</Spanish>
+        <Russian>%d1 [NUM1:Военный корабль:Военные корабли]</Russian>
     </TEXT>
     <TEXT>
         <Tag>INTERFACE_REVOLUTION_SCREEN_SOLDIERS</Tag>
@@ -3134,6 +3161,7 @@
         <German>%d1 [NUM1:Soldat:Soldaten]</German>
         <Italian>%d1 [NUM1:soldato:soldati]</Italian>
         <Spanish>%d1 [NUM1:Soldado:Soldados]</Spanish>
+        <Russian>%d1 [NUM1:Солдат:Солдат]</Russian>
     </TEXT>
     <TEXT>
         <Tag>INTERFACE_REVOLUTION_SCREEN_DRAGOONS</Tag>
@@ -3142,6 +3170,7 @@
         <German>%d1 [NUM1:Dragoner:Dragoner]</German>
         <Italian>%d1 [NUM1:dragone:dragoni]</Italian>
         <Spanish>%d1 [NUM1:Dragón:Dragones]</Spanish>
+        <Russian>%d1 [NUM1:Драгун:Драгун]</Russian>
     </TEXT>
     <TEXT>
         <Tag>INTERFACE_REVOLUTION_SCREEN_REGULARS</Tag>
@@ -3166,6 +3195,7 @@
         <German>%d1 [NUM1:Leichte Artillerie:Leichte Artillerien]</German>
         <Italian>%d1 [NUM1:cannone:cannoni]</Italian>
         <Spanish>%d1 [NUM1:Cañón:Cañones]</Spanish>
+        <Russian>%d1 [NUM1:Пушки:Пушек]</Russian>
     </TEXT>
     <TEXT>
         <Tag>INTERFACE_REVOLUTION_SCREEN_ARTY</Tag>

@@ -418,6 +418,7 @@
         <German>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Die Lagerhauskapazität ist fast an ihren Grenzen.</German>
         <Italian>La capacità di storage in %s1_city è quasi al suo limite, Mylord.</Italian>
         <Spanish>La capacidad de almacenamiento en %s1_city es casi en su límite, Mylord.</Spanish>
+        <Russian>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Емкость хранилища почти исчерпана.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_REBEL_COMBAT_MOD</Tag>
@@ -1276,6 +1277,7 @@
         <English>Milord, the city [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has levied a [COLOR_UNIT_TEXT]settler's militia[COLOR_REVERT] because they felt unprotected. [NEWLINE]To do so, they have taken food from the storage and money from the treasury.</English>
         <French>Sire, la ville de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a levé une milice à partir de simples colons car ils ne se sentaient pas protéger. [NEWLINE]Ils ont pris de la nourriture et de l'argent pour la former.</French>
         <German>Milord, die Stadt [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat eine [COLOR_UNIT_TEXT]Siedlermiliz[COLOR_REVERT] ausgehoben, weil sie sich unzureichend geschützt fühlte. [NEWLINE]Dafür haben sie Nahrung aus den Lagern und Gold aus der Schatzkammer entnommen.</German>
+        <Russian>Милорд! Жители города [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] чувствовали себя беззащитными и потому сами организовали отряд [COLOR_UNIT_TEXT]вооруженных колонистов[COLOR_REVERT]. [NEWLINE]Для обеспечения отряда они взяли еду со склада и деньги из казны города.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_UNREST_BECAUSE_MISSING_PROTECTION</Tag>
@@ -1431,16 +1433,19 @@
         <German>Bevölkerung %s1 = %d2%F3</German>
         <Italian>Popolazione %s1 = %d2%F3</Italian>
         <Spanish>Población %s1 = %d2%F3</Spanish>
+        <Russian>%s1 от количества жителей = %d2%F3</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HEALTH_CITY_PLOT_CHANGE</Tag>
         <English>%s1 by City Location = %d2%F3</English>
         <German>%s1 by durch Standort = %d2%F3</German>
+        <Russian>%s1 от расположения города = %d2%F3</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HEALTH_RESSOURCE_CHANGE</Tag>
         <English>%s1 by Resources = %d2%F3</English>
         <German>%s1 durch Resourcen = %d2%F3</German>
+        <Russian>%s1 от ресурсов = %d2%F3</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HEALTH_TOTAL_CHANGE</Tag>
@@ -1449,6 +1454,7 @@
         <German>Gesamtänderung %s1 = %d2%F3</German>
         <Italian>Variazione totale %s1 = %d2%F3</Italian>
         <Spanish>Cambio total %s1 = %d2%F3</Spanish>
+        <Russian>Общее изменение %s1 = %d2%F3</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_HEALTH_TOTAL</Tag>
@@ -1457,6 +1463,7 @@
         <German>Stadt %s1 = %d2%F3</German>
         <Italian>Città %s1 = %d2%F3</Italian>
         <Spanish>Ciudad %s1 = %d2%F3</Spanish>
+        <Russian>%s1 в городе = %d2%F3</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_BONUS_YIELD</Tag>
@@ -1473,6 +1480,7 @@
         <German>[ICON_BULLET]%D1 [ICON_HEALTHY] in %s2_city</German>
         <Italian>[ICON_BULLET]%D1 [ICON_HEALTHY] a %s2_city</Italian>
         <Spanish>[ICON_BULLET]%D1 [ICON_HEALTHY] en %s2_city</Spanish>
+        <Russian>[ICON_BULLET]%D1 [ICON_HEALTHY] в %s2_city</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HEALTH</Tag>
@@ -1481,6 +1489,7 @@
         <German>[ICON_BULLET]%D1 [ICON_HEALTH] in allen Siedlungen</German>
         <Italian>[ICON_BULLET]%D1 [ICON_HEALTH] in tutti gli insediamenti</Italian>
         <Spanish>[ICON_BULLET]%D1 [ICON_HEALTH] en todos los asentamientos</Spanish>
+        <Russian>[ICON_BULLET]%D1 [ICON_HEALTH] во всех поселениях</Russian>
     </TEXT>
     <!--super forts-->
     <TEXT>

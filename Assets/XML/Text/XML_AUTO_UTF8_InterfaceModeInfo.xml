@@ -19,7 +19,7 @@
         <German>Gehe-zu-Modus</German>
         <Italian>Modalità 'Vai'</Italian>
         <Spanish>Modo Ir a</Spanish>
-        <Russian>Идти к выбраной точке</Russian>
+        <Russian>Идти к выбранной точке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INTERFACEMODE_GO_TO_ALL</Tag>
@@ -28,7 +28,7 @@
         <German>Gehe-zu-Modus (Alle Einheiten)</German>
         <Italian>Modalità 'Vai' (tutte le unità)</Italian>
         <Spanish>Modo Ir a (todas las unidades)</Spanish>
-        <Russian>Идти к выбраной точке (все юниты)</Russian>
+        <Russian>Идти к выбранной точке (все юниты)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INTERFACEMODE_GO_TO_ALL_HELP</Tag>
@@ -37,6 +37,7 @@
         <German>Allen Einheiten auf diesem Feld einen Marschbefehl erteilen</German>
         <Italian>Ordina a tutte le unità attualmente sulla casella selezionata di muoversi</Italian>
         <Spanish>Ordena moverse a todas las unidades de la casilla seleccionada actualmente.</Spanish>
+        <Russian>Приказать всем юнитам на этой клетке двигаться в указанную точку</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INTERFACEMODE_GO_TO_HELP</Tag>
@@ -45,6 +46,7 @@
         <German>Einheit auf ein bestimmtes Geländefeld schicken</German>
         <Italian>Ordina all'unità selezionata di muoversi su una casella</Italian>
         <Spanish>Ordena a la unidad seleccionada que se mueva hasta una casilla.</Spanish>
+        <Russian>Приказать выбранному юниту двигаться в указанную точку</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INTERFACEMODE_GO_TO_TYPE</Tag>
@@ -53,6 +55,7 @@
         <German>Gehe-zu-Modus (Gleiche Einheiten)</German>
         <Italian>Modalità 'Vai' (unità dello stesso tipo)</Italian>
         <Spanish>Modo Ir a (mismo tipo de unidad)</Spanish>
+        <Russian>Идти к выбранной точке (все юниты этого типа)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INTERFACEMODE_GO_TO_TYPE_HELP</Tag>
@@ -61,6 +64,7 @@
         <German>Allen Einheiten dieses gewählten Typs einen Marschbefehl erteilen</German>
         <Italian>Ordina a tutte le unità dello stesso tipo di quella selezionata di muoversi</Italian>
         <Spanish>Ordena moverse a todas las unidades del tipo seleccionado actualmente.</Spanish>
+        <Russian>Приказать всем юнитам данного типа на этой клетке двигаться в указанную точку</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INTERFACEMODE_GRIP</Tag>

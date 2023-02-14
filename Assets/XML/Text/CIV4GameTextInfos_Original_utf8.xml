@@ -4270,7 +4270,7 @@
         <German>Euer Steckbrief :</German>
         <Italian>I tuoi dettagli :</Italian>
         <Spanish>Detalles :</Spanish>
-        <Russian>Ваши данные</Russian>
+        <Russian>Ваши данные :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MENU_LEADER_NAME</Tag>
@@ -10218,6 +10218,7 @@
         <German>Erteilen Sie einer Einheit diesen Befehl, erforscht diese alle unbekannten Gebiete, bis sie auch den entlegensten Winkel der Karte erkundet hat</German>
         <Italian>Questo ordine comanda all'unità di esplorare le regioni ancora inesplorate della mappa. L'unità continuerà a muoversi finché ci saranno luoghi da esplorare.</Italian>
         <Spanish>Con esta orden le decís a la unidad que explore las zonas del mapa que estén sin cartografiar. Seguirá moviéndose hasta que se quede sin lugares que explorar.</Spanish>
+        <Russian>Отряд будет исследовать неизведанные регионы на карте. Юнит будет продолжать двигаться, пока не будет исследована вся доступная территория или пока не встретит враждебные отряды.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_LEAD_TROOPS</Tag>

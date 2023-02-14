@@ -151,6 +151,7 @@
         <German>Anschluss an Siedlung</German>
         <Italian>Unisci all'insediamento</Italian>
         <Spanish>Unirse a asentamiento</Spanish>
+        <Russian>Присоединиться к поселению</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_JOIN_CITY_HELP</Tag>
@@ -159,6 +160,7 @@
         <German>Die Einheit schließt sich der Siedlung als Bürger an und arbeitet dort. Sie kann die Siedlung jederzeit wieder verlassen.</German>
         <Italian>Con questo comando ordini all'unità di entrare nell'insediamento per lavorare come cittadino. Può andarsene in qualsiasi momento.</Italian>
         <Spanish>Esta orden hará que la unidad se una al asentamiento para trabajar allí como ciudadano. Puede irse en cualquier momento.</Spanish>
+        <Russian>Юнит станет жителем этого поселения. Профессия будет выбрана автоматически.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_LEAD</Tag>
@@ -287,6 +289,7 @@
         <German>Tun Sie gar nichts, wartet die Einheit in der nächsten Runde auf weitere Befehle</German>
         <Italian>Nessun ordine. L'unità si sveglierà e attenderà altri ordini al turno successivo.</Italian>
         <Spanish>La unidad no hará nada, despertará y volverá a solicitar órdenes al turno siguiente.</Spanish>
+        <Russian>Ничего не делать. Юнит станет активным на следующий ход</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_SLEEP</Tag>

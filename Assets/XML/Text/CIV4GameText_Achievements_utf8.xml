@@ -1770,6 +1770,7 @@
         <English>The king sends a vice-regent!</English>
         <French>Le roi envoie un vice-roi !</French>
         <German>Der König entsendet einen Stellvertreter!</German>
+        <Russian>Король присылает наместника!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_GOVERNOR_HEAD</Tag>

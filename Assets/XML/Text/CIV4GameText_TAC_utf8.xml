@@ -2063,7 +2063,7 @@
         <German>Zahlt Uns %d1[ICON_GOLD] und Ihr dürft wieder [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] hier in der Heimat verkaufen.</German>
         <Italian>Pay us %d1[ICON_GOLD] and you can trade with [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] again.</Italian>
         <Spanish>Pay us %d1[ICON_GOLD] and you can trade with [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] again.</Spanish>
-        <Russian>Вы должны заплатить Нам %d1[ICON_GOLD] и тогда снова можете торговать [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT].</Russian>
+        <Russian>Вы должны выплатить штраф в %d1[ICON_GOLD] и тогда снова можете начать торговать [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_SELECT_DESTINATION</Tag>
