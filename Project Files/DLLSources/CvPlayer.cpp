@@ -8563,13 +8563,6 @@ void CvPlayer::respawnTaxIncrease()
 	//change taxrate
 	int iOldTaxRate = getTaxRate();
 
-	/** NBMOD TAX **/
-	/** Original
-	int iNewTaxRate = std::min(99, iOldTaxRate + 1 + GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("TAX_RATE_MAX_INCREASE"), "Tax Rate Increase"));
-	int iChange = iNewTaxRate - iOldTaxRate;
-	changeTaxRate(iChange);
-	**/
-
 	int iNewTaxRate = NBMOD_GetNewTaxRate(std::min(99, iOldTaxRate + 1 + GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("TAX_RATE_MAX_INCREASE"), "Tax Rate Increase")));
 	int iChange = iNewTaxRate - iOldTaxRate;
 
