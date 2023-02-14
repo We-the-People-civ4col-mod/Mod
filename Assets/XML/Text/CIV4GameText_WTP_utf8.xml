@@ -25,13 +25,13 @@
         <Tag>TXT_KEY_MISC_YOU_SHIP_ESCAPED_CITY</Tag>
         <English>Milord, the ship called [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] could escape the seizure of [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] by the enemy.</English>
         <German>Milord, Euer Schiff [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] konnte vor der Einnahme von [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] durch den Feind noch Segel setzen und auf hohe See entkommen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нашему кораблю [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] удалось выйти из гавани и выйти в открытое море, прежде чем [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] был захвачен врагом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ENEMY_SHIP_ESCAPED_CITY</Tag>
         <English>Milord, the enemy ship [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] could escape when your troops captured [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</English>
         <German>Milord, das feindliche Schiff [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] konnte vor der Einnahme von [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] den Hafen verlassen und so der Beschlagnahme durch Eure Truppen entgehen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, вражескому кораблю [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] удалось бежать из гавани [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] до того, как наши доблестные войска захватили этот город.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_TIME_NO_TRADE</Tag>
