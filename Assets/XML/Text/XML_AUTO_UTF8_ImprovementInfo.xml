@@ -291,7 +291,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_WIND_MILL_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Windmills[COLOR_REVERT] on the map give a percentual bonus on the total production of [LINK=YIELD_FOOD]food[\LINK] in their City if they are worked by a citizen of the city.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Historians debate whether Middle Eastern windmills triggered the first European windmills. In northwestern Europe the horizontal-axis or vertical windmill (so called due to the plane of the movement of its sails) dates from the last quarter of the 12th century in the triangle of northern France, eastern England and Flanders. The earliest certain reference to a windmill in Europe (assumed to have been of the vertical type) dates from 1185 in Weedley, Yorkshire, although a number of earlier but less certainly dated twelfth century European sources referring to windmills have also been found. These earliest mills were used to grind cereals.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Windmills[COLOR_REVERT] on the map give a percentage bonus on the total production of [LINK=YIELD_FOOD]food[\LINK] in their city when worked by a citizen.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Historians debate whether Middle Eastern windmills triggered the first European windmills. In northwestern Europe the horizontal axis or vertical windmill (so called due to the plane of the movement of its sails) dates from the last quarter of the 12th century in the triangle of northern France, eastern England and Flanders. The earliest certain reference to a windmill in Europe (assumed to have been of the vertical type) dates from 1185 in Weedley, Yorkshire, although a number of earlier but less certainly dated twelfth century European sources referring to windmills have also been found. These earliest mills were used to grind cereals.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Windmühlen[COLOR_REVERT] auf der Karte geben einen prozentualen Bonus auf die gesamte Herstellung von [LINK=YIELD_FOOD]Nahrung[\LINK] der Stadt, wenn sie von einem Bürger in der Stadt bearbeitet werden.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Aufgrund des Fehlens von Beweisen, existiert eine Debatte unter Historikern, ob die Windmühlen des Mittleren Ostens die Entwicklung der europäischen Windmühlen ausgelöst haben. Im nordwestlichen Europa datieren horizontale oder vertikale Windmühlen vom Ende des 12. Jahrhunderts. Die ersten Windmühlen dienten ausschliesslich zum Mahlen von Getreide.</German>
     </TEXT>
     <TEXT>
@@ -321,7 +321,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_SUPPLY_DEPOT_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Supply Depots[COLOR_REVERT] on the map give additional storage capacity to their city if they are worked by a citizen of the city.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Supply depots were first used by used by the military to store battlefield supplies so they could be distributed to units in the field. They would hold all types of materiel, except ammunition. In times of peace they offered added storage for the civilian community.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Supply depots[COLOR_REVERT] on the map give additional storage capacity to their city if when worked by a citizen.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Supply depots were first used by used by the military to store battlefield supplies so they could be distributed to units in the field. They would hold all types of materiel, except ammunition. In times of peace they offered added storage for the civilian community.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Versorgungslager[COLOR_REVERT] auf der Karte geben ihrer Stadt zusätzliche Lagerkapazität, wenn sie von einem Bürger in der Stadt bearbeitet werden.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]TBD</German>
     </TEXT>
     <TEXT>
@@ -336,7 +336,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_SUPPLY_DEPOT_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Supply Depots[COLOR_REVERT] on the map give additional storage capacity to their City if they are worked by a citizen of the city.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Supply depots were first used by used by the military to store battlefield supplies so they could be distributed to units in the field. They would hold all types of materiel, except ammunition. In times of peace they offered added storage for the civilian community.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Supply depots[COLOR_REVERT] on the map give extra storage capacity to their city when worked by a citizen.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Supply depots were first used by used by the military to store battlefield supplies so they could be distributed to units in the field. They would hold all types of materiel, except ammunition. In times of peace they offered added storage for the civilian community.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Versorgungslager[COLOR_REVERT] auf der Karte geben ihrer Stadt zusätzliche Lagerkapazität, wenn sie von einem Bürger in der Stadt bearbeitet werden.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]TBD</German>
     </TEXT>
     <TEXT>
@@ -517,7 +517,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT5</Tag>
-        <English>Camp Fire</English>
+        <English>Campfire</English>
         <French>
             <Text>Feu de camp</Text>
             <Gender>Neutral</Gender>
@@ -588,7 +588,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT8_PEDIA</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Hostile Native Villages[COLOR_REVERT] are goodies that are protected by hostile Natives. When you defeat the hostile Natives you can seize their riches and secrets.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Hostile Native villages[COLOR_REVERT] are goodies that are protected by hostile Natives. When you defeat the hostile Natives you can seize their riches and secrets.</English>
         <German>[COLOR_HIGHLIGHT_TEXT]Feindliche Ureinwohnerdörfer[COLOR_REVERT] sind Goodies, die durch feindselige Ureinwohner bewacht werden. Sobald Sie die feindlichen Ureinwohner besiegt haben, gehören Ihnen ihre Schätze.</German>
     </TEXT>
     <TEXT>
@@ -876,7 +876,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_PEN_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Breeding Pen[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Breeding Pen[COLOR_REVERT]A pigpen keeps the animals close, safe from predators and easy to feed. It's also a good source of manure for the fields - a dirty job but somebody's got to do it</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Zuchtstall[COLOR_REVERT]TBD</German>
     </TEXT>
     <TEXT>
@@ -891,7 +891,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_PEN_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Large Breeding Pen[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Large Breeding Pen[COLOR_REVERT]A pigpen keeps the animals close, safe from predators and easy to feed. It's also a good source of manure for the fields - a dirty job but somebody's got to do it.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Großer Zuchtbetrieb[COLOR_REVERT]TBD</German>
     </TEXT>
     <TEXT>
@@ -1247,12 +1247,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_HUNTERS_STAGE_PEDIA</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Hunters' blind[COLOR_REVERT]</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Hunters' Blind[COLOR_REVERT]</English>
         <German>[COLOR_HIGHLIGHT_TEXT]Jagdpier[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_SALINA</Tag>
-        <English>Salina</English>
+        <English>Salt Works</English>
         <German>
             <Text>Saline</Text>
             <Gender>Female</Gender>
@@ -1262,12 +1262,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_SALINA_PEDIA</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Salina[COLOR_REVERT]</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Salt works[COLOR_REVERT]are where salt is purified either after being mined, which produces rock salt, or extracted by pumping water into a salt deposit. In either case, the salt may be purified by mechanical evaporation of brine. Purification is done using shallow open pans heated to accelerate evaporation.</English>
         <German>[COLOR_HIGHLIGHT_TEXT]Saline[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_SALINA</Tag>
-        <English>Large Salina</English>
+        <English>Large Salt Works</English>
         <German>
             <Text>Große Saline</Text>
             <Gender>Female</Gender>
@@ -1277,7 +1277,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_SALINA_PEDIA</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Large Salina[COLOR_REVERT]</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Large salt works[COLOR_REVERT] are where salt is purified either after being mined, which produces rock salt, or extracted by pumping water into a salt deposit. In either case, the salt may be purified by mechanical evaporation of brine. Purification is done using shallow open pans heated to accelerate evaporation.</English>
         <German>[COLOR_HIGHLIGHT_TEXT]Große Saline[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1436,7 +1436,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_OPEN_PEAT_MINE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Open peat mines[COLOR_REVERT] are the upgrades of [LINK=IMPROVEMENT_PEAT_PIT]peat pits[\LINK]. They increase the production of [LINK=YIELD_PEAT]peat[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]In open-pit peat mines peat is extracted. </English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Open peat mines[COLOR_REVERT] are the upgrades of [LINK=IMPROVEMENT_PEAT_PIT]peat pits[\LINK]. They increase the production of [LINK=YIELD_PEAT]peat[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Peat forms when plant material does not fully decay in acidic and anaerobic conditions. It is composed mainly of wetland vegetation: principally bog plants including mosses, sedges, and shrubs. As it accumulates, the peat holds water. This slowly creates wetter conditions that allow the area of wetland to expand. Peatland can include ridges and raised bogs.</English>
         <French>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Open peat mines[COLOR_REVERT] are the upgrades of [LINK=IMPROVEMENT_PEAT_PIT]peat pits[\LINK]. They increase the production of [LINK=YIELD_PEAT]peat[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]In open-pit peat mines peat is extracted.</French>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1]Der[COLOR_HIGHLIGHT_TEXT]Torf Tagebau[COLOR_REVERT] ist die Erweiterung der [LINK=IMPROVEMENT_PEAT_PIT]Torfgrube[\LINK]. Er erhöht die Produktion von [LINK=YIELD_PEAT]Torf[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Ein Tagebau ist meist eine grubenähnliche Anlage, die dazu dient, Torf in großen Mengen abzubauen. </German>
     </TEXT>
