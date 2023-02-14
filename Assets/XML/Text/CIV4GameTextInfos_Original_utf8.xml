@@ -2651,6 +2651,22 @@
         <Russian>Открыть Строитель мира</Russian>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_POPUP_GAME_DETAILS</Tag>
+        <English>Game Details</English>
+        <French>Détails de la partie</French>
+        <German>Spieldetails</German>
+        <Italian>Dettagli partita</Italian>
+        <Spanish>Detalles de la partida</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_DETAILS_TITLE</Tag>
+        <English>Your Details</English>
+        <French>Vos coordonnées</French>
+        <German>Euer Steckbrief</German>
+        <Italian>I tuoi dettagli</Italian>
+        <Spanish>Detalles</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_POPUP_CANCEL</Tag>
         <English>Cancel</English>
         <French>Annuler</French>
