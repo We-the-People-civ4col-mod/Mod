@@ -8328,13 +8328,13 @@ void CvPlayer::setAlive(bool bNewValue)
 			killCities();
 			killAllDeals();
 			// destroy missions and trade posts for colonial players
-			if(getCivCategoryTypes() == CIV_CATEGORY_EUROPEAN)
+			if (getCivCategoryTypes() == CIV_CATEGORY_EUROPEAN)
 			{
 				killMissionsAndTradeposts();
 			}
 
 			// R&R, making peace with all factions, when dying - START
-			if(!isEurope() && isEverAlive())
+			if (!isEurope() && isEverAlive())
 			{
 				makePeaceWithAll();
 			}
@@ -8362,11 +8362,11 @@ void CvPlayer::setAlive(bool bNewValue)
 			{
 				CvWString szBuffer = gDLL->getText("TXT_KEY_MISC_CIV_DESTROYED", getCivilizationAdjectiveKey());
 
-				for (int iI = 0; iI < MAX_PLAYERS; iI++)
+				for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
 				{
-					if (GET_PLAYER((PlayerTypes)iI).isAlive())
+					if (GET_PLAYER(ePlayer).isAlive())
 					{
-						gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVDESTROYED", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WARNING_TEXT"));
+						gDLL->getInterfaceIFace()->addMessage((ePlayer), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVDESTROYED", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WARNING_TEXT"));
 					}
 				}
 				GC.getGameINLINE().addReplayMessage(REPLAY_MESSAGE_MAJOR_EVENT, getID(), szBuffer, -1, -1, (ColorTypes)GC.getInfoTypeForString("COLOR_WARNING_TEXT"));
@@ -8378,15 +8378,15 @@ void CvPlayer::setAlive(bool bNewValue)
 
 void CvPlayer::makePeaceWithAll()
 {
-	CvTeamAI& ownTeam= GET_TEAM(getTeam());
+	CvTeamAI& ownTeam = GET_TEAM(getTeam());
 
-	for (int iTeam = 0; iTeam < MAX_TEAMS; ++iTeam)
+	for (Teamtypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
 	{
-		if (ownTeam.isAtWar((TeamTypes)iTeam))
+		if (ownTeam.isAtWar(eTeam)
 		{
-			if (ownTeam.canChangeWarPeace((TeamTypes)iTeam))
+			if (ownTeam.canChangeWarPeace(eTeam)
 			{
-				ownTeam.makePeace((TeamTypes) iTeam);
+				ownTeam.makePeace(eTeam);
 			}
 		}
 	}
@@ -8407,7 +8407,7 @@ void CvPlayer::verifyAlive()
 			}
 			else
 			{
-				if(!hasAnyChanceOfWinning())
+				if (!hasAnyChanceOfWinning())
 				{
 					bKill = true;
 					bRespawn = canRespawn();
@@ -8483,9 +8483,9 @@ bool CvPlayer::hasAnyChanceOfWinning()
 
 	// WTP, jooe: no settlers left? pay for one in Europe!
 	// if we cannot pay, set bKill to true
-	if(AI_getNumAIUnits(UNITAI_SETTLER) == 0)
+	if (AI_getNumAIUnits(UNITAI_SETTLER) == 0)
 	{
-		if(!initEuropeSettler(true))
+		if (!initEuropeSettler(true))
 		{
 			return false;
 		}
@@ -8493,9 +8493,9 @@ bool CvPlayer::hasAnyChanceOfWinning()
 
 	// WTP, jooe: no transports left? pay for one in Europe!
 	// if we cannot pay, set bKill to true
-	if(AI_getNumAIUnits(UNITAI_TRANSPORT_SEA) == 0)
+	if (AI_getNumAIUnits(UNITAI_TRANSPORT_SEA) == 0)
 	{
-		if(!initEuropeTransport(true))
+		if (!initEuropeTransport(true))
 		{
 			return false;
 		}
@@ -8504,7 +8504,7 @@ bool CvPlayer::hasAnyChanceOfWinning()
 	// WTP, jooe: after the respawn threshold timer has passed, check how many units we have left
 	// if they are less than 3 (scaling slowly with time; treasures, wagons, working boat do not count as they won't help fighting or re-founding our colonies)
 	// then set bKill to true
-	if(iTurn > iMinTurnForAIRespawningOff && iMinTurnForAIRespawningOff > 50)
+	if (iTurn > iMinTurnForAIRespawningOff && iMinTurnForAIRespawningOff > 50)
 	{
 		// use 50 turns as a safety fallback (if the setting was changed to a very low value or even 0)
 		// because otherwise we might kill AI off in early game or scale the minimum too fast!
@@ -8537,7 +8537,7 @@ void CvPlayer::buyEuropeSettlerIfLandlockedAI()
 {
 	const CvPlayer& kParent = GET_PLAYER(getParent());
 	// we check that there is no War of Independence and other small things
-	if(kParent.isAlive() && kParent.isEurope() && !::atWar(getTeam(), kParent.getTeam()) && (GC.getGameINLINE().getAIAutoPlay() == 0 || GC.getGameINLINE().getActivePlayer() != getID()))
+	if (kParent.isAlive() && kParent.isEurope() && !::atWar(getTeam(), kParent.getTeam()) && (GC.getGameINLINE().getAIAutoPlay() == 0 || GC.getGameINLINE().getActivePlayer() != getID()))
 	{
 		//we check if AI is landlocked and needs more cities
 		int iNumPlayerCities = getNumCities();
@@ -8607,7 +8607,7 @@ void CvPlayer::kill()
 	// WTP, jooe: This was commented out, but I think it is the right place for that call
 	setAlive(false);
 
-	if(getCivCategoryTypes() == CIV_CATEGORY_EUROPEAN)
+	if (getCivCategoryTypes() == CIV_CATEGORY_EUROPEAN)
 	{
 		// Send a message that the player was destroyed
 		CvWString szBuffer = gDLL->getText("TXT_KEY_NO_MORE_RESPAWN", getCivilizationShortDescriptionKey());
