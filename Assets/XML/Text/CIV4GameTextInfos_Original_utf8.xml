@@ -263,6 +263,7 @@
         <German>[ICON_BULLET]%D1%% Geländefeld-Verteidigung</German>
         <Italian>[ICON_BULLET]%D1%% difensiva della casella</Italian>
         <Spanish>[ICON_BULLET]%D1%% a la defensa de la casilla</Spanish>
+        <Russian>[ICON_BULLET]%D1%% к защите на этой клетке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_BECOMES_IMP</Tag>
@@ -314,6 +315,7 @@
         <German>[ICON_BULLET]Geht an[SPACE]</German>
         <Italian>[ICON_BULLET]Vai verso[SPACE]</Italian>
         <Spanish>[ICON_BULLET]Pasa a ser de[SPACE]</Spanish>
+        <Russian>[ICON_BULLET]будет принадлежать[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_BUILD_ONLY_WATER</Tag>
@@ -370,6 +372,7 @@
         <German>[ICON_BULLET]%D1%% Geländefeld-Verteidigung</German>
         <Italian>[ICON_BULLET]%D1%% difensiva della casella</Italian>
         <Spanish>[ICON_BULLET]%D1%% a la defensa de la casilla</Spanish>
+        <Russian>[ICON_BULLET]%D1%% к защите на этой клетке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_MOVEMENT_COST</Tag>
@@ -2657,6 +2660,7 @@
         <German>Spieldetails</German>
         <Italian>Dettagli partita</Italian>
         <Spanish>Detalles de la partida</Spanish>
+        <Russian>Данные игры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_DETAILS_TITLE</Tag>
@@ -2665,6 +2669,7 @@
         <German>Euer Steckbrief</German>
         <Italian>I tuoi dettagli</Italian>
         <Spanish>Detalles</Spanish>
+        <Russian>Ваши данные</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_CANCEL</Tag>

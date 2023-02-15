@@ -324,6 +324,7 @@
         <German>Waljagd</German>
         <Italian>Caccia alle balene</Italian>
         <Spanish>Caza de la ballena</Spanish>
+        <Russian>Охота на кита</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_WHALING_HELP</Tag>
@@ -332,5 +333,6 @@
         <German>Schiff jagt Wale, bis der Frachtraum voller Walspeck ist.</German>
         <Italian>La nave caccia le balene fino a quando la stiva è piena di blubber.</Italian>
         <Spanish>El barco caza ballenas hasta que la bodega está llena de grasa.</Spanish>
+        <Russian>Промышлять кита до полного заполнения трюмов китовым жиром</Russian>
     </TEXT>
 </Civ4GameText>

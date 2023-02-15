@@ -860,7 +860,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_PASTURE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pastures[COLOR_REVERT] can be built on unvegetated terrain that is either flat or hilly, and where [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]livestock[\LINK] can be bred. The production of [LINK=YIELD_HORSES]horses[\LINK], [LINK=YIELD_CATTLE]cattle[\LINK] and [LINK=YIELD_SHEEP]sheep[\LINK] is increased on those tiles.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Pasture is land with forage for livestock either as part of a farm or for ranching on open range, or where wild animals can graze or browse. Before factory farming, pasture was where grazing animals such as cattle and horses fed. It is still used extensively, particularly in arid regions where pasture land is unsuitable for any other agricultural production. In wetter climates pasture is valued for free range and organic farming.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pastures[COLOR_REVERT] can be built on unvegetated terrain that is either flat or hilly, and where [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]livestock[\LINK] can be bred. The production of [LINK=YIELD_HORSES]horses[\LINK], [LINK=YIELD_CATTLE]cattle[\LINK] and [LINK=YIELD_SHEEP]sheep[\LINK] is increased on those tiles.[PARAGRAPH:1][BOLD]Background :[\BOLD][PARAGRAPH:1]Pasture is land with forage for livestock either as part of a farm or for ranching on open range, or where wild animals can graze or browse. Before factory farming, pasture was where grazing animals such as cattle and horses fed. It is still used extensively, particularly in arid regions where pasture land is unsuitable for any other agricultural production. In wetter climates pasture is valued for free range and organic farming.</English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Le pâturage est une forme d'alimentation des animaux herbivores qui se nourrissent de plantes (telles que les graminées). Le pâturage diffère de la prédation parce que l'organisme mangé n'est généralement pas tué, et du parasitisme parce que les deux organismes n'ont pas de relation symbiotique et que le « brouteur » n'est généralement pas limité dans le choix des espèces qu'il peut consommer (voir espèces généraliste et spécialisée).</French>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1]Als 'Weideland' bezeichnet man Flächen mit Vegetation, die der Viehzucht dienen. Oft gehören diese Flächen zu einer Farm oder einer Ranch. In vielen Fällen dient dazu Land, das ansonsten für den Anbau von Nutzpflanzen nicht geeignet ist.</German>
     </TEXT>
@@ -876,7 +876,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_PEN_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Breeding Pen[COLOR_REVERT]A pigpen keeps the animals close, safe from predators and easy to feed. It's also a good source of manure for the fields - a dirty job but somebody's got to do it</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Breeding Pen[COLOR_REVERT][NEWLINE]A pigpen keeps the animals close, safe from predators and easy to feed. It's also a good source of manure for the fields - a dirty job but somebody's got to do it</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Zuchtstall[COLOR_REVERT]TBD</German>
     </TEXT>
     <TEXT>
@@ -891,7 +891,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_PEN_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Large Breeding Pen[COLOR_REVERT]A pigpen keeps the animals close, safe from predators and easy to feed. It's also a good source of manure for the fields - a dirty job but somebody's got to do it.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Large Breeding Pen[COLOR_REVERT][NEWLINE]A pigpen keeps the animals close, safe from predators and easy to feed. It's also a good source of manure for the fields - a dirty job but somebody's got to do it.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Großer Zuchtbetrieb[COLOR_REVERT]TBD</German>
     </TEXT>
     <TEXT>
@@ -1222,7 +1222,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_FISHING_NETS</Tag>
-        <English>Fishing nets</English>
+        <English>Fishing Nets</English>
         <German>
             <Text>Fishfangnetze</Text>
             <Gender>Neuter</Gender>
@@ -1232,12 +1232,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_FISHING_NETS_PEDIA</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Fishing nets[COLOR_REVERT]</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Fishing nets[COLOR_REVERT] can be woven to scoop up a shoal of fish or, with gill nets, to trap fish of the desired size. It's one of the two main systems used by fishing boats, the other being trawling with hooks.</English>
         <German>[COLOR_HIGHLIGHT_TEXT]Fishfangnetze[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_HUNTERS_STAGE</Tag>
-        <English>Hunters' blind</English>
+        <English>Hunters' Blind</English>
         <German>
             <Text>Jagdpier</Text>
             <Gender>Neuter</Gender>
@@ -1247,7 +1247,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_HUNTERS_STAGE_PEDIA</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Hunters' Blind[COLOR_REVERT]</English>
+        <English>The [COLOR_HIGHLIGHT_TEXT]hunters' blind[COLOR_REVERT] can be up a tree or in a bush, or even a ghillie suit in the middle of an open meadow, as long as it gets the hunter close enough to the wild game. Being close is especially important with a musket.[NEWLINE]Rifles won't be common until after 1740. A ghillie suit is a net or cloth coat made to look natural using leaves and twigs from the area.</English>
         <German>[COLOR_HIGHLIGHT_TEXT]Jagdpier[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1262,7 +1262,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_SALINA_PEDIA</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Salt works[COLOR_REVERT]are where salt is purified either after being mined, which produces rock salt, or extracted by pumping water into a salt deposit. In either case, the salt may be purified by mechanical evaporation of brine. Purification is done using shallow open pans heated to accelerate evaporation.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Salt works[COLOR_REVERT] are where salt is purified either after being mined, which produces rock salt, or extracted by pumping water into a salt deposit. In either case, the salt may be purified by mechanical evaporation of brine. Purification is done using shallow open pans heated to accelerate evaporation.</English>
         <German>[COLOR_HIGHLIGHT_TEXT]Saline[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
