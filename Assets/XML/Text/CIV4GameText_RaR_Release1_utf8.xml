@@ -1449,6 +1449,7 @@
         <Tag>TXT_KEY_HEALTH_FROM_RESSOURCE</Tag>
         <English>if worked by citizen: +%d1%F2_Icon</English>
         <German>falls bewirtschaftet: +%d1%F2_Icon</German>
+        <Russian>Если обрабатывается горожанином: +%d1%F2_Icon</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HEALTH_FROM_RESSOURCE_NEGATIVE</Tag>
