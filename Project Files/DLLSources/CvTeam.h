@@ -98,9 +98,16 @@ public:
 	DllExport int getAliveCount() const;
 	int isAlive() const;
 	void changeAliveCount(int iChange);
+	void addAliveMember(PlayerTypes ePlayer);
+	void removeAliveMember(PlayerTypes ePlayer);
+
+	void notifyFatherAvailability(FatherTypes eFather, bool bAvailability);
+
 	int getEverAliveCount() const;
 	int isEverAlive() const;
 	void changeEverAliveCount(int iChange);
+	void addEverAliveMember(PlayerTypes ePlayer);
+
 	int getNumCities() const;
 	void changeNumCities(int iChange);
 
@@ -239,6 +246,9 @@ protected:
 	void testFoundingFather();
 	void cancelDefensivePacts(TeamTypes eEndingTeam);
 	void declareWarNoRevolution(TeamTypes eTeam, bool bNewDiplo, WarPlanTypes eWarPlan, bool bPlaySound);
+
+	void kill();
+	void freeFathers();
 
 	virtual void read(FDataStreamBase* pStream);
 	virtual void write(FDataStreamBase* pStream);

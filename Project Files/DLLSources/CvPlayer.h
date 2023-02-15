@@ -1208,6 +1208,15 @@ protected:
 	void doUpdateCacheOnTurn();
 	void onTurnLogging() const; // K-Mod
 
+	bool hasAnyChanceOfWinning();
+	bool canRespawn();
+	void buyEuropeSettlerIfLandlockedAI();
+	void respawnTaxIncrease();
+	bool isUnitInActiveCombat();
+	void killMissionsAndTradeposts();
+	void makePeaceWithAll();
+	void kill();
+
 public:
 	int getIDSecondPlayerFrenchNativeWar() const;//WTP, ray, Colonial Intervention In Native War - START
 	// transport feeder - start - Nightinggale
