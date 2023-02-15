@@ -5963,6 +5963,281 @@
         <English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]rape oil[COLOR_REVERT] from Europe.</English>
         <German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Rapsöl[COLOR_REVERT] in Europe zu werden.</German>
     </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_EVERYDAY_CLOTHES_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]everyday clothes[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Altagskleidung[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_EVERYDAY_CLOTHES_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]everyday clothes[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Altagskleidung[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_EVERYDAY_CLOTHES_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]everyday clothes[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Altagskleidung[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_EVERYDAY_CLOTHES_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]everyday clothes[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Altagskleidung[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_EVERYDAY_CLOTHES_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]everyday clothes[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Altagskleidung[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_FESTIVE_CLOTHES_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]festive clothes[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]elegante Kleider[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_FESTIVE_CLOTHES_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]festive clothes[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]eleganten Kleidern[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_FESTIVE_CLOTHES_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]festive clothes[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]eleganten Kleidern[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_FESTIVE_CLOTHES_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]festive clothes[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]elegante Kleider[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_FESTIVE_CLOTHES_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]festive clothes[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]eleganten Kleidern[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COLOURED_WOOL_CLOTH_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]coloured wool cloth[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]gefärbten Wollstoff[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COLOURED_WOOL_CLOTH_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]coloured wool cloth[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]gefärbten Wollstoff[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COLOURED_WOOL_CLOTH_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]coloured wool cloth[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]gefärbten Wollstoffen[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_COLOURED_WOOL_CLOTH_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]coloured wool cloth[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]gefärbte Wollstoffe[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COLOURED_WOOL_CLOTH_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]coloured wool cloth[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]gefärbten Wollstoff[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GOAT_HIDE_BOOTS_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]goat hide boots[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Ziegenlederstiefel[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GOAT_HIDE_BOOTS_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]goat hide boots[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Ziegenlederstiefeln[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GOAT_HIDE_BOOTS_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]goat hide boots[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Ziegenlederstiefeln[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_GOAT_HIDE_BOOTS_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]goat hide boots[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Ziegenlederstiefel[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GOAT_HIDE_BOOTS_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]goat hide boots[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Ziegenlederstiefel[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PIG_LEATHER_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]pig leather aprons[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Schweinelederschürzen[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PIG_LEATHER_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]pig leather aprons[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Schweinelederschürzen[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PIG_LEATHER_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]pig leather aprons[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Schweinelederschürzen[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_PIG_LEATHER_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]pig leather aprons[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Schweinelederschürzen[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PIG_LEATHER_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]pig leather aprons[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Schweinelederschürzen[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PADDED_LEATHER_COATS_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]padded leather coats[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]gefütterte Ledermäntel[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PADDED_LEATHER_COATS_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]padded leather coats[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]gefütterte Ledermänteln[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PADDED_LEATHER_COATS_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]padded leather coats[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]gefütterte Ledermänteln[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_PADDED_LEATHER_COATS_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]padded leather coats[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]gefütterte Ledermäntel[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PADDED_LEATHER_COATS_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]padded leather coats[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]gefütterte Ledermänteln[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_VANILLA_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]vanilla[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Vanille[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_VANILLA_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]vanilla[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Vanille[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_VANILLA_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]vanilla[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Vanille[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_VANILLA_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]vanilla[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Vanille[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_VANILLA_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]vanilla[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Vanille[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_POTTERY_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]pottery[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Töpferwaren[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_POTTERY_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]pottery[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Töpferwaren[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_POTTERY_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]pottery[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Töpferwaren[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_POTTERY_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]pottery[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Töpferwaren[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_POTTERY_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]pottery[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Töpferwaren[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PADDED_FURNITURE_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]padded furniture[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Polstermöbel[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PADDED_FURNITURE_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]padded furniture[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Polstermöbel[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PADDED_FURNITURE_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]padded furniture[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Polstermöbel[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_PADDED_FURNITURE_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]padded furniture[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Polstermöbel[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PADDED_FURNITURE_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]padded furniture[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Polstermöbel[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_FIELD_WORKER_TOOLS_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]field worker tools[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Feldarbeiterwerkzeuge[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_FIELD_WORKER_TOOLS_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]field worker tools[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Feldarbeiterwerkzeugen[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_FIELD_WORKER_TOOLS_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]field worker tools[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Feldarbeiterwerkzeugen[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_FIELD_WORKER_TOOLS_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]field worker tools[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Feldarbeiterwerkzeuge[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_FIELD_WORKER_TOOLS_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]field worker tools[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Feldarbeiterwerkzeugen[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_HOUSEHOLD_GOODS_START</Tag>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]household goods[COLOR_REVERT] from Europe has begun.</English>
+		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Haushaltswaren[COLOR_REVERT] mit Europe hat begonnen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_HOUSEHOLD_GOODS_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]household goods[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Haushaltswaren[COLOR_REVERT] mit Europe zu werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_HOUSEHOLD_GOODS_START</Tag>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]household goods[COLOR_REVERT] from Europe.</English>
+		<German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Haushaltswaren[COLOR_REVERT] mit Europe begeistert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_HOUSEHOLD_GOODS_FAILED</Tag>
+		<English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]household goods[COLOR_REVERT] from Europe.</English>
+		<German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Haushaltswaren[COLOR_REVERT] in Europe zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_HOUSEHOLD_GOODS_DONE</Tag>
+		<English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]household goods[COLOR_REVERT] from Europe.</English>
+		<German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Haushaltswaren[COLOR_REVERT] in Europe zu werden.</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLADES_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] from Port Royal has begun.</English>
