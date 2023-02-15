@@ -415,13 +415,13 @@
     <TEXT>
         <Tag>TXT_KEY_USED_SHIP_BARGAIN_AVAILABLE</Tag>
         <English>Milord, one of our contacts in Europe told us that a [COLOR_UNIT_TEXT]used ship[COLOR_REVERT] in good shape will be sold for a bargain price. Our King could help to arrange the deal before it is sold to others.</English>
-        <German>Milord, einer unserer Kontakte in Europa hat uns von berichtet, dass ein [COLOR_UNIT_TEXTgebrauchtes Shiff[COLOR_REVERT] zu einem guten Preis verkauft wird. Unser König könnte helfen, dass wir den Zuschlag bekommen.</German>
+        <German>Milord, einer unserer Kontakte in Europa hat uns von berichtet, dass ein [COLOR_UNIT_TEXT]Schiff[COLOR_REVERT] zu einem guten Preis zum Verkauf steht. Seine Majestät könnte uns helfen, dass wir den Zuschlag bekommen.</German>
         <Russian>Милорд, один из наших контактов в Европе сообщил, что [COLOR_UNIT_TEXT]подержанный корабль[COLOR_REVERT] в довольно неплохом состоянии будет продаваться по выгодной цене. Наш Король мог бы помочь устроить сделку, прежде чем об этом предложении станет известно остальным.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_TRAITS</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]Civilization Traits[COLOR_REVERT]</English>
-        <French>[COLOR_FONT_RED]Profil de civilisation[COLOR_REVERT]</French>
+        <French>[COLOR_HIGHLIGHT_TEXT]Profil de civilisation[COLOR_REVERT]</French>
         <German>[COLOR_HIGHLIGHT_TEXT]Zivilisations-Eigenschaften[COLOR_REVERT]</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]Tratti di civiltà[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]Rasgos de Civilización[COLOR_REVERT]</Spanish>
@@ -430,7 +430,7 @@
     <TEXT>
         <Tag>TXT_KEY_LEADER_TRAITS</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]Leader Traits[COLOR_REVERT]</English>
-        <French>[COLOR_FONT_RED]Profil du dirigeant[COLOR_REVERT]</French>
+        <French>[COLOR_HIGHLIGHT_TEXT]Profil du dirigeant[COLOR_REVERT]</French>
         <German>[COLOR_HIGHLIGHT_TEXT]Anführer-Eigenschaften[COLOR_REVERT]</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]Tratti da leader[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]Rasgos de LÍder[COLOR_REVERT]</Spanish>
@@ -463,7 +463,7 @@
         <English>[ICON_BULLET]%D1%% effect of Revolutionary Rate on Rebel [ICON_STRENGTH]</English>
         <French>[ICON_BULLET]%D1%% effet du sentiment de révolte sur la [ICON_STRENGTH]</French>
         <German>[ICON_BULLET]%D1%% Auswirkung von Revolutionsbereitschaft auf [ICON_STRENGTH] der Rebellen</German>
-        <Italian>Effetto [ICON_BULLET]%D1%% di Revolutionary percentuale sul Rebel [ICON_STRENGTH]</Italian>
+        <Italian>[ICON_BULLET]Effetto %D1%% di Revolutionary percentuale sul Rebel [ICON_STRENGTH]</Italian>
         <Spanish>[ICON_BULLET]%D1%% efecto de la Revolución de Cambio on Rebelde [ICON_STRENGTH]</Spanish>
     </TEXT>
     <TEXT>
@@ -486,7 +486,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_COASTAL_SHIPS_PEDIA</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]Coastal Shipping[COLOR_REVERT] uses small yet capacious sailing vessels to move goods and people. These commercial boats begin to operate soon after colonies are established in the New World. Small ships designed for shallow water can't sail to Europe or Africa.</English>
-        <German>[COLOR_UNIT_TEXT]Küstenschifffahrt[COLOR_REVERT] wird, wie der Name schon sagt, nur nahe der Küste betrieben. Kleine und handliche - dafür aber recht geräumige - Segler eignen sich bestens dazu, bereits sehr früh nach der Landung in der Neuen Welt Schiffe gebaut zu werden, damit Waren schnell zwischen den Kolonien hin- und hertransportiert werden können, bis ein Straßennetz errichtet werden kann. Aufgrund ihrer geringen Größe können die Küstensegler nicht auf den Ozean hinaus fahren und auch nicht nach Europa oder Afrika segeln.</German>
+        <German>[COLOR_HIGHLIGHT_TEXT]Küstenschifffahrt[COLOR_REVERT] wird, wie der Name schon sagt, nur nahe der Küste betrieben. Kleine und handliche - dafür aber recht geräumige - Segler eignen sich bestens dazu, bereits sehr früh nach der Landung in der Neuen Welt Schiffe gebaut zu werden, damit Waren schnell zwischen den Kolonien hin- und hertransportiert werden können, bis ein Straßennetz errichtet werden kann. Aufgrund ihrer geringen Größe können die Küstensegler nicht auf den Ozean hinaus fahren und auch nicht nach Europa oder Afrika segeln.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELDS_CONSUMED_WITH_CHAR</Tag>
