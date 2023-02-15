@@ -8380,7 +8380,7 @@ void CvPlayer::makePeaceWithAll()
 {
 	CvTeamAI& ownTeam = GET_TEAM(getTeam());
 
-	for (Teamtypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
+	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
 	{
 		if (ownTeam.isAtWar(eTeam)
 		{
