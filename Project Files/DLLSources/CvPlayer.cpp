@@ -8334,10 +8334,11 @@ void CvPlayer::setAlive(bool bNewValue)
 			}
 
 			// R&R, making peace with all factions, when dying - START
-			if (!isEurope() && isEverAlive())
-			{
-				makePeaceWithAll();
-			}
+			// WTP, jooe: move "make peace with all on player kill" logic to team kill and remove it here
+			// if (!isEurope() && isEverAlive())
+			// {
+			//	makePeaceWithAll();
+			// }
 			// R&R, making peace with all factions, when dying - END
 
 			setTurnActive(false);
@@ -8376,21 +8377,22 @@ void CvPlayer::setAlive(bool bNewValue)
 	}
 }
 
-void CvPlayer::makePeaceWithAll()
-{
-	CvTeamAI& ownTeam = GET_TEAM(getTeam());
-
-	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
-	{
-		if (ownTeam.isAtWar(eTeam))
-		{
-			if (ownTeam.canChangeWarPeace(eTeam))
-			{
-				ownTeam.makePeace(eTeam);
-			}
-		}
-	}
-}
+// WTP, jooe: move "make peace with all on player kill" logic to team kill and remove it here
+// void CvPlayer::makePeaceWithAll()
+// {
+// 	CvTeamAI& ownTeam = GET_TEAM(getTeam());
+//
+// 	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
+// 	{
+// 		if (ownTeam.isAtWar(eTeam))
+// 		{
+// 			if (ownTeam.canChangeWarPeace(eTeam))
+// 			{
+// 				ownTeam.makePeace(eTeam);
+// 			}
+// 		}
+// 	}
+// }
 
 void CvPlayer::verifyAlive()
 {

@@ -1750,6 +1750,13 @@ void CvTeam::convinceFather(FatherTypes eFather, bool bAccept)
 		}
 
 		GC.getGameINLINE().setFatherTeam(eFather, getID());
+
+		for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
+		{
+			// notify all teams that this FF is now taken (as of now, this has no effect)
+			GET_TEAM(eTeam).notifyFatherAvailability(eFather, false);
+		}
+
 	}
 	else //reject
 	{
@@ -1997,6 +2004,8 @@ void CvTeam::addEverAliveMember(PlayerTypes ePlayer)
 
 void CvTeam::kill()
 {
+	makePeaceWithAll();
+
 	if (!GC.getGameINLINE().isOption(GAMEOPTION_USE_OLD_FOUNDING_FATHER_SYSTEM))
 	{
 		freeFathers();
@@ -2024,10 +2033,23 @@ void CvTeam::freeFathers()
 }
 
 
+void CvTeam::makePeaceWithAll()
+{
+	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
+	{
+		if (isAtWar(eTeam) && canChangeWarPeace(eTeam))
+		{
+			makePeace(eTeam);
+		}
+	}
+}
+
+
 void CvTeam::notifyFatherAvailability(FatherTypes eFather, bool bAvailability)
 {
 	if (bAvailability && isFatherIgnore(eFather))
 	{
+		// If we are notified that this FF is available again, reset our ignore status
 		setFatherIgnore(eFather, false);
 	}
 }

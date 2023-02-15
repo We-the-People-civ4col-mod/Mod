@@ -1214,7 +1214,8 @@ protected:
 	void respawnTaxIncrease();
 	bool isUnitInActiveCombat();
 	void killMissionsAndTradeposts();
-	void makePeaceWithAll();
+	// WTP, jooe: move "make peace with all on player kill" logic to team kill and remove it here
+	// void makePeaceWithAll();
 	void kill();
 
 public:

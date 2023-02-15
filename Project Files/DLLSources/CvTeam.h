@@ -249,6 +249,7 @@ protected:
 
 	void kill();
 	void freeFathers();
+	void makePeaceWithAll();
 
 	virtual void read(FDataStreamBase* pStream);
 	virtual void write(FDataStreamBase* pStream);
