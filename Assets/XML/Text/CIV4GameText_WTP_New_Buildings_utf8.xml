@@ -49,12 +49,12 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GRAVEYARD_PEDIA</Tag>
         <English>In a strange land where religious immigrants look back fondly to medieval times, the graveyard often is a place of fear and superstition. On the other hand it's a place to visit lost loved ones for quiet contemplation. Emotional conflicts arise.</English>
-        <German>TBD</German>
+        <German>In einem fremden Land, in dem religiöse Einwanderer mit Vorliebe auf das Mittelalter zurückblicken, ist der Friedhof oft ein Ort der Angst und des Aberglaubens. Andererseits ist er ein Ort, an dem man verlorene Angehörige besucht, um in Ruhe darüber nachzudenken. Emotionale Konflikte entstehen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GRAVEYARD_STRATEGY</Tag>
         <English>The two certainties in life are death and taxes. The graveyard handles one. The King takes care of the other.</English>
-        <German>TBD</German>
+        <German>Die zwei Gewissheiten im Leben sind der Tod und die Steuern. Um das eine kümmert sich der Friedhof. Der König kümmert sich um das andere.</German>
     </TEXT>
     <!-- CONFECTIONER -->
     <TEXT>
@@ -129,32 +129,32 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE_PEDIA</Tag>
         <English>At first settlers import candy from the home country but before long an enterprising confectioner realizes that sugar is growing right next door, and all that's needed is a way to flavour it - maybe chocolate or vanilla. There's one other trick; grinding the sugar so fine that the candy has a smooth consistency.</English>
-        <German>TBD</German>
+        <German>Zunächst importieren die Siedler Süßigkeiten aus der Heimat, doch schon bald stellt ein geschäftstüchtiger Zuckerbäcker fest, dass der Zucker gleich nebenan wächst und man ihn nur noch aromatisieren muss - vielleicht mit Schokolade oder Vanille. Es gibt noch einen weiteren Trick: Man muss den Zucker so fein mahlen, dass die Bonbons eine glatte Konsistenz bekommen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE_STRATEGY</Tag>
         <English>Having a candy store means that the settlers and their children don't need to wait for the ship to come in from Europe to satisfy their sweet tooth. The local confectioner makes everybody happy, the dentist in particular.</English>
-        <German>TBD</German>
+        <German>Ein Süßwarenladen bedeutet, dass die Siedler und ihre Kinder nicht auf das Schiff aus Europa warten müssen, um ihren süßen Hunger zu stillen. Der örtliche Süßwarenhändler macht alle glücklich, vor allem den Zahnarzt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP_PEDIA</Tag>
         <English>The confectioner's shop adds extra variety, candy for every taste, along with traditional sweets that remind people of home. The bigger market helps to keep prices down.</English>
-        <German>TBD</German>
+        <German>Die Konditorei sorgt für zusätzliche Abwechslung, Süßigkeiten für jeden Geschmack und traditionelle Süßigkeiten, die die Menschen an ihre Heimat erinnern. Der größere Markt trägt dazu bei, die Preise niedrig zu halten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP_STRATEGY</Tag>
         <English>Extra production creates trading opportunities. Some confectioners even set up tables where tea is served to accompany the treats. A very few offer coffee, at first considered scandalous, because the drink is so stimulating.</English>
-        <German>TBD</German>
+        <German>Die zusätzliche Produktion schafft Handelsmöglichkeiten. Einige Zuckerbäcker stellen sogar Tische auf, an denen Tee zu den Leckereien gereicht wird. Einige wenige bieten Kaffee an, was zunächst als skandalös galt, weil das Getränk so anregend ist.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY_PEDIA</Tag>
         <English>The candy factory can serve an entire region. For one group it offers cheap sweets thanks to economies of scale. For the well-to-do it delivers an unparalleled variety of exotic confections to impress guests on special occasions.</English>
-        <German>TBD</German>
+        <German>Die Süßwarenfabrik kann dank Skalierungseffekten eine ganze Region mit billigen Süßigkeiten versorgen. Für die Wohlhabenden liefert sie eine unvergleichliche Vielfalt an exotischen Süßigkeiten, um Gäste bei besonderen Anlässen zu beeindrucken.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY_STRATEGY</Tag>
         <English>A big confectionery makes an important contribution to the region it serves, increasing both trading income and the community's happiness.</English>
-        <German>TBD</German>
+        <German>Eine große Konditorei leistet einen wichtigen Beitrag für die Region, in der sie tätig ist, und steigert sowohl das Handelseinkommen als auch die Zufriedenheit der Bevölkerung.</German>
     </TEXT>
     <!-- LEATHER_PADDER -->
     <TEXT>
@@ -229,7 +229,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE_PEDIA</Tag>
         <English>Leather is good at keeping out the wind but when the temperature drops it still feels cold. Putting padding into leather coats keeps people warm when the snow flies.</English>
-        <German>TBD</German>
+        <German>Leder hält zwar gut den Wind ab, aber wenn die Temperatur sinkt, fühlt es sich trotzdem kalt an. Eine Polsterung in den Mänteln hält hingegen die Menschen warm, selbst wenn der Schnee kommt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE_STRATEGY</Tag>
@@ -242,22 +242,22 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP_PEDIA</Tag>
         <English>A bigger business can produce a little more for export, not just to Europe but also to the surrounding First Nations and outdoor workers who appreciate warm clothing. A fashionable leather clothier relies on word of mouth to increase business.</English>
-        <German>TBD</German>
+        <German>Ein größeres Unternehmen kann etwas mehr für den Export produzieren, nicht nur nach Europa, sondern auch für die umliegenden Ureinwohner und Outdoor-Arbeiter, die warme Kleidung schätzen. Ein modischer Lederwarenhersteller verlässt sich auf Mundpropaganda, um sein Geschäft zu steigern.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP_STRATEGY</Tag>
         <English>Practical people see the advantage of insulated clothing in a cold climate. Devout settlers are obsessed with religious prohibitions, so women of easy virtue can earn extra money wearing leather in private to dominate the pious.</English>
-        <German>TBD</German>
+        <German>Praktische Menschen sehen den Vorteil isolierender Kleidung in einem kalten Klima. Fromme Siedler sind von religiösen Verboten besessen, so dass Frauen mit leichter Tugendhaftigkeit zusätzliches Geld verdienen können, indem sie privat Leder tragen, um die Frommen zu beherrschen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY_PEDIA</Tag>
         <English>A big business has efficiencies and economies of scale. A solitary leather clothier might spend days fitting a coat to a single customer but a factory can have enough sizes in stock for everyone to buy off the rack.</English>
-        <German>TBD</German>
+        <German>Ein großes Unternehmen verfügt über Effizienz- und Größenvorteile. Ein einzelner Lederbekleidungshersteller verbringt vielleicht Tage damit, einen Mantel für einen einzigen Kunden anzupassen, aber eine Fabrik kann genügend Größen auf Lager haben, die jeder von der Stange kaufen kann.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY_STRATEGY</Tag>
         <English>Sturdy outdoor leather clothing that stands up to hard wear means more work gets done, people don't get cold, and health and happiness are the result.</English>
-        <German>TBD</German>
+        <German>Robuste Outdoor-Lederkleidung, die harter Beanspruchung standhält, bedeutet, dass mehr Arbeit erledigt werden kann, da die Menschen nicht frieren was ihrer Gesundheit und Zufriedenheit zugutekommt.</German>
     </TEXT>
     <!-- OIL_TRADER -->
     <TEXT>
@@ -333,34 +333,34 @@
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE_PEDIA</Tag>
         <English>Pressing oil is an ancient craft in Europe, particularly in Mediterranean cultures. Equipment that crushes olives for their oil can be adapted to work with rapeseed.[NEWLINE]Before European contact cooking oil was essential for Pacific Northwest Native nations. Oolichan oil from candlefish made up so much of Native commerce that the trade routes were called "grease trails".</English>
         <French>Le pressage de l'huile est un artisanat ancien en Europe, notamment dans les cultures méditerranéennes. Les équipements qui écrasent les olives pour en extraire l'huile peuvent être adaptés au colza. Avant le contact avec les Européens, l'huile de cuisson était essentielle pour les nations autochtones du nord-ouest du Pacifique. L'huile d'oolichan provenant de la chandelle constituait une si grande partie du commerce amérindien que les routes commerciales étaient appelées "pistes de graisse".</French>
-        <German>Das Pressen von Öl ist ein altes Handwerk in Europa, insbesondere in den Mittelmeerkulturen. Die Geräte, mit denen Oliven zur Gewinnung von Öl gepresst werden, können auch für die Verarbeitung von Raps verwendet werden.[NEWLINE]Vor dem Kontakt mit den Europäern war Speiseöl für die Ureinwohner des pazifischen Nordwestens lebenswichtig. Oolichan-Öl aus Kerzenfisch machte einen so großen Teil des Handels der Ureinwohner aus, daß die Handelsrouten als "Fettstraßen" bezeichnet wurden.</German>
+        <German>Das Pressen von Öl ist ein altes Handwerk in Europa, insbesondere in den Mittelmeerkulturen. Die Geräte, mit denen Oliven zur Gewinnung von Öl gepresst werden, können auch für die Verarbeitung von Raps verwendet werden.[NEWLINE]Vor dem Kontakt mit den Europäern war Speiseöl für die Ureinwohner des pazifischen Nordwestens lebenswichtig. Oolichan-Öl aus Kerzenfisch machte einen so großen Teil des Handels der Ureinwohner aus, dass die Handelsrouten als "Fettstraßen" bezeichnet wurden.</German>
         <Italian>La spremitura dell'olio è un'attività antica in Europa, in particolare nelle culture mediterranee. Le attrezzature che schiacciano le olive per ricavarne l'olio possono essere adattate alla colza.[NEWLINE]Prima del contatto europeo, l'olio da cucina era essenziale per i nativi del Pacifico nordoccidentale. L'olio di oolichan ricavato dal pesce candela costituiva una parte così importante del commercio dei nativi che le rotte commerciali venivano chiamate "vie del grasso".</Italian>
         <Spanish>El prensado del aceite es un antiguo oficio en Europa, sobre todo en las culturas mediterráneas. Antes del contacto europeo, el aceite de cocina era esencial para las naciones indígenas del noroeste del Pacífico. El aceite de oolichan procedente del pez vela constituía una parte tan importante del comercio nativo que las rutas comerciales se llamaban "rutas de la grasa".</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE_STRATEGY</Tag>
         <English>Settlers eating wild game soon realize that it has much less fat than they're used to from domestic animals. In a cold climate fat keeps workers warm outdoors. In the wilderness plant oils are a good path to a balanced diet.</English>
-        <German>TBD</German>
+        <German>Siedler, die Wild essen, stellen bald fest, dass es viel weniger Fett hat, als sie es von Haustieren gewohnt sind. In einem kalten Klima hält Fett jedoch die Arbeiter im Freien warm. In der Wildnis sind Pflanzenöle entsprechend ein guter Weg zu einer ausgewogenen Ernährung.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP_PEDIA</Tag>
         <English>As the oil pressers refine their trade the quality of the oil attracts new customers.</English>
-        <German>TBD</German>
+        <German>In dem Maße, wie die Ölpresser ihr Handwerk verfeinern, zieht die Qualität des Öls neue Kunden an.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP_STRATEGY</Tag>
         <English>Oil pressers can now separate their pressings into varying grades to be sold at different prices. As customers discuss which is better for different situations, sales increase.</English>
-        <German>TBD</German>
+        <German>Ölpresser können nun ihre Presslinge in verschiedene Qualitäten unterteilen, die zu unterschiedlichen Preisen verkauft werden. Wenn die Kunden darüber diskutieren, welche Qualität für die verschiedenen Situationen besser ist, steigt der Umsatz.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY_PEDIA</Tag>
         <English>If there's a good supply of olives and rapeseed, the oil presses can be mechanized to generate exportable quantities.</English>
-        <German>TBD</German>
+        <German>Wenn es ein gutes Angebot an Oliven und Raps gibt, können die Ölpressen mechanisiert werden, um exportfähige Mengen zu erzeugen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY_STRATEGY</Tag>
         <English>If surplus quantities of oil and rapeseed can be grown close to the factory, an ambitious manager might prove himself by exporting the very best olive oil to Italy.</English>
-        <German>TBD</German>
+        <German>Wenn in der Nähe der Fabrik überschüssige Öl- und Rapsmengen angebaut werden können, könnte sich ein ehrgeiziger Manager durch den Export von bestem Olivenöl nach Italien beweisen.</German>
     </TEXT>
     <!-- ROASTER -->
     <TEXT>
@@ -443,27 +443,27 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_HOUSE_STRATEGY</Tag>
         <English>Peanuts are an excellent source of protein and vitamins. They complement traditional European grains, contributing to workers' health and stamina.</English>
-        <German>TBD</German>
+        <German>Erdnüsse sind eine hervorragende Quelle für Proteine und Vitamine. Sie ergänzen die traditionellen europäischen Getreidesorten und tragen zur Gesundheit und Ausdauer der Arbeitnehmer bei.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_SHOP_PEDIA</Tag>
         <English>Though they can be boiled, fresh harvested raw peanuts are usually roasted before being eaten. Enterprising roasters soon learn to add salt or grind the peanuts into peanut butter. Other nut butters soon follow.</English>
-        <German>TBD</German>
+        <German>Obwohl sie gekocht werden können, werden frisch geerntete, rohe Erdnüsse in der Regel geröstet, bevor sie verzehrt werden. Unternehmungslustige Röster lernten bald, Salz hinzuzufügen oder die Erdnüsse zu Erdnussbutter zu mahlen. Andere Nussbuttersorten folgten bald.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_SHOP_STRATEGY</Tag>
         <English>Once dried, peanuts last for a long time in a scout's saddlebags or in the barrels on a wagon. Peanut oil is also valuable for cooking.</English>
-        <German>TBD</German>
+        <German>Einmal getrocknet, halten sich Erdnüsse lange in den Satteltaschen der Pfadfinder oder in den Fässern auf dem Wagen. Erdnussöl ist auch zum Kochen wertvoll.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_FACTORY_PEDIA</Tag>
         <English>As peanut growers start to deliver large crops, roasters extend the market beyond their own cities, promoting the peanut as an exotic delicacy in temperate regions where it won't grow, Europe for example.</English>
-        <German>TBD</German>
+        <German>In dem Maße, in dem die Erdnussbauern beginnen, große Ernten zu liefern, dehnen die Röster den Markt über ihre eigenen Städte hinaus aus und werben für die Erdnuss als exotische Delikatesse in  Regionen, wie zum Beispiel Europa, in denen sie nicht wächst.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_FACTORY_STRATEGY</Tag>
         <English>A region with a big peanut roasting factory helps keep workers healthy. Peanuts are especially important where slave populations need added protein. Their owners can afford to eat meat, increasing their risk of heart disease.</English>
-        <German>TBD</German>
+        <German>Eine Region mit einer großen Erdnussrösterei trägt zur Gesunderhaltung der Arbeiter bei. Erdnüsse sind besonders wichtig, wenn Sklaven zusätzliche Proteine benötigen. Ihre Besitzer können es sich leisten, Fleisch zu essen, was ihr Risiko für Herzkrankheiten erhöht.</German>
     </TEXT>
     <!-- POTTERY -->
     <TEXT>
@@ -546,27 +546,27 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_HOUSE_STRATEGY</Tag>
         <English>Pottery lets villages store their surplus grain to get them through the hungry winter. Loading sturdy pots into wagons is a handy way to ship grain and supply food to new settlements.</English>
-        <German>TBD</German>
+        <German>Töpferwaren ermöglichen es den Dörfern, ihr überschüssiges Getreide zu lagern, um den hungrigen Winter zu überstehen. Das Beladen von Wagen mit robusten Töpfen ist eine praktische Methode, um Getreide zu transportieren und neue Siedlungen mit Lebensmitteln zu versorgen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_SHOP_PEDIA</Tag>
         <English>As the pottery business grows employees specialize. Most of the money comes in for sturdy practical pots holding everything from rice to rum, but a few creative types form imaginative vessels with decorative patterns, some merely for display. The Puritans strongly object.</English>
-        <German>TBD</German>
+        <German>Während das Töpfergeschäft wächst, spezialisieren sich die Mitarbeiter. Das meiste Geld wird für robuste, praktische Töpfe ausgegeben, in denen alles von Reis bis Rum aufbewahrt wird, aber ein paar kreative Typen formen phantasievolle Gefäße mit dekorativen Mustern, einige davon nur zur Schau. Die Puritaner sind strikt dagegen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_SHOP_STRATEGY</Tag>
         <English>With food and drink stored securely in pottery, life is now less precarious. Businesses feel safer taking risks and so the communities grow.</English>
-        <German>TBD</German>
+        <German>Durch die sichere Aufbewahrung von Lebensmitteln und Getränken in Töpferwaren ist das Leben nun weniger prekär. Die Unternehmen fühlen sich sicherer und somit risikobereiter, wodurch sich das Wachstum erhöht.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_FACTORY_PEDIA</Tag>
         <English>Pottery factories can be built near the best sources of clay, thus delivering high quality at a cheap price.</English>
-        <German>TBD</German>
+        <German>Töpferfabriken können in der Nähe der besten Tonvorkommen errichtet werden, so dass sie eine hohe Qualität zu einem günstigen Preis liefern.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_FACTORY_STRATEGY</Tag>
         <English>With every type of pot in demand, the pottery factory owners are squirrelling away pots of money.</English>
-        <German>TBD</German>
+        <German>Da alle Arten von Töpfen gefragt sind, legen die Besitzer der Töpferfabriken einen Haufen Geld beiseite.</German>
     </TEXT>
     <!-- TAILOR -->
     <TEXT>
@@ -641,32 +641,32 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_HOUSE_PEDIA</Tag>
         <English>At first women prided themselves on sewing all their families' clothes, getting their cloth from the weaver. The tailor needs to show his garments are better, or hope that people assume they're better simply because he's a man.</English>
-        <German>TBD</German>
+        <German>Anfangs waren die Frauen stolz darauf, die gesamte Kleidung ihrer Familien zu nähen und den Stoff von der Weberin zu beziehen. Der Schneider muss zeigen, dass seine Kleidung besser ist, oder darauf hoffen, dass die Leute annehmen, dass sie besser ist, nur weil er ein Mann ist.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_HOUSE_STRATEGY</Tag>
         <English>The tailor creates the well-dressed man, stylish and ready to succeed at diplomacy, business or romance.</English>
-        <German>TBD</German>
+        <German>Der Schneider erschafft den gut gekleideten Mann, stilvoll und bereit, in der Diplomatie, im Geschäftsleben oder in der Liebe erfolgreich zu sein.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_SHOP_PEDIA</Tag>
         <English>The tailor's shop grows to include a variety of sub-trades. The cutter seldom sews the garment. A different specialist chooses the perfect fabric for every style.</English>
-        <German>TBD</German>
+        <German>Die Schneiderei wächst und umfasst eine Vielzahl von Unterberufen. Selten näht der Schneider das Kleidungsstück. Für jeden Stil wählt ein anderer Spezialist den perfekten Stoff aus.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_SHOP_STRATEGY</Tag>
         <English>Having a tailor's shop is a sign of success for a growing town. If the shop has a tailor who's fashionable, everyone from the elder statesman to the firebrand preacher will buy there so they can look their best.</English>
-        <German>TBD</German>
+        <German>Das Vorhandensein einer Schneiderei ist ein Zeichen für den Erfolg einer wachsenden Stadt. Wenn das Geschäft einen Schneider hat, der modisch ist, kauft jeder - vom älteren Staatsmann bis zum Brandprediger - dort ein, damit er gut aussieht.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_FACTORY_PEDIA</Tag>
         <English>A tailors' factory offers less prestige than an exclusive shop but it makes up for that in output. Young workers with an eye on advancement can buy off the rack at a fraction of the cost of a personal fitting.</English>
-        <German>TBD</German>
+        <German>Eine Schneiderei bietet weniger Prestige als ein exklusives Geschäft, macht dies aber durch die Produktion wieder wett. Junge, aufstiegsorientierte Arbeitnehmer können zu einem Bruchteil der Kosten einer persönlichen Anprobe von der Stange kaufen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_FACTORY_STRATEGY</Tag>
         <English>The tailors' factory demonstrates that menswear is widely available. It's proof that a city has arrived socially.</English>
-        <German>TBD</German>
+        <German>Die Schneiderei zeigt, dass Herrenmode weithin verfügbar ist. Sie ist der Beweis dafür, dass eine Stadt gesellschaftlich angekommen ist.</German>
     </TEXT>
     <!-- FIREWORKER -->
     <TEXT>
@@ -748,27 +748,27 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE_STRATEGY</Tag>
         <English>The powder maker needs to produce enough black powder so that soldiers are well-supplied to defend their settlements. Even more is needed for miners and the pioneers building roads.</English>
-        <German>TBD</German>
+        <German>Der Pulvermacher muss genügend Schwarzpulver herstellen, damit die Soldaten gut ausgerüstet sind, um ihre Siedlungen zu verteidigen. Noch mehr wird für die Bergleute und die Pioniere zum Straßenbau benötigt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP_PEDIA</Tag>
         <English>As the business gets bigger, the black powder is stored in kegs which represent a massive increase in explosive power, so much that “powder keg” becomes a metaphor for high risk.</English>
-        <German>TBD</German>
+        <German>Mit zunehmender Größe des Unternehmens wird das Schwarzpulver in Fässern gelagert, die eine so große Sprengkraft haben, dass "Pulverfass" zu einer Metapher für ein hohes Risiko wird.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP_STRATEGY</Tag>
         <English>Black powder may be dangerous, but it's not as dangerous as having a weak army without enough ammunition.</English>
-        <German>TBD</German>
+        <German>Schwarzpulver mag gefährlich sein, aber es ist nicht so gefährlich wie eine schwache Armee ohne genügend Munition.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY_PEDIA</Tag>
         <English>The powder maker supplies propellant for guns and artillery, and explosives for mining and road building. For a big army so much has to be kept in kegs that an unlucky event in this building can blow up the entire town.</English>
-        <German>TBD</German>
+        <German>Der Pulvermacher liefert Treibladungen für Geschütze und Artillerie sowie Sprengstoff für den Berg- und Straßenbau. Für eine große Armee muss so viel in Fässern gelagert werden, dass ein einziges Missgeschick in diesem Gebäude die ganze Stadt in die Luft jagen kann.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY_STRATEGY</Tag>
         <English>Centralizing production of propellant for guns and artillery, and explosives for mining and road building, is efficient but it means powder trains of vulnerable wagons are now on the roads, open to attack.</English>
-        <German>TBD</German>
+        <German>Die Zentralisierung der Produktion von Treibstoff für Geschütze und Artillerie sowie von Sprengstoff für den Berg- und Straßenbau ist effizient, bedeutet aber auch, dass Pulverzüge mit anfälligen Wagen auf den Straßen unterwegs sind und angegriffen werden können.</German>
     </TEXT>
     <!-- BAKER -->
     <TEXT>
@@ -854,22 +854,22 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_SHOP_PEDIA</Tag>
         <English>As the bakery gets more workers it might add a pastry chef who creates sweet treats that bring in business. The business also provides a variety of loaves so that new arrivals can buy the kind of bread that reminds them of home.</English>
-        <German>TBD</German>
+        <German>Wenn die Bäckerei mehr Mitarbeiter hat, kann sie einen Konditor einstellen, der süße Leckereien herstellt, die das Geschäft ankurbeln. Das Unternehmen bietet auch eine Vielzahl von Brotsorten an, damit Gäste das Brot kaufen können, das sie an ihre Heimat erinnert.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_SHOP_STRATEGY</Tag>
         <English>As the bakery grows, offering cookies and pastries, it becomes a social center. Some bakers even set up tables where tea is served to accompany the treats. A few serve coffee which is considered scandalous because of the stimulating effect.</English>
-        <German>TBD</German>
+        <German>Wenn die Bäckerei wächst und Kekse und Gebäck anbietet, wird sie zu einem sozialen Zentrum. Einige Bäcker stellen sogar Tische auf, an denen Tee zu den Leckereien serviert wird. Einige wenige servieren Kaffee, der wegen seiner anregenden Wirkung als skandalös gilt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKERY_PEDIA</Tag>
         <English>A large bakery serves a region. On the one hand it offers cheap food thanks to economies of sale. On the other it delivers an unparalleled variety of pastries, pies and cakes for special occasions.</English>
-        <German>TBD</German>
+        <German>Eine Großbäckerei bedient eine Region. Einerseits bietet sie dank des günstigen Verkaufs günstige Lebensmittel an. Darüber hinaus liefert sie eine unvergleichliche Vielfalt an Backwaren, Torten und Kuchen für besondere Anlässe.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKERY_STRATEGY</Tag>
         <English>A big bakery makes an important contribution to the region it serves, increasing both the food supply and the community's happiness.</English>
-        <German>TBD</German>
+        <German>Eine große Bäckerei leistet einen wichtigen Beitrag für die Region, in der sie tätig ist, indem sie sowohl die Lebensmittelversorgung als auch das Wohlbefinden der Bevölkerung verbessert.</German>
     </TEXT>
     <!-- Courthouse -->
     <TEXT>
@@ -964,43 +964,42 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_VILLAGE_COURT_PEDIA</Tag>
         <English>Village courthouses handle small property disputes and local misbehaviour. Some use common law, where the judge recalls what was decided the last time that the cow broke through the fence and grazed in the neighbour's field. Others rely on written rules from the governor or the overseas monarch.</English>
-        <German>TBD</German>
+        <German>Die Dorfgerichte kümmern sich um kleine Eigentumsstreitigkeiten und lokales Fehlverhalten. Einige wenden das Gewohnheitsrecht an, wobei sich der Richter daran erinnert, was das letzte Mal entschieden wurde, als die Kuh den Zaun durchbrach und auf dem Feld des Nachbarn graste. Andere stützen sich auf schriftliche Vorschriften des Gouverneurs oder des Monarchen in Übersee.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_VILLAGE_COURT_STRATEGY</Tag>
         <English>With two jobs the village courthouse produces three law and one culture.</English>
-        <German>TBD</German>
+        <German>Das Dorfgericht produziert ein Kultur und je drei Recht mit seinen bis zu zwei Arbeitsplätzen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOWN_COURT_PEDIA</Tag>
-        <English>The town courthouse expands its purview to contracts and business law. It still hears criminal cases but they're a distraction from the decisions that really matter. There's a long list of hanging offences.
-</English>
-        <German>TBD</German>
+        <English>The town courthouse expands its purview to contracts and business law. It still hears criminal cases but they're a distraction from the decisions that really matter. There's a long list of hanging offences.</English>
+        <German>Das Stadtgericht weitet seinen Zuständigkeitsbereich auf Verträge und Wirtschaftsrecht aus. Es werden zwar immer noch Gewalttaten verhandelt, aber die lenken von den wirklich wichtigen Entscheidungen ab. Es gibt eine lange Liste von Hinrichtungsdelikten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOWN_COURT_STRATEGY</Tag>
         <English>With three jobs the town courthouse produces four law and two culture. Before it can be built the settlement needs a town hall and a village courthouse.</English>
-        <German>TBD</German>
+        <German>Das Stadtgericht produziert zwei Kultur und je vier Recht mit seinen bis zu drei Arbeitsplätzen. Bevor es gebaut werden kann, braucht die Siedlung ein Rathaus und ein Dorfgericht.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CITY_COURT_PEDIA</Tag>
         <English>The city courthouse still has to control violence and money, but dangerous ideas are increasingly subject to regulation. The jails have political prisoners alongside drunks and con artists. Sometimes all three are the same person.</English>
-        <German>TBD</German>
+        <German>Das Distriktsgericht muss nach wie vor Gewalt und Geld kontrollieren, aber gefährliche Ideen werden zunehmend einer Regulierung unterworfen. In den Gefängnissen sitzen politische Gefangene neben Säufern und Betrügern. Manchmal sind alle drei ein und dieselbe Person.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CITY_COURT_STRATEGY</Tag>
         <English>With four jobs the city courthouse produces five law and three culture.</English>
-        <German>TBD</German>
+        <German>Das Distriktsgerichthaus produziert drei Kultur und je fünf Recht je Arbeitsplatz.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SUPREME_COURT_PEDIA</Tag>
         <English>The Supreme Court exists as a counterbalance to government. Rules are made consistent. Many laws have a strong religious component. Precedent remains important, so the Supreme Court is a force for social continuity.</English>
-        <German>TBD</German>
+        <German>Der Oberste Gerichtshof ist ein Gegengewicht zur Regierung. Regeln werden konsequent umgesetzt. Viele Gesetze haben eine starke religiöse Komponente. Präzedenzfälle bleiben wichtig, so dass der Oberste Gerichtshof eine Kraft für soziale Kontinuität ist.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SUPREME_COURT_STRATEGY</Tag>
         <English>With six jobs the Supreme Court produces six law and five culture. The colony must have three city courthouses before the Supreme Court can be built.</English>
-        <German>TBD</German>
+        <German>Das Oberste Gericht produziert fünf Kultur und je sechs Recht mit seinen bis zu sechs Arbeitsplätzen. Es müssen drei städtische Gerichtsgebäude gebaut worden sein, bevor das Oberste Gericht errichtet werden kann.</German>
     </TEXT>
     <!-- JAIL -->
     <TEXT>
@@ -1033,13 +1032,13 @@
         <Russian>Тюрьма</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_GRAVEYARD_JAIL</Tag>
+        <Tag>TXT_KEY_BUILDING_JAIL_PEDIA</Tag>
         <English>Jail is how the settlement handles drunks, domestic disputes, witches and thieves. Murderers don't stay in jail for long because they're hanged. Thieves are hanged later.</English>
-        <German>TBD</German>
+        <German>Das Gefängnis ist der Ort, an dem Betrunkene, häusliche Gewalttäter, Hexen und Dieben landen. Mörder bleiben nicht lange im Gefängnis, weil sie gehängt werden. Diebe werden später aufgehängt.</German>
     </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_GRAVEYARD_JAIL</Tag>
-        <English>Jail is how the settlement handles drunks, domestic disputes, witches and thieves. Murderers don't stay in jail for long because they're hanged. Thieves are hanged later.</English>
-        <German>TBD</German>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_JAIL_STRATEGY</Tag>
+        <English>The jail increases the [LINK=YIELD_LAW]law[\LINK] without additional use of judges in the city.</English>
+        <German>Das Gefängnis erhöht das [LINK=YIELD_LAW]Recht[\LINK] ohne zusätzlichen Einsatz von Richtern in der Stadt.</German>
     </TEXT>
 </Civ4GameText>
