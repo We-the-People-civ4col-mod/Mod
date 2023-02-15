@@ -7,7 +7,7 @@
         <German>(22x36) Winzig</German>
         <Italian>(22x36) Minuscolo</Italian>
         <Spanish>(22x36) Diminuto</Spanish>
-        <Russian>Крошечный(22x36)</Russian>
+        <Russian>Крошечный</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_TINY_HELP</Tag>
@@ -20,7 +20,7 @@
         <German>(30x48) Klein</German>
         <Italian>(30x48) Piccolo</Italian>
         <Spanish>(30x48) Pequeño</Spanish>
-        <Russian>Маленький (30x48)</Russian>
+        <Russian>Маленький</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_SMALL_HELP</Tag>
@@ -33,7 +33,7 @@
         <German>(40x64) Standard</German>
         <Italian>(40x64) Normale</Italian>
         <Spanish>(40x64) Estándar</Spanish>
-        <Russian>Стандартный (40x64)</Russian>
+        <Russian>Стандартный</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_STANDARD_HELP</Tag>
@@ -46,7 +46,7 @@
         <German>(50x78) Groß</German>
         <Italian>(50x78) Grande</Italian>
         <Spanish>(50x78) Grande</Spanish>
-        <Russian>Большой (50x78)</Russian>
+        <Russian>Большой</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_LARGE_HELP</Tag>
@@ -59,7 +59,7 @@
         <German>(64x100) Riesig</German>
         <Italian>(64x100) Enorme</Italian>
         <Spanish>(64x100) Enorme</Spanish>
-        <Russian>Огромный (64x100)</Russian>
+        <Russian>Огромный</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_HUGE_HELP</Tag>
@@ -72,7 +72,7 @@
         <German>(110x215) Gigantisch</German>
         <Italian>(110x215) Gigantesco</Italian>
         <Spanish>(110x215) Gigantesco</Spanish>
-        <Russian>Гигантский (110x215)</Russian>
+        <Russian>Гигантский</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_GIGANTIC_HELP</Tag>

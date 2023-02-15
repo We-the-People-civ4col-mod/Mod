@@ -1294,6 +1294,7 @@
         <German>Flußkämpfer</German>
         <Italian>Combattente del fiume</Italian>
         <Spanish>Luchador de río</Spanish>
+        <Russian>Речной боец</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SEA_EXPLORER</Tag>
@@ -1395,6 +1396,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Осадные орудия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SKIRMISHER1</Tag>

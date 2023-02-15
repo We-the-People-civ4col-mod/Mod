@@ -608,7 +608,7 @@
         <German>[ICON_BULLET]%D1_Change%% %s2_TerrOrFeat-Angriff</German>
         <Italian>[ICON_BULLET]%D1_Change%% all'attacco in %s2_TerrOrFeat</Italian>
         <Spanish>[ICON_BULLET]%D1_Change%% a ataque a %s2:2_TerrOrFeat</Spanish>
-        <Russian>[ICON_BULLET]%D1_Change%% %s2_TerrOrFeat к атаке</Russian>
+        <Russian>[ICON_BULLET]%D1_Change%% к атаке в %s2_TerrOrFeat</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_ATTACK_TEXT</Tag>
@@ -626,7 +626,7 @@
         <German>[ICON_BULLET]%D1_Change%% %s2_TerrOrFeat-Stärke</German>
         <Italian>[ICON_BULLET]%D1_Change%% alla forza in %s2_TerrOrFeat</Italian>
         <Spanish>[ICON_BULLET]%D1_Change%% a fuerza en %s2:2_TerrOrFeat</Spanish>
-        <Russian>[ICON_BULLET]%D1_Change%% %s2_TerrOrFeat к силе</Russian>
+        <Russian>[ICON_BULLET]%D1_Change%% к силе в %s2_TerrOrFeat</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_STRENGTH_TEXT</Tag>
@@ -680,7 +680,7 @@
         <German>[ICON_BULLET]%D1_Change%% Verteidigung für %s2_TerrOrFeat</German>
         <Italian>[ICON_BULLET]%D1_Change%% di difesa nella %s2:2_TerrOrFeat</Italian>
         <Spanish>[ICON_BULLET]%D1_Change%% a defender %s2:2_TerrOrFeat</Spanish>
-        <Russian>[ICON_BULLET]%D1_Change%% %s2_TerrOrFeat к защите</Russian>
+        <Russian>[ICON_BULLET]%D1_Change%% к защите в %s2_TerrOrFeat</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_DEFENSE_TEXT</Tag>
@@ -3252,7 +3252,7 @@
         <German>Ein %s1_FeatName ist nahe der Stadt [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] entstanden.</German>
         <Italian>Vicino a [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] [NUM1:è sorto:è sorta] %s1_FeatName</Italian>
         <Spanish>Ha aparecido [NUM1:un:una:unos:unas] %s1_FeatName cerca de [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</Spanish>
-        <Russian>%s1_FeatName dshjc hzljv c [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</Russian>
+        <Russian>%s1_FeatName вырос рядом c [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_DISCOVERED_NEW_RESOURCE</Tag>

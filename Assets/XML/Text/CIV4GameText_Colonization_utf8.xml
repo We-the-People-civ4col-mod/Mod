@@ -63,6 +63,7 @@
         <German>Ein Verteidigungsbündnis - beide Parteien stimmen zu, den Angreifern der anderen Partei automatisch den Krieg zu erklären. (Hinweis: Das Bündnis wird automatisch hinfällig, wenn einer der beiden Spieler einer dritten Partei den Krieg erklärt.)</German>
         <Italian>Un patto di mutua protezione: ogni civiltà accetta di dichiarare automaticamente guerra se la civiltà alleata viene attaccata (Nota: il patto viene automaticamente annullato se uno dei due giocatori dichiara guerra a una terza nazione.)</Italian>
         <Spanish>Un acuerdo de protección mutua: cada parte accede a declarar automáticamente la guerra si alguien ataca a la otra (nota: este pacto queda revocado automáticamente si cualquier jugador le declara la guerra a un tercero).</Spanish>
+        <Russian>Пакт о взаимной защите — каждая сторона соглашается автоматически объявить войну, если другая сторона подвергнется нападению (Примечание: это соглашение автоматически отменяется, если любой из игроков объявляет войну третьей стороне).</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_OPEN_BORDERS</Tag>
@@ -71,6 +72,7 @@
         <German>Öffnet die Grenzen zweier Kolonien und gewährt Einheiten Durchmarschrechte.</German>
         <Italian>Apre i confini delle due colonie, consentendo il diritto di passaggio.</Italian>
         <Spanish>Abre las fronteras entre dos colonias, lo que permite el derecho de paso.</Spanish>
+        <Russian>Открывает границы двух колоний, обеспечивая право прохода не только торговцам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>SYSTEM_WAITING</Tag>
@@ -87,6 +89,7 @@
         <German>Milord, [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] ist eine Küstensiedlung und damit ideal geeignet, um Meeresfrüchte zu ernten! Durch die Errichtung des Gebäudes [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] könnten wir das Wachstum der Siedlung deutlich steigern!</German>
         <Italian>Signore, [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] è un insediamento costiero: dovrebbe sfruttare i doni del mare! La costruzione di [NUM2:un:una] [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] aumenterebbe di molto la sua crescita!</Italian>
         <Spanish>Excelencia, [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] es un asentamiento costero y debería aprovechar lo que le ofrece el mar. La construcción de [NUM2:un:una:unos:unas] [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] aumentaría de manera significativa su crecimiento.</Spanish>
+        <Russian>Милорд, [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] — прибрежное поселение и оно должно пожинать плоды моря! Строительство [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] значительно увеличит его рост!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_AUTOMATE_CITY_HELP</Tag>
@@ -95,6 +98,7 @@
         <German>Die Einheit modernisiert nur die nächstgelegene Siedlung und arbeitet solange, bis sie gestoppt wird</German>
         <Italian>L'unità migliorerà solamente l'insediamento più vicino e continuerà a lavorare finché non annullerai l'automazione.</Italian>
         <Spanish>La unidad solo mejorará el asentamiento que tenga más cerca. Seguirá trabajando hasta que se cancele la automatización.</Spanish>
+        <Russian>Отряд будет улучшать только свое ближайшее поселение. Он будет продолжать работать до тех пор, пока вы не отмените его автоматизацию.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LIBERATE_CITY_HELP</Tag>
@@ -135,6 +139,7 @@
         <German>Wartet, ich will mir die Siedlung erst einmal selbst anschauen ...</German>
         <Italian>Aspetta, fammi esaminare l'insediamento...</Italian>
         <Spanish>Esperad, dejadme examinar primero el asentamiento...</Spanish>
+        <Russian>Подождите, давайте я сначала осмотрю поселение...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_DESTROYED_CITY</Tag>
@@ -229,6 +234,7 @@
         <German>[ICON_BULLET]%D1 Bevölkerung in allen Siedlungen</German>
         <Italian>[ICON_BULLET]%D1 di popolazione in tutti gli insediamenti</Italian>
         <Spanish>[ICON_BULLET]%D1 población en todos los asentamientos</Spanish>
+        <Russian>[ICON_BULLET]%D1 населения во всех поселениях</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INFO_SCREEN_CITIES_BUILT</Tag>
@@ -237,6 +243,7 @@
         <German>Gegründete Siedlungen</German>
         <Italian>Insediamenti costruiti</Italian>
         <Spanish>Asentamientos construidos</Spanish>
+        <Russian>Посленений построено</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INFO_SCREEN_CITIES_RAZED</Tag>
@@ -245,6 +252,7 @@
         <German>Vernichtete Siedlungen</German>
         <Italian>Insediamenti razziati</Italian>
         <Spanish>Asentamientos arrasados</Spanish>
+        <Russian>Поселений разрушено</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_BAR_SELECT_ALT</Tag>
@@ -253,6 +261,7 @@
     <German>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] für alle Siedlungen)</German>
     <Italian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] per tutti gli insediamenti)</Italian>
     <Spanish>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] para todos los asentamientos)</Spanish>
+        <Russian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] для всех поселений)</Russian>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_CITY_BAR_SELECT_CTRL</Tag>
@@ -261,6 +270,7 @@
     <German>([COLOR:140:255:40:255]&lt; STRG &gt;[COLOR_REVERT] für alle Siedlungen auf diesem Kontinent)</German>
     <Italian>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] per tutti gli insediamenti in questo continente)</Italian>
     <Spanish>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] para todos los asentamientos en este continente)</Spanish>
+        <Russian>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] для всех поселений на этом континенте)</Russian>
   </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_SCREEN_CITY_CULTURE</Tag>
@@ -294,6 +304,7 @@
         <German>[SPACE]Alle Siedlungen</German>
         <Italian>[SPACE]Tutti gli insediamenti</Italian>
         <Spanish>[SPACE]Todos los asentamientos</Spanish>
+        <Russian>[SPACE]Все поселения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHOOSE_PROFESSION</Tag>
@@ -373,6 +384,7 @@
         <German>Docks</German>
         <Italian>Moli</Italian>
         <Spanish>Muelles</Spanish>
+        <Russian>Доки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PURCHASE_EUROPE_UNIT</Tag>
@@ -442,6 +454,7 @@
         <German>Benötigt: </German>
         <Italian>Consuma: </Italian>
         <Spanish>Consume: </Spanish>
+        <Russian>Потребляет:</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PRODUCED</Tag>
@@ -450,6 +463,7 @@
         <German>Produziert: </German>
         <Italian>Produce: </Italian>
         <Spanish>Produce: </Spanish>
+        <Russian>Производит:</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CONSUMED_WITH_CHAR</Tag>
@@ -458,6 +472,7 @@
         <German>Benötigt: %F1_Icon</German>
         <Italian>Consuma: %F1_Icon</Italian>
         <Spanish>Consume: %F1_Icon</Spanish>
+        <Russian>Потребляет: %F1_Icon</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PRODUCED_WITH_CHAR</Tag>
@@ -466,6 +481,7 @@
         <German>Produziert: %F1_Icon</German>
         <Italian>Produce: %F1_Icon</Italian>
         <Spanish>Produce: %F1_Icon</Spanish>
+        <Russian>Производит: %F1_Icon</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_WORKS_IN_BUILDING</Tag>
@@ -512,6 +528,7 @@
         <German>[COLOR_WARNING_TEXT]Kann nicht innerhalb eines Radius von %d1_Num [NUM1:Geländefeld:Geländefeldern] um die Siedlung herum gegründet werden.[COLOR_REVERT]</German>
         <Italian>[COLOR_WARNING_TEXT]Non è stato trovato all'interno di %d1_Num [NUM1:spazio:spazi] dell'insediamento[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_WARNING_TEXT]No se puede encontrar a una distancia de %d1_Num [NUM1:casilla:casillas] del asentamiento[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_WARNING_TEXT]Нельзя основать в пределах %d1_Num [NUM1:клетки:клеток] от другого поселения[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SCREEN_STORED</Tag>
@@ -658,6 +675,7 @@
         <German>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Wütende %s1:3_civ_adjective Kolonisten zerstören aus Protest alle %s3_yield-Lieferungen, da sie hohe Steuern zahlen müssen, aber nicht im Parlament vertreten sind !</German>
         <Italian>Bellicosi coloni %s1_civ_adjective a %s2_city hanno distrutto tutte le partite di %s3_yield per protestare con l'eccessiva tassazione senza rappresentanza.</Italian>
         <Spanish>Los enojados colonos %s1:3_civ_adjective de %s2_city destruyen todos los cargamentos de %s3_yield en protesta por los impuestos excesivos sin representantes.</Spanish>
+        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Разгневанные колонисты %s1_civ_adjective уничтожают все запасы %s3_yield в знак протеста против чрезмерного налогообложения без представительства !</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODS_LOST</Tag>
@@ -684,6 +702,7 @@
         <German>Ankommend</German>
         <Italian>In arrivo</Italian>
         <Spanish>Entrantes</Spanish>
+        <Russian>Прибывает</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OUTBOUND</Tag>
@@ -692,6 +711,7 @@
         <German>Auslaufend</German>
         <Italian>In partenza</Italian>
         <Spanish>Salientes</Spanish>
+        <Russian>Отплывает</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IN_PORT</Tag>
@@ -700,6 +720,7 @@
         <German>Im Hafen</German>
         <Italian>In porto</Italian>
         <Spanish>En puerto</Spanish>
+        <Russian>В порту</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HIRE</Tag>
@@ -716,6 +737,7 @@
         <German>Nehmt diesen Talisman, er wird Euch auf Euren Reisen schützen. (Bergkristall im Wert von %d1_value[ICON_GOLD] überreicht)</German>
         <Italian>Dai queste perline (del valore di %d1_value[ICON_GOLD]) al tuo capo come segno della nostra amicizia.</Italian>
         <Spanish>Por favor, dad estos abalorios (por valor de %d1_value[ICON_GOLD]) a vuestro jefe como prueba de nuestra amistad.</Spanish>
+        <Russian>Возьмите этот талисман, он защитит вас в ваших путешествиях. (Подарен горный хрусталь стоимостью %d1_value[ICON_GOLD])</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHIEF_GOODY_MUCH_GOLD</Tag>
@@ -724,6 +746,7 @@
         <German>Nehmt diesen Halsschmuck als Zeichen unserer Gastfreundschaft. (Perlenkette im Wert von %d1_value[ICON_GOLD] überreicht)</German>
         <Italian>Dai queste perline (del valore di %d1_value[ICON_GOLD]) al tuo capo come segno della nostra amicizia.</Italian>
         <Spanish>Por favor, dad estos abalorios (por valor de %d1_value[ICON_GOLD]) a vuestro jefe como prueba de nuestra amistad.</Spanish>
+        <Russian>Примите это ожерелье в знак нашего гостеприимства. (Подарено жемчужное ожерелье стоимостью %d1_value[ICON_GOLD])</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHIEF_GOODY_TREASURE</Tag>
@@ -732,6 +755,7 @@
         <German>Nehmt dies als Gabe für Eure Götter mit. (Edelsteine und Goldgefäße im Wert von %d1_value[ICON_GOLD] überreicht)</German>
         <Italian>Dai queste perline (del valore di %d1_value[ICON_GOLD]) al tuo capo come segno della nostra amicizia.</Italian>
         <Spanish>Por favor, dad estos abalorios (por valor de %d1_value[ICON_GOLD]) a vuestro jefe como prueba de nuestra amistad.</Spanish>
+        <Russian>Примите это и поднесите в дар своим богам, да будут они благосклонны ко всем нам. (Подарены драгоценные камни и золотые сосуды на сумму %d1_value[ICON_GOLD]).</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHIEF_GOODY_SCOUT</Tag>
@@ -740,6 +764,7 @@
         <German>Erlaubt uns, Euren Kundschafter zu unterweisen.</German>
         <Italian>Permettici di addestrare il tuo scout.</Italian>
         <Spanish>Permitidnos entrenar a vuestro Batidor.</Spanish>
+        <Russian>Позволь нам обучить твоего Разведчика.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHIEF_GOODY_MAP</Tag>
@@ -748,11 +773,13 @@
         <German>Lasst Euch nieder und rastet. Raucht eine Pfeife und lasst Euch von uns Geschichten über unsere Heimat erzählen, um Euren Geist zu erfrischen.</German>
         <Italian>Sistematevi e riposatevi. Fumatevi una pipa e lasciatevi raccontare delle storie sulla nostra patria per rinfrescare il vostro spirito.</Italian>
         <Spanish>Acomódate y descansa. Fume una pipa y deje que le contemos historias sobre nuestra patria para refrescar su espíritu.</Spanish>
+        <Russian>Садитесь рядом и отдохните. Выкурите трубку и позвольте нам рассказать вам истории о нашей земле. И пусть ваш дух наполняется энергией жизни.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHIEF_FAILED_MISSIONARY</Tag>
         <English>Just last spring one of your black robes came to us. But he was rude and insulted our ancestors' spirits. So we had to beat and tie him. Take him with you. (Receive a disillusioned missionary)</English>
         <German>Im letzten Frühjahr kam bereits einer eurer Schwarzroben zu uns. Aber er war unhöflich und beleidigte die Geister unserer Ahnen. Wir mussten ihn schlagen und fesseln. Nehmt ihn mit euch. (Desillusionierten Missionar erhalten)</German>
+        <Russian>Буквально прошлой весной к нам пришла одна из ваших черных мантий. Но он был груб и оскорблял духи наших предков. Так что нам пришлось немного побить его и связать. Возьми его с собой. (Забрать разочарованного миссионера)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHIEF_GOODY_EXPERIENCE</Tag>
@@ -761,6 +788,7 @@
         <German>Wir leben schon lange in dieser Welt und haben in vielen Kämpfen gelernt, was ein Krieger braucht, um hier zu überleben. Wir geben Euch einen Einblick in dieses Wissen - in der Hoffnung, dass Ihr uns in künftigen Kämpfen als Waffengefährten beisteht.</German>
         <Italian>Lascia che i nostri guerrieri vi insegnino le nostre tecniche di combattimento, come segno di apertura tra le nostre tribù.</Italian>
         <Spanish>Que nuestros guerreros os enseñen nuestra manera de combatir como señal de buen entendimiento entre nuestras dos tribus.</Spanish>
+        <Russian>Мы давно живем в этом мире и во многих битвах узнали, что нужно воину, чтобы здесь выжить. Мы дарим вам эти знания в надежде, что вы будете рядом с нами, как братья по оружию, в будущих битвах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAN_IMPROVE_LAND</Tag>
@@ -769,6 +797,7 @@
         <German>[ICON_BULLET]Kann Land verbessern</German>
         <Italian>[ICON_BULLET]Può migliorare la terra</Italian>
         <Spanish>[ICON_BULLET]Puede mejorar la tierra</Spanish>
+        <Russian>[ICON_BULLET]Может строить улучшения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAN_ESTABLISH_MISSIONS</Tag>
@@ -777,6 +806,7 @@
         <German>[ICON_BULLET]Kann Missionen errichten</German>
         <Italian>[ICON_BULLET]Può fondare missioni</Italian>
         <Spanish>[ICON_BULLET]Puede fundar misiones</Spanish>
+        <Russian>[ICON_BULLET]Может основывать миссии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FASTER_WORK_RATE</Tag>
@@ -785,6 +815,7 @@
         <German>[ICON_BULLET]Verbessert das Land %D1%% schneller</German>
         <Italian>[ICON_BULLET]Migliora la terra il %D1%% più rapidamente</Italian>
         <Spanish>[ICON_BULLET]Mejora la tierra un %D1%% más rápido</Spanish>
+        <Russian>[ICON_BULLET]Строит улучшения быстрее на %D1%%</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BETTER_MISSION_RATE</Tag>
@@ -793,16 +824,19 @@
         <German>[ICON_BULLET]Missionen sind %D1%% effektiver</German>
         <Italian>[ICON_BULLET]Le missioni sono più efficaci del %D1%%</Italian>
         <Spanish>[ICON_BULLET]Las misiones son un %D1%% más eficaces</Spanish>
+        <Russian>[ICON_BULLET]Работа миссий эффективнее на %D1%%</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAN_ESTABLISH_TRADE_POST</Tag>
         <English>[ICON_BULLET]Can establish trading posts</English>
         <German>[ICON_BULLET]Kann Handelsposten errichten</German>
+        <Russian>[ICON_BULLET]Может основывать торговые посты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BETTER_TRADE_POST_RATE</Tag>
         <English>[ICON_BULLET]Trading posts are %D1%% more effective</English>
         <German>[ICON_BULLET]Handelsposten sind %D1%% effektiver</German>
+        <Russian>[ICON_BULLET]Работа торговых постов эффективнее на %D1%%</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NATIVES_CONVERTED</Tag>
@@ -829,16 +863,19 @@
         <German>In [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] haben die Ureinwohner die [COLOR_HIGHLIGHT_TEXT]%s2:3_civ_adjective[COLOR_REVERT] Mission niedergebrannt und den Missionar in die Flammen geworfen. Er hatte sich ihren Hass zugezogen, weil er eine alte Götzenstatue zerschlagen hatte.</German>
         <Italian>I nativi a [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hanno rinnegato la missione [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT]</Italian>
         <Spanish>Los Nativos [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] han abandonado la misión [COLOR_HIGHLIGHT_TEXT]%s2:2_civ_adjective[COLOR_REVERT].</Spanish>
+        <Russian>В [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] индейцы сожгли миссию [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] и бросили миссионера в огонь. Он вызвал их ненависть, потому что разбил древнюю статую идола.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_POST_ESTABLISHED</Tag>
         <English>A [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] trading post has been established in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
         <German>Ein [COLOR_HIGHLIGHT_TEXT]%s2:3_civ_adjective[COLOR_REVERT] Handelsposten wurde in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] eingerichtet.</German>
+        <Russian>Торговый пост [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] был открыт в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_POST_REMOVED</Tag>
         <English>Natives in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] burnt down the [COLOR_HIGHLIGHT_TEXT]%s2:3_civ_adjective[COLOR_REVERT] trading post and threw the merchant into the flames. He had incurred their hatred for bargaining too hard.</English>
         <German>In [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] haben die Ureinwohner den [COLOR_HIGHLIGHT_TEXT]%s2:3_civ_adjective[COLOR_REVERT] Handelsposten niedergebrannt und den Händler in die Flammen geworfen. Er hatte sich ihren Hass zugezogen, da er zu stark gefeilscht hat.</German>
+        <Russian>В [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] индейцы сожгли торговый пост [COLOR_HIGHLIGHT_TEXT]%s2:3_civ_adjective[COLOR_REVERT] и бросили торговца в огонь. Он слишком часто торговался с ними по мелочам, а в последний (для него) раз начал оскорблять их предков.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SCORE_BREAKDOWN_POPULATION</Tag>
@@ -847,6 +884,7 @@
         <German>%d1 durch Bevölkerung (%d2_pop/%d3_pop_max)</German>
         <Italian>%d1 dalla popolazione (%d2_pop/%d3_pop_max)</Italian>
         <Spanish>%d1 por población (%d2_pop/%d3_pop_max)</Spanish>
+        <Russian>%d1 от населения (%d2_pop/%d3_pop_max)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SCORE_BREAKDOWN_LAND</Tag>
@@ -855,6 +893,7 @@
         <German>%d1 durch Land (%d2_land/%d3_land_max)</German>
         <Italian>%d1 dal territorio (%d2_land/%d3_land_max)</Italian>
         <Spanish>%d1 por territorio (%d2_land/%d3_land_max)</Spanish>
+        <Russian>%d1 от земли (%d2_land/%d3_land_max)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SCORE_BREAKDOWN_FATHERS</Tag>
@@ -863,6 +902,7 @@
         <German>%d1 durch Gründerväter (%d2_father/%d3_father_max)</German>
         <Italian>%d1 dai Padri Fondatori (%d2_father/%d3_father_max)</Italian>
         <Spanish>%d1 por Padres fundadores (%d2_father/%d3_father_max)</Spanish>
+        <Russian>%d1 от Отцов Основателей (%d2_father/%d3_father_max)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SCORE_BREAKDOWN_TOTAL</Tag>
@@ -871,6 +911,7 @@
         <German>------------------------[NEWLINE]Punktestand = %d1[NEWLINE]Highscore bei Sieg in dieser Runde = %d2</German>
         <Italian>------------------------[NEWLINE]Punteggio totale = %d1[NEWLINE]Punteggio vincendo durante questo turno = %d2</Italian>
         <Spanish>------------------------[NEWLINE]Puntuación total = %d1[NEWLINE]Puntuación por ganar este turno = %d2</Spanish>
+        <Russian>------------------------[NEWLINE]Всего очков = %d1[NEWLINE]Очков для победы на этом ходу = %d2</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PERCENT_CHANGE_ALL_CITIES</Tag>
@@ -897,6 +938,7 @@
         <German>[ICON_BULLET]%D1%F2 pro [LINK=literal]%s3_building[\LINK]</German>
         <Italian>[ICON_BULLET]%D1%F2 per [LINK=literal]%s3_building[\LINK]</Italian>
         <Spanish>[ICON_BULLET]%D1%F2 por [LINK=literal]%s3_building[\LINK]</Spanish>
+        <Russian>[ICON_BULLET]%D1%F2 для [LINK=literal]%s3_building[\LINK]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MOVES_INCREASE</Tag>
@@ -914,6 +956,7 @@
         <German>[ICON_BULLET]%D1%%[ICON_STRENGTH]für [LINK=literal]%s2_unit[\LINK]</German>
         <Italian>[ICON_BULLET]%D1%%[ICON_STRENGTH]per l'unità [LINK=literal]%s2_unit[\LINK]</Italian>
         <Spanish>[ICON_BULLET]%D1%%[ICON_STRENGTH][NUM2:al:a la:a los:a las] [LINK=literal]%s2_unit[\LINK]</Spanish>
+        <Russian>[ICON_BULLET]%D1%%[ICON_STRENGTH]для [LINK=literal]%s2_unit[\LINK]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_REBEL</Tag>
@@ -939,6 +982,7 @@
         <German>Wählt die Staatsform [COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT] für Eure neue Verfassung.</German>
         <Italian>Scegli [COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT] per la nuova costituzione.</Italian>
         <Spanish>Por favor, elegid [NUM1:vuestro:vuestra:vuestros:vuestras] [COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT] para vuestra nueva Constitución.</Spanish>
+        <Russian>Пожалуйста, выберите [COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT] для вашей новой конституции.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_EXTRA_POPULATION</Tag>
@@ -955,6 +999,7 @@
         <German>[ICON_BULLET]%D1[ICON_STRENGTH] für %s2_profession</German>
         <Italian>[ICON_BULLET]%D1[ICON_STRENGTH] per %s2_profession</Italian>
         <Spanish>[ICON_BULLET]%D1[ICON_STRENGTH] para %s2_profession</Spanish>
+        <Russian>[ICON_BULLET]%D1[ICON_STRENGTH] для %s2_profession</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_IMMIGRATION_CONVERSION</Tag>
@@ -963,6 +1008,7 @@
         <German>[ICON_BULLET]Wandelt %F1_yield für Auswanderung in %F2_yield um</German>
         <Italian>[ICON_BULLET]Converte %F1_yield d'immigrazione in %F2_yield</Italian>
         <Spanish>[ICON_BULLET]Convierte %F1_yield de inmigración en %F2_yield</Spanish>
+        <Russian>[ICON_BULLET]Преобразует %F1_yield в %F2_yield</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_WORKER_SPEED</Tag>
@@ -971,6 +1017,7 @@
         <German>[ICON_BULLET]Pioniere errichten Modernisierungen %D1_Mod%% schneller</German>
         <Italian>[ICON_BULLET]I pionieri costruiscono i miglioramenti del %D1_Mod%% più velocemente</Italian>
         <Spanish>[ICON_BULLET]Los Pioneros construyen mejoras un %D1_Mod%% más rápido</Spanish>
+        <Russian>[ICON_BULLET]Первопроходцы строят улучшения на %D1_Mod%% быстрее</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_NATIVE_BORDERS</Tag>
@@ -979,6 +1026,7 @@
         <German>[ICON_BULLET]Koloniegrenzen beherrschen die Ureinwohnergrenzen</German>
         <Italian>[ICON_BULLET]I confini coloniali dominano i confini dei nativi</Italian>
         <Spanish>[ICON_BULLET]Las fronteras de la colonia dominan las de los Nativos</Spanish>
+        <Russian>[ICON_BULLET]Границы колоний доминируют над границами индейских поселений</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_REVOLUTION_EUROPE_TRADE</Tag>
@@ -987,6 +1035,7 @@
         <German>[ICON_BULLET]Handel mit Europa weiterhin möglich</German>
         <Italian>[ICON_BULLET]Può continuare a commerciare con l'Europa</Italian>
         <Spanish>[ICON_BULLET]Puede continuar el intercambio con Europa</Spanish>
+        <Russian>[ICON_BULLET]Можно продолжать торговать с Европой</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_BUILD_MISSIONARIES</Tag>
@@ -995,6 +1044,7 @@
         <German>[ICON_BULLET]Kann ohne das Gebäude [COLOR_BUILDING_TEXT]%s1_Building[COLOR_REVERT] Kolonisten zu Missionaren machen</German>
         <Italian>[ICON_BULLET]Permette di realizzare missionari senza [COLOR_BUILDING_TEXT]%s1_Building[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]No se pueden construir misioneros sin [NUM1:un:una:unos:unas] [COLOR_BUILDING_TEXT]%s1_Building[COLOR_REVERT]</Spanish>
+        <Russian>[ICON_BULLET]Можно нанимать миссионеров без [COLOR_BUILDING_TEXT]%s1_Building[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_FREE_XP</Tag>
@@ -1003,6 +1053,7 @@
         <German>[ICON_BULLET]Neue Einheiten erhalten %D1_Change Erfahrungspunkte</German>
         <Italian>[ICON_BULLET]Le nuove unità ricevono %D1_Change punti esperienza</Italian>
         <Spanish>[ICON_BULLET]Las nuevas unidades reciben %D1_Change puntos de experiencia</Spanish>
+        <Russian>[ICON_BULLET]Новые юниты получают %D1_Change очков опыта</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_IMPROVEMENT_UPGRADE</Tag>
@@ -1011,6 +1062,7 @@
         <German>[ICON_BULLET]%D1_Mod%% Wachstum für[SPACE]</German>
         <Italian>[ICON_BULLET]%D1_Mod%% miglioramento sulla crescita[SPACE]</Italian>
         <Spanish>[ICON_BULLET]%D1_Mod%% al crecimiento por[SPACE]</Spanish>
+        <Russian>[ICON_BULLET]%D1_Mod%% роста для[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_MILITARY_PRODUCTION</Tag>
@@ -1027,6 +1079,7 @@
         <German>[SPACE]in der Hauptstadt</German>
         <Italian>[SPACE]nella capitale</Italian>
         <Spanish>[SPACE]en la capital</Spanish>
+        <Russian>[SPACE]в столице</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_IMPROVEMENT_YIELD_CHANGE</Tag>
@@ -1062,6 +1115,7 @@
         <German>[ICON_BULLET]%D1%% Erfahrungszuwachs durch Kämpfe innerhalb der eigenen Grenzen</German>
         <Italian>[ICON_BULLET]%D1%% di esperienza per i combattimenti sul proprio territorio</Italian>
         <Spanish>[ICON_BULLET]%D1%% de experiencia obtenida por combatir dentro de las fronteras propias.</Spanish>
+        <Russian>[ICON_BULLET]%D1%% очков опыта, полученных за бои в пределах своих границ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_FATHER_CATEGORY</Tag>
@@ -1079,6 +1133,7 @@
         <German>[COLOR_FONT_CREAM]%s1_father[COLOR_REVERT] [NUM1:hat:hat:haben:haben] angeboten, sich Eurer Sache anzuschließen. Heißt Ihr [NUM1:ihn:sie:sie:sie] im Kontinentalkongress willkommen?</German>
         <Italian>[COLOR_FONT_CREAM]%s1_father[COLOR_REVERT] [NUM1:si è offerto:si è offerta:si sono offerti:si sono offerte] di unirsi alla tua causa. [NUM1:Lo:La:Gli:Le] accoglierai quale parte del congresso continentale?</Italian>
         <Spanish>[COLOR_FONT_CREAM]%s1_father[COLOR_REVERT] [NUM1:se ha:se ha:se han:se han] ofrecido a unirse a vuestra causa. ¿[NUM1:Le:Le:Les:Les] daréis la bienvenida como parte de vuestro Congreso Continental?</Spanish>
+        <Russian>[COLOR_FONT_CREAM]%s1_father[COLOR_REVERT] желает присоединиться к нам. Хотите, чтобы [NUM1:он:она] [NUM1:вошёл:вошла] в состав нашего Континентального конгресса?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JOINED_TEAM</Tag>
@@ -1121,6 +1176,7 @@
         <German>[ICON_BULLET]Festigt die Beziehungen zu den Ureinwohnern</German>
         <Italian>[ICON_BULLET]Consolida il rapporto con i nativi</Italian>
         <Spanish>[ICON_BULLET]Estrecha las relaciones con los Nativos</Spanish>
+        <Russian>[ICON_BULLET]Улучшает отношения с индейцами</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_NATIVE_ATTITUDE_BAD</Tag>
@@ -1129,12 +1185,14 @@
         <German>[ICON_BULLET]Schwächt die Beziehungen zu den Ureinwohnern</German>
         <Italian>[ICON_BULLET]Indebolisce il rapporto con i nativi</Italian>
         <Spanish>[ICON_BULLET]Empeora las relaciones con los Nativos</Spanish>
+        <Russian>[ICON_BULLET]Ухудшает отношения с индейцами</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_NATIVE_ATTITUDE_GOOD2</Tag>
         <English>[ICON_BULLET]Ends all wars with Natives</English>
         <French>[ICON_BULLET]Paix automatique avec les indigènes</French>
         <German>[ICON_BULLET]Laufende Kriege mit den Ureinwohnern werden sofort friedlich beigelegt</German>
+        <Russian>[ICON_BULLET]Завершает все войны с индейцами</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_EUROPEAN_ATTITUDE_GOOD</Tag>
@@ -1216,6 +1274,7 @@
         <German>[ICON_BULLET]%D1%% Ureinwohner-Bekehrungsrate durch Missionen</German>
         <Italian>[ICON_BULLET]%D1%% percentuale di conversione nativi dalle missioni</Italian>
         <Spanish>[ICON_BULLET]%D1%% al ritmo de conversión de Nativos en las misiones</Spanish>
+        <Russian>[ICON_BULLET]%D1%% к скорости крещения индейцев в миссиях</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_EUROPE_TRAVEL_MODIFIER</Tag>
@@ -1956,6 +2015,7 @@
         <German>[ICON_BULLET]%D1_Change%% Siedlungsangriff</German>
         <Italian>[ICON_BULLET]%D1_Change%% di attacco verso gli insediamenti</Italian>
         <Spanish>[ICON_BULLET]%D1_Change%% al ataque del asentamiento</Spanish>
+        <Russian>[ICON_BULLET]%D1_Bonus%% к атаке поселений</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CITY_DEFENSE_MOD</Tag>
@@ -1964,6 +2024,7 @@
         <German>[ICON_BULLET]%D1_Change%% Siedlungsverteidigung</German>
         <Italian>[ICON_BULLET]%D1_Change%% alla difesa degli insediamenti</Italian>
         <Spanish>[ICON_BULLET]%D1_Change%% a la defensa del asentamiento</Spanish>
+        <Russian>[ICON_BULLET]%D1_Change%% к защите поселений</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BOMBARD_RATE</Tag>
@@ -3289,6 +3350,7 @@
         <German>Kniet nieder und vernehmt, was Wir, gottgesalbte Majestät des Reiches %s2_civ, Euch und Unserem Hofe verkünden. Ihr seid zu Uns gekommen und habt eine Bitte vorgetragen. Wir entsprechen gnädig Eurem Anliegen. Heute - %s1_year - gestatten Wir Euch, gen Westen zu segeln, bis zum Rand der bekannten Welt und darüberhinaus. Wir geben Euch ein Schiff, Waffen, Werkzeuge und einige Gefolgsleute mit. Entdeckt Ihr fremdes Land, dann hisst dort das Banner Eurer Heimat und beansprucht allen Boden, seine Früchte und die Heidenkinder, die sie ernten, als Unser Eigen. Euch sei die fromme Pflicht aufgetragen, dort das Wort Gottes zu verkünden und das Wohl Eures Königs zu mehren.[NEWLINE][NEWLINE]Doch Wir warnen Euch: Uns wurde berichtet, ein allzu freier Geist hause in Eurem Herzen. Nun, dies ist ein Zipperlein, das wohl jeden Entdecker plagt. Kuriert es bald aus, sonst werden Wir Euch eine Medizin verabreichen lassen, die Euch schlecht schmecken wird. Falls Euch der Teufel reitet, auf eigene Faust zu handeln und Eurem König den Respekt zu verweigern, werden Wir Euch ein Expeditionskorps nachsenden, dass Euch wieder zur Raison bringt![NEWLINE][NEWLINE]Ihr dürft Euch erheben, %s3_leader.[NEWLINE]Euer Abenteuer kann beginnen ...[NEWLINE][NEWLINE][BOLD]Um den Sieg zu erringen :[\BOLD][NEWLINE][ICON_BULLET]Gründet Eure Kolonie.[NEWLINE][ICON_BULLET]Erklärt Eure Unabhängigkeit von Eurem Mutterland, sobald mindestens 50%% Rebellische Stimmung in all Euren Siedlungen herrscht.[NEWLINE][ICON_BULLET]Verteidigt Euer junges Land gegen den Zorn Eures Vaterlandes vor Ablauf der Zeit, indem Ihr all seine Bodeneinheiten auslöscht.[NEWLINE][ICON_BULLET]Schließt Eure Revolution vor allen anderen europäischen Kolonien ab - und Euer Name wird in die Annalen eingehen.[NEWLINE][PARAGRAPH:1]Um bleibenden Ruhm zu erringen, könnt Ihr indes auch einen anderen Weg beschreiten. Nennt so viel Land und Untertanen Euer Eigen, dass man Euch als dominante Macht der Neuen Welt respektieren muss - auch dann werdet Ihr als Held Euren Platz in den Annalen finden.</German>
         <Italian>Nell'anno %s1_year, sua maestà reale il re di %s2_civ ti conferisce uno statuto coloniale. [NEWLINE][NEWLINE]Per la maggiore gloria della nazione il re nomina te, %s3_leader, viceré del Nuovo Mondo. Esplora queste nuove terre, colonizzale e procura ricchezze e gloria a te stesso e alla nostra grande nazione.[NEWLINE][NEWLINE][BOLD]Per ottenere una vittoria:[\BOLD][PARAGRAPH:1]Fonda la tua colonia.[PARAGRAPH:1]Dichiara l'indipendenza dalla madrepatria dopo aver ottenuto il 50%% di sentimento di ribellione in ogni insediamento.[PARAGRAPH:1]Difendi il giovane stato dall'ira della madrepatria annientandone le forze terrestri prima che scada il tempo. [PARAGRAPH:1]Devi completare la rivoluzione prima di qualsiasi altra colonia europea.</Italian>
         <Spanish>En el año de %s1_year Su Majestad, el rey de %s2_civ, os concede una carta colonial. [NEWLINE][NEWLINE]Para mayor gloria de la nación, el rey os nombra a vos, %s3_leader, virrey del Nuevo Mundo. Explorad esta nueva tierra, civilizadla y ganad la gloria para vos y para nuestra gran nación.[NEWLINE][NEWLINE][BOLD]Para conseguir una victoria:[\BOLD][PARAGRAPH:1]Fundad vuestra colonia.[PARAGRAPH:1]Declaraos independientes de la madre patria tras conseguir un 50%% de sentimiento de rebelión en todos vuestros asentamientos.[PARAGRAPH:1]Defended vuestro incipiente país de la cólera de la madre patria acabando con todas las fuerzas terrestres de ésta antes de que se acabe el tiempo. [PARAGRAPH:1]Debéis completar vuestra revolución antes que ninguna otra colonia europea.</Spanish>
+        <Russian>Преклоните колени и слушайте, что Мы, помазанник Божий на Земле, Король %s2_civ, объявляем вам и Нашему Двору. Вы обратились к Нам с просьбой. Мы любезно удовлетворяем её. Сегодня - %s1_year - Мы позволяем вам плыть на запад, на край известного мира и дальше. Мы даем вам корабль, оружие, инструменты и несколько спутников. Если вы откроете чужие земли, поднимите там Наши знамёна и объявите Нашей собственностью всю землю, ее плоды и язычников, которые их пожинают. На вас возложена благочестивая обязанность проповедовать там Слово Божье и увеличивать благосостояние вашего Короля.[NEWLINE][NEWLINE]Но Мы предупреждаем вас: Нам сообщили, что в вашем сердце обитает слишком свободный дух. Это недуг, поражающий каждого исследователя. Вылечи его скорее или Мы будем вынуждены дать тебе лекарство, которое будет неприятным для тебя. Если дьявол станет побуждает вас действовать самостоятельно и отказываться уважать своего Короля, Мы пошлем за вами экспедиционный корпус, чтобы привести вас в чувство![NEWLINE][NEWLINE]Можете встать, %s3_leader.[NEWLINE][NEWLINE][ NEWLINE]Отправляйтесь в путь и да хранит вас Господь...[NEWLINE][NEWLINE][BOLD]Чтобы добиться победы:[\BOLD][NEWLINE][ICON_BULLET]Постройте свою колонию.[NEWLINE][ICON_BULLET]Заявите о своей независимости от сюзерена по достижении 50%% мятежных настроений во всех ваших поселениях.[NEWLINE][ICON_BULLET]Пока не истечет время, защищайте свою молодую страну от гнева Короля, уничтожив все наземные силы, отправленные им для подавления восстания.[NEWLINE][ICON_BULLET]Вы должны начать вашу революцию раньше, чев любая другая европейская колония. И ваше имя будет вписано в анналы истории.[NEWLINE][PARAGRAPH:1]Хотя, чтобы добиться непреходящей славы, вы можете выбрать другой путь. Захватите столько земли и столько подданных, чтобы вас уважали как доминирующую силу Нового Света — и тогда вы найдете свое место в анналах как герой завоеваний.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_FOUNDED</Tag>

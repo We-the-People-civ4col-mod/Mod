@@ -447,6 +447,7 @@
         <English>[ICON_BULLET]Cannot enter goody huts.</English>
         <French>[ICON_BULLET]Ne peut pas visiter les huttes bonus.</French>
         <German>[ICON_BULLET]Kann keine Goody Huts betreten.</German>
+        <Russian>[ICON_BULLET]Не может заходить в goody хижины</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_RUNNING_OUT_OF_SPACE_NEW_CAPACITY</Tag>
