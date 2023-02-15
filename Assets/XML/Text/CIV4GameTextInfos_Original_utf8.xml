@@ -10122,6 +10122,33 @@
         <Spanish>[COLOR_WARNING_TEXT]No eliminable[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENT_LOG</Tag>
+        <English>Event Log</English>
+        <French>Journal des &#233;v&#233;nements</French>
+        <German>Ereignis-Log</German>
+        <Italian>Registro degli eventi</Italian>
+        <Spanish>Historial de sucesos</Spanish>
+        <Russian>Журнал событий</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CHAT_LOG</Tag>
+        <English>Chat Log</English>
+        <French>Journal</French>
+        <German>Chat-Log</German>
+        <Italian>Registro chat</Italian>
+        <Spanish>Historial del chat</Spanish>
+        <Russian>История чата</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_COMBAT_MESSAGE_LOG</Tag>
+        <English>Combat Log</English>
+        <French>Journal de combat</French>
+        <German>Kampf-Log</German>
+        <Italian>Registro combattimenti</Italian>
+        <Spanish>Historial del combate</Spanish>
+        <Russian>Боевой журнал</Russian>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_QUEST_MESSAGE_LOG</Tag>
         <English>Quests</English>
         <French>Quêtes</French>
@@ -10130,6 +10157,17 @@
         <Spanish>Misiones</Spanish>
         <Russian>Задачи (Квесты)</Russian>
     </TEXT>
+<!-- ZorG. tutorial message log. START -->
+    <TEXT>
+        <Tag>TXT_KEY_PLAYER_OPTION_TUTORIAL</Tag>
+        <English>Tutorial</English>
+        <French>Didacticiel</French>
+        <German>Tutorial</German>
+        <Italian>Tutorial</Italian>
+        <Spanish>Tutorial</Spanish>
+        <Russian>Обучение</Russian>
+    </TEXT>
+<!-- ZorG. tutorial message log. END -->
     <TEXT>
         <Tag>TXT_KEY_MISC_ADVANCED_START_PEACE_REMAINING</Tag>
         <English>%d1 [NUM1:turn:turns] of universal peace remaining</English>
@@ -10905,15 +10943,6 @@
         <German>Es wird für die Dauer von %d1_Num [NUM1:Runde:Runden] ein nicht-kündbarer Friedensvertrag geschlossen.</German>
         <Italian>Stabilisce un trattato di pace infrangibile per %d1_Num [NUM1:turno:turni]</Italian>
         <Spanish>Establece un tratado de paz inquebrantable durante %d1_Num [NUM1:turno:turnos].</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_COMBAT_MESSAGE_LOG</Tag>
-        <English>Combat Log</English>
-        <French>Journal de combat</French>
-        <German>Kampf-Log</German>
-        <Italian>Registro combattimenti</Italian>
-        <Spanish>Historial del combate</Spanish>
-        <Russian>Боевой журнал</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_MESSAGE_ODDS</Tag>
