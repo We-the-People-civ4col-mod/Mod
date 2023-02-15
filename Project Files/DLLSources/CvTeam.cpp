@@ -2014,7 +2014,7 @@ void CvTeam::freeFathers()
 		if (GC.getGameINLINE().getFatherTeam(eFather) == getID())
 		{
 			GC.getGameINLINE().setFatherTeam(eFather, NO_TEAM);
-			for (Teamtypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
+			for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
 			{
 				// notify all teams that this FF is available again
 				GET_TEAM(eTeam).notifyFatherAvailability(eFather, true);
