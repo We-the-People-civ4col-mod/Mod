@@ -4496,7 +4496,7 @@
         <English>Milord, the defenses of [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] are very weak, making us an inviting target! Remember, good fences make good neighbours. The construction of [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] would give our people safety at last!</English>
         <French>Seigneur, les défenses de [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] sont très faibles, ce qui fait de nous une cible bien vulnérable ! N'oubliez pas que mieux vaut prévenir que guérir ! La construction d'un bâtiment ([COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT]) permettrait d'assurer la sécurité de notre peuple !</French>
         <German>Milord, [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] besitzt nur sehr schwache Verteidigungsmöglichkeiten! Das macht sie geradewegs zur Zielscheibe! Ihr wisst ja sicher: Nur gute Zäune gewährleisten gute Nachbarschaft. Wenn wir das Gebäude [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] errichten würden, wäre die Bevölkerung endlich sicher!</German>
-        <Italian>Sire, le difese della città [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] sono deboli e siamo un bersaglio invitante! Ricorda, una buona difesa crea un buon vicinato, La costruzione dell'edificio [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] metterebbe al sicuro la nostra gente!</Italian>
+        <Italian>Signore, le difese della città [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] sono deboli e siamo un bersaglio invitante! Ricorda, una buona difesa crea un buon vicinato, La costruzione dell'edificio [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] metterebbe al sicuro la nostra gente!</Italian>
         <Spanish>Excelencia, las defensas de [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] son muy débiles, por lo que estamos invitando a que la invadan. Recordad que las verjas altas hacen buenos a los vecinos. La construcción de [NUM2:un:una:unos:unas] [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] le daría a nuestro pueblo una merecida seguridad.</Spanish>
     </TEXT>
     <TEXT>
@@ -4504,7 +4504,7 @@
         <English>Milord, [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] is not encouraging any culture - culture would expand our borders, bringing more of the New World under our influence! The construction of a [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] would help our culture to thrive!</English>
         <French>Seigneur, [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] ne génère pas de culture. Cela nous permettrait d'élargir nos frontières et ainsi d'accroître notre influence ! La construction d'un bâtiment ([COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT]) permettrait de pallier ce manque !</French>
         <German>Milord, in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] mangelt es an Kultur, die wir jedoch brauchen, wenn wir unsere Grenzen erweitern und weitere Gebiete in der Neuen Welt unter unsere Kontrolle bringen wollen! Um unsere Kultur erblühen zu lassen, sollten wir das Gebäude [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] errichten!</German>
-        <Italian>Sire, [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] non sta producendo cultura che invece ci servirebbe per espandere i nostri confini e controllare il mondo! La costruzione di [NUM2:un:una] [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] aumenterà la cultura!</Italian>
+        <Italian>Signore, [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] non sta producendo cultura che invece ci servirebbe per espandere i nostri confini e controllare il mondo! La costruzione di [NUM2:un:una] [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] aumenterà la cultura!</Italian>
         <Spanish>Excelencia, [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] no está generando cultura alguna, cosa que serviría para expandir nuestras fronteras y apoderarnos de una mayor parte del mundo. Si construyéramos [NUM2:un:una:unos:unas] [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] permitiríamos que fluyese la cultura.</Spanish>
     </TEXT>
     <TEXT>
@@ -9813,7 +9813,7 @@
         <German>[ICON_BULLET]Die Einheit [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] erhält die Beförderung [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET]L'unità [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] riceve la promozione [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET][NUM1:El:La:Los:Las] [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] [NUM1:asciende:asciende:ascienden:ascienden] a [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</Spanish>
-        <Russian>[ICON_BULLET]COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] повышен до [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</Russian>
+        <Russian>[ICON_BULLET][COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] повышен до [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_UNIT_COMBAT_PROMOTION</Tag>
@@ -10205,7 +10205,7 @@
         <English>Milord, the citizens of [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] are rightfully asking to join the [COLOR_HIGHLIGHT_TEXT]%s2_civ[COLOR_REVERT]. Allowing them to do so would make [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] quite pleased with us.</English>
         <French>Monsieur, les citoyens de [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] sont légitimement en droit de rejoindre la civilisation de [COLOR_HIGHLIGHT_TEXT]%s2_civ[COLOR_REVERT]. Le leur permettre nous mettrait en bons termes avec [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT].</French>
         <German>Milord, die Bewohner von [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] bitten in aller Form darum, wieder Teil des Reiches von [COLOR_HIGHLIGHT_TEXT]%s2_civ[COLOR_REVERT] zu werden. Eure Erlaubnis würde [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] hoch erfreuen.</German>
-        <Italian>Sire, i cittadini di [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] a buon diritto chiedono di unirsi a [COLOR_HIGHLIGHT_TEXT]%s2_civ[COLOR_REVERT]. Concedendoglielo, [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] ci guarderebbe con favore.</Italian>
+        <Italian>Signore, i cittadini di [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] a buon diritto chiedono di unirsi a [COLOR_HIGHLIGHT_TEXT]%s2_civ[COLOR_REVERT]. Concedendoglielo, [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] ci guarderebbe con favore.</Italian>
         <Spanish>Excelencia, los ciudadanos de [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] piden legítimamente unirse al [COLOR_HIGHLIGHT_TEXT]%s2_civ[COLOR_REVERT]. Permitírselo nos predispondría favorablemente a ojos de [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT].</Spanish>
     </TEXT>
     <TEXT>
