@@ -24,6 +24,78 @@
         <Russian>Летопись</Russian>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_CONGRESS_ADVISOR_TITLE</Tag>
+        <English>Continental Congress</English>
+        <French>Congrès continental</French>
+        <German>Kontinentalkongress</German>
+        <Italian>Congresso continentale</Italian>
+        <Spanish>Congreso Continental</Spanish>
+        <Russian>Континентальный конгресс</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_INFO_SCREEN</Tag>
+        <English>Info Screen</English>
+        <French>Ecran d'informations</French>
+        <German>Info-Bildschirm</German>
+        <Italian>Schermata delle informazioni</Italian>
+        <Spanish>Pantalla de informaci&#243;n</Spanish>
+        <Russian>Статистика</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VICTORY_SCREEN_TITLE</Tag>
+        <English>Victory Conditions</English>
+        <French>Conditions de victoire</French>
+        <German>Siegbedingungen</German>
+        <Italian>Condizioni di vittoria</Italian>
+        <Spanish>Condiciones para la victoria</Spanish>
+        <Russian>Условия победы</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DOMESTIC_ADVISOR_TITLE</Tag>
+        <English>Domestic Advisor</English>
+        <French>Conseiller aux affaires int&#233;rieures</French>
+        <German>Inlandsberater</German>
+        <Italian>Consigliere interno</Italian>
+        <Spanish>Consejero de Interior</Spanish>
+        <Russian>Советник по внутренним делам</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_REVOLUTION_ADVISOR_TITLE</Tag>
+        <English>Revolution Advisor</English>
+        <French>Conseiller en révolution</French>
+        <German>Revolutionsberater</German>
+        <Italian>Consigliere per la rivoluzione</Italian>
+        <Spanish>Consejero de la Revoluci&#243;n</Spanish>
+        <Russian>Революционный советник</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FOREIGN_ADVISOR_TITLE</Tag>
+        <English>Foreign Advisor</English>
+        <French>Conseiller diplomatique</French>
+        <German>Auslandsberater</German>
+        <Italian>Consigliere estero</Italian>
+        <Spanish>Consejero de Asuntos Exteriores</Spanish>
+        <Russian>Советник по иностранным делам</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MILITARY_ADVISOR_TITLE</Tag>
+        <English>Military Advisor</English>
+        <French>Conseiller militaire</French>
+        <German>Militärberater</German>
+        <Italian>Consigliere militare</Italian>
+        <Spanish>Consejero militar</Spanish>
+        <Russian>Военный советник</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_SCREEN_TITLE</Tag>
+        <English>Founding Fathers</English>
+        <French>Pères fondateurs</French>
+        <German>Gründerväter</German>
+        <Italian>Padri Fondatori</Italian>
+        <Spanish>Padres fundadores</Spanish>
+        <Russian>Отцы основатели</Russian>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_ACHIEVES</Tag>
         <English>%s1 - %d2 [NUM2:Achievement:Achievements]</English>
         <French>%s1 - %d2 [NUM2:réalisation:réalisations]</French>
