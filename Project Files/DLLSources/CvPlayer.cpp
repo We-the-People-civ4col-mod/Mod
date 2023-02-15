@@ -8382,9 +8382,9 @@ void CvPlayer::makePeaceWithAll()
 
 	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
 	{
-		if (ownTeam.isAtWar(eTeam)
+		if (ownTeam.isAtWar(eTeam))
 		{
-			if (ownTeam.canChangeWarPeace(eTeam)
+			if (ownTeam.canChangeWarPeace(eTeam))
 			{
 				ownTeam.makePeace(eTeam);
 			}
