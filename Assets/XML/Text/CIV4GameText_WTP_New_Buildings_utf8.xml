@@ -48,12 +48,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GRAVEYARD_PEDIA</Tag>
-        <English>In a strange land where religious immigrants look back fondly to medieval times, the graveyard often is a place of fear and superstition. On the other hand it's a place to visit lost loved ones for quiet contemplation. Emotional conflicts arise.</English>
+        <English>In a strange land where religious immigrants look back fondly to medieval times, the graveyard often is a place of fear and superstition. On the other hand it's a place to visit lost loved ones for quiet contemplation. Emotional conflicts arise.[NEWLINE]The two certainties in life are death and taxes. The graveyard handles one. The King takes care of the other.</English>
         <German>In einem fremden Land, in dem religiöse Einwanderer mit Vorliebe auf das Mittelalter zurückblicken, ist der Friedhof oft ein Ort der Angst und des Aberglaubens. Andererseits ist er ein Ort, an dem man verlorene Angehörige besucht, um in Ruhe darüber nachzudenken. Emotionale Konflikte entstehen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GRAVEYARD_STRATEGY</Tag>
-        <English>The two certainties in life are death and taxes. The graveyard handles one. The King takes care of the other.</English>
+        <English>The graveyard contributes to health.</English>
         <German>Die zwei Gewissheiten im Leben sind der Tod und die Steuern. Um das eine kümmert sich der Friedhof. Der König kümmert sich um das andere.</German>
     </TEXT>
     <!-- CONFECTIONER -->
@@ -128,32 +128,32 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE_PEDIA</Tag>
-        <English>At first settlers import candy from the home country but before long an enterprising confectioner realizes that sugar is growing right next door, and all that's needed is a way to flavour it - maybe chocolate or vanilla. There's one other trick; grinding the sugar so fine that the candy has a smooth consistency.</English>
+        <English>At first settlers import candy from the home country but before long an enterprising confectioner realizes that sugar is growing right next door, and all that's needed is a way to flavour it - maybe chocolate or vanilla. There's one other trick; grinding the sugar so fine that the candy has a smooth consistency.[NEWLINE]Having a candy store means that the settlers and their children don't need to wait for the ship to come in from Europe to satisfy their sweet tooth. The local confectioner makes everybody happy, the dentist in particular.</English>
         <German>Zunächst importieren die Siedler Süßigkeiten aus der Heimat, doch schon bald stellt ein geschäftstüchtiger Zuckerbäcker fest, dass der Zucker gleich nebenan wächst und man ihn nur noch aromatisieren muss - vielleicht mit Schokolade oder Vanille. Es gibt noch einen weiteren Trick: Man muss den Zucker so fein mahlen, dass die Bonbons eine glatte Konsistenz bekommen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE_STRATEGY</Tag>
-        <English>Having a candy store means that the settlers and their children don't need to wait for the ship to come in from Europe to satisfy their sweet tooth. The local confectioner makes everybody happy, the dentist in particular.</English>
+        <English>The [LINK=BUILDING_CONFECTIONER_HOUSE]confectioner's house[\LINK] is where a settler with the [LINK=PROFESSION_CONFECTIONER_VANILLA]vanilla confectioner[\LINK] or the [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]chocolate confectioner[\LINK] profession turns vanilla beans into vanilla treats and cocoa into chocolate.</English>
         <German>Ein Süßwarenladen bedeutet, dass die Siedler und ihre Kinder nicht auf das Schiff aus Europa warten müssen, um ihren süßen Hunger zu stillen. Der örtliche Süßwarenhändler macht alle glücklich, vor allem den Zahnarzt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP_PEDIA</Tag>
-        <English>The confectioner's shop adds extra variety, candy for every taste, along with traditional sweets that remind people of home. The bigger market helps to keep prices down.</English>
+        <English>The confectioner's shop adds extra variety, candy for every taste, along with traditional sweets that remind people of home. The bigger market helps to keep prices down.[NEWLINE]Extra production creates trading opportunities. Some confectioners even set up tables where tea is served to accompany the treats. A very few offer coffee, at first considered scandalous, because the drink is so stimulating.</English>
         <German>Die Konditorei sorgt für zusätzliche Abwechslung, Süßigkeiten für jeden Geschmack und traditionelle Süßigkeiten, die die Menschen an ihre Heimat erinnern. Der größere Markt trägt dazu bei, die Preise niedrig zu halten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP_STRATEGY</Tag>
-        <English>Extra production creates trading opportunities. Some confectioners even set up tables where tea is served to accompany the treats. A very few offer coffee, at first considered scandalous, because the drink is so stimulating.</English>
+        <English>The confectioners' shop is the upgrade of the [LINK=BUILDING_CONFECTIONER_HOUSE]confectioner's house[\LINK] where a settler with the [LINK=PROFESSION_CONFECTIONER_VANILLA]vanilla confectioner[\LINK] or the [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]chocolate confectioner[\LINK] profession turns vanilla beans into vanilla treats and cocoa into chocolate.</English>
         <German>Die zusätzliche Produktion schafft Handelsmöglichkeiten. Einige Zuckerbäcker stellen sogar Tische auf, an denen Tee zu den Leckereien gereicht wird. Einige wenige bieten Kaffee an, was zunächst als skandalös galt, weil das Getränk so anregend ist.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY_PEDIA</Tag>
-        <English>The candy factory can serve an entire region. For one group it offers cheap sweets thanks to economies of scale. For the well-to-do it delivers an unparalleled variety of exotic confections to impress guests on special occasions.</English>
+        <English>The candy factory can serve an entire region. For one group it offers cheap sweets thanks to economies of scale. For the well-to-do it delivers an unparalleled variety of exotic confections to impress guests on special occasions.[NEWLINE]A big confectionery makes an important contribution to the region it serves, increasing both trading income and the community's happiness.</English>
         <German>Die Süßwarenfabrik kann dank Skalierungseffekten eine ganze Region mit billigen Süßigkeiten versorgen. Für die Wohlhabenden liefert sie eine unvergleichliche Vielfalt an exotischen Süßigkeiten, um Gäste bei besonderen Anlässen zu beeindrucken.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY_STRATEGY</Tag>
-        <English>A big confectionery makes an important contribution to the region it serves, increasing both trading income and the community's happiness.</English>
+        <English>The confectioners' factory is the top upgrade of the [LINK=BUILDING_CONFECTIONER_HOUSE]confectioner's house[\LINK].</English>
         <German>Eine große Konditorei leistet einen wichtigen Beitrag für die Region, in der sie tätig ist, und steigert sowohl das Handelseinkommen als auch die Zufriedenheit der Bevölkerung.</German>
     </TEXT>
     <!-- LEATHER_PADDER -->
@@ -228,12 +228,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE_PEDIA</Tag>
-        <English>Leather is good at keeping out the wind but when the temperature drops it still feels cold. Putting padding into leather coats keeps people warm when the snow flies.</English>
+        <English>Leather is good at keeping out the wind but when the temperature drops it still feels cold. Putting padding into leather coats keeps people warm when the snow flies.[NEWLINE]Sewing padding into leather doesn't just make the clothes more comfortable. By adding insulation the leather clothier improves health for those working outside, which can even save their lives.</English>
         <German>Leder hält zwar gut den Wind ab, aber wenn die Temperatur sinkt, fühlt es sich trotzdem kalt an. Eine Polsterung in den Mänteln hält hingegen die Menschen warm, selbst wenn der Schnee kommt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE_STRATEGY</Tag>
-        <English>Sewing padding into leather doesn't just make the clothes more comfortable. By adding insulation the leather clothier improves health for those working outside, which can even save their lives.</English>
+        <English>The [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's house[\LINK] is where a settler with the [LINK=PROFESSION_LEATHER_PADDER_COATS]leather clothier[\LINK] profession makes [COLOR_HIGHLIGHT_TEXT]lined leather coats[COLOR_REVERT] from [LINK=YIELD_HIDES]cowhides[\LINK].</English>
         <French>Coudre un rembourrage et une doublure dans le cuir ne rend pas seulement le vêtement plus confortable. En ajoutant de l'isolation, il améliore également la santé des personnes travaillant à l'extérieur, et peut même leur sauver la vie.</French>
         <German>Das Einnähen von Polstern und Futter in Leder macht das Kleidungsstück nicht nur bequemer. Durch die zusätzliche Isolierung wird auch die Gesundheit derjenigen verbessert, die im Freien arbeiten, und kann sogar ihr Leben retten.</German>
         <Italian>Cucire un'imbottitura e una fodera nella pelle non rende solo l'indumento più confortevole. L'aggiunta di isolamento migliora anche la salute di chi lavora all'aperto e può addirittura salvargli la vita.</Italian>
@@ -241,22 +241,22 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP_PEDIA</Tag>
-        <English>A bigger business can produce a little more for export, not just to Europe but also to the surrounding First Nations and outdoor workers who appreciate warm clothing. A fashionable leather clothier relies on word of mouth to increase business.</English>
+        <English>A bigger business can produce a little more for export, not just to Europe but also to the surrounding First Nations and outdoor workers who appreciate warm clothing. A fashionable leather clothier relies on word of mouth to increase business.[NEWLINE]Practical people see the advantage of insulated clothing in a cold climate. Devout settlers are obsessed with religious prohibitions, so women of easy virtue can earn extra money wearing leather in private to dominate the pious.</English>
         <German>Ein größeres Unternehmen kann etwas mehr für den Export produzieren, nicht nur nach Europa, sondern auch für die umliegenden Ureinwohner und Outdoor-Arbeiter, die warme Kleidung schätzen. Ein modischer Lederwarenhersteller verlässt sich auf Mundpropaganda, um sein Geschäft zu steigern.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP_STRATEGY</Tag>
-        <English>Practical people see the advantage of insulated clothing in a cold climate. Devout settlers are obsessed with religious prohibitions, so women of easy virtue can earn extra money wearing leather in private to dominate the pious.</English>
+        <English>The leatherworkers' shop is the upgrade of the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's house[\LINK] where settlers with the [LINK=PROFESSION_LEATHER_PADDER_COATS]leather clothier[\LINK] profession make [COLOR_HIGHLIGHT_TEXT]lined leather coats[COLOR_REVERT].</English>
         <German>Praktische Menschen sehen den Vorteil isolierender Kleidung in einem kalten Klima. Fromme Siedler sind von religiösen Verboten besessen, so dass Frauen mit leichter Tugendhaftigkeit zusätzliches Geld verdienen können, indem sie privat Leder tragen, um die Frommen zu beherrschen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY_PEDIA</Tag>
-        <English>A big business has efficiencies and economies of scale. A solitary leather clothier might spend days fitting a coat to a single customer but a factory can have enough sizes in stock for everyone to buy off the rack.</English>
+        <English>A big business has efficiencies and economies of scale. A solitary leather clothier might spend days fitting a coat to a single customer but a factory can have enough sizes in stock for everyone to buy off the rack.[NEWLINE]Sturdy outdoor leather clothing that stands up to hard wear means more work gets done, people don't get cold, and health and happiness are the result.</English>
         <German>Ein großes Unternehmen verfügt über Effizienz- und Größenvorteile. Ein einzelner Lederbekleidungshersteller verbringt vielleicht Tage damit, einen Mantel für einen einzigen Kunden anzupassen, aber eine Fabrik kann genügend Größen auf Lager haben, die jeder von der Stange kaufen kann.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY_STRATEGY</Tag>
-        <English>Sturdy outdoor leather clothing that stands up to hard wear means more work gets done, people don't get cold, and health and happiness are the result.</English>
+        <English>The leatherworker factory is the final upgrade of the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's house[\LINK].</English>
         <German>Robuste Outdoor-Lederkleidung, die harter Beanspruchung standhält, bedeutet, dass mehr Arbeit erledigt werden kann, da die Menschen nicht frieren was ihrer Gesundheit und Zufriedenheit zugutekommt.</German>
     </TEXT>
     <!-- OIL_TRADER -->
@@ -331,7 +331,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE_PEDIA</Tag>
-        <English>Pressing oil is an ancient craft in Europe, particularly in Mediterranean cultures. Equipment that crushes olives for their oil can be adapted to work with rapeseed.[NEWLINE]Before European contact cooking oil was essential for Pacific Northwest Native nations. Oolichan oil from candlefish made up so much of Native commerce that the trade routes were called "grease trails".</English>
+        <English>Pressing oil is an ancient craft in Europe, particularly in Mediterranean cultures. Equipment that crushes olives for their oil can be adapted to work with rapeseed.[NEWLINE]Before European contact cooking oil was essential for Pacific Northwest Native nations. Oolichan oil from candlefish made up so much of Native commerce that the trade routes were called "grease trails".[NEWLINE]Settlers eating wild game soon realize that it has much less fat than they're used to from domestic animals. In a cold climate fat keeps workers warm outdoors. In the wilderness plant oils are a good path to a balanced diet.</English>
         <French>Le pressage de l'huile est un artisanat ancien en Europe, notamment dans les cultures méditerranéennes. Les équipements qui écrasent les olives pour en extraire l'huile peuvent être adaptés au colza. Avant le contact avec les Européens, l'huile de cuisson était essentielle pour les nations autochtones du nord-ouest du Pacifique. L'huile d'oolichan provenant de la chandelle constituait une si grande partie du commerce amérindien que les routes commerciales étaient appelées "pistes de graisse".</French>
         <German>Das Pressen von Öl ist ein altes Handwerk in Europa, insbesondere in den Mittelmeerkulturen. Die Geräte, mit denen Oliven zur Gewinnung von Öl gepresst werden, können auch für die Verarbeitung von Raps verwendet werden.[NEWLINE]Vor dem Kontakt mit den Europäern war Speiseöl für die Ureinwohner des pazifischen Nordwestens lebenswichtig. Oolichan-Öl aus Kerzenfisch machte einen so großen Teil des Handels der Ureinwohner aus, dass die Handelsrouten als "Fettstraßen" bezeichnet wurden.</German>
         <Italian>La spremitura dell'olio è un'attività antica in Europa, in particolare nelle culture mediterranee. Le attrezzature che schiacciano le olive per ricavarne l'olio possono essere adattate alla colza.[NEWLINE]Prima del contatto europeo, l'olio da cucina era essenziale per i nativi del Pacifico nordoccidentale. L'olio di oolichan ricavato dal pesce candela costituiva una parte così importante del commercio dei nativi che le rotte commerciali venivano chiamate "vie del grasso".</Italian>
@@ -339,27 +339,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE_STRATEGY</Tag>
-        <English>Settlers eating wild game soon realize that it has much less fat than they're used to from domestic animals. In a cold climate fat keeps workers warm outdoors. In the wilderness plant oils are a good path to a balanced diet.</English>
+        <English>The [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK] or one of its upgrades is where the [LINK=PROFESSION_OLIVE_OIL_TRADER]olive oil trader[\LINK] or [LINK=PROFESSION_RAPESEED_OIL_TRADER]rapeseed oil trader[\LINK] makes[COLOR_HIGHLIGHT_TEXT] oil[COLOR_REVERT] from olives or rapeseed.</English>
         <German>Siedler, die Wild essen, stellen bald fest, dass es viel weniger Fett hat, als sie es von Haustieren gewohnt sind. In einem kalten Klima hält Fett jedoch die Arbeiter im Freien warm. In der Wildnis sind Pflanzenöle entsprechend ein guter Weg zu einer ausgewogenen Ernährung.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP_PEDIA</Tag>
-        <English>As the oil pressers refine their trade the quality of the oil attracts new customers.</English>
+        <English>As the oil pressers refine their trade the quality of the oil attracts new customers. Oil pressers can now separate their pressings into varying grades to be sold at different prices. As customers discuss which is better for different situations, sales increase.</English>
         <German>In dem Maße, wie die Ölpresser ihr Handwerk verfeinern, zieht die Qualität des Öls neue Kunden an.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP_STRATEGY</Tag>
-        <English>Oil pressers can now separate their pressings into varying grades to be sold at different prices. As customers discuss which is better for different situations, sales increase.</English>
+        <English>The cooking oil shop,  where the [LINK=PROFESSION_OLIVE_OIL_TRADER]olive oil traders[\LINK] and [LINK=PROFESSION_RAPESEED_OIL_TRADER]rapeseed oil traders[\LINK] make[COLOR_HIGHLIGHT_TEXT] cooking oil[COLOR_REVERT] from olives or rapeseed, is the upgrade of the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK].</English>
         <German>Ölpresser können nun ihre Presslinge in verschiedene Qualitäten unterteilen, die zu unterschiedlichen Preisen verkauft werden. Wenn die Kunden darüber diskutieren, welche Qualität für die verschiedenen Situationen besser ist, steigt der Umsatz.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY_PEDIA</Tag>
-        <English>If there's a good supply of olives and rapeseed, the oil presses can be mechanized to generate exportable quantities.</English>
+        <English>If there's a good supply of olives and rapeseed, the oil presses can be mechanized to generate exportable quantities. If surplus quantities of oil and rapeseed can be grown close to the factory, an ambitious manager might prove himself by exporting the very best olive oil to Italy.</English>
         <German>Wenn es ein gutes Angebot an Oliven und Raps gibt, können die Ölpressen mechanisiert werden, um exportfähige Mengen zu erzeugen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY_STRATEGY</Tag>
-        <English>If surplus quantities of oil and rapeseed can be grown close to the factory, an ambitious manager might prove himself by exporting the very best olive oil to Italy.</English>
+        <English>The cooking oil factory is the ultimate upgrade of the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK].</English>
         <German>Wenn in der Nähe der Fabrik überschüssige Öl- und Rapsmengen angebaut werden können, könnte sich ein ehrgeiziger Manager durch den Export von bestem Olivenöl nach Italien beweisen.</German>
     </TEXT>
     <!-- ROASTER -->
@@ -434,7 +434,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_HOUSE_PEDIA</Tag>
-        <English>Peanuts are widely grown in the tropics and subtropics. Botanically they're a member of the bean family but in cooking they're used like a nut. Unlike most legumes peanut pods mature underground.</English>
+        <English>Peanuts are widely grown in the tropics and subtropics. Botanically they're a member of the bean family but in cooking they're used like a nut. Unlike most legumes peanut pods mature underground.[NEWLINE]Peanuts are an excellent source of protein and vitamins. They complement traditional European grains, contributing to workers' health and stamina.</English>
         <French>Les cacahuètes sont largement cultivées dans les régions tropicales et subtropicales. Sur le plan botanique, elles font partie de la famille des haricots, mais en cuisine, elles sont utilisées comme des noix. Contrairement à la plupart des légumineuses, les gousses d'arachide mûrissent sous terre.</French>
         <German>Erdnüsse werden in den Tropen und Subtropen weit verbreitet angebaut. Botanisch gesehen gehören sie zur Familie der Bohnengewächse, aber in der Küche werden sie wie eine Nuss verwendet. Im Gegensatz zu den meisten Hülsenfrüchten reifen Erdnussschoten unterirdisch.</German>
         <Italian>Le arachidi sono ampiamente coltivate nei tropici e nelle regioni subtropicali. Dal punto di vista botanico fanno parte della famiglia dei fagioli, ma in cucina vengono utilizzate come una noce. A differenza della maggior parte dei legumi, i baccelli delle arachidi maturano sottoterra.</Italian>
@@ -442,27 +442,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_HOUSE_STRATEGY</Tag>
-        <English>Peanuts are an excellent source of protein and vitamins. They complement traditional European grains, contributing to workers' health and stamina.</English>
+        <English>The [LINK=BUILDING_ROASTER_HOUSE]roaster's house[\LINK] is where a colonist with the [LINK=PROFESSION_PEANUT_ROASTER]peanut roaster[\LINK] profession turns peanuts into roasted peanuts.</English>
         <German>Erdnüsse sind eine hervorragende Quelle für Proteine und Vitamine. Sie ergänzen die traditionellen europäischen Getreidesorten und tragen zur Gesundheit und Ausdauer der Arbeitnehmer bei.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_SHOP_PEDIA</Tag>
-        <English>Though they can be boiled, fresh harvested raw peanuts are usually roasted before being eaten. Enterprising roasters soon learn to add salt or grind the peanuts into peanut butter. Other nut butters soon follow.</English>
+        <English>Though they can be boiled, fresh harvested raw peanuts are usually roasted before being eaten. Enterprising roasters soon learn to add salt or grind the peanuts into peanut butter. Other nut butters soon follow.[NEWLINE]Once dried, peanuts last for a long time in a scout's saddlebags or in the barrels on a wagon. Peanut oil is also valuable for cooking.</English>
         <German>Obwohl sie gekocht werden können, werden frisch geerntete, rohe Erdnüsse in der Regel geröstet, bevor sie verzehrt werden. Unternehmungslustige Röster lernten bald, Salz hinzuzufügen oder die Erdnüsse zu Erdnussbutter zu mahlen. Andere Nussbuttersorten folgten bald.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_SHOP_STRATEGY</Tag>
-        <English>Once dried, peanuts last for a long time in a scout's saddlebags or in the barrels on a wagon. Peanut oil is also valuable for cooking.</English>
+        <English>The roaster shop is the upgrade of the [LINK=BUILDING_ROASTER_HOUSE]roaster's house[\LINK] where colonists with the [LINK=PROFESSION_PEANUT_ROASTER]peanut roaster[\LINK] profession turn peanuts into roasted peanuts.</English>
         <German>Einmal getrocknet, halten sich Erdnüsse lange in den Satteltaschen der Pfadfinder oder in den Fässern auf dem Wagen. Erdnussöl ist auch zum Kochen wertvoll.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_FACTORY_PEDIA</Tag>
-        <English>As peanut growers start to deliver large crops, roasters extend the market beyond their own cities, promoting the peanut as an exotic delicacy in temperate regions where it won't grow, Europe for example.</English>
+        <English>As peanut growers start to deliver large crops, roasters extend the market beyond their own cities, promoting the peanut as an exotic delicacy in temperate regions where it won't grow, Europe for example.[NEWLINE]A region with a big peanut roasting factory helps keep workers healthy. Peanuts are especially important where slave populations need added protein. Their owners can afford to eat meat, increasing their risk of heart disease.</English>
         <German>In dem Maße, in dem die Erdnussbauern beginnen, große Ernten zu liefern, dehnen die Röster den Markt über ihre eigenen Städte hinaus aus und werben für die Erdnuss als exotische Delikatesse in  Regionen, wie zum Beispiel Europa, in denen sie nicht wächst.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_FACTORY_STRATEGY</Tag>
-        <English>A region with a big peanut roasting factory helps keep workers healthy. Peanuts are especially important where slave populations need added protein. Their owners can afford to eat meat, increasing their risk of heart disease.</English>
+        <English>The roaster factory is the ultimate upgrade of the [LINK=BUILDING_ROASTER_HOUSE]roaster's house[\LINK], turning peanuts into roasted peanuts.</English>
         <German>Eine Region mit einer großen Erdnussrösterei trägt zur Gesunderhaltung der Arbeiter bei. Erdnüsse sind besonders wichtig, wenn Sklaven zusätzliche Proteine benötigen. Ihre Besitzer können es sich leisten, Fleisch zu essen, was ihr Risiko für Herzkrankheiten erhöht.</German>
     </TEXT>
     <!-- POTTERY -->
@@ -537,7 +537,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_HOUSE_PEDIA</Tag>
-        <English>Pottery is an ancient way to store grain. In the rainy insect-ridden New World pots hold enough grain to keep settlers alive through the winter until they can finally plant their new crops in spring.</English>
+        <English>Pottery is an ancient way to store grain. In the rainy insect-ridden New World pots hold enough grain to keep settlers alive through the winter until they can finally plant their new crops in spring. Loading sturdy pots into wagons is a handy way to ship grain and supply food to new settlements.</English>
         <French>La poterie est un moyen ancien de stocker le grain. Dans le Nouveau Monde pluvieux et infesté d'insectes, les pots contiennent suffisamment de céréales pour permettre aux colons de survivre pendant l'hiver jusqu'à ce qu'ils puissent enfin planter leurs nouvelles cultures au printemps.</French>
         <German>Töpferwaren sind eine uralte Methode zur Lagerung von Getreide. In der regnerischen, von Insekten heimgesuchten Neuen Welt enthielten die Töpfe genug Getreide, um die Siedler über den Winter am Leben zu erhalten, bis sie im Frühjahr endlich ihre neue Ernte einpflanzen konnten.</German>
         <Italian>La ceramica è un modo antico di conservare il grano. Nel Nuovo Mondo, caratterizzato da piogge e insetti, i vasi contengono abbastanza grano per mantenere i coloni in vita durante l'inverno, fino a quando non possono piantare le nuove colture in primavera.</Italian>
@@ -545,27 +545,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_HOUSE_STRATEGY</Tag>
-        <English>Pottery lets villages store their surplus grain to get them through the hungry winter. Loading sturdy pots into wagons is a handy way to ship grain and supply food to new settlements.</English>
+        <English>The [LINK=BUILDING_POTTERY_HOUSE]potter's house[\LINK] is where a colonist with the [LINK=PROFESSION_POTTER]potter[\LINK] profession turns [LINK=YIELD_CLAY]clay[\LINK] into pottery.</English>
         <German>Töpferwaren ermöglichen es den Dörfern, ihr überschüssiges Getreide zu lagern, um den hungrigen Winter zu überstehen. Das Beladen von Wagen mit robusten Töpfen ist eine praktische Methode, um Getreide zu transportieren und neue Siedlungen mit Lebensmitteln zu versorgen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_SHOP_PEDIA</Tag>
-        <English>As the pottery business grows employees specialize. Most of the money comes in for sturdy practical pots holding everything from rice to rum, but a few creative types form imaginative vessels with decorative patterns, some merely for display. The Puritans strongly object.</English>
+        <English>As the pottery business grows employees specialize. Most of the money comes in for sturdy practical pots holding everything from rice to rum, but a few creative types form imaginative vessels with decorative patterns, some merely for display. The Puritans strongly object.[NEWLINE]With food and drink stored securely in pottery, life is now less precarious. Businesses feel safer taking risks and so the communities grow.</English>
         <German>Während das Töpfergeschäft wächst, spezialisieren sich die Mitarbeiter. Das meiste Geld wird für robuste, praktische Töpfe ausgegeben, in denen alles von Reis bis Rum aufbewahrt wird, aber ein paar kreative Typen formen phantasievolle Gefäße mit dekorativen Mustern, einige davon nur zur Schau. Die Puritaner sind strikt dagegen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_SHOP_STRATEGY</Tag>
-        <English>With food and drink stored securely in pottery, life is now less precarious. Businesses feel safer taking risks and so the communities grow.</English>
+        <English>The pottery shop is the upgrade of the [LINK=BUILDING_POTTERY_HOUSE]potter's house[\LINK] where colonists with the [LINK=PROFESSION_POTTER]potter[\LINK] profession turn [LINK=YIELD_CLAY]clay[\LINK] into pottery.</English>
         <German>Durch die sichere Aufbewahrung von Lebensmitteln und Getränken in Töpferwaren ist das Leben nun weniger prekär. Die Unternehmen fühlen sich sicherer und somit risikobereiter, wodurch sich das Wachstum erhöht.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_FACTORY_PEDIA</Tag>
-        <English>Pottery factories can be built near the best sources of clay, thus delivering high quality at a cheap price.</English>
+        <English>Pottery factories can be built near the best sources of clay, thus delivering high quality at a cheap price. With every type of pot in demand, the pottery factory owners are squirrelling away pots of money.</English>
         <German>Töpferfabriken können in der Nähe der besten Tonvorkommen errichtet werden, so dass sie eine hohe Qualität zu einem günstigen Preis liefern.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_FACTORY_STRATEGY</Tag>
-        <English>With every type of pot in demand, the pottery factory owners are squirrelling away pots of money.</English>
+        <English>The pottery factory is the final upgrade of the [LINK=BUILDING_POTTERY_HOUSE]potter's house[\LINK].</English>
         <German>Da alle Arten von Töpfen gefragt sind, legen die Besitzer der Töpferfabriken einen Haufen Geld beiseite.</German>
     </TEXT>
     <!-- TAILOR -->
@@ -640,32 +640,32 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_HOUSE_PEDIA</Tag>
-        <English>At first women prided themselves on sewing all their families' clothes, getting their cloth from the weaver. The tailor needs to show his garments are better, or hope that people assume they're better simply because he's a man.</English>
+        <English>At first women prided themselves on sewing all their families' clothes, getting their cloth from the weaver. The tailor needs to show his garments are better, or hope that people assume they're better simply because he's a man.[NEWLINE]With time and talent the tailor is finally able to create the well-dressed man, stylish and ready to succeed at diplomacy, business or romance.</English>
         <German>Anfangs waren die Frauen stolz darauf, die gesamte Kleidung ihrer Familien zu nähen und den Stoff von der Weberin zu beziehen. Der Schneider muss zeigen, dass seine Kleidung besser ist, oder darauf hoffen, dass die Leute annehmen, dass sie besser ist, nur weil er ein Mann ist.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_HOUSE_STRATEGY</Tag>
-        <English>The tailor creates the well-dressed man, stylish and ready to succeed at diplomacy, business or romance.</English>
+        <English>The [LINK=BUILDING_TAILOR_HOUSE]tailor's house[\LINK] is where a settler with the [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]workwear tailor[\LINK] profession uses [LINK=YIELD_COLOURED_WOOL_CLOTH]coloured wool cloth[\LINK] to make everyday clothing; or the [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]formalwear tailor[\LINK] uses [LINK=YIELD_COLOURED_CLOTH]coloured cloth[\LINK] to make more festive outfits.</English>
         <German>Der Schneider erschafft den gut gekleideten Mann, stilvoll und bereit, in der Diplomatie, im Geschäftsleben oder in der Liebe erfolgreich zu sein.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_SHOP_PEDIA</Tag>
-        <English>The tailor's shop grows to include a variety of sub-trades. The cutter seldom sews the garment. A different specialist chooses the perfect fabric for every style.</English>
+        <English>The tailor's shop grows to include a variety of sub-trades. The cutter seldom sews the garment. A different specialist chooses the perfect fabric for every style.[NEWLINE]Having a tailor's shop is a sign of success for a growing town. If the shop has a tailor who's fashionable, everyone from the elder statesman to the firebrand preacher will buy there so they can look their best.</English>
         <German>Die Schneiderei wächst und umfasst eine Vielzahl von Unterberufen. Selten näht der Schneider das Kleidungsstück. Für jeden Stil wählt ein anderer Spezialist den perfekten Stoff aus.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_SHOP_STRATEGY</Tag>
-        <English>Having a tailor's shop is a sign of success for a growing town. If the shop has a tailor who's fashionable, everyone from the elder statesman to the firebrand preacher will buy there so they can look their best.</English>
+        <English>The tailors' shop is the upgrade of the [LINK=BUILDING_TAILOR_HOUSE]tailor's house[\LINK] where colonists with the [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]workwear tailor[\LINK] profession use [LINK=YIELD_COLOURED_WOOL_CLOTH]coloured wool cloth[\LINK] to make everyday clothing; and where [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]formalwear tailors[\LINK] use [LINK=YIELD_COLOURED_CLOTH]coloured cloth[\LINK] to make more festive outfits.</English>
         <German>Das Vorhandensein einer Schneiderei ist ein Zeichen für den Erfolg einer wachsenden Stadt. Wenn das Geschäft einen Schneider hat, der modisch ist, kauft jeder - vom älteren Staatsmann bis zum Brandprediger - dort ein, damit er gut aussieht.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_FACTORY_PEDIA</Tag>
-        <English>A tailors' factory offers less prestige than an exclusive shop but it makes up for that in output. Young workers with an eye on advancement can buy off the rack at a fraction of the cost of a personal fitting.</English>
+        <English>A tailors' factory offers less prestige than an exclusive shop but it makes up for that in output. Young workers with an eye on advancement can buy off the rack at a fraction of the cost of a personal fitting.[NEWLINE]The tailors' factory demonstrates that menswear and women's fashion are widely available. It's proof that a city has arrived socially.</English>
         <German>Eine Schneiderei bietet weniger Prestige als ein exklusives Geschäft, macht dies aber durch die Produktion wieder wett. Junge, aufstiegsorientierte Arbeitnehmer können zu einem Bruchteil der Kosten einer persönlichen Anprobe von der Stange kaufen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_FACTORY_STRATEGY</Tag>
-        <English>The tailors' factory demonstrates that menswear is widely available. It's proof that a city has arrived socially.</English>
+        <English>The tailors' factory is the ultimate upgrade of the [LINK=BUILDING_TAILOR_HOUSE]tailor's house[\LINK].</English>
         <German>Die Schneiderei zeigt, dass Herrenmode weithin verfügbar ist. Sie ist der Beweis dafür, dass eine Stadt gesellschaftlich angekommen ist.</German>
     </TEXT>
     <!-- FIREWORKER -->
@@ -738,7 +738,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE_PEDIA</Tag>
-        <English>Well away from other buildings the powder maker mixes gunpowder from sulphur, charcoal and saltpeter: ammunition for the soldiers' guns. In colonial times it's the only available explosive (dynamite will be invented in 1867) so it's also used for artillery, mining and road building.</English>
+        <English>Well away from other buildings the powder maker mixes gunpowder from sulphur, charcoal and saltpeter: ammunition for the soldiers' guns. In colonial times it's the only available explosive (dynamite will be invented in 1867) so it's also used for artillery, mining and road building.[NEWLINE]The powder maker needs to produce enough black powder so that soldiers are well-supplied to defend their settlements. Even more is needed for miners and the pioneers building roads.</English>
         <French>A l'écart des autres bâtiments, le poudrier mélange la poudre à canon à partir de soufre, de charbon de bois et de salpêtre : des munitions pour les fusils des soldats. À l'époque coloniale, c'est le seul explosif disponible (la dynamite sera inventée en 1867). Elle est donc également utilisée pour l'artillerie, l'exploitation minière et la construction de routes.</French>
         <German>Weit entfernt von anderen Gebäuden mischt der Pulvermacher Schießpulver aus Schwefel, Holzkohle und Salpeter für die Gewehre der Soldaten. In der Kolonialzeit ist es der einzige verfügbare Sprengstoff (Dynamit wird erst 1867 erfunden) und wird auch für die Artillerie, den Bergbau und den Straßenbau verwendet.</German>
         <Italian>Ben lontano da altri edifici, il polveriere mescola la polvere da sparo con zolfo, carbone e salnitro: munizioni per i cannoni dei soldati. In epoca coloniale è l'unico esplosivo disponibile (la dinamite sarà inventata nel 1867), quindi viene utilizzato anche per l'artiglieria, le miniere e la costruzione di strade.</Italian>
@@ -747,27 +747,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE_STRATEGY</Tag>
-        <English>The powder maker needs to produce enough black powder so that soldiers are well-supplied to defend their settlements. Even more is needed for miners and the pioneers building roads.</English>
+        <English>The [LINK=BUILDING_FIREWORKERS_HOUSE]powder maker's house[\LINK] is where, first, charcoal is made by a settler with the [LINK=PROFESSION_CHARCOAL_BURNER]charcoal burner[\LINK] profession; and then turned into gunpowder by another colonist with the [LINK=PROFESSION_FIREWORKER]gunpowder mixer[\LINK] profession.</English>
         <German>Der Pulvermacher muss genügend Schwarzpulver herstellen, damit die Soldaten gut ausgerüstet sind, um ihre Siedlungen zu verteidigen. Noch mehr wird für die Bergleute und die Pioniere zum Straßenbau benötigt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP_PEDIA</Tag>
-        <English>As the business gets bigger, the black powder is stored in kegs which represent a massive increase in explosive power, so much that “powder keg” becomes a metaphor for high risk.</English>
+        <English>As the business gets bigger, the black powder is stored in kegs which represent a massive increase in explosive power, so much that "powder keg" becomes a metaphor for high risk. Black powder may be dangerous, but it's not as dangerous as having a weak army without enough ammunition.</English>
         <German>Mit zunehmender Größe des Unternehmens wird das Schwarzpulver in Fässern gelagert, die eine so große Sprengkraft haben, dass "Pulverfass" zu einer Metapher für ein hohes Risiko wird.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP_STRATEGY</Tag>
-        <English>Black powder may be dangerous, but it's not as dangerous as having a weak army without enough ammunition.</English>
+        <English>The powder makers' shop is the upgrade of the [LINK=BUILDING_FIREWORKERS_HOUSE]powder maker's house[\LINK] where charcoal is made by settlers with the [LINK=PROFESSION_CHARCOAL_BURNER]charcoal burner[\LINK] profession, and then turned into gunpowder by other colonists with the [LINK=PROFESSION_FIREWORKER]gunpowder mixer[\LINK] profession.</English>
         <German>Schwarzpulver mag gefährlich sein, aber es ist nicht so gefährlich wie eine schwache Armee ohne genügend Munition.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY_PEDIA</Tag>
-        <English>The powder maker supplies propellant for guns and artillery, and explosives for mining and road building. For a big army so much has to be kept in kegs that an unlucky event in this building can blow up the entire town.</English>
+        <English>The powder maker supplies propellant for guns and artillery, and explosives for mining and road building. For a big army so much has to be kept in kegs that an unlucky event in this building can blow up the entire town.[NEWLINE]Centralizing production of propellant for guns and artillery, and explosives for mining and road building, is efficient but it means powder trains of vulnerable wagons are now on the roads, open to attack.</English>
         <German>Der Pulvermacher liefert Treibladungen für Geschütze und Artillerie sowie Sprengstoff für den Berg- und Straßenbau. Für eine große Armee muss so viel in Fässern gelagert werden, dass ein einziges Missgeschick in diesem Gebäude die ganze Stadt in die Luft jagen kann.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY_STRATEGY</Tag>
-        <English>Centralizing production of propellant for guns and artillery, and explosives for mining and road building, is efficient but it means powder trains of vulnerable wagons are now on the roads, open to attack.</English>
+        <English>>The powder factory is the ultimate upgrade of the [LINK=BUILDING_FIREWORKERS_HOUSE]powder maker's house[\LINK].</English>
         <German>Die Zentralisierung der Produktion von Treibstoff für Geschütze und Artillerie sowie von Sprengstoff für den Berg- und Straßenbau ist effizient, bedeutet aber auch, dass Pulverzüge mit anfälligen Wagen auf den Straßen unterwegs sind und angegriffen werden können.</German>
     </TEXT>
     <!-- BAKER -->
@@ -837,7 +837,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_HOUSE_PEDIA</Tag>
-        <English>At first every household bakes its own bread but soon the baker's house centralizes food production. The baker starts work well before dawn so that households can have their daily bread. Settlers who remember the early starvation days continue to grow squash, beans and corn but new arrivals prefer familiar food from the old country.</English>
+        <English>At first every household bakes its own bread but soon the baker's house centralizes food production. The baker starts work well before dawn so that households can have their daily bread. Settlers who remember the early starvation days continue to grow squash, beans and corn but new arrivals prefer familiar food from the old country.[NEWLINE]Having a bakery means each household doesn't need to bake its own bread. That allows other colonists to spend time on what they do best. Specialization helps the economy to grow, a concept soon popularized in books by economists Adam Smith and David Ricardo.</English>
         <French>Au début, chaque foyer cuit son propre pain, mais bientôt la maison du boulanger centralise la production alimentaire. Le boulanger commence à travailler bien avant l'aube pour que les ménages puissent avoir leur pain quotidien. Les colons qui se souviennent des premiers jours de famine continuent de cultiver des courges, des haricots et du maïs, mais les nouveaux arrivants préfèrent les aliments familiers du vieux pays.</French>
         <German>Zunächst bäckt jeder Haushalt sein eigenes Brot, doch schon bald wird die Lebensmittelproduktion durch die Bäckereien zentralisiert. Der Bäcker beginnt seine Arbeit lange vor dem Morgengrauen, damit die Haushalte ihr tägliches Brot bekommen. Siedler, die sich an die frühen Hungertage erinnern, bauen weiterhin Kürbisse, Bohnen und Mais an, aber Neuankömmlinge bevorzugen die vertrauten Lebensmittel aus dem alten Land.</German>
         <Italian>All'inizio ogni famiglia prepara il proprio pane, ma presto la casa del fornaio centralizza la produzione di cibo. Il fornaio inizia a lavorare molto prima dell'alba, in modo che le famiglie possano avere il pane quotidiano. I coloni che ricordano i primi tempi di fame continuano a coltivare zucche, fagioli e mais, ma i nuovi arrivati preferiscono il cibo familiare del vecchio Paese.</Italian>
@@ -845,7 +845,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_HOUSE_STRATEGY</Tag>
-        <English>Having a bakery means each household doesn't need to bake its own bread. That allows other colonists to spend time on what they do best. Specialization helps the economy to grow, a concept soon popularized in books by economists Adam Smith and David Ricardo.</English>
+        <English>The [LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] is where colonists with the baker profession make baked goods from [COLOR_HIGHLIGHT_TEXT]barley[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rice[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]cassava[COLOR_REVERT].</English>
         <French>Le fait d'avoir une boulangerie signifie que chaque foyer n'a pas besoin de cuire son propre pain. Cela permet aux autres colons de consacrer du temps à ce qu'ils font le mieux. La spécialisation favorise la croissance de l'économie, un concept bientôt popularisé dans les livres des économistes Adam Smith et David Ricardo.</French>
         <German>Mit einer Bäckerei muss nicht jeder Haushalt sein eigenes Brot backen. So können die anderen Kolonisten ihre Zeit mit dem verbringen, was sie am besten können. Spezialisierung hilft der Wirtschaft zu wachsen, ein Konzept, das schon bald in den Büchern der Ökonomen Adam Smith und David Ricardo popularisiert wurde.</German>
         <Italian>Avere un panificio significa che ogni famiglia non ha bisogno di cuocere il proprio pane. Questo permette agli altri coloni di dedicare il loro tempo a ciò che sanno fare meglio. La specializzazione aiuta l'economia a crescere, un concetto presto reso popolare nei libri degli economisti Adam Smith e David Ricardo.</Italian>
@@ -853,22 +853,22 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_SHOP_PEDIA</Tag>
-        <English>As the bakery gets more workers it might add a pastry chef who creates sweet treats that bring in business. The business also provides a variety of loaves so that new arrivals can buy the kind of bread that reminds them of home.</English>
+        <English>As the bakery gets more workers it might add a pastry chef who creates sweet treats that bring in business. The business also provides a variety of loaves so that new arrivals can buy the kind of bread that reminds them of home.[NEWLINE]As the bakery grows, offering cookies and pastries, it becomes a social center. Some bakers even set up tables where tea is served to accompany the treats. A few serve coffee which is considered scandalous because of the stimulating effect.</English>
         <German>Wenn die Bäckerei mehr Mitarbeiter hat, kann sie einen Konditor einstellen, der süße Leckereien herstellt, die das Geschäft ankurbeln. Das Unternehmen bietet auch eine Vielzahl von Brotsorten an, damit Gäste das Brot kaufen können, das sie an ihre Heimat erinnert.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_SHOP_STRATEGY</Tag>
-        <English>As the bakery grows, offering cookies and pastries, it becomes a social center. Some bakers even set up tables where tea is served to accompany the treats. A few serve coffee which is considered scandalous because of the stimulating effect.</English>
+        <English>The bakeshop is the upgrade of the[LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] where colonists with the baker profession make baked goods from [COLOR_HIGHLIGHT_TEXT]barley[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rice[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]cassava[COLOR_REVERT].</English>
         <German>Wenn die Bäckerei wächst und Kekse und Gebäck anbietet, wird sie zu einem sozialen Zentrum. Einige Bäcker stellen sogar Tische auf, an denen Tee zu den Leckereien serviert wird. Einige wenige servieren Kaffee, der wegen seiner anregenden Wirkung als skandalös gilt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKERY_PEDIA</Tag>
-        <English>A large bakery serves a region. On the one hand it offers cheap food thanks to economies of sale. On the other it delivers an unparalleled variety of pastries, pies and cakes for special occasions.</English>
+        <English>A large bakery serves a region. On the one hand it offers cheap food thanks to economies of sale. On the other it delivers an unparalleled variety of pastries, pies and cakes for special occasions.[NEWLINE]A big bakery makes an important contribution to the region it serves, increasing both the food supply and the community's happiness.</English>
         <German>Eine Großbäckerei bedient eine Region. Einerseits bietet sie dank des günstigen Verkaufs günstige Lebensmittel an. Darüber hinaus liefert sie eine unvergleichliche Vielfalt an Backwaren, Torten und Kuchen für besondere Anlässe.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKERY_STRATEGY</Tag>
-        <English>A big bakery makes an important contribution to the region it serves, increasing both the food supply and the community's happiness.</English>
+        <English>The bakery is the ultimate upgrade of the [LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK].</English>
         <German>Eine große Bäckerei leistet einen wichtigen Beitrag für die Region, in der sie tätig ist, indem sie sowohl die Lebensmittelversorgung als auch das Wohlbefinden der Bevölkerung verbessert.</German>
     </TEXT>
     <!-- Courthouse -->
