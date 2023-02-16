@@ -4234,6 +4234,7 @@
         <German>Wachstum : %d1 / %d2[ICON_FOOD] (%d3 [NUM3:Runde:Runden])</German>
         <Italian>Crescita : %d1 / %d2[ICON_FOOD] (%d3 [NUM3:turno:turni])</Italian>
         <Spanish>Crecimiento : %d1 / %d2[ICON_FOOD] (%d3 [NUM3:turno:turnos])</Spanish>
+        <Russian>Рост : %d1 / %d2[ICON_FOOD] (%d3 [NUM3:turn:turns])</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_BAR_PRODUCTION</Tag>
@@ -4258,6 +4259,7 @@
         <German>Kultur : %d1 / %d2[ICON_CULTURE] (%s3)</German>
         <Italian>Cultura : %d1 / %d2[ICON_CULTURE] (%s3)</Italian>
         <Spanish>Cultura : %d1 / %d2[ICON_CULTURE] (%s3)</Spanish>
+        <Russian>Культура : %d1 / %d2[ICON_CULTURE] (%s3)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_BAR_SELECT</Tag>
@@ -4266,6 +4268,7 @@
         <German>[COLOR_SELECTED_TEXT]%s1[COLOR_REVERT] per [COLOR:140:255:40:255]&lt; Linksklick &gt;[COLOR_REVERT] auswählen</German>
         <Italian>[COLOR:140:255:40:255]&lt;Clicca con il tasto sinistro &gt;[COLOR_REVERT] [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Italian>
         <Spanish>Hacer [COLOR:140:255:40:255]&lt;clic izquierdo &gt;[COLOR_REVERT] para seleccionar [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR:140:255:40:255]&lt; Left-Click &gt;[COLOR_REVERT] чтобы выбрать [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_FOOD_THRESHOLD</Tag>

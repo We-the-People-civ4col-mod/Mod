@@ -2597,6 +2597,7 @@
         <German>Gelagert : %s1_comma_separated_list_of_numbers_and_symbols</German>
         <Italian>Riserve : %s1_comma_separated_list_of_numbers_and_symbols</Italian>
         <Spanish>Almacenado : %s1_comma_separated_list_of_numbers_and_symbols</Spanish>
+        <Russian>Хранится : %s1_comma_separated_list_of_numbers_and_symbols</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_BAR_PRODUCING</Tag>
@@ -2605,6 +2606,7 @@
         <German>In Produktion : %s1_comma_separated_list_of_numbers_and_symbols</German>
         <Italian>Produzione : %s1_comma_separated_list_of_numbers_and_symbols</Italian>
         <Spanish>Producción : %s1_comma_separated_list_of_numbers_and_symbols</Spanish>
+        <Russian>Производится : %s1_comma_separated_list_of_numbers_and_symbols</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_CANNOT_TRAIN_WORK_NEXT</Tag>
