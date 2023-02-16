@@ -1342,7 +1342,7 @@
         <English>[ICON_BULLET]Spawns hostile Natives who guard it.</English>
 		<French>[ICON_BULLET]Donne naissance à des indigènes hostiles qui la gardent.</French>
         <German>[ICON_BULLET]Erzeugt Feindliche Ureinwohner als Beschützer.</German>
-        <Russian>[ICON_BULLET]Порождает враждебных туземцев, которые его охраняют..</Russian>
+        <Russian>[ICON_BULLET]Порождает враждебных туземцев, которые её охраняют..</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_FOR_SPAWNING_HOSTILE_CRIMINALS</Tag>
