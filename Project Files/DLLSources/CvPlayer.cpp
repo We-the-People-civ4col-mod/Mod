@@ -8421,12 +8421,8 @@ void CvPlayer::verifyAlive()
 		//only if player is still alive
 		if (!bKill)
 		{
-			// Only AI Colonial Players, but not Kings, not Natives, not Animals, ...
-			if (getParent() != NO_PLAYER && getCivCategoryTypes() == CIV_CATEGORY_EUROPEAN && !isHuman())
-			{
-				buyEuropeSettlerIfLandlockedAI();
-			}
-		//WTP, ray, Settler Professsion - END
+			buyEuropeSettlerIfLandlockedAI();
+			//WTP, ray, Settler Professsion - END
 
 			// WTP, jooe: I'm not sure about this check - what is "getMaxCityElimination" anyways?
 			// leaving it in for now, but I'm not sure this is ever triggered
@@ -8527,7 +8523,7 @@ bool CvPlayer::canRespawn()
 	const int gameSpeedMod =  GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
 	const int iMinTurnForAIRespawningOff = GLOBAL_DEFINE_KI_RESPAWN_OFF_MIN_TURN * gameSpeedMod /100;
 
-	if (iTurn <= iMinTurnForAIRespawningOff || GC.getDefineINT("KI_RESPAWN_OFF") == 0)
+	if (iTurn <= iMinTurnForAIRespawningOff || GLOBAL_DEFINE_KI_RESPAWN_OFF == 0)
 	{
 		// if we failed one of the tests in hasAnyChanceOfWinning(), but we are before respawn threshold time, just respawn the starting units
 		return true;
@@ -8537,6 +8533,12 @@ bool CvPlayer::canRespawn()
 
 void CvPlayer::buyEuropeSettlerIfLandlockedAI()
 {
+	// Only AI Colonial Players, but not Kings, not Natives, not Animals, ...
+	if (getParent() == NO_PLAYER || getCivCategoryTypes() != CIV_CATEGORY_EUROPEAN || isHuman())
+	{
+		return;
+	}
+
 	const CvPlayer& kParent = GET_PLAYER(getParent());
 	// we check that there is no War of Independence and other small things
 	if (kParent.isAlive() && kParent.isEurope() && !::atWar(getTeam(), kParent.getTeam()) && (GC.getGameINLINE().getAIAutoPlay() == 0 || GC.getGameINLINE().getActivePlayer() != getID()))
