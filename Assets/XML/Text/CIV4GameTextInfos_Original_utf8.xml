@@ -1582,12 +1582,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FOREIGN_ADVISOR_ACTIVE</Tag>
-        <English>Активно</English>
+        <English>Active</English>
         <French>Actif</French>
         <German>Aktiv</German>
         <Italian>Attivo</Italian>
         <Spanish>Activo</Spanish>
-        <Russian>йцукен</Russian>
+        <Russian>Активно</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_REPLAY_SCREEN_TITLE</Tag>
