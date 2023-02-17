@@ -7,6 +7,7 @@
         <German>Wachsend</German>
         <Italian>In sviluppo</Italian>
         <Spanish>Creciente</Spanish>
+        <Russian>Развивающаяся</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CULTURELEVEL_FLEDGLING</Tag>
@@ -15,6 +16,7 @@
         <German>Beginnend</German>
         <Italian>Principiante</Italian>
         <Spanish>Incipiente</Spanish>
+        <Russian>Зарождающаяся</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CULTURELEVEL_INFLUENTIAL</Tag>
@@ -23,6 +25,7 @@
         <German>Einflussreich</German>
         <Italian>Influente</Italian>
         <Spanish>Influyente</Spanish>
+        <Russian>Влиятельная</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CULTURELEVEL_LEGENDARY</Tag>
@@ -31,6 +34,7 @@
         <German>Legendär</German>
         <Italian>Leggendaria</Italian>
         <Spanish>Legendaria</Spanish>
+        <Russian>Легендарная</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CULTURELEVEL_NONE</Tag>
@@ -39,6 +43,7 @@
         <German>Null</German>
         <Italian>Nessuno</Italian>
         <Spanish>Inexistente</Spanish>
+        <Russian>Обычная</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CULTURELEVEL_POOR</Tag>
@@ -47,6 +52,7 @@
         <German>Gering</German>
         <Italian>Povero</Italian>
         <Spanish>Pobre</Spanish>
+        <Russian>Слабая</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CULTURELEVEL_REFINED</Tag>
@@ -55,5 +61,6 @@
         <German>Fortgeschritten</German>
         <Italian>Raffinato</Italian>
         <Spanish>Refinada</Spanish>
+        <Russian>Изысканная</Russian>
     </TEXT>
 </Civ4GameText>
