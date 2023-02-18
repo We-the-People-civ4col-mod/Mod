@@ -40,7 +40,19 @@ enum HurryTypes
 	HURRY_IMMIGRANT,
 };
 
+enum ProfessionTypes
+{
+	PROFESSION_MISSIONARY,
+	PROFESSION_NATIVE_TRADER,
+};
+
+
 enum SpecialUnitTypes
 {
 	SPECIALUNIT_COLONIST_UNIT,
+};
+
+enum UnitClassTypes
+{
+	UNITCLASS_COLONIST,
 };
