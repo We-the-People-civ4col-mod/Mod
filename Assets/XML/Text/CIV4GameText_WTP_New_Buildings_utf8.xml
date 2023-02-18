@@ -256,7 +256,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY_STRATEGY</Tag>
-        <English>The leatherworker factory is the final upgrade of the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's house[\LINK].</English>
+        <English>The leather coat factory is the final upgrade of the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's house[\LINK].</English>
         <German>Robuste Outdoor-Lederkleidung, die harter Beanspruchung standhält, bedeutet, dass mehr Arbeit erledigt werden kann, da die Menschen nicht frieren was ihrer Gesundheit und Zufriedenheit zugutekommt.</German>
     </TEXT>
     <!-- OIL_TRADER -->
@@ -468,7 +468,7 @@
     <!-- POTTERY -->
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_POTTERY</Tag>
-        <English>Pottery</English>
+        <English>Potter's House</English>
         <German>
             <Text>Töpferei</Text>
             <Gender>Female</Gender>
@@ -497,7 +497,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_POTTERY_FACTORY</Tag>
-        <English>Pottery</English>
+        <English>Pottery Factory</English>
         <German>
             <Text>Töpferei</Text>
             <Gender>Female</Gender>
@@ -527,7 +527,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_FACTORY</Tag>
-        <English>Pottery</English>
+        <English>Pottery Factory</English>
         <German>
             <Text>Töpferei</Text>
             <Gender>Female</Gender>
@@ -689,7 +689,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_SHOP</Tag>
-        <English>Powder Maker's Shop</English>
+        <English>Powder Makers' Shop</English>
         <German>
             <Text>Pulverladen</Text>
             <Gender>Male</Gender>
@@ -699,7 +699,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_FACTORY</Tag>
-        <English>Powder Factory</English>
+        <English>Powder Magazine</English>
         <German>
             <Text>Pulverfabrik</Text>
             <Gender>Female</Gender>
@@ -718,7 +718,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP</Tag>
-        <English>Powder Maker's Shop</English>
+        <English>Powder Makers' Shop</English>
         <German>
             <Text>Pulverladen</Text>
             <Gender>Male</Gender>
@@ -728,7 +728,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY</Tag>
-        <English>Powder Factory</English>
+        <English>Powder Magazine</English>
         <German>
             <Text>Pulverfabrik</Text>
             <Gender>Female</Gender>
@@ -767,7 +767,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY_STRATEGY</Tag>
-        <English>>The powder factory is the ultimate upgrade of the [LINK=BUILDING_FIREWORKERS_HOUSE]powder maker's house[\LINK].</English>
+        <English>>The powder magazine is the ultimate upgrade of the [LINK=BUILDING_FIREWORKERS_HOUSE]powder maker's house[\LINK].</English>
         <German>Die Zentralisierung der Produktion von Treibstoff für Geschütze und Artillerie sowie von Sprengstoff für den Berg- und Straßenbau ist effizient, bedeutet aber auch, dass Pulverzüge mit anfälligen Wagen auf den Straßen unterwegs sind und angegriffen werden können.</German>
     </TEXT>
     <!-- BAKER -->
