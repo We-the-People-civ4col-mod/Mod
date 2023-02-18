@@ -10,22 +10,6 @@
 void TestEnumMap();
 void setupVARINFO();
 
-#ifndef HARDCODE_XML_VALUES
-CivEffectTypes   CIV_EFFECT_DEFAULT_ALL      = NO_CIV_EFFECT;
-CivEffectTypes   CIV_EFFECT_DEFAULT_EUROPEAN = NO_CIV_EFFECT;
-CivEffectTypes   CIV_EFFECT_DEFAULT_NATIVE   = NO_CIV_EFFECT;
-CivEffectTypes   CIV_EFFECT_DEFAULT_KING     = NO_CIV_EFFECT;
-CivEffectTypes   CIV_EFFECT_DEFAULT_BARBARIAN= NO_CIV_EFFECT;
-CivEffectTypes   CIV_EFFECT_DEFAULT_CHURCH   = NO_CIV_EFFECT;
-CivEffectTypes   CIV_EFFECT_DEFAULT_HUMAN    = NO_CIV_EFFECT;
-CivEffectTypes   CIV_EFFECT_DEFAULT_AI       = NO_CIV_EFFECT;
-
-HurryTypes       HURRY_GOLD                  = NO_HURRY;
-HurryTypes       HURRY_IMMIGRANT             = NO_HURRY;
-
-SpecialUnitTypes SPECIALUNIT_COLONIST_UNIT   = NO_SPECIALUNIT;
-#endif
-
 
 static void DisplayXMLmissingError(bool bSuccess, const char* szName)
 {
@@ -79,95 +63,8 @@ void CvGlobals::postXMLLoad(bool bFirst)
 		//setup VARINFO constants (done in AutoVariableFunctionsCPP.h
 		setupVARINFO();
 
-		for (HurryTypes eHurry = FIRST_HURRY; eHurry < NUM_HURRY_TYPES; ++eHurry)
-		{
-			const char *type = GC.getHurryInfo(eHurry).getType();
-			if (strcmp(type, "HURRY_GOLD") == 0)
-			{
-				HURRY_GOLD = eHurry;
-			}
-			else if (strcmp(type, "HURRY_IMMIGRANT") == 0)
-			{
-				HURRY_IMMIGRANT = eHurry;
-			}
-		}
-
-		SPECIALUNIT_COLONIST_UNIT = static_cast<SpecialUnitTypes>(getIndexForType(JIT_ARRAY_UNIT_SPECIAL, "SPECIALUNIT_COLONIST_UNIT"));
-
 		int iCounter = 0;
-
-		for (CivEffectTypes eCivEffect = FIRST_CIV_EFFECT; eCivEffect < NUM_CIV_EFFECT_TYPES; ++eCivEffect)
-		{
-			const char *szType = this->getCivEffectInfo(eCivEffect).getType();
-
-			if (strcmp(szType, "CIV_EFFECT_DEFAULT_ALL") == 0)
-			{
-				CIV_EFFECT_DEFAULT_ALL = eCivEffect;
-			}
-			else if (strcmp(szType, "CIV_EFFECT_DEFAULT_EUROPEAN") == 0)
-			{
-				CIV_EFFECT_DEFAULT_EUROPEAN = eCivEffect;
-			}
-			else if (strcmp(szType, "CIV_EFFECT_DEFAULT_NATIVE") == 0)
-			{
-				CIV_EFFECT_DEFAULT_NATIVE = eCivEffect;
-			}
-			else if (strcmp(szType, "CIV_EFFECT_DEFAULT_KING") == 0)
-			{
-				CIV_EFFECT_DEFAULT_KING = eCivEffect;
-			}
-			else if (strcmp(szType, "CIV_EFFECT_DEFAULT_BARBARIAN") == 0)
-			{
-				CIV_EFFECT_DEFAULT_BARBARIAN = eCivEffect;
-			}
-			else if (strcmp(szType, "CIV_EFFECT_DEFAULT_CHURCH") == 0)
-			{
-				CIV_EFFECT_DEFAULT_CHURCH = eCivEffect;
-			}
-			else if (strcmp(szType, "CIV_EFFECT_DEFAULT_HUMAN") == 0)
-			{
-				CIV_EFFECT_DEFAULT_HUMAN = eCivEffect;
-			}
-			else if (strcmp(szType, "CIV_EFFECT_DEFAULT_AI") == 0)
-			{
-				CIV_EFFECT_DEFAULT_AI = eCivEffect;
-			}
-			else
-			{
-				continue;
-			}
-			++iCounter;
-			if (iCounter == 8)
-			{
-				// all found. No need to loop the rest
-				break;
-			}
-		}
-		DisplayXMLmissingError(CIV_EFFECT_DEFAULT_ALL        != NO_CIV_EFFECT, "CIV_EFFECT_DEFAULT_ALL"       );
-		DisplayXMLmissingError(CIV_EFFECT_DEFAULT_EUROPEAN   != NO_CIV_EFFECT, "CIV_EFFECT_DEFAULT_EUROPEAN"  );
-		DisplayXMLmissingError(CIV_EFFECT_DEFAULT_NATIVE     != NO_CIV_EFFECT, "CIV_EFFECT_DEFAULT_NATIVE"    );
-		DisplayXMLmissingError(CIV_EFFECT_DEFAULT_KING       != NO_CIV_EFFECT, "CIV_EFFECT_DEFAULT_KING"      );
-		DisplayXMLmissingError(CIV_EFFECT_DEFAULT_BARBARIAN  != NO_CIV_EFFECT, "CIV_EFFECT_DEFAULT_BARBARIAN" );
-		DisplayXMLmissingError(CIV_EFFECT_DEFAULT_CHURCH     != NO_CIV_EFFECT, "CIV_EFFECT_DEFAULT_CHURCH"    );
-		DisplayXMLmissingError(CIV_EFFECT_DEFAULT_HUMAN      != NO_CIV_EFFECT, "CIV_EFFECT_DEFAULT_HUMAN"     );
-		DisplayXMLmissingError(CIV_EFFECT_DEFAULT_AI         != NO_CIV_EFFECT, "CIV_EFFECT_DEFAULT_AI"        );
-
-#else
-
-		DisplayXMLhardcodingError("CIV_EFFECT_DEFAULT_ALL"       , this->getCivEffectInfo(CIV_EFFECT_DEFAULT_ALL       ).getType());
-		DisplayXMLhardcodingError("CIV_EFFECT_DEFAULT_EUROPEAN"  , this->getCivEffectInfo(CIV_EFFECT_DEFAULT_EUROPEAN  ).getType());
-		DisplayXMLhardcodingError("CIV_EFFECT_DEFAULT_NATIVE"    , this->getCivEffectInfo(CIV_EFFECT_DEFAULT_NATIVE    ).getType());
-		DisplayXMLhardcodingError("CIV_EFFECT_DEFAULT_KING"      , this->getCivEffectInfo(CIV_EFFECT_DEFAULT_KING      ).getType());
-		DisplayXMLhardcodingError("CIV_EFFECT_DEFAULT_HUMAN"     , this->getCivEffectInfo(CIV_EFFECT_DEFAULT_HUMAN     ).getType());
-		DisplayXMLhardcodingError("CIV_EFFECT_DEFAULT_AI"        , this->getCivEffectInfo(CIV_EFFECT_DEFAULT_AI        ).getType());
-
-		DisplayXMLhardcodingError("HURRY_GOLD"                   , this->getHurryInfo(HURRY_GOLD                       ).getType());
-		DisplayXMLhardcodingError("HURRY_IMMIGRANT"              , this->getHurryInfo(HURRY_IMMIGRANT                  ).getType());
-
 #endif
-		DisplayXMLmissingError(HURRY_GOLD      != NO_HURRY, "HURRY_GOLD");
-		DisplayXMLmissingError(HURRY_IMMIGRANT != NO_HURRY, "HURRY_IMMIGRANT");
-
 	}
 	else // bFirst
 	{

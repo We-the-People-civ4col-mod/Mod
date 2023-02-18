@@ -68,6 +68,7 @@ foreach my $file (getEnumFiles())
 $output_init .= "} else {\n";
 
 handleGlobalDefineALT();
+handleHardcodedEnumVariables();
 
 $output .= "\n#endif // AUTO_XML_ENUM\n";
 $output_declare .= "#endif\n";
@@ -315,6 +316,54 @@ sub handleGlobalDefineALT
 	$output .= $declare_dynamic;
 	$output .= "#endif // hardcoded xml\n";
 	
+	close($fh);
+}
+
+sub handleHardcodedEnumVariables
+{
+	my $filename = "DLLSources/HardcodedEnumSetup.h";
+	my $lineno = 0;
+	my $enum = "";
+	
+	
+	$output .= "\n#ifndef HARDCODE_XML_VALUES\n";
+	
+	open(my $fh, '<:encoding(UTF-8)', $filename)
+	  or die "Could not open file '$filename' $!";
+	  
+	while (my $line = <$fh>)
+	{
+		$lineno += 1;
+		chomp($line);
+		
+		if (substr($line, 0, 5) eq "enum ")
+		{
+			die("$filename($lineno) found new enum without ending the previous one\n") unless $enum eq "";
+			$enum = substr($line, 5);
+		}
+		elsif ($enum ne "")
+		{
+			if (substr($line, 0, 2) eq "};")
+			{
+				$enum = "";
+			}
+			elsif ((my $index = index($line, ",")) != -1)
+			{
+				my $variableName = substr($line, 0, $index);
+				
+				# remove whitespace on the left of the string
+				$variableName =~ s/^\s+//;
+				$output_declare .= $enum . " " . $variableName . "_NON_CONST;\n";
+				$output_declare .= "const " . $enum . "& " . $variableName . " = " . $variableName . "_NON_CONST;\n";
+				$output_init .= $variableName . "_NON_CONST = getIndexOfType(" . $variableName . "_NON_CONST, \"" . $variableName . "\");\n";
+				$output_init .= "DisplayXMLmissingError((int)$variableName != -1, \"$variableName\");\n";
+				$output .= "extern const " . $enum . "& " . $variableName . ";\n";
+			}
+		}
+	}
+	
+	$output .= "#endif // hardcoded xml\n";
+	close($fh);
 }
 
 sub addVanillaSingleValue

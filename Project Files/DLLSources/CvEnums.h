@@ -1396,12 +1396,6 @@ enum ControlTypes
 };
 */
 
-#ifndef HARDCODE_XML_VALUES
-extern HurryTypes HURRY_GOLD;
-extern HurryTypes HURRY_IMMIGRANT;
-extern SpecialUnitTypes SPECIALUNIT_COLONIST_UNIT;
-#endif
-
 enum WarPlanTypes
 {
 	NO_WARPLAN = -1,
@@ -2600,17 +2594,6 @@ enum TradeMessageTypes
 	NUM_TRADE_MESSAGES,
 };
 // TAC - Trade Messages - koma13 - END
-
-#ifndef HARDCODE_XML_VALUES
-extern CivEffectTypes CIV_EFFECT_DEFAULT_ALL;
-extern CivEffectTypes CIV_EFFECT_DEFAULT_EUROPEAN;
-extern CivEffectTypes CIV_EFFECT_DEFAULT_NATIVE;
-extern CivEffectTypes CIV_EFFECT_DEFAULT_KING;
-extern CivEffectTypes CIV_EFFECT_DEFAULT_BARBARIAN;
-extern CivEffectTypes CIV_EFFECT_DEFAULT_CHURCH;
-extern CivEffectTypes CIV_EFFECT_DEFAULT_HUMAN;
-extern CivEffectTypes CIV_EFFECT_DEFAULT_AI;
-#endif
 
 enum JITarrayTypes
 {

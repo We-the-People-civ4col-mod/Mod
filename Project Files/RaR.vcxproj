@@ -242,6 +242,7 @@
     <ClInclude Include="DLLSources\EnumMapSpecializationInt.h" />
     <ClInclude Include="DLLSources\EnumMapSpecialization.h" />
     <ClInclude Include="DLLSources\EnumMapSpecializationClass.h" />
+    <ClInclude Include="DLLSources\HardcodedEnumSetup.h" />
     <ClInclude Include="DLLSources\KmodPathFinder.h" />
     <ClInclude Include="DLLSources\NetworkDataPacking.h" />
     <ClInclude Include="DLLSources\Profile.h" />
