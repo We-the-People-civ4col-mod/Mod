@@ -10476,8 +10476,8 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 
 	FAssert(!at(toCoord) || coord().isInvalidPlotCoord());
 	FAssert(!isFighting());
-	FAssert(coord().isInvalidPlotCoord() || (GC.getMapINLINE().plotINLINE(toCoord)->getX_INLINE() == toCoord.x()));
-	FAssert(coord().isInvalidPlotCoord() || (GC.getMapINLINE().plotINLINE(toCoord)->getY_INLINE() == toCoord.y()));
+	FAssert(toCoord.isInvalidPlotCoord() || (GC.getMapINLINE().plotINLINE(toCoord)->getX_INLINE() == toCoord.x()));
+	FAssert(toCoord.isInvalidPlotCoord() || (GC.getMapINLINE().plotINLINE(toCoord)->getY_INLINE() == toCoord.y()));
 
 	if (getGroup() != NULL)
 	{

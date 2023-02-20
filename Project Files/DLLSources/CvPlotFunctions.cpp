@@ -31,13 +31,11 @@ void RevealedPlotDataArray::reset()
 
 bool Coordinates::isOnMap() const
 {
-	if(isInvalidPlotCoord())
-		{
-			return false;
-		}
-	bool bValidX = (x() >= 0 && x() < GC.getMapINLINE().getGridWidthINLINE());
-	bool bValidY = (y() >= 0 && y() < GC.getMapINLINE().getGridHeightINLINE());
-	return bValidX && bValidY;
+	// don't use x() and y() here as those two will assert check against this function, creating an infinite loop.
+	// exploit lazy evaluation to bail out once one condition is false, like don't check Y once X has already failed.
+	return !isInvalidPlotCoord()
+		&& (m_iX >= 0 && m_iX < GC.getMapINLINE().getGridWidthINLINE())
+		&& (m_iY >= 0 && m_iY < GC.getMapINLINE().getGridHeightINLINE());
 }
 
 CvPlot* Coordinates::plot() const

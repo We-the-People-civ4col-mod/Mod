@@ -294,7 +294,7 @@ public:
 	{
 		if (coord.isInvalidPlotCoord())
 			return NULL;
-		FAssert(isPlot(coord)); // advc: Assertion added
+		FAssert(isPlotINLINE(coord)); // advc: Assertion added
 		return &(m_pMapPlots[plotNumINLINE(coord)]);
 	}
 
