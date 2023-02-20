@@ -160,7 +160,7 @@ void CvPlot::reset(int iX, int iY, bool bConstructorCall)
 
 	//m_iX = iX;
 	//m_iY = iY;
-	m_coord.reset(iX, iY);
+	m_coord.set(iX, iY);
 	m_pPlotArea = NULL;
 
 	// set the default value as it might never be touched again if it should keep the default value

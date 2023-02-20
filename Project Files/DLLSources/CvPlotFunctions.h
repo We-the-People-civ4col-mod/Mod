@@ -123,31 +123,28 @@ public:
 	FDirCoord(DirectionTypes direction);
 	~FDirCoord();
 
-	int x() const;
-	int y() const;
+	int x() const
+	{
+		return m_iX;
+	}
+	int y() const
+	{
+		return m_iY;
+	}
 
 protected:
 	const int m_iX;
 	const int m_iY;
 };
 
-FDirCoord::FDirCoord(DirectionTypes direction) :
+inline FDirCoord::FDirCoord(DirectionTypes direction) :
 	m_iX(GC.getPlotDirectionX()[direction]),
 	m_iY(GC.getPlotDirectionY()[direction])
 {
 }
 
-FDirCoord::~FDirCoord()
+inline FDirCoord::~FDirCoord()
 {
-
-}
-
-inline int FDirCoord::x() const {
-	return m_iX;
-}
-
-inline int FDirCoord::y() const {
-	return m_iY;
 }
 
 class FRelCoord
@@ -162,8 +159,14 @@ public:
 	{
 	}
 
-	int x() const;
-	int y() const;
+	int x() const
+	{
+		return m_iX;
+	}
+	int y() const
+	{
+		return m_iY;
+	}
 
 protected:
 	const int m_iX;
@@ -173,30 +176,39 @@ protected:
 class FCoord
 {
 public:
-	FCoord(int iX, int iY)
+	FCoord(int iX = 0, int iY = 0)
 	{
-		reset(iX, iY);
-	}
-	FCoord()
-	{
-		reset(0, 0);
+		set(iX, iY);
 	}
 	~FCoord()
 	{
 	}
 
-	inline void reset(int iX, int iY);
+	inline void set(int iX = 0, int iY = 0);
 	inline void resetInvalid();
 
-	int x() const;
-	int y() const;
+	int x() const
+	{
+		FAssert (isOnMap() || isInvalidPlotCoord());
+		return m_iX;
+	}
+	int y() const
+	{
+		FAssert (isOnMap() || isInvalidPlotCoord());
+		return m_iY;
+	}
 
-	FCoord neighbour(DirectionTypes direction) const;
-	bool hasNeighbour(DirectionTypes direction) const;
+	inline FCoord neighbour(DirectionTypes direction) const;
+	inline CvPlot* FCoord::neighbourPlot(DirectionTypes direction) const;
+	inline bool hasNeighbour(DirectionTypes direction) const;
 
-	CvPlot* plot();
-	bool isOnMap() const;
+	CvPlot* plot() const;
+	int plotNum() const;
+	inline bool isOnMap() const;
 	inline bool isInvalidPlotCoord() const;
+
+	static FCoord invalidCoord();
+	static FCoord nullCoord();
 
 protected:
 	int m_iX;
@@ -233,7 +245,7 @@ inline FCoord operator+(const FCoord &l, const FRelCoord &r)
 	return FCoord(l.x()+r.x(), l.y()+r.y());
 }
 
-inline void FCoord::reset(int iX, int iY)
+inline void FCoord::set(int iX, int iY)
 {
 	m_iX = iX;
 	m_iY = iY;
@@ -241,30 +253,24 @@ inline void FCoord::reset(int iX, int iY)
 
 inline void FCoord::resetInvalid()
 {
-	m_iX = INVALID_PLOT_COORD;
-	m_iY = INVALID_PLOT_COORD;
+	set(INVALID_PLOT_COORD, INVALID_PLOT_COORD);
 }
 
-inline int FCoord::x() const
-{
-	FAssert (isOnMap() || isInvalidPlotCoord());
-	return m_iX;
-}
-
-inline int FCoord::y() const
-{
-	FAssert (isOnMap() || isInvalidPlotCoord());
-	return m_iY;
-}
-
-FCoord FCoord::neighbour(DirectionTypes direction) const
+inline FCoord FCoord::neighbour(DirectionTypes direction) const
 {
 	FAssert (isOnMap());
 	FCoord n = *this + FDirCoord(direction);
 	return n;
 }
 
-bool FCoord::hasNeighbour(DirectionTypes direction) const
+inline CvPlot* FCoord::neighbourPlot(DirectionTypes direction) const
+{
+	FAssert (isOnMap());
+	FCoord n = *this + FDirCoord(direction);
+	return n.plot();
+}
+
+inline bool FCoord::hasNeighbour(DirectionTypes direction) const
 {
 	FAssert (isOnMap());
 	FCoord n = *this + FDirCoord(direction);

@@ -214,7 +214,7 @@ void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool b
 	m_iHotKeyNumber = defaultHotKeyNumber;
 	// m_iX = defaultX;
 	// m_iY = defaultY;
-	m_coord.reset(defaultX, defaultY);
+	m_coord.set(defaultX, defaultY);
 	m_iLastMoveTurn = defaultLastMoveTurn;
 	m_iGameTurnCreated = defaultGameTurnCreated;
 	m_iDamage = defaultDamage;
@@ -365,7 +365,7 @@ void CvUnit::read(CvSavegameReader reader)
 		}
 	}
 
-	m_coord.reset(tempX, tempY);
+	m_coord.set(tempX, tempY);
 
 	// The unit is loaded. Now set up the cache according to the read data.
 

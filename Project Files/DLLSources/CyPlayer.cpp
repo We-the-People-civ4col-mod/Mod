@@ -401,7 +401,7 @@ void CyPlayer::createGreatGeneral(int eGreatGeneralUnit, bool bIncrementExperien
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->createGreatGeneral((UnitTypes)eGreatGeneralUnit, bIncrementExperience, iX, iY);
+		m_pPlayer->createGreatGeneral((UnitTypes)eGreatGeneralUnit, bIncrementExperience, FCoord(iX, iY));
 	}
 }
 int CyPlayer::getGreatGeneralsCreated()
@@ -418,7 +418,7 @@ void CyPlayer::createGreatAdmiral(int eGreatAdmiralUnit, bool bIncrementExperien
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->createGreatAdmiral((UnitTypes)eGreatAdmiralUnit, bIncrementExperience, iX, iY);
+		m_pPlayer->createGreatAdmiral((UnitTypes)eGreatAdmiralUnit, bIncrementExperience, FCoord(iX, iY));
 	}
 }
 int CyPlayer::getGreatAdmiralsCreated()
@@ -436,14 +436,14 @@ void CyPlayer::createBraveLieutenant(int eBraveLieutenantUnit, int iX, int iY)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->createBraveLieutenant((UnitTypes)eBraveLieutenantUnit, iX, iY);
+		m_pPlayer->createBraveLieutenant((UnitTypes)eBraveLieutenantUnit, FCoord(iX, iY));
 	}
 }
 void CyPlayer::createCapableCaptain(int eCapableCaptainUnit, int iX, int iY)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->createCapableCaptain((UnitTypes)eCapableCaptainUnit, iX, iY);
+		m_pPlayer->createCapableCaptain((UnitTypes)eCapableCaptainUnit, FCoord(iX, iY));
 	}
 }
 // WTP, ray, Lieutenants and Captains - END

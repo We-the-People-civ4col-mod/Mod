@@ -214,9 +214,9 @@ void CvCity::init(int iID, PlayerTypes eOwner, FCoord initCoord, bool bBumpUnits
 	pPlot->setOwner(getOwnerINLINE(), bBumpUnits);
 	pPlot->setPlotCity(this);
 
-	for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+	for (DirectionTypes eDirection = FIRST_DIRECTION; eDirection < NUM_DIRECTION_TYPES; eDirection++)
 	{
-		pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+		pAdjacentPlot = coord().neighbourPlot(eDirection);
 
 		if (pAdjacentPlot != NULL)
 		{
@@ -746,25 +746,25 @@ void CvCity::updateVisibility()
 
 void CvCity::createGreatGeneral(UnitTypes eGreatGeneralUnit, bool bIncrementExperience)
 {
-	GET_PLAYER(getOwnerINLINE()).createGreatGeneral(eGreatGeneralUnit, bIncrementExperience, getX_INLINE(), getY_INLINE());
+	GET_PLAYER(getOwnerINLINE()).createGreatGeneral(eGreatGeneralUnit, bIncrementExperience, coord());
 }
 
 // R&R, ray, Great Admirals - START
 void CvCity::createGreatAdmiral(UnitTypes eGreatAdmiralUnit, bool bIncrementExperience)
 {
-	GET_PLAYER(getOwnerINLINE()).createGreatAdmiral(eGreatAdmiralUnit, bIncrementExperience, getX_INLINE(), getY_INLINE());
+	GET_PLAYER(getOwnerINLINE()).createGreatAdmiral(eGreatAdmiralUnit, bIncrementExperience, coord());
 }
 // R&R, ray, Great Admirals - END
 
 // WTP, ray, Lieutenants and Captains - START
 void CvCity::createBraveLieutenant(UnitTypes eBraveLieutenantUnit)
 {
-	GET_PLAYER(getOwnerINLINE()).createBraveLieutenant(eBraveLieutenantUnit, getX_INLINE(), getY_INLINE());
+	GET_PLAYER(getOwnerINLINE()).createBraveLieutenant(eBraveLieutenantUnit, coord());
 }
 
 void CvCity::createCapableCaptain(UnitTypes eCapableCaptainUnit)
 {
-	GET_PLAYER(getOwnerINLINE()).createCapableCaptain(eCapableCaptainUnit, getX_INLINE(), getY_INLINE());
+	GET_PLAYER(getOwnerINLINE()).createCapableCaptain(eCapableCaptainUnit, coord());
 }
 
 // WTP, ray, Lieutenants and Captains - END
@@ -9049,7 +9049,7 @@ bool CvCity::removePopulationUnit(CvUnit* pUnit, bool bDelete, ProfessionTypes e
 	{
 		//transfer back to player
 		GET_PLAYER(getOwnerINLINE()).addExistingUnit(pUnit);
-		pUnit->addToMap(getX_INLINE(), getY_INLINE());
+		pUnit->addToMap(coord());
 		pUnit->setProfession(eProfession);
 
 		if (pUnit->getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())

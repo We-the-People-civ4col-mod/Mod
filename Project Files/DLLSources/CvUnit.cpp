@@ -112,7 +112,7 @@ void CvUnit::reloadEntity()
 }
 
 
-void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI, PlayerTypes eOwner, int iX, int iY, DirectionTypes eFacingDirection, int iYieldStored)
+void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI, PlayerTypes eOwner, FCoord initCoord, DirectionTypes eFacingDirection, int iYieldStored)
 {
 	CvWString szBuffer;
 	int iUnitName;
@@ -128,7 +128,7 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 	m_eFacingDirection = eFacingDirection;
 	if(m_eFacingDirection == NO_DIRECTION)
 	{
-		CvPlot* pPlot = GC.getMapINLINE().plotINLINE(iX, iY);
+		CvPlot* pPlot = initCoord.plot();
 		if((pPlot != NULL) && pPlot->isWater() && (getDomainType() == DOMAIN_SEA))
 		{
 			m_eFacingDirection = (DirectionTypes) GC.getDefineINT("WATER_UNIT_FACING_DIRECTION");
@@ -165,7 +165,6 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 					GC.getGameINLINE().addGreatGeneralBornName(szName);
 					break;
 				}
-
 			}
 		}
 	}
@@ -196,7 +195,6 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 					GC.getGameINLINE().addGreatAdmiralBornName(szName);
 					break;
 				}
-
 			}
 		}
 	}
@@ -227,6 +225,7 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 			}
 		}
 	}
+
 	// Alter Code nur einfach in else
 	else {
 		iUnitName = GC.getGameINLINE().getUnitCreatedCount(getUnitType());
@@ -311,7 +310,7 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 		}
 	}
 
-	addToMap(iX, iY);
+	addToMap(initCoord);
 	AI_setUnitAIType(eUnitAI);
 
 	gDLL->getEventReporterIFace()->unitCreated(this);
@@ -581,7 +580,7 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 					bool bAlive = true;
 					if (pAttacker != NULL && pAttacker->getUnitInfo().isCapturesCargo())
 					{
-						pkCapturedUnit->setXY(pAttacker->getX_INLINE(), pAttacker->getY_INLINE());
+						pkCapturedUnit->jumpTo(pAttacker->coord());
 						if(pkCapturedUnit->getTransportUnit() == NULL) //failed to load
 						{
 							bAlive = false;
@@ -682,18 +681,18 @@ void CvUnit::removeFromMap()
 
 	AI_setUnitAIType(NO_UNITAI);
 
-	setXY(INVALID_PLOT_COORD, INVALID_PLOT_COORD, true);
+	jumpTo(FCoord::invalidCoord(), true);
 
 	joinGroup(NULL, false, false);
 }
 
-void CvUnit::addToMap(int iPlotX, int iPlotY)
+void CvUnit::addToMap(FCoord targetCoord)
 {
-	if((iPlotX != INVALID_PLOT_COORD) && (iPlotY != INVALID_PLOT_COORD))
+	if(!targetCoord.isInvalidPlotCoord())
 	{
 		//--------------------------------
 		// Init pre-setup() data
-		setXY(iPlotX, iPlotY, false, false);
+		jumpTo(targetCoord, false, false);
 
 		//--------------------------------
 		// Init non-saved data
@@ -710,6 +709,11 @@ void CvUnit::addToMap(int iPlotX, int iPlotY)
 	{
 		gDLL->getInterfaceIFace()->setDirty(GameData_DIRTY_BIT, true);
 	}
+}
+
+void CvUnit::addToMap(CvPlot *targetPlot)
+{
+	addToMap(targetPlot->coord());
 }
 
 void CvUnit::updateOwnerCache(int iChange)
@@ -930,7 +934,7 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 					FAssert(pCity != NULL);
 					if (pCity != NULL)
 					{
-						setPostCombatPlot(pCity->getX_INLINE(), pCity->getY_INLINE());
+						setPostCombatPlot(pCity->coord());
 						// R&R, ray, adapted change from C.B., with minor modifications
 						bCombatEndedUnresolved = false;
 						break;
@@ -961,7 +965,7 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				FAssert(pCity != NULL);
 				if (pCity != NULL)
 				{
-					pDefender->setPostCombatPlot(pCity->getX_INLINE(), pCity->getY_INLINE());
+					pDefender->setPostCombatPlot(pCity->coord());
 					// R&R, ray, adapted change from C.B., with minor modifications
 					bCombatEndedUnresolved = false;
 					break;
@@ -1002,7 +1006,7 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 						if (iBraveLieutenantChance > randomValue)
 						{
 							UnitTypes eBraveLieutentantUnitTypes = (UnitTypes)GC.getCivilizationInfo(pDefender->getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT"));
-							GET_PLAYER(pDefender->getOwnerINLINE()).createBraveLieutenant(eBraveLieutentantUnitTypes, pDefender->getX_INLINE(), pDefender->getY_INLINE());
+							GET_PLAYER(pDefender->getOwnerINLINE()).createBraveLieutenant(eBraveLieutentantUnitTypes, pDefender->coord());
 						}
 					}
 					else
@@ -1013,10 +1017,10 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 						{
 							UnitTypes eCapableCaptainUnitTypes = (UnitTypes)GC.getCivilizationInfo(pDefender->getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN"));
 							int iLoop;
-							CvCity* Captialcity = GET_PLAYER(pDefender->getOwnerINLINE()).firstCity(&iLoop);
-							if (Captialcity != 0)
+							CvCity* capitalCity = GET_PLAYER(pDefender->getOwnerINLINE()).firstCity(&iLoop);
+							if (capitalCity != NULL)
 							{
-								GET_PLAYER(pDefender->getOwnerINLINE()).createCapableCaptain(eCapableCaptainUnitTypes, Captialcity->getX_INLINE(), Captialcity->getY_INLINE());
+								GET_PLAYER(pDefender->getOwnerINLINE()).createCapableCaptain(eCapableCaptainUnitTypes, capitalCity->coord());
 							}
 						}
 					}
@@ -1058,7 +1062,7 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 						if (iBraveLieutenantChance > randomValue)
 						{
 							UnitTypes eBraveLieutentantUnitTypes = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT"));
-							GET_PLAYER(getOwnerINLINE()).createBraveLieutenant(eBraveLieutentantUnitTypes, getX_INLINE(), getY_INLINE());
+							GET_PLAYER(getOwnerINLINE()).createBraveLieutenant(eBraveLieutentantUnitTypes, coord());
 						}
 					}
 					else
@@ -1070,10 +1074,10 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 							UnitTypes eCapableCaptainUnitTypes = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN"));
 							//in this case we need to get the Capitol City
 							int iLoop;
-							CvCity* Captialcity = GET_PLAYER(getOwnerINLINE()).firstCity(&iLoop);
-							if (Captialcity != 0)
+							CvCity* capitalCity = GET_PLAYER(getOwnerINLINE()).firstCity(&iLoop);
+							if (capitalCity != 0)
 							{
-								GET_PLAYER(getOwnerINLINE()).createCapableCaptain(eCapableCaptainUnitTypes, Captialcity->getX_INLINE(), Captialcity->getY_INLINE());
+								GET_PLAYER(getOwnerINLINE()).createCapableCaptain(eCapableCaptainUnitTypes, capitalCity->coord());
 							}
 						}
 					}
@@ -1323,7 +1327,7 @@ void CvUnit::updateCombat(bool bQuick)
 					pDefender->setCombatUnit(NULL);
 
 					// changing position
-					pDefender->setXY(pEjectPlot->getX_INLINE(), pEjectPlot->getY_INLINE());
+					pDefender->jumpTo(pEjectPlot->coord());
 
 					if (pCityForMessage != NULL)
 					{
@@ -3690,7 +3694,7 @@ void CvUnit::move(CvPlot* pPlot, bool bShow)
 
 	changeMoves(pPlot->movementCost(this, plot()));
 
-	setXY(pPlot->getX_INLINE(), pPlot->getY_INLINE(), true, true, bShow, bShow);
+	jumpTo(pPlot->coord(), true, true, bShow, bShow);
 
 	// R&R, Robert Surcouf, Damage on Storm plots, Start
 	// R&R, bugfix: we only damage ships on Sea and not the transported units, ray, START
@@ -3806,7 +3810,7 @@ bool CvUnit::jumpToNearestValidPlot()
 	bool bValid = true;
 	if (pBestPlot != NULL)
 	{
-		setXY(pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE());
+		jumpTo(pBestPlot->coord());
 	}
 	else
 	{
@@ -10438,6 +10442,12 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 }
 
 
+void CvUnit::jumpTo(CvPlot *plot, bool bGroup, bool bUpdate, bool bShow, bool bCheckPlotVisible)
+{
+	jumpTo(plot->coord(), bGroup, bUpdate, bShow, bCheckPlotVisible);
+}
+
+
 void CvUnit::jumpTo(FCoord toCoord, bool bGroup, bool bUpdate, bool bShow, bool bCheckPlotVisible)
 {
 	CLLNode<IDInfo>* pUnitNode;
@@ -12601,7 +12611,7 @@ void CvUnit::setCombatUnit(CvUnit* pCombatUnit, bool bAttacking)
 		m_bCombatFocus = (bAttacking && !(gDLL->getInterfaceIFace()->isFocusedWidget()) && ((getOwnerINLINE() == GC.getGameINLINE().getActivePlayer()) || ((pCombatUnit->getOwnerINLINE() == GC.getGameINLINE().getActivePlayer()) && !(GC.getGameINLINE().isMPOption(MPOPTION_SIMULTANEOUS_TURNS)))));
 		m_combatUnit = pCombatUnit->getIDInfo();
 		setCombatDamage(0);
-		setPostCombatPlot(getX_INLINE(), getY_INLINE());
+		setPostCombatPlot(coord());
 	}
 	else
 	{
@@ -12628,11 +12638,11 @@ void CvUnit::setCombatUnit(CvUnit* pCombatUnit, bool bAttacking)
 			{
 				if (pPlot->isFriendlyCity(*this, true))
 				{
-					setXY(pPlot->getX_INLINE(), pPlot->getY_INLINE());
+					jumpTo(pPlot);
 					finishMoves();
 				}
 			}
-			setPostCombatPlot(INVALID_PLOT_COORD, INVALID_PLOT_COORD);
+			setPostCombatPlot(FCoord::invalidCoord());
 		}
 	}
 
@@ -12650,16 +12660,15 @@ CvPlot* CvUnit::getPostCombatPlot() const
 	return GC.getMapINLINE().plotByIndexINLINE(m_iPostCombatPlotIndex);
 }
 
-void CvUnit::setPostCombatPlot(int iX, int iY)
+void CvUnit::setPostCombatPlot(FCoord coord)
 {
-	m_iPostCombatPlotIndex = GC.getMapINLINE().isPlotINLINE(iX, iY) ? GC.getMapINLINE().plotNumINLINE(iX, iY) : -1;
+	m_iPostCombatPlotIndex = coord.isOnMap() ? coord.plotNum() : -1;
 }
 
 CvUnit* CvUnit::getTransportUnit() const
 {
 	return getUnit(m_transportUnit);
 }
-
 
 bool CvUnit::isCargo() const
 {
@@ -12754,7 +12763,7 @@ bool CvUnit::setTransportUnit(CvUnit* pTransportUnit, bool bUnload)
 			if (pPlot != pTransportUnit->plot())
 			{
 				FAssert(getUnitTravelState() != NO_UNIT_TRAVEL_STATE);
-				setXY(pTransportUnit->getX_INLINE(), pTransportUnit->getY_INLINE());
+				jumpTo(pTransportUnit->coord());
 			}
 
 			// PatchMod: Berth Size START
@@ -14696,7 +14705,7 @@ bool CvUnit::setSailEurope(EuropeTypes eEurope)
 	}
 	if (pBestPlot != NULL)
 	{
-		setXY(pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE());
+		jumpTo(pBestPlot->coord());
 		return true;
 	}
 	return false;

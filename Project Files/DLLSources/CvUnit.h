@@ -93,14 +93,15 @@ public:
 	virtual ~CvUnit();
 
 	void reloadEntity();
-	void init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI, PlayerTypes eOwner, int iX, int iY, DirectionTypes eFacingDirection, int iYieldStored);
+	void init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI, PlayerTypes eOwner, FCoord initCoord, DirectionTypes eFacingDirection, int iYieldStored);
 	void uninit();
 	void reset(int iID = 0, UnitTypes eUnit = NO_UNIT, PlayerTypes eOwner = NO_PLAYER, bool bConstructorCall = false);
 	void setupGraphical();
 	void convert(CvUnit* pUnit, bool bKill);
 	void kill(bool bDelay, CvUnit* pAttacker = NULL);
 	void removeFromMap();
-	void addToMap(int iPlotX, int iPlotY);
+	void addToMap(FCoord targetCoord);
+	void addToMap(CvPlot *targetPlot);
 	void updateOwnerCache(int iChange);
 
 	DllExport void NotifyEntity(MissionTypes eMission);
@@ -441,6 +442,7 @@ public:
 	}
 	void setXY(int iX, int iY, bool bGroup = false, bool bUpdate = true, bool bShow = false, bool bCheckPlotVisible = false);
 	void jumpTo(FCoord toCoord, bool bGroup = false, bool bUpdate = true, bool bShow = false, bool bCheckPlotVisible = false);
+	void jumpTo(CvPlot *plot, bool bGroup = false, bool bUpdate = true, bool bShow = false, bool bCheckPlotVisible = false);
 	bool at(int iX, int iY) const;
 	bool at(FCoord testCoord) const;
 	DllExport bool atPlot(const CvPlot* pPlot) const;
@@ -634,7 +636,7 @@ public:
 	DllExport CvUnit* getCombatUnit() const;
 	void setCombatUnit(CvUnit* pUnit, bool bAttacking = false);
 	DllExport CvPlot* getPostCombatPlot() const;
-	void setPostCombatPlot(int iX, int iY);
+	void setPostCombatPlot(FCoord coord);
 	DllExport CvUnit* getTransportUnit() const;
 	bool isCargo() const;
 	bool setTransportUnit(CvUnit* pTransportUnit, bool bUnload = true);

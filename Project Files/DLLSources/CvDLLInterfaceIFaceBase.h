@@ -80,6 +80,16 @@ public:
 	virtual void addMessage(PlayerTypes ePlayer, bool bForce, int iLength, CvWString szString, LPCTSTR pszSound = NULL,
 		InterfaceMessageTypes eType = MESSAGE_TYPE_INFO, LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,
 		int iFlashX = -1, int iFlashY = -1, bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false) = 0;
+
+	void addMessage(PlayerTypes ePlayer, bool bForce, int iLength, CvWString szString, LPCTSTR pszSound,
+			InterfaceMessageTypes eType, LPCSTR pszIcon, ColorTypes eFlashColor,
+			FCoord coord, bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false)
+			{
+				addMessage(ePlayer, bForce, iLength, szString, pszSound,
+						eType, pszIcon, eFlashColor,
+						coord.x(), coord.y(), bShowOffScreenArrows, bShowOnScreenArrows);
+			}
+
 	virtual void addCombatMessage(PlayerTypes ePlayer, CvWString szString) = 0;
 	virtual void addQuestMessage(PlayerTypes ePlayer, CvWString szString, int iQuestId) = 0;
 	virtual void addTutorialMessage(PlayerTypes ePlayer, CvWString szString) = 0;
@@ -130,6 +140,10 @@ public:
 	virtual int getDiplomacyTransportId(PlayerTypes eWho) = 0;
 
 	virtual void setMinimapColor(MinimapModeTypes eMinimapMode, int iX, int iY, ColorTypes eColor, float fAlpha) = 0;
+	void setMinimapColor(MinimapModeTypes eMinimapMode, FCoord coord, ColorTypes eColor, float fAlpha)
+	{
+		setMinimapColor(eMinimapMode, coord.x(), coord.y(), eColor, fAlpha);
+	}
 	virtual unsigned char* getMinimapBaseTexture() const = 0;
 	virtual void setEndTurnMessage(bool bNewValue) = 0;
 

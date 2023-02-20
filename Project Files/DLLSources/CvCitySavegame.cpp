@@ -614,7 +614,7 @@ void CvCity::read(CvSavegameReader reader)
 
 	}
 
-	m_coord.reset(tempX, tempY);
+	m_coord.set(tempX, tempY);
 
 	// BUG WORKAROUND. Reset any yield, which stores negative amount
 	// ideally this shouldn't be here, but it makes the asserts and error message

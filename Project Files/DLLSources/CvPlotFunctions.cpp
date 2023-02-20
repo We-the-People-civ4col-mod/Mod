@@ -40,7 +40,27 @@ bool FCoord::isOnMap() const
 	return bValidX && bValidY;
 }
 
-CvPlot* FCoord::plot()
+CvPlot* FCoord::plot() const
 {
 	return GC.getMapINLINE().plotINLINE(*this);
+}
+
+int FCoord::plotNum() const
+{
+	return GC.getMapINLINE().plotNumINLINE(*this);
+}
+
+FCoord FCoord::invalidCoord()
+{
+	FCoord n;
+	n.resetInvalid();
+	return n;
+}
+
+FCoord FCoord::nullCoord()
+{
+	// FCoord n;
+	// n.set();
+	// return n;
+	return FCoord();
 }

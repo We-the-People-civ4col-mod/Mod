@@ -219,6 +219,7 @@ public:
 	void getCivilizationCityName(CvWString& szBuffer, CivilizationTypes eCivilization) const;
 	bool isCityNameValid(const CvWString& szName, bool bTestDestroyed = true) const;
 	DllExport CvUnit* initUnit(UnitTypes eUnit, ProfessionTypes eProfession, int iX, int iY, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION, int iYieldStored = 0);
+	CvUnit* initUnit(UnitTypes eUnit, ProfessionTypes eProfession, FCoord initCoord, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION, int iYieldStored = 0);
 	CvUnit* initEuropeUnit(UnitTypes eUnit, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION);
 	bool initEuropeSettler(bool bPayEquipment);
 	bool initEuropeTransport(bool bPay);
@@ -345,6 +346,7 @@ public:
 	void setAdvancedStartPoints(int iNewValue);
 	void changeAdvancedStartPoints(int iChange);
 	DllExport void doAdvancedStartAction(AdvancedStartActionTypes eAction, int iX, int iY, int iData, bool bAdd);
+	void doAdvancedStartAction(AdvancedStartActionTypes eAction, FCoord coord, int iData, bool bAdd);
 	DllExport int getAdvancedStartUnitCost(UnitTypes eUnit, bool bAdd, CvPlot* pPlot = NULL);
 	DllExport int getAdvancedStartCityCost(bool bAdd, CvPlot* pPlot = NULL);
 	DllExport int getAdvancedStartPopCost(bool bAdd, CvCity* pCity = NULL);
@@ -354,21 +356,21 @@ public:
 	DllExport int getAdvancedStartRouteCost(RouteTypes eRoute, bool bAdd, CvPlot* pPlot = NULL);
 	DllExport int getAdvancedStartVisibilityCost(bool bAdd, CvPlot* pPlot = NULL);
 
-	void createGreatGeneral(UnitTypes eGreatGeneralUnit, bool bIncrementExperience, int iX, int iY);
+	void createGreatGeneral(UnitTypes eGreatGeneralUnit, bool bIncrementExperience, const FCoord coord);
 	int getGreatGeneralsCreated() const;
 	void incrementGreatGeneralsCreated();
 	int getGreatGeneralsThresholdModifier() const;
 	void changeGreatGeneralsThresholdModifier(int iChange);
 	// R&R, ray, Great Admirals - START
-	void createGreatAdmiral(UnitTypes eGreatAdmiralUnit, bool bIncrementExperience, int iX, int iY);
+	void createGreatAdmiral(UnitTypes eGreatAdmiralUnit, bool bIncrementExperience, const FCoord coord);
 	int getGreatAdmiralsCreated() const;
 	void incrementGreatAdmiralsCreated();
 	int getGreatAdmiralsThresholdModifier() const;
 	void changeGreatAdmiralsThresholdModifier(int iChange);
 	// R&R, ray, Great Admirals - END
 	// WTP, ray, Lieutenants and Captains - START
-	void createBraveLieutenant(UnitTypes eBraveLieutenantUnit, int iX, int iY);
-	void createCapableCaptain(UnitTypes eCapableCaptainUnit, int iX, int iY);
+	void createBraveLieutenant(UnitTypes eBraveLieutenantUnit, const FCoord coord);
+	void createCapableCaptain(UnitTypes eCapableCaptainUnit, const FCoord coord);
 	// WTP, ray, Lieutenants and Captains - END
 	int getGreatGeneralRateModifier() const;
 	void changeGreatGeneralRateModifier(int iChange);

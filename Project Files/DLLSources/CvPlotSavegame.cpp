@@ -185,7 +185,7 @@ void CvPlot::resetSavedData()
 {
 	// m_iX = defaultX;
 	// m_iY = defaultY;
-	m_coord.reset(defaultX, defaultY);
+	m_coord.set(defaultX, defaultY);
 	m_iArea = defaultArea;
 	m_iFeatureVariety = defaultFeatureVarity;
 
@@ -370,7 +370,7 @@ void CvPlot::read(CvSavegameReader reader)
 		}
 	}
 
-	m_coord.reset(tempX, tempY);
+	m_coord.set(tempX, tempY);
 
 	// Loading done. Set up the cache (if any).
 	updateImpassable();
