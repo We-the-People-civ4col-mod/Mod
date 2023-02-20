@@ -10524,19 +10524,3 @@ bool CvPlot::isBarbarianUnitOnAdjacentPlot(int /*UnitClassTypes*/ iIndex) const
 	return false;
 }
 // WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
-
-CvPlot *FCoord::plot()
-{
-	return GC.getMapINLINE().plotINLINE(*this);
-}
-
-bool FCoord::isOnMap() const
-{
-	if(isInvalidPlotCoord())
-		{
-			return false;
-		}
-	bool bValidX = (x() >= 0 && x() < GC.getMapINLINE().getGridWidthINLINE());
-	bool bValidY = (y() >= 0 && y() < GC.getMapINLINE().getGridHeightINLINE());
-	return bValidX && bValidY;
-}

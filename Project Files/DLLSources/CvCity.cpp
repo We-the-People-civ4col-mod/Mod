@@ -43,7 +43,7 @@ CvCity::CvCity()
 
 	m_ePreferredYieldAtCityPlot = NO_YIELD;
 
-	reset(0, NO_PLAYER, 0, 0, true);
+	reset(0, NO_PLAYER, FCoord(0, 0), true);
 }
 
 CvCity::~CvCity()
@@ -52,16 +52,22 @@ CvCity::~CvCity()
 	CvDLLEntity::destroyEntity();			// delete CvCityEntity and detach from us
 
 	uninit();
-
 }
 
 
 void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 {
+	FCoord initCoord(iX, iY);
+	init(iID, eOwner, initCoord, bBumpUnits);
+}
+
+
+void CvCity::init(int iID, PlayerTypes eOwner, FCoord initCoord, bool bBumpUnits)
+{
 	std::vector<int> aOldAttitude(MAX_PLAYERS, 0);
-	for (int i = 0; i < MAX_PLAYERS; ++i)
+	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
 	{
-		CvPlayerAI& kPlayer = GET_PLAYER((PlayerTypes) i );
+		CvPlayerAI& kPlayer = GET_PLAYER(ePlayer);
 		if (kPlayer.isAlive())
 		{
 			kPlayer.AI_invalidateCloseBordersAttitudeCache();
@@ -73,7 +79,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 	CvPlot* pPlot;
 	//BuildingTypes eLoopBuilding;
 
-	pPlot = GC.getMapINLINE().plotINLINE(iX, iY);
+	pPlot = initCoord.plot();
 
 	//--------------------------------
 	// Log this event
@@ -82,14 +88,14 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 		if (gDLL->getChtLvl() > 0)
 		{
 			TCHAR szOut[1024];
-			sprintf(szOut, "Player %d City %d built at %d:%d\n", eOwner, iID, iX, iY);
+			sprintf(szOut, "Player %d City %d built at %d:%d\n", eOwner, iID, initCoord.x(), initCoord.y());
 			gDLL->messageControlLog(szOut);
 		}
 	}
 
 	//--------------------------------
 	// Init saved data
-	reset(iID, eOwner, pPlot->getX_INLINE(), pPlot->getY_INLINE());
+	reset(iID, eOwner, initCoord);
 	// R&R, ray, adjustment Domestic Markets for Luxury Goods needed
 	// R&R, Androrc, Domestic Market
 	if(!isNative())
@@ -223,8 +229,8 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 	}
 
 	CyArgsList argsList;
-	argsList.add(iX);
-	argsList.add(iY);
+	argsList.add(initCoord.x());
+	argsList.add(initCoord.y());
 	long lResult=0;
 	gDLL->getPythonIFace()->callFunction(PYGameModule, "citiesDestroyFeatures", argsList.makeFunctionArgs(), &lResult);
 
@@ -239,13 +245,13 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 	pPlot->setImprovementType(NO_IMPROVEMENT);
 	pPlot->updateCityRoute();
 
-	for (int iI = 0; iI < MAX_TEAMS; iI++)
+	for (Teamtypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
 	{
-		if (GET_TEAM((TeamTypes)iI).isAlive())
+		if (GET_TEAM(eTeam).isAlive())
 		{
-			if (pPlot->isVisible(((TeamTypes)iI), false))
+			if (pPlot->isVisible((eTeam), false))
 			{
-				setRevealed(((TeamTypes)iI), true);
+				setRevealed((eTeam), true);
 			}
 		}
 	}
@@ -271,7 +277,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 	pPlot->updateYield(false);
 	setYieldRateDirty();
 
-	changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + GC.getEraInfo(GC.getGameINLINE().getStartEra()).getFreePopulation());
+	changePopulation(GLOBAL_DEFINE_INITIAL_CITY_POPULATION + GC.getEraInfo(GC.getGameINLINE().getStartEra()).getFreePopulation());
 
 	GC.getMapINLINE().updateWorkingCity();
 
@@ -281,11 +287,11 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 
 	if (GC.getGameINLINE().isFinalInitialized() || isNative())
 	{
-		for (int iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
+		for (BuildingClassTypes eLoopBuildingClass = FIRST_BUILDING_CLASS; eLoopBuildingClass < NUM_BUILDING_CLASS_TYPES; eLoopBuildingClass++)
 		{
-			if (GC.getCivilizationInfo(getCivilizationType()).isCivilizationFreeBuildingClass(iI))
+			if (GC.getCivilizationInfo(getCivilizationType()).isCivilizationFreeBuildingClass(eLoopBuildingClass))
 			{
-				BuildingTypes eLoopBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(iI)));
+				BuildingTypes eLoopBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(eLoopBuildingClass)));
 
 				if (eLoopBuilding != NO_BUILDING)
 				{
@@ -355,6 +361,12 @@ void CvCity::uninit()
 // Initializes data members that are serialized.
 void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructorCall)
 {
+	FCoord resetCoord(iX, iY);
+	reset(iID, eOwner, resetCoord, bConstructorCall);
+}
+
+void CvCity::reset(int iID, PlayerTypes eOwner, FCoord resetCoord, bool bConstructorCall)
+{
 	//--------------------------------
 	// Uninit class
 	uninit();
@@ -364,7 +376,7 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 
 	m_iCacheMarketModifier = 0;
 
-	resetSavedData(iID, eOwner, iX, iY, bConstructorCall);
+	resetSavedData(iID, eOwner, resetCoord, bConstructorCall);
 
 	//storage loss trading (aka customs house and related things)
 	initCacheStorageLossTradeValues();

@@ -150,7 +150,6 @@ inline int FDirCoord::y() const {
 	return m_iY;
 }
 
-
 class FCoord
 {
 public:

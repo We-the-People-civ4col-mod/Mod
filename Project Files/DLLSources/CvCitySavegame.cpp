@@ -326,10 +326,16 @@ int getNumSavedEnumValuesCity()
 // assign everything to default values
 void CvCity::resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructorCall)
 {
+	FCoord resetCoord(iX, iY);
+	resetSavedData(iID, eOwner, resetCoord, bConstructorCall);
+}
+
+void CvCity::resetSavedData(int iID, PlayerTypes eOwner, FCoord resetCoord, bool bConstructorCall)
+{
 	m_iID = iID,
 	// m_iX = iX;
 	// m_iY = iY;
-	m_coord.reset(iX, iY);
+	m_coord = resetCoord;
 	m_iRallyX = defaultRallyX;
 	m_iRallyY = defaultRallyY;
 	m_iGameTurnFounded = defaultGameTurnFounded;
