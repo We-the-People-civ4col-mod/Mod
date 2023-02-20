@@ -189,12 +189,10 @@ public:
 
 	int x() const
 	{
-		FAssert (isOnMap() || isInvalidPlotCoord());
 		return m_iX;
 	}
 	int y() const
 	{
-		FAssert (isOnMap() || isInvalidPlotCoord());
 		return m_iY;
 	}
 
