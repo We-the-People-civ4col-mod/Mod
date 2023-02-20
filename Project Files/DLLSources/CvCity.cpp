@@ -43,7 +43,7 @@ CvCity::CvCity()
 
 	m_ePreferredYieldAtCityPlot = NO_YIELD;
 
-	reset(0, NO_PLAYER, FCoord(0, 0), true);
+	reset(0, NO_PLAYER, Coordinates(0, 0), true);
 }
 
 CvCity::~CvCity()
@@ -57,12 +57,12 @@ CvCity::~CvCity()
 
 // void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 // {
-// 	FCoord initCoord(iX, iY);
+// 	Coordinates initCoord(iX, iY);
 // 	init(iID, eOwner, initCoord, bBumpUnits);
 // }
 
 
-void CvCity::init(int iID, PlayerTypes eOwner, FCoord initCoord, bool bBumpUnits)
+void CvCity::init(int iID, PlayerTypes eOwner, Coordinates initCoord, bool bBumpUnits)
 {
 	std::vector<int> aOldAttitude(MAX_PLAYERS, 0);
 	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
@@ -361,11 +361,11 @@ void CvCity::uninit()
 // Initializes data members that are serialized.
 // void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructorCall)
 // {
-// 	FCoord resetCoord(iX, iY);
+// 	Coordinates resetCoord(iX, iY);
 // 	reset(iID, eOwner, resetCoord, bConstructorCall);
 // }
 
-void CvCity::reset(int iID, PlayerTypes eOwner, FCoord resetCoord, bool bConstructorCall)
+void CvCity::reset(int iID, PlayerTypes eOwner, Coordinates resetCoord, bool bConstructorCall)
 {
 	//--------------------------------
 	// Uninit class
@@ -3307,7 +3307,7 @@ bool CvCity::at(int iX,  int iY) const
 }
 
 
-bool CvCity::at(FCoord coord) const
+bool CvCity::at(Coordinates coord) const
 {
 	return coord == m_coord;
 }

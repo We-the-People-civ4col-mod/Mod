@@ -144,7 +144,7 @@ public:
 	CvPlot* syncRandPlot(int iFlags = 0, int iArea = -1, int iMinUnitDistance = -1, int iTimeout = 100);
 
 	DllExport CvCity* findCity(int iX, int iY, PlayerTypes eOwner = NO_PLAYER, TeamTypes eTeam = NO_TEAM, bool bSameArea = true, bool bCoastalOnly = false, TeamTypes eTeamAtWarWith = NO_TEAM, DirectionTypes eDirection = NO_DIRECTION, CvCity* pSkipCity = NULL);
-	CvCity* findCity(FCoord coord, PlayerTypes eOwner = NO_PLAYER, TeamTypes eTeam = NO_TEAM, bool bSameArea = true, bool bCoastalOnly = false, TeamTypes eTeamAtWarWith = NO_TEAM, DirectionTypes eDirection = NO_DIRECTION, CvCity* pSkipCity = NULL);
+	CvCity* findCity(Coordinates coord, PlayerTypes eOwner = NO_PLAYER, TeamTypes eTeam = NO_TEAM, bool bSameArea = true, bool bCoastalOnly = false, TeamTypes eTeamAtWarWith = NO_TEAM, DirectionTypes eDirection = NO_DIRECTION, CvCity* pSkipCity = NULL);
 	CvSelectionGroup* findSelectionGroup(int iX, int iY, PlayerTypes eOwner = NO_PLAYER, bool bReadyToSelect = false);
 
 	CvArea* findBiggestArea(bool bWater);
@@ -159,7 +159,7 @@ public:
 		return ((iX >= 0) && (iX < getGridWidthINLINE()) && (iY >= 0) && (iY < getGridHeightINLINE()));
 	}
 
-	inline int isPlotINLINE(FCoord coord) const
+	inline int isPlotINLINE(Coordinates coord) const
 	{
 		return coord.isOnMap();
 	}
@@ -178,7 +178,7 @@ public:
 		return ((iY * getGridWidthINLINE()) + iX);
 	}
 
-	inline int plotNumINLINE(FCoord coord) const
+	inline int plotNumINLINE(Coordinates coord) const
 	{
 		return ((coord.y() * getGridWidthINLINE()) + coord.x());
 	}
@@ -273,7 +273,7 @@ public:
 		return ((isPlotINLINE(iMapX, iMapY)) ? &(m_pMapPlots[plotNumINLINE(iMapX, iMapY)]) : NULL);
 	}
 
-	__forceinline CvPlot* plotINLINE(FCoord coord) const
+	__forceinline CvPlot* plotINLINE(Coordinates coord) const
 	{
 		if(!coord.isOnMap())
 			{
@@ -290,7 +290,7 @@ public:
 		return &(m_pMapPlots[plotNum(iX, iY)]);
 	} // <advc.inl> Even faster and less confusingly named; replacing the above in most places.
 
-	__forceinline CvPlot* plotSoren(FCoord coord) const
+	__forceinline CvPlot* plotSoren(Coordinates coord) const
 	{
 		if (coord.isInvalidPlotCoord())
 			return NULL;
@@ -304,7 +304,7 @@ public:
 		return m_pMapPlots[plotNum(x, y)];
 	} // </advc.inl>
 
-	__forceinline CvPlot& getPlot(FCoord coord) const
+	__forceinline CvPlot& getPlot(Coordinates coord) const
 	{
 		FAssert(isPlotINLINE(coord));
 		return m_pMapPlots[plotNumINLINE(coord)];

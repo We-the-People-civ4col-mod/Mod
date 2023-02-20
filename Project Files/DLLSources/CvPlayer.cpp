@@ -953,7 +953,7 @@ CvPlot* CvPlayer::findStartingPlot(bool bRandomize)
 }
 
 
-CvCity* CvPlayer::initCity(FCoord initCoord, bool bBumpUnits)
+CvCity* CvPlayer::initCity(Coordinates initCoord, bool bBumpUnits)
 {
 	PROFILE_FUNC();
 
@@ -1579,10 +1579,10 @@ bool CvPlayer::isCityNameValid(const CvWString& szName, bool bTestDestroyed) con
 
 CvUnit* CvPlayer::initUnit(UnitTypes eUnit, ProfessionTypes eProfession, int iX, int iY, UnitAITypes eUnitAI, DirectionTypes eFacingDirection, int iYieldStored)
 {
-	return initUnit(eUnit, eProfession, FCoord(iX, iY), eUnitAI, eFacingDirection, iYieldStored);
+	return initUnit(eUnit, eProfession, Coordinates(iX, iY), eUnitAI, eFacingDirection, iYieldStored);
 }
 
-CvUnit* CvPlayer::initUnit(UnitTypes eUnit, ProfessionTypes eProfession, FCoord initCoord, UnitAITypes eUnitAI, DirectionTypes eFacingDirection, int iYieldStored)
+CvUnit* CvPlayer::initUnit(UnitTypes eUnit, ProfessionTypes eProfession, Coordinates initCoord, UnitAITypes eUnitAI, DirectionTypes eFacingDirection, int iYieldStored)
 {
 	PROFILE_FUNC();
 
@@ -1618,7 +1618,7 @@ CvUnit* CvPlayer::initUnit(UnitTypes eUnit, ProfessionTypes eProfession, FCoord 
 
 CvUnit* CvPlayer::initEuropeUnit(UnitTypes eUnit, UnitAITypes eUnitAI, DirectionTypes eFacingDirection)
 {
-	CvUnit* pUnit = initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), FCoord::invalidCoord(), eUnitAI, eFacingDirection);
+	CvUnit* pUnit = initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), Coordinates::invalidCoord(), eUnitAI, eFacingDirection);
 	unloadUnitToEurope(pUnit);
 	return pUnit;
 }
@@ -1663,7 +1663,7 @@ bool CvPlayer::initEuropeSettler(bool bPayEquipment)
 		{
 			changeGold(-iEquipmentCosts);
 			UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
-			CvUnit* pUnit = initUnit(eUnit, eSettlerProfession, FCoord::invalidCoord(), UNITAI_SETTLER, NO_DIRECTION);
+			CvUnit* pUnit = initUnit(eUnit, eSettlerProfession, Coordinates::invalidCoord(), UNITAI_SETTLER, NO_DIRECTION);
 			unloadUnitToEurope(pUnit);
 			return true;
 		}
@@ -1702,7 +1702,7 @@ bool CvPlayer::initEuropeTransport(bool bPay)
 /*** TRIANGLETRADE 10/23/08 by DPII ***/
 CvUnit* CvPlayer::initAfricaUnit(UnitTypes eUnit, UnitAITypes eUnitAI, DirectionTypes eFacingDirection)
 {
-	CvUnit* pUnit = initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), FCoord::invalidCoord(), eUnitAI, eFacingDirection);
+	CvUnit* pUnit = initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), Coordinates::invalidCoord(), eUnitAI, eFacingDirection);
 	unloadUnitToAfrica(pUnit);
 	return pUnit;
 }
@@ -1711,7 +1711,7 @@ CvUnit* CvPlayer::initAfricaUnit(UnitTypes eUnit, UnitAITypes eUnitAI, Direction
 // R&R, ray, Port Royal
 CvUnit* CvPlayer::initPortRoyalUnit(UnitTypes eUnit, UnitAITypes eUnitAI, DirectionTypes eFacingDirection)
 {
-	CvUnit* pUnit = initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), FCoord::invalidCoord(), eUnitAI, eFacingDirection);
+	CvUnit* pUnit = initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), Coordinates::invalidCoord(), eUnitAI, eFacingDirection);
 	unloadUnitToPortRoyal(pUnit);
 	return pUnit;
 }
@@ -6322,7 +6322,7 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 }
 
 
-bool CvPlayer::canFound(FCoord foundCoord, bool bTestVisible) const
+bool CvPlayer::canFound(Coordinates foundCoord, bool bTestVisible) const
 {
 	CvPlot* pPlot;
 	CvPlot* pLoopPlot;
@@ -6480,7 +6480,7 @@ bool CvPlayer::canFound(FCoord foundCoord, bool bTestVisible) const
 }
 
 
-CvCity* CvPlayer::found(FCoord foundCoord)
+CvCity* CvPlayer::found(Coordinates foundCoord)
 {
 	if (!canFound(foundCoord))
 	{
@@ -11983,10 +11983,10 @@ void CvPlayer::doCrosses()
 
 void CvPlayer::doAdvancedStartAction(AdvancedStartActionTypes eAction, int iX, int iY, int iData, bool bAdd)
 {
-	doAdvancedStartAction(eAction, FCoord(iX, iY), iData, bAdd);
+	doAdvancedStartAction(eAction, Coordinates(iX, iY), iData, bAdd);
 }
 
-void CvPlayer::doAdvancedStartAction(AdvancedStartActionTypes eAction, FCoord coord, int iData, bool bAdd)
+void CvPlayer::doAdvancedStartAction(AdvancedStartActionTypes eAction, Coordinates coord, int iData, bool bAdd)
 {
 	if (getAdvancedStartPoints() < 0)
 	{
@@ -13485,7 +13485,7 @@ void CvPlayer::setPbemNewTurn(bool bNew)
 	m_bPbemNewTurn = bNew;
 }
 
-void CvPlayer::createGreatGeneral(UnitTypes eGreatGeneralUnit, bool bIncrementExperience, const FCoord coord)
+void CvPlayer::createGreatGeneral(UnitTypes eGreatGeneralUnit, bool bIncrementExperience, const Coordinates coord)
 {
 	CvUnit* pGreatUnit = initUnit(eGreatGeneralUnit, GC.getUnitInfo(eGreatGeneralUnit).getDefaultProfession(), coord);
 	if (NULL == pGreatUnit)
@@ -13551,7 +13551,7 @@ void CvPlayer::createGreatGeneral(UnitTypes eGreatGeneralUnit, bool bIncrementEx
 }
 
 // R&R, ray, Great Admirals - START
-void CvPlayer::createGreatAdmiral(UnitTypes eGreatAdmirallUnit, bool bIncrementExperience, const FCoord coord)
+void CvPlayer::createGreatAdmiral(UnitTypes eGreatAdmirallUnit, bool bIncrementExperience, const Coordinates coord)
 {
 	CvUnit* pGreatUnit = initUnit(eGreatAdmirallUnit, GC.getUnitInfo(eGreatAdmirallUnit).getDefaultProfession(), coord);
 	if (NULL == pGreatUnit)
@@ -13616,7 +13616,7 @@ void CvPlayer::createGreatAdmiral(UnitTypes eGreatAdmirallUnit, bool bIncrementE
 	}
 }
 // R&R, ray, Great Admirals - END
-void CvPlayer::createBraveLieutenant(UnitTypes eBraveLieutentantUnit, const FCoord coord)
+void CvPlayer::createBraveLieutenant(UnitTypes eBraveLieutentantUnit, const Coordinates coord)
 {
 	CvUnit* pGreatUnit = initUnit(eBraveLieutentantUnit, GC.getUnitInfo(eBraveLieutentantUnit).getDefaultProfession(), coord);
 	if (NULL == pGreatUnit)
@@ -13662,7 +13662,7 @@ void CvPlayer::createBraveLieutenant(UnitTypes eBraveLieutentantUnit, const FCoo
 }
 
 
-void CvPlayer::createCapableCaptain(UnitTypes eCapableCaptainUnit, const FCoord coord)
+void CvPlayer::createCapableCaptain(UnitTypes eCapableCaptainUnit, const Coordinates coord)
 {
 	CvUnit* pGreatUnit = initUnit(eCapableCaptainUnit, GC.getUnitInfo(eCapableCaptainUnit).getDefaultProfession(), coord);
 	if (NULL == pGreatUnit)

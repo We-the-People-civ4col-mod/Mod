@@ -1325,7 +1325,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 	PROFILE_FUNC();
 	CvPlot* pPlot = GC.getMapINLINE().plotINLINE(iX, iY);
 
-	if (!canFound(FCoord(iX, iY)))
+	if (!canFound(Coordinates(iX, iY)))
 	{
 		return 0;
 	}
@@ -2166,7 +2166,7 @@ int CvPlayerAI::AI_foundValueNative(int iX, int iY, bool allowSettleOnBonus) con
 		return 0;
 	}
 
-	if (!canFound(FCoord(iX, iY), false))
+	if (!canFound(Coordinates(iX, iY), false))
 	{
 		return 0;
 	}

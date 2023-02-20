@@ -211,7 +211,7 @@ public:
 	int startingPlotDistanceFactor(CvPlot* pPlot, PlayerTypes ePlayer, int iRange) const;
 	int findStartingArea() const;
 	CvPlot* findStartingPlot(bool bRandomize = false);
-	CvCity* initCity(FCoord initCoord, bool bBumpUnits);
+	CvCity* initCity(Coordinates initCoord, bool bBumpUnits);
 	void acquireCity(CvCity* pCity, bool bConquest, bool bTrade);
 	void killCities();
 	const CvWString getNewCityName() const;
@@ -219,7 +219,7 @@ public:
 	void getCivilizationCityName(CvWString& szBuffer, CivilizationTypes eCivilization) const;
 	bool isCityNameValid(const CvWString& szName, bool bTestDestroyed = true) const;
 	DllExport CvUnit* initUnit(UnitTypes eUnit, ProfessionTypes eProfession, int iX, int iY, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION, int iYieldStored = 0);
-	CvUnit* initUnit(UnitTypes eUnit, ProfessionTypes eProfession, FCoord initCoord, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION, int iYieldStored = 0);
+	CvUnit* initUnit(UnitTypes eUnit, ProfessionTypes eProfession, Coordinates initCoord, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION, int iYieldStored = 0);
 	CvUnit* initEuropeUnit(UnitTypes eUnit, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION);
 	bool initEuropeSettler(bool bPayEquipment);
 	bool initEuropeTransport(bool bPay);
@@ -300,8 +300,8 @@ public:
 	int receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit);
 	void receiveRandomGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit);
 	void doGoody(CvPlot* pPlot, CvUnit* pUnit);
-	bool canFound(FCoord foundCoord, bool bTestVisible = false) const;
-	CvCity *found(FCoord foundCoord);
+	bool canFound(Coordinates foundCoord, bool bTestVisible = false) const;
+	CvCity *found(Coordinates foundCoord);
 	bool canTrain(UnitTypes eUnit, bool bContinue = false, bool bTestVisible = false, bool bIgnoreCost = false) const;
 	bool canConstruct(BuildingTypes eBuilding, bool bContinue = false, bool bTestVisible = false, bool bIgnoreCost = false) const;
 	int getYieldProductionNeeded(UnitTypes eUnit, YieldTypes eYield) const;
@@ -346,7 +346,7 @@ public:
 	void setAdvancedStartPoints(int iNewValue);
 	void changeAdvancedStartPoints(int iChange);
 	DllExport void doAdvancedStartAction(AdvancedStartActionTypes eAction, int iX, int iY, int iData, bool bAdd);
-	void doAdvancedStartAction(AdvancedStartActionTypes eAction, FCoord coord, int iData, bool bAdd);
+	void doAdvancedStartAction(AdvancedStartActionTypes eAction, Coordinates coord, int iData, bool bAdd);
 	DllExport int getAdvancedStartUnitCost(UnitTypes eUnit, bool bAdd, CvPlot* pPlot = NULL);
 	DllExport int getAdvancedStartCityCost(bool bAdd, CvPlot* pPlot = NULL);
 	DllExport int getAdvancedStartPopCost(bool bAdd, CvCity* pCity = NULL);
@@ -356,21 +356,21 @@ public:
 	DllExport int getAdvancedStartRouteCost(RouteTypes eRoute, bool bAdd, CvPlot* pPlot = NULL);
 	DllExport int getAdvancedStartVisibilityCost(bool bAdd, CvPlot* pPlot = NULL);
 
-	void createGreatGeneral(UnitTypes eGreatGeneralUnit, bool bIncrementExperience, const FCoord coord);
+	void createGreatGeneral(UnitTypes eGreatGeneralUnit, bool bIncrementExperience, const Coordinates coord);
 	int getGreatGeneralsCreated() const;
 	void incrementGreatGeneralsCreated();
 	int getGreatGeneralsThresholdModifier() const;
 	void changeGreatGeneralsThresholdModifier(int iChange);
 	// R&R, ray, Great Admirals - START
-	void createGreatAdmiral(UnitTypes eGreatAdmiralUnit, bool bIncrementExperience, const FCoord coord);
+	void createGreatAdmiral(UnitTypes eGreatAdmiralUnit, bool bIncrementExperience, const Coordinates coord);
 	int getGreatAdmiralsCreated() const;
 	void incrementGreatAdmiralsCreated();
 	int getGreatAdmiralsThresholdModifier() const;
 	void changeGreatAdmiralsThresholdModifier(int iChange);
 	// R&R, ray, Great Admirals - END
 	// WTP, ray, Lieutenants and Captains - START
-	void createBraveLieutenant(UnitTypes eBraveLieutenantUnit, const FCoord coord);
-	void createCapableCaptain(UnitTypes eCapableCaptainUnit, const FCoord coord);
+	void createBraveLieutenant(UnitTypes eBraveLieutenantUnit, const Coordinates coord);
+	void createCapableCaptain(UnitTypes eCapableCaptainUnit, const Coordinates coord);
 	// WTP, ray, Lieutenants and Captains - END
 	int getGreatGeneralRateModifier() const;
 	void changeGreatGeneralRateModifier(int iChange);

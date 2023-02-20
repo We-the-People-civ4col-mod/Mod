@@ -39,10 +39,10 @@ public:
 	CvCity();
 	virtual ~CvCity();
 	//void init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits);
-	void init(int iID, PlayerTypes eOwner, FCoord initCoord, bool bBumpUnits);
+	void init(int iID, PlayerTypes eOwner, Coordinates initCoord, bool bBumpUnits);
 	void uninit();
 	//void reset(int iID = 0, PlayerTypes eOwner = NO_PLAYER, int iX = 0, int iY = 0, bool bConstructorCall = false);
-	void reset(int iID = 0, PlayerTypes eOwner = NO_PLAYER, FCoord resetCoord = FCoord(0, 0), bool bConstructorCall = false);
+	void reset(int iID = 0, PlayerTypes eOwner = NO_PLAYER, Coordinates resetCoord = Coordinates(0, 0), bool bConstructorCall = false);
 	void setupGraphical();
 	void kill();
 
@@ -218,12 +218,12 @@ public:
 		return m_coord.y();
 	}
 #endif
-	inline FCoord coord() const
+	inline Coordinates coord() const
 	{
 		return m_coord;
 	}
 	bool at(int iX, int iY) const;
-	bool at(FCoord coord) const;
+	bool at(Coordinates coord) const;
 	bool at(CvPlot* pPlot) const;
 	DllExport CvPlot* plot() const;
 	int getArea() const;
@@ -634,7 +634,7 @@ public:
 	bool canTradeAway(PlayerTypes eToPlayer) const;
 
 	void resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructorCall);
-	void resetSavedData(int iID, PlayerTypes eOwner, FCoord resetCoord, bool bConstructorCall);
+	void resetSavedData(int iID, PlayerTypes eOwner, Coordinates resetCoord, bool bConstructorCall);
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);
 
@@ -788,7 +788,7 @@ public:
 
 protected:
 	int m_iID;
-	FCoord m_coord;
+	Coordinates m_coord;
 	// int m_iX;
 	// int m_iY;
 	int m_iRallyX;

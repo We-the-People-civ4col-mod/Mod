@@ -112,7 +112,7 @@ void CvUnit::reloadEntity()
 }
 
 
-void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI, PlayerTypes eOwner, FCoord initCoord, DirectionTypes eFacingDirection, int iYieldStored)
+void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI, PlayerTypes eOwner, Coordinates initCoord, DirectionTypes eFacingDirection, int iYieldStored)
 {
 	CvWString szBuffer;
 	int iUnitName;
@@ -681,12 +681,12 @@ void CvUnit::removeFromMap()
 
 	AI_setUnitAIType(NO_UNITAI);
 
-	jumpTo(FCoord::invalidCoord(), true);
+	jumpTo(Coordinates::invalidCoord(), true);
 
 	joinGroup(NULL, false, false);
 }
 
-void CvUnit::addToMap(FCoord targetCoord)
+void CvUnit::addToMap(Coordinates targetCoord)
 {
 	if(!targetCoord.isInvalidPlotCoord())
 	{
@@ -10437,7 +10437,7 @@ int CvUnit::getY() const
 
 void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool bCheckPlotVisible)
 {
-	FCoord toCoord(iX, iY);
+	Coordinates toCoord(iX, iY);
 	jumpTo(toCoord, bGroup, bUpdate, bShow, bCheckPlotVisible);
 }
 
@@ -10448,7 +10448,7 @@ void CvUnit::jumpTo(CvPlot *plot, bool bGroup, bool bUpdate, bool bShow, bool bC
 }
 
 
-void CvUnit::jumpTo(FCoord toCoord, bool bGroup, bool bUpdate, bool bShow, bool bCheckPlotVisible)
+void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, bool bCheckPlotVisible)
 {
 	CLLNode<IDInfo>* pUnitNode;
 	CvCity* pOldCity;
@@ -10901,7 +10901,7 @@ bool CvUnit::at(int iX, int iY) const
 }
 
 
-bool CvUnit::at(FCoord testCoord) const
+bool CvUnit::at(Coordinates testCoord) const
 {
 	return (testCoord == coord());
 }
@@ -12642,7 +12642,7 @@ void CvUnit::setCombatUnit(CvUnit* pCombatUnit, bool bAttacking)
 					finishMoves();
 				}
 			}
-			setPostCombatPlot(FCoord::invalidCoord());
+			setPostCombatPlot(Coordinates::invalidCoord());
 		}
 	}
 
@@ -12660,7 +12660,7 @@ CvPlot* CvUnit::getPostCombatPlot() const
 	return GC.getMapINLINE().plotByIndexINLINE(m_iPostCombatPlotIndex);
 }
 
-void CvUnit::setPostCombatPlot(FCoord coord)
+void CvUnit::setPostCombatPlot(Coordinates coord)
 {
 	m_iPostCombatPlotIndex = coord.isOnMap() ? coord.plotNum() : -1;
 }

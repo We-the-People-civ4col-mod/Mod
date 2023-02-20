@@ -152,7 +152,7 @@ inline int plotDistance(int iX1, int iY1, int iX2, int iY2)
 	return (std::max(iDX, iDY) + (std::min(iDX, iDY) / 2));
 }
 
-inline int plotDistance(FCoord c1, FCoord c2)
+inline int plotDistance(Coordinates c1, Coordinates c2)
 {
 	const int iDX = xDistance(c1.x(), c2.x());
 	const int iDY = yDistance(c1.y(), c2.y());
@@ -186,7 +186,7 @@ inline int stepDistance(int iX1, int iY1, int iX2, int iY2)
 	return std::max(xDistance(iX1, iX2), yDistance(iY1, iY2));
 }
 
-inline int stepDistance(const FCoord c1, const FCoord c2)
+inline int stepDistance(const Coordinates c1, const Coordinates c2)
 {
 	return stepDistance(c1.x(), c1.y(), c2.x(), c2.y());
 }
@@ -218,7 +218,7 @@ inline CvPlot* plotXY(int iX, int iY, int iDX, int iDY)
 	return GC.getMapINLINE().plotINLINE((iX + iDX), (iY + iDY));
 }
 
-inline CvPlot* plotXY(FCoord baseCoord, FRelCoord relCoord)
+inline CvPlot* plotXY(Coordinates baseCoord, FRelCoord relCoord)
 {
 	return (baseCoord + relCoord).plot();
 }

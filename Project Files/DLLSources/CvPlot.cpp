@@ -4497,7 +4497,7 @@ bool CvPlot::at(int iX, int iY) const
 	return ((getX_INLINE() == iX) && (getY_INLINE() == iY));
 }
 
-bool CvPlot::at(FCoord coord) const
+bool CvPlot::at(Coordinates coord) const
 {
 	return (coord == m_coord);
 }

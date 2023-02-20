@@ -93,14 +93,14 @@ public:
 	virtual ~CvUnit();
 
 	void reloadEntity();
-	void init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI, PlayerTypes eOwner, FCoord initCoord, DirectionTypes eFacingDirection, int iYieldStored);
+	void init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI, PlayerTypes eOwner, Coordinates initCoord, DirectionTypes eFacingDirection, int iYieldStored);
 	void uninit();
 	void reset(int iID = 0, UnitTypes eUnit = NO_UNIT, PlayerTypes eOwner = NO_PLAYER, bool bConstructorCall = false);
 	void setupGraphical();
 	void convert(CvUnit* pUnit, bool bKill);
 	void kill(bool bDelay, CvUnit* pAttacker = NULL);
 	void removeFromMap();
-	void addToMap(FCoord targetCoord);
+	void addToMap(Coordinates targetCoord);
 	void addToMap(CvPlot *targetPlot);
 	void updateOwnerCache(int iChange);
 
@@ -436,15 +436,15 @@ public:
 		return m_coord.y();
 	}
 #endif
-	inline const FCoord& coord() const
+	inline const Coordinates& coord() const
 	{
 		return m_coord;
 	}
 	void setXY(int iX, int iY, bool bGroup = false, bool bUpdate = true, bool bShow = false, bool bCheckPlotVisible = false);
-	void jumpTo(FCoord toCoord, bool bGroup = false, bool bUpdate = true, bool bShow = false, bool bCheckPlotVisible = false);
+	void jumpTo(Coordinates toCoord, bool bGroup = false, bool bUpdate = true, bool bShow = false, bool bCheckPlotVisible = false);
 	void jumpTo(CvPlot *plot, bool bGroup = false, bool bUpdate = true, bool bShow = false, bool bCheckPlotVisible = false);
 	bool at(int iX, int iY) const;
-	bool at(FCoord testCoord) const;
+	bool at(Coordinates testCoord) const;
 	DllExport bool atPlot(const CvPlot* pPlot) const;
 	DllExport CvPlot* plot() const;
 	CvCity* getCity() const;
@@ -636,7 +636,7 @@ public:
 	DllExport CvUnit* getCombatUnit() const;
 	void setCombatUnit(CvUnit* pUnit, bool bAttacking = false);
 	DllExport CvPlot* getPostCombatPlot() const;
-	void setPostCombatPlot(FCoord coord);
+	void setPostCombatPlot(Coordinates coord);
 	DllExport CvUnit* getTransportUnit() const;
 	bool isCargo() const;
 	bool setTransportUnit(CvUnit* pTransportUnit, bool bUnload = true);
@@ -835,7 +835,7 @@ protected:
 	int m_iHotKeyNumber;
 	// int m_iX;
 	// int m_iY;
-	FCoord m_coord;
+	Coordinates m_coord;
 	int m_iLastMoveTurn;
 	int m_iGameTurnCreated;
 	int m_iDamage;

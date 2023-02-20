@@ -718,11 +718,11 @@ CvPlot* CvMap::syncRandPlot(int iFlags, int iArea, int iMinUnitDistance, int iTi
 
 CvCity* CvMap::findCity(int iX, int iY, PlayerTypes eOwner, TeamTypes eTeam, bool bSameArea, bool bCoastalOnly, TeamTypes eTeamAtWarWith, DirectionTypes eDirection, CvCity* pSkipCity)
 {
-	return findCity(FCoord(iX, iY), eOwner, eTeam, bSameArea, bCoastalOnly, eTeamAtWarWith, eDirection, pSkipCity);
+	return findCity(Coordinates(iX, iY), eOwner, eTeam, bSameArea, bCoastalOnly, eTeamAtWarWith, eDirection, pSkipCity);
 }
 
 
-CvCity* CvMap::findCity(FCoord coord, PlayerTypes eOwner, TeamTypes eTeam, bool bSameArea, bool bCoastalOnly, TeamTypes eTeamAtWarWith, DirectionTypes eDirection, CvCity* pSkipCity)
+CvCity* CvMap::findCity(Coordinates coord, PlayerTypes eOwner, TeamTypes eTeam, bool bSameArea, bool bCoastalOnly, TeamTypes eTeamAtWarWith, DirectionTypes eDirection, CvCity* pSkipCity)
 {
 	int iBestValue = MAX_INT;
 	CvCity* pBestCity = NULL;
@@ -883,7 +883,7 @@ bool CvMap::findWater(CvPlot* pPlot, int iRange, bool bFreshWater)
 bool CvMap::isPlot(int iX, int iY) const
 {
 	//return isPlotINLINE(iX, iY);
-	FCoord coord(iX, iY);
+	Coordinates coord(iX, iY);
 	return isPlotINLINE(coord);
 }
 

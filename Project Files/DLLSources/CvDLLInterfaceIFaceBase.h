@@ -83,7 +83,7 @@ public:
 
 	void addMessage(PlayerTypes ePlayer, bool bForce, int iLength, CvWString szString, LPCTSTR pszSound,
 			InterfaceMessageTypes eType, LPCSTR pszIcon, ColorTypes eFlashColor,
-			FCoord coord, bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false)
+			Coordinates coord, bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false)
 			{
 				addMessage(ePlayer, bForce, iLength, szString, pszSound,
 						eType, pszIcon, eFlashColor,
@@ -140,7 +140,7 @@ public:
 	virtual int getDiplomacyTransportId(PlayerTypes eWho) = 0;
 
 	virtual void setMinimapColor(MinimapModeTypes eMinimapMode, int iX, int iY, ColorTypes eColor, float fAlpha) = 0;
-	void setMinimapColor(MinimapModeTypes eMinimapMode, FCoord coord, ColorTypes eColor, float fAlpha)
+	void setMinimapColor(MinimapModeTypes eMinimapMode, Coordinates coord, ColorTypes eColor, float fAlpha)
 	{
 		setMinimapColor(eMinimapMode, coord.x(), coord.y(), eColor, fAlpha);
 	}

@@ -6534,10 +6534,10 @@ int CvGame::calculateOptionsChecksum()
 
 void CvGame::addReplayMessage(ReplayMessageTypes eType, PlayerTypes ePlayer, CvWString pszText, int iPlotX, int iPlotY, ColorTypes eColor)
 {
-	addReplayMessage(eType, ePlayer, pszText, FCoord(iPlotX, iPlotY), eColor);
+	addReplayMessage(eType, ePlayer, pszText, Coordinates(iPlotX, iPlotY), eColor);
 }
 
-void CvGame::addReplayMessage(ReplayMessageTypes eType, PlayerTypes ePlayer, CvWString pszText, FCoord coord, ColorTypes eColor)
+void CvGame::addReplayMessage(ReplayMessageTypes eType, PlayerTypes ePlayer, CvWString pszText, Coordinates coord, ColorTypes eColor)
 {
 	int iGameTurn = getGameTurn();
 	CvReplayMessage* pMessage = new CvReplayMessage(iGameTurn, eType, ePlayer);

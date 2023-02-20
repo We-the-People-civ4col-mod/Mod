@@ -315,7 +315,7 @@ public:
 	void addReplayMessage(ReplayMessageTypes eType = NO_REPLAY_MESSAGE, PlayerTypes ePlayer = NO_PLAYER, CvWString pszText = L"",
 		int iPlotX = -1, int iPlotY = -1, ColorTypes eColor = NO_COLOR);
 	void addReplayMessage(ReplayMessageTypes eType, PlayerTypes ePlayer, CvWString pszText,
-		FCoord coord, ColorTypes eColor = NO_COLOR);
+		Coordinates coord, ColorTypes eColor = NO_COLOR);
 	void clearReplayMessageMap();
 	int getReplayMessageTurn(uint i) const;
 	ReplayMessageTypes getReplayMessageType(uint i) const;

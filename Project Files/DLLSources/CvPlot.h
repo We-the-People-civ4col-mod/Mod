@@ -230,12 +230,12 @@ public:
 		return m_coord.y();
 	}
 #endif
-	inline const FCoord& coord() const
+	inline const Coordinates& coord() const
 	{
 		return m_coord;
 	}
 	bool at(int iX, int iY) const;
-	bool at(FCoord coord) const;
+	bool at(Coordinates coord) const;
 	int getIndex() const;
 	int getLatitude() const;
 	int getSignedLatitude() const; //ray, Norther and Southern Hemisphere, using hint of f1rpo
@@ -520,7 +520,7 @@ protected:
 
 	void updateImpassable();
 
-	FCoord m_coord;
+	Coordinates m_coord;
 	//short m_iX;
 	//short m_iY;
 	int m_iArea;

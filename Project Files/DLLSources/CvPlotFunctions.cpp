@@ -29,7 +29,7 @@ void RevealedPlotDataArray::reset()
 	SAFE_DELETE_ARRAY(m_pArray);
 }
 
-bool FCoord::isOnMap() const
+bool Coordinates::isOnMap() const
 {
 	if(isInvalidPlotCoord())
 		{
@@ -40,27 +40,27 @@ bool FCoord::isOnMap() const
 	return bValidX && bValidY;
 }
 
-CvPlot* FCoord::plot() const
+CvPlot* Coordinates::plot() const
 {
 	return GC.getMapINLINE().plotINLINE(*this);
 }
 
-int FCoord::plotNum() const
+int Coordinates::plotNum() const
 {
 	return GC.getMapINLINE().plotNumINLINE(*this);
 }
 
-FCoord FCoord::invalidCoord()
+Coordinates Coordinates::invalidCoord()
 {
-	FCoord n;
+	Coordinates n;
 	n.resetInvalid();
 	return n;
 }
 
-FCoord FCoord::nullCoord()
+Coordinates Coordinates::nullCoord()
 {
-	// FCoord n;
+	// Coordinates n;
 	// n.set();
 	// return n;
-	return FCoord();
+	return Coordinates();
 }

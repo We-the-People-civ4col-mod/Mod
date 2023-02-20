@@ -36,7 +36,7 @@ CyPlot* CyPlayer::findStartingPlot(bool bRandomize)
 }
 CyCity* CyPlayer::initCity(int x, int y)
 {
-	return m_pPlayer ? new CyCity(m_pPlayer->initCity(FCoord(x, y), true)) : NULL;
+	return m_pPlayer ? new CyCity(m_pPlayer->initCity(Coordinates(x, y), true)) : NULL;
 }
 void CyPlayer::acquireCity(CyCity* pCity, bool bConquest, bool bTrade)
 {
@@ -227,12 +227,12 @@ void CyPlayer::doGoody(CyPlot* pPlot, CyUnit* pUnit)
 }
 bool CyPlayer::canFound(int iX, int iY)
 {
-	return m_pPlayer ? m_pPlayer->canFound(FCoord(iX, iY)) : false;
+	return m_pPlayer ? m_pPlayer->canFound(Coordinates(iX, iY)) : false;
 }
 void CyPlayer::found(int x, int y)
 {
 	if (m_pPlayer)
-		m_pPlayer->found(FCoord(x,y));
+		m_pPlayer->found(Coordinates(x,y));
 }
 bool CyPlayer::canTrain(int /*UnitTypes*/ eUnit, bool bContinue, bool bTestVisible)
 {
@@ -401,7 +401,7 @@ void CyPlayer::createGreatGeneral(int eGreatGeneralUnit, bool bIncrementExperien
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->createGreatGeneral((UnitTypes)eGreatGeneralUnit, bIncrementExperience, FCoord(iX, iY));
+		m_pPlayer->createGreatGeneral((UnitTypes)eGreatGeneralUnit, bIncrementExperience, Coordinates(iX, iY));
 	}
 }
 int CyPlayer::getGreatGeneralsCreated()
@@ -418,7 +418,7 @@ void CyPlayer::createGreatAdmiral(int eGreatAdmiralUnit, bool bIncrementExperien
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->createGreatAdmiral((UnitTypes)eGreatAdmiralUnit, bIncrementExperience, FCoord(iX, iY));
+		m_pPlayer->createGreatAdmiral((UnitTypes)eGreatAdmiralUnit, bIncrementExperience, Coordinates(iX, iY));
 	}
 }
 int CyPlayer::getGreatAdmiralsCreated()
@@ -436,14 +436,14 @@ void CyPlayer::createBraveLieutenant(int eBraveLieutenantUnit, int iX, int iY)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->createBraveLieutenant((UnitTypes)eBraveLieutenantUnit, FCoord(iX, iY));
+		m_pPlayer->createBraveLieutenant((UnitTypes)eBraveLieutenantUnit, Coordinates(iX, iY));
 	}
 }
 void CyPlayer::createCapableCaptain(int eCapableCaptainUnit, int iX, int iY)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->createCapableCaptain((UnitTypes)eCapableCaptainUnit, FCoord(iX, iY));
+		m_pPlayer->createCapableCaptain((UnitTypes)eCapableCaptainUnit, Coordinates(iX, iY));
 	}
 }
 // WTP, ray, Lieutenants and Captains - END
