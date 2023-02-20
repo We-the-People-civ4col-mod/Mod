@@ -1204,14 +1204,14 @@
         <English>[ICON_BULLET]Ends all wars with Europeans[NEWLINE][ICON_BULLET]Strengthens relations with Europeans</English>
         <French>[ICON_BULLET]Renforce les relations et achève les guerres avec les européens</French>
         <German>[ICON_BULLET]Beendet alle Kriege mit Europäern[NEWLINE][ICON_BULLET]Stärkt Beziehungen zu Europäern</German>
-        <Russian>[ICON_BULLET]Заканчивает все войны с европейцами[NEWLINE][ICON_BULLET]Улучшает отношения с европейами</Russian>
+        <Russian>[ICON_BULLET]Заканчивает все войны с европейцами[NEWLINE][ICON_BULLET]Улучшает отношения с европейцами</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_EUROPEAN_ATTITUDE_BAD</Tag>
         <English>[ICON_BULLET]Weakens relations with Europeans</English>
         <French>[ICON_BULLET]Affaiblit les relations avec les européens</French>
         <German>[ICON_BULLET]Schwächt Beziehungen zu Europäern</German>
-        <Russian>[ICON_BULLET]Отношения с европейами ухудшаются</Russian>
+        <Russian>[ICON_BULLET]Отношения с европейцами ухудшаются</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_KING_ATTITUDE_GOOD</Tag>
@@ -1316,7 +1316,7 @@
         <German>[ICON_BULLET]%d1 Mal höhere Chance auf %s2_goody durch Antike Ruinen</German>
         <Italian>[ICON_BULLET]Aumenta di %d1 volte la probabilità di trovare %s2_goody nelle antiche rovine</Italian>
         <Spanish>[ICON_BULLET]%d1 [NUM1:vez:veces] más de posibilidades de obtener %s2_goody de las Ruinas antiguas</Spanish>
-        <Russian>[ICON_BULLET]%d1 к шансу получить [COLOR_HIGHLIGHT_TEXT]%s2_goody[COLOR_REVERT] при обыске древних руин</Russian>
+        <Russian>[ICON_BULLET]В %d1 раза больше шанс получить [COLOR_HIGHLIGHT_TEXT]%s2_goody[COLOR_REVERT] при обыске древних руин</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_IMMIGRATION_THRESHOLD_MODIFIER</Tag>
@@ -1373,7 +1373,7 @@
         <Tag>TXT_KEY_CIV_EFFECT_NUM_UNITS_WAITING_ON_DOCK</Tag>
         <English>[ICON_BULLET][COLOR_CYAN]%D1 Emigrants[COLOR_REVERT] waiting on the Docks in Europe</English>
         <German>[ICON_BULLET][COLOR_CYAN]%D1 Auswanderer[COLOR_REVERT] warten an den Docks in Europa</German>
-        <Russian>[ICON_BULLET][COLOR_CYAN]%D1 Эмигрант[COLOR_REVERT] в очереди ожидающих в Доках Европы</Russian>
+        <Russian>[ICON_BULLET][COLOR_CYAN]%D1 колонист[COLOR_REVERT] в очереди ожидающих эмиграции в Доках Европы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_LEARNING_BY_DOING_MODIFIER</Tag>
@@ -1844,7 +1844,7 @@
         <German>[ICON_BULLET]%D1%% Zeitaufwand beim Lernen von Ureinwohnern</German>
         <Italian>[ICON_BULLET]%D1%% tempo passato tra i nativi a imparare nuove abilità</Italian>
         <Spanish>[ICON_BULLET]%D1%% al tiempo pasado entre Nativos para aprender una nueva habilidad</Spanish>
-        <Russian>[ICON_BULLET]%D1%% времени, проведенного среди туземцев, чтобы изучить новый навык</Russian>
+        <Russian>[ICON_BULLET]%D1%% ко времени, проведенного среди туземцев, чтобы изучить новый навык</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CREATE_TRADE_ROUTE</Tag>
@@ -2132,7 +2132,7 @@
         <German>[ICON_BULLET]%D1%% [ICON_GOLD] bei Erstkontakt zu Siedlungen der Ureinwohner</German>
         <Italian>[ICON_BULLET]%D1%% [ICON_GOLD] al primo contatto europeo con i villaggi nativi</Italian>
         <Spanish>[ICON_BULLET]%D1%% [ICON_GOLD] al primer contacto europeo con las aldeas nativas</Spanish>
-        <Russian>[ICON_BULLET]%D1%% [ICON_GOLD] при первом контакте Европейцев с Вождем в деревне индейцев</Russian>
+        <Russian>[ICON_BULLET]%D1%% [ICON_GOLD] при первом контакте с Вождем в деревне индейцев</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FREE_IN_CITY</Tag>
@@ -3420,7 +3420,7 @@
         <German>Kniet nieder und vernehmt, was Wir, gottgesalbte Majestät des Reiches %s2_civ, Euch und Unserem Hofe verkünden. Ihr seid zu Uns gekommen und habt eine Bitte vorgetragen. Wir entsprechen gnädig Eurem Anliegen. Heute - %s1_year - gestatten Wir Euch, gen Westen zu segeln, bis zum Rand der bekannten Welt und darüberhinaus. Wir geben Euch ein Schiff, Waffen, Werkzeuge und einige Gefolgsleute mit. Entdeckt Ihr fremdes Land, dann hisst dort das Banner Eurer Heimat und beansprucht allen Boden, seine Früchte und die Heidenkinder, die sie ernten, als Unser Eigen. Euch sei die fromme Pflicht aufgetragen, dort das Wort Gottes zu verkünden und das Wohl Eures Königs zu mehren.[NEWLINE][NEWLINE]Doch Wir warnen Euch: Uns wurde berichtet, ein allzu freier Geist hause in Eurem Herzen. Nun, dies ist ein Zipperlein, das wohl jeden Entdecker plagt. Kuriert es bald aus, sonst werden Wir Euch eine Medizin verabreichen lassen, die Euch schlecht schmecken wird. Falls Euch der Teufel reitet, auf eigene Faust zu handeln und Eurem König den Respekt zu verweigern, werden Wir Euch ein Expeditionskorps nachsenden, dass Euch wieder zur Raison bringt![NEWLINE][NEWLINE]Ihr dürft Euch erheben, %s3_leader.[NEWLINE]Euer Abenteuer kann beginnen ...[NEWLINE][NEWLINE][BOLD]Um den Sieg zu erringen :[\BOLD][NEWLINE][ICON_BULLET]Gründet Eure Kolonie.[NEWLINE][ICON_BULLET]Erklärt Eure Unabhängigkeit von Eurem Mutterland, sobald mindestens 50%% Rebellische Stimmung in all Euren Siedlungen herrscht.[NEWLINE][ICON_BULLET]Verteidigt Euer junges Land gegen den Zorn Eures Vaterlandes vor Ablauf der Zeit, indem Ihr all seine Bodeneinheiten auslöscht.[NEWLINE][ICON_BULLET]Schließt Eure Revolution vor allen anderen europäischen Kolonien ab - und Euer Name wird in die Annalen eingehen.[NEWLINE][PARAGRAPH:1]Um bleibenden Ruhm zu erringen, könnt Ihr indes auch einen anderen Weg beschreiten. Nennt so viel Land und Untertanen Euer Eigen, dass man Euch als dominante Macht der Neuen Welt respektieren muss - auch dann werdet Ihr als Held Euren Platz in den Annalen finden.</German>
         <Italian>Nell'anno %s1_year, sua maestà reale il re di %s2_civ ti conferisce uno statuto coloniale. [NEWLINE][NEWLINE]Per la maggiore gloria della nazione il re nomina te, %s3_leader, viceré del Nuovo Mondo. Esplora queste nuove terre, colonizzale e procura ricchezze e gloria a te stesso e alla nostra grande nazione.[NEWLINE][NEWLINE][BOLD]Per ottenere una vittoria:[\BOLD][PARAGRAPH:1]Fonda la tua colonia.[PARAGRAPH:1]Dichiara l'indipendenza dalla madrepatria dopo aver ottenuto il 50%% di sentimento di ribellione in ogni insediamento.[PARAGRAPH:1]Difendi il giovane stato dall'ira della madrepatria annientandone le forze terrestri prima che scada il tempo. [PARAGRAPH:1]Devi completare la rivoluzione prima di qualsiasi altra colonia europea.</Italian>
         <Spanish>En el año de %s1_year Su Majestad, el rey de %s2_civ, os concede una carta colonial. [NEWLINE][NEWLINE]Para mayor gloria de la nación, el rey os nombra a vos, %s3_leader, virrey del Nuevo Mundo. Explorad esta nueva tierra, civilizadla y ganad la gloria para vos y para nuestra gran nación.[NEWLINE][NEWLINE][BOLD]Para conseguir una victoria:[\BOLD][PARAGRAPH:1]Fundad vuestra colonia.[PARAGRAPH:1]Declaraos independientes de la madre patria tras conseguir un 50%% de sentimiento de rebelión en todos vuestros asentamientos.[PARAGRAPH:1]Defended vuestro incipiente país de la cólera de la madre patria acabando con todas las fuerzas terrestres de ésta antes de que se acabe el tiempo. [PARAGRAPH:1]Debéis completar vuestra revolución antes que ninguna otra colonia europea.</Spanish>
-        <Russian>Преклоните колени и слушайте, что Мы, помазанник Божий на Земле, Король %s2_civ, объявляем вам и Нашему Двору. Вы обратились к Нам с просьбой. Мы любезно удовлетворяем её. Сегодня - %s1_year - Мы позволяем вам плыть на запад, на край известного мира и дальше. Мы даём вам корабль, оружие, инструменты и несколько спутников. Если вы откроете чужие земли, поднимите там Наши знамёна и объявите Нашей собственностью всю землю, её плоды и язычников, которые их пожинают. На вас возложена благочестивая обязанность проповедовать там Слово Божье и увеличивать благосостояние вашего Короля.[NEWLINE][NEWLINE]Но Мы предупреждаем вас: Нам сообщили, что в вашем сердце обитает слишком свободный дух. Это недуг, поражающий каждого исследователя. Излечите его как можно скорее или Мы будем вынуждены дать вам лекарство, которое будет неприятным для вас. Если дьявол станет побуждает вас действовать самостоятельно и отказываться уважать своего Короля, Мы пошлем за вами экспедиционный корпус, чтобы привести вас в чувство![NEWLINE][NEWLINE]Можете встать, %s3_leader.[NEWLINE][NEWLINE]Отправляйтесь в путь и да хранит вас Господь...[NEWLINE][NEWLINE][BOLD]Чтобы добиться победы:[\BOLD][NEWLINE][ICON_BULLET]Постройте свою колонию[NEWLINE][ICON_BULLET]Заявите о своей независимости от сюзерена по достижении 50%% мятежных настроений во всех ваших поселениях[NEWLINE][ICON_BULLET]Пока не истечет время, защищайте свою молодую страну от гнева Короля, уничтожив все наземные силы, отправленные им для подавления восстания[NEWLINE][ICON_BULLET]Вы должны начать вашу революцию раньше, чем любая другая европейская колония. И тогда ваше имя навсегда будет вписано в анналы истории[NEWLINE][PARAGRAPH:1]Хотя, чтобы добиться непреходящей славы, вы можете выбрать и другой путь. Захватите столько земли и столько подданных, чтобы вас уважали, как доминирующую силу Нового Света — и тогда вы также займёте свое место в анналах как герой завоеваний.</Russian>
+        <Russian>Преклоните колени и слушайте, что Мы, помазанник Божий на Земле, Король %s2_civ, объявляем вам и Нашему Двору. Вы обратились к Нам с просьбой. Мы любезно удовлетворяем её. Сегодня - %s1_year - Мы позволяем вам плыть на запад, на край известного мира и дальше. Мы даём вам корабль, оружие, инструменты и несколько спутников. Если вы откроете неизведанную территорию, поднимите там Наши знамёна и объявите Нашей собственностью всю землю, её плоды и язычников, которые их пожинают. На вас возложена благочестивая обязанность проповедовать там Слово Божье и увеличивать благосостояние вашего Короля.[NEWLINE][NEWLINE]Но Мы предупреждаем вас: Нам сообщили, что в вашем сердце обитает слишком свободный дух. Это недуг, поражающий каждого исследователя. Излечите его как можно скорее или Мы будем вынуждены дать вам лекарство, которое будет неприятным для вас. Если дьявол станет побуждает вас действовать самостоятельно и отказываться уважать своего Короля, Мы пошлем за вами экспедиционный корпус, чтобы привести вас в чувство![NEWLINE][NEWLINE]Можете встать, %s3_leader.[NEWLINE][NEWLINE]Отправляйтесь в путь и да хранит вас Господь...[NEWLINE][NEWLINE][BOLD]Чтобы добиться победы:[\BOLD][NEWLINE][ICON_BULLET]Постройте свою колонию[NEWLINE][ICON_BULLET]Заявите о своей независимости от сюзерена по достижении 50%% мятежных настроений во всех ваших поселениях[NEWLINE][ICON_BULLET]Пока не истечет время, защищайте свою молодую страну от гнева Короля, уничтожив все наземные силы, отправленные им для подавления восстания[NEWLINE][ICON_BULLET]Вы должны начать вашу революцию раньше, чем любая другая европейская колония. И тогда ваше имя навсегда будет вписано в анналы истории[NEWLINE][PARAGRAPH:1]Хотя, чтобы добиться непреходящей славы, вы можете выбрать и другой путь. Захватите столько земли и столько подданных, чтобы вас уважали, как доминирующую силу Нового Света — и тогда вы также займёте свое место в анналах как герой завоеваний.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_FOUNDED</Tag>

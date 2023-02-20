@@ -38,6 +38,7 @@
         <German>Unbekannt</German>
         <Italian>Sconosciuto</Italian>
         <Spanish>Desconocido</Spanish>
+        <Russian>Неизвестно</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COLOR_POSITIVE</Tag>
@@ -1380,6 +1381,7 @@
         <German>Wert :</German>
         <Italian>Valore :</Italian>
         <Spanish>Valor :</Spanish>
+        <Russian>Величина :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DEMO_SCREEN_VALUE_TEXT_COLOURED</Tag>
@@ -1388,6 +1390,7 @@
         <German>[COLOR_FONT_CREAM]Wert[COLOR_REVERT]</German>
         <Italian>[COLOR_FONT_CREAM]Valore[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_FONT_CREAM]Valor[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_FONT_CREAM]Есть у вас[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INFO_RIVAL_BEST</Tag>
@@ -1396,6 +1399,7 @@
         <German>[COLOR_FONT_CREAM]Beste Rivalen[COLOR_REVERT]</German>
         <Italian>[COLOR_FONT_CREAM]Migliore rivale[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_FONT_CREAM]Mejor rival[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_FONT_CREAM]Лучший результат[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DEMOGRAPHICS_SCREEN_RIVAL_AVERAGE</Tag>
@@ -1404,6 +1408,7 @@
         <German>[COLOR_FONT_CREAM]Durchschnitt[COLOR_REVERT]</German>
         <Italian>[COLOR_FONT_CREAM]Media dei rivali[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_FONT_CREAM]Promedio del rival[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_FONT_CREAM]Средний результат[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INFO_RIVAL_WORST</Tag>
@@ -1412,6 +1417,7 @@
         <German>[COLOR_FONT_CREAM]Schlechteste Rivalen[COLOR_REVERT]</German>
         <Italian>[COLOR_FONT_CREAM]Peggiore rivale[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_FONT_CREAM]Peor rival[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_FONT_CREAM]Худший результат[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DEMO_SCREEN_RANK_TEXT</Tag>
@@ -1420,6 +1426,7 @@
         <German>[COLOR_FONT_CREAM]Rang[COLOR_REVERT]</German>
         <Italian>[COLOR_FONT_CREAM]Grado[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_FONT_CREAM]Rango[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_FONT_CREAM]Ваше место[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DEMO_SCREEN_ECONOMY_TEXT</Tag>
@@ -5049,6 +5056,7 @@
         <German>Militärmacht</German>
         <Italian>Energia</Italian>
         <Spanish>Energía</Spanish>
+        <Russian>Сила</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SIDS_TIPS</Tag>
@@ -7671,6 +7679,7 @@
         <German>Aktuell</German>
         <Italian>Attuale</Italian>
         <Spanish>Actual</Spanish>
+        <Russian>В наличии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTION_SOUND_SYSTEM_CONFIG</Tag>
@@ -9211,6 +9220,7 @@
         <German>DIAGRAMM</German>
         <Italian>GRAFICO</Italian>
         <Spanish>GRÁFICA</Spanish>
+        <Russian>ГРАФИКИ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_YOU_MADE_PEACE_WITH</Tag>
@@ -10924,6 +10934,7 @@
         <German>Ges. Geschichte</German>
         <Italian>Intera storia</Italian>
         <Spanish>Toda la historia</Spanish>
+        <Russian>За все время</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_SETTINGS</Tag>
