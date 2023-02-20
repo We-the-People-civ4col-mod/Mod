@@ -5278,9 +5278,9 @@ void CvGame::doTurn()
 	
 		if (GC.getGameINLINE().getSorenRandNum(100, "AI") < iChance)
 		{
-			for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+			for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
 			{
-				CvPlayer& kPlayer = GET_PLAYER((PlayerTypes) iPlayer);
+				CvPlayer &kPlayer = GET_PLAYER(ePlayer);
 				if (kPlayer.isAlive())
 				{
 					if (!kPlayer.isHuman() && !kPlayer.isEurope() && !kPlayer.isNative())
@@ -5292,12 +5292,12 @@ void CvGame::doTurn()
 		}
 	}
 	// TAC - AI More Immigrants - koma13 - END
-
-	for (iI = 0; iI < MAX_TEAMS; iI++)
+	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
 	{
-		if (GET_TEAM((TeamTypes)iI).isAlive())
+		CvTeam &kTeam = GET_TEAM(eTeam);
+		if (kTeam.isAlive())
 		{
-			GET_TEAM((TeamTypes)iI).doTurn();
+			kTeam.doTurn();
 		}
 	}
 
