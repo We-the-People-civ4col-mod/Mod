@@ -6363,19 +6363,13 @@ int CvCivilizationInfo::getCivilizationBuildings(int i) const
 	return m_aiCivilizationBuildings ? m_aiCivilizationBuildings[i] : -1;
 }
 
-BuildingTypes CvCivilizationInfo::getCivilizationBuildings(BuildingClassTypes type) const
-{
-	FAssertMsg(type < GC.getNumBuildingClassInfos(), "BuildingClassType Index out of bounds");
-	FAssertMsg(type > NO_BUILDINGCLASS, "BuildingClassType Index out of bounds");
-	return m_aiCivilizationBuildings ? m_aiCivilizationBuildings[type] : NO_BUILDING;
-}
-
 int CvCivilizationInfo::getCivilizationUnits(int i) const
 {
 	FAssertMsg(i < GC.getNumUnitClassInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_aiCivilizationUnits ? m_aiCivilizationUnits[i] : -1;
 }
+
 int CvCivilizationInfo::getNumCivilizationFreeUnits() const
 {
 	return m_aCivilizationFreeUnits.size();

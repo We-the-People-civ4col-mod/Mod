@@ -38,11 +38,11 @@ public:
 
 	CvCity();
 	virtual ~CvCity();
-	void init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits);
+	//void init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits);
 	void init(int iID, PlayerTypes eOwner, FCoord initCoord, bool bBumpUnits);
 	void uninit();
-	void reset(int iID = 0, PlayerTypes eOwner = NO_PLAYER, int iX = 0, int iY = 0, bool bConstructorCall = false);
-	void reset(int iID = 0, PlayerTypes eOwner = NO_PLAYER, resetCoord = FCoord(0, 0), bool bConstructorCall = false);
+	//void reset(int iID = 0, PlayerTypes eOwner = NO_PLAYER, int iX = 0, int iY = 0, bool bConstructorCall = false);
+	void reset(int iID = 0, PlayerTypes eOwner = NO_PLAYER, FCoord resetCoord = FCoord(0, 0), bool bConstructorCall = false);
 	void setupGraphical();
 	void kill();
 

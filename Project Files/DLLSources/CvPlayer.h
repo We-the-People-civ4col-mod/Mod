@@ -211,7 +211,7 @@ public:
 	int startingPlotDistanceFactor(CvPlot* pPlot, PlayerTypes ePlayer, int iRange) const;
 	int findStartingArea() const;
 	CvPlot* findStartingPlot(bool bRandomize = false);
-	CvCity* initCity(int iX, int iY, bool bBumpUnits);
+	CvCity* initCity(FCoord initCoord, bool bBumpUnits);
 	void acquireCity(CvCity* pCity, bool bConquest, bool bTrade);
 	void killCities();
 	const CvWString getNewCityName() const;
@@ -299,8 +299,8 @@ public:
 	int receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit);
 	void receiveRandomGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit);
 	void doGoody(CvPlot* pPlot, CvUnit* pUnit);
-	bool canFound(int iX, int iY, bool bTestVisible = false) const;
-	void found(int iX, int iY);
+	bool canFound(FCoord foundCoord, bool bTestVisible = false) const;
+	CvCity *found(FCoord foundCoord);
 	bool canTrain(UnitTypes eUnit, bool bContinue = false, bool bTestVisible = false, bool bIgnoreCost = false) const;
 	bool canConstruct(BuildingTypes eBuilding, bool bContinue = false, bool bTestVisible = false, bool bIgnoreCost = false) const;
 	int getYieldProductionNeeded(UnitTypes eUnit, YieldTypes eYield) const;

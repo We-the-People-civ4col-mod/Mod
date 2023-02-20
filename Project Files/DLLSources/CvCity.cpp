@@ -55,11 +55,11 @@ CvCity::~CvCity()
 }
 
 
-void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
-{
-	FCoord initCoord(iX, iY);
-	init(iID, eOwner, initCoord, bBumpUnits);
-}
+// void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
+// {
+// 	FCoord initCoord(iX, iY);
+// 	init(iID, eOwner, initCoord, bBumpUnits);
+// }
 
 
 void CvCity::init(int iID, PlayerTypes eOwner, FCoord initCoord, bool bBumpUnits)
@@ -71,7 +71,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, FCoord initCoord, bool bBumpUnits
 		if (kPlayer.isAlive())
 		{
 			kPlayer.AI_invalidateCloseBordersAttitudeCache();
-			aOldAttitude[i] = kPlayer.AI_getStolenPlotsAttitude(eOwner);
+			aOldAttitude[ePlayer] = kPlayer.AI_getStolenPlotsAttitude(eOwner);
 		}
 	}
 
@@ -245,7 +245,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, FCoord initCoord, bool bBumpUnits
 	pPlot->setImprovementType(NO_IMPROVEMENT);
 	pPlot->updateCityRoute();
 
-	for (Teamtypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
+	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
 	{
 		if (GET_TEAM(eTeam).isAlive())
 		{
@@ -287,7 +287,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, FCoord initCoord, bool bBumpUnits
 
 	if (GC.getGameINLINE().isFinalInitialized() || isNative())
 	{
-		for (BuildingClassTypes eLoopBuildingClass = FIRST_BUILDING_CLASS; eLoopBuildingClass < NUM_BUILDING_CLASS_TYPES; eLoopBuildingClass++)
+		for (BuildingClassTypes eLoopBuildingClass = FIRST_BUILDINGCLASS; eLoopBuildingClass < NUM_BUILDINGCLASS_TYPES; eLoopBuildingClass++)
 		{
 			if (GC.getCivilizationInfo(getCivilizationType()).isCivilizationFreeBuildingClass(eLoopBuildingClass))
 			{
@@ -359,11 +359,11 @@ void CvCity::uninit()
 
 // FUNCTION: reset()
 // Initializes data members that are serialized.
-void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructorCall)
-{
-	FCoord resetCoord(iX, iY);
-	reset(iID, eOwner, resetCoord, bConstructorCall);
-}
+// void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructorCall)
+// {
+// 	FCoord resetCoord(iX, iY);
+// 	reset(iID, eOwner, resetCoord, bConstructorCall);
+// }
 
 void CvCity::reset(int iID, PlayerTypes eOwner, FCoord resetCoord, bool bConstructorCall)
 {

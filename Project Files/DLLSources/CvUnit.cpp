@@ -7117,7 +7117,7 @@ bool CvUnit::canFound(const CvPlot* pPlot, bool bTestVisible) const
 			return false;
 		}
 
-		if (!(GET_PLAYER(getOwnerINLINE()).canFound(pPlot->getX_INLINE(), pPlot->getY_INLINE(), bTestVisible)))
+		if (!(GET_PLAYER(getOwnerINLINE()).canFound(pPlot->coord(), bTestVisible)))
 		{
 			return false;
 		}
@@ -7342,9 +7342,7 @@ bool CvUnit::doFound(bool bBuyLand)
 		}
 	}
 
-	GET_PLAYER(getOwnerINLINE()).found(getX_INLINE(), getY_INLINE());
-
-	CvPlot* pCityPlot = GC.getMapINLINE().plotINLINE(getX_INLINE(), getY_INLINE());
+	CvPlot* pCityPlot = m_coord.plot();
 	FAssert(NULL != pCityPlot);
 	if (pCityPlot != NULL)
 	{
@@ -7356,7 +7354,8 @@ bool CvUnit::doFound(bool bBuyLand)
 			gDLL->getInterfaceIFace()->playGeneralSound("AS3D_UN_FOUND_CITY", pCityPlot->getPoint());
 		}
 
-		CvCity* pCity = pCityPlot->getPlotCity();
+		CvCity* pCity = GET_PLAYER(getOwnerINLINE()).found(coord());
+
 		FAssert(NULL != pCity);
 		if (NULL != pCity)
 		{
@@ -7373,7 +7372,7 @@ bool CvUnit::doFound(bool bBuyLand)
 	}
 
 	// TAC - AI City Defense - koma13 - START
-	CvPlayerAI& kPlayer = GET_PLAYER(getOwnerINLINE());
+	CvPlayer &kPlayer = GET_PLAYER(getOwnerINLINE());
 	PlayerTypes eParent = kPlayer.getParent();
 
 	if (!isHuman() && eParent != NO_PLAYER)
@@ -7436,6 +7435,8 @@ bool CvUnit::doFound(bool bBuyLand)
 
 	return true;
 }
+
+
 // TAC - Clear Specialty Fix - koma13 - START
 //bool CvUnit::canJoinCity(const CvPlot* pPlot, bool bTestVisible) const
 bool CvUnit::canJoinCity(const CvPlot* pPlot, bool bTestVisible, bool bIgnoreFood) const

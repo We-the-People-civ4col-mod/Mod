@@ -29,11 +29,6 @@ void RevealedPlotDataArray::reset()
 	SAFE_DELETE_ARRAY(m_pArray);
 }
 
-CvPlot *FCoord::plot()
-{
-	return GC.getMapINLINE().plotINLINE(*this);
-}
-
 bool FCoord::isOnMap() const
 {
 	if(isInvalidPlotCoord())
@@ -43,4 +38,9 @@ bool FCoord::isOnMap() const
 	bool bValidX = (x() >= 0 && x() < GC.getMapINLINE().getGridWidthINLINE());
 	bool bValidY = (y() >= 0 && y() < GC.getMapINLINE().getGridHeightINLINE());
 	return bValidX && bValidY;
+}
+
+CvPlot* FCoord::plot()
+{
+	return GC.getMapINLINE().plotINLINE(*this);
 }

@@ -953,16 +953,16 @@ CvPlot* CvPlayer::findStartingPlot(bool bRandomize)
 }
 
 
-CvCity* CvPlayer::initCity(int iX, int iY, bool bBumpUnits)
+CvCity* CvPlayer::initCity(FCoord initCoord, bool bBumpUnits)
 {
 	PROFILE_FUNC();
 
 	CvCity* pCity = addCity();
 
 	FAssertMsg(pCity != NULL, "City is not assigned a valid value");
-	FAssertMsg(!(GC.getMapINLINE().plotINLINE(iX, iY)->isCity()), "No city is expected at this plot when initializing new city");
+	FAssertMsg(!(initCoord.plot()->isCity()), "No city is expected at this plot when initializing new city");
 
-	pCity->init(pCity->getID(), getID(), iX, iY, bBumpUnits);
+	pCity->init(pCity->getID(), getID(), initCoord, bBumpUnits);
 
 	return pCity;
 }
@@ -1240,7 +1240,7 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade)
 		}
 	}
 
-	pNewCity = initCity(pCityPlot->getX_INLINE(), pCityPlot->getY_INLINE(), !bConquest);
+	pNewCity = initCity(pCityPlot->coord(), !bConquest);
 
 	FAssertMsg(pNewCity != NULL, "NewCity is not assigned a valid value");
 
@@ -6317,7 +6317,7 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 }
 
 
-bool CvPlayer::canFound(int iX, int iY, bool bTestVisible) const
+bool CvPlayer::canFound(FCoord foundCoord, bool bTestVisible) const
 {
 	CvPlot* pPlot;
 	CvPlot* pLoopPlot;
@@ -6330,7 +6330,7 @@ bool CvPlayer::canFound(int iX, int iY, bool bTestVisible) const
 		return false;
 	}
 
-	pPlot = GC.getMapINLINE().plotINLINE(iX, iY);
+	pPlot = foundCoord.plot();
 
 	if (GC.getGameINLINE().isFinalInitialized())
 	{
@@ -6399,8 +6399,8 @@ bool CvPlayer::canFound(int iX, int iY, bool bTestVisible) const
 	if(GC.getUSE_CAN_FOUND_CITIES_ON_WATER_CALLBACK())
 	{
 		CyArgsList argsList2;
-		argsList2.add(iX);
-		argsList2.add(iY);
+		argsList2.add(foundCoord.x());
+		argsList2.add(foundCoord.y());
 		lResult=0;
 		gDLL->getPythonIFace()->callFunction(PYGameModule, "canFoundCitiesOnWater", argsList2.makeFunctionArgs(), &lResult);
 	}
@@ -6475,14 +6475,14 @@ bool CvPlayer::canFound(int iX, int iY, bool bTestVisible) const
 }
 
 
-void CvPlayer::found(int iX, int iY)
+CvCity* CvPlayer::found(FCoord foundCoord)
 {
-	if (!canFound(iX, iY))
+	if (!canFound(foundCoord))
 	{
-		return;
+		return NULL;
 	}
 
-	CvCity* pCity = initCity(iX, iY, true);
+	CvCity* pCity = initCity(foundCoord, true);
 	FAssertMsg(pCity != NULL, "City is not assigned a valid value");
 
 	for (int iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
@@ -6517,7 +6517,9 @@ void CvPlayer::found(int iX, int iY)
 	}
 
 	gDLL->getEventReporterIFace()->cityBuilt(pCity);
-	if (gPlayerLogLevel >= 1) logBBAI(" Player %d (%S) founds new city %S at %d, %d", getID(), getCivilizationDescription(0), pCity->getName(0).GetCString(), iX, iY); // BETTER_BTS_AI_MOD, AI logging, 10/02/09, jdog5000
+	if (gPlayerLogLevel >= 1) logBBAI(" Player %d (%S) founds new city %S at %d, %d", getID(), getCivilizationDescription(0), pCity->getName(0).GetCString(), foundCoord.x(), foundCoord.y()); // BETTER_BTS_AI_MOD, AI logging, 10/02/09, jdog5000
+
+	return pCity;
 }
 
 
@@ -12155,7 +12157,7 @@ void CvPlayer::doAdvancedStartAction(AdvancedStartActionTypes eAction, int iX, i
 				}
 				if (getAdvancedStartPoints() >= iCost || 0 == getNumCities())
 				{
-					found(iX, iY);
+					found(FCoord(iX, iY));
 					changeAdvancedStartPoints(-iCost);
 					GC.getGameINLINE().updateColoredPlots();
 					CvCity* pCity = pPlot->getPlotCity();
@@ -12655,7 +12657,7 @@ int CvPlayer::getAdvancedStartCityCost(bool bAdd, CvPlot* pPlot)
 		// Need valid plot to found on if adding
 		if (bAdd)
 		{
-			if (!canFound(pPlot->getX(), pPlot->getY(), false))
+			if (!canFound(pPlot->coord(), false))
 			{
 				return -1;
 			}

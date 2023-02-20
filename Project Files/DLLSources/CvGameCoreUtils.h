@@ -194,6 +194,11 @@ inline CvPlot* plotXY(int iX, int iY, int iDX, int iDY)
 	return GC.getMapINLINE().plotINLINE((iX + iDX), (iY + iDY));
 }
 
+inline CvPlot* plotXY(FCoord baseCoord, FRelCoord relCoord)
+{
+	return (baseCoord + relCoord).plot();
+}
+
 inline DirectionTypes directionXY(int iDX, int iDY)
 {
 	if ((abs(iDX) > DIRECTION_RADIUS) || (abs(iDY) > DIRECTION_RADIUS))
@@ -351,8 +356,8 @@ class CvShouldMoveBefore
 public:
 	CvShouldMoveBefore(PlayerTypes ePlayer) : m_ePlayer(ePlayer) {}
 
-	bool operator()(int iUnitIdA, int iUnitIdB) const 
-	{ 
+	bool operator()(int iUnitIdA, int iUnitIdB) const
+	{
 		return shouldMoveBefore(getUnit(IDInfo(m_ePlayer, iUnitIdA)), getUnit(IDInfo(m_ePlayer, iUnitIdB)));
 	}
 private:
@@ -364,8 +369,8 @@ class CvShouldUnitMove
 public:
 	CvShouldUnitMove(PlayerTypes ePlayer) : m_ePlayer(ePlayer) {}
 
-	bool operator()(int iUnitId) const 
-	{ 
+	bool operator()(int iUnitId) const
+	{
 		return shouldUnitMove(getUnit(IDInfo(m_ePlayer, iUnitId)));
 	}
 private:

@@ -150,6 +150,26 @@ inline int FDirCoord::y() const {
 	return m_iY;
 }
 
+class FRelCoord
+{
+public:
+	FRelCoord(int iX, int iY) :
+	m_iX(iX),
+	m_iY(iY)
+	{
+	}
+	~FRelCoord()
+	{
+	}
+
+	int x() const;
+	int y() const;
+
+protected:
+	const int m_iX;
+	const int m_iY;
+};
+
 class FCoord
 {
 public:
@@ -174,7 +194,7 @@ public:
 	FCoord neighbour(DirectionTypes direction) const;
 	bool hasNeighbour(DirectionTypes direction) const;
 
-	inline CvPlot *plot();
+	CvPlot* plot();
 	bool isOnMap() const;
 	inline bool isInvalidPlotCoord() const;
 
@@ -202,7 +222,14 @@ inline bool operator!=(const FCoord &l, const FCoord &r)
 
 inline FCoord operator+(const FCoord &l, const FDirCoord &r)
 {
-	FAssert (l.isValid());
+	FAssert (l.isOnMap());
+	return FCoord(l.x()+r.x(), l.y()+r.y());
+}
+
+inline FCoord operator+(const FCoord &l, const FRelCoord &r)
+{
+	FAssert (l.isOnMap());
+	FAssert (FCoord(l.x()+r.x(), l.y()+r.y()).isOnMap()); // maybe that is not necessary
 	return FCoord(l.x()+r.x(), l.y()+r.y());
 }
 
