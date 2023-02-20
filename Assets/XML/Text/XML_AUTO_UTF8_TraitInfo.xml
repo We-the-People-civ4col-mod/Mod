@@ -29,7 +29,7 @@
         <German>Landwirtschaft</German>
         <Italian>Agricultural</Italian>
         <Spanish>Agricultural</Spanish>
-        <Russian>Земледелец</Russian>
+        <Russian>Земледельцы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_ALEXANDER_HAMILTON</Tag>
@@ -207,7 +207,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>Конкистадор</Russian>
+        <Russian>Конкистадоры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_COOPERATIVE</Tag>
@@ -228,7 +228,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>Объединенный?</Russian>
+        <Russian>Общительные</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_CYRUS_MCCORMICK</Tag>
@@ -333,7 +333,7 @@
         <German>Geschickter Diplomat</German>
         <Italian>Explorers</Italian>
         <Spanish>Explorers</Spanish>
-        <Russian>Исследователь</Russian>
+        <Russian>Исследователи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_FARMERS</Tag>
@@ -523,7 +523,7 @@
         <German>Imperialist</German>
         <Italian>Imperialist</Italian>
         <Spanish>Imperialist</Spanish>
-        <Russian>Империалист</Russian>
+        <Russian>Империалисты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_INDUSTRIOUS</Tag>
@@ -952,7 +952,7 @@
             <Gender>Male:Female</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>Толерантный</Russian>
+        <Russian>Толерантные</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_TRADER</Tag>

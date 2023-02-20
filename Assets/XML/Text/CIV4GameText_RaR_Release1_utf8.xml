@@ -465,6 +465,7 @@
         <German>[ICON_BULLET]%D1%% Auswirkung von Revolutionsbereitschaft auf [ICON_STRENGTH] der Rebellen</German>
         <Italian>[ICON_BULLET]Effetto %D1%% di Revolutionary percentuale sul Rebel [ICON_STRENGTH]</Italian>
         <Spanish>[ICON_BULLET]%D1%% efecto de la Revolución de Cambio on Rebelde [ICON_STRENGTH]</Spanish>
+        <Russian>[ICON_BULLET]%D1%% effect of Revolutionary Rate к [ICON_STRENGTH] повстанцев</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_SMUGGLERS</Tag>
@@ -937,6 +938,7 @@
         <German>[COLOR_FONT_CREAM]Zeitalter : [COLOR_REVERT]%s1[NEWLINE]</German>
         <Italian>[COLOR_FONT_CREAM]Era : [COLOR_REVERT]%s1[NEWLINE]</Italian>
         <Spanish>[COLOR_FONT_CREAM]Época : [COLOR_REVERT]%s1[NEWLINE]</Spanish>
+        <Russian>[COLOR_FONT_CREAM]Эпоха : [COLOR_REVERT]%s1[NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_STRING</Tag>
@@ -951,6 +953,7 @@
         <English>Native info</English>
         <French>Informations sur les indigènes</French>
         <German>Informationen zu den Ureinwohnern</German>
+        <Russian>Информация об индейцах</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GROWTH</Tag>
@@ -1009,6 +1012,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Хранилище</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NATIVE_TRADE_FINISHED</Tag>

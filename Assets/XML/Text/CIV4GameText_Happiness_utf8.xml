@@ -308,7 +308,7 @@
         <Tag>TXT_KEY_TRAIT_UNHAPPINESS_SLAVES_MODIFIER</Tag>
         <English>[ICON_BULLET]%D1%% less %F2_Icon from Slaves in Cities</English>
         <German>[ICON_BULLET]%D1%% weniger %F2_Icon durch Sklavenhaltung in Städten</German>
-        <Russian>[ICON_BULLET]%D1%% less %F2_Icon от Рабов в городе</Russian>
+        <Russian>[ICON_BULLET]%D1%% к %F2_Icon от Рабов в городе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_DOMESTIC_MARKET_EVENT_POSITIVE</Tag>

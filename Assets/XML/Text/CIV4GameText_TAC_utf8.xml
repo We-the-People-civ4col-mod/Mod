@@ -1411,7 +1411,7 @@
         <German>%d1_Num [NUM1:Arbeitsplatz:Arbeitsplätze]</German>
         <Italian>%d1_Num [NUM1:luogo di lavoro:luoghi di lavoro]</Italian>
         <Spanish>%d1_Num [NUM1:lugar de trabajo:lugares de trabajo]</Spanish>
-        <Russian>%d1_Num [NUM1:раб.место:раб.мест]</Russian>
+        <Russian>%d1_Num [NUM1:раб.место:раб.места]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMPETITIOR_INDEPENDENCE_WAR</Tag>
