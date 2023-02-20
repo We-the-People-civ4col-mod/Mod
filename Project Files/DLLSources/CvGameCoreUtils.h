@@ -218,7 +218,7 @@ inline CvPlot* plotXY(int iX, int iY, int iDX, int iDY)
 	return GC.getMapINLINE().plotINLINE((iX + iDX), (iY + iDY));
 }
 
-inline CvPlot* plotXY(Coordinates baseCoord, FRelCoord relCoord)
+inline CvPlot* plotXY(Coordinates baseCoord, RelCoordinates relCoord)
 {
 	return (baseCoord + relCoord).plot();
 }

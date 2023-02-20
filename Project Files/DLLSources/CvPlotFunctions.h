@@ -117,11 +117,11 @@ inline bool RevealedPlotDataArray::isAllocated() const
 }
 
 
-class FDirCoord
+class DirCoordinates
 {
 public:
-	FDirCoord(DirectionTypes direction);
-	~FDirCoord();
+	DirCoordinates(DirectionTypes direction);
+	~DirCoordinates();
 
 	int x() const
 	{
@@ -137,25 +137,25 @@ protected:
 	const int m_iY;
 };
 
-inline FDirCoord::FDirCoord(DirectionTypes direction) :
+inline DirCoordinates::DirCoordinates(DirectionTypes direction) :
 	m_iX(GC.getPlotDirectionX()[direction]),
 	m_iY(GC.getPlotDirectionY()[direction])
 {
 }
 
-inline FDirCoord::~FDirCoord()
+inline DirCoordinates::~DirCoordinates()
 {
 }
 
-class FRelCoord
+class RelCoordinates
 {
 public:
-	FRelCoord(int iX, int iY) :
+	RelCoordinates(int iX, int iY) :
 	m_iX(iX),
 	m_iY(iY)
 	{
 	}
-	~FRelCoord()
+	~RelCoordinates()
 	{
 	}
 
@@ -232,13 +232,13 @@ inline bool operator!=(const Coordinates &l, const Coordinates &r)
 	return ((l.x()!=r.x() || l.y()!=r.y()));
 }
 
-inline Coordinates operator+(const Coordinates &l, const FDirCoord &r)
+inline Coordinates operator+(const Coordinates &l, const DirCoordinates &r)
 {
 	FAssert (l.isOnMap());
 	return Coordinates(l.x()+r.x(), l.y()+r.y());
 }
 
-inline Coordinates operator+(const Coordinates &l, const FRelCoord &r)
+inline Coordinates operator+(const Coordinates &l, const RelCoordinates &r)
 {
 	FAssert (l.isOnMap());
 	FAssert (Coordinates(l.x()+r.x(), l.y()+r.y()).isOnMap()); // maybe that is not necessary
@@ -259,21 +259,21 @@ inline void Coordinates::resetInvalid()
 inline Coordinates Coordinates::neighbour(DirectionTypes direction) const
 {
 	FAssert (isOnMap());
-	Coordinates n = *this + FDirCoord(direction);
+	const Coordinates n = *this + DirCoordinates(direction);
 	return n;
 }
 
 inline CvPlot* Coordinates::neighbourPlot(DirectionTypes direction) const
 {
 	FAssert (isOnMap());
-	Coordinates n = *this + FDirCoord(direction);
+	const Coordinates n = *this + DirCoordinates(direction);
 	return n.plot();
 }
 
 inline bool Coordinates::hasNeighbour(DirectionTypes direction) const
 {
 	FAssert (isOnMap());
-	Coordinates n = *this + FDirCoord(direction);
+	Coordinates n = *this + DirCoordinates(direction);
 	return n.isOnMap();
 }
 

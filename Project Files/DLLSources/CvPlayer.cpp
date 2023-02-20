@@ -5944,7 +5944,7 @@ int CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 			{
 				for (int iDY = -(iOffset); iDY <= iOffset; iDY++)
 				{
-					CvPlot* pLoopPlot = (pPlot->coord() + FRelCoord(iDX, iDY)).plot();
+					CvPlot* pLoopPlot = (pPlot->coord() + RelCoordinates(iDX, iDY)).plot();
 
 					if (pLoopPlot != NULL)
 					{
@@ -6439,7 +6439,7 @@ bool CvPlayer::canFound(Coordinates foundCoord, bool bTestVisible) const
 			{
 				for (iDY = -1; iDY <= 1 && bOwnsAll; iDY++)
 				{
-					pLoopPlot = (pPlot->coord() + FRelCoord(iDX, iDY)).plot();
+					pLoopPlot = (pPlot->coord() + RelCoordinates(iDX, iDY)).plot();
 					if (pLoopPlot != NULL && pLoopPlot->getOwnerINLINE() != getID())
 					{
 						bOwnsAll = false;
@@ -6457,7 +6457,7 @@ bool CvPlayer::canFound(Coordinates foundCoord, bool bTestVisible) const
 		{
 			for (iDY = -(iRange); iDY <= iRange; iDY++)
 			{
-				pLoopPlot	= (pPlot->coord() + FRelCoord(iDX, iDY)).plot();
+				pLoopPlot	= (pPlot->coord() + RelCoordinates(iDX, iDY)).plot();
 
 				if (pLoopPlot != NULL)
 				{

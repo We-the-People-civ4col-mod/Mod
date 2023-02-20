@@ -26,16 +26,16 @@
 
 #ifdef MULTICORE
 
-#pragma push_macro("free")  
-#pragma push_macro("new")  
+#pragma push_macro("free")
+#pragma push_macro("new")
 #undef free
 #undef new
 #include "tbb/parallel_reduce.h"
 #include "tbb/blocked_range.h"
 #include "tbb/task_scheduler_init.h"
 #include "tbb/mutex.h"
-#pragma pop_macro("new")  
-#pragma pop_macro("free")  
+#pragma pop_macro("new")
+#pragma pop_macro("free")
 
 #endif
 
@@ -49,7 +49,7 @@
 // Public Functions...
 
 CvCityAI::CvCityAI()
-{	
+{
 	m_bForceEmphasizeCulture = false;
 	AI_reset();
 }
@@ -66,7 +66,7 @@ void CvCityAI::AI_init()
 	AI_reset();
 
 	//--------------------------------
-	
+
 	GET_PLAYER(getOwnerINLINE()).AI_manageEconomy();
 
 	// Init other game data
@@ -75,7 +75,7 @@ void CvCityAI::AI_init()
 	AI_updateBestBuild();
 
 	AI_assignDesiredYield();
-	
+
 	m_iFoundValue = plot()->getFoundValue(getOwner());
 }
 
@@ -91,17 +91,17 @@ void CvCityAI::AI_reset()
 {
 	AI_uninit();
 	AI_resetSavedData();
-	
-	m_iWorkforceHack = 0;	
+
+	m_iWorkforceHack = 0;
 }
 
 
 void CvCityAI::AI_doTurn()
 {
 	PROFILE_FUNC();
-	
+
 	AI_doTradedYields();
-	
+
 	if (!isHuman())
 	{
 		AI_updateRequiredYieldLevels();
@@ -112,7 +112,7 @@ void CvCityAI::AI_doTurn()
 	AI_updateBestBuild();
 
 	AI_updateRouteToCity();
-	
+
 	if (AI_getGiftTimer() > 0)
 	{
 		AI_changeGiftTimer(-1);
@@ -130,11 +130,11 @@ void CvCityAI::AI_doTurn()
 	{
 	    if (isProductionAutomated())
 	    {
-	        AI_doHurry();	        
+	        AI_doHurry();
 	    }
 		return;
 	}
-	
+
 	AI_doHurry();
 #endif
 	AI_doEmphasize();
@@ -144,7 +144,7 @@ void CvCityAI::AI_doTurn()
 //{
 //	CvUnit* m_pUnit;
 //	ProfessionTypes m_eIdealProfession;
-//	
+//
 //	int calculateValue() const
 //	{
 //		int iValue = 100;
@@ -158,7 +158,7 @@ void CvCityAI::AI_doTurn()
 //		}
 //		return iValue;
 //	}
-//	
+//
 //	bool operator < (const PopUnit& rhs) const
 //	{
 //		return calculateValue() < rhs.calculateValue();
@@ -170,7 +170,7 @@ tbb::mutex jobMutex;
 void CvCityAI::AI_assignWorkingPlots()
 {
 	PROFILE_FUNC();
-	
+
 	if (isOccupation())
 	{
 	    return;
@@ -180,7 +180,7 @@ void CvCityAI::AI_assignWorkingPlots()
 	{
 		return;
 	}
-	
+
 	AI_assignCityPlot();
 
 	jobMutex.lock();
@@ -199,17 +199,17 @@ void CvCityAI::AI_assignWorkingPlots()
 	Citizen Algorithm:
 	Take all citizens which aren't locked in place, put them in a pool.
 	Now take the first citizen from the pool and place it on the highest value plot,
-	unless the existing worker has even higher value. 
+	unless the existing worker has even higher value.
 	If a worker is displaced, it is returned to the pool.
 	Take the next citizen from the pool..
 	Once the pool is empty, the workforce is optimally allocated.
-	
+
 	This algorithm will find a good workforce
 	it's kind of expensive, but not THAT expensive with only 8 plots per colony
 	and the population numbers being low.
 	*/
 	std::deque<CvUnit*> citizens;
-		
+
 	for (int iPass = 0; iPass < 3; ++iPass)
 	{
 		for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
@@ -254,16 +254,16 @@ void CvCityAI::AI_assignWorkingPlots()
 			}
 		}
 	}
-		
+
 	uint iMaxIterations = citizens.size() * 4;
-	
+
 	uint iCount = 0;
 	while (!citizens.empty())
 	{
 		CvUnit* pUnit = citizens.back();
 		citizens.pop_back();
 		FAssert (pUnit != NULL);
-		
+
 		CvPlot* pWorkedPlot =  getPlotWorkedByUnit(pUnit);
 		if (pWorkedPlot != NULL)
 		{
@@ -271,13 +271,13 @@ void CvCityAI::AI_assignWorkingPlots()
 			clearUnitWorkingPlot(pWorkedPlot);
 			jobMutex.unlock();
 		}
-		
+
 #define PARALLEL
-#ifdef PARALLEL		
+#ifdef PARALLEL
 		CvUnit* pOldUnit = AI_parallelAssignToBestJob(*pUnit);
 #endif
 
-//#define SERIAL		
+//#define SERIAL
 #ifdef SERIAL
 		CvUnit* pOldUnit = AI_assignToBestJob(pUnit);
 		//FAssertMsg(pOldUnit == pOldUnitCheck, "Parallel version produced different result!");
@@ -300,13 +300,13 @@ void CvCityAI::AI_assignWorkingPlots()
 			break;
 		}
 	}
-	
+
 	if (isNative())
 	{
 		AI_setAssignWorkDirty(false);
 		return;
 	}
-	
+
 
 	//Now see if swapping citizens will help.
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
@@ -323,7 +323,7 @@ void CvCityAI::AI_assignWorkingPlots()
 			}
 		}
 	}
-	
+
 	AI_setAssignWorkDirty(false);
 
 	if ((getOwnerINLINE() == GC.getGameINLINE().getActivePlayer()) && isCitySelected())
@@ -354,19 +354,19 @@ bool CvCityAI::AI_avoidGrowth() const
 	{
 		return true;
 	}
-	
+
 	return false;
 }
 
 void CvCityAI::AI_setAvoidGrowth(bool bNewValue)
 {
 	bool bCurrentValue = AI_isEmphasizeAvoidGrowth();
-	
+
 	if (bCurrentValue == bNewValue)
 	{
 		return;
 	}
-	
+
 	for (int i = 0; i < GC.getNumEmphasizeInfos(); ++i)
 	{
 		if (GC.getEmphasizeInfo((EmphasizeTypes)i).isAvoidGrowth())
@@ -398,7 +398,7 @@ void CvCityAI::AI_chooseProduction()
 	PROFILE_FUNC();
 
 	CvArea* pWaterArea;
-	
+
 	CvPlayerAI& kPlayer = GET_PLAYER(getOwnerINLINE());
 
 	if (isProduction())
@@ -409,7 +409,7 @@ void CvCityAI::AI_chooseProduction()
 			{
 				// veto keep building if we've already stored enough hammers to complete
 				// the build. At this point we're just waiting for other yields (e.g. tools)
-				// to complete the build, so the AI should switch to another build to avoid banking 
+				// to complete the build, so the AI should switch to another build to avoid banking
 				// too many hammers
 				clearOrderQueue();
 			}
@@ -426,7 +426,7 @@ void CvCityAI::AI_chooseProduction()
 		// If we're producing FF points we should consider swithcing production
 		clearOrderQueue();
 	}
-	
+
 	// only clear the dirty bit if we actually do a check, multiple items might be queued
 	AI_setChooseProductionDirty(false);
 
@@ -448,7 +448,7 @@ void CvCityAI::AI_chooseProduction()
 	CvArea* pArea = area();
 	pWaterArea = waterArea();
 	bool bMaybeWaterArea = false;
-	
+
 	if (pWaterArea != NULL)
 	{
 		bMaybeWaterArea = true;
@@ -457,7 +457,7 @@ void CvCityAI::AI_chooseProduction()
 			pWaterArea = NULL;
 		}
 	}
-	
+
 	if (!isNative())
 	{
 		if ((GC.getGame().getGameTurn() - getGameTurnAcquired()) > 5)	// TAC - AI Training - koma13
@@ -492,7 +492,7 @@ void CvCityAI::AI_chooseProduction()
 	{
 		return;
 	}
-	
+
 	if (isNative())
 	{
 		if (AI_chooseUnit(UNITAI_DEFENSIVE, false))
@@ -500,17 +500,17 @@ void CvCityAI::AI_chooseProduction()
 			return;
 		}
 	}
-	
+
 	if (AI_chooseUnit(NO_UNITAI, false))
 	{
 		return;
 	}
 
 	// TAC - AI Buildings - koma13 - START
-	
+
 	/*
 	if (AI_chooseBuilding(BUILDINGFOCUS_BUILD_ANYTHING, MAX_INT, 8))
-	{	
+	{
 		return;
 	}
 	*/
@@ -518,7 +518,7 @@ void CvCityAI::AI_chooseProduction()
 	if (isNative() || isBestPortCity())
 	{
 		if (AI_chooseBuilding(BUILDINGFOCUS_BUILD_ANYTHING, MAX_INT, 8))
-		{	
+		{
 			return;
 		}
 	}
@@ -536,14 +536,14 @@ void CvCityAI::AI_chooseProduction()
 		return;
 	}
 	// TAC - AI produces FF Points - koma13 - END
-	
+
 	// TAC - AI Buildings - koma13 - START
 	if (AI_chooseBuilding(BUILDINGFOCUS_MILITARY, MAX_INT, 8))
 	{
 		return;
 	}
 	// TAC - AI Buildings - koma13 - END
-	
+
 	//colonies should always be building something
 	FAssertMsg(isNative(), "AI not building anything.");
 }
@@ -582,7 +582,7 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, UnitAITypes* peBestUnitAI, bool bPi
 		// Erik: Note that no leader is currently making use of this
 		aiUnitAIVal[iI] *= std::max(0, (GC.getLeaderHeadInfo(getPersonalityType()).getUnitAIWeightModifier(iI) + 100));
 		aiUnitAIVal[iI] /= 100;
-		
+
 		if (!bPickAny)
 		{
 			aiUnitAIVal[iI] *= GET_PLAYER(getOwnerINLINE()).AI_unitAIValueMultipler((UnitAITypes)iI);
@@ -610,13 +610,13 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, UnitAITypes* peBestUnitAI, bool bPi
 					}
 				}
 				break;
-		
+
 			case UNITAI_TRANSPORT_COAST:
 				{
 					CvArea* const pWaterArea = waterArea();
-					
+
 					int iValue = 0;
-					
+
 					if (pWaterArea != NULL && AI_hasCoastalRoute())
 					{
 						const int iAreaCities = area()->getCitiesPerPlayer(getOwnerINLINE());
@@ -635,7 +635,7 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, UnitAITypes* peBestUnitAI, bool bPi
 					aiUnitAIVal[iI] = 0;
 				}
 				break;
-				
+
 			case UNITAI_ASSAULT_SEA:
 			case UNITAI_ESCORT_SEA:
 				if (!GET_PLAYER(getOwnerINLINE()).AI_prepareAssaultSea())
@@ -643,7 +643,7 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, UnitAITypes* peBestUnitAI, bool bPi
 					aiUnitAIVal[iI] = 0;
 				}
 				break;
-						
+
 			case UNITAI_WORKER_SEA:
 			case UNITAI_TRANSPORT_SEA:
 			case UNITAI_PIRATE_SEA:
@@ -652,7 +652,7 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, UnitAITypes* peBestUnitAI, bool bPi
 					aiUnitAIVal[iI] = 0;
 				}
 				break;
-				
+
 			default:
 				break;
 			}
@@ -691,7 +691,7 @@ UnitTypes CvCityAI::AI_bestUnitAI(UnitAITypes eUnitAI, bool bAsync) const
 	int iOriginalValue;
 	int iBestOriginalValue;
 	int iI, iJ, iK;
-	
+
 
 	FAssertMsg(eUnitAI != NO_UNITAI, "UnitAI is not assigned a valid value");
 
@@ -704,7 +704,7 @@ UnitTypes CvCityAI::AI_bestUnitAI(UnitAITypes eUnitAI, bool bAsync) const
 		if (eLoopUnit != NO_UNIT)
 		{
 			if (!isHuman() || (GC.getUnitInfo(eLoopUnit).getDefaultUnitAIType() == eUnitAI))
-			{		
+			{
 				if (canTrain(eLoopUnit))
 				{
 					iOriginalValue = GET_PLAYER(getOwnerINLINE()).AI_unitValue(eLoopUnit, eUnitAI, area());
@@ -734,7 +734,7 @@ UnitTypes CvCityAI::AI_bestUnitAI(UnitAITypes eUnitAI, bool bAsync) const
 		if (eLoopUnit != NO_UNIT)
 		{
 			if (!isHuman() || (GC.getUnitInfo(eLoopUnit).getDefaultUnitAIType() == eUnitAI))
-			{				
+			{
 				if (canTrain(eLoopUnit))
 				{
 					iValue = GET_PLAYER(getOwnerINLINE()).AI_unitValue(eLoopUnit, eUnitAI, area());
@@ -891,7 +891,7 @@ BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns,
 
 				if (iValue > 0)
 				{
-					
+
 					// Avoid picking the same building that we recently stopped building due to missing
 					// non-hammer yields!
 					if (getBuildingProduction(eLoopBuilding) >= getYieldProductionNeeded(eLoopBuilding, YIELD_HAMMERS) &&
@@ -909,7 +909,7 @@ BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns,
 						iValue /= 100;
 					}
 
-					const int iBuildingProduction = getBuildingProduction(eLoopBuilding);				
+					const int iBuildingProduction = getBuildingProduction(eLoopBuilding);
 					const int iTurnsLeft = getProductionTurnsLeft(eLoopBuilding, 0);
 
 					iValue += (iBuildingProduction +  std::max(1, 10 - iTurnsLeft));
@@ -918,7 +918,7 @@ BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns,
 					bool bValid = ((iMaxTurns <= 0) ? true : false);
 					if (!bValid)
 					{
-					
+
 						bValid = (iTurnsLeft <= GC.getGameINLINE().AI_turnsPercent(iMaxTurns, GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getConstructPercent()));
 					}
 
@@ -943,7 +943,7 @@ BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns,
 
 BuildingTypes CvCityAI::AI_bestBuildingIgnoreRequirements(int iFocusFlags, int iMaxTurns) const
 {
-	
+
 	int iBestValue = 0;
 	BuildingTypes eBestBuilding = NO_BUILDING;
 
@@ -956,13 +956,13 @@ BuildingTypes CvCityAI::AI_bestBuildingIgnoreRequirements(int iFocusFlags, int i
 			if (canConstruct(eLoopBuilding), true, true, true)
 			{
 				int iValue = AI_buildingValue(eLoopBuilding, iFocusFlags);
-				
+
 				if (getProductionBuilding() == eLoopBuilding)
 				{
 					iValue *= 125;
 					iValue /= 100;
 				}
-				
+
 				if (iValue > iBestValue)
 				{
 					iBestValue = iValue;
@@ -971,7 +971,7 @@ BuildingTypes CvCityAI::AI_bestBuildingIgnoreRequirements(int iFocusFlags, int i
 			}
 		}
 	}
-	
+
 	return eBestBuilding;
 }
 
@@ -980,12 +980,12 @@ bool CvCityAI::AI_isProductionBuilding(BuildingTypes eBuilding, bool bMajorCity)
 {
 	CvBuildingInfo& kBuildingInfo = GC.getBuildingInfo(eBuilding);
 	BuildingClassTypes eBuildingClass = (BuildingClassTypes)kBuildingInfo.getBuildingClassType();
-	
+
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-	
+
 	int iBestValue = -1;
 	BuildingTypes eBestExisting = NO_BUILDING;
-	
+
 	for (int iBuildingClass = 0; iBuildingClass < GC.getNumBuildingClassInfos(); ++iBuildingClass)
 	{
 		BuildingTypes eLoopBuilding = (BuildingTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getCivilizationBuildings(iBuildingClass);
@@ -1016,7 +1016,7 @@ bool CvCityAI::AI_isProductionBuilding(BuildingTypes eBuilding, bool bMajorCity)
 	for (int i = 0; i < GC.getNumProfessionInfos(); ++i)
 	{
 		CvProfessionInfo& kProfession = GC.getProfessionInfo((ProfessionTypes)i);
-			
+
 		if (GC.getCivilizationInfo(kOwner.getCivilizationType()).isValidProfession(i))
 		{
 			if (kProfession.getSpecialBuilding() == kBuildingInfo.getSpecialBuildingType())
@@ -1025,7 +1025,7 @@ bool CvCityAI::AI_isProductionBuilding(BuildingTypes eBuilding, bool bMajorCity)
 				eYieldProduced = (YieldTypes)kProfession.getYieldsProduced(0);
 				eYieldConsumed = (YieldTypes)kProfession.getYieldsConsumed(0);
 				// R&R, ray , MYCP partially based on code of Aymerick - END
-				
+
 				eProfessionProduced = (ProfessionTypes)i;
 
 				if (eYieldProduced != NO_YIELD && eYieldConsumed != NO_YIELD)
@@ -1033,7 +1033,7 @@ bool CvCityAI::AI_isProductionBuilding(BuildingTypes eBuilding, bool bMajorCity)
 					for (int k = 0; k < GC.getNumProfessionInfos(); ++k)
 					{
 						CvProfessionInfo& kProfessionConsumed = GC.getProfessionInfo((ProfessionTypes)k);
-			
+
 						if (GC.getCivilizationInfo(kOwner.getCivilizationType()).isValidProfession(k))
 						{
 							// R&R, ray , MYCP partially based on code of Aymerick - START
@@ -1051,7 +1051,7 @@ bool CvCityAI::AI_isProductionBuilding(BuildingTypes eBuilding, bool bMajorCity)
 			}
 		}
 	}
-	
+
 	if (eProfessionConsumed != NO_PROFESSION)
 	{
 		if ((eYieldConsumed != YIELD_TOOLS) && hasOtherProductionBuilding(eBuilding, 1))
@@ -1094,7 +1094,7 @@ bool CvCityAI::AI_isProductionBuilding(BuildingTypes eBuilding, bool bMajorCity)
 		int iAdvantage = 0;
 		int iBestYield = 0;
 		int iWorstYield = MAX_INT;
-			
+
 		for (CvCity* pLoopCity = kOwner.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kOwner.nextCity(&iLoop))
 		{
 			if (pLoopCity != NULL && !pLoopCity->isBestPortCity())
@@ -1109,19 +1109,19 @@ bool CvCityAI::AI_isProductionBuilding(BuildingTypes eBuilding, bool bMajorCity)
 					}
 				}
 			}
-		}						
-		
+		}
+
 		if (iBestYield > 0)
 		{
 			iAdvantage = (100 * getPotentialProductionOutput(eProfessionConsumed)) / iBestYield;
-			
+
 			if ((eYieldConsumed != YIELD_TOOLS) && (iBestYield == iWorstYield))
 			{
 				iAdvantage *= 99;
 				iAdvantage /= 100;
 			}
 		}
-		
+
 		if (eBestExisting == NO_BUILDING)
 		{
 			if (iAdvantage >= 100 || eYieldConsumed == NO_YIELD)
@@ -1146,15 +1146,15 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 {
 	//
 	bool bIsStarted = getBuildingProduction(eBuilding) > 0;
-	
+
 	CvBuildingInfo& kBuildingInfo = GC.getBuildingInfo(eBuilding);
 	BuildingClassTypes eBuildingClass = (BuildingClassTypes)kBuildingInfo.getBuildingClassType();
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-	
+
 	bool bIsMilitary = false;
-	
+
 	int iValue = 0;
-	
+
 	// Custom_House_Mod Start
 	bool bIsBestPortCity = isBestPortCity();
 	// Custom_House_Mod End
@@ -1164,16 +1164,16 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 	bool bProductionBuilding = AI_isProductionBuilding(eBuilding, bIsMajorCity);
 	int iCount = kOwner.getBuildingClassCountPlusMaking(eBuildingClass);
 	// TAC - AI Buildings - koma13 - END
-	
+
 	if (kBuildingInfo.getYieldStorage() != 0)
 	{
 		int iCityCapacity = getMaxYieldCapacity();
-		
+
 		if (isHasBuilding(eBuilding))
 		{
 			iCityCapacity += kBuildingInfo.getYieldStorage() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent() / 100;
 		}
-				
+
 		int iTotalExcess = 0;
 		int iHighestPercentFull = 0;
 
@@ -1186,7 +1186,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 		iTotalExcess = (iCityCapacity * iCoef) / iExcess;
 		iHighestPercentFull = std::max(iHighestPercentFull, 100 * getTotalYieldStored() / iCityCapacity);
 		int iTempValue = kBuildingInfo.getYieldStorage();
-		
+
 		iValue += iTempValue / 3;
 		iValue += iHighestPercentFull;
 		iValue += 10 * iTotalExcess;
@@ -1198,13 +1198,13 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 		// Custom_House_Mod END
 		bIsMilitary = true;
 	}
-	
+
 	if (kBuildingInfo.getDefenseModifier() != 0)
 	{
 		bool bAtWar = GET_TEAM(getTeam()).getAnyWarPlanCount();
 		int iCityDefense = getDefenseModifier();
 		int iDefense = kBuildingInfo.getDefenseModifier();
-		
+
 		iValue += ((iDefense - iCityDefense) * getPopulation()) / (iCityDefense + 1);
 		if (bAtWar)
 		{
@@ -1215,7 +1215,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 		}
 		bIsMilitary = true;
 	}
-	
+
 	if (kBuildingInfo.isWorksWater())
 	{
 		if (!isWorksWater())
@@ -1233,7 +1233,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			}
 		}
 	}
-	
+
 	bool bIsGoodProfession = false;
 	bool bIsBadProfession = false;
 	// TAC - AI Buildings - koma13 - START
@@ -1249,7 +1249,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 		if (GC.getCivilizationInfo(getCivilizationType()).isValidProfession(eLoopProfession))
 		{
 			CvProfessionInfo& kLoopProfession = GC.getProfessionInfo(eLoopProfession);
-		
+
 			if (kLoopProfession.getSpecialBuilding() == kBuildingInfo.getSpecialBuildingType())
 			{
 				// TAC - AI Buildings - koma13 - START
@@ -1266,8 +1266,8 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 					// bSpecialBuildingLimit = (!pCity->isHasSpecialBuilding(iSpecialBuilding) && (kOwner.getSpecialBuildingCount(iSpecialBuilding, true) >= 2));
 					int iTargetAmountOfSpecialbuilding = 2; // So this will be used for education and for crosses if only a few cities exist
 					if (eYieldProduced == YIELD_CROSSES)
-					{ 
-						if (kOwner.getNumCities() >4) 
+					{
+						if (kOwner.getNumCities() >4)
 						{
 							iTargetAmountOfSpecialbuilding = kOwner.getNumCities() / 2; // so only every second city will build church
 						}
@@ -1276,21 +1276,21 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 					// R&R adjustment for Crosses Buildings - END
 
 				}
-				
+
 				//if ((eYieldProduced != NO_YIELD) && !kOwner.AI_isYieldFinalProduct(eYieldProduced) && (eYieldProduced != YIELD_HAMMERS) || bIsMajorCity)
 				if (((eYieldConsumed == NO_YIELD) && !bSpecialBuildingLimit) || bProductionBuilding || bIsBestPortCity)
 				// TAC - AI Buildings - koma13 - END
 				{
 					int iHighestOutput = kOwner.AI_highestProfessionOutput(eLoopProfession, this);
 					int iOutput = kBuildingInfo.getProfessionOutput();
-					
+
 					int iModifiedOutput = iOutput;
 					if(eYieldProduced != NO_YIELD)
 					{
 						iModifiedOutput *= 100 + kBuildingInfo.getYieldModifier(eYieldProduced);
 						iModifiedOutput /= 100;
 					}
-						
+
 					if (iModifiedOutput > iHighestOutput)
 					{
 						if (iOutput != 0)
@@ -1321,18 +1321,18 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 										iTempValue /= 100;
 									}
 								}
-								
+
 								if (eYieldConsumed != NO_YIELD)
 								{
 									int iAvailable = getRawYieldProduced(eYieldConsumed) + std::max(0, AI_getTradeBalance(eYieldConsumed));
-									
+
 									if (iAvailable < iOutput)
 									{
 										int iMax = std::max(1, GC.getGameINLINE().getCargoYieldCapacity());
-										
+
 										int iPercent = 100 * getYieldStored(eYieldConsumed) / iMax;
 										iPercent = std::max(iPercent, 100 * kOwner.AI_getBestPlotYield(eYieldConsumed) / iOutput);
-										
+
 										if (iPercent > 100)
 										{
 											iPercent = 100 + (iPercent - 100) / 2;
@@ -1353,7 +1353,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 										iTempValue /= 10;
 									}
 								}
-								
+
 								if (iHighestOutput == 0)
 								{
 									int iMultiplier = 150;
@@ -1368,7 +1368,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 									iTempValue *= iMultiplier;
 									iTempValue /= 100;
 								}
-								
+
 								if (eYieldProduced == YIELD_HORSES || eYieldProduced == YIELD_BLADES || eYieldProduced == YIELD_MUSKETS || eYieldProduced == YIELD_CANNONS || eYieldProduced == YIELD_BLACK_POWDER || eYieldProduced == YIELD_TOOLS || eYieldProduced == YIELD_FOOD)
 								{
 									bIsMilitary = true;
@@ -1386,7 +1386,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			}
 		}
 	}
-	
+
 	if (bIsGoodProfession)
 	{
 		if (getPopulation() < 3)
@@ -1395,7 +1395,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			iValue /= 4;
 		}
 	}
-	
+
 	// TAC - AI Buildings - koma13 - START
 	//if (!bIsBadProfession)
 	if (!bIsBadProfession && !bSpecialBuildingLimit)
@@ -1405,14 +1405,14 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 		for (int i = 0; i < NUM_YIELD_TYPES; ++i)
 		{
 			YieldTypes eLoopYield = (YieldTypes)i;
-			
+
 			int iAdded = 0;
-			
+
 			// TAC - AI Buildings - koma13 - START
 			//iAdded += kBuildingInfo.getYieldChange(eLoopYield);
 			//iAdded += getBuildingYieldChange((BuildingClassTypes)kBuildingInfo.getBuildingClassType(), eLoopYield);
 			//iAdded += kOwner.getBuildingYieldChange((BuildingClassTypes)kBuildingInfo.getBuildingClassType(), eLoopYield);
-				
+
 			if (!GC.getYieldInfo(eLoopYield).isCargo())
 			{
 				iAdded += kBuildingInfo.getYieldChange(eLoopYield);
@@ -1420,7 +1420,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 				iAdded += kOwner.getBuildingYieldChange((BuildingClassTypes)kBuildingInfo.getBuildingClassType(), eLoopYield);
 			}
 			// TAC - AI Buildings - koma13 - END
-			
+
 			if (kBuildingInfo.getYieldModifier(eLoopYield) > 0)
 			{
 				int iRaw = getRawYieldProduced(eLoopYield);
@@ -1433,7 +1433,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 				}
 				iAdded += ((2 * iRaw * kBuildingInfo.getYieldModifier(eLoopYield)) / 100);
 			}
-			
+
 			if (iAdded != 0)
 			{
 				if (eLoopYield == YIELD_HORSES || eLoopYield == YIELD_BLADES || eLoopYield == YIELD_MUSKETS || eLoopYield == YIELD_CANNONS || eLoopYield == YIELD_BLACK_POWDER || eLoopYield == YIELD_TOOLS || eLoopYield == YIELD_FOOD)
@@ -1442,20 +1442,20 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 				}
 				iValue += AI_estimateYieldValue(eLoopYield, iAdded);
 			}
-			
+
 			if (kBuildingInfo.getSeaPlotYieldChange(i) != 0)
 			{
 				// Determine the net change that would be added by the building
 				// We have to avoid double-counting yield changes that do not stack\accumulate
 				const int iYieldChange = kBuildingInfo.getSeaPlotYieldChange(i) - getSeaPlotYield((YieldTypes)i);
-				
+
 				if (iYieldChange != 0)
-				{ 
+				{
 				int iTempValue = 0;
-				
+
 				int iFood = 0;
 				int iNumLandPlots = 0;
-				
+
 				for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 				{
 					CvPlot* pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), iI);
@@ -1480,9 +1480,9 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 						}
 					}
 				}
-				
+
 				iTempValue = AI_estimateYieldValue(eLoopYield, iTempValue);
-				
+
 				if (eLoopYield == YIELD_FOOD && iTempValue > 0 && iNumLandPlots > 0)
 				{
 					if (iFood / iNumLandPlots < 2)
@@ -1491,7 +1491,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 						iTempValue += iNumLandPlots * 4 - iFood * 2;
 					}
 				}
-				
+
 				iValue += iTempValue;
 				bIsMilitary = true;
 			}
@@ -1508,10 +1508,10 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 				{
 				int iYieldChange = kBuildingInfo.getLandPlotYieldChange(i);
 				int iTempValue = 0;
-				
+
 				int iFood = 0;
 				int iNumLandPlots = 0;
-				
+
 				for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 				{
 					CvPlot* pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), iI);
@@ -1531,9 +1531,9 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 						}
 					}
 				}
-				
+
 				iTempValue = AI_estimateYieldValue(eLoopYield, iTempValue);
-				
+
 				if (eLoopYield == YIELD_FOOD && iTempValue > 0 && iNumLandPlots > 0)
 				{
 					if (iFood / iNumLandPlots < 2)
@@ -1542,7 +1542,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 						iTempValue += iNumLandPlots * 4 - iFood * 2;
 					}
 				}
-				
+
 				iValue += iTempValue;
 				bIsMilitary = true;
 			}
@@ -1550,13 +1550,13 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 		}
 	}
 	}
-	
+
 	// Just because we're a major cities does not mean that we should value the unlocking of units which
 	// we are unlikely to ever build anyway
 	if (/*(bIsMajorCity) || */(iFocusFlags & BUILDINGFOCUS_MILITARY))	// TAC - AI Buildings - koma13
 	{
 		int iUnitsTrainedCount = 0;
-		
+
 		for (int i = 0; i < GC.getNumUnitInfos(); ++i)
 		{
 			if (GC.getUnitInfo((UnitTypes)i).getPrereqBuilding() == kBuildingInfo.getBuildingClassType())
@@ -1564,17 +1564,17 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 				iUnitsTrainedCount++;
 			}
 		}
-		
+
 		// TODO: Differentiate between domain, transport units getCargoSpace() > 0 and actual military units
 
 		if (iUnitsTrainedCount > 0)
 		{
 			int iBuildingCount = kOwner.getBuildingClassCountPlusMaking(eBuildingClass);
-			
+
 			// TAC - AI Buildings - koma13 - START
 			//int iTargetBuildingCount = 1 + kOwner.getNumCities() / 10;
 			int iTargetBuildingCount = 1 + kOwner.getNumCities() / 5;
-			
+
 			//if (iBuildingCount < iTargetBuildingCount)
 			if ((iBuildingCount < iTargetBuildingCount) || (kOwner.getGold() > 25000) || (iFocusFlags & BUILDINGFOCUS_MILITARY))
 			{
@@ -1585,7 +1585,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			bIsMilitary = true;
 		}
 	}
-	
+
 	// TAC - AI Buildings - koma13 - START
 	//if (bIsMajorCity && !(iFocusFlags & BUILDINGFOCUS_NO_RECURSION))
 	if (!(iFocusFlags & BUILDINGFOCUS_NO_RECURSION))
@@ -1596,7 +1596,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 		{
 			if (!isHasBuilding(eLoopBuilding))
 			{
-				CvBuildingInfo& kLoopBuilding = GC.getBuildingInfo(eLoopBuilding);			
+				CvBuildingInfo& kLoopBuilding = GC.getBuildingInfo(eLoopBuilding);
 				if (kLoopBuilding.isBuildingClassNeededInCity(kBuildingInfo.getBuildingClassType()))
 				{
 					// TAC - AI Buildings - koma13 - START
@@ -1626,7 +1626,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			}
 		}
 	}
-	
+
 	if ((kBuildingInfo.getSpecialBuildingType() != NO_SPECIALBUILDING) && kBuildingInfo.getYieldStorage() == 0)
 	{
 		if (!isHasConceptualBuilding(eBuilding))//Prevents recursion.
@@ -1659,7 +1659,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			}
 		}
 	}
-	
+
 	//increase building value if only needs hammers
 	if (!isHasConceptualBuilding(eBuilding) && (iFocusFlags & BUILDINGFOCUS_BUILD_ANYTHING))
 	{
@@ -1680,12 +1680,12 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			iValue += 10;
 		}
 	}
-	
+
 	// TAC - AI Buildings - koma13 - START
 	if (!isHasConceptualBuilding(eBuilding))
 	{
 		iValue += kBuildingInfo.getAIWeight();
-		
+
 		if (bProductionBuilding)
 		{
 			iValue += 100 + 10 * getRawYieldProduced(eYieldConsumed);
@@ -1714,10 +1714,10 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 					}
 				}
 			}
-			// WTP, ray, also check for available AI experts for Building Construction - END 
+			// WTP, ray, also check for available AI experts for Building Construction - END
 		}
 	}
-	
+
 	//return iValue;
 	return std::max(0, iValue);
 	// TAC - AI Buildings - koma13 - END
@@ -1729,14 +1729,14 @@ int CvCityAI::AI_neededSeaWorkers() const
 	int iNeededSeaWorkers = 0;
 
 	pWaterArea = waterArea();
-	
+
 	if (pWaterArea == NULL)
 	{
 		return 0;
 	}
-	
+
 	bool bNeedRoute = false;
-	
+
 	if (bNeedRoute)
 	{
 		iNeededSeaWorkers++;
@@ -1759,11 +1759,11 @@ int CvCityAI::AI_neededDefenders() const
 	PROFILE_FUNC();
 	int iDefenders = 0;
 	AreaAITypes eAreaAI = area()->getAreaAIType(getTeam());
-	
+
 	if (isNative())
 	{
 		int iNeeded = 2 + (getPopulation() + 1) / 2;
-		
+
 		if (eAreaAI == AREAAI_OFFENSIVE)
 		{
 			iNeeded--;
@@ -1774,7 +1774,7 @@ int CvCityAI::AI_neededDefenders() const
 		}
 		return iNeeded;
 	}
-	
+
 	if (GET_PLAYER(getOwnerINLINE()).AI_isKing())
 	{
 		return 2 + getHighestPopulation() / 2;
@@ -1782,14 +1782,14 @@ int CvCityAI::AI_neededDefenders() const
 
 	// R&R, ray, AI improvements
 	// Colonial AI should use its colonist for enconomy during first period
-	
+
 	if (GC.getGame().getRemainingForcedPeaceTurns() > 0)
 	{
 		return 0;
 	}
 
 	iDefenders = 2;
-	
+
 	// TAC - AI City Defense - koma13 - START
 	/*
 	if (GET_PLAYER(getOwnerINLINE()).AI_isStrategy(STRATEGY_REVOLUTION_PREPARING))
@@ -1803,7 +1803,7 @@ int CvCityAI::AI_neededDefenders() const
 			}
 		}
 	}
-			
+
 	iDefenders += getPopulation() / 2;
 	*/
 
@@ -1818,12 +1818,12 @@ int CvCityAI::AI_neededDefenders() const
 			}
 		}
 	}
-			
+
 	if (isBestPortCity())
 	{
 		iDefenders++;
 	}
-	
+
 	if (getPopulation() > 9)
 	{
 		iDefenders++;
@@ -1856,7 +1856,7 @@ int CvCityAI::AI_numPotentialDefenders() const
 	{
 		ProfessionTypes eLoopProfession = (ProfessionTypes)i;
 		CvProfessionInfo& kProfession = GC.getProfessionInfo(eLoopProfession);
-		
+
 		if (GC.getCivilizationInfo(kOwner.getCivilizationType()).isValidProfession(eLoopProfession))	// TAC - AI City Defense - koma13
 		{
 			if (kOwner.AI_professionValue(eLoopProfession, UNITAI_DEFENSIVE) > 0)
@@ -1870,7 +1870,7 @@ int CvCityAI::AI_numPotentialDefenders() const
 					for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
 					{
 						int iAmount = kOwner.getYieldEquipmentAmount(eLoopProfession, (YieldTypes)iYield);
-					
+
 						if (iAmount > 0)
 						{
 							// TAC - AI Buildings - koma13 - START
@@ -1881,19 +1881,19 @@ int CvCityAI::AI_numPotentialDefenders() const
 						}
 					}
 				}
-				
+
 				iMaxEquipable = std::max(iEquipable, iMaxEquipable);
 			}
 		}
 	}
-	
+
 	return iMaxEquipable;
 }
 
 int CvCityAI::AI_minDefenders() const
 {
 	int iDefenders = 1;
-	
+
 	int iEra = GET_PLAYER(getOwnerINLINE()).getCurrentEra();
 	if (iEra > 0)
 	{
@@ -1903,31 +1903,31 @@ int CvCityAI::AI_minDefenders() const
 	{
 		iDefenders++;
 	}
-	
+
 	return iDefenders;
 }
-	
+
 int CvCityAI::AI_neededFloatingDefenders()
 {
 	if (m_iNeededFloatingDefendersCacheTurn != GC.getGame().getGameTurn())
 	{
 		AI_updateNeededFloatingDefenders();
 	}
-	return m_iNeededFloatingDefenders;	
+	return m_iNeededFloatingDefenders;
 }
 
 void CvCityAI::AI_updateNeededFloatingDefenders()
 {
 	int iFloatingDefenders = GET_PLAYER(getOwnerINLINE()).AI_getTotalFloatingDefendersNeeded(area());
-		
+
 	int iTotalThreat = std::max(1, GET_PLAYER(getOwnerINLINE()).AI_getTotalAreaCityThreat(area()));
-	
+
 	iFloatingDefenders -= area()->getCitiesPerPlayer(getOwnerINLINE());
-	
+
 	iFloatingDefenders *= AI_cityThreat();
 	iFloatingDefenders += (iTotalThreat / 2);
 	iFloatingDefenders /= iTotalThreat;
-	
+
 	m_iNeededFloatingDefenders = iFloatingDefenders;
 	m_iNeededFloatingDefendersCacheTurn = GC.getGame().getGameTurn();
 }
@@ -2134,15 +2134,15 @@ int CvCityAI::AI_clearFeatureValue(int iIndex) const
 {
 	CvPlot* pPlot = plotCity(getX_INLINE(), getY_INLINE(), iIndex);
 	FAssert(pPlot != NULL);
-	
+
 	FeatureTypes eFeature = pPlot->getFeatureType();
 	FAssert(eFeature != NO_FEATURE);
-	
+
 	CvFeatureInfo& kFeatureInfo = GC.getFeatureInfo(eFeature);
-	
+
 	int iValue = 0;
 	iValue += kFeatureInfo.getYieldChange(YIELD_FOOD) * 100;
-	
+
 	if (iValue > 0 && pPlot->isBeingWorked())
 	{
 		iValue *= 3;
@@ -2156,7 +2156,7 @@ int CvCityAI::AI_clearFeatureValue(int iIndex) const
 			iValue *= 3;
 		}
 	}
-		
+
 	if (iValue > 0)
 	{
 		if (pPlot->getImprovementType() != NO_IMPROVEMENT)
@@ -2166,16 +2166,16 @@ int CvCityAI::AI_clearFeatureValue(int iIndex) const
 				iValue += 500;
 			}
 		}
-		
+
 		if (GET_PLAYER(getOwnerINLINE()).getAdvancedStartPoints() >= 0)
 		{
 			iValue += 400;
 		}
 	}
-	
+
 	return -iValue;
 }
-	
+
 BuildTypes CvCityAI::AI_getBestBuild(int iIndex) const
 {
 	FAssertMsg(iIndex >= 0, "iIndex is expected to be non-negative (invalid Index)");
@@ -2223,7 +2223,7 @@ void CvCityAI::AI_updateBestBuild()
 	// reset all data, but do not release the memory if allocated
 	m_em_iBestBuildValue.setAll(m_em_iBestBuildValue.getDefault());
 	m_em_eBestBuild     .setAll(m_em_eBestBuild     .getDefault());
-	
+
 	FOREACH(CityPlot)
 	{
 		if (eLoopCityPlot != CITY_HOME_PLOT)
@@ -2242,7 +2242,7 @@ void CvCityAI::AI_updateBestBuild()
 				// write the buffer back into the EnumMap
 				m_em_iBestBuildValue.set(eLoopCityPlot, iBestBuildValue);
 				m_em_eBestBuild.set(eLoopCityPlot, eBestBuildType);
-				
+
 				if (iBestBuildValue > 0)
 				{
 					FAssert(eBestBuildType != NO_BUILD);
@@ -2265,7 +2265,7 @@ void CvCityAI::AI_doHurry(bool bForce)
 {
 	PROFILE_FUNC();
 	FAssert(!isHuman() || isProductionAutomated());
-	
+
 	// Previously hurried builds must have been processed before considering another hurry
 	FAssert(!m_bHasHurried);
 
@@ -2292,7 +2292,7 @@ void CvCityAI::AI_doHurry(bool bForce)
 		if (!canConstruct(eLoopBuilding))
 			continue;
 
-		// Only consider buildings that are "hammer complete"	
+		// Only consider buildings that are "hammer complete"
 		if (getBuildingProduction(eLoopBuilding) >= getYieldProductionNeeded(eLoopBuilding, YIELD_HAMMERS) &&
 			!checkRequiredYields(ORDER_CONSTRUCT, eLoopBuilding, YIELD_HAMMERS))
 		{
@@ -2308,7 +2308,7 @@ void CvCityAI::AI_doHurry(bool bForce)
 	{
 		const BuildingHurryCost bhc = *std::min_element(buildingHurryCostList.begin(), buildingHurryCostList.end());
 		const BuildingTypes eHurryBuilding = bhc.second;
-		
+
 		// Need to push the order for the hurry functions to process the correct build
 		pushOrder(ORDER_CONSTRUCT, eHurryBuilding, -1, false, false, false);
 
@@ -2318,7 +2318,7 @@ void CvCityAI::AI_doHurry(bool bForce)
 			if (eCurrentBuilding != NO_BUILDING)
 			{
 				pushOrder(ORDER_CONSTRUCT, eCurrentBuilding, -1, false, false, false);
-				
+
 				if (gCityLogLevel >= 2)
 				{
 					logBBAI(" Player %S City %S restoring (no hurry) production of %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
@@ -2349,7 +2349,7 @@ void CvCityAI::AI_doHurry(bool bForce)
 		if (!canTrain(eLoopUnit))
 			continue;
 
-		// Only consider buildings that are "hammer complete"	
+		// Only consider buildings that are "hammer complete"
 		if (getUnitProduction(eLoopUnit) >= getYieldProductionNeeded(eLoopUnit, YIELD_HAMMERS) &&
 			!checkRequiredYields(ORDER_TRAIN, eLoopUnit, YIELD_HAMMERS))
 		{
@@ -2393,9 +2393,9 @@ void CvCityAI::AI_doHurry(bool bForce)
 
 void CvCityAI::AI_doNativeTrade()
 {
-	//Each turn a random yield (weighted by quantity) will be 
+	//Each turn a random yield (weighted by quantity) will be
 	//instantly delivered to a random city (weighted inversely by quantity)
-	
+
 	int iBestYieldValue = 0;
 	YieldTypes eBestYield = NO_YIELD;
 
@@ -2426,7 +2426,7 @@ void CvCityAI::AI_doNativeTrade()
 					{
 						iValue *= 2;
 					}
-					
+
 					iValue = 1 + GC.getGameINLINE().getSorenRandNum(iValue, "AI best Yield to Trade");
 					if (iValue > iBestYieldValue)
 					{
@@ -2437,15 +2437,15 @@ void CvCityAI::AI_doNativeTrade()
 			}
 		}
 	}
-	
+
 	if (eBestYield == NO_YIELD)
 	{
 		return;
 	}
-	
+
 	CvCity* pBestCity = NULL;
 	int iBestCityValue = 0;
-	
+
 	CvYieldInfo& kBestYield = GC.getYieldInfo(eBestYield);
 	CvPlayer& kOwner = GET_PLAYER(getOwner());
 	int iLoop;
@@ -2453,9 +2453,9 @@ void CvCityAI::AI_doNativeTrade()
 	for (pLoopCity = kOwner.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kOwner.nextCity(&iLoop))
 	{
 		if (pLoopCity != this)
-		{	
+		{
 			int iValue = 10 * std::max(0, pLoopCity->AI_getRequiredYieldLevel(eBestYield) - pLoopCity->getYieldStored(eBestYield));
-			
+
 			iValue = std::max(iValue, pLoopCity->getMaxYieldCapacity() - pLoopCity->getTotalYieldStored());
 
 			if (eBestYield == YIELD_HORSES)
@@ -2476,11 +2476,11 @@ void CvCityAI::AI_doNativeTrade()
 					}
 				}
 				int iDistance = plotDistance(getX_INLINE(), getY_INLINE(), pLoopCity->getX_INLINE(), pLoopCity->getY_INLINE());
-				
+
 				iValue *= 50 + GC.getGameINLINE().getSorenRandNum(50, "AI best city to trade yield to");
-				iValue /= 5 + iDistance;	
-				
-				
+				iValue /= 5 + iDistance;
+
+
 				if (iValue > iBestCityValue)
 				{
 					iBestCityValue = iValue;
@@ -2489,7 +2489,7 @@ void CvCityAI::AI_doNativeTrade()
 			}
 		}
 	}
-	
+
 	if (pBestCity == NULL)
 	{
 		return;
@@ -2516,7 +2516,7 @@ void CvCityAI::AI_doNativeTrade()
 void CvCityAI::AI_doNative()
 {
 	AI_doNativeTrade();
-	
+
 	FAssert(isNative());
 	CvPlayer& kPlayer = GET_PLAYER(getOwner());
 	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
@@ -2527,7 +2527,7 @@ void CvCityAI::AI_doNative()
 			int iTotalStored = kPlayer.countTotalYieldStored(eYield);
 			int iMaxStored = kPlayer.getNumCities() * GC.getGameINLINE().getCargoYieldCapacity();
 			iMaxStored *= GC.getYieldInfo(eYield).getNativeConsumptionPercent();
-			
+
 			int iDestructionModifier = 50 + ((50 * iTotalStored) / iMaxStored);
 
 			int iAmountLost = 0;
@@ -2536,7 +2536,7 @@ void CvCityAI::AI_doNative()
 
 			iAmountLost += ((getYieldStored(eYield) * iPercent) + 50) / 100;
 
-	
+
 			if (GC.getGame().getSorenRandNum(100, "AI doNative destroy more yield") < (iDestructionModifier / 3))
 			{
 				iAmountLost += std::min(getYieldStored(eYield), getPopulation());
@@ -2555,7 +2555,7 @@ void CvCityAI::AI_doNative()
 			}
 		}
 	}
-//	
+//
 //	AreaAITypes eAreaAI = area()->getAreaAIType(getTeam());
 //
 //	if (eAreaAI != AREAAI_NEUTRAL)
@@ -2579,9 +2579,9 @@ void CvCityAI::AI_doNative()
 //			iLowestPopulation *= 100;
 //		}
 //		iLowestPopulation /= 100;
-//		
+//
 //		iLowestPopulation = std::max(iLowestPopulation, AI_getTargetSize() - ((eAreaAI == AREAAI_OFFENSIVE) ? 1 : 0));
-//		
+//
 //		if (getPopulation() > iLowestPopulation)
 //		{
 //			ProfessionTypes eBraveProfession = GET_PLAYER(getOwnerINLINE()).AI_idealProfessionForUnitAIType(UNITAI_DEFENSIVE, this);
@@ -2602,7 +2602,7 @@ void CvCityAI::AI_doNative()
 //			}
 //		}
 //	}
-	
+
 }
 
 void CvCityAI::AI_resetTradedYields()
@@ -2613,14 +2613,14 @@ void CvCityAI::AI_resetTradedYields()
 //This should only be called once per turn.
 void CvCityAI::AI_doTradedYields()
 {
-	
+
 	int iDiscountPercent = 100 - 100 / YIELD_DISCOUNT_TURNS;
 	iDiscountPercent -= 2;
-	
+
 	for (int i = 0; i < NUM_YIELD_TYPES; i++)
 	{
 		YieldTypes eLoopYield = (YieldTypes)i;
-		
+
 		if (GC.getYieldInfo(eLoopYield).isCargo())
 		{
 			const int eTmp = (m_em_iTradeBalance.get(eLoopYield) * iDiscountPercent);
@@ -2650,7 +2650,7 @@ bool CvCityAI::AI_chooseBuild()
 	BuildingTypes eBestBuilding = NO_BUILDING;
 	UnitTypes eBestUnit = NO_UNIT;
 	int iFocusFlags = 0;
-	
+
 	CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
 	for (int iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
 	{
@@ -2671,7 +2671,7 @@ bool CvCityAI::AI_chooseBuild()
 					iValue /= 100;
 
 					iValue += getBuildingProduction(eLoopBuilding);
-					
+
 
 					FAssert((MAX_INT / 1000) > iValue);
 					iValue *= 1000;
@@ -2688,7 +2688,7 @@ bool CvCityAI::AI_chooseBuild()
 			}
 		}
 	}
-	
+
 	for (int iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
 	{
 		UnitTypes eLoopUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iI)));
@@ -2708,7 +2708,7 @@ bool CvCityAI::AI_chooseBuild()
 
 				FAssert((MAX_INT / 1000) > iValue);
 				iValue *= 1000;
-		
+
 				iValue /= std::max(1, (4 + getProductionTurnsLeft(eLoopUnit, 0)));
 
 				iValue = std::max(1, iValue);
@@ -2721,23 +2721,23 @@ bool CvCityAI::AI_chooseBuild()
 				}
 			}
 		}
-	}	
-	
+	}
+
 	if (eBestBuilding != NULL)
 	{
 		FAssert(eBestUnit == NULL);
 		pushOrder(ORDER_TRAIN, eBestUnit, NO_UNITAI, false, false, false);
-		
+
 	}
 	else if (eBestUnit != NULL)
 	{
 		FAssert(eBestBuilding == NULL);
 		pushOrder(ORDER_CONSTRUCT, eBestBuilding, -1, false, false, false);
-		
+
 	}
 
 	return false;
-	
+
 }
 
 bool CvCityAI::AI_chooseUnit(UnitAITypes eUnitAI, bool bPickAny)
@@ -2766,11 +2766,11 @@ bool CvCityAI::AI_chooseUnit(UnitTypes eUnit, UnitAITypes eUnitAI)
 {
 	if (eUnit != NO_UNIT)
 	{
-		
+
 		pushOrder(ORDER_TRAIN, eUnit, eUnitAI, false, false, false);
 		return true;
 	}
-	return false;	
+	return false;
 }
 
 
@@ -2798,11 +2798,11 @@ bool CvCityAI::AI_chooseLeastRepresentedUnit(UnitTypeWeightArray &allowedTypes)
 	int iValue;
 
 	UnitTypeWeightArray::iterator it;
-	
+
  	std::multimap<int, UnitAITypes, std::greater<int> > bestTypes;
  	std::multimap<int, UnitAITypes, std::greater<int> >::iterator best_it;
- 	
- 	
+
+
 	for (it = allowedTypes.begin(); it != allowedTypes.end(); ++it)
 	{
 		iValue = (*it).second;
@@ -2810,7 +2810,7 @@ bool CvCityAI::AI_chooseLeastRepresentedUnit(UnitTypeWeightArray &allowedTypes)
 		iValue /= 1 + GET_PLAYER(getOwnerINLINE()).AI_totalAreaUnitAIs(area(), (*it).first);
 		bestTypes.insert(std::make_pair(iValue, (*it).first));
 	}
- 	
+
  	for (best_it = bestTypes.begin(); best_it != bestTypes.end(); ++best_it)
  	{
 		if (AI_chooseUnit(best_it->second))
@@ -2826,9 +2826,9 @@ bool CvCityAI::AI_bestSpreadUnit(bool bMissionary, int iBaseChance, UnitTypes* e
 	CvPlayerAI& kPlayer = GET_PLAYER(getOwnerINLINE());
 	CvTeamAI& kTeam = GET_TEAM(getTeam());
 	CvGame& kGame = GC.getGame();
-	
+
 	FAssert(eBestSpreadUnit != NULL && iBestSpreadUnitValue != NULL);
-	
+
 	return (*eBestSpreadUnit != NULL);
 }
 
@@ -2867,18 +2867,18 @@ bool CvCityAI::AI_chooseConvince()
 			return true;
 		}
 	}
-	
+
 	return false;
 }
 
 FatherPointTypes CvCityAI::AI_bestFatherPoint() const
 {
 	CvTeam& kTeam = GET_TEAM(getTeam());
-	
+
 	FatherPointTypes eBestTotalPoint = NO_FATHER_POINT_TYPE;
-	
+
 	int iBestTotalValue = MAX_INT;
-	
+
 	for (int iFather = 0; iFather < GC.getNumFatherInfos(); ++iFather)
 	{
 		FatherTypes eFather = (FatherTypes) iFather;
@@ -2897,7 +2897,7 @@ FatherPointTypes CvCityAI::AI_bestFatherPoint() const
 						if (kTeam.getFatherPointCost(eFather, ePoint) > 0)
 						{
 							int iValue = kTeam.getFatherPointCost(eFather, ePoint) - kTeam.getFatherPoints(ePoint);
-							
+
 							if (iValue > iBestValue)
 							{
 								iBestValue = iValue;
@@ -2915,7 +2915,7 @@ FatherPointTypes CvCityAI::AI_bestFatherPoint() const
 			}
 		}
 	}
-	
+
 	return eBestTotalPoint;
 }
 //TAC - AI produces FF Points - koma13 - END
@@ -2936,7 +2936,7 @@ bool CvCityAI::AI_addBestCitizen()
 		int iBestValue = 0;
 		int iBestPlot = -1;
 		ProfessionTypes eBestProfession = NO_PROFESSION;
-		
+
 		for (int i=0;i<GC.getNumProfessionInfos();i++)
 		{
 			ProfessionTypes eLoopProfession = (ProfessionTypes) i;
@@ -2961,7 +2961,7 @@ bool CvCityAI::AI_addBestCitizen()
 											if (canWork(pLoopPlot))
 											{
 												int iValue = AI_professionValue(eLoopProfession, pUnit, pLoopPlot, NULL);
-												
+
 												if (iValue > iBestValue)
 												{
 													eBestProfession = eLoopProfession;
@@ -2996,7 +2996,7 @@ bool CvCityAI::AI_addBestCitizen()
 			//FAssertMsg(false, "Could not assign citizen any profession.");
 			return false;
 		}
-		
+
 		if (iBestPlot != -1)
 		{
 			FAssert(GC.getProfessionInfo(eCurrentProfession).isWorkPlot());
@@ -3015,7 +3015,7 @@ bool CvCityAI::AI_addBestCitizen()
 	}
 
 	int iBestPlot = AI_bestProfessionPlot(eCurrentProfession, pUnit);
-	
+
 	if (iBestPlot != -1)
 	{
 		if (getUnitWorkingPlot(iBestPlot) != pUnit)
@@ -3039,7 +3039,7 @@ bool CvCityAI::AI_removeWorstCitizen()
 	int iValue;
 	int iWorstValue;
 	int iI;
-	
+
 	bAvoidGrowth = AI_avoidGrowth();
 	bIgnoreGrowth = AI_ignoreGrowth();
 
@@ -3079,7 +3079,7 @@ bool CvCityAI::AI_removeWorstCitizen()
 		clearUnitWorkingPlot(iWorstPlot);
 		return true;
 	}
-	
+
 	return false;
 }
 
@@ -3115,7 +3115,7 @@ CvUnit* CvCityAI::AI_bestPopulationUnit(UnitAITypes eUnitAI, ProfessionTypes ePr
 	}
 
 	FAssert(!GC.getProfessionInfo(eProfession).isCitizen());
-	
+
 	int iBestValue = 0;
 	CvUnit* pBestUnit = NULL;
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
@@ -3124,7 +3124,7 @@ CvUnit* CvCityAI::AI_bestPopulationUnit(UnitAITypes eUnitAI, ProfessionTypes ePr
 		if (pLoopUnit->canHaveProfession(eProfession, false))
 		{
 			int iValue = kOwner.AI_professionSuitability(pLoopUnit, eProfession, plot(), eUnitAI);
-			
+
 			if (iValue > iBestValue)
 			{
 				iBestValue = iValue;
@@ -3137,17 +3137,17 @@ CvUnit* CvCityAI::AI_bestPopulationUnit(UnitAITypes eUnitAI, ProfessionTypes ePr
 		removePopulationUnit(pBestUnit, false, eProfession);
 		pBestUnit->AI_setUnitAIType(eUnitAI);
 	}
-	
+
 	return pBestUnit;
 }
 
 void CvCityAI::AI_juggleCitizens()
 {
 	return; //do not juggle citizens...
-	
+
 	bool bAvoidGrowth = AI_avoidGrowth();
 	bool bIgnoreGrowth = AI_ignoreGrowth();
-	
+
 	// one at a time, remove the worst citizen, then add the best citizen
 	// until we add back the same one we removed
 	for (int iPass = 0; iPass < 2; iPass++)
@@ -3254,7 +3254,7 @@ BestJob AI_findBestJob(const CvCityAI& kCity, ProfessionTypes eProfession, const
 	int iBestValue = 0;
 	int iBestPlot = -1;
 	ProfessionTypes eBestProfession = NO_PROFESSION;
-	
+
 	// TODO: Get this out of the parallel loop so we don't launch taks with almost nothing to do
 	// We can accomplish this by having a "pre-filtered" list of valid citizen professions
 	if (kUnit.canHaveProfession(eProfession, true))
@@ -3270,7 +3270,7 @@ BestJob AI_findBestJob(const CvCityAI& kCity, ProfessionTypes eProfession, const
 					if (pLoopPlot != NULL && kCity.canWork(pLoopPlot))
 					{
 						int iValue = kCity.AI_professionValue(eProfession, &kUnit, pLoopPlot, NULL);
-						
+
 						bool bValid = true;
 
 						if (pLoopPlot->isBeingWorked())
@@ -3407,9 +3407,9 @@ CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly)
 
 	// TODO: Determine if 8 bits are enough
 	// TODO: Split in two ranges to better balance the workload (plot vs. building workers) ?
-	// TODO: Maybe set grainsize to the number of professions that we expect to iterate through divided by the 
+	// TODO: Maybe set grainsize to the number of professions that we expect to iterate through divided by the
 	tbb::parallel_reduce(tbb::blocked_range<size_t>(0, kValidCityJobs.size()), fbj, tbb::auto_partitioner());
-	
+
 	// Assert that the rng state is the same after the concurrent operation has completed
 	unsigned long rngStatePost = GC.getGameINLINE().getSorenRand().peek();
 
@@ -3418,7 +3418,7 @@ CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly)
 	const int iBestValue = fbj.bestJob.iBestValue;
 	const int iBestPlot = fbj.bestJob.iBestPlot;
 	const ProfessionTypes eBestProfession = fbj.bestJob.eBestProfession;
-	
+
 	// Do the regular serial code here
 
 	jobMutex.lock();
@@ -3673,10 +3673,10 @@ CvUnit* CvCityAI::AI_juggleColonist(CvUnit* pUnit)
 {
 	ProfessionTypes eProfession = pUnit->getProfession();
 	CvPlot* pPlot = getPlotWorkedByUnit(pUnit);
-	
+
 	CvUnit* pBestUnit = NULL;
 	int iBestValue = 0;
-	
+
 	//AI_setWorkforceHack(true);
 
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
@@ -3688,7 +3688,7 @@ CvUnit* CvCityAI::AI_juggleColonist(CvUnit* pUnit)
 			{
 				CvPlot* pLoopPlot = getPlotWorkedByUnit(pLoopUnit);
 				ProfessionTypes eLoopProfession = pLoopUnit->getProfession();
-				
+
 				if (pLoopUnit->canHaveProfession(eProfession, true, pPlot) && pUnit->canHaveProfession(eLoopProfession, true, pLoopPlot))
 				{
 					int iValueA1 = AI_professionValue(eProfession, pUnit, pPlot, pLoopUnit);
@@ -3710,26 +3710,26 @@ CvUnit* CvCityAI::AI_juggleColonist(CvUnit* pUnit)
 			}
 		}
 	}
-	
+
 	//AI_setWorkforceHack(false);
 
 	if (pBestUnit != NULL)
 	{
-		AI_swapUnits(pUnit, pBestUnit);		
+		AI_swapUnits(pUnit, pBestUnit);
 	}
-	
+
 	return pBestUnit;
-	
+
 }
 
 void CvCityAI::AI_swapUnits(CvUnit* pUnitA, CvUnit* pUnitB)
 {
 	ProfessionTypes eProfessionA = pUnitA->getProfession();
 	CvPlot* pPlotA = getPlotWorkedByUnit(pUnitA);
-	
+
 	ProfessionTypes eProfessionB = pUnitB->getProfession();
 	CvPlot* pPlotB = getPlotWorkedByUnit(pUnitB);
-	
+
 	//remove from plot
 	if (pPlotA != NULL)
 	{
@@ -3741,7 +3741,7 @@ void CvCityAI::AI_swapUnits(CvUnit* pUnitA, CvUnit* pUnitB)
 	}
 
 	//remove from building
-	
+
 	pUnitA->setProfession(NO_PROFESSION);
 	pUnitB->setProfession(NO_PROFESSION);
 
@@ -3750,7 +3750,7 @@ void CvCityAI::AI_swapUnits(CvUnit* pUnitA, CvUnit* pUnitB)
 	{
 		setUnitWorkingPlot(pPlotB, pUnitA->getID());
 	}
-	
+
 	const bool bResB = pUnitB->setProfession(eProfessionA);
 
 	while (!bResB)
@@ -3765,7 +3765,7 @@ void CvCityAI::AI_swapUnits(CvUnit* pUnitA, CvUnit* pUnitB)
 
 	if (!(bResA && bResB))
 	{
-		CvWString szTempBuffer;	
+		CvWString szTempBuffer;
 		szTempBuffer.Format(L"Units: %s and %s in city: %s failed to swap!", pUnitA->getNameAndProfession().GetCString(), pUnitB->getNameAndProfession().GetCString(), getName().GetCString());
 		std::string s(szTempBuffer.begin(), szTempBuffer.end());
 		FAssertMsg(false, s.c_str());
@@ -3795,8 +3795,8 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 	}
 
 	CvProfessionInfo& kProfessionInfo = GC.getProfessionInfo(eProfession);
-	
-	
+
+
 	int iIncome = 0;
 	int iTarget = 0;
 	int iYieldOutput = 0;
@@ -3807,7 +3807,7 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 
 	YieldTypes eYieldProducedType = NO_YIELD;
 	YieldTypes eYieldConsumedType = NO_YIELD;
-	
+
 	FAssert(pUnit != NULL);
 
 	if (!pUnit->isOnMap())
@@ -3831,9 +3831,9 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 	{
 		return 0;
 	}
-	
+
 	CvUnitInfo& kUnit = GC.getUnitInfo(pUnit->getUnitType());
-	
+
 	if (GC.getProfessionInfo(eProfession).isWorkPlot())
 	{
 		if (pPlot == NULL)
@@ -3841,18 +3841,18 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 			return 0;
 		}
 		FAssert(canWork(pPlot));
-		
+
 		iYieldOutput = pPlot->calculatePotentialProfessionYieldAmount(eProfession, pUnit, false);
 		// R&R, ray , MYCP partially based on code of Aymerick - START
 		eYieldProducedType = (YieldTypes) kProfessionInfo.getYieldsProduced(0);
-		// R&R, ray , MYCP partially based on code of Aymerick - END	
+		// R&R, ray , MYCP partially based on code of Aymerick - END
 		if ((eYieldProducedType != NO_YIELD) && kUnit.getYieldChange(eYieldProducedType) > 0)
 		{
 			int iYieldChange = kUnit.getYieldChange(eYieldProducedType);
 			if (pPlot->getBonusType() != NO_BONUS && GC.getBonusInfo(pPlot->getBonusType()).getYieldChange(eYieldProducedType) > 0)
 			{
 				iYieldChange += kUnit.getBonusYieldChange(eYieldProducedType);
-				
+
 			}
 			if (pPlot->isWater())
 			{
@@ -3873,7 +3873,7 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 	else
 	{
 		FAssertMsg(pPlot == NULL, "passing in a plot for an indoors profession? Why?");
-		
+
 		iYieldOutput = getProfessionOutput(eProfession, pUnit);
 		iYieldInput = getProfessionInput(eProfession, pUnit);
 		// R&R, ray , MYCP partially based on code of Aymerick - START
@@ -3891,7 +3891,7 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 		FAssert(iYieldOutput == 0);
 		return 0;
 	}
-	
+
 	// R&R, ray, AI improvement
 	/*
 	if (eYieldProducedType == YIELD_HORSES && !isNative())
@@ -3899,7 +3899,7 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 		return 0;//XXX :P.
 	}
 	*/
-	
+
 	if (iYieldOutput == 0)
 	{
 		return 0;
@@ -3909,19 +3909,19 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 	FAssertMsg(kProfessionInfo.getNumYieldsConsumed() <= MAX_INPUT_YIELDS, "More than 2 input yields are not supported");
 
 	ProfessionValue professionValue[MAX_INPUT_YIELDS];
-	
+
 	// Erik: If more than one yield is consumed, we have to separately evaluate
 	// their contribution to the output
 	for (int i = 0; i < kProfessionInfo.getNumYieldsConsumed(); i++)
 	{
 		ProfessionValue &pv = professionValue[i];
-		
+
 		pv.iYieldInput = iYieldInput;
 		pv.iYieldOutput = iYieldOutput;
 		pv.iExtraYieldOutput = iExtraYieldOutput;
 
 		eYieldConsumedType = (YieldTypes)kProfessionInfo.getYieldsConsumed(i);
-		
+
 		pv.iYieldOutput *= getBaseYieldRateModifier(eYieldProducedType);
 		pv.iYieldOutput /= 100;
 
@@ -4086,7 +4086,7 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 				{
 					//iOutputValue += 100 * kOwner.AI_yieldValue(eYieldProducedType, true, pv.iYieldOutput);
 					iOutputValue += 100 * AI_estimateYieldValue(eYieldProducedType, pv.iYieldOutput);
-					
+
 
 
 				}
@@ -4374,7 +4374,7 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 		// Erik: In the case of multiple input yields, we use
 		// the minimum value resulting from the evaluation of the
 		// input yield (if any input is missing / does not contribute, we return early)
-		// This is not strictly correct, but to achieve that we'd have to rewrite 
+		// This is not strictly correct, but to achieve that we'd have to rewrite
 		// most of the function and make it far more sophisticated
 		for (int i = 1; i < kProfessionInfo.getNumYieldsConsumed(); i++)
 		{
@@ -4423,7 +4423,7 @@ int CvCityAI::AI_professionBasicOutput(ProfessionTypes eProfession, UnitTypes eU
 		{
 			return 0;
 		}
-		
+
 		int iModifier = 100;
 		int iExtra = 0;
 		// TAC - AI Economy - koma13 - START
@@ -4476,14 +4476,14 @@ CvUnit* CvCityAI::AI_getWorstProfessionUnit(ProfessionTypes eProfession) const
 	}
 
 	return pWorstUnit;
-}	
+}
 
 int CvCityAI::AI_unitJoinCityValue(CvUnit* pUnit, ProfessionTypes* peNewProfession) const
 {
 	int iBestValue = 0;
 	int iBestPlot = -1;
 	ProfessionTypes eBestProfession = NO_PROFESSION;
-	
+
 	for (int i=0;i<GC.getNumProfessionInfos();i++)
 	{
 		ProfessionTypes eLoopProfession = (ProfessionTypes) i;
@@ -4508,7 +4508,7 @@ int CvCityAI::AI_unitJoinCityValue(CvUnit* pUnit, ProfessionTypes* peNewProfessi
 										if (canWork(pLoopPlot))
 										{
 											int iValue = AI_professionValue(eLoopProfession, pUnit, pLoopPlot, NULL);
-											
+
 											if (iValue > iBestValue)
 											{
 												eBestProfession = eLoopProfession;
@@ -4535,7 +4535,7 @@ int CvCityAI::AI_unitJoinCityValue(CvUnit* pUnit, ProfessionTypes* peNewProfessi
 			}
 		}
 	}
-	
+
 	int iFood = 0;
 	for (int i = 0; i < NUM_CITY_PLOTS; ++i)
 	{
@@ -4555,13 +4555,13 @@ int CvCityAI::AI_unitJoinCityValue(CvUnit* pUnit, ProfessionTypes* peNewProfessi
 		iBestValue *= 4 + iFood;
 		iBestValue /= 4 + getPopulation() * GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION;
 	}
-	
+
 	if (peNewProfession != NULL)
 	{
 		*peNewProfession = eBestProfession;
 	}
-	
-	return iBestValue;	
+
+	return iBestValue;
 }
 
 int CvCityAI::AI_unitJoinReplaceValue(CvUnit* pUnit, CvUnit** pReplaceUnit) const
@@ -4575,20 +4575,20 @@ int CvCityAI::AI_unitJoinReplaceValue(CvUnit* pUnit, CvUnit** pReplaceUnit) cons
 
 		if (pLoopUnit->getProfession() != NO_PROFESSION)
 		{
-		
-		
+
+
 			CvPlot* pPlot = getPlotWorkedByUnit(pLoopUnit);
 			if (pPlot == NULL)
 			{
 				pPlot = plot();
 			}
-			
+
 			int iExistingValue = kOwner.AI_professionSuitability(pLoopUnit, pLoopUnit->getProfession(), pPlot);
-			
+
 			int iNewValue = kOwner.AI_professionSuitability(pUnit, pLoopUnit->getProfession(), pPlot);
-			
+
 			int iValue = iNewValue - iExistingValue;
-			
+
 			if (iValue > iBestValue)
 			{
 				iBestValue = iValue;
@@ -4599,7 +4599,7 @@ int CvCityAI::AI_unitJoinReplaceValue(CvUnit* pUnit, CvUnit** pReplaceUnit) cons
 			}
 		}
 	}
-	
+
 	return iBestValue;
 }
 
@@ -4607,7 +4607,7 @@ ProfessionTypes CvCityAI::AI_bestPlotProfession(const CvUnit* pUnit, const CvPlo
 {
 	FAssert(pUnit != NULL);
 	FAssert(pPlot != NULL);
-	
+
 	ProfessionTypes eBestProfession = NO_PROFESSION;
 	int iBestValue = -1;
 	for (int iI = 0; iI < GC.getNumProfessionInfos(); iI++)
@@ -4634,7 +4634,7 @@ int CvCityAI::AI_bestProfessionPlot(ProfessionTypes eProfession, const CvUnit* p
 {
 	FAssert(pUnit != NULL);
 	FAssert(eProfession != NO_PROFESSION);
-	
+
 	int iBestValue = 0;
 	int iBestPlot = -1;
 	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
@@ -4650,7 +4650,7 @@ int CvCityAI::AI_bestProfessionPlot(ProfessionTypes eProfession, const CvUnit* p
 					if (canWork(pLoopPlot))
 					{
 						int iValue = AI_professionValue(eProfession, pUnit, pLoopPlot, NULL);
-						
+
 						// Erik: Make sure that we pick a plot even if it has no apparent economic value
 						// since the caller of this function cannot deal with the case that no plot was found
 						if (iValue >= iBestValue)
@@ -4663,11 +4663,11 @@ int CvCityAI::AI_bestProfessionPlot(ProfessionTypes eProfession, const CvUnit* p
 			}
 		}
 	}
-	
-	return iBestPlot;	
+
+	return iBestPlot;
 }
 
-	
+
 bool CvCityAI::AI_canMakeGift() const
 {
 	return (AI_getGiftTimer() <= 0);
@@ -4680,7 +4680,7 @@ int CvCityAI::AI_getGiftTimer() const
 
 void CvCityAI::AI_setGiftTimer(int iNewValue)
 {
-	m_iGiftTimer = iNewValue;	
+	m_iGiftTimer = iNewValue;
 	FAssert(AI_getGiftTimer() >= 0);
 }
 
@@ -4705,7 +4705,7 @@ int CvCityAI::AI_getTradeTimer() const
 
 void CvCityAI::AI_setTradeTimer(int iNewValue)
 {
-	m_iTradeTimer = iNewValue;	
+	m_iTradeTimer = iNewValue;
 	FAssert(AI_getTradeTimer() >= 0);
 }
 
@@ -4717,7 +4717,7 @@ void CvCityAI::AI_changeTradeTimer(int iChange)
 	}
 }
 // R&R, ray, Natives Trading - END
-	
+
 int CvCityAI::AI_maxGoldTrade(PlayerTypes ePlayer) const
 {
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
@@ -4734,12 +4734,12 @@ int CvCityAI::AI_calculateAlarm(PlayerTypes eIndex) const
 	{
 		return 0;
 	}
-	
+
 	CvAlarmInfo& kAlarm = GC.getAlarmInfo(eAlarm);
-	
+
 	int iPositiveAlarm = 0;
 	int iNegativeAlarm = 0;
-	
+
 	int iRange = kAlarm.getRange();
 	for (int iX = -iRange; iX <= iRange; iX++)
 	{
@@ -4748,7 +4748,7 @@ int CvCityAI::AI_calculateAlarm(PlayerTypes eIndex) const
 			int iDistance = plotDistance(iX, iY, 0, 0);
 			if (iDistance <= iRange)
 			{
-				CvPlot* pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iX, iY);
+				CvPlot* pLoopPlot = (coord() + RelCoordinates(iX, iY)).plot();
 				if (pLoopPlot != NULL)
 				{
 					int iPlotAlarm = 0;
@@ -4769,7 +4769,7 @@ int CvCityAI::AI_calculateAlarm(PlayerTypes eIndex) const
 			}
 		}
 	}
-	
+
 	//Religion
 	if (getMissionaryPlayer() != NO_PLAYER)
 	{
@@ -4780,13 +4780,13 @@ int CvCityAI::AI_calculateAlarm(PlayerTypes eIndex) const
 		}
 	}
 
-	int iModifier = 100; 
+	int iModifier = 100;
 	iModifier += GET_PLAYER(eIndex).getNativeAngerModifier();
 	iModifier = std::max(0, iModifier);
 
 	iPositiveAlarm *= iModifier;
 	iPositiveAlarm /= 100;
-	
+
 	return (iPositiveAlarm + iNegativeAlarm);
 }
 
@@ -4799,7 +4799,7 @@ const int YIELD_TOOLS_BASE_VALUE = 10;
 int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 {
 	int iValue = iAmount * GET_PLAYER(getOwnerINLINE()).AI_yieldValue(eYield);
-	
+
 	switch (eYield)
 	{
 		case YIELD_FOOD:
@@ -4840,7 +4840,7 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_FIELD_WORKER_TOOLS:
 		case YIELD_HOUSEHOLD_GOODS:
 			break;
-		// We punish overproduction of input yields 
+		// We punish overproduction of input yields
 		case YIELD_LUMBER:
 		case YIELD_HARDWOOD:
 		case YIELD_STONE:
@@ -4911,10 +4911,10 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 						break; // Use the default player level values
 					}
 					else
-					{ 
+					{
 						// Erik: For every 100 units in excess of the maintain level + baseline,
 						// decrement the estimated value by 1 to "punish" overproduction
-						// Note: This should only be applied to input yields and 
+						// Note: This should only be applied to input yields and
 						// not final products like muskets etc.
 						const int iExcessSurplus = std::max(0, getYieldStored(eYield) - getMaintainLevel(eYield)) - iBaselineAmount;
 						const int iReductionFactor = iExcessSurplus / 100;
@@ -4937,7 +4937,7 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 				iValue = static_cast<int>(iAmount * YIELD_TOOLS_BASE_VALUE + populationMultiplier);
 
 				if (AI_isPort() || AI_isMajorCity())
-				{ 
+				{
 					iValue *= 150;
 					iValue /= 100;
 				}
@@ -4966,17 +4966,17 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 			break;
 		case YIELD_BELLS:
 			{
-				// Erik: Estimate the value of bells based on this formula: 
-				// If rebel sentiment is <50%: 
-				//   Liberty bell value = (10 + pop/5 ) * (150% - rebel sentiment%) 
+				// Erik: Estimate the value of bells based on this formula:
+				// If rebel sentiment is <50%:
+				//   Liberty bell value = (10 + pop/5 ) * (150% - rebel sentiment%)
 				// Else
 				//  Liberty bell value = (10 + pop/5)
-				
+
 				// Note that the doubles are necessary for the calculation to round correctly
 				const int rebelPercent = getRebelPercent();
 				const double rebelFactor = (125 - getRebelPercent()) / (double)100;
 				const double populationMultiplier = std::max(1U, m_aPopulationUnits.size() / 5);
-				
+
 				iValue = static_cast<int>(iAmount * ((YIELD_BELLS_BASE_VALUE + populationMultiplier) * (getRebelPercent() < 50 ? rebelFactor : 1.0)));
 			}
 			break;
@@ -5000,7 +5000,7 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_BLACK_POWDER:
 			// Erik: Since the AI cannot use this yield for military purposes, I've decided to
 			// block it so that production is not diverted to it. (cannons are usually just sold in Europe
-			// without this fix) 
+			// without this fix)
 			iValue = 0;
 			break;
 		default:
@@ -5013,12 +5013,12 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 //Note that 0 means the camp should be disbanded in some way...
 int CvCityAI::AI_getTargetSize() const
 {
-	return m_iTargetSize;	
+	return m_iTargetSize;
 }
 
 void CvCityAI::AI_setTargetSize(int iNewValue)
 {
-	m_iTargetSize = iNewValue;	
+	m_iTargetSize = iNewValue;
 }
 
 //Yield inflow is the weight to put on delivering goods here
@@ -5026,7 +5026,7 @@ int CvCityAI::AI_getYieldOutputWeight(YieldTypes eYield) const
 {
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
-	
+
 	return m_em_iYieldOutputWeight.get(eYield);
 }
 
@@ -5035,17 +5035,17 @@ void CvCityAI::AI_setYieldOutputWeight(YieldTypes eYield, int iNewValue)
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
 	FAssertMsg(iNewValue >= 0, "Weight should be positive");
-	
+
 	m_em_iYieldOutputWeight.set(eYield, iNewValue);
 }
-	
+
 int CvCityAI::AI_getNeededYield(YieldTypes eYield) const
 {
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
-	
+
 	return m_em_iNeededYield.get(eYield);
-	
+
 }
 
 void CvCityAI::AI_setNeededYield(YieldTypes eYield, int iNewValue)
@@ -5053,7 +5053,7 @@ void CvCityAI::AI_setNeededYield(YieldTypes eYield, int iNewValue)
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
 	FAssertMsg(iNewValue > 0, "Negative needed yield makes no sense");
-	
+
 	m_em_iNeededYield.set(eYield, iNewValue);
 }
 
@@ -5062,17 +5062,17 @@ int CvCityAI::AI_getTradeBalance(YieldTypes eYield) const
 {
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
-	
+
 	int iAdjustment = 100 + 300 / (2 + YIELD_DISCOUNT_TURNS);
-	
+
 	return (m_em_iTradeBalance.get(eYield)* iAdjustment) / (YIELD_DISCOUNT_TURNS * 100);
 }
-	
+
 void CvCityAI::AI_changeTradeBalance(YieldTypes eYield, int iAmount)
 {
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
-	
+
 	m_em_iTradeBalance.add(eYield, iAmount);
 }
 
@@ -5150,7 +5150,7 @@ void CvCityAI::AI_updateNeededYields()
 	//This function has been updated to be invariant of the current workforce allocation.
 
 	m_em_iNeededYield.reset();
-	
+
 
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
 	{
@@ -5173,7 +5173,7 @@ void CvCityAI::AI_updateNeededYields()
 			else
 			{
 				ProfessionTypes eIdealProfession = pLoopUnit->AI_getIdealProfession();
-				
+
 				if (eIdealProfession != NO_PROFESSION && pLoopUnit->canHaveProfession(eIdealProfession, true, NULL))
 				{
 					// R&R, ray , MYCP partially based on code of Aymerick - START
@@ -5187,7 +5187,7 @@ void CvCityAI::AI_updateNeededYields()
 			}
 		}
 	}
-	
+
 	//Now, buildings.
 	for (int iI = 0; iI < GC.getNumProfessionInfos(); iI++)
 	{
@@ -5202,7 +5202,7 @@ void CvCityAI::AI_updateNeededYields()
 					// R&R, ray , MYCP partially based on code of Aymerick - START
 					YieldTypes eYieldProduced = (YieldTypes)kLoopProfession.getYieldsProduced(0);
 					YieldTypes eYieldConsumed = (YieldTypes)kLoopProfession.getYieldsConsumed(0);
-					// R&R, ray , MYCP partially based on code of Aymerick - END	
+					// R&R, ray , MYCP partially based on code of Aymerick - END
 					if (eYieldConsumed != NO_YIELD)
 					{
 						if (AI_getYieldAdvantage(eYieldProduced) == 100)
@@ -5229,8 +5229,8 @@ bool CvCityAI::AI_shouldImportYield(YieldTypes eYield) const
 			}
 		}
 	}
-	
-	return false;	
+
+	return false;
 }
 
 bool CvCityAI::AI_shouldExportYield(YieldTypes eYield) const
@@ -5252,7 +5252,7 @@ bool CvCityAI::AI_shouldExportYield(YieldTypes eYield) const
 	{
 		return false;
 	}
-	
+
 	if ((getYieldStored(eYield) * 100) / GC.getGameINLINE().getCargoYieldCapacity() > 75)
 	{
 		if (AI_getNeededYield(eYield) == 0)
@@ -5319,7 +5319,7 @@ int CvCityAI::AI_getFoodGatherable(int iPop, int iPlotFoodThreshold) const
 		{
 			if (iI == CITY_HOME_PLOT)
 			{
-				iTotal += pLoopPlot->getYield(YIELD_FOOD);		
+				iTotal += pLoopPlot->getYield(YIELD_FOOD);
 			}
 			else
 			{
@@ -5334,7 +5334,7 @@ int CvCityAI::AI_getFoodGatherable(int iPop, int iPlotFoodThreshold) const
 			}
 		}
 	}
-	
+
 	std::sort(yields.begin(), yields.end(), std::greater<int>());
 	for (int iI = 0; iI < (int)yields.size(); iI++)
 	{
@@ -5352,7 +5352,7 @@ int CvCityAI::AI_getFoodGatherable(int iPop, int iPlotFoodThreshold) const
 
 bool CvCityAI::AI_isPort() const
 {
-	return m_bPort;	
+	return m_bPort;
 }
 
 void CvCityAI::AI_setPort(bool iNewValue)
@@ -5420,7 +5420,7 @@ void CvCityAI::AI_updateRequiredYieldLevels()
 	{
 		ProfessionTypes eLoopProfession = (ProfessionTypes)iI;
 		CvProfessionInfo& kProfession = GC.getProfessionInfo(eLoopProfession);
-		
+
 		if (!(kProfession.isCitizen() || kProfession.isWorkPlot()))
 		{
 			if (GC.getCivilizationInfo(getCivilizationType()).isValidProfession(eLoopProfession))
@@ -5434,10 +5434,10 @@ void CvCityAI::AI_updateRequiredYieldLevels()
 				for (int iI = 0; iI < NUM_YIELD_TYPES; ++iI)
 				{
 					YieldTypes eYield = (YieldTypes)iI;
-					
+
 					int iRequired = GET_PLAYER(getOwnerINLINE()).getYieldEquipmentAmount(eLoopProfession, eYield);
 					int iPercent = 0;
-					
+
 					if (kPlayer.AI_isStrategy(STRATEGY_REVOLUTION_PREPARING))
 					{
 						if (eYield == YIELD_MUSKETS || eYield == YIELD_HORSES)
@@ -5456,25 +5456,25 @@ void CvCityAI::AI_updateRequiredYieldLevels()
 			}
 		}
 	}
-	
+
 	if (eBestProfession != NO_PROFESSION)
 	{
 		int iNeeded = AI_neededDefenders();
 		iNeeded -= AI_numDefenders(true, false);
-		
+
 		iNeeded = std::max(1, iNeeded);
-		
+
 		for (int iI = 0; iI < NUM_YIELD_TYPES; ++iI)
 		{
 			YieldTypes eYield = (YieldTypes)iI;
-			
+
 			int iRequired = GET_PLAYER(getOwnerINLINE()).getYieldEquipmentAmount(eBestProfession, eYield);
-			
+
 			aiLevels[eYield] = std::max(aiLevels[eYield], iRequired * iNeeded);
 		}
 	}
 	*/
-	
+
 	int iPercent = 60;
 
 	// R&R, ray, fix for new storage capacity
@@ -5505,11 +5505,11 @@ void CvCityAI::AI_updateRequiredYieldLevels()
 			}
 		}
 	}
-	
+
 	/*
 	if (AI_getTargetSize() > 3)
 	{
-		aiLevels[YIELD_LUMBER] = std::max(aiLevels[YIELD_LUMBER], getMaxYieldCapacity() / 2);		
+		aiLevels[YIELD_LUMBER] = std::max(aiLevels[YIELD_LUMBER], getMaxYieldCapacity() / 2);
 	}
 	*/
 	// TAC - AI Economy - koma13 - END
@@ -5612,7 +5612,7 @@ int CvCityAI::AI_yieldValue(const EnumMap<YieldTypes, short>& em_iYields, bool b
 			iValue +=  AI_estimateYieldValue(eYield, iAmount);
 		}
 	}
-			
+
 	return iValue;
 }
 
@@ -5644,7 +5644,7 @@ int CvCityAI::AI_plotValue(const CvPlot* pPlot, bool bAvoidGrowth, bool bRemove,
 	{
 		eFinalImprovement = finalImprovementUpgrade(eCurrentImprovement);
 	}
-	
+
 	int iYieldValue = (AI_yieldValue(em_iYields, bAvoidGrowth, bRemove, bIgnoreFood, bIgnoreGrowth, bIgnoreStarvation) * 100);
 	if (eFinalImprovement != NO_IMPROVEMENT)
 	{
@@ -5654,7 +5654,7 @@ int CvCityAI::AI_plotValue(const CvPlot* pPlot, bool bAvoidGrowth, bool bRemove,
 			em_iYields.add(eYield, iYieldDiff);
 		}
 		int iFinalYieldValue = (AI_yieldValue(em_iYields, bAvoidGrowth, bRemove, bIgnoreFood, bIgnoreGrowth, bIgnoreStarvation) * 100);
-		
+
 		if (iFinalYieldValue > iYieldValue)
 		{
 			iYieldValue = (40 * iYieldValue + 60 * iFinalYieldValue) / 100;
@@ -5701,7 +5701,7 @@ int CvCityAI::AI_plotValue(const CvPlot* pPlot, bool bAvoidGrowth, bool bRemove,
 			iUpgradePenalty *= (iTotalDiff * 5);
 			iUpgradePenalty /= std::max(1, GC.getGameSpeedInfo(GC.getGame().getGameSpeedType()).getGrowthPercent());
 			iValue -= iUpgradePenalty;
-		}		
+		}
 	}
 
 	return iValue;
@@ -5718,23 +5718,23 @@ int CvCityAI::AI_plotYieldValue(const CvPlot* pPlot, int* piYields) const
 {
 	FAssert(piYields != NULL);
 	int iValue = 0;
-	
+
 	int iBestValue = 0;
-	
+
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 	{
 		YieldTypes eYield = (YieldTypes)iJ;
-		
+
 		if (piYields[eYield] > 0)
 		{
 			// TAC - AI More Food - koma13 - START
 			//int iTempValue = (1 + piYields[eYield]) * kOwner.AI_yieldValue(eYield);
 			int iTempValue = (1 + piYields[eYield]) * kOwner.AI_yieldValue(eYield, true, 1, true);
 			// TAC - AI More Food - koma13 - END
-			
+
 			bool bImportant = false;
-			
+
 			if (pPlot->isBeingWorked())
 			{
 				if (pPlot->getYield(eYield) > 0)
@@ -5743,13 +5743,13 @@ int CvCityAI::AI_plotYieldValue(const CvPlot* pPlot, int* piYields) const
 					bImportant = true;
 				}
 			}
-			
+
 			iValue += iTempValue;
 			iBestValue = std::max(iBestValue, iTempValue);
 		}
 	}
 	iValue += iBestValue * 2;
-	
+
 	return iValue;
 }
 
@@ -5772,11 +5772,11 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 	{
 		return;
 	}
-	
+
 	FAssertMsg(pPlot->getOwnerINLINE() == getOwnerINLINE(), "pPlot must be owned by this city's owner");
-	
+
 	BuildTypes eForcedBuild = NO_BUILD;
-	
+
 	{	//If a worker is already building a build, force that Build.
 		CLLNode<IDInfo>* pUnitNode;
 		CvUnit* pLoopUnit;
@@ -5798,7 +5798,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 			}
 		}
 	}
-	
+
 	int aiCurrentYields[NUM_YIELD_TYPES];
 	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
@@ -5808,7 +5808,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 		{
 			aiCurrentYields[iI] += (pPlot->calculateImprovementYieldChange(pPlot->getImprovementType(), eYield, getOwnerINLINE(), false));
 		}
-		
+
 		if (pPlot->getRouteType() != NO_ROUTE)
 		{
 			if (aiCurrentYields[iI] > 0)
@@ -5835,16 +5835,16 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 			}
 		}
 	}
-	
+
 	int iCurrentValue = AI_plotYieldValue(pPlot, aiCurrentYields);
 
 	int iBestValue = 0;
 	BuildTypes eBestBuild = NO_BUILD;
-	
-	int aiFinalYields[NUM_YIELD_TYPES];	
+
+	int aiFinalYields[NUM_YIELD_TYPES];
 	FeatureTypes eFeature = (FeatureTypes)pPlot->getFeatureType();
-	ImprovementTypes eImprovement = pPlot->getImprovementType();	
-	
+	ImprovementTypes eImprovement = pPlot->getImprovementType();
+
 	bool bIgnoreFeature = true;
 	if (eFeature != NO_FEATURE)
 	{
@@ -5852,11 +5852,11 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 		for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
 		{
 			YieldTypes eYield = (YieldTypes)iYield;
-			
+
 			if (kFeature.getYieldChange(eYield) > 0)
 			{
 				int iYield = pPlot->calculateNatureYield(eYield, getTeam(), false);
-				
+
 				if (iYield > ((kOwner.AI_getBestPlotYield(eYield) * 2) / 3))
 				{
 					bIgnoreFeature = false;
@@ -5864,14 +5864,14 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 				}
 			}
 		}
-		
+
 		if (pPlot->getBonusType() != NO_BONUS)
 		{
 			CvBonusInfo& kBonus = GC.getBonusInfo(pPlot->getBonusType());
 			for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
 			{
 				YieldTypes eYield = (YieldTypes)iYield;
-				
+
 				if (kBonus.getYieldChange(eYield) > 0)
 				{
 					if (kFeature.getYieldChange(eYield) < 0)
@@ -5887,18 +5887,18 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 			}
 		}
 	}
-	
+
 	for (int iI = 0; iI < GC.getNumBuildInfos(); iI++)
 	{
 		BuildTypes eBuild = (BuildTypes)iI;
-		
+
 		CvBuildInfo& kBuild = GC.getBuildInfo(eBuild);
 		bool bValid = GET_PLAYER(getOwnerINLINE()).canBuild(pPlot, eBuild, true, true);
-		
+
 		if (bValid && eForcedBuild != NO_BUILD && eForcedBuild != eBuild)
 		{
 			CvBuildInfo& kForcedBuild = GC.getBuildInfo(eForcedBuild);
-			
+
 			if ((kBuild.getImprovement() != NO_IMPROVEMENT) && (kForcedBuild.getImprovement() != NO_IMPROVEMENT))
 			{
 				bValid = false;
@@ -5912,11 +5912,11 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 				bValid = false;
 			}
 		}
-		
+
 		if (bValid)
 		{
 			bool bCaution = false;
-			
+
 			ImprovementTypes eImprovement = (ImprovementTypes)kBuild.getImprovement();
 			RouteTypes eRoute = (RouteTypes)kBuild.getRoute();
 			bool bRemoveFeature = false;
@@ -5929,7 +5929,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 			{
 				YieldTypes eYield = (YieldTypes)iYield;
 				aiFinalYields[eYield] = pPlot->getYieldWithBuild(eBuild, eYield, true);
-				
+
 				//Zero out particulary bad yields.
 				if (aiFinalYields[eYield] > 0)
 				{
@@ -5950,9 +5950,9 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 					}
 				}
 			}
-			
+
 			int iValue = AI_plotYieldValue(pPlot, aiFinalYields);
-			
+
 			if (kBuild.getRoute() != NO_ROUTE)
 			{
 				//WTP, Nightinggale, Large Rivers - START
@@ -5960,7 +5960,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 				{
 					// AI should not build "fake" routes as best build. They are meant for river crossings.
 					// Allowing building them here means building IMPROVEMENT_RAFT_STATION without considering if there is anything of interest on the other side of the large river.
-					// The AI can use MISSION_ROUTE_TO to make the river crossings while planning routes from city to city.  
+					// The AI can use MISSION_ROUTE_TO to make the river crossings while planning routes from city to city.
 					bValid = false;
 					break;
 				}
@@ -5984,7 +5984,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 					}
 				}
 			}
-			
+
 			if ((eFeature != NO_FEATURE) && bIgnoreFeature && (eImprovement != NO_IMPROVEMENT))
 			{
 				CvImprovementInfo& kImprovement = GC.getImprovementInfo(eImprovement);
@@ -6001,7 +6001,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 					}
 				}
 			}
-			
+
 			if (iValue > iCurrentValue)
 			{
 				if (bRemoveFeature)
@@ -6019,7 +6019,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 							}
 						}
 					}
-					
+
 					if (bUnique)
 					{
 						CvFeatureInfo& kFeature = GC.getFeatureInfo(eFeature);
@@ -6034,13 +6034,13 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 								{
 									iBestYield = std::max(iBestYield, pBestYieldPlot->calculateBestNatureYield(eYield, getTeam()));
 								}
-	
+
 								pBestYieldPlot = kOwner.AI_getBestUnworkedYieldPlot(eYield);
 								if (pBestYieldPlot != NULL)
 								{
 									iBestYield = std::max(iBestYield, pBestYieldPlot->calculateBestNatureYield(eYield, getTeam()));
 								}
-								
+
 								if (pPlot->calculateBestNatureYield(eYield, getTeam()) >= iBestYield)
 								{
 									iValue *= 75;
@@ -6061,7 +6061,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 							iValue /= 100;
 						}
 					}
-				
+
 					if (eFeature != NO_FEATURE)
 					{
 						if (kBuild.isFeatureRemove(eFeature))
@@ -6077,21 +6077,21 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 							}
 							FAssert(pCity == this);
 							//XXX update this once chops are saner (likely the chop yield type is defined)
-							
+
 							if (pPlot->getBonusType() != NO_BONUS)
 							{
 								iValue /= 2;
-								//XXX Traditionally in Col, removing a feature destroys the bonus.							
+								//XXX Traditionally in Col, removing a feature destroys the bonus.
 							}
 						}
 					}
-				
+
 					if (eBuild == eForcedBuild)
 					{
 						iValue *= 125;
 						iValue /= 100;
 					}
-				
+
 					if (iValue > iBestValue)
 					{
 						iBestValue = iValue;
@@ -6101,7 +6101,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 			}
 		}
 	}
-	
+
 	if (eBestBuild != NO_BUILD)
 	{
 		CvBuildInfo& kBestBuild = GC.getBuildInfo(eBestBuild);
@@ -6110,7 +6110,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 			if (kBestBuild.isFeatureRemove(eFeature))
 			{
 				int iBestTime = kBestBuild.getTime();
-				
+
 				for (int iBuild = 0; iBuild < GC.getNumBuildInfos(); ++iBuild)
 				{
 					CvBuildInfo& kLoopBuild = GC.getBuildInfo((BuildTypes)iBuild);
@@ -6126,11 +6126,11 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 			}
 		}
 	}
-	
+
 	if (eBestBuild != NO_BUILD)
 	{
 		FAssertMsg(iBestValue > 0, "iBestValue is expected to be greater than 0");
-		
+
 		if (piBestValue != NULL)
 		{
 			*piBestValue = iBestValue;
@@ -6144,15 +6144,15 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 
 int CvCityAI::AI_cityValue() const
 {
-	
+
 	AreaAITypes eAreaAI = area()->getAreaAIType(getTeam());
     if ((eAreaAI == AREAAI_OFFENSIVE) || (eAreaAI == AREAAI_MASSING) || (eAreaAI == AREAAI_DEFENSIVE))
     {
         return 0;
     }
-    
+
 	int iValue = 0;
-	
+
 	iValue += getYieldRate(YIELD_BELLS);
 	iValue += getYieldRate(YIELD_CULTURE);
 	iValue += getYieldRate(YIELD_HAMMERS);
@@ -6355,7 +6355,7 @@ int CvCityAI::AI_calculateTargetCulturePerTurn()
 {
 	return 1;
 }
-	
+
 // +1/+3/+5 plot based on base food yield (1/2/3)
 // +4 if being worked.
 // +4 if a bonus.
@@ -6429,7 +6429,7 @@ int CvCityAI::AI_countNumBonuses(BonusTypes eBonus, bool bIncludeOurs, bool bInc
 					{
 						if (bIncludeOurs && (pLoopPlot->getOwnerINLINE() == getOwnerINLINE()) && (pLoopPlot->getWorkingCity() == this))
 						{
-							iCount++;                    
+							iCount++;
 						}
 						else if (bIncludeNeutral && (!pLoopPlot->isOwned()))
 						{
@@ -6440,7 +6440,7 @@ int CvCityAI::AI_countNumBonuses(BonusTypes eBonus, bool bIncludeOurs, bool bInc
 							if ((pLoopPlot->getCulture(pLoopPlot->getOwnerINLINE()) - pLoopPlot->getCulture(getOwnerINLINE())) < iOtherCultureThreshold)
 							{
 								iCount++;
-							}                        
+							}
 						}
 					}
 				}
@@ -6457,13 +6457,13 @@ int CvCityAI::AI_playerCloseness(PlayerTypes eIndex, int iMaxDistance) const
 {
 	FAssert(GET_PLAYER(eIndex).isAlive());
 	FAssert(eIndex != getID());
-	
+
 	if ((m_iCachePlayerClosenessTurn != GC.getGame().getGameTurn())
 		|| (m_iCachePlayerClosenessDistance != iMaxDistance))
 	{
 		AI_cachePlayerCloseness(iMaxDistance);
 	}
-	
+
 	return m_em_iPlayerCloseness.get(eIndex);
 }
 
@@ -6476,10 +6476,10 @@ void CvCityAI::AI_cachePlayerCloseness(int iMaxDistance) const
 	int iValue;
 	int iTempValue;
 	int iBestValue;
-	
+
 	for (iI = 0; iI < MAX_PLAYERS; iI++)
 	{
-		if (GET_PLAYER((PlayerTypes)iI).isAlive() && 
+		if (GET_PLAYER((PlayerTypes)iI).isAlive() &&
 			((GET_TEAM(getTeam()).isHasMet(GET_PLAYER((PlayerTypes)iI).getTeam()))))
 		{
 			iValue = 0;
@@ -6534,7 +6534,7 @@ void CvCityAI::AI_cachePlayerCloseness(int iMaxDistance) const
 			(const_cast <CvCityAI*> (this))->m_em_iPlayerCloseness.set((PlayerTypes)iI,(iBestValue + iValue / 4));
 		}
 	}
-	
+
 	m_iCachePlayerClosenessTurn = GC.getGame().getGameTurn();
 	m_iCachePlayerClosenessDistance = iMaxDistance;
 }
@@ -6549,7 +6549,7 @@ int CvCityAI::AI_cityThreat(bool bDangerPercent) const
 		if ((iI != getOwner()) && GET_PLAYER((PlayerTypes)iI).isAlive())
 		{
 			int iTempValue = AI_playerCloseness((PlayerTypes)iI, 5);
-			
+
 			// TAC - AI City Defense - koma13 - START
 			if (iTempValue > 0)
 			{
@@ -6574,7 +6574,7 @@ int CvCityAI::AI_cityThreat(bool bDangerPercent) const
 //				}
 /************************************************************************************************/
 /* BETTER_BTS_AI_MOD                       END                                                  */
-/************************************************************************************************/				
+/************************************************************************************************/
 				else
 				{
 					switch (GET_PLAYER(getOwnerINLINE()).AI_getAttitude((PlayerTypes)iI))
@@ -6604,21 +6604,21 @@ int CvCityAI::AI_cityThreat(bool bDangerPercent) const
 						break;
 					}
 				}
-				
+
 				iTempValue /= 100;
 				iValue += iTempValue;
 			}
 			// TAC - AI City Defense - koma13 - END
 		}
 	}
-	
+
 	if (isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()))
 	{
 		iValue += 6;
 	}
-	
+
 	iValue += 2 * GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot(), 3, false);
-	
+
 	return iValue;
 }
 
@@ -6641,17 +6641,17 @@ void CvCityAI::AI_changeWorkersHave(int iChange)
 	m_iWorkersHave += iChange;
 	m_iWorkersHave = std::max(0, m_iWorkersHave);
 }
-	
+
 //This needs to be serialized for human workers.
 void CvCityAI::AI_updateWorkersNeededHere()
 {
 	CvPlot* pLoopPlot;
-	
+
 	int iWorkedUnimprovedCount = 0;
 	int iUnimprovedBonusCount = 0;
-	
+
 	int iValue = 0;
-	
+
 	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 	{
 		pLoopPlot = getCityIndexPlot(iI);
@@ -6684,7 +6684,7 @@ void CvCityAI::AI_updateWorkersNeededHere()
 			}
 		}
 	}
-	
+
 	if (iValue == 0)
 	{
 		m_iWorkersNeeded = 0;
@@ -6716,17 +6716,17 @@ void CvCityAI::AI_educateStudent(int iUnitId)
 			UnitClassTypes eUnitClassType = (UnitClassTypes)kUnit.getUnitClassType(); // R&R, ray, changed
 
 			int iValue = 50;
-			
+
 			int iNeeded = kOwner.AI_getNumCityUnitsNeeded(eLoopUnit);
 			int iHave = kOwner.getUnitClassCount(eUnitClassType); // R&R, ray, changed
-			
+
 			if (iNeeded < iHave)
 			{
 				iValue += 100 + 50 * (iNeeded - iHave);
-				
+
 				iValue *= 100 + kUnit.getYieldModifier(YIELD_BELLS);
 				iValue /= 100;
-				
+
 				iValue *= 100 + (3 * kUnit.getYieldModifier(YIELD_HAMMERS) / 2);
 				iValue /= 100;
 			}
@@ -6747,9 +6747,9 @@ void CvCityAI::AI_educateStudent(int iUnitId)
 					}
 				}
 			}
-			
+
 			iValue *= 40 + GC.getGameINLINE().getSorenRandNum(60, "AI best educate unit");
-			
+
 			// TAC - AI Military Buildup - koma13 - START
 			if ((iTuition == 0) || !kOwner.AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
 			{
@@ -6791,10 +6791,10 @@ bool CvCityAI::AI_isMajorCity() const
 			return true;
 		}
 	}
-	
+
 	CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
 	int iHigherPopulationCount = 0;
-	
+
 	int iLoop;
 	for (CvCity* pLoopCity = kOwner.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kOwner.nextCity(&iLoop))
 	{
@@ -6813,17 +6813,17 @@ bool CvCityAI::AI_isMajorCity() const
 			}
 		}
 	}
-	
+
 	if (100 * iHigherPopulationCount / kOwner.getNumCities() <= 20)
 	{
 		return true;
 	}
-	
+
 	return false;
 }
 
 
-// Choose the yield with the highest export value for the city plot 
+// Choose the yield with the highest export value for the city plot
 // TODO: Extend this by considering deficit input yields for slotworkers
 void CvCityAI::AI_assignCityPlot()
 {
@@ -6892,7 +6892,7 @@ void CvCityAI::AI_doSettlerProfessionCheat()
 
 	if (!(!kOwner.isHuman() && !kOwner.isNative() && !GC.getGameINLINE().isBarbarianPlayer(kOwner.getID()) && !kOwner.isEurope() && getPopulation() > 3))
 		return;
-	
+
 	// Hackish way to cache this compution
 	static ProfessionTypes eSettlerProfession = NO_PROFESSION;
 
