@@ -40,11 +40,12 @@ bool Coordinates::isOnMap() const
 
 CvPlot* Coordinates::plot() const
 {
-	return GC.getMapINLINE().plotINLINE(*this);
+	return isOnMap() ? GC.getMapINLINE().plotINLINE(*this) : NULL;
 }
 
 int Coordinates::plotNum() const
 {
+	FAssert(isOnMap());
 	return GC.getMapINLINE().plotNumINLINE(*this);
 }
 
