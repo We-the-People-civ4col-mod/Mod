@@ -10420,17 +10420,24 @@ void CvUnit::setHotKeyNumber(int iNewValue)
 
 int CvUnit::getX() const
 {
-	return m_iX;
+	return getX_INLINE();
 }
 
 
 int CvUnit::getY() const
 {
-	return m_iY;
+	return getY_INLINE();
 }
 
 
 void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool bCheckPlotVisible)
+{
+	FCoord toCoord(iX, iY);
+	jumpTo(toCoord, bGroup, bUpdate, bShow, bCheckPlotVisible);
+}
+
+
+void CvUnit::jumpTo(FCoord toCoord, bool bGroup, bool bUpdate, bool bShow, bool bCheckPlotVisible)
 {
 	CLLNode<IDInfo>* pUnitNode;
 	CvCity* pOldCity;
@@ -10451,15 +10458,15 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 		if (gDLL->getChtLvl() > 0)
 		{
 			char szOut[1024];
-			sprintf(szOut, "Player %d Unit %d (%S's %S) moving from %d:%d to %d:%d\n", getOwnerINLINE(), getID(), GET_PLAYER(getOwnerINLINE()).getNameKey(), getName().GetCString(), getX_INLINE(), getY_INLINE(), iX, iY);
+			sprintf(szOut, "Player %d Unit %d (%S's %S) moving from %d:%d to %d:%d\n", getOwnerINLINE(), getID(), GET_PLAYER(getOwnerINLINE()).getNameKey(), getName().GetCString(), getX_INLINE(), getY_INLINE(), toCoord.x(), toCoord.y());
 			gDLL->messageControlLog(szOut);
 		}
 	}
 
-	FAssert(!at(iX, iY) || (iX == INVALID_PLOT_COORD) || (iY == INVALID_PLOT_COORD));
+	FAssert(!at(toCoord) || coord().isInvalidPlotCoord());
 	FAssert(!isFighting());
-	FAssert((iX == INVALID_PLOT_COORD) || (GC.getMapINLINE().plotINLINE(iX, iY)->getX_INLINE() == iX));
-	FAssert((iY == INVALID_PLOT_COORD) || (GC.getMapINLINE().plotINLINE(iX, iY)->getY_INLINE() == iY));
+	FAssert(coord().isInvalidPlotCoord() || (GC.getMapINLINE().plotINLINE(toCoord)->getX_INLINE() == toCoord.x()));
+	FAssert(coord().isInvalidPlotCoord() || (GC.getMapINLINE().plotINLINE(toCoord)->getY_INLINE() == toCoord.y()));
 
 	if (getGroup() != NULL)
 	{
@@ -10475,7 +10482,7 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 		joinGroup(NULL, true);
 	}
 
-	pNewPlot = GC.getMapINLINE().plotINLINE(iX, iY);
+	pNewPlot = GC.getMapINLINE().plotINLINE(toCoord);
 
 	if (pNewPlot != NULL)
 	{
@@ -10619,13 +10626,11 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 
 	if (pNewPlot != NULL)
 	{
-		m_iX = pNewPlot->getX_INLINE();
-		m_iY = pNewPlot->getY_INLINE();
+		m_coord = pNewPlot->coord();
 	}
 	else
 	{
-		m_iX = INVALID_PLOT_COORD;
-		m_iY = INVALID_PLOT_COORD;
+		m_coord.resetInvalid();
 		AI_setMovePriority(0);
 	}
 
@@ -10832,7 +10837,7 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 
 				if (pLoopUnit->getTransportUnit() == this)
 				{
-					pLoopUnit->setXY(iX, iY, bGroup, bUpdate);
+					pLoopUnit->jumpTo(toCoord, bGroup, bUpdate);
 					if (pLoopUnit->getYield() != NO_YIELD)
 					{
 						pNewPlot->addCrumbs(10);
@@ -10885,6 +10890,12 @@ bool CvUnit::at(int iX, int iY) const
 }
 
 
+bool CvUnit::at(FCoord testCoord) const
+{
+	return (testCoord == coord());
+}
+
+
 bool CvUnit::atPlot(const CvPlot* pPlot) const
 {
 	return (plot() == pPlot);
@@ -10893,7 +10904,7 @@ bool CvUnit::atPlot(const CvPlot* pPlot) const
 
 CvPlot* CvUnit::plot() const
 {
-	if((getX_INLINE() == INVALID_PLOT_COORD) || (getY_INLINE() == INVALID_PLOT_COORD))
+	if(coord().isInvalidPlotCoord())
 	{
 		CvCity *pCity = GET_PLAYER(getOwnerINLINE()).getPopulationUnitCity(getID());
 		if (pCity == NULL)
@@ -10907,7 +10918,7 @@ CvPlot* CvUnit::plot() const
 	}
 	else
 	{
-		return GC.getMapINLINE().plotSoren(getX_INLINE(), getY_INLINE());
+		return GC.getMapINLINE().plotSoren(coord());
 	}
 }
 

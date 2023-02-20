@@ -333,7 +333,7 @@ void CvMap::setup()
 	kAStar.Initialize(&GC.getRouteFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, routeValid, NULL, NULL, NULL);
 	kAStar.Initialize(&GC.getBorderFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, borderValid, NULL, NULL, NULL);
 	kAStar.Initialize(&GC.getAreaFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, areaValid, NULL, joinArea, NULL);
-	
+
 	// Erik: We have to create and initialize the coastal route pathfinder since
 	// the exe cannot do this for us
 	FAStar* coastalRouteFinder = gDLL->getFAStarIFace()->create();
@@ -876,7 +876,9 @@ bool CvMap::findWater(CvPlot* pPlot, int iRange, bool bFreshWater)
 
 bool CvMap::isPlot(int iX, int iY) const
 {
-	return isPlotINLINE(iX, iY);
+	//return isPlotINLINE(iX, iY);
+	FCoord coord(iX, iY);
+	return isPlotINLINE(coord);
 }
 
 
@@ -1244,7 +1246,7 @@ void CvMap::calculateCanalAndChokePoints()
 	for(iI = 0; iI < numPlotsINLINE(); iI++)
 	{
 		plotByIndexINLINE(iI)->calculateCanalValue();
-		plotByIndexINLINE(iI)->calculateChokeValue();		
+		plotByIndexINLINE(iI)->calculateChokeValue();
 	}
 }
 // Super Forts end
@@ -1362,7 +1364,7 @@ void CvMap::rebuild(int iGridW, int iGridH, int iTopLatitude, int iBottomLatitud
 // Protected Functions...
 //////////////////////////////////////////////////////////////////////////
 
-namespace 
+namespace
 {
 //TODO: Use FOR_EACH_ENUM
 void visitPlot(CvPlot* pPlot, std::queue<CvPlot*>& plotQueue, stdext::hash_set<CvPlot*>& visited)
@@ -1373,12 +1375,12 @@ void visitPlot(CvPlot* pPlot, std::queue<CvPlot*>& plotQueue, stdext::hash_set<C
 
 		if (pAdjacentPlot == NULL)
 			continue;
-		
+
 		if (visited.find(pAdjacentPlot) != visited.end())
 			continue;
 
 		if (pAdjacentPlot->isWater() && pAdjacentPlot->hasLargeRiver() || !pAdjacentPlot->isWater())
-		{ 
+		{
 			visited.insert(pAdjacentPlot);
 			plotQueue.push(pAdjacentPlot);
 		}
@@ -1390,7 +1392,7 @@ void calculateLandAreaBfs(CvPlot* pPlot, int iArea, stdext::hash_set<CvPlot*>& v
 {
 	// Stores the plot index
 	std::queue<CvPlot*> plotQueue;
-	
+
 	plotQueue.push(pPlot);
 	visited.insert(pPlot);
 
@@ -1401,7 +1403,7 @@ void calculateLandAreaBfs(CvPlot* pPlot, int iArea, stdext::hash_set<CvPlot*>& v
 
 		// Land areas spread across large river without assigning the large river plot to the land area
 		if (pPlot->isWater() && pPlot->hasLargeRiver())
-		{ 
+		{
 			// Add all adjacent land plots to the queue but do not set the area of the large river plot
 			visitPlot(pPlot, plotQueue, visited);
 		}
@@ -1463,7 +1465,7 @@ void CvMap::calculateAreas()
 			pArea->init(pArea->getID(), pLoopPlot->isWater());
 			const int iArea = pArea->getID();
 			calculateLandAreaBfs(pLoopPlot, iArea, visited);
-		}		
+		}
 	}
 }
 

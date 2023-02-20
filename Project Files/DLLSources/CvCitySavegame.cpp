@@ -66,7 +66,7 @@
 	const PlayerTypes defaultTradePostPlayer = NO_PLAYER; // WTP, ray, Native Trade Posts - START
 	const YieldTypes defaultPreferredYieldAtCityPlot = NO_YIELD;
 
-// 
+//
 enum SavegameVariableTypes
 {
 	CitySave_END,
@@ -177,7 +177,7 @@ enum SavegameVariableTypes
 
 	CitySave_DomainFreeExperience,
 	CitySave_DomainProductionModifier,
-	
+
 	CitySave_orderQueue,
 
 	CitySave_WorkingPlot,
@@ -327,8 +327,9 @@ int getNumSavedEnumValuesCity()
 void CvCity::resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructorCall)
 {
 	m_iID = iID,
-	m_iX = iX;
-	m_iY = iY;
+	// m_iX = iX;
+	// m_iY = iY;
+	m_coord.reset(iX, iY);
 	m_iRallyX = defaultRallyX;
 	m_iRallyY = defaultRallyY;
 	m_iGameTurnFounded = defaultGameTurnFounded;
@@ -465,10 +466,14 @@ void CvCity::read(CvSavegameReader reader)
 	// As long as each variable has a CitySavegameVariables "header", order doesn't matter.
 	// Variables can be read in any order and any number of variables can be skipped.
 	bool bContinue = true;
+
+	int tempX = defaultX, tempY = defaultY;
+
 	while (bContinue)
 	{
 		SavegameVariableTypes eType;
 		reader.Read(eType);
+
 
 		switch (eType)
 		{
@@ -476,8 +481,8 @@ void CvCity::read(CvSavegameReader reader)
 			bContinue = false;
 			break;
 		case CitySave_ID: reader.Read(m_iID); break;
-		case CitySave_X: reader.Read(m_iX); break;
-		case CitySave_Y: reader.Read(m_iY); break;
+		case CitySave_X: reader.Read(tempX); break;
+		case CitySave_Y: reader.Read(tempY); break;
 		case CitySave_RallyX: reader.Read(m_iRallyX); break;
 		case CitySave_RallyY: reader.Read(m_iRallyY); break;
 		case CitySave_GameTurnFounded: reader.Read(m_iGameTurnFounded); break;
@@ -591,7 +596,7 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_EverOwned: reader.Read(m_em_bEverOwned); break;
 		case CitySave_Revealed: reader.Read(m_em_bRevealed); break;
 		case CitySave_ScoutVisited: reader.Read(m_em_bScoutVisited); break;
-		
+
 		case CitySave_DomainFreeExperience: reader.Read(m_em_iDomainFreeExperience); break;
 		case CitySave_DomainProductionModifier: reader.Read(m_em_iDomainProductionModifier); break;
 
@@ -600,8 +605,11 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_WorkingPlot: reader.Read(m_em_iWorkingPlot); break;
 
 		}
-		
+
 	}
+
+	m_coord.reset(tempX, tempY);
+
 	// BUG WORKAROUND. Reset any yield, which stores negative amount
 	// ideally this shouldn't be here, but it makes the asserts and error message
 	// trigger when the bug triggers again rather than triggering if the bug happened prior to saving
@@ -624,7 +632,7 @@ void CvCity::read(CvSavegameReader reader)
 	UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
 	this->setAutoThresholdCache(); // transport feeder - Nightinggale
 	cache_storageLossTradeValues_usingRawData(); //caching storage loss trade values
-	
+
 }
 
 void CvCity::write(CvSavegameWriter writer)
@@ -637,8 +645,8 @@ void CvCity::write(CvSavegameWriter writer)
 	// If nothing is saved, the loading code will use the default values.
 	// Less data saved/loaded means smaller savegames.
 	writer.Write(CitySave_ID, m_iID, defaultID);
-	writer.Write(CitySave_X, m_iX, defaultX);
-	writer.Write(CitySave_Y, m_iY, defaultY);
+	writer.Write(CitySave_X, coord().x(), defaultX);
+	writer.Write(CitySave_Y, coord().y(), defaultY);
 	writer.Write(CitySave_RallyX, m_iRallyX, defaultRallyX);
 	writer.Write(CitySave_RallyY, m_iRallyY, defaultRallyY);
 	writer.Write(CitySave_GameTurnFounded, m_iGameTurnFounded, defaultGameTurnFounded);
@@ -690,8 +698,8 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_HasHurried, m_bHasHurried, defaultHasHurried);
 
 	writer.Write(CitySave_Owner, m_eOwner, defaultOwner);
-	writer.Write(CitySave_PreviousOwner, m_ePreviousOwner, defaultPreviousOwner); 
-	writer.Write(CitySave_OriginalOwner, m_eOriginalOwner, defaultOriginalOwner); 
+	writer.Write(CitySave_PreviousOwner, m_ePreviousOwner, defaultPreviousOwner);
+	writer.Write(CitySave_OriginalOwner, m_eOriginalOwner, defaultOriginalOwner);
 	writer.Write(CitySave_CultureLevel, m_eCultureLevel, defaultCultureLevel);
 	writer.Write(CitySave_TeachUnitClass, m_eTeachUnitClass, defaultTeachUnitClass);
 
@@ -710,7 +718,7 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_MissionaryPlayer, m_eMissionaryPlayer, defaultMissionaryPlayer);
 	writer.Write(CitySave_TradePostPlayer, m_eTradePostPlayer, defaultTradePostPlayer); // WTP, ray, Native Trade Posts - START
 	writer.Write(CitySave_PreferredYieldAtCityPlot, m_ePreferredYieldAtCityPlot, defaultPreferredYieldAtCityPlot);
-		
+
 	writer.Write(CitySave_LandPlotYield, m_em_iLandPlotYield);
 	writer.Write(CitySave_SeaPlotYield, m_em_iSeaPlotYield);
 	writer.Write(CitySave_RiverPlotYield, m_em_iRiverPlotYield);
@@ -724,7 +732,7 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_YieldRank, m_em_iYieldRank);
 	writer.Write(CitySave_YieldRankValid, m_em_bYieldRankValid);
 
-	
+
 	writer.Write(CitySave_BuildingProduction, m_em_iBuildingProduction);
 	writer.Write(CitySave_BuildingProductionTime, m_em_iBuildingProductionTime);
 	writer.Write(CitySave_BuildingOriginalOwner, m_em_eBuildingOriginalOwner);

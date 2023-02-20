@@ -80,9 +80,9 @@ enum SavegameVariableTypes
 	UnitSave_CombatTimer,
 	UnitSave_CombatDamage,
 	UnitSave_FortifyTurns,
-	
+
 	UnitSave_ExtraVisibilityRange,
-	
+
 	UnitSave_ImmobileTimer,
 	UnitSave_YieldStored,
 	UnitSave_ExtraWorkRate, // not used
@@ -153,7 +153,7 @@ const char* getSavedEnumNameUnit(SavegameVariableTypes eType)
 	case UnitSave_FortifyTurns: return "UnitSave_FortifyTurns";
 
 	case UnitSave_ExtraVisibilityRange: return "UnitSave_ExtraVisibilityRange";
-	
+
 	case UnitSave_ImmobileTimer: return "UnitSave_ImmobileTimer";
 	case UnitSave_YieldStored: return "UnitSave_YieldStored";
 	case UnitSave_ExtraWorkRate: return "UnitSave_ExtraWorkRate";
@@ -212,8 +212,9 @@ void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool b
 	m_iID = iID;
 	m_iGroupID = defaultGroupID;
 	m_iHotKeyNumber = defaultHotKeyNumber;
-	m_iX = defaultX;
-	m_iY = defaultY;
+	// m_iX = defaultX;
+	// m_iY = defaultY;
+	m_coord.reset(defaultX, defaultY);
 	m_iLastMoveTurn = defaultLastMoveTurn;
 	m_iGameTurnCreated = defaultGameTurnCreated;
 	m_iDamage = defaultDamage;
@@ -226,7 +227,7 @@ void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool b
 	m_iCombatTimer = defaultCombatTimer;
 	m_iCombatDamage = defaultCombatDamage;
 	m_iFortifyTurns = defaultFortifyTurns;
-	
+
 	m_iImmobileTimer = defaultImmobileTimer;
 	m_iYieldStored = defaultYieldStored;
 	m_iExtraWorkRate = defaultExtraWorkRate;
@@ -238,9 +239,9 @@ void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool b
 	m_iAmountForNativeTrade = defaultAmountForNativeTrade;
 	m_iMoneyToBuyLand = defaultMoneyToBuyLand;
 
-	m_bMadeAttack = defaultMadeAttack;	
-	m_bPromotionReady = defaultPromotionReady;	
-	m_bDeathDelay = defaultDeathDelay;	
+	m_bMadeAttack = defaultMadeAttack;
+	m_bPromotionReady = defaultPromotionReady;
+	m_bDeathDelay = defaultDeathDelay;
 	m_bCombatFocus = defaultCombatFocus;
 	m_bColonistLocked = defaultColonistLocked;
 	m_bGatheringResource = defaultGatheringResource;
@@ -279,6 +280,8 @@ void CvUnit::read(CvSavegameReader reader)
 	// This will ensure that all variables not included in the savegame will have default values
 	reset();
 
+	int tempX = defaultX, tempY = defaultY;
+
 	// loop read all the variables
 	// As long as each variable has a UnitSavegameVariables "header", order doesn't matter.
 	// Variables can be read in any order and any number of variables can be skipped.
@@ -298,8 +301,8 @@ void CvUnit::read(CvSavegameReader reader)
 		case UnitSave_ID: reader.Read(m_iID); break;
 		case UnitSave_GroupID: reader.Read(m_iGroupID); break;
 		case UnitSave_HotKeyNumber: reader.Read(m_iHotKeyNumber); break;
-		case UnitSave_X: reader.Read(m_iX); break;
-		case UnitSave_Y: reader.Read(m_iY); break;
+		case UnitSave_X: reader.Read(tempX); break;
+		case UnitSave_Y: reader.Read(tempY); break;
 		case UnitSave_LastMoveTurn: reader.Read(m_iLastMoveTurn); break;
 		case UnitSave_GameTurnCreated: reader.Read(m_iGameTurnCreated); break;
 		case UnitSave_Damage: reader.Read(m_iDamage); break;
@@ -313,7 +316,7 @@ void CvUnit::read(CvSavegameReader reader)
 		case UnitSave_CombatDamage: reader.Read(m_iCombatDamage); break;
 		case UnitSave_FortifyTurns: reader.Read(m_iFortifyTurns); break;
 
-		case UnitSave_ExtraVisibilityRange: 
+		case UnitSave_ExtraVisibilityRange:
 		{
 			//reader.Read(m_iExtraVisibilityRange); break;
 			int iTemp = 0;
@@ -361,7 +364,9 @@ void CvUnit::read(CvSavegameReader reader)
 		case UnitSave_FreePromotionCount: reader.Read(m_ja_iFreePromotionCount); break;
 		}
 	}
-	
+
+	m_coord.reset(tempX, tempY);
+
 	// The unit is loaded. Now set up the cache according to the read data.
 
 	FAssert(NO_UNIT != m_eUnitType);
@@ -373,7 +378,7 @@ void CvUnit::read(CvSavegameReader reader)
 	// unit yield cache - end - Nightinggale
 
 	// clear garbage from the savegame
-	// due to the visibility range chache in CvPlot, this can't be done by simply not saving the data 
+	// due to the visibility range chache in CvPlot, this can't be done by simply not saving the data
 	resetPromotions();
 
 	// update profession/promotion cache
@@ -401,8 +406,8 @@ void CvUnit::write(CvSavegameWriter writer)
 	writer.Write(UnitSave_ID, m_iID, defaultID);
 	writer.Write(UnitSave_GroupID, m_iGroupID, defaultGroupID);
 	writer.Write(UnitSave_HotKeyNumber, m_iHotKeyNumber, defaultHotKeyNumber);
-	writer.Write(UnitSave_X, m_iX, defaultX);
-	writer.Write(UnitSave_Y, m_iY, defaultY);
+	writer.Write(UnitSave_X, coord().x(), defaultX);
+	writer.Write(UnitSave_Y, coord().y(), defaultY);
 	writer.Write(UnitSave_LastMoveTurn, m_iLastMoveTurn, defaultLastMoveTurn);
 	writer.Write(UnitSave_GameTurnCreated, m_iGameTurnCreated, defaultGameTurnCreated);
 	writer.Write(UnitSave_Damage, m_iDamage, defaultDamage);

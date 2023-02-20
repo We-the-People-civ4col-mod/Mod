@@ -4,6 +4,7 @@
 #define CIV4_CITY_H
 #include "CvDLLEntity.h"
 #include "LinkedList.h"
+#include "CvPlotFunctions.h"
 
 class CvPlot;
 class CvArea;
@@ -98,7 +99,7 @@ public:
 	//Androrc Multiple Professions per Building
 	bool isAvailableBuildingSlot(BuildingTypes eBuilding, const CvUnit* pUnit) const;
 	//Androrc End
-	
+
 	int professionCount(ProfessionTypes eProfession) const;
 
 	int findPopulationRank() const;
@@ -205,17 +206,22 @@ public:
 #ifdef _USRDLL
 	inline int getX_INLINE() const
 	{
-		return m_iX;
+		return m_coord.x();
 	}
 #endif
 	DllExport int getY() const;
 #ifdef _USRDLL
 	inline int getY_INLINE() const
 	{
-		return m_iY;
+		return m_coord.y();
 	}
 #endif
+	inline FCoord coord() const
+	{
+		return m_coord;
+	}
 	bool at(int iX, int iY) const;
+	bool at(FCoord coord) const;
 	bool at(CvPlot* pPlot) const;
 	DllExport CvPlot* plot() const;
 	int getArea() const;
@@ -686,7 +692,7 @@ public:
 	virtual void AI_changeGiftTimer(int iChange) = 0;
 	// R&R, ray, Natives Trading - START
 	virtual bool AI_canMakeTrade() const = 0;
-	virtual int AI_getTradeTimer() const = 0; 
+	virtual int AI_getTradeTimer() const = 0;
 	virtual void AI_setTradeTimer(int iNewValue) = 0;
 	virtual void AI_changeTradeTimer(int iChange) = 0;
 	// R&R, ray, Natives Trading - END
@@ -774,13 +780,14 @@ public:
 
 
 	YieldTypes getPreferredYieldAtCityPlot() const { return m_ePreferredYieldAtCityPlot; }
-	
+
 	void writeDesyncLog(FILE *f) const;
 
 protected:
 	int m_iID;
-	int m_iX;
-	int m_iY;
+	FCoord m_coord;
+	// int m_iX;
+	// int m_iY;
 	int m_iRallyX;
 	int m_iRallyY;
 	int m_iGameTurnFounded;
@@ -847,7 +854,7 @@ protected:
 	// R&R, Androrc, Domestic Market
 	EnumMap<YieldTypes,int> m_em_iYieldBuyPrice;
 	//Androrc End
-	
+
 	// R&R, ray, finishing Custom House Screen
 	EnumMap<YieldTypes,int> m_em_iCustomHouseSellThreshold;
 	EnumMap<YieldTypes,bool> m_em_bCustomHouseNeverSell;
@@ -906,7 +913,7 @@ protected:
 	void doDecay();
 	void doMissionaries();
 	void doNativeTradePost(); // WTP, ray, Native Trade Posts - START
-	void doRebelSentiment(); 
+	void doRebelSentiment();
 	void doCityHealth(); // R&R, ray, Health - START
 	void doCityHappiness(); // WTP, ray, Happiness - START
 	void doCityUnHappiness(); // WTP, ray, Happiness - START
@@ -926,7 +933,7 @@ protected:
 	int getTimerDomesticDemandEvent() const;
 
 	void setDomesticDemandEventPriceModifier(int iDomesticDemandEventModifier);
-	void setDomesticDemandEventDemandModifier(int iDomesticDemandEventModifier);	
+	void setDomesticDemandEventDemandModifier(int iDomesticDemandEventModifier);
 
 public:
 	int getDomesticDemandEventPriceModifier() const;
@@ -993,7 +1000,7 @@ protected:
 	// setImportsMaintain() is only allowed to be called by doTask() or it will cause desyncs
 	void setImportsMaintain(YieldTypes eYield, bool bSetting);
 	// transport feeder - end - Nightinggale
-	
+
 	// auto traderoute - start - Nightinggale
 public:
 	bool isAutoExport(YieldTypes eYield) const {return m_em_bTradeAutoExport.get(eYield);};
@@ -1001,7 +1008,7 @@ protected:
 	void setAutoExport(YieldTypes eYield, bool bExport);
 	void doAutoExport(YieldTypes eYield);
 	void handleAutoTraderouteSetup(bool bReset, bool bImportAll, bool bAutoExportAll);
-	
+
 	// auto traderoute - end - Nightinggale
 
 public:
