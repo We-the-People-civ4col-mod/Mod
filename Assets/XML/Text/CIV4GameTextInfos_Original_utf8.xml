@@ -594,7 +594,7 @@
         <German>[ICON_BULLET]Heilt Einheiten auf demselben Geländefeld um zusätzliche %d1_Amount%%[SPACE]</German>
         <Italian>[ICON_BULLET]Cura le unità nella stessa casella del %d1_Amount%%[SPACE]</Italian>
         <Spanish>[ICON_BULLET]Cura a las unidades en la misma casilla un %d1_Amount%% más de[SPACE]</Spanish>
-        <Russian>[ICON_BULLET]Дополнительно исцеляет юнитов на этой же клетке %d1_Amount%%[SPACE]</Russian>
+        <Russian>[ICON_BULLET]Дополнительно исцеляет юнитам на этой же клетке %d1_Amount%%[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_DAMAGE_TURN_TEXT</Tag>
@@ -612,7 +612,7 @@
         <German>[ICON_BULLET]Heilt Einheiten auf benachbarten Geländefeldern um zusätzliche %d1_Heals%%[SPACE]</German>
         <Italian>[ICON_BULLET]Cura le unità nelle caselle adiacenti del %d1_Heals%%[SPACE]</Italian>
         <Spanish>[ICON_BULLET]Cura a las unidades en casillas adyacentes un %d1_Amount%% más de[SPACE]</Spanish>
-        <Russian>[ICON_BULLET]Дополнительно исцеляет юниты на соседних клетках %d1_Heals%%[SPACE]</Russian>
+        <Russian>[ICON_BULLET]Дополнительно исцеляет юнитам на соседних клетках %d1_Heals%%[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ATTACK</Tag>
@@ -1767,6 +1767,7 @@
         <German>Festzulegender pauschaler Goldbetrag.</German>
         <Italian>Somma unica d'oro da specificare.</Italian>
         <Spanish>Suma de oro total a especificar.</Spanish>
+        <Russian>Общая сумма золота в казне</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_MAPS</Tag>
@@ -1775,6 +1776,7 @@
         <German>Stellt dem Empfänger die Karte zur Verfügung.</German>
         <Italian>Rivelerà la mappa al destinatario.</Italian>
         <Spanish>Mostrará el mapa al receptor.</Spanish>
+        <Russian>Покажет исследованную часть карты получателю</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_CLEAR_TABLE</Tag>
@@ -6204,6 +6206,7 @@
         <German>Warten auf Ziv-Auswahl ...</German>
         <Italian>In attesa delle scelte delle civiltà...</Italian>
         <Spanish>Esperando elección de civilizaciones...</Spanish>
+        <Russian>Ожидание загрузки...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_NONE</Tag>
