@@ -4,7 +4,7 @@
         <Tag>TXT_KEY_BUILD_FRUIT_PLANTATION</Tag>
         <English>Build a [LINK=IMPROVEMENT_FRUIT_PLANTATION]fruit plantation[\LINK]</English>
         <French>Construire une [LINK=IMPROVEMENT_FRUIT_PLANTATION]plantation de fruits[\LINK]</French>
-        <German>[LINK=IMPROVEMENT_FRUIT_PLANTATION]Fruchtplantage[\LINK] bauen</German>
+        <German>[LINK=IMPROVEMENT_FRUIT_PLANTATION]Obstplantage[\LINK] bauen</German>
         <Italian>Costruire una [LINK=IMPROVEMENT_FRUIT_PLANTATION]piantagione di frutos[\LINK]</Italian>
         <Spanish>Construir una [LINK=IMPROVEMENT_FRUIT_PLANTATION]plantación de frutos[\LINK]</Spanish>
         <Russian>Построить [LINK=IMPROVEMENT_FRUIT_PLANTATION]фруктовую плантацию[\LINK]</Russian>
@@ -187,10 +187,10 @@
         <Tag>TXT_KEY_BUILD_PASTURE_HELP</Tag>
         <English>????</English>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILD_PEN</Tag>
         <English>Build a [LINK=IMPROVEMENT_PEN]breeding pen[\LINK]</English>
-        <German>[LINK=IMPROVEMENT_PEN]Zuchgehe[\LINK] bauen</German>
+        <German>[LINK=IMPROVEMENT_PEN]Zuchtgehege[\LINK] bauen</German>
         <Russian>Построить [LINK=IMPROVEMENT_PEN]загон для скота[\LINK]</Russian>
     </TEXT>
     <TEXT>
