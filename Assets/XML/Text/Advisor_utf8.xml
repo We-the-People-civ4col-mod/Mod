@@ -5,10 +5,12 @@
         <Tag>TXT_KEY_DOMESTIC_ADVISOR_JUMP_TO_SETTLEMENT</Tag>
         <English>Jump to settlement</English>
         <German>Siedlung anzeigen</German>
+        <Russian>Перейти к поселению</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_ADVISOR_JUMP_TO_SETTLEMENT_CITY</Tag>
         <English>Jump to [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]</English>
         <German>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] anzeigen</German>
+        <Russian>Перейти к [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]</Russian>
     </TEXT>
 </Civ4GameText>
