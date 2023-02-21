@@ -585,7 +585,7 @@
             <Plural>1</Plural>
         </French>
         <German>
-            <Text>Cocablätter</Text>
+            <Text>Coca-Blätter</Text>
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
@@ -757,7 +757,7 @@
         <Tag>TXT_KEY_UNITCLASS_SLAVE_HUNTER</Tag>
         <English>TXT_KEY_UNIT_SLAVE_HUNTER</English>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SLAVE_MASTER</Tag>
         <English>TXT_KEY_UNIT_SLAVE_MASTER</English>
     </TEXT>
@@ -818,12 +818,12 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_NAVAL_BRIG</Tag>
         <English>
-            <Text>Naval Brig:Naval Brigs</Text>
+            <Text>Brig-of-war:Brigs-of-war</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </English>
         <German>
-            <Text>Flottenbrigg:Flottenbriggs</Text>
+            <Text>Kanonenbrigg:Kanonenbriggs</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -1169,14 +1169,14 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROYAL_FRIGATE</Tag>
-        <English>Royal Frigate: Royal Frigates</English>
+        <English>Royal Frigate:Royal Frigates</English>
         <French>
             <Text>Frégate Royale:Frégates Royales</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Königliche Fregatte:KöniglicheFregatten</Text>
+            <Text>Königliche Fregatte:Königliche Fregatten</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -1309,7 +1309,7 @@
         <Tag>TXT_KEY_UNITCLASS_ROYAL_TROOP_GALLEON</Tag>
         <English>Royal Troop Galleon:Royal Troop Galleons</English>
         <German>
-            <Text>Königliche Truppengaleone:Königliche Truppengaleonen</Text>
+            <Text>Königliche Transportgaleone:Königliche Transportgaleonen</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -1645,12 +1645,12 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Planteur de Chanvre professionnel:Planteurs de Chanvre professionnel</Text>
+            <Text>Esperto piantatore di chanvre:Esperti piantatori di chanvre</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Expert Hemp Planter:Expert Hemp Planters</Text>
+            <Text>Experto plantador de cáñamo:Expertos plantador de cáñamo</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -1674,7 +1674,7 @@
             <Plural>1</Plural>
         </French>
         <German>
-            <Text>Rinderhäute</Text>
+            <Text>Rindshäute</Text>
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
@@ -2060,7 +2060,11 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Erfahrener Minenarbeiter:Erfahrene Minenarbeiter</German>
+        <German>
+            <Text>Erfahrener Bergmann:Erfahrene Bergleute</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
         <Italian>
             <Text>Minatore esperto:Minatori esperti</Text>
             <Gender>Male</Gender>
@@ -2750,7 +2754,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SAILCLOTH</Tag>
         <English>
-          <Text>Sailcloth</Text>
+            <Text>Sailcloth</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </English>
@@ -2872,7 +2876,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SHEEP</Tag>
         <English>Sheep</English>
-        <French>Mouton</French>
+        <French>Moutons</French>
         <German>
             <Text>Schafe</Text>
             <Gender>Neuter</Gender>
@@ -2916,7 +2920,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Königliches Linienschiff:Königliches Linienschiffe</Text>
+            <Text>Königliches Linienschiff:Königliche Linienschiffe</Text>
             <Gender>Neuter</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -2934,9 +2938,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROYAL_MAN_O_WAR</Tag>
-        <English>Royal Man O' War: Royal Men O' War</English>
+        <English>Royal Man O' War:Royal Men O' War</English>
         <German>
-            <Text>Königliche Schlachtschiff:Königliche Schlachtschiffe</Text>
+            <Text>Königliches Schlachtschiff:Königliche Schlachtschiffe</Text>
             <Gender>Neuter</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -2944,7 +2948,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COLONIAL_MAN_O_WAR</Tag>
-        <English>Man O' War: Men O' War</English>
+        <English>Man O' War:Men O' War</English>
         <German>
             <Text>Schlachtschiff:Schlachtschiffe</Text>
             <Gender>Neuter</Gender>
@@ -3207,7 +3211,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Erfahrener Steinbergarbeiter:Erfahrene Steinbergarbeiter</Text>
+            <Text>Erfahrener Steinbrucharbeiter:Erfahrene Steinbrucharbeiter</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
