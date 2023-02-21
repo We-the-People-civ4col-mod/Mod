@@ -3257,7 +3257,7 @@ BestJob AI_findBestJob(const CvCityAI& kCity, ProfessionTypes eProfession, const
 
 	// TODO: Get this out of the parallel loop so we don't launch taks with almost nothing to do
 	// We can accomplish this by having a "pre-filtered" list of valid citizen professions
-	if (kUnit.canHaveProfession(eProfession, true))
+	if (kCity.canHaveCitizenProfession(kUnit, eProfession, true))
 	{
 		if (GC.getProfessionInfo(eProfession).isWorkPlot() && !bIndoorOnly)
 		{
@@ -3305,7 +3305,7 @@ BestJob AI_findBestJob(const CvCityAI& kCity, ProfessionTypes eProfession, const
 		{
 			int iValue = kCity.AI_professionValue(eProfession, &kUnit, NULL, NULL);
 			bool bValid = true;
-			if (!kUnit.canHaveProfession(eProfession, false))
+			if (!kCity.canHaveCitizenProfession(kUnit, eProfession, false))
 			{
 				CvUnit* pWorstUnit = kCity.AI_getWorstProfessionUnit(eProfession);
 				// R&R, ray, removed unnecessary Assert from developing feature
@@ -5132,7 +5132,7 @@ void CvCityAI::AI_assignDesiredYield()
 				{
 					if (isScoutVisited(kPlayer.getTeam()))
 					{
-						gDLL->getInterfaceIFace()->addMessage((PlayerTypes) iPlayer, false, GC.getEVENT_MESSAGE_TIME(), szMessage, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eBestYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+						gDLL->UI().addPlayerMessage((PlayerTypes) iPlayer, false, GC.getEVENT_MESSAGE_TIME(), szMessage, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eBestYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 					}
 				}
 			}
@@ -6776,7 +6776,7 @@ void CvCityAI::AI_setWorkforceHack(bool bNewValue)
 	m_iWorkforceHack += (bNewValue ? 1 : -1);
 }
 
-bool CvCityAI::AI_isWorkforceHack()
+bool CvCityAI::AI_isWorkforceHack() const
 {
 	return (m_iWorkforceHack > 0);
 }
@@ -6942,4 +6942,70 @@ void CvCityAI::AI_doSettlerProfessionCheat()
 			//WTP, ray, Settler Professsion - END
 		}
 	}
+}
+
+// Optimized version of the vanilla (though heavily modified) canHaveProfession that only supports citizens (plot/slot workers)
+// Since we don't have to deal with outdoor professions, we can skip many unnecessary checks
+bool CvCityAI::canHaveCitizenProfession(const CvUnit& kUnit, ProfessionTypes eProfession, bool bBumpOther) const
+{
+	FAssert(eProfession != NO_PROFESSION);
+
+	if (GC.getUnitInfo(kUnit.getUnitType()).getProfessionsNotAllowed(eProfession))
+	{
+		return false;
+	}
+
+	const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+
+	if (!kOwner.isProfessionValid(eProfession, kUnit.getUnitType()))
+	{
+		return false;
+	}
+
+	const CvProfessionInfo& kNewProfession = GC.getProfessionInfo(eProfession);
+
+	// R&R, ray , MYCP partially based on code of Aymerick - START
+	// TODO: Can we replace this with a check against PROFESSION_STUDENT?
+	for (int i = 0; i < kNewProfession.getNumYieldsProduced(); i++)
+	{
+		if (kNewProfession.getYieldsProduced(i) == YIELD_EDUCATION)
+		{
+			if (kUnit.getUnitInfo().getStudentWeight() <= 0)
+			{
+				return false;
+			}
+		}
+	}
+
+	if (AI_isWorkforceHack())
+	{
+		//check if special building has been built
+		if (kNewProfession.getSpecialBuilding() != NO_SPECIALBUILDING)
+		{
+			if (getProfessionOutput(eProfession, &kUnit) <= 0)
+			{
+				return false;
+			}
+		}
+
+		// check against building max
+		if (!bBumpOther)
+		{
+			if (!isAvailableProfessionSlot(eProfession, &kUnit))
+			{
+				return false;
+			}
+		}
+	}
+
+	// Special case that checks if the unit can transition from an outdoor
+	// profession to being a citizen
+	if (kUnit.isOnMap())
+	{
+		if (!kUnit.canJoinCity(plot()))
+		{
+			return false;
+		}
+	}
+	return true;
 }

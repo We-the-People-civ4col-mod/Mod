@@ -167,7 +167,7 @@ public:
 	void AI_educateStudent(int iUnitId);
 
 	void AI_setWorkforceHack(bool bNewValue);
-	bool AI_isWorkforceHack();
+	bool AI_isWorkforceHack() const;
 	
 	bool AI_isMajorCity() const;
 
@@ -180,6 +180,7 @@ public:
 	void AI_doSettlerProfessionCheat();
 
 	void AI_doHurry(bool bForce = false);
+	bool canHaveCitizenProfession(const CvUnit& kUnit, ProfessionTypes eProfession, bool bBumpOther) const;
 
 protected:
 

@@ -44,6 +44,8 @@ public:
 	// accessors for other abstract interfaces
 	virtual CvDLLEntityIFaceBase* getEntityIFace() = 0;
 	virtual CvDLLInterfaceIFaceBase* getInterfaceIFace() = 0;
+	// advc: abbreviate
+	CvDLLInterfaceIFaceBase& UI() { return *getInterfaceIFace(); }
 	virtual CvDLLEngineIFaceBase* getEngineIFace() = 0;
 	virtual CvDLLIniParserIFaceBase* getIniParserIFace() = 0;
 	virtual CvDLLSymbolIFaceBase* getSymbolIFace() = 0;

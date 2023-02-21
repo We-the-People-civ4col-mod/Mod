@@ -524,7 +524,7 @@ void CvPlot::doImprovement()
 						if (pCity != NULL)
 						{
 							szBuffer = gDLL->getText("TXT_KEY_MISC_DISCOVERED_NEW_RESOURCE", GC.getBonusInfo((BonusTypes) iI).getTextKeyWide(), pCity->getNameKey());
-							gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DISCOVERBONUS", MESSAGE_TYPE_MINOR_EVENT, GC.getBonusInfo((BonusTypes) iI).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+							gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DISCOVERBONUS", MESSAGE_TYPE_MINOR_EVENT, GC.getBonusInfo((BonusTypes) iI).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 						}
 						break;
 					}
@@ -8090,7 +8090,7 @@ bool CvPlot::changeBuildProgress(BuildTypes eBuild, int iChange, TeamTypes eTeam
 								pCity->changeYieldStored(eYield, iYieldProduction);
 
 								szBuffer = gDLL->getText("TXT_KEY_MISC_CLEARING_FEATURE_BONUS", GC.getFeatureInfo(getFeatureType()).getTextKeyWide(), iYieldProduction, pCity->getNameKey(), GC.getYieldInfo(eYield).getChar());
-								gDLL->getInterfaceIFace()->addMessage(pCity->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer,  ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), MESSAGE_TYPE_INFO, GC.getFeatureInfo(getFeatureType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+								gDLL->UI().addPlayerMessage(pCity->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer,  ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), MESSAGE_TYPE_INFO, GC.getFeatureInfo(getFeatureType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 							}
 						}
 					}
@@ -8784,7 +8784,7 @@ void CvPlot::doFeature()
 									{
 										// Tell the owner of this city.
 										szBuffer = gDLL->getText("TXT_KEY_MISC_FEATURE_GROWN_NEAR_CITY", GC.getFeatureInfo((FeatureTypes) iI).getTextKeyWide(), pCity->getNameKey());
-										gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_FEATUREGROWTH", MESSAGE_TYPE_INFO, GC.getFeatureInfo((FeatureTypes) iI).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+										gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_FEATUREGROWTH", MESSAGE_TYPE_INFO, GC.getFeatureInfo((FeatureTypes) iI).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 									}
 
 									break;
@@ -8844,8 +8844,8 @@ void CvPlot::doCulture()
 					if(!bDefenderFound)
 					{
 						szBuffer = gDLL->getText("TXT_KEY_MISC_CITY_REVOLTED_JOINED", GC.getImprovementInfo(getImprovementType()).getText(), GET_PLAYER(eCulturalOwner).getCivilizationDescriptionKey());
-						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREEXPANDS", MESSAGE_TYPE_INFO, GC.getImprovementInfo(getImprovementType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
-						gDLL->getInterfaceIFace()->addMessage(eCulturalOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREEXPANDS", MESSAGE_TYPE_INFO, GC.getImprovementInfo(getImprovementType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+						gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREEXPANDS", MESSAGE_TYPE_INFO, GC.getImprovementInfo(getImprovementType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+						gDLL->UI().addPlayerMessage(eCulturalOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREEXPANDS", MESSAGE_TYPE_INFO, GC.getImprovementInfo(getImprovementType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
 						setOwner(eCulturalOwner,true);
 					}
 				}
@@ -10096,7 +10096,7 @@ void CvPlot::doFort()
 							GET_PLAYER(FortOwner).changeGold(iGold);
 
 							szBuffer = gDLL->getText("TXT_KEY_FORT_IMPROVEMENT_KILLED_ANIMAL", iGold);
-							gDLL->getInterfaceIFace()->addMessage(FortOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+							gDLL->UI().addPlayerMessage(FortOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
 						}
 
 						else
@@ -10113,27 +10113,27 @@ void CvPlot::doFort()
 									pDefenseUnit->changeExperience(iExperience, pLoopUnit2->maxXPValue(), true, false, true);
 
 									szBuffer = gDLL->getText("TXT_KEY_FORT_IMPROVEMENT_DESTROYED_GOOD");
-									gDLL->getInterfaceIFace()->addMessage(FortOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+									gDLL->UI().addPlayerMessage(FortOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
 
 									szBuffer = gDLL->getText("TXT_KEY_FORT_IMPROVEMENT_DESTROYED_BAD");
-									gDLL->getInterfaceIFace()->addMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pLoopUnit2->getX_INLINE(), pLoopUnit2->getY_INLINE(), true, true);
+									gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pLoopUnit2->getX_INLINE(), pLoopUnit2->getY_INLINE(), true, true);
 								}
 								else
 								{
 									szBuffer = gDLL->getText("TXT_KEY_FORT_IMPROVEMENT_HIT_LAND_GOOD");
-									gDLL->getInterfaceIFace()->addMessage(FortOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+									gDLL->UI().addPlayerMessage(FortOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
 
 									szBuffer = gDLL->getText("TXT_KEY_FORT_IMPROVEMENT_HIT_LAND_BAD");
-									gDLL->getInterfaceIFace()->addMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pLoopUnit2->getX_INLINE(), pLoopUnit2->getY_INLINE(), true, true);
+									gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pLoopUnit2->getX_INLINE(), pLoopUnit2->getY_INLINE(), true, true);
 								}
 							}
 							else
 							{
 								szBuffer = gDLL->getText("TXT_KEY_FORT_IMPROVEMENT_MISS_LAND_BAD");
-								gDLL->getInterfaceIFace()->addMessage(FortOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+								gDLL->UI().addPlayerMessage(FortOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
 
 								szBuffer = gDLL->getText("TXT_KEY_FORT_IMPROVEMENT_MISS_LAND_GOOD");
-								gDLL->getInterfaceIFace()->addMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pLoopUnit2->getX_INLINE(), pLoopUnit2->getY_INLINE(), true, true);
+								gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pLoopUnit2->getX_INLINE(), pLoopUnit2->getY_INLINE(), true, true);
 							}
 						}
 					}
@@ -10233,7 +10233,7 @@ void CvPlot::doMonastery()
 						{
 							pLoopUnit2->AI_setUnitAIState(UNITAI_STATE_WANDER);
 							szBuffer = gDLL->getText("TXT_KEY_MONASTERY_IMPROVEMENT_APEASED_RAIDING_NATIVE");
-							gDLL->getInterfaceIFace()->addMessage(MonasteryOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+							gDLL->UI().addPlayerMessage(MonasteryOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
 							// we stop, because we have did something. reason is balancing
 							pUnitNode2 = NULL;
 							alreadyDoneMonastery = true;
@@ -10255,7 +10255,7 @@ void CvPlot::doMonastery()
 								{
 									CvUnit* pUnit = GET_PLAYER(MonasteryOwner).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), getX_INLINE(), getY_INLINE());
 									szBuffer = gDLL->getText("TXT_KEY_MONASTERY_IMPROVEMENT_CONVERTED_NATIVE");
-									gDLL->getInterfaceIFace()->addMessage(MonasteryOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+									gDLL->UI().addPlayerMessage(MonasteryOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
 								}
 							}
 							pLoopUnit2->kill(false);
@@ -10270,7 +10270,7 @@ void CvPlot::doMonastery()
 							GET_PLAYER(MonasteryOwner).changeGold(iGold);
 							pLoopUnit2->AI_setUnitAIState(UNITAI_STATE_RETURN_HOME);
 							szBuffer = gDLL->getText("TXT_KEY_MONASTERY_IMPROVEMENT_GOT_PRESENT", iGold);
-							gDLL->getInterfaceIFace()->addMessage(MonasteryOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+							gDLL->UI().addPlayerMessage(MonasteryOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
 							// we stop, because we have did something. reason is balancing
 							pUnitNode2 = NULL;
 							alreadyDoneMonastery = true;
