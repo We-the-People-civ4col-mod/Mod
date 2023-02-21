@@ -1216,7 +1216,7 @@ void CyPlayer::cacheUsedShipData(int iUsedShipPrice, int iUsedShipClassType)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->cacheUsedShipData(iUsedShipPrice, iUsedShipClassType);
+		m_pPlayer->cacheUsedShipData(iUsedShipPrice, (UnitClassTypes)iUsedShipClassType);
 	}
 }
 
@@ -1250,7 +1250,7 @@ void CyPlayer::cacheForeignImmigrantData(int iForeignImmigrantPrice, int iForeig
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->cacheForeignImmigrantData(iForeignImmigrantPrice, iForeignImmigrantClassType);
+		m_pPlayer->cacheForeignImmigrantData(iForeignImmigrantPrice, (UnitClassTypes)iForeignImmigrantClassType);
 	}
 }
 

@@ -138,9 +138,9 @@ public:
 	// R&R, ray, Church Favours - END
 
 	//WTP, ray Kings Used Ship - START
-	void cacheUsedShipData(int iUsedShipPrice, int iUsedShipClassType);
-	int getUsedShipPrice(int iUsedShipClassType);
-	int getRandomUsedShipClassTypeID();
+	void cacheUsedShipData(int iUsedShipPrice, UnitClassTypes iUsedShipClassType);
+	int getUsedShipPrice(UnitClassTypes iUsedShipClassType);
+	UnitClassTypes getRandomUsedShipClassTypeID();
 	bool isKingWillingToTradeUsedShips();
 	void decreaseCounterForUsedShipDeals();
 	void doAILogicforUsedShipDeals();
@@ -149,7 +149,7 @@ public:
 	//WTP, ray Kings Used Ship - END
 
 	// WTP, ray, Foreign Kings, buy Immigrants - START
-	void cacheForeignImmigrantData(int iForeignImmigrantPrice, int iForeignImmigrantClassType);
+	void cacheForeignImmigrantData(int iForeignImmigrantPrice, UnitClassTypes iForeignImmigrantClassType);
 	int getForeignImmigrantPrice(UnitClassTypes iForeignImmigrantClassType, int iKingID);
 	UnitClassTypes getRandomForeignImmigrantClassTypeID();
 	bool isForeignKingWillingToTradeImmigrants(int iKingID);

@@ -3083,13 +3083,13 @@ void CvPlayer::contact(PlayerTypes ePlayer)
 bool CvPlayer::buyUnitFromParentPlayer(PlayerTypes eSellingPlayer, const char *szUnitClass, int iNumUnits, CvWString szIDTag, int iPriceToPay, int iLocationFlags, bool bReceivePrice)
 {
 	UnitTypes eUnitType = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(getParent()).getCivilizationType()).getCivilizationUnits(GC.getDefineINT(szUnitClass));
-	buyUnitFromPlayer(eSellingPlayer, eUnitType, iNumUnits, szIDTag, iPriceToPay, iLocationFlags, bReceivePrice);
+	return buyUnitFromPlayer(eSellingPlayer, eUnitType, iNumUnits, szIDTag, iPriceToPay, iLocationFlags, bReceivePrice);
 }
 
 bool CvPlayer::buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitClassTypes eUnitClass, int iNumUnits, CvWString szIDTag, int iPriceToPay, int iLocationFlags, bool bReceivePrice)
 {
 	UnitTypes eUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass);
-	buyUnitFromPlayer(eSellingPlayer, eUnitType, iNumUnits, szIDTag, iPriceToPay, iLocationFlags, bReceivePrice);
+	return buyUnitFromPlayer(eSellingPlayer, eUnitType, iNumUnits, szIDTag, iPriceToPay, iLocationFlags, bReceivePrice);
 }
 
 bool CvPlayer::buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitType, int iNumUnits, CvWString szIDTag, int iPriceToPay, int iLocationFlags, bool bReceivePrice)
@@ -14234,7 +14234,7 @@ void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdate
 	int iGrowthPercent = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
 
 	EventTriggeredData* pTriggeredData = getEventTriggered(iEventTriggeredId);
-	Coordinates coord(kTriggeredData.m_iPlotX, kTriggeredData.m_iPlotY);
+	Coordinates coord(pTriggeredData->m_iPlotX, pTriggeredData->m_iPlotY);
 
 	if (NULL == pTriggeredData)
 	{
@@ -23274,14 +23274,14 @@ int CvPlayer::getChurchFavourPrice()
 // R&R, ray, Church Favours - END
 
 //WTP, ray Kings Used Ship - START
-void CvPlayer::cacheUsedShipData(int iUsedShipPrice, int iUsedShipClassType)
+void CvPlayer::cacheUsedShipData(int iUsedShipPrice, UnitClassTypes iUsedShipClassType)
 {
 	m_iCachedUsedShipPrice = iUsedShipPrice;
 	m_iCachedUsedShipClassTypeID = iUsedShipClassType;
 	return;
 }
 
-int CvPlayer::getUsedShipPrice(int iUsedShipClassType)
+int CvPlayer::getUsedShipPrice(UnitClassTypes iUsedShipClassType)
 {
 	int iPrice = 0;
 
@@ -23312,12 +23312,12 @@ int CvPlayer::getUsedShipPrice(int iUsedShipClassType)
 	return iPrice;
 }
 
-int CvPlayer::getRandomUsedShipClassTypeID()
+UnitClassTypes CvPlayer::getRandomUsedShipClassTypeID()
 {
 	UnitClassTypes eBestUnitClass = NO_UNITCLASS;
 	int iBestLastCompareValue = 0;
 
-	for (int iI = 0; iI < NUM_UNITCLASS_TYPES; ++iI)
+	for (UnitClassTypes iI = FIRST_UNITCLASS; iI < NUM_UNITCLASS_TYPES; ++iI)
 	{
 		int iUnitClassCompareRand = GC.getGameINLINE().getSorenRandNum(100, "Used Ship Class Rand");
 		if (iUnitClassCompareRand > iBestLastCompareValue)
@@ -23445,7 +23445,7 @@ void CvPlayer::doAILogicforUsedShipDeals()
 	}
 
 	// now let us check the Ship and the Price it would cost
-	int iShipClassTypeID = getRandomUsedShipClassTypeID();
+	UnitClassTypes iShipClassTypeID = getRandomUsedShipClassTypeID();
 
 	// we did not get any ship
 	if (iShipClassTypeID == -1)
@@ -23572,7 +23572,7 @@ void CvPlayer::acquireUsedShip(UnitClassTypes iUsedShipClassType, int iPrice)
 
 
 // WTP, ray, Foreign Kings, buy Immigrants - START
-void CvPlayer::cacheForeignImmigrantData(int iForeignImmigrantPrice, int iForeignImmigrantClassTypeID)
+void CvPlayer::cacheForeignImmigrantData(int iForeignImmigrantPrice, UnitClassTypes iForeignImmigrantClassTypeID)
 {
 	m_iCachedForeignImmigrantPrice = iForeignImmigrantPrice;
 	m_iCachedForeignImmigrantClassTypeID = iForeignImmigrantClassTypeID;
