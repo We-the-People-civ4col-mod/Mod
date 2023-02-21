@@ -1225,9 +1225,9 @@ int CyPlayer::getRandomUsedShipClassTypeID() const
 	return m_pPlayer ? m_pPlayer->getRandomUsedShipClassTypeID() : -1;
 }
 
-int CyPlayer::getUsedShipPrice(int /*UnitClaseTypes*/ iUsedShipClassType) const
+int CyPlayer::getUsedShipPrice(int /*UnitClassTypes*/ iUsedShipClassType) const
 {
-	return m_pPlayer ? m_pPlayer->getUsedShipPrice(iUsedShipClassType) : -1;
+	return m_pPlayer ? m_pPlayer->getUsedShipPrice((UnitClassTypes)iUsedShipClassType) : -1;
 }
 
 bool CyPlayer::isKingWillingToTradeUsedShips() const
@@ -1259,9 +1259,9 @@ int CyPlayer::getRandomForeignImmigrantClassTypeID() const
 	return m_pPlayer ? m_pPlayer->getRandomForeignImmigrantClassTypeID() : -1;
 }
 
-int CyPlayer::getForeignImmigrantPrice(int /*UnitClaseTypes*/ iForeignImmigrantClassType, int iEuropeKingID) const
+int CyPlayer::getForeignImmigrantPrice(int /*UnitClassTypes*/ iForeignImmigrantClassType, int iEuropeKingID) const
 {
-	return m_pPlayer ? m_pPlayer->getForeignImmigrantPrice(iForeignImmigrantClassType, iEuropeKingID) : -1;
+	return m_pPlayer ? m_pPlayer->getForeignImmigrantPrice((UnitClassTypes)iForeignImmigrantClassType, iEuropeKingID) : -1;
 }
 
 bool CyPlayer::isForeignKingWillingToTradeImmigrants(int iEuropeKingID) const
