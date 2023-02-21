@@ -360,21 +360,21 @@
     <TEXT>
         <Tag>TXT_KEY_TRAINED_RANGERS</Tag>
         <English>Milord, a new unit of [COLOR_UNIT_TEXT]rangers[COLOR_REVERT] awaits your commands in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
-        <French>Une nouvelle unité de gardes-forestiers attend vos ordres à %s1_city, Sir.</French>
+        <French>Seigneur, une nouvelle unité de gardes-forestiers attend vos ordres à %s1_city.</French>
         <German>Milord, eine neue Einheit [COLOR_UNIT_TEXT]Ranger[COLOR_REVERT] erwartet Ihre Befehle in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</German>
         <Russian>Милорд, новый отряд [COLOR_UNIT_TEXT]рейнджеров[COLOR_REVERT] ожидает ваших приказов в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HIRED_CONQUISTADORS</Tag>
         <English>Milord, the [COLOR_UNIT_TEXT]conquistadors[COLOR_REVERT] from Europe have arrived in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
-        <French>Les conquistadors venus d'Europe sont arrivés à %s1_city, Sir.</French>
+        <French>Seigneur, les conquistadors venus d'Europe sont arrivés à %s1_city.</French>
         <German>Milord, die [COLOR_UNIT_TEXT]Konquistadoren[COLOR_REVERT] aus Europe sind in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ausgeschifft worden.</German>
         <Russian>Милорд, [COLOR_UNIT_TEXT]конкистадоры[COLOR_REVERT] из Европы прибыли в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_NATIVE_SLAVE</Tag>
         <English>Milord, the [COLOR_UNIT_TEXT]Native slaves[COLOR_REVERT] we bought have been delivered to [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
-        <French>Les Esclaves indigènes que nous avons achetés sont arrivés à %s1_city, Sir.</French>
+        <French>Seigneur, les Esclaves indigènes que nous avons achetés sont arrivés à %s1_city.</French>
         <German>Milord, die [COLOR_UNIT_TEXT]Versklavten Ureinwohner[COLOR_REVERT], die wir gekauft haben, wurden nach [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] gebracht.</German>
         <Italian>I nativi schiavi che abbiamo comprato sono stati consegnati a %s1_city, Mylord.</Italian>
         <Spanish>Los esclavos nativos compramos han sido entregados a %s1_city, Mylord.</Spanish>
@@ -382,7 +382,7 @@
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_AFRICAN_SLAVE</Tag>
         <English>Milord, the [COLOR_UNIT_TEXT]slaves[COLOR_REVERT] we bought from Africa have arrived in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
-        <French>Les esclaves que nous avons acheté en Afrique sont arrivés en %s1_city, Sir.</French>
+        <French>Seigneur, les esclaves que nous avons acheté en Afrique sont arrivés en %s1_city.</French>
         <German>Milord, die [COLOR_UNIT_TEXT]Sklaven aus Afrika[COLOR_REVERT] wurden nach [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] geliefert.</German>
         <Italian>Gli schiavi che abbiamo comprato dall'Africa sono arrivati in %s1_city, Mylord.</Italian>
         <Spanish>Los esclavos que compramos de África han llegado %s1_city, Mylord.</Spanish>
@@ -391,13 +391,13 @@
     <TEXT>
         <Tag>TXT_KEY_ACQUIRED_CONTINENTAL_GUARD</Tag>
         <English>Milord, with the help of our European allies, we have successfully trained a [COLOR_UNIT_TEXT]Continental Guard[COLOR_REVERT] in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
-        <French>Avec l'aide de nos alliés européens, nous avons formé avec succès une garde continental %s1_city, Sir.</French>
+        <French>Seigneur, avec l'aide de nos alliés européens, nous avons formé avec succès une garde continental %s1_city.</French>
         <German>Milord, mit der Hilfe unserer europäischen Alliierten haben wir erfolgreich eine [COLOR_UNIT_TEXT]Kontinentalgarde[COLOR_REVERT] in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ausgebildet.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACQUIRED_MORTAR</Tag>
         <English>Milord, the [COLOR_UNIT_TEXT]mortar[COLOR_REVERT] we have bought from our European allies has arrived in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
-        <French>Le mortier que nous avons acheté à nos alliés européens sont arrivés à %s1_city, Sir.</French>
+        <French>Seigneur, le mortier que nous avons acheté à nos alliés européens sont arrivés à %s1_city.</French>
         <German>Milord, der [COLOR_UNIT_TEXT]Mörser[COLOR_REVERT], den wir von unseren europäischen Alliierten gekauft haben, ist nach [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] geliefert worden.</German>
     </TEXT>
     <TEXT>
@@ -415,7 +415,7 @@
     <TEXT>
         <Tag>TXT_KEY_USED_SHIP_BARGAIN_AVAILABLE</Tag>
         <English>Milord, one of our contacts in Europe told us that a [COLOR_UNIT_TEXT]used ship[COLOR_REVERT] in good shape will be sold for a bargain price. Our King could help to arrange the deal before it is sold to others.</English>
-        <German>Milord, einer unserer Kontakte in Europa hat uns von berichtet, dass ein [COLOR_UNIT_TEXT]Schiff[COLOR_REVERT] zu einem guten Preis zum Verkauf steht. Seine Majestät könnte uns helfen, dass wir den Zuschlag bekommen.</German>
+        <German>Milord, einer unserer Kontakte in Europa hat uns davon berichtet, dass ein [COLOR_UNIT_TEXT]Schiff[COLOR_REVERT] zu einem guten Preis zum Verkauf steht. Seine Majestät könnte uns helfen, dass wir den Zuschlag bekommen.</German>
         <Russian>Милорд, один из наших контактов в Европе сообщил, что [COLOR_UNIT_TEXT]подержанный корабль[COLOR_REVERT] в довольно неплохом состоянии будет продаваться по выгодной цене. Наш Король мог бы помочь устроить сделку, прежде чем об этом предложении станет известно остальным.</Russian>
     </TEXT>
     <TEXT>
@@ -470,7 +470,7 @@
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_SMUGGLERS</Tag>
         <English>Milord, the [COLOR_UNIT_TEXT]smugglers[COLOR_REVERT] we have hired await your orders in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
-        <French>Les contrebandiers que nous avons recrutés attendent vos ordres à %s1_city, Sir.</French>
+        <French>Seigneur, les contrebandiers que nous avons recrutés attendent vos ordres à %s1_city.</French>
         <German>Milord, die angeheuerten [COLOR_UNIT_TEXT]Schmuggler[COLOR_REVERT] erwarten Eure Befehle in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</German>
     </TEXT>
     <TEXT>
@@ -546,7 +546,7 @@
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_BISHOP</Tag>
         <English>Milord, the newly appointed [COLOR_UNIT_TEXT]bishop[COLOR_REVERT] has arrived in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
-        <French>Le nouvel évêque est arrivé à %s1_city, Sir.</French>
+        <French>Seigneur, le nouvel évêque est arrivé à %s1_city.</French>
         <German>Milord, der neu ernannte [COLOR_UNIT_TEXT]Bischof[COLOR_REVERT] ist in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] eingetroffen.</German>
     </TEXT>
     <TEXT>
@@ -1268,7 +1268,7 @@
     <TEXT>
         <Tag>TXT_KEY_HIRED_PIRATES</Tag>
         <English>Milord, the [COLOR_UNIT_TEXT]pirates[COLOR_REVERT] we have hired await your orders in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
-        <French>Les pirates que nous avons recrutés attendent vos ordres %s1_city, Sir.</French>
+        <French>Seigneur, es pirates que nous avons recrutés attendent vos ordres %s1_city.</French>
         <German>Milord, die angeheuerten [COLOR_UNIT_TEXT]Piraten[COLOR_REVERT] erwarten Eure Befehle in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</German>
         <Russian>Милорд, [COLOR_UNIT_TEXT]пираты[COLOR_REVERT], которых мы наняли, ожидают приказов в гавани [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
     </TEXT>
@@ -1316,9 +1316,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_LEVIED_MILITIA_FOR_PROTECTION</Tag>
-        <English>Milord, the city [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has levied a [COLOR_UNIT_TEXT]settler's militia[COLOR_REVERT] because they felt unprotected. [NEWLINE]To do so, they have taken food from the storage and money from the treasury.</English>
-        <French>Sire, la ville de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a levé une milice à partir de simples colons car ils ne se sentaient pas protéger. [NEWLINE]Ils ont pris de la nourriture et de l'argent pour la former.</French>
-        <German>Milord, die Stadt [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat eine [COLOR_UNIT_TEXT]Siedlermiliz[COLOR_REVERT] ausgehoben, weil sie sich unzureichend geschützt fühlte. [NEWLINE]Dafür haben sie Nahrung aus den Lagern und Gold aus der Schatzkammer entnommen.</German>
+        <English>Milord, the city [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has levied a [COLOR_UNIT_TEXT]settler's militia[COLOR_REVERT] because they felt unprotected.[NEWLINE]To do so, they have taken food from the storage and money from the treasury.</English>
+        <French>Sire, la ville de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a levé une milice à partir de simples colons car ils ne se sentaient pas protéger.[NEWLINE]Ils ont pris de la nourriture et de l'argent pour la former.</French>
+        <German>Milord, die Stadt [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat eine [COLOR_UNIT_TEXT]Siedlermiliz[COLOR_REVERT] ausgehoben, weil sie sich unzureichend geschützt fühlte.[NEWLINE]Dafür haben sie Nahrung aus den Lagern und Gold aus der Schatzkammer entnommen.</German>
         <Russian>Милорд! Жители города [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] чувствовали себя беззащитными и потому сами организовали отряд [COLOR_UNIT_TEXT]вооруженных колонистов[COLOR_REVERT]. [NEWLINE]Для обеспечения отряда они взяли еду со склада и деньги из казны города.</Russian>
     </TEXT>
     <TEXT>
@@ -1451,14 +1451,14 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HEALTH_FROM_RESSOURCE</Tag>
-        <English>if worked by citizen: +%d1%F2_Icon</English>
-        <German>falls bewirtschaftet: +%d1%F2_Icon</German>
-        <Russian>Если обрабатывается горожанином: +%d1%F2_Icon</Russian>
+        <English>if worked by citizen : +%d1%F2_Icon</English>
+        <German>falls bewirtschaftet : +%d1%F2_Icon</German>
+        <Russian>Если обрабатывается горожанином : +%d1%F2_Icon</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HEALTH_FROM_RESSOURCE_NEGATIVE</Tag>
-        <English>for City if worked on: %d1%F2_Icon</English>
-        <German>in Stadt falls bearbeitet: %d1%F2_Icon</German>
+        <English>for City if worked on : %d1%F2_Icon</English>
+        <German>in Stadt falls bearbeitet : %d1%F2_Icon</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_YIELD_HEALTH</Tag>
@@ -1510,11 +1510,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_BONUS_YIELD</Tag>
-        <English>%s1: %D2%F3 (with resource [LINK=%s5]%s4[\LINK])</English>
+        <English>%s1 : %D2%F3 (with resource [LINK=%s5]%s4[\LINK])</English>
         <French>%s1 : %D2%F3 (avec Resource [LINK=%s5]%s4[\LINK])</French>
-        <German>%s1: %D2%F3 (mit Bonusressource [LINK=%s5]%s4[\LINK])</German>
-        <Italian>%s1: %D2%F3 (con Resource [LINK=%s5]%s4[\LINK])</Italian>
-        <Spanish>%s1: %D2 %F3 (con Resource [LINK=%s5]%s4[\LINK])</Spanish>
+        <German>%s1 : %D2%F3 (mit Bonusressource [LINK=%s5]%s4[\LINK])</German>
+        <Italian>%s1 : %D2%F3 (con Resource [LINK=%s5]%s4[\LINK])</Italian>
+        <Spanish>%s1 : %D2 %F3 (con Resource [LINK=%s5]%s4[\LINK])</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HEALTH_CITY</Tag>
@@ -1547,7 +1547,7 @@
         <Tag>TXT_KEY_IMPROVEMENT_PLOT_CULTURE</Tag>
         <English>[ICON_BULLET]%D1_Change[ICON_CULTURE] for owner in plot</English>
         <French>[ICON_BULLET]%D1_Change[ICON_CULTURE] pour le propriétaire dans la parcelle</French>
-        <German>[ICON_BULLET]%D1_Change[ICON_CULTURE] für Besitzer des Felds</German>
+        <German>[ICON_BULLET]%D1_Change[ICON_CULTURE] für Besitzer des Geländefelds</German>
         <Italian>[ICON_BULLET]%D1_Change[ICON_CULTURE] per il proprietario di complotto</Italian>
         <Spanish>[ICON_BULLET]%D1_Change[ICON_CULTURE] para el propietario de la parcela</Spanish>
     </TEXT>
@@ -1571,7 +1571,7 @@
         <Tag>TXT_KEY_IMPROVEMENT_FORTIFY_TO_UPGRADE</Tag>
         <English>[ICON_BULLET]A unit must guard it to upgrade</English>
         <French>[ICON_BULLET]Une unite doit renforcer pour mettre a niveau</French>
-        <German>[ICON_BULLET]Eine Einheit muss befestigt sein zum Wachstum</German>
+        <German>[ICON_BULLET]Eine Einheit muss hier befestigt sein, damit die Verbesserung im Laufe der Zeit wächst</German>
         <Italian>[ICON_BULLET]Una unita deve fortificare l'aggiornamento</Italian>
         <Spanish>[ICON_BULLET]Una unidad debe fortalecer para mejorar</Spanish>
     </TEXT>
@@ -1608,53 +1608,53 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_FLATLAND</Tag>
-        <English>[BOLD]Flatland:[\BOLD]</English>
-        <German>[BOLD]Flachland:[\BOLD]</German>
+        <English>[BOLD]Flatland :[\BOLD]</English>
+        <German>[BOLD]Flachland :[\BOLD]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_HILLS</Tag>
-        <English>[BOLD]Hills:[\BOLD]</English>
-        <German>[BOLD]Hügel:[\BOLD]</German>
+        <English>[BOLD]Hills :[\BOLD]</English>
+        <German>[BOLD]Hügel :[\BOLD]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_PEAKS</Tag>
-        <English>[BOLD]Peaks:[\BOLD]</English>
-        <German>[BOLD]Berge:[\BOLD]</German>
+        <English>[BOLD]Peaks :[\BOLD]</English>
+        <German>[BOLD]Berge :[\BOLD]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_WATER</Tag>
-        <English>[BOLD]Water:[\BOLD]</English>
-        <German>[BOLD]Wasser:[\BOLD]</German>
+        <English>[BOLD]Water :[\BOLD]</English>
+        <German>[BOLD]Wasser :[\BOLD]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_VALID_TERRAINS</Tag>
-        <English>[NEWLINE][BOLD]Valid Terrains:[\BOLD]</English>
-        <German>[NEWLINE][BOLD]Gültige Gelände:[\BOLD]</German>
+        <English>[NEWLINE][BOLD]Valid Terrains :[\BOLD]</English>
+        <German>[NEWLINE][BOLD]Gültige Gelände :[\BOLD]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_VALID_TERRAINS_2</Tag>
-        <English>[BOLD]Valid Terrains:[\BOLD]</English>
-        <German>[BOLD]Gültige Gelände:[\BOLD]</German>
+        <English>[BOLD]Valid Terrains :[\BOLD]</English>
+        <German>[BOLD]Gültige Gelände :[\BOLD]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_VALID_FEATURES</Tag>
-        <English>[NEWLINE][BOLD]Valid Features:[\BOLD]</English>
-        <German>[NEWLINE][BOLD]Gültige Features:[\BOLD]</German>
+        <English>[NEWLINE][BOLD]Valid Features :[\BOLD]</English>
+        <German>[NEWLINE][BOLD]Gültige Features :[\BOLD]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_YIELD_INCREASES</Tag>
-        <English>[BOLD]Yield Increases:[\BOLD]</English>
-        <German>[BOLD]Höherer Ertrag:[\BOLD]</German>
+        <English>[BOLD]Yield Increases :[\BOLD]</English>
+        <German>[BOLD]Höhere Erträge :[\BOLD]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_YIELD_DECREASES</Tag>
-        <English>[NEWLINE][BOLD]Yield Decreases:[\BOLD]</English>
-        <German>[NEWLINE][BOLD]Geringerer Ertrag:[\BOLD]</German>
+        <English>[NEWLINE][BOLD]Yield Decreases :[\BOLD]</English>
+        <German>[NEWLINE][BOLD]Geringere Erträge :[\BOLD]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CULTURE_FROM_POPULATION</Tag>
         <English>[ICON_BULLET]%d2%F3_Icon[TAB]from Population</English>
-        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Stadgröße</German>
+        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Stadtgröße</German>
         <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от населения</Russian>
     </TEXT>
 </Civ4GameText>
