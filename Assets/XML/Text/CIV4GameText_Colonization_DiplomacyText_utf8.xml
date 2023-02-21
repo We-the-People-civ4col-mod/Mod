@@ -12,6 +12,7 @@
         <German>Gouverneur, diese Welt ist groß - aber nicht groß genug für uns beide. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] erklärt Euch den Krieg!)</German>
         <Italian>Questo mondo non è grande abbastanza per tutti e due! ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] dichiara guerra!)</Italian>
         <Spanish>¡Este mundo no es lo bastante grande para nuestras dos naciones! (¡[COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] os declara la guerra!)</Spanish>
+        <Russian>Губернатор, этот мир велик, но для нас двоих он слишком мал. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] объявляет войну!)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DECLARE_WAR_2</Tag>
@@ -20,6 +21,7 @@
         <German>Unsere Geduld ist erschöpft. Wir sehen uns auf dem Schlachtfeld wieder. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] erklärt Euch den Krieg!)</German>
         <Italian>Abbiamo subito le tue insolenze troppo a lungo! ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] dichiara guerra!)</Italian>
         <Spanish>¡Ya hemos aguantado bastante vuestras insolencias! (¡[COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] os declara la guerra!)</Spanish>
+        <Russian>Наше терпение на исходе. До встречи на поле боя! ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] объявляет войну!)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DECLARE_WAR_3</Tag>
@@ -28,6 +30,7 @@
         <German>Jetzt wird Blut fließen. Und es wird nicht das unsrige sein. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] erklärt Euch den Krieg!)</German>
         <Italian>Preparati ad affrontare il tuo destino! ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] dichiara guerra!)</Italian>
         <Spanish>¡Preparaos para afrontar vuestra perdición! (¡[COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] os declara la guerra!)</Spanish>
+        <Russian>Сейчас прольётся чья-то кровь. И она будет явно не наша. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] объявляет войну!)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DECLARE_WAR_4</Tag>
@@ -36,6 +39,7 @@
         <German>Die Zeit ist reif. Reif für eine Entscheidung - darüber, wem dieses schöne Land gehört. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] erklärt Euch den Krieg!)</German>
         <Italian>Ora pagherai per aver insultato l'[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]! ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] dichiara guerra!)</Italian>
         <Spanish>¡Ahora pagaréis vuestros incontables insultos al [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]! (¡[COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] os declara la guerra!)</Spanish>
+        <Russian>Настало время решить, кому принадлежит эта прекрасная страна. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] объявляет войну!)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DECLARE_WAR_5</Tag>
@@ -44,6 +48,7 @@
         <German>Die Zeit der Verhandlungen ist vorbei, [CT_NAME]! ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] erklärt Euch den Krieg!)</German>
         <Italian>È finito il tempo delle chiacchiere, [CT_NAME]! Risolveremo la questione sul campo di battaglia! ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] dichiara guerra!)</Italian>
         <Spanish>¡Se acabó la charla, [CT_NAME]! ¡Zanjaremos nuestras diferencias en el campo de batalla! (¡[COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] os declara la guerra!)</Spanish>
+        <Russian>Время разговоров закончилось, [CT_NAME]! ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] объявляет войну!)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DECLARE_WAR_6</Tag>
@@ -52,6 +57,7 @@
         <German>Von weit her seit Ihr angereist in diesen Teil der Welt. Eure Rückreise habt Ihr verwirkt. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] erklärt Euch den Krieg!)</German>
         <Italian>I miei innumerevoli seguaci vi stermineranno rapidamente! ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] dichiara guerra!)</Italian>
         <Spanish>¡Pronto mis incontables seguidores os destruirán a todos! (¡[COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] os declara la guerra!)</Spanish>
+        <Russian>Вы слишком далеко забрались в своем путешествии и только что лишились возможности вернуться домой. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] объявляет войну!)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DECLARE_WAR_7</Tag>
@@ -60,6 +66,7 @@
         <German>Zeit zu sterben, [CT_NAME]! ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] erklärt Euch den Krieg!)</German>
         <Italian>È tempo di morire, [CT_NAME]. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] dichiara guerra!)</Italian>
         <Spanish>Es hora de morir, [CT_NAME]. (¡[COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] os declara la guerra!)</Spanish>
+        <Russian>Время умирать, [CT_NAME]. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] объявляет войну!)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DECLARE_WAR_8</Tag>
@@ -68,6 +75,7 @@
         <German>Küsst ein letztes Mal Euer Weib und packt Eure Waffen. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] erklärt Euch den Krieg!)</German>
         <Italian>Folle! Ti distruggeremo! ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] dichiara guerra!)</Italian>
         <Spanish>¡Idiota! ¡Ahora os destruiremos! (¡[COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] os declara la guerra!)</Spanish>
+        <Russian>Поцелуй свою жену в последний раз и возьми свое оружие. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] объявляет войну!)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DECLARE_WAR_9</Tag>
@@ -76,6 +84,7 @@
         <German>Bald werdet Ihr Eurem Schöpfer gegenüber treten. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] erklärt Euch den Krieg!)</German>
         <Italian>Credo tu sappia che questo significa guerra. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] dichiara guerra!)</Italian>
         <Spanish>Supongo que os dais cuenta de que esto significa la guerra. (¡[COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] os declara la guerra!)</Spanish>
+        <Russian>Вскоре вы встретитесь лицом к лицу со своим Создателем. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] объявляет войну!)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DECLARE_WAR_10</Tag>
@@ -84,6 +93,7 @@
         <German>Eine dunkle Zeit steht Euch bevor. Nehmt Abschied von Eurer Familie und bestimmt, wo Euer Grabstein stehen soll. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] erklärt Euch den Krieg!)</German>
         <Italian>L'[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] ne ha abbastanza della tua perfidia e dei tuoi tradimenti! Ora pagherai! ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] dichiara guerra!)</Italian>
         <Spanish>¡El poderoso [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] ya ha soportado bastante vuestras traiciones y engaños! ¡Lo vais a pagar! (¡[COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] os declara la guerra!)</Spanish>
+        <Russian>Для вас настали тёмные времена. Попрощайтесь с семьей и выберите надгробие. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] объявляет войну!)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_1</Tag>
@@ -92,6 +102,7 @@
         <German>Hört auf, mich zu belästigen.</German>
         <Italian>Smettila di importunarmi!</Italian>
         <Spanish>¡Dejad de molestarnos!</Spanish>
+        <Russian>Прекрати приставать ко мне!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_2</Tag>
@@ -100,6 +111,7 @@
         <German>Ich habe Euch nichts zu sagen. Und ich werde Euch auch nicht zuhören.</German>
         <Italian>Non ho niente da dirti.</Italian>
         <Spanish>No tenemos nada que deciros.</Spanish>
+        <Russian>Мне нечего сказать тебе. И я тебя не слышу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_3</Tag>
@@ -108,6 +120,7 @@
         <German>Gouverneur [CT_NAME], wir sind nicht an einer Unterhaltung interessiert!</German>
         <Italian>Mi spiace, [CT_NAME], non ci interessa chiacchierare!</Italian>
         <Spanish>Lo sentimos, [CT_NAME], no nos interesa hablar.</Spanish>
+        <Russian>Губернатор [CT_NAME], пустая болтовня нам не интересна!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_4</Tag>
@@ -116,6 +129,7 @@
         <German>Geht weg. Wir haben nichts miteinander zu besprechen.</German>
         <Italian>Via, non abbiamo niente di cui parlare.</Italian>
         <Spanish>Marchaos. No tenemos nada de qué hablar.</Spanish>
+        <Russian>Уходите. Нам нечего обсуждать.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_5</Tag>
@@ -124,6 +138,7 @@
         <German>Lasst mich in Ruhe!</German>
         <Italian>Lasciami in pace!</Italian>
         <Spanish>¡Dejadnos en paz!</Spanish>
+        <Russian>Оставь меня в покое!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_6</Tag>
@@ -132,6 +147,7 @@
         <German>Schweigt! Und geht.</German>
         <Italian>Non ho alcun interesse ad ascoltare le tue bugie. Sparisci.</Italian>
         <Spanish>No nos interesa escuchar más mentiras vuestras. Marchaos.</Spanish>
+        <Russian>Заткнись и проваливай!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_1</Tag>
@@ -140,6 +156,7 @@
         <German>Vielleicht werden wir miteinander auskommen. Vielleicht.</German>
         <Italian>Ci auguriamo molti anni di pace tra l'Impero [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT] e quello [CT_CIV_ADJ:1].</Italian>
         <Spanish>Deseamos muchos años de paz entre el imperio de los [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT] y el de los [CT_CIV_ADJ:3].</Spanish>
+        <Russian>Может быть, мы поладим. Может быть.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_2</Tag>
@@ -148,6 +165,7 @@
         <German>Wir werden sehen, wie sich die Dinge entwickeln, Gouverneur [CT_NAME].</German>
         <Italian>Che la pace sia con te per sempre.</Italian>
         <Spanish>Que la paz sea eterna.</Spanish>
+        <Russian>Посмотрим, как будут развиваться события, губернатор [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_3</Tag>
@@ -156,6 +174,7 @@
         <German>Ein bedeutsamer Augenblick, [CT_NAME]. Hoffentlich werdet Ihr auch noch Euren Kinder davon erzählen können.</German>
         <Italian>Lunga vita e prosperità!</Italian>
         <Spanish>Que todos tengamos una vida larga y próspera.</Spanish>
+        <Russian>Исторический момент, [CT_NAME]. Если повезет, вы сможете рассказать об этом своим детям.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_4</Tag>
@@ -164,6 +183,7 @@
         <German>Habt einen angenehmen Tag, [CT_NAME]. Aber seid auf der Hut. Wenn Ihr diese Welt erkundet, kann das gefährlich für Euch werden.</German>
         <Italian>Che la pace possa regnare finché non ci sarà più spazio per espandersi!</Italian>
         <Spanish>¡Que esta paz dure hasta que no tengamos más espacio por el que expandirnos!</Spanish>
+        <Russian>Хорошего дня, [CT_NAME]. Но будьте начеку. Исследование этого мира может быть опасным.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_5</Tag>
@@ -172,6 +192,7 @@
         <German>Vielleicht werden wir ja miteinander auskommen, [CT_NAME]. Vielleicht.</German>
         <Italian>Aspetto con ansia la pace con te, [CT_NAME].</Italian>
         <Spanish>Esperamos disfrutar de muchos años de paz con vosotros, [CT_NAME].</Spanish>
+        <Russian>Возможно, мы даже подружимся, [CT_NAME]. Возможно...</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_6</Tag>
@@ -180,6 +201,7 @@
         <German>Wir werden sehen, was die Zukunft bringt, [CT_NAME].</German>
         <Italian>Meraviglioso!</Italian>
         <Spanish>¡Fantástico!</Spanish>
+        <Russian>Посмотрим, что принесет будущее, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_7</Tag>
@@ -188,6 +210,7 @@
         <German>Gut, dann dürft Ihr Euch entfernen, [CT_NAME]. Und zweifelt nicht daran, dass wir Euch im Auge behalten werden.</German>
         <Italian>[CT_NAME], sediamo tutti in cerchio e cantiamo "Kumbaya" per celebrare questo grande evento!</Italian>
         <Spanish>¡[CT_NAME], sentémonos formando un corro y cantemos el "Kumbayá" para celebrar este gran acontecimiento!</Spanish>
+        <Russian>Хорошо, [CT_NAME], можешь идти. Но не сомневайся, что мы будем следить за тобой.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_8</Tag>
@@ -196,6 +219,7 @@
         <German>Nun denn. Aber seid gewarnt - wir werden jeden Eurer Schritte beobachten.</German>
         <Italian>Schiavi! Preparate un banchetto per celebrare la pace tra i nostri grandi imperi!</Italian>
         <Spanish>¡Lacayos! ¡Preparad un festín para celebrar la paz entre nuestros grandes imperios!</Spanish>
+        <Russian>Ну что же, ладно. Но предупреждаю — мы будем следить за каждым вашим шагом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_9</Tag>
@@ -204,6 +228,7 @@
         <German>Wir werden sehen, wie lange das gut gehen wird.</German>
         <Italian>Hai la nostra gratitudine.</Italian>
         <Spanish>Tenéis nuestra gratitud.</Spanish>
+        <Russian>Посмотрим, как долго это будет работать.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_10</Tag>
@@ -212,6 +237,7 @@
         <German>Ihr habt freien Abzug, [CT_NAME].</German>
         <Italian>Possa la pace regnare in eterno.</Italian>
         <Spanish>Así dure mil años la paz.</Spanish>
+        <Russian>Вы свободны и можете идти, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_11</Tag>
@@ -220,6 +246,7 @@
         <German>Wir werden sehen, was Euer Wort taugt.</German>
         <Italian>Non esiste una via per la pace. La pace è la via.</Italian>
         <Spanish>No existe un camino hacia la paz. La paz es el camino.</Spanish>
+        <Russian>Посмотрим, чего стоит твое слово.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_12</Tag>
@@ -228,6 +255,7 @@
         <German>Ich hoffe, Ihr seid ein ehrlicher Mann, [CT_NAME].</German>
         <Italian>Hai preso una saggia decisione.</Italian>
         <Spanish>Habéis tomado la decisión correcta.</Spanish>
+        <Russian>Надеюсь, вы честный человек, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_13</Tag>
@@ -236,6 +264,7 @@
         <German>Gut.</German>
         <Italian>Eccellente!</Italian>
         <Spanish>¡Magnífico!</Spanish>
+        <Russian>Отлично!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_14</Tag>
@@ -244,6 +273,7 @@
         <German>So sei es.</German>
         <Italian>Devo applaudire alla tua saggezza.</Italian>
         <Spanish>Aplaudimos vuestro juicio.</Spanish>
+        <Russian>Быть по сему.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_15</Tag>
@@ -252,6 +282,7 @@
         <German>In Ordnung.</German>
         <Italian>Meraviglioso.</Italian>
         <Spanish>Maravilloso.</Spanish>
+        <Russian>Хорошо.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_16</Tag>
@@ -260,6 +291,7 @@
         <German>Dann sei dies so vereinbart.</German>
         <Italian>Eccellente! Uniamoci per distruggere qualcun altro!</Italian>
         <Spanish>¡Magnífico! ¡Ahora unámonos y destruyamos a otros!</Spanish>
+        <Russian>Отлично! Это приемлимо.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_17</Tag>
@@ -268,6 +300,7 @@
         <German>Dann sei dies so beschlossen, [CT_NAME].</German>
         <Italian>Hai più buon senso di quanto sembri, [CT_NAME].</Italian>
         <Spanish>Tenéis más sentido común del que parece, [CT_NAME].</Spanish>
+        <Russian>Да будет так, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_18</Tag>
@@ -276,6 +309,7 @@
         <German>Dann lassen wir Euch jetzt unbehelligt abrücken, [CT_NAME].</German>
         <Italian>Una pace onorevole, [CT_NAME], ecco di cosa si tratta.</Italian>
         <Spanish>Paz con honor, [CT_NAME], no hay más.</Spanish>
+        <Russian>Вы пока свободны, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_19</Tag>
@@ -284,6 +318,7 @@
         <German>Wir werden danach trachten, mit Euch auszukommen, [CT_NAME]. Bis auf weiteres.</German>
         <Italian>Non sei così stupido come sembri, [CT_NAME]. Ne sono lieto.</Italian>
         <Spanish>No sois tan imprudente como parecíais en un principio, [CT_NAME]. Nos complacéis.</Spanish>
+        <Russian>Мы постараемся найти общий язык, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_20</Tag>
@@ -292,6 +327,7 @@
         <German>Hütet Euch vor der Sonne in diesem Land, [CT_NAME]. Ihr Licht ist unbarmherzig. So wie manche Bewohner dieser Welt.</German>
         <Italian>Possa la pace durare finché non ci sarà nessun altro da conquistare!</Italian>
         <Spanish>¡Que la paz dure hasta que no nos quede nada más que conquistar!</Spanish>
+        <Russian>Остерегайтесь здешнего солнца, [CT_NAME]. Его свет беспощаден. Как и некоторые обитатели этого мира.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_1</Tag>
@@ -300,6 +336,7 @@
         <German>Auf keinen Fall!</German>
         <Italian>Assolutamente no.</Italian>
         <Spanish>Ni hablar.</Spanish>
+        <Russian>Ни за что!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_2</Tag>
@@ -308,6 +345,7 @@
         <German>Das kommt nicht in Frage, bevor nicht auch der letzte [CT_CIV_ADJ:3] Krieger im Dreck liegt!</German>
         <Italian>Non finché anche l'ultimo guerriero [CT_CIV_ADJ:1] non verrà annientato!</Italian>
         <Spanish>¡No hasta que el último guerrero [CT_CIV_ADJ:1] quede reducido a polvo!</Spanish>
+        <Russian>Только после того, как последний [CT_CIV_ADJ] воин превратится в пыль!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_3</Tag>
@@ -316,6 +354,7 @@
         <German>Niemals!</German>
         <Italian>Mai!</Italian>
         <Spanish>¡Jamás!</Spanish>
+        <Russian>Никогда!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_4</Tag>
@@ -324,6 +363,7 @@
         <German>Es wird keinen Frieden geben, [CT_NAME]!</German>
         <Italian>Non ci sarà pace, [CT_NAME].</Italian>
         <Spanish>No habrá paz, [CT_NAME].</Spanish>
+        <Russian>Мира не будет, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_5</Tag>
@@ -332,6 +372,7 @@
         <German>Frieden? Das könnt Ihr vergessen.</German>
         <Italian>Pace? Ah, scordatela!</Italian>
         <Spanish>¿Paz? ¡Ja! Olvidadlo.</Spanish>
+        <Russian>Мир? Ха-ха Забудь об этом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_6</Tag>
@@ -340,6 +381,7 @@
         <German>Dafür ist es zu spät, [CT_NAME]. Empfangt Eure Strafe in Würde!</German>
         <Italian>È troppo tardi, [CT_NAME]. Accetta la tua punizione con onore!</Italian>
         <Spanish>Demasiado tarde para eso, [CT_NAME]. ¡Aceptad vuestro castigo con valentía!</Spanish>
+        <Russian>Слишком поздно для этого, [CT_NAME]. Прими свое наказание, как подобает мужчине!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_1</Tag>
@@ -348,6 +390,7 @@
         <German>[CT_NAME], welche Angelegenheit führt Euch zu mir?</German>
         <Italian>Salve, [CT_NAME]. Di cosa vuoi parlare?</Italian>
         <Spanish>Hola, [CT_NAME]. ¿De qué queréis hablar?</Spanish>
+        <Russian>[CT_NAME], какое дело привело тебя ко мне?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_2</Tag>
@@ -356,6 +399,7 @@
         <German>Seid gegrüßt. Wie kann das bescheidene Volk von [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] dem mächtigen Volk von [CT_CIV_SHORT] behilflich sein?</German>
         <Italian>Saluti. Cosa può fare l'umile popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:4][COLOR_REVERT] per il potente [CT_CIV_SHORT:2]?</Italian>
         <Spanish>Saludos. ¿Qué puede hacer la humilde tierra de [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] por la poderosa nación de [CT_CIV_SHORT]?</Spanish>
+        <Russian>Приветствую. Что могут смиренные [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] сделать для могучих [CT_CIV_SHORT]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_3</Tag>
@@ -364,6 +408,7 @@
         <German>Seid gegrüßt. Was können wir für Euch tun?</German>
         <Italian>Salve! Posso essere d'aiuto?</Italian>
         <Spanish>Saludos. ¿En qué podemos ayudaros?</Spanish>
+        <Russian>Приветствую. Чем мы можем быть полезны?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_4</Tag>
@@ -372,6 +417,7 @@
         <German>Willkommen, [CT_NAME]. Wie können wir Euch behilflich sein?</German>
         <Italian>Do il benvenuto a [CT_NAME], un grande amico. Come posso aiutarti?</Italian>
         <Spanish>Os saludamos, amigable [CT_NAME]. ¿En qué podemos ayudaros?</Spanish>
+        <Russian>Добро пожаловать, друг [CT_NAME]. Чем мы можем быть полезны?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_5</Tag>
@@ -380,6 +426,7 @@
         <German>Schön, Euch wiederzusehen!</German>
         <Italian>Salve di nuovo!</Italian>
         <Spanish>Hola otra vez.</Spanish>
+        <Russian>Приятно видеть вас снова!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_6</Tag>
@@ -388,6 +435,7 @@
         <German>Ich wünsche Euch einen guten Tag, [CT_NAME].</German>
         <Italian>Buongiorno a te, [CT_NAME].</Italian>
         <Spanish>Buenos días tengáis, [CT_NAME].</Spanish>
+        <Russian>Добрый день, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_7</Tag>
@@ -396,6 +444,7 @@
         <German>Also, was habt Ihr auf dem Herzen?</German>
         <Italian>Allora, che succede?</Italian>
         <Spanish>¿Qué se cuece?</Spanish>
+        <Russian>Так, что происходит?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_8</Tag>
@@ -404,6 +453,7 @@
         <German>Hallo, [CT_NAME]. Was kann ich für Euch tun?</German>
         <Italian>Salve, [CT_NAME]. Cosa posso fare per te?</Italian>
         <Spanish>Hola, [CT_NAME]. ¿Qué puedo hacer por vos?</Spanish>
+        <Russian>Здравствуйте, [CT_NAME]. Что я могу для вас сделать?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_9</Tag>
@@ -412,6 +462,7 @@
         <German>Welche Angelegenheit führt Euch zu mir?</German>
         <Italian>Cos'hai in mente?</Italian>
         <Spanish>¿Qué se os ofrece?</Spanish>
+        <Russian>О чем задумались?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_10</Tag>
@@ -420,6 +471,7 @@
         <German>Was verschafft mir das Vergnügen Eurer Gesellschaft?</German>
         <Italian>A cosa devo il piacere della tua compagnia?</Italian>
         <Spanish>¿A qué debemos el placer de vuestra compañía?</Spanish>
+        <Russian>Чем обязан вашему визиту?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_11</Tag>
@@ -428,6 +480,7 @@
         <German>Seid gegrüßt, [CT_NAME]. Was können wir für Euch tun?</German>
         <Italian>Saluti, [CT_NAME], come possiamo essere utili?</Italian>
         <Spanish>Saludos, [CT_NAME]. ¿En qué puedo serviros?</Spanish>
+        <Russian>Приветствую, [CT_NAME]. Чем мы можем быть вам полезны?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_12</Tag>
@@ -436,6 +489,7 @@
         <German>Willkommen in meinem Heim, [CT_NAME].</German>
         <Italian>Ti do il benvenuto nella mia casa, [CT_NAME].</Italian>
         <Spanish>Os doy la bienvenida a mi morada, [CT_NAME].</Spanish>
+        <Russian>Добро пожаловать в мой дом, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_13</Tag>
@@ -444,6 +498,7 @@
         <German>Ich grüße Euch, [CT_NAME], Anführer des mächtigen Volkes von [CT_CIV_SHORT].</German>
         <Italian>Salve, [CT_NAME], leader del potente Impero [CT_CIV_SHORT:4].</Italian>
         <Spanish>Hola, [CT_NAME], líder de la poderosa tierra de [CT_CIV_SHORT].</Spanish>
+        <Russian>Привет, [CT_NAME], лидер могущественных [CT_CIV_SHORT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_14</Tag>
@@ -452,6 +507,7 @@
         <German>Und welches Anliegen führt [CT_CIV_SHORT] zu mir?</German>
         <Italian>E cosa porta i [CT_CIV_SHORT] alla mia umile dimora?</Italian>
         <Spanish>¿Qué trae a [CT_CIV_SHORT] a mi humilde morada?</Spanish>
+        <Russian>По какому поводу меня беспокоят [CT_CIV_SHORT]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_15</Tag>
@@ -460,6 +516,7 @@
         <German>Wie kann das [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE:2][COLOR_REVERT] dem mächtigen Volk von [CT_CIV_SHORT] zu Diensten sein?</German>
         <Italian>Come può l'[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] aiutare [CT_CIV_SHORT:2]?</Italian>
         <Spanish>¿En qué puede ayudar el [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] a la poderosa tierra de [CT_CIV_SHORT]?</Spanish>
+        <Russian>Как [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] могут помочь могущественным [CT_CIV_SHORT]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_16</Tag>
@@ -468,6 +525,7 @@
         <German>Und was verschafft mir das Vergnügen Eurer Gesellschaft?</German>
         <Italian>E a cosa devo il piacere della tua compagnia?</Italian>
         <Spanish>¿Y a qué debemos el placer de vuestra compañía?</Spanish>
+        <Russian>Чем я обязан вашему обществу?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_1</Tag>
@@ -476,6 +534,7 @@
         <German>Nun?</German>
         <Italian>Quindi?</Italian>
         <Spanish>¿Y bien?</Spanish>
+        <Russian>Ну?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_2</Tag>
@@ -484,6 +543,7 @@
         <German>Was gibt es?</German>
         <Italian>Cos'è?</Italian>
         <Spanish>¿De qué se trata?</Spanish>
+        <Russian>Что это?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_3</Tag>
@@ -492,6 +552,7 @@
         <German>Nun? Kommt zur Sache!</German>
         <Italian>E quindi? Continua!</Italian>
         <Spanish>¿Y bien? ¡Soltadlo de una vez!</Spanish>
+        <Russian>Что ж.. Продолжай!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_4</Tag>
@@ -500,6 +561,7 @@
         <German>Was wollt IHR?</German>
         <Italian>Che COSA vuoi?</Italian>
         <Spanish>¿Qué queréis?</Spanish>
+        <Russian>Что ты хочешь?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_5</Tag>
@@ -508,6 +570,7 @@
         <German>Sagt, was Ihr zu sagen habt.</German>
         <Italian>Sentiamo.</Italian>
         <Spanish>Oigámoslo.</Spanish>
+        <Russian>Давай послушаем.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_6</Tag>
@@ -516,6 +579,7 @@
         <German>Worum geht es denn diesmal, [CT_NAME]?</German>
         <Italian>Che succede questa volta, [CT_NAME]?</Italian>
         <Spanish>¿De qué se trata esta vez, [CT_NAME]?</Spanish>
+        <Russian>Что на этот раз, [CT_NAME]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_7</Tag>
@@ -524,6 +588,7 @@
         <German>Meine Zeit ist wertvoll, [CT_NAME]! Also, was wollt Ihr?</German>
         <Italian>Il mio tempo è prezioso, [CT_NAME]. Cosa vuoi?</Italian>
         <Spanish>Nuestro tiempo es valioso, [CT_NAME]. ¿Qué queréis?</Spanish>
+        <Russian>Мое время дорого, [CT_NAME]. Что ты хочешь?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_8</Tag>
@@ -532,6 +597,7 @@
         <German>Bringt mich nicht in Rage, [CT_NAME]! Das würde Euch nicht gut bekommen!</German>
         <Italian>Non farmi arrabbiare, [CT_NAME]. Non sono divertente, quando mi arrabbio.</Italian>
         <Spanish>No me hagáis enfadar, [CT_NAME]. No os gustaría que me enfadara.</Spanish>
+        <Russian>Не зли меня, [CT_NAME]. Я тебе не понравлюсь, когда я рассержусь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_10</Tag>
@@ -540,6 +606,7 @@
         <German>Nun redet schon, [CT_NAME] - ich habe schließlich nicht den ganzen Tag Zeit!</German>
         <Italian>Sputa il rospo, [CT_NAME], non ho tutta la giornata da perdere.</Italian>
         <Spanish>Id al grano, [CT_NAME], no tenemos todo el día.</Spanish>
+        <Russian>Говори уже, [CT_NAME] - у меня нет целого дня, чтобы ждать твоих высокопарных речей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_11</Tag>
@@ -548,6 +615,7 @@
         <German>Euch gibt es noch? Ich dachte, Eure armseligen Siedlungen wären schon vor geraumer Zeit ausgelöscht worden!</German>
         <Italian>Sei ancora in giro? Pensavo che qualcuno avesse raso al suolo il tuo ridicolo insediamento anni fa.</Italian>
         <Spanish>¿Aún estáis en liza? Creía que alguien había barrido vuestros insignificantes asentamientos hacía años.</Spanish>
+        <Russian>Вы все еще здесь? Я думал, что кто-то стер с лица земли твои жалкие поселения много лет назад.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_12</Tag>
@@ -556,6 +624,7 @@
         <German>Oh, Ihr seid's! Tja, damit ist mein Tag wohl gelaufen!</German>
         <Italian>Oh, sei tu. Adesso la mia giornata è perfetta.</Italian>
         <Spanish>Ah, sois vos. Vaya día...</Spanish>
+        <Russian>А, это ты. Что тебе нужно?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_13</Tag>
@@ -564,6 +633,7 @@
         <German>Sieh an! Die Katze lässt das Mausen nicht!</German>
         <Italian>Toh, guarda che cos'ha trovato il gatto...</Italian>
         <Spanish>Vaya, mirad lo que ha traído el gato.</Spanish>
+        <Russian>Смотрите, кого притащил облезлый кот.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_14</Tag>
@@ -572,6 +642,7 @@
         <German>Ich war gerade damit beschäftigt, auszutüfteln, wie ich Euch am besten um die Ecke bringen kann!</German>
         <Italian>Ho studiato il tuo assassinio.</Italian>
         <Spanish>Justo pensaba en cómo mataros.</Spanish>
+        <Russian>Я изучал способы, которыми можно тебя убить.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_15</Tag>
@@ -580,6 +651,7 @@
         <German>Ihr stellt meine Geduld auf die Probe, [CT_NAME]!</German>
         <Italian>Stai mettendo a dura prova la mia pazienza, [CT_NAME].</Italian>
         <Spanish>Ponéis a prueba mi paciencia, [CT_NAME].</Spanish>
+        <Russian>Ты испытываешь мое терпение, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_16</Tag>
@@ -588,6 +660,7 @@
         <German>Ich höre.</German>
         <Italian>Sto ascoltando.</Italian>
         <Spanish>Os escuchamos.</Spanish>
+        <Russian>Слушаю.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_TRADING_1</Tag>
@@ -596,6 +669,7 @@
         <German>Wie lautet Euer Vorschlag?</German>
         <Italian>E quindi cosa proponi?</Italian>
         <Spanish>¿Qué proponéis?</Spanish>
+        <Russian>Итак, что вы предлагаете?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_TRADING_2</Tag>
@@ -604,6 +678,7 @@
         <German>Unterbreitet mir Euer Angebot!</German>
         <Italian>Fai un'offerta.</Italian>
         <Spanish>Haced una oferta.</Spanish>
+        <Russian>Сделай предложение...</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_TRADING_3</Tag>
@@ -612,6 +687,7 @@
         <German>Fangen wir an!</German>
         <Italian>Cominciamo!</Italian>
         <Spanish>¡Empecemos!</Spanish>
+        <Russian>Начнем!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_TRADING_4</Tag>
@@ -620,6 +696,7 @@
         <German>Ich hoffe, wir können uns einig werden.</German>
         <Italian>Mi auguro di trovare un accordo.</Italian>
         <Spanish>Es de esperar que podamos llegar a un acuerdo.</Spanish>
+        <Russian>Надеюсь, мы сможем прийти к соглашению.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_TRADING_5</Tag>
@@ -628,6 +705,7 @@
         <German>Was hat [CT_CIV_SHORT] uns anzubieten?</German>
         <Italian>Cosa offre [CT_CIV_SHORT:2]?</Italian>
         <Spanish>¿Qué puede ofrecernos [CT_CIV_SHORT]?</Spanish>
+        <Russian>Что могут предложить [CT_CIV_SHORT]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_TRADING_6</Tag>
@@ -636,6 +714,7 @@
         <German>Ich höre ...</German>
         <Italian>Sto ascoltando...</Italian>
         <Spanish>Os escuchamos...</Spanish>
+        <Russian>Я слушаю тебя...</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_TRADING_7</Tag>
@@ -644,6 +723,7 @@
         <German>Wir sind immer an einem ausgeglichenen Handel interessiert, [CT_NAME]. Bitte, sprecht!</German>
         <Italian>Siamo sempre alla ricerca di uno scambio equo, [CT_NAME]. Vai avanti.</Italian>
         <Spanish>Siempre nos interesa un intercambio justo, [CT_NAME]. Continuad, por favor.</Spanish>
+        <Russian>Мы всегда стремимся к справедливому обмену, [CT_NAME]. Пожалуйста, продолжайте.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_TRADING_8</Tag>
@@ -652,6 +732,7 @@
         <German>Redet!</German>
         <Italian>Continua.</Italian>
         <Spanish>Continuad.</Spanish>
+        <Russian>Продолжайте.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_TRADING_9</Tag>
@@ -660,6 +741,7 @@
         <German>Nun, dann sprecht!</German>
         <Italian>Beh, vai avanti e fai un'offerta.</Italian>
         <Spanish>Bien, adelante, poned algo sobre la mesa.</Spanish>
+        <Russian>Ну так говори!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_TRADING_10</Tag>
@@ -668,6 +750,7 @@
         <German>Also schön, dann lasst mal hören.</German>
         <Italian>Va bene. Sentiamo.</Italian>
         <Spanish>De acuerdo. Escuchemos.</Spanish>
+        <Russian>Хорошо. Давайте послушаем его.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_1</Tag>
@@ -676,6 +759,7 @@
         <German>Einverstanden.</German>
         <Italian>D'accordo.</Italian>
         <Spanish>Hecho.</Spanish>
+        <Russian>Согласен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_2</Tag>
@@ -684,6 +768,7 @@
         <German>In Ordnung. Einverstanden!</German>
         <Italian>Va bene, d'accordo.</Italian>
         <Spanish>Entonces de acuerdo. Hecho.</Spanish>
+        <Russian>Хорошо, мы согласны.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_3</Tag>
@@ -692,6 +777,7 @@
         <German>In Ordnung.</German>
         <Italian>Fatto.</Italian>
         <Spanish>Trato hecho.</Spanish>
+        <Russian>Решено.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_4</Tag>
@@ -700,6 +786,7 @@
         <German>Dann sind wir uns einig.</German>
         <Italian>Ottimo, siamo d'accordo.</Italian>
         <Spanish>Excelente. Estamos de acuerdo.</Spanish>
+        <Russian>Мы согласны.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_5</Tag>
@@ -708,6 +795,7 @@
         <German>Nun ja. Wenn Ihr uns nicht entgegenkommen wollt - dann sei es so.</German>
         <Italian>Hrmph. Questa è una rapina a mano armata, ma accettiamo.</Italian>
         <Spanish>Puf. Esto es un atraco a mano armada, pero lo aceptamos.</Spanish>
+        <Russian>Это же грабёж! Но нам некуда деваться - мы согласны.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_6</Tag>
@@ -716,6 +804,7 @@
         <German>Nun, wenn Ihr nicht mehr zu bieten habt, müssen wir uns wohl oder übel damit zufrieden geben. Abgemacht.</German>
         <Italian>Bene, se è il massimo che puoi fare, credo che accetterò. Fatto.</Italian>
         <Spanish>Bueno, si es lo mejor que podéis hacer, supongo que lo aceptamos. Trato hecho.</Spanish>
+        <Russian>Ну, если это лучшее, что ты можешь сделать, я думаю, мы согласны.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_7</Tag>
@@ -724,6 +813,7 @@
         <German>Ich akzeptiere Eure Bedingungen.</German>
         <Italian>Accetto le tue condizioni.</Italian>
         <Spanish>Aceptamos vuestras condiciones.</Spanish>
+        <Russian>Я согласен на ваши условия.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_8</Tag>
@@ -732,6 +822,7 @@
         <German>Das erscheint mir akzeptabel. Einverstanden.</German>
         <Italian>Credo che possiamo accettare. D'accordo.</Italian>
         <Spanish>Creemos que podemos aceptarlo. Hecho.</Spanish>
+        <Russian>Я считаю, что мы можем принять это.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_9</Tag>
@@ -740,6 +831,7 @@
         <German>Ich denke, damit können wir leben. Abgemacht.</German>
         <Italian>Credo che possiamo accettare queste condizioni. D'accordo.</Italian>
         <Spanish>Creemos que podemos aceptar estas condiciones. De acuerdo.</Spanish>
+        <Russian>Думаю, я могу принять эти условия.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_10</Tag>
@@ -748,6 +840,7 @@
         <German>Abgemacht!</German>
         <Italian>D'accordo.</Italian>
         <Spanish>De acuerdo.</Spanish>
+        <Russian>Согласен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_11</Tag>
@@ -756,6 +849,7 @@
         <German>Eigentlich sollte ich es besser wissen, aber wir akzeptieren trotzdem. Einverstanden.</German>
         <Italian>È contro il mio punto di vista, ma accetteremo. Fatto.</Italian>
         <Spanish>Aceptamos a pesar de mis reservas. Trato hecho.</Spanish>
+        <Russian>Это противоречит здравому смыслу, но мы принимаем это.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_12</Tag>
@@ -764,6 +858,7 @@
         <German>Klingt vernünftig. Abgemacht.</German>
         <Italian>Mi sembra onesto. Fatto.</Italian>
         <Spanish>Nos parece justo. Trato hecho.</Spanish>
+        <Russian>Думаю, это справедливо.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_13</Tag>
@@ -772,6 +867,7 @@
         <German>Das ist für uns akzeptabel. Einverstanden.</German>
         <Italian>Mi sembra accettabile. E sia.</Italian>
         <Spanish>Eso nos resulta aceptable. Trato hecho.</Spanish>
+        <Russian>Для нас это приемлемо.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_14</Tag>
@@ -780,6 +876,7 @@
         <German>Ich hasse Gefeilsche, also abgemacht.</German>
         <Italian>Non mi piace contrattare. D'accordo.</Italian>
         <Spanish>No nos gusta regatear. Hecho.</Spanish>
+        <Russian>Не люблю спорить - согласен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_15</Tag>
@@ -788,6 +885,7 @@
         <German>Das ist etwas dürftig - aber wir werden uns trotzdem darauf einlassen.</German>
         <Italian>L'offerta è un po' scarsa, ma la accettiamo.</Italian>
         <Spanish>La propuesta es algo inconsistente, pero la aceptamos.</Spanish>
+        <Russian>Самое простое решение для нас это согласие.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_16</Tag>
@@ -796,6 +894,7 @@
         <German>Wir nehmen Euer faires Angebot an!</German>
         <Italian>Accettiamo la tua onesta offerta.</Italian>
         <Spanish>Aceptamos vuestra justa propuesta.</Spanish>
+        <Russian>Мы принимаем ваше справедливое предложение.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_17</Tag>
@@ -804,6 +903,7 @@
         <German>Wir akzeptieren Euer großzügiges Angebot!</German>
         <Italian>Accettiamo la tua generosa offerta.</Italian>
         <Spanish>Aceptamos vuestra generosa propuesta.</Spanish>
+        <Russian>Мы принимаем ваше любезное предложение.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_18</Tag>
@@ -812,6 +912,7 @@
         <German>Dann sind wir uns einig!</German>
         <Italian>Allora siamo d'accordo.</Italian>
         <Spanish>Entonces, estamos de acuerdo.</Spanish>
+        <Russian>Договорились.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_19</Tag>
@@ -820,6 +921,7 @@
         <German>Damit können wir leben. Einverstanden!</German>
         <Italian>Possiamo accettare queste condizioni. Va bene.</Italian>
         <Spanish>Aceptamos estas condiciones. Trato hecho.</Spanish>
+        <Russian>Эти условия для нас приемлемы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_20</Tag>
@@ -828,6 +930,7 @@
         <German>Auf dieser Basis kommen wir ins Geschäft. Abgemacht!</German>
         <Italian>In questi termini possiamo fare affari. D'accordo.</Italian>
         <Spanish>Podemos aceptarlo con esas condiciones. Hecho.</Spanish>
+        <Russian>Мы не может пройти мимо такого предложения - мы согласны.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_21</Tag>
@@ -836,6 +939,7 @@
         <German>Akzeptiert!</German>
         <Italian>Accettiamo.</Italian>
         <Spanish>Aceptamos.</Spanish>
+        <Russian>Хорошая сделка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_22</Tag>
@@ -844,6 +948,7 @@
         <German>Also gut, wir akzeptieren.</German>
         <Italian>Bene, affare fatto.</Italian>
         <Spanish>Muy bien, lo aceptamos.</Spanish>
+        <Russian>Очень хорошо, мы возьмем это.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_23</Tag>
@@ -852,6 +957,7 @@
         <German>Ein guter Handel.</German>
         <Italian>Mi pare onesto. Affare fatto.</Italian>
         <Spanish>Nos parece bien. Trato hecho.</Spanish>
+        <Russian>Отлично, по рукам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_24</Tag>
@@ -860,6 +966,7 @@
         <German>Eure Bedingungen sind akzeptabel.</German>
         <Italian>Le tue condizioni sono inaccettabili.</Italian>
         <Spanish>Vuestras condiciones son aceptables.</Spanish>
+        <Russian>Ваши условия приемлемы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_25</Tag>
@@ -868,6 +975,7 @@
         <German>Ihr seid ein schwieriger Verhandlungspartner, [CT_NAME]! Abgemacht.</German>
         <Italian>Sai fare gli affari, [CT_NAME]. D'accordo.</Italian>
         <Spanish>Es duro negociar con vos, [CT_NAME]. Hecho.</Spanish>
+        <Russian>Вы умеете торговаться, [CT_NAME]. Мы согласны.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_26</Tag>
@@ -876,6 +984,7 @@
         <German>Ausgezeichnet! Wir sind einverstanden!</German>
         <Italian>Eccellente. Ecco fatto.</Italian>
         <Spanish>Excelente. Trato hecho.</Spanish>
+        <Russian>Отлично! Принято.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_27</Tag>
@@ -884,6 +993,7 @@
         <German>Das Volk der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] bedankt sich. Einverstanden.</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] ti ringrazia. Fatto.</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] os da las gracias. Trato hecho.</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] будут благодарны вам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_REJECT_1</Tag>
@@ -892,6 +1002,7 @@
         <German>Da müsst Ihr uns schon mehr bieten, [CT_NAME]!</German>
         <Italian>Dovrai fare meglio di così, [CT_NAME].</Italian>
         <Spanish>Tendréis que mejorarlo, [CT_NAME].</Spanish>
+        <Russian>Тебе стоило бы поступить по другому, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_REJECT_2</Tag>
@@ -900,6 +1011,7 @@
         <German>Das genügt nicht.</German>
         <Italian>Non crediamo che questo scambio gioverà alla nostra gente.</Italian>
         <Spanish>En verdad, no creemos que este intercambio vaya a favorecer a nuestro pueblo.</Spanish>
+        <Russian>Этого недостаточно.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_REJECT_3</Tag>
@@ -908,6 +1020,7 @@
         <German>Mit diesem Vorschlag können wir leider überhaupt nichts anfangen.</German>
         <Italian>Questa proposta non va bene per noi.</Italian>
         <Spanish>Esta propuesta no va con nosotros.</Spanish>
+        <Russian>К сожалению, это предложение нам не подходит.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_REJECT_4</Tag>
@@ -916,6 +1029,7 @@
         <German>Ich bitte Euch, macht einen ernst gemeinten Vorschlag.</German>
         <Italian>No, sul serio. Piantala di cincischiare, qual è la tua offerta?</Italian>
         <Spanish>No, de verdad. Basta de tonterías, ¿cuál es vuestra oferta?</Spanish>
+        <Russian>Нет, серьёзно. Перестаньте дурачиться: что вы предлагаете?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_REJECT_5</Tag>
@@ -924,6 +1038,7 @@
         <German>Das ist nicht gut genug für uns, Freund [CT_NAME]!</German>
         <Italian>Non è abbastanza, [CT_NAME].</Italian>
         <Spanish>Con esto no basta, [CT_NAME] de nuestros amores.</Spanish>
+        <Russian>Этого недостаточно, друг [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_REJECT_6</Tag>
@@ -932,6 +1047,7 @@
         <German>Ist das Euer letztes Wort?</German>
         <Italian>È la tua ultima offerta?</Italian>
         <Spanish>¿Es vuestra última oferta?</Spanish>
+        <Russian>Это ваше последнее предложение?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_REJECT_7</Tag>
@@ -940,6 +1056,7 @@
         <German>Ich fürchte, daß Euer Angebot nicht akzeptabel für das [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Volk ist.</German>
         <Italian>Mi spiace comunicarti che il popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT] non può accettare la tua offerta.</Italian>
         <Spanish>Me temo que vuestra oferta no resulta aceptable para el pueblo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT].</Spanish>
+        <Russian>Боюсь, ваше предложение неприемлемо для [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_REJECT_8</Tag>
@@ -948,6 +1065,7 @@
         <German>Nein, so wird das nichts.</German>
         <Italian>Non si può fare, spiacente.</Italian>
         <Spanish>No puede ser, camarada.</Spanish>
+        <Russian>Не могу, мой друг.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_REJECT_9</Tag>
@@ -956,6 +1074,7 @@
         <German>Unmöglich.</German>
         <Italian>Non possiamo permetterci di essere così generosi, [CT_NAME]. Riprova.</Italian>
         <Spanish>No nos podemos permitir ser tan generosos, [CT_NAME]. Volved a intentarlo.</Spanish>
+        <Russian>Невозможно.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_REJECT_10</Tag>
@@ -964,6 +1083,7 @@
         <German>Ich glaube, so wird das nichts. Da müsst Ihr Euch schon etwas Besseres einfallen lassen.</German>
         <Italian>Non credo. Dovrai fare meglio di così.</Italian>
         <Spanish>Ni en broma. Tendréis que mejorarlo.</Spanish>
+        <Russian>Я так не думаю. Вам придется предложить что-то поинтереснее.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_REJECT_1</Tag>
@@ -972,6 +1092,7 @@
         <German>Nein, danke.</German>
         <Italian>Rifiutiamo la tua proposta. No, grazie.</Italian>
         <Spanish>Rechazamos vuestra propuesta. No, gracias.</Spanish>
+        <Russian>Нет, спасибо.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_REJECT_2</Tag>
@@ -980,6 +1101,7 @@
         <German>Das könnt Ihr vergessen.</German>
         <Italian>Scordatelo.</Italian>
         <Spanish>Olvidadlo.</Spanish>
+        <Russian>Забудь об этом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_REJECT_3</Tag>
@@ -988,6 +1110,7 @@
         <German>Lächerlich!</German>
         <Italian>Rifiutiamo la tua risibile offerta.</Italian>
         <Spanish>Rechazamos vuestra irrisoria propuesta.</Spanish>
+        <Russian>Ты смеёшься над нами?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_REJECT_4</Tag>
@@ -996,6 +1119,7 @@
         <German>Für wie dumm haltet Ihr mich eigentlich, [CT_NAME]?</German>
         <Italian>Credi che sia una persona così ingenua, [CT_NAME]?</Italian>
         <Spanish>¿Tan inconsciente creéis que soy, [CT_NAME]?</Spanish>
+        <Russian>Вы думаете, я настолько доверчив, [CT_NAME]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_REJECT_5</Tag>
@@ -1004,6 +1128,7 @@
         <German>Vergesst es!</German>
         <Italian>La tua generosità non mi entusiasma. Scordatelo.</Italian>
         <Spanish>Vuestra generosidad no nos abruma precisamente. Olvidadlo.</Spanish>
+        <Russian>Забудь...</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_REJECT_6</Tag>
@@ -1012,6 +1137,7 @@
         <German>Auf keinen Fall.</German>
         <Italian>È del tutto inaccettabile.</Italian>
         <Spanish>¡Esto es completamente inaceptable!</Spanish>
+        <Russian>Ни за что.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_REJECT_7</Tag>
@@ -1020,6 +1146,7 @@
         <German>Was glaubt Ihr eigentlich, wen Ihr hier vor Euch habt, [CT_NAME]?</German>
         <Italian>Con chi credi di avere a che fare, [CT_NAME]?</Italian>
         <Spanish>¿Con quién creéis que estáis tratando, [CT_NAME]?</Spanish>
+        <Russian>Как ты думаешь, с кем ты имеешь дело, [CT_NAME]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_REJECT_8</Tag>
@@ -1028,6 +1155,7 @@
         <German>Euer Angebot ist beleidigend!</German>
         <Italian>La tua offerta è un insulto nei confronti [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:3][COLOR_REVERT].</Italian>
         <Spanish>Vuestra propuesta es un insulto a [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT].</Spanish>
+        <Russian>Ваше предложение оскорбительно!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_REJECT_9</Tag>
@@ -1036,6 +1164,7 @@
         <German>Euer Angebot beleidigt mich.</German>
         <Italian>Sono solo chiacchiere senza senso.</Italian>
         <Spanish>Esto no es hablar en serio.</Spanish>
+        <Russian>Я оскорблен вашим предложением.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_REJECT_10</Tag>
@@ -1044,6 +1173,7 @@
         <German>Ihr verschwendet meine Zeit! Macht ein anständiges Angebot oder verschwindet!</German>
         <Italian>Smettila di farmi perdere tempo. Fa' un'offerta importante o sparisci.</Italian>
         <Spanish>Dejad de hacernos perder el tiempo. Haced una propuesta razonable o largaos.</Spanish>
+        <Russian>Хватит тратить мое время. Сделайте разумное предложение или уходите.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_GLAD_1</Tag>
@@ -1052,6 +1182,7 @@
         <German>Wir freuen uns, dass Ihr unser Angebot annehmt.</German>
         <Italian>Siamo felici che tu abbia accettato la nostra offerta.</Italian>
         <Spanish>Nos satisface que hayáis aceptado nuestra oferta.</Spanish>
+        <Russian>Мы рады, что вы приняли наше предложение.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_GLAD_2</Tag>
@@ -1060,6 +1191,7 @@
         <German>Sehr schön.</German>
         <Italian>È meraviglioso che tu abbia accettato.</Italian>
         <Spanish>Es fantástico que hayáis aceptado.</Spanish>
+        <Russian>Очень хорошо.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_GLAD_3</Tag>
@@ -1068,6 +1200,7 @@
         <German>Ich bin froh, dass Ihr das Angebot als annehmbar erachtet, [CT_NAME]!</German>
         <Italian>Sono felice che reputi l'offerta accettabile, [CT_NAME]</Italian>
         <Spanish>Nos alegramos de que nuestra propuesta os parezca aceptable, [CT_NAME]</Spanish>
+        <Russian>Я рад, что вы нашли предложение приемлемым, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_GLAD_4</Tag>
@@ -1076,6 +1209,7 @@
         <German>Gut. So sei es dann.</German>
         <Italian>Meraviglioso!</Italian>
         <Spanish>¡Maravilloso!</Spanish>
+        <Russian>Хороший. Так и быть.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_GLAD_5</Tag>
@@ -1084,6 +1218,7 @@
         <German>Eine gute Entscheidung, [CT_NAME]!</German>
         <Italian>Una scelta saggia, [CT_NAME].</Italian>
         <Spanish>Habéis tomado la decisión correcta, [CT_NAME].</Spanish>
+        <Russian>Вы сделали мудрый выбор, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_GLAD_6</Tag>
@@ -1092,6 +1227,7 @@
         <German>Sehr gut.</German>
         <Italian>Stupendo! Festeggiamo!</Italian>
         <Spanish>¡Fantástico! ¡Vamos a celebrarlo!</Spanish>
+        <Russian>Здорово!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_GLAD_7</Tag>
@@ -1100,6 +1236,7 @@
         <German>Es ist mir ein Vergnügen, Geschäfte mit Euch zu machen!</German>
         <Italian>È un piacere fare affari con te.</Italian>
         <Spanish>Es un placer hacer negocios con vosotros.</Spanish>
+        <Russian>С вами приятно иметь дело.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_GLAD_8</Tag>
@@ -1108,6 +1245,7 @@
         <German>Ausgezeichnet!</German>
         <Italian>Eccellente!</Italian>
         <Spanish>¡Magnífico!</Spanish>
+        <Russian>Отлично!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_GLAD_9</Tag>
@@ -1116,6 +1254,7 @@
         <German>Ich freue mich, dass wir uns einigen konnten.</German>
         <Italian>È un bene che abbiamo trovato un accordo.</Italian>
         <Spanish>Nos alegra que hayamos podido llegar a un acuerdo.</Spanish>
+        <Russian>Я рад, что мы смогли прийти к соглашению.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_GLAD_10</Tag>
@@ -1124,6 +1263,7 @@
         <German>Fein.</German>
         <Italian>Cha-CHING!</Italian>
         <Spanish>¡Cha-CHING!</Spanish>
+        <Russian>Хорошо.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_GLAD_1</Tag>
@@ -1132,6 +1272,7 @@
         <German>Wir sind uns einig.</German>
         <Italian>Va bene, siamo d'accordo.</Italian>
         <Spanish>Entonces de acuerdo. Aceptamos.</Spanish>
+        <Russian>Мы согласны.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_GLAD_2</Tag>
@@ -1140,6 +1281,7 @@
         <German>Jetzt werdet Ihr langsam vernünftig, [CT_NAME]. Vielleicht besteht ja doch noch Hoffnung für Euch.</German>
         <Italian>Stai cominciando a mostrare un po' di buon senso, [CT_NAME]. Forse c'è ancora speranza per te.</Italian>
         <Spanish>Empezáis a mostrar algo de juicio, [CT_NAME]. Quizás aún tengáis alguna esperanza.</Spanish>
+        <Russian>Кажется, рассудок еще не покинул тебя, [CT_NAME]. Возможно, для ты не безнадёжен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_GLAD_3</Tag>
@@ -1148,6 +1290,7 @@
         <German>Erledigt.</German>
         <Italian>Fatto.</Italian>
         <Spanish>Trato hecho.</Spanish>
+        <Russian>По рукам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_GLAD_4</Tag>
@@ -1156,6 +1299,7 @@
         <German>Ausgezeichnet. Vielleicht seid Ihr ja doch nicht so dumm, wie Ihr ausseht.</German>
         <Italian>Eccellente. Forse non sei una persona stupida come sembra.</Italian>
         <Spanish>Excelente. Quizá no seáis tan idiota como parecéis.</Spanish>
+        <Russian>Отлично. Возможно, вы не так глупы, как кажетесь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_GLAD_5</Tag>
@@ -1164,6 +1308,7 @@
         <German>Das mächtige [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] Volk bedankt sich. Ihr dürft Euch nun entfernen.</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] ti ringraziano. Adesso puoi andare.</Italian>
         <Spanish>La poderosa tierra de [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] os da las gracias. Ya podéis marcharos.</Spanish>
+        <Russian>Могущественные [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] благодарят вас. Теперь можете идти..</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_GLAD_6</Tag>
@@ -1172,6 +1317,7 @@
         <German>Ich bedanke mich für Eure Einsicht.</German>
         <Italian>Grazie per la collaborazione.</Italian>
         <Spanish>Gracias por vuestra cooperación.</Spanish>
+        <Russian>Спасибо за ваше сотрудничество.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_GLAD_7</Tag>
@@ -1180,6 +1326,7 @@
         <German>Wir danken Euch.</German>
         <Italian>Ti ringraziamo.</Italian>
         <Spanish>Os lo agradecemos.</Spanish>
+        <Russian>Мы благодарим Вас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_GLAD_8</Tag>
@@ -1188,6 +1335,7 @@
         <German>Das wäre dann erst mal alles.</German>
         <Italian>È tutto per il momento.</Italian>
         <Spanish>Eso es todo de momento.</Spanish>
+        <Russian>На данный момент это все.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_GLAD_9</Tag>
@@ -1196,6 +1344,7 @@
         <German>Sehr schön. Das wäre erledigt.</German>
         <Italian>Bene, tutto OK.</Italian>
         <Spanish>Muy bien. Trato hecho.</Spanish>
+        <Russian>Отлично, мы селали это.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_GLAD_10</Tag>
@@ -1204,6 +1353,7 @@
         <German>Danke. Das ist eine nette Geste.</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] ringrazia te e la tua piccola e insignificante colonia.</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] os lo agradece a vos y a vuestra insignificante colonia.</Spanish>
+        <Russian>Спасибо. Это приятный жест.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_SORRY_1</Tag>
@@ -1212,6 +1362,7 @@
         <German>Es tut uns Leid, dass Ihr unser Angebot nicht annehmbar findet.</German>
         <Italian>Ci spiace che non reputi la nostra offerta degna di considerazione.</Italian>
         <Spanish>Sentimos que no consideréis razonable nuestra propuesta.</Spanish>
+        <Russian>Мы сожалеем, что вы не считаете наше предложение разумным.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_SORRY_2</Tag>
@@ -1220,6 +1371,7 @@
         <German>Schade. Habt Ihr etwas anderes im Sinn?</German>
         <Italian>Peccato. Pensavi a qualcosa di diverso?</Italian>
         <Spanish>Qué pena. ¿Tenéis en mente otra cosa?</Spanish>
+        <Russian>Очень жаль. Вы имеете в виду что-то другое?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_SORRY_3</Tag>
@@ -1228,6 +1380,7 @@
         <German>Dann lasst doch mal Euer Angebot hören!</German>
         <Italian>Allora, sentiamo la tua offerta.</Italian>
         <Spanish>Entonces, escuchemos vuestra propuesta.</Spanish>
+        <Russian>Тогда давай послушаем твое предложение.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_SORRY_4</Tag>
@@ -1236,6 +1389,7 @@
         <German>Na schön. Warum legt Ihr dann nicht selbst ein Angebot auf den Tisch?</German>
         <Italian>Bene, perché non metti le carte in tavola?</Italian>
         <Spanish>De acuerdo. ¿Por qué no ponéis algo sobre la mesa?</Spanish>
+        <Russian>Хорошо. Почему бы вам самим не сделать предложение?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_SORRY_5</Tag>
@@ -1244,6 +1398,7 @@
         <German>Nun, wollt Ihr vielleicht ein Gegenangebot machen?</German>
         <Italian>Bene, vuoi fare una controfferta?</Italian>
         <Spanish>¿Queréis hacer otra propuesta?</Spanish>
+        <Russian>Ну что, хочешь сделать встречное предложение?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_SORRY_6</Tag>
@@ -1252,6 +1407,7 @@
         <German>In Ordnung. Dann lasst mal Euer Gegenangebot hören.</German>
         <Italian>Bene, sentiamo la tua controfferta.</Italian>
         <Spanish>Muy bien, oigamos vuestra propuesta.</Spanish>
+        <Russian>Хорошо: давайте выслушаем ваше встречное предложение.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_SORRY_7</Tag>
@@ -1260,6 +1416,7 @@
         <German>Das ist bedauerlich.</German>
         <Italian>È deplorevole.</Italian>
         <Spanish>Es una pena.</Spanish>
+        <Russian>Прискорбно.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_SORRY_8</Tag>
@@ -1268,6 +1425,7 @@
         <German>Das ist schade.</German>
         <Italian>Che sfortuna.</Italian>
         <Spanish>Es una lástima.</Spanish>
+        <Russian>Это достойно сожаления.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_SORRY_9</Tag>
@@ -1276,6 +1434,7 @@
         <German>Was soll's. Vielleicht klappt's ja beim nächsten Mal.</German>
         <Italian>Oh, beh, magari la prossima volta.</Italian>
         <Spanish>Oh, vaya. Quizá la próxima vez.</Spanish>
+        <Russian>Ну что ж. Возможно, в следующий раз.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_SORRY_10</Tag>
@@ -1284,6 +1443,7 @@
         <German>Nun, vielleicht wollt Ihr ja selbst einen Vorschlag machen.</German>
         <Italian>Forse ti va di suggerire qualcosa, allora.</Italian>
         <Spanish>Bueno, quizá queráis sugerirnos algo...</Spanish>
+        <Russian>Что ж, тогда, возможно, вы захотите что-нибудь предложить.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_SORRY_1</Tag>
@@ -1292,6 +1452,7 @@
         <German>Nun, dann schlagt doch selbst etwas vor!</German>
         <Italian>Bene, allora sentiamo la tua proposta!</Italian>
         <Spanish>Bueno, ¡entonces sugerid algo!</Spanish>
+        <Russian>В таком случае предложите что-нибудь сами!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_SORRY_2</Tag>
@@ -1300,6 +1461,7 @@
         <German>Ihr seid eigensinnig! Lasst Euren Vorschlag hören.</German>
         <Italian>Un classico. Allora sentiamo la tua brillante idea.</Italian>
         <Spanish>Qué típico. Oigamos vuestra brillante idea, pues.</Spanish>
+        <Russian>А вы упрямы! Давайте послушаем ваше предложение.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_SORRY_3</Tag>
@@ -1308,6 +1470,7 @@
         <German>Ihr geht mir auf die Nerven, [CT_NAME]!</German>
         <Italian>Mi stai annoiando, [CT_NAME].</Italian>
         <Spanish>Nos irritáis, [CT_NAME].</Spanish>
+        <Russian>Ты меня раздражаешь, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_SORRY_4</Tag>
@@ -1316,6 +1479,7 @@
         <German>Ihr seid unglaublich stur, [CT_NAME]!</German>
         <Italian>Sei una persona incredibilmente cocciuta, [CT_NAME].</Italian>
         <Spanish>Vuestra tozudez es increíble, [CT_NAME].</Spanish>
+        <Russian>Вы невероятно упрямы, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_SORRY_5</Tag>
@@ -1324,6 +1488,7 @@
         <German>Es ist bemerkenswert kurzsichtig von Euch, [CT_NAME], uns zu brüskieren.</German>
         <Italian>Non è una mossa intelligente da fare, [CT_NAME], trattare in questo modo chi ti è superiore.</Italian>
         <Spanish>[CT_NAME], hay que ser muy corto de miras para tratar de este modo a vuestros superiores.</Spanish>
+        <Russian>Вы удивительно недальновидны, [CT_NAME], раз так поступаете с теми, кто выше вас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_SORRY_6</Tag>
@@ -1332,6 +1497,7 @@
         <German>Dann habt Ihr wohl eine bessere Idee, wie?</German>
         <Italian>Presumo che tu abbia un'idea migliore, quindi...</Italian>
         <Spanish>¿Hemos de suponer que tenéis algo mejor en mente?</Spanish>
+        <Russian>Я полагаю, вы имеете в виду что-то получше?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_SORRY_7</Tag>
@@ -1340,6 +1506,7 @@
         <German>Ihr verschwendet meine Zeit! Macht einen Gegenvorschlag oder verschwindet!</German>
         <Italian>E allora piantala di farmi perdere tempo, fai una controfferta o sparisci.</Italian>
         <Spanish>Entonces, dejad de hacernos perder el tiempo. Haced otra propuesta o largaos.</Spanish>
+        <Russian>Хватит тратить мое время. Либо делайте встречное предложение, либо уходите.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_SORRY_8</Tag>
@@ -1348,6 +1515,7 @@
         <German>Dann lasst mal Euren Vorschlag hören.</German>
         <Italian>Sentiamo la tua idea, allora.</Italian>
         <Spanish>Oigamos vuestra idea, entonces.</Spanish>
+        <Russian>Что же, давайте послушаем вашу идею.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_SORRY_9</Tag>
@@ -1356,6 +1524,7 @@
         <German>Dann macht doch einen Gegenvorschlag!</German>
         <Italian>Allora fai una proposta.</Italian>
         <Spanish>¡Entonces poned algo sobre la mesa!</Spanish>
+        <Russian>Тогда сделайте встречное предложение!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_SORRY_10</Tag>
@@ -1364,6 +1533,7 @@
         <German>Habt Ihr vielleicht einen besseren Vorschlag?</German>
         <Italian>Per caso [CT_CIV_SHORT:2] vuole fare una controfferta?</Italian>
         <Spanish>¿La insignificante tierra de [CT_CIV_SHORT] desea hacer otra propuesta?</Spanish>
+        <Russian>У вас есть предложение получше?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_TRY_THIS_DEAL_1</Tag>
@@ -1372,6 +1542,7 @@
         <German>Wie hört sich das für Euch an?</German>
         <Italian>Che ne pensi?</Italian>
         <Spanish>¿Qué os parece este trato?</Spanish>
+        <Russian>Как вам такое предложение?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_TRY_THIS_DEAL_2</Tag>
@@ -1380,6 +1551,7 @@
         <German>Was haltet Ihr hiervon, [CT_NAME]?</German>
         <Italian>Cosa pensi di questo affare, [CT_NAME]?</Italian>
         <Spanish>¿Qué pensáis de este trato, [CT_NAME]?</Spanish>
+        <Russian>Что вы думаете об этой сделке, [CT_NAME]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_TRY_THIS_DEAL_3</Tag>
@@ -1388,6 +1560,7 @@
         <German>Könnte Euch dieser Vorschlag reizen?</German>
         <Italian>Trovi interessante questa offerta?</Italian>
         <Spanish>¿Encontráis esta oferta tentadora?</Spanish>
+        <Russian>Вы не находите это предложение заманчивым?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_TRY_THIS_DEAL_4</Tag>
@@ -1396,6 +1569,7 @@
         <German>Hier ist mein Angebot.</German>
         <Italian>Ecco la mia offerta.</Italian>
         <Spanish>Ésta es nuestra propuesta.</Spanish>
+        <Russian>Вот мое предложение.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_TRY_THIS_DEAL_5</Tag>
@@ -1404,6 +1578,7 @@
         <German>Ich bin sicher, auch Ihr werdet diesen Handel fair finden ...</German>
         <Italian>Siamo certi che considererete le condizioni vantaggiose...</Italian>
         <Spanish>No nos negaréis que el trato es justo...</Spanish>
+        <Russian>Я уверен, вы согласитесь, что эта честная сделка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_TRY_THIS_DEAL_6</Tag>
@@ -1412,6 +1587,7 @@
         <German>Und das ist mein letztes Wort.</German>
         <Italian>E questa è la mia ultima offerta.</Italian>
         <Spanish>Y ésta es nuestra última oferta.</Spanish>
+        <Russian>И это мое последнее предложение.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_NO_DEAL_1</Tag>
@@ -1420,6 +1596,7 @@
         <German>Ich glaube nicht, dass wir uns einig werden.</German>
         <Italian>Non vedo un accordo possibile.</Italian>
         <Spanish>Nos parece imposible llegar a un acuerdo.</Spanish>
+        <Russian>Я не понимаю, как это возможно.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_NO_DEAL_2</Tag>
@@ -1428,6 +1605,7 @@
         <German>So kommen wir nicht weiter! Ich glaube, das wird nichts mehr!</German>
         <Italian>Queste sono solo chiacchiere da bar. Non credo si possa fare.</Italian>
         <Spanish>Esto no es hablar en serio. No creemos que sea posible.</Spanish>
+        <Russian>Бессмысленный разговор. Я не думаю, что это возможно.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_NO_DEAL_3</Tag>
@@ -1436,6 +1614,7 @@
         <German>Es tut mir ja schrecklich leid, aber das ist vollkommen ausgeschlossen!</German>
         <Italian>Sono spiacente di comunicarti che non è un accordo possibile.</Italian>
         <Spanish>Sentimos decir que un trato así es imposible.</Spanish>
+        <Russian>Мне очень жаль, но это совершенно исключено!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_NO_DEAL_4</Tag>
@@ -1444,6 +1623,7 @@
         <German>Das ist nicht drin, [CT_NAME]!</German>
         <Italian>Non si può fare, [CT_NAME].</Italian>
         <Spanish>Eso es imposible, [CT_NAME].</Spanish>
+        <Russian>Это невозможно, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_NO_DEAL_5</Tag>
@@ -1452,6 +1632,7 @@
         <German>Ich wüsste nicht, warum wir uns auf einen solchen Handel einlassen sollten.</German>
         <Italian>Non vedo come potremmo fare uno scambio del genere.</Italian>
         <Spanish>No alcanzamos a ver cómo podríamos acordar un trato así.</Spanish>
+        <Russian>Я не понимаю, почему мы должны ввязываться в такую сделку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_NO_DEAL_6</Tag>
@@ -1460,6 +1641,7 @@
         <German>Darauf können wir uns nicht einlassen.</German>
         <Italian>Non possiamo farlo.</Italian>
         <Spanish>No podemos hacerlo.</Spanish>
+        <Russian>Мы не можем этого сделать.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_NO_DEAL_1</Tag>
@@ -1468,6 +1650,7 @@
         <German>Das ist ausgeschlossen!</German>
         <Italian>È impossibile.</Italian>
         <Spanish>Es imposible.</Spanish>
+        <Russian>Это невозможно.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_NO_DEAL_2</Tag>
@@ -1476,6 +1659,7 @@
         <German>Macht Euch doch nicht lächerlich! Das ist ganz und gar unmöglich!</German>
         <Italian>Non diciamo stupidaggini. È una offerta impossibile da accettare.</Italian>
         <Spanish>No seáis idiota. Esto es imposible.</Spanish>
+        <Russian>Не будь глупцом. Это невозможно сделать.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_NO_DEAL_3</Tag>
@@ -1484,6 +1668,7 @@
         <German>Ihr solltet meine Zeit nicht mit solchen Hirngespinsten verschwenden!</German>
         <Italian>Non farmi perdere tempo con queste assurdità!</Italian>
         <Spanish>No nos hagáis perder el tiempo con cosas imposibles.</Spanish>
+        <Russian>Не тратьте мое время на глупости!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_NO_DEAL_4</Tag>
@@ -1492,6 +1677,7 @@
         <German>Was soll denn das werden? Ganz und gar ausgeschlossen!</German>
         <Italian>Cosa diamine stai dicendo? È una cosa impossibile.</Italian>
         <Spanish>¿De qué estáis hablando? Esto no es posible.</Spanish>
+        <Russian>О чем ты говоришь? Это невозможно.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_NO_DEAL_5</Tag>
@@ -1500,6 +1686,7 @@
         <German>Seid Ihr verrückt geworden? Das soll wohl ein Witz sein!</German>
         <Italian>Stai scherzando vero? Impossibile.</Italian>
         <Spanish>¿Bromeáis? ¡Esto no es posible!</Spanish>
+        <Russian>Вы шутите? Это невозможно!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_NO_DEAL_6</Tag>
@@ -1508,6 +1695,7 @@
         <German>Ein solcher Handel kommt für uns absolut nicht in Frage!</German>
         <Italian>Non credo che sia un accordo fattibile.</Italian>
         <Spanish>Un trato así no es posible de ningún modo.</Spanish>
+        <Russian>Подобная сделка невозможна.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_OFFER_PEACE_1</Tag>
@@ -1516,6 +1704,7 @@
         <German>Vielleicht ist es an der Zeit, all dem Blutvergießen ein Ende zu machen?</German>
         <Italian>È giunta forse l'ora di mettere fine a questi spargimenti di sangue?</Italian>
         <Spanish>¿No es hora de que termine este derramamiento de sangre?</Spanish>
+        <Russian>Может быть, пора положить конец всему этому кровопролитию?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_OFFER_DEAL_1</Tag>
@@ -1524,6 +1713,7 @@
         <German>Seid gegrüßt, [CT_NAME]! Was haltet Ihr von diesem Vorschlag?</German>
         <Italian>Salve, [CT_NAME]! Che ne pensi di questo scambio?</Italian>
         <Spanish>¡Saludos, [CT_NAME]! ¿Qué os parece este trato?</Spanish>
+        <Russian>Приветствую, [CT_NAME]! Что вы думаете об этой сделке?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_OFFER_DEAL_2</Tag>
@@ -1532,6 +1722,7 @@
         <German>Das friedliebende Volk von [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] möchte einen fairen Handel mit [CT_CIV_SHORT] schließen. Was sagt Ihr dazu?</German>
         <Italian>La pacifica popolazione [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:4][COLOR_REVERT] vuole commerciare equamente con [CT_CIV_SHORT:2]. Che ne pensi?</Italian>
         <Spanish>El pacífico pueblo de [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] quiere hacer un trato justo con [CT_CIV_SHORT]. ¿Qué os parece?</Spanish>
+        <Russian>Миролюбивые жители [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] стремятся к справедливой торговле с [CT_CIV_SHORT]. Как насчет этого?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_OFFER_DEAL_3</Tag>
@@ -1540,6 +1731,7 @@
         <German>Wie hört sich das für Euch an, [CT_NAME]?</German>
         <Italian>Ti suona bene, [CT_NAME]?</Italian>
         <Spanish>¿Qué os parece esto, [CT_NAME]?</Spanish>
+        <Russian>Как вам такое предложение, [CT_NAME]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_OFFER_DEAL_4</Tag>
@@ -1548,6 +1740,7 @@
         <German>Was haltet Ihr von diesem Vorschlag, [CT_NAME]?</German>
         <Italian>Cosa pensi di questo affare, [CT_NAME]?</Italian>
         <Spanish>¿Qué pensáis de este trato, [CT_NAME]?</Spanish>
+        <Russian>Что вы думаете об этой сделке, [CT_NAME]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_OFFER_DEAL_5</Tag>
@@ -1556,6 +1749,7 @@
         <German>Was haltet Ihr von diesem Vorschlag, [CT_NAME]?</German>
         <Italian>Cosa ne pensi di questa proposta, [CT_NAME]?</Italian>
         <Spanish>¿Qué pensáis de esta propuesta, [CT_NAME]?</Spanish>
+        <Russian>Что вы думаете об этом предложении, [CT_NAME]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_OFFER_DEAL_6</Tag>
@@ -1564,6 +1758,7 @@
         <German>Lasst uns einen Handel schließen!</German>
         <Italian>Facciamo un affare!</Italian>
         <Spanish>¡Hagamos un trato!</Spanish>
+        <Russian>Давай заключим эту сделку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_OFFER_DEAL_1</Tag>
@@ -1572,6 +1767,7 @@
         <German>Ich mache Euch ein Angebot, das Ihr nicht ablehnen könnt, [CT_NAME].</German>
         <Italian>[CT_NAME], ti sto facendo un'offerta che non puoi rifiutare.</Italian>
         <Spanish>[CT_NAME], os voy a hacer una oferta que no podréis rechazar.</Spanish>
+        <Russian>[CT_NAME], я делаю тебе предложение, от которого ты не сможешь отказаться.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_OFFER_DEAL_2</Tag>
@@ -1580,6 +1776,7 @@
         <German>Beweist zur Abwechslung mal ein bisschen Verstand, [CT_NAME]. Akzeptiert diesen Handel!</German>
         <Italian>Dammi un dimostrazione della tua intelligenza, [CT_NAME]. Accetta queste condizioni!</Italian>
         <Spanish>Mostrad algo de inteligencia para variar, [CT_NAME]. ¡Aceptad este trato!</Spanish>
+        <Russian>йцукен</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_OFFER_DEAL_3</Tag>
@@ -1588,6 +1785,7 @@
         <German>Wir bieten Euch diesen Handel an. Ich würde vorschlagen, Ihr schlagt ein!</German>
         <Italian>L'[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] ti offre questa possibilità di commercio. Ti suggerisco di accettarla!</Italian>
         <Spanish>El [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] os ofrece este intercambio. ¡Os sugiero que lo aceptéis!</Spanish>
+        <Russian>Подумайте, [CT_NAME], и примите это предложение!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_OFFER_DEAL_4</Tag>
@@ -1596,6 +1794,7 @@
         <German>Unser Angebot steht. Schlagt ein oder lasst es bleiben!</German>
         <Italian>Ecco la nostra offerta: prendere o lasciare!</Italian>
         <Spanish>Ésta es nuestra oferta. ¡Lo tomáis o lo dejáis!</Spanish>
+        <Russian>Вот наше предложение. Бери или уходи!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_OFFER_DEAL_5</Tag>
@@ -1604,6 +1803,7 @@
         <German>Kann ich helfen? Vielleicht mit diesem Handel?</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] offre questo accordo alla tua piccola e insignificante colonia.</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] ofrece el siguiente trato a vuestra desagradable e ínfima colonia.</Spanish>
+        <Russian>Вот что [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] предлагают вашей незначительной колонии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_OFFER_DEAL_6</Tag>
@@ -1612,6 +1812,7 @@
         <German>Das ist unser Vorschlag.</German>
         <Italian>Ecco l'affare.</Italian>
         <Spanish>Éste es el trato.</Spanish>
+        <Russian>Это наше предложение.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_CANCEL_DEAL_1</Tag>
@@ -1620,6 +1821,7 @@
         <German>Ich fürchte, diese Vereinbarung funktioniert für uns nicht mehr.</German>
         <Italian>Temo che questo accordo non ci vada più bene.</Italian>
         <Spanish>Nos tememos que este trato ya no nos conviene.</Spanish>
+        <Russian>Боюсь, эта сделка нас больше не интересует.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_CANCEL_DEAL_2</Tag>
@@ -1628,6 +1830,7 @@
         <German>Tut mir Leid, [CT_NAME], aber diese Vereinbarung ist für uns nicht mehr interessant.</German>
         <Italian>Mi spiace, [CT_NAME], ma questo accordo non ci sta più bene.</Italian>
         <Spanish>Lo sentimos, [CT_NAME], pero este trato ya no nos es útil.</Spanish>
+        <Russian>Извините, [CT_NAME], но эта сделка больше не будет для нас выгодна.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_CANCEL_DEAL_3</Tag>
@@ -1636,6 +1839,7 @@
         <German>Nichts ist von Dauer. Und das gilt auch für diese Vereinbarung.</German>
         <Italian>Sfortunatamente, le cose belle prima o poi finiscono. È il caso del nostro accordo.</Italian>
         <Spanish>Por desgracia, todo lo bueno se acaba. Incluyendo este trato.</Spanish>
+        <Russian>Все хорошее когда-нибудь заканчивается, к сожалению. Включая эту сделку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_CANCEL_DEAL_4</Tag>
@@ -1644,6 +1848,7 @@
         <German>Die [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] können sich diese Vereinbarung nicht mehr leisten, [CT_NAME].</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:1][COLOR_REVERT] non può più permettersi questo accordo, [CT_NAME].</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] ya no se puede permitir este trato, [CT_NAME].</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] больше не могут позволить себе эту сделку, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_CANCEL_DEAL_5</Tag>
@@ -1652,6 +1857,7 @@
         <German>Es ist an der Zeit, diese Vereinbarung aufzukündigen, mein Freund.</German>
         <Italian>È ora di concludere questo accordo.</Italian>
         <Spanish>Es hora de dar por terminado este trato, camarada.</Spanish>
+        <Russian>Пришло время положить конец этой сделке, друг.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_CANCEL_DEAL_6</Tag>
@@ -1660,6 +1866,7 @@
         <German>Wenn es Ihnen nichts ausmacht, würde [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] diese Vereinbarung gerne aufkündigen.</German>
         <Italian>Se non ti dispiace, [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:2][COLOR_REVERT] gradirebbe annullare questo accordo.</Italian>
         <Spanish>Si no os importa, a [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] le gustaría cancelar este trato.</Spanish>
+        <Russian>Если вы не возражаете, [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] хотят отменить эту сделку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_CANCEL_DEAL_1</Tag>
@@ -1668,6 +1875,7 @@
         <German>Das [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Volk ist an dieser Vereinbarung nicht mehr interessiert, [CT_NAME].</German>
         <Italian>La popolazione [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:2][COLOR_REVERT] non è più interessata a questo affare, [CT_NAME].</Italian>
         <Spanish>Al pueblo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT] ya no le interesa este trato, [CT_NAME].</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] больше не заинтересованы в этой сделке, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_CANCEL_DEAL_2</Tag>
@@ -1676,6 +1884,7 @@
         <German>Diese Vereinbarung hat sich erledigt!</German>
         <Italian>L'accordo è terminato.</Italian>
         <Spanish>Este trato se ha acabado.</Spanish>
+        <Russian>Эта сделка анулирована.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_CANCEL_DEAL_3</Tag>
@@ -1684,6 +1893,7 @@
         <German>Wir kündigen diese Vereinbarung auf, [CT_NAME].</German>
         <Italian>Abbiamo intenzione di interrompere questo accordo, [CT_NAME].</Italian>
         <Spanish>Vamos a poner fin a este trato, [CT_NAME].</Spanish>
+        <Russian>Мы прекращаем эту сделку, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_CANCEL_DEAL_4</Tag>
@@ -1692,6 +1902,7 @@
         <German>Wir haben von dieser Vereinbarung genug. Und von Euch, ehrlich gesagt, auch!</German>
         <Italian>Siamo stanchi di questo accordo. E anche di te, onestamente.</Italian>
         <Spanish>Estamos hartos de este trato. Y de vosotros también, francamente.</Spanish>
+        <Russian>Мы устали от этой сделки. И от тебя тоже, честно говоря.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_CANCEL_DEAL_5</Tag>
@@ -1700,6 +1911,7 @@
         <German>Wir kündigen diese Vereinbarung auf, [CT_NAME], und zwar mit sofortiger Wirkung.</German>
         <Italian>Abbiamo intenzione di concludere questo accordo con effetto immediato, [CT_NAME].</Italian>
         <Spanish>Damos por finalizado este trato, [CT_NAME], desde ahora mismo.</Spanish>
+        <Russian>Мы немедленно расторгаем эту сделку, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_CANCEL_DEAL_6</Tag>
@@ -1708,6 +1920,7 @@
         <German>Diese Vereinbarung ist für uns nicht mehr zeitgemäß, deshalb kündigen wir sie hiermit auf.</German>
         <Italian>Questo accordo non ci soddisfa più. Annullato.</Italian>
         <Spanish>Este trato ya no se ajusta a nuestras necesidades. Queda cancelado.</Spanish>
+        <Russian>Эта сделка нам больше не подходит. Она отменена.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_1</Tag>
@@ -1716,6 +1929,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] dankt Euch im Namen des dankbaren [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Volkes!</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] ti ringrazia da parte del popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT]!</Italian>
         <Spanish>¡[COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] os da las gracias en nombre del agradecido pueblo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT]!</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] благодарит вас от имени признательных [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] людей!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_2</Tag>
@@ -1724,6 +1938,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] erkennt Eure Freundschaft an. Danke.</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:1][COLOR_REVERT] riconosce la tua amicizia. Grazie.</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] se congratula de vuestra amistad. Gracias.</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] признательны за ваше дружеское расположение. Спасибо.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_3</Tag>
@@ -1732,6 +1947,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] bedankt sich herzlich für Eure Freundschaft, [CT_NAME].</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:1][COLOR_REVERT] riconosce gentilmente la tua amicizia, [CT_NAME].</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] agradece amablemente vuestra amistad, [CT_NAME].</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] благодарят вас за дружбу, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_4</Tag>
@@ -1740,6 +1956,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] grüßt seinen Freund, die kleine Nation [CT_CIV_SHORT].</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:1][COLOR_REVERT] saluta la piccola nazione [CT_CIV_SHORT:4].</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] saluda a su amiga, la pequeña nación de [CT_CIV_SHORT].</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] приветствуют своего друга, маленькую нацию [CT_CIV_SHORT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_5</Tag>
@@ -1748,6 +1965,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] grüßt Euch, [CT_NAME]!</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:1][COLOR_REVERT] ti saluta, [CT_NAME]!</Italian>
         <Spanish>¡[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] os saluda, [CT_NAME]!</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] приветствуют вас, [CT_NAME]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_6</Tag>
@@ -1756,6 +1974,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] dankt Euch, [CT_NAME].</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:1][COLOR_REVERT] ti ringrazia, [CT_NAME].</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] os da las gracias, [CT_NAME].</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] благодарят вас, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_7</Tag>
@@ -1764,6 +1983,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] dankt Euch, fairer und großzügiger [CT_NAME]!</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:1][COLOR_REVERT] ringrazia la generosità e l'onestà di [CT_NAME]!</Italian>
         <Spanish>¡[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] os da las gracias, [CT_NAME], prodigio de buen hacer y generosidad!</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] благодарят вас, честный и щедрый [CT_NAME]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_8</Tag>
@@ -1772,6 +1992,7 @@
         <German>[CT_NAME], mein Volk dankt Euch.</German>
         <Italian>[CT_NAME], il mio popolo ti ringrazia.</Italian>
         <Spanish>[CT_NAME], mi pueblo os da las gracias.</Spanish>
+        <Russian>[CT_NAME], мои люди благодарят вас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_9</Tag>
@@ -1780,6 +2001,7 @@
         <German>Ausgezeichnet! Ich bin sehr erfreut. Setzen wir uns doch und trinken eine Tasse Tee, einverstanden?</German>
         <Italian>Eccellente, siamo soddisfatti! Sediamoci e beviamoci una tazza di tè, ti va?</Italian>
         <Spanish>¡Magnífico! Nos complace sobremanera. Sentémonos a tomar una taza de té, ¿de acuerdo?</Spanish>
+        <Russian>Отличный! Я очень доволен. Давай сядем и выпьем вкусного чая?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_10</Tag>
@@ -1788,6 +2010,7 @@
         <German>Eine gute Entscheidung. Wir müssen eine engere Bindung aufbauen, ansonsten...</German>
         <Italian>Una decisione saggia, dobbiamo rinforzare i nostri legami.</Italian>
         <Spanish>Buena decisión. Debemos estrechar lazos... ¡o lo que sea!</Spanish>
+        <Russian>Хорошее решение. Нам нужно налаживать отношения!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_11</Tag>
@@ -1796,6 +2019,7 @@
         <German>Dankbar neige ich mein Haupt.</German>
         <Italian>Io [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], signore del poderoso [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT], offro i miei più sinceri ringraziamenti al mio caro amico, [CT_NAME].</Italian>
         <Spanish>Nos, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], gobernante del poderoso [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT], ofrecemos nuestro más sincero agradecimiento a [CT_NAME], nuestro gran amigo.</Spanish>
+        <Russian>Я, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], безраздельно властвую над могущественной [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT], настоящим хочу выразить искреннюю благодарность [CT_NAME] за дружбу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_12</Tag>
@@ -1804,6 +2028,7 @@
         <German>Ich freue mich, dass wir uns einigen konnten, [CT_NAME].</German>
         <Italian>Siamo felici di aver concluso questa trattativa amichevolmente, [CT_NAME].</Italian>
         <Spanish>Nos alegramos de que este acuerdo haya concluido amistosamente, [CT_NAME].</Spanish>
+        <Russian>Я рад, что мы заключили это соглашение полюбовно, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_13</Tag>
@@ -1812,6 +2037,7 @@
         <German>Ich bin so froh, dass sich unsere beiden Nationen über solche kleinlichen Rivalitäten erheben können! Wir werden ein Beispiel setzen, dem die ganze Welt folgen wird!</German>
         <Italian>Sono così felice che le nostre due nazioni possano superare delle rivalità così insignificanti! Saremo un esempio per il futuro!</Italian>
         <Spanish>¡Nos alegramos mucho de que nuestras dos naciones puedan sobreponerse a rivalidades insignificantes! ¡Que esto sirva de ejemplo para todo el mundo!</Spanish>
+        <Russian>Я так счастлив, что наши две нации могут подняться выше такого мелкого соперничества! Мы покажем пример, которому будет следовать весь мир!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_14</Tag>
@@ -1820,6 +2046,7 @@
         <German>Ich bin SO froh, dass wir eine faire Einigung erzielen konnten, [CT_NAME].</German>
         <Italian>Siamo DECISAMENTE soddisfatti di aver raggiunto un accordo equo, [CT_NAME]!</Italian>
         <Spanish>¡Nos alegramos mucho de haber llegado a un acuerdo justo, [CT_NAME]!</Spanish>
+        <Russian>Я так рад, что мы смогли прийти к справедливому соглашению, [CT_NAME]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_15</Tag>
@@ -1828,6 +2055,7 @@
         <German>Ich weiß das zu schätzen, Freund [CT_NAME]. Seid Euch des Dankes des ganzen [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Volkes sicher!</German>
         <Italian>Lo apprezziamo moltissimo, [CT_NAME]. Ti ringrazio a nome del popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT]!</Italian>
         <Spanish>Apreciamos este gesto, camarada [CT_NAME]. ¡Gracias en nombre de toda la civilización [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:2][COLOR_REVERT]!</Spanish>
+        <Russian>Я ценю это, друг [CT_NAME]. Спасибо от всех [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_16</Tag>
@@ -1836,6 +2064,7 @@
         <German>Ich verneige mich vor Euch in Freundschaft, [CT_NAME]!</German>
         <Italian>Mi inchino davanti a te in nome della nostra amicizia, [CT_NAME]!</Italian>
         <Spanish>¡Nos inclinamos ante vos como muestra de nuestra amistad, [CT_NAME]!</Spanish>
+        <Russian>Я преклоняюсь перед тобой в знак дружбы, [CT_NAME]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_17</Tag>
@@ -1844,6 +2073,7 @@
         <German>Ich gratuliere Euch zu Eurem gesunden Menschenverstand, [CT_NAME].</German>
         <Italian>Mi congratulo per il tuo buon senso, [CT_NAME].</Italian>
         <Spanish>Os felicitamos por vuestro sentido común, [CT_NAME].</Spanish>
+        <Russian>Восхищаюсь вашим здравомыслием, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_18</Tag>
@@ -1852,6 +2082,7 @@
         <German>Ich danke Euch. Aber jetzt werdet Ihr doch sicher dringend woanders gebraucht ...</German>
         <Italian>Ti ringrazio. Immagino che avrai altri affari urgenti da sbrigare...</Italian>
         <Spanish>Os damos las gracias. Y ahora, seguro que tenéis asuntos más urgentes en otro lugar...</Spanish>
+        <Russian>Я благодарю тебя. Я уверен, что у вас есть неотложные дела в другом месте. Не смею задерживать...</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_20</Tag>
@@ -1860,6 +2091,7 @@
         <German>Ich, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Herrscher über viel zu viele Orte, um sie aufzuzählen, danke hiermit meinem guten Freund [CT_NAME]!</German>
         <Italian>Io, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], dominatore di troppi luoghi per menzionarli ora, ringrazio [CT_NAME]!</Italian>
         <Spanish>Nos, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], gobernante de demasiados lugares como para enumerarlos, por la presente damos las gracias a [CT_NAME].</Spanish>
+        <Russian>Я, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], правитель слишком многих мест, чтобы их упоминать, настоящим благодарю моего хорошего друга [CT_NAME]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_21</Tag>
@@ -1868,6 +2100,7 @@
         <German>Es war ein Vergnügen, mit Euch Geschäfte zu machen, [CT_NAME].</German>
         <Italian>È stato un piacere fare affari con te, [CT_NAME].</Italian>
         <Spanish>Ha sido un placer negociar con vos, [CT_NAME].</Spanish>
+        <Russian>Было приятно иметь с вами дело, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_22</Tag>
@@ -1876,6 +2109,7 @@
         <German>Es ist gut, dass wir als Gleichberechtigte zusammenkommen können, [CT_NAME].</German>
         <Italian>È un bene che possiamo trattare alla pari, [CT_NAME].</Italian>
         <Spanish>Nos alegramos de que podamos colaborar de igual a igual, [CT_NAME].</Spanish>
+        <Russian>Я ценю возможность общаться с вами на равных, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_23</Tag>
@@ -1884,6 +2118,7 @@
         <German>Wir haben gerne mit Ihnen, [CT_NAME], gesprochen. Seltsam, da Sie so weit unterlegen sind, aber Persönlichkeit geht einen langen Weg.</German>
         <Italian>Siamo contenti di aver parlato con te [CT_NAME]. Strano, siete culturalmente inferiori, ma il temperamento è grande.</Italian>
         <Spanish>Nos ha gustado hablar con vos, [CT_NAME]. Es raro, ya que sois muy inferior, pero la personalidad hace mucho.</Spanish>
+        <Russian>Нам было приятно поговорить с вами, [CT_NAME]. Хотя это и странно, учитывая твою неполноценность. Однако твой темперамент компенсирует многие недостатки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_24</Tag>
@@ -1892,6 +2127,7 @@
         <German>Ihr seid der Wind unter meinen Flügeln, [CT_NAME]!</German>
         <Italian>Sei il vento che mi fa volare, [CT_NAME]!</Italian>
         <Spanish>¡Sois el viento bajo nuestras alas, [CT_NAME]!</Spanish>
+        <Russian>Ты ветер, который позволяет мне летать, [CT_NAME]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_25</Tag>
@@ -1900,6 +2136,7 @@
         <German>Ihr habt unsere Dankbarkeit.</German>
         <Italian>Hai la nostra gratitudine.</Italian>
         <Spanish>Tenéis nuestra gratitud.</Spanish>
+        <Russian>Примите нашу благодарность.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_26</Tag>
@@ -1908,6 +2145,7 @@
         <German>Vielen Dank, [CT_NAME]!</German>
         <Italian>Molte grazie, [CT_NAME]!</Italian>
         <Spanish>¡Muchas gracias, [CT_NAME]!</Spanish>
+        <Russian>Большое спасибо, [CT_NAME]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_27</Tag>
@@ -1916,6 +2154,7 @@
         <German>Vielen Dank.</German>
         <Italian>Molte grazie.</Italian>
         <Spanish>Muchas gracias.</Spanish>
+        <Russian>Большое спасибо.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_28</Tag>
@@ -1924,6 +2163,7 @@
         <German>Möge der Himmel die Freundschaft zwischen unseren beiden großen Völkern segnen und heiligen!</German>
         <Italian>Che il cielo possa benedirti e santificare l'amicizia tra i nostri grandi popoli!</Italian>
         <Spanish>¡Que los cielos bendigan y santifiquen la amistad que une a nuestros dos grandes pueblos!</Spanish>
+        <Russian>Да благословят и освятят небеса дружбу двух великих народов!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_29</Tag>
@@ -1932,6 +2172,7 @@
         <German>Möge die Bande zwischen [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] und [CT_NAME] immer stärker werden!</German>
         <Italian>Possa l'amicizia tra [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] e [CT_NAME] rafforzarsi sempre di più!</Italian>
         <Spanish>¡Que el vínculo entre [CT_NAME] y nos, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], se fortalezca cada vez más!</Spanish>
+        <Russian>Пусть связь между [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] и [CT_NAME] крепнет!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_30</Tag>
@@ -1940,6 +2181,7 @@
         <German>Möge die Freundschaft zwischen [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] und [CT_CIV_SHORT] noch viele Jahre halten!</German>
         <Italian>Possa l'amicizia tra [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:2][COLOR_REVERT] e [CT_CIV_SHORT:2] durare molti anni!</Italian>
         <Spanish>¡Que dure muchos años la amistad entre [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] y [CT_CIV_SHORT]!</Spanish>
+        <Russian>Пусть дружба между [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] и [CT_CIV_SHORT] продлится долгие годы!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_31</Tag>
@@ -1948,6 +2190,7 @@
         <German>Wusstet Ihr eigentlich, dass Ihr mein Held seid? Ihr seid alles, was ich wünschte, dass ich sein könnte.</German>
         <Italian>Ti ho mai detto che sei il mio punto di riferimento? Sei la persona che avrei sempre voluto essere.</Italian>
         <Spanish>¿Os he dicho alguna vez que sois un ejemplo a seguir para nos? Sois todo lo que desearíamos ser.</Spanish>
+        <Russian>Знаете ли вы, что я считаю вас одним из величайших героев? Мне хотелось бы быть похожим на вас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_32</Tag>
@@ -1956,6 +2199,7 @@
         <German>Im Namen des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Volkes danke ich Euch!</German>
         <Italian>Ti ringrazio a nome del popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT]!</Italian>
         <Spanish>¡En nombre de la civilización [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:2][COLOR_REVERT] os damos las gracias!</Spanish>
+        <Russian>От имени [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] я благодарю вас!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_33</Tag>
@@ -1964,6 +2208,7 @@
         <German>Im Namen des Volkes von [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] danke ich Euch und dem ganzen [CT_CIV_ADJ] Volk.</German>
         <Italian>Il popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:4][COLOR_REVERT] ringrazia la gente [CT_CIV_ADJ:2].</Italian>
         <Spanish>Os damos las gracias en nombre del pueblo de [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT], tanto a vos como a todas las gentes [CT_CIV_ADJ:4].</Spanish>
+        <Russian>От имени [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] я благодарю вас и всех людей из [CT_CIV_ADJ].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_34</Tag>
@@ -1972,6 +2217,7 @@
         <German>Unsere Arbeit ist erledigt. Ihr dürft Euch entfernen.</German>
         <Italian>Il nostro incontro è terminato, puoi andare.</Italian>
         <Spanish>Nuestra labor ha acabado. Podéis iros.</Spanish>
+        <Russian>Наша работа завершена. Ты можешь идти.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_35</Tag>
@@ -1980,6 +2226,7 @@
         <German>Unsere Arbeit ist getan, oder? Nun, dann lasst Euch nicht länger aufhalten.</German>
         <Italian>Abbiamo finito, vero? Non voglio trattenerti oltre.</Italian>
         <Spanish>Ya hemos acabado con eso, ¿no? Bueno, entonces, no dejéis que os entretenga.</Spanish>
+        <Russian>Наша работа здесь закончена, не так ли? Ну, тогда не позволяй мне задерживать тебя.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_36</Tag>
@@ -1988,6 +2235,7 @@
         <German>Ihr wollt mir danken? Nein, nein ... Ich danke Euch, [CT_NAME]!</German>
         <Italian>Grazie a me? No, no... Grazie a te, [CT_NAME]!</Italian>
         <Spanish>¿Darnos las gracias? No, no... ¡Gracias a vos, [CT_NAME]!</Spanish>
+        <Russian>Спасибо мне? Нет, нет... спасибо, [CT_NAME]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_37</Tag>
@@ -1996,6 +2244,7 @@
         <German>Danke, [CT_NAME]!</German>
         <Italian>Grazie, [CT_NAME]!</Italian>
         <Spanish>¡Gracias, [CT_NAME]!</Spanish>
+        <Russian>Спасибо, [CT_NAME]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_38</Tag>
@@ -2004,6 +2253,7 @@
         <German>Danke, [CT_NAME].</German>
         <Italian>Grazie, [CT_NAME].</Italian>
         <Spanish>Gracias, [CT_NAME].</Spanish>
+        <Russian>Спасибо, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_39</Tag>
@@ -2012,6 +2262,7 @@
         <German>Danke, [CT_NAME]. Ist sonst noch etwas?</German>
         <Italian>Grazie, [CT_NAME]. C'è dell'altro?</Italian>
         <Spanish>Gracias, [CT_NAME]. ¿Algo más?</Spanish>
+        <Russian>Спасибо, [CT_NAME]. Что-нибудь еще?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_40</Tag>
@@ -2020,6 +2271,7 @@
         <German>Danke, [CT_NAME]. Mögen unsere beiden Völker von unserer anhaltenden Freundschaft profitieren!</German>
         <Italian>Grazie, [CT_NAME]. Che le nostre genti godano della nostra rinnovata amicizia!</Italian>
         <Spanish>Gracias, [CT_NAME]. ¡Que nuestros pueblos se beneficien de nuestra amistad duradera!</Spanish>
+        <Russian>Спасибо, [CT_NAME]. Пусть оба наших народа извлекут выгоду из нашей дружбы!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_41</Tag>
@@ -2028,6 +2280,7 @@
         <German>Danke. Eure Kooperation wurde zur Kenntnis genommen.</German>
         <Italian>Grazie, la vostra cooperazione è stata importante.</Italian>
         <Spanish>Gracias. Vuestra cooperación no caerá en el olvido.</Spanish>
+        <Russian>Спасибо. Мы не забудем о вашем сотрудничестве.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_42</Tag>
@@ -2036,6 +2289,7 @@
         <German>Danke, [CT_NAME].</German>
         <Italian>Grazie, [CT_NAME].</Italian>
         <Spanish>Gracias, [CT_NAME].</Spanish>
+        <Russian>Спасибо, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_43</Tag>
@@ -2044,6 +2298,7 @@
         <German>Es war ein kleines Stückchen vom Himmel. Das meine ich aufrichtig.</German>
         <Italian>È stato bellissimo, davvero.</Italian>
         <Spanish>Ha sido como estar en el cielo. Os lo decimos con total sinceridad.</Spanish>
+        <Russian>Мы на седьмом небе от счастья.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_44</Tag>
@@ -2052,6 +2307,7 @@
         <German>Danke. Wäre das dann alles?</German>
         <Italian>Grazie, è tutto?</Italian>
         <Spanish>Gracias. ¿Algo más?</Spanish>
+        <Russian>Спасибо. Это все?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_45</Tag>
@@ -2060,6 +2316,7 @@
         <German>Ihr könnt unseres Dankes versichert sein.</German>
         <Italian>Hai la nostra gratitudine.</Italian>
         <Spanish>Tenéis nuestra gratitud.</Spanish>
+        <Russian>Примите нашу благодарность.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_46</Tag>
@@ -2068,6 +2325,7 @@
         <German>Das wäre dann erst mal alles, [CT_NAME].</German>
         <Italian>È tutto per il momento, [CT_NAME].</Italian>
         <Spanish>Eso es todo de momento, [CT_NAME].</Spanish>
+        <Russian>На этом пока все, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_47</Tag>
@@ -2076,6 +2334,7 @@
         <German>So. Das ist ein gut gemachter Job, finden Ihr nicht?</German>
         <Italian>Ecco un lavoro ben fatto, non credi?</Italian>
         <Spanish>Esto sí que es un trabajo bien hecho, ¿no creéis?</Spanish>
+        <Russian>Мы хорошо потрудились, не так ли?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_48</Tag>
@@ -2084,6 +2343,7 @@
         <German>Das war's dann auch schon. Vielen Dank und auf Wiedersehen!</German>
         <Italian>Ecco fatto, grazie e arrivederci!</Italian>
         <Spanish>Entonces, ya está todo. ¡Gracias y adiós!</Spanish>
+        <Russian>Вот и все. Спасибо и до свидания!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_49</Tag>
@@ -2092,6 +2352,7 @@
         <German>Das Volk von [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] dankt dem Volk von - wie auch immer Euer Name lautet - ganz herzlich.</German>
         <Italian>Il popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT] ringrazia sentitamente la tua gente... anche se non sappiamo il nome della tua civiltà.</Italian>
         <Spanish>La civilización [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:2][COLOR_REVERT] da las gracias al pueblo de... como se llame vuestra cultura.</Spanish>
+        <Russian>Люди [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] любезно благодарят народ... независимо от названия вашей страны.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_50</Tag>
@@ -2100,6 +2361,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] dankt Euch, [CT_NAME]. Ihr dürft Euch jetzt entfernen.</German>
         <Italian>L'[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] ti ringrazia, [CT_NAME]. Ora puoi andare.</Italian>
         <Spanish>El [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] os da las gracias, [CT_NAME]. Ya podéis marcharos.</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] благодарит вас, [CT_NAME]. Можете идти.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_51</Tag>
@@ -2108,6 +2370,7 @@
         <German>Wir danken unseren Freunden und Partnern, dem [CT_CIV_ADJ] Volk!</German>
         <Italian>Ringraziamo i nostri amici della popolazione [CT_CIV_ADJ:2]!</Italian>
         <Spanish>¡Damos las gracias a nuestros amigos y socios, la civilización [CT_CIV_ADJ:2]!</Spanish>
+        <Russian>Мы благодарим наших друзей и партнеров, людей [CT_CIV_ADJ]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_52</Tag>
@@ -2116,6 +2379,7 @@
         <German>Wir danken unserem Partner, [CT_CIV_SHORT], für die faire und gerechte Einigung.</German>
         <Italian>Ringraziamo [CT_CIV_SHORT:2], per aver accettato questi termini.</Italian>
         <Spanish>Damos las gracias a nuestra nación asociada, [CT_CIV_SHORT], por llegar a un acuerdo justo.</Spanish>
+        <Russian>Мы благодарим наших партнеров [CT_CIV_SHORT] за честное и справедливое соглашение.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_53</Tag>
@@ -2124,6 +2388,7 @@
         <German>Wir arbeiten gut zusammen, [CT_NAME]. Ich freue mich auf viele weitere für beide Seiten gewinnbringende Vereinbarungen in der Zukunft!</German>
         <Italian>Insieme lavoriamo bene, [CT_NAME]. Non vedo l'ora di concludere altri affari in futuro!</Italian>
         <Spanish>Juntos trabajamos bien, [CT_NAME]. ¡Esperamos que el futuro nos depare más acuerdos provechosos para ambas civilizaciones!</Spanish>
+        <Russian>У нас хорошо получается работать вместе, [CT_NAME]. Я надеюсь на еще много взаимовыгодных соглашений в будущем!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_54</Tag>
@@ -2132,6 +2397,7 @@
         <German>Wir sind hier fertig, oder? Nun, dann lasst Euch nicht aufhalten. Danke und auf Wiedersehen.</German>
         <Italian>Abbiamo finito? Non ti tratterrò oltre, grazie e arrivederci.</Italian>
         <Spanish>Ya hemos acabado, ¿no? Bueno, entonces, no dejéis que os entretenga. Gracias y adiós.</Spanish>
+        <Russian>Мы ведь закончили, верно? Что ж, не позволяй мне задерживать тебя. Спасибо и до свидания.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_55</Tag>
@@ -2140,6 +2406,7 @@
         <German>Ich glaube, wir können beide mit diesem Ergebnis zufrieden sein. Ich freue mich darauf, wieder mit Euch Geschäfte zu machen.</German>
         <Italian>Sì, credo che entrambi trarremo profitto da questo affare. Non vediamo l'ora di fare ancora affari con voi.</Italian>
         <Spanish>Sí, nosotros también creemos que este acuerdo es beneficioso para ambas partes. Esperamos volver a hacer negocios con vosotros.</Spanish>
+        <Russian>Да, я считаю, что мы оба выиграем от этой сделки. Я с нетерпением жду возможности снова иметь с вами дело.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_56</Tag>
@@ -2148,6 +2415,7 @@
         <German>Ihr seid in Sachen Gerissenheit und Kampffähigkeit fast ebenbürtig, [CT_NAME]. Ich, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], danke Euch für Euren Besuch.</German>
         <Italian>Siete quasi alla nostra altezza in fatto di astuzia e valore, [CT_NAME]. Io, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], ti ringrazio per averci fatto visita.</Italian>
         <Spanish>Sois casi igual a nos en astucia y habilidad militar, [CT_NAME]. Nos, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], os agradecemos vuestra visita.</Spanish>
+        <Russian>Ваша хитрость равна вашей воинской доблести, [CT_NAME]. Я, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], благодарю вас за визит.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_57</Tag>
@@ -2156,6 +2424,7 @@
         <German>Sie sind sehr weise für Ihr Alter, Freund [CT_NAME]. [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] dankt Euch aufrichtig.</German>
         <Italian>La tua saggezza ti precede, [CT_NAME]. [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:1][COLOR_REVERT] ti offre i suoi più sentiti ringraziamenti.</Italian>
         <Spanish>Sois prudente a pesar de vuestra edad, camarada [CT_NAME]. [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] os da su agradecimiento más sincero.</Spanish>
+        <Russian>Ты мудр не по годам, друг [CT_NAME]. [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] выражают вам искреннюю благодарность.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_58</Tag>
@@ -2164,6 +2433,7 @@
         <German>Sie haben den Dank von [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT].</German>
         <Italian>Hai i ringraziamenti del [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:2][COLOR_REVERT].</Italian>
         <Spanish>Tenéis el agradecimiento de [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT].</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT] благодарят вас [COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_59</Tag>
@@ -2172,6 +2442,7 @@
         <German>Ihr habt weise entschieden, [CT_NAME]. Es ist wichtig, gute Beziehungen zu Stärkeren zu unterhalten, finden Ihr nicht auch?</German>
         <Italian>Hai scelto saggiamente, [CT_NAME]. È importante mantenere dei buoni rapporti con chi è superiore, non sei d'accordo?</Italian>
         <Spanish>Habéis tomado la decisión correcta, [CT_NAME]. Es importante mantener buenas relaciones con los superiores, ¿no creéis?</Spanish>
+        <Russian>Вы сделали мудрый выбор, [CT_NAME]. Важно поддерживать хорошие отношения с теми, кто выше тебя, ты согласен?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_60</Tag>
@@ -2180,6 +2451,7 @@
         <German>Ihr habt meine ewige Dankbarkeit, [CT_NAME].</German>
         <Italian>Avrai la mia gratitudine eterna, [CT_NAME].</Italian>
         <Spanish>Tenéis nuestra eterna gratitud, [CT_NAME].</Spanish>
+        <Russian>Примите мою вечную благодарность, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_61</Tag>
@@ -2188,6 +2460,7 @@
         <German>Ihr habt unsere Dankbarkeit.</German>
         <Italian>Hai la nostra gratitudine.</Italian>
         <Spanish>Tenéis nuestra gratitud.</Spanish>
+        <Russian>Примите нашу благодарность.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_62</Tag>
@@ -2196,6 +2469,7 @@
         <German>Ihr habt unseren Dank.</German>
         <Italian>Hai i nostri ringraziamenti.</Italian>
         <Spanish>Os damos las gracias.</Spanish>
+        <Russian>Мы благодарим вас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_63</Tag>
@@ -2204,6 +2478,7 @@
         <German>Ihr macht mich so glücklich, [CT_NAME]!</German>
         <Italian>Mi rendi così felice, [CT_NAME]!</Italian>
         <Spanish>¡Nos hacéis tan feliz, [CT_NAME]!</Spanish>
+        <Russian>Ты делаешь меня таким счастливым, [CT_NAME]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_64</Tag>
@@ -2212,6 +2487,7 @@
         <German>Ihr zeigt große Weisheit und Scharfsinn bei der Auswahl Eurer Freunde, [CT_NAME]. [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] dankt Euch.</German>
         <Italian>Hai mostrato grande saggezza e acume nella scelta dei tuoi amici, [CT_NAME]. L'[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] ti ringrazia.</Italian>
         <Spanish>Demostráis gran sabiduría y perspicacia a la hora de escoger a vuestros amigos, [CT_NAME]. El [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] os da las gracias.</Spanish>
+        <Russian>Вы проявляете большую мудрость и проницательность в выборе друзей, [CT_NAME]. [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] благодарит вас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_65</Tag>
@@ -2220,6 +2496,7 @@
         <German>Sie zeigen große Weisheit und Freundschaft. [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] dankt Euch!</German>
         <Italian>Ti sei dimostrato una persona saggia e amichevole. [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:1][COLOR_REVERT] ti ringrazia!</Italian>
         <Spanish>Demostráis gran sabiduría y cordialidad. ¡[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] os da las gracias!</Spanish>
+        <Russian>Вы демонстрируете большую мудрость и дружелюбие. [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] благодарят вас!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_66</Tag>
@@ -2228,6 +2505,7 @@
         <German>Euer fairer und zuvorkommender Umgang mit dem [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Volk wird nicht vergessen werden.</German>
         <Italian>Il modo in cui hai condotto gli affari con il popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT] non verrà dimenticato.</Italian>
         <Spanish>No olvidaremos vuestros tratos justos y corteses con el pueblo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT].</Spanish>
+        <Russian>Мы не забудем ваши честные и вежливые отношения с [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_67</Tag>
@@ -2236,6 +2514,7 @@
         <German>Sie haben den Dank von [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT].</German>
         <Italian>Hai i ringraziamenti del [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:2][COLOR_REVERT].</Italian>
         <Spanish>Tenéis el agradecimiento de [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT].</Spanish>
+        <Russian>Примите благодарность от [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_68</Tag>
@@ -2244,6 +2523,7 @@
         <German>Wie es scheint, hat sich Euer Besuch doch noch gelohnt. Kommt wieder, wenn Ihr dem [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] etwas anderes zu bieten habt.</German>
         <Italian>Pare che la tua visita non sia stata una completa perdita di tempo. Torna quando avrai qualcos'altro da offrire all'[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT].</Italian>
         <Spanish>Parece que vuestra visita no ha sido una completa pérdida de tiempo. Volved cuando tengáis algo más que ofrecer al [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT].</Spanish>
+        <Russian>Похоже, ваш визит не был пустой тратой времени. Возвращайтесь снова, когда у вас снова появится, что можно предложить [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_69</Tag>
@@ -2252,6 +2532,7 @@
         <German>Ihr seid ein freundliches und zuvorkommendes kleines Volk. Wir danken Euch.</German>
         <Italian>La tua piccola civiltà è amichevole e accomodante. Ti ringraziamo.</Italian>
         <Spanish>La vuestra es una cultura complaciente y amistosa. Os lo agradecemos.</Spanish>
+        <Russian>Ваша цивилизация дружелюбна и очень услужлива. Мы благодарим Вас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_CURRENT_DEALS_1</Tag>
@@ -2260,6 +2541,7 @@
         <German>So weit ich weiß, haben wir gegenwärtig diese Vereinbarungen getroffen.</German>
         <Italian>Ecco i nostri accordi attuali.</Italian>
         <Spanish>Por lo que recordamos, éstos son los tratos que tenemos en la actualidad.</Spanish>
+        <Russian>Насколько я понимаю, это наши текущие сделки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_CURRENT_DEALS_2</Tag>
@@ -2268,6 +2550,7 @@
         <German>Das sind unsere aktuellen Vereinbarungen.</German>
         <Italian>Questi sono i nostri accordi attuali.</Italian>
         <Spanish>Éstos son los tratos que tenemos activos.</Spanish>
+        <Russian>Это наши активные сделки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_CURRENT_DEALS_3</Tag>
@@ -2276,6 +2559,7 @@
         <German>Das sind die Vereinbarungen, auf die wir uns geeinigt haben, [CT_NAME].</German>
         <Italian>[CT_NAME], questi sono i dettagli degli accordi stipulati.</Italian>
         <Spanish>[CT_NAME], éstos son los tratos en los que nos hemos puesto de acuerdo.</Spanish>
+        <Russian>[CT_NAME], это сделки, о которых мы договорились.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_CURRENT_DEALS_4</Tag>
@@ -2284,6 +2568,7 @@
         <German>Das sind die Vereinbarungen, die wir mit dem [CT_EMPIRE:3] getroffen haben.</German>
         <Italian>Questi sono gli accordi che abbiamo con l'[CT_EMPIRE].</Italian>
         <Spanish>Éstos son los tratos que tenemos con el [CT_EMPIRE].</Spanish>
+        <Russian>Вот наши сделки с [CT_EMPIRE].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_ASK_1</Tag>
@@ -2292,6 +2577,7 @@
         <German>Ich helfe doch jederzeit gern ...</German>
         <Italian>Sempre felice di aiutare...</Italian>
         <Spanish>Siempre estamos encantados de ayudar...</Spanish>
+        <Russian>Всегда рад помочь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REJECT_ASK_1</Tag>
@@ -2300,6 +2586,7 @@
         <German>Nein, danke, das ist einfach zu viel verlangt.</German>
         <Italian>Mi spiace, ma sei troppo insistente.</Italian>
         <Spanish>Lo sentimos, pero nos presionáis demasiado.</Spanish>
+        <Russian>Извините, но вы слишком сильно давите на нас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_DEMAND_1</Tag>
@@ -2308,6 +2595,7 @@
         <German>Wir gehen auf Eure unverschämten Forderungen ein.</German>
         <Italian>Accettiamo le tue insensate richieste.</Italian>
         <Spanish>No podemos acceder a vuestras exigencias tan poco razonables.</Spanish>
+        <Russian>Мы вынуждены согласиться с вашими необоснованными требованиями.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_DEMAND_2</Tag>
@@ -2316,6 +2604,7 @@
         <German>Ich akzeptiere Eure Bedingungen - fürs Erste. Aber wartet nur bis zum nächsten Mal ...</German>
         <Italian>Accetto le tue condizioni, per il momento. Ma la prossima volta vedrai!</Italian>
         <Spanish>Aceptamos vuestras condiciones, de momento. ¡Pero ya veréis la próxima vez!</Spanish>
+        <Russian>Я принимаю ваши условия, пока. Но вот в следующий раз!...</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_DEMAND_3</Tag>
@@ -2324,6 +2613,7 @@
         <German>Ich habe offenbar keine andere Wahl, als mich darauf einzulassen.</German>
         <Italian>Pare che non abbia altra scelta che accettare.</Italian>
         <Spanish>Parece que no nos queda otra que aceptar.</Spanish>
+        <Russian>Похоже, у меня нет другого выбора, кроме как согласиться.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_DEMAND_4</Tag>
@@ -2332,6 +2622,7 @@
         <German>Also gut. Aber denkt dran: Wie man in den Wald hineinruft, so schallt es heraus!</German>
         <Italian>Perfetto. Ricorda solo una cosa: prima o poi tutto torna!</Italian>
         <Spanish>Entonces, de acuerdo. Pero recordad, se recoge lo que se siembra.</Spanish>
+        <Russian>Очень хорошо, но не забывайте, что в конечном итоге за все придется платить!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_DEMAND_5</Tag>
@@ -2340,6 +2631,7 @@
         <German>Mildtätigkeit ist eine Tugend. Erpressung dagegen ist ein Frevel. Nun, ich gebe dieser Forderung nach. Ich weiß, mein Schöpfer wird sich mich im Jenseits dafür belohnen. Andere dagegen werden es dort schwerer haben ...</German>
         <Italian>Concordo pienamente: infierire su un leader in ginocchio. Accetto le vostre condizioni.</Italian>
         <Spanish>Muy bien, cebaos con un líder indefenso... Aceptamos vuestros términos.</Spanish>
+        <Russian>Милосердие это добродетель. С другой стороны, шантаж это возмутительно. Что ж, я уступаю этому требованию. Я знаю, что мой Создатель вознаградит меня в будущей жизни. Другим, наоборот, там придется тяжелее...</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_DEMAND_6</Tag>
@@ -2348,6 +2640,7 @@
         <German>Ich stimme Euren Bedingungen zu. Fürs Erste!</German>
         <Italian>Accetto le tue condizioni. Per il momento.</Italian>
         <Spanish>Aceptamos vuestras condiciones. Por ahora.</Spanish>
+        <Russian>Я согласен с вашими условиями. Пока что.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_DEMAND_TEAM_1</Tag>
@@ -2356,6 +2649,7 @@
         <German>Ich helfe doch immer gern.</German>
         <Italian>Siamo sempre felici di aiutare!</Italian>
         <Spanish>¡Siempre estamos encantados de ayudar!</Spanish>
+        <Russian>Всегда рад помочь!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REJECT_DEMAND_1</Tag>
@@ -2364,6 +2658,7 @@
         <German>Wir lassen uns von Euren unsinnigen Drohungen nicht einschüchtern!</German>
         <Italian>Le tue minacce ci fanno ridere.</Italian>
         <Spanish>¡No nos doblegamos ante vuestras absurdas amenazas!</Spanish>
+        <Russian>Мы отвергаем ваши бессмысленные угрозы!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REJECT_DEMAND_2</Tag>
@@ -2372,6 +2667,7 @@
         <German>Wie könnt Ihr es wagen, uns mit solchen dreisten Forderungen zu beleidigen?</German>
         <Italian>Come osi insultare [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:2][COLOR_REVERT] con le tue stupide richieste!</Italian>
         <Spanish>¿Cómo osáis insultar a la gloriosa tierra de [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] con vuestras estúpidas exigencias?</Spanish>
+        <Russian>Как вы смеете оскорблять нас своими глупыми требованиями!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REJECT_DEMAND_3</Tag>
@@ -2380,6 +2676,7 @@
         <German>Da könnt Ihr lange drauf warten.</German>
         <Italian>Molto improbabile.</Italian>
         <Spanish>Ni hartos de vino.</Spanish>
+        <Russian>Черт возьми, это вряд ли.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REJECT_DEMAND_4</Tag>
@@ -2388,6 +2685,7 @@
         <German>Mit mir nicht!</German>
         <Italian>Nemmeno per sogno!</Italian>
         <Spanish>¡No si podemos impedirlo!</Spanish>
+        <Russian>Ни единого шанса!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REJECT_DEMAND_5</Tag>
@@ -2396,6 +2694,7 @@
         <German>Niemals!</German>
         <Italian>Mai!</Italian>
         <Spanish>¡Jamás!</Spanish>
+        <Russian>Никогда!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REJECT_DEMAND_6</Tag>
@@ -2404,6 +2703,7 @@
         <German>Ihr unterschätzt das [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE:2][COLOR_REVERT] aufs Ärgste, [CT_NAME]! So einem Vorschlag würden wir nie zustimmen!</German>
         <Italian>Hai drammaticamente sottovalutato l'[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT], [CT_NAME]. Non accetteremo mai una proposta del genere.</Italian>
         <Spanish>Subestimáis enormemente al [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT], [CT_NAME]. Nunca accederemos a algo así.</Spanish>
+        <Russian>Вы сильно недооцениваете [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT], [CT_NAME]. Мы бы никогда не согласились ни на что подобное.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GIVE_HELP_1</Tag>
@@ -2412,6 +2712,7 @@
         <German>Wie es aussieht, könnt Ihr etwas Hilfe gebrauchen.</German>
         <Italian>Forse avresti bisogno di un po' di aiuto.</Italian>
         <Spanish>Creemos que un poco de ayuda no os iría mal.</Spanish>
+        <Russian>Мы видим, что вам, вероятно, не помешала бы небольшая помощь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GIVE_HELP_2</Tag>
@@ -2420,6 +2721,7 @@
         <German>Vielleicht ist Euch damit geholfen, [CT_NAME].</German>
         <Italian>Forse questo potrà tornarti utile, [CT_NAME].</Italian>
         <Spanish>Igual esto puede seros de ayuda, [CT_NAME].</Spanish>
+        <Russian>Возможно, это могло бы помочь вам, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GIVE_HELP_3</Tag>
@@ -2428,6 +2730,7 @@
         <German>Wir haben hier etwas für Euch.</German>
         <Italian>Ecco una piccola offerta da parte nostra.</Italian>
         <Spanish>Aquí tenéis algo de nuestra parte.</Spanish>
+        <Russian>Вот вам кое-что от нас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GIVE_HELP_4</Tag>
@@ -2436,6 +2739,7 @@
         <German>Hier, bitte! Ihr habt sicher gute Verwendung dafür.</German>
         <Italian>Ecco qui, potrebbe servirti.</Italian>
         <Spanish>Tomad, camarada, puede que lo necesitéis.</Spanish>
+        <Russian>Вот, мой друг: тебе это может пригодиться.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GIVE_HELP_5</Tag>
@@ -2444,6 +2748,7 @@
         <German>Wäre Euch hiermit geholfen, [CT_NAME]?</German>
         <Italian>Per caso potrebbe tornarti utile, [CT_NAME]?</Italian>
         <Spanish>¿Os viene bien esto, [CT_NAME]?</Spanish>
+        <Russian>Будет ли это полезно для вас, [CT_NAME]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GIVE_HELP_6</Tag>
@@ -2452,6 +2757,7 @@
         <German>Das [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT] Volk hat heute seinen großzügigen Tag, [CT_NAME]! Vielleicht ist Euch damit etwas geholfen.</German>
         <Italian>La popolazione [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:2][COLOR_REVERT] si sente particolarmente generosa oggi, [CT_NAME]. Forse potrebbe tornarti utile.</Italian>
         <Spanish>El pueblo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT] se siente muy generoso hoy, [CT_NAME]. Quizá esto os sirva de algo.</Spanish>
+        <Russian>Люди [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] сегодня очень щедры, [CT_NAME]. Возможно, это может быть вам чем-то полезно.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_ASK_FOR_HELP_1</Tag>
@@ -2460,6 +2766,7 @@
         <German>Wohltätigkeit beginnt im eigenen Herzen, [CT_NAME]. Wollt Ihr es nicht auch mal probieren?</German>
         <Italian>La carità inizia in casa, [CT_NAME]. Vuoi farne un po'?</Italian>
         <Spanish>La caridad bien entendida empieza por uno mismo, [CT_NAME]. ¿Os importaría prestarnos un poco?</Spanish>
+        <Russian>Я знаю, благотворительность идет от чистого сердца, [CT_NAME]. У вас ведь доброе сердце?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_ASK_FOR_HELP_2</Tag>
@@ -2468,6 +2775,7 @@
         <German>Wir brauchen Eure Hilfe, Freund [CT_NAME]. Ich hoffe, Ihr enttäuscht uns nicht.</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:1][COLOR_REVERT] necessita del tuo aiuto [CT_NAME]. Spero che non ci deluderai.</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] necesita vuestra ayuda, camarada [CT_NAME]. Esperamos que no nos decepcionéis.</Spanish>
+        <Russian>Нам нужна твоя помощь, друг [CT_NAME]. Я надеюсь, что вы не разочаруете нас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_ASK_FOR_HELP_3</Tag>
@@ -2476,6 +2784,7 @@
         <German>Ich habe immer auf die Freundlichkeit Fremder vertraut, [CT_NAME]. Und Ihr wollt mich in dieser Hinsicht doch sicher nicht enttäuschen?</German>
         <Italian>Ho sempre contato sulla gentilezza degli stranieri, [CT_NAME]. Puoi aiutarmi?</Italian>
         <Spanish>Siempre hemos confiado en la amabilidad de los extranjeros, [CT_NAME]. ¿Podríais ayudarnos?</Spanish>
+        <Russian>Я всегда полагался на доброту незнакомцев, [CT_NAME]. Вы же не хотите меня в этом разочаровать?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_ASK_FOR_HELP_4</Tag>
@@ -2484,6 +2793,7 @@
         <German>Nur Freunde in der Not sind wahre Freunde, [CT_NAME]. Würdet Ihr uns etwas unter die Arme greifen?</German>
         <Italian>Chi trova un amico trova un tesoro, [CT_NAME]. Ti va di aiutarci?</Italian>
         <Spanish>No hay que olvidarse de un amigo necesitado, [CT_NAME]. ¿Os importaría ayudarnos?</Spanish>
+        <Russian>Друг познается в беде, [CT_NAME]. Вы поможете нам?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_ASK_FOR_HELP_5</Tag>
@@ -2492,6 +2802,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] könnte Eure Hilfe gebrauchen, [CT_NAME].</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:1][COLOR_REVERT] avrebbe bisogno del tuo aiuto, [CT_NAME].</Italian>
         <Spanish>A [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] le podría ir bien vuestra ayuda, [CT_NAME].</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] требуется ваша помощь, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_ASK_FOR_HELP_6</Tag>
@@ -2509,6 +2820,7 @@
         <German>Wenn Ihr unserer Bitte entsprecht, wäre das der erste Schritt, um die Kluft zwischen unseren Völkern zu verkleinern, [CT_NAME].</German>
         <Italian>Se ci fornirai questa risorsa, potrebbe essere il primo passo nel tentativo di riconciliazione tra i nostri due popoli, [CT_NAME].</Italian>
         <Spanish>Proporcionarnos esto salvaría en buena medida la desgraciada brecha que separa a nuestros pueblos, [CT_NAME].</Spanish>
+        <Russian>Если вы удовлетворите нашу просьбу, это поможет сблизить наши народы, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_ASK_FOR_HELP_2</Tag>
@@ -2517,6 +2829,7 @@
         <German>Ich denke, [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] braucht Eure Hilfe, [CT_NAME]. Und ich bin sicher, Ihr werdet uns nicht enttäuschen.</German>
         <Italian>Credo che [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:2][COLOR_REVERT] abbia bisogno del tuo aiuto, [CT_NAME]. Siamo certi che non ci deluderai.</Italian>
         <Spanish>Creo que [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] necesita vuestra ayuda, [CT_NAME]. Sin duda, no vais a decepcionarnos.</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] нуждаются в вашей помощи, [CT_NAME]. Уверен, вы нас не разочаруете.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_ASK_FOR_HELP_3</Tag>
@@ -2525,6 +2838,7 @@
         <German>Kaum zu glauben, aber Ihr habt tatsächlich etwas, was wir gebrauchen könnten.</German>
         <Italian>Malgrado sia difficile da credere, possiedi qualcosa che potrebbe farci comodo.</Italian>
         <Spanish>Por difícil que resulte de creer, tenéis algo que podría irnos bien.</Spanish>
+        <Russian>Как бы трудно в это ни было поверить, у вас есть кое-что, что нам бы очень пригодилось.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_ASK_FOR_HELP_4</Tag>
@@ -2533,6 +2847,7 @@
         <German>Euer Beistand in diesen schweren Zeiten wäre sehr hilfreich, um Euch die Freundschaft der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] zu sichern, [CT_NAME].</German>
         <Italian>In questo momento, il tuo intervento è necessario per riguadagnare l'amicizia del[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:2][COLOR_REVERT], [CT_NAME].</Italian>
         <Spanish>Vuestra ayuda en estos momentos difíciles hará mucho para que recuperéis la amistad de [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT], [CT_NAME].</Spanish>
+        <Russian>Ваша помощь в этот жизненно важный момент поможет восстановить дружбу [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT], [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_ASK_FOR_HELP_5</Tag>
@@ -2541,6 +2856,7 @@
         <German>Ich glaube, dass unsere Völker trotz diverser Differenzen vieles gemeinsam haben. So habt Ihr zum Beispiel etwas, das wir brauchen.</German>
         <Italian>Malgrado le differenze, credo che le nostre due nazioni abbiano molto in comune. Per esempio, voi avete qualcosa che a noi serve.</Italian>
         <Spanish>Pese a nuestras diferencias, creo que nuestras dos naciones tienen mucho en común. Por ejemplo, eso que vosotros tenéis, nosotros lo necesitamos.</Spanish>
+        <Russian>Несмотря на наши различия, я считаю, что у наших двух народов много общего. Например, у вас то, то нам нужно.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_ASK_FOR_HELP_6</Tag>
@@ -2549,6 +2865,7 @@
         <German>Wir könnten Eure Hilfe gebrauchen, [CT_NAME]. Enttäuscht uns nicht!</German>
         <Italian>[CT_NAME], potremmo avere bisogno del tuo aiuto. Non deluderci.</Italian>
         <Spanish>Nos iría bien vuestra ayuda, [CT_NAME]. No nos decepcionéis.</Spanish>
+        <Russian>Нам может понадобиться ваша помощь, [CT_NAME]. Не разочаровывайте нас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_HELP_REFUSED_WEAKER_1</Tag>
@@ -2557,6 +2874,7 @@
         <German>Das ist eine ganz schöne Enttäuschung!</German>
         <Italian>Che peccato.</Italian>
         <Spanish>Menuda decepción.</Spanish>
+        <Russian>Вы разочаровали нас...</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_HELP_REFUSED_WEAKER_2</Tag>
@@ -2565,6 +2883,7 @@
         <German>Tja, verdammt!</German>
         <Italian>Bene, maledizione.</Italian>
         <Spanish>Caca de la vaca...</Spanish>
+        <Russian>Ну, черт возьми.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_HELP_REFUSED_WEAKER_3</Tag>
@@ -2573,6 +2892,7 @@
         <German>Ihr zeigt Euch ja nicht gerade sehr entgegenkommend, [CT_NAME].</German>
         <Italian>Non sei una persona molto generosa, [CT_NAME].</Italian>
         <Spanish>En verdad, no sois una persona muy desprendida, [CT_NAME].</Spanish>
+        <Russian>Вы действительно не очень щедрый человек, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_HELP_REFUSED_WEAKER_4</Tag>
@@ -2581,6 +2901,7 @@
         <German>Na schön! Reden wir nicht mehr davon - fürs Erste!</German>
         <Italian>Molto bene, meglio che per il momento non diciamo nulla a riguardo.</Italian>
         <Spanish>Muy bien. No diremos nada más al respecto, de momento.</Spanish>
+        <Russian>Очень хорошо. Мы не будем больше ничего говорить об этом. Пока...</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_HELP_REFUSED_WEAKER_5</Tag>
@@ -2589,6 +2910,7 @@
         <German>Das war jetzt eine sehr dumme Entscheidung von Euch, [CT_NAME]!</German>
         <Italian>Hai fatto una scelta stupida, [CT_NAME].</Italian>
         <Spanish>Habéis obrado estúpidamente, [CT_NAME].</Spanish>
+        <Russian>Вы сделали глупый выбор, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_HELP_REFUSED_WEAKER_6</Tag>
@@ -2597,6 +2919,7 @@
         <German>Also gut. Aber Eure Gier wird Euch noch mal zu Fall bringen, [CT_NAME]!</German>
         <Italian>Perfetto. L'avidità sarà la causa della tua caduta, [CT_NAME].</Italian>
         <Spanish>Muy bien. Pero la avaricia será vuestra perdición, [CT_NAME].</Spanish>
+        <Russian>Очень хорошо. Но жадность погубит тебя, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_HELP_REFUSED_EQUAL_1</Tag>
@@ -2605,6 +2928,7 @@
         <German>Das werden wir uns merken, [CT_NAME].</German>
         <Italian>Ce ne ricorderemo, [CT_NAME].</Italian>
         <Spanish>No olvidaremos esto, [CT_NAME].</Spanish>
+        <Russian>Мы запомним это, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_HELP_REFUSED_EQUAL_2</Tag>
@@ -2613,6 +2937,7 @@
         <German>Wie kurzsichtig von Euch.</German>
         <Italian>Come sei miope.</Italian>
         <Spanish>No hemos visto una persona más corta de miras.</Spanish>
+        <Russian>Как недальновидно с твоей стороны.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_HELP_REFUSED_EQUAL_3</Tag>
@@ -2621,6 +2946,7 @@
         <German>Das ist nicht sehr nett von Euch, [CT_NAME].</German>
         <Italian>Non è molto carino da parte tua, [CT_NAME].</Italian>
         <Spanish>Esto no es muy amable por vuestra parte, [CT_NAME].</Spanish>
+        <Russian>Это не очень мило с твоей стороны, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_HELP_REFUSED_EQUAL_4</Tag>
@@ -2629,6 +2955,7 @@
         <German>Das werden wir uns merken.</German>
         <Italian>Ce ne ricorderemo.</Italian>
         <Spanish>No lo olvidaremos.</Spanish>
+        <Russian>Мы это запомним.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_HELP_REFUSED_EQUAL_5</Tag>
@@ -2637,6 +2964,7 @@
         <German>Das ist ganz schön dumm von Euch!</German>
         <Italian>Sei una persona stolta.</Italian>
         <Spanish>Sois idiota hasta la médula.</Spanish>
+        <Russian>Это довольно глупо с твоей стороны!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_HELP_REFUSED_EQUAL_6</Tag>
@@ -2645,6 +2973,7 @@
         <German>Ich hatte mehr von Euch erwartet, [CT_NAME]!</German>
         <Italian>Mi aspettavo di meglio da te, [CT_NAME].</Italian>
         <Spanish>Esperábamos algo más de vos, [CT_NAME].</Spanish>
+        <Russian>Я ожидал от тебя большего, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_HELP_REFUSED_STRONGER_1</Tag>
@@ -2653,6 +2982,7 @@
         <German>Hoffentlich werdet Ihr das nicht eines Tages bereuen, [CT_NAME]!</German>
         <Italian>Spero non te ne pentirai, [CT_NAME].</Italian>
         <Spanish>Esperamos que no lleguéis a arrepentiros de esto, [CT_NAME].</Spanish>
+        <Russian>Надеюсь, ты не пожалеешь об этом, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_HELP_REFUSED_STRONGER_2</Tag>
@@ -2661,6 +2991,7 @@
         <German>Wie Ihr wollt! Das müsst Ihr schließlich selbst verantworten!</German>
         <Italian>Molto bene. Così sia.</Italian>
         <Spanish>Muy bien. Queda sobre vuestra conciencia.</Spanish>
+        <Russian>Хорошо. На ваш страх и риск!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_HELP_REFUSED_STRONGER_3</Tag>
@@ -2669,6 +3000,7 @@
         <German>Wie Ihr wollt!</German>
         <Italian>Come desideri.</Italian>
         <Spanish>Como gustéis.</Spanish>
+        <Russian>Как хочешь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_HELP_REFUSED_STRONGER_4</Tag>
@@ -2677,6 +3009,7 @@
         <German>Denkt dran: Wie man in den Wald ruft, so schallt es heraus ...</German>
         <Italian>Ricorda che prima o poi tutti i nodi vengono al pettine...</Italian>
         <Spanish>Recordad, quien siembra vientos...</Spanish>
+        <Russian>Помните, что посеешь, то и пожнешь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_HELP_REFUSED_STRONGER_5</Tag>
@@ -2685,6 +3018,7 @@
         <German>Tja, wir werden ja sehen, was wir für Euch tun können, wenn Ihr mal unsere Hilfe brauchen solltet!</German>
         <Italian>Ottimo. Chissà se vi aiuteremo quando avrete bisogno...</Italian>
         <Spanish>Muy bien. Ya veremos si os ayudamos cuando lo necesitéis.</Spanish>
+        <Russian>Отлично. Посмотрим, сможем ли мы помочь вам, когда вам это будет нужно.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_HELP_REFUSED_STRONGER_6</Tag>
@@ -2693,6 +3027,7 @@
         <German>Zu schade! Für uns beide, fürchte ich.</German>
         <Italian>Un vero peccato, per entrambi.</Italian>
         <Spanish>Es una lástima. Para ambos, me temo.</Spanish>
+        <Russian>Какая жалость. Это навредит нам обоим.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_1</Tag>

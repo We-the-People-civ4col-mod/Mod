@@ -4770,6 +4770,7 @@
         <German>Feindbegegnungen</German>
         <Italian>Rivali incontrati</Italian>
         <Spanish>Rivales encontrados</Spanish>
+        <Russian>Встреченные соперники</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ALL_LEADERS</Tag>
@@ -10434,7 +10435,7 @@
         <Tag>TXT_KEY_PROMOTION_SLAVE_REVOLT_REDUCTION_BONUS_TEXT</Tag>
         <English>[ICON_BULLET]%D1_percent%% reduced running away and revolting of slaves and other enforced labor</English>
         <German>[ICON_BULLET]%D1_percent%% reduzierte Fluchtversuche und Revolten von Sklaven und Zwangsarbeitern</German>
-        <Russian>[ICON_BULLET]%D1_percent%% к шансу побега или мятежа несвободных колонистов</Russian>
+        <Russian>[ICON_BULLET]%D1_percent%% к уменьшению шанса побега или мятежа несвободных колонистов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SLAVE_WORKER_PRODUCTION_BONUS_TEXT</Tag>
@@ -10464,7 +10465,7 @@
         <Tag>TXT_KEY_PROMOTION_CAN_NOT_BE_EARNED_BY_XP</Tag>
         <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Cannot be earned by XP.[COLOR_REVERT]</English>
         <German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Kann nicht durch EP erworben werden.[COLOR_REVERT]</German>
-        <Russian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Не лечится с помощью EXP во время повышения.[COLOR_REVERT]</Russian>
+        <Russian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Не может быть восстановлено/заработано с помощью ЕXP[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_UPGRADE_DISCOUNT_FREE_TEXT</Tag>
