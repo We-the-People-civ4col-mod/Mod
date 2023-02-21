@@ -313,9 +313,13 @@ public:
 	DllExport int calculateOptionsChecksum();
 
 	void addReplayMessage(ReplayMessageTypes eType = NO_REPLAY_MESSAGE, PlayerTypes ePlayer = NO_PLAYER, CvWString pszText = L"",
-		int iPlotX = -1, int iPlotY = -1, ColorTypes eColor = NO_COLOR);
+		int iPlotX = -1, int iPlotY = -1, ColorTypes eColor = NO_COLOR)
+		{
+			addReplayMessage(eType, ePlayer, pszText, Coordinates(iPlotX, iPlotY), eColor);
+		}
+
 	void addReplayMessage(ReplayMessageTypes eType, PlayerTypes ePlayer, CvWString pszText,
-		Coordinates coord, ColorTypes eColor = NO_COLOR);
+		const Coordinates coord, ColorTypes eColor = NO_COLOR);
 	void clearReplayMessageMap();
 	int getReplayMessageTurn(uint i) const;
 	ReplayMessageTypes getReplayMessageType(uint i) const;

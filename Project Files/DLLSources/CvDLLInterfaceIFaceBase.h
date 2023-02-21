@@ -77,19 +77,93 @@ public:
 	virtual CLLNode<IDInfo>* nextSelectedCitiesNode(CLLNode<IDInfo>* pNode) = 0;
 	virtual CLLNode<IDInfo>* headSelectedCitiesNode() = 0;
 
+	/*	K-Mod - block messages from being send to AI players
+		(because the game doesn't ever clear AI messages). */
+		/*	(Had been named "addHumanMessage" in K-Mod;
+			Definition moved into CvDLLInterfaceIFaceBase.cpp.) */ // </advc.127>
+	/* WTP - renamed to addPlayerMessage */
+	// WTP, jooe: use Coordinates class, add wrapper functions for plot, unit, city
+	void addPlayerMessage(PlayerTypes ePlayer, bool bForce, int iLength,
+		CvWString szString, const Coordinates coord,
+		LPCTSTR pszSound = NULL, InterfaceMessageTypes eType = MESSAGE_TYPE_INFO,
+		LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,
+		bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false);
+
+	void addPlayerMessage(PlayerTypes ePlayer, bool bForce, int iLength,
+		CvWString szString,
+		LPCTSTR pszSound, InterfaceMessageTypes eType,
+		LPCSTR pszIcon, ColorTypes eFlashColor, int iFlashX, int iFlashY,
+		bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false)
+		{
+			addPlayerMessage(ePlayer, bForce, iLength, szString,
+				Coordinates(iFlashX, iFlashY), pszSound, eType,
+				pszIcon, eFlashColor,
+				bShowOffScreenArrows, bShowOnScreenArrows);
+		}
+
+	void addPlayerMessage(PlayerTypes ePlayer, bool bForce, int iLength,
+		CvWString szString,
+		LPCTSTR pszSound, InterfaceMessageTypes eType = MESSAGE_TYPE_INFO,
+		LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,
+		bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false)
+		{
+			addPlayerMessage(ePlayer, bForce, iLength, szString,
+				Coordinates::invalidCoord(), pszSound, eType,
+				pszIcon, eFlashColor,
+				bShowOffScreenArrows, bShowOnScreenArrows);
+		}
+
+	void addPlayerMessage(PlayerTypes ePlayer, bool bForce, int iLength,
+		CvWString szString, CvPlot const *pPlot,
+		LPCTSTR pszSound = NULL, InterfaceMessageTypes eType = MESSAGE_TYPE_INFO,
+		LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,
+		bool bShowOffScreenArrows = true, bool bShowOnScreenArrows = true)
+		{
+			addPlayerMessage(ePlayer, bForce, iLength, szString,
+				pPlot->coord(), pszSound, eType,
+				pszIcon, eFlashColor,
+				bShowOffScreenArrows, bShowOnScreenArrows);
+		}
+
+	void addPlayerMessage(PlayerTypes ePlayer, bool bForce, int iLength,
+		CvWString szString, CvCity const *pCity,
+		LPCTSTR pszSound = NULL, InterfaceMessageTypes eType = MESSAGE_TYPE_INFO,
+		LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,
+		bool bShowOffScreenArrows = true, bool bShowOnScreenArrows = true)
+		{
+			addPlayerMessage(ePlayer, bForce, iLength, szString,
+					pCity->coord(), pszSound, eType,
+					pszIcon, eFlashColor,
+					bShowOffScreenArrows, bShowOnScreenArrows);
+		}
+
+	void addPlayerMessage(PlayerTypes ePlayer, bool bForce, int iLength,
+		CvWString szString, CvUnit *pUnit,
+		LPCTSTR pszSound = NULL, InterfaceMessageTypes eType = MESSAGE_TYPE_INFO,
+		LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,
+		bool bShowOffScreenArrows = true, bool bShowOnScreenArrows = true)
+		{
+			addPlayerMessage(ePlayer, bForce, iLength, szString,
+					pUnit->coord(), pszSound, eType,
+					pszIcon, eFlashColor,
+					bShowOffScreenArrows, bShowOnScreenArrows);
+		}
+
+protected:
 	virtual void addMessage(PlayerTypes ePlayer, bool bForce, int iLength, CvWString szString, LPCTSTR pszSound = NULL,
 		InterfaceMessageTypes eType = MESSAGE_TYPE_INFO, LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,
 		int iFlashX = -1, int iFlashY = -1, bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false) = 0;
 
-	void addMessage(PlayerTypes ePlayer, bool bForce, int iLength, CvWString szString, LPCTSTR pszSound,
-			InterfaceMessageTypes eType, LPCSTR pszIcon, ColorTypes eFlashColor,
-			Coordinates coord, bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false)
+	void addMessage(PlayerTypes ePlayer, bool bForce, int iLength, CvWString szString, const Coordinates coord, LPCTSTR pszSound,
+			InterfaceMessageTypes eType = MESSAGE_TYPE_INFO, LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,
+			bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false)
 			{
 				addMessage(ePlayer, bForce, iLength, szString, pszSound,
 						eType, pszIcon, eFlashColor,
 						coord.x(), coord.y(), bShowOffScreenArrows, bShowOnScreenArrows);
 			}
 
+public:
 	virtual void addCombatMessage(PlayerTypes ePlayer, CvWString szString) = 0;
 	virtual void addQuestMessage(PlayerTypes ePlayer, CvWString szString, int iQuestId) = 0;
 	virtual void addTutorialMessage(PlayerTypes ePlayer, CvWString szString) = 0;

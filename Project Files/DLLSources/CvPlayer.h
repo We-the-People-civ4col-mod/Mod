@@ -13,6 +13,11 @@
 #include "CvTalkingHeadMessage.h"
 #include "CvTradeRouteGroup.h" //R&R mod, vetiarvind, trade groups
 
+#define LOCATION_FLAGS_NONE						0x0000
+#define LOCATION_FLAGS_COASTAL				0x0001
+#define LOCATION_FLAGS_DEEP_COASTAL		0x0002
+#define LOCATION_FLAGS_INLAND					0x0004
+
 class CvDiploParameters;
 class CvPlayerAI;
 class CvPlayerCivEffect;
@@ -133,25 +138,25 @@ public:
 	// R&R, ray, Church Favours - END
 
 	//WTP, ray Kings Used Ship - START
-	void cacheUsedShipData(int iUsedShipPrice, int iUsedShipClassType);
-	int getUsedShipPrice(int iUsedShipClassType);
-	int getRandomUsedShipClassTypeID();
+	void cacheUsedShipData(int iUsedShipPrice, UnitClassTypes iUsedShipClassType);
+	int getUsedShipPrice(UnitClassTypes iUsedShipClassType);
+	UnitClassTypes getRandomUsedShipClassTypeID();
 	bool isKingWillingToTradeUsedShips();
 	void decreaseCounterForUsedShipDeals();
 	void doAILogicforUsedShipDeals();
 	void resetCounterForUsedShipDeals();
-	void acquireUsedShip(int iUsedShipClassType, int iPrice);
+	void acquireUsedShip(UnitClassTypes iUsedShipClassType, int iPrice);
 	//WTP, ray Kings Used Ship - END
 
 	// WTP, ray, Foreign Kings, buy Immigrants - START
-	void cacheForeignImmigrantData(int iForeignImmigrantPrice, int iForeignImmigrantClassType);
-	int getForeignImmigrantPrice(int iForeignImmigrantClassType, int iKingID);
-	int getRandomForeignImmigrantClassTypeID();
+	void cacheForeignImmigrantData(int iForeignImmigrantPrice, UnitClassTypes iForeignImmigrantClassType);
+	int getForeignImmigrantPrice(UnitClassTypes iForeignImmigrantClassType, int iKingID);
+	UnitClassTypes getRandomForeignImmigrantClassTypeID();
 	bool isForeignKingWillingToTradeImmigrants(int iKingID);
 	void decreaseCounterForForeignKingImmigrantsDeals();
 	void doAILogicforForeignImmigrants();
 	void resetCounterForForeignImmigrantsDeals();
-	void acquireForeignImmigrant(int iForeignImmigrantClassType, int iPrice);
+	void acquireForeignImmigrant(UnitClassTypes iForeignImmigrantClassType, int iPrice);
 	// WTP, ray, Foreign Kings, buy Immigrants - START
 
 	// R&R, ray, Bargaining - Start
@@ -1076,13 +1081,13 @@ protected:
 	//WTP, ray Kings Used Ship - START
 	int m_iTimerUsedShips;
 	int m_iCachedUsedShipPrice;
-	int m_iCachedUsedShipClassTypeID;
+	UnitClassTypes m_iCachedUsedShipClassTypeID;
 	//WTP, ray Kings Used Ship - END
 
 	// WTP, ray, Foreign Kings, buy Immigrants - START
 	int m_iTimerForeignImmigrants;
 	int m_iCachedForeignImmigrantPrice;
-	int m_iCachedForeignImmigrantClassTypeID;
+	UnitClassTypes m_iCachedForeignImmigrantClassTypeID;
 	// WTP, ray, Foreign Kings, buy Immigrants - END
 
 	int m_iChurchFavoursReceived; // R&R, ray, Church Favours
@@ -1219,6 +1224,10 @@ protected:
 	// WTP, jooe: move "make peace with all on player kill" logic to team kill and remove it here
 	// void makePeaceWithAll();
 	void kill();
+
+	bool buyUnitFromParentPlayer(PlayerTypes eSellingPlayer, const char *szUnitClass, int iNumUnits, CvWString szIDTag = CvWString(), int iPriceToPay = 0, int iLocationFlags = LOCATION_FLAGS_NONE, bool bReceivePrice = true);
+	bool buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitClassTypes eUnitClass, int iNumUnits, CvWString szIDTag = CvWString(), int iPriceToPay = 0, int iLocationFlags = LOCATION_FLAGS_NONE, bool bReceivePrice = true);
+	bool buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitType, int iNumUnits, CvWString szIDTag = CvWString(), int iPriceToPay = 0, int iLocationFlags = LOCATION_FLAGS_NONE, bool bReceivePrice = true);
 
 public:
 	int getIDSecondPlayerFrenchNativeWar() const;//WTP, ray, Colonial Intervention In Native War - START

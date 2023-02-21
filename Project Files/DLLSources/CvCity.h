@@ -721,7 +721,7 @@ public:
 	virtual void AI_setPort(bool iNewValue) = 0;
 	virtual int AI_getRequiredYieldLevel(YieldTypes eYield) = 0;
 	virtual void AI_educateStudent(int iUnitId) = 0;
-	virtual bool AI_isWorkforceHack() = 0;
+	virtual bool AI_isWorkforceHack() const = 0;
 	virtual void AI_setWorkforceHack(bool bNewValue) = 0;
 	virtual int AI_calculateAlarm(PlayerTypes eIndex) const = 0;
 
@@ -903,6 +903,8 @@ protected:
 	mutable EnumMap<YieldTypes,bool> m_em_bYieldRankValid;
 
 	bool m_bHasHurried; // Needed to remember (cache) if a hurry was conducted and we should complete the current build
+	int m_iSlaveWorkerProductionBonus;
+
 	void doGrowth();
 	void doYields();
 	void addTempHurryYieldsForProduction();
@@ -985,6 +987,7 @@ public:
 	int getSlaveRevoltReductionBonus() const;
 	int getSlaveWorkerProductionBonus() const;
 	//WTP, ray, Slave Hunter and Slave Master
+	void updateSlaveWorkerProductionBonus(int iBonus = 0);
 
 protected:
 	// traderoute popup arrays
