@@ -53,13 +53,13 @@
     <TEXT>
         <Tag>TXT_KEY_GOODY_BUCCANNEER</Tag>
         <English>You've discovered a [COLOR_UNIT_TEXT]buccanneer[COLOR_REVERT]! [NEWLINE]At first he seems ready to attack but after a moment of indecision he lowers his weapons and asks to join you.</English>
-        <German>Ihr habt einen [COLOR_UNIT_TEXT]Bukanier[COLOR_REVERT] entdeckt! [NEWLINE]Zuerst scheint es er würde angreifen, aber nach kurzer Zeit senkt er seine Waffen und bittet sich uns anschließen zu dürfen.</German>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]Bukanier[COLOR_REVERT] entdeckt! [NEWLINE]Zuerst scheint es, als würde er angreifen wollen, aber nach kurzer Zeit senkt er seine Waffen und bittet darum, sich uns anschließen zu dürfen.</German>
         <Russian>Вы обнаружили [COLOR_UNIT_TEXT]буканьера[COLOR_REVERT]! [NEWLINE]Сначала кажется, что он хочет атаковать вас, но после секундной нерешительности опускает оружие и просит разрешения присоединиться к вам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_SLAVE_HUNTER</Tag>
         <English>You've discovered a [COLOR_UNIT_TEXT]slave hunter[COLOR_REVERT] searching for his bounty!</English>
-        <German>Ihr habt einen [COLOR_UNIT_TEXT]Sklavenjäger[COLOR_REVERT] auf der Suche nach Entflohene entdeckt!</German>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]Sklavenjäger[COLOR_REVERT] auf der Suche nach Entflohenen entdeckt!</German>
         <Russian>Вы обнаружили [COLOR_UNIT_TEXT]охотника за рабами[COLOR_REVERT], который пропал без вести во время погони за одним из своих беглых рабов!</Russian>
     </TEXT>
     <TEXT>
@@ -70,14 +70,14 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_MESTIZZO</Tag>
-        <English>You've discovered a [COLOR_UNIT_TEXT]young Native man[COLOR_REVERT] in the woods. [NEWLINE]Taking a closer look you guess that one of his parents might have been white. You ask him to come with you.</English>
-        <German>Ihr habt einen [COLOR_UNIT_TEXT]jungen Uhreinwohner[COLOR_REVERT] in den Wäldern entdeckt! [NEWLINE]Bei näherer Betrachtung fällt euch auf, dass einer seiner Elternteile Europäisch gewesen zu sein scheint.</German>
-        <Russian>В лесу вы обнаруживаете [COLOR_UNIT_TEXT]молодого индейца[COLOR_REVERT]. [NEWLINE]Присмотревшись, вы догадываетесь, что один из его родителей мог быть белым. Вы предлагаете ему пойти с вами.</Russian>
+        <English>You've discovered a [COLOR_UNIT_TEXT]young Native man[COLOR_REVERT] in the woods.[NEWLINE]Taking a closer look you guess that one of his parents might have been white. You ask him to come with you.</English>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]jungen Ureinwohner[COLOR_REVERT] in den Wäldern entdeckt! [NEWLINE]Bei näherer Betrachtung fällt euch auf, dass einer seiner Elternteile Europäisch gewesen zu sein scheint.</German>
+        <Russian>В лесу вы обнаруживаете [COLOR_UNIT_TEXT]молодого индейца[COLOR_REVERT].[NEWLINE]Присмотревшись, вы догадываетесь, что один из его родителей мог быть белым. Вы предлагаете ему пойти с вами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_MULATTO</Tag>
         <English>You've discovered a [COLOR_UNIT_TEXT]young Black man[COLOR_REVERT]! [NEWLINE]Your first thought is that he's a runaway slave. Then he tells you that his father was the white owner of his black mother who drove her out into the wilderness when she got pregnant.</English>
-        <German>Ihr habt einen [COLOR_UNIT_TEXT]jungen Schwarzen[COLOR_REVERT] in den Wäldern entdeckt! [NEWLINE] Ihr haltet ihn zuerst für einen entlaufenen Sklaven. Doch er erzählt euch, dass sein Vater der weiße Besitzer seiner Mutter war, der sie in die Wildnis schickte als sie schwanger wurde.</German>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]jungen Schwarzen[COLOR_REVERT] in den Wäldern entdeckt! [NEWLINE]Ihr haltet ihn zuerst für einen entlaufenen Sklaven. Doch er erzählt euch, dass seine Mutter von ihrem weißen Besitzer, seinem Vater, in die Wildnis geschickt wurde, nachdem sie schwanger geworden war.</German>
         <Russian>Вы обнаружили [COLOR_UNIT_TEXT]молодого чернокожего парня[COLOR_REVERT]! [NEWLINE]Первая мысль, которая пришла к вам голову, что это беглый раб. Но он рассказывает вам, что его отец был белым владельцем его черной матери, которую тот выгнал из поместья, когда она забеременела. И вместе с несколькими вещами он дал им вольную.</Russian>
     </TEXT>
     <TEXT>
