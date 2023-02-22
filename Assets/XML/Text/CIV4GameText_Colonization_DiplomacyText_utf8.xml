@@ -1776,7 +1776,7 @@
         <German>Beweist zur Abwechslung mal ein bisschen Verstand, [CT_NAME]. Akzeptiert diesen Handel!</German>
         <Italian>Dammi un dimostrazione della tua intelligenza, [CT_NAME]. Accetta queste condizioni!</Italian>
         <Spanish>Mostrad algo de inteligencia para variar, [CT_NAME]. ¡Aceptad este trato!</Spanish>
-        <Russian>йцукен</Russian>
+        <Russian>Подумайте, [CT_NAME], и примите это предложение!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_OFFER_DEAL_3</Tag>
@@ -1785,7 +1785,7 @@
         <German>Wir bieten Euch diesen Handel an. Ich würde vorschlagen, Ihr schlagt ein!</German>
         <Italian>L'[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] ti offre questa possibilità di commercio. Ti suggerisco di accettarla!</Italian>
         <Spanish>El [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] os ofrece este intercambio. ¡Os sugiero que lo aceptéis!</Spanish>
-        <Russian>Подумайте, [CT_NAME], и примите это предложение!</Russian>
+        <Russian>Мы предлагаем вам эту сделку. Я считаю, вам стоит согласиться!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FUR_OFFER_DEAL_4</Tag>
@@ -3036,6 +3036,7 @@
         <German>Wir fordern dies als Tribut von Euch!</German>
         <Italian>Vogliamo il seguente tributo!</Italian>
         <Spanish>¡Exigimos lo siguiente como tributo!</Spanish>
+        <Russian>Мы требуем это в качестве дани!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_2</Tag>
@@ -3044,6 +3045,7 @@
         <German>Erfüllt unsere Forderungen oder macht Euch bereit, die unschönen Konsequenzen zu tragen, [CT_NAME]!</German>
         <Italian>[CT_NAME], soddisfa le nostre richieste, altrimenti te ne pentirai amaramente.</Italian>
         <Spanish>[CT_NAME], haced lo que os exigimos o ateneos a las consecuencias.</Spanish>
+        <Russian>[CT_NAME], выполни наши требования или пострадаешь от последствий.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_3</Tag>
@@ -3052,6 +3054,7 @@
         <German>Ihr wärt gut beraten, uns zu geben, was wir verlangen!</German>
         <Italian>Faresti una cosa saggia a darci ciò che vogliamo.</Italian>
         <Spanish>Sería prudente por vuestra parte que nos dierais lo que queremos.</Spanish>
+        <Russian>Было бы мудро с вашей стороны дать нам то, что мы хотим.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_4</Tag>
@@ -3060,6 +3063,7 @@
         <German>Kommt unserer Forderung lieber nach ...</German>
         <Italian>Dacci ciò che vogliamo o preparati a essere distrutto.</Italian>
         <Spanish>Dadnos lo que queremos o disponeos a ser destruidos.</Spanish>
+        <Russian>Лучше подчинись нашему требованию...</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_5</Tag>
@@ -3068,6 +3072,7 @@
         <German>Seid nicht dumm, [CT_NAME], und erfüllt unsere Forderungen!</German>
         <Italian>Ricorri a tutta la tua saggezza, [CT_NAME], e dacci ciò che vogliamo.</Italian>
         <Spanish>Sed razonable, [CT_NAME], y aceptad nuestras exigencias.</Spanish>
+        <Russian>Будь мудр, [CT_NAME], и подчинись нашим требованиям.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_1</Tag>
@@ -3076,6 +3081,7 @@
         <German>Wir können das auf die leichte oder auf die harte Tour erledigen. Was ist Euch lieber?</German>
         <Italian>Possiamo farla facile o difficile. Quale preferisci?</Italian>
         <Spanish>Podemos hacerlo por las buenas o por las malas. ¿Qué preferís?</Spanish>
+        <Russian>Мы можем сделать это простым способом или трудным. Какой ты предпочитаешь?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_2</Tag>
@@ -3084,6 +3090,7 @@
         <German>Wollt Ihr uns nicht ein kleines Geschenk zukommen lassen, um unsere bereits seit langem währende Freundschaft ein wenig zu bekräftigen, [CT_NAME]?</German>
         <Italian>In nome della nostra lunga amicizia, [CT_NAME], perché non ci fai questo piccolo dono?</Italian>
         <Spanish>En aras de nuestra larga amistad, [CT_NAME], ¿no nos haríais este pequeño regalo?</Spanish>
+        <Russian>Ради нашей долгой дружбы, [CT_NAME], не подаришь ли ты нам этот небольшой подарок?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_3</Tag>
@@ -3092,6 +3099,7 @@
         <German>Wir könnten ein wenig Unterstützung gebrauchen, [CT_NAME]. Seid Ihr bereit, Euren langjährigen Freunden und Verbündeten Hilfe zu gewähren?</German>
         <Italian>Venerabile [CT_NAME], i tuoi vecchi amici e alleati hanno bisogno del tuo aiuto. Li aiuterai?</Italian>
         <Spanish>Camarada [CT_NAME], necesitamos vuestra ayuda. ¿No contribuiréis a nuestra duradera amistad y alianza?</Spanish>
+        <Russian>Друг [CT_NAME], нам нужна помощь. Неужели вы не поможете своему давнему другу и союзнику?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_4</Tag>
@@ -3100,6 +3108,7 @@
         <German>Gebt uns, was wir verlangen, [CT_NAME]! Andernfalls kommen wir zu Euch und holen es uns.</German>
         <Italian>Dacci ciò che vogliamo, [CT_NAME], altrimenti ce lo verremo a prendere.</Italian>
         <Spanish>Dadnos lo que queremos, [CT_NAME], o iremos y lo cogeremos.</Spanish>
+        <Russian>Дайте нам то, что мы хотим, [CT_NAME], прежде чем мы придем и возьмем это силой.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_5</Tag>
@@ -3108,6 +3117,7 @@
         <German>Das ist es, was wir brauchen, [CT_NAME]. Der Fortbestand unserer freundschaftlichen Beziehungen dürfte Euch doch wohl weit mehr wert sein als das, oder?</German>
         <Italian>Questo è ciò che vogliamo, [CT_NAME]. La nostra lunga amicizia vale sicuramente di più.</Italian>
         <Spanish>Esto es lo que necesitamos, [CT_NAME]. ¡Seguro que conservar nuestra amistad vale mucho más!</Spanish>
+        <Russian>Вот что нам нужно, [CT_NAME]. Конечно, наша неизменная дружба стоит гораздо больше!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_6</Tag>
@@ -3116,6 +3126,7 @@
         <German>Das [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE:2][COLOR_REVERT] wüsste es durchaus zu schätzen, wenn Euer äußerst verwundbares Land uns geben würde, was wir verlangen!</German>
         <Italian>L'[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] ti sarà molto grato se la tua nazione terribilmente vulnerabile darà ciò che desideriamo.</Italian>
         <Spanish>El [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] os estaría muy agradecido si vuestro país, terriblemente vulnerable, nos diera lo que queremos.</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] были бы очень признательны, если бы ваша беззащитная страна дала нам то, что мы хотим.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_7</Tag>
@@ -3124,6 +3135,7 @@
         <German>Der Fortbestand unserer freundschaftlichen Beziehungen bringt viele Vorteile mit sich, [CT_NAME]. Und das sollte Euch doch diesen kleinen Tribut wert sein, oder etwa nicht?</German>
         <Italian>La nostra prolungata amicizia fornisce molti benefici, [CT_NAME]. Possibile che non meriti nemmeno un piccolo tributo in cambio?</Italian>
         <Spanish>Nuestra amistad os proporciona constantes beneficios, [CT_NAME]. ¿No creéis que vale la pena este pequeño tributo a cambio?</Spanish>
+        <Russian>Наша постоянная дружба приносит много пользы, [CT_NAME]. Неужто она не стоит этой малости в ответ?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_8</Tag>
@@ -3132,6 +3144,7 @@
         <German>Zahlt einfach, [CT_NAME], sofort! Bitte?</German>
         <Italian>Anticipa i soldi, [CT_NAME], per favore...</Italian>
         <Spanish>Pagadlo ahora mismo, [CT_NAME]. Por favor...</Spanish>
+        <Russian>Заплати прямо сейчас, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_1</Tag>
@@ -3140,6 +3153,7 @@
         <German>Es gehört sich einfach, [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] zum Zeichen der Ehrerbietung eine kleine Spende zukommen zu lassen!</German>
         <Italian>Per l'onore [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:3][COLOR_REVERT] dobbiamo chiederti di fare una piccola donazione.</Italian>
         <Spanish>El honor de [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] exige que os pidamos una pequeña donación.</Spanish>
+        <Russian>Честь [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] требует, чтобы вы сделали нам небольшое пожертвование.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_2</Tag>
@@ -3148,6 +3162,7 @@
         <German>Im Namen der Freundschaft solltet Ihr es in Erwägung ziehen, uns ein kleines Geschenk zukommen zu lassen.</German>
         <Italian>Per il bene di questa amicizia, dovresti prendere in considerazione la possibilità di farci un piccolo omaggio.</Italian>
         <Spanish>Por el bien de nuestra amistad, tal vez queráis pensar en ofrecernos un pequeño donativo.</Spanish>
+        <Russian>Ради дружбы, вы могли бы подумать о том, чтобы сделать нам небольшой подарок.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_3</Tag>
@@ -3156,6 +3171,7 @@
         <German>Erfüllt unsere Forderungen oder bereitet Euch auf den Kampf vor, [CT_NAME]!</German>
         <Italian>Accetta le nostre richieste, [CT_NAME], o preparati a combattere!</Italian>
         <Spanish>Acceded a nuestras exigencias, [CT_NAME], ¡o disponeos a luchar!</Spanish>
+        <Russian>Соглашайтесь на наши требования, [CT_NAME], или приготовьтесь к бою!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_4</Tag>
@@ -3164,6 +3180,7 @@
         <German>Es ist Euch ja bekannt, dass [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] [CT_CIV_SHORT] als gleichberechtigter Freund und Partner zur Seite steht. Jetzt aber noch kurz ein Wort zu unserem Honorar ...</German>
         <Italian>Sappi che [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:2][COLOR_REVERT] è amico e alleato di [CT_CIV_SHORT:3]. Ora, riguardo i nostri affari...</Italian>
         <Spanish>Sabed que [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] está al lado de [CT_CIV_SHORT] como nación amiga e igual. Y ahora, respecto a lo que os pedimos a cambio...</Spanish>
+        <Russian>Вы знаете, что [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] здесь как друг и партнер [CT_CIV_SHORT]. А теперь пару слов о нашем гонораре...</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_5</Tag>
@@ -3172,6 +3189,7 @@
         <German>In Frieden mit uns zu leben, hat seinen Preis, [CT_NAME]! Seid Ihr bereit, ihn zu zahlen?</German>
         <Italian>La pace con l'[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] ha un prezzo, [CT_NAME]. Pagherai?</Italian>
         <Spanish>La paz con el [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] tiene un precio, [CT_NAME]. ¿Lo vais a pagar?</Spanish>
+        <Russian>Мир с нами имеет свою цену, [CT_NAME]. Вы будете платить?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_7</Tag>
@@ -3180,6 +3198,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] braucht diesen Tribut, [CT_NAME]. Werdet Ihr Euch fügen oder müssen wir darum kämpfen?</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:1][COLOR_REVERT] ha bisogno di questa risorsa, [CT_NAME]. Ce la darai di tua spontanea volontà oppure dovremo combattere?</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] necesita esto, [CT_NAME]. ¿Nos lo daréis o tendremos que luchar por ello?</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] нуждается в этом, [CT_NAME]. Ты отдашь его нам добровольно или нам прийти с оружием?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_1</Tag>
@@ -3188,6 +3207,7 @@
         <German>Überlegt Euch das jetzt gut, [CT_NAME]. Wenn Ihr diesen Tribut an uns entrichtet, werden wir unsere freundschaftlichen Beziehungen fortsetzen können. Wenn nicht, müssen wir unsere Beziehungen völlig neu überdenken!</German>
         <Italian>Pensaci bene, [CT_NAME]: se ci darai il tributo, la nostra amicizia proseguirà. In caso contrario, dovremo seriamente rivalutare il nostro rapporto.</Italian>
         <Spanish>Pensadlo bien, [CT_NAME], si nos rendís tributo, nuestra amistad perdurará. Si no, tendremos que replantearnos nuestra relación.</Spanish>
+        <Russian>Хорошо подумай, [CT_NAME]: если ты отдашь нам дань, наша дружба продолжится. В противном случае нам придется пересмотреть наши отношения.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_2</Tag>
@@ -3196,6 +3216,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] verlangt Tribut von Euch.</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:1][COLOR_REVERT] richiede il pagamento di un tributo.</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] exige que le paguéis tributo.</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] требуют от вас отдать дань уважения.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_3</Tag>
@@ -3204,6 +3225,7 @@
         <German>Gebt uns, was wir verlangen, oder bereitet Euch auf Eure Vernichtung vor!</German>
         <Italian>Dacci ciò che vogliamo o ti distruggeremo.</Italian>
         <Spanish>Dadnos lo que queremos o seréis destruidos.</Spanish>
+        <Russian>Дайте нам то, что мы хотим, или будешь уничтожен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_4</Tag>
@@ -3212,6 +3234,7 @@
         <German>Das mächtige Volk von [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] verlangt ein Zeichen Eurer Ehrerbietung!</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:2][COLOR_REVERT] chiede che tu riconosca la sua superiorità con un piccolo gesto.</Italian>
         <Spanish>La poderosa tierra de [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] exige que reconozcáis su superioridad con una pequeña muestra de aprecio.</Spanish>
+        <Russian>Могущественные [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] требуют от вас подношения в знак покорности.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_6</Tag>
@@ -3220,6 +3243,7 @@
         <German>Zeit ist vergänglich und auch [CT_CIV_SHORT] wird bald der Vergangenheit angehören, wenn Ihr uns dieses Zeichen des Respekts verweigert.</German>
         <Italian>Il tempo scarseggia e anche la memoria del [CT_CIV_SHORT:2] se dovessi rifiutare questo gesto di rispetto.</Italian>
         <Spanish>Se acaba el tiempo, como se acabará el recuerdo de [CT_CIV_SHORT] si nos negáis esta pequeña muestra de aprecio.</Spanish>
+        <Russian>Время уходит, и для [CT_CIV_SHORT] останется совсем немного, если вы откажетесь отдать мне эту дань в знак уважения.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_7</Tag>
@@ -3228,6 +3252,7 @@
         <German>Ich frage mich, ob Ihr wohl bereit wärt, uns ein kleines Geschenk zu machen, [CT_NAME]? In Anerkennung der freundschaftlichen Beziehungen zwischen dem mächtigen [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] Volk und Euren schwachen, wehrlosen Leuten?</German>
         <Italian>Mi chiedo se ti andrebbe di offrirci un piccolo dono, [CT_NAME], per onorare la vecchia amicizia tra [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:2][COLOR_REVERT] e la tua debole gente.</Italian>
         <Spanish>Me pregunto si nos haríais un pequeño regalo, [CT_NAME], en honor a la eterna amistad entre la poderosa civilización de [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] y vuestro pueblo débil e indefenso.</Spanish>
+        <Russian>Не могли бы вы подарить нам небольшой подарок, [CT_NAME], в честь вечной дружбы между могущественными [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] и вашим слабым и беззащитным народом?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_8</Tag>
@@ -3236,6 +3261,7 @@
         <German>Ich rate Euch, unseren Forderungen nachzukommen, wenn Euch am Überleben Eures Volkes gelegen ist!</German>
         <Italian>Se vuoi allungare la vita della tua nazione, ti suggerisco di soddisfare le nostre richieste.</Italian>
         <Spanish>En aras de la supervivencia de vuestro país, os sugiero que atendáis nuestras exigencias.</Spanish>
+        <Russian>Ради выживания вашей страны я предлагаю вам выполнить наши требования.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_REJECTED_POWER_WEAKER_1</Tag>
@@ -3244,6 +3270,7 @@
         <German>Nun gut! Ich hoffe, Ihr werdet diese Entscheidung nicht irgendwann bereuen, [CT_NAME].</German>
         <Italian>Molto bene, ti auguro di non pentirti della decisione [CT_NAME].</Italian>
         <Spanish>Muy bien. Espero que no os arrepintáis de esta decisión, [CT_NAME].</Spanish>
+        <Russian>Очень хорошо. Я надеюсь, что вы не пожалеете об этом решении, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_REJECTED_POWER_WEAKER_2</Tag>
@@ -3252,6 +3279,7 @@
         <German>Ihr solltet in Zukunft besser darüber nachdenken, wen Ihr zum Freund haben und wen Ihr Euch zum Feind machen wollt, [CT_NAME]!</German>
         <Italian>In futuro faresti meglio a ricordati chi sono i tuoi veri amici [CT_NAME].</Italian>
         <Spanish>En el futuro, será mejor que recordéis quiénes son vuestros amigos, [CT_NAME].</Spanish>
+        <Russian>На будущее вам лучше запомнить, кто ваши друзья, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_REJECTED_POWER_WEAKER_3</Tag>
@@ -3260,6 +3288,7 @@
         <German>Ihr enttäuscht mich schon wieder, [CT_NAME]! Es wäre besser für Euch, wenn das nie wieder passiert!</German>
         <Italian>Ci hai delusi ancora una volta, [CT_NAME]. Ci auguriamo che non si ripeta più.</Italian>
         <Spanish>Volvéis a decepcionarnos, [CT_NAME]. Os recomiendo que no dejéis que se repita.</Spanish>
+        <Russian>Ты снова меня разочаровал, [CT_NAME]. Следи, чтобы это больше не повторилось.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_REJECTED_POWER_WEAKER_4</Tag>
@@ -3268,6 +3297,7 @@
         <German>Nun, das ist nicht sehr nett, wenn Ihr mich fragt.</German>
         <Italian>Non è molto gentile da parte tua, se posso dire la mia.</Italian>
         <Spanish>Vaya, si se me permite, esto no es muy amable por vuestra parte.</Spanish>
+        <Russian>Если вы спросите меня, на мой взгляд это не очень мило с вашей стороны.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_REJECTED_POWER_WEAKER_5</Tag>
@@ -3276,6 +3306,7 @@
         <German>So geht das nicht mehr lange gut mit Euch und uns.</German>
         <Italian>Che peste vi colga!</Italian>
         <Spanish>Maldita sea, ¡otro intento frustrado!</Spanish>
+        <Russian>Чёрт возьми, ещё одна неудачная попытка!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_REJECTED_POWER_WEAKER_6</Tag>
@@ -3284,6 +3315,7 @@
         <German>Ihr seid ziemlich überheblich, [CT_NAME]! Eines Tages wird Euch das noch den Kopf kosten!</German>
         <Italian>Sei arrogante, [CT_NAME]. Un giorno la pagherai molto cara.</Italian>
         <Spanish>Sois arrogante, [CT_NAME]. Algún día eso os llevará a la destrucción.</Spanish>
+        <Russian>Ты слишком высокомерен, [CT_NAME]. Когда-нибудь это приведет к тебя к гибели.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_REJECTED_POWER_EQUAL_1</Tag>
@@ -3292,6 +3324,7 @@
         <German>Eure törichte Sturheit wird Euch irgendwann noch den Kopf kosten, [CT_NAME]!</German>
         <Italian>La tua testardaggine ti porterà alla distruzione, [CT_NAME].</Italian>
         <Spanish>Esa terquedad estúpida será vuestra perdición, [CT_NAME].</Spanish>
+        <Russian>Глупое упрямство приводит к гибели, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_REJECTED_POWER_EQUAL_2</Tag>
@@ -3300,6 +3333,7 @@
         <German>Nun gut! Ihr müsst ja schließlich wissen, was Ihr tut!</German>
         <Italian>Molto bene, così sia.</Italian>
         <Spanish>Muy bien. Queda sobre vuestra conciencia.</Spanish>
+        <Russian>Что ж! В конце концов, вы должны знать, что делаете!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_REJECTED_POWER_EQUAL_3</Tag>
@@ -3308,6 +3342,7 @@
         <German>Ich glaube, Euch ist nicht klar, mit wem Ihr es hier zu tun habt, [CT_NAME]! Ich rate Euch dringend, die Sache schleunigst noch mal zu überdenken!</German>
         <Italian>Non credo tu abbia realizzato con chi stai parlando, [CT_NAME]. Ti suggerisco di riconsiderare la tua posizione, e alla svelta!</Italian>
         <Spanish>Creo que no os dais cuenta de con quién estáis hablando, [CT_NAME]. Os sugiero que lo reconsideréis, ¡y rápido!</Spanish>
+        <Russian>Не думаю, что вы понимаете, с кем имеете дело, [CT_NAME]. Я предлагаю вам передумать, и быстро!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_REJECTED_POWER_EQUAL_4</Tag>
@@ -3316,6 +3351,7 @@
         <German>Ihr spielt mit dem Leben Eurer Leute, [CT_NAME]! Seid Ihr wirklich bereit, diesen Preis zu zahlen?</German>
         <Italian>Stai giocando con la vita della tua gente, [CT_NAME]. Siete pronti a pagare il prezzo della sconfitta?</Italian>
         <Spanish>Jugáis con la vida de vuestro pueblo, [CT_NAME]. ¿Seguro que queréis pagar ese precio si perdéis?</Spanish>
+        <Russian>Вы рискуете жизнями своих людей, [CT_NAME]. Готовы ли вы заплатить эту цену, если вы проиграете?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_REJECTED_POWER_EQUAL_5</Tag>
@@ -3324,6 +3360,7 @@
         <German>Wie Ihr wollt! Beim nächsten Mal werde ich nicht mehr so nett fragen!</German>
         <Italian>Bene. La prossima volta non sarò così gentile.</Italian>
         <Spanish>Muy bien. ¡La próxima vez no os lo pediré tan amablemente!</Spanish>
+        <Russian>Отлично. В следующий раз я не буду просить так вежливо!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_REJECTED_POWER_EQUAL_6</Tag>
@@ -3332,6 +3369,7 @@
         <German>Ihr spielt mit dem Feuer, [CT_NAME]! Passt auf, dass Ihr Euch nicht die Finger verbrennt!</German>
         <Italian>Stai giocando col fuoco, [CT_NAME]. Attenzione a non bruciarti.</Italian>
         <Spanish>Estáis jugando con fuego, [CT_NAME]. Procurad no quemaros.</Spanish>
+        <Russian>Вы играете с огнём, [CT_NAME]. Смотрите не обожгитесь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_REJECTED_POWER_STRONGER_1</Tag>
@@ -3340,6 +3378,7 @@
         <German>Das werdet Ihr noch bereuen!</German>
         <Italian>Te ne pentirai, miserabile creatura!</Italian>
         <Spanish>¡Os arrepentiréis de esto, miserable criatura!</Spanish>
+        <Russian>Вы пожалеете об этом!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_REJECTED_POWER_STRONGER_2</Tag>
@@ -3348,6 +3387,7 @@
         <German>Ihr strapaziert meine Geduld, [CT_NAME]!</German>
         <Italian>Stai mettendo a dura prova la mia pazienza, [CT_NAME]!</Italian>
         <Spanish>¡Ponéis a prueba mi paciencia, [CT_NAME]!</Spanish>
+        <Russian>Ты испытываешь мое терпение, [CT_NAME]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_REJECTED_POWER_STRONGER_3</Tag>
@@ -3356,6 +3396,7 @@
         <German>Na schön! Ich schlage vor, Ihr fangt schon mal an, Eure Truppen zusammenzukratzen, [CT_NAME], denn die werdet Ihr schon sehr bald brauchen!</German>
         <Italian>Molto bene. Ti suggerisco di chiamare a raccolta i tuoi soldati, [CT_NAME]. Ne avrai bisogno.</Italian>
         <Spanish>Muy bien. Os recomiendo que empecéis a movilizar a vuestros soldaditos, [CT_NAME]. Vais a necesitarlos en breve.</Spanish>
+        <Russian>Очень хорошо. Я советую вам собрать свои войска, [CT_NAME]. Они понадобится вам очень скоро.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_REJECTED_POWER_STRONGER_4</Tag>
@@ -3364,6 +3405,7 @@
         <German>Das wird Folgen haben.</German>
         <Italian>Dovresti ragionare prima di perdere la pazienza, [CT_NAME], perché potrebbero esserci delle gravi conseguenze.</Italian>
         <Spanish>Deberíais cuidaros de no enojar a vuestros superiores, [CT_NAME], porque puede traer consecuencias desagradables.</Spanish>
+        <Russian>Это будет иметь последствия.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_REJECTED_POWER_STRONGER_5</Tag>
@@ -3372,6 +3414,7 @@
         <German>Keine kluge Entscheidung.</German>
         <Italian>Folle! Sai che potrei schiacciarti come un chicco d'uva?</Italian>
         <Spanish>¡Idiota! ¿No sois conscientes de que os aplastaré como a cucarachas?</Spanish>
+        <Russian>Не разумное решение.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_REJECTED_POWER_STRONGER_6</Tag>
@@ -3380,6 +3423,7 @@
         <German>Das werdet Ihr noch bereuen, darauf könnt Ihr Euch verlassen.</German>
         <Italian>Come osi rifiutare la mia richiesta estremamente generosa? Te ne pentirai, lo giuro!</Italian>
         <Spanish>¡Cómo osáis negaros a estas peticiones tan razonables! ¡Os arrepentiréis de esto, os lo prometo!</Spanish>
+        <Russian>Вы пожалеете об этом, я обещаю!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_JOIN_DENIED_1</Tag>
@@ -3388,6 +3432,7 @@
         <German>Überlegt sorgfältig, auf welcher Seite Ihr stehen wollt.</German>
         <Italian>Dovresti scegliere attentamente con chi schierarti.</Italian>
         <Spanish>Debéis escoger con más esmero en qué bando estáis.</Spanish>
+        <Russian>Хорошо подумайте, на чьей стороне вы хотите быть.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_JOIN_DENIED_2</Tag>
@@ -3396,6 +3441,7 @@
         <German>Na schön. Dann fällt mehr Beute für uns ab!</German>
         <Italian>Molto bene. Più bottino per noi.</Italian>
         <Spanish>Muy bien. ¡Más saquearemos!</Spanish>
+        <Russian>Очень хорошо. Это просто означает, что для нас будет больше добычи!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_JOIN_DENIED_3</Tag>
@@ -3404,6 +3450,7 @@
         <German>Tatsächlich? Ich hatte ja keine Ahnung, dass Ihr so ängstlich seid!</German>
         <Italian>Davvero? Non sapevo della tua timidezza.</Italian>
         <Spanish>¿De verdad? ¡No tenía ni idea de que fuerais tan tímidos!</Spanish>
+        <Russian>Серьёзно? Я и не подозревал, что ты такой робкий!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_JOIN_DENIED_4</Tag>
@@ -3412,6 +3459,7 @@
         <German>Ich bin schwer enttäuscht!</German>
         <Italian>Molto deludente.</Italian>
         <Spanish>Qué decepcionante.</Spanish>
+        <Russian>Я очень разочарован!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_JOIN_DENIED_5</Tag>
@@ -3420,6 +3468,7 @@
         <German>Ich hoffe, Ihr wisst, was Ihr tut, [CT_NAME]!</German>
         <Italian>Spero che tu sappia cosa stai facendo, [CT_NAME].</Italian>
         <Spanish>Espero que sepáis lo que hacéis, [CT_NAME].</Spanish>
+        <Russian>Надеюсь, ты знаешь, что делаешь, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_JOIN_DENIED_6</Tag>
@@ -3428,6 +3477,7 @@
         <German>Das werden wir uns merken, [CT_NAME]!</German>
         <Italian>Ce ne ricorderemo, [CT_NAME]!</Italian>
         <Spanish>¡No olvidaremos esto, [CT_NAME]!</Spanish>
+        <Russian>Мы запомним это, [CT_NAME]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_STOP_DENIED_1</Tag>
@@ -3436,6 +3486,7 @@
         <German>Das nehmen wir Euch sehr übel, [CT_NAME]!</German>
         <Italian>Non la prenderemo alla leggera, [CT_NAME]!</Italian>
         <Spanish>¡No pasaremos esto por alto, [CT_NAME]!</Spanish>
+        <Russian>Мы очень плохо к этому относимся, [CT_NAME]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_WORST_ENEMY_1</Tag>
@@ -3444,6 +3495,7 @@
         <German>Nehmt Euch vor unserem schlimmsten Feind in Acht - [COLOR_HIGHLIGHT_TEXT][OUR_WORST_ENEMY][COLOR_REVERT]! Vertrauen ist hier unangebracht!</German>
         <Italian>Attenzione al nostro più pericoloso nemico - [COLOR_HIGHLIGHT_TEXT][OUR_WORST_ENEMY:2][COLOR_REVERT]! Non possiamo fidarci di loro.</Italian>
         <Spanish>¡Cuidado con el [COLOR_HIGHLIGHT_TEXT][OUR_WORST_ENEMY][COLOR_REVERT], nuestro peor enemigo! No conviene fiarse.</Spanish>
+        <Russian>Остерегайтесь нашего злейшего врага - [COLOR_HIGHLIGHT_TEXT][OUR_WORST_ENEMY][COLOR_REVERT]! Им нельзя доверять.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_WORST_ENEMY_TRADING_1</Tag>
@@ -3452,6 +3504,7 @@
         <German>Wir raten Euch, Eure Handelsbeziehungen mit unserem ärgsten Feind, [COLOR_HIGHLIGHT_TEXT][OUR_WORST_ENEMY][COLOR_REVERT], schleunigst einzustellen!</German>
         <Italian>Vorremmo che la smettessi di commerciare con il nostro nemico giurato - [COLOR_HIGHLIGHT_TEXT][OUR_WORST_ENEMY:2][COLOR_REVERT]!</Italian>
         <Spanish>Os sugerimos que dejéis de comerciar con el [COLOR_HIGHLIGHT_TEXT][OUR_WORST_ENEMY][COLOR_REVERT], nuestro enemigo más acérrimo.</Spanish>
+        <Russian>Мы призываем вас прекратить торговать с нашим заклятым врагом - [COLOR_HIGHLIGHT_TEXT][OUR_WORST_ENEMY][COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_SOMETHING_ELSE_1</Tag>
@@ -3460,6 +3513,7 @@
         <German>Gibt es noch etwas zu besprechen?</German>
         <Italian>Di cos'altro vuoi discutere?</Italian>
         <Spanish>¿De qué más queréis hablar?</Spanish>
+        <Russian>Что еще вы хотели бы обсудить?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_1</Tag>
@@ -3468,6 +3522,7 @@
         <German>Ja?</German>
         <Italian>Sì?</Italian>
         <Spanish>¿Sí?</Spanish>
+        <Russian>Да?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_TARGET_1</Tag>
@@ -3476,6 +3531,7 @@
         <German>Wo sollen wir angreifen?</German>
         <Italian>Dove dovremmo attaccare?</Italian>
         <Spanish>¿Dónde debemos atacar?</Spanish>
+        <Russian>Где мы должны атаковать?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_TARGET_CITY_1</Tag>
@@ -3484,6 +3540,7 @@
         <German>Wir werden unser Bestes geben!</German>
         <Italian>Faremo del nostro meglio!</Italian>
         <Spanish>¡Lo haremos lo mejor que podamos!</Spanish>
+        <Russian>Мы сделаем все возможное!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_WELL_1</Tag>
@@ -3492,6 +3549,7 @@
         <German>Nun?</German>
         <Italian>Quindi?</Italian>
         <Spanish>¿Y bien?</Spanish>
+        <Russian>И?</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_WAR_RESPONSE_1</Tag>
@@ -3500,6 +3558,7 @@
         <German>So sei es!</German>
         <Italian>Così sia.</Italian>
         <Spanish>Así sea.</Spanish>
+        <Russian>Быть по сему.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_PEACE_1</Tag>
@@ -3508,6 +3567,7 @@
         <German>Es soll Frieden herrschen!</German>
         <Italian>Nella nostra epoca regnerà la pace!</Italian>
         <Spanish>¡Que reine la paz en nuestro tiempo!</Spanish>
+        <Russian>Да будет мир!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_PROPOSE_1</Tag>
@@ -3516,6 +3576,7 @@
         <German>Schlagt Ihr ein?</German>
         <Italian>Accetterai questa proposta?</Italian>
         <Spanish>¿Queréis aceptar este trato?</Spanish>
+        <Russian>Вы согласны?</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACCEPT_1</Tag>
@@ -3596,6 +3657,7 @@
         <German>Lasst uns dieses sinnlose Kämpfen beenden und Frieden schließen!</German>
         <Italian>Interrompiamo questi combattimenti senza senso e dichiariamo la pace!</Italian>
         <Spanish>¡Detengamos esta lucha absurda y hagamos las paces!</Spanish>
+        <Russian>Прекратим эту бессмысленную войну и объявим мир!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_OFFER_PEACE_1</Tag>
@@ -3604,6 +3666,7 @@
         <German>Was verlangt Ihr, damit wieder Frieden herrscht?</German>
         <Italian>Seppelliamo l'ascia di guerra. Qual è il prezzo della pace?</Italian>
         <Spanish>Enterremos el hacha de guerra. ¿Qué precio tiene la paz?</Spanish>
+        <Russian>Давайте зароем топор войны. Какова цена мира?</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CURRENT_DEALS_1</Tag>
@@ -3720,7 +3783,7 @@
         <German>Einverstanden. Wir werden sofort zur Religion [COLOR_SELECTED_TEXT][OUR_STATE_RELIGION][COLOR_REVERT] konvertieren. (Religion konvertieren)</German>
         <Italian>D'accordo. Ci convertiremo alla religione [COLOR_SELECTED_TEXT][OUR_STATE_RELIGION:2][COLOR_REVERT] immediatamente. (Conversione religiosa)</Italian>
         <Spanish>Aceptamos. Nos convertiremos al [COLOR_SELECTED_TEXT][OUR_STATE_RELIGION][COLOR_REVERT] de inmediato. (Convertirse a una religión)</Spanish>
-        <Russian></Russian>
+        <Russian>Я согласен. Мы немедленно примем религию [COLOR_SELECTED_TEXT][OUR_STATE_RELIGION][COLOR_REVERT]. (сменить религию)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_NO_CONVERT_1</Tag>
@@ -3729,6 +3792,7 @@
         <German>Unser Volk wird seinen Glauben niemals aufgeben!</German>
         <Italian>La nostra gente non abbandonerà mai le proprie credenze.</Italian>
         <Spanish>Nuestro pueblo nunca renunciará a sus creencias.</Spanish>
+        <Russian>Наш народ никогда не откажется от своих убеждений.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_JOIN_WAR_1</Tag>
@@ -3737,6 +3801,7 @@
         <German>Auf in die Schlacht! (Krieg erklären)</German>
         <Italian>Che questa guerra abbia inizio! (Dichiara guerra)</Italian>
         <Spanish>¡Que empiece esta guerra! (Declarar la guerra)</Spanish>
+        <Russian>Давайте начнем эту войну! (Объявить войну)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_NO_JOIN_WAR_1</Tag>
@@ -3745,6 +3810,7 @@
         <German>Tut mir Leid - nein.</German>
         <Italian>Mi spiace, ma in questo momento non siamo in grado di affrontare una guerra.</Italian>
         <Spanish>Lo sentimos, pero ahora no nos podemos permitir una guerra.</Spanish>
+        <Russian>Извините, но мы не можем позволить себе войну прямо сейчас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_STOP_TRADING_1</Tag>
@@ -3753,6 +3819,7 @@
         <German>Ihr habt Recht! Wir können sie auch nicht ausstehen! (Vereinbarungen auflösen)</German>
         <Italian>Hai ragione, anche noi non li sopportiamo più! (Annulla gli accordi)</Italian>
         <Spanish>Estáis en lo cierto, a nosotros también nos perjudican. (Cancelar tratos)</Spanish>
+        <Russian>Вы правы, мы их тоже терпеть не можем! (Отменить сделки)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_NO_STOP_TRADING_1</Tag>
@@ -3761,6 +3828,7 @@
         <German>Tut mir Leid, aber wir können ihnen nicht einfach den Rücken zukehren.</German>
         <Italian>Mi spiace, ma non possiamo voltar loro le spalle.</Italian>
         <Spanish>Lo sentimos, pero ahora no podemos echarnos atrás.</Spanish>
+        <Russian>Извините, но мы не можем просто так отвернуться от них.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_SOMETHING_ELSE_1</Tag>
@@ -3821,6 +3889,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Sein Herz ist verdorben, seine Seele unrein. (Wütend)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] è il flagello del nostro pianeta! (Tono furioso)</Italian>
         <Spanish>¡[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] es un azote para el mundo! (Furiosa)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Сердце его испорчено, душа его нечиста. (В ярости)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_FURIOUS_2</Tag>
@@ -3829,6 +3898,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ich verschlucke lieber einen lebenden Bandwurm, als dass ich mit diesem Mann noch ein Wort wechsele. (Wütend)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] è un serpente a sonagli! Non mi fido di [NUM1:lui:lei]! (Tono furioso)</Italian>
         <Spanish>¡[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] es una serpiente en el Edén! ¡No os fiéis de [NUM1:él:ella]! (Furiosa)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Я скорее проглотил бы живого червя, чем стал бы разговаривать с этим человеком. (В ярости)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_FURIOUS_3</Tag>
@@ -3837,6 +3907,7 @@
         <German>Untersteht Euch, den Namen dieses Bastards in meiner Anwesenheit auch nur auszusprechen. (Wütend)</German>
         <Italian>Nemmeno io mi fido di [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]! (Tono furioso)</Italian>
         <Spanish>Ni nos gusta %s1 ni confiamos en [NUM1:él:ella]. (Furiosa)</Spanish>
+        <Russian>Не смей даже произносить имя этого ублюдка в моем присутствии. (В ярости)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_FURIOUS_4</Tag>
@@ -3845,6 +3916,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] ist ein böser Schatten, der auf diese Welt fällt. (Wütend)</German>
         <Italian>Una persona decisamente malvagia! (Tono furioso)</Italian>
         <Spanish>¡Es canalla a más no poder! (Furiosa)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] — злая тень, падающая на этот мир. (В ярости)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_FURIOUS_5</Tag>
@@ -3853,6 +3925,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Seltsam. Immer wenn ich diesen Namen höre, riecht es plötzlich nach Kojotenscheiße. (Wütend)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] è [NUM1:una schifosa disonesta:uno schifoso disonesto]! (Tono furioso)</Italian>
         <Spanish>¡[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] es [NUM1:un cretino embustero:una cretina embustera]! (Furiosa)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Всякий раз, когда я слышу это имя, я чувствую запах скунса. (В ярости)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_FURIOUS_6</Tag>
@@ -3861,6 +3934,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Möge er bald seinem Schöpfer begegnen. (Wütend)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] ha chiuso con me! (Tono furioso)</Italian>
         <Spanish>¡[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] está [NUM1:muerto:muerta] para mí! (Furiosa)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Пусть он скоро встретит своего Создателя. (В ярости)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_FURIOUS_7</Tag>
@@ -3869,6 +3943,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] ist ein bösartiger Dämon. (Wütend)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] è una persona veramente cattiva. (Tono furioso)</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] es muy mala persona. (Furiosa)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] — злобный демон. (В ярости)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_FURIOUS_8</Tag>
@@ -3877,6 +3952,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Feige, aber gefährlich. (Wütend)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? [NUM1:Un babbuino traditore:Una babbuina traditrice]. (Tono furioso)</Italian>
         <Spanish>¿[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Es [NUM1:un:una] chimpancé [NUM1:traicionero:traicionera] y cobarde. (Furiosa)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Трусливый, но опасный. (В ярости)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_FURIOUS_9</Tag>
@@ -3885,6 +3961,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] ist nicht mal das Schwarze unter meinem Fingernagel wert. (Wütend)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] non vale lo sterco di un cane. (Tono furioso)</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] no vale ni una boñiga pinchada en un palo. (Furiosa)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] — грязь под ногтями россомахи. (В ярости)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_FURIOUS_10</Tag>
@@ -3893,6 +3970,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ich bete täglich, dass ihm ein Unglück widerfährt. (Wütend)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] è il male assoluto! (Tono furioso)</Italian>
         <Spanish>¡[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] es el mal encarnado! (Furiosa)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Я молюсь каждый день, чтобы с ним случилось какое-нибудь несчастье. (В ярости)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_ANNOYED_1</Tag>
@@ -3901,6 +3979,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Er missfällt mir. (Verärgert)</German>
         <Italian>Il comportamento di [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] ci sta letteralmente irritando! (Tono infastidito)</Italian>
         <Spanish>¡Cada vez nos irrita más el comportamiento de [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]! (Molesta)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Я не люблю его. (Раздраженно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_ANNOYED_2</Tag>
@@ -3909,6 +3988,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Sein Volk nimmt sich mehr von dieser Welt, als ihm zusteht. (Verärgert)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] è una persona estremamente fastidiosa. (Tono infastidito)</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] es una persona tremendamente fastidiosa. (Molesta)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Его люди берут от этого мира больше, чем заслуживают. (Раздраженно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_ANNOYED_3</Tag>
@@ -3917,6 +3997,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ein anmaßender Mann. (Verärgert)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] sta mettendo a dura prova la mia pazienza. (Tono infastidito)</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] pone a prueba mi paciencia. (Molesta)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Слишком самонадеянный. (Раздраженно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_ANNOYED_4</Tag>
@@ -3925,6 +4006,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ein grober Kerl. (Verärgert)</German>
         <Italian>Ad essere sinceri, [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] non mi piace molto. (Tono infastidito)</Italian>
         <Spanish>La verdad es que no apreciamos mucho a [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. (Molesta)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Грубый парень. (Раздраженно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_ANNOYED_5</Tag>
@@ -3933,6 +4015,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Mein Volk erzählt sich immer mehr Geschichten über ihn. Es sind keine schönen. (Verärgert)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] è più [NUM1:noioso:noiosa] di quanto valga. (Tono infastidito)</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] no trae más que problemas. (Molesta)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Мои люди рассказывают все больше и больше историй о нем. И все они не хорошие. (Раздраженно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_ANNOYED_6</Tag>
@@ -3941,6 +4024,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ich habe kürzlich geträumt, er wäre gestorben. Als ich erwachte, schien die Sonne und die Vögel zwitscherten. (Verärgert)</German>
         <Italian>Credo che il mondo potrebbe essere un posto migliore senza la presenza di [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. (Tono infastidito)</Italian>
         <Spanish>Creo que el mundo estaría mejor sin [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. (Molesta)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Недавно мне приснилось, что он умер. Когда я проснулся, светило солнце и пели птицы. (Раздраженно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_ANNOYED_7</Tag>
@@ -3949,6 +4033,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Seid Ihr ein Freund von ihm? Ich hoffe nicht. (Verärgert)</German>
         <Italian>Non ho una grande considerazione di [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. (Tono infastidito)</Italian>
         <Spanish>No tenemos muy buena opinión de [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT], que digamos. (Molesta)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Вы его друг? Надеюсь нет. (Раздраженно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_ANNOYED_8</Tag>
@@ -3957,6 +4042,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ich höre diesen Namen keineswegs gerne. (Verärgert)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] è esattamente come dovrebbe essere. (Tono infastidito)</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] no es trigo limpio. (Molesta)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Мне вообще не нравится, когда упоминают его имя. (Раздраженно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_ANNOYED_9</Tag>
@@ -3965,6 +4051,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ich rufe meinen jüngsten Sohn mitunter mit diesem Namen. Er weiß dann, dass er etwas verbrochen hat. (Verärgert)</German>
         <Italian>Secondo me dice solo un sacco di baggianate. (Tono infastidito)</Italian>
         <Spanish>En nuestra opinión, esa persona es todo palabras huecas. (Molesta)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Я иногда так зову своего младшего сына. Тогда он знает, что он был плохим. (Раздраженно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_ANNOYED_10</Tag>
@@ -3973,6 +4060,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ich habe lange nicht mehr an ihn gedacht. Es war eine schöne Zeit. (Verärgert)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] è come il mal di schiena. (Tono infastidito)</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] es una mosca cojonera. (Molesta)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Я давно не думал о нем. Это было прекрасное время. Зачем ты напомнил мне о нем? (Раздраженно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_CAUTIOUS_1</Tag>
@@ -3981,6 +4069,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Nun, ich kenne ihn. Aber ich kenne ihn nicht gut. (Vorsichtig)</German>
         <Italian>Ancora non sappiamo cosa pensare di [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. (Tono cauto)</Italian>
         <Spanish>No estamos muy seguros de qué pensar de [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. (Cauta)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ну, я знаю его. Но я не знаю его хорошо. (Осторожно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_CAUTIOUS_2</Tag>
@@ -3989,6 +4078,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Er verfolgt sicher seine Pläne. Ich wüsste nur gerne, welche es sind. (Vorsichtig)</German>
         <Italian>Credo che [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] sia una persona a posto. (Tono cauto)</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] no es un problema para nosotros, suponemos. (Cauta)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Уверен, у него есть планы. Я просто хотел бы знать, какие они. (Осторожно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_CAUTIOUS_3</Tag>
@@ -3997,6 +4087,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Nun, ich habe Gutes über ihn gehört. Aber auch Schlechtes. (Vorsichtig)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] ha la sua utilità. (Tono cauto)</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] cumple su papel. (Cauta)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Я слышал хорошие вещи о нем. Но и плохие тоже. (Осторожно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_CAUTIOUS_4</Tag>
@@ -4005,6 +4096,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ich bin ihm keineswegs feindlich gesonnen. Aber er ist auch nicht mein Freund. (Vorsichtig)</German>
         <Italian>Non ho problemi con [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. (Tono cauto)</Italian>
         <Spanish>No tenemos problemas con [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. (Cauta)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Я не враг ему, но и он не мой друг. (Осторожно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_CAUTIOUS_5</Tag>
@@ -4013,6 +4105,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Der Mann ist schwer einzuschätzen. (Vorsichtig)</German>
         <Italian>Credo che [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] sia in gamba. (Tono cauto)</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] no es un problema para nosotros, suponemos. (Cauta)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Человека сложно оценить. (Осторожно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_CAUTIOUS_6</Tag>
@@ -4021,6 +4114,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Tja. Hmm. Ich weiß nicht. (Vorsichtig)</German>
         <Italian>Ad essere sinceri, non so ancora cosa pensare di [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. (Tono cauto)</Italian>
         <Spanish>No sabemos qué pensar de [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT], para ser sinceros. (Cauta)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ну... Хм... Я не знаю. (Осторожно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_CAUTIOUS_7</Tag>
@@ -4029,6 +4123,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Habt Ihr etwas Interessantes über ihn zu berichten? Nein? Hmm. Ich auch nicht. (Vorsichtig)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] è una persona a posto, almeno finché [NUM1:gli:le] terrai gli occhi addosso. (Tono cauto)</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] no es un problema siempre que no [NUM1:lo:la] perdáis de vista. (Cauta)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Вы можете сказать о нем что-нибудь интересное? Нет? Хм... И я нет. (Осторожно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_CAUTIOUS_8</Tag>
@@ -4037,6 +4132,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ich wüsste gerne, was er vorhat. (Vorsichtig)</German>
         <Italian>Ci fidiamo di [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. Qualche volta. (Tono cauto)</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] nos parece de fiar. A veces. (Cauta)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Я хотел бы знать, что он задумал. (Осторожно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_CAUTIOUS_9</Tag>
@@ -4045,6 +4141,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ein undurchsichtiger Mann. (Vorsichtig)</German>
         <Italian>Non so cosa pensare di [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. (Tono cauto)</Italian>
         <Spanish>No sabemos qué opinión forjarnos de [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. (Cauta)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Непонятный мужчина. (Осторожно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_CAUTIOUS_10</Tag>
@@ -4053,6 +4150,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ich habe schon Einiges über ihn gehört. Manches gereicht ihm zur Ehre. Anderes nicht. (Vorsichtig)</German>
         <Italian>Con [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] ho adottato una strategia di "attesa". (Tono cauto)</Italian>
         <Spanish>Respecto a [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT], nuestra política es mantenernos a la expectativa. (Cauta)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Я много слышал о нем. Некоторые вещи заслуживают доверия, другие не очень. (Осторожно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_PLEASED_1</Tag>
@@ -4061,6 +4159,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] hat sich bislang nichts zuschulden kommen lassen. (Erfreut)</German>
         <Italian>Noi andiamo abbastanza d'accordo con [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. (Tono contento)</Italian>
         <Spanish>Nos llevamos bien con [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. (Amable)</Spanish>
+        <Russian>Пока что [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] ни в чем не виноват. (Довольный)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_PLEASED_2</Tag>
@@ -4069,6 +4168,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ich habe nichts Nachteiliges über ihn zu berichten. (Erfreut)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] è [NUM1:un caro amico:una cara amica]. (Tono contento)</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] es [NUM1:nuestro amigo:nuestra amiga]. (Amable)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Не могу сказать ничего плохого о нем. (Довольный)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_PLEASED_3</Tag>
@@ -4077,6 +4177,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Der Mann hinterlässt bislang einen guten Eindruck. (Erfreut)</German>
         <Italian>Niente da dire da parte nostra! (Tono contento)</Italian>
         <Spanish>¡Ninguna queja al respecto! (Amable)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Пока он производит приятное впечатление. (Довольный)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_PLEASED_4</Tag>
@@ -4085,6 +4186,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Freundlich, vernünftig. Man kommt gut mit ihm aus. (Erfreut)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Una brava persona per guardarti le spalle. (Tono contento)</Italian>
         <Spanish>¿[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Es una buena persona. (Amable)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Дружелюбный, рассудительный. С ним легко найти общий язык. (Довольный)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_PLEASED_5</Tag>
@@ -4093,6 +4195,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] hat sich uns gegenüber immer vernünftig verhalten. (Erfreut)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] ci ha sempre trattati bene. (Tono contento)</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] se ha portado bien con nosotros. (Amable)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] всегда хорошо относился к нам. (Довольный)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_PLEASED_6</Tag>
@@ -4101,6 +4204,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Er zeigt ein gewisses Maß an Anstand. Zumindest bislang. (Erfreut)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Mi piace. (Tono contento)</Italian>
         <Spanish>¿[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Nos cae bien. (Amable)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Он нам нравится. (Довольный)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_PLEASED_7</Tag>
@@ -4109,6 +4213,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ein rechtschaffener Mann. Dies ist zumindest mein erster Eindruck. (Erfreut)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] è meglio di molti altri. (Tono contento)</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] es mejor que la mayoría. (Amable)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Праведный человек По крайней мере, это мое первое впечатление. (Довольный)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_PLEASED_8</Tag>
@@ -4117,6 +4222,7 @@
         <German>Ich kann mich über [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] nicht beklagen. (Erfreut)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] non ha problemi con noi. (Tono contento)</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] tiene un trato impecable con nosotros. (Amable)</Spanish>
+        <Russian>Я не могу жаловаться на [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. (Довольный)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_PLEASED_9</Tag>
@@ -4125,6 +4231,7 @@
         <German>Wir kommen gut miteinander aus. (Erfreut)</German>
         <Italian>%s1 è [NUM1:un grande sovrano:una grande sovrana] ed è una garanzia per il suo popolo! (Tono contento)</Italian>
         <Spanish>¡%s1 es [NUM1:un buen:una buena] dirigente y un orgullo para su pueblo! (Amable)</Spanish>
+        <Russian>Мы хорошо ладим друг с другом. (Довольный)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_PLEASED_10</Tag>
@@ -4133,6 +4240,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Der Mann beträgt sich gut. (Erfreut)</German>
         <Italian>Andiamo molto d'accordo con [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. (Tono contento)</Italian>
         <Spanish>Nos llevamos bien con [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. (Amable)</Spanish>
+        <Russian>Я очень хорошо лажу с [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. (Довольный)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_FRIENDLY_1</Tag>
@@ -4141,6 +4249,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ein Bruder im Geiste. (Liebevoll)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] è [NUM1:un nostro caro amico:una nostra cara amica]. (Tono amichevole)</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] es [NUM1:un amigo de confianza:una amiga de confianza]. (Amistosa)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Брат по духу. (Дружелюбно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_FRIENDLY_2</Tag>
@@ -4149,6 +4258,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ein Geschenk des Schöpfers für diese Welt. (Liebevoll)</German>
         <Italian>Mi fido ciecamente di [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]! (Tono amichevole)</Italian>
         <Spanish>¡Le confiaríamos la vida a [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]! (Amistosa)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Дар этому миру от Создателя. (Дружелюбно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_FRIENDLY_3</Tag>
@@ -4157,6 +4267,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Einer der tapfersten und anständigsten Männer, die ich kenne. (Liebevoll)</German>
         <Italian>Una grande amicizia ci lega. (Tono amichevole)</Italian>
         <Spanish>Gozamos de una gran amistad. (Amistosa)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Один из самых храбрых и порядочных людей, которых я знаю. (Дружелюбно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_FRIENDLY_4</Tag>
@@ -4165,6 +4276,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Er genießt meinen Respekt. (Liebevoll)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] è [NUM1:un vero amico:una vera amica]. (Tono amichevole)</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] es [NUM1:un amigo:una amiga] de verdad. (Amistosa)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Я уважаю этого прекрасного человека. (Дружелюбно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_FRIENDLY_5</Tag>
@@ -4173,6 +4285,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ein Mann, der Weisheit und Anstand zeigt. (Liebevoll)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] è sempre [NUM1:stato un amico:stata un'amica] fedele. (Tono amichevole)</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] es para nosotros [NUM1:un amigo:una amiga] fiel. (Amistosa)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Человек, который проявляет мудрость и порядочность. (Дружелюбно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_FRIENDLY_6</Tag>
@@ -4181,6 +4294,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ein Mann von Ehre. (Liebevoll)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] è sempre [NUM1:stato un amico:stata un'amica] fedele. (Tono amichevole)</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] es para nosotros [NUM1:un amigo:una amiga] fiel. (Amistosa)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Человек чести. (Дружелюбно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_FRIENDLY_7</Tag>
@@ -4189,6 +4303,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ich schätze mich glücklich, ihn zum Freunde zu haben. (Liebevoll)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] è [NUM1:un vecchio amico:una vecchia amica]. (Tono amichevole)</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] es [NUM1:un viejo:una vieja] colega [NUM1:nuestro:nuestra]. (Amistosa)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Я считаю, что мне повезло, что он мой друг. (Дружелюбно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_FRIENDLY_8</Tag>
@@ -4197,6 +4312,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ein edler Mann. (Liebevoll)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] è un'amicizia sulla quale contare e una piacevole compagnia. (Tono amichevole)</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] es [NUM1:un amigo:una amiga] fiel y [NUM1:un compañero:una compañera] excepcional. (Amistosa)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Благородный человек. (Дружелюбно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_FRIENDLY_9</Tag>
@@ -4205,6 +4321,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ein Mann mit einem großen Herzen. (Liebevoll)</German>
         <Italian>Mi fido di [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] completamente! (Tono amichevole)</Italian>
         <Spanish>¡[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] nos cae bien y tenemos plena confianza en [NUM1:él:ella]! (Amistosa)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Человек с большим сердцем. (Дружелюбно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_FRIENDLY_10</Tag>
@@ -4213,6 +4330,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Ich schätze ihn wie einen Bruder. (Liebevoll)</German>
         <Italian>Sarebbe difficile trovare amicizie migliori. (Tono amichevole)</Italian>
         <Spanish>Es difícil de encontrar una amistad mejor. (Amistosa)</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Я дорожу им, как братом. (Дружелюбно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_JOIN_WAR_1</Tag>
@@ -4221,6 +4339,7 @@
         <German>Das [COLOR_HIGHLIGHT_TEXT]%s1:3[COLOR_REVERT] Volk bedroht den Frieden dieser Welt. Wir müssen es in die Schranken weisen, bevor Schlimmeres passiert. Seid Ihr dabei, [CT_NAME]?</German>
         <Italian>I [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] sono un pericolo per tutti. Unisciti a noi e li toglieremo di mezzo.</Italian>
         <Spanish>[NUM1:El:La:Los:Las] [COLOR_HIGHLIGHT_TEXT]%s1:3[COLOR_REVERT] son una amenaza para todos nosotros. Uníos a nosotros para borrarlos del mapa.</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1:3[COLOR_REVERT] люди угрожают спокойствию во всем мире. Мы должны остановить их, пока не случилось что-то плохое. Ты с нами, [CT_NAME]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_STOP_TRADING_1</Tag>
@@ -4229,6 +4348,7 @@
         <German>Ihr habt Eure Grenzen für das [COLOR_HIGHLIGHT_TEXT]%s1:2[COLOR_REVERT] Volk geöffnet? Wisst Ihr denn nicht, dass seine Männer verschlagen sind, seine Weiber läufig und seine Kinder seelenlos geboren werden? Ihr solltet diese Gestalten aus Eurem Land vertreiben!</German>
         <Italian>Questo atteggiamento non può più essere tollerato; ti chiediamo di annullare i tuoi accordi con [NUM1:il vile:la vile:i vili:le vili] [COLOR_HIGHLIGHT_TEXT]%s1:3[COLOR_REVERT]!</Italian>
         <Spanish>Ya no podemos permitirnos ser tolerantes. ¡Os exigimos que canceléis vuestro trato con [NUM1:el vil:la vil:los viles:las viles] [COLOR_HIGHLIGHT_TEXT]%s1:3[COLOR_REVERT]!</Spanish>
+        <Russian>Вы открыли свои границы для [COLOR_HIGHLIGHT_TEXT]%s1:2[COLOR_REVERT]? Разве ты не знаешь, что их мужчины коварны, их женщины безнравственны, а их дети бездушны? Изгоните этих существ со своей земли!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_OFFER_CITY_1</Tag>
@@ -4237,6 +4357,7 @@
         <German>Als Zeichen unseres Respekts bieten wir Euch diese Siedlung an.</German>
         <Italian>Vorremmo offrirti questo insediamento in segno di rispetto.</Italian>
         <Spanish>Nos gustaría ofreceros este asentamiento como muestra de respeto.</Spanish>
+        <Russian>Мы хотели бы предложить это поселение в знак нашего уважения.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_PENN_1</Tag>
@@ -4245,6 +4366,7 @@
         <German>Greetings, kind brother [CT_NAME]! Ein frühlingshafter Tag heute, nicht wahr? Ein laues Lüftchen, weiße Wolkenwatte am Himmel - dies scheint der Garten Eden zu sein. Frieden auf Erden, dieses Versprechen könnte in Pennsylvania wahr werden. Hatte ich mich schon vorgestellt? [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], ich werde diese Neue Welt zu einem Hort der Freiheit und der Brüderlichkeit machen.</German>
         <Italian>Saluti, gentile signore, mi chiamo [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Rappresento la civiltà [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] e auspico tra di noi una convivenza pacifica.</Italian>
         <Spanish>Saludos, amable señor, me llamo [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Represento a los [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT] y espero que ambos pueblos coexistamos pacíficamente.</Spanish>
+        <Russian>Приветствую тебя, дорогой друг. Меня зовут [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Я представляю [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT] и надеюсь, что мы сможем мирно сосуществовать.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_BOLIVAR_1</Tag>
@@ -4253,6 +4375,7 @@
         <German>Es ist mir eine Freude, Euch und Euer Gefolge begrüßen zu dürfen, [CT_NAME]! Mein Freund, Ihr seid sicher weitgereist, Ihr seht müde aus. Lasst mich Euch helfen und Euch den Weg zeigen. Da geht es lang, immer Richtung Sonnenaufgang. Da seid Ihr hergekommen, da müsst Ihr wieder hin.</German>
         <Italian>Sono contento di incontrarti, [CT_NAME]! Ti offro un trattato di pace... e ti suggerisco di accettarlo.</Italian>
         <Spanish>Hola, amigo! Soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Me alegro mucho de conoceros, [CT_NAME]. Os ofrezco un tratado de paz. Os sugiero que lo aceptéis.</Spanish>
+        <Russian>Рад познакомиться с вами, [CT_NAME]! Я предлагаю вам мирный договор и... Я предлагаю вам принять его.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_CHAMPLAIN_1</Tag>
@@ -4261,6 +4384,7 @@
         <German>Bonjour, monsieur. Quel plaisir! Ich heiße Euch willkommen. Seid unser Gast, solange es uns beliebt. Haben Euch schon meine indianischen Freunde begrüßt? Nun, ich denke nicht, Ihr tragt ja noch Euren Skalp unter der Perücke. Doppelt hält besser, was? Verzeiht meine Witze. Und lacht vor allem über sie! Dann werde ich bei den Rothäuten auch ein gutes Wort für Euch einlegen.</German>
         <Italian>Il popolo della civiltà [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] ti dà il benvenuto. Non vedo l'ora che ci sia tra di noi una pace duratura. Cosa rispondi?</Italian>
         <Spanish>El pueblo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT] os da la bienvenida. Espero que haya una paz duradera entre ambos. ¿Y vos?</Spanish>
+        <Russian>Бонжур, месье. Quel plaisir! Приветствую тебя. Будьте нашим гостем столько, сколько нам угодно. Мои индейские друзья поприветствовали вас? Ну, я так не думаю. У тебя все еще скальп под париком. Лучше перестраховаться, чем потом сожалеть, а? Прости мои шутки. И главное, смейтесь над ними. Здесь я могу замолвить за тебя словечко.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_DONCK_1</Tag>
@@ -4269,6 +4393,7 @@
         <German>Hartelijk welkom! Gestattet, dass ich Euch meine Aufwartung mache, Mijnheer. [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Rechtsanwalt, Naturforscher und gewählter Repräsentant der [COLOR_HIGHLIGHT_TEXT]niederländischen[COLOR_REVERT] Expedition. Ich muss gestehen, die Schönheiten dieser Neuen Welt berauschen mich.</German>
         <Italian>Sono onorato di incontrarti, grande [CT_NAME]! Come può aiutarti, oggi, la civiltà [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]?</Italian>
         <Spanish>Es un honor conocer al gran [CT_NAME]. ¿En qué pueden ayudaros hoy los [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]?</Spanish>
+        <Russian>Сердечно приветствую! Позвольте мне засвидетельствовать вам свое почтение, Mijnheer. [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], юрист, натуралист и избранный представитель [COLOR_HIGHLIGHT_TEXT]голландской[COLOR_REVERT] экспедиции. Должен признаться, красоты этого Нового Света опьяняют меня.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_FRONTENAC_1</Tag>
@@ -4277,6 +4402,7 @@
         <German>Bonjour, [CT_NAME]. Ich bin mir sicher, in diesem weiten Land ist Platz genug für zwei bedeutende Männer. Für mich und für meinen König. Kommt mir nicht in die Quere, Bursche. Und nun zieht von dannen, bevor ich Euch arretieren lasse. Und richtet Eurem Herrn aus, dass die Neue Welt ein Protektorat des französischen Königs ist und ich, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], sein treuer Gouverneur.</German>
         <Italian>È un piacere incontrarti, [CT_NAME]. Ora troviamoci un angolino e discutiamo del futuro di questo Nuovo Mondo.</Italian>
         <Spanish>Es un placer conoceros, [CT_NAME]. Y ahora vayamos a algún sitio a hablar del futuro del Nuevo Mundo.</Spanish>
+        <Russian>Добрый день, [CT_NAME]. Я уверен, что на этой огромной земле достаточно места для двух важных людей. Для меня и для моего Короля. Не стой у меня на пути, парень. А теперь уходите, пока я вас не арестовал. Скажи своему господину, что Новый Свет находится под протекторатом французского Короля, а я, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], являюсь его верным губернатором.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_HERNAN_CORTES_1</Tag>
@@ -4285,6 +4411,7 @@
         <German>Buenas dias, Fremder. Gestatten: [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Konquistador, Glücksritter und Schatzjäger. Ich bin auf dem Weg zum Gottkönig dieses heidnischen Reiches, um mich von ihm ehren und beschenken zu lassen. Kommt mir nicht in die Quere, Streuner!</German>
         <Italian>Salve, amico. Il mio nome è [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], ma puoi chiamarmi Hernán. Basta che non mi chiami troppo tardi per la cena.</Italian>
         <Spanish>Hola, amigo. Soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], pero podéis llamarme Hernán. Pero no me llaméis tarde para la cena.</Spanish>
+        <Russian>Буэнас диас, незнакомец. Разрешите представиться: [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], конкистадор, наемник удачи и охотник за сокровищами. Я иду к королю-богу этого языческого царства, чтобы забрать то, что принадлежит мне по праву: его честь и сокровища. Не стой у меня на пути!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_STUYVESANT_1</Tag>
@@ -4293,6 +4420,7 @@
         <German>Domme boer, was treibt Ihr denn hier? Nein, nennt mir nicht Euren Namen, und die Legitimationen Eures Landesherrn könnt Ihr auch in der Tasche lassen. Hört mir nur kurz zu und verschwindet dann. Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], werde der Verwalter dieser Neuen Welt sein und bin schon heute Euer überdrüssig.</German>
         <Italian>Saluti, sono [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Anche se di sicuro lo sapevi già. Ora andiamo a parlare di qualcosa di importante... me.</Italian>
         <Spanish>Saludos, yo soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Aunque seguro que vos ya lo sabíais. Y ahora hablemos de algo importante... de mí.</Spanish>
+        <Russian>Глупый крестьянин, что ты здесь делаешь? Нет, не говори мне свое имя. Можешь даже не доставать из кармана верительные грамоты своего сюзерена. Просто послушай меня немного, а потом уходи. Моё имя [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] и я собираюсь стать администратором этого Нового Мира. И я уже устал от вас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_WASHINGTON_1</Tag>
@@ -4301,6 +4429,7 @@
         <German>Welcome, Sir! I am General [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Ich hatte bereits Botschaft aus meiner Heimat erhalten, dass auch Ihr unterwegs seid in die Neue Welt. It is an honour to meet you, Sir. Ich werde sofort einen Boten gen Europa segeln lassen, mit der frohen Botschaft, dass Ihr die gefahrvolle Überfahrt wohlbehalten überstanden habt. Und dass Ihr in Kürze in Euer Land zurückkehren werdet.</German>
         <Italian>Salve, sono il generale [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. È un onore incontrarti.</Italian>
         <Spanish>Hola, soy el general [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Es un honor conoceros.</Spanish>
+        <Russian>Добро пожаловать, сэр! Меня зовут [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Я получил известие с моей родины, что вы тоже направляетесь в Новый Свет. Для меня большая честь познакомиться с вами, сэр. Я немедленно отправлю гонца в Европу с хорошими новостями о том, что вы благополучно пережили опасный переход и что вы скоро вернетесь в свою страну.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_AGUEYBANA_1</Tag>
@@ -4309,6 +4438,7 @@
         <German>Euer Kanu ist so groß wie ein Wal. Ihr müsst von weit her kommen, Reisender, und hungrig sein. Kommt und esst von unserem Maniokbrei. Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Kazike der [COLOR_HIGHLIGHT_TEXT]Arawak[COLOR_REVERT]. Lacht mit uns, tanzt mit uns und schlaft in unserer Mitte. Seid Ihr uns kein Feind, werden wir Euch ein Freund sein.</German>
         <Italian>Salve, viaggiatore che arriva dal grande mare. Sono il cacique [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] della tribù [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Dividiamoci questa terra e diventiamo amici.</Italian>
         <Spanish>Hola, viajero del Gran Mar. Soy el cacique [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] de la tribu [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:2][COLOR_REVERT]. Compartamos esta tierra y seamos amigos.</Spanish>
+        <Russian>Твоё каноэ размером с кита. Приехав издалека, путник, ты, должно быть, проголодался. Проходи и съешь немного нашей каши из маниоки. Я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], вождь [COLOR_HIGHLIGHT_TEXT]Араваков[COLOR_REVERT]. Смейся с нами, танцуй с нами и отдыхай с нами. Если ты нам не враг, мы будем тебе другом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_CUNHAMBEBE_1</Tag>
@@ -4317,6 +4447,7 @@
         <German>Wahrlich, fremdartig seht Ihr aus, Reisender. Haare wuchern aus Eurem Gesicht, Eure Haut ist weiß wie Salz und Euer Blick starr. Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Kazike der [COLOR_HIGHLIGHT_TEXT]Tupi[COLOR_REVERT]. Wollt Ihr mit uns Waren tauschen, heiße ich Euch willkommen. Doch wohnt ein böser Geist in Eurem Herzen, werden unsere Blasrohre ihn aus Eurem Körper austreiben und Euer Fleisch wird über unseren Feuern garen.</German>
         <Italian>Saluti, viso pallido. Io, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] del popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT], ti do il benvenuto. Facciamo festa in tuo onore.</Italian>
         <Spanish>Hola, rostro pálido. Yo, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] del pueblo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT] os doy la bienvenida. Daremos un festín en vuestro honor.</Spanish>
+        <Russian>Воистину, ты выглядишь странно, путник. На твоем лице растут волосы, твоя кожа бела, как соль, а твой взгляд неподвижен. Я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], вождь [COLOR_HIGHLIGHT_TEXT]Тупи[COLOR_REVERT]. Если вы желаете торговать с нами, я приветствую вас. Если в вашем сердце поселился злой дух, наши духовые ружья изгонят его из вашего тела, а ваша плоть сгорит на нашем огне.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_HUAYNA_CAPAC_1</Tag>
@@ -4325,6 +4456,7 @@
         <German>Seltsam und armselig wirkt Ihr, Fremder. Ihr gebt vor, von hohem Stand zu sein, doch lasst Ihr Euch nicht in Sänften tragen, sondern auf dem Rücken wilder Tiere. Ihr betet weder Sonne noch Erde an, sondern ein kleines Kreuz. Ihr kennt weder Schneckentrompeten noch Knochenflöten und auch nicht die Knotenschrift. Ich sehe kaum Kinder bei Euch, während ich alleine 200 Söhne und Töchter habe. Ihr dauert mich.</German>
         <Italian>L'[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] dà il benvenuto alla popolazione [CT_CIV_ADJ] e alla loro guida, [CT_NAME]. Giochiamo insieme alla palla cerimoniale.</Italian>
         <Spanish>El [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] le da la bienvenida al glorioso pueblo [CT_CIV_ADJ:1] y a su líder, [CT_NAME]. Si jugáis con nosotros al juego ceremonial de la pelota, nosotros haremos lo propio.</Spanish>
+        <Russian>Ты выглядишь потерянным и грустным, незнакомец. Ты притворяетешься высокопоставленным человеком, но тебя несут не в паланкине, а на спине дикого зверя. Вы не поклоняетесь ни солнцу, ни земле, только крошечному кресту. Вы не можете играть на трубах-улитках или костяных флейтах. Вы не понимаете написания узлов. Я не вижу среди вас детей, а у меня одного двести сыновей и дочерей. Я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], правитель [COLOR_HIGHLIGHT_TEXT]Империи Инков[COLOR_REVERT], и мне жаль тебя.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_LOGAN_1</Tag>
@@ -4333,6 +4465,7 @@
         <German>Fremder, ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Oberhaupt der [COLOR_HIGHLIGHT_TEXT]Irokesenliga[COLOR_REVERT], gewählt von den Seneca, Cayuga, Onondaga, Oneida und Mohawk. Einst waren die Brudervölker in einem endlosen Krieg, bis uns der Prophet Deganawidah und der weise Häuptling Hiawatha vereinten. Gleich und frei sind wir in unserem Bund. Begegnet uns mit Achtung, und wir werden auch Euch achten. Ich habe gesprochen.</German>
         <Italian>Salve. Mi chiamo [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], capo e protettore del popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Ti considero un amico. È nel tuo migliore interesse che io non cambi mai idea.</Italian>
         <Spanish>Hola. Soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], jefe y protector del pueblo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT]. Os considero mis amigos. Y más os vale que nunca cambie de opinión.</Spanish>
+        <Russian>Незнакомец, я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], глава [COLOR_HIGHLIGHT_TEXT]Конфедерации ирокезов[COLOR_REVERT], племен Сенека, Каюга, Онондага, Онейда и Могавк. Наши братские народы вели бесконечную войну, пока пророк Деганавида и мудрый вождь Гайавата не объединили нас. В нашем союзе мы все равны и свободны. Относитесь к нам с уважением, чтобы мы также уважали вас. Я сказал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_MANGAS_COLORADAS_1</Tag>
@@ -4341,6 +4474,7 @@
         <German>Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Viele Krieger der [COLOR_HIGHLIGHT_TEXT]Apachen[COLOR_REVERT] haben sich mir angeschlossen, weil ich weiß, wo wir leichte Beute finden. Ihr seht aus wie Beute. Ihr solltet uns großzügige Geschenke geben, dann lassen wir Euch vielleicht genug, dass Ihr weiterleben könnt. Und esst mehr, Bleichgesicht. Ihr seht nicht kräftig genug aus, um eine Marter lange zu ertragen.</German>
         <Italian>Benvenuto. Sono [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] della civiltà [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Prego che tu e il tuo popolo diate tanto valore alla pace quanto gliene diamo noi.</Italian>
         <Spanish>Bienvenido. Soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], de los [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Rezo porque vuestro pueblo valore la paz tanto como nosotros.</Spanish>
+        <Russian>Я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Многие воины [COLOR_HIGHLIGHT_TEXT]Апачей[COLOR_REVERT] присоединились ко мне, потому что я умею охотиться. Вы легко можете стать добычей. Дарите нам щедрые подарки. Мы оставим вам достаточно, чтобы прожить. Может быть... Тебе следует больше есть, бледнолицый. Ты не выглядишь достаточно сильным, чтобы вынести много пыток.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_MONTEZUMA_1</Tag>
@@ -4349,6 +4483,7 @@
         <German>Ihr scheint ein Schützling der Götter zu sein, dass Sie Euch gestatten, die Gestade meiner Küste zu betreten. Ich habe ihnen heute morgen dreizehn Kinder auf dem Sonnenaltar opfern lassen, damit mir Eure Absichten offenbart werden - leider vergeblich. Vorerst werde ich Euer Leben schonen, doch verwechselt meine Vorsicht nicht mit Schwäche.</German>
         <Italian>Sono il leader del popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT], il grande e potente [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]! Ti do il benvenuto nel mio impero e ti offro la pace. Ma ti avverto: non fare l'errore di considerare quest'offerta come un segno di debolezza, o ti farò condurre all'altare sacrificale.</Italian>
         <Spanish>Soy el gran y poderoso [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], líder del pueblo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT]. Os doy la bienvenida a mi imperio y os ofrezco la paz. Pero os prevengo: no toméis mi oferta de paz como una muestra de debilidad o no tendré más remedio que llevaros a mi altar.</Spanish>
+        <Russian>Ты, должно быть, протеже богов, раз они позволили тебе высадиться на моих берегах. Я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], властитель [COLOR_HIGHLIGHT_TEXT]Империи Ацтеков[COLOR_REVERT]. Тринадцать детей-рабов были принесены им в жертву этим утром на Алтаре Солнца, чтобы ваши намерения могли быть раскрыты мне - к сожалению, напрасно. Сейчас я пощажу вас, но не принимайте мою осторожность за слабость.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_OCONOSTOTA_1</Tag>
@@ -4357,6 +4492,7 @@
         <German>Bleichgesicht, ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], der Kriegshäuptling der [COLOR_HIGHLIGHT_TEXT]Cherokee[COLOR_REVERT]. Mein Volk zählt mehr Köpfe als jedes andere in diesem Land. Unsere Feinde fürchten uns, und unsere Freunde genießen unseren Schutz. Wollt Ihr mit uns Handel treiben und an unserer Seite kämpfen?</German>
         <Italian>Sono [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], capo del popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Commerciamo e consolidiamo la nostra amicizia.</Italian>
         <Spanish>Soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], jefe del pueblo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT]. Comerciemos y estrechemos nuestros lazos de amistad.</Spanish>
+        <Russian>Бледнолицый, я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], военачальник [COLOR_HIGHLIGHT_TEXT]Чероки[COLOR_REVERT]. Мой народ насчитывает больше воинов, чем любой другой на этой земле. Наши враги боятся нас, а наши друзья пользуются нашей защитой. Будете ли вы торговать с нами и сражаться на нашей стороне?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_SITTING_BULL_1</Tag>
@@ -4365,6 +4501,7 @@
         <German>Bleichgesicht, ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Häuptling und Medizinmann der [COLOR_HIGHLIGHT_TEXT]Sioux[COLOR_REVERT]. Der Büffel ist meinem Volk heilig. Sein Fleisch nährt uns, sein Fell wärmt uns, und seine Sehnen dienen uns als Garn. Aus seinen Rippen bauen wir im Winter Schlitten. Seinen Kindern ziehen wir die zarte Haut ab, um unsere eigenen Kinder darin zu windeln. Verschont unsere Büffel bei der Jagd, und wir werden Euch verschonen.</German>
         <Italian>Saluti, sono [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] della civiltà [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Sediamoci davanti al fuoco e parliamo.</Italian>
         <Spanish>Saludos. Soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], de los [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Sentémonos alrededor de la hoguera y hablemos.</Spanish>
+        <Russian>Бледнолицый, я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], вождь и знахарь племени [COLOR_HIGHLIGHT_TEXT]Сиу[COLOR_REVERT]. Бизон является священным для моего народа. Его мясо питает нас, его шкура согревает нас, а его сухожилия служат нам пряжей. Из его ребер зимой строим санки. Мы сдираем с его детей нежную кожу, чтобы пеленать в нее наших собственных детей. Пощадите нашего буйвола на охоте и мы пощадим вас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_CHIEF_JOSEPH_1</Tag>
@@ -4373,6 +4510,7 @@
         <German>Bleichgesicht, ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Häuptling der [COLOR_HIGHLIGHT_TEXT]Nez Perce[COLOR_REVERT]. Der Fisch ist meinem Volk heilig. Sein Fleisch nährt und versorgt uns das ganze Jahr über. Nehmt uns nicht unsere Fische, und wir werden Euch verschonen. Wir züchten auch kraftvolle und ausdauernde Pferde. Lasst unsere Pferde in Frieden und wir werden Euch friedlich an unseren Lagerfeuern empfangen.</German>
         <Italian>Saluti, sono [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] della civiltà [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Sediamoci davanti al fuoco e parliamo.</Italian>
         <Spanish>Saludos. Soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], de los [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Sentémonos alrededor de la hoguera y hablemos.</Spanish>
+        <Russian>Бледнолицый, я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], глава [COLOR_HIGHLIGHT_TEXT]нез-персе[COLOR_REVERT]. Лосось - святыня для моего народа. Его мясо питает нас и обеспечивает нас круглый год. Не забирайте у нас нашу рыбу и мы вас пощадим. Мы также разводим сильных и выносливых лошадей. Оставьте наших лошадей в покое и мы будем мирно встречать вас у наших костров.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_PENN_1</Tag>
@@ -4381,6 +4519,7 @@
         <German>Ihr habt mich außerordentlich enttäuscht, Bruder [CT_NAME]. Ich hatte gehofft, in Euch einen Seelenverwandten zu finden, der wie ich für Tugend und Freiheit streitet. Doch habt Ihr Euch als Schuft entpuppt.</German>
         <Italian>Mi dispiace, ma ora non ho tempo per umiliarti. Forse potrei trovarne più tardi.</Italian>
         <Spanish>Lo siento, pero ahora no tengo tiempo ni para menospreciaros. Quizá más tarde.</Spanish>
+        <Russian>Ты меня сильно разочаровал, брат [CT_NAME]. Я надеялся найти в тебе родственную душу, которая, как и я, будет бороться за добродетель и свободу. Но ты оказался негодяем.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_BOLIVAR_1</Tag>
@@ -4389,6 +4528,7 @@
         <German>Ich bin sehr beschäftigt, Señor [CT_NAME]. Wir können ein andermal reden. Oder auch nicht.</German>
         <Italian>Senti, sono molto occupato. Perché non prendi i bambini e te ne torni al circolo?</Italian>
         <Spanish>Mirad, estoy muy ocupado. ¿Por qué no os lleváis a los niños y os volvéis al club?</Spanish>
+        <Russian>Я очень занят, сеньор [CT_NAME]. Мы можем поговорить в другой раз. Или нет.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_CHAMPLAIN_1</Tag>
@@ -4397,6 +4537,7 @@
         <German>Ihr schon wieder, Monsieur [CT_NAME]! Und Ihr tragt immer noch Euren Skalp, wie ich sehe. Nun, kommt wieder, wenn sich das geändert hat.</German>
         <Italian>Pur non avendo intenzione di offenderti, anche se lo faccio non importa. Semplicemente non ho tempo da perdere con te. Addio.</Italian>
         <Spanish>Aunque no pretendo ofenderos, si lo hago no me importa. Simplemente es que no tengo tiempo que perder con vos. Adiós.</Spanish>
+        <Russian>Опять вы, мсье [CT_NAME]! И ты все еще носишь скальп, как я вижу. Ну, возвращайся, когда все изменится.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_DONCK_1</Tag>
@@ -4405,6 +4546,7 @@
         <German>Mijnheer [CT_NAME], diese Neue Welt ist ein Gottesgeschenk für jeden Mann edlen Geistes, der Schönheit und Anstand zu schätzen weiß. Also nicht für Euch.</German>
         <Italian>Ho paura che non sia conveniente parlarti in questo momento.</Italian>
         <Spanish>Me temo que no me sería ventajoso hablar con vos en este momento.</Spanish>
+        <Russian>Мистер [CT_NAME], этот Новый Свет — находка для каждого человека благородного духа, ценящего красоту и порядочность. Значит не для тебя.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_FRONTENAC_1</Tag>
@@ -4413,6 +4555,7 @@
         <German>[CT_NAME], ich bin ein vielbeschäftigter Mann. Langweilt bitte jemand anderen, Bursche. Au revoir.</German>
         <Italian>Non ho tempo di parlare con te dei primitivi problemi della tua primitiva colonia.</Italian>
         <Spanish>No tengo tiempo para hablar con vos de los problemas atrasados de vuestra atrasada colonia.</Spanish>
+        <Russian>[CT_NAME], я занятой человек. Займите своими разговорами кого-нибудь другого, пожалуйста. До свидания.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_HERNAN_CORTES_1</Tag>
@@ -4421,6 +4564,7 @@
         <German>Caramba! Ihr schon wieder. Ihr stehlt meine Zeit, Señor [CT_NAME]. Packt Eure Siebensachen und verschwindet endlich aus diesem Teil der Welt!</German>
         <Italian>Ora userò la mia incredibile conoscenza della tattica per ignorarti.</Italian>
         <Spanish>Ahora utilizaré mi astuto conocimiento de la táctica para hacer caso omiso de vos.</Spanish>
+        <Russian>Карамба! Вы крадете мое время, сеньор [CT_NAME]. Собирайте чемоданы и покидайте эту часть мира!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_STUYVESANT_1</Tag>
@@ -4429,6 +4573,7 @@
         <German>Mijnheer [CT_NAME], ich bedaure, aber ich habe gerade keine Zeit, mich mit Laufburschen zu unterhalten.</German>
         <Italian>Mi dispiace, ora non ho tempo di parlare con le persone poco importanti.</Italian>
         <Spanish>Lo siento, ahora mismo no tengo tiempo para hablar con los pequeños pueblos.</Spanish>
+        <Russian>Мистер [CT_NAME], извините, но сейчас у меня нет времени разговаривать с мальчиками на побегушках.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_WASHINGTON_1</Tag>
@@ -4437,6 +4582,7 @@
         <German>Sir, I regret. Es tut mir leid, aber für Euer Geschwätz ist mir meine Zeit zu teuer.</German>
         <Italian>Mi dispiace, ma il mio dovere mi impone di essere altrove, in questo momento.</Italian>
         <Spanish>Lo siento, pero ahora mismo el deber me reclama en otro sitio.</Spanish>
+        <Russian>Сэр, я сожалею. Извините, но мое время слишком дорого для вашей болтовни.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_AGUEYBANA_1</Tag>
@@ -4445,6 +4591,7 @@
         <German>Bitte kehrt dorthin zurück, wo Ihr hergekommen seid, [CT_NAME]. Ihr bringt Unglück über unsere Welt.</German>
         <Italian>Forse dovresti tornartene da dove vieni, non ho intenzione di parlarti.</Italian>
         <Spanish>Quizá deberíais volver por donde habéis venido. No quiero hablar con vos.</Spanish>
+        <Russian>Пожалуйста, вернитесь туда, откуда пришли, [CT_NAME]. Вы несете несчастья в наш мир.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_CUNHAMBEBE_1</Tag>
@@ -4453,6 +4600,7 @@
         <German>Redet mit den Steinen, mit den Flüssen oder mit dem Himmel, wenn Ihr wollt. Aber nicht mit mir.</German>
         <Italian>Non ho tempo di parlarti. Devo andare a mangiare.</Italian>
         <Spanish>No tengo tiempo para hablar con vos. Tengo que ir a comer.</Spanish>
+        <Russian>Можете разговаривать с камнями, с реками или с небом, если хотите. Но не со мной.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_HUAYNA_CAPAC_1</Tag>
@@ -4461,6 +4609,7 @@
         <German>Eure Anwesenheit entehrt mich. Verschwindet!</German>
         <Italian>È una perdita di tempo parlare con gli stolti. Sparisci.</Italian>
         <Spanish>Hablar con idiotas es una pérdida de tiempo. Marchaos.</Spanish>
+        <Russian>Твоё присутствие позорит меня. Убирайся!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_LOGAN_1</Tag>
@@ -4469,6 +4618,7 @@
         <German>Ihr wollt reden, [CT_NAME]? Nein. Handelt lieber und verschwindet aus dieser Welt.</German>
         <Italian>Vuoi parlare? È un po' troppo tardi per farlo.</Italian>
         <Spanish>¿Ahora queréis hablar? Es un poco tarde para eso.</Spanish>
+        <Russian>Хочешь поговорить, [CT_NAME]? Нет. Тебе лучше уйти отсюда и сделать это как можно быстрее.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_MANGAS_COLORADAS_1</Tag>
@@ -4477,6 +4627,7 @@
         <German>Wir haben nichts miteinander gemein, [CT_NAME]. Ich bin ein Krieger und kein Schwätzer. Ihr seid ein Schwätzer und kein Krieger. Verschwindet, Weißer Mann.</German>
         <Italian>A questo punto le parole non possono risolvere nulla.</Italian>
         <Spanish>A estas alturas, las palabras no pueden resolver nada.</Spanish>
+        <Russian>У нас нет ничего общего, [CT_NAME]. Я воин, а не болтун. Ты болтун, а не воин. Уходи.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_MONTEZUMA_1</Tag>
@@ -4485,6 +4636,7 @@
         <German>Wenn Ihr reden wollt, geht zum Sonnenaltar, [CT_NAME]. Ihr könnt ein letzes Wort an den Hohepriester richten, bevor er Euch das Herz herausschneidet!</German>
         <Italian>Perché non ne discuti con la lama cerimoniale, [CT_NAME]?</Italian>
         <Spanish>Decídselo al cuchillo ceremonial, [CT_NAME].</Spanish>
+        <Russian>Если хочешь поговорить, иди к Алтарю Солнца, [CT_NAME]. Ты можешь сказать последнее слово Первосвященнику, прежде чем он вырежет тебе сердце!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_OCONOSTOTA_1</Tag>
@@ -4493,6 +4645,7 @@
         <German>[CT_NAME], Ihr kennt weder Tugend, noch Tapferkeit. Verschwindet.</German>
         <Italian>Non meriti fiducia e nemmeno la mia attenzione.</Italian>
         <Spanish>No sois de fiar y no os merecéis mi atención.</Spanish>
+        <Russian>[CT_NAME], ты не знаешь ни добродетели, ни доблести. Уходи.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_SITTING_BULL_1</Tag>
@@ -4501,6 +4654,7 @@
         <German>Bleichgesicht, mein Medizinmann sagt, Ihr redet mit gespaltener Zunge. Ich glaube ihm. Euch glaube ich nicht.</German>
         <Italian>Non parlo coi bugiardi. Ora sgomma.</Italian>
         <Spanish>Yo no hablo con mentirosos. Y ahora, ¡largo!</Spanish>
+        <Russian>Бледнолицый, мой знахарь сказал, что ты говоришь раздвоенным языком. Я верю ему. Я тебе не верю.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_CHIEF_JOSEPH_1</Tag>
@@ -4509,6 +4663,7 @@
         <German>Bleichgesicht, Ihr stehlt unsere Pferde und jagt in unseren Jagdgründen. Ihr solltet besser hier verschwinden, bevor meine Krieger Euch zu jagen beginnen.</German>
         <Italian>Paleface, tu rubi i nostri cavalli e cacci nei nostri terreni di caccia. È meglio che tu te ne vada prima che i miei guerrieri comincino a darti la caccia.</Italian>
         <Spanish>Cara pálida, robas nuestros caballos y cazas en nuestros cotos de caza. Será mejor que te vayas de aquí antes de que mis guerreros empiecen a cazarte.</Spanish>
+        <Russian>Бледнолицый, ты крадешь наших лошадей и охотишься в наших охотничьих угодьях. Убирайся отсюда, пока мои воины не начали охоту на тебя.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_PENN_1</Tag>
@@ -4517,6 +4672,7 @@
         <German>Mister, Ihr seid ein Tyrann. Und mit Tyrannen verhandele ich nicht. Ich werde stattdessen in die Kirche gehen und den Höchsten Herrn um Vergebung für Eure Sünden bitten.</German>
         <Italian>Le nostre colonie saranno in pace solo dopo aver estirpato la tua tirannia!</Italian>
         <Spanish>¡Nuestras colonias solo conocerán la paz con la erradicación de vuestra tiranía!</Spanish>
+        <Russian>Мистер, вы хулиган. Я не веду переговоров с хулиганами. Вместо этого я пойду в церковь и попрошу у Господа прощения за твои грехи.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_BOLIVAR_1</Tag>
@@ -4525,6 +4681,7 @@
         <German>Frieden? Señor [CT_NAME], es gibt erst Frieden, wenn Ihr Euch mir ergebt!</German>
         <Italian>Pace? Señor [CT_NAME], ci sarà la pace quando ti arrenderai!</Italian>
         <Spanish>¿Paz? ¡Señor [CT_NAME], la tendremos cuando os rindáis!</Spanish>
+        <Russian>Мир? Сеньор [CT_NAME], мир будет, когда вы сдадитесь!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_CHAMPLAIN_1</Tag>
@@ -4533,6 +4690,7 @@
         <German>Monsieur [CT_NAME], Ihr glaubt doch nicht ernsthaft, ich wollte Euch verschonen? Packt Eure Habseligkeiten, geht zurück auf Eure Schiffe und rettet wenigstens Euren Skalp.</German>
         <Italian>Non mi ricordo mai la frase esatta, ma mi pare che abbia a che fare con qualcosa che si deve ghiacciare.</Italian>
         <Spanish>He olvidado la frase, pero tiene algo que ver con irse adonde hace mucho calor.</Spanish>
+        <Russian>Месье [CT_NAME], вы же не думаете, что я вас пощажу? Собирайте вещи и возвращайтесь на свои корабли. По крайней мере, спасёте свои скальпы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_DONCK_1</Tag>
@@ -4541,6 +4699,7 @@
         <German>Mijnheer, mir scheint, Ihr redet von Frieden und träumt vom Morden. Schert Euch von dannen, [CT_NAME]!</German>
         <Italian>Non mi fido di te o del tuo popolo. La pace chiaramente non è contemplabile.</Italian>
         <Spanish>No confío en vos ni en vuestro pueblo. Obviamente, la paz no es una opción.</Spanish>
+        <Russian>Мистер, мне кажется, ты говоришь о мире и мечтаешь об убийстве. Убирайся отсюда, [CT_NAME]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_FRONTENAC_1</Tag>
@@ -4549,6 +4708,7 @@
         <German>[CT_NAME], je regrette. Ich bedaure, aber Ihr werdet diese Neue Welt wohl nicht mehr lebend verlassen. Betet zu Eurem Herrn, Bursche, dass Euer Ende gnädig sein wird.</German>
         <Italian>Penso che sarebbe meglio semplicemente distruggerti.</Italian>
         <Spanish>Creo que sería mucho mejor destruiros.</Spanish>
+        <Russian>[CT_NAME], сожалею. Сожалею, но ты, наверное, не покинешь этот Новый Свет живым. Молись своему Господу, парень, чтобы твой конец был быстрым.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_HERNAN_CORTES_1</Tag>
@@ -4557,6 +4717,7 @@
         <German>Ich wusste, Ihr würdet irgendwann um Frieden betteln. Aber für Bettler, für Tagediebe und Streuner habe ich nichts übrig. Packt Euch, Señor [CT_NAME], hinfort!</German>
         <Italian>Sapevo che mi avresti pregato di stipulare una pace, alla fine, ma non ci sarà pace fino alla tua resa.</Italian>
         <Spanish>Sabía que, tarde o temprano, suplicaríais la paz. Pero no habrá paz hasta que os rindáis.</Spanish>
+        <Russian>Я знал, что в какой-то момент ты будешь просить мира. Но нищие, воры и бродяги мне ни к чему. Убирайтесь прочь, сеньор [CT_NAME]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_STUYVESANT_1</Tag>
@@ -4565,6 +4726,7 @@
         <German>Mijnheer, Ihr dauert mich. Welch elende Gestalt gebt Ihr ab, wie Ihr da steht und mich anfleht, Euch zu verschonen. Vielleicht wird Gott Euch einst Gnade gewähren. Ich kann es nicht.</German>
         <Italian>Fai pena, quando elemosini la pace. Penso che ti libererò semplicemente dalla tua miseria.</Italian>
         <Spanish>Dais tanta pena cuando mendigáis la paz... Creo que me limitaré a poner fin a vuestro sufrimiento.</Spanish>
+        <Russian>Мистер, ты раздражаешь меня. Что за жалкое зрелище ты представляешь, стоя здесь и умоляя меня пощадить тебя. Возможно, однажды Бог помилует тебя. Я не могу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_WASHINGTON_1</Tag>
@@ -4573,6 +4735,7 @@
         <German>Sir, nehmt gefälligst Haltung an! Euer Flehen um Frieden stiehlt Euch die Würde. Wir sehen uns auf dem Schlachtfeld wieder. Bitte lauft dann nicht gleich davon. Ich könnte es mir nicht verzeihen, Euch in den Rücken zu schießen.</German>
         <Italian>Ho fatto una solenne promessa di sconfiggerti. Non posso far finta di niente.</Italian>
         <Spanish>Hice la solemne promesa de derrotaros. Es una promesa que no puedo olvidar.</Spanish>
+        <Russian>Сэр, встаньте! Ваша мольба о мире крадет ваше достоинство. Мы встретимся снова на поле боя. Но пожалуйста, не пытайтесь убежать снова. Я не смогу простить себя за то, что придётся выстрелить тебе в спину.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_AGUEYBANA_1</Tag>
@@ -4581,6 +4744,7 @@
         <German>Weißer Mann, mir träumte letzte Nacht, ein Kind würde mich wecken. Es hielt Euren Kopf in der Hand, [CT_NAME], und Euer Blut tropfte auf die Erde. Es gibt für mich keinen Grund, den Krieg zu beenden. Ich bin mir sicher, dass diese Prophezeiung wahr werden wird.</German>
         <Italian>Non posso perdere, quindi non c'è ragione di firmare una pace.</Italian>
         <Spanish>No puedo perder, así que no hay motivo para firmar la paz.</Spanish>
+        <Russian>Прошлой ночью мне приснилось, что меня разбудил ребенок. Он нес в руке твою голову, [CT_NAME], и твоя кровь капала на землю. У меня нет причин останавливать войну. Я уверен, что это пророчество сбудется.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_CUNHAMBEBE_1</Tag>
@@ -4589,6 +4753,7 @@
         <German>Ihr wollt Frieden, [CT_NAME]? Eure Feigkeit erfüllt mein Herz mit Trauer. Ich werde Euch eines meiner Weiber schicken, Euch zu trösten. Ich hoffe, dass wird Euch so weit stärken, dass Ihr mir wieder ein würdiger Gegner sein werdet.</German>
         <Italian>Vuoi che facciamo pace? La sola idea mi fa passare la fame.</Italian>
         <Spanish>¿Y ahora queréis que hagamos las paces? Con solo pensar en ello se me revuelven las tripas.</Spanish>
+        <Russian>Ты хочешь мира, [CT_NAME]? Твоя трусость наполняет мое сердце печалью. Я пришлю к тебе одну из моих жен, чтобы утешить тебя. Я надеюсь, что это укрепит вас достаточно, чтобы снова стать достойным противником для меня.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_HUAYNA_CAPAC_1</Tag>
@@ -4597,6 +4762,7 @@
         <German>Dieser Krieg wird so lange dauern, bis die Götter seiner überdrüssig sind. Und jetzt schweigt, [CT_NAME]! Und verschwindet!</German>
         <Italian>Puoi piangere e supplicare, [CT_NAME], ma non servirà a nulla. La guerra finirà solamente quando gli dei si saranno stancati.</Italian>
         <Spanish>Podéis rogar y suplicar cuanto queráis, [CT_NAME], pero no os servirá de nada. La guerra seguirá hasta que los dioses se cansen de ella.</Spanish>
+        <Russian>Эта война будет длиться до тех пор, пока Боги не устанут от нее. А теперь замолчи, [CT_NAME]! И исчезни!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_LOGAN_1</Tag>
@@ -4605,6 +4771,7 @@
         <German>Nein, Bleichgesicht. Wir werden den Kriegspfad nicht verlassen. Erst wenn Euer Skalp in meinem Wigwam hängt, werde ich meine Männer heim zu ihren Kindern und Weibern holen.</German>
         <Italian>Pace? Mai!</Italian>
         <Spanish>¿Paz? ¡Jamás!</Spanish>
+        <Russian>Нет, бледнолицый. Мы не сойдем с тропы войны. Только когда твой скальп будет украшать мой вигвам, я отведу своих людей домой к их детям и женам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_MANGAS_COLORADAS_1</Tag>
@@ -4613,6 +4780,7 @@
         <German>Jedem Koyoten würde ich eher trauen als Euch, Bleichgesicht. Ihr stiehlt unser Land. Ihr tötet die Tiere. Ihr hackt die Bäume ab. Ein böser Geist wohnt in Eurem Herzen.</German>
         <Italian>Dopo le atrocità che hai commesso non può esserci alcuna pace!</Italian>
         <Spanish>Después de las atrocidades que habéis cometido, no puede haber paz.</Spanish>
+        <Russian>Я бы доверился россомахе, а не тебе, бледнолицый. Вы крадете нашу землю. Вы убиваете всех животных. Вы рубите все деревья. Зло живет в вашем сердце.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_MONTEZUMA_1</Tag>
@@ -4621,6 +4789,7 @@
         <German>Ihr sprecht mich an. Kenne ich Euch? In meinen Augen seht Ihr alle gleich aus. Weiße Männer mit wilden Augen und einem gehetzten Blick. Kommt mit, ich führe Euch zum Sonnenaltar. Dort wartet Eure Bestimmung auf Euch. Ihr wollt nicht? Dann verschwindet, solange Ihr es noch könnt.</German>
         <Italian>No, non abbiamo ancora sacrificato abbastanza guerrieri [CT_CIV_ADJ:3] per placare l'infinita sete di sangue degli dei. Prova più tardi.</Italian>
         <Spanish>No. Aún no hemos sacrificado bastantes guerreros [CT_CIV_ADJ:3] para aplacar la insaciable sed de sangre de los dioses. Intentadlo más tarde.</Spanish>
+        <Russian>Ты говоришь со мной. Я тебя знаю? Вы все для меня одинаковые. Белые люди с дикими глазами и затравленным взглядом. Пойдем со мной. Я отведу тебя к Алтарю Солнца. Твоя судьба ждет тебя там. Не хочешь? Тогда уходи, пока еще можешь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_OCONOSTOTA_1</Tag>
@@ -4629,6 +4798,7 @@
         <German>Bleichgesicht, dieser Krieg geht weiter, bis Ihr vor Eure Ahnen tretet.</German>
         <Italian>Non ci sarà pace!</Italian>
         <Spanish>No habrá paz.</Spanish>
+        <Russian>Бледнолицый, эта война будет продолжаться до тех пор, пока ты не встретишься со своими предками.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_SITTING_BULL_1</Tag>
@@ -4637,6 +4807,7 @@
         <German>Seid tapfer und nehmt Euer Schicksal an, [CT_NAME]. Ihr werdet in diesem Land sterben, als Fremder, fern der Heimat. Die Wölfe werden Euren Leichnam zerreißen.</German>
         <Italian>Questa guerra finirà quando io deciderò di farla finire, e non un secondo prima.</Italian>
         <Spanish>Esta guerra terminará cuando yo decida que ha terminado y ni un segundo antes.</Spanish>
+        <Russian>Будь смелым и прими свою судьбу, [CT_NAME]. Ты умрешь на этой чужой земле, вдали от дома. Волки разорвут твой труп на куски.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_CHIEF_JOSEPH_1</Tag>
@@ -4645,6 +4816,7 @@
         <German>Seid tapfer und nehmt Euer Schicksal an, [CT_NAME]. Ihr hattet alle Möglichkeiten, diesen blutigen Krieg zu beenden und mit uns die Pfeife zu rauchen, aber Ihr führt immer weiter Krieg. Es kann keinen Frieden geben.</German>
         <Italian>Sii coraggioso e accetta il tuo destino, [NOME_CT]. Hai avuto tutte le opportunità per porre fine a questa guerra sanguinosa e fumare la pipa con noi, ma continui a fare la guerra. Non ci può essere pace.</Italian>
         <Spanish>Sé valiente y acepta tu destino, [CT_NAME]. Tuviste todas las oportunidades para poner fin a esta sangrienta guerra y fumar la pipa con nosotros, pero sigues haciendo la guerra. No puede haber paz.</Spanish>
+        <Russian>Будь смелым и прими свою судьбу, [CT_NAME]. У вас были все возможности закончить эту кровавую войну и выкурить трубку мира вместе с нами, но вы продолжаете вести войну. Мира быть не может.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_PENN_1</Tag>
@@ -4653,6 +4825,7 @@
         <German>Willkommen bei Freunden, Bruder [CT_NAME]. My delectation at your arrival is too much to hide. Was führt Euch zu mir? Und vor allem: Möchtet Ihr eine Tasse Tee?</German>
         <Italian>Il mio diletto al tuo arrivo è troppo grande per essere nascosto. Di quali importantissimi argomenti vogliamo dissertare?</Italian>
         <Spanish>Mi deleite por vuestra llegada es demasiado grande para ocultarlo. ¿Sobre qué temas de primordial importancia vamos a disertar?</Spanish>
+        <Russian>Добро пожаловать к друзьям, брат [CT_NAME]. Мой восторг по поводу вашего приезда слишком велик, чтобы его скрывать. Что привело тебя ко мне? И самое главное, не хотите ли чашечку чая?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_BOLIVAR_1</Tag>
@@ -4661,6 +4834,7 @@
         <German>Bienvenidos, Señor. Legt Eure Waffen ab, schickt Eure Leibwächter heraus und lasst Euch nieder. Vertraut mir, ich bin Euch wohlgesonnen. Derzeit.</German>
         <Italian>È bello parlare con una persona che capisce l'importanza dell'azione. Parliamo di come possiamo rafforzare le nostre colonie.</Italian>
         <Spanish>Es bueno hablar con alguien que entiende la importancia de los actos. Charlemos sobre cómo podemos fortalecer nuestras colonias.</Spanish>
+        <Russian>йцукен</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_CHAMPLAIN_1</Tag>
@@ -4669,6 +4843,7 @@
         <German>Niemanden würde ich jetzt hier lieber sehen als Euch, Monsieur. Was kann ich für Euch tun? Und was könnt Ihr für mich tun ...?</German>
         <Italian>Ditemi voi se quello non è, tra i presenti, il mio prediletto! Vediamo come puoi venire in contro alle mie esigenze.</Italian>
         <Spanish>¡Pero si es mi persona más querida en toda la sala! Veamos cómo podemos satisfacer nuestras respectivas necesidades.</Spanish>
+        <Russian>Добро пожаловать, сеньор. Снимите оружие, отошлите своих телохранителей и расслабьтесь. Доверьтесь мне. Я хорошо отношусь к тебе. На данный момент.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_DONCK_1</Tag>
@@ -4677,6 +4852,7 @@
         <German>Mijnheer, ich bin froh, dass Ihr Muße findet für einen Disput unter Freunden. Lasst uns dort am Flussufer Platz nehmen, dem malerischen Rauschen des Wasserfalles lauschen und der Eloquenz meiner Rede.</German>
         <Italian>Mi rallegra vedere che hai il tempo per venirmi a trovare. Cosa dobbiamo fare oggi?</Italian>
         <Spanish>Estoy encantado de que hayáis conseguido sacar el tiempo para venir a verme. ¿Qué tenemos hoy en la agenda?</Spanish>
+        <Russian>Мистер, я рад, что ты находишь время для разговоров в кругу друзей. Присядем там на берегу реки, послушаем успокаивающий шум водопада и красноречие моих слов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_FRONTENAC_1</Tag>
@@ -4685,6 +4861,7 @@
         <German>Bonjour, Monsieur! Seid willkommen. Es gibt nicht viele Menschen, denen ich mit Respekt begegne. Ihr gehört schon beinahe zu ihnen.</German>
         <Italian>Salve amico, beviamo qualcosa e parliamo di questo Nuovo Mondo.</Italian>
         <Spanish>Hola, amigo. Tomemos una copa y hablemos de este Nuevo Mundo.</Spanish>
+        <Russian>Бонжур, месье! Добро пожаловать. Не так много людей, к которым я отношусь с уважением. Ты почти один из них.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_HERNAN_CORTES_1</Tag>
@@ -4693,6 +4870,7 @@
         <German>Señor, ich grüße Euch. Nehmt Platz und erzählt von Euren Abenteuern. Habt Ihr in dieser Neuen Welt schon reiche Beute machen können?</German>
         <Italian>Finalmente parlo con un degno avversario. Cosa può fare [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] per te?</Italian>
         <Spanish>Por fin consigo hablar con un adversario digno. ¿Qué puede hacer el [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] por vos?</Spanish>
+        <Russian>Сеньор, приветствую вас. Садись и расскажи мне о своих приключениях. Удалось ли вам захватить богатую добычу в этом Новом Свете?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_STUYVESANT_1</Tag>
@@ -4701,6 +4879,7 @@
         <German>Mijnheer, dieses Gespräch ist mir eine Ehre! Und Euch sicher erst recht.</German>
         <Italian>Non riesco a immaginare quale onore sia parlare con me.</Italian>
         <Spanish>No alcanzo a imaginar qué gran honor ha de ser venir a hablar conmigo.</Spanish>
+        <Russian>Мистер, этот разговор - честь для меня! Уверен, для вас тем более.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_WASHINGTON_1</Tag>
@@ -4709,6 +4888,7 @@
         <German>Welcome, Mister Governor. Nehmt Platz. Lasst uns ohne Umschweife zum Anlass Eures Besuches kommen. What is today's business?</German>
         <Italian>È bello vederti, amico. Quali affari ci attendono oggi?</Italian>
         <Spanish>Es un placer veros, amigo. ¿Qué asunto tenemos para hoy?</Spanish>
+        <Russian>Добро пожаловать, господин губернатор. Пожалуйста, проходите, располагайтесь. Без лишних слов, давайте перейдем к сути вашего визита. Как ваши дела нынче?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_CUNHAMBEBE_1</Tag>
@@ -4717,6 +4897,7 @@
         <German>Euer Besuch erfreut mein Herz, Weißer Mann. Manche meines Volkes hatten Bedenken, als Ihr hier gelandet wart. Doch selten haben sich Fremde so schnell als Freunde erwiesen.</German>
         <Italian>Ah, il mio grande amico è venuto a trovarmi in questo meraviglioso giorno. Come esserti d'aiuto il popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]?</Italian>
         <Spanish>Ah, mi gran amigo ha venido a verme en este maravilloso día. ¿En qué puede ayudaros el [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]?</Spanish>
+        <Russian>Ах! Какая радость видеть моего хорошего друга в этот чудесный день!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_AGUEYBANA_1</Tag>
@@ -4725,6 +4906,7 @@
         <German>Euer Besuch erfreut mein Herz, Weißer Mann. Manche meines Volkes hatten Bedenken, als Ihr hier gelandet wart. Doch selten haben sich Fremde so schnell als Freunde erwiesen.</German>
         <Italian>Ah, il mio grande amico è venuto a trovarmi in questo meraviglioso giorno. Come esserti d'aiuto il popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]?</Italian>
         <Spanish>Ah, mi gran amigo ha venido a verme en este maravilloso día. ¿En qué puede ayudaros el [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]?</Spanish>
+        <Russian>Ваш визит радует мое сердце. У некоторых из моих людей были опасения, когда вы высадились здесь. Но редко, когда незнакомцы так быстро оказывались друзьями.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_HUAYNA_CAPAC_1</Tag>
@@ -4733,6 +4915,7 @@
         <German>Ich, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], heiße Euch willkommen, [CT_NAME]. Nehmt zu meinen Füßen Platz. Darf ich Euch eine Erfrischung anbieten? Agavenschnaps? Ein wenig gerösteten Chinchilla? Eine junge Sklavin?</German>
         <Italian>Io, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], ti do il benvenuto, [CT_NAME], leader dell'[CT_EMPIRE]. Parliamo della lenta agonia dei nostri nemici! Gradisci un criceto affumicato?</Italian>
         <Spanish>Nos, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], os damos la bienvenida, [CT_NAME], líder del [CT_EMPIRE]. ¡Hablemos de la muerte lenta y dolorosa de nuestros enemigos! ¿Os apetece una cobaya ahumada?</Spanish>
+        <Russian>Я, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], приветствую вас, [CT_NAME]. Садись у моих ног. Могу я предложить вам освежиться? Бренди из агавы? Жареная шиншилла? Девушка-рабыня?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_LOGAN_1</Tag>
@@ -4741,6 +4924,7 @@
         <German>Nehmt Platz am Feuer, Freund. Auch wenn Ihr es an Weisheit nicht mit dem großen Häuptling Hiawatha aufnehmen könnt und an Weitsicht nicht mit dem Propheten Deganawidah, so begegnen wir Euch doch mit Respekt.</German>
         <Italian>È bello avere notizie da [CT_EMPIRE]. A cosa debbo quest'onore?</Italian>
         <Spanish>Es un placer oír al [CT_EMPIRE]. ¿A qué debo este honor?</Spanish>
+        <Russian>Присаживайся у костра, друг. Хотя мы и знаем, что вы не можете сравниться с великим вождем Гайаватой в мудрости и пророком Деганавидой в предвидении, мы относимся к вам с уважением.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_MANGAS_COLORADAS_1</Tag>
@@ -4749,6 +4933,7 @@
         <German>Staub liegt auf Eurem Haupt, Bleichgesicht, und Müdigkeit in Euren Augen. Setzt Euch ans Feuer und stärkt Euch mit Getreidebrei und Wild.</German>
         <Italian>È sempre bello avere notizie degli amici. Sediamoci e parliamo.</Italian>
         <Spanish>Siempre es un placer oír al [CT_EMPIRE]. Sentémonos y hablemos.</Spanish>
+        <Russian>Пыль на голове, бледное лицо, усталость в глазах. Сядьте у костра. Подкрепитесь кашей и дичью.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_MONTEZUMA_1</Tag>
@@ -4757,6 +4942,7 @@
         <German>Ich wusste, dass Ihr kommen würdet. Meine Hohepriester haben heute im Herzblut eines Opfers erkannt, dass Ihr auf dem Wege zu mir seid. Ich habe einige Erfrischungen vorbereiten lassen. Ich hoffe, Euren Eingeweiden wird die Kost bekömmlich sein.</German>
         <Italian>Come sempre, vengo onorato dalla tua presenza. Spero che tu abbia portato le tue vittime sacrificali, perché io le ho finite.</Italian>
         <Spanish>Me honra vuestra presencia, como siempre. Espero que hayáis traído vuestros propios sacrificios, que yo me he quedado sin ninguno.</Spanish>
+        <Russian>Я знал, что ты придешь. Мои Первосвященники прознали сегодня через кровь жертвы, что вы на пути ко мне. Я приготовил несколько закусок. Надеюсь, что вы найдете еду приятной.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_OCONOSTOTA_1</Tag>
@@ -4765,6 +4951,7 @@
         <German>Willkommen! Erzählt mir von Euren Erlebnissen, Weißer Mann. Und lasst uns danach Handel treiben.</German>
         <Italian>Benvenuto, amico! Parliamo e commerciamo.</Italian>
         <Spanish>Bienvenido, amigo. Hablemos y negociemos.</Spanish>
+        <Russian>Добро пожаловать! Расскажи мне о своих похождениях, белый человек. А после этого давай торговать.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_SITTING_BULL_1</Tag>
@@ -4773,12 +4960,14 @@
         <German>Ich grüße Euch, Bleichgesicht. Ich empfange Euch mit offenen Händen. Welche Geschenke habt Ihr uns mitgebracht? Und habt Ihr auf dem Hinweg eine Büffelherde ziehen sehen?</German>
         <Italian>Benvenuto, amico mio! Sei davvero saggio a cercare consiglio presso chi è migliore di te.</Italian>
         <Spanish>Bienvenido, amigo mío. Sin duda hacéis bien en buscar el consejo de vuestros superiores.</Spanish>
+        <Russian>Приветствую тебя, бледнолицый. Вы действительно мудры, когда ищете совета у тех, кто лучше вас. Какие подарки вы нам принесли? Вы не видели бизонов по пути сюда?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_CHIEF_JOSEPH_1</Tag>
         <English>I greet you, paleface. I welcome you with open hands. What do you want in our village today? Shall we teach you how to fish for salmon? Would you prefer to buy horses from us?</English>
         <French>Welcome, my friend! Nice to see you again in our village. Do you want to learn fishing from us or do you like trading horses with us?</French>
         <German>Ich grüße Euch, Bleichgesicht. Ich empfange Euch mit offenen Händen. Was wollt Ihr heute in unserem Dorf? Sollen wir Euch vielleicht beibringen, wie man Lachse richtig fischt? Oder wollt Ihr uns Pferde abkaufen?</German>
+        <Russian>Приветствую тебя, бледнолицый. Что ты хочешь сегодня в нашей деревне? Научить вас ловить лосося? Или хотите купить у нас лошадей?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_PENN_1</Tag>
@@ -4787,6 +4976,7 @@
         <German>Diese Neue Welt soll ein Hort der Freiheit sein, habe ich geschworen. Auch Euch, Bruder [CT_NAME], billige ich Redefreiheit zu. Und mir selber die Freiheit, mir während Eures Vortrages die Nägel zu säubern. Die Fußnägel.</German>
         <Italian>È volere dei miei elettori che ascolti ciò che hai da dire, a prescindere da quanto io pensi che sia insulso.</Italian>
         <Spanish>Es la voluntad de mis constituyentes oír lo que tengáis que decir, por muy insulso que yo sepa que va a ser.</Spanish>
+        <Russian>Я поклялся, что этот Новый Свет будет гаванью свободы. И тебе, брат [CT_NAME], я даю свободу слова. А я свободен чистить ногти во время твоей речи. Ногти на ногах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_BOLIVAR_1</Tag>
@@ -4795,6 +4985,7 @@
         <German>Sagt mir in Ruhe, was Ihr zu sagen habt, Señor [CT_NAME]. Lasst Euch Zeit. Und stört Euch bitte nicht daran, wenn ich derweil meinen Kerkermeister rufen lasse. Ich habe einen neuen Gast für ihn.</German>
         <Italian>Coraggio, dimmi quello che vuoi. Vediamo se soffocherà il disprezzo che provo per te.</Italian>
         <Spanish>Adelante, decidme lo que queréis. Veremos si eso acaba con el desdén que siento hacia vos.</Spanish>
+        <Russian>Скажите мне спокойно, что вы хотите сказать, сеньор [CT_NAME]. Не торопись. И, пожалуйста, не возражайте, если я тем временем позову своего тюремщика. У меня новый гость для него.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_CHAMPLAIN_1</Tag>
@@ -4803,6 +4994,7 @@
         <German>[CT_NAME], nehmt Platz. Wie zerzaust Ihr ausseht! Ich lasse einen einheimischen Coiffeur kommen, der sich Eures Skalps annehmen wird. Legt derweil Eure Waffen ab. Ihr seid mein Gast, fürchtet Euch nicht. Schließt die Augen und beginnt zu plaudern.</German>
         <Italian>Ditemi voi se quello non è, tra i presenti, la mia spina nel fianco! Vediamo come puoi venire in contro alle mie esigenze.</Italian>
         <Spanish>¡Pero si es mi persona menos querida en toda la sala! Veamos cómo podéis satisfacer mis necesidades.</Spanish>
+        <Russian>[CT_NAME], присаживайся. Какой ты растрепанный! Я пошлю за местным парикмахером, чтобы он позаботился о твоей голове. А пока сложи оружие. Ты мой гость. Не бойся. Закрой глаза и начинай говорить.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_DONCK_1</Tag>
@@ -4811,6 +5003,7 @@
         <German>Mijnheer, teilt mir ohne Scheu Eure Gedanken und Vorschläge mit. Ich werde derweil meine Reisenotizen durchsehen.</German>
         <Italian>Avanti, parla: farò finta di ascoltare.</Italian>
         <Spanish>Adelante, hablad. Yo haré ver que os escucho.</Spanish>
+        <Russian>Мистер, делитесь со мной своими мыслями и предложениями без стеснения. А я пока посмотрю свои путевые заметки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_FRONTENAC_1</Tag>
@@ -5645,6 +5838,7 @@
         <German>Eure Majestät, könnt Ihr uns zu unserem Schutz Streitkräfte zur Verfügung stellen?</German>
         <Italian>Vostra Maestà, potreste risparmiare qualche militare per la nostra protezione?</Italian>
         <Spanish>Su Majestad, ¿podría disponer de algunos militares para nuestra protección?</Spanish>
+        <Russian>Ваше Величество, не могли бы Вы дать нам какой-нибудь военный отряд для обороны поселений?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_BUY_UNITS_1</Tag>
