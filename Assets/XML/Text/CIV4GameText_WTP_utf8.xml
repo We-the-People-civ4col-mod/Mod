@@ -24,7 +24,7 @@
     <TEXT>
         <Tag>TXT_KEY_MISC_YOU_SHIP_ESCAPED_CITY</Tag>
         <English>Milord, our ship, the [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT], has escaped and now sails the high seas, following the capture of [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] by the enemy.</English>
-        <German>Milord, Euer Schiff [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] konnte vor der Einnahme von [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] durch den Feind noch Segel setzen und auf hohe See entkommen.</German>
+        <German>Milord, unser Schiff, die [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT], konnte vor der Einnahme von [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] durch den Feind noch aus dem Hafen entkommen.</German>
         <Russian>Милорд, нашему кораблю [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] удалось выйти из гавани и выйти в открытое море, прежде чем [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] был захвачен врагом.</Russian>
     </TEXT>
     <TEXT>
