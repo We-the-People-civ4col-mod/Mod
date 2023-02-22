@@ -32,6 +32,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Конкистадор:Конкистадоры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_PEACE_ACCEPTED</Tag>
@@ -40,6 +41,7 @@
         <German>Wie durch Seine Majestät gewünscht, haben wir den Friedensverhandlungen mit [COLOR_HIGHLIGHT_TEXT]%s1_nation[COLOR_REVERT] zugestimmt. Die Diplomaten haben sich nach den Verhandlungen zum Bleiben entschieden.</German>
         <Italian>Come auspicato dal nostro Re, abbiamo accettato negoziati di pace con %s1_nation</Italian>
         <Spanish>Como deseado por nuestro Rey, hemos aceptado las negociaciones de paz con %s1_nation.</Spanish>
+        <Russian>По просьбе Его Величества мы согласились на мирные переговоры с [COLOR_HIGHLIGHT_TEXT]%s1_nation[COLOR_REVERT]. После переговоров дипломаты решили остаться с нами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_PEACE_DENIED</Tag>
@@ -48,6 +50,7 @@
         <German>Wir haben die Friedensverhandlungen mit [COLOR_HIGHLIGHT_TEXT]%s1_nation[COLOR_REVERT] abgelehnt. Seine Majestät ist unzufrieden ob unserer Weigerung, Seinen Wünschen nachzukommen.</German>
         <Italian>Abbiamo rifiutato negoziati di pace con %s1_nation. Il re è infelice con la nostra decisione.</Italian>
         <Spanish>Hemos rechazado las negociaciones de paz con %s1_nation. El Rey está satisfecho con nuestra decisión.</Spanish>
+        <Russian>Мы отказываемся заключать мир с [COLOR_HIGHLIGHT_TEXT]%s1_nation[COLOR_REVERT]. Его Величество недоволен нашим отказом выполнить Его волю.</Russian>
     </TEXT>
     <TEXT>
         <Tag>ABANDONING_CITY</Tag>
@@ -56,6 +59,7 @@
         <German>Milord, wenn Ihr alle Bewohner dieser Siedlung ihre Habseligkeiten packen lasst und sie fortschickt, wird der Ort verlassen sein und von der Karte getilgt werden.</German>
         <Italian>Avete intenzione di abbandonare questa città.</Italian>
         <Spanish>Usted va a abandonar esta ciudad.</Spanish>
+        <Russian>Милорд, если вы заставите всех жителей этого поселения собрать свои вещи и уйти, все, что было построено, будет стерто с лица земли.</Russian>
     </TEXT>
     <TEXT>
         <Tag>CITY_ABANDONED</Tag>
@@ -64,6 +68,7 @@
         <German>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Die letzten Bürger haben der Stadt den Rücken gekehrt. Die Häuser werden verfallen, und schon bald wird sich niemand mehr dieses Ortes entsinnen.</German>
         <Italian>City %s1_city è stato abbandonato.</Italian>
         <Spanish>Ciudad %s1_city ha sido abandonado.</Spanish>
+        <Russian>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Последние горожане покинули город. Дома придут в негодность и скоро об этом месте никто не вспомнит.</Russian>
     </TEXT>
     <TEXT>
         <Tag>NO_ABANDONING_CITY_BECAUSE_WAR</Tag>
@@ -80,6 +85,7 @@
         <German>Das Volk der [COLOR_HIGHLIGHT_TEXT]%s1_Civ[COLOR_REVERT] möchte zur Zeit nicht mit euch handeln.</German>
         <Italian>Questa città attualmente non vuole commerciare con voi.</Italian>
         <Spanish>Esta ciudad actualmente no quiere negociar con usted.</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_Civ[COLOR_REVERT] в настоящее время отказываются торговать с вами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>Debug</Tag>
@@ -726,6 +732,7 @@
         <German>%D1: (Schwierigkeitsgrad)</German>
         <Italian>%D1 per il livello di difficoltà</Italian>
         <Spanish>%D1 por nivel de dificultad</Spanish>
+        <Russian>%D1: (от уровня сложности)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_BASE_ATTITUDE</Tag>
@@ -734,6 +741,7 @@
         <German>%D1: (Grundhaltung)</German>
         <Italian>%D1: (atteggiamento iniziali)</Italian>
         <Spanish>%D1: (actitud base)</Spanish>
+        <Russian>%D1: (начальное отношение)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_TOTAL_ATTITUDE</Tag>
@@ -742,6 +750,7 @@
         <German>%D1: (Gesamthaltung)</German>
         <Italian>%D1: (Total Attitude)</Italian>
         <Spanish>%D1: (Total Attitude)</Spanish>
+        <Russian>%D1: (общее отношение)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_LAND_TARGET</Tag>
@@ -750,6 +759,7 @@
         <German>%D1: "Eure Kolonien liegen bedrohlich nahe an unseren."</German>
         <Italian>%D1: "C'è della tensione al confine."</Italian>
         <Spanish>%D1: "Nuestras fronteras cerradas suscitan tensiones."</Spanish>
+        <Russian>%D1: "Закрытые границы усиливают напряжение."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_WAR</Tag>
@@ -758,6 +768,7 @@
         <German>%D1: "Dieser Krieg beeinträchtigt unsere Beziehungen!"</German>
         <Italian>%D1: "Questa guerra rovina i nostri rapporti."</Italian>
         <Spanish>%D1: "Esta guerra echa por tierra nuestras relaciones."</Spanish>
+        <Russian>%D1: "Эта война портит наши отношения."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_PEACE</Tag>
@@ -766,6 +777,7 @@
         <German>%D1: "Jahre des Friedens haben unsere Beziehungen gestärkt."</German>
         <Italian>%D1: "I molti anni di pace hanno rinsaldato i nostri rapporti."</Italian>
         <Spanish>%D1: "Años de paz han fortalecido nuestras relaciones."</Spanish>
+        <Russian>%D1: "Годы мира укрепили наши отношения."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_OPEN_BORDERS</Tag>
@@ -774,6 +786,7 @@
         <German>%D1: "Die Öffnung unserer Grenzen hat unsere Völker näher gebracht."</German>
         <Italian>%D1: "Il nostro accordo di diritto di passaggio ha permesso ai nostri popoli di avvicinarsi"</Italian>
         <Spanish>%D1: "La apertura de fronteras ha acercado más a nuestros pueblos."</Spanish>
+        <Russian>%D1: "Открытые границы сблизили наших людей."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_DEFENSIVE_PACT</Tag>
@@ -782,6 +795,7 @@
         <German>%D1: "Unser Verteidigungsbündnis unterstreicht unsere freundschaftliche Verbundenheit."</German>
         <Italian>%D1: "La nostra alleanza difensiva dimostra che siamo buoni amici."</Italian>
         <Spanish>%D1: "Nuestro acuerdo de protección demuestra que somos muy amigos."</Spanish>
+        <Russian>%D1: "Наш оборонительный договор доказывает, что мы близкие друзья."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_RIVAL_DEFENSIVE_PACT</Tag>
@@ -790,6 +804,7 @@
         <German>%D1: "Wir schätzen es gar nicht, dass Ihr Verteidigungsbündnisse mit unseren Gegnern schließt!"</German>
         <Italian>%D1: "Siamo sconvolti dal fatto che tu abbia firmato alleanze difensive con i nostri rivali."</Italian>
         <Spanish>%D1: "Nos trastorna que hayáis firmado acuerdos de protección con nuestros rivales."</Spanish>
+        <Russian>%D1: «Нас расстраивают подписанные вами оборонительные соглашения с нашими соперниками».</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_SHARE_WAR</Tag>
@@ -798,6 +813,7 @@
         <German>%D1: "Unsere gemeinsamen militärischen Aktivitäten schweißen uns enger zusammen."</German>
         <Italian>%D1: "I nostri reciproci aiuti militari ci rendono molto vicini l'un l'altro."</Italian>
         <Spanish>%D1: "Nuestra mutua lucha militar nos acerca más."</Spanish>
+        <Russian>%D1: "Борьба с общим врагом сплотила наши народы."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_TRADE</Tag>
@@ -806,6 +822,7 @@
         <German>%D1: "Unsere Handelsbeziehungen sind erfreulich."</German>
         <Italian>%D1: "I nostri rapporti commerciali sono stati equi e onesti."</Italian>
         <Spanish>%D1: "Nuestras relaciones comerciales han sido buenas y leales."</Spanish>
+        <Russian>%D1: "Мы рады множеству торговых сделок между нами."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_RIVAL_TRADE</Tag>
@@ -814,6 +831,7 @@
         <German>%D1: "Ihr habt mit unseren Feinden Handel betrieben!"</German>
         <Italian>%D1: "Hai commerciato con i nostri peggior nemici!"</Italian>
         <Spanish>%D1: "¡Habéis comerciado con nuestros peores enemigos!"</Spanish>
+        <Russian>%D1: "Вы торговали с нашими злейшими врагами!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_MEMORY</Tag>
@@ -871,18 +889,21 @@
         <English>%D1: "We lost a war against you."</English>
         <French>%D1: "Nous avons perdu une guerre contre vous."</French>
         <German>%D1: "Wir haben einen Krieg gegen Euch verloren."</German>
+        <Russian>%D1: "Мы проиграли вам в прошлой войне."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_TEAMSIZE_ATTITUDE</Tag>
         <English>%D1: "You have too many allies."</English>
         <French>%D1: "Vous avez trop d'alliés."</French>
         <German>%D1: "Ihr habt zu viele Verbündete."</German>
+        <Russian>%D1: «У вас очень много союзников».</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_SAME_TEAM</Tag>
         <English>%D1: "We're allies."</English>
         <French>%D1: "Nous sommes alliés."</French>
         <German>%D1: "Wir sind Verbündete."</German>
+        <Russian>%D1: "Мы союзники."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_SAME_RELIGION</Tag>
@@ -891,6 +912,7 @@
         <German>%D1: "Wir stehen zu unseren Glaubensbrüdern und -schwestern."</German>
         <Italian>%D1: "Ci preoccupiamo dei nostri fratelli e delle nostre sorelle."</Italian>
         <Spanish>%D1: "Nos preocupamos por nuestros hermanos y hermanas de fe."</Spanish>
+        <Russian>%D1: "Мы заботимся о наших братьях и сестрах по вере."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_DIFFERENT_RELIGION</Tag>
@@ -899,6 +921,7 @@
         <German>%D1: "Wir sind entsetzt, dass Ihr in die Fänge einer heidnischen Religion geraten seid!"</German>
         <Italian>%D1: "Siamo amareggiati del fatto che siate caduti schiavi di una religione empia."</Italian>
         <Spanish>%D1: "Nos trastorna que hayáis caído bajo el influjo de una religión infiel."</Spanish>
+        <Russian>%D1: "Мы расстроены тем, что вы попали под влияние язычников!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_REBEL</Tag>
@@ -907,6 +930,7 @@
         <German>%D1: "In den Kolonien wächst das Potential zur Rebellion!"</German>
         <Italian>%D1: "Stai diventando un salasso, per il mio esercito."</Italian>
         <Spanish>%D1: "Sois una sanguijuela de efectivos militares."</Spanish>
+        <Russian>%D1: "В колониях растут мятежные настроения!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_AI_ATTITUDE_Modifie_A_supprimer</Tag>
@@ -1019,6 +1043,7 @@
         <English>Milord, the Natives delivered the promised amount of %d1_yield_amount%F3_yield_icon to [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
         <French>Les indigènes ont livré le montant convenu de %d1_yield_amount%F3_yield_icon à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>Milord, die Ureinwohner haben die versprochenen %d1_yield_amount%F3_yield_icon nach [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] geliefert.</German>
+        <Russian>Милорд, индейцы доставили обещанное количество %d1_yield_amount%F3_yield_icon в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_REQUIRES_RIVER</Tag>
@@ -1027,6 +1052,7 @@
         <German>[COLOR_WARNING_TEXT]Erfordert[COLOR_REVERT] einen Fluss</German>
         <Italian>[COLOR_WARNING_TEXT]Richiede[COLOR_REVERT] un fiume</Italian>
         <Spanish>[COLOR_WARNING_TEXT]Requiere[COLOR_REVERT] un río</Spanish>
+        <Russian>[COLOR_WARNING_TEXT]Требуется[COLOR_REVERT] река</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_TAKE_TRAIN</Tag>
@@ -1326,72 +1352,84 @@
         <English>Milord, there is unrest in city [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] because the population feels unprotected.</English>
         <French>Sir, il y a des désordres civiles à city %s1_city car la population ne s'y sent pas protégée.</French>
         <German>Milord, in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] gibt es Unruhen, weil die Bürger sich nicht ausreichend geschützt fühlen.</German>
+        <Russian>Милорд, в городе [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] беспорядки, потому что население чувствует себя незащищенным.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PAYED_CHURCH_DEMAND</Tag>
         <English>Word about your generous donation to the Mother Church has spread.</English>
         <French>L'information concernant votre généreuse donation à l'Eglise se répand.</French>
         <German>Die Kunde über Eure grosszügige Spende an die Heilige Mutter Kirche verbreitet sich.</German>
+        <Russian>Все только и говорят о вашем щедром пожертвовании Матери-Церкви.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_REWARD_ATTITUDE_KING</Tag>
         <English>[NEWLINE]His Majesty is very pleased that prestige for his Nation has increased through your actions.</English>
         <French>[NEWLINE]Le Roi est heureux de voir le prestige de sa Nation augmenter au travers de vos actions.</French>
         <German>[NEWLINE]Seine Majestät ist sehr erfreut über das Ansehen, das Eure Taten seiner Nation bescheren.</German>
+        <Russian>[NEWLINE]Его Величество очень рад, что благодаря вашим действиям престиж его нации вырос.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_REWARD_ATTITUDE_EUROPEANS</Tag>
         <English>[NEWLINE]Your prestige at other European Nations has grown.</English>
         <French>[NEWLINE]Votre prestige chez les autres Nations européennes a augmenté.</French>
         <German>[NEWLINE]Euer Ansehen bei den anderen europäischen Nationen ist gestiegen.</German>
+        <Russian>[NEWLINE]Ваш авторитет в других странах Европы вырос.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_REWARD_IMMIGRATION</Tag>
         <English>[NEWLINE]Emigration of faithful Christians to your colony has increased.</English>
         <French>[NEWLINE]L'immigration de chrétiens fidèles vers vos colonies a augmenté.</French>
         <German>[NEWLINE]Die Auswanderung gläubiger Christen in die Kolonien nimmt zu.</German>
+        <Russian>[NEWLINE]Эмиграция верующих христиан в вашу колонию увеличилась.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_REWARD_MISSIONARY</Tag>
         <English>[NEWLINE]A missionary hearing those words has spontaneously decided to join your cause.</English>
         <French>[NEWLINE]Un missionnaire ayant eu échos de la nouvelle a décidé de se joindre à votre cause.</French>
         <German>[NEWLINE]Ein Missionar, der diese Worte hörte, hat spontan entschieden, sich Eurer Sache anzuschliessen.</German>
+        <Russian>[NEWLINE]Услышав эти слова, миссионер решил присоединиться к нашему делу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PAYED_CHURCH_REWARD_PREACHER</Tag>
         <English>[NEWLINE]A preacher hearing those words has spontaneously decided to join your cause.</English>
         <French>[NEWLINE]Un prêtre ayant eu échos de la nouvelle a décidé de se joindre à votre cause.</French>
         <German>[NEWLINE]Ein Prediger, der diese Worte hörte, hat spontan entschieden, sich Eurer Sache anzuschliessen.</German>
+        <Russian>[NEWLINE]Услышав эти слова, проповедник решил присоединиться к нашему делу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_REFUSED_CHURCH_DEMAND</Tag>
         <English>Word about your refusal to help the poor and desperate has spread.</English>
         <French>Votre refus d'aider les pauvres et les désespérés choque l'opinion.</French>
         <German>Die Kunde über Eure Weigerung, den Armen und Hilfsbedürftigen zu spenden, verbreitet sich.</German>
+        <Russian>По всей стране разлетелся слух о вашем отказе помогать бедным и отчаявшимся.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_PENALTY_ATTITUDE_KING</Tag>
         <English>[NEWLINE]His Majesty is profoundly displeased by the loss of prestige for his nation through your actions.</English>
         <French>[NEWLINE]Le Roi est très insatisfait de la perte du prestige de sa Nation au travers de vos actions.</French>
         <German>[NEWLINE]Seine Majestät ist nicht erfreut über den Verlust an Ansehen, den Eure Taten seiner Nation beschert haben.</German>
+        <Russian>[NEWLINE]Его Величество крайне недоволен потерей престижа его нации из-за ваших действий.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_PENALTY_ATTITUDE_EUROPEANS</Tag>
         <English>[NEWLINE]Your prestige with other European nations has suffered.</English>
         <French>[NEWLINE]Votre prestige chez les autres Nations européeennes s'est dégradé.</French>
         <German>[NEWLINE]Euer Ansehen bei den anderen europäischen Nationen hat gelitten.</German>
+        <Russian>[NEWLINE]Ваш престиж среди других европейских стран понизился.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_PENALTY_UNREST</Tag>
         <English>[NEWLINE]Faithful Christians are marching in the streets of your capitol.</English>
         <French>[NEWLINE]Les chrétiens fidèles de votre capitale marchent dans les rues.</French>
         <German>[NEWLINE]Gläubige Christen demonstrieren auf den Strassen der Hauptstadt gegen Euer Handeln.</German>
+        <Russian>[NEWLINE]Верные христиане маршируют по улицам столицы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_PENALTY_IMMIGRATION</Tag>
         <English>[NEWLINE]Fewer faithful Christians choose to emigrate to your colony.</English>
         <French>[NEWLINE]L'immigration de chrétiens fidèles vers vos colonies a diminué.</French>
         <German>[NEWLINE]Die Auswanderung gläubiger Christen in die Kolonien nimmt ab.</German>
+        <Russian>[NEWLINE]В ваши колонии эмигрирует меньше праведных христиан.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_PRICE_HELP</Tag>
@@ -1433,21 +1471,25 @@
         <Tag>TXT_BONUS_RESOURCE_IS_WATER</Tag>
         <English>[ICON_BULLET]valid on Water</English>
         <German>[ICON_BULLET]gültig auf Wasser</German>
+        <Russian>[ICON_BULLET]присутствует на воде</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_BONUS_RESOURCE_IS_FLATLAND</Tag>
         <English>[ICON_BULLET]valid on Flatlands</English>
         <German>[ICON_BULLET]gültig auf Flachland</German>
+        <Russian>[ICON_BULLET]присутствует на ровной местности</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_BONUS_RESOURCE_IS_HILLS</Tag>
         <English>[ICON_BULLET]valid on Hills</English>
         <German>[ICON_BULLET]gültig auf Hügeln</German>
+        <Russian>[ICON_BULLET]присутствует на холмах</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_BONUS_RESOURCE_IS_PEAKS</Tag>
         <English>[ICON_BULLET]valid on Peaks</English>
         <German>[ICON_BULLET]gültig auf Gebirge</German>
+        <Russian>[ICON_BULLET]присутствует в горах</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HEALTH_FROM_RESSOURCE</Tag>
@@ -1515,6 +1557,7 @@
         <German>%s1 : %D2%F3 (mit Bonusressource [LINK=%s5]%s4[\LINK])</German>
         <Italian>%s1 : %D2%F3 (con Resource [LINK=%s5]%s4[\LINK])</Italian>
         <Spanish>%s1 : %D2 %F3 (con Resource [LINK=%s5]%s4[\LINK])</Spanish>
+        <Russian>%s1 : %D2%F3 (с ресурсом [LINK=%s5]%s4[\LINK])</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HEALTH_CITY</Tag>
@@ -1574,6 +1617,7 @@
         <German>[ICON_BULLET]Eine Einheit muss hier befestigt sein, damit die Verbesserung im Laufe der Zeit wächst</German>
         <Italian>[ICON_BULLET]Una unita deve fortificare l'aggiornamento</Italian>
         <Spanish>[ICON_BULLET]Una unidad debe fortalecer para mejorar</Spanish>
+        <Russian>[ICON_BULLET]Должно охраняться для повышения уровня</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_VISIBILITY_RANGE</Tag>
@@ -1610,31 +1654,37 @@
         <Tag>TXT_KEY_PEDIA_FLATLAND</Tag>
         <English>[BOLD]Flatland :[\BOLD]</English>
         <German>[BOLD]Flachland :[\BOLD]</German>
+        <Russian>[BOLD]Равнина :[\BOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_HILLS</Tag>
         <English>[BOLD]Hills :[\BOLD]</English>
         <German>[BOLD]Hügel :[\BOLD]</German>
+        <Russian>[BOLD]Холмы :[\BOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_PEAKS</Tag>
         <English>[BOLD]Peaks :[\BOLD]</English>
         <German>[BOLD]Berge :[\BOLD]</German>
+        <Russian>[BOLD]Горы :[\BOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_WATER</Tag>
         <English>[BOLD]Water :[\BOLD]</English>
         <German>[BOLD]Wasser :[\BOLD]</German>
+        <Russian>[BOLD]Вода :[\BOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_VALID_TERRAINS</Tag>
         <English>[NEWLINE][BOLD]Valid Terrains :[\BOLD]</English>
         <German>[NEWLINE][BOLD]Gültige Gelände :[\BOLD]</German>
+        <Russian>[NEWLINE][BOLD]Допустимые ландшафты :[\BOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_VALID_TERRAINS_2</Tag>
         <English>[BOLD]Valid Terrains :[\BOLD]</English>
         <German>[BOLD]Gültige Gelände :[\BOLD]</German>
+        <Russian>[BOLD]Допустимые ландшафты :[\BOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_VALID_FEATURES</Tag>
@@ -1645,11 +1695,13 @@
         <Tag>TXT_KEY_PEDIA_YIELD_INCREASES</Tag>
         <English>[BOLD]Yield Increases :[\BOLD]</English>
         <German>[BOLD]Höhere Erträge :[\BOLD]</German>
+        <Russian>[BOLD]Увеличение урожайности :[\BOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_YIELD_DECREASES</Tag>
         <English>[NEWLINE][BOLD]Yield Decreases :[\BOLD]</English>
         <German>[NEWLINE][BOLD]Geringere Erträge :[\BOLD]</German>
+        <Russian>[NEWLINE][BOLD]Уменьшение урожайности :[\BOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CULTURE_FROM_POPULATION</Tag>
