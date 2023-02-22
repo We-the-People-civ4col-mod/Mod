@@ -46,7 +46,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_DENSE_FOREST_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Dense Forests[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Dense forest[COLOR_REVERT] is almost impassable. In the tropics getting through it means using a machete. Travelling in the temperate dense forest takes a lot of time and a sharp axe.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Dichter Wald[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -71,7 +71,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ANCIENT_FOREST_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ancient Northern Forest[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ancient northern forests[COLOR_REVERT] have the tallest trees. The old growth there is prized for ship masts.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Alter Nordwald[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -165,7 +165,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_TROPICAL_GROVES_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tropical Grove[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tropical groves[COLOR_REVERT] have big trees with hardwood prized for furniture.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tropischer Hain[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -180,7 +180,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_TAR_PIT_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tar Pit[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]tar pit[COLOR_REVERT] provides the right sealant to waterproof seams on canoes and ships. It can also hide the bones of long-extinct animals.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Teergrube[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -195,7 +195,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_SALT_PAN_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Salt Desert[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]salt pan[COLOR_REVERT] is the dry bed of an ancient salt lake where salt can be mined.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Salzwüste[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -210,7 +210,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_SALT_DRAINAGE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Salt Water Pools[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Salt water pools[COLOR_REVERT] have no exit channel so the water can't run off. Minerals including salt accumulate. Water has to be evaporated to get the salt.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Salzwassertümpel[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -225,7 +225,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_FLOOD_PLAINS_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fertile Flood Plains[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fertile flood plains[COLOR_REVERT] get fresh silt every spring when their rivers overflow. Abundant crops support a large healthy population.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fruchtbares Schwemmland[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -240,7 +240,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_CRATER_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Meteor Crater[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Meteor craters[COLOR_REVERT] are where meteorites hit the ground. They're rare. Most space rocks burn up in Earth's atmosphere, unlike on the moon which is pockmarked with frequent impacts. Craters often have lakes in the middle.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Meteoritenkrater[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -255,7 +255,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_IMPASSABLE_MOUNTAIN_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Impassable Mountain[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Impassable mountains[COLOR_REVERT] are too steep and icy for any path to be cut or cantilevered around the tricky spots. They can be climbed only by expert mountaineers, and are an absolute barrier to commerce.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Unpassierbarer Berg[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -270,7 +270,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_DESERT_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rock Formation (Desert)[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Desert rock formations[COLOR_REVERT] are shaped by the wind into exotic shapes.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Felsenformation (Wüste)[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -285,7 +285,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_TEMPERATE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rock Formation (Temperate)[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Temperate rock formations[COLOR_REVERT] are shaped by water into exotic shapes.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Felsenformation (Gemäßigt)[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -300,7 +300,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_POLAR_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rock Formation (Polar)[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Polar rock formations[COLOR_REVERT] are shaped by ice into exotic shapes.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Felsenformation (Polar)[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -342,7 +342,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_SWAMP_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Swamp[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]swamp[COLOR_REVERT] is a shallow lake with so much vegetation that a boat crosses only with difficulty. Luxuriant plant life hosts a complex ecosystem.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sumpf[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -357,7 +357,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_BOG_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]bog[COLOR_REVERT] is what happens when a swamp dries out. Plants turn into peat. There are still sinkholes to threaten the unwary traveller.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moorpflanzen[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -372,7 +372,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_BARREL_CACTUS_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Barrel Cactus Field[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]barrel cactus[COLOR_REVERT] is one of the few sources of water in the desert.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kugelkaktusfeld[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -387,7 +387,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_CACTUS_TREES_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cactus Trees[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cactus trees[COLOR_REVERT] are slow-growing, some living for a hundred and fifty years.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kaktusbäume[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -402,7 +402,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_LICHEN_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Lichen[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Lichen[COLOR_REVERT] is an ancient plant, food for caribou. Clinging to rocks it brings colour to the polar regions.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Flechten[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -417,7 +417,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_MOSS_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moss[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moss[COLOR_REVERT]is found in wet forests where the sun seldom appears. It's a guide to direction because it grows thicker on the north side of trees.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moos[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -432,7 +432,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_THICKET_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Thicket[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]thicket[COLOR_REVERT] is a bunch of trees, usually not too tall, in a meadow or an open area with low shrubs.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Dickicht[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -478,7 +478,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_SANDSTORM_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sandstorms[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sandstorms[COLOR_REVERT] are the most dramatic danger in the desert. In the blowing sand it's hard to breathe, and impossible to know which way to go. The only thing to do is to wait it out.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sandstürme[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -492,8 +492,8 @@
         <Russian>Снежная буря</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_FEATURE_SANDSTORM_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Blizzard[COLOR_REVERT]TODO</English>
+        <Tag>TXT_KEY_FEATURE_BLIZZARD_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]blizzard[COLOR_REVERT] is a snowstorm lasting four hours or more, with wind speeds exceeding forty kilometres an hour and visibility less than a kilometre.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Blizzard[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -508,7 +508,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_FOG_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fog[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fog[COLOR_REVERT] is what happens when a cloud forms on the ground. Sometimes it's possible to move slowly through fog, and sometimes it's hard to see your hand in front of your face.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Nebel[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -523,7 +523,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_REEF_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Coral Reefs[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Coral reefs[COLOR_REVERT] are growing rocks, the shells of small animals just below the surface of the water, a major cause of shipwrecks. Knowing familiar reefs and being able to spot new ones is the mark of a good captain.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Korallenriffe[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -538,7 +538,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_STONE_REEF_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rock Reefs[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rock reefs[COLOR_REVERT] can be of volcanic origin or forced up by the movement of tectonic plates. They sit just below the water and might be exposed at low tide.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Felsenriff[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -553,7 +553,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_PEARL_REEF_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pearl Reef[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]pearl reef[COLOR_REVERT] is a rock reef with oysters clinging to it.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Perlenriff[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -568,7 +568,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_KELP_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kelp[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kelp[COLOR_REVERT] is both a barrier to navigation and a good source of Vitamin C.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Seetang[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -583,7 +583,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_SEAGRASS_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Seagrass[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Seagrass[COLOR_REVERT] indicates shallow water. Small boats can pass slowly through seagrass.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Seegrass[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -598,7 +598,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_N_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]North Stream[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]north ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Nord Strömung[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -613,7 +613,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_S_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]South Stream[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]south ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Süd Strömung[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -628,7 +628,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_E_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]East Stream[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]east ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ost Strömung[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -643,7 +643,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_W_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]West Stream[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]west ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]West Strömung[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -658,7 +658,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_NE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]North-East Stream[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]north-east ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Nord-Ost Strömung[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -673,7 +673,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_NW_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]North-West Stream[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]north-west ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Nord-West Strömung[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -688,7 +688,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_SE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]South-East Stream[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]south-east ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Süd-Ost Strömung[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -703,7 +703,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_SW_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]South-West Stream[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A[COLOR_HIGHLIGHT_TEXT]south-west ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Süd-West Strömung[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -718,7 +718,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_LUSHGRASS_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Lush Grass[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Lush grass[COLOR_REVERT] is sought by ranchers and herders so their animals can grow fat.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Saftiges Gras[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -733,7 +733,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_WILD_FLOWERS_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Wild Flowers[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Wildflowers[COLOR_REVERT] are pretty, but in the colonial era their commercial value is insignificant.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Wilde Blumen[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -748,7 +748,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_MEADOW_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hill Meadow[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Meadows[COLOR_REVERT] are open areas with grass and shrubs, surrounded by trees.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Weidelhügel[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
@@ -763,7 +763,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_SHRUB_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Shrubs[COLOR_REVERT]TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Shrubs[COLOR_REVERT] are medium-sized plants, usually shorter than a human. They exist in great variety and can be found in all terrains and climates.</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sträuche[COLOR_REVERT]tbd</German>
     </TEXT>
     <TEXT>
