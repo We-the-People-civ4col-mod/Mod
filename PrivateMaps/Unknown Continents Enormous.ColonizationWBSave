@@ -1,7 +1,7 @@
 Version=11
 BeginGame
 	StartYear=1492
-	Description=Unknown Continents is a generated map and manually modified for WTP. Enormous size (85x137).
+	Description=TXT_KEY_WORLDBUILDER_WTP_UNKNOWN_CONTINENTS_DESC
 	ModPath=
 	WBNorthAmericanNative=1
 	WBSouthAmericanNative=1

@@ -1,6 +1,6 @@
 Version=11
 BeginGame
-	Description=WTP New England Huge
+	Description=TXT_KEY_WORLDBUILDER_NEW_ENGLAND_DESC
 	ModPath=
 	WBNorthAmericanNative=1
 	WBSouthAmericanNative=0
@@ -258,7 +258,7 @@ BeginMap
 	bottom latitude=0
 	wrap X=0
 	wrap Y=0
-	world size=WORLDSIZE_HUGE
+	world size=WORLDSIZE_STANDARD
 	climate=CLIMATE_ROCKY
 	sealevel=SEALEVEL_HIGH
 	num plots written=2100
