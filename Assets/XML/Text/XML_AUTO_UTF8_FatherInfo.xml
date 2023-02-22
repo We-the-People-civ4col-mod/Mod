@@ -429,7 +429,7 @@
     <TEXT>
         <Tag>TXT_KEY_FATHER_BLACKBEARD_STRATEGY</Tag>
         <English>Milord, the pirate [COLOR_TECH_TEXT]Blackbeard[COLOR_REVERT] will grant a 50% bonus on the capturing of enemy ships.</English>
-        <French>Milord, le pirate [COLOR_TECH_TEXT]Barbe Noire[COLOR_REVERT] vous apportera un bonus de 50% pour capturer des navires ennemis.</French>
+        <French>Seigneur, le pirate [COLOR_TECH_TEXT]Barbe Noire[COLOR_REVERT] vous apportera un bonus de 50% pour capturer des navires ennemis.</French>
         <German>Milord, mit dem Piraten [COLOR_TECH_TEXT]Blackbeard[COLOR_REVERT] sind unsere Kaperschiffe deutlich erfolgreicher beim Versuch, feindliche Schiffe zu kapern.</German>
     </TEXT>
     <TEXT>
@@ -469,9 +469,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_CHARLES_CARROLL_STRATEGY</Tag>
-        <English>Increase [COLOR_HIGHLIGHT_TEXT]Immigration[COLOR_REVERT] by having [COLOR_TECH_TEXT]Charles Carroll[COLOR_REVERT] join your colony as a Founding Father. When Carroll is on your side, he will bring two bishops with him and lower the immigration threshold.</English>
-        <French>Augmentez l'[COLOR_HIGHLIGHT_TEXT]immigration[COLOR_REVERT] dans vos colonies en ralliant [COLOR_TECH_TEXT]Charles Carroll[COLOR_REVERT] à vos Pères Fondateurs. Avec Caroll, deux évêques vous seront octroyés et le seuil d'immigration en Europe sera baissé.</French>
-        <German>Möchtet Ihr die [COLOR_HIGHLIGHT_TEXT]Einwanderung[COLOR_REVERT] in unsere Kolonien forcieren, Milord? Dann ist [COLOR_TECH_TEXT]Charles Carroll[COLOR_REVERT] der richtige Mann! Carrolls Beitritt zum Kontinentalkongress bewirkt eine dauerhafte Senkung der in Europa für Auswanderer benötigten Kreuze. Zudem erhaltet Ihr [COLOR_HIGHLIGHT_TEXT]2 Bischöfe[COLOR_REVERT], um in Euren Gotteshäusern noch wirkungsvoller zu predigen.</German>
+        <English>Increase [COLOR_HIGHLIGHT_TEXT]Emigration[COLOR_REVERT] by having [COLOR_TECH_TEXT]Charles Carroll[COLOR_REVERT] join your colony as a Founding Father. When Carroll is on your side, he will bring two bishops with him and lower the immigration threshold.</English>
+        <French>Augmentez l'[COLOR_HIGHLIGHT_TEXT]émigration[COLOR_REVERT] dans vos colonies en ralliant [COLOR_TECH_TEXT]Charles Carroll[COLOR_REVERT] à vos Pères Fondateurs. Avec Caroll, deux évêques vous seront octroyés et le seuil d'immigration en Europe sera baissé.</French>
+        <German>Möchtet Ihr die [COLOR_HIGHLIGHT_TEXT]Auswanderung[COLOR_REVERT] in unsere Kolonien forcieren, Milord? Dann ist [COLOR_TECH_TEXT]Charles Carroll[COLOR_REVERT] der richtige Mann! Carrolls Beitritt zum Kontinentalkongress bewirkt eine dauerhafte Senkung der in Europa für Auswanderer benötigten Kreuze. Zudem erhaltet Ihr [COLOR_HIGHLIGHT_TEXT]2 Bischöfe[COLOR_REVERT], um in Euren Gotteshäusern noch wirkungsvoller zu predigen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_CHIEF_POWHATAN</Tag>
@@ -2515,7 +2515,7 @@
     <TEXT>
         <Tag>TXT_KEY_FATHER_JOSE_DE_SAN_MARTIN_STRATEGY</Tag>
         <English>Milord, with [COLOR_TECH_TEXT]José de San Martín[COLOR_REVERT] our troops will get a bonus when fighting in the mountains.</English>
-        <French>Milord, avec [COLOR_TECH_TEXT]José de San Martín[COLOR_REVERT] nos troupes reçoivent un bonus quand elles combattent dans les montagnes.</French>
+        <French>Seigneur, avec [COLOR_TECH_TEXT]José de San Martín[COLOR_REVERT] nos troupes reçoivent un bonus quand elles combattent dans les montagnes.</French>
         <German>Milord, mit [COLOR_TECH_TEXT]José de San Martín[COLOR_REVERT] erhalten unsere Truppen einen Bonus, wenn sie im Gebirge kämpfen.</German>
     </TEXT>
     <TEXT>
@@ -3714,7 +3714,7 @@
         <Tag>TXT_KEY_FATHER_SAMUEL_NICOLAS_MONARDES_STRATEGY</Tag>
         <English>Increase the production of [COLOR_HIGHLIGHT_TEXT]Coca[COLOR_REVERT] in your colony by adding [COLOR_TECH_TEXT]Nicolás Monardes[COLOR_REVERT] as a Founding Father. He will also supply two [COLOR_HIGHLIGHT_TEXT]Expert Coca Planters[COLOR_REVERT] and two [COLOR_HIGHLIGHT_TEXT]Native Slaves[COLOR_REVERT].</English>
         <French>Augmentez votre production de [COLOR_HIGHLIGHT_TEXT]coca[COLOR_REVERT] en ajoutant [COLOR_TECH_TEXT]Nicolás Monardes[COLOR_REVERT] à vos Pères Fondateurs. Il apportera également avec lui [COLOR_HIGHLIGHT_TEXT]deux experts planteurs de coca[COLOR_REVERT].</French>
-        <German>Wenn es Euch interessant erscheint, die Produktion von [COLOR_HIGHLIGHT_TEXT]Cocablättern[COLOR_REVERT] in Euren Kolonien merklich zu steigern, wäre [COLOR_TECH_TEXT]Nicolás Monardes[COLOR_REVERT] als Gründervater eine gute Wahl. Neben den Produktionsboni erhaltet Ihr ausserdem [COLOR_HIGHLIGHT_TEXT]2 Erfahrene Cocasammler[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]2 Ureinwohnersklaven[COLOR_REVERT].</German>
+        <German>Wenn es Euch interessant erscheint, die Produktion von [COLOR_HIGHLIGHT_TEXT]Coca-Blättern[COLOR_REVERT] in Euren Kolonien merklich zu steigern, wäre [COLOR_TECH_TEXT]Nicolás Monardes[COLOR_REVERT] als Gründervater eine gute Wahl. Neben den Produktionsboni erhaltet Ihr ausserdem [COLOR_HIGHLIGHT_TEXT]2 Erfahrene Cocasammler[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]2 Ureinwohnersklaven[COLOR_REVERT].</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_SOR_JUANA</Tag>
@@ -4270,27 +4270,27 @@
     <TEXT>
         <Tag>TXT_KEY_FATHER_IVAN_KRUZENSHTERN</Tag>
         <English>
-            <Text>Ivan Fyodorovich Krusenstern</Text>
+            <Text>Adam Johann von Krusenstern</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </English>
         <French>
-            <Text>Ivan Fyodorovich Krusenstern</Text>
+            <Text>Adam Johann von Krusenstern</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Ivan Fyodorovich Krusenstern</Text>
+            <Text>Adam Johann von Krusenstern</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Ivan Fyodorovich Krusenstern</Text>
+            <Text>Adam Johann von Krusenstern</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Ivan Fyodorovich Krusenstern</Text>
+            <Text>Adam Johann von Krusenstern</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
