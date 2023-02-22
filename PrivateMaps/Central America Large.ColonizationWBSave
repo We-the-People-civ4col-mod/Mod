@@ -1,6 +1,6 @@
 Version=11
 BeginGame
-	Description=TXT_KEY_WORLDBUILDER_TAC_CENTRAL_AMERICA_DESC
+	Description=TXT_KEY_WORLDBUILDER_CENTRAL_AMERICA_DESC
 	ModPath=
 	WBNorthAmericanNative=0
 	WBCentralAmericanNative=1
