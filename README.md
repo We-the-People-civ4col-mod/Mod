@@ -45,6 +45,10 @@ Otherwise the mod will not work!
 * Many AI improvements (including several critical issues that greatly impaired the AI)  
 * Logging of AI actions (to enable ensure that LoggingEnabled = 1 is set in CivilizationIV.ini, the log itself is found in Logs\BBAI.log  
 
+### Bugfixes
+* We fixed so many bugs we don't remember all of them ... ;)
+* Multiple OOS (multiplayer desync) bugs have been fixed
+
 ### Internals
 * Ported and adapted Karadoc's pathfinder (originally written for the Civ4 mod K-Mod)  
 * Parallelized the job assigner subsystem and the K-mod pathfinder
