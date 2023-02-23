@@ -2854,7 +2854,14 @@ bool CvGame::canDoControl(ControlTypes eControl)
 	case CONTROL_WORLD_BUILDER:
 		if (!(isGameMultiPlayer()) && GC.getInitCore().getAdminPassword().empty() && !gDLL->getInterfaceIFace()->isInAdvancedStart() && !gDLL->getInterfaceIFace()->isCombatFocus())
 		{
-			if (!isOption(GAMEOPTION_REMOVE_WORLD_BUILDER) || gDLL->getChtLvl() > 0) // added game option to remove the WB as requested on the forum - Nightinggale
+#ifdef FASSERT_ENABLE
+			// added game option to remove the WB as requested on the forum - Nightinggale
+			// assert builds can cheat to get the option as asserts tend to be used to explore problems.
+			if (!isOption(GAMEOPTION_REMOVE_WORLD_BUILDER) || gDLL->getChtLvl() > 0)
+#else
+			// without asserts the game should ignore cheat level and will only look at the game option
+			if (!isOption(GAMEOPTION_REMOVE_WORLD_BUILDER))
+#endif
 			{
 				return true;
 			}
