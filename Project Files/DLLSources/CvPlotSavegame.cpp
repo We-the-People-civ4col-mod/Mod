@@ -3,8 +3,8 @@
 #include "CvSavegame.h"
 
 // set the default values
-const short defaultX = 0;
-const short defaultY = 0;
+const int defaultX = 0;
+const int defaultY = 0;
 const int defaultArea = FFreeList::INVALID_INDEX;
 const short defaultFeatureVarity = 0;
 
@@ -141,7 +141,7 @@ const char* getSavedEnumNamePlot(SavegameVariableTypes eType)
 	case Save_RiverCrossingCount: return "Save_RiverCrossingCount";
 	case Save_DistanceToOcean: return "Save_DistanceToOcean";
 	case Save_Crumbs: return "Save_Crumbs";
-	
+
 	case Save_CanalValue: return "Save_CanalValue";
 	case Save_ChokeValue: return "Save_ChokeValue";
 	case Save_DefenseDamage: return "Save_DefenseDamage";
@@ -183,8 +183,9 @@ const char* getSavedEnumNamePlot(SavegameVariableTypes eType)
 // assign everything to default values
 void CvPlot::resetSavedData()
 {
-	m_iX = defaultX;
-	m_iY = defaultY;
+	// m_iX = defaultX;
+	// m_iY = defaultY;
+	m_coord.set(defaultX, defaultY);
 	m_iArea = defaultArea;
 	m_iFeatureVariety = defaultFeatureVarity;
 
@@ -249,6 +250,7 @@ void CvPlot::read(CvSavegameReader reader)
 		reader.Read(szClassName);
 	}
 
+	int tempX = defaultX, tempY = defaultY;
 	// loop read all the variables
 	// As long as each variable has a UnitSavegameVariables "header", order doesn't matter.
 	// Variables can be read in any order and any number of variables can be skipped.
@@ -264,8 +266,8 @@ void CvPlot::read(CvSavegameReader reader)
 			bContinue = false;
 			break;
 
-		case Save_X:                       reader.Read(m_iX                         ); break;
-		case Save_Y:                       reader.Read(m_iY                         ); break;
+		case Save_X:                       reader.Read(tempX                        ); break;
+		case Save_Y:                       reader.Read(tempY                        ); break;
 		case Save_Area:                    reader.Read(m_iArea                      ); break;
 		case Save_FeatureVarity:           reader.Read(m_iFeatureVariety            ); break;
 
@@ -302,7 +304,7 @@ void CvPlot::read(CvSavegameReader reader)
 		case Save_eRiverNSDirection:       m_eRiverNSDirection     = reader.ReadBitfield(m_eRiverNSDirection        ); break;
 		case Save_eRiverWEDirection:       m_eRiverWEDirection     = reader.ReadBitfield(m_eRiverWEDirection        ); break;
 		case Save_eEurope:                 m_eEurope               = reader.ReadBitfield(m_eEurope                  ); break;
-		
+
 		case Save_plotCity:                reader.Read(m_plotCity                   ); break;
 		case Save_workingCity:             reader.Read(m_workingCity                ); break;
 		case Save_workingCityOverride:     reader.Read(m_workingCityOverride        ); break;
@@ -359,7 +361,7 @@ void CvPlot::read(CvSavegameReader reader)
 		case Save_ScriptData               : reader.Read(m_szScriptData)                      ; break;
 
 		case Save_BuildProgress            : reader.Read(m_em_iBuildProgress)                 ; break;
-			
+
 		case Save_Units                    : reader.Read(m_units)                             ; break;
 
 		default:
@@ -367,7 +369,9 @@ void CvPlot::read(CvSavegameReader reader)
 			break;
 		}
 	}
-	
+
+	m_coord.set(tempX, tempY);
+
 	// Loading done. Set up the cache (if any).
 	updateImpassable();
 
@@ -400,8 +404,8 @@ void CvPlot::write(CvSavegameWriter writer)
 	// m_bLayoutStateWorked not saved
 	// m_bImpassable not saved
 
-	writer.Write(Save_X, m_iX, defaultX);
-	writer.Write(Save_Y, m_iY, defaultY);
+	writer.Write(Save_X, coord().x(), defaultX);
+	writer.Write(Save_Y, coord().y(), defaultY);
 	writer.Write(Save_Area, m_iArea, defaultArea);
 	writer.Write(Save_FeatureVarity, m_iFeatureVariety, defaultFeatureVarity);
 
@@ -430,7 +434,7 @@ void CvPlot::write(CvSavegameWriter writer)
 	writer.Write(Save_NOfRiver, m_bNOfRiver, defaultNOfRiver);
 	writer.Write(Save_WOfRiver, m_bWOfRiver, defaultWOfRiver);
 	writer.Write(Save_PotentialCityWork, m_bPotentialCityWork, defaultPotentialCityWork);
-	
+
 	writer.Write(Save_ePlotType, m_ePlotType, defaultePlotType);
 	writer.Write(Save_eTerrainType, m_eTerrainType, defaulteTerrainType);
 	writer.Write(Save_eFeatureType, m_eFeatureType, defaulteFeatureType);
@@ -443,8 +447,8 @@ void CvPlot::write(CvSavegameWriter writer)
 	writer.Write(Save_eEurope, m_eEurope, defaulteEurope);
 
 	writer.Write(Save_bmRiverCrossing, m_bmRiverCrossing, defaulteRiverCrossing);
-	
-	
+
+
 	writer.Write(Save_plotCity, m_plotCity);
 	writer.Write(Save_workingCity, m_workingCity);
 	writer.Write(Save_workingCityOverride, m_workingCityOverride);
@@ -499,9 +503,9 @@ void CvPlot::write(CvSavegameWriter writer)
 
 	writer.Write(Save_CultureRangeCities, m_em2_iCultureRangeCities);
 	writer.Write(Save_InvisibleVisibilityCount, m_em2_iInvisibleVisibilityCount);
-		
+
 	writer.Write(Save_ScriptData, m_szScriptData);
-	
+
 	writer.Write(Save_BuildProgress, m_em_iBuildProgress);
 
 	writer.Write(Save_Units, m_units);

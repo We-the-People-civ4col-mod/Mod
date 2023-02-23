@@ -33,7 +33,7 @@ struct CombatDetails
 	int iCityDefenseModifier;
 	int iHillsAttackModifier;
 	int iHillsDefenseModifier;
-	int iDomesticBonusModifier;	
+	int iDomesticBonusModifier;
 	int iFeatureAttackModifier;
 	int iFeatureDefenseModifier;
 	int iTerrainAttackModifier;
@@ -91,16 +91,17 @@ public:
 
 	CvUnit();
 	virtual ~CvUnit();
-	
+
 	void reloadEntity();
-	void init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI, PlayerTypes eOwner, int iX, int iY, DirectionTypes eFacingDirection, int iYieldStored);
+	void init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI, PlayerTypes eOwner, Coordinates initCoord, DirectionTypes eFacingDirection, int iYieldStored);
 	void uninit();
 	void reset(int iID = 0, UnitTypes eUnit = NO_UNIT, PlayerTypes eOwner = NO_PLAYER, bool bConstructorCall = false);
 	void setupGraphical();
 	void convert(CvUnit* pUnit, bool bKill);
 	void kill(bool bDelay, CvUnit* pAttacker = NULL);
 	void removeFromMap();
-	void addToMap(int iPlotX, int iPlotY);
+	void addToMap(Coordinates targetCoord);
+	void addToMap(CvPlot *targetPlot);
 	void updateOwnerCache(int iChange);
 
 	DllExport void NotifyEntity(MissionTypes eMission);
@@ -369,7 +370,7 @@ public:
 	int cityDefenseModifier() const;
 	int hillsAttackModifier() const;
 	int hillsDefenseModifier() const;
-	int DomesticBonusModifier() const;	
+	int DomesticBonusModifier() const;
 	int terrainAttackModifier(TerrainTypes eTerrain) const;
 	int terrainDefenseModifier(TerrainTypes eTerrain) const;
 	int featureAttackModifier(FeatureTypes eFeature) const;
@@ -425,18 +426,25 @@ public:
 #ifdef _USRDLL
 	inline int getX_INLINE() const
 	{
-		return m_iX;
+		return m_coord.x();
 	}
 #endif
 	DllExport int getY() const;
 #ifdef _USRDLL
 	inline int getY_INLINE() const
 	{
-		return m_iY;
+		return m_coord.y();
 	}
 #endif
+	inline const Coordinates& coord() const
+	{
+		return m_coord;
+	}
 	void setXY(int iX, int iY, bool bGroup = false, bool bUpdate = true, bool bShow = false, bool bCheckPlotVisible = false);
+	void jumpTo(Coordinates toCoord, bool bGroup = false, bool bUpdate = true, bool bShow = false, bool bCheckPlotVisible = false);
+	void jumpTo(CvPlot *plot, bool bGroup = false, bool bUpdate = true, bool bShow = false, bool bCheckPlotVisible = false);
 	bool at(int iX, int iY) const;
+	bool at(Coordinates testCoord) const;
 	DllExport bool atPlot(const CvPlot* pPlot) const;
 	DllExport CvPlot* plot() const;
 	CvCity* getCity() const;
@@ -539,7 +547,7 @@ public:
 	int getExtraHillsDefensePercent() const;
 	void changeExtraHillsDefensePercent(int iChange);
 	int getExtraDomesticBonusPercent() const;
-	void changeExtraDomesticBonusPercent(int iChange);		
+	void changeExtraDomesticBonusPercent(int iChange);
 	int getPillageChange() const;
 	void changePillageChange(int iChange);
 	int getAnimalGoldChange() const; //WTP, ray, Animal Promotions increase gold from Animals
@@ -628,7 +636,7 @@ public:
 	DllExport CvUnit* getCombatUnit() const;
 	void setCombatUnit(CvUnit* pUnit, bool bAttacking = false);
 	DllExport CvPlot* getPostCombatPlot() const;
-	void setPostCombatPlot(int iX, int iY);
+	void setPostCombatPlot(Coordinates coord);
 	DllExport CvUnit* getTransportUnit() const;
 	bool isCargo() const;
 	bool setTransportUnit(CvUnit* pTransportUnit, bool bUnload = true);
@@ -725,12 +733,12 @@ public:
 
 	void setHomeCity(CvCity* pNewValue);
 	CvCity* getHomeCity() const;
-	
+
 	DllExport bool isOnMap() const;
 	DllExport const CvArtInfoUnit* getArtInfo(int i) const;
 	DllExport const TCHAR* getButton() const;
 	const TCHAR* getFullLengthIcon() const;
-	
+
 	bool isColonistLocked();
 	void setColonistLocked(bool bNewValue);
 
@@ -825,8 +833,9 @@ protected:
 	int m_iID;
 	int m_iGroupID;
 	int m_iHotKeyNumber;
-	int m_iX;
-	int m_iY;
+	// int m_iX;
+	// int m_iY;
+	Coordinates m_coord;
 	int m_iLastMoveTurn;
 	int m_iGameTurnCreated;
 	int m_iDamage;
@@ -861,7 +870,7 @@ protected:
 	int m_iExtraCityDefensePercent;
 	int m_iExtraHillsAttackPercent;
 	int m_iExtraHillsDefensePercent;
-	int m_iExtraDomesticBonusPercent;	
+	int m_iExtraDomesticBonusPercent;
 	int m_iPillageChange;
 	int m_iAnimalGoldChange; //WTP, ray, Animal Promotions increase gold from Animals
 	int m_iSlaveRevoltReductionBonus; //WTP, ray, Slave Hunter and Slave Master

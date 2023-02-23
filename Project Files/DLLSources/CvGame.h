@@ -280,7 +280,7 @@ public:
 
 	bool isDestroyedCityName(const CvWString& szName) const;
 	void addDestroyedCityName(const CvWString& szName);
-	
+
 	bool isGreatGeneralBorn(CvWString& szName) const;
 	void addGreatGeneralBornName(const CvWString& szName);
 
@@ -313,7 +313,13 @@ public:
 	DllExport int calculateOptionsChecksum();
 
 	void addReplayMessage(ReplayMessageTypes eType = NO_REPLAY_MESSAGE, PlayerTypes ePlayer = NO_PLAYER, CvWString pszText = L"",
-		int iPlotX = -1, int iPlotY = -1, ColorTypes eColor = NO_COLOR);
+		int iPlotX = -1, int iPlotY = -1, ColorTypes eColor = NO_COLOR)
+		{
+			addReplayMessage(eType, ePlayer, pszText, Coordinates(iPlotX, iPlotY), eColor);
+		}
+
+	void addReplayMessage(ReplayMessageTypes eType, PlayerTypes ePlayer, CvWString pszText,
+		const Coordinates coord, ColorTypes eColor = NO_COLOR);
 	void clearReplayMessageMap();
 	int getReplayMessageTurn(uint i) const;
 	ReplayMessageTypes getReplayMessageType(uint i) const;
@@ -468,7 +474,7 @@ protected:
 	std::vector<CvWString> m_aszGreatGeneralBorn;
 	std::vector<CvWString> m_aszGreatAdmiralBorn; // R&R, ray, Great Admirals - START
 	std::vector<CvWString> m_aszShipNamed; // TAC - Ship Names - Ray - Start
-	
+
 
 	FFreeListTrashArray<CvDeal> m_deals;
 

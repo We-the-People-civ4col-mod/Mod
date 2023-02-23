@@ -333,7 +333,7 @@ void CvMap::setup()
 	kAStar.Initialize(&GC.getRouteFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, routeValid, NULL, NULL, NULL);
 	kAStar.Initialize(&GC.getBorderFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, borderValid, NULL, NULL, NULL);
 	kAStar.Initialize(&GC.getAreaFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, areaValid, NULL, joinArea, NULL);
-	
+
 	// Erik: We have to create and initialize the coastal route pathfinder since
 	// the exe cannot do this for us
 	FAStar* coastalRouteFinder = gDLL->getFAStarIFace()->create();
@@ -718,6 +718,12 @@ CvPlot* CvMap::syncRandPlot(int iFlags, int iArea, int iMinUnitDistance, int iTi
 
 CvCity* CvMap::findCity(int iX, int iY, PlayerTypes eOwner, TeamTypes eTeam, bool bSameArea, bool bCoastalOnly, TeamTypes eTeamAtWarWith, DirectionTypes eDirection, CvCity* pSkipCity)
 {
+	return findCity(Coordinates(iX, iY), eOwner, eTeam, bSameArea, bCoastalOnly, eTeamAtWarWith, eDirection, pSkipCity);
+}
+
+
+CvCity* CvMap::findCity(Coordinates coord, PlayerTypes eOwner, TeamTypes eTeam, bool bSameArea, bool bCoastalOnly, TeamTypes eTeamAtWarWith, DirectionTypes eDirection, CvCity* pSkipCity)
+{
 	int iBestValue = MAX_INT;
 	CvCity* pBestCity = NULL;
 
@@ -732,17 +738,17 @@ CvCity* CvMap::findCity(int iX, int iY, PlayerTypes eOwner, TeamTypes eTeam, boo
 					int iLoop;
 					for (CvCity* pLoopCity = GET_PLAYER((PlayerTypes)iI).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER((PlayerTypes)iI).nextCity(&iLoop))
 					{
-						if (!bSameArea || (pLoopCity->area() == plotINLINE(iX, iY)->area()) || (bCoastalOnly && (pLoopCity->waterArea() == plotINLINE(iX, iY)->area())))
+						if (!bSameArea || (pLoopCity->area() == coord.plot()->area()) || (bCoastalOnly && (pLoopCity->waterArea() == coord.plot()->area())))
 						{
 							if (!bCoastalOnly || pLoopCity->isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()))
 							{
 								if ((eTeamAtWarWith == NO_TEAM) || atWar(GET_PLAYER((PlayerTypes)iI).getTeam(), eTeamAtWarWith))
 								{
-									if ((eDirection == NO_DIRECTION) || (estimateDirection(dxWrap(pLoopCity->getX_INLINE() - iX), dyWrap(pLoopCity->getY_INLINE() - iY)) == eDirection))
+									if ((eDirection == NO_DIRECTION) || (estimateDirection(dxWrap(pLoopCity->getX_INLINE() - coord.x()), dyWrap(pLoopCity->getY_INLINE() - coord.y())) == eDirection))
 									{
 										if ((pSkipCity == NULL) || (pLoopCity != pSkipCity))
 										{
-											int iValue = plotDistance(iX, iY, pLoopCity->getX_INLINE(), pLoopCity->getY_INLINE());
+											int iValue = plotDistance(coord, pLoopCity->coord());
 
 											if (iValue < iBestValue)
 											{
@@ -876,7 +882,9 @@ bool CvMap::findWater(CvPlot* pPlot, int iRange, bool bFreshWater)
 
 bool CvMap::isPlot(int iX, int iY) const
 {
-	return isPlotINLINE(iX, iY);
+	//return isPlotINLINE(iX, iY);
+	Coordinates coord(iX, iY);
+	return isPlotINLINE(coord);
 }
 
 
@@ -1244,7 +1252,7 @@ void CvMap::calculateCanalAndChokePoints()
 	for(iI = 0; iI < numPlotsINLINE(); iI++)
 	{
 		plotByIndexINLINE(iI)->calculateCanalValue();
-		plotByIndexINLINE(iI)->calculateChokeValue();		
+		plotByIndexINLINE(iI)->calculateChokeValue();
 	}
 }
 // Super Forts end
@@ -1362,7 +1370,7 @@ void CvMap::rebuild(int iGridW, int iGridH, int iTopLatitude, int iBottomLatitud
 // Protected Functions...
 //////////////////////////////////////////////////////////////////////////
 
-namespace 
+namespace
 {
 //TODO: Use FOR_EACH_ENUM
 void visitPlot(CvPlot* pPlot, std::queue<CvPlot*>& plotQueue, stdext::hash_set<CvPlot*>& visited)
@@ -1373,12 +1381,12 @@ void visitPlot(CvPlot* pPlot, std::queue<CvPlot*>& plotQueue, stdext::hash_set<C
 
 		if (pAdjacentPlot == NULL)
 			continue;
-		
+
 		if (visited.find(pAdjacentPlot) != visited.end())
 			continue;
 
 		if (pAdjacentPlot->isWater() && pAdjacentPlot->hasLargeRiver() || !pAdjacentPlot->isWater())
-		{ 
+		{
 			visited.insert(pAdjacentPlot);
 			plotQueue.push(pAdjacentPlot);
 		}
@@ -1390,7 +1398,7 @@ void calculateLandAreaBfs(CvPlot* pPlot, int iArea, stdext::hash_set<CvPlot*>& v
 {
 	// Stores the plot index
 	std::queue<CvPlot*> plotQueue;
-	
+
 	plotQueue.push(pPlot);
 	visited.insert(pPlot);
 
@@ -1401,7 +1409,7 @@ void calculateLandAreaBfs(CvPlot* pPlot, int iArea, stdext::hash_set<CvPlot*>& v
 
 		// Land areas spread across large river without assigning the large river plot to the land area
 		if (pPlot->isWater() && pPlot->hasLargeRiver())
-		{ 
+		{
 			// Add all adjacent land plots to the queue but do not set the area of the large river plot
 			visitPlot(pPlot, plotQueue, visited);
 		}
@@ -1463,7 +1471,7 @@ void CvMap::calculateAreas()
 			pArea->init(pArea->getID(), pLoopPlot->isWater());
 			const int iArea = pArea->getID();
 			calculateLandAreaBfs(pLoopPlot, iArea, visited);
-		}		
+		}
 	}
 }
 

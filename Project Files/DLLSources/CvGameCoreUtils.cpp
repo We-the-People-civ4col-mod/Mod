@@ -2470,6 +2470,14 @@ void postLoadGameFixes()
 
 	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
 	{
+		// deal with each players' cities
+		
+		int iLoop;
+		for (CvCity* pLoopCity = GET_PLAYER(ePlayer).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(ePlayer).nextCity(&iLoop))
+		{
+			pLoopCity->updateSlaveWorkerProductionBonus();
+		}
+		
 		CvPlayer& kPlayer = GET_PLAYER(ePlayer);
 
 		// calculate power and assets

@@ -144,6 +144,7 @@ public:
 	CvPlot* syncRandPlot(int iFlags = 0, int iArea = -1, int iMinUnitDistance = -1, int iTimeout = 100);
 
 	DllExport CvCity* findCity(int iX, int iY, PlayerTypes eOwner = NO_PLAYER, TeamTypes eTeam = NO_TEAM, bool bSameArea = true, bool bCoastalOnly = false, TeamTypes eTeamAtWarWith = NO_TEAM, DirectionTypes eDirection = NO_DIRECTION, CvCity* pSkipCity = NULL);
+	CvCity* findCity(Coordinates coord, PlayerTypes eOwner = NO_PLAYER, TeamTypes eTeam = NO_TEAM, bool bSameArea = true, bool bCoastalOnly = false, TeamTypes eTeamAtWarWith = NO_TEAM, DirectionTypes eDirection = NO_DIRECTION, CvCity* pSkipCity = NULL);
 	CvSelectionGroup* findSelectionGroup(int iX, int iY, PlayerTypes eOwner = NO_PLAYER, bool bReadyToSelect = false);
 
 	CvArea* findBiggestArea(bool bWater);
@@ -156,6 +157,11 @@ public:
 	inline int isPlotINLINE(int iX, int iY) const
 	{
 		return ((iX >= 0) && (iX < getGridWidthINLINE()) && (iY >= 0) && (iY < getGridHeightINLINE()));
+	}
+
+	inline int isPlotINLINE(Coordinates coord) const
+	{
+		return coord.isOnMap();
 	}
 #endif
 	DllExport int numPlots() const;
@@ -170,6 +176,11 @@ public:
 	inline int plotNumINLINE(int iX, int iY) const
 	{
 		return ((iY * getGridWidthINLINE()) + iX);
+	}
+
+	inline int plotNumINLINE(Coordinates coord) const
+	{
+		return ((coord.y() * getGridWidthINLINE()) + coord.x());
 	}
 #endif
 	int plotX(int iIndex) const;
@@ -261,6 +272,16 @@ public:
 		int iMapY = coordRange(iY, getGridHeightINLINE(), isWrapYINLINE());
 		return ((isPlotINLINE(iMapX, iMapY)) ? &(m_pMapPlots[plotNumINLINE(iMapX, iMapY)]) : NULL);
 	}
+
+	__forceinline CvPlot* plotINLINE(Coordinates coord) const
+	{
+		if(!coord.isOnMap())
+			{
+				return NULL;
+			}
+		return &(m_pMapPlots[plotNumINLINE(coord)]);
+	}
+
 	__forceinline CvPlot* plotSoren(int iX, int iY) const // advc.inl: Renamed from plotSorenINLINE
 	{
 		if (iX == INVALID_PLOT_COORD || iY == INVALID_PLOT_COORD)
@@ -268,10 +289,25 @@ public:
 		FAssert(isPlot(iX, iY)); // advc: Assertion added
 		return &(m_pMapPlots[plotNum(iX, iY)]);
 	} // <advc.inl> Even faster and less confusingly named; replacing the above in most places.
+
+	__forceinline CvPlot* plotSoren(Coordinates coord) const
+	{
+		if (coord.isInvalidPlotCoord())
+			return NULL;
+		FAssert(isPlotINLINE(coord)); // advc: Assertion added
+		return &(m_pMapPlots[plotNumINLINE(coord)]);
+	}
+
 	__forceinline CvPlot& getPlot(int x, int y) const
 	{
 		FAssert(isPlot(x, y));
 		return m_pMapPlots[plotNum(x, y)];
+	} // </advc.inl>
+
+	__forceinline CvPlot& getPlot(Coordinates coord) const
+	{
+		FAssert(isPlotINLINE(coord));
+		return m_pMapPlots[plotNumINLINE(coord)];
 	} // </advc.inl>
 #endif
 	DllExport CvPlot* pointToPlot(float fX, float fY);
@@ -288,7 +324,7 @@ public:
 
 	void recalculateAreas();
 
-	void resetPathDistance();	
+	void resetPathDistance();
 	// Super Forts begin *canal* *choke*
 	//int calculatePathDistance(CvPlot *pSource, CvPlot *pDest); //original
 	int calculatePathDistance(CvPlot *pSource, CvPlot *pDest, CvPlot *pInvalidPlot = NULL);	// Exposed to Python

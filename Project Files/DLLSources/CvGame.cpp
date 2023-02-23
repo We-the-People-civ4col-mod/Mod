@@ -5025,7 +5025,7 @@ void CvGame::makeSpecialBuildingValid(SpecialBuildingTypes eIndex, bool bAnnounc
 			{
 				if (GET_PLAYER((PlayerTypes)iI).isAlive())
 				{
-					gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_BUILDING_COMPLETED", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
+					gDLL->UI().addPlayerMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_BUILDING_COMPLETED", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
 				}
 			}
 		}
@@ -5285,9 +5285,9 @@ void CvGame::doTurn()
 	
 		if (GC.getGameINLINE().getSorenRandNum(100, "AI") < iChance)
 		{
-			for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+			for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
 			{
-				CvPlayer& kPlayer = GET_PLAYER((PlayerTypes) iPlayer);
+				CvPlayer &kPlayer = GET_PLAYER(ePlayer);
 				if (kPlayer.isAlive())
 				{
 					if (!kPlayer.isHuman() && !kPlayer.isEurope() && !kPlayer.isNative())
@@ -5299,12 +5299,12 @@ void CvGame::doTurn()
 		}
 	}
 	// TAC - AI More Immigrants - koma13 - END
-
-	for (iI = 0; iI < MAX_TEAMS; iI++)
+	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
 	{
-		if (GET_TEAM((TeamTypes)iI).isAlive())
+		CvTeam &kTeam = GET_TEAM(eTeam);
+		if (kTeam.isAlive())
 		{
-			GET_TEAM((TeamTypes)iI).doTurn();
+			kTeam.doTurn();
 		}
 	}
 
@@ -6539,13 +6539,13 @@ int CvGame::calculateOptionsChecksum()
 }
 
 
-void CvGame::addReplayMessage(ReplayMessageTypes eType, PlayerTypes ePlayer, CvWString pszText, int iPlotX, int iPlotY, ColorTypes eColor)
+void CvGame::addReplayMessage(ReplayMessageTypes eType, PlayerTypes ePlayer, CvWString pszText, Coordinates coord, ColorTypes eColor)
 {
 	int iGameTurn = getGameTurn();
 	CvReplayMessage* pMessage = new CvReplayMessage(iGameTurn, eType, ePlayer);
 	if (NULL != pMessage)
 	{
-		pMessage->setPlot(iPlotX, iPlotY);
+		pMessage->setPlot(coord.x(), coord.y());
 		pMessage->setText(pszText);
 		if (NO_COLOR == eColor)
 		{
@@ -7095,7 +7095,7 @@ void CvGame::setFatherTeam(FatherTypes eFather, TeamTypes eTeam)
 							szBuffer = gDLL->getText("TXT_KEY_FATHER_JOINED_UNKNOWN", GC.getFatherInfo(eFather).getTextKeyWide());
 						}
 
-						gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_GLOBECIRCUMNAVIGATED", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
+						gDLL->UI().addPlayerMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_GLOBECIRCUMNAVIGATED", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
 					}
 				}
 				szBuffer = gDLL->getText("TXT_KEY_FATHER_JOINED_TEAM", GC.getFatherInfo(eFather).getTextKeyWide(), GET_TEAM(getFatherTeam(eFather)).getName().GetCString());

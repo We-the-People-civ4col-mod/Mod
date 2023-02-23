@@ -43,7 +43,7 @@ CvCity::CvCity()
 
 	m_ePreferredYieldAtCityPlot = NO_YIELD;
 
-	reset(0, NO_PLAYER, 0, 0, true);
+	reset(0, NO_PLAYER, Coordinates(0, 0), true);
 }
 
 CvCity::~CvCity()
@@ -52,28 +52,34 @@ CvCity::~CvCity()
 	CvDLLEntity::destroyEntity();			// delete CvCityEntity and detach from us
 
 	uninit();
-
 }
 
 
-void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
+// void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
+// {
+// 	Coordinates initCoord(iX, iY);
+// 	init(iID, eOwner, initCoord, bBumpUnits);
+// }
+
+
+void CvCity::init(int iID, PlayerTypes eOwner, Coordinates initCoord, bool bBumpUnits)
 {
 	std::vector<int> aOldAttitude(MAX_PLAYERS, 0);
-	for (int i = 0; i < MAX_PLAYERS; ++i)
+	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
 	{
-		CvPlayerAI& kPlayer = GET_PLAYER((PlayerTypes) i );
+		CvPlayerAI& kPlayer = GET_PLAYER(ePlayer);
 		if (kPlayer.isAlive())
 		{
 			kPlayer.AI_invalidateCloseBordersAttitudeCache();
-			aOldAttitude[i] = kPlayer.AI_getStolenPlotsAttitude(eOwner);
+			aOldAttitude[ePlayer] = kPlayer.AI_getStolenPlotsAttitude(eOwner);
 		}
 	}
 
 	CvPlot* pAdjacentPlot;
 	CvPlot* pPlot;
 	//BuildingTypes eLoopBuilding;
-	
-	pPlot = GC.getMapINLINE().plotINLINE(iX, iY);
+
+	pPlot = initCoord.plot();
 
 	//--------------------------------
 	// Log this event
@@ -82,14 +88,14 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 		if (gDLL->getChtLvl() > 0)
 		{
 			TCHAR szOut[1024];
-			sprintf(szOut, "Player %d City %d built at %d:%d\n", eOwner, iID, iX, iY);
+			sprintf(szOut, "Player %d City %d built at %d:%d\n", eOwner, iID, initCoord.x(), initCoord.y());
 			gDLL->messageControlLog(szOut);
 		}
 	}
 
 	//--------------------------------
 	// Init saved data
-	reset(iID, eOwner, pPlot->getX_INLINE(), pPlot->getY_INLINE());
+	reset(iID, eOwner, initCoord);
 	// R&R, ray, adjustment Domestic Markets for Luxury Goods needed
 	// R&R, Androrc, Domestic Market
 	if(!isNative())
@@ -196,7 +202,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 	{
 		setTeachUnitClass(bestTeachUnitClass());
 	}
-	
+
 	setEverOwned(getOwnerINLINE(), true);
 
 	updateCultureLevel();
@@ -208,9 +214,9 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 	pPlot->setOwner(getOwnerINLINE(), bBumpUnits);
 	pPlot->setPlotCity(this);
 
-	for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+	for (DirectionTypes eDirection = FIRST_DIRECTION; eDirection < NUM_DIRECTION_TYPES; eDirection++)
 	{
-		pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+		pAdjacentPlot = coord().neighbourPlot(eDirection);
 
 		if (pAdjacentPlot != NULL)
 		{
@@ -223,8 +229,8 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 	}
 
 	CyArgsList argsList;
-	argsList.add(iX);
-	argsList.add(iY);
+	argsList.add(initCoord.x());
+	argsList.add(initCoord.y());
 	long lResult=0;
 	gDLL->getPythonIFace()->callFunction(PYGameModule, "citiesDestroyFeatures", argsList.makeFunctionArgs(), &lResult);
 
@@ -239,17 +245,17 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 	pPlot->setImprovementType(NO_IMPROVEMENT);
 	pPlot->updateCityRoute();
 
-	for (int iI = 0; iI < MAX_TEAMS; iI++)
+	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
 	{
-		if (GET_TEAM((TeamTypes)iI).isAlive())
+		if (GET_TEAM(eTeam).isAlive())
 		{
-			if (pPlot->isVisible(((TeamTypes)iI), false))
+			if (pPlot->isVisible((eTeam), false))
 			{
-				setRevealed(((TeamTypes)iI), true);
+				setRevealed((eTeam), true);
 			}
 		}
 	}
-			
+
 	// WTP, ray, refactored according to advice of Nightinggale
 	for (BuildingTypes eLoopBuilding = FIRST_BUILDING; eLoopBuilding < NUM_BUILDING_TYPES; eLoopBuilding++)
 	{
@@ -271,7 +277,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 	pPlot->updateYield(false);
 	setYieldRateDirty();
 
-	changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + GC.getEraInfo(GC.getGameINLINE().getStartEra()).getFreePopulation());
+	changePopulation(GLOBAL_DEFINE_INITIAL_CITY_POPULATION + GC.getEraInfo(GC.getGameINLINE().getStartEra()).getFreePopulation());
 
 	GC.getMapINLINE().updateWorkingCity();
 
@@ -281,11 +287,11 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 
 	if (GC.getGameINLINE().isFinalInitialized() || isNative())
 	{
-		for (int iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
+		for (BuildingClassTypes eLoopBuildingClass = FIRST_BUILDINGCLASS; eLoopBuildingClass < NUM_BUILDINGCLASS_TYPES; eLoopBuildingClass++)
 		{
-			if (GC.getCivilizationInfo(getCivilizationType()).isCivilizationFreeBuildingClass(iI))
+			if (GC.getCivilizationInfo(getCivilizationType()).isCivilizationFreeBuildingClass(eLoopBuildingClass))
 			{
-				BuildingTypes eLoopBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(iI)));
+				BuildingTypes eLoopBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(eLoopBuildingClass)));
 
 				if (eLoopBuilding != NO_BUILDING)
 				{
@@ -302,12 +308,12 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 			changeOverflowProduction(GC.getDefineINT("INITIAL_AI_CITY_PRODUCTION"), 0);
 		}
 	}
-	
-	
+
+
 	for (int i = 0; i < MAX_PLAYERS; ++i)
 	{
 		CvPlayerAI& kPlayer = GET_PLAYER((PlayerTypes) i );
-		
+
 		if (kPlayer.isAlive())
 		{
 			kPlayer.AI_invalidateCloseBordersAttitudeCache();
@@ -316,9 +322,10 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 	}
 
 	UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
-	
+
 	GET_PLAYER(getOwnerINLINE()).AI_invalidateDistanceMap();
 	AI_init();
+	m_iSlaveWorkerProductionBonus = 0;
 }
 
 
@@ -353,18 +360,24 @@ void CvCity::uninit()
 
 // FUNCTION: reset()
 // Initializes data members that are serialized.
-void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructorCall)
+// void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructorCall)
+// {
+// 	Coordinates resetCoord(iX, iY);
+// 	reset(iID, eOwner, resetCoord, bConstructorCall);
+// }
+
+void CvCity::reset(int iID, PlayerTypes eOwner, Coordinates resetCoord, bool bConstructorCall)
 {
 	//--------------------------------
 	// Uninit class
 	uninit();
-	
+
 	m_bInfoDirty = true;
 	m_bLayoutDirty = false;
 
 	m_iCacheMarketModifier = 0;
 
-	resetSavedData(iID, eOwner, iX, iY, bConstructorCall);
+	resetSavedData(iID, eOwner, resetCoord, bConstructorCall);
 
 	//storage loss trading (aka customs house and related things)
 	initCacheStorageLossTradeValues();
@@ -532,14 +545,14 @@ void CvCity::doTurn()
 		doCulture();
 		doPlotCulture(false, getOwnerINLINE(), getCultureRate());
 	}
-	
+
 	if (!m_bHasHurried && !isHuman() && !isNative())
 	{
 		// Hurry needs to happen just before the production processing to avoid
 		// the hurried yields from being used for other purposes
 		static_cast<CvCityAI*>(this)->AI_doHurry();
 	}
-	
+
 	if (!isDisorder())
 	{
 		doProduction(bAllowNoProduction);
@@ -572,7 +585,7 @@ void CvCity::doTurn()
 			checkForDomesticDemandEvent(); // WTP, ray Domestic Market Events - START
 		}
 	}
-	
+
 	doDecay();
 
 	doMissionaries();
@@ -617,7 +630,7 @@ void CvCity::doTurn()
 		// WTP, ray, if Occupation has ended now, we will send a message that Occupation is over
 		if (isOccupation() == FALSE)
 		{
-			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_OCCUPATION_ENDED", getNameKey()), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_CULTURE).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+			gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_OCCUPATION_ENDED", getNameKey()), coord(), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_CULTURE).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
 		}
 		// WTP, ray, Change for Request "Occupation has ended" - START
 	}
@@ -734,25 +747,25 @@ void CvCity::updateVisibility()
 
 void CvCity::createGreatGeneral(UnitTypes eGreatGeneralUnit, bool bIncrementExperience)
 {
-	GET_PLAYER(getOwnerINLINE()).createGreatGeneral(eGreatGeneralUnit, bIncrementExperience, getX_INLINE(), getY_INLINE());
+	GET_PLAYER(getOwnerINLINE()).createGreatGeneral(eGreatGeneralUnit, bIncrementExperience, coord());
 }
 
 // R&R, ray, Great Admirals - START
 void CvCity::createGreatAdmiral(UnitTypes eGreatAdmiralUnit, bool bIncrementExperience)
 {
-	GET_PLAYER(getOwnerINLINE()).createGreatAdmiral(eGreatAdmiralUnit, bIncrementExperience, getX_INLINE(), getY_INLINE());
+	GET_PLAYER(getOwnerINLINE()).createGreatAdmiral(eGreatAdmiralUnit, bIncrementExperience, coord());
 }
 // R&R, ray, Great Admirals - END
 
 // WTP, ray, Lieutenants and Captains - START
 void CvCity::createBraveLieutenant(UnitTypes eBraveLieutenantUnit)
 {
-	GET_PLAYER(getOwnerINLINE()).createBraveLieutenant(eBraveLieutenantUnit, getX_INLINE(), getY_INLINE());
+	GET_PLAYER(getOwnerINLINE()).createBraveLieutenant(eBraveLieutenantUnit, coord());
 }
 
 void CvCity::createCapableCaptain(UnitTypes eCapableCaptainUnit)
 {
-	GET_PLAYER(getOwnerINLINE()).createCapableCaptain(eCapableCaptainUnit, getX_INLINE(), getY_INLINE());
+	GET_PLAYER(getOwnerINLINE()).createCapableCaptain(eCapableCaptainUnit, coord());
 }
 
 // WTP, ray, Lieutenants and Captains - END
@@ -921,7 +934,7 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 		}
 		// R&R mod, vetiarvind, max yield import limit - end
 
-		
+
 		setImportsMaintain((YieldTypes) iData1, bShift);
 		if (!bOption)
 		{
@@ -1796,7 +1809,7 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 			return false;
 		}
 	}
-	
+
 	return true;
 }
 
@@ -2598,7 +2611,7 @@ bool CvCity::canHurry(HurryTypes eHurry, bool bTestVisible) const
 				if (eProductionUnit != NO_UNIT)
 				{
 					UnitAITypes eDefaultUnitAI = (UnitAITypes)GC.getUnitInfo(eProductionUnit).getDefaultUnitAIType();
-				
+
 					if ((eDefaultUnitAI != kPlayer.AI_bestBuildupUnitAI()) && (eDefaultUnitAI != UNITAI_WAGON))
 					{
 						return false;
@@ -2645,7 +2658,7 @@ void CvCity::hurry(HurryTypes eHurry)
 		if (eProductionUnit != NO_UNIT)
 		{
 			UnitAITypes eDefaultUnitAI = (UnitAITypes)GC.getUnitInfo(eProductionUnit).getDefaultUnitAIType();
-		
+
 			if (eDefaultUnitAI == kPlayer.AI_bestBuildupUnitAI())
 			{
 				kPlayer.AI_clearStrategy(STRATEGY_MILITARY_BUILDUP);
@@ -2675,7 +2688,7 @@ void CvCity::hurry(HurryTypes eHurry)
 			szString = GC.getBuildingInfo(getProductionBuilding()).getDescription();
 		else if (isProductionConvince())
 			szString = GC.getFatherPointInfo(getProductionFatherPoint()).getDescription();
-		logBBAI(" Player %S City %S hurrying production of %S at cost of %d gold", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(), 
+		logBBAI(" Player %S City %S hurrying production of %S at cost of %d gold", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
 			getName().GetCString(), szString.GetCString(), iHurryGold);
 	}
 }
@@ -2686,7 +2699,7 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange)
 	FAssertMsg(iChange == 1 || iChange == -1, "The value of iChange has to be either 1 or -1.")
 	//ray, removing hardcoded Roads for Buildings - START
 	int iRoutTypeCreated = GC.getBuildingInfo(eBuilding).getRouteTypeCreated();
-	if (iRoutTypeCreated > 0) // 
+	if (iRoutTypeCreated > 0) //
 	{
 		CvPlot* pPlot = plot();
 		if (pPlot->getRouteType() < iRoutTypeCreated)
@@ -2777,18 +2790,18 @@ ArtStyleTypes CvCity::getArtStyleType() const
 
 		if (getOriginalOwner() != NO_PLAYER)
 		{
-			return GET_PLAYER(getOriginalOwner()).getArtStyleType();	
+			return GET_PLAYER(getOriginalOwner()).getArtStyleType();
 		}
 	}
 
 	if (GLOBAL_DEFINE_CULTURE_CITY_ART > 0)
-	{	
+	{
 		PlayerTypes eHighestCulturePlayer;
 		eHighestCulturePlayer = findHighestCulture();
 		return GET_PLAYER(eHighestCulturePlayer).getArtStyleType();
 	}
 	// WTP, ray, merged Captured City Art from DPII - END
-	
+
 	// old code
 	return GET_PLAYER(getOwnerINLINE()).getArtStyleType();
 
@@ -2961,7 +2974,7 @@ int CvCity::getHurryCost(bool bExtra, int iProductionLeft, int iHurryModifier, i
 		if (iExtraProduction > 0)
 		{
 			int iAdjustedProd = iProduction * iProduction;
-			
+
 			// round up
 			iProduction = (iAdjustedProd + (iExtraProduction - 1)) / iExtraProduction;
 		}
@@ -2983,7 +2996,7 @@ int CvCity::hurryGold(HurryTypes eHurry) const
 			iGold += getHurryYieldDeficit(eHurry, eYield) * GET_PLAYER(eParent).getYieldSellPrice(eYield) * GC.getHurryInfo(eHurry).getYieldCostEuropePercent() / 100;
 		}
 	}
-	
+
 	if (!isHuman())
 	{
 		iGold *= GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAIHurryPercent();
@@ -3279,19 +3292,25 @@ void CvCity::setID(int iID)
 
 int CvCity::getX() const
 {
-	return m_iX;
+	return m_coord.x();
 }
 
 
 int CvCity::getY() const
 {
-	return m_iY;
+	return m_coord.y();
 }
 
 
 bool CvCity::at(int iX,  int iY) const
 {
 	return ((getX_INLINE() == iX) && (getY_INLINE() == iY));
+}
+
+
+bool CvCity::at(Coordinates coord) const
+{
+	return coord == m_coord;
 }
 
 
@@ -3303,7 +3322,7 @@ bool CvCity::at(CvPlot* pPlot) const
 
 CvPlot* CvCity::plot() const
 {
-	return GC.getMapINLINE().plotSoren(getX_INLINE(), getY_INLINE());
+	return GC.getMapINLINE().plotSoren(coord());
 }
 
 int CvCity::getArea() const
@@ -3891,7 +3910,7 @@ void CvCity::setProductionAutomated(bool bNewValue, bool bClear)
 				clearOrderQueue();
 			}
 		}
-		
+
 		if (!isProduction())
 		{
 			AI_chooseProduction();
@@ -4087,7 +4106,7 @@ void CvCity::setCultureLevel(CultureLevelTypes eNewValue)
 			if ((getCultureLevel() > eOldValue) && (getCultureLevel() > 1) && eCultureYield != NO_YIELD)
 			{
 				szBuffer = gDLL->getText("TXT_KEY_MISC_BORDERS_EXPANDED", getNameKey());
-				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREEXPANDS", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eCultureYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+				gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CULTUREEXPANDS", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eCultureYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
 
 				if (getCultureLevel() == (GC.getNumCultureLevelInfos() - 1))
 				{
@@ -4098,12 +4117,12 @@ void CvCity::setCultureLevel(CultureLevelTypes eNewValue)
 							if (isRevealed(GET_PLAYER((PlayerTypes)iI).getTeam(), false))
 							{
 								szBuffer = gDLL->getText("TXT_KEY_MISC_CULTURE_LEVEL", getNameKey(), GC.getCultureLevelInfo(getCultureLevel()).getTextKeyWide());
-								gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTURELEVEL", MESSAGE_TYPE_MAJOR_EVENT, GC.getYieldInfo(eCultureYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+								gDLL->UI().addPlayerMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CULTURELEVEL", MESSAGE_TYPE_MAJOR_EVENT, GC.getYieldInfo(eCultureYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), true, true);
 							}
 							else
 							{
 								szBuffer = gDLL->getText("TXT_KEY_MISC_CULTURE_LEVEL_UNKNOWN", GC.getCultureLevelInfo(getCultureLevel()).getTextKeyWide());
-								gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTURELEVEL", MESSAGE_TYPE_MAJOR_EVENT, GC.getYieldInfo(eCultureYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
+								gDLL->UI().addPlayerMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTURELEVEL", MESSAGE_TYPE_MAJOR_EVENT, GC.getYieldInfo(eCultureYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
 							}
 						}
 					}
@@ -4276,7 +4295,7 @@ int CvCity::getBaseRawYieldProduced(YieldTypes eYieldType) const
 					// normal previous logic
 					iPlotYieldProduction += pPlot->getYield(eYieldType);
 				}
-				
+
 				else
 				{
 					int iSlaveWorkerProductionBonus = getSlaveWorkerProductionBonus();
@@ -4296,7 +4315,7 @@ int CvCity::getBaseRawYieldProduced(YieldTypes eYieldType) const
 						// normal previous logic
 						iPlotYieldProduction += pPlot->getYield(eYieldType);
 					}
-				}			
+				}
 				//WTP, ray, Slave Hunter and Slave Master - END
 			}
 		}
@@ -4466,10 +4485,10 @@ int CvCity::getCultureRate() const
 
 	int totalNewCulture = 0;
 	int cultureFromPopulation = 0;
-	
+
 	if (!isNative()) // R&R, ray, Culture from Population not for Natives
 	{
-		cultureFromPopulation = getPopulation() / 3; 
+		cultureFromPopulation = getPopulation() / 3;
 	}
 	totalNewCulture = cultureFromPopulation + calculateNetYield(eYield);
 
@@ -4524,7 +4543,7 @@ int CvCity::getProductionOutput(ProfessionTypes eProfession) const
 	FAssert(GC.getProfessionInfo(eProfession).isCitizen());
 
 	CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
-	
+
 	int iOutput = 0;
 
 	if (kProfession.isWorkPlot())
@@ -4555,7 +4574,7 @@ int CvCity::getPotentialProductionOutput(ProfessionTypes eProfession) const
 	FAssert(GC.getProfessionInfo(eProfession).isCitizen());
 
 	CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
-	
+
 	// R&R, ray , MYCP partially based on code of Aymerick - START
 	YieldTypes eYieldProduced = (YieldTypes)kProfession.getYieldsProduced(0);
 	// R&R, ray , MYCP partially based on code of Aymerick - END
@@ -4577,7 +4596,7 @@ int CvCity::getPotentialProductionOutput(ProfessionTypes eProfession) const
 				{
 					YieldTypes eBestYield = NO_YIELD;
 					int iBestOutput = 0;
-					
+
 					for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 					{
 						if ((iJ != YIELD_FOOD) && (iJ != YIELD_LUMBER))
@@ -4590,7 +4609,7 @@ int CvCity::getPotentialProductionOutput(ProfessionTypes eProfession) const
 							}
 						}
 					}
-					
+
 					if (eBestYield == eYieldProduced)
 					{
 						iOutput += iBestOutput;
@@ -4631,7 +4650,7 @@ bool CvCity::hasOtherProductionBuilding(BuildingTypes eBuilding, int iMax) const
 	for (int i = 0; i < GC.getNumProfessionInfos(); ++i)
 	{
 		CvProfessionInfo& kProfession = GC.getProfessionInfo((ProfessionTypes)i);
-		
+
 		if (GC.getCivilizationInfo(kOwner.getCivilizationType()).isValidProfession(i))
 		{
 			if (kProfession.getSpecialBuilding() != kBuildingInfo.getSpecialBuildingType())
@@ -4639,7 +4658,7 @@ bool CvCity::hasOtherProductionBuilding(BuildingTypes eBuilding, int iMax) const
 				// R&R, ray , MYCP partially based on code of Aymerick - START
 				YieldTypes eYieldProduced = (YieldTypes)kProfession.getYieldsProduced(0);
 				// R&R, ray , MYCP partially based on code of Aymerick - END
-				
+
 				if (eYieldProduced != NO_YIELD && GC.getYieldInfo(eYieldProduced).isCargo())
 				{
 					for (int iBuildingClass = 0; iBuildingClass < GC.getNumBuildingClassInfos(); ++iBuildingClass)
@@ -4943,7 +4962,7 @@ void CvCity::changeYieldRushed(YieldTypes eYield, int iChange)
 void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYields, int* aiConsumedYields, bool bPrintWarning) const
 {
 	PROFILE_FUNC();
-	
+
 	int aiConsumed[NUM_YIELD_TYPES];
 	int aiProduced[NUM_YIELD_TYPES];
 	if (aiProducedYields == NULL)
@@ -4995,14 +5014,14 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 				{
 					YieldTypes eYieldProduced = (YieldTypes) kProfession.getYieldsProduced(0);
 					CvPlot* pCurrentWorkedPlot = getPlotWorkedByUnit(pUnit);
-				
+
 					if (pCurrentWorkedPlot != NULL)
 					{
 						int availableAmountOfYield = pCurrentWorkedPlot->calculatePotentialProfessionYieldAmount(pUnit->getProfession(), pUnit, false);
 						if (availableAmountOfYield == 0 && bPrintWarning)
 						{
 							CvWString szBuffer = gDLL->getText("TXT_KEY_NO_RAW_ON_FIELD", getNameKey(),GC.getYieldInfo(eYieldProduced).getChar());
-							gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYieldProduced).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+							gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYieldProduced).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 						}
 					}
 				}
@@ -5036,7 +5055,7 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 								setUnsatisfiedProfessions.insert(pUnit->getProfession());
 							}
 							*/
-							
+
 							if (bPrintWarning && (aiProducedYields[eYieldConsumed] == 0 || aiProducedYields[eYieldConsumed2] == 0))
 							{
 								setUnsatisfiedProfessions.insert(pUnit->getProfession());
@@ -5097,7 +5116,7 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 								setUnsatisfiedProfessions.insert(pUnit->getProfession());
 							}
 							*/
-							
+
 							if (bPrintWarning && aiProducedYields[eYieldConsumed] == 0)
 							{
 								setUnsatisfiedProfessions.insert(pUnit->getProfession());
@@ -5172,7 +5191,7 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 	{
 		aiYields[eImmigrationYield] += aiYields[YIELD_CROSSES];
 	}
-	
+
 	for (std::set<ProfessionTypes>::iterator it = setUnsatisfiedProfessions.begin(); it != setUnsatisfiedProfessions.end(); ++it)
 	{
 		CvProfessionInfo& kProfession = GC.getProfessionInfo(*it);
@@ -5192,7 +5211,7 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 					}
 				}
 				CvWString szBuffer = gDLL->getText("TXT_KEY_NO_RAW", getNameKey(),GC.getYieldInfo(eYieldConsumed).getChar(), GC.getYieldInfo(eYieldProduced).getChar());
-				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYieldConsumed).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+				gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYieldConsumed).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 			}
 		}
 	}
@@ -5217,7 +5236,7 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 					}
 				}
 				CvWString szBuffer = gDLL->getText("TXT_KEY_ALMOST_NO_RAW", getNameKey(),GC.getYieldInfo(eYieldConsumed).getChar(), GC.getYieldInfo(eYieldProduced).getChar());
-				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYieldConsumed).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+				gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYieldConsumed).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 			}
 		}
 	}
@@ -5240,7 +5259,7 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 						 eYieldConsumed = eYieldConsumed2;
 					}
 					CvWString szBuffer = gDLL->getText("TXT_KEY_NOT_ENOUGH_RAW", getNameKey(),GC.getYieldInfo(eYieldConsumed).getChar(), GC.getYieldInfo(eYieldProduced).getChar());
-					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYieldConsumed).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+					gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYieldConsumed).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 				}
 			}
 		}
@@ -5389,14 +5408,14 @@ void CvCity::pushOrderInternal(OrderTypes eOrder, int eBuildingOrUnit)
 {
 	OrderData order;
 	order.eOrderType = eOrder;
-	
+
 	if (eOrder == ORDER_CONSTRUCT)
 	{
 		order.iData1 = static_cast<BuildingTypes>(eBuildingOrUnit);
 		order.iData2 = -1; // Unused
-	
-		if (gCityLogLevel >= 2) 
-		{ 
+
+		if (gCityLogLevel >= 2)
+		{
 			logBBAI(" Player %S City %S considers hurrying of building %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
 				getName().GetCString(), GC.getBuildingInfo(static_cast<BuildingTypes>(eBuildingOrUnit)).getDescription());
 		}
@@ -5407,7 +5426,7 @@ void CvCity::pushOrderInternal(OrderTypes eOrder, int eBuildingOrUnit)
 		order.iData2 = NO_UNITAI;
 
 		if (gCityLogLevel >= 2)
-		{		
+		{
 			logBBAI(" Player %S City %S considers hurrying of unit %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
 				getName().GetCString(), GC.getUnitInfo(static_cast<UnitTypes>(eBuildingOrUnit)).getDescription());
 		}
@@ -5540,10 +5559,10 @@ void CvCity::doFoundMessage()
 	CvWString szBuffer;
 
 	szBuffer = gDLL->getText("TXT_KEY_MISC_CITY_HAS_BEEN_FOUNDED", getNameKey());
-	gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, -1, szBuffer, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), MESSAGE_TYPE_MAJOR_EVENT, NULL, NO_COLOR, getX_INLINE(), getY_INLINE());
+	gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, -1, szBuffer, coord(), ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), MESSAGE_TYPE_MAJOR_EVENT, NULL, NO_COLOR);
 
 	szBuffer = gDLL->getText("TXT_KEY_MISC_CITY_IS_FOUNDED", getNameKey());
-	GC.getGameINLINE().addReplayMessage(REPLAY_MESSAGE_CITY_FOUNDED, getOwnerINLINE(), szBuffer, getX_INLINE(), getY_INLINE(), (ColorTypes)GC.getInfoTypeForString("COLOR_ALT_HIGHLIGHT_TEXT"));
+	GC.getGameINLINE().addReplayMessage(REPLAY_MESSAGE_CITY_FOUNDED, getOwnerINLINE(), szBuffer, coord(), (ColorTypes)GC.getInfoTypeForString("COLOR_ALT_HIGHLIGHT_TEXT"));
 }
 
 
@@ -5838,7 +5857,7 @@ void CvCity::setUnitWorkingPlot(int iPlotIndex, int iUnitId)
 			return;
 		}
 		ProfessionTypes eUnitProfession = pUnit->getProfession();
-		
+
 		FAssert(pUnit->isColonistLocked() || !isUnitWorkingAnyPlot(pUnit));
 		if (pUnit->isColonistLocked())
 		{
@@ -5864,7 +5883,7 @@ void CvCity::setUnitWorkingPlot(int iPlotIndex, int iUnitId)
 					}
 				}
 
-				// Erik: No assert since it is possible that a unit would produce 0 yield in any plot profession 
+				// Erik: No assert since it is possible that a unit would produce 0 yield in any plot profession
 				//FAssert(eBestProfession != NO_PROFESSION);
 				if(eBestProfession != NO_PROFESSION)
 				{
@@ -5879,7 +5898,7 @@ void CvCity::setUnitWorkingPlot(int iPlotIndex, int iUnitId)
 				clearUnitWorkingPlot(pCurrentWorkedPlot);
 			}
 		}
-		
+
 		m_em_iWorkingPlot.set(iPlotIndex, iUnitId);
 
 		FAssertMsg(pPlot->getWorkingCity() == this, "WorkingCity is expected to be this");
@@ -5893,8 +5912,8 @@ void CvCity::setUnitWorkingPlot(int iPlotIndex, int iUnitId)
 		if ((getTeam() == GC.getGameINLINE().getActiveTeam()) || GC.getGameINLINE().isDebugMode())
 		{
 			pPlot->updateSymbolDisplay();
-		}	
-		
+		}
+
 		if (isCitySelected())
 		{
 			gDLL->getInterfaceIFace()->setDirty(InfoPane_DIRTY_BIT, true );
@@ -5920,7 +5939,7 @@ void CvCity::clearUnitWorkingPlot(int iPlotIndex)
 	if (pPlot != NULL)
 	{
 		m_em_iWorkingPlot.set(iPlotIndex, -1);
-		
+
 		FAssertMsg(pPlot->getWorkingCity() == this, "WorkingCity is expected to be this");
 
 		setYieldRateDirty();
@@ -5932,7 +5951,7 @@ void CvCity::clearUnitWorkingPlot(int iPlotIndex)
 		if ((getTeam() == GC.getGameINLINE().getActiveTeam()) || GC.getGameINLINE().isDebugMode())
 		{
 			pPlot->updateSymbolDisplay();
-		}	
+		}
 
 		if (isCitySelected())
 		{
@@ -6139,7 +6158,7 @@ void CvCity::alterUnitProfession(int iUnitId, ProfessionTypes eProfession)
 		{
 			pUnit->setColonistLocked(true);
 			pUnit->setProfession(eProfession);
-			
+
 			if (GC.getProfessionInfo(eProfession).isWorkPlot())
 			{
 				if (!isUnitWorkingAnyPlot(pUnit))
@@ -6170,7 +6189,7 @@ void CvCity::ejectToTransport(int iUnitId, int iTransportId)
 				pUnit->loadUnit(pTransport);
 			}
 		}
-	}	
+	}
 }
 
 void CvCity::replaceCitizen(int iUnitId, int iReplacedUnitId, bool bAskProfession)
@@ -6464,7 +6483,7 @@ bool CvCity::isDominantSpecialBuilding(BuildingTypes eIndex) const
 {
 	FAssert((eIndex >= 0) && (eIndex < GC.getNumBuildingInfos()));
 	CvBuildingInfo& kBuilding = GC.getBuildingInfo(eIndex);
-	
+
 	//Walk through all the possible buildings in the building slot of the given building ...
 	//... and check if the given building is the building with the highest tier (SpecialBuildingPriority), built in that slot.
 	BuildingTypes eNextBuilding = kBuilding.getIndexOf_NextBuildingType_In_SpecialBuilding();
@@ -6560,7 +6579,7 @@ void CvCity::pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bo
 			{
 				CvWString szString;
 				getUnitAIString(szString, eUnitAI);
-				logBBAI(" Player %S City %S pushes production of unit %S with UNITAI %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(), 
+				logBBAI(" Player %S City %S pushes production of unit %S with UNITAI %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
 					getName().GetCString(), GC.getUnitInfo(eUnit).getDescription(), szString.GetCString());
 			}
 		}
@@ -6576,7 +6595,7 @@ void CvCity::pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bo
 			bValid = true;
 
 			gDLL->getEventReporterIFace()->cityBuildingBuilding(this, (BuildingTypes)iData1);
-			if (gCityLogLevel >= 1) logBBAI(" Player %S City %S pushes production of building %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(), 
+			if (gCityLogLevel >= 1) logBBAI(" Player %S City %S pushes production of building %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
 				getName().GetCString(), GC.getBuildingInfo(eBuilding).getDescription());
 		}
 		break;
@@ -6587,7 +6606,7 @@ void CvCity::pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bo
 		if (canConvince(eFatherPoint) || bForce)
 		{
 			bValid = true;
-			if (gCityLogLevel >= 1) logBBAI(" Player % S City % S pushes convincing of type % S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(), 
+			if (gCityLogLevel >= 1) logBBAI(" Player % S City % S pushes convincing of type % S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
 				getName().GetCString(), GC.getFatherPointInfo(eFatherPoint).getDescription());
 		}
 		break;
@@ -6859,7 +6878,7 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 			szBuffer += gDLL->getText("TXT_KEY_MISC_WORK_HAS_BEGUN", getProductionNameKey());
 		}
 
-		gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, szSound, MESSAGE_TYPE_MINOR_EVENT, szIcon, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+		gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), szSound, MESSAGE_TYPE_MINOR_EVENT, szIcon, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
 	}
 
 	setAutoThresholdCache(); // transport feeder - Nightinggale
@@ -6891,7 +6910,7 @@ bool CvCity::checkRequiredYields(OrderTypes eOrder, int iData1, YieldTypes eYiel
 			continue;
 
 		if (GC.getYieldInfo(eYield).isCargo())
-		{	
+		{
 			int iAmount = 0;
 			switch (eOrder)
 			{
@@ -6964,7 +6983,7 @@ void CvCity::checkCompletedBuilds(YieldTypes eYield, int iChange)
 bool CvCity::processRequiredYields(int iNum)
 {
 	CLLNode<OrderData>* pOrderNode = headOrderQueueNode();
-	
+
 	for (int iCount = 0; pOrderNode != NULL; ++iCount)
 	{
 		if (iCount == iNum)
@@ -6988,7 +7007,7 @@ bool CvCity::processRequiredYields(int iNum)
 	{
 		YieldTypes eYield = (YieldTypes) iYield;
 		if (GC.getYieldInfo(eYield).isCargo())
-		{	
+		{
 			int iNeeded = 0;
 			switch (pOrderNode->m_data.eOrderType)
 			{
@@ -7149,7 +7168,7 @@ void CvCity::doGrowth()
 	int iDiff;
 
 	if (GC.getUSE_DO_GROWTH_CALLBACK()) // K-Mod. block unused python callbacks
-	{		
+	{
 		CyCity* pyCity = new CyCity(this);
 		CyArgsList argsList;
 		argsList.add(gDLL->getPythonIFace()->makePythonObject(pyCity));	// pass in city class
@@ -7205,7 +7224,7 @@ void CvCity::doGrowth()
 				// WTP, ray, making this error save to prevent negative Storage bug - END
 			}
 
-			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_GROWTH", getNameKey()), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+			gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_GROWTH", getNameKey()), coord(), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
 
 
 			// ONEVENT - City growth
@@ -7224,7 +7243,7 @@ void CvCity::doGrowth()
 			{
 				AI_removeWorstPopulationUnit(true);
 			}
-			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_STARVING", getNameKey()), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+			gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_STARVING", getNameKey()), coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 		}
 		// WTP, ray, necessary changes related to branch PLAINS, which also allows settling in hostile Terrains without Food
 
@@ -7244,7 +7263,7 @@ void CvCity::doGrowth()
 				CvPlayerAI& kPlayer = GET_PLAYER(getOwnerINLINE());
 				int iGold = kPlayer.getGold();
 				int iGoldToPayedForStarvationDonation = GC.getDefineINT("CITY_STARVATION_DONATION_GOLD_PAYED") * GC.getGameSpeedInfo(GC.getGame().getGameSpeedType()).getStoragePercent() / 100;
-				int iOccupationTimerinCaseNoDonation = GC.getDefineINT("CITY_STARVATION_NO_DONATION_OCCUPATION_TIMER"); 
+				int iOccupationTimerinCaseNoDonation = GC.getDefineINT("CITY_STARVATION_NO_DONATION_OCCUPATION_TIMER");
 
 				// Case HUMAN: let us substract Gold for Human Player and trigger message about donation
 				if (isHuman())
@@ -7254,7 +7273,7 @@ void CvCity::doGrowth()
 					{
 						kPlayer.changeGold(-iGoldToPayedForStarvationDonation);
 						changeFood(iFoodReceivedForStarvationDonation);
-						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_STARVING_BUT_COLONIES_PAID", getNameKey(), iGoldToPayedForStarvationDonation, iFoodReceivedForStarvationDonation), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+						gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_STARVING_BUT_COLONIES_PAID", getNameKey(), iGoldToPayedForStarvationDonation, iFoodReceivedForStarvationDonation), coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 					}
 
 					// We did not have the gold, thus unrest
@@ -7262,10 +7281,10 @@ void CvCity::doGrowth()
 					else if (getOccupationTimer() == 0)
 					{
 						changeOccupationTimer(iOccupationTimerinCaseNoDonation);
-						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_STARVING_AND_REVOLTING", getNameKey()), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+						gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_STARVING_AND_REVOLTING", getNameKey()), coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 					}
 				}
-				
+
 				// Case AI: We keep this simple for now
 				// no unrest, receives gold but has to pay for it
 				else
@@ -7294,21 +7313,21 @@ void CvCity::doYields()
 	const int iTotalYields = getTotalYieldStored();
 	const int iMaxCapacity = getMaxYieldCapacity();
 
-	// WTP, ray, Happiness - START 
+	// WTP, ray, Happiness - START
 	int iCityHappinessDomesticMarketGoldModifiers = getCityHappiness() - getCityUnHappiness();
 	// WTP, ray, Happiness - END
 
 	// WTP, ray, Crime and Law - START
 	int iCityLawDomesticMarketGoldModifiers = getCityLaw() - getCityCrime();
 	// WTP, ray, Crime and Law - END
-	
+
 	// WTP, ray, Domestic Market Profit Modifier - START
 	int iDomesticMarketProfitModifierInPercent = GET_PLAYER(getOwnerINLINE()).getTotalPlayerDomesticMarketProfitModifierInPercent();
 	// WTP, ray, Domestic Market Profit Modifier - END
-	
+
 	// R&R, ray, adjustment Domestic Markets
 	int iTotalProfitFromDomesticMarket = 0;
-	
+
 	if (getMarketModifier() > 0)
 	{
 		YieldCargoArray<int> aYields;
@@ -7329,7 +7348,7 @@ void CvCity::doYields()
 				}
 				int iProfit = iAmount * getYieldBuyPrice(eYield);
 
-				// WTP, ray, Happiness - START 
+				// WTP, ray, Happiness - START
 				iProfit = iProfit * (100 + iCityHappinessDomesticMarketGoldModifiers) / 100;
 				// WTP, ray, Happiness - END
 
@@ -7349,18 +7368,18 @@ void CvCity::doYields()
 		if (iTotalProfitFromDomesticMarket != 0 && GC.getDOMESTIC_SALES_MESSAGES() == 1)
 		{
 			CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_DOMESTIC_SOLD", getNameKey(), iTotalProfitFromDomesticMarket);
-			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+			gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
 		}
 	}
 	// R&R, ray, adjustment Domestic Markets, END
-	
+
 	// R&R, ray, adjustment for less Custom House messages
 	int iCustomHouseProfit = 0;
 	bool bPrintOnce = false;
 
 	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		
+
 		switch (eYield)
 		{
 		case YIELD_FOOD:
@@ -7396,11 +7415,11 @@ void CvCity::doYields()
 							int iEducationNeeded = educationThreshold() - pLoopUnit->getYieldStored();
 
 							int rStudentOutput = std::max(iStudentOutput, 1);
-							int iTurns = std::max(0, (iEducationNeeded + rStudentOutput - 1) / rStudentOutput);  // round up				
-					
+							int iTurns = std::max(0, (iEducationNeeded + rStudentOutput - 1) / rStudentOutput);  // round up
+
 							if (iTurns == 2 || iTurns == 1) {
 								CvWString szBuffer = gDLL->getText("TXT_KEY_MISC_STUDENT_ALMOST_GRADUATED", iTurns, getNameKey(), GC.getBuildingInfo(eSchoolBuilding).getTextKeyWide());
-								gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREEXPANDS", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(YIELD_EDUCATION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+								gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CULTUREEXPANDS", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(YIELD_EDUCATION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
 
 							}
 							// TAC - Messages - Ray - END
@@ -7430,7 +7449,7 @@ void CvCity::doYields()
 					{
 						sellThreshold = iMaxCapacity;
 					}
-					else 
+					else
 					{
 						sellThreshold = getCustomHouseSellThreshold(eYield);
 					}
@@ -7453,13 +7472,13 @@ void CvCity::doYields()
 						}
 					}
 				}
-				
+
 				if (iExcess > 0)
 				{
 					int iLoss = std::max(GC.getCITY_YIELD_DECAY_PERCENT() * iExcess / 100, GC.getMIN_CITY_YIELD_DECAY());
 					iLoss = std::min(iLoss, iExcess);
 					changeYieldStored(eYield, -iLoss);
-					
+
 					// R&R, ray , Changes to Custom House - START
 					int iComparableProfitInEurope = GET_PLAYER(getOwnerINLINE()).getSellToEuropeProfit(eYield, iLoss);
 
@@ -7496,40 +7515,40 @@ void CvCity::doYields()
 						// R&R, ray , Changes to Custom House - START
 						// Selling with Custom House will get Trade Founding Father Points
 						// check if Custom House
-						if (bHasUnlockedTradeSettings) 
+						if (bHasUnlockedTradeSettings)
 						{
 							for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
 							{
 								//Divide by 2 because Custom House gives only half as Europe does
 								int iProfitForFatherPointsAtCustomHouse = iProfit / 2;
-							
+
 								FatherPointTypes ePointType = (FatherPointTypes) i;
 								GET_PLAYER(getOwnerINLINE()).changeFatherPoints(ePointType, iProfitForFatherPointsAtCustomHouse * GC.getFatherPointInfo(ePointType).getEuropeTradeGoldPointPercent() / 100 );
 							}
 
 							// R&R, ray, adjustment for less Custom House messages
-							iCustomHouseProfit = iCustomHouseProfit + iProfit; 
+							iCustomHouseProfit = iCustomHouseProfit + iProfit;
 							//CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_CUSTOM_HOUSE", iLoss, GC.getYieldInfo(eYield).getChar(), getNameKey(), iProfit);
 							//gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_BUILD_BANK", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 						}
-						else 
+						else
 						{
 							CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_SOLD", iLoss, GC.getYieldInfo(eYield).getChar(), getNameKey(), iProfit);
-							gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+							gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), NULL, MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
 						}
 						// R&R, ray , Changes to Custom House - END
 					}
 					else
 					{
 						CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST", iLoss, GC.getYieldInfo(eYield).getChar(), getNameKey());
-						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+						gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 					}
 				}
 				else if (!bPrintOnce && (iMaxCapacity - iTotalYields) > 0 && (iMaxCapacity - iTotalYields) < (iMaxCapacity / 10)) //only do this message once
 				{
 					bPrintOnce = true;
 					CvWString szBuffer = gDLL->getText("TXT_KEY_RUNNING_OUT_OF_SPACE_NEW_CAPACITY", getNameKey());
-					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+					gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 				}
 
 				if (aiYields[eYield] > 0)
@@ -7551,7 +7570,7 @@ void CvCity::doYields()
 	if (iCustomHouseProfit > 0)
 	{
 		CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_CUSTOM_HOUSE_SINGLE_MESSAGE", getNameKey(), iCustomHouseProfit);
-		gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+		gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
 	}
 
 }
@@ -7813,11 +7832,11 @@ void CvCity::doProduction(bool bAllowNoProduction)
 
 	if (!isHuman() || isProductionAutomated())
 	{
-		if (!isProduction() || isProductionConvince() || AI_isChooseProductionDirty() || 
+		if (!isProduction() || isProductionConvince() || AI_isChooseProductionDirty() ||
 			getProduction() > getProductionNeeded(YIELD_HAMMERS))
 		{
 			if (!m_bHasHurried)
-			{ 
+			{
 				AI_chooseProduction();
 			}
 		}
@@ -7943,7 +7962,7 @@ void CvCity::doNativeTradePost()
 		// now check the gold if it is enough to create a treasure
 		int iCurrentTradePostGold = getNativeTradePostGold();
 		int iThreshold = GC.getMAX_TREASURE_AMOUNT() / 3;
-		
+
 		if (iCurrentTradePostGold >= iThreshold)
 		{
 			// spawn the Treasure
@@ -7955,7 +7974,7 @@ void CvCity::doNativeTradePost()
 
 			// we send a message now
 			CvWString szBuffer = gDLL->getText("TXT_KEY_TRADE_POST_CREATED_TREASURE", getNameKey());
-			gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, pTreasure->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+			gDLL->UI().addPlayerMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, pTreasure->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
 		}
 	}
 	return;
@@ -8091,7 +8110,7 @@ void CvCity::getVisibleEffects(ZoomLevelTypes eCurZoom, std::vector<const TCHAR*
 			kEffectNames.push_back("EFFECT_CITY_BIG_BURNING_SMOKE");
 		}
 		return;
-	} 
+	}
 }
 
 void CvCity::getCityBillboardSizeIconColors(NiColorA& kDotColor, NiColorA& kTextColor) const
@@ -8516,7 +8535,7 @@ void CvCity::applyEvent(EventTypes eEvent, const EventTriggeredData& kTriggeredD
 							if (NO_IMPROVEMENT != pPlot->getImprovementType() && !GC.getImprovementInfo(pPlot->getImprovementType()).isPermanent())
 							{
 								CvWString szBuffer = gDLL->getText("TXT_KEY_EVENT_CITY_IMPROVEMENT_DESTROYED", GC.getImprovementInfo(pPlot->getImprovementType()).getTextKeyWide());
-								gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_PILLAGED", MESSAGE_TYPE_INFO, GC.getImprovementInfo(pPlot->getImprovementType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pPlot->getX_INLINE(), pPlot->getY_INLINE(), true, true);
+								gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_PILLAGED", MESSAGE_TYPE_INFO, GC.getImprovementInfo(pPlot->getImprovementType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 								pPlot->setImprovementType(NO_IMPROVEMENT);
 								++iNumPillaged;
 								break;
@@ -8535,7 +8554,7 @@ void CvCity::applyEvent(EventTypes eEvent, const EventTriggeredData& kTriggeredD
 			if (NO_PLAYER != eOtherPlayer)
 			{
 				CvWString szBuffer = gDLL->getText("TXT_KEY_EVENT_NUM_CITY_IMPROVEMENTS_DESTROYED", iNumPillaged, GET_PLAYER(getOwnerINLINE()).getCivilizationAdjectiveKey());
-				gDLL->getInterfaceIFace()->addMessage(eOtherPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_PILLAGED", MESSAGE_TYPE_INFO);
+				gDLL->UI().addPlayerMessage(eOtherPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_PILLAGED", MESSAGE_TYPE_INFO);
 			}
 		}
 
@@ -8742,11 +8761,11 @@ void CvCity::liberate(bool bConquest)
 			{
 				if (isRevealed(GET_PLAYER((PlayerTypes)iI).getTeam(), false))
 				{
-					gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_REVOLTEND", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+					gDLL->UI().addPlayerMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_REVOLTEND", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), true, true);
 				}
 			}
 		}
-		GC.getGameINLINE().addReplayMessage(REPLAY_MESSAGE_MAJOR_EVENT, eOwner, szBuffer, getX_INLINE(), getY_INLINE(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
+		GC.getGameINLINE().addReplayMessage(REPLAY_MESSAGE_MAJOR_EVENT, eOwner, szBuffer, coord(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
 
 		GET_PLAYER(ePlayer).acquireCity(this, false, true);
 		GET_PLAYER(ePlayer).AI_changeMemoryCount(eOwner, MEMORY_LIBERATED_CITIES, 1);
@@ -8922,9 +8941,9 @@ int CvCity::getBestYieldsAmountAvailable(YieldTypes eYield, ProfessionTypes ePro
 	{
 		return 0;
 	}
-	
+
 	FAssert(eYield != NO_YIELD);
-	
+
 	int iBestYieldAvailable = 0;
 
 	if(pUnit != NULL)
@@ -8971,7 +8990,7 @@ void CvCity::addPopulationUnit(CvUnit* pUnit, ProfessionTypes eProfession)
 		FAssert(false);
 		return;
 	}
-	
+
 	CvUnit* pTransferUnit = GET_PLAYER(pUnit->getOwnerINLINE()).getAndRemoveUnit(pUnit->getID());
 	FAssert(pTransferUnit == pUnit);
 
@@ -8980,7 +8999,7 @@ void CvCity::addPopulationUnit(CvUnit* pUnit, ProfessionTypes eProfession)
 	area()->changePower(getOwnerINLINE(), pTransferUnit->getPower());
 	setYieldRateDirty();
 	pTransferUnit->setProfession(eProfession);
-	
+
 	pTransferUnit->setColonistLocked(false);
 
 	updatePopulation(iOldPopulation);
@@ -8989,7 +9008,7 @@ void CvCity::addPopulationUnit(CvUnit* pUnit, ProfessionTypes eProfession)
 }
 
 bool CvCity::removePopulationUnit(CvUnit* pUnit, bool bDelete, ProfessionTypes eProfession, bool bConquest)
-{	
+{
 	int iUnitIndex = getPopulationUnitIndex(pUnit);
 	if(iUnitIndex < 0)
 	{
@@ -9031,7 +9050,7 @@ bool CvCity::removePopulationUnit(CvUnit* pUnit, bool bDelete, ProfessionTypes e
 	{
 		//transfer back to player
 		GET_PLAYER(getOwnerINLINE()).addExistingUnit(pUnit);
-		pUnit->addToMap(getX_INLINE(), getY_INLINE());
+		pUnit->addToMap(coord());
 		pUnit->setProfession(eProfession);
 
 		if (pUnit->getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
@@ -9049,7 +9068,7 @@ bool CvCity::removePopulationUnit(CvUnit* pUnit, bool bDelete, ProfessionTypes e
 		CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_TEXT);
 		pInfo->setText(gDLL->getText("ABANDONING_CITY"));
 		gDLL->getInterfaceIFace()->addPopup(pInfo, getOwnerINLINE(), true, true);
-		
+
 	}
 	// R&R Abandon City, ray END
 
@@ -9116,7 +9135,7 @@ CvUnit* CvCity::getPopulationUnitByIndex(int iUnitIndex) const
 	{
 		return m_aPopulationUnits[iUnitIndex];
 	}
-	
+
 	FAssert(false);
 	return NULL;
 }
@@ -9189,7 +9208,7 @@ void CvCity::setOrderedStudents(UnitTypes eUnit, int iCount, bool bRepeat, bool 
 			FAssert(iCount < 0);
 			return;
 		}
-	
+
 		m_em_iOrderedStudents.set(eUnit, iCount);
 		m_em_bOrderedStudentsRepeat.set(eUnit, bRepeat);
 		if (bUpdateRepeat && iCount == 0)
@@ -9285,7 +9304,7 @@ void CvCity::ejectMissionary()
 		CvUnit* EjectedMissionaryUnit = GET_PLAYER(missionaryPlayer).initUnit(EjectedMissionaryType, PROFESSION_MISSIONARY, getX_INLINE(), getY_INLINE());
 
 		CvWString szBuffer = gDLL->getText("TXT_KEY_MISSIONARY_EJECTED_FROM_GIFTED_CITY", plot()->getPlotCity()->getNameKey());
-		gDLL->getInterfaceIFace()->addMessage(missionaryPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_MISSION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+		gDLL->UI().addPlayerMessage(missionaryPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_MISSION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), true, true);
 
 		setMissionaryRate(0);
 		setMissionaryPlayer(NO_PLAYER);
@@ -9312,7 +9331,7 @@ void CvCity::ejectTrader()
 		CvUnit* EjectedTraderUnit = GET_PLAYER(tradePostPlayer).initUnit(EjectedTraderType, PROFESSION_NATIVE_TRADER, getX_INLINE(), getY_INLINE());
 
 		CvWString szBuffer = gDLL->getText("TXT_KEY_TRADER_EJECTED_FROM_GIFTED_CITY", plot()->getPlotCity()->getNameKey());
-		gDLL->getInterfaceIFace()->addMessage(tradePostPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_TRADE_POST).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+		gDLL->UI().addPlayerMessage(tradePostPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_TRADE_POST).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), true, true);
 
 		setNativeTradeRate(0);
 		setTradePostPlayer(NO_PLAYER);
@@ -9356,7 +9375,7 @@ bool CvCity::canProduceYield(YieldTypes eYield)
 			}
 		}
 	}
-	
+
 	return false;
 }
 
@@ -9575,7 +9594,7 @@ void CvCity::setMissionaryPlayer(PlayerTypes ePlayer)
 				{
 					if (isRevealed(kLoopPlayer.getTeam(), false))
 					{
-						gDLL->getInterfaceIFace()->addMessage(kLoopPlayer.getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), false, false);
+						gDLL->UI().addPlayerMessage(kLoopPlayer.getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), false, false);
 					}
 				}
 			}
@@ -9592,7 +9611,7 @@ void CvCity::setMissionaryPlayer(PlayerTypes ePlayer)
 				{
 					if (isRevealed(kLoopPlayer.getTeam(), false))
 					{
-						gDLL->getInterfaceIFace()->addMessage(kLoopPlayer.getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_MISSION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+						gDLL->UI().addPlayerMessage(kLoopPlayer.getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_MISSION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), true, true);
 					}
 				}
 			}
@@ -9632,7 +9651,7 @@ void CvCity::setTradePostPlayer(PlayerTypes ePlayer)
 				{
 					if (isRevealed(kLoopPlayer.getTeam(), false))
 					{
-						gDLL->getInterfaceIFace()->addMessage(kLoopPlayer.getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), false, false);
+						gDLL->UI().addPlayerMessage(kLoopPlayer.getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), false, false);
 					}
 				}
 			}
@@ -9649,7 +9668,7 @@ void CvCity::setTradePostPlayer(PlayerTypes ePlayer)
 				{
 					if (isRevealed(kLoopPlayer.getTeam(), false))
 					{
-						gDLL->getInterfaceIFace()->addMessage(kLoopPlayer.getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_TRADE_POST).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+						gDLL->UI().addPlayerMessage(kLoopPlayer.getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_TRADE_POST).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), true, true);
 					}
 				}
 			}
@@ -9724,7 +9743,7 @@ int CvCity::getCityHealthChangeFromPopulation() const
 	int iNegHealthFromPopulation = 0;
 	int iCityPopulation = getPopulation();
 	int iMinCityPopForNegHealth = GC.getMIN_POP_NEG_HEALTH();
-	
+
 	// Negative Influence from Population only for human player
 	if (isHuman() && iCityPopulation >= iMinCityPopForNegHealth)
 	{
@@ -9787,7 +9806,7 @@ int CvCity::getCityHealthChangeFromRessourcesInCityRadius() const
 	for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
 	{
 		CvPlot* pLoopPlot = getCityIndexPlot(iJ);
-		
+
 		if(pLoopPlot != NULL && pLoopPlot->getBonusType() != NO_BONUS)
 		{
 			// only if worked
@@ -9847,7 +9866,7 @@ void CvCity::changeCityHealth(int iValue)
 }
 
 void CvCity::doCityHealth()
-{	
+{
 	changeCityHealth(getCityHealthChange());
 }
 // R&R, ray, Health - END
@@ -10056,7 +10075,7 @@ int CvCity::getImprovementStorageModifierForCity() const
 
 // WTP, ray, Happiness - START
 void CvCity::doCityHappiness()
-{	
+{
 	// we do not do this for every tiny village
 	int iMinPopulation = GC.getMIN_POP_NEG_HAPPINESS() * 2;
 	if (getPopulation() < iMinPopulation)
@@ -10097,7 +10116,7 @@ void CvCity::doCityHappiness()
 	int iTimerResetValue = GC.getTIMER_FESTIVITIES_OR_UNRESTS()*gamespeedMod/100;
 	setCityTimerFestivitiesOrUnrest(iTimerResetValue);
 
-	// otherwise we do festivities - which give one of the father point categories by random; 
+	// otherwise we do festivities - which give one of the father point categories by random;
 	int iMaxFoundingFatherPoints = GC.getFOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS();
 	int iFoundingFatherPoints = GC.getGameINLINE().getSorenRandNum(iMaxFoundingFatherPoints, "Festivities Happiness Father Points");
 
@@ -10114,13 +10133,13 @@ void CvCity::doCityHappiness()
 
 	CvWString szBuffer;
 	szBuffer = gDLL->getText("TXT_KEY_FESTIVITIES_BECAUSE_HAPPINESS", getNameKey(), iFoundingFatherPoints, GC.getFatherPointInfo(ePointType).getDescription());
-	gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREEXPANDS", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(YIELD_CULTURE).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+	gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CULTUREEXPANDS", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(YIELD_CULTURE).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
 
 	return;
 }
 
 void CvCity::doCityUnHappiness()
-{	
+{
 	// we do not do this for AI
 	if(!isHuman())
 	{
@@ -10173,13 +10192,13 @@ void CvCity::doCityUnHappiness()
 	int iTimerResetValue = GC.getTIMER_FESTIVITIES_OR_UNRESTS()*gamespeedMod/100;
 	setCityTimerFestivitiesOrUnrest(iTimerResetValue);
 
-	// now we do unrest 
+	// now we do unrest
 	int iUnrestTime = GC.getTURNS_UNREST_UNHAPPINESS();
 	setOccupationTimer(iUnrestTime*gamespeedMod/100);
 
 	// add message
 	CvWString szBuffer = gDLL->getText("TXT_KEY_CITY_UNREST_BECAUSE_UNHAPPINESS", getNameKey());
-	gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CITYCAPTURED", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+	gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CITYCAPTURED", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 
 	return;
 }
@@ -10227,7 +10246,7 @@ void CvCity::doCityCrime()
 
 		// add message
 		CvWString szBuffer = gDLL->getText("TXT_KEY_CITY_GOLD_STOLEN_BECAUSE_CRIME", getNameKey());
-		gDLL->getInterfaceIFace()->addMessage(eOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CITYCAPTURED", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+		gDLL->UI().addPlayerMessage(eOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CITYCAPTURED", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 
 	}
 
@@ -10245,7 +10264,7 @@ void CvCity::doCityCrime()
 
 		// add message
 		CvWString szBuffer = gDLL->getText("TXT_KEY_CITY_UNREST_BECAUSE_CRIME", getNameKey());
-		gDLL->getInterfaceIFace()->addMessage(eOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CITYCAPTURED", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+		gDLL->UI().addPlayerMessage(eOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CITYCAPTURED", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 	}
 
 	return;
@@ -10343,7 +10362,7 @@ void CvCity::checkForDomesticDemandEvent()
 
 			// add message
 			CvWString szBuffer = gDLL->getText("TXT_KEY_CITY_DOMESTIC_MARKET_EVENT_POSITIVE", getNameKey());
-			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+			gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
 		}
 	}
 
@@ -10366,7 +10385,7 @@ void CvCity::checkForDomesticDemandEvent()
 
 			// add message
 			CvWString szBuffer = gDLL->getText("TXT_KEY_CITY_DOMESTIC_MARKET_EVENT_NEGATIVE", getNameKey());
-			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+			gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 		}
 	}
 
@@ -10504,7 +10523,7 @@ int CvCity::getCityBarracksSpace() const
 	{
 			iValueToReturn = iMinBarracksSpace;
 	}
-	
+
 	return iValueToReturn;
 }
 
@@ -10615,7 +10634,7 @@ void CvCity::updateCityUnHappiness()
 	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing - END
 	iTotalCityUnHappiness += getUnhappinessFromPopulation();
 	iTotalCityUnHappiness += getUnhappinessFromCrime();
-	iTotalCityUnHappiness += getUnhappinessFromSlavery(); 
+	iTotalCityUnHappiness += getUnhappinessFromSlavery();
 	iTotalCityUnHappiness += getUnhappinessFromWars();
 	iTotalCityUnHappiness += getUnhappinessFromMissingDefense();
 	iTotalCityUnHappiness += getUnhappinessFromTaxRate();
@@ -10722,7 +10741,7 @@ int CvCity::getUnhappinessFromSlavery() const
 int CvCity::getUnhappinessFromWars() const
 {
 	int iUnHapWar = 0;
-	int iFactorPerWar = GC.getPER_EUROPEAN_AT_WAR_UNHAPPINESS(); 
+	int iFactorPerWar = GC.getPER_EUROPEAN_AT_WAR_UNHAPPINESS();
 	int iNumEuropeanWars = 0;
 
 	for (int iI = 0; iI < MAX_TEAMS; iI++)
@@ -10749,7 +10768,7 @@ int CvCity::getUnhappinessFromMissingDefense() const
 {
 	int iUnHapMissingDef = 0;
 
-	int iPopDefenseDivisor = GC.getPOP_DIVISOR_DEFENSE_UNHAPPINESS(); 
+	int iPopDefenseDivisor = GC.getPOP_DIVISOR_DEFENSE_UNHAPPINESS();
 	// since this is a divisor it may never be 0 - to prevent CTD by messing up XML config
 	if (iPopDefenseDivisor == 0)
 	{
@@ -10776,7 +10795,7 @@ int CvCity::getUnhappinessFromMissingDefense() const
 	{
 		return iUnHapMissingDef;
 	}
-	
+
 	// more defenders than needed does not help
 	return 0;
 }
@@ -10785,7 +10804,7 @@ int CvCity::getUnhappinessFromTaxRate() const
 {
 	int iUnHapTax = 0;
 
-	int iTaxDivisor = GC.getTAX_DIVISOR_UNHAPPINESS(); 
+	int iTaxDivisor = GC.getTAX_DIVISOR_UNHAPPINESS();
 	// since this is a divisor it may never be 0 - to prevent CTD by messing up XML config
 	if (iTaxDivisor == 0)
 	{
@@ -10901,7 +10920,7 @@ int CvCity::getHappinessFromHealth() const
 	}
 
 	iHapHealth = iHealth / (iPopulation / iPopDivisor);
-	
+
 	if (iHapHealth > (iPopulation / iPopDivisor))
 	{
 		iHapHealth = (iPopulation / iPopDivisor);
@@ -11041,7 +11060,7 @@ int CvCity::getHappinessFromDomesticDemandsFulfilled() const
 			if (getYieldDemand(eYield) > 0 && (getYieldStored(eYield) > 0))
 			{
 				iHapDomesticDemand++;
-			}	
+			}
 		}
 	}
 
@@ -11102,7 +11121,7 @@ void CvCity::setCityTimerFestivitiesOrUnrest(int iValue)
 	m_iCityTimerFestivitiesOrUnrest = iValue;
 }
 
-void CvCity::changeCityTimerFestivitiesOrUnrest(int iValue) 
+void CvCity::changeCityTimerFestivitiesOrUnrest(int iValue)
 {
 	if (getCityTimerFestivitiesOrUnrest() + iValue < 0)
 	{
@@ -11164,7 +11183,7 @@ void CvCity::updateCityCrime()
 
 	iTotalCityCrime += getBaseRawYieldProduced(YIELD_CRIME); // should not exist but in case it ever does
 	iTotalCityCrime += getCrimeFromPopulation();
-	iTotalCityCrime += getCrimeFromUnhappiness(); 
+	iTotalCityCrime += getCrimeFromUnhappiness();
 	iTotalCityCrime += getCrimeFromWars();
 
 	int iCrimeModifierFromOverflow = getCrimBonusFactorFromOverflow();
@@ -11318,7 +11337,7 @@ int CvCity::getCrimeFromUnhappiness() const
 int CvCity::getCrimeFromWars() const
 {
 	int iCrimeFromWars = 0;
-	int iFactorPerWar = GC.getPER_EUROPEAN_AT_WAR_CRIME(); 
+	int iFactorPerWar = GC.getPER_EUROPEAN_AT_WAR_CRIME();
 	int iNumEuropeanWars = 0;
 
 	for (int iI = 0; iI < MAX_TEAMS; iI++)
@@ -11344,7 +11363,7 @@ int CvCity::getCrimeFromWars() const
 int CvCity::getCrimBonusFactorFromOverflow() const
 {
 	int iCrimeBonusFactorFromOverflow = 0;
-	int iMaxFactor = GC.getCRIME_PERCENT_BONUS_FACTOR_OVERFLOW(); 
+	int iMaxFactor = GC.getCRIME_PERCENT_BONUS_FACTOR_OVERFLOW();
 
 	// there is overflow
 	if (getTotalYieldStored() > getMaxYieldCapacity())
@@ -11407,7 +11426,7 @@ int CvCity::educationThreshold() const
 void CvCity::setRebelSentiment(int iValue)
 {
 	m_iRebelSentiment = iValue;
-	FAssert(getRebelSentiment() >= 0);	
+	FAssert(getRebelSentiment() >= 0);
 }
 
 UnitClassTypes CvCity::bestTeachUnitClass()
@@ -11415,9 +11434,9 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 	PROFILE_FUNC();
 	int iBestValue = 0;
 	UnitClassTypes eBestUnitClass = NO_UNITCLASS;
-	
+
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-	
+
 	std::vector<int> values(GC.getNumUnitClassInfos(), 0);
 	for (int i = 0; i < GC.getNumUnitClassInfos(); ++i)
 	{
@@ -11426,9 +11445,9 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 			UnitTypes eLoopUnit = (UnitTypes)GC.getUnitClassInfo((UnitClassTypes) i).getDefaultUnitIndex();
 			if (eLoopUnit != NO_UNIT)
 			{
-				int iValue = 0;	
+				int iValue = 0;
 				ProfessionTypes eIdealProfession = kOwner.AI_idealProfessionForUnit(eLoopUnit);
-		
+
 				if (eIdealProfession == NO_PROFESSION)
 				{
 					iValue += 100;
@@ -11436,7 +11455,7 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 				else
 				{
 					CvProfessionInfo& kIdealProfession = GC.getProfessionInfo(eIdealProfession);
-					
+
 					if (!kIdealProfession.isCitizen())
 					{
 						iValue += 100;
@@ -11458,7 +11477,7 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 						}
 						else
 						{
-						
+
 							int iPlotValue = 0;
 							for (int j = 0; j < NUM_CITY_PLOTS; ++j)
 							{
@@ -11472,7 +11491,7 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 										{
 											iPlotValue += 2;
 										}
-										
+
 										if (pLoopPlot->getFeatureType() != NO_FEATURE)
 										{
 											int iChange = GC.getFeatureInfo(pLoopPlot->getFeatureType()).getYieldChange(eWantedYield);
@@ -11496,18 +11515,18 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 									}
 								}
 							}
-							
+
 							iValue = 25 + 125 * iPlotValue / NUM_CITY_PLOTS;
 						}
 					}
 				}
-				
+
 				iValue *= GC.getCivilizationInfo(kOwner.getCivilizationType()).getTeachUnitClassWeight(i);
 				values[i] = iValue;
 			}
 		}
 	}
-	
+
 	int iTotal = 0;
 	int iCount = 0;
 	for (int i = 0; i < GC.getNumUnitClassInfos(); ++i)
@@ -11523,7 +11542,7 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 	{
 		return NO_UNITCLASS;
 	}
-	
+
 	int iLoop = 0;
 	CvCity* pLoopCity;
 	for (pLoopCity = kOwner.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kOwner.nextCity(&iLoop))
@@ -11534,7 +11553,7 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 			values[pLoopCity->getTeachUnitClass()] /= 2;
 		}
 	}
-	
+
 	//This dampens the favortism towards the most abundant yields.
 	int iAverage = iTotal / iCount;
 	for (int i = 0; i < GC.getNumUnitClassInfos(); ++i)
@@ -11547,7 +11566,7 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 				iValue = ((iValue - iAverage) / 4) + iAverage;
 			}
 			iValue = 1 + GC.getGameINLINE().getSorenRandNum(iValue, "Pick City Training");
-			
+
 			if (iValue > iBestValue)
 			{
 				iBestValue = iValue;
@@ -11555,7 +11574,7 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 			}
 		}
 	}
-	
+
 	return eBestUnitClass;
 }
 
@@ -11581,7 +11600,7 @@ UnitClassTypes CvCity::bestGrowthUnitClass()
 	EthnicityTypes eBestEthnicity = NO_ETHNICITY;
 	CitizenStatusTypes eBestCitizenStatus = NO_CITIZEN_STATUS;
 
-	// let us loop all the Units inside the City to get Ethnicity and Citizen Status	
+	// let us loop all the Units inside the City to get Ethnicity and Citizen Status
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
 	{
 		CvUnit* pLoopUnit = m_aPopulationUnits[i];
@@ -11590,19 +11609,19 @@ UnitClassTypes CvCity::bestGrowthUnitClass()
 
 		switch(eEthnicityInsideCity)
 		{
-			case ETHNICITY_EUROPEAN: 
+			case ETHNICITY_EUROPEAN:
 				iEthnicityEuropeCount++;
 				break;
-			case ETHNICITY_INDIO: 
+			case ETHNICITY_INDIO:
 				iEthnicityIndioCount++;
 				break;
-			case ETHNICITY_AFRICAN: 
+			case ETHNICITY_AFRICAN:
 				iEthnicityAfricanCount++;
 				break;
-			case ETHNICITY_MESTIZZO: 
+			case ETHNICITY_MESTIZZO:
 				iEthnicityMestizzoCount++;
 				break;
-			case ETHNICITY_MULATTO: 
+			case ETHNICITY_MULATTO:
 				iEthnicityMulattoCount++;
 				break;
 			default:
@@ -11611,16 +11630,16 @@ UnitClassTypes CvCity::bestGrowthUnitClass()
 
 		switch(eCitizenStatusInsideCity)
 		{
-			case CITIZEN_STATUS_FREE: 
+			case CITIZEN_STATUS_FREE:
 				iCitizenStatusFreeCount++;
 				break;
-			case CITIZEN_STATUS_INDENTURED: 
+			case CITIZEN_STATUS_INDENTURED:
 				iCitizenStatusIndenturedCount++;
 				break;
-			case CITIZEN_STATUS_ENSLAVED: 
+			case CITIZEN_STATUS_ENSLAVED:
 				iCitizenStatusEnslavedCount++;
 				break;
-			case CITIZEN_STATUS_ELITE: 
+			case CITIZEN_STATUS_ELITE:
 				iCitizenStatusEliteCount++;
 				break;
 			default:
@@ -11644,19 +11663,19 @@ UnitClassTypes CvCity::bestGrowthUnitClass()
 
 			switch(eEthnicityCityPlot)
 			{
-				case ETHNICITY_EUROPEAN: 
+				case ETHNICITY_EUROPEAN:
 					iEthnicityEuropeCount++;
 					break;
-				case ETHNICITY_INDIO: 
+				case ETHNICITY_INDIO:
 					iEthnicityIndioCount++;
 					break;
-				case ETHNICITY_AFRICAN: 
+				case ETHNICITY_AFRICAN:
 					iEthnicityAfricanCount++;
 					break;
-				case ETHNICITY_MESTIZZO: 
+				case ETHNICITY_MESTIZZO:
 					iEthnicityMestizzoCount++;
 					break;
-				case ETHNICITY_MULATTO: 
+				case ETHNICITY_MULATTO:
 					iEthnicityMulattoCount++;
 					break;
 				default:
@@ -11665,16 +11684,16 @@ UnitClassTypes CvCity::bestGrowthUnitClass()
 
 			switch(eCitizenStatusCityPlot)
 			{
-				case CITIZEN_STATUS_FREE: 
+				case CITIZEN_STATUS_FREE:
 					iCitizenStatusFreeCount++;
 					break;
-				case CITIZEN_STATUS_INDENTURED: 
+				case CITIZEN_STATUS_INDENTURED:
 					iCitizenStatusIndenturedCount++;
 					break;
-				case CITIZEN_STATUS_ENSLAVED: 
+				case CITIZEN_STATUS_ENSLAVED:
 					iCitizenStatusEnslavedCount++;
 					break;
-				case CITIZEN_STATUS_ELITE: 
+				case CITIZEN_STATUS_ELITE:
 					iCitizenStatusEliteCount++;
 					break;
 				default:
@@ -11774,16 +11793,16 @@ UnitClassTypes CvCity::bestGrowthUnitClass()
 		case ETHNICITY_EUROPEAN:
 			switch(eBestCitizenStatus)
 			{
-				case CITIZEN_STATUS_FREE: 
+				case CITIZEN_STATUS_FREE:
 					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_FREE;
 					break;
-				case CITIZEN_STATUS_INDENTURED: 
+				case CITIZEN_STATUS_INDENTURED:
 					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_INDENTURED;
 					break;
 				case CITIZEN_STATUS_ENSLAVED:
 					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_ENSLAVED;
 					break;
-				case CITIZEN_STATUS_ELITE: 
+				case CITIZEN_STATUS_ELITE:
 					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_ELITE;
 					break;
 				default:
@@ -11791,19 +11810,19 @@ UnitClassTypes CvCity::bestGrowthUnitClass()
 					break;
 			}
 			break;
-		case ETHNICITY_INDIO: 
+		case ETHNICITY_INDIO:
 			switch(eBestCitizenStatus)
 			{
-				case CITIZEN_STATUS_FREE: 
+				case CITIZEN_STATUS_FREE:
 					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_INDIO_FREE;
 					break;
-				case CITIZEN_STATUS_INDENTURED: 
+				case CITIZEN_STATUS_INDENTURED:
 					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_INDIO_INDENTURED;
 					break;
 				case CITIZEN_STATUS_ENSLAVED:
 					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_INDIO_ENSLAVED;
 					break;
-				case CITIZEN_STATUS_ELITE: 
+				case CITIZEN_STATUS_ELITE:
 					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_INDIO_ELITE;
 					break;
 				default:
@@ -11814,16 +11833,16 @@ UnitClassTypes CvCity::bestGrowthUnitClass()
 		case ETHNICITY_AFRICAN:
 			switch(eBestCitizenStatus)
 			{
-				case CITIZEN_STATUS_FREE: 
+				case CITIZEN_STATUS_FREE:
 					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_AFRICAN_FREE;
 					break;
-				case CITIZEN_STATUS_INDENTURED: 
+				case CITIZEN_STATUS_INDENTURED:
 					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_AFRICAN_INDENTURED;
 					break;
 				case CITIZEN_STATUS_ENSLAVED:
 					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_AFRICAN_ENSLAVED;
 					break;
-				case CITIZEN_STATUS_ELITE: 
+				case CITIZEN_STATUS_ELITE:
 					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_AFRICAN_ELITE;
 					break;
 				default:
@@ -11834,16 +11853,16 @@ UnitClassTypes CvCity::bestGrowthUnitClass()
 		case ETHNICITY_MESTIZZO:
 			switch(eBestCitizenStatus)
 			{
-				case CITIZEN_STATUS_FREE: 
+				case CITIZEN_STATUS_FREE:
 					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MESTIZZO_FREE;
 					break;
-				case CITIZEN_STATUS_INDENTURED: 
+				case CITIZEN_STATUS_INDENTURED:
 					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MESTIZZO_INDENTURED;
 					break;
 				case CITIZEN_STATUS_ENSLAVED:
 					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MESTIZZO_ENSLAVED;
 					break;
-				case CITIZEN_STATUS_ELITE: 
+				case CITIZEN_STATUS_ELITE:
 					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MESTIZZO_ELITE;
 					break;
 				default:
@@ -11854,16 +11873,16 @@ UnitClassTypes CvCity::bestGrowthUnitClass()
 		case ETHNICITY_MULATTO:
 			switch(eBestCitizenStatus)
 			{
-				case CITIZEN_STATUS_FREE: 
+				case CITIZEN_STATUS_FREE:
 					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MULATTO_FREE;
 					break;
-				case CITIZEN_STATUS_INDENTURED: 
+				case CITIZEN_STATUS_INDENTURED:
 					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MULATTO_INDENTURED;
 					break;
 				case CITIZEN_STATUS_ENSLAVED:
 					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MULATTO_ENSLAVED;
 					break;
-				case CITIZEN_STATUS_ELITE: 
+				case CITIZEN_STATUS_ELITE:
 					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MULATTO_ELITE;
 					break;
 				default:
@@ -12010,7 +12029,7 @@ bool CvCity::canTradeAway(PlayerTypes eToPlayer) const
 }
 
 bool CvCity::educateStudent(int iUnitId, UnitTypes eUnit)
-{	
+{
 
 	CvUnit* pUnit = getPopulationUnitById(iUnitId);
 	if (pUnit == NULL)
@@ -12057,7 +12076,7 @@ bool CvCity::educateStudent(int iUnitId, UnitTypes eUnit)
 	if(eSchoolBuilding != NO_BUILDING)
 	{
 		CvWString szBuffer = gDLL->getText("TXT_KEY_MISC_STUDENT_GRADUATED", GC.getUnitInfo(eUnit).getTextKeyWide(), getNameKey(), GC.getBuildingInfo(eSchoolBuilding).getTextKeyWide());
-		gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREEXPANDS", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(YIELD_EDUCATION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+		gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CULTUREEXPANDS", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(YIELD_EDUCATION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
 	}
 
 	// Teacher List - start - Nightinggale
@@ -12122,7 +12141,7 @@ int CvCity::getSpecialistTuition(UnitTypes eUnit) const
         return -1;
 	}
 	/** NBMOD EDU **/
-	
+
 	int iBestWeight = m_em_iSpecialistWeights.getMax();
 	if (iBestWeight <= 0)
 	{
@@ -12152,16 +12171,16 @@ int CvCity::getSpecialistTuition(UnitTypes eUnit) const
 	{
 		iPrice *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
 		iPrice /= 100;
-		
+
 		if (!isHuman())
 		{
 			iPrice *= GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAITrainPercent();
 			iPrice /= 100;
 		}
-	
+
 		iPrice *= iBestWeight - m_em_iSpecialistWeights.get(eUnit);
 		iPrice /= iBestWeight;
-	} 
+	}
 	else
 	{
 		double fPrice = double(iPrice);
@@ -12200,7 +12219,7 @@ int CvCity::getSpecialistTuition(UnitTypes eUnit) const
 			iPrice = 0;
 		}
 	}
-	
+
 	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
 	{
 		TraitTypes eTrait = (TraitTypes) iTrait;
@@ -12257,7 +12276,7 @@ void CvCity::addExport(YieldTypes eYield, bool bUpdateRoutes)
 						}
 					}
 				}
-				
+
 				if (kRoutePlayer.isYieldEuropeTradable(eYield))
 				{
 					// TAC - AI Economy - koma13 - START
@@ -12550,7 +12569,7 @@ int CvCity::getMaintainLevel(YieldTypes eYield) const
 void CvCity::setImportsLimit(YieldTypes eYield, int iValue)
 {
 	if (getImportsLimit(eYield) != iValue)
-	{		
+	{
 		m_em_iTradeMaxThreshold.set(eYield, iValue);
 		if (getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
 		{
@@ -12561,7 +12580,7 @@ void CvCity::setImportsLimit(YieldTypes eYield, int iValue)
 
 // Note: AI code should use the getMaxImportAmount wrapper rather than calling this function directly
 int CvCity::getImportsLimit(YieldTypes eYield) const
-{		
+{
 	return m_em_iTradeMaxThreshold.get(eYield);
 }
 
@@ -12623,7 +12642,7 @@ void CvCity::checkImportsMaintain(YieldTypes eYield, bool bUpdateScreen)
 		FAssert(!isAutoImportStopped(eYield));
 		return;
 	}
-	
+
 	FAssertMsg(isImport(eYield), "Feeder service is active without import enabled");
 
 	int iMaintainLevel = getAutoMaintainThreshold(eYield);
@@ -12756,7 +12775,7 @@ void CvCity::handleAutoTraderouteSetup(bool bReset, bool bImportAll, bool bAutoE
 				bool bAutoExport     = bAutoExportAll || isAutoExport(eYield);
 				int iMaintainLevel   = getMaintainLevel(eYield);
 				int iImportLimitLevel= getImportsLimit(eYield);
-		
+
 				int iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
 				iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
 
@@ -12801,8 +12820,8 @@ bool CvCity::isHasSpecialBuilding(int iValue) const
 
 // TAC - LbD - Ray - START
 
-bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int pre_rounds, int l_level, int chance_increase_expert_from_teacher, int pre_rounds_expert_decrease_from_teacher) 
-{	
+bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int pre_rounds, int l_level, int chance_increase_expert_from_teacher, int pre_rounds_expert_decrease_from_teacher)
+{
 	// get data from Unit
 	int workedRounds = convUnit->getLbDrounds();
 	ProfessionTypes lastProfession = convUnit->getLastLbDProfession();
@@ -12812,7 +12831,7 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 	int workedRoundsBefore = convUnit->getLbDroundsBefore();
 	ProfessionTypes lastProfessionBefore = convUnit->getLastLbDProfessionBefore();
 	// WTP, ray, saving 1 more Profession for Fisher Issue - END
-	
+
 	// WTP, ray, teacher addon for LbD - START
 	// The Expert we might convert to later and also valid teachers
 	int expert = GC.getProfessionInfo(currentProfession).LbD_getExpert();
@@ -12851,7 +12870,7 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 			{
 				//WTP, fix for LbD and Multiple Professions per Building / same Expert for Multiple Professions
 				convUnit->setLastLbDProfession(currentProfession);
-			
+
 				bool bSameExpert = lastProfession != NO_PROFESSION && (expert == GC.getProfessionInfo(lastProfession).LbD_getExpert());
 				//the Profession changes to another one with different Expert - thus we reset
 				if(!bSameExpert)
@@ -12871,7 +12890,7 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 					//convUnit->setLbDroundsBefore(workedRounds + 1);
 				}
 			}
-		
+
 			// WTP, ray, saving 1 more Profession for Fisher Issue - START
 			// otherwise current Profession is the Profession before: in this case we need to restore old data and switch
 			else
@@ -12888,10 +12907,10 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 			}
 			// WTP, ray, saving 1 more Profession for Fisher Issue - END
 		}
-		
+
 		// here little cheat for AI to cope with feature
 		// profession change does not reset worked rounds
-		else 
+		else
 		{
 			//set the Profession of course
 			convUnit->setLastLbDProfession(currentProfession);
@@ -12901,7 +12920,7 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 	}
 
 	// it is the same Profession
-	else 
+	else
 	{
 		//workedRounds++;
 		convUnit->setLbDrounds(workedRounds + 1);
@@ -12911,7 +12930,7 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 	{
 		return false;
 	}
-	
+
 	// do not use feature if City Population = 1, because might destroy city
 	if (getPopulation() == 1)
 	{
@@ -12919,24 +12938,24 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 	}
 
 	int calculatedChance = (base + (workedRounds - pre_rounds) * increase / l_level);
-	
+
 	if(!isHuman())
-	{	
+	{
 		calculatedChance = calculatedChance * ki_modifier / 100;
 	}
-	
+
 	calculatedChance = calculatedChance * GET_PLAYER(getOwnerINLINE()).getLearningByDoingModifier() / 100; // CivEffects - Nightinggale
 
 	//ray Multiplayer Random Fix
 	//int randomValue = rand() % 1000 + 1;
 	int randomValue = GC.getGameINLINE().getSorenRandNum(1000, "LbD Expert City");
-	
+
 	// no Success if randomValue larger calculatedChance
 	if (randomValue > calculatedChance)
 	{
 		return false;
 	}
-		
+
 	FAssert(expertUnitType != NO_UNIT);
 	//ray16
 	CvUnit* expertUnit = GET_PLAYER(getOwnerINLINE()).initUnit(expertUnitType, NO_PROFESSION, getX_INLINE(), getY_INLINE(), convUnit->AI_getUnitAIType());
@@ -12947,12 +12966,12 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 	//AddMessage
 	CvWString szBuffer = gDLL->getText("TXT_KEY_LBD_EXPERT_IN_CITY", getNameKey(), expertUnit->getUnitInfo().getDescription());
 	//Ende ray16
-	gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, expertUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+	gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, expertUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
 
 	return true;
 }
 
-bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_rounds, int mod_crim, int mod_serv, int l_level) 
+bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_rounds, int mod_crim, int mod_serv, int l_level)
 {
 	// get data from Unit
 	int workedRounds = convUnit->getLbDrounds();
@@ -12966,7 +12985,7 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 
 	//workedRounds++;
 	convUnit->setLbDrounds(workedRounds + 1);
-	
+
 	// do not use feature if City Population = 1, because might destroy city
 	if (getPopulation() == 1)
 	{
@@ -12987,7 +13006,7 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 	// store the UnitClass and modifier
 	UnitTypes GeneratedUnitType;
 	int mod;
-	
+
 	// convert Unit to Free Unit (Colonist, Freed Slave or Converted Native
 
 	// if CRIMIAL general Default Pop-Unit
@@ -13041,13 +13060,13 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 	//ray Multiplayer Random Fix
 	//int randomValue = rand() % 1000 + 1;
 	int randomValue = GC.getGameINLINE().getSorenRandNum(1000, "LbD Free City");
-	
+
 	// no Success if randomValue larger calculatedChance
 	if (randomValue > calculatedChance)
 	{
 		return false;
 	}
-	
+
 	// spawn the Unit
 	//ray16
 	CvUnit* GeneratedUnit = GET_PLAYER(getOwnerINLINE()).initUnit(GeneratedUnitType, NO_PROFESSION, getX_INLINE(), getY_INLINE(), convUnit->AI_getUnitAIType());
@@ -13057,13 +13076,13 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 	// AddMessage
 	CvWString szBuffer = gDLL->getText("TXT_KEY_LBD_FREE_IN_CITY", getNameKey());
 	//Ende ray16
-	gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GeneratedUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+	gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GeneratedUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
 
 	return true;
 }
 
-bool CvCity::LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_serv) 
-{	
+bool CvCity::LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_serv)
+{
 	//Feature deactivated for KI
 	if (!isHuman()) {
 		return false;
@@ -13080,7 +13099,7 @@ bool CvCity::LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_se
 
 	//default case is servant
 	int mod = mod_serv;
-	
+
 	// if criminal
 	if (modcase == 2)
 	{
@@ -13114,7 +13133,7 @@ bool CvCity::LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_se
 	//ray Multiplayer Random Fix
 	//int randomValue = rand() % 1000 + 1;
 	int randomValue = GC.getGameINLINE().getSorenRandNum(1000, "LbD Escape City");
-	
+
 	// no Success if randomValue larger calculatedChance
 	if (randomValue > calculatedChance)
 	{
@@ -13129,19 +13148,19 @@ bool CvCity::LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_se
 	//Unit is then simply destroyed
 	bool remove = removePopulationUnit(convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
 	convUnit->kill(false);
-	
+
 	// AddMessage
 	//ray16
 	CvWString szBuffer = gDLL->getText("TXT_KEY_LBD_ESCAPE", getNameKey());
 	//Ende ray16
-	gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, buttonStringForMessage, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+	gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, buttonStringForMessage, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
 
 	return true;
 }
 
 // WTP, ray, LbD Slaves Revolt and Free - START
-bool CvCity::LbD_try_revolt(CvUnit* convUnit, int base, int mod_crim, int mod_slave) 
-{	
+bool CvCity::LbD_try_revolt(CvUnit* convUnit, int base, int mod_crim, int mod_slave)
+{
 	//Feature deactivated for KI
 	if (!isHuman()) {
 		return false;
@@ -13159,7 +13178,7 @@ bool CvCity::LbD_try_revolt(CvUnit* convUnit, int base, int mod_crim, int mod_sl
 	//default case is Criminal - also if we ever have something else
 	int mod;
 	UnitTypes GeneratedUnitType;
-	
+
 	// if African Slave
 	if (modcase == GC.getDefineINT("UNITCLASS_AFRICAN_SLAVE"))
 	{
@@ -13207,7 +13226,7 @@ bool CvCity::LbD_try_revolt(CvUnit* convUnit, int base, int mod_crim, int mod_sl
 
 
 	int randomValue = GC.getGameINLINE().getSorenRandNum(1000, "LbD Revolt Slave");
-	
+
 	// no Success if randomValue larger calculatedChance
 	if (randomValue > calculatedChance)
 	{
@@ -13227,19 +13246,19 @@ bool CvCity::LbD_try_revolt(CvUnit* convUnit, int base, int mod_crim, int mod_sl
 	//Unit is then simply destroyed
 	bool remove = removePopulationUnit(convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
 	convUnit->kill(false);
-	
+
 	// AddMessage
 	CvWString szBuffer = gDLL->getText("TXT_KEY_LBD_REVOLT", getNameKey());
-	gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, buttonStringForMessage, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+	gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, buttonStringForMessage, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
 
 	return true;
 }
 // WTP, ray, LbD Slaves Revolt and Free - END
 
 void CvCity::doLbD()
-{	
+{
 	//getting global values for formula
-	int base_chance_expert = GC.getLBD_BASE_CHANCE_EXPERT();	
+	int base_chance_expert = GC.getLBD_BASE_CHANCE_EXPERT();
 	int chance_increase_expert = GC.getLBD_CHANCE_INCREASE_EXPERT();
 	int pre_rounds_expert = GC.getLBD_PRE_ROUNDS_EXPERT();
 
@@ -13310,12 +13329,12 @@ void CvCity::doLbD()
 		bool lbd_free_successful = false;
 		bool lbd_escape_successful = false;
 		bool lbd_revolt_successful = false; // WTP, ray, LbD Slaves Revolt and Free - START
-		
+
 
 		// only do something for this unit if the profession does use LbD
 		if (pLoopUnit->getProfession()!= NO_PROFESSION && GC.getProfessionInfo(pLoopUnit->getProfession()).LbD_isUsed())
 		{
-			
+
 			//get LearnLevel of profession
 			int learn_level = GC.getProfessionInfo(pLoopUnit->getProfession()).LbD_getLearnLevel();
 			// just for safety, catch possible XML mistakes which might break calculation
@@ -13323,7 +13342,7 @@ void CvCity::doLbD()
 			{
 				learn_level = 1;
 			}
-	
+
 			// try to become expert if poosible
 			if(pLoopUnit->getUnitInfo().LbD_canBecomeExpert())
 			{
@@ -13353,7 +13372,7 @@ void CvCity::doLbD()
 			// WTP, ray, LbD Slaves Revolt and Free - END
 
 		}
-		
+
 	}
 
 }
@@ -13386,7 +13405,7 @@ void CvCity::doExtraCityDefenseAttacks()
 		{
 			pLoopUnit = ::getUnit(pUnitNode->m_data);
 			pUnitNode = plot()->nextUnitNode(pUnitNode);
-		
+
 			bool isCannonType = (pLoopUnit->bombardRate() > 0 && pLoopUnit->getDomainType() == DOMAIN_LAND);
 			if (isCannonType && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
 			{
@@ -13483,32 +13502,32 @@ void CvCity::doExtraCityDefenseAttacks()
 												pBombUnit->changeExperience(iExperience, pLoopUnit2->maxXPValue(), true, plot()->getOwnerINLINE() == pBombUnit->getOwnerINLINE(), true);
 
 												szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_SUNK_GOOD", getNameKey());
-												gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+												gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
 
 												szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_SUNK_BAD", getNameKey());
-												gDLL->getInterfaceIFace()->addMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pLoopUnit2->getX_INLINE(), pLoopUnit2->getY_INLINE(), true, true);
+												gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 											}
 											else
 											{
 												szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_HIT_GOOD", getNameKey());
-												gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+												gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
 
 												szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_HIT_BAD", getNameKey());
-												gDLL->getInterfaceIFace()->addMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pLoopUnit2->getX_INLINE(), pLoopUnit2->getY_INLINE(), true, true);
+												gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 											}
 										}
 										else
 										{
 											szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_MISS_BAD", getNameKey());
-											gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+											gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 
 											szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_MISS_GOOD", getNameKey());
-											gDLL->getInterfaceIFace()->addMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pLoopUnit2->getX_INLINE(), pLoopUnit2->getY_INLINE(), true, true);
+											gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
 										}
 									}
 									//case water end
 
-									//case enemy is on land 
+									//case enemy is on land
 									if (!pAdjacentPlot->isWater())
 									{
 										if (iDamage > 0)
@@ -13522,27 +13541,27 @@ void CvCity::doExtraCityDefenseAttacks()
 												pBombUnit->changeExperience(iExperience, pLoopUnit2->maxXPValue(), true, plot()->getOwnerINLINE() == pBombUnit->getOwnerINLINE(), true);
 
 												szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_DESTROYED_GOOD", getNameKey());
-												gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+												gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
 
 												szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_DESTROYED_BAD", getNameKey());
-												gDLL->getInterfaceIFace()->addMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pLoopUnit2->getX_INLINE(), pLoopUnit2->getY_INLINE(), true, true);
+												gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 											}
 											else
 											{
 												szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_HIT_LAND_GOOD", getNameKey(), iDamage);
-												gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+												gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
 
 												szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_HIT_LAND_BAD", getNameKey(), iDamage);
-												gDLL->getInterfaceIFace()->addMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pLoopUnit2->getX_INLINE(), pLoopUnit2->getY_INLINE(), true, true);
+												gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 											}
 										}
 										else
 										{
 											szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_MISS_LAND_BAD", getNameKey());
-											gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+											gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 
 											szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_MISS_LAND_GOOD", getNameKey());
-											gDLL->getInterfaceIFace()->addMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pLoopUnit2->getX_INLINE(), pLoopUnit2->getY_INLINE(), true, true);
+											gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
 										}
 									}
 									//case land end
@@ -13618,7 +13637,7 @@ void CvCity::doExtraCityDefenseAttacks()
 						pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
 						//we do not fire on Water here
 						if (pAdjacentPlot != NULL && !pAdjacentPlot->isWater())
-						{	
+						{
 							pUnitNode2 = pAdjacentPlot->headUnitNode();
 							while (pUnitNode2)
 							{
@@ -13642,9 +13661,9 @@ void CvCity::doExtraCityDefenseAttacks()
 										{
 											iDefenderCombatMod = 1;
 										}
-										
+
 										iDamage = iDamage / iDefenderCombatMod;
-										
+
 										//checking Terrain
 										int iTerrainDamageMod = 0;
 										if (pAdjacentPlot->isWater())
@@ -13673,7 +13692,7 @@ void CvCity::doExtraCityDefenseAttacks()
 										pLoopUnit2->changeDamage(iDamage, pDefenseUnit);
 									}
 
-									//case enemy is on land 
+									//case enemy is on land
 									if (!pAdjacentPlot->isWater())
 									{
 										if (iDamage > 0)
@@ -13687,27 +13706,27 @@ void CvCity::doExtraCityDefenseAttacks()
 												pDefenseUnit->changeExperience(iExperience, pLoopUnit2->maxXPValue(), true, plot()->getOwnerINLINE() == pDefenseUnit->getOwnerINLINE(), true);
 
 												szBuffer = gDLL->getText("TXT_KEY_FORTDEFENSE_DESTROYED_GOOD", getNameKey());
-												gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+												gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
 
 												szBuffer = gDLL->getText("TXT_KEY_FORTDEFENSE_DESTROYED_BAD", getNameKey());
-												gDLL->getInterfaceIFace()->addMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pLoopUnit2->getX_INLINE(), pLoopUnit2->getY_INLINE(), true, true);
+												gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 											}
 											else
 											{
 												szBuffer = gDLL->getText("TXT_KEY_FORTDEFENSE_HIT_LAND_GOOD", getNameKey(), iDamage);
-												gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+												gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"),true, true);
 
 												szBuffer = gDLL->getText("TXT_KEY_FORTDEFENSE_HIT_LAND_BAD", getNameKey(), iDamage);
-												gDLL->getInterfaceIFace()->addMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pLoopUnit2->getX_INLINE(), pLoopUnit2->getY_INLINE(), true, true);
+												gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 											}
 										}
 										else
 										{
 											szBuffer = gDLL->getText("TXT_KEY_FORTDEFENSE_MISS_LAND_BAD", getNameKey());
-											gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+											gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 
 											szBuffer = gDLL->getText("TXT_KEY_FORTDEFENSE_MISS_LAND_GOOD", getNameKey());
-											gDLL->getInterfaceIFace()->addMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pLoopUnit2->getX_INLINE(), pLoopUnit2->getY_INLINE(), true, true);
+											gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
 										}
 									}
 									//case land end
@@ -13790,7 +13809,7 @@ void CvCity::getYieldDemands(YieldCargoArray<int> &aYields) const
 
 	// Add building demands
 	aYields.copy(getBuildingYieldDemands());
-	
+
 	// comment by ray: this here is just citizens
 	// add unit demands
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
@@ -14000,7 +14019,7 @@ void CvCity::createFleeingUnit(UnitTypes eUnit, bool bDefautAI)
 			if (pLoopPlot->area() != area())
 			{
 				iValue *= 3;
-			}	
+			}
 			if (iValue < iBestValue)
 			{
 				iBestValue = iValue;
@@ -14040,7 +14059,7 @@ void CvCity::doEntertainmentBuildings()
 		{
 			CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
 			if (kBuilding.getEntertainmentGoldModifier() > factorFromBuildingLevel)
-			{	
+			{
 				factorFromBuildingLevel = kBuilding.getEntertainmentGoldModifier();
 				highestLevelEntertainmentBuilding = eBuilding;
 			}
@@ -14054,7 +14073,7 @@ void CvCity::doEntertainmentBuildings()
 	{
 		GET_PLAYER(getOwnerINLINE()).changeGold(iGoldthroughCulture);
 		CvWString szBuffer = gDLL->getText("TXT_KEY_GOLD_BY_ENTERTAINMENT", GC.getBuildingInfo(highestLevelEntertainmentBuilding).getDescription(), getNameKey(), iGoldthroughCulture);
-		gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+		gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
 	}
 }
 // R&R, ray, Entertainment Buildings - END
@@ -14084,7 +14103,7 @@ int CvCity::getSlaveRevoltReductionBonus() const
 			iSlaveRevoltReductionBonus += pLoopUnit->getSlaveRevoltReductionBonus();
 		}
 	}
-	
+
 	if (iSlaveRevoltReductionBonus > iMaxSlaveRevoltReductionBonusPerCity)
 	{
 		iSlaveRevoltReductionBonus = iMaxSlaveRevoltReductionBonusPerCity;
@@ -14096,15 +14115,23 @@ int CvCity::getSlaveRevoltReductionBonus() const
 // increased Production of Slave workers
 int CvCity::getSlaveWorkerProductionBonus() const
 {
+	return m_iSlaveWorkerProductionBonus;
+}
+//WTP, ray, Slave Hunter and Slave Master - END
+
+// iBonus is set when a unit is about to enter the city since the unit will not be
+// in the city plot yet
+void CvCity::updateSlaveWorkerProductionBonus(int iBonus)
+{
 	if (isNative())
 	{
-		return 0;
+		return;
 	}
 
-	int iSlaveWorkerProductionBonus = 0;
-	int iMaxSlaveWorkerProductionBonusPerCity = GC.getMAX_SLAVE_WORKER_PRODUCTION_BONUS_PER_CITY(); 
-	
-	std::vector<CvUnit*> aUnits;
+	int iSlaveWorkerProductionBonus = iBonus;
+	int iMaxSlaveWorkerProductionBonusPerCity = GC.getMAX_SLAVE_WORKER_PRODUCTION_BONUS_PER_CITY();
+
+	//std::vector<CvUnit*> aUnits;
 	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
 	while (pUnitNode)
 	{
@@ -14116,13 +14143,13 @@ int CvCity::getSlaveWorkerProductionBonus() const
 			iSlaveWorkerProductionBonus += pLoopUnit->getSlaveWorkerProductionBonus();
 		}
 	}
-	
+
 	if (iSlaveWorkerProductionBonus > iMaxSlaveWorkerProductionBonusPerCity)
 	{
 		iSlaveWorkerProductionBonus = iMaxSlaveWorkerProductionBonusPerCity;
 	}
 
-	return iSlaveWorkerProductionBonus;
+	m_iSlaveWorkerProductionBonus = iSlaveWorkerProductionBonus;
 }
 //WTP, ray, Slave Hunter and Slave Master - END
 

@@ -3,6 +3,8 @@
 #ifndef CIV4_PLOT_FUNCTIONS_H
 #define CIV4_PLOT_FUNCTIONS_H
 
+
+
 //
 // add helper classes for CvPlot
 //
@@ -40,7 +42,7 @@ public:
 
 	void set(TeamTypes eTeam, ImprovementTypes eImprovement                   );
 	void set(TeamTypes eTeam,                                RouteTypes eRoute);
-	void set(TeamTypes eTeam, ImprovementTypes eImprovement, RouteTypes eRoute);	
+	void set(TeamTypes eTeam, ImprovementTypes eImprovement, RouteTypes eRoute);
 
 	bool isAllocated() const;
 	void reset();
@@ -112,6 +114,165 @@ inline void RevealedPlotDataArray::set(TeamTypes eTeam, ImprovementTypes eImprov
 inline bool RevealedPlotDataArray::isAllocated() const
 {
 	return m_pArray != NULL;
+}
+
+
+class DirCoordinates
+{
+public:
+	DirCoordinates(DirectionTypes direction);
+	~DirCoordinates();
+
+	int x() const
+	{
+		return m_iX;
+	}
+	int y() const
+	{
+		return m_iY;
+	}
+
+protected:
+	const int m_iX;
+	const int m_iY;
+};
+
+inline DirCoordinates::DirCoordinates(DirectionTypes direction) :
+	m_iX(GC.getPlotDirectionX()[direction]),
+	m_iY(GC.getPlotDirectionY()[direction])
+{
+}
+
+inline DirCoordinates::~DirCoordinates()
+{
+}
+
+class RelCoordinates
+{
+public:
+	RelCoordinates(int iX, int iY) :
+	m_iX(iX),
+	m_iY(iY)
+	{
+	}
+	~RelCoordinates()
+	{
+	}
+
+	int x() const
+	{
+		return m_iX;
+	}
+	int y() const
+	{
+		return m_iY;
+	}
+
+protected:
+	const int m_iX;
+	const int m_iY;
+};
+
+class Coordinates
+{
+public:
+	Coordinates(int iX = 0, int iY = 0)
+	{
+		set(iX, iY);
+	}
+	~Coordinates()
+	{
+	}
+
+	inline void set(int iX = 0, int iY = 0);
+	inline void resetInvalid();
+
+	int x() const
+	{
+		return m_iX;
+	}
+	int y() const
+	{
+		return m_iY;
+	}
+
+	inline Coordinates neighbour(DirectionTypes direction) const;
+	inline CvPlot* Coordinates::neighbourPlot(DirectionTypes direction) const;
+	inline bool hasNeighbour(DirectionTypes direction) const;
+
+	CvPlot* plot() const;
+	int plotNum() const;
+	inline bool isOnMap() const;
+	inline bool isInvalidPlotCoord() const;
+
+	static Coordinates invalidCoord();
+	static Coordinates nullCoord();
+
+protected:
+	int m_iX;
+	int m_iY;
+};
+
+inline bool Coordinates::isInvalidPlotCoord() const
+{
+	return (m_iX == INVALID_PLOT_COORD && m_iY == INVALID_PLOT_COORD);
+}
+
+inline bool operator==(const Coordinates &l, const Coordinates &r)
+{
+	FAssert ((l.isOnMap() || l.isInvalidPlotCoord()) && (r.isOnMap() || r.isInvalidPlotCoord()));
+	return (l.x()==r.x() && l.y()==r.y());
+}
+
+inline bool operator!=(const Coordinates &l, const Coordinates &r)
+{
+	FAssert ((l.isOnMap() || l.isInvalidPlotCoord()) && (r.isOnMap() || r.isInvalidPlotCoord()));
+	return ((l.x()!=r.x() || l.y()!=r.y()));
+}
+
+inline Coordinates operator+(const Coordinates &l, const DirCoordinates &r)
+{
+	FAssert (l.isOnMap());
+	return Coordinates(l.x()+r.x(), l.y()+r.y());
+}
+
+inline Coordinates operator+(const Coordinates &l, const RelCoordinates &r)
+{
+	FAssert (l.isOnMap());
+	FAssert (Coordinates(l.x()+r.x(), l.y()+r.y()).isOnMap()); // maybe that is not necessary
+	return Coordinates(l.x()+r.x(), l.y()+r.y());
+}
+
+inline void Coordinates::set(int iX, int iY)
+{
+	m_iX = iX;
+	m_iY = iY;
+}
+
+inline void Coordinates::resetInvalid()
+{
+	set(INVALID_PLOT_COORD, INVALID_PLOT_COORD);
+}
+
+inline Coordinates Coordinates::neighbour(DirectionTypes direction) const
+{
+	FAssert (isOnMap());
+	const Coordinates n = *this + DirCoordinates(direction);
+	return n;
+}
+
+inline CvPlot* Coordinates::neighbourPlot(DirectionTypes direction) const
+{
+	FAssert (isOnMap());
+	const Coordinates n = *this + DirCoordinates(direction);
+	return n.plot();
+}
+
+inline bool Coordinates::hasNeighbour(DirectionTypes direction) const
+{
+	FAssert (isOnMap());
+	Coordinates n = *this + DirCoordinates(direction);
+	return n.isOnMap();
 }
 
 #endif

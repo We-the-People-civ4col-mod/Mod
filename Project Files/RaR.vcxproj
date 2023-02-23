@@ -75,6 +75,7 @@
     <ClCompile Include="DLLSources\BetterBTSAI.cpp" />
     <ClCompile Include="DLLSources\CvDealSavegame.cpp" />
     <ClCompile Include="DLLSources\CvDiploParametersSavegames.cpp" />
+    <ClCompile Include="DLLSources\CvDLLInterfaceIFaceBase.cpp" />
     <ClCompile Include="DLLSources\CvGameAISavegame.cpp" />
     <ClCompile Include="DLLSources\CvGameSavegame.cpp" />
     <ClCompile Include="DLLSources\CvPopupInfoSavegame.cpp" />

@@ -48,3 +48,7 @@ Otherwise the mod will not work!
 ### Internals
 * Ported and adapted Karadoc's pathfinder (originally written for the Civ4 mod K-Mod)  
 * Parallelized the job assigner subsystem and the K-mod pathfinder
+* A new class Coordinates to be used instead of x, y parameters
+* the fixes from optimizations2
+* several changes of variables from int to the more specifix XYZTypes
+* some other changes that were convenient to write during the merge of branches coordinate_class/optimizations2 (I did not make separate commits because the merge did not complete successfully without them)

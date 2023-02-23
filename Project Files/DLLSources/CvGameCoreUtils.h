@@ -152,6 +152,20 @@ inline int plotDistance(int iX1, int iY1, int iX2, int iY2)
 	return (std::max(iDX, iDY) + (std::min(iDX, iDY) / 2));
 }
 
+inline int plotDistance(Coordinates c1, Coordinates c2)
+{
+	const int iDX = xDistance(c1.x(), c2.x());
+	const int iDY = yDistance(c1.y(), c2.y());
+
+	return (std::max(iDX, iDY) + (std::min(iDX, iDY) / 2));
+}
+
+inline int plotDistance(CvPlot *p1, CvPlot *p2)
+{
+	return plotDistance(p1->coord(), p2->coord());
+}
+
+
 // 3 | 3 | 3 | 3 | 3 | 3 | 3
 // -------------------------
 // 3 | 2 | 2 | 2 | 2 | 2 | 3
@@ -170,6 +184,16 @@ inline int plotDistance(int iX1, int iY1, int iX2, int iY2)
 inline int stepDistance(int iX1, int iY1, int iX2, int iY2)
 {
 	return std::max(xDistance(iX1, iX2), yDistance(iY1, iY2));
+}
+
+inline int stepDistance(const Coordinates c1, const Coordinates c2)
+{
+	return stepDistance(c1.x(), c1.y(), c2.x(), c2.y());
+}
+
+inline int stepDistance(const CvPlot *p1, const CvPlot *p2)
+{
+	return stepDistance(p1->coord(), p2->coord());
 }
 
 inline CvPlot* plotDirection(int iX, int iY, DirectionTypes eDirection)
@@ -192,6 +216,11 @@ inline CvPlot* plotCardinalDirection(int iX, int iY, CardinalDirectionTypes eCar
 inline CvPlot* plotXY(int iX, int iY, int iDX, int iDY)
 {
 	return GC.getMapINLINE().plotINLINE((iX + iDX), (iY + iDY));
+}
+
+inline CvPlot* plotXY(Coordinates baseCoord, RelCoordinates relCoord)
+{
+	return (baseCoord + relCoord).plot();
 }
 
 inline DirectionTypes directionXY(int iDX, int iDY)
@@ -351,8 +380,8 @@ class CvShouldMoveBefore
 public:
 	CvShouldMoveBefore(PlayerTypes ePlayer) : m_ePlayer(ePlayer) {}
 
-	bool operator()(int iUnitIdA, int iUnitIdB) const 
-	{ 
+	bool operator()(int iUnitIdA, int iUnitIdB) const
+	{
 		return shouldMoveBefore(getUnit(IDInfo(m_ePlayer, iUnitIdA)), getUnit(IDInfo(m_ePlayer, iUnitIdB)));
 	}
 private:
@@ -364,8 +393,8 @@ class CvShouldUnitMove
 public:
 	CvShouldUnitMove(PlayerTypes ePlayer) : m_ePlayer(ePlayer) {}
 
-	bool operator()(int iUnitId) const 
-	{ 
+	bool operator()(int iUnitId) const
+	{
 		return shouldUnitMove(getUnit(IDInfo(m_ePlayer, iUnitId)));
 	}
 private:

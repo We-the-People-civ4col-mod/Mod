@@ -36,7 +36,7 @@ CyPlot* CyPlayer::findStartingPlot(bool bRandomize)
 }
 CyCity* CyPlayer::initCity(int x, int y)
 {
-	return m_pPlayer ? new CyCity(m_pPlayer->initCity(x, y, true)) : NULL;
+	return m_pPlayer ? new CyCity(m_pPlayer->initCity(Coordinates(x, y), true)) : NULL;
 }
 void CyPlayer::acquireCity(CyCity* pCity, bool bConquest, bool bTrade)
 {
@@ -227,12 +227,12 @@ void CyPlayer::doGoody(CyPlot* pPlot, CyUnit* pUnit)
 }
 bool CyPlayer::canFound(int iX, int iY)
 {
-	return m_pPlayer ? m_pPlayer->canFound(iX, iY) : false;
+	return m_pPlayer ? m_pPlayer->canFound(Coordinates(iX, iY)) : false;
 }
 void CyPlayer::found(int x, int y)
 {
 	if (m_pPlayer)
-		m_pPlayer->found(x,y);
+		m_pPlayer->found(Coordinates(x,y));
 }
 bool CyPlayer::canTrain(int /*UnitTypes*/ eUnit, bool bContinue, bool bTestVisible)
 {
@@ -401,7 +401,7 @@ void CyPlayer::createGreatGeneral(int eGreatGeneralUnit, bool bIncrementExperien
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->createGreatGeneral((UnitTypes)eGreatGeneralUnit, bIncrementExperience, iX, iY);
+		m_pPlayer->createGreatGeneral((UnitTypes)eGreatGeneralUnit, bIncrementExperience, Coordinates(iX, iY));
 	}
 }
 int CyPlayer::getGreatGeneralsCreated()
@@ -418,7 +418,7 @@ void CyPlayer::createGreatAdmiral(int eGreatAdmiralUnit, bool bIncrementExperien
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->createGreatAdmiral((UnitTypes)eGreatAdmiralUnit, bIncrementExperience, iX, iY);
+		m_pPlayer->createGreatAdmiral((UnitTypes)eGreatAdmiralUnit, bIncrementExperience, Coordinates(iX, iY));
 	}
 }
 int CyPlayer::getGreatAdmiralsCreated()
@@ -436,14 +436,14 @@ void CyPlayer::createBraveLieutenant(int eBraveLieutenantUnit, int iX, int iY)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->createBraveLieutenant((UnitTypes)eBraveLieutenantUnit, iX, iY);
+		m_pPlayer->createBraveLieutenant((UnitTypes)eBraveLieutenantUnit, Coordinates(iX, iY));
 	}
 }
 void CyPlayer::createCapableCaptain(int eCapableCaptainUnit, int iX, int iY)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->createCapableCaptain((UnitTypes)eCapableCaptainUnit, iX, iY);
+		m_pPlayer->createCapableCaptain((UnitTypes)eCapableCaptainUnit, Coordinates(iX, iY));
 	}
 }
 // WTP, ray, Lieutenants and Captains - END
@@ -1207,7 +1207,7 @@ int CyPlayer::missionaryThreshold(int /*PlayerTypes*/ ePlayer) const
 }
 int CyPlayer::getMissionaryRateModifier() const
 {
-	return m_pPlayer ? m_pPlayer->getMissionaryRateModifier() : -1; 
+	return m_pPlayer ? m_pPlayer->getMissionaryRateModifier() : -1;
 }
 // R&R, Robert Surcouf, No More Variables Hidden game option END
 
@@ -1216,18 +1216,18 @@ void CyPlayer::cacheUsedShipData(int iUsedShipPrice, int iUsedShipClassType)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->cacheUsedShipData(iUsedShipPrice, iUsedShipClassType);
+		m_pPlayer->cacheUsedShipData(iUsedShipPrice, (UnitClassTypes)iUsedShipClassType);
 	}
 }
 
 int CyPlayer::getRandomUsedShipClassTypeID() const
 {
-	return m_pPlayer ? m_pPlayer->getRandomUsedShipClassTypeID() : -1; 
+	return m_pPlayer ? m_pPlayer->getRandomUsedShipClassTypeID() : -1;
 }
 
-int CyPlayer::getUsedShipPrice(int /*UnitClaseTypes*/ iUsedShipClassType) const
+int CyPlayer::getUsedShipPrice(int /*UnitClassTypes*/ iUsedShipClassType) const
 {
-	return m_pPlayer ? m_pPlayer->getUsedShipPrice(iUsedShipClassType) : -1; 
+	return m_pPlayer ? m_pPlayer->getUsedShipPrice((UnitClassTypes)iUsedShipClassType) : -1;
 }
 
 bool CyPlayer::isKingWillingToTradeUsedShips() const
@@ -1250,18 +1250,18 @@ void CyPlayer::cacheForeignImmigrantData(int iForeignImmigrantPrice, int iForeig
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->cacheForeignImmigrantData(iForeignImmigrantPrice, iForeignImmigrantClassType);
+		m_pPlayer->cacheForeignImmigrantData(iForeignImmigrantPrice, (UnitClassTypes)iForeignImmigrantClassType);
 	}
 }
 
 int CyPlayer::getRandomForeignImmigrantClassTypeID() const
 {
-	return m_pPlayer ? m_pPlayer->getRandomForeignImmigrantClassTypeID() : -1; 
+	return m_pPlayer ? m_pPlayer->getRandomForeignImmigrantClassTypeID() : -1;
 }
 
-int CyPlayer::getForeignImmigrantPrice(int /*UnitClaseTypes*/ iForeignImmigrantClassType, int iEuropeKingID) const
+int CyPlayer::getForeignImmigrantPrice(int /*UnitClassTypes*/ iForeignImmigrantClassType, int iEuropeKingID) const
 {
-	return m_pPlayer ? m_pPlayer->getForeignImmigrantPrice(iForeignImmigrantClassType, iEuropeKingID) : -1; 
+	return m_pPlayer ? m_pPlayer->getForeignImmigrantPrice((UnitClassTypes)iForeignImmigrantClassType, iEuropeKingID) : -1;
 }
 
 bool CyPlayer::isForeignKingWillingToTradeImmigrants(int iEuropeKingID) const
@@ -1281,7 +1281,7 @@ void CyPlayer::resetCounterForForeignImmigrantsDeals()
 // R&R, ray, Church Favours - START
 int CyPlayer::getChurchFavourPrice() const
 {
-	return m_pPlayer ? m_pPlayer->getChurchFavourPrice() : -1; 
+	return m_pPlayer ? m_pPlayer->getChurchFavourPrice() : -1;
 }
 // R&R, ray, Church Favours - END
 
@@ -1459,7 +1459,7 @@ int CyPlayer::getDocksNextUnit(int iIndex) const
 		}
 	}
 	return NO_UNIT;
-	
+
 }
 void CyPlayer::addRevolutionEuropeUnit(int /*UnitTypes*/ eUnit, int /*ProfessionTypes*/ eProfession)
 {
@@ -1756,6 +1756,3 @@ unsigned int CyPlayer::getNumUnitsOnDock() const
 {
 	return m_pPlayer ? m_pPlayer->CivEffect()->getNumUnitsOnDock() : 0;
 }
-
-
-

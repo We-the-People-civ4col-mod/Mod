@@ -13,6 +13,11 @@
 #include "CvTalkingHeadMessage.h"
 #include "CvTradeRouteGroup.h" //R&R mod, vetiarvind, trade groups
 
+#define LOCATION_FLAGS_NONE						0x0000
+#define LOCATION_FLAGS_COASTAL				0x0001
+#define LOCATION_FLAGS_DEEP_COASTAL		0x0002
+#define LOCATION_FLAGS_INLAND					0x0004
+
 class CvDiploParameters;
 class CvPlayerAI;
 class CvPlayerCivEffect;
@@ -133,25 +138,25 @@ public:
 	// R&R, ray, Church Favours - END
 
 	//WTP, ray Kings Used Ship - START
-	void cacheUsedShipData(int iUsedShipPrice, int iUsedShipClassType);
-	int getUsedShipPrice(int iUsedShipClassType);
-	int getRandomUsedShipClassTypeID();
+	void cacheUsedShipData(int iUsedShipPrice, UnitClassTypes iUsedShipClassType);
+	int getUsedShipPrice(UnitClassTypes iUsedShipClassType);
+	UnitClassTypes getRandomUsedShipClassTypeID();
 	bool isKingWillingToTradeUsedShips();
 	void decreaseCounterForUsedShipDeals();
 	void doAILogicforUsedShipDeals();
 	void resetCounterForUsedShipDeals();
-	void acquireUsedShip(int iUsedShipClassType, int iPrice);
+	void acquireUsedShip(UnitClassTypes iUsedShipClassType, int iPrice);
 	//WTP, ray Kings Used Ship - END
 
 	// WTP, ray, Foreign Kings, buy Immigrants - START
-	void cacheForeignImmigrantData(int iForeignImmigrantPrice, int iForeignImmigrantClassType);
-	int getForeignImmigrantPrice(int iForeignImmigrantClassType, int iKingID);
-	int getRandomForeignImmigrantClassTypeID();
+	void cacheForeignImmigrantData(int iForeignImmigrantPrice, UnitClassTypes iForeignImmigrantClassType);
+	int getForeignImmigrantPrice(UnitClassTypes iForeignImmigrantClassType, int iKingID);
+	UnitClassTypes getRandomForeignImmigrantClassTypeID();
 	bool isForeignKingWillingToTradeImmigrants(int iKingID);
 	void decreaseCounterForForeignKingImmigrantsDeals();
 	void doAILogicforForeignImmigrants();
 	void resetCounterForForeignImmigrantsDeals();
-	void acquireForeignImmigrant(int iForeignImmigrantClassType, int iPrice);
+	void acquireForeignImmigrant(UnitClassTypes iForeignImmigrantClassType, int iPrice);
 	// WTP, ray, Foreign Kings, buy Immigrants - START
 
 	// R&R, ray, Bargaining - Start
@@ -211,7 +216,7 @@ public:
 	int startingPlotDistanceFactor(CvPlot* pPlot, PlayerTypes ePlayer, int iRange) const;
 	int findStartingArea() const;
 	CvPlot* findStartingPlot(bool bRandomize = false);
-	CvCity* initCity(int iX, int iY, bool bBumpUnits);
+	CvCity* initCity(Coordinates initCoord, bool bBumpUnits);
 	void acquireCity(CvCity* pCity, bool bConquest, bool bTrade);
 	void killCities();
 	const CvWString getNewCityName() const;
@@ -219,6 +224,7 @@ public:
 	void getCivilizationCityName(CvWString& szBuffer, CivilizationTypes eCivilization) const;
 	bool isCityNameValid(const CvWString& szName, bool bTestDestroyed = true) const;
 	DllExport CvUnit* initUnit(UnitTypes eUnit, ProfessionTypes eProfession, int iX, int iY, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION, int iYieldStored = 0);
+	CvUnit* initUnit(UnitTypes eUnit, ProfessionTypes eProfession, Coordinates initCoord, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION, int iYieldStored = 0);
 	CvUnit* initEuropeUnit(UnitTypes eUnit, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION);
 	bool initEuropeSettler(bool bPayEquipment);
 	bool initEuropeTransport(bool bPay);
@@ -299,8 +305,8 @@ public:
 	int receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit);
 	void receiveRandomGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit);
 	void doGoody(CvPlot* pPlot, CvUnit* pUnit);
-	bool canFound(int iX, int iY, bool bTestVisible = false) const;
-	void found(int iX, int iY);
+	bool canFound(Coordinates foundCoord, bool bTestVisible = false) const;
+	CvCity *found(Coordinates foundCoord);
 	bool canTrain(UnitTypes eUnit, bool bContinue = false, bool bTestVisible = false, bool bIgnoreCost = false) const;
 	bool canConstruct(BuildingTypes eBuilding, bool bContinue = false, bool bTestVisible = false, bool bIgnoreCost = false) const;
 	int getYieldProductionNeeded(UnitTypes eUnit, YieldTypes eYield) const;
@@ -345,6 +351,7 @@ public:
 	void setAdvancedStartPoints(int iNewValue);
 	void changeAdvancedStartPoints(int iChange);
 	DllExport void doAdvancedStartAction(AdvancedStartActionTypes eAction, int iX, int iY, int iData, bool bAdd);
+	void doAdvancedStartAction(AdvancedStartActionTypes eAction, Coordinates coord, int iData, bool bAdd);
 	DllExport int getAdvancedStartUnitCost(UnitTypes eUnit, bool bAdd, CvPlot* pPlot = NULL);
 	DllExport int getAdvancedStartCityCost(bool bAdd, CvPlot* pPlot = NULL);
 	DllExport int getAdvancedStartPopCost(bool bAdd, CvCity* pCity = NULL);
@@ -354,21 +361,21 @@ public:
 	DllExport int getAdvancedStartRouteCost(RouteTypes eRoute, bool bAdd, CvPlot* pPlot = NULL);
 	DllExport int getAdvancedStartVisibilityCost(bool bAdd, CvPlot* pPlot = NULL);
 
-	void createGreatGeneral(UnitTypes eGreatGeneralUnit, bool bIncrementExperience, int iX, int iY);
+	void createGreatGeneral(UnitTypes eGreatGeneralUnit, bool bIncrementExperience, const Coordinates coord);
 	int getGreatGeneralsCreated() const;
 	void incrementGreatGeneralsCreated();
 	int getGreatGeneralsThresholdModifier() const;
 	void changeGreatGeneralsThresholdModifier(int iChange);
 	// R&R, ray, Great Admirals - START
-	void createGreatAdmiral(UnitTypes eGreatAdmiralUnit, bool bIncrementExperience, int iX, int iY);
+	void createGreatAdmiral(UnitTypes eGreatAdmiralUnit, bool bIncrementExperience, const Coordinates coord);
 	int getGreatAdmiralsCreated() const;
 	void incrementGreatAdmiralsCreated();
 	int getGreatAdmiralsThresholdModifier() const;
 	void changeGreatAdmiralsThresholdModifier(int iChange);
 	// R&R, ray, Great Admirals - END
 	// WTP, ray, Lieutenants and Captains - START
-	void createBraveLieutenant(UnitTypes eBraveLieutenantUnit, int iX, int iY);
-	void createCapableCaptain(UnitTypes eCapableCaptainUnit, int iX, int iY);
+	void createBraveLieutenant(UnitTypes eBraveLieutenantUnit, const Coordinates coord);
+	void createCapableCaptain(UnitTypes eCapableCaptainUnit, const Coordinates coord);
 	// WTP, ray, Lieutenants and Captains - END
 	int getGreatGeneralRateModifier() const;
 	void changeGreatGeneralRateModifier(int iChange);
@@ -1074,13 +1081,13 @@ protected:
 	//WTP, ray Kings Used Ship - START
 	int m_iTimerUsedShips;
 	int m_iCachedUsedShipPrice;
-	int m_iCachedUsedShipClassTypeID;
+	UnitClassTypes m_iCachedUsedShipClassTypeID;
 	//WTP, ray Kings Used Ship - END
 
 	// WTP, ray, Foreign Kings, buy Immigrants - START
 	int m_iTimerForeignImmigrants;
 	int m_iCachedForeignImmigrantPrice;
-	int m_iCachedForeignImmigrantClassTypeID;
+	UnitClassTypes m_iCachedForeignImmigrantClassTypeID;
 	// WTP, ray, Foreign Kings, buy Immigrants - END
 
 	int m_iChurchFavoursReceived; // R&R, ray, Church Favours
@@ -1217,6 +1224,11 @@ protected:
 	// WTP, jooe: move "make peace with all on player kill" logic to team kill and remove it here
 	// void makePeaceWithAll();
 	void kill();
+
+	// WTP, jooe, functionalise the buy Unit logic. Return value is the city where the units will appear (or NULL)
+	CvCity* buyUnitFromParentPlayer(PlayerTypes eSellingPlayer, const char *szUnitClass, int iNumUnits, CvWString szIDTag = CvWString(), int iPriceToPay = 0, int iLocationFlags = LOCATION_FLAGS_NONE, bool bReceivePrice = true, bool bMessageMentionLocation = true);
+	CvCity* buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitClassTypes eUnitClass, int iNumUnits, CvWString szIDTag = CvWString(), int iPriceToPay = 0, int iLocationFlags = LOCATION_FLAGS_NONE, bool bReceivePrice = true, bool bMessageMentionLocation = true);
+	CvCity* buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitType, int iNumUnits, CvWString szIDTag = CvWString(), int iPriceToPay = 0, int iLocationFlags = LOCATION_FLAGS_NONE, bool bReceivePrice = true, bool bMessageMentionLocation = true);
 
 public:
 	int getIDSecondPlayerFrenchNativeWar() const;//WTP, ray, Colonial Intervention In Native War - START
