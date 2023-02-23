@@ -3160,7 +3160,7 @@ CvCity* CvPlayer::buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitT
 			//add message if requested
 			if(!szMessage.empty())
 			{
-				CvWString szBuffer = bMessageMentionLocation ? gDLL->getText(szMessage, locationToAppear->getNameKey()) : szMessage;
+				CvWString szBuffer = bMessageMentionLocation ? gDLL->getText(szMessage, locationToAppear->getNameKey()) : gDLL->getText(szMessage);
 				gDLL->UI().addPlayerMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, kBuyUnit, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, kBuyUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
 			}
 			return locationToAppear;
