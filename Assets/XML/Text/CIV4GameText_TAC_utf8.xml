@@ -4,6 +4,7 @@
 <!-- Copyright Firaxis Games 2005 -->
 <!-- -->
 <!-- Game Text - New -->
+<!-- ZorG. missing tags added. due to some glitch, tortoise git thinks this file doesn't need to be uploaded to github. line added to allow commit&push. -->
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
         <Tag>TXT_KEY_CIV_CHURCH_SHORT_DESC</Tag>
