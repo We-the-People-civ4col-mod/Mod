@@ -3080,19 +3080,19 @@ void CvPlayer::contact(PlayerTypes ePlayer)
 	}
 }
 
-bool CvPlayer::buyUnitFromParentPlayer(PlayerTypes eSellingPlayer, const char *szUnitClass, int iNumUnits, CvWString szIDTag, int iPriceToPay, int iLocationFlags, bool bReceivePrice)
+bool CvPlayer::buyUnitFromParentPlayer(PlayerTypes eSellingPlayer, const char *szUnitClass, int iNumUnits, CvWString szMessage, int iPriceToPay, int iLocationFlags, bool bReceivePrice, bool bMessageMentionLocation)
 {
 	UnitTypes eUnitType = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(getParent()).getCivilizationType()).getCivilizationUnits(GC.getDefineINT(szUnitClass));
-	return buyUnitFromPlayer(eSellingPlayer, eUnitType, iNumUnits, szIDTag, iPriceToPay, iLocationFlags, bReceivePrice);
+	return buyUnitFromPlayer(eSellingPlayer, eUnitType, iNumUnits, szIDTag, iPriceToPay, iLocationFlags, bReceivePrice, bMessageMentionLocation);
 }
 
-bool CvPlayer::buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitClassTypes eUnitClass, int iNumUnits, CvWString szIDTag, int iPriceToPay, int iLocationFlags, bool bReceivePrice)
+bool CvPlayer::buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitClassTypes eUnitClass, int iNumUnits, CvWString szMessage, int iPriceToPay, int iLocationFlags, bool bReceivePrice, bool bMessageMentionLocation)
 {
 	UnitTypes eUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass);
-	return buyUnitFromPlayer(eSellingPlayer, eUnitType, iNumUnits, szIDTag, iPriceToPay, iLocationFlags, bReceivePrice);
+	return buyUnitFromPlayer(eSellingPlayer, eUnitType, iNumUnits, szIDTag, iPriceToPay, iLocationFlags, bReceivePrice, bMessageMentionLocation);
 }
 
-bool CvPlayer::buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitType, int iNumUnits, CvWString szIDTag, int iPriceToPay, int iLocationFlags, bool bReceivePrice)
+bool CvPlayer::buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitType, int iNumUnits, CvWString szMessage, int iPriceToPay, int iLocationFlags, bool bReceivePrice, bool bMessageMentionLocation)
 {
 	CvPlayer& kSellingPlayer = GET_PLAYER(eSellingPlayer);
 
@@ -3158,9 +3158,9 @@ bool CvPlayer::buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitType
 			}
 
 			//add message if requested
-			if(!szIDTag.empty())
+			if(!szMessage.empty())
 			{
-				CvWString szBuffer = gDLL->getText(szIDTag, locationToAppear->getNameKey());
+				CvWString szBuffer = bMessageMentionLocation ? gDLL->getText(szMessage, locationToAppear->getNameKey()) : szMessage;
 				gDLL->UI().addPlayerMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, kBuyUnit, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, kBuyUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
 			}
 			return true;
@@ -4135,11 +4135,13 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 
 		if(choosenLandSupport)
 		{
-			GET_PLAYER(ePlayer).buyUnitFromParentPlayer(getID(), "UNITCLASS_REV_SUPPORT_LAND", GLOBAL_DEFINE_REV_SUPPORT_LAND, "TXT_KEY_REV_SUPPORT_ARRIVED", iData1, LOCATION_FLAGS_DEEP_COASTAL);
+			CvWString szBuffer = gDLL->getText("TXT_KEY_REV_SUPPORT_ARRIVED", GC.getLeaderHeadInfo(GET_PLAYER(getParent()).getLeaderType()).getDescription());
+			GET_PLAYER(ePlayer).buyUnitFromParentPlayer(getID(), "UNITCLASS_REV_SUPPORT_LAND", GLOBAL_DEFINE_REV_SUPPORT_LAND, szBuffer, 0, LOCATION_FLAGS_DEEP_COASTAL, false, false);
 		}
 		else
 		{
-			GET_PLAYER(ePlayer).buyUnitFromParentPlayer(getID(), "UNITCLASS_REV_SUPPORT_SEA", GLOBAL_DEFINE_REV_SUPPORT_SEA, "TXT_KEY_REV_SUPPORT_ARRIVED", iData1, LOCATION_FLAGS_DEEP_COASTAL);
+			CvWString szBuffer = gDLL->getText("TXT_KEY_REV_SUPPORT_ARRIVED", GC.getLeaderHeadInfo(GET_PLAYER(getParent()).getLeaderType()).getDescription());
+			GET_PLAYER(ePlayer).buyUnitFromParentPlayer(getID(), "UNITCLASS_REV_SUPPORT_SEA", GLOBAL_DEFINE_REV_SUPPORT_SEA, szBuffer, 0, LOCATION_FLAGS_DEEP_COASTAL, false, false);
 		}
 	}
 		break;
@@ -4191,13 +4193,13 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 				bool bSuccess = kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_KING_REINFORCEMENT_SEA", GLOBAL_DEFINE_KING_REINFORCEMENT_SEA, "", 0, LOCATION_FLAGS_DEEP_COASTAL);
 				if (bSuccess)
 				{
-					kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_KING_REINFORCEMENT_LAND", GLOBAL_DEFINE_KING_REINFORCEMENT_LAND, "TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS", 0, LOCATION_FLAGS_DEEP_COASTAL);
+					kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_KING_REINFORCEMENT_LAND", GLOBAL_DEFINE_KING_REINFORCEMENT_LAND, "TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS", 0, LOCATION_FLAGS_DEEP_COASTAL, false, false);
 					kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_KING_REINFORCEMENT_ARTIL", GLOBAL_DEFINE_KING_REINFORCEMENT_ARTIL, "", 0, LOCATION_FLAGS_DEEP_COASTAL);
 				}
 				else	// we need to find an alternative since the Player seems to have not gotten a proper city
 							// we just give the player more land Units in his Capitol but no Sea Units
 				{
-					kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_KING_REINFORCEMENT_LAND", GLOBAL_DEFINE_KING_REINFORCEMENT_LAND + 1, "TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS", 0, LOCATION_FLAGS_NONE);
+					kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_KING_REINFORCEMENT_LAND", GLOBAL_DEFINE_KING_REINFORCEMENT_LAND + 1, "TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS", 0, LOCATION_FLAGS_NONE, false, false);
 					kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_KING_REINFORCEMENT_ARTIL", GLOBAL_DEFINE_KING_REINFORCEMENT_ARTIL + 1, "", 0, LOCATION_FLAGS_NONE);
 				}
 
@@ -4205,13 +4207,13 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 				bSuccess = kEnemyPlayer.buyUnitFromParentPlayer(eEnemyParentPlayer, "UNITCLASS_KING_REINFORCEMENT_SEA", GLOBAL_DEFINE_KING_REINFORCEMENT_SEA, "", 0, LOCATION_FLAGS_DEEP_COASTAL);
 				if (bSuccess)
 				{
-					kEnemyPlayer.buyUnitFromParentPlayer(eEnemyParentPlayer, "UNITCLASS_KING_REINFORCEMENT_LAND", GLOBAL_DEFINE_KING_REINFORCEMENT_LAND, "TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER", 0, LOCATION_FLAGS_DEEP_COASTAL);
+					kEnemyPlayer.buyUnitFromParentPlayer(eEnemyParentPlayer, "UNITCLASS_KING_REINFORCEMENT_LAND", GLOBAL_DEFINE_KING_REINFORCEMENT_LAND, "TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER", 0, LOCATION_FLAGS_DEEP_COASTAL, false, false);
 					kEnemyPlayer.buyUnitFromParentPlayer(eEnemyParentPlayer, "UNITCLASS_KING_REINFORCEMENT_ARTIL", GLOBAL_DEFINE_KING_REINFORCEMENT_ARTIL, "", 0, LOCATION_FLAGS_DEEP_COASTAL);
 				}
 				else	// we need to find an alternative since the other Player seems to have not gotten a proper city
 							// we just give the player more land Units in his Capitol but no Sea Units
 				{
-					kEnemyPlayer.buyUnitFromParentPlayer(eEnemyParentPlayer, "UNITCLASS_KING_REINFORCEMENT_LAND", GLOBAL_DEFINE_KING_REINFORCEMENT_LAND + 1, "TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER", 0, LOCATION_FLAGS_NONE);
+					kEnemyPlayer.buyUnitFromParentPlayer(eEnemyParentPlayer, "UNITCLASS_KING_REINFORCEMENT_LAND", GLOBAL_DEFINE_KING_REINFORCEMENT_LAND + 1, "TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER", 0, LOCATION_FLAGS_NONE, false, false);
 					kEnemyPlayer.buyUnitFromParentPlayer(eEnemyParentPlayer, "UNITCLASS_KING_REINFORCEMENT_ARTIL", GLOBAL_DEFINE_KING_REINFORCEMENT_ARTIL + 1, "", 0, LOCATION_FLAGS_NONE);
 				}
 				// WTP, ray, giving reinforcement to other Player as well - END
@@ -4315,10 +4317,12 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 				//make peace
 				GET_TEAM(kPlayer.getTeam()).makePeace(GET_PLAYER(enemyID).getTeam(),true);
 
-				kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_DIPLOMAT_1", 1, "TXT_KEY_EUROPE_PEACE_ACCEPTED", 0, LOCATION_FLAGS_NONE);
-				kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_DIPLOMAT_2", 1, "", 0, LOCATION_FLAGS_NONE);
+				CvWString szBuffer = gDLL->getText("TXT_KEY_EUROPE_PEACE_ACCEPTED", GC.getLeaderHeadInfo(GET_PLAYER(enemyID).getLeaderType()).getDescription());
+				kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_DIPLOMAT_1", 1, szBuffer, 0, LOCATION_FLAGS_NONE, false, false);
+				kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_DIPLOMAT_2", 1, "", 0, LOCATION_FLAGS_NONE, false, false);
 			}
-			else {
+			else
+			{
 				//nothing really happens only parent little disappointed
 				AI_changeAttitudeExtra(ePlayer, -1);
 				CvWString szBuffer = gDLL->getText("TXT_KEY_EUROPE_PEACE_DENIED", GC.getLeaderHeadInfo(GET_PLAYER(enemyID).getLeaderType()).getDescription());
@@ -4382,7 +4386,9 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			// we have chosen one of the 2 Options that give us Royal Units
 			if(choice == 1 || choice == 2)
 			{
-				kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_ROYAL_INTERVENTIONS_SHIP", 1, "TXT_KEY_ROYAL_INTERVENTION_ACCEPTED", 0, LOCATION_FLAGS_DEEP_COASTAL);
+				CvWString szBuffer = gDLL->getText("TXT_KEY_ROYAL_INTERVENTION_ACCEPTED", GC.getLeaderHeadInfo(GET_PLAYER(enemyID).getLeaderType()).getDescription(), locationToAppear->getNameKey());
+
+				kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_ROYAL_INTERVENTIONS_SHIP", 1, szBuffer, 0, LOCATION_FLAGS_DEEP_COASTAL, false, false);
 				kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_1", 1, "", 0, LOCATION_FLAGS_DEEP_COASTAL);
 				kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_2", 1, "", 0, LOCATION_FLAGS_DEEP_COASTAL);
 			}
