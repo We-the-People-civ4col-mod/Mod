@@ -3818,7 +3818,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 				kNativePlayer.AI_changeAttitudeExtra(ePlayer, 2); // Native Attitude improvement
 
 				// make peace with Natives
-				GET_TEAM(kPlayer.getTeam()).makePeace(GET_PLAYER(NativeID).getTeam(),true);
+				kPlayer.forcePeace(NativeID);
 
 				//sending message
 				CvWString szBuffer = gDLL->getText("TXT_KEY_COLONIAL_INTERVENTION_NATIVE_WAR_ENDED", kNativePlayer.getNameKey());
@@ -4315,7 +4315,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			if(choice == 1)
 			{
 				//make peace
-				GET_TEAM(kPlayer.getTeam()).makePeace(GET_PLAYER(enemyID).getTeam(),true);
+				kPlayer.forcePeace(enemyID);
 
 				CvWString szBuffer = gDLL->getText("TXT_KEY_EUROPE_PEACE_ACCEPTED", GC.getLeaderHeadInfo(GET_PLAYER(enemyID).getLeaderType()).getDescription());
 				kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_DIPLOMAT_1", 1, szBuffer, 0, LOCATION_FLAGS_NONE, false, false);
