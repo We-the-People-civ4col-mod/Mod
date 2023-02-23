@@ -30,6 +30,7 @@ Otherwise the mod will not work!
 * City growth now gives different types of colonists depending on the people that work in the city (free/forced laborers, ancestry)
 * Slaves will sometimes not run away, but start an armed rebellion against their oppression in the colonies
 * Several new units have been added (buccaneer, slave overseer, slave hunter)
+* A huge amount of new events
 
 ### Maps
 * All maps have been revised for the new terrains
