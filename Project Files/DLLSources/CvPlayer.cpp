@@ -3080,19 +3080,19 @@ void CvPlayer::contact(PlayerTypes ePlayer)
 	}
 }
 
-bool CvPlayer::buyUnitFromParentPlayer(PlayerTypes eSellingPlayer, const char *szUnitClass, int iNumUnits, CvWString szMessage, int iPriceToPay, int iLocationFlags, bool bReceivePrice, bool bMessageMentionLocation)
+CvCity *CvPlayer::buyUnitFromParentPlayer(PlayerTypes eSellingPlayer, const char *szUnitClass, int iNumUnits, CvWString szMessage, int iPriceToPay, int iLocationFlags, bool bReceivePrice, bool bMessageMentionLocation)
 {
 	UnitTypes eUnitType = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(getParent()).getCivilizationType()).getCivilizationUnits(GC.getDefineINT(szUnitClass));
-	return buyUnitFromPlayer(eSellingPlayer, eUnitType, iNumUnits, szIDTag, iPriceToPay, iLocationFlags, bReceivePrice, bMessageMentionLocation);
+	return buyUnitFromPlayer(eSellingPlayer, eUnitType, iNumUnits, szMessage, iPriceToPay, iLocationFlags, bReceivePrice, bMessageMentionLocation);
 }
 
-bool CvPlayer::buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitClassTypes eUnitClass, int iNumUnits, CvWString szMessage, int iPriceToPay, int iLocationFlags, bool bReceivePrice, bool bMessageMentionLocation)
+CvCity *CvPlayer::buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitClassTypes eUnitClass, int iNumUnits, CvWString szMessage, int iPriceToPay, int iLocationFlags, bool bReceivePrice, bool bMessageMentionLocation)
 {
 	UnitTypes eUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass);
-	return buyUnitFromPlayer(eSellingPlayer, eUnitType, iNumUnits, szIDTag, iPriceToPay, iLocationFlags, bReceivePrice, bMessageMentionLocation);
+	return buyUnitFromPlayer(eSellingPlayer, eUnitType, iNumUnits, szMessage, iPriceToPay, iLocationFlags, bReceivePrice, bMessageMentionLocation);
 }
 
-bool CvPlayer::buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitType, int iNumUnits, CvWString szMessage, int iPriceToPay, int iLocationFlags, bool bReceivePrice, bool bMessageMentionLocation)
+CvCity* CvPlayer::buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitType, int iNumUnits, CvWString szMessage, int iPriceToPay, int iLocationFlags, bool bReceivePrice, bool bMessageMentionLocation)
 {
 	CvPlayer& kSellingPlayer = GET_PLAYER(eSellingPlayer);
 
@@ -3163,10 +3163,10 @@ bool CvPlayer::buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitType
 				CvWString szBuffer = bMessageMentionLocation ? gDLL->getText(szMessage, locationToAppear->getNameKey()) : szMessage;
 				gDLL->UI().addPlayerMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, kBuyUnit, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, kBuyUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
 			}
-			return true;
+			return locationToAppear;
 		}
 	}
-	return false;
+	return NULL;
 }
 
 
@@ -4386,11 +4386,11 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			// we have chosen one of the 2 Options that give us Royal Units
 			if(choice == 1 || choice == 2)
 			{
+				CvCity *locationToAppear = kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_ROYAL_INTERVENTIONS_SHIP", 1, "", 0, LOCATION_FLAGS_DEEP_COASTAL, false, false);
 				CvWString szBuffer = gDLL->getText("TXT_KEY_ROYAL_INTERVENTION_ACCEPTED", GC.getLeaderHeadInfo(GET_PLAYER(enemyID).getLeaderType()).getDescription(), locationToAppear->getNameKey());
 
-				kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_ROYAL_INTERVENTIONS_SHIP", 1, szBuffer, 0, LOCATION_FLAGS_DEEP_COASTAL, false, false);
-				kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_1", 1, "", 0, LOCATION_FLAGS_DEEP_COASTAL);
-				kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_2", 1, "", 0, LOCATION_FLAGS_DEEP_COASTAL);
+				kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_1", 1, szBuffer, 0, LOCATION_FLAGS_DEEP_COASTAL, false, false);
+				kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_2", 1, "", 0, LOCATION_FLAGS_DEEP_COASTAL, false, false);
 			}
 			// we just post a message
 			else

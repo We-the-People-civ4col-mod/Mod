@@ -1225,9 +1225,10 @@ protected:
 	// void makePeaceWithAll();
 	void kill();
 
-	bool buyUnitFromParentPlayer(PlayerTypes eSellingPlayer, const char *szUnitClass, int iNumUnits, CvWString szIDTag = CvWString(), int iPriceToPay = 0, int iLocationFlags = LOCATION_FLAGS_NONE, bool bReceivePrice = true, bool bMessageMentionLocation = true);
-	bool buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitClassTypes eUnitClass, int iNumUnits, CvWString szIDTag = CvWString(), int iPriceToPay = 0, int iLocationFlags = LOCATION_FLAGS_NONE, bool bReceivePrice = true, bool bMessageMentionLocation = true);
-	bool buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitType, int iNumUnits, CvWString szIDTag = CvWString(), int iPriceToPay = 0, int iLocationFlags = LOCATION_FLAGS_NONE, bool bReceivePrice = true, bool bMessageMentionLocation = true);
+	// WTP, jooe, functionalise the buy Unit logic. Return value is the city where the units will appear (or NULL)
+	CvCity* buyUnitFromParentPlayer(PlayerTypes eSellingPlayer, const char *szUnitClass, int iNumUnits, CvWString szIDTag = CvWString(), int iPriceToPay = 0, int iLocationFlags = LOCATION_FLAGS_NONE, bool bReceivePrice = true, bool bMessageMentionLocation = true);
+	CvCity* buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitClassTypes eUnitClass, int iNumUnits, CvWString szIDTag = CvWString(), int iPriceToPay = 0, int iLocationFlags = LOCATION_FLAGS_NONE, bool bReceivePrice = true, bool bMessageMentionLocation = true);
+	CvCity* buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitType, int iNumUnits, CvWString szIDTag = CvWString(), int iPriceToPay = 0, int iLocationFlags = LOCATION_FLAGS_NONE, bool bReceivePrice = true, bool bMessageMentionLocation = true);
 
 public:
 	int getIDSecondPlayerFrenchNativeWar() const;//WTP, ray, Colonial Intervention In Native War - START
