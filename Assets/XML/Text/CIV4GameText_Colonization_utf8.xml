@@ -33,11 +33,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_CIV_VERSION</Tag>
-        <English>Colonization Version:</English>
+        <English>Colonization Version :</English>
         <French>Version Colonization :</French>
-        <German>Colonization-Version:</German>
-        <Italian>Versione di Colonization:</Italian>
-        <Spanish>Versión de Colonization:</Spanish>
+        <German>Colonization-Version :</German>
+        <Italian>Versione di Colonization :</Italian>
+        <Spanish>Versión de Colonization :</Spanish>
         <Russian>Версия Колонизации :</Russian>
     </TEXT>
     <TEXT>
@@ -184,7 +184,7 @@
         <Tag>TXT_KEY_SETTLE_NEW_CITY_NAME</Tag>
         <English>Settlement name :</English>
         <French>Nom de la colonie :</French>
-        <German>Siedlungsname :</German>
+        <German>Name der Siedlung :</German>
         <Italian>Nome insediamento :</Italian>
         <Spanish>Nombre del asentamiento :</Spanish>
         <Russian>Наименование поселения :</Russian>
@@ -254,28 +254,26 @@
         <Tag>TXT_KEY_INFO_SCREEN_CITIES_RAZED</Tag>
         <English>Settlements Razed</English>
         <French>Colonies rasées</French>
-        <German>Vernichtete Siedlungen</German>
+        <German>Zerstörte Siedlungen</German>
         <Italian>Insediamenti razziati</Italian>
         <Spanish>Asentamientos arrasados</Spanish>
         <Russian>Поселений разрушено</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_BAR_SELECT_ALT</Tag>
-     <English>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] for All Settlements)</English>
-    <French>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] pour toutes les colonies)</French>
-    <German>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] für alle Siedlungen)</German>
-    <Italian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] per tutti gli insediamenti)</Italian>
-    <Spanish>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] para todos los asentamientos)</Spanish>
-        <Russian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] для всех поселений)</Russian>
+        <English>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] for All Settlements)</English>
+        <French>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] pour toutes les colonies)</French>
+        <German>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] für alle Siedlungen)</German>
+        <Italian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] per tutti gli insediamenti)</Italian>
+        <Spanish>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] para todos los asentamientos)</Spanish>
   </TEXT>
   <TEXT>
-    <Tag>TXT_KEY_CITY_BAR_SELECT_CTRL</Tag>
-    <English>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] for All Settlements on this Continent)</English>
-    <French>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] pour toutes les colonies sur ce continent)</French>
-    <German>([COLOR:140:255:40:255]&lt; STRG &gt;[COLOR_REVERT] für alle Siedlungen auf diesem Kontinent)</German>
-    <Italian>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] per tutti gli insediamenti in questo continente)</Italian>
-    <Spanish>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] para todos los asentamientos en este continente)</Spanish>
-        <Russian>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] для всех поселений на этом континенте)</Russian>
+        <Tag>TXT_KEY_CITY_BAR_SELECT_CTRL</Tag>
+        <English>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] for All Settlements on this Continent)</English>
+        <French>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] pour toutes les colonies sur ce continent)</French>
+        <German>([COLOR:140:255:40:255]&lt; STRG &gt;[COLOR_REVERT] für alle Siedlungen auf diesem Kontinent)</German>
+        <Italian>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] per tutti gli insediamenti in questo continente)</Italian>
+        <Spanish>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] para todos los asentamientos en este continente)</Spanish>
   </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_SCREEN_CITY_CULTURE</Tag>
@@ -290,7 +288,7 @@
         <English>Top 5 Settlements</English>
         <French>5 meilleures colonies</French>
         <German>Bedeutendste Städte</German>
-        <Italian>I primi 5 insediam.</Italian>
+        <Italian>I primi 5 insediam</Italian>
         <Spanish>5 mejores ciudades</Spanish>
         <Russian>5 лучших городов</Russian>
     </TEXT>
@@ -360,9 +358,9 @@
         <Tag>TXT_KEY_MISC_HELP_PROD_FINAL_YIELD</Tag>
         <English>-----------------------[NEWLINE]Final [COLOR_HIGHLIGHT_TEXT]Production[COLOR_REVERT] : %d1%F2_Icon</English>
         <French>-----------------------[NEWLINE][COLOR_HIGHLIGHT_TEXT]Production[COLOR_REVERT] finale : %d1%F2_Icon</French>
-        <German>-----------------------[NEWLINE]Letzte [COLOR_HIGHLIGHT_TEXT]Produktion[COLOR_REVERT]: %d1%F2_Icon</German>
-        <Italian>-----------------------[NEWLINE][COLOR_HIGHLIGHT_TEXT]Produzione[COLOR_REVERT] finale: %d1%F2_Icon</Italian>
-        <Spanish>-----------------------[NEWLINE][COLOR_HIGHLIGHT_TEXT]Producción[COLOR_REVERT] final: %d1 %F2_Icon</Spanish>
+        <German>-----------------------[NEWLINE]Letzte [COLOR_HIGHLIGHT_TEXT]Produktion[COLOR_REVERT] : %d1%F2_Icon</German>
+        <Italian>-----------------------[NEWLINE][COLOR_HIGHLIGHT_TEXT]Produzione[COLOR_REVERT] finale : %d1%F2_Icon</Italian>
+        <Spanish>-----------------------[NEWLINE][COLOR_HIGHLIGHT_TEXT]Producción[COLOR_REVERT] final : %d1 %F2_Icon</Spanish>
         <Russian>-----------------------[NEWLINE]Итого [COLOR_HIGHLIGHT_TEXT]Производство[COLOR_REVERT] : %d1%F2_Icon</Russian>
     </TEXT>
     <TEXT>
@@ -440,7 +438,7 @@
         <English>Become [COLOR_UNIT_TEXT]%s1_unitType[COLOR_REVERT].</English>
         <French>Devenir [COLOR_UNIT_TEXT]%s1_unitType[COLOR_REVERT]</French>
         <German>[COLOR_UNIT_TEXT]%s1_unitType[COLOR_REVERT] werden.</German>
-        <Italian>Diventa [COLOR_UNIT_TEXT]%s1_unitType[COLOR_REVERT].</Italian>
+        <Italian>Diventa [COLOR_UNIT_TEXT]%s1_unitType[COLOR_REVERT]</Italian>
         <Spanish>Convertir en [COLOR_UNIT_TEXT]%s1_unitType[COLOR_REVERT].</Spanish>
     </TEXT>
     <TEXT>
@@ -454,39 +452,39 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CONSUMED</Tag>
-        <English>Consumes: </English>
+        <English>Consumes : </English>
         <French>Consomme :</French>
-        <German>Benötigt: </German>
-        <Italian>Consuma: </Italian>
-        <Spanish>Consume: </Spanish>
-        <Russian>Потребляет:</Russian>
+        <German>Benötigt : </German>
+        <Italian>Consuma : </Italian>
+        <Spanish>Consume : </Spanish>
+        <Russian>Потребляет :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PRODUCED</Tag>
-        <English>Produces: </English>
-        <French>Produit:</French>
-        <German>Produziert: </German>
-        <Italian>Produce: </Italian>
-        <Spanish>Produce: </Spanish>
-        <Russian>Производит:</Russian>
+        <English>Produces : </English>
+        <French>Produit :</French>
+        <German>Produziert : </German>
+        <Italian>Produce : </Italian>
+        <Spanish>Produce : </Spanish>
+        <Russian>Производит :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CONSUMED_WITH_CHAR</Tag>
-        <English>Consumes: %F1_Icon</English>
+        <English>Consumes : %F1_Icon</English>
         <French>Consomme : %F1_Icon</French>
-        <German>Benötigt: %F1_Icon</German>
-        <Italian>Consuma: %F1_Icon</Italian>
-        <Spanish>Consume: %F1_Icon</Spanish>
-        <Russian>Потребляет: %F1_Icon</Russian>
+        <German>Benötigt : %F1_Icon</German>
+        <Italian>Consuma : %F1_Icon</Italian>
+        <Spanish>Consume : %F1_Icon</Spanish>
+        <Russian>Потребляет : %F1_Icon</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PRODUCED_WITH_CHAR</Tag>
-        <English>Produces: %F1_Icon</English>
+        <English>Produces : %F1_Icon</English>
         <French>Produit : %F1_Icon</French>
-        <German>Produziert: %F1_Icon</German>
-        <Italian>Produce: %F1_Icon</Italian>
-        <Spanish>Produce: %F1_Icon</Spanish>
-        <Russian>Производит: %F1_Icon</Russian>
+        <German>Produziert : %F1_Icon</German>
+        <Italian>Produce : %F1_Icon</Italian>
+        <Spanish>Produce : %F1_Icon</Spanish>
+        <Russian>Производит : %F1_Icon</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_WORKS_IN_BUILDING</Tag>
@@ -676,19 +674,19 @@
     <TEXT>
         <Tag>TXT_KEY_BOSTON_TEA_PARTY</Tag>
         <English>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Angry %s1_civ_adjective colonists destroy all shipments of %s3_yield in protest for excessive taxation without representation !</English>
-        <French>Dans la ville : %s2_city, des colons %s1:3_civ_adjective détruisent toutes les cargaisons de %s3_yield pour protester contre la taxation sans représentation.</French>
+        <French>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Dans la ville, des colons %s1:3_civ_adjective détruisent toutes les cargaisons de %s3_yield pour protester contre la taxation sans représentation !</French>
         <German>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Wütende %s1:3_civ_adjective Kolonisten zerstören aus Protest alle %s3_yield-Lieferungen, da sie hohe Steuern zahlen müssen, aber nicht im Parlament vertreten sind !</German>
-        <Italian>Bellicosi coloni %s1_civ_adjective a %s2_city hanno distrutto tutte le partite di %s3_yield per protestare con l'eccessiva tassazione senza rappresentanza.</Italian>
-        <Spanish>Los enojados colonos %s1:3_civ_adjective de %s2_city destruyen todos los cargamentos de %s3_yield en protesta por los impuestos excesivos sin representantes.</Spanish>
+        <Italian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Bellicosi coloni %s1_civ_adjective hanno distrutto tutte le partite di %s3_yield per protestare con l'eccessiva tassazione senza rappresentanza !</Italian>
+        <Spanish>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]¡Los enojados colonos %s1:3_civ_adjective destruyen todos los cargamentos de %s3_yield en protesta por los impuestos excesivos sin representantes !</Spanish>
         <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Разгневанные колонисты %s1_civ_adjective уничтожают все запасы %s3_yield в знак протеста против чрезмерного налогообложения без представительства !</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODS_LOST</Tag>
         <English>[COLOR_WARNING_TEXT]%s3_city : [COLOR_REVERT]%d1_number%F2_yield_icon have been lost due to limited storage capacity !</English>
-        <French>%d1_number%F2_yield_icon ont été perdus dans la ville : %s3_city en raison d'une capacité de stockage limitée</French>
+        <French>[COLOR_WARNING_TEXT]%s3_city : [COLOR_REVERT]%d1_number%F2_yield_icon ont été perdus dans la ville en raison d'une capacité de stockage limitée !</French>
         <German>[COLOR_WARNING_TEXT]%s3_city : [COLOR_REVERT]Wegen fehlendem Lagerraum gehen %d1_number%F2_yield_icon verloren !</German>
-        <Italian>%d1_number%F2_yield_icon distrutti a %s3_city a causa della limitata capienza dei depositi</Italian>
-        <Spanish>Se [NUM1:ha:han] perdido %d1_number %F2_yield_icon en %s3_city debido la capacidad de almacenamiento limitada.</Spanish>
+        <Italian>[COLOR_WARNING_TEXT]%s3_city : [COLOR_REVERT]%d1_number%F2_yield_icon distrutti a causa della limitata capienza dei depositi</Italian>
+        <Spanish>[COLOR_WARNING_TEXT]%s3_city : [COLOR_REVERT]¡Se [NUM1:ha:han] perdido %d1_number %F2_yield_icon debido la capacidad de almacenamiento limitada !</Spanish>
         <Russian>[COLOR_WARNING_TEXT]%s3_city : [COLOR_REVERT]%d1_number%F2_yield_icon было потеряно из-за ограниченной емкости хранилища !</Russian>
     </TEXT>
     <TEXT>
@@ -846,10 +844,10 @@
     <TEXT>
         <Tag>TXT_KEY_NATIVES_CONVERTED</Tag>
         <English>Milord, your mission in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has converted a Native to the true Christian faith. Praise be to the Lord!</English>
-        <French>Votre mission a converti un indigène dans la ville : [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]</French>
+        <French>Seigneur, votre mission a converti un indigène dans la ville : [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]</French>
         <German>Milord, Eure Mission in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat einen Ureinwohner zum wahren christlichen Glauben bekehrt. Gelobt sei der Herr!</German>
-        <Italian>La tua missione ha convertito un nativo a [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]</Italian>
-        <Spanish>Vuestra misión ha convertido a un Nativo en [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Spanish>
+        <Italian>Signore, la tua missione ha convertito un nativo a [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]</Italian>
+        <Spanish>Excelencia, vuestra misión ha convertido a un Nativo en [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Spanish>
         <Russian>Милорд, наша мисиия в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] обратила в истинную христианскую веру одного из индейцев. Братья, вознесем хвалу нашему Господу!</Russian>
     </TEXT>
     <TEXT>
@@ -923,7 +921,7 @@
         <English>[ICON_BULLET]%D1%% %F2 in all settlements</English>
         <French>[ICON_BULLET]%D1%% %F2 dans toutes les colonies</French>
         <German>[ICON_BULLET]%D1%% %F2 in allen Siedlungen</German>
-        <Italian>[ICON_BULLET]%D1%% %F2 in tutti gli insediam.</Italian>
+        <Italian>[ICON_BULLET]%D1%% %F2 in tutti gli insediam</Italian>
         <Spanish>[ICON_BULLET]%D1%% %F2 en todos los asentamientos</Spanish>
         <Russian>[ICON_BULLET]%D1%% %F2 во всех поселениях</Russian>
     </TEXT>
@@ -975,7 +973,7 @@
         <Tag>TXT_KEY_MISC_REBEL_HELP</Tag>
         <English>%d1%% of the people support independence.</English>
         <French>%d1%% de la population soutiennent l'indépendance.</French>
-        <German>%d1%% des Volkes wollen die Unabhängigkeit.</German>
+        <German>%d1%% der Bevölkerung unterstützt die Unabhängigkeit.</German>
         <Italian>%d1%% della popolazione supporta l'indipendenza.</Italian>
         <Spanish>El %d1%% de la gente apoya la independencia.</Spanish>
         <Russian>%d1%% жителей поддерживают независимость.</Russian>
@@ -1027,7 +1025,7 @@
     <TEXT>
         <Tag>TXT_KEY_CIVIC_NATIVE_BORDERS</Tag>
         <English>[ICON_BULLET]Colony borders dominate Native borders</English>
-        <French>[ICON_BULLET]Les frontières du territoire prévalent sur les frontières indigènes.</French>
+        <French>[ICON_BULLET]Les frontières du territoire prévalent sur les frontières indigènes</French>
         <German>[ICON_BULLET]Koloniegrenzen beherrschen die Ureinwohnergrenzen</German>
         <Italian>[ICON_BULLET]I confini coloniali dominano i confini dei nativi</Italian>
         <Spanish>[ICON_BULLET]Las fronteras de la colonia dominan las de los Nativos</Spanish>
@@ -1202,7 +1200,7 @@
     <TEXT>
         <Tag>TXT_KEY_FATHER_EUROPEAN_ATTITUDE_GOOD</Tag>
         <English>[ICON_BULLET]Ends all wars with Europeans[NEWLINE][ICON_BULLET]Strengthens relations with Europeans</English>
-        <French>[ICON_BULLET]Renforce les relations et achève les guerres avec les européens</French>
+        <French>[ICON_BULLET]Achève les guerres avec les européens[NEWLINE][ICON_BULLET]Renforce les relations avec les européens</French>
         <German>[ICON_BULLET]Beendet alle Kriege mit Europäern[NEWLINE][ICON_BULLET]Stärkt Beziehungen zu Europäern</German>
         <Russian>[ICON_BULLET]Заканчивает все войны с европейцами[NEWLINE][ICON_BULLET]Улучшает отношения с европейцами</Russian>
     </TEXT>
@@ -1626,12 +1624,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DAWN_OF_MAN_SCREEN_STARTING_UNITS</Tag>
-        <English>Starting Units:</English>
+        <English>Starting Units :</English>
         <French>Unités de départ :</French>
-        <German>Einheiten zu Beginn:</German>
-        <Italian>Unità iniziali:</Italian>
-        <Spanish>Unidades iniciales:</Spanish>
-        <Russian>Начальные юниты</Russian>
+        <German>Einheiten zu Beginn :</German>
+        <Italian>Unità iniziali :</Italian>
+        <Spanish>Unidades iniciales :</Spanish>
+        <Russian>Начальные юниты :</Russian>
     </TEXT>
     <TEXT>
         <Tag>INTERFACE_REVOLUTION</Tag>
@@ -1690,16 +1688,16 @@
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_BASE_CITIZEN_YIELD</Tag>
         <English>[ICON_BULLET]%d1%F2[TAB][COLOR_HIGHLIGHT_TEXT]%s3_unit[COLOR_REVERT]</English>
-        <French>[ICON_BULLET]%d1%F2[TAB]grâce à l'unité %s3_unit</French>
+        <French>[ICON_BULLET]%d1%F2[TAB]grâce à l'unité [COLOR_HIGHLIGHT_TEXT]%s3_unit[COLOR_REVERT]</French>
         <German>[ICON_BULLET]%d1%F2[TAB][COLOR_HIGHLIGHT_TEXT]%s3_unit[COLOR_REVERT]</German>
-        <Italian>[ICON_BULLET]%d1%F2[TAB]dall'unità %s3_unit</Italian>
-        <Spanish>[ICON_BULLET]%d1%F2[TAB]por %s3_unit</Spanish>
+        <Italian>[ICON_BULLET]%d1%F2[TAB]dall'unità [COLOR_HIGHLIGHT_TEXT]%s3_unit[COLOR_REVERT]</Italian>
+        <Spanish>[ICON_BULLET]%d1%F2[TAB]por [COLOR_HIGHLIGHT_TEXT]%s3_unit[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_TOTAL_YIELD_PRODUCED</Tag>
         <English>%s1_yield produced : %d2%F3</English>
         <French>Production de la ressource : %s1_yield : %d2%F3</French>
-        <German>Produktion %s1_yield: %d2%F3</German>
+        <German>Produktion %s1_yield : %d2%F3</German>
         <Italian>Produzione %s1_yield : %d2%F3</Italian>
         <Spanish>%s1_yield [NUM1:producido:producida:producidos:producidas] : %d2%F3</Spanish>
         <Russian>%s1_yield произведено : %d2%F3</Russian>
@@ -2002,7 +2000,7 @@
         <Tag>TXT_KEY_ACTION_AUTOMATE_CITY</Tag>
         <English>Improve plots next to nearest settlement (Automated)</English>
         <French>Améliorer la colonie la plus proche (Automatisé)</French>
-        <German>Umland der nächstgelegenen Kolonie modernisieren (Automatisch)</German>
+        <German>Geländefelder rings um nächstgelegene Kolonie modernisieren (Automatisch)</German>
         <Italian>Migliora l'insediamento più vicino (automaticamente)</Italian>
         <Spanish>Mejorar el asentamiento más cercano (automatizado)</Spanish>
         <Russian>Улучшить клетки вокруг ближайшего поселения (автоматически)</Russian>
@@ -2146,10 +2144,10 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CAPITAL</Tag>
         <English>[ICON_BULLET]Makes this settlement the [COLOR_CYAN]capital[COLOR_REVERT]</English>
-        <French>[ICON_BULLET]Faire de cette colonie notre capitale</French>
+        <French>[ICON_BULLET]Faire de cette colonie notre [COLOR_CYAN]capitale[COLOR_REVERT]</French>
         <German>[ICON_BULLET]Erhebt diese Siedlung zur [COLOR_CYAN]Hauptstadt[COLOR_REVERT]</German>
-        <Italian>[ICON_BULLET]Rende capitale questo insediamento</Italian>
-        <Spanish>[ICON_BULLET]Convierte este asentamiento en la capital</Spanish>
+        <Italian>[ICON_BULLET]Rende [COLOR_CYAN]capitale[COLOR_REVERT] questo insediamento</Italian>
+        <Spanish>[ICON_BULLET]Convierte este asentamiento en la [COLOR_CYAN]capital[COLOR_REVERT]</Spanish>
         <Russian>[ICON_BULLET]Сделать это поселение [COLOR_CYAN]Столицей[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
@@ -2200,19 +2198,19 @@
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_BAD_CITY_LOCATION</Tag>
         <English>[ICON_BULLET]Unhealthy terrain to found settlements[SPACE]</English>
-        <German>[ICON_BULLET]Ungesundes Terrain für Stadgründungen[SPACE]</German>
+        <German>[ICON_BULLET]Ungesundes Terrain für Gründung einer Siedlung[SPACE]</German>
         <Russian>[ICON_BULLET]Нездоровая местность для основания поселений[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PLOT_FRESHWATER</Tag>
         <English>[ICON_BULLET]Plot with direct fresh water access[SPACE]</English>
-        <German>[ICON_BULLET]Feld mit direktem Süßwasserzugang[SPACE]</German>
+        <German>[ICON_BULLET]Geländefeld mit direktem Süßwasserzugang[SPACE]</German>
         <Russian>[ICON_BULLET]Участок с прямым доступом к пресной воде[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_PROVIDES_FRESHWATER</Tag>
         <English>[ICON_BULLET]Provides fresh water access to adjacent plots[SPACE]</English>
-        <German>[ICON_BULLET]Gibt angrenzenden Feldern Süßwasserzugang[SPACE]</German>
+        <German>[ICON_BULLET]Gibt angrenzenden Geländefeldern Süßwasserzugang[SPACE]</German>
         <Russian>[ICON_BULLET]Обеспечивает соседним участкам доступ к пресной воде[SPACE]</Russian>
     </TEXT>
     <TEXT>
@@ -2290,10 +2288,10 @@
     <TEXT>
         <Tag>TXT_KEY_MISC_STUDENT_GRADUATED</Tag>
         <English>%s2_city : A [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] has graduated from the %s3_building.</English>
-        <French>Une nouvelle unité : [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] a été améliorée dans le bâtiment : %s3_building de la colonie : %s2_city</French>
+        <French>%s2_city : Une nouvelle unité [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] a été améliorée dans le bâtiment %s3_building de la colonie</French>
         <German>%s2_city : Ein [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] wurde in der %s3_building ausgebildet.</German>
-        <Italian>Si è diplomata una nuova unità [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] dal(la) %s3_building di %s2_city </Italian>
-        <Spanish>En [NUM3:el:la:los:las] %s3_building de %s2_city se ha graduado [NUM1:un nuevo:una nueva:unos nuevos:unas nuevas] [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT].</Spanish>
+        <Italian>%s2_city : Si è diplomata una nuova unità [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] dal(la) %s3_building.</Italian>
+        <Spanish>%s2_city : En [NUM3:el:la:los:las] %s3_building se ha graduado [NUM1:un nuevo:una nueva:unos nuevos:unas nuevas] [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT].</Spanish>
         <Russian>%s2_city : [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] закончил обучение в %s3_building.</Russian>
     </TEXT>
     <TEXT>
@@ -2398,37 +2396,37 @@
     <TEXT>
         <Tag>TXT_KEY_MINIMIZED_CHOOSE_EDUCATION</Tag>
         <English>%s2_City : A [COLOR_HIGHLIGHT_TEXT]%s1_profession[COLOR_REVERT] has graduated from the %s3_building.</English>
-        <French>Un [COLOR_HIGHLIGHT_TEXT]%s1_profession[COLOR_REVERT] a été formé dans le bâtiment : %s3_building de la ville : %s2_City</French>
+        <French>%s2_City : Un [COLOR_HIGHLIGHT_TEXT]%s1_profession[COLOR_REVERT] a été formé dans le bâtiment : %s3_building de la ville.</French>
         <German>%s2_City : Ein [COLOR_HIGHLIGHT_TEXT]%s1_profession[COLOR_REVERT] wurde in %s3_building ausgebildet.</German>
-        <Italian>Dal(la) %s3_building di %s2_City si è diplomata un'unità [COLOR_HIGHLIGHT_TEXT]%s1_profession[COLOR_REVERT]</Italian>
-        <Spanish>En [NUM3:el:la:los:las] %s3_building de %s2_City se ha graduado [NUM1:un nuevo:una nueva:unos nuevos:unas nuevas] [COLOR_HIGHLIGHT_TEXT]%s1_profession[COLOR_REVERT].</Spanish>
+        <Italian>%s2_City : Dal(la) %s3_building si è diplomata un'unità [COLOR_HIGHLIGHT_TEXT]%s1_profession[COLOR_REVERT].</Italian>
+        <Spanish>%s2_City : En [NUM3:el:la:los:las] %s3_building se ha graduado [NUM1:un nuevo:una nueva:unos nuevos:unas nuevas] [COLOR_HIGHLIGHT_TEXT]%s1_profession[COLOR_REVERT].</Spanish>
         <Russian>%s2_City : [COLOR_HIGHLIGHT_TEXT]%s1_profession[COLOR_REVERT] обучился в %s3_building.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHOOSE_SPECIALTY</Tag>
         <English>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]Choose a specialty for the graduating %s1_profession :</English>
-        <French>Choisissez une spécialité pour l'unité : %s1_profession formée dans la ville : %s2_city</French>
+        <French>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]Choisissez une spécialité pour l'unité : %s1_profession formée dans la ville :</French>
         <German>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]Ein %s1_profession hat seine Lehrzeit beendet. Welchen Beruf soll er erlernt haben :</German>
-        <Italian>Scegli una specializzazione per l'unità %s1_profession che si diploma a %s2_city</Italian>
-        <Spanish>Elegir una especialidad para [NUM1:el:la:los:las] %s1_profession a graduar en %s2_city.</Spanish>
+        <Italian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]Scegli una specializzazione per l'unità %s1_profession che si diploma :</Italian>
+        <Spanish>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]Elegir una especialidad para [NUM1:el:la:los:las] %s1_profession a graduar :</Spanish>
         <Russian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]Выберите специальность для закончившего обучения %s1_profession :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODS_RAIDED</Tag>
         <English>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective raid! %d3 %s4_yield have been stolen![COLOR_REVERT]</English>
-        <French>Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! Ils ont pris %d3 %s4_yield !</French>
+        <French>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]Les %s1_civ_adjective ont lancé un raid sur la ville ! Ils ont pris %d3 %s4_yield !</French>
         <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective Überfall! %d3 %s4_yield wurden gestohlen![COLOR_REVERT]</German>
-        <Italian>Raid %s1_civ_adjective a %s2_city! Hanno rubato %d3 %s4_yield!</Italian>
-        <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! ¡Han robado %d3 de %s4_yield!</Spanish>
+        <Italian>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]Raid %s1_civ_adjective! Hanno rubato %d3 %s4_yield!</Italian>
+        <Spanish>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]¡Una incursión de los %s1:3_civ_adjective! ¡Han robado %d3 de %s4_yield!</Spanish>
         <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Нападение индейцев %s1_civ_adjective! Они успели украсть %d3 %s4_yield прежде, чем их успели прогнать![COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WEAPONS_CAPTURED</Tag>
         <English>[COLOR_WARNING_TEXT]Serious news, Milord! [COLOR_REVERT]Your [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] was defeated in an ambush by [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] warriors and its %d3 %s4_yield were looted.</English>
-        <French>Les %s1_civ_adjective ont lancé un raid sur %s2_city ! Un %s2_unit a été vaincue et ils ont pris %d3 %s4_yield !</French>
+        <French>Les [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] ont lancé un raid sur %s2_city ! Un [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] a été vaincue et ils ont pris %d3 %s4_yield !</French>
         <German>[COLOR_WARNING_TEXT]Ernste Nachrichten, Milord! [COLOR_REVERT]Eure Einheit [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] wurde von [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Kriegern in einen Hinterhalt gelockt. Dabei wurden %d3 %s4_yield geraubt.</German>
-        <Italian>Raid %s1_civ_adjective! L'unità %s2_unit è stata sconfitta e c'è stato un furto di %d3 %s4_yield.</Italian>
-        <Spanish>¡Una incursión %s1:3_civ_adjective! Han derrotado a [NUM2:un:una:unos:unas] %s2_unit y han capturado %d3 de %s4_yield.</Spanish>
+        <Italian>Raid [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]! L'unità [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] è stata sconfitta e c'è stato un furto di %d3 %s4_yield.</Italian>
+        <Spanish>¡Una incursión [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT]! Han derrotado a [NUM2:un:una:unos:unas] [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] y han capturado %d3 de %s4_yield.</Spanish>
         <Russian>[COLOR_WARNING_TEXT]Тревожные новости, Милорд! [COLOR_REVERT]Ваш [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] был атакован из засады воинами [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] и потерпел поражение. Его %d3 %s4_yield были захвачены.</Russian>
     </TEXT>
     <TEXT>
@@ -2445,8 +2443,8 @@
         <English>[PARAGRAPH:1]%d1%F2 sold @ %d3[ICON_GOLD]    [TAB]%d4[ICON_GOLD]</English>
         <French>[PARAGRAPH:1]%d1%F2 vendu à %d3[ICON_GOLD]   [TAB]%d4[ICON_GOLD]</French>
         <German>[PARAGRAPH:1]%d1%F2 zu je %d3[ICON_GOLD] für[TAB]%d4[ICON_GOLD] verkauft</German>
-        <Italian>Vendita di %d1%F2 @ %d3[ICON_GOLD] per %d4[ICON_GOLD]</Italian>
-        <Spanish>Venta de %d1 %F2 a %d3[ICON_GOLD] por un total de %d4[ICON_GOLD]</Spanish>
+        <Italian>[PARAGRAPH:1]Vendita di %d1%F2 @ %d3[ICON_GOLD] per %d4[ICON_GOLD]</Italian>
+        <Spanish>[PARAGRAPH:1]Venta de %d1 %F2 a %d3[ICON_GOLD] por un total de %d4[ICON_GOLD]</Spanish>
         <Russian>[PARAGRAPH:1]%d1%F2 продано @ %d3[ICON_GOLD]    [TAB]%d4[ICON_GOLD]</Russian>
     </TEXT>
     <TEXT>
@@ -2513,10 +2511,10 @@
     <TEXT>
         <Tag>TXT_KEY_CITY_GROWTH</Tag>
         <English>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]The people are so well-fed and healthy that they bring many children into the world - the city is growing!</English>
-        <French>[COLOR_REVERT]%s1_city : [COLOR_POSITIVE_TEXT]L'abondance de nourriture à a permis à la population de croître !</French>
+        <French>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]L'abondance de nourriture à a permis à la population de croître !</French>
         <German>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Die Menschen sind so wohlgenährt und gesund, dass sie viele Kinder in die Welt setzen - die Stadt wächst!</German>
-        <Italian>[COLOR_REVERT]%s1_city : [COLOR_POSITIVE_TEXT]L'abbondanza di cibo a ha causato un aumento della popolazione!</Italian>
-        <Spanish>[COLOR_REVERT]%s1_city : [COLOR_POSITIVE_TEXT]La abundancia de Alimentos en ha comportado un aumento de población.</Spanish>
+        <Italian>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]L'abbondanza di cibo a ha causato un aumento della popolazione!</Italian>
+        <Spanish>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]La abundancia de Alimentos en ha comportado un aumento de población.</Spanish>
         <Russian>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Люди настолько сыты и здоровы, что рожают на свет много детей - город растет!</Russian>
     </TEXT>
     <TEXT>
@@ -2558,10 +2556,10 @@
     <TEXT>
         <Tag>TXT_KEY_HURRY_IMMIGRATION</Tag>
         <English>Hurry Emigration</English>
-        <French>Accélérer Immigration</French>
+        <French>Accélérer émigration</French>
         <German>Auswanderung beschleunigen</German>
-        <Italian>Accelera l'immigrazione</Italian>
-        <Spanish>Acelerar la inmigración</Spanish>
+        <Italian>Accelera l'emigrazione</Italian>
+        <Spanish>Acelerar la emigración</Spanish>
         <Russian>Ускорить эмиграцию</Russian>
     </TEXT>
     <TEXT>
@@ -2611,19 +2609,19 @@
     <TEXT>
         <Tag>TXT_KEY_POPUP_CANNOT_TRAIN_WORK_NEXT</Tag>
         <English>[COLOR_SELECTED_TEXT]%s2_CityName%s3[COLOR_REVERT][NEWLINE][NEWLINE]You cannot continue training a [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]. What would you like to work on instead?</English>
-        <French>Vous ne pouvez pas poursuivre l'entraînement d'1 [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] à %s2_CityName%s3. Que souhaitez-vous faire à la place ?</French>
+        <French>[COLOR_SELECTED_TEXT]%s2_CityName%s3[COLOR_REVERT][NEWLINE][NEWLINE]Vous ne pouvez pas poursuivre l'entraînement d'1 [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]. Que souhaitez-vous faire à la place ?</French>
         <German>[COLOR_SELECTED_TEXT]%s2_CityName%s3[COLOR_REVERT][NEWLINE][NEWLINE]Ihr könnt die Ausbildung der Einheit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] nicht fortsetzen. Was wollt Ihr stattdessen tun?</German>
-        <Italian>Non puoi più continuare a realizzare l'unità [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] a %s2_CityName%s3. Cosa vuoi realizzare al suo posto?</Italian>
-        <Spanish>No podéis seguir entrenando [NUM1:al:a la:a los:a las] [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] en %s2_CityName%s3. ¿Qué queréis hacer en su lugar?</Spanish>
+        <Italian>[COLOR_SELECTED_TEXT]%s2_CityName%s3[COLOR_REVERT][NEWLINE][NEWLINE]Non puoi più continuare a realizzare l'unità [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]. Cosa vuoi realizzare al suo posto?</Italian>
+        <Spanish>[COLOR_SELECTED_TEXT]%s2_CityName%s3[COLOR_REVERT][NEWLINE][NEWLINE]No podéis seguir entrenando [NUM1:al:a la:a los:a las] [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]. ¿Qué queréis hacer en su lugar?</Spanish>
         <Russian>[COLOR_WARNING_TEXT]%s2_CityName%s3[COLOR_REVERT][NEWLINE][NEWLINE]Невозможно продолжать производство [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]. Чем стоит заняться вместо этого?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_CANNOT_CONSTRUCT_WORK_NEXT</Tag>
         <English>[COLOR_SELECTED_TEXT]%s2_CityName%s3[COLOR_REVERT][NEWLINE][NEWLINE]You cannot continue constructing a [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT]. What would you like to work on instead?</English>
-        <French>Vous ne pouvez pas continuer à construire 1 [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT] à %s2_CityName%s3. Que voulez-vous faire à la place ?</French>
+        <French>[COLOR_SELECTED_TEXT]%s2_CityName%s3[COLOR_REVERT][NEWLINE][NEWLINE]Vous ne pouvez pas continuer à construire 1 [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT]. Que voulez-vous faire à la place ?</French>
         <German>[COLOR_SELECTED_TEXT]%s2_CityName%s3[COLOR_REVERT][NEWLINE][NEWLINE]Ihr könnt die Errichtung des Gebäudes [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT] nicht abschließen. Was wollt Ihr stattdessen tun?</German>
-        <Italian>Non puoi continuare a costruire l'edificio [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT] a %s2_CityName%s3. Cosa vuoi realizzare al suo posto?</Italian>
-        <Spanish>No podéis construir [NUM1:un:una:unos:unas] [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT] en %s2_CityName%s3. ¿Qué queréis hacer en su lugar?</Spanish>
+        <Italian>[COLOR_SELECTED_TEXT]%s2_CityName%s3[COLOR_REVERT][NEWLINE][NEWLINE]Non puoi continuare a costruire l'edificio [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT]. Cosa vuoi realizzare al suo posto?</Italian>
+        <Spanish>[COLOR_SELECTED_TEXT]%s2_CityName%s3[COLOR_REVERT][NEWLINE][NEWLINE]No podéis construir [NUM1:un:una:unos:unas] [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT]. ¿Qué queréis hacer en su lugar?</Spanish>
         <Russian>[COLOR_SELECTED_TEXT]%s2_CityName%s3[COLOR_REVERT][NEWLINE][NEWLINE]Невозможно продолжать строительство [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT]. Над чем бы вы хотели работать вместо этого?</Russian>
     </TEXT>
     <TEXT>
@@ -2638,28 +2636,28 @@
     <TEXT>
         <Tag>TXT_KEY_POPUP_CHOOSE_COMLPETED_BUILD</Tag>
         <English>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]You now have extra [COLOR_UNIT_TEXT]%s1_goods[COLOR_REVERT]. What do you wish to finish producing?</English>
-        <French>Vous avez à présent un supplément de [COLOR_UNIT_TEXT]%s1_goods[COLOR_REVERT] à %s2_city. Quelle production voulez-vous achever ?</French>
+        <French>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]Vous avez à présent un supplément de [COLOR_UNIT_TEXT]%s1_goods[COLOR_REVERT]. Quelle production voulez-vous achever ?</French>
         <German>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]Ihr verfügt nun über mehr [COLOR_UNIT_TEXT]%s1_goods[COLOR_REVERT]. Welche Produktion soll abgeschlossen werden?</German>
-        <Italian>Ora hai [COLOR_UNIT_TEXT]%s1_goods[COLOR_REVERT] in più, a %s2_city. Cosa vuoi finire di produrre?</Italian>
-        <Spanish>Ahora tenéis más [COLOR_UNIT_TEXT]%s1_goods[COLOR_REVERT] en %s2_city. ¿Qué queréis que deje de producirse?</Spanish>
+        <Italian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]Ora hai [COLOR_UNIT_TEXT]%s1_goods[COLOR_REVERT] in più. Cosa vuoi finire di produrre?</Italian>
+        <Spanish>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]Ahora tenéis más [COLOR_UNIT_TEXT]%s1_goods[COLOR_REVERT]. ¿Qué queréis que deje de producirse?</Spanish>
         <Russian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]Нужное количество [COLOR_UNIT_TEXT]%s1_goods[COLOR_REVERT] поступило на склад. Производство чего мы должны завершить?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MINIMIZED_CHOOSE_YIELD_BUILD</Tag>
         <English>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]You now have extra [COLOR_UNIT_TEXT]%s1_goods[COLOR_REVERT] to finish production.</English>
-        <French>Vous avez à présent un supplément de [COLOR_UNIT_TEXT]%s1_goods[COLOR_REVERT] à %s2_city pour achever la production.</French>
+        <French>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]Vous avez à présent un supplément de [COLOR_UNIT_TEXT]%s1_goods[COLOR_REVERT] pour achever la production.</French>
         <German>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]Ihr verfügt nun über mehr [COLOR_UNIT_TEXT]%s1_goods[COLOR_REVERT], um die Produktion abzuschließen.</German>
-        <Italian>Ora hai [COLOR_UNIT_TEXT]%s1_goods[COLOR_REVERT] in più a %s2_city per terminare la produzione.</Italian>
-        <Spanish>Ahora tenéis más [COLOR_UNIT_TEXT]%s1_goods[COLOR_REVERT] en %s2_city para acabar la producción.</Spanish>
+        <Italian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]Ora hai [COLOR_UNIT_TEXT]%s1_goods[COLOR_REVERT] in più per terminare la produzione.</Italian>
+        <Spanish>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]Ahora tenéis más [COLOR_UNIT_TEXT]%s1_goods[COLOR_REVERT] para acabar la producción.</Spanish>
         <Russian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]Теперь у вас достаточно запасов [COLOR_UNIT_TEXT]%s1_goods[COLOR_REVERT] для завершения производства.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_MISSING_YIELD</Tag>
         <English>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]A [COLOR_BUILDING_TEXT]%s1_item[COLOR_REVERT] is awaiting [COLOR_HIGHLIGHT_TEXT]%s3_yield[COLOR_REVERT] for completion.[NEWLINE]</English>
-        <French>%s3_yield requis pour terminer la production de l'objet %s1_item dans la ville %s2_city.</French>
+        <French>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]%s3_yield requis pour terminer la production de l'objet %s1_item.</French>
         <German>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]Für [COLOR_BUILDING_TEXT]%s1_item[COLOR_REVERT] wird noch [COLOR_HIGHLIGHT_TEXT]%s3_yield[COLOR_REVERT] zur Fertigstellung benötigt.[NEWLINE]</German>
-        <Italian>%s1_item a %s2_city richiede %s3_yield per il completamento</Italian>
-        <Spanish>[NUM1:Un:Una:Unos:Unas] %s1_item en %s2_city [NUM1:aguarda:aguarda:aguardan:aguardan] %s3_yield para completarse</Spanish>
+        <Italian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]%s1_item richiede %s3_yield per il completamento</Italian>
+        <Spanish>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE][NUM1:Un:Una:Unos:Unas] %s1_item [NUM1:aguarda:aguarda:aguardan:aguardan] %s3_yield para completarse</Spanish>
         <Russian>[COLOR_WARNING_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]Ожидаем поставки [COLOR_HIGHLIGHT_TEXT]%s3_yield[COLOR_REVERT] для завершения производства [COLOR_BUILDING_TEXT]%s1_item[COLOR_REVERT].[NEWLINE]</Russian>
     </TEXT>
     <TEXT>
@@ -2710,22 +2708,22 @@
     <TEXT>
         <Tag>TXT_KEY_CITY_STARVING</Tag>
         <English>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Citizens are abandoning the city in search of food[COLOR_REVERT]</English>
-        <French>Les citoyens fuient [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] à la recherche de nourriture.</French>
+        <French>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Les citoyens fuient à la recherche de nourriture[COLOR_REVERT]</French>
         <German>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Die Bürger verlassen die Stadt auf der Suche nach Nahrung[COLOR_REVERT]</German>
-        <Italian>I cittadini abbandonano [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] alla ricerca di cibo</Italian>
-        <Spanish>Los ciudadanos abandonan [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] en busca de Alimentos.</Spanish>
+        <Italian>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]I cittadini abbandonano alla ricerca di cibo[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Los ciudadanos abandonan en busca de Alimentos[COLOR_REVERT]</Spanish>
         <Russian>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Жители покидают город в поисках еды[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_STARVING_AND_REVOLTING</Tag>
         <English>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Citizens are starving. The lack of support from the government has caused them to rebel[COLOR_REVERT]</English>
-        <German>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Die Bürger verhunger. Die ausbleibende Unterstützung durch die Regierung hat zu Revolten geführt.[COLOR_REVERT]</German>
+        <German>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Die Bürger hungern! Die ausbleibende Unterstützung durch die Regierung hat zu einem Aufstand geführt.[COLOR_REVERT]</German>
         <Russian>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Жители голодают. Отсутствие поддержки со стороны правительства побудило их к восстанию.[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_STARVING_BUT_COLONIES_PAID</Tag>
         <English>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Citizens are starving. The government however has granted emergency funding of %d2_gold[ICON_GOLD] to deliver %d3_food[ICON_FOOD] to the city.[COLOR_REVERT]</English>
-        <German>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Die Bürger verhunger. Die Regierung hat jedoch eine Notfallzahlung von %d2_gold[ICON_GOLD] gestattet, um %d3_food[ICON_FOOD] in die Stadt zu liefern.[COLOR_REVERT]</German>
+        <German>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Die Bürger verhungern. Die Regierung hat jedoch die Ausgabe von %d2_gold[ICON_GOLD] genehmigt, um %d3_food[ICON_FOOD] in die Stadt liefern zu lassen.[COLOR_REVERT]</German>
         <Russian>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Горожане голодают. Однако правительство предоставило экстренное финансирование в размере %d2_gold[ICON_GOLD] для доставки %d3_food[ICON_FOOD] в город.[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
@@ -2801,17 +2799,17 @@
     <TEXT>
         <Tag>TXT_KEY_GOODS_LOST_SOLD</Tag>
         <English>%s3_city : Due to limited storage capacity a surplus of %d1_number%F2_yield_icon has been sold for %d4[ICON_GOLD].</English>
-        <French>Un surplus de %d1_number%F2_yield_icon à %s3_city a été vendu pour %d4[ICON_GOLD] en raison d'une capacité de stockage limitée.</French>
+        <French>%s3_city : Un surplus de %d1_number%F2_yield_icon a été vendu pour %d4[ICON_GOLD] en raison d'une capacité de stockage limitée.</French>
         <German>%s3_city : Aus Mangel an freier Lagerkapazität wurde ein Überschuss von %d1_number%F2_yield_icon für %d4[ICON_GOLD] verramscht.</German>
-        <Italian>Un eccesso di %d1_number%F2_yield_icon a %s3_city è stato venduto per %d4[ICON_GOLD] a causa della limitata capienza dei depositi</Italian>
-        <Spanish>Un superávit de %d1_number%F2_yield_icon en %s3_city se ha vendido por %d4[ICON_GOLD] debido al límite de la capacidad de almacenamiento.</Spanish>
+        <Italian>%s3_city : Un eccesso di %d1_number%F2_yield_icon è stato venduto per %d4[ICON_GOLD] a causa della limitata capienza dei depositi</Italian>
+        <Spanish>%s3_city : Un superávit de %d1_number%F2_yield_icon se ha vendido por %d4[ICON_GOLD] debido al límite de la capacidad de almacenamiento.</Spanish>
         <Russian>%s3_city : Из-за ограниченной емкости хранилища излишки %d1_number%F2_yield_icon были проданы за %d4[ICON_GOLD].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_YIELD_OVERFLOW_SELL_PERCENT</Tag>
         <English>[ICON_BULLET]Goods over storage capacity are sold at %d1%% of the price in Europe</English>
         <French>[ICON_BULLET]Les marchandises excédant la capacité de stockage sont vendues à %d1%% de leur prix en Europe.</French>
-        <German>[ICON_BULLET]Die Hälfte der Lagerüberschüsse wird zu Rundenbeginn zu %d1%% des Preises in Europa verkauft</German>
+        <German>[ICON_BULLET]Die Hälfte der überschüssigen Lagerbestände wird zu Rundenbeginn zu %d1%% des Preises in Europa verkauft</German>
         <Italian>[ICON_BULLET]I beni che superano la capienza dei depositi vengono venduti al %d1%% del prezzo in Europa</Italian>
         <Spanish>[ICON_BULLET]Las mercancías que sobrepasan la capacidad de almacenamiento se venden al %d1%% de su precio en Europa.</Spanish>
         <Russian>[ICON_BULLET]Товары сверх вместимости продаются за %d1%% от цены в Европе</Russian>
@@ -2880,10 +2878,10 @@
     <TEXT>
         <Tag>TXT_KEY_DESIRED_YIELD_CHANGE</Tag>
         <English>The [COLOR_HIGHLIGHT_TEXT]%s1_adjective[COLOR_REVERT] settlement of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] now desires %s3_goods</English>
-        <French>%s2_city, colonie %s1_adjective, demande désormais des %s3_goods.</French>
+        <French>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], colonie [COLOR_HIGHLIGHT_TEXT]%s1_adjective[COLOR_REVERT], demande désormais des %s3_goods.</French>
         <German>Die [COLOR_HIGHLIGHT_TEXT]%s1:3_adjective[COLOR_REVERT] Siedlung [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] verlangt nun nach %s3_goods</German>
-        <Italian>L'insediamento %s1_adjective di %s2_city ora desidera %s3_goods</Italian>
-        <Spanish>El asentamiento %s1:1_adjective de %s2_city ahora quiere %s3_goods.</Spanish>
+        <Italian>L'insediamento [COLOR_HIGHLIGHT_TEXT]%s1_adjective[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ora desidera %s3_goods</Italian>
+        <Spanish>El asentamiento [COLOR_HIGHLIGHT_TEXT]%s1:1_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ahora quiere %s3_goods.</Spanish>
         <Russian>Поселение [COLOR_HIGHLIGHT_TEXT]%s1_adjective[COLOR_REVERT] индейцев [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] теперь нуждается в %s3_goods</Russian>
     </TEXT>
     <TEXT>
@@ -2978,11 +2976,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_UNITS_POPUP_NO_MORE</Tag>
-        <English>Don't remind me again</English>
+        <English>Don't remind me again !</English>
         <French>Pas la peine de me le rappeler !</French>
-        <German>Erinnert mich nicht noch einmal daran.</German>
-        <Italian>Non ricordarmelo più.</Italian>
-        <Spanish>No me lo volváis a recordar</Spanish>
+        <German>Erinnert mich nicht noch einmal daran !</German>
+        <Italian>Non ricordarmelo più !</Italian>
+        <Spanish>¡No me lo volváis a recordar !</Spanish>
         <Russian>Больше не напоминать</Russian>
     </TEXT>
     <TEXT>
@@ -3006,10 +3004,10 @@
     <TEXT>
         <Tag>TXT_KEY_MISC_CIV_DESTROYED</Tag>
         <English>A historic moment : the [COLOR_HIGHLIGHT_TEXT]%s1:2_CivAdj[COLOR_REVERT] have been defeated!</English>
-        <French>Les %s1:2_CivAdj ont été vaincus !</French>
+        <French>Les [COLOR_HIGHLIGHT_TEXT]%s1:2_CivAdj[COLOR_REVERT] ont été vaincus !</French>
         <German>Ein historischer Augenblick : Die [COLOR_HIGHLIGHT_TEXT]%s1:3_CivAdj[COLOR_REVERT] Nation wurde vernichtet!</German>
-        <Italian>%s1:2_CivAdj sconfitti!</Italian>
-        <Spanish>¡Los %s1:3_CivAdj han sido derrotados!</Spanish>
+        <Italian>[COLOR_HIGHLIGHT_TEXT]%s1:2_CivAdj[COLOR_REVERT] sconfitti!</Italian>
+        <Spanish>¡Los [COLOR_HIGHLIGHT_TEXT]%s1:3_CivAdj[COLOR_REVERT] han sido derrotados!</Spanish>
         <Russian>Исторический момент : [COLOR_HIGHLIGHT_TEXT]%s1:2_CivAdj[COLOR_REVERT] побежден!</Russian>
     </TEXT>
     <TEXT>
@@ -3024,19 +3022,19 @@
     <TEXT>
         <Tag>EUROPE_SCREEN_BUY_UNIT_LACK_FUNDS</Tag>
         <English>Insufficient funds to purchase [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] (requires %d2[ICON_GOLD])</English>
-        <French>Fonds insuffisants pour acheter %s1_unit (nécessite %d2[ICON_GOLD])</French>
+        <French>Fonds insuffisants pour acheter [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] (nécessite %d2[ICON_GOLD])</French>
         <German>Ungenügende Mittel, um Einheit [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] zu erwerben (benötigt %d2[ICON_GOLD])</German>
-        <Italian>Fondi insufficienti per acquistare l'unità %s1_unit (richiede %d2[ICON_GOLD])</Italian>
-        <Spanish>No hay fondos suficientes para comprar unidades de %s1_unit (se necesita %d2[ICON_GOLD])</Spanish>
+        <Italian>Fondi insufficienti per acquistare l'unità [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] (richiede %d2[ICON_GOLD])</Italian>
+        <Spanish>No hay fondos suficientes para comprar unidades de [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] (se necesita %d2[ICON_GOLD])</Spanish>
         <Russian>Недостаточно средств для покупки [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] (требуется %d2[ICON_GOLD])</Russian>
     </TEXT>
     <TEXT>
         <Tag>EUROPE_SCREEN_RECRUIT_UNIT_LACK_FUNDS</Tag>
         <English>Insufficient funds to hurry [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] (requires %d2[ICON_GOLD])</English>
-        <French>Fonds insuffisants pour accélérer la production de l'unité %s1_unit (nécessite %d2[ICON_GOLD])</French>
+        <French>Fonds insuffisants pour accélérer la production de l'unité [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] (nécessite %d2[ICON_GOLD])</French>
         <German>Ungenügende Mittel, um die Fertigstellung von [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] zu beschleunigen (benötigt %d2[ICON_GOLD])</German>
-        <Italian>Fondi insufficienti per affrettare l'unità %s1_unit (richiede %d2[ICON_GOLD])</Italian>
-        <Spanish>No hay fondos suficientes para acelerar las unidades de %s1_unit (se necesita %d2[ICON_GOLD])</Spanish>
+        <Italian>Fondi insufficienti per affrettare l'unità [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] (richiede %d2[ICON_GOLD])</Italian>
+        <Spanish>No hay fondos suficientes para acelerar las unidades de [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] (se necesita %d2[ICON_GOLD])</Spanish>
         <Russian>Недостаточно средств для ускорения производства [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] (требуется %d2[ICON_GOLD])</Russian>
     </TEXT>
     <TEXT>
@@ -3129,7 +3127,7 @@
         <English>Ask to speak with the chief</English>
         <French>Demander à parler avec le chef</French>
         <German>Um ein Gespräch mit dem Häuptling bitten</German>
-        <Italian>Chiedi di parlare con il capo.</Italian>
+        <Italian>Chiedi di parlare con il capo</Italian>
         <Spanish>Pido hablar con el jefe</Spanish>
         <Russian>Просить разговора с вождем</Russian>
     </TEXT>
@@ -3138,7 +3136,7 @@
         <English>Live among the Natives</English>
         <French>Vivre parmi les indigènes</French>
         <German>Bei den Ureinwohnern leben und von ihnen lernen</German>
-        <Italian>Vivi tra i nativi.</Italian>
+        <Italian>Vivi tra i nativi</Italian>
         <Spanish>Vivir entre los Nativos</Spanish>
         <Russian>Жить среди индейцев</Russian>
     </TEXT>
@@ -3147,7 +3145,7 @@
         <English>Establish a mission</English>
         <French>Etablir une mission</French>
         <German>Eine Mission errichten</German>
-        <Italian>Fonda una missione.</Italian>
+        <Italian>Fonda una missione</Italian>
         <Spanish>Fundar una misión</Spanish>
         <Russian>Основать миссию</Russian>
     </TEXT>
@@ -3156,8 +3154,8 @@
         <English>Establish a mission[NEWLINE]Success rate : %d1_success</English>
         <French>Etablir une mission[NEWLINE]Chances de réussite : %d1_success</French>
         <German>Eine Mission errichten[NEWLINE]Erfolgschance : %d1_success</German>
-        <Italian>Fonda una missione.[NEWLINE]Success rate : %d1_success</Italian>
-        <Spanish>Fundar una misión[NEWLINE]Success rate : %d1_success</Spanish>
+        <Italian>Fonda una missione[NEWLINE]Possibilità di successo : %d1_success</Italian>
+        <Spanish>Fundar una misión[NEWLINE]Probabilidades de éxito : %d1_success</Spanish>
         <Russian>Основать христианскую миссию в деревне индейцев[NEWLINE]Шанс успеха : %d1_success</Russian>
     </TEXT>
     <TEXT>
@@ -3165,7 +3163,7 @@
         <English>Enter trade negotiations</English>
         <French>Ouvrir des négociations commerciales</French>
         <German>Handelsverhandlungen starten</German>
-        <Italian>Avvia trattative commerciali.</Italian>
+        <Italian>Avvia trattative commerciali</Italian>
         <Spanish>Negociar intercambios</Spanish>
         <Russian>Вступить в торговые переговоры</Russian>
     </TEXT>
@@ -3174,7 +3172,7 @@
         <English>Just passing through</English>
         <French>Ne faire que passer</French>
         <German>Nur auf der Durchreise</German>
-        <Italian>Sono solo di passaggio.</Italian>
+        <Italian>Sono solo di passaggio</Italian>
         <Spanish>Solo pasaba por aquí</Spanish>
         <Russian>Мы просто идем мимо</Russian>
     </TEXT>
@@ -3183,7 +3181,7 @@
         <English>Nothing, and please don't ask again!</English>
         <French>Rien, et ne me posez plus la question, merci !</French>
         <German>Nichts, und fragt bitte nie wieder!</German>
-        <Italian>Niente. Non chiedermelo più.</Italian>
+        <Italian>Niente. Non chiedermelo più!</Italian>
         <Spanish>Nada, y no me lo volváis a preguntar</Spanish>
         <Russian>Ничего, и пожалуйста, больше не спрашивайте!</Russian>
     </TEXT>
@@ -3223,7 +3221,7 @@
     <TEXT>
         <Tag>TXT_KEY_MISSION_FAILED</Tag>
         <English>Milord, your missionary failed to establish a mission in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT].</English>
-        <French>Votre missionnaire n'a pas réussi à établir une mission à %s1_CityName.</French>
+        <French>Seigneur, votre missionnaire n'a pas réussi à établir une mission à [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT].</French>
         <German>Milord, Eurem Missionar ist es nicht gelungen, in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] eine Mission zu errichten.</German>
         <Russian>Милорд, нашему миссионеру не удалось договориться с индейцами об установке миссии в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Помолимся за него, братья...</Russian>
     </TEXT>
@@ -3342,7 +3340,7 @@
         <French>%d1 [NUM1:Vétéran:Vétérans] / %d2 Milice</French>
         <German>%d1 [NUM1:Veteran:Veteranen] / %d2 Miliz</German>
         <Italian>%d1 [NUM1:veterano:veterani] / %d2 milizia</Italian>
-        <Spanish>%d1 [NUM1:Veterano:Veteranos]/%d2 Milicia</Spanish>
+        <Spanish>%d1 [NUM1:Veterano:Veteranos] / %d2 Milicia</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SCORE_BREAKDOWN_TAX</Tag>
@@ -3418,8 +3416,8 @@
         <English>Kneel down and hear what We, God-anointed Majesty of the Realm %s2_civ, proclaim to you and to Our Court. You have come to Us with a request. We graciously grant your request. Today - %s1_year - We allow you to sail west, to the edge of the known world and beyond. We give you a ship, arms, tools and some followers. If you discover foreign lands, raise there the banner of your homeland and claim as Our own all the soil, its fruits and the heathen children who reap them. You are charged with the pious duty of proclaiming the Word of God there and increasing the welfare of your King.[NEWLINE][NEWLINE]But We warn you: We have been told that a too free spirit dwells in your heart. Now, this is an ailment that afflicts every explorer. Cure it soon, or We will have you administered a medicine that will taste bad to You. If the devil drives you to act on your own and refuse to respect your King, We will send an expeditionary force after you to bring you back to your senses![NEWLINE][NEWLINE]You may rise, %s3_leader.[NEWLINE][NEWLINE]Your adventure can begin ...[NEWLINE][NEWLINE][BOLD]To achieve a victory :[\BOLD][NEWLINE][ICON_BULLET]Found your colony.[NEWLINE][ICON_BULLET]Declare your independence from your motherland after attaining a 50%% Rebel Sentiment in all your settlements.[NEWLINE][ICON_BULLET]Before time runs out, defend your fledgling country from the wrath of your motherland by wiping out all their ground forces.[NEWLINE][ICON_BULLET]You must complete your revolution before any other European Colony - and your name will be written in the annals.[NEWLINE][PARAGRAPH:1]Meanwhile, to achieve lasting glory, you can take another route. Claim so much land and so many subjects that you must be respected as the dominant power of the New World - even then you will find your place in the annals as a hero.</English>
         <French>En l'an %s1_year, sa Majesté le roi des %s2_civ vous accorde une charte coloniale.[NEWLINE][NEWLINE]Pour la plus grande gloire de la nation, %s3_leader, le roi vous nomme vice-roi du Nouveau Monde. Explorez cette terre, colonisez-la et apportez richesse et gloire à notre grande nation et à vous-même ! [NEWLINE][NEWLINE][BOLD]Pour parvenir à la victoire :[\BOLD][PARAGRAPH:1]Fondez votre colonie.[PARAGRAPH:1]Atteignez un sentiment de révolte de 50%% dans toutes vos colonies pour pouvoir déclarer votre indépendance.[PARAGRAPH:1]Défendez votre nation naissante contre la colère de votre mère patrie en écrasant toutes leurs forces terrestres avant la fin du temps imparti.[PARAGRAPH:1]Vous devez être la première colonie européenne à terminer sa révolution !</French>
         <German>Kniet nieder und vernehmt, was Wir, gottgesalbte Majestät des Reiches %s2_civ, Euch und Unserem Hofe verkünden. Ihr seid zu Uns gekommen und habt eine Bitte vorgetragen. Wir entsprechen gnädig Eurem Anliegen. Heute - %s1_year - gestatten Wir Euch, gen Westen zu segeln, bis zum Rand der bekannten Welt und darüberhinaus. Wir geben Euch ein Schiff, Waffen, Werkzeuge und einige Gefolgsleute mit. Entdeckt Ihr fremdes Land, dann hisst dort das Banner Eurer Heimat und beansprucht allen Boden, seine Früchte und die Heidenkinder, die sie ernten, als Unser Eigen. Euch sei die fromme Pflicht aufgetragen, dort das Wort Gottes zu verkünden und das Wohl Eures Königs zu mehren.[NEWLINE][NEWLINE]Doch Wir warnen Euch: Uns wurde berichtet, ein allzu freier Geist hause in Eurem Herzen. Nun, dies ist ein Zipperlein, das wohl jeden Entdecker plagt. Kuriert es bald aus, sonst werden Wir Euch eine Medizin verabreichen lassen, die Euch schlecht schmecken wird. Falls Euch der Teufel reitet, auf eigene Faust zu handeln und Eurem König den Respekt zu verweigern, werden Wir Euch ein Expeditionskorps nachsenden, dass Euch wieder zur Raison bringt![NEWLINE][NEWLINE]Ihr dürft Euch erheben, %s3_leader.[NEWLINE]Euer Abenteuer kann beginnen ...[NEWLINE][NEWLINE][BOLD]Um den Sieg zu erringen :[\BOLD][NEWLINE][ICON_BULLET]Gründet Eure Kolonie.[NEWLINE][ICON_BULLET]Erklärt Eure Unabhängigkeit von Eurem Mutterland, sobald mindestens 50%% Rebellische Stimmung in all Euren Siedlungen herrscht.[NEWLINE][ICON_BULLET]Verteidigt Euer junges Land gegen den Zorn Eures Vaterlandes vor Ablauf der Zeit, indem Ihr all seine Bodeneinheiten auslöscht.[NEWLINE][ICON_BULLET]Schließt Eure Revolution vor allen anderen europäischen Kolonien ab - und Euer Name wird in die Annalen eingehen.[NEWLINE][PARAGRAPH:1]Um bleibenden Ruhm zu erringen, könnt Ihr indes auch einen anderen Weg beschreiten. Nennt so viel Land und Untertanen Euer Eigen, dass man Euch als dominante Macht der Neuen Welt respektieren muss - auch dann werdet Ihr als Held Euren Platz in den Annalen finden.</German>
-        <Italian>Nell'anno %s1_year, sua maestà reale il re di %s2_civ ti conferisce uno statuto coloniale. [NEWLINE][NEWLINE]Per la maggiore gloria della nazione il re nomina te, %s3_leader, viceré del Nuovo Mondo. Esplora queste nuove terre, colonizzale e procura ricchezze e gloria a te stesso e alla nostra grande nazione.[NEWLINE][NEWLINE][BOLD]Per ottenere una vittoria:[\BOLD][PARAGRAPH:1]Fonda la tua colonia.[PARAGRAPH:1]Dichiara l'indipendenza dalla madrepatria dopo aver ottenuto il 50%% di sentimento di ribellione in ogni insediamento.[PARAGRAPH:1]Difendi il giovane stato dall'ira della madrepatria annientandone le forze terrestri prima che scada il tempo. [PARAGRAPH:1]Devi completare la rivoluzione prima di qualsiasi altra colonia europea.</Italian>
-        <Spanish>En el año de %s1_year Su Majestad, el rey de %s2_civ, os concede una carta colonial. [NEWLINE][NEWLINE]Para mayor gloria de la nación, el rey os nombra a vos, %s3_leader, virrey del Nuevo Mundo. Explorad esta nueva tierra, civilizadla y ganad la gloria para vos y para nuestra gran nación.[NEWLINE][NEWLINE][BOLD]Para conseguir una victoria:[\BOLD][PARAGRAPH:1]Fundad vuestra colonia.[PARAGRAPH:1]Declaraos independientes de la madre patria tras conseguir un 50%% de sentimiento de rebelión en todos vuestros asentamientos.[PARAGRAPH:1]Defended vuestro incipiente país de la cólera de la madre patria acabando con todas las fuerzas terrestres de ésta antes de que se acabe el tiempo. [PARAGRAPH:1]Debéis completar vuestra revolución antes que ninguna otra colonia europea.</Spanish>
+        <Italian>Nell'anno %s1_year, sua maestà reale il re di %s2_civ ti conferisce uno statuto coloniale.[NEWLINE][NEWLINE]Per la maggiore gloria della nazione il re nomina te, %s3_leader, viceré del Nuovo Mondo. Esplora queste nuove terre, colonizzale e procura ricchezze e gloria a te stesso e alla nostra grande nazione.[NEWLINE][NEWLINE][BOLD]Per ottenere una vittoria:[\BOLD][PARAGRAPH:1]Fonda la tua colonia.[PARAGRAPH:1]Dichiara l'indipendenza dalla madrepatria dopo aver ottenuto il 50%% di sentimento di ribellione in ogni insediamento.[PARAGRAPH:1]Difendi il giovane stato dall'ira della madrepatria annientandone le forze terrestri prima che scada il tempo. [PARAGRAPH:1]Devi completare la rivoluzione prima di qualsiasi altra colonia europea.</Italian>
+        <Spanish>En el año de %s1_year Su Majestad, el rey de %s2_civ, os concede una carta colonial.[NEWLINE][NEWLINE]Para mayor gloria de la nación, el rey os nombra a vos, %s3_leader, virrey del Nuevo Mundo. Explorad esta nueva tierra, civilizadla y ganad la gloria para vos y para nuestra gran nación.[NEWLINE][NEWLINE][BOLD]Para conseguir una victoria:[\BOLD][PARAGRAPH:1]Fundad vuestra colonia.[PARAGRAPH:1]Declaraos independientes de la madre patria tras conseguir un 50%% de sentimiento de rebelión en todos vuestros asentamientos.[PARAGRAPH:1]Defended vuestro incipiente país de la cólera de la madre patria acabando con todas las fuerzas terrestres de ésta antes de que se acabe el tiempo. [PARAGRAPH:1]Debéis completar vuestra revolución antes que ninguna otra colonia europea.</Spanish>
         <Russian>Преклоните колени и слушайте, что Мы, помазанник Божий на Земле, Король %s2_civ, объявляем вам и Нашему Двору. Вы обратились к Нам с просьбой. Мы любезно удовлетворяем её. Сегодня - %s1_year - Мы позволяем вам плыть на запад, на край известного мира и дальше. Мы даём вам корабль, оружие, инструменты и несколько спутников. Если вы откроете неизведанную территорию, поднимите там Наши знамёна и объявите Нашей собственностью всю землю, её плоды и язычников, которые их пожинают. На вас возложена благочестивая обязанность проповедовать там Слово Божье и увеличивать благосостояние вашего Короля.[NEWLINE][NEWLINE]Но Мы предупреждаем вас: Нам сообщили, что в вашем сердце обитает слишком свободный дух. Это недуг, поражающий каждого исследователя. Излечите его как можно скорее или Мы будем вынуждены дать вам лекарство, которое будет неприятным для вас. Если дьявол станет побуждает вас действовать самостоятельно и отказываться уважать своего Короля, Мы пошлем за вами экспедиционный корпус, чтобы привести вас в чувство![NEWLINE][NEWLINE]Можете встать, %s3_leader.[NEWLINE][NEWLINE]Отправляйтесь в путь и да хранит вас Господь...[NEWLINE][NEWLINE][BOLD]Чтобы добиться победы:[\BOLD][NEWLINE][ICON_BULLET]Постройте свою колонию[NEWLINE][ICON_BULLET]Заявите о своей независимости от сюзерена по достижении 50%% мятежных настроений во всех ваших поселениях[NEWLINE][ICON_BULLET]Пока не истечет время, защищайте свою молодую страну от гнева Короля, уничтожив все наземные силы, отправленные им для подавления восстания[NEWLINE][ICON_BULLET]Вы должны начать вашу революцию раньше, чем любая другая европейская колония. И тогда ваше имя навсегда будет вписано в анналы истории[NEWLINE][PARAGRAPH:1]Хотя, чтобы добиться непреходящей славы, вы можете выбрать и другой путь. Захватите столько земли и столько подданных, чтобы вас уважали, как доминирующую силу Нового Света — и тогда вы также займёте свое место в анналах как герой завоеваний.</Russian>
     </TEXT>
     <TEXT>
@@ -3443,10 +3441,10 @@
     <TEXT>
         <Tag>TXT_KEY_CITY_POPULATION</Tag>
         <English>[NEWLINE]Population : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</English>
-        <French>Population : %d1</French>
+        <French>[NEWLINE]Population : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</French>
         <German>[NEWLINE]Bevölkerung : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</German>
-        <Italian>Popolazione: %d1</Italian>
-        <Spanish>Población: %d1</Spanish>
+        <Italian>[NEWLINE]Popolazione : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</Italian>
+        <Spanish>[NEWLINE]Población : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</Spanish>
         <Russian>[NEWLINE]Количество жителей : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
@@ -3460,25 +3458,25 @@
         <English>Slave Production Bonus : [COLOR_HIGHLIGHT_TEXT]%d1%%[COLOR_REVERT]</English>
         <German>Produktionsbonus für Sklaven : [COLOR_HIGHLIGHT_TEXT]%d1%%[COLOR_REVERT]</German>
         <Russian>Бонус производства от рабов : [COLOR_HIGHLIGHT_TEXT]%d1%%[COLOR_REVERT]</Russian>
-    </TEXT>	
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_DEFAULT_STORAGE</Tag>
         <English>Storage Capacity by Buildings : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</English>
-        <German>Lagerkapazität durch Gebäude: [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</German>
+        <German>Lagerkapazität durch Gebäude : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</German>
         <Russian>Емкость хранилища от строений : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_IMPROVEMENT_STORAGE</Tag>
         <English>Storage Capacity by Improvements : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</English>
-        <German>Lagerkapazität durch Geländeverbesserungen: [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</German>
+        <German>Lagerkapazität durch Geländeverbesserungen : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</German>
         <Russian>Емкость хранилища от улучшений : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_RESULTING_CITY_TOTAL_STORAGE</Tag>
         <English>Total Resulting Storage Capacity : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</English>
-        <German>Resultierende Gesamtlagerkapzität: [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</German>
+        <German>Resultierende Gesamtlagerkapazität : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</German>
         <Russian>Общая емкость хранилища : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</Russian>
-    </TEXT>	
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHANGE_NAME_CITY</Tag>
         <English>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Click &gt;[COLOR_REVERT][NEWLINE]to change the name of the colony</English>

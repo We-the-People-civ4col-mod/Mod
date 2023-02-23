@@ -1,937 +1,271 @@
 Version=11
 BeginGame
-	Era=ERA_DISCOVERY
-	Speed=GAMESPEED_TAC_NORMAL
-	Calendar=CALENDAR_DEFAULT
-	Victory=VICTORY_REVOLUTION
-	Victory=VICTORY_DOMINATION
-	GameTurn=0
-	MaxTurns=0
-	MaxCityElimination=0
-	NumAdvancedStartPoints=660
-	TargetScore=0
-	StartYear=1492
-	Description=TXT_KEY_WORLDBUILDER_TAC_EAST_COAST_DESC
+	Description=TXT_KEY_WORLDBUILDER_EAST_COAST_DESC
 	ModPath=
 	WBNorthAmericanNative=1
 	WBSouthAmericanNative=0
-	WBCentralAmericanNative=0
+	WBCentralAmericanNative=1
 EndGame
-BeginTeam
-	TeamID=0
-	ContactWithTeam=0
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=47
-	ContactWithTeam=48
-	AtWar=48
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=1
-	ContactWithTeam=1
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=47
-	ContactWithTeam=48
-	AtWar=48
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=2
-	ContactWithTeam=0
-	ContactWithTeam=1
-	ContactWithTeam=2
-	ContactWithTeam=4
-	ContactWithTeam=5
-	ContactWithTeam=6
-	ContactWithTeam=7
-	ContactWithTeam=8
-	ContactWithTeam=9
-	ContactWithTeam=10
-	ContactWithTeam=11
-	ContactWithTeam=12
-	ContactWithTeam=13
-	ContactWithTeam=14
-	ContactWithTeam=15
-	ContactWithTeam=16
-	ContactWithTeam=17
-	ContactWithTeam=18
-	ContactWithTeam=19
-	ContactWithTeam=20
-	ContactWithTeam=21
-	ContactWithTeam=22
-	ContactWithTeam=23
-	ContactWithTeam=24
-	ContactWithTeam=25
-	ContactWithTeam=26
-	ContactWithTeam=27
-	ContactWithTeam=28
-	ContactWithTeam=29
-	ContactWithTeam=30
-	ContactWithTeam=31
-	ContactWithTeam=32
-	ContactWithTeam=33
-	ContactWithTeam=34
-	ContactWithTeam=35
-	ContactWithTeam=36
-	ContactWithTeam=37
-	ContactWithTeam=38
-	ContactWithTeam=39
-	ContactWithTeam=40
-	ContactWithTeam=41
-	ContactWithTeam=42
-	ContactWithTeam=43
-	ContactWithTeam=44
-	ContactWithTeam=45
-	ContactWithTeam=46
-	ContactWithTeam=47
-	ContactWithTeam=48
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=3
-	ContactWithTeam=0
-	ContactWithTeam=1
-	ContactWithTeam=3
-	ContactWithTeam=4
-	ContactWithTeam=5
-	ContactWithTeam=6
-	ContactWithTeam=7
-	ContactWithTeam=8
-	ContactWithTeam=9
-	ContactWithTeam=10
-	ContactWithTeam=11
-	ContactWithTeam=12
-	ContactWithTeam=13
-	ContactWithTeam=14
-	ContactWithTeam=15
-	ContactWithTeam=16
-	ContactWithTeam=17
-	ContactWithTeam=18
-	ContactWithTeam=19
-	ContactWithTeam=20
-	ContactWithTeam=21
-	ContactWithTeam=22
-	ContactWithTeam=23
-	ContactWithTeam=24
-	ContactWithTeam=25
-	ContactWithTeam=26
-	ContactWithTeam=27
-	ContactWithTeam=28
-	ContactWithTeam=29
-	ContactWithTeam=30
-	ContactWithTeam=31
-	ContactWithTeam=32
-	ContactWithTeam=33
-	ContactWithTeam=34
-	ContactWithTeam=35
-	ContactWithTeam=36
-	ContactWithTeam=37
-	ContactWithTeam=38
-	ContactWithTeam=39
-	ContactWithTeam=40
-	ContactWithTeam=41
-	ContactWithTeam=42
-	ContactWithTeam=43
-	ContactWithTeam=44
-	ContactWithTeam=45
-	ContactWithTeam=46
-	ContactWithTeam=47
-	ContactWithTeam=48
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=4
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=4
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=5
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=5
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=6
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=6
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=7
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=7
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=8
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=8
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=9
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=9
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=10
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=10
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=11
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=11
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=12
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=12
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=13
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=13
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=14
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=14
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=15
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=15
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=16
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=16
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=17
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=17
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=18
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=18
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=19
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=19
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=20
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=20
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=21
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=21
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=22
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=22
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=23
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=23
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=24
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=24
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=25
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=25
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=26
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=26
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=27
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=27
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=28
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=28
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=29
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=29
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=30
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=30
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=31
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=31
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=32
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=32
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=33
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=33
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=34
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=34
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=35
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=35
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=36
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=36
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=37
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=37
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=38
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=38
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=39
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=39
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=40
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=40
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=41
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=41
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=42
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=42
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=43
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=43
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=44
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=44
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=45
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=45
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=46
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=46
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=47
-	ContactWithTeam=0
-	ContactWithTeam=1
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=47
-	ContactWithTeam=48
-	PermanentWarPeace=0
-	PermanentWarPeace=1
-	PermanentWarPeace=2
-	PermanentWarPeace=3
-	PermanentWarPeace=48
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=48
-	ContactWithTeam=0
-	ContactWithTeam=1
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=47
-	ContactWithTeam=48
-	AtWar=0
-	AtWar=1
-	PermanentWarPeace=0
-	PermanentWarPeace=1
-	PermanentWarPeace=2
-	PermanentWarPeace=3
-	RevealMap=0
-EndTeam
 BeginPlayer
 	Team=0
-	LeaderType=LEADER_PENN
-	LeaderName=Andreas
-	CivDesc=TXT_KEY_CIVILIZATION_ENGLAND
-	CivShortDesc=TXT_KEY_CIV_ENGLAND_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_ENGLAND_ADJECTIVE
-	CivType=CIVILIZATION_ENGLAND
-	Color=PLAYERCOLOR_DARK_RED
-	ArtStyle=ARTSTYLE_ENGLAND
-	PlayableCiv=1
-	StartingGold=100
-	StartingX=58, StartingY=48
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=1
-	LeaderType=LEADER_HERNAN_CORTES
-	LeaderName=TXT_KEY_LEADER_HERNAN_CORTES
-	CivDesc=TXT_KEY_CIVILIZATION_SPAIN
-	CivShortDesc=TXT_KEY_CIV_SPAIN_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_SPAIN_ADJECTIVE
-	CivType=CIVILIZATION_SPAIN
-	Color=PLAYERCOLOR_DARK_YELLOW
-	ArtStyle=ARTSTYLE_SPAIN
-	PlayableCiv=1
-	StartingGold=100
-	StartingX=71, StartingY=75
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=2
-	LeaderType=LEADER_ENGLISH_KING
-	LeaderName=TXT_KEY_LEADER_ENGLISH_KING
-	CivDesc=TXT_KEY_CIVILIZATION_ENGLAND_EUROPE
-	CivShortDesc=TXT_KEY_CIV_ENGLAND_EUROPE_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_ENGLAND_EUROPE_ADJECTIVE
-	CivType=CIVILIZATION_ENGLAND_EUROPE
-	Color=PLAYERCOLOR_RED_KING
-	ArtStyle=ARTSTYLE_ENGLAND
-	PlayableCiv=0
-	StartingGold=100
-	StartingX=13, StartingY=23
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=3
-	LeaderType=LEADER_SPANISH_KING
-	LeaderName=TXT_KEY_LEADER_SPANISH_KING
-	CivDesc=TXT_KEY_CIVILIZATION_SPAIN_EUROPE
-	CivShortDesc=TXT_KEY_CIV_SPAIN_EUROPE_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_SPAIN_EUROPE_ADJECTIVE
-	CivType=CIVILIZATION_SPAIN_EUROPE
-	Color=PLAYERCOLOR_YELLOW
-	ArtStyle=ARTSTYLE_SPAIN
-	PlayableCiv=0
-	StartingGold=100
-	StartingX=11, StartingY=67
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=4
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=5
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=6
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=7
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=8
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=9
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=10
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=11
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=12
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=13
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=14
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=15
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=16
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=17
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=18
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=19
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=20
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=21
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=22
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=23
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=24
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=25
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=26
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=27
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=28
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=29
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=30
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=31
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=32
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=33
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=34
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=35
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=36
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=37
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=38
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=39
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=40
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=41
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=42
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=43
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=44
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=45
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=46
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=47
-	LeaderType=LEADER_CHURCH
-	LeaderName=TXT_KEY_LEADER_CHURCH
-	CivDesc=TXT_KEY_CIVILIZATION_CHURCH
-	CivShortDesc=TXT_KEY_CIV_CHURCH_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_CHURCH_ADJECTIVE
-	CivType=CIVILIZATION_CHURCH
-	Color=PLAYERCOLOR_WHITE
-	ArtStyle=ARTSTYLE_ENGLAND
-	PlayableCiv=0
-	StartingGold=100
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=48
-	LeaderType=LEADER_BARBARIAN
-	LeaderName=TXT_KEY_LEADER_BARBARIAN
-	CivDesc=TXT_KEY_CIVILIZATION_BARBARIAN
-	CivShortDesc=TXT_KEY_CIV_BARBARIAN_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_BARBARIAN_ADJECTIVE
-	CivType=CIVILIZATION_BARBARIAN
-	Color=PLAYERCOLOR_BLACK
-	ArtStyle=ARTSTYLE_NATIVES_EAST
-	PlayableCiv=0
-	StartingGold=100
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginMap
-	grid width=72
-	grid height=96
+	grid width=40
+	grid height=100
 	top latitude=90
-	bottom latitude=0
+	bottom latitude=-10
 	wrap X=0
 	wrap Y=0
 	world size=WORLDSIZE_LARGE
-	climate=CLIMATE_TEMPERATE
-	sealevel=SEALEVEL_MEDIUM
-	num plots written=6912
+	climate=CLIMATE_ROCKY
+	sealevel=SEALEVEL_HIGH
+	num plots written=4000
 	num signs written=0
-	Randomize Features=false
-	Randomize Resources=false
-	City Catchment Radius=2
+	Randomize Features=true
+	Randomize Resources=true
+	Randomize Goodies=true
 EndMap
 
 ### Plot Info ###

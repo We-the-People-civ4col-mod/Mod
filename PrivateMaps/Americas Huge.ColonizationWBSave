@@ -647,7 +647,7 @@ BeginPlayer
 	StartingX=60, StartingY=85
 	StartingEra=ERA_DISCOVERY
 	RandomStartLocation=false
-	Handicap=HANDICAP_CONQUISTADOR
+	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=7
@@ -1413,7 +1413,7 @@ BeginMap
 	num plots written=8704
 	num signs written=0
 	Randomize Features=true
-	Randomize Resources=false
+	Randomize Resources=true
 	Randomize Goodies=true
 EndMap
 
