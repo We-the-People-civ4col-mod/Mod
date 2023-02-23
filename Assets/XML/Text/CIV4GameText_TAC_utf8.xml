@@ -2164,6 +2164,27 @@
         <Russian>Голландцы</Russian>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_CIV_DUTCH_DESC</Tag>
+        <English>Dutch Colonies</English>
+        <French>
+            <Text>Colonies néerlandaises</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </French>
+         <German>Nieuw-Nederland:Nieuw-Nederland:Nieuw-Nederland</German>
+        <Italian>
+            <Text>Colonie olandesi</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Dominio Holandés</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+        <Russian>Голландские колонии</Russian>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_CIV_DUTCH_EUROPE_ADJECTIVE</Tag>
         <English>Royal Dutch:Royal Dutch</English>
         <French>
@@ -2211,6 +2232,27 @@
             <Plural>0:0:1:1</Plural>
         </Spanish>
         <Russian>Англичане</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_ENGLAND_DESC</Tag>
+        <English>English Colonies</English>
+        <French>
+            <Text>Colonies anglaises</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </French>
+        <German>English Colonies:English Colonies:English Colonies</German>
+        <Italian>
+            <Text>Colonie inglesi</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Dominio Inglés</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+        <Russian>Английские колонии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_ENGLAND_EUROPE_ADJECTIVE</Tag>
@@ -2280,6 +2322,27 @@
             <Gender>Male:Female</Gender>
             <Plural>0:0:1:1</Plural>
         </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_FRANCE_DESC</Tag>
+        <English>French Colonies</English>
+        <French>
+            <Text>Colonies françaises</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </French>
+        <German>La Nouvelle-France:La Nouvelle-France:La Nouvelle-France</German>
+        <Italian>
+            <Text>Colonie francesi</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Dominio Francés</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+        <Russian>Французские колонии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_PORTUGAL_DESC</Tag>
@@ -2496,6 +2559,27 @@
             <Plural>0:0:1:1</Plural>
         </Spanish>
         <Russian>Испанцы</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_SPAIN_DESC</Tag>
+        <English>Spanish Colonies</English>
+        <French>
+            <Text>Colonies espagnoles</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </French>
+        <German>Virreinato de Nueva España:Virreinato de Nueva España:Virreinato de Nueva España</German>
+        <Italian>
+            <Text>Colonie spagnole</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Dominio Español</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+        <Russian>Испанские колонии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SPAIN_EUROPE_ADJECTIVE</Tag>
