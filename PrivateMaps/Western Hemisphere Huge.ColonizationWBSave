@@ -1,6 +1,6 @@
 Version=11
 BeginGame
-	Description=TXT_KEY_WORLDBUILDER_HEMI_HUGE_DESC
+	Description=TXT_KEY_WORLDBUILDER_WESTERN_HEMI_HUGE_DESC
 	ModPath=
 	WBNorthAmericanNative=1
 	WBSouthAmericanNative=1

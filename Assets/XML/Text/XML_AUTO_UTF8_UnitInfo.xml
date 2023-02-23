@@ -1309,7 +1309,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_BUCCANNEER</Tag>
         <English>
-            <Text>Buccanneer:Buccanneers</Text>
+            <Text>Buccaneer:Buccaneers</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
@@ -1327,7 +1327,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BUCCANNEER_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Buccanneers[COLOR_REVERT] are units with hidden nationality which therefore can attack other Nations without a declaration of war. They are not strong fighters. They can only be acquired by purchasing in Port Royal or by rare events.</English>
+        <English>[COLOR_UNIT_TEXT]Buccaneers[COLOR_REVERT] are outlaws, enemies of everyone except their patrons. Being units with hidden nationality they can attack units from other nations without a declaration of war. This also means that everyone will attack them. The warriors in a Native village can easily kill a party of buccaneers.[NEWLINE]Buccaneers can protect your cities, the way a powerful gang keeps things under control. They can only be acquired by purchasing in Port Royal or by rare events.</English>
         <German>[COLOR_UNIT_TEXT]Bukaniere[COLOR_REVERT] sind Einheiten mit verborgener Nationalität und können daher andere Nationen auch ohne Kriegserklärung angreifen. Ansonsten sind sie relativ schwache Kämpfer. Sie können lediglich durch Rekrutierung in Port Royal oder durch seltene Ereignisse erworben werden.</German>
     </TEXT>
     <TEXT>

@@ -1770,10 +1770,10 @@
     <TEXT>
         <Tag>TXT_KEY_TIMETEXT_IMMIGRATION_TITLE</Tag>
         <English>[COLOR_FONT_CREAM]Emigration :[COLOR_REVERT][NEWLINE]</English>
-        <French>[COLOR_FONT_CREAM]Immigration :[COLOR_REVERT][NEWLINE]</French>
+        <French>[COLOR_FONT_CREAM]Émigration :[COLOR_REVERT][NEWLINE]</French>
         <German>[COLOR_FONT_CREAM]Auswanderung :[COLOR_REVERT][NEWLINE]</German>
-        <Italian>[COLOR_FONT_CREAM]Immigration :[COLOR_REVERT][NEWLINE]</Italian>
-        <Spanish>[COLOR_FONT_CREAM]Immigration :[COLOR_REVERT][NEWLINE]</Spanish>
+        <Italian>[COLOR_FONT_CREAM]Emigrazione :[COLOR_REVERT][NEWLINE]</Italian>
+        <Spanish>[COLOR_FONT_CREAM]Emigración :[COLOR_REVERT][NEWLINE]</Spanish>
         <Russian>[COLOR_FONT_CREAM]Эмиграция :[COLOR_REVERT][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
