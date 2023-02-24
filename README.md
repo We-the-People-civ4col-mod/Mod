@@ -25,12 +25,22 @@ Otherwise the mod will not work!
 * Equipping units now requires additional different resources (bakery products, gunpowder)
 * Artillery are now colonist units with equipment (cannons + gunpowder) and have specialists
 * Diversified naval units and royal units
+* Crime/Law System: Larger cities will cause crime which will need to be countered by judges (producing law)
+* New Movement System: Moving through a tile can now require several turns, making slow units much slower in difficult terrain (no more 1 plot/turn)
 
 ### Other gameplay changes
+* Coastal tiles can now be "shallow coast", a terrain type which only small ships can enter
+* Oceans now have "streams", increasing movement in the direction of the stream
 * City growth now gives different types of colonists depending on the people that work in the city (free/forced laborers, ancestry)
 * Slaves will sometimes not run away, but start an armed rebellion against their oppression in the colonies
 * Several new units have been added (buccaneer, slave overseer, slave hunter)
+* Brave Lieutenants and Capable Captains can be earned in battle (like a "small version" of generals/admirals)
+* Your king will now allow you to buy a used ship from time to time
+* Other kings will allow you to buy a random colonist from time to time
+* Battle damage will now sometimes cause a "negative promotion" which can only be removed by fully healing the unit.
+* Many new Founding Fathers have been added (especially covering the new yields)
 * A huge amount of new events
+* Length of game (turns) increased, game speeds adapted. Length of turns in months is now constant throughout the game.
 
 ### Maps
 * All maps have been revised for the new terrains
@@ -44,6 +54,12 @@ Otherwise the mod will not work!
 ### AI
 * Many AI improvements (including several critical issues that greatly impaired the AI)  
 * Logging of AI actions (to enable ensure that LoggingEnabled = 1 is set in CivilizationIV.ini, the log itself is found in Logs\BBAI.log  
+* AI won't get stuck so easily in early game because we start with a period of forced open borders
+
+### Graphics & Sound
+* Unit sizes harmonized
+* Size of buildings on the map harmonized
+* Enhanced the soundtrack by many royalty free titles
 
 ### Bugfixes
 * We fixed so many bugs we don't remember all of them ... ;)
