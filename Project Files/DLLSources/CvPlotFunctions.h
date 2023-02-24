@@ -239,7 +239,6 @@ inline Coordinates operator+(const Coordinates &l, const DirCoordinates &r)
 inline Coordinates operator+(const Coordinates &l, const RelCoordinates &r)
 {
 	FAssert (l.isOnMap());
-	FAssert (Coordinates(l.x()+r.x(), l.y()+r.y()).isOnMap()); // maybe that is not necessary
 	return Coordinates(l.x()+r.x(), l.y()+r.y());
 }
 
@@ -247,11 +246,16 @@ inline void Coordinates::set(int iX, int iY)
 {
 	m_iX = iX;
 	m_iY = iY;
+	if (!isOnMap())
+	{
+		resetInvalid();
+	}
 }
 
 inline void Coordinates::resetInvalid()
 {
-	set(INVALID_PLOT_COORD, INVALID_PLOT_COORD);
+	m_iX = INVALID_PLOT_COORD;
+	m_iY = INVALID_PLOT_COORD;
 }
 
 inline Coordinates Coordinates::neighbour(DirectionTypes direction) const
