@@ -1,7 +1,7 @@
 # Beta Release We The People v4.0-beta1
 **!!!this is still incomplete!!!**
 
-## Important installation instructions
+## Important Installation Instructions
 This branch uses Intel Threading Building blocks to achieve concurrent AI calculations in order to speed up the AI (inter)turn. 
 Before you start:
 
@@ -9,7 +9,7 @@ Before you start:
 
 Otherwise the mod will not work!
 
-## Known issues
+## Known Issues
 * Attacking a stack of civilian units with a stack of own units can cause some of the civilian units to disappear ([#582](https://github.com/We-the-People-civ4col-mod/Mod/issues/582))
 * Attacking a stack of civilian units with a unit having the "multiple attacks per turn" promotion can cause some of the civilian units to disappear ([#582](https://github.com/We-the-People-civ4col-mod/Mod/issues/582))
 * Combat Forecast sometimes not shown ([#557](https://github.com/We-the-People-civ4col-mod/Mod/issues/557))
@@ -17,7 +17,7 @@ Otherwise the mod will not work!
 
 
 ## Changes compared to We The People v3.x
-### Big Changes
+### Major Changes
 * Several new terrains
 * Many new yields and manufacturing products
 * Buildings and specialists for the new yields and manufacturing products
@@ -28,7 +28,7 @@ Otherwise the mod will not work!
 * Crime/Law System: Larger cities will cause crime which will need to be countered by judges (producing law)
 * New Movement System: Moving through a tile can now require several turns, making slow units much slower in difficult terrain (no more 1 plot/turn)
 
-### Other gameplay changes
+### Other Gameplay Changes
 * Coastal tiles can now be "shallow coast", a terrain type which only small ships can enter
 * Oceans now have "streams", increasing movement in the direction of the stream
 * City growth now gives different types of colonists depending on the people that work in the city (free/forced laborers, ancestry)
