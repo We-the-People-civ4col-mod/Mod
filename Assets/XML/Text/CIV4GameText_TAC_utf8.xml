@@ -482,6 +482,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Независимый</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_SEAFARERS_SHORT</Tag>
@@ -535,6 +536,7 @@
         <German>Kult</German>
         <Italian>Sop</Italian>
         <Spanish>Sop</Spanish>
+        <Russian>Культ.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_EXPANSIVE_SHORT</Tag>
@@ -543,6 +545,7 @@
         <German>Exp</German>
         <Italian>Esp</Italian>
         <Spanish>Exp</Spanish>
+        <Russian>Несдерж.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_ADMIRAL_SHORT</Tag>
@@ -551,6 +554,7 @@
         <German>ErfA</German>
         <Italian>ExA</Italian>
         <Spanish>ExA</Spanish>
+        <Russian>Опыт.Адм.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_GENERAL_SHORT</Tag>
@@ -559,6 +563,7 @@
         <German>ErfG</German>
         <Italian>EsG</Italian>
         <Spanish>ExG</Spanish>
+        <Russian>Опыт.Ген.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_AGRICULTURAL_SHORT</Tag>
@@ -585,6 +590,7 @@
         <German>Pat</German>
         <Italian>Pat</Italian>
         <Spanish>Pat</Spanish>
+        <Russian>Бесстраш.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_GATHERER_SHORT</Tag>
@@ -602,6 +608,7 @@
         <German>Vers</German>
         <Italian>Dis</Italian>
         <Spanish>Dis.</Spanish>
+        <Russian>Дисципл.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_LIBERTARIAN_SHORT</Tag>
@@ -619,6 +626,7 @@
         <German>Koop</German>
         <Italian>Coop</Italian>
         <Spanish>Ser.</Spanish>
+        <Russian>Общит.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_TOLERANT_SHORT</Tag>
@@ -627,6 +635,7 @@
         <German>Tol</German>
         <Italian>Toll</Italian>
         <Spanish>Tol.</Spanish>
+        <Russian>Толер.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_DETERMINED_SHORT</Tag>
@@ -635,6 +644,7 @@
         <German>Ent</German>
         <Italian>Det</Italian>
         <Spanish>Dec.</Spanish>
+        <Russian>Решит.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_RESOURCEFUL_SHORT</Tag>
@@ -643,6 +653,7 @@
         <German>Tak</German>
         <Italian>Ing</Italian>
         <Spanish>Ing.</Spanish>
+        <Russian>Наход.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_ENTERPRISING_SHORT</Tag>
@@ -651,6 +662,7 @@
         <German>Chr</German>
         <Italian>Int</Italian>
         <Spanish>Emp.</Spanish>
+        <Russian>Предпреим.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_CONQUEROR_SHORT</Tag>
@@ -659,6 +671,7 @@
         <German>Erob</German>
         <Italian>Con</Italian>
         <Spanish>Con.</Spanish>
+        <Russian>Конк.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_MERCANTILE_SHORT</Tag>
@@ -667,6 +680,7 @@
         <German>Hän</German>
         <Italian>Mer</Italian>
         <Spanish>Mer.</Spanish>
+        <Russian>Меркан.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_CITYBUILDER_SHORT</Tag>
@@ -675,6 +689,7 @@
         <German>Sb</German>
         <Italian>Pro</Italian>
         <Spanish>Pró.</Spanish>
+        <Russian>Зажит.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_PUPIL_SHORT</Tag>
@@ -683,6 +698,7 @@
         <German>Zög</German>
         <Italian>Imp</Italian>
         <Spanish>Imp.</Spanish>
+        <Russian>Любозн.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_TRADER_SHORT</Tag>
@@ -691,6 +707,7 @@
         <German>Hän</German>
         <Italian>Imp</Italian>
         <Spanish>Imp.</Spanish>
+        <Russian>Торг.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_CLIMBER_SHORT</Tag>
@@ -699,6 +716,7 @@
         <German>FeKl</German>
         <Italian>Ind</Italian>
         <Spanish>Ind.</Spanish>
+        <Russian>Скал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_MENTOR_SHORT</Tag>
@@ -707,6 +725,7 @@
         <German>Lehr</German>
         <Italian>Men</Italian>
         <Spanish>Men.</Spanish>
+        <Russian>Наст.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_FORESTWARRIORS_SHORT</Tag>
@@ -715,6 +734,7 @@
         <German>Wakr</German>
         <Italian>Ben</Italian>
         <Spanish>Cor.</Spanish>
+        <Russian>Лес.Воин</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_FARMERS_SHORT</Tag>
@@ -723,6 +743,7 @@
         <German>Bau</German>
         <Italian>Pro</Italian>
         <Spanish>Pró.</Spanish>
+        <Russian>Ферм.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_NOMADS_SHORT</Tag>
@@ -731,6 +752,7 @@
         <German>Nom</German>
         <Italian>Pro</Italian>
         <Spanish>Pró.</Spanish>
+        <Russian>Кочев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_HUNTERS_SHORT</Tag>
@@ -739,6 +761,7 @@
         <German>Hun</German>
         <Italian>Hun</Italian>
         <Spanish>Hun</Spanish>
+        <Russian>Охот.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_RAIDERS_SHORT</Tag>
@@ -747,6 +770,7 @@
         <German>Räu</German>
         <Italian>Pro</Italian>
         <Spanish>Pró.</Spanish>
+        <Russian>Налёт.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_COASTALWARRIORS_SHORT</Tag>
@@ -755,6 +779,7 @@
         <German>Kükr</German>
         <Italian>Pro</Italian>
         <Spanish>Pró.</Spanish>
+        <Russian>Приб.Воины</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_DEVOUT</Tag>
@@ -785,6 +810,7 @@
         <German>For</German>
         <Italian>Exp</Italian>
         <Spanish>Exp</Spanish>
+        <Russian>Исслед.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_INDUSTRIOUS_SHORT</Tag>
@@ -793,6 +819,7 @@
         <German>Ind</German>
         <Italian>Ind</Italian>
         <Spanish>Dil</Spanish>
+        <Russian>Труд.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_CHARISMATIC_SHORT</Tag>
@@ -801,6 +828,7 @@
         <German>Chm</German>
         <Italian>Car</Italian>
         <Spanish>Car</Spanish>
+        <Russian>Харизм.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_MILITARISTIC_SHORT</Tag>
@@ -809,12 +837,14 @@
         <German>Mili</German>
         <Italian>Mil</Italian>
         <Spanish>Mil</Spanish>
+        <Russian>Милит.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_SCRIPT_FW_DESCR</Tag>
         <English>Random map that simulates earth-like plate tectonics, geostrophic and monsoon winds and rainfall.</English>
         <French>Carte aléatoire qui simule la tectonique terrestre, la géostrophie, la mousson et la pluie.</French>
         <German>Zufallsgenerierte Karte mit großen zusammenhängenden Klimazonen und Gebirgszügen</German>
+        <Russian>Случайная карта, которая имитирует земную тектонику плит, геострофические и муссонные ветры и осадки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMESPEED_MARATHON_Old</Tag>
@@ -919,6 +949,7 @@
         <German>Wir möchten Euch die Ländereien dieser Siedlung als Zeichen unseres Respekts anbieten.</German>
         <Italian>Vorremmo offrirvi le terre e questo insediamento come segno del nostro rispetto.</Italian>
         <Spanish>Nos gustaría ofrecerles las tierras y este acuerdo como muestra de nuestro respeto.</Spanish>
+        <Russian>Мы хотели бы предложить вам земли этого поселения в знак нашего уважения.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_TRADE</Tag>
@@ -985,7 +1016,7 @@
         <German>Ihr habt %d1[ICON_GOLD] von Eurem Feind erbeutet</German>
         <Italian>Hai catturato %d1[ICON_GOLD] dal nemico</Italian>
         <Spanish>You captured %d1[ICON_GOLD] from the enemy</Spanish>
-        <Russian>Вызахватили %d1[ICON_GOLD] у врага</Russian>
+        <Russian>Вы захватили %d1[ICON_GOLD] у врага</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HIM_GOLD_CAPTURE</Tag>
@@ -1001,26 +1032,28 @@
         <English>Milord, your ship [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] was captured by the Royal Navy off the coast of Europe.</English>
         <French>Votre [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] a été intercepté en Europe par votre Roi.</French>
         <German>Milord, Euer Schiff [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] wurde vor der Küste Europas von der königlichen Marine aufgebracht.</German>
-        <Russian>Милорд, ваш корабль [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] был захвачен Королевским флотом у берегов Европы.</Russian>
+        <Russian>Милорд, наш корабль [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] был захвачен Королевским флотом у берегов Европы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORCE_START_PEACE</Tag>
         <English>You cannot declare war within the first 20 turns of the game.</English>
         <French>Vous ne pouvez pas déclarer la guerre dnas les 20 premiers tours du jeu.</French>
         <German>Mäßigt Euch! Ihr könnt in den ersten 20 Runden keinen Krieg erklären!</German>
-        <Russian>Вы не можете объявить войну в первый 20 ходов игры.</Russian>
+        <Russian>Вы не можете объявить войну в первые 20 ходов игры.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FORCE_START_PEACE</Tag>
         <English>You overstep your authority, attempting to declare war on another European nation!</English>
         <French>Vous avez outrepassé votre autorité en tentant de déclarer la guerre à une autre nation européenne !</French>
         <German>Ihr habt Eure Befugnisse überschritten, als Ihr versuchtet, einer anderen Europäischen Nation den Krieg zu erklären!</German>
+        <Russian>Вы превышаете свои полномочия, пытаясь объявить войну другой европейской нации!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLOCOMMENT_FORCE_START_PEACE</Tag>
         <English>You overstep your authority, attempting to declare war on another European nation!</English>
         <French>Vous avez outrepassé votre autorité en tent de déclarer la guerre à une autre nation européenne !</French>
         <German>Ihr habt Eure Befugnisse überschritten, als Ihr versuchtet, einer anderen Europäischen Nation den Krieg zu erklären!</German>
+        <Russian>Вы превысили свои полномочия, когда пытались объявить войну другой европейской нации!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_RUNNING_OUT_OF_SPACE</Tag>
@@ -1841,6 +1874,7 @@
         <German>[NEWLINE][NEWLINE][COLOR_FONT_CREAM]Uhrzeit :[COLOR_REVERT] %s1</German>
         <Italian>[NEWLINE][NEWLINE][COLOR_FONT_CREAM]Ora :[COLOR_REVERT] %s1</Italian>
         <Spanish>[NEWLINE][NEWLINE][COLOR_FONT_CREAM]Hora :[COLOR_REVERT] %s1</Spanish>
+        <Russian>[NEWLINE][NEWLINE][COLOR_FONT_CREAM]Время :[COLOR_REVERT] %s1</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_GOTO_MENU_TITLE</Tag>
@@ -1990,7 +2024,7 @@
         <German>verkauft</German>
         <Italian>sold</Italian>
         <Spanish>sold</Spanish>
-        <Russian>продано</Russian>
+        <Russian>прод.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_TRADE_LOG_BOUGHT</Tag>
@@ -1999,7 +2033,7 @@
         <German>gekauft</German>
         <Italian>bought</Italian>
         <Spanish>bought</Spanish>
-        <Russian>куплено</Russian>
+        <Russian>куп.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_TRADE_LOG_3</Tag>
@@ -2030,7 +2064,7 @@
         <English>That floating coffin named [COLOR_UNIT_TEXT]%s1[COLOR_REVERT]? Well, I'll give you %d2[ICON_GOLD].</English>
         <French>Ce raffiot que vous appelez [COLOR_UNIT_TEXT]%s1[COLOR_REVERT] ? Et bien ... je vous en donne %d2[ICON_GOLD].</French>
         <German>Diesen morschen Kahn namens [COLOR_UNIT_TEXT]%s1[COLOR_REVERT]? Nun, %d2[ICON_GOLD] seien Euch gewährt.</German>
-        <Russian>[COLOR_UNIT_TEXT]%s1[COLOR_REVERT], этот плаваяющий гроб? Хмм, что ж, я дам вам за него %d2[ICON_GOLD]</Russian>
+        <Russian>[COLOR_UNIT_TEXT]%s1[COLOR_REVERT], этот плавающий гроб? Хмм, что ж, я дам вам за него %d2[ICON_GOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_SELL_SHORT</Tag>
