@@ -24,7 +24,7 @@ Otherwise the mod will not work!
 * Buildings require additional different resources (e.g. clay)
 * Equipping units now requires additional different resources (bakery products, gunpowder)
 * Artillery are now colonist units with equipment (cannons + gunpowder) and have specialists
-* Diversified naval units and royal units
+* Diversified naval units and royal units - note that some ships now have limitations on what they can transport!
 * Crime/Law System: Larger cities will cause crime which will need to be countered by judges (producing law)
 * New Movement System: Moving through a tile can now require several turns, making slow units much slower in difficult terrain (no more 1 plot/turn)
 
