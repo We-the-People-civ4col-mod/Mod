@@ -10904,6 +10904,7 @@
         <German>Weltgrößen</German>
         <Italian>Dimensioni del mondo</Italian>
         <Spanish>Tamaño del mundo</Spanish>
+        <Russian>Все размеры мира</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_ARE_YOU_SURE_ACTION</Tag>
@@ -10912,6 +10913,7 @@
         <German>Soll dieser Befehl wirklich ausgeführt werden : %s1_ActionName?</German>
         <Italian>Sei sicuro di voler eseguire l'azione %s1_ActionName?</Italian>
         <Spanish>¿Seguro que queréis %s1_ActionName?</Spanish>
+        <Russian>Вы уверены, что хотите %s1_ActionName?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_YOU_DECLARED_WAR_ON</Tag>

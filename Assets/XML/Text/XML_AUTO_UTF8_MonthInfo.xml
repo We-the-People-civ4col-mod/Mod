@@ -23,11 +23,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>
-            <Text>TBD</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Russian>
+        <Russian>Январь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MONTH_FEBRUARY</Tag>
@@ -52,11 +48,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>
-            <Text>TBD</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Russian>
+        <Russian>Февраль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MONTH_MARCH</Tag>
@@ -81,11 +73,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>
-            <Text>TBD</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Russian>
+        <Russian>Март</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MONTH_APRIL</Tag>
@@ -110,11 +98,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>
-            <Text>TBD</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Russian>
+        <Russian>Апрель</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MONTH_MAY</Tag>
@@ -139,11 +123,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>
-            <Text>TBD</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Russian>
+        <Russian>Май</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MONTH_JUNE</Tag>
@@ -168,11 +148,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>
-            <Text>TBD</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Russian>
+        <Russian>Июнь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MONTH_JULY</Tag>
@@ -197,11 +173,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>
-            <Text>TBD</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Russian>
+        <Russian>Июль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MONTH_AUGUST</Tag>
@@ -226,11 +198,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>
-            <Text>TBD</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Russian>
+        <Russian>Август</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MONTH_SEPTEMBER</Tag>
@@ -255,11 +223,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>
-            <Text>TBD</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Russian>
+        <Russian>Сентябрь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MONTH_OCTOBER</Tag>
@@ -284,11 +248,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>
-            <Text>TBD</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Russian>
+        <Russian>Октябрь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MONTH_NOVEMBER</Tag>
@@ -313,11 +273,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>
-            <Text>TBD</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Russian>
+        <Russian>Ноябрь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MONTH_DECEMBER</Tag>
@@ -342,10 +298,6 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>
-            <Text>TBD</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Russian>
+        <Russian>Декабрь</Russian>
     </TEXT>
 </Civ4GameText>
