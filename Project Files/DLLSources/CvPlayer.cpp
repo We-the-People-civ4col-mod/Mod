@@ -23811,7 +23811,35 @@ void CvPlayer::resetCounterForForeignImmigrantsDeals()
 
 void CvPlayer::acquireForeignImmigrant(UnitClassTypes iForeignImmigrantClassType, int iPrice)
 {
-	buyUnitFromPlayer(getParent(), iForeignImmigrantClassType, 1, "TXT_KEY_FOREIGN_COLONIST_HIRED", iPrice, LOCATION_FLAGS_NONE, false);
+	// we leave if there is no City, just for safety
+	int iLoop;
+	CvCity* pCity = firstCity(&iLoop);
+	if (pCity == NULL)
+	{
+		return;
+	}
+
+	// if for some strange reason the gold is not enough, also leave
+	if (getGold() < iPrice)
+	{
+		return;
+	}
+
+	// we pay the Gold
+	changeGold(-iPrice);
+
+	// check the Colonization Specific Unit
+	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iForeignImmigrantClassType);
+
+	// We simply spawn in the colonies
+	CvUnit* pUnit = initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pCity->coord(), NO_UNITAI);
+
+	// we post a message
+	CvWString szBuffer;
+	szBuffer = gDLL->getText("TXT_KEY_FOREIGN_COLONIST_HIRED", pUnit->getUnitInfo().getTextKeyWide(), pCity->getNameKey());
+	gDLL->getInterfaceIFace()->addPlayerMessage(pUnit->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pCity, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, pUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
+
+	return;
 }
 // WTP, ray, Foreign Kings, buy Immigrants - END
 
