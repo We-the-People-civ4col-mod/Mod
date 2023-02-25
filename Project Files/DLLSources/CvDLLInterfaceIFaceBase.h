@@ -117,7 +117,7 @@ public:
 		CvWString szString, CvPlot const *pPlot,
 		LPCTSTR pszSound = NULL, InterfaceMessageTypes eType = MESSAGE_TYPE_INFO,
 		LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,
-		bool bShowOffScreenArrows = true, bool bShowOnScreenArrows = true)
+		bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false)
 		{
 			addPlayerMessage(ePlayer, bForce, iLength, szString,
 				pPlot->coord(), pszSound, eType,
@@ -129,7 +129,7 @@ public:
 		CvWString szString, CvCity const *pCity,
 		LPCTSTR pszSound = NULL, InterfaceMessageTypes eType = MESSAGE_TYPE_INFO,
 		LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,
-		bool bShowOffScreenArrows = true, bool bShowOnScreenArrows = true)
+		bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false)
 		{
 			addPlayerMessage(ePlayer, bForce, iLength, szString,
 					pCity->coord(), pszSound, eType,
@@ -141,7 +141,7 @@ public:
 		CvWString szString, CvUnit *pUnit,
 		LPCTSTR pszSound = NULL, InterfaceMessageTypes eType = MESSAGE_TYPE_INFO,
 		LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,
-		bool bShowOffScreenArrows = true, bool bShowOnScreenArrows = true)
+		bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false)
 		{
 			addPlayerMessage(ePlayer, bForce, iLength, szString,
 					pUnit->coord(), pszSound, eType,
