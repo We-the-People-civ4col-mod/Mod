@@ -46551,6 +46551,10 @@
                     <YieldType>YIELD_GOAT_HIDES</YieldType>
                     <iYieldMod>100</iYieldMod>
                 </YieldModifier>
+                <YieldModifier>
+                    <YieldType>YIELD_PIG_SKIN</YieldType>
+                    <iYieldMod>100</iYieldMod>
+                </YieldModifier>
             </YieldModifiers>
             <YieldDemands>
                 <YieldDemand>
@@ -46677,10 +46681,6 @@
             <YieldChanges>
                 <YieldChange>
                     <YieldType>YIELD_DOWNS</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_PIG_SKIN</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
             </YieldChanges>
@@ -47153,10 +47153,6 @@
                     <YieldType>YIELD_DOWNS</YieldType>
                     <iYieldMod>100</iYieldMod>
                 </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_PIG_SKIN</YieldType>
-                    <iYieldMod>100</iYieldMod>
-                </YieldModifier>
             </YieldModifiers>
             <YieldDemands>
                 <YieldDemand>
@@ -47287,6 +47283,10 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_GOAT_HIDES</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_PIG_SKIN</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
