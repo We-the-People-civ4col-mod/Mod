@@ -3077,11 +3077,11 @@
             <ProfessionEquipmentModifiers/>
             <FreePromotions>
                 <FreePromotion>
-                    <PromotionType>PROMOTION_MOUNTAINEER1</PromotionType>
+                    <PromotionType>PROMOTION_RANGER1</PromotionType>
                     <bFreePromotion>1</bFreePromotion>
                 </FreePromotion>
                 <FreePromotion>
-                    <PromotionType>PROMOTION_RANGER1</PromotionType>
+                    <PromotionType>PROMOTION_RANGER2</PromotionType>
                     <bFreePromotion>1</bFreePromotion>
                 </FreePromotion>
             </FreePromotions>
