@@ -192,7 +192,7 @@ protected:
 	int AI_loadYieldValue(CvCity* pCity, YieldTypes eYield, int iAmount, int iTravelTurns = 0);
 	int AI_unloadYieldValue(CvCity* pCity, YieldTypes eYield, int iAmount, int iTravelTurns = 0);
 
-	bool AI_collectGoods();
+	bool AI_collectGoods(int iMinAmountThreshold = 50);
 
 	bool AI_deliverUnits(UnitAITypes eUnitAI = NO_UNITAI);
 	
