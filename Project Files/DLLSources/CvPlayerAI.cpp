@@ -16577,3 +16577,54 @@ int CvPlayerAI::AI_estimateUnemploymentCount() const
 
 	return cnt;
 }
+
+// Strategic yields are yields that also have non-monetary uses
+// Note: Input means that the yield is part of a production chain
+// that eventually results in a final strateic yield or is required for
+// the construction of buildings
+bool CvPlayerAI::AI_isStrategicInputYield(YieldTypes eYield) const
+{
+	switch (eYield)
+	{
+		case YIELD_LUMBER:
+		case YIELD_STONE:
+		case YIELD_CLAY:
+		case YIELD_HEMP:
+		case YIELD_ORE:
+		case YIELD_COAL:
+		case YIELD_CHAR_COAL:
+		case YIELD_BARLEY:
+		case YIELD_RICE:
+		case YIELD_CASSAVA:
+			return true;
+	}
+
+	return false;
+}
+
+// Strategic yields are yields that have non-monetary uses
+// Note: Final means that the yield may be used to equip a profession
+// or produce a unit
+bool CvPlayerAI::AI_isStrategicFinalYield(YieldTypes eYield) const
+{
+	switch (eYield)
+	{
+		case YIELD_HORSES:
+		case YIELD_BAKERY_GOODS:
+		case YIELD_ROPE:
+		case YIELD_SAILCLOTH:
+		case YIELD_TOOLS:
+		case YIELD_BLADES:
+		case YIELD_MUSKETS:
+		case YIELD_CANNONS:
+		case YIELD_BLACK_POWDER:
+			return true;
+	}
+
+	return false;
+}
+
+bool CvPlayerAI::AI_isStrategicYield(YieldTypes eYield) const
+{
+	return AI_isStrategicInputYield(eYield) || AI_isStrategicFinalYield(eYield);
+}
