@@ -66,9 +66,9 @@ Otherwise the mod will not work!
 * We fixed so many bugs we don't remember all of them ... ;)
 * Multiple OOS (multiplayer desync) bugs have been fixed
 
-### Internals
+### Performance & Internals
 * Ported and adapted Karadoc's pathfinder (originally written for the Civ4 mod K-Mod)  
-* Parallelized the job assigner subsystem and the K-mod pathfinder
+* Parallelized (multi-threaded) the job assigner subsystem and the K-mod pathfinder
 * A new class Coordinates to be used instead of x, y parameters
 * the fixes from optimizations2
 * several changes of variables from int to the more specifix XYZTypes
