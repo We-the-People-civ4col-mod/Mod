@@ -387,7 +387,7 @@
         <German>Eure Einheit ist jetzt ein [COLOR_UNIT_TEXT]Routinierter Späher[COLOR_REVERT].</German>
         <Italian>La tua unità è ora uno [COLOR_UNIT_TEXT]scout esperto[COLOR_REVERT].</Italian>
         <Spanish>Vuestra unidad ahora es un [COLOR_UNIT_TEXT]Batidor curtido[COLOR_REVERT].</Spanish>
-        <Russian>Наш Разведчик, долгое время скитаясь по глуши, приобрел много полезных навыков и стал [COLOR_UNIT_TEXT]Опытным разведчиком[COLOR_REVERT].</Russian>
+        <Russian>Наш Разведчик, долгое время скитаясь по глуши, приобрел много полезных навыков и стал [COLOR_UNIT_TEXT]Закалённым разведчиком[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_SHIPWRECKED</Tag>

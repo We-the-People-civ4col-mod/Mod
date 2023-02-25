@@ -102,7 +102,7 @@
         <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1:2_civ_adjective Überfall! Das Gebäude %s3_BldngName wurde von feindlichen Eindringlingen zerstört!</German>
         <Italian>Raid %s1_civ_adjective a %s2_city! Infiltrati nemici hanno distrutto [NUM1:un:una] %s3_BldngName!</Italian>
         <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! ¡Los enemigos infiltrados han destruido [NUM1:un:una:unos:unas] %s3_BldngName!</Spanish>
-        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]нападение индейцев %s1_civ_adjective! Краснокожие варвары разрушили %s3_BldngName!</Russian>
+        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]нападение индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]! Краснокожие варвары разрушили [COLOR_SELECTED_TEXT]%s3_BldngName[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PRODUCTION_RAIDED</Tag>
@@ -111,7 +111,7 @@
         <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1:2_civ_adjective Überfall! Der gesamte Fortschritt bei der Errichtung des Gebäudes %s3_buildName wurde von feindlichen Eindringlingen zerstört!</German>
         <Italian>Raid %s1_civ_adjective a %s2_city! Tutti i progressi in %s3_buildName sono stati distrutti da nemici infiltrati!</Italian>
         <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! ¡Los infiltrados enemigos han destruido todo el progreso [NUM1:del:de la:de los:de las] %s3_buildName!</Spanish>
-        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]нападение индейцев %s1_civ_adjective! Они полностью разрушили строящееся здание %s3_buildName! Нам придется начинать все заново!</Russian>
+        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]нападение индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]! Они полностью разрушили строящееся здание [COLOR_SELECTED_TEXT]%s3_BldngName[COLOR_REVERT]! Нам придется начинать все заново!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TREASURY_RAIDED</Tag>
@@ -120,7 +120,7 @@
         <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1:2_civ_adjective Überfall! Feindliche Eindringlinge haben %d3[ICON_GOLD] unseres Staatsschatzes erbeutet!</German>
         <Italian>Raid %s1_civ_adjective a %s2_city! Infiltrati nemici hanno rubato %d3[ICON_GOLD] del nostro tesoro di stato!</Italian>
         <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! ¡Los enemigos infiltrados han saqueado %d3[ICON_GOLD] de nuestro tesoro!</Spanish>
-        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]нападение индейцев %s1_civ_adjective! Краснокожие демоны стащили %d3[ICON_GOLD] из городской казны!</Russian>
+        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]нападение индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]! Краснокожие демоны стащили %d3[ICON_GOLD] из городской казны!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SCALP_RAIDED</Tag>
@@ -129,7 +129,7 @@
         <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1:2_civ_adjective Überfall! Angreifer nehmen Skalps: [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] wurde getötet.</German>
         <Italian>Raid %s1_civ_adjective a %s2_city! sono morti %s3_unit</Italian>
         <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! Se lamenta la pérdida de %s3_unit</Spanish>
-        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]нападение индейцев %s1_civ_adjective! Краснокожие сняли скальп с [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]!</Russian>
+        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]нападение индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]! Краснокожие сняли скальп с [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HARBOR_RAIDED</Tag>
@@ -138,7 +138,7 @@
         <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1:2_civ_adjective Überfall! Räuber greifen Hafenanlagen an. Euer Schiff [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] wurde beschädigt!</German>
         <Italian>Raid %s1_civ_adjective a %s2_city! La tua unità %s3_unit  è stata danneggiata!</Italian>
         <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! [NUM2:ha dañado:ha dañado:han dañado:han dañado] a [NUM1:vuestro:vuestra:vuestros:vuestras] %s3_unit!</Spanish>
-        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]нападение индейцев %s1_civ_adjective! Они атаковали наш порт, повредив [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]!</Russian>
+        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]нападение индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]! Они атаковали наш порт, повредив [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NOTHING_RAIDED</Tag>
@@ -147,7 +147,7 @@
         <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective Stoßtrupp ausgelöscht! Keine ernstzunehmenden Schäden verursacht.</German>
         <Italian>%s1_civ_adjective gruppo di incursori spazzato via in %s2_city! Niente distrutto o rubato.</Italian>
         <Spanish>%s1_civ_adjective partido de ataque acabó en %s2_city! Nada destruye o se lo roban.</Spanish>
-        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]набег индейцев %s1_civ_adjective отражен! Все в целости и сохранности.</Russian>
+        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]набег индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] отражен! Все в целости и сохранности.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_RAIDING_NATIVE_CAPTURED</Tag>
@@ -156,7 +156,7 @@
         <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective Stoßtrupp gefangen genommen! Sie werden mit Zwangsarbeit für ihre Verbrechen büßen.</German>
         <Italian>%s1_civ_adjective gruppo di incursori catturato in %s2_city! Pagheranno con il lavoro per i loro crimini.</Italian>
         <Spanish>%s1_civ_adjective grupo asaltante capturado en %s2_city! Pagarán con el trabajo de sus crímenes.</Spanish>
-        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]группа индейцев %s1_civ_adjective, пытавшихся утроить набег, схвачена! Отправьте их на плантации, Милорд! Пусть расплачиваются за свои преступления.</Russian>
+        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]группа индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT], пытавшихся утроить набег, схвачена! Отправьте их на плантации, Милорд! Пусть расплачиваются за свои преступления.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_SUNK_GOOD</Tag>
@@ -384,6 +384,7 @@
         <German>Milord, die [COLOR_UNIT_TEXT]Versklavten Ureinwohner[COLOR_REVERT], die wir gekauft haben, wurden nach [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] gebracht.</German>
         <Italian>I nativi schiavi che abbiamo comprato sono stati consegnati a %s1_city, Mylord.</Italian>
         <Spanish>Los esclavos nativos compramos han sido entregados a %s1_city, Mylord.</Spanish>
+        <Russian>Милорд, купленные нами [COLOR_UNIT_TEXT]туземные рабы[COLOR_REVERT] были доставлены в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_AFRICAN_SLAVE</Tag>
@@ -399,18 +400,20 @@
         <English>Milord, with the help of our European allies, we have successfully trained a [COLOR_UNIT_TEXT]Continental Guard[COLOR_REVERT] in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
         <French>Seigneur, avec l'aide de nos alliés européens, nous avons formé avec succès une garde continental %s1_city.</French>
         <German>Milord, mit der Hilfe unserer europäischen Alliierten haben wir erfolgreich eine [COLOR_UNIT_TEXT]Kontinentalgarde[COLOR_REVERT] in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ausgebildet.</German>
+        <Russian>Милорд, благодаря помощи наших европейских союзников в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] мы успешно обучили [COLOR_UNIT_TEXT]континентальную гвардию[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACQUIRED_MORTAR</Tag>
         <English>Milord, the [COLOR_UNIT_TEXT]mortar[COLOR_REVERT] we have bought from our European allies has arrived in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
         <French>Seigneur, le mortier que nous avons acheté à nos alliés européens sont arrivés à %s1_city.</French>
         <German>Milord, der [COLOR_UNIT_TEXT]Mörser[COLOR_REVERT], den wir von unseren europäischen Alliierten gekauft haben, ist nach [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] geliefert worden.</German>
+        <Russian>Милорд, [COLOR_UNIT_TEXT]мортира[COLOR_REVERT], купленная у наших европейских союзников, прибыла в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_USED_SHIP_BOUGHT</Tag>
         <English>Milord, the [COLOR_UNIT_TEXT]%s1_shipname[COLOR_REVERT], the used [COLOR_SELECTED_TEXT]%s2_shiptype[COLOR_REVERT] we recently bought for [COLOR_SELECTED_TEXT]%d3_gold[COLOR_REVERT][ICON_GOLD] has been readied in Europe.</English>
         <German>Milord, die [COLOR_UNIT_TEXT]%s1_shipname[COLOR_REVERT], das gebrauchtes Schiff vom Typ [COLOR_SELECTED_TEXT]%s2_shiptype[COLOR_REVERT], welches wir [COLOR_SELECTED_TEXT]%d3_gold[COLOR_REVERT][ICON_GOLD] erworben haben, steht in Europa bereit.</German>
-        <Russian>Милорд, [COLOR_UNIT_TEXT]%s1_shipname[COLOR_REVERT], подержанный [COLOR_SELECTED_TEXT]%s2_shiptype[COLOR_REVERT], который мы недавно купили за [COLOR_SELECTED_TEXT]%d3_gold[COLOR_REVERT][ICON_GOLD], ждет в доках Европы.</Russian>
+        <Russian>Милорд, [COLOR_FONT_CREAM]%s1_shipname[COLOR_REVERT], подержанный [COLOR_SELECTED_TEXT]%s2_shiptype[COLOR_REVERT], который мы недавно купили за [COLOR_SELECTED_TEXT]%d3_gold[COLOR_REVERT][ICON_GOLD], ждет в доках Европы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FOREIGN_COLONIST_HIRED</Tag>
@@ -422,7 +425,7 @@
         <Tag>TXT_KEY_USED_SHIP_BARGAIN_AVAILABLE</Tag>
         <English>Milord, one of our contacts in Europe told us that a [COLOR_UNIT_TEXT]used ship[COLOR_REVERT] in good shape will be sold for a bargain price. Our King could help to arrange the deal before it is sold to others.</English>
         <German>Milord, einer unserer Kontakte in Europa hat uns davon berichtet, dass ein [COLOR_UNIT_TEXT]Schiff[COLOR_REVERT] zu einem guten Preis zum Verkauf steht. Seine Majestät könnte uns helfen, dass wir den Zuschlag bekommen.</German>
-        <Russian>Милорд, один из наших контактов в Европе сообщил, что [COLOR_UNIT_TEXT]подержанный корабль[COLOR_REVERT] в довольно неплохом состоянии будет продаваться по выгодной цене. Наш Король мог бы помочь устроить сделку, прежде чем об этом предложении станет известно остальным.</Russian>
+        <Russian>Милорд, один из наших контактов в Европе сообщил, что [COLOR_SELECTED_TEXT]подержанный корабль[COLOR_REVERT] в довольно неплохом состоянии будет продаваться по выгодной цене. Наш Король мог бы помочь устроить сделку, прежде чем об этом предложении станет известно остальным.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_TRAITS</Tag>
@@ -478,6 +481,7 @@
         <English>Milord, the [COLOR_UNIT_TEXT]smugglers[COLOR_REVERT] we have hired await your orders in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
         <French>Seigneur, les contrebandiers que nous avons recrutés attendent vos ordres à %s1_city.</French>
         <German>Milord, die angeheuerten [COLOR_UNIT_TEXT]Schmuggler[COLOR_REVERT] erwarten Eure Befehle in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</German>
+        <Russian>Милорд, [COLOR_SELECTED_TEXT]контрабандисты[COLOR_REVERT], которых мы недавно наняли, ждут ваших приказов в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SEE_RANGER</Tag>
@@ -540,7 +544,7 @@
         <English>%s1_city : Goods worth %d2[ICON_GOLD] have been sold on the domestic market.</English>
         <French>%s1_city : Marchandises d'une valeur de %d2[ICON_GOLD] ont été vendus sur le marché intérieur.</French>
         <German>%s1_city : Auf dem Markt wurden Güter für %d2[ICON_GOLD] verkauft.</German>
-        <Russian>[COLOR_BUILDING_TEXT]%s1_city[COLOR_REVERT] : Товары на сумму %d2[ICON_GOLD] были проданы на внутреннем рынке.</Russian>
+        <Russian>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] : Товары на сумму %d2[ICON_GOLD] были проданы на внутреннем рынке.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_INFO_YIELD</Tag>
@@ -554,6 +558,7 @@
         <English>Milord, the newly appointed [COLOR_UNIT_TEXT]bishop[COLOR_REVERT] has arrived in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
         <French>Seigneur, le nouvel évêque est arrivé à %s1_city.</French>
         <German>Milord, der neu ernannte [COLOR_UNIT_TEXT]Bischof[COLOR_REVERT] ist in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] eingetroffen.</German>
+        <Russian>Милорд, новый [COLOR_UNIT_TEXT]епископ[COLOR_REVERT] прибыл в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EDIT_TEACHER_LIST</Tag>
@@ -624,18 +629,21 @@
         <English>Custom House</English>
         <French>Poste de douane</French>
         <German>Zollhaus</German>
+        <Russian>Таможня</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CUSTOM_HOUSE_POPUP_TEXT</Tag>
         <English>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Choose goods to be sold by the local Custom House, and select mimimum amount of a specific yield to enable the Custom House to sell such yield here in this city.</English>
         <French>Sélectionner les biens que le poste de douane va vendre, ainsi que le seuil de marchandises qui déclenche la vente de celle-ci pour la colonie suivante: %s1_city</French>
         <German>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Wählen Sie die Güter aus, die durch das Zollhaus auf dem heimischen Markt verkauft werden sollen, sowie eine Mindestschwelle, ab der das Zollhaus verkaufen darf.</German>
+        <Russian>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Выберите товары, которые будут продаваться местной таможней, и выберите минимальное количество определенного товара, чтобы таможня могла продавать его в этом городе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CUSTOM_HOUSE_POPUP_TEXT_NO_NEW_CAPACITY</Tag>
         <English>New capacity not activated! Settings will have no effect.</English>
         <French>La nouvelle capacité n'est pas activée ! Les paramètres n'auront aucun effet.</French>
         <German>Neue Kapazität nicht aktiviert! Einstellungen haben keine Wirkung.</German>
+        <Russian>Новая емкость не активирована! Настройки не будут иметь никакого значения.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CUSTOM_HOUSE_NOT_BUILT_YET_POPUP_TEXT</Tag>
@@ -658,18 +666,21 @@
         <English>%s3_city : The custom house has sold %d1_number%F2_yield_icon for %d4[ICON_GOLD].</English>
         <French>%s3_city : Le poste de douane a vendu %d1_number%F2_yield_icon pour %d4[ICON_GOLD].</French>
         <German>%s3_city : Das Zollhaus hat %d1_number%F2_yield_icon für %d4[ICON_GOLD] verkauft.</German>
+        <Russian>[COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] : Таможня продала %d1_number%F2_yield_icon за %d4[ICON_GOLD].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODS_SOLD_CUSTOM_HOUSE_SINGLE_MESSAGE</Tag>
         <English>%s1_city : The Custom House has sold goods for %d2[ICON_GOLD].</English>
         <French>%s1_city : Le poste de douane a vendu des biens pour une valeur de %d2[ICON_GOLD].</French>
         <German>%s1_city : Das Zollhaus hat Waren im Wert von %d2[ICON_GOLD] verkauft.</German>
+        <Russian>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] : Таможня продала товаров на %d2[ICON_GOLD].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NATIVES_NOT_WILLING_TO_TALK</Tag>
         <English>Milord, the Natives in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] are no longer willing to talk with us. Angry faces stare back at our men.[NEWLINE]We should return once our relations have improved.</English>
         <French>Sir, les indigènes de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ne veulent pas nous parler. Des visages en colère fixent nos hommes du regard.[NEWLINE]Nous devrions revenir lorsque nos relations se seront améliorés.</French>
         <German>Milord, die Ureinwohner in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] weigern sich, mit uns zu sprechen. Lediglich wütende Gesicher starren uns an.[NEWLINE]Wir sollten zurückkehren, wenn die Beziehungen sich wieder gebessert haben.</German>
+        <Russian>Милорд, индейцы из [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] больше не хотят с нами разговаривать. Злые лица смотрят на наших людей из-за частокола, а из поселения доносятся звуки боевых барабанов.[NEWLINE]Мы можем попробовать вернуться, когда наши отношения улучшатся.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_NOT_FOUND_CITY</Tag>
@@ -804,7 +815,7 @@
         <German>%D1: "Wir schätzen es gar nicht, dass Ihr Verteidigungsbündnisse mit unseren Gegnern schließt!"</German>
         <Italian>%D1: "Siamo sconvolti dal fatto che tu abbia firmato alleanze difensive con i nostri rivali."</Italian>
         <Spanish>%D1: "Nos trastorna que hayáis firmado acuerdos de protección con nuestros rivales."</Spanish>
-        <Russian>%D1: «Нас расстраивают подписанные вами оборонительные соглашения с нашими соперниками».</Russian>
+        <Russian>%D1: "Нас расстраивают подписанные вами оборонительные соглашения с нашими соперниками".</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_SHARE_WAR</Tag>
@@ -896,14 +907,14 @@
         <English>%D1: "You have too many allies."</English>
         <French>%D1: "Vous avez trop d'alliés."</French>
         <German>%D1: "Ihr habt zu viele Verbündete."</German>
-        <Russian>%D1: «У вас очень много союзников».</Russian>
+        <Russian>%D1: "У вас очень много союзников".</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_SAME_TEAM</Tag>
         <English>%D1: "We're allies."</English>
         <French>%D1: "Nous sommes alliés."</French>
         <German>%D1: "Wir sind Verbündete."</German>
-        <Russian>%D1: "Мы союзники."</Russian>
+        <Russian>%D1: "Мы союзники!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_SAME_RELIGION</Tag>
@@ -1303,7 +1314,7 @@
         <English>%s2_city : The %s1_building has generated %d3[ICON_GOLD]</English>
         <French>%s2_city : Votre %s1_building a généré %d3[ICON_GOLD] de profit</French>
         <German>%s2_city : Das Gebäude %s1_building hat %d3[ICON_GOLD] Gewinn erwirtschaftet</German>
-        <Russian>%s2_city : %d3[ICON_GOLD] было сгенерировано в %s1_building</Russian>
+        <Russian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] : %d3[ICON_GOLD] было сгенерировано в %s1_building</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ENTERTAINMENT_BUILDING</Tag>

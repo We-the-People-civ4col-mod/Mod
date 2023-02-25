@@ -4834,7 +4834,7 @@
         <German>Bienvenidos, Señor. Legt Eure Waffen ab, schickt Eure Leibwächter heraus und lasst Euch nieder. Vertraut mir, ich bin Euch wohlgesonnen. Derzeit.</German>
         <Italian>È bello parlare con una persona che capisce l'importanza dell'azione. Parliamo di come possiamo rafforzare le nostre colonie.</Italian>
         <Spanish>Es bueno hablar con alguien que entiende la importancia de los actos. Charlemos sobre cómo podemos fortalecer nuestras colonias.</Spanish>
-        <Russian>йцукен</Russian>
+        <Russian>Добро пожаловать, сеньор. Снимите оружие, отошлите своих телохранителей и расслабьтесь. Доверьтесь мне. Я хорошо отношусь к тебе. На данный момент.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_CHAMPLAIN_1</Tag>
@@ -4843,7 +4843,7 @@
         <German>Niemanden würde ich jetzt hier lieber sehen als Euch, Monsieur. Was kann ich für Euch tun? Und was könnt Ihr für mich tun ...?</German>
         <Italian>Ditemi voi se quello non è, tra i presenti, il mio prediletto! Vediamo come puoi venire in contro alle mie esigenze.</Italian>
         <Spanish>¡Pero si es mi persona más querida en toda la sala! Veamos cómo podemos satisfacer nuestras respectivas necesidades.</Spanish>
-        <Russian>Добро пожаловать, сеньор. Снимите оружие, отошлите своих телохранителей и расслабьтесь. Доверьтесь мне. Я хорошо отношусь к тебе. На данный момент.</Russian>
+        <Russian>Нет никого, кого я бы предпочел видеть здесь, кроме вас, месье. Что я могу сделать для вас? И что вы можете сделать для меня?..</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_DONCK_1</Tag>
@@ -5522,6 +5522,7 @@
         <German>Bedaure, ich muss mich Euch widersetzen, Eure Majestät. Und meine Bürger auch. Wie ich höre, haben sie in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] aus Protest alle [COLOR_UNIT_TEXT]%s2_yield[COLOR_REVERT] vernichtet. (Ihr könnt dieses Handelsgut nun nicht mehr mit Europa handeln.)</German>
         <Italian>No, è ora di smetterla col [COLOR_UNIT_TEXT]%s2_yield[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]! (Non potrai più commerciare questo bene con l'Europa.)</Italian>
         <Spanish>¡No, es hora del partido [NUM2:del:de la:de los:de las] [COLOR_UNIT_TEXT]%s2_yield[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]! (Ya no podréis intercambiar esta mercancía con Europa).</Spanish>
+        <Russian>Сожалею, что вынужден противостоять Вам, Ваше Величество. И то же самое должны сделать мои граждане. Я слышал, что в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] в знак протеста уничтожили все [COLOR_UNIT_TEXT]%s2_yield[COLOR_REVERT]. (Вы больше не сможете торговать этим товаром с Европой)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_PINKY_1</Tag>
@@ -5530,6 +5531,7 @@
         <German>Euer Steuersatz liegt jetzt bei %d1_new_rate%%. Ihr dürft Euch entfernen.</German>
         <Italian>La tua percentuale di tasse è ora del %d1_new_rate%%. Puoi andare.</Italian>
         <Spanish>Vuestra carga impositiva ahora es de un %d1_new_rate%%. Podéis iros.</Spanish>
+        <Russian>Ваша налоговая ставка составляет %d1_new_rate%%. А теперь можете идти.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACCEPT_PINKY_1</Tag>
@@ -5538,6 +5540,7 @@
         <German>Wie Ihr wünscht</German>
         <Italian>Come desideri</Italian>
         <Spanish>Como queráis</Spanish>
+        <Russian>Как пожелаешь...</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REJECT_PINKY_1</Tag>
@@ -5546,6 +5549,7 @@
         <German>Narr! Wir werden nie wieder [COLOR_UNIT_TEXT]%s1_yield[COLOR_REVERT] mit Euch handeln.</German>
         <Italian>Idiota! Non commerceremo più [COLOR_UNIT_TEXT]%s1_yield[COLOR_REVERT] con te.</Italian>
         <Spanish>¡Insensato! Nunca más intercambiaremos [COLOR_UNIT_TEXT]%s1_yield[COLOR_REVERT] con vosotros.</Spanish>
+        <Russian>Ты дурак! Мы больше никогда не будем торговать с вами [COLOR_UNIT_TEXT]%s1_yield[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_REJECT_PINKY_1</Tag>
@@ -5554,6 +5558,7 @@
         <German>Gut</German>
         <Italian>Bene</Italian>
         <Spanish>Muy bien</Spanish>
+        <Russian>Хорошо</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_CHIEF_GOODY_1</Tag>
@@ -5562,6 +5567,7 @@
         <German>Willkommen in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].[SPACE]%s2_learn_unit_description[SPACE]%s3_desired_yield_description[SPACE]%s4_goody_description</German>
         <Italian>Benvenuto a [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].[SPACE]%s2_learn_unit_description[SPACE]%s3_desired_yield_description[SPACE]%s4_goody_description</Italian>
         <Spanish>Bienvenido a [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. [SPACE]%s2_learn_unit_description[SPACE]%s3_desired_yield_description[SPACE]%s4_goody_description</Spanish>
+        <Russian>Добро пожаловать в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].[SPACE]%s2_learn_unit_description[SPACE]%s3_desired_yield_description[SPACE]%s4_goody_description</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_CHIEF_LEARN_UNIT_DESCRIPTION</Tag>
@@ -5570,6 +5576,7 @@
         <German>Fremder, du könntest von uns lernen und ein [COLOR_UNIT_TEXT]%s1_teach_unit[COLOR_REVERT] werden.</German>
         <Italian>Straniero, potresti imparare da noi e diventare un [COLOR_UNIT_TEXT]%s1_teach_unit[COLOR_REVERT].</Italian>
         <Spanish>Extraño, podrías aprender de nosotros y convertirte en [NUM1:una:uno] [COLOR_UNIT_TEXT]%s1_teach_unit[COLOR_REVERT].</Spanish>
+        <Russian>Незнакомец, ты можешь учиться у нас и стать первоклассным [COLOR_UNIT_TEXT]%s1_teach_unit[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_CHIEF_DESIRED_YIELD_DESCRIPTION</Tag>
@@ -5578,6 +5585,7 @@
         <German>Wir benötigen [COLOR_UNIT_TEXT]%s1_yield[COLOR_REVERT].</German>
         <Italian>Abbiamo bisogno di [COLOR_UNIT_TEXT]%s1_yield[COLOR_REVERT].</Italian>
         <Spanish>Necesitamos [COLOR_UNIT_TEXT]%s1_yield[COLOR_REVERT].</Spanish>
+        <Russian>Мы бы хотели получить от вас [COLOR_UNIT_TEXT]%s1_yield[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_LIVE_AMONG_NATIVES_1</Tag>
@@ -5586,6 +5594,7 @@
         <German>Wie Kinder erscheint Ihr uns, unwissend und unschuldig. Seid eine Weile unser Gast in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] und wir unterrichten Euch, damit Ihr ein [COLOR_UNIT_TEXT]%s2_teach_unit[COLOR_REVERT] werdet.</German>
         <Italian>Come bambini ci apparite, ignoranti e innocenti. Sii nostro ospite per un po' in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] e ti insegneremo a diventare una [COLOR_UNIT_TEXT]%s2_teach_unit[COLOR_REVERT].</Italian>
         <Spanish>Como niños se nos presentan, ignorantes e inocentes. Sé nuestro invitado durante un tiempo en [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] y te enseñaremos a ser una [COLOR_UNIT_TEXT]%s2_teach_unit[COLOR_REVERT].</Spanish>
+        <Russian>Вы хорошо работаете, но не так хорошо, как могли бы. Проведите некоторое время в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. Мы жили здесь вечно. Узнайте, как стать лучшим [COLOR_UNIT_TEXT]%s2_teach_unit[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_LIVE_AMONG_NATIVES_ACCEPT_1</Tag>
@@ -5594,6 +5603,7 @@
         <German>Es wäre mir eine Ehre</German>
         <Italian>Ne sarei onorato</Italian>
         <Spanish>Será un honor</Spanish>
+        <Russian>Я был бы польщен</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_LIVE_AMONG_NATIVES_REJECT_1</Tag>
@@ -5602,6 +5612,7 @@
         <German>Vielleicht später</German>
         <Italian>Magari più tardi</Italian>
         <Spanish>Puede que más tarde</Spanish>
+        <Russian>Может быть, позже</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NATIVES_YIELD_GIFT_1</Tag>
@@ -5610,6 +5621,7 @@
         <German>Nehmt %d1_yield_amount%F2_yield_icon als Geschenk, Menschen von [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT], als Zeichen der Freundschaft zwischen unseren Völkern.</German>
         <Italian>Prendete %d1_yield_amount%F2_yield_icon come regalo, gente di [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT], in segno di amicizia tra i nostri popoli.</Italian>
         <Spanish>Tomad %d1_yield_amount%F2_yield_icon como regalo, gente de [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT], como muestra de amistad entre nuestros pueblos.</Spanish>
+        <Russian>Возьмите %d1_yield_amount%F2_yield_icon в подарок, жители [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT], в знак дружбы между нашими народами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_NATIVES_YIELD_GIFT_ACCEPT_1</Tag>
@@ -5618,6 +5630,7 @@
         <German>Danke!</German>
         <Italian>Grazie!</Italian>
         <Spanish>¡Gracias!</Spanish>
+        <Russian>Спасибо!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_WAR_1</Tag>
@@ -5635,6 +5648,7 @@
         <German>Wir, das Volk, verlangen unsere Freiheit! (REVOLUTION)</German>
         <Italian>Noi, il popolo, vogliamo la libertà! (RIVOLUZIONE)</Italian>
         <Spanish>¡Nosotros, el pueblo, exigimos nuestra libertad! (REVOLUCIÓN)</Spanish>
+        <Russian>Мы, народ, требуем свободы! (РЕВОЛЮЦИЯ)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FOUND_FIRST_CITY_1</Tag>
@@ -5643,6 +5657,7 @@
         <German>Ihr seid von weit her gekommen, Weißer Mann. Eure Kleidung ist schmutzig, Ihr seht ausgezehrt aus, und Euer Atem riecht wie faulender Fisch. Baut Eure Zelte auf und seid unsere Gäste. Kommt wieder zu Kräften. Doch vergesst nicht: Die Erde, auf der Ihr steht, ist nicht Euer Eigen. Wir sind die Kinder dieser Welt, und Ihr seid Fremde hier.</German>
         <Italian>Hai fatto molta strada, uomo bianco. I tuoi vestiti sono sporchi, hai l'aria sofferente e il tuo alito puzza di pesce in decomposizione. Piantate le vostre tende e siate nostri ospiti. Ritrova la tua forza. Ma ricordate, la terra su cui vi trovate non è vostra. Noi siamo i figli di questo mondo e voi siete stranieri qui.</Italian>
         <Spanish>Has recorrido un largo camino, hombre blanco. Tu ropa está sucia, tienes un aspecto demacrado y tu aliento huele a pescado podrido. Monta tus tiendas y sé nuestro invitado. Recupera tu fuerza. Pero recuerda que la tierra sobre la que estás no es tuya. Nosotros somos los hijos de este mundo, y ustedes son extraños aquí.</Spanish>
+        <Russian>Вы проделали долгий путь, путники. Грязная одежда, изможденные лица и изо рта пахнет морем. Ставьте палатки, будьте нашими гостями. Восстановите свою силу. Но никогда не забывайте: эта земля, на которой вы стоите, не ваша. Мы дети этого мира, а вы здесь чужие.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_FOUND_FIRST_CITY_1</Tag>
@@ -5651,6 +5666,7 @@
         <German>Wir danken als Fremde für die Gastfreundschaft, die man uns erweist.</German>
         <Italian>Come stranieri, rendiamo grazie per l'ospitalità che ci è stata mostrata.</Italian>
         <Spanish>Como extranjeros, damos las gracias por la hospitalidad que se nos ha brindado.</Spanish>
+        <Russian>Как чужестранцы, мы благодарим за оказанное нам гостеприимство.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FOUND_CITY_1</Tag>
@@ -5659,6 +5675,7 @@
         <German>Weißer Mann, als Ihr und die Euren abgerissen und hungrig in unser Land kamt, haben wir Euch als unsere Gäste empfangen. Doch Ihr seid nicht weitergezogen. Ihr nehmt Euch die Früchte dieser Welt, tötet unser Wild, fällt unsere Wälder. Ihr solltet uns %d1[ICON_GOLD] geben, um uns unsere Langmut zu vergelten.</German>
         <Italian>Uomo bianco, quando voi e i vostri siete venuti nella nostra terra laceri e affamati, vi abbiamo ricevuto come nostri ospiti. Ma non siete andati avanti. Prendete i frutti di questo mondo, uccidete la nostra selvaggina, tagliate le nostre foreste. Dovresti darci %d1[ICON_GOLD] per ripagarci della nostra lunga sopportazione.</Italian>
         <Spanish>Hombre blanco, cuando tú y los tuyos llegasteis a nuestra tierra desgarrados y hambrientos, os recibimos como nuestros huéspedes. Pero no has avanzado. Se llevan los frutos de este mundo, matan nuestra caza, talan nuestros bosques. Deberías darnos %d1[ICON_GOLD] para recompensarnos por nuestro largo sufrimiento.</Spanish>
+        <Russian>Когда ты и твои люди пришли в нашу землю, утомленные и голодные, мы приняли вас, как наших гостей, но вы... Вы берете плоды этого мира, убиваете нашу дичь, вырубаете наши леса. Вы должны заплатить нам %d1[ICON_GOLD] за наши страдания.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACQUIRE_CITY_1</Tag>
@@ -6225,6 +6242,7 @@
         <German>Habt Dank für Euer großzügiges Willkommen! Und für die vielen Geschenke - den Kopfputz aus Adlerfedern, die perlenbestickten Mokassins und die beiden Sklaven.</German>
         <Italian>Grazie per il vostro generoso benvenuto! E per i molti regali - il copricapo di piume d'aquila, i mocassini di perline e i due schiavi.</Italian>
         <Spanish>Gracias por su generosa acogida. Y por los numerosos regalos: el tocado de plumas de águila, los mocasines de cuentas y los dos esclavos.</Spanish>
+        <Russian>Спасибо за ваш щедрый прием. И за многочисленные подарки: головной убор из орлиных перьев, расшитые бисером мокасины и двух рабынь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_GIFT_SHIP_1</Tag>
@@ -7130,6 +7148,7 @@
         <German>Seid an unserem Lagerfeuer willkommen, [CT_NAME].</German>
         <Italian>È bello parlare con una persona che capisce l'importanza dell'azione. Parliamo di come possiamo rafforzare le nostre colonie.</Italian>
         <Spanish>Es bueno hablar con alguien que entiende la importancia de los actos. Charlemos sobre cómo podemos fortalecer nuestras colonias.</Spanish>
+        <Russian>Добро пожаловать, проходите к нашему костру, [CT_NAME].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_ORKEKE_1</Tag>
@@ -7277,6 +7296,7 @@
         <German>Wenn Ihr uns %d4_yield_price[ICON_GOLD] gebt, werden wir %d1_yield_amount%F2_yield_icon nach [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] liefern.</German>
         <Italian>Se ci date %d4_yield_price[ICON_GOLD], consegneremo %d1_yield_amount%F2_yield_icon a [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT].</Italian>
         <Spanish>Si nos da %d4_yield_price[ICON_GOLD], le entregaremos %d1_yield_amount%F2_yield_icon a [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT].</Spanish>
+        <Russian>Если вы дадите нам %d4_yield_price[ICON_GOLD], мы доставим в [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] %d1_yield_amount%F2_yield_icon.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_NATIVES_TRADE_ACCEPT_1</Tag>
