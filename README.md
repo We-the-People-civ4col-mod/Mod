@@ -10,6 +10,8 @@ Before you start:
 Otherwise the mod will not work!
 
 ## Known Issues
+* RELEASE BLOCKER: **currently there are frequent OOS in multiplayer, e.g. on speaking to natives**
+
 * Attacking a stack of civilian units with a stack of own units can cause some of the civilian units to disappear ([#582](https://github.com/We-the-People-civ4col-mod/Mod/issues/582))
 * Attacking a stack of civilian units with a unit having the "multiple attacks per turn" promotion can cause some of the civilian units to disappear ([#582](https://github.com/We-the-People-civ4col-mod/Mod/issues/582))
 * Combat Forecast sometimes not shown ([#557](https://github.com/We-the-People-civ4col-mod/Mod/issues/557))
