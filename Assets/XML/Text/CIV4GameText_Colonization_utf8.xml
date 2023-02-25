@@ -782,7 +782,7 @@
         <Tag>TXT_KEY_CHIEF_FAILED_MISSIONARY</Tag>
         <English>Just last spring one of your black robes came to us. But he was rude and insulted our ancestors' spirits. So we had to beat and tie him. Take him with you. (Receive a disillusioned missionary)</English>
         <German>Im letzten Frühjahr kam bereits einer eurer Schwarzroben zu uns. Aber er war unhöflich und beleidigte die Geister unserer Ahnen. Wir mussten ihn schlagen und fesseln. Nehmt ihn mit euch. (Desillusionierten Missionar erhalten)</German>
-        <Russian>Буквально прошлой весной к нам пришла одна из ваших черных мантий. Но он был груб и к тому же оскорблял наших предков. Так что нам пришлось немного побить его и связать. Возьми его с собой. (Забрать разочаровавшегося миссионера)</Russian>
+        <Russian>Буквально прошлой весной к нам пришла одна из ваших черных мантий. Но он был груб и к тому же оскорблял наших предков. Так что нам пришлось немного побить его и связать. Возьми его с собой, пока он еще жив. (Забрать разочаровавшегося миссионера)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHIEF_GOODY_EXPERIENCE</Tag>
@@ -2631,7 +2631,7 @@
         <German>[NEWLINE] [COLOR_WARNING_TEXT](erfordert %s1_list_of_comma_separated_amounts_of_yields)[COLOR_REVERT]</German>
         <Italian>[NEWLINE] [COLOR_WARNING_TEXT](richiede %s1_list_of_comma_separated_amounts_of_yields)[COLOR_REVERT]</Italian>
         <Spanish>[NEWLINE] [COLOR_WARNING_TEXT](requiere %s1_list_of_comma_separated_amounts_of_yields)[COLOR_REVERT]</Spanish>
-        <Russian>[NEWLINE] [COLOR_WARNING_TEXT](отсутствует на складе: %s1_list_of_comma_separated_amounts_of_yields)[COLOR_REVERT]</Russian>
+        <Russian>[NEWLINE] [COLOR_WARNING_TEXT](нет на складе: %s1_list_of_comma_separated_amounts_of_yields)[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_CHOOSE_COMLPETED_BUILD</Tag>

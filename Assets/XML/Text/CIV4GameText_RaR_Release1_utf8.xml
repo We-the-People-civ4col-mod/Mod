@@ -410,7 +410,7 @@
         <Tag>TXT_KEY_USED_SHIP_BOUGHT</Tag>
         <English>Milord, the [COLOR_UNIT_TEXT]%s1_shipname[COLOR_REVERT], the used [COLOR_SELECTED_TEXT]%s2_shiptype[COLOR_REVERT] we recently bought for [COLOR_SELECTED_TEXT]%d3_gold[COLOR_REVERT][ICON_GOLD] has been readied in Europe.</English>
         <German>Milord, die [COLOR_UNIT_TEXT]%s1_shipname[COLOR_REVERT], das gebrauchtes Schiff vom Typ [COLOR_SELECTED_TEXT]%s2_shiptype[COLOR_REVERT], welches wir [COLOR_SELECTED_TEXT]%d3_gold[COLOR_REVERT][ICON_GOLD] erworben haben, steht in Europa bereit.</German>
-        <Russian>Милорд, [COLOR_UNIT_TEXT]%s1_shipname[COLOR_REVERT], подержанный [COLOR_SELECTED_TEXT]%s2_shiptype[COLOR_REVERT], который мы недавно купили за [COLOR_SELECTED_TEXT]%d3_gold[COLOR_REVERT][ICON_GOLD], готов к отправке в Европу.</Russian>
+        <Russian>Милорд, [COLOR_UNIT_TEXT]%s1_shipname[COLOR_REVERT], подержанный [COLOR_SELECTED_TEXT]%s2_shiptype[COLOR_REVERT], который мы недавно купили за [COLOR_SELECTED_TEXT]%d3_gold[COLOR_REVERT][ICON_GOLD], ждет в доках Европы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FOREIGN_COLONIST_HIRED</Tag>
@@ -540,7 +540,7 @@
         <English>%s1_city : Goods worth %d2[ICON_GOLD] have been sold on the domestic market.</English>
         <French>%s1_city : Marchandises d'une valeur de %d2[ICON_GOLD] ont été vendus sur le marché intérieur.</French>
         <German>%s1_city : Auf dem Markt wurden Güter für %d2[ICON_GOLD] verkauft.</German>
-        <Russian>%s1_city : Товары на сумму %d2[ICON_GOLD] были проданы на внутреннем рынке.</Russian>
+        <Russian>[COLOR_BUILDING_TEXT]%s1_city[COLOR_REVERT] : Товары на сумму %d2[ICON_GOLD] были проданы на внутреннем рынке.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_INFO_YIELD</Tag>

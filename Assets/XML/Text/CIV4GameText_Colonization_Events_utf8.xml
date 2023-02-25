@@ -1121,6 +1121,7 @@
         <English>Be the first to explore the western route to Asia. Glory and wealth will be yours!</English>
         <French>Soyez le premier à explorer la route de l'Ouest vers l'Asie. Or et Gloire vous attendra.</French>
         <German>Entdeckt als Erster die westliche Seeroute nach Asien. Ruhm und Reichtümer werden Euch sicher sein.</German>
+        <Russian>Станьте первым, кто найдет морской западный путь в Азию. Слава и богатство будут вашими!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_NATIVE_TRADER_ATTACK_HELP</Tag>
@@ -1393,6 +1394,7 @@
         <English>Be the first to found at least %s1 settlements in the heartland (with no access to the sea or inland sea).</English>
         <French>Soyez le premier à fonder au moins %s1 colonies dans les terres (sans accès à l'océan ou à des lacs et mers intérieurs).</French>
         <German>Gründet als Erster mindestens %s1 Siedlungen im Landesinneren (ohne Zugang zum Ozean oder einem Binnenmeer).</German>
+        <Russian>Будьте первым, кто создаст не менее %s1 поселений внутри континента (без доступа к морю или внутреннему морю).</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_TERRAX</Tag>

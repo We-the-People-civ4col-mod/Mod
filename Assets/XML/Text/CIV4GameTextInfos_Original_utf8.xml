@@ -3176,7 +3176,7 @@
         <German>%s2_CityName : Ihr habt einen [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] ausgebildet.</German>
         <Italian>Hai addestrato [NUM1:un:una:dei:delle] %s1_UnitName a %s2_CityName.</Italian>
         <Spanish>Habéis entrenado a [NUM1:un:una:unos:unas] %s1_UnitName en %s2_CityName.</Spanish>
-        <Russian>%s2_CityName : Был создан юнит [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]</Russian>
+        <Russian>[COLOR_BUILDING_TEXT]%s2_CityName[COLOR_REVERT] : Был создан юнит [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CONSTRUCTED_BUILD_IN</Tag>
@@ -3185,7 +3185,7 @@
         <German>%s2_CityName : Ein [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT] wurde errichtet.</German>
         <Italian>Hai costruito l'edificio %s1_BldgName a %s2_CityName.</Italian>
         <Spanish>Habéis construido [NUM1:un:una:unos:unas] %s1_BldgName en %s2_CityName.</Spanish>
-        <Russian>%s2_CityName : Было построено здание [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT].</Russian>
+        <Russian>[COLOR_BUILDING_TEXT]%s2_CityName[COLOR_REVERT] : Было построено здание [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_WORK_HAS_BEGUN</Tag>

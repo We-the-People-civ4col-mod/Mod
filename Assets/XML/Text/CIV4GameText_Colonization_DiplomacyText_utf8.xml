@@ -4510,7 +4510,7 @@
         <German>Bleichgesicht, ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Häuptling der [COLOR_HIGHLIGHT_TEXT]Nez Perce[COLOR_REVERT]. Der Fisch ist meinem Volk heilig. Sein Fleisch nährt und versorgt uns das ganze Jahr über. Nehmt uns nicht unsere Fische, und wir werden Euch verschonen. Wir züchten auch kraftvolle und ausdauernde Pferde. Lasst unsere Pferde in Frieden und wir werden Euch friedlich an unseren Lagerfeuern empfangen.</German>
         <Italian>Saluti, sono [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] della civiltà [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Sediamoci davanti al fuoco e parliamo.</Italian>
         <Spanish>Saludos. Soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], de los [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Sentémonos alrededor de la hoguera y hablemos.</Spanish>
-        <Russian>Бледнолицый, я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], глава [COLOR_HIGHLIGHT_TEXT]нез-персе[COLOR_REVERT]. Лосось - святыня для моего народа. Его мясо питает нас и обеспечивает нас круглый год. Не забирайте у нас нашу рыбу и мы вас пощадим. Мы также разводим сильных и выносливых лошадей. Оставьте наших лошадей в покое и мы будем мирно встречать вас у наших костров.</Russian>
+        <Russian>Бледнолицый, я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], глава [COLOR_HIGHLIGHT_TEXT]Не-персе[COLOR_REVERT]. Лосось - святыня для моего народа. Его мясо питает нас и обеспечивает нас круглый год. Не забирайте у нас нашу рыбу и мы вас пощадим. Мы также разводим сильных и выносливых лошадей. Оставьте наших лошадей в покое и мы будем мирно встречать вас у наших костров.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_PENN_1</Tag>
@@ -5626,6 +5626,7 @@
         <German>Macht Euch bereit zu sterben! (KRIEG)</German>
         <Italian>Preparati a morire! (GUERRA)</Italian>
         <Spanish>¡Disponeos a morir! (GUERRA)</Spanish>
+        <Russian>Приготовьтесь умереть! (ВОЙНА)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_REVOLUTION_1</Tag>
@@ -6103,6 +6104,7 @@
         <German>Lebt wohl! Ich werde Euch in meine Gebete einschließen.</German>
         <Italian>Addio! Vi terrò nelle mie preghiere.</Italian>
         <Spanish>¡Adiós! Te mantendré en mis oraciones.</Spanish>
+        <Russian>Мне жаль говорить, что мы здесь, чтобы убить вас, поработить, ассимилировать или изолировать вас. Вся печаль в том, что поселенцы не будут сожалеть об этом...</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_6</Tag>
