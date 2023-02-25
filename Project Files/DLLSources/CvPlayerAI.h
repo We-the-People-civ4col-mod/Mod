@@ -582,6 +582,9 @@ protected:
 	int AI_getBestDockUnit() const;
 	bool AI_canHurryDockUnit() const;
 	int AI_estimateUnemploymentCount() const;
+	bool AI_isStrategicInputYield(YieldTypes eYield) const;
+	bool AI_isStrategicFinalYield(YieldTypes eYield) const;
+	bool AI_isStrategicYield(YieldTypes eYield) const;
 
 	friend class CvGameTextMgr;
 };
