@@ -948,8 +948,8 @@ public:
 	bool isYieldPortRoyalTradable(YieldTypes eYield) const;
 
 	// R&R mod, vetiarvind, trade groups - start
-	int addTradeRouteGroup(const std::wstring groupName);
-	bool editTradeRouteGroup(int iId, const std::wstring groupName);
+	int addTradeRouteGroup(const std::wstring& groupName);
+	bool editTradeRouteGroup(int iId, const std::wstring& groupName);
 	bool removeTradeRouteGroup(int iId);
 	CvTradeRouteGroup* getTradeRouteGroupById(int tradeGroupId) const;
 	CvTradeRouteGroup* getTradeRouteGroup(int iIndex) const;

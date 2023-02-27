@@ -24393,7 +24393,7 @@ void CvPlayer::updateTransportThreshold(YieldTypes eYield)
 
 // R&R mod, vetiarvind, trade groups - start
 
-int CvPlayer::addTradeRouteGroup(const std::wstring groupName)
+int CvPlayer::addTradeRouteGroup(const std::wstring& groupName)
 {
 	for (CvIdVector<CvTradeRouteGroup>::iterator it = m_aTradeGroups.begin(); it != m_aTradeGroups.end(); ++it)
 	{
@@ -24416,7 +24416,7 @@ int CvPlayer::addTradeRouteGroup(const std::wstring groupName)
 }
 
 
-bool CvPlayer::editTradeRouteGroup(int iId, const std::wstring groupName)
+bool CvPlayer::editTradeRouteGroup(int iId, const std::wstring& groupName)
 {
 	CvTradeRouteGroup* pTradeRouteGroup = getTradeRouteGroup(iId);
 	if (pTradeRouteGroup == NULL)
