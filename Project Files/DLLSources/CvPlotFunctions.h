@@ -150,7 +150,7 @@ inline DirCoordinates::~DirCoordinates()
 class RelCoordinates
 {
 public:
-	RelCoordinates(int iX, int iY) :
+	explicit RelCoordinates(int iX, int iY) :
 	m_iX(iX),
 	m_iY(iY)
 	{
@@ -176,7 +176,7 @@ protected:
 class Coordinates
 {
 public:
-	Coordinates(int iX = 0, int iY = 0)
+	explicit Coordinates(int iX = 0, int iY = 0)
 	{
 		set(iX, iY);
 	}

@@ -25,7 +25,7 @@
 
 struct NetworkDataTradeRouteInts
 {
-	NetworkDataTradeRouteInts(int a = 0) : iNetwork(a) {}
+	explicit NetworkDataTradeRouteInts(int a = 0) : iNetwork(a) {}
 
 	union
 	{

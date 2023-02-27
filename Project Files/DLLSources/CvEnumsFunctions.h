@@ -102,8 +102,7 @@ template <> struct VARINFO<ENUM_NAME> \
 template <typename T>                                                     \
 static inline bool operator operatorStr (varA a, varB b)                  \
 {                                                                         \
-	const bool bTypeCheck = boost::is_same<varA, varB>::value;            \
-	BOOST_STATIC_ASSERT(bTypeCheck);                                      \
+	BOOST_STATIC_ASSERT((boost::is_same<varA, varB>::value));             \
 	return (int)a operatorStr (int)b;                                     \
 }
 

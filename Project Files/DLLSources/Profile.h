@@ -10,7 +10,7 @@
 class Profiler
 {
 public:
-	Profiler(const char* szName);
+	explicit Profiler(const char* szName);
 	~Profiler();
 
 private:
