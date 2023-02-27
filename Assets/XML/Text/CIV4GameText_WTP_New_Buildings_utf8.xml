@@ -133,8 +133,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]confectioner's house[\COLOR_REVERT] is where a settler with the [LINK=PROFESSION_CONFECTIONER_VANILLA]vanilla confectioner[\LINK] or the [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]chocolate confectioner[\LINK] profession turns [LINK=YIELD_VANILLA_PODS]vanilla beans[\LINK] into [LINK=YIELD_VANILLA]vanilla treats[\LINK] and [LINK=YIELD_COCOA]cocoa[\LINK] with [LINK=YIELD_SUGAR]sugar[\LINK] into [LINK=YIELD_CHOCOLATE]chocolate[\LINK].</English>
-        <German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Konditors[COLOR_REVERT] ist die niedrigste Ausbaustufe der Konditoreikette, in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_CONFECTIONER_VANILLA]Konditor (Vanille)[\LINK] oder als [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]Konditor (Schokolade)[\LINK] die [LINK=YIELD_VANILLA_PODS]Vanilleschoten[\LINK] zu [LINK=YIELD_VANILLA]Vanilleköstlichkeiten[\LINK] und [LINK=YIELD_COCOA]Kakao[\LINK] mit [LINK=YIELD_SUGAR]Zucker[\LINK] zu [LINK=YIELD_CHOCOLATE]Schokolade[\LINK] verarbeitet.</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]confectioner's house[\COLOR_REVERT] is where a settler with the [LINK=PROFESSION_CONFECTIONER_VANILLA]vanilla confectioner[\LINK] or the [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]chocolate confectioner[\LINK] profession turns [LINK=YIELD_VANILLA_PODS]vanilla beans[\LINK] into [LINK=YIELD_VANILLA]vanilla treats[\LINK] and [LINK=YIELD_COCOA]cocoa[\LINK] with [LINK=YIELD_SUGAR]sugar[\LINK] into [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Master confectioner[\LINK] are particularly effective here.</English>
+        <German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Konditors[COLOR_REVERT] ist die niedrigste Ausbaustufe der Konditoreikette, in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_CONFECTIONER_VANILLA]Konditor (Vanille)[\LINK] oder als [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]Konditor (Schokolade)[\LINK] die [LINK=YIELD_VANILLA_PODS]Vanilleschoten[\LINK] zu [LINK=YIELD_VANILLA]Vanilleköstlichkeiten[\LINK] bzw. [LINK=YIELD_COCOA]Kakao[\LINK] mit [LINK=YIELD_SUGAR]Zucker[\LINK] zu [LINK=YIELD_CHOCOLATE]Schokolade[\LINK] verarbeitet. [LINK=UNIT_CONFECTIONER]Konditormeister[\LINK] sind hier besonders effektiv.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP_PEDIA</Tag>
@@ -143,8 +143,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]confectioners' shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_CONFECTIONER_HOUSE]confectioner's house[\LINK] where a settler with the [LINK=PROFESSION_CONFECTIONER_VANILLA]vanilla confectioner[\LINK] or the [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]chocolate confectioner[\LINK] profession turns [LINK=YIELD_VANILLA_PODS]vanilla beans[\LINK] into [LINK=YIELD_VANILLA]vanilla treats[\LINK] and [LINK=YIELD_COCOA]cocoa[\LINK] with [LINK=YIELD_SUGAR]sugar[\LINK] into [LINK=YIELD_CHOCOLATE]chocolate[\LINK].</English>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Konditorladen[COLOR_REVERT] ist die Erweiterung des [LINK=BUILDING_CONFECTIONER_HOUSE]Haus des Konditors[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_CONFECTIONER_VANILLA]Konditor (Vanille)[\LINK] oder als [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]Konditor (Schokolade)[\LINK] die [LINK=YIELD_VANILLA_PODS]Vanilleschoten[\LINK] zu [LINK=YIELD_VANILLA]Vanilleköstlichkeiten[\LINK] und [LINK=YIELD_COCOA]Kakao[\LINK] mit [LINK=YIELD_SUGAR]Zucker[\LINK] zu [LINK=YIELD_CHOCOLATE]Schokolade[\LINK] verarbeitet.</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]confectioners' shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_CONFECTIONER_HOUSE]confectioner's house[\LINK] where a settler with the [LINK=PROFESSION_CONFECTIONER_VANILLA]vanilla confectioner[\LINK] or the [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]chocolate confectioner[\LINK] profession turns [LINK=YIELD_VANILLA_PODS]vanilla beans[\LINK] into [LINK=YIELD_VANILLA]vanilla treats[\LINK] and [LINK=YIELD_COCOA]cocoa[\LINK] with [LINK=YIELD_SUGAR]sugar[\LINK] into [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Master confectioner[\LINK] are particularly effective here.</English>
+        <German>Die [COLOR_HIGHLIGHT_TEXT]Konditorladen[COLOR_REVERT] ist die Erweiterung des [LINK=BUILDING_CONFECTIONER_HOUSE]Haus des Konditors[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_CONFECTIONER_VANILLA]Konditor (Vanille)[\LINK] oder als [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]Konditor (Schokolade)[\LINK] die [LINK=YIELD_VANILLA_PODS]Vanilleschoten[\LINK] zu [LINK=YIELD_VANILLA]Vanilleköstlichkeiten[\LINK] bzw. [LINK=YIELD_COCOA]Kakao[\LINK] mit [LINK=YIELD_SUGAR]Zucker[\LINK] zu [LINK=YIELD_CHOCOLATE]Schokolade[\LINK] verarbeitet. [LINK=UNIT_CONFECTIONER]Konditormeister[\LINK] sind hier besonders effektiv.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY_PEDIA</Tag>
@@ -153,9 +153,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]confectioners' factory[COLOR_REVERT] is the top upgrade of the [LINK=BUILDING_CONFECTIONER_HOUSE]confectioner's house[\LINK].</English>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Konditorei[COLOR_REVERT] ist die höchste Stufe des [LINK=BUILDING_CONFECTIONER_HOUSE]Haus des Konditors[\LINK].</German>
-    </TEXT>
+        <English>The [COLOR_HIGHLIGHT_TEXT]confectioners' factory[COLOR_REVERT] is the top upgrade of the [LINK=BUILDING_CONFECTIONER_HOUSE]confectioner's house[\LINK] where a settler with the [LINK=PROFESSION_CONFECTIONER_VANILLA]vanilla confectioner[\LINK] or the [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]chocolate confectioner[\LINK] profession turns [LINK=YIELD_VANILLA_PODS]vanilla beans[\LINK] into [LINK=YIELD_VANILLA]vanilla treats[\LINK] and [LINK=YIELD_COCOA]cocoa[\LINK] with [LINK=YIELD_SUGAR]sugar[\LINK] into [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Master confectioner[\LINK] are particularly effective here.</English>
+        <German>Die [COLOR_HIGHLIGHT_TEXT]Konditorei[COLOR_REVERT] ist die höchste Stufe des [LINK=BUILDING_CONFECTIONER_HOUSE]Haus des Konditors[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_CONFECTIONER_VANILLA]Konditor (Vanille)[\LINK] oder als [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]Konditor (Schokolade)[\LINK] die [LINK=YIELD_VANILLA_PODS]Vanilleschoten[\LINK] zu [LINK=YIELD_VANILLA]Vanilleköstlichkeiten[\LINK] bzw. [LINK=YIELD_COCOA]Kakao[\LINK] mit [LINK=YIELD_SUGAR]Zucker[\LINK] zu [LINK=YIELD_CHOCOLATE]Schokolade[\LINK] verarbeitet. [LINK=UNIT_CONFECTIONER]Konditormeister[\LINK] sind hier besonders effektiv.</German>
+	</TEXT>
     <!-- LEATHER_PADDER -->
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_LEATHER_PADDER</Tag>
@@ -233,9 +233,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]leatherworker's house[COLOR_REVERT] is the lowest level of expansion of leather processing, where settlers work as [LINK=PROFESSION_LEATHER_PADDER_COATS]leather clothier[\LINK] profession make [LINK=YIELD_PADDED_LEATHER_COATS]lined leather coats[\LINK] from [LINK=YIELD_HIDES]cowhides[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] or [LINK=PROFESSION_LEATHER_PADDER_BOOTS]bootmaker (lined)[\LINK] make [LINK=YIELD_GOAT_HIDE_BOOTS]lined goatskin boots[\LINK] from [LINK=YIELD_GOAT_HIDES]goatskin[\LINK] and [LINK=YIELD_WOOL]sheep wool[\LINK].</English>
+        <English>The [COLOR_HIGHLIGHT_TEXT]leatherworker's house[COLOR_REVERT] is the lowest level of expansion of leather processing, where settlers work as [LINK=PROFESSION_LEATHER_PADDER_COATS]leather clothier[\LINK] profession make [LINK=YIELD_PADDED_LEATHER_COATS]lined leather coats[\LINK] from [LINK=YIELD_HIDES]cowhides[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] or [LINK=PROFESSION_LEATHER_PADDER_BOOTS]bootmaker (lined)[\LINK] make [LINK=YIELD_GOAT_HIDE_BOOTS]lined goatskin boots[\LINK] from [LINK=YIELD_GOAT_HIDES]goatskin[\LINK] and [LINK=YIELD_WOOL]sheep wool[\LINK]. [LINK=UNIT_LEATHER_TAYLOR]Master leatherworker[\LINK] are particularly effective at this.</English>
         <French>Coudre un rembourrage et une doublure dans le cuir ne rend pas seulement le vêtement plus confortable. En ajoutant de l'isolation, il améliore également la santé des personnes travaillant à l'extérieur, et peut même leur sauver la vie.</French>
-        <German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Lederschneiders[COLOR_REVERT] ist die niedrigste Ausbaustufe der Lederverarbeitung, in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_LEATHER_PADDER_COATS]Polsterer (Ledermäntel)[\LINK] die [LINK=YIELD_PADDED_LEATHER_COATS]gefütterten Ledermäntel[\LINK] aus [LINK=YIELD_HIDES]Rindshäuten[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK] oder [LINK=PROFESSION_LEATHER_PADDER_BOOTS]Stiefelmacher (gefüttert)[\LINK] aus [LINK=YIELD_GOAT_HIDES]Ziegenfell[\LINK] und [LINK=YIELD_WOOL]Schafswolle[\LINK] gefütterte [LINK=YIELD_GOAT_HIDE_BOOTS]Ziegenledersstiefel[\LINK] herstellen.</German>
+        <German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Lederschneiders[COLOR_REVERT] ist die niedrigste Ausbaustufe der Lederverarbeitung, in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_LEATHER_PADDER_COATS]Polsterer (Ledermäntel)[\LINK] die [LINK=YIELD_PADDED_LEATHER_COATS]gefütterten Ledermäntel[\LINK] aus [LINK=YIELD_HIDES]Rindshäuten[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK] oder [LINK=PROFESSION_LEATHER_PADDER_BOOTS]Stiefelmacher (gefüttert)[\LINK] aus [LINK=YIELD_GOAT_HIDES]Ziegenfell[\LINK] und [LINK=YIELD_WOOL]Schafswolle[\LINK] gefütterte [LINK=YIELD_GOAT_HIDE_BOOTS]Ziegenledersstiefel[\LINK] herstellen.[PARAGRAPH:1][LINK=UNIT_LEATHER_TAYLOR]Meister-Lederschneider[\LINK] sind hierbei besonders effektiv.</German>
         <Italian>Cucire un'imbottitura e una fodera nella pelle non rende solo l'indumento più confortevole. L'aggiunta di isolamento migliora anche la salute di chi lavora all'aperto e può addirittura salvargli la vita.</Italian>
         <Spanish>Coser acolchado y forro a la piel no sólo hace que la prenda sea más cómoda. Al añadir aislamiento, también mejora la salud de quienes trabajan al aire libre, e incluso puede salvarles la vida.</Spanish>
     </TEXT>
@@ -246,8 +246,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]leatherworkers' shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's house[\LINK] where settlers work as [LINK=PROFESSION_LEATHER_PADDER_COATS]leather clothier[\LINK] profession make [LINK=YIELD_PADDED_LEATHER_COATS]lined leather coats[\LINK] from [LINK=YIELD_HIDES]cowhides[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] or [LINK=PROFESSION_LEATHER_PADDER_BOOTS]bootmaker (lined)[\LINK] make [LINK=YIELD_GOAT_HIDE_BOOTS]lined goatskin boots[\LINK] from [LINK=YIELD_GOAT_HIDES]goatskin[\LINK] and [LINK=YIELD_WOOL]sheep wool[\LINK].</English>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Lederwerkstatt[COLOR_REVERT] ist die Erweiterung des [LINK=BUILDING_LEATHER_PADDER_HOUSE]Haus des Lederschneiders[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_LEATHER_PADDER_COATS]Polsterer (Ledermäntel)[\LINK] die [LINK=YIELD_PADDED_LEATHER_COATS]gefütterten Ledermäntel[\LINK] aus [LINK=YIELD_HIDES]Rindshäuten[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK] oder [LINK=PROFESSION_LEATHER_PADDER_BOOTS]Stiefelmacher (gefüttert)[\LINK] aus [LINK=YIELD_GOAT_HIDES]Ziegenfell[\LINK] und [LINK=YIELD_WOOL]Schafswolle[\LINK] gefütterte [LINK=YIELD_GOAT_HIDE_BOOTS]Ziegenledersstiefel[\LINK] herstellen.</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]leatherworkers' shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's house[\LINK] where settlers work as [LINK=PROFESSION_LEATHER_PADDER_COATS]leather clothier[\LINK] profession make [LINK=YIELD_PADDED_LEATHER_COATS]lined leather coats[\LINK] from [LINK=YIELD_HIDES]cowhides[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] or [LINK=PROFESSION_LEATHER_PADDER_BOOTS]bootmaker (lined)[\LINK] make [LINK=YIELD_GOAT_HIDE_BOOTS]lined goatskin boots[\LINK] from [LINK=YIELD_GOAT_HIDES]goatskin[\LINK] and [LINK=YIELD_WOOL]sheep wool[\LINK]. [LINK=UNIT_LEATHER_TAYLOR]Master leatherworker[\LINK] are particularly effective at this.</English>
+        <German>Die [COLOR_HIGHLIGHT_TEXT]Lederwerkstatt[COLOR_REVERT] ist die Erweiterung des [LINK=BUILDING_LEATHER_PADDER_HOUSE]Haus des Lederschneiders[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_LEATHER_PADDER_COATS]Polsterer (Ledermäntel)[\LINK] die [LINK=YIELD_PADDED_LEATHER_COATS]gefütterten Ledermäntel[\LINK] aus [LINK=YIELD_HIDES]Rindshäuten[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK] oder [LINK=PROFESSION_LEATHER_PADDER_BOOTS]Stiefelmacher (gefüttert)[\LINK] aus [LINK=YIELD_GOAT_HIDES]Ziegenfell[\LINK] und [LINK=YIELD_WOOL]Schafswolle[\LINK] gefütterte [LINK=YIELD_GOAT_HIDE_BOOTS]Ziegenledersstiefel[\LINK] herstellen.[PARAGRAPH:1][LINK=UNIT_LEATHER_TAYLOR]Meister-Lederschneider[\LINK] sind hierbei besonders effektiv.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY_PEDIA</Tag>
@@ -256,10 +256,10 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]leather coat factory[COLOR_REVERT] is the final upgrade of the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's house[\LINK].</English>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Lederwarenfabrik[COLOR_REVERT] ist die letzte Erweiterung des [LINK=BUILDING_LEATHER_PADDER_HOUSE]Haus des Lederschneiders[\LINK].</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]leather coat factory[COLOR_REVERT] is the final upgrade of the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's house[\LINK], where settlers work as [LINK=PROFESSION_LEATHER_PADDER_COATS]leather clothier[\LINK] profession make [LINK=YIELD_PADDED_LEATHER_COATS]lined leather coats[\LINK] from [LINK=YIELD_HIDES]cowhides[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] or [LINK=PROFESSION_LEATHER_PADDER_BOOTS]bootmaker (lined)[\LINK] make [LINK=YIELD_GOAT_HIDE_BOOTS]lined goatskin boots[\LINK] from [LINK=YIELD_GOAT_HIDES]goatskin[\LINK] and [LINK=YIELD_WOOL]sheep wool[\LINK]. [LINK=UNIT_LEATHER_TAYLOR]Master leatherworker[\LINK] are particularly effective at this.</English>
+        <German>Die [COLOR_HIGHLIGHT_TEXT]Lederwarenfabrik[COLOR_REVERT] ist die letzte Erweiterung des [LINK=BUILDING_LEATHER_PADDER_HOUSE]Haus des Lederschneiders[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_LEATHER_PADDER_COATS]Polsterer (Ledermäntel)[\LINK] die [LINK=YIELD_PADDED_LEATHER_COATS]gefütterten Ledermäntel[\LINK] aus [LINK=YIELD_HIDES]Rindshäuten[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK] oder [LINK=PROFESSION_LEATHER_PADDER_BOOTS]Stiefelmacher (gefüttert)[\LINK] aus [LINK=YIELD_GOAT_HIDES]Ziegenfell[\LINK] und [LINK=YIELD_WOOL]Schafswolle[\LINK] gefütterte [LINK=YIELD_GOAT_HIDE_BOOTS]Ziegenledersstiefel[\LINK] herstellen.[PARAGRAPH:1][LINK=UNIT_LEATHER_TAYLOR]Meister-Lederschneider[\LINK] sind hierbei besonders effektiv.</German>
     </TEXT>
-    <!-- OIL_TRADER -->
+<!-- OIL_TRADER -->
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_OIL_TRADER</Tag>
         <English>Cooking Oil Trader</English>
@@ -339,8 +339,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]oil trader's house[COLOR_REVERT] or one of its upgrades is where the [LINK=PROFESSION_OLIVE_OIL_TRADER]olive oil trader[\LINK] makes [LINK=YIELD_OLIVE_OIL]olive oil[\LINK] from [LINK=YIELD_OLIVES]olives[\LINK] or [LINK=PROFESSION_RAPE_OIL_TRADER]canola oil trader[\LINK] makes [LINK=YIELD_RAPE_OIL]canola oil[\LINK] from [LINK=YIELD_RAPE]rapeseed[\LINK].</English>
-        <German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Ölhändlers[COLOR_REVERT] oder einer seiner Ausbaustufen stellen [LINK=PROFESSION_OLIVE_OIL_TRADER]Olivenölhändler[\LINK] das [LINK=YIELD_OLIVE_OIL]Ölivenöl[\LINK] aus [LINK=YIELD_OLIVES]Oliven[\LINK] oder [LINK=PROFESSION_RAPE_OIL_TRADER]Rapsölhändler[\LINK] das [LINK=YIELD_RAPE_OIL]Rapsöl[\LINK] aus [LINK=YIELD_RAPE]Raps[\LINK] her.</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]oil trader's house[COLOR_REVERT] or one of its upgrades is where the [LINK=PROFESSION_OLIVE_OIL_TRADER]olive oil trader[\LINK] makes [LINK=YIELD_OLIVE_OIL]olive oil[\LINK] from [LINK=YIELD_OLIVES]olives[\LINK] or [LINK=PROFESSION_RAPE_OIL_TRADER]canola oil trader[\LINK] makes [LINK=YIELD_RAPE_OIL]canola oil[\LINK] from [LINK=YIELD_RAPE]rapeseed[\LINK]. [LINK=UNIT_OIL_TRADER]Master cooking oil trader[\LINK] are particularly effective at this.</English>
+        <German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Ölhändlers[COLOR_REVERT] oder einer seiner Ausbaustufen stellen [LINK=PROFESSION_OLIVE_OIL_TRADER]Olivenölhändler[\LINK] das [LINK=YIELD_OLIVE_OIL]Ölivenöl[\LINK] aus [LINK=YIELD_OLIVES]Oliven[\LINK] oder [LINK=PROFESSION_RAPE_OIL_TRADER]Rapsölhändler[\LINK] das [LINK=YIELD_RAPE_OIL]Rapsöl[\LINK] aus [LINK=YIELD_RAPE]Raps[\LINK] her.[PARAGRAPH:1][LINK=UNIT_OIL_TRADER]Meister-Speiseölhändler[\LINK] sind hierbei besonders effektiv.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP_PEDIA</Tag>
@@ -349,8 +349,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]cooking oil shop[COLOR_REVERT], where the [LINK=PROFESSION_OLIVE_OIL_TRADER]olive oil trader[\LINK] makes [LINK=YIELD_OLIVE_OIL]olive oil[\LINK] from [LINK=YIELD_OLIVES]olives[\LINK] or [LINK=PROFESSION_RAPE_OIL_TRADER]canola oil trader[\LINK] makes [LINK=YIELD_RAPE_OIL]canola oil[\LINK] from [LINK=YIELD_RAPE]rapeseed[\LINK], is the upgrade of the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK].</English>
-        <German>Der [COLOR_HIGHLIGHT_TEXT]Speiseölladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_OIL_TRADER_HOUSE]Haus des Ölhändlers[\LINK], wo der [LINK=PROFESSION_OLIVE_OIL_TRADER]Olivenölhändler[\LINK] das [LINK=YIELD_OLIVE_OIL]Olivenöl[\LINK] aus [LINK=YIELD_OLIVES]Oliven[\LINK] oder der [LINK=PROFESSION_RAPE_OIL_TRADER]Rapsölhändler[\LINK] das [LINK=YIELD_RAPE_OIL]Rapsöl[\LINK] aus [LINK=YIELD_RAPE]Raps[\LINK] herstellt.</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]cooking oil shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK] where the [LINK=PROFESSION_OLIVE_OIL_TRADER]olive oil trader[\LINK] makes [LINK=YIELD_OLIVE_OIL]olive oil[\LINK] from [LINK=YIELD_OLIVES]olives[\LINK] or [LINK=PROFESSION_RAPE_OIL_TRADER]canola oil trader[\LINK] makes [LINK=YIELD_RAPE_OIL]canola oil[\LINK] from [LINK=YIELD_RAPE]rapeseed[\LINK]. [LINK=UNIT_OIL_TRADER]Master cooking oil trader[\LINK] are particularly effective at this.</English>
+        <German>Der [COLOR_HIGHLIGHT_TEXT]Speiseölladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_OIL_TRADER_HOUSE]Haus des Ölhändlers[\LINK], wo der [LINK=PROFESSION_OLIVE_OIL_TRADER]Olivenölhändler[\LINK] das [LINK=YIELD_OLIVE_OIL]Olivenöl[\LINK] aus [LINK=YIELD_OLIVES]Oliven[\LINK] oder der [LINK=PROFESSION_RAPE_OIL_TRADER]Rapsölhändler[\LINK] das [LINK=YIELD_RAPE_OIL]Rapsöl[\LINK] aus [LINK=YIELD_RAPE]Raps[\LINK] herstellt.[PARAGRAPH:1][LINK=UNIT_OIL_TRADER]Meister-Speiseölhändler[\LINK] sind hierbei besonders effektiv.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY_PEDIA</Tag>
@@ -359,8 +359,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]cooking oil factory[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK].</English>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Speiseölfabrik[COLOR_REVERT] ist das höchste Ausbaustufe des [LINK=BUILDING_OIL_TRADER_HOUSE]Haus des Ölhändlers[\LINK].</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]cooking oil factory[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK], where the [LINK=PROFESSION_OLIVE_OIL_TRADER]olive oil trader[\LINK] makes [LINK=YIELD_OLIVE_OIL]olive oil[\LINK] from [LINK=YIELD_OLIVES]olives[\LINK] or [LINK=PROFESSION_RAPE_OIL_TRADER]canola oil trader[\LINK] makes [LINK=YIELD_RAPE_OIL]canola oil[\LINK] from [LINK=YIELD_RAPE]rapeseed[\LINK]. [LINK=UNIT_OIL_TRADER]Master cooking oil trader[\LINK] are particularly effective at this.</English>
+        <German>Die [COLOR_HIGHLIGHT_TEXT]Speiseölfabrik[COLOR_REVERT] ist das höchste Ausbaustufe des [LINK=BUILDING_OIL_TRADER_HOUSE]Haus des Ölhändlers[\LINK], wo der [LINK=PROFESSION_OLIVE_OIL_TRADER]Olivenölhändler[\LINK] das [LINK=YIELD_OLIVE_OIL]Olivenöl[\LINK] aus [LINK=YIELD_OLIVES]Oliven[\LINK] oder der [LINK=PROFESSION_RAPE_OIL_TRADER]Rapsölhändler[\LINK] das [LINK=YIELD_RAPE_OIL]Rapsöl[\LINK] aus [LINK=YIELD_RAPE]Raps[\LINK] herstellt.[PARAGRAPH:1][LINK=UNIT_OIL_TRADER]Meister-Speiseölhändler[\LINK] sind hierbei besonders effektiv.</German>
     </TEXT>
     <!-- ROASTER -->
     <TEXT>
@@ -442,8 +442,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_HOUSE_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]roaster's house[COLOR_REVERT] is where a colonist with the [LINK=PROFESSION_PEANUT_ROASTER]peanut roaster[\LINK] profession turns [LINK=YIELD_PEANUTS]peanuts[\LINK] into [LINK=YIELD_ROASTED_PEANUTS]roasted peanuts[\LINK].</English>
-        <German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Rösters[COLOR_REVERT] oder einer seiner Ausbaustufen können verschiedene Lebensmittel geröstet werden:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Erdnussröster[\LINK] rösten [LINK=YIELD_PEANUTS]Erdnüsse[\LINK] um [LINK=YIELD_ROASTED_PEANUTS]geröstete Erdnüsse[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COCOA_ROASTER]Kakaoröster[\LINK] rösten [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] um [LINK=YIELD_COCOA]Kakao[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Kaffeeröster[\LINK] rösten [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] um [LINK=YIELD_COFFEE]Kaffee[\LINK] herzustellen.</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]roaster's house[COLOR_REVERT] is where various foods are roasted:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Peanut roasters[\LINK] roast [LINK=YIELD_PEANUTS]peanuts[\LINK] to make [LINK=YIELD_ROASTED_PEANUTS]roasted peanuts[\LINK]. [NEWLINE][LINK=PROFESSION_COCOA_ROASTER]cocoa roasters[\LINK] roast [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK] to make [LINK=YIELD_COCOA]cocoa[\LINK]. [NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Coffee roasters[\LINK] roast [LINK=YIELD_COFFEE_BERRIES]coffee berries[\LINK] to make [LINK=YIELD_COFFEE]coffee[\LINK].[NEWLINE][LINK=UNIT_ROASTER]Master roaster[\LINK] are particularly effective in this regard.</English>
+        <German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Rösters[COLOR_REVERT] oder einer seiner Ausbaustufen können verschiedene Lebensmittel geröstet werden:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Erdnussröster[\LINK] rösten [LINK=YIELD_PEANUTS]Erdnüsse[\LINK] um [LINK=YIELD_ROASTED_PEANUTS]geröstete Erdnüsse[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COCOA_ROASTER]Kakaoröster[\LINK] rösten [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] um [LINK=YIELD_COCOA]Kakao[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Kaffeeröster[\LINK] rösten [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] um [LINK=YIELD_COFFEE]Kaffee[\LINK] herzustellen.[PARAGRAPH:1][LINK=UNIT_ROASTER]Röstmeister[\LINK] sind hierbei besonders effektiv.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_SHOP_PEDIA</Tag>
@@ -452,8 +452,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_SHOP_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]roaster shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_ROASTER_HOUSE]roaster's house[\LINK] where colonists with the [LINK=PROFESSION_PEANUT_ROASTER]peanut roaster[\LINK] profession turns [LINK=YIELD_PEANUTS]peanuts[\LINK] into [LINK=YIELD_ROASTED_PEANUTS]roasted peanuts[\LINK]</English>
-        <German>Der [COLOR_HIGHLIGHT_TEXT]Röstwarenladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_ROASTER_HOUSE]Haus des Rösters[\LINK], wo verschiedene Lebensmittel geröstet werden:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Erdnussröster[\LINK] rösten [LINK=YIELD_PEANUTS]Erdnüsse[\LINK] um [LINK=YIELD_ROASTED_PEANUTS]geröstete Erdnüsse[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COCOA_ROASTER]Kakaoröster[\LINK] rösten [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] um [LINK=YIELD_COCOA]Kakao[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Kaffeeröster[\LINK] rösten [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] um [LINK=YIELD_COFFEE]Kaffee[\LINK] herzustellen.</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]roaster shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_ROASTER_HOUSE]roaster's house[\LINK] where various foods are roasted:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Peanut roasters[\LINK] roast [LINK=YIELD_PEANUTS]peanuts[\LINK] to make [LINK=YIELD_ROASTED_PEANUTS]roasted peanuts[\LINK]. [NEWLINE][LINK=PROFESSION_COCOA_ROASTER]cocoa roasters[\LINK] roast [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK] to make [LINK=YIELD_COCOA]cocoa[\LINK]. [NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Coffee roasters[\LINK] roast [LINK=YIELD_COFFEE_BERRIES]coffee berries[\LINK] to make [LINK=YIELD_COFFEE]coffee[\LINK].[NEWLINE][LINK=UNIT_ROASTER]Master roaster[\LINK] are particularly effective in this regard.</English>
+        <German>Der [COLOR_HIGHLIGHT_TEXT]Röstwarenladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_ROASTER_HOUSE]Haus des Rösters[\LINK], wo verschiedene Lebensmittel geröstet werden:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Erdnussröster[\LINK] rösten [LINK=YIELD_PEANUTS]Erdnüsse[\LINK] um [LINK=YIELD_ROASTED_PEANUTS]geröstete Erdnüsse[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COCOA_ROASTER]Kakaoröster[\LINK] rösten [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] um [LINK=YIELD_COCOA]Kakao[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Kaffeeröster[\LINK] rösten [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] um [LINK=YIELD_COFFEE]Kaffee[\LINK] herzustellen.[PARAGRAPH:1][LINK=UNIT_ROASTER]Röstmeister[\LINK] sind hierbei besonders effektiv.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_FACTORY_PEDIA</Tag>
@@ -462,8 +462,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_FACTORY_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]roaster factory[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_ROASTER_HOUSE]roaster's house[\LINK].</English>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Rösterei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_ROASTER_HOUSE]Haus des Rösters[\LINK].</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]roastery[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_ROASTER_HOUSE]roaster's house[\LINK] where various foods are roasted:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Peanut roasters[\LINK] roast [LINK=YIELD_PEANUTS]peanuts[\LINK] to make [LINK=YIELD_ROASTED_PEANUTS]roasted peanuts[\LINK]. [NEWLINE][LINK=PROFESSION_COCOA_ROASTER]cocoa roasters[\LINK] roast [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK] to make [LINK=YIELD_COCOA]cocoa[\LINK]. [NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Coffee roasters[\LINK] roast [LINK=YIELD_COFFEE_BERRIES]coffee berries[\LINK] to make [LINK=YIELD_COFFEE]coffee[\LINK].[NEWLINE][LINK=UNIT_ROASTER]Master roaster[\LINK] are particularly effective in this regard.</English>
+        <German>Die [COLOR_HIGHLIGHT_TEXT]Rösterei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_ROASTER_HOUSE]Haus des Rösters[\LINK], wo verschiedene Lebensmittel geröstet werden:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Erdnussröster[\LINK] rösten [LINK=YIELD_PEANUTS]Erdnüsse[\LINK] um [LINK=YIELD_ROASTED_PEANUTS]geröstete Erdnüsse[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COCOA_ROASTER]Kakaoröster[\LINK] rösten [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] um [LINK=YIELD_COCOA]Kakao[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Kaffeeröster[\LINK] rösten [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] um [LINK=YIELD_COFFEE]Kaffee[\LINK] herzustellen.[PARAGRAPH:1][LINK=UNIT_ROASTER]Röstmeister[\LINK] sind hierbei besonders effektiv.</German>
     </TEXT>
     <!-- POTTERY -->
     <TEXT>
@@ -545,8 +545,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_HOUSE_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]potter's house[COLOR_REVERT] is where a colonist with the [LINK=PROFESSION_POTTER]potter[\LINK] profession turns [LINK=YIELD_CLAY]clay[\LINK] into [LINK=YIELD_POTTERY]pottery[\LINK].</English>
-        <German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Töpfers[COLOR_REVERT] ist der Ort, an dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_POTTER]Töpfer[\LINK] den [LINK=YIELD_CLAY]Lehm[\LINK] zu [LINK=YIELD_POTTERY]Töpferwaren[\LINK] verarbeitet.</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]potter's house[COLOR_REVERT] is where a colonist with the [LINK=PROFESSION_POTTER]potter[\LINK] profession turns [LINK=YIELD_CLAY]clay[\LINK] into [LINK=YIELD_POTTERY]pottery[\LINK]. [LINK=UNIT_POTTER]Master potters[\LINK] are particularly effective at this.</English>
+        <German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Töpfers[COLOR_REVERT] ist der Ort, an dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] im Beruf des [LINK=PROFESSION_POTTER]Töpfers[\LINK] den [LINK=YIELD_CLAY]Lehm[\LINK] zu [LINK=YIELD_POTTERY]Töpferwaren[\LINK] verarbeitet.[PARAGRAPH:1][LINK=UNIT_POTTER]Töpfermeister[\LINK] sind hierbei besonders effektiv.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_SHOP_PEDIA</Tag>
@@ -555,8 +555,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_SHOP_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]pottery shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_POTTERY_HOUSE]potter's house[\LINK] where colonists with the [LINK=PROFESSION_POTTER]potter[\LINK] profession turn [LINK=YIELD_CLAY]clay[\LINK] into [LINK=YIELD_POTTERY]pottery[\LINK].</English>
-        <German>Der [COLOR_HIGHLIGHT_TEXT]Töpferladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_POTTERY_HOUSE]Haus des Töpfers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem [LINK=PROFESSION_POTTER]Töpfer[\LINK]-Beruf [LINK=YIELD_CLAY]Lehm[\LINK] zur Herstellung von [LINK=YIELD_POTTERY]Töpferwaren[\LINK] verwenden.</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]pottery shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_POTTERY_HOUSE]potter's house[\LINK] where colonists with the [LINK=PROFESSION_POTTER]potter[\LINK] profession turn [LINK=YIELD_CLAY]clay[\LINK] into [LINK=YIELD_POTTERY]pottery[\LINK]. [LINK=UNIT_POTTER]Master potters[\LINK] are particularly effective at this.</English>
+        <German>Der [COLOR_HIGHLIGHT_TEXT]Töpferladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_POTTERY_HOUSE]Haus des Töpfers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] im Beruf des [LINK=PROFESSION_POTTER]Töpfers[\LINK] den [LINK=YIELD_CLAY]Lehm[\LINK] zur Herstellung von [LINK=YIELD_POTTERY]Töpferwaren[\LINK] verwenden.[PARAGRAPH:1][LINK=UNIT_POTTER]Töpfermeister[\LINK] sind hierbei besonders effektiv.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_FACTORY_PEDIA</Tag>
@@ -565,8 +565,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_FACTORY_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]pottery factory[COLOR_REVERT] is the final upgrade of the [LINK=BUILDING_POTTERY_HOUSE]potter's house[\LINK].</English>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Töpferei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_POTTERY_HOUSE]Haus des Töpfers[\LINK].</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]pottery factory[COLOR_REVERT] is the final upgrade of the [LINK=BUILDING_POTTERY_HOUSE]potter's house[\LINK] where colonists with the [LINK=PROFESSION_POTTER]potter[\LINK] profession turn [LINK=YIELD_CLAY]clay[\LINK] into [LINK=YIELD_POTTERY]pottery[\LINK]. [LINK=UNIT_POTTER]Master potters[\LINK] are particularly effective at this.</English>
+        <German>Die [COLOR_HIGHLIGHT_TEXT]Töpferei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_POTTERY_HOUSE]Haus des Töpfers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] im Beruf des [LINK=PROFESSION_POTTER]Töpfers[\LINK] den [LINK=YIELD_CLAY]Lehm[\LINK] zur Herstellung von [LINK=YIELD_POTTERY]Töpferwaren[\LINK] verwenden.[PARAGRAPH:1][LINK=UNIT_POTTER]Töpfermeister[\LINK] sind hierbei besonders effektiv.</German>
     </TEXT>
     <!-- TAILOR -->
     <TEXT>
@@ -645,8 +645,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_HOUSE_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]tailor's house[COLOR_REVERT] is where the fabrics from the [LINK=BUILDING_WEAVERS_HOUSE]Weaving Mill[\LINK] are made into clothing.[NEWLINE]A settler with the [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]workwear tailor[\LINK] profession uses [LINK=YIELD_COLOURED_WOOL_CLOTH]coloured wool cloth[\LINK] to make [LINK=YIELD_EVERYDAY_CLOTHES]everyday clothing[\LINK]; or the [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]formalwear tailor[\LINK] uses [LINK=YIELD_COLOURED_CLOTH]coloured cloth[\LINK] to make more [LINK=YIELD_FESTIVE_CLOTHES]festive outfits[\LINK].</English>
-        <German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Schneiders[COLOR_REVERT] ist der Ort, an dem die Stoffe aus der [LINK=BUILDING_WEAVERS_HOUSE]Weberei[\LINK] zu Kleidung verarbeitet werden.[NEWLINE]Ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] mit dem Beruf des [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]Schneiders (Alltagskleider)[\LINK] stellt aus [LINK=YIELD_COLOURED_WOOL_CLOTH]gefärbtem Wollstoff[\LINK] schlichte [LINK=YIELD_EVERYDAY_CLOTHES]Alltagskleidung[\LINK] oder der [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]Schneider (Festtagskleider)[\LINK] stellt aus [LINK=YIELD_COLOURED_CLOTH]gefärbtem Stoff[\LINK] dekorative [LINK=YIELD_FESTIVE_CLOTHES]festliche Kleidung[\LINK] her.</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]tailor's house[COLOR_REVERT] is where the fabrics from the [LINK=BUILDING_WEAVERS_HOUSE]Weaving Mill[\LINK] are made into clothing.[NEWLINE]A settler with the [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]workwear tailor[\LINK] profession uses [LINK=YIELD_COLOURED_WOOL_CLOTH]coloured wool cloth[\LINK] to make [LINK=YIELD_EVERYDAY_CLOTHES]everyday clothing[\LINK]; or the [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]formalwear tailor[\LINK] uses [LINK=YIELD_COLOURED_CLOTH]coloured cloth[\LINK] to make more [LINK=YIELD_FESTIVE_CLOTHES]festive outfits[\LINK].  [LINK=UNIT_CLOTH_TAYLOR]Master tailors[\LINK] are particularly effective at this.</English>
+        <German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Schneiders[COLOR_REVERT] ist der Ort, an dem die Stoffe aus der [LINK=BUILDING_WEAVERS_HOUSE]Weberei[\LINK] zu Kleidung verarbeitet werden.[NEWLINE]Ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] mit dem Beruf des [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]Schneiders (Alltagskleider)[\LINK] stellt aus [LINK=YIELD_COLOURED_WOOL_CLOTH]gefärbtem Wollstoff[\LINK] schlichte [LINK=YIELD_EVERYDAY_CLOTHES]Alltagskleidung[\LINK] oder der [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]Schneider (Festtagskleider)[\LINK] stellt aus [LINK=YIELD_COLOURED_CLOTH]gefärbtem Stoff[\LINK] dekorative [LINK=YIELD_FESTIVE_CLOTHES]festliche Kleidung[\LINK] her.[PARAGRAPH:1][LINK=UNIT_CLOTH_TAYLOR]Schneidermeister[\LINK] sind hierbei besonders effektiv.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_SHOP_PEDIA</Tag>
@@ -655,8 +655,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_SHOP_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]tailors' shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_TAILOR_HOUSE]tailor's house[\LINK] where colonists with the [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]workwear tailor[\LINK] profession use [LINK=YIELD_COLOURED_WOOL_CLOTH]coloured wool cloth[\LINK] to make [LINK=YIELD_EVERYDAY_CLOTHES]everyday clothing[\LINK]; and where [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]formalwear tailors[\LINK] use [LINK=YIELD_COLOURED_CLOTH]coloured cloth[\LINK] to make more [LINK=YIELD_FESTIVE_CLOTHES]festive outfits[\LINK].</English>
-        <German>Der [COLOR_HIGHLIGHT_TEXT]Schneiderladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_TAILOR_HOUSE]Schneiderhauses[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]Schneider (Alltagskleider)[\LINK] aus [LINK=YIELD_COLOURED_WOOL_CLOTH]gefärbtem Wollstoff[\LINK] einfache [LINK=YIELD_EVERYDAY_CLOTHES]Alltagskleidung[\LINK] oder [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]Schneider (Festtagskleider)[\LINK] aus [LINK=YIELD_COLOURED_CLOTH]gefärbtem Stoff[\LINK], dekorative [LINK=YIELD_FESTIVE_CLOTHES]festliche Kleidung[\LINK] herstellen.</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]tailors' shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_TAILOR_HOUSE]tailor's house[\LINK] where colonists with the [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]workwear tailor[\LINK] profession use [LINK=YIELD_COLOURED_WOOL_CLOTH]coloured wool cloth[\LINK] to make [LINK=YIELD_EVERYDAY_CLOTHES]everyday clothing[\LINK]; and where [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]formalwear tailors[\LINK] use [LINK=YIELD_COLOURED_CLOTH]coloured cloth[\LINK] to make more [LINK=YIELD_FESTIVE_CLOTHES]festive outfits[\LINK]. [LINK=UNIT_CLOTH_TAYLOR]Master tailors[\LINK] are particularly effective at this.</English>
+        <German>Der [COLOR_HIGHLIGHT_TEXT]Schneiderladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_TAILOR_HOUSE]Schneiderhauses[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]Schneider (Alltagskleider)[\LINK] aus [LINK=YIELD_COLOURED_WOOL_CLOTH]gefärbtem Wollstoff[\LINK] einfache [LINK=YIELD_EVERYDAY_CLOTHES]Alltagskleidung[\LINK] oder [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]Schneider (Festtagskleider)[\LINK] aus [LINK=YIELD_COLOURED_CLOTH]gefärbtem Stoff[\LINK], dekorative [LINK=YIELD_FESTIVE_CLOTHES]festliche Kleidung[\LINK] herstellen.[PARAGRAPH:1][LINK=UNIT_CLOTH_TAYLOR]Schneidermeister[\LINK] sind hierbei besonders effektiv.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_FACTORY_PEDIA</Tag>
@@ -665,8 +665,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_FACTORY_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]tailors' factory[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_TAILOR_HOUSE]tailor's house[\LINK].</English>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Schneiderei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_TAILOR_HOUSE]Haus des Schneiders[\LINK].</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]tailors' factory[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_TAILOR_HOUSE]tailor's house[\LINK] where colonists with the [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]workwear tailor[\LINK] profession use [LINK=YIELD_COLOURED_WOOL_CLOTH]coloured wool cloth[\LINK] to make [LINK=YIELD_EVERYDAY_CLOTHES]everyday clothing[\LINK]; and where [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]formalwear tailors[\LINK] use [LINK=YIELD_COLOURED_CLOTH]coloured cloth[\LINK] to make more [LINK=YIELD_FESTIVE_CLOTHES]festive outfits[\LINK]. [LINK=UNIT_CLOTH_TAYLOR]Master tailors[\LINK] are particularly effective at this.</English>
+        <German>Die [COLOR_HIGHLIGHT_TEXT]Schneiderei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_TAILOR_HOUSE]Haus des Schneiders[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]Schneider (Alltagskleider)[\LINK] aus [LINK=YIELD_COLOURED_WOOL_CLOTH]gefärbtem Wollstoff[\LINK] einfache [LINK=YIELD_EVERYDAY_CLOTHES]Alltagskleidung[\LINK] oder [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]Schneider (Festtagskleider)[\LINK] aus [LINK=YIELD_COLOURED_CLOTH]gefärbtem Stoff[\LINK], dekorative [LINK=YIELD_FESTIVE_CLOTHES]festliche Kleidung[\LINK] herstellen.[PARAGRAPH:1][LINK=UNIT_CLOTH_TAYLOR]Schneidermeister[\LINK] sind hierbei besonders effektiv.</German>
     </TEXT>
     <!-- FIREWORKER -->
     <TEXT>
@@ -747,8 +747,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]powder maker's house[COLOR_REVERT] is where, first, [LINK=YIELD_CHAR_COAL]charcoal[\LINK] is made from [LINK=YIELD_LUMBER]lumber[\LINK] by a settler with the [LINK=PROFESSION_CHARCOAL_BURNER]charcoal burner[\LINK] profession; and then turned into [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK] by another colonist with the [LINK=PROFESSION_FIREWORKER]gunpowder mixer[\LINK] profession.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]gunpowder[COLOR_REVERT] is needed to train gunpowder units like [LINK=PROFESSION_LINE_INFANTRY]Line Infantry[\LINK] or units like the [LINK=PROFESSION_LIGHT_ARTILLERY]Light Artillery[\LINK] or a ship equipped with cannons, such as the [LINK=UNIT_SHIP_OF_THE_LINE]ship of the line[\LINK].</English>
-        <German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Pulvermachers[COLOR_REVERT] wird zunächst von einem [COLOR_UNIT_TEXT]Freien Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_CHARCOAL_BURNER]Köhler[\LINK] aus [LINK=YIELD_LUMBER]Holz[\LINK] die [LINK=YIELD_CHAR_COAL]Holzkohle[\LINK] hergestellt und dann daraus von einem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_FIREWORKER]Feuerwerker[\LINK] zu [LINK=YIELD_BLACK_POWDER]Schwarzpulver[\LINK] verarbeitet.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Schwarzpulver[COLOR_REVERT] wird benötigt um Schießpulver-Einheiten wie [LINK=PROFESSION_LINE_INFANTRY]Linieninfanteristen[\LINK] auszubilden oder Einheiten wie die  [LINK=PROFESSION_LIGHT_ARTILLERY]leichte Artillerie[\LINK] oder ein mit Kanonen ausgerüstetes Schiff, wie das [LINK=UNIT_SHIP_OF_THE_LINE]Linienschiff[\LINK] zu bauen.</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]powder maker's house[COLOR_REVERT] is where, first, [LINK=YIELD_CHAR_COAL]charcoal[\LINK] is made from [LINK=YIELD_LUMBER]lumber[\LINK] by a settler with the [LINK=PROFESSION_CHARCOAL_BURNER]charcoal burner[\LINK] profession; and then turned into [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK] by another colonist with the [LINK=PROFESSION_FIREWORKER]gunpowder mixer[\LINK] profession. [LINK=UNIT_FIREWORKER]Master powder makers[\LINK] are particularly effective at this.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]gunpowder[COLOR_REVERT] is needed to train gunpowder units like [LINK=PROFESSION_LINE_INFANTRY]Line Infantry[\LINK] or units like the [LINK=PROFESSION_LIGHT_ARTILLERY]Light Artillery[\LINK] or a ship equipped with cannons, such as the [LINK=UNIT_SHIP_OF_THE_LINE]ship of the line[\LINK].</English>
+        <German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Pulvermachers[COLOR_REVERT] wird zunächst von einem [COLOR_UNIT_TEXT]Freien Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_CHARCOAL_BURNER]Köhler[\LINK] aus [LINK=YIELD_LUMBER]Holz[\LINK] die [LINK=YIELD_CHAR_COAL]Holzkohle[\LINK] hergestellt und dann daraus von einem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_FIREWORKER]Feuerwerker[\LINK] zu [LINK=YIELD_BLACK_POWDER]Schwarzpulver[\LINK] verarbeitet.[PARAGRAPH:1][LINK=UNIT_FIREWORKER]Meister Pulvermacher[\LINK] sind hierbei besonders effektiv.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Schwarzpulver[COLOR_REVERT] wird benötigt um Schießpulver-Einheiten wie [LINK=PROFESSION_LINE_INFANTRY]Linieninfanteristen[\LINK] auszubilden oder Einheiten wie die  [LINK=PROFESSION_LIGHT_ARTILLERY]leichte Artillerie[\LINK] oder ein mit Kanonen ausgerüstetes Schiff, wie das [LINK=UNIT_SHIP_OF_THE_LINE]Linienschiff[\LINK] zu bauen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP_PEDIA</Tag>
@@ -757,8 +757,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]powder makers' shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_FIREWORKERS_HOUSE]powder maker's house[\LINK] where charcoal is made from [LINK=YIELD_LUMBER]lumber[\LINK] by settlers with the [LINK=PROFESSION_CHARCOAL_BURNER]charcoal burner[\LINK] profession, and then turned into [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK] by other colonists with the [LINK=PROFESSION_FIREWORKER]gunpowder mixer[\LINK] profession.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]gunpowder[COLOR_REVERT] is needed to train gunpowder units like [LINK=PROFESSION_LINE_INFANTRY]Line Infantry[\LINK] or units like the [LINK=PROFESSION_LIGHT_ARTILLERY]Light Artillery[\LINK] or a ship equipped with cannons, such as the [LINK=UNIT_SHIP_OF_THE_LINE]ship of the line[\LINK].</English>
-        <German>Der [COLOR_HIGHLIGHT_TEXT]Pulverladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_FIREWORKERS_HOUSE]Haus des Pulvermachers[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_CHARCOAL_BURNER]Köhler[\LINK] aus [LINK=YIELD_LUMBER]Holz[\LINK] die [LINK=YIELD_CHAR_COAL]Holzkohle[\LINK] herstellen, und dann von einem [COLOR_UNIT_TEXT]Freien Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_FIREWORKER]Feuerwerker[\LINK] zu [LINK=YIELD_BLACK_POWDER]Schwarzpulver[\LINK] verarbeitet wird.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Schwarzpulver[COLOR_REVERT] wird benötigt um Schießpulver-Einheiten wie [LINK=PROFESSION_LINE_INFANTRY]Linieninfanteristen[\LINK] auszubilden oder Einheiten wie die  [LINK=PROFESSION_LIGHT_ARTILLERY]leichte Artillerie[\LINK] oder ein mit Kanonen ausgerüstetes Schiff, wie das [LINK=UNIT_SHIP_OF_THE_LINE]Linienschiff[\LINK] zu bauen.</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]powder makers' shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_FIREWORKERS_HOUSE]powder maker's house[\LINK] where charcoal is made from [LINK=YIELD_LUMBER]lumber[\LINK] by settlers with the [LINK=PROFESSION_CHARCOAL_BURNER]charcoal burner[\LINK] profession, and then turned into [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK] by other colonists with the [LINK=PROFESSION_FIREWORKER]gunpowder mixer[\LINK] profession. [LINK=UNIT_FIREWORKER]Master powder makers[\LINK] are particularly effective at this.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]gunpowder[COLOR_REVERT] is needed to train gunpowder units like [LINK=PROFESSION_LINE_INFANTRY]Line Infantry[\LINK] or units like the [LINK=PROFESSION_LIGHT_ARTILLERY]Light Artillery[\LINK] or a ship equipped with cannons, such as the [LINK=UNIT_SHIP_OF_THE_LINE]ship of the line[\LINK].</English>
+        <German>Der [COLOR_HIGHLIGHT_TEXT]Pulverladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_FIREWORKERS_HOUSE]Haus des Pulvermachers[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_CHARCOAL_BURNER]Köhler[\LINK] aus [LINK=YIELD_LUMBER]Holz[\LINK] die [LINK=YIELD_CHAR_COAL]Holzkohle[\LINK] herstellt, und dann von einem [COLOR_UNIT_TEXT]Freien Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_FIREWORKER]Feuerwerker[\LINK] zu [LINK=YIELD_BLACK_POWDER]Schwarzpulver[\LINK] verarbeitet wird.[PARAGRAPH:1][LINK=UNIT_FIREWORKER]Meister Pulvermacher[\LINK] sind hierbei besonders effektiv.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Schwarzpulver[COLOR_REVERT] wird benötigt um Schießpulver-Einheiten wie [LINK=PROFESSION_LINE_INFANTRY]Linieninfanteristen[\LINK] auszubilden oder Einheiten wie die  [LINK=PROFESSION_LIGHT_ARTILLERY]leichte Artillerie[\LINK] oder ein mit Kanonen ausgerüstetes Schiff, wie das [LINK=UNIT_SHIP_OF_THE_LINE]Linienschiff[\LINK] zu bauen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY_PEDIA</Tag>
@@ -767,8 +767,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]powder magazine[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_FIREWORKERS_HOUSE]powder maker's house[\LINK].</English>
-        <German>Das [COLOR_HIGHLIGHT_TEXT]Pulvermagazin[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_FIREWORKERS_HOUSE]Haus des Pulvermachers[\LINK].</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]powder magazine[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_FIREWORKERS_HOUSE]powder maker's house[\LINK] where charcoal is made from [LINK=YIELD_LUMBER]lumber[\LINK] by settlers with the [LINK=PROFESSION_CHARCOAL_BURNER]charcoal burner[\LINK] profession, and then turned into [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK] by other colonists with the [LINK=PROFESSION_FIREWORKER]gunpowder mixer[\LINK] profession. [LINK=UNIT_FIREWORKER]Master powder makers[\LINK] are particularly effective at this.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]gunpowder[COLOR_REVERT] is needed to train gunpowder units like [LINK=PROFESSION_LINE_INFANTRY]Line Infantry[\LINK] or units like the [LINK=PROFESSION_LIGHT_ARTILLERY]Light Artillery[\LINK] or a ship equipped with cannons, such as the [LINK=UNIT_SHIP_OF_THE_LINE]ship of the line[\LINK].</English>
+        <German>Die [COLOR_HIGHLIGHT_TEXT]Pulverfabrik[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_FIREWORKERS_HOUSE]Haus des Pulvermachers[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_CHARCOAL_BURNER]Köhler[\LINK] aus [LINK=YIELD_LUMBER]Holz[\LINK] die [LINK=YIELD_CHAR_COAL]Holzkohle[\LINK] herstellt, und dann von einem [COLOR_UNIT_TEXT]Freien Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_FIREWORKER]Feuerwerker[\LINK] zu [LINK=YIELD_BLACK_POWDER]Schwarzpulver[\LINK] verarbeitet wird.[PARAGRAPH:1][LINK=UNIT_FIREWORKER]Meister Pulvermacher[\LINK] sind hierbei besonders effektiv.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Schwarzpulver[COLOR_REVERT] wird benötigt um Schießpulver-Einheiten wie [LINK=PROFESSION_LINE_INFANTRY]Linieninfanteristen[\LINK] auszubilden oder Einheiten wie die  [LINK=PROFESSION_LIGHT_ARTILLERY]leichte Artillerie[\LINK] oder ein mit Kanonen ausgerüstetes Schiff, wie das [LINK=UNIT_SHIP_OF_THE_LINE]Linienschiff[\LINK] zu bauen.</German>
     </TEXT>
     <!-- BAKER -->
     <TEXT>
@@ -845,9 +845,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_HOUSE_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]baker's house[COLOR_REVERT] is where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]baked goods[\LINK] from [LINK=YIELD_BARLEY]barly[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK].</English>
+        <English>The [COLOR_HIGHLIGHT_TEXT]baker's house[COLOR_REVERT] is where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]baked goods[\LINK] from [LINK=YIELD_BARLEY]barly[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] are particularly effective here.</English>
         <French>TBD</French>
-        <German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Bäckers[COLOR_REVERT] stellen [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Backwaren[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] her.</German>
+        <German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Bäckers[COLOR_REVERT] stellen [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Backwaren[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] her. [LINK=UNIT_BAKER]Bäckermeister[\LINK] sind hier besonders effektiv.</German>
         <Italian>TBD</Italian>
         <Spanish>TBD</Spanish>
     </TEXT>
@@ -858,9 +858,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_SHOP_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]bakeshop[COLOR_REVERT] is the upgrade of the[LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]baked goods[\LINK] from [LINK=YIELD_BARLEY]barly[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK].</English>
+        <English>The [COLOR_HIGHLIGHT_TEXT]bakeshop[COLOR_REVERT] is the upgrade of the[LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]baked goods[\LINK] from [LINK=YIELD_BARLEY]barly[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] are particularly effective here.</English>
         <French>TBD</French>
-        <German>Der [COLOR_HIGHLIGHT_TEXT]Bäckerladen[COLOR_REVERT] ist die Erweiterung des [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Backwaren[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] herstellen.</German>
+        <German>Der [COLOR_HIGHLIGHT_TEXT]Bäckerladen[COLOR_REVERT] ist die Erweiterung des [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Backwaren[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] herstellen. [LINK=UNIT_BAKER]Bäckermeister[\LINK] sind hier besonders effektiv.</German>
         <Italian>TBD</Italian>
         <Spanish>TBD</Spanish>
     </TEXT>
@@ -871,9 +871,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKERY_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]bakery[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK].</English>
+        <English>The [COLOR_HIGHLIGHT_TEXT]bakery[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]baked goods[\LINK] from [LINK=YIELD_BARLEY]barly[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] are particularly effective here.</English>
         <French>TBD</French>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Bäckerei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK].</German>
+        <German>Die [COLOR_HIGHLIGHT_TEXT]Bäckerei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Backwaren[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] herstellen. [LINK=UNIT_BAKER]Bäckermeister[\LINK] sind hier besonders effektiv.</German>
         <Italian>TBD</Italian>
         <Spanish>TBD</Spanish>
     </TEXT>
@@ -974,8 +974,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_VILLAGE_COURT_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]village court[COLOR_REVERT] is the smallest justice building. A colonist assigned as a [LINK=PROFESSION_JUDGE]judge[\LINK] in the [COLOR_HIGHLIGHT_TEXT]village court[COLOR_REVERT] generates [LINK=YIELD_LAW]law[\LINK].</English>
-        <German>Das [COLOR_HIGHLIGHT_TEXT]Dorfgericht[COLOR_REVERT] ist das kleinste Justizgebäude. Ein im [COLOR_HIGHLIGHT_TEXT]Dorfgericht[COLOR_REVERT] als [LINK=PROFESSION_JUDGE]Richter[\LINK] eingesetzter [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] erzeugt [LINK=YIELD_LAW]Recht[\LINK].</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]village court[COLOR_REVERT] is the smallest justice building. A colonist assigned as a [LINK=PROFESSION_JUDGE]judge[\LINK] in the [COLOR_HIGHLIGHT_TEXT]village court[COLOR_REVERT] generates [LINK=YIELD_LAW]law[\LINK]. [LINK=UNIT_JUDGE]Honorable judges[\LINK] are particularly effective at this.</English>
+        <German>Das [COLOR_HIGHLIGHT_TEXT]Dorfgericht[COLOR_REVERT] ist das kleinste Justizgebäude. Ein im [COLOR_HIGHLIGHT_TEXT]Dorfgericht[COLOR_REVERT] als [LINK=PROFESSION_JUDGE]Richter[\LINK] eingesetzter [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] erzeugt [LINK=YIELD_LAW]Justiz[\LINK].[PARAGRAPH:1][LINK=UNIT_JUDGE]Ehrenwerte Richter[\LINK] sind hierbei besonders effektiv.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOWN_COURT_PEDIA</Tag>
@@ -984,8 +984,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOWN_COURT_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]town courthouse[COLOR_REVERT] is the first expansion stage of the [LINK=BUILDING_VILLAGE_COURT]village court[\LINK]. A colonist appointed in the [COLOR_HIGHLIGHT_TEXT]town courthouse[COLOR_REVERT] as a [LINK=PROFESSION_JUDGE]judge[\LINK] generates [LINK=YIELD_LAW]law[\LINK].</English>
-        <German>Das [COLOR_HIGHLIGHT_TEXT]Stadtgericht[COLOR_REVERT] ist die erste Ausbaustufe des [LINK=BUILDING_VILLAGE_COURT]Dorfgerichts[\LINK]. Ein im [COLOR_HIGHLIGHT_TEXT]Stadtgericht[COLOR_REVERT] als [LINK=PROFESSION_JUDGE]Richter[\LINK] eingesetzter [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] erzeugt [LINK=YIELD_LAW]Recht[\LINK].</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]town courthouse[COLOR_REVERT] is the first expansion stage of the [LINK=BUILDING_VILLAGE_COURT]village court[\LINK]. A colonist appointed in the [COLOR_HIGHLIGHT_TEXT]town courthouse[COLOR_REVERT] as a [LINK=PROFESSION_JUDGE]judge[\LINK] generates [LINK=YIELD_LAW]law[\LINK]. [LINK=UNIT_JUDGE]Honorable judges[\LINK] are particularly effective at this.</English>
+        <German>Das [COLOR_HIGHLIGHT_TEXT]Stadtgericht[COLOR_REVERT] ist die erste Ausbaustufe des [LINK=BUILDING_VILLAGE_COURT]Dorfgerichts[\LINK]. Ein im [COLOR_HIGHLIGHT_TEXT]Stadtgericht[COLOR_REVERT] als [LINK=PROFESSION_JUDGE]Richter[\LINK] eingesetzter [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] erzeugt [LINK=YIELD_LAW]Justiz[\LINK].[PARAGRAPH:1][LINK=UNIT_JUDGE]Ehrenwerte Richter[\LINK] sind hierbei besonders effektiv.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CITY_COURT_PEDIA</Tag>
@@ -994,8 +994,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CITY_COURT_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]city courthouse[COLOR_REVERT] is the highest normal expansion level of the [LINK=BUILDING_VILLAGE_COURT]village court[\LINK]. A colonist appointed to the [COLOR_HIGHLIGHT_TEXT]city courthouse[COLOR_REVERT] as a [LINK=PROFESSION_JUDGE]judge[\LINK] generates [LINK=YIELD_LAW]law[\LINK].</English>
-        <German>Das [COLOR_HIGHLIGHT_TEXT]Distriktsgerichthaus[COLOR_REVERT] ist die höchste normale Ausbaustufe des [LINK=BUILDING_VILLAGE_COURT]Dorfgerichts[\LINK]. Ein im [COLOR_HIGHLIGHT_TEXT]Distriktsgerichthaus[COLOR_REVERT] als [LINK=PROFESSION_JUDGE]Richter[\LINK] eingesetzter [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] erzeugt [LINK=YIELD_LAW]Recht[\LINK].</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]city courthouse[COLOR_REVERT] is the highest normal expansion level of the [LINK=BUILDING_VILLAGE_COURT]village court[\LINK]. A colonist appointed to the [COLOR_HIGHLIGHT_TEXT]city courthouse[COLOR_REVERT] as a [LINK=PROFESSION_JUDGE]judge[\LINK] generates [LINK=YIELD_LAW]law[\LINK]. [LINK=UNIT_JUDGE]Honorable judges[\LINK] are particularly effective at this.</English>
+        <German>Das [COLOR_HIGHLIGHT_TEXT]Distriktsgerichthaus[COLOR_REVERT] ist die höchste normale Ausbaustufe des [LINK=BUILDING_VILLAGE_COURT]Dorfgerichts[\LINK]. Ein im [COLOR_HIGHLIGHT_TEXT]Distriktsgerichthaus[COLOR_REVERT] als [LINK=PROFESSION_JUDGE]Richter[\LINK] eingesetzter [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] erzeugt [LINK=YIELD_LAW]Justiz[\LINK].[PARAGRAPH:1][LINK=UNIT_JUDGE]Ehrenwerte Richter[\LINK] sind hierbei besonders effektiv.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SUPREME_COURT_PEDIA</Tag>
@@ -1004,8 +1004,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SUPREME_COURT_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]supreme court[COLOR_REVERT] can only be built once and is the very highest expansion level of the [LINK=BUILDING_VILLAGE_COURT]village court[\LINK]. A colonist appointed in the [COLOR_HIGHLIGHT_TEXT]supreme court[COLOR_REVERT] as a [LINK=PROFESSION_JUDGE]judge[\LINK] generates a great deal of [LINK=YIELD_LAW]law[\LINK].</English>
-        <German>Das [COLOR_HIGHLIGHT_TEXT]Oberste Gericht[COLOR_REVERT] kann nur einmal errichtet werden und ist die allerhöchste Ausbaustufe des [LINK=BUILDING_VILLAGE_COURT]Dorfgerichts[\LINK]. Ein im [COLOR_HIGHLIGHT_TEXT]Obersten Gericht[COLOR_REVERT] als [LINK=PROFESSION_JUDGE]Richter[\LINK] eingesetzter [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] erzeugt sehr viel [LINK=YIELD_LAW]Recht[\LINK].</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]supreme court[COLOR_REVERT] can only be built once and is the very highest expansion level of the [LINK=BUILDING_VILLAGE_COURT]village court[\LINK]. A colonist appointed in the [COLOR_HIGHLIGHT_TEXT]supreme court[COLOR_REVERT] as a [LINK=PROFESSION_JUDGE]judge[\LINK] generates a great deal of [LINK=YIELD_LAW]law[\LINK]. [LINK=UNIT_JUDGE]Honorable judges[\LINK] are particularly effective at this.</English>
+        <German>Das [COLOR_HIGHLIGHT_TEXT]Oberste Gericht[COLOR_REVERT] kann nur einmal errichtet werden und ist die allerhöchste Ausbaustufe des [LINK=BUILDING_VILLAGE_COURT]Dorfgerichts[\LINK]. Ein im [COLOR_HIGHLIGHT_TEXT]Obersten Gericht[COLOR_REVERT] als [LINK=PROFESSION_JUDGE]Richter[\LINK] eingesetzter [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] erzeugt sehr viel [LINK=YIELD_LAW]Justiz[\LINK].[PARAGRAPH:1][LINK=UNIT_JUDGE]Ehrenwerte Richter[\LINK] sind hierbei besonders effektiv.</German>
     </TEXT>
     <!-- JAIL -->
     <TEXT>
@@ -1045,6 +1045,6 @@
 	<TEXT>
         <Tag>TXT_KEY_BUILDING_JAIL_STRATEGY</Tag>
         <English>The [COLOR_HIGHLIGHT_TEXT]jail[COLOR_REVERT] increases the [LINK=YIELD_LAW]law[\LINK] without additional use of [LINK=PROFESSION_JUDGE]judges[\LINK] in the city.</English>
-        <German>Das [COLOR_HIGHLIGHT_TEXT]Gefängnis[COLOR_REVERT] erhöht das [LINK=YIELD_LAW]Recht[\LINK] ohne zusätzlichen Einsatz von [LINK=PROFESSION_JUDGE]Richtern[\LINK] in der Stadt.</German>
+        <German>Das [COLOR_HIGHLIGHT_TEXT]Gefängnis[COLOR_REVERT] erhöht die [LINK=YIELD_LAW]Justiz[\LINK] ohne zusätzlichen Einsatz von [LINK=PROFESSION_JUDGE]Richtern[\LINK] in der Stadt.</German>
     </TEXT>
 </Civ4GameText>
