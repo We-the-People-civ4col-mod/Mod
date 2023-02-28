@@ -299,7 +299,7 @@ void CvSavegameReader::Read(CvWString& szString)
 	}
 }
 
-void CvSavegameReader::Read(char* szString)
+void CvSavegameReader::Read(char*& szString)
 {
 	CvString szBuffer;
 	Read(szBuffer);
@@ -309,7 +309,7 @@ void CvSavegameReader::Read(char* szString)
 	szString[szBuffer.length()] = 0;
 }
 
-void CvSavegameReader::Read(wchar* szString)
+void CvSavegameReader::Read(wchar*& szString)
 {
 	CvWString szBuffer;
 	Read(szBuffer);

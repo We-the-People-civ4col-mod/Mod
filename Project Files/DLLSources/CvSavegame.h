@@ -89,9 +89,9 @@ public:
 	void Read(CvWString& szString);
 
 	// allocates memory
-	void Read(char* szString);
+	void Read(char*& szString);
 	// allocates memory
-	void Read(wchar* szString);
+	void Read(wchar*& szString);
 	
 	template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 	void Read(EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em);
