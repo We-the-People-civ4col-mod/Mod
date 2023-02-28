@@ -5012,6 +5012,7 @@
         <German>[CT_NAME], Ihr seid ein Tunichtgut, ein Strauchdieb und Störenfried. Und vor allem: Ihr seid kein Franzose! Was wollt Ihr, Bursche?</German>
         <Italian>Che coincidenza: stavo giusto compilando una lista di cose di te che mi piacciono. È alquanto corta. Cosa vuoi?</Italian>
         <Spanish>Qué coincidencia, justo estaba haciendo una lista de las cosas que me gustan de vos. Una lista muy corta, la verdad. ¿Qué queréis?</Spanish>
+        <Russian>[CT_NAME], ты бездельник, бродяга и нарушитель спокойствия. И самое главное, ты не француз! Чего ты хочешь, парень?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_HERNAN_CORTES_1</Tag>
@@ -5020,6 +5021,7 @@
         <German>Señor, tragt vor, was Ihr vorzutragen wünscht. Aber lasst Euch zuvor nieder, Ihr seht erschöpft aus. Zu meinen Füßen dürft Ihr niederknien.</German>
         <Italian>Non sei abbastanza furbo per fregarmi. Attento: non reagisco bene agli inganni.</Italian>
         <Spanish>Os falta astucia para engañarme. Os lo advierto: las triquiñuelas no son de mi agrado.</Spanish>
+        <Russian>Сеньор, говорите, что хотите, но сначала присядьте. Вы выглядите измученным. Можете преклонить колени здесь, у моих ног.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_STUYVESANT_1</Tag>
@@ -5028,6 +5030,7 @@
         <German>Mijnheer, lasst es mich so behutsam und höflich formulieren, wie es mir angemessen erscheint: Euer Gebaren beweist, dass Ihr Abschaum seid.</German>
         <Italian>La mia disponibilità ad avere a che fare con i rifiuti della società come te è una vera testimonianza dell'ottima qualità del mio carattere.</Italian>
         <Spanish>Mi buena disposición para hablar con la escoria de la sociedad, como vos, es todo un testimonio de mi gran calidad como persona.</Spanish>
+        <Russian>Мистер, позвольте мне выразиться так мягко и вежливо, как это уместно. Ваше поведение безоговорочно доказывает, что вы мразь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_WASHINGTON_1</Tag>
@@ -5036,6 +5039,7 @@
         <German>Mister [CT_NAME], kommt zur Sache. Ich habe Besseres zu tun, als meine Zeit damit zu vertun, mit Euch ein Schwätzchen zu halten. Eine gepflegte Konversation schätze ich nur, wenn ich auf einen Gentleman treffe.</German>
         <Italian>Non ho tempo per chi non conosce il significato di lealtà, dovere e onore, quindi datti una mossa.</Italian>
         <Spanish>No tengo tiempo para aquellos que no comprenden el significado de la lealtad, el honor y el deber; así que sed breve.</Spanish>
+        <Russian>Мистер [CT_NAME], переходите к делу. У меня есть дела поважнее, чем тратить свое время на болтовню с вами. Я ценю вежливую беседу, только когда встречаю джентльмена.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_AGUEYBANA_1</Tag>
@@ -5044,6 +5048,7 @@
         <German>Das Schicksal will es, dass das Große Meer mitunter Unrat an unsere Küsten spült. Unrat wie Euresgleichen.</German>
         <Italian>Guarda un po' se non è il peggior rifiuto che ci abbia consegnato la marea. Cosa vuoi?</Italian>
         <Spanish>Vaya, si es la peor cosa que ha traído el Gran Mar. ¿Qué queréis?</Spanish>
+        <Russian>По воле судьбы Великое Море иногда выбрасывает на наши берега мусор. Такой же мусор, как и ты.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_CUNHAMBEBE_1</Tag>
@@ -5052,6 +5057,7 @@
         <German>Ihr kommt wie gerufen. Mein Stamm ist hungrig.</German>
         <Italian>Qualsiasi cosa tu voglia, sbrigati. Il pranzo si raffredda.</Italian>
         <Spanish>Sea lo que sea, sed breve. Se me está enfriando el almuerzo.</Spanish>
+        <Russian>Ты как раз вовремя. Мы проголодались.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_HUAYNA_CAPAC_1</Tag>
@@ -5060,6 +5066,7 @@
         <German>Ich bin immer wieder überrascht, dass die Götter Euch so lange am Leben lassen, [CT_NAME]. Warum seid Ihr hier?</German>
         <Italian>Rimango sempre senza parole quando vedo che gli dei ti hanno concesso ancora di vivere, [CT_NAME]. Perché sei qui?</Italian>
         <Spanish>El que los dioses os permitan seguir viviendo nos deja infinitamente perplejos, [CT_NAME]. ¿A qué habéis venido?</Spanish>
+        <Russian>Я всегда удивляюсь, как боги позволяют тебе жить так долго, [CT_NAME]. Зачем ты здесь?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_LOGAN_1</Tag>
@@ -5068,6 +5075,7 @@
         <German>Der Große Kriegsrat unseres Bundes berät bereits über Euer weiteres Schicksal, [CT_NAME]. Fügt Euch seinem weisen Ratschluss, und Ihr könnt im Augenblick Eures Todes mehr Würde zeigen als in Eurem ganzen Leben zuvor.</German>
         <Italian>Ti sei avviato lungo un cammino che porterà alla tua distruzione. Prova pure a cercare di spiegarti.</Italian>
         <Spanish>Habéis hollado una senda que os llevará a la destrucción. Intentad explicaros como queráis.</Spanish>
+        <Russian>Великий Военный Совет нашей Конфедерации уже обсуждает твою судьбу, [CT_NAME]. Подчинившись его мудрому решению, в момент смерти ты проявишь больше достоинства, чем за всю свою предыдущую жизнь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_MANGAS_COLORADAS_1</Tag>
@@ -5076,6 +5084,7 @@
         <German>[CT_NAME], Ihr kommt zur rechten Zeit. Kommt mit zum Marterpfahl.</German>
         <Italian>Spero che tu sia qui per cercare di espiare le tue azioni.</Italian>
         <Spanish>Espero que hayáis venido a intentar enmendar vuestros actos.</Spanish>
+        <Russian>[CT_NAME], вы как раз вовремя. Пойдёмте со мной. Вот тот костёр мы приготовили специально для вас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_MONTEZUMA_1</Tag>
@@ -5084,6 +5093,7 @@
         <German>Bislang haben wir Euch verschont, [CT_NAME]. Nun wartet der Sonnenaltar auf Euch. Euer Herz wird in meinen Händen zucken.</German>
         <Italian>Dimmi, [CT_NAME], cosa ha fatto [CT_CIV_SHORT:2] perché gli dei si siano adirati a tal punto da fornire loro un leader come te?</Italian>
         <Spanish>Decidnos, [CT_NAME], ¿qué ha hecho [CT_CIV_SHORT] para enojar a los dioses y que os convirtieran en su líder?</Spanish>
+        <Russian>До сих пор мы щадили тебя, [CT_NAME]. Но теперь тебя ждет Алтарь Солнца. Твое сердце будет биться в моих руках.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_OCONOSTOTA_1</Tag>
@@ -5092,6 +5102,7 @@
         <German>Blickt umher, Weißer Mann. Dort am Horizont steigt die Sonne morgens aus dem Meer, und dort hinter den großen Gipfeln verhüllt sie am Abend wieder ihr Antlitz. Das weite Land dazwischen gehört meinem Volk. Nicht Eurem.</German>
         <Italian>Non meriti la mia attenzione. Considerati fortunato.</Italian>
         <Spanish>No os merecéis mi atención. Consideraos afortunado.</Spanish>
+        <Russian>Оглянись вокруг, белый человек. Там, на горизонте, по утрам солнце поднимается из моря, а вечером скрывает свой лик за высокими горами. Обширные земли между ними принадлежат моему народу. Не твоему.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_SITTING_BULL_1</Tag>
@@ -5100,6 +5111,7 @@
         <German>Bleichgesicht, Ihr sprecht mit gespaltener Zunge, Gift tropft aus Eurem Herzen, und Ihr vertreibt die Büffel. Ihr seid hier nicht erwünscht!</German>
         <Italian>Cosa potresti mai dire di minimamente interessante per me?</Italian>
         <Spanish>¿Y qué podéis decir que tenga el más mínimo interés para mí?</Spanish>
+        <Russian>Бледнолицый, ты говоришь раздвоенным языком, сердце твое наполнено ядом, а бизоны разбегаются, завидев тебя. Ты здесь не нужен!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_CHIEF_JOSEPH_1</Tag>
@@ -5108,6 +5120,7 @@
         <German>Bleichgesicht, Ihr sprecht mit gespaltener Zunge, Gift tropft aus Eurem Herzen, und Ihr vertreibt die Büffel. Ihr seid hier nicht erwünscht!</German>
         <Italian>Cosa potresti mai dire di minimamente interessante per me?</Italian>
         <Spanish>¿Y qué podéis decir que tenga el más mínimo interés para mí?</Spanish>
+        <Russian>Бледнолицый, своей чёрной злобой ты распугал наших лошадей, а лосось ушел из наших рек. Тебе нет места на этой земле.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_PENN_1</Tag>
@@ -5116,6 +5129,7 @@
         <German>Jeder Mann und jede Nation zeigen ihre wahre Größe dadurch, wie sie Brüder in Not behandeln. Werdet Ihr uns in dieser schweren Zeit helfen?</German>
         <Italian>La misura di ogni grande uomo o nazione è data da come tratta i deboli. Ci aiuterai nell'ora del bisogno?</Italian>
         <Spanish>La prueba de ser un gran hombre o una gran nación está en cómo se trata a los necesitados. ¿Nos ayudaréis en tiempos de necesidad?</Spanish>
+        <Russian>Каждый человек и каждый народ проявляют истинное величие тем, как они относятся к нуждающимся братьям своим. Поможете ли вы нам в это непростое время?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_BOLIVAR_1</Tag>
@@ -5124,6 +5138,7 @@
         <German>Die [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] leiden große Not. Bitte helft uns.</German>
         <Italian>Il [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] abbiamo urgente bisogno, per favore aiutaci.</Italian>
         <Spanish>El [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] tiene una terrible necesidad. Ayudadnos, por favor.</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] очень нуждаются в помощи. Пожалуйста помогите нам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_CHAMPLAIN_1</Tag>
@@ -5132,6 +5147,7 @@
         <German>Monsieur, ich appelliere an Euren Großmut. An Eure Tugend. Öffnet Euer Herz - und Euer Portemonnaie.</German>
         <Italian>Per favore dacci quello che chiediamo. In cambio posso offrirti la mia gratitudine.</Italian>
         <Spanish>Por favor, dadnos lo que os pedimos. A cambio, os ofrezco mi gratitud.</Spanish>
+        <Russian>Месье, я взываю к вашему великодушию. К вашей добродетели. Откройте свое сердце - и свой кошелек.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_DONCK_1</Tag>
@@ -5140,6 +5156,7 @@
         <German>Mijnheer, meiner Expedition war der launische Zufall nicht im selben Maße hold wie der Eurigen. Doch muss Euch Euer unverdientes Glück nicht beschämen. Helft uns großzügig, und alles kommt ins rechte Lot.</German>
         <Italian>Puoi aiutare il mio popolo? Noi ti aiuteremmo, se le nostre posizioni fossero invertite.</Italian>
         <Spanish>¿Podéis ayudar a mi pueblo, por favor? Os ayudaremos si alguna vez cambian las tornas.</Spanish>
+        <Russian>Мистер, моя экспедиция была не такой удачливой, как твоя. Но твое незаслуженное везение не должно тебя стыдить. Твоя щедрая помощь поможет все расставить на свои места.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_FRONTENAC_1</Tag>
@@ -5148,6 +5165,7 @@
         <German>Beweist uns, dass der erste Eindruck täuschen kann. Helft uns uneigennützig - und wir ziehen in Betracht, möglicherweise vielleicht ein kleines bisschen vor Euch den Hut zu ziehen. Unter Umständen, wohlgemerkt.</German>
         <Italian>Te lo chiedo nella maniera più semplice: per favore aiutaci.</Italian>
         <Spanish>Dicho sencillamente: ayudadnos, por favor.</Spanish>
+        <Russian>Докажите нам, что первое впечатление может быть обманчивым. Помогите нам бескорыстно - и мы подумаем, может быть, немного приподнимем перед вами шляпу. Имейте в виду, при определенных обстоятельствах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_HERNAN_CORTES_1</Tag>
@@ -5156,6 +5174,7 @@
         <German>Señor, ich appelliere an Eure Ritterlichkeit. Meine Gefolgsleute leiden Not, und ich bin nicht in der Lage, sie zu lindern. Wollt Ihr mir dabei helfen?</German>
         <Italian>La strategia più semplice per me è chiederti quello che ci serve e sperare nella tua buona volontà.</Italian>
         <Spanish>La estrategia más sencilla para mí es pediros lo que necesitamos y rezar porque vuestra buena voluntad se imponga.</Spanish>
+        <Russian>Сеньор, я обращаюсь к вашему благородству. Мои последователи в нужде и я не в силах помочь им. Не могли бы вы помочь мне исправить это?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_STUYVESANT_1</Tag>
@@ -5164,6 +5183,7 @@
         <German>Euch scheint es ja recht gut zu gehen, Mijnheer [CT_NAME]. Es sei Euch gegönnt, auch wenn solch unverdienter Wohlstand dem Anstand spottet. Nun, ich will mich großzügig zeigen. Ich gewähre Euch eine Gelegenheit, anderen zu helfen. Also mir.</German>
         <Italian>È raro che una persona della mia grandezza abbia bisogno, quindi dovresti essere onorato della mia richiesta.</Italian>
         <Spanish>Raro es que una persona de mi talla llegue a encontrarse en una necesidad, así que debéis sentiros honrado de ayudarme.</Spanish>
+        <Russian>Кажется, у тебя все хорошо, Мистер [CT_NAME]. Твой успех должен быть признан, даже если такое незаслуженное процветание является насмешкой над порядочностью. Что ж, буду великодушен. Я предоставляю тебе возможность помогать другим. То есть мне.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_WASHINGTON_1</Tag>
@@ -5172,6 +5192,7 @@
         <German>Auch wenn wir nicht so mächtig sind wie Ihr, so könnten wir doch loyale Verbündete sein. Steht uns bitte in diesen schweren Zeiten bei, und wir werden Euch beistehen, wenn Ihr uns brauchen werdet.</German>
         <Italian>Anche se non siamo potenti come voi, siamo alleati fedeli. Aiutaci nell'ora del bisogno.</Italian>
         <Spanish>Aunque no somos tan poderosos como vosotros, somos aliados leales. Por favor, asistidnos en tiempos de necesidad.</Spanish>
+        <Russian>Хоть мы и не так могущественны, как вы, мы могли бы быть верными союзниками. Пожалуйста, поддержите нас в трудные времена, и мы будем рядом с вами, когда вы будете нуждаться в нас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_AGUEYBANA_1</Tag>
@@ -5180,6 +5201,7 @@
         <German>Beweist, dass Ihr Freundlichkeit im Herzen tragt. Gebt uns von dem ab, was Ihr im Überfluss besitzt, Weißer Mann.</German>
         <Italian>Il più grande dono che si possono fare degli amici è la carità. Aiutaci, per favore.</Italian>
         <Spanish>El mayor servicio que pueden prestarse los amigos es la caridad. Ayudadnos, por favor.</Spanish>
+        <Russian>Докажите, что в вашем сердце есть доброта. Дайте нам немного из того, что у вас есть в изобилии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_CUNHAMBEBE_1</Tag>
@@ -5188,6 +5210,7 @@
         <German>Erweist Euch mildtätig, Weißer Mann. Wir sind in Not, aber wir haben nichts zu bieten außer dem Essen auf unseren Tischen. Bitte gebt uns, was wir wollen, und ich werde Euch sicher zu unserem nächsten Festmahl einladen.</German>
         <Italian>Abbiamo bisogno di aiuto ma non abbiamo altro da offrirti se non il cibo sulle nostre tavole. Dacci quello che vogliamo e ti inviteremo al prossimo ricevimento.</Italian>
         <Spanish>Estamos necesitados, pero no podemos ofreceros más que comida en nuestra mesa. Dadnos lo que precisamos, por favor, y me aseguraré de invitaros a nuestra próxima velada.</Spanish>
+        <Russian>Будь милосерден, белый человек. Мы нуждаемся, но нам нечего предложить, кроме нашей превосходной еды. Пожалуйста, дай нам то, что нам нужно и я приглашу тебя на наш следующий пир.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_HUAYNA_CAPAC_1</Tag>
@@ -5196,6 +5219,7 @@
         <German>Die Götter waren uns in letzter Zeit nicht wohlgesonnen, und mein einst mächtiges Volk hat Armut und Hunger kennengelernt. Seid Ihr uns wohlgesonnen, [CT_NAME]?</German>
         <Italian>Dacci quello che vogliamo, [CT_NAME], è il volere degli dei.</Italian>
         <Spanish>Dadnos lo que queremos, [CT_NAME]. Es la voluntad de los dioses.</Spanish>
+        <Russian>В последнее время боги не были добры к нам. Мой когда-то могучий народ теперь познал нищету и голод. Помогите нам, [CT_NAME], ибо жрецы говорят, на то есть воля богов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_LOGAN_1</Tag>
@@ -5204,6 +5228,7 @@
         <German>Mein Stamm ist in Not. Teilt Eure Vorräte mit uns, Weißer Mann, und unsere Enkel werden ihren Enkeln von Euren milden Taten Geschichten erzählen.</German>
         <Italian>La mia tribù ha bisogno di aiuto, potete aiutarci?</Italian>
         <Spanish>Mi tribu está necesitada. ¿Podrá ayudarnos el [COLOR_HIGHLIGHT_TEXT][CT_EMPIRE][COLOR_REVERT]?</Spanish>
+        <Russian>Моё племя в нужде. Поделитесь с нами своими запасами и наши внуки расскажут своим внукам о доброте [COLOR_HIGHLIGHT_TEXT][CT_EMPIRE][COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_MANGAS_COLORADAS_1</Tag>
@@ -5212,6 +5237,7 @@
         <German>Erweist Euch großzügig, Weißer Mann. Es wird Euch unsere Achtung einbringen. Auch wenn Euch das nicht viel Wert erscheinen mag, weil Ihr uns für schwach erachtet.</German>
         <Italian>Gli spiriti mi hanno parlato della tua generosità. Spero che non si sbagliassero.</Italian>
         <Spanish>Los espíritus me han hablado de vuestra generosidad. Espero que no se hayan equivocado.</Spanish>
+        <Russian>Будь щедрым, белый человек. Это принесет вам наше уважение. Даже если это не кажется тебе большой ценностью, потому что ты считаешь нас слабыми.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_MONTEZUMA_1</Tag>
@@ -5220,6 +5246,7 @@
         <German>Mein Volk durchlebt schwere Zeiten, [CT_NAME]. Ihr könntet seine Not lindern.</German>
         <Italian>Gli dei richiedono un sacrificio, [CT_NAME]. Affinché la tua civiltà possa continuare a esistere, ti consiglio di farlo.</Italian>
         <Spanish>Los dioses exigen un sacrificio, [CT_NAME]. Si vuestra civilización quiere vivir largo tiempo, os recomendamos que lo realicéis.</Spanish>
+        <Russian>Боги требуют жертв, [CT_NAME]. Если твой народ хочет остаться в памяти потомков, я советую тебе выполнить мои требования.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_OCONOSTOTA_1</Tag>
@@ -5228,6 +5255,7 @@
         <German>Gebt mir, was ich erbete, und seid Euch des Dankes meines Volkes gewiss.</German>
         <Italian>Dammi quello che voglio e gli spiriti veglieranno su di te.</Italian>
         <Spanish>Dadnos lo que queremos y los espíritus velarán por vosotros.</Spanish>
+        <Russian>Дай мне то, что я прошу, и будь уверен в благодарности моего народа.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_SITTING_BULL_1</Tag>
@@ -5236,12 +5264,14 @@
         <German>Lange ist mein Volk auf keine Büffelherde mehr gestoßen. Wir haben kein Leder und keine Häute mehr, und unsere Kinder laufen barfuß. Unsere Töpfe sind leer und unsere Weiber dürr. Könnt Ihr uns helfen, [CT_NAME]?</German>
         <Italian>Vuoi condividere un po' delle tue ricchezze con i tuoi buoni amici e alleati, [CT_NAME]?</Italian>
         <Spanish>¿Os importaría compartir parte de vuestras riquezas con vuestros buenos amigos y aliados, [CT_NAME]?</Spanish>
+        <Russian>Прошло много времени с тех пор, как мой народ последний раз видел стадо бизонов. У нас больше нет ни кожи, ни шкур, а наши дети ходят босиком. Наши горшки пусты и наши женщины похудели. Не могли бы вы нам помочь, [CT_NAME]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_CHIEF_JOSEPH_1</Tag>
         <English>Our children and old people die from pox, our rivers have no salmon this year and our horses starve. Can you help us, [CT_NAME]?</English>
         <French>Our children and old people dying due to pocks, the rivers in our territory are out of salmon and our horses need forage. Can you help us, [CT_NAME]?</French>
         <German>Unsere Kinder und Alten sterben an Pocken, die Flüsse führen kaum Lachse in diesem Jahr und unsere Pferde brauchen dringend Futter. Könnt Ihr uns helfen, [CT_NAME]?</German>
+        <Russian>Наши дети и старики умирают от оспы, в наших реках в этом году нет лосося, а наши лошади голодают. Не могли бы вы нам помочь, [CT_NAME]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_PENN_1</Tag>
@@ -5250,6 +5280,7 @@
         <German>Von gleich zu gleich rede ich mit Euch, Bruder [CT_NAME]. Lasst uns einander helfen.</German>
         <Italian>Non sono il tipo di persona che chiede la carità, ma credo che il nostro rapporto diplomatico dipenda dalla tua capacità di aiutare le mie colonie.</Italian>
         <Spanish>Nunca he sido de la clase de persona que mendiga, pero me temo que nuestras buenas relaciones dependen de vuestra capacidad para ayudar a mis colonias.</Spanish>
+        <Russian>Я никогда не был тем человеком, который просит милостыню, но я думаю, что будущее наших отношений может зависеть от вашей готовности помочь моим колониям.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_BOLIVAR_1</Tag>
@@ -5258,6 +5289,7 @@
         <German>Mein Volk braucht, was Ihr habt. Wie wäre es, wenn Ihr es ihm gebt und zeigt, dass Ihr ein Mann der Vernunft seid?</German>
         <Italian>La mia gente ha bisogno di quello che hai. Che ne dici di darglielo e mostrare così di essere interessato a una soluzione pacifica dei problemi?</Italian>
         <Spanish>Mi pueblo necesita lo que tenéis. ¿Qué tal si se lo dais y demostráis así vuestro interés en resolver pacíficamente los problemas?</Spanish>
+        <Russian>Моим людям нужно то, что есть у вас. Как насчет того, чтобы дать им это и показать, что вы разумный человек?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_CHAMPLAIN_1</Tag>
@@ -5266,6 +5298,7 @@
         <German>Monsieur [CT_NAME], Ihr seid ein glücklicher Mensch! Ihr habt Zugang zu meinem Herzen und damit auch einen guten Stand bei meinen indianischen Freunden. Respekt! Ihr wisst, was Ihr tun müsst, um Euren Skalp zu behalten. Apropos: was ist Euch das wert?</German>
         <Italian>Ti sei dimenticato dell'anniversario della mia colonia? Non ti preoccupare. Come dono potresti darci quello che chiediamo.</Italian>
         <Spanish>¿Habéis olvidado que es el aniversario de mi colonia? Bueno, no pasa nada. Como regalo nos podríais dar lo que os pedimos.</Spanish>
+        <Russian>Месье [CT_NAME], вам повезло! Я всегда относился к вам хорошо и поэтому у вас такие хорошие отношения с моими индейскими друзьями. Позвольте высказать вам свое восхищение! Кстати, знаете, что вам нужно сделать, чтобы сохранить свой скальп в целости?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_DONCK_1</Tag>
@@ -5274,6 +5307,7 @@
         <German>Dankt mir nicht, Mijnheer. Dass ich in meinem Reisejournal Eure Ritterlichkeit in den glühendsten Farben illustriert habe, habt Ihr Euch doch verdient. Durch das Gold und die Waren, die Ihr uns heute schenken wollt, nicht wahr?</German>
         <Italian>Abbiamo bisogno di aiuto, ma non abbiamo niente da scambiare. Spero che trovi nel tuo cuore la volontà di donarci quello che ci serve.</Italian>
         <Spanish>Estamos necesitados, pero no tenemos excedentes que poder intercambiar. Por favor, buscad en vuestro corazón la voluntad para ayudarnos.</Spanish>
+        <Russian>Не благодари меня, Мистер. Думаю, это правильно, что в моем путевом дневнике я описал ваше благородство в самых ярких красках. Доказательством будут служить золото и товары, которые вы отдадите нам сегодня. Не так ли?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_FRONTENAC_1</Tag>
@@ -5282,6 +5316,7 @@
         <German>Auch wenn Ihr zweifelhafter Herkunft und Charakters seid, Bursche, könnten wir ins Geschäft kommen. Doch glaubt nicht, dass Ihr mit diesem contrat auch unseren Respekt erwerbt.</German>
         <Italian>Abbiamo bisogno di aiuto. Se ce lo fornisci sono sicuro che, se in futuro dovessi avere bisogno, ti restituiremmo il favore.</Italian>
         <Spanish>Si nos ayudáis, seguro que os devolveremos el favor en el futuro.</Spanish>
+        <Russian>Даже если ты сомнительного происхождения и характера, парень, мы могли бы иметь дело. Но не думай, что этим контрактом ты завоюешь наше уважение.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_HERNAN_CORTES_1</Tag>
@@ -5290,6 +5325,7 @@
         <German>Unsere Armeen sind ebenbürtig, aber ich denke, ich würde einen Kampf gewinnen. Damit das nicht geschieht, solltet Ihr unseren Forderungen nachkommen.</German>
         <Italian>I nostri eserciti si equivalgono, ma sono sicuro che in una battaglia vincerei io. Affinché ciò non accada, ti chiedo di soddisfare le nostre richieste.</Italian>
         <Spanish>Nuestros ejércitos están a la par, aunque creo que yo ganaría si lucharan. Así que, para que esto no ocurra, os pido que satisfagáis mis exigencias.</Spanish>
+        <Russian>Наши армии равны по силе, но я верю, что выиграю битву. Чтобы не испытать этого позора, рекомендую выполнить наши требования.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_STUYVESANT_1</Tag>
@@ -5298,6 +5334,7 @@
         <German>Mijnheer, Ihr habt etwas, was meine Geschäftspartner gebrauchen könnten. Und wir haben etwas, an dem es Euch mangelt.</German>
         <Italian>I bisogni della tua colonia non sono pari a quelli della mia, quindi assicurati di darci quello che chiediamo.</Italian>
         <Spanish>Es obvio que las necesidades de vuestra colonia no son las mismas que las de la mía, así que no dejéis de darnos lo que necesitamos.</Spanish>
+        <Russian>Мистер, у тебя есть кое-что, что может пригодиться моим деловым партнерам. А у нас есть кое-что, чего не хватает тебе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_WASHINGTON_1</Tag>
@@ -5306,6 +5343,7 @@
         <German>Ich würde gerne den Frieden mit Euch wahren. Gebt uns bitte, was wir brauchen.</German>
         <Italian>Vorrei che la pace tra di noi continuasse. Per favore, dacci quello che chiediamo.</Italian>
         <Spanish>Me encantaría que nuestros dos pueblos siguiesen en paz. Por favor, dadnos lo que os pedimos.</Spanish>
+        <Russian>Я хотел бы сохранить этот мир между нами. Пожалуйста, дайте нам то, что мы просим.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_AGUEYBANA_1</Tag>
@@ -5314,6 +5352,7 @@
         <German>Der Unterschied zwischen Krieg und Frieden liegt oft in der Antwort auf einfache Fragen. Zum Beispiel: "Werdet Ihr uns helfen, Weißer Mann?"</German>
         <Italian>La differenza tra guerra e pace è spesso la risposta a semplici domande. Come, per esempio: ci aiuterai?</Italian>
         <Spanish>La diferencia entre la paz y la guerra suele estar en cómo se responde a las preguntas sencillas, preguntas como: "¿Nos ayudaréis?"</Spanish>
+        <Russian>Разница между миром и войной часто заключается в ответе на простые вопросы, такие как «Вы поможете нам?»</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_CUNHAMBEBE_1</Tag>
@@ -5322,6 +5361,7 @@
         <German>Mein Stamm braucht Hilfe. Wenn Ihr zu unserem nächsten Fest eingeladen werden wollt, dann helft bitte.</German>
         <Italian>La mia tribù ha bisogno di aiuto. Se vuoi essere invitato a cena, dacci una mano.</Italian>
         <Spanish>Mi tribu necesita ayuda. Si queréis que os invite a comer, ayudadnos, por favor.</Spanish>
+        <Russian>Моё племя нуждается в помощи. Если оказавшись в такой же ситуации, вы не захотите получить отказ, то, пожалуйста, помогите.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_HUAYNA_CAPAC_1</Tag>
@@ -5330,6 +5370,7 @@
         <German>[CT_NAME], wie ich sehe, nehmt Ihr noch immer Euer Gastrecht in unserem Land wahr. Nun, wo sind Eure Gastgeschenke?</German>
         <Italian>Ho sacrificato molti nemici, [CT_NAME]. Dammi ciò di cui ho bisogno, altrimenti la prossima volta toccherà a te.</Italian>
         <Spanish>Hemos sacrificado a muchos enemigos, [CT_NAME]. Dadnos lo que queremos o seréis los siguientes.</Spanish>
+        <Russian>Я принес в жертву много врагов, [CT_NAME]. Дай мне то, что я хочу, иначе в следующий раз придет твоя очередь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_LOGAN_1</Tag>
@@ -5338,6 +5379,7 @@
         <German>Ich komme in Frieden und bitte um Unterstützung. Wie lautet Eure Antwort?</German>
         <Italian>Vengo in pace alla ricerca di aiuto. Cosa mi rispondi?</Italian>
         <Spanish>Vengo en son de paz a pedir ayuda. ¿Qué me decís?</Spanish>
+        <Russian>Я пришел с миром, чтобы попросить о помощи. Что скажешь, бледнолицый?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_MANGAS_COLORADAS_1</Tag>
@@ -5346,6 +5388,7 @@
         <German>Wir haben Euch viel gegeben und für uns um nichts gebeten ... bis jetzt.</German>
         <Italian>Ti abbiamo dato tanto, senza volere nulla in cambio... fino a ora.</Italian>
         <Spanish>Hasta ahora os hemos dado mucho y no os hemos pedido nada a cambio.</Spanish>
+        <Russian>Мы давали вам многое и ничего не попросили для себя... до сих пор.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_MONTEZUMA_1</Tag>
@@ -5354,6 +5397,7 @@
         <German>Ich habe meinen Göttern schon die Herzen vieler Feinde geopfert, [CT_NAME]. Ich gehe davon aus, dass Ihr indes wünscht, unser Freund zu sein.</German>
         <Italian>L'[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] ti richiede una piccola donazione, [CT_NAME]. Altrimenti, se preferisci, combatteremo finché una delle due nazioni non sarà distrutta.</Italian>
         <Spanish>El [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] os pide una pequeña donación, [CT_NAME]. O, si lo preferís, podemos combatir hasta que una de las dos naciones quede destruida.</Spanish>
+        <Russian>Я уже принес в жертву своим богам сердца многих врагов, [CT_NAME]. Однако я предполагаю, что вы хотите быть нашим другом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_OCONOSTOTA_1</Tag>
@@ -5362,6 +5406,7 @@
         <German>Stellt Eure Freundschaft unter Beweis, [CT_NAME]. Gebt uns, was wir verlangen.</German>
         <Italian>Provaci la tua amicizia dandoci quello che vogliamo.</Italian>
         <Spanish>Por favor, haced honor a nuestra amistad dándonos lo que queremos.</Spanish>
+        <Russian>Докажите своё дружеское расположение к нам, [CT_NAME]. Дайте нам то, что мы просим.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_SITTING_BULL_1</Tag>
@@ -5370,6 +5415,7 @@
         <German>Ihr jagt unsere Büffel, [CT_NAME]. Nun, wir wollen nicht kleinlich sein. Aber Ihr doch gewiss auch nicht, oder?</German>
         <Italian>Per il bene della duratura amicizia tra i nostri grandi popoli ti chiedo ciò di cui abbiamo bisogno come segno di riconoscimento.</Italian>
         <Spanish>En aras de la amistad entre nuestros dos grandes pueblos, solicito la muestra de aprecio siguiente.</Spanish>
+        <Russian>Вы охотитесь на наших бизонов, [CT_NAME]. Что ж, мы не хотим мелочиться. Но вы, конечно, тоже не станете, не так ли?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_CHIEF_JOSEPH_1</Tag>
@@ -5378,6 +5424,7 @@
         <German>Ihr jagt unsere Fische und Wapitis, [CT_NAME]. Nun, wir wollen nicht kleinlich sein. Aber Ihr doch gewiss auch nicht, oder?</German>
         <Italian>Per il bene della duratura amicizia tra i nostri grandi popoli ti chiedo ciò di cui abbiamo bisogno come segno di riconoscimento.</Italian>
         <Spanish>En aras de la amistad entre nuestros dos grandes pueblos, solicito la muestra de aprecio siguiente.</Spanish>
+        <Russian>Ты охотишься на наших рыб и лосей, [CT_NAME]. Что ж, их хватит на всех, хвала Богам. Но ты, конечно, тоже не станешь жадничать, не так ли?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_PENN_1</Tag>
@@ -5386,6 +5433,7 @@
         <German>Ich verabscheue Blutvergießen, Bruder [CT_NAME]. Frieden auf Erden! - dies ist mein heiliger Schwur. Ich bitte Euch: Helft mir in dieser Stunde, nicht zum Eidbrecher zu werden. Die Verlockung ist groß.</German>
         <Italian>Detesto gli spargimenti di sangue, ma temo che se non mi dai ciò che chiedo sarò costretto a fare un'eccezione.</Italian>
         <Spanish>Odio derramar sangre, pero me temo que, si no me dais lo que os pido, seré capaz de hacer una excepción.</Spanish>
+        <Russian>Я ненавижу кровопролитие, брат [CT_NAME]. Мир на Земле! - это мой священный обет. Молю тебя: помоги мне в этот час не стать клятвопреступником. Соблазн велик.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_BOLIVAR_1</Tag>
@@ -5394,6 +5442,7 @@
         <German>Es steht Euch nicht zu, zu verhandeln. Gebt meinem Volk, was es will.</German>
         <Italian>Non sei nelle condizioni di negoziare. Dai al mio popolo ciò che chiede.</Italian>
         <Spanish>No estáis en posición de negociar. Dadle a mi pueblo lo que quiere.</Spanish>
+        <Russian>Вы не в том положении, чтобы торговаться. Дайте моим людям то, что они хотят.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_CHAMPLAIN_1</Tag>
@@ -5402,6 +5451,7 @@
         <German>Monsieur [CT_NAME], es betrübt mich, Euch auf Knien zu sehen. Welch stolze Träume hattet Ihr gehegt, als Ihr in diese Neue Welt kamt! Doch immerhin habt Ihr noch Euren Skalp. Noch. Was ist Euch das wert?</German>
         <Italian>Non mettere in imbarazzo la tua colonia. Dacci ciò che chiediamo, conscio di aver fatto la cosa giusta.</Italian>
         <Spanish>Por favor, no pongáis en evidencia a vuestra colonia. Haced lo más inteligente y dadnos lo que queremos.</Spanish>
+        <Russian>Месье [CT_NAME], мне больно видеть вас на коленях. Какие гордые мечты были у вас, когда вы пришли в этот Новый Свет! Но, по крайней мере, ваш скальп всё ещё при вас. Будьте умнее и дайте нам то, что мы хотим и наши индейские друзья не разлучат ваши головы с волосами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_DONCK_1</Tag>
@@ -5410,6 +5460,7 @@
         <German>Seid beglückwünscht, Mijnheer. Ihr trefft in mir auf einen Rivalen, der Euch an Anstand, Reichtum und Macht hoch überlegen ist - und der Euch dennoch verschont. Nein, dankt mir nicht. Behaltet Euer Leben. Und gebt mir nun alles, was Ihr sonst Euer Eigen nennt.</German>
         <Italian>Odio approfittare degli umili, ma lo farò ugualmente. Dacci ciò che vogliamo o preparati ad affrontare le conseguenze.</Italian>
         <Spanish>Odio meterme con los pacíficos, pero lo haré de todas formas. Dadnos lo que queremos o sufrid las consecuencias.</Spanish>
+        <Russian>Поздравляю, Мистер. Ты встретил во мне соперника, который сильно превосходит тебя в порядочности, богатстве и могуществе. И который, тем не менее, щадит тебя. Нет, не благодари меня, твоя жалкая жизнь мне не нужна. Просто отдай мне все, что у тебя есть.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_FRONTENAC_1</Tag>
@@ -5418,6 +5469,7 @@
         <German>Mon dieu, Ihr seid verlaust und verkommen, Bursche. Übereignet uns den Rest Eures Hab und Guts, und wir verschonen Euer Leben.</German>
         <Italian>Abbiamo bisogno di aiuto e non sei nelle condizioni di poter rifiutare.</Italian>
         <Spanish>Necesitamos ayuda y no estáis en situación de negaros.</Spanish>
+        <Russian>О Господи, какой же ты никчёмный и дряной парень. Отдай нам все свои вещи и мы сохраним тебе жизнь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_HERNAN_CORTES_1</Tag>
@@ -5426,6 +5478,7 @@
         <German>Ihr seid uns in jeder Hinsicht unterlegen. Ich schlage vor, Ihr gebt mir, was ich verlange.</German>
         <Italian>Ti supero in classe ed equipaggiamento. Ti suggerisco di darmi quello che voglio.</Italian>
         <Spanish>Os superamos en armas y en hombres. Os sugiero que nos deis lo que exijo.</Spanish>
+        <Russian>Мы превосходим вас числом в оружии и людях. Я предлагаю, чтобы вы добровольно отдали нам то, что я требую.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_STUYVESANT_1</Tag>
@@ -5434,6 +5487,7 @@
         <German>Ich verkehre selten mit Männern Eures Standes, [CT_NAME]. In meiner Heimat sperrt man Tagediebe ins Armenhaus, in Eurer Heimat dagegen nimmt man sie offenbar ins diplomatische Corps auf. Lasst uns diese unstandesgemäße Begegnung schnell beenden. Erfüllt meine Forderungen, und Ihr und Eure Landstreicher dürft unbehelligt von dannen ziehen.</German>
         <Italian>Odio veder capitare cose brutte ai deboli, nel mondo. Dacci quello che vogliamo o potrebbero accaderti brutte cose.</Italian>
         <Spanish>Odio ver que les pasan cosas malas a los pequeños pueblos del mundo. Dadnos lo que exigimos o empezarán las cosas malas.</Spanish>
+        <Russian>Я редко общаюсь с людьми твоего статуса, [CT_NAME]. В моей стране воров сажают в тюрьму, а у вас, видимо, принимают в дипломатический корпус. Давай поскорее закончим с этой непристойной встречей. Выполните мои требования и ты и твои бродяги сможете спокойно уйти.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_WASHINGTON_1</Tag>
@@ -5442,6 +5496,7 @@
         <German>Ich müsste nicht fragen, wisst Ihr? Ich könnte einfach in Eure Siedlungen einmarschieren und nehmen, was ich will. Stattdessen habe ich mich für den diplomatischen Weg entschieden. Ihr könnt Eure Wertschätzung dafür zum Ausdruck bringen, indem Ihr mir gebt, was ich haben will.</German>
         <Italian>Non ho bisogno di chiedere, sai? Potrei semplicemente marciare nel tuo insediamento e prendermi ciò che voglio. Ma ho deciso di usare la via diplomatica. Puoi mostrarmi quanto lo apprezzi dandomi ciò che voglio.</Italian>
         <Spanish>Mirad, no tengo por qué pedíroslo. Podría marchar contra vuestros asentamientos y tomar lo que quiero. Pero, en vez de ello, he optado por la vía diplomática. Podéis mostrarme vuestro aprecio dándome lo que quiero.</Spanish>
+        <Russian>Мне не нужно спрашивать, понимаешь? Я мог бы просто войти в ваши поселения и взять то, что я хочу. Вместо этого я выбираю дипломатический путь. Ты можешь показать свою признательность, дав мне то, что я хочу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_AGUEYBANA_1</Tag>
@@ -5450,6 +5505,7 @@
         <German>Wenn ich an Eurer Stelle wäre, würde ich versuchen, mich weiterhin milde zu stimmen. Gebt meinem Stamm das, was er braucht.</German>
         <Italian>Se fossi in te, non tirerei troppo la corda. Dai alla mia tribù quanto chiede.</Italian>
         <Spanish>Yo de vos, intentaría estar a buenas conmigo. Dadle a mi tribu lo que pide.</Spanish>
+        <Russian>На твоем месте я бы постарался воздержаться от резких слов. Дайте моему племени то, что ему нужно и все останутся довольны.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_CUNHAMBEBE_1</Tag>
@@ -5458,6 +5514,7 @@
         <German>Gebt uns, was wir wollen, sonst lernt Ihr den Unterschied zwischen Essen HABEN und Essen SEIN kennen.</German>
         <Italian>Dacci quello che vogliamo o conoscerai la differenza tra l'essere invitato a cena e l'essere la cena.</Italian>
         <Spanish>Dadnos lo que queremos o sabréis la diferencia entre ser invitado a comer o ser la comida.</Spanish>
+        <Russian>Дайте нам то, что мы хотим или вы поймете разницу между БЫТЬ ПРИГЛАШЕННЫМ на ужин и БЫТЬ ужином.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_HUAYNA_CAPAC_1</Tag>
@@ -5466,6 +5523,7 @@
         <German>Ihr seid ein Schwächling, [CT_NAME]. Wenn Ihr auch nur einen weiteren Tag leben wollt, müsst Ihr uns geben, was wir verlangen!</German>
         <Italian>Sei un folle [CT_NAME]! Dacci ciò che vogliamo e ti risparmieremo la vita!</Italian>
         <Spanish>¡Sois idiota, [CT_NAME]! ¡Dadnos lo que queremos y puede que viváis un día más!</Spanish>
+        <Russian>Ты слабак, [CT_NAME]. Если хочешь прожить еще один день, ты должен одать нам то, что мы требуем!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_LOGAN_1</Tag>
@@ -5474,6 +5532,7 @@
         <German>Ich halte Euer Schicksal in meinen Händen. Gebt mir, was ich verlange.</German>
         <Italian>Ho nelle mani il destino di [COLOR_HIGHLIGHT_TEXT][CT_EMPIRE][COLOR_REVERT]. Dammi ciò che chiedo.</Italian>
         <Spanish>Tengo el destino del [COLOR_HIGHLIGHT_TEXT][CT_EMPIRE][COLOR_REVERT] en mis manos. Dadme lo que os exijo.</Spanish>
+        <Russian>Судьба [COLOR_HIGHLIGHT_TEXT][CT_EMPIRE][COLOR_REVERT] в моих руках. Дай мне то, что я требую.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_MANGAS_COLORADAS_1</Tag>
@@ -5482,6 +5541,7 @@
         <German>Es ist für das Kaninchen gefährlich, dem Wolf zu trotzen. Gebt uns, was wir wollen.</German>
         <Italian>È pericoloso, per il coniglio, provocare il lupo. Dacci quello che vogliamo.</Italian>
         <Spanish>Es peligroso para el conejo provocar al lobo. Dadnos lo que queremos.</Spanish>
+        <Russian>Бледнолицый, видимо, не знает, что кролику опасно бросать вызов волку. Дайте нам то, что мы требуем.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_MONTEZUMA_1</Tag>
@@ -5490,6 +5550,7 @@
         <German>Eure Schwäche ist verabscheuungswürdig, [CT_NAME]! Gebt uns, was wir verlangen, oder sterbt!</German>
         <Italian>La tua debolezza è spregevole, [CT_NAME]! Dacci quello che vogliamo o soccomberai!</Italian>
         <Spanish>¡Vuestra debilidad es despreciable, [CT_NAME]! ¡Dadnos lo que queremos o pereced!</Spanish>
+        <Russian>Твоя слабость достойна презрения, [CT_NAME]! Дай нам то, что мы хотим или погибнешь!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_OCONOSTOTA_1</Tag>
@@ -5498,6 +5559,7 @@
         <German>Weißer Mann, die Angst steht Euch ins Gesicht geschrieben, wenn Ihr mich und meine Krieger seht. Sie dürsten nach Eurem Blut. Soll ich sie besänftigen?</German>
         <Italian>È nostra usanza che tu ci dia quello che vogliamo, e in cambio noi non ti distruggeremo.</Italian>
         <Spanish>Es nuestra costumbre que nos deis lo que queremos y, a cambio, nosotros no acabamos con vosotros.</Spanish>
+        <Russian>Белый Человек, страх написан на твоем лице, когда ты видишь меня и моих воинов. Они жаждут твоей крови. Мне утолить их жажду или ты отдашь нам то, что мы хотим?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_SITTING_BULL_1</Tag>
@@ -5506,6 +5568,7 @@
         <German>Es wäre nicht besonders klug, einem hungrigen Bären sein Futter zu verweigern, [CT_NAME]. Wer das tut, wird zerfleischt.</German>
         <Italian>Non è saggio negare il cibo a un orso affamato, [CT_NAME]. Rischi di prenderle.</Italian>
         <Spanish>No es prudente negarle comida a un oso hambriento, [CT_NAME]. Podéis acabar en la panza del oso.</Spanish>
+        <Russian>Неразумно дразнить голодного медведя едой, [CT_NAME]. Любой, кто это сделает, будет растерзан.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_CHIEF_JOSEPH_1</Tag>
@@ -5514,6 +5577,7 @@
         <German>Es wäre nicht besonders klug, einem hungrigen Bären sein Futter zu verweigern, [CT_NAME]. Wer das tut, wird zerfleischt.</German>
         <Italian>Non è saggio negare il cibo a un orso affamato, [CT_NAME]. Rischi di prenderle.</Italian>
         <Spanish>No es prudente negarle comida a un oso hambriento, [CT_NAME]. Podéis acabar en la panza del oso.</Spanish>
+        <Russian>Ты когда-нибудь видел разъярённую россомаху, [CT_NAME]? Страшный зверь. Я познакомлю вас, если ты ответишь отказом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_TAX_PARTY_1</Tag>
@@ -5684,6 +5748,7 @@
         <German>Weißer Mann, Eure Feinde haben das Land, das Ihr ihnen abgenommen habt, von uns gestohlen. Werdet nicht mitschuldig an diesem Landraub und entschädigt uns mit %d1[ICON_GOLD].</German>
         <Italian>Uomo bianco, i tuoi nemici ci hanno rubato la terra che tu hai preso a loro. Non rendetevi complici di questo furto di terra e compensateci con %d1[ICON_GOLD].</Italian>
         <Spanish>Hombre blanco, tus enemigos nos han robado la tierra que tú les quitaste. No os hagáis cómplices de este robo de tierras y compensadnos con %d1[ICON_GOLD].</Spanish>
+        <Russian>Твои враги украли эту землю у нас, а теперь ты снова забираешь ее. Тем не менее, если вы отдадите нам %d1[ICON_GOLD], она станет вашей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACQUIRE_MERC_1</Tag>
@@ -5692,6 +5757,7 @@
         <German>Weißer Mann, unsere jungen Krieger dürsten danach, ihre Tapferkeit im Kampf zu beweisen. Wenn Ihr uns mit %d1[ICON_GOLD] entschädigt, werden sie für Euch kämpfen.</German>
         <Italian>Uomo bianco, i nostri giovani guerrieri hanno sete di dimostrare il loro coraggio in battaglia. Se ci compensate con %d1[ICON_GOLD], ve li lasceremo.</Italian>
         <Spanish>Hombre blanco, nuestros jóvenes guerreros están sedientos de demostrar su valentía en la batalla. Si nos compensa con %d1[ICON_GOLD], le dejaremos tenerlos.</Spanish>
+        <Russian>Наши молодые воины жаждут доказать свою храбрость в бою. За скромную плату в %d1[ICON_GOLD] они будут сражаться за вас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACQUIRE_NATIVE_SLAVE_1</Tag>
@@ -5700,6 +5766,7 @@
         <German>Weißer Mann, unsere Krieger haben in den letzten Monate siegreich gekämpft und viele Gefangene gemacht. Doch es steht ein harter Winter bevor und wir können keine weiteren hungrigen Münder gebrauchen. Wenn Ihr uns lediglich %d1[ICON_GOLD] gebt, werden wir sie Euch als Sklaven überlassen.</German>
         <Italian>Uomo bianco, i nostri guerrieri hanno combattuto vittoriosamente in questi mesi e hanno fatto molti prigionieri. Ma sta arrivando un duro inverno e non possiamo usare altre bocche affamate. Se vi limitate a darci %d1[ICON_GOLD], ve li daremo come schiavi.</Italian>
         <Spanish>Hombre blanco, nuestros guerreros han luchado victoriosamente estos últimos meses y han tomado muchos prisioneros. Pero se avecina un duro invierno y no podemos utilizar más bocas hambrientas. Si simplemente nos das %d1[ICON_GOLD], te los daremos como esclavos.</Spanish>
+        <Russian>За последние месяцы наши воины одержали победы во многих боях и взяли много пленных. Но наши шаманы говорят, что приближается суровая зима. Мы не сможем прокормить столько лишних ртов. Дайте нам %d1[ICON_GOLD]и они будут вашими рабами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACQUIRE_AFRICAN_SLAVES_1</Tag>
@@ -5708,6 +5775,7 @@
         <German>Unsere Statthalter in Afrika haben uns mitgeteilt, dass die Sklavenmärkte gegenwärtig ein hohes Angebot aufweisen und Sklaven günstig zu haben sind. Auch wenn Wir Sklavenhaltung für moralisch verwerflich halten, kommen Wir nicht umhin Euch darauf hinzuweisen, dass der Einsatz von Sklaven Eure Produktivität und Unser Einkommen deutlich erhöhen würde. Wir raten Euch daher dringend an, den Einsatz von Sklaven in Erwägung zu ziehen. Die Überfahrt der Sklaven würde Euch lediglich %d1[ICON_GOLD] kosten.</German>
         <Italian>I nostri rappresentanti in Africa ci hanno parlato di un enorme carico di schiavi disponibili nei mercati degli schiavi ad un prezzo molto ragionevole. Più schiavi aumenteranno sicuramente la produttività e il reddito delle nostre colonie. Possiamo organizzare il loro acquisto e la spedizione nelle nostre colonie americane per solo %d1[ICON_GOLD].</Italian>
         <Spanish>Nuestros representantes en África nos han informado de que hay una gran cantidad de esclavos disponibles en los mercados de esclavos a un precio muy razonable. Un mayor número de esclavos seguramente aumentará la productividad y los ingresos de nuestras colonias. Podemos organizar su adquisición y envío a nuestras colonias americanas por sólo %d1[ICON_GOLD].</Spanish>
+        <Russian>Наши правители в Африке сообщили Нам, что невольничьи рынки переполнены дешевым товаром. И хотя Мы считаем рабство морально предосудительным, Мы не можем не указать вам, что рабы увеличат вашу производительность и Наши доходы. Поэтому мы настоятельно рекомендуем вам рассмотреть возможность их использования на колониальныхплантациях. Доставка рабов обойдется вам в ничтожную сумму в %d1[ICON_GOLD].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PRISONS_CROWDED</Tag>
@@ -5716,6 +5784,7 @@
         <German>Unsere Gefängnisse sind überfüllt. Auch wenn einige dieser Kriminellen ohne Unterlass frevelhafte Gedanken und Meinungen äußern, wie "nur ohne Steuern sind die Menschen frei" oder "WIR sind das Volk" oder auf andere Art und Weise das Wort erheben gegen ihren rechtmäßigen König, werden Wir sie Eurer Obhut unterstellen, wenn Ihr die Unkosten von %d1[ICON_GOLD] dafür übernehmt.</German>
         <Italian>Le nostre prigioni sono sovraffollate. Questi criminali sputano opinioni sacrileghe come "Solo senza tasse le persone sono libere" o "Noi siamo il popolo" e altrimenti parlano contro il loro legittimo Re. Li metteremo sotto la vostra custodia se pagherete le spese di viaggio %d1[ICON_GOLD] per loro.</Italian>
         <Spanish>Nuestras cárceles están superpobladas. Estos delincuentes emiten opiniones sacrílegas como "Sólo sin impuestos el pueblo es libre" o "Nosotros somos el pueblo" y se manifiestan en contra de su legítimo Rey. Los pondremos bajo tu custodia si pagas los gastos de viaje %d1[ICON_GOLD] por ellos.</Spanish>
+        <Russian>Наши тюрьмы переполнены. К тому же, эти наглецы изрыгают кощунственные речи, как "Только без налогов люди свободны" или "МЫ это и есть народ" и всячески выступают против своего законного Короля. Мы отдадим их вам на перевоспитание, если вы оплатите %d1[ICON_GOLD] Наших дорожных расходов на доставку этих негодяев в колонии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REVOLUTIONARY_NOBLE</Tag>
@@ -5724,6 +5793,7 @@
         <German>Ein bekannter Edelmann hat den Verstand verloren. Gegen jedes Rechtsempfinden spricht er darüber, dass "alle Menschen gleich geschaffen sind". Wir haben entschieden, dass es dass Beste ist, wenn er aus Unseren Augen verschwindet. Wir wären Euch dankbar, wenn Ihr Uns in dieser Sache unterstützt. Er benötigt %d1[ICON_GOLD], um in der Neuen Welt ein neues Leben zu beginnen.</German>
         <Italian>Un noto nobile ha perso la testa. Contro ogni senso di giustizia, parla di come "tutti gli uomini sono creati uguali". Abbiamo deciso che sarebbe meglio che sparisse dalla nostra vista. Vi saremmo grati se ci sosteneste in questa faccenda. Ha bisogno di %d1[ICON_GOLD] per iniziare una nuova vita nel Nuovo Mondo.</Italian>
         <Spanish>Un conocido noble ha perdido la cabeza. Contra todo sentido de la justicia, habla de que "todos los hombres son creados iguales". Hemos decidido que lo mejor sería que desapareciera de nuestra vista. Le agradeceríamos que nos apoyara en este asunto. Necesita %d1[ICON_GOLD] para empezar una nueva vida en el Nuevo Mundo.</Spanish>
+        <Russian>Один потомственный дворянин потерял рассудок. Вопреки всякому чувству реальности, он говорит о том, что "все люди созданы равными". Мы решили, что будет лучше, если он исчезнет из поля Нашего зрения. Мы будем благодарны, если вы поддержите Нас в этом вопросе. Ему нужно %d1[ICON_GOLD], чтобы начать новую жизнь в Новом Мире.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_BISHOP</Tag>
@@ -5732,6 +5802,7 @@
         <German>Die Heilige Mutter Kirche ist erfreut über Eure Fortschritte, das Christentum in der Neuen Welt zu verbreiten. Wir bieten Euch daher an, für nur %d1[ICON_GOLD] einen Bischof in die Neue Welt zu entsenden, um die Gläubigen sicher auf den Pfad der Gerechten zu geleiten.</German>
         <Italian>La Santa Madre Chiesa si compiace dei vostri progressi nella diffusione del cristianesimo nel Nuovo Mondo. Ti offriamo quindi, per solo %d1[ICON_GOLD], di inviare un vescovo nel Nuovo Mondo per guidare i fedeli in modo sicuro sul sentiero dei giusti.</Italian>
         <Spanish>La Santa Madre Iglesia está complacida con su progreso en la difusión del cristianismo en el Nuevo Mundo. Por lo tanto, te ofrecemos, por sólo %d1[ICON_GOLD], enviar un obispo al Nuevo Mundo para guiar a los fieles con seguridad en el camino de los justos.</Spanish>
+        <Russian>Святая Церковь довольна вашими успехами в распространении христианства в Новом Свете. Поэтому за скромную плату в %d1[ICON_GOLD] мы предлагаем направить в колонии [COLOR_HIGHLIGHT_TEXT]епископа[COLOR_REVERT], чтобы он помогал вам направлять верующих на путь праведный.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_CHURCH_WELCOME_FR</Tag>
@@ -5740,6 +5811,7 @@
         <German>Willkommen, mein Kind. Möge der Heilige Vater Dich beschützen und Christus Dich auf Deinen Pfaden führen.</German>
         <Italian>Benvenuto, figlio mio. Che il Santo Padre vi protegga e che Cristo vi guidi nei vostri percorsi.</Italian>
         <Spanish>Bienvenida, hija mía. Que el Santo Padre os proteja y Cristo os guíe en vuestros caminos.</Spanish>
+        <Russian>Добро пожаловать, дитя моё. Да защитит тебя Святой Отец, а Христос да направит тебя на твоих путях.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_CHURCH_WELCOME_FUR</Tag>
@@ -5748,16 +5820,19 @@
         <German>Oh, der Sünder kehrt zurück. Seid Ihr gekommen, um Gottes Vergebung zu erbitten ?</German>
         <Italian>Oh, il peccatore ritorna. Sei venuto a cercare il perdono di Dio?</Italian>
         <Spanish>Oh, el pecador vuelve. ¿Has venido a buscar el perdón de Dios?</Spanish>
+        <Russian>Ах, грешник вернулся. Желаете ли вы просить прощения у Всевышнего?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_WELCOME_FR</Tag>
         <English>Welcome my good governor. What good news do you bring us from the New World? Or do you come again with a request for the Crown?</English>
         <German>Willkommen, mein guter Gouverneur. Welche gute Kunde bringt ihr aus der Neuen Welt? Oder erbittet ihr etwa erneut die Hilfe der Krone?</German>
+        <Russian>Добро пожаловать, мой добрый губернатор. Какие хорошие новости вы принесли Нам из Нового Света? Или вы опять пришли с просьбой?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_WELCOME_FUR</Tag>
         <English>Ah, the proud governor finally visit the court again. What is it this time? Hurry up and do not waste the time of your most generous Majesty.</English>
         <German>Soso, der Stolze Gouverneur besucht den Hof erneut. Was benötigt ihr dieses Mal? Kommt zum Punkt und verschwendet nicht die Zeit eures großzügigen Herrschers.</German>
+        <Russian>Ах, гордый губернатор наконец-то снова посетил двор. Что на этот раз? Поторопись и не теряй времени твоего Великодушнейшего Величества.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_CHURCH_DEMAND</Tag>
@@ -5766,6 +5841,7 @@
         <German>Wir sind erfreut zu sehen, dass die Kolonien in Wohlstand schwelgen. Aber in Europa leiden die Menschen. Daher werdet Ihr als gute Christen doch sicherlich der Mutter Kirche die kleine Summe von %d1[ICON_GOLD] spenden, damit ihnen geholfen wird.</German>
         <Italian>Siamo lieti di vedere che le colonie si crogiolano nella prosperità. Ma in Europa il popolo sta soffrendo. Perciò, da buoni cristiani, donerete sicuramente la piccola somma di %d1[ICON_GOLD] alla Chiesa Madre affinché siano aiutati.</Italian>
         <Spanish>Nos complace ver que las colonias gozan de prosperidad. Pero en Europa la gente está sufriendo. Por lo tanto, como buenos cristianos, seguramente donarán la pequeña suma de %d1[ICON_GOLD] a la Iglesia Madre para que puedan ser ayudados.</Spanish>
+        <Russian>Мы рады видеть, что колонии богатеют и процветают, но в Европе люди страдают. Ну а поскольку вы хорошие христиане, вы наверняка хотели бы сделать пожертвование %d1[ICON_GOLD] для Святой Церкви, чтобы мы могли помочь нуждающимся.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_CHURCH_FAVOUR</Tag>
@@ -5774,6 +5850,7 @@
         <German>Wie kann die Heilige Mutter Kirche die guten Christen in den Kolonien unterstützen? (Unterstützung setzt eine Spende von %d1[ICON_GOLD] voraus)</German>
         <Italian>Come può la Santa Madre Chiesa sostenere i buoni cristiani nelle colonie? (Il sostegno richiede una donazione di %d1[ICON_GOLD])</Italian>
         <Spanish>¿Cómo puede la Santa Madre Iglesia apoyar a los buenos cristianos de las colonias? (El apoyo requiere una donación de %d1[ICON_GOLD])</Spanish>
+        <Russian>Чем может помочь Святая Церковь добрым христианам наших заморских колоний? (Милость потребует пожертвования в размере %d1[ICON_GOLD])</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_SMUGGLERS</Tag>
@@ -5782,72 +5859,84 @@
         <German>Wir haben Gemunkel darüber verlauten hören, dass Schmuggler ihre Waren aus der Neuen Welt in Unseren Häfen feilbieten und damit nicht hinnehmbare Verbrechen gegen die Krone begehen. Diese Verbrecher müssen gefasst werden! Wir befehlen Euch, diesen Gerüchten nachzugehen und die Schmuggler dingfest zu machen.[NEWLINE](Hinweis: Die Anwerbung von Schmugglern kostet %d1_gold[ICON_GOLD])</German>
         <Italian>Abbiamo sentito voci che i contrabbandieri del Nuovo Mondo vendono la loro merce nei nostri porti, commettendo crimini inaccettabili contro la Corona. Questi criminali devono essere presi! Vi ordiniamo di indagare su queste voci e di arrestare i contrabbandieri.[NEWLINE](Nota: reclutare contrabbandieri costa %d1_gold[ICON_GOLD])</Italian>
         <Spanish>Hemos oído rumores de que contrabandistas del Nuevo Mundo están vendiendo sus mercancías en nuestros puertos, cometiendo crímenes inaceptables contra la Corona. ¡Hay que atrapar a estos criminales! Te ordenamos que investigues estos rumores y detengas a los contrabandistas.[NEWLINE](Nota: Reclutar contrabandistas cuesta %d1_gold[ICON_GOLD])</Spanish>
+        <Russian>До Нас дошли слухи, что контрабандисты продают свои товары из Нового Света в Наших портах, совершая тем самым неприемлемое преступление против Короны. Эти преступники должны быть пойманы! Мы приказываем вам расследовать эти слухи и задержать контрабандистов.[NEWLINE](СОВЕТ: наем контрабандистов будет стоить %d1_gold[ICON_GOLD])</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PIRATES</Tag>
         <English>We have heard alarming reports about pirate sightings on the routes to Our colonies. Action must be taken! Either eliminate them or draw them onto Our side.[NEWLINE](HINT: Hiring will cost %d1_gold[ICON_GOLD], bribing only 10%% of that amount)</English>
         <French>Plusieurs rapports de notre flotte signalent la présence de pirates le long des routes maritimes vers nos colonies. Cela doit cesser ! Que ces pirates soient mis dans notre camp ou éliminer.[NEWLINE](NOTE: engager les pirates coûtera %d1_gold[ICON_GOLD], les soudoyer coûtera 10%% de ce montant)</French>
         <German>Wir haben alarmierende Berichte über Sichtungen von Piraten auf den Handelsrouten zu Unseren Kolonien erhalten. Ihr müsst sofort handeln. Eliminiert dieses Gesindel oder zieht es notfalls auf Unsere Seite.[NEWLINE](Hinweis: Anheuern kostet %d1_gold[ICON_GOLD], Bestechen nur 10%% dieser Summe)</German>
+        <Russian>Мы слышали тревожные сообщения о появлении пиратов на путях к Нашим колониям. Необходимо принять срочные меры! Либо уничтожьте их, либо переманите на свою сторону.[NEWLINE](СОВЕТ: наем будет стоить %d1_gold[ICON_GOLD], взятка составит только 10%% от этой суммы)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DONATE_CONTINENTAL_GUARD</Tag>
         <English>You have proven to be a friend of Our colonies. Therefore, We offer you some of Our most experienced officers to train a military elite.[NEWLINE](HINT: Training will cost %d1_gold[ICON_GOLD])</English>
         <French>L'expérience témoigne que vous êtes un ami de nos colonies. C'est pourquoi nous offrons à votre fière et grandissante nation quelques-uns de nos meilleurs officiers pour entraîner votre élite militaire.[NEWLINE](NOTE: l'entraînement coûtera %d1_gold[ICON_GOLD])</French>
         <German>Ihr habt Euch als Freund Unserer Kolonien erwiesen. Daher bieten Wir an, Euch einige Unserer erfahrensten Offiziere zu schicken, damit Ihr eine militärische Elite ausbilden könnt.[NEWLINE](Hinweis: Training kostet %d1_gold[ICON_GOLD])</German>
+        <Russian>Вы доказали, что являетесь другом Наших колоний. Поэтому Мы предлагаем вам некоторых из Наших самых опытных офицеров для обучения военной элиты.[NEWLINE](ПОДСКАЗКА: обучение будет стоить %d1_gold[ICON_GOLD])</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DONATE_MORTAR</Tag>
         <English>We have just concluded a costly war and now must sell some of Our surplus weapons. Since you have been a friend of Our colonies, We coul sell one to you.[NEWLINE](HINT: A mortar will cost %d1_gold[ICON_GOLD])</English>
         <French>Nous venons de mettre fin à une guerre fort coûteuse. Comme vous semblez amical à notre égard, nous vous proposons la vente de quelques équipements militaires.[NEWLINE](HINT: l'unité de mortier vous coûtera %d1_gold[ICON_GOLD])</French>
         <German>Wir haben erst vor Kurzem einen kostspieligen Krieg beendet und planen, Kriegsgerät zu verkaufen. Da Ihr ein Freund Unserer Kolonien zu sein scheint, bieten Wir Euch dieses an.[NEWLINE](Hinweis: Mörser kostet %d1_gold[ICON_GOLD])</German>
+        <Russian>Мы только что завершили крайне дорогостоящую войну и теперь вынуждены продавать излишки оружия. Поскольку вы дружите с Нашими колониями, Мы можем продать вам что-нибудь из армейских запасов.[NEWLINE](ПОДСКАЗКА: [COLOR_HIGHLIGHT_TEXT]Мортира[COLOR_REVERT] будет стоить %d1_gold[ICON_GOLD])</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_RANGERS</Tag>
         <English>The settlers from Our overseas possessions in America have sent Us a petition. They call for Royal troops to protect their possessions. Let these lazy fools protect their lands themselves![NEWLINE](HINT: Training and equipping rangers will cost %d1_gold[ICON_GOLD])</English>
         <French>Une pétition provenant de vos colonies à l'intérieur des terres est arrivée à notre court. Elles demandent l'envoi de troupes royales pour assurer leur sécurité. Ces incapables ne peuvent-ils pas protéger leurs maisons seuls ?[NEWLINE](NOTE: l'entraînement de gardes-forestiers coûtera %d1_gold[ICON_GOLD])</French>
         <German>Die Siedler aus Unseren überseeischen Besitzungen in Amerika haben Uns eine Petition übersandt. Sie rufen nach königlichen Truppen, um ihre Besitzungen zu schützen. Diese faulen Narren sollen ihre Ländereien gefälligst selbst beschützen![NEWLINE](Hinweis: Rekrutierung und Ausrüstung von Rangern kostet %d1_gold[ICON_GOLD])</German>
+        <Russian>Переселенцы из Наших заморских владений в Америке прислали Нам петицию. Они призывают Королевские войска для защиты своих владений. Пусть эти ленивые дураки сами защищают свои земли![NEWLINE](ПОДСКАЗКА: обучение и оснащение [COLOR_HIGHLIGHT_TEXT]Рейнджеров[COLOR_REVERT] будет стоить %d1_gold[ICON_GOLD])</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_CONQUISTADORS</Tag>
         <English>Rumours of your war against the devilish savages are making the rounds everywhere. Guided by God's true and righteous will to bring the gold of the heathen into Christian hands, conquistadors wish to join Our cause and fight the pagans under Our command.[NEWLINE]For the small amount of %d1_gold[ICON_GOLD] We will pay for their equipment and passage to the New World.</English>
         <French>Nos sujets entendent parler de votre guerre contre les païens indigènes qui vous entourent. Guidés par la foi chrétienne, certains conquistadors se sont portés volontaires pour rejoindre votre commandement.[NEWLINE]Pour le montant raisonnable de %d1_gold[ICON_GOLD], nous nous chargerons de les équiper et de vous les amener.</French>
         <German>Gerüchte über Euren Krieg gegen die teuflischen, heidnischen Wilden machen überall die Runde. Geführt von Gottes wahrem und gerechtem Willen, das Gold dieser Wilden in christliche Hände zu bringen, möchten sich einige Konquistadoren Unserer Sache anschließen und unter Unserem Banner gegen die Wilden kämpfen.[NEWLINE]Für den geringen Betrag in Gold von %d1_gold[ICON_GOLD] werden wir ihre Ausrüstung und ihre Passage in die Neue Welt bezahlen.</German>
+        <Russian>Слухи о вашей войне против дьявольских дикарей достигли самых глухих мест Европы. Ведомые истинной и праведной волей Бога передать золото язычников в руки христиан, [COLOR_HIGHLIGHT_TEXT]конкистадоры[COLOR_REVERT] желают присоединиться к Нашему делу и сражаться с язычниками под Нашим командованием.[NEWLINE]За небольшую плату в %d1_gold[ICON_GOLD] Мы оплатим их снаряжение и перевозку в Новый Свет.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GET_REV_SUPPORT</Tag>
         <English>Our sovereign, [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT], is impressed by your quest for independence and wishes to support your struggle.</English>
         <French>Notre Majesté, [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT], souhaite vous soutenir dans votre guerre d'indépendance.</French>
         <German>Unser Herrscher, der [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT], ist beeindruckt von Eurem Bestreben nach Unabhängigkeit und wünscht, Euren Kampf zu unterstützen.</German>
+        <Russian>Наш повелитель, [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT], впечатлен вашим стремлением к независимости и желает поддержать вашу борьбу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_EUROPE_WAR</Tag>
         <English>It has pleased Us to declare war on the [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT]. We expect you to attack his colonies in the New World!</English>
         <French>Nous sommes en guerre contre notre ennemi sans moral, [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT]. Nous vous ordonnons de détruire toutes ses colonies au Nouveau Monde.</French>
         <German>Uns hat beliebt, dem [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT] den Krieg zu erklären. Von Euch erwarten Wir, dass Ihr seine Kolonien in der Neuen Welt angreift!</German>
+        <Russian>Нам было угодно объявить войну [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT]. Мы ожидаем, что вы атакуете его колонии в Новом Свете!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_EUROPE_PEACE</Tag>
         <English>The [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT] has asked Us that you end the war with his colonies. As We fear for Our reputation, We wish this to happen. If you desire it, We will send you a well-respected diplomat along with an adept of the Church to assist in the negotiations.</English>
         <French>Il nous a été demandé par [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT] que vous mettiez fin à votre guerre contre ses colonies.</French>
         <German>Der [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT] hat Uns gebeten, dass Ihr den Krieg mit seinen Kolonien beendet. Da wir um Unseren Ruf fürchten, wünschen Wir, dass dem so geschieht. Wenn Ihr es wünscht, schicken Wir Euch einen bekannten Diplomaten und einen weisen Mann der Kirche zur Unterstützung der Verhandlungen.</German>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT] попросил Нас положить конец войне с его колониями. Поскольку на кону Наша репутация, Мы желаем, чтобы это произошло. Если нужно, Мы пришлем к вам уважаемого дипломата вместе с адептом Церкви для помощи в переговорах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_STEALING_IMMIGRANT</Tag>
         <English>Our agents in [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] tell us that there are people who might emigrate to Our colonies rather than the colonies of their mother country. For the small amount of %d2_gold[ICON_GOLD] they could be completely convinced.</English>
         <French>Selon nos agents localisés en [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT], certains sujets préfèrent immigrer vers nos colonies plutôt que celles de leur pays. Nous pourrons les convaincre totalement en échange de la modique somme de %d2_gold[ICON_GOLD].</French>
         <German>Unsere Agenten in [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] berichten, dass es dort Leute gibt, die eventuell lieber in Unsere Kolonien auswandern würden, als in die Kolonien ihres Vaterlandes. Um diese ganz zu überzeugen, würde ein Betrag von %d2_gold[ICON_GOLD] anfallen.</German>
+        <Russian>Наши агенты в [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] сообщают Нам, что есть люди, которые раздумывают, колонии какой страны выбрать для эмиграции. Небольшой подарок в %d2_gold[ICON_GOLD] убедит их выбрать Наши поселения.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_STEALING_IMMIGRANT_YES</Tag>
         <English>We feel obliged to help these people to fulfill their dreams, Your Majesty.</English>
         <French>Nous nous sentons obligés d'aider ces hommes à accomplir leur rêve, votre Majesté.</French>
         <German>Wir fühlen uns verpflichtet, diesen Leuten zu helfen, ihre Träume zu erfüllen, Eure Majestät.</German>
+        <Russian>Мы чувствуем себя обязанными помочь этим людям осуществить их мечты, Ваше Величество.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_STEALING_IMMIGRANT_NO</Tag>
         <English>We would rather not risk the good relations with our neighbours, Your Majesty.</English>
         <French>Nous ne risquerons pas de détériorer nos relations avec nos voisins, votre Majesté.</French>
         <German>Wir möchten lieber nicht die guten Beziehungen zu unseren Nachbarn gefährden, Eure Majestät.</German>
+        <Russian>Мы предпочли бы не рисковать хорошими отношениями с нашими соседями, Ваше Величество.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_BUY_UNITS_1</Tag>
@@ -5865,6 +5954,7 @@
         <German>%d1[ICON_GOLD] deckt die Kosten für eine Einheit [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT].</German>
         <Italian>%d1[ICON_GOLD] copriranno i costi di un'unità [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT].</Italian>
         <Spanish>%d1[ICON_GOLD] cubrirá el coste de [NUM2:un:una:unos:unas] [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT].</Spanish>
+        <Russian>%d1[ICON_GOLD] покроет расходы на [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACCEPT_BUY_UNITS_1</Tag>
@@ -5873,6 +5963,7 @@
         <German>Danke, Eure Majestät. Ich fühle mich jetzt sehr viel sicherer.</German>
         <Italian>Grazie. Mi sento molto più al sicuro, ora.</Italian>
         <Spanish>Gracias. Ahora me siento mucho más seguro.</Spanish>
+        <Russian>Благодарю вас, ваше величество. Теперь я чувствую себя в большей безопасности.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REJECT_BUY_UNIS_1</Tag>
@@ -5881,6 +5972,7 @@
         <German>Wir werden Euch nur beschützen, wenn Wir es für angebracht erachten. Ihr dürft Euch jetzt entfernen.</German>
         <Italian>Vi proteggeremo solo quando lo riterremo opportuno. Ora potete ritirarvi.</Italian>
         <Spanish>Sólo os protegeremos cuando lo consideremos oportuno. Ahora podéis retiraros.</Spanish>
+        <Russian>Мы будем защищать вас только тогда, когда сочтем нужным. Теперь вы можете удалиться.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ASK_TO_BUY_USED_SHIP</Tag>
@@ -5937,6 +6029,7 @@
         <German>Das Schicksal scheint Euch nicht wohlgesonnen zu sein. Doch atmet auf. Im Heimathafen warten neue Auswanderer auf Euch. Enttäuscht Uns nicht! Zur Deckung der Unkosten der Krone geruhen Wir, Euren Steuersatz auf %d1_new_rate%% zu erhöhen. Und nun dankt Uns für diese Gnade.</German>
         <Italian>Il destino non sembra essere disposto favorevolmente nei tuoi confronti. Ma tirate un sospiro di sollievo. Nuovi emigranti vi aspettano nel porto d'origine. Non deludeteci! Per coprire le spese della Corona, aumenteremo la vostra aliquota fiscale a %d1_new_rate%%. Potete ringraziarci per questa misericordia.</Italian>
         <Spanish>El destino no parece ser favorable para ti. Pero respira con alivio. Nuevos emigrantes te esperan en el puerto de origen. No nos decepcionéis. Para cubrir los gastos de la Corona, aumentaremos su tasa de impuestos a %d1_new_rate%%. Podéis darnos las gracias por esta misericordia.</Spanish>
+        <Russian>Судьба, похоже, не благосклонна к вам. Но можете вздохнуть с облегчением. Новые эмигранты ждут вас в европейском порту. Не разочаровывайте Нас больше! Чтобы покрыть расходы Короны, Мы поднимем вашу налоговую ставку до %d1_new_rate%%. Вы можете поблагодарить Нас за эту милость.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_REVIVE_2</Tag>
@@ -5945,6 +6038,7 @@
         <German>Fortuna ist Euch wohl nicht hold, mein Herr. Euer Glück, dass Wir es aber sind. Kommt zurück nach Europa. Wir werden eine neue Expedition ausstatten. Euer Steuersatz wird alldieweil auf %d1_new_rate%% erhöht. Und nun dankt Uns für diese Gnade.</German>
         <Italian>La fortuna non vi favorisce, mio signore, ma è la vostra fortuna che Noi lo facciamo. Torna in Europa. Noi riequipaggeremo la vostra spedizione. Nel frattempo la tua aliquota è aumentata a %d1_new_rate%%. Ora ringraziate Noi per questa misericordia.</Italian>
         <Spanish>La fortuna no os favorece, mi señor, pero es vuestra suerte que Nosotros lo hagamos. Regresa a Europa. Volveremos a equipar su expedición. Mientras tanto, su tasa de impuestos se eleva a %d1_new_rate%%. Ahora agradézcanos por esta misericordia.</Spanish>
+        <Russian>Судьба не благоволит вам, мой губернатор. Однако вам повезло, что Мы проявляем к вам Нашу благосклонность. Возвращайтесь в Европу. Мы переоснастим вашу экспедицию. Между тем, ваша налоговая ставка повышена до %d1_new_rate%%. А теперь можете поблагодарите Нас за эту милость.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_REVIVE_3</Tag>
@@ -5953,6 +6047,7 @@
         <German>Tod und Leid scheinen Eure Gefährten zu sein. Nun, Wir gewähren Euch noch eine Chance. Kommt zurück nach Europa und startet eine neue Expedition. Solltet Ihr Erfolg haben, werden wir indes all Eure zukünftigen Handelsgeschäfte mit Steuern von %d1_new_rate%% belasten. Das habt Ihr Euch selber zuzuschreiben!</German>
         <Italian>La morte e la sofferenza sembrano essere tue compagne. Bene, ti concediamo un'altra possibilità. Torna in Europa e inizia una nuova spedizione. Nel frattempo, se avrete successo, tasseremo tutti i vostri futuri commerci al %d1_new_rate%%. Dovete biasimare solo voi stessi!</Italian>
         <Spanish>La muerte y el sufrimiento parecen ser tus compañeros. Bueno, te concedemos otra oportunidad. Vuelve a Europa y comienza una nueva expedición. Mientras tanto, si tienes éxito, gravaremos todo tu comercio futuro a %d1_new_rate%%. ¡Sólo puedes culparte a ti mismo!</Spanish>
+        <Russian>Смерть и страдания кажутся вашими спутниками. Что ж, Мы предоставляем вам еще один шанс. Возвращайтесь в Европу и готовьтесь к новой экспедиции. Да, кстати, теперь Мы будем облагать налогом всю вашу будущую торговлю в размере %d1_new_rate%%. И вы должны винить в этом только себя!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_KING_REVIVE_1</Tag>
@@ -5961,6 +6056,7 @@
         <German>Eure Majestät, ich danke Euch demütigst</German>
         <Italian>Vostra Maestà, vi ringrazio umilmente</Italian>
         <Spanish>Su Majestad, le agradezco humildemente</Spanish>
+        <Russian>Ваше Величество, я смиренно благодарю вас</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_TREASURE_TRANSPORT_1</Tag>
@@ -5969,6 +6065,7 @@
         <German>Ein Schatz! Sieh an. Diese Neue Welt scheint über gewisse Reichtümer zu verfügen. Nun, eine Königliche Galeone kann die Pretiosen in die Heimat überführen. Überlasst den Fund der Krone, und Ihr erhaltet von Uns stante pede %d2[ICON_GOLD] und könnt Euch danach wieder Eurem Tagesgeschäft widmen.</German>
         <Italian>Un tesoro! Bene, bene. Questo Nuovo Mondo sembra avere ricchezze. Un galeone reale può traghettare gli oggetti di valore a casa. Lascia il ritrovamento alla Corona, riceverai %d2[ICON_GOLD] da Noi all'istante, e potrai tornare ai tuoi affari quotidiani.</Italian>
         <Spanish>Ein Schatz! Sieh an, sieh an. Diese Neue Welt scheint Reichtümer zu haben. Eine königliche Galeone kann die Kostbarkeiten nach Hause transportieren. Überlasst den Fund der Krone, Ihr erhaltet sofort %d2[ICON_GOLD] von Uns, und Ihr könnt Euch wieder Eurem Tagesgeschäft widmen.</Spanish>
+        <Russian>Настоящее сокровище! Так так, этот Новый Свет, кажется, полон несметных богатств. Королевский галеон сможет доставить эти драгоценности домой быстро и безопасно. Можете доверить находку Короне. Вы немедленно получите от Нас %d2[ICON_GOLD] и сможете вернуться к своим повседневным делам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_TREASURE_TRANSPORT_2</Tag>
@@ -5977,6 +6074,7 @@
         <German>Reichtum kann eine Bürde sein. Glaubt Uns - Wir wissen, wovon Wir reden. Macht Euch frei von irdischem Tand, und Ihr werdet aufatmen. Nehmt %d2[ICON_GOLD], um die Unkosten Eurer Schatzsuche zu decken, und Wir entsorgen Euren Fund.</German>
         <Italian>La ricchezza può essere un peso. Credeteci - sappiamo di cosa stiamo parlando. Liberatevi dai gingilli terreni e tirerete un sospiro di sollievo. Prendi %d2[ICON_GOLD] per coprire le spese della tua caccia al tesoro, e ci sbarazzeremo della tua scoperta.</Italian>
         <Spanish>La riqueza puede ser una carga. Créanos: sabemos de lo que hablamos. Libérate de las baratijas terrenales y respirarás aliviado. Toma %d2[ICON_GOLD] para cubrir los gastos de tu búsqueda del tesoro, y nosotros nos encargaremos de tu hallazgo.</Spanish>
+        <Russian>Богатство может быть тяжким бременем. Мы знаем, о чем говорим. Освободитесь от этих побрякушек и вздохнете с облегчением. Возьмите %d2[ICON_GOLD], чтобы покрыть расходы на поиски, а Мы избавим вас от этого непомерного груза.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_TREASURE_TRANSPORT_3</Tag>
@@ -5985,6 +6083,7 @@
         <German>Ihr scheint reiche Beute gemacht zu haben. Wohlan, überlasst sie Uns. Eine Königliche Galeone wird den Schatz in die Heimat bringen. Nach Abzug Unserer Provision von %d1%% erhaltet Ihr die Hälfte seines Wertes, auf den Ihr noch die Uns zustehenden Steuern zu entrichten habt, so daß Euch also %d2[ICON_GOLD] als Finderlohn verbleiben.</German>
         <Italian>Sembra che tu abbia fatto un ricco bottino. Lascia fare a noi. Un galeone reale porterà il tesoro a casa. Dopo aver dedotto la nostra commissione del %d1%%, riceverai la metà del suo valore, cioè %d2[ICON_GOLD], come compenso del cercatore.</Italian>
         <Spanish>Parece que has hecho un buen botín. Déjalo en nuestras manos. Un galeón real llevará el tesoro a casa. Después de deducir nuestra comisión de %d1%%, recibirás la mitad de su valor, es decir, %d2[ICON_GOLD], como comisión de búsqueda.</Spanish>
+        <Russian>Вы обнаружили богатую добычу. Однако, предоставьте завершить это дело Нам. Королевский галеон отвезет сокровища домой. После вычета Нашей комиссии в размере %d1%% вы получите половину ее стоимости, с которой вам, кстати, еще нужно будет заплатить налоги, причитающиеся Нам. Таким образом, у вас останется %d2[ICON_GOLD], щедрая плата за поиск сокровищ.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_TREASURE_TRANSPORT_ACCEPT_1</Tag>
@@ -5993,6 +6092,7 @@
         <German>Ich willige mit Freuden ein, Eure Majestät.</German>
         <Italian>Acconsento volentieri, Vostra Maestà.</Italian>
         <Spanish>Consiento con gusto, Su Majestad.</Spanish>
+        <Russian>С первеликой радостью, Ваше Величество!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_TREASURE_TRANSPORT_ACCEPT_2</Tag>
@@ -6001,6 +6101,7 @@
         <German>Danke für Eure Unterstützung, Eure Majestät !</German>
         <Italian>Grazie per il vostro sostegno, Vostra Maestà!</Italian>
         <Spanish>¡Gracias por su apoyo, Su Majestad!</Spanish>
+        <Russian>Благодарю Вас за поддержку, Ваше Величество!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_TREASURE_TRANSPORT_ACCEPT_3</Tag>
@@ -6009,6 +6110,7 @@
         <German>Eine wunderbare Idee, Eure Majestät !</German>
         <Italian>Un'idea meravigliosa, Vostra Maestà!</Italian>
         <Spanish>¡Una idea maravillosa, Su Majestad!</Spanish>
+        <Russian>Замечательная идея, Ваше Величество!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_TREASURE_TRANSPORT_REJECT_1</Tag>
@@ -6017,6 +6119,7 @@
         <German>Verzeiht, Eure Majestät, doch ich habe andere Pläne.</German>
         <Italian>Mi perdoni, Sua Maestà, ma ho altri piani.</Italian>
         <Spanish>Perdóneme, Su Majestad, pero tengo otros planes.</Spanish>
+        <Russian>Прошу простить, Ваше Величество, но у меня другие планы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_TREASURE_TRANSPORT_REJECT_2</Tag>
@@ -6025,6 +6128,7 @@
         <German>Danke, Eure Majestät. Nein, danke.</German>
         <Italian>Grazie, Vostra Maestà, ma no grazie.</Italian>
         <Spanish>Gracias, Su Majestad, pero no gracias.</Spanish>
+        <Russian>Благодарю вас, Ваше Величество, но нет, спасибо.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_TREASURE_TRANSPORT_REJECT_3</Tag>
@@ -6033,6 +6137,7 @@
         <German>Ihr seid ein kluger Mann, Eure Majestät! Ich aber auch.</German>
         <Italian>Lei è un uomo saggio, Vostra Maestà! Lo sono anch'io.</Italian>
         <Spanish>Es usted un hombre sabio, Su Majestad. Yo también lo soy.</Spanish>
+        <Russian>Вы мудрый человек, Ваше Величество! Я тоже...</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KISS_PINKY_1</Tag>
@@ -6041,6 +6146,7 @@
         <German>Wir geruhen, Eure Steuern von %d1_old_rate%% auf %d2_new_rate%% zu heben. Ihr dürft in stiller Zustimmung Unseren Ring küssen.</German>
         <Italian>Ci degniamo di aumentare le vostre tasse da %d1_old_rate%% a %d2_new_rate%%. Puoi baciare il nostro anello in un consenso silenzioso.</Italian>
         <Spanish>Nos dignamos a subir sus impuestos de %d1_old_rate%% a %d2_new_rate%%. Puedes besar nuestro anillo en señal de consentimiento silencioso.</Spanish>
+        <Russian>Мы принимаем решение поднять ваши налоги с %d1_old_rate%% до %d2_new_rate%%. Поцелуй Наше кольцо в безмолвном согласии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KISS_PINKY_2</Tag>
@@ -6049,6 +6155,7 @@
         <German>Von %d1_old_rate%% auf %d2_new_rate%% erhöhen wir Eure Steuern, [CT_NAME]. Denn wisset, Ihr seid zwar weit weg, doch nicht weit genug, dass Euch Unsere Hand nicht doch erreicht. Und nun küsst den Ring, der sie schmückt.</German>
         <Italian>Da %d1_old_rate%% a %d2_new_rate%% aumentiamo le tue tasse, [NOME_CT]. Perché sappiate che siete lontani, ma non così lontani che la nostra mano non vi raggiunga. E ora bacia l'anello che lo adorna.</Italian>
         <Spanish>De %d1_old_rate%% a %d2_new_rate%% subimos tus impuestos, [CT_NAME]. Porque sabed que estáis lejos, pero no lo suficiente como para que Nuestra mano no os alcance. Y ahora besa el anillo que lo adorna.</Spanish>
+        <Russian>Мы повышаем ваши налоги с %d1_old_rate%% до %d2_new_rate%%, [CT_NAME]. Ты далеко, но не настолько, чтобы быть недосягаемым для Нашей руки. Теперь можешь поцеловать кольцо, которое её украшает.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KISS_PINKY_3</Tag>
@@ -6057,6 +6164,7 @@
         <German>Ab sofort dürft Ihr Uns statt %d1_old_rate%% Steuern deren %d2_new_rate%% entrichten, [CT_NAME]. Wir wissen, dass Ihr Uns liebt, und gewähren Euch huldvoll eine Gelegenheit, dies zu zeigen. Bedankt Euch und küsst Unseren Ring.</German>
         <Italian>D'ora in poi, invece di pagarci le tasse %d1_old_rate%%, potete pagarci %d2_new_rate%%, [CT_NAME]. Sappiamo che ci ami e ti concediamo gentilmente l'opportunità di dimostrarlo. Ringrazia e bacia il nostro anello.</Italian>
         <Spanish>A partir de ahora, en lugar de pagarnos %d1_old_rate%% de impuestos, puede pagarnos %d2_new_rate%%, [CT_NAME]. Sabemos que nos amas y te damos la oportunidad de demostrarlo. Da las gracias y besa Nuestro anillo.</Spanish>
+        <Russian>Отныне вместо того, чтобы платить Нам %d1_old_rate%% налогов с продаж, вы можете платить Нам %d2_new_rate%%, [CT_NAME]. Мы знаем, что вы любите Нас и милостиво даруем вам возможность показать это. Благодарите и целуйте Наше кольцо.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KISS_PINKY_4</Tag>
@@ -6065,6 +6173,7 @@
         <German>Ihr zahlt Uns ab sofort %d2_new_rate%% statt %d1_old_rate%% Steuern, [CT_NAME]. Überrascht? Hattet Ihr Uns vergessen? Nun, Wir Euch nicht. Und nun küsst Unseren Ring.</German>
         <Italian>D'ora in poi pagherai noi %d2_new_rate%% invece di %d1_old_rate%% di tasse, [NOME_TC]. Sorpreso? Ti eri dimenticato di noi? Beh, non ti avevamo dimenticato. E ora bacia il nostro anello.</Italian>
         <Spanish>A partir de ahora pagará %d2_new_rate%% en lugar de %d1_old_rate%% de impuestos, [CT_NAME]. ¿Sorprendido? ¿Te has olvidado de nosotros? Bueno, no nos habíamos olvidado de ti. Y ahora besa nuestro anillo.</Spanish>
+        <Russian>С этого момента вы платите Нам налог с продаж в %d2_new_rate%% вместо %d1_old_rate%%, [CT_NAME]. Удивлен? Неужели ты забыл о Нас? Что ж, Мы о тебе не забыли. А теперь поцелуй Наше кольцо.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KISS_PINKY_5</Tag>
@@ -6073,6 +6182,7 @@
         <German>Ab sofort zahlt Ihr %d2_new_rate%% Steuern statt deren %d1_old_rate%%, [CT_NAME]. Denn Freigiebigkeit ist eine Tugend. Und nun küsst Unseren Ring.</German>
         <Italian>D'ora in poi pagherete %d2_new_rate%% di tasse invece di %d1_old_rate%%, [CT_NAME]. Perché la generosità è una virtù. E ora bacia il nostro anello.</Italian>
         <Spanish>A partir de ahora pagas %d2_new_rate%% impuestos en lugar de su %d1_old_rate%%, [CT_NAME]. Porque la generosidad es una virtud. Y ahora besa nuestro anillo.</Spanish>
+        <Russian>Отныне ты платишь налог с продаж в %d2_new_rate%% вместо прежних %d1_old_rate%%, [CT_NAME]. Щедрость — это добродетель. Теперь поцелуй Наше кольцо и можешь заниматься своими делами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_KISS_PINKY_1</Tag>
@@ -6081,6 +6191,7 @@
         <German>Ich bin Euer Majestät treuer Untertan</German>
         <Italian>Sono il fedele suddito di Vostra Maestà</Italian>
         <Spanish>Soy el leal súbdito de Su Majestad</Spanish>
+        <Russian>Я верный подданный Вашего Величества.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_1</Tag>
@@ -6089,6 +6200,7 @@
         <German>Ich danke Euch für Eure Gastfreundschaft. Auch wenn Ihr Heiden seid, habt Ihr womöglich etwas Menschliches an Euch.</German>
         <Italian>Vi ringrazio per la vostra ospitalità. Anche se siete pagani, potete avere qualcosa di umano in voi.</Italian>
         <Spanish>Le agradezco su hospitalidad. Aunque sean paganos, pueden tener algo de humano.</Spanish>
+        <Russian>Спасибо вам за ваше гостеприимство. Даже если вы язычники, в вас может быть что-то человеческое.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_2</Tag>
@@ -6097,6 +6209,7 @@
         <German>Habt Dank! Auch dafür, dass mich die Häuptlingstochter mit ihrem Liebreiz beglückte.</German>
         <Italian>Grazie! Anche per il fatto che la figlia del capo mi ha reso felice con il suo fascino.</Italian>
         <Spanish>¡Gracias! También por el hecho de que la hija del jefe me hizo feliz con su encanto.</Spanish>
+        <Russian>Спасибо! Очаровательная дочка вождя меня очень порадовала. Пока ее мать не нашла нас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_3</Tag>
@@ -6105,6 +6218,7 @@
         <German>Lebt wohl, Freunde! Ich werde Euer Schicksal nie aus den Augen verlieren. Zumindestens nicht bis zur nächsten Hügelkuppe.</German>
         <Italian>Addio, amici! Non perderò mai di vista il vostro destino. Almeno non finché non sarò oltre la prossima collina.</Italian>
         <Spanish>¡Adiós, amigos! Nunca perderé de vista vuestro destino. Al menos no hasta que esté en la siguiente cima.</Spanish>
+        <Russian>Я хочу выучить ваш язык, чтобы остаться здесь навсегда. То, как ты живешь, прекрасно. Чем дальше я путешествую, тем меньше мне хочется возвращаться.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_4</Tag>
@@ -6113,6 +6227,7 @@
         <German>Danke für Euer Willkommen! Doch muss ich jetzt leider weiterziehen.</German>
         <Italian>Grazie per il vostro benvenuto! Ma ora, purtroppo, devo andare avanti.</Italian>
         <Spanish>¡Gracias por su acogida! Pero ahora, por desgracia, debo seguir adelante.</Spanish>
+        <Russian>Спасибо за ваш прием! Но, к сожалению, сейчас мне нужно двигаться дальше.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_5</Tag>
@@ -6130,6 +6245,7 @@
         <German>Lebt wohl, Ihr Wilden! Ich werde dem Großen Weißen Vater im Osten von Euch berichten.</German>
         <Italian>Addio, pagano! Parlerò di voi al Grande Padre Saggio dell'Est.</Italian>
         <Spanish>¡Adiós, pagano! Le hablaré de ti al Gran Padre Sabio de Oriente.</Spanish>
+        <Russian>Ваши дети такие дикие и свободные, они делают все, что хотят, и никогда не подвергаются наказанию. Нашим миссионерам это не нравится.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_7</Tag>
@@ -6138,6 +6254,7 @@
         <German>Lebt wohl! Und hütet Euch vor den anderen Weißen Männern. Sie sind die Sendboten böser Götter. Tötet sie lieber, wenn sie sich nähern.</German>
         <Italian>Addio! Guardatevi dagli altri uomini bianchi. Sono i messaggeri degli dei malvagi. Uccideteli se si avvicinano.</Italian>
         <Spanish>¡Adiós! Tengan cuidado con otros hombres blancos. Son los mensajeros de los dioses del mal. Mátenlos si se acercan.</Spanish>
+        <Russian>Прощайте! Остерегайтесь других белых людей. Это посланники злых богов. Убейте их, если они приблизятся.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_8</Tag>
@@ -6146,6 +6263,7 @@
         <German>Lebt wohl! Und habt Dank, dass ich meine Wasserflasche füllen durfte.</German>
         <Italian>Addio! E grazie per avermi permesso di riempire la mia bottiglia d'acqua.</Italian>
         <Spanish>¡Adiós! Y gracias por dejarme llenar mi botella de agua.</Spanish>
+        <Russian>Я ищу Фонтан Молодости. Я хочу крепкого здоровья, но в основном мне нужно забыть все то тяжкое, чему я научился в течении своей жизни.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_9</Tag>
@@ -6154,6 +6272,7 @@
         <German>Dann kann ich weiterziehen! Dank Eures Schamanen, der mir mit seiner heiligen Holzkohle dieses gewaltige Furunkel aus dem Arsch gebrannt hat.</German>
         <Italian>Ora mi sto riprendendo, grazie al vostro sciamano che ha avuto l'abilità di bruciare la mia ferita con un carbone caldo.</Italian>
         <Spanish>Ahora me estoy recuperando, gracias a tu chamán que tuvo la habilidad de cauterizar mi herida con un carbón caliente.</Spanish>
+        <Russian>В Европе нам сказали, что это Terra Nullius – пустая земля. Как ты вообще можешь быть здесь? Возможно, ты не настоящий.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_10</Tag>
@@ -6162,6 +6281,7 @@
         <German>Lebt wohl! Und glaubt mir bitte, dass der nackte Ritt auf meinem Pferd, bei dem Ihr mich letzte Nacht ertappt habt, nicht das bedeutet, wonach es aussah.</German>
         <Italian>Addio! Vi prego di credere che la mia danza selvaggia e nuda di ieri sera non era quello che sembrava. Una puntura di vespa! Ecco cos'era! Una puntura di vespa.</Italian>
         <Spanish>¡Adiós! Por favor, creed que mi salvaje baile desnudo de anoche no era lo que parecía. ¡Una picadura de avispa! ¡Eso es lo que fue! Una picadura de avispa.</Spanish>
+        <Russian>Прощайте! Пожалуйста, поверь, что мой дикий голый танец прошлой ночью был не тем, чем он выглядел. Укус осы! Вот что это было! Осиный укус.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_11</Tag>
@@ -6170,6 +6290,7 @@
         <German>Lebt wohl! Und habt Dank für die pürierten Mehlwürmer. Sie waren ... (ähem) ... eine ungewöhnliche Erfahrung.</German>
         <Italian>Addio! E grazie per il purè di vermi della farina. Erano... (ahem)... un'esperienza insolita.</Italian>
         <Spanish>¡Adiós! Y gracias por el puré de gusanos de la harina. Eran... (ejem)... una experiencia inusual.</Spanish>
+        <Russian>Вы были добры ко мне, так что я скажу вам кое-что. Будьте осторожны в городах. Те стены и пушки, которые угрожают врагам, также могут быть использованы для управления всеми внутри.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_12</Tag>
@@ -6178,6 +6299,7 @@
         <German>Lebt wohl. Euer Festmahl zu meinen Ehren werde ich nie vergessen! Vor allem nicht die gegrillten Heuschrecken.</German>
         <Italian>Addio. Non dimenticherò mai la vostra festa in mio onore! Soprattutto le locuste alla brace.</Italian>
         <Spanish>Adiós. ¡Nunca olvidaré tu fiesta en mi honor! Especialmente las langostas asadas.</Spanish>
+        <Russian>Прощайте. Я никогда не забуду праздник в мою честь! У жареной саранчи был ореховый привкус.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_13</Tag>
@@ -6186,6 +6308,7 @@
         <German>Lebt wohl! Ich habe mir übrigens noch ein paar der frittierten Otterschwänze als Wegzehrung eingesteckt.</German>
         <Italian>Addio! A proposito, ho ancora qualche coda di lontra fritta come spuntino.</Italian>
         <Spanish>¡Adiós! Por cierto, todavía tengo unas cuantas colas de nutria fritas como aperitivo.</Spanish>
+        <Russian>Я здесь, потому что я жажду приключений. Я когда-то работал в банке. Я был организатором займа. Теперь серебро я использую для пуль.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_14</Tag>
@@ -6194,6 +6317,7 @@
         <German>Lebt wohl! Die gerösteten Chinchillas waren eine Delikatesse.</German>
         <Italian>Addio! I cincillà arrostiti erano una prelibatezza.</Italian>
         <Spanish>¡Adiós! Las chinchillas asadas eran una delicia.</Spanish>
+        <Russian>В Европе бусы и колокольчики - дешевые безделушки. Меня восхищает ваше бисерное искусство и танцовщицы джингла. Могу я принести вам еще?</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_15</Tag>
@@ -6202,6 +6326,7 @@
         <German>Ich muss jetzt leider weiterziehen. Und entschuldigt bitte, dass ich die gedünsteten Egel nicht probieren wollte.</German>
         <Italian>Temo di dover andare avanti. Vi prego di scusarmi per non aver provato le vostre sanguisughe al vapore.</Italian>
         <Spanish>Me temo que tengo que seguir adelante. Por favor, discúlpeme por no probar sus sanguijuelas al vapor.</Spanish>
+        <Russian>Пожалуйста, извините меня за то, что я не попробовал ваши пиявки на пару. В Европе мы едим только угря.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_16</Tag>
@@ -6210,6 +6335,7 @@
         <German>Lebt wohl! Und habt Dank, dass ich letzte Nacht im Mondeslicht an Eurem Fruchtbarkeitsritual teilhaben durfte. Eine stimulierende Erfahrung!</German>
         <Italian>Addio! E grazie per avermi permesso di partecipare al vostro rituale di fertilità ieri sera al chiaro di luna. Un'esperienza stimolante!</Italian>
         <Spanish>¡Adiós! Y gracias por permitirme participar en su ritual de fertilidad anoche a la luz de la luna. ¡Una experiencia estimulante!</Spanish>
+        <Russian>Прощайте! И спасибо, что разрешили мне участвовать в вашем ритуале плодородия прошлой ночью при лунном свете. Интересный опыт!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_17</Tag>
@@ -6218,6 +6344,7 @@
         <German>Habt Dank für Eure Gastfreundschaft, Ihr Männer! Und Ihr Frauen auch. Die neue Freundschaft zwischen unseren Völkern wird sicher Früchte tragen. Spätestens in neun Monaten.</German>
         <Italian>Grazie per la vostra ospitalità, uomini! E anche voi donne. La nuova amicizia tra i nostri popoli darà sicuramente i suoi frutti. Al più tardi tra nove mesi.</Italian>
         <Spanish>¡Gracias por su hospitalidad, hombres! Y a ustedes, mujeres, también. La nueva amistad entre nuestros pueblos seguramente dará sus frutos. En nueve meses a más tardar.</Spanish>
+        <Russian>Спасибо за ваше гостеприимство, мужчины! И вы, женщины, тоже. Новая дружба между нашими народами, несомненно, принесет свои плоды. Самое позднее через девять месяцев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_18</Tag>
@@ -6226,6 +6353,7 @@
         <German>Der Besuch bei Euch war ein unvergessliches Erlebnis! Insbesondere der Pilzsud, den mir Euer Schamane angeboten hat. Doch jetzt muss ich leider weiterfliegen!</German>
         <Italian>La visita con voi è stata un'esperienza indimenticabile! Soprattutto il decotto di funghi che il vostro sciamano mi ha offerto. Ma ora devo purtroppo continuare a volare!</Italian>
         <Spanish>¡La visita con ustedes fue una experiencia inolvidable! Especialmente la decocción de hongos que su chamán me ofreció. Pero ahora, lamentablemente, debo seguir volando.</Spanish>
+        <Russian>Визит к вам оставил незабываемые впечатления! Тот грибной отвар, который дал мне ваш шаман, он бесподобен! Теперь я должен лететь!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_19</Tag>
@@ -6234,6 +6362,7 @@
         <German>Habt Dank für Speis und Trank! Und entschuldigt, dass ich gestern abend zuviel von Eurem Maisbier getrunken habe. Und glaubt mir bitte, dass ich über die Absichten unseres Volkes gegenüber dem Eurigen nur gescherzt habe.</German>
         <Italian>Grazie per la splendida festa! Mi scuso per aver bevuto così tanta della vostra birra di mais ieri sera. Vi prego di credere che stavo solo scherzando sulle intenzioni del nostro popolo nei vostri confronti.</Italian>
         <Spanish>¡Gracias por el espléndido festín! Me disculpo por haber bebido tanto de su cerveza de maíz anoche. Por favor, creed que sólo estaba bromeando sobre las intenciones de nuestro pueblo hacia el vuestro.</Spanish>
+        <Russian>Спасибо за прекрасный праздник! Я извиняюсь за то, что вчера вечером выпил так много твоего кукурузного пива. Пожалуйста, поверьте, что я просто пошутил о намерениях наших людей по отношению к вам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_20</Tag>
@@ -6251,6 +6380,7 @@
         <German>Es gestaltet sich etwas schwierig, Geschäfte mit Euch zu machen, wenn Ihr keine Transportschiffe habt. Wir geben Euch ein neues Schiff. Um die Unkosten zu decken, die Euer Ungemach der Krone aufbürdet, beträgt Euer Steuersatz alldieweil %d1_new_rate%%. Ihr dürft Unseren Ring küssen und Euch dann entfernen.</German>
         <Italian>È un po' difficile fare affari con voi quando non avete navi da trasporto. Vi daremo una nuova nave. Nel frattempo, per coprire le spese che la tua disgrazia impone alla corona, la tua aliquota fiscale è %d1_new_rate%%. Puoi baciare il nostro anello e poi partire.</Italian>
         <Spanish>Es un poco difícil hacer negocios con usted cuando no tiene barcos de transporte. Te daremos una nueva nave. Mientras tanto, para cubrir los gastos que su desgracia impone a la corona, su tasa de impuestos es %d1_new_rate%%. Puedes besar nuestro anillo y luego partir.</Spanish>
+        <Russian>Немного сложно вести дела, когда у вас нет торговых кораблей. Мы дадим вам такой корабль. Между тем, чтобы покрыть расходы, которые ваше несчастье возлагает на Корону, Нам придется увеличить налоговую ставку до %d1_new_rate%%. Вы можете поцеловать Наше кольцо и уйти.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_KING_GIFT_SHIP_1</Tag>
@@ -6259,6 +6389,7 @@
         <German>Habt Dank, Eure Majestät. Und seid bitte so gnädig, mir mein Ungeschick zu verzeihen.</German>
         <Italian>Grazie, Vostra Maestà. E vi prego di essere così gentili da perdonarmi per la mia goffaggine.</Italian>
         <Spanish>Gracias, Su Majestad. Y, por favor, tenga la amabilidad de perdonarme por mi torpeza.</Spanish>
+        <Russian>Благодарю вас, Ваше Величество. Пожалуйста, будьте так добры, простите мою неуклюжесть.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_ASK_FOR_GOLD_1</Tag>
@@ -6267,6 +6398,7 @@
         <German>Seid beglückwünscht, Gouverneur. Die Krone zeigt sich huldvoll und gewährt Euch eine Gelegenheit, Eurem König gefällig zu sein. %d1[ICON_GOLD] dürften genügen.</German>
         <Italian>Si congratuli, governatore. La corona si mostra graziosa e ti concede l'opportunità di compiacere il tuo re. %d1[ICON_GOLD] dovrebbe essere sufficiente.</Italian>
         <Spanish>Sea felicitado, Gobernador. La corona se muestra graciosa y le concede la oportunidad de complacer a su rey. %d1[ICON_GOLD] debería ser suficiente.</Spanish>
+        <Russian>Поздравляю, губернатор. Корона проявляет милосердие и дает вам возможность угодить Вашему Королю. %d1[ICON_GOLD] должно быть достаточно.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_ASK_FOR_GOLD_2</Tag>
@@ -6275,6 +6407,7 @@
         <German>In Eurer Heimat herrschen Not und große Traurigkeit. Wir erwarten, das Ihr der Krone in dieser schwierigen Zeit beisteht. Die Mätresse Eures Königs ist erneut an der Syphilis erkrankt, und Wir werden einen teuren Medicus aus Venedig kommen lassen müssen. Schickt Uns %d1[ICON_GOLD], um das Honorar des Doktors zu begleichen.</German>
         <Italian>C'è grande angoscia e tristezza nella vostra patria. Recentemente, diverse navi della nostra marina sono naufragate o si sono arenate in una forte tempesta. Ci aspettiamo che tu assista la Corona in questo momento difficile e che doni %d1[ICON_GOLD] alla ricostruzione della Marina Reale.</Italian>
         <Spanish>Hay una gran angustia y tristeza en su patria. Recientemente, varios barcos de nuestra armada han naufragado o han quedado varados en una fuerte tormenta. Esperamos que ayudes a la Corona en estos momentos difíciles y dones %d1[ICON_GOLD] a la reconstrucción de la Marina Real.</Spanish>
+        <Russian>Губернатор, великая печаль постигла нашу страну. Недавно несколько кораблей Нашего флота потерпели крушение или сели на мель во время сильного шторма. Мы ожидаем, что вы поможете Короне в это трудное время и пожертвуете %d1[ICON_GOLD] на восстановление Королевского флота.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_ASK_FOR_GOLD_3</Tag>
@@ -6283,6 +6416,7 @@
         <German>Böse Zungen in Unserem Beamtenkabinett munkeln, Eure Loyalität gegenüber der Krone sei nicht mehr so ehern geschmiedet wie bei Eurer Abreise in die Neue Welt. Schickt Eurer Majestät %d1[ICON_GOLD], um Euren Kritikern den losen Mund zu stopfen.</German>
         <Italian>Le malelingue all'interno del nostro governo suggeriscono che la vostra lealtà alla Corona non è più quella che era quando siete partiti per il Nuovo Mondo. Mandate Vostra Maestà %d1[ICON_GOLD] a chiudere le bocche larghe dei vostri critici.</Italian>
         <Spanish>Lenguas maliciosas dentro de Nuestro Gobierno insinúan que tu lealtad a la Corona ya no es lo que era cuando partiste al Nuevo Mundo. Enviad a Vuestra Majestad %d1[ICON_GOLD] para que cierre las bocas sueltas de vuestros críticos.</Spanish>
+        <Russian>Злые языки в Нашем Правительстве намекают, что ваша верность Короне уже не та, что была, когда вы уехали в Новый Свет. Пришлите Нашему Величеству %d1[ICON_GOLD], чтобы Мы могли заткнуть рты вашим критикам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_ASK_FOR_GOLD_4</Tag>
@@ -6444,6 +6578,7 @@
         <German>Euch sei eine Belohnung gewährt. Wir gestatten Euch huldvoll, in die Palastküche zu gehen und um die Reste des Königlichen Frühstücks zu bitten.</German>
         <Italian>Vi sarà concessa una ricompensa. Vai alla cucina del palazzo e chiedi gli avanzi della colazione reale.</Italian>
         <Spanish>Se te concederá una recompensa. Ve a la cocina del palacio y pide las sobras del desayuno real.</Spanish>
+        <Russian>Вам будет предоставлена награда. Можете пройти на дворцовую кухню и попросить остатки королевского завтрака.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_ACCEPT_GOLD_2</Tag>
@@ -6452,6 +6587,7 @@
         <German>Kompliment! Ihr kennt Euren Rang. A propos, Unser Schoßhund hat dort in der Ecke etwas deponiert, was Uns stört. Euch sei gestattet, es zu entfernen.</German>
         <Italian>I nostri complimenti! Conosci il tuo grado. Saggia decisione.</Italian>
         <Spanish>¡Nuestras felicitaciones! Ya conoces tu rango. Sabia decisión.</Spanish>
+        <Russian>Наши поздравления! Ты знаешь своё место. Мудрое решение.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_ACCEPT_GOLD_3</Tag>
@@ -6460,6 +6596,7 @@
         <German>Respekt! Nehmt dieses Schnupftuch von uns. Es soll in Eurer Familie als Erbstück jeweils dem ältesten Sohne überreicht werden. Doch wartet! Wir müssen uns zunächst noch einmal schneuzen.</German>
         <Italian>Rispetto! Che decisione saggia!</Italian>
         <Spanish>¡Respeto! ¡Qué sabia decisión!</Spanish>
+        <Russian>Поздравляю! Это было мудрое решение!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_ACCEPT_GOLD_4</Tag>
@@ -6468,6 +6605,7 @@
         <German>Famos. Dass werden Wir Euch so schnell nicht vergessen. Und nun dürft Ihr Euch entfernen, Herr äh ... wie war noch einmal Euer Name?</German>
         <Italian>Splendido. Non lo dimenticheremo in fretta. Ora potete andarvene, Signore... come avete detto che vi chiamate?</Italian>
         <Spanish>Espléndido. No lo olvidaremos en un instante. Ahora puede marcharse, Señor... ¿cómo se llamaba?</Spanish>
+        <Russian>Великолепно. Мы всегда помним о тебе. Теперь можешь уйти, ...Господи! Как, говоришь, тебя зовут?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_ACCEPT_GOLD_5</Tag>
@@ -6476,6 +6614,7 @@
         <German>Wie tugendhaft von Euch. Unsere Großnichte wird in der Palastkapelle für Euer Seelenheil beten. Und für das ihres Goldfisches, der letzte Nacht verstorben ist.</German>
         <Italian>Come sei virtuoso. Nostra nipote pregherà per la vostra salvezza nella cappella del palazzo, come per quella del suo pesce rosso morto ieri sera.</Italian>
         <Spanish>Qué virtuoso eres. Nuestra sobrina nieta rezará por tu salvación en la capilla de palacio, como por la de su pez de colores que murió anoche.</Spanish>
+        <Russian>Какой добродетельный поступок. Мы это ценим. Наша внучатая племянница будет молиться о спасении вашей души в дворцовой часовне, как и о спасении своей золотой рыбки, умершей прошлой ночью.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_REFUSE_GOLD_1</Tag>
@@ -6484,6 +6623,7 @@
         <German>Ihr widersetzt Euch einer Forderung der Krone? Was für eine Narretei! Welche Hybris! Seid Ihr von Sinnen, Kerl?</German>
         <Italian>Sfidate una richiesta della Corona? Che follia! Che arroganza! Sei fuori di testa, ragazzo?</Italian>
         <Spanish>¿Desafías una demanda de la Corona? ¡Qué locura! ¡Qué arrogancia! ¿Estás loco, muchacho?</Spanish>
+        <Russian>Вы игнорируете требование Короны?! Что за высокомерие! Какое безумие! Вы в своем уме?!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_KING_ACCEPTED_GOLD_1</Tag>
@@ -6492,6 +6632,7 @@
         <German>Danke, Eure Majestät.</German>
         <Italian>Grazie, vostra maestà.</Italian>
         <Spanish>Gracias, Majestad.</Spanish>
+        <Russian>Спасибо, Ваше Величество.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_KING_REFUSED_GOLD_1</Tag>
@@ -6500,6 +6641,7 @@
         <German>Lebt wohl</German>
         <Italian>Arrivederci</Italian>
         <Spanish>Adiós</Spanish>
+        <Russian>До свидания</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FOUND_CITY_NO_FOOD_1</Tag>
@@ -6508,6 +6650,7 @@
         <German>Seid Ihr sicher, Euch hier ansiedeln zu wollen? Womöglich müssten die Siedler an diesem unwirtlichen Ort Hunger leiden. Wollt Ihr wirklich hier eine Stadt gründen?</German>
         <Italian>Questa posizione non ha una produzione di cibo rilevante, quindi dovrai usare contadini o pescatori per sostenere la popolazione. Sei sicuro di volerti insediare qui?</Italian>
         <Spanish>Este lugar carece de una producción de alimentos importante, así que tendréis que usar Agricultores o Pescadores para alimentar a la población. ¿Seguro que queréis estableceros aquí?</Spanish>
+        <Russian>Вы уверены, что хотите поселиться здесь? В этом бесплодном месте поселенцы могут голодать. Вы действительно хотите основать здесь город?</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_FOUND_CITY_NO_FOOD_NO_1</Tag>
@@ -6516,6 +6659,7 @@
         <German>Das habe ich nicht bemerkt. Danke!</German>
         <Italian>Non me n'ero reso conto. Grazie!</Italian>
         <Spanish>No me había dado cuenta. Gracias.</Spanish>
+        <Russian>Я этого не знал. Спасибо!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_FOUND_CITY_NO_FOOD_YES_1</Tag>
@@ -6524,6 +6668,7 @@
         <German>Nahrung ist nicht alles. Ich weiß, was ich tue.</German>
         <Italian>Il cibo non è tutto. So quello che faccio.</Italian>
         <Spanish>La comida no lo es todo. Sé lo que hago.</Spanish>
+        <Russian>Еда это еще не все. Я знаю, что делаю.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FOUND_CITY_INLAND_1</Tag>
@@ -6532,6 +6677,7 @@
         <German>Dieser Ort hat keinen direkten Zugang zum Ozean. Ihr werdet Planwagen bauen müssen zur Beförderung der Güter an einen Hafen, um sie von da aus nach Europa zu verschiffen. Wollt Ihr Euch wirklich hier ansiedeln?</German>
         <Italian>A questa posizione manca un accesso al mare. Dovrai costruire colonne di carovane per trasportare i beni verso un porto da cui poi inviarli in Europa. Sei sicuro di volerti insediare qui?</Italian>
         <Spanish>Este sitio carece de salida al mar. Tendréis que construir Caravanas de carromatos para llevar las mercancías a un puerto y, allí, embarcarlas a Europa. ¿Seguro que queréis estableceros aquí?</Spanish>
+        <Russian>Это место не имеет выхода к океану. Вам придется строить транспорт, чтобы перевозить товары в порт, а уже оттуда отправлять их в Европу. Вы уверены, что хотите поселиться здесь?</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_FOUND_CITY_INLAND_YES_1</Tag>
@@ -6540,6 +6686,7 @@
         <German>Ja, im Landesinneren liegt der Reichtum.</German>
         <Italian>Sì, le ricchezze sono nell'entroterra!</Italian>
         <Spanish>Sí, tierra dentro se encuentran las riquezas.</Spanish>
+        <Russian>Да, в глубине этих мест находятся несметные богатства!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_FOUND_CITY_INLAND_NO_1</Tag>
@@ -6548,6 +6695,7 @@
         <German>Ihr habt Recht. Wir sollten uns an der Küste ansiedeln.</German>
         <Italian>Hai ragione, dovremmo insediarci lungo la costa.</Italian>
         <Spanish>Tenéis razón. Mejor será colonizar la costa.</Spanish>
+        <Russian>Вы правы. Нам следует поселиться у побережья.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_FOUND_CITY_BUY_2</Tag>
@@ -6619,6 +6767,7 @@
         <German>Hervorragend, wir können weitere Arbeiter gut gebrauchen! (Sklaven kaufen)</German>
         <Italian>Eccellente, possiamo usare più lavoratori! (Comprare schiavi)</Italian>
         <Spanish>Excelente, ¡podemos usar más trabajadores! (Comprar esclavos)</Spanish>
+        <Russian>Отлично! Нам действительно нужно больше рабочих. (Купить рабов)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACQUIRE_NATIVE_SLAVE_CANNOT</Tag>
@@ -6627,6 +6776,7 @@
         <German>Ein gutes Angebot! Derzeit aber nicht. (Sklaven nicht kaufen)</German>
         <Italian>Una buona offerta! Ma non al momento. (Non comprare schiavi)</Italian>
         <Spanish>¡Una buena oferta! Pero no en este momento. (No compre esclavos)</Spanish>
+        <Russian>Хорошее предложение! Но не сейчас. (Не покупайте рабов)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACQUIRE_AFRICAN_SLAVES</Tag>
@@ -6635,6 +6785,7 @@
         <German>Ein sehr großzügiger Vorschlag, den wir dankend annehmen, Eure Majestät. Wir können weitere Arbeiter gut gebrauchen. (Sklaven kaufen)</German>
         <Italian>Un'offerta molto generosa, che accettiamo con gratitudine, Vostra Maestà. Ci farebbe comodo qualche altro lavoratore. (Comprare schiavi)</Italian>
         <Spanish>Una oferta muy generosa, que aceptamos con gratitud, Su Majestad. Nos vendrían bien más trabajadores. (Compra de esclavos)</Spanish>
+        <Russian>Очень щедрое предложение, которое мы с благодарностью принимаем, Ваше Величество. В колониях всегда требуется много рабочей силы. (Купить рабов)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACQUIRE_AFRICAN_SLAVES_CANNOT</Tag>
@@ -6643,6 +6794,7 @@
         <German>Wir bedauern, das Gold hierfür derzeit nicht aufbringen zu können, Eure Majestät.</German>
         <Italian>Ci dispiace non essere in grado di raccogliere l'oro per loro ora, Vostra Maestà.</Italian>
         <Spanish>Lamentamos no poder reunir el oro para ellos ahora, Su Majestad.</Spanish>
+        <Russian>Мы сожалеем, что не имеем сейчас столько золота, Ваше Величество.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACQUIRE_PRISONS</Tag>
@@ -6651,6 +6803,7 @@
         <German>Dies ist eine brilliante Idee und ein sehr großzügiges Angebot, Eure Majestät !</German>
         <Italian>Questa è un'idea brillante e un'offerta molto generosa, Vostra Maestà!</Italian>
         <Spanish>¡Es una idea brillante y una oferta muy generosa, Su Majestad!</Spanish>
+        <Russian>Это великолепная идея и очень щедрое предложение, Ваше Величество!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACQUIRE_PRISONS_CANT_AFFORD</Tag>
@@ -6659,6 +6812,7 @@
         <German>Wir bedauern, das Gold hierfür derzeit nicht aufbringen zu können, Eure Majestät.</German>
         <Italian>Ci dispiace non essere in grado di raccogliere l'oro per loro ora, Vostra Maestà.</Italian>
         <Spanish>Lamentamos no poder reunir el oro para ellos ahora, Su Majestad.</Spanish>
+        <Russian>Сожалеем, Ваше Величество, но сейчас мы не можем себе этого позволить.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACQUIRE_NOBLE</Tag>
@@ -6667,6 +6821,7 @@
         <German>Wir werden seine Passage bezahlen und ihn in unsere Obhut nehmen, Eure Majestät !</German>
         <Italian>Pagheremo il suo passaggio e lo prenderemo sotto la nostra custodia, Vostra Maestà!</Italian>
         <Spanish>¡Pagaremos su pasaje y lo pondremos bajo nuestra custodia, Su Majestad!</Spanish>
+        <Russian>Мы оплатим его проезд и возьмем его под свою опеку, Ваше Величество!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACQUIRE_NOBLE_CANT_AFFORD</Tag>
@@ -6675,6 +6830,7 @@
         <German>Wir bedauern, das Gold hierfür derzeit nicht aufbringen zu können, Eure Majestät.</German>
         <Italian>Ci dispiace non essere in grado di raccogliere l'oro per lui ora, Vostra Maestà.</Italian>
         <Spanish>Lamentamos no poder reunir el oro para él ahora, Su Majestad.</Spanish>
+        <Russian>Мы сожалеем, что не можем собрать для него золото сейчас, Ваше Величество.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACQUIRE_BISHOP</Tag>
@@ -6683,6 +6839,7 @@
         <German>Wir nehmen das Angebot der Heiligen Mutter Kirche dankbar an, Eure Eminenz.</German>
         <Italian>Accettiamo con gratitudine l'offerta della nostra Madre Chiesa, Vostra Eminenza.</Italian>
         <Spanish>Aceptamos con agradecimiento el ofrecimiento de nuestra Madre Iglesia, Su Eminencia.</Spanish>
+        <Russian>Мы с благодарностью принимаем предложение Святой Церкви, Ваше Высокопреосвященство.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACQUIRE_BISHOP_CANT_AFFORD</Tag>
@@ -6691,6 +6848,7 @@
         <German>Wir bedauern, das Gold hierfür derzeit nicht aufbringen zu können, Eure Majestät.</German>
         <Italian>Ci dispiace non essere in grado di raccogliere l'oro per lui ora, Vostra Maestà.</Italian>
         <Spanish>Lamentamos no poder reunir el oro para él ahora, Su Majestad.</Spanish>
+        <Russian>Мы сожалеем, что не можем собрать для него золото сейчас, Ваше Высокопреосвященство.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_PAY_CHURCH_DEMAND</Tag>
@@ -6699,6 +6857,7 @@
         <German>Wir spenden gerne für den guten Zweck, Eure Eminenz.</German>
         <Italian>Siamo felici di donare alla causa, Vostra Eminenza.</Italian>
         <Spanish>Estamos contentos de donar a la causa, Su Eminencia.</Spanish>
+        <Russian>Мы рады сделать пожертвование на это богоугодное дело, Ваше Высокопреосвященство.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_REFUSE_CHURCH_DEMAND</Tag>
@@ -6707,6 +6866,7 @@
         <German>Wir bedauern, das Gold hierfür derzeit nicht aufbringen zu können, Eure Eminenz.</German>
         <Italian>Ci dispiace di non poter raccogliere l'oro per questo in questo momento, Vostra Eminenza.</Italian>
         <Spanish>Lamentamos no poder reunir el oro para esto en este momento, Su Eminencia.</Spanish>
+        <Russian>К сожалению, наша казна пуста, Ваше Высокопреосвященство.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_REQUEST_CHURCH_FAVOUR</Tag>
@@ -6715,6 +6875,7 @@
         <German>Wir möchten die Heilige Mutter Kirche um eine Gunst bitten, Eure Eminenz.</German>
         <Italian>Vorremmo chiedere un favore alla nostra Madre Chiesa, Vostra Eminenza.</Italian>
         <Spanish>Nos gustaría pedir un favor a nuestra Madre Iglesia, Su Eminencia.</Spanish>
+        <Russian>Мы хотели бы попросить об одолжении у Святой Церкви, Ваше Высокопреосвященство.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHURCH_FAVOUR_KING</Tag>
@@ -6723,6 +6884,7 @@
         <German>Könntet Ihr bitte bei [COLOR_HIGHLIGHT_TEXT]unserem König[COLOR_REVERT] für unsere Sache sprechen?</German>
         <Italian>Potresti parlare per la nostra causa al [COLOR_HIGHLIGHT_TEXT]nostro Re[COLOR_REVERT]?</Italian>
         <Spanish>¿Podría hablar por nuestra causa a [COLOR_HIGHLIGHT_TEXT]nuestro Rey[COLOR_REVERT]?</Spanish>
+        <Russian>Не могли бы вы замолвить слово о верном почитателе Церкви перед [COLOR_HIGHLIGHT_TEXT]нашим королем[COLOR_REVERT]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHURCH_FAVOUR_EUROPEAN</Tag>
@@ -6731,6 +6893,7 @@
         <German>Könntet Ihr bitte bei [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] für unsere Sache sprechen?</German>
         <Italian>Potresti parlare per la nostra causa al [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]?</Italian>
         <Spanish>¿Podría hablar por nuestra causa en [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]?</Spanish>
+        <Russian>Не могли бы вы уладить кое-какие дела с [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHURCH_FAVOUR_FOUNDING_FATHERS</Tag>
@@ -6739,6 +6902,7 @@
         <German>Könntet Ihr bitte bei bekannten Persönlichkeiten ein gutes Wort einlegen, damit sie unserem Kongress beitreten?</German>
         <Italian>Potresti mettere una buona parola con personalità note per unirsi al nostro congresso?</Italian>
         <Spanish>¿Podría hablar con personalidades conocidas para que se unan a nuestro congreso?</Spanish>
+        <Russian>Не могли бы вы замолвить словечко перед выдающимися личностями, чтобы они присоединились к нашему Конгрессу?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_SPOKE_FAVOUR_KING</Tag>
@@ -6747,6 +6911,7 @@
         <German>Seine Eminenz hat in Eurer Sache mit [COLOR_HIGHLIGHT_TEXT]Eurem König[COLOR_REVERT] gesprochen.</German>
         <Italian>Sua Eminenza ha parlato al [COLOR_HIGHLIGHT_TEXT]vostro Re[COLOR_REVERT] in vostro favore.</Italian>
         <Spanish>Su Eminencia ha hablado con [COLOR_HIGHLIGHT_TEXT]su Rey[COLOR_REVERT] en su nombre.</Spanish>
+        <Russian>Его Высокопреосвященство поговорил с [COLOR_HIGHLIGHT_TEXT]вашим Королем[COLOR_REVERT] от вашего имени.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_SPOKE_FAVOUR_EUROPEAN</Tag>
@@ -6755,6 +6920,7 @@
         <German>Seine Eminenz hat in Eurer Sache mit [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] gesprochen.</German>
         <Italian>Sua Eminenza ha parlato con [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] a vostro nome.</Italian>
         <Spanish>Su Eminencia ha hablado con [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] en su nombre.</Spanish>
+        <Russian>Его Высокопреосвященство говорил с [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] от вашего имени.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_NOT_ACQUIRE_SMUGGLERS</Tag>
@@ -6763,6 +6929,7 @@
         <German>Wir werden diese Verbrecher zur Strecke bringen, Eure Majestät !</German>
         <Italian>Daremo la caccia a questi criminali nel vostro nome, Vostra Maestà!</Italian>
         <Spanish>¡Cazaremos a estos criminales en su nombre, Su Majestad!</Spanish>
+        <Russian>Мы выследим этих преступников и предадим справедливому суду, Ваше Величество!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACQUIRE_SMUGGLERS</Tag>
@@ -6771,6 +6938,7 @@
         <German>Vielen Dank für diesen Hinweis, ähm diese Warnung, Eure Majestät. Wir werden uns umgehend darum kümmern. (Schmuggler anheuern)</German>
         <Italian>Grazie per questo suggerimento, um avvertimento, Vostra Maestà. Agiremo di conseguenza. (Assumere contrabbandieri)</Italian>
         <Spanish>Gracias por esta pista, um advertencia, Su Majestad. Actuaremos en consecuencia. (Contratar contrabandistas)</Spanish>
+        <Russian>Спасибо за этот намек, гм предупреждение, Ваше Величество. Мы поступим соответственно. (Нанять контрабандистов)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACQUIRE_PIRATES</Tag>
@@ -6779,6 +6947,7 @@
         <German>Wir werden ihnen Kaperbriefe geben und sie in Namen Seiner Majestät kämpfen lassen!</German>
         <Italian>Daremo loro lettere di marca e li lasceremo combattere in nome di Vostra Maestà!</Italian>
         <Spanish>¡Les daremos cartas de porte y les dejaremos luchar en nombre de Su Majestad!</Spanish>
+        <Russian>Мы выдадим им каперские грамоты, и пусть они сражаются во имя Вашего Величества!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_BRIBE_PIRATES</Tag>
@@ -6787,6 +6956,7 @@
         <German>Wir werden sie bestechen, damit sie unsere Schiffe in Ruhe lassen, Eure Majestät !</German>
         <Italian>Li corromperemo per lasciare le nostre navi in pace, Vostra Maestà!</Italian>
         <Spanish>¡Los sobornaremos para que dejen nuestros barcos en paz, Su Majestad!</Spanish>
+        <Russian>Мы дадим им взятку, чтобы они оставили наши корабли в покое, Ваше Величество!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_NOT_ACQUIRE_PIRATES</Tag>
@@ -6795,6 +6965,7 @@
         <German>Wir werden diese Verbrecher zur Strecke bringen, Eure Majestät !</German>
         <Italian>Daremo la caccia a questi criminali nel vostro nome, Vostra Maestà!</Italian>
         <Spanish>¡Cazaremos a estos criminales en su nombre, Su Majestad!</Spanish>
+        <Russian>Мы выследим этих преступников и предадим справедливому суду, Ваше Величество!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACQUIRE_CONTINENTAL_GUARD</Tag>
@@ -6803,6 +6974,7 @@
         <German>Wir nehmen euer Angebot dankend an, Eure Majestät !</German>
         <Italian>Accettiamo con gratitudine la vostra offerta, Vostra Maestà!</Italian>
         <Spanish>¡Aceptamos con gratitud su oferta, Su Majestad!</Spanish>
+        <Russian>С благодарностью принимаем ваше предложение, Ваше Величество!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_NOT_ACQUIRE_CONTINENTAL_GUARD</Tag>
@@ -6811,6 +6983,7 @@
         <German>Wir können uns dies leider nicht leisten, Eure Majestät !</German>
         <Italian>Temo che non possiamo permettercelo, Vostra Maestà!</Italian>
         <Spanish>¡Me temo que no podemos permitirnos eso, Su Majestad!</Spanish>
+        <Russian>Боюсь, мы не можем себе этого позволить, Ваше Величество!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACQUIRE_MORTAR</Tag>
@@ -6819,6 +6992,7 @@
         <German>Wir nehmen euer Angebot dankend an, Eure Majestät !</German>
         <Italian>Accettiamo con gratitudine la vostra offerta, Vostra Maestà!</Italian>
         <Spanish>¡Aceptamos con gratitud su oferta, Su Majestad!</Spanish>
+        <Russian>Мы с благодарностью принимаем Ваше предложение, Ваше Величество!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_NOT_ACQUIRE_MORTAR</Tag>
@@ -6827,6 +7001,7 @@
         <German>Wir können uns dies leider nicht leisten, Eure Majestät !</German>
         <Italian>Temo che non possiamo permettercelo, Vostra Maestà!</Italian>
         <Spanish>¡Me temo que no podemos permitirnos eso, Su Majestad!</Spanish>
+        <Russian>Боюсь, мы не можем себе этого позволить, Ваше Величество!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACQUIRE_RANGERS</Tag>
@@ -6835,6 +7010,7 @@
         <German>Dies ist eine brilliante Idee, Eure Majestät ! (Ranger ausbilden)</German>
         <Italian>Che idea geniale, Vostra Maestà! (Rangers del treno)</Italian>
         <Spanish>¡Qué idea tan brillante, Su Majestad! (Guardias del tren)</Spanish>
+        <Russian>Какая блестящая идея, Ваше Величество! (нанять Рейнджеров)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_NOT_ACQUIRE_RANGERS</Tag>
@@ -6843,6 +7019,7 @@
         <German>Eure Majestät, Ich versichere Euch, dass die Kolonien ausreichend geschützt sind. Wir benötigen keine weiteren Truppen.</German>
         <Italian>Vostra Maestà, vi assicuro che le colonie sono sufficientemente protette. Non abbiamo bisogno di altre truppe.</Italian>
         <Spanish>Su Majestad, le aseguro que las colonias están suficientemente protegidas. No necesitamos más tropas.</Spanish>
+        <Russian>Ваше Величество, уверяю вас, что колонии достаточно защищены. Нам не нужны дополнительные войска.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACQUIRE_CONQUISTADORS</Tag>
@@ -6851,6 +7028,7 @@
         <German>Im Namen des Herrn heißen wir diese tapferen Kämpfer bei uns willkommen, Eure Majestät ! (Konquistadoren anwerben)</German>
         <Italian>Daremo il benvenuto a questi coraggiosi combattenti in nome della cristianità, Vostra Maestà! (Noleggia i conquistatori)</Italian>
         <Spanish>¡Daremos la bienvenida a estos valientes combatientes en nombre de la cristiandad, Su Majestad! (Contratar conquistadores)</Spanish>
+        <Russian>Мы приветствуем этих храбрых бойцов во имя христианства, Ваше Величество! (нанять Конкистадоров)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_NOT_ACQUIRE_CONQUISTADORS</Tag>
@@ -6859,6 +7037,7 @@
         <German>Eure Majestät, wir können uns diese Söldner bedauerlicherweise derzeit nicht leisten.</German>
         <Italian>Vostra Maestà, purtroppo non possiamo permetterci questi mercenari al momento.</Italian>
         <Spanish>Su Majestad, desafortunadamente no podemos permitirnos estos mercenarios en este momento.</Spanish>
+        <Russian>Ваше Величество, к сожалению, в данный момент мы не можем позволить себе этих наемников.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_REV_NEED_LAND</Tag>
@@ -6867,6 +7046,7 @@
         <German>Dankt Eurem Herrscher und richtet ihm aus, dass wir mehr Truppen gebrauchen können. (Truppen bekommen)</German>
         <Italian>Ringraziate il vostro sovrano e ditegli che abbiamo bisogno di più forze di terra. (Ottenere truppe)</Italian>
         <Spanish>Agradezca a su soberano y dígale que necesitamos más fuerzas terrestres. (Consigue tropas)</Spanish>
+        <Russian>Поблагодари своего государя и скажи ему, что нам нужно больше сухопутных войск. (Получить войска)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_REV_NEED_SEA</Tag>
@@ -6875,6 +7055,7 @@
         <German>Dankt Eurem Herrscher und richtet ihm aus, dass wir stärkere Kriegsschiffe gebrauchen können. (Kriegsschiffe bekommen)</German>
         <Italian>Ringraziate il vostro sovrano e ditegli che abbiamo bisogno di forze navali più forti. (Ottenere navi da guerra)</Italian>
         <Spanish>Agradece a tu soberano y dile que necesitamos fuerzas navales más fuertes. (Conseguir buques de guerra)</Spanish>
+        <Russian>Поблагодари своего государя и скажи ему, что нам нужны более сильные военно-морские силы. (Получить военные корабли)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_EUROPE_WAR_YES</Tag>
@@ -6883,6 +7064,7 @@
         <German>Wie Ihr beliebt, Eure Majestät ! (Krieg erklären, maximaler Steuersatz sinkt)</German>
         <Italian>Come desiderate, Vostra Maestà! (Dichiarare la guerra, l'aliquota fiscale massima diminuisce)</Italian>
         <Spanish>¡Como desee, Su Majestad! (Declarar la guerra, el tipo impositivo máximo disminuye)</Spanish>
+        <Russian>Как Вам будет угодно, Ваше Величество! (Объявить войну, максимальная ставка налога снижается)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_EUROPE_WAR_YES_BUT</Tag>
@@ -6891,6 +7073,7 @@
         <German>Grundsätzlich gerne, Eure Majestät. Wenn Ihr uns dabei unterstützt. (Krieg erklären, Truppen bekommen)</German>
         <Italian>In linea di principio, Vostra Maestà. Se ci sosterrete. (Dichiarare guerra, ottenere truppe)</Italian>
         <Spanish>En principio, Su Majestad. Si nos apoyas. (Declarar la guerra, conseguir tropas)</Spanish>
+        <Russian>В принципе, мы не против, Ваше Величество. Но нам нужна военная помощь. (Объявить войну, получить войска)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_EUROPE_WAR_NO</Tag>
@@ -6899,6 +7082,7 @@
         <German>Ich bedauere, Eure Majestät. Das erscheint uns derzeit nicht angebracht. (Beziehung zur anderen Nation verbessert sich, maximaler Steuersatz steigt)</German>
         <Italian>Mi dispiace, Vostra Maestà. Non sembra appropriato in questo momento. (La relazione con l'altra nazione migliora, l'aliquota fiscale massima aumenta)</Italian>
         <Spanish>Lo siento, Su Majestad. No parece apropiado en este momento. (La relación con otra nación mejora, el tipo impositivo máximo aumenta)</Spanish>
+        <Russian>Сожалею, Ваше Величество. В настоящее время это не кажется уместным. (Отношения с другой нацией улучшаются, максимальная ставка налога увеличивается)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_EUROPE_PEACE_YES</Tag>
@@ -6907,6 +7091,7 @@
         <German>Wie Ihr beliebt, Eure Majestät ! (Krieg wird beendet, Diplomaten werden entsendet)</German>
         <Italian>Come desiderate, Vostra Maestà! (Guerra è finita, diplomatici vengono inviati)</Italian>
         <Spanish>¡Como desee, Su Majestad! (Se termina la guerra, se envían diplomáticos)</Spanish>
+        <Russian>Как пожелаете, Ваше Величество! (Война заканчивается, в колонии отправлены дипломаты)</Russian> 
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_EUROPE_PEACE_NO</Tag>
@@ -6915,6 +7100,7 @@
         <German>Ich bedauere, Eure Majestät. Das erscheint uns derzeit nicht angebracht. (König enttäuscht)</German>
         <Italian>Mi dispiace, Vostra Maestà. Non sembra appropriato in questo momento. (Re deluso)</Italian>
         <Spanish>Lo siento, Su Majestad. No parece apropiado en este momento. (Rey decepcionado)</Spanish>
+        <Russian>Сожалею, Ваше Величество. В настоящее время это не кажется нам уместным. (Король разочарован)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_FOUND_CITY_CANCEL_2</Tag>
@@ -6932,6 +7118,7 @@
         <German>Ich kenne Euch nicht, und ich bin mir auch nicht sicher, ob ich Euch kennenlernen möchte. Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Herrscher der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:2][COLOR_REVERT]. Der Ruhm meines Volkes ist mittlerweile nur noch eine Legende. Fremde Krieger haben unsere Städte zerstört, unsere Kinder gestohlen und unsere Töchter geschändet. Fremde Krieger wie Ihr einer seid.</German>
         <Italian>Salve. Mi chiamo [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], capo e protettore del popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Ti considero un amico. È nel tuo migliore interesse che io non cambi mai idea.</Italian>
         <Spanish>Hola. Soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], jefe y protector del pueblo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT]. Os considero mis amigos. Y más os vale que nunca cambie de opinión.</Spanish>
+        <Russian>Я не знаю тебя и я не уверен, что хочу с тобой встречаться впредь. Я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], правитель [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:2][COLOR_REVERT]. Слава моего народа теперь просто легенда. Чужеземцы разрушили наши города, украли наших детей и осквернили наших дочерей. Чужеземцы вроде тебя.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_PACAL_1</Tag>
@@ -6940,6 +7127,7 @@
         <German>Ich bin sehr beschäftigt. Kommt ein anderes Mal wieder.</German>
         <Italian>Senti, sono molto occupato. Perché non prendi i bambini e te ne torni al circolo?</Italian>
         <Spanish>Mirad, estoy muy ocupado. ¿Por qué no os lleváis a los niños y os volvéis al club?</Spanish>
+        <Russian>Я очень занят. Приходи в другой раз.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_PACAL_1</Tag>
@@ -6948,6 +7136,7 @@
         <German>Frieden? Ihr kommt mit offenen Händen, doch Ihr habt Schweiß auf der Stirn. Ich traue Euch nicht.</German>
         <Italian>Pace? Ci sarà la pace quando ti arrenderai!</Italian>
         <Spanish>¿Paz? ¡La tendremos cuando os rindáis!</Spanish>
+        <Russian>Мир? Ты приходишь с распростертыми руками, но ты весь вспотел. Почему ты так нервничаешь? Я не доверяю тебе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_PACAL_1</Tag>
@@ -6956,6 +7145,7 @@
         <German>Betretet meinen Palast und lasst Euch erfrischen.</German>
         <Italian>È bello parlare con una persona che capisce l'importanza dell'azione. Parliamo di come possiamo rafforzare le nostre colonie.</Italian>
         <Spanish>Es bueno hablar con alguien que entiende la importancia de los actos. Charlemos sobre cómo podemos fortalecer nuestras colonias.</Spanish>
+        <Russian>Хорошо поговорить с кем-то, кто понимает важность действий. Давайте поговорим о том, как мы можем укрепить наши отношения.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_PACAL_1</Tag>
@@ -6964,6 +7154,7 @@
         <German>Ich kenne Euresgleichen. Eure liebreizenden Worte betören, doch in Euren Augen glitzern Bosheit und Gier.</German>
         <Italian>È bello parlare con una persona che capisce l'importanza dell'azione. Parliamo di come possiamo rafforzare le nostre colonie.</Italian>
         <Spanish>Es bueno hablar con alguien que entiende la importancia de los actos. Charlemos sobre cómo podemos fortalecer nuestras colonias.</Spanish>
+        <Russian>Я знаю таких, как ты. Прелестные слова твои обманчивы, но злоба и жадность блестят в глазах твоих.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_PACAL_1</Tag>
@@ -6972,6 +7163,7 @@
         <German>Mein Volk besitzt Ruhm, aber keinen Reichtum. Eine Gelegenheit für Euch, Tugend und Großzügigkeit zu zeigen.</German>
         <Italian>Abbiamo urgente bisogno, per favore aiutaci.</Italian>
         <Spanish>El [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] tiene una terrible necesidad. Ayudadnos, por favor.</Spanish>
+        <Russian>У моего народа есть слава, но нет богатства. Это хорошая возможность для вас проявить как добродетель, так и щедрость.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_PACAL_1</Tag>
@@ -6980,6 +7172,7 @@
         <German>Willkommen. Nehmt einen Schluck Quellwasser und diese Kette anmutig geformter Muschelschalen. Und jetzt gebt mir Euer Geschenk.</German>
         <Italian>Ti sei dimenticato dell'anniversario della mia colonia? Non ti preoccupare. Come dono potresti darci quello che chiediamo.</Italian>
         <Spanish>¿Habéis olvidado que es el aniversario de mi colonia? Bueno, no pasa nada. Como regalo nos podríais dar lo que os pedimos.</Spanish>
+        <Russian>Добро пожаловать. Сделай глоток родниковой воды и посмотри на это ожерелье из изящных раковин. А теперь покажи, какие дары ты принес.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_PACAL_1</Tag>
@@ -6988,6 +7181,7 @@
         <German>Verschwindet. Und kommt erst wieder, wenn Ihr Euch mir unterwerfen wollt, Unwürdiger.</German>
         <Italian>Non sei nelle condizioni di negoziare. Dai al mio popolo ciò che chiede.</Italian>
         <Spanish>No estáis en posición de negociar. Dadle a mi pueblo lo que quiere.</Spanish>
+        <Russian>Убирайся. Не возвращайся, пока не будешь готов подчиниться мне, ничтожество.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_DE_SA_1</Tag>
@@ -6996,6 +7190,7 @@
         <German>Bom dia! Wohin des Weges, mein Herr? Ihr habt Euch wohl verlaufen. Dieser Teil der Neuen Welt gehört mir, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], und meinem Herrn, dem gottesfürchtigen König meiner Heimat [COLOR_HIGHLIGHT_TEXT]Portugal[COLOR_REVERT]. Der Rest der Neuen Welt steht uns im übrigen auch zu. Erkennt unseren Anspruch an, und ich werde Euch als meinen Gast hier dulden.</German>
         <Italian>Salve, amico. Il mio nome è [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], ma puoi chiamarmi Martim. Basta che non mi chiami troppo tardi per la cena.</Italian>
         <Spanish>Hola, amigo. Soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], pero podéis llamarme Martim. Pero no me llaméis tarde para la cena.</Spanish>
+        <Russian>Доброе утро! Куда вы идете, милорд? Вы, должно быть, сбились с пути. Эта часть Нового Света принадлежит мне, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], и моему господину, богобоязненному Королю моей родины, [COLOR_HIGHLIGHT_TEXT]Португалии[COLOR_REVERT]. Если уж на то пошло, остальная часть Нового Света тоже принадлежит нам. Признайте это и я, так и быть, недолго потерплю вас здесь, как гостя.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_DE_SA_1</Tag>
@@ -7004,6 +7199,7 @@
         <German>Ich bedaure, ich habe keine Zeit. Keine Zeit für Euresgleichen.</German>
         <Italian>Senti, sono molto occupato. Perché non prendi i bambini e te ne torni al circolo?</Italian>
         <Spanish>Mirad, estoy muy ocupado. ¿Por qué no os lleváis a los niños y os volvéis al club?</Spanish>
+        <Russian>Я сожалею, что у меня нет времени, совсем нет времени на таких, как ты.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_DE_SA_1</Tag>
@@ -7012,6 +7208,7 @@
         <German>Ihr bietet mir Frieden? Bietet mir lieber Gold, Edelsteine, Silber, Rum, Kaffee und Sklaven an. Danach können wir darüber reden, ob es mir wert ist, Euch zu verschonen.</German>
         <Italian>Pace? Ci sarà la pace quando ti arrenderai!</Italian>
         <Spanish>¿Paz? ¡La tendremos cuando os rindáis!</Spanish>
+        <Russian>Ты предлагаешь мне мир? Лучше предложите мне золото, драгоценные камни, серебро, ром, кофе и рабов. После этого мы можем поговорить о том, стоит ли мне пощадить тебя.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_DE_SA_1</Tag>
@@ -7020,6 +7217,7 @@
         <German>Seid mein Gast, [CT_NAME]. Beweist Gottesfurcht, indem Ihr dem Vertreter des Himmlischen Herrn in diesem Teil der Welt Gehorsam erweist. Also mir.</German>
         <Italian>È bello parlare con una persona che capisce l'importanza dell'azione. Parliamo di come possiamo rafforzare le nostre colonie.</Italian>
         <Spanish>Es bueno hablar con alguien que entiende la importancia de los actos. Charlemos sobre cómo podemos fortalecer nuestras colonias.</Spanish>
+        <Russian>Будьте моим гостем, [CT_NAME]. Проявите уважение, продемонстрировав послушание представителю Господа нашего в этой части мира. Это, кстати, я.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_DE_SA_1</Tag>
@@ -7028,6 +7226,7 @@
         <German>Überlegt, [CT_NAME], wann habt Ihr das letzte Mal die Beichte abgelegt? Ihr solltet dies rasch wieder tun. Denn womöglich tretet Ihr bald vor den Himmlischen Richter.</German>
         <Italian>Parliamo di come possiamo rafforzare le nostre colonie.</Italian>
         <Spanish>Charlemos sobre cómo podemos fortalecer nuestras colonias.</Spanish>
+        <Russian>Подумай, [CT_NAME], когда ты в последний раз исповедовался? Тебе следует сделать это снова и быстро. Ибо вскоре ты можешь предстать перед своим Небесным Судьей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_DE_SA_1</Tag>
@@ -7036,6 +7235,7 @@
         <German>Das Schicksal hat es mit mir bislang nicht gut gewollt in diesem Teil der Welt. Zeigt Euch barmherzig, Gott wird es Euch vergelten.</German>
         <Italian>Abbiamo urgente bisogno, per favore aiutaci.</Italian>
         <Spanish>El [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] tiene una terrible necesidad. Ayudadnos, por favor.</Spanish>
+        <Russian>Эта часть мира не была благосклонна ко мне. Будьте милосердны вы. Бог да воздаст вам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_DE_SA_1</Tag>
@@ -7044,6 +7244,7 @@
         <German>Ich grüße Euch, Gouverneur. Was steht Euch im Sinn? Wollt Ihr mir ein Geschenk überreichen?</German>
         <Italian>Ti sei dimenticato dell'anniversario della mia colonia? Non ti preoccupare. Come dono potresti darci quello che chiediamo.</Italian>
         <Spanish>¿Habéis olvidado que es el aniversario de mi colonia? Bueno, no pasa nada. Como regalo nos podríais dar lo que os pedimos.</Spanish>
+        <Russian>Здравствуйте, губернатор. О чем думаете? Хотите сделать мне подарок?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_DE_SA_1</Tag>
@@ -7052,6 +7253,7 @@
         <German>Ihr gebt ein jämmerliches Bild ab. Verschwindet. Kommt wieder, wenn Ihr Euch mir unterwerfen wollt.</German>
         <Italian>Non sei nelle condizioni di negoziare. Dai al mio popolo ciò che chiede.</Italian>
         <Spanish>No estáis en posición de negociar. Dadle a mi pueblo lo que quiere.</Spanish>
+        <Russian>Ты жалок. Убирайся отсюда. Возвращайся, когда будешь готов подчиниться мне.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_SOUSA_1</Tag>
@@ -7060,6 +7262,7 @@
         <German>Bom dia. Ich entbiete Euch meinen Gruß, werter Herr. Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], der Gouverneur der hiesigen Besitzungen meines Herrn, des frommen Königs von [COLOR_HIGHLIGHT_TEXT]Portugal[COLOR_REVERT]. Senkt Eure Waffen. Von mir und meinen Männern habt Ihr nichts zu befürchten. Wir haben schon genug Sklaven.</German>
         <Italian>Salve, amico. Il mio nome è [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], ma puoi chiamarmi Martim. Basta che non mi chiami troppo tardi per la cena.</Italian>
         <Spanish>Hola, amigo. Soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], pero podéis llamarme Martim. Pero no me llaméis tarde para la cena.</Spanish>
+        <Russian>Здравствуй, друг. Меня зовут [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], но вы можете звать меня Мартин. Только не зови меня слишком поздно к ужину.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_SOUSA_1</Tag>
@@ -7068,6 +7271,7 @@
         <German>Sieh an, der Herr Gernegroß! Mit seinem kleinen Kolonialreich, seiner kleinen Armee und seinem Herumstolzieren. Kommt wieder, wenn Ihr erwachsen geworden seid!</German>
         <Italian>Ora userò la mia incredibile conoscenza della tattica per ignorarti.</Italian>
         <Spanish>Ahora utilizaré mi astuto conocimiento de la táctica para hacer caso omiso de vos.</Spanish>
+        <Russian>Ну-ну, господин хвастун! Со своей маленькой колониальной империей, своей маленькой армией и своим напыщенным видом. Возвращайся, когда вырастешь!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_SOUSA_1</Tag>
@@ -7076,6 +7280,7 @@
         <German>In der Tat, Ihr seid gut beraten, um einen ehrenvollen Frieden zu bitten. Doch ich bin noch nicht bereit, ihn Euch zu gewähren.</German>
         <Italian>Sapevo che mi avresti pregato di stipulare una pace, alla fine, ma non ci sarà pace fino alla tua resa.</Italian>
         <Spanish>Sabía que, tarde o temprano, suplicaríais la paz. Pero no habrá paz hasta que os rindáis.</Spanish>
+        <Russian>В самом деле, вам рекомендуется просить о почетном мире. К сожалению, я еще не готов предоставить его вам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_SOUSA_1</Tag>
@@ -7084,6 +7289,7 @@
         <German>Nehmt Platz auf der Veranda meiner Plantage. Darf ich Euch eine Erfrischung anbieten? Ein Glas Rum? Eine Tasse Kaffee? Eine junge Sklavin?</German>
         <Italian>Finalmente parlo con un degno avversario. Cosa può fare [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] per te?</Italian>
         <Spanish>Por fin consigo hablar con un adversario digno. ¿Qué puede hacer el [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] por vos?</Spanish>
+        <Russian>Присаживайтесь на веранду моей плантации. Могу я предложить вам освежиться? Стакан рома? Чашечку кофе? Может, молоденькую рабыню?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_SOUSA_1</Tag>
@@ -7092,6 +7298,7 @@
         <German>Ihr beeindruckt mich. Doch, doch, keine falsche Bescheidenheit! Diese Verschlagenheit, diese Raffinesse - Ihr erinnert mich an einen Muselmanen.</German>
         <Italian>Non sei abbastanza furbo per fregarmi. Attento: non reagisco bene agli inganni.</Italian>
         <Spanish>Os falta astucia para engañarme. Os lo advierto: las triquiñuelas no son de mi agrado.</Spanish>
+        <Russian>Ты впечатляешь меня. Да-да, без ложной скромности! Эта хитрость, эта тонкость - вы мне напоминаете левантийца.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_SOUSA_1</Tag>
@@ -7100,6 +7307,7 @@
         <German>Bitte schlagt mir meine respektvoll vorgetragene Bitte nicht ab.</German>
         <Italian>La strategia più semplice per me è chiederti quello che ci serve e sperare nella tua buona volontà.</Italian>
         <Spanish>La estrategia más sencilla para mí es pediros lo que necesitamos y rezar porque vuestra buena voluntad se imponga.</Spanish>
+        <Russian>Прошу не игнорировать мою уважительную просьбу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_SOUSA_1</Tag>
@@ -7108,6 +7316,7 @@
         <German>Ihr seid ein ebenbürtiger Gegner, Gouverneur! Wir sollten uns die Hände reichen.</German>
         <Italian>I nostri eserciti si equivalgono, ma sono sicuro che in una battaglia vincerei io. Affinché ciò non accada, ti chiedo di soddisfare le nostre richieste.</Italian>
         <Spanish>Nuestros ejércitos están a la par, aunque creo que yo ganaría si lucharan. Así que, para que esto no ocurra, os pido que satisfagáis mis exigencias.</Spanish>
+        <Russian>Обе наши армии хорошо подготовлены, но я верю, что в войне победим мы. Чтобы этого не произошло, пожалуйста, примите наши требования.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_SOUSA_1</Tag>
@@ -7116,6 +7325,7 @@
         <German>Ihr wisst, Ihr seid uns unterlegen. Ich schlage vor, Ihr gebt mir, was ich verlange.</German>
         <Italian>Ti supero in classe ed equipaggiamento. Ti suggerisco di darmi quello che voglio.</Italian>
         <Spanish>Os superamos en armas y en hombres. Os sugiero que nos deis lo que exijo.</Spanish>
+        <Russian>Мы превосходим вас численностью в оружии и людях. Поэтому я предлагаю вам дать нам то, что я требую.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_ORKEKE_1</Tag>
@@ -7124,6 +7334,7 @@
         <German>Fremder, ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Kazike der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Was treibt Euch hier in die windigen Steppen? Ihr scheint uns weder Wohlstand noch Herzenswärme bringen zu wollen. Nehmt an unserem Lagerfeuer Platz, esst etwas Fleisch, trinkt etwas Wasser - und geht dann Eurer Wege.</German>
         <Italian>Salve. Mi chiamo [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], capo e protettore del popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Ti considero un amico. È nel tuo migliore interesse che io non cambi mai idea.</Italian>
         <Spanish>Hola. Soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], jefe y protector del pueblo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT]. Os considero mis amigos. Y más os vale que nunca cambie de opinión.</Spanish>
+        <Russian>Доброе утро. Я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], лидер и защитник [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Я считаю тебя своим другом. В твоих интересах, чтобы я никогда не менял своего мнения.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_ORKEKE_1</Tag>
@@ -7132,6 +7343,7 @@
         <German>Fremder, Ihr stört die Einsamkeit unserer Steppen. Schweigt und geht.</German>
         <Italian>Senti, sono molto occupato. Perché non prendi i bambini e te ne torni al circolo?</Italian>
         <Spanish>Mirad, estoy muy ocupado. ¿Por qué no os lleváis a los niños y os volvéis al club?</Spanish>
+        <Russian>Незнакомец, ты нарушаешь спокойствие наших прерий. Молчи. Просто уходи.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_ORKEKE_1</Tag>
@@ -7140,6 +7352,7 @@
         <German>Ihr wünscht, dass der Waffenlärm verstummt? Ihr seid ein Schwätzer, Fremder. Geht! Und schweigt.</German>
         <Italian>Pace? Ci sarà la pace quando ti arrenderai!</Italian>
         <Spanish>¿Paz? ¡La tendremos cuando os rindáis!</Spanish>
+        <Russian>Мир? Мир может быть только тогда, когда вы сдадитесь!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_ORKEKE_1</Tag>
@@ -7157,6 +7370,7 @@
         <German>Wie war noch gleich Euer Name? ... [CT_NAME], nicht wahr? ... Das ist wirklich traurig. Ich hatte so sehr versucht, ihn für immer zu vergessen.</German>
         <Italian>È bello parlare con una persona che capisce l'importanza dell'azione. Parliamo di come possiamo rafforzare le nostre colonie.</Italian>
         <Spanish>Es bueno hablar con alguien que entiende la importancia de los actos. Charlemos sobre cómo podemos fortalecer nuestras colonias.</Spanish>
+        <Russian>Как, ты сказал, тебя зовут? ... [CT_NAME], не так ли? ... Это действительно грустно. Я так старался забыть тебя навсегда.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_ORKEKE_1</Tag>
@@ -7165,6 +7379,7 @@
         <German>[CT_NAME], Ihr seid noch nicht lange in dieser Welt, doch habt Ihr schon mehr Macht und Wohlstand errungen als wir. Zeigt wahre Größe - und helft uns.</German>
         <Italian>Abbiamo urgente bisogno, per favore aiutaci.</Italian>
         <Spanish>El [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] tiene una terrible necesidad. Ayudadnos, por favor.</Spanish>
+        <Russian>[CT_NAME], ты не так давно в нашем мире, но у тебя уже больше власти и процветания, чем у нас. Прояви истинное величие и помоги нам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_ORKEKE_1</Tag>
@@ -7173,6 +7388,7 @@
         <German>Fremder, von gleich zu gleich begegnen wir einander. Wir erweisen Euch unseren Respekt. Was bietet Ihr uns an?</German>
         <Italian>Ti sei dimenticato dell'anniversario della mia colonia? Non ti preoccupare. Come dono potresti darci quello che chiediamo.</Italian>
         <Spanish>¿Habéis olvidado que es el aniversario de mi colonia? Bueno, no pasa nada. Como regalo nos podríais dar lo que os pedimos.</Spanish>
+        <Russian>Незнакомец, мы встречаемся как равные. Мы выражаем вам свое почтение. Что вы можете предложить нам?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_ORKEKE_1</Tag>
@@ -7181,6 +7397,7 @@
         <German>Fremder, Ihr seid alleine hier in dieser Welt. Ihr atmet und esst, weil wir es Euch gestatten. Dafür solltet Ihr Dankbarkeit zeigen.</German>
         <Italian>Non sei nelle condizioni di negoziare. Dai al mio popolo ciò che chiede.</Italian>
         <Spanish>No estáis en posición de negociar. Dadle a mi pueblo lo que quiere.</Spanish>
+        <Russian>Незнакомец, ты один в этом мире. Ты дышишь, потому что мы позволяем тебе это делать. Покажи, как ты благодарен нам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_NUNKUI_1</Tag>
@@ -7189,6 +7406,7 @@
         <German>Fremder, senkt Euren Blick. Man nennt mich [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], wie die Große Erdmutter. Ich bin ihre heilige Dienerin und beschirme in ihrem Namen und mit ihrer Macht das Volk der [COLOR_HIGHLIGHT_TEXT]Shuar[COLOR_REVERT]. Erst seit wenigen Generationen leben wir hier im Urwald, nachdem uns ein Volk heidnischer Städtebauer aus unserer angestammten Heimat vertrieben hat. Dürstet es Euch ebenfalls, steinerne Städte zu errichten? Nun, Ihr solltet Eure Dreistheit zügeln, sonst lasse ich Euch von den Jünglingen, die mir dienen, Euer Haupt abschneiden und als Schrumpfkopf über mein Nachtlager hängen.</German>
         <Italian>Salve. Mi chiamo [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], capo e protettore del popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Ti considero un amico. È nel tuo migliore interesse che io non cambi mai idea.</Italian>
         <Spanish>Hola. Soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], jefe y protector del pueblo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT]. Os considero mis amigos. Y más os vale que nunca cambie de opinión.</Spanish>
+        <Russian>Незнакомец, опусти взгляд. Меня называют [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], как Великую Мать-Землю. Я ее священный слуга и защищаю народ [COLOR_HIGHLIGHT_TEXT]Шуар[COLOR_REVERT] от ее имени и ее силой. Мы пришли в джунгли после того, как языческие градостроители изгнали нас с нашей прародины. Вы также жаждете строить города из камня? Умерь свою дерзость или я прикажу молодым людям, которые служат мне, отрезать тебе голову и повесить над моим ложем.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_NUNKUI_1</Tag>
@@ -7197,6 +7415,7 @@
         <German>Fremder, Ihr errichtet Bauten aus Stein und habt auch ein steinernes Herz. Ihr wollt weder der Erdmutter Liebe erweisen, noch meinem Volk. Schweigt! Und geht zurück in Eure Steinwelt.</German>
         <Italian>Senti, sono molto occupato. Perché non prendi i bambini e te ne torni al circolo?</Italian>
         <Spanish>Mirad, estoy muy ocupado. ¿Por qué no os lleváis a los niños y os volvéis al club?</Spanish>
+        <Russian>Незнакомец, твои здания каменные, как и твое сердце. Ты не проявляешь любви ни к Матери-Земле, ни к моему народу. Молчи! Возвращайся в свой каменный мир.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_NUNKUI_1</Tag>
@@ -7205,6 +7424,7 @@
         <German>Fremder, ich werde erst dann meine kriegslüsternen Jünglinge zurückkommen lassen, wenn sie mir das mitbringen, wonach es mich verlangt: Euren Kopf. Entleert, geräuchert und mit zugenähtem Mund - auf dass Euer Geschwätz für immer verstummt.</German>
         <Italian>Pace? Ci sarà la pace quando ti arrenderai!</Italian>
         <Spanish>¿Paz? ¡La tendremos cuando os rindáis!</Spanish>
+        <Russian>Незнакомец, я не позволю своим воинственным юношам вернуться, пока они не принесут мне то, чего я жажду: твою голову. Опорожненную, высушенную и с зашитым ртом - чтобы навсегда заткнуть твою болтовню.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_NUNKUI_1</Tag>
@@ -7213,6 +7433,7 @@
         <German>Fremder, setzt Euch zu mir. Und seid unbesorgt, [CT_NAME]: Ihr dürft Euren Kopf heben und mich betrachten - ohne dass Ihr Sorge haben müsst, dass ich ihn Euch abschneiden lasse.</German>
         <Italian>È bello parlare con una persona che capisce l'importanza dell'azione. Parliamo di come possiamo rafforzare le nostre colonie.</Italian>
         <Spanish>Es bueno hablar con alguien que entiende la importancia de los actos. Charlemos sobre cómo podemos fortalecer nuestras colonias.</Spanish>
+        <Russian>Незнакомец, сядь со мной. Не волнуйся, [CT_NAME]: ты можешь поднять голову и посмотреть на меня. Не волнуйся. Я не буду ее отрезать.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_NUNKUI_1</Tag>
@@ -7221,6 +7442,7 @@
         <German>Fremder, wäret Ihr bloß nicht in unsere Welt gekommen. Ihr rodet, Ihr fischt, Ihr jagt. Ihr nehmt der Erdmutter weg, was ihr gehört.</German>
         <Italian>È bello parlare con una persona che capisce l'importanza dell'azione. Parliamo di come possiamo rafforzare le nostre colonie.</Italian>
         <Spanish>Es bueno hablar con alguien que entiende la importancia de los actos. Charlemos sobre cómo podemos fortalecer nuestras colonias.</Spanish>
+        <Russian>Незнакомец, если бы ты только не пришел в наш мир. Вы убиваете деревья, вы убиваете всю рыбу, вы убиваете всю дичь. Вы берете у Матери-Земли все, что ей принадлежит и ничего не даёте взамен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_NUNKUI_1</Tag>
@@ -7229,6 +7451,7 @@
         <German>Fremder, Eure steinernen Städte und Mauern schüchtern mein Volk ein. Ihr solltet uns mit guten Gaben davon überzeugen, dass Euer Herz nicht aus Stein ist.</German>
         <Italian>Abbiamo urgente bisogno, per favore aiutaci.</Italian>
         <Spanish>El [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] tiene una terrible necesidad. Ayudadnos, por favor.</Spanish>
+        <Russian>Незнакомец, твои каменные города и стены пугают мой народ. Докажи нам добрыми дарами, что ваше сердце не из камня.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_NUNKUI_1</Tag>
@@ -7237,6 +7460,7 @@
         <German>Fremder, immer mehr Eures Schlages kommen in diese Welt, und wo gestern noch Urwald stand, sind heute steinerne Wüsten. Wisset, dass die Erdmutter Euer Treiben und Tun aufmerksam beobachtet. Was habt Ihr ihr als Gaben mitgebracht?</German>
         <Italian>Ti sei dimenticato dell'anniversario della mia colonia? Non ti preoccupare. Come dono potresti darci quello che chiediamo.</Italian>
         <Spanish>¿Habéis olvidado que es el aniversario de mi colonia? Bueno, no pasa nada. Como regalo nos podríais dar lo que os pedimos.</Spanish>
+        <Russian>Незнакомец, все больше и больше таких, как ты, приходят в этот мир. Там, где вчера были джунгли, сегодня одни камни, памятники вашей безжизненной культуре. Знайте, что Мать-Земля внимательно следит за вашими действиями. Какие у тебя подарки для нее?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_NUNKUI_1</Tag>
@@ -7245,6 +7469,7 @@
         <German>Fremder, Ihr glaubt Euch sicher in Euren Städten aus Stein, und in Eurem Gesicht verrät kein Zucken und kein Zwinkern, was Ihr fühlt. Doch die Erdmutter spürt Eure Furcht, und ich fühle mit ihr. Erweist mir Respekt, und Ihr könnt Eure Furcht vergessen - zumindest vorerst.</German>
         <Italian>Non sei nelle condizioni di negoziare. Dai al mio popolo ciò che chiede.</Italian>
         <Spanish>No estáis en posición de negociar. Dadle a mi pueblo lo que quiere.</Spanish>
+        <Russian>Незнакомец, ты считаешь себя в безопасности в своих каменных городах. Ничто на твоем лице не выдаст того, что ты чувствуешь. Но Мать-Земля чувствует твой страх и я чувствую его вместе с ней. Прояви ко мне уважение и ты сможешь забыть о своем страхе - по крайней мере, на данный момент.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_BARGAIN_BUY</Tag>
@@ -7280,6 +7505,7 @@
         <German>Ihr seid ein schwerer Verhandlungspartner. Nun gut, dies ist unser neuer Vorschlag.</German>
         <Italian>Lei è un partner di negoziazione difficile. Molto bene, questa è la nostra nuova proposta.</Italian>
         <Spanish>Eres un socio negociador difícil. Muy bien, esta es nuestra nueva propuesta.</Spanish>
+        <Russian>Вы трудный партнер на переговорах. Хорошо, вот наше новое предложение.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_BARGAIN_FAIL</Tag>
@@ -7288,6 +7514,7 @@
         <German>Wir haben genug von Eurer Gier und Eurem schlechten Benehmen. Verlasst sofort unser Dorf!</German>
         <Italian>Siamo stufi della vostra avidità e delle vostre cattive maniere. Lasciateci!</Italian>
         <Spanish>Estamos hartos de su avaricia y sus malos modales. ¡Déjanos!</Spanish>
+        <Russian>Мы сыты по горло вашей жадностью и плохими манерами. Оставь нас!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NATIVES_TRADE_1</Tag>
@@ -7305,6 +7532,7 @@
         <German>Ein hervorragender Handel!</German>
         <Italian>Un affare eccellente!</Italian>
         <Spanish>¡Una oferta excelente!</Spanish>
+        <Russian>Отличная сделка!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_NATIVES_TRADE_DECLINE_1</Tag>
@@ -7313,6 +7541,7 @@
         <German>Momentan können wir uns das nicht leisten.</German>
         <Italian>Al momento non possiamo permettercelo.</Italian>
         <Spanish>No podemos permitirnos eso en este momento.</Spanish>
+        <Russian>Мы не можем себе этого позволить в данный момент.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_CHURCH_WAR</Tag>
@@ -7321,6 +7550,7 @@
         <German>Die heidnischen [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] verweigern die Segnungen des Allmächtigen und die Erlösung durch Christus.[NEWLINE]Sie haben sicherlich einen Pakt mit dem Teufel und müssen daher mit Feuer und Schwert getilgt werden!</German>
         <Italian>I selvaggi [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] rifiutano le benedizioni dell'Onnipotente e la salvezza attraverso Cristo.[NEWLINE]Essi hanno sicuramente un patto con il diavolo e devono essere purgati con il fuoco e la spada!</Italian>
         <Spanish>Los salvajes [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] rechazan las bendiciones del Todopoderoso y la salvación por medio de Cristo.[NEWLINE]¡Seguramente tienen un pacto con el Diablo y deben ser purgados con fuego y espada!</Spanish>
+        <Russian>Дикари [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] отказываются от благословений Всевышнего и спасения через Христа.[NEWLINE]У них, несомненно, есть договор с Дьяволом, и они должны быть очищены от него огнем и мечом!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHURCH_WAR_YES</Tag>
@@ -7329,6 +7559,7 @@
         <German>Wir werden das Urteil Gottes über sie bringen, Euer Eminenz. (Ansehen)</German>
         <Italian>Porteremo la sentenza di Dio su di loro, Eminenza. (Prestigio)</Italian>
         <Spanish>Traeremos la sentencia de Dios sobre ellos, Su Eminencia. (Prestigio)</Spanish>
+        <Russian>Мы обрушим на них приговор Божий, Ваше Высокопреосвященство. (Престиж)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHURCH_WAR_YES_BUT</Tag>
@@ -7337,6 +7568,7 @@
         <German>Mit zusätzlichen Truppen können wir Gottes Befehle erfüllen, Euer Eminenz. (Truppen)</German>
         <Italian>Con ulteriori truppe, possiamo eseguire gli ordini di Dio, Eminenza. (Truppe)</Italian>
         <Spanish>Con tropas adicionales, podemos cumplir las órdenes de Dios, Su Eminencia. (Tropas)</Spanish>
+        <Russian>С дополнительными войсками мы можем выполнить Божий приказ, Ваше Высокопреосвященство. (Войска)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHURCH_WAR_NO</Tag>
@@ -7345,6 +7577,7 @@
         <German>Euer Eminenz, sie mögen Heiden sein, aber wir glauben, dass sie dennoch gute Menschen sind und mit etwas Zeit auch Gottes Erlösung finden werden. (Verweigern)</German>
         <Italian>Eminenza, possono essere pagani, ma crediamo che siano comunque brave persone. Con più tempo troveranno certamente la salvezza di Dio. (Rifiuto)</Italian>
         <Spanish>Su Eminencia, puede que sean paganos, pero creemos que sin embargo son buenas personas. Con más tiempo seguramente encontrarán la salvación de Dios. (Rechazo)</Spanish>
+        <Russian>Ваше Высокопреосвященство, они могут быть язычниками, но мы верим, что они все-таки хорошие люди. Со временем они обязательно найдут Божье спасение. (Отказаться)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_WAR_ACCEPTED_PRESTIGE</Tag>
@@ -7353,6 +7586,7 @@
         <German>Ihr seid dem Befehl der Kirche gefolgt und habt [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] den Krieg erklärt. Euer Ansehen in Europa ist gestiegen.</German>
         <Italian>Avete seguito il comando della Chiesa e dichiarato guerra a [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. Il vostro prestigio in Europa è cresciuto.</Italian>
         <Spanish>Has seguido el mandato de la Iglesia y has declarado la guerra a [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. Tu prestigio en Europa ha crecido.</Spanish>
+        <Russian>Вы выполнили приказ Святой Церкви и объявили войну [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. Ваш престиж в Европе вырос.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_WAR_ACCEPTED_TROOPS</Tag>
@@ -7361,6 +7595,7 @@
         <German>Ihr seid dem Befehl der Kirche gefolgt und habt [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] den Krieg erklärt. Die Truppen der Kirche sind bereits eingetroffen.</German>
         <Italian>Hai seguito il comando della Chiesa e hai dichiarato guerra a [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. Le truppe di supporto della Chiesa sono arrivate.</Italian>
         <Spanish>Has seguido la orden de la Iglesia y has declarado la guerra a [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. Las tropas de apoyo de la Iglesia han llegado.</Spanish>
+        <Russian>Вы выполнили приказ Святой Церкви и объявили войну [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. Войска поддержки от Его Преосвященства прибыли в колонии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_WAR_REFUSED</Tag>
@@ -7369,6 +7604,7 @@
         <German>Ihr habt den Befehl der Kirche verweigert, den Krieg zu erklären. Die Kirche und der König sind entrüstet, aber Eure Beziehung zu [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] hat sich verbessert.</German>
         <Italian>Avete rifiutato l'ordine della Chiesa di dichiarare guerra. La Chiesa e il vostro re sono indignati ma le vostre relazioni con [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] sono migliorate.</Italian>
         <Spanish>Has rechazado la orden de la Iglesia de declarar la guerra. La Iglesia y tu Rey están indignados pero tus relaciones con [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] han mejorado.</Spanish>
+        <Russian>Вы отказались от приказа Святой Церкви объявить войну. Кардинал и ваш Король возмущены, но ваши отношения с [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] улучшились.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_STEALING_IMMIGRANT_SUCCESSFULL</Tag>
@@ -7377,6 +7613,7 @@
         <German>Der Agent unseres Königs in [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] war erfolgreich. Der Auswanderer ist in [COLOR_HIGHLIGHT_TEXT]%s2_europe[COLOR_REVERT] eingetroffen und erwartet seinen Transport in die Neue Welt : [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]</German>
         <Italian>Il nostro agente del Re in [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] ha avuto successo. L'emigrante è arrivato in [COLOR_HIGHLIGHT_TEXT]%s2_europe[COLOR_REVERT] e attende il suo trasporto nel Nuovo Mondo: [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]</Italian>
         <Spanish>Nuestro agente del Rey en [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] ha tenido éxito. El emigrante ha llegado a [COLOR_HIGHLIGHT_TEXT]%s2_europe[COLOR_REVERT] y espera su transporte al Nuevo Mundo : [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]</Spanish>
+        <Russian>Агент нашего Короля в [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] успешно завершил работу и смог завербовать [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]. Эмигрант находится в [COLOR_HIGHLIGHT_TEXT]%s2_europe[COLOR_REVERT] в ожидании переезда в Новый Свет. </Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_STEALING_IMMIGRANT_NOTICED</Tag>
@@ -7385,105 +7622,126 @@
         <German>Der Agent unseres Königs in [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] wurde ertappt und befragt. Unsere Beziehungen zu deren Kolonien haben dadurch gelitten.</German>
         <Italian>L'agente del nostro re in [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] è stato catturato e interrogato. Le nostre relazioni con le loro colonie ne hanno sofferto.</Italian>
         <Spanish>El agente de nuestro Rey en [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] ha sido capturado e interrogado. Nuestras relaciones con sus colonias se han visto afectadas por ello.</Spanish>
+        <Russian>Агент нашего короля в [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] был задержан и подвергнут допросу. Наши отношения с их колониями пострадали.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_COLONIAL_INTERVENTION_NATIVE_WAR</Tag>
         <English>The [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] are our friends, trading partners and valuable allies. We ask you to end all hostilities against them. Otherwise we will be forced to come to their aid and stand against you. </English>
         <German>Die [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] sind unsere Freunde, Handelspartner und wertvolle Verbündete. Wir bitten euch alle Feindseligkeiten gegen sie einzustellen. Ansonsten müssen wir ihnen zu hilfe kommen und uns gegen euch stellen.</German>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] — наши друзья, торговые партнеры и ценные союзники. Мы просим вас прекратить все боевые действия против них. В противном случае мы будем вынуждены прийти им на помощь и выступить против вас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_COLONIAL_INTERVENTION_NATIVE_WAR_END</Tag>
         <English>Very well, we will do as you wish for this time. But a time will come when we ask a favour in exchange. (War ends, Attitude improved)</English>
         <German>Wir werden das Urteil Gottes über sie bringen, Euer Eminenz. (Krieg endet, Ansehen verbessert)</German>
+        <Russian>Очень хорошо, мы сделаем, как вы хотите на этот раз. Но придет время, когда мы попросим об одолжении взамен. (Война закончилась, отношения улучшились)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_COLONIAL_INTERVENTION_NATIVE_WAR_CONTINUE</Tag>
         <English>Impossible, these heathens must be purged by fire. (War continues, Attitude worsened, King and Church Attitude improved, Natives get War Support)</English>
         <German>Unmöglich, diese Heiden müssen durch Feuer gereinigt werden. (Krieg geht weit, Ansehen verschlechter, Ansehen bei König und Kirche verbessert, Ureinwohner erhalten Unterstützung)</German>
+        <Russian>Невозможно, этих язычников нужно очистить огнем. (Война продолжается, отношения ухудшились, отношение короля и церкви улучшилось, туземцы получают военную поддержку)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_COLONIES_AND_NATIVE_ALLIES_WAR</Tag>
         <English>The evil [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] are our enemies as well. We see how they conspire with the treacherous [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] to seize our hunting grounds. If you will give us [COLOR_HIGHLIGHT_TEXT]%d3 muskets[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]%d4 horses[COLOR_REVERT] we will join your war and teach both of them a lesson. (Warning: If you accept, this starts a huge war similar to the historic "French and Indian War".)</English>
         <German>Die bösartigen [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] sind auch unsere Feinde. Sie scheinen sich auch mit den verräterischen [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] zu verschwören um uns unser Jagdgründe zu stehlen. Wenn ihr uns [COLOR_HIGHLIGHT_TEXT]%d3 Musketen[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]%d4 Pferde[COLOR_REVERT] gebt, werden wir uns eurem Krieg anschließen und beiden eine Lektion erteilen. (Warnung: Bei Annahme wird ein großer Krieg ähnlich dem historischen "Siebenjährigen Krieg" gestartet.</German>
+        <Russian>Злые [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] тоже наши враги. Мы видим, как они вступают в сговор с вероломным [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT], чтобы захватить наши охотничьи угодья. Если вы дадите нам [COLOR_HIGHLIGHT_TEXT]%d3 мушкетов[COLOR_REVERT] и [COLOR_HIGHLIGHT_TEXT]%d4 лошадей[COLOR_REVERT], мы присоединимся к вашей войне и проучим их обоих. (Предупреждение: если вы согласитесь, начнется огромная война, похожая на историческую «Войну между Францией и Индейцами».)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_COLONIES_AND_NATIVE_ALLIES_WAR_REFUSE</Tag>
         <English>We appreciate your offer to support us in these dire times, but escalating this war by involving Native allies on both sides would only cause more unnecessary bloodshed. (Refuse)</English>
         <German>Wir schätzen euer Angebot uns in dieser schweren Stunde zu unterstützen, aber eine Eskalation dieses Krieges durch die Einbeziehung der verbündeten Stämme beider Seiten, würde nur zu noch mehr unnötigem Blutverießen führen. (Ablehnen) </German>
+        <Russian>Мы ценим ваше предложение поддержать нас в эти ужасные времена, но эскалация этой войны с привлечением союзников из коренных народов с обеих сторон приведет только к еще большему ненужному кровопролитию. (Отказаться)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_COLONIES_AND_NATIVE_ALLIES_WAR_ACCEPT</Tag>
         <English>Let us teach those cowards and oath breakers a lessons. Your tribe shall get the weapons and horses you requested. In exchange you might send us a few warriors as scouts. (Accept)</English>
         <German>Lasst uns diese Feiglingen und Eidbrechern eine Lektion erteilen. Euer Stamm soll die erbetenen Waffen und Pferde erhalten. Schickt uns im Austausch einige Krieger als Führer. (Annehmen) </German>
+        <Russian>Давайте проучим этих трусов и нарушителей клятвы. Ваше племя получит оружие и лошадей, которые вы просили. Взамен вы могли бы отправить нам несколько воинов в качестве разведчиков. (Принять)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COLONIAL_INTERVENTION_NATIVE_WAR_ENDED</Tag>
         <English>You have followed the request of your colonial neighbour and ended the war with [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. They owe you a favour.</English>
         <German>Ihr seid der bitte eures kolonialen Nachbars gefolgt und habt den Krieg mit [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] beendet. Sie schulden euch einen Gefallen.</German>
+        <Russian>Вы выполнили просьбу своего колониального соседа и закончили войну с [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. Они в долгу перед тобой.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COLONIAL_INTERVENTION_NATIVE_WAR_CONTINUED</Tag>
         <English>The war with [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] continues. Rumours say that the Natives get support from another colonial nation.</English>
         <German>Der Krieg mit [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] geht weiter. Es heißt die Ureinwohner bekommen Unterstützung von einer anderen Kolnialmacht.</German>
+        <Russian>Война с [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] продолжается. Ходят слухи, что туземцы получили поддержку от другой колониальной нации.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COLONIES_AND_NATIVE_ALLIES_WAR_REFUSED</Tag>
         <English>The war with [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] continues. It was wiser for us not to involve the Natives in this conflict to avoid unnecessary bloodshed.</English>
         <German>Der Krieg mit [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] geht weiter. Um unötiges Blutvergießen zu verhindern haben wir uns aber entschieden die Ureinwohner nicht in diesen Konflikt hineinzuziehen.</German>
+        <Russian>Война с [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] продолжается. Нам было разумнее не втягивать туземцев в этот конфликт, чтобы избежать ненужного кровопролития.</Russian> 
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COLONIES_AND_NATIVE_ALLIES_WAR_ACCEPTED</Tag>
         <English>We accepted the offer of [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] to join forces in a war against [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]%s3[COLOR_REVERT].</English>
         <German>Wir habe das Angebot von [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] angenommen, gemeinsam gegen [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]%s3[COLOR_REVERT] in den Krieg zu ziehen.</German>
+        <Russian>Мы приняли предложение [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] объединить усилия в войне против [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] и [COLOR_HIGHLIGHT_TEXT]%s3[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ROYAL_INTERVENTION</Tag>
         <English>We wonder why the conflict against [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] is taking so long. Do you require more troops? If yes, we are willing to send you a ship and two battalions for just [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD]. If you prefer, we could levy a tax increase of [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT] instead of the gold.</English>
         <German>Wir fragen uns warum der Konflikt mit [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] so lange andauert. Benötigt ihr mehr Truppen? Falls ja, sind wir bereit euch ein Schiff und zwei ein Battallione Truppen für lediglich [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD] zu überlassen. Als Alternative zu der Goldzahlung bieten wir euch eine Steuererhöhung von [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT] an.</German>
+        <Russian>Мы удивляемся, почему конфликт с [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] длится так долго. Вам нужно больше войск? Если да, мы готовы отправить вам корабль и несколько батальон всего за [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD]. Если хотите, вместо оплаты золотом мы можем увеличить налог на [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ROYAL_INTERVENTION_YES_GOLD</Tag>
         <English>We will gladly pay that price to receive Your Majesty's elite troops. Be assured this war will end soon. (pay gold)</English>
         <German>Wir zahlen gerne diesen Preis um die Elite Truppen Ihrer Majestät zu bekommen! Seid versichert, dieser Krieg endet bald. (Gold bezahlen)</German>
+        <Russian>Мы с радостью заплатим эту цену, чтобы получить элитные войска Вашего Величества. Будьте уверены, эта война скоро закончится. (заплатить золотом)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ROYAL_INTERVENTION_YES_TAX_INCREASE</Tag>
         <English>Yes, we really could use those troops, your Majesty. The tax increase is better for us. (tax increase)</English>
         <German>Wir können diese Truppen gut gebrauchen Eure Majestät. Aber wir würden lieber die Steuererhöhung annehmen. (Steuererhöhung)</German>
+        <Russian>Да, мы действительно могли бы использовать эти войска, Ваше Величество. Повышение налогов для нас предпочтительнее. (увеличение ставки налога)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ROYAL_INTERVENTION_NO</Tag>
         <English>Do not worry, Your Majesty, our colonies are strong enough to win this conflict without bothering you further.(King delighted)</English>
         <German>Seid unbesorgt Eure Majestät, unsere Kolonien sind stark genug diesen Konflikt zu lösen ohne euch weiter belästigen zu müssen. (König erfreut)</German>
+        <Russian>Не беспокойтесь, Ваше Величество, наши колонии достаточно сильны, чтобы победить в этом конфликте, не беспокоя вас больше. (Король в восторге)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PRIVATEERS_ACCUSSATION</Tag>
         <English>We have convincing evidence from our own agents that the [COLOR_HIGHLIGHT_TEXT]privateers[COLOR_REVERT] lurking in our waters are operating under your command. We demand that these ships withdraw to [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT] immediately.</English>
         <German>Uns wurden von unseren Agenten überzeugende Beweise zugespielt, dass die [COLOR_HIGHLIGHT_TEXT]Kaperfahrer[COLOR_REVERT], die seit kurzem unsere Hoheitsgewässer heimsuchen unter eurem Befehl handeln. Wir verlangen, dass diese Schiffe unverzüglich nach [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT] zurückberufen werden.</German>
+        <Russian>У нас есть убедительные доказательства от наших собственных агентов, что [COLOR_HIGHLIGHT_TEXT]каперы[COLOR_REVERT], скрывающиеся в наших водах, действуют под вашим командованием. Мы требуем, чтобы эти корабли немедленно ушли в [COLOR_HIGHLIGHT_TEXT]Порт-Ройал[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_PRIVATEERS_ADMIT</Tag>
         <English>We assure you this was all just a misunderstanding. We will order these ships back to Port Royal. (attitude improves)</English>
         <German>Wir versichern euch, dass es sich hierbei lediglich um ein Misverständnis handelt und werden die Schiffe nach Port Royal zurück rufen. (Beziehungen verbessern sich)</German>
+        <Russian>Уверяем вас, что все это было просто недоразумением. Мы прикажем этим кораблям вернуться в Порт-Ройял. (отношения улучшаются)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_PRIVATEERS_DENY</Tag>
         <English>We have nothing to do with these privateers. You're misinformed. These pirates must be under the command of somebody else. (attitude worsens)</English>
         <German>Wir haben nichts mit diesen Kaperfahrern zu tun. Ihr wurdet falsch informiert. Diese Kaperfahrer stehen unter dem Befehl einer andere Macht. (Beziehungen verschlechtern sich)</German>
+        <Russian>Мы не имеем никакого отношения к этим каперам. Вы дезинформированы. Эти пираты, должно быть, под командованием кого-то другого. (отношения ухудшаются)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_PRIVATEERS_WAR</Tag>
         <English>Your nation has insulted us one time too often. Consider yourself officially at war! (declare war)</English>
         <German>Eure Nation hat uns einmal zu oft beleidgt. Wir erklären euch hiermit den Krieg! (Krieg erklären)</German>
+        <Russian>Ваш народ слишком часто оскорблял нас и теперь пришел час расплаты. Считайте это официальным объявлением войны!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ROYAL_INTERVENTION_ACCEPTED</Tag>
         <English>We accepted the support of our King in our conflict against [COLOR_HIGHLIGHT_TEXT]%s1_nation[COLOR_REVERT]. His troops have arrived in [COLOR_HIGHLIGHT_TEXT]%s2_city_name[COLOR_REVERT].</English>
         <German>Wir haben die Unterstützung unseres Königs in unserem Konflikt gegen [COLOR_HIGHLIGHT_TEXT]%s1_nation[COLOR_REVERT] angenommen. Seine Truppen sind in [COLOR_HIGHLIGHT_TEXT]%s2_city_name[COLOR_REVERT] angekommen.</German>
+        <Russian>Мы приняли поддержку нашего Короля в нашем конфликте против [COLOR_HIGHLIGHT_TEXT]%s1_nation[COLOR_REVERT]. Его войска прибыли в [COLOR_HIGHLIGHT_TEXT]%s2_city_name[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ROYAL_INTERVENTION_REFUSED</Tag>
         <English>We refused the support of our King in our conflict against [COLOR_HIGHLIGHT_TEXT]%s1_nation[COLOR_REVERT]. His Majesty was delighted by our pride and determination.</English>
         <German>Wir haben die Unterstützung unseres Königs in unserem Konflikt gegen [COLOR_HIGHLIGHT_TEXT]%s1_nation[COLOR_REVERT] abgelehnt.Seine Majestät schien sehr erfreut über unseren Stolz und Willen.</German>
+        <Russian>Мы отказались от поддержки нашего короля в нашем конфликте против [COLOR_HIGHLIGHT_TEXT]%s1_nation[COLOR_REVERT]. Его Величество был восхищен нашей гордостью и решимостью.</Russian>
     </TEXT>
 </Civ4GameText>
