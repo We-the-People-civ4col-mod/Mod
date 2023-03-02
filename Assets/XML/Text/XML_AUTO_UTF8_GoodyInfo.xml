@@ -378,7 +378,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
-        <Russian>Опытный разведчик:Опытные разведчики</Russian>
+        <Russian>Закалённый разведчик:Закалённые разведчики</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ANNOUNCE_SCOUT</Tag>
