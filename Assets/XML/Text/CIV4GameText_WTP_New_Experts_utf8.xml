@@ -326,7 +326,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LOGWOOD_COLLECTOR_PEDIA</Tag>
-        <English>The logwood tree was of great economic importance in the colonial era when it was exported to Europe for dyeing fabrics. Defying Spanish territorial claims, foreign sailors cut and collected trees for shipment back to Europe. Spain responded by commissioning privateers to attack them.</English>
+        <English>The logwood tree was of great economic importance in the colonial era when it was exported to Europe for dyeing fabrics. Defying Spanish territorial claims, foreign sailors cut and collected trees for shipment back to Europe. Spain responded by commissioning privateers to attack them. Under attack from Spanish privateers, logwood cutters formed their own pirate crews to raid the Spanish. Blackbeard turned captured logwood sloops into pirate ships.[NEWLINE]When assigned to the Logwood Collector profession, the expert can cut down twice as much logwood in the same time it would take a regular colonist.</English>
         <French>xxx</French>
         <German>xxx</German>
         <Italian>xxx</Italian>
@@ -334,9 +334,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LOGWOOD_COLLECTOR_STRATEGY</Tag>
-        <English>Under attack from Spanish privateers, logwood cutters formed their own pirate crews to raid the Spanish. Blackbeard turned captured logwood sloops into pirate ships.[NEWLINE]When assigned to the Logwood Collector profession, the expert can cut down twice as much logwood in the same time it would take a regular colonist.</English>
+        <English>If a [COLOR_HIGHLIGHT_TEXT]Experienced Bluewood Collector[COLOR_REVERT] is employed in the [LINK=PROFESSION_BLOODWOOD_CUTTER]logwood cutter[\LINK] profession, the yield of [LINK=YIELD_LOGWOOD]logwood[\LINK] extraction is greater than other experts. For other types of wood ([LINK=YIELD_LUMBER]lumber[\LINK], [LINK=YIELD_HARDWOOD]hardwood[\LINK] and [LINK=YIELD_VALUABLE_WOOD]exotic wood[\LINK]), the experienced bluewood collector scores slightly higher than [COLOR_HIGHLIGHT_TEXT]free colonists[COLOR_REVERT].[PARAGRAPH:1]Expert Logwood Collector can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]taught[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
         <French>xxx</French>
-        <German>xxx</German>
+        <German>Wird ein [COLOR_HIGHLIGHT_TEXT]Erfahrener Blauholz-Sammler[COLOR_REVERT] im Beruf des [LINK=PROFESSION_BLOODWOOD_CUTTER]Holzfällers (Blauholz)[\LINK] eingesetzt, ist die Ausbeute bei der Gewinnung von [LINK=YIELD_LOGWOOD]Blauholz[\LINK] größer als bei anderen Experten. Bei anderen Holzsorten ([LINK=YIELD_LUMBER]Holz[\LINK], [LINK=YIELD_HARDWOOD]Hartholz[\LINK] und [LINK=YIELD_VALUABLE_WOOD]Edelholz[\LINK]) erzielt der erfahrene Blauholz-Sammler etwas mehr als [COLOR_HIGHLIGHT_TEXT]Freie Kolonisten[COLOR_REVERT].[PARAGRAPH:1]Erfahrene Holzfäller können in [LINK=CONCEPT_EUROPE]Europa[\LINK] angeheuert werden oder in einer Kolonie mit einer [LINK=BUILDING_SCHOOLHOUSE]Schule[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
     </TEXT>

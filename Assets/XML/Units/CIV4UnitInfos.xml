@@ -8892,6 +8892,10 @@
                     <YieldType>YIELD_HARDWOOD</YieldType>
                     <iChange>3</iChange>
                 </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_LOGWOOD</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
             </YieldChanges>
             <BonusYieldChanges>
                 <BonusYieldChange>
@@ -8905,6 +8909,10 @@
                 <BonusYieldChange>
                     <YieldType>YIELD_HARDWOOD</YieldType>
                     <iChange>2</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_LOGWOOD</YieldType>
+                    <iChange>1</iChange>
                 </BonusYieldChange>
             </BonusYieldChanges>
             <bLandYieldChanges>1</bLandYieldChanges>
@@ -14104,6 +14112,10 @@
                     <YieldType>YIELD_HARDWOOD</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_VALUABLE_WOOD</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
             </YieldChanges>
             <BonusYieldChanges>
                 <BonusYieldChange>
@@ -14116,6 +14128,10 @@
                 </BonusYieldChange>
                 <BonusYieldChange>
                     <YieldType>YIELD_HARDWOOD</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+				<BonusYieldChange>
+                    <YieldType>YIELD_VALUABLE_WOOD</YieldType>
                     <iChange>1</iChange>
                 </BonusYieldChange>
             </BonusYieldChanges>
