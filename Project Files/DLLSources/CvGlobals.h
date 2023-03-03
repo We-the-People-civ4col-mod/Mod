@@ -165,6 +165,7 @@ public:
 #ifdef _USRDLL
 	CvMap& getMapINLINE() { return *m_map; }				// inlined for perf reasons, do not use outside of dll
 	CvGameAI& getGameINLINE() { return *m_game; }			// inlined for perf reasons, do not use outside of dll
+	const CvGameAI& getGameConst() const { return *m_game; }
 #endif
 	DllExport CvMap& getMap();
 	DllExport CvGameAI& getGame();
@@ -996,6 +997,8 @@ public:
 
 	void setCityCatchmentRadius(int iSetting);
 
+	bool isMainThread() const;
+
 	ProfilerManager& getProfiler() { return m_ProfileManager; }
 
 protected:
@@ -1512,6 +1515,8 @@ protected:
 	bool m_bUSE_GET_EXPERIENCE_NEEDED_CALLBACK;
 	bool m_bUSE_DO_COMBAT_CALLBACK;
 	// K-Mod \ RaR end
+
+	const DWORD m_iThreadID;
 
 	// DLL interface
 	CvDLLUtilityIFaceBase* m_pDLL;

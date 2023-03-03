@@ -304,9 +304,11 @@ public:
 	CvDeal* nextDeal(int *pIterIdx, bool bRev=false);
 
 	CvRandom& getMapRand();
+	const CvRandom& getMapRand() const;
 	int getMapRandNum(int iNum, const char* pszLog);
 
 	CvRandom& getSorenRand();
+	const CvRandom& getSorenRand() const;
 	int getSorenRandNum(int iNum, const char* pszLog);
 
 	DllExport int calculateSyncChecksum(CvString* pLogString);

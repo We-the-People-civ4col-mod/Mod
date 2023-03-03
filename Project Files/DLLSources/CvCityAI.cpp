@@ -3403,7 +3403,7 @@ CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly)
 	FindBestJob fbj(GET_PLAYER(getOwnerINLINE()).m_validCityJobProfessions, *this, kUnit, bIndoorOnly);
 
 	// Get the rng state prior to starting a concurrent operation
-	unsigned long rngStatePrior = GC.getGameINLINE().getSorenRand().peek();
+	unsigned long rngStatePrior = GC.getGameConst().getSorenRand().peek();
 
 	// TODO: Determine if 8 bits are enough
 	// TODO: Split in two ranges to better balance the workload (plot vs. building workers) ?
@@ -3411,7 +3411,7 @@ CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly)
 	tbb::parallel_reduce(tbb::blocked_range<size_t>(0, kValidCityJobs.size()), fbj, tbb::auto_partitioner());
 
 	// Assert that the rng state is the same after the concurrent operation has completed
-	unsigned long rngStatePost = GC.getGameINLINE().getSorenRand().peek();
+	unsigned long rngStatePost = GC.getGameConst().getSorenRand().peek();
 
 	FAssertMsg(rngStatePrior == rngStatePost, "It looks like at least one random number has been generated between the invokation of tbb::* !");
 

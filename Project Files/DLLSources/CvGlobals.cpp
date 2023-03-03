@@ -370,6 +370,7 @@ m_iUSE_ON_UPDATE_CALLBACK(0),
 m_iUSE_ON_UNIT_CREATED_CALLBACK(0),
 m_iUSE_ON_UNIT_LOST_CALLBACK(0),
 // K-Mod \ RaR
+m_iThreadID(GetCurrentThreadId()),
 m_bUSE_AI_UNIT_UPDATE_CALLBACK(false),
 m_bUSE_AI_DO_DIPLO_CALLBACK(false),
 m_bUSE_AI_DO_WAR_CALLBACK(false),
@@ -3145,3 +3146,8 @@ int CvGlobals::getSymbolID(FontSymbols eSymbol) const
 	return m_aiGameFontCustomSymbolID[eSymbol];
 }
 /// GameFont XML control - end - Nightinggale
+
+bool CvGlobals::isMainThread() const
+{
+	return m_iThreadID == GetCurrentThreadId();
+}

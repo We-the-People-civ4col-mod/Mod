@@ -6326,7 +6326,13 @@ CvDeal* CvGame::nextDeal(int *pIterIdx, bool bRev)
 }
 
 
- CvRandom& CvGame::getMapRand()
+CvRandom& CvGame::getMapRand()
+{
+	FAssertMsg(GC.isMainThread(), "Using non-const random while multi threaded (causes OOS)");
+	return m_mapRand;
+}
+
+const CvRandom& CvGame::getMapRand() const
 {
 	return m_mapRand;
 }
@@ -6334,11 +6340,18 @@ CvDeal* CvGame::nextDeal(int *pIterIdx, bool bRev)
 
 int CvGame::getMapRandNum(int iNum, const char* pszLog)
 {
+	FAssertMsg(GC.isMainThread(), "Using non-const random while multi threaded (causes OOS)");
 	return m_mapRand.get(iNum, pszLog);
 }
 
 
 CvRandom& CvGame::getSorenRand()
+{
+	FAssertMsg(GC.isMainThread(), "Using non-const random while multi threaded (causes OOS)");
+	return m_sorenRand;
+}
+
+const CvRandom& CvGame::getSorenRand() const
 {
 	return m_sorenRand;
 }
