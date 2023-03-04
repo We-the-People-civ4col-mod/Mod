@@ -15,6 +15,7 @@
 #define RANDOM_SHIFT  (16)
 
 CvRandom::CvRandom()
+	: m_bSynced(false)
 {
 #ifdef WITH_RANDOM_LOGGING
 	m_bIsSorenRand = false;
@@ -31,7 +32,8 @@ CvRandom::~CvRandom()
 bool CvRandom::isSorenRand() const
 {
 	// avoid crashing during init
-	if (!GC.IsGraphicsInitialized() || gDLL->isGameInitializing())
+	// also don't log random stuff, which won't cause desyncs
+	if (!m_bSynced || !GC.IsGraphicsInitialized() || gDLL->isGameInitializing())
 	{
 		return false;
 	}
@@ -56,11 +58,34 @@ void CvRandom::setSorenRand()
 #endif
 }
 
-void CvRandom::writeLog(const CvString& szLog) const
+void CvRandom::writeLog(const CvString& szLog)
 {
+#if GLOBAL_DEFINE_USE_OOS_LOGGING
+	const CvGame& kGame = GC.getGameINLINE();
+	if (!kGame.isNetworkMultiPlayer() || !kGame.isFinalInitialized() || !GC.getRandLogging())
+	{
+		return;
+	}
 	CvString filename;
 	filename.append(CvString::format("Random Player %d.log", GC.getGameINLINE().getActivePlayer()));
 	gDLL->logMsg(filename, szLog);
+#endif
+}
+
+void CvRandom::writeLog(const char* szLog, int iData)
+{
+#if GLOBAL_DEFINE_USE_OOS_LOGGING
+	const CvGame& kGame = GC.getGameINLINE();
+	if (!kGame.isNetworkMultiPlayer() || !kGame.isFinalInitialized() || !GC.getRandLogging())
+	{
+		return;
+	}
+	CvString filename;
+	filename.append(CvString::format("Random Player %d.log", GC.getGameINLINE().getActivePlayer()));
+	CvString szText = szLog;
+	szText.append(CvString::format(" %d", iData));
+	gDLL->logMsg(filename, szText.c_str());
+#endif
 }
 
 
@@ -105,6 +130,8 @@ void CvRandom::reset(unsigned long ulSeed)
 
 unsigned short CvRandom::get(unsigned short usNum, const TCHAR* pszLog)
 {
+	FAssertMsg(!m_bSynced || GC.isMainThread(), "Random called outside main thread");
+
 	if (pszLog != NULL)
 	{
 		if (GC.getLogging() && GC.getRandLogging())
@@ -308,4 +335,9 @@ void CvRandom::write(CvSavegameWriter writer)
 unsigned long CvRandom::peek() const
 {
 	return ((RANDOM_A * m_ulRandomSeed) + RANDOM_C);
+}
+
+void CvRandom::setSyncedStatus(bool bNewSetting)
+{
+	m_bSynced = bNewSetting;
 }

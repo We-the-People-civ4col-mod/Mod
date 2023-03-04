@@ -2140,6 +2140,7 @@ const TCHAR* CvPlayer::getUnitButton(UnitTypes eUnit) const
 
 void CvPlayer::doTurn()
 {
+	OOS_LOG("CvPlayer::doTurn start", getID());
 	PROFILE_FUNC();
 
 	EXTRA_POWER_CHECK
@@ -2308,6 +2309,7 @@ void CvPlayer::doTurn()
 	EXTRA_POWER_CHECK
 
 	doEvents();
+	OOS_LOG("CvPlayer::doEvents end", getID());
 
 	EXTRA_POWER_CHECK
 
@@ -2337,6 +2339,8 @@ void CvPlayer::doTurn()
 	// keep the vanilla checkPower outside of EXTRA_POWER_CHECK. This way we will be informed if power is broken even without spending time on extra checks.
 	FAssert(checkPower(false));
 	FAssert(checkPopulation());
+
+	OOS_LOG("CvPlayer::doTurn end", getID());
 }
 
 /** NBMOD TAX **/
@@ -14235,6 +14239,7 @@ bool CvPlayer::canDoEvent(EventTypes eEvent, const EventTriggeredData& kTriggere
 
 void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdateTrigger)
 {
+	OOS_LOG("Trigger event", getID() + (1000 * iEventTriggeredId));
 	FAssert(eEvent != NO_EVENT);
 
 	int iGrowthPercent = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
@@ -14849,6 +14854,7 @@ int CvPlayer::getEventCost(EventTypes eEvent, PlayerTypes eOtherPlayer, bool bRa
 
 void CvPlayer::doEvents()
 {
+	OOS_LOG("CvPlayer::doEvents start", getID());
 	MOD_PROFILE("CvPlayer::doEvents");
 
 	if (GC.getGameINLINE().isOption(GAMEOPTION_NO_EVENTS))
@@ -15077,11 +15083,13 @@ bool CvPlayer::checkExpireEvent(EventTypes eEvent, const EventTriggeredData& kTr
 
 void CvPlayer::trigger(EventTriggerTypes eTrigger)
 {
+	OOS_LOG("Trigger event", getID() + (1000 * eTrigger));
 	initTriggeredData(eTrigger, true);
 }
 
 void CvPlayer::trigger(const EventTriggeredData& kData)
 {
+	OOS_LOG("Trigger event", getID() + (1000 * kData.getID()));
 	if (isHuman())
 	{
 		CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_EVENT, kData.getID());
@@ -19002,6 +19010,7 @@ bool CvPlayer::isProfessionValid(ProfessionTypes eProfession, UnitTypes eUnit) c
 
 void CvPlayer::doPrices()
 {
+	OOS_LOG("CvPlayer::doPrices start", getID());
 	if (isEurope())
 	{
 		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
@@ -19155,6 +19164,7 @@ void CvPlayer::doPrices()
 // R&R, ray, Africa
 void CvPlayer::doAfricaPrices()
 {
+	OOS_LOG("CvPlayer::doAfricaPrices start", getID());
 	if (isEurope())
 	{
 		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
@@ -19189,6 +19199,7 @@ void CvPlayer::doAfricaPrices()
 // R&R, ray, Port Royal
 void CvPlayer::doPortRoyalPrices()
 {
+	OOS_LOG("CvPlayer::DoPortRoyalPrices start", getID());
 	if (isEurope())
 	{
 		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)

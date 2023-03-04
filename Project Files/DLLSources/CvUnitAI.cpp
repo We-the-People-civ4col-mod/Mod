@@ -12026,6 +12026,8 @@ bool CvUnitAI::AI_explore(bool bFavorOpenBorders)
 // Returns true if a mission was pushed...
 bool CvUnitAI::AI_exploreRange(int iRange)
 {
+	OOS_LOG("CvUnitAI::AI_exploreRange start", getID());
+
 	PROFILE_FUNC();
 
 	if (canSpeakWithChief(plot()))
@@ -12080,6 +12082,8 @@ bool CvUnitAI::AI_exploreRange(int iRange)
 			}
 		}
 	}
+
+	OOS_LOG("CvUnitAI::AI_exploreRange end", getID());
 	
 	if (pBestPlot != NULL)
 	{

@@ -37,6 +37,8 @@
 CvGame::CvGame()
 {
 	m_sorenRand.setSorenRand();
+	m_sorenRand.setSyncedStatus(true);
+	m_mapRand.setSyncedStatus(true);
 
 	m_pReplayInfo = NULL;
 

@@ -519,6 +519,8 @@ void CvCity::kill()
 
 void CvCity::doTurn()
 {
+	OOS_LOG("CvCity::doTurn start", getID());
+
 	PROFILE_FUNC();
 
 	CvPlot* pLoopPlot;
@@ -583,6 +585,7 @@ void CvCity::doTurn()
 			doCityCrime();
 			// WTP, ray, Crime and Law - END
 			checkForDomesticDemandEvent(); // WTP, ray Domestic Market Events - START
+			OOS_LOG("checkForDomesticDemandEvent end", getID());
 		}
 	}
 
@@ -678,6 +681,8 @@ void CvCity::doTurn()
 
 	// ONEVENT - Do turn
 	gDLL->getEventReporterIFace()->cityDoTurn(this, getOwnerINLINE());
+
+	OOS_LOG("CvCity::doTurn end", getID());
 }
 
 
@@ -7165,6 +7170,7 @@ const std::vector< std::pair<float, float> >& CvCity::getWallOverridePoints() co
 
 void CvCity::doGrowth()
 {
+	OOS_LOG("CvCity::doGrowth start", getID());
 	int iDiff;
 
 	if (GC.getUSE_DO_GROWTH_CALLBACK()) // K-Mod. block unused python callbacks
@@ -7307,6 +7313,7 @@ void CvCity::doGrowth()
 
 void CvCity::doYields()
 {
+	OOS_LOG("CvCity::doYields start", getID());
 	int aiYields[NUM_YIELD_TYPES];
 	calculateNetYields(aiYields, NULL, NULL, true);
 
@@ -7593,6 +7600,7 @@ void CvCity::addTempHurryYieldsForProduction()
 
 void CvCity::doCulture()
 {
+	OOS_LOG("CvCity::doCulture start", getID());
 	if (GC.getUSE_DO_CULTURE_CALLBACK()) // K-Mod. block unused python callbacks
 	{
 		CyCity* pyCity = new CyCity(this);
@@ -7626,6 +7634,7 @@ void CvCity::doCulture()
 
 void CvCity::doPlotCulture(bool bUpdate, PlayerTypes ePlayer, int iCultureRate)
 {
+	OOS_LOG("CvCity::doPlotCulture start", getID());
 	CvPlot* pLoopPlot;
 	int iDX, iDY;
 	int iCultureRange;
@@ -7813,6 +7822,7 @@ void CvCity::doCheat(bool bAlt, bool bShift, bool bCtrl)
 
 void CvCity::doProduction(bool bAllowNoProduction)
 {
+	OOS_LOG("CvCity::doProduction start", getID());
 	//Move yields for hurry production from temp storage to city storage
 	addTempHurryYieldsForProduction();
 
@@ -10076,6 +10086,8 @@ int CvCity::getImprovementStorageModifierForCity() const
 // WTP, ray, Happiness - START
 void CvCity::doCityHappiness()
 {
+	OOS_LOG("doCityHappiness", getID());
+
 	// we do not do this for every tiny village
 	int iMinPopulation = GC.getMIN_POP_NEG_HAPPINESS() * 2;
 	if (getPopulation() < iMinPopulation)
@@ -10140,6 +10152,8 @@ void CvCity::doCityHappiness()
 
 void CvCity::doCityUnHappiness()
 {
+	OOS_LOG("doCityUnHappiness", getID());
+
 	// we do not do this for AI
 	if(!isHuman())
 	{
@@ -10274,6 +10288,8 @@ void CvCity::doCityCrime()
 // WTP, ray Domestic Market Events - START
 void CvCity::checkForDomesticDemandEvent()
 {
+	OOS_LOG("checkForDomesticDemandEvent", getID());
+
 	// ok, let us check all conditions where we do nothing and exit
 
 	// if the feature is not activated, do nothing
