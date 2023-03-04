@@ -100,6 +100,30 @@
             <Description>TXT_KEY_HINT_37</Description>
         </HintInfo>
         <HintInfo>
+            <Description>TXT_KEY_HINT_38</Description>
+        </HintInfo>
+        <HintInfo>
+            <Description>TXT_KEY_HINT_39</Description>
+        </HintInfo>
+        <HintInfo>
+            <Description>TXT_KEY_HINT_40</Description>
+        </HintInfo>
+        <HintInfo>
+            <Description>TXT_KEY_HINT_41</Description>
+        </HintInfo>
+        <HintInfo>
+            <Description>TXT_KEY_HINT_43</Description>
+        </HintInfo>
+        <HintInfo>
+            <Description>TXT_KEY_HINT_45</Description>
+        </HintInfo>
+        <HintInfo>
+            <Description>TXT_KEY_HINT_46</Description>
+        </HintInfo>
+        <HintInfo>
+            <Description>TXT_KEY_HINT_48</Description>
+        </HintInfo>
+        <HintInfo>
             <Description>TXT_KEY_QUOTE_1</Description>
         </HintInfo>
         <HintInfo>
@@ -251,6 +275,15 @@
         </HintInfo>
         <HintInfo>
             <Description>TXT_KEY_QUOTE_51</Description>
+        </HintInfo>
+        <HintInfo>
+            <Description>TXT_KEY_QUOTE_52</Description>
+        </HintInfo>
+        <HintInfo>
+            <Description>TXT_KEY_QUOTE_53</Description>
+        </HintInfo>
+        <HintInfo>
+            <Description>TXT_KEY_QUOTE_54</Description>
         </HintInfo>
     </HintInfos>
 </Civ4Hints>
