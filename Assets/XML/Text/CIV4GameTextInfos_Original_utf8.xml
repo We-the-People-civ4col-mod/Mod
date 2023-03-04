@@ -3283,7 +3283,7 @@
         <German>%s3_CityName : Euer Pionier hat einen %s1_FeatName gerodet. %d2_Num%F4 konnten eingelagert werden.</German>
         <Italian>Sgombrando una casella di %s1_FeatName si è creata %d2_Num%F4 per %s3_CityName.</Italian>
         <Spanish>Despejar [NUM1:el:la:los:las] %s1_FeatName ha generado %d2_Num%F4 para %s3_CityName.</Spanish>
-        <Russian>%s3_CityName : Ваш первопроходец очистил %s1_FeatName. %d2_Num%F4 было передано на склад.</Russian>
+        <Russian>[COLOR_SELECTED_TEXT]%s3_CityName[COLOR_REVERT] : Ваш первопроходец очистил %s1_FeatName. %d2_Num%F4 было передано на склад.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_FEATURE_GROWN_NEAR_CITY</Tag>
@@ -3292,7 +3292,7 @@
         <German>Ein %s1_FeatName ist nahe der Stadt [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] entstanden.</German>
         <Italian>Vicino a [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] [NUM1:è sorto:è sorta] %s1_FeatName</Italian>
         <Spanish>Ha aparecido [NUM1:un:una:unos:unas] %s1_FeatName cerca de [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</Spanish>
-        <Russian>%s1_FeatName вырос рядом c [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</Russian>
+        <Russian>[COLOR_FONT_CREAM]%s1_FeatName[COLOR_REVERT] вырос рядом c [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_DISCOVERED_NEW_RESOURCE</Tag>

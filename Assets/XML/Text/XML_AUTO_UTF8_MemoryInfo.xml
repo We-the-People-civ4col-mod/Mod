@@ -7,6 +7,7 @@
         <German>"Ihr habt zugestimmt, uns in Kriegszeiten zur Seite zu stehen."</German>
         <Italian>"Hai accettato di aiutarci in tempi di guerra."</Italian>
         <Spanish>"Accedisteis a venir en nuestra ayuda en tiempos de guerra."</Spanish>
+        <Russian>"Вы согласились прийти нам на помощь в военное время."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_ACCEPTED_STOP_TRADING</Tag>
@@ -15,6 +16,7 @@
         <German>"Ihr habt zugestimmt, Eure Handelsbeziehungen mit unserem Erzfeind einzustellen."</German>
         <Italian>"Avete accettato di interrompere il commercio con il nostro peggior nemico."</Italian>
         <Spanish>"Accedisteis a dejar de comerciar con nuestro peor enemigo."</Spanish>
+        <Russian>"Вы согласились прекратить торговать с нашим злейшим врагом."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_ACCEPT_DEMAND</Tag>
@@ -23,6 +25,7 @@
         <German>"Ihr habt uns Tribut gezollt."</German>
         <Italian>"Ci hai donato dei tributi."</Italian>
         <Spanish>"Nos disteis un tributo."</Spanish>
+        <Russian>"Вы отдали то, что от вас требовали."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_CANCELLED_OPEN_BORDERS</Tag>
@@ -31,6 +34,7 @@
         <German>"Ihr habt unsere Grenzöffnungsvereinbarung aufgehoben!"</German>
         <Italian>"Hai annullato il nostro accordo di diritto di passaggio!"</Italian>
         <Spanish>"¡Cancelasteis nuestro acuerdo de apertura de fronteras!"</Spanish>
+        <Russian>"Вы отменили наше соглашение об открытых границах!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_DECLARED_WAR</Tag>
@@ -39,6 +43,7 @@
         <German>"Ihr habt uns den Krieg erklärt!"</German>
         <Italian>"Ci hai dichiarato guerra!"</Italian>
         <Spanish>"¡Nos declarasteis la guerra!"</Spanish>
+        <Russian>"Вы объявили нам войну!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_DECLARED_WAR_ON_FRIEND</Tag>
@@ -47,6 +52,7 @@
         <German>"Ihr habt unseren Freunden den Krieg erklärt!"</German>
         <Italian>"Hai dichiarato guerra a un nostro amico!"</Italian>
         <Spanish>"¡Declarasteis la guerra a nuestros amigos!"</Spanish>
+        <Russian>"Вы объявили войну нашим друзьям!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_DENIED_JOIN_WAR</Tag>
@@ -55,6 +61,7 @@
         <German>"Ihr habt Euch geweigert, uns in Kriegszeiten zur Seite zu stehen!"</German>
         <Italian>"Vi siete rifiutati di aiutarci durante la guerra."</Italian>
         <Spanish>"¡Os negasteis a ayudarnos en tiempos de guerra!"</Spanish>
+        <Russian>"Вы отказались помочь нам во время войны!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_DENIED_STOP_TRADING</Tag>
@@ -63,6 +70,7 @@
         <German>"Ihr habt Euch geweigert, Eure Handelsbeziehungen mit unserem Erzfeind einzustellen!"</German>
         <Italian>"Vi siete rifiutati di interrompere il commercio con il nostro peggior nemico."</Italian>
         <Spanish>"Os negasteis a dejar de comerciar con nuestro peor enemigo."</Spanish>
+        <Russian>"Вы отказались прекратить торговлю с нашим злейшим врагом."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_EVENT_BAD_TO_US</Tag>
@@ -71,6 +79,7 @@
         <German>"Frühere Geschehnisse haben gezeigt, dass Ihr uns nicht wohl gesonnen seid."</German>
         <Italian>"Gli eventi passati ci hanno dimostrato la tua buona natura."</Italian>
         <Spanish>"Los acontecimientos pasados nos han demostrado vuestra maldad."</Spanish>
+        <Russian>"Прошлые события показали нам твою истинную сущность."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_EVENT_GOOD_TO_US</Tag>
@@ -79,6 +88,7 @@
         <German>"Frühere Geschehnisse haben gezeigt, dass Ihr uns wohl gesonnen seid."</German>
         <Italian>"Gli eventi passati ci hanno dimostrato la tua buona natura."</Italian>
         <Spanish>"Los acontecimientos pasados nos han demostrado vuestra bondad."</Spanish>
+        <Russian>"Прошлые события показали нам ваш добрый характер."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_GIVE_HELP</Tag>
@@ -87,6 +97,7 @@
         <German>"Ihr habt uns geholfen."</German>
         <Italian>"Ci hai aiutati."</Italian>
         <Spanish>"Nos ayudasteis."</Spanish>
+        <Russian>"Вы помогли нам."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_HIRED_TRADE_EMBARGO</Tag>
@@ -95,6 +106,7 @@
         <German>"Ihr habt ein Handelsembargo gegen uns ausgehandelt!"</German>
         <Italian>"Hai negoziato un embargo contro di noi!"</Italian>
         <Spanish>"¡Habéis negociado un embargo comercial contra nosotros!"</Spanish>
+        <Russian>"Вы договорились о торговом эмбарго против нас!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_HIRED_WAR_ALLY</Tag>
@@ -103,6 +115,7 @@
         <German>"Ihr habt einen Kriegsverbündeten gegen uns aufgebracht!"</German>
         <Italian>"Hai portato in guerra un alleato contro di noi!"</Italian>
         <Spanish>"¡Habéis traído a un aliado de guerra contra nosotros!"</Spanish>
+        <Russian>"Вы заключили военный союз против нас!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_LIBERATED_CITIES</Tag>
@@ -111,6 +124,7 @@
         <German>"Ihr habt unsere Siedlungen befreit!"</German>
         <Italian>"Hai liberato i nostri insediamenti"</Italian>
         <Spanish>"Habéis liberado nuestros asentamientos"</Spanish>
+        <Russian>"Вы освободили наши поселения!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_MADE_DEMAND</Tag>
@@ -137,6 +151,7 @@
         <German>"Eure Missionare haben unsere Geister beleidigt!"</German>
         <Italian>"I tuoi missionari hanno insultato i nostri Spiriti!"</Italian>
         <Spanish>"¡Tus misioneros han insultado a nuestros antepasados!"</Spanish>
+        <Russian>"Ваши миссионеры оскорбили наших Духов!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_RAZED_CITY</Tag>
@@ -145,6 +160,7 @@
         <German>"Ihr habt eine unserer Siedlungen zerstört!"</German>
         <Italian>"Hai razziato uno dei nostri insediamenti!"</Italian>
         <Spanish>"¡Habéis arrasado uno de nuestros asentamientos!"</Spanish>
+        <Russian>"Вы разрушили одно из наших поселений!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_REFUSED_HELP</Tag>
@@ -153,6 +169,7 @@
         <German>"Ihr habt uns Eure Hilfe verwehrt!"</German>
         <Italian>"Avete rifiutato di aiutarci!"</Italian>
         <Spanish>"¡Os negasteis a ayudarnos!"</Spanish>
+        <Russian>"Вы отказались помочь нам!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_REFUSED_TAX</Tag>
@@ -161,6 +178,7 @@
         <German>"Ihr habt Euch geweigert, meinen Ring zu küssen!"</German>
         <Italian>"Ti sei rifiutato di baciarmi l'anello!"</Italian>
         <Spanish>"¡Os negasteis a besar mi anillo!"</Spanish>
+        <Russian>"Ты отказался поцеловать мое кольцо!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_REJECTED_DEMAND</Tag>
@@ -169,6 +187,7 @@
         <German>"Ihr habt Euch geweigert, uns Tribut zu zollen!"</German>
         <Italian>"Avete rifiutato di donarci dei tributi!"</Italian>
         <Spanish>"¡Os negasteis a darnos un tributo!"</Spanish>
+        <Russian>"Вы отказались платить нам дань!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_REVENGE_TAKEN</Tag>
@@ -177,6 +196,7 @@
         <German>"Wir haben Rache genommen."</German>
         <Italian>"Abbiamo avuto la nostra vendetta."</Italian>
         <Spanish>"Nos hemos vengado."</Spanish>
+        <Russian>"Мы отомстили."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_STOPPED_TRADING</Tag>
@@ -185,6 +205,7 @@
         <German>"Ihr habt Eure Handelsbeziehungen mit uns eingestellt."</German>
         <Italian>"Hai smesso di commerciare con noi."</Italian>
         <Spanish>"Dejasteis de comerciar con nosotros."</Spanish>
+        <Russian>"Вы перестали торговать с нами."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_STOPPED_TRADING_RECENT</Tag>
@@ -193,5 +214,6 @@
         <German>"Ihr habt kürzlich Eure Handelsbeziehungen mit uns eingestellt!"</German>
         <Italian>"Di recente hai interrotto il commercio con noi!"</Italian>
         <Spanish>"Hace poco dejasteis de comerciar con nosotros."</Spanish>
+        <Russian>"Недавно вы прекратили торговлю с нами!"</Russian>
     </TEXT>
 </Civ4GameText>

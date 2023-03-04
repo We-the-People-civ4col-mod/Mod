@@ -678,7 +678,7 @@
         <German>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Wütende %s1:3_civ_adjective Kolonisten zerstören aus Protest alle %s3_yield-Lieferungen, da sie hohe Steuern zahlen müssen, aber nicht im Parlament vertreten sind !</German>
         <Italian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Bellicosi coloni %s1_civ_adjective hanno distrutto tutte le partite di %s3_yield per protestare con l'eccessiva tassazione senza rappresentanza !</Italian>
         <Spanish>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]¡Los enojados colonos %s1:3_civ_adjective destruyen todos los cargamentos de %s3_yield en protesta por los impuestos excesivos sin representantes !</Spanish>
-        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Разгневанные колонисты %s1_civ_adjective уничтожают все запасы %s3_yield в знак протеста против чрезмерного налогообложения без представительства !</Russian>
+        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Разгневанные %s1_civ_adjective уничтожают все запасы [COLOR_FONT_CREAM]%s3_yield[COLOR_REVERT] в знак протеста против чрезмерного налогообложения без представительства !</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODS_LOST</Tag>
@@ -872,7 +872,7 @@
         <Tag>TXT_KEY_TRADE_POST_ESTABLISHED</Tag>
         <English>A [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] trading post has been established in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
         <German>Ein [COLOR_HIGHLIGHT_TEXT]%s2:3_civ_adjective[COLOR_REVERT] Handelsposten wurde in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] eingerichtet.</German>
-        <Russian>Торговый пост [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] был открыт в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] открыли торговый пост в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_POST_REMOVED</Tag>

@@ -1371,7 +1371,7 @@
         <English>%s2_city : A striving citizen will finish his education at the %s3_building in %d1_Num [NUM1:turn:turns].</English>
         <French>%s2_city : Un étudiant va bientôt achever sa formation dans l'%s3_building : %d1_Num [NUM1:turn:turns].</French>
         <German>%s2_city : In %d1 [NUM1:Runde:Runden] wird ein strebsamer Bürger an der %s3_building seine Ausbildung beenden.</German>
-        <Russian>%s2_city : Способный горожанин закончит обучение в %s3_building через %d1_Num [NUM1:ход:хода].</Russian>
+        <Russian>[COLOR_SELECTED_TEXT]%s2_city :[COLOR_REVERT] Способный горожанин закончит обучение в [COLOR_FONT_CREAM]%s3_building[COLOR_REVERT] через %d1_Num [NUM1:ход:хода].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_EXPERT</Tag>

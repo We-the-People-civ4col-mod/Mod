@@ -4339,7 +4339,7 @@
         <German>Das [COLOR_HIGHLIGHT_TEXT]%s1:3[COLOR_REVERT] Volk bedroht den Frieden dieser Welt. Wir müssen es in die Schranken weisen, bevor Schlimmeres passiert. Seid Ihr dabei, [CT_NAME]?</German>
         <Italian>I [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] sono un pericolo per tutti. Unisciti a noi e li toglieremo di mezzo.</Italian>
         <Spanish>[NUM1:El:La:Los:Las] [COLOR_HIGHLIGHT_TEXT]%s1:3[COLOR_REVERT] son una amenaza para todos nosotros. Uníos a nosotros para borrarlos del mapa.</Spanish>
-        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1:3[COLOR_REVERT] люди угрожают спокойствию во всем мире. Мы должны остановить их, пока не случилось что-то плохое. Ты с нами, [CT_NAME]?</Russian>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1:3[COLOR_REVERT] угрожают спокойствию во всем мире. Мы должны остановить их, пока не случилось что-то плохое. Ты с нами, [CT_NAME]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_STOP_TRADING_1</Tag>
@@ -4501,7 +4501,7 @@
         <German>Bleichgesicht, ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Häuptling und Medizinmann der [COLOR_HIGHLIGHT_TEXT]Sioux[COLOR_REVERT]. Der Büffel ist meinem Volk heilig. Sein Fleisch nährt uns, sein Fell wärmt uns, und seine Sehnen dienen uns als Garn. Aus seinen Rippen bauen wir im Winter Schlitten. Seinen Kindern ziehen wir die zarte Haut ab, um unsere eigenen Kinder darin zu windeln. Verschont unsere Büffel bei der Jagd, und wir werden Euch verschonen.</German>
         <Italian>Saluti, sono [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] della civiltà [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Sediamoci davanti al fuoco e parliamo.</Italian>
         <Spanish>Saludos. Soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], de los [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Sentémonos alrededor de la hoguera y hablemos.</Spanish>
-        <Russian>Бледнолицый, я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], вождь и знахарь племени [COLOR_HIGHLIGHT_TEXT]Сиу[COLOR_REVERT]. Бизон является священным для моего народа. Его мясо питает нас, его шкура согревает нас, а его сухожилия служат нам пряжей. Из его ребер зимой строим санки. Мы сдираем с его детей нежную кожу, чтобы пеленать в нее наших собственных детей. Пощадите нашего буйвола на охоте и мы пощадим вас.</Russian>
+        <Russian>Бледнолицый, я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], вождь и знахарь племени [COLOR_HIGHLIGHT_TEXT]Сиу[COLOR_REVERT]. Бизон является священным для моего народа. Его мясо питает нас, его шкура согревает нас, а его сухожилия служат нам пряжей. Из его рёбер зимой мы строим санки. Мы сдираем с его детей нежную кожу, чтобы пеленать в нее наших собственных детей. Пощадите его на охоте и мы пощадим вас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_CHIEF_JOSEPH_1</Tag>
@@ -6137,7 +6137,7 @@
         <German>Ihr seid ein kluger Mann, Eure Majestät! Ich aber auch.</German>
         <Italian>Lei è un uomo saggio, Vostra Maestà! Lo sono anch'io.</Italian>
         <Spanish>Es usted un hombre sabio, Su Majestad. Yo también lo soy.</Spanish>
-        <Russian>Вы мудрый человек, Ваше Величество! Я тоже...</Russian>
+        <Russian>Вы мудрый человек, Ваше Величество! Но и я умею считать...</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KISS_PINKY_1</Tag>
@@ -6308,7 +6308,7 @@
         <German>Lebt wohl! Ich habe mir übrigens noch ein paar der frittierten Otterschwänze als Wegzehrung eingesteckt.</German>
         <Italian>Addio! A proposito, ho ancora qualche coda di lontra fritta come spuntino.</Italian>
         <Spanish>¡Adiós! Por cierto, todavía tengo unas cuantas colas de nutria fritas como aperitivo.</Spanish>
-        <Russian>Я здесь, потому что я жажду приключений. Я когда-то работал в банке. Я был организатором займа. Теперь серебро я использую для пуль.</Russian>
+        <Russian>Я здесь, потому что я жажду приключений. Я когда-то работал в банке, был организатором займа. И довольно скоро мне это все наскучило. В ваших краях можно погибнуть от чего угодно, но только не от скуки. Меня ждут приключения, прощайте!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_14</Tag>
