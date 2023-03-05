@@ -5685,7 +5685,7 @@
         <German>Nehmt %d1_yield_amount%F2_yield_icon als Geschenk, Menschen von [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT], als Zeichen der Freundschaft zwischen unseren Völkern.</German>
         <Italian>Prendete %d1_yield_amount%F2_yield_icon come regalo, gente di [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT], in segno di amicizia tra i nostri popoli.</Italian>
         <Spanish>Tomad %d1_yield_amount%F2_yield_icon como regalo, gente de [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT], como muestra de amistad entre nuestros pueblos.</Spanish>
-        <Russian>Возьмите %d1_yield_amount%F2_yield_icon в подарок, жители [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT], в знак дружбы между нашими народами.</Russian>
+        <Russian>Белые братья из [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT], примите в дар %d1_yield_amount%F2_yield_icon, как знак дружбы между нашими народами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_NATIVES_YIELD_GIFT_ACCEPT_1</Tag>
@@ -5811,7 +5811,7 @@
         <German>Willkommen, mein Kind. Möge der Heilige Vater Dich beschützen und Christus Dich auf Deinen Pfaden führen.</German>
         <Italian>Benvenuto, figlio mio. Che il Santo Padre vi protegga e che Cristo vi guidi nei vostri percorsi.</Italian>
         <Spanish>Bienvenida, hija mía. Que el Santo Padre os proteja y Cristo os guíe en vuestros caminos.</Spanish>
-        <Russian>Добро пожаловать, дитя моё. Да защитит тебя Святой Отец, а Христос да направит тебя на твоих путях.</Russian>
+        <Russian>Добро пожаловать, дитя моё. Да защитит тебя Святой Дух, а Христос да направит тебя в делах твоих.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_CHURCH_WELCOME_FUR</Tag>
@@ -5887,7 +5887,7 @@
         <English>The settlers from Our overseas possessions in America have sent Us a petition. They call for Royal troops to protect their possessions. Let these lazy fools protect their lands themselves![NEWLINE](HINT: Training and equipping rangers will cost %d1_gold[ICON_GOLD])</English>
         <French>Une pétition provenant de vos colonies à l'intérieur des terres est arrivée à notre court. Elles demandent l'envoi de troupes royales pour assurer leur sécurité. Ces incapables ne peuvent-ils pas protéger leurs maisons seuls ?[NEWLINE](NOTE: l'entraînement de gardes-forestiers coûtera %d1_gold[ICON_GOLD])</French>
         <German>Die Siedler aus Unseren überseeischen Besitzungen in Amerika haben Uns eine Petition übersandt. Sie rufen nach königlichen Truppen, um ihre Besitzungen zu schützen. Diese faulen Narren sollen ihre Ländereien gefälligst selbst beschützen![NEWLINE](Hinweis: Rekrutierung und Ausrüstung von Rangern kostet %d1_gold[ICON_GOLD])</German>
-        <Russian>Переселенцы из Наших заморских владений в Америке прислали Нам петицию. Они призывают Королевские войска для защиты своих владений. Пусть эти ленивые дураки сами защищают свои земли![NEWLINE](ПОДСКАЗКА: обучение и оснащение [COLOR_HIGHLIGHT_TEXT]Рейнджеров[COLOR_REVERT] будет стоить %d1_gold[ICON_GOLD])</Russian>
+        <Russian>Переселенцы из Наших заморских владений в Америке прислали Нам петицию. Они призывают Королевские войска для защиты своих владений. Неужели эти ленивые дураки не в состоянии защитить свои же земли собственными силами?![NEWLINE](ПОДСКАЗКА: обучение и оснащение [COLOR_HIGHLIGHT_TEXT]Рейнджеров[COLOR_REVERT] будет стоить %d1_gold[ICON_GOLD])</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_CONQUISTADORS</Tag>
@@ -6884,7 +6884,7 @@
         <German>Könntet Ihr bitte bei [COLOR_HIGHLIGHT_TEXT]unserem König[COLOR_REVERT] für unsere Sache sprechen?</German>
         <Italian>Potresti parlare per la nostra causa al [COLOR_HIGHLIGHT_TEXT]nostro Re[COLOR_REVERT]?</Italian>
         <Spanish>¿Podría hablar por nuestra causa a [COLOR_HIGHLIGHT_TEXT]nuestro Rey[COLOR_REVERT]?</Spanish>
-        <Russian>Не могли бы вы замолвить слово о верном почитателе Церкви перед [COLOR_HIGHLIGHT_TEXT]нашим королем[COLOR_REVERT]?</Russian>
+        <Russian>Не могли бы вы замолвить слово о верном почитателе Церкви перед [COLOR_HIGHLIGHT_TEXT]нашим Королем[COLOR_REVERT]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHURCH_FAVOUR_EUROPEAN</Tag>
@@ -6911,7 +6911,7 @@
         <German>Seine Eminenz hat in Eurer Sache mit [COLOR_HIGHLIGHT_TEXT]Eurem König[COLOR_REVERT] gesprochen.</German>
         <Italian>Sua Eminenza ha parlato al [COLOR_HIGHLIGHT_TEXT]vostro Re[COLOR_REVERT] in vostro favore.</Italian>
         <Spanish>Su Eminencia ha hablado con [COLOR_HIGHLIGHT_TEXT]su Rey[COLOR_REVERT] en su nombre.</Spanish>
-        <Russian>Его Высокопреосвященство поговорил с [COLOR_HIGHLIGHT_TEXT]вашим Королем[COLOR_REVERT] от вашего имени.</Russian>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]Его Высокопреосвященство[COLOR_REVERT] замолвил слово за вас перед [COLOR_HIGHLIGHT_TEXT]вашим Королем[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_SPOKE_FAVOUR_EUROPEAN</Tag>
@@ -6920,7 +6920,7 @@
         <German>Seine Eminenz hat in Eurer Sache mit [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] gesprochen.</German>
         <Italian>Sua Eminenza ha parlato con [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] a vostro nome.</Italian>
         <Spanish>Su Eminencia ha hablado con [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] en su nombre.</Spanish>
-        <Russian>Его Высокопреосвященство говорил с [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] от вашего имени.</Russian>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]Его Высокопреосвященство[COLOR_REVERT] говорил с [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] от вашего имени.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_NOT_ACQUIRE_SMUGGLERS</Tag>
@@ -7523,7 +7523,7 @@
         <German>Wenn Ihr uns %d4_yield_price[ICON_GOLD] gebt, werden wir %d1_yield_amount%F2_yield_icon nach [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] liefern.</German>
         <Italian>Se ci date %d4_yield_price[ICON_GOLD], consegneremo %d1_yield_amount%F2_yield_icon a [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT].</Italian>
         <Spanish>Si nos da %d4_yield_price[ICON_GOLD], le entregaremos %d1_yield_amount%F2_yield_icon a [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT].</Spanish>
-        <Russian>Если вы дадите нам %d4_yield_price[ICON_GOLD], мы доставим в [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] %d1_yield_amount%F2_yield_icon.</Russian>
+        <Russian>Если вы дадите нам %d4_yield_price[ICON_GOLD], мы доставим %d1_yield_amount%F2_yield_icon в [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_NATIVES_TRADE_ACCEPT_1</Tag>
@@ -7622,7 +7622,7 @@
         <German>Der Agent unseres Königs in [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] wurde ertappt und befragt. Unsere Beziehungen zu deren Kolonien haben dadurch gelitten.</German>
         <Italian>L'agente del nostro re in [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] è stato catturato e interrogato. Le nostre relazioni con le loro colonie ne hanno sofferto.</Italian>
         <Spanish>El agente de nuestro Rey en [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] ha sido capturado e interrogado. Nuestras relaciones con sus colonias se han visto afectadas por ello.</Spanish>
-        <Russian>Агент нашего короля в [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] был задержан и подвергнут допросу. Наши отношения с их колониями пострадали.</Russian>
+        <Russian>Кто-то подставил нашего агента в [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT]. Он был задержан и подвергнут "форсированному" допросу. Наши отношения с их колониями пострадали.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_COLONIAL_INTERVENTION_NATIVE_WAR</Tag>

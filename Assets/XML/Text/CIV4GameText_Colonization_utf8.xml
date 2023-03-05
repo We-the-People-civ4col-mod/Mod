@@ -2292,7 +2292,7 @@
         <German>%s2_city : Ein [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] wurde in der %s3_building ausgebildet.</German>
         <Italian>%s2_city : Si è diplomata una nuova unità [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] dal(la) %s3_building.</Italian>
         <Spanish>%s2_city : En [NUM3:el:la:los:las] %s3_building se ha graduado [NUM1:un nuevo:una nueva:unos nuevos:unas nuevas] [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT].</Spanish>
-        <Russian>%s2_city : [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] закончил обучение в %s3_building.</Russian>
+        <Russian>[COLOR_POSITIVE_TEXT]%s2_city :[COLOR_REVERT] [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] закончил обучение в [COLOR_FONT_CREAM]%s3_building[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHOOSE_PROMOTION</Tag>
@@ -2803,7 +2803,7 @@
         <German>%s3_city : Aus Mangel an freier Lagerkapazität wurde ein Überschuss von %d1_number%F2_yield_icon für %d4[ICON_GOLD] verramscht.</German>
         <Italian>%s3_city : Un eccesso di %d1_number%F2_yield_icon è stato venduto per %d4[ICON_GOLD] a causa della limitata capienza dei depositi</Italian>
         <Spanish>%s3_city : Un superávit de %d1_number%F2_yield_icon se ha vendido por %d4[ICON_GOLD] debido al límite de la capacidad de almacenamiento.</Spanish>
-        <Russian>%s3_city : Из-за ограниченной емкости хранилища излишки %d1_number%F2_yield_icon были проданы за %d4[ICON_GOLD].</Russian>
+        <Russian>[COLOR_SELECTED_TEXT]%s3_city :[COLOR_REVERT] Из-за ограниченной емкости хранилища излишки %d1_number%F2_yield_icon были проданы за %d4[ICON_GOLD].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_YIELD_OVERFLOW_SELL_PERCENT</Tag>
