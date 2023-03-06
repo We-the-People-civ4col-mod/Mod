@@ -243,6 +243,7 @@
         <English>Let's hope for a stiff breeze!</English>
         <French>Espérons une petite brise !</French>
         <German>Lasst uns auf eine steife Brise hoffen!</German>
+        <Russian>Будем надеяться, что скоро подует ветер!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CANTAFFORD</Tag>
@@ -687,18 +688,21 @@
         <English>"This be a shelter for devout, for Christians it is set about!"</English>
         <French>"Cette colonie est un abri pour les hommes pieux, pour les vrais Chrétiens !"</French>
         <German>"Dies sei ein Hort der Frommen, zu dem die Christen kommen!"</German>
+        <Russian>"Этот приют будет обустроен для благочестивых христиан!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRSTCOLONY_2</Tag>
         <English>"Liberty is what we teach, good fortune is within our reach!"</English>
         <French>"La Liberté, voilà notre bien le plus précieux !"</French>
         <German>"Der Welt die Freiheit lehren, soll uns zum Glücke führen!"</German>
+        <Russian>"Свобода это то, чему мы будем учить и пусть удача улыбнётся нам!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRSTCOLONY_3</Tag>
         <English>"Even if our stomachs rumble, we, your men, will never grumble!"</English>
         <French>"Le bien-être de nos concitoyens sera notre priorité !"</French>
         <German>"Wir scheuen keine Mühen, auf dass die Ernten blühen!"</German>
+        <Russian>"Благополучие наших сограждан будет нашим приоритетом!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_CATHEDRAL_1</Tag>
@@ -843,24 +847,28 @@
         <English>That sounds reasonable. We should strengthen our domestic market.</English>
         <French>Cela semble raisonnable. Nous devons renforcer notre marché intérieur.</French>
         <German>Das klingt nach einem guten Vorschlag. Wir sollten unseren heimischen Markt stärken.</German>
+        <Russian>Это кажется разумным. Нам следует укреплять наш внутренний рынок.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_MARKETS_DONE_1</Tag>
         <English>They could build a larger market in one of our cities. Thus they will profit as well.</English>
         <French>Ils peuvent construire un marché encore plus grand dans l'une de nos villes. Les profits générés augmenteront ainsi.</French>
         <German>Sie sollen in einer unserer Städte den vorhandenen Marktplatz ausbauen. So profitieren sie selbst auch davon.</German>
+        <Russian>Они могли бы построить рынок побольше в одном из наших городов. Таким образом, они также получат прибыль.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_MARKETS_DONE_2</Tag>
         <English>We now have markets but we need roads to connect them. They shall hire some pioneers.</English>
         <French>Nous avons certes des marchés mais nous avons besoin de routes pour les connecter. Ils peuvent nous embaucher des pionniers.</French>
         <German>Wir haben zwar nun die Marktplätze, aber diese müssen durch Straßen verbunden werden. Sie sollen einige Pioniere anheuern.</German>
+        <Russian>Теперь у нас есть рынки, но нам нужны дороги, чтобы их соединить. Они должны нанять несколько первопроходцев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_MARKETS_DONE_3</Tag>
         <English>More wagon trains to transport goods to the new markets would be a big help.</English>
         <French>Nous avons besoin de convois terrestres pour transporter les biens vers ces nouveaux marchés.</French>
         <German>Mehr Wagenzüge wären sehr hilfreich, denn dann können wir die Waren besser zu den Märkten transportieren.</German>
+        <Russian>Большим подспорьем было бы увеличение количества транспорта для перевозки товаров на новые рынки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FOREST_FIRE_1</Tag>
@@ -1025,6 +1033,7 @@
         <German>Wunderbar! Lasst uns die kommende Nacht feiern und fressen.</German>
         <Italian>Invia le congratulazioni agli abitanti.</Italian>
         <Spanish>Que se felicite a los ciudadanos.</Spanish>
+        <Russian>Прекрасно! Давайте отпразнуем это чудесное событие и устроим пир.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HERBS_1</Tag>
@@ -1379,18 +1388,21 @@
         <English>Hurry up, men! We will be the first to discover the route to Asia.</English>
         <French>Dépêchez-vous ! Nous serons les premier à découvrir la route pour l'Asie.</French>
         <German>Auf geht's, Männer! Wir werden die Ersten sein, die den Weg nach Asien entdecken!</German>
+        <Russian>Вперёд, храбрецы! Мы будем первыми, кто откроет путь в Азию.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PACIFIC_DONE_1</Tag>
         <English>Gold and glory! We take both!</English>
         <French>Or et Gloire ! Nous prenons les deux !</French>
         <German>Gold und Ruhm! Wir nehmen beides!</German>
+        <Russian>Храбрецам нужны только золото и слава!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PACIFIC_DONE_2</Tag>
         <English>We prefer honour and glory. Spread the word that we have discovered the western route to Asia!</English>
         <French>Nous préférons l'honneur et la gloire. Apprenez au monde que nous avons découverte la route occidentale vers l'Asie !</French>
         <German>Ruhm und Ehre sind uns Lohn genug!</German>
+        <Russian>Мы выбираем славу и почет. Расскажите всем о том, что мы открыли западный путь в Азию!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PEASANT_WARPREP_1</Tag>

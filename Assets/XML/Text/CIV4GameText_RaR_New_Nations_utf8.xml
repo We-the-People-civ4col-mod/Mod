@@ -44,30 +44,35 @@
         <English>Stranger, I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], chief and Angakkuq of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] people. Be our guest for tonight, for our seal hunters could return any moment now.</English>
         <French>Bonjour. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], chef et Angakkuq du peuple [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Soyez notre invité pour ce soir, nos chasseurs de phoques seront bientôt de retour.</French>
         <German>Fremder, ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Häuptling und Angakkuq des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]-Volkes. Seid unser Gast für heute Nacht, denn unsere Robbenjäger könnten jeden Moment zurückkehren.</German>
+        <Russian>Незнакомец, я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], вождь и знахарь [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Будь нашим гостем сегодня вечером, наши охотники на тюленей могут вернуться в любой момент и мы устроим пышный пир.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_TUGLAWINA_1</Tag>
         <English>Do you know why we have so many words for snow? Because snow is vastly more interesting to us than you are. Go away.</English>
         <French>Vous vous demandez pourquoi nous avons autant de mots différents pour désigner la neige ? Parce que la neige nous est bien plus utile que vous. Maintenant allez-vous-en.</French>
         <German>Ihr fragt Euch, warum wir so viele verschiedene Wörter für Schnee haben? Denn Schnee ist für uns viel nützlicher als für Euch. Und jetzt verschwindet hier.</German>
+        <Russian>Знаете, почему у нас так много слов для обозначения снега? Потому что снег гораздо интереснее для нас, чем вы. Уходите.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_TUGLAWINA_1</Tag>
         <English>Too late. Because of your crimes, the spirits of the northern lights have marked you for death.</English>
         <French>Il est trop tard. Vos crimes ont conduit les esprits de la lumière boréale à vous marquer pour mort.</French>
         <German>Dafür ist es zu spät. Wegen Eurer Verbrechen haben die Geister des Nordlichts Euren Tod bestimmt.</German>
+        <Russian>Слишком поздно. Из-за твоих преступлений духи северного сияния пометили тебя для жертвоприношений.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_TUGLAWINA_1</Tag>
         <English>The [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] people gladly welcome the leader of their [CT_CIV_ADJ] friends. How can we be of assistance?</English>
         <French>Le peuple [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] souhaite la bienvenue au chef de ses amis [CT_CIV_ADJ]. En quoi pouvons-nous vous être utile ?</French>
         <German>Das [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Volk heißt den Anführer seiner [CT_CIV_ADJ] Freunde gerne willkommen. Wie können wir behilflich sein?</German>
+        <Russian>Люди из [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] с радостью приветствуют лидера своих друзей из [CT_CIV_ADJ]. Чем мы можем быть полезны?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_TUGLAWINA_1</Tag>
         <English>Back again? Please, educate us further in the fine arts of deceit and treachery.</English>
         <French>Encore vous ? Notre Conseil fédéral est fasciné par votre grand Art de la trahison.</French>
         <German>Wieder zurück? Bitte unterrichtet uns weiter in den feinen Künsten der Täuschung und des Verrats.</German>
+        <Russian>Снова вернуться? Пожалуйста, научи нас искусству обмана и предательства. Ты преуспел в этом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_TUGLAWINA_1</Tag>
@@ -76,18 +81,21 @@
         <German>Mein Stamm ist in Not. Teilt Eure Vorräte mit uns, weißer Mann, und unsere Enkel werden ihren Enkeln von Euren milden Taten Geschichten erzählen.</German>
         <Italian>La mia tribù è nel bisogno. Condividi le tue provviste con noi, uomo bianco, e i nostri nipoti racconteranno ai loro nipoti le storie dei tuoi atti di gentilezza.</Italian>
         <Spanish>Mi tribu está necesitada. Comparte tus suministros con nosotros, hombre blanco, y nuestros nietos contarán a sus nietos historias de tus actos de bondad.</Spanish>
+        <Russian>Моё племя в нужде. Поделитесь с нами своими запасами, и наши внуки расскажут своим внукам истории о вашей доброте.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_TUGLAWINA_1</Tag>
         <English>I come in peace to ask for assistance. What do you say?</English>
         <French>Je suis venu en paix vous demander de l'aide. Qu'avez-vous à répondre ?</French>
         <German>Ich komme in Frieden und bitte um Unterstützung. Wie lautet Eure Antwort?</German>
+        <Russian>Я пришел с миром просить о помощи. Что вы скажете?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_TUGLAWINA_1</Tag>
         <English>I hold the destiny of the [CT_EMPIRE] in my hand. Have you really any choice but to give us what I demand?</English>
         <French>Je tiens le destin de l'[CT_EMPIRE] dans ma main. Avez-vous vraiment d'autre choix que de nous donner ce que j'exige ?</French>
         <German>Ich halte das Schicksal der [CT_EMPIRE] in meinen Händen. Habt Ihr wirklich eine andere Wahl, als uns zu geben, was ich verlange?</German>
+        <Russian>Я держу судьбу [CT_EMPIRE] в своих руках. Есть ли у вас действительно другой выбор, кроме как дать нам то, что я требую?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_HURON_SHORT_DESC</Tag>
@@ -136,48 +144,56 @@
         <English>I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], chief of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT], and I bid you welcome. The elders of our people desire to extend the hand of friendship to you and your people. I hope you appreciate the honour we bestow upon you by doing so. If you do not, you will regret it. I have spoken.</English>
         <French>Bonjour. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], chef de la nation [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT] des Pétuns. Les doyens désire que nous vous tendions la main en guise d'amitié envers vous et votre peuple. J'espère que vous appréciez l'honneur que nous vous accordons par ce geste.</French>
         <German>Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Häuptling der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT], und ich heiße Euch willkommen. Die Ältesten unseres Volkes möchten Euch und Eurem Volk die Hand der Freundschaft reichen. Ich hoffe, Ihr wisst die Ehre zu schätzen, die wir Euch damit erweisen. Tut Ihr es nicht, werdet Ihr es bereuen. Ich habe gesprochen.</German>
+        <Russian>Я держу судьбу [CT_EMPIRE] в своих руках. Есть ли у вас действительно другой выбор, кроме как дать нам то, что я требую?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_KONDIARONK_1</Tag>
         <English>Leave us alone. We only speak with snakes after we have cut out their venomous fangs.</English>
         <French>Laissez-nous tranquille ! Nous ne parlons aux serpents qu'après leur avoir coupés leur crochets venimeux.</French>
         <German>Lasst uns in Ruhe! Wir sprechen nur mit Schlangen, nachdem wir ihnen ihre Giftzähne gezogen haben.</German>
+        <Russian>Оставить нас в покое. Мы говорим со змеями только после того, как вырезаем их ядовитые клыки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_KONDIARONK_1</Tag>
         <English>No, paleface. We will not leave the warpath. Only when your scalp hangs in my tipi will I take my men home to their children and wives.</English>
         <French>Non, visage pâle. Notre peuple ne retrouvera la paix que lorsque j'arborerai le cuir de votre crane à l'entrée de mon Wigwam.</French>
         <German>Nein, Bleichgesicht. Wir werden den Kriegspfad nicht verlassen. Erst wenn Euer Skalp in meinem Wigwam hängt, werde ich meine Krieger heim zu ihren Kindern und Weibern holen.</German>
+        <Russian>Нет, бледнолицый. Мы не сойдем с тропы войны. Только когда твой скальп будет висеть в моем типи, а я отведу своих воинов домой, к их детям и женам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_KONDIARONK_1</Tag>
         <English>Welcome to the longhouses of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Let our meeting take place under the blessing of the Great Spirit.</English>
         <French>Quel plaisir d'avoir de vos nouvelles ! Installez-vous donc dans l'une de nos fameuses maisons longues. Que notre heureuse rencontre soit bénie par notre Grand Esprit !</French>
         <German>Willkommen in den Langhäusern der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Unser Treffen soll mit dem Segen des Großen Geistes stattfinden.</German>
+        <Russian>Добро пожаловать в длинные дома [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Да благословит Великий Дух нашу встречу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_KONDIARONK_1</Tag>
         <English>Your arrival in [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] lands was heralded by unrest among evil spirits. Apparently, they are horrified by your presence. As are we. What do you want?</English>
         <French>Votre arrivée sur les [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] étaient annoncée par les mauvais esprits. Apparemment, ils sont horrifiés par votre présence. Comme nous le sommes également. Que voulez-vous donc ?</French>
         <German>Eure Ankunft im [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Stammesgebiet wurde von den bösen Geistern vorhergesagt. Offenbar sind sie von Eurer Anwesenheit entsetzt. Genau wie wir. Was wollt Ihr?</German>
+        <Russian>О твоём прибытии в земли [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] предупредило волнение среди злых духов. Видимо, они в ужасе от твоего присутствия. Как и мы. Что ты хочешь?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_KONDIARONK_1</Tag>
         <English>The spirits have allowed my tribe to suffer much hardship. Can the [CT_EMPIRE] help?</English>
         <French>Les esprits nous mettent actuellement à l'épreuve. Notre peuple va mal. L'[CT_EMPIRE] peut-il nous aider ?</French>
         <German>Die Geister testen uns jetzt. Unser Volk ist in Not. Können die [CT_EMPIRE] uns helfen?</German>
+        <Russian>Духи разгневались и моему племени пришлось столкнуться с большими трудностями. Могут ли [CT_EMPIRE] помочь?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_KONDIARONK_1</Tag>
         <English>I come in peace to ask for assistance. Will you honour the friendship we have made?</English>
         <French>Je suis venu en paix vous demander de l'aide. Tiendrez-vous votre promesse d'amitié ?</French>
         <German>Ich bin in Frieden gekommen, um Euch um Hilfe zu bitten. Werdet Ihr Euer Freundschaftsversprechen halten?</German>
+        <Russian>Я пришел с миром, чтобы попросить о помощи. Будете ли вы уважать нашу дружбу?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_KONDIARONK_1</Tag>
         <English>I have the strength to wipe the [CT_EMPIRE] seed from this land. Give me all that I ask.</English>
         <French>Je tiens le destin de l'[CT_EMPIRE] dans ma main. Donnez-moi ce que j'exige !</French>
         <German>Ich habe die Kraft, die Saat des [CT_EMPIRE] aus diesem Land zu tilgen. Gebt mir alles, worum ich bitte.</German>
+        <Russian>У меня достаточно сил, чтобы стереть племя [CT_EMPIRE] с этой земли. Дай мне все, что я прошу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_ZAPOTEC_SHORT_DESC</Tag>
@@ -218,30 +234,35 @@
         <English>I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], fourth king of the peaceful [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] kingdom of Zaachila. I hope you share our ideals of friendship and fellowship.</English>
         <French>Bonjour. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], 4ème souverain du royaume [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT] de Zaachila. J'espère que vous partagez nos idéaux d'amitié et de loyauté.</French>
         <German>Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], der vierte Herrscher des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT] Königreichs von Zaachilas. Ich hoffe, Ihr teilt unsere Ideale von Freundschaft und Loyalität...</German>
+        <Russian>Я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], четвертый король мирного королевства [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Надеюсь, вы разделяете наши идеалы дружбы и товарищества.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_COCIJOEZA_1</Tag>
         <English>Had you been a civilized person, I might be interested in talking to you. Unfortunately your bestiality shocks our refined people.</English>
         <French>Si vous connaissiez la civilisation, j'aurais peut-être un intérêt à vous parler. Malheureusement votre bestialité choque notre peuple raffiné.</French>
         <German>Wenn Sie etwas über Zivilisation wüssten, hätte ich vielleicht ein Interesse daran, mit Ihnen zu sprechen. Leider ist Ihre Bestialität für unser kultiviertes Volk schockierend.</German>
+        <Russian>Если бы вы были цивилизованным человеком, мне было бы интересно поговорить с вами. К сожалению, ваше зоофилство шокирует наш утонченный народ.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_COCIJOEZA_1</Tag>
         <English>We, the people of the clouds, can never make peace with the filthy beasts that you are.</English>
         <French>Nous, peuple des nuages, ne pourrons jamais faire la paix avec les bêtes immondes que vous êtes.</French>
         <German>Wir, die Menschen der Wolken, können niemals Frieden schließen mit den dreckigen Bestien, die Ihr seid.</German>
+        <Russian>Мы, люди облаков, никогда не сможем помириться с грязными тварями, каковыми являетесь вы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_COCIJOEZA_1</Tag>
         <English>The [CT_CIV_ADJ] are welcome visitors to the glorious cities of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. On what issues can we assist you with our counsel?</English>
         <French>Nous invitons avec joie les [CT_CIV_ADJ] à venir visiter nos fiers cités-états [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. En quoi pouvons-nous vous aider ?</French>
         <German>Die [CT_CIV_ADJ] sind gern gesehene Gäste in den glorreichen Städten der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Bei welchen Themen können wir Euch mit unserem Rat zur Seite stehen?</German>
+        <Russian>[CT_CIV_ADJ] — желанные гости в славных городах [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. По каким вопросам мы можем помочь Вам нашим советом?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_COCIJOEZA_1</Tag>
         <English>As a sophisticated man it's my duty to educate all creatures, even the most vile, so consider yourself lucky. Which of your many follies shall we discuss?</English>
         <French>En tant qu'homme de culture, je considère de mon devoir d'éduquer toutes créatures, même les plus vils. Considérez-vous donc chanceux. Quelle est donc votre dernière lubie ?</French>
         <German>Als kultivierter Mann sehe ich es als meine Pflicht an, alle Kreaturen zu erziehen, selbst die abscheulichsten, also schätzt Euch glücklich. Welche Eurer vielen Torheiten sollen wir besprechen?</German>
+        <Russian>Мой долг, как искушенного человека, воспитывать всех существ, даже самых мерзких, так что считай себя счастливчиком. Какую из твоих многочисленных глупостей мы обсудим?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_COCIJOEZA_1</Tag>
@@ -250,18 +271,21 @@
         <German>Mein Stamm ist in Not. Teilt Eure Vorräte mit uns, weißer Mann, und unsere Enkel werden ihren Enkeln von Euren milden Taten Geschichten erzählen.</German>
         <Italian>La mia tribù è nel bisogno. Condividi le tue provviste con noi, uomo bianco, e i nostri nipoti racconteranno ai loro nipoti le storie dei tuoi atti di gentilezza.</Italian>
         <Spanish>Mi tribu está necesitada. Comparte tus suministros con nosotros, hombre blanco, y nuestros nietos contarán a sus nietos historias de tus actos de bondad.</Spanish>
+        <Russian>Моё племя в нужде. Поделитесь с нами своими запасами, и наши внуки расскажут своим внукам истории о вашей доброте.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_COCIJOEZA_1</Tag>
         <English>I come in peace to ask for assistance. What do you say?</English>
         <French>Je suis venu en paix vous demander de l'aide. Qu'avez-vous à répondre ?</French>
         <German>Ich komme in Frieden und bitte um Unterstützung. Wie lautet Eure Antwort?</German>
+        <Russian>Я пришел с миром просить о помощи. Что вы скажете?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_COCIJOEZA_1</Tag>
         <English>I could crush the [CT_EMPIRE] at will. Give me what I demand.</English>
         <French>Je pourrais écraser le [CT_EMPIRE] à volonté. Donnez-moi ce que j'exige.</French>
         <German>Ich könnte die [CT_EMPIRE] nach Belieben zerquetschen. Gebt mir, was ich verlange.</German>
+        <Russian>Я могу сокрушить [CT_EMPIRE] в любое время, когда захочу. Дайте мне то, что я требую.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_GUARANI_SHORT_DESC</Tag>

@@ -182,6 +182,7 @@
         <German>[BOLD]Siedlungsbildschirm[\BOLD][NEWLINE][TAB]Im Siedlungsbildschirm können Sie kontrollieren, was die Bevölkerung dieser Siedlung produziert. Um Rohstoffe wie Baumwolle, Zucker oder Tabak zu produzieren, zieht einfach einen Kolonisten in das Geländefenster rechts von der Gebäudeanzeige. Um einen Kolonisten anzuweisen, Fertigwaren herzustellen, ziehen Sie ihn zu einem Gebäude der Gebäudeanzeige in der Mitte des Bildschirms. Sie können ihn auch in den Bereich "Garnison" ziehen, damit die Einheit die Siedlung verlässt. Achtung, in Ihrer Siedlung muss sich immer mindestens ein Kolonist befinden.[PARAGRAPH:2]Unten im Siedlungsbildschirm befindet sich die Güteranzeige, eine Liste aller Güter Ihrer Siedlung mit Angaben, wie viel davon pro Runde produziert werden oder verlorengehen. Güter können in ein beliebiges Transportmittel geladen werden, das sich im gleichen Geländefeld wie Ihre Siedlung befindet, indem Sie sie in den Bereich "Transport" ziehen.</German>
         <Italian>[BOLD]Schermata dell'insediamento[\BOLD][NEWLINE][TAB]Nella schermata dell'insediamento puoi controllare ciò che produce la popolazione del tuo insediamento. Per produrre materie prime come cotone, zucchero o tabacco, trascina semplicemente un colono nella finestra del terreno, a destra della finestra degli edifici. Per assegnare un colono alla produzione di beni finiti, trascinalo su un edificio nella finestra degli edifici, al centro dello schermo. Puoi anche trascinarlo nella sezione chiamata Guarnigione, per fare in modo che lasci l'insediamento. Ricorda che devi sempre avere almeno un colono all'interno dell'insediamento.[PARAGRAPH:2]Nella parte inferiore della schermata dell'insediamento trovi la finestra dei beni, che elenca tutti i beni contenuti nell'insediamento e quanti quest'ultimo ne produce o ne perde ogni turno. Puoi caricare i beni su qualsiasi mezzo di trasporto presente nella stessa casella dell'insediamento trascinandoli nella sezione Trasporto.</Italian>
         <Spanish>[BOLD]Pantalla del asentamiento[\BOLD][NEWLINE][TAB]En esta pantalla podéis controlar lo que produce la población de vuestro asentamiento. Para producir materias primas ?como Algodón, Azúcar o Tabaco? basta con arrastrar a un colono hasta la ventana del terreno, a la derecha del visor de edificios. Para destinar a un Colono a hacer bienes manufacturados, arrastradlo hasta un edificio del visor de edificios, en medio de la pantalla. También podéis arrastrarlo hasta el apartado llamado "Guarnición" para que la unidad deje el asentamiento. Nota: Siempre debéis tener al menos un colono en vuestro asentamiento.[PARAGRAPH:2]A lo largo de la parte inferior de la pantalla se encuentra el visor de mercancías, que lista todas las mercancías que contiene el asentamiento y la cantidad de ellas que produce o pierde cada turno. Las mercancías se pueden embarcar en cualquier transporte que se encuentre en la misma casilla del asentamiento arrastrándolas al apartado "Transporte".</Spanish>
+        <Russian>[BOLD]Экран поселения[\BOLD][NEWLINE][TAB]На экране поселения вы можете контролировать, что производит жители вашей колонии. Чтобы получить сырье, такое как хлопок, сахар или табак, просто переместите колониста на нужную клетку в окно ландшафта справа от окна зданий. Чтобы поручить колонисту производить промышленные товары, переместите его к нужному зданию на окно зданий в центре экрана. Вы также можете переместить его в раздел с надписью "Гарнизон", чтобы отряд покинул поселение. Примечание: в вашем поселении всегда должен быть хотя бы один колонист, иначе оно будет заброшено и исчезнет с карты мира.[PARAGRAPH:2]В нижней части экрана поселения находится окно товаров, в котором перечислены все товары, которые есть в вашем поселении и сколько оно производит или теряет за каждый ход. Товары можно загрузить в любой транспорт, находящийся в той же клетке, что и ваше поселение. Для этого выбранный товар нужно переместить в транспортное средство (морское или наземное), находящееся в разделе "Транспорт". Колонистов, рабочих, специалистов или войска, на экране колоний можно загрузить в транспорт, который может их перевозить, также, как и товары.</Russian>
     </TEXT>
     <!-- TAC Events Texts below -->
     <TEXT>
@@ -201,6 +202,7 @@
         <English>Milord, your men stand before you. Deeply moved they listen to your words. This is your nation's first colony in the New World and your citizens thank you for giving them the chance to participate in this historical moment. Your men wish to take an oath to remind them of their virtues. Which oath will you have them swear?</English>
         <French>Seigneur, vos hommes attendent vos ordres. Ils boivent vos paroles. C'est votre première colonie dans le Nouveau Monde et vos citoyens vous remercient de leur donner une chance de participer à un tel moment historique. Vos hommes souhaitent prêter serment afin de se rappeler de leur vertu. Quel serment souhaitez-vous qu'ils prêtent?</French>
         <German>Milord, tief ergriffen stehen Eure Männer vor Euch. Dies ist die erste Kolonie Eurer Heimatnation in der Neuen Welt. Dankbar sind Eure Gefährten, dass Ihr ihnen die Chance gebt, an diesem historischen Augenblick teilzunehmen. Die Männer möchten einen Schwur ablegen, ein Versprechen, tugendhaft zu leben. Welchen Eid wollt Ihr sie schwören lassen?</German>
+        <Russian>Милорд, ваши люди стоят перед вами. Глубоко тронутые, они слушают ваши слова. Это первая колония вашей страны в Новом Свете и ваши граждане благодарят вас за то, что вы дали им возможность участвовать в этом историческом моменте. Они хотят принести клятву, чтобы напомнить себе о своей добродетели. Какую клятву вы попросите их принести?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SECONDCOLONY</Tag>
@@ -288,6 +290,7 @@
         <German>Die Männer von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben eine Treibjagd in den nahen Wäldern veranstaltet. Eine große Hirschherde lief den wackeren Waidmännern vor die Flinten.</German>
         <Italian>I cervi proliferano nella foresta vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], e i nostri cacciatori possono procurare carne in più.</Italian>
         <Spanish>Los ciervos proliferan por el bosque cercano a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], lo que ha permitido a los cazadores almacenar una reserva de carne.</Spanish>
+        <Russian>Большие стада оленей в лесах возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] позволили нашим охотникам запастись дополнительным мясом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_WASHED_OUT</Tag>
@@ -1109,6 +1112,7 @@
         <English>Several scholars in Europe declare that the Earth is a globe. Adventurers and explorers from all nations have set sail to find the western route to Asia.</English>
         <French>De nombreux savants en Europe affirment que la Terre est ronde. Des aventuriers et explorateurs de toutes les nations montent les voiles pour découvrir la route de l'Ouest vers l'Asie.</French>
         <German>Die Erde sei eine Kugel, behaupten einige Gelehrte in Europa. Abenteurer und Forscher aus den verschiedensten Nationen brechen auf,, um die Westroute nach Asien zu entdecken.</German>
+        <Russian>Несколько ученых в Европе заявляют, что Земля — это шар. Авантюристы и исследователи из всех стран отправились в плавание, чтобы найти западный путь в Азию.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_PACIFIC</Tag>
@@ -1347,12 +1351,14 @@
         <English>Our [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] is becalmed.</English>
         <French>Votre navire [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] est bloquée par la pétole, pas un souffle d'air.</French>
         <German>Euer Schiff [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] ist in eine Flaute geraten.</German>
+        <Russian>Наш корабль [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] попал в штиль.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CALM_HELP</Tag>
         <English>[ICON_BULLET]%D1 slower passage to Europe for [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT]</English>
         <French>[ICON_BULLET]%D1 passage ralenti vers l'Europe pour [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT]</French>
         <German>[ICON_BULLET]Überfahrt für [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] verlängert sich um %D1 [NUM1:Runde:Runden].</German>
+        <Russian>[ICON_BULLET]Переход в Европу для [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] займет %D1 ход</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TAILWIND_1</Tag>
@@ -2265,24 +2271,28 @@
         <English>A group of private traders in our colony insists that we need more markets. They even offer a reward if we can be the first to have five cities with markets.</English>
         <French>Des négociants privés dans nos colonies nous demandent d'investir dans davantage de marchés. Ils nous proposent même une récompense si nous devenons la première puissance coloniale à construire 5 marchés.</French>
         <German>Eine einflußreiche Gruppe von Händlern aus unseren Städten fordert, dass wir mehr Märkte in den Kolonien bauen. Sie bietet als Anreiz sogar eine Belohnung, falls wir als erste Kolonie Märkte in 5 Städten errichtet haben.</German>
+        <Russian>Группа частных торговцев в нашей колонии настаивает на том, что нам нужно больше рынков. Они даже предлагают вознаграждение, если мы сможем быть первыми, у которых будет пять городов с рынками.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIVE_MARKETS</Tag>
         <English>Milord, the governor of another colony has built markets in five cities before you. You've missed the chance to get that reward from the private traders.</English>
         <French>Seigneur, une autre colonie a construit 5 marchés dans ses villes avant nous. Vous avez perdu votre chance de gagner une récompense de la part des négociants privés.</French>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch in 5 Städten Märkte errichten. Dadurch habt Ihr die Chance auf eine Belohung durch unsere eigenen Händler vertan.</German>
+        <Russian>Милорд, губернатор другой колонии построил рынки в пяти городах раньше вас. Вы упустили шанс получить эту награду от частных торговцев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_MARKETS_DONE</Tag>
         <English>Milord, another colonial nation is the first to have markets in five cities.</English>
         <French>Une puissance coloniale a été la première à construire des marchés dans 5 villes.</French>
         <German>Eine Kolonialmacht konnte vor allen anderen in 5 Städten Märkte errichten.</German>
+        <Russian>Милорд, еще одна колониальная нация первой открыла рынки в пяти городах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_MARKETS_DONE</Tag>
         <English>Milord, you've built markets in five cities before any other colony could. The private traders now ask which reward they should offer.</English>
         <French>Seigneur, vous avez été le premier à construire 5 marchés dans vos villes. Les négociants privés vous proposent de choisir votre récompense.</French>
         <German>Milord, Eure Kolonie konnte vor allen anderen in 5 Städten Märkte errichten. Die Händler aus unseren Städten fragen nun, welche Belohnung Ihr dafür wollt.</German>
+        <Russian>Милорд, вы построили рынки в пяти городах раньше, чем это смогла сделать любая другая колония. Торговцы спрашивают, какое вознаграждение вы желаете получить.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_GRAVEYARDS</Tag>
