@@ -285,5 +285,7 @@ public:
 	void setDomesticAdvisorState(int iPage);
 
 	CyUserSettings* getUserSettings() const;
+
+	void openNetworkOOSMenu();
 };
 #endif	// CyGlobalContext_h

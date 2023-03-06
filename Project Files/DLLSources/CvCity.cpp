@@ -9514,6 +9514,7 @@ GoodyTypes CvCity::getGoodyType(const CvUnit* pUnit) const
 
 		if (pUnit == NULL || GET_PLAYER(pUnit->getOwnerINLINE()).canReceiveGoody(plot(), eGoody, pUnit))
 		{
+			OOS_LOG("can receive goody", getTypeStr(eGoody));
 			int iRandValue = GC.getGameINLINE().getSorenRandNum(GC.getGoodyInfo(eGoody).getCityGoodyWeight(), "City Goodies");
 			if(iRandValue > iBestValue)
 			{
@@ -9523,6 +9524,7 @@ GoodyTypes CvCity::getGoodyType(const CvUnit* pUnit) const
 		}
 	}
 
+	OOS_LOG("best goody", getTypeStr(eBestGoody));
 	return eBestGoody;
 }
 

@@ -6439,6 +6439,8 @@ void CvUnit::speakWithChief()
 	GoodyTypes eGoody = pCity->getGoodyType(this);
 	PlayerTypes eNativePlayer = pCity->getOwnerINLINE();
 
+	OOS_LOG("CvUnit::speakWithChief goody type", getTypeStr(eGoody));
+
 	if (isHuman() && !GET_PLAYER(eNativePlayer).isHuman())
 	{
 		// R&R, ray, Natives do not talk when furious - START

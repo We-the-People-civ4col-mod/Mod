@@ -17,6 +17,8 @@
 #include "CyArtFileMgr.h"
 #include "UserSettings.h"
 #include "CyUserSettings.h"
+#include "CvPopupInfo.h"
+#include "CvDLLInterfaceIFaceBase.h"
 
 CyGlobalContext::CyGlobalContext()
 {
@@ -530,4 +532,10 @@ void CyGlobalContext::setDomesticAdvisorState(int iPage)
 CyUserSettings* CyGlobalContext::getUserSettings() const
 {
 	return new CyUserSettings();
+}
+
+void CyGlobalContext::openNetworkOOSMenu()
+{
+	CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_NETWORK_OOS_MENU);
+	gDLL->getInterfaceIFace()->addPopup(pInfo, GC.getGameINLINE().getActivePlayer(), true, true);
 }

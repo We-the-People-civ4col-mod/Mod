@@ -1230,6 +1230,9 @@ protected:
 	CvCity* buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitClassTypes eUnitClass, int iNumUnits, CvWString szIDTag = CvWString(), int iPriceToPay = 0, int iLocationFlags = LOCATION_FLAGS_NONE, bool bReceivePrice = true, bool bMessageMentionLocation = true);
 	CvCity* buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitType, int iNumUnits, CvWString szIDTag = CvWString(), int iPriceToPay = 0, int iLocationFlags = LOCATION_FLAGS_NONE, bool bReceivePrice = true, bool bMessageMentionLocation = true);
 
+	void testOOSanDoEvent(EventTypes eEvent, bool bSuccess) const;
+	void testOOSanDoGoody(GoodyTypes eGoody, int iUnitID, bool bSuccess) const;
+
 public:
 	int getIDSecondPlayerFrenchNativeWar() const;//WTP, ray, Colonial Intervention In Native War - START
 	// transport feeder - start - Nightinggale

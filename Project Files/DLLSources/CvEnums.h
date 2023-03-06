@@ -616,10 +616,11 @@ enum ButtonPopupTypes
 	// Teacher List - end - Nightinggale	
 	BUTTONPOPUP_SAVE_TRADEGROUP,//R&R mod, vetiarvind, trade groups
 	BUTTONPOPUP_CHOOSE_CITY_PLOT_YIELD,
-	BUTTONPOPUP_DESYNC_LOG_COMPLETE, // desync log
 	BUTTONPOPUP_NO_EVENT_ON_OK_CLICKED, // use info.setButtonPopupType to this to avoid the ok button from doing anything
 	
-	
+	// network OOS hunting tools
+	BUTTONPOPUP_DESYNC_LOG_COMPLETE, // desync log
+	BUTTONPOPUP_NETWORK_OOS_MENU,
 
 #ifdef _USRDLL
 	NUM_BUTTONPOPUP_TYPES
@@ -972,6 +973,8 @@ enum PlayerActionTypes
 	PLAYER_ACTION_TRANSFER_UNIT_IN_PORT_ROYAL,
 	// R&R, ray, Port Royal - END
 	PLAYER_ACTION_NETWORK_DESYNC_LOG_WRITE,
+	PLAYER_ACTION_NETWORK_canDoEvent,
+	PLAYER_ACTION_NETWORK_canDoGoody,
 
 #ifdef _USRDLL
 	NUM_PLAYER_ACTION_TYPES

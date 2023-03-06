@@ -5490,6 +5490,8 @@ void CvPlayer::receiveRandomGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUni
 
 int CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 {
+	OOS_LOG_3("CvPlayer::receiveGoody", getTypeStr(eGoody), getID());
+
 	int iReturnValue = -1;
 
 	FAssertMsg(canReceiveGoody(pPlot, eGoody, pUnit), "Instance is expected to be able to recieve goody");
@@ -18436,6 +18438,12 @@ void CvPlayer::doAction(PlayerActionTypes eAction, int iData1, int iData2, int i
 	case PLAYER_ACTION_NETWORK_DESYNC_LOG_WRITE:
 		GC.getGameINLINE().writeDesyncLog();
 		break;
+	case PLAYER_ACTION_NETWORK_canDoEvent:
+		testOOSanDoEvent((EventTypes)iData1, iData2);
+		break;
+	case PLAYER_ACTION_NETWORK_canDoGoody:
+		testOOSanDoGoody((GoodyTypes)iData1, iData2, iData3);
+		break;
 	default:
 		FAssertMsg(false, "Unknown action");
 		break;
@@ -24497,6 +24505,35 @@ BuildingTypes CvPlayer::getBuildingType(BuildingClassTypes eBuildingClass) const
 UnitTypes CvPlayer::getUnitType(UnitClassTypes eUnitClass) const
 {
 	return (UnitTypes)getCivilizationInfo().getCivilizationUnits(eUnitClass);
+}
+
+void CvPlayer::testOOSanDoEvent(EventTypes eEvent, bool bSuccess) const
+{
+	EventTriggeredData kTriggeredData;
+	bool bLocalSuccess = canDoEvent(eEvent, kTriggeredData);
+	if (!bLocalSuccess != !bSuccess)
+	{
+		char szMessage[1024];
+
+		sprintf(szMessage, "OOS detected in CvPlayer::canDoEvent: %s", getTypeStr(eEvent));
+		gDLL->MessageBox(szMessage, "OOS Error");
+	}
+}
+
+void CvPlayer::testOOSanDoGoody(GoodyTypes eGoody, int iUnitID, bool bSuccess) const
+{
+	CvUnit* pUnit = getUnit(iUnitID);
+	if (pUnit != NULL)
+	{
+		bool bLocalSuccess = canReceiveGoody(pUnit->plot(), eGoody, pUnit);
+		if (!bLocalSuccess != !bSuccess)
+		{
+			char szMessage[1024];
+
+			sprintf(szMessage, "OOS detected in CvPlayer::canReceiveGoody: %s", getTypeStr(eGoody));
+			gDLL->MessageBox(szMessage, "OOS Error");
+		}
+	}
 }
 
 namespace

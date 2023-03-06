@@ -27,6 +27,72 @@
 
 #define PASSWORD_DEFAULT (L"*****")
 
+// static class to allow launch and clicked code for a popup to be put together
+// being a static class rather than just two functions allows adding enums, which can only be used inside the class
+// this in turn allows assigning enums to button IDs without risking name clashes between popup windows
+template <int T>
+class PopupButtonContainer
+{
+};
+
+template <>
+class PopupButtonContainer<BUTTONPOPUP_NETWORK_OOS_MENU>
+{
+	enum
+	{
+		BUTTOM_TEST_canDoEvent,
+		BUTTON_TEST_canDoGoody,
+	};
+public:
+	static bool launch(CvPopup* pPopup, CvPopupInfo &info)
+	{
+		gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_DEBUG_OOS_MENU"));
+		
+		// TODO: figure out how to simulate EventTriggeredData
+		//gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, "CvPlayer::canDoEvent", 0, BUTTOM_TEST_canDoEvent);
+
+		if (gDLL->getInterfaceIFace()->getHeadSelectedUnit() != NULL)
+		{
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, "CvUnit::canDoGoody", 0, BUTTON_TEST_canDoGoody);
+		}
+
+		gDLL->getInterfaceIFace()->popupLaunch(pPopup, true, POPUPSTATE_IMMEDIATE);
+
+		return true;
+	}
+
+	static void clicked(PopupReturn *pPopupReturn)
+	{
+		const PlayerTypes ePlayer = GC.getGameINLINE().getActivePlayer();
+		CvPlayerAI& kPlayer = GET_PLAYER(ePlayer);
+
+		switch (pPopupReturn->getButtonClicked())
+		{
+		case BUTTOM_TEST_canDoEvent:
+			for (EventTypes eEvent = FIRST_EVENT; eEvent < NUM_EVENT_TYPES; ++eEvent)
+			{
+				EventTriggeredData kTriggeredData;
+				bool bSuccess = kPlayer.canDoEvent(eEvent, kTriggeredData);
+				gDLL->sendPlayerAction(ePlayer, PLAYER_ACTION_NETWORK_canDoEvent, eEvent, bSuccess, -1);
+			}
+			break;
+		case BUTTON_TEST_canDoGoody:
+			{
+				CvUnit* pUnit = gDLL->getInterfaceIFace()->getHeadSelectedUnit();
+				if (pUnit != NULL)
+				{
+					FAssert(pUnit->getOwnerINLINE() == ePlayer);
+					for (GoodyTypes eGoody = FIRST_GOODY; eGoody < NUM_GOODY_TYPES; ++eGoody)
+					{
+						bool bSuccess = kPlayer.canReceiveGoody(pUnit->plot(), eGoody, pUnit);
+						gDLL->sendPlayerAction(ePlayer, PLAYER_ACTION_NETWORK_canDoGoody, eGoody, pUnit->getID(), bSuccess);
+					}
+				}
+			}
+		}
+	}
+};
+
 // WTP enums
 // Nake it easier to read windows with a lot of buttons
 // This also allows easy access to changing the order of buttons
@@ -1156,6 +1222,10 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 	case BUTTONPOPUP_DESYNC_LOG_COMPLETE:
 		break;
 
+	case BUTTONPOPUP_NETWORK_OOS_MENU:
+		PopupButtonContainer<BUTTONPOPUP_NETWORK_OOS_MENU>::clicked(pPopupReturn);
+		break;
+
 	case BUTTONPOPUP_NO_EVENT_ON_OK_CLICKED:
 		// generic "do nothing"
 		break;
@@ -1422,6 +1492,9 @@ bool CvDLLButtonPopup::launchButtonPopup(CvPopup* pPopup, CvPopupInfo &info)
 		break;
 	case BUTTONPOPUP_DESYNC_LOG_COMPLETE:
 		bLaunched = launchDesyncLogCompletePopup(pPopup, info);
+		break;
+	case BUTTONPOPUP_NETWORK_OOS_MENU:
+		bLaunched = PopupButtonContainer<BUTTONPOPUP_NETWORK_OOS_MENU>::launch(pPopup, info);
 		break;
 
 	default:

@@ -291,6 +291,9 @@ class CvEventManager:
 				popupInfo.addPopup(ePlayer)
 # TAC: EventTriggerMenu END
 
+			if( theKey == int(InputTypes.KB_N) and self.bShift and self.bCtrl ) :
+				gc.openNetworkOOSMenu();
+
 			if (self.bAllowCheats):
 				# Shift - T (Debug - No MP)
 				if (theKey == int(InputTypes.KB_T)):

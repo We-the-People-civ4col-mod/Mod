@@ -10,6 +10,10 @@
         <English>Done generating files:In mod dir:[NEWLINE]    Desync log for player %d1.txt[NEWLINE]    Desync save for player %d2.ColonizationSave[NEWLINE]In documents\my games\colonization\logs:[NEWLINE]    Random Player %d3.log[NEWLINE][NEWLINE]Please collect those files from all players, put them in a single zip file and submit them as an OOS bug report. Add the autosave from the previous turn if possible.</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_DEBUG_OOS_MENU</Tag>
+        <English>OOS testing menu[NEWLINE][NEWLINE]Here data can be send to all computers on the network to detect if all computers will react the same way.</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_TITLE</Tag>
         <English>Negative cargo stored error</English>
     </TEXT>
