@@ -917,7 +917,7 @@ void CvPlayer::read(CvSavegameReader reader)
 
 			// The CivEffect cache isn't saved. Instead it's recalculated on load.
 			// This will make it adapt to changed xml settings.
-			CivEffect()->rebuildCivEffectCache();
+			CivEffect().rebuildCivEffectCache();
 			break;
 		}
 	}

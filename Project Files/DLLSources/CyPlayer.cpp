@@ -1459,7 +1459,7 @@ int CyPlayer::getDocksNextUnit(int iIndex) const
 {
 	if (m_pPlayer)
 	{
-		if (iIndex >= 0 && iIndex < static_cast<int>(m_pPlayer->CivEffect()->getNumUnitsOnDock()))
+		if (iIndex >= 0 && iIndex < static_cast<int>(m_pPlayer->CivEffect().getNumUnitsOnDock()))
 		{
 			return m_pPlayer->getDocksNextUnit(iIndex);
 		}
@@ -1684,7 +1684,7 @@ CyInfoArray* CyPlayer::getStoredYieldTypes() const
 	for (YieldTypes eYield = em.FIRST; eYield <= em.LAST; ++eYield)
 	{
 		if (eYield >= NUM_CARGO_YIELD_TYPES // only show cargo yields
-			|| (m_pPlayer && !m_pPlayer->CivEffect()->canUseYield(eYield))) // remove yields not used by the player
+			|| (m_pPlayer && !m_pPlayer->CivEffect().canUseYield(eYield))) // remove yields not used by the player
 		{
 			em.set(eYield, false);
 		}
@@ -1702,7 +1702,7 @@ CyInfoArray* CyPlayer::getDomesticDemandYieldTypes() const
 	for (int i = 0; i < array.getLength(); ++i)
 	{
 		const YieldTypes eYield = array.get(i);
-		if (!m_pPlayer || m_pPlayer->CivEffect()->canUseYield(eYield))
+		if (!m_pPlayer || m_pPlayer->CivEffect().canUseYield(eYield))
 		{
 			em.set(eYield, true);
 		}
@@ -1717,10 +1717,10 @@ CyInfoArray* CyPlayer::getTeachUnitTypes(int iTeachLevel) const
 
 	if (m_pPlayer != NULL)
 	{
-		const CvPlayerCivEffect* pPlayer = m_pPlayer->CivEffect();
+		const CvPlayerCivEffect& kPlayer = m_pPlayer->CivEffect();
 		for (UnitTypes eUnit = em.FIRST; eUnit <= em.LAST; ++eUnit)
 		{
-			if (pPlayer->canUseUnit(eUnit) && GC.getUnitInfo(eUnit).NBMOD_GetTeachLevel() == iTeachLevel)
+			if (kPlayer.canUseUnit(eUnit) && GC.getUnitInfo(eUnit).NBMOD_GetTeachLevel() == iTeachLevel)
 			{
 				em.set(eUnit, true);
 			}
@@ -1735,10 +1735,10 @@ int CyPlayer::getMaxTeachLevel() const
 	int iLevel = 0;
 	if (m_pPlayer != NULL)
 	{
-		const CvPlayerCivEffect* pPlayer = m_pPlayer->CivEffect();
+		const CvPlayerCivEffect& kPlayer = m_pPlayer->CivEffect();
 		for (UnitTypes eUnit = FIRST_UNIT; eUnit < NUM_UNIT_TYPES; ++eUnit)
 		{
-			if (pPlayer->canUseUnit(eUnit))
+			if (kPlayer.canUseUnit(eUnit))
 			{
 				const int iUnitLevel = GC.getUnitInfo(eUnit).NBMOD_GetTeachLevel();
 				if (iUnitLevel > iLevel && iUnitLevel < 100)
@@ -1754,11 +1754,11 @@ int CyPlayer::getMaxTeachLevel() const
 // CivEffect
 int CyPlayer::getCivEffectCount(CivEffectTypes eCivEffect) const
 {
-	return m_pPlayer ? m_pPlayer->CivEffect()->getCivEffectCount(eCivEffect) : 0;
+	return m_pPlayer ? m_pPlayer->CivEffect().getCivEffectCount(eCivEffect) : 0;
 }
 
 
 unsigned int CyPlayer::getNumUnitsOnDock() const
 {
-	return m_pPlayer ? m_pPlayer->CivEffect()->getNumUnitsOnDock() : 0;
+	return m_pPlayer ? m_pPlayer->CivEffect().getNumUnitsOnDock() : 0;
 }

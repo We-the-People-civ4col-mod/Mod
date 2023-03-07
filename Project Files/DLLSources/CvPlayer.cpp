@@ -117,7 +117,7 @@ void CvPlayer::init(PlayerTypes eID)
 	reset(eID);
 
 	// set the CivEffect cache
-	CivEffect()->rebuildCivEffectCache();
+	CivEffect().rebuildCivEffectCache();
 
     /** NBMOD TAX **/
     m_iMaxTaxRate = GC.getHandicapInfo(getHandicapType()).NBMOD_GetInitMaxTaxRate();
@@ -544,7 +544,7 @@ void CvPlayer::initImmigration()
 {
 	FAssert(getParent() != NO_PLAYER);
 	m_aDocksNextUnits.clear();
-	m_aDocksNextUnits.reserve(CivEffect()->getNumUnitsOnDock());
+	m_aDocksNextUnits.reserve(CivEffect().getNumUnitsOnDock());
 	verifyImmigration();
 }
 
@@ -559,9 +559,9 @@ void CvPlayer::verifyImmigration()
 	for (unsigned int i = 0; i < m_aDocksNextUnits.size(); ++i)
 	{
 		UnitTypes eUnit = m_aDocksNextUnits[i];
-		if (eUnit != NO_UNIT && (!CivEffect()->canUseUnit(eUnit) || !CivEffect()->canUseImmigrant(eUnit)))
+		if (eUnit != NO_UNIT && (!CivEffect().canUseUnit(eUnit) || !CivEffect().canUseImmigrant(eUnit)))
 		{
-			if (eUnit != NO_UNIT && (!CivEffect()->canUseUnit(eUnit) || !CivEffect()->canUseImmigrant(eUnit)))
+			if (eUnit != NO_UNIT && (!CivEffect().canUseUnit(eUnit) || !CivEffect().canUseImmigrant(eUnit)))
 			{
 				m_aDocksNextUnits.erase(m_aDocksNextUnits.begin() + i);
 				--i; // compensate for ++i as next iteration needs to use the same value for i
@@ -569,16 +569,16 @@ void CvPlayer::verifyImmigration()
 		}
 	}
 
-	if (m_aDocksNextUnits.size() > CivEffect()->getNumUnitsOnDock())
+	if (m_aDocksNextUnits.size() > CivEffect().getNumUnitsOnDock())
 	{
 		// Too many units on the dock.
 		// Remove from the right to match the number of units requested.
-		m_aDocksNextUnits.resize(CivEffect()->getNumUnitsOnDock());
+		m_aDocksNextUnits.resize(CivEffect().getNumUnitsOnDock());
 	}
 	else
 	{
 		// Add units until the requested amount of units have appeared.
-		while (m_aDocksNextUnits.size() < CivEffect()->getNumUnitsOnDock())
+		while (m_aDocksNextUnits.size() < CivEffect().getNumUnitsOnDock())
 		{
 			m_aDocksNextUnits.push_back(pickBestImmigrant());
 		}
@@ -3535,7 +3535,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 								// To prevent broken hurry button, do immigration, if Threshold got lowered below current crosses
 								while (getCrossesStored() >= immigrationThreshold())
 								{
-									doImmigrant(GC.getGameINLINE().getSorenRandNum(CivEffect()->getNumUnitsOnDock(), "pick immigrant"), true);
+									doImmigrant(GC.getGameINLINE().getSorenRandNum(CivEffect().getNumUnitsOnDock(), "pick immigrant"), true);
 								}
 
 								break;
@@ -3570,7 +3570,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 								// To prevent broken hurry button, do immigration, if Threshold got lowered below current crosses
 								while (getCrossesStored() >= immigrationThreshold())
 								{
-									doImmigrant(GC.getGameINLINE().getSorenRandNum(CivEffect()->getNumUnitsOnDock(), "pick immigrant"), true);
+									doImmigrant(GC.getGameINLINE().getSorenRandNum(CivEffect().getNumUnitsOnDock(), "pick immigrant"), true);
 								}
 
 								break;
@@ -4268,7 +4268,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			if (kPlayer.getGold() >= priceStealingImmigrant)
 			{
 				// get random Unit from other European, we steal from
-				int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(CivEffect()->getNumUnitsOnDock(), "pick immigrant");
+				int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(CivEffect().getNumUnitsOnDock(), "pick immigrant");
 				UnitTypes eBestUnit = victimPlayer.getDocksNextUnit(randomUnitSelectOnDock);
 				if (NO_UNIT != eBestUnit)
 				{
@@ -5558,7 +5558,7 @@ int CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 	{
 		for (int gi = 0; gi < iGoodyImmigrants; gi++)
 		{
-			int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(CivEffect()->getNumUnitsOnDock(), "pick immigrant");
+			int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(CivEffect().getNumUnitsOnDock(), "pick immigrant");
 			UnitTypes eBestUnit = getDocksNextUnit(randomUnitSelectOnDock);
 			if (NO_UNIT != eBestUnit)
 			{
@@ -5985,7 +5985,7 @@ bool CvPlayer::canFound(Coordinates foundCoord, bool bTestVisible) const
 	int iRange;
 	int iDX, iDY;
 
-	if (!CivEffect()->canFoundCity())
+	if (!CivEffect().canFoundCity())
 	{
 		return false;
 	}
@@ -6525,7 +6525,7 @@ void CvPlayer::processTrait(TraitTypes eTrait, int iChange)
 
 	changeTraitCount(eTrait, iChange);
 
-	CivEffect()->applyCivEffect(kTrait.getCivEffect(), iChange);
+	CivEffect().applyCivEffect(kTrait.getCivEffect(), iChange);
 
 	changeLevelExperienceModifier(kTrait.getLevelExperienceModifier() * iChange);
 	changeGreatGeneralRateModifier(kTrait.getGreatGeneralRateModifier() * iChange);
@@ -6731,7 +6731,7 @@ void CvPlayer::processFatherOnce(FatherTypes eFather)
 {
 	CvFatherInfo& kFatherInfo = GC.getFatherInfo(eFather);
 
-	CivEffect()->applyCivEffect(kFatherInfo.getCivEffect());
+	CivEffect().applyCivEffect(kFatherInfo.getCivEffect());
 
 	for (int iUnitClass = 0; iUnitClass < GC.getNumUnitClassInfos(); ++iUnitClass)
 	{
@@ -6850,7 +6850,7 @@ bool CvPlayer::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestEra, b
 
 	// CivEffect check
 	// Should be first because of lazy checking optimization. It's just a BoolArray lookup, hence very fast
-	if (!CivEffect()->canUseBuild(eBuild))
+	if (!CivEffect().canUseBuild(eBuild))
 	{
 		return false;
 	}
@@ -7013,7 +7013,7 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic) const
 	}
 
 	// CivEffect check
-	if (!CivEffect()->canUseCivic(eCivic))
+	if (!CivEffect().canUseCivic(eCivic))
 	{
 		return false;
 	}
@@ -8668,7 +8668,7 @@ void CvPlayer::setCurrentEra(EraTypes eNewValue)
 		{
 			if (eEra >= FIRST_ERA && eEra < NUM_ERA_TYPES)
 			{
-				CivEffect()->applyCivEffect(GC.getEraInfo(eEra).getCivEffect());
+				CivEffect().applyCivEffect(GC.getEraInfo(eEra).getCivEffect());
 			}
 		}
 
@@ -8678,7 +8678,7 @@ void CvPlayer::setCurrentEra(EraTypes eNewValue)
 		{
 			if (eEra >= FIRST_ERA && eEra < NUM_ERA_TYPES)
 			{
-				CivEffect()->applyCivEffect(GC.getEraInfo(eEra).getCivEffect(), - 1);
+				CivEffect().applyCivEffect(GC.getEraInfo(eEra).getCivEffect(), - 1);
 			}
 		}
 
@@ -11634,11 +11634,11 @@ void CvPlayer::doCrosses()
 		{
 			// TAC - short messages for immigration after fist - RAY
 			if (imCount == 0) {
-				doImmigrant(GC.getGameINLINE().getSorenRandNum(CivEffect()->getNumUnitsOnDock(), "pick immigrant"), false);
+				doImmigrant(GC.getGameINLINE().getSorenRandNum(CivEffect().getNumUnitsOnDock(), "pick immigrant"), false);
 				imCount++;
 			}
 			else {
-				doImmigrant(GC.getGameINLINE().getSorenRandNum(CivEffect()->getNumUnitsOnDock(), "pick immigrant"), true);
+				doImmigrant(GC.getGameINLINE().getSorenRandNum(CivEffect().getNumUnitsOnDock(), "pick immigrant"), true);
 			}
 		}
 	}
@@ -12971,7 +12971,7 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 {
 	CvCivicInfo& kCivicInfo = GC.getCivicInfo(eCivic);
 
-	CivEffect()->applyCivEffect(kCivicInfo.getCivEffect(), iChange);
+	CivEffect().applyCivEffect(kCivicInfo.getCivEffect(), iChange);
 
 	changeGreatGeneralRateModifier(kCivicInfo.getGreatGeneralRateModifier() * iChange);
 	changeDomesticGreatGeneralRateModifier(kCivicInfo.getDomesticGreatGeneralRateModifier() * iChange);
@@ -18977,7 +18977,7 @@ bool CvPlayer::isProfessionValid(ProfessionTypes eProfession, UnitTypes eUnit) c
 	if (eProfession != NO_PROFESSION)
 	{
 		// CivEffect check
-		if (!CivEffect()->canUseProfession(eProfession))
+		if (!CivEffect().canUseProfession(eProfession))
 		{
 			return false;
 		}
@@ -19299,7 +19299,7 @@ UnitTypes CvPlayer::pickBestImmigrant()
 	std::vector<int> aiWeights(NUM_UNIT_TYPES, 0);
 	for (UnitTypes eUnit = FIRST_UNIT; eUnit < NUM_UNIT_TYPES; ++eUnit)
 	{
-		if (CivEffect()->canUseUnit(eUnit) && CivEffect()->canUseImmigrant(eUnit))
+		if (CivEffect().canUseUnit(eUnit) && CivEffect().canUseImmigrant(eUnit))
 		{
 			const CvUnitInfo& kInfo = GC.getUnitInfo(eUnit);
 			int iWeight = kInfo.getImmigrationWeight();
@@ -20743,7 +20743,7 @@ bool CvPlayer::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, i
 		calculatedChance = calculatedChance * ki_modifier / 100;
 	}
 
-	calculatedChance = calculatedChance * CivEffect()->getLearningByDoingModifier() / 100; // CivEffects - Nightinggale
+	calculatedChance = calculatedChance * CivEffect().getLearningByDoingModifier() / 100; // CivEffects - Nightinggale
 
 	//Schmiddie, added LbD modifier for Sophisticated Trait ENDE
 
@@ -21890,7 +21890,7 @@ void CvPlayer::checkForStealingImmigrant()
 		// simply buy immigrant for cheaper price if AI has enough gold
 		if (getGold() > priceStealingImmigrant * 3)
 		{
-			int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(CivEffect()->getNumUnitsOnDock(), "pick immigrant");
+			int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(CivEffect().getNumUnitsOnDock(), "pick immigrant");
 			UnitTypes eBestUnit = getDocksNextUnit(randomUnitSelectOnDock);
 			if (NO_UNIT != eBestUnit)
 			{
