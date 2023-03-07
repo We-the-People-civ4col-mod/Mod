@@ -1339,6 +1339,7 @@
         <German>Milord, die Hebamme von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], eine hutzlige, verrückte Alte, hat den hitzig fiebernden Häuptling des nahen Ureinwohnerdorfes geheilt vermittels eines Tees, den sie ihm eingeflößt hatte. Sie stanken beide erbärmlich - der Tee wie das Weib -, doch der Sud half.[PARAGRAPH:2]Nun ersuchen die Wilden, die Frau möge ihnen mit ihren Kräutern zukünftig bei all ihren kleinen und großen Nöten beistehen, möge ihnen jedes Weh und jede Warze hinfortnehmen. Seid Ihr damit einverstanden, Milord?</German>
         <Italian>Si è scoperto che un tè medicinale coltivato dalla gente del posto è efficace nel curare i malanni. Questo tè cresce solo in una specifica regione vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
         <Spanish>Se ha descubierto que una infusión medicinal cultivada por los lugareños es eficaz para tratar enfermedades. Esta planta solo crece en una región muy concreta, cerca de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
+        <Russian>Милорд, знахарка из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], капризная, сумасшедшая старуха, вылечила от лихорадки вождя близлежащего поселения индейцев чаем, который она для него приготовила. Они оба ужасно воняли — и чай и женщина,но отвар помог.[PARAGRAPH:2]Теперь все близлежайшие индейские деревни хотят, чтобы женщина помогала им с их травами, надеясь, что она сможет избавиться от любой боли и страданий. Вы согласны с этим, милорд?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HERBS_1_LANDMARK</Tag>
@@ -1652,6 +1653,7 @@
         <English>Send a unit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] into the ruins near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] within %d3 rounds.</English>
         <French>Envoyez l'unité [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] dans les ruines près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] dans les %d3 prochains tours.</French>
         <German>Schickt innerhalb von %d3 Runden eine Einheit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] zu den Ruinen nahe [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</German>
+        <Russian>Отправьте [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] для осмотра руин возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] в течение %d3 ходов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_RUINS</Tag>

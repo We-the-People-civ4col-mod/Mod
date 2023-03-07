@@ -6092,7 +6092,7 @@
         <German>Ich willige mit Freuden ein, Eure Majestät.</German>
         <Italian>Acconsento volentieri, Vostra Maestà.</Italian>
         <Spanish>Consiento con gusto, Su Majestad.</Spanish>
-        <Russian>С первеликой радостью, Ваше Величество!</Russian>
+        <Russian>С превеликой радостью, Ваше Величество!</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_TREASURE_TRANSPORT_ACCEPT_2</Tag>
@@ -6164,7 +6164,7 @@
         <German>Ab sofort dürft Ihr Uns statt %d1_old_rate%% Steuern deren %d2_new_rate%% entrichten, [CT_NAME]. Wir wissen, dass Ihr Uns liebt, und gewähren Euch huldvoll eine Gelegenheit, dies zu zeigen. Bedankt Euch und küsst Unseren Ring.</German>
         <Italian>D'ora in poi, invece di pagarci le tasse %d1_old_rate%%, potete pagarci %d2_new_rate%%, [CT_NAME]. Sappiamo che ci ami e ti concediamo gentilmente l'opportunità di dimostrarlo. Ringrazia e bacia il nostro anello.</Italian>
         <Spanish>A partir de ahora, en lugar de pagarnos %d1_old_rate%% de impuestos, puede pagarnos %d2_new_rate%%, [CT_NAME]. Sabemos que nos amas y te damos la oportunidad de demostrarlo. Da las gracias y besa Nuestro anillo.</Spanish>
-        <Russian>Отныне вместо того, чтобы платить Нам %d1_old_rate%% налогов с продаж, вы можете платить Нам %d2_new_rate%%, [CT_NAME]. Мы знаем, что вы любите Нас и милостиво даруем вам возможность показать это. Благодарите и целуйте Наше кольцо.</Russian>
+        <Russian>Нам радостно видеть, что доходы Наших колоний под вашим руководством процветают. Мы считаем, что налоговая ставка в %d1_old_rate%% унизительна.. унизительно мала. И Мы с радостью сообщаем вам, [CT_NAME], что теперь она будет составлять %d2_new_rate%%. Можете поблагодарить Нас и поцеловать кольцо.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KISS_PINKY_4</Tag>
@@ -6173,7 +6173,7 @@
         <German>Ihr zahlt Uns ab sofort %d2_new_rate%% statt %d1_old_rate%% Steuern, [CT_NAME]. Überrascht? Hattet Ihr Uns vergessen? Nun, Wir Euch nicht. Und nun küsst Unseren Ring.</German>
         <Italian>D'ora in poi pagherai noi %d2_new_rate%% invece di %d1_old_rate%% di tasse, [NOME_TC]. Sorpreso? Ti eri dimenticato di noi? Beh, non ti avevamo dimenticato. E ora bacia il nostro anello.</Italian>
         <Spanish>A partir de ahora pagará %d2_new_rate%% en lugar de %d1_old_rate%% de impuestos, [CT_NAME]. ¿Sorprendido? ¿Te has olvidado de nosotros? Bueno, no nos habíamos olvidado de ti. Y ahora besa nuestro anillo.</Spanish>
-        <Russian>С этого момента вы платите Нам налог с продаж в %d2_new_rate%% вместо %d1_old_rate%%, [CT_NAME]. Удивлен? Неужели ты забыл о Нас? Что ж, Мы о тебе не забыли. А теперь поцелуй Наше кольцо.</Russian>
+        <Russian>С этого момента ты будешь платить Нам налог с продаж в %d2_new_rate%% вместо %d1_old_rate%%, [CT_NAME]. Удивлен? Неужели ты забыл о Нас? Что ж, Мы о тебе не забыли. А теперь поцелуй Наше кольцо.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KISS_PINKY_5</Tag>
