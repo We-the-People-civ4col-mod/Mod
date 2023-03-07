@@ -2242,8 +2242,7 @@ void CvPlayer::doTurn()
 		if (!isHuman())
 		{
 			//koma13
-			CvPlayerAI& kPlayerAI = GET_PLAYER((PlayerTypes) getID());
-			kPlayerAI.AI_updateBestPortCities();
+			AI().AI_updateBestPortCities();
 
 			redistributeWood();
 
@@ -4355,7 +4354,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 				int iGoldToPayBaseValue = GC.getDefineINT("ROYAL_INTERVENTIONS_GOLD_PRICE");
 				iGoldToPayBaseValue = iGoldToPayBaseValue * GC.getGameSpeedInfo(GC.getGame().getGameSpeedType()).getStoragePercent() / 100;
 				int iGoldModiferByAttitude = GC.getDefineINT("ROYAL_INTERVENTIONS_PERCENT_GOLD_PRICE_CHANGE_PER_ATTITUDE_POINT");
-				int iKingsAttitudeValue = GET_PLAYER((PlayerTypes) getID()).AI_getAttitudeVal(ePlayer, false);
+				int iKingsAttitudeValue = AI().AI_getAttitudeVal(ePlayer, false);
 				int iGoldModifiedByAttitude = iGoldToPayBaseValue * (100 - iGoldModiferByAttitude * iKingsAttitudeValue) / 100;
 
 				if (iGoldModifiedByAttitude < iGoldToPayBaseValue / 2)
@@ -21013,9 +21012,8 @@ void CvPlayer::checkForNativeMercs()
 				//simple logik for AI
 				if (!isHuman())
 				{
-					CvPlayerAI& kPlayerAI = GET_PLAYER((PlayerTypes) getID());
 					// TAC - AI Military Buildup - koma13
-					if (!kPlayerAI.AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
+					if (!AI().AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
 					{
 						int iMercRand = GC.getGameINLINE().getSorenRandNum(100, "AI should buy Mercenaries?");
 						if (iMercRand < GC.getDefineINT("AI_CHANCE_FOR_BUYING_MERCENARIES"))
@@ -21116,9 +21114,8 @@ void CvPlayer::checkForNativeSlaves()
 				//simple logik for AI
 				if (!isHuman())
 				{
-					CvPlayerAI& kPlayerAI = GET_PLAYER((PlayerTypes) getID());
 					// TAC - AI Military Buildup - koma13
-					if (!kPlayerAI.AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
+					if (!AI().AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
 					{
 						if (getGold() > totalslaveprice * 2)
 						{
@@ -21244,9 +21241,8 @@ void CvPlayer::checkForAfricanSlaves()
 	{
 		if (getGold() > totalslavesprice * 2)
 		{
-			CvPlayerAI& kPlayerAI = GET_PLAYER((PlayerTypes) getID());
 			// TAC - AI Military Buildup - koma13
-			if (!kPlayerAI.AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
+			if (!AI().AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
 			{
 				//create the prisoners
 				UnitTypes SlaveType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_AFRICAN_SLAVE"));
@@ -21353,9 +21349,8 @@ void CvPlayer::checkForPrisonsCrowded()
 	{
 		if (getGold() > totalprisonersprice * 2)
 		{
-			CvPlayerAI& kPlayerAI = GET_PLAYER((PlayerTypes) getID());
 			// TAC - AI Military Buildup - koma13
-			if (!kPlayerAI.AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
+			if (!AI().AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
 			{
 				//create the prisoners
 				UnitTypes PrisonerType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_PRISONER"));
@@ -21460,9 +21455,8 @@ void CvPlayer::checkForRevolutionaryNoble()
 	{
 		if (getGold() > pricetopay * 2)
 		{
-			CvPlayerAI& kPlayerAI = GET_PLAYER((PlayerTypes) getID());
 			// TAC - AI Military Buildup - koma13
-			if (!kPlayerAI.AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
+			if (!AI().AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
 			{
 				//create the noble
 				UnitTypes NobleType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_NOBLE"));
@@ -21579,9 +21573,8 @@ void CvPlayer::checkForBishop()
 	{
 		if (getGold() > pricetopay * 2)
 		{
-			CvPlayerAI& kPlayerAI = GET_PLAYER((PlayerTypes) getID());
 			// TAC - AI Military Buildup - koma13
-			if (!kPlayerAI.AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
+			if (!AI().AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
 			{
 				//create the bishop
 				UnitTypes BishopType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_BISHOP"));
@@ -22033,9 +22026,8 @@ void CvPlayer::checkForSmugglers()
 	// simple logic for AI
 	if (!isHuman())
 	{
-		CvPlayerAI& kPlayerAI = GET_PLAYER((PlayerTypes) getID());
 		// TAC - AI Military Buildup - koma13
-		if (!kPlayerAI.AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
+		if (!AI().AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
 		{
 			//create the smuggling ship
 			UnitTypes SmugglingShipType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_SMUGGLING_SHIP"));
@@ -22117,11 +22109,10 @@ void CvPlayer::checkForRangers()
 	// simple logic for AI
 	if (!isHuman())
 	{
-		CvPlayerAI& kPlayerAI = GET_PLAYER((PlayerTypes) getID());
 		// TAC - AI Military Buildup - koma13
 		if (getGold() > pricetopay)
 		{
-			if (!kPlayerAI.AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
+			if (!AI().AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
 			{
 				m_iTimerRanger = GC.getTIMER_RANGER() * gamespeedMod/100;
 				//create the ranger
@@ -22227,9 +22218,8 @@ void CvPlayer::checkForConquistadors()
 	// simple logic for AI
 	if (!isHuman())
 	{
-		CvPlayerAI& kPlayerAI = GET_PLAYER((PlayerTypes) getID());
 		// TAC - AI Military Buildup - koma13
-		if (!kPlayerAI.AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
+		if (!AI().AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
 		{
 			int iMercRand = GC.getGameINLINE().getSorenRandNum(100, "AI should buy Mercenaries?");
 			if (iMercRand < GC.getDefineINT("AI_CHANCE_FOR_BUYING_MERCENARIES"))
@@ -22363,9 +22353,8 @@ void CvPlayer::checkForPirates()
 	// simple logic for AI
 	if (!isHuman())
 	{
-		CvPlayerAI& kPlayerAI = GET_PLAYER((PlayerTypes) getID());
 		// TAC - AI Military Buildup - koma13
-		if (!kPlayerAI.AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
+		if (!AI().AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
 		{
 			//create the pirate ship
 			UnitTypes PirateShipType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_PIRATE_FRIGATE"));
@@ -22971,8 +22960,7 @@ void CvPlayer::checkForContinentalGuard()
 	//simple logic for AI
 	if (!isHuman())
 	{
-		CvPlayerAI& kPlayerAI = GET_PLAYER((PlayerTypes) getID());
-		if (!kPlayerAI.AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
+		if (!AI().AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
 		{
 			//create the Continental Guard
 			UnitTypes ContinentalGuardType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_CONTINENTAL_GUARD"));
@@ -23089,8 +23077,7 @@ void CvPlayer::checkForMortar()
 	//simple logic for AI
 	if (!isHuman())
 	{
-		CvPlayerAI& kPlayerAI = GET_PLAYER((PlayerTypes) getID());
-		if (!kPlayerAI.AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
+		if (!AI().AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
 		{
 			//create the Mortar
 			UnitTypes MortarType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_MORTAR"));
@@ -23279,9 +23266,8 @@ void CvPlayer::checkForChurchContact()
 	{
 		if (getGold() > pricetopay * 2)
 		{
-			CvPlayerAI& kPlayerAI = GET_PLAYER((PlayerTypes) getID());
 			// TAC - AI Military Buildup - koma13
-			if (!kPlayerAI.AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
+			if (!AI().AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
 			{
 				// reward is to lower immigration threshold multiplier
 				setImmigrationThresholdMultiplier(((getImmigrationThresholdMultiplier() * 90) / 100));
