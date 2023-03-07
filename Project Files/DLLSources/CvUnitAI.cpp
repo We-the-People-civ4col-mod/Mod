@@ -2172,6 +2172,7 @@ void CvUnitAI::AI_treasureMove()
 		if(GET_PLAYER(getOwnerINLINE()).isNative())
 		{
 			int iGoldForNativeTreasure = getYieldStored();
+			OOS_LOG("Native trader gold", iGoldForNativeTreasure);
 			GET_PLAYER(getOwnerINLINE()).changeGold(iGoldForNativeTreasure);
 			kill(false);
 			return;

@@ -349,7 +349,10 @@ void CyPlayer::setGold(int iNewValue)
 void CyPlayer::changeGold(int iChange)
 {
 	if (m_pPlayer)
+	{
+		OOS_LOG_3("Python change gold", m_pPlayer->getID(), iChange);
 		m_pPlayer->changeGold(iChange);
+	}
 }
 int CyPlayer::getAdvancedStartPoints()
 {
@@ -503,7 +506,10 @@ int CyPlayer::getAssets()
 void CyPlayer::changeAssets(int iChange)
 {
 	if (m_pPlayer)
+	{
+		OOS_LOG("python change assets", iChange);
 		m_pPlayer->changeAssets(iChange);
+	}
 }
 int CyPlayer::getPower()
 {

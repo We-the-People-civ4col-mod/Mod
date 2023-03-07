@@ -8606,6 +8606,7 @@ void CvPlayerAI::AI_nativeTrade(CvUnit* pUnit)
 					// although above it was actually already check by std::min ...
 					if (pHomeCity->getYieldStored(eBestYield) >= iYieldAmount)
 					{
+						OOS_LOG_3("CvPlayerAI::AI_nativeTrade", getTypeStr(eBestYield), priceToPay);
 						pOtherCity->changeYieldStored(eBestYield, iYieldAmount);
 						kOtherPlayer.changeGold(-priceToPay);
 						pHomeCity->changeYieldStored(eBestYield, -iYieldAmount);
@@ -10141,6 +10142,7 @@ void CvPlayerAI::AI_createNatives()
 			UnitTypes eBrave = AI_bestUnit(UNITAI_DEFENSIVE);
 			if (eBrave != NO_UNIT)
 			{
+				OOS_LOG_3("AI create natives", CvString(pLoopCity->getName()).c_str(), getTypeStr(eBrave));
 				initUnit(eBrave, GC.getUnitInfo(eBrave).getDefaultProfession(), pLoopCity->getX_INLINE(), pLoopCity->getY_INLINE());
 			}
 		}

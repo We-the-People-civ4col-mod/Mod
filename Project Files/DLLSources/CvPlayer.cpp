@@ -1588,6 +1588,8 @@ CvUnit* CvPlayer::initUnit(UnitTypes eUnit, ProfessionTypes eProfession, Coordin
 
 	FAssertMsg(eUnit != NO_UNIT, "Unit is not assigned a valid value");
 
+	OOS_LOG("Init unit", getTypeStr(eUnit));
+
 	CvUnit* pUnit = addUnit();
 	FAssertMsg(pUnit != NULL, "Unit is not assigned a valid value");
 	if (NULL != pUnit)
@@ -3956,6 +3958,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			{
 				for (int i=0;i<iNumNativeWarriorsCreated;i++)
 				{
+					OOS_LOG("Added native units", getTypeStr(NativeWarriorUnitType));
 					CvUnit* NativeWarriorUnit = HumanPlayer.initUnit(NativeWarriorUnitType, NO_PROFESSION, pOurOwnCapitolCity->getX_INLINE(), pOurOwnCapitolCity->getY_INLINE(), NO_UNITAI);
 				}
 			}
@@ -6775,11 +6778,13 @@ void CvPlayer::processFatherOnce(FatherTypes eFather)
 				// if (pPlot != NULL)
 				//WTP, ray fix for issue Free Water Units - END
 				{
+					OOS_LOG("Adding father unit", getTypeStr(eUnit));
 					initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pPlot->coord());
 				}
 				//WTP, ray fix for issue Free Water Units - START
 				else if (pPortPlot != NULL && GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_SEA)
 				{
+					OOS_LOG("Adding father unit", getTypeStr(eUnit));
 					initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pPortPlot->getX_INLINE(), pPortPlot->getY_INLINE());
 				}
 				//WTP, ray fix for issue Free Water Units - END
@@ -7273,6 +7278,7 @@ void CvPlayer::setGold(int iNewValue)
 	if (getGold() != iNewValue)
 	{
 		m_iGold = iNewValue;
+		OOS_LOG_3("set gold", getID(), m_iGold);
 
 		FAssert(getGold() >= 0);
 
@@ -7615,7 +7621,9 @@ int CvPlayer::getAssets() const
 
 void CvPlayer::changeAssets(int iChange)
 {
+	OOS_LOG_3("Player change assets A", getID(), iChange);
 	m_iAssets += iChange;
+	OOS_LOG_3("Player change assets B", GC.isMainThread() ? 1 : 0, m_iAssets);
 	FAssert(getAssets() >= 0);
 }
 
@@ -7626,7 +7634,9 @@ int CvPlayer::getPower() const
 
 void CvPlayer::changePower(int iChange)
 {
+	OOS_LOG_3("Player change power A", getID(), iChange);
 	m_iPower += iChange;
+	OOS_LOG_3("Player change power B", GC.isMainThread() ? 1 : 0, m_iPower);
 	FAssert(getPower() >= 0);
 }
 
@@ -10885,6 +10895,7 @@ void CvPlayer::doGold()
 
 	FAssert(isHuman() || ((getGold() + iGoldChange) >= 0));
 
+	OOS_LOG("doGold", iGoldChange);
 	changeGold(iGoldChange);
 
 }
@@ -14286,10 +14297,12 @@ void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdate
 
 	if (iGold != 0)
 	{
+		OOS_LOG("Apply event gold A", iGold);
 		changeGold(iGold);
 
 		if (NO_PLAYER != pTriggeredData->m_eOtherPlayer && kEvent.isGoldToPlayer())
 		{
+			OOS_LOG("Apply event gold B", iGold);
 			GET_PLAYER(pTriggeredData->m_eOtherPlayer).changeGold(-iGold);
 		}
 	}
@@ -14500,6 +14513,7 @@ void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdate
 				{
 					for (int i = 0; i < kEvent.getNumUnits(); ++i)
 					{
+						OOS_LOG_3("Event add unit at city", CvString(pUnitCity->getName()).c_str(), getTypeStr(eUnit));
 						initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pUnitCity->getX_INLINE(), pUnitCity->getY_INLINE());
 					}
 				}
@@ -18849,6 +18863,7 @@ void CvPlayer::setProfessionEquipmentModifier(ProfessionTypes eProfession, int i
 	int iChange = iValue - getProfessionEquipmentModifier(eProfession);
 	if (iChange != 0)
 	{
+		OOS_LOG_3("set profession equipment modifier", getTypeStr(eProfession), iValue);
 		std::vector<CvUnit*> aProfessionUnits;
 		int iLoop;
 		for (CvUnit* pUnit = firstUnit(&iLoop); pUnit != NULL; pUnit = nextUnit(&iLoop))
@@ -19361,6 +19376,7 @@ void CvPlayer::hurry(HurryTypes eHurry, int iIndex)
 
 		if (kHurry.getGoldPerCross() > 0)
 		{
+			OOS_LOG("hurry gold", getHurryGold(eHurry, iIndex));
 			changeGold(-getHurryGold(eHurry, iIndex));
 			changeCrossesStored(immigrationThreshold() - getCrossesStored());
 			// TAC - short messages for immigration after fist - RAY
@@ -19483,11 +19499,13 @@ void CvPlayer::buyLand(CvPlot* pPlot, bool bFree)
 		pPlot->setCulture(eOldOwner, 0, false);
 		if (!GET_TEAM(pPlot->getTeam()).isAtWar(getTeam()))
 		{
+			OOS_LOG("buy land war", pPlot->getTeam());
 			GET_PLAYER(eOldOwner).changeGold((iGoldCost * GC.getDefineINT("BUY_PLOT_SELLER_INCOME_PERCENT")) / 100);
 			GET_PLAYER(getID()).AI_changeGoldTradedTo(eOldOwner, iGoldCost);
 		}
 	}
 
+	OOS_LOG("buy land", iGoldCost);
 	pPlot->changeCulture(getID(), iCulture, true);
 	changeGold(-iGoldCost);
 }
@@ -19942,6 +19960,7 @@ void CvPlayer::changeProfessionEurope(int iUnitId, ProfessionTypes eProfession)
 			}
 		}
 		pUnit->setProfession(eProfession);
+		OOS_LOG_3("change profession Europe", getTypeStr(eProfession), iCost);
 		changeGold(-iCost);
 		gDLL->getInterfaceIFace()->setDirty(EuropeScreen_DIRTY_BIT, true);
 	}
@@ -20069,6 +20088,9 @@ bool CvPlayer::checkPower(bool bReset)
 		iAsset += iCityAsset;
 		mapAreaPower[pCity->area()->getID()] += iCityPower;
 	}
+
+	OOS_LOG_3("check power old", getPower(), getAssets());
+	OOS_LOG_3("check power new", iPower, iAsset);
 
 	bool bCheck = true;
 	if (iPower != getPower())
@@ -20741,6 +20763,7 @@ bool CvPlayer::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, i
 	FAssert(expertUnitType != NO_UNIT);
 	// R&R, ray, small fix
 	//CvUnit* expertUnit = initUnit(expertUnitType, convUnit->getProfession(), convUnit->getX_INLINE(), convUnit->getY_INLINE(), convUnit->AI_getUnitAIType());
+	OOS_LOG("LbD", getTypeStr(expertUnitType));
 	CvUnit* expertUnit = initUnit(expertUnitType, GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession(), convUnit->getX_INLINE(), convUnit->getY_INLINE());
 	FAssert(expertUnit != NULL);
 	expertUnit->joinGroup(convUnit->getGroup());
@@ -20875,6 +20898,7 @@ void CvPlayer::doLbD()
 						// convert Unit to Veteran Unit of the Profession
 						int expert = GC.getProfessionInfo(pLoopUnit->getProfession()).LbD_getExpert();
 						UnitTypes expertUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(expert);
+						OOS_LOG("doLbD", getTypeStr(expertUnitType));
 						CvUnit* expertUnit = initUnit(expertUnitType, GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession(), pLoopUnit->getX_INLINE(), pLoopUnit->getY_INLINE());
 						expertUnit->joinGroup(pLoopUnit->getGroup());
 						expertUnit->convert(pLoopUnit, true);
@@ -20892,6 +20916,7 @@ void CvPlayer::doLbD()
 					{
 						// convert Unit to Free Settler
 						UnitTypes DefaultUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
+						OOS_LOG("doLbD", getTypeStr(DefaultUnitType));
 						CvUnit* DefaultUnit = initUnit(DefaultUnitType, GC.getUnitInfo(DefaultUnitType).getDefaultProfession(), pLoopUnit->getX_INLINE(), pLoopUnit->getY_INLINE());
 						DefaultUnit->joinGroup(pLoopUnit->getGroup());
 						DefaultUnit->convert(pLoopUnit, true);
@@ -21110,6 +21135,7 @@ void CvPlayer::checkForNativeSlaves()
 							}
 
 							//exchanging gold
+							OOS_LOG("CvPlayer::checkForNativeSlaves AI", totalslaveprice);
 							potentialSlavePlayer.changeGold(totalslaveprice);
 							changeGold(-totalslaveprice);
 							m_iTimerNativeSlave = GC.getTIMER_NATIVE_SLAVE() * gamespeedMod / 100; // WTP, ray, small correction in balancing
@@ -21213,7 +21239,7 @@ void CvPlayer::checkForAfricanSlaves()
 	int totalslavesprice = baseslaveprice - discount;
 	totalslavesprice = numSlavesOffered * totalslavesprice * gamespeedMod / 100;
 
-	//simple logik for AI
+	//simple logic for AI
 	if (!isHuman())
 	{
 		if (getGold() > totalslavesprice * 2)
@@ -21230,6 +21256,7 @@ void CvPlayer::checkForAfricanSlaves()
 					SlaveUnit = initUnit(SlaveType, GC.getUnitInfo(SlaveType).getDefaultProfession(), locationToAppear->coord(), NO_UNITAI);
 				}
 				//pay the king
+				OOS_LOG("CvPlayer::checkForAfricanSlaves AI", totalslavesprice);
 				King.changeGold(totalslavesprice);
 				King.AI_changeAttitudeExtra(getID(), 1);
 				changeGold(-totalslavesprice);
@@ -21321,7 +21348,7 @@ void CvPlayer::checkForPrisonsCrowded()
 
 	totalprisonersprice = numPrisonersOffered * totalprisonersprice * gamespeedMod / 100;
 
-	//simple logik for AI
+	//simple logic for AI
 	if (!isHuman())
 	{
 		if (getGold() > totalprisonersprice * 2)
@@ -21338,6 +21365,7 @@ void CvPlayer::checkForPrisonsCrowded()
 					PrisonerUnit = initUnit(PrisonerType, GC.getUnitInfo(PrisonerType).getDefaultProfession(), locationToAppear->coord(), NO_UNITAI);
 				}
 				//pay the king
+				OOS_LOG("CvPlayer::checkForPrisonsCrowded AI", totalprisonersprice);
 				King.changeGold(totalprisonersprice);
 				King.AI_changeAttitudeExtra(getID(), 1);
 				changeGold(-totalprisonersprice);
@@ -21427,7 +21455,7 @@ void CvPlayer::checkForRevolutionaryNoble()
 	randompart = GC.getGameINLINE().getSorenRandNum(randompart, "NobleRandomPart");
 	int pricetopay = basenobleprice - randompart;
 
-	//simple logik for AI
+	//simple logic for AI
 	if (!isHuman())
 	{
 		if (getGold() > pricetopay * 2)
@@ -21441,6 +21469,7 @@ void CvPlayer::checkForRevolutionaryNoble()
 				CvUnit* NobleUnit;
 				NobleUnit = initUnit(NobleType, GC.getUnitInfo(NobleType).getDefaultProfession(), locationToAppear->coord(), NO_UNITAI);
 				//pay the king
+				OOS_LOG("CvPlayer::checkForRevolutionNoble AI", pricetopay);
 				GET_PLAYER(getParent()).changeGold(pricetopay);
 				GET_PLAYER(getParent()).AI_changeAttitudeExtra(getID(), 5);
 				changeGold(-pricetopay);
@@ -21545,7 +21574,7 @@ void CvPlayer::checkForBishop()
 	randompart = GC.getGameINLINE().getSorenRandNum(randompart, "BishopRandomPart");
 	int pricetopay = basebishopprice - randompart;
 
-	//simple logik for AI
+	//simple logic for AI
 	if (!isHuman())
 	{
 		if (getGold() > pricetopay * 2)
@@ -21559,6 +21588,7 @@ void CvPlayer::checkForBishop()
 				CvUnit* BishopUnit;
 				BishopUnit = initUnit(BishopType, GC.getUnitInfo(BishopType).getDefaultProfession(), locationToAppear->coord(), NO_UNITAI);
 				//pay the king
+				OOS_LOG("CvPlayer::checkForBishop AI", pricetopay);
 				Church.changeGold(pricetopay);
 				changeGold(-pricetopay);
 				m_iTimerBishop = GC.getTIMER_BISHOP()*gamespeedMod/100;
@@ -21879,6 +21909,7 @@ void CvPlayer::checkForStealingImmigrant()
 					gDLL->getEventReporterIFace()->emmigrantAtDocks(getID(), pUnit->getID());
 				}
 
+				OOS_LOG("CvPlayer::checkForStealingImmigrants AI", priceStealingImmigrant);
 				changeGold(-priceStealingImmigrant);
 			}
 		}
@@ -22011,6 +22042,7 @@ void CvPlayer::checkForSmugglers()
 			CvUnit* SmugglingShipUnit;
 			SmugglingShipUnit = initUnit(SmugglingShipType, GC.getUnitInfo(SmugglingShipType).getDefaultProfession(), locationToAppear->coord(), NO_UNITAI);
 			//pay
+			OOS_LOG("CvPlayer::checkForSmugglers AI", pricetopay);
 			changeGold(-pricetopay);
 			m_iTimerSmugglingShip = GC.getTIMER_SMUGGLING_SHIP()*gamespeedMod/100;
 		}
@@ -22094,9 +22126,9 @@ void CvPlayer::checkForRangers()
 				m_iTimerRanger = GC.getTIMER_RANGER() * gamespeedMod/100;
 				//create the ranger
 				UnitTypes RangerType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_RANGER"));
-				CvUnit* RangerUnit;
-				RangerUnit = initUnit(RangerType, GC.getUnitInfo(RangerType).getDefaultProfession(), locationToAppear->coord(), NO_UNITAI);
+				CvUnit* RangerUnit = initUnit(RangerType, GC.getUnitInfo(RangerType).getDefaultProfession(), locationToAppear->coord(), NO_UNITAI);
 				//pay
+				OOS_LOG("CvPlayer::checkForRangers AI", pricetopay);
 				changeGold(-pricetopay);
 			}
 		}
@@ -22220,6 +22252,7 @@ void CvPlayer::checkForConquistadors()
 					CvUnit* ConquistadorUnit;
 					ConquistadorUnit = initUnit(ConquistadorType, GC.getUnitInfo(ConquistadorType).getDefaultProfession(), locationToAppear->coord(), NO_UNITAI);
 					//pay
+					OOS_LOG("CvPlayer::checkForConquistadors AI", pricetopay);
 					changeGold(-iMercPriceAI);
 				}
 			}
@@ -22339,6 +22372,7 @@ void CvPlayer::checkForPirates()
 			CvUnit* PirateShipUnit;
 			PirateShipUnit = initUnit(PirateShipType, GC.getUnitInfo(PirateShipType).getDefaultProfession(), locationToAppear->coord(), NO_UNITAI);
 			//pay
+			OOS_LOG("CvPlayer::checkForPirates AI", pricetopay);
 			changeGold(-pricetopay);
 			m_iTimerPirates = GC.getTIMER_PIRATES() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent() / 100;
 		}
@@ -22559,6 +22593,7 @@ void CvPlayer::checkForRoyalIntervention()
 		// if AI has the money
 		if (getGold() > iGoldModifiedByAttitude)
 		{
+			OOS_LOG("CvPlayer::checkForRoyalIntervention AI", iGoldModifiedByAttitude);
 			changeGold(-iGoldModifiedByAttitude);
 		}
 
@@ -22933,7 +22968,7 @@ void CvPlayer::checkForContinentalGuard()
 		return;
 	}
 
-	//simple logik for AI
+	//simple logic for AI
 	if (!isHuman())
 	{
 		CvPlayerAI& kPlayerAI = GET_PLAYER((PlayerTypes) getID());
@@ -22944,6 +22979,7 @@ void CvPlayer::checkForContinentalGuard()
 			CvUnit* ContinentalGuardUnit;
 			ContinentalGuardUnit = initUnit(ContinentalGuardType, GC.getUnitInfo(ContinentalGuardType).getDefaultProfession(), locationToAppear->coord(), NO_UNITAI);
 			//pay
+			OOS_LOG("CvPlayer::checkForMortar AI1", pricetopay);
 			changeGold(-pricetopay);
 			m_iTimerContinentalGuard = GC.getTIMER_CONTINENTAL_GUARD()*gamespeedMod/100;
 		}
@@ -23050,7 +23086,7 @@ void CvPlayer::checkForMortar()
 		return;
 	}
 
-	//simple logik for AI
+	//simple logic for AI
 	if (!isHuman())
 	{
 		CvPlayerAI& kPlayerAI = GET_PLAYER((PlayerTypes) getID());
@@ -23061,6 +23097,7 @@ void CvPlayer::checkForMortar()
 			CvUnit* MortarUnit;
 			MortarUnit = initUnit(MortarType, GC.getUnitInfo(MortarType).getDefaultProfession(), locationToAppear->coord(), NO_UNITAI);
 			//pay
+			OOS_LOG("CvPlayer::checkForMortar AI2", pricetopay);
 			changeGold(-pricetopay);
 			m_iTimerMortar = GC.getTIMER_MORTAR()*gamespeedMod/100;
 		}
@@ -23128,8 +23165,10 @@ void CvPlayer::checkForMilitiaOrUnrest()
 					if (chanceForMilitia > randomMilitiaValue && getGold() >= pricetopay && pLoopCity->getYieldStored(YIELD_FOOD) > foodQty)
 					{
 						//create the Militia
+						OOS_LOG_3("Creating militia", CvString(pLoopCity->getName()).c_str(), getTypeStr(MilitiaType));
 						CvUnit* MilitiaUnit = initUnit(MilitiaType, GC.getUnitInfo(MilitiaType).getDefaultProfession(), pLoopCity->getX_INLINE(), pLoopCity->getY_INLINE(), NO_UNITAI);
 						//pay
+						OOS_LOG("CvPlayer::checkForMilitiaOrUnrest Human get militia", pricetopay);
 						changeGold(-pricetopay);
 						pLoopCity->changeYieldStored(YIELD_FOOD, -foodQty);
 						// add message
@@ -23159,6 +23198,7 @@ void CvPlayer::checkForMilitiaOrUnrest()
 						//create the Militia
 						CvUnit* MilitiaUnit = initUnit(MilitiaType, GC.getUnitInfo(MilitiaType).getDefaultProfession(), pLoopCity->coord(), NO_UNITAI);
 						//pay
+						OOS_LOG("CvPlayer::checkForMilitiaOrUnrest AI get militia", pricetopay);
 						changeGold(-pricetopay);
 						pLoopCity->changeYieldStored(YIELD_FOOD, -foodQty);
 					}
@@ -23247,6 +23287,7 @@ void CvPlayer::checkForChurchContact()
 				setImmigrationThresholdMultiplier(((getImmigrationThresholdMultiplier() * 90) / 100));
 
 				// pay
+				OOS_LOG("CvPlayer::checkForChurchContact", pricetopay);
 				ChurchPlayer.changeGold(pricetopay);
 				changeGold(-pricetopay);
 
@@ -23581,6 +23622,8 @@ void CvPlayer::acquireUsedShip(UnitClassTypes iUsedShipClassType, int iPrice)
 			int iXPRand = std::max(iMin_XP_UsedShips, GC.getGameINLINE().getSorenRandNum(iMax_XP_UsedShips, "random used ship XP"));
 			pUnit->setExperience(iXPRand);
 
+			OOS_LOG_3("CvPlayer::acquireUsedShip", getTypeStr(eUnit), iPrice);
+
 			// we pay the Gold
 			changeGold(-iPrice);
 
@@ -23849,6 +23892,8 @@ void CvPlayer::acquireForeignImmigrant(UnitClassTypes iForeignImmigrantClassType
 
 	// check the Colonization Specific Unit
 	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iForeignImmigrantClassType);
+
+	OOS_LOG_3("CvPlayer::acquireForeignImmigrant", getTypeStr(eUnit), iPrice);
 
 	// We simply spawn in the colonies
 	CvUnit* pUnit = initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pCity->coord(), NO_UNITAI);

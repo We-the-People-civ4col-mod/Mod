@@ -718,6 +718,8 @@ void CvUnit::addToMap(CvPlot *targetPlot)
 
 void CvUnit::updateOwnerCache(int iChange)
 {
+	OOS_LOG_3("Update owner cache", getTypeStr(getUnitClassType()), iChange);
+
 	CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
 
 	GET_TEAM(getTeam()).changeUnitClassCount(((UnitClassTypes)(m_pUnitInfo->getUnitClassType())), iChange);
@@ -1614,6 +1616,7 @@ void CvUnit::updateCombat(bool bQuick)
 						if (pDefender->getUnitInfo().isTreasure())
 						{
 							int iRaidTreasureSum = pDefender->getYieldStored() * GC.getNATIVE_GOODS_RAID_PERCENT() / 100;
+							OOS_LOG("Raid gold", iRaidTreasureSum);
 							GET_PLAYER(getOwnerINLINE()).changeGold(iRaidTreasureSum);
 						}
 					}
@@ -1626,6 +1629,7 @@ void CvUnit::updateCombat(bool bQuick)
 						if (pDefender->getUnitInfo().isTreasure())
 						{
 							int iRaidTreasureSum = pDefender->getYieldStored() * GC.getNATIVE_GOODS_RAID_PERCENT() / 100;
+							OOS_LOG("Native attack gold", iRaidTreasureSum);
 							GET_PLAYER(getOwnerINLINE()).changeGold(iRaidTreasureSum);
 						}
 
@@ -1672,6 +1676,7 @@ void CvUnit::updateCombat(bool bQuick)
 				//we now also apply the gold change from Promotions stored in the Unit
 				iGold += (iGold * getAnimalGoldChange()) / 100;
 				//WTP, ray, Animal Promotions increase gold from Animals - END
+				OOS_LOG_3("Gold for killling animal", getOwnerINLINE(), iGold);
 				GET_PLAYER(getOwnerINLINE()).changeGold(iGold);
 				szBuffer = gDLL->getText("TXT_KEY_ANIMAL_REWARD", pDefender->getUnitInfo().getDescription(), iGold);
 			}
@@ -4176,6 +4181,7 @@ void CvUnit::gift(bool bTestTransport)
 	}
 
 	FAssertMsg(plot()->getOwnerINLINE() != NO_PLAYER, "plot()->getOwnerINLINE() is not expected to be equal with NO_PLAYER");
+	OOS_LOG("gift unit", getTypeStr(getUnitType()));
 	pGiftUnit = GET_PLAYER(plot()->getOwnerINLINE()).initUnit(getUnitType(), getProfession(), getX_INLINE(), getY_INLINE(), AI_getUnitAIType(), getFacingDirection(false), getYieldStored());
 
 	FAssertMsg(pGiftUnit != NULL, "GiftUnit is not assigned a valid value");
@@ -5534,6 +5540,7 @@ void CvUnit::doLearn()
 	UnitTypes eUnitType = getLearnUnitType(plot());
 	FAssert(eUnitType != NO_UNIT);
 
+	OOS_LOG("CvUnit::doLearn", getTypeStr(eUnitType));
 	CvUnit* pLearnUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eUnitType, getProfession(), getX_INLINE(), getY_INLINE(), AI_getUnitAIType());
 	FAssert(pLearnUnit != NULL);
 	pLearnUnit->joinGroup(getGroup());
@@ -7045,6 +7052,7 @@ bool CvUnit::pillage()
 
 			if (iPillageGold > 0)
 			{
+				OOS_LOG("CvUnit::pillage gold", iPillageGold);
 				GET_PLAYER(getOwnerINLINE()).changeGold(iPillageGold);
 
 				szBuffer = gDLL->getText("TXT_KEY_MISC_PLUNDERED_GOLD_FROM_IMP", iPillageGold, GC.getImprovementInfo(pPlot->getImprovementType()).getTextKeyWide());
@@ -7308,6 +7316,7 @@ void CvUnit::buyLandAfterAcquire()
 			gDLL->UI().addPlayerMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, GC.getEraInfo(GC.getGameINLINE().getCurrentEra()).getAudioUnitDefeatScript(), MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), NULL, NULL);
 		}
 
+		OOS_LOG("CvUnit::buyLandAfterAcquire", m_iMoneyToBuyLand);
 		GET_PLAYER(m_ePlayerToBuyLand).changeGold((m_iMoneyToBuyLand * GC.getDefineINT("BUY_PLOT_SELLER_INCOME_PERCENT")) / 100);
 		GET_PLAYER(getOwnerINLINE()).AI_changeGoldTradedTo(m_ePlayerToBuyLand, m_iMoneyToBuyLand);
 		GET_PLAYER(getOwnerINLINE()).changeGold(m_iMoneyToBuyLand * -1);
@@ -7674,6 +7683,7 @@ bool CvUnit::build(BuildTypes eBuild)
 	// that function will notify the entity to stop building.
 	NotifyEntity((MissionTypes)GC.getBuildInfo(eBuild).getMissionType());
 
+	OOS_LOG("CvUnit::build", getTypeStr(eBuild));
 	GET_PLAYER(getOwnerINLINE()).changeGold(-(GET_PLAYER(getOwnerINLINE()).getBuildCost(plot(), eBuild)));
 
 	bFinished = plot()->changeBuildProgress(eBuild, workRate(false), getTeam());
@@ -8386,6 +8396,7 @@ void CvUnit::upgrade(UnitTypes eUnit)
 
 	GET_PLAYER(getOwnerINLINE()).changeGold(-(upgradePrice(eUnit)));
 
+	OOS_LOG("CvUnit::upgrade", getTypeStr(eUnit));
 	pUpgradeUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, getProfession(), getX_INLINE(), getY_INLINE(), AI_getUnitAIType());
 
 	FAssertMsg(pUpgradeUnit != NULL, "UpgradeUnit is not assigned a valid value");
@@ -12201,6 +12212,7 @@ void CvUnit::processProfession(ProfessionTypes eProfession, int iChange, bool bU
 
 	if (iChange != 0)
 	{
+		OOS_LOG_3("processProfession", getTypeStr(eProfession), iChange);
 		processProfessionStats(eProfession, iChange);
 
 		if (eProfession != NO_PROFESSION)
@@ -14225,6 +14237,7 @@ void CvUnit::setYieldStored(int iYieldAmount)
 	int iChange = (iYieldAmount - getYieldStored());
 	if (iChange != 0)
 	{
+		OOS_LOG_3("set yield stored", getTypeStr(getUnitType()), iChange);
 		FAssert(iYieldAmount >= 0);
 		m_iYieldStored = iYieldAmount;
 
@@ -15096,9 +15109,11 @@ bool CvUnit::raidTreasury(CvCity* pCity)
 		return false;
 	}
 
+	OOS_LOG("Raid gold A", iNumTotalGold);
 	GET_PLAYER(getOwnerINLINE()).changeGold(iNumTotalGold);
 	if (NO_PLAYER != eTargetPlayer)
 	{
+		OOS_LOG("Raid gold B", iNumTotalGold);
 		GET_PLAYER(eTargetPlayer).changeGold(-iNumTotalGold);
 	}
 
@@ -16117,12 +16132,14 @@ void CvUnit::createTreasures(int overallAmount, int maxTreasureGold)
 
 	for (int treasures = 0; treasures < treasureCount_MaxAmount; treasures++)
 	{
+		OOS_LOG("Create treasure", maxTreasureGold);
 		CvUnit* pTreasure = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), plot()->getX_INLINE(), plot()->getY_INLINE(), NO_UNITAI, NO_DIRECTION, maxTreasureGold);
 		// set Movement Points to 0, to prevent cheating
 		pTreasure->setMoves(maxMoves());
 	}
 	if (restAmount > 0)
 	{
+		OOS_LOG("Create treasure", restAmount);
 		CvUnit* pTreasure = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), plot()->getX_INLINE(), plot()->getY_INLINE(), NO_UNITAI, NO_DIRECTION, restAmount);
 		// set Movement Points to 0, to prevent cheating
 		pTreasure->setMoves(maxMoves());
@@ -16180,6 +16197,7 @@ void CvUnit::spawnOwnPlayerUnitOnPlotOfUnit(int /*UnitClassTypes*/ iIndex) const
 	UnitTypes eUnitToSpawn = (UnitTypes)GC.getCivilizationInfo(ownPlayer.getCivilizationType()).getCivilizationUnits(iIndex);
 	if (eUnitToSpawn != NO_UNIT)
 	{
+		OOS_LOG("CvUnit::spawnOwnPlayerUnitOnPlotOfUnit", getTypeStr(eUnitToSpawn));
 		CvUnit* eOwnUnitToSpawn = ownPlayer.initUnit(eUnitToSpawn, GC.getUnitInfo(eUnitToSpawn).getDefaultProfession(), getX_INLINE(), getY_INLINE(), NO_UNITAI);
 	}
 	return;

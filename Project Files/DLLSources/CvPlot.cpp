@@ -370,6 +370,7 @@ void CvPlot::doTurn()
 				// we have found a Unit and will spawn it now
 				if (eBestUnit != NO_UNIT)
 				{
+					OOS_LOG("Barbarian spawn", getTypeStr(eBestUnit));
 					CvUnit* pNewUnit = barbarianPlayer.initUnit(eBestUnit, NO_PROFESSION, getX_INLINE(), getY_INLINE(), UNITAI_ANIMAL);
 					pNewUnit->setBarbarian(true);
 				}
@@ -10093,6 +10094,7 @@ void CvPlot::doFort()
 
 							int iGoldRewardRandomBase = GC.getWILD_ANIMAL_REWARD_RANDOM_BASE();
 							int iGold = GC.getGameINLINE().getSorenRandNum(iGoldRewardRandomBase, "Animal Kill Reward");
+							OOS_LOG("Fort kill animal", iGold);
 							GET_PLAYER(FortOwner).changeGold(iGold);
 
 							szBuffer = gDLL->getText("TXT_KEY_FORT_IMPROVEMENT_KILLED_ANIMAL", iGold);
@@ -10253,6 +10255,7 @@ void CvPlot::doMonastery()
 								UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(GET_PLAYER(MonasteryOwner).getCivilizationType()).getCivilizationUnits(eUnitClass);
 								if (eUnit != NO_UNIT)
 								{
+									OOS_LOG("doMonastery", getTypeStr(eUnit));
 									CvUnit* pUnit = GET_PLAYER(MonasteryOwner).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), getX_INLINE(), getY_INLINE());
 									szBuffer = gDLL->getText("TXT_KEY_MONASTERY_IMPROVEMENT_CONVERTED_NATIVE");
 									gDLL->UI().addPlayerMessage(MonasteryOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
@@ -10267,6 +10270,7 @@ void CvPlot::doMonastery()
 						{
 							int iGoldRewardRandomBase = GC.getDefineINT("MONASTERY_PRESENT_BASE");
 							int iGold = GC.getGameINLINE().getSorenRandNum(iGoldRewardRandomBase, "Monastery Present");
+							OOS_LOG("Monastery gold", iGold);
 							GET_PLAYER(MonasteryOwner).changeGold(iGold);
 							pLoopUnit2->AI_setUnitAIState(UNITAI_STATE_RETURN_HOME);
 							szBuffer = gDLL->getText("TXT_KEY_MONASTERY_IMPROVEMENT_GOT_PRESENT", iGold);
@@ -10350,6 +10354,7 @@ void CvPlot::spawnPlayerUnitOnPlot(int /*PlayerTypes*/ iPlayer, int /*UnitClassT
 	UnitTypes eUnitToSpawn = (UnitTypes)GC.getCivilizationInfo(ownPlayer.getCivilizationType()).getCivilizationUnits(iIndex);
 	if (eUnitToSpawn != NO_UNIT)
 	{
+		OOS_LOG("CvPlot::spawnPlayerUnitOnPlot",  getTypeStr(eUnitToSpawn));
 		CvUnit* eOwnUnitToSpawn = ownPlayer.initUnit(eUnitToSpawn, GC.getUnitInfo(eUnitToSpawn).getDefaultProfession(), getX_INLINE(), getY_INLINE(), NO_UNITAI);
 	}
 	return;

@@ -2671,6 +2671,7 @@ void CvCity::hurry(HurryTypes eHurry)
 		}
 	}
 	// TAC - AI Military Buildup - koma13 - END
+	OOS_LOG_3("Hurry", CvString(getName()).c_str(), getID());
 	GET_PLAYER(getOwnerINLINE()).changeGold(-iHurryGold);
 	GET_PLAYER(getOwnerINLINE()).AI_changeHurrySpending(iHurryGold);
 	changePopulation(-iHurryPopulation);
@@ -2740,6 +2741,7 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange)
 		changeDomainFreeExperience(((DomainTypes)iI), GC.getBuildingInfo(eBuilding).getDomainFreeExperience(iI) * iChange);
 		changeDomainProductionModifier(((DomainTypes)iI), GC.getBuildingInfo(eBuilding).getDomainProductionModifier(iI) * iChange);
 	}
+	OOS_LOG("Process Building", getTypeStr(eBuilding));
 	GET_PLAYER(getOwnerINLINE()).changeAssets(GC.getBuildingInfo(eBuilding).getAssetValue() * iChange);
 	area()->changePower(getOwnerINLINE(), (GC.getBuildingInfo(eBuilding).getPowerValue() * iChange));
 	GET_PLAYER(getOwnerINLINE()).changePower(GC.getBuildingInfo(eBuilding).getPowerValue() * iChange);
@@ -3431,6 +3433,7 @@ int CvCity::getPopulation() const
 
 void CvCity::setPopulation(int iNewValue)
 {
+	OOS_LOG_3("Set population of city", CvString(getName()).c_str(), iNewValue);
 	int iOldPopulation = getPopulation();
 
 	if (iOldPopulation != iNewValue)
@@ -4898,6 +4901,7 @@ void CvCity::setYieldStored(YieldTypes eYield, int iValue)
 			checkCompletedBuilds(eYield, iChange);
 		}
 
+		OOS_LOG_3("Set yield stored", getTypeStr(eYield), iChange);
 		GET_PLAYER(getOwnerINLINE()).changePower(GC.getYieldInfo(eYield).getPowerValue() * iChange);
 		GET_PLAYER(getOwnerINLINE()).changeAssets(GC.getYieldInfo(eYield).getAssetValue() * iChange);
 		area()->changePower(getOwnerINLINE(), GC.getYieldInfo(eYield).getPowerValue() * iChange);
@@ -7219,6 +7223,7 @@ void CvCity::doGrowth()
 
 			if (NO_UNIT != eUnit)
 			{
+				OOS_LOG_3("City growth unit", CvString(getName()).c_str(), getTypeStr(eUnit));
 				CvUnit* pUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession(), getX_INLINE(), getY_INLINE());
 				// WTP, ray, making this error save to prevent negative Storage bug - START
 				int iFoodUsedForGrowth = growthThreshold() - getFoodKept();
@@ -7277,6 +7282,7 @@ void CvCity::doGrowth()
 					// We could donate food
 					if (iGold > iGoldToPayedForStarvationDonation)
 					{
+						OOS_LOG_3("doGrowth donation", CvString(getName()).c_str(), iGoldToPayedForStarvationDonation);
 						kPlayer.changeGold(-iGoldToPayedForStarvationDonation);
 						changeFood(iFoodReceivedForStarvationDonation);
 						gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_STARVING_BUT_COLONIES_PAID", getNameKey(), iGoldToPayedForStarvationDonation, iFoodReceivedForStarvationDonation), coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
@@ -7512,6 +7518,7 @@ void CvCity::doYields()
 					if (iProfit > 0)
 					{
 						CvPlayer& kPlayerEurope = GET_PLAYER(GET_PLAYER(getOwnerINLINE()).getParent());
+						OOS_LOG_3("doYields", CvString(getName()).c_str(), iProfit);
 						GET_PLAYER(getOwnerINLINE()).changeGold(iProfit * GET_PLAYER(getOwnerINLINE()).getExtraTradeMultiplier(kPlayerEurope.getID()) / 100);
 
 						int iDiscountedLoss = iOverflowYieldSellPercent * iLoss / 100;
@@ -7976,6 +7983,7 @@ void CvCity::doNativeTradePost()
 		if (iCurrentTradePostGold >= iThreshold)
 		{
 			// spawn the Treasure
+			OOS_LOG("Creating treasure from trading post", CvString(getName()).c_str());
 			UnitClassTypes eUnitClass = (UnitClassTypes) GC.getDefineINT("TREASURE_UNITCLASS");
 			UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getCivilizationUnits(eUnitClass);
 			CvUnit* pTreasure = GET_PLAYER(ePlayer).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), plot()->getX_INLINE(), plot()->getY_INLINE(), NO_UNITAI, NO_DIRECTION, iCurrentTradePostGold);
@@ -8591,6 +8599,7 @@ void CvCity::applyEvent(EventTypes eEvent, const EventTriggeredData& kTriggeredD
 		{
 			for (int i = 0; i < kEvent.getNumUnits(); ++i)
 			{
+				OOS_LOG_3("Creating unit from event", getTypeStr(eEvent), getTypeStr(eUnit));
 				GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), getX_INLINE(), getY_INLINE());
 			}
 		}
@@ -10258,6 +10267,7 @@ void CvCity::doCityCrime()
 	// we substract gold if there is enough
 	if (kPlayer.getGold() > iCityCrime)
 	{
+		OOS_LOG_3("Crime", CvString(getName()).c_str(), iCityCrime);
 		kPlayer.changeGold(-iCityCrime);
 
 		// add message
@@ -12073,6 +12083,8 @@ bool CvCity::educateStudent(int iUnitId, UnitTypes eUnit)
 	FAssert(pLearnUnit != NULL);
 	pLearnUnit->convert(pUnit, true);
 
+	OOS_LOG_3("Newly educated unit", CvString(getName()).c_str(), getTypeStr(eUnit));
+
 	// TAC - EDUCATION COST SYSTEM - koma13, KingMB, Netbandit - 23.11.09 - START
 	/*
 	// Original Code
@@ -12087,6 +12099,7 @@ bool CvCity::educateStudent(int iUnitId, UnitTypes eUnit)
 
 
 	setEducationThresholdMultiplier((getEducationThresholdMultiplier() * (100 + GC.getEDUCATION_THRESHOLD_INCREASE())) / 100);
+	OOS_LOG_3("educateStudent", CvString(getName()).c_str(), iPrice);
 	kPlayer.changeGold(-iPrice);
 
 	BuildingTypes eSchoolBuilding = getYieldBuilding(YIELD_EDUCATION);
@@ -12976,6 +12989,7 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 
 	FAssert(expertUnitType != NO_UNIT);
 	//ray16
+	OOS_LOG_3("Learning by doing", CvString(getName()).c_str(), getTypeStr(expertUnitType));
 	CvUnit* expertUnit = GET_PLAYER(getOwnerINLINE()).initUnit(expertUnitType, NO_PROFESSION, getX_INLINE(), getY_INLINE(), convUnit->AI_getUnitAIType());
 	FAssert(expertUnit != NULL);
 	bool remove = removePopulationUnit(convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
@@ -13087,6 +13101,7 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 
 	// spawn the Unit
 	//ray16
+	OOS_LOG_3("Learning by doing (free)", CvString(getName()).c_str(), getTypeStr(GeneratedUnitType));
 	CvUnit* GeneratedUnit = GET_PLAYER(getOwnerINLINE()).initUnit(GeneratedUnitType, NO_PROFESSION, getX_INLINE(), getY_INLINE(), convUnit->AI_getUnitAIType());
 	FAssert(GeneratedUnit != NULL);
 	bool remove = removePopulationUnit(convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
@@ -14089,6 +14104,7 @@ void CvCity::doEntertainmentBuildings()
 
 	if (highestLevelEntertainmentBuilding != NO_BUILDING && iGoldthroughCulture > 0)
 	{
+		OOS_LOG_3("Entertainment building", CvString(getName()).c_str(), iGoldthroughCulture);
 		GET_PLAYER(getOwnerINLINE()).changeGold(iGoldthroughCulture);
 		CvWString szBuffer = gDLL->getText("TXT_KEY_GOLD_BY_ENTERTAINMENT", GC.getBuildingInfo(highestLevelEntertainmentBuilding).getDescription(), getNameKey(), iGoldthroughCulture);
 		gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
@@ -14179,6 +14195,7 @@ void CvCity::spawnOwnPlayerUnitOnPlotOfCity(int /*UnitClassTypes*/ iIndex) const
 	UnitTypes eUnitToSpawn = (UnitTypes)GC.getCivilizationInfo(ownPlayer.getCivilizationType()).getCivilizationUnits(iIndex);
 	if (eUnitToSpawn != NO_UNIT)
 	{
+		OOS_LOG_3("spawnOwnPlayerUnitOnPlotOfCity", CvString(getName()).c_str(), getTypeStr(eUnitToSpawn));
 		CvUnit* eOwnUnitToSpawn = ownPlayer.initUnit(eUnitToSpawn, GC.getUnitInfo(eUnitToSpawn).getDefaultProfession(), getX_INLINE(), getY_INLINE(), NO_UNITAI);
 	}
 	return;
