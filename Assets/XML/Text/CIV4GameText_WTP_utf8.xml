@@ -101,13 +101,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SLAVE_PRODUCTION_PERCENT_MODIFIER_CITIZENHELP</Tag>
-        <English>[ICON_BULLET]Slave production modifier of [COLOR_HIGHLIGHT_TEXT]%d1_NewVal%%[COLOR_REVERT] </English>
+        <English>[ICON_BULLET]slave production modifier of [COLOR_HIGHLIGHT_TEXT]%d1_NewVal%%[COLOR_REVERT] </English>
         <German>[ICON_BULLET]Sklavenproduktionsmodifikator von [COLOR_HIGHLIGHT_TEXT]%d1_NewVal%%[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SLAVE_PRODUCTION_WITHOUT_MODIFIER_CITIZENHELP</Tag>
-        <English>Without Slave Modifier: [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] %d2%F3</English>
-        <German>Ohne Sklavenproduktionsbonus: [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] %d2%F3</German>
+        <English>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]: %d2%F3 (without slave production modifier)</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]: %d2%F3 (ohne Sklavenproduktionsmodifikator)</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PRODUCTION_PLUS_MODIFIER_CITIZENHELP</Tag>

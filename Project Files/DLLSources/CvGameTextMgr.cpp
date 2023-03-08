@@ -9571,7 +9571,7 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
 					}
 
 					szString.append(NEWLINE);
-					szString.append(gDLL->getText("TXT_KEY_SLAVE_PRODUCTION_WITHOUT_MODIFIER_CITIZENHELP",  GC.getYieldInfo(eProfessionYield).getTextKeyWide(), iYieldAmountWithoutModifier, iProfessionYieldChar));
+					szString.append(gDLL->getText("TXT_KEY_SLAVE_PRODUCTION_WITHOUT_MODIFIER_CITIZENHELP", kUnit.getNameKey(), iYieldAmountWithoutModifier, iProfessionYieldChar));
 					szString.append(NEWLINE);
 					szString.append(gDLL->getText("TXT_KEY_SLAVE_PRODUCTION_PERCENT_MODIFIER_CITIZENHELP", iSlaveWorkerProductionBonus));
 					szString.append(L"\n=======================\n");
