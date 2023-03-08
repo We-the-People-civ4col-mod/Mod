@@ -1922,7 +1922,6 @@ bool CvPlayer::isHuman() const
 
 void CvPlayer::updateHuman()
 {
-	bool old_m_bHuman = m_bHuman; // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 	if (getID() == NO_PLAYER)
 	{
 		m_bHuman = false;
@@ -1940,10 +1939,7 @@ void CvPlayer::updateHuman()
 	// Dale - AoD: AI Autoplay END
 
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
-	if (old_m_bHuman != m_bHuman)
-	{
-		Update_cache_YieldEquipmentAmount();
-	}
+	Update_cache_YieldEquipmentAmount();
 	// cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 }
 
@@ -18933,10 +18929,17 @@ int CvPlayer::getYieldEquipmentAmountUncached(ProfessionTypes eProfession, Yield
 
 	int iAmount = GC.getProfessionInfo(eProfession).getYieldEquipmentAmount(eYield);
 
+	if (iAmount <= 0)
+	{
+		// the rest are modifiers. 0 + modifiers will always be 0
+		return 0;
+	}
+
 	iAmount *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 	iAmount /= 100;
 
-	if (!isHuman())
+	// can't use CvPlayer::isHuman as that would make enabling autoplay alter cost
+	if (!GC.getInitCore().getHuman(getID()))
 	{
 		iAmount *= GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAITrainPercent();
 		iAmount /= 100;
@@ -18949,16 +18952,27 @@ int CvPlayer::getYieldEquipmentAmountUncached(ProfessionTypes eProfession, Yield
 }
 
 // cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
-void CvPlayer::Update_cache_YieldEquipmentAmount(ProfessionTypes eProfession)
+bool CvPlayer::Update_cache_YieldEquipmentAmount(ProfessionTypes eProfession)
 {
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++) {
-		m_cache_YieldEquipmentAmount[eProfession].set(getYieldEquipmentAmountUncached(eProfession, (YieldTypes)iYield), iYield);
+	bool bAltered = false;
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
+	{
+		int iNewCost = getYieldEquipmentAmountUncached(eProfession, eYield);
+		if (m_cache_YieldEquipmentAmount[eProfession].get(eYield) != iNewCost)
+		{
+			bAltered = true;
+		}
+		m_cache_YieldEquipmentAmount[eProfession].set(iNewCost, eYield);
 	}
 	m_cache_YieldEquipmentAmount[eProfession].isEmpty(); // This will release the array if it's empty
+	
+	return bAltered;
 }
 
 void CvPlayer::Update_cache_YieldEquipmentAmount()
 {
+	bool bAltered = false;
+
 	///TKs Nightinggale fix
 	if (m_eID <= NO_PLAYER || GC.getGameINLINE().getHandicapType() == NO_HANDICAP)
 	{
@@ -18966,8 +18980,17 @@ void CvPlayer::Update_cache_YieldEquipmentAmount()
 		return;
 	}
 
-	for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); iProfession++) {
-		Update_cache_YieldEquipmentAmount((ProfessionTypes)iProfession);
+	for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
+	{
+		if (Update_cache_YieldEquipmentAmount(eProfession))
+		{
+			bAltered = true;
+		}
+	}
+	if (bAltered)
+	{
+		// altered cost means chance of altered power. Recalculate it from scratch to be sure it's correct
+		checkPower(true);
 	}
 }
 // cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale

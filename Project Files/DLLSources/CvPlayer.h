@@ -1144,7 +1144,7 @@ protected:
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
 	YieldArray<unsigned short> *m_cache_YieldEquipmentAmount;
 	void Update_cache_YieldEquipmentAmount();
-	void Update_cache_YieldEquipmentAmount(ProfessionTypes eProfession);
+	bool Update_cache_YieldEquipmentAmount(ProfessionTypes eProfession);
 	int getYieldEquipmentAmountUncached(ProfessionTypes eProfession, YieldTypes eYield) const;
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
 	std::vector<EventTriggerTypes> m_triggersFired;
