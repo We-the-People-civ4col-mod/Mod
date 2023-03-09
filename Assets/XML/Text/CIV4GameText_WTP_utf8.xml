@@ -40,11 +40,13 @@
         <German>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns [NUM1:Runde:Runden])[COLOR_REVERT]</German>
         <Italian>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns [NUM1:turno:turni])[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns [NUM1:turno:turnos])[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns [NUM1:ход:ходов])[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER</Tag>
         <English>Milord, reinforcement troops sent by His Majesty have arrived following the declaration of war against us by another king.</English>
         <German>Milord, die von Seiner Majestät entsandten Verstärkungstruppen sind eingetroffen, da man uns auf Befehl eines anderen Königs den Krieg erklärt hat.</German>
+        <Russian>Милорд, войска подкрепления, посланные Его Величеством после объявления нам войны другим королем, прибыли.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_FREE_TURNS_WORKED</Tag>
@@ -62,6 +64,7 @@
         <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED_MAP</Tag>
         <English>Worked to become an [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] :[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] [NUM1:turn:turns]</English>
         <German>Arbeitet um [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] zu werden :[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] [NUM1:Runde:Runden]</German>
+        <Russian>Работал, чтобы стать [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] :[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] [NUM1:ход:ходов]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED_MAP</Tag>
@@ -103,11 +106,13 @@
         <Tag>TXT_KEY_SLAVE_PRODUCTION_PERCENT_MODIFIER_CITIZENHELP</Tag>
         <English>[ICON_BULLET]slave production modifier of [COLOR_HIGHLIGHT_TEXT]%d1_NewVal%%[COLOR_REVERT] </English>
         <German>[ICON_BULLET]Sklavenproduktionsmodifikator von [COLOR_HIGHLIGHT_TEXT]%d1_NewVal%%[COLOR_REVERT]</German>
+        <Russian>[ICON_BULLET]модификатор производства рабов [COLOR_HIGHLIGHT_TEXT]%d1_NewVal%%[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SLAVE_PRODUCTION_WITHOUT_MODIFIER_CITIZENHELP</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]: %d2%F3 (without slave production modifier)</English>
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]: %d2%F3 (ohne Sklavenproduktionsmodifikator)</German>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] : %d2%F3 (без модификатора производства рабов)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PRODUCTION_PLUS_MODIFIER_CITIZENHELP</Tag>
@@ -119,31 +124,37 @@
         <Tag>TXT_KEY_NATIVES_NOT_WILLING_ALREADY_COLONIST_LEARNING</Tag>
         <English>Milord, a foreign colonist is already living and learning in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. The Natives do not want to take a second one.[NEWLINE]We should come back when that other European has completed his training in the settlement.</English>
         <German>Milord, es lebt und lernt bereits ein anderer Europäer in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. Die Ureinwohner möchten vorerst keinen weiteren aufnehmen.[NEWLINE]Wir sollten zurückkehren, wenn der andere Europäer seine Zeit in der Siedlung beendet hat.</German>
+        <Russian>Милорд, другой колонист уже живет и учится в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. Индейцы не хотят брать второго.[NEWLINE]Мы можем вернуться, когда тот колонист завершит свое обучение в этом поселении.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NO_MORE_SETTLER</Tag>
         <English>Since [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] has no more settlements and no more settlers, His Majesty has decided to equip some colonists in Europe as settlers. Of course, this comes with a tax increase.</English>
         <German>Da [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] keine weiteren Siedlungen und auch keine Siedler mehr hat, hat Seine Majestät entschieden, in Europe einige Kolonisten als Siedler auszurüsten. Das ist natürlich mit einer Steuererhöhung verbunden.</German>
+        <Russian>Поскольку у [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] больше нет ни поселений, ни поселенцев, Его Величество решил сделать некоторых колонистов в Европе поселенцами. Конечно, это приведет к повышению налоговой ставки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_FAIL</Tag>
         <English>Milord, your missionary failed to establish a mission in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Though the Natives might have killed him for insulting their gods, instead they beat him badly leaving him completely broken and disillusioned.</English>
         <German>Milord, Euer Missionar ist dabei gescheitert, die Ureinwohner in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] zu missionieren. Trotz der Beleidigung ihrer Götter haben die Ureinwohner Euren Missionar nicht getötet, sondern sie haben ihn nur schwer verprügelt, so daß er nun komplett gebrochen und desillusioniert ist.</German>
+        <Russian>Милорд, нашему миссионеру не удалось установить миссию в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Хотя индейцы и могли убить его за оскорбление их богов, вместо этого они сильно избили его, выбросив за пределы деревни полностью сломленным и разочарованным.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_MISSION_REPLACED</Tag>
         <English>Milord, the Natives in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] have beaten and chased away your missionary. A missionary from another nation managed to replace him, after accusing him of heresy and other devilish deeds.</English>
         <German>Milord, die Ureinwohner von [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] haben Euren Missionar mit Prügeln aus dem Dorf verjagt, nachdem ein Missionar einer anderen Nation seinen Platz eingenommen hat und ihn der Teufelsanbetung beschuldigte.</German>
+        <Russian>Милорд, индейцы в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] избили и прогнали нашего миссионера. Его место занял другой европейский миссионер, обвинив нашего в ереси и других бесовских делах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSIONARY_EJECTED_FROM_GIFTED_CITY</Tag>
         <English>Milord, the Natives have given up their settlement [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Our missionary there is available for duty again.</English>
         <German>Milord, die Ureinwohner haben ihre Siedlung [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] aufgegeben. Unser Missionar dort ist nun bereit für einen neuen Auftrag.</German>
+        <Russian>Милорд, туземцы покинули свое поселение [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Наш миссионер снова готов к исполнению своих обязанностей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADER_EJECTED_FROM_GIFTED_CITY</Tag>
         <English>Milord, the Natives have given up their settlement [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Our trader there is available for duty again.</English>
         <German>Milord, die Ureinwohner haben ihre Siedlung [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] aufgegeben. Unser Händler dort ist nun bereit für einen neuen Auftrag.</German>
+        <Russian>Милорд, туземцы покинули свое поселение [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Наш торговец снова готов к работе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITIZEN_HELP_PROFESSION_NAME_DISPLAY</Tag>
@@ -159,6 +170,7 @@
         <Tag>TXT_KEY_YIELD_IS_IGNORED_IN_STORAGE_CAPACITY</Tag>
         <English>[ICON_BULLET]Not counted for [COLOR_UNIT_TEXT]Total Storage used in City[COLOR_REVERT]</English>
         <German>[ICON_BULLET]Zählt nicht zum [COLOR_UNIT_TEXT]verbrauchten Lagerraum der Stadt[COLOR_REVERT]</German>
+        <Russian>[ICON_BULLET]Не учитывается для [COLOR_UNIT_TEXT]общего объема хранилища, используемого в городе[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TEST_MESSAGE</Tag>
