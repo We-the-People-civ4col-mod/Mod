@@ -37,6 +37,7 @@
 
 #include "CvSavegame.h"
 #include "BetterBTSAI.h"
+#include "tbb/mutex.h"
 
 
 // Public Functions...
@@ -24860,6 +24861,10 @@ void CvPlayer::postLoadFixes()
 	recalculatePlayerOppressometer();
 }
 
+tbb::mutex& CvPlayer::getMutex()
+{
+	return m_mutex;
+}
 
 void CvPlayer::writeDesyncLog(FILE *f) const
 {

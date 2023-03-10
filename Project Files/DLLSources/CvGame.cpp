@@ -6392,7 +6392,7 @@ int CvGame::calculateSyncChecksum(CvString* pLogString)
 		{
 			iMultiplier = getPlayerScore((PlayerTypes)iI);
 
-			switch (getTurnSlice() % 4)
+			switch (getTurnSlice() % 5)
 			{
 			case 0:
 				iMultiplier += (kPlayer.getTotalPopulation() * 543271);
@@ -6446,6 +6446,14 @@ int CvGame::calculateSyncChecksum(CvString* pLogString)
 					iMultiplier += (pLoopUnit->getDamage() * 736373);
 					iMultiplier += (pLoopUnit->getExperience() * 820622);
 					iMultiplier += (pLoopUnit->getLevel() * 367291);
+				}
+				break;
+			
+			case 4:
+				int iLoop;
+				for (CvCity* pLoopCity = kPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kPlayer.nextCity(&iLoop))
+				{
+					iMultiplier += pLoopCity->getCitizenHash();
 				}
 				break;
 			}

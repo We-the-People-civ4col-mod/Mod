@@ -98,7 +98,7 @@ public:
 
 	ProfessionTypes AI_bestPlotProfession(const CvUnit* pUnit, const CvPlot* pPlot) const;
 	int AI_bestProfessionPlot(ProfessionTypes eProfession, const CvUnit* pUnit) const;
-	int AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUnit, const CvPlot* pPlot, const CvUnit* pDisplaceUnit) const;
+	int AI_citizenProfessionValue(ProfessionTypes eProfession, const CvUnit* pUnit, const CvPlot* pPlot, const CvUnit* pDisplaceUnit) const;
 	int AI_professionBasicOutput(ProfessionTypes eProfession, UnitTypes eUnit, const CvPlot* pPlot) const;
 	CvUnit* AI_getWorstProfessionUnit(ProfessionTypes eProfession) const;
 
@@ -180,7 +180,7 @@ public:
 	void AI_doSettlerProfessionCheat();
 
 	void AI_doHurry(bool bForce = false);
-	bool canHaveCitizenProfession(const CvUnit& kUnit, ProfessionTypes eProfession, bool bBumpOther) const;
+	bool canHaveCitizenProfession(const CvUnit& kUnit, ProfessionTypes eProfession, bool bBumpOther = false) const;
 
 protected:
 
@@ -258,7 +258,7 @@ protected:
 	CvUnit* AI_assignToBestJob(CvUnit* pUnit, bool bIndoorOnly = false);
 	CvUnit* AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly = false);
 
-	CvUnit* AI_juggleColonist(CvUnit* pUnit);
+	CvUnit* AI_juggleColonist(const CvUnit& kUnit) const;
 
 	void AI_swapUnits(CvUnit* pUnitA, CvUnit* pUnitB);
 

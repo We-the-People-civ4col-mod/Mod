@@ -5718,6 +5718,24 @@ bool CvCity::isUnitWorkingAnyPlot(const CvUnit* pUnit) const
 	return false;
 }
 
+CityPlotTypes CvCity::getUnitWorkingPlotType(const CvUnit& kUnit) const
+{
+	FOREACH(CityPlot)
+	{
+		int iUnitId = m_em_iWorkingPlot.get(eLoopCityPlot);
+		if (iUnitId != -1)
+		{
+			if (getPopulationUnitById(iUnitId) == &kUnit)
+			{
+				return eLoopCityPlot;
+			}
+		}
+	}
+
+	FAssertMsg(false, "Unit is not working any plot!");
+	return NO_CITY_PLOT;
+}
+
 CvUnit* CvCity::getUnitWorkingPlot(const CvPlot* pPlot) const
 {
 	CityPlotTypes eCityPlot = (CityPlotTypes)getCityPlotIndex(pPlot);
@@ -14044,6 +14062,92 @@ void CvCity::updateSlaveWorkerProductionBonus(int iBonus)
 	m_iSlaveWorkerProductionBonus = iSlaveWorkerProductionBonus;
 }
 //WTP, ray, Slave Hunter and Slave Master - END
+
+unsigned int MurmurHash3(const void* key, size_t len, unsigned int seed)
+{
+	const unsigned char* data = (const unsigned char*)key;
+	const int nblocks = len / 4;
+
+	unsigned int h1 = seed;
+
+	const unsigned int c1 = 0xcc9e2d51;
+	const unsigned int c2 = 0x1b873593;
+
+	//----------
+	// body
+
+	const unsigned int* blocks = (const unsigned int*)(data + nblocks * 4);
+
+	for (int i = -nblocks; i; i++) {
+		unsigned int k1 = blocks[i];
+
+		k1 *= c1;
+		k1 = (k1 << 15) | (k1 >> (32 - 15));
+		k1 *= c2;
+
+		h1 ^= k1;
+		h1 = (h1 << 13) | (h1 >> (32 - 13));	
+		h1 = h1 * 5 + 0xe6546b64;
+	}
+
+	//----------
+	// tail
+
+	const unsigned char* tail = (const unsigned char*)(data + nblocks * 4);
+	unsigned int k1 = 0;
+
+	switch (len & 3) {
+	case 3:
+		k1 ^= tail[2] << 16;
+	case 2:
+		k1 ^= tail[1] << 8;
+	case 1:
+		k1 ^= tail[0];
+		k1 *= c1;
+		k1 = (k1 << 15) | (k1 >> (32 - 15));
+		k1 *= c2;
+		h1 ^= k1;
+	}
+
+	//----------
+	// finalization
+
+	h1 ^= len;
+
+	h1 ^= h1 >> 16;
+	h1 *= 0x85ebca6b;
+	h1 ^= h1 >> 13;
+	h1 *= 0xc2b2ae35;
+	h1 ^= h1 >> 16;
+
+	return h1;
+}
+
+unsigned int CvCity::getCitizenHash() const
+{
+	const unsigned int seed = 0x12345678;
+	unsigned int hash = 0;
+
+	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
+	{
+		CvUnit const* pLoopUnit = m_aPopulationUnits[i];
+		const ProfessionTypes eLoopProfession = pLoopUnit->getProfession();
+
+		unsigned int unitHash[3];
+		unitHash[0] = i;
+		unitHash[1] = pLoopUnit->getID();
+		unitHash[2] = eLoopProfession;
+
+		hash += MurmurHash3(&unitHash, sizeof(unitHash), seed);
+		
+		if (GC.getProfessionInfo(eLoopProfession).isCitizen() && GC.getProfessionInfo(eLoopProfession).isWorkPlot())
+		{
+			hash *= getUnitWorkingPlotType(*pLoopUnit);
+		}
+	}
+
+	return hash;
+}
 
 
 // WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START

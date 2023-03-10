@@ -424,6 +424,7 @@ public:
 	CvUnit* getUnitWorkingPlot(CityPlotTypes ePlotIndex) const;
 	bool isPlotProducingYields(CityPlotTypes ePlotIndex) const;
 	bool isUnitWorkingAnyPlot(const CvUnit* pUnit) const;
+	CityPlotTypes getUnitWorkingPlotType(const CvUnit& kUnit) const;
 	CvUnit* getUnitWorkingPlot(const CvPlot* pPlot) const;
 	bool isPlotProducingYields(const CvPlot* pPlot) const;
 	void clearUnitWorkingPlot(int iPlotIndex);
@@ -682,7 +683,7 @@ public:
 	virtual CvUnit* AI_bestPopulationUnit(UnitAITypes eUnitAI, ProfessionTypes eProfession = NO_PROFESSION) = 0;
 	virtual ProfessionTypes AI_bestPlotProfession(const CvUnit* pUnit, const CvPlot* pPlot) const = 0;
 	virtual int AI_bestProfessionPlot(ProfessionTypes eProfession, const CvUnit* pUnit) const = 0;
-	virtual int AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUnit, const CvPlot* pPlot, const CvUnit* pDisplaceUnit) const = 0;
+	virtual int AI_citizenProfessionValue(ProfessionTypes eProfession, const CvUnit* pUnit, const CvPlot* pPlot, const CvUnit* pDisplaceUnit) const = 0;
 	virtual int AI_professionBasicOutput(ProfessionTypes eProfession, UnitTypes eUnit, const CvPlot* pPlot) const = 0;
 	virtual int AI_unitJoinCityValue(CvUnit* pUnit, ProfessionTypes* peNewProfession) const = 0;
 	virtual int AI_unitJoinReplaceValue(CvUnit* pUnit, CvUnit** pReplaceUnit = NULL) const = 0;
@@ -991,6 +992,8 @@ public:
 	int getSlaveWorkerProductionBonus() const;
 	//WTP, ray, Slave Hunter and Slave Master
 	void updateSlaveWorkerProductionBonus(int iBonus = 0);
+
+	unsigned int getCitizenHash() const;
 
 protected:
 	// traderoute popup arrays

@@ -13,6 +13,7 @@
 #include "CvTalkingHeadMessage.h"
 #include "CvTradeRouteGroup.h" //R&R mod, vetiarvind, trade groups
 #include "PlayerHelperFunctions.h"
+#include "tbb/mutex.h"
 
 
 class CvDiploParameters;
@@ -1198,6 +1199,9 @@ protected:
 	std::vector<int> m_aiTradeMessageCommissions;
 	// TAC - Trade Messages - koma13 - END
 
+	tbb::mutex m_mutex;
+		
+
 	void doGold();
 	void doBells();
 	void doCrosses();
@@ -1259,6 +1263,7 @@ public:
 	// transport feeder - end - Nightinggale
 	void sortEuropeUnits();
 	void postLoadFixes();
+	tbb::mutex& getMutex();
 
 	// Clean this up
 	std::vector<ProfessionTypes> m_validCityJobProfessions;
