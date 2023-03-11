@@ -2308,7 +2308,7 @@ void CvPlayer::doTurn()
 	doEvents();
 	OOS_LOG("CvPlayer::doEvents end", getID());
 
-	GET_TEAM(getTeam()).testFoundingFather());
+	GET_TEAM(getTeam()).testFoundingFather();
 
 	EXTRA_POWER_CHECK
 
