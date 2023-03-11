@@ -937,17 +937,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR_PEDIA</Tag>
-        <English>In spring when sap starts to flow in the maple forests, tappers hammer spouts through the bark and collect a thin fluid that's then distilled over a slow fire into a rich thick syrup. The sap can also be poured on snow to make maple sugar.</English>
+        <English>Maple syrup comes from maple forests which grow in north temperate regions. It's a popular treat, contributing to happiness. In spring when sap starts to flow in the maple forests, tappers hammer spouts through the bark and collect a thin fluid that's then distilled over a slow fire into a rich thick syrup. The sap can also be poured on snow to make maple sugar.</English>
         <French>xxx</French>
-        <German>xxx</German>
+        <German>Ahornsirup stammt aus Ahornwäldern, die in den nördlichen gemäßigten Zonen wachsen. Er ist ein beliebtes Süßungsmittel und trägt zum Glücklichsein bei. Im Frühjahr, wenn in den Ahornwäldern der Saft zu fließen beginnt, schlagen die Pflücker mit dem Hammer Tüllen durch die Rinde und sammeln eine dünne Flüssigkeit, die dann langsam über einem Feuer zu einem reichhaltigen, dicken Sirup destilliert wird. Der Saft kann auch auf Schnee gegossen werden, um Ahornzucker herzustellen.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR_STRATEGY</Tag>
-        <English>Maple syrup comes from maple forests which grow in north temperate regions. It's a popular treat, contributing to happiness.[NEWLINE]When assigned to the Maple Tree Tapper profession, the expert can get twice as much maple syrup in the same time as a regular colonist.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Expert Maple Tree Tapper[COLOR_REVERT] collect in the hills of the [LINK=TERRAIN_TAIGA]taiga[\LINK] or in [LINK=BONUS_MAPLE_TREES]maple forests[\LINK] as [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]collector[\LINK] twice as much [LINK=YIELD_MAPLE_SIRUP]maple syrup[\LINK] in the same time as regular colonists.[PARAGRAPH:1]Expert Maple Tree Tapper can be trained by [LINK=CONCEPT_NATIVES]natives[\LINK], or [LINK=CONCEPT_TRAINING]trained[\LINK] in a colony in a [LINK=BUILDING_COLLEGE]college[\LINK] or its extensions .</English>
         <French>xxx</French>
-        <German>xxx</German>
+        <German>[COLOR_HIGHLIGHT_TEXT]Erfahrene Ahornsaft-Sammler[COLOR_REVERT] können in den Hügeln der [LINK=TERRAIN_TAIGA]Taiga[\LINK] oder in [LINK=BONUS_MAPLE_TREES]Ahorn-Wäldern[\LINK] als [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]Sammler[\LINK] doppelt so viel [LINK=YIELD_MAPLE_SIRUP]Ahornsaft[\LINK] sammeln, wie freie Kolonisten.[PARAGRAPH:1]Erfahrene Ahornsaft-Sammler können von [LINK=CONCEPT_NATIVES]Ureinwohnern[\LINK] ausgebildet werden, oder in einer Kolonie in einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] bzw. dessen Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
     </TEXT>
@@ -1986,7 +1986,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BAKER_PEDIA</Tag>
-        <English>The baker starts work well before dawn so that households can have their daily bread. As the bakery grows, offering cookies and pastries, it becomes a social center. Some bakers even set up tables where tea is served to accompany the treats.</English>
+        <English>The baker starts work well before dawn so that households can have their daily bread. As the bakery grows, offering cookies and pastries, it becomes a social center. Some bakers even set up tables where tea is served to accompany the treats. An efficient baker can keep prices down thanks to economies of scale. She might also offer an unparalleled variety of pastries, pies and cakes for special occasions.</English>
         <French>Le boulanger commence à travailler bien avant l'aube pour que les ménages puissent avoir leur pain quotidien. Au fur et à mesure que la boulangerie se développe, offrant des biscuits et des pâtisseries, elle devient un centre social. Certains boulangers installent même des tables où du thé est servi pour accompagner les friandises.</French>
         <German>Der Bäcker beginnt seine Arbeit lange vor der Morgendämmerung, damit die Haushalte ihr tägliches Brot bekommen können. Wenn die Bäckerei wächst und Kekse und Gebäck anbietet, wird sie zu einem sozialen Zentrum. Einige Bäcker stellen sogar Tische auf, an denen Tee zu den Leckereien serviert wird.</German>
         <Italian>Il panettiere inizia a lavorare ben prima dell'alba, in modo che le famiglie possano avere il pane quotidiano. Man mano che il panificio cresce, offrendo biscotti e pasticcini, diventa un centro sociale. Alcuni panettieri allestiscono persino dei tavoli dove viene servito il tè per accompagnare le prelibatezze.</Italian>
@@ -1994,9 +1994,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BAKER_STRATEGY</Tag>
-        <English>An efficient baker can keep prices down thanks to economies of scale. She might also offer an unparalleled variety of pastries, pies and cakes for special occasions.[NEWLINE]When assigned to the Baker profession, the expert can bake twice as much in the same time as a regular colonist.</English>
+        <English>The [COLOR_HIGHLIGHT_TEXT]Master Baker[COLOR_REVERT] may be employed in the [LINK=BUILDING_BAKER_HOUSE]House of the Baker[\LINK] or one of its extensions as a [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] ([LINK=PROFESSION_BAKER_BARLEY]barley[\LINK], [LINK=PROFESSION_BAKER_RICE]rice[\LINK], [LINK=PROFESSION_BAKER_CASSAVA]cassava[\LINK]) produce twice as much [LINK=YIELD_BAKERY_GOODS]baked goods[\LINK] in the same time as a normal colonist.</English>
         <French>xxx</French>
-        <German>xxx</German>
+        <German>Der [COLOR_HIGHLIGHT_TEXT]Bäckermeister[COLOR_REVERT] kann im [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK] bzw. einer seiner Erweiterungen als [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] ([LINK=PROFESSION_BAKER_BARLEY]Gerste[\LINK], [LINK=PROFESSION_BAKER_RICE]Reis[\LINK], [LINK=PROFESSION_BAKER_CASSAVA]Maniok[\LINK]) in der gleichen Zeit doppelt so viel [LINK=YIELD_BAKERY_GOODS]Backwaren[\LINK] herstellen, wie ein normaler Kolonist.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
     </TEXT>
@@ -2463,19 +2463,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ENTERTAINER_PEDIA</Tag>
-        <English>Celebrities come at first from Europe but ultimately talent surfaces everywhere. Nonetheless plays and readings continue to rely on Old Country texts, both classical and sentimental, throughout the colonial period.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_ENTERTAINER_STRATEGY</Tag>
-        <English>Humans are social animals, fame brings people together to be entertained, to see and be seen. A celebrity performance attracts the entire countryside. To have a resident famous actress improves any community's reputation. Leaving a trail of broken hearts behind her, her legend grows.</English>
+        <English>Celebrities come at first from Europe but ultimately talent surfaces everywhere. Nonetheless plays and readings continue to rely on Old Country texts, both classical and sentimental, throughout the colonial period. Humans are social animals, fame brings people together to be entertained, to see and be seen. A celebrity performance attracts the entire countryside. To have a resident famous actress improves any community's reputation. Leaving a trail of broken hearts behind her, her legend grows.</English>
         <French>L'homme est un animal social, la célébrité rassemble les gens pour se divertir, pour voir et être vu. Le spectacle d'une célébrité attire toute la campagne. La présence d'une actrice célèbre améliore la réputation de toute communauté. Laissant derrière elle une traînée de cœurs brisés, sa légende grandit.</French>
         <German>Der Mensch ist ein Gesellschaftstier. Ruhm ist ein gutes Zugpferd Menschen zusammenzubringen, ihnen Unterhaltung zu bieten, damit sie sehen und gesehen werden können. Der Auftritt einer Berühmtheit zieht die ganze Stadt und das Umland in ihren Bann. Die Anwesenheit einer berühmten Schauspielerin verbessert den Ruf einer Stadt. Je mehr gebrochene Herzen sie hinter sich lässt, desto mehr wächst ihre Legende.</German>
         <Italian>Gli esseri umani sono animali sociali, la fama riunisce le persone per essere intrattenute, per vedere ed essere viste. Un'esibizione di una celebrità attira l'intera campagna. Avere un'attrice famosa residente migliora la reputazione di qualsiasi comunità. Lasciando dietro di sé una scia di cuori infranti, la sua leggenda cresce.</Italian>
         <Spanish>Los humanos somos animales sociales, la Fama reúne a la gente para entretenerse, para ver y ser vistos. La actuación de una celebridad atrae a todo el campo. Tener una actriz famosa residente mejora la reputación de cualquier comunidad. Dejando tras de sí un rastro de corazones rotos, su leyenda crece.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ENTERTAINER_STRATEGY</Tag>
+        <English>[COLOR_HIGHLIGHT_TEXT]Famous actresses[COLOR_REVERT] are in the profession of [LINK=PROFESSION_ENTERTAINER]entertainer[\LINK] excellent at providing [LINK=YIELD_CULTURE]culture[\LINK] in a city.</English>
+        <French>xxx</French>
+        <German>[COLOR_HIGHLIGHT_TEXT]Berühmte Schauspielerinen[COLOR_REVERT] sind als [LINK=PROFESSION_ENTERTAINER]Unterhalter[\LINK] ausgezeichnet darin für [LINK=YIELD_CULTURE]Kultur[\LINK] in einer Stadt zu sorgen.</German>
+        <Italian>xxx</Italian>
+        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- HARLOT -->
     <TEXT>
@@ -2589,9 +2589,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_JUDGE_STRATEGY</Tag>
-        <English>TODO</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Honorable judges[COLOR_REVERT] are experts at dispensing justice and therefore, as [LINK=PROFESSION_JUDGE]judges[\LINK], generate twice as much [LINK=YIELD_LAW]justice[\LINK] as free colonists.</English>
         <French>xxx</French>
-        <German>xxx</German>
+        <German>[COLOR_HIGHLIGHT_TEXT]Ehrenwerte Richter[COLOR_REVERT] sind Experten im Sprechen von Recht und erzeugen daher als [LINK=PROFESSION_JUDGE]Richter[\LINK] doppelt so viel [LINK=YIELD_LAW]Justiz[\LINK] wie freie Kolonisten.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
     </TEXT>
