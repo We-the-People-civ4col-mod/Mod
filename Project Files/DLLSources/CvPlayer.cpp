@@ -2151,29 +2151,6 @@ void CvPlayer::doTurn()
 
 	gDLL->getEventReporterIFace()->beginPlayerTurn( GC.getGameINLINE().getGameTurn(),  getID());
 
-	// TAC - AI More Immigrants - koma13 - START
-	// WTP, jooe: moved from CvGame to CvPlayer
-	if (GC.getGameINLINE().getGameTurn() > 1)
-	{
-		int iChance = GC.getHandicapInfo(getHandicapType()).getAIImmigration() * 100;
-		iChance /= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
-
-		if (NO_WORLDSIZE != GC.getMapINLINE().getWorldSize())
-		{
-			iChance *= GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getAIImmigrationModifier();
-			iChance /= 100;
-		}
-
-		if (GC.getGameINLINE().getSorenRandNum(100, "AI") < iChance)
-		{
-			if (!kPlayer.isHuman() && !kPlayer.isEurope() && !kPlayer.isNative())
-			{
-				kPlayer.doAIImmigrant(1);
-			}
-		}
-	}
-	// TAC - AI More Immigrants - koma13 - END
-
 	doEra();
 
 	EXTRA_POWER_CHECK
@@ -18988,7 +18965,7 @@ bool CvPlayer::Update_cache_YieldEquipmentAmount(ProfessionTypes eProfession)
 		m_cache_YieldEquipmentAmount[eProfession].set(iNewCost, eYield);
 	}
 	m_cache_YieldEquipmentAmount[eProfession].isEmpty(); // This will release the array if it's empty
-
+	
 	return bAltered;
 }
 
