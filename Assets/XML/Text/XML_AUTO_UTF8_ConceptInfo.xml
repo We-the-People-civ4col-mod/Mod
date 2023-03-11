@@ -670,6 +670,15 @@
         <Russian>Городское хранилище</Russian>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_NEW_STORAGE_CITY_SCREEN</Tag>
+        <English>[COLOR_HIGHLIGHT_TEXT]City Storage[COLOR_REVERT]</English>
+        <French>[COLOR_HIGHLIGHT_TEXT]Capacité de stockage[COLOR_REVERT]</French>
+        <German>[COLOR_HIGHLIGHT_TEXT]Lagerhauskapazität[COLOR_REVERT]</German>
+        <Italian>[COLOR_HIGHLIGHT_TEXT]Stoccaggio in città[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_HIGHLIGHT_TEXT]Almacenamiento en la ciudad[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]Городское хранилище[COLOR_REVERT]</Russian>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_CONCEPT_NEW_STORAGE_PEDIA</Tag>
         <English>[H1]CITY STORAGE[\H1][PARAGRAPH:2][BOLD]City Storage[\BOLD][PARAGRAPH:1]Each [LINK=CONCEPT_SETTLEMENTS]settlement[\LINK] has limited space to store [COLOR_HIGHLIGHT_TEXT]goods[COLOR_REVERT]. [COLOR_HIGHLIGHT_TEXT]City storage[COLOR_REVERT] can be increased with the [LINK=BUILDING_WAREHOUSE]storage house[\LINK] or one of its upgrades: the [LINK=BUILDING_WAREHOUSE_EXPANSION]warehouse[\LINK], the [LINK=BUILDING_WAREHOUSE_EXPANSION_2]warehouse expansion[\LINK], the [LINK=BUILDING_CUSTOM_HOUSE]customs house[\LINK], and the unique [COLOR_CYAN]national wonder[COLOR_REVERT], the [LINK=BUILDING_CUSTOM_OFFICE]Central Customs Authority[\LINK].[PARAGRAPH:1]In addition to this, a little storage capacity is added by the [LINK=BUILDING_MARKET]village market[\LINK] and its upgrades, the [LINK=BUILDING_TOWN_MARKET]town market[\LINK] and the [LINK=BUILDING_CENTRAL_CITY_MARKET]regional market[\LINK]. Each settlement also has a [COLOR_HIGHLIGHT_TEXT]base storage[COLOR_REVERT], which is equal to three cargo slots.[PARAGRAPH:2][BOLD]Exceeding Storage Capacity[\BOLD][PARAGRAPH:1]To determine storage capacity, it doesn't matter which specific goods are stored. All that matters is whether the total number of stored goods exceeds the [COLOR_HIGHLIGHT_TEXT]city storage capacity[COLOR_REVERT]. All goods except [LINK=YIELD_FOOD]food[\LINK] add to this total.[PARAGRAPH:1]Pay close attention to available storage and build [COLOR_HIGHLIGHT_TEXT]storage buildings[COLOR_REVERT] as necessary. If a city has more goods than spaces, some items will be lost. If you have a [COLOR_HIGHLIGHT_TEXT]storage house[COLOR_REVERT], they are lost completely but, for the higher level storage buildings, any surplus is [COLOR_HIGHLIGHT_TEXT]sold[COLOR_REVERT] for a price that becomes higher with each building upgrade. If you have a [COLOR_HIGHLIGHT_TEXT]customs house[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Central Customs Authority[COLOR_REVERT], goods are sold for 80% and 90% respectively of the selling price in [LINK=CONCEPT_EUROPE]Europe[\LINK] ([LINK=CONCEPT_TAX_RATE]taxes[\LINK] must also be paid). [COLOR_HIGHLIGHT_TEXT]Boycotted[COLOR_REVERT] goods can be sold as well.</English>
         <French>[H1]CAPACITÉ DE STOCKAGE[\H1][PARAGRAPH:2]La capacité de stockage d'une colonie est désormais calculée sur la somme des marchandises (hormis la nourriture). Il faut faire attention et surveiller l'espace disponible et construire des entrepôts si nécessaire.</French>
