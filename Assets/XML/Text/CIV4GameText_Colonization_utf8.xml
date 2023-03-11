@@ -2817,7 +2817,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_UNLOCK_TRADESETTING</Tag>
         <English>[ICON_BULLET]Allows automated sale of goods through the customs house settings.</English>
-		<French>[ICON_BULLET]Permet la vente automatisée de marchandises via les paramètres de la douane.</French>
+        <French>[ICON_BULLET]Permet la vente automatisée de marchandises via les paramètres de la douane.</French>
         <German>[ICON_BULLET]Erlaubt den automatisierten Verkauf von Waren über die Zollhauseinstellungen.</German>
         <Italian>[ICON_BULLET]Consente la vendita automatizzata di merci attraverso le impostazioni della dogana.</Italian>
         <Spanish>[ICON_BULLET]Permite la venta automatizada de mercancías a través de la configuración de la aduana.</Spanish>
