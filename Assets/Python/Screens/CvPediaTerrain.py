@@ -126,11 +126,6 @@ class CvPediaTerrain:
 					screen.appendListBoxString(panelName, u"<font=3>" + szYield + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 					## R&R, Robert Surcouf,  Pedia - End
 	#				screen.attachTextGFC(panelName, "", szYield + (u"%c" % gc.getYieldInfo(k).getChar()), FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-			# WTP, ray, displaying Fresh Water Access
-			# I know it is ugly to reference TerrainTypes, but it is not worth currently to have an XML attribute since no other cases are likely
-			if (self.iTerrain == TerrainTypes.TERRAIN_LARGE_RIVERS or self.iTerrain == TerrainTypes.TERRAIN_LAKE or self.iTerrain == TerrainTypes.TERRAIN_ICE_LAKE):
-				freshWaterText = localText.getText("TXT_KEY_TERRAIN_PROVIDES_FRESHWATER", ())
-				screen.appendListBoxString(panelName, u"<font=3>" + freshWaterText + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 
 		# ray, here we have the Flatland Yields
 		if (not gc.getTerrainInfo(self.iTerrain).isWater()):
@@ -206,7 +201,13 @@ class CvPediaTerrain:
 		splitText = string.split( szSpecialText, "\n" )
 		for special in splitText:
 			if len( special ) != 0:
-				screen.appendListBoxString( listName, special, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+				screen.appendListBoxString(listName, special, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
+
+		# WTP, ray, displaying Fresh Water Access
+		# I know it is ugly to reference TerrainTypes, but it is not worth currently to have an XML attribute since no other cases are likely
+		if (self.iTerrain == TerrainTypes.TERRAIN_LARGE_RIVERS or self.iTerrain == TerrainTypes.TERRAIN_LAKE or self.iTerrain == TerrainTypes.TERRAIN_ICE_LAKE):
+			freshWaterText = localText.getText("TXT_KEY_TERRAIN_PROVIDES_FRESHWATER", ())
+			screen.appendListBoxString(listName, freshWaterText , WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
 	def placeHistory(self):
 		
