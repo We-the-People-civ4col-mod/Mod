@@ -782,11 +782,11 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_43</Tag>
-		<English>Galleons are the finest transport ships available and the only ships capable of transporting treasure units to Europe.</English>
+		<English>Galleons are the finest transport ships available and the only ships capable of transporting treasure units to Europe. But they cannot transport any other units.</English>
 		<French>Les galions sont les navires de transport disponibles les plus performants. Ils sont notamment les seuls à pouvoir transporter les trésors en Europe.</French>
-		<German>Galeonen sind die besten verfügbaren Transportschiffe und die einzigen, die Schatzeinheiten nach Europa bringen können.</German>
+		<German>Galeonen sind die besten verfügbaren Transportschiffe und die einzigen, die Schatzeinheiten nach Europa bringen können. Allerdings können sie keine anderen Einheiten transportieren.</German>
 		<Italian>I galeoni sono le migliori navi da trasporto disponibili e sono le uniche in grado di trasportare i tesori in Europa.</Italian>
-		<Spanish>Los Galeones son los mejores barcos de transporte y los únicos capaces de llevar unidades de Tesoro a Europa.</Spanish>
+		<Spanish>Los Galeones son los mejores barcos de transporte y los únicos capaces de llevar unidades de Tesoro a Europa. Por otro lado, no pueden transportar otros tipos de unidades.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_45</Tag>
