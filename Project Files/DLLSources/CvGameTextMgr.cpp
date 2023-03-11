@@ -6673,6 +6673,12 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_YIELD_OVERFLOW_SELL_PERCENT", kBuilding.getStorageLossSellPercentage()));
 	}
+	
+	if (kBuilding.getUnlocksStorageLossTradeSettings())
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_UNLOCK_TRADESETTING"));
+	}
 
 	if (kBuilding.isWorksWater())
 	{
