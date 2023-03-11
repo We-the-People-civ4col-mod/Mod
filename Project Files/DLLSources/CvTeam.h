@@ -212,6 +212,8 @@ public:
 	virtual bool AI_isSneakAttackReady(TeamTypes eIndex) const = 0;
 	virtual void AI_setWarPlan(TeamTypes eIndex, WarPlanTypes eNewValue, bool bWar = true) = 0;
 
+	void testFoundingFather();
+
 protected:
 
 	int m_iNumMembers;
@@ -245,7 +247,6 @@ protected:
 	EnumMap<UnitClassTypes, int> m_em_iEuropeUnitsPurchased;
 
 	std::vector<BonusTypes> m_aeRevealedBonuses;
-	void testFoundingFather();
 	void cancelDefensivePacts(TeamTypes eEndingTeam);
 	void declareWarNoRevolution(TeamTypes eTeam, bool bNewDiplo, WarPlanTypes eWarPlan, bool bPlaySound);
 
