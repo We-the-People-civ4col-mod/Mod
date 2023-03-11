@@ -476,7 +476,8 @@ void CvTeam::doTurn()
 	PROFILE_FUNC();
 	FAssertMsg(isAlive(), "isAlive is expected to be true");
 	AI_doTurnPre();
-	testFoundingFather();
+
+	resetHasDoneFFBidThisTurn();
 
 	AI_doTurnPost();
 }
@@ -907,7 +908,7 @@ void CvTeam::declareWar(TeamTypes eTeam, bool bNewDiplo, WarPlanTypes eWarPlan)
 				PlayerTypes kingID = kPlayer.getParent();
 				CvPlayer& King = GET_PLAYER(kingID);
 				CvWString szMessage = gDLL->getText("TXT_KEY_COMPETITIOR_INDEPENDENCE_WAR", iPlayer.getCivilizationAdjectiveKey(), King.getCivilizationDescription());
-				gDLL->UI().addPlayerMessage(kPlayer.getID(), true, GC.getEVENT_MESSAGE_TIME(), szMessage, "AS2D_CITY_REVOLT", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), NULL, NULL, false, false);			
+				gDLL->UI().addPlayerMessage(kPlayer.getID(), true, GC.getEVENT_MESSAGE_TIME(), szMessage, "AS2D_CITY_REVOLT", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), NULL, NULL, false, false);
 			}
 		}
 		// TAC - Messages - Ray - END
@@ -2507,13 +2508,11 @@ void CvTeam::changeUnitsPurchasedHistory(UnitClassTypes eIndex, int iChange)
 // Protected Functions...
 void CvTeam::testFoundingFather()
 {
-	bool bFound = false;
-	for (int iFather = 0; iFather < GC.getNumFatherInfos() && !bFound; ++iFather)
+	for (int iFather = 0; iFather < GC.getNumFatherInfos() && !hasDoneFFBidThisTurn(); ++iFather)
 	{
 		FatherTypes eFather = (FatherTypes) iFather;
 		if (canConvinceFather(eFather))
 		{
-			bFound = true;
 			if (isHuman())
 			{
 				for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
@@ -2533,6 +2532,7 @@ void CvTeam::testFoundingFather()
 			{
 				convinceFather(eFather, true);
 			}
+			setHasDoneFFBidThisTurn();
 		}
 	}
 }

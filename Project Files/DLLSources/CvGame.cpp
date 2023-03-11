@@ -248,7 +248,7 @@ void CvGame::init(HandicapTypes eHandicap)
 void CvGame::setInitialItems(bool bScenario)
 {
 	PROFILE_FUNC();
-	
+
 	for (int i = 0; i < MAX_PLAYERS; ++i)
 	{
 		if (GET_PLAYER((PlayerTypes)i).isAlive())
@@ -259,7 +259,7 @@ void CvGame::setInitialItems(bool bScenario)
 
 	createBarbarianPlayer(); // < JAnimals Mod Start >
 	createChurchPlayer(); // R&R, ray, the Church - START
-	
+
 	// R&R, ray, Correct Geographical Placement of Natives - START
 	if (!GC.getGameINLINE().isOption(GAMEOPTION_RANDOM_SETTLEMENT_AREAS))
 	{
@@ -291,11 +291,11 @@ void CvGame::setInitialItems(bool bScenario)
 									}
 								}
 							}
-							
+
 							// So ok, we have found a Civ that fits
 							if (alreadyPlaced == false)
 							{
-								
+
 								// We now choose the leader and replace the non matching Civ
 								int iLeader = -1;
 								for (int z = 0; z < GC.getNumLeaderHeadInfos(); z++)
@@ -335,7 +335,7 @@ void CvGame::setInitialItems(bool bScenario)
 					{
 						//Should be take out, but how
 					}
-					
+
 				}
 			}
 		}
@@ -851,11 +851,11 @@ void CvGame::assignStartingPlots()
 			}
 		}
 
-		// R&R, ray, Correct Geographical Placement of Natives - START	
+		// R&R, ray, Correct Geographical Placement of Natives - START
 		// resorting the starting locations depending on geographical setting
 		if (!GC.getGameINLINE().isOption(GAMEOPTION_RANDOM_SETTLEMENT_AREAS))
 		{
-			for (iI = 0; iI < MAX_PLAYERS; iI++) 
+			for (iI = 0; iI < MAX_PLAYERS; iI++)
 			{
 				CvPlayer& selfPlayer = GET_PLAYER((PlayerTypes)iI);
 				if (selfPlayer.isNative())
@@ -865,8 +865,8 @@ void CvGame::assignStartingPlots()
 					bool selfIsNorthAmericanNative = (GC.getCivilizationInfo(selfPlayer.getCivilizationType()).isNorthAmericanNative());
 					bool selfIsCentralAmericanNative = (GC.getCivilizationInfo(selfPlayer.getCivilizationType()).isCentralAmericanNative());
 					bool selfIsSouthAmericanNative = (GC.getCivilizationInfo(selfPlayer.getCivilizationType()).isSouthAmericanNative());
-				
-					for (int jJ = 0; jJ < MAX_PLAYERS; jJ++) 
+
+					for (int jJ = 0; jJ < MAX_PLAYERS; jJ++)
 					{
 						CvPlayer& otherPlayer = GET_PLAYER((PlayerTypes)jJ);
 						if (otherPlayer.isNative())
@@ -877,7 +877,7 @@ void CvGame::assignStartingPlots()
 							//getting Y of Starting Plots and eventually switching
 							int selfY = selfPlayer.getStartingPlot()->getY_INLINE();
 							int otherY = otherPlayer.getStartingPlot()->getY_INLINE();
-					
+
 							// self is North, other is Central or South
 							if (selfIsNorthAmericanNative && (otherIsCentralAmericanNative || otherIsSouthAmericanNative))
 							{
@@ -982,7 +982,7 @@ void CvGame::assignStartingPlots()
 	{
 		GET_PLAYER((PlayerTypes)(*playerOrderIter)).setStartingPlot(GET_PLAYER((PlayerTypes)(*playerOrderIter)).findStartingPlot(), true);
 	}
-	
+
 	//Do it again to even out the water player starts.
 	for (playerOrderIter = playerOrder.begin(); playerOrderIter != playerOrder.end(); ++playerOrderIter)
 	{
@@ -1145,7 +1145,7 @@ void CvGame::assignNativeTerritory()
 
 	//The territory centers.
 	std::vector<CvPlot*> centers;
-	
+
 	for (int iJ = 0; iJ < MAX_PLAYERS; iJ++)
 	{
 		PlayerTypes eLoopPlayer = (PlayerTypes)iJ;
@@ -1159,7 +1159,7 @@ void CvGame::assignNativeTerritory()
 			centers.push_back(pStartingPlot);
 		}
 	}
-	
+
 
 	for(int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
 	{
@@ -2193,7 +2193,7 @@ void CvGame::selectionListMove(CvPlot* pPlot, bool bAlt, bool bShift, bool bCtrl
 		pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
 
 		eRivalTeam = pSelectedUnit->getDeclareWarUnitMove(pPlot);
-		
+
 		// Erik: No annoying popup for transport units
 		// WTP, ray, unless it is a "Troop only" ship
 		//if (pSelectedUnit->cargoSpace() == 0 && eRivalTeam != NO_TEAM)
@@ -4760,9 +4760,9 @@ GameSpeedTypes CvGame::getGameSpeedType() const
 int CvGame::getCultureLevelThreshold(CultureLevelTypes eCultureLevel, PlayerTypes ePlayer) const
 {
 	int iThreshold;
-	
+
 	iThreshold = GC.getCultureLevelInfo(eCultureLevel).getThreshold() * GC.getGameSpeedInfo(getGameSpeedType()).getGrowthPercent() / 100;
-	
+
 	if (ePlayer != NO_PLAYER)
 	{
 		CvPlayer &kPlayer = GET_PLAYER(ePlayer);
@@ -4778,7 +4778,7 @@ int CvGame::getCultureLevelThreshold(CultureLevelTypes eCultureLevel, PlayerType
 		}
 	}
 
-	return iThreshold;					
+	return iThreshold;
 }
 
 int CvGame::getCargoYieldCapacity() const
@@ -5278,13 +5278,13 @@ void CvGame::doTurn()
 	{
 		int iChance = GC.getHandicapInfo(getHandicapType()).getAIImmigration() * 100;
 		iChance /= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
-		
+
 		if (NO_WORLDSIZE != GC.getMapINLINE().getWorldSize())
 		{
 			iChance *= GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getAIImmigrationModifier();
 			iChance /= 100;
 		}
-	
+
 		if (GC.getGameINLINE().getSorenRandNum(100, "AI") < iChance)
 		{
 			for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
@@ -5463,7 +5463,7 @@ void CvGame::createAnimalsLand()
 	int iNeededAnimals;
 	int iValue, iBestValue, iRand;
 	int iLoop, iI, iJ;
-	int iStartDist = 0; 
+	int iStartDist = 0;
 
 	for(pLoopArea = GC.getMapINLINE().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMapINLINE().nextArea(&iLoop))
 	{
@@ -5682,8 +5682,8 @@ void CvGame::createChurchPlayer()
 						// set permanent peace with all Europeans and make contact
 						if (GET_TEAM((TeamTypes)iI).isAlive() && !GET_TEAM((TeamTypes)iI).hasNativePlayer())
 						{
-							GET_TEAM(eTeam).setPermanentWarPeace(((TeamTypes)iI), true); 
-							GET_TEAM(eTeam).meet(((TeamTypes)iI), false); 
+							GET_TEAM(eTeam).setPermanentWarPeace(((TeamTypes)iI), true);
+							GET_TEAM(eTeam).meet(((TeamTypes)iI), false);
 						}
 					}
 				}
@@ -5863,7 +5863,7 @@ void CvGame::testAlive()
 	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 	    // < JAnimals Mod Start > AND // R&R, ray, the Church - START
-	    if (!isBarbarianPlayer((PlayerTypes) iI) && !isChurchPlayer((PlayerTypes) iI)) 
+	    if (!isBarbarianPlayer((PlayerTypes) iI) && !isChurchPlayer((PlayerTypes) iI))
 	    {
             GET_PLAYER((PlayerTypes)iI).verifyAlive();
 	    }

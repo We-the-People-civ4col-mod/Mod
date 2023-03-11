@@ -2308,6 +2308,8 @@ void CvPlayer::doTurn()
 	doEvents();
 	OOS_LOG("CvPlayer::doEvents end", getID());
 
+	GET_TEAM(getTeam()).testFoundingFather());
+
 	EXTRA_POWER_CHECK
 
 	interceptEuropeUnits();
@@ -18965,7 +18967,7 @@ bool CvPlayer::Update_cache_YieldEquipmentAmount(ProfessionTypes eProfession)
 		m_cache_YieldEquipmentAmount[eProfession].set(iNewCost, eYield);
 	}
 	m_cache_YieldEquipmentAmount[eProfession].isEmpty(); // This will release the array if it's empty
-	
+
 	return bAltered;
 }
 

@@ -227,6 +227,8 @@ protected:
 
 	bool m_bMapCentering;
 
+	bool m_bHasDoneFFBidThisTurn;
+
 	TeamTypes m_eID;
 
 	EnumMap<TeamTypes, bool> m_em_bAtWar;
@@ -256,6 +258,21 @@ protected:
 	void resetSavedData(TeamTypes eID);
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);
+
+	inline void setHasDoneFFBidThisTurn()
+	{
+		m_bHasDoneFFBidThisTurn = true;
+	}
+
+	inline void resetHasDoneFFBidThisTurn()
+	{
+		m_bHasDoneFFBidThisTurn = false;
+	}
+
+	inline const bool hasDoneFFBidThisTurn()
+	{
+		return m_bHasDoneFFBidThisTurn;
+	}
 };
 
 #endif
