@@ -21,3 +21,41 @@ void CvDLLInterfaceIFaceBase::addPlayerMessage(PlayerTypes ePlayer, bool bForce,
 		bShowOffScreenArrows, bShowOnScreenArrows);
 #endif
 }
+
+void CvDLLInterfaceIFaceBase::addAllPlayersMessage(bool bForce, int iLength, CvWString szString,
+		Coordinates coord, LPCTSTR pszSound, InterfaceMessageTypes eType,
+		LPCSTR pszIcon, ColorTypes eFlashColor,
+		bool bShowOffScreenArrows, bool bShowOnScreenArrows)
+{
+	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
+	{
+		CvPlayer& kLoopPlayer = GET_PLAYER(ePlayer);
+		if (kLoopPlayer.isAlive())
+		{
+			if (coord.plot()->isRevealed(kLoopPlayer.getTeam(), false))
+			{
+				addPlayerMessage(kLoopPlayer.getID(), bForce, iLength, szString, coord, pszSound, eType,
+																		pszIcon, eFlashColor, bShowOffScreenArrows, bShowOnScreenArrows);
+			}
+		}
+	}
+}
+
+void CvDLLInterfaceIFaceBase::addOtherPlayersMessage(PlayerTypes eExcludePlayer, bool bForce, int iLength, CvWString szString,
+		Coordinates coord, LPCTSTR pszSound, InterfaceMessageTypes eType,
+		LPCSTR pszIcon, ColorTypes eFlashColor,
+		bool bShowOffScreenArrows, bool bShowOnScreenArrows)
+{
+	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
+	{
+		CvPlayer& kLoopPlayer = GET_PLAYER(ePlayer);
+		if (ePlayer != eExcludePlayer && kLoopPlayer.isAlive())
+		{
+			if (coord.plot()->isRevealed(kLoopPlayer.getTeam(), false))
+			{
+				addPlayerMessage(kLoopPlayer.getID(), bForce, iLength, szString, coord, pszSound, eType,
+																		pszIcon, eFlashColor, bShowOffScreenArrows, bShowOnScreenArrows);
+			}
+		}
+	}
+}
