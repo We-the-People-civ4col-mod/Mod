@@ -9596,7 +9596,7 @@ CivilizationTypes CvCity::getTradePostCivilization() const
 }
 // WTP, ray, Native Trade Posts - END
 
-void CvCity::setMissionaryPlayer(PlayerTypes ePlayer)
+void CvCity::setMissionaryPlayer(PlayerTypes ePlayer, bool bBurnMessage)
 {
 	if (ePlayer != getMissionaryPlayer())
 	{
@@ -9604,38 +9604,18 @@ void CvCity::setMissionaryPlayer(PlayerTypes ePlayer)
 
 		m_eMissionaryPlayer = ePlayer;
 
-		if (eOldPlayer != NO_PLAYER)
+		if (bBurnMessage && eOldPlayer != NO_PLAYER)
 		{
 			CvWString szBuffer = gDLL->getText("TXT_KEY_MISSION_REMOVED", getNameKey(), GET_PLAYER(eOldPlayer).getCivilizationAdjectiveKey());
 
-			for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
-			{
-				CvPlayer& kLoopPlayer = GET_PLAYER((PlayerTypes) iPlayer);
-				if (kLoopPlayer.isAlive())
-				{
-					if (isRevealed(kLoopPlayer.getTeam(), false))
-					{
-						gDLL->UI().addPlayerMessage(kLoopPlayer.getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), false, false);
-					}
-				}
-			}
+			gDLL->UI().addAllPlayersMessage(false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), false, false);
 		}
 
 		if (getMissionaryPlayer() != NO_PLAYER)
 		{
 			CvWString szBuffer = gDLL->getText("TXT_KEY_MISSION_ESTABLISHED", getNameKey(), GET_PLAYER(ePlayer).getCivilizationAdjectiveKey());
 
-			for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
-			{
-				CvPlayer& kLoopPlayer = GET_PLAYER((PlayerTypes) iPlayer);
-				if (kLoopPlayer.isAlive())
-				{
-					if (isRevealed(kLoopPlayer.getTeam(), false))
-					{
-						gDLL->UI().addPlayerMessage(kLoopPlayer.getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_MISSION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), true, true);
-					}
-				}
-			}
+			gDLL->UI().addAllPlayersMessage(false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_MISSION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), true, true);
 		}
 
 		setBillboardDirty(true);
@@ -9653,7 +9633,7 @@ void CvCity::setMissionaryRate(int iRate)
 }
 
 // WTP, ray, Native Trade Posts - START
-void CvCity::setTradePostPlayer(PlayerTypes ePlayer)
+void CvCity::setTradePostPlayer(PlayerTypes ePlayer, bool bBurnMessage)
 {
 	if (ePlayer != getTradePostPlayer())
 	{
@@ -9661,38 +9641,18 @@ void CvCity::setTradePostPlayer(PlayerTypes ePlayer)
 
 		m_eTradePostPlayer = ePlayer;
 
-		if (eOldPlayer != NO_PLAYER)
+		if (bBurnMessage && eOldPlayer != NO_PLAYER)
 		{
 			CvWString szBuffer = gDLL->getText("TXT_KEY_TRADE_POST_REMOVED", getNameKey(), GET_PLAYER(eOldPlayer).getCivilizationAdjectiveKey());
 
-			for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
-			{
-				CvPlayer& kLoopPlayer = GET_PLAYER((PlayerTypes) iPlayer);
-				if (kLoopPlayer.isAlive())
-				{
-					if (isRevealed(kLoopPlayer.getTeam(), false))
-					{
-						gDLL->UI().addPlayerMessage(kLoopPlayer.getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), false, false);
-					}
-				}
-			}
+			gDLL->UI().addAllPlayersMessage(false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), false, false);
 		}
 
 		if (getTradePostPlayer() != NO_PLAYER)
 		{
 			CvWString szBuffer = gDLL->getText("TXT_KEY_TRADE_POST_ESTABLISHED", getNameKey(), GET_PLAYER(ePlayer).getCivilizationAdjectiveKey());
 
-			for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
-			{
-				CvPlayer& kLoopPlayer = GET_PLAYER((PlayerTypes) iPlayer);
-				if (kLoopPlayer.isAlive())
-				{
-					if (isRevealed(kLoopPlayer.getTeam(), false))
-					{
-						gDLL->UI().addPlayerMessage(kLoopPlayer.getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_TRADE_POST).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), true, true);
-					}
-				}
-			}
+			gDLL->UI().addAllPlayersMessage(false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_TRADE_POST).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), true, true);
 		}
 
 		setBillboardDirty(true);

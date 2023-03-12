@@ -8301,12 +8301,12 @@ void CvPlayer::killMissionsAndTradeposts()
 			{
 				if (pLoopCity->getMissionaryPlayer() == getID())
 				{
-					pLoopCity->setMissionaryPlayer(NO_PLAYER);
+					pLoopCity->setMissionaryPlayer(NO_PLAYER, false);
 					pLoopCity->setMissionaryRate(0);
 				}
 				if (pLoopCity->getTradePostPlayer() == getID())
 				{
-					pLoopCity->setTradePostPlayer(NO_PLAYER);
+					pLoopCity->setTradePostPlayer(NO_PLAYER, false);
 					pLoopCity->setNativeTradeRate(0);
 					pLoopCity->setNativeTradePostGold(0);
 				}

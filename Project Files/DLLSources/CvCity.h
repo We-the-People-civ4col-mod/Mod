@@ -499,14 +499,14 @@ public:
 	int doGoody(CvUnit* pUnit, GoodyTypes eGoody);
 	PlayerTypes getMissionaryPlayer() const;
 	CivilizationTypes getMissionaryCivilization() const;
-	void setMissionaryPlayer(PlayerTypes ePlayer);
+	void setMissionaryPlayer(PlayerTypes ePlayer, bool bBurnMessage = true);
 	int getMissionaryRate() const;
 	void setMissionaryRate(int iRate);
 
 	// WTP, ray, Native Trade Posts - START
 	PlayerTypes getTradePostPlayer() const;
 	CivilizationTypes getTradePostCivilization() const;
-	void setTradePostPlayer(PlayerTypes ePlayer);
+	void setTradePostPlayer(PlayerTypes ePlayer, bool bBurnMessage = false);
 	int getNativeTradeRate() const;
 	void setNativeTradeRate(int iRate);
 	// WTP, ray, Native Trade Posts - END
