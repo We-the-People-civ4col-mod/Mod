@@ -506,7 +506,7 @@ public:
 	// WTP, ray, Native Trade Posts - START
 	PlayerTypes getTradePostPlayer() const;
 	CivilizationTypes getTradePostCivilization() const;
-	void setTradePostPlayer(PlayerTypes ePlayer, bool bBurnMessage = false);
+	void setTradePostPlayer(PlayerTypes ePlayer, bool bBurnMessage = true);
 	int getNativeTradeRate() const;
 	void setNativeTradeRate(int iRate);
 	// WTP, ray, Native Trade Posts - END
