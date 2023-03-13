@@ -125,17 +125,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CASSAVA_PLANTER_PEDIA</Tag>
-        <English>Cassava roots are a staple food in tropical and subtropical climates. Cassava can be either sweet or bitter, with the bitter more pest-resistant. Proper preparation is important to avoid the risk of acute cyanide intoxication.</English>
+        <English>Cassava roots are a staple food in tropical and subtropical climates. Cassava can be either sweet or bitter, with the bitter more pest-resistant. Proper preparation is important to avoid the risk of acute cyanide intoxication.[NEWLINE]Cassava is drought-resistant. It grows on marginal soils. It's usually boiled, but the starch can be extracted for tapioca. In Brazil it's grated and dried into a coarse flour.</English>
         <French>xxx</French>
-        <German>xxx</German>
+        <German>Maniokwurzeln sind ein Grundnahrungsmittel in tropischen und subtropischen Klimazonen. Maniok kann entweder süß oder bitter sein, wobei die bittere Variante schädlingsresistenter ist. Die richtige Zubereitung ist wichtig, um das Risiko einer akuten Zyanidvergiftung zu vermeiden.[NEWLINE]Maniok ist dürreresistent. Sie wächst auf marginalen Böden. Normalerweise wird sie gekocht, aber die Stärke kann für Tapioka extrahiert werden. In Brasilien wird sie gerieben und zu grobem Mehl getrocknet.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CASSAVA_PLANTER_STRATEGY</Tag>
-        <English>Cassava is drought-resistant. It grows on marginal soils. It's usually boiled, but the starch can be extracted for tapioca. In Brazil it's grated and dried into a coarse flour.[NEWLINE]When assigned to the Cassava Planter profession, the expert is capable of turning out double the amount of cassava in the same amount of time it would take a regular colonist.</English>
+        <English>A [COLOR_HIGHLIGHT_TEXT]expert cassava planter[COLOR_REVERT] is more effective at [LINK=PROFESSION_CASSAVA_PLANTER]planting[\LINK] [LINK=YIELD_CASSAVA]cassava[\LINK] than any other expert.[PARAGRAPH:1]Expert cassava planter can be [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]natives[\LINK] or in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its extensions.</English>
         <French>xxx</French>
-        <German>xxx</German>
+        <German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Maniokpflanzer[COLOR_REVERT] ist effektiver im [LINK=PROFESSION_CASSAVA_PLANTER]pflanzen[\LINK] von [LINK=YIELD_CASSAVA]Maniok[\LINK] als alle anderen Experten.[PARAGRAPH:1]Erfahrene Maniokpflanzer können in Dörfern der [LINK=CONCEPT_NATIVES]Ureinwohner[\LINK] oder in einer Kolonie mit einer [LINK=BUILDING_SCHOOLHOUSE]Schule[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
     </TEXT>
@@ -192,17 +192,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR_PEDIA</Tag>
-        <English>The cochineal insects found on prickly pear cactus pads produce carminic acid, a predator-deterring chemical. When mixed with aluminum or calcium salts dried cochineal becomes carmine dye. Collectors gather the bugs by brushing them off the cactus pads.</English>
+        <English>The cochineal insects found on prickly pear cactus pads produce carminic acid, a predator-deterring chemical. When mixed with aluminum or calcium salts dried cochineal becomes carmine dye. Collectors gather the bugs by brushing them off the cactus pads.[NEWLINE]Bright red carmine dye, used in the Americas for colouring fabrics, became an important export good in the 16th century. Cochineal insects are found in the areas now known as Peru, Mexico, Chile and Argentina.[NEWLINE]When assigned to the Cochineal Collector profession, the expert can gather double the quantity of cochineal in the same amount of time it would take a regular colonist.</English>
         <French>xxx</French>
-        <German>Die Cochenille-Schildläuse, die auf den Blättern des Feigenkaktus zu finden sind, produzieren Karminsäure, eine Chemikalie, die Raubtiere abschreckt. In Verbindung mit Aluminium- oder Kalziumsalzen wird aus den getrockneten Cochenille-Schildläusen ein karminroter Farbstoff. Sammler sammeln die Schildläuse ein, indem sie sie von den Kaktusblättern abbürsten.</German>
+        <German>Die Cochenille-Schildläuse, die auf den Blättern des Feigenkaktus zu finden sind, produzieren Karminsäure, eine Chemikalie, die Raubtiere abschreckt. In Verbindung mit Aluminium- oder Kalziumsalzen wird aus den getrockneten Cochenille-Schildläusen ein karminroter Farbstoff. Sammler sammeln die Schildläuse ein, indem sie sie von den Kaktusblättern abbürsten.[NEWLINE]Der leuchtend rote Karminfarbstoff, der in Amerika zum Färben von Stoffen verwendet wurde, wurde ab Mitte des 16. Jahrhunderts zu einem wichtigen Exportgut. Cochenille-Insekten kommen in den Gebieten vor, die heute als Peru, Mexiko, Chile und Argentinien bekannt sind.[NEWLINE]Wenn ein Experte den Beruf des Cochenille-Sammlers ausübt, kann er die doppelte Menge an Cochenille-Schildläusen in der gleichen Zeit sammeln, die ein normaler Kolonist benötigen würde.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR_STRATEGY</Tag>
-        <English>Bright red carmine dye, used in the Americas for colouring fabrics, became an important export good in the 16th century. Cochineal insects are found in the areas now known as Peru, Mexico, Chile and Argentina.[NEWLINE]When assigned to the Cochineal Collector profession, the expert can gather double the quantity of cochineal in the same amount of time it would take a regular colonist.</English>
+        <English>A [COLOR_HIGHLIGHT_TEXT]expert cochineal collector[COLOR_REVERT] is more effective at [LINK=PROFESSION_COCHINEAL_COLLECTOR]collecting[\LINK] [LINK=YIELD_COCHINEAL]cochineal[\LINK] than any other expert.[PARAGRAPH:1]Expert cochineal collectors can be [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]natives[\LINK] or in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its extensions.</English>
         <French>xxx</French>
-        <German>Der leuchtend rote Karminfarbstoff, der in Amerika zum Färben von Stoffen verwendet wurde, wurde ab Mitte des 16. Jahrhunderts zu einem wichtigen Exportgut. Cochenille-Insekten kommen in den Gebieten vor, die heute als Peru, Mexiko, Chile und Argentinien bekannt sind.[NEWLINE]Wenn ein Experte den Beruf des Cochenille-Sammlers ausübt, kann er die doppelte Menge an Cochenille-Schildläusen in der gleichen Zeit sammeln, die ein normaler Kolonist benötigen würde.</German>
+        <German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Cochenille-Sammler[COLOR_REVERT] ist effektiver im [LINK=PROFESSION_COCHINEAL_COLLECTOR]Sammeln[\LINK] von [LINK=YIELD_COCHINEAL]Cochenille-Schildläusen[\LINK] als alle anderen Experten.[PARAGRAPH:1]Erfahrene Cochenille-Sammler können in Dörfern der [LINK=CONCEPT_NATIVES]Ureinwohner[\LINK] oder in einer Kolonie mit einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
     </TEXT>
@@ -259,17 +259,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LINEN_PLANTER_PEDIA</Tag>
-        <English>Linen fabrics woven from wild flax date back over 30,000 years. Devout colonists all know that linen is frequently mentioned in the Bible.</English>
+        <English>Linen fabrics woven from wild flax date back over 30,000 years. Devout colonists all know that linen is frequently mentioned in the Bible.[NEWLINE]Linen is comfortable to wear in hot weather. The fabric is strong and absorbent, though it does wrinkle.</English>
         <French>xxx</French>
-        <German>xxx</German>
+        <German>Leinenstoffe, die aus wildem Flachs gewebt werden, gibt es schon seit über 30.000 Jahren. Fromme Kolonisten wissen, dass Leinen häufig in der Bibel erwähnt wird.[NEWLINE]Leinen ist bei heißem Wetter angenehm zu tragen. Der Stoff ist stark und saugfähig, knittert aber.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LINEN_PLANTER_STRATEGY</Tag>
-        <English>Linen is comfortable to wear in hot weather. The fabric is strong and absorbent, though it does wrinkle.[NEWLINE]When assigned to the Flax Planter profession, the expert can harvest double the quantity of flax in the same amount of time it would take a regular colonist.</English>
+        <English>A [COLOR_HIGHLIGHT_TEXT]expert flax planter[COLOR_REVERT] is more effective at [LINK=PROFESSION_FLAX_PLANTER]planting[\LINK] [LINK=YIELD_FLAX]flax[\LINK] than any other expert.[PARAGRAPH:1]Expert flax planter can be [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]natives[\LINK] or in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its extensions.</English>
         <French>xxx</French>
-        <German>xxx</German>
+        <German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Flachspflanzer[COLOR_REVERT] ist effektiver im [LINK=PROFESSION_FLAX_PLANTER]pflanzen[\LINK] von [LINK=YIELD_FLAX]Flachs[\LINK] als alle anderen Experten.[PARAGRAPH:1]Erfahrene Flachspflanzer können in Dörfern der [LINK=CONCEPT_NATIVES]Ureinwohner[\LINK] oder in einer Kolonie mit einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
     </TEXT>
@@ -326,9 +326,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LOGWOOD_COLLECTOR_PEDIA</Tag>
-        <English>The logwood tree was of great economic importance in the colonial era when it was exported to Europe for dyeing fabrics. Defying Spanish territorial claims, foreign sailors cut and collected trees for shipment back to Europe. Spain responded by commissioning privateers to attack them. Under attack from Spanish privateers, logwood cutters formed their own pirate crews to raid the Spanish. Blackbeard turned captured logwood sloops into pirate ships.[NEWLINE]When assigned to the Logwood Collector profession, the expert can cut down twice as much logwood in the same time it would take a regular colonist.</English>
+        <English>The logwood tree was of great economic importance in the colonial era when it was exported to Europe for dyeing fabrics. Defying Spanish territorial claims, foreign sailors cut and collected trees for shipment back to Europe. Spain responded by commissioning privateers to attack them. Under attack from Spanish privateers, logwood cutters formed their own pirate crews to raid the Spanish. Blackbeard turned captured logwood sloops into pirate ships.</English>
         <French>xxx</French>
-        <German>xxx</German>
+        <German>In der Kolonialzeit war Blauholz von großer wirtschaftlicher Bedeutung, da es zum Färben von Stoffen nach Europa exportiert wurde. Unter Missachtung spanischer Gebietsansprüche fällten und sammelten ausländische Seeleute Bäume, um sie nach Europa zu verschiffen. Spanien beauftragte daraufhin Freibeuter, um sie anzugreifen. Unter den Angriffen der spanischen Freibeuter gründeten die Holzfäller ihre eigenen Piratencrews, um die Spanier zu überfallen. Blackbeard verwandelte gekaperte Holzschiffe in Piratenschiffe.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
     </TEXT>
@@ -460,7 +460,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEANUT_PLANTER_PEDIA</Tag>
-        <English>Peanuts are legumes farmed for their edible seeds. They're widely grown in the tropics and subtropics by both small and large commercial producers. The peanut is both a grain legume and, due to its high oil content, an oil crop.</English>
+        <English>Peanuts are legumes farmed for their edible seeds. They're widely grown in the tropics and subtropics by both small and large commercial producers. The peanut is both a grain legume and, due to its high oil content, an oil crop.[NEWLINE]Boiled peanuts are a popular snack in the areas where they're grown. They can be used to treat malnutrition and are especially important for feeding slave populations. Peanuts are usually roasted before being shipped.</English>
         <French>Les cacahuètes sont des légumineuses cultivées pour leurs graines comestibles. Elles sont largement cultivées dans les régions tropicales et subtropicales par les petits et grands producteurs commerciaux. L'arachide est à la fois une légumineuse à graines et, en raison de sa forte teneur en huile, un oléagineux.</French>
         <German>Erdnüsse sind Hülsenfrüchte, die wegen ihrer essbaren Samen angebaut werden. Sie werden in den Tropen und Subtropen sowohl von kleinen als auch großen kommerziellen Erzeugern angebaut. Die Erdnuss ist sowohl eine Körnerleguminose als auch, aufgrund ihres hohen Ölgehalts, eine Ölpflanze.</German>
         <Italian>Le arachidi sono legumi coltivati per i loro semi commestibili. Sono ampiamente coltivate nei tropici e nelle regioni subtropicali da piccoli e grandi produttori commerciali. L'arachide è sia una leguminosa da granella sia, grazie al suo elevato contenuto di olio, una coltura oleosa.</Italian>
@@ -468,9 +468,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEANUT_PLANTER_STRATEGY</Tag>
-        <English>Boiled peanuts are a popular snack in the areas where they're grown. They can be used to treat malnutrition and are especially important for feeding slave populations. Peanuts are usually roasted before being shipped.[NEWLINE]When assigned to the Peanut Planter profession, the expert can gather double the peanuts in the same amount of time it would take a regular colonist.</English>
+        <English>A [COLOR_HIGHLIGHT_TEXT]expert penut planter[COLOR_REVERT] is more effective at [LINK=PROFESSION_PEANUT_PLANTER]planting[\LINK] [LINK=YIELD_PEANUTS]penuts[\LINK] than any other expert.[PARAGRAPH:1]Expert penut planter can be [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]natives[\LINK] or in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its extensions.</English>
         <French>xxx</French>
-        <German>xxx</German>
+        <German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Erdnusspflanzer[COLOR_REVERT] ist effektiver im [LINK=PROFESSION_PEANUT_PLANTER]pflanzen[\LINK] von [LINK=YIELD_PEANUTS]Erdnüssen[\LINK] als alle anderen Experten.[PARAGRAPH:1]Erfahrene Erdnusspflanzer können in Dörfern der [LINK=CONCEPT_NATIVES]Ureinwohner[\LINK] oder in einer Kolonie mit einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
     </TEXT>
@@ -945,7 +945,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Expert Maple Tree Tapper[COLOR_REVERT] collect in the hills of the [LINK=TERRAIN_TAIGA]taiga[\LINK] or in [LINK=BONUS_MAPLE_TREES]maple forests[\LINK] as [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]collector[\LINK] twice as much [LINK=YIELD_MAPLE_SIRUP]maple syrup[\LINK] in the same time as regular colonists.[PARAGRAPH:1]Expert Maple Tree Tapper can be trained by [LINK=CONCEPT_NATIVES]natives[\LINK], or [LINK=CONCEPT_TRAINING]trained[\LINK] in a colony in a [LINK=BUILDING_COLLEGE]college[\LINK] or its extensions .</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Expert Maple Tree Tapper[COLOR_REVERT] collect in the hills of the [LINK=TERRAIN_TAIGA]taiga[\LINK] or in [LINK=BONUS_MAPLE_TREES]maple forests[\LINK] as [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]collector[\LINK] twice as much [LINK=YIELD_MAPLE_SIRUP]maple syrup[\LINK] in the same time as regular colonists.[PARAGRAPH:1]Expert Maple Tree Tapper can be trained by [LINK=CONCEPT_NATIVES]natives[\LINK], or [LINK=CONCEPT_TRAINING]trained[\LINK] in a colony in a [LINK=BUILDING_COLLEGE]college[\LINK] or its extensions.</English>
         <French>xxx</French>
         <German>[COLOR_HIGHLIGHT_TEXT]Erfahrene Ahornsaft-Sammler[COLOR_REVERT] können in den Hügeln der [LINK=TERRAIN_TAIGA]Taiga[\LINK] oder in [LINK=BONUS_MAPLE_TREES]Ahorn-Wäldern[\LINK] als [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]Sammler[\LINK] doppelt so viel [LINK=YIELD_MAPLE_SIRUP]Ahornsaft[\LINK] sammeln, wie freie Kolonisten.[PARAGRAPH:1]Erfahrene Ahornsaft-Sammler können von [LINK=CONCEPT_NATIVES]Ureinwohnern[\LINK] ausgebildet werden, oder in einer Kolonie in einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] bzw. dessen Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
         <Italian>xxx</Italian>
@@ -2254,17 +2254,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES_PEDIA</Tag>
-        <English>Construction supplies is a vast category, ranging from wood and bricks to nails and forged hardware.</English>
+        <English>Construction supplies is a vast category, ranging from wood and bricks to nails and forged hardware. The carpenter needs construction supplies to work.</English>
         <French>xxx</French>
-        <German>xxx</German>
+        <German>Baubedarf ist eine große Kategorie, die von Holz und Ziegeln bis zu Nägeln und Schmiedeeisen reicht. Der Zimmermann braucht Baumaterial für seine Arbeit.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES_STRATEGY</Tag>
-        <English>The carpenter needs construction supplies to work.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Construction suplies[COLOR_REVERT] can be purchased in [LINK=CONCEPT_EUROPE]Europe[\LINK] or produced in a settlement for 50 [LINK=YIELD_HAMMERS]hammers[\LINK] and support a building project with 40 hammers once. The construction suplies behaves like an immobile unit, which can be [LINK=CONCEPT_TRANSPORT]transported[\LINK], however, so that new settlements can be supported by this with the building construction.</English>
         <French>xxx</French>
-        <German>xxx</German>
+        <German>[COLOR_HIGHLIGHT_TEXT]Baumaterial[COLOR_REVERT] kann in [LINK=CONCEPT_EUROPE]Europa[\LINK] gekauft oder in einer Siedlung für 50 [LINK=YIELD_HAMMERS]Hämmer[\LINK] produziert werden und einmalig ein Bauprojekt mit 40 Hämmern unterstützen. Das Baumaterial verhält sich wie eine unbewegliche Einheit, welche jedoch [LINK=CONCEPT_TRANSPORT]transportiert[\LINK] werden kann, sodass hierdurch neue Siedlungen beim Gebäudebau unterstützt werden können.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
     </TEXT>
