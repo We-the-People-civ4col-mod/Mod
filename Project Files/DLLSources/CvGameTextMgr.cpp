@@ -5694,8 +5694,19 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 	// WTP, ray, Construction Supplies - START
 	if (kUnitInfo.getProductionWhenUsed() > 0)
 	{
+		int iProductionSuppliesToReceive = kUnitInfo.getProductionWhenUsed();
+
+		iProductionSuppliesToReceive *= GC.getDefineINT("UNIT_PRODUCTION_PERCENT");
+		iProductionSuppliesToReceive /= 100;
+
+		iProductionSuppliesToReceive *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+		iProductionSuppliesToReceive /= 100;
+
+		iProductionSuppliesToReceive *= GC.getEraInfo(GC.getGameINLINE().getStartEra()).getTrainPercent();
+		iProductionSuppliesToReceive /= 100;
+
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_GIVES_PRODUCTION_WHEN_USED", kUnitInfo.getProductionWhenUsed()));
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_GIVES_PRODUCTION_WHEN_USED", iProductionSuppliesToReceive));
 	}
 	// WTP, ray, Construction Supplies - END
 
