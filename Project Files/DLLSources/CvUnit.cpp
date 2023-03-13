@@ -10686,7 +10686,7 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 					GET_PLAYER(eNewOwner).acquireCity(pNewCity, true, false); // will delete the pointer
 				}
 			}
-			
+
 			const int iSlaveWorkerProductionBonus = getSlaveWorkerProductionBonus();
 			// Update city caches if required when entering a city
 			if (iSlaveWorkerProductionBonus != 0)
@@ -16182,6 +16182,25 @@ void CvUnit::useProductionSupplies()
 	{
 		return;
 	}
+
+	iProductionSuppliesToBeUsed *= GC.getDefineINT("UNIT_PRODUCTION_PERCENT");
+	iProductionSuppliesToBeUsed /= 100;
+
+	iProductionSuppliesToBeUsed *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+	iProductionSuppliesToBeUsed /= 100;
+
+	iProductionSuppliesToBeUsed *= GC.getEraInfo(GC.getGameINLINE().getStartEra()).getTrainPercent();
+	iProductionSuppliesToBeUsed /= 100;
+
+	if (!isHuman() && !isNative())
+	{
+		iProductionSuppliesToBeUsed *= GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAITrainPercent();
+		iProductionSuppliesToBeUsed /= 100;
+
+		iProductionSuppliesToBeUsed *= std::max(0, ((GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAIPerEraModifier() * GET_PLAYER(getOwnerINLINE()).getCurrentEra()) + 100));
+		iProductionSuppliesToBeUsed /= 100;
+	}
+
 	gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_CONSTRUCTION_SUPPLIES_USED", pCity->getNameKey()), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_INFO, getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
 	pCity->changeProduction(iProductionSuppliesToBeUsed);
 	kill(true);
