@@ -9326,7 +9326,7 @@ void CvCity::ejectMissionary()
 		gDLL->UI().addPlayerMessage(missionaryPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_MISSION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), true, true);
 
 		setMissionaryRate(0);
-		setMissionaryPlayer(NO_PLAYER);
+		setMissionaryPlayer(NO_PLAYER, false);
 	}
 }
 
@@ -9353,7 +9353,7 @@ void CvCity::ejectTrader()
 		gDLL->UI().addPlayerMessage(tradePostPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_TRADE_POST).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), true, true);
 
 		setNativeTradeRate(0);
-		setTradePostPlayer(NO_PLAYER);
+		setTradePostPlayer(NO_PLAYER, false);
 	}
 }
 
