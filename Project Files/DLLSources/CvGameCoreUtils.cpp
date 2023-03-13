@@ -2507,6 +2507,8 @@ void postLoadGameFixes()
 			}
 		}
 	}
+
+	GC.getGameINLINE().postLoadFixes();
 }
 /// post load function - end - Nightinggale
 

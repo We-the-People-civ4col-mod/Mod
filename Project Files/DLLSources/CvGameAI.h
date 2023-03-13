@@ -34,6 +34,8 @@ public:
 	void write(CvSavegameWriter writer);
 	void AI_resetSavedData();
 
+	void postLoadFixes();
+
 protected:
 
   int m_iPad;

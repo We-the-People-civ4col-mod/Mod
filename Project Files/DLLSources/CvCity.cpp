@@ -2836,7 +2836,19 @@ bool CvCity::isNative() const
 
 bool CvCity::isVisible(TeamTypes eTeam, bool bDebug) const
 {
-	return plot()->isVisible(eTeam, bDebug);
+	if (SAVEGAME_IS_LOADING)
+	{
+		// when reloading a savegame from the ingame menu (not main menu), the exe might call this while loading
+		// the main issue is that there exist a time after the map is cleared, but the new is not loaded yet
+		// during this time the cities aren't always cleared yet and then this function is called
+		// when this is called with no map loaded yet, the call to CvPlot will cause a crash
+		// to get around this, just tell the exe nothing is visible until the savegame is done loading
+		return false;
+	}
+	else
+	{
+		return plot()->isVisible(eTeam, bDebug);
+	}
 }
 
 bool CvCity::isCapital() const

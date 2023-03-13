@@ -114,9 +114,18 @@ int CvGameAI::AI_gameCompletePercent()
 	return std::min(100, 100 * getGameTurn() / std::max(1,  getEstimateEndTurn()));
 }
 
+// declaring a bool to tell if a savegame is being loaded while being read only when read globally
+bool bSavegameLoadingInProgress = false;
+extern const bool& SAVEGAME_IS_LOADING = bSavegameLoadingInProgress;
+
+void CvGameAI::postLoadFixes()
+{
+	bSavegameLoadingInProgress = false;
+}
 
 void CvGameAI::read(FDataStreamBase* pStream)
 {
+	bSavegameLoadingInProgress = true;
 	CvSavegameReaderBase readerbase(pStream);
 	CvSavegameReader reader(readerbase);
 
