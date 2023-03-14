@@ -149,6 +149,139 @@ public:
 					bShowOffScreenArrows, bShowOnScreenArrows);
 		}
 
+	void addAllPlayersMessage(bool bForce, int iLength,
+		CvWString szString, const Coordinates coord,
+		LPCTSTR pszSound = NULL, InterfaceMessageTypes eType = MESSAGE_TYPE_INFO,
+		LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,
+		bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false);
+
+	void addAllPlayersMessage(bool bForce, int iLength,
+		CvWString szString,
+		LPCTSTR pszSound, InterfaceMessageTypes eType,
+		LPCSTR pszIcon, ColorTypes eFlashColor, int iFlashX, int iFlashY,
+		bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false)
+		{
+			addAllPlayersMessage(bForce, iLength, szString,
+				Coordinates(iFlashX, iFlashY), pszSound, eType,
+				pszIcon, eFlashColor,
+				bShowOffScreenArrows, bShowOnScreenArrows);
+		}
+
+	void addAllPlayersMessage(bool bForce, int iLength,
+		CvWString szString,
+		LPCTSTR pszSound, InterfaceMessageTypes eType = MESSAGE_TYPE_INFO,
+		LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,
+		bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false)
+		{
+			addAllPlayersMessage(bForce, iLength, szString,
+				Coordinates::invalidCoord(), pszSound, eType,
+				pszIcon, eFlashColor,
+				bShowOffScreenArrows, bShowOnScreenArrows);
+		}
+
+	void addAllPlayersMessage(bool bForce, int iLength,
+		CvWString szString, CvPlot const *pPlot,
+		LPCTSTR pszSound = NULL, InterfaceMessageTypes eType = MESSAGE_TYPE_INFO,
+		LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,
+		bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false)
+		{
+			addAllPlayersMessage(bForce, iLength, szString,
+				pPlot->coord(), pszSound, eType,
+				pszIcon, eFlashColor,
+				bShowOffScreenArrows, bShowOnScreenArrows);
+		}
+
+	void addAllPlayersMessage(bool bForce, int iLength,
+		CvWString szString, CvCity const *pCity,
+		LPCTSTR pszSound = NULL, InterfaceMessageTypes eType = MESSAGE_TYPE_INFO,
+		LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,
+		bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false)
+		{
+			addAllPlayersMessage(bForce, iLength, szString,
+					pCity->coord(), pszSound, eType,
+					pszIcon, eFlashColor,
+					bShowOffScreenArrows, bShowOnScreenArrows);
+		}
+
+	void addAllPlayersMessage(bool bForce, int iLength,
+		CvWString szString, CvUnit *pUnit,
+		LPCTSTR pszSound = NULL, InterfaceMessageTypes eType = MESSAGE_TYPE_INFO,
+		LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,
+		bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false)
+		{
+			addAllPlayersMessage(bForce, iLength, szString,
+					pUnit->coord(), pszSound, eType,
+					pszIcon, eFlashColor,
+					bShowOffScreenArrows, bShowOnScreenArrows);
+		}
+
+	void addOtherPlayersMessage(PlayerTypes eExcludePlayer, bool bForce, int iLength,
+		CvWString szString, const Coordinates coord,
+		LPCTSTR pszSound = NULL, InterfaceMessageTypes eType = MESSAGE_TYPE_INFO,
+		LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,
+		bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false);
+
+	void addOtherPlayersMessage(PlayerTypes eExcludePlayer, bool bForce, int iLength,
+		CvWString szString,
+		LPCTSTR pszSound, InterfaceMessageTypes eType,
+		LPCSTR pszIcon, ColorTypes eFlashColor, int iFlashX, int iFlashY,
+		bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false)
+		{
+			addOtherPlayersMessage(eExcludePlayer, bForce, iLength, szString,
+				Coordinates(iFlashX, iFlashY), pszSound, eType,
+				pszIcon, eFlashColor,
+				bShowOffScreenArrows, bShowOnScreenArrows);
+		}
+
+	void addOtherPlayersMessage(PlayerTypes eExcludePlayer, bool bForce, int iLength,
+		CvWString szString,
+		LPCTSTR pszSound, InterfaceMessageTypes eType = MESSAGE_TYPE_INFO,
+		LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,
+		bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false)
+		{
+			addOtherPlayersMessage(eExcludePlayer, bForce, iLength, szString,
+				Coordinates::invalidCoord(), pszSound, eType,
+				pszIcon, eFlashColor,
+				bShowOffScreenArrows, bShowOnScreenArrows);
+		}
+
+	void addOtherPlayersMessage(PlayerTypes eExcludePlayer, bool bForce, int iLength,
+		CvWString szString, CvPlot const *pPlot,
+		LPCTSTR pszSound = NULL, InterfaceMessageTypes eType = MESSAGE_TYPE_INFO,
+		LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,
+		bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false)
+		{
+			addOtherPlayersMessage(eExcludePlayer, bForce, iLength, szString,
+				pPlot->coord(), pszSound, eType,
+				pszIcon, eFlashColor,
+				bShowOffScreenArrows, bShowOnScreenArrows);
+		}
+
+	void addOtherPlayersMessage(PlayerTypes eExcludePlayer, bool bForce, int iLength,
+		CvWString szString, CvCity const *pCity,
+		LPCTSTR pszSound = NULL, InterfaceMessageTypes eType = MESSAGE_TYPE_INFO,
+		LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,
+		bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false)
+		{
+			addOtherPlayersMessage(eExcludePlayer, bForce, iLength, szString,
+					pCity->coord(), pszSound, eType,
+					pszIcon, eFlashColor,
+					bShowOffScreenArrows, bShowOnScreenArrows);
+		}
+
+	void addOtherPlayersMessage(PlayerTypes eExcludePlayer, bool bForce, int iLength,
+		CvWString szString, CvUnit *pUnit,
+		LPCTSTR pszSound = NULL, InterfaceMessageTypes eType = MESSAGE_TYPE_INFO,
+		LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,
+		bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false)
+		{
+			addOtherPlayersMessage(eExcludePlayer, bForce, iLength, szString,
+					pUnit->coord(), pszSound, eType,
+					pszIcon, eFlashColor,
+					bShowOffScreenArrows, bShowOnScreenArrows);
+		}
+
+
 protected:
 	virtual void addMessage(PlayerTypes ePlayer, bool bForce, int iLength, CvWString szString, LPCTSTR pszSound = NULL,
 		InterfaceMessageTypes eType = MESSAGE_TYPE_INFO, LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,

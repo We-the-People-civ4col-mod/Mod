@@ -5694,8 +5694,19 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 	// WTP, ray, Construction Supplies - START
 	if (kUnitInfo.getProductionWhenUsed() > 0)
 	{
+		int iProductionSuppliesToReceive = kUnitInfo.getProductionWhenUsed();
+
+		iProductionSuppliesToReceive *= GC.getDefineINT("UNIT_PRODUCTION_PERCENT");
+		iProductionSuppliesToReceive /= 100;
+
+		iProductionSuppliesToReceive *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+		iProductionSuppliesToReceive /= 100;
+
+		iProductionSuppliesToReceive *= GC.getEraInfo(GC.getGameINLINE().getStartEra()).getTrainPercent();
+		iProductionSuppliesToReceive /= 100;
+
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_GIVES_PRODUCTION_WHEN_USED", kUnitInfo.getProductionWhenUsed()));
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_GIVES_PRODUCTION_WHEN_USED", iProductionSuppliesToReceive));
 	}
 	// WTP, ray, Construction Supplies - END
 
@@ -6672,6 +6683,12 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_YIELD_OVERFLOW_SELL_PERCENT", kBuilding.getStorageLossSellPercentage()));
+	}
+	
+	if (kBuilding.getUnlocksStorageLossTradeSettings())
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_UNLOCK_TRADESETTING"));
 	}
 
 	if (kBuilding.isWorksWater())
@@ -9571,7 +9588,7 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
 					}
 
 					szString.append(NEWLINE);
-					szString.append(gDLL->getText("TXT_KEY_SLAVE_PRODUCTION_WITHOUT_MODIFIER_CITIZENHELP",  GC.getYieldInfo(eProfessionYield).getTextKeyWide(), iYieldAmountWithoutModifier, iProfessionYieldChar));
+					szString.append(gDLL->getText("TXT_KEY_SLAVE_PRODUCTION_WITHOUT_MODIFIER_CITIZENHELP", kUnit.getNameKey(), iYieldAmountWithoutModifier, iProfessionYieldChar));
 					szString.append(NEWLINE);
 					szString.append(gDLL->getText("TXT_KEY_SLAVE_PRODUCTION_PERCENT_MODIFIER_CITIZENHELP", iSlaveWorkerProductionBonus));
 					szString.append(L"\n=======================\n");

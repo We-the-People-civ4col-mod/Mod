@@ -5,6 +5,18 @@
 #include "CvPopupInfo.h"
 #include "CvDiploParameters.h"
 
+/* The exe calls some read() and write() functions, which in turn calls the others. The exe calling order is as follows:
+ * CvInitCore
+ * CvGameAI
+ * CvMap
+ * CvTeamAI
+ * CvPlayerAI
+ *
+ * The last two loops through the entire array and the loop control is in the exe
+ */
+
+
+
 //
 // Classes to handle savegames
 //

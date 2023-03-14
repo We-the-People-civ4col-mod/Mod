@@ -2815,6 +2815,15 @@
         <Russian>[ICON_BULLET]Товары сверх вместимости продаются за %d1%% от цены в Европе</Russian>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BUILDING_UNLOCK_TRADESETTING</Tag>
+        <English>[ICON_BULLET]Allows automated sale of goods through the customs house settings.</English>
+        <French>[ICON_BULLET]Permet la vente automatisée de marchandises via les paramètres de la douane.</French>
+        <German>[ICON_BULLET]Erlaubt den automatisierten Verkauf von Waren über die Zollhauseinstellungen.</German>
+        <Italian>[ICON_BULLET]Consente la vendita automatizzata di merci attraverso le impostazioni della dogana.</Italian>
+        <Spanish>[ICON_BULLET]Permite la venta automatizada de mercancías a través de la configuración de la aduana.</Spanish>
+        <Russian>[ICON_BULLET]Позволяет автоматизировать продажу товаров через настройки таможни.</Russian>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_ACTION_AUTOMATE_BUILD_HELP</Tag>
         <English>Automate all [COLOR_UNIT_TEXT]pioneer[COLOR_REVERT] actions. The unit will continue working until you cancel its automation.</English>
         <French>Automatise toutes les actions des [COLOR_UNIT_TEXT]pionniers[COLOR_REVERT]. L'unité continue à travailler tant qu'elle reste automatisée.</French>

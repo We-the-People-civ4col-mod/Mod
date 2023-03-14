@@ -3865,7 +3865,7 @@ class CvMainInterface:
 # R&R, Robert Surcouf VET NewCapacity Help- Start
 			elif iData1 == VET_NEW_CAPACITY:
 				#return localText.getText("TXT_KEY_YIELD_RATE", (gc.getPlayer(gc.getGame().getActivePlayer()).getYieldRate(YieldTypes.YIELD_CROSSES), gc.getYieldInfo(YieldTypes.YIELD_CROSSES).getChar()))
-				return localText.getText("TXT_KEY_CONCEPT_NEW_STORAGE", ());
+				return localText.getText("TXT_KEY_NEW_STORAGE_CITY_SCREEN", ());
 # R&R, Robert Surcouf VET NewCapacity Help- End
 # WTP, ray, new Harbour System - START
 			elif iData1 == NEW_HARBOUR_SYSTEM:

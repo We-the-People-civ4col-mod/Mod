@@ -38,11 +38,11 @@ class CvPlayer
 {
 public:
 	// add support for AI and CivEffect calls
-	__forceinline CvPlayerAI* AI() { return (CvPlayerAI*)this; }
-	__forceinline const CvPlayerAI* AI() const { return (CvPlayerAI*)this; }
+	__forceinline CvPlayerAI& AI() { return (CvPlayerAI&)*this; }
+	__forceinline const CvPlayerAI& AI() const { return (CvPlayerAI&)*this; }
 
-	__forceinline CvPlayerCivEffect* CivEffect() { return (CvPlayerCivEffect*)this; }
-	__forceinline const CvPlayerCivEffect* CivEffect() const { return (CvPlayerCivEffect*)this; }
+	__forceinline CvPlayerCivEffect& CivEffect() { return (CvPlayerCivEffect&)*this; }
+	__forceinline const CvPlayerCivEffect& CivEffect() const { return (CvPlayerCivEffect&)*this; }
 
 	CvPlayer();
 	virtual ~CvPlayer();
@@ -1144,7 +1144,7 @@ protected:
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
 	YieldArray<unsigned short> *m_cache_YieldEquipmentAmount;
 	void Update_cache_YieldEquipmentAmount();
-	void Update_cache_YieldEquipmentAmount(ProfessionTypes eProfession);
+	bool Update_cache_YieldEquipmentAmount(ProfessionTypes eProfession);
 	int getYieldEquipmentAmountUncached(ProfessionTypes eProfession, YieldTypes eYield) const;
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
 	std::vector<EventTriggerTypes> m_triggersFired;

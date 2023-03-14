@@ -782,15 +782,15 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_43</Tag>
-		<English>Galleons are the finest transport ships available and the only ships capable of transporting treasure units to Europe.</English>
+		<English>Galleons are the finest transport ships available and the only ships capable of transporting treasure units to Europe. However they cannot transport any other units.[PARAGRAPH:2]Once you have enough treasures, the King may offer you a special price on a galleon to carry them, but he'll wait until you have enough gold on hand.</English>
 		<French>Les galions sont les navires de transport disponibles les plus performants. Ils sont notamment les seuls à pouvoir transporter les trésors en Europe.</French>
-		<German>Galeonen sind die besten verfügbaren Transportschiffe und die einzigen, die Schatzeinheiten nach Europa bringen können.</German>
+		<German>Galeonen sind die besten verfügbaren Transportschiffe und die einzigen, die Schatzeinheiten nach Europa bringen können. Allerdings können sie keine anderen Einheiten transportieren.</German>
 		<Italian>I galeoni sono le migliori navi da trasporto disponibili e sono le uniche in grado di trasportare i tesori in Europa.</Italian>
-		<Spanish>Los Galeones son los mejores barcos de transporte y los únicos capaces de llevar unidades de Tesoro a Europa.</Spanish>
+		<Spanish>Los Galeones son los mejores barcos de transporte y los únicos capaces de llevar unidades de Tesoro a Europa. Por otro lado, no pueden transportar otros tipos de unidades.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_45</Tag>
-		<English>To load goods onto a transport, you must move the transport unit into the same tile as the goods and press the "Load Goods" icon. You can also do it from the "Transport" section of the Settlement Screen.</English>
+		<English>To load goods onto a transport, you must move the transport unit into the same tile as the goods and press the "Load Goods" icon. You can also do it from the "Transport" section of the Settlement Screen.[PARAGRAPH:2]You can unload goods one of two ways - by selecting the good you would like to unload from the unit stack and pressing "Unload" from the orders display or by activating the transport unit and clicking "Unload All." You can only unload goods in settlements (or in Europe).Soldiers need guns and gunpowder. </English>
 		<French>Pour charger des marchandises dans une unité de transport, vous devez déplacer cette dernière sur la même case que les marchandises puis cliquer sur l'icône Charger des marchandises. Vous pouvez également le faire depuis l'espace Transport de l'écran de colonie.</French>
 		<German>Um Güter auf ein Transportmittel zu laden, müssen Sie die Transporteinheit auf dasselbe Geländefeld wie die Güter bewegen und auf "Beladen" klicken. Dies ist ebenfalls im Menü "Transport" im Siedlungsbildschirm möglich.</German>
 		<Italian>Per caricare dei beni su un trasporto devi prima spostare l'unità da trasporto nella stessa casella in cui si trovano i beni, per poi cliccare sull'icona "Carica beni". Puoi anche farlo dalla sezione "Trasporti" nella schermata dell'insediamento.</Italian>
@@ -798,7 +798,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_46</Tag>
-		<English>You can unload goods one of two ways - by selecting the good you would like to unload from the unit stack and pressing "Unload" from the orders display or by activating the transport unit and clicking "Unload All." You can only unload goods in settlements (or in Europe).</English>
+		<English>Pioneers and scouts need baked goods to go with their tools and horses. To keep costs down the baker's house and the powder maker's house should be among your first buildings.</English>
 		<French>Il existe deux manières de décharger des marchandises : en sélectionnant la marchandise à décharger dans la pile d'unités puis en appuyant sur Décharger dans la boîte d'ordre, ou en activant l'unité de transport puis en cliquant sur Décharger tout. Vous ne pouvez décharger des marchandises que dans les colonies et en Europe.</French>
 		<German>Sie können Güter auf zwei verschiedene Arten entladen : indem Sie das gewünschte Gut aus den Einheiten auswählen und in der Befehlsanzeige "Entladen" anklicken oder indem Sie die Transporteinheit aktivieren und "Alle entladen" anklicken. Sie können Güter nur in Siedlungen (oder in Europa) entladen.</German>
 		<Italian>Puoi scaricare i beni in due modi: selezionando il bene che vuoi scaricare dal gruppo e scegliendo "Scarica" nella finestra degli ordini, oppure attivando l'unità di trasporto e cliccando su "Scarica tutto". Puoi scaricare i beni solo negli insediamenti (o in Europa).</Italian>

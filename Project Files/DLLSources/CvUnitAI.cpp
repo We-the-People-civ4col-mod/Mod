@@ -2172,6 +2172,7 @@ void CvUnitAI::AI_treasureMove()
 		if(GET_PLAYER(getOwnerINLINE()).isNative())
 		{
 			int iGoldForNativeTreasure = getYieldStored();
+			OOS_LOG("Native trader gold", iGoldForNativeTreasure);
 			GET_PLAYER(getOwnerINLINE()).changeGold(iGoldForNativeTreasure);
 			kill(false);
 			return;
@@ -14865,6 +14866,12 @@ int CvUnitAI::AI_foundValue(CvPlot* pPlot)
 {
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 
+	// Do not settle the first city on an island
+	if (kOwner.getNumCities() == 0 && pPlot->area()->isIsland())
+	{
+		return 0;
+	}
+
 	int iValue = 0;
 	if ((kOwner.getNumCities() == 0) && (GC.getGameINLINE().getGameTurn() < 20))
 	{
@@ -14874,7 +14881,7 @@ int CvUnitAI::AI_foundValue(CvPlot* pPlot)
 	{
 		iValue = pPlot->getFoundValue(getOwnerINLINE());
 	}
-	
+
 	// TAC - AI City sites - koma13 - START
 	if (iValue > 0)
 	{

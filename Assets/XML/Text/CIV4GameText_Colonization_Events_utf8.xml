@@ -652,11 +652,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PEASANT_WARPREP_1A</Tag>
-        <English>Rural unrest is growing in Europe. Relations between [COLOR_HIGHLIGHT_TEXT]%s1__player[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]%s3__player[COLOR_REVERT] have deteriorated. War is in the air.</English>
-        <French>L'agitation rurale s'accroît en Europe. Les relations entre [COLOR_HIGHLIGHT_TEXT]%s1__player[COLOR_REVERT] et [COLOR_HIGHLIGHT_TEXT]%s3__player[COLOR_REVERT] se sont détériorées. La guerre est dans l'air.</French>
-        <German>Die Unruhen unter der Landbevölkerung in Europa weiten sich aus. Die Beziehungen zwischen [COLOR_HIGHLIGHT_TEXT]%s1__player[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]%s3__player[COLOR_REVERT] verschlechtern sich. Krieg liegt in der Luft.</German>
-        <Italian>I disordini rurali stanno crescendo in Europa. Le relazioni tra [COLOR_HIGHLIGHT_TEXT]%s1__player[COLOR_REVERT] e [COLOR_HIGHLIGHT_TEXT]%s3__player[COLOR_REVERT] si sono deteriorate. La guerra è nell'aria.</Italian>
-        <Spanish>El malestar rural crece en Europa. Las relaciones entre [COLOR_HIGHLIGHT_TEXT]%s1__player[COLOR_REVERT] y [COLOR_HIGHLIGHT_TEXT]%s3__player[COLOR_REVERT] se han deteriorado. La guerra está en el aire.</Spanish>
+        <English>Rural unrest is growing in Europe. Relations between [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] have deteriorated. War is in the air.</English>
+        <French>L'agitation rurale s'accroît en Europe. Les relations entre [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] et [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] se sont détériorées. La guerre est dans l'air.</French>
+        <German>Die Unruhen unter der Landbevölkerung in Europa weiten sich aus. Die Beziehungen zwischen [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] verschlechtern sich. Krieg liegt in der Luft.</German>
+        <Italian>I disordini rurali stanno crescendo in Europa. Le relazioni tra [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] e [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] si sono deteriorate. La guerra è nell'aria.</Italian>
+        <Spanish>El malestar rural crece en Europa. Las relaciones entre [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] y [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] se han deteriorado. La guerra está en el aire.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PEASANT_WARPREP_HELP</Tag>

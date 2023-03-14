@@ -74,6 +74,7 @@ public:
 	int getNumImprovements(ImprovementTypes eImprovement) const;
 	void changeNumImprovements(ImprovementTypes eImprovement, int iChange);
 	bool isEuropePlayer() const;	// TAC - AI Explore from Ship endless loop fix - koma13
+	bool isIsland() const;
 
 protected:
 	int m_iID;
@@ -113,7 +114,7 @@ inline int  CvArea :: getNumCities()                            const { return m
 inline int  CvArea :: getNumStartingPlots()                     const { return m_iNumStartingPlots; }
 inline bool CvArea :: isWater()                                 const { return m_bWater; }
 inline int  CvArea :: getNumUnrevealedTiles(TeamTypes eIndex)   const { return ( getNumTiles() - getNumRevealedTiles(eIndex) ); }
-
+inline bool CvArea :: isIsland()								const { return getNumTiles() < NUM_CITY_PLOTS_2_PLOTS; }
 
 
 

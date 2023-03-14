@@ -104,6 +104,22 @@ void CvRandom::writeLog(const char* szLog, const char* szExtraText)
 #endif
 }
 
+void CvRandom::writeLog(const char* szLog, int iData1, int iData2)
+{
+#if GLOBAL_DEFINE_USE_OOS_LOGGING
+	const CvGame& kGame = GC.getGameINLINE();
+	if (!kGame.isNetworkMultiPlayer() || !kGame.isFinalInitialized() || !GC.getRandLogging())
+	{
+		return;
+	}
+	CvString filename;
+	filename.append(CvString::format("Random Player %d.log", GC.getGameINLINE().getActivePlayer()));
+	CvString szText = szLog;
+	szText.append(CvString::format(" %d %d", iData1, iData2));
+	gDLL->logMsg(filename, szText.c_str());
+#endif
+}
+
 void CvRandom::writeLog(const char* szLog, const char* szExtraText, int iData)
 {
 #if GLOBAL_DEFINE_USE_OOS_LOGGING
@@ -116,6 +132,22 @@ void CvRandom::writeLog(const char* szLog, const char* szExtraText, int iData)
 	filename.append(CvString::format("Random Player %d.log", GC.getGameINLINE().getActivePlayer()));
 	CvString szText = szLog;
 	szText.append(CvString::format(" %s %d", szExtraText, iData));
+	gDLL->logMsg(filename, szText.c_str());
+#endif
+}
+
+void CvRandom::writeLog(const char* szLog, const char* szExtraText, const char* szText3)
+{
+#if GLOBAL_DEFINE_USE_OOS_LOGGING
+	const CvGame& kGame = GC.getGameINLINE();
+	if (!kGame.isNetworkMultiPlayer() || !kGame.isFinalInitialized() || !GC.getRandLogging())
+	{
+		return;
+	}
+	CvString filename;
+	filename.append(CvString::format("Random Player %d.log", GC.getGameINLINE().getActivePlayer()));
+	CvString szText = szLog;
+	szText.append(CvString::format(" %s %s", szExtraText, szText3));
 	gDLL->logMsg(filename, szText.c_str());
 #endif
 }

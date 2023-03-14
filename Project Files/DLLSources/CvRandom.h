@@ -26,7 +26,9 @@ public:
 	static void writeLog(const CvString& szLog);
 	static void writeLog(const char* szLog, int iData);
 	static void writeLog(const char* szLog, const char* szExtraText);
+	static void writeLog(const char* szLog, int iData1, int iData2);
 	static void writeLog(const char* szLog, const char* szExtraText, int iData);
+	static void writeLog(const char* szLog, const char* szExtraText, const char* szText3);
 
 	DllExport void init(unsigned long ulSeed);
 	void uninit();
