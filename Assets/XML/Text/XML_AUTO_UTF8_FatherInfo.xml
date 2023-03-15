@@ -4270,27 +4270,27 @@
     <TEXT>
         <Tag>TXT_KEY_FATHER_IVAN_KRUZENSHTERN</Tag>
         <English>
-            <Text>Adam Johann von Krusenstern</Text>
+            <Text>Ivan Fyodorovich Krusenstern</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </English>
         <French>
-            <Text>Adam Johann von Krusenstern</Text>
+            <Text>Ivan Fyodorovich Krusenstern</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Adam Johann von Krusenstern</Text>
+            <Text>Ivan Fyodorovich Krusenstern</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Adam Johann von Krusenstern</Text>
+            <Text>Ivan Fyodorovich Krusenstern</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Adam Johann von Krusenstern</Text>
+            <Text>Ivan Fyodorovich Krusenstern</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
@@ -4298,13 +4298,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_IVAN_KRUZENSHTERN_PEDIA</Tag>
-        <English>[H1]Adam Johann von Krusenstern[\H1][NEWLINE][BOLD]Lived : [\BOLD]1770 - 1846[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Ivan Fyodorovich Kruzenshtern was a Baltic German admiral and explorer who led the first Russian circumnavigation of the globe.[PARAGRAPH:2]Kruzenshtern was born in Hagudi, Harrien, Governorate of Estonia, Russian Empire, into a Baltic German family descended from the Swedish aristocratic family von Krusenstjerna, who remained in the province after the country was ceded to Russia. In 1787, he joined the Russian Imperial Navy and served in the war against Sweden. Subsequently he served in the Royal Navy between 1793 and 1799, visiting America, India and China.</English>
-        <German>[H1]Adam Johann von Krusenstern[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1770 - 1846[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]Iwan Fjodorowitsch Kruzenstern war ein deutsch-baltischer Admiral der russischen Flotte und führte die erste russische Weltumseglung durch.[PARAGRAPH:2]Krusenstern wurde im Seekadettenkorps in Kronstadt ausgebildet und nahm zwischen 1787 und 1790 an den Kriegen gegen Schweden teil. Er leistete von 1793 bis 1799 Dienst in der britischen Flotte in Nord-Amerika, Afrika und Asien. Von 1803 bis 1806 war er Leiter der russischen Weltumsegelungsexpedition.</German>
+        <English>[H1]Ivan Fyodorovich Krusenstern[\H1][NEWLINE][BOLD]Lived : [\BOLD]1770 - 1846[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Ivan Fyodorovich Kruzenshtern was a Baltic German admiral and explorer who led the first Russian circumnavigation of the globe.[PARAGRAPH:2]Kruzenshtern was born in Hagudi, Harrien, Governorate of Estonia, Russian Empire, into a Baltic German family descended from the Swedish aristocratic family von Krusenstjerna, who remained in the province after the country was ceded to Russia. In 1787, he joined the Russian Imperial Navy and served in the war against Sweden. Subsequently he served in the Royal Navy between 1793 and 1799, visiting America, India and China.</English>
+        <German>[H1]Ivan Fyodorovich Krusenstern[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1770 - 1846[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]Iwan Fjodorowitsch Kruzenstern war ein deutsch-baltischer Admiral der russischen Flotte und führte die erste russische Weltumseglung durch.[PARAGRAPH:2]Krusenstern wurde im Seekadettenkorps in Kronstadt ausgebildet und nahm zwischen 1787 und 1790 an den Kriegen gegen Schweden teil. Er leistete von 1793 bis 1799 Dienst in der britischen Flotte in Nord-Amerika, Afrika und Asien. Von 1803 bis 1806 war er Leiter der russischen Weltumsegelungsexpedition.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_IVAN_KRUZENSHTERN_STRATEGY</Tag>
-        <English>Improve your [COLOR_HIGHLIGHT_TEXT]Relations with the King and the other Europeans[COLOR_REVERT] and get [COLOR_HIGHLIGHT_TEXT]more ships[COLOR_REVERT]? Convincing [COLOR_TECH_TEXT]Adam Johann von Krusenstern[COLOR_REVERT] to join your Continental Congress will improve your [COLOR_HIGHLIGHT_TEXT]Relations with the King and other Europeans[COLOR_REVERT], grant you two [COLOR_HIGHLIGHT_TEXT]free Ships[COLOR_REVERT] and a [COLOR_HIGHLIGHT_TEXT]Great Admiral[COLOR_REVERT]!</English>
-        <German>Möchten Sie Ihre [COLOR_HIGHLIGHT_TEXT]Beziehungen zu König und anderen Europäern[COLOR_REVERT] verbessern und [COLOR_HIGHLIGHT_TEXT]mehr Schiffe[COLOR_REVERT] bekommen? Wenn Sie [COLOR_TECH_TEXT]Adam Johann von Krusenstern[COLOR_REVERT] überreden, Ihrem Kontinentalkongress beizutreten, trägt dies stark dazu bei Ihre [COLOR_HIGHLIGHT_TEXT]Beziehungen zu Ihrem König und anderen Europäern[COLOR_REVERT] zu verbessern. Sie bekommen obendrein [COLOR_HIGHLIGHT_TEXT]2 Schiffe[COLOR_REVERT] einen [COLOR_HIGHLIGHT_TEXT]Großen Admiral[COLOR_REVERT]!</German>
+        <English>Improve your [COLOR_HIGHLIGHT_TEXT]Relations with the King and the other Europeans[COLOR_REVERT] and get [COLOR_HIGHLIGHT_TEXT]more ships[COLOR_REVERT]? Convincing [COLOR_TECH_TEXT]Ivan Fyodorovich Krusenstern[COLOR_REVERT] to join your Continental Congress will improve your [COLOR_HIGHLIGHT_TEXT]Relations with the King and other Europeans[COLOR_REVERT], grant you two [COLOR_HIGHLIGHT_TEXT]free Ships[COLOR_REVERT] and a [COLOR_HIGHLIGHT_TEXT]Great Admiral[COLOR_REVERT]!</English>
+        <German>Möchten Sie Ihre [COLOR_HIGHLIGHT_TEXT]Beziehungen zu König und anderen Europäern[COLOR_REVERT] verbessern und [COLOR_HIGHLIGHT_TEXT]mehr Schiffe[COLOR_REVERT] bekommen? Wenn Sie [COLOR_TECH_TEXT]Ivan Fyodorovich Krusenstern[COLOR_REVERT] überreden, Ihrem Kontinentalkongress beizutreten, trägt dies stark dazu bei Ihre [COLOR_HIGHLIGHT_TEXT]Beziehungen zu Ihrem König und anderen Europäern[COLOR_REVERT] zu verbessern. Sie bekommen obendrein [COLOR_HIGHLIGHT_TEXT]2 Schiffe[COLOR_REVERT] einen [COLOR_HIGHLIGHT_TEXT]Großen Admiral[COLOR_REVERT]!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_WILLIAM_BREWSTER</Tag>

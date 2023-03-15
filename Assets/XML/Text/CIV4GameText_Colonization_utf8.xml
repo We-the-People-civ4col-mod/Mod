@@ -266,15 +266,17 @@
         <German>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] für alle Siedlungen)</German>
         <Italian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] per tutti gli insediamenti)</Italian>
         <Spanish>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] para todos los asentamientos)</Spanish>
-  </TEXT>
-  <TEXT>
+        <Russian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] для всех поселений)</Russian>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_CITY_BAR_SELECT_CTRL</Tag>
         <English>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] for All Settlements on this Continent)</English>
         <French>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] pour toutes les colonies sur ce continent)</French>
         <German>([COLOR:140:255:40:255]&lt; STRG &gt;[COLOR_REVERT] für alle Siedlungen auf diesem Kontinent)</German>
         <Italian>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] per tutti gli insediamenti in questo continente)</Italian>
         <Spanish>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] para todos los asentamientos en este continente)</Spanish>
-  </TEXT>
+        <Russian>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] для всех поселений на этом континенте)</Russian>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_SCREEN_CITY_CULTURE</Tag>
         <English>%d1 settlements with %s2 Culture</English>
@@ -282,6 +284,7 @@
         <German>%d1 Siedlungen mit Kulturstufe %s2</German>
         <Italian>%d1 insediamenti con %s2 cultura</Italian>
         <Spanish>%d1 asentamientos con cultura %s2</Spanish>
+        <Russian>%d1 поселений с %s2 культуры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WONDERS_SCREEN_TOP_CITIES_TEXT</Tag>
@@ -457,7 +460,7 @@
         <German>Benötigt : </German>
         <Italian>Consuma : </Italian>
         <Spanish>Consume : </Spanish>
-        <Russian>Потребляет :</Russian>
+        <Russian>Потребляет:</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PRODUCED</Tag>
@@ -466,7 +469,7 @@
         <German>Produziert : </German>
         <Italian>Produce : </Italian>
         <Spanish>Produce : </Spanish>
-        <Russian>Производит :</Russian>
+        <Russian>Производит:</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CONSUMED_WITH_CHAR</Tag>
@@ -475,7 +478,7 @@
         <German>Benötigt : %F1_Icon</German>
         <Italian>Consuma : %F1_Icon</Italian>
         <Spanish>Consume : %F1_Icon</Spanish>
-        <Russian>Потребляет : %F1_Icon</Russian>
+        <Russian>Потребляет: %F1_Icon</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PRODUCED_WITH_CHAR</Tag>
@@ -484,7 +487,7 @@
         <German>Produziert : %F1_Icon</German>
         <Italian>Produce : %F1_Icon</Italian>
         <Spanish>Produce : %F1_Icon</Spanish>
-        <Russian>Производит : %F1_Icon</Russian>
+        <Russian>Производит: %F1_Icon</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_WORKS_IN_BUILDING</Tag>
@@ -1629,7 +1632,7 @@
         <German>Einheiten zu Beginn :</German>
         <Italian>Unità iniziali :</Italian>
         <Spanish>Unidades iniciales :</Spanish>
-        <Russian>Начальные юниты :</Russian>
+        <Russian>Начальные юниты:</Russian>
     </TEXT>
     <TEXT>
         <Tag>INTERFACE_REVOLUTION</Tag>
@@ -2400,7 +2403,7 @@
         <German>%s2_City : Ein [COLOR_HIGHLIGHT_TEXT]%s1_profession[COLOR_REVERT] wurde in %s3_building ausgebildet.</German>
         <Italian>%s2_City : Dal(la) %s3_building si è diplomata un'unità [COLOR_HIGHLIGHT_TEXT]%s1_profession[COLOR_REVERT].</Italian>
         <Spanish>%s2_City : En [NUM3:el:la:los:las] %s3_building se ha graduado [NUM1:un nuevo:una nueva:unos nuevos:unas nuevas] [COLOR_HIGHLIGHT_TEXT]%s1_profession[COLOR_REVERT].</Spanish>
-        <Russian>%s2_City : [COLOR_HIGHLIGHT_TEXT]%s1_profession[COLOR_REVERT] обучился в %s3_building.</Russian>
+        <Russian>[COLOR_SELECTED_TEXT]%s2_City :[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s1_profession[COLOR_REVERT] обучился в %s3_building.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHOOSE_SPECIALTY</Tag>
@@ -2712,13 +2715,13 @@
         <German>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Die Bürger verlassen die Stadt auf der Suche nach Nahrung[COLOR_REVERT]</German>
         <Italian>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]I cittadini abbandonano alla ricerca di cibo[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Los ciudadanos abandonan en busca de Alimentos[COLOR_REVERT]</Spanish>
-        <Russian>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Жители покидают город в поисках еды[COLOR_REVERT]</Russian>
+        <Russian>[COLOR_WARNING_TEXT]%s1_city :[COLOR_REVERT] Жители покидают город в поисках еды[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_STARVING_AND_REVOLTING</Tag>
         <English>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Citizens are starving. The lack of support from the government has caused them to rebel[COLOR_REVERT]</English>
         <German>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Die Bürger hungern! Die ausbleibende Unterstützung durch die Regierung hat zu einem Aufstand geführt.[COLOR_REVERT]</German>
-        <Russian>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Жители голодают. Отсутствие поддержки со стороны правительства побудило их к восстанию.[COLOR_REVERT]</Russian>
+        <Russian>[COLOR_WARNING_TEXT]%s1_city :[COLOR_REVERT] Жители голодают. Отсутствие поддержки со стороны правительства побудило их к восстанию.[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_STARVING_BUT_COLONIES_PAID</Tag>
@@ -3342,6 +3345,7 @@
         <German>%d1 [NUM1:Schwere Artillerie:Schwere Artillerien]</German>
         <Italian>%d1 [NUM1:unità d'artiglieria:unità d'artiglieria]</Italian>
         <Spanish>%d1 de [NUM1:Artillería:Artillería]</Spanish>
+        <Russian>%d1 [NUM1:Артиллерии:Артиллерии]</Russian>
     </TEXT>
     <TEXT>
         <Tag>INTERFACE_REVOLUTION_SCREEN_VETERAN_MILITIA</Tag>
@@ -3427,7 +3431,7 @@
         <German>Kniet nieder und vernehmt, was Wir, gottgesalbte Majestät des Reiches %s2_civ, Euch und Unserem Hofe verkünden. Ihr seid zu Uns gekommen und habt eine Bitte vorgetragen. Wir entsprechen gnädig Eurem Anliegen. Heute - %s1_year - gestatten Wir Euch, gen Westen zu segeln, bis zum Rand der bekannten Welt und darüberhinaus. Wir geben Euch ein Schiff, Waffen, Werkzeuge und einige Gefolgsleute mit. Entdeckt Ihr fremdes Land, dann hisst dort das Banner Eurer Heimat und beansprucht allen Boden, seine Früchte und die Heidenkinder, die sie ernten, als Unser Eigen. Euch sei die fromme Pflicht aufgetragen, dort das Wort Gottes zu verkünden und das Wohl Eures Königs zu mehren.[NEWLINE][NEWLINE]Doch Wir warnen Euch: Uns wurde berichtet, ein allzu freier Geist hause in Eurem Herzen. Nun, dies ist ein Zipperlein, das wohl jeden Entdecker plagt. Kuriert es bald aus, sonst werden Wir Euch eine Medizin verabreichen lassen, die Euch schlecht schmecken wird. Falls Euch der Teufel reitet, auf eigene Faust zu handeln und Eurem König den Respekt zu verweigern, werden Wir Euch ein Expeditionskorps nachsenden, dass Euch wieder zur Raison bringt![NEWLINE][NEWLINE]Ihr dürft Euch erheben, %s3_leader.[NEWLINE]Euer Abenteuer kann beginnen ...[NEWLINE][NEWLINE][BOLD]Um den Sieg zu erringen :[\BOLD][NEWLINE][ICON_BULLET]Gründet Eure Kolonie.[NEWLINE][ICON_BULLET]Erklärt Eure Unabhängigkeit von Eurem Mutterland, sobald mindestens 50%% Rebellische Stimmung in all Euren Siedlungen herrscht.[NEWLINE][ICON_BULLET]Verteidigt Euer junges Land gegen den Zorn Eures Vaterlandes vor Ablauf der Zeit, indem Ihr all seine Bodeneinheiten auslöscht.[NEWLINE][ICON_BULLET]Schließt Eure Revolution vor allen anderen europäischen Kolonien ab - und Euer Name wird in die Annalen eingehen.[NEWLINE][PARAGRAPH:1]Um bleibenden Ruhm zu erringen, könnt Ihr indes auch einen anderen Weg beschreiten. Nennt so viel Land und Untertanen Euer Eigen, dass man Euch als dominante Macht der Neuen Welt respektieren muss - auch dann werdet Ihr als Held Euren Platz in den Annalen finden.</German>
         <Italian>Nell'anno %s1_year, sua maestà reale il re di %s2_civ ti conferisce uno statuto coloniale.[NEWLINE][NEWLINE]Per la maggiore gloria della nazione il re nomina te, %s3_leader, viceré del Nuovo Mondo. Esplora queste nuove terre, colonizzale e procura ricchezze e gloria a te stesso e alla nostra grande nazione.[NEWLINE][NEWLINE][BOLD]Per ottenere una vittoria:[\BOLD][PARAGRAPH:1]Fonda la tua colonia.[PARAGRAPH:1]Dichiara l'indipendenza dalla madrepatria dopo aver ottenuto il 50%% di sentimento di ribellione in ogni insediamento.[PARAGRAPH:1]Difendi il giovane stato dall'ira della madrepatria annientandone le forze terrestri prima che scada il tempo. [PARAGRAPH:1]Devi completare la rivoluzione prima di qualsiasi altra colonia europea.</Italian>
         <Spanish>En el año de %s1_year Su Majestad, el rey de %s2_civ, os concede una carta colonial.[NEWLINE][NEWLINE]Para mayor gloria de la nación, el rey os nombra a vos, %s3_leader, virrey del Nuevo Mundo. Explorad esta nueva tierra, civilizadla y ganad la gloria para vos y para nuestra gran nación.[NEWLINE][NEWLINE][BOLD]Para conseguir una victoria:[\BOLD][PARAGRAPH:1]Fundad vuestra colonia.[PARAGRAPH:1]Declaraos independientes de la madre patria tras conseguir un 50%% de sentimiento de rebelión en todos vuestros asentamientos.[PARAGRAPH:1]Defended vuestro incipiente país de la cólera de la madre patria acabando con todas las fuerzas terrestres de ésta antes de que se acabe el tiempo. [PARAGRAPH:1]Debéis completar vuestra revolución antes que ninguna otra colonia europea.</Spanish>
-        <Russian>Преклоните колени и слушайте, что Мы, помазанник Божий на Земле, Король %s2_civ, объявляем вам и Нашему Двору. Вы обратились к Нам с просьбой. Мы любезно удовлетворяем её. Сегодня - %s1_year - Мы позволяем вам плыть на запад, на край известного мира и дальше. Мы даём вам корабль, оружие, инструменты и несколько спутников. Если вы откроете неизведанную территорию, поднимите там Наши знамёна и объявите Нашей собственностью всю землю, её плоды и язычников, которые их пожинают. На вас возложена благочестивая обязанность проповедовать там Слово Божье и увеличивать благосостояние вашего Короля.[NEWLINE][NEWLINE]Но Мы предупреждаем вас: Нам сообщили, что в вашем сердце обитает слишком свободный дух. Это недуг, поражающий каждого исследователя. Излечите его как можно скорее или Мы будем вынуждены дать вам лекарство, которое будет неприятным для вас. Если дьявол станет побуждает вас действовать самостоятельно и отказываться уважать своего Короля, Мы пошлем за вами экспедиционный корпус, чтобы привести вас в чувство![NEWLINE][NEWLINE]Можете встать, %s3_leader.[NEWLINE][NEWLINE]Отправляйтесь в путь и да хранит вас Господь...[NEWLINE][NEWLINE][BOLD]Чтобы добиться победы:[\BOLD][NEWLINE][ICON_BULLET]Постройте свою колонию[NEWLINE][ICON_BULLET]Заявите о своей независимости от сюзерена по достижении 50%% мятежных настроений во всех ваших поселениях[NEWLINE][ICON_BULLET]Пока не истечет время, защищайте свою молодую страну от гнева Короля, уничтожив все наземные силы, отправленные им для подавления восстания[NEWLINE][ICON_BULLET]Вы должны начать вашу революцию раньше, чем любая другая европейская колония. И тогда ваше имя навсегда будет вписано в анналы истории[NEWLINE][PARAGRAPH:1]Хотя, чтобы добиться непреходящей славы, вы можете выбрать и другой путь. Захватите столько земли и столько подданных, чтобы вас уважали, как доминирующую силу Нового Света — и тогда вы также займёте свое место в анналах как герой завоеваний.</Russian>
+        <Russian>Преклоните колени и слушайте, что Мы, помазанник Божий на Земле, Король %s2_civ, объявляем вам и Нашему Двору. Вы обратились к Нам с просьбой. Мы любезно удовлетворяем её. Сегодня - %s1_year - Мы позволяем вам плыть на запад, на край известного мира и дальше. Мы даём вам корабль, оружие, инструменты и несколько спутников. Если вы откроете неизведанную территорию, поднимите там Наши знамёна и объявите Нашей собственностью всю землю, её плоды и язычников, которые их пожинают. На вас возложена благочестивая обязанность проповедовать там Слово Божье и увеличивать благосостояние вашего Короля.[NEWLINE][NEWLINE]Но Мы предупреждаем вас: Нам сообщили, что в вашем сердце обитает слишком свободный дух. Это недуг, поражающий каждого исследователя. Излечите его как можно скорее или Мы будем вынуждены дать вам лекарство, которое будет неприятным для вас. Если дьявол станет побуждает вас действовать самостоятельно и отказываться уважать своего Короля, Мы пошлем за вами экспедиционный корпус, чтобы привести вас в чувство![NEWLINE][NEWLINE]Можете встать, %s3_leader.[NEWLINE][NEWLINE]Отправляйтесь в путь и да хранит вас Господь...[NEWLINE][NEWLINE][BOLD]Чтобы добиться победы:[\BOLD][NEWLINE][ICON_BULLET]Постройте свою колонию[NEWLINE][ICON_BULLET]Заявите о своей независимости от сюзерена по достижении 50%% мятежных настроений во всех ваших поселениях[NEWLINE][ICON_BULLET]Пока не истечет время, защищайте свою молодую страну от гнева Короля, уничтожив все наземные силы, отправленные им для подавления восстания[NEWLINE][ICON_BULLET]Вы должны начать вашу революцию раньше, чем любая другая европейская колония. И тогда ваше имя навсегда будет вписано в анналы истории[NEWLINE][PARAGRAPH:1]Хотя, чтобы добиться непреходящей славы, вы можете выбрать и другой путь. Захватите столько земли и столько подданных, чтобы вас уважали, как доминирующую силу Нового Света, и тогда вы также займёте свое место в анналах как герой завоеваний.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_FOUNDED</Tag>
