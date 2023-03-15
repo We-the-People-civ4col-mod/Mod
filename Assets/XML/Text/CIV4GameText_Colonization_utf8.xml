@@ -2421,7 +2421,7 @@
         <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective Überfall! %d3 %s4_yield wurden gestohlen![COLOR_REVERT]</German>
         <Italian>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]Raid %s1_civ_adjective! Hanno rubato %d3 %s4_yield!</Italian>
         <Spanish>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]¡Una incursión de los %s1:3_civ_adjective! ¡Han robado %d3 de %s4_yield!</Spanish>
-        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Нападение индейцев %s1_civ_adjective! Они успели украсть %d3 %s4_yield прежде, чем их успели прогнать![COLOR_REVERT]</Russian>
+        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Нападение индейцев %s1_civ_adjective! Они успели украсть %d3 %s4_yield прежде, чем их успели прогнать!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WEAPONS_CAPTURED</Tag>
@@ -2715,19 +2715,19 @@
         <German>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Die Bürger verlassen die Stadt auf der Suche nach Nahrung[COLOR_REVERT]</German>
         <Italian>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]I cittadini abbandonano alla ricerca di cibo[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Los ciudadanos abandonan en busca de Alimentos[COLOR_REVERT]</Spanish>
-        <Russian>[COLOR_WARNING_TEXT]%s1_city :[COLOR_REVERT] Жители покидают город в поисках еды[COLOR_REVERT]</Russian>
+        <Russian>[COLOR_WARNING_TEXT]%s1_city :[COLOR_REVERT] Жители покидают город в поисках еды</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_STARVING_AND_REVOLTING</Tag>
         <English>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Citizens are starving. The lack of support from the government has caused them to rebel[COLOR_REVERT]</English>
         <German>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Die Bürger hungern! Die ausbleibende Unterstützung durch die Regierung hat zu einem Aufstand geführt.[COLOR_REVERT]</German>
-        <Russian>[COLOR_WARNING_TEXT]%s1_city :[COLOR_REVERT] Жители голодают. Отсутствие поддержки со стороны правительства побудило их к восстанию.[COLOR_REVERT]</Russian>
+        <Russian>[COLOR_WARNING_TEXT]%s1_city :[COLOR_REVERT] Жители голодают. Отсутствие поддержки со стороны правительства побудило их к восстанию.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_STARVING_BUT_COLONIES_PAID</Tag>
         <English>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Citizens are starving. The government however has granted emergency funding of %d2_gold[ICON_GOLD] to deliver %d3_food[ICON_FOOD] to the city.[COLOR_REVERT]</English>
         <German>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Die Bürger verhungern. Die Regierung hat jedoch die Ausgabe von %d2_gold[ICON_GOLD] genehmigt, um %d3_food[ICON_FOOD] in die Stadt liefern zu lassen.[COLOR_REVERT]</German>
-        <Russian>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Горожане голодают. Однако правительство предоставило экстренное финансирование в размере %d2_gold[ICON_GOLD] для доставки %d3_food[ICON_FOOD] в город.[COLOR_REVERT]</Russian>
+        <Russian>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Горожане голодают. Однако правительство предоставило экстренное финансирование в размере %d2_gold[ICON_GOLD] для доставки %d3_food[ICON_FOOD] в город.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BELOW_MIN_SPECS_MESSAGE</Tag>
