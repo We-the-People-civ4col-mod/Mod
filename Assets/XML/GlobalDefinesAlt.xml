@@ -34,6 +34,10 @@
 		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
 	<Define>
+		<DefineName>BASE_CITY_GROWTH_THRESHOLD</DefineName>
+		<iDefineIntVal>200</iDefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>FREE_CITY_ADJACENT_CULTURE</DefineName>
 		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
