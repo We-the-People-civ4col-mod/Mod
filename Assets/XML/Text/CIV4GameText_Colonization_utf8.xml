@@ -2341,7 +2341,7 @@
         <Tag>TXT_KEY_HELP_EDIT_IMPORTS_EXPORTS</Tag>
         <English>Edit Imports\Exports</English>
         <French>Modifier les imports\exports</French>
-        <German>Importe\Exporte bearbeiten</German>
+        <German>Importe\Exporte aller Waren</German>
         <Italian>Modifica importazioni\esportazioni</Italian>
         <Spanish>Editar importaciones\exportaciones</Spanish>
         <Russian>Изменить настройки Импорта/Экспорта</Russian>
@@ -2350,7 +2350,7 @@
         <Tag>TXT_KEY_HELP_EDIT_CONDENSED_IMPORTS_EXPORTS</Tag>
         <English>Edit produced and traded goods</English>
         <French>Modifier les biens créés et commercialisés</French>
-        <German>Bearbeiten Sie produzierte und gehandelte Waren</German>
+        <German>Importe\Exporte von produzierten und gehandelten Waren</German>
         <Italian>Modifica beni creati e scambiati</Italian>
         <Spanish>Edite los bienes creados y comercializados</Spanish>
         <Russian>Изменить настройки производимых и продаваемых товаров</Russian>
