@@ -681,7 +681,7 @@
         <German>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Wütende %s1:3_civ_adjective Kolonisten zerstören aus Protest alle %s3_yield-Lieferungen, da sie hohe Steuern zahlen müssen, aber nicht im Parlament vertreten sind !</German>
         <Italian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Bellicosi coloni %s1_civ_adjective hanno distrutto tutte le partite di %s3_yield per protestare con l'eccessiva tassazione senza rappresentanza !</Italian>
         <Spanish>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]¡Los enojados colonos %s1:3_civ_adjective destruyen todos los cargamentos de %s3_yield en protesta por los impuestos excesivos sin representantes !</Spanish>
-        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Разгневанные %s1_civ_adjective уничтожают все запасы [COLOR_FONT_CREAM]%s3_yield[COLOR_REVERT] в знак протеста против чрезмерного налогообложения без представительства !</Russian>
+        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Разгневанные %s1_civ_adjective уничтожают все запасы [COLOR_FONT_CREAM]%s3_yield[COLOR_REVERT] в знак протеста против чрезмерного налогообложения без представительства в Парламенте!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODS_LOST</Tag>

@@ -1363,7 +1363,7 @@
         <English>Milord, there is unrest in city [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] because the population feels unprotected.</English>
         <French>Sir, il y a des désordres civiles à city %s1_city car la population ne s'y sent pas protégée.</French>
         <German>Milord, in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] gibt es Unruhen, weil die Bürger sich nicht ausreichend geschützt fühlen.</German>
-        <Russian>Милорд, в городе [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] беспорядки, потому что население чувствует себя незащищенным.</Russian>
+        <Russian>[COLOR_NEGATIVE_TEXT]Беда, Милорд![COLOR_REVERT] В городе [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] беспорядки. Из-за отсутствия войск население чувствует себя незащищенным.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PAYED_CHURCH_DEMAND</Tag>
