@@ -57,6 +57,7 @@
             <iAsset>10</iAsset>
             <iPower>0</iPower>
             <iYieldStorage>200</iYieldStorage>
+            <iMaxBarracksSpaceProvided>4</iMaxBarracksSpaceProvided>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>1.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -143,6 +144,7 @@
             <iAsset>25</iAsset>
             <iPower>0</iPower>
             <iYieldStorage>200</iYieldStorage>
+            <iMaxBarracksSpaceProvided>4</iMaxBarracksSpaceProvided>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>1.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -256,6 +258,7 @@
             <iAsset>50</iAsset>
             <iPower>0</iPower>
             <iYieldStorage>200</iYieldStorage>
+            <iMaxBarracksSpaceProvided>4</iMaxBarracksSpaceProvided>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>1.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -368,6 +371,7 @@
             <iAsset>100</iAsset>
             <iPower>0</iPower>
             <iYieldStorage>200</iYieldStorage>
+            <iMaxBarracksSpaceProvided>4</iMaxBarracksSpaceProvided>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>1.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -492,6 +496,7 @@
             <iAsset>100</iAsset>
             <iPower>0</iPower>
             <iYieldStorage>200</iYieldStorage>
+            <iMaxBarracksSpaceProvided>4</iMaxBarracksSpaceProvided>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>1.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -612,6 +617,7 @@
             <iAsset>100</iAsset>
             <iPower>0</iPower>
             <iYieldStorage>200</iYieldStorage>
+            <iMaxBarracksSpaceProvided>4</iMaxBarracksSpaceProvided>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>1.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -2518,7 +2524,7 @@
             <iAsset>25</iAsset>
             <iPower>25</iPower>
             <iYieldStorage>0</iYieldStorage>
-            <iMaxBarracksSpaceProvided>6</iMaxBarracksSpaceProvided>
+            <iMaxBarracksSpaceProvided>2</iMaxBarracksSpaceProvided>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>100.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -2601,7 +2607,7 @@
             <iAsset>50</iAsset>
             <iPower>50</iPower>
             <iYieldStorage>0</iYieldStorage>
-            <iMaxBarracksSpaceProvided>8</iMaxBarracksSpaceProvided>
+            <iMaxBarracksSpaceProvided>4</iMaxBarracksSpaceProvided>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>100.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -2700,7 +2706,7 @@
             <iAsset>100</iAsset>
             <iPower>100</iPower>
             <iYieldStorage>0</iYieldStorage>
-            <iMaxBarracksSpaceProvided>10</iMaxBarracksSpaceProvided>
+            <iMaxBarracksSpaceProvided>6</iMaxBarracksSpaceProvided>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>100.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -2799,7 +2805,7 @@
             <iAsset>150</iAsset>
             <iPower>200</iPower>
             <iYieldStorage>0</iYieldStorage>
-            <iMaxBarracksSpaceProvided>12</iMaxBarracksSpaceProvided>
+            <iMaxBarracksSpaceProvided>8</iMaxBarracksSpaceProvided>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>100.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -2894,6 +2900,7 @@
             <iAsset>150</iAsset>
             <iPower>200</iPower>
             <iYieldStorage>0</iYieldStorage>
+            <iMaxBarracksSpaceProvided>2</iMaxBarracksSpaceProvided>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>100.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -2992,6 +2999,7 @@
             <iAsset>150</iAsset>
             <iPower>200</iPower>
             <iYieldStorage>0</iYieldStorage>
+            <iMaxBarracksSpaceProvided>3</iMaxBarracksSpaceProvided>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>100.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -6247,6 +6255,7 @@
             <iAsset>50</iAsset>
             <iPower>0</iPower>
             <iYieldStorage>0</iYieldStorage>
+            <iMaxHarbourSpaceProvided>2</iMaxHarbourSpaceProvided>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>1.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -6346,6 +6355,7 @@
             <iAsset>100</iAsset>
             <iPower>0</iPower>
             <iYieldStorage>0</iYieldStorage>
+            <iMaxHarbourSpaceProvided>2</iMaxHarbourSpaceProvided>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>1.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -15852,7 +15862,7 @@
             <iHotKeyPriority>0</iHotKeyPriority>
             <iTeachLevel>0</iTeachLevel>
             <iAICitySize>1</iAICitySize>
-        </BuildingInfo>	
+        </BuildingInfo>
         <BuildingInfo>
             <Type>BUILDING_BONUS_YERBA</Type>
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
@@ -15919,7 +15929,7 @@
             <iHotKeyPriority>0</iHotKeyPriority>
             <iTeachLevel>0</iTeachLevel>
             <iAICitySize>1</iAICitySize>
-        </BuildingInfo>	
+        </BuildingInfo>
         <BuildingInfo>
             <Type>BUILDING_BONUS_COFFEE</Type>
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
@@ -20073,7 +20083,7 @@
             <iHotKeyPriority>0</iHotKeyPriority>
             <iTeachLevel>0</iTeachLevel>
             <iAICitySize>1</iAICitySize>
-        </BuildingInfo>	
+        </BuildingInfo>
         <BuildingInfo>
             <Type>BUILDING_BONUS_DOMESTIC_GOOSE</Type>
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
@@ -20274,7 +20284,7 @@
             <iHotKeyPriority>0</iHotKeyPriority>
             <iTeachLevel>0</iTeachLevel>
             <iAICitySize>1</iAICitySize>
-        </BuildingInfo>	
+        </BuildingInfo>
         <BuildingInfo>
             <Type>BUILDING_BONUS_VANILLA</Type>
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>

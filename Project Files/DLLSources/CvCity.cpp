@@ -2751,21 +2751,22 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange)
 	GET_PLAYER(getOwnerINLINE()).changeBuildingClassCount((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType(), iChange);
 	setLayoutDirty(true);
 
-	// WTP, ray, new Harbour System - START
-	int iMaxHarbourSpaceProvidedByBuilding = GC.getBuildingInfo(eBuilding).getMaxHarbourSpaceProvided();
-	if (iMaxHarbourSpaceProvidedByBuilding != 0 && iMaxHarbourSpaceProvidedByBuilding > getCityHarbourSpace())
+	//WTP, ray, edited by aemon, new Harbor & Barracks System - START
+	int iMaxBarracksSpaceProvidedByBuilding = 0;
+	int iMaxHarbourSpaceProvidedByBuilding = 0;
+	for (int iBuildingClass = 0; iBuildingClass < GC.getNumBuildingClassInfos(); ++iBuildingClass)
 	{
-		setCityHarbourSpace(iMaxHarbourSpaceProvidedByBuilding);
+		BuildingTypes eLoopBuilding = (BuildingTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getCivilizationBuildings(iBuildingClass);
+		if (NO_BUILDING != eLoopBuilding && isHasBuilding(eLoopBuilding))
+		{
+			CvBuildingInfo& kLoopBuilding = GC.getBuildingInfo(eLoopBuilding);
+			iMaxBarracksSpaceProvidedByBuilding += kLoopBuilding.getMaxBarracksSpaceProvided();
+			iMaxHarbourSpaceProvidedByBuilding += kLoopBuilding.getMaxHarbourSpaceProvided();
+		}
 	}
-	// WTP, ray, new Harbour System - END
-
-	// WTP, ray, new Barracks System - START
-	int iMaxBarracksSpaceProvidedByBuilding = GC.getBuildingInfo(eBuilding).getMaxBarracksSpaceProvided();
-	if (iMaxBarracksSpaceProvidedByBuilding != 0 && iMaxBarracksSpaceProvidedByBuilding > getCityBarracksSpace())
-	{
-		setCityBarracksSpace(iMaxBarracksSpaceProvidedByBuilding);
-	}
-	// WTP, ray, new Barracks System - END
+	setCityBarracksSpace(iMaxBarracksSpaceProvidedByBuilding);
+	setCityHarbourSpace(iMaxHarbourSpaceProvidedByBuilding);
+	//WTP, ray, edited by aemon, new Harbor & Barracks System - END
 }
 
 HandicapTypes CvCity::getHandicapType() const
