@@ -1054,7 +1054,7 @@
         <English>Milord, the Natives delivered the promised amount of %d1_yield_amount%F3_yield_icon to [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
         <French>Les indigènes ont livré le montant convenu de %d1_yield_amount%F3_yield_icon à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>Milord, die Ureinwohner haben die versprochenen %d1_yield_amount%F3_yield_icon nach [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] geliefert.</German>
-        <Russian>Милорд, индейцы доставили обещанное количество %d1_yield_amount%F3_yield_icon в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
+        <Russian>Милорд, индейцы доставили обещанные %d1_yield_amount%F3_yield_icon в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_REQUIRES_RIVER</Tag>
