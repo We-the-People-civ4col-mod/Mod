@@ -2858,6 +2858,17 @@ void CvDLLWidgetData::parseCityHarbourSystemHelp(CvWidgetDataStruct &widgetDataS
 		}
 
 		// improving Widget Display
+		// available space (edit: aemon)
+		const int iBaseHarborSpace = GLOBAL_DEFINE_BASE_HARBOUR_SPACES_WITHOUT_BUILDINGS;
+		szBuffer.append(SEPARATOR);
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_MISC_FROM_CITY_YIELD", iBaseHarborSpace, GC.getSymbolID(ANCHOR_CHAR)));
+		if (iCityHarborSpaceMax > iBaseHarborSpace)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_BUILDING_YIELD", iCityHarborSpaceMax-iBaseHarborSpace, GC.getSymbolID(ANCHOR_CHAR)));
+		}
+		// space used
 		if (iCityHarborSpaceUsed > 0)
 		{
 			szBuffer.append(SEPARATOR);
@@ -2871,7 +2882,7 @@ void CvDLLWidgetData::parseCityHarbourSystemHelp(CvWidgetDataStruct &widgetDataS
 					int iCityHarbourSpaceUsedSingleUnit = pLoopUnit->getUnitInfo().getHarbourSpaceNeeded();
 					if (iCityHarbourSpaceUsedSingleUnit > 0)
 					{
-						szDesc = CvWString::format(L"\n %c%s %d%c", GC.getSymbolID(BULLET_CHAR), pLoopUnit->getUnitInfo().getDescription(), iCityHarbourSpaceUsedSingleUnit, GC.getSymbolID(ANCHOR_CHAR));
+						szDesc = CvWString::format(L"\n %c%s -%d%c", GC.getSymbolID(BULLET_CHAR), pLoopUnit->getUnitInfo().getDescription(), iCityHarbourSpaceUsedSingleUnit, GC.getSymbolID(ANCHOR_CHAR));
 						szBuffer.append(szDesc);
 					}
 				}
@@ -2905,8 +2916,18 @@ void CvDLLWidgetData::parseCityBarracksSystemHelp(CvWidgetDataStruct &widgetData
 		{
 			szBuffer.append(gDLL->getText("TXT_KEY_CITY_BARRACKS_TOTALLY_FULL", iCityBarracksSpaceUsed, iCityBarracksSpaceMax, GC.getSymbolID(NO_BARRACKS_CHAR)));
 		}
-
 		// improving Widget Display
+		// available space (edit: aemon)
+		const int iBaseBarracksSpace = GLOBAL_DEFINE_BASE_BARRACKS_SPACES_WITHOUT_BUILDINGS;
+		szBuffer.append(SEPARATOR);
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_MISC_FROM_CITY_YIELD", iBaseBarracksSpace, GC.getSymbolID(BARRACKS_CHAR)));
+		if (iCityBarracksSpaceMax > iBaseBarracksSpace)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_BUILDING_YIELD", iCityBarracksSpaceMax-iBaseBarracksSpace, GC.getSymbolID(BARRACKS_CHAR)));
+		}
+		// space used
 		if (iCityBarracksSpaceUsed > 0)
 		{
 			szBuffer.append(SEPARATOR);
@@ -2928,7 +2949,7 @@ void CvDLLWidgetData::parseCityBarracksSystemHelp(CvWidgetDataStruct &widgetData
 						iCityBarracksSpaceUsedSingleUnit += kProfessionInfo.getBarracksSpaceNeededChange();
 						if (iCityBarracksSpaceUsedSingleUnit > 0)
 						{
-							szDesc = CvWString::format(L"\n %c%s %d%c", GC.getSymbolID(BULLET_CHAR), kProfessionInfo.getDescription(), iCityBarracksSpaceUsedSingleUnit, GC.getSymbolID(BARRACKS_CHAR));
+							szDesc = CvWString::format(L"\n %c%s -%d%c", GC.getSymbolID(BULLET_CHAR), kProfessionInfo.getDescription(), iCityBarracksSpaceUsedSingleUnit, GC.getSymbolID(BARRACKS_CHAR));
 							szBuffer.append(szDesc);
 						}
 					}
@@ -2937,7 +2958,7 @@ void CvDLLWidgetData::parseCityBarracksSystemHelp(CvWidgetDataStruct &widgetData
 					{
 						if (iCityBarracksSpaceUsedSingleUnit > 0)
 						{
-							szDesc = CvWString::format(L"\n %c%s %d%c", GC.getSymbolID(BULLET_CHAR), pLoopUnit->getUnitInfo().getDescription(), iCityBarracksSpaceUsedSingleUnit, GC.getSymbolID(BARRACKS_CHAR));
+							szDesc = CvWString::format(L"\n %c%s -%d%c", GC.getSymbolID(BULLET_CHAR), pLoopUnit->getUnitInfo().getDescription(), iCityBarracksSpaceUsedSingleUnit, GC.getSymbolID(BARRACKS_CHAR));
 							szBuffer.append(szDesc);
 						}
 					}

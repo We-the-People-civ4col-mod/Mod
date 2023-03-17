@@ -2752,20 +2752,23 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange)
 	setLayoutDirty(true);
 
 	//WTP, ray, edited by aemon, new Harbor & Barracks System - START
-	int iMaxBarracksSpaceProvidedByBuilding = 0;
-	int iMaxHarbourSpaceProvidedByBuilding = 0;
-	for (int iBuildingClass = 0; iBuildingClass < GC.getNumBuildingClassInfos(); ++iBuildingClass)
+	int iMaxBarracksSpaceProvidedByBuilding = GLOBAL_DEFINE_BASE_HARBOUR_SPACES_WITHOUT_BUILDINGS;
+	int iMaxHarbourSpaceProvidedByBuilding = GLOBAL_DEFINE_BASE_BARRACKS_SPACES_WITHOUT_BUILDINGS;
+	if (GC.getBuildingInfo(eBuilding).getMaxBarracksSpaceProvided() > 0 || GC.getBuildingInfo(eBuilding).getMaxHarbourSpaceProvided() > 0)
 	{
-		BuildingTypes eLoopBuilding = (BuildingTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getCivilizationBuildings(iBuildingClass);
-		if (NO_BUILDING != eLoopBuilding && isHasBuilding(eLoopBuilding))
+		for (int iBuildingClass = 0; iBuildingClass < GC.getNumBuildingClassInfos(); ++iBuildingClass)
 		{
-			CvBuildingInfo& kLoopBuilding = GC.getBuildingInfo(eLoopBuilding);
-			iMaxBarracksSpaceProvidedByBuilding += kLoopBuilding.getMaxBarracksSpaceProvided();
-			iMaxHarbourSpaceProvidedByBuilding += kLoopBuilding.getMaxHarbourSpaceProvided();
+			BuildingTypes eLoopBuilding = (BuildingTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getCivilizationBuildings(iBuildingClass);
+			if (NO_BUILDING != eLoopBuilding && isHasBuilding(eLoopBuilding))
+			{
+				CvBuildingInfo& kLoopBuilding = GC.getBuildingInfo(eLoopBuilding);
+				iMaxBarracksSpaceProvidedByBuilding += kLoopBuilding.getMaxBarracksSpaceProvided();
+				iMaxHarbourSpaceProvidedByBuilding += kLoopBuilding.getMaxHarbourSpaceProvided();
+			}
 		}
+		setCityBarracksSpace(iMaxBarracksSpaceProvidedByBuilding);
+		setCityHarbourSpace(iMaxHarbourSpaceProvidedByBuilding);
 	}
-	setCityBarracksSpace(iMaxBarracksSpaceProvidedByBuilding);
-	setCityHarbourSpace(iMaxHarbourSpaceProvidedByBuilding);
 	//WTP, ray, edited by aemon, new Harbor & Barracks System - END
 }
 
@@ -10465,12 +10468,7 @@ int CvCity::getCityHarbourSpace() const
 
 	else
 	{
-		const int iMinHarbourSpace = GLOBAL_DEFINE_BASE_HARBOUR_SPACES_WITHOUT_BUILDINGS;
-		// even without Harbour Coastal Villages should return base Harbour Space
-		if (iValueToReturn < iMinHarbourSpace)
-		{
-			iValueToReturn = iMinHarbourSpace;
-		}
+		iValueToReturn = m_iCityHarbourSpace;
 	}
 
 	return iValueToReturn;
@@ -10517,15 +10515,7 @@ bool CvCity::bShouldShowCityHarbourSystem() const
 // WTP, ray, new Barracks System - START
 int CvCity::getCityBarracksSpace() const
 {
-	int iValueToReturn = m_iCityBarracksSpace;
-	const int iMinBarracksSpace = GLOBAL_DEFINE_BASE_BARRACKS_SPACES_WITHOUT_BUILDINGS;
-	// even without Barracks Villages should return base Barracks Space
-	if (iValueToReturn < iMinBarracksSpace)
-	{
-			iValueToReturn = iMinBarracksSpace;
-	}
-
-	return iValueToReturn;
+	return m_iCityBarracksSpace;
 }
 
 void CvCity::setCityBarracksSpace(int iValue)

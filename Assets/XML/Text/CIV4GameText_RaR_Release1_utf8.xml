@@ -1534,7 +1534,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_HEALTH_CITY_PLOT_CHANGE</Tag>
         <English>%s1 by City Location = %d2%F3</English>
-        <German>%s1 by durch Standort = %d2%F3</German>
+        <German>%s1 durch Standort = %d2%F3</German>
         <Russian>%s1 от расположения города = %d2%F3</Russian>
     </TEXT>
     <TEXT>
