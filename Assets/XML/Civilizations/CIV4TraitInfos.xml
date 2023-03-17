@@ -3294,7 +3294,7 @@
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_CROSSES</YieldType>
-                            <iYieldChange>3</iYieldChange>
+                            <iYieldChange>1</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
                 </BuildingYieldChange>
@@ -3303,7 +3303,7 @@
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_CROSSES</YieldType>
-                            <iYieldChange>4</iYieldChange>
+                            <iYieldChange>2</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
                 </BuildingYieldChange>
@@ -3312,7 +3312,7 @@
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_CROSSES</YieldType>
-                            <iYieldChange>5</iYieldChange>
+                            <iYieldChange>3</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
                 </BuildingYieldChange>
@@ -3321,7 +3321,7 @@
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_CROSSES</YieldType>
-                            <iYieldChange>6</iYieldChange>
+                            <iYieldChange>4</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
                 </BuildingYieldChange>
@@ -4286,7 +4286,7 @@
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_CROSSES</YieldType>
-                            <iYieldChange>2</iYieldChange>
+                            <iYieldChange>1</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
                 </BuildingYieldChange>
@@ -4295,7 +4295,7 @@
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_CROSSES</YieldType>
-                            <iYieldChange>4</iYieldChange>
+                            <iYieldChange>2</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
                 </BuildingYieldChange>
@@ -4304,7 +4304,7 @@
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_CROSSES</YieldType>
-                            <iYieldChange>6</iYieldChange>
+                            <iYieldChange>3</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
                 </BuildingYieldChange>
@@ -4313,7 +4313,7 @@
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_CROSSES</YieldType>
-                            <iYieldChange>8</iYieldChange>
+                            <iYieldChange>4</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
                 </BuildingYieldChange>
@@ -4322,7 +4322,7 @@
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_CROSSES</YieldType>
-                            <iYieldChange>10</iYieldChange>
+                            <iYieldChange>5</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
                 </BuildingYieldChange>
@@ -4331,7 +4331,7 @@
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_CROSSES</YieldType>
-                            <iYieldChange>12</iYieldChange>
+                            <iYieldChange>6</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
                 </BuildingYieldChange>
@@ -5506,7 +5506,7 @@
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_HAMMERS</YieldType>
-                            <iYieldChange>2</iYieldChange>
+                            <iYieldChange>1</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
                 </BuildingYieldChange>
@@ -5515,7 +5515,7 @@
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_HAMMERS</YieldType>
-                            <iYieldChange>4</iYieldChange>
+                            <iYieldChange>2</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
                 </BuildingYieldChange>
@@ -5524,7 +5524,7 @@
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_HAMMERS</YieldType>
-                            <iYieldChange>6</iYieldChange>
+                            <iYieldChange>3</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
                 </BuildingYieldChange>
@@ -5533,7 +5533,7 @@
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_HAMMERS</YieldType>
-                            <iYieldChange>8</iYieldChange>
+                            <iYieldChange>4</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
                 </BuildingYieldChange>
@@ -5542,7 +5542,7 @@
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_HAMMERS</YieldType>
-                            <iYieldChange>10</iYieldChange>
+                            <iYieldChange>5</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
                 </BuildingYieldChange>
