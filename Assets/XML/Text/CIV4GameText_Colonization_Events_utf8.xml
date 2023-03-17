@@ -190,12 +190,14 @@
         <English>Rumours about valuable treasure troves near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] are spreading fast.</English>
         <French>Une rumeur court à propos des environs de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Des immenses trésors seraient cachés dans les environs...</French>
         <German>Gerüchte über wertvolle Schatzfunde in der Nähe von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] verbreiten sich rasch.</German>
+        <Russian>Слухи о находке сокровищ возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] быстро распространяются по округе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ADVENTURER</Tag>
         <English>Rumours about valuable treasure troves near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] attract adventurers from all over the world. Local residents and also His Majesty are watching their activities with distrust.</English>
         <French>Une rumeur court à propos des environs de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Des immenses trésors seraient cachés dans les environs... Cette rumeur attire des Aventuriers. Les citoyens et le Roi surveillent leurs agissements avec méfiance.</French>
         <German>Gerüchte über wertvolle Schatzfunde in der Nähe von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ziehen Glücksritter aus aller Herren Länder an. Die Einwohner und der König beobachten die Vorgänge argwöhnisch.</German>
+        <Russian>Слухи о находке сокровищ близ [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] привлекают искателей приключений со всего мира. Король и местные жители подозрительно наблюдают за происходящим.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRSTCOLONY</Tag>
@@ -209,23 +211,27 @@
         <English>His Majesty has benevolently recognized the foundation of your second colony in the New World and offers his support.</English>
         <French>Votre roi a reconnu avec bienveillance la fondation de votre deuxième colonie dans le Nouveau Monde et offre son soutien.</French>
         <German>Seine Majestät sieht mit Wohlgefallen die Gründung der zweiten Kolonie in der Neuen Welt und bietet Euch seine Unterstützung an.</German>
+        <Russian>Его Величество с радостью наблюдает за основанием второй колонии в Новом Свете и предлагает вам Свою поддержку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SECONDCOLONY_1_HELP</Tag>
         <English>[COLOR_FONT_GOLD]His Majesty is offering materials to build a wagon.[COLOR_REVERT]</English>
         <French>[COLOR_FONT_GOLD]Votre Roi vous offre les matériaux nécessaires à la construction d'un chariot.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Seine Majestät offeriert Euch Materialien, mit denen Ihr ein Fuhrwerk bauen könnt.[COLOR_REVERT]</German>
+        <Russian>[COLOR_FONT_GOLD]Его Величество предлагает материалы для постройки повозки.[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SECONDCOLONY_2_HELP</Tag>
         <English>[COLOR_FONT_GOLD]His Majesty is offering blades for the town guard of your colony.[COLOR_REVERT]</English>
         <French>[COLOR_FONT_GOLD]Votre Roi vous offre des armes pour défendre votre colonie.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Seine Majestät bietet Euch Klingen für die Stadtwache an, damit Ihr die Kolonie verteidigen könnt.[COLOR_REVERT]</German>
+        <Russian>[COLOR_FONT_GOLD]Его Величество предлагает вам клинки городских стражников для экипирования защитников колонии.[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_THIRDCOLONY</Tag>
         <English>A group of eager young adventurers offers to explore this new world in the name of our glorious nation, if we pay for the supplies and equipment needed for this enterprise.</English>
         <German>Eine Gruppe junger ehrgeiziger Abenteurer bietet an, für unsere glorreiche Nation diese neue Welt zu erkunden, falls wir für die Vorräte und Ausrüstung dieses Unterfangens aufkommen.</German>
+        <Russian>Группа энергичных юных авантюристов предлагает исследовать этот новый мир во имя нашей славной нации, если мы оплатим припасы и оборудование, необходимые для этого предприятия.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FOREST_FIRE</Tag>
@@ -234,6 +240,7 @@
         <German>Ein Feuer hat ein Waldstück nahe der [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Siedlung [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] verwüstet.</German>
         <Italian>Un incendio ha devastato una foresta vicina alla città [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
         <Spanish>El fuego ha asolado un bosque cerca de la ciudad [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
+        <Russian>Лесной пожар бушует недалеко от [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FOREST_FIRE_1</Tag>
@@ -242,6 +249,7 @@
         <German>Spielende Kinder aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben im nahen Wald ein Feuerchen entfacht und sind nach Hause gelaufen, ohne es auszutreten. Diese Bälger! Viele Morgen besten Waldes sind abgebrannt.</German>
         <Italian>Tragedia nei pressi di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]: è scoppiato un incendio in un villaggio e si è propagato alla vicina foresta, devastando il territorio per chilometri.</Italian>
         <Spanish>La tragedia se ha cebado con [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], pues un incendio en la aldea se ha propagado al bosque, y ha chamuscado una gran superficie de tierra.</Spanish>
+        <Russian>Чьи-то негодные отпрыски из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] устроили пожар в ближайшем лесу и убежали домой, не потушив его. Из-за этих сопляков сгорело много гектаров леса!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FOREST_FIRE_2</Tag>
@@ -250,6 +258,7 @@
         <German>Gesetzlose haben in einem Wald nahe [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ein Feuer gelegt, um ihren Häschern im Rauch zu entkommen. Die Spitzbuben verliefen sich und wurden zum Opfer der Flammen - recht so! Mögen sie in der Hölle weiterbrennen. Doch ein weiter Landstrich liegt nun in Schutt und Asche.</German>
         <Italian>Dei criminali hanno appiccato il fuoco alla foresta vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], nel fallito tentativo di coprire la propria fuga.</Italian>
         <Spanish>Unos prófugos han prendido fuego al bosque cercano a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] en un triste intento por huir de la justicia.</Spanish>
+        <Russian>Преступники подожгли лес возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], чтобы спрятаться от своих подельников в дыму и не делить добычу, но заблудились и поджарились. Пусть они вечно горят в аду! Но из-за этих негодяев большой участок земли теперь покрыт пеплом и обгоревшими деревьями.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FOREST_FIRE_3</Tag>
@@ -258,6 +267,7 @@
         <German>Der Funkenschlag eines Erntedankfeuers in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hat den nahen Wald in Flammen aufgehen lassen. Diese feiernden Narren!</German>
         <Italian>Tragedia nei pressi di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]: è scoppiato un incendio in un villaggio e si è propagato alla vicina foresta, devastando il territorio per chilometri.</Italian>
         <Spanish>La tragedia se ha cebado con [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], pues un incendio en la aldea se ha propagado al bosque, y ha chamuscado una gran superficie de tierra.</Spanish>
+        <Russian>Трагедия возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]: пожар, случившийся в одной деревне, перекинулся на близлежащий лес, превратив большую территорию в выжженную пустыню на многие мили.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HAPPY_HUNTING</Tag>
@@ -266,6 +276,7 @@
         <German>Glückliche Umstände füllen den hungrigen Einwohnern von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] die Bäuche.</German>
         <Italian>L'abbondante selvaggina procurata dai cacciatori vicino alla città [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha causato un piccolo boom demografico.</Italian>
         <Spanish>El excedente logrado por los cazadores cerca de la ciudad [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha impulsado un pequeño crecimiento de la población.</Spanish>
+        <Russian>Излишки дичи, добытой охотниками возле [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], вызвали небольшой демографический бум.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HAPPY_HUNTING_1</Tag>
@@ -274,6 +285,7 @@
         <German>Die Wildhüter von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] konnten einen feisten Bären erlegen, der in den nahen Wäldern sein Unwesen trieb.</German>
         <Italian>I branchi di alci vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sono diventati particolarmente numerosi. I nostri cacciatori hanno procurato una riserva extra di cibo.</Italian>
         <Spanish>Las manadas de alces cerca de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] se han hecho especialmente grandes. Los cazadores se han cobrado una reserva de comida.</Spanish>
+        <Russian>Популяция лосей вблизи [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] в последнее время стала особенно большой. Теперь у наших охотников навалом излишков еды.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HAPPY_HUNTING_2</Tag>
@@ -282,6 +294,7 @@
         <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ist ein fetter Wirt überführt worden, seinen Gästen Rattenkadaver als Hirschragout serviert zu haben.[NEWLINE]Der Mann wurde an die eigenen Schweine verfüttert! Seine reichen Kellervorräte an Getreide, Käse und Bier wurden ins Lagerhaus der Gemeinde verbracht.</German>
         <Italian>La popolazione di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] festeggia l'abbondanza della recente stagione di caccia al caribù.</Italian>
         <Spanish>Las gentes de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] celebran que la última temporada de caza de caribúes ha sido muy generosa.</Spanish>
+        <Russian>Жители [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] празднуют богатую добычу в последнем сезоне охоты на карибу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HAPPY_HUNTING_3</Tag>
@@ -299,6 +312,7 @@
         <German>Ein Fahrweg in der Nähe von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ist leider nicht mehr passierbar.</German>
         <Italian>Le inondazioni hanno distrutto alcune strade vicino alla città [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
         <Spanish>Las inundaciones han arrasado algunas de las rutas cercanas a la ciudad [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
+        <Russian>Наводнение размыло некоторые дороги возле [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WASHED_OUT_1</Tag>
@@ -307,6 +321,7 @@
         <German>Ein befestigter Fahrweg bei [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] wurde nach heftigen Regengüssen von einer Schlammlawine verschüttet.</German>
         <Italian>Le inondazioni hanno distrutto le strade vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
         <Spanish>Las inundaciones han arrasado las rutas cercanas a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
+        <Russian>Наводнение размыло дороги возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MOTHER_LODE</Tag>
@@ -315,6 +330,7 @@
         <German>Minenarbeiter aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sind auf neue Silbervorkommen gestoßen.</German>
         <Italian>I minatori d'oro vicino alla città [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hanno scoperto il filone principale.</Italian>
         <Spanish>Los mineros de la ciudad [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] han dado con el filón principal de oro.</Spanish>
+        <Russian>Недалеко от [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] обнаружили большой пласт серебра.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MOTHER_LODE_1</Tag>
@@ -323,6 +339,7 @@
         <German>Bergleute aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben im Fels eine neue Silberader entdeckt.</German>
         <Italian>I nostri minatori vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hanno scoperto il filone principale! Siamo ricchi, ricchi, ricchi!</Italian>
         <Spanish>¡Los mineros han dado con el filón principal de oro cerca de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]! ¡Somos ricos, ricos, ricos!</Spanish>
+        <Russian>Наши старатели недалеко от [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] нашли большие залежи серебра! Мы богаты, богаты, богаты!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FAMINE_1</Tag>
@@ -331,6 +348,7 @@
         <German>Eine Missernte hat über unsere [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Nachbarn in [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] Hunger und Leid gebracht. Wir könnten ihre Not lindern und damit ihre Herzen erobern.</German>
         <Italian>Un raccolto disastroso sta facendo patire la fame ai nostri vicini [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] nella città di [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT], appena oltre confine. Potremmo guadagnarci il loro favore con degli aiuti umanitari da [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
         <Spanish>Una terrible cosecha de nuestros vecinos [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] de la ciudad de [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT], justo al otro lado de la frontera, hace que se estén muriendo de hambre. Tenemos la posibilidad de ganarnos su favor si les proporcionamos ayuda humanitaria desde [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
+        <Russian>Из-за ужасно скудного урожая наших соседей [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT], в приграничном городе [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] голодают жители. Мы можем завоевать их расположение, доставив гуманитарную помощь из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FAMINE_2</Tag>
@@ -339,6 +357,7 @@
         <German>In [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] hat ein nächtliches Unwetter das Dach der Lagerhalle abgedeckt und die Kornsäcke durchnässt. Die Ernte eines ganzen Sommers schimmelt.[NEWLINE]Unsere Bürger in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hätten genug Nahrungsvorräte, um ihre Nachbarn zu unterstützen.</German>
         <Italian>La carestia ha colpito la città di [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT]. La nostra gente a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha abbastanza cibo per aiutare i vicini [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]. Siamo pronti a fornire aiuto e conforto.</Italian>
         <Spanish>La hambruna se ha cebado en la ciudad de [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT]. Nuestras gentes de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] tienen bastante comida a mano para ayudar a sus vecinos [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT]. Estamos listos para proporcionarles ayuda y consuelo.</Spanish>
+        <Russian>В [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] ночной ураган сорвал крышу склада и промочил мешки с зерном. Весь урожай заплесневел.[NEWLINE]У наших жителей в городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] достаточно еды, чтобы прокормить своих соседей. Мы готовы оказать помощь и утешить бедолаг.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FAMINE_3</Tag>
@@ -347,6 +366,7 @@
         <German>Eine Mäuseplage sucht [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] heim. Hunderte der kleinen Nager flitzen durch die Gassen und Häuser und fressen den Menschen die Nahrungskammern leer.[NEWLINE]Welche Sünden müssen diese Menschen begangen haben, dass sie der Allmächtige derart bestraft? Wohlan, wir könnten helfen.</German>
         <Italian>Una tragedia ha colpito appena al di là del confine: l'impero [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] fatica a soddisfare la gente affamata di [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT]. Molti moriranno, se non hanno abbastanza da mangiare. Vuoi che i cittadini di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] si mobilitino per portare aiuto?</Italian>
         <Spanish>Ha ocurrido una tragedia justo al otro lado de la frontera: el imperio [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT] hace cuanto puede para alimentar a su hambrienta población de [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT]. Pero sin sustento suficiente, muchos morirán. ¿Deben los ciudadanos de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] movilizarse para ayudarlos?</Spanish>
+        <Russian>Ужасная ситуация назревает всего в нескольких милях от нашей границы: империя [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT] изо всех сил пытается накормить голодающих жителей [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT]. Многие жители погибнут из-за отсутствия еды. Милорд, жители города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] готовы оказать помощь своим соседям. Вы согласны?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NEWS_EVENT_FAMINE_2</Tag>
@@ -355,6 +375,7 @@
         <German>Anerkennend gedenken die Menschen in [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] ihren Nachbarn aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], die ihnen mit ein paar Säcken Korn aus dem Gröbsten geholfen haben.</German>
         <Italian>La generosa popolazione di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha salvato dalla carestia la gente di [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT]. Questo sforzo umanitario ha avvicinato le due nazioni.</Italian>
         <Spanish>El generoso pueblo de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha enviado ayuda para paliar la hambruna que sufren los afligidos habitantes de [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT]. Este acto humanitario ha estrechado los lazos entre ambas naciones.</Spanish>
+        <Russian>Жители [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] пожертвовали голодающим людям [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] часть своих запасов еды. Эта помощь сблизила две страны.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NEWS_EVENT_FAMINE_3</Tag>
@@ -363,6 +384,7 @@
         <German>Mit Ehrfurcht gedenken die Menschen von [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] den Bürgern aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], die ihre Gürtel enger schnallten, um die Not ihrer Nachbarn zu lindern.[NEWLINE]Diese Tugendhaftigkeit hat auch diplomatisch großen Eindruck hinterlassen.</German>
         <Italian>La generosa popolazione di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha decisamente salvato dalla carestia la gente affamata di [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT]. Questo generoso sforzo umanitario ha avvicinato molto le due nazioni.</Italian>
         <Spanish>El generoso pueblo de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha enviado ayuda ingente para paliar la hambruna que sufren los necesitados habitantes de [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT]. Este generoso acto humanitario ha estrechado mucho más los lazos entre ambas naciones.</Spanish>
+        <Russian>Щедрые жители [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] оказали огромную помощь голодающим жителям [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT].[NEWLINE]Эта великодушная гуманитарная акция сильно сблизила две страны.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAMINE_OTHER_2</Tag>
@@ -371,6 +393,7 @@
         <German>Anerkennend gedenken die Menschen in [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] ihrer Nachbarn aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], die ihnen mit ein paar Säcken Korn aus dem Gröbsten geholfen haben.</German>
         <Italian>La gente [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha inviato metà delle proprie scorte di cibo alla tua città di [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] per allontanare la carestia causata da un cattivo raccolto. Questo aiuto umanitario potrebbe rappresentare un punto di svolta nelle relazioni con loro.</Italian>
         <Spanish>El pueblo [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha enviado la mitad de los alimentos que tenía almacenados a nuestra ciudad de [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] para paliar la hambruna causada por una mala cosecha en el lugar. Este acto humanitario bien puede representar un punto de quiebra positivo en nuestras relaciones.</Spanish>
+        <Russian>Жители [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] отправили половину своих запасов продовольствия в наш город [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] для борьбы с голодом, вызванным неурожаем. Эта гуманитарная помощь станет положительным поворотным моментом в отношениях наших стран.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAMINE_OTHER_3</Tag>
@@ -379,78 +402,91 @@
         <German>Mit ehrfurchtsvoller Dankbarkeit gedenken die Menschen von [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] den Bürgern aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], die ihre Gürtel enger schnallten, um die Not ihrer Nachbarn zu lindern.[NEWLINE]Diese Tugendhaftigkeit hat auch diplomatisch großen Eindruck hinterlassen.</German>
         <Italian>La generosa popolazione [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha inviato l'intera scorta di cibo alla tua città di [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] per scongiurare la carestia causata da un cattivo raccolto. Questo sforzo umanitario ha avvicinato molto le due popolazioni!</Italian>
         <Spanish>Los generosos [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] han enviado cuantos alimentos tenían almacenados a nuestra ciudad de [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] para paliar la hambruna causada por una mala cosecha en el lugar. Este generoso acto humanitario ha estrechado mucho más los lazos entre nuestros dos pueblos.</Spanish>
+        <Russian>Щедрые жители [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] отправили все свои продовольственные запасы в наш город [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT], чтобы предотвратить голод, вызванный плохим урожаем.[NEWLINE]Эта гуманитарная помощь сближает два ваших народа.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FESTIVITY</Tag>
         <English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] King is giving a grand festival at His Royal Court.</English>
         <French>Le Roi [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] organise une fête fastureuse à Sa Cour Royal.</French>
         <German>Der [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] König richtet ein rauschendes Fest am Hofe aus.</German>
+        <Russian>Король [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] устраивает пышную вечеринку при дворе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FESTIVITY1</Tag>
         <English>Our King is going to host a grand festival at His Royal Court. His Majesty demands that we deliver wares from [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] to Europe to show our support.</English>
         <French>Notre Glorieux Roi organise une fête fastueuse en son Palais. Sa Majesté demande une livraison de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vers l'Europe.</French>
         <German>Seine Majestät plant ein rauschendes Fest zu seinem Thronjubiläum. Er erwartet, dass wir die Feierlichkeiten mit Warenlieferungen aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] großzügig unterstützen.</German>
+        <Russian>Наш славный Король устраивает роскошную вечеринку в своем дворце. Он ожидает, что мы поддержим празднование щедрыми поставками товаров из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FESTIVITY2</Tag>
         <English>An heir to the throne has been born! His Majesty has invited all the European high nobility to his court. He expects us to deliver wares from [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] to Europe.</English>
         <French>Un héritier au trône vient de naître. En guise de célébration, notre Roi a invité à sa cour les plus grands nobles de toute l'Europe. Son altesse attend que nous lui livrions des marchandises depuis [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vers l'Europe.</French>
         <German>Ein Thronfolger wurde geboren. Seine Majestät hat den gesamten Hochadel Europas zu den Feierlichkeiten eingeladen. Er erwartet, dass wir zu diesem Prunk und Pomp Warenlieferungen aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] beisteuern.</German>
+        <Russian>Родился наследник престола! Его Величество пригласил ко двору всю европейскую высшую знать. Он ожидает, что мы доставим товары для празднества из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] в Европу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FESTIVITY_1_HELP</Tag>
         <English>[COLOR_FONT_GOLD]His Majesty is not amused. Rumours report that He was asking for His smelling salts.[COLOR_REVERT]</English>
         <French>[COLOR_FONT_GOLD]Le Roi n'apprécie pas votre humour.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Eure Antwort wurde Seiner Majestät zugetragen. Kammerdiener berichten, dass er nach seinem Riechsalz verlangte.[COLOR_REVERT]</German>
+        <Russian>[COLOR_FONT_GOLD]Его Величеству не до смеха. Ходят слухи, что Он просил Свою нюхательную соль.[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FESTIVITY_2_HELP</Tag>
         <English>[COLOR_FONT_GOLD]Nobles and citizens are following the example of His Majesty. Demand for our colonial goods is rising.[COLOR_REVERT]</English>
         <French>[COLOR_FONT_GOLD]Nobles et citoyens suivent l'exemple de leur Roi. La demande pour nos biens coloniaux augmentent.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Eure Antwort wurde Seiner Majestät zugetragen. Kammerdiener berichten, er habe gleich eine Probe verköstigt und anschließend huldvoll genickt.[NEWLINE]Adlige und reiche Bürger in unserer Heimat eifern nun dem König nach. Die Nachfrage nach unseren Kolonialwaren steigt.[COLOR_REVERT]</German>
+        <Russian>[COLOR_FONT_GOLD]Вельможи и граждане следуют примеру Его Величества. Спрос на наши колониальные товары растет.[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FESTIVITY_4_HELP</Tag>
         <English>[COLOR_FONT_GOLD]Nobles and citizens are following the example of His Majesty. Demand for our colonial goods is rising.[COLOR_REVERT]</English>
         <French>[COLOR_FONT_GOLD]Nobles et citoyens suivent l'exemple de leur Roi. La demande pour nos biens coloniaux augmentent.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Eure Antwort wurde Seiner Majestät zugetragen. Kammerdiener berichten, er habe gleich eine Probe verköstigt und anschließend huldvoll genickt.[NEWLINE]Adlige und reiche Bürger in unserer Heimat eifern nun dem König nach. Die Nachfrage nach unseren Kolonialwaren steigt.[COLOR_REVERT]</German>
+        <Russian>[COLOR_FONT_GOLD]Ваш ответ доставлен Его Величеству. Доверенные лица сообщают, что он сразу же попробовал образец, а затем любезно кивнул.[NEWLINE]Знать и богатые граждане нашей родины начали подражать своему Королю. Спрос на наши товары растет.[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_WINTER</Tag>
         <English>Cold winter in Europe.</English>
         <French>Hiver très froid en Europe.</French>
         <German>Winter in Europa.</German>
+        <Russian>Холодная зима в Европе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WINTER</Tag>
         <English>Several years of cold winters in our European homeland.</English>
         <French>Notre patrie en Europe subit du ans de hiver particulièrement froid.</French>
         <German>Mehrere Jahre in Folge mit bitterkalten Wintern in unserer europäischen Heimat lassen die Menschen frieren.</German>
+        <Russian>Несколько лет подряд лютые морозы на нашей европейской родине заставляют людей мерзнуть.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_WINTER_HELP</Tag>
         <English>[COLOR_FONT_GOLD]The cold winter means increasing demand for our furs and coats in [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT].</English>
         <French>[COLOR_FONT_GOLD]L'hiver froid en Europe génère une augmentation de la demande pour nos fourrures et manteaux de [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT].</French>
         <German>[COLOR_FONT_GOLD]Der eisigkalte Winter führt zu erhöhter Nachfrage nach unseren Pelzwaren und Fellen in [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT].</German>
+        <Russian>[COLOR_FONT_GOLD]Холодная зима означает, что спрос на наши меха и пальто в [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] будет расти.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_END_WINTER</Tag>
         <English>The cold weather in Europe has ended.</English>
         <French>La vague de froid en Europe a pris fin.</French>
         <German>Die Kälteperiode in Europa ist vorüber.</German>
+        <Russian>Холода в Европе закончились</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_END_WINTER</Tag>
         <English>A cold winter in our European homeland has come to an end.</English>
         <French>La vague de froid en Europe a pris fin.</French>
         <German>Die Kälteperiode mit harter Wintern in unserer europäischen Heimat ist vorbei.</German>
+        <Russian>Холодный период с суровыми зимами на нашей европейской родине закончился.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_END_WINTER_HELP</Tag>
         <English>[COLOR_FONT_GOLD]The long stretch of cold weather has ended. Demand for our furs and coats in [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] is decreasing.[COLOR_REVERT]</English>
         <French>[COLOR_FONT_GOLD]La période de grand froid est terminé. La demande pour nos fourrures et manteaux de [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] s'affaiblit.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Die Periode harter Winter in Europa ist vorüber. Die Nachfrage nach unseren Pelzwaren und Fellen in [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] sinkt wieder.[COLOR_REVERT]</German>
+        <Russian>[COLOR_FONT_GOLD]Долгая холодная погода закончилась. Спрос на наши меха и пальто в [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] снижается.[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_VOLCANO_1</Tag>
@@ -459,6 +495,7 @@
         <German>In der Nähe von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hat ein Vulkan Lava und Asche gespieen und den Landstrich verwüstet.</German>
         <Italian>Un'eruzione vulcanica vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha devastato il territorio. Fortunatamente la città [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] è stata risparmiata.</Italian>
         <Spanish>La erupción de un volcán cercano a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha devastado el campo. Por suerte, la propia ciudad [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] se ha salvado.</Spanish>
+        <Russian>Извержение вулкана возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] опустошило сельскую местность. К счастью, сам [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] город  не пострадал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_VOLCANO_1</Tag>
@@ -467,6 +504,7 @@
         <German>Milord, Schreckliches ist bei [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] geschehen. Zunächst verstummten die Vögel. Dann grollte die Erde. Und dann, dann barst der Berg neben der Stadt, und ein Vulkan erstieg aus dem Gestein. Er schoss glühendheiße Steine in die Luft. Sie gingen in der nahen Stadt nieder und erschlugen Hühner und Hunde und auch so manches kleine Kind. Schließlich schwebten dichte Ascheflocken herab und legten ein schwarzes Leichentuch über die Siedlung. Welch fruchtbares Unglück! Die Überlebenden flehen Euch an, Hilfe zu schicken.</German>
         <Italian>Signore, sono successe cose terribili a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Prima gli uccelli si sono ammutoliti. Poi la terra ha rimbombato. E poi, poi la montagna vicino alla città è scoppiata, e un vulcano è sorto dalla roccia. Ha sparato rocce incandescenti nell'aria. Sono scesi nella città vicina, uccidendo polli e cani e molti bambini piccoli. Infine, spesse scaglie di cenere scesero e stesero un sudario nero sull'insediamento. Che fertile sfortuna! I sopravvissuti vi implorano di mandare aiuto.</Italian>
         <Spanish>Excelencia, han ocurrido cosas terribles en [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Primero los pájaros se callaron. Entonces la tierra retumbó. Y entonces, la montaña junto a la ciudad estalló, y un volcán surgió de la roca. Lanzó rocas al rojo vivo al aire. Bajaron en el pueblo cercano, matando gallinas y perros y muchos niños pequeños. Finalmente, gruesos copos de ceniza flotaron hacia abajo y pusieron un manto negro sobre el asentamiento. ¡Qué desgracia tan fértil! Los supervivientes le ruegan que envíe ayuda.</Spanish>
+        <Russian>Милорд, ужасные вещи произошли в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Сначала замолчали птицы. Потом загудела земля. А после гора рядом с городом с треском раскололась извержением вулкана! Он выбрасывал в воздух раскаленные камни. Они падали на близлежащий город, убивая кур, собак и многих маленьких детей. И наконец, город и окрестности накрыли густые хлопья пепла, накрывая все черной пеленой. Какое бедствие для посевов! Выжившие умоляют вас послать помощь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FARM_BANDITS</Tag>
@@ -475,6 +513,7 @@
         <German>Strauchdiebe lauern [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Bauern auf.</German>
         <Italian>I banditi stanno devastando i terreni agricoli [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT].</Italian>
         <Spanish>Los bandidos están arrasando los cultivos [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT].</Spanish>
+        <Russian>Бандиты бесчинствуют на отдаленных [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] фермах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FARM_BANDITS_1</Tag>
@@ -483,6 +522,7 @@
         <German>Die Bauern von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] beklagen sich, dass sie von frechen Strauchdieben belästigt werden.</German>
         <Italian>I contadini fuori [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] si lamentano dei costanti furti dei banditi.</Italian>
         <Spanish>Los granjeros de los aledaños de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] se quejan de bandidos que les roban cada poco tiempo.</Spanish>
+        <Russian>Фермеры за пределами [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] жалуются, что их регулярно грабят бандиты.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FARM_BANDITS_2</Tag>
@@ -491,6 +531,7 @@
         <German>Eine Bande herumstreunender Fremder stiehlt den Bauern von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] die Haare vom Kopf.</German>
         <Italian>L'attività criminale ha interrotto la produzione di cibo nella regione agricola fuori [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
         <Spanish>La actividad delictiva ha cortado la producción de alimentos en una región agrícola cercana a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
+        <Russian>Разгул преступности нарушает производство продуктов питания в фермерском регионе за пределами [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FARM_BANDITS_3</Tag>
@@ -499,6 +540,7 @@
         <German>Immer öfter lauern Wegelagerer den Bauern von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] auf. Allmählich traut sich kaum ein Einheimischer noch, seinen Hof zu verlassen und auf den Feldern zu arbeiten.</German>
         <Italian>Sempre più spesso i briganti sono in attesa dei contadini di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. A poco a poco, quasi nessuno dei locali osa andare nei loro campi.</Italian>
         <Spanish>Cada vez es más frecuente que los salteadores de caminos acechen a los agricultores de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Poco a poco, casi ninguno de los lugareños se atreve a ir a sus campos.</Spanish>
+        <Russian>Фермеры из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] все чаще попадают в засады от разбойников. Мало кто из местных жителей осмеливается покинуть ферму и начать работы в поле.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FARM_BANDITS_AGAIN</Tag>
@@ -507,6 +549,7 @@
         <German>Die Bauern des [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Reiches werden weiterhin von Strauchdieben belästigt.</German>
         <Italian>L'impero [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] soffre di carenza di cibo a causa dei furti dei banditi.</Italian>
         <Spanish>El imperio [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT] no deja de sufrir pérdidas en la producción de alimentos debido al bandidaje.</Spanish>
+        <Russian>Империя [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] продолжает страдать от сокращения производства продовольствия из-за распоясавшихся бандитов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FARM_BANDITS_AGAIN_1</Tag>
@@ -515,6 +558,7 @@
         <German>Immer noch überfallen herumstreunernde Tagediebe die Bauern von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</German>
         <Italian>Le autorità locali a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] faticano ancora nel mettere sotto controllo l'attività banditesca che affligge i nostri agricoltori.</Italian>
         <Spanish>Las autoridades locales de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] aún pugnan por controlar el bandidaje que asola a nuestros granjeros.</Spanish>
+        <Russian>Местные власти города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] пытаются бороться с грабежами на наших фермах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FARM_BANDITS_AGAIN_2</Tag>
@@ -523,6 +567,7 @@
         <German>Immer noch plagen sich die Bauern von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] mit den Überfällen durch Wegelagerer herum. Hilfe tut not.</German>
         <Italian>I criminali stanno ancora depredando i nostri agricoltori. Potrebbe essere necessaria una reazione più severa, a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
         <Spanish>Los delincuentes aún se ceban con nuestros granjeros. Será necesaria una respuesta más contundente en [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
+        <Russian>На наших фермеров до сих пор охотятся преступники. Жители [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] требуют принять самые жесткие меры.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MINING_ACCIDENT</Tag>
@@ -531,6 +576,7 @@
         <German>Bei einem tragischen Unfall in den Minen von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] kamen viele Bergarbeiter ums Leben.</German>
         <Italian>Un tragico incidente minerario vicino alla città [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha tolto la vita a centinaia dei loro minatori.</Italian>
         <Spanish>Un trágico accidente en una mina cerca de la ciudad [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] se ha cobrado la vida de cientos de mineros.</Spanish>
+        <Russian>Трагическая авария в шахте недалеко от [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] унесла жизни сотен горняков.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MINING_ACCIDENT_1</Tag>
@@ -539,6 +585,7 @@
         <German>Erdstöße haben zum Einsturz einer Mine bei [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] geführt. Viele Bergarbeiter kamen ums Leben. Der Herr sei ihren Seelen gnädig!</German>
         <Italian>Un piccolo terremoto vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha causato il crollo di una vicina miniera. Centinaia di minatori sono morti intrappolati.</Italian>
         <Spanish>Un pequeño terremoto cerca de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha causado el derrumbe de una mina cercana. Los mineros han quedado atrapados y han muerto a centenares.</Spanish>
+        <Russian>Небольшое землетрясение возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] привело к обрушению соседней шахты. Попавшие в ловушку шахтеры погибли.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MINING_ACCIDENT_2</Tag>
@@ -547,6 +594,7 @@
         <German>In einer Mine haben sich untertage Gase entzündet. Die Luft brannte, und viele Bergarbeiter fanden einen grausamen Tod. Mögen sie im himmlischen Paradies ihr Glück wiederfinden![NEWLINE]Ihre sterblichen Hüllen können wir leider nicht bergen, denn die hölzernen Stützbalken der unterirdischen Gänge sind verkohlt und brüchig.</German>
         <Italian>I gas si sono incendiati nel sottosuolo di una miniera. L'aria bruciava e molti minatori incontrarono una morte orribile. Che possano ritrovare la felicità nel paradiso celeste![NEWLINE]Purtroppo non possiamo recuperare i loro corpi mortali, perché le travi di legno dei passaggi sotterranei sono carbonizzate e fragili.</Italian>
         <Spanish>Los gases se encendieron bajo tierra en una mina. El aire ardía y muchos mineros encontraron una muerte espantosa. Que vuelvan a encontrar la felicidad en el paraíso celestial![NEWLINE]Por desgracia, no podemos recuperar sus cuerpos mortales, porque las vigas de soporte de madera de los pasajes subterráneos están carbonizadas y son frágiles.</Spanish>
+        <Russian>Газы воспламенились под землей в шахте. Казалось, горел сам воздух и многие горняки встретили ужасную смерть. Пусть они обретут покой в Раю![NEWLINE]К сожалению, мы не можем вернуть родным их бренные тела, потому что деревянные несущие балки подземных ходов сильно обуглились и стали очень хрупкими. Мы не можем рисковать жизнями еще одной партии горняков.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MINING_ACCIDENT_3</Tag>
@@ -555,12 +603,14 @@
         <German>In einer Mine bei [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] soll es spuken. Dies glauben zumindestens die Bergleute. Sie haben die unterirdischen Gänge fluchtartig verlassen und den Eingang zum Einsturz gebracht. Welch abergläubische Torheit!</German>
         <Italian>Si dice che una miniera vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sia infestata. Almeno questo è quello che credono i minatori. Sono fuggiti in fretta e furia dai passaggi sotterranei, facendo crollare l'ingresso. Che follia superstiziosa!</Italian>
         <Spanish>Se dice que una mina cerca de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] está encantada. Al menos esto es lo que creen los mineros. Han huido precipitadamente de los pasajes subterráneos, provocando el derrumbe de la entrada. ¡Qué locura supersticiosa!</Spanish>
+        <Russian>Говорят, что шахта возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] населена привидениями. По крайней мере, так считают горняки. Призраки выскочили из подземных ходов, обрушив вход. Какая суеверная глупость!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MINING_ACCIDENT_3_LANDMARK</Tag>
         <English>Mining accident</English>
         <French>Accident de mine</French>
         <German>Minenunglück</German>
+        <Russian>Несчастный случай в шахте</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_AT_THE_SWORD</Tag>
@@ -569,6 +619,7 @@
         <German>Einige [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Soldaten haben sich auf dem Schlachtfeld wacker geschlagen und Ruhm erworben.</German>
         <Italian>I soldati [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] si sono riuniti attorno ai loro eroi guerrieri.</Italian>
         <Spanish>Los soldados [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] han cerrado filas alrededor de sus héroes de la espada.</Spanish>
+        <Russian>Некоторые [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] солдаты проявили себя на поле боя и завоевали славу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AT_THE_SWORD_1</Tag>
@@ -577,6 +628,7 @@
         <German>Als [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] haben einige unserer Soldaten Heldenhaftes geleistet.</German>
         <Italian>I soldati della vittoriosa unità [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] si sono riuniti attorno ai loro eroi combattenti! La loro forza e la loro determinazione si sono rinsaldate! La loro efficacia è aumentata!</Italian>
         <Spanish>Los soldados de [NUM3:nuestro:nuestra:nuestros:nuestras] [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] han cerrado filas alrededor de sus héroes de guerra. ¡Su fuerza y su resolución son ahora más inquebrantables y su habilidad ha aumentado!</Spanish>
+        <Russian>Солдаты нашего победоносного корпуса [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] сплотились вокруг своих боевых героев! Их решимость непоколебима! Их мастерство возросло!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_UNIT_AT_THE_SWORD</Tag>
@@ -585,6 +637,7 @@
         <German>Kriegshelden</German>
         <Italian>Eroi della Spada</Italian>
         <Spanish>Héroes de la espada</Spanish>
+        <Russian>Герои Нового света</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SPOILED_GRAIN</Tag>
@@ -593,6 +646,7 @@
         <German>Ungeziefer ist in den Kornspeicher von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] gelangt. Alle dort gelagerten Nahrungsvorräte wurden vernichtet.</German>
         <Italian>I ratti si sono intrufolati nel granaio a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Tutto il cibo immagazzinato è stato rovinato.</Italian>
         <Spanish>Las alimañas entraron en el granero de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Toda la comida que allí había almacenada se ha perdido.</Spanish>
+        <Russian>Паразиты проникли в зернохранилище города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SPOILED_GRAIN_1</Tag>
@@ -601,6 +655,7 @@
         <German>Ungeziefer ist in den Getreidespeicher von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] gelangt. Alle dort gelagerten Nahrungsvorräte sind verdorben.</German>
         <Italian>I ratti si sono intrufolati nel granaio a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Tutto il cibo immagazzinato è stato danneggiato.</Italian>
         <Spanish>Las alimañas han entrado en el granero de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Toda la comida que allí había almacenada se ha echado a perder.</Spanish>
+        <Russian>Паразиты проникли в амбар [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Все продовольственные запасы, которые там хранились, были испорчены.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FUGITIVE</Tag>
@@ -609,6 +664,7 @@
         <German>Es gibt Gerüchte, [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Häscher hätten einen böse beleumdeten Kerl ergriffen, der von der [COLOR_HIGHLIGHT_TEXT]%s4:2_civ_adjective[COLOR_REVERT] Justiz schon seit langem gesucht wird.</German>
         <Italian>Si dice che le autorità [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] abbiano catturato un uomo in fuga dalla giustizia [COLOR_HIGHLIGHT_TEXT]%s4_civ_adjective[COLOR_REVERT]. Non è disponibile alcuna conferma.</Italian>
         <Spanish>Se rumorea que las autoridades [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] han capturado a un fugitivo que huía de la justicia [COLOR_HIGHLIGHT_TEXT]%s4:2_civ_adjective[COLOR_REVERT]. No disponemos de confirmación.</Spanish>
+        <Russian>Ходят слухи, что власти [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] поймали беглеца, скрывающегося от [COLOR_HIGHLIGHT_TEXT]%s4_civ_adjective[COLOR_REVERT] правосудия. Однако, пока это не может быть подтверждено официально.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FUGITIVE_1</Tag>
@@ -617,6 +673,7 @@
         <German>Ein berüchtigter Straßenräuber, der in den [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Kolonien gesucht wird, ist von einer unserer Stadtwachen aufgegriffen worden. Möglicherweise verrät er uns, wo er seine Beute versteckt hat.</German>
         <Italian>Nei nostri territori è stato scoperto un fuggitivo, ricercato per i crimini commessi nell'impero [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT].</Italian>
         <Spanish>Hemos descubierto que en nuestro territorio se oculta un prófugo de la justicia, buscado por delitos en el imperio [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT].</Spanish>
+        <Russian>На нашей территории обнаружен скрывающийся от правосудия преступник, разыскиваемый за преступления в [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] колониях. Он может сказать нам, где спрятана его добыча.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FUGITIVE_2</Tag>
@@ -625,6 +682,7 @@
         <German>Ein durchtriebener Hochstapler und Hehler, der in den [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Kolonien gesucht wird, ist von einer unserer Stadtwachen aufgegriffen worden. Möglicherweise verrät er uns, wo er seine Beute versteckt hat.</German>
         <Italian>È stato catturato nei nostri territori un assassino, ricercato per l'omicidio di un funzionario [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]. Forse ci dirà dove ha nascosto il suo bottino.</Italian>
         <Spanish>Hemos atrapado huyendo por nuestra tierra a un asesino buscado por matar a un funcionario [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT]. Tal vez nos diga dónde escondió su botín.</Spanish>
+        <Russian>Мы поймали хитрого афериста и разыскиваемого в [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT], когда он уходил от правосудия по нашей земле. Мы заставим его рассказать нам, где спрятана его добыча.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_INFO_FUGITIVE_5</Tag>
@@ -633,6 +691,7 @@
         <German>Die [COLOR_HIGHLIGHT_TEXT]%s3:2_civ_adjective[COLOR_REVERT] Behörden haben von unserem Verhör Wind bekommen und sind verärgert.</German>
         <Italian>Voci dell'interrogatorio del fuggitivo sono arrivate alle autorità [COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT], facendole incollerire.</Italian>
         <Spanish>El asunto de nuestro interrogatorio al prófugo se ha filtrado a las autoridades [COLOR_HIGHLIGHT_TEXT]%s3:4_civ_adjective[COLOR_REVERT] y las ha enojado.</Spanish>
+        <Russian>Новость о нашем допросе беглеца просочилась к властям [COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT], что их очень разозлило.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_PEASANT_WARPREP</Tag>
@@ -641,6 +700,7 @@
         <German>Unruhen unter der [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Landbevölkerung in Europa.</German>
         <Italian>Rivolte tra la [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] popolazione rurale in Europa.</Italian>
         <Spanish>Disturbios entre la [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] población rural en Europa.</Spanish>
+        <Russian>Волнения среди сельского населения [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PEASANT_WARPREP_1</Tag>
@@ -649,6 +709,7 @@
         <German>Unruhen unter der Landbevölkerung in Europa. Ein Krieg zwischen unserem Vaterland und einer anderen europäischen Macht scheint bevorzustehen.</German>
         <Italian>Disordini tra la popolazione rurale in Europa. Sembra che stia per scoppiare un conflitto tra la nostra madrepatria e un altro paese europeo.</Italian>
         <Spanish>Disturbios entre la población rural en Europa. Parece que está a punto de estallar un conflicto entre nuestra madre patria y otro país europeo.</Spanish>
+        <Russian>Волнения среди сельского населения в Европе. Конфликт между нашей метрополией и другой европейской страной может вспыхнуть в любой момент.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PEASANT_WARPREP_1A</Tag>
@@ -657,6 +718,7 @@
         <German>Die Unruhen unter der Landbevölkerung in Europa weiten sich aus. Die Beziehungen zwischen [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] verschlechtern sich. Krieg liegt in der Luft.</German>
         <Italian>I disordini rurali stanno crescendo in Europa. Le relazioni tra [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] e [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] si sono deteriorate. La guerra è nell'aria.</Italian>
         <Spanish>El malestar rural crece en Europa. Las relaciones entre [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] y [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] se han deteriorado. La guerra está en el aire.</Spanish>
+        <Russian>В Европе нарастают сельские беспорядки. Отношения между [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] и [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] ухудшились. В воздухе витает запах войны.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PEASANT_WARPREP_HELP</Tag>
@@ -665,12 +727,14 @@
         <German>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT][ICON_GOLD] für %F2_yield in [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] und [COLOR_POSITIVE_TEXT]%D4[COLOR_REVERT][ICON_GOLD] für %F5_yield in [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT].</German>
         <Italian>[COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT][ICON_GOLD] per %F2_yield in [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] e [COLOR_POSITIVE_TEXT]%D4[COLOR_REVERT][ICON_GOLD] per %F5_yield in [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT].</Italian>
         <Spanish>[COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT][ICON_GOLD] para %F2_yield en [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] y [COLOR_POSITIVE_TEXT]%D4[COLOR_REVERT][ICON_GOLD] para %F5_yield en [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT].</Spanish>
+        <Russian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT][ICON_GOLD] за %F2_yield в [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] и [COLOR_POSITIVE_TEXT]%D4[COLOR_REVERT][ICON_GOLD] за %F5_yield в [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TAX_INCREASE</Tag>
         <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] Tax increase to %D2%% total</English>
         <French>[ICON_BULLET]Augmentation du taux d'impôt de [COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] pour atteindre %D2%%</French>
         <German>[ICON_BULLET]Steuererhöhung um [COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] auf %D2%%</German>
+        <Russian>[ICON_BULLET]Налоговая ставка повышена на [COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] до %D2%</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MAXTAX_INCREASE</Tag>
@@ -705,12 +769,14 @@
         <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] %F2_yield in [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</English>
         <French>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] %F2_yield à [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</French>
         <German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] %F2_yield in [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</German>
+        <Russian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] %F2_yield в [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_YIELD_GAIN</Tag>
         <English>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_yield in [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</English>
         <French>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_yield à [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</French>
         <German>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_yield in [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</German>
+        <Russian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_yield в [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_YIELD_OVERFLOW</Tag>
@@ -773,199 +839,238 @@
         <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] scout has found an Amazon tribe in a remote valley.</English>
         <French>Une rumeur se propage : un éclaireur [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] aurait trouvé des guerrières amazones dans une vallée lointaine.</French>
         <German>Ein Gerücht macht die Runde: Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Späher habe in einem entlegenen Tal ein Amazonenvolk entdeckt.</German>
+        <Russian>Ходят слухи, что разведчик [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] обнаружил племя амазонок в далекой долине.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_LOST_TRIBE_1</Tag>
         <English>Our imaginative scout has come up with a fairy tale. One evening in dense jungle he got lost. As the night deepened he heard muffled drumming from a hidden ravine.[PARAGRAPH:2]He crawled closer, only to discover a camp of naked warrior women leaping around a fire, wild as young she-wolves. Silver-tipped clubs flashed in the flickering firelight as the Amazons brandished them to the beat of the drums. Then they caught sight of him. Suddenly he felt like a rabbit facing the wolves. He fled.</English>
         <French>Un scout raconte un conte de fées. Dans la jungle la plus profonde, il s'est perdu un soir. La morosité s'abattit sur le monde alors qu'un tambour étouffé retentissait depuis un ravin caché.[PARAGRAPH:2]Il se mit à marcher et regarda un camp de guerrières nues sautant autour d'un feu, sauvages comme de jeunes loups. Des massues en bois à pointe d'argent scintillaient dans la lumière vacillante, et les amazones les maniaient au rythme des sons. Quand ils l'ont aperçu, la convoitise de la chasse a brillé dans leurs yeux, et il s'est enfui.</French>
         <German>Märchenhaftes berichtet ein Späher. Im tiefsten Urwald habe er sich eines Abends verlaufen. Düsternis senkte sich über die Welt, als ein dumpfes Trommeln aus einer verborgenen Schlucht erklang.[PARAGRAPH:2]Er pirschte sich an und blickte hinab auf ein Lager nackter Kriegerinnen, die um ein Feuer sprangen, wild wie junge Wölfinnen. Im flackernden Lichtschein blitzten silberbeschlagene Holzkeulen, die die Amazonen im Rhythmus der Klänge schwangen. Als sie ihn erblickten, funkelte die Jagdlust in ihren Augen, und er floh.</German>
+        <Russian>Наш молодой разведчик рассказал удивительную историю, похожую на сказку. Однажды вечером он заблудился и долго плутал в густых джунглях. Когда сгустилась ночь, он услышал приглушенный барабанный бой из скрытого деревьями ущелья.[ПАРАГРАФ: 2] Он подполз ближе и обнаружил лагерь обнаженных женщин-воительниц, прыгающих вокруг костра, диких, как молодые волчицы. Шипастые дубинки с серебряными наконечниками сверкали в мерцающем свете костра, когда амазонки размахивали ими под бой барабанов. Парень решил подобраться поближе, чтобы получше всё рассмотреть, и тут они его заметили. Взгляды воительниц не сулили ничего хорошего и он сбежал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_LOST_TRIBE_4_HELP</Tag>
         <English>[ICON_BULLET]The [COLOR_UNIT_TEXT]%s2:1_unit (%s1:1_unit)[COLOR_REVERT] is promoted to [COLOR_UNIT_TEXT]%s3:1_unit[COLOR_REVERT].</English>
         <French>[ICON_BULLET]L'unité [COLOR_UNIT_TEXT]%s2:1_unit (%s1:1_unit)[COLOR_REVERT] a été promu en tant que [COLOR_UNIT_TEXT]%s3:1_unit[COLOR_REVERT].</French>
         <German>[ICON_BULLET]Der [COLOR_UNIT_TEXT]%s2:1_unit (%s1:1_unit)[COLOR_REVERT] wird zu einem [COLOR_UNIT_TEXT]%s3:1_unit[COLOR_REVERT] befördert.</German>
+        <Russian>[ICON_BULLET][COLOR_UNIT_TEXT]%s2:1_unit (%s1:1_unit)[COLOR_REVERT] повышен до [COLOR_UNIT_TEXT]%s3:1_unit[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_LOST_TRIBE_4B_HELP</Tag>
         <English>[COLOR_WARNING_TEXT](Not available if an [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_WARNING_TEXT] is already working for you.)[COLOR_REVERT]</English>
         <French>[COLOR_WARNING_TEXT](Indisponible si une unité [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_WARNING_TEXT] travaille déjà pour vous.)[COLOR_REVERT]</French>
         <German>[COLOR_WARNING_TEXT](Nicht verfügbar, wenn bereits ein [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_WARNING_TEXT] in Euren Diensten steht.)[COLOR_REVERT]</German>
+        <Russian>[COLOR_WARNING_TEXT](Недоступно, если [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_WARNING_TEXT] уже работает на вас.)[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_NATIVE_TRADER_ATTACKED</Tag>
         <English>There's a rumour that a peaceful [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] trader has been attacked and murdered by hostile Natives.</English>
         <German>Ein Gerücht macht die Runde: Ein friedlicher [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Händler wurde von Ureinwohnern angegriffen und abgeschlachtet.</German>
+        <Russian>Ходят слухи, что мирный [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] торговец подвергся нападению и был убит враждебно настроенными индейцами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_TRADER_ATTACKED_1</Tag>
         <English>Our Native trader travels to the nearest village to do some business there. He looks forward to seeing the attractive Native woman from his last visit. She liked talking with him.[NEWLINE]At the same time he remembers a dangerous look from one of the young men while he was talking to her. Lost in thought, he suddenly catches a movement out of the corner of his eye.[NEWLINE]Barely a hand's width away an arrow flies past his face.</English>
         <German>Unser Ureinwohnerhändler ist auf dem Weg zum nahgelegenen Dorf, um dort seine Geschäfte zu verrichten. Er freut sich darauf das junge freundliche Ureinwohndermädchen wieder zu sehen, dass so gerne mit ihm redet. Aber denkt er auch an die bösen Blicke eines der jungen Ureinwohnermänner, als er mit ihr sprach. ... Während er so in Gedanken ist, sieht er plötzlich einen Bewegung im Augenwinkel und ein Pfeil fliegt nur um eine Handbreite an seinem Gesicht vorbei.</German>
+        <Russian>Наш торговец с индейцами едет в ближайшую деревню туземцев, чтобы продать там очередную партию своих товаров. А еще он с нетерпением ждет встречи с привлекательной молодой туземкой, с которой познакомился во время своей последней поездки. Ей нравилось с ним разговаривать.[NEWLINE]Но в то же время торговец помнил недобрый взгляд одного из молодых индейцев деревни, во время своих разговоров с девушкой. Погруженный в эти мысли, он вдруг краем глаза улавливает сбоку какое-то движение.[NEWLINE]На расстоянии ширины ладони мимо его лица пролетает стрела...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_NATIVE_TRADER_ATTACKED_1</Tag>
         <English>It is the young Native man from the village. He is attacking.</English>
         <German>Das ist der junge Ureinwohner aus dem Dorf. Er greift an.</German>
+        <Russian>Это молодой индейский воин из той деревни. Он атакует.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_RANGER_BEAR_ATTACK</Tag>
         <English>A rumour is spreading: A peaceful [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] missionary was attacked by a grizzly but a brave ranger saved him.</English>
         <German>Ein Gerücht macht die Runde: Ein friedlicher [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Missionar wurde von einem Grizzly angegriffen aber ein mutiger Ranger hat ihn gerettet.</German>
+        <Russian>По колониям ползут слухи: на мирного [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] миссионера напал гризли, но храбрый рейнджер спас его от неминуемой смерти.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RANGER_BEAR_ATTACK_1</Tag>
         <English>Our ranger is on patrol through the forest. Suddenly he hears a high-pitched scream of fear followed by a rattling sound, like a tree in a high wind. He heads toward the noise and sees a missionary up in a tree, while a hungry grizzly methodically tries to shake him loose.</English>
         <German>Einer unserer Missionare ist auf Parolie in den Wäldern. Plötzlich hört er Schreie voller Angst. Nach einer kurzen Suche findet er den Urpsrpung der Schreie. Er wird Zeuge wie ein Missionar in einem Baum von einem hungrigen Grizzly angegriffen wird, der wütend versucht ihn herunter zu schütteln.</German>
+        <Russian>Наш рейнджер патрулирует лес. Внезапно он слышит пронзительный крик, за которым следует глухой стук, как будто чем-то бъют по деревяшке. Он направляется на шум и видит на дереве трясущегося от страха миссионера, в то время как большой голодный гризли методичными ударами по дереву пытается стряхнуть его.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_RANGER_BEAR_ATTACK_1</Tag>
         <English>We must protect the missionary from the grizzly!</English>
         <German>Wir müssen den Missionar vor dem Grizzly verteidigen!</German>
+        <Russian>Мы должны защитить миссионера от гризли!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_RANGER_BEAR_ATTACK_HELP</Tag>
         <English>A grizzly attacks. A missionary needs to be defended.</English>
         <German>Ein Grizzly greift an. Ein Missionar muss verteidigt werden.</German>
+        <Russian>Гризли атакует. Нужно защищать миссионера.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_CONQUISTADORES_BEING_AMBUSHED</Tag>
         <English>A rumour is spreading: [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] conquistadores were ambushed by hostile Natives.</English>
         <German>Ein Gerücht macht die Runde: Ein friedlicher [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Conquistadore wurden von feindlichen Ureinwohnern überfallen.</German>
+        <Russian>Ходят слухи, что [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] конкистадоры попали в засаду, устроенную враждебными туземцами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONQUISTADORES_BEING_AMBUSHED_1</Tag>
         <English>Our bold conquistadors drift aimlessly through the green hell, hoping to stumble over a treasure that will make them rich. The next moment they notice that all birds and animals have gone silent.[NEWLINE]They stop. One of the men turns around, screams a warning and points towards the trees. Suddenly an arrow hits him in the chest. The silence is over. War screams come from the bushes and trees.[NEWLINE]We are being ambushed!</English>
         <German>Unsere tapferen Conquistadores schreiten müde durch die grüne Hölle, hoffend auf eine Entdeckung, um reich zu werden. Plötzlich bemerken sie, dass alle Geräusche von Vögeln und Tieren verschwunden sind und halten daher an. Einer der Männer dreht sich plötzlich um, schreit eine Warnung und zeigt in Richtung der Bäume, als auch schon ein Pfeil in seiner Brust steckt. Die Stille ist nun vorbei und Kriegsschreie hallen aus den Büschen. Wir werden überfallen!</German>
+        <Russian>Наши смелые конкистадоры блуждают по зеленому аду джунглей, надеясь наткнуться на сокровище, которое сделает их богатыми. Как вдруг они замечают, что голоса всех птицы и звери замолкли.[NEWLINE]Они останавливаются. Один из мужчин оборачивается, пытается что-то крикнуть, указывая на деревья. Но уже через мгновение из его груди торчит стрела. Тишина закончилась - отовсюду доносятся боевой клич индейцев.[NEWLINE]Мы попали в засаду!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CONQUISTADOR_AMBUSH_1</Tag>
         <English>Cover the flanks and fight for your lives!</English>
         <German>Verteidigt die Flanken und kämpft um euer Leben!</German>
+        <Russian>Прикрывайте фланги! Покажем краснокожим, что они зря это затеяли!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CONQUISTADOR_AMBUSH_HELP</Tag>
         <English>From out of the jungle hostile Natives attack.</English>
         <German>Feindliche Ureinwohner greifen aus dem Dschungel an.</German>
+        <Russian>Из джунглей лезут толпы враждебные туземцы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HIGHWAYMAN_ATTACK</Tag>
         <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] stagecoach was attacked by highwaymen but brave passengers defended it.</English>
         <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Kutsche wurde von Straßenräubern angegriffen, aber die mutigen Passagiere haben sie verteidigt.</German>
+        <Russian>Ходят слухи, что почтовый дилижанс [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] подвергся нападению разбойников, но храбрые пассажиры сумели отбиться от негодяев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HIGHWAYMAN_ATTACK_1</Tag>
         <English>Travelling to the next city our stagecoach halts suddenly as its horses shy back, startled by loud gunshots. From behind the rocks highwaymen emerge, pointing their guns at the stagecoach driver. Inside the coach a few strong men reach for their own guns, ready to defend the ladies and their lives.</English>
         <German>Auf dem Weg zur nächsten Stadt wird unsere Kutsche durch den plötzlichen Knall von Schüssen und das Aufscheuen ihrer Pferde aufgehalten. Straßenräuber erheben sich aus ihrem Versteck hinter einigen Felsen und richten ihre Waffen auf den Kutscher. Aber innerhalb der Kutsche greifen einige junge starke Männer zu ihren Waffen, um die Damen und ihr eigenes Leben zu verteidigen.</German>
+        <Russian>Почтовый дилижанс совершал свой обычный рейс из столицы в соседнюю колонию. Внезапно лошади остановились и начали пятится назад, испуганные громкими выстрелами. Из-за ближайших скал появляются банда разбойников, печально известная тем, что не оставляет свиделей. Бандиты хотят присвоить перевозимый груз, о котором им поведал их человек из города. Молодой испуганный возница пытается спрятаться за камнями, забыв о своём оружии и беспрестанно шепча молитвы. Но внутри дилижанса находятся несколько смелых мужчин с ружьями, готовых защищать женщин и их жизни.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HIGHWAYMAN_ATTACK_1</Tag>
         <English>If the passengers want to survive they must defend the stagecoach!</English>
         <German>Wenn die Passagiere überleben wollen, müssen sie die Kutsche verteidigen!</German>
+        <Russian>Если пассажиры хотят выжить, они должны защищать дилижанс!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HIGHWAYMAN_ATTACK_HELP</Tag>
         <English>Highwaymen attack the stagecoach. Brave passengers defend it.</English>
         <German>Straßenräuber greifen die Kutsche an. Ein paar mutige Passagiere verteidigen sie.</German>
+        <Russian>йцукен</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MILKMAID_IN_NEED</Tag>
         <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] milkmaid is being forced to marry her uncle. She asks the governor for help.</English>
         <German>Ein Gerücht macht die Runde: Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Milchmädchen soll gezwungen werden, ihren Onkel zu heiraten. Sie erbittet Hilfe vom Gouverneur.</German>
+        <Russian>На дилижанс нападают разбойники. Храбрые пассажиры защищаются.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MILKMAID_IN_NEED_1</Tag>
         <English>After the death of her father a milkmaid is being forced to marry her uncle against her will so he can inherit the cattle farm. She has come to the city to plead for help, hoping that the law will intervene. We can support her but, if we do, we will turn her uncle and the rest of this greedy family against us.</English>
         <German>Nach dem Tod ihres Vaters wird eine junge Milchmaid durch Ihren Onkel gezwungen, ihn gegen ihren Willen zu heiraten. Sie ist nun in die Stadt gekommen, um um Hilfe und rechtliche Unterstützung zu bitten. Wenn wir ihr helfen, wird sich ihr Onkel und der Rest dieser gierigen Familie gegen uns wenden.</German>
+        <Russian>После смерти отца, доярку, против ее воли, вынуждают выйти замуж за дядю, чтобы тот мог унаследовать животноводческую ферму. Она приехала в город просить помощи, надеясь, что закон вмешается. Мы можем поддержать ее, но если мы это сделаем, то настроим против нас ее дядю и остальную часть этой жадной семьи.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MILKMAID_IN_NEED_1</Tag>
         <English>Of course we will protect that poor young girl! We're not afraid of a few hillbillies!</English>
         <German>Wir werden dem jungen Mädchen natürlich helfen! Wir fürchten uns nicht vor ein paar Hinterwäldlern!</German>
+        <Russian>Конечно, мы защитим эту бедную девушку! Неужели мы испугаемся каких-то деревенщин!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MILKMAID_IN_NEED_2</Tag>
         <English>This is family business. We have no right to get involved.</English>
         <German>Wir sollten uns nicht in diese Familienangelegenheit einmischen.</German>
+        <Russian>Это семейное дело. Мы не имеем права вмешиваться.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MILKMAID_IN_NEED_HELP</Tag>
         <English>Criminals will attack the City.</English>
         <German>Kriminelle werden die Stadt angreifen.</German>
+        <Russian>Преступники нападут на город.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HERDER_IN_NEED</Tag>
         <English>There's a rumour that a [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] pigpen is being attacked by wolves.</English>
         <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Schweinestall und sein Besitzer werden von Wölfen angegriffen.</German>
+        <Russian>Ходят слухи, что на свинарник [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] напали волки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HERDER_IN_NEED_1</Tag>
         <English>A pig breeder has sent his young son to the city to beg for help. Wolves are attacking the pigpen and the farmer is desperately trying to protect the animals. He pleads for our help.</English>
         <German>Ein Schweinezüchter hat seinen kleinen Sohn in die Stadt geschickt, um Hilfe zu holen. Wölfe greifen den Stall an und der Züchter versucht verzweifelt, seine Tiere zu beschützen. Er bitte uns um Hilfe.</German>
+        <Russian>Свиновод отправил в город своего маленького сына просить о помощи. Волки нападают на свинарник, и фермер отчаянно пытается защитить животных. Он умоляет нас помочь ему.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HERDER_IN_NEED_1</Tag>
         <English>We will send help as fast as possible! He must hold on just a little longer!</English>
         <German>Wir werden versuchen so schnell wie möglich Hilfe zu schicken! Aber er muss noch etwas durchhalten!</German>
+        <Russian>Мы вышлем помощь как можно быстрее! Он должен продержаться еще немного!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HERDER_IN_NEED_HELP</Tag>
         <English>Wolves attack the pigpen.</English>
         <German>Wölfe greifen den Stall an.</German>
+        <Russian>Волки атакуют свинарник.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FERRY_STATION_ROBBERS</Tag>
         <English>There's a rumour that the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] ferry station is being attacked by robbers.</English>
         <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Fährstation wird von Straßenräubern angegriffen.</German>
+        <Russian>Ходят слухи, что на паромную переправу [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] напали грабители.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FERRY_STATION_ROBBERS_1</Tag>
         <English>Milord, a citizen has recognized a few rough-looking men riding through the city. They're wanted for ferry robbery, they're heavily armed and they're heading toward the local ferry station. If we ride now we just might have time to catch them and prevent another crime.</English>
         <German>Milord, ein Ortsansässiger hat einge nach Ärger aussehende Männer, die durch die Stadt ritten, als gesuchte Straßenräuber erkannt. Sie ritten in Richtung der örtlichen Fährstation und waren schwer bewaffnet. Wenn wir jetzt losreiten könnten wir sie noch einholen und Schlimmeres verhindern.</German>
+        <Russian>Милорд, горожанин узнал несколько мужчин, едущих по городу. Их разыскивают за ограбление парома ниже по реке. Они хорошо вооружены и направляются к местной паромной станции, возможно, замышляя новое нападение. Если мы поедем прямо сейчас, у нас как раз будет время, чтобы поймать их и предотвратить новое преступление.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FERRY_STATION_ROBBERS_1</Tag>
         <English>We will gather the milita and teach those ferry robbers a lesson!</English>
         <German>Wir werden die Miliz versammeln und diesen Straßenräubern eine Lektion erteilen!</German>
+        <Russian>Мы соберем ополчение и проучим этих грабителей паромов!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FERRY_STATION_ROBBERS_2</Tag>
         <English>We are deeply sorry but we are unable to send any help!</English>
         <German>Wir sind zu tiefst bestürzt, aber uns ist es nicht möglich Hilfe zu schicken!</German>
+        <Russian>Нам очень жаль, но мы не можем отправить какую-либо помощь!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FERRY_STATION_ROBBERS_HELP</Tag>
         <English>Highwaymen attack the ferry station.</English>
         <German>Straßenräuber greifen die Fährstation an.</German>
+        <Russian>Разбойники атакуют паромную переправу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SLAVE_AND_PLANATION_OWNER_DAUGHTER</Tag>
         <English>A rumour is spreading that the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] daughter of a plantation owner fell in love with a slave.</English>
         <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Tocher eines Plantagenbesitzers hat sich in einen Sklaven verliebt.</German>
+        <Russian>Ходят слухи, что [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] дочь плантатора влюбилась в раба.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SLAVE_AND_PLANATION_OWNER_DAUGHTER_1</Tag>
         <English>Milord, we have a bad situation. The daughter of one of the richest plantation owners in this region fell in love with a slave. When her father found out about the relationship and tried to kill the slave, she helped her lover to escape.[NEWLINE]The slave now sits in our waiting room. He pleads for our help. Out that window you can see the plantation owner with his armed men trying to get in here to lynch this poor slave.</English>
         <German>Milord, wir sind in einer schlimmen Situation. Die Tochter eines der reichsten Plantagenbesitzer der Region hat sich in einen Sklaven verliebt und diesem zur Flucht verholfen, nachdem ihr Vater von der Beziehung erfahren hat und drohte, den Sklaven zu töten. Der Sklave sitzt nun im Vorraum und bittet um Hilfe. Der Vater hat jedoch bewaffnete Männer versammelt und droht jetzt damit, das Gebäude gewaltsam zu betreten, um den Sklaven zu lynchen.</German>
+        <Russian>Милорд, у нас неприятная ситуация. Дочь одного из самых богатых плантаторов этого региона влюбилась в раба. Когда ее отец узнал об этих отношениях и попытался убить раба, она помогла возлюбленному бежать.[NEWLINE]Сейчас раб сидит в нашей приёмной. Он умоляет помочь ему. Из этого окна вы можете видеть владельца плантации со своими вооруженными людьми, пытающимися проникнуть сюда, чтобы линчевать этого бедного раба.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SLAVE_AND_PLANATION_OWNER_DAUGHTER_1</Tag>
         <English>We will not allow mob justice in this city! The slave is under our protection!</English>
         <German>Wir werden keine Lynchjustiz in dieser Stadt erlauben! Der Sklave steht unter unserem Schutz!</German>
+        <Russian>Мы не допустим самосуда в этом городе! Раб находится под нашей защитой!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SLAVE_AND_PLANATION_OWNER_DAUGHTER_2</Tag>
         <English>Let us solve this peacefully! We will pay the plantation owner a good price for the slave. We can only hope this will calm him down. The slave and the daughter shall never meet again.</English>
         <German>Lasst uns dies friedlich regeln und dem Plantagenbesitzer eine so großzügige Summe zukommen, um den Sklaven freizukaufen, sodass er sich wieder beruhigt! Der Sklave und die Tochter sollen sich nie wieder treffen.</German>
+        <Russian>Давайте решим это мирным путем! Мы заплатим хозяину плантации за раба хорошую цену. Нам остается только надеяться, что это его успокоит. Но этот раб и дочь плантатора больше никогда не встретятся.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SLAVE_AND_PLANATION_OWNER_DAUGHTER_3</Tag>
         <English>Justice demands we hand over the slave to the father! No slave should lay hands on an innocent girl and twist her young mind.</English>
         <German>Händigt den Sklaven dem Vater aus, damit er Gerechtigkeit nehmen kann! Dieser Sklave ist deutlich zuweit gegangen als er seine Hände an das junge Mädchen legte und ihr den Kopf verdrehte.</German>
+        <Russian>Справедливость требует, чтобы мы отдали раба отцу! Ни один раб не должен прикасаться к невинной девушке и извращать ее юный ум.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SLAVE_AND_PLANATION_OWNER_DAUGHTER_1_HELP</Tag>
         <English>Outraged citizens and members of the militia attack the city.</English>
         <German>Aufgebrachte Bürger und Mitglieder der Miliz greifen die Stadt an.</German>
+        <Russian>Возмущенные горожане и ополченцы нападают на город.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_WHALE_ATTACK</Tag>
