@@ -3,7 +3,13 @@ How do I install the mod ?
 1) First make sure that your colonization game is patched to official patch 1.01f.
 (Everything else will cause heavy problems.)
 
-2) Like any other mod, copy this folder to your MODS folder.
+2) Go to the game directory. It's the one with Colonization.exe.
+
+3) Create a folder called Mods if it's not already there.
+
+4) Place the We The People folder inside Mods. Do not use the Mods folder in My Documents.
+
+5) Copy the files from "Copy to Colonization.exe" and place them next to Colonization.exe.
 
 Regarding mod name:
 Multiplayer requires all players to call the mod the same thing.
@@ -12,3 +18,27 @@ Savegames can only be loaded using the same mod name as when they were saved. We
 https://we-the-people-civ4col-mod.github.io/DeveloperNotes/SavegameModRenamingTool/index.html
 
 Enjoy!
+
+
+Troubleshooting:
+---------------------------
+Failed Initializing Python
+---------------------------
+Python exceptions not enabled in ini file. This means the actual error is hidden.
+Since CvGameCoreDLL.dll forces python errors to be displayed, we can assume that file isn't loaded.
+See below on how to deal with that issue.
+
+---------------------------
+CvGameCoreDLL.dll not loaded
+---------------------------
+This is usually caused by one of two issues.
+1: the file is missing.
+  The file should be in Assets/CvGameCoreDLL.dll
+  It should always be there in releases, through it needs to be compiled if you get the development version.
+  Refer to documentation on compiling the dll for details on how to create a dll file yourself.
+  
+2: Missing libraries (3rd party dll files)
+  CvGameCoreDLL.dll won't load if any of the dll files it tries to load are missing.
+  Sadly due to a technical limitation the game will only look for them next to the exe file, not inside the mod.
+  Do install step 5 (again) to get the dll files placed where they are supposed to be.
+  

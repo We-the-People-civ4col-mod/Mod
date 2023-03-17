@@ -83,6 +83,13 @@ FONT_CENTER_JUSTIFY=1<<2
 FONT_RIGHT_JUSTIFY=1<<1
 FONT_LEFT_JUSTIFY=1<<0
 
+# use a workaround to detect vanilla DLL files aswe can't add some "is vanilla" function to vanilla
+bIsVanillaDLL = WidgetTypes.NUM_WIDGET_TYPES == 100
+
+if bIsVanillaDLL:
+	# the number of widget matches vanilla meaning we did not load our own DLL file.
+	sys.stderr.write("CvGameCoreDLL.dll not loaded\n\nTwo likely causes:\n1: File is missing in assets (not compiled)\n2: dll files not installed in the game dir\n\nSee install instructions.txt for more information.")
+
 def convertToUnicode(s):
 	"if the string is non unicode, convert it to unicode by decoding it using 8859-1, latin_1"
 	if (isinstance(s, str)):
@@ -354,7 +361,11 @@ def addIconToMap(infoChar, desc):
 	if (uc>=0):
 		FontIconMap[desc] = u"%c" %(uc,)
 
-OtherFontIcons = { 'happy' : FontSymbols.HAPPY_CHAR,
+OtherFontIcons = {}
+if not bIsVanillaDLL:
+	# placing it inside an if statement fixes a conflict with the "DLL not loaded" error message.
+	# vanilla has 100 widgets. The mod has more. This is used to identify the vanilla DLL file.
+	OtherFontIcons = { 'happy' : FontSymbols.HAPPY_CHAR,
 				'unhappy' : FontSymbols.UNHAPPY_CHAR,
 				'healthy' : FontSymbols.HEALTHY_CHAR,
 				'unhealthy' : FontSymbols.UNHEALTHY_CHAR,
