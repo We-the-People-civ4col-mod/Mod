@@ -1236,11 +1236,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COAL_MINER_STRATEGY</Tag>
-        <English>Mountain and hill tiles let you dig for [LINK=YIELD_COAL]coal[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]coal miner[COLOR_REVERT] profession. Coal production can be increased by assigning an [LINK=UNIT_COAL_MINER]expert coal miner[\LINK] to the job.</English>
+        <English>Mountain and hill tiles let you dig for [LINK=YIELD_COAL]coal[\LINK] if the colonist working them is assigned to the [LINK=PROFESSION_COAL_MINER]coal miner[\LINK] profession. Coal production can be increased by assigning an [LINK=UNIT_COAL_MINER]expert coal miner[\LINK] to the job.</English>
         <French>Les tuiles de montagne et de colline vous permettent d'extraire du [LINK=YIELD_COAL]charbon[\LINK] si le colon qui les exploite est affecté à la profession de [COLOR_HIGHLIGHT_TEXT]mineur de charbon[COLOR_REVERT]. La production de charbon peut être augmentée en affectant un [LINK=UNIT_COAL_MINER]mineur de charbon expert[\LINK] à ce travail.</French>
-        <German>Berg- und Hügel-Geländefelder ermöglichen den Abbau von [LINK=YIELD_COAL]Kohle[\LINK], wenn der Kolonist, der sie bearbeitet, dem Beruf [COLOR_HIGHLIGHT_TEXT]Bergmann[COLOR_REVERT] zugeordnet ist. Die Kohleproduktion kann erhöht werden, indem man einen [LINK=UNIT_COAL_MINER]erfahrenen Kohlekumpel[\LINK] mit der Arbeit beauftragt.</German>
-        <Italian>Le tessere montagna e collina permettono di estrarre [LINK=YIELD_COAL]carbone[\LINK] se il colono che vi lavora è assegnato alla professione [COLOR_HIGHLIGHT_TEXT]minatore di carbone[COLOR_REVERT]. La produzione di carbone può essere aumentata assegnando al lavoro un [LINK=UNIT_COAL_MINER]minatore di carbone esperto[\LINK].</Italian>
-        <Spanish>Las losetas de montaña y colina te permiten extraer [LINK=YIELD_COAL]carbón[\LINK] si el colono que las trabaja tiene asignada la profesión de [COLOR_HIGHLIGHT_TEXT]minero del carbón[COLOR_REVERT]. La producción de carbón se puede aumentar asignando un [LINK=UNIT_COAL_MINER]minero del carbón experto[\LINK] al trabajo.</Spanish>
+        <German>Berg- und Hügel-Geländefelder ermöglichen den Abbau von [LINK=YIELD_COAL]Kohle[\LINK], wenn der Kolonist, der sie bearbeitet, dem Beruf [LINK=PROFESSION_COAL_MINER]Bergmann[\LINK] zugeordnet ist. Die Kohleproduktion kann erhöht werden, indem man einen [LINK=UNIT_COAL_MINER]erfahrenen Kohlekumpel[\LINK] mit der Arbeit beauftragt.</German>
+        <Italian>Le tessere montagna e collina permettono di estrarre [LINK=YIELD_COAL]carbone[\LINK] se il colono che vi lavora è assegnato alla professione [LINK=PROFESSION_COAL_MINER]minatore di carbone[\LINK]. La produzione di carbone può essere aumentata assegnando al lavoro un [LINK=UNIT_COAL_MINER]minatore di carbone esperto[\LINK].</Italian>
+        <Spanish>Las losetas de montaña y colina te permiten extraer [LINK=YIELD_COAL]carbón[\LINK] si el colono que las trabaja tiene asignada la profesión de [LINK=PROFESSION_COAL_MINER]minero del carbón[\LINK]. La producción de carbón se puede aumentar asignando un [LINK=UNIT_COAL_MINER]minero del carbón experto[\LINK] al trabajo.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_YERBA_TRADER</Tag>
@@ -2484,7 +2484,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Feuerwerker:Feuerwerker</Text>
+            <Text>Pulvermacher:Pulvermacher</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -2512,7 +2512,7 @@
         <Tag>TXT_KEY_PROFESSION_FIREWORKER_PEDIA</Tag>
         <English>Well away from other buildings the powder maker mixes gunpowder from sulphur, charcoal and saltpeter: ammunition for the soldiers' guns. In colonial times it's the only available explosive (dynamite will be invented in 1867) so it's also used for artillery, mining and road building.</English>
         <French>A l'écart des autres bâtiments, le poudrier mélange la poudre à canon à partir de soufre, de charbon de bois et de salpêtre : des munitions pour les fusils des soldats. À l'époque coloniale, c'est le seul explosif disponible (la dynamite sera inventée en 1867). Elle est donc également utilisée pour l'artillerie, l'exploitation minière et la construction de routes.</French>
-        <German>Weit entfernt von anderen Gebäuden mischt der Feuerwerker Schwarzpulver aus Schwefel, Holzkohle und Salpeter für die Gewehre der Soldaten. In der Kolonialzeit ist es der einzige verfügbare Sprengstoff (Dynamit wird erst 1867 erfunden) und wird auch für die Artillerie, den Bergbau und den Straßenbau verwendet.</German>
+        <German>Weit entfernt von anderen Gebäuden mischt der Pulvermacher Schwarzpulver aus Schwefel, Holzkohle und Salpeter für die Gewehre der Soldaten. In der Kolonialzeit ist es der einzige verfügbare Sprengstoff (Dynamit wird erst 1867 erfunden) und wird auch für die Artillerie, den Bergbau und den Straßenbau verwendet.</German>
         <Italian>Ben lontano da altri edifici, il fabbricante di polvere da sparo mescola la polvere da sparo con zolfo, carbone e salnitro: munizioni per i cannoni dei soldati. In epoca coloniale è l'unico esplosivo disponibile (la dinamite sarà inventata nel 1867), quindi viene utilizzato anche per l'artiglieria, le miniere e la costruzione di strade.</Italian>
         <Spanish>Alejado de otros edificios, el polvorero mezcla pólvora a partir de azufre, carbón vegetal y salitre: munición para las armas de los soldados. En la época colonial es el único explosivo disponible (la dinamita se inventará en 1867), por lo que también se utiliza para la artillería, la minería y la construcción de carreteras.</Spanish>
     </TEXT>
@@ -2520,7 +2520,7 @@
         <Tag>TXT_KEY_PROFESSION_FIREWORKER_STRATEGY</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]Powder makers[COLOR_REVERT] can work in the [LINK=BUILDING_FIREWORKERS_HOUSE]powder magazine[\LINK] or one of its upgrades to produce [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK]. To make gunpowder the powder makers needs charcoal. [LINK=UNIT_FIREWORKER]Master powder makers[\LINK] excel at this craft. They dramatically boost your production of gunpowder.</English>
         <French>Les [COLOR_HIGHLIGHT_TEXT]poudriers[COLOR_REVERT] peuvent travailler dans la [LINK=BUILDING_FIREWORKERS_HOUSE]poudrière[\LINK] ou l'une de ses améliorations pour produire de la [LINK=YIELD_BLACK_POWDER]poudre à canon[\LINK]. Pour fabriquer de la poudre à canon, les fabricants de poudre ont besoin de charbon de bois. Les [LINK=UNIT_FIREWORKER]maîtres poudriers[\LINK] excellent dans ce domaine. Ils augmentent considérablement votre production de poudre à canon.</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]Feuerwerker[COLOR_REVERT] können im [LINK=BUILDING_FIREWORKERS_HOUSE]Pulvermagazin[\LINK] oder einer seiner Erweiterungen arbeiten, um [LINK=YIELD_BLACK_POWDER]Schwarzpulver[\LINK] herzustellen. Zur Herstellung von Schießpulver benötigen die Pulvermacher Holzkohle. [LINK=UNIT_FIREWORKER]Meister-Pulvermacher[\LINK] beherrschen dieses Handwerk hervorragend. Sie steigern die Produktion von Schwarzpulver dramatisch.</German>
+        <German>[COLOR_HIGHLIGHT_TEXT]Pulvermacher[COLOR_REVERT] können im [LINK=BUILDING_FIREWORKERS_HOUSE]Pulvermagazin[\LINK] oder einer seiner Erweiterungen arbeiten, um [LINK=YIELD_BLACK_POWDER]Schwarzpulver[\LINK] herzustellen. Zur Herstellung von Schießpulver benötigen die Pulvermacher Holzkohle. [LINK=UNIT_FIREWORKER]Meister-Pulvermacher[\LINK] beherrschen dieses Handwerk hervorragend. Sie steigern die Produktion von Schwarzpulver dramatisch.</German>
         <Italian>I [COLOR_HIGHLIGHT_TEXT]Polverai[COLOR_REVERT] possono lavorare nella [LINK=BUILDING_FIREWORKERS_HOUSE]polveriera[\LINK] o in uno dei suoi potenziamenti per produrre [LINK=YIELD_BLACK_POWDER]polvere da sparo[\LINK]. Per produrre polvere da sparo i fabbricanti di polvere hanno bisogno di carbone di legna. I [LINK=UNIT_FIREWORKER]mastri Polverai[\LINK] eccellono in questo mestiere. Aumentano drasticamente la produzione di polvere da sparo.</Italian>
         <Spanish>Los [COLOR_HIGHLIGHT_TEXT]Pólvoreros[COLOR_REVERT] pueden trabajar en el [LINK=BUILDING_FIREWORKERS_HOUSE]polvorín[\LINK] o en una de sus mejoras para producir [LINK=YIELD_BLACK_POWDER]pólvora[\LINK]. Para fabricar pólvora, los polvoristas necesitan carbón vegetal. Los [LINK=UNIT_FIREWORKER]maestros polvoreros[\LINK] destacan en este oficio. Aumentan drásticamente tu producción de pólvora.</Spanish>
     </TEXT>
