@@ -535,14 +535,14 @@ public:
 
 	// WTP, ray, new Harbour System - START
 	int getCityHarbourSpace() const;
-	void setCityHarbourSpace(int iValue);
+	void changeCityHarbourSpace(int iValue);
 	int getCityHarbourSpaceUsed() const;
 	bool bShouldShowCityHarbourSystem() const;
 	// WTP, ray, new Harbour System - END
 
 	// WTP, ray, new Barracks System - START
 	int getCityBarracksSpace() const;
-	void setCityBarracksSpace(int iValue);
+	void changeCityBarracksSpace(int iValue);
 	int getCityBarracksSpaceUsed() const;
 	bool bShouldShowCityBarracksSystem() const;
 	// WTP, ray, new Barracks  System - END
@@ -783,6 +783,8 @@ public:
 
 
 	YieldTypes getPreferredYieldAtCityPlot() const { return m_ePreferredYieldAtCityPlot; }
+
+	void setBarrackHarbourCache();
 
 	void writeDesyncLog(FILE *f) const;
 

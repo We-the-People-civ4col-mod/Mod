@@ -2703,71 +2703,74 @@ void CvCity::hurry(HurryTypes eHurry)
 void CvCity::processBuilding(BuildingTypes eBuilding, int iChange)
 {
 	FAssertMsg(iChange == 1 || iChange == -1, "The value of iChange has to be either 1 or -1.")
+
+	const CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
+
 	//ray, removing hardcoded Roads for Buildings - START
-	int iRoutTypeCreated = GC.getBuildingInfo(eBuilding).getRouteTypeCreated();
-	if (iRoutTypeCreated > 0) //
+	const RouteTypes eRouteTypeCreated = (RouteTypes)kBuilding.getRouteTypeCreated();
+	if (eRouteTypeCreated > 0) //
 	{
 		CvPlot* pPlot = plot();
-		if (pPlot->getRouteType() < iRoutTypeCreated)
+		if (pPlot->getRouteType() < eRouteTypeCreated)
 		{
-			pPlot->setRouteType((RouteTypes)iRoutTypeCreated);
+			pPlot->setRouteType(eRouteTypeCreated);
 		}
 	}
 	//ray, removing hardcoded Roads for Buildings - END
 
-	if (GC.getBuildingInfo(eBuilding).getFreePromotion() != NO_PROMOTION)
+	if (kBuilding.getFreePromotion() != NO_PROMOTION)
 	{
-		changeFreePromotionCount(((PromotionTypes)(GC.getBuildingInfo(eBuilding).getFreePromotion())), iChange);
+		changeFreePromotionCount(((PromotionTypes)kBuilding.getFreePromotion()), iChange);
 	}
-	changeFreeExperience(GC.getBuildingInfo(eBuilding).getFreeExperience() * iChange);
-	changeMaxFoodKeptPercent(GC.getBuildingInfo(eBuilding).getFoodKept() * iChange);
-	changeHealRate(GC.getBuildingInfo(eBuilding).getHealRateChange() * iChange);
-	changeMilitaryProductionModifier(GC.getBuildingInfo(eBuilding).getMilitaryProductionModifier() * iChange);
-	changeWorksWaterCount((GC.getBuildingInfo(eBuilding).isWorksWater()) ? iChange : 0);
+	changeFreeExperience(kBuilding.getFreeExperience() * iChange);
+	changeMaxFoodKeptPercent(kBuilding.getFoodKept() * iChange);
+	changeHealRate(kBuilding.getHealRateChange() * iChange);
+	changeMilitaryProductionModifier(kBuilding.getMilitaryProductionModifier() * iChange);
+	changeWorksWaterCount(kBuilding.isWorksWater() ? iChange : 0);
 	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		changeLandPlotYield(eYield, (GC.getBuildingInfo(eBuilding).getLandPlotYieldChange(eYield) * iChange)); // R&R, ray, Landplot Yields
-		changeSeaPlotYield(eYield, (GC.getBuildingInfo(eBuilding).getSeaPlotYieldChange(eYield) * iChange));
-		changeRiverPlotYield(eYield, (GC.getBuildingInfo(eBuilding).getRiverPlotYieldChange(eYield) * iChange));
-		changeYieldRateModifier(eYield, (GC.getBuildingInfo(eBuilding).getYieldModifier(eYield) * iChange));
+		changeLandPlotYield    (eYield, (kBuilding.getLandPlotYieldChange(eYield)  * iChange)); // R&R, ray, Landplot Yields
+		changeSeaPlotYield     (eYield, (kBuilding.getSeaPlotYieldChange(eYield)   * iChange));
+		changeRiverPlotYield   (eYield, (kBuilding.getRiverPlotYieldChange(eYield) * iChange));
+		changeYieldRateModifier(eYield, (kBuilding.getYieldModifier(eYield)        * iChange));
 	}
 	setYieldRateDirty();
-	for (int iI = 0; iI < GC.getNumUnitCombatInfos(); iI++)
+	for (UnitCombatTypes eUnitCombat = FIRST_UNITCOMBAT; eUnitCombat < NUM_UNITCOMBAT_TYPES; ++eUnitCombat)
 	{
-		changeUnitCombatFreeExperience(((UnitCombatTypes)iI), GC.getBuildingInfo(eBuilding).getUnitCombatFreeExperience(iI) * iChange);
+		changeUnitCombatFreeExperience(eUnitCombat, kBuilding.getUnitCombatFreeExperience(eUnitCombat) * iChange);
 	}
-	for (int iI = 0; iI < NUM_DOMAIN_TYPES; iI++)
+	for (DomainTypes eDomain = FIRST_DOMAIN; eDomain < NUM_DOMAIN_TYPES; ++eDomain)
 	{
-		changeDomainFreeExperience(((DomainTypes)iI), GC.getBuildingInfo(eBuilding).getDomainFreeExperience(iI) * iChange);
-		changeDomainProductionModifier(((DomainTypes)iI), GC.getBuildingInfo(eBuilding).getDomainProductionModifier(iI) * iChange);
+		changeDomainFreeExperience(eDomain, kBuilding.getDomainFreeExperience(eDomain) * iChange);
+		changeDomainProductionModifier(eDomain, kBuilding.getDomainProductionModifier(eDomain) * iChange);
 	}
 	OOS_LOG("Process Building", getTypeStr(eBuilding));
-	GET_PLAYER(getOwnerINLINE()).changeAssets(GC.getBuildingInfo(eBuilding).getAssetValue() * iChange);
-	area()->changePower(getOwnerINLINE(), (GC.getBuildingInfo(eBuilding).getPowerValue() * iChange));
-	GET_PLAYER(getOwnerINLINE()).changePower(GC.getBuildingInfo(eBuilding).getPowerValue() * iChange);
-	changeBuildingDefense(GC.getBuildingInfo(eBuilding).getDefenseModifier() * iChange);
-	changeBuildingBombardDefense(GC.getBuildingInfo(eBuilding).getBombardDefenseModifier() * iChange);
-	GET_TEAM(getTeam()).changeBuildingClassCount((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType(), iChange);
-	GET_PLAYER(getOwnerINLINE()).changeBuildingClassCount((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType(), iChange);
+	GET_PLAYER(getOwnerINLINE()).changeAssets(kBuilding.getAssetValue() * iChange);
+	area()->changePower(getOwnerINLINE(), (kBuilding.getPowerValue() * iChange));
+	GET_PLAYER(getOwnerINLINE()).changePower(kBuilding.getPowerValue() * iChange);
+	changeBuildingDefense(kBuilding.getDefenseModifier() * iChange);
+	changeBuildingBombardDefense(kBuilding.getBombardDefenseModifier() * iChange);
+	GET_TEAM(getTeam()).changeBuildingClassCount((BuildingClassTypes)kBuilding.getBuildingClassType(), iChange);
+	GET_PLAYER(getOwnerINLINE()).changeBuildingClassCount((BuildingClassTypes)kBuilding.getBuildingClassType(), iChange);
 	setLayoutDirty(true);
 
+	changeCityBarracksSpace(kBuilding.getMaxBarracksSpaceProvided() * iChange);
+	changeCityHarbourSpace (kBuilding.getMaxHarbourSpaceProvided () * iChange);
+}
+
+void CvCity::setBarrackHarbourCache()
+{
 	//WTP, ray, edited by aemon, new Harbor & Barracks System - START
-	int iMaxBarracksSpaceProvidedByBuilding = GLOBAL_DEFINE_BASE_HARBOUR_SPACES_WITHOUT_BUILDINGS;
-	int iMaxHarbourSpaceProvidedByBuilding = GLOBAL_DEFINE_BASE_BARRACKS_SPACES_WITHOUT_BUILDINGS;
-	if (GC.getBuildingInfo(eBuilding).getMaxBarracksSpaceProvided() > 0 || GC.getBuildingInfo(eBuilding).getMaxHarbourSpaceProvided() > 0)
+	m_iCityHarbourSpace = GLOBAL_DEFINE_BASE_HARBOUR_SPACES_WITHOUT_BUILDINGS;
+	m_iCityBarracksSpace = GLOBAL_DEFINE_BASE_BARRACKS_SPACES_WITHOUT_BUILDINGS;
+	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
 	{
-		for (int iBuildingClass = 0; iBuildingClass < GC.getNumBuildingClassInfos(); ++iBuildingClass)
+		if (isHasBuilding(eBuilding))
 		{
-			BuildingTypes eLoopBuilding = (BuildingTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getCivilizationBuildings(iBuildingClass);
-			if (NO_BUILDING != eLoopBuilding && isHasBuilding(eLoopBuilding))
-			{
-				CvBuildingInfo& kLoopBuilding = GC.getBuildingInfo(eLoopBuilding);
-				iMaxBarracksSpaceProvidedByBuilding += kLoopBuilding.getMaxBarracksSpaceProvided();
-				iMaxHarbourSpaceProvidedByBuilding += kLoopBuilding.getMaxHarbourSpaceProvided();
-			}
+			const CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
+			changeCityBarracksSpace(kBuilding.getMaxBarracksSpaceProvided());
+			changeCityHarbourSpace(kBuilding.getMaxHarbourSpaceProvided());
 		}
-		setCityBarracksSpace(iMaxBarracksSpaceProvidedByBuilding);
-		setCityHarbourSpace(iMaxHarbourSpaceProvidedByBuilding);
 	}
 	//WTP, ray, edited by aemon, new Harbor & Barracks System - END
 }
@@ -10466,22 +10469,12 @@ int CvCity::getCityHarbourSpace() const
 		return 0;
 	}
 
-	else
-	{
-		iValueToReturn = m_iCityHarbourSpace;
-	}
-
-	return iValueToReturn;
+	return m_iCityHarbourSpace > 0 ? m_iCityHarbourSpace : 0;
 }
 
-void CvCity::setCityHarbourSpace(int iValue)
+void CvCity::changeCityHarbourSpace(int iValue)
 {
-	if (iValue < 0)
-	{
-		return;
-	}
-
-	m_iCityHarbourSpace = iValue;
+	m_iCityHarbourSpace += iValue;
 }
 
 int CvCity::getCityHarbourSpaceUsed() const
@@ -10515,17 +10508,12 @@ bool CvCity::bShouldShowCityHarbourSystem() const
 // WTP, ray, new Barracks System - START
 int CvCity::getCityBarracksSpace() const
 {
-	return m_iCityBarracksSpace;
+	return m_iCityBarracksSpace > 0 ? m_iCityBarracksSpace : 0;
 }
 
-void CvCity::setCityBarracksSpace(int iValue)
+void CvCity::changeCityBarracksSpace(int iValue)
 {
-	if (iValue < 0)
-	{
-		return;
-	}
-
-	m_iCityBarracksSpace = iValue;
+	m_iCityBarracksSpace += iValue;
 }
 
 int CvCity::getCityBarracksSpaceUsed() const
@@ -14394,6 +14382,7 @@ void CvCity::UpdateBuildingAffectedCache()
 			}
 		}
 	}
+	setBarrackHarbourCache();
 }
 // building affected cache - end - Nightinggale
 

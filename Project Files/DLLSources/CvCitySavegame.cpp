@@ -33,8 +33,6 @@
 	const int defaultWorksWaterCount = 0 ;
 	const int defaultRebelSentiment = 0 ;
 	const int defaultCityHealth = 0 ; // R&R, ray, Health
-	const int defaultCityHarbourSpace = 0 ; // WTP, ray, new Harbour System - START
-	const int defaultCityBarracksSpace = 0 ; // WTP, ray, new Barracks System - START
 	const int defaultCityHappiness = 0; // WTP, ray, Happiness - START
 	const int defaultCityUnHappiness = 0; // WTP, ray, Happiness - START
 	const int defaultCityTimerFestivitiesOrUnrest = 0; // WTP, ray, Happiness - START
@@ -363,8 +361,8 @@ void CvCity::resetSavedData(int iID, PlayerTypes eOwner, Coordinates resetCoord,
 	m_iWorksWaterCount = defaultWorksWaterCount;
 	m_iRebelSentiment = defaultRebelSentiment;
 	m_iCityHealth = defaultCityHealth; // R&R, ray, Health
-	m_iCityHarbourSpace = defaultCityHarbourSpace; // WTP, ray, new Harbour System - START
-	m_iCityBarracksSpace = defaultCityBarracksSpace; // WTP, ray, new Barracks System - START
+	m_iCityHarbourSpace = GLOBAL_DEFINE_BASE_HARBOUR_SPACES_WITHOUT_BUILDINGS; // WTP, ray, new Harbour System - START
+	m_iCityBarracksSpace = GLOBAL_DEFINE_BASE_BARRACKS_SPACES_WITHOUT_BUILDINGS; // WTP, ray, new Barracks System - START
 	m_iCityHappiness = defaultCityHappiness; // WTP, ray, Happiness - START
 	m_iCityUnHappiness = defaultCityUnHappiness; // WTP, ray, Happiness - START
 	m_iCityTimerFestivitiesOrUnrest = defaultCityTimerFestivitiesOrUnrest; // WTP, ray, Happiness - START
@@ -516,8 +514,8 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_WorksWaterCount: reader.Read(m_iWorksWaterCount); break;
 		case CitySave_RebelSentiment: reader.Read(m_iRebelSentiment); break;
 		case CitySave_CityHealth: reader.Read(m_iCityHealth); break; // R&R, ray, Health
-		case CitySave_CityHarbourSpace: reader.Read(m_iCityHarbourSpace); break; // WTP, ray, new Harbour System - START
-		case CitySave_CityBarracksSpace: reader.Read(m_iCityBarracksSpace); break; // WTP, ray, new Barracks System - START
+		case CitySave_CityHarbourSpace: reader.Discard<int>(); // WTP, ray, new Harbour System - START
+		case CitySave_CityBarracksSpace: reader.Discard<int>(); break; // WTP, ray, new Barracks System - START
 		case CitySave_CityHappiness: reader.Read(m_iCityHappiness); break; // WTP, ray, Happiness - START
 		case CitySave_CityUnHappiness: reader.Read(m_iCityUnHappiness); break; // WTP, ray, Happiness - START
 		case CitySave_CityTimerFestivitiesOrUnrest: reader.Read(m_iCityTimerFestivitiesOrUnrest); break; // WTP, ray, Happiness - START
@@ -680,8 +678,6 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_WorksWaterCount, m_iWorksWaterCount, defaultWorksWaterCount);
 	writer.Write(CitySave_RebelSentiment, m_iRebelSentiment, defaultRebelSentiment);
 	writer.Write(CitySave_CityHealth, m_iCityHealth, defaultCityHealth); // R&R, ray, Health
-	writer.Write(CitySave_CityHarbourSpace, m_iCityHarbourSpace, defaultCityHarbourSpace); // WTP, ray, new Harbour System - START
-	writer.Write(CitySave_CityBarracksSpace, m_iCityBarracksSpace, defaultCityBarracksSpace); // WTP, ray, new Barracks System - START
 	writer.Write(CitySave_CityHappiness, m_iCityHappiness, defaultCityHappiness); // WTP, ray, Happiness - START
 	writer.Write(CitySave_CityUnHappiness, m_iCityUnHappiness, defaultCityUnHappiness); // WTP, ray, Happiness - START
 	writer.Write(CitySave_CityTimerFestivitiesOrUnrest, m_iCityTimerFestivitiesOrUnrest, defaultCityTimerFestivitiesOrUnrest); // WTP, ray, Happiness - START
