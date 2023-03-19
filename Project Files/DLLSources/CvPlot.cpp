@@ -556,7 +556,7 @@ void CvPlot::upgradeImprovement(ImprovementTypes eImprovementUpgrade, int iUpgra
 
 void CvPlot::doImprovementUpgrade()
 {
-	FAssert(getImprovementType() != NO_IMPROVEMENT);
+	FAssertMsg(getImprovementType() != NO_IMPROVEMENT, CvString::format("Plot(%d,%d) Upgrading improvement on plot without improvement", getX_INLINE(), getY_INLINE()));
 
 	const ImprovementTypes eImprovementUpgrade = (ImprovementTypes)GC.getImprovementInfo(getImprovementType()).getImprovementUpgrade();
 
@@ -1336,7 +1336,7 @@ int CvPlot::getSeeFromLevelUncached() const
 {
 	int iLevel;
 
-	FAssertMsg(getTerrainType() != NO_TERRAIN, "TerrainType is not assigned a valid value");
+	FAssertMsg(getTerrainType() != NO_TERRAIN, CvString::format("Plot(%d,%d) TerrainType is not assigned a valid value", getX_INLINE(), getY_INLINE()));
 
 	iLevel = GC.getTerrainInfo(getTerrainType()).getSeeFromLevel();
 
@@ -1380,7 +1380,7 @@ int CvPlot::getSeeThroughLevelUncached() const
 {
 	int iLevel;
 
-	FAssertMsg(getTerrainType() != NO_TERRAIN, "TerrainType is not assigned a valid value");
+	FAssertMsg(getTerrainType() != NO_TERRAIN, CvString::format("Plot(%d,%d) TerrainType is not assigned a valid value", getX_INLINE(), getY_INLINE()));
 
 	iLevel = GC.getTerrainInfo(getTerrainType()).getSeeThroughLevel();
 
@@ -1757,7 +1757,7 @@ void CvPlot::updateSeeFromSight(bool bIncrement)
 
 bool CvPlot::canHaveBonus(BonusTypes eBonus, bool bIgnoreLatitude) const
 {
-	FAssertMsg(getTerrainType() != NO_TERRAIN, "TerrainType is not assigned a valid value");
+	FAssertMsg(getTerrainType() != NO_TERRAIN, CvString::format("Plot(%d,%d) TerrainType is not assigned a valid value", getX_INLINE(), getY_INLINE()));
 
 	if (eBonus == NO_BONUS)
 	{
@@ -1916,7 +1916,7 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 	int iI;
 
 	FAssertMsg(eImprovement != NO_IMPROVEMENT, "Improvement is not assigned a valid value");
-	FAssertMsg(getTerrainType() != NO_TERRAIN, "TerrainType is not assigned a valid value");
+	FAssertMsg(getTerrainType() != NO_TERRAIN, CvString::format("Plot(%d,%d) TerrainType is not assigned a valid value", getX_INLINE(), getY_INLINE()));
 
 	bValid = false;
 
@@ -2512,7 +2512,7 @@ int CvPlot::getBuildTime(BuildTypes eBuild) const
 {
 	int iTime;
 
-	FAssertMsg(getTerrainType() != NO_TERRAIN, "TerrainType is not assigned a valid value");
+	FAssertMsg(getTerrainType() != NO_TERRAIN, CvString::format("Plot(%d,%d) TerrainType is not assigned a valid value", getX_INLINE(), getY_INLINE()));
 
 	iTime = GC.getBuildInfo(eBuild).getTime();
 
@@ -3300,7 +3300,7 @@ int CvPlot::defenseModifier(TeamTypes eDefender, bool bHelp) const
 	ImprovementTypes eImprovement;
 	int iModifier;
 
-	FAssertMsg(getTerrainType() != NO_TERRAIN, "TerrainType is not assigned a valid value");
+	FAssertMsg(getTerrainType() != NO_TERRAIN, CvString::format("Plot(%d,%d) TerrainType is not assigned a valid value", getX_INLINE(), getY_INLINE()));
 
 	iModifier = ((getFeatureType() == NO_FEATURE) ? GC.getTerrainInfo(getTerrainType()).getDefenseModifier() : GC.getFeatureInfo(getFeatureType()).getDefenseModifier());
 
@@ -3351,7 +3351,7 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot,
 	int iRouteCost;
 	int iRouteFlatCost;
 
-	FAssertMsg(getTerrainType() != NO_TERRAIN, "TerrainType is not assigned a valid value");
+	FAssertMsg(getTerrainType() != NO_TERRAIN, CvString::format("Plot(%d,%d) TerrainType is not assigned a valid value", getX_INLINE(), getY_INLINE()));
 
 	if (pUnit->flatMovementCost())
 	{
@@ -4301,7 +4301,7 @@ bool CvPlot::canHaveFeature(FeatureTypes eFeature) const
 	CvPlot* pAdjacentPlot;
 	int iI;
 
-	FAssertMsg(getTerrainType() != NO_TERRAIN, "TerrainType is not assigned a valid value");
+	FAssertMsg(getTerrainType() != NO_TERRAIN, CvString::format("Plot(%d,%d) TerrainType is not assigned a valid value", getX_INLINE(), getY_INLINE()));
 
 	if (eFeature == NO_FEATURE)
 	{
@@ -6535,7 +6535,7 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 		return 0;
 	}
 
-	FAssertMsg(getTerrainType() != NO_TERRAIN, "TerrainType is not assigned a valid value");
+	FAssertMsg(getTerrainType() != NO_TERRAIN, CvString::format("Plot(%d,%d) TerrainType is not assigned a valid value", getX_INLINE(), getY_INLINE()));
 
 	if (isPeak())
 	{
