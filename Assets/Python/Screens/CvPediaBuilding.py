@@ -127,7 +127,7 @@ class CvPediaBuilding:
 				else:
 					szCost = localText.getText("TXT_KEY_PEDIA_COST", (gc.getPlayer(self.top.iActivePlayer).getBuildingYieldProductionNeeded(self.iBuilding, iYield), ))
 				## R&R, Robert Surcouf,  Pedia - Start
-				screen.appendListBoxStringNoUpdate(panelName, u"<font=3>" + szCost + u"%c" % gc.getYieldInfo(iYield).getChar() + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+				screen.appendListBoxStringNoUpdate(panelName, u"<font=3>" + szCost + u"%c" % gc.getYieldInfo(iYield).getChar() + u"</font>", WidgetTypes.WIDGET_PEDIA_JUMP_TO_YIELDS, iYield, 1, CvUtil.FONT_LEFT_JUSTIFY)
 				#screen.appendListBoxStringNoUpdate(panelName, u"<font=4>" + szCost.upper() + u"%c" % gc.getYieldInfo(iYield).getChar() + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 				## R&R, Robert Surcouf,  Pedia - End
 				
@@ -139,7 +139,7 @@ class CvPediaBuilding:
 					szText = localText.getText("TXT_KEY_BUILDING_PROFESSION_OUTPUT", (buildingInfo.getProfessionOutput(), gc.getYieldInfo(gc.getProfessionInfo(iProfession).getYieldsProduced(0)).getChar()))
 					## R&R, Robert Surcouf,  Pedia - Start
 					#screen.appendListBoxStringNoUpdate(panelName, u"<font=4>" + szText.upper() + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-					screen.appendListBoxStringNoUpdate(panelName, u"<font=3>" + szText + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+					screen.appendListBoxStringNoUpdate(panelName, u"<font=3>" + szText + u"</font>", WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROFESSION, iProfession, 1, CvUtil.FONT_LEFT_JUSTIFY)
 					## R&R, Robert Surcouf,  Pedia - End
 					
 #MultipleYieldsProduced End
@@ -147,27 +147,27 @@ class CvPediaBuilding:
 			if(buildingInfo.getYieldModifier(iYield) > 0):
 				## R&R, Robert Surcouf,  Pedia - Start
 				#screen.appendListBoxStringNoUpdate(panelName, u"<font=4>" + u"+%d%% %c" % (buildingInfo.getYieldModifier(iYield), gc.getYieldInfo(iYield).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-				screen.appendListBoxStringNoUpdate(panelName, u"<font=3>" + u"+%d%% %c" % (buildingInfo.getYieldModifier(iYield), gc.getYieldInfo(iYield).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+				screen.appendListBoxStringNoUpdate(panelName, u"<font=3>" + u"+%d%% %c" % (buildingInfo.getYieldModifier(iYield), gc.getYieldInfo(iYield).getChar()) + u"</font>", WidgetTypes.WIDGET_PEDIA_JUMP_TO_YIELDS, iYield, 1, CvUtil.FONT_LEFT_JUSTIFY)
 				## R&R, Robert Surcouf,  Pedia - End
 				
-		for k in range(YieldTypes.NUM_YIELD_TYPES):
-			if (buildingInfo.getYieldChange(k) != 0):
-				if (buildingInfo.getYieldChange(k) > 0):
+		for iYield in range(YieldTypes.NUM_YIELD_TYPES):
+			if (buildingInfo.getYieldChange(iYield) != 0):
+				if (buildingInfo.getYieldChange(iYield) > 0):
 					szSign = "+"
 				else:
 					szSign = ""
 
 				szYield = gc.getYieldInfo(k).getDescription() + ": "
 
-				szText1 = szYield.upper() + szSign + str(buildingInfo.getYieldChange(k))
-				szText2 = szText1 + (u"%c" % (gc.getYieldInfo(k).getChar()))
+				szText1 = szYield.upper() + szSign + str(buildingInfo.getYieldChange(iYield))
+				szText2 = szText1 + (u"%c" % (gc.getYieldInfo(iYield).getChar()))
 				## R&R, Robert Surcouf,  Pedia - Start
 				#screen.appendListBoxStringNoUpdate(panelName, u"<font=4>" + szText2 + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-				screen.appendListBoxStringNoUpdate(panelName, u"<font=3>" + szText2 + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+				screen.appendListBoxStringNoUpdate(panelName, u"<font=3>" + szText2 + u"</font>", WidgetTypes.WIDGET_PEDIA_JUMP_TO_YIELDS, iYield, 1, CvUtil.FONT_LEFT_JUSTIFY)
 				## R&R, Robert Surcouf,  Pedia - End
 				
 		# TAC/Ronnar: Add number of max workers per building
-		if (self.XResolution >= 1280):
+		if (1): # self.XResolution >= 1280):
 			iMaxWorkers = gc.getBuildingInfo(self.iBuilding).getMaxWorkers()
 			szSpecialText = localText.getText("TXT_KEY_BUILDING_MAX_WORKERS2", (iMaxWorkers, ))
 			if (iMaxWorkers > 0) :

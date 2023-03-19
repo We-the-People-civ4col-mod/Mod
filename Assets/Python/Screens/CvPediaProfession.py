@@ -199,12 +199,14 @@ class CvPediaProfession:
 #MultipleYieldsConsumed Start
 		for iYieldConsumed in range(gc.getProfessionInfo(self.iProfession).getNumYieldsConsumed()):
 			if (gc.getProfessionInfo(self.iProfession).getYieldsConsumed(iYieldConsumed) != -1):
-				screen.appendListBoxStringNoUpdate(panelName, u"<font=4>" + localText.getText("TXT_KEY_YIELD_CONSUMED", ()).upper() + (u"%c" % gc.getYieldInfo(YieldTypes (gc.getProfessionInfo(self.iProfession).getYieldsConsumed(iYieldConsumed))).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+				iYield = gc.getProfessionInfo(self.iProfession).getYieldsConsumed(iYieldConsumed)
+				screen.appendListBoxStringNoUpdate(panelName, u"<font=4>" + localText.getText("TXT_KEY_YIELD_CONSUMED", ()).upper() + (u"%c" % gc.getYieldInfo(iYield).getChar()) + u"</font>", WidgetTypes.WIDGET_PEDIA_JUMP_TO_YIELDS, iYield, 1, CvUtil.FONT_LEFT_JUSTIFY)
 #MultipleYieldsConsumed End
 #MultipleYieldsProduced Start
 		for iYieldProduced in range(gc.getProfessionInfo(self.iProfession).getNumYieldsProduced()):
 			if (gc.getProfessionInfo(self.iProfession).getYieldsProduced(iYieldProduced) != -1):
-				screen.appendListBoxStringNoUpdate(panelName, u"<font=4>" + localText.getText("TXT_KEY_YIELD_PRODUCED", ()).upper() + (u"%c" % gc.getYieldInfo(YieldTypes (gc.getProfessionInfo(self.iProfession).getYieldsProduced(iYieldProduced))).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+				iYield = gc.getProfessionInfo(self.iProfession).getYieldsProduced(iYieldProduced)
+				screen.appendListBoxStringNoUpdate(panelName, u"<font=4>" + localText.getText("TXT_KEY_YIELD_PRODUCED", ()).upper() + (u"%c" % gc.getYieldInfo(iYield).getChar()) + u"</font>", WidgetTypes.WIDGET_PEDIA_JUMP_TO_YIELDS, iYield, 1, CvUtil.FONT_LEFT_JUSTIFY)
 #MultipleYieldsProduced End
 		#Combat/Movement/Work changes
 		iCombatPowerChange = gc.getProfessionInfo(self.iProfession).getCombatChange()

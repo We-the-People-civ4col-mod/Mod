@@ -107,8 +107,8 @@ class CvPediaFeature:
 		
 		# first we list Yield Increases
 		screen.appendListBoxString(panelName, szYieldIncreaseText, WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-		for k in range(YieldTypes.NUM_YIELD_TYPES):
-			iYieldChange = gc.getFeatureInfo(self.iFeature).getYieldChange(k)
+		for iYield in range(YieldTypes.NUM_YIELD_TYPES):
+			iYieldChange = gc.getFeatureInfo(self.iFeature).getYieldChange(iYield)
 			if (iYieldChange > 0):
 				if (iYieldChange > 0):
 					sign = "+"
@@ -116,16 +116,16 @@ class CvPediaFeature:
 					sign = ""
 				## R&R, Robert Surcouf,  Pedia - Start
 				#szYield = (u"%s: %s%i " % (gc.getYieldInfo(k).getDescription().upper(), sign, iYieldChange))
-				szYield = (u"%s: %s%i " % (gc.getYieldInfo(k).getDescription(), sign, iYieldChange))
+				szYield = (u"%s: %s%i " % (gc.getYieldInfo(iYield).getDescription(), sign, iYieldChange))
 				
 				#screen.appendListBoxString(panelName, u"<font=4>" + szYield + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-				screen.appendListBoxString(panelName, u"<font=3>" + szYield + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+				screen.appendListBoxString(panelName, u"<font=3>" + szYield + (u"%c" % gc.getYieldInfo(iYield).getChar()) + u"</font>", WidgetTypes.WIDGET_PEDIA_JUMP_TO_YIELDS, iYield, 1, CvUtil.FONT_LEFT_JUSTIFY)
 				## R&R, Robert Surcouf,  Pedia - End
 				
 		# then we list Yield Decreases
 		screen.appendListBoxString(panelName, szYieldDecreaseText, WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-		for k in range(YieldTypes.NUM_YIELD_TYPES):
-			iYieldChange = gc.getFeatureInfo(self.iFeature).getYieldChange(k)
+		for iYield in range(YieldTypes.NUM_YIELD_TYPES):
+			iYieldChange = gc.getFeatureInfo(self.iFeature).getYieldChange(iYield)
 			if (iYieldChange < 0):
 				if (iYieldChange > 0):
 					sign = "+"
@@ -133,10 +133,10 @@ class CvPediaFeature:
 					sign = ""
 				## R&R, Robert Surcouf,  Pedia - Start
 				#szYield = (u"%s: %s%i " % (gc.getYieldInfo(k).getDescription().upper(), sign, iYieldChange))
-				szYield = (u"%s: %s%i " % (gc.getYieldInfo(k).getDescription(), sign, iYieldChange))
+				szYield = (u"%s: %s%i " % (gc.getYieldInfo(iYield).getDescription(), sign, iYieldChange))
 				
 				#screen.appendListBoxString(panelName, u"<font=4>" + szYield + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-				screen.appendListBoxString(panelName, u"<font=3>" + szYield + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+				screen.appendListBoxString(panelName, u"<font=3>" + szYield + (u"%c" % gc.getYieldInfo(iYield).getChar()) + u"</font>", WidgetTypes.WIDGET_PEDIA_JUMP_TO_YIELDS, iYield, 1, CvUtil.FONT_LEFT_JUSTIFY)
 				## R&R, Robert Surcouf,  Pedia - End
 				
 		## WTP, ray, we have pedia list the valid Terrains of Features automatically - no need for pointless Strategy texts anymore.
@@ -149,10 +149,10 @@ class CvPediaFeature:
 		# First the List of Terrains
 		szValidTerrainText = localText.getText("TXT_KEY_PEDIA_VALID_TERRAINS_2", ())
 		screen.appendListBoxString(panelName, szValidTerrainText, WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-		for x in range(TerrainTypes.NUM_TERRAIN_TYPES):
-			if (gc.getFeatureInfo(self.iFeature).isTerrain(x)):
-				TerrainDescription = gc.getTerrainInfo(x).getDescription()
-				screen.appendListBoxString(panelName, u"<font=3>" + szIcon + TerrainDescription + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+		for iTerrain in range(TerrainTypes.NUM_TERRAIN_TYPES):
+			if (gc.getFeatureInfo(self.iFeature).isTerrain(iTerrain)):
+				TerrainDescription = gc.getTerrainInfo(iTerrain).getDescription()
+				screen.appendListBoxString(panelName, u"<font=3>" + szIcon + TerrainDescription + u"</font>", WidgetTypes.WIDGET_PEDIA_JUMP_TO_TERRAIN, iTerrain, 1, CvUtil.FONT_LEFT_JUSTIFY)
 		
 
 	def placeSpecial(self):

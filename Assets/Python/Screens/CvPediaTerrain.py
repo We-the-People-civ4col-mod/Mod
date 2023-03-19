@@ -114,32 +114,32 @@ class CvPediaTerrain:
 		# ray, here we have the Water Yields
 		if (gc.getTerrainInfo(self.iTerrain).isWater()):
 			screen.appendListBoxString(panelName, szWaterText, WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-			for k in range(YieldTypes.NUM_YIELD_TYPES):
-				iYield = gc.getTerrainInfo(self.iTerrain).getYield(k)
+			for iYield in range(YieldTypes.NUM_YIELD_TYPES):
+				iYieldChange = gc.getTerrainInfo(self.iTerrain).getYield(iYield)
 				# ray, removing unnecessary display of negative Yields for Hill diversification
 				# if (iYield != 0):
-				if (iYield > 0):
+				if (iYieldChange > 0):
 					#szYield = (u"%s: %i" % (gc.getYieldInfo(k).getDescription().upper(), iYield))
-					szYield = (u"%s: %i" % (gc.getYieldInfo(k).getDescription(), iYield))
+					szYield = (u"%s: %i %c" % (gc.getYieldInfo(iYield).getDescription(), iYieldChange, gc.getYieldInfo(iYield).getChar()))
 					## R&R, Robert Surcouf,  Pedia - Start
 					#screen.appendListBoxString(panelName, u"<font=4>" + szYield + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-					screen.appendListBoxString(panelName, u"<font=3>" + szYield + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+					screen.appendListBoxString(panelName, u"<font=3>" + szYield + u"</font>", WidgetTypes.WIDGET_PEDIA_JUMP_TO_YIELDS, iYield, 1, CvUtil.FONT_LEFT_JUSTIFY)
 					## R&R, Robert Surcouf,  Pedia - End
 	#				screen.attachTextGFC(panelName, "", szYield + (u"%c" % gc.getYieldInfo(k).getChar()), FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 		# ray, here we have the Flatland Yields
 		if (not gc.getTerrainInfo(self.iTerrain).isWater()):
 			screen.appendListBoxString(panelName, szFlatlandText, WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-			for k in range(YieldTypes.NUM_YIELD_TYPES):
-				iYield = gc.getTerrainInfo(self.iTerrain).getYield(k)
+			for iYield in range(YieldTypes.NUM_YIELD_TYPES):
+				iYieldChange = gc.getTerrainInfo(self.iTerrain).getYield(iYield)
 				# ray, removing unnecessary display of negative Yields for Hill diversification
 				# if (iYield != 0):
-				if (iYield > 0):
+				if (iYieldChange > 0):
 					#szYield = (u"%s: %i" % (gc.getYieldInfo(k).getDescription().upper(), iYield))
-					szYield = (u"%s: %i" % (gc.getYieldInfo(k).getDescription(), iYield))
+					szYield = (u"%s: %i %c" % (gc.getYieldInfo(iYield).getDescription(), iYieldChange, gc.getYieldInfo(iYield).getChar()))
 					## R&R, Robert Surcouf,  Pedia - Start
 					#screen.appendListBoxString(panelName, u"<font=4>" + szYield + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-					screen.appendListBoxString(panelName, u"<font=3>" + szYield + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+					screen.appendListBoxString(panelName, u"<font=3>" + szYield + u"</font>", WidgetTypes.WIDGET_PEDIA_JUMP_TO_YIELDS, iYield, 1, CvUtil.FONT_LEFT_JUSTIFY)
 					## R&R, Robert Surcouf,  Pedia - End
 	#				screen.attachTextGFC(panelName, "", szYield + (u"%c" % gc.getYieldInfo(k).getChar()), FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
@@ -151,16 +151,16 @@ class CvPediaTerrain:
 		# ray, here we have the Hill Yields
 		if (not gc.getTerrainInfo(self.iTerrain).isWater()):
 			screen.appendListBoxString(panelName, szHillsText, WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-			for k in range(YieldTypes.NUM_YIELD_TYPES):
-				iYield = gc.getTerrainInfo(self.iTerrain).getYield(k) + gc.getYieldInfo(k).getHillsChange();
+			for iYield in range(YieldTypes.NUM_YIELD_TYPES):
+				iYieldChange = gc.getTerrainInfo(self.iTerrain).getYield(iYield) + gc.getYieldInfo(iYield).getHillsChange();
 				# ray, removing unnecessary display of negative Yields for Hill diversification
 				# if (iYield != 0):
-				if (iYield > 0):
+				if (iYieldChange > 0):
 					#szYield = (u"%s: %i" % (gc.getYieldInfo(k).getDescription().upper(), iYield))
-					szYield = (u"%s: %i" % (gc.getYieldInfo(k).getDescription(), iYield))
+					szYield = (u"%s: %i %c" % (gc.getYieldInfo(iYield).getDescription(), iYieldChange, gc.getYieldInfo(iYield).getChar()))
 					## R&R, Robert Surcouf,  Pedia - Start
 					#screen.appendListBoxString(panelName, u"<font=4>" + szYield + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-					screen.appendListBoxString(panelName, u"<font=3>" + szYield + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+					screen.appendListBoxString(panelName, u"<font=3>" + szYield + u"</font>", WidgetTypes.WIDGET_PEDIA_JUMP_TO_YIELDS, iYield, 1, CvUtil.FONT_LEFT_JUSTIFY)
 					## R&R, Robert Surcouf,  Pedia - End
 	#				screen.attachTextGFC(panelName, "", szYield + (u"%c" % gc.getYieldInfo(k).getChar()), FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
@@ -172,17 +172,17 @@ class CvPediaTerrain:
 		# ray, here we have the Peak Yields
 		if (not gc.getTerrainInfo(self.iTerrain).isWater()):
 			screen.appendListBoxString(panelName, szPeaksText, WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-			for k in range(YieldTypes.NUM_YIELD_TYPES):
+			for iYield in range(YieldTypes.NUM_YIELD_TYPES):
 				#iYield = gc.getTerrainInfo(self.iTerrain).getYield(k) + gc.getYieldInfo(k).getPeakChange();
-				iYield = gc.getYieldInfo(k).getPeakChange();
+				iYieldChange = gc.getYieldInfo(iYield).getPeakChange();
 				# ray, removing unnecessary display of negative Yields for Hill diversification
 				# if (iYield != 0):
-				if (iYield > 0):
+				if (iYieldChange > 0):
 					#szYield = (u"%s: %i" % (gc.getYieldInfo(k).getDescription().upper(), iYield))
-					szYield = (u"%s: %i" % (gc.getYieldInfo(k).getDescription(), iYield))
+					szYield = (u"%s: %i %c" % (gc.getYieldInfo(iYield).getDescription(), iYieldChange, gc.getYieldInfo(iYield).getChar()))
 					## R&R, Robert Surcouf,  Pedia - Start
 					#screen.appendListBoxString(panelName, u"<font=4>" + szYield + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-					screen.appendListBoxString(panelName, u"<font=3>" + szYield + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+					screen.appendListBoxString(panelName, u"<font=3>" + szYield + u"</font>", WidgetTypes.WIDGET_PEDIA_JUMP_TO_YIELDS, iYield, 1, CvUtil.FONT_LEFT_JUSTIFY)
 					## R&R, Robert Surcouf,  Pedia - End
 	#				screen.attachTextGFC(panelName, "", szYield + (u"%c" % gc.getYieldInfo(k).getChar()), FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 

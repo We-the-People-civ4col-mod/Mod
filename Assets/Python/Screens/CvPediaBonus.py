@@ -99,18 +99,18 @@ class CvPediaBonus:
 		screen.addListBoxGFC(panelName, "", self.X_STATS_PANE, self.Y_STATS_PANE, self.W_STATS_PANE, self.H_STATS_PANE, TableStyles.TABLE_STYLE_EMPTY)
 		screen.enableSelect(panelName, False)
 
-		for k in range(YieldTypes.NUM_YIELD_TYPES):
-			iYieldChange = gc.getBonusInfo(self.iBonus).getYieldChange(k)
+		for iYield in range(YieldTypes.NUM_YIELD_TYPES):
+			iYieldChange = gc.getBonusInfo(self.iBonus).getYieldChange(iYield)
 			if (iYieldChange != 0):
 				if (iYieldChange > 0):
 					sign = "+"
 				else:
 					sign = ""
 
-				szYield = (u"%s: %s%i " % (gc.getYieldInfo(k).getDescription(), sign, iYieldChange))
+				szYield = (u"%s: %s%i " % (gc.getYieldInfo(iYield).getDescription(), sign, iYieldChange))
 				## R&R, Robert Surcouf,  Pedia - Start
 				#screen.appendListBoxString(panelName, u"<font=4>" + szYield.upper() + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-				screen.appendListBoxString(panelName, u"<font=3>" + szYield + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+				screen.appendListBoxString(panelName, u"<font=3>" + szYield + (u"%c" % gc.getYieldInfo(iYield).getChar()) + u"</font>", WidgetTypes.WIDGET_PEDIA_JUMP_TO_YIELDS, iYield, 1, CvUtil.FONT_LEFT_JUSTIFY)
 				## R&R, Robert Surcouf,  Pedia - End
 
 		## WTP, ray, Health from specific Bonus Ressources if worked
@@ -133,8 +133,8 @@ class CvPediaBonus:
 
 		## WTP, here are the flags for Water, Hills, Flatlands and Peaks
 		## we need to do a more complicated check for water
-		for x in range(TerrainTypes.NUM_TERRAIN_TYPES):
-			if (gc.getBonusInfo(self.iBonus).isTerrain(x) and gc.getTerrainInfo(x).isWater()):
+		for iTerrain in range(TerrainTypes.NUM_TERRAIN_TYPES):
+			if (gc.getBonusInfo(self.iBonus).isTerrain(iTerrain) and gc.getTerrainInfo(iTerrain).isWater()):
 				bValidWater = true
 
 		if (bValidWater):
@@ -160,20 +160,18 @@ class CvPediaBonus:
 		# First the List of Terrains
 		szValidTerrainText = localText.getText("TXT_KEY_PEDIA_VALID_TERRAINS", ())
 		screen.appendListBoxString(panelName, szValidTerrainText, WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-		for x in range(TerrainTypes.NUM_TERRAIN_TYPES):
-			if (gc.getBonusInfo(self.iBonus).isTerrain(x)):
-				TerrainDescription = gc.getTerrainInfo(x).getDescription()
-				screen.appendListBoxString(panelName, u"<font=3>" + szIcon + TerrainDescription + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+		for iTerrain in range(TerrainTypes.NUM_TERRAIN_TYPES):
+			if (gc.getBonusInfo(self.iBonus).isTerrain(iTerrain)):
+				TerrainDescription = gc.getTerrainInfo(iTerrain).getDescription()
+				screen.appendListBoxString(panelName, u"<font=3>" + szIcon + TerrainDescription + u"</font>", WidgetTypes.WIDGET_PEDIA_JUMP_TO_TERRAIN, iTerrain, 1, CvUtil.FONT_LEFT_JUSTIFY)
 		
 		# Then the List of Features
 		szValidFeatureText = localText.getText("TXT_KEY_PEDIA_VALID_FEATURES", ())
 		screen.appendListBoxString(panelName, szValidFeatureText, WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-		# stupid NUM_FEATURE_TYPES is not known in DLL ... so let us hardcode it for now to 50
-		# for x in range(FeatureTypes.NUM_FEATURE_TYPES):
-		for y in range(50):
-			if (gc.getBonusInfo(self.iBonus).isFeature(y)):
-				FeatureDescription = gc.getFeatureInfo(y).getDescription()
-				screen.appendListBoxString(panelName, u"<font=3>"  + szIcon +  FeatureDescription + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+		for iFeature in range(FeatureTypes.NUM_FEATURE_TYPES):
+			if (gc.getBonusInfo(self.iBonus).isFeature(iFeature)):
+				FeatureDescription = gc.getFeatureInfo(iFeature).getDescription()
+				screen.appendListBoxString(panelName, u"<font=3>"  + szIcon +  FeatureDescription + u"</font>", WidgetTypes.WIDGET_PEDIA_JUMP_TO_FEATURE, iFeature, 1, CvUtil.FONT_LEFT_JUSTIFY)
 		
 		
 	def placeHistory(self):

@@ -523,6 +523,7 @@ void CyEnumsPythonInterface()
 		;
 	python::enum_<FeatureTypes>("FeatureTypes")
 		.value("NO_FEATURE", NO_FEATURE)
+		.value("NUM_FEATURE_TYPES", NUM_FEATURE_TYPES)
 		;
 	python::enum_<BonusTypes>("BonusTypes")
 		.value("NO_BONUS", NO_BONUS)
