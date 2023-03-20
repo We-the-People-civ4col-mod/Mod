@@ -18965,7 +18965,7 @@ bool CvPlayer::Update_cache_YieldEquipmentAmount(ProfessionTypes eProfession)
 		m_cache_YieldEquipmentAmount[eProfession].set(iNewCost, eYield);
 	}
 	m_cache_YieldEquipmentAmount[eProfession].isEmpty(); // This will release the array if it's empty
-	
+
 	return bAltered;
 }
 
@@ -22602,35 +22602,23 @@ void CvPlayer::checkForRoyalIntervention()
 	// directly handle it in logic
 	else
 	{
-		// if AI has the money
-		if (getGold() > iGoldModifiedByAttitude)
+		if (buyUnitFromParentPlayer(getParent(), "UNITCLASS_ROYAL_INTERVENTIONS_SHIP", 1, "", 0, LOCATION_FLAGS_DEEP_COASTAL, false, false))
 		{
-			OOS_LOG("CvPlayer::checkForRoyalIntervention AI", iGoldModifiedByAttitude);
-			changeGold(-iGoldModifiedByAttitude);
-		}
+			// it is possible to buy the ship from the parent player
+			buyUnitFromParentPlayer(getParent(), "UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_1", 1, "", 0, LOCATION_FLAGS_DEEP_COASTAL, false, false);
+			buyUnitFromParentPlayer(getParent(), "UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_2", 1, "", 0, LOCATION_FLAGS_DEEP_COASTAL, false, false);
 
-		// otherwise AI needs to accept the tax
-		else
-		{
-			changeTaxRate(iAlternativeTaxIncrease);
-		}
-
-		// we try to get the UnitTypes from the Parent to be save
-		UnitTypes RoyalInterventionShip = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(getParent()).getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_ROYAL_INTERVENTIONS_SHIP"));
-		UnitTypes RoyalInterventionLandUnit1 =(UnitTypes)GC.getCivilizationInfo(GET_PLAYER(getParent()).getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_1"));
-		UnitTypes RoyalInterventionLandUnit2 =(UnitTypes)GC.getCivilizationInfo(GET_PLAYER(getParent()).getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_2"));
-
-		//get City
-		int iLoop;
-		CvCity* locationToAppear = firstCity(&iLoop);
-
-		//just for safety
-		if (locationToAppear != NULL)
-		{
-			//creating the units
-			CvUnit* RoyalInterventionShipUnit = initUnit(RoyalInterventionShip, GC.getUnitInfo(RoyalInterventionShip).getDefaultProfession(), locationToAppear->coord(), NO_UNITAI);
-			CvUnit* RoyalInterventionLandUnitA = initUnit(RoyalInterventionLandUnit1, GC.getUnitInfo(RoyalInterventionLandUnit1).getDefaultProfession(), locationToAppear->coord(), NO_UNITAI);
-			CvUnit* RoyalInterventionLandUnitB = initUnit(RoyalInterventionLandUnit2, GC.getUnitInfo(RoyalInterventionLandUnit2).getDefaultProfession(), locationToAppear->coord(), NO_UNITAI);
+			// if AI has the money
+			if (getGold() > iGoldModifiedByAttitude)
+			{
+				OOS_LOG("CvPlayer::checkForRoyalIntervention AI", iGoldModifiedByAttitude);
+				changeGold(-iGoldModifiedByAttitude);
+			}
+			// otherwise AI needs to accept the tax
+			else
+			{
+				changeTaxRate(iAlternativeTaxIncrease);
+			}
 		}
 	}
 	return;
