@@ -10463,7 +10463,6 @@ int CvCity::getDomesticDemandEventDemandModifier() const
 // WTP, ray, new Harbour System - START
 int CvCity::getCityHarbourSpace() const
 {
-	int iValueToReturn = m_iCityHarbourSpace;
 	if (!plot()->isCoastalLand())
 	{
 		return 0;
