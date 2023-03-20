@@ -11503,7 +11503,9 @@ int CvUnit::getExtraBombardRate() const
 void CvUnit::changeExtraBombardRate(int iChange)
 {
 	m_iExtraBombardRate = (m_iExtraBombardRate + iChange);
-	FAssert(getExtraBombardRate() >= 0);
+
+	// WTP, jooe: disable this assert, because it triggers due to the new "broken cannons" promotion
+	// FAssert(getExtraBombardRate() >= 0);
 }
 
 
