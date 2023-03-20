@@ -334,30 +334,35 @@
         <English>Welcome, many-clothes wearing stranger. I, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], represent the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] tribes. Let us have dinner together with all of our families, our friends, their families, their friends, and everyone else I might have overlooked!</English>
         <French>Bonjour, visiteur aux vêtements étranges. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], représentant du peuple [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT]. Allons donc dîner ensemble avec nos familles, nos amis, leurs familles, leurs amis et d'autres encore qui, par malchance, n'auraient pas été mentionnés !</French>
         <German>Willkommen, viel Kleidung tragender Fremder. Ich, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], vertrete die [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Stämme. Lasst uns gemeinsam mit all unseren Familien, unseren Freunden, deren Familien, deren Freunden und allen Menschen, die irgendwie noch gefehlt haben, zu Abend essen!</German>
+        <Russian>Добро пожаловать, незнакомец, одетый во многие одежды. Я, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], представляю племена [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Давайте поужинаем вместе со всеми нашими семьями, нашими друзьями, их семьями, их друзьями и всеми остальными, кого я мог упустить из виду!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_SEPE_TIARAJU_1</Tag>
         <English>Seek out the sacred spirits if you desire a conversation. Right now that is impossible.</English>
         <French>Vous devrez calmer les esprits sacrés si vous désirez avoir une conversation. Pour le moment, c'est impossible.</French>
         <German>Sucht die heiligen Geister auf, wenn Ihr ein Gespräch wünscht. Im Moment ist das unmöglich.</German>
+        <Russian>Ищите священных духов, если вы желаете поговорить. В данный момент это невозможно.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_SEPE_TIARAJU_1</Tag>
         <English>When the last of your people falls, and his blood is washed out to the sea by the great rivers, then there will be peace.</English>
         <French>Lorsque le dernier des vôtres sera tombé, et son sang versé à la mer par les grands fleuves, alors il y aura la paix.</French>
         <German>Wenn der letzte Eures Volkes gefallen ist und sein Blut durch die großen Ströme ins Meer geflossen ist, dann wird Frieden sein.</German>
+        <Russian>Когда падет последний из ваших людей и его кровь будет смыта великими реками в море, только тогда наступит мир.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_SEPE_TIARAJU_1</Tag>
         <English>Welcome to the lands of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT], friend. Let the gods of the river grant us wisdom in our conversation.</English>
         <French>Bienvenue en pays [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] cher ami ! Que les dieux habitant nos grands fleuves trouvent de la sagesse dans notre conversation.</French>
         <German>Willkommen in den Ländern der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT], Freund. Mögen die Götter, die in unseren großen Flüssen leben, uns Weisheit in unserem Gespräch schenken.</German>
+        <Russian>Добро пожаловать в земли [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT], друг. Пусть боги реки даруют нам мудрость в наших беседах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_SEPE_TIARAJU_1</Tag>
         <English>There you are again. Just when I was having a nice evening. Please tell us how we can make you go away again.</English>
         <French>Encore vous... c'est dommage, je passais une soirée agréable. Dîtes-nous donc ce qu'il vous faut pour que vous disparaissiez à nouveau.</French>
         <German>Ihr schon wieder... schade, ich hatte einen angenehmen Abend. Warum sagt Ihr uns nicht, wie wir Euch wieder zum Verschwinden bringen können.</German>
+        <Russian>Вот и ты снова. Как раз когда у меня был хороший вечер. Пожалуйста, расскажи нам, что мы можем сделать для того, чтобы ты снова ушел.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_SEPE_TIARAJU_1</Tag>
@@ -366,48 +371,56 @@
         <German>Mein Stamm ist in Not. Teilt Eure Vorräte mit uns, weißer Mann, und unsere Enkel werden ihren Enkeln von Euren milden Taten Geschichten erzählen.</German>
         <Italian>La mia tribù è nel bisogno. Condividi le tue provviste con noi, uomo bianco, e i nostri nipoti racconteranno ai loro nipoti le storie dei tuoi atti di gentilezza.</Italian>
         <Spanish>Mi tribu está necesitada. Comparte tus suministros con nosotros, hombre blanco, y nuestros nietos contarán a sus nietos historias de tus actos de bondad.</Spanish>
+        <Russian>Моё племя в нужде. Поделитесь с нами своими запасами, и наши внуки расскажут своим внукам истории о вашей доброте.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_SEPE_TIARAJU_1</Tag>
         <English>I come in peace to ask for assistance. What do you say?</English>
         <French>Je suis venu en paix vous demander de l'aide. Qu'avez-vous à répondre ?</French>
         <German>Ich komme in Frieden und bitte um Unterstützung. Wie lautet Eure Antwort?</German>
+        <Russian>Я пришел с миром просить о помощи. Что скажете, вы поможете нам?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_SEPE_TIARAJU_1</Tag>
         <English>I hold the fate of the [CT_EMPIRE] in my hand. Give me what I demand.</English>
         <French>Je tiens le destin de l'[CT_EMPIRE] dans ma main. Donnez-moi ce que j'exige.</French>
         <German>Ich halte das Schicksal von [CT_EMPIRE] in meinen Händen. Gebt mir, was ich verlange.</German>
+        <Russian>Я держу судьбу [CT_EMPIRE] в своих руках. Дайте мне то, что я требую.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_MUNK_1</Tag>
         <English>It is an honour to meet the great [CT_NAME], governor of [CT_EMPIRE]. I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], and I present you the friendship of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] people. I hope we can establish a lasting friendship on this day.</English>
         <French>C'est un honneur de rencontrer le grand [CT_NAME], gouverneur de l'[CT_EMPIRE]. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], et je vous présente l'amitié du peuple [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Que pouvons-nous faire pour vous, aujourd'hui ?</French>
         <German>Es ist mir eine Ehre, den großen [CT_NAME], Gouverneur von [CT_EMPIRE], zu treffen. Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], und ich biete Euch die Freundschaft des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]-Volkes. Was können wir heute für Euch tun?</German>
+        <Russian>Для меня большая честь познакомиться с великим [CT_NAME], губернатором [CT_EMPIRE]. Я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] и я дарую вам дружбу людей [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Я надеюсь, что в этот день мы сможем завязать прочную дружбу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_MUNK_1</Tag>
         <English>Your traitorous nation is not welcome any longer in this world. There will be no negotiations. Outside!</English>
         <French>Votre nation de traîtres ne devrait pas avoir sa place dans ce monde. Il n'y aura aucune négociation. Dehors !</French>
         <German>Eure Nation von Verrätern sollte keinen Platz in dieser Welt haben. Es wird keine Verhandlungen geben. Hinfort!</German>
+        <Russian>Твой предательский народ больше не приветствуется в этом мире. Переговоров не будет. Вон отсюда!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_MUNK_1</Tag>
         <English>Peace would be grossly disadvantageous for the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] at this moment. Your place is at the bottom of the sea.</English>
         <French>Une paix négociée à cet instant serait au désavantage des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Votre place est au fond des mers glaciales.</French>
         <German>Frieden zu diesem Zeitpunkt wäre zum Nachteil von [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Euer Platz ist auf dem Grund des eisigen Meeres.</German>
+        <Russian>В настоящий момент для [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] мир будет крайне невыгоден. Твое место на дне моря.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_MUNK_1</Tag>
         <English>Welcome, friend! I invite you to our table to eat a good grønlangkål. I can't wait for us to tell each other about our latest expeditions.</English>
         <French>Bienvenue cher ami ! Je vous invite à notre table pour manger un bon grønlangkål. J'ai hâte que nous nous racontions nos dernières expéditions.</French>
         <German>Willkommen lieber Freund! Ich lade Euch an unseren Tisch ein, um einen guten Grünkohl zu essen. Ich kann es kaum erwarten, dass wir uns gegenseitig von unseren neuesten Expeditionen erzählen.</German>
+        <Russian>Добро пожаловать друг! Я приглашаю вас к нашему столу, чтобы отведать вкуснешей листовой капусты. Я не могу дождаться, когда мы расскажем друг другу о наших последних экспедициях.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_MUNK_1</Tag>
         <English>Your past transgressions have greatly saddened me. I can barely keep my fleet from sinking yours. Do you have anything to say in your defense?</English>
         <French>Vos transgressions passées m'ont beaucoup affectés. J'ai du mal à contenir mes marins qui trépignent à l'idée de saborder votre flotte. Qu'avez-vous donc à dire pour votre défense ?</French>
         <German>Eure vergangenen Verfehlungen haben mich sehr getroffen. Ich kann meine Kapitäne kaum bändigen, die nur zu gern Eure Flotte versenken würden. Was habt Ihr zu Eurer eigenen Verteidigung zu sagen?</German>
+        <Russian>Твои прошлые прегрешения сильно огорчили меня. Я едва сдерживаюсь от того, чтобы приказать своим адмиралам отправить твой флот на морское дно. У тебя есть, что сказать в свое оправдание?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_MUNK_1</Tag>
@@ -416,6 +429,7 @@
         <German>Könnt Ihr meinem Volk bitte helfen? Ich würde Euch auch helfen, wenn die Situation umgekehrt wäre.</German>
         <Italian>Puoi aiutare il mio popolo? Noi ti aiuteremmo, se le nostre posizioni fossero invertite.</Italian>
         <Spanish>¿Podéis ayudar a mi pueblo, por favor? Os ayudaremos si alguna vez cambian las tornas.</Spanish>
+        <Russian>Не могли бы вы помочь моему народу? Мы бы помогли вам, если бы вы оказались в такой же ситуации.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_MUNK_1</Tag>
@@ -424,6 +438,7 @@
         <German>Wir sind in Not, haben aber nicht genug, um zu handeln. Seid bitte großzügig und gebt uns, was wir brauchen.</German>
         <Italian>Abbiamo bisogno di aiuto, ma non abbiamo niente da scambiare. Spero che trovi nel tuo cuore la volontà di donarci quello che ci serve.</Italian>
         <Spanish>Estamos necesitados, pero no tenemos excedentes que poder intercambiar. Por favor, buscad en vuestro corazón la voluntad para ayudarnos.</Spanish>
+        <Russian>Мы нуждаемся, но у нас нет излишков, чтобы торговать. Пожалуйста, будь великодушен и дай нам то, что нам нужно.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_MUNK_1</Tag>
@@ -432,36 +447,42 @@
         <German>Ich verabscheue es, auf den Friedfertigen herumzuhacken, aber ich werde es trotzdem tun. Gebt uns, was wir wollen, oder tragt die Konsequenzen.</German>
         <Italian>Odio approfittare degli umili, ma lo farò ugualmente. Dacci ciò che vogliamo o preparati ad affrontare le conseguenze.</Italian>
         <Spanish>Odio meterme con los pacíficos, pero lo haré de todas formas. Dadnos lo que queremos o sufrid las consecuencias.</Spanish>
+        <Russian>Слабость вашей цивилизации смешит нас. Дайте нам то, что мы хотим или пострадаете от последствий.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_EGEDE_1</Tag>
         <English>The [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] people welcomes [CT_NAME] to the lands God gave us as an inheritance for our grandchildren. Join us in our newly built stave church to give thanks to the Lord for bringing us together in these lands.</English>
         <French>Le peuple [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT] accueille [CT_NAME] sur les terres que Dieu nous a données en héritage pour nos petits-enfants. Rejoignez-nous dans notre église en douelle nouvellement construite pour remercier le Seigneur de nous avoir réunis dans ces terres.</French>
         <German>Das [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Volk heißt [CT_NAME] in dem Land willkommen, die Gott uns als Erbe für unsere Enkelkinder gegeben hat. Kommt mit uns in unsere neu erbaute Stabkirche, um dem Herrn dafür zu danken, dass er uns in diesem Land zusammengeführt hat.</German>
+        <Russian>Люди [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] приветствуют [CT_NAME] на землях, которые Бог дал нам в наследство для наших внуков. Присоединяйтесь к нам в нашей недавно построенной деревянной церкви, чтобы поблагодарить Господа за то, что он собрал нас вместе на этих землях.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_EGEDE_1</Tag>
         <English>The apostle Paul urged us in 2nd Corinthians 6:17 to be separate from infidels, idolaters and unclean things. Leave my presence now.</English>
         <French>Dans le second Corinthien 6:17, l'apôtre Paul nous invite à prendre garde des infidèles, idolâtres et autres brigands. Retournez donc d'où vous venez.</French>
         <German>Der Apostel Paulus mahnt uns im Zweiten Korinther Brief 6,17, getrennt zu sein von Ungläubigen, Götzendienern und Unreinem. Verlasst jetzt meine Gegenwart.</German>
+        <Russian>Апостол Павел в 2 Коринфянам 6:17 призывал нас отсраняться от неверных, идолопоклонников и нечисти. Поэтому оставь меня сейчас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_EGEDE_1</Tag>
         <English>As 2nd Chronicles 19:2 says: "Should you help the wicked and love those who hate the Lord?" There can be no peace with the sinful [CT_EMPIRE].</English>
         <French>Comme il est dit dans la 2nde Chronique 19:2 : "Pourquoi aider celui qui est habité par le vice alors qu'il déteste notre Seigneur ?" Il ne peut y avoir de paix avec ceux qui vivent par le pêché.</French>
         <German>Wie heißt es in der Zweiten Chronik 19,2: "Warum dem helfen, der vom Laster bewohnt ist, wenn er unseren Herrn hasst?" Es kann keinen Frieden mit denen geben, die von der Sünde leben.</German>
+        <Russian>Как сказано в 2 Паралипоменон 19:2: «Должен ли ты помогать нечестивому и любить ненавидящих Господа?» С грешниками из [CT_EMPIRE] мира быть не может.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_EGEDE_1</Tag>
         <English>Welcome, brother, to the god-fearing [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Let us celebrate our friendship in modesty, and give thanks to the Lord in Heaven.</English>
         <French>Bienvenue mon fils. Sois la bienvenue dans les [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Célébrons ensemble notre amitié sans fastes inutiles. Que le Seigneur nous bénisse.</French>
         <German>Willkommen, Bruder, bei dem gottesfürchtigen [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Lasst uns unsere Freundschaft in Bescheidenheit feiern und dem Herrn im Himmel danken.</German>
+        <Russian>Добро пожаловать, брат, в благочестивую [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Давайте праздновать нашу дружбу в скромности и возблагодарим Господа на Небесах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_EGEDE_1</Tag>
         <English>Your evil nation is destined for a bloody, fiery end but, let me tell you, there will be a hotter fire waiting for you. I hope you have come to confess your sins and surrender your belongings to the people of God.</English>
         <French>Votre nation est habitée par le mal. Vous qui aimez tant le sang et la fureur, sachez qu'encore plus de flammes vous attendent après votre mort. J'espère que vous êtes au moins venu pour vous repantir de vos pêchés.</French>
         <German>Eure böse Nation ist für ein blutiges, feuriges Ende bestimmt, aber lasst mich Euch sagen, dass nach dem Ende noch mehr Feuer auf Euch warten wird. Ich hoffe, Ihr sind gekommen, um Eure Sünden zu bekennen und Euer Hab und Gut dem Volk Gottes zu übergeben.</German>
+        <Russian>Вашему злому народу уготован кровавый, огненный конец, но истинно говорю вам, лично вас будет ждать более жаркий огонь. Я надеюсь, вы пришли исповедовать свои грехи и отдать свое имущество народу Божьему.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_EGEDE_1</Tag>
@@ -470,6 +491,7 @@
         <German>Könnt Ihr meinem Volk bitte helfen? Ich würde Euch auch helfen, wenn die Situation umgekehrt wäre.</German>
         <Italian>Puoi aiutare il mio popolo? Noi ti aiuteremmo, se le nostre posizioni fossero invertite.</Italian>
         <Spanish>¿Podéis ayudar a mi pueblo, por favor? Os ayudaremos si alguna vez cambian las tornas.</Spanish>
+        <Russian>Не могли бы вы помочь моему народу? Если бы мы были на вашем месте, мы бы поступили, как истинные христиане.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_EGEDE_1</Tag>
@@ -478,6 +500,7 @@
         <German>Wir sind in Not, aber wir haben nichts, womit wir handeln könnten. Seid bitte großzügig und gebt uns, was wir brauchen.</German>
         <Italian>Abbiamo bisogno di aiuto, ma non abbiamo niente da scambiare. Spero che trovi nel tuo cuore la volontà di donarci quello che ci serve.</Italian>
         <Spanish>Estamos necesitados, pero no tenemos excedentes que poder intercambiar. Por favor, buscad en vuestro corazón la voluntad para ayudarnos.</Spanish>
+        <Russian>Мы нуждаемся, но у нас нет излишков для торговли. Пожалуйста, найдите в своем сердце желание пожертвовать то, что нам нужно.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_EGEDE_1</Tag>
@@ -486,36 +509,42 @@
         <German>Ich verabscheue es, auf den Friedfertigen herumzuhacken, aber ich werde es trotzdem tun. Gebt uns, was wir wollen, oder tragt die Konsequenzen.</German>
         <Italian>Odio approfittare degli umili, ma lo farò ugualmente. Dacci ciò che vogliamo o preparati ad affrontare le conseguenze.</Italian>
         <Spanish>Odio meterme con los pacíficos, pero lo haré de todas formas. Dadnos lo que queremos o sufrid las consecuencias.</Spanish>
+        <Russian>Как истинному христианину, мне претит угнетение слабых, но я вынужден поступать так. Дайте нам то, что мы хотим или, клянусь Господом, вы пострадаете от последствий своих глупых решений.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_PRINTZ_1</Tag>
         <English>Welcome, [CT_NAME], to the [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. My name is [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. It is good to see a familiar face in these strange lands. I hope a bond of mutual trust can grow between us and our subjects.</English>
         <French>Bienvenue, [CT_NAME] dans nos [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Mon nom est [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Cela fait plaisir de voir un européen dans ses terres si étranges. J'espère que nous bâtirons une relation de confiance entre nos sujets.</French>
         <German>Willkommen, [CT_NAME], in [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Mein Name ist [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Es ist gut, ein vertrautes Gesicht in diesen fremden Ländern zu sehen. Ich hoffe, dass ein Band des gegenseitigen Vertrauens zwischen uns und unseren Untertanen wachsen kann.</German>
+        <Russian>Добро пожаловать, [CT_NAME], в [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Меня зовут [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Приятно видеть знакомое лицо в этих странных землях. Я надеюсь, что между нами и нашими подданными возникнут узы взаимного доверия.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_PRINTZ_1</Tag>
         <English>You have managed to make the friendliest and most honourable people on this planet too angry to even talk with you. Congratulations.</English>
         <French>Vous avez réussi à mettre le peuple le plus amicale de la terre trop en colère pour vous recevoir. Félicitations !</French>
         <German>Ihr habt es geschafft, die freundlichsten und ehrenwertesten Menschen auf der Welt so wütend zu machen, daß sie überhaupt nicht mehr mit Euch sprechen wollen. Glückwunsch!</German>
+        <Russian>Вам удалось так разозлить самых дружелюбных и самых благородных людей на этой планете, что они не желают даже разговаривать с вами. Поздравляем.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_PRINTZ_1</Tag>
         <English>We will have peace with you again after you have paid for your treachery towards the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] people!</English>
         <French>Nous aurons à nouveau la paix avec vous après que vous aurez payé pour votre trahison envers le peuple [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] !</French>
         <German>Wir werden wieder Frieden mit euch haben, nachdem ihr für euren Verrat am [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Volk bezahlt habt!</German>
+        <Russian>У нас снова будет с вами мир только после того, как вы заплатите за свое предательство по отношению к людям [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_PRINTZ_1</Tag>
         <English>I am glad to see that my brother [CT_NAME] has sought out his [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] friends. Let us celebrate the peace that exists between our growing nations.</English>
         <French>Je suis enchanté que mon frère [CT_NAME] soit venu voir ses amis [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Allons donc célébrer la paix entre nos nations naissantes.</French>
         <German>Ich freue mich, dass mein Bruder [CT_NAME] zu seinen [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Freunden gekommen ist. Lasst uns den Frieden zwischen unseren jungen Nationen feiern.</German>
+        <Russian>Я рад видеть, что мой брат [CT_NAME] разыскал своих друзей [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Давайте праздновать мир, который существует между нашими растущими народами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_PRINTZ_1</Tag>
         <English>This must be a mistake. You certainly haven't been invited to the [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. In fact, you haven't been invited to this New World at all. Why are you here?</English>
         <French>Il doit y avoir une erreur, nous ne vous avons pas invité dans nos [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. A vrai dire, vous n'avez jamais été invité à venir dans le Nouveau Monde tout court. Que faites-vous ici ?</French>
         <German>Das muss ein Irrtum sein. Ihr wurdet sicherlich nicht von [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] eingeladen. Tatsächlich wurdet Ihr überhaupt nicht in diese Neue Welt eingeladen. Warum seid Ihr dann hier?</German>
+        <Russian>Должно быть, это ошибка. Вас точно не приглашали в [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. На самом деле, вас вообще не приглашали в этот Новый Свет. Зачем вы здесь?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_PRINTZ_1</Tag>
@@ -524,6 +553,7 @@
         <German>Könnt Ihr meinem Volk bitte helfen? Umgekehrt würde ich Euch auch helfen, wenn Ihr in so einer Situation wäret.</German>
         <Italian>Puoi aiutare il mio popolo? Noi ti aiuteremmo, se le nostre posizioni fossero invertite.</Italian>
         <Spanish>¿Podéis ayudar a mi pueblo, por favor? Os ayudaremos si alguna vez cambian las tornas.</Spanish>
+        <Russian>Не могли бы вы помочь моему народу? В аналогичной ситуации мы, несомненно, помогли бы вам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_PRINTZ_1</Tag>
@@ -532,6 +562,7 @@
         <German>Wir sind in Not, haben aber nicht genug, um zu handeln. Fasst Euch doch bitte ein Herz und spendet, was wir benötigen.</German>
         <Italian>Abbiamo bisogno di aiuto, ma non abbiamo niente da scambiare. Spero che trovi nel tuo cuore la volontà di donarci quello che ci serve.</Italian>
         <Spanish>Estamos necesitados, pero no tenemos excedentes que poder intercambiar. Por favor, buscad en vuestro corazón la voluntad para ayudarnos.</Spanish>
+        <Russian>Мы нуждаемся, но у нас нет излишков для торговли. Пожалуйста, найдите в своем сердце желание пожертвовать то, что нам нужно.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_PRINTZ_1</Tag>
@@ -540,36 +571,42 @@
         <German>Die Schwäche Eurer Nation bringt uns zum Lachen. Gebt uns, was wir wollen, oder tragt die Konsequenzen.</German>
         <Italian>Odio approfittare degli umili, ma lo farò ugualmente. Dacci ciò che vogliamo o preparati ad affrontare le conseguenze.</Italian>
         <Spanish>Odio meterme con los pacíficos, pero lo haré de todas formas. Dadnos lo que queremos o sufrid las consecuencias.</Spanish>
+        <Russian>Слабость вашей нации вызывает у нас смех. Дайте нам то, что мы хотим, или пострадаете от последствий.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_RISING_1</Tag>
         <English>I present you my greetings, [CT_NAME]. I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], governor of the [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Yes, I know you're excited, now that you finally have met me. I advise you to make peace with us, as there is much that we can teach you.</English>
         <French>Cher [CT_NAME], je vous salue ! Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], gouverneur des [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Oui, je me rends compte de la joie qui vous habite à l'idée d'enfin me rencontrer. Je vous invite à faire la paix avec vous, pour le grand bien de votre propre peuple.</French>
         <German>Lieber [CT_NAME], ich grüße Euch! Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Gouverneur von [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Ja, ich kann sehen, wie glücklich Ihr sind, mich endlich zu treffen. Ich lade Euch ein, Frieden mit uns zu schließen, denn es gibt viel, was wir Euch lehren können.</German>
+        <Russian>Я приветствую тебя, [CT_NAME]. Я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], губернатор [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Да, я знаю, что ты взволнован нашей неожиданной встречей. Советую тебе жить с нами в мире, так как мы многому можем тебя научить.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_RISING_1</Tag>
         <English>Has someone come to talk to me? I'm not seeing anyone.</English>
         <French>On m'a dit que quelqu'un voulait me parler ? Je ne vois personne.</French>
         <German>Mir wurde gesagt, dass jemand mit mir sprechen möchte? Ich treffe mich mit niemandem.</German>
+        <Russian>Мне показалось, что кто-то пришел, чтобы поговорить со мной. Но я никого не вижу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_RISING_1</Tag>
         <English>Our artillery needed testing, and we're very glad that you volunteered to be target practice. We'll let you know it once we get bored. This is not yet the case.</English>
         <French>Je suis heureux que vous vous soyez porter comme cible volontaire pour l'entraînement de notre entrainement. On vous tiendra au courant lorsqu'on sera lassés. Ce n'est pas encore le cas.</French>
         <German>Unsere Artillerie brauchte dringend Training. Ich bin froh, dass Ihr Euch freiwillig als Zielscheibe zur Verfügung gestellt habt. Wir sagen Euch Bescheid, wenn uns langweilig wird. Das ist noch nicht der Fall.</German>
+        <Russian>Наша новая артиллерия нуждается в испытании и мы очень рады, что вы вызвались побыть мишенью. Мы сообщим вам, когда это занятие нам наскучит. Но пока нам это нравится.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_RISING_1</Tag>
         <English>Nothing beats having a loyal friend coming over for an unexpected visit. What problems do we need to solve for you?</English>
         <French>Il n'y a rien de mieux que de voir un ami loyal passer pour une visite impromptue. Quelle problème pouvons-nous vous aider à résoudre ?</French>
         <German>Es gibt nichts Schöneres, als wenn ein treuer Freund für einen spontanen Besuch vorbeikommt. Welches Problem können wir für Euch lösen?</German>
+        <Russian>Ничто не сравнится с неожиданным визитом верного друга. Вы желаете, чтобы мы помогли вам решить какие-то проблемы?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_RISING_1</Tag>
         <English>Why have the people of the [CT_EMPIRE] sent their village idiot to negotiate with me? What, you're actually their leader? I didn't realize that. Well, get on with it then.</English>
         <French>Quel est cette idiot envoyé par l'[CT_EMPIRE] pour négocier avec moi ? Ah, vous êtes leur dirigeant ? Je ne m'en étais pas rendu compte. Parlez-donc dans ce cas.</French>
         <German>Warum haben die Leute von [CT_EMPIRE] ihren Dorftrottel geschickt, um mit mir zu verhandeln? Ach, Ihr seid sogar deren Anführer? Das war mir nicht klar. Nun, dann macht weiter.</German>
+        <Russian>Почему жители [CT_EMPIRE] прислали своего деревенского дурачка для переговоров со мной? Что, ты действительно их лидер? Я не понял этого. Ну что же, тогда говори.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_RISING_1</Tag>
@@ -578,6 +615,7 @@
         <German>Könnt Ihr meinem Volk bitte helfen? Ich würde Euch auch helfen, wenn die Situation umgekehrt wäre.</German>
         <Italian>Puoi aiutare il mio popolo? Noi ti aiuteremmo, se le nostre posizioni fossero invertite.</Italian>
         <Spanish>¿Podéis ayudar a mi pueblo, por favor? Os ayudaremos si alguna vez cambian las tornas.</Spanish>
+        <Russian>Не могли бы вы помочь моему народу? Если бы мы были на вашем месте, мы бы поступили так же.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_RISING_1</Tag>
@@ -586,6 +624,7 @@
         <German>Wir sind in Not, haben aber nicht genug, um zu handeln. Fasst Euch doch bitte ein Herz und spendet, was wir benötigen.</German>
         <Italian>Abbiamo bisogno di aiuto, ma non abbiamo niente da scambiare. Spero che trovi nel tuo cuore la volontà di donarci quello che ci serve.</Italian>
         <Spanish>Estamos necesitados, pero no tenemos excedentes que poder intercambiar. Por favor, buscad en vuestro corazón la voluntad para ayudarnos.</Spanish>
+        <Russian>Мы нуждаемся, но у нас нет излишков для торговли. Пожалуйста, найдите в своем сердце желание пожертвовать то, что нам нужно.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_RISING_1</Tag>
@@ -594,36 +633,42 @@
         <German>Ich verabscheue es, auf den Friedfertigen herumzuhacken, aber ich werde es trotzdem tun. Gebt uns, was wir wollen, oder tragt die Konsequenzen.</German>
         <Italian>Odio approfittare degli umili, ma lo farò ugualmente. Dacci ciò che vogliamo o preparati ad affrontare le conseguenze.</Italian>
         <Spanish>Odio meterme con los pacíficos, pero lo haré de todas formas. Dadnos lo que queremos o sufrid las consecuencias.</Spanish>
+        <Russian>Я ненавижу охотиться на самых слабых, но я все равно это сделаю. Дайте нам то, что мы хотим или вы будете страдать от последствий.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_ERMAK_1</Tag>
         <English>Welcome [CT_NAME], to our country! I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], governor of the [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Let us share some of the first vodka we've distilled here, and conclude a treaty of peace and friendship.</English>
         <French>Bienvenue sur nos terres, [CT_NAME] ! Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], gouverneur des [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Signons donc ensemble un traîté de paix autour d'une bouteille de vodka que nous avons distillée ici-même.</French>
         <German>Willkommen in unserem Land, [CT_NAME]! Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Gouverneur der [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Lassen Sie uns etwas von dem ersten Wodka teilen, den wir hier destilliert haben, und einen Vertrag über Frieden und Freundschaft schließen.</German>
+        <Russian>Добро пожаловать в нашу страну, [CT_NAME]! Я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], губернатор [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Давайте заключим договор о мире и дружбе и отметим это чаркой чудесной водки, которую мы недавно выгнали в этом чудесном краю.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_ERMAK_1</Tag>
         <English>There will be no negotiations with those who want to steal what rightly belongs to the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] people!</English>
         <French>Aucune négociation n'est possible avec ceux qui veulent voler ce qui appartient de droit au peuple [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] !</French>
         <German>Es wird keine Verhandlungen mit denen geben, die stehlen wollen, was rechtmäßig dem [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Volk gehört!</German>
+        <Russian>Никаких переговоров с теми, кто хочет украсть то, что по праву принадлежит народу [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_ERMAK_1</Tag>
         <English>We will make peace after we've sent you back to whatever Western European dwarf state you come from.</English>
         <French>Nous ne signerons de paix que le jour où l'on vous aura renvoyé dans votre mini-nation européenne.</French>
         <German>Wir werden Frieden schließen, nachdem wir Euch in den westeuropäischen Kleinstaat zurückgeschickt haben, aus dem Ihr kommt.</German>
+        <Russian>Мы заключим мир только после того, как вы уберётесь обратно в западноевропейское карликовое государство, откуда вы родом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_ERMAK_1</Tag>
         <English>Welcome! I'm glad to have someone intelligent to talk to. I'm bored stiff by the infantile squabbles of lesser New World powers. How about you?</English>
         <French>Bienvenue ! Je suis content de pouvoir discuter avec quelqu'un d'intelligent. Les puissances de pacotille que les nôtres finissent par me lasser avec leur bavardage incessant. Vous n'êtes pas d'accord ?</French>
         <German>Herzlich willkommen! Ich bin froh, jemanden Intelligenten zum Reden zu haben. Mich langweilen die infantilen Zankereien von Mächten der Neuen Welt, die kleiner sind als wir. Was ist mit Euch?</German>
+        <Russian>Добро пожаловать! Я рад, что здесь появился хоть один умный человек, с которым можно поговорить. Мне до смерти надоели детские склоки меньших держав Нового Света. Вы согласны с этим?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_ERMAK_1</Tag>
         <English>You are not worthy of being in the presence of the future leader of this world. But I'll give you a chance to regain some of my appreciation, as I'm feeling good today. Where are the caravans bringing in the presents for [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]?</English>
         <French>Vous êtes trop pathétique pour mériter de discuter avec le prochain maître de ce continent. Mais je suis de bonne humeur aujourd'hui, je vais vous laisser une chance de vous racheter. Où sont donc les convois apportant votre tribut à [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] ?</French>
         <German>Ihr seid zu erbärmlich, um es zu verdienen, sich mit dem baldigen Herrn dieses Kontinents zu streiten. Aber ich habe heute gute Laune, also gebe ich Euch eine Chance, sich zu rehabilitieren. Wo sind die Karawanen, die Euren Tribut nach [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] bringen?</German>
+        <Russian>Ты недостоин находиться рядом с будущим лидером этого мира. Но поскольку сегодня я в хорошем расположении духа, я дам тебе шанс восстановить мою признательность. Где караваны, которые везут подарки для [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_ERMAK_1</Tag>
@@ -632,6 +677,7 @@
         <German>Könnt Ihr meinem Volk bitte helfen? Ich würde Euch auch helfen, wenn die Situation umgekehrt wäre.</German>
         <Italian>Puoi aiutare il mio popolo? Noi ti aiuteremmo, se le nostre posizioni fossero invertite.</Italian>
         <Spanish>¿Podéis ayudar a mi pueblo, por favor? Os ayudaremos si alguna vez cambian las tornas.</Spanish>
+        <Russian>Сударь, не могли бы вы оказать небольшую помощь моему народу? И если вдруг с вами произойдёт подобное, то мы уж отблагодарим честь по чести.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_ERMAK_1</Tag>
@@ -640,6 +686,7 @@
         <German>Wir sind in Not, haben aber nicht genug, um zu handeln. Fasst Euch doch bitte ein Herz und spendet, was wir benötigen.</German>
         <Italian>Abbiamo bisogno di aiuto, ma non abbiamo niente da scambiare. Spero che trovi nel tuo cuore la volontà di donarci quello che ci serve.</Italian>
         <Spanish>Estamos necesitados, pero no tenemos excedentes que poder intercambiar. Por favor, buscad en vuestro corazón la voluntad para ayudarnos.</Spanish>
+        <Russian>Послушайте, сударь. Поиздержались мы немного, а товаров, для отправки на родину ради хорошей выручки,  маловато. Так я предлагаю вам поделиться своими богатыми запасами. Хотя, мы и золотишком не побрезгуем. Ну а в будущем как-нибудь расчитаемся.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_ERMAK_1</Tag>
@@ -648,36 +695,42 @@
         <German>Die Schwäche Eurer Nation bringt uns zum Lachen. Gebt uns, was wir wollen, oder tragt die Konsequenzen.</German>
         <Italian>Odio approfittare degli umili, ma lo farò ugualmente. Dacci ciò che vogliamo o preparati ad affrontare le conseguenze.</Italian>
         <Spanish>Odio meterme con los pacíficos, pero lo haré de todas formas. Dadnos lo que queremos o sufrid las consecuencias.</Spanish>
+        <Russian>Видя бедность одежд вельмож ваших, распоследний холоп наш со смеху покатывается. Но так и быть, поможем мы вам, убогим. Заплатите дань и пара беличьих шкурок будет ваша.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_BARANOV_1</Tag>
         <English>I see that the [CT_CIV_ADJ] have come to this wonderful New World as well. I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], governor of the [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. I hope we can be good neighbours and friends, as we have been in Europe.</English>
         <French>Je vois que les [CT_CIV_ADJ] sont également venus dans ce merveilleux nouveau monde. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], gouverneur de [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. J'espère que nous pourrons être de bons voisins et amis, comme nous le sommes en Europe.</French>
         <German>Ich sehe, dass die [CT_CIV_ADJ] auch in diese wunderbare Neue Welt gekommen sind. Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Gouverneur von [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Ich hoffe, wir können gute Nachbarn und Freunde sein, so wie wir es in Europa sind.</German>
+        <Russian>Я вижу, что [CT_CIV_ADJ] тоже пришли в этот чудесный Новый Свет. Я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], губернатор [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. И я надеюсь, что мы сможем стать такими же хорошими соседями и друзьями, как это было в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_BARANOV_1</Tag>
         <English>If I have time to chat with bandits and heretics, I'll let you know.</English>
         <French>Si j'ai le temps de converser avec des bandits et des hérétiques, je vous le ferai savoir.</French>
         <German>Wenn ich Zeit habe, mich mit Banditen und Ketzern zu unterhalten, werde ich es Euch wissen lassen.</German>
+        <Russian>Когда у меня появится время болтать с отступниками и бандитами, я дам тебе знать. А пока пошёл прочь!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_BARANOV_1</Tag>
         <English>The most charitable thing I can do for you now is to put you out of your misery, not to prolong your pitiful existence.</English>
         <French>La chose la plus charitable que je puisse faire pour vous maintenant est de vous sortir de votre misère, et non de prolonger votre pitoyable existence.</French>
         <German>Das Barmherzigste, was ich jetzt für Euch tun kann, ist, Euch von Eurem Elend zu erlösen, und nicht, Eure erbärmliche Existenz zu verlängern.</German>
+        <Russian>Самое милосердное, что я могу сделать для вас сейчас, так это избавить вас от ваших страданий, а не продлевать ваше жалкое существование.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_BARANOV_1</Tag>
         <English>The [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] welcome their good friend [CT_NAME]. What's your proposal?</English>
         <French>Les [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] accueillent leur bon ami [CT_NAME]. Avec quelle proposition venez-vous chez nous ?</French>
         <German>[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] begrüßt seinen guten Freund [CT_NAME]. Mit welchem Vorschlag kommen Ihr zu uns?</German>
+        <Russian>[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] приветствуют своего старого друга [CT_NAME]. У вас есть деловое предложение?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_BARANOV_1</Tag>
         <English>Your subjects still haven't deposed you? Their lack of sense and intellect is evident. What do you want?</English>
         <French>Vos sujets ne vous ont donc pas encore renversé ? Cela prouve bien le manque de sens commun de votre peuple. Que voulez-vous ?</French>
         <German>Eure Untertanen haben Euch immer noch nicht abgesetzt? Dies beweist den Mangel an Intellekt und gesundem Menschenverstand Eurer Leute. Was wollt Ihr?</German>
+        <Russian>Холопы еще не подняли тебя на вилы? Видать, они такие же трусливые, как и их хозяин. Что ты хочешь?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_BARANOV_1</Tag>
@@ -686,6 +739,7 @@
         <German>Könnt Ihr meinem Volk bitte helfen? Ich würde Euch auch helfen, wenn die Situation umgekehrt wäre.</German>
         <Italian>Puoi aiutare il mio popolo? Noi ti aiuteremmo, se le nostre posizioni fossero invertite.</Italian>
         <Spanish>¿Podéis ayudar a mi pueblo, por favor? Os ayudaremos si alguna vez cambian las tornas.</Spanish>
+        <Russian>Милостивый государь, взываю к вашей добродетели. Суровый климат земель здешних опустошил запасы наши. Окажите милость - помогите, чем можете. Ну а уж мы в долгу не останемся.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_BARANOV_1</Tag>
@@ -694,6 +748,7 @@
         <German>Wir sind in Not, haben aber nicht genug, um zu handeln. Fasst Euch doch bitte ein Herz und spendet, was wir benötigen.</German>
         <Italian>Abbiamo bisogno di aiuto, ma non abbiamo niente da scambiare. Spero che trovi nel tuo cuore la volontà di donarci quello che ci serve.</Italian>
         <Spanish>Estamos necesitados, pero no tenemos excedentes que poder intercambiar. Por favor, buscad en vuestro corazón la voluntad para ayudarnos.</Spanish>
+        <Russian>Вы знаете, сударь, что наши силы примерно одинаковы. Но если не хотите увидеть разъярённого медведя, отдайте ему то, что он желает видеть своим.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_BARANOV_1</Tag>
@@ -702,6 +757,7 @@
         <German>Ich verabscheue es, auf den Friedfertigen herumzuhacken, aber ich werde es trotzdem tun. Gebt uns, was wir wollen, oder tragt die Konsequenzen.</German>
         <Italian>Odio approfittare degli umili, ma lo farò ugualmente. Dacci ciò che vogliamo o preparati ad affrontare le conseguenze.</Italian>
         <Spanish>Odio meterme con los pacíficos, pero lo haré de todas formas. Dadnos lo que queremos o sufrid las consecuencias.</Spanish>
+        <Russian>Смотрю я на твое войско босяцкое и смех берет. С такими сирыми да убогими даже силой меряться грешно, но если придётся... В общем, должок за тобой.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_CARIBS_SHORT_DESC</Tag>
@@ -742,48 +798,56 @@
         <English>Stranger, my name is [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], and I greet you on behalf of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] people. If you are peaceful, we consider you to be a friend. If you are warlike, we consider you to be food. What is your choice?</English>
         <French>Bonjour. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], cacique des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Je vous considère comme mon ami, mais si votre humeur devient guerrière, je vous considérerais alors comme ma nourriture. C'est à vous de choisir.</French>
         <German>Fremder, ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Cacique der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Wenn Ihr friedlich seid, betrachten wir Euch als einen Freund. Aber wenn Ihr kriegerisch seid, dann betrachten wir Euch als Nahrung. Ihr habt die Wahl.</German>
+        <Russian>Незнакомец, меня зовут [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] и я приветствую тебя от лица [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Если ты любишь мир, мы будем считать тебя своим другом. Если же ты предпочитаешь войну, мы будем считать вас своей едой. Что ты выберешь, незнакомец?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_JAUREYBO_1</Tag>
         <English>You want me to speak with you, [CT_NAME]? I'm sorry, I consider it inappropriate to play with my dinner.</English>
         <French>Vous voulez parler, [CT_NAME] ? Désolé mais je n'aime pas bavarder avec mon prochain repas.</French>
         <German>Ihr wollt mit mir reden, [CT_NAME]? Es tut mir leid, ich halte es für unangebracht, mit meinem Essen zu spielen.</German>
+        <Russian>Вы хотите, чтобы я поговорил с вами, [CT_NAME]? Извините, я считаю неуместным разговаривать со своим обедом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_JAUREYBO_1</Tag>
         <English>Peace? Never! My men are hungry.</English>
         <French>La paix ? Jamais ! Mes hommes sont affamés.</French>
         <German>Frieden? Niemals! Meine Männer sind hungrig.</German>
+        <Russian>Мир? Никогда! Мои люди голодны.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_JAUREYBO_1</Tag>
         <English>What a joy it is to see you again in the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] tribal area. Let us see together who deserves our friendship and who deserves to end up in the cooking pot.</English>
         <French>Quel joie de vous retrouvez en terre [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Voyons ensemble qui méritent notre amitié et qui méritent de finir dans une marmite.</French>
         <German>Was für eine Freude ist es, Euch wieder im [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Stammesgebiet zu sehen. Lasst uns gemeinsam sehen, wer unsere Freundschaft verdient und wer es verdient, im Kochtopf zu landen.</German>
+        <Russian>Какая радость снова видеть вас на землях племени [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Давайте вместе посмотрим, кто заслуживает нашей дружбы, а кто заслуживает того, чтобы оказаться в котле.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_JAUREYBO_1</Tag>
         <English>If it isn't the most unappetizing of my enemies! Have you come solely to annoy us, or is that just an unfortunate side effect?</English>
         <French>Vous êtes un ennemi bien peu appetissant ! Etes-vous de passage seulement pour nous embêter ?</French>
         <German>Wenn das nicht der unappetitlichste meiner Feinde ist! Seid Ihr nur gekommen, um uns zu ärgern, oder ist das nur ein unglücklicher Nebeneffekt?</German>
+        <Russian>Кто это там мешает мне завтракать? О, нет, это самый неаппетитный из моих врагов! Ты пришёл исключительно для того, чтобы досадить нам или это всего лишь неприятный побочный эффект твоего существования?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_JAUREYBO_1</Tag>
         <English>My tribe has suffered misfortune and is in need. Will the [CT_EMPIRE] help?</English>
         <French>Ma tribu est dans le besoin, l'[CT_EMPIRE] peut-il nous aider ?</French>
         <German>Mein Stamm hat Unglück erlitten und ist in Not geraten. Wird [CT_EMPIRE] uns helfen?</German>
+        <Russian>Мое племя постигло несчастье и оно нуждается в помощи. Помогут ли [CT_EMPIRE] своим братьям?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_JAUREYBO_1</Tag>
         <English>I come in peace to ask for assistance. Will you turn us away?</English>
         <French>Je suis venu en paix vous demander de l'aide. Allez-vous nous repousser ?</French>
         <German>Ich bin in Frieden gekommen, um Euch um Hilfe zu bitten. Werden Ihr uns abweisen?</German>
+        <Russian>Я пришел с миром просить о помощи. Вы ведь не отвергнете нас?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_JAUREYBO_1</Tag>
         <English>My warriors could destroy [CT_EMPIRE] with ease. Give me all I desire.</English>
         <French>Mes guerriers pourraient facilement détruire le [CT_EMPIRE]. Donnez-moi tout ce que je désire.</French>
         <German>Meine Krieger könnten [CT_EMPIRE] mit Leichtigkeit vernichten. Gebt mir alles, was ich begehre.</German>
+        <Russian>Мои воины с легкостью могли бы уничтожить [CT_EMPIRE]. Дай мне все, что я желаю и они не сделают из твоих людей ужин.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_NAVAJO_SHORT_DESC</Tag>
@@ -824,48 +888,56 @@
         <English>Welcome to the hunting grounds of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], and I hope the relationship between the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] and the [CT_EMPIRE] will be to the benefit of both. Let us exchange stories of our peoples under the light of the moon.</English>
         <French>Bienvenue en terres de chasse du fier peuple [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Mon nom est [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. J'espère que les relations entre les [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT] et l'[CT_EMPIRE] seront aux bénéfices de chacun. Je vous invite à vous assoir au clair de lune pour que nous apprenions davantage sur les aventures de nos peuples.</French>
         <German>Willkommen in den Jagdgründen des stolzen [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]-Volkes. Mein Name ist [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Ich hoffe, dass die Beziehung zwischen den [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT] und den [CT_EMPIRE] für alle von Vorteil sein wird. Ich lade Euch ein, im Mondlicht zu sitzen, damit wir uns Geschichten über unsere Völker erzählen können.</German>
+        <Russian>Добро пожаловать в охотничьи угодья [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Меня зовут [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] и я надеюсь, что отношения между [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] и [CT_EMPIRE] будут выгодны им обоим. Давайте обменяемся историями наших народов при свете луны.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_NARBONA_1</Tag>
         <English>I'd rather listen all evening to the squeaking of a prairie dog than hear your words for one minute.</English>
         <French>Je préfère supporter les aboiements d'un chien de prairie toute la soirée plutôt que d'écouter vos paroles ne serait-ce qu'une minute.</French>
         <German>Ich würde lieber den ganzen Abend das Bellen eines Präriehundes ertragen, als auch nur eine Minute lang Euren Worten zuzuhören.</German>
+        <Russian>Я лучше весь вечер буду слушать вой луговых собак, чем хоть одну минуту слышать твои слова.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_NARBONA_1</Tag>
         <English>So now that you've had a taste of your own blood, you beg for mercy? We will not dishonour you by conceding to your cowardice.</English>
         <French>Maintenant que vous connaissez le goût de votre propre sang, vous demandez la pitié ? N'ajoutez pas la lâcheté à votre déshonneur.</French>
         <German>Jetzt, wo Ihr Euer eigenes Blut gekostet habt, bettelt Ihr um Gnade? Wir werden Euch nicht entehren, indem wir Eurer Feigheit nachgeben.</German>
+        <Russian>Итак, теперь, когда ты ощутил вкус собственной крови, ты молишь о пощаде? Мы не обесчестим вас, признав вашу трусость.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_NARBONA_1</Tag>
         <English>I gladly welcome my friends of the [CT_EMPIRE]. What do you desire to discuss with the great warriors of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]?</English>
         <French>J'accueille avec choix mon hôte de l'[CT_EMPIRE]. Quel est l'objet de la discussion que vous souhaitez avoir avec les grands guerriers [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT] ?</French>
         <German>Ich heiße meine Freunde aus [CT_EMPIRE] herzlich willkommen. Was wollt Ihr mit den großen Kriegern der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] besprechen?</German>
+        <Russian>Я рад приветствовать своих друзей из [CT_EMPIRE]. Что вы хотите обсудить с великими воинами [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_NARBONA_1</Tag>
         <English>My warriors are itching to teach your people the meaning of honour. I advise you to convince me that that won't be necessary. It would be a messy business.</English>
         <French>Mes guerriers trépignent à l'idée de vous apprendre le sens du mot « Honneur ». Je ne pourrais pas les retenir si vous n'êtes pas en mesure d'apporter des arguments convaincants.</French>
         <German>Meine Krieger brennen darauf, Eurem Volk die Bedeutung von Ehre beizubringen. Ich rate Euch, mich davon zu überzeugen, dass das nicht nötig wäre, denn es würde eine blutige Angelegenheit.</German>
+        <Russian>Моим воинам не терпится научить ваш народ тому, что значит честь. Я советую вам убедить меня, что в этом нет необходимости. Это будет кровавое занятие.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_NARBONA_1</Tag>
         <English>My tribe is suffering. Will the [CT_EMPIRE] ease our hardship?</English>
         <French>Ma tribu est dans le besoin, l'[CT_EMPIRE] peut-il nous aider ?</French>
         <German>Mein Volk leidet. Werden die [CT_EMPIRE] unsere Not lindern?</German>
+        <Russian>Мое племя в беде. Сможет ли [CT_EMPIRE] облегчить наши трудности?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_NARBONA_1</Tag>
         <English>I come in peace to ask for your assistance. Will you honour your friendship with us?</English>
         <French>Je viens en paix pour vous demander votre aide. Voulez-vous honorer votre amitié avec nous ?</French>
         <German>Ich komme in Frieden, um Euch um Unterstützung zu bitten. Werden Ihr Eure Freundschaft mit uns ehren?</German>
+        <Russian>Я пришел с миром, чтобы просить вашей помощи. Будешь ли ты чтить дружбу между нашими народами?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_NARBONA_1</Tag>
         <English>I hold the future survival of the [CT_EMPIRE] in my hand. Give me what I demand or die this day.</English>
         <French>Je tiens dans ma main la survie future du [CT_EMPIRE]. Donnez-moi ce que je demande ou mourrez aujourd'hui.</French>
         <German>Ich halte das zukünftige Überleben der [CT_EMPIRE] in meiner Hand. Gebt mir, was ich verlange, oder sterbt an diesem Tag.</German>
+        <Russian>Я держу будущее [CT_EMPIRE] в своих руках. Дай мне сегодня то, что я требую или завтра ты умрёшь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_ALGONQUIAN_SHORT_DESC</Tag>
@@ -906,48 +978,56 @@
         <English>Hello. My name is [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], and I speak on behalf of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] tribes. We gladly welcome you to our lands, and we hope we can grow to be friends and trading partners. Join me in my longhouse and tell me about your strange customs.</English>
         <French>Bonjour. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], je parle au nom des tribus [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:4][COLOR_REVERT]. Je vous accueille avec bonheur sur nos terres. Allons donc dans ma maison longue pour que vous nous expliquiez un peu mieux vos coutumes étranges.</French>
         <German>Mein Name ist [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], und ich spreche im Namen der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Stämme. Ich heiße Euch in unserem Land herzlich willkommen und hoffe, dass wir zu Freunden und Handelspartnern werden können. Kommt zu mir in mein Langhaus, damit Ihr mir Eure seltsamen Bräuche etwas besser erklären könnt.</German>
+        <Russian>Привет тебе, бледнолицый. Меня зовут [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] и я говорю от имени племен [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Мы рады приветствовать вас на наших землях и надеемся, что сможем стать друзьями и торговыми партнерами. Присоединяйся ко мне в моем длинном доме и расскажи мне о ваших странных обычаях.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_OPPUSSOQUIONUSKE_1</Tag>
         <English>I have nothing to discuss with you. Be on your way, and prepare to pay the price for your atrocities against the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] people.</English>
         <French>Je n'ai rien à vous dire. Allez-vous-en, et préparez-vous à payer pour les atrocités que vous avez commises envers le peuple [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT].</French>
         <German>Ich habe nichts mit Euch zu besprechen. Macht Euch auf den Weg und bereitet Euch darauf vor, den Preis für Eure Gräueltaten gegen das [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Volk zu zahlen.</German>
+        <Russian>Мне нечего с тобой обсуждать. Ты выбрал свой путь, так что приготовься заплатить цену за свои зверства против [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_OPPUSSOQUIONUSKE_1</Tag>
         <English>A treaty? One of those things the [CT_CIV_ADJ] love to break whenever they feel like it? In your dreams!</English>
         <French>Un traîté ? Vous voulez dire ces papiers que les [CT_CIV_ADJ] adorent enfreindre à la première occasion ? Dans vos rêves !</French>
         <German>Einen Vertrag? Eines dieser Dinge, die die [CT_CIV_ADJ] gerne brechen, wann immer ihnen danach ist? Nur in Euren Träumen!</German>
+        <Russian>Мирный договор? Ты имеешь в виду те договорённости, которые [CT_CIV_ADJ] любят разрывать при первой же возможности, как хищник разрывает свою жертву? Мирный договор будет только в твоих мечтах!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_OPPUSSOQUIONUSKE_1</Tag>
         <English>The honourable people of the [CT_EMPIRE] are always welcome in the woods of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Come to my longhouse and let us speak of our friendship.</English>
         <French>Le honorable peuple de l'[CT_EMPIRE] est toujours la bienvenue dans les forêts [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:4][COLOR_REVERT]. Allons donc discuter dans notre maison longue.</French>
         <German>Das ehrenwerte Volk der [CT_EMPIRE] ist in den Wäldern der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] immer willkommen. Kommt in mein Langhaus und lasst uns über unsere Freundschaft sprechen.</German>
+        <Russian>Благородным [CT_EMPIRE] всегда рады в лесах [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Проходите в мой длинный дом и давайте поговорим о нашей дружбе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_OPPUSSOQUIONUSKE_1</Tag>
         <English>Your people beat the drums of war. If you wish to avoid destruction, now is the time to avert bloodshed and explain yourself.</English>
         <French>Votre peuple a commis l'irréparable. Si vous souhaitez éviter votre propre destruction, vous allez devoir trouver une explication convaincante.</French>
         <German>Euer Volk hat die Kriegstrommeln geschlagen. Wenn Ihr Eure Zerstörung vermeiden wollt, dann ist es jetzt an der Zeit, das Blutvergießen abzuwenden und sich zu erklären.</German>
+        <Russian>Ваши люди бьют в барабаны войны. Если вы хотите избежать гибели, сейчас самое время предотвратить кровопролитие и объясниться.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_OPPUSSOQUIONUSKE_1</Tag>
         <English>My people suffer from much hardship and are in need. Will the [CT_EMPIRE] stay true to their friendship with us and help?</English>
         <French>Ma tribu est dans le besoin, l'[CT_EMPIRE] sera-t-il fidèle à l'amitié que nous avons scellé en nous venant en aide ?</French>
         <German>Mein Volk leidet unter viel Not und ist in Bedrängnis. Werden die [CT_EMPIRE] ihrer Freundschaft mit uns treu bleiben und helfen?</German>
+        <Russian>Мой народ страдает от многих лишений и нуждается. Останутся ли [CT_EMPIRE] верными своей дружбе с нами и помогут ли?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_OPPUSSOQUIONUSKE_1</Tag>
         <English>I come in peace to ask for your assistance. Will you prove a loyal brother and friend?</English>
         <French>Je viens en paix pour vous demander votre aide. Pouvez-vous me prouver que vous êtes un frère et un ami loyal ?</French>
         <German>Ich komme in Frieden, um Euch um Hilfe zu bitten. Werdet Ihr mir ein treuer Bruder und Freund sein?</German>
+        <Russian>Я пришел с миром, чтобы просить вашей помощи. Сможете ли вы оказаться верным братом и другом?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_OPPUSSOQUIONUSKE_1</Tag>
         <English>My warriors' tomahawks gleam. If I will it, they will soon be red with the blood of the people of [CT_EMPIRE]. If you wish to see your children grow up here you will yield to my demands.</English>
         <French>Mes guerriers tomahawks sont brillants. Si je le voulais, ils pourraient bientôt être rouges avec le sang du [CT_EMPIRE]. Si vous souhaitez conserver vos semences sur cette terre, alors vous céderez à mes exigences.</French>
         <German>Die Tomahawks meiner Krieger sind blitzblank. Wenn ich es wollte, könnten sie bald rot sein mit dem Blut der Leute von [CT_EMPIRE]. Wenn Ihr Euren Samen in diesem Land retten wollt, dann werdet Ihr meinen Forderungen nachgeben.</German>
+        <Russian>Томагавки моих воинов блестят. Если я захочу, скоро они станут красными от крови жителей [CT_EMPIRE]. Если вы хотите, чтобы ваши дети росли здесь, вы уступите моим требованиям.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_MACHIPARO_SHORT_DESC</Tag>
