@@ -161,35 +161,35 @@ void CvCityAI::read(CvSavegameReader reader)
 		case Save_END:
 			bContinue = false;
 			break;
-			case CitySaveAi_GiftTimer: reader.Read(m_iGiftTimer); break;
-			case CitySaveAi_TradeTimer: reader.Read(m_iTradeTimer); break;
-			case CitySaveAi_DesiredYield: reader.Read(m_eDesiredYield); break;
-			case CitySaveAi_TargetSize: reader.Read(m_iTargetSize); break;
-			case CitySaveAi_FoundValue: reader.Read(m_iFoundValue); break;
-			case CitySaveAi_EmphasizeAvoidGrowthCount: reader.Read(m_iEmphasizeAvoidGrowthCount); break;
+			case CitySaveAi_GiftTimer                           : reader.Read(m_iGiftTimer)                                      ; break;
+			case CitySaveAi_TradeTimer                          : reader.Read(m_iTradeTimer)                                     ; break;
+			case CitySaveAi_DesiredYield                        : reader.Read(m_eDesiredYield)                                   ; break;
+			case CitySaveAi_TargetSize                          : reader.Read(m_iTargetSize)                                     ; break;
+			case CitySaveAi_FoundValue                          : reader.Read(m_iFoundValue)                                     ; break;
+			case CitySaveAi_EmphasizeAvoidGrowthCount           : reader.Read(m_iEmphasizeAvoidGrowthCount)                      ; break;
 
-			case CitySaveAi_Port: reader.Read(m_bPort); break;
-			case CitySaveAi_AssignWorkDirty: reader.Read(m_bAssignWorkDirty); break;
-			case CitySaveAi_ChooseProductionDirty: reader.Read(m_bChooseProductionDirty); break;
+			case CitySaveAi_Port                                : reader.Read(m_bPort)                                           ; break;
+			case CitySaveAi_AssignWorkDirty                     : reader.Read(m_bAssignWorkDirty)                                ; break;
+			case CitySaveAi_ChooseProductionDirty               : reader.Read(m_bChooseProductionDirty)                          ; break;
 
-			case CitySaveAi_YieldOutputWeight: reader.Read(m_em_iYieldOutputWeight); break;
-			case CitySaveAi_NeededYield: reader.Read(m_em_iNeededYield); break;
-			case CitySaveAi_TradeBalance: reader.Read(m_em_iTradeBalance); break;
-			case CitySaveAi_YieldAdvantage: reader.Read(m_em_iYieldAdvantage); break;
-			case CitySaveAi_EmphasizeYieldCount: reader.Read(m_em_iEmphasizeYieldCount); break;
+			case CitySaveAi_YieldOutputWeight                   : reader.Read(m_em_iYieldOutputWeight)                           ; break;
+			case CitySaveAi_NeededYield                         : reader.Read(m_em_iNeededYield)                                 ; break;
+			case CitySaveAi_TradeBalance                        : reader.Read(m_em_iTradeBalance)                                ; break;
+			case CitySaveAi_YieldAdvantage                      : reader.Read(m_em_iYieldAdvantage)                              ; break;
+			case CitySaveAi_EmphasizeYieldCount                 : reader.Read(m_em_iEmphasizeYieldCount)                         ; break;
 
-			case CitySaveAi_ForceEmphasizeCulture: reader.Read(m_bForceEmphasizeCulture); break;
-			case CitySaveAi_CachePlayerClosenessTurn: reader.Read(m_iCachePlayerClosenessTurn); break;
-			case CitySaveAi_CachePlayerClosenessDistance: reader.Read(m_iCachePlayerClosenessDistance); break;
-			case CitySaveAi_NeededFloatingDefenders: reader.Read(m_iNeededFloatingDefenders); break;
-			case CitySaveAi_NeededFloatingDefendersCacheTurn: reader.Read(m_iNeededFloatingDefendersCacheTurn); break;
-			case CitySaveAi_WorkersNeeded: reader.Read(m_iWorkersNeeded); break;
-			case CitySaveAi_WorkersHave: reader.Read(m_iWorkersHave); break;
-			case CitySaveAi_Emphasize: reader.Read(m_em_bEmphasize); break;
-			case CitySaveAi_PlayerCloseness: reader.Read(m_em_iPlayerCloseness); break;
-			case CitySaveAi_routeToCity: reader.Read(m_routeToCity); break;
-			case CitySaveAi_BestBuildValue: reader.Read(m_em_iBestBuildValue); break;
-			case CitySaveAi_BestBuild: reader.Read(m_em_eBestBuild); break; 
+			case CitySaveAi_ForceEmphasizeCulture               : reader.Read(m_bForceEmphasizeCulture)                          ; break;
+			case CitySaveAi_CachePlayerClosenessTurn            : reader.Read(m_iCachePlayerClosenessTurn)                       ; break;
+			case CitySaveAi_CachePlayerClosenessDistance        : reader.Read(m_iCachePlayerClosenessDistance)                   ; break;
+			case CitySaveAi_NeededFloatingDefenders             : reader.Read(m_iNeededFloatingDefenders)                        ; break;
+			case CitySaveAi_NeededFloatingDefendersCacheTurn    : reader.Read(m_iNeededFloatingDefendersCacheTurn)               ; break;
+			case CitySaveAi_WorkersNeeded                       : reader.Read(m_iWorkersNeeded)                                  ; break;
+			case CitySaveAi_WorkersHave                         : reader.Read(m_iWorkersHave)                                    ; break;
+			case CitySaveAi_Emphasize                           : reader.Read(m_em_bEmphasize)                                   ; break;
+			case CitySaveAi_PlayerCloseness                     : reader.Read(m_em_iPlayerCloseness)                             ; break;
+			case CitySaveAi_routeToCity                         : reader.Read(m_routeToCity)                                     ; break;
+			case CitySaveAi_BestBuildValue                      : reader.Read(m_em_iBestBuildValue)                              ; break;
+			case CitySaveAi_BestBuild                           : reader.Read(m_em_eBestBuild)                                   ; break; 
 
 			default: FAssert(false);
 		}
