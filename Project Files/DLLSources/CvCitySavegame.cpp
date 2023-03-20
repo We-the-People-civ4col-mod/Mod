@@ -514,7 +514,7 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_WorksWaterCount: reader.Read(m_iWorksWaterCount); break;
 		case CitySave_RebelSentiment: reader.Read(m_iRebelSentiment); break;
 		case CitySave_CityHealth: reader.Read(m_iCityHealth); break; // R&R, ray, Health
-		case CitySave_CityHarbourSpace: reader.Discard<int>(); // WTP, ray, new Harbour System - START
+		case CitySave_CityHarbourSpace: reader.Discard<int>(); break; // WTP, ray, new Harbour System - START
 		case CitySave_CityBarracksSpace: reader.Discard<int>(); break; // WTP, ray, new Barracks System - START
 		case CitySave_CityHappiness: reader.Read(m_iCityHappiness); break; // WTP, ray, Happiness - START
 		case CitySave_CityUnHappiness: reader.Read(m_iCityUnHappiness); break; // WTP, ray, Happiness - START
