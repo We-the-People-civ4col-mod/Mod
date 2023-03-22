@@ -4,7 +4,7 @@ BeginGame
 	ModPath=
 	WBNorthAmericanNative=1
 	WBSouthAmericanNative=0
-	WBCentralAmericanNative=1
+	WBCentralAmericanNative=0
 EndGame
 BeginPlayer
 	Team=0
@@ -252,16 +252,16 @@ BeginPlayer
 	CivType=NONE
 EndPlayer
 BeginMap
-	grid width=40
-	grid height=100
+	grid width=72
+	grid height=96
 	top latitude=90
-	bottom latitude=-10
+	bottom latitude=0
 	wrap X=0
 	wrap Y=0
 	world size=WORLDSIZE_LARGE
-	climate=CLIMATE_ROCKY
-	sealevel=SEALEVEL_HIGH
-	num plots written=4000
+	climate=CLIMATE_TEMPERATE
+	sealevel=SEALEVEL_MEDIUM
+	num plots written=6912
 	num signs written=0
 	Randomize Features=true
 	Randomize Resources=true
