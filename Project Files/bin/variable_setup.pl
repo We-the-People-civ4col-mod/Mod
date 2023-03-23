@@ -44,6 +44,7 @@ $var{CivicOption}      = {not_strict => 1, XML => 1};
 $var{Civilization}     = {not_strict => 1, XML => 1};
 $var{CityPlot}         = {not_strict => 1, JIT => "NO_JIT_ARRAY_TYPE", NUM => "NUM_CITY_PLOTS", COMPILE => "NUM_CITY_PLOTS_2_PLOTS", LENGTH_KNOWN_WHILE_COMPILING => "0"};
 $var{Climate}          = {not_strict => 1, XML => 1};
+$var{Concept}          = {JIT => "NO_JIT_ARRAY_TYPE", INFO => "getConceptInfo"};
 $var{Contact}          = {not_strict => 1};
 $var{Culture}          = {not_strict => 1, XML => 1, type => "CultureLevelTypes", NUM => "NUM_CULTURELEVEL_TYPES", COMPILE => "COMPILE_TIME_NUM_CULTURELEVEL_TYPES"};
 $var{Diplomacy}        = {XML => 1};
@@ -357,7 +358,14 @@ sub structEnum
 	$output .= "\t\tstatic const bool VAL = boost::is_same<" . $type . ", T>::VAL;\n";
 	$output .= "\t};\n";
 	$output_cpp .= "template<>\nconst char* getTypeStr($type eIndex)\n{\n";
-	$output_cpp .= "\treturn getArrayType(VARINFO<$type>::JIT, eIndex);\n";
+	if (defined $var{$name}{INFO})
+	{
+		$output_cpp .= "\treturn GC." . $var{$name}{INFO} . "(eIndex).getType();\n";
+	}
+	else
+	{
+		$output_cpp .= "\treturn getArrayType(VARINFO<$type>::JIT, eIndex);\n";
+	}
 	$output_cpp .= "}\n\n";
 
 }

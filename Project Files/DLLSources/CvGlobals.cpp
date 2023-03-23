@@ -1491,8 +1491,8 @@ std::vector<CvInfoBase*>& CvGlobals::getConceptInfo()	// For Moose - XML Load Ut
 
 CvInfoBase& CvGlobals::getConceptInfo(ConceptTypes e)
 {
-	FAssert(e > -1);
-	FAssert(e < GC.getNumConceptInfos());
+	FAssert(e > NO_CONCEPT);
+	FAssert(e < NUM_CONCEPT_TYPES);
 	return *(m_paConceptInfo[e]);
 }
 int CvGlobals::getNumCalendarInfos()

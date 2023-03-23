@@ -32,6 +32,7 @@ void CyEnumsPythonInterface()
 	// 2: name of enum in python
 	// 3: name of NO_ type. Skipped if it is set to NULL
 	// 4 name of NUM_
+	addEnumValues(NO_CONCEPT           , "ConceptTypes"       , "NO_CONCEPT"       , "NUM_CONCEPT_TYPES"        );
 	addEnumValues(MAX_NUM_SYMBOLS      , "FontSymbols"        , NULL               , "MAX_NUM_SYMBOLS"          );
 	addEnumValues(NO_WORLDSIZE         , "WorldSizeTypes"     , "NO_WORLDSIZE"     , "NUM_WORLDSIZE_TYPES"      );
 	addEnumValues(NO_YIELD             , "YieldTypes"         , "NO_YIELD"         , "NUM_YIELD_TYPES"          );
@@ -697,9 +698,6 @@ void CyEnumsPythonInterface()
 		.value("HEALTHBAR_ALIVE_DEFEND", HEALTHBAR_ALIVE_DEFEND)
 		.value("HEALTHBAR_DEAD", HEALTHBAR_DEAD)
 		.value("NUM_HEALTHBAR_TYPES", NUM_HEALTHBAR_TYPES)
-		;
-	python::enum_<ConceptTypes>("ConceptTypes")
-		.value("NO_CONCEPT", NO_CONCEPT)
 		;
 	python::enum_<CalendarTypes>("CalendarTypes")
 		.value("CALENDAR_DEFAULT", CALENDAR_DEFAULT)
