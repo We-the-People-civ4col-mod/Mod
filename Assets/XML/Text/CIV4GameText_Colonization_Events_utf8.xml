@@ -950,13 +950,13 @@
         <Tag>TXT_KEY_EVENT_HIGHWAYMAN_ATTACK_HELP</Tag>
         <English>Highwaymen attack the stagecoach. Brave passengers defend it.</English>
         <German>Straßenräuber greifen die Kutsche an. Ein paar mutige Passagiere verteidigen sie.</German>
-        <Russian>йцукен</Russian>
+        <Russian>На дилижанс нападают разбойники. Храбрые пассажиры защищаются.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MILKMAID_IN_NEED</Tag>
         <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] milkmaid is being forced to marry her uncle. She asks the governor for help.</English>
         <German>Ein Gerücht macht die Runde: Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Milchmädchen soll gezwungen werden, ihren Onkel zu heiraten. Sie erbittet Hilfe vom Gouverneur.</German>
-        <Russian>На дилижанс нападают разбойники. Храбрые пассажиры защищаются.</Russian>
+        <Russian>Ходят слухи, что [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] доярку вынуждают выйти замуж за своего дядю. Она просит помощи у губернатора.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MILKMAID_IN_NEED_1</Tag>
@@ -1076,141 +1076,169 @@
         <Tag>TXT_KEY_EVENTTRIGGER_WHALE_ATTACK</Tag>
         <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] whaling ship is being attacked by a whale seeking revenge.</English>
         <German>Ein Gerücht macht die Runde: Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Walfangschiff wird von eime Rache suchenden Wal angegriffen.</German>
+        <Russian>Ходят слухи: [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] китобойное судно подвергается нападению мстительного кита.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WHALE_ATTACK_1</Tag>
         <English>It's very strange. For several days a giant whale has been following our ship. It's like he's waiting to attack us when we're not paying attention. Wait! What is this? He's trying to ram us amidships!</English>
         <German>Das ist in der Tat seltsam. Seit Tagen verfolgt unser Schiff ein riesiger Wal. Es scheint fast so als warte er nur auf eine Gelgenheit, um uns anzugreifen, wenn wir nicht aufmerksam sind. Wartet! Was ist das? Der Walf versucht uns tatsächlich auf Backbord zu rammen.</German>
+        <Russian>Это очень странно. Уже несколько дней за нашим кораблем следует гигантский кит. Как будто он ждет удобный момент, чтобы напасть на нас, когда мы перестанем обращать на него внимание. Подождите! Что это?! Он пытается протаранить нас на миделе!!!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_WHALE_ATTACK_1</Tag>
         <English>All men, grab your harpoons! We are a whaling ship! We hunt whales, not the other way around!</English>
         <German>Alle Mann an die Harpunen! Wir sind ein Walfangschiff! Wir jagen die Wale und nicht anders herum!</German>
+        <Russian>Парни, хватайте свои гарпуны! Мы - китобойный корабль! Мы охотимся на китов, а не наоборот!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WHALE_ATTACK_HELP</Tag>
         <English>The humpback whale attacks.</English>
         <German>Ein Buckelwal greift an.</German>
+        <Russian>Нападение горбатого кита.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CRIMINALS_BLACKMAIL_CITY</Tag>
         <English>A rumour is spreading: The peaceful city of [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] is being blackmailed by criminals.</English>
         <German>Ein Gerücht macht die Runde: Die friedliche Stadt [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] wird von Kriminellen erpresst.</German>
+        <Russian>Распространяется слух: преступники шантажируют мирный город [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CRIMINALS_BLACKMAIL_CITY_1</Tag>
         <English>Milord, some criminals have broken into our armoury and stolen weapons. They claim that they're just impoverished citizens who can't even afford food. They demand to be given food and money, just a little. They promise to then lay down their weapons. Otherwise they threaten to attack the citizens.</English>
         <German>Milord, einige Kriminelle sind in die Waffenkammer eingebrochen und haben sich bewaffnet. Sie behaupten lediglich verarmte Bürger zu sein, die sich kein Essen mehr leisten können. Sie verlangen von uns etwas Nahrung und Geld. Sie verspechen daraufhin die Waffen niederzulegen. Andernfalls drohen sie damit die Bürger der Stadt anzugreifen.</German>
+        <Russian>Милорд, какие-то преступники проникли в наш арсенал и украли оружие. Они утверждают, что они просто бедные граждане, которые не могут позволить себе даже еду. Они требуют, чтобы им дали еды и денег, совсем немного. Обещают после этого сложить оружие. В противном случае они угрожают напасть на горожан.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CRIMINALS_BLACKMAIL_CITY_GIVE</Tag>
         <English>Give them some food and gold. We will even pardon them if they promise never again to use violence to solve such issues.</English>
         <German>Gebt ihnen etwas Essen und Gold. Zusätzlich begnadigen wir sie, wenn sie versprechen nächstes Mal keine Gewalt anzuwenden.</German>
+        <Russian>Дайте им немного еды и золота. Мы даже простим их, если они пообещают никогда больше не применять насилие для решения таких вопросов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CRIMINALS_BLACKMAIL_CITY_REFUSE</Tag>
         <English>We will not let criminals blackmail us. The only thing they get from us is death.</English>
         <German>Wir lassen uns nicht von Kriminellen erpresssen. Das einzige was sie von uns bekommen werden ist ihr eigener Tod.</German>
+        <Russian>Мы не позволим преступникам шантажировать нас. Единственное, что они получают от нас, это смерть.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER</Tag>
         <English>A rumour is spreading: In [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] an indentured servant has stolen money from his employer.</English>
         <German>Ein Gerücht macht die Runde: In [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] hat ein Schuldknecht Geld von seinem Arbeitgeber gestohlen.</German>
+        <Russian>Ходят слухи, что в городе [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] наемный слуга украл деньги у своего работодателя.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_1</Tag>
         <English>Milord, an indentured servant is begging for our help. He stole money from his employer and lost it all gambling. He says he was trying to win enough money to buy his freedom.[NEWLINE]Now he feels guilty and pleads for a loan so he can put the money back before his employer notices the theft. He promises to pay us back. Otherwise it's likely that he'll run away to avoid prison.</English>
         <German>Milord, ein Schuldknecht ersucht unsere Hilfe. Er hat Geld von seinem Arbeitgeber gestohlen und es beim Spielen verloren. Er hat versuchte genug Geld zu gewinnen, um sich freizukaufen. Er fühlt sich nun schuldig und bittet uns ihm das Geld zu leihen, damit er es ersetzen kann, bevor sein Arbeitgeber den Diebstahl bemerkt. Er verspricht es uns wieder zurück zu zahlen. Falls nicht ist anzunehmen, dass er zu fliehen versucht.</German>
+        <Russian>Милорд, наемный слуга умоляет нас о помощи. Он украл деньги у своего работодателя и проиграл все в азартные игры. Он говорит, что пытался выиграть достаточно денег, чтобы купить свою свободу.[NEWLINE]Теперь он чувствует себя виноватым и умоляет о ссуде, чтобы вернуть деньги до того, как работодатель заметит кражу. Он обещает вернуть нам деньги. В противном случае, скорее всего, он сбежит, чтобы избежать тюрьмы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_1</Tag>
         <English>The indentured servant must take responsibility for his deeds! It is not up to us to solve the problems of petty thieves.</English>
         <German>Der Schuldknecht muss zu seinen Taten stehen! Wir sind nicht für die Probleme von gewöhnlichen Dieben verantwortlich.</German>
+        <Russian>Наемный слуга должен взять на себя ответственность за свои дела! Мы не будем решать проблемы мелких воришек.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_2</Tag>
         <English>We will show this man mercy, even give him the money to buy his freedom, as long as he understands that from now on he owes us loyalty.</English>
         <German>Wir werden Mitleid mit diesem Mann haben und ihm sogar genug Geld geben, um sich freizukaufen. Ab nun schuldet er uns aber Loyalität.</German>
+        <Russian>Мы пожалеем этого человека и даже дадим ему достаточно денег, чтобы выкупить его свободу. Отныне он обязан нам, проверим его верность.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_1_HELP</Tag>
         <English>The indentured servant will run away.</English>
         <German>Der Schuldknecht versucht zu fliehen.</German>
+        <Russian>Наемный слуга убежит.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PREACHER_AND_HARLOT</Tag>
         <English>A rumour is spreading: In [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] a priest was caught red-handed with a harlot.</English>
         <German>Ein Gerücht macht die Runde: In [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] wurde ein Priester mit einer Hure erwischt.</German>
+        <Russian>Распространяется слух: в городе [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] священника застукали с блудницей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PREACHER_AND_HARLOT_1</Tag>
         <English>Milord, we have a very delicate matter. The local priest was caught red-handed with a harlot from the lower district. He now claims that he was bewitched by her. The citizens from the upper district believe him and want to burn her as a witch. The poor people from the lower district have gathered around her to protect her, insisting that she is the actual victim. Whatever we will do, there will be unrest. How should we decide?</English>
         <German>Milord, wir sind in einer schwierigen Situation. Der örtliche Priester wurde auf frischer Tat mit einer Hure aus dem Unterviertel erwischt. Er behauptet nur er sei von dieser verhext worden. Die Bürger der Oberstadt scheinen ihm zu glauben und wollen die Hure als Hexe verbrennen. Aber die Armen aus der Unterstadt stellen sich schützend vor die Hure und behaupten sie sei das eigentliche Opfer. Was auch immer wir tun, es wird zu Unruhen kommen. Wie sollen wir uns entscheiden?</German>
+        <Russian>Милорд, у нас очень щекотливое дело. Местного священника поймали с поличным с блудницей из Нижнего округа. Теперь он утверждает, что был заколдован ею. Жители Верхнего района верят ему и хотят сжечь ее, как ведьму. Бедные люди из нижнего района собрались вокруг нее, чтобы защитить, настаивая на том, что она настоящая жертва. Что бы мы ни делали, будут волнения. Как мы должны поступить?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PREACHER_AND_HARLOT_1</Tag>
         <English>We will not let a woman be burned because of superstition and a weak priest!</English>
         <German>Wir werden nicht zulassen, dass eine Frau aufgrund von Aberglaube und eines schwachen Priesters verbrannt wird!</German>
+        <Russian>Мы не позволим сжечь женщину из-за суеверия и слабости священника!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PREACHER_AND_HARLOT_2</Tag>
         <English>We must preserve peace in this village and make sure this doesn't happen again. Let them burn the harlot!</English>
         <German>Wir müssen den Frieden in der Stadt bewahren und verhindern, dass so etwas noch einmal passiert. Lasst sie die Hure verbrennen!</German>
+        <Russian>Мы должны сохранить мир в этой деревне и сделать так, чтобы это больше не повторилось. Пусть сожгут шлюху!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PREACHER_AND_HARLOT_1_HELP</Tag>
         <English>The citizens revolt due to your decision to protect the harlot.</English>
         <German>Die Bürger werden aufgrund eurer Entscheidung, die Hure zu beschützen, revoltieren.</German>
+        <Russian>Горожане бунтуют из-за вашего решения защитить шлюху.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PREACHER_AND_HARLOT_2_HELP</Tag>
         <English>The poor from the lower district are outraged that you condemn the harlot. They revolt.</English>
         <German>Die Armen aus dem Unterviertel werden darüber aufgebracht sein, dass ihr die Hure verurteilt, und revoltieren.</German>
+        <Russian>Бедняки из нижнего округа возмущены тем, что вы осуждаете блудницу. На улицах полно бунтовщиков.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SLAVE_HUNTER_OFFERS_SERVICE</Tag>
         <English>A rumour is spreading: There are escaped slaves near [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT].</English>
         <German>Ein Gerücht macht die Runde: Entflohene Sklaven in der Nähe von [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT].</German>
+        <Russian>Ходят слухи, что рядом с [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] появились сбежавшие рабы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SLAVE_HUNTER_OFFERS_SERVICE_1</Tag>
         <English>Milord, a slave hunter has heard that escaped slaves were sighted near [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT]. He offers us his services.</English>
         <German>Milord, ein Sklavenjäger hat gehört, dass entflohene Sklaven in der Nähen von [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] gesichtet wurden. Er bietet uns seine Dienste an.</German>
+        <Russian>Милорд, охотник за рабами слышал, что недалеко от [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] были замечены сбежавшие рабы. Он предлагает нам свои услуги.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SLAVE_HUNTER_SERVICE_ACCEPT</Tag>
         <English>We will hire him. Tell him to bring these slaves back alive. They are valuable.</English>
         <German>Wir werden seine Dienste in Anspruch nehmen. Er soll diese Sklaven alle lebend zurück bringen, da sie wertvoll sind.</German>
+        <Russian>Мы наймем его. Скажи ему, чтобы вернул этих рабов живыми, они еще пригодятся.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SLAVE_HUNTER_SERVICE_REFUSE</Tag>
         <English>We do not need his services. Our militia can handle this.</English>
         <German>Wir benötigen seine Dienste nicht. Unsere Miliz kann der Situation auch Herr werden.</German>
+        <Russian>Мы не нуждаемся в его услугах. Наше ополчение справиться с этим самостоятельно.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SILVER_MINE_ROBBERY</Tag>
         <English>A rumour is spreading: A silver mine is regularly being robbed by buccaneers.</English>
         <German>Ein Gerücht macht die Runde: Eine Silbermine wird regelmäßig von Bukanieren ausgeraubt.</German>
+        <Russian>Ходят слухи, что пираты регулярно грабят серебряный рудник.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SILVER_MINE_ROBBERY_1</Tag>
         <English>Milord, there's a report from the foreman of one of our silver mines that buccaneers bribe workers there to let them steal some of the mined silver.</English>
         <German>Milord, einer der Vorarbeiter einer unserer Silberminen berichtet, dass Bukaniere regelmäßig die Minenarbeiter bestechen, damit diese sie einen Teil des Silbers stehlen lassen.</German>
+        <Russian>Милорд, мастер одного из наших серебряных рудников сообщает, что пираты регулярно подкупают горняков, чтобы они позволили им украсть часть серебра.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SILVER_MINE_ROBBERY_1</Tag>
         <English>This must be stopped immediately! Gather some men from the militia and pay them gold to guard the mine.</English>
         <German>Das muss sofort aufhören! Versammelt einige Männer aus der Miliz und zahlt ihnen Gold,, um die Mine zu bewachen.</German>
+        <Russian>Это нужно немедленно прекратить! Выделите несколько человек из ополчения и заплатите им золотом за охрану шахты.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SILVER_MINE_ROBBERY_2</Tag>
         <English>These criminals must pay for this! Search for them! Put an end to their miserable lives!</English>
         <German>Diese Kriminellen werden dafür bezahlen! Sucht sie und setzt ihrem Leben ein Ende.</German>
+        <Russian>Эти преступники должны заплатить за это! Найти и убить негодяев!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SILVER_MINE_ROBBERY_3</Tag>
         <English>Let us solve this peacefully, with as little cost as possible. Offer the miners enough gold so they will guard the silver themselves.</English>
         <German>Lasst uns dies friedlich und mit so wenig Kosten wie möglich bereinigen. Bietet den Minenarbeitern etwas Gold, damit sie das Silber selbst bewachen.</German>
+        <Russian>Давайте решим это мирным путем, с минимальными затратами. Предложите старателям достаточно золота, чтобы они сами охраняли серебро.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PACIFIC_1</Tag>
@@ -1224,6 +1252,7 @@
         <English>Foreign explorers have discovered and mapped an ocean in the west of the New World which undoubtedly leads to China.</English>
         <French>Des explorateurs étrangers ont découvert et cartographié un océan à l'Ouest du Nouveau Monde qui mène sans doute possible vers la Chine.</French>
         <German>Fremde Forscher sind uns zuvorgekommen! Sie haben im Westen dieser Neuen Welt ein weites Meer kartographiert, hinter dessen Horizont unzweifelhaft China liegt.</German>
+        <Russian>Иностранные исследователи обнаружили и нанесли на карту океан на западе Нового Света, который, несомненно, ведет в Китай.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PACIFIC_HELP</Tag>
@@ -1236,45 +1265,53 @@
         <Tag>TXT_KEY_EVENT_NATIVE_TRADER_ATTACK_HELP</Tag>
         <English>[ICON_BULLET]We are being attacked by hostile Natives!</English>
         <German>[ICON_BULLET]Wir werden durch Ureinwohner angegriffen!</German>
+        <Russian>[ICON_BULLET]На нас напали враждебно настроенные индейцы!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CRIMINALS_REVOLT_HELP</Tag>
         <English>[ICON_BULLET]The poor in our city revolt!</English>
         <German>[ICON_BULLET]Die Armen in unserer Stadt revoltieren!</German>
+        <Russian>[ICON_BULLET]Бедняки нашего города устроили бунт!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_BUCCANNERS_ATTACK_MINE_HELP</Tag>
         <English>[ICON_BULLET]Our silver mine is looted by buccaneers!</English>
         <German>[ICON_BULLET]Unseren Silbermine wird von Bukanieren angegriffen!</German>
+        <Russian>[ICON_BULLET]Наш серебряный рудник разграблен пиратами!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MILITIA_DEFENDS_MINE_HELP</Tag>
         <English>[ICON_BULLET]Our silver mine will be guarded by our militia!</English>
         <German>[ICON_BULLET]Unseren Silbermine wird von unserer Miliz bewacht!</German>
+        <Russian>[ICON_BULLET]Ополченцы будут охранять наш рудник!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_PACIFIC_DONE</Tag>
         <English>A [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] adventurer was the first to discover the western route to Asia.</English>
         <French>Un aventurier [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] a été le premier à découvrir la route vers l'Asie.</French>
         <German>Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Abenteurer hat als Erster die Westküste erkundet und eine Passage nach Asien gefunden.</German>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] искатель приключений первым открыл западный путь в Азию.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PACIFIC_DONE</Tag>
         <English>What a triumph! One of our explorers has discovered and mapped an ocean in the west of the New World which undoubtedly leads to China.</English>
         <French>Quelle triomphe ! Un de nos explorateurs a découvert et cartographié un océan à l'Ouest du Nouveau Monde qui mène sans doute possible vers la Chine.</French>
         <German>Welch Triumph! Einer unserer Entdecker hat im Westen dieser Neuen Welt ein weites Meer kartographiert, hinter dessen Horizont unzweifelhaft China liegt. Der Wettlauf um die Entdeckung der westlichen Seeroute nach Asien ist entschieden.</German>
+        <Russian>Какой триумф! Один из наших исследователей обнаружил и нанес на карту океан на западе Нового Света, который, несомненно, ведет в Китай.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_SELECT_EVENT</Tag>
         <English>[BOLD]Choose an event which should be triggered. It can only be started if all trigger conditions (XML and python) are met.[\BOLD]</English>
         <French>[BOLD]Choisissez un événement qui doit être déclenché. Il peut démarrer si toutes les conditions de déclenchement (XML et python) sont réunies.[\BOLD]</French>
         <German>[BOLD]Event aussuchen, das gestartet werden soll. Es kann nur gestartet werden, wenn alle Bedingungen im gewählten Trigger erfüllt sind (XML und Python).[\BOLD]</German>
+        <Russian>[BOLD]Выберите событие, которое должно быть активировано. Его можно запустить, только если соблюдены все условия запуска (XML и python).[\BOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_SELECT_NEVER_MIND</Tag>
         <English>[BOLD]Do not trigger an event.[\BOLD]</English>
         <French>[BOLD]Ne déclencher aucun événement.[\BOLD]</French>
         <German>[BOLD]Kein Event starten![\BOLD]</German>
+        <Russian>[BOLD]Не запускать событие.[\BOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_VOLCANO_DORMANT_1</Tag>
@@ -1283,6 +1320,7 @@
         <German>Der Vulkan nahe der [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Siedlung [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ist zur Ruhe gekommen.</German>
         <Italian>Il volcano vicino alla [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] citta di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] e comincia di dormire.</Italian>
         <Spanish>The volcano near the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] city of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] has become dormant again.</Spanish>
+        <Russian>Вулкан возле [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] снова стал бездействующим.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_VOLCANO_DORMANT_1</Tag>
@@ -1291,6 +1329,7 @@
         <German>Der Vulkan nahe [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hat aufgehört, tödliche Aschenwolken und Lavaflüsse auszuspucken.</German>
         <Italian>Il volcano vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] non ancora e attivo.</Italian>
         <Spanish>The volcano near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] has stopped spewing deadly ash clouds, lava, and mud- and debris-filled snow melts.</Spanish>
+        <Russian>Лава больше не вытекает из вулкана рядом с [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_VOLCANO_1_HELP</Tag>
@@ -1299,6 +1338,7 @@
         <German>[ICON_BULLET]Verlust der Geländefeld-Modernisierungen in der Nähe der Eruption</German>
         <Italian>[ICON_BULLET]Perdita dei miglioramenti delle caselle vicino all'eruzione</Italian>
         <Spanish>[ICON_BULLET]Pérdida de mejoras de casillas cerca de la erupción</Spanish>
+        <Russian>[ICON_BULLET]Улучшения клетки рядом с извержением уничтожены</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_TORNADO_1</Tag>
@@ -1307,6 +1347,7 @@
         <German>Ein schwerer Wirbelsturm hat eine Schneise der Verwüstung durch die [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Kolonien geschlagen.</German>
         <Italian>Dei terribili tornado hanno lasciato una scia di distruzione nell'impero [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT].</Italian>
         <Spanish>Unos tornados muy fuertes han dejado una estela de destrucción a su paso por el imperio [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT].</Spanish>
+        <Russian>Яростные торнадо проложили разрушительный путь через [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] Империю.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TORNADO_1</Tag>
@@ -1315,30 +1356,35 @@
         <German>Milord, eine Windhose, so hoch wie der Himmel, tobt durch unser Land. Wer nicht schnell genug flüchtet, den packt sie und lässt ihn wie Herbstlaub durch die Luft tanzen. Eine Gemeinde ist nun ohne %s8_improvement, weil der Sturm alle Bauten zerriss. Können wir den Menschen helfen?</German>
         <Italian>I cieli si sono aperti e la giustizia divina ha colpito. Dei terribili tornado hanno spazzato via %s8_improvement.</Italian>
         <Spanish>Los cielos se han abierto y un puño castigador ha caído sobre nosotros. Las terribles ráfagas de viento huracanado han derribado [NUM8:nuestro:nuestra:nuestros:nuestras] %s8_improvement.</Spanish>
+        <Russian>Милорд, над нашей страной бушует торнадо высотой до неба. Всех, кто не успел убежать и спрятаться, он подхватывает и крутит в воздухе, как осенние листья. Одно поселение теперь без %s8_improvement, потому что вихрь уничтожил все на своём пути. Мы можем помочь людям?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_WHEELWRIGHT</Tag>
         <English>Eager wheelwrights work sacrificially for the citizens in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
         <French>Des menuisiers-charrons souhaitent aider les citoyens de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>Eifrige Stellmacher setzen sich aufopferungsvoll für die kleinen Leute in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ein.</German>
+        <Russian>Усердные колесные мастера самоотверженно трудятся ради жителей [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_WHEELWRIGHT</Tag>
         <English>Milord, the wheelwrights in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] offer to construct carts for the farmers to help them cultivate their fields.</English>
         <French>Seigneur, les menuisiers-charrons de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vous proposent de construire des chariots pour aider les fermiers à cultiver leurs champs.</French>
         <German>Milord, die Stellmacher Eurer Wagnerei in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] bieten an, den Bauern Karren zu bauen, so dass sie ihre Felder flinker bewirtschaften können.</German>
+        <Russian>Милорд, колесные мастера в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] предлагают построить тележки для фермеров, чтобы помочь им обрабатывать поля.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_CATHEDRAL</Tag>
         <English>The cathedral in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] is a popular attraction for foreigners.</English>
         <French>La cathédrale de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] attirent l'attention des étrangers.</French>
         <German>Die Kathedrale in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] lockt Fremde an.</German>
+        <Russian>Собор в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] — популярная достопримечательность среди иностранцев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_CATHEDRAL</Tag>
         <English>Milord, a ranger is waiting outside the door. Terrible things he has seen in the wilderness, he says, and terrible things he has done. From afar he saw the tower of our cathedral, and took this as a sign to change his life.</English>
         <French>Seigneur, un garde-forestier vous attend. Il dit qu'il a fait des choses terribles. Des scalpes sont accrochés à sa ceinture et sa veste est pleine de sang. Il a vu la tour de notre cathédrale et veut changer de vie. Il demande ce qu'il peut faire pour la communauté.</French>
         <German>Milord, ein Waldläufer wartet vor der Tür. Furchtbares habe er in der Wildnis gesehen, meint er, und Furchtbares habe er getan. Aus der Ferne sah er den Turm unserer Kathedrale, und hielt dies für ein Zeichen, sein Leben zu ändern.</German>
+        <Russian>Милорд, за дверью вас ждет рейнджер. Он говорит, что в своей жизни он совершил много всего ужасного, но не думал об этом до того момента, пока издалека не увидел башню нашего собора. Он воспринял это как знак изменить свою жизнь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BABY_BOOM_1</Tag>
@@ -1347,6 +1393,7 @@
         <German>Überglückliche [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Soldaten feiern, dass sie den Krieg überlebt haben.</German>
         <Italian>I soldati [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] e le loro mogli celebrano la fine della guerra, creando un boom di nascite.</Italian>
         <Spanish>Los soldados [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] y sus mujeres están celebrando el final de la guerra con un "baby boom".</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] солдаты и их жены отмечают окончание войны, повышая демографию страны.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BABY_BOOM_1</Tag>
@@ -1355,12 +1402,14 @@
         <German>Milord, abgekämpft und müde kehren unsere Männer aus dem Krieg, in den Ihr sie schicktet, heim. Doch sind sie nicht müde genug, in den Wirtshäusern zu feiern und ihre Kriegsbeute zu verprassen. Die Schankmaiden machen den Kriegshelden schöne Augen und diese den Jungfern dicke Bäuche. Es ist ein schandhaftes Treiben, findet Ihr nicht?</German>
         <Italian>I nostri soldati, tornati dalla guerra, si sono dedicati alla pace e a crearsi delle famiglie. La nostra civiltà gode di un boom di nascite!</Italian>
         <Spanish>Nuestros soldados, al volver de la guerra, se han dedicado a la paz y a cuidar de sus familias. ¡Nuestra civilización está atravesando un "baby boom"!</Spanish>
+        <Russian>Милорд, измученные и уставшие, наши люди возвращаются домой с войны, на которую вы их отправили. Но они не настолько устали, чтобы не праздновать победу в тавернах. Барменши строят глазки героям войны и вскоре мы увидим множество больших животов. Позорное действо, вам не кажется?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_BABY_BOOM_HELP</Tag>
         <English>Population growth in 1 to %d1 cities.</English>
         <French>Croissance de la population dans 1 à %d1 villes.</French>
         <German>Bevölkerungswachstum in 1 bis %d1 Siedlungen.</German>
+        <Russian>В %d1 городах население увеличивается на 1</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_JADE</Tag>
@@ -1369,6 +1418,7 @@
         <German>Die [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Bergleute sind auf Jadevorkommen gestoßen.</German>
         <Italian>I minatori [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] hanno trovato dei depositi di giada.</Italian>
         <Spanish>Los mineros [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] han dado con depósitos de jade.</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] горняки обнаружили залежи нефрита.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_JADE_1</Tag>
@@ -1377,6 +1427,7 @@
         <German>Milord, in den Bergen nahe [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sind Minenarbeiter auf seltsame Geröllhaufen gestoßen. Es scheint Jade zu sein. Das satte Grün des Waldes und das seelenvolle Blau des Meeres schimmern in den weichen Steinen.[NEWLINE]Einen haben die Arbeiter den Eingeborenen gezeigt. Ihre Gesichter leuchteten vor Glück, und sie boten ihnen Gold zum Tausch an.</German>
         <Italian>Signore, nelle montagne vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], i minatori si sono imbattuti in strani cumuli di macerie. Sembra essere giada. Il verde ricco della foresta e l'azzurro intenso del mare brillano nelle pietre morbide. I loro volti si illuminarono di felicità e offrirono loro dell'oro in cambio.</Italian>
         <Spanish>Excelencia, en las montañas cercanas a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], los mineros han encontrado extraños montones de escombros. Parece ser jade. El verde intenso del bosque y el azul conmovedor del mar brillan en las piedras blandas.[NEWLINE]Los trabajadores mostraron una a los nativos. Sus rostros se iluminaron de felicidad y les ofrecieron oro a cambio.</Spanish>
+        <Russian>Милорд, в горах возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] шахтеры наткнулись на странные груды камней. Кажется, это нефрит. Насыщенная зелень леса и одухотворенная синева моря переливаются в этих камнях.[NEWLINE]Рабочие показали один из них индейцам. Их лица озарились счастьем и они предложили им золото в обмен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_JADE_1_LANDMARK</Tag>
@@ -1385,6 +1436,7 @@
         <German>Jade</German>
         <Italian>Giada</Italian>
         <Spanish>Jade</Spanish>
+        <Russian>Нефрит</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_WHALEOFATHING</Tag>
@@ -1402,6 +1454,7 @@
         <German>Ihr späht in das von Tranfunzeln dürftig erhellte Gewölbe der Taverne. Die Luft ist zum Schneiden. Tabakqualm und die Ausdünstungen saufender Seefahrer füllen den Raum. Viele umringen einen hageren Kapitän, der mit geweiteten Augen und heiserer Stimme die Meute unterhält. Ihr vernehmt neben viel Gelächter einige schrille Wortfetzen: [COLOR_SELECTED_TEXT]"Augen, glühend groß wie Schmiedefeuer ... dreißig Tentakel."[COLOR_REVERT] [COLOR_SELECTED_TEXT]"Schnappende Höllenmäuler ... mein Schiff fast zertrümmert ..."[COLOR_REVERT], tönt es herüber. Euer Adjutant flüstert Euch beflissen zu: [COLOR_SELECTED_TEXT]"Nun, vorhin war es noch ein einziges Seeungeheuer mit schlappen zwanzig Tentakeln. Milord, was gedenkt Ihr mit diesem Aufschneider zu tun?"[COLOR_REVERT]</German>
         <Italian>Scruti il soffitto a volta della taverna, fiocamente illuminato dalle trasfusioni. L'aria è tagliente. Il fumo del tabacco e le esalazioni dei marinai ubriachi riempiono la stanza. Molti circondano un capitano magro che intrattiene la folla con occhi dilatati e una voce rauca. Si sentono alcuni frammenti di parole stridenti insieme a molte risate: [COLOR_SELECTED_TEXT]"Occhi incandescenti come fuoco di fucina ... trenta tentacoli."[COLOR_REVERT] [COLOR_SELECTED_TEXT]"Bocche infernali che scattano ... Quasi distrutto la mia nave a pezzi ..."[COLOR_REVERT], suona finita. Il tuo aiutante ti sussurra, compiaciuto: [COLOR_SELECTED_TEXT]"Beh, un attimo fa era un singolo mostro marino con appena venti tentacoli. Milord, cosa intende fare con questo millantatore?"[COLOR_REVERT]</Italian>
         <Spanish>Te asomas al techo abovedado de la taberna, tenuemente iluminado por las transfunciones. El aire es cortante. El humo del tabaco y las exhalaciones de los marineros borrachos llenan la habitación. Muchos rodean a un capitán demacrado que entretiene a la multitud con los ojos dilatados y la voz ronca. Se oyen unas cuantas palabras estridentes junto con muchas risas: [COLOR_SELECTED_TEXT]"Ojos tan brillantes como el fuego de una fragua... treinta tentáculos."[COLOR_REVERT] [COLOR_SELECTED_TEXT]"Bocas del infierno chasqueantes... Casi destroza mi nave..."[COLOR_REVERT], suena por encima. Su ayudante le susurra, complaciente: [COLOR_SELECTED_TEXT]"Bueno, hace un momento era un solo monstruo marino con apenas veinte tentáculos. Milord, ¿qué piensa hacer con este fanfarrón?"[COLOR_REVERT]</Spanish>
+        <Russian>Вы оглядываете таверну, тускло освещенную бра со свечами. Воздух настолько плотный, что кажется, его можно нарезать на ломтики ножом. Табачный дым и вонючее дыхание пьяных матросов наполняют помещение. Большинство посетителей сгрудились вокруг сухопарого капитана с расширенными глазами и хриплым голосом, развлекающего толпу. Среди громкого смеха вы слышите обрывки слов: [COLOR_SELECTED_TEXT]"И глаза у них горели, как кузнечное пламя... по тридцать щупалец".[COLOR_REVERT] [COLOR_SELECTED_TEXT]"Щелкающие адские пасти... мой корабль чуть не разлетелся на куски..."[COLOR_REVERT]. Ваш адъютант тихо шепчет вам: [COLOR_SELECTED_TEXT]"Минуту назад это было всего лишь одно морское чудовище с двадцатью щупальцами. Милорд, что вы намерены делать с этим хвастуном?"[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_WHALEOFATHING_1_LANDMARK</Tag>
@@ -1410,24 +1463,28 @@
         <German>Wale</German>
         <Italian>Balene</Italian>
         <Spanish>Ballenas</Spanish>
+        <Russian>Киты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_CACAO_BONUS</Tag>
         <English>The people in the [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] colonies discovered a new species of exceptionally fertile cocoa plants.</English>
         <French>Les colons [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] ont découvert une nouvelle espèce de cacaoyer particulièrement fertile.</French>
         <German>In den [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Kolonien wurde eine neue Sorte ertragreicher Kakaobäume entdeckt.</German>
+        <Russian>Жители [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] колоний обнаружили новый вид исключительно плодовитых растений какао.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CACAO_BONUS_1</Tag>
         <English>Natives have shown our cocoa pickers some exceptionally productive cocoa trees.</English>
         <French>Les indigènes ont montré à nos cueilleurs de cacao une espèce de cacaoyer particulièrement fertile.</French>
         <German>Indios haben unseren Kakaopflückerinnen im Urwald eine neue Sorte besonders ertragreicher Kakaobäume gezeigt.</German>
+        <Russian>Индейцы показали нашим сборщикам какао несколько исключительно плодовитых какао-деревьев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_BONUS_HELP</Tag>
         <English>[ICON_BULLET]New [COLOR_YIELD_FOOD]%s1_bonus[COLOR_REVERT] bonus resource</English>
         <French>[ICON_BULLET]Nouvelle ressource bonus de %s1_Icon ressources</French>
         <German>[ICON_BULLET]Neue [COLOR_YIELD_FOOD]%s1_bonus[COLOR_REVERT] Bonusressource</German>
+        <Russian>[ICON_BULLET]Новый бонусный ресурс [COLOR_YIELD_FOOD]%s1_bonus[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HERBS</Tag>
@@ -1436,6 +1493,7 @@
         <German>Die [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Siedler helfen den Wilden mit heilenden Kräutern.</German>
         <Italian>Gli orticultori [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] hanno sfruttato rare risorse locali per produrre farmaci.</Italian>
         <Spanish>Los horticultores [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] han aprovechado extraños recursos del lugar para producir remedios.</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] колонисты помогают туземцам с целебными травами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HERBS_1</Tag>
@@ -1451,6 +1509,7 @@
         <English>Herbs</English>
         <French>Herbes</French>
         <German>Kräuter</German>
+        <Russian>Травы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CALM_1</Tag>
@@ -1507,7 +1566,7 @@
         <English>Be the first to found at least %s1 settlements in the heartland (with no access to the sea or inland sea).</English>
         <French>Soyez le premier à fonder au moins %s1 colonies dans les terres (sans accès à l'océan ou à des lacs et mers intérieurs).</French>
         <German>Gründet als Erster mindestens %s1 Siedlungen im Landesinneren (ohne Zugang zum Ozean oder einem Binnenmeer).</German>
-        <Russian>Будьте первым, кто создаст не менее %s1 поселений внутри континента (без доступа к морю или внутреннему морю).</Russian>
+        <Russian>Будьте первым, кто создаст не менее %s1 поселений внутри континента (без доступа к океану или внутреннему морю).</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_TERRAX</Tag>

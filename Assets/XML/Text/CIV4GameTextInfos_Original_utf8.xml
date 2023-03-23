@@ -729,7 +729,7 @@
         <Tag>TXT_KEY_UNIT_ADDITIONAL_LAW_TO_CITY</Tag>
         <English>[ICON_BULLET]Additional Law: +%d1_Num%F2_Icon (if population not too low)</English>
         <German>[ICON_BULLET]Zusätzliches Gesetz: +%d1_Num%F2_Icon (falls Bevölkerung nicht zu niedrig)</German>
-        <Russian>[ICON_BULLET]Прибавка к закону: +%d1_Num%F2_Icon (если население не слишком мало)</Russian>
+        <Russian>[ICON_BULLET]Прибавка к закону: +%d1_Num%F2_Icon (если размер колонии больше 9)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BOMBARD_RATE_CHANGE</Tag>
@@ -10448,7 +10448,7 @@
         <Tag>TXT_KEY_PROMOTION_ADDITIONAL_LAW_TO_CITY_TEXT</Tag>
         <English>[ICON_BULLET]+%d1_Num%F2_Icon to city (if population not too low)</English>
         <German>[ICON_BULLET]+%d1_Num%F2_Icon in der Stadt (falls Bevölkerung nicht zu niedrig)</German>
-        <Russian>[ICON_BULLET]+%d1_Num%F2_Icon в городе (если население не слишком мало)</Russian>
+        <Russian>[ICON_BULLET]+%d1_Num%F2_Icon в городе (если размер колонии больше 9)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NEGATIVE_PROMOTION</Tag>

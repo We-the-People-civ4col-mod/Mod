@@ -4393,7 +4393,7 @@
         <German>Hartelijk welkom! Gestattet, dass ich Euch meine Aufwartung mache, Mijnheer. [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Rechtsanwalt, Naturforscher und gewählter Repräsentant der [COLOR_HIGHLIGHT_TEXT]niederländischen[COLOR_REVERT] Expedition. Ich muss gestehen, die Schönheiten dieser Neuen Welt berauschen mich.</German>
         <Italian>Sono onorato di incontrarti, grande [CT_NAME]! Come può aiutarti, oggi, la civiltà [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]?</Italian>
         <Spanish>Es un honor conocer al gran [CT_NAME]. ¿En qué pueden ayudaros hoy los [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]?</Spanish>
-        <Russian>Сердечно приветствую! Позвольте мне засвидетельствовать вам свое почтение, Mijnheer. [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], юрист, натуралист и избранный представитель [COLOR_HIGHLIGHT_TEXT]голландской[COLOR_REVERT] экспедиции. Должен признаться, красоты этого Нового Света опьяняют меня.</Russian>
+        <Russian>Сердечно приветствую! Позвольте мне засвидетельствовать вам свое почтение, мистер. Я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], юрист, натуралист и избранный представитель [COLOR_HIGHLIGHT_TEXT]голландской[COLOR_REVERT] экспедиции. Должен признаться, красоты этого Нового Света опьяняют меня.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_FRONTENAC_1</Tag>
@@ -5586,7 +5586,7 @@
         <German>Bedaure, ich muss mich Euch widersetzen, Eure Majestät. Und meine Bürger auch. Wie ich höre, haben sie in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] aus Protest alle [COLOR_UNIT_TEXT]%s2_yield[COLOR_REVERT] vernichtet. (Ihr könnt dieses Handelsgut nun nicht mehr mit Europa handeln.)</German>
         <Italian>No, è ora di smetterla col [COLOR_UNIT_TEXT]%s2_yield[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]! (Non potrai più commerciare questo bene con l'Europa.)</Italian>
         <Spanish>¡No, es hora del partido [NUM2:del:de la:de los:de las] [COLOR_UNIT_TEXT]%s2_yield[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]! (Ya no podréis intercambiar esta mercancía con Europa).</Spanish>
-        <Russian>Сожалею, что вынужден противостоять Вам, Ваше Величество. И то же самое должны сделать мои граждане. Я слышал, что в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] в знак протеста уничтожили все [COLOR_UNIT_TEXT]%s2_yield[COLOR_REVERT]. (Вы больше не сможете торговать этим товаром с Европой)</Russian>
+        <Russian>Сожалею, Ваше Величество, но отсутствие наших представителей в Парламенте вынуждает меня не подчиниться Вам. Кстати, я слышал, что жители [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] в знак протеста уничтожили все запасы [COLOR_UNIT_TEXT]%s2_yield[COLOR_REVERT]. (Вы больше не сможете торговать этим товаром в Европе и Африке)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ACCEPT_PINKY_1</Tag>
@@ -6065,7 +6065,7 @@
         <German>Ein Schatz! Sieh an. Diese Neue Welt scheint über gewisse Reichtümer zu verfügen. Nun, eine Königliche Galeone kann die Pretiosen in die Heimat überführen. Überlasst den Fund der Krone, und Ihr erhaltet von Uns stante pede %d2[ICON_GOLD] und könnt Euch danach wieder Eurem Tagesgeschäft widmen.</German>
         <Italian>Un tesoro! Bene, bene. Questo Nuovo Mondo sembra avere ricchezze. Un galeone reale può traghettare gli oggetti di valore a casa. Lascia il ritrovamento alla Corona, riceverai %d2[ICON_GOLD] da Noi all'istante, e potrai tornare ai tuoi affari quotidiani.</Italian>
         <Spanish>Ein Schatz! Sieh an, sieh an. Diese Neue Welt scheint Reichtümer zu haben. Eine königliche Galeone kann die Kostbarkeiten nach Hause transportieren. Überlasst den Fund der Krone, Ihr erhaltet sofort %d2[ICON_GOLD] von Uns, und Ihr könnt Euch wieder Eurem Tagesgeschäft widmen.</Spanish>
-        <Russian>Настоящее сокровище! Так так, этот Новый Свет, кажется, полон несметных богатств. Королевский галеон сможет доставить эти драгоценности домой быстро и безопасно. Можете доверить находку Короне. Вы немедленно получите от Нас %d2[ICON_GOLD] и сможете вернуться к своим повседневным делам.</Russian>
+        <Russian>Настоящее сокровище! Так так, кажется, этот Новый Свет полон несметных богатств. Королевский галеон сможет доставить эти драгоценности домой быстро и безопасно. Можете доверить находку Короне. Вы немедленно получите от Нас %d2[ICON_GOLD] и сможете вернуться к своим повседневным делам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_TREASURE_TRANSPORT_2</Tag>
