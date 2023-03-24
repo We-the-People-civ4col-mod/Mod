@@ -1530,36 +1530,42 @@
         <English>[COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] is affected by a strong tailwind.</English>
         <French>Votre navire [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] est affecté par de forts vents arrières.</French>
         <German>Euer Schiff [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] wird von kräftigem Rückenwind begünstigt.</German>
+        <Russian>Какая удача! Сильный попутный ветер значительно ускорил ход нашего [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TAILWIND_HELP_1</Tag>
         <English>[ICON_BULLET]%D1 additional moves for [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT]</English>
         <French>[ICON_BULLET]%D1 déplacement supplémentaires pour [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT]</French>
         <German>[ICON_BULLET]%D1 zusätzliche Bewegungspunkte für [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT].</German>
+        <Russian>[ICON_BULLET]%D1 дополнительных хода для [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TAILWIND_HELP_2</Tag>
         <English>[ICON_BULLET]%D1 faster passage to Europe for [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT]</English>
         <French>[ICON_BULLET]%D1 passage plus rapide vers l'Europe pour [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT]</French>
         <German>[ICON_BULLET]%D1 schnellere Überfahrt für [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT].</German>
+        <Russian>[ICON_BULLET]Плавание в Европу для [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] пройдет быстрее на %D1 хода </Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_RUNAWAY</Tag>
         <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] horses ran away into the wilderness.</English>
         <French>Des chevaux de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] se sont enfuits dans la nature.</French>
         <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sind Pferde entlaufen und in die Wildnis geflohen.</German>
+        <Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] несчастье - лошади из местной конюшни сбежали в пустошь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RUNAWAY_1</Tag>
         <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] horses galloped off into the wilderness. Our [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] neighbours in [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] are suspected of rustling the horses.</English>
         <French>Des chevaux de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] se sont enfuits dans la nature. Nos voisins [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] à [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] sont suscpéctés d'avoir capturé les chevaux.</French>
         <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sind Pferde entlaufen und in die Wildnis geflohen. Unsere [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] Nachbarn in [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] werden verdächtigt, die Pferde eingefangen zu haben.</German>
+        <Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] лошади ускакали в пустошь. Наши [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] соседи из [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] подозреваются в угоне лошадей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TERRAX_1</Tag>
         <English>Milord, astonishing news has reached us from the Old World. At the coronation feast of the Habsburg Emperor, the rulers of Europe were all gathered together. As the wine flowed, they bragged and teased each other. One word led to another and finally a bet was made: the ruler first to have the most new towns in the interior of the New World will win. Our own King promises us rich rewards if we help Him win the bet!</English>
         <French>Seigneur, du Vieux Monde nous parvient une nouvelle étonnante : lors de la fête du couronnement de l'empereur teuton, les souverains d'Europe ont festoyé ensemble au banquet. Le vin coule à flot, ils se vantent et se taquinent. Un mot a mené à un autre et finalement un pari a été fait : Pour la Majesté qui réussit la première à fonder de nombreuses nouvelles villes à l'intérieur du Nouveau Monde, les autres Altesses doivent embrasser son cul nu. Sa Majesté nous a promis de riches récompenses si nous l'aidons à gagner le pari !</French>
         <German>Milord, aus der Alten Welt dringt eine erstaunliche Kunde: Beim Krönungsfest des teutschen Kaisers zechten die Herrscher Europas gemeinsam beim Bankett. Der Rebensaft floss, man prahlte und neckte einander. Ein Wort gab das andere und schließlich wurde eine Wette geschlossen: Der Majestät, der es als Erster gelingt, viele neue Städte im Landesinneren der Neuen Welt zu gründen, der müssen die anderen Hoheiten den blanken Arsch küssen. Seine Majestät hat uns reichen Lohn versprochen, wenn wir ihm zum Wettsieg verhelfen!</German>
+        <Russian>Милорд, из Старого Света до нас дошли удивительные новости. На пиру в честь коронации Императора Габсбургов собрались все правители Европы. В винном угаре монархи хвастались и поддразнивали друг друга. Одно слово тянулось за другим и в конце концов было заключено пари: победит тот правитель, у которого первым окажется больше всего новых городов во внутренних районах Нового Света. Наш Король сулит нам богатые награды, если мы поможем Ему выиграть пари!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TERRAX_HELP</Tag>
@@ -1573,60 +1579,70 @@
         <English>Bad news, Milord! Another governor was faster than you and was the first to found new settlements in the heartland. His Majesty has lost the bet.</English>
         <French>Mauvaise nouvelle, Milord. Votre Roi a perdu son pari. Les colons d'une autre nations ont fondé plusieurs colonies à l'intérieur des terres.</French>
         <German>Schlechte Kunde, Milord! Ein anderer Statthalter war schneller als Ihr und hat als Erster im Landesinneren neue Siedlungen gegründet. Seine Majestät hat die Wette verloren.</German>
+        <Russian>Плохие новости, милорд! Другой губернатор был быстрее нас и первым основал новые поселения в вдали от побережья. Его Величество проиграл пари.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_TERRAX_DONE</Tag>
         <English>Numerous new [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] settlements have been established inland.</English>
         <French>De nombreuses nouvelles colonies [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] ont été fondées à l'intérieur des terres.</French>
         <German>Zahlreiche neue [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Siedlungen wurden im Landesinneren gegründet.</German>
+        <Russian>Внутри страны было основано множество новых поселений [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TERRAX_DONE</Tag>
         <English>Great news, Milord! His Majesty, our beloved King, has won his wager. Your settlers now have several communities in the heartland.</English>
         <French>Excellente nouvelle, Milord ! Nous avons fait gagner à notre Roi son pari. Vous avez fondé plusieurs colonies à l'intérieur des terres.</French>
         <German>Großartige Kunde, Milord! Ihr habt so viele neue Siedlungen im Landesinneren gegründet, dass unser König seine Wette gewinnen konnte. Seine Majestät ist voll des Lobes über Euch!</German>
+        <Russian>Отличные новости, милорд! Его Величество, наш любимый Король, выиграл пари. У наших поселенцев теперь есть несколько поселений вдали от моря.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SHIPYARD</Tag>
         <English>The shipyard in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] attracts harlots from the Old World.</English>
         <French>Le port de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] attirent des prostitués venus d'Europe.</French>
         <German>Die Schiffswerft in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] lockt Dirnen aus der Alten Welt an.</German>
+        <Russian>Верфь в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] привлекает проституток из Старого Света.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SHIPYARD</Tag>
         <English>Milord, in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a resolute captain's widow has opened a brothel next to the shipyard and recruited a few young whores from home, who now sweeten the stevedores' evenings. Should we expel these wanton women?</English>
         <French>Seigneur, la veuve d'un capitaine a ouvert un bordel à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Elle a recruté des jeunes prostitués venues d'Europe pour adoucir les soirées de nos marins. Devons-nous les expulser hors de nos colonies ?</French>
         <German>Milord, in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hat eine resolute Kapitänswitwe neben der Schiffswerft ein Bordell aufgemacht und ein paar junge Dirnen aus der Heimat angeworben, die nun den Zimmerleuten und Schauerleuten den Feierabend versüßen. Sollen wir die Weibsbilder vertreiben?</German>
+        <Russian>Милорд, в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] решительная вдова капитана открыла бордель рядом с верфью и набрала несколько молодых шлюх из Европы, которые теперь услаждают вечера грузчиков. Должны ли мы изгнать этих распутных женщин?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_CARGOSPACE</Tag>
         <English>A master shipwright offers his services in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
         <French>Un maître charpentier de navire vous propose ses services à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>Ein Schiffsbaumeister bietet seine Dienste in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] an.</German>
+        <Russian>Мастер-корабел предлагает свои услуги в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CARGOSPACE_1</Tag>
         <English>Milord, in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], a passing master shipwright says he can improve a ship in our harbour. Through clever use of space he wants to create more cargo capacity. Shall we let him do so?</English>
         <French>Seigneur, un maître charpentier de navire propose d'augmenter la capacité en cargaison de l'un de vos bateaux à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>Milord, in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] bietet Euch ein durchreisender Schiffsbaumeister an, in der Schiffswerft ein Schiff auszubauen. Durch geschickte Raumnutzung will er mehr Stauraum schaffen. Sollen wir ihn gewähren lassen?</German>
+        <Russian>Милорд, в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] какой-то мастер-корабел говорит, что может улучшить корабль в нашей гавани. Благодаря разумному использованию пространства он хочет увеличить грузоподъемность. Давайте позволим ему это сделать?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CARGOSPACE_HELP</Tag>
         <English>[ICON_BULLET]With a %d3% percentage of success the unit [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] receives %d1 [NUM1:extra cargo space:extra cargo spaces].</English>
         <French>[ICON_BULLET]Le navire [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] a %d3% pourcent de chance de recevoir %d1 [NUM1:espace de cargaison supplémentaire:espaces de cargaison supplémentaires].</French>
         <German>[ICON_BULLET]Mit %d3% Wahrscheinlichkeit erhält das Schiff [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] %d1 [NUM1:zusätzlichen Frachtraum:zusätzliche Frachträume].</German>
+        <Russian>[ICON_BULLET][COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] получит %d1 [NUM1:дополнительный грузовой отсек:дополнительных грузовых отсека] (процент успеха %d3%).</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CARGOSPACE_FAILED</Tag>
         <English>[COLOR_NEGATIVE_TEXT]Milord, the impostor has fled with your money![COLOR_REVERT]</English>
         <French>[COLOR_NEGATIVE_TEXT]Milord, l'imposteur s'est enfui avec votre argent ![COLOR_REVERT]</French>
         <German>[COLOR_NEGATIVE_TEXT]Milord, der Hochstapler hat sich mit Eurem Geld auf und davon gemacht![COLOR_REVERT]</German>
+        <Russian>[COLOR_NEGATIVE_TEXT]Милорд, мошенник скрылся с нашими деньгами![COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CARGOSPACE_SUCCESS</Tag>
         <English>[COLOR_POSITIVE_TEXT]Milord, the expansion of the [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] cargo space is progressing quickly.[COLOR_REVERT]</English>
         <French>[COLOR_POSITIVE_TEXT]Milord, l'amélioration de la cargaison pour le navire [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] avance rapidement.[COLOR_REVERT]</French>
         <German>[COLOR_POSITIVE_TEXT]Milord, der Ausbau der [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] schreitet zügig voran.[COLOR_REVERT]</German>
+        <Russian>[COLOR_POSITIVE_TEXT]Милорд, расширение грузового отсека [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] идет полным ходом.[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HYMNS_AND_SCULPTURES</Tag>
@@ -1635,6 +1651,7 @@
         <German>Von den religiösen Klängen und Skulpturen in der Stadt [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] inspiriert, wurden im [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Reich neue Künstler ausgebildet.</German>
         <Italian>Nell'impero [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] è emerso un nuovo Grande Artista, ispirato dalla musica e dalla scultura religiose a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
         <Spanish>Inspirado por la música y las esculturas religiosas de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], ha aparecido un gran artista en el imperio [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT].</Spanish>
+        <Russian>Вдохновленный религиозной музыкой и скульптурой в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], в [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] Империи появляется великий художник.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HYMNS_AND_SCULPTURES_1</Tag>
@@ -1643,6 +1660,7 @@
         <German>Die Musik, die in Eurer %s5_building in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] gespielt wird, hat zahlreiche junge Menschen dazu inspiriert, sich zu Künstlern ausbilden zu lassen!</German>
         <Italian>La musica suonata in %s5_building a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha ispirato un giovane, che è poi diventato un Grande Artista!</Italian>
         <Spanish>La música tocada en [NUM5:nuestro:nuestra:nuestros:nuestras] %s5_building de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha inspirado a un joven, que ha crecido hasta convertirse en un gran artista.</Spanish>
+        <Russian>Музыка, играющая в вашем %s5_building в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], вдохновила молодого исполнителя, который стал великим артистом!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HYMNS_AND_SCULPTURES_2</Tag>
@@ -1651,42 +1669,49 @@
         <German>Die in der %s5_building der Stadt [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] zu besichtigende Kunst und Bildhauerei hat der Vorstellungskraft und dem Talent neuer Künstler Vorschub geleistet!</German>
         <Italian>L'arte e la scultura che decorano %s5_building a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hanno nutrito l'immaginazione e i talenti di un nuovo Grande Artista!</Italian>
         <Spanish>El arte y las esculturas que decoran [NUM5:el:la:los:las] %s5_building de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha alimentado la imaginación y el talento de un nuevo gran artista.</Spanish>
+        <Russian>Искусство и скульптуры, украшающие ваше %s5_building в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], разожгли воображение и талант нового великого художника!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_ANTI_PIRATE_1</Tag>
         <English>Because of constant attacks on peaceful merchant ships, frigates have been sent from Europe to hunt down the harassers.</English>
         <French>Les attaques incessantes de nos navires marchands a conduit l'Europe à nous envoyer des frégates pour faire fuire les agresseurs.</French>
         <German>Unablässige Angriffe auf Handelsschiffe beeinträchtigen den Handel mit Europa. Ein Monarch schickt eine Fregatte, um die Störenfriede zu vertreiben.</German>
+        <Russian>Из-за постоянных нападений на мирные торговые суда из Европы были отправлены фрегаты, чтобы выследить пиратов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_ANTI_PIRATE_2</Tag>
         <English>Following ongoing attacks on merchant ships, frigates are coming from Europe to destroy the predators once and for all.</English>
         <French>Les attaques incessantes de nos navires marchands a conduit l'Europe à nous envoyer des frégates pour en finir une fois pour toute.</French>
         <German>Immer noch beeinträchtigen Piraten die Überfahrten der Händler nach Europa. Ein Monarch schickt eine Fregatte, um den Störenfrieden den Garaus zu machen.</German>
+        <Russian>После непрекращающихся атак на торговые суда из Европы прибывают фрегаты, чтобы уничтожить хищников раз и навсегда.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_ANTI_PIRATE_3</Tag>
         <English>Privateers and pirates are still terrorizing the merchants. A king in Europe is sending a third frigate to America to protect the sea lanes.</English>
         <French>Les bateaux de guerre et les pirates continuent à terroriser nos marchands. Un roi en Europe décide d'envoyer une troisième frégate aux Amériques pour protéger les voies maritimes.</French>
         <German>Piraten terrorisieren ohne Unterlass die Überfahrten der Händler nach Europa. Ein Monarch scheut weder Kosten noch Mühen und schickt zum dritten Mal eine Fregatte nach Amerika, um die Küste sicherer zu machen.</German>
+        <Russian>Каперы и пираты все еще терроризируют купцов. Короли Европы отправляют в Америку третий фрегат для защиты морских путей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ANTI_PIRATE_1</Tag>
         <English>Milord, hostile ships are hunting our merchants. Our King's frigate will send them to a watery grave.</English>
         <French>Seigneur, des navires hostiles chassent nos marchands. Notre Roi va envoyer une frégate pour combattre les pirates.</French>
         <German>Milord, Piraten und Freibeuter fremder Nationen machen unsere Küste unsicher. Seine Majestät wird eine Fregatte entsenden, um den Halunken ein nasses Grab zu bereiten.</German>
+        <Russian>Милорд, вражеские корабли охотятся на наших торговцев. Фрегат нашего Короля отправит их на дно.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ANTI_PIRATE_2</Tag>
         <English>Milord, hostile ships are still hunting along our coast where they capture our merchant ships. Our King will send another frigate to protect the sea lanes.</English>
         <French>Seigneur, des navires hostiles continuent à patrouiller le long de nos côtes et à capturer nos navires marchands. Notre Roi envoi une nouvelle frégate pour protéger les voies maritimes.</French>
         <German>Milord, immer noch segeln Feinde an unserer Küste entlang und machen Jagd auf unsere Schiffe. Seine Majestät entsendet eine weitere Fregatte zu unserem Schutz.</German>
+        <Russian>Милорд, вражеские корабли все еще охотятся у нашего побережья, захватывая наши торговые суда. Наш Король отправит еще один фрегат для защиты морских путей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ANTI_PIRATE_3</Tag>
         <English>Milord, our King says he is disappointed by our inability to bring the enemy warships to heel. He has once again ordered a frigate from Europe to the New World to eliminate these rogues. The king warns us, however, that he cannot spare any more ships.</English>
         <French>Seigneur, notre Roi est profondément déçu de notre incapacité à assurer la sécurité des voies maritimes. Il a envoyé encore une frégate d'Europe pour nous aider. Soyez assuré que c'est la dernière fois qu'il nous viendra en aide.</French>
         <German>Milord, Seine Majestät lässt verlauten, er sei enttäuscht von Eurem Unvermögen, die Piraten und feindlichen Freibeuter zur Räson zu ziehen. Er hat erneut eine Fregatte aus Europa in die Neue Welt abkommandiert, um diese Schurken auszuschalten. Seine Majestät warnt Euch aber, dass er keine weiteren Schiffe mehr entbehren könne.</German>
+        <Russian>Милорд, Король разочарован нашей неспособностью разобраться с вражескими кораблями. Он в очередной раз приказал отправить фрегат из Европы в Новый Свет, чтобы уничтожить этих негодяев. Однако, Король предупреждает нас, что больше кораблей он выделить не сможет.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_NO_SMOKING</Tag>
@@ -1695,6 +1720,7 @@
         <German>Tabakpflanzern wird von renitenten Frauenzimmern Feuer unterm Hintern gemacht.</German>
         <Italian>I coltivatori di tabacco si stanno facendo fare il culo da donne recalcitranti.</Italian>
         <Spanish>Los cultivadores de tabaco están recibiendo una paliza por parte de las mozas recalcitrantes.</Spanish>
+        <Russian>Разгневанные женщины угрожают плантации табака.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_NO_SMOKING_1</Tag>
@@ -1703,114 +1729,133 @@
         <German>Milord, aufgebrachte Weibsbilder marschieren in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] zu einer Tabakplantage. Sie tragen Fackeln und wollen das Anwesen niederbrennen. Ihre Anführerin hält flammende Reden, das Einatmen von Qualm sei satanisch. Wer eine Zigarre paffe, würde dem Teufel ein Brandopfer bringen.</German>
         <Italian>Signore, delle femmine arrabbiate stanno marciando verso una piantagione di tabacco fuori da [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Portano torce e intendono bruciare la tenuta al suolo. Il loro leader fa discorsi infuocati che inalare fumo è satanico. Chiunque sbuffi un sigaro farebbe un'offerta bruciata al diavolo.</Italian>
         <Spanish>Excelencia, las hembras enfurecidas están marchando hacia una plantación de tabaco en las afueras de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Llevan antorchas y pretenden quemar la finca hasta los cimientos. Su líder hace discursos encendidos de que inhalar humo es satánico. Cualquiera que fume un cigarro estaría haciendo una ofrenda quemada al diablo.</Spanish>
+        <Russian>Милорд, разгневанные женщины идут на табачную плантацию за пределами [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Они несут факелы и хотят предать её огню. Их предводительница заявляет, что вдыхать дым — сатанинское дело. Всякий, кто курит сигару, служит дьяволу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BUGS</Tag>
         <English>Boll weevils are destroying cotton crops.</English>
         <French>Une invasion de charançons trouble nos récoltes.</French>
         <German>Rüsselkäfer und ihre Larven plagen eine Baumwollplantage.</German>
+        <Russian>Долгоносики уничтожают посевы хлопка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BUGS_1</Tag>
         <English>Milord, boll weevils have infested a plantation near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. The black beetle bores into the cotton boll and lays eggs there. Larvae eat everything in the capsules before we can harvest the cotton filaments. An Indian medicine man advises us to destroy the fields and burn down the plantation. Otherwise the infestation will spread.</English>
         <French>Seigneur, une invasion de charançons trouble nos récoltes dans une plantation près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Que devons-nous faire ?</French>
         <German>Milord, Baumwollkapselkäfer haben eine Plantage bei [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] befallen. Das schwarze Getier bohrt seine Rüssel in die Kapselfrüchte und legt dort Eier ab. Larven fresssen die Kapseln leer, bevor wir ihre Samenfäden ernten können. Ein indianischer Medizinmann hat uns geraten, die Felder zu vernichten und sogar das Anwesen niederzubrennen, anderenfalls sei der Plage nicht Herr zu werden.</German>
+        <Russian>Милорд, долгоносики заполонили плантацию возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Черный жук вгрызается в хлопковую коробочку и откладывает туда яйца. Личинки съедают все, что находится в капсулах, прежде чем мы успеваем собрать хлопковые нити. Шаман индейцев советует нам уничтожить поля и сжечь плантацию. В противном случае заражение будет распространяться.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_CATHEDRALS_1</Tag>
         <English>You have built your first church in the New World and thus done a pious work. Remember that the fear of God knows neither measure nor modesty.</English>
         <French>Vous avez construit votre première église dans le Nouveau Monde. Cependant, la piété n'aime pas la fausse modestie.</French>
         <German>Ihr habt Eure erste Kirche in der Neuen Welt erbaut und damit ein frommes Werk getan. Doch Gottesfurcht kennt weder Maß noch Bescheidenheit.</German>
+        <Russian>Вы построили свою первую церковь в Новом Свете и таким образом совершили благочестивое дело. Однако благочестие не любит ложной скромности.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIVE_CATHEDRALS</Tag>
         <English>For God's sake! Another governor has built five abbeys before we were able to. Forget about any rewards.</English>
         <French>Mon Dieu ! Un autre gouverneur a déjà construit cinq abbayes avant que nous en soyons capable. Oublions notre récompense.</French>
         <German>Schlechte Kunde, Milord! Ein anderer Gouverneur hat als Erster fünf Abteien gebaut. Rechnet nicht mehr mit einer Belohnung, wenn Ihr ihm nacheifert.</German>
+        <Russian>Господи, ну как так-то?! Другой губернатор построил пять аббатств раньше, чем мы. Забудьте о каких-либо наградах...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_CATHEDRALS_DONE</Tag>
         <English>Somebody has built five abbeys.</English>
         <French>Une puissance étrangère a construit cinq abbayes.</French>
         <German>Eine Nation hat fünf christliche Abteien errichtet.</German>
+        <Russian>Кто-то построил пять аббатств.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_CATHEDRALS_DONE</Tag>
         <English>Congratulations, Milord! You are the first governor with five abbeys in the New World. The Lord's blessing will be upon you, and His Majesty is in a generous mood today.</English>
         <French>Félicitations, Milord ! Vous êtes le premier gouverneur à construire cinq abbayes dans le Nouveau Monde. Le Seigneur vous bénit. Votre Roi semble être d'humeur généreuse aujourd'hui.</French>
         <German>Glückwunsch, Milord! Ihr habt als erster Gouverneur fünf Abteien in der Neuen Welt errichtet. Gottes Lohn ist Euch gewiss. Aber auch Seine Majestät möchte sich großzügig zeigen.</German>
+        <Russian>Поздравляю, Милорд! Вы первый губернатор с пятью аббатствами в Новом Свете. Да снизойдёт на вас Благословение Господа. Его Величество сегодня в прекрасном настроении после это новости.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_GREAT_TOOL_FACTORY_1</Tag>
         <English>A delegation from the craftsmen's guilds is here to see you. The masters praise your efforts in setting up a blacksmith's workshop for the mass production of ironmongery. The demand for nails and rivets, bolts and axes, clamps and screws is growing. Productivity means more progress in the colonies. They suggest building a factory in a central location, larger than any the New World has ever seen.</English>
         <French>Vous avez construit votre premier usine sidérurgique. Très bien ! Mais est-ce suffisant ?</French>
         <German>Eine Abordnung der Handwerkergilden wird bei Euch vorstellig. Die Meister loben Eure Tatkraft, eine Schmiedemanufaktur errichtet zu haben, in der Eisenwaren in großen Mengen hergestellt werden können. Doch wüchse die Nachfrage an Nägeln und Nieten, Bolzen und Beilen, Schellen und Schrauben noch weiter an. Die Entwicklung der Kolonien hinge maßgeblich davon ab, diesen Bedarf zu decken. Demütig unterbreitet man Euch die Idee, an zentraler Stelle eine Fabrik zu errichten, größer als alle anderen, die die Neue Welt bisher gesehen hat.</German>
+        <Russian>Делегация от гильдий ремесленников к Губернатору. Мастера хвалят ваши усилия по созданию кузнечного цеха для массового производства скобяных изделий. Спрос на гвозди и заклепки, болты и оси, струбцины и винты растет. Производительность означает больший прогресс в колониях. Они предлагают построить фабрику, больше, чем когда-либо видел Новый Свет.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_GREAT_TOOL_FACTORY</Tag>
         <English>Another governor was the first to build a big hardware factory. Don't count on any rewards even if you catch up.</English>
         <French>Oh non ! Un autre gouverneur a déjà construit des Hauts fourneaux. Oubliez la récompense !</French>
         <German>Ein anderer Gouverneur hat als Erster eine Große Eisenwarenfabrik errichtet. Rechnet nicht mehr mit einer Belohnung, wenn Ihr gleichzieht.</German>
+        <Russian>Другой губернатор первым построил завод инструментов. Можете не рассчитывать ни на какие награды, даже если построите свой.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_GREAT_TOOL_FACTORY_DONE</Tag>
         <English>Somebody has built a great tool factory.</English>
         <French>Une puissance étrangère a construit des Hauts fourneaux.</French>
         <German>Eine Nation hat eine Große Eisenwarenfabrik errichtet.</German>
+        <Russian>Кто-то построил отличный завод по производству инструментов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_GREAT_TOOL_FACTORY_DONE</Tag>
         <English>What an amazing achievement! You were the first governor to establish a great tool factory in the New World. The artisan guilds feel indebted to you.</English>
         <French>Félicitations ! Vous êtes le premier gouverneur à construire des Hauts fourneaux dans le nouveau monde. Vos citoyens vous sont reconnaissants.</French>
         <German>Welch erstaunliche Leistung! Ihr habt als erster Gouverneur eine Große Eisenwarenfabrik in der Neuen Welt errichtet. Die Handwerkergilden fühlen sich Euch zu Dank verpflichtet.</German>
+        <Russian>Какое удивительное достижение! Вы были первым губернатором, построившим в Новом Свете завод инструментов. Ремесленные гильдии чувствуют себя в долгу перед вами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_GREAT_ARSENAL_1</Tag>
         <English>Milord, at the opening ceremony for your arsenal, an oddly dressed foreigner pulls you aside. He speaks your language, but with a terrible accent. The man claims to be acting on behalf of a Russian prince who would like to do business with the strongest economic power in the New World.</English>
         <French>Seigneur, un émissaire étranger de la cour de Russie est arrivée à notre capitale.</French>
         <German>Milord, beim Richtfest Eures Arsenals zieht Euch ein fremdartig gekleideter Ausländer beiseite. Er spricht Eure Muttersprache, doch mit einem fürchterlichen Akzent. Der Mann behauptet, im Auftrag eines russischen Fürsten zu handeln, der gerne mit der stärksten Wirtschaftsmacht der Neuen Welt ins Geschäft kommen möchte.</German>
+        <Russian>Милорд, на церемонии открытия вашего арсенала вас отводит в сторону странно одетый иностранец. Он говорит на вашем языке, но с жутким акцентом. Этот человек утверждает, что действует от имени русского князя, который хотел бы вести дела с сильнейшей экономической державой Нового Света.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_GREAT_ARSENAL</Tag>
         <English>Another governor was the first to build a great arsenal and close the deal with the Russian prince. Too bad!</English>
         <French>Un autre gouverneur des Amériques a construit un Grand Arsenal. L'émissaire étranger va lui donner la récompense promise.</French>
         <German>Ein anderer Gouverneur hat als Erster ein Großes Zeughaus errichtet und das Geschäft mit dem russischen Fürsten abschließen können. Schade!</German>
+        <Russian>Другой губернатор первым построил большой арсенал и заключил сделку с русским князем. Вот чёрт!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_GREAT_ARSENAL_DONE</Tag>
         <English>Somebody has built a great arsenal.</English>
         <French>Une autre puissance a construit un Grand arsenal.</French>
         <German>Eine andere Nation hat ein Großes Zeughaus errichtet.</German>
+        <Russian>Кто-то построил большой арсенал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_GREAT_ARSENAL_DONE</Tag>
         <English>Milord, you are the first governor in the New World to build a Great Arsenal. As promised, the ominous foreign businessman who claims to be acting on behalf of a Russian prince reappears at the opening ceremony. The negotiator still speaks your mother tongue with a terrible accent. You take it upon yourself to recommend your nephews' tutor, Mr Berlitz, who offers excellent language education. First, however, you ask the stranger to present the prince's offer.</English>
         <French>Seigneur, vous êtes le premier à construire un Grand arsenal. L'émissaire étrange de la cour du Grand Tsar de Toutes les Russies vous offrent un contrat intéressant...</French>
         <German>Milord, Ihr habt als Erster in der Neuen Welt ein Großes Zeughaus errichten können. Wie versprochen, taucht zum Richtfest der ominöse ausländische Geschäftsmann wieder auf, der vorgibt, im Auftrag eines russischen Fürsten zu handeln. Immer noch spricht der Unterhändler Eure Muttersprache mit furchtbarem Akzent. Ihr nehmt Euch vor, ihm den Hauslehrer Eurer Neffen, Herrn Berlitz, zu empfehlen, der bei der Spracherziehung der Tunichtgute wahre Wunder wirkte. Doch zuvor bittet Ihr den Fremden, die Angebote des Fürsten vorzutragen.</German>
+        <Russian>Милорд, вы первый губернатор в Новом Свете, построивший Большой Арсенал. На церемонии открытия снова появляется зловещий иностранный бизнесмен, который утверждает, что действует от имени русского князя. Переговорщик до сих пор говорит на вашем языке с ужасным акцентом. Вы берете на себя смелость порекомендовать репетитора ваших племянников, мистера Берлитца, который предлагает отличное языковое образование. Однако сначала вы просите незнакомца представить предложение князя.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_RUM_BLOSSOM</Tag>
         <English>A warehouse in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] has been raided.</English>
         <French>Un entrepôt à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a subi un raid.</French>
         <German>Ein Lagerhaus in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] wurde überfallen.</German>
+        <Russian>Склад в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] подвергся налету.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RUM_BLOSSOM_1</Tag>
         <English>A warehouse in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] has been raided. Our [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] neighbours in [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] are suspected of stealing a cartload of rum.</English>
         <French>Un entrepôt à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a subi un raid. Nos voisins [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] sont suspectés d'avoir piller notre cargaison de rhum.</French>
         <German>Ein Lagerhaus in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] wurde überfallen und ausgeraubt. Unsere [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] Nachbarn in [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] werden verdächtigt, den Überfall begangen und die Ladung Rum geraubt zu haben.</German>
+        <Russian>Склад в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] подвергся налету. Наши соседи [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] из [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] подозреваются в краже тележки рома.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RUINS_1</Tag>
         <English>Milord, the ruins near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] were never explored properly. Your councillors recommend sending an expedition.</English>
         <French>Seigneur, les ruines près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] n'avait jamais été exploré proprement. Vos conseillers vous recommendent d'envoyer une expédition.</French>
         <German>Milord, die Ruinen nahe [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sind bis heute nicht gründlich untersucht worden. Eure Ratgeber empfehlen, eine Expedition zu entsenden.</German>
+        <Russian>Милорд, руины возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] так и не были исследованы должным образом. Советники рекомендуют отправить туда экспедицию.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_RUINS_DONE</Tag>
         <English>A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] expedition starts for the ruins near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
         <French>Une expédition [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] prend route vers les ruines situées près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>Eine [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Expedition bricht zu den Ruinen nahe [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] auf.</German>
+        <Russian>Экспедиция [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] отправляется к руинам возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_RUINS_HELP</Tag>
@@ -1824,126 +1869,147 @@
         <English>Unfortunately, your expedition can no longer explore the ruins.</English>
         <French>Malheureusement, votre expédition ne peut plus explorer les ruines.</French>
         <German>Leider können die Ruinen von Eurer Expedition nicht mehr erkundet werden.</German>
+        <Russian>К сожалению, ваша экспедиция уже не может исследовать руины.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RUINS_DONE</Tag>
         <English>Milord, our expedition has arrived at the ruins. What are we looking for?</English>
         <French>Seigneur, notre expédition est arrivé aux ruines. Sur quoi nos hommes doivent-ils se concentrer ?</French>
         <German>Milord, unsere Expedition hat die Ruinen erreicht. Wonach sollen unsere Männer suchen?</German>
+        <Russian>Милорд, наша экспедиция прибыла к руинам. Что будем искать?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_CARPENTER_FAMILY</Tag>
         <English>A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] master carpenter wishes to bring his family over from Europe.</English>
         <French>Un maître charpentier [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] souhaite que sa famille en Europe lui rende visite.</French>
         <German>Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Zimmermeister möchte seine Familie in die Neue Welt nachkommen lassen.</German>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] мастер-плотник хочет привезти свою семью из Европы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CARPENTER_FAMILY_1</Tag>
         <English>A master carpenter wishes to send a letter to his family in Europe to tell them all about the wonderful New World. Milord, he asks you whether you could give him money to pay for the passage of one of his brothers.</English>
         <French>Un maître charpentier souhaite envoyer une lettre à sa famille en Europe et leur dire à quel point le Nouveau Monde est beau. Milord, il vous demande si vous pourriez lui donner un peu d'argent pour le passage de l'un de ses frères.</French>
         <German>Ein Zimmermeister will seiner Familie in der Heimat schreiben, wie sehr ihm das Leben in der Neuen Welt gefällt. Er fragt Euch, Milord, ob Ihr ihm etwas Geld geben möchtet. Er würde es seinen Angehörigen schicken, damit einer seiner Brüder in die Neue Welt nachkommen kann.</German>
+        <Russian>Мастер-плотник хочет послать письмо своей семье в Европу, чтобы рассказать им все о прекрасном Новом Свете. Милорд, он спрашивает вас, не могли бы вы дать ему денег на оплату проезда одного из его братьев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BOOK_MORMON</Tag>
         <English>A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] citizen near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] has proclaimed that an angel has revealed to him the sacred Book of Mormon.</English>
         <French>Un citoyen [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] citoyen près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a proclamé qu'un ange lui a révélé le Livre sacré de Mormon.</French>
         <German>Im [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Reich behauptet ein Mann, ein Engel hätte ihm nahe der Stadt [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] das Buch Mormon überreicht.</German>
+        <Russian>Житель [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] заявил, что ангел открыл ему священную Книгу Мормона.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BOOK_MORMON</Tag>
         <English>A man proclaims that in the desert near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] an angel has revealed a Holy Book inscribed on plates of silver.[NEWLINE]The news is spreading like wildfire in our colony. Nearly all inhabitants of the city believe him and this so-called Book of Mormon. What should we do?</English>
         <French>Un citoyen [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] proclame qu'un ange lui a révélé un livre sacré inscrit sur des plaques d'argent.[NEWLINE]La nouvelle se répand comme une trainée de poudre dans nos colonies. Presque tous les habitants de la ville le croit avec son livre des Mormons. Que devons-nous faire ?</French>
         <German>Milord! Ein Mann behauptet, ein Engel hätte ihm in der Wüste nahe der Stadt [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] eine heilige Schrift überreicht.[NEWLINE]Die Nachricht verbreitet sich wie ein Lauffeuer, fast alle Stadtbewohner folgen ihm und diesem Buch Mormon bereits. Was sollen wir tun?</German>
+        <Russian>Один человек говорит, что в пустыне недалеко от [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ангел явил ему Священную Книгу, начертанную на серебряных пластинах.[NEWLINE]Эта новость распространяется по нашим колониям со скоростью лесного пожара. Почти все жители города верят ему и этой так называемой Книге Мормона. Что нам с этим делать?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_THE_ROYALS</Tag>
         <English>A royalist riot in the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] colonies is taking place in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
         <French>Une émeute dans les colonies [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] est survenue à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>Das [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Kolonialreich wird von Protesten treuer Royalisten erschüttert, sie gehen in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] auf die Straße!</German>
+        <Russian>В [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] колонии [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] бунт роялистов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_THE_ROYALS</Tag>
         <English>Milord, certain prominent citizens of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] are proclaiming you are not truly loyal to the sovereign. You have to respond, but mind the consequences!</English>
         <French>Seigneur, certain citoyens éminents de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] manifestent. Ils déclarent que vous n'êtes pas vraiment loyal envers notre Souverain. Vous vous devez de réagir, mais gare aux conséquences !</French>
         <German>Milord! Ein guter Teil der Bürger in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] zieht protestierend in Richtung des örtlichen Regierungspalastes. Sie werfen Euch vor, dass Ihr unserem König nicht mehr loyal seid, einige bezichtigen Euch gar des Separatismus! Ihr müsst etwas tun, doch bedenkt, dass es Folgen haben könnte ...</German>
+        <Russian>Милорд, некоторые видные граждане [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] заявляют, что на самом деле вы не лояльны к суверену. Вы должны ответить, но не забывайте о последствиях!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THE_ROYALS_1PYTHON</Tag>
         <English>... maybe the King will hear of your good manners ...</English>
         <French>... peut-être que même le Roi va entendre parler de nos bonnes manières ...</French>
         <German>... von solch wohlfeilem Gebaren könnte sogar der König erfahren ...</German>
+        <Russian>... может быть, Король услышит о ваших хороших манерах ...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THE_ROYALS_2PYTHON</Tag>
         <English>... this kind of talk may cause some trouble ...</English>
         <French>... ce type de conversation peut causer des problèmes ...</French>
         <German>... dieses royalistische Palaver könnte uns noch zu schaffen machen ...</German>
+        <Russian>... такого рода разговоры могут вызвать некоторые проблемы ...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THE_ROYALS_3PYTHON</Tag>
         <English>... this could make the loyalists even more angry ...</English>
         <French>... ce type d'action peut les rendre très énervés ...</French>
         <German>... das wird für Groll und Wut sorgen, die Königstreuen könnten uns noch einen Denkzettel verpassen ...</German>
+        <Russian>...это может ещё больше разозлить лоялистов...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THE_ROYALS_4PYTHON</Tag>
         <English>... this is tough stuff. They'll want revenge for sure ...</English>
         <French>... c'est violent, ils chercheront certainement à se venger ...</French>
         <German>... ein heikler Schritt, die Lumpen werden sicher Rache üben ...</German>
+        <Russian>... это сложная вещь. Они точно захотят отомстить...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_THE_ROYALS_CONSEQUENCES_1</Tag>
         <English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] King sends a gift to his loyal governor.</English>
         <French>Le roi [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] a envoyé un cadeau à son gouverneur loyal.</French>
         <German>Der [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] König zeigt sich gegenüber seinem treuen Gouverneur erkenntlich.</German>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] Король посылает подарок своему верному губернатору.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_THE_ROYALS_CONSEQUENCES_1</Tag>
         <English>It seems, Milord, that your hard work is recognized at the Royal Court. His Majesty is sending two of his most distinguished soldiers to protect your life.</English>
         <French>Il semble, Milord, que votre offre ne pouvait effectivement pas être refusée et qu'elle a marqué les esprit à la cour du Roi. Son Altesse vous envoie deux de ses meilleurs hommes pour vous protéger.</French>
         <German>Es scheint, Milord, dass Eure aufrichtigen Bemühungen um die königstreuen Bürger von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sogar am entfernten Hofe Eindruck schinden. Mit den besten Grüßen schickt Euch Seine Majestät zwei kampferprobte Soldaten als Leibwache.</German>
+        <Russian>Кажется, милорд, что ваш труд признан Королевским двором. Его Величество посылает двух своих самых выдающихся солдат защищать вашу жизнь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_THE_ROYALS_CONSEQUENCES_2</Tag>
         <English>In the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] colonies royalists are causing trouble.</English>
         <French>Les royalistes sèment le trouble dans les colonies [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT].</French>
         <German>Überall im [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Kolonialreich begehren die Royalisten auf.</German>
+        <Russian>В [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] колонии роялисты доставляют неприятности.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_THE_ROYALS_CONSEQUENCES_2</Tag>
         <English>Milord, royalists take full advantage of their right to free speech. Their clubs and lodges are everywhere. It's mainly in the bigger cities. So far the country folk aren't involved.</English>
         <French>Seigneur, les royalistes semblent faire usage de leur droit d'expression. Ils sont en train de fonder des clubs et des loges partout. Pour le moment ce n'est un problème que dans les plus grandes villes, le reste du pays reste encore à l'écart.</French>
         <German>Milord! Die Königstreuen scheinen von ihrem Recht auf freie Rede regen Gebrauch zu machen. Es bilden sich überall Logen und Clubs. Gerade die großen kulturellen Zentren des Landes scheinen diesen patriotischen Tendenzen anheim zu fallen. Unter der einfachen Bevölkerung auf dem Lande finden dererlei Grillen noch keinen Anklang.</German>
+        <Russian>Милорд, роялисты в полной мере пользуются своим правом на свободу слова. Их клубы и ложи повсюду. В основном в крупных городах, деревенские жители, пока, не участвуют.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_THE_ROYALS_CONSEQUENCES_3</Tag>
         <English>Royalists have destroyed food in the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] colonies.</English>
         <French>Les royalistes ont détruit les réserves de nourriture dans les [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT].</French>
         <German>Royalisten haben in den [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Städten Nahrung vernichtet.</German>
+        <Russian>Роялисты уничтожили еду в [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] колониях.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_THE_ROYALS_CONSEQUENCES_3</Tag>
         <English>Milord. The King's loyalists have tricked us. They've gotten into all the granaries in all the cities and destroyed everything edible. In many places good people helped because they were told you gave the order! The royalists printed fake notices that said, "Because of outrageously high taxes it is the first duty of citizens to oppose the king! Destroy all food in all cities in protest!"</English>
         <French>Milord ! Les royalistes nous ont durement touchés. Ils ont détruit de grandes réserves de nourritures dans tous nos greniers. Apparemment, ils ont dupé les populations locales et les troupes en proclamant qu'il s'agissait de votre ordre : la « fête de la nourriture » contre le Roi.</French>
         <German>Milord! Die Königstreuen haben uns übel mitgespielt. Sie haben in allen Städten die Kornspeicher besetzt und begonnen, das Getreide und alles andere Essbare zu vernichten. Vielerorts beteiligten sich brave Leute an diesem Frevel, weil es hieß, es wäre Eure Order! Auf getürkten Anschlägen stand zu lesen: "Aufgrund der unverschämt hohen Steuern ist es erste Bürgerpflicht, sich dem König zu widersetzen! Vernichtet aus Protest alle Nahrungsmittel in allen Städten!"</German>
+        <Russian>Милорд. Сторонники короля обманули нас. Они забрались во все зернохранилища во всех городах и уничтожили все съестное. Во многих местах хорошие люди помогали, потому что им сказали, что это вы отдали такой приказ! Роялисты напечатали поддельные объявления, в которых говорилось: "Из-за возмутительно высоких налогов первая обязанность граждан — выступить против Короля! В знак протеста уничтожить всю еду во всех городах!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_THE_ROYALS_CONSEQUENCES_4</Tag>
         <English>The newspaper in the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] city of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] was blown up by Royalists.</English>
         <French>Les royalistes ont fait sauter le journal dans la ville [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>Royalisten haben in der [COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT] Stadt [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] die Druckerpressen der lokalen Zeitung gesprengt!</German>
+        <Russian>Газета в [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] была взорвана роялистами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_THE_ROYALS_CONSEQUENCES_4</Tag>
         <English>Milord, MILORD! The newspaper in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] has been blown up! It looks like revenge by a royalist underground movement. They painted "Long live the King" on a nearby wall, signed Sir Sekwaf Yug, a clumsy alias.</English>
         <French>Seigneur, SEIGNEUR ! Le journal de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a été détruit ! Il semble qu'un mouvement clandestin royaliste est sorti de terre pour se venger. Ils ont peint « Longue vie au Roi » sur un mur à proximité. Le graffiti est signé de M. Sekwaf Yug, un drôle de nom...</French>
         <German>Milord! MILORD ! In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] wurden die Druckerpressen der lokalen Zeitung in die Luft gejagt. Eine versprengte Gruppe Royalisten hat wohl Rache genommen. An einer Wirtshauswand in der Nähe stand in großen Lettern: "Es lebe der König!", unterzeichnet von einem gewissen Sir Sekwaf Yug. Es scheint ein Tarnname zu sein, so heißt doch kein ...</German>
+        <Russian>Милорд, МИЛОРД! В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] было взорвано здание газеты! Это похоже на месть подпольного роялистского движения. Они нарисовали "Да здравствует король" на соседней стене и оставили глупую подпись "Сэр Секваф Юг".</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THE_ROYALS_2aPYTHON</Tag>
         <English>The will for revolution is falling, mainly in the bigger cities ...</English>
         <French>... Le soutien pour une révolution chute, en tout cas dans les grandes villes ...</French>
         <German>... die revolutionäre Begeisterung lässt nach, aber wenigstens nur in den großen Städten ...</German>
+        <Russian>Революционный энтузиазм ослабевает, но пока, по крайней мере, только в больших городах...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PIRATES</Tag>
@@ -1952,6 +2018,7 @@
         <German>Der Reichtum dieses Landes ist erstaunlich! Kisten voll Gold, Geschmeide und mannigfaltigen Gemmen strömen in die Hafenstädte. Nun, derartiges zu sehen befördert nicht immer das Beste in den Menschen. Um ehrlich zu sein, Milord, man munkelt in den Spelunken und Hafenvierteln bereits, welches Lagerhaus einen Besuch gar lohnen würde. Wenn Ihr nicht bald etwas unternehmt, dann wird die Gier Eure braven Kolonisten vergiften.</German>
         <Italian>La ricchezza di questa terra è sorprendente! I forzieri pieni d'oro, di gioielli e di molteplici gemme si riversano nelle città portuali. Beh, vedere queste cose non sempre tira fuori il meglio dalle persone. Ad essere onesti, mio signore, ci sono già voci nelle taverne e nei quartieri del porto su quale magazzino varrebbe la pena visitare. Se non agite presto, l'avidità avvelenerà i vostri buoni coloni.</Italian>
         <Spanish>La riqueza de esta tierra es asombrosa. Cofres llenos de oro, joyas y múltiples gemas llegan a las ciudades portuarias. Pues bien, ver esas cosas no siempre saca lo mejor de las personas. A decir verdad, mi señor, ya hay rumores en las tabernas y los barrios del puerto sobre qué almacén merecería una visita. Si no actúan pronto, la codicia envenenará a sus buenos colonos.</Spanish>
+        <Russian>Богатство этой страны поражает воображение! Сундуки, наполненные золотом, драгоценностями и разнообразными драгоценными камнями, хлынули в портовые города. Что ж, наблюдение таких вещей не всегда пробуждает в людях лучшие качества. Честно говоря, милорд, в тавернах и портовых кварталах уже ходят разговоры о том, какой склад стоит посетить. Если вы не предпримете что-то в ближайшее время, жадность отравит ваших хороших колонистов.</Russian>
     </TEXT>
     <!--RaR Events -->
     <TEXT>
@@ -1959,109 +2026,126 @@
         <English>Changing currents have disrupted the usual spawning patterns. Fishermen trawling from the ports of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] are hauling in an unusually rich catch. Although seasonal yields are booming, local elders grumble that such intense harvesting may jeopardize the catch in years to come.</English>
         <French>Un changement dans les courants a perturbé les habitudes de reproduction des poissons. Les pêcheurs de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] transportent une prise exceptionnellement abondante. Bien que les rendements saisonniers sont en plein essor, les anciens se plaignent de cette récolte intense qui peut compromettre la pêche dans les années à venir.</French>
         <German>Eine Strömungsänderung hat das übliche Laichverhalten gestört und die Fischerleute aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ziehen ungewöhnlich reiche Fänge auf ihre Boote. Obwohl die saisonalen Erträge in die Höhe schiessen, raten erfahrene Fischer zur Zuückhaltung, um durch das intensive Fischen nicht die Erträge der kommenden Jahre zu gefährden.</German>
+        <Russian>Изменение течения нарушило обычные схемы нереста. Рыбаки из портов [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] вылавливают необычайно богатый улов. Хотя сезонные урожаи растут, местные старейшины ворчат, что это может поставить под угрозу улов в ближайшие годы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PROSPECTORS</Tag>
         <English>Attracted by wild rumours of local silver deposits, foreign prospectors are pouring into the mountains near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. These claim jumpers aim to get the best pickings for themselves!</English>
         <French>Attiré par des rumeurs étranges à propos de gisements d'argent abondants, les prospecteurs étrangers indépendants se ruent dans les montagnes près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Ces itinérants souhaitent certainement garder les meilleurs prises pour eux-mêmes !</French>
         <German>Durch wilde Gerüchte bezüglich reicher Silbervorkommen angelockt, strömen fremde Glücksuchende in die Berge nahe [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Bald werden diese die besten Claims für sich beansprucht haben!</German>
+        <Russian>Привлеченные слухами о богатых месторождениях серебра, иностранные старатели устремляются в горы возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Эти прохвосты стремятся заполучить лучшие самородки!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WITCHTRIAL</Tag>
         <English>The townsfolk are whispering that a large family of recent immigrants to [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] are witches! They keep to themselves, grow strange roots in cottage gardens, and don't attend church on Sundays. One of them even has a birthmark!</English>
         <French>Le bruit cour qu'une famille de récents immigrants à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] est en fait composée de sorcières ! Elles restent entre elles, font pousser d'étranges racines dans leur jardin, et ne vont pas à l'église le dimanche. L'une d'elles a même une tache de naissance !</French>
         <German>Die Bevölkerung flüstert, dass eine grosse Familie, die kürzlich in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] eingewandert ist, unter dem Verdacht der Hexerei steht. Sie bleiben unter sich, bauen seltsame Wurzeln und Kräuter an und nehmen nicht an Gottesdiensten teil. Einer von Ihnen hat sogar ein auffallendes Geburtsmal.</German>
+        <Russian>Горожане шепчутся, что женщины большой семьи недавних иммигрантов в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] — ведьмы! Они держатся особняком, собирают какие-то коренья в недалеко от города и не ходят в церковь по воскресеньям. У одной из них даже есть родимое пятно!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_COUNTERBLASTE</Tag>
         <English>Our beloved monarch has suddenly developed an eccentric opinion that tobacco smoking is injurious to the lungs, even going so far as to publish a pamphlet denouncing the habit. This bizarre idea could ruin our export market!</English>
         <French>Notre Monarque bien-aimé a soudainement développé l'idée farfelue que fumer du tabac serait mauvais pour les poumons, allant jusqu'à autoriser la publication d'un pamphlet dénonçant cette habitude. Cette idée saugrenue pourrait ruiner nos exportations !</French>
         <German>Unser geliebter Herrscher hat kürzlich eine exzentrische Meinung zum Tabakgenuss entwickelt. Er glaubt, dies sei schadhaft für die Lungen. Er will sogar so weit gehen, ein Pamphlet zu veröffentlichen, dass davor warnt. Diese bizarre Idee kann unsere Exporteinnahmen schwer schädigen.</German>
+        <Russian>У нашего любимого монарха внезапно сложилось эксцентричное мнение, что курение табака вредно для легких и он даже опубликовал брошюру, осуждающую эту привычку. Эта идиотская идея может разрушить наш экспортный рынок!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_COUNTERBLASTE_1_HELP</Tag>
         <English>[COLOR_FONT_GOLD]Nobles and citizens are following the example of their king. Demand for our colonial goods is declining.[COLOR_REVERT]</English>
         <French>[COLOR_FONT_GOLD]Les nobles et les citoyens suivent l'exemple de leur roi. La demande pour nos biens coloniaux est en baisse.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Eure Antwort wurde dem König zugetragen. Kammerdiener berichten, er habe gleich eine Probe verköstigt und anschließend huldvoll genickt.[NEWLINE]Adlige und reiche Bürger in unserer Heimat eifern nun dem König nach. Die Nachfrage nach unseren Kolonialwaren sinkt.[COLOR_REVERT]</German>
+        <Russian>[COLOR_FONT_GOLD]Знать и горожане следуют примеру своего короля. Спрос на наши колониальные товары снижается.[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_COUNTERBLASTE_2_HELP</Tag>
         <English>[COLOR_FONT_GOLD]His Majesty receives word that his citizens in the colonies are questioning his judgement in this matter.[COLOR_REVERT]</English>
         <French>[COLOR_FONT_GOLD]Le roi reçoit la nouvelle que ses citoyens dans les colonies remettent en question son jugement.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Seine Majestät ist höchst unerfreut, dass man sein Urteil zu dieser Angelegenheit in Frage stellt.[COLOR_REVERT]</German>
+        <Russian>[COLOR_FONT_GOLD]Его Величеству сообщили, что граждане в колониях сомневаются в Его решении по этому поводу.[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_WHALING_1_HELP</Tag>
         <English>[COLOR_FONT_GOLD]The price increases since, due to the new offer, citizens now know that train oil burns better than tallow.[COLOR_REVERT]</English>
         <French>[COLOR_FONT_GOLD]Le prix augmente car, grâce à la nouvelle offre, les citoyens savent maintenant que l'huile de train brûle mieux que le suif.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Die Nachfrage nach edlem Tranöl steigt in Europa, da die braven Bürger sich aufgrund des neuen Angebots darüber bewusst werden, dass Öl besser brennt als Talg.[COLOR_REVERT]</German>
+        <Russian>[COLOR_FONT_GOLD]Цена растёт, так как благодаря новому предложению горожане теперь знают, что ворвань горит лучше, чем обычный жир.[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_COMMANDEERED</Tag>
         <English>Milord, the Royal Navy has requisitioned one of our finest ships to aid in a campaign against the Barbary pirates. How shall we respond?</English>
         <French>Seigneur, la marine Royale a réquisitionné l'un de nos meilleurs navires pour aider dans une campagne contre des pirates barbares. Comment devons-nous répondre ?</French>
         <German>Milord, die Royal Navy hat eines unserer besten Schiffe requiriert, um eine Strafaktion gegen die Berber-Piraten zu unterstützen. Wie sollen wir darauf reagieren?</German>
+        <Russian>Милорд, Королевский флот требует один из наших лучших кораблей для помощи в кампании против берберских пиратов. Что мы им ответим?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SENDCONVERTS</Tag>
         <English>The Royal Court has been taken with the picturesque garb and customs of certain of our converted Native subjects, and has sent for them to be transported to Europe.</English>
         <French>La Cour Royale a été saisie de joie en voyant les tenues pittoresques des sauvages. Le Roi souhaite que vous rapportiez un converti à la Cour.</French>
         <German>Der königliche Hof ist fasziniert von der Kunst und Geschichten der Ureinwohner. Man wünscht, dass wir einen Konvertierten Ureinwohner nach Europa schicken.</German>
-        <Russian>Королевский двор принял живописные одежды и обычаи некоторых из наших крещеных туземных подданных и послал за ними для перевозки в Европу.</Russian>
+        <Russian>Королевский двор очарован искусством и историями нашего крещенного индейца и требует, чтобы мы отправили его в Европу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_REQUISITION_LUMBER</Tag>
         <English>The Royal Navy has requisitioned [COLOR_HIGHLIGHT_TEXT]two full cargo loads of lumber[COLOR_REVERT] for the construction of new ships, to be delivered as soon as possible at the [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] docks.</English>
         <French>La Marine Royale a réquisitionné [COLOR_HIGHLIGHT_TEXT]deux charges de fret de bois[COLOR_REVERT] pour la construction de ses nouveaux navires. Les biens sont à collecter le plus tôt possible aux docks de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>Die Royal Navy hat [COLOR_HIGHLIGHT_TEXT]zwei Schiffsladungen Holz[COLOR_REVERT] für den Bau neuer Schiffe angefordert. Das Holz soll so bald wie möglich in einer Siedlung mit Dock oder Zollhaus bereitgestellt werden.</German>
+        <Russian>Королевский флот затребовал [COLOR_HIGHLIGHT_TEXT]две полные партии пиломатериалов[COLOR_REVERT] для строительства новых кораблей, которые должны быть доставлены как можно скорее в доки [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_REQUISITION_HELP</Tag>
         <English>Fulfill these requirements for the following results:</English>
         <French>Répondez à la demande pour les résultats suivants :</French>
         <German>Leider ist es unserer bescheidenen Wirtschaft nicht möglich dieser Anfrage gerecht zu werden.</German>
+        <Russian>Выполните эти требования для следующих результатов:</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_DELIVER_LUMBER</Tag>
         <English>Representatives of the Royal Navy have arrived at [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] to take delivery of [COLOR_HIGHLIGHT_TEXT]two full cargo loads of lumber[COLOR_REVERT], per our previous arrangement.</English>
         <French>Les représentants de la Marine Royale sont arrivés à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] pour prendre livraison des [COLOR_HIGHLIGHT_TEXT]deux charges de fret de bois[COLOR_REVERT], comme convenu lors de notre dernier arrangement.</French>
         <German>Repräsentanten der Royal Navy sind in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] angekommen, um die versprochene Lieferung der [COLOR_HIGHLIGHT_TEXT]zwei Schiffsladungen Holz[COLOR_REVERT] entgegen zu nehmen.</German>
+        <Russian>Представители Королевского флота прибыли в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], чтобы принять [COLOR_HIGHLIGHT_TEXT]две полные партии пиломатериалов[COLOR_REVERT] в соответствии с нашей предыдущей договоренностью.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_REQUISITION_COATS</Tag>
         <English>His Majesty has decided to finance a polar expedition in search of the fabled Terra Australis. 200 crates of fine winter coats have been commissioned from the furriers of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
         <French>Son Altesse Royale a décidé de financer une expédition polaire à la recherche de la légendaire Terra Australis. 200 caisses de manteaux d'hiver fines ont été commandées aux fourreurs de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>Seine Majestät hat beschlossen eine Polar-Expedition auszustatten, um das sagenhafte Terra Australis zu finden. 200 Mäntel bester Qualität werden von den Pelzhändlern von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] verlangt.</German>
+        <Russian>Его Величество решил профинансировать полярную экспедицию в поисках легендарной Terra Australis. У скорняков города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] были заказаны 200 ящиков хороших зимних пальто.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_DELIVER_COATS</Tag>
         <English>His Majesty's explorers have arrived to collect the shipment of coats for their polar expedition.</English>
         <French>Les explorateurs de Sa Majesté sont arrivés pour prendre livraion des manteaux à l'usage de l'expédition polaire.</French>
         <German>Die Entdecker Seiner Majestät sind angekommen, um die Ladung Mäntel für die Polar-Expedition abzuholen.</German>
+        <Russian>Исследователи Его Величества прибыли, чтобы забрать партию пальто для своей полярной экспедиции.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_IMPATIENT</Tag>
         <English>It has been quite some time, and the agreed-upon goods have yet to be delivered to [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. His Majesty is not accustomed to being kept waiting!</English>
         <French>Cela fait déjà un certain temps, et les biens convenus n'ont toujours pas été livrés à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Sa Majesté n'est pas habituée à devoir attendre !</French>
         <German>Die Verzögerung der versprochenen Warenlieferung in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ist sehr bedenklich. Seine Majestät ist nicht erfreut!</German>
+        <Russian>Прошло довольно много времени, а оговоренный товар еще не доставлен в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Его Величество не привык ждать!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HUDSON</Tag>
         <English>By Royal decree, all further trading in coats shall be done through duly authorized agents of the Hudson Bay Company.</English>
         <French>Par décrêt royal, tout prochain commerce de manteau devra être réalisé par des agents dûment autorisés de la compagnie de la Baie d'Hudson.</French>
         <German>Laut königlichen Beschluss dürfen alle weiteren Handelsgeschäfte mit Pelzen ab sofort nur noch durch Vertreter der Hudson Bay Company erfolgen.</German>
+        <Russian>Согласно Королевскому указу, вся дальнейшая торговля шубами должна осуществляться через уполномоченных агентов компании Гудзонова залива.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HORSETHIEF</Tag>
         <English>A gang of scruffy horse rustlers has seized the finest animals in our herd, and will burn the barns if they're pursued.</English>
         <French>Une ignoble bande de voleurs de chevaux a saisi les plus beaux animaux de notre troupeau, et menace de mettre le feu aux granges si ils sont poursuivis.</French>
         <German>Eine Bande von niederträchtigen Pferdedieben hat die besten Tiere unserer Herde geraubt und droht sogar damit die Stallungen und Scheunen zu verbrennen, wenn Sie verfolgt werden.</German>
+        <Russian>Банда угонщиков лошадей захватила лучших животных из нашего стада и грозится поджечь амбары, если мы станем их преследовать.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CATTLETHIEF</Tag>
         <English>The winter has been hard. Guards in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] caught Natives from a nearby [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] village trying to steal some of our cattle for food.</English>
         <French>L'hiver a été difficile, et les gardes de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ont attrapé une bande indigène du village voisin de [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] qui tentait de voler du bétail de nos troupeaux pour assurer leur subsistance.</French>
         <German>Der harte letzte Winter hat die Ureinwohner einer nahen [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] Siedlung dazu verleitet, Vieh der Herden von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] zu stehlen, doch unsere wachsame Stadtwache hat sie dabei gefangen.</German>
+        <Russian>Зима выдалась тяжелой. Стражники города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] поймали индейцев из соседней деревни [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT], пытавшихся украсть часть нашего скота для еды.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_KING_PLEASED_HELP</Tag>
@@ -2075,18 +2159,21 @@
         <English>Your King has been angered!</English>
         <French>Votre Roi est en colère!</French>
         <German>Seine Majestät ist über diese Reaktion sehr verärgert.</German>
+        <Russian>Наш Король разозлился!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_KINGFURIOUS</Tag>
         <English>By solemn decree of His Royal Majesty's Privy Council, your treasonous and egregious perfidy has gone on long enough! As partial recompense for your countless misdeeds, a heavy fine must be paid at once into the royal coffers, or royal agents will be authorized to sack [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] and confiscate your undeserved wealth!</English>
         <French>Par décret Royal, votre perfidie touche à sa fin. En récompense de vos mauvaises actions, le Roi vient d'autoriser la mise à sac des de la colonie suivante: [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ... A moins bien sûr que vous ne dédomagiez la Couronne!</French>
         <German>Durch unumstösslichen Beschluss Seiner Majestät wird Euer verräterisches Handeln bestraft. Als teilweise Wiedergutmachung Eurer vielen Vergehen werdet Ihr sofort eine Strafe zahlen oder königliche Abgesandte werden dazu autorisiert, im Umland von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] alles zu konfiszieren, was rechtmässig Seiner Majestät gehört!</German>
+        <Russian>По указу Тайного Совета Его Королевского Величества ваше изменническое поведение и вопиющее вероломство продолжаются достаточно долго! В качестве частичного возмещения за ваши бесчисленные проступки, крупный штраф должен быть немедленно уплачен в королевскую казну, иначе королевские агенты получат право разграбить [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] и конфисковать ваше незаслуженное богатство!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ARCHBISHOPRIC</Tag>
         <English>Due to the devotion and contributions of your people, the cathedral of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] has been proclaimed the seat of a new Archbishopric, attracting pilgrims from surrounding churches.</English>
         <French>Par la piété et le labeur de votre peuple, la cathédrale de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a été proclamé comme le nouveau siège de l'Archevêché, attirant les pélerins de toutes les églises environnantes.</French>
         <German>Aufgrund der Verehrung durch die Bevölkerung und ihrer geschichtlichen Bedeutung, wurde die Kathedrale von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] zum Sitze des Erzbischofs ernannt und zieht nun noch mehr Pilger aus der Gegend an.</German>
+        <Russian>Благодаря преданности и вкладу ваших людей собор [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] был провозглашен резиденцией нового архиепископства, привлекая паломников из окрестных церквей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_NATIVETRADE</Tag>
@@ -2094,18 +2181,21 @@
         <English>Since your colonies have now made contact with various Native nations, a local merchant in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] proposes to invest in a network of trading posts to gather rare and valuable spices from distant tribes.</English>
         <French>Maintenant que vos colonies ont pris contact avec de multiples civilisations indigènes, un marchand local de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vous propose d'investir dans un réseau de poste de douane pour ainsi reccueillir des épices de valeur provenant de tribus lointaines.</French>
         <German>Da unsere Kolonien nun Kontakt zu mehreren Ureinwohnerstämmen in unserer Nachbarschaft haben, hat ein örtlicher Händler aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vorgeschlagen, ein Netzwerk aus Handelsposten aufzubauen, dass seltene und wertvolle Gewürze von diesen Stämmen erwirbt.</German>
+        <Russian>Поскольку ваши колонии теперь установили контакт с различными коренными народами, местный торговец из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] предлагает инвестировать в сеть торговых постов, чтобы собирать редкие и ценные специи из далеких племен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PIRATEATTACK1</Tag>
         <English>Spying the growing wealth of our sea traders, a scurvy collection of pirates is massing off our shores, demanding ransom lest they put our shipping to fire and the sword!</English>
         <French>Après avoir espionné nos négociants maritimes dont la richesse est grandissante, une bande de pirates a pillé nos côtes, demandant en rançon pour ne pas passer nos navires par le feux.</French>
         <German>Durch den wachsenden Reichtum unserer Fernhändler angelockt, hat sich eine dreckige Bande Piraten vor unseren Küsten versammelt. Sie verlangen Lösegeld, damit sie unsere Schiffe nicht in Flammen aufgehen lassen.</German>
+        <Russian>Наблюдая за растущим богатством наших морских торговцев, шайка пиратов собирается у наших берегов, требуя выкупа. Иначе они грозятся предать наши корабли огню!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PIRATEATTACK2</Tag>
         <English>The infamous pirate Roc Brasiliano has sent an emissary demanding a fortune in gold and silver. Otherwise he threatens to send our vulnerable merchantmen to Davy Jones' locker. How shall we respond, Milord?</English>
         <French>L'infâme chef pirate Roc Brasiliano a envoyé un émissaire pour nous demander une fortune princière en or et en argent, nous menaçant d'envoyer notre vulnérable flotte marchande par le fond. Comment devons nous répondre, Milord ?</French>
         <German>Der berüchtigte Piratenführer Roc Brasiliano sendet uns einen Abgesandten, der eine königliche Summe Gold und Silber fordert. Andernfalls droht er damit, unsere verletzlichen Handelsschiffe auf den Grund von Davy Jones Reich zu schicken. Wie wollen wir reagieren, Milord?</German>
+        <Russian>Печально известный пират Рок Бразилиано прислал эмиссара, требуя целое состояние в золоте и серебре. В противном случае он угрожает отправить наших морских торговцев в шкафчик Дэви Джонса. Что нам ему ответить, милорд?</Russian>
     </TEXT>
     <!--New Event RaR 2.1 -->
     <TEXT>
@@ -2113,324 +2203,378 @@
         <English>A European vintager has brought his finest grapevines to the colonies.</English>
         <French>Un vigneron européen a vendu l'une de ses meilleurs cépages à nos colonies.</French>
         <German>Ein Winzer aus Europa hat seine besten Rebstöcke in die Neue Welt verkauft.</German>
+        <Russian>Европейский винодел привез свои лучшие виноградные лозы в колонии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WINE_PLANTS</Tag>
         <English>A European vintager offers to sell us his best grapevines. Of course he wants be paid in gold.</English>
         <French>Un vigneron européen propose de vendre l'un de ses meilleurs cépages. Il demande d'argon.</French>
         <German>Ein Winzer aus Europa bietet uns seine besten Rebstöcke zum Kauf. Er verlangt dafür natürlich gold.</German>
+        <Russian>Европейский виноградарь предлагает продать нам свои лучшие виноградные лозы. И конечно, он хочет, чтобы ему платили золотом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_RED_PEPPER_PLANTS</Tag>
         <English>Local Natives have sold some of their red pepper plants to European colonists.</English>
         <French>Des indigènes ont vendu leur meilleurs plants de piment aux colons européens.</French>
         <German>Ureinwohner haben europäischen Kolonisten Setzlinge ihres Roten Pfeffers verkauft.</German>
+        <Russian>Местные индейцы продали часть своих растений красного перца европейским колонистам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RED_PEPPER_PLANTS</Tag>
         <English>Local Natives will sell us some seeds from their red pepper plants. They ask to be paid in gold in exchange.</English>
         <French>Des indigènes proposent de nous vendre leurs semences pour des plants de piment. Il demande d'argon.</French>
         <German>Ureinwohner aus der Gegend bieten uns Setzlinge ihres Roten Pfeffers zum Kauf. Sie verlangen dafür natürlich gold.</German>
+        <Russian>Местные индейцы продадут нам несколько семян своего красного перца. Взамен они хотят получить золото.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SICK_IMMIGRANTS</Tag>
         <English>After the long voyage across the sea many immigrants reach the New World suffering from disease.</English>
         <French>De nombreux immigrants sont arrivés malades dans le Nouveau Monde en raison du long voyage en mer.</French>
         <German>Viele Einwanderer kommen durch die lange Schiffsreise krank in der Neuen Welt an.</German>
+        <Russian>После долгого плавания по морю многие переселенцы достигают Нового Света, страдая от болезней.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SICK_IMMIGRANTS</Tag>
         <English>Some new immigrants have arrived. They're sick and weak from the long voyage.</English>
         <French>Quelques nouveaux immigrants sont arrivés. Mais ils semblent malade en raison du long voyage en mer.</French>
         <German>Einige neue Einwanderer sind eingetroffen. Sie scheinen durch die lange Schiffreise krank geworden zu sein.</German>
+        <Russian>Прибыло несколько новых иммигрантов. После длительного путешествия они больны и слабы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_DISEASED_NATIVES</Tag>
         <English>Settler diseases are spreading to Native villages.</English>
         <French>Des maladies importées d'Europe se répandent dans les villages indigènes.</French>
         <German>Die Krankheiten des Weissen Mannes verbreiten sich in den Dörfern der Ureinwohner.</German>
+        <Russian>В деревнях индейцев распространяются болезни европейских переселенцев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_DISEASED_NATIVES</Tag>
         <English>A disease is spreading in a nearby Native village. The disease broke out after our settlers visited them. Now the Native people need our help.</English>
         <French>Une maladie est en train de se propager dans un village indigène voisin. Les indigènes croient que cela fait suite à la visite de certains de nos colons et demandent de l'aide.</French>
         <German>Eine Krankheit breitet sich in einer nahegelegenen Siedlung der Wilden aus. Sie behaupten, die Krankheit sei ausgebrochen, nachdem einige unserer Siedler ihr Dorf besucht hatten. Sie bitten nun um unsere Hilfe.</German>
+        <Russian>Болезнь распространяется в соседней деревне индейцев. Заболевание вспыхнуло после того, как наши колонисты побывали там. Сейчас туземцы нуждаются в нашей помощи.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SALT_RESOURCE</Tag>
         <English>European Settlers have discovered a huge salt deposit near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
         <French>Des colons européens ont décovert un immense dépôt de sel près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>Europäische Siedler haben grosse Salzvorkommen in der Gegend um [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</German>
+        <Russian>Огромное месторождение соли было обнаружено колонистами недалеко от [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SALT_RESOURCE</Tag>
         <English>Local settlers report that, on nearby hills in the desert, the air tastes very salty. A mining expedition might discover salt deposits but it will cost some gold.</English>
         <French>Ces colons nous ont informé que l'air est particulièrement salé dans quelques collines du désert. Une expédition minière pourrait y trouver un gisement de sel, mais celle-ci coûtera d'argon.</French>
         <German>Lokale Siedler berichten, dass die Luft auf nahegelegenen Hügeln in der Wüste nach Salz riecht. Eine Expedition zur Exploration des Salzvorkommens würde uns natürlich etwas Gold kosten.</German>
+        <Russian>Местные поселенцы сообщают, что в близлежащих холмах в пустыне воздух очень солоноватый на вкус. Горнодобывающая экспедиция может поискать залежи соли, но это будет стоить золота.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BISONS</Tag>
         <English>Natives are angry because settlers hunt their bison.</English>
         <French>Les indigènes sont en colère parce que des hommes blancs chassent leurs bisons.</French>
         <German>Die Ureinwohner sind verärgert, weil die Europäer zu viele Bisons jagen.</German>
+        <Russian>Индейцы возмущены тем, что поселенцы охотятся на их бизонов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BISONS</Tag>
         <English>Natives told the mayor of one of our towns to stop hunting bison in the area. They claim that by the right of their ancestors those bison belong to them. They need bison meat to survive.</English>
         <French>Des indigènes d'une tribu voisine se sont rapprochés du maire de l'une de nos villes pour demander que nous cessions de chasser le bison dans la zone. Ils prétendent que les bisons leurs appartiennent par leurs droits ancestraux, et qu'ils ne pourront survivre sans cette viande.</French>
         <German>Ureinwohner eines nahegelegenen Stammes sind an uns herangetreten. Sie fordern, dass wir die Jagd auf die Bisons der Gegend einstellen. Sie behaupten, dass die Bisons durch das Recht ihrer Vorväter ihnen gehören und sie diese zum Überleben brauchen.</German>
+        <Russian>Туземцы сказали мэру одного из наших городов прекратить охоту на бизонов в этом районе. Они заявляют, что эту землю и бизонов им завещали их предки. Им нужно мясо бизона, чтобы жить и продолжать свой род.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HOLY_GIANT_TREES</Tag>
         <English>European colonists in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] have cut down a giant tree that was sacred to the Natives.</English>
         <French>Les colons européens de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ont abbatu des arbres géants qui étaient sacrés pour les indigènes.</French>
         <German>Europäische Kolonisten aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben einen außergewöhnlich großen Baum gefällt, der den Ureinwohnern heilig war.</German>
+        <Russian>Европейские колонисты в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] срубили гигантское дерево, которое считалось священным для туземцев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HOLY_GIANT_TREES</Tag>
         <English>Natives of a nearby tribe are deeply upset because our lumberjacks have cut down a giant tree that was sacred to them. They demand that the lumberjacks be handed over to them for punishment.</English>
         <French>Les indigènes d'une tribu voisine sont furieux contre nos bûcherons qui ont coupé un arbre géant qui leur était sacré. Ils demandent que les bûcherons leurs sont rendus pour les punir de leur infamie.</French>
         <German>Ureinwohner eines nahegelegenen Stammes sind sehr verärgert, weil einige unserer Holzfäller einen außergewöhnlich großen Baum gefällt haben, der ihnen heilig war. Sie fordern, dass wir ihnen die Schuldigen zur Bestrafung ausliefern.</German>
+        <Russian>Туземцы соседнего племени в ярости от того, что наши лесорубы срубили священное для индейцев гигантское дерево. Они требуют, чтобы лесорубы были переданы им для наказания.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_THANKSGIVING</Tag>
         <English>European colonists in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] have celebrated the first Thanksgiving.</English>
         <French>Des colons européens de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ont célébré leur premier Thanksgiving.</French>
         <German>Europäische Kolonisten in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben das erste Erntedankfest gefeiert.</German>
+        <Russian>Европейские колонисты в городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] отпраздновали первый День Благодарения.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_THANKSGIVING</Tag>
         <English>The settlers from one of our villages want to celebrate a successful year and intend to invite their Native neighbours as well. They ask for our permission for the celebration, and if we want to sponsor the event.</English>
         <French>Les colons de l'un de nos villages ont célébré une année riche en succès et tiennent à inviter leur voisins indigènes. Ils demandent la permission pour cette célébration et nous demande notre concours financier.</French>
         <German>Die Siedler einer unserer Städte wollen ein erfolgreiches letztes Jahr feiern und auch ihre Nachbarn aus den nahegelegenen Ureinwohnerdörfern einladen. Sie bitten untertänigst, um unsere Erlaubnis für dieses Fest und fragen, ob wir das Ereignis vielleicht unterstützen wollen.</German>
+        <Russian>Поселенцы из одной из наших деревень хотят отметить удачный год и намерены пригласить и своих соседей индейцев. Они запрашивают у нас разрешения на празднование и вопрошают, не хотим ли спонсировать мероприятие.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HALLOWEEN</Tag>
         <English>European colonists in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] have celebrated the first Hallowe'en in the New World.</English>
         <French>Les colons européens de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ont célébré leur première fête d'Halloween dans le Nouveau Monde.</French>
         <German>Europäische Kolonisten in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben das erste Halloween in der Neuen Welt gefeiert.</German>
+        <Russian>Европейские колонисты в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] отпраздновали первый День всех святых в Новом Свете.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HALLOWEEN</Tag>
         <English>Some settlers that have recently arrived from Ireland and other European countries want to celebrate what they call 'Hallowe'en'. It sounds like a wild event, possibly heretical.</English>
         <French>Des colons récemment arrivés d'Irlande et d'autres pays européens veulent célébrer ce qu'ils appellent « Halloween ». Cela semble être une célébration assez païenne, sinon clairement hérétique.</French>
         <German>Einige Siedler, die erst kürzlich aus Irland und anderen europäischen Ländern angekommen sind, wollen ein Fest feiern, welches sie 'Halloween' nennen. Das Fest hört sich etwas supekt an.</German>
+        <Russian>Некоторые поселенцы, недавно прибывшие из Ирландии и других европейских стран, хотят отпраздновать то, что они называют «Хэллоуин». Звучит как дикое событие, возможно, еретическое.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MOLESTING_MISSIONARY</Tag>
         <English>A missionary is accused of sexually molesting Native women.</English>
         <French>Des missionnaires sont accusés d'avoir abusés de femmes indigènes.</French>
         <German>Ein Missionar wurde beschuldigt, Ureinwohnerinnen sexuell zu belästigen.</German>
+        <Russian>Миссионера обвиняют в сексуальных домогательствах к туземным женщинам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MOLESTING_MISSIONARY</Tag>
         <English>Some Natives from a nearby village are in one of our cities. They've brought a missionary, his hands tied, and they accuse him of having sexually molested their women.</English>
         <French>Des indigènes d'un village voisin sont venus dans l'une de nos villes. Ils avaient un missionnaire avec eux auxquels ils ont liés les mains. Ils l'accusent d'avoir abusé sexuellement de leurs femmes.</French>
         <German>Einige Wilde aus einer nahegelegenen Siedlung sind in eine unserer Städte angekommen. Sie haben einen gefesselten Missionar bei sich und beschuldigen diesen, dass er ihre Frauen sexuell belästigt habe.</German>
+        <Russian>Несколько индейцев из близлежащей деревни живут в одном из наших городов. Они привели миссионера со связанными руками и обвиняют его в сексуальных домогательствах к их женщинам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_DESERTED_WOLF_WHELP</Tag>
         <English>A deserted wolf cub has been found in the wilderness.</English>
         <French>Un louveteau abandonné a été trouvé dans le désert.</French>
         <German>Ein verlassener Wolfswelpe wurde in der Wildnis gefunden.</German>
+        <Russian>В пустынной местности был найден брошенный волчонок.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_DESERTED_WOLF_WHELP</Tag>
         <English>Our men have found a deserted wolf cub in the wilderness. His mother is probably dead. Perhaps this young beast could be tamed or else sold to some crazy rich person.</English>
         <French>Nos hommes ont trouvé un louveteau abandonné dans le désert. Sa mère est probablement morte. Cette jeune bête peut sans doute être dompté ou même vendu à un home riche qui s'ennuie.</French>
         <German>Einer unserer Männer hat einen verlassenen Wolfswelpen in der Wildnis gefunden. Seine Mutter ist wahrscheinlich tot. Vielleicht kann das kleine Biest ja gezähmt werden. Oder wir verkaufen es einem Reichen, der gelangweilt genug ist.</German>
+        <Russian>Наши люди нашли в глуши брошенного волчонка. Его мать, вероятно, мертва. Возможно, этого молодого зверя можно было бы приручить или продать какому-нибудь безумно богатому человеку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_TAVERN_VS_CHAPEL</Tag>
         <English>Some left-over construction materials from a former colony have been found.</English>
         <French>Certains matériaux de construction délaissés à l'époque de la fondation de la colonie ont été retrouvés.</French>
         <German>Einige übriggelassene Baumaterialien von der Gründung einer Kolonie wurden entdeckt.</German>
+        <Russian>Найдены остатки строительных материалов после основания колонии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TAVERN_VS_CHAPEL</Tag>
         <English>Colonists at a recently founded city have materials left over from its construction. Some want to build a chapel. Others want a tavern. Whatever we decide will make one party unhappy.</English>
         <French>Certains colons ont récemment découvert des matériaux de construction délaissés lors de la fondation de leur colonoe. Certains d'entre eux souhaitent l'utiliser pour construire une chapelle, d'autres pour construire une taverne. Quelque soit la décision, l'un des deux camps ne sera pas satisfait.</French>
         <German>Einige Kolonisten einer kürzlich gegründeten Stadt haben entdeckt, dass noch einige Baumaterialien übrig geblieben sind. Einige Bewohner wollen mit diesen Baumaterialien eine Kapelle errichten. Andere Bewohner wollen stattdessen eine Taverne bauen. Wie auch immer wir uns entscheiden, eine Seite wird unzufrieden sein.</German>
+        <Russian>У колонистов в недавно основанном городе остались материалы, оставшиеся от его строительства. Некоторые хотят построить часовню. Другие хотят таверну. Что бы мы ни решили, одна из сторон будет недовольна.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BANKRUPT_FARMER</Tag>
         <English>A local farmer has gone bankrupt.</English>
         <French>Un fermier d'une de nos colonies a fait faillite.</French>
         <German>Ein Farmer aus der Gegend ist bankrott gegangen.</German>
+        <Russian>Местный фермер стал банкротом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BANKRUPT_FARMER</Tag>
         <English>A farmer, recently arrived, got a big loan to buy land but now he can't pay. He wants to sell everything he has to repay the loan and go back to Europe.</English>
         <French>Un fermier ayant récemment immigré s'est lourdement endetté pour acheter des terres qu'il ne peut plus rembourser. Il veut tout ce qui lui reste pour clore ses dettes et rentrer en Europe.</French>
         <German>Ein kürzlich eingewanderter Farmer hat einen hohen Kredit aufgenommen, um sich etwas Land zu kaufen. Diesen kann er nun nicht mehr zurückzahlen. Daher will er sein gesamtes Habe verkaufen, um damit den Kredit zu begleichen und wieder nach Europa zurückzukehren.</German>
+        <Russian>Недавно приехавший фермер получил большую ссуду на покупку земли, но теперь не может заплатить. Он хочет продать все, что у него есть, чтобы погасить кредит и вернуться в Европу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_EUROPEAN_CONFLICT_ENDED</Tag>
         <English>A major military conflict in Europe has ended.</English>
         <French>Un conflit militaire d'importance a pris fin en Europe.</French>
         <German>Ein bedeutender militärischer Konflikt wurde in Europa beendet.</German>
+        <Russian>Крупный военный конфликт в Европе закончился.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPEAN_CONFLICT_ENDED</Tag>
         <English>A large-scale military conflict in Europe has ended. Many troops are no longer needed and have been sent home. Maybe we could hire some of them.</English>
         <French>Un conflit militaire d'importance a pris fin en Europe. De nombreuses troupes n'y sont plus nécessaires et ont été renvoyés à leur maison. Peut-être pourrions-nous en engager quelques-unes.</French>
         <German>Ein bedeutender militärischer Konflikt wurde in Europa beendet. Viele Soldaten sind schon entlassen worden. Vielleicht können wir einige davon anheuern.</German>
+        <Russian>Крупномасштабный военный конфликт в Европе завершился. Многие войска больше не нужны и их отправили по домам. Может быть, мы могли бы нанять некоторых из этих бравых солдат.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_DRUNKEN_FISHER</Tag>
         <English>A drunken fisher died in a storm.</English>
         <French>Un pêcheur alcoolisé est moort dans une tempête.</French>
         <German>Ein betrunkener Fischer starb in einem Sturm.</German>
+        <Russian>Пьяный рыбак погиб во время шторма.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_DRUNKEN_FISHER</Tag>
         <English>A drunken fisher fell overboard during a storm and drowned. His widow now wants to sell his fishing boat, since she has no use for it.</English>
         <French>Un pêcheur alcoolisé est passé par dessus bord lors d'une tempête. Il s'est noyé. Sa veuve souhaite vendre son bâteau de pêche, n'en ayant plus d'usage.</French>
         <German>Ein betrunkener Fischer fiel während eines Sturms über Bord und ertrank. Seine Witwe möchte nun dessen Fischerboot verkaufen, da sie keine Verwendung dafür hat.</German>
+        <Russian>Пьяный рыбак во время шторма упал за борт и утонул. Теперь его вдова хочет продать его рыбацкую лодку, так как она ей не нужна.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_ROTTEN_MEAT</Tag>
         <English>A butcher has fled Europe where he was accused of selling rotten meat.</English>
         <French>Un boûcher venu d'Europe est accusé d'être en fuite après avoir vendu de la viande pourrie.</French>
         <German>Ein Fleischermeister ist aus Europa geflohen, weil er verdorbenes Fleisch verkauft haben soll.</German>
+        <Russian>Мясник сбежал из Европы, где его обвинили в продаже тухлого мяса.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ROTTEN_MEAT</Tag>
         <English>A butcher has arrived in the harbour of one of our cities. He had to flee Europe because he was accused of selling rotten meat. He pleads his innocence and wants a second chance.</English>
         <French>Un ancien boûcher est arrivé au port de l'une de nos villes. Il a fui d'Europe parce qu'il était accusé d'avoir vendu de la viande pourrie. Il clâme son innocence et souhaite qu'on lui laisse une deuxième chance.</French>
         <German>Ein Fleischermeister ist im Hafen einer unserer Städte eingetroffen. Er musste aus Europa fliehen, weil er verdorbenes Fleisch verkauft haben soll. Er behauptet aber, unschuldig zu sein, und bittet um eine zweite Chance.</German>
+        <Russian>В порт одного из наших городов прибыл мясник. Ему пришлось бежать из Европы, потому что его обвинили в продаже тухлого мяса. Он заявляет о своей невиновности и хочет получить второй шанс.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_DESPERATE_CONQUISTADORES</Tag>
         <English>Some desperate conquistadores have raided a Native settlement.</English>
         <French>Des conquistadors désespérés ont pillé un village indigène.</French>
         <German>Einige verzweifelte Konquistadoren haben eine Siedlung der Ureinwohner überfallen.</German>
+        <Russian>Несколько отчаянных конкистадоров совершили набег на поселение индейцев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_DESPERATE_CONQUISTADORES</Tag>
         <English>Some mounted conquistadores showed up at one of our settlements in pretty bad shape. Some are wounded. Then Natives from a nearby tribe arrived and accused those same conquistadores of raiding their villages.</English>
         <French>Des conquistadors à cheval sont arrivés dans l'une de nos villes dans un bien triste état. Ils comptent plusieurs blessés. Peu de temps après, des indigènes d'une tribu voisine sont également arrivés et ont accusé les conquistadors d'avoir réalisé un raide dans leurs villages.</French>
         <German>Einige berittene Konquistadoren sind in sehr schlechtem Zustand in einer unserer Siedlungen angekommen. Einige von ihnen sind verwundet. Kurz darauf trafen auch einige Ureinwohner eines nahegelegenen Stammes ein und beschuldigten die Konquistadoren, ihre Dörfer überfallen zu haben.</German>
+        <Russian>Несколько конных конкистадоров появились в одном из наших поселений в довольно плачевном состоянии, некоторые были ранены. Затем прибыли индейцы из соседнего племени и обвинили тех конкистадоров в набегах на их деревни.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_TRAPPER_TROUBLE</Tag>
         <English>Trouble between trappers and Natives over hunting rights.</English>
         <French>Des tensions montent entre trappeurs et indigènes à propos de droits de chasse.</French>
         <German>Konflikte zwischen Trappern und Ureinwohnern über Jagdrechte.</German>
+        <Russian>Проблемы между звероловами и туземцами из-за прав на охоту.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TRAPPER_TROUBLE</Tag>
         <English>In the woods close to one of our forts our troops heard shots. When they went out to investigate they walked into an dispute between Natives and trappers about hunting rights. The Natives claim that those forests still belong to them and that no settler is allowed to hunt there.</English>
         <French>À proximité de l'un de nos forts, nos troupes ont entendu des tirs dans les bois. En menant l'investigation, ils se sont confrontés à une querelle entre des trappeurs et des indigènes à propos de droits de chasse. Les indigènes considèrent que cette forêt leur appartient et que les blancs n'y sont pas autorisés à chasser.</French>
         <German>In der Nähe eines unserer Forts haben die Truppen Schüsse in den Wäldern gehört. Als sie zur Untersuchung ausrückten, fanden sie Ureinwohner und Trapper in einen Streit über Jagdrechte in den umliegenden Wäldern verwickelt vor. Die Ureinwohner behaupten, dass das Land immer noch ihnen gehört und dass dort kein weisser Mann ohne ihre Erlaubnis jagen darf.</German>
+        <Russian>В лесу, недалеко от одного из наших фортов, наши бойцы услышали выстрелы. Они вышли на проверить, в чем дело и увидели группы индейцев и звероловов, между которыми возник спор о правах на охоту. Туземцы утверждают, что эти леса по-прежнему принадлежат им и что ни одному поселенцу не разрешается там охотиться.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_CUTTHROATS_IN_THE_WOODS</Tag>
         <English>Cutthroats are roaming the woods.</English>
         <French>Des truands occupent les bois.</French>
         <German>Halsabschneider machen die Wälder unsicher.</German>
+        <Russian>По лесам бродят головорезы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CUTTHROATS_IN_THE_WOODS</Tag>
         <English>We have heard that outlaws lurk in the woods. Luckily one of our nearby forts can send troops to intervene.</English>
         <French>Selon plusieurs rapports, des truands occupent les bois. Heureusement nous disposons d'un fort à proximité et nous pouvons faire intervenir des troupes.</French>
         <German>In der Nähe eines unserer Forts scheinen sich einige Halsabschneider in den Wäldern zu verstecken. Sollen unsere Truppen eingreifen?</German>
+        <Russian>Мы слышали, что в лесу прячутся преступники. К счастью, один из наших близлежащих фортов может послать войска, которые очистят лес от негодяев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MAN_FROM_THE_WILDERNESS</Tag>
         <English>Men from the wilderness buy supplies in the forts.</English>
         <French>Des hommes dans les terres sauvages s'approvisionnent dans les forts.</French>
         <German>Männer in der Wildnis nutzen die Forts, um Vorräte zu kaufen.</German>
+        <Russian>Люди из глуши покупают припасы в фортах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MAN_FROM_THE_WILDERNESS</Tag>
         <English>Some men from the nearby wilderness haved come into our fort to buy supplies. They know the area and could be very useful to us.</English>
         <French>Des hommes vivant dans les terres sauvages sont venu pour s'approvisionner dans nos forts. Ils semblent bien connaître les environs et pourraient nous être utiles.</French>
         <German>Einige Männer, die in der nahegelegenen Wildnis leben, sind in unser Fort gekommen, um Vorräte zu kaufen. Es scheint, als hätten sie sehr viel Wissen über die Gegend. Daher könnten sie uns sehr nützlich sein.</German>
+        <Russian>Несколько человек из близлежащей глуши пришли в наш форт, чтобы купить припасы. Они знают местность и могут быть нам очень полезны.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MONASTERY_TRADING_FOOD</Tag>
         <English>After a long hard winter Natives have come to a monastery to buy food.</English>
         <French>Après un hiver long et vigoureux, des indigènes sont venues au Monastère pour acheter de la nourriture.</French>
         <German>Nach einem langen harten Winter kamen Ureinwohner in ein Kloster, um Nahrung zu kaufen.</German>
+        <Russian>После долгой суровой зимы индейцы пришли в монастырь купить еды.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MONASTERY_TRADING_FOOD</Tag>
         <English>After a long hard winter, Natives from a nearby village have come to one of our monasteries hoping to buy food. They do not have much to offer in exchange.</English>
         <French>Après un hiver long et vigoureux, des indigènes sont venues au Monastère pour acheter de la nourriture. Ils n'ont pas grand-chose à offrir en échange.</French>
         <German>Nach einem langen harten Winter kamen Ureinwohner aus einem benachbarten Dorf in eines unserer Kloster, um Nahrung zu kaufen. Sie haben aber im Austausch wenig anzubieten.</German>
+        <Russian>После долгой суровой зимы в один из наших монастырей из близлежащей деревни пришли индейцы в надежде купить еды. Но им нечего предложить взамен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MONASTERY_HIDING_SLAVES</Tag>
         <English>Some Native slaves escaped a foreign colony to seek protection in our monasteries.</English>
         <French>Des esclaves indigènes se sont enfuis et cherchent la protection dans nos monastères.</French>
         <German>Einige Ureinwohner sind der Sklaverei des Weissen Mannes entflohen und suchen Schutz in Klöstern.</German>
+        <Russian>Несколько туземных рабов сбежало из чужой колонии в поисках защиты в наших монастырях.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MONASTERY_HIDING_SLAVES</Tag>
         <English>Some Native slaves escaped from a foreign colony. They want protection in one of our monasteries. Troops from our European neighbour have surrounded the monastery to demand that their property be returned to them.</English>
         <French>Des esclaves indigènes se sont enfuis de chez l'un de nos voisins européens et cherchent la protection de l'un de nos monastères. Des troupes des colons européens voisins encerclent le monastère et demandent que leur propriété leur soit rendu.</French>
         <German>Einige Ureinwohner konnten aus der Sklaverei in einer nahegelegenen Siedlung eines unserer europäischen Nachbarn entfliehen. Sie suchen nun um Schutz in einem unserer Klöster nach. Truppen unseres Nachbarn sind ihnen gefolgt und haben nun das Kloster umstellt. Sie verlangen die Herausgabe der Sklaven.</German>
+        <Russian>Несколько туземных рабов сбежало из чужой колонии. Они просят защиты в одном из наших монастырей. Войска нашего европейского соседа окружили монастырь, требуя вернуть им их имущество.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MONASTERY_HEALING_WOUNDED</Tag>
         <English>Natives brought a wounded warrior to a monastery.</English>
         <French>Des indigènes ont apporté un guerrier blessé dans un monastère.</French>
         <German>Ureinwohner brachten Verwundeten in ein Kloster.</German>
+        <Russian>Индейцы принесли в монастырь раненого воина.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MONASTERY_HEALING_WOUNDED</Tag>
         <English>Some Natives from a nearby village brought a young warrior, badly wounded, to one of our monasteries. He was attacked by a bear. If we do not help him, he will surely die.</English>
         <French>Des indigènes d'un village avoisinant ont ramené un jeune guerrier sérieusement blessé dans l'un de nos monastères. Il semble avoir été attaqué par un ours. Si nous ne l'aidons pas, il va probablement mourrir.</French>
         <German>Einige Ureinwohner eines nahegelegen Dorfes haben einen schwer verwundeten jungen Krieger in eines unserer Klöster gebracht. Er scheint vom einem Bären angegriffen worden zu sein. Wenn wir nicht helfen, wird er sterben.</German>
+        <Russian>Индейцы из близлежащей деревни принесли в один из наших монастырей тяжело раненного молодого воина. На него напал медведь. Если мы ему не поможем, он наверняка умрет.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_UNIVERSITY</Tag>
         <English>The first university has been founded in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
         <French>La première université a été fondée à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>Die erste Universität der Neuen Welt wurde in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] gegründet.</German>
+        <Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] был основан первый университет.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_UNIVERSITY</Tag>
         <English>An influential society of educated men in our mother country heard about the founding of our first university. They want to help us by sending a prominent academic as a professor.</English>
         <French>Une société influente d'hommes éduqués dans notre mère patrie ont entendu parlé de la fondation de notre première université. Ils souhaitent nous aider en nous envoyer un de leur sage pour y enseigner.</French>
         <German>Eine einflußreiche Gesellschaft gebildeter Männer unseres Heimatlandes hat von der Gründung unserer ersten Universität erfahren. Sie wollen uns helfen, indem sie uns einen hoch gebildeten Mann schicken wollen, der unsere Studenten unterrichtet.</German>
+        <Russian>Влиятельное общество образованных людей в нашей родной стране услышало об основании нашего первого университета. Они хотят помочь нам, прислав в качестве профессора видного ученого.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_YOUNG_COD_SWARM</Tag>
         <English>Large schools of cod in the oceans.</English>
         <French>Des bancs massifs de cabillauds dans les océans.</French>
         <German>Riesige Kabeljauschwärme in den Ozeanen.</German>
+        <Russian>Крупные косяки трески в океанах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_YOUNG_COD_SWARM</Tag>
         <English>One of our fishing boats has sighted a large school of small young cod. If we harvest those fish now, the cod will probably not recover.</English>
         <French>L'un de nos bateaux de pêche a repéré de larges bancs de jeunes cabillauds. Si nous les pêchons tous d'un seul coup, il ne pourra probablement pas se reproduire.</French>
         <German>Eines unserer Fischerboote hat einen riesigen Schwarm junger Kabeljaufische entdeckt. Wenn wir ihn jedoch jetzt bereits abfischen, wird es sich nicht davon erholen.</German>
+        <Russian>Одна из наших рыбацких лодок заметила большой косяк мелкой молодой трески. Если мы выловим эту рыбу сейчас, популяция трески, скорее всего, не восстановится.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_DOCKS</Tag>
         <English>An influential trading company wants to expand its business in the New World. It offers a reward to the first colony to build five cities with harbours.</English>
         <French>Une grande compagnie financière souhaite développer ses activités dans le Nouveau Monde. Elle offre une récompense à la première colonie qui construira 5 villes disposant de docks ou de meilleurs ports.</French>
         <German>Eine einflußreiche Handelsgesellschaft will ihre Unternehmungen in der Neuen Welt ausweiten. Sie bietet daher dem Gouverneur der ersten Kolonie, die 5 Städte mit einfachen oder ausgebauten Häfen errichtet, eine Belohnung an.</German>
+        <Russian>Влиятельная торговая компания хочет расширить свой бизнес в Новом Свете. Она предлагает награду первой державе, которая построит пять городов с доками.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIVE_DOCKS</Tag>
         <English>Milord, the governor of another colony has built harbours in five cities first. They've won the support offered by the influential trading company.</English>
         <French>Seigneur, une autre puissance a construit 5 ports avant vous. Ils ont obtenu le soutien de la compagnie financière influente.</French>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch in 5 Städten Häfen errichten. Sie werden daher nun von einer einflußreichen Handelsgesellschaft unterstützt.</German>
+        <Russian>Милорд, губернатор другой колониальной державы первым построил доки в пяти городах. Они получили поддержку, предложенную влиятельной торговой компанией.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_DOCKS_DONE</Tag>
         <English>Milord, another colonial nation has built harbours in five cities ahead of every other colony.</English>
         <French>Une colonie a été la première a construire 5 ports avant les autres.</French>
         <German>Eine Kolonialmacht konnte vor allen anderen in 5 Städten Häfen errichten.</German>
+        <Russian>Милорд, другая колониальная нация построила доки в пяти городах раньше всех остальных.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_DOCKS_DONE</Tag>
         <English>Milord, you have built harbours in five cities before any other colony could. You now have support from an influential trading company. Choose your reward.</English>
         <French>Seigneur, vous avez été le première à construire 5 ports dans vos colonies. Vous avez obtenu le soutien d'une grande compagnie financière. Choisissez votre récompense.</French>
         <German>Milord, Eure Kolonie konnte vor allen anderen in 5 Städten Häfen errichten. Ihr werdet daher nun von einer einflußreichen Handelsgesellschaft unterstützt. Wählt Eure Belohnung.</German>
+        <Russian>Милорд, мы построили доки в пяти городах раньше, чем любая другая колониальная держава. Теперь у вас есть поддержка влиятельной торговой компании. Время забрать свою награду.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_MARKETS</Tag>
@@ -2464,331 +2608,397 @@
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_GRAVEYARDS</Tag>
         <English>Milord, the church requests that we build graveyards in at least five cities to bury dead citizens. We are promised that also priests will then be sent to hold funeral ceremonies.</English>
         <German>Milord, die Kirche verlangt, dass wir in mindestens fünf Städten Friedhöfe bauen, um tote Bürger zu begraben. Uns wurde versprochen, dass dann auch Priester für die Beerdigungen geschickt werden.</German>
+        <Russian>Милорд, церковь требует, чтобы мы построили кладбища как минимум в пяти городах для захоронения умерших граждан. Нам обещают, что потом будут присланы священники для совершения похоронных обрядов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_GRAVEYARDS_DONE</Tag>
         <English>Milord, another colonial nation is the first to have graveyards in five cities.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Friedhöfe errichten.</German>
+        <Russian>Милорд, другая колониальная нация первой организовала кладбища в пяти городах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_GRAVEYARDS_DONE</Tag>
         <English>Milord, you've built graveyards in five cities before any other colony could. The church now sends the priests as promised.</English>
         <German>Milord, Eure Kolonie konnte vor allen anderen in 5 Städten Friedhöfe errichten. Die Kirche schickt nun wie versprochen die Priester.</German>
+        <Russian>Милорд, мы построили кладбища в пяти городах раньше, чем любая другая колониальная нация. Церковь уже отправила священников, как и обещалось.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIVE_GRAVEYARDS</Tag>
         <English>Milord, the governor of another colony has built graveyards in five cities before you. You've missed the chance to get the reward from the church.</English>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch in 5 Städten Friedhöfe errichten. Dadurch habt Ihr die Chance auf eine Belohung durch die Kirche vertan.</German>
+        <Russian>Милорд, губернатор другой колонии построил кладбища в пяти городах. Мы упустили шанс получить награду от церкви.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_GRAVEYARDS</Tag>
         <English>Of course we shall ensure that all our dead can rest peacefully in holy soil.</English>
         <German>Selbstverständlich werden wir sicherstellen, dass alle unsere Toten friedvoll in heilger Erde ruhen können.</German>
+        <Russian>Конечно, мы позаботимся о том, чтобы все наши умершие могли мирно упокоиться на святой земле.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_GRAVEYARDS_DONE_1</Tag>
         <English>Ensure that the priests are welcomed with a ceremony.</English>
         <German>Stellt sicher, dass die Priester mit Feierlichkeiten willkommen geheißen werden.</German>
+        <Russian>Удостоверьтесь, что священники приветствуются должным образом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BAKERIES</Tag>
         <English>Milord, the commander of the town guard of our capitol suggests that we build five more bakeries in our cities to supply the guard with better rations. He promises that this would bring many new volunteers to the guard.</English>
         <German>Milord, der Befehlshaber der Statdwache unserer Haupstadt schlägt vor, dass wir mehr Bäckereien in unseren Städten bauen, um die Wache mit besseren Rationen zu versorgen. Er verspricht dass dies zu vielen neuen Freiwilligen für die Wache führne wird.</German>
+        <Russian>Милорд, командир городской стражи нашей столицы, предлагает нам построить еще пять пекарен в наших городах, чтобы снабжать стражу лучшим пайком. Он обещает, что это приведет в гвардию много новых добровольцев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_BAKERIES_DONE</Tag>
         <English>Milord, another colonial nation is the first to have bakeries in five cities.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Bäckereien errichten.</German>
+        <Russian>Милорд, другая колониальная нация первой открыла пекарни в пяти городах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BAKERIES_DONE</Tag>
         <English>Milord, you've built bakeries in five cities before any other colony could. New volunteers are ready to be recruited for the guard.</English>
         <German>Milord, Eure Kolonie konnte vor allen anderen in fünf Städten Bäckereien errichten. Neue Freiwillge wollen sich der Wache anschließen.</German>
+        <Russian>Милорд, мы построили пекарни в пяти городах раньше, чем любая другая колониальная держава. В охрану готовы набрать новых добровольцев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIVE_BAKERIES</Tag>
         <English>Milord, the governor of another colony has built bakeries in five cities before you. You've missed the chance to get new volunteers for the guard.</English>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch in 5 Städten Bäckereien errichten. Dadurch habt Ihr die Chance auf neue Freiwillige für die Wache vertan.</German>
+        <Russian>Милорд, губернатор другой колонии построил пекарни в пяти городах раньше нас. Мы упустили шанс получить новых добровольцев для охраны наших городов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_BAKERIES</Tag>
         <English>Of course we shall ensure that the brave men guarding our cities shall be well provisioned.</English>
         <German>Selbstverständlich werden wir sicherstellen, dass die mutigen Männer, die unsere Städte bewachen gut versorgt sind.</German>
+        <Russian>Конечно, мы позаботимся о том, чтобы храбрецы, охраняющие наши города, были хорошо обеспечены.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_BAKERIES_DONE_1</Tag>
         <English>Ensure that these new volunteers get well trained. But give them a good meal first.</English>
         <German>Stellt sicher, dass die neuen Freiwilligen gut trainiert werden. Aber zuerst gebt ihnen eine anständige Mahlzeit.</German>
+        <Russian>Проследите, чтобы новички прошли хорошую подготовку. Но сначала обеспечте их хорошим пайком.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BUTCHERS</Tag>
         <English>Milord, some Hessian mercenaries are looking for a new contract. But they include a strange demand that they will only work for the country with the best sausages. Maybe if we build butcheries in five of our cities we could convince them to come to us.</English>
         <German>Milord, einige hessische Söldner suchen nach einem neuen Auftrag. Aber sie stellen die seltsame Bedingung dass sie nur für das Land mit den besten Würsten arbeiten wollen. Vielleicht können wir sie davon überzeugen zu uns zu kommen indem wir in fünf unserer Städte Schlachtereien errichten.</German>
+        <Russian>Милорд, несколько гессенских наемников ищут новый контракт. Но включают странное требование, что они будут работать только на страну с лучшими колбасами. Может быть, если мы построим дома мясников в пяти наших городах, мы сможем убедить их прийти к нам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_BUTCHERS_DONE</Tag>
         <English>Milord, another colonial nation is the first to have butcheries in five cities.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Schlachtereien errichten.</German>
+        <Russian>Милорд, другая колониальная нация первой построила дома мясников в пяти городах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BUTCHERS_DONE</Tag>
         <English>Milord, you've built butcheries in five cities before any other colony could. That convinced the Hessian mercenaries to fight for us.</English>
         <German>Milord, Eure Kolonie konnte vor allen anderen in fünf Städten Schlachtereien errichten. Das hat die hessischen Söldner überzeugt für uns zu kämpfen.</German>
+        <Russian>Милорд, мы построили дома мясников в пяти городах раньше, чем любая другая колониальная держава. Это убедило гессенских наемников сражаться за нас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIVE_BUTCHERS</Tag>
         <English>Milord, the governor of another colony has built butcheries in five cities before you. You've missed the chance to hire the Hessian mercenaries.</English>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch in 5 Städten Schlachtereien errichten. Dadurch habt Ihr die Chance auf die hessischen Söldner vertan.</German>
+        <Russian>Милорд, губернатор другой колонии построил дома мясников в пяти городах раньше нас. Мы упустили шанс нанять гессенских наемников.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_BUTCHERS</Tag>
         <English>We shall show them that our butchers make the best sausages in the World!</English>
         <German>Wir werden beweisen, dass unsere Schlachter die besten Würste der Welt machen!</German>
+        <Russian>Мы покажем им, что наши мясники делают лучшие колбасы в мире!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_BUTCHERS_DONE_1</Tag>
         <English>Wonderful, let us celebrate a Hessian sausage festival.</English>
         <German>Wundervoll, laßt uns ein hessisches Wurstfest feiern.</German>
+        <Russian>Замечательно, давайте отпразднуем фестиваль гессенских колбас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_MEDICAL_OFFICES</Tag>
         <English>Milord, our ships that return from Europe bring bad news. There have been outbreaks of the plague in major cities of several countries. Our citizens are worried and demand that we build hospitals in at least five cities to be prepared for the worst. They even offer to raise money to hire more doctors.</English>
         <German>Milord, unsere Schiffe die aus Europa zurückkehren bringen schlechte Neuigkeiten. Es scheint, als hätte es Ausbrüche der Pest in den Großstädten mehrerer Länder gegeben. Unsere Bürger sind daher beunruhigt und verlangen, dass wir Krankenhäuser in mindestens fünf Städten bauen, um auf das Schlimmste vorbereitet zu sein. Sie bieten sogar an, Geld für die Anstellung von mehr Ärzten zu sammeln.</German>
+        <Russian>Милорд, наши корабли, возвращающиеся из Европы, приносят плохие новости. Вспышки чумы имели место в крупных городах нескольких стран. Наши граждане обеспокоены и требуют построить дома для врачей как минимум в пяти городах, чтобы быть готовыми к худшему. Они даже предлагают собрать деньги, чтобы нанять больше медиков.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_MEDICAL_OFFICES_DONE</Tag>
         <English>Milord, another colonial nation is the first to have hospitals in five cities.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Krankenhäuser errichten.</German>
+        <Russian>Милорд, другая колониальная нация, первой построила дома для врачей в пяти городах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_MEDICAL_OFFICES_DONE</Tag>
         <English>Milord, you've built hospitals in five cities before any other colony could. As promised our citizens collected money to hire more doctors.</English>
         <German>Milord, Eure Kolonie konnte vor allen anderen in fünf Städten Krankenhäuser errichten. Wie versprochen, haben unsere Bürger Geld gesammelt, um mehr Ärzte einzustellen.</German>
+        <Russian>Милорд, мы построили дома для врачей в пяти городах раньше, чем любая другая колониальная держава. Как и было обещано, наши граждане собрали деньги, чтобы нанять больше врачей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIVE_MEDICAL_OFFICES</Tag>
         <English>Milord, the governor of another colony has built hospitals in five cities before you. You've missed the chance to convince your citizens to pay for more doctors.</English>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch in 5 Städten Krankenhäuser errichten. Dadurch habt Ihr die Chance vertan, eure Bürger davon zu überzeugen für mehr Ärzte zu bezahlen.</German>
+        <Russian>Милорд, губернатор другой колониальной нации построил больницы в пяти городах. Мы упустили шанс убедить своих граждан платить за большее количество врачей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_MEDICAL_OFFICES</Tag>
         <English>We will ensure medical care for our citizens.</English>
         <German>Wir werden so gut wie möglich die medizinische Versorgung unserer Bürger sichern.</German>
+        <Russian>Мы обеспечим медицинскую помощь нашим гражданам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_MEDICAL_OFFICES_DONE_1</Tag>
         <English>The doctors shall get all they need. Any first sign of the plague shall be reported immediately.</English>
         <German>Die Ärzte sollen alles bekommen was sie brauche. Jedes noch so kleine Zeichen der Pest muss sofort berichtet werden.</German>
+        <Russian>Врачи получат все необходимое. О любых признаках чумы немедленно сообщать мне лично.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_OPERA</Tag>
         <English>Milord, our diplomats in Europe have heard how European high society claims that we're uncivilized barbarians with no culture. If we're the first to build an opera in the New World we would change that image. That would also convince famous artists and actors to come to our colonies.</English>
         <German>Milord, unsere Dimplomaten in Europa berichten dass die europäischen Adeligen und die Reichen der Oberschicht behaupten wir wären Barbaren ohne Kultur. Wenn wir die ersten in der Neuen Welt wären, die eine Oper bauen würden, könnten wir dieses Bild ändern. Das würde sicherlich auch berühmte Schauspieler und Künstler überzeugen in unsere Kolonien zu kommen.</German>
+        <Russian>Милорд, наши дипломаты в Европе слышали, как европейское высшее общество утверждает, что мы нецивилизованные варвары без культуры. Если бы мы первыми построили оперу в Новом Свете, мы изменили бы этот имидж. Это также убедило бы известных художников и актеров приехать в наши колонии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_OPERA_DONE</Tag>
         <English>Milord, another colonial nation is the first to have built an opera.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen eine Oper errichten.</German>
+        <Russian>Милорд, другая колониальная нация первой построила оперу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_OPERA_DONE</Tag>
         <English>Milord, you've built an opera before any other colony could. Famous entertainers from Europe and want to come and play in it.</English>
         <German>Milord, Eure Kolonie konnte vor allen anderen eine Oper errichten. Berühmte Schauspieler aus Europa wollen nun darin auftreten.</German>
+        <Russian>Милорд, мы построили оперу раньше любой другой колониальной державы. Известные артисты из Европы уже присылают свои заявки на выступление в ней.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIRST_OPERA</Tag>
         <English>Milord, the governor of another colony has built an opera before you. You've missed the chance to convince famous entertainers to come to our colonies.</English>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch eine Oper errichten. Dadurch habt Ihr die Chance vertan, berühmte Schauspieler anzulocken.</German>
+        <Russian>Милорд, губернатор другой колониальной нации построил оперу раньше вас. Мы упустили шанс убедить известных артистов приехать в наши колонии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_OPERA</Tag>
         <English>We shall build that opera and demonstrate our culture to the world.</English>
         <German>Wir werden diese Oper bauen und der Welt unsere Kultur demonstrieren.</German>
+        <Russian>Мы построим эту оперу и продемонстрируем нашу культуру всему миру.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_OPERA_DONE_1</Tag>
         <English>We are looking forward to see the first performances in our new Opera.</English>
         <German>Wir freuen uns bereits auf die ersten Aufführungen in unserer neuen Oper.</German>
+        <Russian>С нетерпением ждем первых спектаклей в нашей новой опере.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_SUPREME_COURT</Tag>
         <English>Milord, European nobles claim that we are not trustworthy business partners because our legal system is not centralized, thus unstable. We could change that by being the first in the New World to build a Supreme Court. If we do so, it would surely motivate judges from Europe to come to our colonies.</English>
         <German>Milord, europäische Adlige behaupten, dass wir keine vertrauenswürdinge Geschäftspartner seine, da unser Rechtssystem nicht zentralisiert und daher nicht stabil sei. Wir könnten dies dadurch ändern, indem wir die ersten in der Neuen Welt sind, die einen Obersten Gerichtshof bauen. Wenn wir dies erreichen, wird dies sicherlich auch Richter aus Europe davon überzeugen in die neue Welt zu migrieren.</German>
+        <Russian>Милорд, европейские дворяне утверждают, что мы ненадежные деловые партнеры, потому что наша правовая система не централизована, а значит, нестабильна. Мы могли бы изменить это, построив первыми в Новом Свете Верховный суд. Если мы это сделаем, это наверняка побудит судей из Европы приехать в наши колонии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_SUPREME_COURT_DONE</Tag>
         <English>Milord, another colonial nation is the first to have built a Supreme Court.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen einen Obersten Gerichtshof errichten.</German>
+        <Russian>Милорд, другая колониальная нация первой построила Верховный суд.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_SUPREME_COURT_DONE</Tag>
         <English>Milord, you've built a Supreme Court before any other colony could. As expected judges from Europe seek the opportunity to work in it.</English>
         <German>Milord, Eure Kolonie konnte vor allen anderen einen Obersten Gerichtshof errichten. Wie erwartet suchen nun Richter aus Europa darin eine Anstellung.</German>
+        <Russian>Милорд, мы построили Верховный суд раньше любой другой колонии. Как и ожидалось, судьи из Европы ищут возможность поработать в нем.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIRST_SUPREME_COURT</Tag>
         <English>Milord, the governor of another colony has built a Supreme Court before you. You've missed the chance to convince judges from Europe to come to us.</English>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch einen Obersten Gerichtshof errichten. Dadurch habt Ihr die Chance vertan, Richter aus Europa anzulocken.</German>
+        <Russian>Милорд, губернатор другой колониальной державы построил Верховный суд раньше нас. Мы упустили шанс убедить судей из Европы приехать к нам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_SUPREME_COURT</Tag>
         <English>We will build a Supreme Court to ensure a stable legal system in our colonies.</English>
         <German>Wir werden einen Obersten Gerichtshof bauen, um ein stabiles Rechtssystem in unseren Kolonien zu gewährleisten.</German>
+        <Russian>Мы построим Верховный суд, чтобы обеспечить стабильную правовую систему в наших колониях.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_SUPREME_COURT_DONE_1</Tag>
         <English>The judges shall get to work. There will be law and order in our colonies.</English>
         <German>Die Richter sollen ans Werk gehen. Es soll Recht und Ordnung in useren Kolonien herrschen.</German>
+        <Russian>Судьи должны приступить к работе. В наших колониях воцарится закон и порядок.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_COLONIAL_CONGRESS</Tag>
         <English>Milord, our diplomats negotiating with the other colonies report that we seem politically fragmented. We should install a Colonial Congress to consolidate political opinions. This would also attract more qualified statesmen.</English>
         <German>Milord, unsere Diplmaten, die von Verhandlungen mit anderen Kolonialmächten zurückkehren berichten dass wir den Eindruck vermitteln politisch uneins zu sein. Wir sollten einen Kolonialkongress gründen, um die politische Meinungen zu konsolidieren. Dies würde sicherlich auch dazu führen, dass wir weitere begabte Staasmänner findne.</German>
+        <Russian>Милорд, наши дипломаты, ведущие переговоры с другими колониальными державами, сообщают, что мы кажемся политически раздробленными. Мы должны создать Колониальный Конгресс, чтобы консолидировать политические взгляды. Это также привлекло бы более квалифицированных государственных деятелей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_COLONIAL_CONGRESS_DONE</Tag>
         <English>Milord, another colonial nation is the first to have built a Colonial Congress.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen einen Kolonialkongress errichten.</German>
+        <Russian>Милорд, другая колониальная нация первой создала Колониальный Конгресс.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_COLONIAL_CONGRESS_DONE</Tag>
         <English>Milord, you've built a Colonial Congress before any other colony could. As promised young motivated statesmen are waiting to get to work.</English>
         <German>Milord, Eure Kolonie konnte vor allen anderen in fünf Städten Krankenhäuser errichten. Wie versprochen warten nun junge motivierte Staatsmänner darauf ans Werk zu gehen.</German>
+        <Russian>Милорд, мы построили Колониальный Конгресс раньше, чем любая другая колониальная нация. Как и ожидалось, молодые целеустремленные государственные деятели ждут начала работы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIRST_COLONIAL_CONGRESS</Tag>
         <English>Milord, the governor of another colony has built a Colonial Congress before you. You've missed the chance to convince more statesmen to work for us.</English>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch einen Kolonialkongress in errichten. Dadurch habt Ihr die Chance vertan, weitere Staatsmänner zu gewinnen.</German>
+        <Russian>Милорд, губернатор другой колониальной державы построил Колониальный Конгресс раньше нас. Мы упустили возможность убедить больше государственных деятелей работать на нас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_COLONIAL_CONGRESS</Tag>
         <English>We shall establish a Colonial Congress as central political institution in the colonies.</English>
         <German>Wir werden einen Kolonialkongress als zentrale politische Einrichtung in den Kolonien etablieren.</German>
+        <Russian>Мы создадим Колониальный Конгресс как центральный политический институт в колониях.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_COLONIAL_CONGRESS_DONE_1</Tag>
         <English>The new statesmen shall get to work. From now on our colonies shall speak with one political voice in negotations with foreign powers.</English>
         <German>Die neuen Staatsmänner sollen ans Werk gene. Unsere Kolonien sollen von nun an in Verhandlungen mit anderne Mächten mit einer einzigen politischen Stimme sprechen.</German>
+        <Russian>Новые государственные деятели должны приступать к работе. Отныне наши колонии будут говорить единым политическим голосом в переговорах с иностранными державами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_CUSTOM_OFFICE</Tag>
         <English>Milord, our customs officers report that our customs system is flawed and corrupt. We lose money each day. We need to establish a Central Customs Auhtority to regulate affairs and root out such corruption. Some black market traders might end up working for us legally.</English>
         <German>Milord, unsere Zollbeamten berichten, dass die Zollerhebung eher schlecht funktioniert und zudem korruptionsanfällig ist. Uns entgehen dadurch tagtäglich Einnahmen. Wir müssen ein Zentrales Zollamt errichten, um die Zollerhebung einheitlich zu regeln und der Korruption die Basis zu entziehen. Dann werden sich letztlich auch Schmuggler und die Verkäufer von geschmuggelter Waren der Zollerhebung nicht mehr entziehen können und ihre Abgaben abführen.</German>
+        <Russian>Милорд, наши таможенники сообщают, что наша таможенная система несовершенна и коррумпирована. Мы теряем деньги каждый день. Нам необходимо создать Центральное таможенное управление для регулирования дел и искоренения такой коррупции. Некоторые торговцы с черного рынка могут работать на нас легально.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_CUSTOM_OFFICE_DONE</Tag>
         <English>Milord, another colonial nation is the first to have built a Central Customs Authority.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen ein Zentrales Zollamt errichten.</German>
+        <Russian>Милорд, другая колониальная нация первой построила Центральное таможенное управление.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_CUSTOM_OFFICE_DONE</Tag>
         <English>Milord, you've built a Central Customs Authority before any other colony. As promised, several black market traders now work instead for us.</English>
         <German>Milord, Eure Kolonie konnte vor allen anderen ein Zentrales Zollamt errichten. Wie versprochen müssen einige Schwarzmarkthändler nun für uns arbeiten.</German>
+        <Russian>Милорд, мы построили Центральное таможенное управление раньше любой другой колониальной державы. Как и было обещано, теперь на нас будут работать несколько торговцев с черного рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIRST_CUSTOM_OFFICE</Tag>
         <English>Milord, the governor of another colony has built a Central Customs Authority before you. You've missed the chance to force the black market traders to work for us.</English>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch ein Zentrales Zollamt errichten. Dadurch habt Ihr die Chance vertan, die Schwarzmarkthändler zu zwingen, für uns zu arbeiten.</German>
+        <Russian>Милорд, губернатор другой колониальной нации построил Центральный таможенный орган раньше нас. Мы упустили шанс заставить торговцев с черного рынка работать на нас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_CUSTOM_OFFICE</Tag>
         <English>We will build the Central Customs Authority to end corruption once and for all.</English>
         <German>Wir werden das Zentrale Zollamt errichten, um die Korrupiton ein für alle Mal zu beenden.</German>
+        <Russian>Мы построим Центральное таможенное управление, чтобы раз и навсегда покончить с коррупцией.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_CUSTOM_OFFICE_DONE_1</Tag>
         <English>Send these black market trader to the Natives to establish trading posts. It will be the most appropriate use for their talents.</English>
         <German>Schickt die Schwarzmarkthändler zu den Ureinwohnern, um Handelsposten zu errichten. Dort werden ihre Fähigkeiten am nützlichsten sein.</German>
+        <Russian>Отправьте этих торговцев с черного рынка к индейцам, чтобы они открыли торговые посты. Это будет самое подходящее применение их талантам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_MINSTER</Tag>
         <English>Milord, the church commands us to make every effort to spread the word of God. We are ordered to build a Cathedral of the Archbishop to show the glory and light of Christ to the common people. In return we are promised that, if we are the first to achieve this, more bishops will be sent to our colonies.</English>
         <German>Milord, die Kirche befiehlt uns unsere Anstrengungen das Wort Gottes zu verbreiten zu verstärken. Uns wurde aufgetragen eine Kathedrale für den Erzbischof zu errichten, um auch dem einfachen Volk den Ruhm und das Licht Christi zu zeigen. Uns wurde versprochen, dass weitere Bischöfe in die Kolonien geschickt werden, wenn wir dies als erste erreichen.</German>
+        <Russian>Милорд, Святая Церковь повелевает нам прилагать все усилия для распространения слова Божьего. Нам велено построить Кафедральный собор, дабы показать народу славу и свет Христа. Взамен нам обещают, что, если мы добьемся этого первыми, в наши колонии будет отправлено больше епископов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_MINSTER_DONE</Tag>
         <English>Milord, another colonial nation is the first to have built the Cathedral of the Archbishop.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen eine Kathedrale für den Erzbischof errichten.</German>
+        <Russian>Милорд, другая колониальная нация первой построила Кафедральный собор.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_MINSTER_DONE</Tag>
         <English>Milord, you've built the Cathedral of the Archbishop before any other colony could. As promised bishops have recently arrived in the capitol.</English>
         <German>Milord, Eure Kolonie konnte vor allen anderen eine Kathedrale für den Erzbischof errichten. Wie versprochen sind Bischöfe in der Haupstadt eingetroffen.</German>
+        <Russian>Милорд, мы построили Кафедральный собор раньше, чем любая другая колониальная держава. Как и было обещано, недавно в столицу прибыли епископы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIRST_MINSTER</Tag>
         <English>Milord, the governor of another colony has built the Cathedral of the Archbishop before you. You've missed the chance to get extra bishops from the church.</English>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch eine Kathedrale für den Erzbischof errichten. Dadurch habt Ihr die Chance vertan, weitere Bischöfe von der Kirche zu erhalten.</German>
+        <Russian>Милорд, губернатор другой колониальной нации раньше нас построил Кафедральный собор. Мы упустили шанс получить от церкви дополнительных епископов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_MINSTER</Tag>
         <English>We will built the Cathedral of the Archbishop and so the light of Christ will shine brightly.</English>
         <German>Wir werden die Kathedrale für den Erzbischof bauen, damit das Licht Christi hell erstrahlen möge.</German>
+        <Russian>Мы построим Кафедральный Собор и тогда свет Христа озарит нашу страну своей Благодатью.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_MINSTER_DONE_1</Tag>
         <English>We trust that our new bishops will take good care of the souls of our citizens.</English>
         <German>Wir vertrauen darauf, dass unsere neuen Bischöfe sich gut um die Seelen unserer Bürger kümmern werden.</German>
+        <Russian>Мы верим, что наши новые епископы будут хорошо заботиться о душах наших граждан.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_HORSE_MARKET</Tag>
         <English>Milord, our most prosperous ranchers propose that we build a Grand Horse and Cattle Market to draw more business to us. They believe that this would even cause ranchers from other colonies to want to become citizens of our colonies.</English>
         <German>Milord, unsere reichsten Tierzüchter schlagen vor, dass wir einen Großen Viehmarkt errichten, damit wir noch mehr Geschäft anziehen. Sie glauben, dass dies sogar dazu führen wird, dass Züchter anderer Kolonien lieber zu Bürgern unserer Kolonien werden würden.</German>
+        <Russian>Милорд, наши самые преуспевающие владельцы ранчо предлагают нам построить Большую скотоводческую ферму, чтобы привлечь к нам больше клиентов. Они считают, что это может побудит владельцев ранчо из других колоний захотеть стать гражданами наших колоний.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_HORSE_MARKET_DONE</Tag>
         <English>Milord, another colonial nation is the first to have built a Grand Horse and Cattle Market.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen einen Großen Viehmarkt errichten.</German>
+        <Russian>Милорд, другая колониальная нация первой построила Большую скотоводческую ферму.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_HORSE_MARKET_DONE</Tag>
         <English>Milord, you've built a Grand Horse and Cattle Market before any other colony could. As promised some foreign ranchers now want to become citizens of our colonies.</English>
         <German>Milord, Eure Kolonie konnte vor allen anderen einen Großen Viehmarkt errichten. Wie versprochen, haben fremde Viehzüchter nun vor, Bürger unserer Kolonien zu werden.</German>
+        <Russian>Милорд, мы построили Большую скотоводческую ферму раньше, чем любая другая колониальная держава. Как и предполагалось, некоторые иностранные владельцы ранчо теперь хотят стать гражданами наших колоний.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIRST_HORSE_MARKET</Tag>
         <English>Milord, the governor of another colony has built a Grand Horse and Cattle Market before you. You've missed the chance to gain more rachers.</English>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch einen Großen Viehmarkt errichten. Dadurch habt Ihr die Chance vertan, weitere Rancher zu erwerben.</German>
+        <Russian>Милорд, губернатор другой колониальной нации построил Большую скотоводческую ферму раньше нас. Мы упустили шанс получить больше скотоводов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_HORSE_MARKET</Tag>
         <English>We will build a Grand Horse and Cattle Market to dominate the trade with horses and cattle.</English>
         <German>Wir werden einen Großen Viehmarkt errichten, um das Geschäft mit Pferden und Rindern zu beherrschen.</German>
+        <Russian>Мы построим Большую скотоводческую ферму, чтобы доминировать в торговле лошадьми и крупным рогатым скотом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_HORSE_MARKET_DONE_1</Tag>
         <English>These new ranchers are welcome, of course. They'll bring more business to our newly built Grand Horse and Cattle Market.</English>
         <German>Die neuen Züchter sind gerne gesehen. Sie werden sicherlich für noch mehr Geschäft auf unserem neuen Großen Viehmarkt sorgen.</German>
+        <Russian>Мы приветствуем новых владельцев ранчо. Они принесут еще больше прибыли нашеей недавно построенной Большой скотоводческой ферме.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_PUBLISHING</Tag>
         <English>Milord, many of our literate citizens are unhappy. Most cities don't have enough newspapers to read. That means many educated people don't want to come to our colonies. We should build a Colonial Publisher. That will convince educated people from Europe to migrate to our colony.</English>
         <German>Milord, viele unser Bürger, die des Lesens mächtig sind, beschweren sich, dass es nicht genug Zeitungen in useren Städten gibt. Die sorgt auch dafür, dass viele Gebildete nicht in die Kolonien auswandern wollten. Wir sollten einen Kolonialen Zeitungverlag bauen, um diese Situation zu ändern und mehr Gebildete aus Europa zu überzeugen, in die Kolonien auszuwandern.</German>
+        <Russian>Милорд, многие из наших грамотных граждан несчастливы. В большинстве городов нет достаточного количества газет для чтения. А это значит, что многие образованные люди не хотят приезжать в наши колонии. Мы должны построить колониальное издательство. Это убедит образованных людей из Европы мигрировать в нашу колонию.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_PUBLISHING_DONE</Tag>
         <English>Milord, another colonial nation is the first to have built the Colonial Publisher.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen einen Kolonialen Zeitungverlag errichten.</German>
+        <Russian>Милорд, другая колониальная нация первой построила колониальное издательство.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_PUBLISHING_DONE</Tag>
         <English>Milord, you've built the Colonial Publisher before any other colony could. As promised more educated people from Europe now migrate to our colony.</English>
         <German>Milord, Eure Kolonie konnte vor allen anderen einen Kolonialen Zeitungverlag errichten. Wie versprochen wandern nun mehr Gebildete aus Europa in die Kolonien aus.</German>
+        <Russian>Милорд, мы построили Колониальное издательство раньше любой другой колониальной державы. Как мы и предполагали, теперь в нашу колонию мигрируют более образованные люди из Европы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIRST_PUBLISHING</Tag>
         <English>Milord, the governor of another colony has built the Colonial Publisher before you. You've missed the chance to convince more educated people from Europe to migrate.</English>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch einen Kolonialen Zeitungverlag errichten. Dadurch habt Ihr die Chance vertan, mehr Gebildete aus Europe von einer Auswanderung zu überzeugen.</German>
+        <Russian>Милорд, губернатор другой колониальной нации построил Колониальное издательство раньше нас. Мы упустили шанс убедить эмигрировать к нам более образованных людей из Европы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_PUBLISHING</Tag>
         <English>We will build a Colonial Publisher and ensure that educated migrants have enough to read.</English>
         <German>Wir werden einen Kolonialen Zeitungverlag errichten und sicherstellen, das gebildete Auswanderer genug zum Lesen finden.</German>
+        <Russian>Мы создадим Колониальное издательство и позаботимся о том, чтобы у образованных мигрантов было достаточно книг для чтения.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_PUBLISHING_DONE_1</Tag>
         <English>Very well, but make sure those educated migrants do something useful with their time rather than just reading newspapers.</English>
         <German>Sehr gut, aber stellt sicher, dass diese gebildeten Migranten auch etwas sinnvolles mit ihrer Zeit anfangen und nicht nur Zeitung lesen.</German>
+        <Russian>Очень хорошо, но убедитесь, что эти образованные мигранты занимаются еще и чем-то полезным, а не просто читают газеты.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SIX_WARSHIPS_QUEST</Tag>

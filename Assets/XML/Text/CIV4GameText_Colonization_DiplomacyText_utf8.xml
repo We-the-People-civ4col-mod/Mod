@@ -5915,7 +5915,7 @@
         <English>The [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT] has asked Us that you end the war with his colonies. As We fear for Our reputation, We wish this to happen. If you desire it, We will send you a well-respected diplomat along with an adept of the Church to assist in the negotiations.</English>
         <French>Il nous a été demandé par [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT] que vous mettiez fin à votre guerre contre ses colonies.</French>
         <German>Der [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT] hat Uns gebeten, dass Ihr den Krieg mit seinen Kolonien beendet. Da wir um Unseren Ruf fürchten, wünschen Wir, dass dem so geschieht. Wenn Ihr es wünscht, schicken Wir Euch einen bekannten Diplomaten und einen weisen Mann der Kirche zur Unterstützung der Verhandlungen.</German>
-        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT] попросил Нас положить конец войне с его колониями. Поскольку на кону Наша репутация, Мы желаем, чтобы это произошло. Если нужно, Мы пришлем к вам уважаемого дипломата вместе с адептом Церкви для помощи в переговорах.</Russian>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT] попросил Нас положить конец войне с его колониями. Поскольку на кону Наша репутация, Мы желаем, чтобы это произошло. Если нужно, Мы пришлем к вам уважаемого дипломата вместе с его секретарём для помощи в переговорах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_STEALING_IMMIGRANT</Tag>

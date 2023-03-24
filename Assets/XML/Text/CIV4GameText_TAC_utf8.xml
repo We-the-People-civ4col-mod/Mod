@@ -1825,6 +1825,7 @@
         <German>[COLOR_FONT_CREAM]Rebellische Stimmung :[COLOR_REVERT][NEWLINE]</German>
         <Italian>[COLOR_FONT_CREAM]Spirito ribelle :[COLOR_REVERT][NEWLINE]</Italian>
         <Spanish>[COLOR_FONT_CREAM]Estado de ánimo rebelde :[COLOR_REVERT][NEWLINE]</Spanish>
+        <Russian>[COLOR_FONT_CREAM]Процент мятежников :[COLOR_REVERT][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TIMETEXT_REBELS</Tag>
@@ -1933,6 +1934,7 @@
         <German>nach [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</German>
         <Italian>to [COLOR_YELLOW]%s1[COLOR_REVERT]</Italian>
         <Spanish>to [COLOR_YELLOW]%s1[COLOR_REVERT]</Spanish>
+        <Russian>в [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_NEAR_CITY</Tag>
@@ -1941,6 +1943,7 @@
         <German>[SPACE]</German>
         <Italian>near [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Italian>
         <Spanish>near %s1</Spanish>
+        <Russian>рядом с [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_BOUND</Tag>
@@ -1960,7 +1963,7 @@
         <English>New World - [COLOR_HIGHLIGHT_TEXT]rounding Cape Horn[COLOR_REVERT]</English>
         <French>Nouveau monde - [COLOR_HIGHLIGHT_TEXT]Pacifique[COLOR_REVERT]</French>
         <German>Neue Welt - [COLOR_HIGHLIGHT_TEXT]umrundet Kap Hoorn[COLOR_REVERT]</German>
-        <Russian>Новый мир - [COLOR_HIGHLIGHT_TEXT]огибает мыс Горн[COLOR_REVERT]</Russian>
+        <Russian>Новый мир - [COLOR_HIGHLIGHT_TEXT]огибает мыс Доброй надежды[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SAIL_EAST</Tag>
