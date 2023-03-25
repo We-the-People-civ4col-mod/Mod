@@ -618,6 +618,8 @@ enum ButtonPopupTypes
 	BUTTONPOPUP_CHOOSE_CITY_PLOT_YIELD,
 	BUTTONPOPUP_NO_EVENT_ON_OK_CLICKED, // use info.setButtonPopupType to this to avoid the ok button from doing anything
 	
+	BUTTONPOPUP_START_GAME_CHECK_FAILED,
+
 	// network OOS hunting tools
 	BUTTONPOPUP_DESYNC_LOG_COMPLETE, // desync log
 	BUTTONPOPUP_NETWORK_OOS_MENU,

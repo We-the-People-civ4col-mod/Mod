@@ -100,6 +100,8 @@ public:
 	int countHumanPlayersAlive() const;
 	int countHumanPlayersEverAlive() const;
 
+	static int countCivPlayerEuropeanAI();
+
 	int countTotalCivPower();
 
 	int getImprovementUpgradeTime(ImprovementTypes eImprovement) const;

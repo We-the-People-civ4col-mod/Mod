@@ -333,6 +333,8 @@ public:
 
 	void updateWaterPlotTerrainTypes(); // autodetect lakes
 
+	int getNumPlots(TerrainTypes eTerrain) const;
+
 	// Serialization:
 	virtual void read(FDataStreamBase* pStream);
 	virtual void write(FDataStreamBase* pStream);

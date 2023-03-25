@@ -242,6 +242,9 @@ void CvGame::init(HandicapTypes eHandicap)
 	doUpdateCacheOnTurn();
 }
 
+// placed in CvDLLButtonPopup.cpp as it needs local enum access there to function correctly
+void doNewGameErrorTesting();
+
 //
 // Set initial items (units, techs, etc...)
 //
@@ -365,6 +368,8 @@ void CvGame::setInitialItems(bool bScenario)
 			kPlayer.AI_updateFoundValues();
 		}
 	}
+
+	doNewGameErrorTesting();
 }
 
 
@@ -3617,6 +3622,25 @@ int CvGame::countHumanPlayersEverAlive() const
 		if (GET_PLAYER((PlayerTypes)iI).isEverAlive())
 		{
 			if (GET_PLAYER((PlayerTypes)iI).isHuman())
+			{
+				iCount++;
+			}
+		}
+	}
+
+	return iCount;
+}
+
+int CvGame::countCivPlayerEuropeanAI()
+{
+	int iCount = 0;
+
+	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ePlayer++)
+	{
+		const CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+		if (kPlayer.isEverAlive())
+		{
+			if (!kPlayer.isHuman() && kPlayer.getCivCategoryTypes() == CIV_CATEGORY_EUROPEAN)
 			{
 				iCount++;
 			}

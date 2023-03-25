@@ -36,6 +36,71 @@ class PopupButtonContainer
 };
 
 template <>
+class PopupButtonContainer<BUTTONPOPUP_START_GAME_CHECK_FAILED>
+{
+	enum ErrorTypes
+	{
+		TEST_WETLAND,
+		TEST_AI_PLAYER,
+	};
+public:
+	static bool launch(CvPopup* pPopup, CvPopupInfo &info)
+	{
+		CvWString error;
+		error
+			.append(L"<color=255,0,0,0>")
+			.append(gDLL->getText("TXT_KEY_STARTUP_TEST_ERROR"))
+			.append(L"</color>\n")
+			;
+		gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, error);
+		gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, getErrorText((ErrorTypes)info.getData1()));
+
+		gDLL->getInterfaceIFace()->popupLaunch(pPopup, true, POPUPSTATE_IMMEDIATE);
+
+		return true;
+	}
+
+	static void clicked(PopupReturn *pPopupReturn)
+	{
+	}
+
+	// technically this doesn't belong here, but by placing it inside the class it gains access to the enum
+	static void runTest()
+	{
+		if (GC.getMapINLINE().getNumPlots(TERRAIN_WETLAND) == 0)
+		{
+			displayError(TEST_WETLAND);
+		}
+		if (CvGame::countCivPlayerEuropeanAI() == 0)
+		{
+			displayError(TEST_AI_PLAYER);
+		}
+	}
+private:
+	static void displayError(ErrorTypes eError)
+	{
+		CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_START_GAME_CHECK_FAILED, eError);
+		gDLL->getInterfaceIFace()->addPopup(pInfo, GC.getGameINLINE().getActivePlayer(), false, true);
+	}
+
+	static CvWString getErrorText(ErrorTypes eError)
+	{
+		switch (eError)
+		{
+		case TEST_WETLAND: return gDLL->getText("TXT_KEY_STARTUP_TEST_WETLANDS");
+		case TEST_AI_PLAYER: return gDLL->getText("TXT_KEY_STARTUP_TEST_AI_PLAYERS");
+		default:
+			FAssert(false);
+			return L"error message missing";
+		}
+	}
+};
+void doNewGameErrorTesting()
+{
+	PopupButtonContainer<BUTTONPOPUP_START_GAME_CHECK_FAILED>::runTest();
+}
+
+template <>
 class PopupButtonContainer<BUTTONPOPUP_NETWORK_OOS_MENU>
 {
 	enum
@@ -1222,6 +1287,9 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 	case BUTTONPOPUP_DESYNC_LOG_COMPLETE:
 		break;
 
+	case BUTTONPOPUP_START_GAME_CHECK_FAILED:
+		PopupButtonContainer<BUTTONPOPUP_START_GAME_CHECK_FAILED>::clicked(pPopupReturn);
+		break;
 	case BUTTONPOPUP_NETWORK_OOS_MENU:
 		PopupButtonContainer<BUTTONPOPUP_NETWORK_OOS_MENU>::clicked(pPopupReturn);
 		break;
@@ -1492,6 +1560,9 @@ bool CvDLLButtonPopup::launchButtonPopup(CvPopup* pPopup, CvPopupInfo &info)
 		break;
 	case BUTTONPOPUP_DESYNC_LOG_COMPLETE:
 		bLaunched = launchDesyncLogCompletePopup(pPopup, info);
+		break;
+	case BUTTONPOPUP_START_GAME_CHECK_FAILED:
+		bLaunched = PopupButtonContainer<BUTTONPOPUP_START_GAME_CHECK_FAILED>::launch(pPopup, info);
 		break;
 	case BUTTONPOPUP_NETWORK_OOS_MENU:
 		bLaunched = PopupButtonContainer<BUTTONPOPUP_NETWORK_OOS_MENU>::launch(pPopup, info);

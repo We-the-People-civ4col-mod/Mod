@@ -1318,6 +1318,20 @@ void CvMap::updateWaterPlotTerrainTypes()
 }
 // autodetect lakes - end
 
+int CvMap::getNumPlots(TerrainTypes eTerrain) const
+{
+	int iCount = 0;
+	const int iNumPlots = numPlotsINLINE();
+	for (int iPlot = 0; iPlot < iNumPlots; ++iPlot)
+	{
+		if (plotByIndexINLINE(iPlot)->getTerrainType() == eTerrain)
+		{
+			iCount++;
+		}
+	}
+	return iCount;
+}
+
 //
 // read object from a stream
 // used during load

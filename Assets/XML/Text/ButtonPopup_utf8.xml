@@ -374,4 +374,16 @@
         <English>The colony is in chaos. Nobody will be able to leave before order is restored.</English>
         <Russian>В колонии хаос. Никто не сможет уйти, пока не будет восстановлен порядок.</Russian>
     </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_STARTUP_TEST_ERROR</Tag>
+        <English>ERROR</English>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_STARTUP_TEST_WETLANDS</Tag>
+        <English>The map is missing terrain to produce critical goods. It's likely that the map script is outdated compared to the current requirements.</English>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_STARTUP_TEST_AI_PLAYERS</Tag>
+        <English>No European AI players detected. It's possible they were excluded by mistake. "Open" player slots in multiplayer will not be used by AI players.</English>
+    </TEXT>
 </Civ4GameText>
