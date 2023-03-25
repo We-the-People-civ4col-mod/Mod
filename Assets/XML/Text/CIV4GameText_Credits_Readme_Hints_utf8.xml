@@ -685,6 +685,14 @@ Viel Spass![NEWLINE]
 		<Spanish>Cuando una de vuestras unidades visite un asentamiento indígena, no dejéis de hablar con el jefe. Puede que tenga un regalo para vos.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_HINT_24</Tag>
+		<English>Many master craftspeople must choose which one of two or more yields to work on at any given time, creating different finished goods.[NEWLINE]Some finished items, such as tools for guns, can be used to make other things.[NEWLINE]One example of a long sequence starts with sheep providing wool through the butcher, then wool cloth from the weaver, coloured wool cloth from the dyer, and ends once the tailor stitches together everyday clothes. Trading can happen at every stage.[NEWLINE]Some yields are useful only as trade commodities. Gold is valuable but rare. Rubber is mid-priced, but much more common.</English>
+		<French>TBD</French>
+		<German>TBD</German>
+		<Italian>TBD</Italian>
+		<Spanish>TBD</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_HINT_27</Tag>
 		<English>This country is worth seeking, not only because great wealth may be obtained from it, gold and silver, all sorts of gems, and spices, which never reach us.[NEWLINE]--- Paolo Toscanelli, "First Letter to Columbus" (1474)</English>
 		<French>Si vos réserves de nourriture atteignent 200 unités, ces dernières seront immédiatement consumées et vous obtiendrez un nouveau colon libre.</French>
