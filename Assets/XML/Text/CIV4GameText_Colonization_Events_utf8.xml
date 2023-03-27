@@ -116,6 +116,7 @@
         <German>[BOLD]Geländefelder modernisieren[\BOLD][NEWLINE][TAB]Glückwunsch! Sie haben die Modernisierung %s8_improvement in der Nähe der Siedlung [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] errichtet.</German>
         <Italian>[BOLD]Migliorare le caselle di terra[\BOLD][NEWLINE][TAB]Congratulazioni! Hai costruito il miglioramento %s8_improvement vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
         <Spanish>[BOLD]Mejora de las casillas de tierra[\BOLD][NEWLINE][TAB]¡Felicidades! Habéis construido [NUM8:un:una:unos:unas] %s8_improvement cerca de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
+        <Russian>[BOLD]Улучшение участков земли[\BOLD][NEWLINE][TAB]Поздравляем! Вы построили улучшение %s8_improvement с [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_SPEAK_WITH_CHIEF</Tag>
