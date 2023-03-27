@@ -229,6 +229,7 @@
         <German>Gruppe laden :</German>
         <Italian>Gruppo di Carico :</Italian>
         <Spanish>Grupo de Carga :</Spanish>
+        <Russian>Загрузить группу :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HELP_LOAD_TRADE_GROUP</Tag>
@@ -237,6 +238,7 @@
         <German> ([COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT], um zu laden)</German>
         <Italian> (clicca per caricare)</Italian>
         <Spanish> (clic para cargar)</Spanish>
+        <Russian> ([COLOR:140:255:40:255]&lt; Нажмите &gt;[COLOR_REVERT] для загрузки)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NAME_COL_TRADE_GROUP</Tag>
@@ -328,12 +330,14 @@
         <German>Alle Transportrouten dieser Liste der Einheit zuweisen</German>
         <Italian>Activate all shown trade routes</Italian>
         <Spanish>Activate all shown trade routes</Spanish>
+        <Russian>Назначить все транспортные маршруты списка этому юниту</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_DESELECT_ROUTES_HELP</Tag>
         <English>Deactivate all currently assigned transport routes for this unit</English>
         <French>Désactiver toutes les routes commerciales</French>
         <German>Alle derzeit zugewiesenen Transportrouten für diese Einheit deaktivieren</German>
+        <Russian>Отключить все назначенные транспортные маршруты для этого юнита</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_RETURN_HELP</Tag>
@@ -348,12 +352,14 @@
         <English>Unit does currently stop when an enemy comes into view ([COLOR:140:255:40:255]&lt; Click &gt;[COLOR_REVERT] to change)</English>
         <French>Ignorer les dangers</French>
         <German>Einheit hält derzeit an, wenn ein Feind in Sichtweite gerät ([COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT], um das zu ändern)</German>
+        <Russian>В настоящее время юнит останавливается, когда враг появляется в поле зрения ([COLOR:140:255:40:255]&lt; Нажмите &gt;[COLOR_REVERT] для изменения)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_CANCEL_IGNORE_DANGER_HELP</Tag>
         <English>Unit does not currently stop when an enemy comes into view ([COLOR:140:255:40:255]&lt; Click &gt;[COLOR_REVERT] to change)</English>
         <French>Annuler l'ordre d'ignorer les dangers</French>
         <German>Einheit hält nicht derzeit an, wenn ein Feind in Sichtweite gerät ([COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT], um das zu ändern)</German>
+        <Russian>В настоящее время отряд не останавливается, когда в поле зрения появляется враг ([COLOR:140:255:40:255]&lt; Нажмите &gt;[COLOR_REVERT] для изменения)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_ADD_SELECTION_HELP</Tag>
@@ -368,22 +374,26 @@
         <German>: Anleitung</German>
         <Italian>: Help</Italian>
         <Spanish>: Help</Spanish>
+        <Russian>: Помощь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_CHOOSE_PROFESSION_UNREST</Tag>
         <English>The colony is in chaos. Nobody will be able to leave before order is restored.</English>
-        <Russian>В колонии хаос. Никто не сможет уйти, пока не будет восстановлен порядок.</Russian>
+        <Russian>В колонии хаос. Никто не может покинуть поселение, пока не будет восстановлен порядок.</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_STARTUP_TEST_ERROR</Tag>
         <English>ERROR</English>
+        <Russian>ВНИМАНИЕ</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_STARTUP_TEST_WETLANDS</Tag>
         <English>The map is missing terrain to produce critical goods. It's likely that the map script is outdated compared to the current requirements.</English>
+        <Russian>На карте отсутствует местность для добычи критически важных ресурсов. Вероятно, скрипт карты устарел и не соответствует текущим требованиям модификации.</Russian>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_STARTUP_TEST_AI_PLAYERS</Tag>
         <English>No European AI players detected. It's possible they were excluded by mistake. "Open" player slots in multiplayer will not be used by AI players.</English>
+        <Russian>Европейские ИИ-игроки не обнаружены. Возможно, они были исключены по ошибке. "Открытые" слоты для игроков в мультиплеере не будут использоваться ИИ-игроками.</Russian>
     </TEXT>
 </Civ4GameText>
