@@ -33,6 +33,7 @@ class DomesticAdvisorTable:
 		self.MainAdvisor = parent.parent
 		self.iWidth = self.MainAdvisor.nTableWidth
 		self.iRowHeight = self.MainAdvisor.ROW_HIGHT
+		self.iStaticColumns = 2
 		self.InfoArray = None
 		self.columnWidth = [[]]
 		self.columnName = [[]]
@@ -90,6 +91,12 @@ class DomesticAdvisorTable:
 		
 	def addHeaderChar(self, iChar, iWidth = 50):
 		self.__addHeaderChar(iChar, iWidth)
+		
+	def addHeaderName(self, szName, iWidth = -123):
+		if (iWidth == -123):
+			# set the default. This workaround is needed as self can't be used as a default directly
+			iWidth = self.defaultColumnWidth
+		self.__addHeaderDirect(iWidth, szName)
 
 	# add an array telling which columns to add
 	# this will split the page into multiple subpages if needed
@@ -101,6 +108,12 @@ class DomesticAdvisorTable:
 
 	def addHeaderArrayYields(self):
 		self.__addHeaderArrayYields()
+
+	def buildHeaderArray(self):
+		self.__buildHeaderArray()
+		
+	def expandColumnsToFillTableWidth(self):
+		self.__expandColumnsToFillTableWidth()
 
 	# get the size of the current cell. Useful when cell contains a panel for adding widgets like buttons
 	def getCellHeight(self):
@@ -124,6 +137,9 @@ class DomesticAdvisorTable:
 	def addInt(self, iValue, iData1 = -1, iData2 = -1, widget = WidgetTypes.WIDGET_GENERAL, justified = CvUtil.FONT_RIGHT_JUSTIFY):
 		self.__addInt(iValue, iData1, iData2, widget, justified)
 		
+	def addIntLeft(self, iValue, iData1 = -1, iData2 = -1, widget = WidgetTypes.WIDGET_GENERAL):
+		self.__addInt(iValue, iData1, iData2, widget, CvUtil.FONT_LEFT_JUSTIFY)
+
 	def drawChar(self, pInstance ):
 		self.__drawChar(pInstance)
 		
@@ -299,6 +315,50 @@ class DomesticAdvisorTable:
 				self.__addHeaderDirect(iWidth, self.__getColumnHeader(iArrayIndex))
 		self.curPage = 0
 
+	def __buildHeaderArray(self):
+		columnWidth = self.columnWidth[0]
+		columnName = self.columnName[0]
+		self.columnWidth = [[]]
+		self.columnName = [[]]
+		
+		curWidth = 0
+		offset = 0
+		curPage = 0
+		
+		for i in range(len(columnWidth)):
+			if (curWidth + columnWidth[i] > self.iWidth):
+				self.columnsOnPage.append(i - offset - self.iStaticColumns)
+				offset = i
+				self.columnWidth.append([])
+				self.columnName.append([])
+				curPage += 1
+				curWidth = 0
+				for j in range(self.iStaticColumns):
+					self.columnWidth[curPage].append(columnWidth[j])
+					self.columnName[curPage].append(columnName[j])
+					curWidth += columnWidth[j]
+					self.pagesNotSet.append(True)
+			self.columnWidth[curPage].append(columnWidth[i])
+			self.columnName[curPage].append(columnName[i])
+			curWidth += columnWidth[i]
+		
+		self.columnsOnPage.append(len(columnWidth) - offset - self.iStaticColumns)
+		
+	def __expandColumnsToFillTableWidth(self):
+		iTableWidth = self.iWidth
+		for i in range(self.iStaticColumns):
+			iTableWidth -= self.columnWidth[0][i]
+			
+		iColumnWidth = iTableWidth // self.columnsOnPage[0]
+		iColumnsWithExtraPixel = iTableWidth % self.columnsOnPage[0]
+		
+		for iPage in range(len(self.columnsOnPage)):
+			for iColumn in range(self.columnsOnPage[iPage]):
+				iWidth = iColumnWidth
+				if (iColumn < iColumnsWithExtraPixel):
+					iWidth += 1
+				self.columnWidth[iPage][iColumn+self.iStaticColumns] = iWidth
+
 	def __clearRows(self):
 		# removes all rows and sets the counters to be ready to start on the first row
 		self.curRow = -1
@@ -354,7 +414,9 @@ class DomesticAdvisorTable:
 		iOffset = self.__getCurrentOffset()
 		iNumColumnsOnPage = self.columnsOnPage[self.currentPage()]
 		for i in range(iNumColumnsOnPage):
-			iType = self.InfoArray.get(i + iOffset)
+			iType = i + iOffset
+			if self.InfoArray != None:
+				iType = self.InfoArray.get(i + iOffset)
 			self.parent.drawColonyCell(iCity, pCity, iType, self.__getInfoForType(iType))
 		
 	def __getCurrentOffset(self):
