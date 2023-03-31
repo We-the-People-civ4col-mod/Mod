@@ -1218,14 +1218,6 @@ int CyPlayer::getMissionaryRateModifier() const
 // R&R, Robert Surcouf, No More Variables Hidden game option END
 
 //WTP, ray Kings Used Ship - START
-void CyPlayer::cacheUsedShipData(int iUsedShipPrice, int iUsedShipClassType)
-{
-	if (m_pPlayer)
-	{
-		m_pPlayer->cacheUsedShipData(iUsedShipPrice, (UnitClassTypes)iUsedShipClassType);
-	}
-}
-
 int CyPlayer::getRandomUsedShipClassTypeID() const
 {
 	return m_pPlayer ? m_pPlayer->getRandomUsedShipClassTypeID() : -1;

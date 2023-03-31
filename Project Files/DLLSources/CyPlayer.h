@@ -351,7 +351,6 @@ public:
 	int getChurchFavourPrice() const; // R&R, ray, Church Favours
 
 	// R&R, ray, Church Favours - START
-	void cacheUsedShipData(int iUsedShipPrice, int iUsedShipClassType);
 	int getRandomUsedShipClassTypeID() const;
 	int getUsedShipPrice(int iUsedShipClassType) const;
 	bool isKingWillingToTradeUsedShips() const;

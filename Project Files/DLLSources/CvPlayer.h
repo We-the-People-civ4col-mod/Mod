@@ -138,9 +138,8 @@ public:
 	// R&R, ray, Church Favours - END
 
 	//WTP, ray Kings Used Ship - START
-	void cacheUsedShipData(int iUsedShipPrice, UnitClassTypes iUsedShipClassType);
 	int getUsedShipPrice(UnitClassTypes iUsedShipClassType);
-	UnitClassTypes getRandomUsedShipClassTypeID();
+	UnitClassTypes getRandomUsedShipClassTypeID() const;
 	bool isKingWillingToTradeUsedShips();
 	void decreaseCounterForUsedShipDeals();
 	void doAILogicforUsedShipDeals();
@@ -1080,8 +1079,6 @@ protected:
 
 	//WTP, ray Kings Used Ship - START
 	int m_iTimerUsedShips;
-	int m_iCachedUsedShipPrice;
-	UnitClassTypes m_iCachedUsedShipClassTypeID;
 	//WTP, ray Kings Used Ship - END
 
 	// WTP, ray, Foreign Kings, buy Immigrants - START
@@ -1091,6 +1088,10 @@ protected:
 	// WTP, ray, Foreign Kings, buy Immigrants - END
 
 	int m_iChurchFavoursReceived; // R&R, ray, Church Favours
+
+	// a random seed, which is only set at start of doTurn, hence constant for a turn
+	// useful for avoiding OOS issues and if a random number should return the same each time for an entire turn
+	unsigned long m_ulRandomSeed;
 
 	PlayerTypes m_eID;
 	LeaderHeadTypes m_ePersonalityType;

@@ -7,6 +7,15 @@ DebugLogging = False
 
 gc = CyGlobalContext()
 
+# global class to store variables when doing nested diplomacy
+# for instance asking for something, which results in a new diplo event where the price is announced
+# for some reason vanilla by design kills off iData1 and iData2, hence this workaround
+class cacheClass:
+	def __init__(self):
+		value = 0 # class needs at least one line of code
+	
+CACHE = cacheClass()
+
 class CvDiplomacy:
 	"Code used by Civ Diplomacy interface"
 
@@ -932,15 +941,13 @@ class CvDiplomacy:
 
 		# WTP, ray Kings Used Ship - START
 		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_KING_ASK_FOR_USED_SHIP")):
-			iRandomUsedShip = gc.getPlayer(gc.getGame().getActivePlayer()).getRandomUsedShipClassTypeID()
-			if (iRandomUsedShip != -1):
-				iPrice = gc.getPlayer(gc.getGame().getActivePlayer()).getUsedShipPrice(iRandomUsedShip)
-				if (gc.getPlayer(gc.getGame().getActivePlayer()).isKingWillingToTradeUsedShips() and gc.getPlayer(gc.getGame().getActivePlayer()).getGold() >= iPrice):
+			CACHE.iRandomUsedShip = gc.getPlayer(gc.getGame().getActivePlayer()).getRandomUsedShipClassTypeID()
+			if (CACHE.iRandomUsedShip != -1):
+				CACHE.iPrice = gc.getPlayer(gc.getGame().getActivePlayer()).getUsedShipPrice(CACHE.iRandomUsedShip)
+				if (gc.getPlayer(gc.getGame().getActivePlayer()).isKingWillingToTradeUsedShips() and gc.getPlayer(gc.getGame().getActivePlayer()).getGold() >= CACHE.iPrice):
 					gc.getPlayer(gc.getGame().getActivePlayer()).resetCounterForUsedShipDeals()
-					szName = gc.getUnitClassInfo(iRandomUsedShip).getTextKey()
-					# We store this to the cache at the Player for Used Ship Data
-					gc.getPlayer(gc.getGame().getActivePlayer()).cacheUsedShipData(iPrice,iRandomUsedShip);
-					self.setAIComment(self.getCommentID("AI_DIPLOCOMMENT_KING_OFFERS_USED_SHIP"), iPrice, iRandomUsedShip, szName)
+					szName = gc.getUnitClassInfo(CACHE.iRandomUsedShip).getTextKey()
+					self.setAIComment(self.getCommentID("AI_DIPLOCOMMENT_KING_OFFERS_USED_SHIP"), CACHE.iPrice, CACHE.iRandomUsedShip, szName)
 				else:
 					self.setAIComment(self.getCommentID("AI_DIPLOCOMMENT_KING_REFUSES_TO_OFFER_USED_SHIP"))
 			else:
@@ -949,7 +956,7 @@ class CvDiplomacy:
 		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_ACCEPT_BUY_USED_SHIP")):
 			CyInterface().playGeneralSound("AS2D_KISS_MY_RING")
 			# The Event will read the data from the cache and then clean it
-			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_ACQUIRE_USED_SHIPS, -1, -1)
+			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_ACQUIRE_USED_SHIPS, CACHE.iRandomUsedShip, CACHE.iPrice)
 			diploScreen.closeScreen()
 		# WTP, ray Kings Used Ship - END
 

@@ -117,7 +117,6 @@ void CyPlayerPythonInterface3(python::class_<CyPlayer>& x)
 		.def("missionaryThreshold", &CyPlayer::missionaryThreshold, "int (int /*PlayerTypes*/ ePlayer)") 
 		.def("getMissionaryRateModifier", &CyPlayer::getMissionaryRateModifier, "int (int /*PlayerTypes*/ ePlayer)")
 		//WTP, ray Kings Used Ship - START
-		.def("cacheUsedShipData", &CyPlayer::cacheUsedShipData, "int (int iUsedShipPrice, int iUsedShipClassType)") 
 		.def("getRandomUsedShipClassTypeID", &CyPlayer::getRandomUsedShipClassTypeID, "int ()") 
 		.def("getUsedShipPrice", &CyPlayer::getUsedShipPrice, "int (int iUsedShipClassType)") 
 		.def("isKingWillingToTradeUsedShips", &CyPlayer::isKingWillingToTradeUsedShips, "bool ()")

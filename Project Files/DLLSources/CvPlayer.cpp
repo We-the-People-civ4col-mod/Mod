@@ -76,8 +76,6 @@ CvPlayer::CvPlayer()
 
 	//WTP, ray Kings Used Ship - START
 	m_iTimerUsedShips = 0;
-	m_iCachedUsedShipPrice = 0;
-	m_iCachedUsedShipClassTypeID = NO_UNITCLASS;
 	//WTP, ray Kings Used Ship - END
 
 	// WTP, ray, Foreign Kings, buy Immigrants - START
@@ -123,6 +121,9 @@ void CvPlayer::init(PlayerTypes eID)
     m_iMaxTaxRate = GC.getHandicapInfo(getHandicapType()).NBMOD_GetInitMaxTaxRate();
 
     /** NBMOD TAX **/
+
+	// the once a turn random number
+	m_ulRandomSeed = GC.getGameINLINE().getSorenRand().peek();
 
 	//assign europe civilization as parent
 	for (int iParent = 0; iParent < MAX_PLAYERS; ++iParent)
@@ -2146,6 +2147,9 @@ void CvPlayer::doTurn()
 	CvCity* pLoopCity;
 	int iLoop;
 
+	// the once a turn random number
+	m_ulRandomSeed = GC.getGameINLINE().getSorenRand().peek();
+
 	FAssertMsg(isAlive(), "isAlive is expected to be true");
 	FAssertMsg(!hasBusyUnit() || GC.getGameINLINE().isMPOption(MPOPTION_SIMULTANEOUS_TURNS)  || GC.getGameINLINE().isSimultaneousTeamTurns(), "End of turn with busy units in a sequential-turn game");
 
@@ -3178,6 +3182,8 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 
 	FAssertMsg(ePlayer != getID(), "shouldn't call this function on ourselves");
 
+	OOS_LOG("CvPlayer::handleDiploEvent", eDiploEvent);
+
 	switch (eDiploEvent)
 	{
 	case DIPLOEVENT_CONTACT:
@@ -4082,17 +4088,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			// get the Player
 			CvPlayer& kPlayer = GET_PLAYER(ePlayer);
 
-			// read cash for the data of the used
-			UnitClassTypes iRandomUsedShipTypeID = kPlayer.m_iCachedUsedShipClassTypeID;
-			int pricetopay = kPlayer.m_iCachedUsedShipPrice;
-
-			// call the logic
-			kPlayer.acquireUsedShip(iRandomUsedShipTypeID, pricetopay);
-
-			// reset cache, optional - would be overwritten anyways
-			kPlayer.m_iCachedUsedShipPrice = 0;
-			kPlayer.m_iCachedUsedShipClassTypeID = NO_UNITCLASS;
-
+			kPlayer.acquireUsedShip((UnitClassTypes)iData1, iData2);
 		}
 		break;
 	//WTP, ray Kings Used Ship - END
@@ -23337,13 +23333,6 @@ int CvPlayer::getChurchFavourPrice()
 // R&R, ray, Church Favours - END
 
 //WTP, ray Kings Used Ship - START
-void CvPlayer::cacheUsedShipData(int iUsedShipPrice, UnitClassTypes iUsedShipClassType)
-{
-	m_iCachedUsedShipPrice = iUsedShipPrice;
-	m_iCachedUsedShipClassTypeID = iUsedShipClassType;
-	return;
-}
-
 int CvPlayer::getUsedShipPrice(UnitClassTypes iUsedShipClassType)
 {
 	int iPrice = 0;
@@ -23375,20 +23364,23 @@ int CvPlayer::getUsedShipPrice(UnitClassTypes iUsedShipClassType)
 	return iPrice;
 }
 
-UnitClassTypes CvPlayer::getRandomUsedShipClassTypeID()
+UnitClassTypes CvPlayer::getRandomUsedShipClassTypeID() const
 {
 	UnitClassTypes eBestUnitClass = NO_UNITCLASS;
 	int iBestLastCompareValue = 0;
 
+	CvRandom aSyncRandom;
+	aSyncRandom.reseed(m_ulRandomSeed);
+
 	for (UnitClassTypes iI = FIRST_UNITCLASS; iI < NUM_UNITCLASS_TYPES; ++iI)
 	{
-		int iUnitClassCompareRand = GC.getGameINLINE().getSorenRandNum(100, "Used Ship Class Rand");
+		int iUnitClassCompareRand = aSyncRandom.get(100);
 		if (iUnitClassCompareRand > iBestLastCompareValue)
 		{
 			UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iI);
 			if (eUnit != NULL && GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_SEA && GC.getUnitInfo(eUnit).getEuropeCost() > 0 && getGold() > GC.getUnitInfo(eUnit).getEuropeCost())
 			{
-				eBestUnitClass = (UnitClassTypes)iI;
+				eBestUnitClass = iI;
 				// we perfer weaker combat vessels, so we substract combat value so a Trade Vessel might get a better value
 				iBestLastCompareValue = iUnitClassCompareRand - (GC.getUnitInfo(eUnit).getCombat() / 2);
 			}

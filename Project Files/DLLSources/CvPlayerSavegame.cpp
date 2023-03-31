@@ -110,6 +110,8 @@ const int defaultTotalPlayerAfricaSellProfitModifierInPercent = 0; // WTP, Afric
 const int defaultTotalPlayerPortRoyalSellProfitModifierInPercent = 0; // WTP, Africa and Port Royal Profit Modifiers - START
 const int defaultTotalPlayerDomesticMarketProfitModifierInPercent = 0; // WTP, ray, Domestic Market Profit Modifier - START
 
+const unsigned long defaultRandomSeed = 0;
+
 // 
 enum SavegameVariableTypes
 {
@@ -299,6 +301,8 @@ enum SavegameVariableTypes
 	PlayerSave_triggersFired,
 	PlayerSave_CacheUpdate,
 
+	PlayerSave_RandomSeed,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -368,6 +372,7 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_TimerAfricanSlaves: return "PlayerSave_TimerAfricanSlaves";
 	case PlayerSave_TimerStealingImmigrant: return "PlayerSave_TimerStealingImmigrant";
 	case PlayerSave_ChurchFavoursReceived: return "PlayerSave_ChurchFavoursReceived";
+	case PlayerSave_RandomSeed: return "PlayerSave_RandomSeed";
 
 	case PlayerSave_KingNumUnitMultiplier: return "PlayerSave_KingNumUnitMultiplier";
 	case PlayerSave_MissionarySuccessPercent: return "PlayerSave_MissionarySuccessPercent";
@@ -784,6 +789,7 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_TimerAfricanSlaves: reader.Read(m_iTimerAfricanSlaves); break;
 		case PlayerSave_TimerStealingImmigrant: reader.Read(m_iTimerStealingImmigrant); break;
 		case PlayerSave_ChurchFavoursReceived: reader.Read(m_iChurchFavoursReceived); break;
+		case PlayerSave_RandomSeed: reader.Read(m_ulRandomSeed); break;
 
 		case PlayerSave_KingNumUnitMultiplier: reader.Read(m_iKingNumUnitMultiplier); break;
 		case PlayerSave_MissionarySuccessPercent: reader.Read(m_iMissionarySuccessPercent); break;
@@ -1008,6 +1014,7 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_TimerAfricanSlaves, m_iTimerAfricanSlaves, defaultTimerAfricanSlaves);
 	writer.Write(PlayerSave_TimerStealingImmigrant, m_iTimerStealingImmigrant, defaultTimerStealingImmigrant);
 	writer.Write(PlayerSave_ChurchFavoursReceived, m_iChurchFavoursReceived, defaultChurchFavoursReceived);
+	writer.Write(PlayerSave_RandomSeed, m_ulRandomSeed, defaultRandomSeed);
 
 	writer.Write(PlayerSave_KingNumUnitMultiplier, m_iKingNumUnitMultiplier, defaultKingNumUnitMultiplier);
 	writer.Write(PlayerSave_MissionarySuccessPercent, m_iMissionarySuccessPercent, defaultMissionarySuccessPercent);
