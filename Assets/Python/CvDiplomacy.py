@@ -955,22 +955,19 @@ class CvDiplomacy:
 
 		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_ACCEPT_BUY_USED_SHIP")):
 			CyInterface().playGeneralSound("AS2D_KISS_MY_RING")
-			# The Event will read the data from the cache and then clean it
 			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_ACQUIRE_USED_SHIPS, CACHE.iRandomUsedShip, CACHE.iPrice)
 			diploScreen.closeScreen()
 		# WTP, ray Kings Used Ship - END
 
 		# WTP, ray, Foreign Kings, buy Immigrants - START
 		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_ASK_FOREIGN_KING_BUY_IMMIGRANTS")):
-			iRandomImmigrant = gc.getPlayer(gc.getGame().getActivePlayer()).getRandomForeignImmigrantClassTypeID()
-			if (iRandomImmigrant != -1):
-				iPrice = gc.getPlayer(gc.getGame().getActivePlayer()).getForeignImmigrantPrice(iRandomImmigrant, self.diploScreen.getWhoTradingWith())
-				if (gc.getPlayer(gc.getGame().getActivePlayer()).isForeignKingWillingToTradeImmigrants(self.diploScreen.getWhoTradingWith()) and gc.getPlayer(gc.getGame().getActivePlayer()).getGold() >= iPrice):
+			CACHE.iRandomImmigrant = gc.getPlayer(gc.getGame().getActivePlayer()).getRandomForeignImmigrantClassTypeID()
+			if (CACHE.iRandomImmigrant != -1):
+				CACHE.iPrice = gc.getPlayer(gc.getGame().getActivePlayer()).getForeignImmigrantPrice(CACHE.iRandomImmigrant, self.diploScreen.getWhoTradingWith())
+				if (gc.getPlayer(gc.getGame().getActivePlayer()).isForeignKingWillingToTradeImmigrants(self.diploScreen.getWhoTradingWith()) and gc.getPlayer(gc.getGame().getActivePlayer()).getGold() >= CACHE.iPrice):
 					gc.getPlayer(self.diploScreen.getWhoTradingWith()).resetCounterForForeignImmigrantsDeals()
-					szName = gc.getUnitClassInfo(iRandomImmigrant).getTextKey()
-					# We store this to the cache at the Player for Used Ship Data
-					gc.getPlayer(gc.getGame().getActivePlayer()).cacheForeignImmigrantData(iPrice,iRandomImmigrant);
-					self.setAIComment(self.getCommentID("AI_DIPLOCOMMENT_FOREIGN_KING_OFFERS_IMMIGRANTS"), iPrice, iRandomImmigrant, szName)
+					szName = gc.getUnitClassInfo(CACHE.iRandomImmigrant).getTextKey()
+					self.setAIComment(self.getCommentID("AI_DIPLOCOMMENT_FOREIGN_KING_OFFERS_IMMIGRANTS"), CACHE.iPrice, CACHE.iRandomImmigrant, szName)
 				else:
 					self.setAIComment(self.getCommentID("AI_DIPLOCOMMENT_FOREIGN_KING_REFUSES_IMMIGRANTS"))
 			else:
@@ -978,8 +975,7 @@ class CvDiplomacy:
 
 		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_ACCEPT_FOREIGN_IMMIGRANTS")):
 			CyInterface().playGeneralSound("AS2D_KISS_MY_RING")
-			# The Event will read the data from the cache and then clean it
-			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_ACQUIRE_FOREIGN_IMMIGRANTS, -1, -1)
+			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_ACQUIRE_FOREIGN_IMMIGRANTS, CACHE.iRandomImmigrant, CACHE.iPrice)
 			diploScreen.closeScreen()
 		# WTP, ray, Foreign Kings, buy Immigrants - END
 

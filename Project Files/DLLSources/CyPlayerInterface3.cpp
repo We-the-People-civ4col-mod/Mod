@@ -124,7 +124,6 @@ void CyPlayerPythonInterface3(python::class_<CyPlayer>& x)
 		//WTP, ray Kings Used Ship - END
 
 		// WTP, ray, Foreign Kings, buy Immigrants - START
-		.def("cacheForeignImmigrantData", &CyPlayer::cacheForeignImmigrantData, "int (int iForeignImmigrantPrice, int iForeignImmigrantClassType)") 
 		.def("getRandomForeignImmigrantClassTypeID", &CyPlayer::getRandomForeignImmigrantClassTypeID, "int ()") 
 		.def("getForeignImmigrantPrice", &CyPlayer::getForeignImmigrantPrice, "int (int iForeignImmigrantClassType, int iEuropeKingID)") 
 		.def("isForeignKingWillingToTradeImmigrants", &CyPlayer::isForeignKingWillingToTradeImmigrants, "bool (int iEuropeKingID)")

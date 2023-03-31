@@ -80,8 +80,6 @@ CvPlayer::CvPlayer()
 
 	// WTP, ray, Foreign Kings, buy Immigrants - START
 	m_iTimerForeignImmigrants = 0;
-	m_iCachedForeignImmigrantPrice = 0;
-	m_iCachedForeignImmigrantClassTypeID = NO_UNITCLASS;
 	// WTP, ray, Foreign Kings, buy Immigrants - END
 
 	m_iChurchFavoursReceived = 0; // R&R, ray, Church Favours
@@ -4099,17 +4097,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			// get the Player
 			CvPlayer& kPlayer = GET_PLAYER(ePlayer);
 
-			// read cash for the data of the used
-			UnitClassTypes iRandomForeignImmigrantTypeID = kPlayer.m_iCachedForeignImmigrantClassTypeID ;
-			int pricetopay = kPlayer.m_iCachedForeignImmigrantPrice ;
-
-			// call the logic
-			kPlayer.acquireForeignImmigrant(iRandomForeignImmigrantTypeID, pricetopay);
-
-			// reset cache, optional - would be overwritten anyways
-			kPlayer.m_iCachedForeignImmigrantPrice = 0;
-			kPlayer.m_iCachedForeignImmigrantClassTypeID = NO_UNITCLASS;
-
+			kPlayer.acquireForeignImmigrant((UnitClassTypes)iData1, iData2);
 		}
 		break;
 	// WTP, ray, Foreign Kings, buy Immigrants - END
@@ -23333,9 +23321,12 @@ int CvPlayer::getChurchFavourPrice()
 // R&R, ray, Church Favours - END
 
 //WTP, ray Kings Used Ship - START
-int CvPlayer::getUsedShipPrice(UnitClassTypes iUsedShipClassType)
+int CvPlayer::getUsedShipPrice(UnitClassTypes iUsedShipClassType) const
 {
 	int iPrice = 0;
+
+	CvRandom aSyncRandom;
+	aSyncRandom.reseed(m_ulRandomSeed);
 
 	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iUsedShipClassType);
 	if (eUnit != NO_UNIT)
@@ -23346,7 +23337,7 @@ int CvPlayer::getUsedShipPrice(UnitClassTypes iUsedShipClassType)
 		int iMinDiscountForNewShipsPercent = GC.getDefineINT("MIN_DISCOUNT_USED_SHIP_PERCENT");
 		int iMaxDiscountForNewShipsPercent = GC.getDefineINT("MAX_DISCOUNT_USED_SHIP_PERCENT");
 
-		int iDiscountRandPercent = std::max(iMinDiscountForNewShipsPercent, GC.getGameINLINE().getSorenRandNum(iMaxDiscountForNewShipsPercent, "random used ship discount"));
+		int iDiscountRandPercent = std::max(iMinDiscountForNewShipsPercent, (int)aSyncRandom.get(iMaxDiscountForNewShipsPercent));
 
 		// we modify the price by the attitude of the King
 		int iKingsAttitude = GET_PLAYER(getParent()).AI_getAttitudeVal(getID());
@@ -23374,7 +23365,7 @@ UnitClassTypes CvPlayer::getRandomUsedShipClassTypeID() const
 
 	for (UnitClassTypes iI = FIRST_UNITCLASS; iI < NUM_UNITCLASS_TYPES; ++iI)
 	{
-		int iUnitClassCompareRand = aSyncRandom.get(100);
+		int iUnitClassCompareRand = aSyncRandom.get(836);
 		if (iUnitClassCompareRand > iBestLastCompareValue)
 		{
 			UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iI);
@@ -23629,16 +23620,12 @@ void CvPlayer::acquireUsedShip(UnitClassTypes iUsedShipClassType, int iPrice)
 
 
 // WTP, ray, Foreign Kings, buy Immigrants - START
-void CvPlayer::cacheForeignImmigrantData(int iForeignImmigrantPrice, UnitClassTypes iForeignImmigrantClassTypeID)
-{
-	m_iCachedForeignImmigrantPrice = iForeignImmigrantPrice;
-	m_iCachedForeignImmigrantClassTypeID = iForeignImmigrantClassTypeID;
-	return;
-}
-
-int CvPlayer::getForeignImmigrantPrice(UnitClassTypes iForeignImmigrantClassType, int iForeignKingID)
+int CvPlayer::getForeignImmigrantPrice(UnitClassTypes iForeignImmigrantClassType, int iForeignKingID) const
 {
 	int iPrice = 0;
+
+	CvRandom aSyncRandom;
+	aSyncRandom.reseed(m_ulRandomSeed);
 
 	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iForeignImmigrantClassType);
 	if (eUnit != NO_UNIT)
@@ -23649,7 +23636,7 @@ int CvPlayer::getForeignImmigrantPrice(UnitClassTypes iForeignImmigrantClassType
 		int iMinDiscountForeignImmigrantPercent = GC.getDefineINT("MIN_DISCOUNT_FOREIGN_IMMIGRANTS_PERCENT");
 		int iMaxDiscountForeignImmigrantPercent = GC.getDefineINT("MAX_DISCOUNT_FOREIGN_IMMIGRANTS_PERCENT");
 
-		int iDiscountRandPercent = std::max(iMinDiscountForeignImmigrantPercent, GC.getGameINLINE().getSorenRandNum(iMaxDiscountForeignImmigrantPercent, "random foreign immigrant discount"));
+		int iDiscountRandPercent = std::max(iMinDiscountForeignImmigrantPercent, (int)aSyncRandom.get(iMaxDiscountForeignImmigrantPercent));
 
 		// we modify the price by the attitude of the King
 		int iKingsAttitude = GET_PLAYER((PlayerTypes) iForeignKingID).AI_getAttitudeVal(getID());
@@ -23667,14 +23654,22 @@ int CvPlayer::getForeignImmigrantPrice(UnitClassTypes iForeignImmigrantClassType
 	return iPrice;
 }
 
-UnitClassTypes CvPlayer::getRandomForeignImmigrantClassTypeID()
+UnitClassTypes CvPlayer::getRandomForeignImmigrantClassTypeID() const
 {
 	UnitClassTypes eBestUnitClass = NO_UNITCLASS;
 	int iBestLastCompareValue = 0;
 
+	CvRandom aSyncRandom;
+	aSyncRandom.reseed(m_ulRandomSeed);
+	for (int i = 0; i < getParent(); i++)
+	{
+		// move the random seed a bit
+		aSyncRandom.get(0);
+	}
+
 	for (UnitClassTypes iI = FIRST_UNITCLASS; iI < NUM_UNITCLASS_TYPES; ++iI)
 	{
-		int iUnitClassCompareRand = GC.getGameINLINE().getSorenRandNum(100, "Foreign Immigrant Class Rand");
+		int iUnitClassCompareRand = aSyncRandom.get(438);
 		if (iUnitClassCompareRand > iBestLastCompareValue)
 		{
 			UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iI);

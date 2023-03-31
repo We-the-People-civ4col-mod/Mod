@@ -138,7 +138,7 @@ public:
 	// R&R, ray, Church Favours - END
 
 	//WTP, ray Kings Used Ship - START
-	int getUsedShipPrice(UnitClassTypes iUsedShipClassType);
+	int getUsedShipPrice(UnitClassTypes iUsedShipClassType) const;
 	UnitClassTypes getRandomUsedShipClassTypeID() const;
 	bool isKingWillingToTradeUsedShips();
 	void decreaseCounterForUsedShipDeals();
@@ -148,9 +148,8 @@ public:
 	//WTP, ray Kings Used Ship - END
 
 	// WTP, ray, Foreign Kings, buy Immigrants - START
-	void cacheForeignImmigrantData(int iForeignImmigrantPrice, UnitClassTypes iForeignImmigrantClassType);
-	int getForeignImmigrantPrice(UnitClassTypes iForeignImmigrantClassType, int iKingID);
-	UnitClassTypes getRandomForeignImmigrantClassTypeID();
+	int getForeignImmigrantPrice(UnitClassTypes iForeignImmigrantClassType, int iKingID) const;
+	UnitClassTypes getRandomForeignImmigrantClassTypeID() const;
 	bool isForeignKingWillingToTradeImmigrants(int iKingID);
 	void decreaseCounterForForeignKingImmigrantsDeals();
 	void doAILogicforForeignImmigrants();
@@ -1083,8 +1082,6 @@ protected:
 
 	// WTP, ray, Foreign Kings, buy Immigrants - START
 	int m_iTimerForeignImmigrants;
-	int m_iCachedForeignImmigrantPrice;
-	UnitClassTypes m_iCachedForeignImmigrantClassTypeID;
 	// WTP, ray, Foreign Kings, buy Immigrants - END
 
 	int m_iChurchFavoursReceived; // R&R, ray, Church Favours

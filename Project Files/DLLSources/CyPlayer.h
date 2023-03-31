@@ -358,7 +358,6 @@ public:
 	// R&R, ray, Church Favours - START
 
 	// WTP, ray, Foreign Kings, buy Immigrants - START
-	void cacheForeignImmigrantData(int iForeignImmigrantPrice, int iUsedShipClassType);
 	int getRandomForeignImmigrantClassTypeID() const;
 	int getForeignImmigrantPrice(int iForeignImmigrantClassType, int iKingID) const;
 	bool isForeignKingWillingToTradeImmigrants(int iKingID) const;

@@ -1244,14 +1244,6 @@ void CyPlayer::resetCounterForUsedShipDeals()
 
 
 // WTP, ray, Foreign Kings, buy Immigrants - START
-void CyPlayer::cacheForeignImmigrantData(int iForeignImmigrantPrice, int iForeignImmigrantClassType)
-{
-	if (m_pPlayer)
-	{
-		m_pPlayer->cacheForeignImmigrantData(iForeignImmigrantPrice, (UnitClassTypes)iForeignImmigrantClassType);
-	}
-}
-
 int CyPlayer::getRandomForeignImmigrantClassTypeID() const
 {
 	return m_pPlayer ? m_pPlayer->getRandomForeignImmigrantClassTypeID() : -1;
