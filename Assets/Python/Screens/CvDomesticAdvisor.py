@@ -958,6 +958,8 @@ class CvDomesticAdvisor:
 				return localText.getText("TXT_KEY_DOMESTIC_ADVISOR_STATE_GENERAL", ())
 			elif iData1 == self.DOMESTIC_DEMAND_STATE:
 				return localText.getText("TXT_KEY_DOMESTIC_ADVISOR_STATE_DOMESTIC_MARKET", ())
+			elif iData1 == self.HAPPINESS_STATE:
+				return localText.getText("TXT_KEY_DOMESTIC_ADVISOR_STATE_HAPPINESS", ())
 			elif iData1 == self.PRODUCTION_STATE:
 				return localText.getText("TXT_KEY_CONCEPT_PRODUCTION", ())
 			elif iData1 == self.BUILDING_STATE:
@@ -977,6 +979,8 @@ class CvDomesticAdvisor:
 			# total production page - end - Nightinggale
 			elif iData1 == self.TRADEROUTE_STATE:
 				return localText.getText("TXT_KEY_DOMESTIC_ADVISOR_STATE_TRADEROUTE", ())
+			elif iData1 == self.TEACHER_STATE:
+				return localText.getText("TXT_KEY_DOMESTIC_ADVISOR_STATE_TEACHER", ())
 			elif iData1 == self.NATIVE_STATE:
 				return localText.getText("TXT_KEY_DOMESTIC_ADVISOR_STATE_NATIVE", ())
 			elif iData1 == 10001:

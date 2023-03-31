@@ -984,6 +984,14 @@
         <Spanish>%s1</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_DOMESTIC_ADVISOR_STATE_HAPPINESS</Tag>
+        <English>Happiness</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DOMESTIC_ADVISOR_STATE_TEACHER</Tag>
+        <English>Education</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_DOMESTIC_ADVISOR_STATE_NATIVE</Tag>
         <English>Native info</English>
         <French>Informations sur les indigènes</French>
