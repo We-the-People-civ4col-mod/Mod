@@ -188,6 +188,7 @@
         <German>Distanz Küste zu Europa : </German>
         <Italian>Distanza dall'Europa : </Italian>
         <Spanish>Distancia hasta Europa : </Spanish>
+        <Russian>Дистанцию до Европы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_NORTHERN_BORDER</Tag>
@@ -196,6 +197,7 @@
         <German>Nördliche Grenze : </German>
         <Italian>Confine nord : </Italian>
         <Spanish>Frontera norte : </Spanish>
+        <Russian>Северную границу</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_SOUTHERN_BORDER</Tag>
@@ -204,6 +206,7 @@
         <German>Südliche Grenze : </German>
         <Italian>Confine sud : </Italian>
         <Spanish>Frontera sur : </Spanish>
+        <Russian>Южную границу</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_LAND_ALLOCATION</Tag>
@@ -212,6 +215,7 @@
         <German>Landverteilung : </German>
         <Italian>Assegnazione del terreno : </Italian>
         <Spanish>Asignación de terrenos : </Spanish>
+        <Russian>Распределение суши</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_3_FIELDS</Tag>
@@ -220,6 +224,7 @@
         <German>3 Geländefelder : </German>
         <Italian>3 caselle : </Italian>
         <Spanish>3 casillas : </Spanish>
+        <Russian>3 клетки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_4_FIELDS</Tag>
@@ -228,6 +233,7 @@
         <German>4 Geländefelder (Standard) : </German>
         <Italian>4 caselle (predefinita) : </Italian>
         <Spanish>4 casillas (por defecto) : </Spanish>
+        <Russian>4 клетки (по умолчанию)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_6_FIELDS</Tag>
@@ -236,6 +242,7 @@
         <German>6 Geländefelder : </German>
         <Italian>6 caselle : </Italian>
         <Spanish>6 casillas : </Spanish>
+        <Russian>6 клеток</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_8_FIELDS</Tag>
@@ -244,6 +251,7 @@
         <German>8 Geländefelder : </German>
         <Italian>8 caselle : </Italian>
         <Spanish>8 casillas : </Spanish>
+        <Russian>8 клеток</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_MANY_ISLES_0</Tag>
@@ -252,6 +260,7 @@
         <German>Wenige Inseln (Standard)</German>
         <Italian>Poche isole (predefinito)</Italian>
         <Spanish>Pocas islas (por defecto)</Spanish>
+        <Russian>Несколько островов (по умолчанию)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_MANY_ISLES_1</Tag>
@@ -260,6 +269,7 @@
         <German>Viele Inseln</German>
         <Italian>Molte isole</Italian>
         <Spanish>Muchas islas</Spanish>
+        <Russian>Много островов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_SELECT_NORTHERN_BORDER_0</Tag>
@@ -268,6 +278,7 @@
         <German>90°N (nördliche Breite, Standard)</German>
         <Italian>Latitudine 90 gradi nord (predefinita)</Italian>
         <Spanish>Latitud 90 grados norte (por defecto)</Spanish>
+        <Russian>90° северной широты (по умолчанию)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_SELECT_NORTHERN_BORDER_1</Tag>
@@ -276,6 +287,7 @@
         <German>90°S (südliche Breite)</German>
         <Italian>Latitudine 90 gradi sud</Italian>
         <Spanish>Latitud 90 grados sur</Spanish>
+        <Russian>90° южной широты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_SELECT_SOUTHERN_BORDER_0</Tag>
@@ -284,6 +296,7 @@
         <German>90°N (nördliche Breite)</German>
         <Italian>Latitudine 90 gradi nord</Italian>
         <Spanish>Latitud 90 grados norte</Spanish>
+        <Russian>90° северной широты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_SELECT_SOUTHERN_BORDER_1</Tag>
@@ -292,6 +305,7 @@
         <German>90°S (südliche Breite, Standard)</German>
         <Italian>Latitudine 90 gradi sud (predefinita)</Italian>
         <Spanish>Latitud 90 grados sur (por defecto)</Spanish>
+        <Russian>90° южной широты (по умолчанию)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_SELECT_EQUATOR</Tag>
@@ -300,6 +314,7 @@
         <German>0° Äquator</German>
         <Italian>0° Equatore</Italian>
         <Spanish>0° Ecuador</Spanish>
+        <Russian>0° экватор</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_AS_MAX_UNITS_PER_CITY</Tag>

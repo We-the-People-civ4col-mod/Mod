@@ -7604,7 +7604,7 @@
         <German>Ihr habt den Befehl der Kirche verweigert, den Krieg zu erklären. Die Kirche und der König sind entrüstet, aber Eure Beziehung zu [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] hat sich verbessert.</German>
         <Italian>Avete rifiutato l'ordine della Chiesa di dichiarare guerra. La Chiesa e il vostro re sono indignati ma le vostre relazioni con [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] sono migliorate.</Italian>
         <Spanish>Has rechazado la orden de la Iglesia de declarar la guerra. La Iglesia y tu Rey están indignados pero tus relaciones con [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] han mejorado.</Spanish>
-        <Russian>Вы отказались от приказа Святой Церкви объявить войну. Кардинал и ваш Король возмущены, но ваши отношения с [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] улучшились.</Russian>
+        <Russian>Вы отказались выполнить приказ Святой Церкви объявить войну дикарям. Кардинал и ваш Король возмущены, но ваши отношения с [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] улучшились.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_STEALING_IMMIGRANT_SUCCESSFULL</Tag>
