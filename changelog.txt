@@ -4,7 +4,7 @@ We the People Changelog
 Version 4.0-beta1
 
 Major Changes:
-- Several new terrains
+- Several new terrains, terrain features and Bonus Resources
 - Many new yields and manufacturing products
  Buildings and specialists for the new yields and manufacturing products
 - Buildings require additional different resources (e.g. clay)
@@ -13,6 +13,12 @@ Major Changes:
 - Diversified naval units and royal units - note that some ships now have limitations on what they can transport!
 - Crime/Law System: Larger cities will cause crime which will need to be countered by judges (producing law)
 - New Movement System: Moving through a tile can now require several turns, making slow units much slower in difficult terrain (no more 1 plot/turn)
+- Barracks System and Harbour System, that limit the amount of troops and ships in a city
+- Cargo Overhaul (ships may have now restrictions what they may carry)
+- Ref Overhaul (e.g. Ref comes with more Ship Types, Generals, Admirals, ...)
+- Artillery Units have been rebuilt into Professions that need to be equiped but also have experts
+- Health Overhaul (Terrain, Terrain Features, Bonus Resources, ...) may impact Health
+- Taverns allow Professions to employee Experts for Happiness and Culture
 
 Other Gameplay Changes:
 - Coastal tiles can now be "shallow coast", a terrain type which only small ships can enter
@@ -25,8 +31,14 @@ Other Gameplay Changes:
 - Other kings will allow you to buy a random colonist from time to time
 - Battle damage will now sometimes cause a "negative promotion" which can only be removed by fully healing the unit.
 - Many new Founding Fathers have been added (especially covering the new yields)
-- A huge amount of new events
+- A huge amount of new events and improvements in Event System (e.g. Events may spawn hostile Units)
 - Length of game (turns) increased, game speeds adapted. Length of turns in months is now constant throughout the game.
+- Culture is more important now, it may also produce Political FF points (less than however Liberty Bells)
+- Massive rebalancing of Traits, including changes that give completely new gameplay strategies
+- Domestic Market Events that may heavily impact prices and demand in Cities.
+- Many new DLL Diplo Events (e.g. related to Privateers, Wars with Natives or Royal Interventions)
+- New Plot Improvements that add effects to a City (e.g. additional Storage, bonus on Production, ...)
+- Other new Plot Improvements like Irrigation in Deserts, Salinas or Canals
 
 Maps:
 - All maps have been revised for the new terrains
