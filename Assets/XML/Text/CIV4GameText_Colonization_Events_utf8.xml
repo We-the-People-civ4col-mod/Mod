@@ -3226,7 +3226,7 @@
         <Tag>TXT_KEY_EVENTTRIGGER_LUXURY_GOODS</Tag>
         <English>Social unrest in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
         <French>Révolte sociale à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
-        <German>Aus dem Warenhaus in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] wurde Wein gestohlen.</German>
+        <German>Soziale Unruhen in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</German>
         <Russian>Социальные беспорядки в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
