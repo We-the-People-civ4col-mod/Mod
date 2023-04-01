@@ -3086,7 +3086,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WINDMILL_STRATEGY</Tag>
-        <English>[COLOR_BUILDING_TEXT]Windmills[COLOR_REVERT] allow better milling of flour from grain, increasing [LINK=YIELD_FOOD]food[\LINK] production. If a colony is on a [LINK=CONCEPT_RIVERS]riverbank[\LINK], the windmill can be replaced by a [LINK=BUILDING_WATERMILL]watermill[\LINK].[PARAGRAPH:1]Windmills can only be built on a plot where food will grow. If there's no food available at all in that particular terrain, adding a windmill has no effect.[PARAGRAPH:1]For more information about food production, see [LINK=CONCEPT_FOOD]Food[\LINK].</English>
+        <English>[COLOR_BUILDING_TEXT]Windmills[COLOR_REVERT] allow better milling of flour from grain, increasing [LINK=YIELD_FOOD]food[\LINK] production. If a colony is on a [LINK=CONCEPT_RIVERS]riverbank[\LINK], the windmill can be replaced by a [LINK=BUILDING_WATERMILL]watermill[\LINK].[PARAGRAPH:1]Windmills can only be built on a plot where food will grow. If there's no food available at all in that particular terrain, it won't be possible to build a windmill. It's a similar situation for the iron mill on terrain where there's no ore.[PARAGRAPH:1]For more information about food production, see [LINK=CONCEPT_FOOD]Food[\LINK].</English>
         <French>Les [COLOR_BUILDING_TEXT]moulins à vent[COLOR_REVERT] et les [COLOR_BUILDING_TEXT]moulins à eau[COLOR_REVERT] permettent de meuler vos récoltes, ce qui a pour conséquence d'augmenter la production de nourriture dans votre ville.</French>
         <German>[COLOR_BUILDING_TEXT]Windmühlen[COLOR_REVERT] und [COLOR_BUILDING_TEXT]Wassermühlen[COLOR_REVERT] verbessern die Produktion von Mehl. Dadurch wird der Nahrungsertrag der Stadt gesteigert.</German>
     </TEXT>
