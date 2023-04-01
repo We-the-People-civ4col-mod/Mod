@@ -115,6 +115,12 @@
 			<fScale>0.9</fScale>
 			<Path>Art/Effects/unit_greatpeople/fx_GreatPeople_Warlord_Highlight.nif</Path>
 		</AttachableInfo>
+		<AttachableInfo>
+			<Type>ATTACHABLE_HIGHLIGHT_SCIENTIST</Type>
+			<Description>Highlight effect for the Scientist</Description>
+			<fScale>0.9</fScale>
+			<Path>Art/Effects/unit_greatpeople/fx_GreatPeople_Scientist_Highlight.nif</Path>
+		</AttachableInfo>
 		<!-- Improvements: -->
 		<AttachableInfo>
 			<Type>ATTACHABLE_IMPCHIMNEYSMOKE_01</Type>
