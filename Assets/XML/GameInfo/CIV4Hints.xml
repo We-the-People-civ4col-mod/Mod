@@ -82,6 +82,9 @@
             <Description>TXT_KEY_HINT_24</Description>
         </HintInfo>
         <HintInfo>
+            <Description>TXT_KEY_HINT_25</Description>
+        </HintInfo>
+        <HintInfo>
             <Description>TXT_KEY_HINT_27</Description>
         </HintInfo>
         <HintInfo>
@@ -104,6 +107,9 @@
         </HintInfo>
         <HintInfo>
             <Description>TXT_KEY_HINT_38</Description>
+        </HintInfo>
+        <HintInfo>
+            <Description>TXT_KEY_HINT_39</Description>
         </HintInfo>
         <HintInfo>
             <Description>TXT_KEY_HINT_40</Description>
