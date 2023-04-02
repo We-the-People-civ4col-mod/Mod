@@ -157,7 +157,7 @@ class CvPediaBuilding:
 				else:
 					szSign = ""
 
-				szYield = gc.getYieldInfo(k).getDescription() + ": "
+				szYield = gc.getYieldInfo(iYield).getDescription() + ": "
 
 				szText1 = szYield.upper() + szSign + str(buildingInfo.getYieldChange(iYield))
 				szText2 = szText1 + (u"%c" % (gc.getYieldInfo(iYield).getChar()))
