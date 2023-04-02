@@ -14464,7 +14464,7 @@ void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdate
 					// let us see if we need to do anything at all
 					bool bFoundCityIsAlreadySuitable = false;
 
-					if (pUnitCity->isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()) && pUnitCity->plot()->hasDeepWaterCoast())
+					if (pUnitCity != NULL && pUnitCity->isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()) && pUnitCity->plot()->hasDeepWaterCoast())
 					{
 						// the city is fine, nothing needs to be done
 						bFoundCityIsAlreadySuitable = true;
