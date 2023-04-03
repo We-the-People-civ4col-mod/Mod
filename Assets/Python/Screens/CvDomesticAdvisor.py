@@ -13,6 +13,7 @@ import ProductionAdvisor
 import NativeAdvisor
 import WarehouseAdvisor
 import TeacherAdvisor
+import DebugTerrainAdvisor
 
 
 
@@ -148,6 +149,7 @@ class CvDomesticAdvisor:
 		
 		if (gc.getUserSettings().getDebugMaxGameFont() > 0):
 			self.GAME_FONT_STATE      = self.addButton("GameFontState",          "INTERFACE_CITY_MAP_BUTTON")
+			self.TERRAIN_STATE        = self.addButton("TerrainState",           "INTERFACE_NET_YIELD_BUTTON"        , DebugTerrainAdvisor.DebugTerrainAdvisor(self))
 			self.GameFontSet = False
 		
 		self.YieldPages = set([self.WAREHOUSE_STATE])
@@ -989,6 +991,8 @@ class CvDomesticAdvisor:
 					return CyGameTextMgr().getSpecificUnitHelp(unit, true, false)
 			elif iData1 == self.GAME_FONT_STATE and iData1 != -1:
 				return "DEBUG: GameFont"
+			elif iData1 == self.TERRAIN_STATE and iData1 != -1:
+				return "DEBUG: terrain count"
 		if eWidgetType == WidgetTypes.WIDGET_MISSION_CHAR:
 			return gc.getPlayer(iData1).getCivilizationAdjective(0)
 			

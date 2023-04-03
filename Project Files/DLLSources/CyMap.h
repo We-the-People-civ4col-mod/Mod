@@ -95,6 +95,9 @@ public:
 	void setCityCatchmentRadiusMapMaker(int iSetting);
 	void setCityCatchmentRadiusNoMapMaker(int iSetting);
 
+	// debug code, might be slow
+	CyInfoArray* getTerrainCount() const;
+
 protected:
 	CvMap* m_pMap;
 };

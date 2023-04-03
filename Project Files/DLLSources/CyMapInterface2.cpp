@@ -5,6 +5,7 @@
 #include "CySelectionGroup.h"
 #include "CyUnit.h"
 #include "CyPlot.h"
+#include "CyData.h"
 //#include "CvStructs.h"
 //# include <boost/python/manage_new_object.hpp>
 //# include <boost/python/return_value_policy.hpp>
@@ -57,5 +58,6 @@ void CyMapPythonInterface2(python::class_<CyMap>& x)
 		.def("setCityCatchmentRadiusMapMaker", &CyMap::setCityCatchmentRadiusMapMaker, "void (int)")
 		.def("setCityCatchmentRadiusNoMapMaker", &CyMap::setCityCatchmentRadiusNoMapMaker, "void (int)")
 
+		.def("getTerrainCount", &CyMap::getTerrainCount, python::return_value_policy<python::manage_new_object>(), "CyInfoArray(TerrainTypes, int)")
 		;
 }

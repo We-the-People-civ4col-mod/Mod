@@ -13,6 +13,7 @@
 #include "CvGlobals.h"
 #include "CvMapGenerator.h"
 #include "CvInitCore.h"
+#include "CyData.h"
 
 CyMap::CyMap() : m_pMap(NULL)
 {
@@ -361,4 +362,23 @@ void CyMap::setCityCatchmentRadiusNoMapMaker(int iSetting)
 	{
 		m_pMap->setCityCatchmentRadius(iSetting);
 	}
+}
+
+CyInfoArray* CyMap::getTerrainCount() const
+{
+	EnumMap<TerrainTypes, int> em;
+
+	if (m_pMap)
+	{
+		for (int iPlot = 0; iPlot < m_pMap->numPlotsINLINE(); iPlot++)
+		{
+			TerrainTypes eTerrain = m_pMap->plotByIndexINLINE(iPlot)->getTerrainType();
+			if (eTerrain != NO_TERRAIN)
+			{
+				em.add(eTerrain, 1);
+			}
+		}
+	}
+
+	return new CyInfoArray(em);
 }
