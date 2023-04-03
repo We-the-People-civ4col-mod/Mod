@@ -372,10 +372,22 @@ CyInfoArray* CyMap::getTerrainCount() const
 	{
 		for (int iPlot = 0; iPlot < m_pMap->numPlotsINLINE(); iPlot++)
 		{
-			TerrainTypes eTerrain = m_pMap->plotByIndexINLINE(iPlot)->getTerrainType();
-			if (eTerrain != NO_TERRAIN)
+			const CvPlot* pPlot = m_pMap->plotByIndexINLINE(iPlot);
+			if (pPlot != NULL)
 			{
-				em.add(eTerrain, 1);
+				TerrainTypes eTerrain = pPlot->getTerrainType();
+				if (eTerrain != NO_TERRAIN)
+				{
+					em.add(eTerrain, 1);
+				}
+				if (pPlot->isHills())
+				{
+					em.add(TERRAIN_HILL, 1);
+				}
+				if (pPlot->isPeak())
+				{
+					em.add(TERRAIN_PEAK, 1);
+				}
 			}
 		}
 	}
