@@ -1549,7 +1549,7 @@ void CvPlot::changeAdjacentSight(TeamTypes eTeam, int iRange, bool bIncrement, C
 	}
 }
 
-bool CvPlot::canSeePlot(CvPlot *pPlot, TeamTypes eTeam, int iRange, DirectionTypes eFacingDirection) const
+bool CvPlot::canSeePlot(const CvPlot *pPlot, TeamTypes eTeam, int iRange, DirectionTypes eFacingDirection) const
 {
 	iRange++;
 
@@ -1558,12 +1558,10 @@ bool CvPlot::canSeePlot(CvPlot *pPlot, TeamTypes eTeam, int iRange, DirectionTyp
 		return false;
 	}
 
-	//find displacement
-	int dx = pPlot->getX() - getX();
-	int dy = pPlot->getY() - getY();
-	dx = dxWrap(dx); //world wrap
-	dy = dyWrap(dy);
-
+	//find displacement and apply world wrap
+	const int dx = dxWrap(pPlot->getX() - getX());
+	const int dy = dyWrap(pPlot->getY() - getY());
+	
 	//check if in facing direction
 	if (shouldProcessDisplacementPlot(dx, dy, eFacingDirection))
 	{
@@ -1585,13 +1583,13 @@ bool CvPlot::canSeePlot(CvPlot *pPlot, TeamTypes eTeam, int iRange, DirectionTyp
 
 bool CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int originalDX, int originalDY, bool firstPlot, bool outerRing) const
 {
-	const CvPlot *pPlot = plotXY(getX_INLINE(), getY_INLINE(), dx, dy);
+	const CvPlot* const pPlot = plotXY(getX_INLINE(), getY_INLINE(), dx, dy);
 	if (pPlot != NULL)
 	{
 		//base case is current plot
 		if((dx == 0) && (dy == 0))
 		{
-			return pPlot;
+			return true;
 		}
 
 		//find closest of three points (1, 2, 3) to original line from Start (S) to End (E)
@@ -1673,20 +1671,20 @@ bool CvPlot::shouldProcessDisplacementPlot(int dx, int dy, DirectionTypes eFacin
 	else
 	{
 		//							N		NE		E		SE			S		SW		W			NW
-		int displacements[8][2] = {{0, 1}, {1, 1}, {1, 0}, {1, -1}, {0, -1}, {-1, -1}, {-1, 0}, {-1, 1}};
+		const int displacements[8][2] = {{0, 1}, {1, 1}, {1, 0}, {1, -1}, {0, -1}, {-1, -1}, {-1, 0}, {-1, 1}};
 
-		int directionX = displacements[eFacingDirection][0];
-		int directionY = displacements[eFacingDirection][1];
+		const int directionX = displacements[eFacingDirection][0];
+		const int directionY = displacements[eFacingDirection][1];
 
 		//compute angle off of direction
-		int crossProduct = directionX * dy - directionY * dx; //cross product
-		int dotProduct = directionX * dx + directionY * dy; //dot product
+		const int crossProduct = directionX * dy - directionY * dx; //cross product
+		const int dotProduct = directionX * dx + directionY * dy; //dot product
 
-		float theta = atan2((float) crossProduct, (float) dotProduct);
-		float spread = 60 * (float) M_PI / 180;
+		const float theta = atan2(static_cast<float>(crossProduct), static_cast<float>(dotProduct));
+		float spread = 60 * fM_PI / 180;
 		if((abs(dx) <= 1) && (abs(dy) <= 1)) //close plots use wider spread
 		{
-			spread = 90 * (float) M_PI / 180;
+			spread = 90 * fM_PI / 180;
 		}
 
 		if((theta >= -spread / 2) && (theta <= spread / 2))
@@ -1715,8 +1713,6 @@ bool CvPlot::shouldProcessDisplacementPlot(int dx, int dy, DirectionTypes eFacin
 
 void CvPlot::updateSight(bool bIncrement)
 {
-	CvCity* pCity = getPlotCity();
-
 	// Owned
 	if (isOwned())
 	{
@@ -1740,7 +1736,7 @@ void CvPlot::updateSeeFromSight(bool bIncrement)
 
 	const int iRange = MAX_VISIBILITY_RANGE_PLOT + MAX_VISIBILITY_RANGE_PLOT_BONUS + 1;
 
-	CvMap& kMap = GC.getMapINLINE();
+	const CvMap& kMap = GC.getMapINLINE();
 	const int iX = getX_INLINE();
 	const int iY = getY_INLINE();
 
@@ -1911,7 +1907,6 @@ bool CvPlot::canHaveBonus(BonusTypes eBonus, bool bIgnoreLatitude) const
 
 bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, bool bPotential, /* build feature removal detection - Nightinggale */ bool bIgnoreFeature) const
 {
-	CvPlot* pLoopPlot;
 	bool bValid;
 	int iI;
 
@@ -1947,8 +1942,8 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 	if (eImprovement != NO_IMPROVEMENT && getBonusType() != NO_BONUS && eTeam != NO_TEAM && !GET_TEAM(eTeam).isHuman())
 	{
 		bool improvementDoesMatchBonus = false;
-		CvBonusInfo& kBonus = GC.getBonusInfo(getBonusType());
-		CvImprovementInfo& kImprovement = GC.getImprovementInfo(eImprovement);
+		const CvBonusInfo& kBonus = GC.getBonusInfo(getBonusType());
+		const CvImprovementInfo& kImprovement = GC.getImprovementInfo(eImprovement);
 
 		for (int xx = 0; xx < NUM_YIELD_TYPES && !improvementDoesMatchBonus; ++xx)
 		{
@@ -1969,8 +1964,8 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 	if (eImprovement != NO_IMPROVEMENT && getBonusType() != NO_BONUS && GC.getImprovementInfo(eImprovement).isWater())
 	{
 		bool improvementDoesMatchBonus = false;
-		CvBonusInfo& kBonus = GC.getBonusInfo(getBonusType());
-		CvImprovementInfo& kImprovement = GC.getImprovementInfo(eImprovement);
+		const CvBonusInfo& kBonus = GC.getBonusInfo(getBonusType());
+		const CvImprovementInfo& kImprovement = GC.getImprovementInfo(eImprovement);
 
 		for (int xx = 0; xx < NUM_YIELD_TYPES && !improvementDoesMatchBonus; ++xx)
 		{
@@ -1990,7 +1985,7 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 	CvCity* pWorkingCity = getWorkingCity();
 	if (pWorkingCity != NULL && eTeam != NO_TEAM && !GET_TEAM(eTeam).isHuman()  && getBonusType() == NO_BONUS)
 	{
-		CvImprovementInfo& kImprovement = GC.getImprovementInfo(eImprovement);
+		const CvImprovementInfo& kImprovement = GC.getImprovementInfo(eImprovement);
 		bool isLivestockImprovment = false;
 
 		for (int yy = 0; yy < NUM_YIELD_TYPES && !isLivestockImprovment; ++yy)
@@ -2005,7 +2000,7 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 		{
 			for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 			{
-				CvPlot* pLoopPlot = pWorkingCity->getCityIndexPlot(iI);
+				CvPlot* const pLoopPlot = pWorkingCity->getCityIndexPlot(iI);
 				if (pLoopPlot != NULL)
 				{
 					if (pLoopPlot->getImprovementType() == eImprovement)
@@ -2039,7 +2034,7 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 	{
 		for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 		{
-			CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+			const CvPlot* const pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
 			if (pAdjacentPlot != NULL)
 			{
 				// we catch ourselves
@@ -2048,7 +2043,7 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 					return false;
 				}
 				// now let us also consider our growing improvements
-				ImprovementTypes eOurGrowingImprovement = (ImprovementTypes) GC.getImprovementInfo(eImprovement).getImprovementUpgrade();
+				const ImprovementTypes eOurGrowingImprovement = (ImprovementTypes) GC.getImprovementInfo(eImprovement).getImprovementUpgrade();
 				if (eOurGrowingImprovement != NO_IMPROVEMENT && eOurGrowingImprovement == eImprovement)
 				{
 					return false;
@@ -2112,7 +2107,7 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 
 		for (iI = 0; iI < NUM_CARDINALDIRECTION_TYPES; ++iI)
 		{
-			pLoopPlot = plotCardinalDirection(getX_INLINE(), getY_INLINE(), ((CardinalDirectionTypes)iI));
+			const CvPlot* const pLoopPlot = plotCardinalDirection(getX_INLINE(), getY_INLINE(), ((CardinalDirectionTypes)iI));
 
 			if (pLoopPlot != NULL)
 			{
@@ -2137,7 +2132,7 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 	bValid = false;
 	for (iI = 0; iI < NUM_YIELD_TYPES && !bValid; ++iI)
 	{
-		int iRequired = GC.getImprovementInfo(eImprovement).getPrereqNatureYield(iI);
+		const int iRequired = GC.getImprovementInfo(eImprovement).getPrereqNatureYield(iI);
 		if (iRequired > 0)
 		{
 			bPrereq = true;
@@ -2215,7 +2210,7 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 			{
 				for (int iDY = -iUniqueRange; iDY <= iUniqueRange; iDY++)
 				{
-					CvPlot *pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
+					const CvPlot* const pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
 					if (pLoopPlot != NULL && pLoopPlot->getImprovementType() != NO_IMPROVEMENT)
 					{
 						if (finalImprovementUpgrade(pLoopPlot->getImprovementType()) == finalImprovementUpgrade(eImprovement))
@@ -2292,7 +2287,7 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 					bool bFoundNeighbourCity = false;
 					for (int i = 0; i < NUM_DIRECTION_TYPES; ++i)
 					{
-						CvPlot* pLoopPlot = ::plotDirection(getX_INLINE(), getY_INLINE(), (DirectionTypes) i);
+						const CvPlot* const pLoopPlot = ::plotDirection(getX_INLINE(), getY_INLINE(), (DirectionTypes) i);
 						if (pLoopPlot != NULL && pLoopPlot->getTeam() != GET_PLAYER(ePlayer).getTeam())
 						{
 							if (pLoopPlot->isCity())
@@ -2316,11 +2311,10 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 			if(GC.getImprovementInfo(eImprovement).isActsAsCity() || GC.getImprovementInfo(eImprovement).isCanal())
 			{
 				CLLNode<IDInfo>* pUnitNode = headUnitNode();
-				CvUnit* pLoopUnit;
 
 				while (pUnitNode != NULL)
 				{
-					pLoopUnit = ::getUnit(pUnitNode->m_data);
+					CvUnit* const pLoopUnit = ::getUnit(pUnitNode->m_data);
 					pUnitNode = nextUnitNode(pUnitNode);
 					if(pLoopUnit != NULL && pLoopUnit->getOwner() != ePlayer)
 					{
@@ -2447,7 +2441,7 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 	}
 
 	// R&R, ray, Terraforming Features - START
-	TerrainTypes ePrereqTerrain = (TerrainTypes)(GC.getBuildInfo(eBuild).getPrereqTerrain());
+	const TerrainTypes ePrereqTerrain = (TerrainTypes)(GC.getBuildInfo(eBuild).getPrereqTerrain());
 	if (ePrereqTerrain != NO_TERRAIN)
 	{
 		// check if Terrain fits
@@ -2469,7 +2463,7 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 		bValid = true;
 	}
 
-	FeatureTypes eResultFeature = (FeatureTypes)(GC.getBuildInfo(eBuild).getResultFeature());
+	const FeatureTypes eResultFeature = (FeatureTypes)(GC.getBuildInfo(eBuild).getResultFeature());
 	if (eResultFeature != NO_FEATURE)
 	{
 		//no reforrestation on City Plots
@@ -2536,7 +2530,6 @@ int CvPlot::getBuildTime(BuildTypes eBuild) const
 
 int CvPlot::getBuildTurnsLeft(BuildTypes eBuild, int iNowExtra, int iThenExtra) const
 {
-	CLLNode<IDInfo>* pUnitNode;
 	CvUnit* pLoopUnit;
 	int iNowBuildRate;
 	int iThenBuildRate;
@@ -2546,7 +2539,7 @@ int CvPlot::getBuildTurnsLeft(BuildTypes eBuild, int iNowExtra, int iThenExtra) 
 	iNowBuildRate = iNowExtra;
 	iThenBuildRate = iThenExtra;
 
-	pUnitNode = headUnitNode();
+	CLLNode<IDInfo>* pUnitNode = headUnitNode();
 
 	while (pUnitNode != NULL)
 	{
@@ -2566,6 +2559,8 @@ int CvPlot::getBuildTurnsLeft(BuildTypes eBuild, int iNowExtra, int iThenExtra) 
 	if (iThenBuildRate == 0)
 	{
 		//this means it will take forever under current circumstances
+		// TODO: Return something sensible so that we don't end up
+		// displaying a gazillion turns on the UI
 		return MAX_INT;
 	}
 
@@ -3089,11 +3084,10 @@ int CvPlot::countAdjacentPassableSections(bool bWater) const
 
 int CvPlot::countImpassableCardinalDirections() const
 {
-	CvPlot* pAdjacentPlot;
 	int iCount = 0;
 	for(int iI = 0; iI < NUM_CARDINALDIRECTION_TYPES; ++iI)
 	{
-		pAdjacentPlot = plotCardinalDirection(getX_INLINE(), getY_INLINE(), ((CardinalDirectionTypes)iI));
+		const CvPlot* const pAdjacentPlot = plotCardinalDirection(getX_INLINE(), getY_INLINE(), ((CardinalDirectionTypes)iI));
 		if(pAdjacentPlot != NULL)
 		{
 			if(pAdjacentPlot->isImpassable() || (area() != pAdjacentPlot->area()))
@@ -3120,7 +3114,7 @@ void CvPlot::setCanalValue(int iNewValue)
 void CvPlot::calculateCanalValue()
 {
 	bool bInWaterSection;
-	CvPlot *pAdjacentPlot, *apPlotsToCheck[4];
+	CvPlot *apPlotsToCheck[4];
 	int iWaterSections, iPlotsFound, iMaxDistance;
 	int iCanalValue = 0;
 
@@ -3135,7 +3129,7 @@ void CvPlot::calculateCanalValue()
 			// Find appropriate plots to be used for path distance calculations
 			for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
 			{
-				pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+				CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
 				if(pAdjacentPlot != NULL)
 				{
 					if(pAdjacentPlot->isWater())
@@ -3212,7 +3206,7 @@ void CvPlot::setChokeValue(int iNewValue)
 void CvPlot::calculateChokeValue()
 {
 	bool bInPassableSection;
-	CvPlot *pAdjacentPlot, *apPlotsToCheck[4];
+	CvPlot *apPlotsToCheck[4];
 	int iPassableSections, iPlotsFound, iMaxDistance;
 	int iChokeValue = 0;
 	bool bWater = isWater();
@@ -3228,7 +3222,7 @@ void CvPlot::calculateChokeValue()
 			// Find appropriate plots to be used for path distance calculations
 			for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
 			{
-				pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+				CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
 				if(pAdjacentPlot != NULL)
 				{
 					if(pAdjacentPlot->isWater() == bWater)
@@ -3296,18 +3290,16 @@ void CvPlot::calculateChokeValue()
 
 int CvPlot::defenseModifier(TeamTypes eDefender, bool bHelp) const
 {
-	CvCity* pCity;
-	ImprovementTypes eImprovement;
-	int iModifier;
-
 	FAssertMsg(getTerrainType() != NO_TERRAIN, CvString::format("Plot(%d,%d) TerrainType is not assigned a valid value", getX_INLINE(), getY_INLINE()));
 
-	iModifier = ((getFeatureType() == NO_FEATURE) ? GC.getTerrainInfo(getTerrainType()).getDefenseModifier() : GC.getFeatureInfo(getFeatureType()).getDefenseModifier());
+	int iModifier = ((getFeatureType() == NO_FEATURE) ? GC.getTerrainInfo(getTerrainType()).getDefenseModifier() : GC.getFeatureInfo(getFeatureType()).getDefenseModifier());
 
 	if (isHills() || isPeak())
 	{
 		iModifier += GC.getHILLS_EXTRA_DEFENSE();
 	}
+
+	ImprovementTypes eImprovement;
 
 	if (bHelp)
 	{
@@ -3331,7 +3323,7 @@ int CvPlot::defenseModifier(TeamTypes eDefender, bool bHelp) const
 
 	if (!bHelp)
 	{
-		pCity = getPlotCity();
+		const CvCity* const pCity = getPlotCity();
 
 		if (pCity != NULL)
 		{
@@ -3590,12 +3582,9 @@ bool CvPlot::isAdjacentOwned() const
 
 bool CvPlot::isAdjacentPlayer(PlayerTypes ePlayer, bool bLandOnly) const
 {
-	CvPlot* pAdjacentPlot;
-	int iI;
-
-	for (iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
 	{
-		pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+		const CvPlot* const pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
 
 		if (pAdjacentPlot != NULL)
 		{
@@ -3615,12 +3604,9 @@ bool CvPlot::isAdjacentPlayer(PlayerTypes ePlayer, bool bLandOnly) const
 
 bool CvPlot::isAdjacentTeam(TeamTypes eTeam, bool bLandOnly) const
 {
-	CvPlot* pAdjacentPlot;
-	int iI;
-
-	for (iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
 	{
-		pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+		const CvPlot* const pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
 
 		if (pAdjacentPlot != NULL)
 		{
