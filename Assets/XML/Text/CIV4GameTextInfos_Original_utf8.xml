@@ -4088,6 +4088,7 @@
         <German>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] zur Auswahl aller Einheiten)</German>
         <Italian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] per selezionare tutte le unità)</Italian>
         <Spanish>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] para seleccionar todas las unidades)</Spanish>
+        <Russian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] для выбора всех юнитов)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CTRL_SHIFT</Tag>
@@ -8410,6 +8411,7 @@
         <German>Einheitenstapel (%d1) :</German>
         <Italian>Gruppo unità (%d1) :</Italian>
         <Spanish>Apilamiento (%d1) :</Spanish>
+        <Russian>Группа юнитов (%d1) :</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAN_MOVE_IMPASSABLE</Tag>

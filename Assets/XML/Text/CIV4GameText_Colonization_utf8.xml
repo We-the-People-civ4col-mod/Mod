@@ -443,6 +443,7 @@
         <German>[COLOR_UNIT_TEXT]%s1_unitType[COLOR_REVERT] werden.</German>
         <Italian>Diventa [COLOR_UNIT_TEXT]%s1_unitType[COLOR_REVERT]</Italian>
         <Spanish>Convertir en [COLOR_UNIT_TEXT]%s1_unitType[COLOR_REVERT].</Spanish>
+        <Russian>Стать [COLOR_UNIT_TEXT]%s1_unitType[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_YIELD_HEADING</Tag>

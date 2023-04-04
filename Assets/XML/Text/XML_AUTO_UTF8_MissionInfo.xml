@@ -135,6 +135,7 @@
         <German>Die Einheit bleibt inaktiv, bis sie wieder ihre volle Kampfstärke erreicht hat</German>
         <Italian>L'unità rimane inattiva finché non ritorna al massimo delle forze.</Italian>
         <Spanish>La unidad permanecerá inactiva hasta que recobre el total de su fuerza.</Spanish>
+        <Russian>Юнит остается неактивным, пока полностью не восстановит здоровье.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_IDLE</Tag>
