@@ -2919,9 +2919,14 @@ int CvCity::growthThreshold() const
 	// WTP, ray, for safety
 	if (iTotalModifier > 50)
 	{
-		iTotalModifier = 75;
+		iTotalModifier = 50;
 	}
-
+	
+	if (iTotalModifier < -50)
+	{
+		iTotalModifier = -50;
+	}
+	
 	return ((GET_PLAYER(getOwnerINLINE()).getGrowthThreshold(getPopulation()) * (100 - iTotalModifier)) / 100);
 }
 
