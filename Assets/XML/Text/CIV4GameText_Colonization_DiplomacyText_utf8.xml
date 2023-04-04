@@ -4342,6 +4342,12 @@
         <Russian>[COLOR_HIGHLIGHT_TEXT]%s1:3[COLOR_REVERT] угрожают спокойствию во всем мире. Мы должны остановить их, пока не случилось что-то плохое. Ты с нами, [CT_NAME]?</Russian>
     </TEXT>
     <TEXT>
+        <Tag>AI_DIPLO_JOIN_WAR_KING_VS_COLONY</Tag>
+        <English>The illoyal [COLOR_HIGHLIGHT_TEXT]%s1:3[COLOR_REVERT] colonies threaten the god given order of this world. By declaring their independence they have turned against us, their righteous Monarch. Now they bring oppression and misery to their neighbours that still stand loyally the crown. They even dare to kill royal soldiers that were sent to protect them. [CT_NAME], will you stand with us to end this incacceptable insubordination and to bring back peace and stability to the colonies?</English>
+        <German>Die illoyalen [COLOR_HIGHLIGHT_TEXT]%s1:3[COLOR_REVERT] Kolonien bedrohen die durch Gott gegebene Ordnung dieser Welt. Indem sie ihre Unabhängigkeit erklärt haben, haben sie sich gegen Uns, ihren rechtmäßigen Monarchen, gewendet. Nun bringen sie ihren Nachbarn, die immer noch loyal zur Krone stehen, Unterdrückung und Leid. Sie wagen es sogar königliche Soldaten zu töten, die zu deren Schutz geschickt wurden. [CT_NAME], werdet ihr uns beistehen um diesen Ungehorsam zu beenden und wieder Frieden und Stabilität in die Kolonien zu bringen?</German>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1:3[COLOR_REVERT] угрожают спокойствию во всем мире. Мы должны остановить их, пока не случилось что-то плохое. Ты с нами, [CT_NAME]?</Russian>
+    </TEXT>
+    <TEXT>
         <Tag>AI_DIPLO_STOP_TRADING_1</Tag>
         <English>You have opened your borders to the [COLOR_HIGHLIGHT_TEXT]%s1:2[COLOR_REVERT] people? Don't you know their men are devious, their women immoral, and their children soulless? Expel these creatures from your land!</English>
         <French>C'est intolérable. Nous vous demandons d'annuler immédiatement tous vos accords avec les méprisables [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] !</French>

@@ -10047,6 +10047,48 @@
             <Responses>
                 <Response>
                     <Civilizations/>
+                    <Leaders>
+                        <Leader>
+                            <LeaderType>LEADER_ENGLISH_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                        <Leader>
+                            <LeaderType>LEADER_FRENCH_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                        <Leader>
+                            <LeaderType>LEADER_SPANISH_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                        <Leader>
+                            <LeaderType>LEADER_DUTCH_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                        <Leader>
+                            <LeaderType>LEADER_PORTUGUESE_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                        <Leader>
+                            <LeaderType>LEADER_DANISH_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                        <Leader>
+                            <LeaderType>LEADER_SWEDISH_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                        <Leader>
+                            <LeaderType>LEADER_RUSSIAN_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                    </Leaders>
+                    <Attitudes/>
+                    <DiplomacyPowers/>
+                    <DiplomacyText>
+                        <Text>AI_DIPLO_JOIN_WAR_KING_VS_COLONY</Text>
+                    </DiplomacyText>
+                </Response>
+                <Response>
+                    <Civilizations/>
                     <Leaders/>
                     <Attitudes/>
                     <DiplomacyPowers/>
