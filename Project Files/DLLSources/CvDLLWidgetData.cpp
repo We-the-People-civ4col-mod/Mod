@@ -146,6 +146,24 @@ void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, CvWidgetDataStruct &w
 		break;
 	// R&R, Robert Surcouf, Custom House Popup-Screen END
 
+	case WIDGET_MOVE_CARGO_TO_CITY:
+		{
+			CvCity* pCity = gDLL->getInterfaceIFace()->getHeadSelectedCity();
+			if (pCity == NULL || pCity->getOwnerINLINE() != GC.getGameINLINE().getActivePlayer())
+			{
+				break;
+			}
+			int iUnitId = widgetDataStruct.m_iData2;
+			CvUnit* pUnit = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getUnit(iUnitId);
+			if (pUnit == NULL || pUnit->isGoods())
+			{
+				break;
+			}
+			widgetDataStruct.m_iData1 = widgetDataStruct.m_iData2;
+			widgetDataStruct.m_iData2 = 1;
+		}
+		// fallthrough 
+
 	case WIDGET_EJECT_CITIZEN:
 		parseEjectCitizenHelp(widgetDataStruct, szBuffer);
 		break;
@@ -796,6 +814,26 @@ bool CvDLLWidgetData::executeDoubleClick(const CvWidgetDataStruct& widgetDataStr
 	case WIDGET_CITIZEN:
 		doDoubleClickCitizen(widgetDataStruct);
 		break;
+
+	case WIDGET_MOVE_CARGO_TO_CITY:
+	{
+		CvCity* pCity = gDLL->getInterfaceIFace()->getHeadSelectedCity();
+		if (pCity == NULL || pCity->getOwnerINLINE() != GC.getGameINLINE().getActivePlayer())
+		{
+			break;
+		}
+		int iUnitId = widgetDataStruct.m_iData2;
+		CvUnit* pUnit = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getUnit(iUnitId);
+		if (pUnit == NULL || pUnit->isGoods())
+		{
+			break;
+		}
+		CvWidgetDataStruct widgetDataStructModified = widgetDataStruct;
+		widgetDataStructModified.m_iData1 = widgetDataStruct.m_iData2;
+		widgetDataStructModified.m_iData2 = 1;
+		doDoubleClickGarrison(widgetDataStructModified);
+		break;
+	}
 
 	case WIDGET_EJECT_CITIZEN:
 		doDoubleClickGarrison(widgetDataStruct);
