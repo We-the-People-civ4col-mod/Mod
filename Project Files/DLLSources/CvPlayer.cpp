@@ -24184,49 +24184,54 @@ void CvPlayer::checkForColonialAndNativeAlliesWar()
 	// but is not at war with us or the Colonial Player
 	PlayerTypes eFirstNativeDiploPlayer = NO_PLAYER;
 
-	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
 	{
-		CvPlayer& kFirstNativePlayer = GET_PLAYER((PlayerTypes) iPlayer);
-		CvPlayer& kColonialPlayer = GET_PLAYER((PlayerTypes) eColonialPlayerAtWarWith);
+		CvPlayer& kFirstNativePlayer = GET_PLAYER(ePlayer);
+		CvPlayer& kColonialPlayer = GET_PLAYER(eColonialPlayerAtWarWith);
 		if (kFirstNativePlayer.isAlive() && kFirstNativePlayer.isNative() && !GET_TEAM(kFirstNativePlayer.getTeam()).isAtWar(getTeam()) && !GET_TEAM(kFirstNativePlayer.getTeam()).isAtWar(kColonialPlayer.getTeam()))
 		{
 			if (kFirstNativePlayer.canContact((PlayerTypes) getID()) && kFirstNativePlayer.canContact(eColonialPlayerAtWarWith))
 			{
 				// we also check attitudes, Native should like us and not like other Colonial AI
-				bool bFirstNativePlayerLikesUs = kFirstNativePlayer.AI_getAttitude((PlayerTypes) getID(), false) >= ATTITUDE_CAUTIOUS;
-				bool bFirstNativePlayerDislikesEnemy = kFirstNativePlayer.AI_getAttitude((PlayerTypes) kColonialPlayer.getID(), false) <= ATTITUDE_CAUTIOUS;
+				bool bFirstNativePlayerLikesUs = kFirstNativePlayer.AI_getAttitude(getID(), false) >= ATTITUDE_CAUTIOUS;
+				bool bFirstNativePlayerDislikesEnemy = kFirstNativePlayer.AI_getAttitude(kColonialPlayer.getID(), false) <= ATTITUDE_CAUTIOUS;
 				if (bFirstNativePlayerLikesUs && bFirstNativePlayerDislikesEnemy)
 				{
-					eFirstNativeDiploPlayer = (PlayerTypes) iPlayer;
+					eFirstNativeDiploPlayer = ePlayer;
 					break;
 				}
 			}
 		}
 	}
 
+	if (eFirstNativeDiploPlayer == NO_PLAYER)
+	{
+		return;
+	}
+
 	// now we need to find the second Native Player that knows both us and the Colonial Player
 	// but is not at war with us or the Colonial Player
 	PlayerTypes eSecondNativeDiploPlayer = NO_PLAYER;
 
-	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
 	{
 		// it must be a different one than the first Native Player of course
-		if ((PlayerTypes) iPlayer != eFirstNativeDiploPlayer)
+		if (ePlayer != eFirstNativeDiploPlayer)
 		{
-			CvPlayer& kSecondNativePlayer = GET_PLAYER((PlayerTypes) iPlayer);
-			CvPlayer& kFirstNativePlayerToCompare = GET_PLAYER((PlayerTypes) eFirstNativeDiploPlayer);
-			CvPlayer& kColonialPlayer = GET_PLAYER((PlayerTypes) eColonialPlayerAtWarWith);
+			CvPlayer& kSecondNativePlayer = GET_PLAYER(ePlayer);
+			CvPlayer& kFirstNativePlayerToCompare = GET_PLAYER(eFirstNativeDiploPlayer);
+			CvPlayer& kColonialPlayer = GET_PLAYER(eColonialPlayerAtWarWith);
 			// here we also check that the 2 Native Players are not at war
 			if (kSecondNativePlayer.isAlive() && kSecondNativePlayer.isNative() && !GET_TEAM(kSecondNativePlayer.getTeam()).isAtWar(getTeam()) && !GET_TEAM(kSecondNativePlayer.getTeam()).isAtWar(kColonialPlayer.getTeam()) && !GET_TEAM(kSecondNativePlayer.getTeam()).isAtWar(kFirstNativePlayerToCompare.getTeam()))
 			{
 				// we check if all of the players at least know each other - chances are high that they are on the same continent then
-				if (kSecondNativePlayer.canContact((PlayerTypes) getID()) && kSecondNativePlayer.canContact(eColonialPlayerAtWarWith) && kSecondNativePlayer.canContact(eFirstNativeDiploPlayer))
+				if (kSecondNativePlayer.canContact(getID()) && kSecondNativePlayer.canContact(eColonialPlayerAtWarWith) && kSecondNativePlayer.canContact(eFirstNativeDiploPlayer))
 				{
 					// here we also check attitudes but jus for our own, the other Native AI should not like us, max cautious
-					bool bSecondNativePlayerDisklikesUs = kSecondNativePlayer.AI_getAttitude((PlayerTypes) getID(), false) <= ATTITUDE_CAUTIOUS;
+					bool bSecondNativePlayerDisklikesUs = kSecondNativePlayer.AI_getAttitude(getID(), false) <= ATTITUDE_CAUTIOUS;
 					if (bSecondNativePlayerDisklikesUs)
 					{
-						eSecondNativeDiploPlayer = (PlayerTypes) iPlayer;
+						eSecondNativeDiploPlayer = ePlayer;
 						break;
 					}
 				}
@@ -24235,7 +24240,7 @@ void CvPlayer::checkForColonialAndNativeAlliesWar()
 	}
 
 	// we stop if we did not find 2 suitable Native Players
-	if (eFirstNativeDiploPlayer == NO_PLAYER || eSecondNativeDiploPlayer == NO_PLAYER)
+	if (eSecondNativeDiploPlayer == NO_PLAYER)
 	{
 		return;
 	}
