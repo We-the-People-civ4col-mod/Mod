@@ -128,6 +128,7 @@ class CvDomesticAdvisor:
 		# Button generation
 		
 		self.GAME_FONT_STATE = -1
+		self.TERRAIN_STATE = -1
 		
 		self.GENERAL_STATE            = self.addButton("GeneralState",           "INTERFACE_CITY_MAP_BUTTON")
 		self.DOMESTIC_DEMAND_STATE    = self.addButton("DomesticDemandState",    "INTERFACE_DOMESTIC_DEMAND_BUTTON"  , DomesticDemandAdvisor.DomesticDemandAdvisor(self))
