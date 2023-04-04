@@ -1,7 +1,6 @@
 Version=11
 BeginGame
 	Description=TXT_KEY_WORLDBUILDER_NORTH_AMERICA_DESC
-	Victory=VICTORY_REVOLUTION
 	ModPath=
 	WBNorthAmericanNative=1
 	WBSouthAmericanNative=0
