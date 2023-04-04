@@ -1,18 +1,5 @@
 Version=11
 BeginGame
-	Era=ERA_DISCOVERY
-	Speed=GAMESPEED_TAC_MARATHON
-	Calendar=CALENDAR_DEFAULT
-	Option=GAMEOPTION_NEW_RANDOM_SEED
-	Option=GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE
-	Victory=VICTORY_REVOLUTION
-	Victory=VICTORY_DOMINATION
-	GameTurn=0
-	MaxTurns=0
-	MaxCityElimination=0
-	NumAdvancedStartPoints=720
-	TargetScore=0
-	StartYear=1492
 	Description=TXT_KEY_WORLDBUILDER_RAR_AMERICAS_GIGANTIC_RANDOM
 	ModPath=
 	WBNorthAmericanNative=1
