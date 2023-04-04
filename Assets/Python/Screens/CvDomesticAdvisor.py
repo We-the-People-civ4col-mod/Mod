@@ -155,6 +155,13 @@ class CvDomesticAdvisor:
 		
 		self.YieldPages = set([self.WAREHOUSE_STATE])
 		
+		
+		spaceForButtons = self.nScreenWidth - (self.X_EXIT - self.nScreenWidth)
+		spaceForButtons -= 150 # making room for the exit text as it's right aligned
+		spaceForEachButton = spaceForButtons // len(self.StateButtons)
+		if spaceForEachButton < self.iButtonSpacing:
+			self.iButtonSpacing = spaceForEachButton
+		
 		## R&R, Robert Surcouf,  Domestic Advisor Screen START
 		
 		# Exra left/right arrow buttons (big ones)... (2)
@@ -288,10 +295,10 @@ class CvDomesticAdvisor:
 					screen.setImageButton("HighlightButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_HIGHLIGHTED_BUTTON").getPath(), (self.iButtonSpacing * iState) + (self.iButtonSpacing / 2) - ((self.iButtonSize * RelativeButtonSize / 100) / 2) + (self.iButtonSize / 2), self.Y_LOWER_ROW - ((self.iButtonSize * RelativeButtonSize / 100) / 2) + (self.iButtonSize / 2), self.iButtonSize * RelativeButtonSize / 100, self.iButtonSize * RelativeButtonSize / 100, WidgetTypes.WIDGET_GENERAL, iState, -1 )
 				
 				
-				# auto-generated list creation - Nightinggale
-				# Added hardcoded button values 100 and 102
-				screen.setImageButton("MainLeftButton", ArtFileMgr.getInterfaceArtInfo(self.StateButtons[len(self.StateButtons)-2]).getPath(), 15, 20, 2*self.iButtonSize/3, 2*self.iButtonSize/3, WidgetTypes.WIDGET_GENERAL, 100, -1 )
-				screen.setImageButton("MainRightButton", ArtFileMgr.getInterfaceArtInfo(self.StateButtons[len(self.StateButtons)-1]).getPath(), self.nScreenWidth -50, 20, 2*self.iButtonSize/3, 2*self.iButtonSize/3, WidgetTypes.WIDGET_GENERAL, 102, -1 )
+		# auto-generated list creation - Nightinggale
+		# Added hardcoded button values 100 and 102
+		screen.setImageButton("MainLeftButton", ArtFileMgr.getInterfaceArtInfo(self.StateButtons[len(self.StateButtons)-2]).getPath(), 15, 20, 2*self.iButtonSize/3, 2*self.iButtonSize/3, WidgetTypes.WIDGET_GENERAL, 100, -1 )
+		screen.setImageButton("MainRightButton", ArtFileMgr.getInterfaceArtInfo(self.StateButtons[len(self.StateButtons)-1]).getPath(), self.nScreenWidth -50, 20, 2*self.iButtonSize/3, 2*self.iButtonSize/3, WidgetTypes.WIDGET_GENERAL, 102, -1 )
 			## R&R, Robert Surcouf,  Domestic Advisor Screen END
 	# Function to draw the contents of the cityList passed in
 	def drawContents (self):
