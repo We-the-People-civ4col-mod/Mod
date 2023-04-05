@@ -7349,7 +7349,7 @@
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLADES_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the dominant market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
-        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Порт Ройал.</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_BLADES_FAILED</Tag>
@@ -7361,967 +7361,939 @@
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLADES_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
-        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Порт Ройал!</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SAILCLOTH_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]парусины[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]парусины[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SAILCLOTH_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the dominant market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]парусины[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_SAILCLOTH_FAILED</Tag>
         <English>Milord, another colonial nation has cornered the market in the colonies for [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]парусины[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]парусины[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CANNONS_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CANNONS_DONE</Tag>
         <English>Milord, we have managed to become the leading trader in [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CANNONS_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_CANNONS_FAILED</Tag>
         <English>Milord, another colonial nation has cornered the colonial market for [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CANNONS_DONE</Tag>
         <English>Milord, we have managed to dominate trading in [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GUNS_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]guns[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Musketen[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GUNS_DONE</Tag>
         <English>Milord, we now dominate the trade in [COLOR_FONT_GOLD]guns[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Musketen[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GUNS_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]guns[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Musketen[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.
+</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_GUNS_FAILED</Tag>
         <English>Milord, another colonial nation has managed to corner the market in the colonies for [COLOR_FONT_GOLD]guns[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Musketen[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GUNS_DONE</Tag>
         <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]guns[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Musketen[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_ROPES_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]ropes[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Seile[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]канатов[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_ROPES_DONE</Tag>
         <English>Milord, we are now the leader trading in [COLOR_FONT_GOLD]ropes[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Seile[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]канатов[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_ROPES_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]ropes[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Seile[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]канатов[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_ROPES_FAILED</Tag>
         <English>Milord, another colonial nation has cornered the market in the colonies for [COLOR_FONT_GOLD]ropes[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Seile[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]канатов[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_ROPES_DONE</Tag>
         <English>Milord, we have managed to become dominant in the trade of [COLOR_FONT_GOLD]ropes[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Seile[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]канатов[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CIGARS_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]cigars[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]сигар[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CIGARS_DONE</Tag>
         <English>Milord, we are now dominant in the trade of [COLOR_FONT_GOLD]cigars[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]сигар[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CIGARS_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]cigars[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]сигар[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_CIGARS_FAILED</Tag>
         <English>Milord, another colonial nation has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]cigars[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]сигар[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CIGARS_DONE</Tag>
         <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]cigars[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]сигар[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SPICES_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]spices[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Gewürze[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]специй[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SPICES_DONE</Tag>
         <English>Milord, we are now the leader in the trade of [COLOR_FONT_GOLD]spices[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Gewürze[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]специй[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SPICES_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]spices[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Gewürze[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]специй[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.
+</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_SPICES_FAILED</Tag>
         <English>Milord, another colonial nation has succeeded in cornering the colonial market for [COLOR_FONT_GOLD]spices[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Gewürze[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]специй[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SPICES_DONE</Tag>
         <English>Milord, we have managed to become dominant in the trade of [COLOR_FONT_GOLD]spices[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Gewürze[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]специй[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SILVER_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]silver[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Silber[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]серебра[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SILVER_DONE</Tag>
         <English>Milord, we now are on top of the [COLOR_FONT_GOLD]silver[COLOR_REVERT] trade from Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Silber[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]серебра[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SILVER_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]silver[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Silber[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]серебра[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_SILVER_FAILED</Tag>
         <English>Milord, another colonial nation has cornered the colonial market for [COLOR_FONT_GOLD]silver[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Silber[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]серебра[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SILVER_DONE</Tag>
         <English>Milord, we are now first in the [COLOR_FONT_GOLD]silver[COLOR_REVERT] trade from Port Royal. The Captains Council of Port Royal is enjoying his profits.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Silber[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]серебра[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SALT_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]salt[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Salz[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]соли[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SALT_DONE</Tag>
         <English>Milord, we have managed to become the leader in the Port Royal [COLOR_FONT_GOLD]salt[COLOR_REVERT] trade.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Salz[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]соли[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SALT_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]salt[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the dominant market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Salz[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]соли[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_SALT_FAILED</Tag>
         <English>Milord, another colonial nation has succeeded in cornering the market in the colonies for Port Royal [COLOR_FONT_GOLD]salt[COLOR_REVERT].</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Salz[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]соли[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SALT_DONE</Tag>
         <English>Milord, we have managed to become the leader trading in [COLOR_FONT_GOLD]salt[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is well pleased.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Salz[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]соли[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_RUM_START</Tag>
         <English>The race to dominate the market in the colonies for Port Royal [COLOR_FONT_GOLD]rum[COLOR_REVERT] has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Rum[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]рома[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_RUM_DONE</Tag>
         <English>Milord, we now dominate the Port Royal [COLOR_FONT_GOLD]rum[COLOR_REVERT] trade.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Rum[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]рома[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_RUM_START</Tag>
         <English>Our colonists are thrilled with the first shipments of Port Royal [COLOR_FONT_GOLD]rum[COLOR_REVERT]. The Captains Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Rum[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]рома[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_RUM_FAILED</Tag>
         <English>Milord, another colonial nation has cornered the colonial market for Port Royal [COLOR_FONT_GOLD]rum[COLOR_REVERT].</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Rum[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]рома[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_RUM_DONE</Tag>
         <English>Milord, we are now the leader in the Port Royal [COLOR_FONT_GOLD]rum[COLOR_REVERT] market. The Captains Council of Port Royal shows his pleasure.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Rum[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]рома[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GOLD_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]gold[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Gold[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]золота[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GOLD_DONE</Tag>
         <English>Milord, we have managed to dominate trading in [COLOR_FONT_GOLD]gold[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Gold[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]золота[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GOLD_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]gold[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Gold[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]золота[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_GOLD_FAILED</Tag>
         <English>Milord, another colonial nation has cornered the market in the colonies for [COLOR_FONT_GOLD]gold[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Gold[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]золота[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GOLD_DONE</Tag>
         <English>Milord, we now lead trading in [COLOR_FONT_GOLD]gold[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is delighted.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Gold[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]золота[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GEMS_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]gems[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GEMS_DONE</Tag>
         <English>Milord, we have managed to become the leader trading [COLOR_FONT_GOLD]gems[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GEMS_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]gems[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_GEMS_FAILED</Tag>
         <English>Milord, another colonial nation has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]gems[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GEMS_DONE</Tag>
         <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]gems[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is very happy.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]furniture[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]мебели[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_DONE</Tag>
         <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]furniture[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]мебели[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]furniture[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]мебели[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_FAILED</Tag>
         <English>Milord, another colonial nation has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]furniture[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]мебели[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_DONE</Tag>
         <English>Milord, we have managed to become dominant in the trade of [COLOR_FONT_GOLD]furniture[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]мебели[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]coffee[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]кофе[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_DONE</Tag>
         <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]coffee[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кофе[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_START</Tag>
         <English>Our colonists are enjoying the first shipments of [COLOR_FONT_GOLD]coffee[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]кофе[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_COFFEE_FAILED</Tag>
         <English>Milord, another colonial nation has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]coffee[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]кофе[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]coffee[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal finds himself energized.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]кофе[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCOA_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]cocoa[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]какао[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCOA_DONE</Tag>
         <English>Milord, we have managed to become the leader in the Port Royal [COLOR_FONT_GOLD]cocoa[COLOR_REVERT] trade.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]какао[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCOA_START</Tag>
         <English>Our colonists are enjoying the first shipments of [COLOR_FONT_GOLD]cocoa[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]какао[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_COCOA_FAILED</Tag>
         <English>Milord, another colonial nation has cornered the colonial market for Port Royal [COLOR_FONT_GOLD]cocoa[COLOR_REVERT].</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]какао[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCOA_DONE</Tag>
         <English>Milord, we are now the leader in the Port Royal [COLOR_FONT_GOLD]cocoa[COLOR_REVERT] trade. The Captains Council of Port Royal is quite pleased.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]какао[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE</Tag>
         <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Tag>
         <English>Our colonists work tirelessly following the first shipments of [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_FAILED</Tag>
         <English>Milord, another colonial nation has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE</Tag>
         <English>Milord, we have managed to dominate the trade in [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is excited.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
-        <Russian>йцукен</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CIGARS_START</Tag>
-        <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]cigars[COLOR_REVERT] with Port Royal has begun.</English>
-        <German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CIGARS_DONE</Tag>
-        <English>Milord, we have managed to become the leader in the market for [COLOR_FONT_GOLD]cigars[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CIGARS_START</Tag>
-        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]cigars[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become dominant.</English>
-        <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
-        <Russian>йцукен</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_CIGARS_FAILED</Tag>
-        <English>Milord, another colonial nation has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]cigars[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CIGARS_DONE</Tag>
-        <English>Milord, we are now the leader in the trade of [COLOR_FONT_GOLD]cigars[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is quite content.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_WINE_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]wine[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Wein[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]вина[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_WINE_DONE</Tag>
         <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]wine[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Wein[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]вина[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_WINE_START</Tag>
         <English>Our colonists are giddy with the first shipments of [COLOR_FONT_GOLD]wine[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Wein[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]вина[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_WINE_FAILED</Tag>
         <English>Milord, another colonial nation has succeeded in cornering the colonial market for Port Royal [COLOR_FONT_GOLD]wine[COLOR_REVERT].</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Wein[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]вина[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_WINE_DONE</Tag>
         <English>Milord, we have managed to become dominant in the Port Royal [COLOR_FONT_GOLD]wine[COLOR_REVERT] trade. The Captains Council of Port Royal is happy and relaxed.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Wein[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]вина[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_HARDWOOD_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_HARDWOOD_DONE</Tag>
         <English>Milord, we are now the leader in the Port Royal [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] trade.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_HARDWOOD_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] with Port Royal.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Port Royal begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_HARDWOOD_FAILED</Tag>
         <English>Milord, another colonial nation has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_HARDWOOD_DONE</Tag>
         <English>Milord, we have managed to become dominant in the trade of [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FOOD_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]food[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FOOD_DONE</Tag>
         <English>Milord, we have managed to become the leader trading [COLOR_FONT_GOLD]food[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_FOOD_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]food[COLOR_REVERT] with Port Royal.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit Port Royal begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_FOOD_FAILED</Tag>
         <English>Milord, another colonial nation is the first to corner the market in the colonies for [COLOR_FONT_GOLD]food[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_FOOD_DONE</Tag>
         <English>Milord, we have managed to dominate the trade in [COLOR_FONT_GOLD]food[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_STONE_START</Tag>
-        <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]STONE[COLOR_REVERT] with Port Royal has begun.</English>
+        <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]stone[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Steine[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_STONE_DONE</Tag>
         <English>Milord, we are now the lead trader of [COLOR_FONT_GOLD]stone[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_STONE_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]stone[COLOR_REVERT] with Port Royal.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] mit Port Royal begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_STONE_FAILED</Tag>
         <English>Milord, another colonial nation is the first to corner the market in the colonies for [COLOR_FONT_GOLD]stone[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Steine[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_STONE_DONE</Tag>
         <English>Milord, we are now the lead trader of [COLOR_FONT_GOLD]stone[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]lumber[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]lumber[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]lumber[COLOR_REVERT] with Port Royal.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit Port Royal begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_LUMBER_FAILED</Tag>
         <English>Milord, another colonial nation is the first to corner the market in the colonies for [COLOR_FONT_GOLD]lumber[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_DONE</Tag>
         <English>Milord, we are now the lead trader in [COLOR_FONT_GOLD]lumber[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CLAY_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]clay[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]глины[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CLAY_DONE</Tag>
         <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]clay[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]глины[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CLAY_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]clay[COLOR_REVERT] with Port Royal.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Port Royal begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]глины[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_CLAY_FAILED</Tag>
         <English>Milord, another colonial nation is the first to corner the market in the colonies for [COLOR_FONT_GOLD]clay[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]глины[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CLAY_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]clay[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]глины[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]baked goods[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]хлебобулочных изделий[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE</Tag>
         <English>Milord, we are now the lead trader in [COLOR_FONT_GOLD]baked goods[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]хлебобулочных изделий[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]baked goods[COLOR_REVERT] with Port Royal.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]хлебобулочных изделий[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_FAILED</Tag>
         <English>Milord, another colonial nation is the first to corner the market in the colonies for [COLOR_FONT_GOLD]baked goods[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]хлебобулочных изделий[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE</Tag>
         <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]baked goods[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]хлебобулочных изделий[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BEER_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]beer[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]пива[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BEER_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]beer[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]пива[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BEER_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]beer[COLOR_REVERT] with Port Royal.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit Port Royal begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]пива[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_BEER_FAILED</Tag>
         <English>Milord, another colonial nation is the first to corner the market in the colonies for [COLOR_FONT_GOLD]beer[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]пива[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BEER_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]beer[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пива[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_HOOCH_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]fruit brandy[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_HOOCH_DONE</Tag>
         <English>W are now the top trader in [COLOR_FONT_GOLD]fruit brandy[COLOR_REVERT] from PortRoyal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_HOOCH_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]fruit brandy[COLOR_REVERT] with Port Royal.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Port Royal begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_HOOCH_FAILED</Tag>
         <English>Milord, another colonial nation is the first to corner the market in the colonies for [COLOR_FONT_GOLD]fruit brandy[COLOR_REVERT] from PortRoyal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_HOOCH_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]fruit brandy[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_YERBA_TEA_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]чая[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_YERBA_TEA_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]чая[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_YERBA_TEA_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Port Royal begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]чая[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_YERBA_TEA_FAILED</Tag>
         <English>Milord, another colonial nation is the first to corner the market in the colonies for [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]чая[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_YERBA_TEA_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]чая[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Port Royal.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Port Royal begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_BLACK_POWDER_FAILED</Tag>
         <English>Milord, another colonial nation is the first to corner the market in the colonies for [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
         <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_RICE_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]rice[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]риса[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_RICE_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]rice[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]риса[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_RICE_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]rice[COLOR_REVERT] with Port Royal.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Port Royal begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]риса[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_RICE_FAILED</Tag>
         <English>Milord, another colonial nation is the first to corner the market in the colonies for [COLOR_FONT_GOLD]rice[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]риса[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_RICE_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]rice[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]риса[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CASSAVA_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]cassava[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]маниоки[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CASSAVA_DONE</Tag>
         <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]cassava[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]маниоки[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CASSAVA_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]cassava[COLOR_REVERT] with Port Royal.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Port Royal begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]маниоки[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_CASSAVA_FAILED</Tag>
         <English>Milord, another colonial nation is the first to corner the market in the colonies for [COLOR_FONT_GOLD]cassava[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]маниоки[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CASSAVA_DONE</Tag>
         <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]cassava[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]маниоки[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_START</Tag>
         <English>We will fulfill the orders of His Majesty!</English>
         <German>Wir werden den Wünschen Seiner Majestät nachkommen!</German>
-        <Russian>йцукен</Russian>
+        <Russian>Мы выполним приказ Его Величества!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_1</Tag>
         <English>For the glory and wealth of our colonies! Gold, higher prices and even more prestige with His Majesty. It doesn't get any better than this!</English>
         <German>Für Ruhm und Reichtum unserer Kolonien! Gold, höhere Verkaufspreise und auch noch ein höheres Ansehen bei Seiner Majestät. Besser geht es fast nicht mehr!</German>
-        <Russian>йцукен</Russian>
+        <Russian>Во славу и богатство наших колоний! Золото, более высокие цены - в глазах Его Величества мы будем примером для в всех! Лучше этого и не придумать!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Tag>
         <English>For the glory and wealth of our colonies! The African natives are said to be hard workers!</English>
         <German>Für Ruhm und Reichtum unserer Kolonien! Die afikanischen Eingeborenen sollen sehr fleißig sein!</German>
-        <Russian>йцукен</Russian>
+        <Russian>Во славу и богатство наших колоний! Говорят, что аборигены Африки очень трудолюбивы. Мы проверим это на практике.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_3</Tag>
         <English>For the glory and wealth of our colonies! Aha, mulattos! Let's see what they're good for...</English>
         <German>Für Ruhm und Reichtum unserer Kolonien! Oha, Mulatten! Mal sehen, für was die gut sind...</German>
-        <Russian>йцукен</Russian>
+        <Russian>Во славу и богатство наших колоний! Мулаты. Посмотрим, на что они годятся...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_4</Tag>
         <English>For the Glory and Wealth of our colonies! Of course we need slave overseers!</English>
         <German>Für Ruhm und Reichtum unserer Kolonien! Natürlich brauchen wir Sklavenaufseher!</German>
-        <Russian>йцукен</Russian>
+        <Russian>Во славу и богатство наших колоний! Надсмоторщики за рабами пригодятся на наших плантациях.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_5</Tag>
         <English>For the glory and wealth of our colonies! Slave hunters will certainly be useful!</English>
         <German>Für Ruhm und Reichtum unserer Kolonien! Sklavenjäger könnten auch nützlich sein!</German>
-        <Russian>йцукен</Russian>
+        <Russian>Во славу и богатство наших колоний! Охотники за рабами наверняка пригодятся!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_6</Tag>
         <English>For the Glory and Wealth of our colonies! Capable field workers are always welcome!</English>
         <German>Für Ruhm und Reichtum unserer Kolonien! Fähige Feldarbeiter sind immer willkommen!</German>
-        <Russian>йцукен</Russian>
+        <Russian>Во славу и богатство наших колоний! Мы всегда рады умелым работникам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_7</Tag>
         <English>For the Glory and Wealth of our colonies! Finally we can safely ship our slaves to the New World!</English>
         <German>Für Ruhm und Reichtum unserer Kolonien! Endlich können wir unsere Sklaven sicher in die Neue Welt schippern!</German>
-        <Russian>йцукен</Russian>
+        <Russian>Во славу и богатство наших колоний! Наконец-то мы сможем безопасно переправить наших рабов в Новый Свет!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_YIELD_AND_TARGET_AMOUNT_HELP</Tag>
         <English>Trade this quantity of goods with Africa [COLOR_FONT_GOLD]before any other nation [COLOR_REVERT]can :[NEWLINE]%D1_amount %F2_yield</English>
         <German>Liefert die folgende Warenmenge nach Afrika [COLOR_FONT_GOLD]bevor es eine andere Nation [COLOR_REVERT]tut :[NEWLINE]%D1_amount %F2_yield</German>
-        <Russian>Купите или продайте товар в указанном количестве в Африке [COLOR_FONT_GOLD]прежде, чем другая нация сможет это [COLOR_REVERT]сделать первой :[NEWLINE]%D1_amount %F2_yield</Russian>
+        <Russian>Купите или продайте следующее количество товаров в Африке [COLOR_FONT_GOLD]прежде, чем другая нация сможет это[COLOR_REVERT] сделать первой :[NEWLINE]%D1_amount %F2_yield</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY</Tag>
         <English>Trade the following quantity of goods to the colonies [COLOR_FONT_GOLD]before any other nation [COLOR_REVERT]can :[NEWLINE]%D1_amount %F2_yield</English>
         <German>Liefert die folgende Warenmenge in die Kolonien [COLOR_FONT_GOLD]bevor es eine andere Nation [COLOR_REVERT]tut :[NEWLINE]%D1_amount %F2_yield</German>
-        <Russian>йцукен</Russian>
+        <Russian>Продайте в колониях следующее количество товаров из Африки [COLOR_FONT_GOLD]прежде, чем другая нация сможет это[COLOR_REVERT] сделать первой :[NEWLINE]%D1_amount %F2_yield</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_FOOD_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]food[COLOR_REVERT] with Africa has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Nahrung[COLOR_REVERT] mit Afrika hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_FOOD_DONE</Tag>
         <English>Milord, we now lead the trade in [COLOR_FONT_GOLD]food[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Nahrung[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_FOOD_START</Tag>
         <English>Our colonists welcome the first shipments of [COLOR_FONT_GOLD]food[COLOR_REVERT] with Africa.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Nahrung[COLOR_REVERT] mit Afrika begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] на рынки Африки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_FOOD_FAILED</Tag>
         <English>Milord, another colonial nation has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]food[COLOR_REVERT] with Africa.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Nahrung[COLOR_REVERT] mit Afrika zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_FOOD_DONE</Tag>
         <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]food[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Nahrung[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_LUMBER_START</Tag>
