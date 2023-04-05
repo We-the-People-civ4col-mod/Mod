@@ -41,7 +41,7 @@ CvReplayInfo::~CvReplayInfo()
 	{
 		SAFE_DELETE(m_listReplayMessages[i]);
 	}
-	SAFE_DELETE(m_pcMinimapPixels);
+	SAFE_DELETE_ARRAY(m_pcMinimapPixels);
 }
 
 void CvReplayInfo::createInfo(PlayerTypes ePlayer)
@@ -174,7 +174,7 @@ void CvReplayInfo::createInfo(PlayerTypes ePlayer)
 	m_iMapWidth = GC.getMapINLINE().getGridWidthINLINE();
 	m_iMapHeight = GC.getMapINLINE().getGridHeightINLINE();
 
-	SAFE_DELETE(m_pcMinimapPixels);
+	SAFE_DELETE_ARRAY(m_pcMinimapPixels);
 	m_pcMinimapPixels = new unsigned char[m_nMinimapSize];
 
 	void *ptexture = (void*)gDLL->getInterfaceIFace()->getMinimapBaseTexture();
@@ -652,7 +652,7 @@ bool CvReplayInfo::read(FDataStreamBase& stream)
 		}
 		stream.Read(&m_iMapWidth);
 		stream.Read(&m_iMapHeight);
-		SAFE_DELETE(m_pcMinimapPixels);
+		SAFE_DELETE_ARRAY(m_pcMinimapPixels);
 		m_pcMinimapPixels = new unsigned char[m_nMinimapSize];
 		stream.Read(m_nMinimapSize, m_pcMinimapPixels);
 		stream.Read(&m_bMultiplayer);
