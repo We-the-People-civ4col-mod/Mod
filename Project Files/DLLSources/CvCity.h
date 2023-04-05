@@ -224,7 +224,7 @@ public:
 	}
 	bool at(int iX, int iY) const;
 	bool at(Coordinates coord) const;
-	bool at(CvPlot* pPlot) const;
+	bool at(const CvPlot* pPlot) const;
 	DllExport CvPlot* plot() const;
 	int getArea() const;
 	DllExport CvArea* area() const;
@@ -738,7 +738,7 @@ public:
 	int getPopulationUnitId(int iPlotIndex) const;
 	CvUnit* getPopulationUnitById(int iUnitId) const;
 	CvUnit* getPopulationUnitByIndex(int iUnitIndex) const;
-	int getPopulationUnitIndex(CvUnit *pUnit) const;
+	int getPopulationUnitIndex(const CvUnit& kUnit) const;
 	CvPlot* getPlotWorkedByUnit(const CvUnit* pUnit) const;
 	CvUnit* createYieldUnit(YieldTypes eYield, PlayerTypes ePlayer, int iYieldAmount);
 	UnitClassTypes getTeachUnitClass() const;
