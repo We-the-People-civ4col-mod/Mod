@@ -11973,7 +11973,6 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 	///Tk end
 
 	CvProfessionInfo& kNewProfession = GC.getProfessionInfo(eProfession);
-
 	CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
 
 	if (!kOwner.isProfessionValid(eProfession, getUnitType()))
@@ -12204,6 +12203,53 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 			//End TAC Whaling, ray
 		}
 	}
+
+	// WTP, ray, Barracks System, check if there is still enough Barracks Space - START
+	// Comment: I am afraid to damage AI logc thus I will only check this for Human
+	int iBarracksSpaceChangeByProfessionChange = kNewProfession.getBarracksSpaceNeededChange();
+	if (pPlot != NULL && isHuman() && iBarracksSpaceChangeByProfessionChange > 0)
+	{
+		// Case real City
+		if (pPlot->getImprovementType() == NO_IMPROVEMENT)
+		{
+			// this is only checked for Colonial Cities, Native Villages can always be entered
+			CvCity* pCity = pPlot->getPlotCity();
+			if (pCity != NULL)
+			{
+				// here we ensure we check this only for the Owner of the Unit being Owner of the City
+				if(!pCity->isNative() && pCity->getOwnerINLINE() == getOwnerINLINE())
+				{
+					// this is how much the Unit without a Profession needs
+					// but we do not need to calculate it because it will not change
+					// int iBarracksSpaceNeededByUnit = getUnitInfo().getBarracksSpaceNeeded();
+
+					int iCurrentBarracksSpaceNeededByProfession = 0; // default case for No Profession
+					if (getProfession() != NO_PROFESSION)
+					{
+						iCurrentBarracksSpaceNeededByProfession = GC.getProfessionInfo(getProfession()).getBarracksSpaceNeededChange();
+					}
+
+					// So when changing the profession the new value will be added and the old will be substracted
+					int iAdditionalBarracksSpaceNeededForProfession = iBarracksSpaceChangeByProfessionChange - iCurrentBarracksSpaceNeededByProfession;
+
+					// Caclulating free Barracks Space in City
+					int iBarracksSpaceMaxInCity = pPlot->getPlotCity()->getCityBarracksSpace();
+					int iBarracksSpaceUsedInCity = pPlot->getPlotCity()->getCityBarracksSpaceUsed();
+					int iBarracksSpaceAvailableInCity = iBarracksSpaceMaxInCity - iBarracksSpaceUsedInCity;
+
+					if (iAdditionalBarracksSpaceNeededForProfession > iBarracksSpaceAvailableInCity)
+					{
+						return false;
+					}
+				}
+			}
+		}
+
+		// Case "actAsCity" Improvement does not need to be considered - already caught otherwise
+		// Profession changes like this are not allowed outside Cities
+	}
+	// WTP, ray, Barracks System, check if there is still enough Barracks Space - END
+
 
 	return true;
 }
