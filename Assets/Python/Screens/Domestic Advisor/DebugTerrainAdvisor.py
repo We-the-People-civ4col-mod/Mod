@@ -34,3 +34,4 @@ class DebugTerrainAdvisor(BaseAdvisorWindow.BaseAdvisorWindow):
 	def createTableHeader(self):
 		self.tableManager.addHeaderTxt("Terrain", 200)
 		self.tableManager.addHeaderTxt("Count", 75)
+		self.tableManager.iRowHeight = 22
