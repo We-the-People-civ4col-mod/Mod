@@ -5252,6 +5252,90 @@ bool CvUnit::canUnload() const
 		}
 	}
 
+	// WTP, ray, Barracks System, check if there is still enough Barracks Space - START
+	// Comment: I am afraid to damage AI logc thus I will only check this for Human
+	if (GLOBAL_DEFINE_ENABLE_NEW_BARRACKS_SYSTEM && isHuman())
+	{
+		// Case real City
+		if (plot()->getImprovementType() == NO_IMPROVEMENT)
+		{
+			// this is only checked for Colonial Cities, Native Villages can always be entered
+			CvCity* pCity = plot()->getPlotCity();
+			if (pCity != NULL)
+			{
+				// here we ensure we check this only for the Owner of the Unit being Owner of the City
+				if(!pCity->isNative() && pCity->getOwnerINLINE() == getOwnerINLINE())
+				{
+					int iBarracksSpaceNeededByUnit = getUnitInfo().getBarracksSpaceNeeded();
+					if (getProfession() != NO_PROFESSION)
+					{
+						iBarracksSpaceNeededByUnit = GC.getProfessionInfo(getProfession()).getBarracksSpaceNeededChange();
+					}
+
+					// Caclulating free Barracks Space in City
+					int iBarracksSpaceMaxInCity = plot()->getPlotCity()->getCityBarracksSpace();
+					int iBarracksSpaceUsedInCity = plot()->getPlotCity()->getCityBarracksSpaceUsed();
+					int iBarracksSpaceAvailableInCity = iBarracksSpaceMaxInCity - iBarracksSpaceUsedInCity;
+
+					if (iBarracksSpaceNeededByUnit > iBarracksSpaceAvailableInCity)
+					{
+						return false;
+					}
+				}
+			}
+		}
+
+		// Case "actAsCity" Improvement - also considered as City
+		else
+		{
+			// just to ensure that something may be messed up in the future
+			bool bWeCheckAllowedUnitsOnPlot = (plot()->isFort() || plot()->isMonastery());
+			if (bWeCheckAllowedUnitsOnPlot)
+			{
+				int iBarracksSpaceNeededByUnit = getUnitInfo().getBarracksSpaceNeeded();
+				if (getProfession() != NO_PROFESSION)
+				{
+					iBarracksSpaceNeededByUnit += GC.getProfessionInfo(getProfession()).getBarracksSpaceNeededChange();
+				}
+
+				// we check how many Units that place would allow
+				int iImprovementBarracksSpace = GLOBAL_DEFINE_BASE_BARRACKS_SPACES_WITHOUT_BUILDINGS;
+				// it is the second level Improvement, so we double
+				if (GC.getImprovementInfo(plot()->getImprovementType()).getImprovementUpgrade() == NO_IMPROVEMENT)
+				{
+					iImprovementBarracksSpace = iImprovementBarracksSpace * 2;
+				}
+
+				// now we calculate how much is already used
+				int iImprovementBarracksSpaceUsed = 0;
+				for (int i = 0; i < plot()->getNumUnits(); ++i)
+				{
+					CvUnit* pLoopUnit = plot()->getUnitByIndex(i);
+					// we only count Land Units that can attack, civil Units are not considered
+					// we also not consider Units loaded on Ships
+					// we also not consider Units of other Nations
+					if (pLoopUnit != NULL && pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->canAttack() && pLoopUnit->getTransportUnit() == NULL && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
+					{
+						iImprovementBarracksSpaceUsed += pLoopUnit->getUnitInfo().getBarracksSpaceNeeded();
+						// we also need to consider Professions
+						if (pLoopUnit->getProfession() != NO_PROFESSION)
+						{
+							iImprovementBarracksSpaceUsed += GC.getProfessionInfo(pLoopUnit->getProfession()).getBarracksSpaceNeededChange();
+						}
+					}
+				}
+
+				// we now know how much is available
+				int iBarracksSpaceAvailable = iImprovementBarracksSpace - iImprovementBarracksSpaceUsed;
+				if (iBarracksSpaceNeededByUnit > iBarracksSpaceAvailable)
+				{
+					return false;
+				}
+			}
+		}
+	}
+	// WTP, ray, Barracks System, check if there is still enough Barracks Space - END
+
 	return true;
 }
 
@@ -12223,7 +12307,7 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 	// WTP, ray, Barracks System, check if there is still enough Barracks Space - START
 	// Comment: I am afraid to damage AI logc thus I will only check this for Human
 	int iBarracksSpaceChangeByProfessionChange = kNewProfession.getBarracksSpaceNeededChange();
-	if (pPlot != NULL && isHuman() && iBarracksSpaceChangeByProfessionChange > 0)
+	if (GLOBAL_DEFINE_ENABLE_NEW_BARRACKS_SYSTEM && pPlot != NULL && isHuman() && iBarracksSpaceChangeByProfessionChange > 0)
 	{
 		// Case real City
 		if (pPlot->getImprovementType() == NO_IMPROVEMENT)
