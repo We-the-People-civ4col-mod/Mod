@@ -68,6 +68,10 @@ Current WTP team members
 	Liet
 	jooe
 
+Special Credits:
+	f1rpo (continous support related to coding)
+	karadoc (for hist pathfinding code)
+
 Former (now inactive) RaR members:
 
 	Robert Surcouf

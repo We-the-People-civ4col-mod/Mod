@@ -63,8 +63,13 @@ Aktuelle aktive WTP Teammitglieder
 	Fürstbischof
 	Kendon
 	Raubwürger
+	FlaviusBelisarius
 	Liet
 	jooe
+
+Besonderen Dank:
+	f1rpo (wiederholte Unterstützung zu Code)
+	karadoc (für seinen Pathfinding Code)
 
 Ehemalige (jetzt inaktive) RaR Mitglieder:
 
