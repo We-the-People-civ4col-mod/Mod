@@ -1320,9 +1320,7 @@ void CvUnit::updateCombat(bool bQuick)
 				// if suitable eject Plot found, give some random damage and move to eject Plot
 				if (pEjectPlot != NULL)
 				{
-					const int iDamageRand = std::max(10, GC.getGameINLINE().getSorenRandNum(75, "random ship damage"));
-					const int iRemainingHitPoints = (currHitPoints() * 100 / maxHitPoints());
-					pDefender->changeDamage(maxHitPoints() * iRemainingHitPoints * iDamageRand / (100 * 100));
+					pDefender->addDamageRandom(10, 75, 10);
 
 					// clean up to avoid Asserts when changing positon
 					setCombatUnit(NULL);
@@ -11085,9 +11083,27 @@ void CvUnit::setDamage(int iNewValue, CvUnit* pAttacker, bool bNotifyEntity)
 	}
 }
 
+
 void CvUnit::changeDamage(int iChange, CvUnit* pAttacker)
 {
 	setDamage((getDamage() + iChange), pAttacker);
+}
+
+
+void CvUnit::addDamageRandom(int iMinDamage, int iMaxDamage, int iMinHealthPercentageRemaining)
+{
+	const int iRemainingHitPointsPercentage = ( currHitPoints() * 100 / maxHitPoints() );
+	if ( iRemainingHitPointsPercentage > iMinHealthPercentageRemaining )
+	{
+		const int iDamageRand = std::max(iMinDamage, GC.getGameINLINE().getSorenRandNum(iMaxDamage, "random damage"));
+		int iDamageToApply = ( maxHitPoints() * iRemainingHitPointsPercentage * iDamageRand ) / ( 100 * 100 );
+		if (((( currHitPoints() - iDamageToApply ) * maxHitPoints() ) / 100 ) <= iMinHealthPercentageRemaining )
+		{
+			setDamage (( maxHitPoints() * ( 100 - iMinHealthPercentageRemaining)) / 100 );
+		} else {
+			changeDamage( iDamageToApply );
+		}
+	}
 }
 
 

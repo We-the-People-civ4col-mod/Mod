@@ -458,6 +458,7 @@ public:
 	DllExport int getDamage() const;
 	void setDamage(int iNewValue, CvUnit* pAttacker = NULL, bool bNotifyEntity = true);
 	void changeDamage(int iChange, CvUnit* pAttacker = NULL);
+	void addDamageRandom(int iMinDamage, int iMaxDamage, int iMinHealthPercentageRemaining = 0);
 
 	int getMoves() const;
 	void setMoves(int iNewValue);
