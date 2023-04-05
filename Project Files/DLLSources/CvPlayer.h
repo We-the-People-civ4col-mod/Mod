@@ -13,10 +13,6 @@
 #include "CvTalkingHeadMessage.h"
 #include "CvTradeRouteGroup.h" //R&R mod, vetiarvind, trade groups
 
-#define LOCATION_FLAGS_NONE						0x0000
-#define LOCATION_FLAGS_COASTAL				0x0001
-#define LOCATION_FLAGS_DEEP_COASTAL		0x0002
-#define LOCATION_FLAGS_INLAND					0x0004
 
 class CvDiploParameters;
 class CvPlayerAI;
@@ -37,6 +33,14 @@ typedef std::vector< std::pair<CivilizationTypes, LeaderHeadTypes> > CivLeaderAr
 class CvPlayer
 {
 public:
+
+enum LocationFlags {
+	LocationFlagNone 				= 0x0000,
+	LocationFlagCoastal 		= 0x0001,
+	LocationFlagDeepCoastal = 0x0002,
+	LocationFlagInland			= 0x0004
+};
+
 	// add support for AI and CivEffect calls
 	__forceinline CvPlayerAI& AI() { return (CvPlayerAI&)*this; }
 	__forceinline const CvPlayerAI& AI() const { return (CvPlayerAI&)*this; }
@@ -1224,9 +1228,9 @@ protected:
 	void kill();
 
 	// WTP, jooe, functionalise the buy Unit logic. Return value is the city where the units will appear (or NULL)
-	CvCity* buyUnitFromParentPlayer(PlayerTypes eSellingPlayer, const char *szUnitClass, int iNumUnits, CvWString szIDTag = CvWString(), int iPriceToPay = 0, int iLocationFlags = LOCATION_FLAGS_NONE, bool bReceivePrice = true, bool bMessageMentionLocation = true);
-	CvCity* buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitClassTypes eUnitClass, int iNumUnits, CvWString szIDTag = CvWString(), int iPriceToPay = 0, int iLocationFlags = LOCATION_FLAGS_NONE, bool bReceivePrice = true, bool bMessageMentionLocation = true);
-	CvCity* buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitType, int iNumUnits, CvWString szIDTag = CvWString(), int iPriceToPay = 0, int iLocationFlags = LOCATION_FLAGS_NONE, bool bReceivePrice = true, bool bMessageMentionLocation = true);
+	CvCity* buyUnitFromParentPlayer(PlayerTypes eSellingPlayer, const char *szUnitClass, int iNumUnits, CvWString szIDTag = CvWString(), int iPriceToPay = 0, LocationFlags eLocationFlags = LocationFlags::LocationFlagNone, bool bReceivePrice = true, bool bMessageMentionLocation = true);
+	CvCity* buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitClassTypes eUnitClass, int iNumUnits, CvWString szIDTag = CvWString(), int iPriceToPay = 0, LocationFlags eLocationFlags = LocationFlags::LocationFlagNone, bool bReceivePrice = true, bool bMessageMentionLocation = true);
+	CvCity* buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitType, int iNumUnits, CvWString szIDTag = CvWString(), int iPriceToPay = 0, LocationFlags eLocationFlags = LocationFlags::LocationFlagNone, bool bReceivePrice = true, bool bMessageMentionLocation = true);
 
 	void testOOSanDoEvent(EventTypes eEvent, bool bSuccess) const;
 	void testOOSanDoGoody(GoodyTypes eGoody, int iUnitID, bool bSuccess) const;
