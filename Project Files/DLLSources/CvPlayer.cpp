@@ -21625,7 +21625,7 @@ void CvPlayer::checkForBishop()
 
 void CvPlayer::buyNativeMercs(PlayerTypes sellingPlayer, int price, bool mightbeangry)
 {
-	buyUnitFromPlayer(sellingPlayer, UNITCLASS_NATIVE_MERC, 1, "TXT_KEY_BOUGHT_NATIVE_MERC", LOCATION_FLAGS_NONE);
+	buyUnitFromPlayer(sellingPlayer, UNITCLASS_NATIVE_MERC, 1, "TXT_KEY_BOUGHT_NATIVE_MERC", price, LOCATION_FLAGS_NONE);
 
 	//now lets see if this player is angry because of low price
 	if(mightbeangry)
