@@ -7337,31 +7337,31 @@
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLADES_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLADES_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Port Royal zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLADES_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the dominant market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_BLADES_FAILED</Tag>
         <English>Milord, another colonial nation has cornered the market in the colonies for [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLADES_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SAILCLOTH_START</Tag>
