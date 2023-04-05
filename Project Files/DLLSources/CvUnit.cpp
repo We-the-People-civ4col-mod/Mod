@@ -558,7 +558,7 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 
 	gDLL->getEventReporterIFace()->unitLost(this);
 
-    GET_PLAYER(getOwnerINLINE()).AI_removeUnitFromMoveQueue(this);
+  GET_PLAYER(getOwnerINLINE()).AI_removeUnitFromMoveQueue(this);
 	GET_PLAYER(getOwnerINLINE()).deleteUnit(getID());
 
 	FAssert(GET_PLAYER(eOwner).checkPopulation());
@@ -572,50 +572,51 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 				eCaptureProfession = GC.getUnitInfo(eCaptureUnitType).getDefaultProfession();
 			}
 			// WTP, ray fixing Unit duplication bug
-			if (eCaptureProfession == NO_PROFESSION || (eCaptureProfession != NO_PROFESSION && GC.getProfessionInfo(eCaptureProfession).getCombatChange() == 0))
+			// WTP, jooe (2023-04-05): enable unit capture code here again, the duplication was done in CvUnit::updateCombat
+			// if (eCaptureProfession == NO_PROFESSION || (eCaptureProfession != NO_PROFESSION && GC.getProfessionInfo(eCaptureProfession).getCombatChange() == 0))
+			CvUnit* pkCapturedUnit = GET_PLAYER(eCapturingPlayer).initUnit(eCaptureUnitType, eCaptureProfession, pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_UNITAI, NO_DIRECTION, iYieldStored);
+			if (pkCapturedUnit != NULL)
 			{
-				CvUnit* pkCapturedUnit = GET_PLAYER(eCapturingPlayer).initUnit(eCaptureUnitType, eCaptureProfession, pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_UNITAI, NO_DIRECTION, iYieldStored);
-				if (pkCapturedUnit != NULL)
+				bool bAlive = true;
+				if (pAttacker != NULL && pAttacker->getUnitInfo().isCapturesCargo())
 				{
-					bool bAlive = true;
-					if (pAttacker != NULL && pAttacker->getUnitInfo().isCapturesCargo())
+					pkCapturedUnit->jumpTo(pAttacker->coord());
+					if(pkCapturedUnit->isCargo() && pkCapturedUnit->getTransportUnit() == NULL) //failed to load
 					{
-						pkCapturedUnit->jumpTo(pAttacker->coord());
-						if(pkCapturedUnit->getTransportUnit() == NULL) //failed to load
-						{
-							bAlive = false;
-							pkCapturedUnit->kill(false);
-						}
+						bAlive = false;
+						pkCapturedUnit->kill(false);
+					}
+				}
+
+				if (bAlive)
+				{
+					pkCapturedUnit->addDamageRandom(10, 75, 5);
+
+					szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_CAPTURED_UNIT", GC.getUnitInfo(eCaptureUnitType).getTextKeyWide());
+					gDLL->UI().addPlayerMessage(eCapturingPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNITCAPTURE", MESSAGE_TYPE_INFO, pkCapturedUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pPlot->getX_INLINE(), pPlot->getY_INLINE());
+
+					if (!pkCapturedUnit->isCargo())
+					{
+						// Add a captured mission
+						CvMissionDefinition kMission;
+						kMission.setMissionTime(GC.getMissionInfo(MISSION_CAPTURED).getTime() * gDLL->getSecsPerTurn());
+						kMission.setUnit(BATTLE_UNIT_ATTACKER, pkCapturedUnit);
+						kMission.setUnit(BATTLE_UNIT_DEFENDER, NULL);
+						kMission.setPlot(pPlot);
+						kMission.setMissionType(MISSION_CAPTURED);
+						gDLL->getEntityIFace()->AddMission(&kMission);
 					}
 
-					if (bAlive)
+					pkCapturedUnit->finishMoves();
+
+					if (!GET_PLAYER(eCapturingPlayer).isHuman())
 					{
-						szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_CAPTURED_UNIT", GC.getUnitInfo(eCaptureUnitType).getTextKeyWide());
-						gDLL->UI().addPlayerMessage(eCapturingPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNITCAPTURE", MESSAGE_TYPE_INFO, pkCapturedUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pPlot->getX_INLINE(), pPlot->getY_INLINE());
-
-						if (!pkCapturedUnit->isCargo())
+						CvPlot* pPlot = pkCapturedUnit->plot();
+						if (pPlot && !pPlot->isCity(false))
 						{
-							// Add a captured mission
-							CvMissionDefinition kMission;
-							kMission.setMissionTime(GC.getMissionInfo(MISSION_CAPTURED).getTime() * gDLL->getSecsPerTurn());
-							kMission.setUnit(BATTLE_UNIT_ATTACKER, pkCapturedUnit);
-							kMission.setUnit(BATTLE_UNIT_DEFENDER, NULL);
-							kMission.setPlot(pPlot);
-							kMission.setMissionType(MISSION_CAPTURED);
-							gDLL->getEntityIFace()->AddMission(&kMission);
-						}
-
-						pkCapturedUnit->finishMoves();
-
-						if (!GET_PLAYER(eCapturingPlayer).isHuman())
-						{
-							CvPlot* pPlot = pkCapturedUnit->plot();
-							if (pPlot && !pPlot->isCity(false))
+							if (GET_PLAYER(eCapturingPlayer).AI_getPlotDanger(pPlot) && GC.getDefineINT("AI_CAN_DISBAND_UNITS"))
 							{
-								if (GET_PLAYER(eCapturingPlayer).AI_getPlotDanger(pPlot) && GC.getDefineINT("AI_CAN_DISBAND_UNITS"))
-								{
-									pkCapturedUnit->kill(false);
-								}
+								pkCapturedUnit->kill(false);
 							}
 						}
 					}
@@ -1320,7 +1321,7 @@ void CvUnit::updateCombat(bool bQuick)
 				// if suitable eject Plot found, give some random damage and move to eject Plot
 				if (pEjectPlot != NULL)
 				{
-					pDefender->addDamageRandom(10, 75, 10);
+					pDefender->addDamageRandom(10, 75, 5);
 
 					// clean up to avoid Asserts when changing positon
 					setCombatUnit(NULL);
@@ -1654,15 +1655,18 @@ void CvUnit::updateCombat(bool bQuick)
 			// if (((pDefender->cargoSpace() > 0 && (pDefender->getDomainType() == DOMAIN_LAND)) || pDefender->getUnitInfo().isTreasure() || (pDefender->isUnarmed() && pDefender->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pDefender->getProfession()).getCombatChange() > 0)) && !GET_PLAYER(getOwnerINLINE()).isNative() && !GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE()))
 			// ray, fix for bNoCapture being ingored
 			// we do not capture Units anymore that are flagged as bNoCapture
-			if (!pDefender->getUnitInfo().isNoCapture())
-			{
-				if (((pDefender->cargoSpace() > 0 && (pDefender->getDomainType() == DOMAIN_LAND || (pDefender->getDomainType() == DOMAIN_SEA && pPlot->getTerrainType() == TERRAIN_LARGE_RIVERS))) || pDefender->getUnitInfo().isTreasure() || (pDefender->isUnarmed() && pDefender->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pDefender->getProfession()).getCombatChange() > 0)) && !GET_PLAYER(getOwnerINLINE()).isNative() && !GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE()))
-				{
-					CvUnit* pkCapturedUnitAfterFight = GET_PLAYER(getOwnerINLINE()).initUnit(pDefender->getUnitType(), pDefender->getProfession(), pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_UNITAI, NO_DIRECTION, pDefender->getYieldStored());
-					pkCapturedUnitAfterFight->setDamage(GC.getMAX_HIT_POINTS() / 2);
-					szBuffer = gDLL->getText("TXT_KEY_UNIT_CAPTURED_AFTER_FIGHT", pDefender->getUnitInfo().getDescription());
-				}
-			}
+			// WTP, jooe (2023-04-05): disable unit capture in CvUnit::updateCombat() - START
+			// jooe: completely disable unit capture here in CvUnit::updateCombat() - it should happen in CvUnit::kill instead!
+			// if (!pDefender->getUnitInfo().isNoCapture())
+			// {
+			// 	if (((pDefender->cargoSpace() > 0 && (pDefender->getDomainType() == DOMAIN_LAND || (pDefender->getDomainType() == DOMAIN_SEA && pPlot->getTerrainType() == TERRAIN_LARGE_RIVERS))) || pDefender->getUnitInfo().isTreasure() || (pDefender->isUnarmed() && pDefender->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pDefender->getProfession()).getCombatChange() > 0)) && !GET_PLAYER(getOwnerINLINE()).isNative() && !GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE()))
+			// 	{
+			// 		CvUnit* pkCapturedUnitAfterFight = GET_PLAYER(getOwnerINLINE()).initUnit(pDefender->getUnitType(), pDefender->getProfession(), pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_UNITAI, NO_DIRECTION, pDefender->getYieldStored());
+			// 		pkCapturedUnitAfterFight->setDamage(GC.getMAX_HIT_POINTS() / 2);
+			// 		szBuffer = gDLL->getText("TXT_KEY_UNIT_CAPTURED_AFTER_FIGHT", pDefender->getUnitInfo().getDescription());
+			// 	}
+			// }
+			// WTP, jooe (2023-04-05): disable unit capture in CvUnit::updateCombat() - END
 			//Ende ray14
 
 			// R&R, ray, changes to Wild Animals - START
@@ -1719,10 +1723,19 @@ void CvUnit::updateCombat(bool bQuick)
 					}
 				}
 			}
-			else
+
+			bAdvance = canAdvance(pPlot, ((pDefender->canDefend()) ? 1 : 0));
+
+			if (!isNoUnitCapture())
 			{
-				if (!isNoUnitCapture())
+				pDefender->setCapturingPlayer(getOwnerINLINE());
+			}
+
+			if (bAdvance && !isNoUnitCapture() && !pDefender->canDefend())
+			{
+				if ( !GET_PLAYER(getOwnerINLINE()).isNative() && !GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE()) && !GC.getGameINLINE().isChurchPlayer(getOwnerINLINE()))
 				{
+					pDefender->setCapturingPlayer(getOwnerINLINE());
 					CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 					while (pUnitNode != NULL)
 					{
@@ -1734,21 +1747,9 @@ void CvUnit::updateCombat(bool bQuick)
 							if (isEnemy(pLoopUnit->getCombatTeam(getTeam(), pPlot), pPlot))
 							{
 								pLoopUnit->setCapturingPlayer(getOwnerINLINE());
+								pLoopUnit->kill(false);
 							}
 						}
-					}
-				}
-			}
-
-			bAdvance = canAdvance(pPlot, ((pDefender->canDefend()) ? 1 : 0));
-
-			if (bAdvance)
-			{
-				if (!isNoUnitCapture())
-				{
-					if (!pDefender->canDefend())
-					{
-						pDefender->setCapturingPlayer(getOwnerINLINE());
 					}
 				}
 			}
