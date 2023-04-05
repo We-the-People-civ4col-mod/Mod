@@ -2,11 +2,11 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_TINY</Tag>
-        <English>(22x36) Tiny</English>
-        <French>(22x36) Minuscule</French>
-        <German>(22x36) Winzig</German>
-        <Italian>(22x36) Minuscolo</Italian>
-        <Spanish>(22x36) Diminuto</Spanish>
+        <English>Tiny</English>
+        <French>Minuscule</French>
+        <German>Winzig</German>
+        <Italian>Minuscolo</Italian>
+        <Spanish>Diminuto</Spanish>
         <Russian>Крошечный</Russian>
     </TEXT>
     <TEXT>
@@ -15,11 +15,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_SMALL</Tag>
-        <English>(30x48) Small</English>
-        <French>(30x48) Petit</French>
-        <German>(30x48) Klein</German>
-        <Italian>(30x48) Piccolo</Italian>
-        <Spanish>(30x48) Pequeño</Spanish>
+        <English>Small</English>
+        <French>Petit</French>
+        <German>Klein</German>
+        <Italian>Piccolo</Italian>
+        <Spanish>Pequeño</Spanish>
         <Russian>Маленький</Russian>
     </TEXT>
     <TEXT>
@@ -28,11 +28,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_STANDARD</Tag>
-        <English>(40x64) Standard</English>
-        <French>(40x64) Normal</French>
-        <German>(40x64) Standard</German>
-        <Italian>(40x64) Normale</Italian>
-        <Spanish>(40x64) Estándar</Spanish>
+        <English>Standard</English>
+        <French>Normal</French>
+        <German>Standard</German>
+        <Italian>Normale</Italian>
+        <Spanish>Estándar</Spanish>
         <Russian>Стандартный</Russian>
     </TEXT>
     <TEXT>
@@ -41,11 +41,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_LARGE</Tag>
-        <English>(50x78) Large</English>
-        <French>(50x78) Grand</French>
-        <German>(50x78) Groß</German>
-        <Italian>(50x78) Grande</Italian>
-        <Spanish>(50x78) Grande</Spanish>
+        <English>Large</English>
+        <French>Grand</French>
+        <German>Groß</German>
+        <Italian>Grande</Italian>
+        <Spanish>Grande</Spanish>
         <Russian>Большой</Russian>
     </TEXT>
     <TEXT>
@@ -54,11 +54,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_HUGE</Tag>
-        <English>(64x100) Huge</English>
-        <French>(64x100) Immense</French>
-        <German>(64x100) Riesig</German>
-        <Italian>(64x100) Enorme</Italian>
-        <Spanish>(64x100) Enorme</Spanish>
+        <English>Huge</English>
+        <French>Immense</French>
+        <German>Riesig</German>
+        <Italian>Enorme</Italian>
+        <Spanish>Enorme</Spanish>
         <Russian>Огромный</Russian>
     </TEXT>
     <TEXT>
@@ -67,11 +67,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_GIGANTIC</Tag>
-        <English>(110x215) Gigantic</English>
-        <French>(110x215) Gigantesque</French>
-        <German>(110x215) Gigantisch</German>
-        <Italian>(110x215) Gigantesco</Italian>
-        <Spanish>(110x215) Gigantesco</Spanish>
+        <English>Gigantic</English>
+        <French>Gigantesque</French>
+        <German>Gigantisch</German>
+        <Italian>Gigantesco</Italian>
+        <Spanish>Gigantesco</Spanish>
         <Russian>Гигантский</Russian>
     </TEXT>
     <TEXT>
