@@ -581,7 +581,7 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 				if (pAttacker != NULL && pAttacker->getUnitInfo().isCapturesCargo())
 				{
 					pkCapturedUnit->jumpTo(pAttacker->coord());
-					if(pkCapturedUnit->isCargo() && pkCapturedUnit->getTransportUnit() == NULL) //failed to load
+					if((pkCapturedUnit->isCargo() || !pAttacker->coord().plot()->isValidDomainForAction(*pkCapturedUnit)) && pkCapturedUnit->getTransportUnit() == NULL) //failed to load
 					{
 						bAlive = false;
 						pkCapturedUnit->kill(false);
@@ -1731,28 +1731,28 @@ void CvUnit::updateCombat(bool bQuick)
 				pDefender->setCapturingPlayer(getOwnerINLINE());
 			}
 
-			if (bAdvance && !isNoUnitCapture() && !pDefender->canDefend())
-			{
-				if ( !GET_PLAYER(getOwnerINLINE()).isNative() && !GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE()) && !GC.getGameINLINE().isChurchPlayer(getOwnerINLINE()))
-				{
-					pDefender->setCapturingPlayer(getOwnerINLINE());
-					CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
-					while (pUnitNode != NULL)
-					{
-						CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-						pUnitNode = pPlot->nextUnitNode(pUnitNode);
-
-						if (pLoopUnit != pDefender)
-						{
-							if (isEnemy(pLoopUnit->getCombatTeam(getTeam(), pPlot), pPlot))
-							{
-								pLoopUnit->setCapturingPlayer(getOwnerINLINE());
-								pLoopUnit->kill(false);
-							}
-						}
-					}
-				}
-			}
+			// if (bAdvance && !isNoUnitCapture() && !pDefender->canDefend())
+			// {
+			// 	if ( !GET_PLAYER(getOwnerINLINE()).isNative() && !GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE()) && !GC.getGameINLINE().isChurchPlayer(getOwnerINLINE()))
+			// 	{
+			// 		pDefender->setCapturingPlayer(getOwnerINLINE());
+			// 		CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
+			// 		while (pUnitNode != NULL)
+			// 		{
+			// 			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+			// 			pUnitNode = pPlot->nextUnitNode(pUnitNode);
+			//
+			// 			if (pLoopUnit != pDefender)
+			// 			{
+			// 				if (isEnemy(pLoopUnit->getCombatTeam(getTeam(), pPlot), pPlot))
+			// 				{
+			// 					pLoopUnit->setCapturingPlayer(getOwnerINLINE());
+			// 					pLoopUnit->kill(false);
+			// 				}
+			// 			}
+			// 		}
+			// 	}
+			// }
 
 			pDefender->kill(false);
 			pDefender = NULL;
