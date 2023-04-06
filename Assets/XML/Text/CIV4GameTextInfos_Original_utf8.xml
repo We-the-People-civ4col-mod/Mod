@@ -7635,7 +7635,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INIT_INITIALIZING</Tag>
-        <English>Initializing</English>
+        <English>Initializing (this can take multiple minutes on big maps)</English>
         <French>Initialisation</French>
         <German>Wird initialisiert</German>
         <Italian>Inizializzazione</Italian>
