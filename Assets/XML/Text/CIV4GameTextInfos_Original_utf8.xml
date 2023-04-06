@@ -7640,7 +7640,7 @@
         <German>Wird initialisiert</German>
         <Italian>Inizializzazione</Italian>
         <Spanish>Iniciando</Spanish>
-        <Russian>Инициализация ...</Russian>
+        <Russian>Инициализация (это может занять несколько минут на больших картах) ...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INIT_GRAPHICS</Tag>
