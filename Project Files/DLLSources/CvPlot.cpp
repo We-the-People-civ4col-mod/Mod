@@ -1033,6 +1033,27 @@ bool CvPlot::hasDeepWaterCoast() const
 }
 //WTP, ray, Large Rivers - END
 
+//WTP, ray, Safety Check for Deep Water Coast if there is Ocean or Deep Coast adjacent - START
+bool CvPlot::hasOtherAdjacentOceanOrDeepWaterCoast() const
+{
+	PROFILE_FUNC();
+
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
+	{
+		CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+
+		if (pAdjacentPlot != NULL)
+		{
+			if (pAdjacentPlot->isWater() && (pAdjacentPlot->getTerrainType() == TERRAIN_COAST || pAdjacentPlot->getTerrainType() == TERRAIN_OCEAN))
+			{
+					return true;
+			}
+		}
+	}
+	return false;
+}
+//WTP, ray, Safety Check for Deep Water Coast if there is Ocean or Deep Coast adjacent - END
+
 bool CvPlot::isAdjacentWaterPassable(CvPlot* pPlot) const
 {
 	FAssert(pPlot != NULL);
@@ -5603,19 +5624,31 @@ void CvPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGr
 				if (isAdjacentToLand())
 				{
 					//WTP, ray, Large Rivers - START
+					//WTP, ray, Lakes - START
 					//we do not want to change Large Rivers to Coast, only Ocean
-					// setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
-					//WTP, ray, Lakes
 					//we do not want to change Lakes to Coast either
 					if (getTerrainType() != TERRAIN_LARGE_RIVERS && getTerrainType() != TERRAIN_LAKE && getTerrainType() != TERRAIN_ICE_LAKE && getTerrainType() != TERRAIN_SHALLOW_COAST)
 					{
-						setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
+						//WTP, ray, Safety Check for Deep Water Coast if there is Ocean or Deep Coast adjacent - START
+						// case 1: There is Deep Water Coast or Ocean adjacent
+						// we generate "Deep Water Coast"
+						if (hasOtherAdjacentOceanOrDeepWaterCoast())
+						{
+							setTerrainType(TERRAIN_COAST, bRecalculate, bRebuildGraphics);
+						}
+						// case 2: There seems to be just land or shallow coast around
+						// we genearte "Shallow Water Coast" - to avoid dead locked Deep Water Coast Cities
+						else
+						{
+							setTerrainType(TERRAIN_SHALLOW_COAST, bRecalculate, bRebuildGraphics);
+						}
+						//WTP, ray, Safety Check for Deep Water Coast if there is Ocean or Deep Coast adjacent - END
 					}
 					//WTP, ray, Large Rivers - END
 				}
 				else
 				{
-					setTerrainType(((TerrainTypes)(GC.getDefineINT("DEEP_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
+					setTerrainType(TERRAIN_OCEAN, bRecalculate, bRebuildGraphics);
 				}
 			}
 			else
@@ -5641,17 +5674,31 @@ void CvPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGr
 							if (pLoopPlot->isAdjacentToLand())
 							{
 								//WTP, ray, Large Rivers - START
+								//WTP, ray, Lakes - START
 								//we do not want to change Large Rivers to Coast, only Ocean
-								// pLoopPlot->setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
+								//we also do not want to change Lake to Coast, only Ocean
 								if (pLoopPlot->getTerrainType() != TERRAIN_LARGE_RIVERS && getTerrainType() != TERRAIN_LAKE && getTerrainType() != TERRAIN_ICE_LAKE && getTerrainType() != TERRAIN_SHALLOW_COAST)
 								{
-									pLoopPlot->setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
+									//WTP, ray, Safety Check for Deep Water Coast if there is Ocean or Deep Coast adjacent - START
+									// case 1: There is Deep Water Coast or Ocean adjacent
+									// we generate "Deep Water Coast"
+									if (pLoopPlot->hasOtherAdjacentOceanOrDeepWaterCoast())
+									{
+										pLoopPlot->setTerrainType(TERRAIN_COAST, bRecalculate, bRebuildGraphics);
+									}
+									// case 2: There seems to be just land or shallow coast around
+									// we genearte "Shallow Water Coast" - to avoid dead locked Deep Water Coast Cities
+									else
+									{
+										pLoopPlot->setTerrainType(TERRAIN_SHALLOW_COAST, bRecalculate, bRebuildGraphics);
+									}
+									//WTP, ray, Safety Check for Deep Water Coast if there is Ocean or Deep Coast adjacent - END
 								}
 								//WTP, ray, Large Rivers - END
 							}
 							else
 							{
-								pLoopPlot->setTerrainType(((TerrainTypes)(GC.getDefineINT("DEEP_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
+								pLoopPlot->setTerrainType(TERRAIN_OCEAN, bRecalculate, bRebuildGraphics);
 							}
 						}
 					}
