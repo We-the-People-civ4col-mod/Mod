@@ -67,6 +67,27 @@ CvPlot* PlotRegion::getPlot(int i) const
 	return GC.getMapINLINE().plotByIndex(m_aiPlots[i]);
 }
 
+bool PlotRegion::isTerrainAdjacent(const EnumMap<TerrainTypes, bool> em) const
+{
+	const int iNumPlots = getNumPlots();
+	for (int iPlot = 0; iPlot < iNumPlots; ++iPlot)
+	{
+		const CvPlot* pRegionPlot = getPlot(iPlot);
+		for (DirectionTypes eDirection = FIRST_DIRECTION; eDirection < NUM_DIRECTION_TYPES; ++eDirection)
+		{
+			const CvPlot* pAdjacentPlot = plotDirection(pRegionPlot->getX_INLINE(), pRegionPlot->getY_INLINE(), eDirection);
+			if (pAdjacentPlot != NULL && pAdjacentPlot->getTerrainType() != NO_TERRAIN)
+			{
+				if (em.get(pAdjacentPlot->getTerrainType()))
+				{
+					return true;
+				}
+			}
+		}
+	}
+	return false;
+}
+
 void PlotRegion::add(int iPlot, std::vector<PlotRegion*>& plotRegions)
 {
 	if (plotRegions[iPlot] != NULL)
@@ -1269,49 +1290,34 @@ void CvMap::updateWaterPlotTerrainTypes()
 
 	PlotRegionMap regions(em);
 
+	// reuse the now unused EnumMap to detect snow in regions
+	em.reset();
+	em.set(TERRAIN_SNOW, true);
+
 	const int iNumRegions = regions.getNumRegions();
 	for (int iRegion = 0; iRegion < iNumRegions; ++iRegion)
 	{
 		const PlotRegion& kRegion = regions.getRegion(iRegion);
 		const int iNumPlots = kRegion.getNumPlots();
+
+		bool bLake = !kRegion.isEurope() && kRegion.getNumPlots() < 50;
+		bool bIceLake = false;
+		if (bLake)
+		{
+			// em now holds the terrains, which triggers ice lakes
+			bIceLake = kRegion.isTerrainAdjacent(em);
+		}
+
 		for (int iPlot = 0; iPlot < iNumPlots; ++iPlot)
 		{
-			if (kRegion.isEurope())
+			if (bLake)
+			{
+				const TerrainTypes eLakeTerrain = bIceLake ? TERRAIN_ICE_LAKE : TERRAIN_LAKE;
+				kRegion.getPlot(iPlot)->setTerrainType(eLakeTerrain);
+			}
+			else // ocean
 			{
 				kRegion.getPlot(iPlot)->setCoastline();
-			}
-			// ray, Ice Lakes
-			else
-			{
-				// WTP, ray, we improve the logic by also checking for size
-				// if it becomes to big, we rather not change to Lake or Ice Lakes
-				// this prevents really strange stuff e.g. in MapScripts like "Carribean"
-				bool isSmallEnoughForLake = kRegion.getNumPlots() < 50;
-				if (isSmallEnoughForLake)
-				{
-					// Ice Lakes if TERRAIN_SNOW is adjacent or another TERRAIN_ICE_LAKE
-					bool bIsBetterIceLake = false;
-					CvPlot* pAdjacentPlot;
-					for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
-					{
-						pAdjacentPlot = plotDirection(kRegion.getPlot(iPlot)->getX_INLINE(), kRegion.getPlot(iPlot)->getY_INLINE(), ((DirectionTypes)iI));
-
-						if (pAdjacentPlot != NULL && (pAdjacentPlot->getTerrainType() == TERRAIN_SNOW || pAdjacentPlot->getTerrainType() == TERRAIN_ICE_LAKE))
-						{
-							bIsBetterIceLake = true;
-							break; // we can break if we found one
-						}
-					}
-
-					if (bIsBetterIceLake)
-					{
-						kRegion.getPlot(iPlot)->setTerrainType(TERRAIN_ICE_LAKE);
-					}
-					else
-					{
-						kRegion.getPlot(iPlot)->setTerrainType(TERRAIN_LAKE);
-					}
-				}
 			}
 		}
 	}

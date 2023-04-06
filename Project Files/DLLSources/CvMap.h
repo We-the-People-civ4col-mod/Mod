@@ -52,6 +52,7 @@ public:
 	bool isEurope() const;
 	int getNumPlots() const;
 	CvPlot* getPlot(int i) const;
+	bool isTerrainAdjacent(const EnumMap<TerrainTypes, bool> em) const;
 
 protected:
 	void add(int iPlot, std::vector<PlotRegion*>& plotRegions);
