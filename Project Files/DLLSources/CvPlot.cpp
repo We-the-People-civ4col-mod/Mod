@@ -5910,7 +5910,7 @@ void CvPlot::setCoastline(bool bRecalculate, bool bRebuildGraphics)
 				// we genearte "Shallow Water Coast" - to avoid dead locked Deep Water Coast Cities
 				else
 				{
-					pLoopPlot->setTerrainType(TERRAIN_SHALLOW_COAST, false, false);
+					setTerrainType(TERRAIN_SHALLOW_COAST, bRecalculate, bRebuildGraphics);
 				}
 				//WTP, ray, Safety Check for Deep Water Coast if there is Ocean or Deep Coast adjacent - END
 			}
