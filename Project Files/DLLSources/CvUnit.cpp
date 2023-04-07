@@ -1689,11 +1689,23 @@ void CvUnit::updateCombat(bool bQuick)
 			{
 				pDefender->setCapturingPlayer(getOwnerINLINE());
 				CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
+
+				// because kill can mess up the order in pUnitNode, store all IDs prior to any units being killed
+				std::vector<IDInfo> IDs;
 				while (pUnitNode != NULL)
 				{
-					CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+					IDs.push_back(pUnitNode->m_data);
 					pUnitNode = pPlot->nextUnitNode(pUnitNode);
-					if (pLoopUnit != pDefender)
+				}
+
+				while (!IDs.empty())
+				{
+					// remove from the back as that hopefully always capture cargo before transports
+					// when a transport is killed, the cargo dies instantly
+					IDInfo info = IDs[IDs.size() - 1];
+					IDs.pop_back();
+					CvUnit* pLoopUnit = ::getUnit(info);
+					if (pLoopUnit != NULL && pLoopUnit != pDefender)
 					{
 						if (isEnemy(pLoopUnit->getCombatTeam(getTeam(), pPlot), pPlot) && pLoopUnit->isUnarmed() && !pLoopUnit->isCargo())
 						{
