@@ -1685,7 +1685,9 @@ void CvUnit::updateCombat(bool bQuick)
 
 			// If defender is a civilian unit, capture it and all other civilian units on the plot
 			if (	!isNoUnitCapture() &&
-						pDefender->isUnarmed() &&
+							( pDefender->isUnarmed() ||
+								pDefender->getUnitInfo().isTreasure() ||
+						 		(pDefender->getUnitInfo().getCargoSpace() > 0 && pDefender->getUnitInfo().getDomainType() == DOMAIN_LAND) ) &&
  						!GET_PLAYER(getOwnerINLINE()).isNative() &&
 						!GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE()) &&
 						!GC.getGameINLINE().isChurchPlayer(getOwnerINLINE()) )
