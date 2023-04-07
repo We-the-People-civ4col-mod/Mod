@@ -581,7 +581,7 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 				if (pAttacker != NULL && pAttacker->getUnitInfo().isCapturesCargo())
 				{
 					pkCapturedUnit->jumpTo(pAttacker->coord());
-					if((pkCapturedUnit->isCargo() || !pAttacker->coord().plot()->isValidDomainForAction(*pkCapturedUnit)) && pkCapturedUnit->getTransportUnit() == NULL) //failed to load
+					if((pkCapturedUnit->isCargo() || !pAttacker->plot()->isValidDomainForAction(*pkCapturedUnit)) && pkCapturedUnit->getTransportUnit() == NULL) //failed to load
 					{
 						bAlive = false;
 						pkCapturedUnit->kill(false);
@@ -1685,10 +1685,7 @@ void CvUnit::updateCombat(bool bQuick)
 
 			// If defender is a civilian unit, capture it and all other civilian units on the plot
 			if (	!isNoUnitCapture() &&
-							( pDefender->isUnarmed() ||
-								pDefender->getUnitInfo().isTreasure() ||
-						 		(pDefender->getUnitInfo().getCargoSpace() > 0 && pDefender->getUnitInfo().getDomainType() == DOMAIN_LAND) ) &&
- 						!GET_PLAYER(getOwnerINLINE()).isNative() &&
+						pDefender->isCapturableLandUnit() &&
 						!GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE()) &&
 						!GC.getGameINLINE().isChurchPlayer(getOwnerINLINE()) )
 			{
@@ -1712,7 +1709,7 @@ void CvUnit::updateCombat(bool bQuick)
 					CvUnit* pLoopUnit = ::getUnit(info);
 					if (pLoopUnit != NULL && pLoopUnit != pDefender)
 					{
-						if (isEnemy(pLoopUnit->getCombatTeam(getTeam(), pPlot), pPlot) && pLoopUnit->isUnarmed() && !pLoopUnit->isCargo())
+						if (isEnemy(pLoopUnit->getCombatTeam(getTeam(), pPlot), pPlot) && pLoopUnit->isCapturableLandUnit())
 						{
 							pLoopUnit->setCapturingPlayer(getOwnerINLINE());
 							pLoopUnit->kill(false);
@@ -12688,6 +12685,13 @@ void CvUnit::setCapturingPlayer(PlayerTypes eNewValue)
 	m_eCapturingPlayer = eNewValue;
 }
 
+
+bool CvUnit::isCapturableLandUnit() const
+{
+	return	( isUnarmed() ||
+						getUnitInfo().isTreasure() ||
+						(getUnitInfo().getCargoSpace() > 0 && getUnitInfo().getDomainType() == DOMAIN_LAND) );
+}
 
 UnitTypes CvUnit::getUnitType() const
 {
