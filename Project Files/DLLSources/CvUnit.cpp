@@ -1140,7 +1140,7 @@ void CvUnit::updateCombat(bool bQuick)
 	CvWString szBuffer;
 
 	bool bFinish = false;
-	bool bVisible = false;
+	const bool bVisible = !bQuick;
 
 	if (getCombatTimer() > 0)
 	{
@@ -1195,12 +1195,6 @@ void CvUnit::updateCombat(bool bQuick)
 	}
 	// TAC - Whaling - koma13 - END
 
-	//check if quick combat
-	if (!bQuick)
-	{
-		bVisible = isCombatVisible(pDefender);
-	}
-
 	//FAssertMsg((pPlot == pDefender->plot()), "There is not expected to be a defender or the defender's plot is expected to be pPlot (the attack plot)");
 
 	//if not finished and not fighting yet, set up combat damage and mission
@@ -1249,7 +1243,7 @@ void CvUnit::updateCombat(bool bQuick)
 			}
 			else
 			{
-				PlayerTypes eAttacker = getVisualOwner(pDefender->getTeam());
+				const PlayerTypes eAttacker = getVisualOwner(pDefender->getTeam());
 				CvWString szMessage;
 				if (UNKNOWN_PLAYER != eAttacker)
 				{
@@ -1274,7 +1268,7 @@ void CvUnit::updateCombat(bool bQuick)
 		{
 			// WTP, ray, fix for destroying ships instead of ejecting - START
 			bool bShipCityEscape = false;
-			bool bPlotCityOrFort = pDefender->plot()->isCity() || pDefender->plot()->isFort();
+			const bool bPlotCityOrFort = pDefender->plot()->isCity() || pDefender->plot()->isFort();
 
 			// Ships in Harbour Cities should be ejected damaged when City Captured
 			if (bPlotCityOrFort && getDomainType()!= DOMAIN_SEA && pDefender->getDomainType() == DOMAIN_SEA)
@@ -1486,12 +1480,8 @@ void CvUnit::updateCombat(bool bQuick)
 			// report event to Python, along with some other key state
 			gDLL->getEventReporterIFace()->combatResult(pDefender, this);
 
-			//ray15
-			bool bRaided = pDefender->raidWeapons(this);
-			//Ende ray15
-
 			// TAC - AI purchases military units - koma13 - START
-			if (!isHuman() && m_pUnitInfo->isHiddenNationality())
+			if (!isHuman() && getUnitInfo().isHiddenNationality())
 			{
 				GET_PLAYER(getOwnerINLINE()).AI_changeNumRetiredAIUnits(UNITAI_PIRATE_SEA, 1);
 			}
@@ -1504,13 +1494,13 @@ void CvUnit::updateCombat(bool bQuick)
 			// TAC Capturing Ships - ray
 			bool displayCapturedShipMessage = false;
 			int capturingShipChance = GC.getBASE_CHANCE_CAPTURING_SHIPS();
-			int randomShipCaptureValue = GC.getGameINLINE().getSorenRandNum(1000, "Capture Ships");
+			const int randomShipCaptureValue = GC.getGameINLINE().getSorenRandNum(1000, "Capture Ships");
 
 			// ray, fix for bNoCapture being ingored
-			if (m_pUnitInfo->isCapturesShips() && !pDefender->getUnitInfo().isAnimal() && !pDefender->getUnitInfo().isNoCapture())
+			if (getUnitInfo().isCapturesShips() && !pDefender->getUnitInfo().isAnimal() && !pDefender->getUnitInfo().isNoCapture())
 			{
 				// WTP, ray, Capture Ship chance increase - START
-				int iCaptureShipsChanceIncrease = m_pUnitInfo->getCaptureShipsChanceIncrease();
+				const int iCaptureShipsChanceIncrease = getUnitInfo().getCaptureShipsChanceIncrease();
 				capturingShipChance = capturingShipChance * (100 + iCaptureShipsChanceIncrease) / 100;
 				// WTP, ray, Capture Ship chance increase - START
 
@@ -1523,20 +1513,21 @@ void CvUnit::updateCombat(bool bQuick)
 					{
 						bool bAtWar = GET_TEAM(getTeam()).isAtWar(pDefender->getTeam());
 
-						if ((m_pUnitInfo->isCapturesCargo() && bAtWar) || !m_pUnitInfo->isCapturesCargo())
+						if ((getUnitInfo().isCapturesCargo() && bAtWar) || !getUnitInfo().isCapturesCargo())
 						{
 							// duplicate defeated unit
 							CvUnit* pkCapturedUnitAfterSeaFight = GET_PLAYER(getOwnerINLINE()).initUnit(pDefender->getUnitType(), NO_PROFESSION, pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_UNITAI, NO_DIRECTION, pDefender->getYieldStored());
-							int iDamageRand = std::max(10, GC.getGameINLINE().getSorenRandNum(75, "random ship damage"));
-							int iOldModifier = std::max(1, 100 + GET_PLAYER(pDefender->getOwnerINLINE()).getLevelExperienceModifier());
-							int iOurModifier = std::max(1, 100 + GET_PLAYER(pkCapturedUnitAfterSeaFight->getOwnerINLINE()).getLevelExperienceModifier());
 							displayCapturedShipMessage = true;
 
 							pkCapturedUnitAfterSeaFight->setGameTurnCreated(pDefender->getGameTurnCreated());
-							pkCapturedUnitAfterSeaFight->setDamage(GC.getMAX_HIT_POINTS() * iDamageRand / 100);
+							pkCapturedUnitAfterSeaFight->addDamageRandom(10, 75, 5);
 							pkCapturedUnitAfterSeaFight->setFacingDirection(pDefender->getFacingDirection(false));
 							pkCapturedUnitAfterSeaFight->setLevel(pDefender->getLevel());
+
+							const int iOldModifier = std::max(1, 100 + GET_PLAYER(pDefender->getOwnerINLINE()).getLevelExperienceModifier());
+							const int iOurModifier = std::max(1, 100 + GET_PLAYER(pkCapturedUnitAfterSeaFight->getOwnerINLINE()).getLevelExperienceModifier());
 							pkCapturedUnitAfterSeaFight->setExperience(std::max(0, (pDefender->getExperience() * iOurModifier) / iOldModifier));
+
 							pkCapturedUnitAfterSeaFight->setName(pDefender->getNameNoDesc());
 							pkCapturedUnitAfterSeaFight->setLeaderUnitType(pDefender->getLeaderUnitType());
 							for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
@@ -1583,33 +1574,21 @@ void CvUnit::updateCombat(bool bQuick)
 			}
 			// TAC - AI purchases military units - koma13 - END
 
-			if (!m_pUnitInfo->isHiddenNationality() && !pDefender->getUnitInfo().isHiddenNationality())
+			if (!getUnitInfo().isHiddenNationality() && !pDefender->getUnitInfo().isHiddenNationality())
 			{
 				// R&R, ray, Natives raiding party - START
-				if (bIsNativeRaid)
+				if (GET_PLAYER(getOwnerINLINE()).isNative() && pDefender->getUnitInfo().isTreasure())
 				{
-					if (GET_PLAYER(getOwnerINLINE()).isNative())
-					{
-						if (pDefender->getUnitInfo().isTreasure())
-						{
-							int iRaidTreasureSum = pDefender->getYieldStored() * GC.getNATIVE_GOODS_RAID_PERCENT() / 100;
-							OOS_LOG("Raid gold", iRaidTreasureSum);
-							GET_PLAYER(getOwnerINLINE()).changeGold(iRaidTreasureSum);
-						}
-					}
+					int iRaidTreasureSum = pDefender->getYieldStored() * GC.getNATIVE_GOODS_RAID_PERCENT() / 100;
+					OOS_LOG("Raid gold", iRaidTreasureSum);
+					GET_PLAYER(getOwnerINLINE()).changeGold(iRaidTreasureSum);
 				}
-				else
+
+				if (!bIsNativeRaid)
 				{
 					GET_TEAM(getTeam()).AI_changeWarSuccess(pDefender->getTeam(), GC.getDefineINT("WAR_SUCCESS_ATTACKING"));
 					if (GET_PLAYER(getOwnerINLINE()).isNative())
 					{
-						if (pDefender->getUnitInfo().isTreasure())
-						{
-							int iRaidTreasureSum = pDefender->getYieldStored() * GC.getNATIVE_GOODS_RAID_PERCENT() / 100;
-							OOS_LOG("Native attack gold", iRaidTreasureSum);
-							GET_PLAYER(getOwnerINLINE()).changeGold(iRaidTreasureSum);
-						}
-
 						GET_TEAM(getTeam()).AI_changeDamages(pDefender->getTeam(), -2 * pDefender->getUnitInfo().getAssetValue());
 					}
 				}
@@ -1686,7 +1665,7 @@ void CvUnit::updateCombat(bool bQuick)
 			gDLL->getEventReporterIFace()->combatResult(this, pDefender);
 
 			bool bAdvance = false;
-			bool bRaided = raidWeapons(pDefender);
+			const bool bRaided = raidWeapons(pDefender);
 
 			// WTP, ray, prevent Barbarian Civs to eject all the unarmed Units to defend a City it just conquered - START
 			// if (!pDefender->isUnarmed() || GET_PLAYER(getOwnerINLINE()).isNative())
