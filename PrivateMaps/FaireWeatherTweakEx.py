@@ -4389,7 +4389,7 @@ def getNumCustomMapOptionValues(argsList):
         elif mc.mapOptionNames[optionID] == "river commonality":
             return 3
         elif mc.mapOptionNames[optionID] == "river length":
-            return 7
+            return 6
         elif mc.mapOptionNames[optionID] == "land percent":
             return 4
         
