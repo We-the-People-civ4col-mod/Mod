@@ -1682,35 +1682,30 @@ void CvUnit::updateCombat(bool bQuick)
 				}
 			}
 
-			bAdvance = canAdvance(pPlot, ((pDefender->canDefend()) ? 1 : 0));
-
-			if (!isNoUnitCapture())
+			if (	!isNoUnitCapture() &&
+ 						!GET_PLAYER(getOwnerINLINE()).isNative() &&
+						!GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE()) &&
+						!GC.getGameINLINE().isChurchPlayer(getOwnerINLINE()) )
 			{
 				pDefender->setCapturingPlayer(getOwnerINLINE());
+				CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
+				while (pUnitNode != NULL)
+				{
+					CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+					pUnitNode = pPlot->nextUnitNode(pUnitNode);
+					if (pLoopUnit != pDefender)
+					{
+						if (isEnemy(pLoopUnit->getCombatTeam(getTeam(), pPlot), pPlot) && pLoopUnit->isUnarmed() && !pLoopUnit->isCargo())
+						{
+							pLoopUnit->setCapturingPlayer(getOwnerINLINE());
+							pLoopUnit->kill(false);
+						}
+					}
+				}
 			}
 
-			// if (bAdvance && !isNoUnitCapture() && !pDefender->canDefend())
-			// {
-			// 	if ( !GET_PLAYER(getOwnerINLINE()).isNative() && !GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE()) && !GC.getGameINLINE().isChurchPlayer(getOwnerINLINE()))
-			// 	{
-			// 		pDefender->setCapturingPlayer(getOwnerINLINE());
-			// 		CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
-			// 		while (pUnitNode != NULL)
-			// 		{
-			// 			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-			// 			pUnitNode = pPlot->nextUnitNode(pUnitNode);
-			//
-			// 			if (pLoopUnit != pDefender)
-			// 			{
-			// 				if (isEnemy(pLoopUnit->getCombatTeam(getTeam(), pPlot), pPlot))
-			// 				{
-			// 					pLoopUnit->setCapturingPlayer(getOwnerINLINE());
-			// 					pLoopUnit->kill(false);
-			// 				}
-			// 			}
-			// 		}
-			// 	}
-			// }
+			bAdvance = canAdvance(pPlot, ((pDefender->canDefend()) ? 1 : 0));
+
 
 			pDefender->kill(false);
 			pDefender = NULL;
