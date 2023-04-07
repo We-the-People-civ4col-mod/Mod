@@ -23,6 +23,7 @@
 		<Tag>TXT_KEY_CREDITS_SPECIAL</Tag>
 		<English>[H1]Special Credits[\H1]</English>
 		<German>[H1]Besonderen Dank[\H1]</German>
+		<Spanish>[H1]Agradecimientos Especiales[\H1]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_RAR</Tag>
@@ -120,16 +121,20 @@ Vous pouvez contacter RaR via le site "CivFanatics" : http://forums.civfanatics.
 		<Tag>TXT_KEY_CREDITS_f1rpo</Tag>
 		<English>f1rpo (continous support related to coding)</English>
 		<German>f1rpo (wiederholte Unterstützung zu Code)</German>
+		<Spanish>f1rpo (ayuda repetida con código)</Spanish>
 	</TEXT>
 		<TEXT>
 		<Tag>TXT_KEY_CREDITS_karadoc</Tag>
 		<English>karadoc (for his pathfinding code)</English>
 		<German>karadoc (für seinen Pathfinding Code)</German>
+		<Spanish>karadoc (por su algoritmo de búsqueda)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_FORMER_MEMBER</Tag>
 		<English>(former member)</English>
+		<German>(früheres Mitglied)</German>
 		<French>(ex-membre)</French>
+		<Spanish>(ex-miembro)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_MELCHER_KURZER</Tag>
