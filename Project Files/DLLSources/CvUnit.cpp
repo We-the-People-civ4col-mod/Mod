@@ -1140,7 +1140,7 @@ void CvUnit::updateCombat(bool bQuick)
 	CvWString szBuffer;
 
 	bool bFinish = false;
-	const bool bVisible = !bQuick;
+	const bool bVisible = bQuick ? false : bVisible = isCombatVisible(pDefender);
 
 	if (getCombatTimer() > 0)
 	{
