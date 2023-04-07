@@ -24,7 +24,7 @@ closedir(DIR);
 foreach my $file (@files)
 {
 	print "Checksums $file\n";
-	print "DM5  ", digest_file_hex($file, "MD5"), "\n";
+	print "MD5  ", digest_file_hex($file, "MD5"), "\n";
 	
 	print "sha1 ";
 	my $sha = Digest::SHA->new(1);
