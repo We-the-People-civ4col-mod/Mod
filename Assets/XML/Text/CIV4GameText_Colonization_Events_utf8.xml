@@ -8719,420 +8719,420 @@
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COTTON_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]cotton[COLOR_REVERT] with Africa has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] mit Afrika hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]хлопка[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COTTON_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]cotton[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]хлопка[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COTTON_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]cotton[COLOR_REVERT] with Africa.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] mit Afrika begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]хлопка[COLOR_REVERT] на рынки Африки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_COTTON_FAILED</Tag>
         <English>Milord, another colonial nation has cornered the market in the colonies for [COLOR_FONT_GOLD]cotton[COLOR_REVERT] with Africa.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] mit Afrika zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]хлопка[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COTTON_DONE</Tag>
         <English>Milord, we are now the leading trader in [COLOR_FONT_GOLD]cotton[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]хлопка[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_INDIGO_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]indigo[COLOR_REVERT] with Africa has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] mit Afrika hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]индиго[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_INDIGO_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]indigo[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]индиго[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_INDIGO_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]indigo[COLOR_REVERT] with Africa.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] mit Afrika begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]индиго[COLOR_REVERT] на рынки Африки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_INDIGO_FAILED</Tag>
         <English>Milord, another colonial nation has cornered the market in the colonies for [COLOR_FONT_GOLD]indigo[COLOR_REVERT] with Africa.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] mit Afrika zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]индиго[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_INDIGO_DONE</Tag>
         <English>Milord, we are now the leading trader of [COLOR_FONT_GOLD]indigo[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]индиго[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_LOGWOOD_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]logwood[COLOR_REVERT] with Africa has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Blauholz[COLOR_REVERT] mit Afrika hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]кампеша[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_LOGWOOD_DONE</Tag>
         <English>Milord, we are now the leading trader in [COLOR_FONT_GOLD]logwood[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Blauholz[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]кампеша[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_LOGWOOD_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]logwood[COLOR_REVERT] with Africa.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Blauholz[COLOR_REVERT] mit Afrika begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]кампеша[COLOR_REVERT] на рынки Африки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_LOGWOOD_FAILED</Tag>
         <English>Milord, another colonial nation has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]logwood[COLOR_REVERT] with Africa.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Blauholz[COLOR_REVERT] mit Afrika zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]кампеша[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_LOGWOOD_DONE</Tag>
         <English>Milord, we are now the leading trader in [COLOR_FONT_GOLD]logwood[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Blauholz[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кампеша[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COCHINEAL_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] with Africa has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Cochenille-Schildläuse[COLOR_REVERT] mit Afrika hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]кошенили[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COCHINEAL_DONE</Tag>
         <English>Milord, we are now the leading trader in [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Cochenille-Schildläusen[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]кошенили[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COCHINEAL_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] with Africa.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Cochenille-Schildläuse[COLOR_REVERT] mit Afrika begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]кошенили[COLOR_REVERT] на рынки Африки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_COCHINEAL_FAILED</Tag>
         <English>Milord, another colonial nation has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] with Africa.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Cochenille-Schildläuse[COLOR_REVERT] mit Afrika zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]кошенили[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COCHINEAL_DONE</Tag>
         <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Cochenille-Schildläusen[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кошенили[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COFFEE_BERRIES_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]coffee berries[COLOR_REVERT] with Africa has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] mit Afrika hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]кофейных ягод[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COFFEE_BERRIES_DONE</Tag>
         <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]coffee berries[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]кофейных ягод[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COFFEE_BERRIES_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]coffee berries[COLOR_REVERT] with Africa.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] mit Afrika begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]кофейных ягод[COLOR_REVERT] на рынки Африки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_COFFEE_BERRIES_FAILED</Tag>
         <English>Milord, another colonial nation has cornered the market in the colonies for [COLOR_FONT_GOLD]coffee berries[COLOR_REVERT] with Africa.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] mit Afrika zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]кофейных ягод[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COFFEE_BERRIES_DONE</Tag>
         <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]coffee berries[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кофейных ягод[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_PEANUTS_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] with Africa has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] mit Afrika hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]арахиса[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_PEANUTS_DONE</Tag>
         <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]арахиса[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_PEANUTS_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] with Africa.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] mit Afrika begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]арахиса[COLOR_REVERT] на рынки Африки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_PEANUTS_FAILED</Tag>
         <English>Milord, another colonial nation has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] with Africa.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] mit Afrika zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]арахиса[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_PEANUTS_DONE</Tag>
         <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]арахиса[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_RED_PEPPER_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] with Africa has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]roten Pfeffer[COLOR_REVERT] mit Afrika hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]красного перца[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_RED_PEPPER_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]rotem Pfeffer[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]красного перца[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_RED_PEPPER_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] with Africa.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]rotem Pfeffer[COLOR_REVERT] mit Afrika begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]красного перца[COLOR_REVERT] на рынки Африки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_RED_PEPPER_FAILED</Tag>
         <English>Milord, another colonial nation has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] with Africa.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]roten Pfeffer[COLOR_REVERT] mit Afrika zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]красного перца[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_RED_PEPPER_DONE</Tag>
         <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]rotem Pfeffer[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]красного перца[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_VANILLA_PODS_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]green vanilla pods[COLOR_REVERT] with Africa has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]grüne Vanilleschoten[COLOR_REVERT] mit Afrika hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]стручков ванили[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_VANILLA_PODS_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]green vanilla pods[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]grünen Vanilleschoten[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]стручков ванили[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_VANILLA_PODS_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]green vanilla pods[COLOR_REVERT] with Africa.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]grüner Vanilleschoten[COLOR_REVERT] mit Afrika begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]стручков ванили[COLOR_REVERT] на рынки Африки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_VANILLA_PODS_FAILED</Tag>
         <English>Milord, another colonial nation has cornered the market in the colonies for [COLOR_FONT_GOLD]green vanilla pods[COLOR_REVERT] with Africa.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]grüne Vanilleschoten[COLOR_REVERT] mit Afrika zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]стручков ванили[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_VANILLA_PODS_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]green vanilla pods[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]grünen Vanilleschoten[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]стручков ванили[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_MAPLE_SIRUP_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] with Africa has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Ahornsaft[COLOR_REVERT] mit Afrika hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]кленового сиропа[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_MAPLE_SIRUP_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Ahornsaft[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]кленового сиропа[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_MAPLE_SIRUP_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] with Africa.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Ahornsaft[COLOR_REVERT] mit Afrika begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]кленового сиропа[COLOR_REVERT] на рынки Африки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_MAPLE_SIRUP_FAILED</Tag>
         <English>Milord, another colonial nation has cornered the market in the colonies for [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] with Africa.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Ahornsaft[COLOR_REVERT] mit Afrika zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]кленового сиропа[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_MAPLE_SIRUP_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Ahornsaft[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кленового сиропа[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_KAUTSCHUK_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]rubber[COLOR_REVERT] with Africa has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] mit Afrika hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]каучука[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_KAUTSCHUK_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]rubber[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]каучука[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_KAUTSCHUK_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]rubber[COLOR_REVERT] with Africa.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] mit Afrika begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]каучука[COLOR_REVERT] на рынки Африки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_KAUTSCHUK_FAILED</Tag>
         <English>Milord, another colonial nation has succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]rubber[COLOR_REVERT] with Africa.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] mit Afrika zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]каучука[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_KAUTSCHUK_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]rubber[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]каучука[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_HARDWOOD_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] with Africa has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Afrika hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_HARDWOOD_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_HARDWOOD_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] with Africa.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Afrika begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] на рынки Африки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_HARDWOOD_FAILED</Tag>
         <English>Milord, another colonial nation has cornered the market in the colonies for [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] with Africa.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Afrika zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_HARDWOOD_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_BLACK_POWDER_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Africa has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Afrika hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_BLACK_POWDER_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Africa.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Afrika begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] на рынки Африки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_BLACK_POWDER_FAILED</Tag>
         <English>Milord, another colonial nation has cornered the market in the colonies for [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Africa.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Afrika zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_BLADES_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]blades[COLOR_REVERT] with Africa has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Afrika hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_BLADES_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]blades[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_BLADES_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]blades[COLOR_REVERT] with Africa.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Afrika begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] на рынки Африки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_BLADES_FAILED</Tag>
         <English>Milord, another colonial nation has cornered the market in the colonies for [COLOR_FONT_GOLD]blades[COLOR_REVERT] with Africa.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Afrika zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_BLADES_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]blades[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_CANNONS_START</Tag>
         <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Africa has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] mit Afrika hat begonnen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_CANNONS_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_CANNONS_START</Tag>
         <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Africa.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] mit Afrika begeistert.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT] на рынки Африки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_CANNONS_FAILED</Tag>
         <English>Milord, another colonial nation has cornered the market in the colonies for [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Africa.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] mit Afrika zu beherrschen.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Африку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_CANNONS_DONE</Tag>
         <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Africa.</English>
         <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] mit Afrika zu werden.</German>
-        <Russian>йцукен</Russian>
+        <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
 </Civ4GameText>
