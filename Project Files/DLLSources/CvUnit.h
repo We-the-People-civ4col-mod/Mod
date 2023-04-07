@@ -680,6 +680,7 @@ public:
 	void acquireAnyNegativePromotion(); //WTP, ray Negative Promotions - START
 	void cleanseAllNegativePromotions(); //WTP, ray Negative Promotions - START
 	bool isHasNegativePromotion() const; //WTP, ray Negative Promotions - START
+	bool testWillGetNegativePromotion() const;
 	bool canAcquirePromotionAny() const;
 	bool isPromotionValid(PromotionTypes ePromotion) const;
 	bool isHasPromotion(PromotionTypes eIndex) const;
