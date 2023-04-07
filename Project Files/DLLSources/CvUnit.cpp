@@ -1175,8 +1175,6 @@ void CvUnit::updateCombat(bool bQuick)
 	}
 	// R&R, ray, Natives raiding party - END
 
-	const bool bVisible = bQuick ? false : isCombatVisible(pDefender);
-
 	if (pDefender == NULL)
 	{
 		setAttackPlot(NULL);
@@ -1188,6 +1186,7 @@ void CvUnit::updateCombat(bool bQuick)
 
 		return;
 	}
+
 	// TAC - Whaling - koma13 - START
 	else if (pDefender->isGatheringResource())
 	{
@@ -1195,6 +1194,8 @@ void CvUnit::updateCombat(bool bQuick)
 		pDefender->setGatheringResource(false);
 	}
 	// TAC - Whaling - koma13 - END
+
+	const bool bVisible = bQuick ? false : isCombatVisible(pDefender);
 
 	//FAssertMsg((pPlot == pDefender->plot()), "There is not expected to be a defender or the defender's plot is expected to be pPlot (the attack plot)");
 
@@ -1682,7 +1683,9 @@ void CvUnit::updateCombat(bool bQuick)
 				}
 			}
 
+			// If defender is a civilian unit, capture it and all other civilian units on the plot
 			if (	!isNoUnitCapture() &&
+						pDefender->isUnarmed() &&
  						!GET_PLAYER(getOwnerINLINE()).isNative() &&
 						!GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE()) &&
 						!GC.getGameINLINE().isChurchPlayer(getOwnerINLINE()) )
