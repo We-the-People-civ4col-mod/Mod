@@ -181,7 +181,7 @@ public:
 	DllExport FAStar& getRouteFinder();
 	DllExport FAStar& getBorderFinder();
 	DllExport FAStar& getAreaFinder();
-	
+
 	NiPoint3& getPt3Origin();
 
 	DllExport std::vector<CvInterfaceModeInfo*>& getInterfaceModeInfo();
@@ -777,7 +777,7 @@ public:
 	int getBASE_CHANCE_CONTINENTAL_GUARD();
 	int getBASE_CHANCE_MORTAR();
 	int getCHURCH_CONTACT_CHANCE();
-	int getMIN_ROUND_CHURCH_CONTACT();	
+	int getMIN_ROUND_CHURCH_CONTACT();
 	int getBASE_CHANCE_CHURCH_WAR();
 	int getMIN_ROUND_CHURCH_WAR();
 	int getPRICE_MILITIA();
@@ -812,6 +812,8 @@ public:
 	int getNATIVE_POTENTIAL_RAID_TARGET_THRESHOLD();
 	int getNATIVE_GOODS_RAID_PERCENT();
 	int getRANDOM_NATIVE_RAID_BASECHANCE();
+	int getNATIVE_PRODUCTION_RAID_MIN();
+	int getNATIVE_PRODUCTION_RAID_RANDOM();
 	int getNATIVE_SPARE_AI_TREASURE_CHANCE();
 	// Roundwise Native Income
 	int getPER_ROUND_PER_VILLAGE_INCOME_MAX();
@@ -992,7 +994,7 @@ public:
 	void deleteInfoArrays();
 
 	void cleanInfoStrings();
-	
+
 	const InfoArray<YieldTypes>& getDomesticDemandYieldTypes() const { return m_iaDomesticDemandYieldTypes; }
 
 	void setCityCatchmentRadius(int iSetting);
@@ -1241,7 +1243,7 @@ protected:
 	// TAC - AI Improved Navel AI - koma13 - END
 
 	// R&R, ray, caching globals from Global Defines Alt - START
-	// Caching Vanilla variables 
+	// Caching Vanilla variables
 	int m_PLOT_VISIBILITY_RANGE;
 	int m_UNIT_VISIBILITY_RANGE;
 	int m_MIN_CITY_YIELD_DECAY;
@@ -1257,7 +1259,7 @@ protected:
 	// Domestic Market
 	int m_PRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS;
 	int m_DOMESTIC_SALES_MESSAGES;
-	// Wild Animals	
+	// Wild Animals
 	int m_WILD_ANIMAL_LAND_TERRAIN_NATIVE_WEIGHT;
 	int m_WILD_ANIMAL_LAND_UNIT_VARIATION_WEIGHT;
 	int m_WILD_ANIMAL_SEA_TERRAIN_NATIVE_WEIGHT;
@@ -1394,6 +1396,8 @@ protected:
 	int m_NATIVE_POTENTIAL_RAID_TARGET_THRESHOLD;
 	int m_NATIVE_GOODS_RAID_PERCENT;
 	int m_RANDOM_NATIVE_RAID_BASECHANCE;
+	int m_NATIVE_PRODUCTION_RAID_MIN;
+	int m_NATIVE_PRODUCTION_RAID_RANDOM;
 	int m_NATIVE_SPARE_AI_TREASURE_CHANCE;
 	// Roundwise Native Income
 	int m_PER_ROUND_PER_VILLAGE_INCOME_MAX;
@@ -1500,7 +1504,7 @@ protected:
 	int m_iUSE_ON_UPDATE_CALLBACK;
 	int m_iUSE_ON_UNIT_CREATED_CALLBACK;
 	int m_iUSE_ON_UNIT_LOST_CALLBACK;
-	
+
 	ProfilerManager m_ProfileManager;
 
 	// K-Mod \ RaR
@@ -1510,7 +1514,7 @@ protected:
 	bool m_bUSE_DO_GROWTH_CALLBACK;
 	bool m_bUSE_DO_CULTURE_CALLBACK;
 	bool m_bUSE_DO_PLOT_CULTURE_CALLBACK;
-	bool m_bUSE_DO_PRODUCTION_CALLBACK;	
+	bool m_bUSE_DO_PRODUCTION_CALLBACK;
 	bool m_bUSE_AI_CHOOSE_PRODUCTION_CALLBACK;
 	bool m_bUSE_DO_PILLAGE_GOLD_CALLBACK;
 	bool m_bUSE_GET_EXPERIENCE_NEEDED_CALLBACK;
@@ -1537,11 +1541,11 @@ protected:
 
 		inline bool getUSE_AI_UNIT_UPDATE_CALLBACK() { return m_bUSE_AI_UNIT_UPDATE_CALLBACK; }
 		inline bool getUSE_AI_DO_DIPLO_CALLBACK() { return m_bUSE_AI_DO_DIPLO_CALLBACK; }
-		inline bool getUSE_AI_DO_WAR_CALLBACK() { return m_bUSE_AI_DO_WAR_CALLBACK; }		
+		inline bool getUSE_AI_DO_WAR_CALLBACK() { return m_bUSE_AI_DO_WAR_CALLBACK; }
 		inline bool getUSE_DO_GROWTH_CALLBACK() { return m_bUSE_DO_GROWTH_CALLBACK; }
 		inline bool getUSE_DO_CULTURE_CALLBACK() { return m_bUSE_DO_CULTURE_CALLBACK; }
 		inline bool getUSE_DO_PLOT_CULTURE_CALLBACK() { return m_bUSE_DO_PLOT_CULTURE_CALLBACK; }
-		inline bool getUSE_DO_PRODUCTION_CALLBACK() { return m_bUSE_DO_PRODUCTION_CALLBACK; }		
+		inline bool getUSE_DO_PRODUCTION_CALLBACK() { return m_bUSE_DO_PRODUCTION_CALLBACK; }
 		inline bool getUSE_AI_CHOOSE_PRODUCTION_CALLBACK() { return m_bUSE_AI_CHOOSE_PRODUCTION_CALLBACK; }
 		inline bool getUSE_DO_PILLAGE_GOLD_CALLBACK() { return m_bUSE_DO_PILLAGE_GOLD_CALLBACK; }
 		inline bool getUSE_GET_EXPERIENCE_NEEDED_CALLBACK() { return m_bUSE_GET_EXPERIENCE_NEEDED_CALLBACK; }
@@ -2344,6 +2348,14 @@ inline int CvGlobals::getNATIVE_GOODS_RAID_PERCENT()
 inline int CvGlobals::getRANDOM_NATIVE_RAID_BASECHANCE()
 {
 	return m_RANDOM_NATIVE_RAID_BASECHANCE;
+}
+inline int CvGlobals::getNATIVE_PRODUCTION_RAID_MIN()
+{
+	return m_NATIVE_PRODUCTION_RAID_MIN;
+}
+inline int CvGlobals::getNATIVE_PRODUCTION_RAID_RANDOM()
+{
+	return m_NATIVE_PRODUCTION_RAID_RANDOM;
 }
 inline int CvGlobals::getNATIVE_SPARE_AI_TREASURE_CHANCE()
 {

@@ -542,6 +542,14 @@
 		<iDefineIntVal>1</iDefineIntVal>
 	</Define>
 	<Define>
+		<DefineName>NATIVE_PRODUCTION_RAID_MIN</DefineName>
+		<iDefineIntVal>20</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>NATIVE_PRODUCTION_RAID_RANDOM</DefineName>
+		<iDefineIntVal>80</iDefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>NATIVE_SPARE_AI_TREASURE_CHANCE</DefineName>
 		<iDefineIntVal>75</iDefineIntVal>
 	</Define>

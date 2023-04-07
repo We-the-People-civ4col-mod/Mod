@@ -15341,7 +15341,19 @@ bool CvUnit::raidProduction(CvCity* pCity)
 			return false;
 		}
 
-		pCity->setBuildingProduction(eTarget, 0);
+		int iMaxRaidedProduction = GC.getNATIVE_PRODUCTION_RAID_MIN();
+		iMaxRaidedProduction += + GC.getGameINLINE().getSorenRandNum(GC.getNATIVE_PRODUCTION_RAID_RANDOM(), "Raid random building production amount");
+
+		const bool bOnlyPartialProductionRaided = iMaxRaidedProduction < pCity->getBuildingProduction(eTarget);
+
+		if (bOnlyPartialProductionRaided)
+		{
+			pCity->changeBuildingProduction(eTarget, -iMaxRaidedProduction);
+		}
+		else
+		{
+			pCity->setBuildingProduction(eTarget, 0);
+		}
 
 		GET_TEAM(getTeam()).AI_changeDamages(pCity->getTeam(), -GC.getBuildingInfo(eTarget).getAssetValue());
 
@@ -15353,9 +15365,9 @@ bool CvUnit::raidProduction(CvCity* pCity)
 			gDLL->getInterfaceIFace()->playGeneralSound("AS3D_UN_CITY_EXPLOSION", pPlot->getPoint());
 		}
 
-		CvWString szString = gDLL->getText("TXT_KEY_PRODUCTION_RAIDED", GC.getCivilizationInfo(getCivilizationType()).getAdjectiveKey(), pCity->getNameKey(), GC.getBuildingInfo(eTarget).getTextKeyWide());
-		gDLL->UI().addPlayerMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szString, "AS2D_CITYRAID", MESSAGE_TYPE_MINOR_EVENT, GC.getBuildingInfo(eTarget).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pCity->getX_INLINE(), pCity->getY_INLINE(), true, true);
-		gDLL->UI().addPlayerMessage(pCity->getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szString, "AS2D_CITYRAID", MESSAGE_TYPE_MINOR_EVENT, GC.getBuildingInfo(eTarget).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pCity->getX_INLINE(), pCity->getY_INLINE(), true, true);
+		CvWString szString = gDLL->getText(bOnlyPartialProductionRaided ? "TXT_KEY_PRODUCTION_RAIDED_PARTIAL" : "TXT_KEY_PRODUCTION_RAIDED", GC.getCivilizationInfo(getCivilizationType()).getAdjectiveKey(), pCity->getNameKey(), GC.getBuildingInfo(eTarget).getTextKeyWide());
+		gDLL->UI().addPlayerMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szString, pCity, "AS2D_CITYRAID", MESSAGE_TYPE_MINOR_EVENT, GC.getBuildingInfo(eTarget).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
+		gDLL->UI().addPlayerMessage(pCity->getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szString, pCity, "AS2D_CITYRAID", MESSAGE_TYPE_MINOR_EVENT, GC.getBuildingInfo(eTarget).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 	}
 	else if (pCity->isProductionUnit())
 	{
@@ -15367,7 +15379,19 @@ bool CvUnit::raidProduction(CvCity* pCity)
 			return false;
 		}
 
-		pCity->setUnitProduction(eTarget, 0);
+		int iMaxRaidedProduction = GC.getNATIVE_PRODUCTION_RAID_MIN();
+		iMaxRaidedProduction += + GC.getGameINLINE().getSorenRandNum(GC.getNATIVE_PRODUCTION_RAID_RANDOM(), "Raid random unit production amount");
+
+		const bool bOnlyPartialProductionRaided = iMaxRaidedProduction < pCity->getUnitProduction(eTarget);
+
+		if (bOnlyPartialProductionRaided)
+		{
+			pCity->changeUnitProduction(eTarget, -iMaxRaidedProduction);
+		}
+		else
+		{
+			pCity->setUnitProduction(eTarget, 0);
+		}
 
 		GET_TEAM(getTeam()).AI_changeDamages(pCity->getTeam(), -GC.getUnitInfo(eTarget).getAssetValue());
 
@@ -15379,9 +15403,9 @@ bool CvUnit::raidProduction(CvCity* pCity)
 			gDLL->getInterfaceIFace()->playGeneralSound("AS3D_UN_CITY_EXPLOSION", pPlot->getPoint());
 		}
 
-		CvWString szString = gDLL->getText("TXT_KEY_PRODUCTION_RAIDED", GC.getCivilizationInfo(getCivilizationType()).getAdjectiveKey(), pCity->getNameKey(), GC.getUnitInfo(eTarget).getTextKeyWide());
-		gDLL->UI().addPlayerMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szString, "AS2D_CITYRAID", MESSAGE_TYPE_MINOR_EVENT, GC.getUnitInfo(eTarget).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pCity->getX_INLINE(), pCity->getY_INLINE(), true, true);
-		gDLL->UI().addPlayerMessage(pCity->getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szString, "AS2D_CITYRAID", MESSAGE_TYPE_MINOR_EVENT, GC.getUnitInfo(eTarget).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pCity->getX_INLINE(), pCity->getY_INLINE(), true, true);
+		CvWString szString = gDLL->getText(bOnlyPartialProductionRaided ? "TXT_KEY_PRODUCTION_RAIDED_PARTIAL" : "TXT_KEY_PRODUCTION_RAIDED", GC.getCivilizationInfo(getCivilizationType()).getAdjectiveKey(), pCity->getNameKey(), GC.getUnitInfo(eTarget).getTextKeyWide());
+		gDLL->UI().addPlayerMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szString, pCity, "AS2D_CITYRAID", MESSAGE_TYPE_MINOR_EVENT, GC.getUnitInfo(eTarget).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
+		gDLL->UI().addPlayerMessage(pCity->getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szString, pCity, "AS2D_CITYRAID", MESSAGE_TYPE_MINOR_EVENT, GC.getUnitInfo(eTarget).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 	}
 
 	return true;
