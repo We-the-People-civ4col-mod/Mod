@@ -70,7 +70,7 @@ Current WTP team members
 
 Special Credits:
 	f1rpo (continous support related to coding)
-	karadoc (for hist pathfinding code)
+	karadoc (for his pathfinding code)
 
 Former (now inactive) RaR members:
 

@@ -937,6 +937,19 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 						szTextData += localText.getText(szName, ())
 						szTextData += localText.getText("[NEWLINE]", ())
 					
+					# special credits
+					list = []
+					list.append("TXT_KEY_CREDITS_f1rpo")
+					list.append("TXT_KEY_CREDITS_karadoc")
+					
+					szTextData += localText.getText("TXT_KEY_CREDITS_SPECIAL", ())
+					szTextData += localText.getText("[NEWLINE]", ())
+					
+					for szName in (list):
+						szTextData += localText.getText("[ICON_BULLET] ", ())
+						szTextData += localText.getText(szName, ())
+						szTextData += localText.getText("[NEWLINE]", ())
+					
 					# RAR
 					list = []
 					list.append("raystuttgart")

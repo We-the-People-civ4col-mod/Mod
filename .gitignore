@@ -1,5 +1,6 @@
 /Profile output.txt
 /UserSettings.txt
+/README.md
 *.pdb
 *.dll
 /Project Files/.vs/

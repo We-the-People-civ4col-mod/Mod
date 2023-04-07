@@ -20,6 +20,11 @@
 		<English>[H1]"We The People" (WTP)[\H1]</English>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CREDITS_SPECIAL</Tag>
+		<English>[H1]Special Credits[\H1]</English>
+		<German>[H1]Besonderen Dank[\H1]</German>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CREDITS_RAR</Tag>
 		<English>[H1]"Religion and Revolution" (RaR)[\H1] has been developed by an international mod-team at CivFanatics.[NEWLINE]Visit us here: http://forums.civfanatics.com/forumdisplay.php?f=455</English>
 		<French>[H1]"Religion and Revolution" (RaR)[\H1]a été développé par une équipe internationale de moddeurs sur le site de CivFanatics. Venez nous rendre visite ici: http://forums.civfanatics.com/forumdisplay.php?f=455[NEWLINE]</French>
@@ -110,6 +115,16 @@ Vous pouvez contacter RaR via le site "CivFanatics" : http://forums.civfanatics.
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_RAUWURGER</Tag>
 		<English>Raubwürger</English>
+	</TEXT>
+		<TEXT>
+		<Tag>TXT_KEY_CREDITS_f1rpo</Tag>
+		<English>f1rpo (continous support related to coding)</English>
+		<German>f1rpo (wiederholte Unterstützung zu Code)</German>
+	</TEXT>
+		<TEXT>
+		<Tag>TXT_KEY_CREDITS_karadoc</Tag>
+		<English>karadoc (for his pathfinding code)</English>
+		<German>karadoc (für seinen Pathfinding Code)</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_FORMER_MEMBER</Tag>
