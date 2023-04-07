@@ -1140,7 +1140,6 @@ void CvUnit::updateCombat(bool bQuick)
 	CvWString szBuffer;
 
 	bool bFinish = false;
-	const bool bVisible = bQuick ? false : bVisible = isCombatVisible(pDefender);
 
 	if (getCombatTimer() > 0)
 	{
@@ -1175,6 +1174,8 @@ void CvUnit::updateCombat(bool bQuick)
 		pDefender = pPlot->getBestDefender(NO_PLAYER, getOwnerINLINE(), this, (AI_getUnitAIState() == UNITAI_STATE_RAIDING_PARTY) ? false : true);
 	}
 	// R&R, ray, Natives raiding party - END
+
+	const bool bVisible = bQuick ? false : isCombatVisible(pDefender);
 
 	if (pDefender == NULL)
 	{
