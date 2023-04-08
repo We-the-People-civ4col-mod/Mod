@@ -10535,7 +10535,6 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 	CvPlot* pOldPlot;
 	CvPlot* pNewPlot;
 	CvPlot* pLoopPlot;
-	CLinkList<IDInfo> oldUnits;
 	ActivityTypes eOldActivityType;
 	int iI;
 
@@ -10580,66 +10579,6 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 			if (!(pTransportUnit->atPlot(pNewPlot)))
 			{
 				setTransportUnit(NULL);
-			}
-		}
-
-		if (canFight() && isOnMap())
-		{
-			oldUnits.clear();
-
-			pUnitNode = pNewPlot->headUnitNode();
-
-			while (pUnitNode != NULL)
-			{
-				oldUnits.insertAtEnd(pUnitNode->m_data);
-				pUnitNode = pNewPlot->nextUnitNode(pUnitNode);
-			}
-
-			pUnitNode = oldUnits.head();
-
-			while (pUnitNode != NULL)
-			{
-				pLoopUnit = ::getUnit(pUnitNode->m_data);
-				pUnitNode = oldUnits.next(pUnitNode);
-
-				if (pLoopUnit != NULL && pLoopUnit->isOnMap())
-				{
-					if (isEnemy(pLoopUnit->getTeam(), pNewPlot) || pLoopUnit->isEnemy(getTeam()))
-					{
-						if (!pLoopUnit->canCoexistWithEnemyUnit(getTeam()))
-						{
-							if (NO_UNITCLASS == pLoopUnit->getUnitInfo().getUnitCaptureClassType() && pLoopUnit->canDefend(pNewPlot))
-							{
-								// WTP, ray, fixing strange behaviour of Buccanneers - START
-								bool bExceptionForHiddenNationalityInTransport = false;
-								if (m_pUnitInfo->isHiddenNationality() && getTransportUnit() != NULL)
-								{
-									bExceptionForHiddenNationalityInTransport = true;
-								}
-								// WTP, ray, fixing strange behaviour of Buccanneers - END
-
-								if (!bExceptionForHiddenNationalityInTransport)
-								{
-									pLoopUnit->jumpToNearestValidPlot(); // can kill unit
-								}
-							}
-							else
-							{
-								if (!m_pUnitInfo->isHiddenNationality() && !pLoopUnit->getUnitInfo().isHiddenNationality())
-								{
-									GET_TEAM(getTeam()).AI_changeWarSuccess(pLoopUnit->getTeam(), GC.getDefineINT("WAR_SUCCESS_UNIT_CAPTURING"));
-								}
-
-								if (!isNoUnitCapture())
-								{
-									pLoopUnit->setCapturingPlayer(getOwnerINLINE());
-								}
-
-								pLoopUnit->kill(false, this);
-							}
-						}
-					}
-				}
 			}
 		}
 	}
