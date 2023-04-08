@@ -10683,7 +10683,7 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 				{
 					//ray18
 					// buy Land from Natives after acquire city
-					bool checkAcuqireNatives = doAcquireCheckNatives();
+					doAcquireCheckNatives();
 					//Ende ray18
 					GET_PLAYER(eNewOwner).acquireCity(pNewCity, true, false); // will delete the pointer
 				}
