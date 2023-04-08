@@ -5897,7 +5897,7 @@ void CvPlot::setCoastline(bool bRecalculate, bool bRebuildGraphics)
 		if (pLoopPlot != NULL && !pLoopPlot->isWater())
 		{
 			//WTP, ray preventing Shallow Coast explicity set on Maps to be transformed into Coast
-			if(getTerrainType() != TERRAIN_SHALLOW_COAST)
+			if(getTerrainType() != TERRAIN_LARGE_RIVERS && getTerrainType() != TERRAIN_LAKE && getTerrainType() != TERRAIN_ICE_LAKE && getTerrainType() != TERRAIN_SHALLOW_COAST)
 			{
 				//WTP, ray, Safety Check for Deep Water Coast if there is Ocean or Deep Coast adjacent - START
 				// case 1: There is Deep Water Coast or Ocean adjacent

@@ -137,7 +137,10 @@ void CvCityAI::AI_doTurn()
 
 	AI_doHurry();
 #endif
-	AI_doEmphasize();
+	if (!isHuman())
+	{
+		AI_doEmphasize();
+	}
 }
 
 //struct PopUnit
