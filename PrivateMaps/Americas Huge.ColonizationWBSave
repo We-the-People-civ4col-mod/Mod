@@ -28266,7 +28266,7 @@ EndPlot
 BeginPlot
 	x=32,y=56
 	BonusType=BONUS_PEARLS
-	TerrainType=TERRAIN_SHALLOW_COAST
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=18,
 EndPlot
