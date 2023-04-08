@@ -10688,13 +10688,6 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 					GET_PLAYER(eNewOwner).acquireCity(pNewCity, true, false); // will delete the pointer
 				}
 			}
-
-			const int iSlaveWorkerProductionBonus = getSlaveWorkerProductionBonus();
-			// Update city caches if required when entering a city
-			if (iSlaveWorkerProductionBonus != 0)
-			{
-				pNewCity->updateSlaveWorkerProductionBonus(iSlaveWorkerProductionBonus);
-			}
 		}
 
 		// Super Forts begin *culture* *text*
@@ -10790,6 +10783,16 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 		}
 
 		pNewCity = pNewPlot->getPlotCity();
+
+		if (pNewCity != NULL)
+		{
+			const int iSlaveWorkerProductionBonus = getSlaveWorkerProductionBonus();
+			// Update city caches if required when entering a city
+			if (iSlaveWorkerProductionBonus != 0)
+			{
+				pNewCity->updateSlaveWorkerProductionBonus(iSlaveWorkerProductionBonus);
+			}
+		}
 
 		pWorkingCity = pNewPlot->getWorkingCity();
 
