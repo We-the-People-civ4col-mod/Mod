@@ -13290,13 +13290,16 @@ void CvUnit::acquireAnyNegativePromotion()
 	PromotionTypes eNegativePromotionToGive = NO_PROMOTION;
 	int iBestNegativePromotionRandValue = 0;
 
-	for (int iI = 0; iI < GC.getNumPromotionInfos(); ++iI)
+	for (PromotionTypes ePromotion = FIRST_PROMOTION; ePromotion < NUM_PROMOTION_TYPES; ++ePromotion)
 	{
-		int iNegativePromotionRand = GC.getGameINLINE().getSorenRandNum(100, "Negative Promotion Rand");
-		if (canAcquireNegativePromotion((PromotionTypes)iI) && iNegativePromotionRand > iBestNegativePromotionRandValue)
+		if (canAcquireNegativePromotion(ePromotion))
 		{
-			eNegativePromotionToGive = (PromotionTypes)iI;
-			iBestNegativePromotionRandValue = iNegativePromotionRand;
+			const int iNegativePromotionRand = GC.getGameINLINE().getSorenRandNum(100, "Negative Promotion Rand");
+			if (iNegativePromotionRand > iBestNegativePromotionRandValue)
+			{
+				eNegativePromotionToGive = ePromotion;
+				iBestNegativePromotionRandValue = iNegativePromotionRand;
+			}
 		}
 	}
 
@@ -13313,18 +13316,24 @@ void CvUnit::acquireAnyNegativePromotion()
 
 void CvUnit::cleanseAllNegativePromotions()
 {
+	if (!m_embisPromotionApplied.hasContent())
+	{
+		// no need to loop promotions if the unit doesn't have any promotions at all
+		return;
+	}
+
 	bool bNegativePromotionCleansed = false;
 
-	for (int iI = 0; iI < GC.getNumPromotionInfos(); ++iI)
+	for (PromotionTypes ePromotion = FIRST_PROMOTION; ePromotion < NUM_PROMOTION_TYPES; ++ePromotion)
 	{
-		if (GC.getPromotionInfo((PromotionTypes) iI).isNegativePromotion() && isHasPromotion((PromotionTypes) iI))
+		if (isHasPromotion(ePromotion) && GC.getPromotionInfo(ePromotion).isNegativePromotion())
 		{
-			setHasRealPromotion((PromotionTypes) iI, false);
+			setHasRealPromotion(ePromotion, false);
 			bNegativePromotionCleansed = true;
 		}
 	}
 
-	// if we found a Negative Promotion, let us apply it
+	// if we found a Negative Promotion, let us report removal
 	if (bNegativePromotionCleansed)
 	{
 		CvWString szBuffer = gDLL->getText("TXT_KEY_UNIT_WAS_CLEASED_OF_NEGATIVE_PROMOTIONS", getUnitInfo().getTextKeyWide());
