@@ -50,6 +50,7 @@ enum ProfessionTypes
 enum SpecialUnitTypes
 {
 	SPECIALUNIT_COLONIST_UNIT,
+	SPECIALUNIT_YIELD_CARGO,
 };
 
 enum UnitClassTypes
