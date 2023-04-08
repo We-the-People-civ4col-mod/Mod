@@ -719,6 +719,7 @@ public:
 	YieldTypes getYield() const;
 	bool isGoods() const;
 	bool hasAnyUnitInCargo() const;
+	bool isYield() const;
 
 	void changeBadCityDefenderCount(int iChange);
 	int getBadCityDefenderCount() const;

@@ -1709,7 +1709,8 @@ void CvUnit::updateCombat(bool bQuick)
 					CvUnit* pLoopUnit = ::getUnit(info);
 					if (pLoopUnit != NULL && pLoopUnit != pDefender)
 					{
-						if (isEnemy(pLoopUnit->getCombatTeam(getTeam(), pPlot), pPlot) && pLoopUnit->isCapturableLandUnit())
+						if (isEnemy(pLoopUnit->getCombatTeam(getTeam(), pPlot), pPlot) &&
+								(pLoopUnit->isCapturableLandUnit() || pLoopUnit->isYield()))
 						{
 							pLoopUnit->setCapturingPlayer(getOwnerINLINE());
 							pLoopUnit->kill(false);
@@ -8882,6 +8883,13 @@ bool CvUnit::canCoexistWithEnemyUnit(TeamTypes eTeam) const
 	}
 	// WTP, ray, fixing strange behaviour of Buccanneers - END
 
+	// WTP, jooe - 2023-04-08: allow coexisting if a unit is going to be captured this turn - START
+	if (GET_PLAYER(getCapturingPlayer()).getTeam() == eTeam)
+	{
+		return true;
+	}
+	// WTP, jooe - 2023-04-08: allow coexisting if a unit is going to be captured this turn - END
+
 	if (!m_pUnitInfo->isInvisible() && !bExceptionForHiddenNationalityInTransport)
 	{
 		if (getInvisibleType() == NO_INVISIBLE)
@@ -10017,6 +10025,11 @@ bool CvUnit::hasAnyUnitInCargo() const
 	}
 
 	return false;
+}
+
+bool CvUnit::isYield() const
+{
+	return (getUnitInfo().getSpecialUnitType() == SPECIALUNIT_YIELD_CARGO);
 }
 
 bool CvUnit::canCargoAllMove() const
