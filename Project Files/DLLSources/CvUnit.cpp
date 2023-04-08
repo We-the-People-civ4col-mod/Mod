@@ -3729,7 +3729,7 @@ bool CvUnit::jumpToNearestValidPlot()
 	FAssertMsg(!isAttacking(), "isAttacking did not return false as expected");
 	FAssertMsg(!isFighting(), "isFighting did not return false as expected");
 
-	CvCity* pNearestCity = GC.getMapINLINE().findCity(getX_INLINE(), getY_INLINE(), getOwnerINLINE());
+	CvCity* pNearestCity = GC.getMapINLINE().findCity(coord(), getOwnerINLINE());
 	int iBestValue = MAX_INT;
 	CvPlot* pBestPlot = NULL;
 
@@ -3756,11 +3756,11 @@ bool CvUnit::jumpToNearestValidPlot()
 					bool bEuropeTravelstate = (getUnitTravelState() == UNIT_TRAVEL_STATE_FROM_EUROPE || getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE || getUnitTravelState() == UNIT_TRAVEL_STATE_TO_EUROPE);
 					if (getUnitTravelState() == NO_UNIT_TRAVEL_STATE || (bEuropeTravelstate && pLoopPlot->isEurope()))
 					{
-						int iValue = (plotDistance(getX_INLINE(), getY_INLINE(), pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE()) * 2);
+						int iValue = (plotDistance(coord(), pLoopPlot->coord()) * 2);
 
 						if (pNearestCity != NULL)
 						{
-							iValue += plotDistance(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), pNearestCity->getX_INLINE(), pNearestCity->getY_INLINE());
+							iValue += plotDistance(pLoopPlot->coord(), pNearestCity->coord());
 						}
 						if (pLoopPlot->area() != area())
 						{
