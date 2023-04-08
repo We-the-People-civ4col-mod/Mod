@@ -55,7 +55,7 @@
 	</Define>
 	<Define>
 		<DefineName>IMMIGRATION_MAX_CROSS_LIMIT</DefineName>
-		<iDefineIntVal>5000</iDefineIntVal>
+		<iDefineIntVal>2000</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>NBMOD_REF_ENABLE</DefineName>
