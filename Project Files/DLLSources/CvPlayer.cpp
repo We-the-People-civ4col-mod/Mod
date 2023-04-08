@@ -7089,6 +7089,16 @@ int CvPlayer::immigrationThreshold() const
 	iThreshold *= GC.getEraInfo(GC.getGameINLINE().getStartEra()).getGrowthPercent();
 	iThreshold /= 100;
 
+	// WTP, jooe - 2023-04-08: increase threshold if more than 5 units waiting on the docks - START
+	const int iUnitsWaitingEuropeModifier = std::max(0, getNumEuropeUnits() - 5);
+	const int iImmigrationThresholdModiferUnitsOnDock = GC.getIMMIGRATION_THRESHOLD_MODIFIER_UNITS_ON_DOCK();
+
+	for (int i = 0; i < iUnitsWaitingEuropeModifier; i++)
+	{
+		iThreshold *= 100 + iImmigrationThresholdModiferUnitsOnDock;
+		iThreshold /= 100;
+	}
+	// WTP, jooe - 2023-04-08: increase threshold if more than 5 units waiting on the docks - END
 
 	if (!isHuman())
 	{
