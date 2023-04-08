@@ -720,7 +720,7 @@
             <iBombardDefense>0</iBombardDefense>
             <iAsset>50</iAsset>
             <iPower>0</iPower>
-            <iYieldStorage>900</iYieldStorage>
+            <iYieldStorage>1200</iYieldStorage>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>1.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -798,7 +798,7 @@
             <iBombardDefense>0</iBombardDefense>
             <iAsset>50</iAsset>
             <iPower>0</iPower>
-            <iYieldStorage>600</iYieldStorage>
+            <iYieldStorage>900</iYieldStorage>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>1.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -874,7 +874,7 @@
             <iBombardDefense>0</iBombardDefense>
             <iAsset>100</iAsset>
             <iPower>0</iPower>
-            <iYieldStorage>1500</iYieldStorage>
+            <iYieldStorage>2100</iYieldStorage>
             <iStorageLossSellPercentage>50</iStorageLossSellPercentage>
             <fVisibilityPriority>1.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -968,7 +968,7 @@
             <iBombardDefense>0</iBombardDefense>
             <iAsset>100</iAsset>
             <iPower>0</iPower>
-            <iYieldStorage>2100</iYieldStorage>
+            <iYieldStorage>3000</iYieldStorage>
             <iStorageLossSellPercentage>60</iStorageLossSellPercentage>
             <fVisibilityPriority>1.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -1062,7 +1062,7 @@
             <iBombardDefense>0</iBombardDefense>
             <iAsset>150</iAsset>
             <iPower>0</iPower>
-            <iYieldStorage>2900</iYieldStorage>
+            <iYieldStorage>4500</iYieldStorage>
             <iStorageLossSellPercentage>80</iStorageLossSellPercentage>
             <bIgnoresBoycott>1</bIgnoresBoycott>
             <bUnlocksStorageLossTradeSettings>1</bUnlocksStorageLossTradeSettings>
@@ -1162,7 +1162,7 @@
             <iBombardDefense>0</iBombardDefense>
             <iAsset>150</iAsset>
             <iPower>0</iPower>
-            <iYieldStorage>3300</iYieldStorage>
+            <iYieldStorage>6000</iYieldStorage>
             <iStorageLossSellPercentage>90</iStorageLossSellPercentage>
             <bIgnoresBoycott>1</bIgnoresBoycott>
             <bUnlocksStorageLossTradeSettings>1</bUnlocksStorageLossTradeSettings>
