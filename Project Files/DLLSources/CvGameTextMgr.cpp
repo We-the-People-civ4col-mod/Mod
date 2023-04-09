@@ -1576,7 +1576,7 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, const CvPlot* pPl
 							{
 							case MISSION_MOVE_TO:
 							case MISSION_ROUTE_TO:
-								pMissionPlot =  GC.getMapINLINE().plotINLINE(pHeadGroup->getMissionData1(0), pHeadGroup->getMissionData2(0));
+								pMissionPlot =  GC.getMap().plotINLINE(pHeadGroup->getMissionData1(0), pHeadGroup->getMissionData2(0));
 								break;
 
 							case MISSION_MOVE_TO_UNIT:
@@ -9972,7 +9972,7 @@ void CvGameTextMgr::setEventHelp(CvWStringBuffer& szBuffer, EventTypes eEvent, i
 
 	CvCity* pCity = kActivePlayer.getCity(pTriggeredData->m_iCityId);
 	CvCity* pOtherPlayerCity = NULL;
-	CvPlot* pPlot = GC.getMapINLINE().plot(pTriggeredData->m_iPlotX, pTriggeredData->m_iPlotY);
+	CvPlot* pPlot = GC.getMap().plot(pTriggeredData->m_iPlotX, pTriggeredData->m_iPlotY);
 	CvUnit* pUnit = kActivePlayer.getUnit(pTriggeredData->m_iUnitId);
 
 	if (NO_PLAYER != pTriggeredData->m_eOtherPlayer)

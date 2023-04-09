@@ -64,7 +64,7 @@ int PlotRegion::getNumPlots() const
 CvPlot* PlotRegion::getPlot(int i) const
 {
 	FAssert(i >= 0 && i < getNumPlots());
-	return GC.getMapINLINE().plotByIndex(m_aiPlots[i]);
+	return GC.getMap().plotByIndex(m_aiPlots[i]);
 }
 
 bool PlotRegion::isTerrainAdjacent(const EnumMap<TerrainTypes, bool> em) const
@@ -122,7 +122,7 @@ void PlotRegion::merge(PlotRegion& rhs, std::vector<PlotRegion*>& plotRegions)
 template<typename T>
 PlotRegionMap::PlotRegionMap(const EnumMap<T, bool>& em)
 {
-	CvMap& kMap = GC.getMapINLINE();
+	CvMap& kMap = GC.getMap();
 	const int iNumPlots = kMap.numPlots();
 
 	std::vector<PlotRegion*> plotRegions;
@@ -175,7 +175,7 @@ const PlotRegion& PlotRegionMap::getRegion(int iIndex) const
 
 void PlotRegionMap::handlePlot(CvPlot* pPlot, int iX, int iY, std::vector<PlotRegion*>& plotRegions)
 {
-	CvPlot* pOtherPlot = GC.getMapINLINE().plotINLINE(pPlot->getX_INLINE() + iX, pPlot->getY_INLINE() + iY);
+	CvPlot* pOtherPlot = GC.getMap().plotINLINE(pPlot->getX_INLINE() + iX, pPlot->getY_INLINE() + iY);
 	if (pOtherPlot != NULL)
 	{
 		int iIndex = pOtherPlot->getIndex();
@@ -1249,7 +1249,7 @@ int CvMap::calculatePathDistance(CvPlot *pSource, CvPlot *pDest, CvPlot *pInvali
 
 	// Super Forts begin *canal* *choke*
 	// 1 must be added because 0 is already being used as the default value for iInfo in GeneratePath()
-	int iInvalidPlot = (pInvalidPlot == NULL) ? 0 : GC.getMapINLINE().plotNum(pInvalidPlot->getX_INLINE(), pInvalidPlot->getY_INLINE()) + 1;
+	int iInvalidPlot = (pInvalidPlot == NULL) ? 0 : GC.getMap().plotNum(pInvalidPlot->getX_INLINE(), pInvalidPlot->getY_INLINE()) + 1;
 
 	if (gDLL->getFAStarIFace()->GeneratePath(&GC.getStepFinder(), pSource->getX_INLINE(), pSource->getY_INLINE(), pDest->getX_INLINE(), pDest->getY_INLINE(), false, iInvalidPlot, true))
 //  if (gDLL->getFAStarIFace()->GeneratePath(&GC.getStepFinder(), pSource->getX_INLINE(), pSource->getY_INLINE(), pDest->getX_INLINE(), pDest->getY_INLINE(), false, 0, true)) -- original

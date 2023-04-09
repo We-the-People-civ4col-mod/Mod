@@ -293,9 +293,9 @@ void CvTeam::addTeam(TeamTypes eTeam)
 		}
 	}
 
-	for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 		pLoopPlot->changeVisibilityCount(getID(), pLoopPlot->getVisibilityCount(eTeam), NO_INVISIBLE);
 
@@ -339,9 +339,9 @@ void CvTeam::addTeam(TeamTypes eTeam)
 
 	if (bActiveTeamSwitched)
 	{
-		for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+		for (iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 		{
-			pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+			pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 			pLoopPlot->updateSymbols();
 			pLoopPlot->updateFog();
 			pLoopPlot->updateVisibility();
@@ -685,7 +685,7 @@ void CvTeam::declareWarNoRevolution(TeamTypes eTeam, bool bNewDiplo, WarPlanType
 
 		GET_TEAM(getID()).AI_doDamages(eTeam, false);
 
-		GC.getMapINLINE().verifyUnitValidPlot();
+		GC.getMap().verifyUnitValidPlot();
 
 		for (iI = 0; iI < MAX_PLAYERS; iI++)
 		{
@@ -941,7 +941,7 @@ void CvTeam::makePeace(TeamTypes eTeam, bool bBumpUnits)
 
 		if (bBumpUnits)
 		{
-			GC.getMapINLINE().verifyUnitValidPlot();
+			GC.getMap().verifyUnitValidPlot();
 		}
 
 		GC.getGameINLINE().AI_makeAssignWorkDirty();
@@ -1601,9 +1601,9 @@ int CvTeam::countEnemyDangerByArea(CvArea* pArea) const
 
 	iCount = 0;
 
-	for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 		if (pLoopPlot != NULL)
 		{
@@ -1627,7 +1627,7 @@ int CvTeam::getFatherCostModifier() const
 	iCostModifier *= GC.getHandicapInfo(getHandicapType()).getFatherPercent();
 	iCostModifier /= 100;
 
-	iCostModifier *= GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getFatherPercent();
+	iCostModifier *= GC.getWorldInfo(GC.getMap().getWorldSize()).getFatherPercent();
 	iCostModifier /= 100;
 
 	iCostModifier *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getFatherPercent();
@@ -2393,7 +2393,7 @@ void CvTeam::setOpenBorders(TeamTypes eIndex, bool bNewValue)
 
 		AI_setOpenBordersCounter(eIndex, 0);
 
-		GC.getMapINLINE().verifyUnitValidPlot();
+		GC.getMap().verifyUnitValidPlot();
 
 		if ((getID() == GC.getGameINLINE().getActiveTeam()) || (eIndex == GC.getGameINLINE().getActiveTeam()))
 		{
@@ -2621,9 +2621,9 @@ void CvTeam::setForceRevealedBonus(BonusTypes eBonus, bool bRevealed)
 		}
 	}
 
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); ++iI)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); ++iI)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 		if (pLoopPlot->getBonusType() == eBonus)
 		{

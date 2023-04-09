@@ -67,7 +67,7 @@ public:
 	// technically this doesn't belong here, but by placing it inside the class it gains access to the enum
 	static void runTest()
 	{
-		if (GC.getMapINLINE().getNumPlots(TERRAIN_WETLAND) == 0)
+		if (GC.getMap().getNumPlots(TERRAIN_WETLAND) == 0)
 		{
 			displayError(TEST_WETLAND);
 		}
@@ -2422,9 +2422,9 @@ bool CvDLLButtonPopup::launchMainMenuPopup(CvPopup* pPopup, CvPopupInfo &info)
 
 		if (bShow)
 		{
-			for (int i = 0; i < GC.getMapINLINE().numPlots(); ++i)
+			for (int i = 0; i < GC.getMap().numPlots(); ++i)
 			{
-				CvPlot* pPlot = GC.getMapINLINE().plotByIndexINLINE(i);
+				CvPlot* pPlot = GC.getMap().plotByIndexINLINE(i);
 				if (!pPlot->getScriptData().empty())
 				{
 					bShow = false;
@@ -2776,7 +2776,7 @@ bool CvDLLButtonPopup::launchEventPopup(CvPopup* pPopup, CvPopupInfo &info)
 
 	if (kTrigger.isShowPlot())
 	{
-		CvPlot* pPlot = GC.getMapINLINE().plot(pTriggeredData->m_iPlotX, pTriggeredData->m_iPlotY);
+		CvPlot* pPlot = GC.getMap().plot(pTriggeredData->m_iPlotX, pTriggeredData->m_iPlotY);
 		if (NULL != pPlot)
 		{
 			gDLL->getEngineIFace()->addColoredPlot(pPlot->getX_INLINE(), pPlot->getY_INLINE(), GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_WARNING_TEXT")).getColor(), PLOT_STYLE_CIRCLE, PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS);

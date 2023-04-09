@@ -39,7 +39,7 @@
 
 CvPlot* plotCity(int iX, int iY, int iIndex)
 {
-	return GC.getMapINLINE().plotINLINE((iX + GC.getCityPlotX()[iIndex]), (iY + GC.getCityPlotY()[iIndex]));
+	return GC.getMap().plotINLINE((iX + GC.getCityPlotX()[iIndex]), (iY + GC.getCityPlotY()[iIndex]));
 }
 
 int plotCityXY(int iDX, int iDY)
@@ -876,7 +876,7 @@ namespace
 		//if (!pSelectionGroup->canFight() && !pSelectionGroup->alwaysInvisible()) // BTS \ COLO default condition
 		if (kPlayer.AI_needsProtection(kGroup.getHeadUnitAI()) && !kGroup.alwaysInvisible())
 		{
-			CvPlot* const pPlot = GC.getMapINLINE().plotINLINE(x, y);
+			CvPlot* const pPlot = GC.getMap().plotINLINE(x, y);
 
 			if (kGroup.getDomainType() == DOMAIN_SEA)
 			{
@@ -1028,9 +1028,9 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 	int iWorstMax;
 	int iMax;
 
-	pFromPlot = GC.getMapINLINE().plotSoren(parent->m_iX, parent->m_iY);
+	pFromPlot = GC.getMap().plotSoren(parent->m_iX, parent->m_iY);
 	FAssert(pFromPlot != NULL);
-	pToPlot = GC.getMapINLINE().plotSoren(node->m_iX, node->m_iY);
+	pToPlot = GC.getMap().plotSoren(node->m_iX, node->m_iY);
 	FAssert(pToPlot != NULL);
 
 	//CvSelectionGroup* pSelectionGroup = ((CvSelectionGroup *)pointer);
@@ -1913,9 +1913,9 @@ int stepDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 	CvPlot* pFromPlot;
 	CvPlot* pToPlot;
 
-	pFromPlot = GC.getMapINLINE().plotSoren(gDLL->getFAStarIFace()->GetStartX(finder), gDLL->getFAStarIFace()->GetStartY(finder));
+	pFromPlot = GC.getMap().plotSoren(gDLL->getFAStarIFace()->GetStartX(finder), gDLL->getFAStarIFace()->GetStartY(finder));
 	FAssert(pFromPlot != NULL);
-	pToPlot = GC.getMapINLINE().plotSoren(iToX, iToY);
+	pToPlot = GC.getMap().plotSoren(iToX, iToY);
 	FAssert(pToPlot != NULL);
 
 	if (pFromPlot->area() != pToPlot->area())
@@ -1948,7 +1948,7 @@ int stepValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 		return TRUE;
 	}
 
-	pNewPlot = GC.getMapINLINE().plotSoren(node->m_iX, node->m_iY);
+	pNewPlot = GC.getMap().plotSoren(node->m_iX, node->m_iY);
 
 	if (pNewPlot->isImpassable())
 	{
@@ -1961,7 +1961,7 @@ int stepValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 	if(iInvalidPlot > 0)
 	{
 		// 1 is subtracted because 1 was added earlier to avoid a conflict with index 0
-		if(pNewPlot == GC.getMapINLINE().plotByIndexINLINE((iInvalidPlot - 1)))
+		if(pNewPlot == GC.getMap().plotByIndexINLINE((iInvalidPlot - 1)))
 		{
 			return FALSE;
 		}
@@ -1977,7 +1977,7 @@ int stepValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 		return FALSE;
 	}
 */
-	CvPlot* pFromPlot = GC.getMapINLINE().plotSoren(parent->m_iX, parent->m_iY);
+	CvPlot* pFromPlot = GC.getMap().plotSoren(parent->m_iX, parent->m_iY);
 	if (pFromPlot->area() != pNewPlot->area())
 	{
 		return FALSE;
@@ -1986,7 +1986,7 @@ int stepValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 	// Don't count diagonal hops across land isthmus
 	if (pFromPlot->isWater() && pNewPlot->isWater())
 	{
-		if (!(GC.getMapINLINE().plotINLINE(parent->m_iX, node->m_iY)->isWater()) && !(GC.getMapINLINE().plotINLINE(node->m_iX, parent->m_iY)->isWater()))
+		if (!(GC.getMap().plotINLINE(parent->m_iX, node->m_iY)->isWater()) && !(GC.getMap().plotINLINE(node->m_iX, parent->m_iY)->isWater()))
 		{
 			return FALSE;
 		}
@@ -2026,7 +2026,7 @@ int routeValid(FAStarNode* parent, FAStarNode* node, int data, const void* point
 		return TRUE;
 	}
 
-	pNewPlot = GC.getMapINLINE().plotSoren(node->m_iX, node->m_iY);
+	pNewPlot = GC.getMap().plotSoren(node->m_iX, node->m_iY);
 
 	ePlayer = ((PlayerTypes)(gDLL->getFAStarIFace()->GetInfo(finder)));
 
@@ -2050,7 +2050,7 @@ int coastalRouteValid(FAStarNode* parent, FAStarNode* node, int data, const void
 		return true;
 	}
 
-	pNewPlot = GC.getMapINLINE().plotSoren(node->m_iX, node->m_iY);
+	pNewPlot = GC.getMap().plotSoren(node->m_iX, node->m_iY);
 
 	const PlayerTypes ePlayer = ((PlayerTypes)(gDLL->getFAStarIFace()->GetInfo(finder)));
 
@@ -2108,7 +2108,7 @@ int borderValid(FAStarNode* parent, FAStarNode* node, int data, const void* poin
 		return TRUE;
 	}
 
-	pNewPlot = GC.getMapINLINE().plotSoren(node->m_iX, node->m_iY);
+	pNewPlot = GC.getMap().plotSoren(node->m_iX, node->m_iY);
 
 	ePlayer = ((PlayerTypes)(gDLL->getFAStarIFace()->GetInfo(finder)));
 
@@ -2128,8 +2128,8 @@ int areaValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 		return TRUE;
 	}
 
-	const CvPlot* const pParentPlot = GC.getMapINLINE().plotSoren(parent->m_iX, parent->m_iY);
-	const CvPlot* const pNodePlot = GC.getMapINLINE().plotSoren(node->m_iX, node->m_iY);
+	const CvPlot* const pParentPlot = GC.getMap().plotSoren(parent->m_iX, parent->m_iY);
+	const CvPlot* const pNodePlot = GC.getMap().plotSoren(node->m_iX, node->m_iY);
 	return (pParentPlot->isWater() == pNodePlot->isWater() ? TRUE : FALSE);
 }
 
@@ -2137,7 +2137,7 @@ int joinArea(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 {
 	if (data == ASNL_ADDCLOSED)
 	{
-		GC.getMapINLINE().plotSoren(node->m_iX, node->m_iY)->setArea(gDLL->getFAStarIFace()->GetInfo(finder));
+		GC.getMap().plotSoren(node->m_iX, node->m_iY)->setArea(gDLL->getFAStarIFace()->GetInfo(finder));
 	}
 
 	return 1;
@@ -2448,7 +2448,7 @@ void postLoadGameFixes()
 #endif
 
 	// deal with plots
-	CvMap& kMap = GC.getMapINLINE();
+	CvMap& kMap = GC.getMap();
 	kMap.updateWaterPlotTerrainTypes(); // autodetect lakes
 	const int iNumPlots = kMap.numPlotsINLINE();
 	

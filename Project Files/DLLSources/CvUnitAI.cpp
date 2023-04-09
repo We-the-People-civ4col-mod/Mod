@@ -2073,7 +2073,7 @@ void CvUnitAI::AI_scoutMove()
 		CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 		CvArea* pLoopArea;
 		int iLoop;
-		for(pLoopArea = GC.getMapINLINE().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMapINLINE().nextArea(&iLoop))
+		for(pLoopArea = GC.getMap().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMap().nextArea(&iLoop))
 		{
 			if (!pLoopArea->isWater())
 			{
@@ -6063,7 +6063,7 @@ void CvUnitAI::AI_cityAutomated()
 
 	if (pCity == NULL)
 	{
-		pCity = GC.getMapINLINE().findCity(getX_INLINE(), getY_INLINE(), getOwnerINLINE()); // XXX do team???
+		pCity = GC.getMap().findCity(getX_INLINE(), getY_INLINE(), getOwnerINLINE()); // XXX do team???
 	}
 
 	if (pCity != NULL)
@@ -6812,9 +6812,9 @@ bool CvUnitAI::AI_sailTo(const SailToHelper& sth, bool bMove, bool bIgnoreDanger
 	CvPlot* pBestPlot = NULL;
 	CvPlot* pBestMissionPlot = NULL;
 
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 		// Unrevealed plots need not be considered, also removes cheating!
 		if (!pLoopPlot->isRevealed(getTeam(), false))
@@ -6878,9 +6878,9 @@ CvPlot* CvUnitAI::findNearbyOceanPlot(CvPlot* pPlot)
 	CvPlot* pBestPlot = NULL;
 	int iBestValue = 0;
 	
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 		
 		// Erik: Filter out plots with impassable terrain and\or feature
 		// We first deal with the unconditional plots (which can never be a valid target)
@@ -7349,9 +7349,9 @@ CvPlot* CvUnitAI::AI_determineDestination(CvPlot** ppMissionPlot, MissionTypes* 
 	if (AI_getUnitAIType() == UNITAI_SCOUT)
 	{
 		
-		for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+		for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 		{
-			CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+			CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 			CvArea* pArea = pLoopPlot->area();
 			if (!pArea->isWater() && pArea->getNumUnrevealedTiles(getTeam()) > 0)
 			{
@@ -7416,9 +7416,9 @@ CvPlot* CvUnitAI::AI_determineDestination(CvPlot** ppMissionPlot, MissionTypes* 
 	}
 	else if (AI_getUnitAIType() == UNITAI_COLONIST)
 	{
-		for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+		for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 		{
-			CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+			CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 			
 			if ((pTransport == NULL && pLoopPlot->getArea() == getArea()) ||
 				(pTransport != NULL && pLoopPlot->isCoastalLand()))
@@ -8901,9 +8901,9 @@ bool CvUnitAI::AI_moveTowardsDanger(int iMaxPath)
 	int iRange = 0; //GC.getAI_TRANSPORT_DANGER_RANGE();
 	int iBestPathTurns = MAX_INT;
 	
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 		
 		if ((pLoopPlot != NULL) && AI_plotValid(pLoopPlot) && !atPlot(pLoopPlot))
 		{
@@ -9360,9 +9360,9 @@ bool CvUnitAI::AI_requestPickup(int iMaxPath)
 	MissionAITypes paMissionAIs[] = {MISSIONAI_PICKUP, MISSIONAI_AWAIT_PICKUP};
 	int iMissionAICount = 2;
 	
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 		
 		if (pLoopPlot->getArea() == getArea())
 		{
@@ -10695,9 +10695,9 @@ bool CvUnitAI::AI_guardFort(bool bSearch)
 	CvPlot* pBestPlot = NULL;
 	CvPlot* pBestGuardPlot = NULL;
 
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 		if (AI_plotValid(pLoopPlot) && !atPlot(pLoopPlot))
 		{
@@ -10789,9 +10789,9 @@ bool CvUnitAI::AI_guardFortMinDefender(bool bSearch)
 	CvPlot* pBestPlot = NULL;
 	CvPlot* pBestGuardPlot = NULL;
 
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 		if(pLoopPlot == NULL) continue;		//R&R mod, vetiarvind, super forts merge
 		if (AI_plotValid(pLoopPlot) && !atPlot(pLoopPlot))
 		{
@@ -11210,9 +11210,9 @@ bool CvUnitAI::AI_protect(int iOddsThreshold)
 	iBestValue = 0;
 	pBestPlot = NULL;
 
-	for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 		if (AI_plotValid(pLoopPlot))
 		{
@@ -11720,11 +11720,11 @@ bool CvUnitAI::AI_goody(bool bIgnoreCity)
 	CvPlot* pBestPlot = NULL;
 	CvPlot* pBestExplorePlot = NULL;
 
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
 		PROFILE("AI_explore 1");
 
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 		if (AI_plotValid(pLoopPlot))
 		{
@@ -11968,11 +11968,11 @@ bool CvUnitAI::AI_explore(bool bFavorOpenBorders)
 	
 	bool bNoContact = (GC.getGameINLINE().countCivTeamsAlive() > GET_TEAM(getTeam()).getHasMetCivCount());
 
-	for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
 		PROFILE("AI_explore 1");
 
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 		if (AI_plotValid(pLoopPlot))
 		{
@@ -12403,9 +12403,9 @@ bool CvUnitAI::AI_exploreDeep()
 	CvPlot* pBestPlot = NULL;
 	CvPlot* pBestExplorePlot = NULL;
 	
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 		if (AI_plotValid(pLoopPlot) && !atPlot(pLoopPlot) && AI_isValidExplore(pLoopPlot))
 		{
@@ -12701,9 +12701,9 @@ bool CvUnitAI::AI_moveToWhale()
 	CvPlot* pBestPlot = NULL;
 	CvPlot* pBestExplorePlot = NULL;
 
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 		if (AI_plotValid(pLoopPlot))
 		{
 			if (pLoopPlot->isRevealed(getTeam(), false) && !pLoopPlot->isVisibleEnemyDefender(this))
@@ -12750,9 +12750,9 @@ bool CvUnitAI::AI_exploreRessource()
 	CvPlot* pBestPlot = NULL;
 	CvPlot* pBestExplorePlot = NULL;
 
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 		if (AI_plotValid(pLoopPlot) && AI_isValidExplore(pLoopPlot))
 		{
@@ -14421,9 +14421,9 @@ bool CvUnitAI::AI_pillage()
 	int iBestValue = 0;
 	CvPlot* pBestPlot = NULL;
 
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 		if (AI_plotValid(pLoopPlot))
 		{
@@ -14651,7 +14651,7 @@ bool CvUnitAI::AI_maraud(int iRange)
 	CvPlot* pBestPlot = NULL;
 	CvPlot* pBestMaraudPlot = NULL;
 	
-	CvCity* pNearestCity = GC.getMapINLINE().findCity(getX_INLINE(), getY_INLINE(), getOwnerINLINE(), NO_TEAM, true);
+	CvCity* pNearestCity = GC.getMap().findCity(getX_INLINE(), getY_INLINE(), getOwnerINLINE(), NO_TEAM, true);
 	
 	if (pNearestCity == NULL)
 	{
@@ -14964,9 +14964,9 @@ bool CvUnitAI::AI_found(int iMinValue)
 	bool bBestIsTransport = false;
 	bool bTransportPath = false;
 	
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 		if (pLoopPlot->isRevealed(getTeam(), false) && ((pTransportUnit != NULL) || AI_plotValid(pLoopPlot)))
 		{
 			if (canFound(pLoopPlot))
@@ -15708,9 +15708,9 @@ bool CvUnitAI::AI_assaultSeaTransport(bool bNative)
 	CvPlot* pBestPlot = NULL;
 	CvPlot* pBestAssaultPlot = NULL;
 
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 		if (pLoopPlot->isCoastalLand())
 		{
@@ -16404,9 +16404,9 @@ bool CvUnitAI::AI_specialSeaTransportMissionary()
 	pBestSpreadPlot = NULL;
 
 	// XXX what about non-coastal cities?
-	for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 		if (pLoopPlot->isCoastalLand())
 		{
@@ -16844,9 +16844,9 @@ bool CvUnitAI::AI_fortTerritory(bool bCanal)
 	CvPlot* pBestPlot = NULL;
 
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 		if (AI_plotValid(pLoopPlot))
 		{
@@ -16946,7 +16946,7 @@ bool CvUnitAI::AI_fortTerritory(bool bCanal)
 											// Super Forts begin *canal* *choke*
 											if(pLoopPlot->getOwnerINLINE() == NO_PLAYER)
 											{
-												CvCity* pNearestCity = GC.getMapINLINE().findCity(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), getOwnerINLINE(), NO_TEAM, false);
+												CvCity* pNearestCity = GC.getMap().findCity(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), getOwnerINLINE(), NO_TEAM, false);
 												if((pNearestCity == NULL) || 
 													(plotDistance(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), pNearestCity->getX_INLINE(), pNearestCity->getY_INLINE()) > GC.getDefineINT("AI_WORKER_MAX_DISTANCE_FROM_CITY_OUT_BORDERS")) ||
 													(iPathTurns > (GC.getDefineINT("AI_WORKER_MAX_DISTANCE_FROM_CITY_OUT_BORDERS") / 2)))
@@ -17205,9 +17205,9 @@ bool CvUnitAI::AI_routeTerritory(bool bImprovementOnly)
 	iBestValue = 0;
 	pBestPlot = NULL;
 
-	for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 		if (AI_plotValid(pLoopPlot))
 		{
@@ -17306,7 +17306,7 @@ bool CvUnitAI::AI_travelToUpgradeCity()
 		}
 		if (pClosestCity == NULL)
 		{
-			pClosestCity = GC.getMapINLINE().findCity(getX_INLINE(), getY_INLINE(), NO_PLAYER, getTeam(), true, bSeaUnit);
+			pClosestCity = GC.getMap().findCity(getX_INLINE(), getY_INLINE(), NO_PLAYER, getTeam(), true, bSeaUnit);
 		}
 
 		// can we path to the upgrade city?
@@ -17971,12 +17971,12 @@ bool CvUnitAI::AI_imperialSeaAssault()
 	
 	if (GET_PLAYER(getOwnerINLINE()).AI_isStrategy(STRATEGY_CONCENTRATED_ATTACK))
 	{
-		pTargetPlot = GC.getMapINLINE().plotByIndexINLINE(GET_PLAYER(getOwnerINLINE()).AI_getStrategyData(STRATEGY_CONCENTRATED_ATTACK));
+		pTargetPlot = GC.getMap().plotByIndexINLINE(GET_PLAYER(getOwnerINLINE()).AI_getStrategyData(STRATEGY_CONCENTRATED_ATTACK));
 	}
     
-    for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+    for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 		
 		if (!pLoopPlot->isWater() && !pLoopPlot->isImpassable())
 		{
@@ -18854,12 +18854,12 @@ bool CvUnitAI::AI_solveBlockageProblem(CvPlot* pDestPlot, bool bDeclareWar)
 
 			while (pStepNode != NULL)
 			{
-				CvPlot* pStepPlot = GC.getMapINLINE().plotSoren(pStepNode->m_iX, pStepNode->m_iY);
+				CvPlot* pStepPlot = GC.getMap().plotSoren(pStepNode->m_iX, pStepNode->m_iY);
 				if (canMoveOrAttackInto(pStepPlot) && generatePath(pStepPlot, 0, true))
 				{
 					if (bDeclareWar && pStepNode->m_pPrev != NULL)
 					{
-						CvPlot* pPlot = GC.getMapINLINE().plotSoren(pStepNode->m_pPrev->m_iX, pStepNode->m_pPrev->m_iY);
+						CvPlot* pPlot = GC.getMap().plotSoren(pStepNode->m_pPrev->m_iX, pStepNode->m_pPrev->m_iY);
 						if (pPlot->getTeam() != NO_TEAM)
 						{
 							if (!canMoveInto(*pPlot, true, true))

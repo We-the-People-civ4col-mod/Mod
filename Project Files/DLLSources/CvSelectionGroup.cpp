@@ -410,7 +410,7 @@ void CvSelectionGroup::playActionSound()
 
 	if ( (iScriptId != -1) && pHeadUnit )
 	{
-		CvPlot *pPlot = GC.getMapINLINE().plotINLINE(pHeadUnit->getX_INLINE(),pHeadUnit->getY_INLINE());
+		CvPlot *pPlot = GC.getMap().plotINLINE(pHeadUnit->getX_INLINE(),pHeadUnit->getY_INLINE());
 		if ( pPlot )
 		{
 			gDLL->Do3DSound( iScriptId, pPlot->getPoint() );
@@ -564,7 +564,7 @@ CvPlot* CvSelectionGroup::lastMissionPlot()
 		{
 		case MISSION_MOVE_TO:
 		case MISSION_ROUTE_TO:
-			return GC.getMapINLINE().plotINLINE(pMissionNode->m_data.iData1, pMissionNode->m_data.iData2);
+			return GC.getMap().plotINLINE(pMissionNode->m_data.iData1, pMissionNode->m_data.iData2);
 			break;
 
 		case MISSION_MOVE_TO_UNIT:
@@ -1108,7 +1108,7 @@ void CvSelectionGroup::continueMission(int iSteps)
 								{
 									if (headMissionQueueNode() != NULL)
 									{
-										if (groupAmphibMove(GC.getMapINLINE().plotINLINE(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2), headMissionQueueNode()->m_data.iFlags))
+										if (groupAmphibMove(GC.getMap().plotINLINE(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2), headMissionQueueNode()->m_data.iFlags))
 										{
 											bAction = false;
 											bDone = true;
@@ -2810,7 +2810,7 @@ bool CvSelectionGroup::groupPathTo(int iX, int iY, int iFlags)
 	FAssert(getOwnerINLINE() != NO_PLAYER);
 	FAssert(headMissionQueueNode() != NULL);
 
-	CvPlot* const pDestPlot = GC.getMapINLINE().plotINLINE(iX, iY);
+	CvPlot* const pDestPlot = GC.getMap().plotINLINE(iX, iY);
 	FAssertMsg(pDestPlot != NULL, "DestPlot is not assigned a valid value");
 
 	FAssertMsg(canAllMove(), "canAllMove is expected to be true");
@@ -3224,7 +3224,7 @@ void CvSelectionGroup::updateMissionTimer(int iSteps)
 			}
 			else
 			{
-				pTargetPlot = GC.getMapINLINE().plotINLINE(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2);
+				pTargetPlot = GC.getMap().plotINLINE(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2);
 			}
 
 			if (atPlot(pTargetPlot))
@@ -3416,10 +3416,10 @@ CvPlot* CvSelectionGroup::getPathSecondLastPlot() const
 
 	if (pNode->m_pParent == NULL)
 	{
-		return GC.getMapINLINE().plotSoren(pNode->m_iX, pNode->m_iY);
+		return GC.getMap().plotSoren(pNode->m_iX, pNode->m_iY);
 	}
 
-	return GC.getMapINLINE().plotSoren(pNode->m_pParent->m_iX, pNode->m_pParent->m_iY);
+	return GC.getMap().plotSoren(pNode->m_pParent->m_iX, pNode->m_pParent->m_iY);
 }
 
 // TAC - AI Improved Naval AI - koma13 - START
@@ -3439,7 +3439,7 @@ CvPlot* CvSelectionGroup::getPathPlotByIndex(int iIndex) const
 	{
 		if (iIndex == i)
 		{
-			return GC.getMapINLINE().plotSoren(pNode->m_iX, pNode->m_iY);
+			return GC.getMap().plotSoren(pNode->m_iX, pNode->m_iY);
 		}
 
 		pNode = pNode->m_pParent;

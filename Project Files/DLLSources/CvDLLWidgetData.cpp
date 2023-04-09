@@ -1364,7 +1364,7 @@ void CvDLLWidgetData::doPediaBuildJump(CvWidgetDataStruct &widgetDataStruct)
 
 void CvDLLWidgetData::doGotoTurnEvent(CvWidgetDataStruct &widgetDataStruct)
 {
-	CvPlot* pPlot = GC.getMapINLINE().plotINLINE(widgetDataStruct.m_iData1, widgetDataStruct.m_iData2);
+	CvPlot* pPlot = GC.getMap().plotINLINE(widgetDataStruct.m_iData1, widgetDataStruct.m_iData2);
 
 	if (NULL != pPlot && !gDLL->getEngineIFace()->isCameraLocked())
 	{
@@ -2107,7 +2107,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 
 					if (pPlot->isCityRadius())
 					{
-						CvCity* pNearestCity = GC.getMapINLINE().findCity(pPlot->getX_INLINE(), pPlot->getY_INLINE(), pPlot->getOwner(), pPlot->getTeam(), false, true);
+						CvCity* pNearestCity = GC.getMap().findCity(pPlot->getX_INLINE(), pPlot->getY_INLINE(), pPlot->getOwner(), pPlot->getTeam(), false, true);
 						if (pNearestCity != NULL)
 						{
 							if (pPlot->isBeingWorked())
@@ -2200,7 +2200,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 
 					if (pPlot->isCityRadius())
 					{
-						CvCity* pNearestCity = GC.getMapINLINE().findCity(pPlot->getX_INLINE(), pPlot->getY_INLINE(), pPlot->getOwner(), pPlot->getTeam(), false, true);
+						CvCity* pNearestCity = GC.getMap().findCity(pPlot->getX_INLINE(), pPlot->getY_INLINE(), pPlot->getOwner(), pPlot->getTeam(), false, true);
 						if (pNearestCity != NULL)
 						{
 							if (pPlot->isBeingWorked())

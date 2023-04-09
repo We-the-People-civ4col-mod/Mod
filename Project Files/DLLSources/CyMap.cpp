@@ -17,7 +17,7 @@
 
 CyMap::CyMap() : m_pMap(NULL)
 {
-	m_pMap = &GC.getMapINLINE();
+	m_pMap = &GC.getMap();
 }
 
 CyMap::CyMap(CvMap* pMap) : m_pMap(pMap)

@@ -108,22 +108,22 @@ inline int wrapCoordDifference(int iDiff, int iRange, bool bWrap)
 
 inline int xDistance(int iFromX, int iToX)
 {
-	return coordDistance(iFromX, iToX, GC.getMapINLINE().getGridWidthINLINE(), GC.getMapINLINE().isWrapXINLINE());
+	return coordDistance(iFromX, iToX, GC.getMap().getGridWidthINLINE(), GC.getMap().isWrapXINLINE());
 }
 
 inline int yDistance(int iFromY, int iToY)
 {
-	return coordDistance(iFromY, iToY, GC.getMapINLINE().getGridHeightINLINE(), GC.getMapINLINE().isWrapYINLINE());
+	return coordDistance(iFromY, iToY, GC.getMap().getGridHeightINLINE(), GC.getMap().isWrapYINLINE());
 }
 
 inline int dxWrap(int iDX)
 {
-	return wrapCoordDifference(iDX, GC.getMapINLINE().getGridWidthINLINE(), GC.getMapINLINE().isWrapXINLINE());
+	return wrapCoordDifference(iDX, GC.getMap().getGridWidthINLINE(), GC.getMap().isWrapXINLINE());
 }
 
 inline int dyWrap(int iDY)
 {
-	return wrapCoordDifference(iDY, GC.getMapINLINE().getGridHeightINLINE(), GC.getMapINLINE().isWrapYINLINE());
+	return wrapCoordDifference(iDY, GC.getMap().getGridHeightINLINE(), GC.getMap().isWrapYINLINE());
 }
 
 // 4 | 4 | 3 | 3 | 3 | 4 | 4
@@ -200,22 +200,22 @@ inline CvPlot* plotDirection(int iX, int iY, DirectionTypes eDirection)
 {
 	if(eDirection == NO_DIRECTION)
 	{
-		return GC.getMapINLINE().plotINLINE(iX, iY);
+		return GC.getMap().plotINLINE(iX, iY);
 	}
 	else
 	{
-		return GC.getMapINLINE().plotINLINE((iX + GC.getPlotDirectionX()[eDirection]), (iY + GC.getPlotDirectionY()[eDirection]));
+		return GC.getMap().plotINLINE((iX + GC.getPlotDirectionX()[eDirection]), (iY + GC.getPlotDirectionY()[eDirection]));
 	}
 }
 
 inline CvPlot* plotCardinalDirection(int iX, int iY, CardinalDirectionTypes eCardinalDirection)
 {
-	return GC.getMapINLINE().plotINLINE((iX + GC.getPlotCardinalDirectionX()[eCardinalDirection]), (iY + GC.getPlotCardinalDirectionY()[eCardinalDirection]));
+	return GC.getMap().plotINLINE((iX + GC.getPlotCardinalDirectionX()[eCardinalDirection]), (iY + GC.getPlotCardinalDirectionY()[eCardinalDirection]));
 }
 
 inline CvPlot* plotXY(int iX, int iY, int iDX, int iDY)
 {
-	return GC.getMapINLINE().plotINLINE((iX + iDX), (iY + iDY));
+	return GC.getMap().plotINLINE((iX + iDX), (iY + iDY));
 }
 
 inline CvPlot* plotXY(Coordinates baseCoord, RelCoordinates relCoord)

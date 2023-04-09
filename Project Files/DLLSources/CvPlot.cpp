@@ -253,13 +253,13 @@ void CvPlot::erase()
 
 float CvPlot::getPointX() const
 {
-	return GC.getMapINLINE().plotXToPointX(getX_INLINE());
+	return GC.getMap().plotXToPointX(getX_INLINE());
 }
 
 
 float CvPlot::getPointY() const
 {
-	return GC.getMapINLINE().plotYToPointY(getY_INLINE());
+	return GC.getMap().plotYToPointY(getY_INLINE());
 }
 
 
@@ -521,7 +521,7 @@ void CvPlot::doImprovement()
 					if (GC.getGameINLINE().getSorenRandNum(GC.getImprovementInfo(getImprovementType()).getImprovementBonusDiscoverRand(iI), "Bonus Discovery") == 0)
 					{
 						setBonusType((BonusTypes)iI);
-						pCity = GC.getMapINLINE().findCity(getX_INLINE(), getY_INLINE(), getOwnerINLINE(), NO_TEAM, false);
+						pCity = GC.getMap().findCity(getX_INLINE(), getY_INLINE(), getOwnerINLINE(), NO_TEAM, false);
 						if (pCity != NULL)
 						{
 							szBuffer = gDLL->getText("TXT_KEY_MISC_DISCOVERED_NEW_RESOURCE", GC.getBonusInfo((BonusTypes) iI).getTextKeyWide(), pCity->getNameKey());
@@ -1309,7 +1309,7 @@ bool CvPlot::isRiverConnection(DirectionTypes eDirection) const
 
 CvPlot* CvPlot::getNearestLandPlotInternal(int iDistance) const
 {
-	if (iDistance > GC.getMapINLINE().getGridHeightINLINE() && iDistance > GC.getMapINLINE().getGridWidthINLINE())
+	if (iDistance > GC.getMap().getGridHeightINLINE() && iDistance > GC.getMap().getGridWidthINLINE())
 	{
 		return NULL;
 	}
@@ -1757,7 +1757,7 @@ void CvPlot::updateSeeFromSight(bool bIncrement)
 
 	const int iRange = MAX_VISIBILITY_RANGE_PLOT + MAX_VISIBILITY_RANGE_PLOT_BONUS + 1;
 
-	const CvMap& kMap = GC.getMapINLINE();
+	const CvMap& kMap = GC.getMap();
 	const int iX = getX_INLINE();
 	const int iY = getY_INLINE();
 
@@ -2618,7 +2618,7 @@ int CvPlot::getFeatureYield(BuildTypes eBuild, YieldTypes eYield, TeamTypes eTea
 
 		if (*ppCity == NULL)
 		{
-			*ppCity = GC.getMapINLINE().findCity(getX_INLINE(), getY_INLINE(), NO_PLAYER, eTeam, false);
+			*ppCity = GC.getMap().findCity(getX_INLINE(), getY_INLINE(), NO_PLAYER, eTeam, false);
 		}
 	}
 
@@ -3023,7 +3023,7 @@ int CvPlot::countAdjacentPassableSections(bool bWater) const
 					// Don't count diagonal hops across land isthmus
 					if (bPlotIsWater && !isCardinalDirection((DirectionTypes)iI))
 					{
-						if (!(GC.getMapINLINE().plotINLINE(getX_INLINE(), pAdjacentPlot->getY_INLINE())->isWater()) && !(GC.getMapINLINE().plotINLINE(pAdjacentPlot->getX_INLINE(), getY_INLINE())->isWater()))
+						if (!(GC.getMap().plotINLINE(getX_INLINE(), pAdjacentPlot->getY_INLINE())->isWater()) && !(GC.getMap().plotINLINE(pAdjacentPlot->getX_INLINE(), getY_INLINE())->isWater()))
 						{
 							continue;
 						}
@@ -3183,7 +3183,7 @@ void CvPlot::calculateCanalValue()
 				{
 					if(!apPlotsToCheck[iI]->isLake() || !apPlotsToCheck[iJ]->isLake())
 					{
-						int iDistance = GC.getMapINLINE().calculatePathDistance(apPlotsToCheck[iI], apPlotsToCheck[iJ]);
+						int iDistance = GC.getMap().calculatePathDistance(apPlotsToCheck[iI], apPlotsToCheck[iJ]);
 						if(iDistance == -1)
 						{
 
@@ -3251,7 +3251,7 @@ void CvPlot::calculateChokeValue()
 						// Don't count diagonal hops across land isthmus
 						if (bWater && !isCardinalDirection((DirectionTypes)iI))
 						{
-							if (!(GC.getMapINLINE().plotINLINE(getX_INLINE(), pAdjacentPlot->getY_INLINE())->isWater()) && !(GC.getMapINLINE().plotINLINE(pAdjacentPlot->getX_INLINE(), getY_INLINE())->isWater()))
+							if (!(GC.getMap().plotINLINE(getX_INLINE(), pAdjacentPlot->getY_INLINE())->isWater()) && !(GC.getMap().plotINLINE(pAdjacentPlot->getX_INLINE(), getY_INLINE())->isWater()))
 							{
 								continue;
 							}
@@ -3282,7 +3282,7 @@ void CvPlot::calculateChokeValue()
 			{
 				for (int iJ = iI + 1; iJ < iPlotsFound; ++iJ)
 				{
-					int iDistance = GC.getMapINLINE().calculatePathDistance(apPlotsToCheck[iI], apPlotsToCheck[iJ], this);
+					int iDistance = GC.getMap().calculatePathDistance(apPlotsToCheck[iI], apPlotsToCheck[iJ], this);
 					if(iDistance == -1)
 					{
 						// If no path was found then value is based off the number of plots in the region minus a minimum area
@@ -4512,7 +4512,7 @@ bool CvPlot::at(Coordinates coord) const
 
 int CvPlot::getIndex() const
 {
-	return ((getY_INLINE() * GC.getMapINLINE().getGridWidthINLINE()) + getX_INLINE());
+	return ((getY_INLINE() * GC.getMap().getGridWidthINLINE()) + getX_INLINE());
 }
 
 //ray, Norther and Southern Hemisphere, using hint of f1rpo
@@ -4528,18 +4528,18 @@ int CvPlot::getSignedLatitude() const
 {
 	int iLatitude;
 
-	if (GC.getMapINLINE().isWrapXINLINE() || !(GC.getMapINLINE().isWrapYINLINE()))
+	if (GC.getMap().isWrapXINLINE() || !(GC.getMap().isWrapYINLINE()))
 	{
-		iLatitude = ((getY_INLINE() * 100) / GC.getMapINLINE().getGridHeightINLINE());
+		iLatitude = ((getY_INLINE() * 100) / GC.getMap().getGridHeightINLINE());
 	}
 	else
 	{
-		iLatitude = ((getX_INLINE() * 100) / GC.getMapINLINE().getGridWidthINLINE());
+		iLatitude = ((getX_INLINE() * 100) / GC.getMap().getGridWidthINLINE());
 	}
 
-	iLatitude = ((iLatitude * (GC.getMapINLINE().getTopLatitude() - GC.getMapINLINE().getBottomLatitude())) / 100);
+	iLatitude = ((iLatitude * (GC.getMap().getTopLatitude() - GC.getMap().getBottomLatitude())) / 100);
 
-	return iLatitude + GC.getMapINLINE().getBottomLatitude();
+	return iLatitude + GC.getMap().getBottomLatitude();
 }
 
 //ray, Norther and Southern Hemisphere, using hint of f1rpo
@@ -4557,7 +4557,7 @@ bool CvPlot::isNorthernHemisphere() const
 
 int CvPlot::getFOWIndex() const
 {
-	return ((((GC.getMapINLINE().getGridHeight() - 1) - getY_INLINE()) * GC.getMapINLINE().getGridWidth() * LANDSCAPE_FOW_RESOLUTION * LANDSCAPE_FOW_RESOLUTION) + (getX_INLINE() * LANDSCAPE_FOW_RESOLUTION));
+	return ((((GC.getMap().getGridHeight() - 1) - getY_INLINE()) * GC.getMap().getGridWidth() * LANDSCAPE_FOW_RESOLUTION * LANDSCAPE_FOW_RESOLUTION) + (getX_INLINE() * LANDSCAPE_FOW_RESOLUTION));
 }
 
 
@@ -4565,7 +4565,7 @@ CvArea* CvPlot::area() const
 {
 	if(m_pPlotArea == NULL)
 	{
-		m_pPlotArea = GC.getMapINLINE().getArea(getArea());
+		m_pPlotArea = GC.getMap().getArea(getArea());
 	}
 
 	return m_pPlotArea;
@@ -4717,7 +4717,7 @@ int CvPlot::getArea(DomainTypes eDomain) const
 
 const CvPlot* CvPlot::getAdjacentLandPlot(bool bReturnSelfFallback) const
 {
-	CvMap& kMap = GC.getMapINLINE();
+	CvMap& kMap = GC.getMap();
 	const int iPlotX = getX_INLINE();
 	const int iPlotY = getY_INLINE();
 	int iRange = 1;
@@ -4739,7 +4739,7 @@ const CvPlot* CvPlot::getAdjacentLandPlot(bool bReturnSelfFallback) const
 
 CvPlot* CvPlot::getAdjacentLandPlot(bool bReturnSelfFallback)
 {
-	CvMap& kMap = GC.getMapINLINE();
+	CvMap& kMap = GC.getMap();
 	const int iPlotX = getX_INLINE();
 	const int iPlotY = getY_INLINE();
 	LOOP_ADJACENT_PLOTS(iPlotX, iPlotY, 1)
@@ -4766,7 +4766,7 @@ CvArea* CvPlot::getAdjacentSeaArea() const
 	// lake
 	// this plot
 
-	CvMap& kMap = GC.getMapINLINE();
+	CvMap& kMap = GC.getMap();
 	const int iPlotX = getX_INLINE();
 	const int iPlotY = getY_INLINE();
 	int iRange = 1;
@@ -4800,7 +4800,7 @@ bool CvPlot::hasNearbyPlotWith(const InfoArray1<T>& kInfo, int iRange, bool bEmp
 		return bEmptyReturnVal;
 	}
 
-	CvMap& kMap = GC.getMapINLINE();
+	CvMap& kMap = GC.getMap();
 	const int iPlotX = getX_INLINE();
 	const int iPlotY = getY_INLINE();
 	LOOP_ADJACENT_PLOTS(iPlotX, iPlotY, iRange)
@@ -4831,7 +4831,7 @@ bool CvPlot::hasNearbyPlotWith(const InfoArray1<T>& kInfo, int iRange, bool bEmp
 template <typename T>
 bool CvPlot::hasNearbyPlotWith(T eVal, int iRange) const
 {
-	CvMap& kMap = GC.getMapINLINE();
+	CvMap& kMap = GC.getMap();
 	const int iPlotX = getX_INLINE();
 	const int iPlotY = getY_INLINE();
 	LOOP_ADJACENT_PLOTS(iPlotX, iPlotY, iRange)
@@ -5232,7 +5232,7 @@ CvPlot* CvPlot::getInlandCorner() const
 		switch (aiShuffle[iI])
 		{
 		case 0:
-			pRiverPlot = GC.getMapINLINE().plotSoren(getX_INLINE(), getY_INLINE()); break;
+			pRiverPlot = GC.getMap().plotSoren(getX_INLINE(), getY_INLINE()); break;
 		case 1:
 			pRiverPlot = plotDirection(getX_INLINE(), getY_INLINE(), DIRECTION_NORTH); break;
 		case 2:
@@ -5433,7 +5433,7 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits)
 			{
 				area()->changeNumOwnedTiles(-1);
 			}
-			GC.getMapINLINE().changeOwnedPlots(-1);
+			GC.getMap().changeOwnedPlots(-1);
 
 			if (!isWater())
 			{
@@ -5471,7 +5471,7 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits)
 			{
 				area()->changeNumOwnedTiles(1);
 			}
-			GC.getMapINLINE().changeOwnedPlots(1);
+			GC.getMap().changeOwnedPlots(1);
 
 			if (!isWater())
 			{
@@ -5657,7 +5657,7 @@ void CvPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGr
 			}
 		}
 
-		GC.getMapINLINE().resetPathDistance();
+		GC.getMap().resetPathDistance();
 
 		if (bWasWater != isWater())
 		{
@@ -5725,11 +5725,11 @@ void CvPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGr
 				}
 			}
 
-			GC.getMapINLINE().changeLandPlots((isWater()) ? -1 : 1);
+			GC.getMap().changeLandPlots((isWater()) ? -1 : 1);
 
 			if (getBonusType() != NO_BONUS)
 			{
-				GC.getMapINLINE().changeNumBonusesOnLand(getBonusType(), ((isWater()) ? -1 : 1));
+				GC.getMap().changeNumBonusesOnLand(getBonusType(), ((isWater()) ? -1 : 1));
 			}
 
 			if (isOwned())
@@ -5835,7 +5835,7 @@ void CvPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGr
 
 				if (bRecalculateAreas)
 				{
-					GC.getMapINLINE().recalculateAreas();
+					GC.getMap().recalculateAreas();
 				}
 				else
 				{
@@ -5843,12 +5843,12 @@ void CvPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGr
 
 					if ((area() != NULL) && (area()->getNumTiles() == 1))
 					{
-						GC.getMapINLINE().deleteArea(getArea());
+						GC.getMap().deleteArea(getArea());
 					}
 
 					if (pNewArea == NULL)
 					{
-						pNewArea = GC.getMapINLINE().addArea();
+						pNewArea = GC.getMap().addArea();
 						pNewArea->init(pNewArea->getID(), isWater());
 					}
 
@@ -5888,7 +5888,7 @@ TerrainTypes CvPlot::getVariable(TerrainTypes) const
 // autodetect lakes - start
 void CvPlot::setCoastline(bool bRecalculate, bool bRebuildGraphics)
 {
-	CvMap& kMap = GC.getMapINLINE();
+	CvMap& kMap = GC.getMap();
 	const int iPlotX = getX_INLINE();
 	const int iPlotY = getY_INLINE();
 	LOOP_ADJACENT_PLOTS(iPlotX, iPlotY, 1)
@@ -6078,11 +6078,11 @@ void CvPlot::setBonusType(BonusTypes eNewValue)
 			{
 				area()->changeNumBonuses(getBonusType(), -1);
 			}
-			GC.getMapINLINE().changeNumBonuses(getBonusType(), -1);
+			GC.getMap().changeNumBonuses(getBonusType(), -1);
 
 			if (!isWater())
 			{
-				GC.getMapINLINE().changeNumBonusesOnLand(getBonusType(), -1);
+				GC.getMap().changeNumBonusesOnLand(getBonusType(), -1);
 			}
 		}
 
@@ -6094,11 +6094,11 @@ void CvPlot::setBonusType(BonusTypes eNewValue)
 			{
 				area()->changeNumBonuses(getBonusType(), 1);
 			}
-			GC.getMapINLINE().changeNumBonuses(getBonusType(), 1);
+			GC.getMap().changeNumBonuses(getBonusType(), 1);
 
 			if (!isWater())
 			{
-				GC.getMapINLINE().changeNumBonusesOnLand(getBonusType(), 1);
+				GC.getMap().changeNumBonusesOnLand(getBonusType(), 1);
 			}
 		}
 
@@ -8825,7 +8825,7 @@ void CvPlot::doFeature()
 								{
 									setFeatureType((FeatureTypes)iI);
 
-									pCity = GC.getMapINLINE().findCity(getX_INLINE(), getY_INLINE(), getOwnerINLINE(), NO_TEAM, false);
+									pCity = GC.getMap().findCity(getX_INLINE(), getY_INLINE(), getOwnerINLINE(), NO_TEAM, false);
 
 									if (pCity != NULL)
 									{

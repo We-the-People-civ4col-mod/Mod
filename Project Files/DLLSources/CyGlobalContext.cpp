@@ -47,7 +47,7 @@ CyGame* CyGlobalContext::getCyGame() const
 
 CyMap* CyGlobalContext::getCyMap() const
 {
-	static CyMap cyMap(&GC.getMapINLINE());
+	static CyMap cyMap(&GC.getMap());
 	return &cyMap;
 }
 

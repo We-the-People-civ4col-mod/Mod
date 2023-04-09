@@ -47,7 +47,7 @@ CvReplayInfo::~CvReplayInfo()
 void CvReplayInfo::createInfo(PlayerTypes ePlayer)
 {
 	CvGame& game = GC.getGameINLINE();
-	CvMap& map = GC.getMapINLINE();
+	CvMap& map = GC.getMap();
 
 	if (ePlayer == NO_PLAYER)
 	{
@@ -171,8 +171,8 @@ void CvReplayInfo::createInfo(PlayerTypes ePlayer)
 		}
 	}
 
-	m_iMapWidth = GC.getMapINLINE().getGridWidthINLINE();
-	m_iMapHeight = GC.getMapINLINE().getGridHeightINLINE();
+	m_iMapWidth = GC.getMap().getGridWidthINLINE();
+	m_iMapHeight = GC.getMap().getGridHeightINLINE();
 
 	SAFE_DELETE_ARRAY(m_pcMinimapPixels);
 	m_pcMinimapPixels = new unsigned char[m_nMinimapSize];

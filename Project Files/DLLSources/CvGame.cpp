@@ -412,12 +412,12 @@ void CvGame::regenerateMap()
 
 	for (iI = 0; iI < MAX_TEAMS; iI++)
 	{
-		GC.getMapINLINE().setRevealedPlots(((TeamTypes)iI), false);
+		GC.getMap().setRevealedPlots(((TeamTypes)iI), false);
 	}
 
 	gDLL->getEngineIFace()->clearSigns();
 
-	GC.getMapINLINE().erasePlots();
+	GC.getMap().erasePlots();
 
 	CvMapGenerator::GetInstance().generateRandomMap();
 	CvMapGenerator::GetInstance().addGameElements();
@@ -429,13 +429,13 @@ void CvGame::regenerateMap()
 	setInitialItems(false);
 
 	// Super Forts begin *choke* *canal*
-	GC.getMapINLINE().calculateCanalAndChokePoints();
+	GC.getMap().calculateCanalAndChokePoints();
 	// Super Forts end
 
 	initScoreCalculation();
 	setFinalInitialized(true);
 
-	GC.getMapINLINE().setupGraphical();
+	GC.getMap().setupGraphical();
 	gDLL->getEngineIFace()->SetDirty(GlobeTexture_DIRTY_BIT, true);
 	gDLL->getEngineIFace()->SetDirty(MinimapTexture_DIRTY_BIT, true);
 	gDLL->getInterfaceIFace()->setDirty(ColoredPlots_DIRTY_BIT, true);
@@ -658,7 +658,7 @@ void CvGame::assignStartingPlots()
 
 	// R&R, ray, Correct Geographical Placement of Natives - START
 	//Getting Y axis
-	int mapheight = GC.getMapINLINE().getGridHeightINLINE();
+	int mapheight = GC.getMap().getGridHeightINLINE();
 	//Getting X axis
 	//int mapwidth = GC.getMapINLINE().getGridWidthINLINE();
 	// R&R, ray, Correct Geographical Placement of Natives - END
@@ -675,11 +675,11 @@ void CvGame::assignStartingPlots()
 				iBestValue = 0;
 				pBestPlot = NULL;
 
-				for (iJ = 0; iJ < GC.getMapINLINE().numPlotsINLINE(); iJ++)
+				for (iJ = 0; iJ < GC.getMap().numPlotsINLINE(); iJ++)
 				{
 					gDLL->callUpdater();	// allow window updates during launch
 
-					pPlot = GC.getMapINLINE().plotByIndexINLINE(iJ);
+					pPlot = GC.getMap().plotByIndexINLINE(iJ);
 
 					if (pPlot->isStartingPlot())
 					{
@@ -1030,7 +1030,7 @@ void CvGame::normalizeStartingPlotLocations()
 						CvPlot *pPlotJ = GET_PLAYER((PlayerTypes)iJ).getStartingPlot();
 						if (pPlotJ != NULL)
 						{
-							int iDist = GC.getMapINLINE().calculatePathDistance(pPlotI, pPlotJ);
+							int iDist = GC.getMap().calculatePathDistance(pPlotI, pPlotJ);
 							if (iDist == -1)
 							{
 								// 5x penalty for not being on the same area, or having no passable route
@@ -1143,7 +1143,7 @@ void CvGame::normalizeStartingPlots()
 void CvGame::assignNativeTerritory()
 {
 	//The owners.
-	std::vector<int> territoryId(GC.getMapINLINE().numPlotsINLINE(), -1);
+	std::vector<int> territoryId(GC.getMap().numPlotsINLINE(), -1);
 
 	//The native players.
 	std::vector<PlayerTypes> natives;
@@ -1166,9 +1166,9 @@ void CvGame::assignNativeTerritory()
 	}
 	
 
-	for(int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for(int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 		if (pLoopPlot->isWater())
 		{
 			territoryId[iI] = -1;
@@ -1204,11 +1204,11 @@ void CvGame::assignNativeTerritory()
 	for(int i=0;i<(int)natives.size();i++)
 	{
 		PlayerTypes eBestPlayer = natives[i];
-		for(int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+		for(int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 		{
 			if (territoryId[iI] == i)
 			{
-				CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+				CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 				pLoopPlot->setOwner(eBestPlayer, false);
 			}
 		}
@@ -1541,9 +1541,9 @@ void CvGame::updateColoredPlots()
 		{
 			NiColorA color(GC.getColorInfo((ColorTypes)GC.getPlayerColorInfo(GET_PLAYER(eEuropePlayer).getPlayerColor()).getColorTypePrimary()).getColor());
 			color.a = 0.5f;
-			for(int i=0;i<GC.getMapINLINE().numPlotsINLINE();i++)
+			for(int i=0;i<GC.getMap().numPlotsINLINE();i++)
 			{
-				CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(i);
+				CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(i);
 				if(pLoopPlot->isEurope() && pLoopPlot->isRevealed(getActiveTeam(), true))
 				{
 					gDLL->getEngineIFace()->fillAreaBorderPlot(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), color, AREA_BORDER_LAYER_EUROPE);
@@ -2015,7 +2015,7 @@ void CvGame::cycleSelectionGroups(bool bClear, bool bForward)
 	else
 	{
 		pPlot = gDLL->getInterfaceIFace()->getLookAtPlot();
-		pNextSelectionGroup = GC.getMapINLINE().findSelectionGroup(((pPlot != NULL) ? pPlot->getX() : 0), ((pPlot != NULL) ? pPlot->getY() : 0), getActivePlayer(), true);
+		pNextSelectionGroup = GC.getMap().findSelectionGroup(((pPlot != NULL) ? pPlot->getX() : 0), ((pPlot != NULL) ? pPlot->getY() : 0), getActivePlayer(), true);
 	}
 
 	if (pNextSelectionGroup != NULL)
@@ -4259,9 +4259,9 @@ void CvGame::initScoreCalculation()
 {
 	// initialize score calculation
 	int iMaxFood = 0;
-	for (int i = 0; i < GC.getMapINLINE().numPlotsINLINE(); i++)
+	for (int i = 0; i < GC.getMap().numPlotsINLINE(); i++)
 	{
-		CvPlot* pPlot = GC.getMapINLINE().plotByIndexINLINE(i);
+		CvPlot* pPlot = GC.getMap().plotByIndexINLINE(i);
 		if (!pPlot->isWater() || pPlot->isAdjacentToLand())
 		{
 			iMaxFood += pPlot->calculateBestNatureYield(YIELD_FOOD, NO_TEAM);
@@ -4269,7 +4269,7 @@ void CvGame::initScoreCalculation()
 	}
 
 	m_iMaxPopulation = iMaxFood / std::max(1, GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION);
-	m_iMaxLand = GC.getMapINLINE().getLandPlots();
+	m_iMaxLand = GC.getMap().getLandPlots();
 	m_iMaxFather = GC.getNumFatherInfos();
 
 	if (NO_ERA != getStartEra())
@@ -4376,9 +4376,9 @@ void CvGame::toggleDebugMode()
 	m_bDebugMode = ((m_bDebugMode) ? false : true);
 	updateDebugModeCache();
 
-	GC.getMapINLINE().updateVisibility();
-	GC.getMapINLINE().updateSymbols();
-	GC.getMapINLINE().updateMinimapColor();
+	GC.getMap().updateVisibility();
+	GC.getMap().updateSymbols();
+	GC.getMap().updateMinimapColor();
 
 	gDLL->getInterfaceIFace()->setDirty(GameData_DIRTY_BIT, true);
 	gDLL->getInterfaceIFace()->setDirty(Score_DIRTY_BIT, true);
@@ -4586,10 +4586,10 @@ void CvGame::setActivePlayer(PlayerTypes eNewValue, bool bForceHotSeat)
 
 		if (GC.IsGraphicsInitialized())
 		{
-			GC.getMapINLINE().updateFog();
-			GC.getMapINLINE().updateVisibility();
-			GC.getMapINLINE().updateSymbols();
-			GC.getMapINLINE().updateMinimapColor();
+			GC.getMap().updateFog();
+			GC.getMap().updateVisibility();
+			GC.getMap().updateSymbols();
+			GC.getMap().updateMinimapColor();
 
 			updateUnitEnemyGlow();
 
@@ -5303,9 +5303,9 @@ void CvGame::doTurn()
 		int iChance = GC.getHandicapInfo(getHandicapType()).getAIImmigration() * 100;
 		iChance /= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
 		
-		if (NO_WORLDSIZE != GC.getMapINLINE().getWorldSize())
+		if (NO_WORLDSIZE != GC.getMap().getWorldSize())
 		{
-			iChance *= GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getAIImmigrationModifier();
+			iChance *= GC.getWorldInfo(GC.getMap().getWorldSize()).getAIImmigrationModifier();
 			iChance /= 100;
 		}
 	
@@ -5334,7 +5334,7 @@ void CvGame::doTurn()
 		}
 	}
 
-	GC.getMapINLINE().doTurn();
+	GC.getMap().doTurn();
 
 	// < JAnimals Mod Start >
 	createAnimalsLand();
@@ -5489,7 +5489,7 @@ void CvGame::createAnimalsLand()
 	int iLoop, iI, iJ;
 	int iStartDist = 0; 
 
-	for(pLoopArea = GC.getMapINLINE().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMapINLINE().nextArea(&iLoop))
+	for(pLoopArea = GC.getMap().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMap().nextArea(&iLoop))
 	{
 		iNeededAnimals = (pLoopArea->getNumTiles() * GC.getHandicapInfo(getHandicapType()).getAIAnimalLandMaxPercent()) / 100;
 		//iNeededAnimals = std::min(100, iNeededAnimals);
@@ -5507,7 +5507,7 @@ void CvGame::createAnimalsLand()
 			{
 				for (iI = 0; iI < iNeededAnimals; iI++)
 				{
-				    pPlot = GC.getMapINLINE().syncRandPlot((RANDPLOT_NOT_CITY), pLoopArea->getID(), iStartDist);
+				    pPlot = GC.getMap().syncRandPlot((RANDPLOT_NOT_CITY), pLoopArea->getID(), iStartDist);
 
 					// Do not spawn in enemy territory
 					if (pPlot != NULL && pPlot->getOwner() != NO_PLAYER)
@@ -5597,7 +5597,7 @@ void CvGame::createAnimalsSea()
 	int iLoop, iI, iJ;
 	int iStartDist = 0;
 
-	for(pLoopArea = GC.getMapINLINE().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMapINLINE().nextArea(&iLoop))
+	for(pLoopArea = GC.getMap().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMap().nextArea(&iLoop))
 	{
 		iNeededAnimals = (pLoopArea->getNumTiles() * GC.getHandicapInfo(getHandicapType()).getAIAnimalLandMaxPercent()) / 100;
 		//iNeededAnimals = std::min(100, iNeededAnimals);
@@ -5618,7 +5618,7 @@ void CvGame::createAnimalsSea()
 			{
 				for (iI = 0; iI < iNeededAnimals; iI++)
 				{
-				    pPlot = GC.getMapINLINE().syncRandPlot((RANDPLOT_NOT_CITY), pLoopArea->getID(), iStartDist);
+				    pPlot = GC.getMap().syncRandPlot((RANDPLOT_NOT_CITY), pLoopArea->getID(), iStartDist);
 
 					if (pPlot != NULL)
 					{
@@ -6091,7 +6091,7 @@ bool CvGame::testVictory(VictoryTypes eVictory, TeamTypes eTeam, bool* pbEndScor
 	{
 		if (getAdjustedLandPercent(eVictory) > 0)
 		{
-			if (100 * GET_TEAM(eTeam).getTotalLand() < GC.getMapINLINE().getLandPlots() * getAdjustedLandPercent(eVictory))
+			if (100 * GET_TEAM(eTeam).getTotalLand() < GC.getMap().getLandPlots() * getAdjustedLandPercent(eVictory))
 			{
 				bValid = false;
 			}
@@ -6409,8 +6409,8 @@ int CvGame::calculateSyncChecksum(CvString* pLogString)
 	iValue += getNumCities();
 	iValue += getNumDeals();
 
-	iValue += GC.getMapINLINE().getOwnedPlots();
-	iValue += GC.getMapINLINE().getNumAreas();
+	iValue += GC.getMap().getOwnedPlots();
+	iValue += GC.getMap().getNumAreas();
 
 	for (iI = 0; iI < MAX_PLAYERS; iI++)
 	{
@@ -6502,8 +6502,8 @@ int CvGame::calculateSyncChecksum(CvString* pLogString)
 		*pLogString += CvString::format("Gameplay seed = %d\n", getSorenRand().getSeed());
 		*pLogString += CvString::format("NumCities = %d\n", getNumCities());
 		*pLogString += CvString::format("NumDeals = %d\n", getNumDeals());
-		*pLogString += CvString::format("Owned plots = %d\n", GC.getMapINLINE().getOwnedPlots());
-		*pLogString += CvString::format("NumAreas = %d\n", GC.getMapINLINE().getNumAreas());
+		*pLogString += CvString::format("Owned plots = %d\n", GC.getMap().getOwnedPlots());
+		*pLogString += CvString::format("NumAreas = %d\n", GC.getMap().getNumAreas());
 		for (iI = 0; iI < MAX_PLAYERS; iI++)
 		{
 			CvPlayer& kPlayer = GET_PLAYER((PlayerTypes)iI);
@@ -6902,7 +6902,7 @@ void CvGame::setPlotExtraYield(int iX, int iY, YieldTypes eYield, int iExtraYiel
 		m_aPlotExtraYields.push_back(kExtraYield);
 	}
 
-	CvPlot* pPlot = GC.getMapINLINE().plot(iX, iY);
+	CvPlot* pPlot = GC.getMap().plot(iX, iY);
 	if (NULL != pPlot)
 	{
 		pPlot->updateYield(true);
@@ -6920,7 +6920,7 @@ void CvGame::removePlotExtraYield(int iX, int iY)
 		}
 	}
 
-	CvPlot* pPlot = GC.getMapINLINE().plot(iX, iY);
+	CvPlot* pPlot = GC.getMap().plot(iX, iY);
 	if (NULL != pPlot)
 	{
 		pPlot->updateYield(true);
@@ -7278,9 +7278,9 @@ void CvGame::updateOceanDistances()
 	PROFILE_FUNC();
 
 	std::deque<CvPlot*> plotQueue;
-	for(int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for(int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 		if (pLoopPlot->isEurope())
 		{
 			pLoopPlot->setDistanceToOcean(0);
@@ -7333,7 +7333,7 @@ void CvGame::updateOceanDistances()
 
 	//DannyDaemonic fix
 	//OutputDebugStr(CvString::format("[CvGame::updateOceanDistances] Plots: %i, Visits: %i\n", GC.getMapINLINE().numPlotsINLINE(), iVisits).GetCString());
-	OutputDebugString(CvString::format("[CvGame::updateOceanDistances] Plots: %i, Visits: %i\n", GC.getMapINLINE().numPlotsINLINE(), iVisits).GetCString());
+	OutputDebugString(CvString::format("[CvGame::updateOceanDistances] Plots: %i, Visits: %i\n", GC.getMap().numPlotsINLINE(), iVisits).GetCString());
 	//end
 }
 
@@ -7403,7 +7403,7 @@ void CvGame::writeDesyncLog()
 			}
 		}
 
-		GC.getMapINLINE().writeDesyncLog(f);
+		GC.getMap().writeDesyncLog(f);
 
 		fclose(f);
 	}

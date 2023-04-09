@@ -275,7 +275,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, Coordinates initCoord, bool bBump
 
 	changePopulation(GLOBAL_DEFINE_INITIAL_CITY_POPULATION + GC.getEraInfo(GC.getGameINLINE().getStartEra()).getFreePopulation());
 
-	GC.getMapINLINE().updateWorkingCity();
+	GC.getMap().updateWorkingCity();
 
 	GC.getGameINLINE().AI_makeAssignWorkDirty();
 
@@ -502,7 +502,7 @@ void CvCity::kill()
 		}
 	}
 
-	GC.getMapINLINE().updateWorkingCity();
+	GC.getMap().updateWorkingCity();
 
 	GC.getGameINLINE().AI_makeAssignWorkDirty();
 
@@ -863,7 +863,7 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 		break;
 
 	case TASK_RALLY_PLOT:
-		setRallyPlot(GC.getMapINLINE().plotINLINE(iData1, iData2));
+		setRallyPlot(GC.getMap().plotINLINE(iData1, iData2));
 		break;
 
 	case TASK_CLEAR_RALLY_PLOT:
@@ -3335,7 +3335,7 @@ bool CvCity::at(const CvPlot* pPlot) const
 
 CvPlot* CvCity::plot() const
 {
-	return GC.getMapINLINE().plotSoren(coord());
+	return GC.getMap().plotSoren(coord());
 }
 
 int CvCity::getArea() const
@@ -3357,7 +3357,7 @@ CvArea* CvCity::waterArea() const
 
 CvPlot* CvCity::getRallyPlot() const
 {
-	return GC.getMapINLINE().plotSoren(m_iRallyX, m_iRallyY);
+	return GC.getMap().plotSoren(m_iRallyX, m_iRallyY);
 }
 
 
@@ -3397,7 +3397,7 @@ void CvCity::setGameTurnFounded(int iNewValue)
 		m_iGameTurnFounded = iNewValue;
 		FAssert(getGameTurnFounded() >= 0);
 
-		GC.getMapINLINE().updateWorkingCity();
+		GC.getMap().updateWorkingCity();
 	}
 }
 
@@ -13962,9 +13962,9 @@ void CvCity::createFleeingUnit(UnitTypes eUnit, bool bDefaultAI)
 	CvPlot* pBestPlot = NULL;
 	int iBestValue = MAX_INT;
 
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 		if (pLoopPlot->getTeam() == NO_TEAM && !pLoopPlot->isWater() && !pLoopPlot->isPeak() && !pLoopPlot->isFort() && !pLoopPlot->isMonastery() && pLoopPlot->getNumUnits() == 0)
 		{

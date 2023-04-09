@@ -34,19 +34,19 @@ bool Coordinates::isOnMap() const
 	// don't use x() and y() here as those two will assert check against this function, creating an infinite loop.
 	// exploit lazy evaluation to bail out once one condition is false, like don't check Y once X has already failed.
 	return !isInvalidPlotCoord()
-		&& (m_iX >= 0 && m_iX < GC.getMapINLINE().getGridWidthINLINE())
-		&& (m_iY >= 0 && m_iY < GC.getMapINLINE().getGridHeightINLINE());
+		&& (m_iX >= 0 && m_iX < GC.getMap().getGridWidthINLINE())
+		&& (m_iY >= 0 && m_iY < GC.getMap().getGridHeightINLINE());
 }
 
 CvPlot* Coordinates::plot() const
 {
-	return isOnMap() ? GC.getMapINLINE().plotINLINE(*this) : NULL;
+	return isOnMap() ? GC.getMap().plotINLINE(*this) : NULL;
 }
 
 int Coordinates::plotNum() const
 {
 	FAssert(isOnMap());
-	return GC.getMapINLINE().plotNumINLINE(*this);
+	return GC.getMap().plotNumINLINE(*this);
 }
 
 Coordinates Coordinates::invalidCoord()

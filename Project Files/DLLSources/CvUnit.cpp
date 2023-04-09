@@ -3730,13 +3730,13 @@ bool CvUnit::jumpToNearestValidPlot()
 	FAssertMsg(!isAttacking(), "isAttacking did not return false as expected");
 	FAssertMsg(!isFighting(), "isFighting did not return false as expected");
 
-	CvCity* pNearestCity = GC.getMapINLINE().findCity(coord(), getOwnerINLINE());
+	CvCity* pNearestCity = GC.getMap().findCity(coord(), getOwnerINLINE());
 	int iBestValue = MAX_INT;
 	CvPlot* pBestPlot = NULL;
 
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 		if (isValidPlot(pLoopPlot))
 		{
@@ -8413,7 +8413,7 @@ CvCity* CvUnit::getUpgradeCity(UnitTypes eUnit, bool bSearch, int* iSearchValue)
 	else
 	{
 		// find the closest city
-		CvCity* pClosestCity = GC.getMapINLINE().findCity(getX_INLINE(), getY_INLINE(), NO_PLAYER, getTeam(), true, bCoastalOnly);
+		CvCity* pClosestCity = GC.getMap().findCity(getX_INLINE(), getY_INLINE(), NO_PLAYER, getTeam(), true, bCoastalOnly);
 		if (pClosestCity != NULL)
 		{
 			// if we can train, then return this city (otherwise it will return NULL)
@@ -10551,8 +10551,8 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 
 	FAssert(!at(toCoord) || coord().isInvalidPlotCoord());
 	FAssert(!isFighting());
-	FAssert(toCoord.isInvalidPlotCoord() || (GC.getMapINLINE().plotINLINE(toCoord)->getX_INLINE() == toCoord.x()));
-	FAssert(toCoord.isInvalidPlotCoord() || (GC.getMapINLINE().plotINLINE(toCoord)->getY_INLINE() == toCoord.y()));
+	FAssert(toCoord.isInvalidPlotCoord() || (GC.getMap().plotINLINE(toCoord)->getX_INLINE() == toCoord.x()));
+	FAssert(toCoord.isInvalidPlotCoord() || (GC.getMap().plotINLINE(toCoord)->getY_INLINE() == toCoord.y()));
 
 	if (getGroup() != NULL)
 	{
@@ -10568,7 +10568,7 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 		joinGroup(NULL, true);
 	}
 
-	pNewPlot = GC.getMapINLINE().plotINLINE(toCoord);
+	pNewPlot = GC.getMap().plotINLINE(toCoord);
 
 	if (pNewPlot != NULL)
 	{
@@ -10958,7 +10958,7 @@ CvPlot* CvUnit::plot() const
 	}
 	else
 	{
-		return GC.getMapINLINE().plotSoren(coord());
+		return GC.getMap().plotSoren(coord());
 	}
 }
 
@@ -11276,7 +11276,7 @@ void CvUnit::changeCargo(int iChange)
 
 CvPlot* CvUnit::getAttackPlot() const
 {
-	return GC.getMapINLINE().plotSoren(m_iAttackPlotX, m_iAttackPlotY);
+	return GC.getMap().plotSoren(m_iAttackPlotX, m_iAttackPlotY);
 }
 
 
@@ -12760,7 +12760,7 @@ void CvUnit::setCombatUnit(CvUnit* pCombatUnit, bool bAttacking)
 
 CvPlot* CvUnit::getPostCombatPlot() const
 {
-	return GC.getMapINLINE().plotByIndexINLINE(m_iPostCombatPlotIndex);
+	return GC.getMap().plotByIndexINLINE(m_iPostCombatPlotIndex);
 }
 
 void CvUnit::setPostCombatPlot(Coordinates coord)
@@ -14786,9 +14786,9 @@ bool CvUnit::setSailEurope(EuropeTypes eEurope)
 	}
 
 	CvPlayerAI& kLoopPlayer = GET_PLAYER(getOwnerINLINE());
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pPlot = GC.getMap().plotByIndexINLINE(iI);
 		int iAvgDistance = 0;
 		int iBestDistance = 100000;
 		if (pPlot->getEurope() == eEurope)
@@ -14836,9 +14836,9 @@ bool CvUnit::canSailEurope(EuropeTypes eEurope) const
 		return true;
 	}
 
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pPlot = GC.getMap().plotByIndexINLINE(iI);
 		if (pPlot->isRevealed(getTeam(), false))
 		{
 			if (pPlot->getEurope() == eEurope)
@@ -15681,7 +15681,7 @@ bool CvUnit::raidGoods(CvCity* pCity)
 	CvCity* pHomeCity = getHomeCity();
 	if (pHomeCity == NULL)
 	{
-		pHomeCity = GC.getMapINLINE().findCity(pCity->getX_INLINE(), pCity->getY_INLINE(), getOwnerINLINE());
+		pHomeCity = GC.getMap().findCity(pCity->getX_INLINE(), pCity->getY_INLINE(), getOwnerINLINE());
 	}
 	if (pHomeCity != NULL)
 	{
@@ -15756,7 +15756,7 @@ bool CvUnit::canGatherResource(const CvPlot* ePlot, bool bTestVisible) const
 	}
 	else
 	{
-		pPlot = GC.getMapINLINE().plot(ePlot->getX_INLINE(), ePlot->getY_INLINE());
+		pPlot = GC.getMap().plot(ePlot->getX_INLINE(), ePlot->getY_INLINE());
 	}
 
 	if (pPlot == NULL)
@@ -15790,7 +15790,7 @@ bool CvUnit::canGatherResource(const CvPlot* ePlot, bool bTestVisible) const
 
 		if (pPlot->isCityRadius())
 		{
-			CvCity* pNearestCity = GC.getMapINLINE().findCity(pPlot->getX_INLINE(), pPlot->getY_INLINE(), pPlot->getOwner(), pPlot->getTeam(), false, true);
+			CvCity* pNearestCity = GC.getMap().findCity(pPlot->getX_INLINE(), pPlot->getY_INLINE(), pPlot->getOwner(), pPlot->getTeam(), false, true);
 
 			if (pNearestCity != NULL)
 			{

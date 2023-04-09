@@ -451,23 +451,23 @@ void CvPlayerAI::AI_updateFoundValues(bool bStartingLoc)
 	PROFILE_FUNC();
 
 	int iLoop;
-	for(CvArea* pLoopArea = GC.getMapINLINE().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMapINLINE().nextArea(&iLoop))
+	for(CvArea* pLoopArea = GC.getMap().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMap().nextArea(&iLoop))
 	{
 		pLoopArea->setBestFoundValue(getID(), 0);
 	}
 
 	if (bStartingLoc)
 	{
-		for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+		for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 		{
-			GC.getMapINLINE().plotByIndexINLINE(iI)->setFoundValue(getID(), -1);
+			GC.getMap().plotByIndexINLINE(iI)->setFoundValue(getID(), -1);
 		}
 	}
 	else
 	{
-		for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+		for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 		{
-			CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+			CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 			int iValue = 0;
 			if (pLoopPlot->isRevealed(getTeam(), false))
@@ -509,7 +509,7 @@ void CvPlayerAI::AI_updateAreaTargets()
 	CvArea* pLoopArea;
 	int iLoop;
 
-	for(pLoopArea = GC.getMapINLINE().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMapINLINE().nextArea(&iLoop))
+	for(pLoopArea = GC.getMap().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMap().nextArea(&iLoop))
 	{
 		if (!(pLoopArea->isWater()))
 		{
@@ -1005,7 +1005,7 @@ void CvPlayerAI::AI_conquerCity(CvCity* pCity)
 			{
 				if (getNumCities() > 4)
 				{
-					pNearestCity = GC.getMapINLINE().findCity(pCity->getX_INLINE(), pCity->getY_INLINE(), NO_PLAYER, getTeam(), true, false, NO_TEAM, NO_DIRECTION, pCity);
+					pNearestCity = GC.getMap().findCity(pCity->getX_INLINE(), pCity->getY_INLINE(), NO_PLAYER, getTeam(), true, false, NO_TEAM, NO_DIRECTION, pCity);
 
 					if (pNearestCity == NULL)
 					{
@@ -1092,7 +1092,7 @@ bool CvPlayerAI::AI_captureUnit(UnitTypes eUnit, CvPlot* pPlot)
 		return true;
 	}
 
-	pNearestCity = GC.getMapINLINE().findCity(pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_PLAYER, getTeam());
+	pNearestCity = GC.getMap().findCity(pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_PLAYER, getTeam());
 
 	if (pNearestCity != NULL)
 	{
@@ -1323,7 +1323,7 @@ int CvPlayerAI::AI_estimatedColonistIncome(CvPlot* pPlot, CvUnit* pColonist)
 int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStartingLoc)
 {
 	PROFILE_FUNC();
-	CvPlot* pPlot = GC.getMapINLINE().plotINLINE(iX, iY);
+	CvPlot* pPlot = GC.getMap().plotINLINE(iX, iY);
 
 	if (!canFound(Coordinates(iX, iY)))
 	{
@@ -1863,12 +1863,12 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 	{
 		if (pPlot->getMinOriginalStartDist() == -1)
 		{
-			iValue += (GC.getMapINLINE().maxStepDistance() * 100);
+			iValue += (GC.getMap().maxStepDistance() * 100);
 		}
 		else
 		{
 			iValue *= (1 + 4 * pPlot->getMinOriginalStartDist());
-			iValue /= (1 + 2 * GC.getMapINLINE().maxStepDistance());
+			iValue /= (1 + 2 * GC.getMap().maxStepDistance());
 		}
 
 		//nice hacky way to avoid this messing with normalizer, use elsewhere?
@@ -2202,7 +2202,7 @@ int CvPlayerAI::AI_foundValueNative(int iX, int iY, bool allowSettleOnBonus) con
 	}
 
 	// R&R, ray, adjustment for Mapsize Gigantic
-	bool giganticMap = (strcmp(getTypeStr(GC.getMapINLINE().getWorldSize()), "WORLDSIZE_GIGANTIC") == 0);
+	bool giganticMap = (strcmp(getTypeStr(GC.getMap().getWorldSize()), "WORLDSIZE_GIGANTIC") == 0);
 
 	int iBadTileCount = 0;
 	for (int iI = 0; iI < NUM_CITY_PLOTS; ++iI)
@@ -2428,11 +2428,11 @@ int CvPlayerAI::AI_targetCityValue(CvCity* pCity, bool bRandomize, bool bIgnoreA
 		}
 	}
 
-	pNearestCity = GC.getMapINLINE().findCity(pCity->getX_INLINE(), pCity->getY_INLINE(), getID());
+	pNearestCity = GC.getMap().findCity(pCity->getX_INLINE(), pCity->getY_INLINE(), getID());
 
 	if (pNearestCity != NULL)
 	{
-		iValue += std::max(1, ((GC.getMapINLINE().maxStepDistance() * 2) - GC.getMapINLINE().calculatePathDistance(pNearestCity->plot(), pCity->plot())));
+		iValue += std::max(1, ((GC.getMap().maxStepDistance() * 2) - GC.getMap().calculatePathDistance(pNearestCity->plot(), pCity->plot())));
 	}
 
 	if (bRandomize)
@@ -3064,9 +3064,9 @@ int CvPlayerAI::AI_calculateStolenCityRadiusPlots(PlayerTypes ePlayer)
 
 	iCount = 0;
 
-	for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 		if (pLoopPlot->getOwnerINLINE() == ePlayer)
 		{
@@ -3124,9 +3124,9 @@ int CvPlayerAI::AI_getStolenPlotsAttitude(PlayerTypes ePlayer)
 		}
 
 		int iStolenPlots = 0;
-		for(int i=0;i<GC.getMapINLINE().numPlotsINLINE();i++)
+		for(int i=0;i<GC.getMap().numPlotsINLINE();i++)
 		{
-			CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(i);
+			CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(i);
 			if(pLoopPlot->getOwnerINLINE() == ePlayer && pLoopPlot->getCulture(getID()) > pLoopPlot->getCulture(ePlayer))
 			{
 				++iStolenPlots;
@@ -4023,7 +4023,7 @@ DenialTypes CvPlayerAI::AI_cityTrade(CvCity* pCity, PlayerTypes ePlayer) const
 		{
 			if ((pCity->plot()->calculateCulturePercent(ePlayer) == 0) && !(pCity->isEverOwned(ePlayer)) && (GET_PLAYER(ePlayer).getNumCities() > 3))
 			{
-				CvCity* pNearestCity = GC.getMapINLINE().findCity(pCity->getX_INLINE(), pCity->getY_INLINE(), ePlayer, NO_TEAM, true, false, NO_TEAM, NO_DIRECTION, pCity);
+				CvCity* pNearestCity = GC.getMap().findCity(pCity->getX_INLINE(), pCity->getY_INLINE(), ePlayer, NO_TEAM, true, false, NO_TEAM, NO_DIRECTION, pCity);
 				if ((pNearestCity == NULL) || (plotDistance(pCity->getX_INLINE(), pCity->getY_INLINE(), pNearestCity->getX_INLINE(), pNearestCity->getY_INLINE()) > 9))
 				{
 					return DENIAL_UNKNOWN;
@@ -4412,9 +4412,9 @@ int CvPlayerAI::AI_calculateDamages(TeamTypes eTeam)
 			if (kPlayer.getTeam() == eTeam)
 			{
 				int iStolenPlots = 0;
-				for(int i=0;i<GC.getMapINLINE().numPlotsINLINE();i++)
+				for(int i=0;i<GC.getMap().numPlotsINLINE();i++)
 				{
-					CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(i);
+					CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(i);
 					if(pLoopPlot->getOwnerINLINE() == ePlayer && pLoopPlot->getCulture(getID()) > pLoopPlot->getCulture(ePlayer))
 					{
 						iStolenPlotCost += pLoopPlot->getBuyPrice(ePlayer);
@@ -8459,7 +8459,7 @@ void CvPlayerAI::AI_nativeYieldGift(CvUnit* pUnit)
 	CvCity* pHomeCity = pUnit->getHomeCity();
 	if (pHomeCity == NULL)
 	{
-		pHomeCity = GC.getMapINLINE().findCity(pUnit->getX_INLINE(), pUnit->getY_INLINE(), pUnit->getOwnerINLINE());
+		pHomeCity = GC.getMap().findCity(pUnit->getX_INLINE(), pUnit->getY_INLINE(), pUnit->getOwnerINLINE());
 		pUnit->setHomeCity(pHomeCity);
 	}
 
@@ -8542,7 +8542,7 @@ void CvPlayerAI::AI_nativeTrade(CvUnit* pUnit)
 	CvCity* pHomeCity = pUnit->getHomeCity();
 	if (pHomeCity == NULL)
 	{
-		pHomeCity = GC.getMapINLINE().findCity(pUnit->getX_INLINE(), pUnit->getY_INLINE(), pUnit->getOwnerINLINE());
+		pHomeCity = GC.getMap().findCity(pUnit->getX_INLINE(), pUnit->getY_INLINE(), pUnit->getOwnerINLINE());
 		pUnit->setHomeCity(pHomeCity);
 	}
 
@@ -10091,7 +10091,7 @@ CvPlot* CvPlayerAI::AI_getTerritoryCenter() const
 	iTotalX += iTotalWeight / 2;
 	iTotalY += iTotalWeight / 2;
 
-	return GC.getMapINLINE().plotINLINE(iTotalX / iTotalWeight, iTotalY / iTotalWeight);
+	return GC.getMap().plotINLINE(iTotalX / iTotalWeight, iTotalY / iTotalWeight);
 }
 
 int CvPlayerAI::AI_getTerritoryRadius() const
@@ -10176,9 +10176,9 @@ void CvPlayerAI::AI_createNativeCities()
 	{
 		int iBestValue = 0;
 		CvPlot* pBestPlot = NULL;
-		for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+		for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 		{
-			CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+			CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 			int iValue = AI_foundValueNative(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), false);
 			if (iValue > iBestValue)
 			{
@@ -10208,9 +10208,9 @@ void CvPlayerAI::AI_createNativeCities()
 		pCity->setCulture(getID(), 1, true);
 	}
 
-	for(int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for(int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 		int iCulture = 0;
 		int iOursCount = 0;
 		if (pLoopPlot->isCityRadius())
@@ -10274,9 +10274,9 @@ void CvPlayerAI::AI_createNativeCities()
 	}
 
 
-	for(int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for(int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 
 		if (pLoopPlot->getOwnerINLINE() == getID())
@@ -10339,12 +10339,12 @@ CvPlot* CvPlayerAI::AI_getImperialShipSpawnPlot()
 
 	if (AI_isStrategy(STRATEGY_CONCENTRATED_ATTACK))
 	{
-		pTargetPlot = GC.getMapINLINE().plotByIndexINLINE(AI_getStrategyData(STRATEGY_CONCENTRATED_ATTACK));
+		pTargetPlot = GC.getMap().plotByIndexINLINE(AI_getStrategyData(STRATEGY_CONCENTRATED_ATTACK));
 	}
 
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 		EuropeTypes eEurope = pLoopPlot->getEurope();
 		if (eEurope != NO_EUROPE)
@@ -10359,11 +10359,11 @@ CvPlot* CvPlayerAI::AI_getImperialShipSpawnPlot()
 				{
 				case CARDINALDIRECTION_EAST:
 				case CARDINALDIRECTION_WEST:
-					iLocation = (100 * pLoopPlot->getY_INLINE() + 50) / GC.getMapINLINE().getGridHeightINLINE();
+					iLocation = (100 * pLoopPlot->getY_INLINE() + 50) / GC.getMap().getGridHeightINLINE();
 					break;
 				case CARDINALDIRECTION_NORTH:
 				case CARDINALDIRECTION_SOUTH:
-					iLocation = (100 * pLoopPlot->getX_INLINE() + 50) / GC.getMapINLINE().getGridWidthINLINE();
+					iLocation = (100 * pLoopPlot->getX_INLINE() + 50) / GC.getMap().getGridWidthINLINE();
 					break;
 				default:
 					break;
@@ -11149,7 +11149,7 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 
 					CvArea* pLoopArea;
 					int iLoop;
-					for(pLoopArea = GC.getMapINLINE().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMapINLINE().nextArea(&iLoop))
+					for(pLoopArea = GC.getMap().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMap().nextArea(&iLoop))
 					{
 						if (!(pLoopArea->isWater()))
 						{
@@ -12089,7 +12089,7 @@ int CvPlayerAI::AI_eventValue(EventTypes eEvent, const EventTriggeredData& kTrig
 
 	int iNumCities = getNumCities();
 	CvCity* pCity = getCity(kTriggeredData.m_iCityId);
-	CvPlot* pPlot = GC.getMapINLINE().plot(kTriggeredData.m_iPlotX, kTriggeredData.m_iPlotY);
+	CvPlot* pPlot = GC.getMap().plot(kTriggeredData.m_iPlotX, kTriggeredData.m_iPlotY);
 	CvUnit* pUnit = getUnit(kTriggeredData.m_iUnitId);
 
 	int aiYields[NUM_YIELD_TYPES];
@@ -12934,9 +12934,9 @@ void CvPlayerAI::AI_doSuppressRevolution()
 		AI_setLastWave(0);
 		AI_setWaveIndex(0);
 
-		for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+		for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 		{
-			CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+			CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 			if (pLoopPlot != NULL)
 			{
 				pLoopPlot->setRevealed(getTeam(), true, false, NO_TEAM);
@@ -13692,7 +13692,7 @@ int CvPlayerAI::AI_goldToUpgradeAllUnits(int iExpThreshold)
 						}
 						else
 						{
-							CvCity* pCloseCity = GC.getMapINLINE().findCity(pLoopUnit->getX_INLINE(), pLoopUnit->getY_INLINE(), getID(), NO_TEAM, true, (pLoopUnit->getDomainType() == DOMAIN_SEA));
+							CvCity* pCloseCity = GC.getMap().findCity(pLoopUnit->getX_INLINE(), pLoopUnit->getY_INLINE(), getID(), NO_TEAM, true, (pLoopUnit->getDomainType() == DOMAIN_SEA));
 							if (pCloseCity != NULL && pCloseCity->canTrain(eUpgradeUnitType))
 							{
 								bCanUpgrade = true;
@@ -13911,9 +13911,9 @@ int CvPlayerAI::AI_countNumAreaHostileUnits(CvArea* pArea, bool bPlayer, bool bT
 
 	iCount = 0;
 
-	for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 		if ((pLoopPlot->area() == pArea) && pLoopPlot->isVisible(getTeam(), false) &&
 			((bPlayer && pLoopPlot->getOwnerINLINE() == getID()) || (bTeam && pLoopPlot->getTeam() == getTeam())
 				|| (bNeutral && !pLoopPlot->isOwned()) || (bHostile && pLoopPlot->isOwned() && GET_TEAM(getTeam()).isAtWar(pLoopPlot->getTeam()))))
@@ -14162,7 +14162,7 @@ CvPlot* CvPlayerAI::AI_advancedStartFindCapitalPlot()
 						{
 							iValue += GC.getGame().getSorenRandNum(100, "AI Advanced Start Choose Team Start");
 						}
-						CvCity * pNearestCity = GC.getMapINLINE().findCity(iX, iY, NO_PLAYER, getTeam());
+						CvCity * pNearestCity = GC.getMap().findCity(iX, iY, NO_PLAYER, getTeam());
 						if (NULL != pNearestCity)
 						{
 							FAssert(pNearestCity->getTeam() == getTeam());
@@ -14205,9 +14205,9 @@ CvPlot* CvPlayerAI::AI_advancedStartFindCapitalPlot()
 
 	if (NULL != getStartingPlot())
 	{
-		for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+		for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 		{
-			CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+			CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 			if (pLoopPlot->getArea() == getStartingPlot()->getArea())
 			{
 				int iValue = pLoopPlot->getFoundValue(getID());
@@ -14494,7 +14494,7 @@ bool CvPlayerAI::AI_advancedStartDoRoute(CvPlot* pFromPlot, CvPlot* pToPlot)
 
 		while (pNode != NULL)
 		{
-			CvPlot* pPlot = GC.getMapINLINE().plotSoren(pNode->m_iX, pNode->m_iY);
+			CvPlot* pPlot = GC.getMap().plotSoren(pNode->m_iX, pNode->m_iY);
 			RouteTypes eRoute = AI_bestAdvancedStartRoute(pPlot);
 			if (eRoute != NO_ROUTE)
 			{
@@ -14514,9 +14514,9 @@ void CvPlayerAI::AI_advancedStartRouteTerritory()
 	CvPlot* pLoopPlot;
 	int iI;
 
-	for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 		if ((pLoopPlot != NULL) && (pLoopPlot->getOwner() == getID()) && (pLoopPlot->getRouteType() == NO_ROUTE))
 		{
 			if (pLoopPlot->getImprovementType() != NO_IMPROVEMENT)
@@ -14544,7 +14544,7 @@ void CvPlayerAI::AI_doAdvancedStart(bool bNoExit)
 		return;
 	}
 
-	int iTargetCityCount = GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getTargetNumCities();
+	int iTargetCityCount = GC.getWorldInfo(GC.getMap().getWorldSize()).getTargetNumCities();
 
 	iTargetCityCount = 1 + iTargetCityCount + GC.getGameINLINE().getSorenRandNum(2 * iTargetCityCount, "AI Native Civilization Size");
 	iTargetCityCount /= 2;
@@ -14614,9 +14614,9 @@ void CvPlayerAI::AI_doAdvancedStart(bool bNoExit)
 					CvPlot* pStartingPlot = getStartingPlot();
 					if (NULL != pStartingPlot)
 					{
-						for (int iPlotLoop = 0; iPlotLoop < GC.getMapINLINE().numPlots(); ++iPlotLoop)
+						for (int iPlotLoop = 0; iPlotLoop < GC.getMap().numPlots(); ++iPlotLoop)
 						{
-							CvPlot* pPlot = GC.getMapINLINE().plotByIndex(iPlotLoop);
+							CvPlot* pPlot = GC.getMap().plotByIndex(iPlotLoop);
 
 							if (plotDistance(pPlot->getX_INLINE(), pPlot->getY_INLINE(), pStartingPlot->getX_INLINE(), pStartingPlot->getY_INLINE()) <= GC.getDefineINT("ADVANCED_START_SIGHT_RANGE"))
 							{
@@ -14643,9 +14643,9 @@ void CvPlayerAI::AI_doAdvancedStart(bool bNoExit)
 
 		for (int iPass = 0; iPass < 6; iPass++)
 		{
-			for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+			for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 			{
-				CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+				CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 				if (pLoopPlot->isRevealed(getTeam(), false))
 				{
 					if (pLoopPlot->getBonusType() != NO_BONUS)
@@ -14690,9 +14690,9 @@ void CvPlayerAI::AI_doAdvancedStart(bool bNoExit)
 			int iBestFoundValue = 0;
 			CvPlot* pBestFoundPlot = NULL;
 			AI_updateFoundValues(false);
-			for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+			for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 			{
-				CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+				CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 				if (plotDistance(getStartingPlot()->getX_INLINE(), getStartingPlot()->getY_INLINE(), pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE()) < 19)
 				{
 					int iFoundValue = pLoopPlot->getFoundValue(getID());
@@ -14991,10 +14991,10 @@ void CvPlayerAI::AI_doEnemyUnitData()
 	int iNewTotal = 0;
 
 
-	for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
 
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 		int iAdjacentAttackers = -1;
 		if (pLoopPlot->isVisible(getTeam(), false))
 		{
@@ -15831,7 +15831,7 @@ int CvPlayerAI::AI_cityDistance(CvPlot* pPlot)
 		AI_getDistanceMap();
 	}
 
-	return m_distanceMap[GC.getMapINLINE().plotNumINLINE(pPlot->getX_INLINE(), pPlot->getY_INLINE())];
+	return m_distanceMap[GC.getMap().plotNumINLINE(pPlot->getX_INLINE(), pPlot->getY_INLINE())];
 }
 
 //There's no need to save this (it is very fast to generate anyway)
@@ -15914,7 +15914,7 @@ void CvPlayerAI::AI_updateBestYieldPlots()
 	m_em_iBestWorkedYieldPlots.reset();
 	m_em_iBestUnworkedYieldPlots.reset();
 
-	CvMap& kMap = GC.getMapINLINE();
+	CvMap& kMap = GC.getMap();
 	for (int i = 0; i < kMap.numPlotsINLINE(); ++i)
 	{
 		CvPlot* pLoopPlot = kMap.plotByIndex(i);
@@ -15954,7 +15954,7 @@ CvPlot* CvPlayerAI::AI_getBestWorkedYieldPlot(YieldTypes eYield)
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
 
 	//Automatically returns NULL, if -1.
-	return GC.getMapINLINE().plotByIndexINLINE(m_em_iBestWorkedYieldPlots.get(eYield));
+	return GC.getMap().plotByIndexINLINE(m_em_iBestWorkedYieldPlots.get(eYield));
 }
 
 CvPlot* CvPlayerAI::AI_getBestUnworkedYieldPlot(YieldTypes eYield)
@@ -15963,7 +15963,7 @@ CvPlot* CvPlayerAI::AI_getBestUnworkedYieldPlot(YieldTypes eYield)
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
 
 	//Automatically returns NULL, if -1.
-	return GC.getMapINLINE().plotByIndexINLINE(m_em_iBestUnworkedYieldPlots.get(eYield));
+	return GC.getMap().plotByIndexINLINE(m_em_iBestUnworkedYieldPlots.get(eYield));
 }
 
 int CvPlayerAI::AI_getBestPlotYield(YieldTypes eYield)
@@ -16353,7 +16353,7 @@ void CvPlayerAI::AI_setWaveIndex(int iNum)
 bool CvPlayerAI::AI_isLandLocked(bool bIgnoreCultureLock) const
 {
 	int iLoop;
-	for(CvArea* pLoopArea = GC.getMapINLINE().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMapINLINE().nextArea(&iLoop))
+	for(CvArea* pLoopArea = GC.getMap().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMap().nextArea(&iLoop))
 	{
 		if (!pLoopArea->isWater())
 		{

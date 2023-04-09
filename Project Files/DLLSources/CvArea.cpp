@@ -46,9 +46,9 @@ int CvArea::calculateTotalBestNatureYield() const
 {
 	int iCount = 0;
 
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 		if (pLoopPlot->getArea() == getID())
 		{
@@ -69,9 +69,9 @@ int CvArea::countCoastalLand() const
 
 	int iCount = 0;
 
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 		if (pLoopPlot->getArea() == getID())
 		{
@@ -118,7 +118,7 @@ void CvArea::changeNumTiles(int iChange)
 
 		if (bOldLake != isLake())
 		{
-			GC.getMapINLINE().updateYield();
+			GC.getMap().updateYield();
 		}
 	}
 }
@@ -150,9 +150,9 @@ void CvArea::changeNumStartingPlots(int iChange)
 
 bool CvArea::hasEurope() const
 {
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 
 		if (pLoopPlot->getArea() == getID())
 		{

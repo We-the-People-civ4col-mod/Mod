@@ -3054,7 +3054,6 @@ int CvGlobals::getNumGraphicLevels() const { return NUM_GRAPHICLEVELS; }
 //
 // non-inline versions
 //
-CvMap& CvGlobals::getMap() { return *m_map; }
 CvGameAI& CvGlobals::getGame() { return *m_game; }
 CvGameAI *CvGlobals::getGamePointer(){ return m_game; }
 

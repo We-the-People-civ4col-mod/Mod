@@ -163,11 +163,10 @@ public:
 	DllExport CvInterface* getInterfacePtr();
 	DllExport int getMaxCivPlayers() const;
 #ifdef _USRDLL
-	CvMap& getMapINLINE() { return *m_map; }				// inlined for perf reasons, do not use outside of dll
+	CvMap& getMap() { return *m_map; }
 	CvGameAI& getGameINLINE() { return *m_game; }			// inlined for perf reasons, do not use outside of dll
 	const CvGameAI& getGameConst() const { return *m_game; }
 #endif
-	CvMap& getMap();
 	DllExport CvGameAI& getGame();
 	DllExport CvGameAI *getGamePointer();
 	DllExport CvRandom& getASyncRand();
