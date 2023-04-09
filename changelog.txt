@@ -1,5 +1,15 @@
 We the People Changelog
 
+Version 4.0.1
+
+Changes:
+- Desktop Icon replaced with one, which matches our forum thread image
+
+Fixes:
+- Winning an attack on a colony or settlement will no longer make the other defending units leave
+- #799: emphasize no longer resets between turns
+- Fixed bug, which turned some lakes into shallow coast
+- Switching the language to Spanish will no longer cause an error
 
 Version 4.0
 
