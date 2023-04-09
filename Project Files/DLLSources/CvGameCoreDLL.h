@@ -323,7 +323,7 @@ namespace boost
 #include "CvDeal.h"
 #include "CvDLLEntityIFaceBase.h"
 #include "CvGame.h"
-#include "CyGlobalContext.h"
+#include "CvArtFileMgr.h"
 #include "CvSelectionGroup.h"
 #include "CvTalkingHeadMessage.h"
 #include "CvCityAI.h"

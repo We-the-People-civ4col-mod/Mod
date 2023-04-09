@@ -457,6 +457,12 @@
     <ClCompile Include="DLLSources\CvDLLInterfaceIFaceBase.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\CyInfos.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\EXE_interface.cpp">
+      <Filter>Misc\EXE interface</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
@@ -876,6 +882,9 @@
     <ClInclude Include="DLLSources\HardcodedEnumSetup.h">
       <Filter>CV\Header</Filter>
     </ClInclude>
+    <ClInclude Include="DLLSources\CyInfos.h">
+      <Filter>Python\Header</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="DLLSources\FVariableSystem.inl">
@@ -885,7 +894,7 @@
       <Filter>Misc</Filter>
     </None>
     <None Include="DLLSources\CvGameCoreDLL.def">
-      <Filter>Misc</Filter>
+      <Filter>Misc\EXE interface</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -942,6 +951,9 @@
     </Filter>
     <Filter Include="Data\Header\EnumMap Internals">
       <UniqueIdentifier>{c674827b-abee-4556-946d-8c81b9471504}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc\EXE interface">
+      <UniqueIdentifier>{f2e98b89-d8ca-4626-9e7e-5468e1bccaad}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

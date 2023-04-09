@@ -1,5 +1,6 @@
 #include "CvGameCoreDLL.h"
 #include "CvInfos.h"
+#include "CyInfos.h"
 //
 // Python interface for info classes (formerly structs)
 // These are simple enough to be exposed directly - no wrappers
@@ -25,7 +26,7 @@ void CyInfoPythonInterface1()
 		.def("setScale", &CvScalableInfo::setScale, "void (float fScale)")
 		.def("getScale", &CvScalableInfo::getScale, "float  ()")
 		;
-	python::class_<CvPromotionInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvPromotionInfo")
+	python::class_<CyPromotionInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvPromotionInfo")
 		.def("hideFromPedia", &CvPromotionInfo::hideFromPedia, "bool ()")
 		.def("getPrereqPromotion", &CvPromotionInfo::getPrereqPromotion, "int ()")
 		.def("getPrereqOrPromotion1", &CvPromotionInfo::getPrereqOrPromotion1, "int ()")
@@ -73,7 +74,7 @@ void CyInfoPythonInterface1()
 		.def("getFeatureDoubleMove", &CvPromotionInfo::getFeatureDoubleMove, "bool (int i)")
 		.def("getUnitCombat", &CvPromotionInfo::getUnitCombat, "bool (int i)")
 		;
-	python::class_<CvMissionInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvMissionInfo")
+	python::class_<CyMissionInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvMissionInfo")
 		.def("getTime", &CvMissionInfo::getTime, "int ()")
 		.def("isSound", &CvMissionInfo::isSound, "bool ()")
 		.def("isTarget", &CvMissionInfo::isTarget, "bool ()")
@@ -81,7 +82,7 @@ void CyInfoPythonInterface1()
 		.def("getVisible", &CvMissionInfo::getVisible, "bool ()")
 		.def("getWaypoint", &CvMissionInfo::getWaypoint, "string ()")
 		;
-	python::class_<CvActionInfo, boost::noncopyable>("CvActionInfo")
+	python::class_<CyActionInfo, boost::noncopyable>("CvActionInfo")
 		.def("getMissionData", &CvActionInfo::getMissionData, "int ()")
 		.def("getCommandData", &CvActionInfo::getCommandData, "int ()")
 		.def("getAutomateType", &CvActionInfo::getAutomateType, "int ()")
@@ -94,7 +95,7 @@ void CyInfoPythonInterface1()
 		.def("getHotKey", &CvActionInfo::getHotKey, "string ()")
 		.def("getButton", &CvActionInfo::getButton, "string ()")
 		;
-	python::class_<CvUnitInfo, boost::noncopyable, python::bases<CvInfoBase, CvScalableInfo> >("CvUnitInfo")
+	python::class_<CyUnitInfo, boost::noncopyable, python::bases<CvInfoBase, CvScalableInfo> >("CvUnitInfo")
 		// TAC - Python Export - Ray - START
 		.def("NBMOD_GetTeachLevel", &CvUnitInfo::NBMOD_GetTeachLevel, "int ()")
 		// TAC - Python Export - Ray - END
@@ -140,7 +141,7 @@ void CyInfoPythonInterface1()
 		.def("getUnitCaptureClassType", &CvUnitInfo::getUnitCaptureClassType, "int ()")
 		.def("getUnitCombatType", &CvUnitInfo::getUnitCombatType, "int ()")
 		.def("getDomainType", &CvUnitInfo::getDomainType, "int ()")
-		.def("getDefaultProfession", &CvUnitInfo::EXE_getDefaultProfession, "int ()")
+		.def("getDefaultProfession", &CyUnitInfo::getDefaultProfession, "int ()")
 		.def("getDefaultUnitAIType", &CvUnitInfo::getDefaultUnitAIType, "int ()")
 		.def("getInvisibleType", &CvUnitInfo::getInvisibleType, "int ()")
 		.def("getNumSeeInvisibleTypes", &CvUnitInfo::getNumSeeInvisibleTypes, "int ()")
@@ -224,13 +225,13 @@ void CyInfoPythonInterface1()
 		.def("getUnitArtStylesArtInfo", &CvUnitInfo::getUnitArtStylesArtInfo,  python::return_value_policy<python::reference_existing_object>(), "CvArtInfoUnit* (int i, int j)")
 		//Androrc End
 		;
-	python::class_<CvSpecialUnitInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvSpecialUnitInfo")
+	python::class_<CySpecialUnitInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvSpecialUnitInfo")
 		.def("isValid", &CvSpecialUnitInfo::isValid, "bool ()")
 		.def("isCityLoad", &CvSpecialUnitInfo::isCityLoad, "bool ()")
 		.def("isCarrierUnitAIType", &CvSpecialUnitInfo::isCarrierUnitAIType, "bool (int i)")
 		.def("getProductionTraits", &CvSpecialUnitInfo::getProductionTraits, "int (int i)")
 		;
-	python::class_<CvCivicInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvCivicInfo")
+	python::class_<CyCivicInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvCivicInfo")
 		.def("getCivicOptionType", &CvCivicInfo::getCivicOptionType, "int ()")
 		.def("getAIWeight", &CvCivicInfo::getAIWeight, "int ()")
 		.def("getGreatGeneralRateModifier", &CvCivicInfo::getGreatGeneralRateModifier, "int ()")
@@ -256,10 +257,10 @@ void CyInfoPythonInterface1()
 		.def("getNumFreeUnitClasses", &CvCivicInfo::getNumFreeUnitClasses, "int ()")
 		.def("getFreeUnitClass", &CvCivicInfo::getFreeUnitClass, "int (int i)")
 		;
-	python::class_<CvUnitClassInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvUnitClassInfo")
+	python::class_<CyUnitClassInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvUnitClassInfo")
 		.def("getDefaultUnitIndex", &CvUnitClassInfo::getDefaultUnitIndex, "int ()")
 		;
-	python::class_<CvBuildingInfo, boost::noncopyable, python::bases<CvInfoBase, CvScalableInfo> >("CvBuildingInfo")
+	python::class_<CyBuildingInfo, boost::noncopyable, python::bases<CvInfoBase, CvScalableInfo> >("CvBuildingInfo")
 		// TAC - Python Export - Ray - START
 		.def("NBMOD_GetTeachLevel", &CvBuildingInfo::NBMOD_GetTeachLevel, "int ()")
 		// TAC - Python Export - Ray - END
@@ -320,7 +321,7 @@ void CyInfoPythonInterface1()
 		.def("isBuildingClassNeededInCity", &CvBuildingInfo::isBuildingClassNeededInCity, "bool (int i)")
 		.def("getArtInfo", &CvBuildingInfo::getArtInfo,  python::return_value_policy<python::reference_existing_object>())
 		;
-	python::class_<CvSpecialBuildingInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvSpecialBuildingInfo")
+	python::class_<CySpecialBuildingInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvSpecialBuildingInfo")
 		.def("isValid", &CvSpecialBuildingInfo::isValid, "bool ()")
 		.def("getChar", &CvSpecialBuildingInfo::getChar, "int ()")
 		// Arrays

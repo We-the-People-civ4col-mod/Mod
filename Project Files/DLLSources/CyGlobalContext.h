@@ -6,7 +6,7 @@
 // Passed to Python
 //
 #include "CvGlobals.h"
-#include "CvArtFileMgr.h"
+#include "CyInfos.h"
 class CyGame;
 class CyMap;
 class CyPlayer;
@@ -22,7 +22,7 @@ class CyGlobalContext
 public:
 	// PatchMod: Achievements START
 	int getNumAchieveInfos() const { return GC.getNumAchieveInfos(); }
-	CvAchieveInfo* getAchieveInfo(int i) const;
+	CyAchieveInfo* getAchieveInfo(int i) const;
 	// PatchMod: Achievements END
 	CyGlobalContext();
 	virtual ~CyGlobalContext();
@@ -34,49 +34,49 @@ public:
 	CyPlayer* getCyActivePlayer();
 	CvRandom& getCyASyncRand() const;
 	CyTeam* getCyTeam(int i);
-	CyArtFileMgr* getCyArtFileMgr() const;
-	CvEffectInfo* getEffectInfo(int i) const;
-	CvTerrainInfo* getTerrainInfo(int i) const;
-	CvBonusInfo* getBonusInfo(int i) const;
-	CvFeatureInfo* getFeatureInfo(int i) const;
-	CvCivilizationInfo* getCivilizationInfo(int idx) const;
-	CvLeaderHeadInfo* getLeaderHeadInfo(int i) const;
-	CvTraitInfo* getTraitInfo(int i) const;
-	CvUnitInfo* getUnitInfo(int i) const;
-	CvSpecialUnitInfo* getSpecialUnitInfo(int i) const;
-	CvYieldInfo* getYieldInfo(int i) const;
-	CvRouteInfo* getRouteInfo(int i) const;
-	CvImprovementInfo* getImprovementInfo(int i) const;
-	CvGoodyInfo* getGoodyInfo(int i) const;
-	CvBuildInfo* getBuildInfo(int i) const;
-	CvHandicapInfo* getHandicapInfo(int i) const;
-	CvGameSpeedInfo* getGameSpeedInfo(int i) const;
-	CvTurnTimerInfo* getTurnTimerInfo(int i) const;
-	CvBuildingClassInfo* getBuildingClassInfo(int i) const;
-	CvMissionInfo* getMissionInfo(int i) const;
-	CvCommandInfo* getCommandInfo(int i) const;
-	CvAutomateInfo* getAutomateInfo(int i) const;
-	CvActionInfo* getActionInfo(int i) const;
-	CvUnitClassInfo* getUnitClassInfo(int i) const;
+	CvArtFileMgr* getCvArtFileMgr() const;
+	CyEffectInfo* getEffectInfo(int i) const;
+	CyTerrainInfo* getTerrainInfo(int i) const;
+	CyBonusInfo* getBonusInfo(int i) const;
+	CyFeatureInfo* getFeatureInfo(int i) const;
+	CyCivilizationInfo* getCivilizationInfo(int idx) const;
+	CyLeaderHeadInfo* getLeaderHeadInfo(int i) const;
+	CyTraitInfo* getTraitInfo(int i) const;
+	CyUnitInfo* getUnitInfo(int i) const;
+	CySpecialUnitInfo* getSpecialUnitInfo(int i) const;
+	CyYieldInfo* getYieldInfo(int i) const;
+	CyRouteInfo* getRouteInfo(int i) const;
+	CyImprovementInfo* getImprovementInfo(int i) const;
+	CyGoodyInfo* getGoodyInfo(int i) const;
+	CyBuildInfo* getBuildInfo(int i) const;
+	CyHandicapInfo* getHandicapInfo(int i) const;
+	CyGameSpeedInfo* getGameSpeedInfo(int i) const;
+	CyTurnTimerInfo* getTurnTimerInfo(int i) const;
+	CyBuildingClassInfo* getBuildingClassInfo(int i) const;
+	CyMissionInfo* getMissionInfo(int i) const;
+	CyCommandInfo* getCommandInfo(int i) const;
+	CyAutomateInfo* getAutomateInfo(int i) const;
+	CyActionInfo* getActionInfo(int i) const;
+	CyUnitClassInfo* getUnitClassInfo(int i) const;
 	CvInfoBase* getUnitCombatInfo(int i) const;
 	CvInfoBase* getDomainInfo(int i) const;
-	CvBuildingInfo* getBuildingInfo(int i) const;
+	CyBuildingInfo* getBuildingInfo(int i) const;
 	CvInfoBase* getCivicOptionInfo(int i) const;
-	CvCivicInfo* getCivicInfo(int i) const;
-	CvDiplomacyInfo* getDiplomacyInfo(int i) const;
-	CvControlInfo* getControlInfo(int i) const;
-	CvSpecialBuildingInfo* getSpecialBuildingInfo(int i) const;
-	CvPromotionInfo* getPromotionInfo(int i) const;
-	CvProfessionInfo* getProfessionInfo(int i) const;
+	CyCivicInfo* getCivicInfo(int i) const;
+	CyDiplomacyInfo* getDiplomacyInfo(int i) const;
+	CyControlInfo* getControlInfo(int i) const;
+	CySpecialBuildingInfo* getSpecialBuildingInfo(int i) const;
+	CyPromotionInfo* getPromotionInfo(int i) const;
+	CyProfessionInfo* getProfessionInfo(int i) const;
 	CvAnimationPathInfo * getAnimationPathInfo(int i) const;
-	CvEmphasizeInfo * getEmphasizeInfo(int i) const;
-	CvCultureLevelInfo * getCultureLevelInfo(int i) const;
-	CvEraInfo * getEraInfo(int i) const;
-	CvVictoryInfo * getVictoryInfo(int i) const;
-	CvWorldInfo * getWorldInfo(int i) const;
-	CvClimateInfo * getClimateInfo(int i) const;
-	CvSeaLevelInfo * getSeaLevelInfo(int i) const;
-	CvEuropeInfo * getEuropeInfo(int i) const;
+	CyEmphasizeInfo * getEmphasizeInfo(int i) const;
+	CyCultureLevelInfo * getCultureLevelInfo(int i) const;
+	CyEraInfo * getEraInfo(int i) const;
+	CyVictoryInfo * getVictoryInfo(int i) const;
+	CyWorldInfo * getWorldInfo(int i) const;
+	CyClimateInfo * getClimateInfo(int i) const;
+	CySeaLevelInfo * getSeaLevelInfo(int i) const;
+	CyEuropeInfo * getEuropeInfo(int i) const;
 	CvInfoBase * getUnitAIInfo(int i) const;
 	CvColorInfo* getColorInfo(int i) const;
 	//Androrc UnitArtStyles
@@ -86,10 +86,10 @@ public:
 	int getNumPlayerColorInfos() const { return GC.getNumPlayerColorInfos(); }
 	CvPlayerColorInfo* getPlayerColorInfo(int i) const;
 	CvInfoBase* getHints(int i) const;
-	CvMainMenuInfo* getMainMenus(int i) const;
+	CyMainMenuInfo* getMainMenus(int i) const;
 	CvInfoBase* getInvisibleInfo(int i) const;
-	CvFatherInfo* getFatherInfo(int i) const;
-	CvFatherPointInfo* getFatherPointInfo(int i) const;
+	CyFatherInfo* getFatherInfo(int i) const;
+	CyFatherPointInfo* getFatherPointInfo(int i) const;
 	CvInfoBase* getAttitudeInfo(int i) const;
 	CvInfoBase* getMemoryInfo(int i) const;
 	CvInfoBase* getFatherCategoryInfo(int i) const;
@@ -101,13 +101,13 @@ public:
 	CvInfoBase* getSeasonInfo(int i) const;
 	CvInfoBase* getMonthInfo(int i) const;
 	CvInfoBase* getDenialInfo(int i) const;
-	CvEventTriggerInfo* getEventTriggerInfo(int i) const;
-	CvEventInfo* getEventInfo(int i) const;
-	CvHurryInfo* getHurryInfo(int i) const;
-	CvPlayerOptionInfo* getPlayerOptionInfo(int i) const;
-	CvPlayerOptionInfo* getPlayerOptionsInfoByIndex(int i) const;
-	CvGraphicOptionInfo* getGraphicOptionInfo(int i) const;
-	CvGraphicOptionInfo* getGraphicOptionsInfoByIndex(int i) const;
+	CyEventTriggerInfo* getEventTriggerInfo(int i) const;
+	CyEventInfo* getEventInfo(int i) const;
+	CyHurryInfo* getHurryInfo(int i) const;
+	CyPlayerOptionInfo* getPlayerOptionInfo(int i) const;
+	CyPlayerOptionInfo* getPlayerOptionsInfoByIndex(int i) const;
+	CyGraphicOptionInfo* getGraphicOptionInfo(int i) const;
+	CyGraphicOptionInfo* getGraphicOptionsInfoByIndex(int i) const;
 	// ArtInfos
 	CvArtInfoInterface* getInterfaceArtInfo(int i) const;
 	CvArtInfoMovie* getMovieArtInfo(int i) const;

@@ -93,87 +93,87 @@ CyTeam* CyGlobalContext::getCyTeam(int i)
 	return i<MAX_TEAMS ? &cyTeams[i] : NULL;
 }
 
-CvEffectInfo* CyGlobalContext::getEffectInfo(int /*EffectTypes*/ i) const
+CyEffectInfo* CyGlobalContext::getEffectInfo(int /*EffectTypes*/ i) const
 {
-	return (i>=0 && i<GC.getNumEffectInfos()) ? &GC.getEffectInfo((EffectTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumEffectInfos()) ? (CyEffectInfo*)&GC.getEffectInfo((EffectTypes) i) : NULL;
 }
-CvTerrainInfo* CyGlobalContext::getTerrainInfo(int /*TerrainTypes*/ i) const
+CyTerrainInfo* CyGlobalContext::getTerrainInfo(int /*TerrainTypes*/ i) const
 {
-	return (i>=0 && i<GC.getNumTerrainInfos()) ? &GC.getTerrainInfo((TerrainTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumTerrainInfos()) ? (CyTerrainInfo*)&GC.getTerrainInfo((TerrainTypes) i) : NULL;
 }
-CvBonusInfo* CyGlobalContext::getBonusInfo(int /*(BonusTypes)*/ i) const
+CyBonusInfo* CyGlobalContext::getBonusInfo(int /*(BonusTypes)*/ i) const
 {
-	return (i>=0 && i<GC.getNumBonusInfos()) ? &GC.getBonusInfo((BonusTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumBonusInfos()) ? (CyBonusInfo*)&GC.getBonusInfo((BonusTypes) i) : NULL;
 }
-CvFeatureInfo* CyGlobalContext::getFeatureInfo(int i) const
+CyFeatureInfo* CyGlobalContext::getFeatureInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumFeatureInfos()) ? &GC.getFeatureInfo((FeatureTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumFeatureInfos()) ? (CyFeatureInfo*)&GC.getFeatureInfo((FeatureTypes) i) : NULL;
 }
-CvCivilizationInfo* CyGlobalContext::getCivilizationInfo(int i) const
+CyCivilizationInfo* CyGlobalContext::getCivilizationInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumCivilizationInfos()) ? &GC.getCivilizationInfo((CivilizationTypes) i) : NULL;
-}
-
-CvLeaderHeadInfo* CyGlobalContext::getLeaderHeadInfo(int i) const
-{
-	return (i>=0 && i<GC.getNumLeaderHeadInfos()) ? &GC.getLeaderHeadInfo((LeaderHeadTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumCivilizationInfos()) ? (CyCivilizationInfo*)&GC.getCivilizationInfo((CivilizationTypes) i) : NULL;
 }
 
-CvTraitInfo* CyGlobalContext::getTraitInfo(int i) const
+CyLeaderHeadInfo* CyGlobalContext::getLeaderHeadInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumTraitInfos()) ? &GC.getTraitInfo((TraitTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumLeaderHeadInfos()) ? (CyLeaderHeadInfo*)&GC.getLeaderHeadInfo((LeaderHeadTypes) i) : NULL;
 }
 
-CvUnitInfo* CyGlobalContext::getUnitInfo(int i) const
+CyTraitInfo* CyGlobalContext::getTraitInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumUnitInfos()) ? &GC.getUnitInfo((UnitTypes) i) : NULL;
-}
-CvSpecialUnitInfo* CyGlobalContext::getSpecialUnitInfo(int i) const
-{
-	return (i>=0 && i<GC.getNumSpecialUnitInfos()) ? &GC.getSpecialUnitInfo((SpecialUnitTypes) i) : NULL;
-}
-CvYieldInfo* CyGlobalContext::getYieldInfo(int i) const
-{
-	return (i>=0 && i<NUM_YIELD_TYPES) ? &GC.getYieldInfo((YieldTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumTraitInfos()) ? (CyTraitInfo*)&GC.getTraitInfo((TraitTypes) i) : NULL;
 }
 
-CvRouteInfo* CyGlobalContext::getRouteInfo(int i) const
+CyUnitInfo* CyGlobalContext::getUnitInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumRouteInfos()) ? &GC.getRouteInfo((RouteTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumUnitInfos()) ? (CyUnitInfo*)&GC.getUnitInfo((UnitTypes) i) : NULL;
+}
+CySpecialUnitInfo* CyGlobalContext::getSpecialUnitInfo(int i) const
+{
+	return (i>=0 && i<GC.getNumSpecialUnitInfos()) ? (CySpecialUnitInfo*)&GC.getSpecialUnitInfo((SpecialUnitTypes) i) : NULL;
+}
+CyYieldInfo* CyGlobalContext::getYieldInfo(int i) const
+{
+	return (i>=0 && i<NUM_YIELD_TYPES) ? (CyYieldInfo*)&GC.getYieldInfo((YieldTypes) i) : NULL;
 }
 
-CvImprovementInfo* CyGlobalContext::getImprovementInfo(int i) const
+CyRouteInfo* CyGlobalContext::getRouteInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumImprovementInfos()) ? &GC.getImprovementInfo((ImprovementTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumRouteInfos()) ? (CyRouteInfo*)&GC.getRouteInfo((RouteTypes) i) : NULL;
 }
 
-CvGoodyInfo* CyGlobalContext::getGoodyInfo(int i) const
+CyImprovementInfo* CyGlobalContext::getImprovementInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumGoodyInfos()) ? &GC.getGoodyInfo((GoodyTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumImprovementInfos()) ? (CyImprovementInfo*)&GC.getImprovementInfo((ImprovementTypes) i) : NULL;
 }
 
-CvBuildInfo* CyGlobalContext::getBuildInfo(int i) const
+CyGoodyInfo* CyGlobalContext::getGoodyInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumBuildInfos()) ? &GC.getBuildInfo((BuildTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumGoodyInfos()) ? (CyGoodyInfo*)&GC.getGoodyInfo((GoodyTypes) i) : NULL;
 }
 
-CvHandicapInfo* CyGlobalContext::getHandicapInfo(int i) const
+CyBuildInfo* CyGlobalContext::getBuildInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumHandicapInfos()) ? &GC.getHandicapInfo((HandicapTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumBuildInfos()) ? (CyBuildInfo*)&GC.getBuildInfo((BuildTypes) i) : NULL;
 }
 
-CvBuildingClassInfo* CyGlobalContext::getBuildingClassInfo(int i) const
+CyHandicapInfo* CyGlobalContext::getHandicapInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumBuildingClassInfos()) ? &GC.getBuildingClassInfo((BuildingClassTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumHandicapInfos()) ? (CyHandicapInfo*)&GC.getHandicapInfo((HandicapTypes) i) : NULL;
 }
 
-CvBuildingInfo* CyGlobalContext::getBuildingInfo(int i) const
+CyBuildingClassInfo* CyGlobalContext::getBuildingClassInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumBuildingInfos()) ? &GC.getBuildingInfo((BuildingTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumBuildingClassInfos()) ? (CyBuildingClassInfo*)&GC.getBuildingClassInfo((BuildingClassTypes) i) : NULL;
 }
-CvUnitClassInfo* CyGlobalContext::getUnitClassInfo(int i) const
+
+CyBuildingInfo* CyGlobalContext::getBuildingInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumUnitClassInfos()) ? &GC.getUnitClassInfo((UnitClassTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumBuildingInfos()) ? (CyBuildingInfo*)&GC.getBuildingInfo((BuildingTypes) i) : NULL;
+}
+CyUnitClassInfo* CyGlobalContext::getUnitClassInfo(int i) const
+{
+	return (i>=0 && i<GC.getNumUnitClassInfos()) ? (CyUnitClassInfo*)&GC.getUnitClassInfo((UnitClassTypes) i) : NULL;
 }
 
 CvInfoBase* CyGlobalContext::getUnitCombatInfo(int i) const
@@ -186,38 +186,38 @@ CvInfoBase* CyGlobalContext::getDomainInfo(int i) const
 	return (i>=0 && i<NUM_DOMAIN_TYPES) ? &GC.getDomainInfo((DomainTypes)i) : NULL;
 }
 
-CvActionInfo* CyGlobalContext::getActionInfo(int i) const
+CyActionInfo* CyGlobalContext::getActionInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumActionInfos()) ? &GC.getActionInfo(i) : NULL;
+	return (i>=0 && i<GC.getNumActionInfos()) ? (CyActionInfo*)&GC.getActionInfo(i) : NULL;
 }
-CvAutomateInfo* CyGlobalContext::getAutomateInfo(int i) const
+CyAutomateInfo* CyGlobalContext::getAutomateInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumAutomateInfos()) ? &GC.getAutomateInfo(i) : NULL;
+	return (i>=0 && i<GC.getNumAutomateInfos()) ? (CyAutomateInfo*)&GC.getAutomateInfo(i) : NULL;
 }
-CvCommandInfo* CyGlobalContext::getCommandInfo(int i) const
+CyCommandInfo* CyGlobalContext::getCommandInfo(int i) const
 {
-	return (i>=0 && i<NUM_COMMAND_TYPES) ? &GC.getCommandInfo((CommandTypes)i) : NULL;
+	return (i>=0 && i<NUM_COMMAND_TYPES) ? (CyCommandInfo*)&GC.getCommandInfo((CommandTypes)i) : NULL;
 }
-CvControlInfo* CyGlobalContext::getControlInfo(int i) const
+CyControlInfo* CyGlobalContext::getControlInfo(int i) const
 {
-	return (i>=0 && i<NUM_CONTROL_TYPES) ? &GC.getControlInfo((ControlTypes)i) : NULL;
+	return (i>=0 && i<NUM_CONTROL_TYPES) ? (CyControlInfo*)&GC.getControlInfo((ControlTypes)i) : NULL;
 }
-CvMissionInfo* CyGlobalContext::getMissionInfo(int i) const
+CyMissionInfo* CyGlobalContext::getMissionInfo(int i) const
 {
-	return (i>=0 && i<NUM_MISSION_TYPES) ? &GC.getMissionInfo((MissionTypes) i) : NULL;
+	return (i>=0 && i<NUM_MISSION_TYPES) ? (CyMissionInfo*)&GC.getMissionInfo((MissionTypes) i) : NULL;
 }
-CvPromotionInfo* CyGlobalContext::getPromotionInfo(int i) const
+CyPromotionInfo* CyGlobalContext::getPromotionInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumPromotionInfos()) ? &GC.getPromotionInfo((PromotionTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumPromotionInfos()) ? (CyPromotionInfo*)&GC.getPromotionInfo((PromotionTypes) i) : NULL;
 }
-CvProfessionInfo* CyGlobalContext::getProfessionInfo(int i) const
+CyProfessionInfo* CyGlobalContext::getProfessionInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumProfessionInfos()) ? &GC.getProfessionInfo((ProfessionTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumProfessionInfos()) ? (CyProfessionInfo*)&GC.getProfessionInfo((ProfessionTypes) i) : NULL;
 }
 
-CvSpecialBuildingInfo* CyGlobalContext::getSpecialBuildingInfo(int i) const
+CySpecialBuildingInfo* CyGlobalContext::getSpecialBuildingInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumSpecialBuildingInfos()) ? &GC.getSpecialBuildingInfo((SpecialBuildingTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumSpecialBuildingInfos()) ? (CySpecialBuildingInfo*)&GC.getSpecialBuildingInfo((SpecialBuildingTypes) i) : NULL;
 }
 
 CvInfoBase* CyGlobalContext::getCivicOptionInfo(int i) const
@@ -225,17 +225,17 @@ CvInfoBase* CyGlobalContext::getCivicOptionInfo(int i) const
 	return &GC.getCivicOptionInfo((CivicOptionTypes) i);
 }
 
-CvCivicInfo* CyGlobalContext::getCivicInfo(int i) const
+CyCivicInfo* CyGlobalContext::getCivicInfo(int i) const
 {
-	return &GC.getCivicInfo((CivicTypes) i);
+	return (CyCivicInfo*)&GC.getCivicInfo((CivicTypes) i);
 }
-CvDiplomacyInfo* CyGlobalContext::getDiplomacyInfo(int i) const
+CyDiplomacyInfo* CyGlobalContext::getDiplomacyInfo(int i) const
 {
-	return &GC.getDiplomacyInfo(i);
+	return (CyDiplomacyInfo*)&GC.getDiplomacyInfo(i);
 }
-CvHurryInfo* CyGlobalContext::getHurryInfo(int i) const
+CyHurryInfo* CyGlobalContext::getHurryInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumHurryInfos()) ? &GC.getHurryInfo((HurryTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumHurryInfos()) ? (CyHurryInfo*)&GC.getHurryInfo((HurryTypes) i) : NULL;
 }
 
 CvAnimationPathInfo* CyGlobalContext::getAnimationPathInfo(int i) const
@@ -243,44 +243,44 @@ CvAnimationPathInfo* CyGlobalContext::getAnimationPathInfo(int i) const
 	return (i>=0 && i<GC.getNumAnimationPathInfos()) ? &GC.getAnimationPathInfo((AnimationPathTypes)i) : NULL;
 }
 
-CvEmphasizeInfo* CyGlobalContext::getEmphasizeInfo(int i) const
+CyEmphasizeInfo* CyGlobalContext::getEmphasizeInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumEmphasizeInfos()) ? &GC.getEmphasizeInfo((EmphasizeTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumEmphasizeInfos()) ? (CyEmphasizeInfo*)&GC.getEmphasizeInfo((EmphasizeTypes) i) : NULL;
 }
 
-CvCultureLevelInfo* CyGlobalContext::getCultureLevelInfo(int i) const
+CyCultureLevelInfo* CyGlobalContext::getCultureLevelInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumCultureLevelInfos()) ? &GC.getCultureLevelInfo((CultureLevelTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumCultureLevelInfos()) ? (CyCultureLevelInfo*)&GC.getCultureLevelInfo((CultureLevelTypes) i) : NULL;
 }
 
-CvVictoryInfo* CyGlobalContext::getVictoryInfo(int i) const
+CyVictoryInfo* CyGlobalContext::getVictoryInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumVictoryInfos()) ? &GC.getVictoryInfo((VictoryTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumVictoryInfos()) ? (CyVictoryInfo*)&GC.getVictoryInfo((VictoryTypes) i) : NULL;
 }
 
-CvEraInfo* CyGlobalContext::getEraInfo(int i) const
+CyEraInfo* CyGlobalContext::getEraInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumEraInfos()) ? &GC.getEraInfo((EraTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumEraInfos()) ? (CyEraInfo*)&GC.getEraInfo((EraTypes) i) : NULL;
 }
 
-CvWorldInfo* CyGlobalContext::getWorldInfo(int i) const
+CyWorldInfo* CyGlobalContext::getWorldInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumWorldInfos()) ? &GC.getWorldInfo((WorldSizeTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumWorldInfos()) ? (CyWorldInfo*)&GC.getWorldInfo((WorldSizeTypes) i) : NULL;
 }
 
-CvClimateInfo* CyGlobalContext::getClimateInfo(int i) const
+CyClimateInfo* CyGlobalContext::getClimateInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumClimateInfos()) ? &GC.getClimateInfo((ClimateTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumClimateInfos()) ? (CyClimateInfo*)&GC.getClimateInfo((ClimateTypes) i) : NULL;
 }
 
-CvSeaLevelInfo* CyGlobalContext::getSeaLevelInfo(int i) const
+CySeaLevelInfo* CyGlobalContext::getSeaLevelInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumSeaLevelInfos()) ? &GC.getSeaLevelInfo((SeaLevelTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumSeaLevelInfos()) ? (CySeaLevelInfo*)&GC.getSeaLevelInfo((SeaLevelTypes) i) : NULL;
 }
 
-CvEuropeInfo* CyGlobalContext::getEuropeInfo(int i) const
+CyEuropeInfo* CyGlobalContext::getEuropeInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumEuropeInfos()) ? &GC.getEuropeInfo((EuropeTypes) i) : NULL;
+	return (i>=0 && i<GC.getNumEuropeInfos()) ? (CyEuropeInfo*)&GC.getEuropeInfo((EuropeTypes) i) : NULL;
 }
 
 CvInfoBase* CyGlobalContext::getUnitAIInfo(int i) const
@@ -306,17 +306,17 @@ CvInfoBase* CyGlobalContext::getHints(int i) const
 {
 	return ((i >= 0 && i < GC.getNumHints()) ? &GC.getHints(i) : NULL);
 }
-CvMainMenuInfo* CyGlobalContext::getMainMenus(int i) const
+CyMainMenuInfo* CyGlobalContext::getMainMenus(int i) const
 {
-	return ((i >= 0 && i < GC.getNumMainMenus()) ? &GC.getMainMenus(i) : NULL);
+	return ((i >= 0 && i < GC.getNumMainMenus()) ? (CyMainMenuInfo*)&GC.getMainMenus(i) : NULL);
 }
-CvFatherInfo* CyGlobalContext::getFatherInfo(int i) const
+CyFatherInfo* CyGlobalContext::getFatherInfo(int i) const
 {
-	return ((i >= 0 && i < GC.getNumFatherInfos()) ? &GC.getFatherInfo((FatherTypes)i) : NULL);
+	return ((i >= 0 && i < GC.getNumFatherInfos()) ? (CyFatherInfo*)&GC.getFatherInfo((FatherTypes)i) : NULL);
 }
-CvFatherPointInfo* CyGlobalContext::getFatherPointInfo(int i) const
+CyFatherPointInfo* CyGlobalContext::getFatherPointInfo(int i) const
 {
-	return ((i >= 0 && i < GC.getNumFatherPointInfos()) ? &GC.getFatherPointInfo((FatherPointTypes)i) : NULL);
+	return ((i >= 0 && i < GC.getNumFatherPointInfos()) ? (CyFatherPointInfo*)&GC.getFatherPointInfo((FatherPointTypes)i) : NULL);
 }
 CvInfoBase* CyGlobalContext::getInvisibleInfo(int i) const
 {
@@ -335,14 +335,14 @@ CvInfoBase* CyGlobalContext::getFatherCategoryInfo(int i) const
 {
 	return (i>=0 && i<GC.getNumFatherCategoryInfos()) ? &GC.getFatherCategoryInfo((FatherCategoryTypes)i) : NULL;
 }
-CvPlayerOptionInfo* CyGlobalContext::getPlayerOptionsInfoByIndex(int i) const
+CyPlayerOptionInfo* CyGlobalContext::getPlayerOptionsInfoByIndex(int i) const
 {
-	return &GC.getPlayerOptionInfo((PlayerOptionTypes) i);
+	return (CyPlayerOptionInfo*)&GC.getPlayerOptionInfo((PlayerOptionTypes) i);
 }
 
-CvGraphicOptionInfo* CyGlobalContext::getGraphicOptionsInfoByIndex(int i) const
+CyGraphicOptionInfo* CyGlobalContext::getGraphicOptionsInfoByIndex(int i) const
 {
-	return &GC.getGraphicOptionInfo((GraphicOptionTypes) i);
+	return (CyGraphicOptionInfo*)&GC.getGraphicOptionInfo((GraphicOptionTypes) i);
 }
 
 CvInfoBase* CyGlobalContext::getConceptInfo(int i) const
@@ -385,14 +385,14 @@ CvInfoBase* CyGlobalContext::getDenialInfo(int i) const
 	return (i>=0 && i<GC.getNumDenialInfos()) ? &GC.getDenialInfo((DenialTypes)i) : NULL;
 }
 
-CvEventTriggerInfo* CyGlobalContext::getEventTriggerInfo(int i) const
+CyEventTriggerInfo* CyGlobalContext::getEventTriggerInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumEventTriggerInfos()) ? &GC.getEventTriggerInfo((EventTriggerTypes)i) : NULL;
+	return (i>=0 && i<GC.getNumEventTriggerInfos()) ? (CyEventTriggerInfo*)&GC.getEventTriggerInfo((EventTriggerTypes)i) : NULL;
 }
 
-CvEventInfo* CyGlobalContext::getEventInfo(int i) const
+CyEventInfo* CyGlobalContext::getEventInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumEventInfos()) ? &GC.getEventInfo((EventTypes)i) : NULL;
+	return (i>=0 && i<GC.getNumEventInfos()) ? (CyEventInfo*)&GC.getEventInfo((EventTypes)i) : NULL;
 }
 
 //Androrc UnitArtStyles
@@ -457,19 +457,19 @@ CvArtInfoFeature* CyGlobalContext::getFeatureArtInfo(int i) const
 	return (i>=0 && i<ARTFILEMGR.getNumFeatureArtInfos()) ? &ARTFILEMGR.getFeatureArtInfo(i) : NULL;
 }
 
-CvGameSpeedInfo* CyGlobalContext::getGameSpeedInfo(int i) const
+CyGameSpeedInfo* CyGlobalContext::getGameSpeedInfo(int i) const
 {
-	return &(GC.getGameSpeedInfo((GameSpeedTypes) i));
+	return (CyGameSpeedInfo*)&(GC.getGameSpeedInfo((GameSpeedTypes) i));
 }
-CvTurnTimerInfo* CyGlobalContext::getTurnTimerInfo(int i) const
+CyTurnTimerInfo* CyGlobalContext::getTurnTimerInfo(int i) const
 {
-	return &(GC.getTurnTimerInfo((TurnTimerTypes) i));
+	return (CyTurnTimerInfo*)&(GC.getTurnTimerInfo((TurnTimerTypes) i));
 }
 
 // PatchMod: Achievements START
-CvAchieveInfo* CyGlobalContext::getAchieveInfo(int i) const
+CyAchieveInfo* CyGlobalContext::getAchieveInfo(int i) const
 {
-	return ((i >= 0 && i < GC.getNumAchieveInfos()) ? &GC.getAchieveInfo((AchieveTypes)i) : NULL);
+	return ((i >= 0 && i < GC.getNumAchieveInfos()) ? (CyAchieveInfo*)&GC.getAchieveInfo((AchieveTypes)i) : NULL);
 }
 // PatchMod: Achievements END
 

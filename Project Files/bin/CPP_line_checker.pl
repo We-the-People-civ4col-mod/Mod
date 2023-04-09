@@ -18,7 +18,7 @@ opendir(DIR, $dir) or die $!;
 while (my $file = readdir(DIR))
 {
 	next unless (-f "$dir/$file");
-	next unless ($file =~ m/\.h$/) or ($file =~ m/\.cpp$/);
+	next unless ($file =~ m/\.h$/) or ($file =~ m/\.cpp$/) or ($file =~ m/\.def$/);
 	processfile($file, "$dir/$file");
 }
 closedir(DIR);

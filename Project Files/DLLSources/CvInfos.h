@@ -871,9 +871,6 @@ public:
 	void write(FDataStreamBase* );
 	bool read(CvXMLLoadUtility* pXML);
 
-	// EXE/python access functions
-	DllExport int EXE_getDefaultProfession() const;
-
 	int PYgetYieldCost(int i) const;
 
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------

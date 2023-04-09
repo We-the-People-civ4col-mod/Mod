@@ -167,7 +167,7 @@ public:
 	CvGameAI& getGameINLINE() { return *m_game; }			// inlined for perf reasons, do not use outside of dll
 	const CvGameAI& getGameConst() const { return *m_game; }
 #endif
-	DllExport CvMap& getMap();
+	CvMap& getMap();
 	DllExport CvGameAI& getGame();
 	DllExport CvGameAI *getGamePointer();
 	DllExport CvRandom& getASyncRand();

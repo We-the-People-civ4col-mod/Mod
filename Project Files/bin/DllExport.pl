@@ -19,12 +19,17 @@ use strict;
 use warnings;
 
 my $dir   = 0;
+my %classes = ();
+my %function_names = ();
+
 
 if (scalar @ARGV == 1)
 {
 	$dir = $ARGV[0];
 	$dir .= "/";
 }
+
+readCPP();
 
 open my $handle, '<', "bin/DllExport.txt" or die "Failed to open file bin/DllExport.txt";
 chomp(my @txt_lines = <$handle>);
@@ -43,6 +48,9 @@ while (my $file = readdir(DIR))
 closedir(DIR);
 
 die "\nDllExport ERROR: Failure to reach end of file\n\n\n" unless $next_file eq "";
+
+testAllFunctionsFound();
+testDEF();
 
 exit();
 
@@ -66,6 +74,8 @@ sub processfile
 	
 	my $i = 0;
 	
+	my $class = "";
+	
 	for my $line (@lines)
 	{
 		$i = $i + 1;
@@ -74,10 +84,23 @@ sub processfile
 			if ($line eq $next_line)
 			{
 				$next_line = shift @txt_lines;
+				while (testFunctionInCPP($next_line, $class))
+				{
+					$next_line = shift @txt_lines;
+				}
 			}
 			else
 			{
 				die "\n$path($i): Found DllExport on line not used by the exe: $line\nExpected: $next_line\nFor more information see https://github.com/We-the-People-civ4col-mod/Mod/wiki/DLL-interface-to-exe-and-python#exe-calling-dll\n\n";
+			}
+		}
+		elsif (substr($line, 0, 5) eq "class")
+		{
+			$class = substr($line, 6);
+			$class = getFirstWord($class);
+			while (testFunctionInCPP($next_line, $class))
+			{
+				$next_line = shift @txt_lines;
 			}
 		}
 	}
@@ -86,5 +109,137 @@ sub processfile
 	{
 		die "\nDllExport ERROR: $file: Failed to locate line: $next_line\n\n\n" unless index($next_line, "DllExport") == -1;
 		$next_file = $next_line;
+	}
+}
+
+sub testFunctionInCPP
+{
+	my $line = shift;
+	my $class = shift;
+	
+	if (exists $classes{$class}{$line})
+	{
+		$classes{$class}{$line} = 0;
+		return 1;
+	}
+	return 0;
+}
+
+sub truncateOnStr
+{
+	my $str = shift;
+	my $endChar = shift;
+	
+	my $index = index($str, $endChar);
+	
+	return $str if $index == -1;
+	return substr($str, 0, $index);
+}
+
+sub getFirstWord
+{
+	my $str = shift;
+	chomp($str);
+	
+	$str = truncateOnStr($str, " ");
+	$str = truncateOnStr($str, "\t");
+	$str = truncateOnStr($str, ":");
+	return $str;
+}
+
+sub readCPP
+{
+	my $file = 'DLLsources/EXE_interface.cpp';
+	open my $info, $file or die "Could not open $file: $!";
+
+	my $class;
+	
+	my $i = 0;
+
+	while( my $line = <$info>) 
+	{
+		$i = $i + 1;
+		if (substr($line, 0, 5) eq "class")
+		{
+			chomp($line);
+			$class = substr($line, rindex($line, " ")+1);
+			$classes{$class} = ();
+			$function_names{$class} = ();
+		}
+		elsif (substr($line, 0, 10) eq "\tDllExport")
+		{
+			chomp($line);
+			$line .= ";";
+			$classes{$class}{$line} = $i;
+			
+			my $func = substr($line, 0, index($line, "("));
+			$func = substr($func, rindex($func, " ")+1);
+			$function_names{$class}{$func} = 1;
+		}
+	}
+
+	close $info;
+}
+
+sub testAllFunctionsFound
+{
+	foreach my $class (keys %classes)
+	{
+		foreach my $func (keys %{$classes{$class}})
+		{
+			if ($classes{$class}{$func} != 0)
+			{
+				die "\nDLLsources/EXE_interface.cpp(" . $classes{$class}{$func} . "): DllExport function present, which isn't listed in the vanilla interface\n\n";
+			}
+		}
+	}
+}
+
+sub testDEF
+{
+	my $file = 'DLLsources/CvGameCoreDLL.def';
+	open my $info, $file or die "Could not open $file: $!";
+
+	my $i = 0;
+
+	while( my $line = <$info>) 
+	{
+		$i = $i + 1;
+		if (substr($line, 0, 1) eq "?")
+		{
+			my $index = index($line, "@");
+			my $func = substr($line, 1, $index-1);
+			my $class = substr($line, $index+1);
+			$class = substr($class, 0, index($class, "@"));
+			
+			if (exists $function_names{$class}{$func})
+			{
+				if ($function_names{$class}{$func} == 1)
+				{
+					$function_names{$class}{$func} = 2;
+				}
+				else
+				{
+					die "\nDLLsources/CvGameCoreDLL.def(" . $i . "): " . $class . "::" . $func . " is redirected more than once\n\n";
+				}
+			}
+			else
+			{
+				die "\nDLLsources/CvGameCoreDLL.def(" . $i . "): " . $class . "::" . $func . " redirected, but isn't present in EXE_interface.cpp\n\n";
+			}
+		}
+	}
+
+	close $info;
+	
+	foreach my $class (keys %function_names)
+	{
+		foreach my $func (keys %{$function_names{$class}})
+		{
+			if ($function_names{$class}{$func} == 1)
+			{
+				die "\nDLLsources/CvGameCoreDLL.def(1): " . $class . "::" . $func . " isn't present, but must be redirected due to being present in EXE_interface.cpp\n\n";
+			}
+		}
 	}
 }

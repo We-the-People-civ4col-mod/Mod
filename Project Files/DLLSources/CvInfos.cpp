@@ -4243,11 +4243,6 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	return true;
 }
 
-int CvUnitInfo::EXE_getDefaultProfession() const
-{
-	return getDefaultProfession();
-}
-
 int CvUnitInfo::PYgetYieldCost(int i) const
 {
 	return getYieldCost(static_cast<YieldTypes>(i));

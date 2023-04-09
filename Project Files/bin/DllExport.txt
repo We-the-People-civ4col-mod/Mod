@@ -582,7 +582,7 @@ CvInfos.h
 	DllExport int getUnitGroupRequired(int i, int iProfession) const;
 	DllExport const char* getFormationType() const;
 	DllExport const CvArtInfoUnit* getArtInfo(int i, int iProfession) const;
-	DllExport int EXE_getDefaultProfession() const;
+	DllExport int getDefaultProfession() const;
 	DllExport CvUnitFormationInfo();
 	DllExport const char* getFormationType() const;
 	DllExport const std::vector<EntityEventTypes> & getEventTypes() const;
