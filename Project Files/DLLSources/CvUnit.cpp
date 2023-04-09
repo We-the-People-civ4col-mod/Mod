@@ -8884,7 +8884,7 @@ bool CvUnit::canCoexistWithEnemyUnit(TeamTypes eTeam) const
 	// WTP, ray, fixing strange behaviour of Buccanneers - END
 
 	// WTP, jooe - 2023-04-08: allow coexisting if a unit is going to be captured this turn - START
-	if (GET_PLAYER(getCapturingPlayer()).getTeam() == eTeam)
+	if (getCapturingPlayer() != NO_PLAYER && GET_PLAYER(getCapturingPlayer()).getTeam() == eTeam)
 	{
 		return true;
 	}
