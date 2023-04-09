@@ -496,6 +496,10 @@
             <bOutsideBorders>0</bOutsideBorders>
             <TerrainMakesValids>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PEAK</TerrainType>
+                    <bMakesValid>0</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -683,6 +687,10 @@
             <bOutsideBorders>0</bOutsideBorders>
             <TerrainMakesValids>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PEAK</TerrainType>
+                    <bMakesValid>0</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -869,6 +877,10 @@
             <iPillageGold>0</iPillageGold>
             <bOutsideBorders>0</bOutsideBorders>
             <TerrainMakesValids>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PEAK</TerrainType>
+                    <bMakesValid>0</bMakesValid>
+                </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
                     <bMakesValid>1</bMakesValid>
