@@ -9479,6 +9479,7 @@ m_bNoCity(false),
 m_bNoImprovement(false),
 m_bVisibleAlways(false),
 m_iWorldSoundscapeScriptId(0),
+m_eEffectType(NO_EFFECT),
 m_iEffectProbability(0),
 m_aiYieldChange(NULL),
 m_aiRiverYieldIncrease(NULL),
@@ -9642,9 +9643,9 @@ int CvFeatureInfo::getWorldSoundscapeScriptId() const
 {
 	return m_iWorldSoundscapeScriptId;
 }
-const char* CvFeatureInfo::getEffectType() const
+EffectTypes CvFeatureInfo::getEffectType() const
 {
-	return m_szEffectType;
+	return m_eEffectType;
 }
 int CvFeatureInfo::getEffectProbability() const
 {
@@ -9751,7 +9752,7 @@ bool CvFeatureInfo::read(CvXMLLoadUtility* pXML)
 	{
 		m_iWorldSoundscapeScriptId = -1;
 	}
-	pXML->GetChildXmlValByName(m_szEffectType, "EffectType");
+	pXML->GetEnum(getType(), m_eEffectType, "EffectType", false);
 	pXML->GetChildXmlValByName(&m_iEffectProbability, "iEffectProbability");
 	pXML->SetVariableListTagPair(&m_abTerrain, "TerrainBooleans", GC.getNumTerrainInfos(), false);
 	return true;

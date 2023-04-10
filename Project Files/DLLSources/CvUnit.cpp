@@ -3712,7 +3712,7 @@ void CvUnit::move(CvPlot* pPlot, bool bShow)
 			{
 				if (GC.getASyncRand().get(100) < GC.getFeatureInfo(featureType).getEffectProbability())
 				{
-					EffectTypes eEffect = (EffectTypes)GC.getInfoTypeForString(GC.getFeatureInfo(featureType).getEffectType());
+					const EffectTypes eEffect = GC.getFeatureInfo(featureType).getEffectType();
 					gDLL->getEngineIFace()->TriggerEffect(eEffect, pPlot->getPoint(), (float)(GC.getASyncRand().get(360)));
 					gDLL->getInterfaceIFace()->playGeneralSound("AS3D_UN_BIRDS_SCATTER", pPlot->getPoint());
 				}
