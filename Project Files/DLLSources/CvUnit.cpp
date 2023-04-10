@@ -5244,17 +5244,21 @@ bool CvUnit::canUnload() const
 					int iBarracksSpaceNeededByUnit = getUnitInfo().getBarracksSpaceNeeded();
 					if (getProfession() != NO_PROFESSION)
 					{
-						iBarracksSpaceNeededByUnit = GC.getProfessionInfo(getProfession()).getBarracksSpaceNeededChange();
+						iBarracksSpaceNeededByUnit += GC.getProfessionInfo(getProfession()).getBarracksSpaceNeededChange();
 					}
 
-					// Caclulating free Barracks Space in City
-					int iBarracksSpaceMaxInCity = plot()->getPlotCity()->getCityBarracksSpace();
-					int iBarracksSpaceUsedInCity = plot()->getPlotCity()->getCityBarracksSpaceUsed();
-					int iBarracksSpaceAvailableInCity = iBarracksSpaceMaxInCity - iBarracksSpaceUsedInCity;
-
-					if (iBarracksSpaceNeededByUnit > iBarracksSpaceAvailableInCity)
+					// WTP, ray, fix issue of unloading Non-Military Units not allowed
+					if (iBarracksSpaceNeededByUnit > 0)
 					{
-						return false;
+						// Caclulating free Barracks Space in City
+						int iBarracksSpaceMaxInCity = plot()->getPlotCity()->getCityBarracksSpace();
+						int iBarracksSpaceUsedInCity = plot()->getPlotCity()->getCityBarracksSpaceUsed();
+						int iBarracksSpaceAvailableInCity = iBarracksSpaceMaxInCity - iBarracksSpaceUsedInCity;
+
+						if (iBarracksSpaceNeededByUnit > iBarracksSpaceAvailableInCity)
+						{
+							return false;
+						}
 					}
 				}
 			}
