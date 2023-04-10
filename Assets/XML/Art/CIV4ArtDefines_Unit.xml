@@ -12761,8 +12761,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Slave_Master.dds</FullLengthIcon>
             <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Special_Military/Slave_Master/Seasoned_Scout.nif</NIF>
-            <KFM>Art/Units/Special_Military/Slave_Master/Seasoned_Scout.kfm</KFM>
+            <NIF>Art/Units/Special_Military/Slave_Master/Slavemaster.nif</NIF>
+            <KFM>Art/Units/Special_Military/Slave_Master/Slavemaster.kfm</KFM>
             <fBattleDistance>0.5</fBattleDistance>
             <fRangedDeathTime>0.77</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>

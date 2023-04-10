@@ -9605,6 +9605,35 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script3DSound>
 	<Script3DSound>
+		<ScriptID>AS3D_UN_WHIP</ScriptID>
+		<SoundID>SND_WHIP</SoundID>
+		<SoundType>GAME_SFX</SoundType>
+		<iMinVolume>75</iMinVolume>
+		<iMaxVolume>100</iMaxVolume>
+		<iPitchChangeDown>-2000</iPitchChangeDown>
+		<iPitchChangeUp>2000</iPitchChangeUp>
+		<bLooping>0</bLooping>
+		<iMinTimeDelay>0</iMinTimeDelay>
+		<iMaxTimeDelay>0</iMaxTimeDelay>
+		<StartPosition>NONE</StartPosition>
+		<EndPosition>NONE</EndPosition>
+		<iMinVelocity>0</iMinVelocity>
+		<iMaxVelocity>0</iMaxVelocity>
+		<iMinDistanceFromListener>0</iMinDistanceFromListener>
+		<iMaxDistanceFromListener>0</iMaxDistanceFromListener>
+		<iMinDistanceForMaxVolume>500</iMinDistanceForMaxVolume>
+		<iMaxDistanceForMaxVolume>1000</iMaxDistanceForMaxVolume>
+		<iMinCutoffDistance>7000</iMinCutoffDistance>
+		<iMaxCutoffDistance>7000</iMaxCutoffDistance>
+		<bTaperForSoundtracks>0</bTaperForSoundtracks>
+		<iLengthOfSound>0</iLengthOfSound>
+		<fMinDryLevel>1.0</fMinDryLevel>
+		<fMaxDryLevel>1.0</fMaxDryLevel>
+		<fMinWetLevel>0.5</fMinWetLevel>
+		<fMaxWetLevel>0.5</fMaxWetLevel>
+		<iNotPlayPercent>0</iNotPlayPercent>
+	</Script3DSound>
+	<Script3DSound>
 		<ScriptID>AS3D_UN_ARMOUR_HIT</ScriptID>
 		<SoundID>SND_ARMOUR_HIT</SoundID>
 		<SoundType>GAME_SFX</SoundType>
