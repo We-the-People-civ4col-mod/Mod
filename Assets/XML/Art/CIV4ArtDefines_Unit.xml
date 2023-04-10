@@ -12982,8 +12982,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Great_Admiral.dds</FullLengthIcon>
             <fScale>0.52</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Special_Military/Great_Admiral/Great_General.nif</NIF>
-            <KFM>Art/Units/Special_Military/Great_Admiral/Great_General.kfm</KFM>
+            <NIF>Art/Units/Special_Military/Great_Admiral/Great_Admiral.nif</NIF>
+            <KFM>Art/Units/Special_Military/Great_Admiral/Great_Admiral.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -13000,7 +13000,7 @@
             <fScale>0.52</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Great_General/Great_General.nif</NIF>
-            <KFM>Art/Units/Special_Military/Great_Admiral/Great_General.kfm</KFM>
+            <KFM>Art/Units/Special_Military/Great_General/Great_General.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17734,8 +17734,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Brave_Lieutenant.dds</FullLengthIcon>
             <fScale>0.52</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Special_Military/Brave_Lieutenant/Great_General.nif</NIF>
-            <KFM>Art/Units/Special_Military/Brave_Lieutenant/Great_General.kfm</KFM>
+            <NIF>Art/Units/Special_Military/Brave_Lieutenant/Brave_Lieutenant.nif</NIF>
+            <KFM>Art/Units/Special_Military/Brave_Lieutenant/Brave_Lieutenant.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
