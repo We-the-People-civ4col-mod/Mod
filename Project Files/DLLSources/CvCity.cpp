@@ -109,21 +109,22 @@ void CvCity::init(int iID, PlayerTypes eOwner, Coordinates initCoord, bool bBump
 			// Luxury Goods should also give a little profit
 			if (eYield == YIELD_LUXURY_GOODS)
 			{
-				iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS();
+				iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + GLOBAL_DEFINE_PRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS;
 			}
 			// WTP, now also Fieldworker Tools, but the Diff is only half
 			else if (eYield == YIELD_FIELD_WORKER_TOOLS)
 			{
-				iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + (GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS() / 2);
+				iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + (GLOBAL_DEFINE_PRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS/ 2);
 			}
 			// WTP, now also Household Goods, but the Diff is only half
 			else if (eYield == YIELD_HOUSEHOLD_GOODS)
 			{
-				iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + (GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS() / 2);
+				iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + (GLOBAL_DEFINE_PRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS / 2);
 			}
 			else
 			{
-				iBuyPrice = kYield.getBuyPriceLow() + GC.getGameINLINE().getSorenRandNum(kYield.getBuyPriceHigh() - kYield.getBuyPriceLow() + 1, "Yield Price");
+				// WTP, trying to fix issue that Domestic Market became unattractive
+				iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + GLOBAL_DEFINE_PRICE_DIFF_EUROPE_DOMESTIC_OTHER_GOODS;
 			}
 
 			setYieldBuyPrice(eYield, iBuyPrice);
@@ -13876,6 +13877,10 @@ void CvCity::doPrices()
 			// WTP, now also Fieldwoker Tools, but the Diff is only half
 			// WTP, now also Household Goods, but the Diff is only half
 			iTargetPrice += GLOBAL_DEFINE_PRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS / 2;
+			break;
+			// WTP, trying to fix issue that Domestic Market became unattractive
+		default:
+			iTargetPrice += GLOBAL_DEFINE_PRICE_DIFF_EUROPE_DOMESTIC_OTHER_GOODS;
 			break;
 		}
 

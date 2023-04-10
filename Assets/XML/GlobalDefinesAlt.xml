@@ -838,6 +838,10 @@
 		<iDefineIntVal>6</iDefineIntVal>
 	</Define>
 	<Define>
+		<DefineName>PRICE_DIFF_EUROPE_DOMESTIC_OTHER_GOODS</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>DOMESTIC_SALES_MESSAGES</DefineName>
 		<iDefineIntVal>1</iDefineIntVal>
 	</Define>
