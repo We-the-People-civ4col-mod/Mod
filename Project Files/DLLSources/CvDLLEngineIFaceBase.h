@@ -76,7 +76,9 @@ public:
 	virtual void clearAreaBorderPlots(AreaBorderLayers layer) = 0;
 	virtual void addLandmark(CvPlot *plot, const wchar *caption) = 0;
 
+private: // private due to being prone to crashes. Use wrapper function below
 	virtual void TriggerEffect(int iEffect, NiPoint3 pt3Point, float rotation = 0.0f) = 0;
+public:
 	virtual void printProfileText() = 0;
 
 	virtual void clearSigns() = 0;
@@ -95,6 +97,27 @@ public:
 	virtual FogOfWarModeTypes PopFogOfWar() = 0;
 	virtual void setFogOfWarFromStack() = 0;
 	virtual void MarkPlotTextureAsDirty(int plotX, int plotY) = 0;
+
+	//
+	// For whatever reason, adding anything before this point will cause crashes
+	// Most likely this is related to virtual functions being indexed somehow and adding functions before corrupts what is called in the exe
+	//    Nightinggale
+	//
+
+	struct TriggerEffectArguments
+	{
+		TriggerEffectArguments()
+			: effect(NO_EFFECT)
+			, rotation(0.0f)
+			, audio(NULL)
+		{}
+		EffectTypes effect;
+		NiPoint3 pt3Point;
+		float rotation;
+		const char* audio;
+	};
+
+	void TriggerEffect(const TriggerEffectArguments& arguments);
 };
 
 #endif	// CvDLLEngineIFaceBase_h

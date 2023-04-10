@@ -463,6 +463,9 @@
     <ClCompile Include="DLLSources\EXE_interface.cpp">
       <Filter>Misc\EXE interface</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\CvDLLEngineIFaceBase.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
