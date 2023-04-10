@@ -2684,7 +2684,7 @@ public:
 	void setArtDefineTag(const char* szTag);
 
 	DllExport int getWorldSoundscapeScriptId() const;
-	const char* getEffectType() const;
+	EffectTypes getEffectType() const;
 	int getEffectProbability() const;
 	// Arrays
 	int getYieldChange(int i) const;
@@ -2735,7 +2735,7 @@ protected:
 	bool m_bVisibleAlways;
 	CvString m_szOnUnitChangeTo;
 	int m_iWorldSoundscapeScriptId;
-	CvString m_szEffectType;
+	EffectTypes m_eEffectType;
 	int m_iEffectProbability;
 	// Arrays
 	int* m_aiYieldChange;
