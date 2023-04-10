@@ -142,12 +142,7 @@
             <Civilopedia>TXT_KEY_FATHER_GIOVANNI_DA_VERRAZANO_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_FATHER_GIOVANNI_DA_VERRAZANO_STRATEGY</Strategy>
             <FatherCategory>FATHERCATEGORY_EXPLORATION</FatherCategory>
-            <RevealImprovements>
-                <RevealImprovement>
-                    <ImprovementType>IMPROVEMENT_GOODY_HUT3</ImprovementType>
-                    <bReveal>1</bReveal>
-                </RevealImprovement>
-            </RevealImprovements>
+            <RevealImprovements/>
             <FreeUnits>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_GALLEON</UnitClass>
