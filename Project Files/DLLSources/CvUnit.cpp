@@ -3712,9 +3712,16 @@ void CvUnit::move(CvPlot* pPlot, bool bShow)
 			{
 				if (GC.getASyncRand().get(100) < GC.getFeatureInfo(featureType).getEffectProbability())
 				{
-					const EffectTypes eEffect = GC.getFeatureInfo(featureType).getEffectType();
-					gDLL->getEngineIFace()->TriggerEffect(eEffect, pPlot->getPoint(), (float)(GC.getASyncRand().get(360)));
-					gDLL->getInterfaceIFace()->playGeneralSound("AS3D_UN_BIRDS_SCATTER", pPlot->getPoint());
+					CvDLLEngineIFaceBase::TriggerEffectArguments arguments;
+
+					arguments.effect = GC.getFeatureInfo(featureType).getEffectType();
+					if (arguments.effect != NO_EFFECT)
+					{
+						arguments.pt3Point = pPlot->getPoint();
+						arguments.rotation = GC.getASyncRand().get(360);
+						arguments.audio = "AS3D_UN_BIRDS_SCATTER";
+						gDLL->getEngineIFace()->TriggerEffect(arguments);
+					}
 				}
 			}
 		}
@@ -7414,9 +7421,13 @@ bool CvUnit::doFound(bool bBuyLand)
 		if (pCityPlot->isActiveVisible(false))
 		{
 			NotifyEntity(MISSION_FOUND);
-			EffectTypes eEffect = (EffectTypes)GC.getInfoTypeForString("EFFECT_SETTLERSMOKE");
-			gDLL->getEngineIFace()->TriggerEffect(eEffect, pCityPlot->getPoint(), (float)(GC.getASyncRand().get(360)));
-			gDLL->getInterfaceIFace()->playGeneralSound("AS3D_UN_FOUND_CITY", pCityPlot->getPoint());
+
+			CvDLLEngineIFaceBase::TriggerEffectArguments arguments;
+			arguments.effect = EFFECT_SETTLERSMOKE;
+			arguments.pt3Point = pCityPlot->getPoint();
+			arguments.rotation = GC.getASyncRand().get(360);
+			arguments.audio = "AS3D_UN_FOUND_CITY";
+			gDLL->getEngineIFace()->TriggerEffect(arguments);
 		}
 
 		CvCity* pCity = GET_PLAYER(getOwnerINLINE()).found(coord());
@@ -15245,9 +15256,12 @@ bool CvUnit::raidTreasury(CvCity* pCity)
 	CvPlot* pPlot = pCity->plot();
 	if (pPlot->isVisible(GC.getGame().getActiveTeam(), false))
 	{
-		EffectTypes eEffect = GC.getEntityEventInfo(GC.getMissionInfo(MISSION_PILLAGE).getEntityEvent()).getEffectType();
-		gDLL->getEngineIFace()->TriggerEffect(eEffect, pPlot->getPoint(), (float)(GC.getASyncRand().get(360)));
-		gDLL->getInterfaceIFace()->playGeneralSound("AS3D_UN_CITY_EXPLOSION", pPlot->getPoint());
+		CvDLLEngineIFaceBase::TriggerEffectArguments arguments;
+		arguments.effect = GC.getEntityEventInfo(GC.getMissionInfo(MISSION_PILLAGE).getEntityEvent()).getEffectType();
+		arguments.pt3Point = pPlot->getPoint();
+		arguments.rotation = GC.getASyncRand().get(360);
+		arguments.audio = "AS3D_UN_CITY_EXPLOSION";
+		gDLL->getEngineIFace()->TriggerEffect(arguments);
 	}
 
 	CvWString szString = gDLL->getText("TXT_KEY_TREASURY_RAIDED", GC.getCivilizationInfo(getCivilizationType()).getAdjectiveKey(), pCity->getNameKey(), iNumTotalGold);
@@ -15303,9 +15317,12 @@ bool CvUnit::raidBuilding(CvCity* pCity)
 	CvPlot* pPlot = pCity->plot();
 	if (pPlot->isVisible(GC.getGame().getActiveTeam(), false))
 	{
-		EffectTypes eEffect = GC.getEntityEventInfo(GC.getMissionInfo(MISSION_PILLAGE).getEntityEvent()).getEffectType();
-		gDLL->getEngineIFace()->TriggerEffect(eEffect, pPlot->getPoint(), (float)(GC.getASyncRand().get(360)));
-		gDLL->getInterfaceIFace()->playGeneralSound("AS3D_UN_CITY_EXPLOSION", pPlot->getPoint());
+		CvDLLEngineIFaceBase::TriggerEffectArguments arguments;
+		arguments.effect = GC.getEntityEventInfo(GC.getMissionInfo(MISSION_PILLAGE).getEntityEvent()).getEffectType();
+		arguments.pt3Point = pPlot->getPoint();
+		arguments.rotation = GC.getASyncRand().get(360);
+		arguments.audio = "AS3D_UN_CITY_EXPLOSION";
+		gDLL->getEngineIFace()->TriggerEffect(arguments);
 	}
 
 	CvWString szString = gDLL->getText("TXT_KEY_BUILDING_RAIDED", GC.getCivilizationInfo(getCivilizationType()).getAdjectiveKey(), pCity->getNameKey(), GC.getBuildingInfo(eTargetBuilding).getTextKeyWide());
@@ -15357,9 +15374,12 @@ bool CvUnit::raidProduction(CvCity* pCity)
 		CvPlot* pPlot = pCity->plot();
 		if (pPlot->isVisible(GC.getGame().getActiveTeam(), false))
 		{
-			EffectTypes eEffect = GC.getEntityEventInfo(GC.getMissionInfo(MISSION_PILLAGE).getEntityEvent()).getEffectType();
-			gDLL->getEngineIFace()->TriggerEffect(eEffect, pPlot->getPoint(), (float)(GC.getASyncRand().get(360)));
-			gDLL->getInterfaceIFace()->playGeneralSound("AS3D_UN_CITY_EXPLOSION", pPlot->getPoint());
+			CvDLLEngineIFaceBase::TriggerEffectArguments arguments;
+			arguments.effect = GC.getEntityEventInfo(GC.getMissionInfo(MISSION_PILLAGE).getEntityEvent()).getEffectType();
+			arguments.pt3Point = pPlot->getPoint();
+			arguments.rotation = GC.getASyncRand().get(360);
+			arguments.audio = "AS3D_UN_CITY_EXPLOSION";
+			gDLL->getEngineIFace()->TriggerEffect(arguments);
 		}
 
 		CvWString szString = gDLL->getText("TXT_KEY_PRODUCTION_RAIDED", GC.getCivilizationInfo(getCivilizationType()).getAdjectiveKey(), pCity->getNameKey(), GC.getBuildingInfo(eTarget).getTextKeyWide());
@@ -15383,9 +15403,12 @@ bool CvUnit::raidProduction(CvCity* pCity)
 		CvPlot* pPlot = pCity->plot();
 		if (pPlot->isVisible(GC.getGame().getActiveTeam(), false))
 		{
-			EffectTypes eEffect = GC.getEntityEventInfo(GC.getMissionInfo(MISSION_PILLAGE).getEntityEvent()).getEffectType();
-			gDLL->getEngineIFace()->TriggerEffect(eEffect, pPlot->getPoint(), (float)(GC.getASyncRand().get(360)));
-			gDLL->getInterfaceIFace()->playGeneralSound("AS3D_UN_CITY_EXPLOSION", pPlot->getPoint());
+			CvDLLEngineIFaceBase::TriggerEffectArguments arguments;
+			arguments.effect = GC.getEntityEventInfo(GC.getMissionInfo(MISSION_PILLAGE).getEntityEvent()).getEffectType();
+			arguments.pt3Point = pPlot->getPoint();
+			arguments.rotation = GC.getASyncRand().get(360);
+			arguments.audio = "AS3D_UN_CITY_EXPLOSION";
+			gDLL->getEngineIFace()->TriggerEffect(arguments);
 		}
 
 		CvWString szString = gDLL->getText("TXT_KEY_PRODUCTION_RAIDED", GC.getCivilizationInfo(getCivilizationType()).getAdjectiveKey(), pCity->getNameKey(), GC.getUnitInfo(eTarget).getTextKeyWide());
@@ -15442,9 +15465,12 @@ bool CvUnit::raidScalp(CvCity* pCity)
 	CvPlot* pPlot = pCity->plot();
 	if (pPlot->isVisible(GC.getGame().getActiveTeam(), false))
 	{
-		EffectTypes eEffect = GC.getEntityEventInfo(GC.getMissionInfo(MISSION_PILLAGE).getEntityEvent()).getEffectType();
-		gDLL->getEngineIFace()->TriggerEffect(eEffect, pPlot->getPoint(), (float)(GC.getASyncRand().get(360)));
-		gDLL->getInterfaceIFace()->playGeneralSound("AS3D_UN_CITY_EXPLOSION", pPlot->getPoint());
+		CvDLLEngineIFaceBase::TriggerEffectArguments arguments;
+		arguments.effect = GC.getEntityEventInfo(GC.getMissionInfo(MISSION_PILLAGE).getEntityEvent()).getEffectType();
+		arguments.pt3Point = pPlot->getPoint();
+		arguments.rotation = GC.getASyncRand().get(360);
+		arguments.audio = "AS3D_UN_CITY_EXPLOSION";
+		gDLL->getEngineIFace()->TriggerEffect(arguments);
 	}
 
 	CvWString szString = gDLL->getText("TXT_KEY_SCALP_RAIDED", GC.getCivilizationInfo(getCivilizationType()).getAdjectiveKey(), pCity->getNameKey(), GC.getUnitInfo(pTargetUnit->getUnitType()).getTextKeyWide());
@@ -15523,9 +15549,12 @@ bool CvUnit::raidHarbor(CvCity* pCity)
 
 	if (pPlot->isVisible(GC.getGame().getActiveTeam(), false))
 	{
-		EffectTypes eEffect = GC.getEntityEventInfo(GC.getMissionInfo(MISSION_PILLAGE).getEntityEvent()).getEffectType();
-		gDLL->getEngineIFace()->TriggerEffect(eEffect, pPlot->getPoint(), (float)(GC.getASyncRand().get(360)));
-		gDLL->getInterfaceIFace()->playGeneralSound("AS3D_UN_CITY_EXPLOSION", pPlot->getPoint());
+		CvDLLEngineIFaceBase::TriggerEffectArguments arguments;
+		arguments.effect = GC.getEntityEventInfo(GC.getMissionInfo(MISSION_PILLAGE).getEntityEvent()).getEffectType();
+		arguments.pt3Point = pPlot->getPoint();
+		arguments.rotation = GC.getASyncRand().get(360);
+		arguments.audio = "AS3D_UN_CITY_EXPLOSION";
+		gDLL->getEngineIFace()->TriggerEffect(arguments);
 	}
 
 	CvWString szString = gDLL->getText("TXT_KEY_HARBOR_RAIDED", GC.getCivilizationInfo(getCivilizationType()).getAdjectiveKey(), pCity->getNameKey(), GC.getUnitInfo(pTargetUnit->getUnitType()).getTextKeyWide());

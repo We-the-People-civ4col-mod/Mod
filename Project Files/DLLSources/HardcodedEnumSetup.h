@@ -34,6 +34,11 @@ enum CivEffectTypes
 	CIV_EFFECT_DEFAULT_AI,
 };
 
+enum EffectTypes
+{
+	EFFECT_SETTLERSMOKE,
+};
+
 enum HurryTypes
 {
 	HURRY_GOLD,
