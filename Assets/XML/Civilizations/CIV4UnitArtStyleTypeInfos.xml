@@ -90,6 +90,20 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>NONE</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_DANISH_LIGHT_ARTILLERY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>NONE</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_DANISH_HEAVY_ARTILLERY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit> 
+                <StyleUnit>
                     <UnitType>UNIT_LIGHT_ARTILLERY_VETERAN</UnitType>
                     <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
                     <UnitMeshGroup>
@@ -499,6 +513,20 @@
                     <ProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_DUTCH_ROYAL_LINE_INFANTRY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>NONE</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_DUTCH_LIGHT_ARTILLERY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>NONE</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_DUTCH_HEAVY_ARTILLERY</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
@@ -914,6 +942,20 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>NONE</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_ENGLAND_LIGHT_ARTILLERY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>NONE</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_ENGLAND_HEAVY_ARTILLERY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_LIGHT_ARTILLERY_VETERAN</UnitType>
                     <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
                     <UnitMeshGroup>
@@ -1323,6 +1365,20 @@
                     <ProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_FRANCE_ROYAL_LINE_INFANTRY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>NONE</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_FRANCE_LIGHT_ARTILLERY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>NONE</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_FRANCE_HEAVY_ARTILLERY</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
@@ -1738,6 +1794,20 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>NONE</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_PORTUGAL_LIGHT_ARTILLERY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>NONE</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_PORTUGAL_HEAVY_ARTILLERY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_LIGHT_ARTILLERY_VETERAN</UnitType>
                     <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
                     <UnitMeshGroup>
@@ -2147,6 +2217,20 @@
                     <ProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_RUSSIA_ROYAL_LINE_INFANTRY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+               <StyleUnit>
+                    <UnitType>NONE</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_RUSSIA_LIGHT_ARTILLERY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>NONE</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_RUSSIA_HEAVY_ARTILLERY</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
@@ -2569,24 +2653,38 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>NONE</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_SPAIN_LIGHT_ARTILLERY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>NONE</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_SPAIN_HEAVY_ARTILLERY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_LIGHT_ARTILLERY_VETERAN</UnitType>
                     <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
                     <UnitMeshGroup>
-                        <ArtDefineTag>ART_DEF_UNIT_DANISH_LIGHT_ARTILLERY_VETERAN</ArtDefineTag>
+                        <ArtDefineTag>ART_DEF_UNIT_SPAIN_LIGHT_ARTILLERY_VETERAN</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
                     <UnitType>UNIT_HEAVY_ARTILLERY_VETERAN</UnitType>
                     <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
                     <UnitMeshGroup>
-                        <ArtDefineTag>ART_DEF_UNIT_DANISH_HEAVY_ARTILLERY_VETERAN</ArtDefineTag>
+                        <ArtDefineTag>ART_DEF_UNIT_SPAIN_HEAVY_ARTILLERY_VETERAN</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
                     <UnitType>UNIT_ROYAL_ARTILLERY</UnitType>
                     <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <UnitMeshGroup>
-                        <ArtDefineTag>ART_DEF_UNIT_DANISH_ROYAL_ARTILLERY</ArtDefineTag>
+                        <ArtDefineTag>ART_DEF_UNIT_SPAIN_ROYAL_ARTILLERY</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
@@ -2978,6 +3076,20 @@
                     <ProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_SWEDISH_ROYAL_LINE_INFANTRY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>NONE</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_SWEDISH_LIGHT_ARTILLERY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>NONE</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_SWEDISH_HEAVY_ARTILLERY</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
