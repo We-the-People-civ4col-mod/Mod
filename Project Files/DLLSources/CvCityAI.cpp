@@ -197,6 +197,21 @@ void CvCityAI::AI_assignWorkingPlots()
 	removeNonCityPopulationUnits();
 	jobMutex.unlock();
 
+	// Attempt to restore locked citzien plotworker that may have been bumped
+	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
+	{
+		CvUnit* const pUnit = m_aPopulationUnits[i];
+		if(pUnit->isCitizenLocked())
+		{
+			const ProfessionTypes eProfession = pUnit->m_citizenLockData.m_eProfessionType;
+			const int iPlotIndex = pUnit->m_citizenLockData.m_iPlotIndex;
+			if (iPlotIndex != NO_PLOT && GC.getProfessionInfo(eProfession).isWorkPlot() && !isUnitWorkingAnyPlot(pUnit))
+			{
+				pUnit->setProfession(eProfession);
+				setUnitWorkingPlot(pUnit->m_citizenLockData.m_iPlotIndex, pUnit->getID());
+			}
+		}
+	}
 
 	/*
 	Citizen Algorithm:
@@ -218,7 +233,7 @@ void CvCityAI::AI_assignWorkingPlots()
 		for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
 		{
 			CvUnit* pUnit = m_aPopulationUnits[i];
-			if (!pUnit->isColonistLocked())
+			if (!pUnit->isCitizenLocked())
 			{
 				ProfessionTypes eIdealProfession = pUnit->AI_getIdealProfession();
 				if (eIdealProfession != NO_PROFESSION)
@@ -317,7 +332,7 @@ void CvCityAI::AI_assignWorkingPlots()
 		CvUnit* pUnit = m_aPopulationUnits[i];
 		if (pUnit != NULL)
 		{
-			if (!pUnit->isColonistLocked())
+			if (!pUnit->isCitizenLocked())
 			{
 				if (pUnit->getProfession() != NO_PROFESSION)
 				{
@@ -3280,12 +3295,12 @@ BestJob AI_findBestJob(const CvCityAI& kCity, ProfessionTypes eProfession, const
 							CvUnit* pWorkingUnit = kCity.getUnitWorkingPlot(eLoopCityPlot);
 							FAssert(pWorkingUnit != &kUnit);
 							// TAC - AI Economy - koma13 - START
-							if (pWorkingUnit != NULL && !pWorkingUnit->isColonistLocked())
+							if (pWorkingUnit != NULL && !pWorkingUnit->isCitizenLocked())
 							{
 								iValue = kCity.AI_professionValue(eProfession, &kUnit, pLoopPlot, pWorkingUnit);
 							}
 							// TAC - AI Economy - koma13 - END
-							if ((pWorkingUnit->isColonistLocked() || (iValue <= kCity.AI_professionValue(pWorkingUnit->getProfession(), pWorkingUnit, pLoopPlot, NULL))))
+							if ((pWorkingUnit->isCitizenLocked() || (iValue <= kCity.AI_professionValue(pWorkingUnit->getProfession(), pWorkingUnit, pLoopPlot, NULL))))
 							{
 								bValid = false;
 							}
@@ -3313,12 +3328,12 @@ BestJob AI_findBestJob(const CvCityAI& kCity, ProfessionTypes eProfession, const
 				// R&R, ray, removed unnecessary Assert from developing feature
 				// FAssert(pWorstUnit != pUnit && pWorstUnit != NULL);
 				// TAC - AI Economy - koma13 - START
-				if (pWorstUnit != NULL && !pWorstUnit->isColonistLocked())
+				if (pWorstUnit != NULL && !pWorstUnit->isCitizenLocked())
 				{
 					iValue = kCity.AI_professionValue(eProfession, &kUnit, NULL, pWorstUnit);
 				}
 				// TAC - AI Economy - koma13 - END
-				if (pWorstUnit == NULL || pWorstUnit->isColonistLocked() || (iValue <= kCity.AI_professionValue(eProfession, pWorstUnit, NULL, NULL)))
+				if (pWorstUnit == NULL || pWorstUnit->isCitizenLocked() || (iValue <= kCity.AI_professionValue(eProfession, pWorstUnit, NULL, NULL)))
 				{
 					bValid = false;
 				}
@@ -3546,12 +3561,12 @@ CvUnit* CvCityAI::AI_assignToBestJob(CvUnit* pUnit, bool bIndoorOnly)
 										CvUnit* pWorkingUnit = getUnitWorkingPlot(eLoopCityPlot);
 										FAssert(pWorkingUnit != pUnit);
 										// TAC - AI Economy - koma13 - START
-										if (pWorkingUnit != NULL && !pWorkingUnit->isColonistLocked())
+										if (pWorkingUnit != NULL && !pWorkingUnit->isCitizenLocked())
 										{
 											iValue = AI_professionValue(eLoopProfession, pUnit, pLoopPlot, pWorkingUnit);
 										}
 										// TAC - AI Economy - koma13 - END
-										if ((pWorkingUnit->isColonistLocked() || (iValue <= AI_professionValue(pWorkingUnit->getProfession(), pWorkingUnit, pLoopPlot, NULL))))
+										if ((pWorkingUnit->isCitizenLocked() || (iValue <= AI_professionValue(pWorkingUnit->getProfession(), pWorkingUnit, pLoopPlot, NULL))))
 										{
 											bValid = false;
 										}
@@ -3582,12 +3597,12 @@ CvUnit* CvCityAI::AI_assignToBestJob(CvUnit* pUnit, bool bIndoorOnly)
 							// R&R, ray, removed unnecessary Assert from developing feature
 							// FAssert(pWorstUnit != pUnit && pWorstUnit != NULL);
 							// TAC - AI Economy - koma13 - START
-							if (pWorstUnit != NULL && !pWorstUnit->isColonistLocked())
+							if (pWorstUnit != NULL && !pWorstUnit->isCitizenLocked())
 							{
 								iValue = AI_professionValue(eLoopProfession, pUnit, NULL, pWorstUnit);
 							}
 							// TAC - AI Economy - koma13 - END
-							if (pWorstUnit == NULL || pWorstUnit->isColonistLocked() || (iValue <= AI_professionValue(eLoopProfession, pWorstUnit, NULL, NULL)))
+							if (pWorstUnit == NULL || pWorstUnit->isCitizenLocked() || (iValue <= AI_professionValue(eLoopProfession, pWorstUnit, NULL, NULL)))
 							{
 								bValid = false;
 							}
@@ -3686,7 +3701,7 @@ CvUnit* CvCityAI::AI_juggleColonist(CvUnit* pUnit)
 		CvUnit* pLoopUnit = m_aPopulationUnits[i];
 		if ((pLoopUnit != NULL) && (pUnit != pLoopUnit))
 		{
-			if (!pLoopUnit->isColonistLocked())
+			if (!pLoopUnit->isCitizenLocked())
 			{
 				CvPlot* pLoopPlot = getPlotWorkedByUnit(pLoopUnit);
 				ProfessionTypes eLoopProfession = pLoopUnit->getProfession();
@@ -4064,7 +4079,7 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 						{
 							pIdealAssignedUnit = pLoopUnit;
 						}
-						else if (!pLoopUnit->isColonistLocked())
+						else if (!pLoopUnit->isCitizenLocked())
 						{
 							pIdealUnassignedUnit = pLoopUnit;
 						}
@@ -5160,7 +5175,7 @@ void CvCityAI::AI_updateNeededYields()
 		CvUnit* pLoopUnit = m_aPopulationUnits[i];
 		if (pLoopUnit != NULL)
 		{
-			if (pLoopUnit->isColonistLocked())
+			if (pLoopUnit->isCitizenLocked())
 			{
 				if (pLoopUnit->getProfession() != NO_PROFESSION)
 				{

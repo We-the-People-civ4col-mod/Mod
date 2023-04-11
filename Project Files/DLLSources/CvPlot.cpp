@@ -6449,7 +6449,7 @@ void CvPlot::updateWorkingCity()
 			CvUnit* pUnit = pOldWorkingCity->getUnitWorkingPlot(this);
 			if (pUnit != NULL)
 			{
-				pUnit->setColonistLocked(false);
+				pUnit->setCitizenLocked(false);
 			}
 			pOldWorkingCity->clearUnitWorkingPlot(this);
 		}

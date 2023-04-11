@@ -404,9 +404,9 @@ bool CyUnit::canDefend(CyPlot* pPlot)
 {
 	return m_pUnit ? m_pUnit->canDefend(pPlot->getPlot()) : false;
 }
-bool CyUnit::canSiege(int /*TeamTypes*/ eTeam)
+bool CyUnit::canOccupyPlot(int /*TeamTypes*/ eTeam)
 {
-	return m_pUnit ? m_pUnit->canSiege((TeamTypes) eTeam) : false;
+	return m_pUnit ? m_pUnit->canOccupyPlot((TeamTypes) eTeam) : false;
 }
 bool CyUnit::isAutomated()
 {
@@ -1090,7 +1090,7 @@ bool CyUnit::canSailEurope(int iEurope)
 }
 bool CyUnit::isColonistLocked()
 {
-	return m_pUnit ? m_pUnit->isColonistLocked() : false;
+	return m_pUnit ? m_pUnit->isCitizenLocked() : false;
 }
 
 // < JAnimals Mod Start >

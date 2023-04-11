@@ -9,6 +9,31 @@
 //#include "CvEnums.h"
 //#include "CvStructs.h"
 
+// Stores the plot and profession of plot workers so that we can restore them
+// in case they get bumped of a plot by an occupier
+struct CitizenLockData
+{
+	ProfessionTypes m_eProfessionType;
+	int m_iPlotIndex;
+	
+	CitizenLockData() : m_eProfessionType(NO_PROFESSION), m_iPlotIndex(NO_PLOT) {};
+
+	bool isCitizenLocked() const { return m_eProfessionType != NO_PROFESSION || m_iPlotIndex != NO_PLOT; }
+
+	void setData(ProfessionTypes eProfessionType, int iPlotIndex) 
+	{
+		m_eProfessionType = eProfessionType;
+		m_iPlotIndex = iPlotIndex;
+	}
+
+	void clearPlotIndex()
+	{
+		m_iPlotIndex = NO_PLOT;
+	}
+};
+
+
+
 #pragma warning( disable: 4251 )		// needs to have dll-interface to be used by clients of class
 
 class CvPlot;
@@ -77,6 +102,8 @@ enum Port
 	EUROPE,
 	AFRICA
 };
+
+
 
 class CvUnit : public CvDLLEntity
 {
@@ -344,7 +371,7 @@ public:
 	DllExport bool canFight() const;
 	bool canAttack() const;
 	bool canDefend(const CvPlot* pPlot = NULL) const;
-	bool canSiege(TeamTypes eTeam) const;
+	bool canOccupyPlot(TeamTypes eTeam) const;
 
 	bool isAutomated() const;
 	DllExport bool isWaiting() const;
@@ -748,8 +775,8 @@ public:
 	DllExport const TCHAR* getButton() const;
 	const TCHAR* getFullLengthIcon() const;
 
-	bool isColonistLocked();
-	void setColonistLocked(bool bNewValue);
+	bool isCitizenLocked();
+	void setCitizenLocked(bool bNewValue);
 
 	// < JAnimals Mod Start >
 	bool isBarbarian() const;
@@ -833,6 +860,7 @@ public:
 	bool isOwnPlayerUnitOnAdjacentPlotOfUnit(int /*UnitClassTypes*/ iIndex) const;
 	bool isBarbarianUnitOnAdjacentPlotOfUnit(int /*UnitClassTypes*/ iIndex) const;
 	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
+	CitizenLockData m_citizenLockData;
 
 protected:
 
@@ -901,7 +929,7 @@ protected:
 	bool m_bDeathDelay;
 	bool m_bCombatFocus;
 	bool m_bInfoBarDirty;
-	bool m_bColonistLocked;
+	//bool m_bColonistLocked;
 	// < JAnimals Mod Start >
 	bool m_bBarbarian;
 	// < JAnimals Mod End >

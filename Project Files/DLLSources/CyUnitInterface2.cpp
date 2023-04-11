@@ -15,7 +15,7 @@ void CyUnitPythonInterface2(python::class_<CyUnit>& x)
 {
 	OutputDebugString("Python Extension Module - CyUnitPythonInterface2\n");
 	x
-		.def("canSiege", &CyUnit::canSiege, "bool (int /*TeamTypes*/ eTeam)")
+		.def("canOccupyPlot", &CyUnit::canOccupyPlot, "bool (int /*TeamTypes*/ eTeam)")
 		.def("isAutomated", &CyUnit::isAutomated, "bool ()")
 		.def("isWaiting", &CyUnit::isWaiting, "bool ()")
 		.def("isFortifyable", &CyUnit::isFortifyable, "bool ()")

@@ -114,7 +114,7 @@ public:
 	bool canFight();
 	bool canAttack();
 	bool canDefend(CyPlot* pPlot);
-	bool canSiege(int /*TeamTypes*/ eTeam);
+	bool canOccupyPlot(int /*TeamTypes*/ eTeam);
 	bool isAutomated();
 	bool isWaiting();
 	bool isFortifyable();

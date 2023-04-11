@@ -4750,7 +4750,7 @@ void CvUnit::clearSpecialty()
 		return;
 	}
 
-	bool bLocked = isColonistLocked();
+	bool bLocked = isCitizenLocked();
 	UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
 	CvUnit* pNewUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, NO_PROFESSION, getX_INLINE(), getY_INLINE(), AI_getUnitAIType());
 	FAssert(pNewUnit != NULL);
@@ -4760,7 +4760,7 @@ void CvUnit::clearSpecialty()
 	{
 		pNewUnit->convert(this, false);
 		pCity->replaceCitizen(pNewUnit->getID(), getID(), false);
-		pNewUnit->setColonistLocked(bLocked);
+		pNewUnit->setCitizenLocked(bLocked);
 		// TAC - Clear specialty fix - koma13 - START
 		//pCity->removePopulationUnit(this, true, NO_PROFESSION);
 		if (GET_PLAYER(getOwnerINLINE()).getPopulationUnitCity(getID()) != NULL)
@@ -9572,8 +9572,8 @@ bool CvUnit::canDefend(const CvPlot* pPlot) const
 	return true;
 }
 
-
-bool CvUnit::canSiege(TeamTypes eTeam) const
+// Returns true if the unit can bump citizens from their working plot
+bool CvUnit::canOccupyPlot(TeamTypes eTeam) const
 {
 	if (!canDefend())
 	{
@@ -10683,7 +10683,7 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 
 		if (pWorkingCity != NULL)
 		{
-			if (canSiege(pWorkingCity->getTeam()))
+			if (canOccupyPlot(pWorkingCity->getTeam()))
 			{
 				pWorkingCity->AI_setAssignWorkDirty(true);
 			}
@@ -10703,7 +10703,7 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 
 						if (pWorkingCity != NULL)
 						{
-							if (canSiege(pWorkingCity->getTeam()))
+							if (canOccupyPlot(pWorkingCity->getTeam()))
 							{
 								pWorkingCity->AI_setAssignWorkDirty(true);
 							}
@@ -10868,7 +10868,7 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 
 		if (pWorkingCity != NULL)
 		{
-			if (canSiege(pWorkingCity->getTeam()))
+			if (canOccupyPlot(pWorkingCity->getTeam()))
 			{
 				pWorkingCity->verifyWorkingPlot(pWorkingCity->getCityPlotIndex(pNewPlot));
 			}
@@ -10889,7 +10889,7 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 
 						if (pWorkingCity != NULL)
 						{
-							if (canSiege(pWorkingCity->getTeam()))
+							if (canOccupyPlot(pWorkingCity->getTeam()))
 							{
 								pWorkingCity->verifyWorkingPlot(pWorkingCity->getCityPlotIndex(pLoopPlot));
 							}
@@ -12004,7 +12004,7 @@ bool CvUnit::setProfession(ProfessionTypes eProfession, bool bForce, bool bRemov
 						}
 					}
 
-					setColonistLocked(bLock);
+					setCitizenLocked(bLock);
 					return true;
 				}
 			}
@@ -15011,31 +15011,46 @@ void CvUnit::doUnitTravelTimer()
 	}
 }
 
-bool CvUnit::isColonistLocked()
+bool CvUnit::isCitizenLocked()
 {
-	return m_bColonistLocked;
+	return m_citizenLockData.isCitizenLocked();
 }
 
-void CvUnit::setColonistLocked(bool bNewValue)
+void CvUnit::setCitizenLocked(bool bNewValue)
 {
-	if (m_bColonistLocked != bNewValue)
+	if (isCitizenLocked() != bNewValue)
 	{
-		m_bColonistLocked = bNewValue;
-
-		if (bNewValue == true)
+		if (bNewValue)
 		{
-			CvCity* pCity = GET_PLAYER(getOwnerINLINE()).getPopulationUnitCity(getID());
-
+			const CvCity* const pCity = GET_PLAYER(getOwnerINLINE()).getPopulationUnitCity(getID());
 			FAssert(pCity != NULL);
-
-			CvPlot* pPlot = pCity->getPlotWorkedByUnit(this);
-
+			CvPlot* const pPlot = pCity->getPlotWorkedByUnit(this);
+			
 			if (pPlot != NULL)
 			{
+				// Plot worker case
+				m_citizenLockData.setData(getProfession(), pCity->getCityPlotIndex(pPlot));
 				//Ensure it is not stolen.
 				pPlot->setWorkingCityOverride(pCity);
 			}
+			else
+			{
+				// Slot worker case (plot -> NULL)
+				m_citizenLockData.setData(getProfession(), NO_PLOT);
+			}
 		}
+		else
+		{
+			m_citizenLockData.setData(NO_PROFESSION, NO_PLOT);
+		}
+	}
+
+	if (isCitizenLocked() && bNewValue)
+	{
+		// Citizen was alread locked and should remains so but we have to 
+		// prevent it from being reassigned to its prior profession
+		// in case it went from being a plot to slot worker
+		m_citizenLockData.clearPlotIndex();
 	}
 }
 
@@ -15863,7 +15878,7 @@ bool CvUnit::canGatherResource(const CvPlot* ePlot, bool bTestVisible) const
 	}
 
 	for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
-	{
+	{	
 		CvPlot* pAdjacentPlot = plotDirection(pPlot->getX_INLINE(), pPlot->getY_INLINE(), ((DirectionTypes)iI));
 		if (pAdjacentPlot != NULL)
 		{

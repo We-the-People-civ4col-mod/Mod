@@ -40,7 +40,9 @@ const bool defaultMadeAttack = false;
 const bool defaultPromotionReady = false;
 const bool defaultDeathDelay = false;
 const bool defaultCombatFocus = false;
-const bool defaultColonistLocked = false;
+const int defaultColonistLockedPlotIndex = -1;
+const ProfessionTypes defaultColonistLockedProfession = NO_PROFESSION;
+
 const bool defaultGatheringResource = false;
 const bool defaultIgnoreDanger = false;
 const bool defaultBarbarian = false;
@@ -94,7 +96,8 @@ enum SavegameVariableTypes
 	UnitSave_PromotionReady,
 	UnitSave_DeathDelay,
 	UnitSave_CombatFocus,
-	UnitSave_ColonistLocked,
+	UnitSave_ColonistLockedPlotIndex,
+	UnitSave_ColonistLockedProfession,
 	UnitSave_GatheringResource,
 	UnitSave_IgnoreDanger,
 	UnitSave_Barbarian,
@@ -163,7 +166,9 @@ const char* getSavedEnumNameUnit(SavegameVariableTypes eType)
 	case UnitSave_PromotionReady: return "UnitSave_PromotionReady";
 	case UnitSave_DeathDelay: return "UnitSave_DeathDelay";
 	case UnitSave_CombatFocus: return "UnitSave_CombatFocus";
-	case UnitSave_ColonistLocked: return "UnitSave_ColonistLocked";
+	case UnitSave_ColonistLockedPlotIndex: return "UnitSave_ColonistLockedPlotIndex";
+	case UnitSave_ColonistLockedProfession: return "UnitSave_ColonistLockedProfession";
+
 	case UnitSave_GatheringResource: return "UnitSave_GatheringResource";
 	case UnitSave_IgnoreDanger: return "UnitSave_IgnoreDanger";
 	case UnitSave_Barbarian: return "UnitSave_Barbarian";
@@ -236,7 +241,10 @@ void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool b
 	m_bPromotionReady = defaultPromotionReady;
 	m_bDeathDelay = defaultDeathDelay;
 	m_bCombatFocus = defaultCombatFocus;
-	m_bColonistLocked = defaultColonistLocked;
+	
+	m_citizenLockData.m_iPlotIndex = defaultColonistLockedPlotIndex;
+	m_citizenLockData.m_eProfessionType = defaultColonistLockedProfession;
+
 	m_bGatheringResource = defaultGatheringResource;
 	m_bIgnoreDanger = defaultIgnoreDanger;
 	m_bBarbarian = defaultBarbarian;
@@ -326,7 +334,8 @@ void CvUnit::read(CvSavegameReader reader)
 		case UnitSave_PromotionReady: reader.Read(m_bPromotionReady); break;
 		case UnitSave_DeathDelay: reader.Read(m_bDeathDelay); break;
 		case UnitSave_CombatFocus: reader.Read(m_bCombatFocus); break;
-		case UnitSave_ColonistLocked: reader.Read(m_bColonistLocked); break;
+		case UnitSave_ColonistLockedPlotIndex: reader.Read(m_citizenLockData.m_iPlotIndex); break;
+		case UnitSave_ColonistLockedProfession: reader.Read(m_citizenLockData.m_eProfessionType); break;
 		case UnitSave_GatheringResource: reader.Read(m_bGatheringResource); break;
 		case UnitSave_IgnoreDanger: reader.Read(m_bIgnoreDanger); break;
 		case UnitSave_Barbarian: reader.Read(m_bBarbarian); break;
@@ -422,7 +431,9 @@ void CvUnit::write(CvSavegameWriter writer)
 	writer.Write(UnitSave_PromotionReady, m_bPromotionReady, defaultPromotionReady);
 	writer.Write(UnitSave_DeathDelay, m_bDeathDelay, defaultDeathDelay);
 	writer.Write(UnitSave_CombatFocus, m_bCombatFocus, defaultCombatFocus);
-	writer.Write(UnitSave_ColonistLocked, m_bColonistLocked, defaultColonistLocked);
+	writer.Write(UnitSave_ColonistLockedPlotIndex, m_citizenLockData.m_iPlotIndex, defaultColonistLockedPlotIndex);
+	writer.Write(UnitSave_ColonistLockedProfession, m_citizenLockData.m_eProfessionType, defaultColonistLockedProfession);
+
 	writer.Write(UnitSave_GatheringResource, m_bGatheringResource, defaultGatheringResource);
 	writer.Write(UnitSave_IgnoreDanger, m_bIgnoreDanger, defaultIgnoreDanger);
 	writer.Write(UnitSave_Barbarian, m_bBarbarian, defaultBarbarian);

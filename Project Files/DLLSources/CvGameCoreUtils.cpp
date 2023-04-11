@@ -730,7 +730,7 @@ bool PUF_isVisibleDebug(const CvUnit* pUnit, int iData1, int iData2)
 bool PUF_canSiege(const CvUnit* pUnit, int iData1, int iData2)
 {
 	FAssertMsg(iData1 != -1, "Invalid data argument, should be >= 0");
-	return pUnit->canSiege(GET_PLAYER((PlayerTypes)iData1).getTeam());
+	return pUnit->canOccupyPlot(GET_PLAYER((PlayerTypes)iData1).getTeam());
 }
 
 bool PUF_isPotentialEnemy(const CvUnit* pUnit, int iData1, int iData2)

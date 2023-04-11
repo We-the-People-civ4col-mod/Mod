@@ -1111,21 +1111,23 @@ void CvCity::verifyWorkingPlot(int iPlotIndex)
 {
 	FAssert(iPlotIndex >= 0 && iPlotIndex < NUM_CITY_PLOTS);
 
-	CvUnit* pUnit = getUnitWorkingPlot((CityPlotTypes)iPlotIndex);
+	CvUnit* const pUnit = getUnitWorkingPlot((CityPlotTypes)iPlotIndex);
 	if (pUnit != NULL)
 	{
-		CvPlot* pPlot = getCityIndexPlot((CityPlotTypes)iPlotIndex);
+		const CvPlot* const pPlot = getCityIndexPlot((CityPlotTypes)iPlotIndex);
 
 		if (pPlot != NULL)
 		{
-			bool bCanWork = canWork(pPlot);
+			const bool bCanWork = canWork(pPlot);
 
+			/*
 			if (!bCanWork)
 			{
 				pUnit->setColonistLocked(false);
 			}
+			*/
 
-			//check if we have outdoor profession
+			// Remove plot worker from the occupied plot
 			if (!bCanWork || NO_PROFESSION == pUnit->getProfession() || !GC.getProfessionInfo(pUnit->getProfession()).isWorkPlot())
 			{
 				clearUnitWorkingPlot(iPlotIndex);
@@ -3889,7 +3891,7 @@ void CvCity::setAllCitizensAutomated(bool bAutomated)
 		CvUnit* pUnit = m_aPopulationUnits[i];
 		if (pUnit != NULL)
 		{
-			pUnit->setColonistLocked(!bAutomated);
+			pUnit->setCitizenLocked(!bAutomated);
 		}
 	}
 
@@ -3909,7 +3911,7 @@ void CvCity::setCitizenAutomated(int iUnitId)
 	CvUnit* pUnit = getPopulationUnitById(iUnitId);
 	if (pUnit != NULL)
 	{
-		pUnit->setColonistLocked(false);
+		pUnit->setCitizenLocked(false);
 
 		AI_assignWorkingPlots();
 		if ((getOwnerINLINE() == GC.getGameINLINE().getActivePlayer()) && isCitySelected())
@@ -4833,7 +4835,7 @@ void CvCity::setYieldStored(YieldTypes eYield, int iValue)
 						if (getYieldStored(eYield) <= 0 && getUnitWorkingPlot(pLoopPlot) != NULL && eYield == GC.getProfessionInfo(getUnitWorkingPlot(pLoopPlot)->getProfession()).getYieldsProduced(0))
 						// R&R, ray , MYCP partially based on code of Aymerick - END
 						{
-							getUnitWorkingPlot(pLoopPlot)->setColonistLocked(false);
+							getUnitWorkingPlot(pLoopPlot)->setCitizenLocked(false);
 							clearUnitWorkingPlot(pLoopPlot);
 						}
 					}
@@ -5758,8 +5760,8 @@ void CvCity::setUnitWorkingPlot(int iPlotIndex, int iUnitId)
 		}
 		ProfessionTypes eUnitProfession = pUnit->getProfession();
 
-		FAssert(pUnit->isColonistLocked() || !isUnitWorkingAnyPlot(pUnit));
-		if (pUnit->isColonistLocked())
+		FAssert(pUnit->isCitizenLocked() || !isUnitWorkingAnyPlot(pUnit));
+		if (pUnit->isCitizenLocked())
 		{
 			//assign profession that produces yields
 			if((NO_PROFESSION == eUnitProfession) || !GC.getProfessionInfo(eUnitProfession).isWorkPlot() || pPlot->calculatePotentialProfessionYieldAmount(eUnitProfession, pUnit, false) == 0)
@@ -5920,7 +5922,7 @@ void CvCity::alterUnitWorkingPlot(int iPlotIndex, int iUnitId, bool bAskProfessi
 	{
 		if (pUnit != NULL)
 		{
-			pUnit->setColonistLocked(true);
+			pUnit->setCitizenLocked(true);
 		}
 
 		CvUnit* pUnitWorkingPlot = getUnitWorkingPlot(ePlotIndex);
@@ -5986,10 +5988,10 @@ void CvCity::alterUnitWorkingBuilding(BuildingTypes eBuilding, int iUnitId, bool
 
 		if (pUnit != NULL)
 		{
-			pUnit->setColonistLocked(true);
+			pUnit->setCitizenLocked(true);
 			//code based on the one in setUnitWorkingPlot()
-			FAssert(pUnit->isColonistLocked());
-			if (pUnit->isColonistLocked())
+			FAssert(pUnit->isCitizenLocked());
+			if (pUnit->isCitizenLocked())
 			{
 				//assign profession that produces yields
 				int iBestYieldAmount = 0;
@@ -6035,7 +6037,7 @@ void CvCity::alterUnitWorkingBuilding(BuildingTypes eBuilding, int iUnitId, bool
 				}
 				else
 				{
-					pUnit->setColonistLocked(false);
+					pUnit->setCitizenLocked(false);
 				}
 			}
 		}
@@ -6058,7 +6060,7 @@ void CvCity::alterUnitProfession(int iUnitId, ProfessionTypes eProfession)
 	{
 		if (pUnit->canHaveProfession(eProfession, false))
 		{
-			pUnit->setColonistLocked(true);
+			pUnit->setCitizenLocked(true);
 			pUnit->setProfession(eProfession);
 
 			if (GC.getProfessionInfo(eProfession).isWorkPlot())
@@ -6119,10 +6121,10 @@ void CvCity::replaceCitizen(int iUnitId, int iReplacedUnitId, bool bAskProfessio
 	CvPlot* pPlot = getPlotWorkedByUnit(pReplacedUnit);
 	if (pPlot != NULL)
 	{
-		pUnit->setColonistLocked(true);
+		pUnit->setCitizenLocked(true);
 		clearUnitWorkingPlot(pPlot);
 		setUnitWorkingPlot(pPlot, iUnitId);
-		pReplacedUnit->setColonistLocked(false);
+		pReplacedUnit->setCitizenLocked(false);
 	}
 	else
 	{
@@ -6132,10 +6134,10 @@ void CvCity::replaceCitizen(int iUnitId, int iReplacedUnitId, bool bAskProfessio
 			if (!isAvailableProfessionSlot(eProfession, pUnit))
 			{
 				pReplacedUnit->setProfession(NO_PROFESSION);
-				pReplacedUnit->setColonistLocked(false);
+				pReplacedUnit->setCitizenLocked(false);
 			}
 			pUnit->setProfession(eProfession);
-			pUnit->setColonistLocked(true);
+			pUnit->setCitizenLocked(true);
 		}
 	}
 
@@ -8937,7 +8939,7 @@ void CvCity::addPopulationUnit(CvUnit* pUnit, ProfessionTypes eProfession)
 	setYieldRateDirty();
 	pTransferUnit->setProfession(eProfession);
 
-	pTransferUnit->setColonistLocked(false);
+	pTransferUnit->setCitizenLocked(false);
 
 	updatePopulation(iOldPopulation);
 
@@ -8960,7 +8962,7 @@ bool CvCity::removePopulationUnit(CvUnit* pUnit, bool bDelete, ProfessionTypes e
 		return false;
 	}
 
-	pUnit->setColonistLocked(false);
+	pUnit->setCitizenLocked(false);
 
 	//remove unit from worked plots
 	CvPlot* pWorkedPlot = getPlotWorkedByUnit(pUnit);
