@@ -1210,7 +1210,7 @@
             <FeatureVariety>
                 <FeatureArtPieces>
                     <FeatureArtPiece>
-                        <ModelFile>Art/Terrain/Features/seagrass/wheat.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/seagrass/seagrass.nif</ModelFile>
                         <Connections/>
                     </FeatureArtPiece>
                 </FeatureArtPieces>
