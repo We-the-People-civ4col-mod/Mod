@@ -4403,7 +4403,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_FRONTENAC_1</Tag>
-        <English>Bonjour, [CT_NAME]. I am sure there is room enough in this vast land for two important men. For me and for my king. Don't get in my way, lad. Now depart before I have you arrested. Tell your master that the New World is a protectorate of the French King and I, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], am his loyal governor.</English>
+        <English>Bonjour, [CT_NAME]. I am sure there is room enough in this vast land for two important men. For me and for my king. Don't get in my way, lad. Now depart before I have you arrested. Tell your master that the New World is a protectorate of the French King; and I, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], am his loyal governor.</English>
         <French>C'est un plaisir de vous rencontrer, [CT_NAME]. Allons faire quelques pas pour discuter de l'avenir de ce Nouveau monde.</French>
         <German>Bonjour, [CT_NAME]. Ich bin mir sicher, in diesem weiten Land ist Platz genug für zwei bedeutende Männer. Für mich und für meinen König. Kommt mir nicht in die Quere, Bursche. Und nun zieht von dannen, bevor ich Euch arretieren lasse. Und richtet Eurem Herrn aus, dass die Neue Welt ein Protektorat des französischen Königs ist und ich, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], sein treuer Gouverneur.</German>
         <Italian>È un piacere incontrarti, [CT_NAME]. Ora troviamoci un angolino e discutiamo del futuro di questo Nuovo Mondo.</Italian>
