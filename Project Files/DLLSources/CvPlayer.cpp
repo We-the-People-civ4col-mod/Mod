@@ -6636,9 +6636,9 @@ void CvPlayer::processTrait(TraitTypes eTrait, int iChange)
 
 	if (kTrait.getNativeAttitudeChange() != 0)
 	{
-		for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+		for (PlayerTypes eLoopPlayer = FIRST_PLAYER; eLoopPlayer < NUM_PLAYER_TYPES; eLoopPlayer++)
 		{
-			CvPlayer& kLoopPlayer = GET_PLAYER((PlayerTypes) iPlayer);
+			CvPlayer& kLoopPlayer = GET_PLAYER(eLoopPlayer);
 
 			if (kLoopPlayer.isAlive() && kLoopPlayer.isNative())
 			{
@@ -6646,7 +6646,7 @@ void CvPlayer::processTrait(TraitTypes eTrait, int iChange)
 
 				if (iChange > 0 && kTrait.getNativeAttitudeChange() > 0)
 				{
-					GET_TEAM(getTeam()).makePeace(kLoopPlayer.getTeam());
+					forcePeace(eLoopPlayer);
 				}
 			}
 		}
@@ -6655,9 +6655,9 @@ void CvPlayer::processTrait(TraitTypes eTrait, int iChange)
 	// R&R, ray, new Attribute in Traits  - START
 	if (kTrait.getEuropeanAttitudeChange() != 0)
 	{
-		for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+		for (PlayerTypes eLoopPlayer = FIRST_PLAYER; eLoopPlayer < NUM_PLAYER_TYPES; eLoopPlayer++)
 		{
-			CvPlayer& kLoopPlayer = GET_PLAYER((PlayerTypes) iPlayer);
+			CvPlayer& kLoopPlayer = GET_PLAYER(eLoopPlayer);
 
 			// Erik: Do not attempt to make peace with ourselves!
 			if (kLoopPlayer.getTeam() == getTeam())
@@ -6672,7 +6672,7 @@ void CvPlayer::processTrait(TraitTypes eTrait, int iChange)
 					// R&R, ray, making peace with Animals fixed
 					if (!GC.getGameINLINE().isBarbarianPlayer(kLoopPlayer.getID()))
 					{
-						GET_TEAM(getTeam()).makePeace(kLoopPlayer.getTeam());
+						forcePeace(eLoopPlayer);
 					}
 				}
 			}
@@ -12988,9 +12988,9 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 
 	if (kCivicInfo.getNativeAttitudeChange() != 0)
 	{
-		for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+		for (PlayerTypes eLoopPlayer = FIRST_PLAYER; eLoopPlayer < NUM_PLAYER_TYPES; eLoopPlayer++)
 		{
-			CvPlayer& kLoopPlayer = GET_PLAYER((PlayerTypes) iPlayer);
+			CvPlayer& kLoopPlayer = GET_PLAYER(eLoopPlayer);
 
 			if (kLoopPlayer.isAlive() && kLoopPlayer.isNative())
 			{
@@ -12998,7 +12998,7 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 
 				if (iChange > 0 && kCivicInfo.getNativeAttitudeChange() > 0)
 				{
-					GET_TEAM(getTeam()).makePeace(kLoopPlayer.getTeam());
+					forcePeace(eLoopPlayer);
 				}
 			}
 		}
