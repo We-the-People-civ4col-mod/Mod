@@ -1011,7 +1011,7 @@
             <Type>ART_DEF_BONUS_WHEAT</Type>
             <fScale>1.0</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/Wheat/wheat.nif</NIF>
+            <NIF>Art/Terrain/Resources/Wheat_new/wheat.nif</NIF>
             <KFM>Art/Terrain/Resources/Barley/wheat.kfm</KFM>
             <Button>Art/Interface/Buttons/Wheat_Button.dds</Button>
             <FontButtonIndex>107</FontButtonIndex>
