@@ -4,8 +4,8 @@
 
 void CvDLLEngineIFaceBase::TriggerEffect(const TriggerEffectArguments& arguments)
 {
-	FAssertMsg(arguments.effect != NO_EFFECT, "CvDLLEngineIFaceBase::TriggerEffect called without any effect to trigger");
-	if (arguments.effect == NO_EFFECT)
+	FAssertMsg(VARINFO<EffectTypes>::isInRange(arguments.effect), "CvDLLEngineIFaceBase::TriggerEffect called without any effect to trigger");
+	if (!VARINFO<EffectTypes>::isInRange(arguments.effect))
 	{
 		// avoid a crash in the exe
 		return;
