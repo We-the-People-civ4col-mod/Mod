@@ -4377,7 +4377,7 @@
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_TOBACCO_FAILED</Tag>
         <English>Milord, another colonial nation has been first to dominate the market for [COLOR_FONT_GOLD]tobacco[COLOR_REVERT] in Europe.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Tabak[COLOR_REVERT] zu beherrschen.</German>
-        <Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]сахара[COLOR_REVERT] в Европе.</Russian>
+        <Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]табака[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_TOBACCO_DONE</Tag>
@@ -4702,7 +4702,7 @@
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_FUR_START</Tag>
         <English>His Majesty is delighted with the first shipment of [COLOR_FONT_GOLD]furs[COLOR_REVERT] from the colonies. His Majesty thus orders you to become the market leader for furs.</English>
         <German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Fellen[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
-        <Russian>Его Величество и граждане метрополии в восторге от первых поставок колониального [COLOR_FONT_GOLD]сахара[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
+        <Russian>Его Величество и граждане метрополии в восторге от первых поставок колониального [COLOR_FONT_GOLD]меха[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_FUR_FAILED</Tag>
