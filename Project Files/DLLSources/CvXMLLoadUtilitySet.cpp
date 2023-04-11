@@ -2693,6 +2693,10 @@ DllExport bool CvXMLLoadUtility::LoadPlayerOptions()
 	gDLL->ChangeINIKeyValue("CONFIG", "DisableFileCaching", "1");
 	gDLL->ChangeINIKeyValue("CONFIG", "DisableCaching", "1");
 
+	// make colonization start this mod next time it starts if no mod argument is given
+	// the mod argument still works, hence MSVC can start debugging another mod than was last run, hence the system still support development on multiple local copies
+	gDLL->ChangeINIKeyValue("CONFIG", "Mod", gDLL->getModName(true));
+
 	/// XML type preloading - start - Nightinggale
 	readXMLfiles(true);
 	/// XML type preloading - end - Nightinggale
