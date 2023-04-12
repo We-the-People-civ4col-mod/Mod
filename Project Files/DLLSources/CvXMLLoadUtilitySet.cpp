@@ -2695,7 +2695,7 @@ DllExport bool CvXMLLoadUtility::LoadPlayerOptions()
 
 	// make colonization start this mod next time it starts if no mod argument is given
 	// the mod argument still works, hence MSVC can start debugging another mod than was last run, hence the system still support development on multiple local copies
-	gDLL->ChangeINIKeyValue("CONFIG", "Mod", gDLL->getModName(true));
+	gDLL->ChangeINIKeyValue("CONFIG", "Mod", gDLL->getModName(false));
 
 	/// XML type preloading - start - Nightinggale
 	readXMLfiles(true);
