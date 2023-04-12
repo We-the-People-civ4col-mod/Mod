@@ -545,7 +545,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_HOUSE_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]potter's house[COLOR_REVERT] is where a colonist with the [LINK=PROFESSION_POTTER]potter[\LINK] profession turns [LINK=YIELD_CLAY]clay[\LINK] into [LINK=YIELD_POTTERY]pottery[\LINK]. [LINK=UNIT_POTTER]Master potters[\LINK] are particularly effective at this.</English>
+        <English>The [COLOR_HIGHLIGHT_TEXT]potter's house[COLOR_REVERT] is where a colonist with the [LINK=PROFESSION_POTTER]potter[\LINK] profession uses [LINK=YIELD_PEAT]peat[\LINK] to transform [LINK=YIELD_CLAY]clay[\LINK] into [LINK=YIELD_POTTERY]pottery[\LINK]. [LINK=UNIT_POTTER]Master potters[\LINK] are artists at this, and more productive as well.</English>
         <German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Töpfers[COLOR_REVERT] ist der Ort, an dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] im Beruf des [LINK=PROFESSION_POTTER]Töpfers[\LINK] den [LINK=YIELD_CLAY]Lehm[\LINK] zu [LINK=YIELD_POTTERY]Töpferwaren[\LINK] verarbeitet.[PARAGRAPH:1][LINK=UNIT_POTTER]Töpfermeister[\LINK] sind hierbei besonders effektiv.</German>
     </TEXT>
     <TEXT>
