@@ -1005,27 +1005,27 @@
 		</ArtRef>
 <!-- potatos -->
 		<ArtRef Name="art:potato_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/Corn_Lsystem.nif::2x1_01_Sugar_Worked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/potato_lsystem.nif::1x1_01_Potato_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.3</Scale>
 		</ArtRef>
 		<ArtRef Name="art:potato_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/Corn_Lsystem.nif::2x1_01_Sugar_Worked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/potato_lsystem.nif::1x1_01_Potato_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.3</Scale>
 		</ArtRef>
 		<ArtRef Name="art:potato_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/Corn_Lsystem.nif::2x1_01_Sugar_Worked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/potato_lsystem.nif::1x1_01_Potato_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1033,10 +1033,10 @@
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.3</Scale>
 		</ArtRef>
 		<ArtRef Name="art:potato_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/Corn_Lsystem.nif::2x1_01_Sugar_Worked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/potato_lsystem.nif::1x1_01_Potato_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1044,30 +1044,30 @@
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.3</Scale>
 		</ArtRef>
 		<ArtRef Name="art:potato_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/Corn_Lsystem.nif::1x2_01_Sugar_Worked01</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/potato_lsystem.nif::1x2_01_Potato_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.3</Scale>
 		</ArtRef>
 		<ArtRef Name="art:potato_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/Corn_Lsystem.nif::1x2_01_Sugar_Worked01</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/potato_lsystem.nif::1x2_01_Potato_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.3</Scale>
 		</ArtRef>
 		<ArtRef Name="art:potato_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/Corn_Lsystem.nif::1x2_01_Sugar_Worked01</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/potato_lsystem.nif::1x2_01_Potato_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1075,10 +1075,10 @@
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.3</Scale>
 		</ArtRef>
 		<ArtRef Name="art:potato_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/Corn_Lsystem.nif::1x2_01_Sugar_Worked01</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/potato_lsystem.nif::1x2_01_Potato_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1086,30 +1086,30 @@
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.3</Scale>
 		</ArtRef>
 		<ArtRef Name="art:potato_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/Corn_Lsystem.nif::2x1_01_Sugar_NotWorked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/potato_lsystem.nif::1x1_01_Potato_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.3</Scale>
 		</ArtRef>
 		<ArtRef Name="art:potato_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/Corn_Lsystem.nif::2x1_01_Sugar_NotWorked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/potato_lsystem.nif::1x1_01_Potato_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.3</Scale>
 		</ArtRef>
 		<ArtRef Name="art:potato_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/Corn_Lsystem.nif::2x1_01_Sugar_NotWorked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/potato_lsystem.nif::1x1_01_Potato_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1117,10 +1117,10 @@
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.3</Scale>
 		</ArtRef>
 		<ArtRef Name="art:potato_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/Corn_Lsystem.nif::2x1_01_Sugar_NotWorked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/potato_lsystem.nif::1x1_01_Potato_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1128,30 +1128,30 @@
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.3</Scale>
 		</ArtRef>
 		<ArtRef Name="art:potato_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/Corn_Lsystem.nif::1x2_01_Sugar_NotWorked01</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/potato_lsystem.nif::1x2_01_Potato_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.3</Scale>
 		</ArtRef>
 		<ArtRef Name="art:potato_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/Corn_Lsystem.nif::1x2_01_Sugar_NotWorked01</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/potato_lsystem.nif::1x2_01_Potato_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.3</Scale>
 		</ArtRef>
 		<ArtRef Name="art:potato_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/Corn_Lsystem.nif::1x2_01_Sugar_NotWorked01</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/potato_lsystem.nif::1x2_01_Potato_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1159,10 +1159,10 @@
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.3</Scale>
 		</ArtRef>
 		<ArtRef Name="art:potato_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/Corn_Lsystem.nif::1x2_01_Sugar_NotWorked01</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/potato_lsystem.nif::1x2_01_Potato_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1170,7 +1170,7 @@
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.3</Scale>
 		</ArtRef>
 <!-- beans -->
 		<ArtRef Name="art:beans_crop">
@@ -3431,56 +3431,56 @@
 		</ArtRef>
 <!-- Potato -->
 		<ArtRef Name="art:POTATO_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/Corn_Lsystem.nif::2x2_01_Sugar_Normal</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/potato_lsystem.nif::2x2_01_Potato_Normal</Attribute>
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
 			<Attribute Class="Improvement">NO_IMPROVEMENT,IMPROVEMENT_ALL,!IMPROVEMENT_FARM,!IMPROVEMENT_LARGE_FARM,!IMPROVEMENT_PLANTATION,!IMPROVEMENT_LARGE_PLANTATION,!IMPROVEMENT_FRUIT_PLANTATION,!IMPROVEMENT_LARGE_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
-			<Scale>0.8</Scale>
+			<Scale>0.5</Scale>
 		</ArtRef>
 		<ArtRef Name="art:POTATO_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/Corn_Lsystem.nif::2x2_02_Sugar_Normal</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/potato_lsystem.nif::2x2_01_Potato_Normal</Attribute>
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
 			<Attribute Class="Improvement">NO_IMPROVEMENT,IMPROVEMENT_ALL,!IMPROVEMENT_FARM,!IMPROVEMENT_LARGE_FARM,!IMPROVEMENT_PLANTATION,!IMPROVEMENT_LARGE_PLANTATION,!IMPROVEMENT_FRUIT_PLANTATION,!IMPROVEMENT_LARGE_FRUIT_PLANTATION</Attribute>
-			<Attribute Class="Scalar">bCutTrees:1</Attribute>
-			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
-			<Scale>0.8</Scale>
-		</ArtRef>
-		<ArtRef Name="art:corn_POTATO">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/Corn_Lsystem.nif::2x2_01_Sugar_Worked</Attribute>
-			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
-			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
-			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
 			<Scale>0.5</Scale>
 		</ArtRef>
 		<ArtRef Name="art:corn_POTATO">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/Corn_Lsystem.nif::2x2_01_Sugar_Worked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/potato_lsystem.nif::2x2_01_Potato_Worked</Attribute>
+			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
+			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
+			<Scale>0.3</Scale>
+		</ArtRef>
+		<ArtRef Name="art:corn_POTATO">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/potato_lsystem.nif::2x2_01_Potato_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.3</Scale>
 		</ArtRef>
 		<ArtRef Name="art:POTATO_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/Corn_Lsystem.nif::2x2_01_Sugar_NotWorked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/potato_lsystem.nif::2x2_01_Potato_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.3</Scale>
 		</ArtRef>
 		<ArtRef Name="art:POTATO_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/Corn_Lsystem.nif::2x2_01_Sugar_NotWorked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Potato/potato_lsystem.nif::2x2_01_Potato_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.3</Scale>
 		</ArtRef>
 <!-- Beans -->
 		<ArtRef Name="art:beans_crop">
@@ -5252,7 +5252,7 @@
 		<!--- Potato -->
 		<ArtRef Name="goal:BONUS_POTATO">
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
-			<Attribute Class="Scalar">iCropAreaMultiplier:6</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:8</Attribute>
 			<Attribute Class="Scalar">bPlace:0</Attribute>
 			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
 			<Attribute Class="Scalar">bIsPartOfBonus:1</Attribute>
