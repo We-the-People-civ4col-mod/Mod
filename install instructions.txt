@@ -9,7 +9,12 @@ How do I install the mod ?
 
 4) Place the We The People folder inside Mods. Do not use the Mods folder in My Documents.
 
-5) Copy the files inside "Copy to Colonization.exe" and paste them into the installation folder of the base game where Colonization.exe is.
+5) Doubleclick setup.bat (windows might display it as simply setup)
+
+
+Note: step 5 is scripted copy of the content in "Copy to Colonization.exe" to the game installation folder (which has Colonization.exe, hence the name).
+      This can be done manually if you like, but know that setup was added because people had problems with this last step.
+      Also setup.bat checks for common mod installation mistakes.
 
 Regarding mod name:
 Multiplayer requires all players to call the mod the same thing.
