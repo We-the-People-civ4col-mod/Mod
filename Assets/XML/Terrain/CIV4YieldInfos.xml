@@ -135,6 +135,7 @@
             <Civilopedia>TXT_KEY_YIELD_LUMBER_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
             <bIgnoredForStorageCapacity>1</bIgnoredForStorageCapacity>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>1</iBuyPriceLow>
             <iBuyPriceHigh>2</iBuyPriceHigh>
             <iBuyPriceMin>1</iBuyPriceMin>
@@ -176,6 +177,7 @@
             <Civilopedia>TXT_KEY_YIELD_HARDWOOD_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
             <bIgnoredForStorageCapacity>1</bIgnoredForStorageCapacity>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>4</iBuyPriceLow>
             <iBuyPriceHigh>5</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -258,6 +260,7 @@
             <Civilopedia>TXT_KEY_YIELD_STONE_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
             <bIgnoredForStorageCapacity>1</bIgnoredForStorageCapacity>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>1</iBuyPriceLow>
             <iBuyPriceHigh>2</iBuyPriceHigh>
             <iBuyPriceMin>1</iBuyPriceMin>
@@ -299,6 +302,7 @@
             <Civilopedia>TXT_KEY_YIELD_CLAY_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
             <bIgnoredForStorageCapacity>1</bIgnoredForStorageCapacity>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>1</iBuyPriceLow>
             <iBuyPriceHigh>2</iBuyPriceHigh>
             <iBuyPriceMin>1</iBuyPriceMin>
@@ -462,6 +466,7 @@
             <Description>TXT_KEY_YIELD_COAL</Description>
             <Civilopedia>TXT_KEY_YIELD_COAL_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>1</iBuyPriceLow>
             <iBuyPriceHigh>2</iBuyPriceHigh>
             <iBuyPriceMin>1</iBuyPriceMin>
@@ -502,6 +507,7 @@
             <Description>TXT_KEY_YIELD_CHAR_COAL</Description>
             <Civilopedia>TXT_KEY_YIELD_CHAR_COAL_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>1</iBuyPriceLow>
             <iBuyPriceHigh>2</iBuyPriceHigh>
             <iBuyPriceMin>1</iBuyPriceMin>
@@ -543,6 +549,7 @@
             <Description>TXT_KEY_YIELD_PEAT</Description>
             <Civilopedia>TXT_KEY_YIELD_PEAT_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>1</iBuyPriceLow>
             <iBuyPriceHigh>2</iBuyPriceHigh>
             <iBuyPriceMin>1</iBuyPriceMin>
@@ -706,6 +713,7 @@
             <Description>TXT_KEY_YIELD_CHICKEN</Description>
             <Civilopedia>TXT_KEY_YIELD_CHICKEN_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <bLivestock>1</bLivestock>
             <iBuyPriceLow>4</iBuyPriceLow>
             <iBuyPriceHigh>5</iBuyPriceHigh>
@@ -747,6 +755,7 @@
             <Description>TXT_KEY_YIELD_GEESE</Description>
             <Civilopedia>TXT_KEY_YIELD_GEESE_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <bLivestock>1</bLivestock>
             <iBuyPriceLow>4</iBuyPriceLow>
             <iBuyPriceHigh>5</iBuyPriceHigh>
@@ -788,6 +797,7 @@
             <Description>TXT_KEY_YIELD_SHEEP</Description>
             <Civilopedia>TXT_KEY_YIELD_SHEEP_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <bLivestock>1</bLivestock>
             <iBuyPriceLow>4</iBuyPriceLow>
             <iBuyPriceHigh>5</iBuyPriceHigh>
@@ -829,6 +839,7 @@
             <Description>TXT_KEY_YIELD_GOATS</Description>
             <Civilopedia>TXT_KEY_YIELD_GOATS_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <bLivestock>1</bLivestock>
             <iBuyPriceLow>4</iBuyPriceLow>
             <iBuyPriceHigh>5</iBuyPriceHigh>
@@ -870,6 +881,7 @@
             <Description>TXT_KEY_YIELD_PIGS</Description>
             <Civilopedia>TXT_KEY_YIELD_PIGS_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <bLivestock>1</bLivestock>
             <iBuyPriceLow>4</iBuyPriceLow>
             <iBuyPriceHigh>5</iBuyPriceHigh>
@@ -911,6 +923,7 @@
             <Description>TXT_KEY_YIELD_CATTLE</Description>
             <Civilopedia>TXT_KEY_YIELD_CATTLE_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <bLivestock>1</bLivestock>
             <iBuyPriceLow>4</iBuyPriceLow>
             <iBuyPriceHigh>5</iBuyPriceHigh>
@@ -952,6 +965,7 @@
             <Description>TXT_KEY_YIELD_HORSES</Description>
             <Civilopedia>TXT_KEY_YIELD_HORSES_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <bLivestock>1</bLivestock>
             <iBuyPriceLow>5</iBuyPriceLow>
             <iBuyPriceHigh>7</iBuyPriceHigh>
@@ -993,6 +1007,7 @@
             <Description>TXT_KEY_YIELD_BAKERY_GOODS</Description>
             <Civilopedia>TXT_KEY_YIELD_BAKERY_GOODS_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <bLivestock>1</bLivestock>
             <iBuyPriceLow>10</iBuyPriceLow>
             <iBuyPriceHigh>11</iBuyPriceHigh>
@@ -1034,6 +1049,7 @@
             <Description>TXT_KEY_YIELD_ROPE</Description>
             <Civilopedia>TXT_KEY_YIELD_ROPE_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>9</iBuyPriceLow>
             <iBuyPriceHigh>10</iBuyPriceHigh>
             <iBuyPriceMin>5</iBuyPriceMin>
@@ -1075,6 +1091,7 @@
             <Description>TXT_KEY_YIELD_SAILCLOTH</Description>
             <Civilopedia>TXT_KEY_YIELD_SAILCLOTH_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>9</iBuyPriceLow>
             <iBuyPriceHigh>10</iBuyPriceHigh>
             <iBuyPriceMin>5</iBuyPriceMin>
@@ -1116,6 +1133,7 @@
             <Description>TXT_KEY_YIELD_TOOLS</Description>
             <Civilopedia>TXT_KEY_YIELD_TOOLS_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>6</iBuyPriceLow>
             <iBuyPriceHigh>7</iBuyPriceHigh>
             <iBuyPriceMin>3</iBuyPriceMin>
@@ -1157,6 +1175,7 @@
             <Description>TXT_KEY_YIELD_BLADES</Description>
             <Civilopedia>TXT_KEY_YIELD_BLADES_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>6</iBuyPriceLow>
             <iBuyPriceHigh>7</iBuyPriceHigh>
             <iBuyPriceMin>3</iBuyPriceMin>
@@ -1198,6 +1217,7 @@
             <Description>TXT_KEY_YIELD_MUSKETS</Description>
             <Civilopedia>TXT_KEY_YIELD_MUSKETS_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>10</iBuyPriceLow>
             <iBuyPriceHigh>12</iBuyPriceHigh>
             <iBuyPriceMin>6</iBuyPriceMin>
@@ -1239,6 +1259,7 @@
             <Description>TXT_KEY_YIELD_CANNONS</Description>
             <Civilopedia>TXT_KEY_YIELD_CANNONS_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>14</iBuyPriceLow>
             <iBuyPriceHigh>16</iBuyPriceHigh>
             <iBuyPriceMin>4</iBuyPriceMin>
@@ -1280,6 +1301,7 @@
             <Description>TXT_KEY_YIELD_BLACK_POWDER</Description>
             <Civilopedia>TXT_KEY_YIELD_BLACK_POWDER_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>14</iBuyPriceLow>
             <iBuyPriceHigh>16</iBuyPriceHigh>
             <iBuyPriceMin>4</iBuyPriceMin>
@@ -1321,6 +1343,7 @@
             <Description>TXT_KEY_YIELD_TRADE_GOODS</Description>
             <Civilopedia>TXT_KEY_YIELD_TRADE_GOODS_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>1</iBuyPriceLow>
             <iBuyPriceHigh>2</iBuyPriceHigh>
             <iBuyPriceMin>1</iBuyPriceMin>
@@ -3980,6 +4003,7 @@
             <Description>TXT_KEY_YIELD_FIELD_WORKER_TOOLS</Description>
             <Civilopedia>TXT_KEY_YIELD_FIELD_WORKER_TOOLS_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>10</iBuyPriceLow>
             <iBuyPriceHigh>12</iBuyPriceHigh>
             <iBuyPriceMin>6</iBuyPriceMin>
@@ -4021,6 +4045,7 @@
             <Description>TXT_KEY_YIELD_HOUSEHOLD_GOODS</Description>
             <Civilopedia>TXT_KEY_YIELD_HOUSEHOLD_GOODS_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>12</iBuyPriceLow>
             <iBuyPriceHigh>14</iBuyPriceHigh>
             <iBuyPriceMin>1</iBuyPriceMin>
@@ -4062,6 +4087,7 @@
             <Description>TXT_KEY_YIELD_LUXURY_GOODS</Description>
             <Civilopedia>TXT_KEY_YIELD_LUXURY_GOODS_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>15</iBuyPriceLow>
             <iBuyPriceHigh>17</iBuyPriceHigh>
             <iBuyPriceMin>1</iBuyPriceMin>
@@ -4142,6 +4168,7 @@
             <Description>TXT_KEY_YIELD_BELLS</Description>
             <Civilopedia>TXT_KEY_YIELD_BELLS_PEDIA</Civilopedia>
             <bCargo>0</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>0</iBuyPriceLow>
             <iBuyPriceHigh>0</iBuyPriceHigh>
             <iBuyPriceMin>0</iBuyPriceMin>
@@ -4182,6 +4209,7 @@
             <Description>TXT_KEY_YIELD_CROSSES</Description>
             <Civilopedia>TXT_KEY_YIELD_CROSSES_PEDIA</Civilopedia>
             <bCargo>0</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>0</iBuyPriceLow>
             <iBuyPriceHigh>0</iBuyPriceHigh>
             <iBuyPriceMin>0</iBuyPriceMin>
@@ -4222,6 +4250,7 @@
             <Description>TXT_KEY_YIELD_CULTURE</Description>
             <Civilopedia>TXT_KEY_YIELD_CULTURE_PEDIA</Civilopedia>
             <bCargo>0</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>0</iBuyPriceLow>
             <iBuyPriceHigh>0</iBuyPriceHigh>
             <iBuyPriceMin>0</iBuyPriceMin>
@@ -4263,6 +4292,7 @@
             <Description>TXT_KEY_YIELD_HEALTH</Description>
             <Civilopedia>TXT_KEY_YIELD_HEALTH_PEDIA</Civilopedia>
             <bCargo>0</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>0</iBuyPriceLow>
             <iBuyPriceHigh>0</iBuyPriceHigh>
             <iBuyPriceMin>0</iBuyPriceMin>
@@ -4303,6 +4333,7 @@
             <Description>TXT_KEY_YIELD_EDUCATION</Description>
             <Civilopedia>TXT_KEY_YIELD_EDUCATION_PEDIA</Civilopedia>
             <bCargo>0</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>0</iBuyPriceLow>
             <iBuyPriceHigh>0</iBuyPriceHigh>
             <iBuyPriceMin>0</iBuyPriceMin>
@@ -4343,6 +4374,7 @@
             <Description>TXT_KEY_YIELD_HAPPINESS</Description>
             <Civilopedia>TXT_KEY_YIELD_HAPPINESS_PEDIA</Civilopedia>
             <bCargo>0</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>0</iBuyPriceLow>
             <iBuyPriceHigh>0</iBuyPriceHigh>
             <iBuyPriceMin>0</iBuyPriceMin>
@@ -4384,6 +4416,7 @@
             <Description>TXT_KEY_YIELD_UNHAPPINESS</Description>
             <Civilopedia>TXT_KEY_YIELD_UNHAPPINESS_PEDIA</Civilopedia>
             <bCargo>0</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>0</iBuyPriceLow>
             <iBuyPriceHigh>0</iBuyPriceHigh>
             <iBuyPriceMin>0</iBuyPriceMin>
@@ -4424,6 +4457,7 @@
             <Description>TXT_KEY_YIELD_LAW</Description>
             <Civilopedia>TXT_KEY_YIELD_LAW_PEDIA</Civilopedia>
             <bCargo>0</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>0</iBuyPriceLow>
             <iBuyPriceHigh>0</iBuyPriceHigh>
             <iBuyPriceMin>0</iBuyPriceMin>
@@ -4464,6 +4498,7 @@
             <Description>TXT_KEY_YIELD_CRIME</Description>
             <Civilopedia>TXT_KEY_YIELD_CRIME_PEDIA</Civilopedia>
             <bCargo>0</bCargo>
+            <bIsExportYield>1</bIsExportYield>
             <iBuyPriceLow>0</iBuyPriceLow>
             <iBuyPriceHigh>0</iBuyPriceHigh>
             <iBuyPriceMin>0</iBuyPriceMin>
