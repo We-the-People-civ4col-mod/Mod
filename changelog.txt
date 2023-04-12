@@ -1,5 +1,15 @@
 We the People Changelog
 
+Version 4.0.2
+
+Changes:
+- Loading We The People from the ingame menu now configures Colonization to start We The People by default (no more config setup to avoid starting in vanilla)
+- Added setup file to simplify installing the mod (install step 5 only)
+
+Fixes:
+- Fixed seemingly random crash when the game tries to display the scattering birds animation on terrain features other than forests (such as storms)
+- Fixed transports not being able to unload cargo when barracks are full
+
 Version 4.0.1
 
 Changes:
