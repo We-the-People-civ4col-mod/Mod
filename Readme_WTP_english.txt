@@ -141,6 +141,48 @@ Special credits for the music:
 René Osmanczyk (composer of most of our soundtrack)
 Gregoire Lourme, The Seven Seas Journey, Cinematic Volume 7 Animation Movies (http://www.jamendo.com/de/track/1119930/the-seven-seas-journey)
 
+More Music Credits:
+
+Efisio Cross
+Adrian Ziegler
+Luke Richards
+James Horner
+Hans Zimmer
+Greg Dombrowski
+Michael Ortega
+David Chappell
+Kim Planert
+Thomas Bergersen
+Steven Jablonsk
+Mattia Cupeli
+Really Slow Motion & Giant Apes
+R. Armando Morabito
+Music for the Fearless
+Lewis Capaldi
+Eurielle
+HDSoundi
+Rajiw Seewollal
+Abel Korzeniowski
+RS Soundtracks
+Brand X Music
+Brunuh Ville
+Arn Sanderson
+Elias Nilsson
+Patrick Doyle
+Onur Tarcin
+Gregoire Lourme
+Pandora Journey
+Zack Hemsey
+Trevor Da Maere
+Dirk Maassen
+...
+and many other great composers that we may have forgotten.
+(Please excuse in that case, we will add you to the credits once we find out.)
+
+------------------
+
+
+
 Special credits and thanks also to the creators/publishers of the original game:
 
 Firaxis and 2Kgames
