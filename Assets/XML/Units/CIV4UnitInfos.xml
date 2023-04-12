@@ -52124,7 +52124,7 @@
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
-            <iCombat>6</iCombat>
+            <iCombat>4</iCombat>
             <iXPValueAttack>4</iXPValueAttack>
             <iXPValueDefense>2</iXPValueDefense>
             <iWithdrawalProb>0</iWithdrawalProb>
@@ -52327,7 +52327,7 @@
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
-            <iCombat>6</iCombat>
+            <iCombat>4</iCombat>
             <iXPValueAttack>4</iXPValueAttack>
             <iXPValueDefense>2</iXPValueDefense>
             <iWithdrawalProb>0</iWithdrawalProb>
@@ -67293,7 +67293,7 @@
             <iAsset>350</iAsset>
             <iPower>0</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
-            <iStudentWeight>0</iStudentWeight>
+            <iStudentWeight>500</iStudentWeight>
             <iTeacherWeight>0</iTeacherWeight>
             <ProfessionMeshGroups>
                 <UnitMeshGroups>
