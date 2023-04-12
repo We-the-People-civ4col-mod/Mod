@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS</Tag>
+		<English>Colony Land Size:</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS_1_PLOT</Tag>
+		<English>1 Plot Radius</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS_2_PLOT</Tag>
+		<English>2 Plot Radius</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_REGULARITY</Tag>
+		<English>Land Regularity:</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_REGULARITY_OPT_0</Tag>
+		<English>Very Irregular</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_REGULARITY_OPT_1</Tag>
+		<English>Irregular Land Shapes (default)</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_REGULARITY_OPT_2</Tag>
+		<English>Regular</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LARGE_RIVER_PREVALENCE</Tag>
+		<English>River Prevalence:</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LARGE_RIVER_PREVALENCE_OPT_0</Tag>
+		<English>Lower Likelihood of Large Rivers</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LARGE_RIVER_PREVALENCE_OPT_1</Tag>
+		<English>Balanced Odds of Large River Formation (default)</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LARGE_RIVER_PREVALENCE_OPT_2</Tag>
+		<English>Higher Likelihood of Large Rivers</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH</Tag>
+		<English>River Length:</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_0</Tag>
+		<English>Minimum 3</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_1</Tag>
+		<English>Minimum 5</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_2</Tag>
+		<English>Minimum 7 Plots per Large River (default)</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_3</Tag>
+		<English>Minimum 9</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_4</Tag>
+		<English>Minimum 11</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_5</Tag>
+		<English>Minimum 13</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT</Tag>
+		<English>Land Mass:</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT_OPT_0</Tag>
+		<English>25% Land</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT_OPT_1</Tag>
+		<English>38% Land Size Ratio vs Ocean (default)</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT_OPT_2</Tag>
+		<English>45% Land</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT_OPT_3</Tag>
+		<English>55% Land</English>
+	</TEXT>
+</Civ4GameText>

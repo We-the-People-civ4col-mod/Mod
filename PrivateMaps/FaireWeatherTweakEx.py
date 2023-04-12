@@ -4353,15 +4353,15 @@ def getCustomMapOptionName(argsList):
         elif mc.mapOptionNames[optionID] == "land allocation":
 			return localText.getText("TXT_KEY_MAP_FAIRE_WEATHER_LAND_ALLOCATION", ())
         elif mc.mapOptionNames[optionID] == "regularity":
-			return "Regularity:"
+			return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_LAND_REGULARITY", ())
         elif mc.mapOptionNames[optionID] == "colony catchment radius":
              return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS", ())
         elif mc.mapOptionNames[optionID] == "river commonality":
-             return "Large Rivers:" #localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_LARGE_RIVER_PREVALENCE", ())
+             return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_LARGE_RIVER_PREVALENCE", ())
         elif mc.mapOptionNames[optionID] == "river length":
-             return "River Length:" #localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH", ())
+             return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH", ())
         elif mc.mapOptionNames[optionID] == "land percent":
-             return "Land Percent:" #localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT", ())
+             return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT", ())
        
         return u""
 	
@@ -4480,11 +4480,11 @@ def getCustomMapOptionDescAt(argsList):
 
     elif mc.mapOptionNames[optionID] == "regularity":
         if selectionID == 0:
-            return "Very Irregular"
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_LAND_REGULARITY_OPT_0", ())
         elif selectionID == 1:
-            return "Quite Irregular (Default)"
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_LAND_REGULARITY_OPT_1", ())
         elif selectionID == 2:
-            return "Regular"
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_LAND_REGULARITY_OPT_2", ())
 
     elif mc.mapOptionNames[optionID] == "colony catchment radius":
         if selectionID == 0:
@@ -4494,34 +4494,35 @@ def getCustomMapOptionDescAt(argsList):
 
     elif mc.mapOptionNames[optionID] == "river commonality":
         if selectionID == 0:
-            return "Less large rivers likely to form"
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_LARGE_RIVER_PREVALENCE_OPT_0", ())
         elif selectionID == 1:
-            return "Balanced amount of large rivers (Default)"
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_LARGE_RIVER_PREVALENCE_OPT_1", ())
         elif selectionID == 2:
-            return "More large rivers likely to form"
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_LARGE_RIVER_PREVALENCE_OPT_2", ())
 
     elif mc.mapOptionNames[optionID] == "river length":
         if selectionID == 0:
-            return "Minimum 3 plots per large river"
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_0", ())
         elif selectionID == 1:
-            return "Minimum 5 plots per large river"
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_1", ())
         elif selectionID == 2:
-            return "Minimum 7 plots per large river (default)"
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_2", ())
         elif selectionID == 3:
-            return "Minimum 9 plots per large river"
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_3", ())
         elif selectionID == 4:
-            return "Minimum 11 plots per large river"
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_4", ())
         elif selectionID == 5:
-            return "minimum 13 plots per large river"
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_5", ())
+
     elif mc.mapOptionNames[optionID] == "land percent":
         if selectionID == 0:
-            return "25%"
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT_OPT_0", ())
         elif selectionID == 1:
-            return "38% (Default)"
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT_OPT_1", ())
         elif selectionID == 2:
-            return "45%"
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT_OPT_2", ())
         elif selectionID == 3:
-            return "55%"
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT_OPT_3", ())
     return u""
 	
 def getCustomMapOptionDefault(argsList):
