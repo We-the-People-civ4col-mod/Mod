@@ -347,6 +347,7 @@ void CyEnumsPythonInterface()
 		.value("WIDGET_MISSION_CHAR", WIDGET_MISSION_CHAR)
 		.value("WIDGET_HELP_HARBOUR_SYSTEM", WIDGET_HELP_HARBOUR_SYSTEM) // WTP, ray, Widgets for Harbour System and Barracks System - START
 		.value("WIDGET_HELP_BARRACKS_SYSTEM", WIDGET_HELP_BARRACKS_SYSTEM) // WTP, ray, Widgets for Harbour System and Barracks System - START
+		.value("WIDGET_HELP_SHOW_OR_HIDE_YIELDS", WIDGET_HELP_SHOW_OR_HIDE_YIELDS)
 		.value("NUM_WIDGET_TYPES", NUM_WIDGET_TYPES)
 		;
 	python::enum_<ButtonPopupTypes>("ButtonPopupTypes")

@@ -125,6 +125,7 @@ protected:
 	void parseCityDefenseHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer);
 	void parseCityHarbourSystemHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer); // WTP, ray, Widgets for Harbour System and Barracks System - START
 	void parseCityBarracksSystemHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer); // WTP, ray, Widgets for Harbour System and Barracks System - START
+	void parseShowOrHideYieldsHelp(CvWidgetDataStruct& widgetDataStruct, CvWStringBuffer& szBuffer);
 	void parseFlagHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer);
 	void parsePopulationHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer);
 	void parseRebelHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer);

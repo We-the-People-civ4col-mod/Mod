@@ -503,7 +503,7 @@ enum WidgetTypes
 	WIDGET_MISSION_CHAR,
 	WIDGET_HELP_HARBOUR_SYSTEM, // WTP, ray, Widgets for Harbour System and Barracks System - START
 	WIDGET_HELP_BARRACKS_SYSTEM, // WTP, ray, Widgets for Harbour System and Barracks System - START
-
+	WIDGET_HELP_SHOW_OR_HIDE_YIELDS,
 #ifdef _USRDLL
 	NUM_WIDGET_TYPES
 #endif
