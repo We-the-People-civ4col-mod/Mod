@@ -7,12 +7,6 @@
     <ClCompile Include="DLLSources\CvArtFileMgr.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
-    <ClCompile Include="DLLSources\CvCity.cpp">
-      <Filter>CV\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CvCityAI.cpp">
-      <Filter>CV\CPP</Filter>
-    </ClCompile>
     <ClCompile Include="DLLSources\CvDeal.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
@@ -373,12 +367,6 @@
     <ClCompile Include="DLLSources\CvPlotFunctions.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
-    <ClCompile Include="DLLSources\CvCityAISavegame.cpp">
-      <Filter>CV\Savegames</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CvCitySavegame.cpp">
-      <Filter>CV\Savegames</Filter>
-    </ClCompile>
     <ClCompile Include="DLLSources\CvPlayerAISavegame.cpp">
       <Filter>CV\Savegames</Filter>
     </ClCompile>
@@ -466,18 +454,27 @@
     <ClCompile Include="DLLSources\CvDLLEngineIFaceBase.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\CvCityAI.cpp">
+      <Filter>Classes\City\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvCity.cpp">
+      <Filter>Classes\City\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvCityAISavegame.cpp">
+      <Filter>Classes\City\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvCitySavegame.cpp">
+      <Filter>Classes\City\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvCityYields.cpp">
+      <Filter>Classes\City\CPP</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
       <Filter>CV\Header</Filter>
     </ClInclude>
     <ClInclude Include="DLLSources\CvArtFileMgr.h">
-      <Filter>CV\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CvCity.h">
-      <Filter>CV\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CvCityAI.h">
       <Filter>CV\Header</Filter>
     </ClInclude>
     <ClInclude Include="DLLSources\CvDeal.h">
@@ -888,6 +885,15 @@
     <ClInclude Include="DLLSources\CyInfos.h">
       <Filter>Python\Header</Filter>
     </ClInclude>
+    <ClInclude Include="DLLSources\CvCityAI.h">
+      <Filter>Classes\City\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvCity.h">
+      <Filter>Classes\City\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvCityYields.h">
+      <Filter>Classes\City\Header</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="DLLSources\FVariableSystem.inl">
@@ -957,6 +963,18 @@
     </Filter>
     <Filter Include="Misc\EXE interface">
       <UniqueIdentifier>{f2e98b89-d8ca-4626-9e7e-5468e1bccaad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{73ba73ed-d43d-422d-9d9f-c63bdeb96d1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\City">
+      <UniqueIdentifier>{e1ea1ee2-46c2-486d-b51b-232d66bf0390}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\City\Header">
+      <UniqueIdentifier>{0f415138-f9b3-4e3e-ad80-d4fa222da928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\City\CPP">
+      <UniqueIdentifier>{1ce6572b-e711-4c3f-a837-3ad059a7fa2e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

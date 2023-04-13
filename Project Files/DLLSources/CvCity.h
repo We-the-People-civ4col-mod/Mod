@@ -5,6 +5,7 @@
 #include "CvDLLEntity.h"
 #include "LinkedList.h"
 #include "CvPlotFunctions.h"
+#include "CvCityYields.h"
 
 class CvPlot;
 class CvArea;
@@ -786,9 +787,13 @@ public:
 
 	void setBarrackHarbourCache();
 
+	      CvCityYields& yields()       { return m_yields; }
+	const CvCityYields& yields() const { return m_yields; }
+
 	void writeDesyncLog(FILE *f) const;
 
 protected:
+	CvCityYields m_yields;
 	int m_iID;
 	Coordinates m_coord;
 	// int m_iX;
