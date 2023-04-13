@@ -1181,10 +1181,27 @@
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_EXPERT_TRADER</Type>
             <Button>,Art/colonization_atlas_units.dds,5,5</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/expert_trader.dds</FullLengthIcon>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_trader.dds</FullLengthIcon>
             <fScale>0.49</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Trader/master_distiller.nif</NIF>
+            <KFM>Art/Units/Settler/profession_trader/master_distiller.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAILED_TRADER</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,8,4</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Failed_trader.dds</FullLengthIcon>
+            <fScale>0.49</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Settler/Failed_Trader/master_distiller.nif</NIF>
             <KFM>Art/Units/Settler/profession_trader/master_distiller.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
