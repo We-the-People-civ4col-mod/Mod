@@ -13538,8 +13538,15 @@
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired/>
-			<iNumBuildings>0</iNumBuildings>
+			<BuildingsRequired>
+				<BuildingClass>BUILDINGCLASS_BASECAMP</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_VILLAGEHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_TOWNHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_CITYHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_COLONIAL_CONGRESS</BuildingClass>
+			</BuildingsRequired>
+			<iNumBuildings>1</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
@@ -13592,7 +13599,7 @@
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
 			<iMinTreasury>0</iMinTreasury>
-			<iMinPopulation>0</iMinPopulation>
+			<iMinPopulation>1</iMinPopulation>
 			<iMaxPopulation>0</iMaxPopulation>
 			<iMinMapLandmass>0</iMinMapLandmass>
 			<iMinOurLandmass>0</iMinOurLandmass>
@@ -13608,8 +13615,15 @@
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired/>
-			<iNumBuildings>0</iNumBuildings>
+			<BuildingsRequired>
+				<BuildingClass>BUILDINGCLASS_BASECAMP</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_VILLAGEHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_TOWNHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_CITYHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_COLONIAL_CONGRESS</BuildingClass>
+			</BuildingsRequired>
+			<iNumBuildings>1</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
@@ -13806,7 +13820,7 @@
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
 			<iMinTreasury>0</iMinTreasury>
-			<iMinPopulation>0</iMinPopulation>
+			<iMinPopulation>1</iMinPopulation>
 			<iMaxPopulation>0</iMaxPopulation>
 			<iMinMapLandmass>0</iMinMapLandmass>
 			<iMinOurLandmass>0</iMinOurLandmass>
@@ -13826,8 +13840,15 @@
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired/>
-			<iNumBuildings>0</iNumBuildings>
+			<BuildingsRequired>
+				<BuildingClass>BUILDINGCLASS_BASECAMP</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_VILLAGEHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_TOWNHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_CITYHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_COLONIAL_CONGRESS</BuildingClass>
+			</BuildingsRequired>
+			<iNumBuildings>1</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
@@ -13880,7 +13901,7 @@
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
 			<iMinTreasury>0</iMinTreasury>
-			<iMinPopulation>0</iMinPopulation>
+			<iMinPopulation>1</iMinPopulation>
 			<iMaxPopulation>0</iMaxPopulation>
 			<iMinMapLandmass>0</iMinMapLandmass>
 			<iMinOurLandmass>0</iMinOurLandmass>
@@ -13900,8 +13921,15 @@
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired/>
-			<iNumBuildings>0</iNumBuildings>
+			<BuildingsRequired>
+				<BuildingClass>BUILDINGCLASS_BASECAMP</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_VILLAGEHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_TOWNHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_CITYHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_COLONIAL_CONGRESS</BuildingClass>
+			</BuildingsRequired>
+			<iNumBuildings>1</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
@@ -14031,7 +14059,7 @@
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
 			<iMinTreasury>0</iMinTreasury>
-			<iMinPopulation>0</iMinPopulation>
+			<iMinPopulation>1</iMinPopulation>
 			<iMaxPopulation>0</iMaxPopulation>
 			<iMinMapLandmass>0</iMinMapLandmass>
 			<iMinOurLandmass>0</iMinOurLandmass>
@@ -14046,8 +14074,15 @@
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired/>
-			<iNumBuildings>0</iNumBuildings>
+			<BuildingsRequired>
+				<BuildingClass>BUILDINGCLASS_BASECAMP</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_VILLAGEHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_TOWNHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_CITYHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_COLONIAL_CONGRESS</BuildingClass>
+			</BuildingsRequired>
+			<iNumBuildings>1</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
@@ -14100,7 +14135,7 @@
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
 			<iMinTreasury>0</iMinTreasury>
-			<iMinPopulation>0</iMinPopulation>
+			<iMinPopulation>1</iMinPopulation>
 			<iMaxPopulation>0</iMaxPopulation>
 			<iMinMapLandmass>0</iMinMapLandmass>
 			<iMinOurLandmass>0</iMinOurLandmass>
@@ -14118,8 +14153,15 @@
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired/>
-			<iNumBuildings>0</iNumBuildings>
+			<BuildingsRequired>
+				<BuildingClass>BUILDINGCLASS_BASECAMP</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_VILLAGEHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_TOWNHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_CITYHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_COLONIAL_CONGRESS</BuildingClass>
+			</BuildingsRequired>
+			<iNumBuildings>1</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
@@ -14172,7 +14214,7 @@
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
 			<iMinTreasury>0</iMinTreasury>
-			<iMinPopulation>0</iMinPopulation>
+			<iMinPopulation>1</iMinPopulation>
 			<iMaxPopulation>0</iMaxPopulation>
 			<iMinMapLandmass>0</iMinMapLandmass>
 			<iMinOurLandmass>0</iMinOurLandmass>
@@ -14190,8 +14232,15 @@
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired/>
-			<iNumBuildings>0</iNumBuildings>
+			<BuildingsRequired>
+				<BuildingClass>BUILDINGCLASS_BASECAMP</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_VILLAGEHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_TOWNHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_CITYHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_COLONIAL_CONGRESS</BuildingClass>
+			</BuildingsRequired>
+			<iNumBuildings>1</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
@@ -14319,7 +14368,7 @@
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
 			<iMinTreasury>3000</iMinTreasury>
-			<iMinPopulation>0</iMinPopulation>
+			<iMinPopulation>1</iMinPopulation>
 			<iMaxPopulation>0</iMaxPopulation>
 			<iMinMapLandmass>0</iMinMapLandmass>
 			<iMinOurLandmass>0</iMinOurLandmass>
@@ -14334,8 +14383,15 @@
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired/>
-			<iNumBuildings>0</iNumBuildings>
+			<BuildingsRequired>
+				<BuildingClass>BUILDINGCLASS_BASECAMP</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_VILLAGEHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_TOWNHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_CITYHALL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_COLONIAL_CONGRESS</BuildingClass>
+			</BuildingsRequired>
+			<iNumBuildings>1</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
