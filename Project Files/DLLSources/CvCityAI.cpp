@@ -3932,7 +3932,7 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 		pv.iYieldOutput = std::max(1, pv.iYieldOutput);
 		// R&R, ray, fix for CTD because of negative City Health could modify 1 to 0 - START- END
 
-		pv.iNetYield = getBaseRawYieldProduced(eYieldProducedType);
+		pv.iNetYield = yields().getBaseRawYieldProduced(eYieldProducedType);
 
 		CvUnit* pOldUnit = NULL;
 		if (GC.getProfessionInfo(eProfession).isWorkPlot())

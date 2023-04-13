@@ -4238,7 +4238,7 @@ void CvCity::changeRiverPlotYield(YieldTypes eIndex, int iChange)
 int CvCity::getRawYieldProduced(YieldTypes eYieldType) const
 {
 	// R&R, ray, safety check for negative Yield Modifiers from Health - START
-	int iRawYield = getBaseRawYieldProduced(eYieldType);
+	int iRawYield = yields().getBaseRawYieldProduced(eYieldType);
 
 	if (iRawYield == 0)
 	{
@@ -4875,7 +4875,7 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 	{
 		YieldTypes eYield = (YieldTypes) iYield;
 		aiConsumedYields[iYield] = getRawYieldConsumed(eYield);
-		aiProducedYields[iYield] = getBaseRawYieldProduced(eYield);
+		aiProducedYields[iYield] = yields().getBaseRawYieldProduced(eYield);
 		aiYields[iYield] = getYieldStored(eYield) - aiConsumedYields[iYield] + aiProducedYields[iYield] * getBaseYieldRateModifier(eYield) / 100;
 	}
 
@@ -10427,7 +10427,7 @@ void CvCity::updateCityHappiness()
 
 	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing - START
 	// iTotalCityHappiness += calculateNetYield(YIELD_HAPPINESS);
-	iTotalCityHappiness += getBaseRawYieldProduced(YIELD_HAPPINESS);
+	iTotalCityHappiness += yields().getBaseRawYieldProduced(YIELD_HAPPINESS);
 	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing - END
 	iTotalCityHappiness += getHappinessFromCrosses();
 	iTotalCityHappiness += getHappinessFromBells();
@@ -10462,7 +10462,7 @@ void CvCity::updateCityUnHappiness()
 
 	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing - START
 	// iTotalCityUnHappiness += calculateNetYield(YIELD_UNHAPPINESS); // should not exist but in case it ever does
-	iTotalCityUnHappiness += getBaseRawYieldProduced(YIELD_UNHAPPINESS); // should not exist but in case it ever does
+	iTotalCityUnHappiness += yields().getBaseRawYieldProduced(YIELD_UNHAPPINESS); // should not exist but in case it ever does
 	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing - END
 	iTotalCityUnHappiness += getUnhappinessFromPopulation();
 	iTotalCityUnHappiness += getUnhappinessFromCrime();
@@ -11013,7 +11013,7 @@ void CvCity::updateCityCrime()
 {
 	int iTotalCityCrime = 0;
 
-	iTotalCityCrime += getBaseRawYieldProduced(YIELD_CRIME); // should not exist but in case it ever does
+	iTotalCityCrime += yields().getBaseRawYieldProduced(YIELD_CRIME); // should not exist but in case it ever does
 	iTotalCityCrime += getCrimeFromPopulation();
 	iTotalCityCrime += getCrimeFromUnhappiness();
 	iTotalCityCrime += getCrimeFromWars();

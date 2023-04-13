@@ -721,7 +721,7 @@ int CyCity::getRiverPlotYield(int /*YieldTypes*/ eIndex)
 
 int CyCity::getBaseRawYieldProduced(int /*YieldTypes*/ eIndex)
 {
-	return m_pCity ? m_pCity->getBaseRawYieldProduced((YieldTypes)eIndex) : -1;
+	return m_pCity ? m_pCity->yields().getBaseRawYieldProduced((YieldTypes)eIndex) : -1;
 }
 
 int CyCity::getRawYieldProduced(int /*YieldTypes*/ eIndex)

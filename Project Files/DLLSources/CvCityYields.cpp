@@ -8,34 +8,46 @@ CvCityYields::CvCityYields(CvCity& city)
 	// WARNING: m_city can't be used in the constructor as the CvCity constructor is still running
 }
 
-int CvCity::getBaseRawYieldProduced(YieldTypes eYieldType) const
+int CvCityYields::getBaseRawYieldProduced(YieldTypes eYieldType) const
 {
 	PROFILE_FUNC();
 
-	FAssertMsg(NO_PLAYER != getOwnerINLINE(), "City must have an owner");
+	FAssertMsg(NO_PLAYER != m_city.getOwnerINLINE(), "City must have an owner");
 
 	if (NO_YIELD == eYieldType)
 	{
 		return 0;
 	}
-	CvYieldInfo& info = GC.getYieldInfo(eYieldType);
 
-	if (isOccupation())
+	if (m_city.isOccupation())
 	{
 		return 0;
 	}
 
-	if (NO_PLAYER == getOwnerINLINE())
+	if (NO_PLAYER == m_city.getOwnerINLINE())
 	{
 		return 0;
 	}
-	CvPlayer& owner = GET_PLAYER(getOwnerINLINE());
+	
 
-	//indoor professions
+	int iIndoor = getBaseRawYieldProducedIndoor(eYieldType);
+	int iOutdoor = getBaseRawYieldProducedPlots(eYieldType);
+	int iBuildings = getBaseRawYieldProducedBuildings(eYieldType);
+
+	return iIndoor + iOutdoor + iBuildings;
+}
+
+int CvCityYields::getBaseRawYieldProducedIndoor(YieldTypes eYieldType) const
+{
+	if (m_city.isOccupation())
+	{
+		return 0;
+	}
+
 	int iCityYieldProduction = 0;
-	for (int i = 0; i < getPopulation(); ++i)
+	for (int i = 0; i < m_city.getPopulation(); ++i)
 	{
-		CvUnit* pUnit = getPopulationUnitByIndex(i);
+		CvUnit* pUnit = m_city.getPopulationUnitByIndex(i);
 		if (NULL != pUnit)
 		{
 			ProfessionTypes eProfession = pUnit->getProfession();
@@ -49,7 +61,7 @@ int CvCity::getBaseRawYieldProduced(YieldTypes eYieldType) const
 					YieldTypes eYieldProduced2 = (YieldTypes)kProfessionInfo.getYieldsProduced(1);
 					if (eYieldProduced == eYieldType || eYieldProduced2 == eYieldType)
 					{
-						iCityYieldProduction += getProfessionOutput(eProfession, pUnit);
+						iCityYieldProduction += m_city.getProfessionOutput(eProfession, pUnit);
 					}
 				}
 				else
@@ -57,26 +69,34 @@ int CvCity::getBaseRawYieldProduced(YieldTypes eYieldType) const
 					YieldTypes eYieldProduced = (YieldTypes)kProfessionInfo.getYieldsProduced(0);
 					if (eYieldProduced == eYieldType)
 					{
-						iCityYieldProduction += getProfessionOutput(eProfession, pUnit);
+						iCityYieldProduction += m_city.getProfessionOutput(eProfession, pUnit);
 					}
 				}
 				// R&R, ray , MYCP partially based on code of Aymerick - END
 			}
 		}
 	}
+	return iCityYieldProduction;
+}
 
-	//outdoor professions
+int CvCityYields::getBaseRawYieldProducedPlots(YieldTypes eYieldType) const
+{
+	if (m_city.isOccupation())
+	{
+		return 0;
+	}
+
 	int iPlotYieldProduction = 0;
 	for (int i = 0; i < NUM_CITY_PLOTS; ++i)
 	{
-		CvPlot* pPlot = getCityIndexPlot(i);
+		CvPlot* pPlot = m_city.getCityIndexPlot(i);
 		if (pPlot != NULL)
 		{
-			if (isUnitWorkingPlot(i))
+			if (m_city.isUnitWorkingPlot(i))
 			{
 				//WTP, ray, Slave Hunter and Slave Master - START
 				//iPlotYieldProduction += pPlot->getYield(eYieldType);
-				if (isNative())
+				if (m_city.isNative())
 				{
 					// normal previous logic
 					iPlotYieldProduction += pPlot->getYield(eYieldType);
@@ -84,11 +104,11 @@ int CvCity::getBaseRawYieldProduced(YieldTypes eYieldType) const
 
 				else
 				{
-					int iSlaveWorkerProductionBonus = getSlaveWorkerProductionBonus();
+					int iSlaveWorkerProductionBonus = m_city.getSlaveWorkerProductionBonus();
 					if (iSlaveWorkerProductionBonus > 0)
 					{
 						int iProductionModifier = 100;
-						CvUnit* pUnit = getUnitWorkingPlot(pPlot);
+						CvUnit* pUnit = m_city.getUnitWorkingPlot(pPlot);
 						if (pUnit != NULL && pUnit->getUnitInfo().LbD_canEscape() && pUnit->getUnitInfo().getYieldChange(eYieldType) > 0)
 						{
 							iProductionModifier += iSlaveWorkerProductionBonus;
@@ -106,21 +126,31 @@ int CvCity::getBaseRawYieldProduced(YieldTypes eYieldType) const
 			}
 		}
 	}
+	return iPlotYieldProduction;
+}
 
-	//building extra
-	int iBuildingYieldProduced = 0;
-	CvCivilizationInfo& civilizationInfo = GC.getCivilizationInfo(getCivilizationType());
-	for (int i = 0; i < GC.getNumBuildingClassInfos(); ++i)
+int CvCityYields::getBaseRawYieldProducedBuildings(YieldTypes eYieldType) const
+{
+	if (m_city.isOccupation())
 	{
-		BuildingTypes eBuilding = (BuildingTypes)civilizationInfo.getCivilizationBuildings(i);
+		return 0;
+	}
 
-		if (eBuilding != NO_BUILDING && isHasBuilding(eBuilding))
+	int iBuildingYieldProduced = 0;
+	const CvPlayer& owner = GET_PLAYER(m_city.getOwnerINLINE());
+	const CvCivilizationInfo& civilizationInfo = GC.getCivilizationInfo(owner.getCivilizationType());
+
+	for (BuildingClassTypes eBuildingClass = FIRST_BUILDINGCLASS; eBuildingClass < NUM_BUILDINGCLASS_TYPES; ++eBuildingClass)
+	{
+		BuildingTypes eBuilding = (BuildingTypes)civilizationInfo.getCivilizationBuildings(eBuildingClass);
+
+		if (eBuilding != NO_BUILDING && m_city.isHasBuilding(eBuilding))
 		{
 			iBuildingYieldProduced += GC.getBuildingInfo(eBuilding).getYieldChange(eYieldType);
-			iBuildingYieldProduced += getBuildingYieldChange((BuildingClassTypes)i, eYieldType);
-			iBuildingYieldProduced += owner.getBuildingYieldChange((BuildingClassTypes)i, eYieldType);
+			iBuildingYieldProduced += m_city.getBuildingYieldChange(eBuildingClass, eYieldType);
+			iBuildingYieldProduced += owner.getBuildingYieldChange(eBuildingClass, eYieldType);
 		}
 	}
 
-	return (iCityYieldProduction + iPlotYieldProduction + iBuildingYieldProduced);
+	return iBuildingYieldProduced;
 }

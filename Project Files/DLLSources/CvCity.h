@@ -345,7 +345,6 @@ public:
 	void changeSeaPlotYield(YieldTypes eIndex, int iChange);
 	int getRiverPlotYield(YieldTypes eIndex) const;
 	void changeRiverPlotYield(YieldTypes eIndex, int iChange);
-	int getBaseRawYieldProduced(YieldTypes eIndex) const;
 	int getRawYieldProduced(YieldTypes eIndex) const;
 	int getRawYieldConsumed(YieldTypes eIndex) const;
 	int getBaseYieldRateModifier(YieldTypes eIndex, int iExtra = 0) const;

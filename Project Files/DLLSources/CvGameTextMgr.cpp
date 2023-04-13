@@ -8454,26 +8454,11 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		return;
 	}
 
-	int iBaseProduction = 0;
-
-	int iBuildingYield = 0;
-	// WTP, ray, refactored according to advice of Nightinggale
-	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
-	{
-		if (city.isHasBuilding(eBuilding))
-		{
-			iBuildingYield += GC.getBuildingInfo(eBuilding).getYieldChange(eYieldType);
-			iBuildingYield += city.getBuildingYieldChange((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType(), eYieldType);
-			iBuildingYield += owner.getBuildingYieldChange((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType(), eYieldType);
-		}
-	}
-
+	int iBuildingYield = city.yields().getBaseRawYieldProducedBuildings(eYieldType);
 	if (iBuildingYield != 0)
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_BUILDING_YIELD", iBuildingYield, info.getChar()));
-
-		iBaseProduction += iBuildingYield;
 	}
 
 	// WTP, ray, correcting Yield Help for Culture - missing Culture from Citizens - START
@@ -8493,6 +8478,8 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 	std::vector< std::vector<int> > aaiProfessionYields;
 	aaiProfessionYields.resize(GC.getNumProfessionInfos());
 	
+	
+	int iBaseProduction = 0;
 	// Indoor professions
 	for (int i = 0; i < city.getPopulation(); ++i)
 	{
@@ -8520,9 +8507,11 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 			}
 		}
 	}
+	FAssert(iBaseProduction == city.yields().getBaseRawYieldProducedIndoor(eYieldType));
+	
 
 	// From plots
-	int iPlotYield = 0;
+	iBaseProduction = 0;
 	int iCityPlotYield = 0;
 	for (int i = 0; i < NUM_CITY_PLOTS; ++i)
 	{
@@ -8583,6 +8572,7 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 			}
 		}
 	}
+	FAssert(iBaseProduction + iCityPlotYield == city.yields().getBaseRawYieldProducedPlots(eYieldType));
 
 	for (uint i = 0; i < aaiProfessionYields.size(); ++i)
 	{
@@ -8605,13 +8595,13 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		szBuffer.append(CvWString::format(gDLL->getText("TXT_KEY_MISC_FROM_CITY_YIELD", iCityPlotYield, info.getChar())));
 	}
 
-	FAssert(iBaseProduction == city.getBaseRawYieldProduced(eYieldType));
+	FAssert(city.yields().getBaseRawYieldProduced(eYieldType) == city.yields().getBaseRawYieldProducedIndoor(eYieldType) + city.yields().getBaseRawYieldProducedPlots(eYieldType) + city.yields().getBaseRawYieldProducedBuildings(eYieldType));
 
 	int aiYields[NUM_YIELD_TYPES];
 	int aiRawProducedYields[NUM_YIELD_TYPES];
 	int aiRawConsumedYields[NUM_YIELD_TYPES];
 	city.calculateNetYields(aiYields, aiRawProducedYields, aiRawConsumedYields);
-	int iUnproduced = city.getBaseRawYieldProduced(eYieldType) - aiRawProducedYields[eYieldType];
+	int iUnproduced = city.yields().getBaseRawYieldProduced(eYieldType) - aiRawProducedYields[eYieldType];
 	if (iUnproduced > 0)
 	{
 		// R&R, ray , MYCP partially based on code of Aymerick - START
@@ -8669,7 +8659,7 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		// R&R, ray , MYCP partially based on code of Aymerick - END
 	}
 
-	int iModifiedProduction = iBaseProduction;
+	int iModifiedProduction = city.yields().getBaseRawYieldProduced(eYieldType);
 	if (iBaseProduction != 0)
 	{
 		int iModifier = setCityYieldModifierString(szBuffer, eYieldType, city);
