@@ -28,7 +28,7 @@ class ProductionAdvisor(BaseAdvisorWindow.BaseAdvisorWindow):
 			szText = localText.getText("TXT_KEY_COLOR_NEGATIVE", ()) + szText + localText.getText("TXT_KEY_COLOR_REVERT", ())
 		elif iNetYield == 0:
 			szText = ""
-		self.tableManager.addTextRight(szText)
+		self.tableManager.addTextRight(szText, iYield, iCity, WidgetTypes.WIDGET_HELP_YIELD)
 
 	def createTableHeader(self):
 		# create table headers
