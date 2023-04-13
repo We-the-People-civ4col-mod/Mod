@@ -1199,7 +1199,7 @@
             <fScale>1.0</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Terrain/Resources/rice/rice.nif</NIF>
-            <KFM/>
+            <KFM>Art/Terrain/Resources/Barley/wheat.kfm</KFM>
             <Button>Art/Interface/Buttons/Rice_Button.dds</Button>
             <FontButtonIndex>17</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
