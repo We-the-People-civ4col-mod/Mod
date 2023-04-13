@@ -453,7 +453,7 @@ void CvPlot::write(CvSavegameWriter writer)
 	writer.Write(Save_workingCity, m_workingCity);
 	writer.Write(Save_workingCityOverride, m_workingCityOverride);
 
-	writer.Write(Save_aiYield, m_em_iYield);
+	writer.Write(Save_aiYield, m_em_iYield); // todo: figure out if it is safe to remove. It is recalculated in CvPlot::postLoadFixes
 
 	writer.Write(Save_Revealed, m_em_bRevealed);
 

@@ -6891,7 +6891,6 @@ int CvPlot::calculatePotentialYield(YieldTypes eYield, PlayerTypes ePlayer, Impr
 				if (iYield > 0 || !GC.getYieldInfo(eYield).isCargo())
 				{
 					iYield += GC.getYieldInfo(eYield).getCityChange();
-					iYield += GET_PLAYER(pCity->getOwnerINLINE()).getCityExtraYield(eYield);
 				}
 
 				if (eYield != YIELD_FOOD && GC.getYieldInfo(eYield).isCargo())
@@ -7082,7 +7081,6 @@ int CvPlot::calculatePotentialCityYield(YieldTypes eYield, const CvCity *pCity) 
 	}
 
 	iYield += kYieldInfo.getCityChange();
-	iYield += GET_PLAYER(pCity->getOwnerINLINE()).getCityExtraYield(eYield);
 
 	return iYield;
 }
@@ -10368,6 +10366,7 @@ void CvPlot::postLoadFixes()
 	// tells if a plot can produce yields or not
 	// Surprisingly CPU heavy, hence cached
 	setYieldCache();
+	updateYield(false);
 }
 
 void CvPlot::writeDesyncLog(FILE *f)

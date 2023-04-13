@@ -33,8 +33,9 @@ int CvCityYields::getBaseRawYieldProduced(YieldTypes eYieldType) const
 	int iIndoor = getBaseRawYieldProducedIndoor(eYieldType);
 	int iOutdoor = getBaseRawYieldProducedPlots(eYieldType);
 	int iBuildings = getBaseRawYieldProducedBuildings(eYieldType);
+	int iLeader = getBaseRawYieldProducedLeader(eYieldType);
 
-	return iIndoor + iOutdoor + iBuildings;
+	return iIndoor + iOutdoor + iBuildings + iLeader;
 }
 
 int CvCityYields::getBaseRawYieldProducedIndoor(YieldTypes eYieldType) const
@@ -153,4 +154,9 @@ int CvCityYields::getBaseRawYieldProducedBuildings(YieldTypes eYieldType) const
 	}
 
 	return iBuildingYieldProduced;
+}
+
+int CvCityYields::getBaseRawYieldProducedLeader(YieldTypes eYieldType) const
+{
+	return GET_PLAYER(m_city.getOwnerINLINE()).getCityExtraYield(eYieldType);
 }

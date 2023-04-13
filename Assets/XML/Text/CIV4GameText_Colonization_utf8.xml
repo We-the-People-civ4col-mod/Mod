@@ -349,6 +349,10 @@
         <Russian>[ICON_BULLET]%d1%F2[TAB]от поселения</Russian>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_MISC_FROM_LEADER_YIELD</Tag>
+        <English>[ICON_BULLET]%d1%F2[TAB]from Leader</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_MISC_CONSUMED_FOOD</Tag>
         <English>[ICON_BULLET][COLOR_WARNING_TEXT]%d1[COLOR_REVERT][ICON_EATENFOOD][TAB]consumed</English>
         <French>[ICON_BULLET][COLOR_WARNING_TEXT]%d1[COLOR_REVERT][ICON_EATENFOOD][TAB]consommée</French>

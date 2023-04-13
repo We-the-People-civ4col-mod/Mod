@@ -8590,12 +8590,23 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 	//city plot
 	if (iCityPlotYield > 0)
 	{
-		iBaseProduction += iCityPlotYield;
 		szBuffer.append(NEWLINE);
 		szBuffer.append(CvWString::format(gDLL->getText("TXT_KEY_MISC_FROM_CITY_YIELD", iCityPlotYield, info.getChar())));
 	}
 
-	FAssert(city.yields().getBaseRawYieldProduced(eYieldType) == city.yields().getBaseRawYieldProducedIndoor(eYieldType) + city.yields().getBaseRawYieldProducedPlots(eYieldType) + city.yields().getBaseRawYieldProducedBuildings(eYieldType));
+	int iLeaderYield = city.yields().getBaseRawYieldProducedLeader(eYieldType);
+	if (iLeaderYield > 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(CvWString::format(gDLL->getText("TXT_KEY_MISC_FROM_LEADER_YIELD", iLeaderYield, info.getChar())));
+	}
+
+	FAssert(city.yields().getBaseRawYieldProduced(eYieldType) == 
+		city.yields().getBaseRawYieldProducedIndoor(eYieldType)
+		+ city.yields().getBaseRawYieldProducedPlots(eYieldType)
+		+ city.yields().getBaseRawYieldProducedBuildings(eYieldType)
+		+ city.yields().getBaseRawYieldProducedLeader(eYieldType)
+	);
 
 	int aiYields[NUM_YIELD_TYPES];
 	int aiRawProducedYields[NUM_YIELD_TYPES];
