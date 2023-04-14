@@ -2588,7 +2588,7 @@
             </YieldsProduced>
             <YieldsConsumed>
                 <YieldType>YIELD_GOAT_HIDES</YieldType>
-                <YieldType>YIELD_WOOL</YieldType>
+                <YieldType>YIELD_WILD_FEATHERS</YieldType>
             </YieldsConsumed>
             <Button>Art/interface/buttons/New_Profession_Buttons/Goat_Hide_Boot_Maker.dds</Button>
             <bUseLbD>1</bUseLbD>
