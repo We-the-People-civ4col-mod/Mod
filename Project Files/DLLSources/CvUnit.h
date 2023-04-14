@@ -201,6 +201,10 @@ public:
 	int getFailedMissionarySurvivalPercent() const;
 	// Ramstormp - END
 
+	// WTP, ray, Failed Trader - START
+	int getFailedTraderSurvivalPercent() const;
+	// WTP, ray, Failed Trader - END
+
 	// WTP, ray, Native Trade Posts - START
 	bool canEstablishTradePost() const;
 	void establishTradePost();

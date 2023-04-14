@@ -6028,7 +6028,7 @@ void CvUnit::establishTradePost()
 	}
 	// R&R, ray, Natives do not talk when furious - ELSE
 
-	if (GC.getGameINLINE().getSorenRandNum(100, "Trade Post failure roll") > getNativeTradePostSuccessPercent())
+	if (GC.getGameINLINE().getSorenRandNum(100, "Trade Post failure roll") > getFailedTraderSurvivalPercent())
 	{
 		CvWString szBuffer = gDLL->getText("TXT_KEY_TRADE_POST_FAILED", plot()->getPlotCity()->getNameKey());
 		gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_TRADE_POST).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
@@ -6191,6 +6191,33 @@ int CvUnit::getFailedMissionarySurvivalPercent() const
 
 	// this is checking for an Expert
 	if (getUnitInfo().getMissionaryRateModifier() > 0)
+	{
+		survivalChance = GC.getDefineINT("FAILED_EXPERT_MISSIONARY_SURVIVAL_CHANCE");
+	}
+
+	// otherwise it is not an Expert
+	else
+	{
+		survivalChance = GC.getDefineINT("FAILED_REGULAR_MISSIONARY_SURVIVAL_CHANCE");
+	}
+
+	// just for safety if XML config was messed up, checking for smaller 0 is enough
+	if (survivalChance < 0)
+	{
+		return 0;
+	}
+	return survivalChance;
+}
+//Ramstormp, Disillusioned missionary - END
+
+
+//Ramstormp, Disillusioned missionary - START
+int CvUnit::getFailedTraderSurvivalPercent() const
+{
+	int survivalChance = 0;
+
+	// this is checking for an Expert
+	if (getUnitInfo().getNativeTradeRateModifier() > 0)
 	{
 		survivalChance = GC.getDefineINT("FAILED_EXPERT_MISSIONARY_SURVIVAL_CHANCE");
 	}
