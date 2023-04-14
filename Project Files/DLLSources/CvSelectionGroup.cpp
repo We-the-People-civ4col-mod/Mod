@@ -564,6 +564,8 @@ CvPlot* CvSelectionGroup::lastMissionPlot()
 		{
 		case MISSION_MOVE_TO:
 		case MISSION_ROUTE_TO:
+		case MISSION_ROUTE_TO_ROAD:
+		case MISSION_ROUTE_TO_PLASTERED_ROAD:
 			return GC.getMap().plotINLINE(pMissionNode->m_data.iData1, pMissionNode->m_data.iData2);
 			break;
 
@@ -649,11 +651,31 @@ bool CvSelectionGroup::canStartMission(int iMission, int iData1, int iData2, CvP
 			break;
 
 		case MISSION_ROUTE_TO:
-			if (!(pPlot->at(iData1, iData2)) || (getBestBuildRoute(pPlot) != NO_ROUTE))
 			{
-				return true;
+				if (!(pPlot->at(iData1, iData2)) || canBuildRoute(pPlot))
+				{
+					return true;
+				}
+				break;
 			}
-			break;
+
+		case MISSION_ROUTE_TO_ROAD:
+			{
+				if (!(pPlot->at(iData1, iData2)) || canBuildRoute(pPlot, ROUTE_ROAD))
+				{
+					return true;
+				}
+				break;
+			}
+
+		case MISSION_ROUTE_TO_PLASTERED_ROAD:
+			{
+				if (!(pPlot->at(iData1, iData2)) || canBuildRoute(pPlot, ROUTE_PLASTERED_ROAD))
+				{
+					return true;
+				}
+				break;
+			}
 
 		case MISSION_MOVE_TO_UNIT:
 			FAssertMsg(iData1 != NO_PLAYER, "iData1 should be a valid Player");
@@ -810,7 +832,7 @@ void CvSelectionGroup::startMission()
 	}
 
 	setActivityType(ACTIVITY_MISSION);
-	
+
 	bDelete = false;
 	bAction = false;
 	bNotify = false;
@@ -827,6 +849,8 @@ void CvSelectionGroup::startMission()
 		{
 		case MISSION_MOVE_TO:
 		case MISSION_ROUTE_TO:
+		case MISSION_ROUTE_TO_ROAD:
+		case MISSION_ROUTE_TO_PLASTERED_ROAD:
 		case MISSION_MOVE_TO_UNIT:
 			break;
 
@@ -894,6 +918,8 @@ void CvSelectionGroup::startMission()
 				{
 				case MISSION_MOVE_TO:
 				case MISSION_ROUTE_TO:
+				case MISSION_ROUTE_TO_ROAD:
+				case MISSION_ROUTE_TO_PLASTERED_ROAD:
 				case MISSION_MOVE_TO_UNIT:
 				case MISSION_SKIP:
 				case MISSION_SLEEP:
@@ -1124,7 +1150,7 @@ void CvSelectionGroup::continueMission(int iSteps)
 						break;
 
 					case MISSION_ROUTE_TO:
-						if (groupRoadTo(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2, headMissionQueueNode()->m_data.iFlags))
+						if (groupRouteTo(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2, headMissionQueueNode()->m_data.iFlags))
 						{
 							bAction = true;
 						}
@@ -1133,6 +1159,29 @@ void CvSelectionGroup::continueMission(int iSteps)
 							bDone = true;
 						}
 						break;
+
+					case MISSION_ROUTE_TO_ROAD:
+						if (groupRouteTo(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2, headMissionQueueNode()->m_data.iFlags, ROUTE_ROAD))
+						{
+							bAction = true;
+						}
+						else
+						{
+							bDone = true;
+						}
+						break;
+
+					case MISSION_ROUTE_TO_PLASTERED_ROAD:
+						if (groupRouteTo(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2, headMissionQueueNode()->m_data.iFlags, ROUTE_PLASTERED_ROAD))
+						{
+							bAction = true;
+						}
+						else
+						{
+							bDone = true;
+						}
+						break;
+
 
 					case MISSION_MOVE_TO_UNIT:
 						pTargetUnit = GET_PLAYER((PlayerTypes)headMissionQueueNode()->m_data.iData1).getUnit(headMissionQueueNode()->m_data.iData2);
@@ -1221,7 +1270,27 @@ void CvSelectionGroup::continueMission(int iSteps)
 			case MISSION_ROUTE_TO:
 				if (at(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2))
 				{
-					if (getBestBuildRoute(plot()) == NO_ROUTE)
+					if (!canBuildRoute(plot()))
+					{
+						bDone = true;
+					}
+				}
+				break;
+
+			case MISSION_ROUTE_TO_ROAD:
+				if (at(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2))
+				{
+					if (!canBuildRoute(plot(), ROUTE_ROAD))
+					{
+						bDone = true;
+					}
+				}
+				break;
+
+			case MISSION_ROUTE_TO_PLASTERED_ROAD:
+				if (at(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2))
+				{
+					if (!canBuildRoute(plot(), ROUTE_ROAD))
 					{
 						bDone = true;
 					}
@@ -1306,6 +1375,8 @@ void CvSelectionGroup::continueMission(int iSteps)
 					{
 						if ((headMissionQueueNode()->m_data.eMissionType == MISSION_MOVE_TO) ||
 							(headMissionQueueNode()->m_data.eMissionType == MISSION_ROUTE_TO) ||
+							(headMissionQueueNode()->m_data.eMissionType == MISSION_ROUTE_TO_ROAD) ||
+							(headMissionQueueNode()->m_data.eMissionType == MISSION_ROUTE_TO_PLASTERED_ROAD) ||
 							(headMissionQueueNode()->m_data.eMissionType == MISSION_MOVE_TO_UNIT))
 						{
 							gDLL->getInterfaceIFace()->changeCycleSelectionCounter((GET_PLAYER(getOwnerINLINE()).isOption(PLAYEROPTION_QUICK_MOVES)) ? 1 : 2);
@@ -1539,6 +1610,26 @@ bool CvSelectionGroup::canDoInterfaceMode(InterfaceModeTypes eInterfaceMode)
 			if (pLoopUnit->workRate(true) > 0)
 			{
 				if (pLoopUnit->canBuildRoute())
+				{
+					return true;
+				}
+			}
+			break;
+
+		case INTERFACEMODE_ROUTE_TO_ROAD:
+			if (pLoopUnit->workRate(true) > 0)
+			{
+				if (pLoopUnit->canBuildRoute(ROUTE_ROAD))
+				{
+					return true;
+				}
+			}
+			break;
+
+		case INTERFACEMODE_ROUTE_TO_PLASTERED_ROAD:
+			if (pLoopUnit->workRate(true) > 0)
+			{
+				if (pLoopUnit->canBuildRoute(ROUTE_PLASTERED_ROAD))
 				{
 					return true;
 				}
@@ -2085,7 +2176,7 @@ bool CvSelectionGroup::canBombard(const CvPlot* pPlot)
 	while (pUnitNode != NULL)
 	{
 		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		
+
 		if (pLoopUnit->canBombard(pPlot))
 		{
 			return true;
@@ -2458,42 +2549,81 @@ DomainTypes CvSelectionGroup::getDomainType() const
 }
 
 
-RouteTypes CvSelectionGroup::getBestBuildRoute(CvPlot* pPlot, BuildTypes* peBestBuild) const
+bool CvSelectionGroup::canBuildRoute(CvPlot* pPlot, RouteTypes eRequestedRoute) const
+{
+// if eRequestedRoute == NO_ROUTE, then return true for any route that can be built!
+
+	CLLNode<IDInfo>* pUnitNode = headUnitNode();
+
+	while (pUnitNode != NULL)
+	{
+		const CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = nextUnitNode(pUnitNode);
+
+		for (BuildTypes eBuild = FIRST_BUILD; eBuild < NUM_BUILD_TYPES; eBuild++)
+		{
+			RouteTypes eRoute = ((RouteTypes)(GC.getBuildInfo(eBuild).getRoute()));
+			if (eRoute != NO_ROUTE)
+			{
+				if (eRequestedRoute == NO_ROUTE && pLoopUnit->canBuild(pPlot, eBuild))
+				{
+					// there is a route type that can be built
+					return true;
+				}
+				if (eRoute == eRequestedRoute && pLoopUnit->canBuild(pPlot, eBuild))
+				{
+					// the reqeusted route type can be built
+					return true;
+				}
+			}
+		}
+	}
+	// we have not found a buildable route type
+	return false;
+}
+
+
+BuildTypes CvSelectionGroup::getBestBuildRouteBuild(CvPlot *pPlot, RouteTypes eRequestedRoute) const
+{
+	BuildTypes eBuild;
+	getBestBuildRoute(pPlot, &eBuild, eRequestedRoute);
+	return eBuild;
+}
+
+
+RouteTypes CvSelectionGroup::getBestBuildRoute(CvPlot* pPlot, BuildTypes* peBestBuild, RouteTypes eRequestedRoute) const
 {
 	PROFILE_FUNC();
 
-	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
-	RouteTypes eRoute;
-	RouteTypes eBestRoute;
-	int iValue;
-	int iBestValue;
-	int iI;
-
+	RouteTypes eBestRoute = NO_ROUTE;
+	int iBestValue = 0;
 	if (peBestBuild != NULL)
 	{
 		*peBestBuild = NO_BUILD;
 	}
 
-	iBestValue = 0;
-	eBestRoute = NO_ROUTE;
-
-	pUnitNode = headUnitNode();
+	CLLNode<IDInfo>* pUnitNode = headUnitNode();
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
+		const CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = nextUnitNode(pUnitNode);
 
-		for (iI = 0; iI < GC.getNumBuildInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumBuildInfos(); iI++)
 		{
-			eRoute = ((RouteTypes)(GC.getBuildInfo((BuildTypes) iI).getRoute()));
+			RouteTypes eRoute = ((RouteTypes)(GC.getBuildInfo((BuildTypes) iI).getRoute()));
 
 			if (eRoute != NO_ROUTE)
 			{
 				if (pLoopUnit->canBuild(pPlot, ((BuildTypes)iI)))
 				{
-					iValue = GC.getRouteInfo(eRoute).getValue();
+					if (eRequestedRoute != NO_ROUTE && eRoute == eRequestedRoute)
+					{
+						// if a certain route type was requested and we have found a unit to build it, just return that type
+						*peBestBuild = ((BuildTypes)iI);
+						return eRoute;
+					}
+					int iValue = GC.getRouteInfo(eRoute).getValue();
 
 					if (iValue > iBestValue)
 					{
@@ -2540,7 +2670,7 @@ bool CvSelectionGroup::groupDeclareWar(CvPlot* pPlot, bool bForce)
 	return (iNumUnits != getNumUnits());
 }
 
-// R&R, ray, Natives raiding party - START 
+// R&R, ray, Natives raiding party - START
 // R&R, ray, Heavily modified, use complete method
 // Returns true if attack was made...
 bool CvSelectionGroup::groupAttack(int iX, int iY, int iFlags, bool& bFailedAlreadyFighting)
@@ -2783,8 +2913,8 @@ void CvSelectionGroup::groupMove(CvPlot* pPlot, bool bCombat, CvUnit* pCombatUni
 			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 			pUnitNode = nextUnitNode(pUnitNode);
 
-			try 
-			{ 
+			try
+			{
 				pLoopUnit->ExecuteMove(((float)(GC.getMissionInfo(MISSION_MOVE_TO).getTime() * gDLL->getMillisecsPerTurn())) / 1000.0f, false);
 			}
 			catch (...)
@@ -2879,17 +3009,12 @@ bool CvSelectionGroup::groupPathTo(int iX, int iY, int iFlags)
 
 
 // Returns true if move was made...
-bool CvSelectionGroup::groupRoadTo(int iX, int iY, int iFlags)
+bool CvSelectionGroup::groupRouteTo(int iX, int iY, int iFlags, RouteTypes eRequestedRoute)
 {
-	CvPlot* pPlot;
-	RouteTypes eBestRoute;
-	BuildTypes eBestBuild;
-
 	if (!AI_isControlled() || !at(iX, iY) || (getLengthMissionQueue() == 1))
 	{
-		pPlot = plot();
-
-		eBestRoute = getBestBuildRoute(pPlot, &eBestBuild);
+		CvPlot* pPlot = plot();
+		BuildTypes eBestBuild = getBestBuildRouteBuild(pPlot, eRequestedRoute);
 
 		if (eBestBuild != NO_BUILD)
 		{
@@ -3208,6 +3333,8 @@ void CvSelectionGroup::updateMissionTimer(int iSteps)
 
 		if ((headMissionQueueNode()->m_data.eMissionType == MISSION_MOVE_TO) ||
 				(headMissionQueueNode()->m_data.eMissionType == MISSION_ROUTE_TO) ||
+				(headMissionQueueNode()->m_data.eMissionType == MISSION_ROUTE_TO_ROAD) ||
+				(headMissionQueueNode()->m_data.eMissionType == MISSION_ROUTE_TO_PLASTERED_ROAD) ||
 				(headMissionQueueNode()->m_data.eMissionType == MISSION_MOVE_TO_UNIT))
 		{
 			if (headMissionQueueNode()->m_data.eMissionType == MISSION_MOVE_TO_UNIT)
@@ -3427,7 +3554,7 @@ CvPlot* CvSelectionGroup::getPathPlotByIndex(int iIndex) const
 {
 	FAssert(iIndex >= 0);
 	FAssert(iIndex <= getPathLength());
-	
+
 	FAStarNode* pNode;
 
 	//pNode = getPathLastNode();
@@ -3465,7 +3592,7 @@ int CvSelectionGroup::getPathLength() const
 		}
 
 		int iLength = 0;
-	
+
 		while (pNode != NULL)
 		{
 			iLength++;

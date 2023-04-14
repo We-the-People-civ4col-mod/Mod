@@ -99,13 +99,15 @@ public:
 	int getArea() const;
 	CvArea* area() const;
 	DomainTypes getDomainType() const;
-	RouteTypes getBestBuildRoute(CvPlot* pPlot, BuildTypes* peBestBuild = NULL) const;
+  bool canBuildRoute(CvPlot* pPlot, RouteTypes eRequestedRoute = NO_ROUTE) const;
+  BuildTypes getBestBuildRouteBuild(CvPlot *pPlot, RouteTypes eRequestedRoute) const;
+	RouteTypes getBestBuildRoute(CvPlot* pPlot, BuildTypes* peBestBuild = NULL, RouteTypes eRequestedRoute = NO_ROUTE) const;
 
 	bool groupDeclareWar(CvPlot* pPlot, bool bForce = false);
 	bool groupAttack(int iX, int iY, int iFlags, bool& bFailedAlreadyFighting);
 	void groupMove(CvPlot* pPlot, bool bCombat, CvUnit* pCombatUnit = NULL, bool bEndMove = false);
 	bool groupPathTo(int iX, int iY, int iFlags);
-	bool groupRoadTo(int iX, int iY, int iFlags);
+	bool groupRouteTo(int iX, int iY, int iFlags, RouteTypes eRequestedRoute = ROUTE_RAILROAD);
 	bool groupBuild(BuildTypes eBuild);
 	void setTransportUnit(CvUnit* pTransportUnit);
 	bool isAmphibPlot(const CvPlot* pPlot) const;
@@ -145,7 +147,7 @@ public:
 	CvPlot* getPathEndTurnPlot() const;
 	CvPlot* getPathSecondLastPlot() const;
 	int getPathCost() const;
-	
+
 	// TAC - AI Improved Naval AI - koma13 - START
 	CvPlot* getPathPlotByIndex(int iIndex) const;
 	int getPathLength() const;
@@ -204,7 +206,7 @@ public:
 	// for serialization
 	virtual void read(FDataStreamBase* pStream);
 	virtual void write(FDataStreamBase* pStream);
-	
+
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);
 

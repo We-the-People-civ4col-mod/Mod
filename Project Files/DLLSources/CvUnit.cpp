@@ -8798,23 +8798,28 @@ bool CvUnit::hasMoved()	const
 
 
 // XXX should this test for coal?
-bool CvUnit::canBuildRoute() const
+bool CvUnit::canBuildRoute(RouteTypes eRequestedRoute) const
 {
-	int iI;
-
-	for (iI = 0; iI < GC.getNumBuildInfos(); iI++)
+	for (BuildTypes eBuild = FIRST_BUILD; eBuild < NUM_BUILD_TYPES; eBuild++)
 	{
-		if (GC.getBuildInfo((BuildTypes)iI).getRoute() != NO_ROUTE)
+		RouteTypes eRoute = ((RouteTypes)(GC.getBuildInfo(eBuild).getRoute()));
+		if (eRoute != NO_ROUTE)
 		{
-			if (m_pUnitInfo->getBuilds(iI))
+			if (eRequestedRoute == NO_ROUTE && getUnitInfo().getBuilds(eBuild))
 			{
+				// there is a route type that can be built
+				return true;
+			}
+			if (eRoute == eRequestedRoute && getUnitInfo().getBuilds(eBuild))
+			{
+				// the reqeusted route type can be built
 				return true;
 			}
 		}
 	}
-
 	return false;
 }
+
 
 BuildTypes CvUnit::getBuildType() const
 {
@@ -8838,8 +8843,28 @@ BuildTypes CvUnit::getBuildType() const
 				{
 					return eBuild;
 				}
+				break;
 			}
-			break;
+
+		case MISSION_ROUTE_TO_ROAD:
+			{
+				BuildTypes eBuild;
+				if (pGroup->getBestBuildRoute(plot(), &eBuild, ROUTE_ROAD) != NO_ROUTE)
+				{
+					return eBuild;
+				}
+				break;
+			}
+
+		case MISSION_ROUTE_TO_PLASTERED_ROAD:
+			{
+				BuildTypes eBuild;
+				if (pGroup->getBestBuildRoute(plot(), &eBuild, ROUTE_PLASTERED_ROAD) != NO_ROUTE)
+				{
+					return eBuild;
+				}
+				break;
+			}
 
 		case MISSION_MOVE_TO_UNIT:
 		case MISSION_SKIP:

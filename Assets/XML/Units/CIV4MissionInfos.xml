@@ -420,5 +420,25 @@
             <bVisible>1</bVisible>
             <Button>Art/Interface/Actions/Fishing_high_res.dds</Button>
         </MissionInfo>
+        <MissionInfo>
+            <Type>MISSION_ROUTE_TO_ROAD</Type>
+            <Description>TXT_KEY_MISSION_ROUTE_TO_ROAD</Description>
+            <Help>TXT_KEY_MISSION_ROUTE_TO_ROAD_HELP</Help>
+            <Waypoint>EFFECT_FOOTSTEP_ON</Waypoint>
+            <iTime>4</iTime>
+            <bTarget>1</bTarget>
+            <bBuild>0</bBuild>
+            <bSound>1</bSound>
+        </MissionInfo>
+        <MissionInfo>
+            <Type>MISSION_ROUTE_TO_PLASTERED_ROAD</Type>
+            <Description>TXT_KEY_MISSION_ROUTE_TO_PLASTERED_ROAD</Description>
+            <Help>TXT_KEY_MISSION_ROUTE_TO_PLASTERED_ROAD_HELP</Help>
+            <Waypoint>EFFECT_FOOTSTEP_ON</Waypoint>
+            <iTime>4</iTime>
+            <bTarget>1</bTarget>
+            <bBuild>0</bBuild>
+            <bSound>1</bSound>
+        </MissionInfo>
     </MissionInfos>
 </Civ4MissionInfos>
