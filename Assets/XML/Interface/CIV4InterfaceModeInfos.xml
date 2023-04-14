@@ -166,7 +166,7 @@
             <bHighlightPlot>0</bHighlightPlot>
             <bSelectType>0</bSelectType>
             <bSelectAll>0</bSelectAll>
-            <Button>Art/Interface/Game Hud/Actions/route_to_high_res.dds</Button>
+            <Button>Art/Interface/Game Hud/Actions/build_route_to_railroad.dds</Button>
         </InterfaceModeInfo>
         <InterfaceModeInfo>
             <Type>INTERFACEMODE_ROUTE_TO_ROAD</Type>
@@ -189,7 +189,7 @@
             <bHighlightPlot>0</bHighlightPlot>
             <bSelectType>0</bSelectType>
             <bSelectAll>0</bSelectAll>
-            <Button>Art/Interface/Game Hud/Actions/route_to_road.dds</Button>
+            <Button>Art/Interface/Game Hud/Actions/route_to_high_res.dds</Button>
         </InterfaceModeInfo>
         <InterfaceModeInfo>
             <Type>INTERFACEMODE_ROUTE_TO_PLASTERED_ROAD</Type>
@@ -212,7 +212,7 @@
             <bHighlightPlot>0</bHighlightPlot>
             <bSelectType>0</bSelectType>
             <bSelectAll>0</bSelectAll>
-            <Button>Art/Interface/Game Hud/Actions/route_to_plastered_road.dds</Button>
+            <Button>Art/Interface/Game Hud/Actions/build_route_to_plastered_road.dds</Button>
         </InterfaceModeInfo>
         <InterfaceModeInfo>
             <Type>INTERFACEMODE_PYTHON_PICK_PLOT</Type>
