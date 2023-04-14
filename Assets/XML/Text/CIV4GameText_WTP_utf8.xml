@@ -140,7 +140,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FAILED_TRADER_SPAWNED_FROM_FAIL</Tag>
-        <English>Milord, your trader failed to establish a trade post in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. He gave alcohol to the tribal men and they got violent when becoming druk. Luckily did not kill him. But they beat him up and stole all his goods. But he is now broken and traumatised.</English>
+        <English>Milord, your trader failed to establish a trade post in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. He gave alcohol to the tribal men and they got violent when becoming druk. Luckily they did not kill him. But they beat him up and stole all his goods. But he is now broken and traumatised.</English>
         <German>Milord, Euer Ureinwohnerhändler ist dabei gescheitert, einen Handelsposten in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] zu errichten. Er gab den Männdern des Stammes Alkohol. Als sie betrunken waren wurden sie gewalttätig. Glücklicherweise haben sie ihn nicht getötet. Jedoch schlugen sie ihn und stahlen alle seine Güter. Er ist nun mittellos und traumatisiert.</German>
     </TEXT>
     <TEXT>
