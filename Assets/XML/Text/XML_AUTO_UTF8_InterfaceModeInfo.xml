@@ -100,37 +100,33 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO</Tag>
-        <English>Route To Mode</English>
-        <French>Route vers</French>
-        <German>Straße nach-Modus</German>
-        <Italian>Modalità 'Itinerario'</Italian>
-        <Spanish>Modo Ir en ruta a</Spanish>
-        <Russian>Строить мощеную дорогу к выбранной клетке</Russian>
+        <English>Route To Mode (best available)</English>
+        <German>Straße nach-Modus (Bester verfügbarer Straßentyp)</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_HELP</Tag>
-        <English>Order the unit to build roads to the selected tile</English>
-        <French>Ordonner à l'unité de construire des routes vers la case sélectionnée.</French>
-        <German>Befehlen Sie der Einheit, Straßen zum gewählten Geländefeld zu bauen.</German>
-        <Italian>Ordina all'unità di costruire strade fino alla casella selezionata</Italian>
-        <Spanish>Ordena a la unidad que construya carreteras hasta la casilla seleccionada.</Spanish>
-        <Russian>Очень тяжелая и долгая работа. Следует выбирать, когда между поселениями уже проложена хотя бы обычная дорога</Russian>
+        <English>Order the unit to build the highest level of roads to the selected tile</English>
+        <German>Befehlen Sie der Einheit, Straßen (des besten verfügbaren Straßentyps) bis zum gewählten Geländefeld zu bauen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_ROAD</Tag>
-        <English>Route To Mode (country road)</English>
+        <English>Route To Mode (simple road)</English>
+        <German>Straße nach-Modus (einfache Straße)</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_ROAD_HELP</Tag>
-        <English>Order the unit to build country roads to the selected tile</English>
+        <English>Order the unit to build simple roads to the selected tile</English>
+        <German>Befehlen Sie der Einheit, einfache Straßen bis zum gewählten Geländefeld zu bauen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_PLASTERED_ROAD</Tag>
-        <English>Route To Mode (plastered road)</English>
+        <English>Route To Mode (country road)</English>
+        <German>Straße nach-Modus (Landstraße)</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_PLASTERED_ROAD_HELP</Tag>
-        <English>Order the unit to build plastered roads to the selected tile</English>
+        <English>Order the unit to build country roads to the selected tile</English>
+        <German>Befehlen Sie der Einheit, Landstraßen bis zum gewählten Geländefeld zu bauen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INTERFACEMODE_SAVE_PLOT_NIFS</Tag>
