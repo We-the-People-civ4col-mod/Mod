@@ -118,6 +118,7 @@
                 <GoodyType>GOODY_SLAVE_MASTER</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_FAILED_TRADER</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
@@ -289,6 +290,7 @@
                 <GoodyType>GOODY_SLAVE_MASTER</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_FAILED_TRADER</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
@@ -460,6 +462,7 @@
                 <GoodyType>GOODY_SLAVE_MASTER</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_FAILED_TRADER</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
@@ -631,6 +634,7 @@
                 <GoodyType>GOODY_SLAVE_MASTER</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_FAILED_TRADER</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
@@ -802,6 +806,7 @@
                 <GoodyType>GOODY_SLAVE_MASTER</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_FAILED_TRADER</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
@@ -973,6 +978,7 @@
                 <GoodyType>GOODY_SLAVE_MASTER</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_FAILED_TRADER</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
@@ -1144,6 +1150,7 @@
                 <GoodyType>GOODY_SLAVE_MASTER</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_FAILED_TRADER</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>

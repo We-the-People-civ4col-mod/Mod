@@ -139,10 +139,20 @@
         <Russian>Милорд, нашему миссионеру не удалось установить миссию в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Хотя индейцы и могли убить его за оскорбление их богов, вместо этого они сильно избили его, выбросив за пределы деревни полностью сломленным и разочарованным.</Russian>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_FAILED_TRADER_SPAWNED_FROM_FAIL</Tag>
+        <English>Milord, your trader failed to establish a trade post in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. He gave alcohol to the tribal men and they got violent when becoming druk. Luckily did not kill him. But they beat him up and stole all his goods. But he is now broken and traumatised.</English>
+        <German>Milord, Euer Ureinwohnerhändler ist dabei gescheitert, einen Handelsposten in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] zu errichten. Er gab den Männdern des Stammes Alkohol. Als sie betrunken waren wurden sie gewalttätig. Glücklicherweise haben sie ihn nicht getötet. Jedoch schlugen sie ihn und stahlen alle seine Güter. Er ist nun mittellos und traumatisiert.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_MISSION_REPLACED</Tag>
         <English>Milord, the Natives in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] have beaten and chased away your missionary. A missionary from another nation managed to replace him, after accusing him of heresy and other devilish deeds.</English>
         <German>Milord, die Ureinwohner von [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] haben Euren Missionar mit Prügeln aus dem Dorf verjagt, nachdem ein Missionar einer anderen Nation seinen Platz eingenommen hat und ihn der Teufelsanbetung beschuldigte.</German>
         <Russian>Милорд, индейцы в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] избили и прогнали нашего миссионера. Его место занял другой европейский миссионер, обвинив нашего в ереси и других бесовских делах.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FAILED_TRADER_SPAWNED_FROM_TRADE_POST_REPLACED</Tag>
+        <English>Milord, the Natives in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] have beaten and chased away your trader. A trader from another nation managed to replace him, by giving the Natives presents and accusing our own trader of greediness.</English>
+        <German>Milord, die Ureinwohner von [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] haben Euren Ureinwohnderhändler mit Prügeln aus dem Dorf verjagt. Ein anderer Ureinwohnderhändler hat ihn verdrängt indem er dem Stamm Geschenke machte und unseren Mann der Gier beschuldigte.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSIONARY_EJECTED_FROM_GIFTED_CITY</Tag>

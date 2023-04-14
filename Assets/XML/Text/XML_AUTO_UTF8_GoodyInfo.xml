@@ -39,9 +39,14 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_FAILED_MISSIONARY</Tag>
-        <English>You've discovered a [COLOR_UNIT_TEXT]failed missionary[COLOR_REVERT] on the return from his mission!</English>
-        <German>Ihr habt einen [COLOR_UNIT_TEXT]gescheiterten Missionar[COLOR_REVERT] auf der Heimkehr von seiner Mission entdeckt!</German>
+        <English>You've discovered a [COLOR_UNIT_TEXT]failed missionary[COLOR_REVERT] on the return from his failed mission!</English>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]gescheiterten Missionar[COLOR_REVERT] auf der Rückkehr von seiner gescheiterten Mission entdeckt!</German>
         <Russian>Вы обнаружили [COLOR_UNIT_TEXT]разочаровавшегося миссионера[COLOR_REVERT], который бесцельно брел по тропе. Надо взять его с собой, иначе один он тут пропадет!</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_FAILED_TRADER</Tag>
+        <English>You've discovered a [COLOR_UNIT_TEXT]failed trader[COLOR_REVERT] on the return from his failed attempt to establish a trade post!</English>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]gescheiterten Missionar[COLOR_REVERT] auf der Rückkehr von seinem gescheiterten Handelsposten!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_COLONIST</Tag>

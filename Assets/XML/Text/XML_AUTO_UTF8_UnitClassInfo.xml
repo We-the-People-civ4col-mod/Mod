@@ -485,6 +485,10 @@
         <English>TXT_KEY_UNIT_FAILED_MISSIONARY</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_FAILED_TRADER</Tag>
+        <English>TXT_KEY_UNIT_FAILED_TRADER</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CIGARS</Tag>
         <English>Cigars</English>
         <French>

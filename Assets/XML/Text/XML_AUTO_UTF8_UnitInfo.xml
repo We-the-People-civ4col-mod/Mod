@@ -855,8 +855,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FAILED_MISSIONARY_STRATEGY</Tag>
-        <English>When [LINK=CONCEPT_MISSIONARIES]missionaries[\LINK] fail to set up a mission in a Native village they become disillusioned.[NEWLINE]They develop a bad work ethic.[NEWLINE]Since their belief is not totally destroyed and they know the Holy Word, they are still useful as [LINK=PROFESSION_PREACHER]preachers[\LINK].</English>
-        <German>[COLOR_HIGHLIGHT_TEXT]Desillusionierte[COLOR_REVERT] [LINK=CONCEPT_MISSIONARIES]Missionare[\LINK] sind das Ergebnis fehlgeschlagener Missionierungsversuche in Ureinwohnerdörfern.[NEWLINE]Sie hadern mit sich und der Welt und sind daher wenig produktive Arbeitskräfte.[NEWLINE]Sie haben allerdings ihren Glauben noch nicht ganz verloren, so daß sie dank ihrer Kenntnis der Heiligen Schrift noch als [LINK=PROFESSION_PREACHER]Prediger[\LINK] dienen können.</German>
+        <English>When [LINK=CONCEPT_MISSIONARIES]missionaries[\LINK] fail to set up a mission in a Native village they become disillusioned.[NEWLINE]They develop a bad work ethic.[NEWLINE]Since their belief is not totally destroyed and they know the Holy Word, they are still useful as [LINK=PROFESSION_PREACHER]preachers[\LINK]. [NEWLINE]They may become Experts in a profession again.</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]Desillusionierte[COLOR_REVERT] [LINK=CONCEPT_MISSIONARIES]Missionare[\LINK] sind das Ergebnis fehlgeschlagener Missionierungsversuche in Ureinwohnerdörfern.[NEWLINE]Sie hadern mit sich und der Welt und sind daher wenig produktive Arbeitskräfte.[NEWLINE]Sie haben allerdings ihren Glauben noch nicht ganz verloren, so daß sie dank ihrer Kenntnis der Heiligen Schrift noch als [LINK=PROFESSION_PREACHER]Prediger[\LINK] dienen können. [NEWLINE]Sie können in einem Beruf wieder zu Experten werden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAILED_TRADER</Tag>
+        <English>Failed Trader:Failed Traders</English>
+        <German>
+            <Text>Gescheiterter Ureinwohnerhändler:Gescheiterte Ureinwohnerhändler</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAILED_TRADER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAILED_TRADER_STRATEGY</Tag>
+        <English>When [LINK=UNIT_EXPERT_TRADER]Expert Traders[\LINK] fail to set up a trade pist in a Native village they become failed traders.[NEWLINE]They develop a bad work ethic. [NEWLINE]Since they have not lost their knowledge about how to make business they may still be useful in other professions though. [NEWLINE]They may become Experts in a profession again.</English>
+        <German>Wenn [LINK=UNIT_EXPERT_TRADER]Ureinwohnerhändler[\LINK] scheitern einen Handelsposten in einem Ureinwohnerdorf einzurichgen, werden sie zu Gescheiterten Ureinwohnerhändler. [NEWLINE]Sie entwickeln eine schlechte Arbeitsmoral. [NEWLINE]Da sie aber nicht ihr Wissen verloren haben, wie man Geschäfte macht, können sie immer noch in anderen Berufen nützlich sein. [NEWLINE]Sie können in einem Beruf wieder zu Experten werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CIGARS</Tag>

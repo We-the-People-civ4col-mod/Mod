@@ -794,6 +794,11 @@
         <Russian>Буквально прошлой весной к нам пришла одна из ваших черных мантий. Но он был груб и к тому же оскорблял наших предков. Так что нам пришлось немного побить его и связать. Возьми его с собой, пока он еще жив. (Забрать разочаровавшегося миссионера)</Russian>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_CHIEF_FAILED_TRADER</Tag>
+        <English>Just last spring one of your traders came to us. But he was trading evil water for our goods and our men became possessed by evil spirits. Our women then became angry and beat him up. Take him with you. (Receive a failed trader)</English>
+        <German>Im letzten Frühjahr kam bereits einer eurer Händler zu uns. Aber er tauschte schlechtes Wasser für unsere Güter. Unser Männer wurde von bösen Geistern bessessen. Daraufhin wurde unsere Frauen wütend and schlugen ihn. Nehmt ihn mit euch. (Gescheiterten Ureinwohnerhändler erhalten)</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_CHIEF_GOODY_EXPERIENCE</Tag>
         <English>We have lived in this world for a long time and have learned in many battles what a warrior needs to survive here. We give you an insight into this knowledge - in the hope that you will stand by us as comrades-in-arms in future battles.</English>
         <French>Laissez nos guerriers vous apprendre nos techniques de combat en signe d'amitié entre nos deux tribus.</French>
