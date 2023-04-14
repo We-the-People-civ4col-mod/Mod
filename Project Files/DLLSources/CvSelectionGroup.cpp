@@ -652,7 +652,7 @@ bool CvSelectionGroup::canStartMission(int iMission, int iData1, int iData2, CvP
 
 		case MISSION_ROUTE_TO:
 			{
-				if (!(pPlot->at(iData1, iData2)) || (getBestBuildRoute(pPlot) != NO_ROUTE))
+				if (!(pPlot->at(iData1, iData2)) || canBuildRoute(pPlot))
 				{
 					return true;
 				}
@@ -661,8 +661,7 @@ bool CvSelectionGroup::canStartMission(int iMission, int iData1, int iData2, CvP
 
 		case MISSION_ROUTE_TO_ROAD:
 			{
-				BuildTypes eBuild;
-				if (!(pPlot->at(iData1, iData2)) || (getBestBuildRoute(pPlot, &eBuild, ROUTE_ROAD) != NO_ROUTE))
+				if (!(pPlot->at(iData1, iData2)) || canBuildRoute(pPlot, ROUTE_ROAD))
 				{
 					return true;
 				}
@@ -671,8 +670,7 @@ bool CvSelectionGroup::canStartMission(int iMission, int iData1, int iData2, CvP
 
 		case MISSION_ROUTE_TO_PLASTERED_ROAD:
 			{
-				BuildTypes eBuild;
-				if (!(pPlot->at(iData1, iData2)) || (getBestBuildRoute(pPlot, &eBuild, ROUTE_PLASTERED_ROAD) != NO_ROUTE))
+				if (!(pPlot->at(iData1, iData2)) || canBuildRoute(pPlot, ROUTE_PLASTERED_ROAD))
 				{
 					return true;
 				}
@@ -1272,7 +1270,7 @@ void CvSelectionGroup::continueMission(int iSteps)
 			case MISSION_ROUTE_TO:
 				if (at(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2))
 				{
-					if (getBestBuildRoute(plot()) == NO_ROUTE)
+					if (!canBuildRoute(plot()))
 					{
 						bDone = true;
 					}
@@ -1282,8 +1280,7 @@ void CvSelectionGroup::continueMission(int iSteps)
 			case MISSION_ROUTE_TO_ROAD:
 				if (at(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2))
 				{
-					BuildTypes eBuild;
-					if (getBestBuildRoute(plot(), &eBuild, ROUTE_ROAD) == NO_ROUTE)
+					if (!canBuildRoute(plot(), ROUTE_ROAD))
 					{
 						bDone = true;
 					}
@@ -1293,8 +1290,7 @@ void CvSelectionGroup::continueMission(int iSteps)
 			case MISSION_ROUTE_TO_PLASTERED_ROAD:
 				if (at(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2))
 				{
-					BuildTypes eBuild;
-					if (getBestBuildRoute(plot(), &eBuild, ROUTE_PLASTERED_ROAD) == NO_ROUTE)
+					if (!canBuildRoute(plot(), ROUTE_ROAD))
 					{
 						bDone = true;
 					}
@@ -2533,36 +2529,69 @@ DomainTypes CvSelectionGroup::getDomainType() const
 }
 
 
+bool CvSelectionGroup::canBuildRoute(CvPlot* pPlot, RouteTypes eRequestedRoute) const
+{
+// if eRequestedRoute == NO_ROUTE, then return true for any route that can be built!
+
+	CLLNode<IDInfo>* pUnitNode = headUnitNode();
+
+	while (pUnitNode != NULL)
+	{
+		const CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = nextUnitNode(pUnitNode);
+
+		for (int iI = 0; iI < GC.getNumBuildInfos(); iI++)
+		{
+			RouteTypes eRoute = ((RouteTypes)(GC.getBuildInfo((BuildTypes) iI).getRoute()));
+			if (eRoute != NO_ROUTE)
+			{
+				if (eRequestedRoute == NO_ROUTE && pLoopUnit->canBuild(pPlot, ((BuildTypes)iI)))
+				{
+					// there is a route type that can be built
+					return true;
+				}
+				if (eRoute == eRequestedRoute && pLoopUnit->canBuild(pPlot, ((BuildTypes)iI)))
+				{
+					// the reqeusted route type can be built
+					return true;
+				}
+			}
+		}
+	}
+	// we have not found a buildable route type
+	return false;
+}
+
+
+BuildTypes CvSelectionGroup::getBestBuildRouteBuild(CvPlot *pPlot, RouteTypes eRequestedRoute) const
+{
+	BuildTypes eBuild;
+	getBestBuildRoute(pPlot, &eBuild, eRequestedRoute);
+	return eBuild;
+}
+
+
 RouteTypes CvSelectionGroup::getBestBuildRoute(CvPlot* pPlot, BuildTypes* peBestBuild, RouteTypes eRequestedRoute) const
 {
 	PROFILE_FUNC();
 
-	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
-	RouteTypes eRoute;
-	RouteTypes eBestRoute;
-	int iValue;
-	int iBestValue;
-	int iI;
-
+	RouteTypes eBestRoute = NO_ROUTE;
+	int iBestValue = 0;
 	if (peBestBuild != NULL)
 	{
 		*peBestBuild = NO_BUILD;
 	}
 
-	iBestValue = 0;
-	eBestRoute = NO_ROUTE;
-
-	pUnitNode = headUnitNode();
+	CLLNode<IDInfo>* pUnitNode = headUnitNode();
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
+		const CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = nextUnitNode(pUnitNode);
 
-		for (iI = 0; iI < GC.getNumBuildInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumBuildInfos(); iI++)
 		{
-			eRoute = ((RouteTypes)(GC.getBuildInfo((BuildTypes) iI).getRoute()));
+			RouteTypes eRoute = ((RouteTypes)(GC.getBuildInfo((BuildTypes) iI).getRoute()));
 
 			if (eRoute != NO_ROUTE)
 			{
@@ -2574,7 +2603,7 @@ RouteTypes CvSelectionGroup::getBestBuildRoute(CvPlot* pPlot, BuildTypes* peBest
 						*peBestBuild = ((BuildTypes)iI);
 						return eRoute;
 					}
-					iValue = GC.getRouteInfo(eRoute).getValue();
+					int iValue = GC.getRouteInfo(eRoute).getValue();
 
 					if (iValue > iBestValue)
 					{
@@ -2962,15 +2991,10 @@ bool CvSelectionGroup::groupPathTo(int iX, int iY, int iFlags)
 // Returns true if move was made...
 bool CvSelectionGroup::groupRouteTo(int iX, int iY, int iFlags, RouteTypes eRequestedRoute)
 {
-	CvPlot* pPlot;
-	RouteTypes eBestRoute;
-	BuildTypes eBestBuild;
-
 	if (!AI_isControlled() || !at(iX, iY) || (getLengthMissionQueue() == 1))
 	{
-		pPlot = plot();
-
-		eBestRoute = getBestBuildRoute(pPlot, &eBestBuild);
+		CvPlot* pPlot = plot();
+		BuildTypes eBestBuild = getBestBuildRouteBuild(pPlot, eRequestedRoute);
 
 		if (eBestBuild != NO_BUILD)
 		{

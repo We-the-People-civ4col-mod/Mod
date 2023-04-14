@@ -99,6 +99,8 @@ public:
 	int getArea() const;
 	CvArea* area() const;
 	DomainTypes getDomainType() const;
+  bool canBuildRoute(CvPlot* pPlot, RouteTypes eRequestedRoute = NO_ROUTE) const;
+  BuildTypes getBestBuildRouteBuild(CvPlot *pPlot, RouteTypes eRequestedRoute) const;
 	RouteTypes getBestBuildRoute(CvPlot* pPlot, BuildTypes* peBestBuild = NULL, RouteTypes eRequestedRoute = NO_ROUTE) const;
 
 	bool groupDeclareWar(CvPlot* pPlot, bool bForce = false);
