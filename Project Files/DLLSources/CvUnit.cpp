@@ -5982,7 +5982,6 @@ void CvUnit::establishMission()
 				UnitTypes FailedMissionaryType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_FAILED_MISSIONARY"));
 				if (FailedMissionaryType != NO_UNIT)
 				{
-					//  WTP, ray, we still need to display a message - your missionary was thrown out because new Mission and became a Failed Missionary
 					CvUnit* FailedMissionaryUnit = oldMissionaryPlayer.initUnit(FailedMissionaryType, GC.getUnitInfo(FailedMissionaryType).getDefaultProfession(), pCity->getX_INLINE(), pCity->getY_INLINE());
 					//  WTP, ray, we still need to display a message - your missionary was thrown out because new Mission and became a Failed Missionary
 					CvWString szBuffer = gDLL->getText("TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_MISSION_REPLACED", plot()->getPlotCity()->getNameKey());
@@ -6035,6 +6034,22 @@ void CvUnit::establishTradePost()
 		gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_TRADE_POST).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
 		// removed the Memory Count because it display strange unfitting since it is not a Mission and there is no special Memory Count for Trade Posts
 		//GET_PLAYER(pCity->getOwnerINLINE()).AI_changeMemoryCount((getOwnerINLINE()), MEMORY_MISSIONARY_FAIL, 1);
+
+		// WTP, ray, Failed Trader - START
+		// we use the same configurations for the survival of Trader as for Missionary
+		if (GC.getGameINLINE().getSorenRandNum(100, "Dis mission roll") < getFailedMissionarySurvivalPercent())
+		{
+			UnitTypes FailedTraderType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_FAILED_TRADER"));
+			// WTP, ray, just for safety
+			if (FailedTraderType != NO_UNIT)
+			{
+				CvUnit* FailedTraderUnit = GET_PLAYER(getOwnerINLINE()).initUnit(FailedTraderType, GC.getUnitInfo(FailedTraderType).getDefaultProfession(), pCity->getX_INLINE(), pCity->getY_INLINE());
+				//  WTP, ray, we still need to display a message - your trader failed and became a Failed Trader
+				CvWString szBuffer = gDLL->getText("TXT_KEY_FAILED_TRADER_SPAWNED_FROM_FAIL", plot()->getPlotCity()->getNameKey());
+				gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_TRADE_POST).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+			}
+		}
+		// WTP, ray, Failed Trader - END
 	}
 	else
 	{
@@ -6054,6 +6069,21 @@ void CvUnit::establishTradePost()
 			CvPlayer& oldTradePostPlayer = GET_PLAYER(pCity->getTradePostPlayer());
 			int attitudeDecreaseForDestroyingTradePost = GC.getDefineINT("OTHER_EUROPEAN_ANGRY_FOR_DESTROYING_TRADE_POST");
 			oldTradePostPlayer.AI_changeAttitudeExtra(getOwnerINLINE(), -attitudeDecreaseForDestroyingTradePost);
+
+			// WTP, ray, Failed Trader - START
+			// we use the same configurations for expelling existing Trader as for Missionary
+			if (GC.getGameINLINE().getSorenRandNum(100, "Dis missal roll") < GC.getDefineINT("EXPELLED_MISSIONARY_SURVIVAL_CHANCE"))
+			{
+				UnitTypes FailedTraderType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_FAILED_TRADER"));
+				if (FailedTraderType != NO_UNIT)
+				{
+					//  WTP, ray, we still need to display a message - your trader was thrown out because new Trader and became a Failed Trader
+					CvUnit* FailedTraderUnit = oldTradePostPlayer.initUnit(FailedTraderType, GC.getUnitInfo(FailedTraderType).getDefaultProfession(), pCity->getX_INLINE(), pCity->getY_INLINE());
+					CvWString szBuffer = gDLL->getText("TXT_KEY_FAILED_TRADER_SPAWNED_FROM_TRADE_POST_REPLACED", plot()->getPlotCity()->getNameKey());
+					gDLL->UI().addPlayerMessage(pCity->getTradePostPlayer(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_TRADE_POST).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+				}
+			}
+			// WTP, ray, Failed Trader - END
 		}
 
 		pCity->setTradePostPlayer(getOwnerINLINE());

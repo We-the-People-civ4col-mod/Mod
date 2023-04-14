@@ -809,6 +809,12 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		GC.getDefinesVarSystem()->SetValue("UNITCLASS_FAILED_MISSIONARY", idx);
 		//Ramstormp, Disillusioned missionary - END
 
+		// WTP, ray, Failed Trader - START
+		SetGlobalDefine("UNITCLASS_FAILED_TRADER", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("UNITCLASS_FAILED_TRADER", idx);
+		// WTP, ray, Failed Trader - END
+
 		// R&R, ray, Revolutionary Noble - START
 		SetGlobalDefine("UNITCLASS_NOBLE", szVal);
 		idx = FindInInfoClass(szVal);
