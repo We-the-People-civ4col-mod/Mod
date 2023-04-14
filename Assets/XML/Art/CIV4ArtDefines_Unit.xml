@@ -1065,8 +1065,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/bishop.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.76</fInterfaceScale>
-            <NIF>Art/Units/Settler/Bishop/christianmissionary.nif</NIF>
-            <KFM>Art/Units/Settler/Bishop/christianmissionary.kfm</KFM>
+            <NIF>Art/Units/Settler/Bishop/Bishop.nif</NIF>
+            <KFM>Art/Units/Settler/Bishop/Bishop.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -1252,8 +1252,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/catholic_priest.dds</FullLengthIcon>
             <fScale>0.49</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/catholic_priest/christianmissionary.nif</NIF>
-            <KFM>Art/Units/Settler/catholic_priest/christianmissionary.kfm</KFM>
+            <NIF>Art/Units/Settler/catholic_priest/Catholic_priest.nif</NIF>
+            <KFM>Art/Units/Settler/catholic_priest/Catholic_priest.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -1269,8 +1269,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/CM_Russian_bishop.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Russian_Orthodox_Bishop/christianmissionary.nif</NIF>
-            <KFM>Art/Units/Settler/Russian_Orthodox_Bishop/christianmissionary.kfm</KFM>
+            <NIF>Art/Units/Settler/Russian_Orthodox_Bishop/Russian_Orthodox_Bishop.nif</NIF>
+            <KFM>Art/Units/Settler/Russian_Orthodox_Bishop/Russian_Orthodox_Bishop.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
