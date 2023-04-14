@@ -51,6 +51,12 @@ enum ProfessionTypes
 	PROFESSION_NATIVE_TRADER,
 };
 
+enum RouteTypes
+{
+	ROUTE_ROAD,
+	ROUTE_PLASTERED_ROAD,
+	ROUTE_RAILROAD,
+};
 
 enum SpecialUnitTypes
 {
