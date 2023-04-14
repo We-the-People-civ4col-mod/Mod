@@ -68220,11 +68220,11 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
-                    <iChange>-2</iChange>
+                    <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
-                    <iChange>-2</iChange>
+                    <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_ROPE</YieldType>
@@ -68272,7 +68272,7 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_LAW</YieldType>
-                    <iChange>1</iChange>
+                    <iChange>-1</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_CROSSES</YieldType>
@@ -68284,7 +68284,7 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_HEALTH</YieldType>
-                    <iChange>1</iChange>
+                    <iChange>-1</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_RAW_SALT</YieldType>
