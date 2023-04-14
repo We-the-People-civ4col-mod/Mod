@@ -292,6 +292,8 @@ enum InterfaceModeTypes
 	INTERFACEMODE_ROUTE_TO,
 	INTERFACEMODE_PYTHON_PICK_PLOT,
 	INTERFACEMODE_SAVE_PLOT_NIFS,
+	INTERFACEMODE_ROUTE_TO_ROAD,
+	INTERFACEMODE_ROUTE_TO_PLASTERED_ROAD,
 
 #ifdef _USRDLL
 	NUM_INTERFACEMODE_TYPES
@@ -613,11 +615,11 @@ enum ButtonPopupTypes
 	BUTTONPOPUP_GOTO_MENU,		// TAC - Goto Menu - koma13
 	// Teacher List - start - Nightinggale
 	BUTTONPOPUP_TEACHER_LIST,
-	// Teacher List - end - Nightinggale	
+	// Teacher List - end - Nightinggale
 	BUTTONPOPUP_SAVE_TRADEGROUP,//R&R mod, vetiarvind, trade groups
 	BUTTONPOPUP_CHOOSE_CITY_PLOT_YIELD,
 	BUTTONPOPUP_NO_EVENT_ON_OK_CLICKED, // use info.setButtonPopupType to this to avoid the ok button from doing anything
-	
+
 	BUTTONPOPUP_START_GAME_CHECK_FAILED,
 
 	// network OOS hunting tools
@@ -2685,7 +2687,7 @@ enum JITarrayTypes
 	JIT_ARRAY_FONT_SYMBOLS,
 	JIT_ARRAY_ETHNICITY,
 	JIT_ARRAY_CITIZEN_STATUS,
-	
+
 	// types used by InfoArray
 	JIT_ARRAY_NO_TYPE,
 	JIT_ARRAY_MODIFIER,

@@ -1615,6 +1615,26 @@ bool CvSelectionGroup::canDoInterfaceMode(InterfaceModeTypes eInterfaceMode)
 				}
 			}
 			break;
+
+		case INTERFACEMODE_ROUTE_TO_ROAD:
+			if (pLoopUnit->workRate(true) > 0)
+			{
+				if (pLoopUnit->canBuildRoute(ROUTE_ROAD))
+				{
+					return true;
+				}
+			}
+			break;
+
+		case INTERFACEMODE_ROUTE_TO_PLASTERED_ROAD:
+			if (pLoopUnit->workRate(true) > 0)
+			{
+				if (pLoopUnit->canBuildRoute(ROUTE_PLASTERED_ROAD))
+				{
+					return true;
+				}
+			}
+			break;
 		}
 
 		pUnitNode = nextUnitNode(pUnitNode);
@@ -2540,17 +2560,17 @@ bool CvSelectionGroup::canBuildRoute(CvPlot* pPlot, RouteTypes eRequestedRoute) 
 		const CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = nextUnitNode(pUnitNode);
 
-		for (int iI = 0; iI < GC.getNumBuildInfos(); iI++)
+		for (BuildTypes eBuild = FIRST_BUILD; eBuild < NUM_BUILD_TYPES; eBuild++)
 		{
-			RouteTypes eRoute = ((RouteTypes)(GC.getBuildInfo((BuildTypes) iI).getRoute()));
+			RouteTypes eRoute = ((RouteTypes)(GC.getBuildInfo(eBuild).getRoute()));
 			if (eRoute != NO_ROUTE)
 			{
-				if (eRequestedRoute == NO_ROUTE && pLoopUnit->canBuild(pPlot, ((BuildTypes)iI)))
+				if (eRequestedRoute == NO_ROUTE && pLoopUnit->canBuild(pPlot, eBuild))
 				{
 					// there is a route type that can be built
 					return true;
 				}
-				if (eRoute == eRequestedRoute && pLoopUnit->canBuild(pPlot, ((BuildTypes)iI)))
+				if (eRoute == eRequestedRoute && pLoopUnit->canBuild(pPlot, eBuild))
 				{
 					// the reqeusted route type can be built
 					return true;
