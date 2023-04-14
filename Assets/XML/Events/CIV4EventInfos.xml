@@ -8912,7 +8912,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<UnitClass>UNITCLASS_WEAVER</UnitClass>
+			<UnitClass>UNITCLASS_MILK_MAID</UnitClass>
 			<iNumFreeUnits>1</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>

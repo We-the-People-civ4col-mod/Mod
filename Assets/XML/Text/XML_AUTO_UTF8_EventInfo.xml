@@ -1749,9 +1749,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SHIPYARD_3</Tag>
-        <English>These harlots surely have nimble fingers. Set each one of them in front of a loom, they can make themselves more useful there. And send one to me now and then with a sample of her work.</English>
-        <French>Ces guignols ont sûrement des doigts habiles. Mettez-les au travail sur le métier à tisser. Ils y seront plus utiles. Et envoyez-moi l'une d'entre elles de temps en temps avec un échantillon de son travail.</French>
-        <German>Diese Dirnen haben doch sicher geschickte Finger. Setzt sie an den Webstuhl, da können sie sich nützlicher machen. Und schickt mir hin und wieder eine mit einer Arbeitsprobe vorbei.</German>
+        <English>These harlots surely have nimble fingers. Send them in the stables to take care of the anmials, they can make themselves more useful there.</English>
+        <French>Ces guignols ont sûrement des doigts habiles. Envoyez-les dans les écuries pour s'occuper des anmials. Ils y seront plus utiles.</French>
+        <German>Diese Dirnen haben doch sicher geschickte mit ihren Händen. Schickt sie in die Ställe, damit sie sich um die Tiere kümmern.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SHIPYARD_4</Tag>
