@@ -36,7 +36,7 @@ void CyEnumsPythonInterface()
 	addEnumValues(MAX_NUM_SYMBOLS      , "FontSymbols"        , NULL               , "MAX_NUM_SYMBOLS"          );
 	addEnumValues(NO_WORLDSIZE         , "WorldSizeTypes"     , "NO_WORLDSIZE"     , "NUM_WORLDSIZE_TYPES"      );
 	addEnumValues(NO_YIELD             , "YieldTypes"         , "NO_YIELD"         , "NUM_YIELD_TYPES"          );
-	
+
 
 	python::enum_<GameStateTypes>("GameStateTypes")
 		.value("GAMESTATE_ON", GAMESTATE_ON)
@@ -398,7 +398,7 @@ void CyEnumsPythonInterface()
 		.value("BUTTONPOPUP_GOTO_MENU", BUTTONPOPUP_GOTO_MENU)		// TAC - Goto Menu - koma13
 		.value("BUTTONPOPUP_PURCHASE_AFRICA_UNIT", BUTTONPOPUP_PURCHASE_AFRICA_UNIT) /*** TRIANGLETRADE 10/15/08 by DPII ***/
 		.value("BUTTONPOPUP_PURCHASE_PORT_ROYAL_UNIT", BUTTONPOPUP_PURCHASE_PORT_ROYAL_UNIT) // R&R, ray, Port Royal
-		.value("BUTTONPOPUP_SAVE_TRADEGROUP", BUTTONPOPUP_SAVE_TRADEGROUP) //R&R mod, vetiarvind, trade groups 
+		.value("BUTTONPOPUP_SAVE_TRADEGROUP", BUTTONPOPUP_SAVE_TRADEGROUP) //R&R mod, vetiarvind, trade groups
 		.value("NUM_BUTTONPOPUP_TYPES", NUM_BUTTONPOPUP_TYPES)
 		;
 	python::enum_<ClimateTypes>("ClimateTypes")
@@ -822,6 +822,8 @@ void CyEnumsPythonInterface()
 		.value("NO_MISSION", NO_MISSION)
 		.value("MISSION_MOVE_TO", MISSION_MOVE_TO)
 		.value("MISSION_ROUTE_TO", MISSION_ROUTE_TO)
+		.value("MISSION_ROUTE_TO_ROAD", MISSION_ROUTE_TO)
+		.value("MISSION_ROUTE_TO_PLASTERED_ROAD", MISSION_ROUTE_TO)
 		.value("MISSION_MOVE_TO_UNIT", MISSION_MOVE_TO_UNIT)
 		.value("MISSION_SKIP", MISSION_SKIP)
 		.value("MISSION_SLEEP", MISSION_SLEEP)

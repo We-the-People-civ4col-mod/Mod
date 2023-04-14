@@ -8837,8 +8837,28 @@ BuildTypes CvUnit::getBuildType() const
 				{
 					return eBuild;
 				}
+				break;
 			}
-			break;
+
+		case MISSION_ROUTE_TO_ROAD:
+			{
+				BuildTypes eBuild;
+				if (pGroup->getBestBuildRoute(plot(), &eBuild, ROUTE_ROAD) != NO_ROUTE)
+				{
+					return eBuild;
+				}
+				break;
+			}
+
+		case MISSION_ROUTE_TO_PLASTERED_ROAD:
+			{
+				BuildTypes eBuild;
+				if (pGroup->getBestBuildRoute(plot(), &eBuild, ROUTE_PLASTERED_ROAD) != NO_ROUTE)
+				{
+					return eBuild;
+				}
+				break;
+			}
 
 		case MISSION_MOVE_TO_UNIT:
 		case MISSION_SKIP:

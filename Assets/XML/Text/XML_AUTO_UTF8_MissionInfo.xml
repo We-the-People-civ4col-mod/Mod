@@ -250,11 +250,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_ROUTE_TO_HELP</Tag>
-        <English>This order causes the pioneer to build a road to the location selected. The pioneer will follow the shortest path to the location. The pioneer wakes when it has completed the assignment.</English>
+        <English>This order causes the pioneer to build the best road available to the location selected. The pioneer will follow the shortest path to the location. The pioneer wakes when it has completed the assignment.</English>
         <French>Ordonne au pionnier de construire une route vers l'endroit indiqué. Il suivra le chemin le plus court et sera à nouveau disponible lorsqu'il aura terminé sa mission.</French>
         <German>Befehlen Sie einem Pionier, eine Straße zur gewählten Position zu bauen. Ihr Pionier wählt nun den kürzesten Weg und wartet nach dem Bau auf weitere Befehle.</German>
         <Italian>Questo comando fa in modo che il pioniere costruisca una strada fino alla destinazione scelta. L'unità seguirà il percorso più breve verso la destinazione e si renderà nuovamente disponibile una volta completato l'incarico.</Italian>
         <Spanish>Con esta orden hacéis que un Pionero construya una carretera al lugar seleccionado. El Pionero seguirá el camino más corto hasta dicho lugar. Se podrá seleccionar cuando haya cumplido su cometido.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISSION_ROUTE_TO_ROAD</Tag>
+        <English>Route to (country road)</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISSION_ROUTE_TO_ROAD_HELP</Tag>
+        <English>This order causes the pioneer to build a country road to the location selected. The pioneer will follow the shortest path to the location. The pioneer wakes when it has completed the assignment.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISSION_ROUTE_TO_PLASTERED_ROAD</Tag>
+        <English>Route to (plastered road)</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISSION_ROUTE_TO_PLASTERED_ROAD_HELP</Tag>
+        <English>This order causes the pioneer to build a plastered road to the location selected. The pioneer will follow the shortest path to the location. The pioneer wakes when it has completed the assignment.</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_SENTRY</Tag>

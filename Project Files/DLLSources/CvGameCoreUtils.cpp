@@ -273,7 +273,7 @@ bool shouldMoveBefore(const CvUnit* pUnitA, const CvUnit* pUnitB)
 
 	const int iMovePriorityA = (pUnitA != NULL) ? pUnitA->AI_getMovePriority() : 0;
 	const int iMovePriorityB = (pUnitB != NULL) ? pUnitB->AI_getMovePriority() : 0;
-	
+
 	const int iDiff = iMovePriorityA - iMovePriorityB;
 	if (iDiff > 0)
 	{
@@ -946,11 +946,11 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 			{
 				return FALSE;
 			}
-		}	
+		}
 		if (!(iFlags & MOVE_IGNORE_DANGER))
 		{
 			if (!isPlotSafe(*pSelectionGroup, iToX, iToY))
-				return FALSE;		
+				return FALSE;
 
 			if (!AI_allowMove(*pSelectionGroup, kToPlot))
 				return FALSE;
@@ -1105,7 +1105,7 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 						else
 						{
 							CvPlot* pAdjacentPlot;
-							
+
 							for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 							{
 								pAdjacentPlot = plotDirection(pToPlot->getX_INLINE(), pToPlot->getY_INLINE(), ((DirectionTypes)iI));
@@ -1134,7 +1134,7 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 							for (iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 							{
 								pAdjacentPlot = plotDirection(pToPlot->getX_INLINE(), pToPlot->getY_INLINE(), ((DirectionTypes)iI));
-								
+
 								if( pAdjacentPlot != NULL )
 								{
 									if (pAdjacentPlot->isOwned() && (atWar(pAdjacentPlot->getTeam(), pSelectionGroup->getHeadTeam()) || (pAdjacentPlot->getTeam() != pLoopUnit->getTeam() && pLoopUnit->isAlwaysHostile(pAdjacentPlot))))
@@ -1488,7 +1488,7 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 					GC.getMAX_HIT_POINTS();
 			}
 
-			/* WTP: Not supported 
+			/* WTP: Not supported
 			if (kToPlot.getExtraMovePathCost() > 0)
 			{
 				iWorstCost += (PATH_MOVEMENT_WEIGHT * kToPlot.getExtraMovePathCost());
@@ -1618,7 +1618,7 @@ int pathValid_join(FAStarNode* parent, FAStarNode* node, CvSelectionGroup* pSele
 	CvMap const& kMap = GC.getMap();
 	CvPlot const& kFromPlot = kMap.getPlot(parent->m_iX, parent->m_iY);
 	CvPlot const& kToPlot = kMap.getPlot(node->m_iX, node->m_iY);
-	// Ship can't cross isthmus 
+	// Ship can't cross isthmus
 	if (pSelectionGroup->getDomainType() == DOMAIN_SEA &&
 		kFromPlot.isWater() && kToPlot.isWater() &&
 		!kMap.getPlot(kFromPlot.getX(), kToPlot.getY()).isWater() &&
@@ -1656,13 +1656,13 @@ int pathValid_source(FAStarNode* parent, CvSelectionGroup* pSelectionGroup, int 
 				return FALSE;
 		}
 	} // </advc.049>
-	
+
 	if (iFlags & MOVE_NO_ENEMY_TERRITORY && kFromPlot.isOwned() &&
 		atWar(kFromPlot.getTeam(), pSelectionGroup->getHeadTeam()))
 		return FALSE;
 
 	bool const bAIControl = pSelectionGroup->AI_isControlled();
-	
+
 	if (bAIControl)
 	{
 		if (parent->m_iData2 > 1 || parent->m_iData1 == 0)
@@ -1788,7 +1788,7 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 	{
 		// K-Mod. I've moved the code from here into separate functions.
 		iMoves = bMoveMaxMoves ? pSelectionGroup->maxMoves() : pSelectionGroup->movesLeft();
-		
+
 		#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 0
 			while (iMoves <= 0)
 			{
@@ -1820,7 +1820,7 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 		//  the original code would consistently underestimate the remaining moves at every step.)
 		#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
 			const bool bNewTurn = iMoves == 0;
- 
+
 			if (bNewTurn)
 			{
 				++iTurns;
@@ -1954,9 +1954,9 @@ int stepValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 	{
 		return FALSE;
 	}
-	
 
-	// Super Forts begin *choke* 
+
+	// Super Forts begin *choke*
 	int iInvalidPlot = gDLL->getFAStarIFace()->GetInfo(finder);
 	if(iInvalidPlot > 0)
 	{
@@ -2044,7 +2044,7 @@ int routeValid(FAStarNode* parent, FAStarNode* node, int data, const void* point
 int coastalRouteValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
 {
 	CvPlot* pNewPlot;
-	
+
 	if (parent == NULL)
 	{
 		return true;
@@ -2071,14 +2071,14 @@ int coastalRouteValid(FAStarNode* parent, FAStarNode* node, int data, const void
 	const TeamTypes eTeam = GET_PLAYER(ePlayer).getTeam();
 
 	if (pNewPlot->isWater() && pNewPlot->isRevealed(eTeam, false) && !pNewPlot->isImpassable())
-	{	
+	{
 		const FeatureTypes featureType = pNewPlot->getFeatureType();
 
 		// Erik: If the plot has a feature it can't be impassable
 		if (featureType != NO_FEATURE)
 		{
 			const CvFeatureInfo& kFeatureInfo = GC.getFeatureInfo(featureType);
-		
+
 			// Erik: Just in case impassable terrain is added to the game (unused in WTP)
 			if (!kFeatureInfo.isImpassable())
 			{
@@ -2305,6 +2305,8 @@ void getMissionTypeString(CvWString& szString, MissionTypes eMissionType)
 
 	case MISSION_MOVE_TO: szString = L"MISSION_MOVE_TO"; break;
 	case MISSION_ROUTE_TO: szString = L"MISSION_ROUTE_TO"; break;
+	case MISSION_ROUTE_TO_ROAD: szString = L"MISSION_ROUTE_TO_ROAD"; break;
+	case MISSION_ROUTE_TO_PLASTERED_ROAD: szString = L"MISSION_ROUTE_TO_PLASTERED_ROAD"; break;
 	case MISSION_MOVE_TO_UNIT: szString = L"MISSION_MOVE_TO_UNIT"; break;
 	case MISSION_SKIP: szString = L"MISSION_SKIP"; break;
 	case MISSION_SLEEP: szString = L"MISSION_SLEEP"; break;
@@ -2451,7 +2453,7 @@ void postLoadGameFixes()
 	CvMap& kMap = GC.getMap();
 	kMap.updateWaterPlotTerrainTypes(); // autodetect lakes
 	const int iNumPlots = kMap.numPlotsINLINE();
-	
+
 	// reset visibility count as it is garbage right now
 	// this might not be needed anymore, but keep it just to be safe
 	// Nightinggale
@@ -2471,18 +2473,18 @@ void postLoadGameFixes()
 	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
 	{
 		// deal with each players' cities
-		
+
 		int iLoop;
 		for (CvCity* pLoopCity = GET_PLAYER(ePlayer).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(ePlayer).nextCity(&iLoop))
 		{
 			pLoopCity->updateSlaveWorkerProductionBonus();
 		}
-		
+
 		CvPlayer& kPlayer = GET_PLAYER(ePlayer);
 
 		// calculate power and assets
 		kPlayer.checkPower(true);
-	
+
 		// prepare list of city professions (aka citizens)
 		if (kPlayer.getCivilizationType() != NO_CIVILIZATION)
 		{
@@ -2490,10 +2492,10 @@ void postLoadGameFixes()
 			// Notes from Nightinggale
 			// The xml data (all files) is ready at the end of CvXMLLoadUtility::readXMLfiles when bFirst is False
 			// CvXMLLoadUtility::readXMLfiles is in CvXMLLoadUtilitySet.cpp
-			// 
+			//
 			// The CivEffect branch affects this in two ways:
 			// 1: it adds CvPlayer::canUseProfession (which might change during the game due to CivEffects)
-			// 2: it adds a class where the intended purpose is precisely what kValidCityJobs does (but it stores ProfessionTypes, not int) 
+			// 2: it adds a class where the intended purpose is precisely what kValidCityJobs does (but it stores ProfessionTypes, not int)
 			//    Combine those two and CvPlayer can generate/cache kValidCityJobs whenever CivEffects change (rare event)
 			//
 			// Proposal: split kValidCityJobs into two and use bIndoorOnly to pick which one to use.
