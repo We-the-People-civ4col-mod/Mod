@@ -117,6 +117,22 @@
         <Russian>Очень тяжелая и долгая работа. Следует выбирать, когда между поселениями уже проложена хотя бы обычная дорога</Russian>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_ROAD</Tag>
+        <English>Route To Mode (country road)</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_ROAD_HELP</Tag>
+        <English>Order the unit to build country roads to the selected tile</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_PLASTERED_ROAD</Tag>
+        <English>Route To Mode (plastered road)</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_PLASTERED_ROAD_HELP</Tag>
+        <English>Order the unit to build plastered roads to the selected tile</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_INTERFACEMODE_SAVE_PLOT_NIFS</Tag>
         <English>????</English>
     </TEXT>
