@@ -351,6 +351,7 @@
     <TEXT>
         <Tag>TXT_KEY_MISC_FROM_LEADER_YIELD</Tag>
         <English>[ICON_BULLET]%d1%F2[TAB]from Leader</English>
+        <Russian>[ICON_BULLET]%d1%F2[TAB]от лидера</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CONSUMED_FOOD</Tag>

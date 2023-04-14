@@ -994,10 +994,12 @@
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_ADVISOR_STATE_HAPPINESS</Tag>
         <English>Happiness</English>
+        <Russian>Счастье</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_ADVISOR_STATE_TEACHER</Tag>
         <English>Education</English>
+        <Russian>Образование</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_ADVISOR_STATE_NATIVE</Tag>
