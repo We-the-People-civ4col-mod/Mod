@@ -14349,7 +14349,7 @@ void CvCity::doOppressometerGrowth()
 		}
 	}
 	// debug message - delete later!
-	// gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_OPPRESSOMETER_GROWTH_CITY", getNameKey(), iOldOppressometer, getOppressometer()), coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO);
+	gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_OPPRESSOMETER_GROWTH_CITY", getNameKey(), iOldOppressometer, getOppressometer()), coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO);
 }
 
 void CvCity::changeOppressometer(int iChange)
