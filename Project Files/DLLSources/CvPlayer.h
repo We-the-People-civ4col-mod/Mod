@@ -1243,6 +1243,7 @@ public:
 	void updateTransportThreshold(YieldTypes eYield);
 	// transport feeder - end - Nightinggale
 	void sortEuropeUnits();
+	void postLoadFixes();
 
 	// Clean this up
 	std::vector<ProfessionTypes> m_validCityJobProfessions;
