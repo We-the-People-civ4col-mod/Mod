@@ -1964,7 +1964,7 @@ bool CvPlayer::isNative() const
 	return GC.getCivilizationInfo(eCivilizationType).isNative();
 }
 
-bool CvPlayer::isColonizer() const
+bool CvPlayer::isColonialNation() const
 {
 	return (getCivCategoryTypes() == CIV_CATEGORY_EUROPEAN);
 }

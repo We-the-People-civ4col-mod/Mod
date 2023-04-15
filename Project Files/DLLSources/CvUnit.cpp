@@ -16715,7 +16715,7 @@ int CvUnit::getDiscriminationFactor() const
 			return 2;
 		}
 	}
-	else if (getOwnerR().isColonizer())
+	else if (getOwnerR().isColonialNation())
 	{
 		if (eEthnicity == ETHNICITY_EUROPEAN)
 		{
