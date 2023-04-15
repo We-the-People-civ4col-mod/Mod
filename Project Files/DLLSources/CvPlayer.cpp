@@ -1966,15 +1966,7 @@ bool CvPlayer::isNative() const
 
 bool CvPlayer::isColonizer() const
 {
-	if (getParent() != NO_PLAYER)
-	{
-		CvPlayer& kParent = GET_PLAYER(getParent());
-		if(kParent.isEurope())
-		{
-			return true;
-		}
-	}
-	return false;
+	return (getCivCategoryTypes() == CIV_CATEGORY_EUROPEAN);
 }
 
 CivCategoryTypes CvPlayer::getCivCategoryTypes() const
