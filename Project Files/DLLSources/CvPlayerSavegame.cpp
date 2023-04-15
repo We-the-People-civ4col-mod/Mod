@@ -110,8 +110,8 @@ const int defaultTotalPlayerAfricaSellProfitModifierInPercent = 0; // WTP, Afric
 const int defaultTotalPlayerPortRoyalSellProfitModifierInPercent = 0; // WTP, Africa and Port Royal Profit Modifiers - START
 const int defaultTotalPlayerDomesticMarketProfitModifierInPercent = 0; // WTP, ray, Domestic Market Profit Modifier - START
 
-const int defaultOppressometerDiscriminationModifier = GC.getOPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_COLONIZERS());
-const int defaultOppressometerForcedLaborModifier = GC.getOPPRESSOMETER_FORCED_LABOR_MODIFIER_BASE());
+const int defaultOppressometerDiscriminationModifier = GLOBAL_DEFINE_OPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_COLONIZERS;
+const int defaultOppressometerForcedLaborModifier = GLOBAL_DEFINE_OPPRESSOMETER_FORCED_LABOR_MODIFIER_BASE;
 
 const unsigned long defaultRandomSeed = 0;
 
@@ -614,11 +614,11 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 
 	if (isNative())
 	{
-		m_iOppressometerDiscriminationModifier = GC.getOPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_NATIVES());
+		m_iOppressometerDiscriminationModifier = GLOBAL_DEFINE_OPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_NATIVES;
 	}
 	else
 	{
-		m_iOppressometerDiscriminationModifier = GC.getOPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_COLONIZERS());
+		m_iOppressometerDiscriminationModifier = GLOBAL_DEFINE_getOPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_COLONIZERS;
 	}
 	m_iOppressometerForcedLaborModifier = defaultOppressometerForcedLaborModifier;
 

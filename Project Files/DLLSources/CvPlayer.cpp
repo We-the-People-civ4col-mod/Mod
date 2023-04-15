@@ -251,13 +251,13 @@ void CvPlayer::init(PlayerTypes eID)
 
 	if(isNative())
 	{
-		m_iOppressometerDiscriminationModifier = GC.getOPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_NATIVES());
+		m_iOppressometerDiscriminationModifier = GLOBAL_DEFINE_OPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_NATIVES;
 	}
 	else
 	{
-		m_iOppressometerDiscriminationModifier = GC.getOPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_COLONIZERS());
+		m_iOppressometerDiscriminationModifier = GLOBAL_DEFINE_OPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_COLONIZERS
 	}
-	m_iOppressometerForcedLaborModifier = GC.getOPPRESSOMETER_FORCED_LABOR_MODIFIER_BASE());
+	m_iOppressometerForcedLaborModifier = GLOBAL_DEFINE_OPPRESSOMETER_FORCED_LABOR_MODIFIER_BASE;
 }
 
 
