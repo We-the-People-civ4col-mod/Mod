@@ -47,8 +47,7 @@ const byte defaulteRiverCrossing = 0;
 enum SavegameVariableTypes
 {
 	Save_END,
-	Save_X,
-	Save_Y,
+	Save_Coordinates,
 	Save_Area,
 	Save_FeatureVarity,
 
@@ -126,8 +125,7 @@ const char* getSavedEnumNamePlot(SavegameVariableTypes eType)
 	switch (eType)
 	{
 	case Save_END: return "Save_END";
-	case Save_X: return "Save_X";
-	case Save_Y: return "Save_Y";
+	case Save_Coordinates: return "Save_Coordinates";
 	case Save_Area: return "Save_Area";
 	case Save_FeatureVarity: return "Save_FeatureVarity";
 
@@ -183,8 +181,6 @@ const char* getSavedEnumNamePlot(SavegameVariableTypes eType)
 // assign everything to default values
 void CvPlot::resetSavedData()
 {
-	// m_iX = defaultX;
-	// m_iY = defaultY;
 	m_coord.set(defaultX, defaultY);
 	m_iArea = defaultArea;
 	m_iFeatureVariety = defaultFeatureVarity;
@@ -250,7 +246,6 @@ void CvPlot::read(CvSavegameReader reader)
 		reader.Read(szClassName);
 	}
 
-	int tempX = defaultX, tempY = defaultY;
 	// loop read all the variables
 	// As long as each variable has a UnitSavegameVariables "header", order doesn't matter.
 	// Variables can be read in any order and any number of variables can be skipped.
@@ -266,8 +261,7 @@ void CvPlot::read(CvSavegameReader reader)
 			bContinue = false;
 			break;
 
-		case Save_X:                       reader.Read(tempX                        ); break;
-		case Save_Y:                       reader.Read(tempY                        ); break;
+		case Save_Coordinates:             reader.Read(m_coord                      ); break;
 		case Save_Area:                    reader.Read(m_iArea                      ); break;
 		case Save_FeatureVarity:           reader.Read(m_iFeatureVariety            ); break;
 
@@ -370,8 +364,6 @@ void CvPlot::read(CvSavegameReader reader)
 		}
 	}
 
-	m_coord.set(tempX, tempY);
-
 	// Loading done. Set up the cache (if any).
 	updateImpassable();
 
@@ -404,8 +396,7 @@ void CvPlot::write(CvSavegameWriter writer)
 	// m_bLayoutStateWorked not saved
 	// m_bImpassable not saved
 
-	writer.Write(Save_X, coord().x(), defaultX);
-	writer.Write(Save_Y, coord().y(), defaultY);
+	writer.Write(Save_Coordinates, m_coord);
 	writer.Write(Save_Area, m_iArea, defaultArea);
 	writer.Write(Save_FeatureVarity, m_iFeatureVariety, defaultFeatureVarity);
 

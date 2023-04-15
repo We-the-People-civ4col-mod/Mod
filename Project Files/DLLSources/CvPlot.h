@@ -522,8 +522,6 @@ protected:
 	void updateImpassable();
 
 	Coordinates m_coord;
-	//short m_iX;
-	//short m_iY;
 	int m_iArea;
 	mutable CvArea *m_pPlotArea;
 	short m_iFeatureVariety;

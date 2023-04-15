@@ -66,8 +66,7 @@ enum SavegameVariableTypes
 	UnitSave_ID,
 	UnitSave_GroupID,
 	UnitSave_HotKeyNumber,
-	UnitSave_X,
-	UnitSave_Y,
+	UnitSave_Coordinates,
 	UnitSave_LastMoveTurn,
 	UnitSave_GameTurnCreated,
 	UnitSave_Damage,
@@ -137,8 +136,7 @@ const char* getSavedEnumNameUnit(SavegameVariableTypes eType)
 	case UnitSave_ID: return "UnitSave_ID";
 	case UnitSave_GroupID: return "UnitSave_GroupID";
 	case UnitSave_HotKeyNumber: return "UnitSave_HotKeyNumber";
-	case UnitSave_X: return "UnitSave_X";
-	case UnitSave_Y: return "UnitSave_Y";
+	case UnitSave_Coordinates: return "UnitSave_Coordinates";
 	case UnitSave_LastMoveTurn: return "UnitSave_LastMoveTurn";
 	case UnitSave_GameTurnCreated: return "UnitSave_GameTurnCreated";
 	case UnitSave_Damage: return "UnitSave_Damage";
@@ -212,8 +210,6 @@ void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool b
 	m_iID = iID;
 	m_iGroupID = defaultGroupID;
 	m_iHotKeyNumber = defaultHotKeyNumber;
-	// m_iX = defaultX;
-	// m_iY = defaultY;
 	m_coord.set(defaultX, defaultY);
 	m_iLastMoveTurn = defaultLastMoveTurn;
 	m_iGameTurnCreated = defaultGameTurnCreated;
@@ -280,8 +276,6 @@ void CvUnit::read(CvSavegameReader reader)
 	// This will ensure that all variables not included in the savegame will have default values
 	reset();
 
-	int tempX = defaultX, tempY = defaultY;
-
 	// loop read all the variables
 	// As long as each variable has a UnitSavegameVariables "header", order doesn't matter.
 	// Variables can be read in any order and any number of variables can be skipped.
@@ -301,8 +295,7 @@ void CvUnit::read(CvSavegameReader reader)
 		case UnitSave_ID: reader.Read(m_iID); break;
 		case UnitSave_GroupID: reader.Read(m_iGroupID); break;
 		case UnitSave_HotKeyNumber: reader.Read(m_iHotKeyNumber); break;
-		case UnitSave_X: reader.Read(tempX); break;
-		case UnitSave_Y: reader.Read(tempY); break;
+		case UnitSave_Coordinates: reader.Read(m_coord); break;
 		case UnitSave_LastMoveTurn: reader.Read(m_iLastMoveTurn); break;
 		case UnitSave_GameTurnCreated: reader.Read(m_iGameTurnCreated); break;
 		case UnitSave_Damage: reader.Read(m_iDamage); break;
@@ -365,8 +358,6 @@ void CvUnit::read(CvSavegameReader reader)
 		}
 	}
 
-	m_coord.set(tempX, tempY);
-
 	// The unit is loaded. Now set up the cache according to the read data.
 
 	FAssert(NO_UNIT != m_eUnitType);
@@ -406,8 +397,7 @@ void CvUnit::write(CvSavegameWriter writer)
 	writer.Write(UnitSave_ID, m_iID, defaultID);
 	writer.Write(UnitSave_GroupID, m_iGroupID, defaultGroupID);
 	writer.Write(UnitSave_HotKeyNumber, m_iHotKeyNumber, defaultHotKeyNumber);
-	writer.Write(UnitSave_X, coord().x(), defaultX);
-	writer.Write(UnitSave_Y, coord().y(), defaultY);
+	writer.Write(UnitSave_Coordinates, m_coord);
 	writer.Write(UnitSave_LastMoveTurn, m_iLastMoveTurn, defaultLastMoveTurn);
 	writer.Write(UnitSave_GameTurnCreated, m_iGameTurnCreated, defaultGameTurnCreated);
 	writer.Write(UnitSave_Damage, m_iDamage, defaultDamage);
