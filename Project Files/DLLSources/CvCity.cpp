@@ -14374,7 +14374,7 @@ void CvCity::changeOppressometerGrowthModifier(int iChange)
 
 void CvCity::doOppressometerDecay()
 {
-	int iOppressometerDecayRate = GC.getGLOBAL_DEFINE_OPPRESSOMETER_DECAY_RATE_BASE(); // (percent value)
+	int iOppressometerDecayRate = GC.getOPPRESSOMETER_DECAY_RATE_BASE(); // (percent value)
 	// start with a flat decay, later this could have modifiers
 	// e.g. high percentage of non-free citizens should decrease decay rate
 	// or FF with some change to it
