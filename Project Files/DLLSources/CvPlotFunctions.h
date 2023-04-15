@@ -197,7 +197,7 @@ public:
 	}
 
 	inline Coordinates neighbour(DirectionTypes direction) const;
-	inline CvPlot* Coordinates::neighbourPlot(DirectionTypes direction) const;
+	inline CvPlot* neighbourPlot(DirectionTypes direction) const;
 	inline bool hasNeighbour(DirectionTypes direction) const;
 
 	CvPlot* plot() const;
