@@ -17,6 +17,7 @@
 
 #include <windows.h>
 #include <stdlib.h>
+#include "FDialogTemplate.h"
 
 #define SAVEGAME_VERSION_CURRENT 1
 
@@ -1853,6 +1854,61 @@ int CvInitCore::getMaxEuropePlayers() const
 	return iNumEuropes;
 }
 
+
+#define IDC_TEXT_MESSAGE 2001
+#define IDC_BUTTON_OK 2002
+
+char szCvInitCoreReadFailureMessage[1024];
+char szCvInitCoreReadFailureTitle[256];
+
+INT_PTR CALLBACK CvInitCoreReadFailureCallback(HWND hDlg, UINT iMsg, WPARAM wParam, LPARAM lParam)
+{
+	switch (iMsg)
+	{
+		case WM_INITDIALOG:
+			{
+				::SetWindowText(hDlg, szCvInitCoreReadFailureTitle);
+				::SetWindowText( ::GetDlgItem(hDlg, IDC_TEXT_MESSAGE), szCvInitCoreReadFailureMessage );
+				::SetFocus( ::GetDlgItem(hDlg, IDC_BUTTON_OK) );
+				break;
+			}
+ 		case WM_COMMAND:
+			{
+				switch(LOWORD(wParam))
+					{
+						case 2002:
+							exit (1);
+						default:
+							break;
+					}
+			}
+	}
+return FALSE;
+}
+
+
+void CvInitCore::showReadFailureMessage(char *szHeader, char* szMessage)
+{
+	CDialogTemplate dialogTemplate(_T(szHeader),
+		DS_SETFONT | DS_CENTER | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU,
+		0, 0, 320, 180, _T("MS Shell Dlg"), 12);
+
+	dialogTemplate.AddStatic(_T(""), WS_VISIBLE, 0,
+		20,20,280, 100, IDC_TEXT_MESSAGE );
+
+	dialogTemplate.AddButton( _T("&OK :("), WS_VISIBLE, 0,
+			232,130,64,16, IDC_BUTTON_OK );
+
+	DialogBoxIndirect(GetModuleHandle(0), dialogTemplate.GetDialogTemplate(), NULL, (DLGPROC)CvInitCoreReadFailureCallback);
+
+	printf(szMessage);
+	while (true)
+	{
+		Sleep(1000);
+	}
+}
+
+
 // There is no reason to add a reading loop and enum because we can't really change the data in CvInitCore
 void CvInitCore::read(FDataStreamBase* pStream)
 {
@@ -1864,14 +1920,10 @@ void CvInitCore::read(FDataStreamBase* pStream)
 
 	if (uiSavegameVersion != SAVEGAME_VERSION_CURRENT)
 	{
-		char szMessage[1024];
 		CvString message = "The savegame format has changed in this version of the mod (savegame version: %d, expected: %d). Sorry, you cannot load an old savegame anymore.\nAs the game is now in an unstable state, we have to exit it. Please restart. Sorry!";
-		sprintf(szMessage, message, uiSavegameVersion, SAVEGAME_VERSION_CURRENT);
-		CvString header = "Savegame version mismatch";
-		gDLL->MessageBox(szMessage, header);
-		printf(szMessage);
-		Sleep(5000);
-		exit (1);
+		sprintf(szCvInitCoreReadFailureMessage, message, uiSavegameVersion, SAVEGAME_VERSION_CURRENT);
+		sprintf(szCvInitCoreReadFailureTitle, "Savegame version mismatch");
+		showReadFailureMessage(szCvInitCoreReadFailureTitle, szCvInitCoreReadFailureMessage);
 	}
 
 	CvSavegameReaderBase readerbase(pStream);
@@ -1971,13 +2023,10 @@ void CvInitCore::read(FDataStreamBase* pStream)
 
 	if (iNumUnitsInSavegame != NUM_UNIT_TYPES)
 	{
-		char szMessage[1024];
 		CvString message = "Number of unit types in savegame (%d) differs from number of unit types in this mod DLL (%d)\nThis is probably caused by updating the mod to an incompatible version. Loading this savegame is impossible for now, sorry! The game will exit in 60 seconds.";
-		sprintf(szMessage, message, iNumUnitsInSavegame, NUM_UNIT_TYPES);
-		CvString header = "Savegame version mismatch";
-		gDLL->MessageBox(szMessage, header);
-		Sleep(5000);
-		exit (1);
+		sprintf(szCvInitCoreReadFailureMessage, message, iNumUnitsInSavegame, NUM_UNIT_TYPES);
+		sprintf(szCvInitCoreReadFailureTitle, "Savegame version mismatch");
+		showReadFailureMessage(szCvInitCoreReadFailureTitle, szCvInitCoreReadFailureMessage);
 	}
 
 	int iNumBuildingsInSavegame;
@@ -1985,14 +2034,10 @@ void CvInitCore::read(FDataStreamBase* pStream)
 
 	if (iNumBuildingsInSavegame != NUM_BUILDING_TYPES)
 	{
-		char szMessage[1024];
 		CvString message = "Number of building types in savegame (%d) differs from number of building types in this mod DLL (%d)\nThis is probably caused by updating the mod to an incompatible version. Loading this savegame is impossible for now, sorry! The game will exit in 60 seconds.";
-		sprintf(szMessage, message, iNumBuildingsInSavegame, NUM_BUILDING_TYPES);
-		CvString header = "Savegame version mismatch";
-		gDLL->MessageBox(szMessage, header);
-		printf(szMessage);
-		Sleep(5000);
-		exit (1);
+		sprintf(szCvInitCoreReadFailureMessage, message, iNumBuildingsInSavegame, NUM_BUILDING_TYPES);
+		sprintf(szCvInitCoreReadFailureTitle, "Savegame version mismatch");
+		showReadFailureMessage(szCvInitCoreReadFailureTitle, szCvInitCoreReadFailureMessage);
 	}
 }
 

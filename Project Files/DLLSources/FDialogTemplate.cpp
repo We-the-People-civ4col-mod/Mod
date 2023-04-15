@@ -28,7 +28,7 @@ CDialogTemplate::CDialogTemplate(LPCSTR caption, DWORD style, int x, int y, int 
 	dialogTemplate->cy    = h;
 	dialogTemplate->cdit  = 0;
 
-	dialogTemplate->dwExtendedStyle = 0;
+	dialogTemplate->dwExtendedStyle = WS_EX_TOPMOST;
 
 	// Assume no menu or special class
 	AppendData(_T("\0"), 2);

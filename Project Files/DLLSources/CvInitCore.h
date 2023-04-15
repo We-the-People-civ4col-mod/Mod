@@ -386,6 +386,9 @@ protected:
 	CvString* m_aszPythonCheck;
 	CvString* m_aszXMLCheck;
 	mutable CvString m_szTempCheck;
+
+protected:
+	void showReadFailureMessage(char *szHeader, char* szMessage);
 };
 
 #endif
