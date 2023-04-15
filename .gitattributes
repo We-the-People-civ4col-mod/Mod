@@ -6,6 +6,9 @@
 *.bak lf
 *.xml lf
 
+# encoded documentation
+*.html lf
+
 # source code
 *.cpp lf
 *.c   lf
