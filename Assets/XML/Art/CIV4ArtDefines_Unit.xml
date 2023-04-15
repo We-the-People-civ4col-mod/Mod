@@ -78,8 +78,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/CM_city_founder.dds</FullLengthIcon>
             <fScale>0.54</fScale>
             <fInterfaceScale>0.90</fInterfaceScale>
-            <NIF>Art/Units/settler/city_founder/greatmerchantancient.nif</NIF>
-            <KFM>Art/Units/settler/city_founder/greatmerchantancient.kfm</KFM>
+            <NIF>Art/Units/settler/city_founder/city_founder.nif</NIF>
+            <KFM>Art/Units/settler/city_founder/city_founder.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -800,8 +800,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/butcher.dds</FullLengthIcon>
             <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/butcher/Expert_Silver_Miner.nif</NIF>
-            <KFM>Art/Units/Settler/butcher/Expert_Silver_Miner.kfm</KFM>
+            <NIF>Art/Units/Settler/butcher/Butcher.nif</NIF>
+            <KFM>Art/Units/Settler/butcher/Butcher.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -1048,8 +1048,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/surgeon.dds</FullLengthIcon>
             <fScale>0.55</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/doctor/Indentured_Servant.nif</NIF>
-            <KFM>Art/Units/Settler/doctor/Indentured_Servant.kfm</KFM>
+            <NIF>Art/Units/Settler/doctor/doctor.nif</NIF>
+            <KFM>Art/Units/Settler/doctor/doctor.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
