@@ -191,7 +191,7 @@
         <English>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]: Oppressometer has increased from %d2 to %d3</English>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_OPPRESSOMETER_GROWTH_CITY</Tag>
-        <English>[COLOR_SELECTED_TEXT]%s1_player[COLOR_REVERT]: Oppressometer has increased from %d2 to %d3</English>
+        <Tag>TXT_KEY_OPPRESSOMETER_RECALCULATION_PLAYER</Tag>
+        <English>Your total Oppressometer has increased from %d1 to %d2</English>
     </TEXT>
 </Civ4GameText>

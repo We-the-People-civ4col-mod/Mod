@@ -255,9 +255,10 @@ void CvPlayer::init(PlayerTypes eID)
 	}
 	else
 	{
-		m_iOppressometerDiscriminationModifier = GLOBAL_DEFINE_OPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_COLONIZERS
+		m_iOppressometerDiscriminationModifier = GLOBAL_DEFINE_OPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_COLONIZERS;
 	}
 	m_iOppressometerForcedLaborModifier = GLOBAL_DEFINE_OPPRESSOMETER_FORCED_LABOR_MODIFIER_BASE;
+	m_lPlayerOppressometer = 0l;
 }
 
 
@@ -24666,16 +24667,26 @@ void CvPlayer::changeOppressometerForcedLaborModifier(int iChange)
 
 void CvPlayer::recalculatePlayerOppressometer()
 {
-	const int iOldPlayerOppressometer = m_iPlayerOppressometer;
-	m_iPlayerOppressometer = 0;
+	long long lOldPlayerOppressometer = m_lPlayerOppressometer;
+	m_lPlayerOppressometer = 0;
 	int iLoop;
 	for (CvCity *pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
-		m_iPlayerOppressometer += pLoopCity->getOppressometer();
+		m_lPlayerOppressometer += pLoopCity->getOppressometer();
+	}
+
+	// capping to MAX_INT because possibly the game can not handle larger numbers
+	if (m_lPlayerOppressometer > MAX_INT)
+	{
+		m_lPlayerOppressometer = MAX_INT;
+	}
+	if (lOldPlayerOppressometer > MAX_INT)
+	{
+		lOldPlayerOppressometer = MAX_INT;
 	}
 
 	// debug message - delete later!
-	gDLL->UI().addPlayerMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_OPPRESSOMETER_RECALCULATION_PLAYER", iOldPlayerOppressometer, getPlayerOppressometer()), Coordinates::invalidCoord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO);
+	gDLL->UI().addPlayerMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_OPPRESSOMETER_RECALCULATION_PLAYER", static_cast<int>(lOldPlayerOppressometer), static_cast<int>(getPlayerOppressometer())), Coordinates::invalidCoord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO);
 }
 
 void CvPlayer::read(FDataStreamBase* pStream)

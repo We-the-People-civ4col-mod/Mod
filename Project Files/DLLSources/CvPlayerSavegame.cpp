@@ -618,7 +618,7 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	}
 	else
 	{
-		m_iOppressometerDiscriminationModifier = GLOBAL_DEFINE_getOPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_COLONIZERS;
+		m_iOppressometerDiscriminationModifier = GLOBAL_DEFINE_OPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_COLONIZERS;
 	}
 	m_iOppressometerForcedLaborModifier = defaultOppressometerForcedLaborModifier;
 
