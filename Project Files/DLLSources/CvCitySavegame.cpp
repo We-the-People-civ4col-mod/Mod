@@ -776,8 +776,8 @@ void CvCity::write(CvSavegameWriter writer)
 
 	writer.Write(CitySave_WorkingPlot, m_em_iWorkingPlot);
 
-	writer.Write(CitySave_Oppressometer, m_iOppressometer);
-	writer.Write(CitySave_OppressometerGrowthModifier, m_iOppressometerGrowthModifier);
+	writer.Write(CitySave_Oppressometer, m_iOppressometer, defaultOppressometer);
+	writer.Write(CitySave_OppressometerGrowthModifier, m_iOppressometerGrowthModifier, defaultOppressometerGrowthModifier);
 
 	writer.Write(CitySave_END);
 }

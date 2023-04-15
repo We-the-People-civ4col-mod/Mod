@@ -1178,8 +1178,11 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_chievesTurn, m_achievesTurn);
 	writer.Write(PlayerSave_triggersFired, m_triggersFired);
 
+	// don't set a default here, this might have different defaults for different player types
 	writer.Write(PlayerSave_OppressometerDiscriminationModifier, m_iOppressometerDiscriminationModifier);
+	// don't set a default here, this might have different defaults for different player types
 	writer.Write(PlayerSave_OppressometerForcedLaborModifier, m_iOppressometerForcedLaborModifier);
+
 
 	// forces a cache update on read
 	// Anything relying on CivEffect should be below this
