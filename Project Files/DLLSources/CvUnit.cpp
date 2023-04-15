@@ -7313,7 +7313,7 @@ bool CvUnit::doFoundCheckNatives()
 	{
 		PlayerTypes eNativeOwner = NO_PLAYER;
 		int iCost = 0;
-		for (int i = 0; i < NUM_CITY_PLOTS_RADIUS_1; ++i) // R&R, ray, 2 Plot Radius
+		for (int i = 0; i < NUM_CITY_PLOTS_1_PLOT; ++i) // R&R, ray, 2 Plot Radius
 		{
 			CvPlot* pLoopPlot = ::plotCity(getX_INLINE(), getY_INLINE(), i);
 			if (pLoopPlot != NULL)
@@ -7375,7 +7375,7 @@ bool CvUnit::doAcquireCheckNatives()
 	{
 		PlayerTypes eNativeOwner = NO_PLAYER;
 		int iCost = 0;
-		for (int i = 0; i < NUM_CITY_PLOTS_RADIUS_1; ++i) // R&R, ray, 2 Plot Radius
+		for (int i = 0; i < NUM_CITY_PLOTS_1_PLOT; ++i) // R&R, ray, 2 Plot Radius
 		{
 			CvPlot* pLoopPlot = ::plotCity(getX_INLINE(), getY_INLINE(), i);
 			if (pLoopPlot != NULL)
@@ -7460,7 +7460,7 @@ bool CvUnit::doFound(bool bBuyLand)
 	bool bIsFirstCity = (GET_PLAYER(getOwnerINLINE()).getNumCities() == 0);
 	if (bBuyLand || bIsFirstCity)
 	{
-		for (int i = 0; i < NUM_CITY_PLOTS_RADIUS_1; ++i) // R&R, ray, 2 Plot Radius
+		for (int i = 0; i < NUM_CITY_PLOTS_1_PLOT; ++i) // R&R, ray, 2 Plot Radius
 		{
 			CvPlot* pLoopPlot = ::plotCity(getX_INLINE(), getY_INLINE(), i);
 			if (pLoopPlot != NULL)

@@ -2800,7 +2800,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 			}
 			else
 			{
-				bool bWorkingPlot = pCity->isUnitWorkingPlot(pPlot);
+				bool bWorkingPlot = pCity->isPlotProducingYields(pPlot);
 
 				if (bWorkingPlot)
 					szTempBuffer.Format( SETCOLR L"\n%s is working" ENDCOLR, TEXT_COLOR("COLOR_ALT_HIGHLIGHT_TEXT"), pCity->getName().GetCString());
@@ -3315,12 +3315,12 @@ void CvGameTextMgr::setCityPlotYieldValueString(CvWStringBuffer &szString, CvCit
 	CvPlot* pPlot = NULL;
 
 	if (iIndex >= 0 && iIndex < NUM_CITY_PLOTS)
-		pPlot = pCity->getCityIndexPlot(iIndex);
+		pPlot = pCity->getCityIndexPlot((CityPlotTypes)iIndex);
 
 	if (pPlot != NULL)
 	{
 		CvCityAI* pCityAI = static_cast<CvCityAI*>(pCity);
-		bool bWorkingPlot = pCity->isUnitWorkingPlot(iIndex);
+		bool bWorkingPlot = pCity->isPlotProducingYields((CityPlotTypes)iIndex);
 
 		int iValue = pCityAI->AI_plotValue(pPlot, bAvoidGrowth, /*bRemove*/ bWorkingPlot, bIgnoreFood, bIgnoreGrowth);
 
@@ -8517,7 +8517,7 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 	int iCityPlotYield = 0;
 	for (int i = 0; i < NUM_CITY_PLOTS; ++i)
 	{
-		CvPlot* pPlot = city.getCityIndexPlot(i);
+		CvPlot* pPlot = city.getCityIndexPlot((CityPlotTypes)i);
 		if (pPlot != NULL)
 		{
 			if (i == CITY_HOME_PLOT)
@@ -8526,7 +8526,7 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 			}
 			else
 			{	
-				CvUnit* pUnit = city.getUnitWorkingPlot(i);
+				CvUnit* pUnit = city.getUnitWorkingPlot((CityPlotTypes)i);
 				//WTP, ray, Slave Hunter and Slave Master - START
 				int Modifier = 100; 
 				int iSlaveWorkerProductionBonus = city.getSlaveWorkerProductionBonus(); 

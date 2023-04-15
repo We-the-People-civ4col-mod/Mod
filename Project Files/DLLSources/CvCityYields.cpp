@@ -28,7 +28,7 @@ int CvCityYields::getBaseRawYieldProduced(YieldTypes eYieldType) const
 	{
 		return 0;
 	}
-	
+
 
 	int iIndoor = getBaseRawYieldProducedIndoor(eYieldType);
 	int iOutdoor = getBaseRawYieldProducedPlots(eYieldType);
@@ -88,12 +88,12 @@ int CvCityYields::getBaseRawYieldProducedPlots(YieldTypes eYieldType) const
 	}
 
 	int iPlotYieldProduction = 0;
-	for (int i = 0; i < NUM_CITY_PLOTS; ++i)
+	FOREACH(CityPlot)
 	{
-		CvPlot* pPlot = m_city.getCityIndexPlot(i);
+		CvPlot* pPlot = m_city.getCityIndexPlot(eLoopCityPlot);
 		if (pPlot != NULL)
 		{
-			if (m_city.isUnitWorkingPlot(i))
+			if (m_city.isPlotProducingYields(eLoopCityPlot))
 			{
 				//WTP, ray, Slave Hunter and Slave Master - START
 				//iPlotYieldProduction += pPlot->getYield(eYieldType);

@@ -157,6 +157,7 @@ enum RotationTypes
 enum CityPlotTypes
 {
 	NO_CITY_PLOT = -1,
+	CITY_HOME_PLOT = 0,
 	FIRST_CITY_PLOT = 0,
 
 	NUM_CITY_PLOTS_1_PLOT = 9,

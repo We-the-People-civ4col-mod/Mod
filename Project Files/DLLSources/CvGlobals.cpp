@@ -442,7 +442,7 @@ void CvGlobals::init()
 		0,	// CARDINALDIRECTION_WEST
 	};
 
-	int aiCityPlotY[NUM_CITY_PLOTS_RADIUS_2] =
+	int aiCityPlotY[NUM_CITY_PLOTS_2_PLOTS] =
 	{
 		0,
 		0, 1, 1, 1, 0,-1,-1,-1,
@@ -450,7 +450,7 @@ void CvGlobals::init()
 		2, 2,-2,-2, // R&R, ray, 2 Plot Radius
 	};
 
-	int aiCityPlotX[NUM_CITY_PLOTS_RADIUS_2] =
+	int aiCityPlotX[NUM_CITY_PLOTS_2_PLOTS] =
 	{
 		0,
 		1, 1, 0,-1,-1,-1, 0, 1,
@@ -458,7 +458,7 @@ void CvGlobals::init()
 		2,-2,-2, 2, // R&R, ray, 2 Plot Radius
 	};
 
-	int aiCityPlotPriority[NUM_CITY_PLOTS_RADIUS_2] =
+	int aiCityPlotPriority[NUM_CITY_PLOTS_2_PLOTS] =
 	{
 		0,
 		1, 2, 1, 2, 1, 2, 1, 2,

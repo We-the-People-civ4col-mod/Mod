@@ -72,7 +72,7 @@ int CyCity::getCityPlotIndex(CyPlot* pPlot)
 
 CyPlot* CyCity::getCityIndexPlot(int iIndex)
 {
-	return m_pCity ? new CyPlot(m_pCity->getCityIndexPlot(iIndex)) : NULL;
+	return m_pCity ? new CyPlot(m_pCity->getCityIndexPlot(static_cast<CityPlotTypes>(iIndex))) : NULL;
 }
 
 bool CyCity::canWork(CyPlot* pPlot)
@@ -804,7 +804,7 @@ void CyCity::changeCulture(int /*PlayerTypes*/ eIndex, int iChange, bool bPlots)
 int CyCity::getTotalYieldStored() const
 {
 	return m_pCity ? m_pCity->getTotalYieldStored() : -1;
-}		
+}
 
 int CyCity::getYieldStored(int /*YieldTypes*/ eYield) const
 {
@@ -857,7 +857,7 @@ int CyCity::getYieldDemand(int /*YieldTypes*/ eYield) const
 	return -1;
 }
 //R&R, Robert Surcouf, Domestic Market display END
-	
+
 bool CyCity::isEverOwned(int /*PlayerTypes*/ eIndex)
 {
 	return m_pCity ? m_pCity->isEverOwned((PlayerTypes)eIndex) : false;
@@ -1515,7 +1515,7 @@ bool CyCity::isEuropeAccessable() const
 
 CyUnit* CyCity::getUnitWorkingPlot(int iPlotIndex)
 {
-	return m_pCity ? new CyUnit(m_pCity->getUnitWorkingPlot(iPlotIndex)) : NULL;
+	return m_pCity ? new CyUnit(m_pCity->getUnitWorkingPlot(static_cast<CityPlotTypes>(iPlotIndex))) : NULL;
 }
 
 void CyCity::addPopulationUnit(CyUnit* pUnit, int /*ProfessionTypes*/ eProfession)
@@ -1577,7 +1577,7 @@ int CyCity::getMaintainLevel(int /*YieldTypes*/ eYield) const
 {
 	return m_pCity ? m_pCity->getMaintainLevel((YieldTypes) eYield) : -1;
 }
-// R&R mod, vetiarvind, max yield import limit - start			
+// R&R mod, vetiarvind, max yield import limit - start
 int CyCity::getImportsLimit(int /*YieldTypes*/ eYield) const
 {
 	return m_pCity ? m_pCity->getImportsLimit((YieldTypes) eYield) : -1;
@@ -1611,6 +1611,6 @@ python::tuple CyCity::isOrderWaitingForYield(int /*YieldTypes*/ eYield)
 			return python::make_tuple(aOrders[0].first, aOrders[0].second);
 		}
 	}
-	
+
 	return python::make_tuple();
 }

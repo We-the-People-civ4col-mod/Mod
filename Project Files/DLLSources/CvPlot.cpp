@@ -1581,7 +1581,7 @@ bool CvPlot::canSeePlot(const CvPlot *pPlot, TeamTypes eTeam, int iRange, Direct
 	//find displacement and apply world wrap
 	const int dx = dxWrap(pPlot->getX() - getX());
 	const int dy = dyWrap(pPlot->getY() - getY());
-	
+
 	//check if in facing direction
 	if (shouldProcessDisplacementPlot(dx, dy, eFacingDirection))
 	{
@@ -2018,9 +2018,9 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 
 		if (isLivestockImprovment)
 		{
-			for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+			FOREACH(CityPlot)
 			{
-				CvPlot* const pLoopPlot = pWorkingCity->getCityIndexPlot(iI);
+				CvPlot* const pLoopPlot = pWorkingCity->getCityIndexPlot(eLoopCityPlot);
 				if (pLoopPlot != NULL)
 				{
 					if (pLoopPlot->getImprovementType() == eImprovement)
@@ -4235,7 +4235,7 @@ bool CvPlot::isBeingWorked() const
 
 	if (pWorkingCity != NULL)
 	{
-		return pWorkingCity->isUnitWorkingPlot(this);
+		return pWorkingCity->isPlotProducingYields(this);
 	}
 
 	return false;

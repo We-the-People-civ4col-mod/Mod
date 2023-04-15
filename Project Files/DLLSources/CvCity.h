@@ -85,7 +85,7 @@ public:
 	DllExport void chooseProduction(UnitTypes eTrainUnit = NO_UNIT, BuildingTypes eConstructBuilding = NO_BUILDING, bool bFinish = false, bool bFront = false);
 
 	DllExport int getCityPlotIndex(const CvPlot* pPlot) const;
-	CvPlot* getCityIndexPlot(int iIndex) const;
+	CvPlot* getCityIndexPlot(CityPlotTypes eCityPlot) const;
 
 	bool canWork(const CvPlot* pPlot) const;
 	void verifyWorkingPlot(int iPlotIndex);
@@ -427,11 +427,11 @@ public:
 	int getFreePromotionCount(PromotionTypes eIndex) const;
 	bool isFreePromotion(PromotionTypes eIndex) const;
 	void changeFreePromotionCount(PromotionTypes eIndex, int iChange);
-	CvUnit* getUnitWorkingPlot(int iPlotIndex) const;
-	bool isUnitWorkingPlot(int iPlotIndex) const;
+	CvUnit* getUnitWorkingPlot(CityPlotTypes ePlotIndex) const;
+	bool isPlotProducingYields(CityPlotTypes ePlotIndex) const;
 	bool isUnitWorkingAnyPlot(const CvUnit* pUnit) const;
 	CvUnit* getUnitWorkingPlot(const CvPlot* pPlot) const;
-	bool isUnitWorkingPlot(const CvPlot* pPlot) const;
+	bool isPlotProducingYields(const CvPlot* pPlot) const;
 	void clearUnitWorkingPlot(int iPlotIndex);
 	void clearUnitWorkingPlot(CvPlot* pPlot);
 	void alterUnitWorkingPlot(int iPlotIndex, int iUnitId, bool bAskProfession);

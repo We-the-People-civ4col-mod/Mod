@@ -162,7 +162,7 @@ void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, CvWidgetDataStruct &w
 			widgetDataStruct.m_iData1 = widgetDataStruct.m_iData2;
 			widgetDataStruct.m_iData2 = 1;
 		}
-		// fallthrough 
+		// fallthrough
 
 	case WIDGET_EJECT_CITIZEN:
 		parseEjectCitizenHelp(widgetDataStruct, szBuffer);
@@ -2469,7 +2469,7 @@ void CvDLLWidgetData::parseCityPlotHelp(CvWidgetDataStruct &widgetDataStruct, Cv
     }
     if (pCity != NULL)
     {
-        CvPlot* pPlot = pCity->getCityIndexPlot(widgetDataStruct.m_iData1);
+        CvPlot* pPlot = pCity->getCityIndexPlot(static_cast<CityPlotTypes>(widgetDataStruct.m_iData1));
         if (NULL == pPlot)
         {
 			return;
@@ -4510,7 +4510,7 @@ void CvDLLWidgetData::doAssignCitizenToPlot(CvCity* pCity, int iPlotIndex, int i
 	{
 		if (pCity->getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
 		{
-			CvUnit* pOtherUnit = pCity->getUnitWorkingPlot(iPlotIndex);
+			CvUnit* pOtherUnit = pCity->getUnitWorkingPlot(static_cast<CityPlotTypes>(iPlotIndex));
 			if (pOtherUnit != NULL)
 			{
 				gDLL->sendDoTask(pCity->getID(), TASK_REPLACE_CITIZEN, iUnitId, pOtherUnit->getID(), true, false, false, false);

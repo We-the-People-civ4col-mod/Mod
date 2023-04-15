@@ -13624,11 +13624,11 @@ EventTriggeredData* CvPlayer::initTriggeredData(EventTriggerTypes eEventTrigger,
 		{
 			if (bPickPlot)
 			{
-				for (int iPlot = 0; iPlot < NUM_CITY_PLOTS; ++iPlot)
+				FOREACH(CityPlot)
 				{
-					if (CITY_HOME_PLOT != iPlot)
+					if (eLoopCityPlot != CITY_HOME_PLOT)
 					{
-						CvPlot* pLoopPlot = pCity->getCityIndexPlot(iPlot);
+						CvPlot* pLoopPlot = pCity->getCityIndexPlot(eLoopCityPlot);
 
 						if (NULL != pLoopPlot)
 						{
