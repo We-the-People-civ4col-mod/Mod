@@ -1685,6 +1685,27 @@
         <Russian>Наконец-то он приехал! Адмирал, давно обещанный Короной, станет новым командующим вашего флота![NEWLINE][NEWLINE]Сможет ли он превратить разношерстную компанию в хорошо обученных моряков, способных противостоять непогоде, пиратам и флотилиям иностранных правителей?[NEWLINE][NEWLINE]Вы искренне на это надеетесь, потому что без связи с домом — без флота — это приключение в Новом Свете закончится слишком быстро![NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_CAPABLE_CAPTAIN</Tag>
+        <English>Your first able captain</English>
+        <French>Your first able captain</French>
+        <German>Euer erster Fähiger Kapitän</German>
+        <Russian>Your first able captain</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_CAPABLE_CAPTAIN_HEAD</Tag>
+        <English>A master and commander</English>
+        <French>A master and commander</French>
+        <German>Ein Kapitän für Eure Schiffe</German>
+        <Russian>A master and commander</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_CAPABLE_CAPTAIN_TEXT</Tag>
+        <English>Evey ship needs a captain. Today you were able to hire a particular experienced sailor![NEWLINE][NEWLINE]They say a ship is only as good as its captain. Many brave men learn the seamen's business, but not everyone has leadership qualities. Many a drunkard has set his ship on the nearest rock or bullied his crew. But here and now you could recruit a true expert of the sea. Pay him well before he changes sides![NEWLINE][NEWLINE]</English>
+        <French>Evey ship needs a captain. Today you were able to hire a particular experienced sailor![NEWLINE][NEWLINE]They say a ship is only as good as its captain. Many brave men learn the seamen's business, but not everyone has leadership qualities. Many a drunkard has set his ship on the nearest rock or bullied his crew. But here and now you could recruit a true expert of the sea. Pay him well before he changes sides![NEWLINE][NEWLINE]</French>
+        <German>Jedes Schiff braucht einen Kapitän. Heute konntet ihr einen besonders erfahrenen Seemann verpflichten![NEWLINE][NEWLINE]Man sagt ein Schiff ist nur so gut wie sein Kapitän. Viele tapfere Männer erlernen das Seemandshandwerk, aber nicht jeder hat Führungspersöhnlichkeit. Schon so mancher Trunkenbold hat sein Schiff auf den nächstbesten Felsen gesetzt oder seine Mannschaft tyrannisiert. Aber hier und heute konntet ihr einen wahren Fachmann der See anwerben. Bezahlt ihn gut, bevor er die Seiten wechselt![NEWLINE][NEWLINE]</German>
+        <Russian>Evey ship needs a captain. Today you were able to hire a particular experienced sailor![NEWLINE][NEWLINE]They say a ship is only as good as its captain. Many brave men learn the seamen's business, but not everyone has leadership qualities. Many a drunkard has set his ship on the nearest rock or bullied his crew. But here and now you could recruit a true expert of the sea. Pay him well before he changes sides![NEWLINE][NEWLINE]</Russian>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_WAREHOUSES</Tag>
         <English>Many warehouses (3)</English>
         <French>Trois entrepôts</French>
