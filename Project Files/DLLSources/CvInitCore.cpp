@@ -1891,13 +1891,13 @@ void CvInitCore::showReadFailureMessage(char *szHeader, char* szMessage)
 {
 	CDialogTemplate dialogTemplate(_T(szHeader),
 		DS_SETFONT | DS_CENTER | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU,
-		0, 0, 320, 180, _T("MS Shell Dlg"), 12);
+		0, 0, 200, 120, _T("MS Shell Dlg"), 11);
 
 	dialogTemplate.AddStatic(_T(""), WS_VISIBLE, 0,
-		20,20,280, 100, IDC_TEXT_MESSAGE );
+		10, 10, 140, 70, IDC_TEXT_MESSAGE );
 
 	dialogTemplate.AddButton( _T("&OK :("), WS_VISIBLE, 0,
-			232,130,64,16, IDC_BUTTON_OK );
+		130, 90, 60, 16, IDC_BUTTON_OK );
 
 	DialogBoxIndirect(GetModuleHandle(0), dialogTemplate.GetDialogTemplate(), NULL, (DLGPROC)CvInitCoreReadFailureCallback);
 
@@ -1920,7 +1920,7 @@ void CvInitCore::read(FDataStreamBase* pStream)
 
 	if (uiSavegameVersion != SAVEGAME_VERSION_CURRENT)
 	{
-		CvString message = "The savegame format has changed in this version of the mod (savegame version: %d, expected: %d). Sorry, you cannot load an old savegame anymore.\nAs the game is now in an unstable state, we have to exit it. Please restart. Sorry!";
+		CvString message = "The savegame format has changed in this version of the mod (savegame version: %d, expected: %d).\n\nSorry, you cannot load an old savegame anymore.\nAs the game is now in an unstable state, we have to exit it. Please restart. Sorry!";
 		sprintf(szCvInitCoreReadFailureMessage, message, uiSavegameVersion, SAVEGAME_VERSION_CURRENT);
 		sprintf(szCvInitCoreReadFailureTitle, "Savegame version mismatch");
 		showReadFailureMessage(szCvInitCoreReadFailureTitle, szCvInitCoreReadFailureMessage);
@@ -2023,7 +2023,7 @@ void CvInitCore::read(FDataStreamBase* pStream)
 
 	if (iNumUnitsInSavegame != NUM_UNIT_TYPES)
 	{
-		CvString message = "Number of unit types in savegame (%d) differs from number of unit types in this mod DLL (%d)\nThis is probably caused by updating the mod to an incompatible version. Loading this savegame is impossible for now, sorry! The game will exit in 60 seconds.";
+		CvString message = "Number of unit types in savegame (%d) differs from number of unit types in this mod DLL (%d)\n\nThis is probably caused by updating the mod to an incompatible version. Loading this savegame is impossible for now, sorry!\nAs the game is now in an unstable state, we have to exit it. Please restart. Sorry!";
 		sprintf(szCvInitCoreReadFailureMessage, message, iNumUnitsInSavegame, NUM_UNIT_TYPES);
 		sprintf(szCvInitCoreReadFailureTitle, "Savegame version mismatch");
 		showReadFailureMessage(szCvInitCoreReadFailureTitle, szCvInitCoreReadFailureMessage);
@@ -2034,7 +2034,7 @@ void CvInitCore::read(FDataStreamBase* pStream)
 
 	if (iNumBuildingsInSavegame != NUM_BUILDING_TYPES)
 	{
-		CvString message = "Number of building types in savegame (%d) differs from number of building types in this mod DLL (%d)\nThis is probably caused by updating the mod to an incompatible version. Loading this savegame is impossible for now, sorry! The game will exit in 60 seconds.";
+		CvString message = "Number of building types in savegame (%d) differs from number of building types in this mod DLL (%d)\n\nThis is probably caused by updating the mod to an incompatible version. Loading this savegame is impossible for now, sorry!\nAs the game is now in an unstable state, we have to exit it. Please restart. Sorry!";
 		sprintf(szCvInitCoreReadFailureMessage, message, iNumBuildingsInSavegame, NUM_BUILDING_TYPES);
 		sprintf(szCvInitCoreReadFailureTitle, "Savegame version mismatch");
 		showReadFailureMessage(szCvInitCoreReadFailureTitle, szCvInitCoreReadFailureMessage);
