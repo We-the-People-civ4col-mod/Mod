@@ -612,14 +612,7 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_eParent= defaultParent;
 	m_eImmigrationConversion= defaultImmigrationConversion;
 
-	if (isNative())
-	{
-		m_iOppressometerDiscriminationModifier = GLOBAL_DEFINE_OPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_NATIVES;
-	}
-	else
-	{
-		m_iOppressometerDiscriminationModifier = GLOBAL_DEFINE_OPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_COLONIZERS;
-	}
+	m_iOppressometerDiscriminationModifier = defaultOppressometerDiscriminationModifier;
 	m_iOppressometerForcedLaborModifier = defaultOppressometerForcedLaborModifier;
 
 	m_em_iLandPlotYield.reset();

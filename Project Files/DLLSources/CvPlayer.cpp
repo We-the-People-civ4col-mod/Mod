@@ -249,14 +249,7 @@ void CvPlayer::init(PlayerTypes eID)
 
 	Update_cache_YieldEquipmentAmount(); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 
-	if(isNative())
-	{
-		m_iOppressometerDiscriminationModifier = GLOBAL_DEFINE_OPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_NATIVES;
-	}
-	else
-	{
-		m_iOppressometerDiscriminationModifier = GLOBAL_DEFINE_OPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_COLONIZERS;
-	}
+	m_iOppressometerDiscriminationModifier = GLOBAL_DEFINE_OPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_COLONIZERS;
 	m_iOppressometerForcedLaborModifier = GLOBAL_DEFINE_OPPRESSOMETER_FORCED_LABOR_MODIFIER_BASE;
 	m_lPlayerOppressometer = 0l;
 }
