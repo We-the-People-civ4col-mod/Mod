@@ -19627,7 +19627,6 @@ void CvPlayer::buildTradeTable(PlayerTypes eOtherPlayer, CLinkList<TradeData>& o
 		{
 		case TRADE_YIELD:
 
-			FAssert(0 < GC.getNUM_YIELD_TYPES());
 			{
 				CvUnit* pTransport = ::getUnit(kTransport);
 				if (pTransport != NULL)

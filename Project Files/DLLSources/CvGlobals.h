@@ -346,9 +346,9 @@ public:
 	std::vector<CvWorldPickerInfo*>& getWorldPickerInfo();
 	DllExport	CvWorldPickerInfo& getWorldPickerInfo(int iIndex);
 
-	DllExport int getNumUnitInfos();
+	int getNumUnitInfos();
 	DllExport std::vector<CvUnitInfo*>& getUnitInfo();
-	DllExport	CvUnitInfo& getUnitInfo(UnitTypes eUnitNum);
+	CvUnitInfo& getUnitInfo(UnitTypes eUnitNum);
 
 	int getNumSpecialUnitInfos();
 	std::vector<CvSpecialUnitInfo*>& getSpecialUnitInfo();
@@ -466,9 +466,9 @@ public:
 	std::vector<CvBuildingClassInfo*>& getBuildingClassInfo();
 	CvBuildingClassInfo& getBuildingClassInfo(BuildingClassTypes eBuildingClassNum);
 
-	DllExport int getNumBuildingInfos();
+	int getNumBuildingInfos();
 	DllExport std::vector<CvBuildingInfo*>& getBuildingInfo();
-	DllExport CvBuildingInfo& getBuildingInfo(BuildingTypes eBuildingNum);
+	CvBuildingInfo& getBuildingInfo(BuildingTypes eBuildingNum);
 
 	DllExport int getNumSpecialBuildingInfos();
 	std::vector<CvSpecialBuildingInfo*>& getSpecialBuildingInfo();
@@ -567,7 +567,6 @@ public:
 	//Androrc End
 	DllExport int getNUM_ENGINE_DIRTY_BITS() const;
 	DllExport int getNUM_INTERFACE_DIRTY_BITS() const;
-	DllExport int getNUM_YIELD_TYPES() const;
 	DllExport int getNUM_FORCECONTROL_TYPES() const;
 	DllExport int getNUM_INFOBAR_TYPES() const;
 	DllExport int getNUM_HEALTHBAR_TYPES() const;
@@ -2828,11 +2827,6 @@ inline int CvGlobals::getNUM_ENGINE_DIRTY_BITS() const
 inline int CvGlobals::getNUM_INTERFACE_DIRTY_BITS() const
 {
 	return NUM_INTERFACE_DIRTY_BITS;
-}
-
-inline int CvGlobals::getNUM_YIELD_TYPES() const
-{
-	return NUM_YIELD_TYPES;
 }
 
 inline int CvGlobals::getNUM_FORCECONTROL_TYPES() const

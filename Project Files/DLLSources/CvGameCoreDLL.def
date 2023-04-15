@@ -10,7 +10,12 @@
 EXPORTS
 
 ; CvGlobals
+?getBuildingInfo@CvGlobals@@QAEAAVCvBuildingInfo@@W4BuildingTypes@@@Z=?getBuildingInfo@EXE_CvGlobals@@QAEAAVCvBuildingInfo@@W4BuildingTypes@@@Z
 ?getMap@CvGlobals@@QAEAAVCvMap@@XZ=?getMap@EXE_CvGlobals@@QAEAAVCvMap@@XZ
+?getNumBuildingInfos@CvGlobals@@QAEHXZ=?getNumBuildingInfos@EXE_CvGlobals@@QAEHXZ
+?getNumUnitInfos@CvGlobals@@QAEHXZ=?getNumUnitInfos@EXE_CvGlobals@@QAEHXZ
+?getNUM_YIELD_TYPES@CvGlobals@@QBEHXZ=?getNUM_YIELD_TYPES@EXE_CvGlobals@@QBEHXZ
+?getUnitInfo@CvGlobals@@QAEAAVCvUnitInfo@@W4UnitTypes@@@Z=?getUnitInfo@EXE_CvGlobals@@QAEAAVCvUnitInfo@@W4UnitTypes@@@Z
 
 ; CvUnit
 ?getDefaultProfession@CvUnitInfo@@QBEHXZ=?getDefaultProfession@EXE_CvUnitInfo@@QBEHXZ

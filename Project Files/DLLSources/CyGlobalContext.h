@@ -133,7 +133,7 @@ public:
 	const char *getFootstepAudioTags(int i) { return GC.getFootstepAudioTags(i); }
 	int getNumEffectInfos() const { return GC.getNumEffectInfos(); }
 	int getNumTerrainInfos() const { return GC.getNumTerrainInfos(); }
-	int getNumYieldInfos() const { return GC.getNUM_YIELD_TYPES(); }
+	int getNumYieldInfos() const { return NUM_YIELD_TYPES; }
 	int getNumSpecialBuildingInfos() const { return GC.getNumSpecialBuildingInfos(); }
 	int getNumBonusInfos() const { return GC.getNumBonusInfos(); };
 	int getNumCivilizatonInfos() const { return GC.getNumCivilizationInfos(); }

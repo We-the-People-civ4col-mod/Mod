@@ -1452,9 +1452,13 @@ public:
 		getBuildingInfo
 			?getBuildingInfo@CvGlobals@@QAEAAV?$vector@PAVCvBuildingInfo@@V?$allocator@PAVCvBuildingInfo@@@std@@@std@@XZ=?getBuildingInfo@EXE_CvGlobals@@QAEAAV?$vector@PAVCvBuildingInfo@@V?$allocator@PAVCvBuildingInfo@@@std@@@std@@XZ
 
-		getBuildingInfo
-			?getBuildingInfo@CvGlobals@@QAEAAVCvBuildingInfo@@W4BuildingTypes@@@Z=?getBuildingInfo@EXE_CvGlobals@@QAEAAVCvBuildingInfo@@W4BuildingTypes@@@Z
+			*/
 
+	DllExport CvBuildingInfo& getBuildingInfo(BuildingTypes eBuildingNum)
+	{
+		return CvGlobals::getBuildingInfo(eBuildingNum);
+	}
+			/*
 		getCAMERA_FAR_CLIP_Z_HEIGHT
 			?getCAMERA_FAR_CLIP_Z_HEIGHT@CvGlobals@@QAEMXZ=?getCAMERA_FAR_CLIP_Z_HEIGHT@EXE_CvGlobals@@QAEMXZ
 
@@ -1702,9 +1706,14 @@ public:
 
 		getNUM_LEADERANIM_TYPES
 			?getNUM_LEADERANIM_TYPES@CvGlobals@@QBEHXZ=?getNUM_LEADERANIM_TYPES@EXE_CvGlobals@@QBEHXZ
+		*/
 
-		getNUM_YIELD_TYPES
-			?getNUM_YIELD_TYPES@CvGlobals@@QBEHXZ=?getNUM_YIELD_TYPES@EXE_CvGlobals@@QBEHXZ
+	DllExport int getNUM_YIELD_TYPES() const
+	{
+		return NUM_YIELD_TYPES;
+	}
+
+		/*
 
 		getNumActionInfos
 			?getNumActionInfos@CvGlobals@@QAEHXZ=?getNumActionInfos@EXE_CvGlobals@@QAEHXZ
@@ -1720,10 +1729,14 @@ public:
 
 		getNumBuildingClassInfos
 			?getNumBuildingClassInfos@CvGlobals@@QAEHXZ=?getNumBuildingClassInfos@EXE_CvGlobals@@QAEHXZ
+			*/
 
-		getNumBuildingInfos
-			?getNumBuildingInfos@CvGlobals@@QAEHXZ=?getNumBuildingInfos@EXE_CvGlobals@@QAEHXZ
+	DllExport int getNumBuildingInfos()
+	{
+		return NUM_BUILDING_TYPES;
+	}
 
+	/*
 		getNumCameraOverlayInfos
 			?getNumCameraOverlayInfos@CvGlobals@@QAEHXZ=?getNumCameraOverlayInfos@EXE_CvGlobals@@QAEHXZ
 
@@ -1846,10 +1859,13 @@ public:
 
 		getNumUnitFormationInfos
 			?getNumUnitFormationInfos@CvGlobals@@QAEHXZ=?getNumUnitFormationInfos@EXE_CvGlobals@@QAEHXZ
+			*/
 
-		getNumUnitInfos
-			?getNumUnitInfos@CvGlobals@@QAEHXZ=?getNumUnitInfos@EXE_CvGlobals@@QAEHXZ
-
+	DllExport int getNumUnitInfos()
+	{
+		return NUM_UNIT_TYPES;
+	}
+			/*
 		getNumUnitLayerOptionTypes
 			?getNumUnitLayerOptionTypes@CvGlobals@@QBEHXZ=?getNumUnitLayerOptionTypes@EXE_CvGlobals@@QBEHXZ
 
@@ -1975,10 +1991,14 @@ public:
 
 		getUnitInfo
 			?getUnitInfo@CvGlobals@@QAEAAV?$vector@PAVCvUnitInfo@@V?$allocator@PAVCvUnitInfo@@@std@@@std@@XZ=?getUnitInfo@EXE_CvGlobals@@QAEAAV?$vector@PAVCvUnitInfo@@V?$allocator@PAVCvUnitInfo@@@std@@@std@@XZ
+			*/
 
-		getUnitInfo
-			?getUnitInfo@CvGlobals@@QAEAAVCvUnitInfo@@W4UnitTypes@@@Z=?getUnitInfo@EXE_CvGlobals@@QAEAAVCvUnitInfo@@W4UnitTypes@@@Z
+	DllExport	CvUnitInfo& getUnitInfo(UnitTypes eUnitNum)
+	{
+		return CvGlobals::getUnitInfo(eUnitNum);
+	}
 
+			/*
 		getVictoryInfo
 			?getVictoryInfo@CvGlobals@@QAEAAVCvVictoryInfo@@W4VictoryTypes@@@Z=?getVictoryInfo@EXE_CvGlobals@@QAEAAVCvVictoryInfo@@W4VictoryTypes@@@Z
 

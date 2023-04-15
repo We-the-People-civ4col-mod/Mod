@@ -728,9 +728,8 @@ void CvPlot::updateSymbolDisplay()
 		gDLL->getEngineIFace()->setYieldSymbolOffset(this, 0);
 	}
 	// R&R, ray , MYCP partially based on code of Aymerick - START
-	for (int i = 0; i < GC.getNUM_YIELD_TYPES(); i++)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes) i;
 		if (isShowCitySymbols())
 		{
 			if ((setYieldsProduced.find(eYield) != setYieldsProduced.end()) || (pPlotCity != NULL))

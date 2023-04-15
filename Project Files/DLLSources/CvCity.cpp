@@ -7695,9 +7695,9 @@ void CvCity::doCheat(bool bAlt, bool bShift, bool bCtrl)
 	}
 	else if(bAlt)
 	{
-		for (int i = 0; i < GC.getNUM_YIELD_TYPES(); ++i)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			changeYieldStored((YieldTypes)i, GC.getGameINLINE().getCargoYieldCapacity() / 2);
+			changeYieldStored(eYield, GC.getGameINLINE().getCargoYieldCapacity() / 2);
 		}
 		setRebelSentiment(getRebelSentiment() + GC.getGameINLINE().getCargoYieldCapacity());
 	}
