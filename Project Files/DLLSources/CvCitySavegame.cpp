@@ -4,10 +4,6 @@
 
 // set the default values
 	const int defaultID = 0 ;
-	const int defaultX = 0 ;
-	const int defaultY = 0 ;
-	const int defaultRallyX = INVALID_PLOT_COORD;
-	const int defaultRallyY = INVALID_PLOT_COORD;
 	const int defaultGameTurnFounded = 0 ;
 	const int defaultGameTurnAcquired = 0 ;
 	const int defaultHighestPopulation = 0 ;
@@ -73,8 +69,7 @@ enum SavegameVariableTypes
 	CitySave_END,
 	CitySave_ID,
 	CitySave_Coordinates,
-	CitySave_RallyX,
-	CitySave_RallyY,
+	CitySave_RallyCoordinates,
 	CitySave_GameTurnFounded,
 	CitySave_GameTurnAcquired,
 	CitySave_HighestPopulation,
@@ -203,8 +198,7 @@ const char* getSavedEnumNameCity(SavegameVariableTypes eType)
 		case CitySave_END: return "CitySave_END";
 		case CitySave_ID: return "CitySave_ID";
 		case CitySave_Coordinates: return "CitySave_Coordinates";
-		case CitySave_RallyX: return "CitySave_RallyX";
-		case CitySave_RallyY: return "CitySave_RallyY";
+		case CitySave_RallyCoordinates: return "CitySave_RallyCoordinates";
 		case CitySave_GameTurnFounded: return "CitySave_GameTurnFounded";
 		case CitySave_GameTurnAcquired: return "CitySave_GameTurnAcquired";
 		case CitySave_HighestPopulation: return "CitySave_HighestPopulation";
@@ -338,11 +332,8 @@ void CvCity::resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bC
 void CvCity::resetSavedData(int iID, PlayerTypes eOwner, Coordinates resetCoord, bool bConstructorCall)
 {
 	m_iID = iID,
-	// m_iX = iX;
-	// m_iY = iY;
 	m_coord = resetCoord;
-	m_iRallyX = defaultRallyX;
-	m_iRallyY = defaultRallyY;
+	m_rallyCoordinates.resetInvalid();
 	m_iGameTurnFounded = defaultGameTurnFounded;
 	m_iGameTurnAcquired = defaultGameTurnAcquired;
 	m_iHighestPopulation = defaultHighestPopulation;
@@ -494,8 +485,7 @@ void CvCity::read(CvSavegameReader reader)
 			break;
 		case CitySave_ID                                         : reader.Read(m_iID)                                       ; break;
 		case CitySave_Coordinates                                : reader.Read(m_coord)                                     ; break;
-		case CitySave_RallyX                                     : reader.Read(m_iRallyX)                                   ; break;
-		case CitySave_RallyY                                     : reader.Read(m_iRallyY)                                   ; break;
+		case CitySave_RallyCoordinates                           : reader.Read(m_rallyCoordinates)                          ; break;
 		case CitySave_GameTurnFounded                            : reader.Read(m_iGameTurnFounded)                          ; break;
 		case CitySave_GameTurnAcquired                           : reader.Read(m_iGameTurnAcquired)                         ; break;
 		case CitySave_HighestPopulation                          : reader.Read(m_iHighestPopulation)                        ; break;
@@ -655,8 +645,7 @@ void CvCity::write(CvSavegameWriter writer)
 	// Less data saved/loaded means smaller savegames.
 	writer.Write(CitySave_ID, m_iID, defaultID);
 	writer.Write(CitySave_Coordinates, m_coord);
-	writer.Write(CitySave_RallyX, m_iRallyX, defaultRallyX);
-	writer.Write(CitySave_RallyY, m_iRallyY, defaultRallyY);
+	writer.Write(CitySave_RallyCoordinates, m_rallyCoordinates);
 	writer.Write(CitySave_GameTurnFounded, m_iGameTurnFounded, defaultGameTurnFounded);
 	writer.Write(CitySave_GameTurnAcquired, m_iGameTurnAcquired, defaultGameTurnAcquired);
 	writer.Write(CitySave_HighestPopulation, m_iHighestPopulation, defaultHighestPopulation);

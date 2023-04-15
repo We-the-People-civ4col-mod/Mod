@@ -795,10 +795,7 @@ protected:
 	CvCityYields m_yields;
 	int m_iID;
 	Coordinates m_coord;
-	// int m_iX;
-	// int m_iY;
-	int m_iRallyX;
-	int m_iRallyY;
+	Coordinates m_rallyCoordinates;
 	int m_iGameTurnFounded;
 	int m_iGameTurnAcquired;
 	int m_iHighestPopulation;

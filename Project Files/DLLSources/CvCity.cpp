@@ -3371,7 +3371,7 @@ CvArea* CvCity::waterArea() const
 
 CvPlot* CvCity::getRallyPlot() const
 {
-	return GC.getMap().plotSoren(m_iRallyX, m_iRallyY);
+	return GC.getMap().plotSoren(m_rallyCoordinates);
 }
 
 
@@ -3381,13 +3381,11 @@ void CvCity::setRallyPlot(CvPlot* pPlot)
 	{
 		if (pPlot != NULL)
 		{
-			m_iRallyX = pPlot->getX_INLINE();
-			m_iRallyY = pPlot->getY_INLINE();
+			m_rallyCoordinates = pPlot->coord();
 		}
 		else
 		{
-			m_iRallyX = INVALID_PLOT_COORD;
-			m_iRallyY = INVALID_PLOT_COORD;
+			m_rallyCoordinates.resetInvalid();
 		}
 
 		if (isCitySelected())
