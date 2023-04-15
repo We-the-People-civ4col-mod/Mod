@@ -24686,7 +24686,7 @@ void CvPlayer::recalculatePlayerOppressometer()
 	}
 
 	// debug message - delete later!
-	gDLL->UI().addPlayerMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_OPPRESSOMETER_RECALCULATION_PLAYER", static_cast<int>(lOldPlayerOppressometer), static_cast<int>(getPlayerOppressometer())), Coordinates::invalidCoord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO);
+	// gDLL->UI().addPlayerMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_OPPRESSOMETER_RECALCULATION_PLAYER", static_cast<int>(lOldPlayerOppressometer), static_cast<int>(getPlayerOppressometer())), Coordinates::invalidCoord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO);
 }
 
 void CvPlayer::read(FDataStreamBase* pStream)
