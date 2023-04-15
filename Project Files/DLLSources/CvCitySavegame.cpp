@@ -64,6 +64,9 @@
 	const PlayerTypes defaultTradePostPlayer = NO_PLAYER; // WTP, ray, Native Trade Posts - START
 	const YieldTypes defaultPreferredYieldAtCityPlot = NO_YIELD;
 
+	const int defaultOppressometer = 0;
+	const int defaultOppressometerGrowthModifier = 100;
+
 //
 enum SavegameVariableTypes
 {
@@ -187,6 +190,9 @@ enum SavegameVariableTypes
 	CitySave_DomesticDemandEventDemandModifier, // WTP, ray Domestic Market Events - START
 
 	CitySave_tradeAutoExports,
+
+	CitySave_Oppressometer,
+	CitySave_OppressometerGrowthModifier,
 
 	NUM_CITYSAVE_ENUM_VALUES,
 };
@@ -312,6 +318,9 @@ const char* getSavedEnumNameCity(SavegameVariableTypes eType)
 		case CitySave_orderQueue: return "CitySave_orderQueue";
 
 		case CitySave_WorkingPlot: return "CitySave_WorkingPlot";
+
+		case CitySave_Oppressometer: return "CitySave_Oppressometer";
+		case CitySave_OppressometerGrowthModifier: return "CitySave_OppressometerGrowthModifier";
 	}
 	return "";
 }
@@ -457,6 +466,9 @@ void CvCity::resetSavedData(int iID, PlayerTypes eOwner, Coordinates resetCoord,
 	m_em_iWorkingPlot.reset();
 	m_aEventsOccured.clear();
 	m_aBuildingYieldChange.clear();
+
+	m_iOppressometer = defaultOppressometer;
+	m_iOppressometerGrowthModifier = defaultOppressometerGrowthModifier;
 }
 
 void CvCity::read(CvSavegameReader reader)
@@ -601,6 +613,8 @@ void CvCity::read(CvSavegameReader reader)
 
 		case CitySave_WorkingPlot                                : reader.Read(m_em_iWorkingPlot)                           ; break;
 
+		case CitySave_Oppressometer                              : reader.Read(m_iOppressometer)                            ; break;
+		case CitySave_OppressometerGrowthModifier                : reader.Read(m_iOppressometerGrowthModifier)              ; break;
 		}
 
 	}
@@ -761,6 +775,9 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_orderQueue, m_orderQueue);
 
 	writer.Write(CitySave_WorkingPlot, m_em_iWorkingPlot);
+
+	writer.Write(CitySave_Oppressometer, m_iOppressometer);
+	writer.Write(CitySave_OppressometerGrowthModifier, m_iOppressometerGrowthModifier);
 
 	writer.Write(CitySave_END);
 }

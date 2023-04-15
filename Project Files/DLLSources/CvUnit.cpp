@@ -12645,6 +12645,11 @@ PlayerTypes CvUnit::getOwner() const
 	return getOwnerINLINE();
 }
 
+CvPlayer &CvUnit::getOwnerR() const
+{
+	return GET_PLAYER(getOwnerINLINE());
+}
+
 PlayerTypes CvUnit::getVisualOwner(TeamTypes eForTeam) const
 {
 	if (NO_TEAM == eForTeam)
@@ -16664,4 +16669,66 @@ void CvUnit::write(FDataStreamBase* pStream)
 	CvSavegameWriter writer(writerbase);
 	write(writer);
 	writerbase.WriteFile();
+}
+
+bool CvUnit::isForcedLaborer() const
+{
+	CitizenStatusTypes eCitizenStatus = getUnitInfo().getCitizenStatus();
+	if (eCitizenStatus == CITIZEN_STATUS_ENSLAVED)
+	{
+		return true;
+	}
+	return false;
+}
+
+int CvUnit::getForcedLaborFactor() const
+{
+	// just a simple wrapper function, but could be changed later
+	CitizenStatusTypes eCitizenStatus = getUnitInfo().getCitizenStatus();
+	if (eCitizenStatus == CITIZEN_STATUS_ENSLAVED)
+	{
+		return 2;
+	}
+	else if (eCitizenStatus == CITIZEN_STATUS_INDENTURED)
+	{
+		return 1;
+	}
+
+	return 0;
+};
+
+int CvUnit::getDiscriminationFactor() const
+{
+	EthnicityTypes eEthnicity = getUnitInfo().getEthnicity();
+	if (getOwnerR().isNative())
+	{
+		if (eEthnicity == ETHNICITY_INDIO)
+		{
+			return 0;
+		}
+		else if (eEthnicity == ETHNICITY_MESTIZZO)
+		{
+		return 1;
+		}
+		else
+		{
+			return 2;
+		}
+	}
+	else if (getOwnerR().isColonizer())
+	{
+		if (eEthnicity == ETHNICITY_EUROPEAN)
+		{
+			return 0;
+		}
+		else if (eEthnicity == ETHNICITY_MESTIZZO || eEthnicity == ETHNICITY_MULATTO)
+		{
+		return 1;
+		}
+		else
+		{
+			return 2;
+		}
+	}
+	return 0;
 }

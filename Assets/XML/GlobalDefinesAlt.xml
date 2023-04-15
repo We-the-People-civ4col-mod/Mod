@@ -1655,6 +1655,22 @@
 		<DefineTextVal>UNITCLASS_MULATTO</DefineTextVal>
 	</Define>
 	<Define>
+		<DefineName>OPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_COLONIZERS</DefineName>
+		<DefineIntVal>300</DefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>OPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_NATIVES</DefineName>
+		<DefineIntVal>150</DefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>OPPRESSOMETER_FORCED_LABOR_MODIFIER_BASE</DefineName>
+		<DefineIntVal>100</DefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>OPPRESSOMETER_DECAY_RATE_BASE</DefineName>
+		<DefineIntVal>3</DefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>USE_OOS_LOGGING</DefineName>
 		<iDefineIntVal>0</iDefineIntVal>
 		<bAlwaysHardcoded>1</bAlwaysHardcoded>

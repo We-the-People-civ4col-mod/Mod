@@ -248,6 +248,16 @@ void CvPlayer::init(PlayerTypes eID)
 	AI_init();
 
 	Update_cache_YieldEquipmentAmount(); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
+
+	if(isNative())
+	{
+		m_iOppressometerDiscriminationModifier = GC.getDefineINT("OPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_NATIVES");
+	}
+	else
+	{
+		m_iOppressometerDiscriminationModifier = GC.getDefineINT("OPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_COLONIZERS");
+	}
+	m_iOppressometerForcedLaborModifier = GC.getDefineINT("OPPRESSOMETER_FORCED_LABOR_MODIFIER_BASE");
 }
 
 
@@ -1951,6 +1961,19 @@ bool CvPlayer::isNative() const
 	}
 
 	return GC.getCivilizationInfo(eCivilizationType).isNative();
+}
+
+bool CvPlayer::isColonizer() const
+{
+	if (getParent() != NO_PLAYER)
+	{
+		CvPlayer& kParent = GET_PLAYER(getParent());
+		if(kParent.isEurope())
+		{
+			return true;
+		}
+	}
+	return false;
 }
 
 CivCategoryTypes CvPlayer::getCivCategoryTypes() const
@@ -24625,6 +24648,19 @@ void CvPlayer::writeDesyncLog(FILE *f) const
 		pLoopCity->writeDesyncLog(f);
 	}
 }
+
+void CvPlayer::changeOppressometerDiscriminationModifier(int iChange)
+{
+	m_iOppressometerDiscriminationModifier += iChange;
+	FAssert(m_iOppressometerDiscriminationModifier > 0);
+}
+
+void CvPlayer::changeOppressometerForcedLaborModifier(int iChange)
+{
+	m_iOppressometerForcedLaborModifier += iChange;
+	FAssert(m_iOppressometerForcedLaborModifier > 0);
+}
+
 
 void CvPlayer::read(FDataStreamBase* pStream)
 {

@@ -222,6 +222,7 @@
 	<ElementType name="iMaxGoldAskPercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iMinGoldAskPercent" content="textOnly" dt:type="int"/>
  	<ElementType name="iNBMOD_REF_Weight" content="textOnly" dt:type="int"/>
+	<ElementType name="iOppressometerGrowthHandicap" content="textOnly" dt:type="int"/>
 	<ElementType name="Wave" content="textOnly" dt:type="int"/>
 	<ElementType name="Waves" content="eltOnly">
 		<element type="Wave" maxOccurs="*"/>
@@ -277,6 +278,7 @@
 		<element type="iMaxGoldAskPercent"/>
 		<element type="iMinGoldAskPercent"/>
 		<element type="iNBMOD_REF_Weight"/>
+		<element type="iOppressometerGrowthHandicap"/>
 		<element type="Waves"/>
 		<element type="iWaveTurns"/>
 		<element type="Goodies" maxOccurs="*"/>

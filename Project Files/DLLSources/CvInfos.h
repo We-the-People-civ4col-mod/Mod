@@ -245,7 +245,7 @@ public:
 	int getCityDefensePercent() const;
 	int getHillsAttackPercent() const;
 	int getHillsDefensePercent() const;
-	int getDomesticBonusPercent() const;	
+	int getDomesticBonusPercent() const;
 	int getCommandType() const;
 	void setCommandType(int iNewType);
 	int getPillageChange() const;
@@ -308,7 +308,7 @@ protected:
 	int m_iCityDefensePercent;
 	int m_iHillsAttackPercent;
 	int m_iHillsDefensePercent;
-	int m_iDomesticBonusPercent;	
+	int m_iDomesticBonusPercent;
 	int m_iCommandType;
 	int m_iPillageChange;
 	int m_iAnimalGoldChange; //WTP, ray, Animal Promotions increase gold from Animals
@@ -383,7 +383,7 @@ public:
 	bool isWater() const;
 	bool isScout() const;
 	bool isCanCrossLargeRivers() const; //WTP, ray, Large Rivers
-	bool isCanEnterPeaks() const; //WTP, ray, Large Rivers		
+	bool isCanEnterPeaks() const; //WTP, ray, Large Rivers
 	bool isCityDefender() const;
 	bool canFound() const;
 	bool isUnarmed() const;
@@ -722,7 +722,7 @@ public:
 	int getCityDefenseModifier() const;
 	int getHillsAttackModifier() const;
 	int getHillsDefenseModifier() const;
-	int getDomesticBonusModifier() const;	
+	int getDomesticBonusModifier() const;
 	int getBombardRate() const;
 	int getSpecialCargo() const;
 	int getDomainCargo() const;
@@ -795,7 +795,7 @@ public:
 	// WTP, ray, LbD Slaves Revolt and Free - END
 
 	bool isCapturesCargo() const;
-	int getCaptureShipsChanceIncrease() const; 
+	int getCaptureShipsChanceIncrease() const;
 	// TAC Capturing Ships - ray
 	bool isCapturesShips() const;
 	// TAC Capturing Ships - ray -END
@@ -916,7 +916,7 @@ protected:
 	int m_iCityDefenseModifier;
 	int m_iHillsAttackModifier;
 	int m_iHillsDefenseModifier;
-	int m_iDomesticBonusModifier;	
+	int m_iDomesticBonusModifier;
 	int m_iBombardRate;
 	int m_iSpecialCargo;
 	int m_iDomainCargo;
@@ -970,7 +970,7 @@ protected:
 	// R&R, ray, Changes for Treasures, START
 	bool m_bNoRevealMap;
 	// R&R, ray, Changes for Treasures, END
-	
+
 	// TAC - LbD - Ray - START
 	bool m_canBecomeExpert;
 	bool m_canGetFree;
@@ -1305,7 +1305,7 @@ public:
 	int getMilitaryProductionModifier() const;
 	int getAssetValue() const;
 	int getPowerValue() const;
-	int getYieldStorage() const; 
+	int getYieldStorage() const;
 	int getMaxHarbourSpaceProvided() const; // WTP, ray, new Harbour System - START
 	int getMaxBarracksSpaceProvided() const; // WTP, ray, new Barracks System - START
 	int getSpecialBuildingType() const;
@@ -1962,7 +1962,7 @@ public:
 	int getAIImmigration() const;
 	int getAIMaxTaxrate() const;
 	// TAC - AI More Immigrants - koma13 - END
-	
+
 	// TAC: ray Starting Location Start
 	int getStartingLocationPercent() const;
 	// TAC: ray Starting Location End
@@ -2011,7 +2011,9 @@ public:
 	int getNumWaves();
 	int getWaves(int index);
 	// TAC - AI Revolution - koma13 - END
-	
+
+	int getOppressometerGrowthHandicap() const;
+
 	// Arrays
 	int getGoodies(int i) const;
 
@@ -2073,8 +2075,11 @@ protected:
 	int m_iMissionFailureThresholdPercent;
 	int m_iKingNumUnitMultiplier;
 	int m_iKingGoldThresholdPercent;
+
+	int m_iOppressometerGrowthHandicap;
+
 	CvString m_szHandicapName;
-	
+
 	// TAC - AI Revolution - koma13 - START
 	int m_iWaveTurns;
 	std::vector<int> m_aWaves;
@@ -2176,7 +2181,7 @@ public:
 	int getCost() const;
 	int getImprovement() const;
 	int getPrereqTerrain() const; // R&R, ray, Terraforming Features
-	int getResultTerrain() const; // R&R, ray, Terraforming Features 
+	int getResultTerrain() const; // R&R, ray, Terraforming Features
 	int getResultFeature() const; // R&R, ray, Terraforming Features
 	int getRoute() const;
 	DllExport int getEntityEvent() const;
@@ -3295,8 +3300,8 @@ public:
 	int getUnhappinessFromSlavesModifier() const; // WTP, ray, Happiness - START
 	int getChiefGoldModifier() const;
 	int getNativeAttitudeChange() const;
-	int getEuropeanAttitudeChange() const; // R&R, ray, new Attribute in Traits 
-	int getKingAttitudeChange() const; // R&R, ray, new Attribute in Traits 
+	int getEuropeanAttitudeChange() const; // R&R, ray, new Attribute in Traits
+	int getKingAttitudeChange() const; // R&R, ray, new Attribute in Traits
 	int getCityDefense() const;
 	int getLandPriceDiscount() const;
 	int getRecruitPriceDiscount() const;
@@ -4988,7 +4993,7 @@ public:
 	inline const InfoArray<RouteTypes        , int>& getAllowedRoutes               () const { return m_info_AllowRoutes       ; }
 	inline const InfoArray<UnitClassTypes    , int>& getAllowedUnitClasses          () const { return m_info_AllowUnits        ; }
 	inline const InfoArray<YieldTypes        , int>& getAllowedYields               () const { return m_info_AllowYields       ; }
-	
+
 	inline const bool getAllowFoundCity                    () const { return m_iAllowFoundCity        ; }
 
 	// city
@@ -5019,7 +5024,7 @@ protected:
 	InfoArray<RouteTypes        , int> m_info_AllowRoutes;
 	InfoArray<UnitClassTypes    , int> m_info_AllowUnits;
 	InfoArray<YieldTypes        , int> m_info_AllowYields;
-	
+
 	int m_iAllowFoundCity;
 
 	// city

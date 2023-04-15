@@ -622,6 +622,7 @@ public:
 		return m_eOwner;
 	}
 #endif
+	CvPlayer &getOwnerR() const;
 	DllExport PlayerTypes getVisualOwner(TeamTypes eForTeam = NO_TEAM) const;
 	PlayerTypes getCombatOwner(TeamTypes eForTeam, const CvPlot* pPlot) const;
 	DllExport TeamTypes getTeam() const;
@@ -995,6 +996,12 @@ protected:
 	// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO - END
 
 	EnumMap<PromotionTypes, bool> m_embisPromotionApplied;
+
+public:
+	int getForcedLaborFactor() const;
+	int getDiscriminationFactor() const;
+
+	bool isForcedLaborer() const;
 };
 
 inline bool CvUnit::isHasPromotion(PromotionTypes eIndex) const
