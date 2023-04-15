@@ -1250,9 +1250,11 @@ public:
 protected:
 	int m_iOppressometerDiscriminationModifier;
 	int m_iOppressometerForcedLaborModifier;
+	int m_iPlayerOppressometer;
 
 	void changeOppressometerDiscriminationModifier(int iChange);
 	void changeOppressometerForcedLaborModifier(int iChange);
+	void recalculatePlayerOppressometer();
 
 public:
 	int getOppressometerDiscriminationModifier() const
@@ -1262,6 +1264,10 @@ public:
 	int getOppressometerForcedLaborModifier() const
 	{
 		return m_iOppressometerForcedLaborModifier;
+	}
+	int getPlayerOppressometer() const
+	{
+		return m_iPlayerOppressometer;
 	}
 };
 

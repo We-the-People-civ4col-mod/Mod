@@ -2352,6 +2352,8 @@ void CvPlayer::doTurn()
 	m_aiTradeMessageCommissions.clear();
 	// TAC - Trade Messages - koma13 - END
 
+	recalculatePlayerOppressometer();
+
 	gDLL->getInterfaceIFace()->setDirty(CityInfo_DIRTY_BIT, true);
 
 	AI_doTurnPost();
@@ -24661,6 +24663,20 @@ void CvPlayer::changeOppressometerForcedLaborModifier(int iChange)
 	FAssert(m_iOppressometerForcedLaborModifier > 0);
 }
 
+
+void CvPlayer::recalculatePlayerOppressometer()
+{
+	const int iOldPlayerOppressometer = m_iPlayerOppressometer;
+	m_iPlayerOppressometer = 0;
+	int iLoop;
+	for (CvCity *pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+	{
+		m_iPlayerOppressometer += pLoopCity->getOppressometer();
+	}
+
+	// debug message - delete later!
+	gDLL->UI().addPlayerMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_OPPRESSOMETER_RECALCULATION_PLAYER", iOldPlayerOppressometer, getPlayerOppressometer()), Coordinates::invalidCoord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO);
+}
 
 void CvPlayer::read(FDataStreamBase* pStream)
 {
