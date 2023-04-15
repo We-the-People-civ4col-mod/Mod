@@ -28,7 +28,7 @@ int CvCityYields::getBaseRawYieldProduced(YieldTypes eYieldType) const
 	{
 		return 0;
 	}
-
+	
 
 	int iIndoor = getBaseRawYieldProducedIndoor(eYieldType);
 	int iOutdoor = getBaseRawYieldProducedPlots(eYieldType);
@@ -87,7 +87,6 @@ int CvCityYields::getBaseRawYieldProducedPlots(YieldTypes eYieldType) const
 		return 0;
 	}
 
-	const int iSlaveWorkerProductionBonus = m_city.getSlaveWorkerProductionBonus();
 	int iPlotYieldProduction = 0;
 	for (int i = 0; i < NUM_CITY_PLOTS; ++i)
 	{
@@ -96,21 +95,35 @@ int CvCityYields::getBaseRawYieldProducedPlots(YieldTypes eYieldType) const
 		{
 			if (m_city.isUnitWorkingPlot(i))
 			{
-				int iPlotYieldProductionThisPlot = pPlot->getYield(eYieldType);
-				if (!m_city.isNative())
+				//WTP, ray, Slave Hunter and Slave Master - START
+				//iPlotYieldProduction += pPlot->getYield(eYieldType);
+				if (m_city.isNative())
 				{
-					CvUnit* const pUnit = m_city.getUnitWorkingPlot(pPlot);
-					if (pUnit != NULL && pUnit->isForcedLaborer()) // could change this later to account for "forced labor factor"
-					{
-						if (iSlaveWorkerProductionBonus > 0 && pUnit->getUnitInfo().getYieldChange(eYieldType) > 0)
-						{
-							iPlotYieldProductionThisPlot *= (100 + iSlaveWorkerProductionBonus);
-							iPlotYieldProductionThisPlot /= 100;
-						}
-					}
+					// normal previous logic
+					iPlotYieldProduction += pPlot->getYield(eYieldType);
 				}
 
-				iPlotYieldProduction += iPlotYieldProductionThisPlot;
+				else
+				{
+					int iSlaveWorkerProductionBonus = m_city.getSlaveWorkerProductionBonus();
+					if (iSlaveWorkerProductionBonus > 0)
+					{
+						int iProductionModifier = 100;
+						CvUnit* pUnit = m_city.getUnitWorkingPlot(pPlot);
+						if (pUnit != NULL && pUnit->getUnitInfo().LbD_canEscape() && pUnit->getUnitInfo().getYieldChange(eYieldType) > 0)
+						{
+							iProductionModifier += iSlaveWorkerProductionBonus;
+						}
+						iPlotYieldProduction += pPlot->getYield(eYieldType) * iProductionModifier / 100;
+						//WTP, ray, Slave Hunter and Slave Master - END
+					}
+					else
+					{
+						// normal previous logic
+						iPlotYieldProduction += pPlot->getYield(eYieldType);
+					}
+				}
+				//WTP, ray, Slave Hunter and Slave Master - END
 			}
 		}
 	}
