@@ -72,8 +72,7 @@ enum SavegameVariableTypes
 {
 	CitySave_END,
 	CitySave_ID,
-	CitySave_X,
-	CitySave_Y,
+	CitySave_Coordinates,
 	CitySave_RallyX,
 	CitySave_RallyY,
 	CitySave_GameTurnFounded,
@@ -203,8 +202,7 @@ const char* getSavedEnumNameCity(SavegameVariableTypes eType)
 	{
 		case CitySave_END: return "CitySave_END";
 		case CitySave_ID: return "CitySave_ID";
-		case CitySave_X: return "CitySave_X";
-		case CitySave_Y: return "CitySave_Y";
+		case CitySave_Coordinates: return "CitySave_Coordinates";
 		case CitySave_RallyX: return "CitySave_RallyX";
 		case CitySave_RallyY: return "CitySave_RallyY";
 		case CitySave_GameTurnFounded: return "CitySave_GameTurnFounded";
@@ -483,8 +481,6 @@ void CvCity::read(CvSavegameReader reader)
 	// Variables can be read in any order and any number of variables can be skipped.
 	bool bContinue = true;
 
-	int tempX = defaultX, tempY = defaultY;
-
 	while (bContinue)
 	{
 		SavegameVariableTypes eType;
@@ -497,8 +493,7 @@ void CvCity::read(CvSavegameReader reader)
 			bContinue = false;
 			break;
 		case CitySave_ID                                         : reader.Read(m_iID)                                       ; break;
-		case CitySave_X                                          : reader.Read(tempX)                                       ; break;
-		case CitySave_Y                                          : reader.Read(tempY)                                       ; break;
+		case CitySave_Coordinates                                : reader.Read(m_coord)                                     ; break;
 		case CitySave_RallyX                                     : reader.Read(m_iRallyX)                                   ; break;
 		case CitySave_RallyY                                     : reader.Read(m_iRallyY)                                   ; break;
 		case CitySave_GameTurnFounded                            : reader.Read(m_iGameTurnFounded)                          ; break;
@@ -619,8 +614,6 @@ void CvCity::read(CvSavegameReader reader)
 
 	}
 
-	m_coord.set(tempX, tempY);
-
 	// BUG WORKAROUND. Reset any yield, which stores negative amount
 	// ideally this shouldn't be here, but it makes the asserts and error message
 	// trigger when the bug triggers again rather than triggering if the bug happened prior to saving
@@ -661,8 +654,7 @@ void CvCity::write(CvSavegameWriter writer)
 	// If nothing is saved, the loading code will use the default values.
 	// Less data saved/loaded means smaller savegames.
 	writer.Write(CitySave_ID, m_iID, defaultID);
-	writer.Write(CitySave_X, coord().x(), defaultX);
-	writer.Write(CitySave_Y, coord().y(), defaultY);
+	writer.Write(CitySave_Coordinates, m_coord);
 	writer.Write(CitySave_RallyX, m_iRallyX, defaultRallyX);
 	writer.Write(CitySave_RallyY, m_iRallyY, defaultRallyY);
 	writer.Write(CitySave_GameTurnFounded, m_iGameTurnFounded, defaultGameTurnFounded);

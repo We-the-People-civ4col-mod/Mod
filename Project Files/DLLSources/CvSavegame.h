@@ -215,6 +215,7 @@ public:
 
 	// class wrappers
 	void Read(BuildingYieldChange   & variable) { variable.read(*this); }
+	void Read(Coordinates           & variable);
 	void Read(CvDiploParameters     & variable);
 	void Read(CvPopupButtonPython   & variable);
 	void Read(CvPopupInfo           & variable);
@@ -348,6 +349,8 @@ public:
 	void Write(SavegameVariableTypes eType, CvEventMap& idInfo);
 	void Write(SavegameVariableTypes eType, CvRandom& rand);
 
+	void Write(SavegameVariableTypes eType, const Coordinates &variable);
+
 	template<class T>
 	void Write(SavegameVariableTypes eType, T eVariable, T eDefault);
 
@@ -446,6 +449,7 @@ public:
 
 	// class wrappers
 	void Write(BuildingYieldChange  &variable) { variable.write(*this); }
+	void Write(const Coordinates    &variable);
 	void Write(CvDiploParameters    &variable);
 	void Write(CvPopupButtonPython  &variable);
 	void Write(CvPopupInfo          &variable);

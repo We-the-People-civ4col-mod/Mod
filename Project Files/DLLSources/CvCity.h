@@ -219,7 +219,7 @@ public:
 		return m_coord.y();
 	}
 #endif
-	inline Coordinates coord() const
+	inline const Coordinates& coord() const
 	{
 		return m_coord;
 	}

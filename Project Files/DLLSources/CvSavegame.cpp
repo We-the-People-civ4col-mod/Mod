@@ -4,6 +4,7 @@
 #include "FVariableSystem.h"
 #include "CvPopupInfo.h"
 #include "CvDiploParameters.h"
+#include "CvPlotFunctions.h"
 
 /* The exe calls some read() and write() functions, which in turn calls the others. The exe calling order is as follows:
  * CvInitCore
@@ -336,6 +337,12 @@ void CvSavegameReader::Read(wchar*& szString)
 	}
 }
 
+void CvSavegameReader::Read(Coordinates& variable)
+{
+	Read(variable.m_iX);
+	Read(variable.m_iY);
+}
+
 void CvSavegameReader::Read(CvTurnScoreMap& Map)
 {
 	int iSize;
@@ -666,6 +673,15 @@ void CvSavegameWriter::Write(SavegameVariableTypes eType, CvRandom& rand)
 	Write(rand);
 }
 
+void CvSavegameWriter::Write(SavegameVariableTypes eType, const Coordinates &variable)
+{
+	if (!variable.isInvalidPlotCoord())
+	{
+		Write(eType);
+		Write(variable);
+	}
+}
+
 #ifndef WITH_DEBUG_WRITE_SAVEGAME
 void CvSavegameWriter::Write(byte* var, unsigned int iSize)
 {
@@ -756,6 +772,12 @@ void CvSavegameWriter::WriteXmlEnum(int iVariable, JITarrayTypes eType)
 		Write(iBuffer);
 	}
 	}
+}
+
+void CvSavegameWriter::Write(const Coordinates &variable)
+{
+	Write(variable.m_iX);
+	Write(variable.m_iY);
 }
 
 void CvSavegameWriter::Write(FVariable            &variable) { variable.write(*this); }

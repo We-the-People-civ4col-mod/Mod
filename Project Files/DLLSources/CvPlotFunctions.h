@@ -175,6 +175,8 @@ protected:
 
 class Coordinates
 {
+	friend class CvSavegameReader;
+	friend class CvSavegameWriter;
 public:
 	explicit Coordinates(int iX = 0, int iY = 0)
 	{
