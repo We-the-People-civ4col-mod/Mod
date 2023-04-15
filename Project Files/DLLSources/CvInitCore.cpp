@@ -1891,13 +1891,13 @@ void CvInitCore::showReadFailureMessage(char *szHeader, char* szMessage)
 {
 	CDialogTemplate dialogTemplate(_T(szHeader),
 		DS_SETFONT | DS_CENTER | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU,
-		0, 0, 200, 120, _T("MS Shell Dlg"), 11);
+		0, 0, 200, 110, _T("MS Shell Dlg"), 11);
 
 	dialogTemplate.AddStatic(_T(""), WS_VISIBLE, 0,
-		10, 10, 140, 70, IDC_TEXT_MESSAGE );
+		10, 10, 180, 60, IDC_TEXT_MESSAGE );
 
 	dialogTemplate.AddButton( _T("&OK :("), WS_VISIBLE, 0,
-		130, 90, 60, 16, IDC_BUTTON_OK );
+		130, 80, 60, 16, IDC_BUTTON_OK );
 
 	DialogBoxIndirect(GetModuleHandle(0), dialogTemplate.GetDialogTemplate(), NULL, (DLGPROC)CvInitCoreReadFailureCallback);
 
