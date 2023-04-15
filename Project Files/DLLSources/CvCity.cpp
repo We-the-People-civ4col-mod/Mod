@@ -14305,42 +14305,45 @@ void CvCity::doOppressometerGrowth()
 		if (pPlot != NULL && isUnitWorkingPlot(i))
 		{
 			CvUnit* const pUnit = getUnitWorkingPlot(pPlot);
-			const int iForcedLaborFactor = pUnit->getForcedLaborFactor();
-			if (pUnit != NULL && iForcedLaborFactor > 0)
+			if (pUnit != NULL)
 			{
-				for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; eYield++)
+				const int iForcedLaborFactor = pUnit->getForcedLaborFactor();
+				if (iForcedLaborFactor > 0)
 				{
-					int iOppressometerGrowth = pPlot->getYield(eYield);
-
-					if (iOppressometerGrowth > 0)
+					for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; eYield++)
 					{
-						// forcedLaborFactor == 2 -> apply complete modifier, discriminationFactor == 1 -> apply 1/2 modifier (for indentured etc.)
-						iOppressometerGrowth *= 100 + ((GET_PLAYER(getOwnerINLINE()).getOppressometerForcedLaborModifier() * iForcedLaborFactor) / 2);
-						iOppressometerGrowth /= 100;
+						int iOppressometerGrowth = pPlot->getYield(eYield);
 
-						iOppressometerGrowth *= GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getOppressometerGrowthHandicap();
-						iOppressometerGrowth /= 100;
-
-						const int iDiscriminationFactor = pUnit->getDiscriminationFactor();
-						if (iDiscriminationFactor > 0)
+						if (iOppressometerGrowth > 0)
 						{
-							// discriminationFactor == 2 -> apply complete modifier, discriminationFactor == 1 -> apply 1/2 modifier
-							iOppressometerGrowth *= 100 + ((GET_PLAYER(getOwnerINLINE()).getOppressometerDiscriminationModifier() * iDiscriminationFactor) / 2);
+							// forcedLaborFactor == 2 -> apply complete modifier, discriminationFactor == 1 -> apply 1/2 modifier (for indentured etc.)
+							iOppressometerGrowth *= 100 + ((GET_PLAYER(getOwnerINLINE()).getOppressometerForcedLaborModifier() * iForcedLaborFactor) / 2);
 							iOppressometerGrowth /= 100;
-						}
 
-						if (iSlaveWorkerProductionBonus > 0 && pUnit->getUnitInfo().getYieldChange(eYield) > 0)
-						{
-							// if slaves are pushed more by a slave master, they will suffer even more oppression
-							iOppressometerGrowth *= (100 + iSlaveWorkerProductionBonus * 2);
+							iOppressometerGrowth *= GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getOppressometerGrowthHandicap();
 							iOppressometerGrowth /= 100;
+
+							const int iDiscriminationFactor = pUnit->getDiscriminationFactor();
+							if (iDiscriminationFactor > 0)
+							{
+								// discriminationFactor == 2 -> apply complete modifier, discriminationFactor == 1 -> apply 1/2 modifier
+								iOppressometerGrowth *= 100 + ((GET_PLAYER(getOwnerINLINE()).getOppressometerDiscriminationModifier() * iDiscriminationFactor) / 2);
+								iOppressometerGrowth /= 100;
+							}
+
+							if (iSlaveWorkerProductionBonus > 0 && pUnit->getUnitInfo().getYieldChange(eYield) > 0)
+							{
+								// if slaves are pushed more by a slave master, they will suffer even more oppression
+								iOppressometerGrowth *= (100 + iSlaveWorkerProductionBonus * 2);
+								iOppressometerGrowth /= 100;
+							}
+
+							// normalize Oppressometer growth by game speed
+							iOppressometerGrowth *= 100;
+							iOppressometerGrowth /= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
+
+							growOppressometer(iOppressometerGrowth);
 						}
-
-						// normalize Oppressometer growth by game speed
-						iOppressometerGrowth *= 100;
-						iOppressometerGrowth /= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
-
-						growOppressometer(iOppressometerGrowth);
 					}
 				}
 			}
