@@ -2130,8 +2130,8 @@ void CvInitCore::write(FDataStreamBase* pStream)
 
 	m_aeSlotStatus[getActivePlayer()] = eOldStatus;
 
-	writer.Write(NUM_UNIT_TYPES);
-	writer.Write(NUM_BUILDING_TYPES);
+	writer.Write((int)NUM_UNIT_TYPES);
+	writer.Write((int)NUM_BUILDING_TYPES);
 
 	writerbase.WriteFile();
 }
