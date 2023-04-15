@@ -248,6 +248,17 @@ void CvPlayer::init(PlayerTypes eID)
 	AI_init();
 
 	Update_cache_YieldEquipmentAmount(); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
+
+	if(isNative())
+	{
+		m_iOppressometerDiscriminationModifier = GLOBAL_DEFINE_OPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_NATIVES;
+	}
+	else
+	{
+		m_iOppressometerDiscriminationModifier = GLOBAL_DEFINE_OPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_COLONIZERS;
+	}
+	m_iOppressometerForcedLaborModifier = GLOBAL_DEFINE_OPPRESSOMETER_FORCED_LABOR_MODIFIER_BASE;
+	m_lPlayerOppressometer = 0l;
 }
 
 
@@ -1953,6 +1964,19 @@ bool CvPlayer::isNative() const
 	return GC.getCivilizationInfo(eCivilizationType).isNative();
 }
 
+bool CvPlayer::isColonizer() const
+{
+	if (getParent() != NO_PLAYER)
+	{
+		CvPlayer& kParent = GET_PLAYER(getParent());
+		if(kParent.isEurope())
+		{
+			return true;
+		}
+	}
+	return false;
+}
+
 CivCategoryTypes CvPlayer::getCivCategoryTypes() const
 {
 	CivilizationTypes eCivilizationType = getCivilizationType();
@@ -2328,6 +2352,8 @@ void CvPlayer::doTurn()
 	m_aiTradeMessageAmounts.clear();
 	m_aiTradeMessageCommissions.clear();
 	// TAC - Trade Messages - koma13 - END
+
+	recalculatePlayerOppressometer();
 
 	gDLL->getInterfaceIFace()->setDirty(CityInfo_DIRTY_BIT, true);
 
@@ -24624,6 +24650,43 @@ void CvPlayer::writeDesyncLog(FILE *f) const
 		fprintf(f, "\tCity %d %S\n", iLoop, pLoopCity->getName().c_str());
 		pLoopCity->writeDesyncLog(f);
 	}
+}
+
+void CvPlayer::changeOppressometerDiscriminationModifier(int iChange)
+{
+	m_iOppressometerDiscriminationModifier += iChange;
+	FAssert(m_iOppressometerDiscriminationModifier > 0);
+}
+
+void CvPlayer::changeOppressometerForcedLaborModifier(int iChange)
+{
+	m_iOppressometerForcedLaborModifier += iChange;
+	FAssert(m_iOppressometerForcedLaborModifier > 0);
+}
+
+
+void CvPlayer::recalculatePlayerOppressometer()
+{
+	long long lOldPlayerOppressometer = m_lPlayerOppressometer;
+	m_lPlayerOppressometer = 0;
+	int iLoop;
+	for (CvCity *pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+	{
+		m_lPlayerOppressometer += pLoopCity->getOppressometer();
+	}
+
+	// capping to MAX_INT because possibly the game can not handle larger numbers
+	if (m_lPlayerOppressometer > MAX_INT)
+	{
+		m_lPlayerOppressometer = MAX_INT;
+	}
+	if (lOldPlayerOppressometer > MAX_INT)
+	{
+		lOldPlayerOppressometer = MAX_INT;
+	}
+
+	// debug message - delete later!
+	// gDLL->UI().addPlayerMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_OPPRESSOMETER_RECALCULATION_PLAYER", static_cast<int>(lOldPlayerOppressometer), static_cast<int>(getPlayerOppressometer())), Coordinates::invalidCoord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO);
 }
 
 void CvPlayer::read(FDataStreamBase* pStream)

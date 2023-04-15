@@ -247,6 +247,7 @@ public:
 	DllExport bool isHuman() const;
 	DllExport void updateHuman();
 	bool isNative() const;
+	bool isColonizer() const;
 	CivCategoryTypes getCivCategoryTypes() const;
 	bool isAlwaysOpenBorders() const;
 	DllExport const wchar* getName(uint uiForm = 0) const;
@@ -1245,6 +1246,29 @@ public:
 
 	// Clean this up
 	std::vector<ProfessionTypes> m_validCityJobProfessions;
+
+protected:
+	int m_iOppressometerDiscriminationModifier;
+	int m_iOppressometerForcedLaborModifier;
+	long long m_lPlayerOppressometer;
+
+	void changeOppressometerDiscriminationModifier(int iChange);
+	void changeOppressometerForcedLaborModifier(int iChange);
+	void recalculatePlayerOppressometer();
+
+public:
+	int getOppressometerDiscriminationModifier() const
+	{
+		return m_iOppressometerDiscriminationModifier;
+	}
+	int getOppressometerForcedLaborModifier() const
+	{
+		return m_iOppressometerForcedLaborModifier;
+	}
+	long long getPlayerOppressometer() const
+	{
+		return m_lPlayerOppressometer;
+	}
 };
 
 // cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale

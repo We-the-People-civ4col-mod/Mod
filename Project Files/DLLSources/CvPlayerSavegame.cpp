@@ -110,9 +110,12 @@ const int defaultTotalPlayerAfricaSellProfitModifierInPercent = 0; // WTP, Afric
 const int defaultTotalPlayerPortRoyalSellProfitModifierInPercent = 0; // WTP, Africa and Port Royal Profit Modifiers - START
 const int defaultTotalPlayerDomesticMarketProfitModifierInPercent = 0; // WTP, ray, Domestic Market Profit Modifier - START
 
+const int defaultOppressometerDiscriminationModifier = GLOBAL_DEFINE_OPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_COLONIZERS;
+const int defaultOppressometerForcedLaborModifier = GLOBAL_DEFINE_OPPRESSOMETER_FORCED_LABOR_MODIFIER_BASE;
+
 const unsigned long defaultRandomSeed = 0;
 
-// 
+//
 enum SavegameVariableTypes
 {
 	PlayerSave_END,
@@ -301,6 +304,9 @@ enum SavegameVariableTypes
 	PlayerSave_triggersFired,
 	PlayerSave_CacheUpdate,
 
+	PlayerSave_OppressometerDiscriminationModifier,
+	PlayerSave_OppressometerForcedLaborModifier,
+
 	PlayerSave_RandomSeed,
 
 	NUM_SAVE_ENUM_VALUES,
@@ -397,7 +403,7 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_CurrentEra: return "PlayerSave_CurrentEra";
 	case PlayerSave_Parent: return "PlayerSave_Parent";
 	case PlayerSave_ImmigrationConversion: return "PlayerSave_ImmigrationConversion";
-	
+
 	case PlayerSave_LandPlotYield: return "PlayerSave_LandPlotYield";
 	case PlayerSave_SeaPlotYield: return "PlayerSave_SeaPlotYield";
 	case PlayerSave_YieldRateModifier: return "PlayerSave_YieldRateModifier";
@@ -438,7 +444,7 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_MissionaryThresholdMultiplier: return "PlayerSave_MissionaryThresholdMultiplier";
 	case PlayerSave_ProfessionEquipmentModifier: return "PlayerSave_ProfessionEquipmentModifier";
 	case PlayerSave_TraitCount: return "PlayerSave_TraitCount";
-	
+
 	case PlayerSave_ScriptData: return "PlayerSave_ScriptData";
 
 	case PlayerSave_Civics: return "PlayerSave_Civics";
@@ -478,7 +484,7 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_listGameMessages: return "PlayerSave_listGameMessages";
 	case PlayerSave_listPopups: return "PlayerSave_listPopups";
 	case PlayerSave_listDiplomacy: return "PlayerSave_listDiplomacy";
-	
+
 	case PlayerSave_mapScoreHistory: return "PlayerSave_mapScoreHistory";
 	case PlayerSave_mapEconomyHistory: return "PlayerSave_mapEconomyHistory";
 	case PlayerSave_mapIndustryHistory: return "PlayerSave_mapIndustryHistory";
@@ -497,6 +503,8 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_triggersFired: return "PlayerSave_triggersFired";
 	case PlayerSave_CacheUpdate: return "PlayerSave_CacheUpdate";
 
+	case PlayerSave_OppressometerDiscriminationModifier: return "PlayerSave_OppressometerDiscriminationModifier";
+	case PlayerSave_OppressometerForcedLaborModifier: return "PlayerSave_OppressometerForcedLaborModifier";
 	}
 	return "";
 }
@@ -510,7 +518,7 @@ int getNumSavedEnumValuesPlayer()
 void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 {
 	m_iNumCombatsWon = defaultNumCombatsWon;
-	m_iNumSeaCombatsWon = defaultNumSeaCombatsWon; 
+	m_iNumSeaCombatsWon = defaultNumSeaCombatsWon;
 	m_iStartingX = defaultStartingX;
 	m_iStartingY = defaultStartingY;
 	m_iTotalPopulation = defaultTotalPopulation;
@@ -603,6 +611,16 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_eCurrentEra= defaultCurrentEra;
 	m_eParent= defaultParent;
 	m_eImmigrationConversion= defaultImmigrationConversion;
+
+	if (isNative())
+	{
+		m_iOppressometerDiscriminationModifier = GLOBAL_DEFINE_OPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_NATIVES;
+	}
+	else
+	{
+		m_iOppressometerDiscriminationModifier = GLOBAL_DEFINE_OPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_COLONIZERS;
+	}
+	m_iOppressometerForcedLaborModifier = defaultOppressometerForcedLaborModifier;
 
 	m_em_iLandPlotYield.reset();
 	m_em_iSeaPlotYield.reset();
@@ -744,7 +762,7 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_DomesticGreatGeneralRateModifier: reader.Read(m_iDomesticGreatGeneralRateModifier); break;
 		case PlayerSave_ImmigrationThresholdMultiplier: reader.Read(m_iImmigrationThresholdMultiplier); break;
 		case PlayerSave_RevolutionEuropeUnitThresholdMultiplier: reader.Read(m_iRevolutionEuropeUnitThresholdMultiplier); break;
-		
+
 		case PlayerSave_NativeAngerModifier: reader.Read(m_iNativeAngerModifier); break;
 		case PlayerSave_FreeExperience: reader.Read(m_iFreeExperience); break;
 		case PlayerSave_WorkerSpeedModifier: reader.Read(m_iWorkerSpeedModifier); break;
@@ -865,7 +883,7 @@ void CvPlayer::read(CvSavegameReader reader)
 
 		case PlayerSave_ImprovementYieldChange: reader.Read(m_em_iImprovementYieldChange); break;
 		case PlayerSave_BuildingYieldChange: reader.Read(m_em_iBuildingYieldChange); break;
-		
+
 		case PlayerSave_groupCycle: reader.Read(m_groupCycle); break;
 		case PlayerSave_CityNames: reader.Read(m_aszCityNames); break;
 		case PlayerSave_cities: reader.Read(m_cities); break;
@@ -917,6 +935,9 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_chievesTurn: reader.Read(m_achievesTurn); break;
 		case PlayerSave_triggersFired: reader.Read(m_triggersFired); break;
 
+		case PlayerSave_OppressometerDiscriminationModifier: reader.Read(m_iOppressometerDiscriminationModifier); break;
+		case PlayerSave_OppressometerForcedLaborModifier: reader.Read(m_iOppressometerForcedLaborModifier); break;
+
 		case PlayerSave_CacheUpdate:
 			// Updating cache prior to reading anything, which relies on cache to load properly or set other caches
 			// Cities in particular relies on cached values in CvPlayer
@@ -931,7 +952,7 @@ void CvPlayer::read(CvSavegameReader reader)
 	// Get the NetID from the initialization structure
 	setNetID(gDLL->getAssignedNetworkID(getID()));
 
-	
+
 
 	Update_cache_YieldEquipmentAmount(); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 
@@ -953,7 +974,7 @@ void CvPlayer::write(CvSavegameWriter writer)
 	// If nothing is saved, the loading code will use the default values.
 	// Less data saved/loaded means smaller savegames.
 	writer.Write(PlayerSave_NumCombatsWon, m_iNumCombatsWon, defaultNumCombatsWon);
-	writer.Write(PlayerSave_NumSeaCombatsWon, m_iNumSeaCombatsWon, defaultNumSeaCombatsWon); 
+	writer.Write(PlayerSave_NumSeaCombatsWon, m_iNumSeaCombatsWon, defaultNumSeaCombatsWon);
 	writer.Write(PlayerSave_StartingX, m_iStartingX, defaultStartingX);
 	writer.Write(PlayerSave_StartingY, m_iStartingY, defaultStartingY);
 	writer.Write(PlayerSave_TotalPopulation, m_iTotalPopulation, defaultTotalPopulation);
@@ -969,7 +990,7 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_DomesticGreatGeneralRateModifier, m_iDomesticGreatGeneralRateModifier, defaultDomesticGreatGeneralRateModifier);
 	writer.Write(PlayerSave_ImmigrationThresholdMultiplier, m_iImmigrationThresholdMultiplier, defaultImmigrationThresholdMultiplier);
 	writer.Write(PlayerSave_RevolutionEuropeUnitThresholdMultiplier, m_iRevolutionEuropeUnitThresholdMultiplier, defaultRevolutionEuropeUnitThresholdMultiplier);
-	
+
 	writer.Write(PlayerSave_NativeAngerModifier, m_iNativeAngerModifier, defaultNativeAngerModifier);
 	writer.Write(PlayerSave_FreeExperience, m_iFreeExperience, defaultFreeExperience);
 	writer.Write(PlayerSave_WorkerSpeedModifier, m_iWorkerSpeedModifier, defaultWorkerSpeedModifier);
@@ -1029,7 +1050,7 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_TurnActive, m_bTurnActive, defaultTurnActive);
 	writer.Write(PlayerSave_AutoMoves, m_bAutoMoves, defaultAutoMoves);
 	writer.Write(PlayerSave_EndTurn, m_bEndTurn, defaultEndTurn);
-	writer.Write(PlayerSave_PbemNewTurn, m_bPbemNewTurn && GC.getGameINLINE().isPbem(), defaultPbemNewTurn); 
+	writer.Write(PlayerSave_PbemNewTurn, m_bPbemNewTurn && GC.getGameINLINE().isPbem(), defaultPbemNewTurn);
 	writer.Write(PlayerSave_ExtendedGame, m_bExtendedGame, defaultExtendedGame);
 	writer.Write(PlayerSave_FoundedFirstCity, m_bFoundedFirstCity, defaultFoundedFirstCity);
 	writer.Write(PlayerSave_Strike, m_bStrike, defaultStrike);
@@ -1164,6 +1185,8 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_chievesTurn, m_achievesTurn);
 	writer.Write(PlayerSave_triggersFired, m_triggersFired);
 
+	writer.Write(PlayerSave_OppressometerDiscriminationModifier, m_iOppressometerDiscriminationModifier);
+	writer.Write(PlayerSave_OppressometerForcedLaborModifier, m_iOppressometerForcedLaborModifier);
 
 	// forces a cache update on read
 	// Anything relying on CivEffect should be below this

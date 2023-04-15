@@ -52,6 +52,7 @@
             <iMaxGoldAskPercent>20</iMaxGoldAskPercent>
             <iMinGoldAskPercent>10</iMinGoldAskPercent>
             <iNBMOD_REF_Weight>50</iNBMOD_REF_Weight>
+            <iOppressometerGrowthHandicap>50</iOppressometerGrowthHandicap>
             <Waves>
                 <Wave>10</Wave>
                 <Wave>20</Wave>
@@ -224,6 +225,7 @@
             <iMaxGoldAskPercent>30</iMaxGoldAskPercent>
             <iMinGoldAskPercent>10</iMinGoldAskPercent>
             <iNBMOD_REF_Weight>75</iNBMOD_REF_Weight>
+            <iOppressometerGrowthHandicap>75</iOppressometerGrowthHandicap>
             <Waves>
                 <Wave>10</Wave>
                 <Wave>20</Wave>
@@ -396,6 +398,7 @@
             <iMaxGoldAskPercent>40</iMaxGoldAskPercent>
             <iMinGoldAskPercent>20</iMinGoldAskPercent>
             <iNBMOD_REF_Weight>100</iNBMOD_REF_Weight>
+            <iOppressometerGrowthHandicap>100</iOppressometerGrowthHandicap>
             <Waves>
                 <Wave>10</Wave>
                 <Wave>30</Wave>
@@ -568,6 +571,7 @@
             <iMaxGoldAskPercent>45</iMaxGoldAskPercent>
             <iMinGoldAskPercent>20</iMinGoldAskPercent>
             <iNBMOD_REF_Weight>110</iNBMOD_REF_Weight>
+            <iOppressometerGrowthHandicap>110</iOppressometerGrowthHandicap>
             <Waves>
                 <Wave>20</Wave>
                 <Wave>30</Wave>
@@ -740,6 +744,7 @@
             <iMaxGoldAskPercent>50</iMaxGoldAskPercent>
             <iMinGoldAskPercent>25</iMinGoldAskPercent>
             <iNBMOD_REF_Weight>125</iNBMOD_REF_Weight>
+            <iOppressometerGrowthHandicap>125</iOppressometerGrowthHandicap>
             <Waves>
                 <Wave>20</Wave>
                 <Wave>30</Wave>
@@ -912,6 +917,7 @@
             <iMaxGoldAskPercent>50</iMaxGoldAskPercent>
             <iMinGoldAskPercent>25</iMinGoldAskPercent>
             <iNBMOD_REF_Weight>150</iNBMOD_REF_Weight>
+            <iOppressometerGrowthHandicap>150</iOppressometerGrowthHandicap>
             <Waves>
                 <Wave>30</Wave>
                 <Wave>30</Wave>
@@ -1084,6 +1090,7 @@
             <iMaxGoldAskPercent>60</iMaxGoldAskPercent>
             <iMinGoldAskPercent>30</iMinGoldAskPercent>
             <iNBMOD_REF_Weight>175</iNBMOD_REF_Weight>
+            <iOppressometerGrowthHandicap>175</iOppressometerGrowthHandicap>
             <Waves>
                 <Wave>30</Wave>
                 <Wave>30</Wave>

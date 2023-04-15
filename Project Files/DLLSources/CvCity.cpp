@@ -329,6 +329,9 @@ void CvCity::init(int iID, PlayerTypes eOwner, Coordinates initCoord, bool bBump
 	GET_PLAYER(getOwnerINLINE()).AI_invalidateDistanceMap();
 	AI_init();
 	m_iSlaveWorkerProductionBonus = 0;
+
+	m_iOppressometer = 0;
+	m_iOppressometerGrowthModifier = 100;
 }
 
 
@@ -548,6 +551,7 @@ void CvCity::doTurn()
 		doPlotCulture(false, getOwnerINLINE(), getCultureRate());
 	}
 
+
 	if (!m_bHasHurried && !isHuman() && !isNative())
 	{
 		// Hurry needs to happen just before the production processing to avoid
@@ -678,6 +682,9 @@ void CvCity::doTurn()
 		}
 	}
 	// Fixing stuck units in colonies - Nightinggale - End
+
+	doOppressometerDecay();
+	doOppressometerGrowth();
 
 	// ONEVENT - Do turn
 	gDLL->getEventReporterIFace()->cityDoTurn(this, getOwnerINLINE());
@@ -2910,12 +2917,12 @@ int CvCity::growthThreshold() const
 	{
 		iTotalModifier = 50;
 	}
-	
+
 	if (iTotalModifier < -50)
 	{
 		iTotalModifier = -50;
 	}
-	
+
 	return ((GET_PLAYER(getOwnerINLINE()).getGrowthThreshold(getPopulation()) * (100 - iTotalModifier)) / 100);
 }
 
@@ -5217,7 +5224,7 @@ void CvCity::cache_storageLossTradeValues_usingCachedData(BuildingTypes eBuildin
 	//Use values for sell percantage, boycott ignoring and unlocking the trade settings, if they are better than the current ones.
 
 	int i_building_StorageLossSellPercentage = refBuildingInfo.getStorageLossSellPercentage();
-	if (i_building_StorageLossSellPercentage > m_iStorageLossSellPercentage) 
+	if (i_building_StorageLossSellPercentage > m_iStorageLossSellPercentage)
 	{
 		m_iStorageLossSellPercentage = i_building_StorageLossSellPercentage;
 	}
@@ -5998,7 +6005,7 @@ void CvCity::alterUnitWorkingBuilding(BuildingTypes eBuilding, int iUnitId, bool
 								// R&R, ray , MYCP partially based on code of Aymerick - END
 							{
 								// R&R, ray , MYCP partially based on code of Aymerick - START
-								const int iUnproducedAmount = (getYieldStored((YieldTypes)professionInfo.getYieldsConsumed(0)) + 
+								const int iUnproducedAmount = (getYieldStored((YieldTypes)professionInfo.getYieldsConsumed(0)) +
 									getYieldRate((YieldTypes)professionInfo.getYieldsConsumed(0))) - getProfessionInput(eLoopProfession, pUnit);
 								// R&R, ray , MYCP partially based on code of Aymerick - END
 								if (iUnproducedAmount < 0)
@@ -6562,7 +6569,7 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 	bool bStart;
 	bool bMessage;
 	int iProductionNeeded;
-	
+
 	if (iNum == -1)
 	{
 		iNum = (getOrderQueueLength() - 1);
@@ -7217,7 +7224,7 @@ void CvCity::doYields()
 	// WTP, ray, Domestic Market Profit Modifier - END
 
 	// R&R, ray, adjustment Domestic Markets
-	
+
 
 	if (getMarketModifier() > 0)
 	{
@@ -8519,7 +8526,7 @@ bool CvCity::isEventOccured(EventTypes eEvent) const
 			return true;
 		}
 	}
-	
+
 	return false;
 }
 
@@ -13176,7 +13183,7 @@ void CvCity::doLbD()
 			bool lbd_expert_successful = false;
 			bool lbd_free_successful = false;
 			bool lbd_escape_successful = false;
-			
+
 			//get LearnLevel of profession
 			int learn_level = GC.getProfessionInfo(pLoopUnit->getProfession()).LbD_getLearnLevel();
 			// just for safety, catch possible XML mistakes which might break calculation
@@ -14281,4 +14288,100 @@ void CvCity::writeDesyncLog(FILE *f) const
 			fprintf(f, "\t\t\t%S: %d\n", GC.getYieldInfo(eYield).getDescription(), iNum);
 		}
 	}
+}
+
+void CvCity::doOppressometerGrowth()
+{
+	if (isOccupation() || isNative())
+	{
+		// for now, don't run this for natives, but might be changed later if natives are made playable one day ;)
+		return;
+	}
+
+	const int iOldOppressometer = getOppressometer();
+
+	const int iSlaveWorkerProductionBonus = getSlaveWorkerProductionBonus();
+	for (int i = 0; i < NUM_CITY_PLOTS; ++i)
+	{
+		CvPlot* pPlot = getCityIndexPlot(i);
+		if (pPlot != NULL && isUnitWorkingPlot(i))
+		{
+			CvUnit* const pUnit = getUnitWorkingPlot(pPlot);
+			const int iForcedLaborFactor = pUnit->getForcedLaborFactor();
+			if (pUnit != NULL && iForcedLaborFactor > 0)
+			{
+				for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; eYield++)
+				{
+					int iOppressometerGrowth = pPlot->getYield(eYield);
+
+					if (iOppressometerGrowth > 0)
+					{
+						// forcedLaborFactor == 2 -> apply complete modifier, discriminationFactor == 1 -> apply 1/2 modifier (for indentured etc.)
+						iOppressometerGrowth *= 100 + ((GET_PLAYER(getOwnerINLINE()).getOppressometerForcedLaborModifier() * iForcedLaborFactor) / 2);
+						iOppressometerGrowth /= 100;
+
+						iOppressometerGrowth *= GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getOppressometerGrowthHandicap();
+						iOppressometerGrowth /= 100;
+
+						const int iDiscriminationFactor = pUnit->getDiscriminationFactor();
+						if (iDiscriminationFactor > 0)
+						{
+							// discriminationFactor == 2 -> apply complete modifier, discriminationFactor == 1 -> apply 1/2 modifier
+							iOppressometerGrowth *= 100 + ((GET_PLAYER(getOwnerINLINE()).getOppressometerDiscriminationModifier() * iDiscriminationFactor) / 2);
+							iOppressometerGrowth /= 100;
+						}
+
+						if (iSlaveWorkerProductionBonus > 0 && pUnit->getUnitInfo().getYieldChange(eYield) > 0)
+						{
+							// if slaves are pushed more by a slave master, they will suffer even more oppression
+							iOppressometerGrowth *= (100 + iSlaveWorkerProductionBonus * 2);
+							iOppressometerGrowth /= 100;
+						}
+
+						// normalize Oppressometer growth by game speed
+						iOppressometerGrowth *= 100;
+						iOppressometerGrowth /= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
+
+						growOppressometer(iOppressometerGrowth);
+					}
+				}
+			}
+		}
+	}
+	// debug message - delete later!
+	// gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_OPPRESSOMETER_GROWTH_CITY", getNameKey(), iOldOppressometer, getOppressometer()), coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO);
+}
+
+void CvCity::changeOppressometer(int iChange)
+{
+	m_iOppressometer += iChange;
+	FAssert(m_iOppressometer >= 0);
+}
+
+void CvCity::growOppressometer(int iChange)
+{
+// add to oppressometer modified by Oppressometer growth modifier
+	FAssert(iChange >= 0);
+	const int iEffectiveChange = (iChange * getOppressometerGrowthModifier()) / 100;
+	changeOppressometer(iEffectiveChange);
+}
+
+void CvCity::changeOppressometerGrowthModifier(int iChange)
+{
+	m_iOppressometerGrowthModifier += iChange;
+	FAssert(m_iOppressometerGrowthModifier > 0);
+}
+
+void CvCity::doOppressometerDecay()
+{
+	int iOppressometerDecayRate = GLOBAL_DEFINE_OPPRESSOMETER_DECAY_RATE_BASE; // (percent value)
+	// start with a flat decay, later this could have modifiers
+	// e.g. high percentage of non-free citizens should decrease decay rate
+	// or FF with some change to it
+
+	// normalize Oppressometer decay by game speed
+	iOppressometerDecayRate *= 100;
+	iOppressometerDecayRate /= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
+
+	changeOppressometer(- (getOppressometer() * iOppressometerDecayRate) / 100);
 }
