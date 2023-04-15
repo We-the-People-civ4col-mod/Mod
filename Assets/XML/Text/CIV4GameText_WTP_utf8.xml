@@ -123,7 +123,7 @@
     <TEXT>
         <Tag>TXT_KEY_NATIVES_NOT_WILLING_ALREADY_COLONIST_LEARNING</Tag>
         <English>Milord, a foreign colonist is already living and learning in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. The Natives do not want to take a second one.[NEWLINE]We should come back when that other European has completed his training in the settlement.</English>
-        <German>Milord, es lebt und lernt bereits ein anderer Europäer in [COLOR_SELECTED_TEXT]c[COLOR_REVERT]. Die Ureinwohner möchten vorerst keinen weiteren aufnehmen.[NEWLINE]Wir sollten zurückkehren, wenn der andere Europäer seine Zeit in der Siedlung beendet hat.</German>
+        <German>Milord, es lebt und lernt bereits ein anderer Europäer in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. Die Ureinwohner möchten vorerst keinen weiteren aufnehmen.[NEWLINE]Wir sollten zurückkehren, wenn der andere Europäer seine Zeit in der Siedlung beendet hat.</German>
         <Russian>Милорд, другой колонист уже живет и учится в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. Индейцы не хотят брать второго.[NEWLINE]Мы можем вернуться, когда тот колонист завершит свое обучение в этом поселении.</Russian>
     </TEXT>
     <TEXT>
