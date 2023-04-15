@@ -90,7 +90,6 @@ enum SavegameVariableTypes
 	Save_workingCity,
 	Save_workingCityOverride,
 
-	Save_aiYield,
 	Save_Revealed,
 	Save_RevealedImprovementRouteSingle,
 	Save_RevealedImprovementRouteArray,
@@ -166,7 +165,6 @@ const char* getSavedEnumNamePlot(SavegameVariableTypes eType)
 	case Save_workingCity: return "Save_workingCity";
 	case Save_workingCityOverride: return "Save_workingCityOverride";
 
-	case Save_aiYield: return "Save_aiYield";
 	case Save_Revealed: return "Save_Revealed";
 	case Save_RevealedImprovementRouteSingle: return "Save_RevealedImprovementRouteSingle";
 	case Save_RevealedImprovementRouteArray: return "Save_RevealedImprovementRouteArray";
@@ -338,8 +336,6 @@ void CvPlot::read(CvSavegameReader reader)
 			}
 		} break;
 
-		case Save_aiYield                  : reader.Read(m_em_iYield)                         ; break;
-
 		// PlayerArrays
 		case Save_Culture                  : reader.Read(m_em_iCulture)                       ; break;
 		case Save_CultureRangeForts        : reader.Read(m_em_iCultureRangeForts)             ; break;
@@ -444,7 +440,7 @@ void CvPlot::write(CvSavegameWriter writer)
 	writer.Write(Save_workingCity, m_workingCity);
 	writer.Write(Save_workingCityOverride, m_workingCityOverride);
 
-	writer.Write(Save_aiYield, m_em_iYield); // todo: figure out if it is safe to remove. It is recalculated in CvPlot::postLoadFixes
+	// m_em_iYield recalculated on load
 
 	writer.Write(Save_Revealed, m_em_bRevealed);
 
