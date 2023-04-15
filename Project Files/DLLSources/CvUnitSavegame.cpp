@@ -84,9 +84,7 @@ enum SavegameVariableTypes
 
 	UnitSave_ImmobileTimer,
 	UnitSave_YieldStored,
-	UnitSave_ExtraWorkRate, // not used
 	UnitSave_UnitTravelTimer,
-	UnitSave_BadCityDefenderCount, // not used
 	UnitSave_PostCombatPlotIndex,
 	UnitSave_LbDrounds,
 	UnitSave_AmountForNativeTrade,
@@ -154,9 +152,7 @@ const char* getSavedEnumNameUnit(SavegameVariableTypes eType)
 
 	case UnitSave_ImmobileTimer: return "UnitSave_ImmobileTimer";
 	case UnitSave_YieldStored: return "UnitSave_YieldStored";
-	case UnitSave_ExtraWorkRate: return "UnitSave_ExtraWorkRate";
 	case UnitSave_UnitTravelTimer: return "UnitSave_UnitTravelTimer";
-	case UnitSave_BadCityDefenderCount: return "UnitSave_BadCityDefenderCount";
 	case UnitSave_PostCombatPlotIndex: return "UnitSave_PostCombatPlotIndex";
 	case UnitSave_LbDrounds: return "UnitSave_LbDrounds";
 	case UnitSave_LbDroundsBefore: return "UnitSave_LbDroundsBefore";
@@ -318,9 +314,7 @@ void CvUnit::read(CvSavegameReader reader)
 		}
 		case UnitSave_ImmobileTimer: reader.Read(m_iImmobileTimer); break;
 		case UnitSave_YieldStored: reader.Read(m_iYieldStored); break;
-		case UnitSave_ExtraWorkRate: reader.Discard<int>(); break;
 		case UnitSave_UnitTravelTimer: reader.Read(m_iUnitTravelTimer); break;
-		case UnitSave_BadCityDefenderCount: reader.Discard<int>(); break;
 		case UnitSave_PostCombatPlotIndex: reader.Read(m_iPostCombatPlotIndex); break;
 		case UnitSave_LbDrounds: reader.Read(m_iLbDrounds); break;
 		case UnitSave_LbDroundsBefore: reader.Read(m_iLbDroundsBefore); break;

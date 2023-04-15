@@ -94,8 +94,6 @@ enum SavegameVariableTypes
 	CitySave_WorksWaterCount,
 	CitySave_RebelSentiment,
 	CitySave_CityHealth, // R&R, ray, Health
-	CitySave_CityHarbourSpace,// WTP, ray, new Harbour System - START
-	CitySave_CityBarracksSpace,// WTP, ray, new Barracks System - START
 	CitySave_CityHappiness, // WTP, ray, Happiness - START
 	CitySave_CityUnHappiness, // WTP, ray, Happiness - START
 	CitySave_CityTimerFestivitiesOrUnrest, // WTP, ray, Happiness - START
@@ -224,8 +222,6 @@ const char* getSavedEnumNameCity(SavegameVariableTypes eType)
 		case CitySave_WorksWaterCount: return "CitySave_WorksWaterCount";
 		case CitySave_RebelSentiment: return "CitySave_RebelSentiment";
 		case CitySave_CityHealth: return "CitySave_CityHealth";
-		case CitySave_CityHarbourSpace: return "CitySave_CityHarbourSpace"; // WTP, ray, new Harbour System - START
-		case CitySave_CityBarracksSpace: return "CitySave_CityBarracksSpace"; // WTP, ray, new Barracks System - START
 		case CitySave_CityHappiness: return "CitySave_CityHappiness"; // WTP, ray, Happiness - START
 		case CitySave_CityUnHappiness: return "CitySave_CityUnhappiness"; // WTP, ray, Happiness - START
 		case CitySave_CityTimerFestivitiesOrUnrest: return "CitySave_CityTimerFestivitiesOrUnrest"; // WTP, ray, Happiness - START
@@ -511,8 +507,6 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_WorksWaterCount                            : reader.Read(m_iWorksWaterCount)                          ; break;
 		case CitySave_RebelSentiment                             : reader.Read(m_iRebelSentiment)                           ; break;
 		case CitySave_CityHealth                                 : reader.Read(m_iCityHealth)                               ; break; // R&R, ray, Health
-		case CitySave_CityHarbourSpace                           : reader.Discard<int>()                                    ; break; // WTP, ray, new Harbour System - START
-		case CitySave_CityBarracksSpace                          : reader.Discard<int>()                                    ; break; // WTP, ray, new Barracks System - START
 		case CitySave_CityHappiness                              : reader.Read(m_iCityHappiness)                            ; break; // WTP, ray, Happiness - START
 		case CitySave_CityUnHappiness                            : reader.Read(m_iCityUnHappiness)                          ; break; // WTP, ray, Happiness - START
 		case CitySave_CityTimerFestivitiesOrUnrest               : reader.Read(m_iCityTimerFestivitiesOrUnrest)             ; break; // WTP, ray, Happiness - START
