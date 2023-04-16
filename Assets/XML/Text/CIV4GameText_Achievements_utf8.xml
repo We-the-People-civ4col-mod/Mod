@@ -1239,7 +1239,7 @@
         <English>"[COLOR_SELECTED_TEXT]800[COLOR_REVERT]", offers the city treasurer.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]No, 1000[COLOR_REVERT]", answers the captain of the smuggler anchored inshore. "[COLOR_SELECTED_TEXT]Look at these precious goods! Where do you think we got them?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]All right, 900, otherwise we could have paid the taxes directly instead of hiring you and your ship[COLOR_REVERT]", argues the governor's agent.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hurry up! The dragoons will spot us![COLOR_REVERT]" shouts the militia officer nervously from the shadows.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]All right,[COLOR_REVERT]" the captain admits defeat, "[COLOR_SELECTED_TEXT]nice doing business with you,[COLOR_REVERT]" and accepts the bulging leather bag. "[COLOR_SELECTED_TEXT]Let's get out of here, boys,[COLOR_REVERT]" he calls to his men, "[COLOR_SELECTED_TEXT]we've got another appointment in an hour.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>« 800 », propose le trésorier de la ville.[NEWLINE][NEWLINE]- « Non 1000 », répond le contrebandier depuis son navire qui mouille au port. « Regardez donc la qualité de nos produits, vous croyez qu'on se les est procurés comment ? »[NEWLINE][NEWLINE]- « D'accord, 900, mais pas plus, sinon autant payer les taxes plutôt que d'avoir recours à vos services » explique le négociant.[NEWLINE][NEWLINE]- « Dépêchez-vous maintenant, on n'a plus le temps » intervient le milicien du port qui touche son bakchich.[NEWLINE][NEWLINE]- « Bon, ok pour 900 », répond le capitaine. « Allez les gars, on débarque la marchandise en vitesse pour ne pas prendre de retard ! »[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]800[COLOR_REVERT]", wagt sich der Stadtkämmerer vor.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nein, 1000[COLOR_REVERT]", gibt der Käpt'n des Schmugglers zurück, der unmittelbar vor der Küste Anker geworfen hat. "[COLOR_SELECTED_TEXT]Seht euch diese kostbaren Waren an, was glaubt ihr denn, wo die herkommen?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Also gut, 900, sonst hätten wir ja gleich die Steuern bezahlen können[COLOR_REVERT]", meint der Stellvertreter des Gouverneurs.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ihr solltet euch besser beeilen, sonst entdecken uns die Dragoner![COLOR_REVERT]" ruft der Miliz-Offizier nervös dazwischen.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Also gut,[COLOR_REVERT]" gibt sich der Käpt'n geschlagen, "[COLOR_SELECTED_TEXT]schön mit Euch Geschäfte zu machen[COLOR_REVERT]", und nimmt den prall gefüllten Lederbeutel entgegen. "[COLOR_SELECTED_TEXT]Hau'n wir ab, Jungs,[COLOR_REVERT]" ruft er seinen Männern zu, "[COLOR_SELECTED_TEXT]in einer Stunde haben wir schon die nächste Verabredung.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Russian>«[COLOR_SELECTED_TEXT]800[COLOR_REVERT]» — предлагает городской казначей.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Нет, 1000[COLOR_REVERT]" - отвечает капитан контрабандистского корабля, стоящего на якоре у берега. "[COLOR_SELECTED_TEXT]Посмотрите на эти драгоценности! Как вы думаете, откуда мы их взяли?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Хорошо, 900, иначе мы могли бы напрямую платить налоги, вместо того, чтобы нанимать вас и ваш корабль[COLOR_REVERT]" - возражает агент губернатора.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Поторопись! Драгуны могут нас заметить![COLOR_REVERT]" - нервно кричит из тени офицер ополчения.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ваша взяла.[COLOR_REVERT]" - соглашается капитан - "[COLOR_SELECTED_TEXT]Было приятно иметь с вами дело.[COLOR_REVERT]"  - и берет пухлую кожаную сумку с монетами. "[COLOR_SELECTED_TEXT]Давайте убираться отсюда, ребята.[COLOR_REVERT] – зовет он своих людей – [COLOR_SELECTED_TEXT]У нас еще одна встреча через час.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+        <Russian>"[COLOR_SELECTED_TEXT]800[COLOR_REVERT]" — предлагает городской казначей.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Нет, 1000[COLOR_REVERT]" - отвечает капитан контрабандистского корабля, стоящего на якоре у берега. "[COLOR_SELECTED_TEXT]Посмотрите на эти драгоценности! Как вы думаете, откуда мы их взяли?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Хорошо, 900, иначе мы могли бы напрямую платить налоги, вместо того, чтобы нанимать вас и ваш корабль[COLOR_REVERT]" - возражает агент губернатора.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Поторопись! Драгуны могут нас заметить![COLOR_REVERT]" - нервно кричит из тени офицер ополчения.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ваша взяла.[COLOR_REVERT]" - соглашается капитан - "[COLOR_SELECTED_TEXT]Было приятно иметь с вами дело.[COLOR_REVERT]"  - и берет пухлую кожаную сумку с монетами. "[COLOR_SELECTED_TEXT]Давайте убираться отсюда, ребята.[COLOR_REVERT] – зовет он своих людей – [COLOR_SELECTED_TEXT]У нас еще одна встреча через час.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SLOOP</Tag>
@@ -1689,21 +1689,21 @@
         <English>Your first able captain</English>
         <French>Your first able captain</French>
         <German>Euer erster Fähiger Kapitän</German>
-        <Russian>Your first able captain</Russian>
+        <Russian>Ваш первый способный капитан</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CAPABLE_CAPTAIN_HEAD</Tag>
         <English>A master and commander</English>
         <French>A master and commander</French>
         <German>Ein Kapitän für Eure Schiffe</German>
-        <Russian>A master and commander</Russian>
+        <Russian>Почёт и уважение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CAPABLE_CAPTAIN_TEXT</Tag>
         <English>Evey ship needs a captain. Today you were able to hire a particular experienced sailor![NEWLINE][NEWLINE]They say a ship is only as good as its captain. Many brave men learn the seamen's business, but not everyone has leadership qualities. Many a drunkard has set his ship on the nearest rock or bullied his crew. But here and now you could recruit a true expert of the sea. Pay him well before he changes sides![NEWLINE][NEWLINE]</English>
         <French>Evey ship needs a captain. Today you were able to hire a particular experienced sailor![NEWLINE][NEWLINE]They say a ship is only as good as its captain. Many brave men learn the seamen's business, but not everyone has leadership qualities. Many a drunkard has set his ship on the nearest rock or bullied his crew. But here and now you could recruit a true expert of the sea. Pay him well before he changes sides![NEWLINE][NEWLINE]</French>
         <German>Jedes Schiff braucht einen Kapitän. Heute konntet ihr einen besonders erfahrenen Seemann verpflichten![NEWLINE][NEWLINE]Man sagt ein Schiff ist nur so gut wie sein Kapitän. Viele tapfere Männer erlernen das Seemandshandwerk, aber nicht jeder hat Führungspersöhnlichkeit. Schon so mancher Trunkenbold hat sein Schiff auf den nächstbesten Felsen gesetzt oder seine Mannschaft tyrannisiert. Aber hier und heute konntet ihr einen wahren Fachmann der See anwerben. Bezahlt ihn gut, bevor er die Seiten wechselt![NEWLINE][NEWLINE]</German>
-        <Russian>Evey ship needs a captain. Today you were able to hire a particular experienced sailor![NEWLINE][NEWLINE]They say a ship is only as good as its captain. Many brave men learn the seamen's business, but not everyone has leadership qualities. Many a drunkard has set his ship on the nearest rock or bullied his crew. But here and now you could recruit a true expert of the sea. Pay him well before he changes sides![NEWLINE][NEWLINE]</Russian>
+        <Russian>Каждому кораблю нужен капитан. Сегодня вы смогли нанять особенно опытного моряка![NEWLINE][NEWLINE]Говорят, что корабль хорош настолько, насколько хорош его капитан. Многие смельчаки учатся морскому делу, но не все обладают лидерскими качествами. Многие пьяницы сажали свой корабль на ближайшую скалу или издевались над своей командой. Но здесь и сейчас перед вами настоящй знаток моря. Определите ему достойное жалование, прежде чем он переметнется на другую сторону![NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_WAREHOUSES</Tag>
@@ -1745,7 +1745,7 @@
         <English>Incessantly, the hands and eyes of his five children dart back and forth, following his nimble movements on the loom.[NEWLINE][NEWLINE]The widower proudly shows you the first bale of finished cloth.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A decent job![COLOR_REVERT]" you congratulate him. "[COLOR_SELECTED_TEXT]I will get a good price for it. And you will be paid well.[COLOR_REVERT]" The good man, his wife killed by wolves last winter while taking a walk in the nearby forest, looks at you expectantly.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]On the first Saturday of every month, you shall be able to stop work early in the evening to tend to your wife's grave.[COLOR_REVERT]"[NEWLINE][NEWLINE]Gratefully, the brave man beams at you.[NEWLINE][NEWLINE]On your way out, your boots accidentally kick an unsuspecting urchin crawling across the threshold. You do not care.[NEWLINE][NEWLINE]</English>
         <French>Incessantly, the hands and eyes of his five children dart back and forth, following his nimble movements on the loom.[NEWLINE][NEWLINE]The widower proudly shows you the first bale of finished cloth.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A decent job![COLOR_REVERT]" you congratulate him. "[COLOR_SELECTED_TEXT]I will get a good price for it. And you will be paid well.[COLOR_REVERT]" The good man, his wife killed by wolves last winter while taking a walk in the nearby forest, looks at you expectantly.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]On the first Saturday of every month, you shall be able to stop work early in the evening to tend to your wife's grave.[COLOR_REVERT]"[NEWLINE][NEWLINE]Gratefully, the brave man beams at you.[NEWLINE][NEWLINE]On your way out, your boots accidentally kick an unsuspecting urchin crawling across the threshold. You do not care.[NEWLINE][NEWLINE]</French>
         <German>Unablässig huschen Hände und Augen seiner fünf Kinder hin und her, folgen den flinken Bewegungen des Webschiffs.[NEWLINE][NEWLINE]Der Witwer zeigt Euch stolz den ersten Ballen Stoff, der fertig wurde.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Eine anständige Arbeit![COLOR_REVERT]" lobt Ihr. "[COLOR_SELECTED_TEXT]Dafür werde ich einen guten Preis erzielen. Und Euch soll es auch nicht zum Schaden gereichen.[COLOR_REVERT]" Erwartungsfroh blickt Euch der gute Herr, deren Gattin im letzten Winter beim Spazieren im nahen Wald von Wölfen angefallen wurde, an.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Jeden ersten Samstag im Monat sollt Ihr schon am frühen Abend mit der Arbeit aufhören können, um das Grab Eurer Frau zu pflegen.[COLOR_REVERT]"[NEWLINE][NEWLINE]Dankbar strahlt Euch der wackere Weberknecht an.[NEWLINE][NEWLINE]Beim Hinausgehen zertreten Eure Stiefel beiläufig einen arglosen Weberknecht, der über die Türschwelle krabbelt. Es kümmert Euch nicht.[NEWLINE][NEWLINE]</German>
-        <Russian>Incessantly, the hands and eyes of his five children dart back and forth, following his nimble movements on the loom.[NEWLINE][NEWLINE]The widower proudly shows you the first bale of finished cloth.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A decent job![COLOR_REVERT]" you congratulate him. "[COLOR_SELECTED_TEXT]I will get a good price for it. And you will be paid well.[COLOR_REVERT]" The good man, his wife killed by wolves last winter while taking a walk in the nearby forest, looks at you expectantly.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]On the first Saturday of every month, you shall be able to stop work early in the evening to tend to your wife's grave.[COLOR_REVERT]"[NEWLINE][NEWLINE]Gratefully, the brave man beams at you.[NEWLINE][NEWLINE]On your way out, your boots accidentally kick an unsuspecting urchin crawling across the threshold. You do not care.[NEWLINE][NEWLINE]</Russian>
+        <Russian>Непрестанно руки и глаза его пятерых детей бегают туда-сюда, следя за проворными движениями на ткацком станке.[NEWLINE][NEWLINE]Вдовец с гордостью показывает вам первый тюк готовой ткани.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Хорошая работа![COLOR_REVERT]" - поздравляете вы его. "[COLOR_SELECTED_TEXT]Я получу за это хорошую цену. И вам хорошо заплатят.[COLOR_REVERT]" Человек, жену которого загрызли волки прошлой зимой во время прогулки в ближайшем лесу, выжидающе смотрит на вас.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]В первую субботу каждого месяца вы сможете прекращать работу рано вечером, чтобы заняться могилой жены.[COLOR_REVERT]"[NEWLINE][NEWLINE]Мужчина с благодарностью улыбается вам.[NEWLINE][NEWLINE]На выходе ваши сапоги случайно задевают ничего не подозревающего мальчишку, переползающего через порог. Вам все равно.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_WEAVERS_HOUSE</Tag>
@@ -2527,7 +2527,7 @@
         <English>The first Renowned Medic</English>
         <French>The first Renowned Medic</French>
         <German>Der erste ausgebildete Ärzte</German>
-        <Russian>The first Renowned Medic</Russian>
+        <Russian>Первый известный медик</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_DOCTOR_HEAD</Tag>
@@ -2541,7 +2541,7 @@
         <English>"[COLOR_SELECTED_TEXT]You look like you need a good swig, Sir. Here, take this beer. It's still fresh. You look like you just stumbled off the ship. I know a newcomer when I see one.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]I am indeed new to this area, Mr. But I am not here to get a beer. I am here for the medical care of your female employees. I think it's necessary to keep the men of the colony healthy as well.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]My what? Oh, you mean the whores. Well, if you think so. But don't touch, Doc. Just examine![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>"[COLOR_SELECTED_TEXT]You look like you need a good swig, Sir. Here, take this beer. It's still fresh. You look like you just stumbled off the ship. I know a newcomer when I see one.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]I am indeed new to this area, Mr. But I am not here to get a beer. I am here for the medical care of your female employees. I think it's necessary to keep the men of the colony healthy as well.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]My what? Oh, you mean the whores. Well, if you think so. But don't touch, Doc. Just examine![COLOR_REVERT]"[NEWLINE][NEWLINE]]</French>
         <German>"[COLOR_SELECTED_TEXT]Ihr seht aus als bräuchtet ihr einen kräftigen Schluck, werter Herr. Hier, nehmt dieses Bier. Es ist noch ganz frisch. Ihr sehr aus, als wärt ihr gerade erst vom Schiff gestolpert. Neuankömmlinge erkenne ich auf den ersten Blick.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Ich bin tatsächlich neu in dieser Gegend, Mr. Aber ich komme nicht um mich zu berauschen. Ich bin hier wegen der medizinischen Versorgung Eurer weiblichen Angestellten. Wäre glaube ich mal nötig, damit auch die Männer der Kolonie gesund bleiben.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Meiner was? Ach, ihr meint die Huren. Na, wenn ihr meint. Aber anfassen is' nicht, Doc. Nur untersuchen![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Russian>"[COLOR_SELECTED_TEXT]You look like you need a good swig, Sir. Here, take this beer. It's still fresh. You look like you just stumbled off the ship. I know a newcomer when I see one.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]I am indeed new to this area, Mr. But I am not here to get a beer. I am here for the medical care of your female employees. I think it's necessary to keep the men of the colony healthy as well.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]My what? Oh, you mean the whores. Well, if you think so. But don't touch, Doc. Just examine![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+        <Russian>"[COLOR_SELECTED_TEXT]Вы выглядите так, будто вам нужно сделать хороший глоток, сэр. Вот, возьмите пиво. Оно еще свежее. Похоже, вы только что сошли с корабля. Я узнаю новичка, когда вижу его.[COLOR_REVERT][NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я действительно только что прибыл, мистер, но я здесь не за пивом. Я приехал для медицинской помощи вашим сотрудницам. Я думаю, что мужчины в колонии должны быть полностью здоровы.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что? О, ты имеешь в виду наших шлюх. Ну, если вы так считаете... Но не вздумайте их лапать, Док. Просто проверьте их здоровье![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_DOCTORS</Tag>
@@ -3052,126 +3052,126 @@
         <English>The first missionary</English>
         <French>The first missionary</French>
         <German>Der erste Missionar</German>
-        <Russian>The first missionary</Russian>
+        <Russian>Ваш первый миссионер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY_HEAD</Tag>
         <English>Religious salvation for the natives</English>
         <French>Religious salvation for the natives</French>
         <German>Religiöse Rettung für die Wilden</German>
-        <Russian>Religious salvation for the natives</Russian>
+        <Russian>Религия спасет туземцев</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]So gehet denn hinein in die Wildnis und verkündet Gottes Word. Bekehrt diese gottlosen Wilden, auf dass sie uns in den Himmel folgen mögen und uns ihr Gold überlassen zum Wohle der Kirche. Rettet ihre Seele vor der ewigen Verdammnis und bringt mir ihre Reichtümer.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Ja, Herr. Ich werde euch nicht enttäuschen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das weiß ich mein Sohn. Und wenn doch, dann bleibt besser gleich bei Ihnen. Und nun geht...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Russian>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+        <Russian>"[COLOR_SELECTED_TEXT]Иди же в пустыню и проповедуй Слово Божье. Обрати этих безбожных дикарей в Истинную Веру, чтобы они последовали за нами на Небо и отдали нам свое золото на благо Церкви. Спаси их души от вечного проклятия и принеси мне их золото.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да, отец. Я не разочарую вас.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я знаю это, сын мой. И если ты это сделаешь, тебе лучше остаться там, с ними. А теперь иди...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_RUSSIAN_MISSIONARY</Tag>
         <English>The first missionary</English>
         <French>The first missionary</French>
         <German>Der erste Missionar</German>
-        <Russian>The first missionary</Russian>
+        <Russian>Ваш первый миссионер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_RUSSIAN_MISSIONARY_HEAD</Tag>
         <English>Religious salvation for the natives</English>
         <French>Religious salvation for the natives</French>
         <German>Religiöse Rettung für die Wilden</German>
-        <Russian>Religious salvation for the natives</Russian>
+        <Russian>Религия спасет туземцев</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_RUSSIAN_MISSIONARY_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]So gehet denn hinein in die Wildnis und verkündet Gottes Word. Bekehrt diese gottlosen Wilden, auf dass sie uns in den Himmel folgen mögen und uns ihr Gold überlassen zum Wohle der Kirche. Rettet ihre Seele vor der ewigen Verdammnis und bringt mir ihre Reichtümer.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Ja, Herr. Ich werde euch nicht enttäuschen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das weiß ich mein Sohn. Und wenn doch, dann bleibt besser gleich bei Ihnen. Und nun geht...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Russian>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+        <Russian>"[COLOR_SELECTED_TEXT]Иди же в пустыню и проповедуй Слово Божье. Обрати этих безбожных дикарей в Истинную Веру, чтобы они последовали за нами на Небо и отдали нам свое золото на благо Церкви. Спаси их души от вечного проклятия и принеси мне их золото.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да, отец. Я не разочарую вас.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я знаю это, сын мой. И если ты это сделаешь, тебе лучше остаться там, с ними. А теперь иди...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>    
 	<TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY_PROT</Tag>
         <English>The first missionary</English>
         <French>The first missionary</French>
         <German>Der erste Missionar</German>
-        <Russian>The first missionary</Russian>
+        <Russian>Ваш первый миссионер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY_PROT_HEAD</Tag>
         <English>Religious salvation for the natives</English>
         <French>Religious salvation for the natives</French>
         <German>Religiöse Rettung für die Wilden</German>
-        <Russian>Religious salvation for the natives</Russian>
+        <Russian>Религия спасет туземцев</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY_PROT_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]So gehet denn hinein in die Wildnis und verkündet Gottes Word. Bekehrt diese gottlosen Wilden, auf dass sie uns in den Himmel folgen mögen und uns ihr Gold überlassen zum Wohle der Kirche. Rettet ihre Seele vor der ewigen Verdammnis und bringt mir ihre Reichtümer.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Ja, Herr. Ich werde euch nicht enttäuschen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das weiß ich mein Sohn. Und wenn doch, dann bleibt besser gleich bei Ihnen. Und nun geht...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Russian>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+        <Russian>"[COLOR_SELECTED_TEXT]Иди же в пустыню и проповедуй Слово Божье. Обрати этих безбожных дикарей в Истинную Веру, чтобы они последовали за нами на Небо и отдали нам свое золото на благо Церкви. Спаси их души от вечного проклятия и принеси мне их золото.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да, отец. Я не разочарую вас.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я знаю это, сын мой. И если ты это сделаешь, тебе лучше остаться там, с ними. А теперь иди...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BUCCANEER</Tag>
         <English>The first buccaneer</English>
         <French>The first buccaneer</French>
         <German>Der erste Bukanier</German>
-        <Russian>The first buccaneer</Russian>
+        <Russian>Ваш первый буканьер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BUCCANEER_HEAD</Tag>
         <English>Buccaneers are among us</English>
         <French>Buccaneers are among us</French>
         <German>Seeräuber sind unter uns</German>
-        <Russian>Buccaneers are among us</Russian>
+        <Russian>Буканьеры среди нас</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BUCCANEER_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Just look at this treasure, boys. We can do something with it. When we get back to Port Royal, I'll spent a round of rum for everybody.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]That would surprise me. Have you ever spent a round?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Just watch what you say. I'm still in a fighting mood. I'll buy you a drink, I promise and the loot will be shared fairly...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>"[COLOR_SELECTED_TEXT]Just look at this treasure, boys. We can do something with it. When we get back to Port Royal, I'll spent a round of rum for everybody.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]That would surprise me. Have you ever spent a round?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Just watch what you say. I'm still in a fighting mood. I'll buy you a drink, I promise and the loot will be shared fairly...[COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Seht euch blos diesen Schatz an, Jungs. Damit lässt sich was anfangen. Wenn wir wieder in Port Royal sind, schmeiß' ich ne Runde Rum für alle.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Das würde mich wundern. Hast Du überhaupt schon mal ne Runde geschmissen?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Pass blos auf was Du sagst. Ich bin immer noch in Kämpferlaune. Ich geb' einen Drink aus, versprochen. Und die Beute wird fair geteilt...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Russian>"[COLOR_SELECTED_TEXT]Just look at this treasure, boys. We can do something with it. When we get back to Port Royal, I'll spent a round of rum for everybody.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]That would surprise me. Have you ever spent a round?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Just watch what you say. I'm still in a fighting mood. I'll buy you a drink, I promise and the loot will be shared fairly...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+        <Russian>"[COLOR_SELECTED_TEXT]Вы только посмотрите на это сокровище, парни. Теперь мы можем делать, что захотим. Когда вернемся в Порт Ройал, я поставлю выпивку всем присутствующим и выпью с каждым по кружке рома.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Меня бы это удивило. Ты когда-нибудь пил круговую?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Следи за своим языком и слушай, что я говорю. Я угощу вас выпивкой, обещаю, и добыча будет поделена по справедливости...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_HARLOT</Tag>
         <English>The first harlot</English>
         <French>The first harlot</French>
         <German>Die erste Dirne</German>
-        <Russian>The first harlot</Russian>
+        <Russian>Первая блудница</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_HARLOT_HEAD</Tag>
         <English>Harlots in the tavern</English>
         <French>Harlots in the tavern</French>
         <German>Dirnen in der Taverne</German>
-        <Russian>Harlots in the tavern</Russian>
+        <Russian>Блудницы в таверне</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_HARLOT_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]So sweetheart, you take care of the workers and craftsmen from today on, when they are tired of working here and want to have fun. Just always make sure that they have fun.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]You got it. As long as they pay for it[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]They will, otherwise they will fly out. I tell you what, with this you make a very significant contribution to the mood in the colony.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>"[COLOR_SELECTED_TEXT]So sweetheart, you take care of the workers and craftsmen from today on, when they are tired of working here and want to have fun. Just always make sure that they have fun.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]You got it. As long as they pay for it[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]They will, otherwise they will fly out. I tell you what, with this you make a very significant contribution to the mood in the colony.[COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Also Schätzchen, Du kümmerst Dich dann ab heute um die Arbeiter und Handwerker, wenn sie müde von der Arbeit hier ihren Spaß haben wollen. Sorg nur immer dafür, dass sie sich amüsieren.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Geht klar. Solange sie dafür bezahlen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das werden sie, ansonsten fliegen sie raus. Ich sag Dir was, damit leistest du einen ganz wesentlichen Beitrag für die Stimmung in der Kolonie.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Russian>"[COLOR_SELECTED_TEXT]So sweetheart, you take care of the workers and craftsmen from today on, when they are tired of working here and want to have fun. Just always make sure that they have fun.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]You got it. As long as they pay for it[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]They will, otherwise they will fly out. I tell you what, with this you make a very significant contribution to the mood in the colony.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+        <Russian>"[COLOR_SELECTED_TEXT]Так что, дорогая, с сегодняшнего дня ты будешь заботиться о рабочих и ремесленниках, когда они придут сюда после работы и захотят повеселиться. Только всегда делай так, чтобы им было весело.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Понятно, хозяин. Но только пока они будут за это платить.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Будут платить, крошка, иначе вылетят из дверей выстрее ядра из пушки. И вот что я вам скажу, барышни: этим вы вносите очень значительный вклад в развитие нашей колонии.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_FEMALE_ENTERTAINER</Tag>
         <English>The first actress</English>
         <French>The first actress</French>
         <German>Die erste Schauspielerin</German>
-        <Russian>The first actress</Russian>
+        <Russian>Первая актриса</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_FEMALE_ENTERTAINER_HEAD</Tag>
         <English>The ballroom becomes a stage</English>
         <French>The ballroom becomes a stage</French>
         <German>Der Ballsaal wird zur Bühne</German>
-        <Russian>The ballroom becomes a stage</Russian>
+        <Russian>Бальный зал становится сценой</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_FEMALE_ENTERTAINER_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]I really need to fix my hair and dress before it starts. Otherwise, people won't just laugh at my role and my lines.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]My lady, you look particularly lovely again today, there is no need for correction. May I escort you to the stage?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh, you are a true gentleman, but also a very dangerous flatterer. But thank you for your kind words sir, that lowers my stage fright a little bit.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>"[COLOR_SELECTED_TEXT]I really need to fix my hair and dress before it starts. Otherwise, people won't just laugh at my role and my lines.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]My lady, you look particularly lovely again today, there is no need for correction. May I escort you to the stage?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh, you are a true gentleman, but also a very dangerous flatterer. But thank you for your kind words sir, that lowers my stage fright a little bit.[COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Ich muss unbedingt noch einmal meine Haare und mein Kleid richten, bevor es losgeht. Sonst lachen die Leute nicht nur über meine Rolle und mein Text.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Mylady, Ihr seht heute wieder ganz besonders reizend aus, da bedarf es doch keiner Korrektur mehr. Darf ich Euch zur Bühne geleiten?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh, Ihr seid ein wahrer Gentleman, aber auch ein ganz gefährlicher Schmeichler. Aber Danke Euch für Eure lieben Worte Sir, das senkt mein Lampenfieber doch ein klein wenig.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Russian>"[COLOR_SELECTED_TEXT]I really need to fix my hair and dress before it starts. Otherwise, people won't just laugh at my role and my lines.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]My lady, you look particularly lovely again today, there is no need for correction. May I escort you to the stage?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh, you are a true gentleman, but also a very dangerous flatterer. But thank you for your kind words sir, that lowers my stage fright a little bit.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+        <Russian>"[COLOR_SELECTED_TEXT]Мне действительно нужно поправить прическу и переодеться, прежде чем представление начнется. Иначе люди просто не будут смеяться над моей ролью и моими репликами.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Миледи, вы выглядите сегодня особенно мило, нет нужды в исправлениях. Могу я проводить вас на сцену?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]О, вы настоящий джентльмен и при этом очень опасный льстеец. Но спасибо за добрые слова, сэр, это немного уменьшило мой страх перед сценой.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_TRADR</Tag>
@@ -3214,5 +3214,5 @@
         <French>"[COLOR_SELECTED_TEXT]White man, this is very good gun. But price much too high.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Well, you get something for it. I'll add some cartridges and this good rum. What do you say? Deal?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Give me rum, first I have to test. Two barrels and ten guns are what we want.[COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Weißer Mann, das sein sehr gute Waffe. Aber Preis viel zu hoch.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Na, ihr bekommt ja auch was dafür. Ich leg noch Patronen drauf und diesen guten Rum hier. Was sagt ihr? Sind wir im Geschäft?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Gib mir Rum, vorher muss ich testen. Zwei Fässer und zehn Gewehre wollen wir.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]White man, this is very good gun. But price much too high.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Well, you get something for it. I'll add some cartridges and this good rum. What do you say? Deal?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Give me rum, first I have to test. Two barrels and ten guns are what we want.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
-    </TEXT>		
+    </TEXT>
 </Civ4GameText>
