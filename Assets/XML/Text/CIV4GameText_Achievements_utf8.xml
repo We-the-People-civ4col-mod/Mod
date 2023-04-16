@@ -3088,8 +3088,8 @@
         <French>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]So gehet denn hinein in die Wildnis und verkündet Gottes Word. Bekehrt diese gottlosen Wilden, auf dass sie uns in den Himmel folgen mögen und uns ihr Gold überlassen zum Wohle der Kirche. Rettet ihre Seele vor der ewigen Verdammnis und bringt mir ihre Reichtümer.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Ja, Herr. Ich werde euch nicht enttäuschen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das weiß ich mein Sohn. Und wenn doch, dann bleibt besser gleich bei Ihnen. Und nun geht...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
-    </TEXT>
-    <TEXT>
+    </TEXT>    
+	<TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY_PROT</Tag>
         <English>The first missionary</English>
         <French>The first missionary</French>
@@ -3109,5 +3109,26 @@
         <French>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]So gehet denn hinein in die Wildnis und verkündet Gottes Word. Bekehrt diese gottlosen Wilden, auf dass sie uns in den Himmel folgen mögen und uns ihr Gold überlassen zum Wohle der Kirche. Rettet ihre Seele vor der ewigen Verdammnis und bringt mir ihre Reichtümer.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Ja, Herr. Ich werde euch nicht enttäuschen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das weiß ich mein Sohn. Und wenn doch, dann bleibt besser gleich bei Ihnen. Und nun geht...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
-    </TEXT>	
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_BUCCANEER</Tag>
+        <English>The first buccaneer</English>
+        <French>The first buccaneer</French>
+        <German>Der erste Bukanier</German>
+        <Russian>The first buccaneer</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_BUCCANEER_HEAD</Tag>
+        <English>Buccaneers are among us</English>
+        <French>Buccaneers are among us</French>
+        <German>Seeräuber sind unter uns</German>
+        <Russian>Buccaneers are among us</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_BUCCANEER_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]Just look at this treasure, boys. We can do something with it. When we get back to Port Royal, I'll spent a round of rum for everybody.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]That would surprise me. Have you ever spent a round?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Just watch what you say. I'm still in a fighting mood. I'll buy you a drink, I promise and the loot will be shared fairly...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <French>"[COLOR_SELECTED_TEXT]Just look at this treasure, boys. We can do something with it. When we get back to Port Royal, I'll spent a round of rum for everybody.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]That would surprise me. Have you ever spent a round?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Just watch what you say. I'm still in a fighting mood. I'll buy you a drink, I promise and the loot will be shared fairly...[COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
+        <German>"[COLOR_SELECTED_TEXT]Seht euch blos diesen Schatz an, Jungs. Damit lässt sich was anfangen. Wenn wir wieder in Port Royal sind, schmeiß' ich ne Runde Rum für alle.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Das würde mich wundern. Hast Du überhaupt schon mal ne Runde geschmissen?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Pass blos auf was Du sagst. Ich bin immer noch in Kämpferlaune. Ich geb' einen Drink aus, versprochen. Und die Beute wird fair geteilt...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+        <Russian>"[COLOR_SELECTED_TEXT]Just look at this treasure, boys. We can do something with it. When we get back to Port Royal, I'll spent a round of rum for everybody.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]That would surprise me. Have you ever spent a round?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Just watch what you say. I'm still in a fighting mood. I'll buy you a drink, I promise and the loot will be shared fairly...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+    </TEXT>		
 </Civ4GameText>
