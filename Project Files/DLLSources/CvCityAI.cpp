@@ -3628,7 +3628,7 @@ CvUnit* CvCityAI::AI_assignToBestJob(CvUnit* pUnit, bool bIndoorOnly)
 			FAssert(pDisplacedUnit != NULL);
 			// TAC - AI Economy - koma13 - START
 			//FAssert(AI_professionValue(eBestProfession, pUnit, getCityIndexPlot(iBestPlot), NULL) > AI_professionValue(pDisplacedUnit->getProfession(), pDisplacedUnit, getCityIndexPlot(iBestPlot), NULL));
-			FAssert(AI_professionValue(eBestProfession, pUnit, getCityIndexPlot(iBestPlot), pDisplacedUnit) > AI_professionValue(pDisplacedUnit->getProfession(), pDisplacedUnit, getCityIndexPlot(iBestPlot), NULL));
+			FAssert(AI_professionValue(eBestProfession, pUnit, getCityIndexPlot(eBestPlot), pDisplacedUnit) > AI_professionValue(pDisplacedUnit->getProfession(), pDisplacedUnit, getCityIndexPlot(eBestPlot), NULL));
 			// TAC - AI Economy - koma13 - END
 		}
 	}
