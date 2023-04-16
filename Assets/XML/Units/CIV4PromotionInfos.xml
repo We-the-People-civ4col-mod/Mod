@@ -7758,7 +7758,7 @@
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
             <iAnimalGoldChange>0</iAnimalGoldChange>
-            <iSlaveRevoltReductionBonus>25</iSlaveRevoltReductionBonus>
+            <iSlaveRevoltReductionBonus>20</iSlaveRevoltReductionBonus>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -7876,7 +7876,7 @@
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
             <iAnimalGoldChange>0</iAnimalGoldChange>
-            <iSlaveRevoltReductionBonus>25</iSlaveRevoltReductionBonus>
+            <iSlaveRevoltReductionBonus>20</iSlaveRevoltReductionBonus>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -7994,7 +7994,7 @@
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
             <iAnimalGoldChange>0</iAnimalGoldChange>
-            <iSlaveRevoltReductionBonus>25</iSlaveRevoltReductionBonus>
+            <iSlaveRevoltReductionBonus>20</iSlaveRevoltReductionBonus>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -8112,7 +8112,7 @@
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
             <iAnimalGoldChange>0</iAnimalGoldChange>
-            <iSlaveWorkerProductionBonus>25</iSlaveWorkerProductionBonus>
+            <iSlaveWorkerProductionBonus>20</iSlaveWorkerProductionBonus>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -8230,7 +8230,7 @@
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
             <iAnimalGoldChange>0</iAnimalGoldChange>
-            <iSlaveWorkerProductionBonus>25</iSlaveWorkerProductionBonus>
+            <iSlaveWorkerProductionBonus>20</iSlaveWorkerProductionBonus>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -8348,7 +8348,7 @@
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
             <iAnimalGoldChange>0</iAnimalGoldChange>
-            <iSlaveWorkerProductionBonus>25</iSlaveWorkerProductionBonus>
+            <iSlaveWorkerProductionBonus>20</iSlaveWorkerProductionBonus>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
