@@ -17626,8 +17626,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Skilled_Milkmaid.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Skilled_Milkmaid/Expert_Sugar_Planter.nif</NIF>
-            <KFM>Art/Units/Settler/Skilled_Milkmaid/Expert_Sugar_Planter.kfm</KFM>
+            <NIF>Art/Units/Settler/Skilled_Milkmaid/Skilled_Milkmaid.nif</NIF>
+            <KFM>Art/Units/Settler/Skilled_Milkmaid/Skilled_Milkmaid.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17696,8 +17696,8 @@
             <FullLengthIcon>,Art/Interface/Screens/city_management/harlot.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/harlot/Expert_Sugar_Planter.nif</NIF>
-            <KFM>Art/Units/Settler/Skilled_Milkmaid/Expert_Sugar_Planter.kfm</KFM>
+            <NIF>Art/Units/Settler/harlot/harlot.nif</NIF>
+            <KFM>Art/Units/Settler/female_entertainer/female_entertainer.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17715,8 +17715,8 @@
             <FullLengthIcon>,Art/Interface/Screens/city_management/female_entertainer.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/female_entertainer/Expert_Sugar_Planter.nif</NIF>
-            <KFM>Art/Units/Settler/female_entertainer/Expert_Sugar_Planter.kfm</KFM>
+            <NIF>Art/Units/Settler/female_entertainer/female_entertainer.nif</NIF>
+            <KFM>Art/Units/Settler/female_entertainer/female_entertainer.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
