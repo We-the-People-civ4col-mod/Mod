@@ -176,6 +176,11 @@ sub readCPP
 			$func = substr($func, rindex($func, " ")+1);
 			$function_names{$class}{$func} = 1;
 		}
+		elsif (index($line, "DllExport") != -1)
+		{
+			next if (substr($line, 0, 2) eq "//"); # no need to scan for DllExport in comments
+			die "\nDLLsources/EXE_interface.cpp(" . $i . "): DllExport has wrong indentation\n\n";
+		}
 	}
 
 	close $info;
