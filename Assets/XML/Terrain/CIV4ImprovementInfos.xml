@@ -1332,6 +1332,10 @@
                     <TerrainType>TERRAIN_MARSH</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
             </TerrainMakesValids>
             <FeatureMakesValids>
                 <FeatureMakesValid>
@@ -1657,6 +1661,10 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_MARSH</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
