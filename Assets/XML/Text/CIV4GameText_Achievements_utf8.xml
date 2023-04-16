@@ -3047,4 +3047,66 @@
         <German>"[COLOR_SELECTED_TEXT]Wohlan Käpt'n, Ihr habt nun Euer erstes schnelles Piratenschiff, mit dem Ihr die Küstenschifffahrt des Feindes stören und Eure Schatzkammer füllen könnt.[NEWLINE][NEWLINE]In Port Royal könnt Ihr Euch einen Namen machen, leichte Mädchen und schweren Rum genießen. Aber wollt Ihr das wirklich? Wo bleibt Eure Gottesfurcht, Milord? Ein ehrenvoller Dienst fürs Vaterland oder Jolly Roger und ewige Verdammnis?[COLOR_REVERT]"[NEWLINE][NEWLINE]Noch könnt Ihr den richtigen Weg einschlagen...aber schließlich muss die Kolonie ja auch irgendwie finanziert werden...vielleicht sollte man doch...[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Капитан, теперь у нас есть свой первый быстроходный пиратский катер, который вы можете использовать, чтобы помешать вражескому прибрежному судоходству и пополнить свою казну.[NEWLINE][NEWLINE]В Порт-Ройяле вы можете сделать себе имя, насладиться шлюхами и густым ромом. Но разве вы этого хотите? Где ваш страх перед Богом, милорд? Почетная служба королю или Веселому Роджеру и вечное проклятие?[COLOR_REVERT]"[NEWLINE][NEWLINE]Вы еще можете пойти по правильному пути.. ..но ведь колонии тоже надо как-то финансировать...может и стоит попробовать...[NEWLINE][NEWLINE]</Russian>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY</Tag>
+        <English>The first missionary</English>
+        <French>The first missionary</French>
+        <German>Der erste Missionar</German>
+        <Russian>The first missionary</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY_HEAD</Tag>
+        <English>Religious salvation for the natives</English>
+        <French>Religious salvation for the natives</French>
+        <German>Religiöse Rettung für die Wilden</German>
+        <Russian>Religious salvation for the natives</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <French>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
+        <German>"[COLOR_SELECTED_TEXT]So gehet denn hinein in die Wildnis und verkündet Gottes Word. Bekehrt diese gottlosen Wilden, auf dass sie uns in den Himmel folgen mögen und uns ihr Gold überlassen zum Wohle der Kirche. Rettet ihre Seele vor der ewigen Verdammnis und bringt mir ihre Reichtümer.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Ja, Herr. Ich werde euch nicht enttäuschen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das weiß ich mein Sohn. Und wenn doch, dann bleibt besser gleich bei Ihnen. Und nun geht...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+        <Russian>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_RUSSIAN_MISSIONARY</Tag>
+        <English>The first missionary</English>
+        <French>The first missionary</French>
+        <German>Der erste Missionar</German>
+        <Russian>The first missionary</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_RUSSIAN_MISSIONARY_HEAD</Tag>
+        <English>Religious salvation for the natives</English>
+        <French>Religious salvation for the natives</French>
+        <German>Religiöse Rettung für die Wilden</German>
+        <Russian>Religious salvation for the natives</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_RUSSIAN_MISSIONARY_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <French>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
+        <German>"[COLOR_SELECTED_TEXT]So gehet denn hinein in die Wildnis und verkündet Gottes Word. Bekehrt diese gottlosen Wilden, auf dass sie uns in den Himmel folgen mögen und uns ihr Gold überlassen zum Wohle der Kirche. Rettet ihre Seele vor der ewigen Verdammnis und bringt mir ihre Reichtümer.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Ja, Herr. Ich werde euch nicht enttäuschen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das weiß ich mein Sohn. Und wenn doch, dann bleibt besser gleich bei Ihnen. Und nun geht...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+        <Russian>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+    </TEXT>    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY_PROT</Tag>
+        <English>The first missionary</English>
+        <French>The first missionary</French>
+        <German>Der erste Missionar</German>
+        <Russian>The first missionary</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY_PROT_HEAD</Tag>
+        <English>Religious salvation for the natives</English>
+        <French>Religious salvation for the natives</French>
+        <German>Religiöse Rettung für die Wilden</German>
+        <Russian>Religious salvation for the natives</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY_PROT_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <French>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
+        <German>"[COLOR_SELECTED_TEXT]So gehet denn hinein in die Wildnis und verkündet Gottes Word. Bekehrt diese gottlosen Wilden, auf dass sie uns in den Himmel folgen mögen und uns ihr Gold überlassen zum Wohle der Kirche. Rettet ihre Seele vor der ewigen Verdammnis und bringt mir ihre Reichtümer.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Ja, Herr. Ich werde euch nicht enttäuschen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das weiß ich mein Sohn. Und wenn doch, dann bleibt besser gleich bei Ihnen. Und nun geht...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+        <Russian>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+    </TEXT>	
 </Civ4GameText>
