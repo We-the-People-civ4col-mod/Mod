@@ -2523,6 +2523,27 @@
         <Russian>"[COLOR_SELECTED_TEXT]... и я говорю, что это не просто отражение на снегу. Посмотрите, как он блестит. Присядьте и...[COLOR_REVERT]" Вы улыбаетесь и позволяете своим мыслям блуждать.[NEWLINE][NEWLINE]Истории о первых находках серебра в местных горах сегодня уже рассказывают детям в школах. Седовласый старатель перед вами — живая легенда.[NEWLINE][NEWLINE]Раскатистый смех снова заставляет вас навострить уши. "[COLOR_SELECTED_TEXT]... в жаркие глубины ада, где от Старого Света ничего не осталось. Здесь я работаю практически под солнечном светом![COLOR_REVERT]"[NEWLINE][NEWLINE]Слабые звуки работы шахтеров эхом разносятся по сумрачному коридору. Вы выдавливаете из себя кривую улыбку и смотрите на голый камень над вами. Холодный пот струится по вискам. Вы оцениваете расстояние обратно, к солнцу.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_DOCTOR</Tag>
+        <English>The first Renowned Medic</English>
+        <French>The first Renowned Medic</French>
+        <German>Der erste ausgebildete Ärzte</German>
+        <Russian>The first Renowned Medic</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_DOCTOR_HEAD</Tag>
+        <English>First medical care</English>
+        <French>First medical care</French>
+        <German>Erste medizinische Versorgung</German>
+        <Russian>First medical care</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_DOCTOR_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]You look like you need a good swig, Sir. Here, take this beer. It's still fresh. You look like you just stumbled off the ship. I know a newcomer when I see one.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]I am indeed new to this area, Mr. But I am not here to get a beer. I am here for the medical care of your female employees. I think it's necessary to keep the men of the colony healthy as well.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]My what? Oh, you mean the whores. Well, if you think so. But don't touch, Doc. Just examine![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <French>"[COLOR_SELECTED_TEXT]You look like you need a good swig, Sir. Here, take this beer. It's still fresh. You look like you just stumbled off the ship. I know a newcomer when I see one.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]I am indeed new to this area, Mr. But I am not here to get a beer. I am here for the medical care of your female employees. I think it's necessary to keep the men of the colony healthy as well.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]My what? Oh, you mean the whores. Well, if you think so. But don't touch, Doc. Just examine![COLOR_REVERT]"[NEWLINE][NEWLINE]]</French>
+        <German>"[COLOR_SELECTED_TEXT]Ihr seht aus als bräuchtet ihr einen kräftigen Schluck, werter Herr. Hier, nehmt dieses Bier. Es ist noch ganz frisch. Ihr sehr aus, als wärt ihr gerade erst vom Schiff gestolpert. Neuankömmlinge erkenne ich auf den ersten Blick.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Ich bin tatsächlich neu in dieser Gegend, Mr. Aber ich komme nicht um mich zu berauschen. Ich bin hier wegen der medizinischen Versorgung Eurer weiblichen Angestellten. Wäre glaube ich mal nötig, damit auch die Männer der Kolonie gesund bleiben.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Meiner was? Ach, ihr meint die Huren. Na, wenn ihr meint. Aber anfassen is' nicht, Doc. Nur untersuchen![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+        <Russian>"[COLOR_SELECTED_TEXT]You look like you need a good swig, Sir. Here, take this beer. It's still fresh. You look like you just stumbled off the ship. I know a newcomer when I see one.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]I am indeed new to this area, Mr. But I am not here to get a beer. I am here for the medical care of your female employees. I think it's necessary to keep the men of the colony healthy as well.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]My what? Oh, you mean the whores. Well, if you think so. But don't touch, Doc. Just examine![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_DOCTORS</Tag>
         <English>Three Renowned Medics</English>
         <French>Trois médecins réputés</French>
