@@ -744,7 +744,7 @@ public:
 	CvCity* getHomeCity() const;
 
 	DllExport bool isOnMap() const;
-	DllExport const CvArtInfoUnit* getArtInfo(int i) const;
+	const CvArtInfoUnit* getArtInfo(int i) const;
 	DllExport const TCHAR* getButton() const;
 	const TCHAR* getFullLengthIcon() const;
 

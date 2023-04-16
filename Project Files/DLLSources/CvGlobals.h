@@ -346,8 +346,9 @@ public:
 	std::vector<CvWorldPickerInfo*>& getWorldPickerInfo();
 	DllExport	CvWorldPickerInfo& getWorldPickerInfo(int iIndex);
 
-	int getNumUnitInfos();
-	DllExport std::vector<CvUnitInfo*>& getUnitInfo();
+	int getNumUnitInfos() const;
+	int getNumUnitInfosFakeExe() const;
+	std::vector<CvUnitInfo*>& getUnitInfo();
 	CvUnitInfo& getUnitInfo(UnitTypes eUnitNum);
 
 	int getNumSpecialUnitInfos();

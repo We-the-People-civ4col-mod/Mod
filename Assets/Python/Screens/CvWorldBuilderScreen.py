@@ -782,7 +782,7 @@ class CvWorldBuilderScreen:
 			pPlayer = gc.getPlayer(self.m_iCurrentPlayer)
 			iPlotX = self.m_iCurrentX
 			iPlotY = self.m_iCurrentY
-			
+
 			#initialize to 100 cargo
 			iYieldAmount = 0;
 			if gc.getUnitInfo(iUnitType).isTreasure():
@@ -792,7 +792,7 @@ class CvWorldBuilderScreen:
 					if gc.getYieldInfo(i).getUnitClass() == gc.getUnitInfo(iUnitType).getUnitClassType():
 						iYieldAmount = gc.getGame().getCargoYieldCapacity();
 						break;
-								
+
 			pUnit = pPlayer.initUnit(iUnitType, iProfession, iPlotX, iPlotY, UnitAITypes.NO_UNITAI, DirectionTypes.NO_DIRECTION, iYieldAmount)
 
 		elif ((self.m_bNormalPlayer) and (self.m_normalPlayerTabCtrl.getActiveTab() == self.m_iBuildingTabID)):
@@ -2304,7 +2304,7 @@ class CvWorldBuilderScreen:
 
 		self.m_normalPlayerTabCtrl = getWBToolNormalPlayerTabCtrl()
 
-		self.m_normalPlayerTabCtrl.setNumColumns((gc.getNumUnitInfos()/10)+2);
+		self.m_normalPlayerTabCtrl.setNumColumns((gc.getNumUnitInfosFakeExe()/10)+2);
 		self.m_normalPlayerTabCtrl.addTabSection(localText.getText("TXT_KEY_WB_UNITS",()));
 		self.m_iUnitTabID = 0
 		self.m_iNormalPlayerCurrentIndexes.append(0)
@@ -2348,7 +2348,7 @@ class CvWorldBuilderScreen:
 			self.m_iASAutomateListID = 1
 			self.m_iAdvancedStartCurrentList.append(self.m_iASCityListID)
 
-			self.m_advancedStartTabCtrl.setNumColumns((gc.getNumUnitInfos()/10)+2);
+			self.m_advancedStartTabCtrl.setNumColumns((gc.getNumUnitInfosFakeExe()/10)+2);
 			self.m_advancedStartTabCtrl.addTabSection(localText.getText("TXT_KEY_WB_AS_UNITS",()));
 			self.m_iASUnitTabID = 1
 			self.m_iAdvancedStartCurrentIndexes.append(0)

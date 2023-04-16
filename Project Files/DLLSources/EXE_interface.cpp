@@ -19,6 +19,10 @@
 //       this is due to our custom DllExport check, which won't accept anything, which might cause the exe to crash
 //
 
+// WARNING: As of now (2023-04-16) there is a bug in the compile script:
+// The function here have to be indented with exactly one tab, otherwise the script will complain
+// about DLLExport errors
+
 #include "CvGameCoreDLL.h"
 #include "CvDiploParameters.h"
 #include "CvDLLButtonPopup.h"
@@ -34,6 +38,9 @@
 
 #include "CyArgsList.h"
 #include "CyPlot.h"
+
+std::vector<CvUnitInfo*> vpUnitInfos;
+bool bIsUnitInfosInitialized = false;
 
 class EXE_CvActionInfo : public CvActionInfo
 {
@@ -1863,8 +1870,12 @@ public:
 
 	DllExport int getNumUnitInfos()
 	{
-		return NUM_UNIT_TYPES;
+		// show the exe an arbitrarily high number of unit types because that somehow affects savegame padding
+		// the free slots will be directed to the UNIT_PLACEHOLDER by getUnitInfo()
+		// This is meant to be a workaround for savegames becoming incompatible each time a unit is added or removed
+		return CvGlobals::getNumUnitInfosFakeExe(); // NUM_UNIT_TYPES;
 	}
+
 			/*
 		getNumUnitLayerOptionTypes
 			?getNumUnitLayerOptionTypes@CvGlobals@@QBEHXZ=?getNumUnitLayerOptionTypes@EXE_CvGlobals@@QBEHXZ
@@ -1988,14 +1999,32 @@ public:
 
 		getUnitFormationInfo
 			?getUnitFormationInfo@CvGlobals@@QAEAAVCvUnitFormationInfo@@H@Z=?getUnitFormationInfo@EXE_CvGlobals@@QAEAAVCvUnitFormationInfo@@H@Z
-
-		getUnitInfo
-			?getUnitInfo@CvGlobals@@QAEAAV?$vector@PAVCvUnitInfo@@V?$allocator@PAVCvUnitInfo@@@std@@@std@@XZ=?getUnitInfo@EXE_CvGlobals@@QAEAAV?$vector@PAVCvUnitInfo@@V?$allocator@PAVCvUnitInfo@@@std@@@std@@XZ
 			*/
 
+	// this one might not be necessary
+	DllExport std::vector<CvUnitInfo*>& getUnitInfo()
+	{
+		if (!bIsUnitInfosInitialized)
+			{
+				vpUnitInfos.clear();
+				vpUnitInfos = CvGlobals::getUnitInfo();
+				while(vpUnitInfos.size() < static_cast<unsigned int>(CvGlobals::getNumUnitInfosFakeExe()))
+				{
+					vpUnitInfos.push_back(&CvGlobals::getUnitInfo(UNIT_PLACEHOLDER));
+				}
+				bIsUnitInfosInitialized = true;
+			}
+		return vpUnitInfos;
+	}
+
+	// this is probably the relevant one
 	DllExport	CvUnitInfo& getUnitInfo(UnitTypes eUnitNum)
 	{
-		return CvGlobals::getUnitInfo(eUnitNum);
+		if (eUnitNum <= UNIT_PLACEHOLDER)
+		{
+			return CvGlobals::getUnitInfo(eUnitNum);
+		}
+		return CvGlobals::getUnitInfo(UNIT_PLACEHOLDER);
 	}
 
 			/*
@@ -3810,10 +3839,17 @@ public:
 
 		doCommand
 			?doCommand@CvUnit@@QAEXW4CommandTypes@@HH@Z=?doCommand@EXE_CvUnit@@QAEXW4CommandTypes@@HH@Z
+*/
 
-		getArtInfo
-			?getArtInfo@CvUnit@@QBEPBVCvArtInfoUnit@@H@Z=?getArtInfo@EXE_CvUnit@@QBEPBVCvArtInfoUnit@@H@Z
-
+	DllExport const CvArtInfoUnit* getArtInfo(int i) const
+	{
+		if (i > UNIT_PLACEHOLDER)
+		{
+			return CvUnit::getArtInfo(UNIT_PLACEHOLDER);
+		}
+		return CvUnit::getArtInfo(i);
+	}
+/*
 		getBuildType
 			?getBuildType@CvUnit@@QBE?AW4BuildTypes@@XZ=?getBuildType@EXE_CvUnit@@QBE?AW4BuildTypes@@XZ
 
@@ -3990,11 +4026,16 @@ BOOST_STATIC_ASSERT(sizeof(EXE_CvUnitFormationInfo) == sizeof(CvUnitFormationInf
 class EXE_CvUnitInfo : public CvUnitInfo
 {
 public:
-	/*
-		getArtInfo
-			?getArtInfo@CvUnitInfo@@QBEPBVCvArtInfoUnit@@HH@Z=?getArtInfo@EXE_CvUnitInfo@@QBEPBVCvArtInfoUnit@@HH@Z
 
-	*/
+	DllExport const CvArtInfoUnit* getArtInfo(int i, int iProfession) const
+	{
+		if (i > UNIT_PLACEHOLDER)
+		{
+			return CvUnitInfo::getArtInfo(UNIT_PLACEHOLDER, PROFESSION_COLONIST);
+		}
+		return CvUnitInfo::getArtInfo(i, iProfession);
+	}
+
 	DllExport int getDefaultProfession() const
 	{
 		return CvUnitInfo::getDefaultProfession();

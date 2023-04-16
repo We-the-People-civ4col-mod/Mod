@@ -79,3 +79,8 @@ enum UnitClassTypes
 	UNITCLASS_CONTINENTAL_GUARD,
 	UNITCLASS_MORTAR,
 };
+
+enum UnitTypes
+{
+	UNIT_PLACEHOLDER,
+};

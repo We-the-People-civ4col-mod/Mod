@@ -35,6 +35,9 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
+const int iNumUnitInfosFakeExe = 384;
+const int iNumBuildingInfosFakeExe = 384;
+
 CvGlobals gGlobals;
 
 //
@@ -115,7 +118,7 @@ m_iAI_LOST_TRANSPORT_MEMORY_COUNT(0),
 // TAC - AI Improved Navel AI - koma13 - END
 
 // R&R, ray, caching globals from Global Defines Alt - START
-// Caching Vanilla variables	
+// Caching Vanilla variables
 m_PLOT_VISIBILITY_RANGE(0),
 m_UNIT_VISIBILITY_RANGE(0),
 m_MIN_CITY_YIELD_DECAY(0),
@@ -132,7 +135,7 @@ m_REDUCED_REF_PERCENT(0),
 // Domestic Market
 m_PRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS(0),
 m_DOMESTIC_SALES_MESSAGES(0),
-// Wild Animals	
+// Wild Animals
 m_WILD_ANIMAL_LAND_TERRAIN_NATIVE_WEIGHT(0),
 m_WILD_ANIMAL_LAND_UNIT_VARIATION_WEIGHT(0),
 m_WILD_ANIMAL_SEA_TERRAIN_NATIVE_WEIGHT(0),
@@ -1445,9 +1448,14 @@ CvWorldPickerInfo& CvGlobals::getWorldPickerInfo(int iIndex)
 	return *(m_paWorldPickerInfo[iIndex]);
 }
 
-int CvGlobals::getNumUnitInfos()
+int CvGlobals::getNumUnitInfos() const
 {
 	return (int)m_paUnitInfo.size();
+}
+
+int CvGlobals::getNumUnitInfosFakeExe() const
+{
+	return iNumUnitInfosFakeExe;
 }
 
 std::vector<CvUnitInfo*>& CvGlobals::getUnitInfo()	// For Moose - XML Load Util, CvInfos
@@ -2624,7 +2632,7 @@ void CvGlobals::cacheGlobals()
 	m_iUSE_ON_UNIT_LOST_CALLBACK = getDefineINT("USE_ON_UNIT_LOST_CALLBACK");
 
 	// R&R, ray, caching globals from Global Defines Alt - START
-	// Caching Vanilla variables	
+	// Caching Vanilla variables
 	m_PLOT_VISIBILITY_RANGE = getDefineINT("PLOT_VISIBILITY_RANGE");
 	m_UNIT_VISIBILITY_RANGE = getDefineINT("UNIT_VISIBILITY_RANGE");
 	m_MIN_CITY_YIELD_DECAY = getDefineINT("MIN_CITY_YIELD_DECAY");
@@ -2641,7 +2649,7 @@ void CvGlobals::cacheGlobals()
 	// Domestic Market
 	m_PRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS = getDefineINT("PRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS");
 	m_DOMESTIC_SALES_MESSAGES = getDefineINT("DOMESTIC_SALES_MESSAGES");
-	// Wild Animals	
+	// Wild Animals
 	m_WILD_ANIMAL_LAND_TERRAIN_NATIVE_WEIGHT = getDefineINT("WILD_ANIMAL_LAND_TERRAIN_NATIVE_WEIGHT");
 	m_WILD_ANIMAL_LAND_UNIT_VARIATION_WEIGHT = getDefineINT("WILD_ANIMAL_LAND_UNIT_VARIATION_WEIGHT");
 	m_WILD_ANIMAL_SEA_TERRAIN_NATIVE_WEIGHT = getDefineINT("WILD_ANIMAL_SEA_TERRAIN_NATIVE_WEIGHT");
@@ -2838,7 +2846,7 @@ void CvGlobals::cacheGlobals()
 	// K-Mod \ RaR
 	m_bUSE_AI_UNIT_UPDATE_CALLBACK = getDefineINT("USE_AI_UNIT_UPDATE_CALLBACK") != 0;
 	m_bUSE_AI_DO_DIPLO_CALLBACK = getDefineINT("USE_AI_DO_DIPLO_CALLBACK") != 0;
-	m_bUSE_AI_DO_WAR_CALLBACK = getDefineINT("USE_AI_DO_WAR_CALLBACK") != 0;	
+	m_bUSE_AI_DO_WAR_CALLBACK = getDefineINT("USE_AI_DO_WAR_CALLBACK") != 0;
 	m_bUSE_DO_GROWTH_CALLBACK = getDefineINT("USE_DO_GROWTH_CALLBACK") != 0;
 	m_bUSE_DO_CULTURE_CALLBACK = getDefineINT("USE_DO_CULTURE_CALLBACK") != 0;
 	m_bUSE_DO_PLOT_CULTURE_CALLBACK = getDefineINT("USE_DO_PLOT_CULTURE_CALLBACK") != 0;

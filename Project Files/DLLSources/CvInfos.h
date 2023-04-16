@@ -862,7 +862,7 @@ public:
 	DllExport const char* getFormationType() const;
 	const char* getButton() const;
 	void updateArtDefineButton();
-	DllExport const CvArtInfoUnit* getArtInfo(int i, int iProfession) const;
+	const CvArtInfoUnit* getArtInfo(int i, int iProfession) const;
 	//Androrc UnitArtStyles
 	const CvArtInfoUnit* getUnitArtStylesArtInfo(int i, int iProfession, int iStyle = -1) const;
 	//Androrc End

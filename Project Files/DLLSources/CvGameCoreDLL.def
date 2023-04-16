@@ -16,6 +16,11 @@ EXPORTS
 ?getNumUnitInfos@CvGlobals@@QAEHXZ=?getNumUnitInfos@EXE_CvGlobals@@QAEHXZ
 ?getNUM_YIELD_TYPES@CvGlobals@@QBEHXZ=?getNUM_YIELD_TYPES@EXE_CvGlobals@@QBEHXZ
 ?getUnitInfo@CvGlobals@@QAEAAVCvUnitInfo@@W4UnitTypes@@@Z=?getUnitInfo@EXE_CvGlobals@@QAEAAVCvUnitInfo@@W4UnitTypes@@@Z
+?getUnitInfo@CvGlobals@@QAEAAV?$vector@PAVCvUnitInfo@@V?$allocator@PAVCvUnitInfo@@@std@@@std@@XZ=?getUnitInfo@EXE_CvGlobals@@QAEAAV?$vector@PAVCvUnitInfo@@V?$allocator@PAVCvUnitInfo@@@std@@@std@@XZ
 
 ; CvUnit
 ?getDefaultProfession@CvUnitInfo@@QBEHXZ=?getDefaultProfession@EXE_CvUnitInfo@@QBEHXZ
+?getArtInfo@CvUnit@@QBEPBVCvArtInfoUnit@@H@Z=?getArtInfo@EXE_CvUnit@@QBEPBVCvArtInfoUnit@@H@Z
+
+; CvUnitInfo
+?getArtInfo@CvUnitInfo@@QBEPBVCvArtInfoUnit@@HH@Z=?getArtInfo@EXE_CvUnitInfo@@QBEPBVCvArtInfoUnit@@HH@Z

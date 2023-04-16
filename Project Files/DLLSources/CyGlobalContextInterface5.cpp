@@ -62,6 +62,7 @@ void CyGlobalContextPythonInterface5(python::class_<CyGlobalContext>& x)
 		.def("getTraitInfo", &CyGlobalContext::getTraitInfo, python::return_value_policy<python::reference_existing_object>(), "(TraitID) - CvInfo for TraitID")
 
 		.def("getNumUnitInfos", &CyGlobalContext::getNumUnitInfos, "() - Total Unit Infos XML\\Units\\CIV4UnitInfos.xml")
+		.def("getNumUnitInfosFakeExe", &CyGlobalContext::getNumUnitInfosFakeExe, "() - Total Unit Infos as passed to exe")
 		.def("getUnitInfo", &CyGlobalContext::getUnitInfo, python::return_value_policy<python::reference_existing_object>(), "(UnitID) - CvInfo for UnitID")
 		.def("getNumSpecialUnitInfos", &CyGlobalContext::getNumSpecialUnitInfos, "() - Total SpecialUnit Infos XML\\Units\\CIV4SpecialUnitInfos.xml")
 		.def("getSpecialUnitInfo", &CyGlobalContext::getSpecialUnitInfo, python::return_value_policy<python::reference_existing_object>(), "(UnitID) - CvInfo for UnitID")
