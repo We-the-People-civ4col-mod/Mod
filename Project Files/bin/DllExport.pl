@@ -58,24 +58,24 @@ sub processfile
 {
 	my $file = shift;
 	my $path = shift;
-	
+
 	my $next_line = "";
 	my $known_file = 0;
-	
+
 	if ($file eq $next_file)
 	{
 		$known_file = 1;
 		$next_line = shift @txt_lines;
 	}
-	
+
 	open my $handle, '<', $path or die "Failed to open file $file";
 	chomp(my @lines = <$handle>);
 	close $handle;
-	
+
 	my $i = 0;
-	
+
 	my $class = "";
-	
+
 	for my $line (@lines)
 	{
 		$i = $i + 1;
@@ -104,7 +104,7 @@ sub processfile
 			}
 		}
 	}
-	
+
 	if ($known_file)
 	{
 		die "\nDllExport ERROR: $file: Failed to locate line: $next_line\n\n\n" unless index($next_line, "DllExport") == -1;
@@ -116,7 +116,7 @@ sub testFunctionInCPP
 {
 	my $line = shift;
 	my $class = shift;
-	
+
 	if (exists $classes{$class}{$line})
 	{
 		$classes{$class}{$line} = 0;
@@ -129,9 +129,9 @@ sub truncateOnStr
 {
 	my $str = shift;
 	my $endChar = shift;
-	
+
 	my $index = index($str, $endChar);
-	
+
 	return $str if $index == -1;
 	return substr($str, 0, $index);
 }
@@ -140,7 +140,7 @@ sub getFirstWord
 {
 	my $str = shift;
 	chomp($str);
-	
+
 	$str = truncateOnStr($str, " ");
 	$str = truncateOnStr($str, "\t");
 	$str = truncateOnStr($str, ":");
@@ -153,10 +153,10 @@ sub readCPP
 	open my $info, $file or die "Could not open $file: $!";
 
 	my $class;
-	
+
 	my $i = 0;
 
-	while( my $line = <$info>) 
+	while( my $line = <$info>)
 	{
 		$i = $i + 1;
 		if (substr($line, 0, 5) eq "class")
@@ -171,7 +171,7 @@ sub readCPP
 			chomp($line);
 			$line .= ";";
 			$classes{$class}{$line} = $i;
-			
+
 			my $func = substr($line, 0, index($line, "("));
 			$func = substr($func, rindex($func, " ")+1);
 			$function_names{$class}{$func} = 1;
@@ -207,7 +207,7 @@ sub testDEF
 
 	my $i = 0;
 
-	while( my $line = <$info>) 
+	while( my $line = <$info>)
 	{
 		$i = $i + 1;
 		if (substr($line, 0, 1) eq "?")
@@ -216,7 +216,7 @@ sub testDEF
 			my $func = substr($line, 1, $index-1);
 			my $class = substr($line, $index+1);
 			$class = substr($class, 0, index($class, "@"));
-			
+
 			if (exists $function_names{$class}{$func})
 			{
 				if ($function_names{$class}{$func} == 1)
@@ -225,7 +225,9 @@ sub testDEF
 				}
 				else
 				{
-					die "\nDLLsources/CvGameCoreDLL.def(" . $i . "): " . $class . "::" . $func . " is redirected more than once\n\n";
+				# disabled for now as it will complain for redirects of overloaded functions (if multiple overloads are redirected)
+				# @TODO: improve the check to allow overloads
+				#	die "\nDLLsources/CvGameCoreDLL.def(" . $i . "): " . $class . "::" . $func . " is redirected more than once\n\n";
 				}
 			}
 			else
@@ -236,7 +238,7 @@ sub testDEF
 	}
 
 	close $info;
-	
+
 	foreach my $class (keys %function_names)
 	{
 		foreach my $func (keys %{$function_names{$class}})
