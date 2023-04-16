@@ -14385,5 +14385,11 @@ void CvCity::doOppressometerDecay()
 	iOppressometerDecayRate *= 100;
 	iOppressometerDecayRate /= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
 
-	changeOppressometer(- (getOppressometer() * iOppressometerDecayRate) / 100);
+	int iOppressometerDecay = (getOppressometer() * iOppressometerDecayRate) / 100;
+	if (iOppressometerDecay < 1 && getOppressometer() > 0)
+	{
+		iOppressometerDecay = 1; // always decay at least a bit
+	}
+
+	changeOppressometer(-iOppressometerDecay);
 }
