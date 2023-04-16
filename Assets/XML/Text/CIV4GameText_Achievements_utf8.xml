@@ -3178,41 +3178,35 @@
         <English>The first actress</English>
         <French>The first actress</French>
         <German>Die erste Schauspielerin</German>
-        <Russian>The first actress</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_FEMALE_ENTERTAINER_HEAD</Tag>
         <English>The ballroom becomes a stage</English>
         <French>The ballroom becomes a stage</French>
         <German>Der Ballsaal wird zur Bühne</German>
-        <Russian>The ballroom becomes a stage</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_FEMALE_ENTERTAINER_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]I really need to fix my hair and dress before it starts. Otherwise, people won't just laugh at my role and my lines.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]My lady, you look particularly lovely again today, there is no need for correction. May I escort you to the stage?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh, you are a true gentleman, but also a very dangerous flatterer. But thank you for your kind words sir, that lowers my stage fright a little bit.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>"[COLOR_SELECTED_TEXT]I really need to fix my hair and dress before it starts. Otherwise, people won't just laugh at my role and my lines.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]My lady, you look particularly lovely again today, there is no need for correction. May I escort you to the stage?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh, you are a true gentleman, but also a very dangerous flatterer. But thank you for your kind words sir, that lowers my stage fright a little bit.[COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Ich muss unbedingt noch einmal meine Haare und mein Kleid richten, bevor es losgeht. Sonst lachen die Leute nicht nur über meine Rolle und mein Text.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Mylady, Ihr seht heute wieder ganz besonders reizend aus, da bedarf es doch keiner Korrektur mehr. Darf ich Euch zur Bühne geleiten?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh, Ihr seid ein wahrer Gentleman, aber auch ein ganz gefährlicher Schmeichler. Aber Danke Euch für Eure lieben Worte Sir, das senkt mein Lampenfieber doch ein klein wenig.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Russian>"[COLOR_SELECTED_TEXT]I really need to fix my hair and dress before it starts. Otherwise, people won't just laugh at my role and my lines.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]My lady, you look particularly lovely again today, there is no need for correction. May I escort you to the stage?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh, you are a true gentleman, but also a very dangerous flatterer. But thank you for your kind words sir, that lowers my stage fright a little bit.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_ACHIEVE_EXPERT_TRADER</Tag>
         <English>The first trader</English>
         <French>The first trader</French>
         <German>Der erste erfahrene Händler</German>
-        <Russian>The first trader</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_EXPERT_TRADER_HEAD</Tag>
         <English>Trade with the natives</English>
         <French>Trade with the natives</French>
         <German>Handel mit den Wilden</German>
-        <Russian>Trade with the natives</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_EXPERT_TRADER_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]White man, this is very good gun. But price much too high.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Well, you get something for it. I'll add some cartridges and this good rum. What do you say? Deal?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Give me rum, first I have to test. Two barrels and ten guns are what we want.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>"[COLOR_SELECTED_TEXT]White man, this is very good gun. But price much too high.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Well, you get something for it. I'll add some cartridges and this good rum. What do you say? Deal?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Give me rum, first I have to test. Two barrels and ten guns are what we want.[COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Weißer Mann, das sein sehr gute Waffe. Aber Preis viel zu hoch.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Na, ihr bekommt ja auch was dafür. Ich leg noch Patronen drauf und diesen guten Rum hier. Was sagt ihr? Sind wir im Geschäft?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Gib mir Rum, vorher muss ich testen. Zwei Fässer und zehn Gewehre wollen wir.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Russian>"[COLOR_SELECTED_TEXT]White man, this is very good gun. But price much too high.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Well, you get something for it. I'll add some cartridges and this good rum. What do you say? Deal?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Give me rum, first I have to test. Two barrels and ten guns are what we want.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
 </Civ4GameText>
