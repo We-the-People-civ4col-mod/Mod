@@ -14,6 +14,7 @@ my $FILE         = getAutoDir() . "/AutoXmlEnum.h";
 my $FILE_TEST    = getAutoDir() . "/AutoXmlTest.h";
 my $FILE_DECLARE = getAutoDir() . "/AutoXmlDeclare.h";
 my $FILE_INIT    = getAutoDir() . "/AutoXmlInit.h";
+my $FILE_PRELOAD = getAutoDir() . "/AutoXmlPreload.h";
 
 my $files = [];
 my %varToEnum;
@@ -22,6 +23,10 @@ my $output         = "";
 my $output_test    = "";
 my $output_declare = "";
 my $output_init    = "";
+
+my $output_preload_dynamic     = "";
+my $output_preload_declaration = "";
+my $output_preload_function    = "";
 
 $output .= "#ifndef AUTO_XML_ENUM\n";
 $output .= "#define AUTO_XML_ENUM\n";
@@ -74,10 +79,21 @@ $output .= "\n#endif // AUTO_XML_ENUM\n";
 $output_declare .= "#endif\n";
 $output_init .= "}\n#endif\n";
 
+my $output_preload = "";
+$output_preload .= $output_preload_declaration;
+$output_preload .= "#ifndef HARDCODE_XML_VALUES\n";
+$output_preload .= $output_preload_dynamic;
+$output_preload .= "#endif\n";
+$output_preload .= "void setXmlLengthsAuto(const std::string& basePath)\n{\n";
+$output_preload .= $output_preload_function;
+$output_preload .= "}\n";
+
+
 writeFile($FILE        , \$output        );
 writeFile($FILE_TEST   , \$output_test   );
 writeFile($FILE_DECLARE, \$output_declare);
 writeFile($FILE_INIT   , \$output_init   );
+writeFile($FILE_PRELOAD, \$output_preload);
 
 sub getChild
 {
@@ -151,14 +167,16 @@ sub processFile
 	$output .= "\n\tFIRST_" . $TYPE . " = 0,\n";
 	$output .= "};\n\n";
 	
+	
+	$output_preload_declaration .= $enum . " NUM_" . $TYPE . "_TYPES_NON_CONST;\n";
+	$output_preload_function    .= "\tsetSingleLength(basePath, NUM_" . $TYPE . "_TYPES_NON_CONST);\n";
+	
 	unless ($isHardcoded)
 	{
 		$output .= "#ifndef HARDCODE_XML_VALUES\n";
 		$output .= "extern const " . $enum . "& NUM_" . $TYPE . "_TYPES;\n";
 		$output .= "#endif\n\n";
-		$output_declare .= $enum . " NUM_" . $TYPE . "_TYPES_NON_CONST;\n";
-		$output_declare .= "const " . $enum . "& NUM_" . $TYPE . "_TYPES = NUM_" . $TYPE . "_TYPES_NON_CONST;\n";
-		$output_init .= "NUM_" . $TYPE . "_TYPES_NON_CONST = (" . $enum . ")" . getNumFunction($basename) . ";\n";
+		$output_preload_dynamic .= "const " . $enum . "& NUM_" . $TYPE . "_TYPES = NUM_" . $TYPE . "_TYPES_NON_CONST;\n";
 	}
 	$output .= "#define NUM_" . substr($enum, 0, -5) . "_TYPES NUM_" . $TYPE . "_TYPES\n\n"
 }
