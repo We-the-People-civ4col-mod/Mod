@@ -379,7 +379,7 @@
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
-			<bUnitsOnPlot>1</bUnitsOnPlot>
+			<bUnitsOnPlot>0</bUnitsOnPlot>
 			<BuildingsRequired>
 				<BuildingClass>BUILDINGCLASS_BASECAMP</BuildingClass>
 				<BuildingClass>BUILDINGCLASS_VILLAGEHALL</BuildingClass>
@@ -390,7 +390,7 @@
 			<iNumBuildings>3</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
-			<bOwnPlot>1</bOwnPlot>
+			<bOwnPlot>0</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
 			<FeaturesRequired/>
 			<TerrainsRequired/>
