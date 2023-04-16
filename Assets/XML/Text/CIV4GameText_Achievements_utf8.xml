@@ -3130,5 +3130,47 @@
         <French>"[COLOR_SELECTED_TEXT]Just look at this treasure, boys. We can do something with it. When we get back to Port Royal, I'll spent a round of rum for everybody.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]That would surprise me. Have you ever spent a round?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Just watch what you say. I'm still in a fighting mood. I'll buy you a drink, I promise and the loot will be shared fairly...[COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Seht euch blos diesen Schatz an, Jungs. Damit lässt sich was anfangen. Wenn wir wieder in Port Royal sind, schmeiß' ich ne Runde Rum für alle.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Das würde mich wundern. Hast Du überhaupt schon mal ne Runde geschmissen?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Pass blos auf was Du sagst. Ich bin immer noch in Kämpferlaune. Ich geb' einen Drink aus, versprochen. Und die Beute wird fair geteilt...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Just look at this treasure, boys. We can do something with it. When we get back to Port Royal, I'll spent a round of rum for everybody.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]That would surprise me. Have you ever spent a round?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Just watch what you say. I'm still in a fighting mood. I'll buy you a drink, I promise and the loot will be shared fairly...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_HARLOT</Tag>
+        <English>The first harlot</English>
+        <French>The first harlot</French>
+        <German>Die erste Dirne</German>
+        <Russian>The first harlot</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_HARLOT_HEAD</Tag>
+        <English>Harlots in the tavern</English>
+        <French>Harlots in the tavern</French>
+        <German>Dirnen in der Taverne</German>
+        <Russian>Harlots in the tavern</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_HARLOT_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]So sweetheart, you take care of the workers and craftsmen from today on, when they are tired of working here and want to have fun. Just always make sure that they have fun.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]You got it. As long as they pay for it[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das werden sie, ansonsten fliegen sie raus. Ich sag Dir was, damit leistest du einen ganz wesentlichen Beitrag für die Stimmung in der Kolonie[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <French>"[COLOR_SELECTED_TEXT]So sweetheart, you take care of the workers and craftsmen from today on, when they are tired of working here and want to have fun. Just always make sure that they have fun.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]You got it. As long as they pay for it[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das werden sie, ansonsten fliegen sie raus. Ich sag Dir was, damit leistest du einen ganz wesentlichen Beitrag für die Stimmung in der Kolonie[COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
+        <German>"[COLOR_SELECTED_TEXT]Also Schätzchen, Du kümmerst Dich dann ab heute um die Arbeiter und Handwerker, wenn sie müde von der Arbeit hier ihren Spaß haben wollen. Sorg nur immer dafür, dass sie sich amüsieren.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Geht klar. Solange sie dafür bezahlen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das werden sie, ansonsten fliegen sie raus. Ich sag Dir was, damit leistest du einen ganz wesentlichen Beitrag für die Stimmung in der Kolonie.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+        <Russian>"[COLOR_SELECTED_TEXT]So sweetheart, you take care of the workers and craftsmen from today on, when they are tired of working here and want to have fun. Just always make sure that they have fun.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]You got it. As long as they pay for it[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das werden sie, ansonsten fliegen sie raus. Ich sag Dir was, damit leistest du einen ganz wesentlichen Beitrag für die Stimmung in der Kolonie[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_FEMALE_ENTERTAINER</Tag>
+        <English>The first actress</English>
+        <French>The first actress</French>
+        <German>Die erste Schauspielerin</German>
+        <Russian>The first actress</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_FEMALE_ENTERTAINER_HEAD</Tag>
+        <English>The ballroom becomes a stage</English>
+        <French>The ballroom becomes a stage</French>
+        <German>Der Ballsaal wird zur Bühne</German>
+        <Russian>The ballroom becomes a stage</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_FEMALE_ENTERTAINER_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]I really need to fix my hair and dress before it starts. Otherwise, people won't just laugh at my role and my lines.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]My lady, you look particularly lovely again today, there is no need for correction. May I escort you to the stage?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh, you are a true gentleman, but also a very dangerous flatterer. But thank you for your kind words sir, that lowers my stage fright a little bit.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <French>"[COLOR_SELECTED_TEXT]I really need to fix my hair and dress before it starts. Otherwise, people won't just laugh at my role and my lines.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]My lady, you look particularly lovely again today, there is no need for correction. May I escort you to the stage?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh, you are a true gentleman, but also a very dangerous flatterer. But thank you for your kind words sir, that lowers my stage fright a little bit.[COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
+        <German>"[COLOR_SELECTED_TEXT]Ich muss unbedingt noch einmal meine Haare und mein Kleid richten, bevor es losgeht. Sonst lachen die Leute nicht nur über meine Rolle und mein Text.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Mylady, Ihr seht heute wieder ganz besonders reizend aus, da bedarf es doch keiner Korrektur mehr. Darf ich Euch zur Bühne geleiten?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh, Ihr seid ein wahrer Gentleman, aber auch ein ganz gefährlicher Schmeichler. Aber Danke Euch für Eure lieben Worte Sir, das senkt mein Lampenfieber doch ein klein wenig.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+        <Russian>"[COLOR_SELECTED_TEXT]I really need to fix my hair and dress before it starts. Otherwise, people won't just laugh at my role and my lines.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]My lady, you look particularly lovely again today, there is no need for correction. May I escort you to the stage?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh, you are a true gentleman, but also a very dangerous flatterer. But thank you for your kind words sir, that lowers my stage fright a little bit.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>		
 </Civ4GameText>
