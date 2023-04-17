@@ -7901,6 +7901,10 @@ bool CvBuildInfo::isKill() const
 {
 	return m_bKill;
 }
+bool CvBuildInfo::isRoute() const
+{
+	return (getRoute() != NO_ROUTE);
+}
 // Arrays
 int CvBuildInfo::getFeatureTime(int i) const
 {

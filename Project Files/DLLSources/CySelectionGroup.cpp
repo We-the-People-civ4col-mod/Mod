@@ -177,6 +177,7 @@ CyArea* CySelectionGroup::area()
 
 int /*RouteTypes*/ CySelectionGroup::getBestBuildRoute(CyPlot* pPlot, BuildTypes* peBestBuild)
 {
+	printf("Turn: %d - CySelectionGroup::getBestBuildRoute(): - 1\n", GC.getGame().getGameTurn());
 	return m_pSelectionGroup ? m_pSelectionGroup->getBestBuildRoute(pPlot->getPlot(), peBestBuild) : -1;
 }
 

@@ -145,15 +145,15 @@
             <bSelectAll>1</bSelectAll>
             <Button>Art/Interface/Game Hud/Actions/Go_to_all_high_res.dds</Button>
         </InterfaceModeInfo>
-        <InterfaceModeInfo>
-            <Type>INTERFACEMODE_ROUTE_TO</Type>
-            <Description>TXT_KEY_INTERFACEMODE_ROUTE_TO</Description>
-            <Help>TXT_KEY_INTERFACEMODE_ROUTE_TO_HELP</Help>
+				<InterfaceModeInfo>
+            <Type>INTERFACEMODE_ROUTE_TO_ROAD</Type>
+            <Description>TXT_KEY_INTERFACEMODE_ROUTE_TO_ROAD</Description>
+            <Help>TXT_KEY_INTERFACEMODE_ROUTE_TO_ROAD_HELP</Help>
             <CursorType>CURSOR_ROUTE_TO</CursorType>
-            <Mission>MISSION_ROUTE_TO</Mission>
+            <Mission>MISSION_ROUTE_TO_ROAD</Mission>
             <HotKey>KB_R</HotKey>
             <bAltDown>1</bAltDown>
-            <bShiftDown>0</bShiftDown>
+            <bShiftDown>1</bShiftDown>
             <bCtrlDown>0</bCtrlDown>
             <iHotKeyPriority>0</iHotKeyPriority>
             <HotKeyAlt/>
@@ -166,7 +166,7 @@
             <bHighlightPlot>0</bHighlightPlot>
             <bSelectType>0</bSelectType>
             <bSelectAll>0</bSelectAll>
-            <Button>Art/Interface/Game Hud/Actions/build_route_to_railroad.dds</Button>
+            <Button>Art/Interface/Game Hud/Actions/route_to_high_res.dds</Button>
         </InterfaceModeInfo>
         <InterfaceModeInfo>
             <Type>INTERFACEMODE_PYTHON_PICK_PLOT</Type>
@@ -193,29 +193,6 @@
             <bSelectAll>0</bSelectAll>
         </InterfaceModeInfo>
         <InterfaceModeInfo>
-            <Type>INTERFACEMODE_ROUTE_TO_ROAD</Type>
-            <Description>TXT_KEY_INTERFACEMODE_ROUTE_TO_ROAD</Description>
-            <Help>TXT_KEY_INTERFACEMODE_ROUTE_TO_ROAD_HELP</Help>
-            <CursorType>CURSOR_ROUTE_TO</CursorType>
-            <Mission>MISSION_ROUTE_TO_ROAD</Mission>
-            <HotKey>KB_R</HotKey>
-            <bAltDown>1</bAltDown>
-            <bShiftDown>1</bShiftDown>
-            <bCtrlDown>0</bCtrlDown>
-            <iHotKeyPriority>0</iHotKeyPriority>
-            <HotKeyAlt/>
-            <bAltDownAlt>0</bAltDownAlt>
-            <bShiftDownAlt>0</bShiftDownAlt>
-            <bCtrlDownAlt>0</bCtrlDownAlt>
-            <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-            <bVisible>1</bVisible>
-            <bGotoPlot>1</bGotoPlot>
-            <bHighlightPlot>0</bHighlightPlot>
-            <bSelectType>0</bSelectType>
-            <bSelectAll>0</bSelectAll>
-            <Button>Art/Interface/Game Hud/Actions/route_to_high_res.dds</Button>
-        </InterfaceModeInfo>
-        <InterfaceModeInfo>
             <Type>INTERFACEMODE_ROUTE_TO_PLASTERED_ROAD</Type>
             <Description>TXT_KEY_INTERFACEMODE_ROUTE_TO_PLASTERED_ROAD</Description>
             <Help>TXT_KEY_INTERFACEMODE_ROUTE_TO_PLASTERED_ROAD_HELP</Help>
@@ -237,6 +214,29 @@
             <bSelectType>0</bSelectType>
             <bSelectAll>0</bSelectAll>
             <Button>Art/Interface/Game Hud/Actions/build_route_to_plastered_road.dds</Button>
+        </InterfaceModeInfo>
+				<InterfaceModeInfo>
+            <Type>INTERFACEMODE_ROUTE_TO</Type>
+            <Description>TXT_KEY_INTERFACEMODE_ROUTE_TO</Description>
+            <Help>TXT_KEY_INTERFACEMODE_ROUTE_TO_HELP</Help>
+            <CursorType>CURSOR_ROUTE_TO</CursorType>
+            <Mission>MISSION_ROUTE_TO</Mission>
+            <HotKey>KB_R</HotKey>
+            <bAltDown>1</bAltDown>
+            <bShiftDown>0</bShiftDown>
+            <bCtrlDown>0</bCtrlDown>
+            <iHotKeyPriority>0</iHotKeyPriority>
+            <HotKeyAlt/>
+            <bAltDownAlt>0</bAltDownAlt>
+            <bShiftDownAlt>0</bShiftDownAlt>
+            <bCtrlDownAlt>0</bCtrlDownAlt>
+            <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+            <bVisible>1</bVisible>
+            <bGotoPlot>1</bGotoPlot>
+            <bHighlightPlot>0</bHighlightPlot>
+            <bSelectType>0</bSelectType>
+            <bSelectAll>0</bSelectAll>
+            <Button>Art/Interface/Game Hud/Actions/build_route_to_railroad.dds</Button>
         </InterfaceModeInfo>
     </InterfaceModeInfos>
 </Civ4InterfaceModeInfos>

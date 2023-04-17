@@ -306,7 +306,7 @@ public:
 	DllExport bool canMove() const;
 	DllExport bool hasMoved() const;
 
-	bool canBuildRoute(RouteTypes eRequestedRoute = NO_ROUTE) const;
+	bool canBuildRoute(RouteTypes ePreferredRoute = NO_ROUTE) const;
 	DllExport BuildTypes getBuildType() const;
 	int workRate(bool bMax) const;
 	void changeExtraWorkRate(int iChange);

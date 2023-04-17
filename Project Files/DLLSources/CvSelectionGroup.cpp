@@ -652,8 +652,10 @@ bool CvSelectionGroup::canStartMission(int iMission, int iData1, int iData2, CvP
 
 		case MISSION_ROUTE_TO:
 			{
+				printf("canStartMission: MISSION_ROUTE_TO - 1\n");
 				if (!(pPlot->at(iData1, iData2)) || canBuildRoute(pPlot))
 				{
+					printf("canStartMission: MISSION_ROUTE_TO - 2\n");
 					return true;
 				}
 				break;
@@ -661,8 +663,10 @@ bool CvSelectionGroup::canStartMission(int iMission, int iData1, int iData2, CvP
 
 		case MISSION_ROUTE_TO_ROAD:
 			{
+				printf("canStartMission: MISSION_ROUTE_TO_ROAD - 1\n");
 				if (!(pPlot->at(iData1, iData2)) || canBuildRoute(pPlot, ROUTE_ROAD))
 				{
+					printf("canStartMission: MISSION_ROUTE_TO_ROAD - 2\n");
 					return true;
 				}
 				break;
@@ -670,8 +674,10 @@ bool CvSelectionGroup::canStartMission(int iMission, int iData1, int iData2, CvP
 
 		case MISSION_ROUTE_TO_PLASTERED_ROAD:
 			{
+				printf("canStartMission: MISSION_ROUTE_TO_PLASTERED_ROAD - 1\n");
 				if (!(pPlot->at(iData1, iData2)) || canBuildRoute(pPlot, ROUTE_PLASTERED_ROAD))
 				{
+					printf("canStartMission: MISSION_ROUTE_TO_PLASTERED_ROAD - 1\n");
 					return true;
 				}
 				break;
@@ -807,9 +813,6 @@ void CvSelectionGroup::startMission()
 {
 	CLLNode<IDInfo>* pUnitNode;
 	CvUnit* pLoopUnit;
-	bool bDelete;
-	bool bAction;
-	bool bNotify;
 
 	FAssert(!isBusy());
 	FAssert(getOwnerINLINE() != NO_PLAYER);
@@ -833,12 +836,14 @@ void CvSelectionGroup::startMission()
 
 	setActivityType(ACTIVITY_MISSION);
 
-	bDelete = false;
-	bAction = false;
-	bNotify = false;
+	bool bDelete = false;
+//	bool bAction = false;
+	bool bNotify = false;
 
+	printf("Turn: %d - startMission(): - 1\n", GC.getGame().getGameTurn());
 	if (!canStartMission(headMissionQueueNode()->m_data.eMissionType, headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2, plot()))
 	{
+		printf("Turn: %d - startMission(): - 2\n", GC.getGame().getGameTurn());
 		bDelete = true;
 	}
 	else
@@ -958,7 +963,7 @@ void CvSelectionGroup::startMission()
 
 	if ((getNumUnits() > 0) && (headMissionQueueNode() != NULL))
 	{
-		if (bAction)
+		if (false /* bAction */)
 		{
 			if (isHuman())
 			{
@@ -1012,6 +1017,7 @@ void CvSelectionGroup::continueMission(int iSteps)
 
 	bDone = false;
 	bAction = false;
+	printf("Turn: %d - continueMission\n", GC.getGame().getGameTurn());
 
 	if (headMissionQueueNode()->m_data.iPushTurn == GC.getGameINLINE().getGameTurn() || (headMissionQueueNode()->m_data.iFlags & MOVE_THROUGH_ENEMY))
 	{
@@ -1152,10 +1158,12 @@ void CvSelectionGroup::continueMission(int iSteps)
 					case MISSION_ROUTE_TO:
 						if (groupRouteTo(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2, headMissionQueueNode()->m_data.iFlags))
 						{
+							printf("continueMission: MISSION_ROUTE_TO - 1\n");
 							bAction = true;
 						}
 						else
 						{
+							printf("continueMission: MISSION_ROUTE_TO - 2\n");
 							bDone = true;
 						}
 						break;
@@ -1163,11 +1171,13 @@ void CvSelectionGroup::continueMission(int iSteps)
 					case MISSION_ROUTE_TO_ROAD:
 						if (groupRouteTo(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2, headMissionQueueNode()->m_data.iFlags, ROUTE_ROAD))
 						{
+							printf("continueMission: MISSION_ROUTE_TO_ROAD - 1\n");
 							bAction = true;
 						}
 						else
 						{
 							bDone = true;
+							printf("continueMission: MISSION_ROUTE_TO_ROAD - 2\n");
 						}
 						break;
 
@@ -1175,10 +1185,12 @@ void CvSelectionGroup::continueMission(int iSteps)
 						if (groupRouteTo(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2, headMissionQueueNode()->m_data.iFlags, ROUTE_PLASTERED_ROAD))
 						{
 							bAction = true;
+							printf("continueMission: MISSION_ROUTE_TO_PLASTERED_ROAD - 1\n");
 						}
 						else
 						{
 							bDone = true;
+							printf("continueMission: MISSION_ROUTE_TO_PLASTERED_ROAD - 2\n");
 						}
 						break;
 
@@ -1270,8 +1282,10 @@ void CvSelectionGroup::continueMission(int iSteps)
 			case MISSION_ROUTE_TO:
 				if (at(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2))
 				{
+					printf("continueMission: MISSION_ROUTE_TO - 3\n");
 					if (!canBuildRoute(plot()))
 					{
+						printf("continueMission: MISSION_ROUTE_TO - 4\n");
 						bDone = true;
 					}
 				}
@@ -1280,8 +1294,10 @@ void CvSelectionGroup::continueMission(int iSteps)
 			case MISSION_ROUTE_TO_ROAD:
 				if (at(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2))
 				{
+					printf("continueMission: MISSION_ROUTE_TO_ROAD - 3\n");
 					if (!canBuildRoute(plot(), ROUTE_ROAD))
 					{
+						printf("continueMission: MISSION_ROUTE_TO_ROAD - 4\n");
 						bDone = true;
 					}
 				}
@@ -1290,8 +1306,10 @@ void CvSelectionGroup::continueMission(int iSteps)
 			case MISSION_ROUTE_TO_PLASTERED_ROAD:
 				if (at(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2))
 				{
-					if (!canBuildRoute(plot(), ROUTE_ROAD))
+					printf("continueMission: MISSION_ROUTE_TO_PLASTERED_ROAD - 3\n");
+					if (!canBuildRoute(plot(), ROUTE_PLASTERED_ROAD))
 					{
+						printf("continueMission: MISSION_ROUTE_TO_PLASTERED_ROAD - 4\n");
 						bDone = true;
 					}
 				}
@@ -1611,6 +1629,7 @@ bool CvSelectionGroup::canDoInterfaceMode(InterfaceModeTypes eInterfaceMode)
 			{
 				if (pLoopUnit->canBuildRoute())
 				{
+					printf("canDoInterfaceMode: INTERFACEMODE_ROUTE - 1\n");
 					return true;
 				}
 			}
@@ -1621,6 +1640,7 @@ bool CvSelectionGroup::canDoInterfaceMode(InterfaceModeTypes eInterfaceMode)
 			{
 				if (pLoopUnit->canBuildRoute(ROUTE_ROAD))
 				{
+					printf("canDoInterfaceMode: INTERFACEMODE_ROUTE_TO_ROAD - 1\n");
 					return true;
 				}
 			}
@@ -1631,6 +1651,7 @@ bool CvSelectionGroup::canDoInterfaceMode(InterfaceModeTypes eInterfaceMode)
 			{
 				if (pLoopUnit->canBuildRoute(ROUTE_PLASTERED_ROAD))
 				{
+					printf("canDoInterfaceMode: INTERFACEMODE_ROUTE_TO_PLASTERED_ROAD - 1\n");
 					return true;
 				}
 			}
@@ -2549,49 +2570,55 @@ DomainTypes CvSelectionGroup::getDomainType() const
 }
 
 
-bool CvSelectionGroup::canBuildRoute(CvPlot* pPlot, RouteTypes eRequestedRoute) const
+bool CvSelectionGroup::canBuildRoute(CvPlot* pPlot, RouteTypes ePreferredRoute) const
 {
-// if eRequestedRoute == NO_ROUTE, then return true for any route that can be built!
+// if ePreferredRoute == NO_ROUTE, then return true for any route that can be built!
 
 	CLLNode<IDInfo>* pUnitNode = headUnitNode();
 
+	printf("Turn: %d - canBuildRoute(ePreferredRoute=%d) - 1\n", GC.getGame().getGameTurn(), ePreferredRoute);
 	while (pUnitNode != NULL)
 	{
 		const CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = nextUnitNode(pUnitNode);
 
-		for (BuildTypes eBuild = FIRST_BUILD; eBuild < NUM_BUILD_TYPES; eBuild++)
+		for (BuildTypes eLoopBuild = FIRST_BUILD; eLoopBuild < NUM_BUILD_TYPES; eLoopBuild++)
 		{
-			RouteTypes eRoute = ((RouteTypes)(GC.getBuildInfo(eBuild).getRoute()));
-			if (eRoute != NO_ROUTE)
+			if (GC.getBuildInfo(eLoopBuild).isRoute())
 			{
-				if (eRequestedRoute == NO_ROUTE && pLoopUnit->canBuild(pPlot, eBuild))
+				printf("Turn: %d - canBuildRoute(ePreferredRoute=%d): eLoopBuild=%d - 2\n", GC.getGame().getGameTurn(), ePreferredRoute, eLoopBuild);
+				if (ePreferredRoute == NO_ROUTE && pLoopUnit->canBuild(pPlot, eLoopBuild))
 				{
 					// there is a route type that can be built
+					printf("Turn: %d - canBuildRoute(ePreferredRoute=%d): eLoopBuild=%d - 3\n", GC.getGame().getGameTurn(), ePreferredRoute, eLoopBuild);
 					return true;
 				}
-				if (eRoute == eRequestedRoute && pLoopUnit->canBuild(pPlot, eBuild))
+				if (GC.getBuildInfo(eLoopBuild).getRoute() == ePreferredRoute && pLoopUnit->canBuild(pPlot, eLoopBuild))
 				{
 					// the reqeusted route type can be built
+					printf("Turn: %d - canBuildRoute(ePreferredRoute=%d): eLoopBuild=%d - 4\n", GC.getGame().getGameTurn(), ePreferredRoute, eLoopBuild);
 					return true;
 				}
 			}
 		}
 	}
+	printf("Turn: %d - canBuildRoute(ePreferredRoute=%d) - 4\n", GC.getGame().getGameTurn(), ePreferredRoute);
 	// we have not found a buildable route type
 	return false;
 }
 
 
-BuildTypes CvSelectionGroup::getBestBuildRouteBuild(CvPlot *pPlot, RouteTypes eRequestedRoute) const
+BuildTypes CvSelectionGroup::getBestBuildRouteBuild(CvPlot *pPlot, RouteTypes ePreferredRoute) const
 {
+	// if ePreferredRoute is NO_ROUTE, this will return the best available one
+	// if ePreferredRoute is a specific route type, this function will return it if it can be build by this group
 	BuildTypes eBuild;
-	getBestBuildRoute(pPlot, &eBuild, eRequestedRoute);
+	getBestBuildRoute(pPlot, &eBuild, ePreferredRoute);
 	return eBuild;
 }
 
 
-RouteTypes CvSelectionGroup::getBestBuildRoute(CvPlot* pPlot, BuildTypes* peBestBuild, RouteTypes eRequestedRoute) const
+RouteTypes CvSelectionGroup::getBestBuildRoute(CvPlot* pPlot, BuildTypes* peBestBuild, RouteTypes ePreferredRoute) const
 {
 	PROFILE_FUNC();
 
@@ -2603,42 +2630,58 @@ RouteTypes CvSelectionGroup::getBestBuildRoute(CvPlot* pPlot, BuildTypes* peBest
 	}
 
 	CLLNode<IDInfo>* pUnitNode = headUnitNode();
-
+	printf("Turn: %d - getBestBuildRoute(ePreferredRoute = %d) - 1\n", GC.getGame().getGameTurn(), ePreferredRoute);
 	while (pUnitNode != NULL)
 	{
 		const CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = nextUnitNode(pUnitNode);
 
-		for (int iI = 0; iI < GC.getNumBuildInfos(); iI++)
+		for (BuildTypes eLoopBuild = FIRST_BUILD; eLoopBuild < NUM_BUILD_TYPES; eLoopBuild++)
 		{
-			RouteTypes eRoute = ((RouteTypes)(GC.getBuildInfo((BuildTypes) iI).getRoute()));
-
-			if (eRoute != NO_ROUTE)
+			if (GC.getBuildInfo(eLoopBuild).isRoute())
 			{
-				if (pLoopUnit->canBuild(pPlot, ((BuildTypes)iI)))
+				printf("Turn: %d - getBestBuildRoute(ePreferredRoute = %d): eLoopBuild=%d - 2\n", GC.getGame().getGameTurn(), ePreferredRoute, eLoopBuild);
+				if(ePreferredRoute == NO_ROUTE)
 				{
-					if (eRequestedRoute != NO_ROUTE && eRoute == eRequestedRoute)
+					if (pLoopUnit->canBuild(pPlot, eLoopBuild))
+					{
+						printf("Turn: %d - getBestBuildRoute(ePreferredRoute = %d): eLoopBuild=%d - 3\n", GC.getGame().getGameTurn(), ePreferredRoute, eLoopBuild);
+						RouteTypes eRoute = ((RouteTypes)(GC.getBuildInfo(eLoopBuild).getRoute()));
+
+						int iValue = GC.getRouteInfo(eRoute).getValue();
+
+						if (iValue > iBestValue)
+						{
+							iBestValue = iValue;
+							eBestRoute = eRoute;
+							if (peBestBuild != NULL)
+							{
+								*peBestBuild = eLoopBuild;
+							}
+						}
+					}
+				}
+				else // ePreferredRoute is a specific route type!
+				{
+					RouteTypes eRoute = ((RouteTypes)(GC.getBuildInfo(eLoopBuild).getRoute()));
+					if ((eRoute == ePreferredRoute ||
+							GC.getRouteInfo(ePreferredRoute).getValue() > GC.getRouteInfo(eRoute).getValue() ||
+							(eRoute == ROUTE_RAFT_STATION))
+							&& pLoopUnit->canBuild(pPlot, eLoopBuild))
 					{
 						// if a certain route type was requested and we have found a unit to build it, just return that type
-						*peBestBuild = ((BuildTypes)iI);
-						return eRoute;
-					}
-					int iValue = GC.getRouteInfo(eRoute).getValue();
-
-					if (iValue > iBestValue)
-					{
-						iBestValue = iValue;
-						eBestRoute = eRoute;
+						printf("Turn: %d - getBestBuildRoute(ePreferredRoute = %d): eLoopBuild=%d - 6\n", GC.getGame().getGameTurn(), ePreferredRoute, eLoopBuild);
 						if (peBestBuild != NULL)
 						{
-							*peBestBuild = ((BuildTypes)iI);
+							*peBestBuild = eLoopBuild;
 						}
+						return eRoute;
 					}
 				}
 			}
 		}
 	}
-
+	printf("Turn: %d - getBestBuildRoute(ePreferredRoute = %d): eBestRoute=%d - 7\n", GC.getGame().getGameTurn(), ePreferredRoute, eBestRoute);
 	return eBestRoute;
 }
 
@@ -3008,14 +3051,14 @@ bool CvSelectionGroup::groupPathTo(int iX, int iY, int iFlags)
 }
 
 
-// Returns true if move was made...
-bool CvSelectionGroup::groupRouteTo(int iX, int iY, int iFlags, RouteTypes eRequestedRoute)
+// Returns true if move was made... --> WTP, jooe, 2023-04-17: really?
+bool CvSelectionGroup::groupRouteTo(int iX, int iY, int iFlags, RouteTypes ePreferredRoute)
 {
-	if (!AI_isControlled() || !at(iX, iY) || (getLengthMissionQueue() == 1))
+	if (!AI_isControlled() || (getLengthMissionQueue() == 1))
 	{
 		CvPlot* pPlot = plot();
-		BuildTypes eBestBuild = getBestBuildRouteBuild(pPlot, eRequestedRoute);
-
+		BuildTypes eBestBuild = getBestBuildRouteBuild(pPlot, ePreferredRoute);
+		printf("Turn: %d - groupRouteTo(ePreferredRoute=%d): eBestBuild=%d - 1\n", GC.getGame().getGameTurn(), ePreferredRoute, eBestBuild);
 		if (eBestBuild != NO_BUILD)
 		{
 			groupBuild(eBestBuild);
@@ -3041,8 +3084,9 @@ bool CvSelectionGroup::groupBuild(BuildTypes eBuild)
 	bContinue = false;
 
 	pPlot = plot();
+	printf("Turn: %d - groupBuild(eBuild=%d) - 1\n", GC.getGame().getGameTurn(), eBuild);
 
-    ImprovementTypes eImprovement = (ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement();
+	ImprovementTypes eImprovement = (ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement();
 	if (eImprovement != NO_IMPROVEMENT)
 	{
 		if (AI_isControlled())

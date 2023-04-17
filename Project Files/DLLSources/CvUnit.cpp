@@ -7716,7 +7716,9 @@ bool CvUnit::joinCity()
 
 bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible) const
 {
-    FAssertMsg(eBuild < GC.getNumBuildInfos(), "Index out of bounds");
+	FAssertMsg(eBuild < GC.getNumBuildInfos(), "Index out of bounds");
+
+	printf("Turn: %d - CvUnit::canBuild(eBuild=%d)\n", GC.getGame().getGameTurn(), eBuild);
 
 	if (!(m_pUnitInfo->getBuilds(eBuild)))
 	{
@@ -7787,7 +7789,7 @@ bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible)
 		// R&R, ray, prevent AI from stupidly replacing improvements -END
 	}
 	// R&R, ray, AI Improvement - END
-
+	printf("Turn: %d - CvUnit::canBuild(eBuild=%d): return true\n", GC.getGame().getGameTurn(), eBuild);
 	return true;
 }
 
@@ -8798,25 +8800,28 @@ bool CvUnit::hasMoved()	const
 
 
 // XXX should this test for coal?
-bool CvUnit::canBuildRoute(RouteTypes eRequestedRoute) const
+bool CvUnit::canBuildRoute(RouteTypes ePreferredRoute) const
 {
 	for (BuildTypes eBuild = FIRST_BUILD; eBuild < NUM_BUILD_TYPES; eBuild++)
 	{
 		RouteTypes eRoute = ((RouteTypes)(GC.getBuildInfo(eBuild).getRoute()));
 		if (eRoute != NO_ROUTE)
 		{
-			if (eRequestedRoute == NO_ROUTE && getUnitInfo().getBuilds(eBuild))
+			if (ePreferredRoute == NO_ROUTE && getUnitInfo().getBuilds(eBuild))
 			{
+				printf("Turn: %d - CvUnit::canBuildRoute(ePreferredRoute=%d): return true - 1\n", GC.getGame().getGameTurn(), ePreferredRoute);
 				// there is a route type that can be built
 				return true;
 			}
-			if (eRoute == eRequestedRoute && getUnitInfo().getBuilds(eBuild))
+			if (eRoute == ePreferredRoute && getUnitInfo().getBuilds(eBuild))
 			{
+				printf("Turn: %d - CvUnit::canBuildRoute(ePreferredRoute=%d): return true - 2\n", GC.getGame().getGameTurn(), ePreferredRoute);
 				// the reqeusted route type can be built
 				return true;
 			}
 		}
 	}
+	printf("Turn: %d - CvUnit::canBuildRoute(ePreferredRoute=%d): return false\n", GC.getGame().getGameTurn(), ePreferredRoute);
 	return false;
 }
 
@@ -8837,34 +8842,17 @@ BuildTypes CvUnit::getBuildType() const
 			break;
 
 		case MISSION_ROUTE_TO:
-			{
-				BuildTypes eBuild;
-				if (pGroup->getBestBuildRoute(plot(), &eBuild) != NO_ROUTE)
-				{
-					return eBuild;
-				}
-				break;
-			}
+			printf("CvUnit::getBuildType: MISSION_ROUTE_TO\n");
+			return pGroup->getBestBuildRouteBuild(plot(), NO_ROUTE);
+			// NO_ROUTE means: give the best route, no preference!
 
 		case MISSION_ROUTE_TO_ROAD:
-			{
-				BuildTypes eBuild;
-				if (pGroup->getBestBuildRoute(plot(), &eBuild, ROUTE_ROAD) != NO_ROUTE)
-				{
-					return eBuild;
-				}
-				break;
-			}
+			printf("CvUnit::getBuildType: MISSION_ROUTE_TO_ROAD\n");
+			return pGroup->getBestBuildRouteBuild(plot(), ROUTE_ROAD);
 
 		case MISSION_ROUTE_TO_PLASTERED_ROAD:
-			{
-				BuildTypes eBuild;
-				if (pGroup->getBestBuildRoute(plot(), &eBuild, ROUTE_PLASTERED_ROAD) != NO_ROUTE)
-				{
-					return eBuild;
-				}
-				break;
-			}
+			printf("CvUnit::getBuildType: MISSION_ROUTE_TO_PLASTERED_ROAD\n");
+			return pGroup->getBestBuildRouteBuild(plot(), ROUTE_PLASTERED_ROAD);
 
 		case MISSION_MOVE_TO_UNIT:
 		case MISSION_SKIP:

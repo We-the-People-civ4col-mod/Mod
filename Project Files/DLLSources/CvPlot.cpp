@@ -2430,7 +2430,12 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 		}
 
 		// R&R, ray, one Route Type after the other - START
+		// WTP, jooe, 2023-04-17: modify this to do what it was intended to do
+		// @TODO improve this maybe by moving hardcoded dependency to XML?
 		if (getRouteType() == NO_ROUTE && GC.getRouteInfo(eRoute).getValue() > 1)
+
+//		if (GC.getRouteInfo(eRoute).getValue() > GC.getRouteInfo(getRouteType()).getValue() + 1
+//				&& eRoute != ROUTE_RAFT_STATION)
 		{
 			return false;
 		}

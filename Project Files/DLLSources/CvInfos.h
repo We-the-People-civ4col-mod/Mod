@@ -2188,6 +2188,7 @@ public:
 	DllExport int getMissionType() const;
 	void setMissionType(int iNewType);
 	bool isKill() const;
+	bool isRoute() const;
 
 	// Arrays
 	int getFeatureTime(int i) const;
