@@ -4201,7 +4201,7 @@
     </AchieveInfo>
     <AchieveInfo>
         <Type>ACHIEVE_FIRST_CHRISTIAN_MISSIONARY</Type>
-        <Description>TXT_KEY_ACHIEVE_CHRISTIAN_MISSIONARY</Description>
+        <Description>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY</Description>
         <bActive>1</bActive>
         <bAfterMove>0</bAfterMove>
         <HeaderTextKey>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY_HEAD</HeaderTextKey>
