@@ -7718,8 +7718,6 @@ bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible)
 {
 	FAssertMsg(eBuild < GC.getNumBuildInfos(), "Index out of bounds");
 
-	printf("Turn: %d - CvUnit::canBuild(eBuild=%d)\n", GC.getGame().getGameTurn(), eBuild);
-
 	if (!(m_pUnitInfo->getBuilds(eBuild)))
 	{
 		return false;
@@ -7789,7 +7787,6 @@ bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible)
 		// R&R, ray, prevent AI from stupidly replacing improvements -END
 	}
 	// R&R, ray, AI Improvement - END
-	printf("Turn: %d - CvUnit::canBuild(eBuild=%d): return true\n", GC.getGame().getGameTurn(), eBuild);
 	return true;
 }
 
@@ -8809,19 +8806,16 @@ bool CvUnit::canBuildRoute(RouteTypes ePreferredRoute) const
 		{
 			if (ePreferredRoute == NO_ROUTE && getUnitInfo().getBuilds(eBuild))
 			{
-				printf("Turn: %d - CvUnit::canBuildRoute(ePreferredRoute=%d): return true - 1\n", GC.getGame().getGameTurn(), ePreferredRoute);
 				// there is a route type that can be built
 				return true;
 			}
 			if (eRoute == ePreferredRoute && getUnitInfo().getBuilds(eBuild))
 			{
-				printf("Turn: %d - CvUnit::canBuildRoute(ePreferredRoute=%d): return true - 2\n", GC.getGame().getGameTurn(), ePreferredRoute);
 				// the reqeusted route type can be built
 				return true;
 			}
 		}
 	}
-	printf("Turn: %d - CvUnit::canBuildRoute(ePreferredRoute=%d): return false\n", GC.getGame().getGameTurn(), ePreferredRoute);
 	return false;
 }
 
@@ -8842,16 +8836,13 @@ BuildTypes CvUnit::getBuildType() const
 			break;
 
 		case MISSION_ROUTE_TO:
-			printf("CvUnit::getBuildType: MISSION_ROUTE_TO\n");
 			return pGroup->getBestBuildRouteBuild(plot(), NO_ROUTE);
 			// NO_ROUTE means: give the best route, no preference!
 
 		case MISSION_ROUTE_TO_ROAD:
-			printf("CvUnit::getBuildType: MISSION_ROUTE_TO_ROAD\n");
 			return pGroup->getBestBuildRouteBuild(plot(), ROUTE_ROAD);
 
 		case MISSION_ROUTE_TO_PLASTERED_ROAD:
-			printf("CvUnit::getBuildType: MISSION_ROUTE_TO_PLASTERED_ROAD\n");
 			return pGroup->getBestBuildRouteBuild(plot(), ROUTE_PLASTERED_ROAD);
 
 		case MISSION_MOVE_TO_UNIT:
