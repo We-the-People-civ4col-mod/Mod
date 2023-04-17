@@ -56,6 +56,7 @@ enum RouteTypes
 	ROUTE_ROAD,
 	ROUTE_PLASTERED_ROAD,
 	ROUTE_RAILROAD,
+	ROUTE_RAFT_STATION,
 };
 
 enum SpecialUnitTypes
