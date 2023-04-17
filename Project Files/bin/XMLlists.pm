@@ -46,6 +46,8 @@ sub isAlwaysHardcodedEnum
 	return 1 if $type eq "CommandTypes";
 	return 1 if $type eq "ControlTypes";
 	return 1 if $type eq "MissionTypes";
+	return 1 if $type eq "HurryTypes";
+	return 1 if $type eq "RouteTypes";
 	
 	return 0;
 }

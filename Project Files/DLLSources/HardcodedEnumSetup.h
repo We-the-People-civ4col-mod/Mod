@@ -39,24 +39,10 @@ enum EffectTypes
 	EFFECT_SETTLERSMOKE,
 };
 
-enum HurryTypes
-{
-	HURRY_GOLD,
-	HURRY_IMMIGRANT,
-};
-
 enum ProfessionTypes
 {
 	PROFESSION_MISSIONARY,
 	PROFESSION_NATIVE_TRADER,
-};
-
-enum RouteTypes
-{
-	ROUTE_ROAD,
-	ROUTE_PLASTERED_ROAD,
-	ROUTE_RAILROAD,
-	ROUTE_RAFT_STATION,
 };
 
 enum SpecialUnitTypes
