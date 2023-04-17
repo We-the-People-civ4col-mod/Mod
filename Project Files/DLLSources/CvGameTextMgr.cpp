@@ -9610,7 +9610,9 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
 				int iTotalYieldTimes100 = 0;
 				if (kUnit.getUnitInfo().LbD_canEscape() && iSlaveWorkerProductionBonus > 0  && kUnit.getUnitInfo().getYieldChange(eProfessionYield) > 0)
 				{
-					iTotalYieldTimes100 = (iModifier + iSlaveWorkerProductionBonus) * iYieldAmount;
+					// WTP, ray, fix for wrong Yield Display in total amount
+					// iTotalYieldTimes100 = (iModifier + iSlaveWorkerProductionBonus) * iYieldAmount;
+					iTotalYieldTimes100 = iYieldAmount * (100 + iSlaveWorkerProductionBonus) / 100 * iModifier;
 				}
 				else
 				{
