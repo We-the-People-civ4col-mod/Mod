@@ -20815,7 +20815,7 @@
             <iTeachLevel>0</iTeachLevel>
             <iAICitySize>1</iAICitySize>
         </BuildingInfo>
-				<BuildingInfo>
+	<BuildingInfo>
             <Type>BUILDING_PLACEHOLDER</Type>
             <BuildingClass>BUILDINGCLASS_BASECAMP</BuildingClass>
             <SpecialBuildingType>SPECIALBUILDING_BELLS</SpecialBuildingType>
