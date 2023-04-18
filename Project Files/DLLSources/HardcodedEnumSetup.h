@@ -21,6 +21,10 @@
 // WARNING: only lines ending with a comma (,) will be used meaning even the last entry in an enum needs to end with a comma
 //
 
+enum BuildingTypes
+{
+	BUILDING_PLACEHOLDER,
+};
 
 enum CivEffectTypes
 {
