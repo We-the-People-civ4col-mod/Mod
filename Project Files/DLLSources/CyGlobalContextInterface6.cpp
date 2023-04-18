@@ -48,6 +48,10 @@ void CyGlobalContextPythonInterface6(python::class_<CyGlobalContext>& x)
 		.def("getNumBuildingInfos", &CyGlobalContext::getNumBuildingInfos, "() - Total Building Infos XML\\Buildings\\CIV4BuildingInfos.xml")
 		.def("getBuildingInfo", &CyGlobalContext::getBuildingInfo, python::return_value_policy<python::reference_existing_object>(), "(BuildingID) - CvInfo for BuildingID")
 
+		.def("getNumBuildingInfosFakeExe", &CyGlobalContext::getNumBuildingInfosFakeExe, "() - Total Building Infos as passed to exe")
+		.def("enableNumBuildingInfosFakeExe", &CyGlobalContext::enableNumBuildingInfosFakeExe, "() - Enable Building Info number simulation for EXE")
+		.def("disableNumBuildingInfosFakeExe", &CyGlobalContext::disableNumBuildingInfosFakeExe, "() - Disable Building Info number simulation for EXE")
+
 		.def("getNumUnitClassInfos", &CyGlobalContext::getNumUnitClassInfos, "() - Total Unit Class Infos XML\\Units\\CIV4UnitClassInfos.xml")
 		.def("getUnitClassInfo", &CyGlobalContext::getUnitClassInfo, python::return_value_policy<python::reference_existing_object>(), "(UnitClassID) - CvInfo for UnitClassID")
 

@@ -731,11 +731,11 @@ public:
 	int getRequiredTransportSize() const;
 	int getAssetValue() const;
 	int getPowerValue() const;
-	DllExport int getUnitClassType() const;
+	int getUnitClassType() const;
 	int getSpecialUnitType() const;
 	int getUnitCaptureClassType() const;
 	int getUnitCombatType() const;
-	DllExport int getDomainType() const;
+	int getDomainType() const;
 	ProfessionTypes getDefaultProfession() const;
 	int getDefaultUnitAIType() const;
 	int getInvisibleType() const;
@@ -862,7 +862,7 @@ public:
 	DllExport const char* getFormationType() const;
 	const char* getButton() const;
 	void updateArtDefineButton();
-	DllExport const CvArtInfoUnit* getArtInfo(int i, int iProfession) const;
+	const CvArtInfoUnit* getArtInfo(int i, int iProfession) const;
 	//Androrc UnitArtStyles
 	const CvArtInfoUnit* getUnitArtStylesArtInfo(int i, int iProfession, int iStyle = -1) const;
 	//Androrc End

@@ -140,6 +140,9 @@ public:
 	int getNumLeaderHeadInfos() const { return GC.getNumLeaderHeadInfos(); }
 	int getNumTraitInfos() const { return GC.getNumTraitInfos(); }
 	int getNumUnitInfos() const { return GC.getNumUnitInfos(); }
+	int getNumUnitInfosFakeExe() const { return GC.getNumUnitInfosFakeExe(); }
+	void enableNumUnitInfosFakeExe() { GC.enableNumUnitInfosFakeExe(); }
+	void disableNumUnitInfosFakeExe() { GC.disableNumUnitInfosFakeExe(); }
 	int getNumSpecialUnitInfos() const { return GC.getNumSpecialUnitInfos(); }
 	int getNumRouteInfos() const { return GC.getNumRouteInfos(); }
 	int getNumFeatureInfos() const { return GC.getNumFeatureInfos(); }
@@ -151,6 +154,9 @@ public:
 	int getNumTurnTimerInfos() const { return GC.getNumTurnTimerInfos(); }
 	int getNumBuildingClassInfos() const { return GC.getNumBuildingClassInfos(); }
 	int getNumBuildingInfos() const { return GC.getNumBuildingInfos(); }
+	int getNumBuildingInfosFakeExe() const { return GC.getNumBuildingInfosFakeExe(); }
+	void enableNumBuildingInfosFakeExe() { GC.enableNumBuildingInfosFakeExe(); }
+	void disableNumBuildingInfosFakeExe() { GC.disableNumBuildingInfosFakeExe(); }
 	int getNumUnitClassInfos() const { return GC.getNumUnitClassInfos(); }
 	int getNumUnitCombatInfos() const { return GC.getNumUnitCombatInfos(); }
 	int getNumAutomateInfos() const { return GC.getNumAutomateInfos(); }
@@ -246,7 +252,7 @@ public:
 	int getPEAK_SEE_FROM_CHANGE() const { return GC.getPEAK_SEE_FROM_CHANGE(); }
 	int getHILLS_SEE_FROM_CHANGE() const { return GC.getHILLS_SEE_FROM_CHANGE(); }
 	int getMAX_REBEL_YIELD_MODIFIER() const { return GC.getMAX_REBEL_YIELD_MODIFIER(); }
-	
+
 	// TAC - AI Improved Naval AI - koma13 - START
 	int getAI_TRANSPORT_DANGER_RANGE() const { return GC.getAI_TRANSPORT_DANGER_RANGE(); }
 	int getAI_LOST_TRANSPORT_MEMORY_COUNT() const { return GC.getAI_LOST_TRANSPORT_MEMORY_COUNT(); }
