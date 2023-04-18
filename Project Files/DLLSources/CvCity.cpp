@@ -1694,7 +1694,10 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 		}
 		if (!isNative() && kBuilding.isWater())
 		{
-			if (isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()) && !plot()->isEuropeAccessable())
+			// WTP, fixed a small issue with Lakes 
+			// Terrains adjcancet already control if harbour buildings can be built - the size check has become unnecessary
+			// if (isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()) && !plot()->isEuropeAccessable())
+			if (!plot()->isEuropeAccessable())
 			{
 				for (int iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
 				{
