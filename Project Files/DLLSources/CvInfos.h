@@ -731,11 +731,11 @@ public:
 	int getRequiredTransportSize() const;
 	int getAssetValue() const;
 	int getPowerValue() const;
-	DllExport int getUnitClassType() const;
+	int getUnitClassType() const;
 	int getSpecialUnitType() const;
 	int getUnitCaptureClassType() const;
 	int getUnitCombatType() const;
-	DllExport int getDomainType() const;
+	int getDomainType() const;
 	ProfessionTypes getDefaultProfession() const;
 	int getDefaultUnitAIType() const;
 	int getInvisibleType() const;

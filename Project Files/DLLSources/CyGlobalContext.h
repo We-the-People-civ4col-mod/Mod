@@ -141,6 +141,8 @@ public:
 	int getNumTraitInfos() const { return GC.getNumTraitInfos(); }
 	int getNumUnitInfos() const { return GC.getNumUnitInfos(); }
 	int getNumUnitInfosFakeExe() const { return GC.getNumUnitInfosFakeExe(); }
+	void enableNumUnitInfosFakeExe() { GC.enableNumUnitInfosFakeExe(); }
+	void disableNumUnitInfosFakeExe() { GC.disableNumUnitInfosFakeExe(); }
 	int getNumSpecialUnitInfos() const { return GC.getNumSpecialUnitInfos(); }
 	int getNumRouteInfos() const { return GC.getNumRouteInfos(); }
 	int getNumFeatureInfos() const { return GC.getNumFeatureInfos(); }
@@ -152,6 +154,9 @@ public:
 	int getNumTurnTimerInfos() const { return GC.getNumTurnTimerInfos(); }
 	int getNumBuildingClassInfos() const { return GC.getNumBuildingClassInfos(); }
 	int getNumBuildingInfos() const { return GC.getNumBuildingInfos(); }
+	int getNumBuildingInfosFakeExe() const { return GC.getNumBuildingInfosFakeExe(); }
+	void enableNumBuildingInfosFakeExe() { GC.enableNumBuildingInfosFakeExe(); }
+	void disableNumBuildingInfosFakeExe() { GC.disableNumBuildingInfosFakeExe(); }
 	int getNumUnitClassInfos() const { return GC.getNumUnitClassInfos(); }
 	int getNumUnitCombatInfos() const { return GC.getNumUnitCombatInfos(); }
 	int getNumAutomateInfos() const { return GC.getNumAutomateInfos(); }

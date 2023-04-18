@@ -2313,7 +2313,11 @@ class CvWorldBuilderScreen:
 		self.m_normalPlayerTabCtrl.addTabSection(localText.getText("TXT_KEY_WB_BUILDINGS",()));
 		self.m_iBuildingTabID = 1
 		self.m_iNormalPlayerCurrentIndexes.append(0)
+		# ugly hack: disable the NumUnitInfos deception for the exe for this function only
+		# so WB will only display the real units, not the placeholders
+		gc.disableNumUnitInfosFakeExe();
 		addWBPlayerControlTabs()
+		gc.enableNumUnitInfosFakeExe();
 		return
 
 	def refreshAdvancedStartTabCtrl(self, bReuse):

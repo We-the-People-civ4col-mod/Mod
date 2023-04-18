@@ -39,6 +39,9 @@
 #include "CyArgsList.h"
 #include "CyPlot.h"
 
+std::vector<CvBuildingInfo*> vpBuildingInfos;
+bool bIsBuildingInfosInitialized = false;
+
 std::vector<CvUnitInfo*> vpUnitInfos;
 bool bIsUnitInfosInitialized = false;
 
@@ -1455,15 +1458,29 @@ public:
 
 		getBuildInfo
 			?getBuildInfo@CvGlobals@@QAEAAVCvBuildInfo@@W4BuildTypes@@@Z=?getBuildInfo@EXE_CvGlobals@@QAEAAVCvBuildInfo@@W4BuildTypes@@@Z
-
-		getBuildingInfo
-			?getBuildingInfo@CvGlobals@@QAEAAV?$vector@PAVCvBuildingInfo@@V?$allocator@PAVCvBuildingInfo@@@std@@@std@@XZ=?getBuildingInfo@EXE_CvGlobals@@QAEAAV?$vector@PAVCvBuildingInfo@@V?$allocator@PAVCvBuildingInfo@@@std@@@std@@XZ
-
-			*/
+*/
+	DllExport std::vector<CvBuildingInfo*>& getBuildingInfo()
+	{
+		if (!bIsBuildingInfosInitialized)
+			{
+				vpBuildingInfos.clear();
+				vpBuildingInfos = CvGlobals::getBuildingInfo();
+				while(vpBuildingInfos.size() < static_cast<unsigned int>(CvGlobals::getNumBuildingInfosFakeExe()))
+				{
+					vpBuildingInfos.push_back(&CvGlobals::getBuildingInfo(BUILDING_PLACEHOLDER));
+				}
+				bIsBuildingInfosInitialized = true;
+			}
+		return vpBuildingInfos;
+	}
 
 	DllExport CvBuildingInfo& getBuildingInfo(BuildingTypes eBuildingNum)
 	{
-		return CvGlobals::getBuildingInfo(eBuildingNum);
+		if (eBuildingNum <= BUILDING_PLACEHOLDER)
+		{
+			return CvGlobals::getBuildingInfo(eBuildingNum);
+		}
+		return CvGlobals::getBuildingInfo(BUILDING_PLACEHOLDER);
 	}
 			/*
 		getCAMERA_FAR_CLIP_Z_HEIGHT
@@ -1740,7 +1757,10 @@ public:
 
 	DllExport int getNumBuildingInfos()
 	{
-		return NUM_BUILDING_TYPES;
+		// show the exe an arbitrarily high number of building types because that somehow affects savegame padding
+		// the free slots will be directed to the BUILDING_PLACEHOLDER by getBuildingInfo()
+		// This is meant to be a workaround for savegames becoming incompatible each time a building is added or removed
+		return CvGlobals::getNumBuildingInfosFakeExe(); // NUM_BUILDING_TYPES;
 	}
 
 	/*
@@ -2969,10 +2989,19 @@ public:
 
 		getUnit
 			?getUnit@CvPlayer@@QBEPAVCvUnit@@H@Z=?getUnit@EXE_CvPlayer@@QBEPAVCvUnit@@H@Z
+*/
 
-		getUnitButton
-			?getUnitButton@CvPlayer@@QBEPBDW4UnitTypes@@@Z=?getUnitButton@EXE_CvPlayer@@QBEPBDW4UnitTypes@@@Z
+	DllExport const TCHAR* getUnitButton(UnitTypes eUnit) const
+	{
+		if (eUnit <= UNIT_PLACEHOLDER)
+		{
+			return CvPlayer::getUnitButton(eUnit);
+		}
+		return CvPlayer::getUnitButton(UNIT_PLACEHOLDER);
+	}
 
+
+/*
 		getWorstEnemyName
 			?getWorstEnemyName@CvPlayer@@QBE?BVCvWString@@XZ=?getWorstEnemyName@EXE_CvPlayer@@QBE?BVCvWString@@XZ
 
@@ -3843,10 +3872,6 @@ public:
 
 	DllExport const CvArtInfoUnit* getArtInfo(int i) const
 	{
-		if (i > UNIT_PLACEHOLDER)
-		{
-			return CvUnit::getArtInfo(UNIT_PLACEHOLDER);
-		}
 		return CvUnit::getArtInfo(i);
 	}
 /*
@@ -4029,10 +4054,6 @@ public:
 
 	DllExport const CvArtInfoUnit* getArtInfo(int i, int iProfession) const
 	{
-		if (i > UNIT_PLACEHOLDER)
-		{
-			return CvUnitInfo::getArtInfo(UNIT_PLACEHOLDER, PROFESSION_COLONIST);
-		}
 		return CvUnitInfo::getArtInfo(i, iProfession);
 	}
 
@@ -4040,10 +4061,13 @@ public:
 	{
 		return CvUnitInfo::getDefaultProfession();
 	}
-	/*
-		getDomainType
-			?getDomainType@CvUnitInfo@@QBEHXZ=?getDomainType@EXE_CvUnitInfo@@QBEHXZ
 
+	DllExport int getDomainType() const
+	{
+		return CvUnitInfo::getDomainType();
+	}
+
+/*
 		getFormationType
 			?getFormationType@CvUnitInfo@@QBEPBDXZ=?getFormationType@EXE_CvUnitInfo@@QBEPBDXZ
 
@@ -4052,10 +4076,13 @@ public:
 
 		getGroupSize
 			?getGroupSize@CvUnitInfo@@QBEHH@Z=?getGroupSize@EXE_CvUnitInfo@@QBEHH@Z
+*/
+	DllExport int getUnitClassType() const
+	{
+		return CvUnitInfo::getUnitClassType();
+	}
 
-		getUnitClassType
-			?getUnitClassType@CvUnitInfo@@QBEHXZ=?getUnitClassType@EXE_CvUnitInfo@@QBEHXZ
-
+/*
 		getUnitGroupRequired
 			?getUnitGroupRequired@CvUnitInfo@@QBEHHH@Z=?getUnitGroupRequired@EXE_CvUnitInfo@@QBEHHH@Z
 

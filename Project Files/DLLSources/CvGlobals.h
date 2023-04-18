@@ -467,8 +467,9 @@ public:
 	std::vector<CvBuildingClassInfo*>& getBuildingClassInfo();
 	CvBuildingClassInfo& getBuildingClassInfo(BuildingClassTypes eBuildingClassNum);
 
-	int getNumBuildingInfos();
-	DllExport std::vector<CvBuildingInfo*>& getBuildingInfo();
+	int getNumBuildingInfos() const;
+	int getNumBuildingInfosFakeExe() const;
+	std::vector<CvBuildingInfo*>& getBuildingInfo();
 	CvBuildingInfo& getBuildingInfo(BuildingTypes eBuildingNum);
 
 	DllExport int getNumSpecialBuildingInfos();
@@ -1562,6 +1563,28 @@ protected:
 		inline bool getUSE_DO_PILLAGE_GOLD_CALLBACK() { return m_bUSE_DO_PILLAGE_GOLD_CALLBACK; }
 		inline bool getUSE_GET_EXPERIENCE_NEEDED_CALLBACK() { return m_bUSE_GET_EXPERIENCE_NEEDED_CALLBACK; }
 		inline bool getUSE_DO_COMBAT_CALLBACK() { return m_bUSE_DO_COMBAT_CALLBACK; }
+
+public:
+	void enableNumUnitInfosFakeExe()
+	{
+		m_enableNumUnitInfosFakeExe = true;
+	}
+	void disableNumUnitInfosFakeExe()
+	{
+		m_enableNumUnitInfosFakeExe = false;
+	}
+	void enableNumBuildingInfosFakeExe()
+	{
+		m_enableNumBuildingInfosFakeExe = true;
+	}
+	void disableNumBuildingInfosFakeExe()
+	{
+		m_enableNumBuildingInfosFakeExe = false;
+	}
+
+protected:
+	bool m_enableNumUnitInfosFakeExe;
+	bool m_enableNumBuildingInfosFakeExe;
 };
 
 extern CvGlobals gGlobals;	// for debugging

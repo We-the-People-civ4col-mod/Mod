@@ -67,5 +67,9 @@ void CyGlobalContextPythonInterface5(python::class_<CyGlobalContext>& x)
 		.def("getNumSpecialUnitInfos", &CyGlobalContext::getNumSpecialUnitInfos, "() - Total SpecialUnit Infos XML\\Units\\CIV4SpecialUnitInfos.xml")
 		.def("getSpecialUnitInfo", &CyGlobalContext::getSpecialUnitInfo, python::return_value_policy<python::reference_existing_object>(), "(UnitID) - CvInfo for UnitID")
 
+		.def("enableNumUnitInfosFakeExe", &CyGlobalContext::enableNumUnitInfosFakeExe, "() - Enable Unit Info number simulation for EXE")
+		.def("disableNumUnitInfosFakeExe", &CyGlobalContext::disableNumUnitInfosFakeExe, "() - Disable Unit Info number simulation for EXE")
+
+
 	;
 }

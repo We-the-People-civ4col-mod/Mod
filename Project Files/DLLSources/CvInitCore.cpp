@@ -2021,24 +2021,26 @@ void CvInitCore::read(FDataStreamBase* pStream)
 	int iNumUnitsInSavegame;
 	reader.Read(iNumUnitsInSavegame);
 
-	if (iNumUnitsInSavegame != NUM_UNIT_TYPES)
-	{
-		CvString message = "Number of unit types in savegame (%d) differs from number of unit types in this mod DLL (%d)\n\nThis is probably caused by updating the mod to an incompatible version. Loading this savegame is impossible for now, sorry!\nAs the game is now in an unstable state, we have to exit it. Please restart. Sorry!";
-		sprintf(szCvInitCoreReadFailureMessage, message, iNumUnitsInSavegame, NUM_UNIT_TYPES);
-		sprintf(szCvInitCoreReadFailureTitle, "Savegame version mismatch");
-		showReadFailureMessage(szCvInitCoreReadFailureTitle, szCvInitCoreReadFailureMessage);
-	}
+	// Disable this check for now as we have a workaround: Manipulating the number of buildings/units sent to the EXE
+	// if (iNumUnitsInSavegame != NUM_UNIT_TYPES)
+	// {
+	// 	CvString message = "Number of unit types in savegame (%d) differs from number of unit types in this mod DLL (%d)\n\nThis is probably caused by updating the mod to an incompatible version. Loading this savegame is impossible for now, sorry!\nAs the game is now in an unstable state, we have to exit it. Please restart. Sorry!";
+	// 	sprintf(szCvInitCoreReadFailureMessage, message, iNumUnitsInSavegame, NUM_UNIT_TYPES);
+	// 	sprintf(szCvInitCoreReadFailureTitle, "Savegame version mismatch");
+	// 	showReadFailureMessage(szCvInitCoreReadFailureTitle, szCvInitCoreReadFailureMessage);
+	// }
 
 	int iNumBuildingsInSavegame;
 	reader.Read(iNumBuildingsInSavegame);
 
-	if (iNumBuildingsInSavegame != NUM_BUILDING_TYPES)
-	{
-		CvString message = "Number of building types in savegame (%d) differs from number of building types in this mod DLL (%d)\n\nThis is probably caused by updating the mod to an incompatible version. Loading this savegame is impossible for now, sorry!\nAs the game is now in an unstable state, we have to exit it. Please restart. Sorry!";
-		sprintf(szCvInitCoreReadFailureMessage, message, iNumBuildingsInSavegame, NUM_BUILDING_TYPES);
-		sprintf(szCvInitCoreReadFailureTitle, "Savegame version mismatch");
-		showReadFailureMessage(szCvInitCoreReadFailureTitle, szCvInitCoreReadFailureMessage);
-	}
+	// Disable this check for now as we have a workaround: Manipulating the number of buildings/units sent to the EXE
+	// if (iNumBuildingsInSavegame != NUM_BUILDING_TYPES)
+	// {
+	// 	CvString message = "Number of building types in savegame (%d) differs from number of building types in this mod DLL (%d)\n\nThis is probably caused by updating the mod to an incompatible version. Loading this savegame is impossible for now, sorry!\nAs the game is now in an unstable state, we have to exit it. Please restart. Sorry!";
+	// 	sprintf(szCvInitCoreReadFailureMessage, message, iNumBuildingsInSavegame, NUM_BUILDING_TYPES);
+	// 	sprintf(szCvInitCoreReadFailureTitle, "Savegame version mismatch");
+	// 	showReadFailureMessage(szCvInitCoreReadFailureTitle, szCvInitCoreReadFailureMessage);
+	// }
 }
 
 
