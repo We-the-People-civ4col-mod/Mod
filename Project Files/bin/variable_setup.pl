@@ -60,10 +60,13 @@ $var{Father}           = {not_strict => 1, XML => 1};
 $var{FatherPoint}      = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_FATHER_POINT", NUM => "NUM_FATHER_POINT_TYPES", COMPILE => "COMPILE_TIME_NUM_FATHER_POINT_TYPES"};
 $var{Feat}             = {not_strict => 1};
 $var{Feature}          = {not_strict => 1, XML => 1};
+$var{Formation}        = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE", DYNAMIC => 1};
 $var{GameOption}       = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_GAME_OPTION"};
 $var{GameSpeed}        = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_GAME_SPEED"};
 $var{Goody}            = {not_strict => 1, XML => 1};
+#$var{GraphicOption}    = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
 $var{Handicap}         = {not_strict => 1, XML => 1};
+$var{Hint}             = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE", DYNAMIC => 1};
 $var{Hurry}            = {not_strict => 1, XML => 1};
 $var{Improvement}      = {not_strict => 1, XML => 1};
 $var{Invisible}        = {not_strict => 1, XML => 1};
@@ -127,6 +130,7 @@ foreach my $name (sort(keys %var))
 	$var{$name}{START} = "static_cast<$type>(0)" unless exists $var{$name}{START};
 	$var{$name}{END} = $var{$name}{NUM} unless exists $var{$name}{END};
 	$var{$name}{HARDCODED} = exists $var{$name}{XML} ? isAlwaysHardcodedEnum($type) : 1;
+	$var{$name}{DYNAMIC} = 0 unless exists $var{$name}{DYNAMIC};
 	
 	
 	if (exists $var{$name}{LENGTH_KNOWN_WHILE_COMPILING})
@@ -334,7 +338,14 @@ sub structEnum
 	
 	unless (assignCustomFirstEnd($name))
 	{
-		$output .= "#ifdef HARDCODE_XML_VALUES\n" unless $hardcoded;
+		if ($var{$name}{DYNAMIC})
+		{
+			$output .= "#if 0\n";
+		}
+		else
+		{
+			$output .= "#ifdef HARDCODE_XML_VALUES\n" unless $hardcoded;
+		}
 		$output .= "\tstatic const $type END = $var{$name}{END};\n";
 		$output .= "\tstatic const $type LAST = static_cast<" . $type . ">((int)END - 1);\n";
 		$output .= "\tstatic const $type NUM_ELEMENTS = static_cast<" . $type . ">((int)END - (int)FIRST);\n";

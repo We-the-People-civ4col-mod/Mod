@@ -24,8 +24,8 @@ const CityPlotTypes& VARINFO<CityPlotTypes>::NUM_ELEMENTS = local_NUM_CITY_PLOTS
 
 #ifndef CHECK_GLOBAL_CONSTANTS
 ArtStyleTypes    NUM_ARTSTYLE_TYPES    = static_cast<ArtStyleTypes   >(0);
-ColorTypes       NUM_COLOR_TYPES       = static_cast<ColorTypes      >(0);
-PlayerColorTypes NUM_PLAYERCOLOR_TYPES = static_cast<PlayerColorTypes>(0);
+//ColorTypes       NUM_COLOR_TYPES       = static_cast<ColorTypes      >(0);
+//PlayerColorTypes NUM_PLAYERCOLOR_TYPES = static_cast<PlayerColorTypes>(0);
 
 bool GAME_IS_STARTING_UP = true;
 #endif

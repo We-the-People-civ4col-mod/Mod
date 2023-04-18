@@ -144,8 +144,6 @@ void CvGlobals::postXMLLoad(bool bFirst)
 	{
 #ifndef CHECK_GLOBAL_CONSTANTS
 		NUM_ARTSTYLE_TYPES    = static_cast<ArtStyleTypes   >(GC.getNumArtStyleTypes   ());
-		NUM_COLOR_TYPES       = static_cast<ColorTypes      >(GC.getNumColorInfos      ());
-		NUM_PLAYERCOLOR_TYPES = static_cast<PlayerColorTypes>(GC.getNumPlayerColorInfos());
 #endif
 
 #ifndef HARDCODE_XML_VALUES

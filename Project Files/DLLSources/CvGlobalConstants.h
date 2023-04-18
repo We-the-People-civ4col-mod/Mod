@@ -12,8 +12,6 @@ extern const bool& SAVEGAME_IS_LOADING;
 
 #ifndef CHECK_GLOBAL_CONSTANTS
 extern ArtStyleTypes NUM_ARTSTYLE_TYPES;
-extern ColorTypes NUM_COLOR_TYPES;
-extern PlayerColorTypes NUM_PLAYERCOLOR_TYPES;
 
 extern bool GAME_IS_STARTING_UP;
 

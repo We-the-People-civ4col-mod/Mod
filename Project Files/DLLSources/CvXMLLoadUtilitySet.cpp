@@ -2050,7 +2050,13 @@ void CvXMLLoadUtility::SetGlobalClassInfo(std::vector<T*>& aInfos, const char* s
 		// loop through each tag
 		do
 		{
-			SkipToNextVal();	// skip to the next non-comment node
+			const bool bValidEntry = SkipToNextVal();	// skip to the next non-comment node
+
+			if (!bValidEntry)
+			{
+				// avoid a crash if last sibling is a comment
+				break;
+			}
 
 			T* pClassInfo = new T;
 
@@ -2076,6 +2082,14 @@ void CvXMLLoadUtility::SetGlobalClassInfo(std::vector<T*>& aInfos, const char* s
 			FAssert(bSuccess);
 			if (!bSuccess)
 			{
+				delete pClassInfo;
+				break;
+			}
+
+			if (aInfos.size() > 0 && aInfos[0]->getType() != NULL && pClassInfo->getType() == NULL)
+			{
+				// for some reason the code reads two main menus despite the xml file only having one
+				// bail out if such an empty extra entry is added
 				delete pClassInfo;
 				break;
 			}
