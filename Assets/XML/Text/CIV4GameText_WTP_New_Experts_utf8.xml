@@ -133,9 +133,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CASSAVA_PLANTER_STRATEGY</Tag>
-        <English>A [COLOR_HIGHLIGHT_TEXT]expert cassava planter[COLOR_REVERT] is more effective at [LINK=PROFESSION_CASSAVA_PLANTER]planting[\LINK] [LINK=YIELD_CASSAVA]cassava[\LINK] than any other expert.[PARAGRAPH:1]Expert cassava planter can be [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]natives[\LINK] or in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its extensions.</English>
+        <English>An [COLOR_HIGHLIGHT_TEXT]expert cassava planter[COLOR_REVERT] is more effective at [LINK=PROFESSION_CASSAVA_PLANTER]planting[\LINK] [LINK=YIELD_CASSAVA]cassava[\LINK] than any other expert.[PARAGRAPH:1]Expert cassava planters can be bought in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT], [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]natives[\LINK] or in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its extensions.</English>
         <French>xxx</French>
-        <German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Maniokpflanzer[COLOR_REVERT] ist effektiver im [LINK=PROFESSION_CASSAVA_PLANTER]pflanzen[\LINK] von [LINK=YIELD_CASSAVA]Maniok[\LINK] als alle anderen Experten.[PARAGRAPH:1]Erfahrene Maniokpflanzer können in Dörfern der [LINK=CONCEPT_NATIVES]Ureinwohner[\LINK] oder in einer Kolonie mit einer [LINK=BUILDING_SCHOOLHOUSE]Schule[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
+        <German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Maniokpflanzer[COLOR_REVERT] ist effektiver im [LINK=PROFESSION_CASSAVA_PLANTER]pflanzen[\LINK] von [LINK=YIELD_CASSAVA]Maniok[\LINK] als alle anderen Experten.[PARAGRAPH:1]Erfahrene Maniokpflanzer können in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT] erworben werden, in Dörfern der [LINK=CONCEPT_NATIVES]Ureinwohner[\LINK] oder in einer Kolonie mit einer [LINK=BUILDING_SCHOOLHOUSE]Schule[\LINK] bzw. einer seiner Erweiterungen können sie [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
     </TEXT>
