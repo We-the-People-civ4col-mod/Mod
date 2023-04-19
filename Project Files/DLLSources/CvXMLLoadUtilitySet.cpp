@@ -13,6 +13,7 @@
 #include "FProfiler.h"
 #include "FVariableSystem.h"
 #include "CvGameCoreUtils.h"
+#include"xmlFiles.h"
 
 #include "CvSavegame.h"
 
@@ -2271,6 +2272,54 @@ void CvXMLLoadUtility::LoadGlobalClassInfo(std::vector<T*>& aInfos, const char* 
 	}
 }
 
+template <class IndexType, class T, int DEFAULT>
+void CvXMLLoadUtility::LoadGlobalClassInfo(bool bFirst, EnumMap<IndexType, T, DEFAULT>& aInfos)
+{
+	// EnumMaps have issues with not calling the constructor. Don't use this function unless EnumMaps have been fixed 
+	BOOST_STATIC_ASSERT(false);
+
+	const char * szFileRoot = xmlLocation<T_length>::file();
+	const char* szFileDirectory = xmlLocation<T_length>::folder();
+	const char* szXmlPath = xmlLocation<T_length>::path();
+
+	bool bLoaded = LoadCivXml(m_pFXml, CvString::format("xml\\%s/%s.xml", szFileDirectory, szFileRoot));
+
+	if (!bLoaded)
+	{
+		char szMessage[1024];
+		sprintf(szMessage, "LoadXML call failed for %s.", CvString::format("%s/%s.xml", szFileDirectory, szFileRoot).GetCString());
+		gDLL->MessageBox(szMessage, "XML Load Error");
+		return;
+	}
+
+	if (gDLL->getXMLIFace()->LocateNode(m_pFXml, szXmlPath))
+	{
+
+		for (T_length eLoopVar = aInfos.FIRST; eLoopVar <= aInfos.LAST; ++eLoopVar)
+		{
+			const bool bValidEntry = SkipToNextVal();	// skip to the next non-comment node
+
+			if (!bValidEntry)
+			{
+				// avoid a crash if last sibling is a comment
+				break;
+			}
+
+			if (bFirst)
+			{
+				aInfos[eLoopVar].CvInfoBase::read(this);
+			}
+			else
+			{
+				aInfos[eLoopVar].read(this);
+			}
+			if (!gDLL->getXMLIFace()->NextSibling(m_pFXml))
+			{
+				break;
+			}
+		}
+	}
+}
 
 void CvXMLLoadUtility::LoadDiplomacyInfo(std::vector<CvDiplomacyInfo*>& DiploInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (const TCHAR*))
 {
