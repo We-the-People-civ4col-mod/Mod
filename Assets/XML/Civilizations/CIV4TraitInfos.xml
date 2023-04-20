@@ -306,7 +306,16 @@
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>25</iStorageCapacityModifier>
-            <CityExtraYields/>
+            <CityExtraYields>
+                <CityExtraYield>
+                    <YieldType>YIELD_TRADE_GOODS</YieldType>
+                    <iYield>2</iYield>
+                </CityExtraYield>
+                <CityExtraYield>
+                    <YieldType>YIELD_LUXURY_GOODS</YieldType>
+                    <iYield>2</iYield>
+                </CityExtraYield>
+            </CityExtraYields>
             <ExtraYieldThresholds/>
             <ProfessionEquipmentModifiers/>
             <FreePromotions/>
