@@ -57,6 +57,7 @@ sub isAlwaysHardcodedEnum
 	return 1 if $type eq "ForceControlTypes";
 	return 1 if $type eq "GraphicOptionTypes";
 	return 1 if $type eq "InterfaceModeTypes";
+	return 1 if $type eq "EuropeTypes";
 	
 	return 0;
 }

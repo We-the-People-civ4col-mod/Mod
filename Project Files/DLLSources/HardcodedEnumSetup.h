@@ -43,12 +43,6 @@ enum EffectTypes
 	EFFECT_SETTLERSMOKE,
 };
 
-enum EuropeTypes
-{
-	EUROPE_EAST,
-	EUROPE_WEST,
-};
-
 enum ProfessionTypes
 {
 	PROFESSION_MISSIONARY,
