@@ -194,7 +194,12 @@
             <YieldModifiers/>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
-            <UnitMoveChanges/>
+            <UnitMoveChanges>
+                <UnitMoveChange>
+                    <UnitClass>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClass>
+                    <iChange>1</iChange>
+                </UnitMoveChange>
+            </UnitMoveChanges>
             <ProfessionMoveChanges/>
             <BuildingProductionModifiers/>
             <BuildingRequiredYieldModifiers/>
