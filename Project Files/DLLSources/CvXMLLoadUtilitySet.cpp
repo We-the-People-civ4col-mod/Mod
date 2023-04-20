@@ -2275,12 +2275,9 @@ void CvXMLLoadUtility::LoadGlobalClassInfo(std::vector<T*>& aInfos, const char* 
 template <class IndexType, class T, int DEFAULT>
 void CvXMLLoadUtility::LoadGlobalClassInfo(bool bFirst, EnumMap<IndexType, T, DEFAULT>& aInfos)
 {
-	// EnumMaps have issues with not calling the constructor. Don't use this function unless EnumMaps have been fixed 
-	BOOST_STATIC_ASSERT(false);
-
-	const char * szFileRoot = xmlLocation<T_length>::file();
-	const char* szFileDirectory = xmlLocation<T_length>::folder();
-	const char* szXmlPath = xmlLocation<T_length>::path();
+	const char * szFileRoot = xmlLocation<IndexType>::file();
+	const char* szFileDirectory = xmlLocation<IndexType>::folder();
+	const char* szXmlPath = xmlLocation<IndexType>::path();
 
 	bool bLoaded = LoadCivXml(m_pFXml, CvString::format("xml\\%s/%s.xml", szFileDirectory, szFileRoot));
 
@@ -2294,8 +2291,9 @@ void CvXMLLoadUtility::LoadGlobalClassInfo(bool bFirst, EnumMap<IndexType, T, DE
 
 	if (gDLL->getXMLIFace()->LocateNode(m_pFXml, szXmlPath))
 	{
+		aInfos.allocate();
 
-		for (T_length eLoopVar = aInfos.FIRST; eLoopVar <= aInfos.LAST; ++eLoopVar)
+		for (IndexType eLoopVar = aInfos.FIRST; eLoopVar <= aInfos.LAST; ++eLoopVar)
 		{
 			const bool bValidEntry = SkipToNextVal();	// skip to the next non-comment node
 
@@ -2307,11 +2305,11 @@ void CvXMLLoadUtility::LoadGlobalClassInfo(bool bFirst, EnumMap<IndexType, T, DE
 
 			if (bFirst)
 			{
-				aInfos[eLoopVar].CvInfoBase::read(this);
+				aInfos.getFast(eLoopVar).CvInfoBase::read(this);
 			}
 			else
 			{
-				aInfos[eLoopVar].read(this);
+				aInfos.getFast(eLoopVar).read(this);
 			}
 			if (!gDLL->getXMLIFace()->NextSibling(m_pFXml))
 			{

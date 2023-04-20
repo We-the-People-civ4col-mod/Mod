@@ -40,19 +40,21 @@ public:
 
 	int getNumTrueElements() const;
 
+	T& getFast(IndexType eIndex);
+	const T& getFast(IndexType eIndex) const;
+
 	// operator overloading
 	T& operator[](IndexType eIndex);
 	const T& operator[](IndexType eIndex) const;
 
 protected:
-	T* m_pArray;
+	std::vector<T> m_Array;
 
 	void assignmentOperator(const EnumMapBase<IndexType, T, 0, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>& rhs);
 };
 
 template<class IndexType, class T, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 EnumMapBase<IndexType, T, 0, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>::EnumMapBase()
-	: m_pArray(NULL)
 {
 	BOOST_STATIC_ASSERT(VARINFO<T>::IS_CLASS == 1);
 }
@@ -60,28 +62,31 @@ EnumMapBase<IndexType, T, 0, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_CL
 template<class IndexType, class T, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 EnumMapBase<IndexType, T, 0, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>::~EnumMapBase()
 {
-	reset();
 }
 
 template<class IndexType, class T, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 bool EnumMapBase<IndexType, T, 0, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>::isAllocated() const
 {
-	return m_pArray != NULL;
+	return m_Array.size() > 0;
 }
 
 template<class IndexType, class T, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 void EnumMapBase<IndexType, T, 0, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>::allocate()
 {
+#ifndef COMPILE_STATIC_TEST
+	// resize will fail during static test as CvInfoBase intentionally has a private copy constructor
 	if (!isAllocated())
 	{
-		m_pArray = new T[NUM_ELEMENTS];
+		m_Array.reserve(NUM_ELEMENTS);
+		m_Array.resize(NUM_ELEMENTS);
 	}
+#endif
 }
 
 template<class IndexType, class T, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 void EnumMapBase<IndexType, T, 0, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>::reset()
 {
-	SAFE_DELETE_ARRAY(m_pArray);
+	m_Array.resize(0);
 }
 
 template<class IndexType, class T, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
@@ -91,7 +96,7 @@ bool EnumMapBase<IndexType, T, 0, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TY
 	{
 		for (LengthType i = (LengthType)0; i < NUM_ELEMENTS; ++i)
 		{
-			if (m_pArray[i].hasContent())
+			if (m_Array[i].hasContent())
 			{
 				return true;
 			}
@@ -118,11 +123,27 @@ int EnumMapBase<IndexType, T, 0, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYP
 }
 
 template<class IndexType, class T, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+T& EnumMapBase<IndexType, T, 0, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>::getFast(IndexType eIndex)
+{
+	FAssert(isInRange(eIndex));
+	FAssert(isAllocated());
+	return m_Array[eIndex - FIRST];
+}
+
+template<class IndexType, class T, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+const T& EnumMapBase<IndexType, T, 0, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>::getFast(IndexType eIndex) const
+{
+	FAssert(isInRange(eIndex));
+	FAssert(isAllocated());
+	return m_Array[eIndex - FIRST];
+}
+
+template<class IndexType, class T, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 T& EnumMapBase<IndexType, T, 0, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>::operator[](IndexType eIndex)
 {
 	FAssert(isInRange(eIndex));
 	allocate();
-	return m_pArray[eIndex - FIRST];
+	return m_Array[eIndex - FIRST];
 }
 
 template<class IndexType, class T, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
@@ -131,7 +152,7 @@ const T& EnumMapBase<IndexType, T, 0, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABL
 	FAssert(isInRange(eIndex));
 	if (isAllocated())
 	{
-		return m_pArray[eIndex - FIRST];
+		return m_Array[eIndex - FIRST];
 	}
 	else
 	{

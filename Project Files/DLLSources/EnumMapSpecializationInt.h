@@ -182,7 +182,7 @@ EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STO
 template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE>
 void EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, VARIABLE_LENGTH_ALL_KNOWN>::assignmentOperator(const EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, VARIABLE_LENGTH_ALL_KNOWN>& rhs)
 {
-	for (IndexType i = (Indextype)0; i < NUM_ELEMENTS; ++i)
+	for (IndexType i = (IndexType)0; i < NUM_ELEMENTS; ++i)
 	{
 		m_pArray[i] = rhs.m_pArray[i];
 	}

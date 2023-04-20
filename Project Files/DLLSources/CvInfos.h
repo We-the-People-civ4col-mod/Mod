@@ -24,7 +24,10 @@ class CvXMLLoadUtility;
 //			the base description and type strings
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-class CvInfoBase : private boost::noncopyable
+class CvInfoBase
+#ifdef COMPILE_STATIC_TEST
+	: private boost::noncopyable
+#endif
 {
 //---------------------------------------PUBLIC INTERFACE---------------------------------
 public:
