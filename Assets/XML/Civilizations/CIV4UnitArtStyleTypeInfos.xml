@@ -370,6 +370,27 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_CONTINENTAL_GUARD</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -435,6 +456,27 @@
                 <StyleUnit>
                     <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
                     </UnitMeshGroup>
@@ -796,6 +838,27 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_CONTINENTAL_GUARD</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -861,6 +924,27 @@
                 <StyleUnit>
                     <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
                     </UnitMeshGroup>
@@ -1195,6 +1279,27 @@
                 </StyleUnit>
                 <StyleUnit>
                     <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
@@ -1287,6 +1392,27 @@
                 <StyleUnit>
                     <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
                     </UnitMeshGroup>
@@ -1648,6 +1774,27 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_CONTINENTAL_GUARD</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -1713,6 +1860,27 @@
                 <StyleUnit>
                     <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
                     </UnitMeshGroup>
@@ -2074,6 +2242,27 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_CONTINENTAL_GUARD</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -2139,6 +2328,27 @@
                 <StyleUnit>
                     <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
                     </UnitMeshGroup>
@@ -2507,6 +2717,27 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_CONTINENTAL_GUARD</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -2572,6 +2803,27 @@
                 <StyleUnit>
                     <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
                     </UnitMeshGroup>
@@ -2933,6 +3185,27 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_CONTINENTAL_GUARD</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -2998,6 +3271,27 @@
                 <StyleUnit>
                     <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
                     </UnitMeshGroup>
@@ -3359,6 +3653,27 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_GREAT_GENERAL</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_CONTINENTAL_GUARD</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -3424,6 +3739,27 @@
                 <StyleUnit>
                     <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
                     </UnitMeshGroup>

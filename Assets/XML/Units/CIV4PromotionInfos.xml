@@ -4920,7 +4920,7 @@
                 </UnitCombat>
                 <UnitCombat>
                     <UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
-                    <bUnitCombat>0</bUnitCombat>
+                    <bUnitCombat>1</bUnitCombat>
                 </UnitCombat>
                 <UnitCombat>
                     <UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
