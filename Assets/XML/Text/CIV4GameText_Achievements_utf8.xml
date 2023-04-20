@@ -3197,6 +3197,21 @@
         <English>"[COLOR_SELECTED_TEXT]White man, this is very good gun. But price much too high.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Well, you get something for it. I'll add some cartridges and this good rum. What do you say? Deal?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Give me rum, first I have to test. Two barrels and ten guns are what we want.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Weißer Mann, das sein sehr gute Waffe. Aber Preis viel zu hoch.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Na, ihr bekommt ja auch was dafür. Ich leg noch Patronen drauf und diesen guten Rum hier. Was sagt ihr? Sind wir im Geschäft?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Gib mir Rum, vorher muss ich testen. Zwei Fässer und zehn Gewehre wollen wir.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
     </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_EUROPEAN_LINE_INFANTRY</Tag>
+        <English>The first European line infantry</English>
+        <German>Der erste Europäische Linieninfanterie</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_EUROPEAN_LINE_INFANTRY_HEAD</Tag>
+        <English>Elite troops in the New World</English>
+        <German>Eilitetruppen in der Neuen Welt</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_EUROPEAN_LINE_INFANTRY_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]Men, listen to me. We have been sent to this godforsaken place to do great things and conquer a new piece of this beautiful country for our king.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]The savages here are no match for us. We will sweep them away and take their gold.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Um, sir, just the other day these "savages" were said to have surrounded and taken out an entire troop in the forest. We should be careful, sir![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <German>"[COLOR_SELECTED_TEXT]Männer, hört mir zu. Man hat uns an diesen gottverlassenen Ort geschickt, um Großes zu leisten und für unseren König ein neues Stückchen dieser schönes Erade zu erobern.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Die Wilden hier sind keine Gegner für uns. Wir werden sie hinwegfegen und uns ihr Gold holen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ähm, Sir, erst neulich sollen diese "Wilden" eine ganze Truppe im Wald umzingelt und ausgeschaltet haben. Wir sollten uns vorsehen, Sir![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+    </TEXT>
    <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWOHUNDRED_BLADES</Tag>
         <English>Eager weaponsmiths</English>
