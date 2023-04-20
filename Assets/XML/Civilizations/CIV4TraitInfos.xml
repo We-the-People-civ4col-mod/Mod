@@ -311,10 +311,6 @@
                     <YieldType>YIELD_TRADE_GOODS</YieldType>
                     <iYield>2</iYield>
                 </CityExtraYield>
-                <CityExtraYield>
-                    <YieldType>YIELD_LUXURY_GOODS</YieldType>
-                    <iYield>2</iYield>
-                </CityExtraYield>
             </CityExtraYields>
             <ExtraYieldThresholds/>
             <ProfessionEquipmentModifiers/>
