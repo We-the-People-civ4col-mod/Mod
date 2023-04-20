@@ -186,7 +186,12 @@
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
-            <CityExtraYields/>
+            <CityExtraYields>
+                <CityExtraYield>
+                    <YieldType>YIELD_BAKERY_GOODS</YieldType>
+                    <iYield>2</iYield>
+                </CityExtraYield>
+            </CityExtraYields>
             <ExtraYieldThresholds/>
             <ProfessionEquipmentModifiers/>
             <FreePromotions/>
@@ -194,12 +199,7 @@
             <YieldModifiers/>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
-            <UnitMoveChanges>
-                <UnitMoveChange>
-                    <UnitClass>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClass>
-                    <iChange>1</iChange>
-                </UnitMoveChange>
-            </UnitMoveChanges>
+            <UnitMoveChanges/>
             <ProfessionMoveChanges/>
             <BuildingProductionModifiers/>
             <BuildingRequiredYieldModifiers/>
