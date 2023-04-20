@@ -20339,7 +20339,7 @@ void CvPlayer::doAchievements(bool afterMove)
 								// WTP, ray, fixing issue for Europe East / West Achievement
 								// we only trigger if there is no Improvement on it to prevent Reveal Goody Bug
 								// I have no idea why I cannot use EUROPE_EAST
-								if (pPlot->isEurope() && pPlot->getEurope() == 0 && pPlot->getImprovementType() == NO_IMPROVEMENT)
+								if (pPlot->isEurope() && pPlot->getEurope() == EUROPE_EAST && pPlot->getImprovementType() == NO_IMPROVEMENT)
 								{
 									bGained = true;
 									iJ = GC.getMap().numPlotsINLINE();
@@ -20357,7 +20357,7 @@ void CvPlayer::doAchievements(bool afterMove)
 								// WTP, ray, fixing issue for Europe East / West Achievement
 								// we only trigger if there is no Improvement on it to prevent Reveal Goody Bug
 								// I have no idea why I cannot use EUROPE_WEST
-								if (pPlot->isEurope() && pPlot->getEurope() == 1 && pPlot->getImprovementType() == NO_IMPROVEMENT)
+								if (pPlot->isEurope() && pPlot->getEurope() == EUROPE_WEST && pPlot->getImprovementType() == NO_IMPROVEMENT)
 								{
 									bGained = true;
 									iJ = GC.getMap().numPlotsINLINE();
