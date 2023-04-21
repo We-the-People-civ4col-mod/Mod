@@ -1694,7 +1694,7 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 		}
 		if (!isNative() && kBuilding.isWater())
 		{
-			// WTP, fixed a small issue with Lakes 
+			// WTP, fixed a small issue with Lakes
 			// Terrains adjcancet already control if harbour buildings can be built - the size check has become unnecessary
 			// if (isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()) && !plot()->isEuropeAccessable())
 			if (!plot()->isEuropeAccessable())
@@ -12588,11 +12588,21 @@ void CvCity::setAutoExport(YieldTypes eYield, bool bExport)
 
 void CvCity::handleAutoTraderouteSetup(bool bReset, bool bImportAll, bool bAutoExportAll)
 {
+	// reset import/export for any yields that cannot be transported
+	// they might have been accidentally added to import/exports if XML settings were changed inbetween
+	// they cannot be added/removed manually
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
+	{
+		if (!GC.getYieldInfo(eYield).isCargo() || !GC.getYieldInfo(eYield).isExportYield())
+		{
+			doTask(TASK_YIELD_TRADEROUTE, eYield, 0, false, false, false, false);
+		}
+	}
+
 	if (bReset)
 	{
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			YieldTypes eYield = (YieldTypes) iYield;
 			if (GC.getYieldInfo(eYield).isCargo())
 			{
 				// the easiest way to reset the settings for the yield in question is to call doTask for that yield
@@ -12600,7 +12610,7 @@ void CvCity::handleAutoTraderouteSetup(bool bReset, bool bImportAll, bool bAutoE
 				// this is because this function runs in parallel on all computers in the network
 				// as a result, generating network traffic would be a mistake, which could cause bugs and lag
 				// this is why the network communication is skipped in this case, something which would normally be a bug
-				doTask(TASK_YIELD_TRADEROUTE, iYield, 0, false, false, false, false);
+				doTask(TASK_YIELD_TRADEROUTE, eYield, 0, false, false, false, false);
 			}
 		}
 		return;
@@ -12608,9 +12618,8 @@ void CvCity::handleAutoTraderouteSetup(bool bReset, bool bImportAll, bool bAutoE
 
 	if (bImportAll || bAutoExportAll)
 	{
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			YieldTypes eYield = (YieldTypes) iYield;
 			if (GC.getYieldInfo(eYield).isExportYield())
 			{
 				bool bImport = bImportAll || isImport(eYield);
@@ -12623,7 +12632,7 @@ void CvCity::handleAutoTraderouteSetup(bool bReset, bool bImportAll, bool bAutoE
 				int iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
 				iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
 
-				doTask(TASK_YIELD_TRADEROUTE, iYield, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
+				doTask(TASK_YIELD_TRADEROUTE, eYield, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
 			}
 		}
 	}
