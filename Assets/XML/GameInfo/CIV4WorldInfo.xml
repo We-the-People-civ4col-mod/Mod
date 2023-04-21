@@ -93,7 +93,7 @@
             <iAIImmigrationModifier>100</iAIImmigrationModifier>
         </WorldInfo>
         <WorldInfo>
-            <Type>WORLDSIZE_ENORMOUS</Type>
+            <Type>WORLDSIZE_MASSIVE</Type>
             <Description>TXT_KEY_WORLDSIZE_MASSIVE</Description>
             <Help>TXT_KEY_WORLDSIZE_MASSIVE_HELP</Help>
             <iDefaultPlayers>39</iDefaultPlayers>
