@@ -4651,8 +4651,9 @@ def getGridSize(argsList):
             WorldSizeTypes.WORLDSIZE_SMALL:		(20 + mc.distanceToEurope * 2,40),
             WorldSizeTypes.WORLDSIZE_STANDARD:	(30 + mc.distanceToEurope * 2,60),
             WorldSizeTypes.WORLDSIZE_LARGE:		(40 + mc.distanceToEurope * 2,80),
-            WorldSizeTypes.WORLDSIZE_HUGE:		(50 + mc.distanceToEurope * 2,100),
-			WorldSizeTypes.WORLDSIZE_GIGANTIC:	(100 + mc.distanceToEurope * 2,215)
+            WorldSizeTypes.WORLDSIZE_HUGE:		(58,100),
+            WorldSizeTypes.WORLDSIZE_MASSIVE:		(85,137),
+			WorldSizeTypes.WORLDSIZE_GIGANTIC:	(127,184)
     }
     if (argsList[0] == -1): # (-1,) is passed to function on loads
             return []
