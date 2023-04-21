@@ -3950,12 +3950,6 @@ bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 
 	//TAC Whaling, ray
 	case AUTOMATE_TRANSPORT_ROUTES:
-		if (cargoSpace() == 0 || getUnitInfo().isGatherBoat())
-		{
-			return false;
-		}
-		break;
-
 	case AUTOMATE_TRANSPORT_FULL:
 		if (cargoSpace() == 0 || getUnitInfo().isGatherBoat())
 		{
