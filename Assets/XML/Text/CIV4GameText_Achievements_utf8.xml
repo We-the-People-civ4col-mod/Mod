@@ -3200,7 +3200,7 @@
 	<TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_EUROPEAN_LINE_INFANTRY</Tag>
         <English>The first European line infantry</English>
-        <German>Der erste Europäische Linieninfanterie</German>
+        <German>Die erste Europäische Linieninfanterie</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_EUROPEAN_LINE_INFANTRY_HEAD</Tag>
@@ -3211,6 +3211,21 @@
         <Tag>TXT_KEY_ACHIEVE_FIRST_EUROPEAN_LINE_INFANTRY_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Men, listen to me. We have been sent to this godforsaken place to do great things and conquer a new piece of this beautiful country for our king.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]The savages here are no match for us. We will sweep them away and take their gold.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Um, sir, just the other day these "savages" were said to have surrounded and taken out an entire troop in the forest. We should be careful, sir![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Männer, hört mir zu. Man hat uns an diesen gottverlassenen Ort geschickt, um Großes zu leisten und für unseren König ein neues Stückchen dieser schönes Erade zu erobern.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Die Wilden hier sind keine Gegner für uns. Wir werden sie hinwegfegen und uns ihr Gold holen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ähm, Sir, erst neulich sollen diese "Wilden" eine ganze Truppe im Wald umzingelt und ausgeschaltet haben. Wir sollten uns vorsehen, Sir![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_CONQUISTADOR</Tag>
+        <English>The first conquistador</English>
+        <German>Der erste Konquistador</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_CONQUISTADOR_HEAD</Tag>
+        <English>Conquistadors conquer the New World</English>
+        <German>Konquistadoren erobern die Neue [NEWLINE]Welt</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_CONQUISTADOR_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]Men, the New World is ours. Look at this! One of the seven cities of Cibola, I know it, I'm sure. Follow me![NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Lord, this looks more like the burial place of a high king of the savages. I think we're more likely to find dusty bones or death or both. If the savages see us, we're screwed.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]What are you, conquerors or cowards? Follow me...I can smell the gold already![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <German>"[COLOR_SELECTED_TEXT]Männer, die Neue Welt gehört uns. Seht Euch das an! Eine der sieben Städte von Cibola, ich weiß es, ich bin sicher. Folgt mir![NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Herr, das sieht mir eher wie die Begräbnisstätte eines hohen Königs der Wilden aus. Ich glaube hier werden wir eher nur verstaubte Knochen oder den Tod finden oder beides. Wenn die Wilden uns sehen, sind wir geliefert.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Was seid ihr, Eroberer oder Feiglinge? Mir nach...ich kann das Gold schon riechen![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
     </TEXT>
    <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWOHUNDRED_BLADES</Tag>
