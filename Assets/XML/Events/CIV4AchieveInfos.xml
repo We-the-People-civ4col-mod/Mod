@@ -4514,13 +4514,13 @@
         <YieldProduced/>
 	</AchieveInfo>
     <AchieveInfo>
-        <Type>ACHIEVE_TWOHUNDRED_BLADES</Type>
-        <Description>TXT_KEY_ACHIEVE_TWOHUNDRED_BLADES</Description>
+        <Type>ACHIEVE_TWENTY_BLADES</Type>
+        <Description>TXT_KEY_ACHIEVE_TWENTY_BLADES</Description>
         <bActive>1</bActive>
         <bAfterMove>0</bAfterMove>
-        <HeaderTextKey>TXT_KEY_ACHIEVE_TWOHUNDRED_BLADES_HEAD</HeaderTextKey>
-        <BodyTextKey>TXT_KEY_ACHIEVE_TWOHUNDRED_BLADES_TEXT</BodyTextKey>
-        <PictureFileName>Art/Achievements/200_blades.dds</PictureFileName>
+        <HeaderTextKey>TXT_KEY_ACHIEVE_TWENTY_BLADES_HEAD</HeaderTextKey>
+        <BodyTextKey>TXT_KEY_ACHIEVE_TWENTY_BLADES_TEXT</BodyTextKey>
+        <PictureFileName>Art/Achievements/20_blades.dds</PictureFileName>
         <iPictureX>360</iPictureX>
         <iPictureY>240</iPictureY>
         <iLowTurnNumber>0</iLowTurnNumber>
@@ -4540,7 +4540,7 @@
         <YieldProduced>
             <YieldProduce>
                 <YieldType>YIELD_BLADES</YieldType>
-                <iNumber>201</iNumber>
+                <iNumber>21</iNumber>
             </YieldProduce>
         </YieldProduced>
     </AchieveInfo>

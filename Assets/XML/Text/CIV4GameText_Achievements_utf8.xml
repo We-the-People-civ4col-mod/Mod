@@ -3228,17 +3228,17 @@
         <German>"[COLOR_SELECTED_TEXT]Männer, die Neue Welt gehört uns. Seht Euch das an! Eine der sieben Städte von Cibola, ich weiß es, ich bin sicher. Folgt mir![NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Herr, das sieht mir eher wie die Begräbnisstätte eines hohen Königs der Wilden aus. Ich glaube hier werden wir eher nur verstaubte Knochen oder den Tod finden oder beides. Wenn die Wilden uns sehen, sind wir geliefert.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Was seid ihr, Eroberer oder Feiglinge? Mir nach...ich kann das Gold schon riechen![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
     </TEXT>
    <TEXT>
-        <Tag>TXT_KEY_ACHIEVE_TWOHUNDRED_BLADES</Tag>
+        <Tag>TXT_KEY_ACHIEVE_TWENTY_BLADES</Tag>
         <English>Eager weaponsmiths</English>
         <German>Eifrige Waffenschmiede</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_ACHIEVE_TWOHUNDRED_BLADES_HEAD</Tag>
+        <Tag>TXT_KEY_ACHIEVE_TWENTY_BLADES_HEAD</Tag>
         <English>Blade weapons for the armory</English>
         <German>Klingenwaffen für das Waffenlager</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_ACHIEVE_TWOHUNDRED_BLADES_TEXT</Tag>
+        <Tag>TXT_KEY_ACHIEVE_TWENTY_BLADES_TEXT</Tag>
         <English>Sir, your weaponsmiths are really busy. Plenty of new swords and other bladed weapons have been forged.[NEWLINE][NEWLINE]It's not enough for an army yet, but you can defend yourself better now anyway and equip some new units.[NEWLINE][NEWLINE]</English>
         <German>Sir, Eure Waffenschmiede sind wirklich fleißig. Es wurden reichlich neue Schwerter und andere Klingenwaffen geschmiedet.[NEWLINE][NEWLINE]Es reicht noch nicht für eine Armee, aber Ihr könnt Euch jetzt jedenfalls besser verteidigen und einige neue Einheiten ausrüsten.[NEWLINE][NEWLINE]</German>
     </TEXT>	
