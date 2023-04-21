@@ -63,7 +63,20 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_HUGE_HELP</Tag>
-        <English>64x100</English>
+        <English>58x100</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WORLDSIZE_MASSIVE</Tag>
+        <English>Massive</English>
+        <French>Massive</French>
+        <German>Fest</German>
+        <Italian>Massicce</Italian>
+        <Spanish>Masivo</Spanish>
+        <Russian>Огромный</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WORLDSIZE_MASSIVE_HELP</Tag>
+        <English>85x137</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_GIGANTIC</Tag>
@@ -76,6 +89,6 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_GIGANTIC_HELP</Tag>
-        <English>110x215</English>
+        <English>127x184</English>
     </TEXT>
 </Civ4GameText>
