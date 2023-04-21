@@ -408,7 +408,7 @@ BeginMap
 	bottom latitude=-90
 	wrap X=0
 	wrap Y=0
-	world size=WORLDSIZE_GIGANTIC
+	world size=WORLDSIZE_MASSIVE
 	climate=CLIMATE_TEMPERATE
 	sealevel=SEALEVEL_MEDIUM
 	num plots written=11645
