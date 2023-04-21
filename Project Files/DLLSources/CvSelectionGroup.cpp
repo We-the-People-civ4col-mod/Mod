@@ -2868,7 +2868,9 @@ void CvSelectionGroup::groupMove(CvPlot* pPlot, bool bCombat, CvUnit* pCombatUni
 	for (CLLNode<IDInfo>* pUnitNode = headUnitNode(); pUnitNode != NULL; pUnitNode = nextUnitNode(pUnitNode))
 	{
 		if (pCombatUnit == NULL || pUnitNode->m_data != pCombatUnit->getIDInfo())
+		{
 			originalGroup.push_back(pUnitNode->m_data);
+		}
 	}
 	FAssert(originalGroup.size() == getNumUnits());
 	// K-Mod end
@@ -2974,8 +2976,9 @@ bool CvSelectionGroup::groupPathTo(int iX, int iY, int iFlags)
 	// K-Mod end
 
 	if (groupAmphibMove(pPathPlot, iFlags))
+	{
 		return false;
-
+	}
 	/*
 	bool bForce = false;
 	MissionAITypes eMissionAI = AI_getMissionAIType();
@@ -2987,7 +2990,9 @@ bool CvSelectionGroup::groupPathTo(int iX, int iY, int iFlags)
 
 	bool bEndMove = false;
 	if(pPathPlot == pDestPlot)
+	{
 		bEndMove = true;
+	}
 
 	//groupMove(pPathPlot, iFlags & MOVE_THROUGH_ENEMY, NULL, bEndMove);
 	groupMove(pPathPlot, false, NULL, bEndMove); // K-Mod
@@ -2999,17 +3004,22 @@ bool CvSelectionGroup::groupPathTo(int iX, int iY, int iFlags)
 	{
 		//If the step we just took will make us change our path to something longer, then cancel the move.
 		// This prevents units from wasting all their moves by trying to walk around enemy units.
+		// Don't do this in new movement system if not all units can move (this will cancel movement missions)
+		// for selection groups with mixed promotions (I have no idea how else to fix this)
 		FAssert(final_path.IsPathComplete());
 		std::pair<int, int> old_moves = std::make_pair(final_path.GetPathTurns(), -final_path.GetFinalMoves());
-		if (!final_path.GeneratePath(pDestPlot)
-			|| std::make_pair(final_path.GetPathTurns(), -final_path.GetFinalMoves()) > old_moves)
+		if ((GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM || canAllMove()) &&
+			(!final_path.GeneratePath(pDestPlot)
+			|| std::make_pair(final_path.GetPathTurns(), -final_path.GetFinalMoves()) > old_moves))
 		{
 			clearMissionQueue();
 		}
 		// Also, if the step we just took causes us to backtrack - its probably because we've lost vision of a unit that was blocking the path.
 		// Apply the MOVE_ASSUME_VISIBLE flag, so that we remember to go the long way around.
 		else if (final_path.GetPathFirstPlot() == pOriginPlot)
+		{
 			headMissionQueueNode()->m_data.iFlags |= MOVE_ASSUME_VISIBLE;
+		}
 	}
 	// K-Mod end
 
