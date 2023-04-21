@@ -84,8 +84,25 @@
             <iUnitNameModifier>0</iUnitNameModifier>
             <iTargetNumCities>6</iTargetNumCities>
             <iBuildingClassPrereqModifier>0</iBuildingClassPrereqModifier>
-            <iGridWidth>64</iGridWidth>
+            <iGridWidth>58</iGridWidth>
             <iGridHeight>100</iGridHeight>
+            <iTerrainGrainChange>1</iTerrainGrainChange>
+            <iFeatureGrainChange>1</iFeatureGrainChange>
+            <iFatherPercent>150</iFatherPercent>
+            <iAdvancedStartPointsMod>120</iAdvancedStartPointsMod>
+            <iAIImmigrationModifier>100</iAIImmigrationModifier>
+        </WorldInfo>
+        <WorldInfo>
+            <Type>WORLDSIZE_ENORMOUS</Type>
+            <Description>TXT_KEY_WORLDSIZE_MASSIVE</Description>
+            <Help>TXT_KEY_WORLDSIZE_MASSIVE_HELP</Help>
+            <iDefaultPlayers>39</iDefaultPlayers>
+            <iDefaultNativePlayers>31</iDefaultNativePlayers>
+            <iUnitNameModifier>0</iUnitNameModifier>
+            <iTargetNumCities>6</iTargetNumCities>
+            <iBuildingClassPrereqModifier>0</iBuildingClassPrereqModifier>
+            <iGridWidth>85</iGridWidth>
+            <iGridHeight>137</iGridHeight>
             <iTerrainGrainChange>1</iTerrainGrainChange>
             <iFeatureGrainChange>1</iFeatureGrainChange>
             <iFatherPercent>150</iFatherPercent>
@@ -101,8 +118,8 @@
             <iUnitNameModifier>0</iUnitNameModifier>
             <iTargetNumCities>8</iTargetNumCities>
             <iBuildingClassPrereqModifier>0</iBuildingClassPrereqModifier>
-            <iGridWidth>110</iGridWidth>
-            <iGridHeight>215</iGridHeight>
+            <iGridWidth>127</iGridWidth>
+            <iGridHeight>184</iGridHeight>
             <iTerrainGrainChange>1</iTerrainGrainChange>
             <iFeatureGrainChange>1</iFeatureGrainChange>
             <iFatherPercent>150</iFatherPercent>
