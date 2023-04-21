@@ -40,10 +40,10 @@
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_HUGE_RANDOM</Tag>
         <English>Americas - Random (Huge, 68x128): Map of the Americas, faithful map with random locations of Natives, resources and starting locations for Europeans</English>
-        <French>Amériques - Random (Huge, 68x128): Carte des Amériques, représentation fidèle des Amériques, avec distribution aléatoire des indigènes, des ressources et des points de départs pour les européens</French>
-        <German>Amerika - Random (Huge, 68x128): Karte von Amerika, genaue Karte mit zufälligen Ressourcen und Siedlungsgebieten der Eingeborenen sowie Startplätzen für die Europäer</German>
-        <Italian>Americhe - Random (Huge, 68x128): Mappa delle Americhe, mappa fedele con le posizioni casuali dei nativi, le risorse e le posizioni di partenza degli europei.</Italian>
-        <Spanish>Américas - Random (Huge, 68x128): Mapa de las Américas, mapa fiel con ubicaciones aleatorias de los nativos, recursos y ubicaciones iniciales para los europeos</Spanish>
+        <French>Amériques - Random (Immense, 68x128): Carte des Amériques, représentation fidèle des Amériques, avec distribution aléatoire des indigènes, des ressources et des points de départs pour les européens</French>
+        <German>Amerika - Random (Riesig, 68x128): Karte von Amerika, genaue Karte mit zufälligen Ressourcen und Siedlungsgebieten der Eingeborenen sowie Startplätzen für die Europäer</German>
+        <Italian>Americhe - Random (Enorme, 68x128): Mappa delle Americhe, mappa fedele con le posizioni casuali dei nativi, le risorse e le posizioni di partenza degli europei.</Italian>
+        <Spanish>Américas - Random (Enorme, 68x128): Mapa de las Américas, mapa fiel con ubicaciones aleatorias de los nativos, recursos y ubicaciones iniciales para los europeos</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_CENTRAL_AMERICA_DESC</Tag>
@@ -64,10 +64,10 @@
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_EAST_COAST_DESC</Tag>
         <English>East Coast of North America (Huge, 72x96): Newfoundland south to Florida, the Great Lakes east to the Atlantic. Defined as a small map, therefore only four North American native tribes have settlements.</English>
-        <French>Côte Est Nord-Américaine (Huge, 72x96): de Terre-Neuve à la Floride, des Grands Lacs à l'Atlantique. Défini volontairement comme une petite carte pour n'abriter que 4 tribus Nord-Américaines.</French>
-        <German>Ostküste Nord-Amerikas (Huge, 72x96): von Neufundland bis Florida, von den Großen Seen bis zur Atlantikküste. Technisch als "kleine" Karte ausgewiesen, damit sie nur von den vier Indianerstämmen des Nordens besiedelt ist.</German>
-        <Italian>Costa orientale del Nord America (Huge, 72x96): Terranova a sud fino alla Florida, i Grandi Laghi a est fino all'Atlantico. Definita come una mappa piccola, per cui solo quattro tribù native nordamericane hanno insediamenti.</Italian>
-        <Spanish>Costa este de Norteamérica (Huge, 72x96): Terranova al sur hasta Florida, los Grandes Lagos al este hasta el Atlántico. Definido como un mapa pequeño, por lo que sólo cuatro tribus nativas de América del Norte tienen asentamientos.</Spanish>
+        <French>Côte Est Nord-Américaine (Immense, 72x96): de Terre-Neuve à la Floride, des Grands Lacs à l'Atlantique. Défini volontairement comme une petite carte pour n'abriter que 4 tribus Nord-Américaines.</French>
+        <German>Ostküste Nord-Amerikas (Riesig, 72x96): von Neufundland bis Florida, von den Großen Seen bis zur Atlantikküste. Technisch als "kleine" Karte ausgewiesen, damit sie nur von den vier Indianerstämmen des Nordens besiedelt ist.</German>
+        <Italian>Costa orientale del Nord America (Enorme, 72x96): Terranova a sud fino alla Florida, i Grandi Laghi a est fino all'Atlantico. Definita come una mappa piccola, per cui solo quattro tribù native nordamericane hanno insediamenti.</Italian>
+        <Spanish>Costa este de Norteamérica (Enorme, 72x96): Terranova al sur hasta Florida, los Grandes Lagos al este hasta el Atlántico. Definido como un mapa pequeño, por lo que sólo cuatro tribus nativas de América del Norte tienen asentamientos.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_NEW_ENGLAND_DESC</Tag>
@@ -120,10 +120,10 @@
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_WTP_UNCHARTED_LANDS_DESC</Tag>
         <English>Uncharted Lands (Huge, 58x100): Uncharted Lands is a generated map and manually modified for WTP.</English>
-        <French>Terres Inexplorées (Huge, 58x100): Terres Inexplorées est une carte générée et modifiée manuellement pour WTP.</French>
-        <German>Unbekannte Länder (Huge, 58x100): Unbekannte Länder ist eine generierte Karte und manuell für WTP modifiziert.</German>
-        <Italian>Terre Inesplorate (Huge, 58x100): Terre Inesplorate è una mappa generata e modificata manualmente per WTP.</Italian>
-        <Spanish>Tierras Inexploradas (Huge, 58x100): Tierras Inexploradas es un mapa generado y modificado manualmente para WTP.</Spanish>
+        <French>Terres Inexplorées (Immense, 58x100): Terres Inexplorées est une carte générée et modifiée manuellement pour WTP.</French>
+        <German>Unbekannte Länder (Riesig, 58x100): Unbekannte Länder ist eine generierte Karte und manuell für WTP modifiziert.</German>
+        <Italian>Terre Inesplorate (Enorme, 58x100): Terre Inesplorate è una mappa generata e modificata manualmente per WTP.</Italian>
+        <Spanish>Tierras Inexploradas (Enorme, 58x100): Tierras Inexploradas es un mapa generado y modificado manualmente para WTP.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_WTP_UNDISCOVERED_WORLD_DESC</Tag>
@@ -135,19 +135,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_WTP_UNKNOWN_CONTINENTS_DESC</Tag>
-        <English>Unknown Continents (Enormous, 85x137): Unknown Continents is a generated map and manually modified for WTP</English>
-        <French>Continents Inconnus (Énorme, 85x137): Continents Inconnus est une carte générée et modifiée manuellement pour WTP.</French>
-        <German>Unbekannte Kontinente (Enorm, 85x137): Unbekannte Kontinente ist eine generierte Karte und manuell für WTP modifiziert.</German>
-        <Italian>Continenti Sconosciuti (Enorme, 85x137): Continenti Sconosciuti  è una mappa generata e modificata manualmente per WTP.</Italian>
-        <Spanish>Continentes Desconocidos (Enorme, 85x137): Continentes Desconocidos es un mapa generado y modificado manualmente para WTP.</Spanish>
+        <English>Unknown Continents (Massive, 85x137): Unknown Continents is a generated map and manually modified for WTP</English>
+        <French>Continents Inconnus (Massive, 85x137): Continents Inconnus est une carte générée et modifiée manuellement pour WTP.</French>
+        <German>Unbekannte Kontinente (Fest, 85x137): Unbekannte Kontinente ist eine generierte Karte und manuell für WTP modifiziert.</German>
+        <Italian>Continenti Sconosciuti (Massicce, 85x137): Continenti Sconosciuti  è una mappa generata e modificata manualmente per WTP.</Italian>
+        <Spanish>Continentes Desconocidos (Masivo, 85x137): Continentes Desconocidos es un mapa generado y modificado manualmente para WTP.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_WEST_INDIES_DESC</Tag>
         <English>West Indies (Huge, 88x58): Map of the West Indies</English>
-        <French>Les Antilles (Huge, 88x58): Carte des Antilles</French>
-        <German>West-Indien (Huge, 88x58): Karte von West-Indien</German>
-        <Italian>Le Antille (Huge, 88x58): Mappa delle Antille</Italian>
-        <Spanish>Las Antillas (Huge, 88x58): Mapa de las Antillas</Spanish>
+        <French>Les Antilles (Immense, 88x58): Carte des Antilles</French>
+        <German>West-Indien (Riesig, 88x58): Karte von West-Indien</German>
+        <Italian>Le Antille (Enorme, 88x58): Mappa delle Antille</Italian>
+        <Spanish>Las Antillas (Enorme, 88x58): Mapa de las Antillas</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_WESTERN_HEMI_DESC</Tag>
@@ -160,10 +160,10 @@
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_WESTERN_HEMI_HUGE_DESC</Tag>
         <English>Western Hemisphere (Huge, 72x100): colonize the whole of the New World in this scenario</English>
-        <French>L'hémisphère Ouest (Huge, 72x100): colonisez la totalité du Nouveau Monde dans le scénario "Amériques"</French>
-        <German>Westlichen Hemisphäre (Huge, 72x100): kolonisieren Sie die gesamte Neue Welt in diesem Szenario</German>
-        <Italian>Emisfero occidentale (Huge, 72x100): colonizzare tutto il Nuovo Mondo in questo scenario</Italian>
-        <Spanish>Hemisferio occidental (Huge, 72x100): coloniza todo el Nuevo Mundo en este escenario</Spanish>
+        <French>L'hémisphère Ouest (Immense, 72x100): colonisez la totalité du Nouveau Monde dans le scénario "Amériques"</French>
+        <German>Westlichen Hemisphäre (Riesig, 72x100): kolonisieren Sie die gesamte Neue Welt in diesem Szenario</German>
+        <Italian>Emisfero occidentale (Enorme, 72x100): colonizzare tutto il Nuovo Mondo in questo scenario</Italian>
+        <Spanish>Hemisferio occidental (Enorme, 72x100): coloniza todo el Nuevo Mundo en este escenario</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_SCRIPT_ANEWWORLD_DESCR</Tag>
