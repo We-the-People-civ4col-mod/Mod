@@ -1671,8 +1671,14 @@
 		<DefineTextVal>UNITCLASS_MULATTO</DefineTextVal>
 	</Define>
 	<Define>
+		<!-- warning: can create a huge log -->
 		<DefineName>USE_OOS_LOGGING</DefineName>
 		<iDefineIntVal>0</iDefineIntVal>
 		<bAlwaysHardcoded>1</bAlwaysHardcoded>
+	</Define>
+	<Define>
+		<!-- warning: can create a huge log -->
+		<DefineName>USE_NIF_LOGGING</DefineName>
+		<iDefineIntVal>0</iDefineIntVal>
 	</Define>
 </Civ4Defines>

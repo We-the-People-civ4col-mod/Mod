@@ -162,14 +162,22 @@ BOOST_STATIC_ASSERT(sizeof(EXE_CvArtFileMgr) == sizeof(CvArtFileMgr));
 class EXE_CvArtInfoAsset : public CvArtInfoAsset
 {
 public:
-	/*
-		getKFM
-			?getKFM@CvArtInfoAsset@@QBEPBDXZ=?getKFM@EXE_CvArtInfoAsset@@QBEPBDXZ
+	DllExport const char* getNIF() const
+	{
+		if (GLOBAL_DEFINE_USE_NIF_LOGGING)
+		{
+			CvString szError;
+			szError.Format("Opening nif for entry: %s", getTag());
+			gDLL->logMsg("resmgr.log", szError);
+		}
 
-		getNIF
-			?getNIF@CvArtInfoAsset@@QBEPBDXZ=?getNIF@EXE_CvArtInfoAsset@@QBEPBDXZ
+		return CvArtInfoAsset::getNIF();
+	}
 
-	*/
+	DllExport const char* getKFM() const
+	{
+		return CvArtInfoAsset::getKFM();
+	}
 };
 BOOST_STATIC_ASSERT(sizeof(EXE_CvArtInfoAsset) == sizeof(CvArtInfoAsset));
 

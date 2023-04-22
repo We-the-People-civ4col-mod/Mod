@@ -3629,8 +3629,8 @@ class CvArtInfoAsset : 	public CvAssetInfoBase
 public:
 	CvArtInfoAsset() {}
 	virtual ~CvArtInfoAsset() {}
-	DllExport const char* getNIF() const;
-	DllExport const char* getKFM() const;
+	const char* getNIF() const;
+	const char* getKFM() const;
 
 	void setNIF(const char* szDesc);
 	void setKFM(const char* szDesc);

@@ -9,6 +9,10 @@
 
 EXPORTS
 
+; CvArtInfoAsset
+?getKFM@CvArtInfoAsset@@QBEPBDXZ=?getKFM@EXE_CvArtInfoAsset@@QBEPBDXZ
+?getNIF@CvArtInfoAsset@@QBEPBDXZ=?getNIF@EXE_CvArtInfoAsset@@QBEPBDXZ
+
 ; CvGlobals
 ?getBuildingInfo@CvGlobals@@QAEAAVCvBuildingInfo@@W4BuildingTypes@@@Z=?getBuildingInfo@EXE_CvGlobals@@QAEAAVCvBuildingInfo@@W4BuildingTypes@@@Z
 ?getBuildingInfo@CvGlobals@@QAEAAV?$vector@PAVCvBuildingInfo@@V?$allocator@PAVCvBuildingInfo@@@std@@@std@@XZ=?getBuildingInfo@EXE_CvGlobals@@QAEAAV?$vector@PAVCvBuildingInfo@@V?$allocator@PAVCvBuildingInfo@@@std@@@std@@XZ
