@@ -3241,5 +3241,35 @@
         <Tag>TXT_KEY_ACHIEVE_TWENTY_BLADES_TEXT</Tag>
         <English>Sir, your weaponsmiths are really busy. Plenty of new swords and other bladed weapons have been forged.[NEWLINE][NEWLINE]It's not enough for an army yet, but you can defend yourself better now anyway and equip some new units.[NEWLINE][NEWLINE]</English>
         <German>Sir, Eure Waffenschmiede sind wirklich fleißig. Es wurden reichlich neue Schwerter und andere Klingenwaffen geschmiedet.[NEWLINE][NEWLINE]Es reicht noch nicht für eine Armee, aber Ihr könnt Euch jetzt jedenfalls besser verteidigen und einige neue Einheiten ausrüsten.[NEWLINE][NEWLINE]</German>
-    </TEXT>	
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_SMALL_COASTAL_SHIP</Tag>
+        <English>First Small Coastal Ship</English>
+        <German>Erster Kleiner Küstensegler</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_SMALL_COASTAL_SHIP_HEAD</Tag>
+        <English>Shallow waters can be navigated</English>
+        <German>Küstengewässer können befahren werden</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_SMALL_COASTAL_SHIP_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]Very splendid Captain, you have finally sailed your barge up the river and are bringing us the much needed goods.[NEWLINE][NEWLINE]These barrels here and those back there please take back with you, we rely on you.[COLOR_REVERT]"[NEWLINE][NEWLINE]You now have the first small coastal ship. Use it well and don't put it on the next sandbank right away.[NEWLINE][NEWLINE]</English>
+        <German>"[COLOR_SELECTED_TEXT]Ganz famos Käpt'n, Ihr habt Euren Kahn endlich den Fluss rauf geschippert und bringt uns die dringend benötigten Waren.[NEWLINE][NEWLINE]Diese Fässer hier und die da hinten nehmt bitte wieder mit zurück, wir verlassen uns auf Euch[COLOR_REVERT]"[NEWLINE][NEWLINE]Ihr verfügt nun über den ersten kleinen Küstensegler. Gebraucht ihn wohl und setzt nicht gleich auf die nächste Sandbank. [NEWLINE][NEWLINE]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_BIG_COASTAL_SHIP</Tag>
+        <English>First Big Coastal Ship</English>
+        <German>Erster Großer Küstensegler</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_BIG_COASTAL_SHIP_HEAD</Tag>
+        <English>Coastal shipping grows and grows</English>
+        <German>Die Küstenschifffahrt wächst und wächst</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_BIG_COASTAL_SHIP_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]Captain, this is really a big ship. I assume it can rivale a full-rigged ship. However, it must not be any bigger. Otherwise you'll be stuck in the mud.[NEWLINE][NEWLINE]We have a lot of goods, please take them down the river with you. You will also be decently rewarded for it.[COLOR_REVERT]"[NEWLINE][NEWLINE]You now have the first big coastal ship. Use it well and don't put it on the next sandbank right away.[NEWLINE][NEWLINE]</English>
+        <German>"[COLOR_SELECTED_TEXT]Käpt'n, Ihr habt Euch wahrlich verbessert, seit dem Ihr das letzte Mal hier wart. Dieses Schiff kann es ja schon fast mit einem Vollschiff aufnehmen. Aber noch größer darf es nicht werden, sonst macht Euch der Tiefgang einen Strich durch die Rechnung und Ihr bleibt im Schlick hängen.[NEWLINE][NEWLINE]Wir haben wieder ordentlich Ware, die Ihr bitte den Fluss mit runternehmt. Man wird Euch auch anständig dafür entlohnen.[COLOR_REVERT]"[NEWLINE][NEWLINE]Ihr verfügt nun über den ersten großen Küstensegler. Gebraucht ihn wohl und setzt nicht gleich auf die nächste Sandbank. [NEWLINE][NEWLINE]</German>
+    </TEXT>
 </Civ4GameText>
