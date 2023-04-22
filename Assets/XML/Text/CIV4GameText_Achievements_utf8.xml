@@ -3272,4 +3272,19 @@
         <English>"[COLOR_SELECTED_TEXT]Captain, this is really a big ship. I assume it can rivale a full-rigged ship. However, it must not be any bigger. Otherwise you'll be stuck in the mud.[NEWLINE][NEWLINE]We have a lot of goods, please take them down the river with you. You will also be decently rewarded for it.[COLOR_REVERT]"[NEWLINE][NEWLINE]You now have the first big coastal ship. Use it well and don't put it on the next sandbank right away.[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Käpt'n, Ihr habt Euch wahrlich verbessert, seit dem Ihr das letzte Mal hier wart. Dieses Schiff kann es ja schon fast mit einem Vollschiff aufnehmen. Aber noch größer darf es nicht werden, sonst macht Euch der Tiefgang einen Strich durch die Rechnung und Ihr bleibt im Schlick hängen.[NEWLINE][NEWLINE]Wir haben wieder ordentlich Ware, die Ihr bitte den Fluss mit runternehmt. Man wird Euch auch anständig dafür entlohnen.[COLOR_REVERT]"[NEWLINE][NEWLINE]Ihr verfügt nun über den ersten großen Küstensegler. Gebraucht ihn wohl und setzt nicht gleich auf die nächste Sandbank. [NEWLINE][NEWLINE]</German>
     </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_TOWN_GUARD</Tag>
+        <English>First town guard</English>
+        <German>Erste Stadtwache</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_TOWN_GUARD_HEAD</Tag>
+        <English>A settler has taken the profession of town guard</English>
+        <German>Ein Siedler hat den Beruf Stadtwache ergriffen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_TOWN_GUARD_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]Hey, you, don't fall asleep on guard duty. That's not what we're paid for. We're supposed to keep peace and order here.[NEWLINE][NEWLINE]Oh, come on, let me rest here for a bit. Yesterday we had quite a drink. It lasted until closing time. I just need some rest. The city is in good hands with you...[COLOR_REVERT]"[NEWLINE][NEWLINE]A settler has taken the profession of city guard. Very good, so the city should be a little more protected. But that will not be enough in the long run. [NEWLINE][NEWLINE]</English>
+        <German>"[COLOR_SELECTED_TEXT]Hey, Du, schlaf blos nicht auf Wache ein. Dafür werden wir nicht bezahlt. Wir sollen doch hier für Ruhe und Ordnung sorgen.[NEWLINE][NEWLINE]Ach was, lass mich doch ein wenig hier ausruhen. Gestern haben wir ganz schön ins Glas geschaut. Es dauerte bis zur Sperrstunde. Ich brauch' jetzt einfach Ruhe. Die Stadt ist doch bei Dir in guten Händen...[COLOR_REVERT]"[NEWLINE][NEWLINE]Ein Siedler hat den Beruf Stadtwache ergriffen. Sehr gut, damit sollte die Stadt schon ein wenig mehr geschützt sein. Aber das wird auf die Dauer nicht ausreichen. [NEWLINE][NEWLINE]</German>
+    </TEXT>
 </Civ4GameText>
