@@ -6079,8 +6079,8 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script2DSound>
 	<Script2DSound>
-		<ScriptID>AS2D_WTP_1</ScriptID>
-		<SoundID>SONG_WTP_1</SoundID>
+		<ScriptID>AS2D_WTP_01</ScriptID>
+		<SoundID>SONG_WTP_01</SoundID>
 		<SoundType>GAME_MUSIC</SoundType>
 		<iMinVolume>80</iMinVolume>
 		<iMaxVolume>80</iMaxVolume>
@@ -6102,8 +6102,8 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script2DSound>
 	<Script2DSound>
-		<ScriptID>AS2D_WTP_2</ScriptID>
-		<SoundID>SONG_WTP_2</SoundID>
+		<ScriptID>AS2D_WTP_02</ScriptID>
+		<SoundID>SONG_WTP_02</SoundID>
 		<SoundType>GAME_MUSIC</SoundType>
 		<iMinVolume>80</iMinVolume>
 		<iMaxVolume>80</iMaxVolume>
@@ -6125,8 +6125,8 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script2DSound>
 	<Script2DSound>
-		<ScriptID>AS2D_WTP_3</ScriptID>
-		<SoundID>SONG_WTP_3</SoundID>
+		<ScriptID>AS2D_WTP_03</ScriptID>
+		<SoundID>SONG_WTP_03</SoundID>
 		<SoundType>GAME_MUSIC</SoundType>
 		<iMinVolume>80</iMinVolume>
 		<iMaxVolume>80</iMaxVolume>
@@ -6148,8 +6148,8 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script2DSound>
 	<Script2DSound>
-		<ScriptID>AS2D_WTP_4</ScriptID>
-		<SoundID>SONG_WTP_4</SoundID>
+		<ScriptID>AS2D_WTP_04</ScriptID>
+		<SoundID>SONG_WTP_04</SoundID>
 		<SoundType>GAME_MUSIC</SoundType>
 		<iMinVolume>80</iMinVolume>
 		<iMaxVolume>80</iMaxVolume>
@@ -6171,8 +6171,8 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script2DSound>
 	<Script2DSound>
-		<ScriptID>AS2D_WTP_5</ScriptID>
-		<SoundID>SONG_WTP_5</SoundID>
+		<ScriptID>AS2D_WTP_05</ScriptID>
+		<SoundID>SONG_WTP_05</SoundID>
 		<SoundType>GAME_MUSIC</SoundType>
 		<iMinVolume>80</iMinVolume>
 		<iMaxVolume>80</iMaxVolume>
@@ -6194,8 +6194,8 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script2DSound>
 	<Script2DSound>
-		<ScriptID>AS2D_WTP_6</ScriptID>
-		<SoundID>SONG_WTP_6</SoundID>
+		<ScriptID>AS2D_WTP_06</ScriptID>
+		<SoundID>SONG_WTP_06</SoundID>
 		<SoundType>GAME_MUSIC</SoundType>
 		<iMinVolume>80</iMinVolume>
 		<iMaxVolume>80</iMaxVolume>
@@ -6217,8 +6217,8 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script2DSound>
 	<Script2DSound>
-		<ScriptID>AS2D_WTP_7</ScriptID>
-		<SoundID>SONG_WTP_7</SoundID>
+		<ScriptID>AS2D_WTP_07</ScriptID>
+		<SoundID>SONG_WTP_07</SoundID>
 		<SoundType>GAME_MUSIC</SoundType>
 		<iMinVolume>80</iMinVolume>
 		<iMaxVolume>80</iMaxVolume>
@@ -6240,8 +6240,8 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script2DSound>
 	<Script2DSound>
-		<ScriptID>AS2D_WTP_8</ScriptID>
-		<SoundID>SONG_WTP_8</SoundID>
+		<ScriptID>AS2D_WTP_08</ScriptID>
+		<SoundID>SONG_WTP_08</SoundID>
 		<SoundType>GAME_MUSIC</SoundType>
 		<iMinVolume>80</iMinVolume>
 		<iMaxVolume>80</iMaxVolume>
@@ -6263,8 +6263,8 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script2DSound>
 	<Script2DSound>
-		<ScriptID>AS2D_WTP_9</ScriptID>
-		<SoundID>SONG_WTP_9</SoundID>
+		<ScriptID>AS2D_WTP_09</ScriptID>
+		<SoundID>SONG_WTP_09</SoundID>
 		<SoundType>GAME_MUSIC</SoundType>
 		<iMinVolume>80</iMinVolume>
 		<iMaxVolume>80</iMaxVolume>

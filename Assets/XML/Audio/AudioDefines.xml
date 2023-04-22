@@ -168,63 +168,63 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SONG_WTP_1</SoundID>
+			<SoundID>SONG_WTP_01</SoundID>
 			<Filename>Sounds/Soundtrack/Muse</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SONG_WTP_2</SoundID>
+			<SoundID>SONG_WTP_02</SoundID>
 			<Filename>Sounds/Soundtrack/A_Celtic_Tale</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SONG_WTP_3</SoundID>
+			<SoundID>SONG_WTP_03</SoundID>
 			<Filename>Sounds/Soundtrack/Ambassadors</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SONG_WTP_4</SoundID>
+			<SoundID>SONG_WTP_04</SoundID>
 			<Filename>Sounds/Soundtrack/Ancient Storm</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SONG_WTP_5</SoundID>
+			<SoundID>SONG_WTP_05</SoundID>
 			<Filename>Sounds/Soundtrack/Benedicite</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SONG_WTP_6</SoundID>
+			<SoundID>SONG_WTP_06</SoundID>
 			<Filename>Sounds/Soundtrack/Burial</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SONG_WTP_7</SoundID>
+			<SoundID>SONG_WTP_07</SoundID>
 			<Filename>Sounds/Soundtrack/Deep_Memory</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SONG_WTP_8</SoundID>
+			<SoundID>SONG_WTP_08</SoundID>
 			<Filename>Sounds/Soundtrack/Despair</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SONG_WTP_9</SoundID>
+			<SoundID>SONG_WTP_09</SoundID>
 			<Filename>Sounds/Soundtrack/Farewell_Life</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
@@ -4418,7 +4418,7 @@
 		</SoundData>
 		<SoundData>
 			<SoundID>SND_AMB_TMMS_EULE-RAUHFUSSEULE</SoundID>
-			<Filename>Sounds/TMMS/Tiere/Eule-Rauhfusseule</Filename>
+			<Filename>Sounds/TMMS/Tiere/Eule-Rauhfusskauz</Filename>
 			<LoadType>DYNAMIC_RES</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
