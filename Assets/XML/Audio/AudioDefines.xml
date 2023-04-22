@@ -4418,7 +4418,7 @@
 		</SoundData>
 		<SoundData>
 			<SoundID>SND_AMB_TMMS_EULE-RAUHFUSSEULE</SoundID>
-			<Filename>Sounds/TMMS/Tiere/Eule-Rauhfusseule</Filename>
+			<Filename>Sounds/TMMS/Tiere/Eule-Rauhfusskauz</Filename>
 			<LoadType>DYNAMIC_RES</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
