@@ -1072,7 +1072,7 @@
             <iLakeChange>0</iLakeChange>
             <iCityChange>0</iCityChange>
             <iMinCity>0</iMinCity>
-            <iAIWeightPercent>100</iAIWeightPercent>
+            <iAIWeightPercent>50</iAIWeightPercent>
             <iAIBaseValue>1</iAIBaseValue>
             <iNativeBaseValue>0</iNativeBaseValue>
             <iPower>0</iPower>
@@ -1114,7 +1114,7 @@
             <iLakeChange>0</iLakeChange>
             <iCityChange>0</iCityChange>
             <iMinCity>0</iMinCity>
-            <iAIWeightPercent>100</iAIWeightPercent>
+            <iAIWeightPercent>50</iAIWeightPercent>
             <iAIBaseValue>1</iAIBaseValue>
             <iNativeBaseValue>0</iNativeBaseValue>
             <iPower>0</iPower>
@@ -1156,7 +1156,7 @@
             <iLakeChange>0</iLakeChange>
             <iCityChange>0</iCityChange>
             <iMinCity>0</iMinCity>
-            <iAIWeightPercent>100</iAIWeightPercent>
+            <iAIWeightPercent>50</iAIWeightPercent>
             <iAIBaseValue>2</iAIBaseValue>
             <iNativeBaseValue>0</iNativeBaseValue>
             <iPower>0</iPower>
@@ -1275,7 +1275,7 @@
             <iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
             <iNativeBuyPrice>-1</iNativeBuyPrice>
             <iNativeSellPrice>-1</iNativeSellPrice>
-            <iNativeConsumptionPercent>100</iNativeConsumptionPercent>
+            <iNativeConsumptionPercent>50</iNativeConsumptionPercent>
             <iNativeHappy>0</iNativeHappy>
             <iHillsChange>0</iHillsChange>
             <iPeakChange>0</iPeakChange>
@@ -1317,7 +1317,7 @@
             <iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
             <iNativeBuyPrice>14</iNativeBuyPrice>
             <iNativeSellPrice>-1</iNativeSellPrice>
-            <iNativeConsumptionPercent>100</iNativeConsumptionPercent>
+            <iNativeConsumptionPercent>50</iNativeConsumptionPercent>
             <iNativeHappy>5</iNativeHappy>
             <iHillsChange>0</iHillsChange>
             <iPeakChange>0</iPeakChange>
