@@ -42,8 +42,6 @@ const int iNumUnitInfosFakeExe = 384;
 const int iNumBuildingInfosFakeExe = 384;
 // const int iNumYieldInfosFakeExe = 192;
 
-CvGlobals gGlobals;
-
 //
 // CONSTRUCTOR
 //
