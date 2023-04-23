@@ -808,7 +808,7 @@
             <EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
             <FeatureStructs/>
             <HotKey>KB_O</HotKey>
-            <bAltDown>0</bAltDown>
+            <bAltDown>1</bAltDown>
             <bShiftDown>0</bShiftDown>
             <bCtrlDown>0</bCtrlDown>
             <iHotKeyPriority>0</iHotKeyPriority>
