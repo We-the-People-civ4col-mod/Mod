@@ -3287,4 +3287,64 @@
         <English>"[COLOR_SELECTED_TEXT]Hey, you, don't fall asleep on guard duty. That's not what we're paid for. We're supposed to keep peace and order here.[NEWLINE][NEWLINE]Oh, come on, let me rest here for a bit. Yesterday we had quite a drink. It lasted until closing time. I just need some rest. The city is in good hands with you...[COLOR_REVERT]"[NEWLINE][NEWLINE]A settler has taken the profession of city guard. Very good, so the city should be a little more protected. But that will not be enough in the long run. [NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Hey, Du, schlaf blos nicht auf Wache ein. Dafür werden wir nicht bezahlt. Wir sollen doch hier für Ruhe und Ordnung sorgen.[NEWLINE][NEWLINE]Ach was, lass mich doch ein wenig hier ausruhen. Gestern haben wir ganz schön ins Glas geschaut. Es dauerte bis zur Sperrstunde. Ich brauch' jetzt einfach Ruhe. Die Stadt ist doch bei Dir in guten Händen...[COLOR_REVERT]"[NEWLINE][NEWLINE]Ein Siedler hat den Beruf Stadtwache ergriffen. Sehr gut, damit sollte die Stadt schon ein wenig mehr geschützt sein. Aber das wird auf die Dauer nicht ausreichen. [NEWLINE][NEWLINE]</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_BARQUE</Tag>
+        <English>First slave barque</English>
+        <German>Erste Sklavenbarke</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_BARQUE_HEAD</Tag>
+        <English>Professional slave trade</English>
+        <German>Professioneller Sklavenhandel</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_BARQUE_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]Sir, this is not a ship to carry emigrants. That should be obvious to you. It's cramped and stuffy down there in the hold. There's only one purpose for this kind of ship - to get as many slaves from Africa to this place as possible.[NEWLINE][NEWLINE]Guess we both know what we're talking about here. Let's not talk about it any further. She seems to be in good shape. What do you want for it? I'll probably need one or two more ships like that.[COLOR_REVERT]"[NEWLINE][NEWLINE]You are now the owner of a slave transporter. Are you really sure you want to get into this kind of business? The good citizens of your colony might be frightened if such cargo is suddenly unloaded at the docks.[NEWLINE][NEWLINE]</English>
+        <German>"[COLOR_SELECTED_TEXT]Sir, das ist kein Schiff, um Auswanderer zu transportieren. Das sollte Euch klar sein. Es ist eng und stickig da unten im Laderaum. Es gibt nur einen Zweck für diese Art Schiffe - möglichst viele Sklaven von Afrika hierher zu schaffen. [NEWLINE][NEWLINE]Schätze, wir beide wissen, wovon wir hier reden. Reden wir nicht weiter davon. Sie scheint gut in Schuss zu sein. Was wollt Ihr dafür? Ich brauche vermutlich noch ein oder zwei Schiffe mehr von der Sorte.[COLOR_REVERT]"[NEWLINE][NEWLINE]Ihr seid nun Besitzer eines Sklaven-Transporters. Seid Ihr Euch wirklich sicher, dass Ihr in diese Art von Geschäft einsteigen wollt? Die braven Bürger Eurer Kolonie könnte es verschrecken, wenn an den Docks plötzlich solche Ladung gelöscht wird.[NEWLINE][NEWLINE]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_HUNTER</Tag>
+        <English>First slave hunter</English>
+        <German>Erster Sklavenjäger</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_HUNTER_HEAD</Tag>
+        <English>Tracking runaway slaves</English>
+        <German>Aufspüren von entlaufenen Sklaven</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_HUNTER_TEXT</Tag>
+        <English>You have hired a slave hunter to bring back runaway slaves. Now that you have obviously entered this business altogether and are running your plantations with slaves, there is really nothing more to say about it. May the Lord forgive you for your deeds.[NEWLINE][NEWLINE]</English>
+        <German>Ihr habt einen Sklavenjäger angeheuert, der Euch entlaufene Sklaven zurückbringt. Da ihr nun offensichtlich ganz und gar in dieses Geschäft eingestiegen seid und Eure Plantagen mit Sklaven betreibt, gibt es dazu eigentlich nichts mehr zu sagen. Möge der Herr Euch Eure Taten vergeben.[NEWLINE][NEWLINE]</German>
+    </TEXT>	
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_MASTER</Tag>
+        <English>First slave master</English>
+        <German>Erster Sklavenaufseher</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_MASTER_HEAD</Tag>
+        <English>Using the whip</English>
+        <German>Antreiben mit der Peitsche</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_MASTER_TEXT</Tag>
+        <English>First you snatch these poor creatures from their homes and families and bring them to the New World in deplorable conditions, and now you hire an overseer who will whip the slaves into working? [NEWLINE][NEWLINE]Have you no conscience at all? Certainly, your productivity will increase considerably - but at what price? There is still a way back. The Lord may forgive you if you abandon your plan and use the overseer elsewhere.[NEWLINE][NEWLINE]</English>
+        <German>Zuerst entreißt Ihr diese armen Kreaturen ihrer Heimat und ihren Familien und schafft sie unter erbärmlichen Bedingungen in die Neue Welt und nun heuert Ihr auch noch einen Aufseher an, der die Sklaven mit der Peitsche zur Arbeit antreiben wird? [NEWLINE][NEWLINE]Habt Ihr denn gar kein Gewissen? Gewiss, Eure Produktivität wird erheblich steigen - aber zu welchem Preis? Noch gibt es ein zurück. Der Herr wird Euch vielleicht vergeben, wenn Ihr von Eurem Plan ablasst und den Aufseher anderweitig verwendet.[NEWLINE][NEWLINE]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIVE_AFRICAN_SLAVES</Tag>
+        <English>Five african slaves</English>
+        <German>Fünf afrikanische Sklaven</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIVE_AFRICAN_SLAVES_HEAD</Tag>
+        <English>Expansion of slavery</English>
+        <German>Ausweitung der Sklaverei</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIVE_AFRICAN_SLAVES_TEXT</Tag>
+        <English>My lord, your plantations and farms are booming, no question - but at what cost? It seems you have finally switched to running the colonies in the New World with slaves instead of God-fearing settlers from Europe. [NEWLINE][NEWLINE]The colony seems to be turning more and more into a godless place. This is not the Garden of Eden we all expected. If you free the slaves, perhaps more emigrants will join you. How will you ever free yourself from the yoke of the king's oppression if parts of your population remain unfree?[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Plantagen und Farmen nehmen einen gewaltigen Aufschwung, keine Frage - aber zu welchem Preis? Es scheint Ihr seid nun endgültig dazu übergegangen, die Kolonien in der Neuen Welt mit Sklaven zu betreiben anstatt mit gottesfürchtigen Siedlern aus Europa. [NEWLINE][NEWLINE]Die Kolonie entwickelt sich offenbar immer mehr zu einem gottlosen Ort. Das hier ist nicht der Garten Eden, den wir alle erwartet haben. Wenn Ihr die Sklaven freilasst, schließen sich Euch vielleicht wieder mehr Auswanderer an. Wie wollt Ihr Euch je vom Joch der Unterdrückung durch den König befreien, wenn selbst Teile Eurer Bevölkerung unfrei bleiben? [NEWLINE][NEWLINE]</German>
+    </TEXT>	
 </Civ4GameText>
