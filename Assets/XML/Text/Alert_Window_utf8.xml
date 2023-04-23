@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+Strings for the alert window
+
+Note that the rules are different here than in other text xml files.
+This is because the alert window will read this file directly rather than relying on the normal TXT_KEY system,
+as the alert window needs to be active prior to the TXT_KEYs are being read.
+
+Special rules:
+No plural or gender. Just provide one string for each language.
+Arguments are given using the printf system https://cplusplus.com/reference/cstdio/printf/
+In general, this means arguments are named %d (number) and %s (string). No numbers given as that is assigned by order.
+
+-->
+
+
+
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_ALERT_XML_ERROR</Tag>
+        <English>XML READ ERROR</English>
+    </TEXT>
+</Civ4GameText>

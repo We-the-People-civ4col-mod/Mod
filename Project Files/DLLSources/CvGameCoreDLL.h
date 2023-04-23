@@ -280,6 +280,11 @@ namespace boost
 
 #endif // IntelliSense workaround
 
+// setting this to false will provide the path to the exe dir instead
+// this is usually not needed as it's the working directory
+std::string GetDLLPath(bool bLoadDLLPath = true);
+
+
 #include "CvMacros.h"
 #include "FAssert.h"
 #include "CvGameCoreDLLDefNew.h"
@@ -294,6 +299,7 @@ namespace boost
 #include "CvStructs.h"
 #include "NetworkDataPacking.h"
 #include "CvDLLUtilityIFaceBase.h"
+#include "AlertWindow.h"
 
 #include "CvGlobalConstants.h"
 #include "CvEnumsFunctions.h"

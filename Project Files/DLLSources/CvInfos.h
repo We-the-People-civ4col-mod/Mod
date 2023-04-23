@@ -4162,7 +4162,7 @@ public:
 	bool read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName, const TCHAR* szLanguage);
 
 	static int getNumLanguagesStatic();
-	static const TCHAR* CvGameText::getLanguageName(int iLanguageID);
+	static const TCHAR* getLanguageName(int iLanguageID);
 	static int getLanguageAtIndex(int iIndex);
 	static bool readLanguages(CvXMLLoadUtility* pXML);
 	static void setChangeLanguage();
