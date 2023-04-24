@@ -13377,6 +13377,18 @@ bool CvEraInfo::read(CvXMLLoadUtility* pXML)
 		pXML->SetStringList(&pszSoundTrackNames, &m_iNumSoundtracks);
 		if (m_iNumSoundtracks > 0)
 		{
+			// vanilla BTS seems to use values like 200 and 400. Not sure if there is an alignment issue.
+			// people report random crashes, which might be related to music, through a direct connection haven't been confirmed.
+			// increasing the value of m_iSoundtrackSpace doesn't hurt so let's try that.
+			if (m_iSoundtrackSpace <= m_iNumSoundtracks)
+			{
+				m_iSoundtrackSpace = 100;
+				while (m_iSoundtrackSpace <= m_iNumSoundtracks)
+				{
+					m_iSoundtrackSpace *= 2;
+				}
+			}
+
 			m_paiSoundtracks = new int[m_iNumSoundtracks];
 			int j;
 			for (j=0;j<m_iNumSoundtracks;j++)
