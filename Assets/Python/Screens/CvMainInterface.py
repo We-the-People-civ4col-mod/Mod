@@ -3000,7 +3000,7 @@ class CvMainInterface:
 
 				iProdusedYield = 0
 				for iYield in range(YieldTypes.NUM_YIELD_TYPES):
-					if iYield != YieldTypes.YIELD_FOOD and gc.getYieldInfo(iYield).isCargo():
+					if (not gc.getYieldInfo(iYield).isIgnoredForStorageCapacity() and gc.getYieldInfo(iYield).isCargo()):
 						iProdusedYield += aiProducedYields[iYield]
 
 				szBuffer += u" <color="
