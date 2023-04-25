@@ -5508,8 +5508,8 @@ void CvGame::createAnimalsLand()
 				{
 				    pPlot = GC.getMap().syncRandPlot((RANDPLOT_NOT_CITY), pLoopArea->getID(), iStartDist);
 
-					// Do not spawn in enemy territory
-					if (pPlot != NULL && pPlot->getOwner() != NO_PLAYER)
+					// WTP, ray, Do not spawn in impassable Terrain - owner is checked below
+					if (pPlot != NULL && !pPlot->isImpassable())
 					{
 					    /*
 					    // May Cause OOS Errors as Active Player is different on each Computer
@@ -5619,7 +5619,8 @@ void CvGame::createAnimalsSea()
 				{
 				    pPlot = GC.getMap().syncRandPlot((RANDPLOT_NOT_CITY), pLoopArea->getID(), iStartDist);
 
-					if (pPlot != NULL)
+					// WTP, ray, Do not spawn in impassable Terrain - owner is checked below
+					if (pPlot != NULL && !pPlot->isImpassable())
 					{
 					    /*
 					    // May Cause OOS Errors as Active Player is different on each Computer
