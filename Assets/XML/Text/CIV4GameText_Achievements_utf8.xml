@@ -3346,5 +3346,35 @@
         <Tag>TXT_KEY_ACHIEVE_FIVE_AFRICAN_SLAVES_TEXT</Tag>
         <English>My lord, your plantations and farms are booming, no question - but at what cost? It seems you have finally switched to running the colonies in the New World with slaves instead of God-fearing settlers from Europe. [NEWLINE][NEWLINE]The colony seems to be turning more and more into a godless place. This is not the Garden of Eden we all expected. If you free the slaves, perhaps more emigrants will join you. How will you ever free yourself from the yoke of the king's oppression if parts of your population remain unfree?[NEWLINE][NEWLINE]</English>
         <German>Mylord, Eure Plantagen und Farmen nehmen einen gewaltigen Aufschwung, keine Frage - aber zu welchem Preis? Es scheint Ihr seid nun endgültig dazu übergegangen, die Kolonien in der Neuen Welt mit Sklaven zu betreiben anstatt mit gottesfürchtigen Siedlern aus Europa. [NEWLINE][NEWLINE]Die Kolonie entwickelt sich offenbar immer mehr zu einem gottlosen Ort. Das hier ist nicht der Garten Eden, den wir alle erwartet haben. Wenn Ihr die Sklaven freilasst, schließen sich Euch vielleicht wieder mehr Auswanderer an. Wie wollt Ihr Euch je vom Joch der Unterdrückung durch den König befreien, wenn selbst Teile Eurer Bevölkerung unfrei bleiben? [NEWLINE][NEWLINE]</German>
-    </TEXT>	
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THREE_FREED_SLAVES</Tag>
+        <English>Three freed slaves</English>
+        <German>Drei befreite Sklaven</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THREE_FREED_SLAVES_HEAD</Tag>
+        <English>Slaves become free citizens</English>
+        <German>Sklaven werden freie Bürger</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THREE_FREED_SLAVES_TEXT</Tag>
+        <English>Mylord, in your colony more and more slaves are becoming free citizens. They will now volunteer for the development and success of the colony. This will increase their productivity. [NEWLINE][NEWLINE]Maybe more slaves will find their way to freedom. It would not harm the colony. [NEWLINE][NEWLINE]</English>
+        <German>Mylord, in Eurer Kolonie werden immer mehr Sklaven zu freien Bürgern. Sie werden nun freiwillig für den Aufbau und den Erfolg der Kolonie mitarbeiten. Dadurch erhöht sich Ihre Produktivität. [NEWLINE][NEWLINE]Vielleicht finden ja noch mehr Sklaven den Weg in die Freiheit. Der Kolonie würde es nicht schaden. [NEWLINE][NEWLINE]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_HIGH_PROFITABLE_TRADE</Tag>
+        <English>30,000 goods traded</English>
+        <German>30.000 Waren gehandelt</German>
+     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_HIGH_PROFITABLE_TRADE_HEAD</Tag>
+        <English>Thirty thousand goods traded</English>
+        <German>Dreißigtausend Waren gehandelt</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_HIGH_PROFITABLE_TRADE_TEXT</Tag>
+        <English>My lord, your economy is now running smoothly, you have the piracy problem under control and a large merchant fleet is taking your goods to Europe. Your colonies are now the pearl of your king's empire.[NEWLINE][NEWLINE]Despite the ever-increasing tax burden, your treasury is filling up more and more. In any case, you should not forget to protect the colony. So much wealth attracts envious people.[NEWLINE][NEWLINE]And if you are thinking about letting the king be king and possibly renouncing the king, then bear in mind that this needs to be well planned. You will also need an army, many weapons, supplies and more. You could lose everything if you are not well prepared for a revolution.  </English>
+        <German>Mylord, Eure Wirtschaft läuft mittlerweile wie geschmiert, Ihr habt das Piratenproblem im Griff und eine große Handelsflotte schafft Eure Waren nach Europa. Eure Kolonien sind mittlerweile die Perle des Reiches Eures Königs.[NEWLINE][NEWLINE]Trotz der immer größeren Steuerlast füllt sich Eure Schatzkammer mehr und mehr. Ihr solltet auf jeden Fall auch den Schutz der Kolonie nicht vergessen. So viel Reichtum ruft Neider auf den Plan.[NEWLINE][NEWLINE]Und solltet Ihr darüber nachdenken, den König König sein zu lassen und sich eventuell vom König loszusagen, dann bedenkt: Das will gut geplant sein. Ihr braucht dafür auch eine Armee, viele Waffen, Vorräte und noch mehr. Ihr könntet alles verlieren, wenn Ihr nicht gut für eine Revolution gerüstet seid. [NEWLINE][NEWLINE]</German>
+    </TEXT>
 </Civ4GameText>
