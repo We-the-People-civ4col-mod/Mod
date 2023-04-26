@@ -1438,9 +1438,11 @@ class CvPortRoyalScreen:
 		return iBoycottPrice
 	
 	## R&R, vetiarvind, Price dependent tax increase - START	
-	def getYieldScore(self, iYield):		
+	def getYieldScore(self, iYield):
 		player = gc.getPlayer(gc.getGame().getActivePlayer())
-		iScore = player.getYieldScoreTotalINT(iYield)
+		# WTP, ray fixing that the value is read from wrong player
+		playerEurope = gc.getPlayer(player.getParent())
+		iScore = playerEurope.getYieldScoreTotalINT(iYield)
 		return iScore
 	
 	def getTotalYieldsScore(self):
