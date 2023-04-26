@@ -8139,3 +8139,33 @@ def getHelpPreacherAndHarlot2(argsList):
 def getHelpConquistadorAmbusch(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_CONQUISTADOR_AMBUSH_HELP", ())
 	return szHelp
+    
+######## Liet Event Training ###########
+
+def canTriggerAtCityPopluationOf10(argsList):
+	ePlayer = argsList[1]
+	iCity = argsList[2]
+	player = gc.getPlayer(ePlayer)
+	city = player.getCity(iCity)
+	
+	if not player.isPlayable():
+		return false
+	if city.isNone():
+		return false
+	if city.getPopulation() < 10:
+        return false
+	return true
+
+def canTriggerAtCityPopluationOf20(argsList):
+	ePlayer = argsList[1]
+	iCity = argsList[2]
+	player = gc.getPlayer(ePlayer)
+	city = player.getCity(iCity)
+	
+	if not player.isPlayable():
+		return false
+	if city.isNone():
+		return false
+	if city.getPopulation() < 20:
+        return false
+	return true
