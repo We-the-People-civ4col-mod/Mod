@@ -1608,6 +1608,10 @@
                     <YieldType>YIELD_COFFEE_BERRIES</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COCHINEAL</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
             </YieldIncreases>
             <RiverSideYieldChanges/>
             <HillsYieldChanges/>
@@ -1790,6 +1794,17 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_PEANUTS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_CACTUS</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_COCHINEAL</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -3117,10 +3132,6 @@
                     <YieldType>YIELD_YERBA_LEAVES</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_COCHINEAL</YieldType>
-                    <iValue>1</iValue>
-                </YieldIntegerPair>
             </PrereqNatureYields>
             <YieldIncreases>
                 <YieldIntegerPair>
@@ -3129,10 +3140,6 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_YERBA_LEAVES</YieldType>
-                    <iValue>2</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_COCHINEAL</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -3186,17 +3193,6 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_YERBA_LEAVES</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_CACTUS</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_COCHINEAL</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -4136,6 +4132,10 @@
                     <YieldType>YIELD_COFFEE_BERRIES</YieldType>
                     <iValue>4</iValue>
                 </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COCHINEAL</YieldType>
+                    <iValue>4</iValue>
+                </YieldIntegerPair>
             </YieldIncreases>
             <RiverSideYieldChanges/>
             <HillsYieldChanges/>
@@ -4314,6 +4314,17 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_COFFEE_BERRIES</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_CACTUS</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_COCHINEAL</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -5614,10 +5625,6 @@
                     <YieldType>YIELD_YERBA_LEAVES</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_COCHINEAL</YieldType>
-                    <iValue>1</iValue>
-                </YieldIntegerPair>
             </PrereqNatureYields>
             <YieldIncreases>
                 <YieldIntegerPair>
@@ -5626,10 +5633,6 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_YERBA_LEAVES</YieldType>
-                    <iValue>3</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_COCHINEAL</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -5683,17 +5686,6 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_YERBA_LEAVES</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_CACTUS</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_COCHINEAL</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
