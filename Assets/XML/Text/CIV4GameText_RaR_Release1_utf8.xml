@@ -972,7 +972,7 @@
         <English>Yields of goods sold in Europe and Africa (only 10% of the price is taken into account) : %d1/%d2%F3[NEWLINE][NEWLINE]There is a [COLOR_WARNING_TEXT]%d4.%d5%[COLOR_REVERT] chance that His Majesty will raise your taxes on the next turn.</English>
         <French>Marchandises vendues (%d1/%d2%F3)[NEWLINE]Il y a %d4.%d5 % de chance que le roi augmente les impôts au tour suivant.</French>
         <German>Erträge aus dem Verkauf von Gütern in Europe and Africa (nur 10% des Preises werden berücksichtigt) : (%d1/%d2%F3)[NEWLINE][NEWLINE]Es besteht eine [COLOR_WARNING_TEXT]%d4.%d5%[COLOR_REVERT] Chance darauf, daß Seine Majestät Eure Steuern im nächsten Zug erhöht.</German>
-        <Russian>Товары, проданные в Европе и Африке (учитывается только 10% с продаж) : %d1/%d2%F3[NEWLINE][NEWLINE]Есть [COLOR_WARNING_TEXT]%d4.%d5%[COLOR_REVERT] шанс, что Его Величество увеличит ставку налога в следующем ходу.</Russian>
+        <Russian>Товары, проданные в Европе и Африке (учитывается только 10% от цены) : %d1/%d2%F3[NEWLINE][NEWLINE]Есть [COLOR_WARNING_TEXT]%d4.%d5%[COLOR_REVERT] шанс, что Его Величество увеличит ставку налога в следующем ходу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CURRENT_ERA</Tag>
