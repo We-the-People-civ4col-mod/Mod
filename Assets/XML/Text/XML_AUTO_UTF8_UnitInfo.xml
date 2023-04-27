@@ -866,6 +866,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Russian>Неудачливый торговец:Неудачливые торговцы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FAILED_TRADER_PEDIA</Tag>
@@ -876,6 +877,7 @@
         <Tag>TXT_KEY_UNIT_FAILED_TRADER_STRATEGY</Tag>
         <English>When [LINK=UNIT_EXPERT_TRADER]Expert Traders[\LINK] fail to set up a trade pist in a Native village they become failed traders.[NEWLINE]They develop a bad work ethic. [NEWLINE]Since they have not lost their knowledge about how to make business they may still be useful in other professions though. [NEWLINE]They may become Experts in a profession again.</English>
         <German>Wenn [LINK=UNIT_EXPERT_TRADER]Ureinwohnerhändler[\LINK] scheitern einen Handelsposten in einem Ureinwohnerdorf einzurichgen, werden sie zu Gescheiterten Ureinwohnerhändler. [NEWLINE]Sie entwickeln eine schlechte Arbeitsmoral. [NEWLINE]Da sie aber nicht ihr Wissen verloren haben, wie man Geschäfte macht, können sie immer noch in anderen Berufen nützlich sein. [NEWLINE]Sie können in einem Beruf wieder zu Experten werden.</German>
+        <Russian>Когда [LINK=UNIT_EXPERT_TRADER]опытным торговцам с индейцами[\LINK] не удается открыть торговый пост в деревне индейцев, они становятся неудачливыми торговцами.[NEWLINE]Работают они из рук вон плохо.[NEWLINE]Но, поскольку они не утратили своих знаний о ведении бизнеса, они все еще могут быть полезны в других профессиях.[NEWLINE]Также они могут снова стать экспертами в своей профессии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CIGARS</Tag>

@@ -46,7 +46,8 @@
     <TEXT>
         <Tag>TXT_KEY_GOODY_FAILED_TRADER</Tag>
         <English>You've discovered a [COLOR_UNIT_TEXT]failed trader[COLOR_REVERT] on the return from his failed attempt to establish a trade post!</English>
-        <German>Ihr habt einen [COLOR_UNIT_TEXT]gescheiterten Missionar[COLOR_REVERT] auf der Rückkehr von seinem gescheiterten Handelsposten!</German>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]gescheiterter Händler[COLOR_REVERT] auf der Rückkehr von seinem gescheiterten Handelsposten!</German>
+        <Russian>Вы встретили [COLOR_UNIT_TEXT]неудачливого торговца[COLOR_REVERT], разорившегося после провальной попытки основать торговый пост и решили помочь бедолаге.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_COLONIST</Tag>
