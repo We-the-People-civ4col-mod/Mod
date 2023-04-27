@@ -482,7 +482,7 @@
         <German>[ICON_BULLET]%D1%% Auswirkung von Revolutionsbereitschaft auf [ICON_STRENGTH] der Rebellen</German>
         <Italian>[ICON_BULLET]Effetto %D1%% di Revolutionary percentuale sul Rebel [ICON_STRENGTH]</Italian>
         <Spanish>[ICON_BULLET]%D1%% efecto de la Revolución de Cambio on Rebelde [ICON_STRENGTH]</Spanish>
-        <Russian>[ICON_BULLET]%D1%% effect of Revolutionary Rate к [ICON_STRENGTH] повстанцев</Russian>
+        <Russian>[ICON_BULLET]%D1%% к эффекту от Революционных настроений к [ICON_STRENGTH] повстанцев</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_SMUGGLERS</Tag>
