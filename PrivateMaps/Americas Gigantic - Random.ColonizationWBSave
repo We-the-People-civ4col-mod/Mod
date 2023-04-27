@@ -16752,7 +16752,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=237
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_TAIGA
 	PlotType=2
 EndPlot
 BeginPlot
@@ -18262,7 +18262,7 @@ EndPlot
 BeginPlot
 	x=11,y=237
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_TAIGA
 	PlotType=2
 EndPlot
 BeginPlot
@@ -110730,7 +110730,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=72,y=9
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 EndPlot

@@ -113949,7 +113949,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=72,y=9
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 EndPlot
