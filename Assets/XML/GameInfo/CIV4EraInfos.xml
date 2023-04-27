@@ -25,7 +25,7 @@
             <iFatherPercent>100</iFatherPercent>
             <iGreatGeneralPercent>100</iGreatGeneralPercent>
             <iEventChancePerTurn>4</iEventChancePerTurn>
-            <iSoundtrackSpace>60</iSoundtrackSpace>
+            <iSoundtrackSpace>40</iSoundtrackSpace>
             <bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
             <EraInfoSoundtracks>
                 <EraInfoSoundtrack>AS2D_WTP_01</EraInfoSoundtrack>
@@ -199,7 +199,7 @@
             <iFatherPercent>100</iFatherPercent>
             <iGreatGeneralPercent>100</iGreatGeneralPercent>
             <iEventChancePerTurn>4</iEventChancePerTurn>
-            <iSoundtrackSpace>60</iSoundtrackSpace>
+            <iSoundtrackSpace>40</iSoundtrackSpace>
             <bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
             <EraInfoSoundtracks>
                 <EraInfoSoundtrack>AS2D_WTP_01</EraInfoSoundtrack>
@@ -378,7 +378,7 @@
             <iFatherPercent>100</iFatherPercent>
             <iGreatGeneralPercent>100</iGreatGeneralPercent>
             <iEventChancePerTurn>4</iEventChancePerTurn>
-            <iSoundtrackSpace>60</iSoundtrackSpace>
+            <iSoundtrackSpace>40</iSoundtrackSpace>
             <bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
             <EraInfoSoundtracks>
                 <EraInfoSoundtrack>AS2D_WTP_01</EraInfoSoundtrack>
@@ -580,7 +580,7 @@
             <iFatherPercent>100</iFatherPercent>
             <iGreatGeneralPercent>100</iGreatGeneralPercent>
             <iEventChancePerTurn>4</iEventChancePerTurn>
-            <iSoundtrackSpace>60</iSoundtrackSpace>
+            <iSoundtrackSpace>40</iSoundtrackSpace>
             <bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
             <EraInfoSoundtracks>
                 <EraInfoSoundtrack>AS2D_WTP_01</EraInfoSoundtrack>
