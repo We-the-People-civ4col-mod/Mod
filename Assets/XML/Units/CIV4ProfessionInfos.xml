@@ -1846,6 +1846,45 @@
             <iLbDLearnLevel>2</iLbDLearnLevel>
         </ProfessionInfo>
         <ProfessionInfo>
+            <Type>PROFESSION_PEANUT_ROASTER</Type>
+            <Description>TXT_KEY_PROFESSION_PEANUT_ROASTER</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_PEANUT_ROASTER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_PEANUT_ROASTER_STRATEGY</Strategy>
+            <Help>TXT_KEY_PROFESSION_PEANUT_ROASTER_HELP</Help>
+            <Combat>NONE</Combat>
+            <DefaultUnitAI>NONE</DefaultUnitAI>
+            <SpecialBuilding>SPECIALBUILDING_ROASTER</SpecialBuilding>
+            <bWorkPlot>0</bWorkPlot>
+            <bCitizen>1</bCitizen>
+            <bWater>0</bWater>
+            <bScout>0</bScout>
+            <bCanCrossLargeRivers>0</bCanCrossLargeRivers>
+            <bCityDefender>0</bCityDefender>
+            <bCanFound>0</bCanFound>
+            <bUnarmed>0</bUnarmed>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <iCombatChange>0</iCombatChange>
+            <iMovesChange>0</iMovesChange>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <iWorkRate>0</iWorkRate>
+            <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
+            <iPower>0</iPower>
+            <iAsset>300</iAsset>
+            <YieldEquipedNums/>
+            <FreePromotions/>
+            <YieldsProduced>
+                <YieldType>YIELD_ROASTED_PEANUTS</YieldType>
+            </YieldsProduced>
+            <YieldsConsumed>
+                <YieldType>YIELD_PEANUTS</YieldType>
+            </YieldsConsumed>
+            <Button>Art/interface/buttons/New_Profession_Buttons/Peanut_Trader.dds</Button>
+            <bUseLbD>1</bUseLbD>
+            <ExpertUnit>UNITCLASS_ROASTER</ExpertUnit>
+            <iLbDLearnLevel>2</iLbDLearnLevel>
+        </ProfessionInfo>
+        <ProfessionInfo>
             <Type>PROFESSION_SALT_TRADER</Type>
             <Description>TXT_KEY_PROFESSION_SALT_TRADER</Description>
             <Civilopedia>TXT_KEY_PROFESSION_SALT_TRADER_PEDIA</Civilopedia>
@@ -3023,45 +3062,6 @@
             <Button>Art/interface/buttons/New_Profession_Buttons/Potter.dds</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_POTTER</ExpertUnit>
-            <iLbDLearnLevel>2</iLbDLearnLevel>
-        </ProfessionInfo>
-        <ProfessionInfo>
-            <Type>PROFESSION_PEANUT_ROASTER</Type>
-            <Description>TXT_KEY_PROFESSION_PEANUT_ROASTER</Description>
-            <Civilopedia>TXT_KEY_PROFESSION_PEANUT_ROASTER_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_PROFESSION_PEANUT_ROASTER_STRATEGY</Strategy>
-            <Help>TXT_KEY_PROFESSION_PEANUT_ROASTER_HELP</Help>
-            <Combat>NONE</Combat>
-            <DefaultUnitAI>NONE</DefaultUnitAI>
-            <SpecialBuilding>SPECIALBUILDING_ROASTER</SpecialBuilding>
-            <bWorkPlot>0</bWorkPlot>
-            <bCitizen>1</bCitizen>
-            <bWater>0</bWater>
-            <bScout>0</bScout>
-            <bCanCrossLargeRivers>0</bCanCrossLargeRivers>
-            <bCityDefender>0</bCityDefender>
-            <bCanFound>0</bCanFound>
-            <bUnarmed>0</bUnarmed>
-            <bNoDefensiveBonus>0</bNoDefensiveBonus>
-            <iCombatChange>0</iCombatChange>
-            <iMovesChange>0</iMovesChange>
-            <bMoveIntoPeak>0</bMoveIntoPeak>
-            <iWorkRate>0</iWorkRate>
-            <iMissionaryRate>0</iMissionaryRate>
-            <iNativeTradeRate>0</iNativeTradeRate>
-            <iPower>0</iPower>
-            <iAsset>300</iAsset>
-            <YieldEquipedNums/>
-            <FreePromotions/>
-            <YieldsProduced>
-                <YieldType>YIELD_ROASTED_PEANUTS</YieldType>
-            </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>YIELD_PEANUTS</YieldType>
-            </YieldsConsumed>
-            <Button>Art/interface/buttons/New_Profession_Buttons/Peanut_Trader.dds</Button>
-            <bUseLbD>1</bUseLbD>
-            <ExpertUnit>UNITCLASS_ROASTER</ExpertUnit>
             <iLbDLearnLevel>2</iLbDLearnLevel>
         </ProfessionInfo>
         <ProfessionInfo>
