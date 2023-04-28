@@ -24,7 +24,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Ячмень</Russian>
-		<Hungarian>Árpa</Hungarian>
+        <Hungarian>Árpa</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_BARLEY_PEDIA</Tag>
@@ -58,7 +58,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Пиво</Russian>
-		<Hungarian>Sör</Hungarian>
+        <Hungarian>Sör</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_BEER_PEDIA</Tag>
@@ -92,7 +92,7 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Колокола свободы</Russian>
-		<Hungarian>Szabadságharang</Hungarian>
+        <Hungarian>Szabadságharang</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_BELLS_PEDIA</Tag>
@@ -126,7 +126,7 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Клинки</Russian>
-		<Hungarian>Kard</Hungarian>
+        <Hungarian>Kard</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_BLADES_PEDIA</Tag>
@@ -148,7 +148,7 @@
         <Italian>Cannoni</Italian>
         <Spanish>Cañones</Spanish>
         <Russian>Пушки</Russian>
-		<Hungarian>Ágyu</Hungarian>
+        <Hungarian>Ágyu</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CANNONS_PEDIA</Tag>
@@ -170,7 +170,7 @@
         <Italian>Bovini</Italian>
         <Spanish>Bovinos</Spanish>
         <Russian>Коровы</Russian>
-		<Hungarian>Marha</Hungarian>
+        <Hungarian>Marha</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CATTLE_PEDIA</Tag>
@@ -200,7 +200,7 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Сигары</Russian>
-		<Hungarian>Szivar</Hungarian>
+        <Hungarian>Szivar</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CIGARS_PEDIA</Tag>
@@ -234,7 +234,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Ткань</Russian>
-		<Hungarian>Kelme</Hungarian>
+        <Hungarian>Kelme</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CLOTH_PEDIA</Tag>
@@ -264,7 +264,7 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Пальто</Russian>
-		<Hungarian>Kabát</Hungarian>
+        <Hungarian>Kabát</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COATS_PEDIA</Tag>
@@ -298,7 +298,7 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Листья коки</Russian>
-		<Hungarian>Kokalevél</Hungarian>
+        <Hungarian>Kokalevél</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COCA_LEAVES_PEDIA</Tag>
@@ -328,7 +328,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Какао</Russian>
-		<Hungarian>Kakaó</Hungarian>
+        <Hungarian>Kakaó</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COCOA_PEDIA</Tag>
@@ -350,7 +350,7 @@
         <Italian>Frutta di cacao</Italian>
         <Spanish>Fruta del cacao</Spanish>
         <Russian>Плоды какао</Russian>
-		<Hungarian>Kakaóbab</Hungarian>
+        <Hungarian>Kakaóbab</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COCOA_FRUITS_PEDIA</Tag>
@@ -384,7 +384,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Кофе</Russian>
-		<Hungarian>Kávé</Hungarian>
+        <Hungarian>Kávé</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COFFEE_PEDIA</Tag>
@@ -406,7 +406,7 @@
         <Italian>Bacche di caffè</Italian>
         <Spanish>Bayas de café</Spanish>
         <Russian>Кофейные ягоды</Russian>
-		<Hungarian>Kávébab</Hungarian>
+        <Hungarian>Kávébab</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COFFEE_BERRIES_PEDIA</Tag>
@@ -440,7 +440,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Цветная ткань</Russian>
-		<Hungarian>Festett Kelme</Hungarian>
+        <Hungarian>Festett Kelme</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COLOURED_CLOTH_PEDIA</Tag>
@@ -474,7 +474,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Хлопок</Russian>
-		<Hungarian>Gyapot</Hungarian>
+        <Hungarian>Gyapot</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COTTON_PEDIA</Tag>
@@ -504,7 +504,7 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Кресты</Russian>
-		<Hungarian>Kereszt</Hungarian>
+        <Hungarian>Kereszt</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CROSSES_PEDIA</Tag>
@@ -538,7 +538,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Культура</Russian>
-		<Hungarian>Kultúra</Hungarian>
+        <Hungarian>Kultúra</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CULTURE_PEDIA</Tag>
@@ -572,7 +572,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Образование</Russian>
-		<Hungarian>Oktatás</Hungarian>
+        <Hungarian>Oktatás</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_EDUCATION_PEDIA</Tag>
@@ -606,7 +606,7 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Еда</Russian>
-		<Hungarian>Élelem</Hungarian>
+        <Hungarian>Élelem</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_FOOD_PEDIA</Tag>
@@ -636,7 +636,7 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Мех</Russian>
-		<Hungarian>Prém</Hungarian>
+        <Hungarian>Prém</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_FUR_PEDIA</Tag>
@@ -658,7 +658,7 @@
         <Italian>Mobili</Italian>
         <Spanish>Muebles</Spanish>
         <Russian>Мебель</Russian>
-		<Hungarian>Bútor</Hungarian>
+        <Hungarian>Bútor</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_FURNITURE_PEDIA</Tag>
@@ -692,7 +692,7 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Драгоценные камни</Russian>
-		<Hungarian>Drágakő</Hungarian>
+        <Hungarian>Drágakő</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_GEMS_PEDIA</Tag>
@@ -726,7 +726,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Золото</Russian>
-		<Hungarian>Arany</Hungarian>
+        <Hungarian>Arany</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_GOLD_PEDIA</Tag>
@@ -760,7 +760,7 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Виноград</Russian>
-		<Hungarian>Szőlő</Hungarian>
+        <Hungarian>Szőlő</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_GRAPES_PEDIA</Tag>
@@ -794,7 +794,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Молотки</Russian>
-		<Hungarian>Termelés</Hungarian>
+        <Hungarian>Termelés</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HAMMERS_PEDIA</Tag>
@@ -812,7 +812,7 @@
         <Italian>Salute</Italian>
         <Spanish>Salud</Spanish>
         <Russian>Здоровье</Russian>
-		<Hungarian>Egészség</Hungarian>
+        <Hungarian>Egészség</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HEALTH_PEDIA</Tag>
@@ -846,7 +846,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Конопля</Russian>
-		<Hungarian>Kender</Hungarian>
+        <Hungarian>Kender</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HEMP_PEDIA</Tag>
@@ -880,7 +880,7 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Коровьи шкуры</Russian>
-		<Hungarian>Marhabőr</Hungarian>
+        <Hungarian>Marhabőr</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HIDES_PEDIA</Tag>
@@ -914,7 +914,7 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Лошади</Russian>
-		<Hungarian>Ló</Hungarian>
+        <Hungarian>Ló</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HORSES_PEDIA</Tag>
@@ -948,7 +948,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Индиго</Russian>
-		<Hungarian>Indigó</Hungarian>
+        <Hungarian>Indigó</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_INDIGO_PEDIA</Tag>
@@ -982,7 +982,7 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Выделанная кожа</Russian>
-		<Hungarian>Bőráru</Hungarian>
+        <Hungarian>Bőráru</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_LEATHER_PEDIA</Tag>
@@ -1012,7 +1012,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Пиломатериалы</Russian>
-		<Hungarian>Épületfa</Hungarian>
+        <Hungarian>Épületfa</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_LUMBER_PEDIA</Tag>
@@ -1050,7 +1050,7 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Предметы роскоши</Russian>
-		<Hungarian>Luxuscikk</Hungarian>
+        <Hungarian>Luxuscikk</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_LUXURY_GOODS_PEDIA</Tag>
@@ -1088,7 +1088,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Мушкеты</Russian>
-		<Hungarian>Puska</Hungarian>
+        <Hungarian>Puska</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_MUSKETS_PEDIA</Tag>
@@ -1118,7 +1118,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Руда</Russian>
-		<Hungarian>Érc</Hungarian>
+        <Hungarian>Érc</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_ORE_PEDIA</Tag>
@@ -1152,7 +1152,7 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Премиумные шубы</Russian>
-		<Hungarian>Bunda</Hungarian>
+        <Hungarian>Bunda</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PREMIUM_COATS_PEDIA</Tag>
@@ -1186,7 +1186,7 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Премиальный мех</Russian>
-		<Hungarian>Szőrme</Hungarian>
+        <Hungarian>Szőrme</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PREMIUM_FUR_PEDIA</Tag>
@@ -1220,7 +1220,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Каменная соль</Russian>
-		<Hungarian>Kősó</Hungarian>
+        <Hungarian>Kősó</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_RAW_SALT_PEDIA</Tag>
@@ -1254,7 +1254,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Красный перец</Russian>
-		<Hungarian>Chilipaprika</Hungarian>
+        <Hungarian>Chilipaprika</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_RED_PEPPER_PEDIA</Tag>
@@ -1288,7 +1288,7 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Канаты</Russian>
-		<Hungarian>Kötél</Hungarian>
+        <Hungarian>Kötél</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_ROPE_PEDIA</Tag>
@@ -1322,7 +1322,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Ром</Russian>
-		<Hungarian>Rum</Hungarian>
+        <Hungarian>Rum</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_RUM_PEDIA</Tag>
@@ -1360,7 +1360,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Парусина</Russian>
-		<Hungarian>Vitorlavászon</Hungarian>
+        <Hungarian>Vitorlavászon</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_SAILCLOTH_PEDIA</Tag>
@@ -1394,7 +1394,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Соль</Russian>
-		<Hungarian>Só</Hungarian>
+        <Hungarian>Só</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_SALT_PEDIA</Tag>
@@ -1416,7 +1416,7 @@
         <Italian>Pecore</Italian>
         <Spanish>Ovejas</Spanish>
         <Russian>Овцы</Russian>
-		<Hungarian>Birka</Hungarian>
+        <Hungarian>Birka</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_SHEEP_PEDIA</Tag>
@@ -1446,7 +1446,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Серебро</Russian>
-		<Hungarian>Ezüst</Hungarian>
+        <Hungarian>Ezüst</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_SILVER_PEDIA</Tag>
@@ -1484,7 +1484,7 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Специи</Russian>
-		<Hungarian>Fűszer</Hungarian>
+        <Hungarian>Fűszer</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_SPICES_PEDIA</Tag>
@@ -1522,7 +1522,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Камень:Камни</Russian>
-		<Hungarian>Kő</Hungarian>
+        <Hungarian>Kő</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_STONE_PEDIA</Tag>
@@ -1556,7 +1556,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Сахар</Russian>
-		<Hungarian>Cukor</Hungarian>
+        <Hungarian>Cukor</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_SUGAR_PEDIA</Tag>
@@ -1594,7 +1594,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Табак</Russian>
-		<Hungarian>Dohány</Hungarian>
+        <Hungarian>Dohány</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_TOBACCO_PEDIA</Tag>
@@ -1632,7 +1632,7 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Инструменты</Russian>
-		<Hungarian>Szerszám</Hungarian>
+        <Hungarian>Szerszám</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_TOOLS_PEDIA</Tag>
@@ -1670,7 +1670,7 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Мануфактура</Russian>
-		<Hungarian>Dísztárgy</Hungarian>
+        <Hungarian>Dísztárgy</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_TRADE_GOODS_PEDIA</Tag>
@@ -1692,7 +1692,7 @@
         <Italian>Legno pregiato</Italian>
         <Spanish>Madera fina</Spanish>
         <Russian>Ценная древесина</Russian>
-		<Hungarian>Bútorfa</Hungarian>
+        <Hungarian>Bútorfa</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_VALUABLE_WOOD_PEDIA</Tag>
@@ -1726,7 +1726,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Китовый жир</Russian>
-		<Hungarian>Bálnazsír</Hungarian>
+        <Hungarian>Bálnazsír</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_WHALE_BLUBBER_PEDIA</Tag>
@@ -1758,7 +1758,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Ворвань</Russian>
-		<Hungarian>Bálnaolaj</Hungarian>
+        <Hungarian>Bálnaolaj</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_WHALE_OIL_PEDIA</Tag>
@@ -1792,7 +1792,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Вино</Russian>
-		<Hungarian>Bor</Hungarian>
+        <Hungarian>Bor</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_WINE_PEDIA</Tag>
@@ -1826,7 +1826,7 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Шерсть</Russian>
-		<Hungarian>Gyapjú</Hungarian>
+        <Hungarian>Gyapjú</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_WOOL_PEDIA</Tag>
@@ -1860,7 +1860,7 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Шерстяная ткань</Russian>
-		<Hungarian>Gyapjúkelme</Hungarian>
+        <Hungarian>Gyapjúkelme</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_WOOL_CLOTH_PEDIA</Tag>
@@ -1878,7 +1878,7 @@
         <Italian>Soddisfazione</Italian>
         <Spanish>Satisfacción</Spanish>
         <Russian>Счастье</Russian>
-		<Hungarian>Boldogság</Hungarian>
+        <Hungarian>Boldogság</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HAPPINESS_PEDIA</Tag>
@@ -1896,7 +1896,7 @@
         <Italian>Malcontento</Italian>
         <Spanish>Insatisfacción</Spanish>
         <Russian>Несчастье</Russian>
-		<Hungarian>Boldogtalanság</Hungarian>
+        <Hungarian>Boldogtalanság</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_UNHAPPINESS_PEDIA</Tag>
@@ -1914,7 +1914,7 @@
         <Italian>Legge</Italian>
         <Spanish>Ley</Spanish>
         <Russian>Закон</Russian>
-		<Hungarian>Törvény</Hungarian>
+        <Hungarian>Törvény</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_LAW_PEDIA</Tag>
@@ -1932,7 +1932,7 @@
         <Italian>Crimini</Italian>
         <Spanish>Delitos</Spanish>
         <Russian>Преступность</Russian>
-		<Hungarian>Bűnözés</Hungarian>
+        <Hungarian>Bűnözés</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CRIME_PEDIA</Tag>
