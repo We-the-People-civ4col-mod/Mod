@@ -3213,17 +3213,17 @@
         <German>"[COLOR_SELECTED_TEXT]Männer, hört mir zu. Man hat uns an diesen gottverlassenen Ort geschickt, um Großes zu leisten und für unseren König ein neues Stückchen dieser schönes Erade zu erobern.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Die Wilden hier sind keine Gegner für uns. Wir werden sie hinwegfegen und uns ihr Gold holen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ähm, Sir, erst neulich sollen diese "Wilden" eine ganze Truppe im Wald umzingelt und ausgeschaltet haben. Wir sollten uns vorsehen, Sir![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
     </TEXT>
 	<TEXT>
-        <Tag>TXT_KEY_ACHIEVE_FIRST_CONQUISTADOR</Tag>
-        <English>The first conquistador</English>
-        <German>Der erste Konquistador</German>
+        <Tag>TXT_KEY_ACHIEVE_SECOND_CONQUISTADOR</Tag>
+        <English>Some conquistadors</English>
+        <German>Mehrere Konquistadoren</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_ACHIEVE_FIRST_CONQUISTADOR_HEAD</Tag>
+        <Tag>TXT_KEY_ACHIEVE_SECOND_CONQUISTADOR_HEAD</Tag>
         <English>Conquistadors conquer the New World</English>
         <German>Konquistadoren erobern die Neue [NEWLINE]Welt</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_ACHIEVE_FIRST_CONQUISTADOR_TEXT</Tag>
+        <Tag>TXT_KEY_ACHIEVE_SECOND_CONQUISTADOR_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Men, the New World is ours. Look at this! One of the seven cities of Cibola, I know it, I'm sure. Follow me![NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Lord, this looks more like the burial place of a high king of the savages. I think we're more likely to find dusty bones or death or both. If the savages see us, we're screwed.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]What are you, conquerors or cowards? Follow me...I can smell the gold already![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Männer, die Neue Welt gehört uns. Seht Euch das an! Eine der sieben Städte von Cibola, ich weiß es, ich bin sicher. Folgt mir![NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Herr, das sieht mir eher wie die Begräbnisstätte eines hohen Königs der Wilden aus. Ich glaube hier werden wir eher nur verstaubte Knochen oder den Tod finden oder beides. Wenn die Wilden uns sehen, sind wir geliefert.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Was seid ihr, Eroberer oder Feiglinge? Mir nach...ich kann das Gold schon riechen![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
     </TEXT>
@@ -3348,17 +3348,17 @@
         <German>Mylord, Eure Plantagen und Farmen nehmen einen gewaltigen Aufschwung, keine Frage - aber zu welchem Preis? Es scheint Ihr seid nun endgültig dazu übergegangen, die Kolonien in der Neuen Welt mit Sklaven zu betreiben anstatt mit gottesfürchtigen Siedlern aus Europa. [NEWLINE][NEWLINE]Die Kolonie entwickelt sich offenbar immer mehr zu einem gottlosen Ort. Das hier ist nicht der Garten Eden, den wir alle erwartet haben. Wenn Ihr die Sklaven freilasst, schließen sich Euch vielleicht wieder mehr Auswanderer an. Wie wollt Ihr Euch je vom Joch der Unterdrückung durch den König befreien, wenn selbst Teile Eurer Bevölkerung unfrei bleiben? [NEWLINE][NEWLINE]</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_ACHIEVE_THREE_FREED_SLAVES</Tag>
-        <English>Three freed slaves</English>
-        <German>Drei befreite Sklaven</German>
+        <Tag>TXT_KEY_ACHIEVE_FIVE_FREED_SLAVES</Tag>
+        <English>Five freed slaves</English>
+        <German>Fünf befreite Sklaven</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_ACHIEVE_THREE_FREED_SLAVES_HEAD</Tag>
+        <Tag>TXT_KEY_ACHIEVE_FIVE_FREED_SLAVES_HEAD</Tag>
         <English>Slaves become free citizens</English>
         <German>Sklaven werden freie Bürger</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_ACHIEVE_THREE_FREED_SLAVES_TEXT</Tag>
+        <Tag>TXT_KEY_ACHIEVE_FIVE_FREED_SLAVES_TEXT</Tag>
         <English>Mylord, in your colony more and more slaves are becoming free citizens. They will now volunteer for the development and success of the colony. This will increase their productivity. [NEWLINE][NEWLINE]Maybe more slaves will find their way to freedom. It would not harm the colony. [NEWLINE][NEWLINE]</English>
         <German>Mylord, in Eurer Kolonie werden immer mehr Sklaven zu freien Bürgern. Sie werden nun freiwillig für den Aufbau und den Erfolg der Kolonie mitarbeiten. Dadurch erhöht sich Ihre Produktivität. [NEWLINE][NEWLINE]Vielleicht finden ja noch mehr Sklaven den Weg in die Freiheit. Der Kolonie würde es nicht schaden. [NEWLINE][NEWLINE]</German>
     </TEXT>
@@ -3376,5 +3376,20 @@
         <Tag>TXT_KEY_ACHIEVE_HIGH_PROFITABLE_TRADE_TEXT</Tag>
         <English>My lord, your economy is now running smoothly, you have the piracy problem under control and a large merchant fleet is taking your goods to Europe. Your colonies are now the pearl of your king's empire.[NEWLINE][NEWLINE]Despite the ever-increasing tax burden, your treasury is filling up more and more. In any case, you should not forget to protect the colony. So much wealth attracts envious people.[NEWLINE][NEWLINE]And if you are thinking about letting the king be king and possibly renouncing the king, then bear in mind that this needs to be well planned. You will also need an army, many weapons, supplies and more. You could lose everything if you are not well prepared for a revolution.  </English>
         <German>Mylord, Eure Wirtschaft läuft mittlerweile wie geschmiert, Ihr habt das Piratenproblem im Griff und eine große Handelsflotte schafft Eure Waren nach Europa. Eure Kolonien sind mittlerweile die Perle des Reiches Eures Königs.[NEWLINE][NEWLINE]Trotz der immer größeren Steuerlast füllt sich Eure Schatzkammer mehr und mehr. Ihr solltet auf jeden Fall auch den Schutz der Kolonie nicht vergessen. So viel Reichtum ruft Neider auf den Plan.[NEWLINE][NEWLINE]Und solltet Ihr darüber nachdenken, den König König sein zu lassen und sich eventuell vom König loszusagen, dann bedenkt: Das will gut geplant sein. Ihr braucht dafür auch eine Armee, viele Waffen, Vorräte und noch mehr. Ihr könntet alles verlieren, wenn Ihr nicht gut für eine Revolution gerüstet seid. [NEWLINE][NEWLINE]</German>
+    </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_MASS_TRANSPORT</Tag>
+        <English>Horse and Carriages</English>
+        <German>Viele Kutschengespanne</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_MASS_TRANSPORT_HEAD</Tag>
+        <English>Carriages facilitate the transportation</English>
+        <German>Kutschen erleichtern den Transport</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_MASS_TRANSPORT_TEXT</Tag>
+        <English>Mylord, You are making considerable progress in developing your colonies. More and more carriages and wagons are traveling on your well-developed roads to connect the coastal cities with the boondocks and bring in goods and other merchandise for export.[NEWLINE][NEWLINE]A working infrastructure is a good thing. Keep up the good work! [NEWLINE][NEWLINE]</English>
+        <German>Mylord, Ihr macht beachtliche Fortschritte bei der Erschließung Eurer Kolonien. Immer mehr Kutschen und Fuhrwerke sind auf Euren gut ausgebauten Straßen unterwegs, um die Küstenstädte mit dem Hinterland zu verbinden und Waren für den Export heranzuschaffen. [NEWLINE][NEWLINE]Eine funktionierende Infrastruktur ist eine gute Sache. Macht weiter so! [NEWLINE][NEWLINE]</German>
     </TEXT>
 </Civ4GameText>
