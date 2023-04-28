@@ -545,6 +545,10 @@ void CvCity::doTurn()
 
 	if (!isDisorder())
 	{
+		if (!isNative())
+		{
+			updateSlaveWorkerProductionBonus(); // WTP, ray, since it is cached / recalculated it needs to be recalculated here
+		}
 		doYields();
 		doGrowth();
 		doCulture();

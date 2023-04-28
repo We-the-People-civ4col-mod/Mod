@@ -6176,6 +6176,8 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit, bool
 			{
 				if (GC.getUnitInfo(eUnit).getYieldChange(eYield) > 0)
 				{
+					// WTP, ray, since it is cached / recalculated it needs to be recalculated here
+					pCity->updateSlaveWorkerProductionBonus();
 					iModifier = iModifier + pCity->getSlaveWorkerProductionBonus();
 				}
 			}
@@ -8529,6 +8531,10 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 				CvUnit* pUnit = city.getUnitWorkingPlot((CityPlotTypes)i);
 				//WTP, ray, Slave Hunter and Slave Master - START
 				int Modifier = 100; 
+				
+				// WTP, ray, since it is cached / recalculated it needs to be recalculated here
+				city.updateSlaveWorkerProductionBonus();
+
 				int iSlaveWorkerProductionBonus = city.getSlaveWorkerProductionBonus(); 
 				if (NULL != pUnit && pUnit->getUnitInfo().LbD_canEscape() && iSlaveWorkerProductionBonus > 0)
 				{

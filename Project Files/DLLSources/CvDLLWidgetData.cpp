@@ -1444,6 +1444,9 @@ void CvDLLWidgetData::parseCityNameHelp(CvWidgetDataStruct &widgetDataStruct, Cv
 		//WTP, ray, Slave Hunter and Slave Master - START
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_CITY_SLAVE_REVOLT_REDUCTION_BONUS", pHeadSelectedCity->getSlaveRevoltReductionBonus()));
+
+		// WTP, ray, since it is cached / recalculated it needs to be recalculated here
+		pHeadSelectedCity->updateSlaveWorkerProductionBonus();
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_CITY_SLAVE_WORKER_PRODUCTION_BONUS", pHeadSelectedCity->getSlaveWorkerProductionBonus()));
 		//WTP, ray, Slave Hunter and Slave Master - END
