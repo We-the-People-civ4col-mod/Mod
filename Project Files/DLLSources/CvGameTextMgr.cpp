@@ -1574,19 +1574,19 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, const CvPlot* pPl
 						{
 							switch (eMissionType)
 							{
-							case MISSION_MOVE_TO:
-							case MISSION_ROUTE_TO:
-case MISSION_ROUTE_TO_ROAD:
-case MISSION_ROUTE_TO_PLASTERED_ROAD:
-								pMissionPlot =  GC.getMap().plotINLINE(pHeadGroup->getMissionData1(0), pHeadGroup->getMissionData2(0));
-								break;
+								case MISSION_MOVE_TO:
+								case MISSION_ROUTE_TO:
+								case MISSION_ROUTE_TO_ROAD:
+								case MISSION_ROUTE_TO_PLASTERED_ROAD:
+									pMissionPlot =  GC.getMap().plotINLINE(pHeadGroup->getMissionData1(0), pHeadGroup->getMissionData2(0));
+									break;
 
-							case MISSION_MOVE_TO_UNIT:
-								if (pMissionUnit != NULL)
-								{
-									pMissionPlot = pMissionUnit->plot();
-								}
-								break;
+								case MISSION_MOVE_TO_UNIT:
+									if (pMissionUnit != NULL)
+									{
+										pMissionPlot = pMissionUnit->plot();
+									}
+									break;
 							}
 						}
 
