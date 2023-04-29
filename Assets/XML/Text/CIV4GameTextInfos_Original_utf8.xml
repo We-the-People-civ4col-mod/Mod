@@ -11398,13 +11398,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HAS_ACQUIRED_NEGATIVE_PROMOTION</Tag>
-        <English>Unit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] has acquired negative effect: [COLOR_WARNING_TEXT]%s2_NegativPromotionName[COLOR_REVERT].</English>
+        <English>Unit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] has acquired a negative effect: [COLOR_WARNING_TEXT]%s2_NegativPromotionName[COLOR_REVERT].</English>
         <German>Einheit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] hat negative Eigenschaft erworben: [COLOR_WARNING_TEXT]%s2_NegativPromotionName[COLOR_REVERT].</German>
         <Russian>На [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] наложен негативный эффект: [COLOR_WARNING_TEXT]%s2_NegativPromotionName[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_WAS_CLEASED_OF_NEGATIVE_PROMOTIONS</Tag>
-        <English>Unit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] has [COLOR_POSITIVE_TEXT]healed all negative Effects[COLOR_REVERT].</English>
+        <English>Unit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] has [COLOR_POSITIVE_TEXT]healed all negative effects[COLOR_REVERT].</English>
         <German>Einheit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] hat [COLOR_POSITIVE_TEXT]alle negative Eigenschaft geheilt[COLOR_REVERT].</German>
         <Russian>Наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] [COLOR_POSITIVE_TEXT]вылечил все негативные эффекты[COLOR_REVERT].</Russian>
     </TEXT>
