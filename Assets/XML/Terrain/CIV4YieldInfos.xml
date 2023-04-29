@@ -3000,18 +3000,18 @@
             <Civilopedia>TXT_KEY_YIELD_CHOCOLATE_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
             <bIsExportYield>1</bIsExportYield>
-            <iBuyPriceLow>14</iBuyPriceLow>
-            <iBuyPriceHigh>16</iBuyPriceHigh>
+            <iBuyPriceLow>16</iBuyPriceLow>
+            <iBuyPriceHigh>18</iBuyPriceHigh>
             <iBuyPriceMin>7</iBuyPriceMin>
             <iSellPriceDifference>2</iSellPriceDifference>
             <iPriceChangeThreshold>1500</iPriceChangeThreshold>
             <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
             <iEuropeVolumeAttrition>-10</iEuropeVolumeAttrition>
-            <iAfricaBuyPriceLow>12</iAfricaBuyPriceLow>
-            <iAfricaBuyPriceHigh>14</iAfricaBuyPriceHigh>
+            <iAfricaBuyPriceLow>14</iAfricaBuyPriceLow>
+            <iAfricaBuyPriceHigh>16</iAfricaBuyPriceHigh>
             <iAfricaSellPriceDifference>2</iAfricaSellPriceDifference>
-            <iPortRoyalBuyPriceLow>10</iPortRoyalBuyPriceLow>
-            <iPortRoyalBuyPriceHigh>12</iPortRoyalBuyPriceHigh>
+            <iPortRoyalBuyPriceLow>13</iPortRoyalBuyPriceLow>
+            <iPortRoyalBuyPriceHigh>15</iPortRoyalBuyPriceHigh>
             <iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
             <iNativeBuyPrice>9</iNativeBuyPrice>
             <iNativeSellPrice>-1</iNativeSellPrice>
