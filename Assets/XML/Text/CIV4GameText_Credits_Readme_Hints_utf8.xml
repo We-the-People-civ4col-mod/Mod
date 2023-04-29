@@ -676,7 +676,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_38</Tag>
-		<English>If you try to build a colony too close to a Native settlement, the local chief may require you to purchase the land you are claiming. You can refuse to pay, of course, but this will certainly worsen relations between you and the Natives.</English>
+		<English>If you try to build a colony too close to a Native settlement, the local chief may require you to purchase the land you are claiming. You can refuse to pay, of course, but this will certainly worsen relations between you and the Natives already established there.</English>
 		<French>Si vous tentez de fonder une ville trop près d'une colonie indigène, il se peut que le chef local vous demande d'acheter les terres que vous tentez de récupérer. Vous pouvez refuser de payer, bien entendu, mais cela entachera vos relations avec les indigènes concernés.</French>
 		<German>Wenn Sie versuchen, eine Kolonie zu nahe an einer Ureinwohner-Siedlung zu errichten, bietet Ihnen der einheimische Häuptling vielleicht das Land, das Sie beanspruchen, zum Kauf an. Wenn Sie sich weigern zu zahlen, so hat das eindeutig negative Auswirkungen auf Ihre Beziehung zu den Ureinwohnern.</German>
 		<Italian>Se provi a costruire una colonia troppo vicino a un insediamento di nativi, il capo potrebbe chiederti di acquistare la terra che rivendichi. Puoi naturalmente rifiutarti di pagare, ma ciò peggiorerà le relazioni con i nativi.</Italian>
@@ -692,7 +692,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_40</Tag>
-		<English>In Europe when you recruit units with a profession that needs goods, like the veteran soldier or seasoned scout, they come fully equipped with all the horses and weapons they require.</English>
+		<English>In Europe when you recruit units with a profession that needs goods, like the veteran soldier or seasoned scout, they come fully equipped with all the horses and weapons they require, including baked goods and gunpowder.</English>
 		<French>Lorsque vous recrutez en Europe des unités dont la profession nécessitent certaines marchandises (comme c'est le cas pour le soldat vétéran ou l'éclaireur aguerri), ils se joindront à vous avec tous les chevaux et/ou les armes requises.</French>
 		<German>Wenn Sie in Europa Einheiten rekrutieren, die Güter benötigen, um ihrem Beruf nachzugehen (etwa einen Offizier oder einen Routinierten Späher), werden diese Einheiten voll ausgerüstet - mit den notwendigen Pferden und Schusswaffen - geliefert.</German>
 		<Italian>Quando recluti in Europa unità che solitamente hanno bisogno di beni per intraprendere la professione, come per soldati veterani o scout esperti, arriveranno completamente equipaggiati con le armi e i cavalli di cui hanno bisogno.</Italian>
@@ -700,7 +700,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_41</Tag>
-		<English>When building your first settlement, it's always a good idea to keep as close to Europe as possible. Your ships will spend less time in transit between colony and mother country, lessening the chance of being attacked by enemy ships.[NEWLINE]Settle beside coast tiles rather than shallow coast. Otherwise when you get larger ships they won't be able to enter your port. It may take some searching to find a safe harbour for your settlement.</English>
+		<English>When building your first settlement, it's always a good idea to keep as close to Europe as possible. Your ships will spend less time in transit between colony and mother country, lessening the chance of being attacked by enemy ships. Settle beside coast tiles rather than shallow coast. Otherwise when you get larger ships they won't be able to enter your port. It may take some searching to find a safe harbour for your settlement.</English>
 		<French>Lorsque vous fondez votre première colonie, il est toujours judicieux de le faire le plus près possible de votre voie d'accès à l'Europe. Ainsi, vos navires passeront moins de temps en mer entre votre colonie et votre patrie, réduisant le risque qu'ils soient assaillis par un navire ennemi.</French>
 		<German>Wenn Sie Ihre erste Siedlung errichten, ist es immer sinnvoll, diese so nah wie möglich an Ihrer Route nach Europa anzulegen. Das bedeutet, daß Ihre Schiffe benötigen weniger lange für die Reise zwischen Kolonie und Mutterland brauchen. Zudem sinkt auch die Wahrscheinlichkeit, dass sie von gegnerischen Schiffen angegriffen werden.</German>
 		<Italian>Quando costruisci il tuo primo insediamento è sempre una buona idea costruirlo il più vicino possibile alla tua rotta per l'Europa. In questo modo le tue navi spenderanno meno tempo in viaggio tra la colonia e la madrepatria, riducendo le probabilità di venire attaccate dalle navi nemiche.</Italian>
@@ -716,7 +716,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_45</Tag>
-		<English>To load goods onto a transport, you must move the transport unit into the same tile as the goods and press the "Load Goods" icon. You can also do it from the "Transport" section of the Settlement Screen.[PARAGRAPH:2]You can unload goods one of two ways - by selecting the good you would like to unload from the unit stack and pressing "Unload" from the orders display or by activating the transport unit and clicking "Unload All." You can only unload goods in settlements (or in Europe).Soldiers need guns and gunpowder. </English>
+		<English>To load goods onto a transport, you must move the transport unit into the same tile as the goods and press the "Load Goods" icon. You can also do it from the "Transport" section of the Settlement Screen. You can unload goods one of two ways - by selecting the good you would like to unload from the unit stack and pressing "Unload" from the orders display or by activating the transport unit and clicking "Unload All." You can only unload goods in settlements (or in Europe).Soldiers need guns and gunpowder. </English>
 		<French>Pour charger des marchandises dans une unité de transport, vous devez déplacer cette dernière sur la même case que les marchandises puis cliquer sur l'icône Charger des marchandises. Vous pouvez également le faire depuis l'espace Transport de l'écran de colonie.</French>
 		<German>Um Güter auf ein Transportmittel zu laden, müssen Sie die Transporteinheit auf dasselbe Geländefeld wie die Güter bewegen und auf "Beladen" klicken. Dies ist ebenfalls im Menü "Transport" im Siedlungsbildschirm möglich.</German>
 		<Italian>Per caricare dei beni su un trasporto devi prima spostare l'unità da trasporto nella stessa casella in cui si trovano i beni, per poi cliccare sull'icona "Carica beni". Puoi anche farlo dalla sezione "Trasporti" nella schermata dell'insediamento.</Italian>
