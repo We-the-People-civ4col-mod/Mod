@@ -3389,7 +3389,67 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MASS_TRANSPORT_TEXT</Tag>
-        <English>Mylord, You are making considerable progress in developing your colonies. More and more carriages and wagons are traveling on your well-developed roads to connect the coastal cities with the boondocks and bring in goods and other merchandise for export.[NEWLINE][NEWLINE]A working infrastructure is a good thing. Keep up the good work! [NEWLINE][NEWLINE]</English>
+        <English>Mylord, you are making considerable progress in developing your colonies. More and more carriages and wagons are traveling on your well-developed roads to connect the coastal cities with the boondocks and bring in goods and other merchandise for export.[NEWLINE][NEWLINE]A working infrastructure is a good thing. Keep up the good work! [NEWLINE][NEWLINE]</English>
         <German>Mylord, Ihr macht beachtliche Fortschritte bei der Erschließung Eurer Kolonien. Immer mehr Kutschen und Fuhrwerke sind auf Euren gut ausgebauten Straßen unterwegs, um die Küstenstädte mit dem Hinterland zu verbinden und Waren für den Export heranzuschaffen. [NEWLINE][NEWLINE]Eine funktionierende Infrastruktur ist eine gute Sache. Macht weiter so! [NEWLINE][NEWLINE]</German>
+    </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SOME_SMALL_VESSELS</Tag>
+        <English>Some small vessels</English>
+        <German>Einige kleinere Schiffe</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SOME_SMALL_VESSELS_HEAD</Tag>
+        <English>Small, fast and agile</English>
+        <German>Klein, schnell und wendig</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SOME_SMALL_VESSELS_TEXT</Tag>
+        <English>Mylord, you are to be congratulated on building a flotilla of a new generation of smaller naval vessels. These vehicles are small, but they are also agile and fast.[NEWLINE][NEWLINE]Exactly the right ships for the narrow bays and flat coastal sections here. But you should not neglect the large transport ships to be able to ship your goods to Europe. [NEWLINE][NEWLINE]</English>
+        <German>Mylord, man darf Euch zum Aufbau einer Flotille von kleineren Marinefahrzeugen neuen Typs gratulieren. Diese Fahrzeuge sind zwar klein, dafür aber auch wendig und schnell. [NEWLINE][NEWLINE]Genau die richtigen Schiffe für die engen Buchten und flachen Küstenabschnitte hier. Ihr solltet aber auch die großen Transportschiffe wie die Westindienfahrer und Galleonen nicht vernachlässigen, um Eure Waren nach Europa verschiffen zu können.[NEWLINE][NEWLINE]</German>
+    </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SEVERAL_BIG_VESSELS</Tag>
+        <English>Several large merchant ships</English>
+        <German>Mehrere große Handelsschiffe</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SEVERAL_BIG_VESSELS_HEAD</Tag>
+        <English>Cargo holds as big as a church</English>
+        <German>Laderäume so große wie eine Kirche</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SEVERAL_BIG_VESSELS_TEXT</Tag>
+        <English>Mylord, you are to be congratulated on the construction of a flotilla of impressive new type merchant ships. These vessels are somewhat slower, but they are built sturdily and are well suited for an Atlantic crossing. They have huge cargo holds and can transport enormous amounts of goods to Europe.[NEWLINE][NEWLINE]Exactly the right ships for building up a merchant navy. However, you should not neglect the small and maneuverable schooners, brigs and sloops to trade on your own coasts. These small vessels are often better suited for the shallow coastal waters. [NEWLINE][NEWLINE]</English>
+        <German>Mylord, man darf Euch zum Aufbau einer Flotille von imposanten Handelsschiffen neuen Typs gratulieren. Diese Fahrzeuge sind zwar etwas langsamer, dafür aber stabil gebaut und für eine Atlantiküberquerung gut geeignet. Sie haben riesige Laderäume und können enorme Mengen an Waren nach Europa transportieren. [NEWLINE][NEWLINE]Genau die richtigen Schiffe für den Aufbau einer Handelsmarine. Ihr solltet aber auch die kleinen und wendigen Schooner, Brigs und Sloops nicht vernachlässigen, um an Euren eigenen Küsten Handel zu treiben. Für die seichten Küstengewässer sind diese kleinen Fahrzeuge oft besser geeignet.[NEWLINE][NEWLINE]</German>
+    </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SEVERAL_MEDIUM_VESSELS</Tag>
+        <English>Several medium merchant ships</English>
+        <German>Mehrere mittelgroße Handelsschiffe</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SEVERAL_MEDIUM_VESSELS_HEAD</Tag>
+        <English>A merchant marine emerges</English>
+        <German>Eine Handelsmarine entsteht</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SEVERAL_MEDIUM_VESSELS_TEXT</Tag>
+        <English>Mylord, you are to be congratulated on the construction of a flotilla of merchant ships. These vessels will form the basis of your trading activities and they are suitable for an Atlantic crossing. The ships are quite cheap and easy to build. With them you can transport your first goods to Europe and explore the coasts.[NEWLINE][NEWLINE]However, the ships are not quite up to date with the latest developments in shipping. There are pioneers of seafaring who are already working on faster and fewer ships that can also transport significantly more goods. You might want to think about building a shipyard to be able to build even better ships. [NEWLINE][NEWLINE]</English>
+        <German>Mylord, man darf Euch zum Aufbau einer Flotille von Handelsschiffen gratulieren. Diese Fahrzeuge werden den Grundstock für Eure Handelsaktivitäten bilden und sie sind für eine Atlantiküberquerung geeignet. Die Schiffe sind recht billig und leicht zu bauen. Mit ihnen könnt Ihr erste Waren nach Europa transportieren und die Küsten erkunden. [NEWLINE][NEWLINE]Die Schiffe sind allerdings nicht mehr ganz auf dem neuesten Stand der Entwicklung in der Seefahrt. Es gibt Pioniere der Seefahrt, die bereits an schnelleren und wenigeren Schiffen arbeiten, die auch deutlich mehr Waren transportieren können. Ihr solltet vielleicht über den Bau einer Werft nachdenken, um noch bessere Schiffe bauen zu können. [NEWLINE][NEWLINE]</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIVE_TREASURES</Tag>
+        <English>Five treasures</English>
+        <German>Fünf Schätze</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIVE_TREASURES_HEAD</Tag>
+        <English>Treasures were hoarded</English>
+        <German>Schätze wurden gehortet</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIVE_TREASURES_TEXT</Tag>
+        <English>Mylord, you currently call five treasure chests filled to the brim with gold your property. Bandits, the city council and other riffraff are surely already after the gold. Besides, you have to guard the treasures all the time. [NEWLINE][NEWLINE]You should think about getting a suitable vessel for transportation and take the treasures to Europe, where you will be compensated with hard cash. In any case, bring them to Europe yourself. Otherwise, the king wants to collect the largest part of it himself! [NEWLINE][NEWLINE]</English>
+        <German>Mylord, Ihr nennt derzeit fünf Schatztruhen, randvoll gefüllt mit Gold, Euer Eigentum. Banditen, der Stadtrat und anderes Gesindel sind sicher schon hinter dem Gold her. Außerdem müsst Ihr die Schätze die ganze Zeit bewachen lassen. [NEWLINE][NEWLINE]Ihr solltet darüber nachdenken, Euch ein geeignetes Transportmittel zu beschaffen und die Schätze nach Europa schaffen, wo man sie Euch mit barer Münze vergüten wird. Bringt sie auf jeden Fall selbst nach Europa. Der König wird ansonsten den größten Teil davon in seine eigene Schatzkammer wandern lassen! [NEWLINE][NEWLINE]</German>
     </TEXT>
 </Civ4GameText>
