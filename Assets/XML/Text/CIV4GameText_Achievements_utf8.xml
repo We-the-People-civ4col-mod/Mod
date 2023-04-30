@@ -3452,4 +3452,34 @@
         <English>Mylord, you currently call five treasure chests filled to the brim with gold your property. Bandits, the city council and other riffraff are surely already after the gold. Besides, you have to guard the treasures all the time. [NEWLINE][NEWLINE]You should think about getting a suitable vessel for transportation and take the treasures to Europe, where you will be compensated with hard cash. In any case, bring them to Europe yourself. Otherwise, the king wants to collect the largest part of it himself! [NEWLINE][NEWLINE]</English>
         <German>Mylord, Ihr nennt derzeit fünf Schatztruhen, randvoll gefüllt mit Gold, Euer Eigentum. Banditen, der Stadtrat und anderes Gesindel sind sicher schon hinter dem Gold her. Außerdem müsst Ihr die Schätze die ganze Zeit bewachen lassen. [NEWLINE][NEWLINE]Ihr solltet darüber nachdenken, Euch ein geeignetes Transportmittel zu beschaffen und die Schätze nach Europa schaffen, wo man sie Euch mit barer Münze vergüten wird. Bringt sie auf jeden Fall selbst nach Europa. Der König wird ansonsten den größten Teil davon in seine eigene Schatzkammer wandern lassen! [NEWLINE][NEWLINE]</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_MULATTOS</Tag>
+        <English>Ten mulattos</English>
+        <German>Zehn Mulatten</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_MULATTOS_HEAD</Tag>
+        <English>Descendants of European settlers [NEWLINE]and African slaves</English>
+        <German>Nachkommen europäischer Siedler [NEWLINE]und afrikanischer Sklaven</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_MULATTOS_TEXT</Tag>
+        <English>My lord, in your colonies, the proportion of mixed descendants of European settlers and African slaves is increasing. A not insignificant proportion in your colonies belongs to this population group.[NEWLINE][NEWLINE]It seems that the mutual dislike of both races is not as great as thought. So it seems only natural that the population develops accordingly.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, in Euren Kolonien steigt der Anteil an gemischten Nachkommen von europäischen Siedlern und afrikanischen Sklaven. Ein nicht unerheblicher Anteil in Euren Kolonien gehört dieser Bevölkerungsgruppe an. [NEWLINE][NEWLINE]Es scheint, als wäre die gegenseitige Abneigung beider Rassen doch nicht bei allen so groß wie gedacht. Da scheint es nur natürlich zu sein, dass sich die Bevölkerung dementsprechend weiterentwickelt. [NEWLINE][NEWLINE]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_MESTIZZOS</Tag>
+        <English>Ten mulattos</English>
+        <German>Zehn Mulatten</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_MESTIZZOS_HEAD</Tag>
+        <English>Descendants of European settlers [NEWLINE]and indigenous population</English>
+        <German>Nachkommen europäischer Siedler [NEWLINE]und indigener Bevölkerung</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_MESTIZZOS_TEXT</Tag>
+        <English>My lord, in your colonies, the proportion of mixed descendants of European settlers and indigenous population is increasing. A not insignificant proportion in your colonies belongs to this population group.[NEWLINE][NEWLINE]It seems that the mutual dislike of both races is not as great as thought. So it seems only natural that the population develops accordingly.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, in Euren Kolonien steigt der Anteil an gemischten Nachkommen von europäischen Siedlern und indigener Bevölkerung. Ein nicht unerheblicher Anteil in Euren Kolonien gehört dieser Bevölkerungsgruppe an. [NEWLINE][NEWLINE]Es scheint, als wäre die gegenseitige Abneigung beider Rassen doch nicht bei allen so groß wie gedacht. Da scheint es nur natürlich zu sein, dass sich die Bevölkerung dementsprechend weiterentwickelt. [NEWLINE][NEWLINE]</German>
+    </TEXT>
 </Civ4GameText>
