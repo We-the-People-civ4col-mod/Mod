@@ -181,7 +181,7 @@ class CvPediaUnit:
 		# WTP, ray, LbD Slaves Revolt and END - START
 		
 ## Pedia - Unit source - Start Nightinggale
-		if gc.getUnitInfo(self.iUnit).getImmigrationWeight():
+		if gc.getUnitInfo(self.iUnit).getImmigrationWeight() > 0:
 			szSpecialText += "\n" +	localText.getText("TXT_KEY_UNIT_MIGRATES", ())
 		if gc.getUnitInfo(self.iUnit).getEuropeCost() > 0:
 			szSpecialText += "\n" +	localText.getText("TXT_KEY_UNIT_BUYABLE_IN_EUROPE", ())
