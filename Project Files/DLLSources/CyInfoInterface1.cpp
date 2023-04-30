@@ -111,6 +111,12 @@ void CyInfoPythonInterface1()
 		.def("getHurryCostModifier", &CvUnitInfo::getHurryCostModifier, "int ()")
 		.def("getEuropeCost", &CvUnitInfo::getEuropeCost, "int ()")
 		.def("getEuropeCostIncrease", &CvUnitInfo::getEuropeCostIncrease, "int ()")
+		// WTP, ray, adding Africa Cost and Port Royal Cost also to Python - START
+		.def("getAfricaCost", &CvUnitInfo::getAfricaCost, "int ()")
+		.def("getAfricaCostIncrease", &CvUnitInfo::getAfricaCostIncrease, "int ()")
+		.def("getPortRoyalCost", &CvUnitInfo::getPortRoyalCost, "int ()")
+		.def("getPortRoyalCostIncrease", &CvUnitInfo::getPortRoyalCostIncrease, "int ()")
+		// WTP, ray, adding Africa Cost and Port Royal Cost also to Python - END
 		.def("getImmigrationWeight", &CvUnitInfo::getImmigrationWeight, "int ()")
 		.def("getImmigrationWeightDecay", &CvUnitInfo::getImmigrationWeightDecay, "int ()")
 		.def("getMinAreaSize", &CvUnitInfo::getMinAreaSize, "int ()")

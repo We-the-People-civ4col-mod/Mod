@@ -64,6 +64,18 @@
         <Russian>[ICON_BULLET]Можно купить в Европе</Russian>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_BUYABLE_IN_AFRICA</Tag>
+        <English>[ICON_BULLET]Buyable in Africa</English>
+        <French>[ICON_BULLET]Achetable en Afrika</French>
+        <German>[ICON_BULLET]Kaufbar in Africa</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_BUYABLE_IN_PORT_ROYAL</Tag>
+        <English>[ICON_BULLET]Buyable in Port Royal</English>
+        <French>[ICON_BULLET]Achetable en Port Royal</French>
+        <German>[ICON_BULLET]Kaufbar in Port Royal</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_TAUGHT_BY_NATIVES</Tag>
         <English>[ICON_BULLET]Trained by Natives</English>
         <French>[ICON_BULLET]Formé par les indigènes</French>

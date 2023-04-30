@@ -185,6 +185,10 @@ class CvPediaUnit:
 			szSpecialText += "\n" +	localText.getText("TXT_KEY_UNIT_MIGRATES", ())
 		if gc.getUnitInfo(self.iUnit).getEuropeCost() > 0:
 			szSpecialText += "\n" +	localText.getText("TXT_KEY_UNIT_BUYABLE_IN_EUROPE", ())
+		if gc.getUnitInfo(self.iUnit).getAfricaCost() > 0:
+			szSpecialText += "\n" +	localText.getText("TXT_KEY_UNIT_BUYABLE_IN_AFRICA", ())
+		if gc.getUnitInfo(self.iUnit).getPortRoyalCost() > 0:
+			szSpecialText += "\n" +	localText.getText("TXT_KEY_UNIT_BUYABLE_IN_PORT_ROYAL", ())
 		trainableAtNatives = False
 		for iCiv in range(gc.getNumCivilizationInfos()):
 			if gc.getCivilizationInfo(iCiv).isNative():
