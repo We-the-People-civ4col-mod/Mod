@@ -3482,4 +3482,94 @@
         <English>My lord, in your colonies, the proportion of mixed descendants of European settlers and indigenous population is increasing. A not insignificant proportion in your colonies belongs to this population group.[NEWLINE][NEWLINE]It seems that the mutual dislike of both races is not as great as thought. So it seems only natural that the population develops accordingly.[NEWLINE][NEWLINE]</English>
         <German>Mylord, in Euren Kolonien steigt der Anteil an gemischten Nachkommen von europäischen Siedlern und indigener Bevölkerung. Ein nicht unerheblicher Anteil in Euren Kolonien gehört dieser Bevölkerungsgruppe an. [NEWLINE][NEWLINE]Es scheint, als wäre die gegenseitige Abneigung beider Rassen doch nicht bei allen so groß wie gedacht. Da scheint es nur natürlich zu sein, dass sich die Bevölkerung dementsprechend weiterentwickelt. [NEWLINE][NEWLINE]</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_JUDGES</Tag>
+        <English>Three judges</English>
+        <German>Drei Richter</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_JUDGES_HEAD</Tag>
+        <English>Establishment of a judicial system</English>
+        <German>Aufbau eines Justizsystems</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_JUDGES_TEXT</Tag>
+        <English>My lord, I congratulate you on the ongoing establishment of a working judiciary. A well-organized colony needs a functioning judicial system.[NEWLINE][NEWLINE]You seem to be well on your way to dealing with all the riffraff that have come here to the New World. The problems are the same as in the Old World. Keep order and the king and the good settlers will thank you.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, ich beglückwünsche Euch zu dem fortschreitenden Aufbau einer finktionierenden Justiz. Eine gut organisierte Kolonie braucht ein funktionierendes Justizsystem. [NEWLINE][NEWLINE]Ihr seid offenbar auf einem guten Weg um mit dem ganzen Gesindel fertig zu werden, dass es hier in die Neue Welt verschlagen hat. Die Probleme sind dieselben wie in der Alten Welt. Haltet Ordnung und der König und die braven Siedler werden es Euch danken. [NEWLINE][NEWLINE]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_COLONIAL_INFANTRY</Tag>
+        <English>Fifteen colonial militias</English>
+        <German>Fünfzehn koloniale Milizen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_COLONIAL_INFANTRY_HEAD</Tag>
+        <English>Basic infantry training [NEWLINE]instead of daily labor</English>
+        <German>Grundausbildung statt [NEWLINE]täglicher Arbeit</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_COLONIAL_INFANTRY_TEXT</Tag>
+        <English>Mylord, you have already raised 15 units of colonial militia. The colonies are having to sent more and more of their good and healthy workers to the military. Is that really necessary?  [NEWLINE][NEWLINE]Consider that a large part of these men could also work in workshops or on farms to increase the economic output. The king wants to earn through the colonies instead of always having to put money into them. You should have a good reason for this when asked.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Ihr habt jetzt schon 15 Einheiten Kolonialmiliz aufstellen lassen. Die Kolonien müssen immer mehr ihrer guten und gesunden Arbeiter an das Militär abgeben. Ist das wirklich nötig?  [NEWLINE][NEWLINE]Bedenkt, dass ein Großteil dieser Männer auch in Werkstätten oder auf Farmen arbeiten  könnte, um die Wirtschaftsleistung zu steigern. Der König will durch die Kolonien verdienen anstatt dort nur immer Geld reinstecken zu müssen. Ihr solltet dafür einen guten Grund haben, wenn Ihr gefragt werdet.[NEWLINE][NEWLINE]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_COLONIAL_LINE_INFANTRY</Tag>
+        <English>Fifteen line infantries</English>
+        <German>Fünfzehn Einheiten Linieninfanterie</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_COLONIAL_LINE_INFANTRY_HEAD</Tag>
+        <English>Population in concern</English>
+        <German>Die Bevölkerung in Sorge</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_COLONIAL_LINE_INFANTRY_TEXT</Tag>
+        <English>Mylord, you have already raised 15 units of line infantry. Such a large military is not only expensive, but also increasingly worries the population. Is a war imminent? [NEWLINE][NEWLINE]Well trained Infantry is important to protect your emerging colonies in the New World. The question is whether the colony really needs the troops or whether you should invest the money in other ways. Expansion with the sword should also be well thought out.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Ihr habt jetzt schon 15 Einheiten Linieninfanterie aufstellen lassen. Soviel Militär ist nicht nur teuer, es versetzt die Bevölkerung auch zunehmend in Sorge. Steht etwa ein Krieg bevor? [NEWLINE][NEWLINE]Gut ausgebildete Infanterie ist wichtig zum Schutz Eurer aufstrebenden Kolonien in der Neuen Welt. Die Frage ist, ob die Kolonie die Truppen wirklich benötigt oder Ihr das Geld nicht besser anders investieren solltet. Expansion mit dem Schwert sollte ebenfalls gut durchdacht sein.[NEWLINE][NEWLINE]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_COLONIAL_CAVALRY</Tag>
+        <English>Fifteen mounted units</English>
+        <German>Fünfzehn berittene Einheiten</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_COLONIAL_CAVALRY_HEAD</Tag>
+        <English>Sabers and oats bags</English>
+        <German>Säbel und Hafersäcke</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_COLONIAL_CAVALRY_TEXT</Tag>
+        <English>Mylord, you are obviously a horse lover. You have purchased only the best horses and blank weapons, and equipped a good number of mounted units in the colonies. The horses are now missing, of course, to equip new carriages. But you should know what you are doing.[NEWLINE][NEWLINE]Horses are animals of flight. However, it seems that on short notice these horses will have to suppress this reflex in order to lead their riders into battle. But perhaps this is necessary to protect the colonies and to conquer new territories. Of course, this is much faster from horseback. However, the maintenance is also more expensive.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Ihr seid offensichtlich ein Pferdeliebhaber. Nur die besten Pferde und Blankwaffen habt Ihr angeschafft, und in den Kolonien eine stattliche Anzahl von berittenen Einheiten ausgerüstet. Die Pferde fehlen jetzt natürlich, um neue Fuhrwerke auszurüsten. Aber Ihr werdet schon wissen, was Ihr tut.[NEWLINE][NEWLINE]Pferde sind Fluchttiere. Es scheint allerdings, dass diese Pferde in nicht allzulanger Zeit diesen Reflex unterdrücken müssen, um ihre Reiter in die Schlacht zu führen. Aber vielleicht ist das notwendig, um die Kolonien zu schützen und neue Territorien zu erobern. Das geht vom Pferderücken aus natürlich viel schneller. Allerdings ist der Unterhalt auch teurer. [NEWLINE][NEWLINE]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_COLONIAL_LIGHT_ARTILLERY</Tag>
+        <English>Fifteen light artilleries</English>
+        <German>Fünfzehn leichte Geschütze</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_COLONIAL_LIGHT_ARTILLERY_HEAD</Tag>
+        <English>Protected forts</English>
+        <German>Geschützte Forts</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_COLONIAL_LIGHT_ARTILLERY_TEXT</Tag>
+        <English>Mylord, a city can only be effectively defended with a certain number of light artillery. You have now already acquired quite a lot of them, so that many of our new colonies can be effectively protected.[NEWLINE][NEWLINE]However, light artillery and the equipment for it also takes up a lot of space. In addition, the guns need to be regularly checked and adjusted, and the operating crews need training. In short, artillery is really expensive. Think about that when you buy more guns. After all, it makes the population feel a little safer every time.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, eine Stadt lässt sich nur mit einer gewissen Anzahl von leichten Geschützen wirksam verteidigen. Ihr habt jetzt schon eine ganze Menge davon angeschafft, so dass viele unserer neuen Kolonien wirksam geschützt werden können. [NEWLINE][NEWLINE]Allerdings nehmen Geschütze und die Ausrüstung dafür auch viel Platz weg. Zudem müssen die Geschütze regelmäßig überprüft und gereigt werden und die Bedienungsmannschaften brauchen Training. Kurzum, Artillerie ist wirklich teuer. Denkt daran, wenn Ihr weitere Geschütze anschafft. Immerhin fühlt die Bevölkerung sich damit jedes Mal ein Stückchen sicherer.[NEWLINE][NEWLINE]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_COLONIAL_HEAVY_ARTILLERY</Tag>
+        <English>Fifteen heavy artilleries</English>
+        <German>Fünfzehn schwere Geschütze</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_COLONIAL_HEAVY_ARTILLERY_HEAD</Tag>
+        <English>Iron balls and[NEWLINE] black powder</English>
+        <German>Eisenkugeln und Schwarzpulver</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_COLONIAL_HEAVY_ARTILLERY_TEXT</Tag>
+        <English>Mylord, from what we hear, the king is not thrilled with this buildup of heavy artillery in the colonies. In Europe, there is growing concern - not only among our own king - about what you actually intend to do with it. You don't really need that much heavy artillery to defend a colony, and you'd rather fight the savages with musket and bayonet. [NEWLINE][NEWLINE]So what do you want with it? Which nearby colony do you long for? Or do you even want to defy the king's army? You should decide soon, before someone beats you to it.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, was man hört ist der König von dieser Ansammlung schwerer Artillerie in den Kolonien nicht begeistert. In Europa wächst die Sorge - nicht nur bei unserem eigenen König - was Ihr damit eigentlich vorhabt. So viel schwere Artillerie braucht man eigentlich nicht zur Verteidugung einer Kolonie und die Wilden bekämpft man eher mit Muskete und Bajonett. [NEWLINE][NEWLINE]Was also wollt Ihr damit? Nach welcher nahegelegenen Kolonie gelüstet es Euch? Oder wollt Ihr gar des Königs Armee die Stirn bieten? Ihr solltet Euch bald entscheiden, bevor Euch jemand zuvor kommt.[NEWLINE][NEWLINE]</German>
+	</TEXT>
 </Civ4GameText>
