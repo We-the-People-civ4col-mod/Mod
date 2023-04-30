@@ -2464,7 +2464,7 @@
         <Tag>TXT_KEY_ACHIEVE_SIX_CRIMINALS_HEAD</Tag>
         <English>Land of opportunity</English>
         <French>Six bagnards</French>
-        <German>Land der unbegrenzten Möglichkeiten</German>
+        <German>Land der unbegrenzten [NEWLINE]Möglichkeiten</German>
         <Russian>Земля возможностей</Russian>
     </TEXT>
     <TEXT>
@@ -3571,5 +3571,80 @@
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_HEAVY_ARTILLERY_TEXT</Tag>
         <English>Mylord, from what we hear, the king is not thrilled with this buildup of heavy artillery in the colonies. In Europe, there is growing concern - not only among our own king - about what you actually intend to do with it. You don't really need that much heavy artillery to defend a colony, and you'd rather fight the savages with musket and bayonet. [NEWLINE][NEWLINE]So what do you want with it? Which nearby colony do you long for? Or do you even want to defy the king's army? You should decide soon, before someone beats you to it.[NEWLINE][NEWLINE]</English>
         <German>Mylord, was man hört ist der König von dieser Ansammlung schwerer Artillerie in den Kolonien nicht begeistert. In Europa wächst die Sorge - nicht nur bei unserem eigenen König - was Ihr damit eigentlich vorhabt. So viel schwere Artillerie braucht man eigentlich nicht zur Verteidugung einer Kolonie und die Wilden bekämpft man eher mit Muskete und Bajonett. [NEWLINE][NEWLINE]Was also wollt Ihr damit? Nach welcher nahegelegenen Kolonie gelüstet es Euch? Oder wollt Ihr gar des Königs Armee die Stirn bieten? Ihr solltet Euch bald entscheiden, bevor Euch jemand zuvor kommt.[NEWLINE][NEWLINE]</German>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_RELIGIOUS_ZEALOTS</Tag>
+        <English>Several religious people</English>
+        <German>Mehrere religiöse Eiferer</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_RELIGIOUS_ZEALOTS_HEAD</Tag>
+        <English>Religious zealots</English>
+        <German>Religiöse Eiferer</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_RELIGIOUS_ZEALOTS_TEXT</Tag>
+        <English>Mylord, in the meantime, a wide variety of religious displaced persons have settled in the colonies. Basically, the colonies are open to everyone as long as they work hard for the good of the colonies and do not cause trouble.[NEWLINE][NEWLINE]The only problem is that these people came here to the New World for a reason and they were not wanted in Europe. Take care that they do not make trouble and do nothing more than preach the word of God. If they endanger the welfare of the colonies, you should perhaps part with them again.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, mittlerweile haben sich in den Kolonien verschiedenste religiöse Vertriebene niedergelassen. Grundsätzlich stehen die Kolonien allen offen, solange sie hart für das Wohl der Kolonien arbeiten und keinen Ärger machen.[NEWLINE][NEWLINE]Das Problem ist nur, dass diese Leute aus gutem Grund hier in die neue Welt gekommen sind und man sie in Europa nicht mehr haben wollte. Achtet darauf, dass sie keinen Unfrieden stiften und nichts weiter tun als das Wort Gottes zu predigen. Sollten sie das Wohl der Kolonien gefährden, solltet Ihr Euch vielleicht wieder von Ihnen trennen. [NEWLINE][NEWLINE]</German>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_BISHOP</Tag>
+        <English>The first bishop</English>
+        <German>Der erste Bischoff</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_BISHOP_HEAD</Tag>
+        <English>The chief shepherd for the colony</English>
+        <German>Der oberste Hirte für die Kolonie</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_BISHOP_TEXT</Tag>
+        <English>Mylord, the Church obviously feels that its flock in the New World needs a little more discipline and order. They have sent you a bishop to take over.[NEWLINE][NEWLINE]"The word is credible: whoever aspires to the office of a bishop aspires to a great task. Therefore, let the bishop be blameless, the husband of one wife, sober, prudent, of dignified bearing, hospitable, able to teach; let him not be a drunkard or a violent man, but considerate; let him not be quarrelsome or greedy for money.[NEWLINE][NEWLINE]He must preside well over his own house, educate his children in obedience and all decency. If one cannot preside over his own house, how can he take care of God's church? He must not be a new convert, lest he become haughty and fall into the devil's judgment. But he must also have a good reputation among outsiders, lest he come into ill repute and fall into the devil's trap. [NEWLINE][NEWLINE]</English>
+        <German>Mylord, die Kirche ist offensichtlich der Meinung, dass ihre Schäfchen in der Neuen Welt ein wenig mehr Zucht und Ordnung benötigen. Man hat Euch einen Bischof geschickt, der das übernehmen soll. [NEWLINE][NEWLINE]"Das Wort ist glaubwürdig: Wer das Amt eines Bischofs anstrebt, der strebt nach einer großen Aufgabe. Deshalb soll der Bischof untadelig, Mann einer einzigen Frau, nüchtern, besonnen sein, von würdiger Haltung, gastfreundlich, fähig zu lehren; er sei kein Trinker und kein gewalttätiger Mensch, sondern rücksichtsvoll; er sei nicht streitsüchtig und nicht geldgierig.[NEWLINE][NEWLINE]Er muss seinem eigenen Haus gut vorstehen, seine Kinder in Gehorsam und allem Anstand erziehen. Wenn einer seinem eigenen Haus nicht vorstehen kann, wie soll der für die Kirche Gottes sorgen? Er darf kein Neubekehrter sein, damit er nicht hochmütig wird und dem Gericht des Teufels verfällt. Er muss aber auch bei den Außenstehenden einen guten Ruf haben, damit er nicht in üble Nachrede kommt und in die Falle des Teufels gerät. [NEWLINE][NEWLINE]</German>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_NOBLE</Tag>
+        <English>The third noble</English>
+        <German>Der dritte Edelmann</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_NOBLE_HEAD</Tag>
+        <English>Nobles discover the New World</English>
+        <German>Adlige entdecken die Neue Welt</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_NOBLE_TEXT</Tag>
+        <English>Mylord, it seems that your colonies are so successful that even some nobles are discovering the New World for themselves. Apparently, it is becoming en vogue in Europe to spend some time in the "adventurous" New World or to buy a country house here and organize hunts within sight of Indian camps. Then they have something to report back home.[NEWLINE][NEWLINE]That this place is teeming with hostile natives, wild animals, unbearable climate and who knows what else only dawns on most of them when they stand here without servants and no one hands them the warmed towel or the sherry. Make sure you survive this adventure anyway. They will be very useful to you regarding the administration of your colony.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, es scheint, dass Eure Kolonien so erfolgreich sind, dass mittlerweile sogar etliche Adlige die Neue Welt für sich entdecken. Offenbar wird es in Europa gerade en vogue mal eine Zeit in der "abenteuerreichen" Neuen Welt zu verbringen oder sich hier ein Landhaus zuzulegen und Jagden in Sichtweite von Indianerlagern zu veranstalten. Dann hat man zuhause etwas zu berichten.[NEWLINE][NEWLINE]Dass es hier von feindlichen Ureinwohnern, wilden Tieren, unerträglichem Klima und wert weiß was sonst noch nur so wimmelt, dämmert den meisten erst, wenn sie hier ohne Diener dastehen und keiner ihnen das angewärmte Handtuch oder den Sherry reicht. Sorgt trotzdem dafür, dass dieses Abenteuer überleben. Sie werden Euch sehr nützlich bei der Verwaltung Eurer Kolonie sein.[NEWLINE][NEWLINE]</German>
+	</TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_SETTLER</Tag>
+        <English>The third settler</English>
+        <German>Der dritte Siedlungsgründer</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_SETTLER_HEAD</Tag>
+        <English>Preparations completed</English>
+        <German>Vorbereitungen abgeschlossen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_SETTLER_TEXT</Tag>
+        <English>Mylord, the materials for the new settlement are piling up on the just completed dock and the settlers are ready to leave. What are you waiting for?[NEWLINE][NEWLINE]The longer you wait, the more likely it is that the settlers here in the colony will catch some disease or scatter to the taverns and gambling dens at the harbor. You should get them on their way as soon as possible, so that the best places for a new settlement are not snatched away by the competitors![NEWLINE][NEWLINE]</English>
+        <German>Mylord, auf dem gerade erst fertiggestellten Dock stapeln sich die Materialien für die neue Siedlung und die Siedler sind bereit aufzubrechen. Worauf wartet Ihr denn noch?[NEWLINE][NEWLINE]Je länger Ihr wartet, desto eher stecken sich die Siedler hier in der Kolonie mit irgendwelchen Krankheiten an oder zerstreuen sich in die Wirtshäuser und Spielhöllen am Hafen. Ihr solltet sie möglichst bald auf den Weg bringen, damit Euch die besten Plätze für eine neue Siedlung nicht von der Konkurrenz weggeschnappt werden![NEWLINE][NEWLINE]</German>
+	</TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_PENAL_COLONY</Tag>
+        <English>Twelve criminals</English>
+        <German>Zwölf Kleinkriminelle</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_PENAL_COLONY_HEAD</Tag>
+        <English>Penal colony</English>
+        <German>Strafkolonie</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_PENAL_COLONY_TEXT</Tag>
+        <English>Mylord, the colony is slowly but surely becoming a penal colony. There are currently many criminals in the colony - too many, in fact. The prisons are overcrowded. You should intervene with the king to stop sending you new convicts.[NEWLINE][NEWLINE]In Europe, the problem is quickly solved if you can deport the convicts here, but this may not be conducive to the success of the colony. You should rather increase the hand money for real craftsmen and in order to increase the production of goods![NEWLINE][NEWLINE]</English>
+        <German>Mylord, die Kolonie entwickelt sich langsam aber sicher zu einer Strafkolonie. Es befinden sich derzeit viele Kriminelle in der Kolonie - zu viele, um genau zu sein. Die Gefängnisse sind überfüllt. Ihr solltet beim König intervenieren, Euch keine neuen Sträflinge mehr zu schicken.[NEWLINE][NEWLINE]In Europa ist das Problem schnell gelöst, wenn man die Sträflinge hierher abschieben kann, aber dem Erfolg der Kolonie ist das vielleicht nicht gerade zuträglich. Ihr solltet lieber das Handgeld für echte Handwerker erhöhen und zusehen, dass Ihr die Güterproduktion verstärkt![NEWLINE][NEWLINE]</German>
 	</TEXT>
 </Civ4GameText>

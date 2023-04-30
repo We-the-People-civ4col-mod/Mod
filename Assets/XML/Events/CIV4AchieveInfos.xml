@@ -4240,7 +4240,7 @@
         <PictureFileName>Art/Achievements/missionary.dds</PictureFileName>
         <iPictureX>360</iPictureX>
         <iPictureY>240</iPictureY>
-        <iLowTurnNumber>0</iLowTurnNumber>
+        <iLowTurnNumber>2</iLowTurnNumber>
         <iHighTurnNumber>10000</iHighTurnNumber>
         <bLandDiscovered>0</bLandDiscovered>
         <bDiscoverEast>0</bDiscoverEast>
@@ -4271,7 +4271,7 @@
         <PictureFileName>Art/Achievements/russ_missionary.dds</PictureFileName>
         <iPictureX>360</iPictureX>
         <iPictureY>240</iPictureY>
-        <iLowTurnNumber>0</iLowTurnNumber>
+        <iLowTurnNumber>2</iLowTurnNumber>
         <iHighTurnNumber>10000</iHighTurnNumber>
         <bLandDiscovered>0</bLandDiscovered>
         <bDiscoverEast>0</bDiscoverEast>
@@ -4302,7 +4302,7 @@
         <PictureFileName>Art/Achievements/prot_missionary.dds</PictureFileName>
         <iPictureX>360</iPictureX>
         <iPictureY>240</iPictureY>
-        <iLowTurnNumber>0</iLowTurnNumber>
+        <iLowTurnNumber>2</iLowTurnNumber>
         <iHighTurnNumber>10000</iHighTurnNumber>
         <bLandDiscovered>0</bLandDiscovered>
         <bDiscoverEast>0</bDiscoverEast>
@@ -5259,6 +5259,169 @@
                 <iNumber>15</iNumber>
             </NumProfession>
 	    </NumProfessions>	
+        <YieldProduced/>
+    </AchieveInfo>
+    <AchieveInfo>
+        <Type>ACHIEVE_RELIGIOUS_ZEALOTS</Type>
+        <Description>TXT_KEY_ACHIEVE_RELIGIOUS_ZEALOTS</Description>
+        <bActive>1</bActive>
+        <bAfterMove>0</bAfterMove>
+        <HeaderTextKey>TXT_KEY_ACHIEVE_RELIGIOUS_ZEALOTS_HEAD</HeaderTextKey>
+        <BodyTextKey>TXT_KEY_ACHIEVE_RELIGIOUS_ZEALOTS_TEXT</BodyTextKey>
+        <PictureFileName>Art/Achievements/zealots.dds</PictureFileName>
+        <iPictureX>360</iPictureX>
+        <iPictureY>240</iPictureY>
+        <iLowTurnNumber>0</iLowTurnNumber>
+        <iHighTurnNumber>10000</iHighTurnNumber>
+        <bLandDiscovered>0</bLandDiscovered>
+        <bDiscoverEast>0</bDiscoverEast>
+        <bDiscoverWest>0</bDiscoverWest>
+        <iNumColonies>0</iNumColonies>
+        <iNumEuroContacts>0</iNumEuroContacts>
+        <iNumNativeContacts>0</iNumNativeContacts>
+        <iNumGoodsTraded>-1</iNumGoodsTraded>
+        <iNumCombatsWonNeeded>-1</iNumCombatsWonNeeded>
+        <iNumSeaCombatsWonNeeded>-1</iNumSeaCombatsWonNeeded>
+        <NumBuildings/>
+        <NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_PREACHER</UnitType>
+                <iNumber>5</iNumber>
+            </NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_PRIEST</UnitType>
+                <iNumber>5</iNumber>
+            </NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_RUSSIAN_PRIEST</UnitType>
+                <iNumber>5</iNumber>
+            </NumUnits>
+        </NumUnits>
+        <NumProfessions/>
+        <YieldProduced/>
+    </AchieveInfo>
+    <AchieveInfo>
+        <Type>ACHIEVE_FIRST_BISHOP</Type>
+        <Description>TXT_KEY_ACHIEVE_FIRST_BISHOP</Description>
+        <bActive>1</bActive>
+        <bAfterMove>0</bAfterMove>
+        <HeaderTextKey>TXT_KEY_ACHIEVE_FIRST_BISHOP_HEAD</HeaderTextKey>
+        <BodyTextKey>TXT_KEY_ACHIEVE_FIRST_BISHOP_TEXT</BodyTextKey>
+        <PictureFileName>Art/Achievements/many_crosses.dds</PictureFileName>
+        <iPictureX>360</iPictureX>
+        <iPictureY>240</iPictureY>
+        <iLowTurnNumber>0</iLowTurnNumber>
+        <iHighTurnNumber>10000</iHighTurnNumber>
+        <bLandDiscovered>0</bLandDiscovered>
+        <bDiscoverEast>0</bDiscoverEast>
+        <bDiscoverWest>0</bDiscoverWest>
+        <iNumColonies>0</iNumColonies>
+        <iNumEuroContacts>0</iNumEuroContacts>
+        <iNumNativeContacts>0</iNumNativeContacts>
+        <iNumGoodsTraded>-1</iNumGoodsTraded>
+        <iNumCombatsWonNeeded>-1</iNumCombatsWonNeeded>
+        <iNumSeaCombatsWonNeeded>-1</iNumSeaCombatsWonNeeded>
+        <NumBuildings/>
+        <NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_BISHOP</UnitType>
+                <iNumber>1</iNumber>
+            </NumUnits>
+        </NumUnits>
+        <NumProfessions/>
+        <YieldProduced/>
+    </AchieveInfo>
+    <AchieveInfo>
+        <Type>ACHIEVE_THIRD_NOBLE</Type>
+        <Description>TXT_KEY_ACHIEVE_THIRD_NOBLE</Description>
+        <bActive>1</bActive>
+        <bAfterMove>0</bAfterMove>
+        <HeaderTextKey>TXT_KEY_ACHIEVE_THIRD_NOBLE_HEAD</HeaderTextKey>
+        <BodyTextKey>TXT_KEY_ACHIEVE_THIRD_NOBLE_TEXT</BodyTextKey>
+        <PictureFileName>Art/Achievements/theatre.dds</PictureFileName>
+        <iPictureX>360</iPictureX>
+        <iPictureY>240</iPictureY>
+        <iLowTurnNumber>0</iLowTurnNumber>
+        <iHighTurnNumber>10000</iHighTurnNumber>
+        <bLandDiscovered>0</bLandDiscovered>
+        <bDiscoverEast>0</bDiscoverEast>
+        <bDiscoverWest>0</bDiscoverWest>
+        <iNumColonies>0</iNumColonies>
+        <iNumEuroContacts>0</iNumEuroContacts>
+        <iNumNativeContacts>0</iNumNativeContacts>
+        <iNumGoodsTraded>-1</iNumGoodsTraded>
+        <iNumCombatsWonNeeded>-1</iNumCombatsWonNeeded>
+        <iNumSeaCombatsWonNeeded>-1</iNumSeaCombatsWonNeeded>
+        <NumBuildings/>
+        <NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_NOBLE</UnitType>
+                <iNumber>3</iNumber>
+            </NumUnits>
+        </NumUnits>
+        <NumProfessions/>
+        <YieldProduced/>
+    </AchieveInfo>
+   <AchieveInfo>
+        <Type>ACHIEVE_THIRD_SETTLER</Type>
+        <Description>TXT_KEY_ACHIEVE_THIRD_SETTLER</Description>
+        <bActive>1</bActive>
+        <bAfterMove>0</bAfterMove>
+        <HeaderTextKey>TXT_KEY_ACHIEVE_THIRD_SETTLER_HEAD</HeaderTextKey>
+        <BodyTextKey>TXT_KEY_ACHIEVE_THIRD_SETTLER_TEXT</BodyTextKey>
+        <PictureFileName>Art/Achievements/settler.dds</PictureFileName>
+        <iPictureX>360</iPictureX>
+        <iPictureY>240</iPictureY>
+        <iLowTurnNumber>0</iLowTurnNumber>
+        <iHighTurnNumber>10000</iHighTurnNumber>
+        <bLandDiscovered>0</bLandDiscovered>
+        <bDiscoverEast>0</bDiscoverEast>
+        <bDiscoverWest>0</bDiscoverWest>
+        <iNumColonies>0</iNumColonies>
+        <iNumEuroContacts>0</iNumEuroContacts>
+        <iNumNativeContacts>0</iNumNativeContacts>
+        <iNumGoodsTraded>-1</iNumGoodsTraded>
+        <iNumCombatsWonNeeded>-1</iNumCombatsWonNeeded>
+        <iNumSeaCombatsWonNeeded>-1</iNumSeaCombatsWonNeeded>
+        <NumBuildings/>
+        <NumUnits/>
+        <NumProfessions>
+			<NumProfession>
+                <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                <iNumber>3</iNumber>
+            </NumProfession>
+	    </NumProfessions>	
+        <YieldProduced/>
+    </AchieveInfo>
+    <AchieveInfo>
+        <Type>ACHIEVE_PENAL_COLONY</Type>
+        <Description>TXT_KEY_ACHIEVE_PENAL_COLONY</Description>
+        <bActive>1</bActive>
+        <bAfterMove>0</bAfterMove>
+        <HeaderTextKey>TXT_KEY_ACHIEVE_PENAL_COLONY_HEAD</HeaderTextKey>
+        <BodyTextKey>TXT_KEY_ACHIEVE_PENAL_COLONY_TEXT</BodyTextKey>
+        <PictureFileName>Art/Achievements/jail.dds</PictureFileName>
+        <iPictureX>360</iPictureX>
+        <iPictureY>240</iPictureY>
+        <iLowTurnNumber>0</iLowTurnNumber>
+        <iHighTurnNumber>10000</iHighTurnNumber>
+        <bLandDiscovered>0</bLandDiscovered>
+        <bDiscoverEast>0</bDiscoverEast>
+        <bDiscoverWest>0</bDiscoverWest>
+        <iNumColonies>0</iNumColonies>
+        <iNumEuroContacts>0</iNumEuroContacts>
+        <iNumNativeContacts>0</iNumNativeContacts>
+        <iNumGoodsTraded>-1</iNumGoodsTraded>
+        <iNumCombatsWonNeeded>-1</iNumCombatsWonNeeded>
+        <iNumSeaCombatsWonNeeded>-1</iNumSeaCombatsWonNeeded>
+        <NumBuildings/>
+        <NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_CRIMINAL</UnitType>
+                <iNumber>12</iNumber>
+            </NumUnits>
+        </NumUnits>
+        <NumProfessions/>
         <YieldProduced/>
     </AchieveInfo>
 </Civ4AchieveInfos>
