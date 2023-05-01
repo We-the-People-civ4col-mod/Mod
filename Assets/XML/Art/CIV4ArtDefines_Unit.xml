@@ -3444,10 +3444,10 @@
             <Type>ART_DEF_UNIT_ORCA</Type>
             <Button>,Art/colonization_atlas_units.dds,2,15</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
-            <fScale>20.0</fScale>
+            <fScale>0.5</fScale>
             <fInterfaceScale>1</fInterfaceScale>
             <NIF>Art/Units/Wild_Animals/orca/orca.nif</NIF>
-            <KFM/>
+            <KFM>Art/Units/Wild_Animals/shark/shark.kfm</KFM>
             <TrailDefinition>
                 <Texture>Art/Shared/water_ship_wake.dds</Texture>
                 <fWidth>1</fWidth>
@@ -3475,10 +3475,10 @@
             <Type>ART_DEF_UNIT_GREATWHITE</Type>
             <Button>,Art/colonization_atlas_units.dds,5,14</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
-            <fScale>8.0</fScale>
+            <fScale>0.5</fScale>
             <fInterfaceScale>1</fInterfaceScale>
-            <NIF>Art/Units/Wild_Animals/Greatwhite/Greatwhite.nif</NIF>
-            <KFM/>
+            <NIF>Art/Units/Wild_Animals/shark/shark.nif</NIF>
+            <KFM>Art/Units/Wild_Animals/shark/shark.kfm</KFM>
             <TrailDefinition>
                 <Texture>Art/Shared/water_ship_wake.dds</Texture>
                 <fWidth>1</fWidth>
@@ -3492,8 +3492,8 @@
             <bSmoothMove>1</bSmoothMove>
             <fAngleInterpRate>720.0</fAngleInterpRate>
             <fBankRate>.4</fBankRate>
-            <fExchangeAngle>25.0</fExchangeAngle>
-            <bActAsRanged>1</bActAsRanged>
+            <fExchangeAngle>0.0</fExchangeAngle>
+            <bActAsRanged>0</bActAsRanged>
             <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
             <AudioRunSounds>
                 <AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
