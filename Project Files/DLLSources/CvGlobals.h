@@ -1007,7 +1007,6 @@ public:
 	void setCityCatchmentRadius(int iSetting);
 
 	bool isMainThread() const;
-	void TestDLLLocation() const;
 
 	ProfilerManager& getProfiler() { return m_ProfileManager; }
 
@@ -2840,7 +2839,6 @@ inline int CvGlobals::getCITY_HOME_PLOT()
 inline void CvGlobals::setDLLIFace(CvDLLUtilityIFaceBase* pDll)
 {
 	m_pDLL = pDll;
-	TestDLLLocation();
 }
 
 inline int CvGlobals::getNUM_ENGINE_DIRTY_BITS() const

@@ -21,4 +21,30 @@ In general, this means arguments are named %d (number) and %s (string). No numbe
         <Tag>TXT_KEY_ALERT_XML_ERROR</Tag>
         <English>XML READ ERROR</English>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ALERT_MOD_IN_DOCUMENTS_HEADER</Tag>
+        <English>Invalid Mod install location</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ALERT_MOD_IN_DOCUMENTS</Tag>
+        <English>This mod doesn't work correctly when installed in My Documents.
+Please move it to Mods in the game directory.
+See Readme for more details.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ALERT_CONFIGURATION_ERROR_HEADER</Tag>
+        <English>Configuration error</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ALERT_CONFIGURATION_ERROR</Tag>
+        <English>The game tried to set AllowPublicMaps to 0 in %s. Something went wrong while doing so and now it's possible that incompatible public maps can be selected ingame. Please manually open this file and set AllowPublicMaps = 0 Restart the game once this is done.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ALERT_PUBLIC_MAPS_DISABLED_HEADER</Tag>
+        <English>Restart required</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ALERT_PUBLIC_MAPS_DISABLED</Tag>
+        <English>The mod has changed configuration to remove known incompatible maps from the menus. Please restart the game for the new settings to take effect. Do you want to quit now?</English>
+    </TEXT>
 </Civ4GameText>

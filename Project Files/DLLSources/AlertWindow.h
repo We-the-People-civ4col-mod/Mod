@@ -23,6 +23,7 @@ public:
 			clickedYes = IDYES,
 		};
 		returnTypes() : var(clickedOK) {}
+		returnTypes(enumTypes newVar) : var(newVar) {}
 
 		enumTypes getVar() { return var; }
 	protected:
@@ -79,42 +80,15 @@ public:
 	void setButtonLayout(Buttons eButtons);
 	void setIcon(iconTypes eIcon);
 
+	void addArgument(const char* argument);
+	void setMessageArguments(int i1, int i2 = 0, int i3 = 0, int i4 = 0, int i5 = 0);
+
+	void lookupKeys();
+
 	CvString header;
 	CvString message;
 
-	template <typename T1>
-	void setMessageArguments(T1 a1)
-	{
-		lookupKeys();
-		message = CvString::format(message, a1);
-	}
-	template <typename T1, typename T2>
-	void setMessageArguments(T1 a1, T2 a2)
-	{
-		lookupKeys();
-		message = CvString::format(message, a1, a2);
-	}
-	template <typename T1, typename T2, typename T3>
-	void setMessageArguments(T1 a1, T2 a2, T3 a3)
-	{
-		lookupKeys();
-		message = CvString::format(message, a1, a2, a3);
-	}
-	template <typename T1, typename T2, typename T3, typename T4>
-	void setMessageArguments(T1 a1, T2 a2, T3 a3, T4 a4)
-	{
-		lookupKeys();
-		message = CvString::format(message, a1, a2, a3, a4);
-	}
-	template <typename T1, typename T2, typename T3, typename T4, typename T5>
-	void setMessageArguments(T1 a1, T2 a2, T3 a3, T4 a4, T5 a5)
-	{
-		lookupKeys();
-		message = CvString::format(message, a1, a2, a3, a4, a5);
-	}
-
 protected:
-	void lookupKeys();
 	bool m_bKeysLookedup;
 	int m_iDefaultButton;
 	iconTypes m_Icon;

@@ -21,6 +21,7 @@
 #include "FVariableSystem.h"
 #include "CvInitCore.h"
 #include "UserSettings.h"
+#include "StartupErrorChecking.h"
 
 #include <stdlib.h>
 
@@ -405,6 +406,7 @@ CvGlobals::~CvGlobals()
 //
 void CvGlobals::init()
 {
+	StartupCheck::GlobalInitXMLCheck();
 	//
 	// These vars are used to initialize the globals.
 	//
@@ -3155,34 +3157,6 @@ void CvGlobals::cleanInfoStrings()
 				(*m_aInfoVectors[i])[j]->cleanStrings();
 			}
 		}
-	}
-}
-
-static std::string GetCurrentDirectory(bool bLoadDLLPath)
-{
-	char buffer[MAX_PATH];
-	GetModuleFileNameA(bLoadDLLPath ? GetModuleHandle(_T("CvGameCoreDLL.dll")) : NULL, buffer, MAX_PATH);
-	std::string::size_type pos = std::string(buffer).find_last_of("\\/");
-
-	return std::string(buffer).substr(0, pos);
-}
-
-void CvGlobals::TestDLLLocation() const
-{
-	std::string name_exe = GetCurrentDirectory(false);
-	std::string name_dll = GetCurrentDirectory(true);
-	name_dll.resize(name_exe.size());
-
-	if (name_exe != name_dll)
-	{
-		char szMessage[1024];
-
-		// TODO: figure out if this can be translated even through the text xml files haven't been read yet.
-		CvString message = "This mod doesn't work correctly when installed in My Documents.\nPlease move it to Mods in the game directory.\nSee install instructions.txt for more details.";
-		CvString header = "Invalid Mod install location";
-
-		sprintf(szMessage, message);
-		gDLL->MessageBox(szMessage, header);
 	}
 }
 

@@ -478,6 +478,9 @@
     <ClCompile Include="DLLSources\AlertWindow.cpp">
       <Filter>Misc\CPP</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\StartupErrorChecking.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
@@ -914,6 +917,9 @@
     </ClInclude>
     <ClInclude Include="DLLSources\AlertWindow.h">
       <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\StartupErrorChecking.h">
+      <Filter>CV\Header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -108,8 +108,36 @@ void testStringCompare(tinyxml2::XMLElement* tagElement, CvString& str, const TC
 	}
 }
 
+
+void AlertWindow::addArgument(const char* argument)
+{
+	lookupKeys();
+	const size_t pos = message.find("%s");
+	if (pos == std::string::npos)
+	{
+		// should be an alert window?
+		FAssertMsg(false, "AlertWindow::addArgument called on string without %s");
+		return;
+	}
+
+	message = message.replace(pos, pos + 1, argument);
+}
+
+void AlertWindow::setMessageArguments(int i1, int i2, int i3, int i4, int i5)
+{
+	lookupKeys();
+	message = CvString::format(message, i1, i2, i3, i4, i5);
+}
+
  void AlertWindow::lookupKeys()
 {
+	 FAssertMsg(header.length() > 0 && message.length() > 0, "lookupKeys called prior to setting the keys");
+	 if (m_bKeysLookedup)
+	 {
+		 // no need to look up the keys multiple times
+		 return;
+	 }
+
 	m_bKeysLookedup = true;
 
 	std::string filePath = GetDLLPath();

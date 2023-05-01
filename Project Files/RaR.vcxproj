@@ -98,6 +98,7 @@
     <ClCompile Include="DLLSources\EXE_interface.cpp" />
     <ClCompile Include="DLLSources\KmodPathFinder.cpp" />
     <ClCompile Include="DLLSources\Profile.cpp" />
+    <ClCompile Include="DLLSources\StartupErrorChecking.cpp" />
     <ClCompile Include="DLLSources\TestEnumMap.cpp" />
     <ClCompile Include="DLLSources\CvPlotFunctions.cpp" />
     <ClCompile Include="DLLSources\CvAreaSavegame.cpp" />
@@ -374,6 +375,7 @@
     <ClInclude Include="DLLSources\JustInTimeArray.h" />
     <ClInclude Include="DLLSources\LinkedList.h" />
     <ClInclude Include="DLLSources\resource.h" />
+    <ClInclude Include="DLLSources\StartupErrorChecking.h" />
     <ClInclude Include="DLLSources\tinyxml2.h" />
     <ClInclude Include="DLLSources\UserSettings.h" />
     <ClInclude Include="DLLSources\xmlFiles.h" />
