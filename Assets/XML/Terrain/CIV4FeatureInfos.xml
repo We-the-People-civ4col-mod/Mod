@@ -901,8 +901,8 @@
                 </FootstepSound>
             </FootstepSounds>
             <WorldSoundscapeAudioScript>ASSS_MARSH_SELECT_AMB</WorldSoundscapeAudioScript>
-            <EffectType>EFFECT_BIRDSCATTER</EffectType>
-            <iEffectProbability>15</iEffectProbability>
+            <EffectType>NONE</EffectType>
+            <iEffectProbability>0</iEffectProbability>
             <iAdvancedStartRemoveCost>40</iAdvancedStartRemoveCost>
         </FeatureInfo>
         <FeatureInfo>
@@ -1135,8 +1135,8 @@
                 </FootstepSound>
             </FootstepSounds>
             <WorldSoundscapeAudioScript>ASSS_MARSH_SELECT_AMB</WorldSoundscapeAudioScript>
-            <EffectType>EFFECT_BIRDSCATTER</EffectType>
-            <iEffectProbability>15</iEffectProbability>
+            <EffectType>NONE</EffectType>
+            <iEffectProbability>0</iEffectProbability>
             <iAdvancedStartRemoveCost>40</iAdvancedStartRemoveCost>
         </FeatureInfo>
         <FeatureInfo>
@@ -1252,8 +1252,8 @@
                 </FootstepSound>
             </FootstepSounds>
             <WorldSoundscapeAudioScript>ASSS_STORM_SELECT_AMB</WorldSoundscapeAudioScript>
-            <EffectType>EFFECT_BIRDSCATTER</EffectType>
-            <iEffectProbability>15</iEffectProbability>
+            <EffectType>NONE</EffectType>
+            <iEffectProbability>0</iEffectProbability>
             <iAdvancedStartRemoveCost>40</iAdvancedStartRemoveCost>
         </FeatureInfo>
         <FeatureInfo>
@@ -1358,8 +1358,8 @@
                 </FootstepSound>
             </FootstepSounds>
             <WorldSoundscapeAudioScript>ASSS_STORM_SELECT_AMB</WorldSoundscapeAudioScript>
-            <EffectType>EFFECT_BIRDSCATTER</EffectType>
-            <iEffectProbability>15</iEffectProbability>
+            <EffectType>NONE</EffectType>
+            <iEffectProbability>0</iEffectProbability>
             <iAdvancedStartRemoveCost>40</iAdvancedStartRemoveCost>
         </FeatureInfo>
         <FeatureInfo>
@@ -1464,8 +1464,8 @@
                 </FootstepSound>
             </FootstepSounds>
             <WorldSoundscapeAudioScript>ASSS_STORM_SELECT_AMB</WorldSoundscapeAudioScript>
-            <EffectType>EFFECT_BIRDSCATTER</EffectType>
-            <iEffectProbability>15</iEffectProbability>
+            <EffectType>NONE</EffectType>
+            <iEffectProbability>0</iEffectProbability>
             <iAdvancedStartRemoveCost>40</iAdvancedStartRemoveCost>
         </FeatureInfo>
         <FeatureInfo>
@@ -1570,8 +1570,8 @@
                 </FootstepSound>
             </FootstepSounds>
             <WorldSoundscapeAudioScript>ASSS_STORM_SELECT_AMB</WorldSoundscapeAudioScript>
-            <EffectType>EFFECT_BIRDSCATTER</EffectType>
-            <iEffectProbability>15</iEffectProbability>
+            <EffectType>NONE</EffectType>
+            <iEffectProbability>0</iEffectProbability>
             <iAdvancedStartRemoveCost>40</iAdvancedStartRemoveCost>
         </FeatureInfo>
         <FeatureInfo>
@@ -1692,8 +1692,8 @@
                 </FootstepSound>
             </FootstepSounds>
             <WorldSoundscapeAudioScript>ASSS_DESERT_SELECT_AMB</WorldSoundscapeAudioScript>
-            <EffectType>EFFECT_BIRDSCATTER</EffectType>
-            <iEffectProbability>15</iEffectProbability>
+            <EffectType>NONE</EffectType>
+            <iEffectProbability>0</iEffectProbability>
             <iAdvancedStartRemoveCost>40</iAdvancedStartRemoveCost>
         </FeatureInfo>
         <FeatureInfo>
@@ -1898,8 +1898,8 @@
                 </FootstepSound>
             </FootstepSounds>
             <WorldSoundscapeAudioScript>ASSS_DESERT_SELECT_AMB</WorldSoundscapeAudioScript>
-            <EffectType>EFFECT_BIRDSCATTER</EffectType>
-            <iEffectProbability>15</iEffectProbability>
+            <EffectType>NONE</EffectType>
+            <iEffectProbability>0</iEffectProbability>
             <iAdvancedStartRemoveCost>40</iAdvancedStartRemoveCost>
         </FeatureInfo>
         <FeatureInfo>
@@ -3554,8 +3554,8 @@
                 </FootstepSound>
             </FootstepSounds>
             <WorldSoundscapeAudioScript>ASSS_PLAINS_SELECT_AMB</WorldSoundscapeAudioScript>
-            <EffectType>EFFECT_BIRDSCATTER</EffectType>
-            <iEffectProbability>15</iEffectProbability>
+            <EffectType>NONE</EffectType>
+            <iEffectProbability>0</iEffectProbability>
             <iAdvancedStartRemoveCost>0</iAdvancedStartRemoveCost>
         </FeatureInfo>
         <FeatureInfo>
@@ -3777,8 +3777,8 @@
                 </FootstepSound>
             </FootstepSounds>
             <WorldSoundscapeAudioScript>ASSS_PLAINS_SELECT_AMB</WorldSoundscapeAudioScript>
-            <EffectType>EFFECT_BIRDSCATTER</EffectType>
-            <iEffectProbability>15</iEffectProbability>
+            <EffectType>NONE</EffectType>
+            <iEffectProbability>0</iEffectProbability>
             <iAdvancedStartRemoveCost>0</iAdvancedStartRemoveCost>
         </FeatureInfo>
         <FeatureInfo>
@@ -3972,8 +3972,8 @@
                 </FootstepSound>
             </FootstepSounds>
             <WorldSoundscapeAudioScript>ASSS_PLAINS_SELECT_AMB</WorldSoundscapeAudioScript>
-            <EffectType>EFFECT_BIRDSCATTER</EffectType>
-            <iEffectProbability>15</iEffectProbability>
+            <EffectType>NONE</EffectType>
+            <iEffectProbability>0</iEffectProbability>
             <iAdvancedStartRemoveCost>0</iAdvancedStartRemoveCost>
         </FeatureInfo>
         <FeatureInfo>
@@ -4087,8 +4087,8 @@
                 </FootstepSound>
             </FootstepSounds>
             <WorldSoundscapeAudioScript>ASSS_MARSH_SELECT_AMB</WorldSoundscapeAudioScript>
-            <EffectType>EFFECT_BIRDSCATTER</EffectType>
-            <iEffectProbability>15</iEffectProbability>
+            <EffectType>NONE</EffectType>
+            <iEffectProbability>0</iEffectProbability>
             <iAdvancedStartRemoveCost>0</iAdvancedStartRemoveCost>
         </FeatureInfo>
         <FeatureInfo>
@@ -4206,8 +4206,8 @@
                 </FootstepSound>
             </FootstepSounds>
             <WorldSoundscapeAudioScript>ASSS_MARSH_SELECT_AMB</WorldSoundscapeAudioScript>
-            <EffectType>EFFECT_BIRDSCATTER</EffectType>
-            <iEffectProbability>15</iEffectProbability>
+            <EffectType>NONE</EffectType>
+            <iEffectProbability>0</iEffectProbability>
             <iAdvancedStartRemoveCost>0</iAdvancedStartRemoveCost>
         </FeatureInfo>
         <FeatureInfo>
@@ -4309,8 +4309,8 @@
                 </FootstepSound>
             </FootstepSounds>
             <WorldSoundscapeAudioScript>ASSS_DESERT_SELECT_AMB</WorldSoundscapeAudioScript>
-            <EffectType>EFFECT_BIRDSCATTER</EffectType>
-            <iEffectProbability>15</iEffectProbability>
+            <EffectType>NONE</EffectType>
+            <iEffectProbability>0</iEffectProbability>
             <iAdvancedStartRemoveCost>0</iAdvancedStartRemoveCost>
         </FeatureInfo>
         <FeatureInfo>
@@ -4412,8 +4412,8 @@
                 </FootstepSound>
             </FootstepSounds>
             <WorldSoundscapeAudioScript>ASSS_DESERT_SELECT_AMB</WorldSoundscapeAudioScript>
-            <EffectType>EFFECT_BIRDSCATTER</EffectType>
-            <iEffectProbability>15</iEffectProbability>
+            <EffectType>NONE</EffectType>
+            <iEffectProbability>0</iEffectProbability>
             <iAdvancedStartRemoveCost>0</iAdvancedStartRemoveCost>
         </FeatureInfo>
         <FeatureInfo>
@@ -4515,8 +4515,8 @@
                 </FootstepSound>
             </FootstepSounds>
             <WorldSoundscapeAudioScript>ASSS_DESERT_SELECT_AMB</WorldSoundscapeAudioScript>
-            <EffectType>EFFECT_BIRDSCATTER</EffectType>
-            <iEffectProbability>15</iEffectProbability>
+            <EffectType>NONE</EffectType>
+            <iEffectProbability>0</iEffectProbability>
             <iAdvancedStartRemoveCost>0</iAdvancedStartRemoveCost>
         </FeatureInfo>
         <FeatureInfo>
@@ -4618,8 +4618,8 @@
                 </FootstepSound>
             </FootstepSounds>
             <WorldSoundscapeAudioScript>ASSS_DESERT_SELECT_AMB</WorldSoundscapeAudioScript>
-            <EffectType>EFFECT_BIRDSCATTER</EffectType>
-            <iEffectProbability>15</iEffectProbability>
+            <EffectType>NONE</EffectType>
+            <iEffectProbability>0</iEffectProbability>
             <iAdvancedStartRemoveCost>0</iAdvancedStartRemoveCost>
         </FeatureInfo>
         <FeatureInfo>
@@ -4849,8 +4849,8 @@
                 </FootstepSound>
             </FootstepSounds>
             <WorldSoundscapeAudioScript>ASSS_DESERT_SELECT_AMB</WorldSoundscapeAudioScript>
-            <EffectType>EFFECT_BIRDSCATTER</EffectType>
-            <iEffectProbability>15</iEffectProbability>
+            <EffectType>NONE</EffectType>
+            <iEffectProbability>0</iEffectProbability>
             <iAdvancedStartRemoveCost>0</iAdvancedStartRemoveCost>
         </FeatureInfo>
         <FeatureInfo>
@@ -6403,8 +6403,8 @@
                 </FootstepSound>
             </FootstepSounds>
             <WorldSoundscapeAudioScript>ASSS_WIND_SELECT_AMB</WorldSoundscapeAudioScript>
-            <EffectType>EFFECT_BIRDSCATTER</EffectType>
-            <iEffectProbability>15</iEffectProbability>
+            <EffectType>NONE</EffectType>
+            <iEffectProbability>0</iEffectProbability>
             <iAdvancedStartRemoveCost>0</iAdvancedStartRemoveCost>
         </FeatureInfo>
         <FeatureInfo>
