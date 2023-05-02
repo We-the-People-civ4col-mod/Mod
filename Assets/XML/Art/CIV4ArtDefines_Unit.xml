@@ -3525,20 +3525,20 @@
             <Type>ART_DEF_UNIT_ALLIGATOR</Type>
             <Button>,Art/colonization_atlas_units.dds,4,14</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
-            <fScale>13.0</fScale>
+            <fScale>2.0</fScale>
             <fInterfaceScale>1</fInterfaceScale>
             <NIF>Art/Units/Wild_Animals/Gator/Gator.nif</NIF>
-            <KFM/>
+            <KFM>Art/Units/Wild_Animals/Gator/Gator.kfm</KFM>
             <fBattleDistance>1.1</fBattleDistance>
             <fRangedDeathTime>0.35</fRangedDeathTime>
-            <bActAsRanged>1</bActAsRanged>
+            <bActAsRanged>0</bActAsRanged>
             <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
             <AudioRunSounds>
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
-            <SelectionSound>AS3D_UN_SEA_SERPENT</SelectionSound>
-            <ActionSound>AS3D_UN_SEA_SERPENT</ActionSound>
+            <SelectionSound>AS3D_UN_GATOR_IDLE</SelectionSound>
+            <ActionSound>AS3D_UN_GATOR_IDLE</ActionSound>
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_JAGUAR</Type>
