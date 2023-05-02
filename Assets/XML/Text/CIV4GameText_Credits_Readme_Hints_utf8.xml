@@ -9,41 +9,49 @@
 		<Tag>TXT_KEY_CREDITS_BUTTON</Tag>
 		<English>WTP - Credits</English>
 		<French>WTP - Crédits</French>
+		<Russian>WTP - Спасибо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_HEAD</Tag>
 		<English>We The People - Credits</English>
 		<French>We The People - Crédits</French>
+		<Russian>We The People - Благодарности</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_WTP</Tag>
 		<English>[H1]"We The People" (WTP)[\H1]</English>
+		<Russian>[H1]Команда "We The People" (WTP)[\H1]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_SPECIAL</Tag>
 		<English>[H1]Special Credits[\H1]</English>
 		<German>[H1]Besonderen Dank[\H1]</German>
 		<Spanish>[H1]Agradecimientos Especiales[\H1]</Spanish>
+		<Russian>[H1]Особая благодарность[\H1]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_RAR</Tag>
-		<English>[H1]"Religion and Revolution" (RaR)[\H1] has been developed by an international mod-team at CivFanatics.[NEWLINE]Visit us here: http://forums.civfanatics.com/forumdisplay.php?f=455</English>
-		<French>[H1]"Religion and Revolution" (RaR)[\H1]a été développé par une équipe internationale de moddeurs sur le site de CivFanatics. Venez nous rendre visite ici: http://forums.civfanatics.com/forumdisplay.php?f=455[NEWLINE]</French>
+		<English>[H1]"Religion and Revolution" (RaR)[\H1] has been developed by an international mod-team at CivFanatics.</English>
+		<French>[H1]"Religion and Revolution" (RaR)[\H1]a été développé par une équipe internationale de moddeurs sur le site de CivFanatics.</French>
+		<Russian>[H1]"Religion and Revolution" (RaR)[\H1] разработаный международной командой моддеров CivFanatics</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_TAC</Tag>
 		<English>[H1]Special Credits to "The Authentic Colonization" (TAC), including former members:[\H1]</English>
 		<French>[H1]Nous tenons à remercier tout particulièrementles membres de l'équipe de développement du mod TAC ("The Authentic Colonization") y compris les anciens membres[\H1]</French>
+		<Russian>[H1]Особенная благодарность команде "The Authentic Colonization" (TAC), включая бывших участников:[\H1]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_MUSIC</Tag>
 		<English>[H1]Special Credits for our Soundtrack to Rene Osmanczyk who allowed us to use his fantastic work.[\H1]</English>
 		<French>[H1]Nous remercions chaleureusement Rene Osmanczyk pour a bande-son extraordinaire.[\H1]</French>
+		<Russian>[H1]Особая благодарность за наш саундтрек Rene Osmanczyk, который позволил нам использовать его фантастическую работу.[\H1]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_OTHER_PROJECTS</Tag>
 		<English>[H1]Credits to artists, modders and projects for work included:[\H1]</English>
 		<French>[H1]Nous remercions aussi les artistes, moddeurs ou projets dont les travaux ont été inclus:[\H1]</French>
+		<Russian>[H1]Наша благодарность художникам, моддерам и сторонникам за их работу:[\H1]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_OTHER_PROJECTS_TAC</Tag>
@@ -89,25 +97,45 @@
 [ICON_BULLET] L'équipe de Fall for Heaven (graphismes du désert)
 [ICON_BULLET] Marry Harrsch (photo)
 [ICON_BULLET] Aeterna (Traduction française)</French>
+		<Russian>[H1]Отдельная благодарность другим художникам, моддерам и сторонникам за их работу, включенную в TAC:[\H1]
+[ICON_BULLET] Netbandit (Netbandit's balance MOD)
+[ICON_BULLET] Dale (Age of Discovery II; Достижения v1.00)
+[ICON_BULLET] cgtextures.com (текстуры)
+[ICON_BULLET] the_suebian (рисунки заднего плана)
+[ICON_BULLET] cephalo (скрипт Faire Weather)
+[ICON_BULLET] ledat (скрипт Hemispherical)
+[ICON_BULLET] Ekmek (лидеры)
+[ICON_BULLET] Mangammal (модели лидеров)
+[ICON_BULLET] Aymerick (рисунки плантации, части китобойного промысла, части планирования маршрута)
+[ICON_BULLET] Deliverator &amp; BLU-Mod-Team (юниты)
+[ICON_BULLET] oleg153 (рисунки юнитов)
+[ICON_BULLET] charle88 (рисунки юнитов)
+[ICON_BULLET] Kailric (рисунки юнитов, части китобойного промысла)
+[ICON_BULLET] jdog5000 (кодирование поведения ИИ)
+[ICON_BULLET] hrochland (рисунки торнадо)
+[ICON_BULLET] Fierabras (события "торнадо" и "вулкан")
+[ICON_BULLET] Kissa (рисунки гор)
+[ICON_BULLET] Team of Fall for Heaven (рисунки пустыни)
+[ICON_BULLET] Marry Harrsch (фотографии)
+[ICON_BULLET] Aeterna (перевод на фрацузский)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_END</Tag>
 		<English>And we don't want to forget to thank Firaxis and 2Kgames for their masterpiece Civ4/BtS. We use a lot of material from these games.[NEWLINE]
-The copyright of these materials belongs to the respective owners. In most cases we got permission to use their materials but in some cases we didn't. We ask these authors to contact us as to whether we can use their material. The copyright of the changes the TAC team has done to these materials belongs to TAC. The copyright of changes the RaR team has done to these materials belongs to RaR.[NEWLINE]
+The copyright of these materials belongs to the respective owners. In most cases we got permission to use their materials but in some cases we didn't. We ask these authors to contact us as to whether we can use their material. The copyright of the changes the TAC team has done to these materials belongs to TAC. The copyright of changes the RaR team has done to these materials belongs to RaR. The copyright of changes the WtP team has done to these materials belongs to WtP.[NEWLINE]
 The copyright of "Sid Meier's Civilisation IV: Colonization" belongs to Take Two Interactive. Sid Meier's Civilization IV: Colonization, Civ, Civilization, 2K Games, the 2K-Logo, Firaxis Games, the Firaxis game logo and Take-Two Interactive Software are registered trademarks of Take-Two Interactive Software, Inc. Developed by Firaxis Games.[NEWLINE]
 Some textures on our 3D-models have been created with images from CGTextures.com. These images may not be redistributed by default. Please visit www.cgtextures.com for more information.[NEWLINE]
 RaR is a non-commercial mod project. If you use or distribute RaR please pay attention to the copyright. We allow usage and distribution as long as RaR remains non-commercial.[NEWLINE]
 As a matter of course it is permitted to use RaR in an own mod project as long as the copyrights are not harmed, and it remains a non-commercial project. If you use RaR in an own mod project you have to make clear that you have done changes to the original TAC and to RaR. If you wish to use artwork, we could give you more information about the creators so that you can mention them in the credits of your own modification.[NEWLINE]
-You can contact TAC via civforum http://www.civforum.de/showthread.php?t=56991 or via email to writing.bull@gmx.de.[NEWLINE]
-You can contact RaR at CivFanatics: http://forums.civfanatics.com/forumdisplay.php?f=455[NEWLINE][NEWLINE]</English>
+You can contact TAC, RaR and WtP via CivFanatics forum (you will find the link in the readme file) or via email to writing.bull@gmx.de.[NEWLINE][NEWLINE]</English>
 		<French>Et nous n'oublions pas de remercier Firaxis et 2Kgames pour leur chef d'oeuvre Civ4/BtS. De nombreux éléments ont été repris de ces jeux.[NEWLINE]
-Les droits de reproduction de ces éléments appartiennent à leurs propriétaires respectifs. Dans la plupart des cas nous avons eu l'autorisation de les utiliser, sauf exception. Nous remercions les propriétaires de nous contacter pour nous donner ou non cette autorisation. Les droits liés à l'utilisation de TAC appartiennent à l'équipe de TAC. Les droits liés à l'utilisation de RAR appartiennent à l'équipe de RAR.[NEWLINE]
+Les droits de reproduction de ces éléments appartiennent à leurs propriétaires respectifs. Dans la plupart des cas nous avons eu l'autorisation de les utiliser, sauf exception. Nous remercions les propriétaires de nous contacter pour nous donner ou non cette autorisation. Les droits liés à l'utilisation de TAC appartiennent à l'équipe de TAC. Les droits liés à l'utilisation de RAR appartiennent à l'équipe de RAR. Les droits liés à l'utilisation de WtP appartiennent à l'équipe de WtP.[NEWLINE]
 Les droits de reproduction de "Sid Meier's Civilisation IV: Colonization" appartiennent à Take Two Interactive. Sid Meier's Civilization IV: Colonization, Civ, Civilization, 2K Games, the 2K-Logo, Firaxis Games, the Firaxis game logo and Take-Two Interactive Software sont des marques déposées de Take-Two Interactive Software, Inc. Developé par Firaxis Games.[NEWLINE]
 Quelques textures de nos modèles 3D ont été créées avec des images de CGTextures.com. Ces images ne sont pas redistribuées par défaut. Merci de visiter www.cgtextures.com pour plus d'information.[NEWLINE]
 RaR est un projet à but non commercial. Si vous utilisez ou distribuez RaR, merci de faire attention à ces droits de reproduction. Nous autorisons l'utilisation et la distribution qu'à la condition que RaR reste à usage non-commercial.[NEWLINE]
 Il est par ailleurs permis d'utiliser RAR pour d'autres projets de mods à la condition que les droits de reproduction soient respectés, et s'il s'agit également de projets non-commerciaux. Si vous utilisez RaR pour un projet personnel, vous devez spécifier qu'il s'agit d'une version modifiée des projets TAC et RaR. Si vous souhaitez utiliser des graphismes, nous pouvons vous donner plus d'informations sur leurs créateurs de façon à les mentionner dans vos crédits.[NEWLINE]
-Vous pouvez contacter TAC via le site "civforum" : http://www.civforum.de/showthread.php?t=56991 ; ou par e-mail : writing.bull@gmx.de.[NEWLINE]
-Vous pouvez contacter RaR via le site "CivFanatics" : http://forums.civfanatics.com/forumdisplay.php?f=455[NEWLINE][NEWLINE]</French>
+Vous pouvez contacter TAC, RaR et WtP via le site "CivFanatics forum" (vous trouverez le lien dans le fichier readme) ; ou par e-mail : writing.bull@gmx.de.</French>
+		<Russian>Мы также благодарны Firaxis и 2Kgames за их шедевр Civ4/BtS. Мы используем много материала из этих игр.[NEWLINE]Авторские права на эти материалы принадлежат соответствующим правообладателям. В большинстве случаев мы получили разрешение на использование их материалов, но в некоторых случаях мы этого не сделали. Мы просим этих авторов связаться с нами, чтобы узнать, можем ли мы использовать их материалы. Авторские права на изменения, внесенные командой TAC в эти материалы, принадлежат TAC. Авторские права на изменения, внесенные командой RaR в эти материалы, принадлежат RaR.Авторские права на изменения, внесенные командой WtP в эти материалы, принадлежат WtP.[NEWLINE]Авторские права на "Sid Meier's Civilization IV: Colonization" принадлежат Take Two Interactive. Sid Meier's Civilization IV: Colonization, Civ, Civilization, 2K Games, 2K-Logo, Firaxis Games, игровой логотип Firaxis и Take-Two Interactive Software являются зарегистрированными товарными знаками Take-Two Interactive Software, Inc., разработанными Firaxis Games.[NEWLINE]Некоторые текстуры на наших 3D-моделях созданы с использованием изображений с сайта CGTextures.com. Эти изображения не могут распространяться по умолчанию. Посетите сайт www.cgtextures.com для получения дополнительной информации.[NEWLINE]WtP — это некоммерческий мод-проект. Если вы используете или распространяете WtP, обратите внимание на авторские права. Мы разрешаем использование и распространение, пока WtP остается некоммерческим.[NEWLINE]Разумеется, разрешено использовать WtP в собственном мод-проекте, если не нарушаются авторские права и он остается некоммерческим проектом. Если вы используете WtP в собственном проекте мода, вы должны четко указать, что вы внесли изменения в исходный TAC, RaR и WtP. Если вы хотите использовать обложку, мы можем предоставить вам больше информации о создателях, чтобы вы могли упомянуть их в титрах своей модификации.[NEWLINE]Вы можете связаться с командой WtP через форум CivFanatics или группу ВК (ссылки есть в Readme).</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_FURSTBISCHOF</Tag>
@@ -122,12 +150,14 @@ Vous pouvez contacter RaR via le site "CivFanatics" : http://forums.civfanatics.
 		<English>f1rpo (continous support related to coding)</English>
 		<German>f1rpo (wiederholte Unterstützung zu Code)</German>
 		<Spanish>f1rpo (ayuda repetida con código)</Spanish>
+		<Russian>f1rpo (постоянная поддержка, связанная с кодированием)</Russian>
 	</TEXT>
 		<TEXT>
 		<Tag>TXT_KEY_CREDITS_karadoc</Tag>
 		<English>karadoc (for his pathfinding code)</English>
 		<German>karadoc (für seinen Pathfinding Code)</German>
 		<Spanish>karadoc (por su algoritmo de búsqueda)</Spanish>
+		<Russian>karadoc (за его код поиска пути)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_FORMER_MEMBER</Tag>
@@ -135,6 +165,7 @@ Vous pouvez contacter RaR via le site "CivFanatics" : http://forums.civfanatics.
 		<German>(früheres Mitglied)</German>
 		<French>(ex-membre)</French>
 		<Spanish>(ex-miembro)</Spanish>
+		<Russian>(бывшие участники)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_MELCHER_KURZER</Tag>
@@ -148,54 +179,60 @@ Vous pouvez contacter RaR via le site "CivFanatics" : http://forums.civfanatics.
 		<Tag>TXT_KEY_CREDITS_OTHER_NAME_1</Tag>
 		<English>Victor Meirelles (Painting: Primeira missa no Brasil)</English>
 		<French>Victor Meirelles (Peinture : Primeira missa no Brasil)</French>
+		<Russian>Victor Meirelles (Картина: Первая месса в Бразилии)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_OTHER_NAME_2</Tag>
 		<English>John Trumbull (Painting: The Death of General Warren at the Battle of Bunker Hill)</English>
 		<French>John Trumbull (Peinture : The Death of General Warren at the Battle of Bunker Hill)</French>
+		<Russian>John Trumbull (Картина: Смерть генерала Уоррена в битве при Банкер-Хилле)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_OTHER_NAME_3</Tag>
 		<English>George Walter Vincent Smith (Painting: New England Scenery)</English>
 		<French>George Walter Vincent Smith (Peinture : New England Scenery)</French>
+		<Russian>George Walter Vincent Smith (Картина: Пейзаж Новой Англии)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_OTHER_NAME_4</Tag>
 		<English>Clint Mansell (Main Theme)</English>
 		<French>Clint Mansell (Thème principal)</French>
+		<Russian>Clint Mansell (Главная тема)</Russian>
 	</TEXT>
 	<!-- Readme -->
 	<TEXT>
 		<Tag>TXT_KEY_README_BUTTON</Tag>
-		<English>RaR concept</English>
-		<French>Concept de RaR</French>
-		<German>RaR-Konzept</German>
+		<English>WtP concept</English>
+		<French>Concept de WtP</French>
+		<German>WtP-Konzept</German>
+		<Russian>Концепция WtP</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_README_HEAD</Tag>
-		<English>Religion and Revolution</English>
-		<French>Religion and Revolution</French>
-		<German>Religion and Revolution</German>
-		<Italian>Religion and Revolution</Italian>
-		<Spanish>Religion and Revolution</Spanish>
+		<English>We the People</English>
+		<French>We the People</French>
+		<German>We the People</German>
+		<Italian>We the People</Italian>
+		<Spanish>We the People</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_README_TEXT</Tag>
-		<English>[H1]Welcome to "Religion and Revolution" - RaR ![\H1][NEWLINE]
-[H2]The idea behind "Religion and Revolution" is simple: We want to create the largest and best CivCol-Mod ever ![\H2][NEWLINE]
-Thus we have chosen "The Authentic Colonization" (TAC) as base for this project and added many many cool features and improvements to it.[NEWLINE]
+		<English>[H1]Welcome to "We the People" - WtP ![\H1][NEWLINE]
+[H2]The idea behind "We the People" is simple: We want to create the largest and best CivCol-Mod ever ![\H2][NEWLINE]
+Thus we have chosen "The Authentic Colonization" (TAC) and "Religion and Revolution" (RaR) as base for this project and added many many cool features and improvements to it.[NEWLINE]
 Enjoy![NEWLINE]
 		</English>
-		<French>[H1]Bienvenue dans "Religion and Revolution" - RaR ![\H1][NEWLINE]
-[H2]L'idée derrière "Religion and Revolution" est simple : nous voulons créer le plus grand et le meilleur mod pour CivCol ![\H2][NEWLINE]
-C'est pourquoi nous avons choisi de prendre "The Authentic Colonization" TAC comme base en y ajoutant de nouveaux éléments et améliorations.[NEWLINE]
+		<French>[H1]Bienvenue dans "We the People" - WtP ![\H1][NEWLINE]
+[H2]L'idée derrière "We the People" est simple : nous voulons créer le plus grand et le meilleur mod pour CivCol ![\H2][NEWLINE]
+C'est pourquoi nous avons choisi de prendre "The Authentic Colonization" (TAC) et "Religion and Revolution" (RaR) comme base en y ajoutant de nouveaux éléments et améliorations.[NEWLINE]
 Faites-vous plaisir ![NEWLINE]
 		</French>
-		<German>[H1]Willkommen zu "Religion and Revolution" - RaR ![\H1][NEWLINE]
-[H2]Die Grundidee zu "Religion and Revolution" ist einfach: Wir wollen die grösste und beste CivCol-Mod aller Zeiten schaffen ![\H2][NEWLINE]
-Deshalb haben wir uns für "The Authentic Colonization" (TAC) als Basis entschlossen und viele neue Features und Verbesserungen hinzugefügt.[NEWLINE]
+		<German>[H1]Willkommen zu "We the People" - WtP ![\H1][NEWLINE]
+[H2]Die Grundidee zu "We the People" ist einfach: Wir wollen die grösste und beste CivCol-Mod aller Zeiten schaffen ![\H2][NEWLINE]
+Deshalb haben wir uns für "The Authentic Colonization" (TAC) und "Religion and Revolution" (RaR) als Basis entschlossen und viele neue Features und Verbesserungen hinzugefügt.[NEWLINE]
 Viel Spass![NEWLINE]
 		</German>
+		<Russian>[H1]Добро пожаловать в мод "We the People" — WtP![\H1][NEWLINE][H2]Идея "We the People" проста: мы хотим создать самый большой и лучший CivCol-Mod![\H2][NEWLINE]Поэтому мы выбрали "The Authentic Colonization" (TAC) и "Religion and Revolution" (RaR) в качестве основы для этого проекта и добавили множество интересных функций и улучшений.[NEWLINE][NEWLINE]Наслаждайтесь![NEWLINE]</Russian>
 	</TEXT>
 	<!-- Hints -->
 	<TEXT>
