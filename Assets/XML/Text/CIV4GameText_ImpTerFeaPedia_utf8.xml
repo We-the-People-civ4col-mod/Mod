@@ -40,6 +40,7 @@
         <German>Zitat</German>
         <Italian>Citazione</Italian>
         <Spanish>Cita</Spanish>
+        <Russian>Циата</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_STRATEGY</Tag>
@@ -48,6 +49,7 @@
         <German>Strategie</German>
         <Italian>Strategia</Italian>
         <Spanish>Estrategia</Spanish>
+        <Russian>Стратегия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MIGRATES</Tag>
@@ -68,12 +70,14 @@
         <English>[ICON_BULLET]Buyable in Africa</English>
         <French>[ICON_BULLET]Achetable en Afrika</French>
         <German>[ICON_BULLET]Kaufbar in Africa</German>
+        <Russian>[ICON_BULLET]Можно купить в Африке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BUYABLE_IN_PORT_ROYAL</Tag>
         <English>[ICON_BULLET]Buyable in Port Royal</English>
         <French>[ICON_BULLET]Achetable en Port Royal</French>
         <German>[ICON_BULLET]Kaufbar in Port Royal</German>
+        <Russian>[ICON_BULLET]Можно купить в Порт Ройале</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_TAUGHT_BY_NATIVES</Tag>
