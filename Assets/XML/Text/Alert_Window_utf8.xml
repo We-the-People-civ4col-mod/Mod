@@ -56,4 +56,12 @@ See Readme for more details.</English>
         <English>The mod has changed configuration to remove known incompatible maps from the menus. Please restart the game for the new settings to take effect. Do you want to quit now?</English>
         <Russian>Мод изменил конфигурацию, чтобы удалить известные несовместимые карты из меню. Пожалуйста, перезапустите игру, чтобы новые настройки вступили в силу. Сделать это сейчас?</Russian>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ALERT_LARGE_ADDRESS_AWARE_HEADER</Tag>
+        <English>Low memory warning</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ALERT_LARGE_ADDRESS_AWARE</Tag>
+        <English>Colonization.exe is currently set to use max 2 GB of RAM. We The People will sometimes need more than that and if so the game will crash. Do you want to quit the game and open the readme on how to patch the game to use 4 GB?</English>
+    </TEXT>
 </Civ4GameText>

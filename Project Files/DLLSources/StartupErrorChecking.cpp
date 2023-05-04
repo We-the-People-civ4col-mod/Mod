@@ -1,6 +1,7 @@
 #include "CvGameCoreDll.h"
 #include "AlertWindow.h"
 #include "StartupErrorChecking.h"
+#include "OpenURL.h"
 
 #include <iostream>
 #include <sstream>
@@ -11,6 +12,7 @@ enum WindowType
 	WINDOW_DLL_LOCATION,
 	WINDOW_NO_INI_FILE,
 	WINDOW_PUBLIC_MAPS_DISABLED,
+	WINDOW_LARGE_ADDRESS_AWARE,
 };
 
 template <int T>
@@ -67,6 +69,18 @@ static AlertWindow::returnTypes showWindow<WINDOW_PUBLIC_MAPS_DISABLED>()
 
 	window.header = "TXT_KEY_ALERT_PUBLIC_MAPS_DISABLED_HEADER";
 	window.message = "TXT_KEY_ALERT_PUBLIC_MAPS_DISABLED";
+	window.setButtonLayout(AlertWindow::Buttons::BtnYesNo);
+	return window.openWindow();
+}
+
+template <>
+static AlertWindow::returnTypes showWindow<WINDOW_LARGE_ADDRESS_AWARE>()
+{
+	AlertWindow window;
+
+	window.header = "TXT_KEY_ALERT_LARGE_ADDRESS_AWARE_HEADER";
+	window.message = "TXT_KEY_ALERT_LARGE_ADDRESS_AWARE";
+	window.setIcon(AlertWindow::iconTypes::IconWarning);
 	window.setButtonLayout(AlertWindow::Buttons::BtnYesNo);
 	return window.openWindow();
 }
@@ -165,20 +179,55 @@ static void checkPublicMapSetting()
 	}
 }
 
+static void checkLargeAddressAwareness()
+{
+	// a bit of code to tell precisely how much memory can be allowcated.
+	MEMORYSTATUSEX statex;
+	statex.dwLength = sizeof(statex);
+	GlobalMemoryStatusEx(&statex);
+	unsigned __int64 size = statex.ullTotalVirtual;
+	bool largeAddressAware = size > 0xF0000000;
+
+	if (largeAddressAware)
+	{
+		AlertWindow::returnTypes returnVal = showWindow<WINDOW_LARGE_ADDRESS_AWARE>();
+		if (returnVal.getVar() == returnVal.clickedYes)
+		{
+			OpenURL::openReadme("ramProblem");
+			exit(0);
+		}
+	}
+}
 
 namespace StartupCheck
 {
 	void testAllWindows()
 	{
+		AlertWindow window;
+
+		window.header = "Alert window testing";
+		window.message = "Displaying all the possible startup window alerts";
+		window.openWindow();
+
 		showWindow<WINDOW_DLL_LOCATION>();
 		showWindow<WINDOW_NO_INI_FILE>("test file");
 		showWindow<WINDOW_PUBLIC_MAPS_DISABLED>();
+		showWindow<WINDOW_LARGE_ADDRESS_AWARE>();
+
+		window.message = "Test complete";
+		window.openWindow();
 	}
 
 	void GlobalInitXMLCheck()
 	{
 		FAssert(gDLL != NULL);
+		if (GC.shiftKey())
+		{
+			testAllWindows();
+		}
+
 		TestDLLLocation();
 		checkPublicMapSetting();
+		checkLargeAddressAwareness();
 	}
 }

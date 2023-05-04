@@ -26,6 +26,7 @@
 								<li><a class="dropdown-item" href="#aboutEnglish">About We the People</a></li>
 								<li><a class="dropdown-item" href="#teamEnglish">WTP Team Members</a></li>
 								<li><a class="dropdown-item" href="#installEnglish">How to Install the Mod</a></li>
+								<li><a class="dropdown-item" href="#installProblemEnglish">Common issues when getting the mod to work</a></li>
 								<li><a class="dropdown-item" href="#whatEnglish">What is the Mod About</a></li>
 							</ul>
 						</li>
@@ -68,6 +69,7 @@
 				<li><a href="#aboutEnglish">About We the People</a></li>
 				<li><a href="#teamEnglish">WTP team members</a></li>
 				<li><a href="#installEnglish">How to Install the Mod</a></li>
+				<li><a href="#installProblemEnglish">Common issues when getting the mod to work</a></li>
 				<li><a href="#whatEnglish">What is the Mod About</a></li>
 			</ul>
 		<h3 id="aboutEnglish">Foreword</h3>
@@ -126,6 +128,13 @@ Then copy the unzipped mod into the "Mods" folder of Colonization: (e.g. C:\User
 		<p> Use a Steam desktop icon to open "We The People". Generate the icon by right-clicking the game, going to "Manage" and then "Add Desktop Shortcut". Once you see the icon, right-click it, go to "Properties" and change the URL to   steam://rungameid/16810/Mod="WeThePeople-3.0.1"   or whatever release of the mod you're currently using. The text between the quotes should match the name of your mod folder.</p>
 		<p>Once that's done, clicking your new icon will take you to the mod, passing through the Vanilla window along the way without launching it. Opening Vanilla and going from there to the mod can cause problems.</p>
 		<p>P.S.: Check the forum every now and then to see if there are new versions.</p>
+		<hr>
+		<h3 id="installProblemEnglish">Common issues when getting the mod to work</h3>
+		<h4 id="ramProblemEnglish">The game tells me I have low memory?</h3>
+		<p><strong>This applies to the CD version and maybe the DVD version only</strong>. Steam and GOG have prepatched their versions of Colonization.</p>
+		<p>This is a legacy problem from back when people used 32 bit versions of windows. The system could only handle 4 GB of ram and to protect windows from crashing due to lacking memory, applications were only allowed to use 2 GB. Since We The People requires 64 bit windows to function properly, this is no longer an issue. However the disc version still has this old setting.</p>
+		<p>Luckily it's fairly easy to fix. Just download <a href="https://ntcore.com/?page_id=371">this 4 GB patching tool</a> and use it to patch Colonization.exe. It's unknown if patching Colonization_PitBoss.exe is needed, but it doesn't hurt to do so.</p>
+		<p>For those who wants to to know what technically happens when patching (no, you don't need to understand this) is the <a href="https://learn.microsoft.com/en-us/windows/win32/debug/pe-format">PE flag</a> is toggled. It can literally be done using a hex editor if you know what you are doing. However the patching tool is way easier.</p>
 		<hr>
 		<h3 id="whatEnglish">What is the mod about?</h3>
 		<p>It is currently by far the largest CivCol mod in existence. It’s our attempt to bring together many of the best ideas and concepts that the CivCol modding has created.</p>
