@@ -97,6 +97,7 @@
     <ClCompile Include="DLLSources\CyUserSettingsInterface.cpp" />
     <ClCompile Include="DLLSources\EXE_interface.cpp" />
     <ClCompile Include="DLLSources\KmodPathFinder.cpp" />
+    <ClCompile Include="DLLSources\OpenURL.cpp" />
     <ClCompile Include="DLLSources\Profile.cpp" />
     <ClCompile Include="DLLSources\StartupErrorChecking.cpp" />
     <ClCompile Include="DLLSources\TestEnumMap.cpp" />
@@ -258,6 +259,7 @@
     <ClInclude Include="DLLSources\HardcodedEnumSetup.h" />
     <ClInclude Include="DLLSources\KmodPathFinder.h" />
     <ClInclude Include="DLLSources\NetworkDataPacking.h" />
+    <ClInclude Include="DLLSources\OpenURL.h" />
     <ClInclude Include="DLLSources\Profile.h" />
     <ClInclude Include="DLLSources\CvMacros.h" />
     <ClInclude Include="DLLSources\EnumMap.h" />

@@ -293,5 +293,6 @@ public:
 	CyUserSettings* getUserSettings() const;
 
 	void openNetworkOOSMenu();
+	void openReadme(std::string section);
 };
 #endif	// CyGlobalContext_h

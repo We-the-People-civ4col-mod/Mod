@@ -19,6 +19,7 @@
 #include "CyUserSettings.h"
 #include "CvPopupInfo.h"
 #include "CvDLLInterfaceIFaceBase.h"
+#include "OpenURL.h"
 
 CyGlobalContext::CyGlobalContext()
 {
@@ -538,4 +539,16 @@ void CyGlobalContext::openNetworkOOSMenu()
 {
 	CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_NETWORK_OOS_MENU);
 	gDLL->getInterfaceIFace()->addPopup(pInfo, GC.getGameINLINE().getActivePlayer(), true, true);
+}
+
+void CyGlobalContext::openReadme(std::string section)
+{
+	if (section.length() > 0)
+	{
+		OpenURL::openReadme(section);
+	}
+	else
+	{
+		OpenURL::openReadme();
+	}
 }
