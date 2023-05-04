@@ -2958,27 +2958,6 @@
         <Russian>"[COLOR_SELECTED_TEXT]Золото, сэр, золото! О денежных проблемах колонии можно забыть![COLOR_REVERT]" — взволнованно говорит секретарь. "[COLOR_SELECTED_TEXT]Сэр, вот тот герой, что обнаружил золотую жилу.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что же, это прекрасно.[COLOR_REVERT]" – говорит губернатор. "[COLOR_SELECTED_TEXT]Входите. Позвольте предложить вам освежиться. Расскажите мне все о находке. Как вы думаете, сколько там может быть золота?[COLOR_REVERT]"[NEWLINE][NEWLINE]И повернувшись к секретарю, он говорит: "[COLOR_SELECTED_TEXT]Скажите бухгалтеру, чтобы пришел. И пошлите за геологом.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Отец, это чудесно! Я надеялась на новое ожерелье. И браслет и...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Тише, дитя мое.[COLOR_REVERT]" – перебивает ее раздраженный отец – "[COLOR_SELECTED_TEXT]Золото нужно отправить в Европу.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Но, сэр, на новое ожерелье должно хватить.[COLOR_REVERT]" – говорит секретарь, с надеждой улыбаясь дочери губернатора.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_ACHIEVE_THREE_ROASTER</Tag>
-        <English>Three Master Roasters</English>
-        <French>Trois torréfacteurs</French>
-        <German>Drei Meister Röster</German>
-        <Russian>Три обжарщика</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ACHIEVE_THREE_ROASTER_HEAD</Tag>
-        <English>Coffee, cocoa and peanuts</English>
-        <French>Trois torréfacteurs</French>
-        <German>Kaffee, Kakao und Erdnüsse</German>
-        <Russian>Кофе, какао и арахис</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ACHIEVE_THREE_ROASTER_TEXT</Tag>
-        <English>"[COLOR_SELECTED_TEXT]Bring me more of that kind of berry next time[COLOR_REVERT]", the roaster points to the sacks filled to the brim with fresh coffee berries. "[COLOR_SELECTED_TEXT]They're the best quality.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Now we can process twice as much of the cocoa pods[COLOR_REVERT]", says the other, pleased. "[COLOR_SELECTED_TEXT]The new warehouse plus learning from our last batch means that we can now produce the best product for Europe, but there will also be enough for our own colony too.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
-        <French>Vous disposez maintenant de torréfacteurs expérimentés. Leur travail permet dorénavant de produire en masse du cacao et du café torréfiés.[NEWLINE][NEWLINE]</French>
-        <German>"[COLOR_SELECTED_TEXT]Bringt mir das nächste Mal noch mehr von diesen Bohnen hier[COLOR_REVERT]", deutet die Röster auf die prall mit frischen Kaffeebeeren gefüllten Säcke. "[COLOR_SELECTED_TEXT]Die haben die beste Qualität.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Und von den Kakaofrüchten können wir nun auch doppelt so viel verarbeiten[COLOR_REVERT]", freut sich die andere. "[COLOR_SELECTED_TEXT]Das neue Lagerhaus und die Erfahrungen aus der letzten Produktion lassen uns nun beste Ware für Europa herstellen, aber für die Kolonie fällt sicher auch noch genug ab...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Russian>"[COLOR_SELECTED_TEXT]В следующий раз принеси мне еще таких ягод.[COLOR_REVERT]" — обжарщик указывает на мешки, до краев наполненные свежими кофейными ягодами. "[COLOR_SELECTED_TEXT]Они превосходного качества.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Теперь мы можем перерабатывать в два раза больше какао-бобов.[COLOR_REVERT]" – довольно говорит другой. "[COLOR_SELECTED_TEXT]Новый склад и опыт с нашей последней партией означают, что теперь мы можем производить лучший продукт для Европы, но его также будет достаточно для нашей собственной колонии.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Не забывайте про арахис! В последнее время он стал пользоваться бешеным успехом.[COLOR_REVERT]" — вмешивается третий.[NEWLINE][NEWLINE]</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_ACHIEVE_CUSTOM_OFFICE</Tag>
         <English>Your first Customs Office</English>
         <French>Premier poste de douane</French>
@@ -3647,4 +3626,34 @@
         <English>Mylord, the colony is slowly but surely becoming a penal colony. There are currently many criminals in the colony - too many, in fact. The prisons are overcrowded. You should intervene with the king to stop sending you new convicts.[NEWLINE][NEWLINE]In Europe, the problem is quickly solved if you can deport the convicts here, but this may not be conducive to the success of the colony. You should rather increase the hand money for real craftsmen and in order to increase the production of goods![NEWLINE][NEWLINE]</English>
         <German>Mylord, die Kolonie entwickelt sich langsam aber sicher zu einer Strafkolonie. Es befinden sich derzeit viele Kriminelle in der Kolonie - zu viele, um genau zu sein. Die Gefängnisse sind überfüllt. Ihr solltet beim König intervenieren, Euch keine neuen Sträflinge mehr zu schicken.[NEWLINE][NEWLINE]In Europa ist das Problem schnell gelöst, wenn man die Sträflinge hierher abschieben kann, aber dem Erfolg der Kolonie ist das vielleicht nicht gerade zuträglich. Ihr solltet lieber das Handgeld für echte Handwerker erhöhen und zusehen, dass Ihr die Güterproduktion verstärkt![NEWLINE][NEWLINE]</German>
 	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_ROASTING</Tag>
+        <English>Roasting economy</English>
+        <German>Experten für das Rösten</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_ROASTING_HEAD</Tag>
+        <English>Coffee, cocoa and peanuts</English>
+        <German>Kaffee, Kakao und Erdnüsse</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_ROASTING_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]Bring me more of that kind of berry next time[COLOR_REVERT]", the roaster points to the sacks filled to the brim with fresh coffee berries. "[COLOR_SELECTED_TEXT]They're the best quality.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Now you can process twice as much of the cocoa pods, I've got a lot of work to collect that much[COLOR_REVERT]", says the cocoa collector, pleased. "[COLOR_SELECTED_TEXT]The new warehouse plus learning from our last batch means that we can now produce the best product for Europe, but there will also be enough for our own colony too.[COLOR_REVERT]", say the coffee berry picker and the peanut picker simultaneously.[NEWLINE][NEWLINE]You are successful in building an industry for processing roasted coffee beans, peanuts or cocoa. Keep it up![NEWLINE][NEWLINE]</English>
+        <German>"[COLOR_SELECTED_TEXT]Bringt mir das nächste Mal noch mehr von diesen Bohnen hier[COLOR_REVERT]", deutet der Röster auf die prall mit frischen Kaffeebeeren gefüllten Säcke. "[COLOR_SELECTED_TEXT]Die haben die beste Qualität.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Und von den Kakaofrüchten könnt Ihr nun auch doppelt so viel verarbeiten, da hab ich richtig was zu tun, um das alles einzusammeln[COLOR_REVERT]", freut sich die Kakaosammlerin. "[COLOR_SELECTED_TEXT]Das neue Lagerhaus und die Erfahrungen aus der letzten Produktion lassen uns nun beste Ware für Europa herstellen, aber für die Kolonie fällt sicher auch noch genug ab,[COLOR_REVERT]" meinen die Kaffeebeerensammlerin und der Erdnusspflücker wie aus einem Munde.[NEWLINE][NEWLINE]Ihr seid erfolgreich beim Aufbau einer Industrie zur Verarbeitung von gerösteten Kaffebohnen, Erdnüssen oder Kakao. Weiter so![NEWLINE][NEWLINE]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_TEATIME</Tag>
+        <English>Tea- and spice experts</English>
+        <German>Tee- und Gewürzexperten</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_TEATIME_HEAD</Tag>
+        <English>Tea and spices</English>
+        <German>Tee und Gewürze</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_TEATIME_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]Where should I put all the new bags with the tea, the stuff is growing like a weed[COLOR_REVERT]",the tea merchant points to the bags filled to the brim with fresh tea leaves. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]They have the best quality and you didn't want to sell the "stuff" originally, but only the expensive imported goods from the East. And it grows right here on your doorstep. You should really be happy that customs duty is eliminated,[COLOR_REVERT]" says the tea collector.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Yes well, that may be true, but where am I with my chili peppers? There is not enough space in the warehouse for both[COLOR_REVERT]," complains the spice trader. "[COLOR_SELECTED_TEXT]For this we also still find space, otherwise I just pick every day new. They taste much better fresh anyway[COLOR_REVERT]", interjects the red pepper planter.[NEWLINE][NEWLINE]You are successful in building an industry for processing tea or spices. Keep it up! [NEWLINE][NEWLINE]</English>
+        <German>"[COLOR_SELECTED_TEXT]Wo soll ich nur die ganzen neuen Säcke mit dem Tee noch unterbringen, das Zeug wuchert ja wie Unkraut[COLOR_REVERT]", deutet der Teehändler auf die prall mit frischen Teeblättern gefüllten Säcke.[NEWLINE][NEWLINE] "[COLOR_SELECTED_TEXT]Die haben die beste Qualität und Ihr wolltet das "Zeug" ursprünglich gar nicht verkaufen, sondern nur die teure Importware aus dem Osten. Dabei wächst das hier direkt vor Eurer Haustür. Ihr solltet Euch wirklich freuen, dass der Zoll wegfällt[COLOR_REVERT]", freut sich die Teesammlerin.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja nun, das mag ja stimmen, aber wo bleibe ich mit meinen Chillischoten? Im Lager ist nicht genug Platz für beides[COLOR_REVERT]," beschwert sich die Gewürzhändlerin. "[COLOR_SELECTED_TEXT]Dafür finden wir auch noch Platz, ansonsten pflücke ich einfach jeden Tag neu. Frisch schmecken die eh viel besser.[COLOR_REVERT]", wirft die Gewürzpflückerin ein.[NEWLINE][NEWLINE]Ihr seid erfolgreich beim Aufbau einer Industrie zur Verarbeitung von Tee oder Gewürzen. Weiter so![NEWLINE][NEWLINE]</German>
+    </TEXT>
 </Civ4GameText>
