@@ -23350,6 +23350,15 @@ int CvPlayer::getUsedShipPrice(UnitClassTypes iUsedShipClassType) const
 	CvRandom aSyncRandom;
 	aSyncRandom.reseed(m_ulRandomSeed);
 
+	for (int i = 0; i < getParent(); ++i)
+	{
+		aSyncRandom.get(5);
+		aSyncRandom.get(5);
+		aSyncRandom.get(5);
+		aSyncRandom.get(5);
+		aSyncRandom.get(5);
+	}
+
 	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iUsedShipClassType);
 	if (eUnit != NO_UNIT)
 	{
@@ -23384,6 +23393,13 @@ UnitClassTypes CvPlayer::getRandomUsedShipClassTypeID() const
 
 	CvRandom aSyncRandom;
 	aSyncRandom.reseed(m_ulRandomSeed);
+
+	for (int i = 0; i < getParent(); ++i)
+	{
+		aSyncRandom.get(5);
+		aSyncRandom.get(5);
+		aSyncRandom.get(5);
+	}
 
 	for (UnitClassTypes iI = FIRST_UNITCLASS; iI < NUM_UNITCLASS_TYPES; ++iI)
 	{
@@ -23649,6 +23665,12 @@ int CvPlayer::getForeignImmigrantPrice(UnitClassTypes iForeignImmigrantClassType
 	CvRandom aSyncRandom;
 	aSyncRandom.reseed(m_ulRandomSeed);
 
+	for (int i = 0; i < getParent(); ++i)
+	{
+		aSyncRandom.get(5);
+		aSyncRandom.get(5);
+	}
+
 	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iForeignImmigrantClassType);
 	if (eUnit != NO_UNIT)
 	{
@@ -23686,7 +23708,9 @@ UnitClassTypes CvPlayer::getRandomForeignImmigrantClassTypeID() const
 	for (int i = 0; i < getParent(); i++)
 	{
 		// move the random seed a bit
-		aSyncRandom.get(0);
+		aSyncRandom.get(1);
+		aSyncRandom.get(2);
+		aSyncRandom.get(3);
 	}
 
 	for (UnitClassTypes iI = FIRST_UNITCLASS; iI < NUM_UNITCLASS_TYPES; ++iI)
