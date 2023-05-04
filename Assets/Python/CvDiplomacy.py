@@ -963,7 +963,7 @@ class CvDiplomacy:
 
 		# WTP, ray, Foreign Kings, buy Immigrants - START
 		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_ASK_FOREIGN_KING_BUY_IMMIGRANTS")):
-			iRandomImmigrant = gc.getPlayer(gc.getGame().getActivePlayer()).getRandomForeignImmigrantClassTypeID()
+			iRandomImmigrant = gc.getPlayer(gc.getGame().getActivePlayer()).getRandomForeignImmigrantClassTypeID(self.diploScreen.getWhoTradingWith())
 			if (iRandomImmigrant != -1):
 				iPrice = gc.getPlayer(gc.getGame().getActivePlayer()).getForeignImmigrantPrice(iRandomImmigrant, self.diploScreen.getWhoTradingWith())
 				if (gc.getPlayer(gc.getGame().getActivePlayer()).isForeignKingWillingToTradeImmigrants(self.diploScreen.getWhoTradingWith()) and gc.getPlayer(gc.getGame().getActivePlayer()).getGold() >= iPrice):
