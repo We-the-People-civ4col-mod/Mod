@@ -13,6 +13,7 @@ enum WindowType
 	WINDOW_NO_INI_FILE,
 	WINDOW_PUBLIC_MAPS_DISABLED,
 	WINDOW_LARGE_ADDRESS_AWARE,
+	WINDOW_WRONG_STEAM_VERION,
 };
 
 template <int T>
@@ -81,6 +82,18 @@ static AlertWindow::returnTypes showWindow<WINDOW_LARGE_ADDRESS_AWARE>()
 	window.header = "TXT_KEY_ALERT_LARGE_ADDRESS_AWARE_HEADER";
 	window.message = "TXT_KEY_ALERT_LARGE_ADDRESS_AWARE";
 	window.setIcon(AlertWindow::iconTypes::IconWarning);
+	window.setButtonLayout(AlertWindow::Buttons::BtnYesNo);
+	return window.openWindow();
+}
+
+template <>
+static AlertWindow::returnTypes showWindow<WINDOW_WRONG_STEAM_VERION>()
+{
+	AlertWindow window;
+
+	window.header = "TXT_KEY_ALERT_WRONG_STEAM_VERION_HEADER";
+	window.message = "TXT_KEY_ALERT_WRONG_STEAM_VERION";
+	window.setIcon(AlertWindow::iconTypes::IconError);
 	window.setButtonLayout(AlertWindow::Buttons::BtnYesNo);
 	return window.openWindow();
 }
@@ -188,7 +201,7 @@ static void checkLargeAddressAwareness()
 	unsigned __int64 size = statex.ullTotalVirtual;
 	bool largeAddressAware = size > 0xF0000000;
 
-	if (largeAddressAware)
+	if (!largeAddressAware)
 	{
 		AlertWindow::returnTypes returnVal = showWindow<WINDOW_LARGE_ADDRESS_AWARE>();
 		if (returnVal.getVar() == returnVal.clickedYes)
@@ -196,6 +209,37 @@ static void checkLargeAddressAwareness()
 			OpenURL::openReadme("ramProblem");
 			exit(0);
 		}
+	}
+}
+
+static void checkSteam()
+{
+	std::ifstream exe("Colonization.exe", std::ios::in | std::ios::binary);
+	exe.seekg(0x48);
+
+	std::vector<byte> wrong_steam_version;
+	wrong_steam_version.push_back(0x10);
+	wrong_steam_version.push_back(0x9C);
+	wrong_steam_version.push_back(0x00);
+	wrong_steam_version.push_back(0xC0);
+	wrong_steam_version.push_back(0xAF);
+	wrong_steam_version.push_back(0x86);
+	wrong_steam_version.push_back(0x53);
+
+	for (unsigned int i = 0; i < wrong_steam_version.size(); ++i)
+	{
+		char buffer;
+		exe.read(&buffer, 1);
+		if (buffer != wrong_steam_version[i])
+		{
+			return;
+		}
+	}
+	AlertWindow::returnTypes returnVal = showWindow<WINDOW_WRONG_STEAM_VERION>();
+	if (returnVal.getVar() == returnVal.clickedYes)
+	{
+		OpenURL::openReadme("wrongSteam");
+		exit(0);
 	}
 }
 
@@ -213,6 +257,7 @@ namespace StartupCheck
 		showWindow<WINDOW_NO_INI_FILE>("test file");
 		showWindow<WINDOW_PUBLIC_MAPS_DISABLED>();
 		showWindow<WINDOW_LARGE_ADDRESS_AWARE>();
+		showWindow<WINDOW_WRONG_STEAM_VERION>();
 
 		window.message = "Test complete";
 		window.openWindow();
@@ -229,5 +274,6 @@ namespace StartupCheck
 		TestDLLLocation();
 		checkPublicMapSetting();
 		checkLargeAddressAwareness();
+		checkSteam();
 	}
 }

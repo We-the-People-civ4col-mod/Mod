@@ -64,4 +64,12 @@ See Readme for more details.</English>
         <Tag>TXT_KEY_ALERT_LARGE_ADDRESS_AWARE</Tag>
         <English>Colonization.exe is currently set to use max 2 GB of RAM. We The People will sometimes need more than that and if so the game will crash. Do you want to quit the game and open the readme on how to patch the game to use 4 GB?</English>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ALERT_WRONG_STEAM_VERION_HEADER</Tag>
+        <English>Wrong steam version</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ALERT_WRONG_STEAM_VERION</Tag>
+        <English>The currently selected version of Colonization has issues with mod compatibility. This can be fixed by telling steam to switch to the beta version. Do you want to quit now and open the readme on this issue?</English>
+    </TEXT>
 </Civ4GameText>
