@@ -23665,7 +23665,7 @@ int CvPlayer::getForeignImmigrantPrice(UnitClassTypes iForeignImmigrantClassType
 	CvRandom aSyncRandom;
 	aSyncRandom.reseed(m_ulRandomSeed);
 
-	for (int i = 0; i < getParent(); ++i)
+	for (int i = 0; i < iForeignKingID; ++i)
 	{
 		aSyncRandom.get(5);
 		aSyncRandom.get(5);
@@ -23698,14 +23698,14 @@ int CvPlayer::getForeignImmigrantPrice(UnitClassTypes iForeignImmigrantClassType
 	return iPrice;
 }
 
-UnitClassTypes CvPlayer::getRandomForeignImmigrantClassTypeID() const
+UnitClassTypes CvPlayer::getRandomForeignImmigrantClassTypeID(int iKingID) const
 {
 	UnitClassTypes eBestUnitClass = NO_UNITCLASS;
 	int iBestLastCompareValue = 0;
 
 	CvRandom aSyncRandom;
 	aSyncRandom.reseed(m_ulRandomSeed);
-	for (int i = 0; i < getParent(); i++)
+	for (int i = 0; i < iKingID; i++)
 	{
 		// move the random seed a bit
 		aSyncRandom.get(1);
@@ -23867,7 +23867,7 @@ void CvPlayer::doAILogicforForeignImmigrants()
 	}
 
 	// now let us check the Immigrant and the Price it would cost
-	UnitClassTypes iForeignImmigrantTypeID = getRandomForeignImmigrantClassTypeID();
+	UnitClassTypes iForeignImmigrantTypeID = getRandomForeignImmigrantClassTypeID(-1);
 
 	// we did not get any ship
 	if (iForeignImmigrantTypeID == NO_UNITCLASS)

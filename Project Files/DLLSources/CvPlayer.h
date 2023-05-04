@@ -153,7 +153,7 @@ public:
 
 	// WTP, ray, Foreign Kings, buy Immigrants - START
 	int getForeignImmigrantPrice(UnitClassTypes iForeignImmigrantClassType, int iKingID) const;
-	UnitClassTypes getRandomForeignImmigrantClassTypeID() const;
+	UnitClassTypes getRandomForeignImmigrantClassTypeID(int iKingID) const;
 	bool isForeignKingWillingToTradeImmigrants(int iKingID);
 	void decreaseCounterForForeignKingImmigrantsDeals();
 	void doAILogicforForeignImmigrants();
