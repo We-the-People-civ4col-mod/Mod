@@ -613,54 +613,63 @@
         <English>The stateman shall use this connection to offer the other official a lucrative position in our administration.</English>
         <French>Très bien, que cet homme d'État propose à son collègue une position lucrative dans notre administration.</French>
         <German>Der Staatsmann soll seine Beziehungen nutzen und seinem Kollegen bei uns eine bessere Stelle als bei seinem bisherigen Arbeitgeber anbieten.</German>
+        <Russian>Государственный деятель должен использовать эту связь, чтобы предложить другому чиновнику прибыльную должность в нашей администрации.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DIPLOMATIC_CONNECTIONS_2</Tag>
         <English>We'd better not risk angering our neighbours.</English>
         <French>Cela risque d'énerver nos voisins, ce n'est peut-être pas une bonne idée.</French>
         <German>Wir sollten es vermeiden unsere Nachbarn zu verärgern.</German>
+        <Russian>Нам лучше не рисковать и не злить соседей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DISEASED_NATIVES_1</Tag>
         <English>Send them some food. It's probably just the flu. They should recover.</English>
         <French>Envoyez leur de la nourriture. Il s'agit probablement d'une mauvaise grippe contre laquelle les indigènes ne sont pas immunisés.</French>
         <German>Schickt ihnen etwas Nahrung. Es ist sicherlich nur eine kleine Erkältung und es geht ihnen bald besser.</German>
+        <Russian>Отправьте им немного еды. Это, наверное, просто грипп. Они должны выздороветь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DISEASED_NATIVES_2</Tag>
         <English>They can bring their diseased to our city. We'll pay the doctors for their treatment.</English>
         <French>Qu'ils amènent leur malades dans notre ville. Nous allons prendre en charge leur traitement médical.</French>
         <German>Die Wilden sollen ihre Kranken in unsere Stadt bringen. Wir werden die Doktoren bezahlen um sie zu behandeln.</German>
+        <Russian>Они могут привезти своих больных в наш город. Мы будем платить врачам за их лечение.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DISEASED_NATIVES_3</Tag>
         <English>We are deeply sorry, but there is nothing we can do to help.</English>
         <French>Nous sommes vraiment désolé, mais nous ne pouvons rien faire pour les aider.</French>
         <German>Wir bedauern zutiefst, aber es gibt nichts, was wir für sie tun können.</German>
+        <Russian>Нам очень жаль, но мы ничем не можем помочь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DISEASED_NATIVES_FOLLOW_UP_1</Tag>
         <English>That is a noble mission. He has our full support.</English>
         <French>La mission est noble. Il a tout notre soutien.</French>
         <German>Dieses noble Anliegen hat unsere volle Unterstützung.</German>
+        <Russian>Это благородная миссия. У него есть наша полная поддержка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DISEASED_NATIVES_FOLLOW_UP_2</Tag>
         <English>A man with such valuable knowledge cannot be left wandering in the wilderness. He must stay in our city and cure the sick there.</English>
         <French>Nous avons besoin d'un homme disposant de telles qualification. Il vaut mieux qu'il reste dans notre ville et y soigne nos malades.</French>
         <German>Ein Mann mit solch wertvollem Wissen, können wir nicht einfach in die Wildnis lassen. Er soll in userer Stadt bleiben und die Kranken dort heilen.</German>
+        <Russian>Человека с такими ценными знаниями нельзя оставлять блуждать по пустыне. Он должен остаться в нашем городе и лечить там больных.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DRUNKEN_FISHER_1</Tag>
         <English>We will help the poor widow and buy the boat for a good price.</English>
         <French>Nous aiderons cette pauvre veuve et achetons le bateau à un bon prix.</French>
         <German>Wir werden der Witwe helfen und das Boot zu einem fairen Preis kaufen.</German>
+        <Russian>Мы поможем бедной вдове и купим лодку по хорошей цене.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DRUNKEN_FISHER_2</Tag>
         <English>This is sad, but it is not our business.</English>
         <French>C'est triste, mais ce ne sont pas nos affaires.</French>
         <German>Das ist zwar traurig, betrifft uns aber nicht.</German>
+        <Russian>Это печально, но это не наше дело.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DUMMY</Tag>
@@ -671,18 +680,21 @@
         <English>Another winter is going to come. Store our furs until that time.</English>
         <French>Il y aura un autre hiver. Stockez nos fourrures jusqu'à cette prochaine période.</French>
         <German>Der nächste kalte Winter kommt bestimmt.</German>
+        <Russian>Еще одна зима придет. Сохраняйте наши меха до этого времени.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EXPERIENCED_SAILORS_1</Tag>
         <English>Then hurry up, before some other nation's ship or a trading company hires them first.</English>
         <French>Et bien qu'attendons-nous ? Embauchons-les avant qu'ils aillent voir une autre nation ou compagnie de commerce qui les embauchera avant nous.</French>
         <German>Dann lasst Eile walten, bevor ein anderes Schiff einer anderen Nation oder einer Handelskompanie sie zuerst anheuert.</German>
+        <Russian>Тогда поторопитесь, пока корабль другой страны или торговая компания не наняли их первыми.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EXPERIENCED_SAILORS_2</Tag>
         <English>The crews of our ship are experienced enough. We don't need to hire such scum.</English>
         <French>Les équipages de nos navires disposent de suffisamment d'expérience. Nous n'avons pas besoin d'embaucher ces brigands.</French>
         <German>Die Mannschaften unserer Schiffe sind erfahren genug. Wir brauchen solchen Abschaum nicht auf unseren Schiffen.</German>
+        <Russian>Экипажи нашего корабля достаточно опытны. Нам не нужно нанимать таких подонков.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAMINE_1</Tag>
@@ -691,6 +703,7 @@
         <German>Richtet unseren Nachbarn aus, dass wir sie in unsere Gebete einschließen. Doch nun muss ich nach Haus gehen, um mich zu stärken. Meine junge Köchin will mir aufwarten. Die Künste dieser Frau sind jederzeit eine Sünde wert.</German>
         <Italian>In questo momento non possiamo aiutarli. Invia le nostre condoglianze ai loro leader.</Italian>
         <Spanish>Esta vez no podremos ayudarles. Enviad nuestras condolencias a sus líderes.</Spanish>
+        <Russian>В настоящее время мы не можем помочь. Приносим наши соболезнования их лидерам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAMINE_2</Tag>
@@ -699,6 +712,7 @@
         <German>Hartherzigkeit würde uns nicht gut zu Gesicht stehen. Also öffnet in Gottes Namen die städtischen Kornspeicher und schickt die Hälfte ihrer Bestände an unsere gebeutelten Nachbarn.Und richtet ihnen aus, dies sei alles, was wir hätten.</German>
         <Italian>Apri i granai della città e invia metà delle provviste ai nostri vicini in difficoltà.</Italian>
         <Spanish>Abrid los graneros de la ciudad y enviad la mitad de las reservas a nuestros afligidos vecinos.</Spanish>
+        <Russian>Откройте городские зернохранилища и отправьте половину запасов нашим неблагополучным соседям.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAMINE_3</Tag>
@@ -707,18 +721,21 @@
         <German>Mir würde mein Griesbrei nicht schmecken, wüsste ich, dass andernorts Menschen Hunger leiden. Schickt ihnen unsere gesamten Nahrungsvorräte! Und sputet Euch!</German>
         <Italian>Invia tutte le riserve di cibo! Non badiamo a spese per aiutare i nostri amici!</Italian>
         <Spanish>¡Enviadles todos los alimentos que tengamos almacenados! ¡No escatiméis gastos en ayudar a nuestros amigos!</Spanish>
+        <Russian>Отправить всё продовольстви со складов! Не жалея средств, помогите нашим друзьям!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAMOUS_ACTORS_1</Tag>
         <English>Famous actors? Of course they shall be hired. We really need more culture in our colonies.</English>
         <French>Des acteurs célèbres ? Bien sûr que nous devons les engager. Nous avons vraiment besoin de développer la culture dans nos colonies.</French>
         <German>Berühmte Schauspieler würden bei uns auftreten. Worauf wartet ihr noch? Setzt sofort den Vertrag auf.</German>
+        <Russian>Известные актеры? Их, конечно, наймут. Нам действительно нужно больше культуры в наших колониях.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAMOUS_ACTORS_2</Tag>
         <English>We have no money to spare for such things. Culture is the least of our concerns.</English>
         <French>Nous n'avons pas d'argent pour ce genre de choses. Développer la culture n'est pas ce qui est le plus stratégique en ce moment.</French>
         <German>Wir haben kein Geld für sowetwas übrig. Kultur is unser geringstes Problem.</German>
+        <Russian>У нас нет лишних денег на такие вещи. Культура — это наименьшая из наших забот.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FARM_BANDITS_1</Tag>
@@ -727,6 +744,7 @@
         <German>Setzt hohe Kopfgelder auf diese Halunken aus! Das wird ihrem Treiben rasch ein Ende bereiten.</German>
         <Italian>Abbiamo bisogno di quel cibo. Fa' ciò che serve per occuparsi di quei banditi.</Italian>
         <Spanish>Necesitamos esos alimentos. Haced lo que sea necesario para encargaros de esos bandidos.</Spanish>
+        <Russian>Нам нужна эта еда. Сделайте все возможное, чтобы справиться с этими бандитами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FARM_BANDITS_2</Tag>
@@ -735,6 +753,7 @@
         <German>Sendet Truppen aus, um diese Banditen dingfest zu machen!</German>
         <Italian>Invia alcune delle nostre truppe per dare la caccia ai banditi.</Italian>
         <Spanish>Enviad algunas tropas a dar buena cuenta de esos bandidos.</Spanish>
+        <Russian>Отправьте часть наших войск, чтобы выследить этих бандитов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FARM_BANDITS_3</Tag>
@@ -743,30 +762,35 @@
         <German>Was kümmern mich die Nöte von Bauern? Das sind stämmige Knechte und kräftige Mägde.[NEWLINE]Die werden sich schon selber helfen können. Und falls nicht, können wir uns immer noch später etwas einfallen lassen.</German>
         <Italian>Siamo troppo impegnati. Lascia che del problema si occupino le autorità locali. (I furti potrebbero continuare).</Italian>
         <Spanish>Estamos demasiado ocupados como para que se nos moleste. Dejad el asunto en manos de las autoridades locales. Es posible que el bandidaje prosiga.</Spanish>
+        <Russian>Мы слишком заняты, чтобы волноваться. Предоставьте это дело местным властям. (Бандитизм может продолжаться)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FESTIVITY_1</Tag>
         <English>If this extravagant buffoon needs our goods, he will have to pay for them like everybody else. Our taxes are high enough!</English>
         <French>Si ce bouffon extravagant a tant besoin de nos produits, il devra les payer comme tout le monde. Nos impôts sont assez élevés !</French>
         <German>Wenn dieser verschwenderische Geck unsere Güter braucht, dann soll er sie kaufen wie jeder andere auch! Wir zahlen diesem Herrn genug Steuern, er wird die Ausgaben verkraften.</German>
+        <Russian>Если этому экстравагантному шуту нужны наши товары, он должен будет заплатить за них, как и все остальные. Наши налоги достаточно высоки!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FESTIVITY_2</Tag>
         <English>As loyal subjects to His Majesty we fulfill His demand with the greatest pleasure. We hope that His Majesty will be pleased by our comprehensive selection of the finest cigars.</English>
         <French>En tant qu'humbles sujets loyaux à sa Sérénissime Majesté, nous répondrons à votre demande avec grand plaisir. Nous espérons que Son Altesse sera ravie par la variété de nos plus fameux cigares.</French>
         <German>Als loyale Untertanen entbieten wir unserem Herrscher ehrerbietigst unsere Glückwünsche und entsenden ihm als Präsent eine große Auswahl feinster Zigarren!</German>
+        <Russian>Как верные подданные Его Величества, мы с величайшим удовольствием выполняем Его требование. Мы надеемся, что Его Величество будет доволен нашим широким выбором лучших сигар.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FESTIVITY_3</Tag>
         <English>Send a shipment of our finest brandy to His Majesty ... and may he live long and prosper.</English>
         <French>Envoyez à Sa Majesté une embarcation de nos plus fameuses liqueurs... et que ça vit soit longue et prospère.</French>
         <German>Schickt Seiner Majestät eine Schiffsladung besten Branntweins. Und richtet ihm aus, der Genuss dieser geistigen Getränke möge ihn stärken, auf dass er uns noch viele Jahre gütigst regiere.</German>
+        <Russian>Отправьте партию нашего лучшего коньяка Его Величеству... и пусть он живет долго и процветает.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FESTIVITY_4</Tag>
         <English>Only the best and most expensive for our beloved King! Empty our warehouses! Send our finest rum and cigars to His Majesty!</English>
         <French>Seulement le meilleur et le plus cher pour notre Roi adoré ! Videz les entrepôts et n'envoyez que les meilleurs rhums et cigares à son Altesse Royale.</French>
         <German>Für unseren geliebten Herrscher nur das Beste und Teuerste, was unsere Kolonie zu bieten hat! Leert unser Lager und schickt ihm Rum und Zigarren.</German>
+        <Russian>Только самое лучшее и дорогое для нашего любимого Короля! Опустошить наши склады! Отправьте наш лучший ром и сигары Его Величеству!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRSTCOLONY_1</Tag>
@@ -794,138 +818,161 @@
         <English>Send this repentant sinner to our chapel as a lay preacher.</English>
         <French>Envoyez ce pêcheur repentant à notre chapelle en tant que prédicateur laïc.</French>
         <German>Schickt diesen reuigen Sünder als Laienprediger in unser Gotteshaus.</German>
+        <Russian>Пошлите этого кающегося грешника в нашу церковь проповедником-мирянином.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_CATHEDRAL_2</Tag>
         <English>He lived like a savage? He shall help us to open up the wilderness.</English>
         <French>Il a vécu comme un sauvage ? Ils devraient nous aider à rendre l'arrière-pays plus accessible.</French>
         <German>Wie ein Wilder hat dieser Mann gelebt? Dann soll er zur Buße helfen, die Wildnis urbar zu machen.</German>
+        <Russian>Жил, как дикарь? Он поможет нам освоить пустыню.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_CATHEDRAL_3</Tag>
         <English>A slayer of Natives? Recruit him as a drill instructor for our garrison.</English>
         <French>Un massacre d'indigènes ? Recrutez-le comme sergent instructeur de notre garnison.</French>
         <German>Ein Indianermörder? Der hat uns gerade noch gefehlt! Als Ausbilder in unserer Garnison.</German>
+        <Russian>Убийца туземцев? Наймите его инструктором по строевой подготовке в наш гарнизон.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_CATHEDRAL_4</Tag>
         <English>It will take some time for him to earn our trust. He can hunt in the forests and bring back meat for our community.</English>
         <French>Il faudra du temps pour qu'il gagne notre confiance. Il chassera dans la forêt et ramènera la viande à notre communauté.</French>
         <German>Bis wir ihn in unserer Mitte aufnehmen, muss er sich unser Vertrauen erst verdienen. Er soll uns in den nahen Wäldern Fleisch beschaffen.</German>
+        <Russian>Ему потребуется некоторое время, чтобы завоевать наше доверие. Он может охотиться в лесах и приносить мясо для нашей общины.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_CATHEDRAL_5</Tag>
         <English>Terrible deeds? How melodramatic! Give him a shot of liquor, let my young cook beef him up and send him back into the woods.</English>
         <French>Des choses terribles ? Quelle dramaturgie ! Donnez lui un bon verre de liqueur, que mon cuisinier lui prépare du bÂœuf et le ramène dans les bois.</French>
         <German>"Furchtbare Taten"? Wie melodramatisch. Gebt dem Mann einen Schnaps, heißt meine junge Köchin ihn stärken, und setzt ihn dann wieder aufs Pferd.</German>
+        <Russian>Страшные поступки? Какая мелодрама! Дайте ему рюмку ликера, пусть мой молодой повар накормит его и отправит обратно в лес.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_UNIVERSITY_1</Tag>
         <English>We could use someone to teach our students about politics.</English>
         <French>Nous pourrions avoir besoin d'un bon professeur en sciences politiques.</French>
         <German>Wir könnten jemanden gebrauchen, der unsere Studenten in Politik unterrichtet.</German>
+        <Russian>Мы могли бы использовать кого-то, чтобы научить наших студентов политике.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_UNIVERSITY_2</Tag>
         <English>Ask for a theologian. Religion is an important matter.</English>
         <French>Demandez un théologien. La religion est ce qui compte le plus.</French>
         <German>Fragt nach einem Theologen. Religion ist wichtig.</German>
+        <Russian>Просите прислать богослова. Религия — важный вопрос.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_UNIVERSITY_3</Tag>
         <English>What we need most is a medical doctor.</English>
         <French>Ce dont nous avons le plus besoin est un médecin. Nos soins doivent se développer.</French>
         <German>Was wir am dringendsten benötigen, ist ein Mediziner.</German>
+        <Russian>Больше всего нам нужен врач.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_WHEELWRIGHT_1</Tag>
         <English>Great idea! I would have done so myself.</English>
         <French>Très bonne idée ! Je n'aurais pas proposé mieux.</French>
         <German>Famoser Einfall! Hätte von mir sein können.</German>
+        <Russian>Отличная идея! Я бы и сам так сделал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_WHEELWRIGHT_2</Tag>
         <English>They don't seem to know what to do with the tools I give them. Take everything from these wastrels. They don't need it!</English>
         <French>Ils ne semblent pas savoir quoi faire de leurs outils. Reprenez tout à ces gaspilleurs, ils n'en ont pas besoin !</French>
         <German>Die wissen wohl nicht wohin mit den Eisenwaren, die ich ihnen zuteile. Nehmt diesen Verschwendern weg, was sie nicht benötigen!</German>
+        <Russian>Кажется, они не знают, что делать с инструментами, которые я им даю. Заберите всё у этих бродяг. Им это не нужно!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_WHEELWRIGHT_3</Tag>
         <English>What? Even more bread and beer? Nobody will become fat and lazy under my attendance. Tell these dawdlers to fast and pray!</English>
         <French>Pour produire encore plus de pain et de bière ? Veulent-ils tous finir paresseux et obèses ? Dites à ces lambins de jeûner et prier !</French>
         <German>Was? Noch mehr Brot und Bier? Fett und faul wollen die wohl werden. Sagt diesen Tagedieben, sie sollen fasten und beten.</German>
+        <Russian>Что? Еще больше хлеба и пива? Под моим наблюдением никто не станет толстым и ленивым. Скажи этим бездельникам поститься и молиться!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_WHEELWRIGHT_4</Tag>
         <English>Are they bored? These lazy dogs! I'll hurry them along!</English>
         <French>Pourquoi proposent-ils ça, ils s'ennuient ? Je vais leur apprendre à travailler !</French>
         <German>Langweilen sich diese faulen Hunde etwa? Die werde ich antreiben!</German>
+        <Russian>Им скучно? Ленивые собаки! Я потороплю их!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_WHEELWRIGHT_5</Tag>
         <English>Carts? For peasants? These meddlers will construct a magnificent carriage for me instead.</English>
         <French>Des chariots ? Pour des paysans ? Ces entremetteurs vont plutôt construire une magnifique voiture pour moi !</French>
         <German>Karren? Für Bauern? Diese Wichtigtuer sollen mir erst mal eine prachtvolle Amtskutsche bauen.</German>
+        <Russian>Тележки? Для крестьян? Вместо этого эти бездельники соорудят для меня великолепную карету.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_CATHEDRALS</Tag>
         <English>Be the first governor to build five abbeys. The Lord will be grateful and His Majesty will surely offer an earthly reward as well.</English>
         <French>Soyez le premier gouverneur à construire cinq abbayes. Le Seigneur saura vous le rendre et votre Roi saura vous récompenser.</French>
         <German>Errichtet als erster Gouverneur fünf Abteien in dieser heidnischen Wildnis. Nicht nur Euer himmlischer Herrscher wird Euch dies danken, sondern auch Euer weltlicher daheim - eine große Belohnung ist Euch gewiss.</German>
+        <Russian>Станьте первым губернатором, построившим пять аббатств. Господь будет благодарен, а Его Величество обязательно предложит и земную награду.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_CATHEDRALS_DONE_1</Tag>
         <English>Fill the coffers of the colonies, Your Majesty, and we will do further good deeds.</English>
         <French>Remplissons les coffres de nos colonies, votre Altesse, et nous ferons d'autres bonnes actions.</French>
         <German>Füllt die Schatzkammern unserer Kolonien, Eure Majestät, und wir werden weitere gute Werke vollbringen können.</German>
+        <Russian>Наполняйте казну колоний, Ваше Величество, а мы и дальше будем творить добрые дела.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_CATHEDRALS_DONE_2</Tag>
         <English>What good are our cathedrals if we have no experienced preachers?</English>
         <French>A quoi servent nos cathédrales si nous ne disposons pas de prédicateurs experimentés ?</French>
         <German>Was nutzen die schönsten Kathedralen, wenn dort niemand auf der Kanzel steht und das Wort Gottes verkündet?</German>
+        <Russian>Что толку в наших соборах, если у нас нет опытных проповедников?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_CATHEDRALS_DONE_3</Tag>
         <English>We are expecting many pilgrims. Please help us to guarantee their safe passage.</English>
         <French>Nous attendons de nombreux pélerins. Aidez nous à assurer la sécurité de leur passage.</French>
         <German>Sicher werden Wallfahrer aus aller Welt anreisen wollen. Bitte helft ihnen bei der Überfahrt.</German>
+        <Russian>Мы ожидаем много паломников. Пожалуйста, помогите нам гарантировать их безопасный проход.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_CATHEDRALS_DONE_4</Tag>
         <English>You want to help us, Your Majesty? Well, perhaps we can help you. Empty your workhouses and send the riffraff to the colonies. We will teach them piety and respectability. Ora et labora!</English>
         <French>Vous voulez nous aider, Votre Majesté ? Eh bien, peut-être pouvons-nous vous aider. Videz vos hospices et envoyez la racaille dans les colonies. Nous leur apprendrons la piété et la respectabilité. Ora et labora !</French>
         <German>Ihr wollt uns helfen, Eure Majestät? Nun, vielleicht können wir Euch helfen. Leert Eure Arbeitshäuser und expediert das Gesindel in die Kolonien. Wir werden ihnen schon Frömmigkeit und Ehrbarkeit einbläuen. Ora et labora!</German>
+        <Russian>Вы хотите помочь нам, Ваше Величество? Что ж, возможно, в таком случае и мы сможем вам помочь. Опустошите свои тюрьмы и отправьте всю эту шушеру в колонии. Мы научим их благочестию и респектабельности. Ora et labora!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_CATHEDRALS_DONE_5</Tag>
         <English>Life in the colonies is arduous and has made people cold-hearted. Many a rough fellow grumbles that the pomp of the houses of worship is a waste and that every priest is a parasite. Send us some tough guys to teach these heretics piety!</English>
         <French>La vie dans les colonies est pénible et en a rendu plus d'un insensible. Plus d'un rude grogne que le faste des lieux de culte est un gaspillage et que chaque prêtre est un parasite. Envoyez-nous des durs à cuire pour enseigner la piété à ces hérétiques !</French>
         <German>Das Leben in den Kolonien ist beschwerlich und hat viele kaltherzig werden lassen. So mancher raue Gesell murrt, der Prunk der Gotteshäuser sei Verschwendung und jeder Pfaffe ein Schmarotzer. Schickt uns ein paar harte Burschen, um diesen Ketzern Frömmigkeit einzubleuen!</German>
+        <Russian>Жизнь в колониях тяжела и сделала людей бессердечными. Многие грубияны ворчат, что пышность молельных домов — пустая трата времени, а каждый священник — тунеядец. Пришлите нам крепких парней, чтобы научить этих еретиков набожности!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_DOCKS</Tag>
         <English>Well, we were planning to build many harbours anyway; but an additional reward is always welcome.</English>
         <French>Bien, nous avions prévus de construire plusieurs ports de toute manière. Une récompense additionnelle ne peut être que la bienvenue.</French>
         <German>Wir wollten zwar sowieso mehrere Hafenstädte gründen, aber eine zusätzliche Belohnung ist natürlich sehr willkommen.</German>
+        <Russian>Что ж, мы и так собирались строить много гаваней, но дополнительная награда всегда приветствуется.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_DOCKS_DONE_1</Tag>
         <English>Gold is always useful.</English>
         <French>De l'or. Cela est utile pour tout.</French>
         <German>Gold kann man immer gebrauchen.</German>
+        <Russian>Золото всегда пригодится.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_DOCKS_DONE_2</Tag>
         <English>We would need a warship to protect our trade routes.</English>
         <French>Nous avons besoin d'un navire militaire pour protéger nos routes commerciales.</French>
         <German>Ein Kriegsschiff könnte unsere Handelswege beschützen.</German>
+        <Russian>Нам понадобится военный корабль для защиты наших торговых путей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_DOCKS_DONE_3</Tag>
         <English>Another trading ship is needed to keep up with our increasing production.</English>
         <French>Un nouveau bateau de commerce est nécessaire pour soutenir la production croissante.</French>
         <German>Wir brauchen ein weiters Handelsschiff, um mit unserer steigenden Produktion mitzuhalten.</German>
+        <Russian>Чтобы не отставать от нашего растущего производства, нужен еще один торговый корабль.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_MARKETS</Tag>
@@ -1020,24 +1067,28 @@
         <English>Your Majesty, we are very pleased that the Crown will support our efforts in the New World. We will prepare the chamber for the Honourable Lord.</English>
         <French>Your Majesty, we are very pleased that the crown will support our efforts in the New World. We will prepare the chamber for the honourable lord.</French>
         <German>Eure Majestät, wir sind Euch für Eure Unterstützung äußerst dankbar. In der Tat lässt die Verwaltung unserer Kolonien noch sehr zu wünschen übrig. Wir werden die Gemächer für seine Gnaden vorbereiten lassen.</German>
+        <Russian>Ваше Величество, мы очень рады, что Корона поддержит наши усилия в Новом Свете. Мы подготовим комнату для достопочтенного лорда.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GOVERNOR_2</Tag>
         <English>Pah, the courtier would be confounded. Majesty, we will manage our colonies ourselves and better than a courtier from Europe. We will use the money for the development of the colony instead of preparing the chamber for your spy.</English>
         <French>Pah, the courtier would be confounded. Majesty, we will manage our colonies ourselves and better than a courtier from Europe. We will use the money for the development of the colony instead of preparing the chamber for your spy.</French>
         <German>Noch ein Höfling, der uns hier sagt, was wir zu tun und zu lassen haben? Pah! Der soll bleiben wo der Pfeffer wächst, Eure Majestät. Ihr werdet sehen, wir werden die Kolonien für Euch auf Vordermann bringen!</German>
+        <Russian>Ну уж нет. Ваше Величество, мы будем управлять нашими колониями сами и гораздо лучше, чем какой-то хлыщ из Европы. Мы потратим деньги на развитие колонии вместо того, чтобы готовить камеру для вашего шпиона.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GOVERNOR_LOVER_1</Tag>
         <English>Search for this poor woman and bring her to the colonies. We can at least give her proper work and a steady income without angering the court too much. But do it quietly.</English>
         <French>Search for this poor woman and bring her to the colonies. We can at least give her proper work with a steady income without angering the court too much. But do it without making much noise.</French>
         <German>Sucht nach der armen Frau und bringt sie in die Kolonien. Wir können ihr zumindest eine anständige Arbeitstelle mit stetigem Einkommen beschaffen, ohne den Hof zu sehr zu verärgern. Lasst dies jedoch leise geschehen.</German>
+        <Russian>Найдите эту бедную женщину и приведите ее в колонии. По крайней мере, мы можем дать ей достойную работу и стабильный доход, не слишком раздражая суд. Но делайте это тихо.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GOVERNOR_LOVER_2</Tag>
         <English>Send that woman some money and inform His Majesty's court that we have taken care of the matter.</English>
         <French>Send that woman some money and inform the court of His Majesty that we have taken care about the matter.</French>
         <German>Schicket der Frau etwas Geld und informiert den Hof Seiner Majestät, dass wir uns der Sache angenommen haben.</German>
+        <Russian>Пошлите этой женщине немного денег и сообщите двору Его Величества, что мы позаботились об этом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GREAT_ARSENAL</Tag>
