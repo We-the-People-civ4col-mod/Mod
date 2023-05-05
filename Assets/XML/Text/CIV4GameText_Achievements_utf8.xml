@@ -3596,7 +3596,7 @@
         <English>Milord, it seems that your colonies are so successful that even the nobles are discovering the New World for themselves. It is now en vogue in Europe to spend time in the "adventurous" New World or to buy a country house here and organize hunts within sight of Indian camps. These nobles then have tales to tell back home.[NEWLINE][NEWLINE]That this place is teeming with hostile Natives, wild animals, unbearable climate and who knows what else doesn't dawn on most of them until they find themselves alone without servants and no one hands them the warmed towel or the sherry. Make sure you help them survive this surprising adventure. They can be very useful to you in the administration of your colony.[NEWLINE][NEWLINE]</English>
         <German>Mylord, es scheint, dass Eure Kolonien so erfolgreich sind, dass mittlerweile sogar etliche Adlige die Neue Welt für sich entdecken. Offenbar wird es in Europa gerade en vogue mal eine Zeit in der "abenteuerreichen" Neuen Welt zu verbringen oder sich hier ein Landhaus zuzulegen und Jagden in Sichtweite von Indianerlagern zu veranstalten. Dann hat man zuhause etwas zu berichten.[NEWLINE][NEWLINE]Dass es hier von feindlichen Ureinwohnern, wilden Tieren, unerträglichem Klima und wert weiß was sonst noch nur so wimmelt, dämmert den meisten erst, wenn sie hier ohne Diener dastehen und keiner ihnen das angewärmte Handtuch oder den Sherry reicht. Sorgt trotzdem dafür, dass dieses Abenteuer überleben. Sie werden Euch sehr nützlich bei der Verwaltung Eurer Kolonie sein.[NEWLINE][NEWLINE]</German>
 	</TEXT>
-   <TEXT>
+    <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_SETTLER</Tag>
         <English>The third settler</English>
         <German>Der dritte Siedlungsgründer</German>
@@ -3611,7 +3611,7 @@
         <English>Milord, the materials for the new settlement are piling up on the just-completed dock and the settlers are ready to leave. What are you waiting for?[NEWLINE][NEWLINE]The longer you wait, the more likely it is that the settlers here in the colony will catch some disease or scatter to the taverns and gambling dens at the harbour. You should get them on their way as soon as possible. Otherwise the best places for a new settlement will be snatched away by the competitors![NEWLINE][NEWLINE]</English>
         <German>Mylord, auf dem gerade erst fertiggestellten Dock stapeln sich die Materialien für die neue Siedlung und die Siedler sind bereit aufzubrechen. Worauf wartet Ihr denn noch?[NEWLINE][NEWLINE]Je länger Ihr wartet, desto eher stecken sich die Siedler hier in der Kolonie mit irgendwelchen Krankheiten an oder zerstreuen sich in die Wirtshäuser und Spielhöllen am Hafen. Ihr solltet sie möglichst bald auf den Weg bringen, damit Euch die besten Plätze für eine neue Siedlung nicht von der Konkurrenz weggeschnappt werden![NEWLINE][NEWLINE]</German>
 	</TEXT>
-   <TEXT>
+    <TEXT>
         <Tag>TXT_KEY_ACHIEVE_PENAL_COLONY</Tag>
         <English>Twelve criminals</English>
         <German>Zwölf Kleinkriminelle</German>
@@ -3662,7 +3662,7 @@
         <German>"[COLOR_SELECTED_TEXT]Wo soll ich nur die ganzen neuen Säcke mit dem Tee noch unterbringen, das Zeug wuchert ja wie Unkraut[COLOR_REVERT]", deutet der Teehändler auf die prall mit frischen Teeblättern gefüllten Säcke.[NEWLINE][NEWLINE] "[COLOR_SELECTED_TEXT]Die haben die beste Qualität und Ihr wolltet das "Zeug" ursprünglich gar nicht verkaufen, sondern nur die teure Importware aus dem Osten. Dabei wächst das hier direkt vor Eurer Haustür. Ihr solltet Euch wirklich freuen, dass der Zoll wegfällt[COLOR_REVERT]", freut sich die Teesammlerin.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja nun, das mag ja stimmen, aber wo bleibe ich mit meinen Chillischoten? Im Lager ist nicht genug Platz für beides[COLOR_REVERT]," beschwert sich die Gewürzhändlerin. "[COLOR_SELECTED_TEXT]Dafür finden wir auch noch Platz, ansonsten pflücke ich einfach jeden Tag neu. Frisch schmecken die eh viel besser.[COLOR_REVERT]", wirft die Gewürzpflückerin ein.[NEWLINE][NEWLINE]Ihr seid erfolgreich beim Aufbau einer Industrie zur Verarbeitung von Tee oder Gewürzen. Weiter so![NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]И куда мне девать все новые пакетики с чаем?[COLOR_REVERT]" - чайный торговец указывает на пакетики, до краев наполненные свежими чайными листьями.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]У них лучшее качество и вы изначально не хотели продавать "дрянь", а только дорогой импортный товар с Востока. А тут он растет прямо у вашего порога. Вы должны быть рады, что таможенная пошлина была отменена.[COLOR_REVERT]" - говорит сборщик чая.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да, может быть, это и здорово, но где я буду складывать свои мешки с перцем чили? У нас не хватит места на складе для всего этого добра.[COLOR_REVERT]" - жалуется торговец специями. "[COLOR_SELECTED_TEXT]Для всего найдется место, только на новом складе. Я видел сегодня утром, как его начали строить.[COLOR_REVERT]" — вставляет сборщик красного перца.[NEWLINE][NEWLINE]Вы успешно строите отрасль для обработки чая или специй. Так держать![NEWLINE][NEWLINE]</Russian>
     </TEXT>
-   <TEXT>
+    <TEXT>
         <Tag>TXT_KEY_ACHIEVE_LOGWOOD_COLLECTORS</Tag>
         <English>Three logwood collectors</English>
         <German>Drei Blauholzsammler</German>
@@ -3677,7 +3677,7 @@
         <English>Milord, the primeval forest always holds new surprises. Not only does it offer an almost inexhaustible supply of good wood for building colonies, it also offers very special types of wood that can even be used to make paints.[NEWLINE][NEWLINE]You would do well to send your craftsmen with special skills in finding such wood species out into the jungle. Procure the wood, extract the dyes, and make fine fabrics! The new citizens of your colony will snatch them from your hands - or sell them for expensive money to Europe![NEWLINE][NEWLINE]</English>
         <German>Mylord, der Urwald birgt doch immer wieder neue Überraschungen. Er bietet nicht nur einen schier unerschöpflichen Vorrat an guten Hölzern für den Aufbau der Kolonien, er bietet auch ganz besonderte Holzarten, aus denen man sogar Farben herstellen kann.[NEWLINE][NEWLINE]Ihr tut gut daran, Eure Handwerker mit besonderen Fähigkeiten im Aufspüren solcher Holzarten in den Urwald ausschwärmen zu lassen. Beschafft Euch das Holz, extrahiert die Farben und stellt edle Stoffe her! Die neuen Bürger Eurer Kolonie werden sie Euch aus den Händen reißen - oder verkauft sie für teures Geld nach Europa![NEWLINE][NEWLINE]</German>
 	</TEXT>
-   <TEXT>
+    <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_FORTS</Tag>
         <English>Five forts</English>
         <German>Fünf Forts</German>
@@ -3692,8 +3692,8 @@
         <English>Milord, once again you have completed a palisade and one of your cities is now much better protected.[NEWLINE][NEWLINE]Keep it up, then even the last savage will understand that there is nothing to get here. But don't overdo it with the deforestation, after all the trees have to grow again, so that our colonies and our new trading fleet will still find enough wood in 1-2 years.[NEWLINE][NEWLINE]</English>
         <German>Mylord, schon wieder habt Ihr eine Palisade fertiggestellt und eine Eurer Städte ist jetzt viel besser geschützt. [NEWLINE][NEWLINE]Macht nur weiter so, dann wird auch der letzte Wilde begreifen, dass es hier nichts zu holen gibt. Übertreibt es aber mit der Abholzung der Wälder auch nicht, immerhin müssen die Bäume ja auch wieder nachwachsen, damit unsere Kolonien und unsere neue Handelsflotte auch in 1-2 Jahren noch genug Holz vorfinden. [NEWLINE][NEWLINE]</German>
 	</TEXT>
-   <TEXT>
-        <Tag>ACHIEVE_LAW_AND_ORDER</Tag>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_LAW_AND_ORDER</Tag>
         <English>Many court buildings</English>
         <German>Viele Gerichtsgebäude</German>
     </TEXT>
@@ -3706,5 +3706,20 @@
         <Tag>TXT_KEY_ACHIEVE_LAW_AND_ORDER_TEXT</Tag>
         <English>Milord, law and order really rule in your colonies. Once again, you have completed a court building where small fish and big sharks...er I mean petty criminals and felons are brought to their just punishment.[NEWLINE][NEWLINE]However, you should also let people get away with something here and there. Life in the colonies is hard and many a person is fighting just for bare survival. The bigger the courthouse, the bigger the shadow it casts...[NEWLINE][NEWLINE]</English>
         <German>Mylord, in Euren Kolonien herrschen wirklich Recht und Ordnung. Schon wieder habt Ihr ein Gerichtsgebäude fertiggestellt, wo kleine Fische und große Haie...ähm ich meine Kleinkriminelle und Schwerverbrecher ihrer gerechten Strafe zugeführt werden.[NEWLINE][NEWLINE]Ihr solltet den Leuten allerdings auch hier und da mal was durchgehen lassen. Das Leben in den Kolonien ist hart und so manch einer kämpft nur ums nackte Überleben. Je größer das Gerichtsgebäude, desto größer auch der Schatten, den es wirft...[NEWLINE][NEWLINE]</German>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SHIP_EQUIPMENT</Tag>
+        <English>Many ship chandler</English>
+        <German>Viele Schiffsausrüster</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SHIP_EQUIPMENT_HEAD</Tag>
+        <English>Sails and ropes</English>
+        <German>Segel und Seile</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SHIP_EQUIPMENT_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]Alright guys, now listen to me[COLOR_REVERT]", the shipyard director intervenes forcefully, "[COLOR_SELECTED_TEXT]You both did a good job, but look at all the stuff that's still lying around. That ship there still needs to be fully equipped and that cart there also needs to be unloaded. Look, the buyer is already waiting impatiently and comes by every day. You can't just go to the next pub now![COLOR_REVERT][NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]So I'm done for today, my back hurts so much again[COLOR_REVERT]," the rope maker complains. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]But this does not come from braiding ropes,[COLOR_REVERT]", the sailmaker interjects laughing,[COLOR_SELECTED_TEXT]That's from all the visits to the harlots. The new redhead impresses you, admit it....[COLOR_REVERT]"[NEWLINE][NEWLINE]     </English>
+        <German>"[COLOR_SELECTED_TEXT]Also gut Jungs, jetzt hört mir mal zu[COLOR_REVERT]", schreitet der Werftdirektor energisch ein, "[COLOR_SELECTED_TEXT]ihr habt Eure Sache beide gut gemacht, aber schaut Euch das ganze Zeug an, dass hier noch rumliegt. Das Schiff da muss immer noch vollständig ausgerüstet werden und der Karren da muss auch noch abgeladen werden. Seht mal, der Käufer wartet schon ungeduldig und schaut jeden Tag hier vorbei. Ihr könnt doch jetzt nicht einfach in die nächste Kneipe gehen![COLOR_REVERT][NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Also ich bin fertig für heute, mein Rücken tut mir schon wieder so weh[COLOR_REVERT]," beschwert sich der Seilmacher. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das kommt aber nicht vom Seile flechten,[COLOR_REVERT]", wirft der Segelmacher lachend ein,[COLOR_SELECTED_TEXT]Das kommt von den vielen Besuchen bei den Animierdamen. Die neue Rothaarige hat es dir doch angetan, gib's ruhig zu....[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 	</TEXT>
 </Civ4GameText>
