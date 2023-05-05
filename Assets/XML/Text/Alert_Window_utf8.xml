@@ -59,17 +59,21 @@ See Readme for more details.</English>
     <TEXT>
         <Tag>TXT_KEY_ALERT_LARGE_ADDRESS_AWARE_HEADER</Tag>
         <English>Low memory warning</English>
+        <Russian>Предупреждение о нехватке памяти</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ALERT_LARGE_ADDRESS_AWARE</Tag>
         <English>Colonization.exe is currently set to use max 2 GB of RAM. We The People will sometimes need more than that and if so the game will crash. Do you want to quit the game and open the readme on how to patch the game to use 4 GB?</English>
+        <Russian>В настоящее время Colonization.exe настроен на использование не более 2 ГБ ОЗУ. Моду "We The People" иногда может понадобится больше и тогда игра вылетит. Хотите выйти из игры и открыть инструкцию о том, как пропатчить игру, чтобы использовать 4 ГБ?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ALERT_WRONG_STEAM_VERION_HEADER</Tag>
         <English>Wrong steam version</English>
+        <Russian>Неправильная Стим-версия игры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ALERT_WRONG_STEAM_VERION</Tag>
         <English>The currently selected version of Colonization has issues with mod compatibility. This can be fixed by telling steam to switch to the beta version. Do you want to quit now and open the readme on this issue?</English>
+        <Russian>Текущая выбранная версия Колонизации имеет проблемы с совместимостью модов. Это можно исправить, изменив в настройках Steam версию игры на бета-версию. Хотите выйти сейчас и открыть инструкцию по этому вопросу?</Russian>
     </TEXT>
 </Civ4GameText>
