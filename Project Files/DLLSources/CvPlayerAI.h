@@ -8,6 +8,7 @@
 #include "CvPlayer.h"
 #include "CvPlayerCivEffect.h"
 #include "CvTradeRouteGroup.h"
+#include "AITypes.h"
 
 class CvEventTriggerInfo;
 
@@ -464,6 +465,10 @@ public:
 	void AI_hurryBestDockUnits(int iHurryCount);
 	int AI_getColonialMilitaryModifier() const;
 	bool AI_shouldHurryUnit() const;
+
+	// Returns the amount of gold the AI is willing to spend on this particular purchase type given the price and amount purchased
+	int AI_getAvailableGold(PurchaseType::Category ePurchaseType, int iPrice, int iAmount = 1) const;
+	bool AI_isAvailableGold(PurchaseType::Category ePurchaseType, int iPrice, int iAmount = 1) const;
 
 	// TODO: Make protective and replace with a getter
 	int m_estimatedUnemploymentCount;
