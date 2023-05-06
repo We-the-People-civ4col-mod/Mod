@@ -9485,8 +9485,11 @@ void CvGameTextMgr::setScoreHelp(CvWStringBuffer &szString, PlayerTypes ePlayer)
 		int iFatherScore = 0;
 		int iFather = player.getFatherScore();
 		int iMaxFather = GC.getGameINLINE().getMaxFather();
-		iFatherScore = (GC.getDefineINT("SCORE_FATHER_FACTOR") * iFather) / iMaxFather;
-
+		if (iMaxFather != 0)
+		{
+			iFatherScore = (GC.getDefineINT("SCORE_FATHER_FACTOR") * iFather) / iMaxFather;
+		}
+		
 		int iScoreTaxFactor = player.getScoreTaxFactor();
 		int iSubTotal = iPopScore + iLandScore + iFatherScore;
 		int iTotalScore = iSubTotal * iScoreTaxFactor / 100;
