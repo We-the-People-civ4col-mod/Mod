@@ -3720,6 +3720,36 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SHIP_EQUIPMENT_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Alright guys, now listen to me[COLOR_REVERT]", the shipyard director intervenes forcefully, "[COLOR_SELECTED_TEXT]You both did a good job, but look at all the stuff that's still lying around. That ship there still needs to be fully equipped and that cart there also needs to be unloaded. Look, the buyer is already waiting impatiently and comes by every day. You can't just go to the next pub now![COLOR_REVERT][NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]So I'm done for today, my back hurts so much again[COLOR_REVERT]," the rope maker complains. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]But this does not come from braiding ropes,[COLOR_REVERT]", the sailmaker interjects laughing,[COLOR_SELECTED_TEXT]That's from all the visits to the harlots. The new redhead impresses you, admit it....[COLOR_REVERT]"[NEWLINE][NEWLINE]     </English>
-        <German>"[COLOR_SELECTED_TEXT]Also gut Jungs, jetzt hört mir mal zu[COLOR_REVERT]", schreitet der Werftdirektor energisch ein, "[COLOR_SELECTED_TEXT]ihr habt Eure Sache beide gut gemacht, aber schaut Euch das ganze Zeug an, dass hier noch rumliegt. Das Schiff da muss immer noch vollständig ausgerüstet werden und der Karren da muss auch noch abgeladen werden. Seht mal, der Käufer wartet schon ungeduldig und schaut jeden Tag hier vorbei. Ihr könnt doch jetzt nicht einfach in die nächste Kneipe gehen![COLOR_REVERT][NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Also ich bin fertig für heute, mein Rücken tut mir schon wieder so weh[COLOR_REVERT]," beschwert sich der Seilmacher. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das kommt aber nicht vom Seile flechten,[COLOR_REVERT]", wirft der Segelmacher lachend ein,[COLOR_SELECTED_TEXT]Das kommt von den vielen Besuchen bei den Animierdamen. Die neue Rothaarige hat es dir doch angetan, gib's ruhig zu....[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+        <German>"[COLOR_SELECTED_TEXT]Also gut Jungs, jetzt hört mir mal zu[COLOR_REVERT]", schreitet der Werftdirektor energisch ein, "[COLOR_SELECTED_TEXT]Ihr habt Eure Sache beide gut gemacht, aber schaut Euch das ganze Zeug an, dass hier noch rumliegt. Das Schiff da muss immer noch vollständig ausgerüstet werden und der Karren da muss auch noch abgeladen werden. Seht mal, der Käufer wartet schon ungeduldig und schaut jeden Tag hier vorbei. Ihr könnt doch jetzt nicht einfach in die nächste Kneipe gehen![COLOR_REVERT][NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Also ich bin fertig für heute, mein Rücken tut mir schon wieder so weh[COLOR_REVERT]," beschwert sich der Seilmacher. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das kommt aber nicht vom Seile flechten,[COLOR_REVERT]", wirft der Segelmacher lachend ein,[COLOR_SELECTED_TEXT]Das kommt von den vielen Besuchen bei den Animierdamen. Die neue Rothaarige hat es dir doch angetan, gib's ruhig zu....[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_CHARCOAL_POWDER</Tag>
+        <English>Black powder production</English>
+        <German>Schwarzpulver-Herstellung</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_CHARCOAL_POWDER_HEAD</Tag>
+        <English>Charcoal and black powder</English>
+        <German>Holzkohle und Schwarzpulver</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_CHARCOAL_POWDER_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]How can you stand this heat, my beard is already dripping again [COLOR_REVERT]", the fireworker interjects with a gasp. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well, I'm not sitting in the workshop all day with a ton of gunpowder around me[COLOR_REVERT]," the master charcoal burner returns with a sneer. "[COLOR_SELECTED_TEXT]The little bit of smoke doesn't bother me. Besides, I don't have to constantly worry about blowing up half the city." [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well, eyes open when choosing a career, that's all I'm saying. But enough palaver, back to work. The militia has already ordered more supplies. One could almost think that they eat the stuff instead of shooting it.[COLOR_REVERT]" [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]That's fine with me, as long as I get paid decently..."[NEWLINE][NEWLINE]</English>
+        <German>"[COLOR_SELECTED_TEXT]Wie hältst Du diese Hitze blos immer aus, mir tropft schon wieder der Schweiß den Bart runter[COLOR_REVERT]", wirft der Feuerwerker keuchend ein.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Naja, ich hocke ja auch nicht den ganzen Tag in der Werkstatt mit einer Tonne Schießpulver um mich rum[COLOR_REVERT]," gibt der Köhlermeister höhnisch grinsend zurück. "[COLOR_SELECTED_TEXT]Das bisschen Rauch macht mir nichts. Außerdem muss ich mir auch nicht ständig Gedanken machen, vielleicht gleich die halbe Stadt in die Luft zu jagen."[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Wohl war, Augen auf bei der Berufswahl sag ich da nur. Aber genug palavert, zurück an die Arbeit. Die Miliz hat schon wieder Nachschub bestellt. Man könnte fast meinen die Essen das Zeug, statt es zu verschießen.[COLOR_REVERT]" [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Soll mir recht sein, solange ich anständig bezahlt werde..."[NEWLINE][NEWLINE]</German>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIREWORKS</Tag>
+        <English>Black powder buildings</English>
+        <German>Schwarzpulver-Industrie</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIREWORKS_HEAD</Tag>
+        <English>Smoke over the city</English>
+        <German>Rauch über der Stadt</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIREWORKS_TEXT</Tag>
+        <English>Milord, the smoke over your colonies is so thick that one could think they are falling victim to an inferno. But not at all, it is very clever of you to make yourselves more and more independent of supplies from Europe, even in the delicate matter of black powder.[NEWLINE][NEWLINE]The king and your competitors won't like it, but soon you'll be making more powder than any other nation in the New World if you keep this up. Then, in any case, hardly anyone can dictate anything to you. But beware, this must inevitably lead to armed conflict.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, über Euren Kolonien steht der Rauch so dicht, dass man denken könnte, sie fallen einem Inferno zum Opfer. Aber mitnichten, sehr schlau von Euch, dass Ihr Euch auch bei dem heiklen Thema Schwarzpulver immer mehr von Lieferungen aus Europa unabhängig macht.[NEWLINE][NEWLINE]Dem König und Euren Konkurrenten wird das zwar nicht gefallen, aber bald stellt Ihr mehr Pulver her, als alle anderen Nationen in der Neuen Welt, wenn Ihr so weitermacht. Dann kann Euch ohnehin kaum noch jemand etwas vorschreiben. Aber Obacht, das muss zwangsläufig zu einem bewaffneten Konflikt führen.[NEWLINE][NEWLINE]</German>
 	</TEXT>
 </Civ4GameText>
