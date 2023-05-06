@@ -18,11 +18,6 @@ In general, this means arguments are named %d (number) and %s (string). No numbe
 
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
-        <Tag>TXT_KEY_ALERT_XML_ERROR</Tag>
-        <English>XML READ ERROR</English>
-        <Russian>ОШИБКА ЧТЕНИЯ XML</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_ALERT_MOD_IN_DOCUMENTS_HEADER</Tag>
         <English>Invalid Mod install location</English>
         <Russian>Некорректное место расположения мода</Russian>
@@ -75,5 +70,13 @@ See Readme for more details.</English>
         <Tag>TXT_KEY_ALERT_WRONG_STEAM_VERION</Tag>
         <English>The currently selected version of Colonization has issues with mod compatibility. This can be fixed by telling steam to switch to the beta version. Do you want to quit now and open the readme on this issue?</English>
         <Russian>Текущая выбранная версия Колонизации имеет проблемы с совместимостью модов. Это можно исправить, изменив в настройках Steam версию игры на бета-версию. Хотите выйти сейчас и открыть инструкцию по этому вопросу?</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ALERT_XML_HARDCODE_MISMATCH_HEADER</Tag>
+        <English>XML hardcoding error</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ALERT_XML_HARDCODE_MISMATCH</Tag>
+        <English>The DLL is compiled with the assumption that %s has a length of %d. However the xml file has an actual length of %d. This will cause issues and likely crashes and it needs to be fixed. This can be fixed by recompiling the DLL file, through the DLL file can't be updated while the game is running. Do you want to quit now?</English>
     </TEXT>
 </Civ4GameText>

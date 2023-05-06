@@ -27,6 +27,7 @@ my $output_init    = "";
 my $output_preload_dynamic     = "";
 my $output_preload_declaration = "";
 my $output_preload_function    = "";
+my $output_length_test         = "";
 
 $output .= "#ifndef AUTO_XML_ENUM\n";
 $output .= "#define AUTO_XML_ENUM\n";
@@ -84,9 +85,12 @@ $output_preload .= $output_preload_declaration;
 $output_preload .= "#ifndef HARDCODE_XML_VALUES\n";
 $output_preload .= $output_preload_dynamic;
 $output_preload .= "#endif\n";
-$output_preload .= "void setXmlLengthsAuto(const std::string& basePath)\n{\n";
+$output_preload .= "static void setXmlLengthsAuto(const std::string& basePath)\n{\n";
 $output_preload .= $output_preload_function;
-$output_preload .= "}\n";
+$output_preload .= "}\n\n";
+$output_preload .= "static void testAllXMLLengths()\n{\n";
+$output_preload .= $output_length_test;
+$output_preload .= "}\n\n";
 
 
 writeFile($FILE        , \$output        );
@@ -194,7 +198,9 @@ sub processFile
 		$output .= "#endif\n\n";
 		$output_preload_dynamic .= "const " . $enum . "& NUM_" . $TYPE . "_TYPES = NUM_" . $TYPE . "_TYPES_NON_CONST;\n" if $found_type;
 	}
-	$output .= "#define NUM_" . substr($enum, 0, -5) . "_TYPES NUM_" . $TYPE . "_TYPES\n\n"
+	$output .= "#define NUM_" . substr($enum, 0, -5) . "_TYPES NUM_" . $TYPE . "_TYPES\n\n";
+	# blindly test the lenght of all enum types. If it is dynamic, the length will be tested against itself, hence always true
+	$output_length_test .= "\tStartupCheck::CheckXmlLength(\"" . $enum . "\", NUM_" . $TYPE . "_TYPES, NUM_" . $TYPE . "_TYPES_NON_CONST);\n";
 }
 
 sub getTypesInFile

@@ -2,6 +2,7 @@
 #include "tinyxml2.h"
 
 #include"xmlFiles.h"
+#include "StartupErrorChecking.h"
 
 // small class where the constructor reads XML lengths
 // this way xml reading can take place prior to calling the CvGlobals constructor
@@ -79,4 +80,9 @@ loadXML::loadXML()
 	
 	setXmlLengthsAuto(basePath);
 	setupVARINFO();
+}
+
+void testHardcodedXML()
+{
+	testAllXMLLengths();
 }

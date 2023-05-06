@@ -14,6 +14,7 @@ enum WindowType
 	WINDOW_PUBLIC_MAPS_DISABLED,
 	WINDOW_LARGE_ADDRESS_AWARE,
 	WINDOW_WRONG_STEAM_VERION,
+	WINDOW_XML_HARDCODE_MISMATCH,
 };
 
 template <int T>
@@ -98,6 +99,19 @@ static AlertWindow::returnTypes showWindow<WINDOW_WRONG_STEAM_VERION>()
 	return window.openWindow();
 }
 
+template <>
+static AlertWindow::returnTypes showWindow<WINDOW_XML_HARDCODE_MISMATCH>(const char* type, int iSizeHardcoded, int iSizeXML)
+{
+	AlertWindow window;
+
+	window.header = "TXT_KEY_ALERT_XML_HARDCODE_MISMATCH_HEADER";
+	window.message = "TXT_KEY_ALERT_XML_HARDCODE_MISMATCH";
+	window.setIcon(AlertWindow::iconTypes::IconError);
+	window.addArgument(type);
+	window.setMessageArguments(iSizeHardcoded, iSizeXML);
+	window.setButtonLayout(AlertWindow::Buttons::BtnYesNo);
+	return window.openWindow();
+}
 
 static void TestDLLLocation()
 {
@@ -243,8 +257,22 @@ static void checkSteam()
 	}
 }
 
+void testHardcodedXML();
+
 namespace StartupCheck
 {
+	void CheckXmlLength(const char* type, int iSizeHardcoded, int iSizeXML)
+	{
+		if (iSizeHardcoded != iSizeXML)
+		{
+			AlertWindow::returnTypes returnVal = showWindow<WINDOW_XML_HARDCODE_MISMATCH>(type, iSizeHardcoded, iSizeXML);
+			if (returnVal == returnVal.clickedYes)
+			{
+				exit(0);
+			}
+		}
+	}
+
 	void testAllWindows()
 	{
 		AlertWindow window;
@@ -258,6 +286,7 @@ namespace StartupCheck
 		showWindow<WINDOW_PUBLIC_MAPS_DISABLED>();
 		showWindow<WINDOW_LARGE_ADDRESS_AWARE>();
 		showWindow<WINDOW_WRONG_STEAM_VERION>();
+		showWindow<WINDOW_XML_HARDCODE_MISMATCH>("TestTypes", 1, 2);
 
 		window.message = "Test complete";
 		window.openWindow();
@@ -275,5 +304,6 @@ namespace StartupCheck
 		checkPublicMapSetting();
 		checkLargeAddressAwareness();
 		checkSteam();
+		testHardcodedXML();
 	}
 }
