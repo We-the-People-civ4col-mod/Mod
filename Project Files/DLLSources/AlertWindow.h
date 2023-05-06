@@ -25,7 +25,7 @@ public:
 		returnTypes() : var(clickedOK) {}
 		returnTypes(enumTypes newVar) : var(newVar) {}
 
-		enumTypes getVar() { return var; }
+		operator enumTypes() const { return var; }
 	protected:
 		returnTypes(int iValue) : var((enumTypes)iValue) {}
 		enumTypes var;
@@ -48,7 +48,7 @@ public:
 		{
 			return var == rhs;
 		}
-		enumTypes getVar() { return var; }
+		operator enumTypes() const { return var; }
 	protected:
 		enumTypes var;
 	};
@@ -68,7 +68,7 @@ public:
 		};
 		Buttons() : var(BtnOK) {}
 		Buttons(enumTypes eType) : var(eType) {}
-		enumTypes getVar() { return var; }
+		operator enumTypes() const { return var; }
 	protected:
 		enumTypes var;
 	};

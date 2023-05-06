@@ -10,7 +10,7 @@ AlertWindow::AlertWindow()
 
 UINT getFlag(AlertWindow::Buttons var)
 {
-	switch (var.getVar())
+	switch (var)
 	{
 	case AlertWindow::Buttons::BtnAboutRetryIgnore: return MB_ABORTRETRYIGNORE;
 	case AlertWindow::Buttons::BtnCancelTryAgainContinue: return MB_CANCELTRYCONTINUE;
@@ -28,7 +28,7 @@ UINT getFlag(AlertWindow::Buttons var)
 
 UINT getFlag(AlertWindow::iconTypes var)
 {
-	switch (var.getVar())
+	switch (var)
 	{
 	case AlertWindow::iconTypes::IconNone: return 0;
 	case AlertWindow::iconTypes::IconError: return MB_ICONERROR;

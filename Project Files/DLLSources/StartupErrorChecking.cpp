@@ -108,7 +108,7 @@ static void TestDLLLocation()
 	if (name_exe != name_dll)
 	{
 		AlertWindow::returnTypes returnValue = showWindow<WINDOW_DLL_LOCATION>();
-		if (returnValue.getVar() == returnValue.clickedAbout)
+		if (returnValue == returnValue.clickedAbout)
 		{
 			exit(1);
 		}
@@ -168,7 +168,7 @@ static void checkPublicMapSetting()
 	catch (const std::exception&)
 	{
 		AlertWindow::returnTypes returnVal = showWindow<WINDOW_NO_INI_FILE>(iniFile.c_str());
-		switch (returnVal.getVar())
+		switch (returnVal)
 		{
 		case AlertWindow::returnTypes::clickedAbout: exit(0);
 		case AlertWindow::returnTypes::clickedRetry: 
@@ -185,7 +185,7 @@ static void checkPublicMapSetting()
 
 	{
 		AlertWindow::returnTypes returnVal = showWindow<WINDOW_PUBLIC_MAPS_DISABLED>();
-		if (returnVal.getVar() == returnVal.clickedYes)
+		if (returnVal == returnVal.clickedYes)
 		{
 			exit(0);
 		}
@@ -204,7 +204,7 @@ static void checkLargeAddressAwareness()
 	if (!largeAddressAware)
 	{
 		AlertWindow::returnTypes returnVal = showWindow<WINDOW_LARGE_ADDRESS_AWARE>();
-		if (returnVal.getVar() == returnVal.clickedYes)
+		if (returnVal == returnVal.clickedYes)
 		{
 			OpenURL::openReadme("ramProblem");
 			exit(0);
@@ -236,7 +236,7 @@ static void checkSteam()
 		}
 	}
 	AlertWindow::returnTypes returnVal = showWindow<WINDOW_WRONG_STEAM_VERION>();
-	if (returnVal.getVar() == returnVal.clickedYes)
+	if (returnVal == returnVal.clickedYes)
 	{
 		OpenURL::openReadme("wrongSteam");
 		exit(0);
