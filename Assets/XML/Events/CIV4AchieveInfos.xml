@@ -2408,7 +2408,7 @@
         <bAfterMove>0</bAfterMove>
         <HeaderTextKey>TXT_KEY_ACHIEVE_FIRST_ARMORY_HEAD</HeaderTextKey>
         <BodyTextKey>TXT_KEY_ACHIEVE_FIRST_ARMORY_TEXT</BodyTextKey>
-        <PictureFileName>Art/Achievements/mining.dds</PictureFileName>
+        <PictureFileName>Art/Achievements/armory.dds</PictureFileName>
         <iPictureX>360</iPictureX>
         <iPictureY>240</iPictureY>
         <iLowTurnNumber>0</iLowTurnNumber>
@@ -2922,6 +2922,10 @@
         <NumUnits>
             <NumUnits>
                 <UnitType>UNIT_HUNTER</UnitType>
+                <iNumber>5</iNumber>
+            </NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_SEALS_HUNTER</UnitType>
                 <iNumber>5</iNumber>
             </NumUnits>
         </NumUnits>
@@ -5686,6 +5690,146 @@
             </NumBuilding>
         </NumBuildings>
         <NumUnits/>
+        <NumProfessions/>
+        <YieldProduced/>
+    </AchieveInfo>
+    <AchieveInfo>
+        <Type>ACHIEVE_SURFACE_MINING</Type>
+        <Description>TXT_KEY_ACHIEVE_SURFACE_MINING</Description>
+        <bActive>1</bActive>
+        <bAfterMove>0</bAfterMove>
+        <HeaderTextKey>TXT_KEY_ACHIEVE_SURFACE_MINING_HEAD</HeaderTextKey>
+        <BodyTextKey>TXT_KEY_ACHIEVE_SURFACE_MINING_TEXT</BodyTextKey>
+        <PictureFileName>art/achievements/surface_mining.dds</PictureFileName>
+        <iPictureX>360</iPictureX>
+        <iPictureY>240</iPictureY>
+        <iLowTurnNumber>0</iLowTurnNumber>
+        <iHighTurnNumber>10000</iHighTurnNumber>
+        <bLandDiscovered>0</bLandDiscovered>
+        <bDiscoverEast>0</bDiscoverEast>
+        <bDiscoverWest>0</bDiscoverWest>
+        <iNumColonies>0</iNumColonies>
+        <iNumEuroContacts>0</iNumEuroContacts>
+        <iNumNativeContacts>0</iNumNativeContacts>
+        <iNumGoodsTraded>-1</iNumGoodsTraded>
+        <iNumCombatsWonNeeded>-1</iNumCombatsWonNeeded>
+        <iNumSeaCombatsWonNeeded>-1</iNumSeaCombatsWonNeeded>
+        <NumBuildings/>
+        <NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_PEAT_CUTTER</UnitType>
+                <iNumber>3</iNumber>
+            </NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_STONECUTTER</UnitType>
+                <iNumber>3</iNumber>
+            </NumUnits>
+        </NumUnits>
+        <NumProfessions/>
+        <YieldProduced/>
+    </AchieveInfo>
+    <AchieveInfo>
+        <Type>ACHIEVE_MINING</Type>
+        <Description>TXT_KEY_ACHIEVE_MINING</Description>
+        <bActive>1</bActive>
+        <bAfterMove>0</bAfterMove>
+        <HeaderTextKey>TXT_KEY_ACHIEVE_MINING_HEAD</HeaderTextKey>
+        <BodyTextKey>TXT_KEY_ACHIEVE_MINING_TEXT</BodyTextKey>
+        <PictureFileName>art/achievements/miners.dds</PictureFileName>
+        <iPictureX>360</iPictureX>
+        <iPictureY>240</iPictureY>
+        <iLowTurnNumber>0</iLowTurnNumber>
+        <iHighTurnNumber>10000</iHighTurnNumber>
+        <bLandDiscovered>0</bLandDiscovered>
+        <bDiscoverEast>0</bDiscoverEast>
+        <bDiscoverWest>0</bDiscoverWest>
+        <iNumColonies>0</iNumColonies>
+        <iNumEuroContacts>0</iNumEuroContacts>
+        <iNumNativeContacts>0</iNumNativeContacts>
+        <iNumGoodsTraded>-1</iNumGoodsTraded>
+        <iNumCombatsWonNeeded>-1</iNumCombatsWonNeeded>
+        <iNumSeaCombatsWonNeeded>-1</iNumSeaCombatsWonNeeded>
+        <NumBuildings/>
+        <NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_MINER</UnitType>
+                <iNumber>5</iNumber>
+            </NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_COAL_MINER</UnitType>
+                <iNumber>5</iNumber>
+            </NumUnits>
+        </NumUnits>
+        <NumProfessions/>
+        <YieldProduced/>
+    </AchieveInfo>
+    <AchieveInfo>
+        <Type>ACHIEVE_WEAPONSMITHS</Type>
+        <Description>TXT_KEY_ACHIEVE_WEAPONSMITHS</Description>
+        <bActive>1</bActive>
+        <bAfterMove>0</bAfterMove>
+        <HeaderTextKey>TXT_KEY_ACHIEVE_WEAPONSMITHS_HEAD</HeaderTextKey>
+        <BodyTextKey>TXT_KEY_ACHIEVE_WEAPONSMITHS_TEXT</BodyTextKey>
+        <PictureFileName>art/achievements/WEAPONSMITHS.dds</PictureFileName>
+        <iPictureX>360</iPictureX>
+        <iPictureY>240</iPictureY>
+        <iLowTurnNumber>0</iLowTurnNumber>
+        <iHighTurnNumber>10000</iHighTurnNumber>
+        <bLandDiscovered>0</bLandDiscovered>
+        <bDiscoverEast>0</bDiscoverEast>
+        <bDiscoverWest>0</bDiscoverWest>
+        <iNumColonies>0</iNumColonies>
+        <iNumEuroContacts>0</iNumEuroContacts>
+        <iNumNativeContacts>0</iNumNativeContacts>
+        <iNumGoodsTraded>-1</iNumGoodsTraded>
+        <iNumCombatsWonNeeded>-1</iNumCombatsWonNeeded>
+        <iNumSeaCombatsWonNeeded>-1</iNumSeaCombatsWonNeeded>
+        <NumBuildings/>
+        <NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_GUNSMITH</UnitType>
+                <iNumber>5</iNumber>
+            </NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_BLACKSMITH</UnitType>
+                <iNumber>5</iNumber>
+            </NumUnits>
+        </NumUnits>
+        <NumProfessions/>
+        <YieldProduced/>
+    </AchieveInfo>
+    <AchieveInfo>
+        <Type>ACHIEVE_SEVERAL_BREWER</Type>
+        <Description>TXT_KEY_ACHIEVE_SEVERAL_BREWER</Description>
+        <bActive>1</bActive>
+        <bAfterMove>0</bAfterMove>
+        <HeaderTextKey>TXT_KEY_ACHIEVE_SEVERAL_BREWER_HEAD</HeaderTextKey>
+        <BodyTextKey>TXT_KEY_ACHIEVE_SEVERAL_BREWER_TEXT</BodyTextKey>
+        <PictureFileName>art/achievements/pub.dds</PictureFileName>
+        <iPictureX>360</iPictureX>
+        <iPictureY>240</iPictureY>
+        <iLowTurnNumber>0</iLowTurnNumber>
+        <iHighTurnNumber>10000</iHighTurnNumber>
+        <bLandDiscovered>0</bLandDiscovered>
+        <bDiscoverEast>0</bDiscoverEast>
+        <bDiscoverWest>0</bDiscoverWest>
+        <iNumColonies>0</iNumColonies>
+        <iNumEuroContacts>0</iNumEuroContacts>
+        <iNumNativeContacts>0</iNumNativeContacts>
+        <iNumGoodsTraded>-1</iNumGoodsTraded>
+        <iNumCombatsWonNeeded>-1</iNumCombatsWonNeeded>
+        <iNumSeaCombatsWonNeeded>-1</iNumSeaCombatsWonNeeded>
+        <NumBuildings/>
+        <NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_BREWER</UnitType>
+                <iNumber>3</iNumber>
+            </NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_WINE_MAKER</UnitType>
+                <iNumber>3</iNumber>
+            </NumUnits>
+        </NumUnits>
         <NumProfessions/>
         <YieldProduced/>
     </AchieveInfo>

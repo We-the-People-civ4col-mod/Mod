@@ -3752,4 +3752,64 @@
         <English>Milord, the smoke over your colonies is so thick that one could think they are falling victim to an inferno. But not at all, it is very clever of you to make yourselves more and more independent of supplies from Europe, even in the delicate matter of black powder.[NEWLINE][NEWLINE]The king and your competitors won't like it, but soon you'll be making more powder than any other nation in the New World if you keep this up. Then, in any case, hardly anyone can dictate anything to you. But beware, this must inevitably lead to armed conflict.[NEWLINE][NEWLINE]</English>
         <German>Mylord, über Euren Kolonien steht der Rauch so dicht, dass man denken könnte, sie fallen einem Inferno zum Opfer. Aber mitnichten, sehr schlau von Euch, dass Ihr Euch auch bei dem heiklen Thema Schwarzpulver immer mehr von Lieferungen aus Europa unabhängig macht.[NEWLINE][NEWLINE]Dem König und Euren Konkurrenten wird das zwar nicht gefallen, aber bald stellt Ihr mehr Pulver her, als alle anderen Nationen in der Neuen Welt, wenn Ihr so weitermacht. Dann kann Euch ohnehin kaum noch jemand etwas vorschreiben. Aber Obacht, das muss zwangsläufig zu einem bewaffneten Konflikt führen.[NEWLINE][NEWLINE]</German>
 	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SURFACE_MINING</Tag>
+        <English>Many surface miners</English>
+        <German>Viele Tagebauarbeiter</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SURFACE_MINING_HEAD</Tag>
+        <English>Stone, clay and peat</English>
+        <German>Stein, Lehm und Torf</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SURFACE_MINING_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]My shovel is broken again, I urgently need a new shovel[COLOR_REVERT]", complains the peat cutter.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]You might want to try a pickaxe like this one[COLOR_REVERT]," the stone cutter returns well-meaning. "[COLOR_SELECTED_TEXT]I just got them out of the depot. It makes things go much faster." [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]What am I supposed to do with a pickaxe? I have to cut out the material in blocks and not chop it into pieces. You can't do that with a pickaxe.[COLOR_REVERT]" [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Yes, well, I only know about stones, not about this greasy stuff here..."[NEWLINE][NEWLINE]</English>
+        <German>"[COLOR_SELECTED_TEXT]Meine Schaufel ist schon wieder kaputt, ich brauch dringend eine neue Schaufel[COLOR_REVERT]", beschwert sich der Torfstecher.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Du solltest es vielleicht mal mit einer Spitzhacke wie dieser hier versuchen[COLOR_REVERT]," gibt der Steinbrecher wohlmeinend zurück. "[COLOR_SELECTED_TEXT]Die hab ich mir gerade erst aus dem Depot geholt. Damit geht's viel schneller voran."[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Was soll ich denn bitte mit einer Spitzhacke? Ich muss das Material doch in Blöcken heraustrennen und nicht in Stücke hauen. Das geht nicht mit einer Spitzhacke.[COLOR_REVERT]" [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, gut, ich kenn mich halt nur mit Steinen aus, nicht mit diesem schmierigen Zeug hier..."[NEWLINE][NEWLINE]</German>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_MINING</Tag>
+        <English>Many miners</English>
+        <German>Viele Minenarbeiter</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_MINING_HEAD</Tag>
+        <English>Ore and coal mining</English>
+        <German>Erz- und Kohleförderung</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_MINING_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]It's damn dark and stuffy in there, we really need to provide more light and ventilation[COLOR_REVERT]", complains the miner.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Yes, definitely. Take the new lantern with you next time. What about your shoulder, did it also get something when the big chunk came down[COLOR_REVERT]," the other miner answers questioningly.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Yes, I couldn't see properly and then it came down from the ceiling. The support beams won't hold the weight. It must be a big vein, the way it shimmers down there.[COLOR_REVERT]" [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Then we should call the others and keep digging here.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <German>"[COLOR_SELECTED_TEXT]Es ist verdammt dunkel und stickig da drin, wir müssen unbedingt für mehr Licht und Belüftung sorgen[COLOR_REVERT]", beschwert sich der Bergarbeiter.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, auf jeden Fall. Nimm das nächste Mal die neue Laterne hier mit. Was ist mit deiner Schulter, hat die auch was abbekommen, als der große Brocken runterkam[COLOR_REVERT]," gibt der andere Kumpel fragend zurück.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, ich konnte nicht richtig sehen und dann kam der auch schon von der Decke. Die Stützbalken halten das Gewicht nicht. Das muss eine große Ader sein, so wie dass da unten schimmert.[COLOR_REVERT]" [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Dann sollten wir die anderen rufen und hier weitergraben.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_WEAPONSMITHS</Tag>
+        <English>Many miners</English>
+        <German>Viele Minenarbeiter</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_WEAPONSMITHS_HEAD</Tag>
+        <English>Many weapon forging smiths</English>
+        <German>Viele waffenschmiedende Schmiede</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_WEAPONSMITHS_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]Dear Mr. Blacksmith, thank you for delivering the the blank weapons[COLOR_REVERT]", the gunsmith nods to the blacksmith.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]This is excellent quality master blacksmith, I can sell it directly to the dragoons. Together with my muskets, the troop is then well equipped.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Yes, your new muskets are also impressive, good work. The commander will be pleased. So cough up the money, you tightwad[COLOR_REVERT]," the blacksmith replies with a wide grin.[NEWLINE][NEWLINE]</English>
+        <German>"[COLOR_SELECTED_TEXT]Werter Herr Schmied, ich danke Euch für das Vorbeibringen der Blankwaffen[COLOR_REVERT]", nickt der Waffenschmied dem Schmied zu.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das ist hervorragende Qualität Meister Schmied, die kann ich direkt an die Dragoner weiterverkaufen. Zusammen mit meinen Musketen ist die Truppe dann bestens ausgerüstet.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, Eure neuen Musketen können sich aber auch sehen lassen, gute Arbeit. Der Kommandeur wird zufrieden sein. Dann rück' mal das Geld raus, du Geizkragen[COLOR_REVERT]," erwidert der Schmied mit einem breiten Grinsen.[NEWLINE][NEWLINE]</German>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SEVERAL_BREWER</Tag>
+        <English>Several distillers</English>
+        <German>Mehrere Destillateure</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SEVERAL_BREWER_HEAD</Tag>
+        <English>Liquid happiness</English>
+        <German>Flüssiges Glück</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SEVERAL_BREWER_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]Well boys, what can I serve you? Beer, whiskey or wine? [COLOR_REVERT]", asks the barkeeper.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well, we were actually just about to ask the exact same thing,[COLOR_REVERT]" grins the brewer and holds a mug of beer under the bartender's nose.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well, I'll be damned, then let's see - or better taste[COLOR_REVERT]," replies the bartender and grabs the mug.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hey, not so fast, leave some space for my wine, this is a particular good one[COLOR_REVERT]," interjects the winemaker, somewhat disappointed.[NEWLINE][NEWLINE]</English>
+        <German>"[COLOR_SELECTED_TEXT]Na Jungs, was darf ich Euch servieren? Bier, Whiskey oder lieber Wein? [COLOR_REVERT]", fragt der Barkeeper.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Tja, wir wollten eigentlich gerade genau dasselbe fragen,[COLOR_REVERT]" grinst der Brauer und hält dem Barkeeper einen Krug Bier unter die Nase.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ach, was Ihr nicht sagt, dann lasst mal sehen - oder besser probieren[COLOR_REVERT]," erwidert der Barkeeper und greift sich den Krug.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]He, nicht so hastig, lasst noch Platz für meinen Wein, das ist ein ganz besonders edler Tropfen[COLOR_REVERT]," wirft der Winzer etwas enttäuscht ein.[NEWLINE][NEWLINE]</German>
+	</TEXT>
 </Civ4GameText>
