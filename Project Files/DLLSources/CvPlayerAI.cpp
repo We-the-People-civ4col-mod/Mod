@@ -28,6 +28,7 @@
 
 #include "CvSavegame.h"
 #include "BetterBTSAI.h"
+#include "AITypes.h"
 
 #pragma push_macro("free")
 #pragma push_macro("new")
@@ -16627,4 +16628,19 @@ bool CvPlayerAI::AI_isStrategicFinalYield(YieldTypes eYield) const
 bool CvPlayerAI::AI_isStrategicYield(YieldTypes eYield) const
 {
 	return AI_isStrategicInputYield(eYield) || AI_isStrategicFinalYield(eYield);
+}
+
+
+int CvPlayerAI::AI_getAvailableGold(PurchaseType::Category ePurchaseType, int iPrice, int iAmount) const
+{
+	// TODO: check against strategy
+				// TAC - AI Military Buildup - koma13
+	//if (!AI().AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
+
+	return 0;
+}
+
+bool CvPlayerAI::AI_isAvailableGold(PurchaseType::Category ePurchaseType, int iPrice, int iAmount) const
+{
+	return AI_getAvailableGold(ePurchaseType, iPrice, iAmount) >= iPrice;
 }
