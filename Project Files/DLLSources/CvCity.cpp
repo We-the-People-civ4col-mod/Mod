@@ -9986,7 +9986,7 @@ void CvCity::doCityHappiness()
 	setCityTimerFestivitiesOrUnrest(iTimerResetValue);
 
 	// otherwise we do festivities - which give one of the father point categories by random;
-	int iMaxFoundingFatherPoints = GC.getFOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS();
+	int iMaxFoundingFatherPoints = GC.getFOUNDING_FATHER_POINTS_FESTIVITIES_HAPPINESS();
 	int iFoundingFatherPoints = GC.getGameINLINE().getSorenRandNum(iMaxFoundingFatherPoints, "Festivities Happiness Father Points");
 
 	int iNumFatherPointInfos = GC.getNumFatherPointInfos();
