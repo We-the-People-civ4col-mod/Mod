@@ -3812,4 +3812,34 @@
         <English>"[COLOR_SELECTED_TEXT]Well boys, what can I serve you? Beer, whiskey or wine? [COLOR_REVERT]", asks the barkeeper.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well, we were actually just about to ask the exact same thing,[COLOR_REVERT]" grins the brewer and holds a mug of beer under the bartender's nose.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well, I'll be damned, then let's see - or better taste[COLOR_REVERT]," replies the bartender and grabs the mug.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hey, not so fast, leave some space for my wine, this is a particular good one[COLOR_REVERT]," interjects the winemaker, somewhat disappointed.[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Na Jungs, was darf ich Euch servieren? Bier, Whiskey oder lieber Wein? [COLOR_REVERT]", fragt der Barkeeper.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Tja, wir wollten eigentlich gerade genau dasselbe fragen,[COLOR_REVERT]" grinst der Brauer und hält dem Barkeeper einen Krug Bier unter die Nase.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ach, was Ihr nicht sagt, dann lasst mal sehen - oder besser probieren[COLOR_REVERT]," erwidert der Barkeeper und greift sich den Krug.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]He, nicht so hastig, lasst noch Platz für meinen Wein, das ist ein ganz besonders edler Tropfen[COLOR_REVERT]," wirft der Winzer etwas enttäuscht ein.[NEWLINE][NEWLINE]</German>
 	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SEVERAL_FARMER</Tag>
+        <English>Several experienced farmer</English>
+        <German>Viele erfahrene Farmer</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SEVERAL_FARMER_HEAD</Tag>
+        <English>Food supply</English>
+        <German>Nahrungsmittelversorgung</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SEVERAL_FARMER_TEXT</Tag>
+        <English>Milord, You are well on your way to securing the food supply in your colonies. You already have several experienced farmers tilling your fields and reclaiming the wilderness.[NEWLINE][NEWLINE]Just keep it up so that there is enough food for the colonists and immigrants and your colonies keep growing. Only a good food supply ensures regulated growth.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Ihr seid auf einem guten Weg, die Nahrungsmittelversorgung in Euren Kolonien sicherzustellen. Ihr habe jetzt schon etliche erfahrene Bauern, die Eure Felder bestellen und die Wildnis urbar machen.[NEWLINE][NEWLINE]Macht nur weiter so, damit genug Nahrungsmittel für die Kolonisten und Neuankömmlinge zur Verfügung stehen und Eure Kolonien immer weiter wachsen. Nur eine gute Nahrungsmittelversorgung stellt geregeltes Wachstum sicher.[NEWLINE][NEWLINE]</German>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_MANY_FISHERMEN</Tag>
+        <English>Many experienced fishermen</English>
+        <German>Viele erfahrene Fischer</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_MANY_FISHERMEN_HEAD</Tag>
+        <English>Freshly-fried flying fish</English>
+        <German>Fischers Fritze</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_MANY_FISHERMEN_TEXT</Tag>
+        <English>Milord, fish is a nutritious and abundant resource off the coasts that will taste good to your colonists. You already have quite a few experienced fishermen manning your boats and bringing in their catch off the coasts.[NEWLINE][NEWLINE]Just keep it up so that there is enough food for the colonists and immigrants and your colonies keep growing. Only a good food supply ensures regulated growth.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Fisch ist eine nahrhafte und vor den Küsten reichlich vorhandene Ressource, die Euren Kolonisten gut schmecken wird. Ihr habe jetzt schon etliche erfahrene Fischer, die Eure Boote bemannen und vor den Küsten ihren Fang einbringen.[NEWLINE][NEWLINE]Macht nur weiter so, damit genug Nahrungsmittel für die Kolonisten und Neuankömmlinge zur Verfügung stehen und Eure Kolonien immer weiter wachsen. Nur eine gute Nahrungsmittelversorgung stellt geregeltes Wachstum sicher.[NEWLINE][NEWLINE]</German>
+	</TEXT>
 </Civ4GameText>
