@@ -3872,4 +3872,19 @@
         <English>"[COLOR_SELECTED_TEXT]Well, young man, have you used up all the milk again? How much can I sell you today, sir?[COLOR_REVERT]", asks the maid hopefully.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Yes, indeed. Since I opened the cheese dairy, the townspeople have been beating down my doors. We haven't had fresh cheese around here before. I need two buckets full,[COLOR_REVERT]" the cheese maker grins back and holds out the empty bucket from the last purchase to the maid.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ah, got that,[COLOR_REVERT]," grins the maid and grabs the bucket.[COLOR_SELECTED_TEXT]Have a seat then, it will take a while to fill these up[COLOR_REVERT]."[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Na, junger Mann, habt Ihr denn schon wieder alle Milch aufgebraucht? Wie viel darf ich Euch denn heute verkaufen, Sir?[COLOR_REVERT]", fragt die Magd hoffnungsvoll.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, in der Tat. Seitdem ich die Käserei eröffnet habe, rennt mir die Stadtbevölkerung die Türen ein. Frischen Käse hatten wir hier in der Gegend bisher nicht. Ich brauche zwei Eimer voll[COLOR_REVERT]" grinst der Käsemacher zurück und hält der Magd den leeren Eimer vom letzten Kauf hin.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ach, was Ihr nicht sagt, [COLOR_REVERT]," grinst die Magd und greift sich den Eimer." [COLOR_SELECTED_TEXT]Dann setzt Euch mal, es wird eine Weile dauern die hier voll zu machen[COLOR_REVERT]."[NEWLINE][NEWLINE]</German>
 	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SEVERAL_BREEDER</Tag>
+        <English>Several animal breeder</English>
+        <German>Mehrere Tierzüchter</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SEVERAL_BREEDER_HEAD</Tag>
+        <English>Successful breeding</English>
+        <German>Erfolgreiche Zucht</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_SEVERAL_BREEDER_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]Well, what are you feeding? Looks like my pigs also like it very much and not just the chickens[COLOR_REVERT]", the shepherd remarks casually.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ah, this is a proven mixture of corn kernels, oats and vegetable husks,[COLOR_REVERT]" says the poultry farmer. "[COLOR_SELECTED_TEXT]I'm sure your pigs would like it, but I don't think this little bucket will be enough for them. They eat from morning till night. My chickens are much more frugal.[COLOR_REVERT]" [NEWLINE][NEWLINE][COLOR_SELECTED_TEXT]But my pigs feed half the city when they are slaughtered, while your skinny hens are only good for the fox at best[COLOR_REVERT]," the shepherd happily returns with a smile.[NEWLINE][NEWLINE]</English>
+        <German>"[COLOR_SELECTED_TEXT]Na, was fütterst du denn da? Sieht so aus, als würde es meinen Schweinen auch sehr gut schmecken und nicht nur den Hühnern[COLOR_REVERT]", bemerkt der Hirte wie beiläufig.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ach, das ist eine bewährte Mischung aus Maiskörnern, Hafer und Gemüseschalen [COLOR_REVERT]" meint der Geflügelzüchter. "[COLOR_SELECTED_TEXT]Das würde deinen Schweinen bestimmt gut schmecken, aber ich glaube nicht, dass ihnen dieser kleine Eimer reichen wird. Die fressen doch von morgens bis abends. Meine Hühner sind da viel genügsamer.[COLOR_REVERT]." [NEWLINE][NEWLINE][COLOR_SELECTED_TEXT]Dafür wird von meinen Schweinen aber auch die halbe Stadt satt, wenn sie geschlachtet werden, während deine mageren Hennen höchstens für den Fuchs gut sind,[COLOR_REVERT]" gibt der Hirte fröhlich feixend zurück.[NEWLINE][NEWLINE]</German>
+	</TEXT>
 </Civ4GameText>
