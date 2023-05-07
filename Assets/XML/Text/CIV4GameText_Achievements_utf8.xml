@@ -3842,4 +3842,34 @@
         <English>Milord, fish is a nutritious and abundant resource off the coasts that will taste good to your colonists. You already have quite a few experienced fishermen manning your boats and bringing in their catch off the coasts.[NEWLINE][NEWLINE]Just keep it up so that there is enough food for the colonists and immigrants and your colonies keep growing. Only a good food supply ensures regulated growth.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Fisch ist eine nahrhafte und vor den Küsten reichlich vorhandene Ressource, die Euren Kolonisten gut schmecken wird. Ihr habe jetzt schon etliche erfahrene Fischer, die Eure Boote bemannen und vor den Küsten ihren Fang einbringen.[NEWLINE][NEWLINE]Macht nur weiter so, damit genug Nahrungsmittel für die Kolonisten und Neuankömmlinge zur Verfügung stehen und Eure Kolonien immer weiter wachsen. Nur eine gute Nahrungsmittelversorgung stellt geregeltes Wachstum sicher.[NEWLINE][NEWLINE]</German>
 	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THREE_MILKMAIDS</Tag>
+        <English>Three skilled milkmaids</English>
+        <German>Drei fleißige Milchmädchen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THREE_MILKMAIDS_HEAD</Tag>
+        <English>Fresh milk</English>
+        <German>Frische Milch</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THREE_MILKMAIDS_TEXT</Tag>
+        <English>Milord, You truly seem to have lost a farmer. You are developing a taste for agriculture that only the king himself seems to have.[NEWLINE][NEWLINE]You not only build farms, but also provide the right farmhands and maids to keep them running. You have just hired another milker who will lovingly take care of the cows. The cows will give twice as much milk. Wouldn't you like to be pampered by such a milkmaid?[NEWLINE][NEWLINE]</English>
+        <German>Mylord, an Euch scheint wahrlich ein Bauer verlorengegangen. Ihr entwickelt eine Vorliebe für die Landwirtschaft, wie es sonst offenbar nur der König selbst zu tun pflegt. [NEWLINE][NEWLINE]Ihr errichtet nicht nur Farmen, sondern sorgt auch für die richtigen Knechte und Mägde, die diese am Laufen halten. Gerade habt Ihr wieder eine Melkerin eingestellt, die sich liebevoll um die Kühe kümmern wird. Da geben die Kühe gleich noch mal doppelt so viel Milch. Würdet Ihr Euch nicht auch gern von so einer Mildmagd verwöhnen lassen?[NEWLINE][NEWLINE]</German>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THREE_CHEESE_MAKER</Tag>
+        <English>Three master cheese maker</English>
+        <German>Drei Meister Käsemacher </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THREE_CHEESE_MAKER_HEAD</Tag>
+        <English>Homemade Cheesemaking</English>
+        <German>Heimische Käseerzeugung</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THREE_CHEESE_MAKER_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]Well, young man, have you used up all the milk again? How much can I sell you today, sir?[COLOR_REVERT]", asks the maid hopefully.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Yes, indeed. Since I opened the cheese dairy, the townspeople have been beating down my doors. We haven't had fresh cheese around here before. I need two buckets full,[COLOR_REVERT]" the cheese maker grins back and holds out the empty bucket from the last purchase to the maid.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ah, got that,[COLOR_REVERT]," grins the maid and grabs the bucket.[COLOR_SELECTED_TEXT]Have a seat then, it will take a while to fill these up[COLOR_REVERT]."[NEWLINE][NEWLINE]</English>
+        <German>"[COLOR_SELECTED_TEXT]Na, junger Mann, habt Ihr denn schon wieder alle Milch aufgebraucht? Wie viel darf ich Euch denn heute verkaufen, Sir?[COLOR_REVERT]", fragt die Magd hoffnungsvoll.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, in der Tat. Seitdem ich die Käserei eröffnet habe, rennt mir die Stadtbevölkerung die Türen ein. Frischen Käse hatten wir hier in der Gegend bisher nicht. Ich brauche zwei Eimer voll[COLOR_REVERT]" grinst der Käsemacher zurück und hält der Magd den leeren Eimer vom letzten Kauf hin.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ach, was Ihr nicht sagt, [COLOR_REVERT]," grinst die Magd und greift sich den Eimer." [COLOR_SELECTED_TEXT]Dann setzt Euch mal, es wird eine Weile dauern die hier voll zu machen[COLOR_REVERT]."[NEWLINE][NEWLINE]</German>
+	</TEXT>
 </Civ4GameText>
