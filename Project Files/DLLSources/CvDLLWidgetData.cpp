@@ -3018,7 +3018,7 @@ void CvDLLWidgetData::parseShowOrHideYieldsHelp(CvWidgetDataStruct& widgetDataSt
 	CvCity* pHeadSelectedCity = gDLL->getInterfaceIFace()->getHeadSelectedCity();
 	if (pHeadSelectedCity != NULL)
 	{
-		szBuffer.append(L"Show or hide yields");
+		szBuffer.append(gDLL->getText("TXT_KEY_RESOURCETABLE_SHOW_OR_HIDE_YIELDS"));
 	}
 }
 

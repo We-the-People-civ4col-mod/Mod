@@ -1242,7 +1242,7 @@ class CvMainInterface:
 		self.appendtoHideState(screen, "AvoidGrowth", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
     
     #Erik Resource table
-		screen.setImageButton("ShowOrHideYields", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SHOW_OR_HIDE_YIELDS").getPath(), 0, yResolution * 85 / 100, ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_HELP_SHOW_OR_HIDE_YIELDS, -1, -1)
+		screen.setImageButton("ShowOrHideYields", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SHOW_OR_HIDE_YIELDS").getPath(), 0, yResolution * 82 / 100, ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_HELP_SHOW_OR_HIDE_YIELDS, -1, -1)
 		self.appendtoHideState(screen, "ShowOrHideYields", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
 		
 	# Garrison and Transport Panel
@@ -2674,8 +2674,8 @@ class CvMainInterface:
 						screen.hide( szString + "Icon")
 				
 				screen.show("ResourceTable")
-				for iYield in range(YieldTypes.NUM_YIELD_TYPES):
-					screen.show("YieldIcon" + str(iYield))
+				#for iYield in range(YieldTypes.NUM_YIELD_TYPES):
+				#	screen.show("YieldIcon" + str(iYield))
 
 			# CITY SCROLL BUTTONS
 				if (pHeadSelectedCity.getTeam() == gc.getGame().getActiveTeam()):
@@ -3166,10 +3166,10 @@ class CvMainInterface:
 				screen.setLabel(szRateLabel, "", self.setFontSize(szRate, 0), CvUtil.FONT_CENTER_JUSTIFY, iX, iY, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_RECEIVE_MOVE_CARGO_TO_CITY, -1, -1 )
 				ResourceHideList.append(szRateLabel)
 				
-				if SHOW_ALL_YIELDS == False and iStored == 0:
-					screen.hide("YieldIcon"+ str(index))
+				if SHOW_ALL_YIELDS == False and iStored == 0 and iRate == 0:
+					screen.hide("YieldIcon" + str(index))
 				else:
-					screen.show("YieldIcon"+ str(index))
+					screen.show("YieldIcon" + str(index))
 
 				screen.registerHideList(ResourceHideList, len(ResourceHideList), RESOURCE_TABLE_HIDE)
 			
@@ -3822,6 +3822,7 @@ class CvMainInterface:
 		global AUTOMATION_MANAGMENT_PANEL_UP
 		global MAP_MANAGMENT_PANEL_UP
 		global SHOW_ALL_YIELDS
+		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
 
 		if (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED):
 
@@ -3846,8 +3847,10 @@ class CvMainInterface:
 			elif (inputClass.getButtonType() == WidgetTypes.WIDGET_HELP_SHOW_OR_HIDE_YIELDS):
 				if SHOW_ALL_YIELDS == True:
 					SHOW_ALL_YIELDS = False
+					screen.overlayButtonGFC("ShowOrHideYields", ArtFileMgr.getInterfaceArtInfo("INTERFACE_HIGHLIGHTED_BUTTON").getPath())
 				else:
 					SHOW_ALL_YIELDS = True
+ 					screen.overlayButtonGFC("ShowOrHideYields", None)
 				self.updateResourceTable()
 # Achievements START
 			elif (inputClass.getButtonType() == WidgetTypes.WIDGET_GENERAL and inputClass.getData1() == ACHIEVE_ADVISOR_SCREEN_MI):

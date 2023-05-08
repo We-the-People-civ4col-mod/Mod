@@ -183,6 +183,11 @@
         <Russian>[ICON_BULLET]Не учитывается для [COLOR_UNIT_TEXT]общего объема хранилища, используемого в городе[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_RESOURCETABLE_SHOW_OR_HIDE_YIELDS</Tag>
+        <English>Toggle displayed yields</English>
+        <German>Waren ein-/ausblenden</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TEST_MESSAGE</Tag>
         <English>Test Message Number: %d1_pos</English>
     </TEXT>
