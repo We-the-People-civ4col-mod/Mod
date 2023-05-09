@@ -4236,7 +4236,7 @@
     </AchieveInfo>
     <AchieveInfo>
         <Type>ACHIEVE_FIRST_RUSSIAN_MISSIONARY</Type>
-        <Description>TXT_KEY_ACHIEVE_RUSSIAN_MISSIONARY</Description>
+        <Description>TXT_KEY_ACHIEVE_FIRST_RUSSIAN_MISSIONARY</Description>
         <bActive>1</bActive>
         <bAfterMove>0</bAfterMove>
         <HeaderTextKey>TXT_KEY_ACHIEVE_FIRST_RUSSIAN_MISSIONARY_HEAD</HeaderTextKey>
