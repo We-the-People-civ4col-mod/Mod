@@ -26881,7 +26881,7 @@
                     <iRangedWaveSize>0</iRangedWaveSize>
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_FISHERMAN</ArtDefineTag>
+                        <ArtDefineTag>ART_DEF_UNIT_DANSK_FISKER</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
                 <UnitMeshGroups>
