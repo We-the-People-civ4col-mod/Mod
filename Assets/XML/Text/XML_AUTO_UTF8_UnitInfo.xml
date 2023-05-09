@@ -1938,11 +1938,52 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FISHERMAN_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Expert fishermen[COLOR_REVERT] are masters of the sea.[NEWLINE]Any [LINK=TERRAIN_OCEAN]ocean[\LINK] or [LINK=TERRAIN_COAST]coast[\LINK] tile they work as [LINK=PROFESSION_FISHERMEN]fishermen[\LINK] will yield significantly more than its normal bounty of [LINK=YIELD_FOOD]food[\LINK].[PARAGRAPH:1]Expert fishermen can either be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK] or trained by [LINK=CONCEPT_NATIVES]Natives[\LINK], and they can also be [LINK=CONCEPT_TRAINING]apprenticed[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
+        <English>[COLOR_UNIT_TEXT]Expert fishermen[COLOR_REVERT] are masters of the sea.[NEWLINE]Any [LINK=TERRAIN_OCEAN]ocean[\LINK] or [LINK=TERRAIN_COAST]coast[\LINK] tile they work as [LINK=PROFESSION_FISHERMAN]fishermen[\LINK] will yield significantly more than its normal bounty of [LINK=YIELD_FOOD]food[\LINK].[PARAGRAPH:1]Expert fishermen can either be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK] or trained by [LINK=CONCEPT_NATIVES]Natives[\LINK], and they can also be [LINK=CONCEPT_TRAINING]apprenticed[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
         <French>Les [COLOR_UNIT_TEXT]Pêcheurs professionnels[COLOR_REVERT] sont les maîtres de la mer. Toute case d'océan ou de mer exploitée par un Pêcheur professionnel produira deux fois plus de [COLOR_HIGHLIGHT_TEXT]Nourriture[COLOR_REVERT] que la normale.</French>
         <German>Lässt man einen [COLOR_UNIT_TEXT]Erfahrenen Fischer[COLOR_REVERT] im Beruf des Fischers arbeiten, steigert er die Produktion um einen festen Betrag, nämlich um drei Einheiten pro Geländefeld. Setzt man ihn auf einem Feld mit Nahrungs-Bonusressource ein, gibt es eine Extra-Nahrungseinheit.[PARAGRAPH:2][COLOR_BUILDING_TEXT]Landungsstege[COLOR_REVERT] können in Küstenstädten gebaut werden und sind der erste Schritt, das Meer als Nahrungsquelle zu nutzen. Weist man einem Bürger den Beruf Fischer zu, sammelt er dann auf seinem Meeresfeld 1 Nahrungseinheit pro Runde. Bonusressourcen wie Krabben, Fische und Muscheln erhöhen den Ertrag.[PARAGRAPH:2]Der Landungssteg ist die Voraussetzung, einen [COLOR_BUILDING_TEXT]Hafen[COLOR_REVERT] und später [COLOR_BUILDING_TEXT]Schiffswerft[COLOR_REVERT] und [COLOR_BUILDING_TEXT]Trockendock[COLOR_REVERT] errichten zu können, um selber Schiffe zu bauen. Durch den Bau eines [COLOR_BUILDING_TEXT]Hafens[COLOR_REVERT] erzeugen Meeresfelder zudem 2 weitere Nahrungseinheiten.</German>
         <Italian>I [COLOR_UNIT_TEXT]pescatori esperti[COLOR_REVERT] sono i signori del mare. Qualsiasi casella marina in cui lavorino produce molto più [COLOR_HIGHLIGHT_TEXT]cibo[COLOR_REVERT] del normale.</Italian>
         <Spanish>Los [COLOR_UNIT_TEXT]Pescadores expertos[COLOR_REVERT] son los amos del mar. Cualquier casilla de océano o costa en la que faenen dará mucho más que la cantidad normal de [COLOR_HIGHLIGHT_TEXT]Alimentos[COLOR_REVERT].</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_DANSK_FISKER</Tag>
+        <English>Dansk Fisker:Dansk Fiskere</English>
+        <French>
+            <Text>Dansk Fisker:Dansk Fiskere</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Dansk Fisker:Dansk Fiskere</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Dansk Fisker:Dansk Fiskere</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Dansk Fisker:Dansk Fiskere</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+        <Russian>Опытный рыболов:Опытные рыболовы</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_DANSK_FISKER_PEDIA</Tag>
+        <English>In Denmark, fish was an essential part of the daily diet of people living on the coast. Especially important was herring fishing in the Middle Ages and whaling in the 15th and 16th centuries. When the Danes settled in Greenland from 1741 onwards, fishing and whaling instantly was an integral part of the economy in their settlements.</English>
+        <French>Au Danemark, le poisson était un élément essentiel de l'alimentation quotidienne des habitants de la côte. La pêche au hareng au Moyen Âge et la chasse à la baleine aux XVe et XVIe siècles étaient particulièrement importantes. Lorsque les Danois s'installent au Groenland à partir de 1741, la pêche et la chasse à la baleine font instantanément partie intégrante de l'économie de leurs colonies.</French>
+        <German>In Dänemark war Fisch ein wesentlicher Bestandteil der täglichen Ernährung der Küstenbewohner. Besonders wichtig war der Heringsfang im Mittelalter und der Walfang im 15. und 16. Jahrhundert. Als sich die Dänen ab 1741 in Grönland niederließen, waren Fischerei und Walfang sofort ein fester Bestandteil der Wirtschaft in ihren Siedlungen.</German>
+        <Italian>In Danimarca, il pesce era una parte essenziale della dieta quotidiana delle persone che vivevano sulla costa. Particolarmente importante era la pesca delle aringhe nel Medioevo e la caccia alle balene nel XV e XVI secolo. Quando i danesi si stabilirono in Groenlandia dal 1741 in poi, la pesca e la caccia alle balene divennero immediatamente parte integrante dell'economia dei loro insediamenti.</Italian>
+        <Spanish>En Dinamarca, el pescado era una parte esencial de la dieta diaria de las personas que vivían en la costa. Especialmente importante fue la pesca del arenque en la Edad Media y la caza de ballenas en los siglos XV y XVI. Cuando los daneses se establecieron en Groenlandia a partir de 1741, la pesca y la caza de ballenas se convirtieron instantáneamente en una parte integral de la economía de sus asentamientos.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_DANSK_FISKER_STRATEGY</Tag>
+        <English>The [COLOR_UNIT_TEXT]Dansk Fisker[COLOR_REVERT] is the unique national unit of Denmark and replaces the [LINK=UNIT_FISHERMAN]Expert Fisherman[\LINK]. They are unmatched in their fishing productivity.[NEWLINE]Any [LINK=TERRAIN_OCEAN]ocean[\LINK] or [LINK=TERRAIN_COAST]coast[\LINK] tile they work as [LINK=PROFESSION_FISHERMAN]fishermen[\LINK] will yield significantly more than its normal bounty of [LINK=YIELD_FOOD]food[\LINK] and even more than an Expert Fisherman.[PARAGRAPH:1]Dansk Fiskere can either be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK] or trained by [LINK=CONCEPT_NATIVES]Natives[\LINK], and they can also be [LINK=CONCEPT_TRAINING]apprenticed[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
+        <French>Le [COLOR_UNIT_TEXT]Dansk Fisker[COLOR_REVERT] est l'unique unité nationale du Danemark et remplace le [LINK=UNIT_FISHERMAN]Expert Fisherman[\LINK]. Leur productivité de pêche est inégalée.[NEWLINE]Toute [LINK=TERRAIN_OCEAN]océan[\LINK] ou [LINK=TERRAIN_COAST]cote[\LINK] sur laquelle ils travaillent en tant que [LINK=PROFESSION_FISHERMAN]pêcheur[\LINK] rapportera de manière significative plus que sa prime normale de [LINK=YIELD_FOOD]nourriture[\LINK] et même plus qu'un pêcheur expert.[PARAGRAPH:1]Dansk Fiskere peut être embauché en [LINK=CONCEPT_EUROPE]Europe[\LINK] ou formé par [ LINK=CONCEPT_NATIVES]Autochtones[\LINK], et ils peuvent également être [LINK=CONCEPT_TRAINING]apprentis[\LINK] dans une colonie avec une [LINK=BUILDING_SCHOOLHOUSE]école[\LINK] ou l'une de ses améliorations.</French>
+        <German>Der [COLOR_UNIT_TEXT]Dansk Fisker[COLOR_REVERT] ist die einzigartige nationale Einheit Dänemarks und ersetzt den [LINK=UNIT_FISHERMAN]Expert Fisherman[\LINK]. Sie sind unübertroffen in ihrer Fischfangproduktivität.[NEWLINE]Jedes [LINK=TERRAIN_OCEAN]Ozean[\LINK]- oder [LINK=TERRAIN_COAST]Küstenfeld[\LINK], auf dem sie als [LINK=PROFESSION_FISHERMAN]Fischer[\LINK] arbeiten, wird beträchtliche Erträge bringen mehr als seine normale Fülle an [LINK=YIELD_FOOD]Nahrung[\LINK] und sogar mehr als ein erfahrener Fischer.[PARAGRAPH:1]Dansk Fiskere kann entweder in [LINK=CONCEPT_EUROPE]Europa[\LINK] angeheuert oder von [ LINK=CONCEPT_NATIVES]Eingeborene[\LINK], und sie können auch in einer Kolonie mit einem [LINK=BUILDING_SCHOOLHOUSE]Schulhaus[\LINK] oder einem seiner Upgrades [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
+        <Italian>Il [COLOR_UNIT_TEXT]Dansk Fisker[COLOR_REVERT] è l'unica unità nazionale della Danimarca e sostituisce il [LINK=UNIT_FISHERMAN]Expert Fisherman[\LINK]. Non hanno eguali nella loro produttività di pesca.[NEWLINE]Qualsiasi riquadro [LINK=TERRAIN_OCEAN]oceano[\LINK] o [LINK=TERRAIN_COAST]costa[\LINK] in cui lavorano come [LINK=PROFESSION_FISHERMAN]pescatori[\LINK] produrrà un rendimento significativo più della sua normale abbondanza di [LINK=YIELD_FOOD]cibo[\LINK] e anche più di un pescatore esperto.[PARAGRAPH:1]Dansk Fiskere può essere assunto in [LINK=CONCEPT_EUROPE]Europa[\LINK] o addestrato da [ LINK=CONCEPT_NATIVES]Nativi[\LINK], e possono anche essere [LINK=CONCEPT_TRAINING]apprendisti[\LINK] in una colonia con una [LINK=BUILDING_SCHOOLHOUSE]scuola[\LINK] o uno dei suoi aggiornamenti.</Italian>
+        <Spanish>El [COLOR_UNIT_TEXT]Dansk Fisker[COLOR_REVERT] es la única unidad nacional de Dinamarca y reemplaza al [LINK=UNIT_FISHERMAN]Expert Fisherman[\LINK]. No tienen igual en su productividad pesquera.[NEWLINE]Cualquier mosaico de [LINK=TERRAIN_OCEAN]océano[\LINK] o [LINK=TERRAIN_COAST]costa[\LINK] en el que trabajen como [LINK=PROFESSION_FISHERMAN]pescadores[\LINK] producirá un rendimiento significativo más que su recompensa normal de [LINK=YIELD_FOOD]comida[\LINK] e incluso más que un pescador experto.[PARAGRAPH:1]Dansk Fiskere puede ser contratado en [LINK=CONCEPT_EUROPE]Europa[\LINK] o entrenado por [ LINK=CONCEPT_NATIVES]Nativos[\LINK], y también pueden ser [LINK=CONCEPT_TRAINING]aprendices[\LINK] en una colonia con una [LINK=BUILDING_SCHOOLHOUSE]escuela[\LINK] o una de sus mejoras.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FISHING_BOAT</Tag>
