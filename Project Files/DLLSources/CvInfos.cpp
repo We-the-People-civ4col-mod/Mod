@@ -13962,6 +13962,14 @@ bool CvGameText::readString(CvXMLLoadUtility* pXML, CvWString &wszTextVal, const
 		return false;
 	}
 
+	wszTextVal = convertFromUTF8(szBuffer, !bLanguageFound, szFileName, szType);
+	return true;
+}
+
+CvWString CvGameText::convertFromUTF8(const CvString szBuffer, bool bFallback, const char *szFileName, const char* szType)
+{
+	CvWString wszTextVal;
+
 	for (unsigned int i = 0; i < szBuffer.size(); ++i)
 	{
 		unsigned int iBuffer = szBuffer.c_str()[i] & 0xFF; // GetBits doesn't work if it wants to read all the bits, like 8 bits from a byte
@@ -14008,7 +14016,7 @@ bool CvGameText::readString(CvXMLLoadUtility* pXML, CvWString &wszTextVal, const
 
 		if (iReturnVal != 1)
 		{
-			if (!bLanguageFound && getCodePage() != 1252)
+			if (bFallback && getCodePage() != 1252)
 			{
 				// Convert to ASCII if possible as 0x7F and below is the same for all code pages
 				switch (iBuffer)
@@ -14152,7 +14160,7 @@ bool CvGameText::readString(CvXMLLoadUtility* pXML, CvWString &wszTextVal, const
 		wchar_t buffer = iChar;
 		wszTextVal.append(&buffer, 1);
 	}
-	return true;
+	return wszTextVal;
 }
 
 //////////////////////////////////////////////////////////////////////////

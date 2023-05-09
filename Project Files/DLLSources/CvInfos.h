@@ -4172,6 +4172,7 @@ public:
 
 
 	static bool readString(CvXMLLoadUtility* pXML, CvWString &szString, const char* szTagName, bool bUTF8, const char *szFileName, bool bLanguageFound, const char* szType);
+	static CvWString convertFromUTF8(const CvString sourceString, bool bFallback, const char *szFileName, const char* szType);
 
 protected:
 

@@ -95,9 +95,11 @@ void testStringCompare(tinyxml2::XMLElement* tagElement, CvString& str, const TC
 {
 	if (str == tagElement->GetText())
 	{
+		bool bFallback = false;
 		tinyxml2::XMLElement* translationElement = tagElement->NextSiblingElement(languageName);
 		if (translationElement == NULL)
 		{
+			bFallback = true;
 			translationElement = tagElement->NextSiblingElement("English");
 		}
 		if (translationElement == NULL)
@@ -105,6 +107,7 @@ void testStringCompare(tinyxml2::XMLElement* tagElement, CvString& str, const TC
 			return;
 		}
 		str = translationElement->GetText();
+		str = CvString(CvGameText::convertFromUTF8(str, bFallback, "Alert_Window_utf8.xml", tagElement->GetText()));
 	}
 }
 
