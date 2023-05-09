@@ -2136,6 +2136,10 @@
                     <UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
                     <UnitType>UNIT_CHRISTIAN_MISSIONARY_PROT</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FISHERMAN</UnitClassType>
+                    <UnitType>UNIT_DANSK_FISKER</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -4668,6 +4672,10 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FISHERMAN</UnitClassType>
+                    <UnitType>UNIT_DANSK_FISKER</UnitType>
                 </Unit>
             </Units>
             <Professions>
