@@ -3887,4 +3887,19 @@
         <English>"[COLOR_SELECTED_TEXT]Well, what are you feeding? Looks like my pigs also like it very much and not just the chickens[COLOR_REVERT]", the shepherd remarks casually.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ah, this is a proven mixture of corn kernels, oats and vegetable husks,[COLOR_REVERT]" says the poultry farmer. "[COLOR_SELECTED_TEXT]I'm sure your pigs would like it, but I don't think this little bucket will be enough for them. They eat from morning till night. My chickens are much more frugal.[COLOR_REVERT]" [NEWLINE][NEWLINE][COLOR_SELECTED_TEXT]But my pigs feed half the city when they are slaughtered, while your skinny hens are only good for the fox at best[COLOR_REVERT]," the shepherd happily returns with a smile.[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Na, was fütterst du denn da? Sieht so aus, als würde es meinen Schweinen auch sehr gut schmecken und nicht nur den Hühnern[COLOR_REVERT]", bemerkt der Hirte wie beiläufig.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ach, das ist eine bewährte Mischung aus Maiskörnern, Hafer und Gemüseschalen [COLOR_REVERT]" meint der Geflügelzüchter. "[COLOR_SELECTED_TEXT]Das würde deinen Schweinen bestimmt gut schmecken, aber ich glaube nicht, dass ihnen dieser kleine Eimer reichen wird. Die fressen doch von morgens bis abends. Meine Hühner sind da viel genügsamer.[COLOR_REVERT]." [NEWLINE][NEWLINE][COLOR_SELECTED_TEXT]Dafür wird von meinen Schweinen aber auch die halbe Stadt satt, wenn sie geschlachtet werden, während deine mageren Hennen höchstens für den Fuchs gut sind,[COLOR_REVERT]" gibt der Hirte fröhlich feixend zurück.[NEWLINE][NEWLINE]</German>
 	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_HOUSEHOLD_GOODS</Tag>
+        <English>Three master craftsmen</English>
+        <German>Drei Meister Handwerker</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_HOUSEHOLD_GOODS_HEAD</Tag>
+        <English>Household goods</English>
+        <German>Haushaltswaren</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_HOUSEHOLD_GOODS_TEXT</Tag>
+        <English>Milord, you also think about practical things. Several master craftsmen have settled in your colony. The supply of practical household goods and furniture to the colony is increasing.[NEWLINE][NEWLINE]This will especially please those who can and want to afford a little luxury. And for you certainly also some taxes should be gained through the trade with these goods...[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Ihr denkt auch an praktischen Dinge. Mehrere Meister-Handwerker haben sich in Eurer Kolonie niedergelassen. Die Versorgung der Kolonie mit praktischen Haushaltswaren und Möbeln nimmt zu.[NEWLINE][NEWLINE]Das wird besonders diejenigen freuen, die sich ein wenig Luxus leisten können und wollen. Und für Euch fällt sicher auch die eine oder andere Münze Steuern beim Handel damit ab...[NEWLINE][NEWLINE]</German>
+	</TEXT>
 </Civ4GameText>
