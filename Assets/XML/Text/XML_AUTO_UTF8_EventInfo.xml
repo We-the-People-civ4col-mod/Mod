@@ -2058,24 +2058,28 @@
         <English>Sail as fast as you can!</English>
         <French>Naviguons aussi vite que possible !</French>
         <German>Nutzt die Gelegenheit und segelt, was das Zeug hält!</German>
+        <Russian>Наконец-то нам улыбнулась удача - сильный попутный ветер поможет нам плыть гораздо быстрее!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TAVERN_VS_CHAPEL_1</Tag>
         <English>The chapel is the only reasonable choice for the children of Christ.</English>
         <French>Il n'y a d'autres choix raisonnable que celui de la chapelle pour les enfants du Christ.</French>
         <German>Die Kapelle ist die einzige sinnvolle Wahl für die Kinder Christi.</German>
+        <Russian>Часовня — единственный разумный выбор для детей Христовых.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TAVERN_VS_CHAPEL_2</Tag>
         <English>The tavern is more important because it will help to bring the citizens closer together.</English>
         <French>La taverne permettra de rassembler les citoyens ensemble. Il s'agit du choix le plus sensé.</French>
         <German>Die Taverne ist wichtiger, da sie helfen wird, die Gemeinde näher zusammen zu bringen.</German>
+        <Russian>Таверна более важна, потому что она поможет сблизиться новым гражданам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TAVERN_VS_CHAPEL_3</Tag>
         <English>To avoid any arguments, the materials shall be confiscated and sold.</English>
         <French>Pour éviter tout argument, les matériaux seront confisqués et vendus. Qu'on ne me dérange plus pour ces enfantillages !</French>
         <German>Um Streit zu verhindern, sollen die Materialien einfach verkauft werden.</German>
+        <Russian>Во избежание каких-либо споров материалы подлежат конфискации и последующей реализации.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TERRAX_1</Tag>
