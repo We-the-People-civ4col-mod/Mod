@@ -300,6 +300,47 @@
         <Spanish>Los [COLOR_UNIT_TEXT]Maestros herreros[COLOR_REVERT] son máquinas de fabricación de Herramientas. Cuando se los asigne a crear [COLOR_HIGHLIGHT_TEXT]Herramientas[COLOR_REVERT] a partir de [COLOR_HIGHLIGHT_TEXT]Mineral[COLOR_REVERT], crearán el doble de ellas que un [COLOR_UNIT_TEXT]Colono libre[COLOR_REVERT] crearía en el mismo tiempo.</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_JARNSMED</Tag>
+        <English>Järnsmed:Järnsmeder</English>
+        <French>
+            <Text>Järnsmed:Järnsmeder</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Järnsmed:Järnsmeder</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Järnsmed:Järnsmeder</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Järnsmed:Järnsmeder</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+        <Russian>Мастер кузнец:Мастера кузнецы</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_JARNSMED_PEDIA</Tag>
+        <English>JARNSMED TO DO The skilled blacksmith is as much a musician as a craftsman.[NEWLINE]The heating, hammering, and cooling of the raw metal benefits from rhythm attained through years of practice.[NEWLINE]Imagine trying to build a home without nails, hammers or saws, or clearing a field without an axe, and you begin to see why a skilled blacksmith is critical to the success of a growing colony.</English>
+        <French>Le forgeron expérimenté est autant musicien qu'artisan. Chauffer, marteler et refroidir le métal brut se font selon un rythme qui ne peut être atteint qu'à travers des années de pratique. Imaginez-vous en train d'essayer de construire une maison sans clou, marteau ni scie, ou de défricher un champ sans hache, et vous comprendrez pourquoi les forgerons expérimentés sont essentiels au succès d'une colonie naissante.</French>
+        <German>Ein fähiger Schmied ist ebenso Musiker wie Handwerker. Das Erhitzen, Schlagen und Kühlen des rohen Metalls verlangt nach einem steten Rhythmus, der nur in den Jahren der Ausbildung erlernt werden kann. Wenn man sich vorstellt, wie ein Haus ohne Nägel, Hämmer und Sägen gebaut oder wie ein Wald ohne Axt gelichtet werden soll, begreift man schnell, warum ein Schmied für den Erfolg einer wachsenden Kolonie unerlässlich ist.</German>
+        <Italian>Un abile fabbro è tanto musicista quanto artigiano. Riscaldare, martellare e raffreddare il metallo grezzo richiede un ritmo che si può imparare solamente attraverso anni di pratica. Immagina di dover costruire una casa senza chiodi, martelli o seghe, o di dover abbattere un albero senza un'ascia, e comincerai a capire perché un abile fabbro è fondamentale per il successo di una colonia in crescita.</Italian>
+        <Spanish>El habilidoso Herrero tiene tanto de artesano como de músico. El calentamiento, martilleo y enfriamiento del metal necesita de un ritmo concreto que solo puede conseguirse con años de práctica. Solo hay que intentar imaginar cómo construir una casa sin clavos, martillos o sierras o cómo desbrozar un campo sin un hacha para empezar a darse cuenta de por qué un buen Herrero es indispensable para que una colonia prospere.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_JARNSMED_STRATEGY</Tag>
+        <English>[COLOR_UNIT_TEXT]JARNSMED TO DO Master blacksmiths[COLOR_REVERT] are tool- and blade-making dynamos.[NEWLINE]When employed as [LINK=PROFESSION_BLACKSMITH]toolsmiths[\LINK] or [LINK=PROFESSION_BLADESMITH]bladesmiths[\LINK] to create [LINK=YIELD_TOOLS]tools[\LINK] or [LINK=YIELD_BLADES]blades[\LINK] from [LINK=YIELD_ORE]ore[\LINK], they will create double the number of tools or blades that a regular colonist would create in the same amount of time.[PARAGRAPH:1]Master blacksmiths can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also [LINK=CONCEPT_TRAINING]apprentice[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its upgrades.</English>
+        <French>Les [COLOR_UNIT_TEXT]Maîtres forgerons[COLOR_REVERT] sont des machines à fabriquer des outils. Quand on les assigne à la création d'[COLOR_HIGHLIGHT_TEXT]outils[COLOR_REVERT] à partir de [COLOR_HIGHLIGHT_TEXT]minerai de fer[COLOR_REVERT], ils produisent deux fois plus d'[COLOR_HIGHLIGHT_TEXT]outils[COLOR_REVERT] que ne le ferait un [COLOR_UNIT_TEXT]colon libre[COLOR_REVERT].</French>
+        <German>Am besten geeignet für den Beruf des [COLOR_HIGHLIGHT_TEXT]Schmieds[COLOR_REVERT] sind die [COLOR_UNIT_TEXT]Meister-Schmiede[COLOR_REVERT]. Wenn sie [COLOR_HIGHLIGHT_TEXT]Eisenwaren[COLOR_REVERT] aus [COLOR_HIGHLIGHT_TEXT]Eisen[COLOR_REVERT] herstellen, produzieren sie doppelt so viele Eisenwaren wie ein Freier Kolonist in der gleichen Zeit. Allerdings verbraucht der Meister-Schmied auch doppelt so viel Eisen.</German>
+        <Italian>I [COLOR_UNIT_TEXT]mastri fabbri[COLOR_REVERT] sono delle macchine per creare attrezzi. Quando ricevono il compito di creare [COLOR_HIGHLIGHT_TEXT]attrezzi[COLOR_REVERT] con del [COLOR_HIGHLIGHT_TEXT]minerale[COLOR_REVERT], sono in grado di creare il doppio di [COLOR_HIGHLIGHT_TEXT]attrezzi[COLOR_REVERT] rispetto a quelli che riesce a creare un [COLOR_UNIT_TEXT]libero colono[COLOR_REVERT] nello stesso tempo.</Italian>
+        <Spanish>Los [COLOR_UNIT_TEXT]Maestros herreros[COLOR_REVERT] son máquinas de fabricación de Herramientas. Cuando se los asigne a crear [COLOR_HIGHLIGHT_TEXT]Herramientas[COLOR_REVERT] a partir de [COLOR_HIGHLIGHT_TEXT]Mineral[COLOR_REVERT], crearán el doble de ellas que un [COLOR_UNIT_TEXT]Colono libre[COLOR_REVERT] crearía en el mismo tiempo.</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_BLADES</Tag>
         <English>Blades</English>
         <French>
@@ -624,6 +665,47 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_CARPENTER_STRATEGY</Tag>
         <English>[COLOR_UNIT_TEXT]Master carpenters[COLOR_REVERT] can construct buildings and ships faster than any other colonist.[NEWLINE]Assigning them to the [LINK=PROFESSION_CARPENTER]carpenter[\LINK] profession in your settlement will get all your construction jobs completed in half the usual time, because they generate twice as much [LINK=YIELD_HAMMERS]production[\LINK] as other colonists, as long as enough [LINK=YIELD_LUMBER]lumber[\LINK] is available.[PARAGRAPH:1]Master carpenters can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also [LINK=CONCEPT_TRAINING]apprentice[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
+        <French>Les [COLOR_UNIT_TEXT]Maîtres menuisiers[COLOR_REVERT] peuvent construire des bâtiments et des bateaux bien plus vite que n'importe quel autre colon. Si vous les assignez à la profession de menuisiers, ils bâtiront vos projets deux fois plus rapidement qu'un colon ordinaire.</French>
+        <German>[COLOR_UNIT_TEXT]Zimmermeister[COLOR_REVERT] können Gebäude und Schiffe rascher bauen als jeder andere Bürger. Weist man ihnen den Beruf des Zimmermanns zu, produzieren sie für alle Bauprojekte doppelt so viele Hämmer wie Freie Kolonisten.</German>
+        <Italian>I [COLOR_UNIT_TEXT]mastri carpentieri[COLOR_REVERT] possono costruire edifici e navi più rapidamente di qualsiasi altro colono. Assegnarne uno alla professione di carpentiere nel tuo insediamento farà in modo che tutti i lavori di costruzione vengano finiti nella metà del tempo.</Italian>
+        <Spanish>Los [COLOR_UNIT_TEXT]Maestros carpinteros[COLOR_REVERT] pueden construir barcos y edificios más rápido que cualquier otro Colono. Asignarlos a la profesión de Carpintero en vuestro asentamiento hará que tengáis terminados todos los trabajos de construcción en la mitad de tiempo.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_TIMMERMAN</Tag>
+        <English>Timmerman:Timmermannen</English>
+        <French>
+            <Text>Timmerman:Timmermannen</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Timmerman:Timmermannen</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Timmerman:Timmermannen</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Timmerman:Timmermannen</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+        <Russian>Мастер плотник:Мастера плотники</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_TIMMERMAN_PEDIA</Tag>
+        <English>TIMMERMAN TO DO The carpenter transforms lumber into practical and pleasing objects.[NEWLINE]While anyone can use a saw or a plane, it takes a skilled craftsman to turn out the many items needed quickly by a growing colony.[NEWLINE]The blacksmith needs a counter to display his wares, the preacher benches for the faithful. Buckets for the wells; seats for the statehouse.[NEWLINE]Only a skilled carpenter can fill every need while ensuring speed and quality.</English>
+        <French>Le menuisier est capable de façonner le bois en divers objets pratiques ou décoratifs. Et même s'il est à portée de tout un chacun de manier une scie ou un rabot, seul un artisan expérimenté peut produire rapidement les nombreux objets requis par une colonie en pleine expansion. Le forgeron a besoin d'un nouveau porte-outils pour exhiber sa marchandise, le pasteur de bancs pour les fidèles. Il faut des seaux pour les puits, des sièges pour l'Assemblée... Seul un Menuisier expérimenté peut combler les besoins de chacun tout en garantissant rapidité et qualité.</French>
+        <German>Der Zimmermann ist in der Lage aus Holz eine Vielzahl praktischer und schöner Gegenstände zu erschaffen. Und auch wenn jeder Säge oder Hobel benutzen kann, braucht man schon einen fähigen Handwerker, um schnell die vielen Objekte zu bauen, die eine neue Kolonie benötigt. Der Schmied braucht ein neues Regal, um seine Ware auszustellen, der Prediger Bänke für die Gläubigen. Eimer für die Brunnen, Sitze für das Kapitol; nur ein fähiger Zimmermann kann jeden Bedarf decken und dabei schnell gute Qualität liefern.</German>
+        <Italian>Il carpentiere è in grado di realizzare oggetti pratici e piacevoli con il legname. Anche se chiunque è in grado di usare una sega o una pialla, ci vuole un abile artigiano per realizzare rapidamente i vari oggetti necessari a una colonia in crescita. Il fabbro ha bisogno di un nuovo scaffale per mettere in mostra la propria merce, al predicatore servono panche per i fedeli. Secchi per i pozzi; sedie per il municipio. Solo un abile carpentiere può soddisfare ogni richiesta assicurando contemporaneamente rapidità e qualità.</Italian>
+        <Spanish>El Carpintero es capaz de convertir la Madera en una gran variedad de objetos prácticos y agradables. Y, aunque todo el mundo es capaz de usar una sierra o un cepillo de carpintero, solo un artesano habilidoso puede producir rápidamente los diversos objetos que necesita una colonia. El Herrero necesita un nuevo estante en el que mostrar sus mercancías; y el Predicador, bancos para los fieles. Hay que hacer cubos para los pozos y sillas para el Ayuntamiento. Únicamente un Carpintero habilidoso puede satisfacer todas las necesidades con rapidez y calidad.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_TIMMERMAN_STRATEGY</Tag>
+        <English>[COLOR_UNIT_TEXT]TIMMERMAN TO DO Master carpenters[COLOR_REVERT] can construct buildings and ships faster than any other colonist.[NEWLINE]Assigning them to the [LINK=PROFESSION_CARPENTER]carpenter[\LINK] profession in your settlement will get all your construction jobs completed in half the usual time, because they generate twice as much [LINK=YIELD_HAMMERS]production[\LINK] as other colonists, as long as enough [LINK=YIELD_LUMBER]lumber[\LINK] is available.[PARAGRAPH:1]Master carpenters can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also [LINK=CONCEPT_TRAINING]apprentice[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
         <French>Les [COLOR_UNIT_TEXT]Maîtres menuisiers[COLOR_REVERT] peuvent construire des bâtiments et des bateaux bien plus vite que n'importe quel autre colon. Si vous les assignez à la profession de menuisiers, ils bâtiront vos projets deux fois plus rapidement qu'un colon ordinaire.</French>
         <German>[COLOR_UNIT_TEXT]Zimmermeister[COLOR_REVERT] können Gebäude und Schiffe rascher bauen als jeder andere Bürger. Weist man ihnen den Beruf des Zimmermanns zu, produzieren sie für alle Bauprojekte doppelt so viele Hämmer wie Freie Kolonisten.</German>
         <Italian>I [COLOR_UNIT_TEXT]mastri carpentieri[COLOR_REVERT] possono costruire edifici e navi più rapidamente di qualsiasi altro colono. Assegnarne uno alla professione di carpentiere nel tuo insediamento farà in modo che tutti i lavori di costruzione vengano finiti nella metà del tempo.</Italian>
@@ -3426,6 +3508,47 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_LUMBERJACK_STRATEGY</Tag>
         <English>No forest can hope to stand long before an [COLOR_UNIT_TEXT]expert lumberjack[COLOR_REVERT].[NEWLINE]If he is assigned to either the [COLOR_HIGHLIGHT_TEXT]lumberjack[COLOR_REVERT] ([LINK=PROFESSION_LUMBERJACK]lumber[\LINK], [LINK=PROFESSION_VALUABLE_WOOD_LUMBERJACK]exotic wood[\LINK] or [LINK=PROFESSION_HARDWOOD_LUMBERJACK]hardwood[\LINK]) profession, any forest tile worked by him will yield three more [LINK=YIELD_LUMBER]lumber[\LINK], [LINK=YIELD_VALUABLE_WOOD]exotic wood[\LINK] or [LINK=YIELD_HARDWOOD]hardwood[\LINK]. On the other hand, as a [LINK=PROFESSION_BLOODWOOD_CUTTER]logwood cutter[\LINK] to extract [LINK=YIELD_LOGWOOD]logwood[\LINK], it works only slightly better than [COLOR_HIGHLIGHT_TEXT]Free Colonists[COLOR_REVERT].[PARAGRAPH:1]Expert lumberjacks can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]taught[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
+        <French>Aucune forêt ne peut espérer résister face à un [COLOR_UNIT_TEXT]Expert bûcheron[COLOR_REVERT]. Toute case de forêt exploitée par un expert bûcheron produira deux fois plus de [COLOR_HIGHLIGHT_TEXT]bois[COLOR_REVERT] que la normale.</French>
+        <German>Ein [COLOR_UNIT_TEXT]erfahrener Holzfäller[COLOR_REVERT], der als [COLOR_UNIT_TEXT]Holzfäller[COLOR_REVERT] ([LINK=PROFESSION_LUMBERJACK]Holz[\LINK], [LINK=PROFESSION_VALUABLE_WOOD_LUMBERJACK]Edelholz[\LINK] oder [LINK=PROFESSION_HARDWOOD_LUMBERJACK]Hartholz[\LINK]) arbeitet, erwirtschaftet 3 Einheiten mehr [LINK=YIELD_LUMBER]Holz[\LINK], [LINK=YIELD_VALUABLE_WOOD]Edelholz[\LINK] oder [LINK=YIELD_HARDWOOD]Hartholz[\LINK] und ist damit der beste auf diesem Gebiet. Als [LINK=PROFESSION_BLOODWOOD_CUTTER]Holzfällers (Blauholz)[\LINK] zur Gewinnung von [LINK=YIELD_LOGWOOD]Blauholz[\LINK] arbeitet er hingegen nur etwas besser als [COLOR_HIGHLIGHT_TEXT]Freie Kolonisten[COLOR_REVERT].[PARAGRAPH:1]Erfahrene Holzfäller können in [LINK=CONCEPT_EUROPE]Europa[\LINK] angeheuert werden oder in einer Kolonie mit einer [LINK=BUILDING_SCHOOLHOUSE]Schule[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
+        <Italian>Nessuna foresta può sperare di resistere a lungo di fronte a un [COLOR_UNIT_TEXT]boscaiolo esperto[COLOR_REVERT]. Le caselle di foresta in cui lavora un boscaiolo esperto forniscono il doppio di [COLOR_HIGHLIGHT_TEXT]legname[COLOR_REVERT] rispetto al normale.</Italian>
+        <Spanish>Ningún bosque puede resistir mucho ante los hachazos de un [COLOR_UNIT_TEXT]Leñador experto[COLOR_REVERT]. Todas las casillas de bosque en las que trabaje un Leñador experto darán el doble de [COLOR_HIGHLIGHT_TEXT]Madera[COLOR_REVERT] de lo normal.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_SIBERIAN_LUMBERJACK</Tag>
+        <English>Siberian Lumberjack:Siberian Lumberjacks</English>
+        <French>
+            <Text>Bûcheron Sibérien:Bûcherons Sibériens</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Sibirischer Holzfäller:Sibirische Holzfäller</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Boscaiolo Siberiano:Boscaioli Siberiani</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Leñador Siberiano:Leñadores Siberianos</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+        <Russian>Опытный лесоруб:Опытные лесорубы</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_SIBERIAN_LUMBERJACK_PEDIA</Tag>
+        <English>SIBERIAN_LUMBERJACK TO DO For the colonists of North America, lumber was the most abundant resource available.[NEWLINE]From Georgia to Maine thick forests covered the land.[NEWLINE]Indeed every colonist in the New World, whether priest, mason, hunter or trapper, cut down trees whenever land needed to be cleared.[NEWLINE]However, those that took up the profession as their life's calling, the skilled lumberjacks, were able to fell trees with a rapidity that greatly outdistanced the amateurs.[NEWLINE]They were lumberjacks and they were okay.</English>
+        <French>Pour les colons d'Amérique du Nord, le bois constitue la ressource la plus abondante qui soit à leur disposition. De la Géorgie au Maine, les terres sont recouvertes de forêts épaisses. D'ailleurs, chaque colon du Nouveau monde, qu'il soit prêtre, maçon, chasseur ou trappeur, doit abattre des arbres quand il lui faut défricher un terrain. Cependant, ceux qui ont fait de cette profession leur métier, les Bûcherons professionnels, sont capables d'abattre des arbres avec une rapidité qui surpasse largement celle des amateurs.</French>
+        <German>Für die Kolonisten Nordamerikas war Holz die am üppigsten vorhandene Ressource. Von Georgia bis Maine war das Land von dichten Wäldern überwuchert. Ganz gleich ob Priester, Steinmetz, Jäger oder Fallensteller - jeder Kolonist musste zunächst Holz fällen, um ein Stück Land freizumachen. Doch jene, die diese Aufgabe als ihre Lebensaufgabe begriffen - also die Holzfäller - waren in der Lage, Bäume in einer Geschwindigkeit zu fällen, die jeden Amateur weit in den Schatten stellte.</German>
+        <Italian>Il legname era la risorsa più abbondante disponibile per i coloni del Nord America. Dalla Georgia al Maine, la terra era fittamente ricoperta di foreste. Ogni colono del Nuovo Mondo, fosse egli prete, muratore, cacciatore o pellicciaio, tagliava degli alberi quando aveva bisogno di ripulire il territorio. Coloro però che intraprendevano questa professione, gli abili boscaioli, erano in grado di abbattere alberi con una rapidità molto maggiore a quella dei dilettanti. Erano boscaioli ed erano OK.</Italian>
+        <Spanish>Para los colonos de América del Norte, la Madera era el recurso disponible más abundante. De Georgia a Maine, la tierra estaba cubierta de espesos bosques. Obviamente, cualquier colono del Nuevo Mundo, ya fuera sacerdote o albañil, cazador o trampero, sabía talar árboles cuando se necesitaban nuevas tierras despejadas. No obstante, solo aquellos que tenían vocación para esa profesión, los habilidosos Leñadores, eran capaces de talar árboles con una rapidez que superaba con creces a la de los aficionados. Porque eran Leñadores y eran los mejores.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_SIBERIAN_LUMBERJACK_STRATEGY</Tag>
+        <English>SIBERIAN_LUMBERJACK TO DO No forest can hope to stand long before an [COLOR_UNIT_TEXT]expert lumberjack[COLOR_REVERT].[NEWLINE]If he is assigned to either the [COLOR_HIGHLIGHT_TEXT]lumberjack[COLOR_REVERT] ([LINK=PROFESSION_LUMBERJACK]lumber[\LINK], [LINK=PROFESSION_VALUABLE_WOOD_LUMBERJACK]exotic wood[\LINK] or [LINK=PROFESSION_HARDWOOD_LUMBERJACK]hardwood[\LINK]) profession, any forest tile worked by him will yield three more [LINK=YIELD_LUMBER]lumber[\LINK], [LINK=YIELD_VALUABLE_WOOD]exotic wood[\LINK] or [LINK=YIELD_HARDWOOD]hardwood[\LINK]. On the other hand, as a [LINK=PROFESSION_BLOODWOOD_CUTTER]logwood cutter[\LINK] to extract [LINK=YIELD_LOGWOOD]logwood[\LINK], it works only slightly better than [COLOR_HIGHLIGHT_TEXT]Free Colonists[COLOR_REVERT].[PARAGRAPH:1]Expert lumberjacks can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]taught[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
         <French>Aucune forêt ne peut espérer résister face à un [COLOR_UNIT_TEXT]Expert bûcheron[COLOR_REVERT]. Toute case de forêt exploitée par un expert bûcheron produira deux fois plus de [COLOR_HIGHLIGHT_TEXT]bois[COLOR_REVERT] que la normale.</French>
         <German>Ein [COLOR_UNIT_TEXT]erfahrener Holzfäller[COLOR_REVERT], der als [COLOR_UNIT_TEXT]Holzfäller[COLOR_REVERT] ([LINK=PROFESSION_LUMBERJACK]Holz[\LINK], [LINK=PROFESSION_VALUABLE_WOOD_LUMBERJACK]Edelholz[\LINK] oder [LINK=PROFESSION_HARDWOOD_LUMBERJACK]Hartholz[\LINK]) arbeitet, erwirtschaftet 3 Einheiten mehr [LINK=YIELD_LUMBER]Holz[\LINK], [LINK=YIELD_VALUABLE_WOOD]Edelholz[\LINK] oder [LINK=YIELD_HARDWOOD]Hartholz[\LINK] und ist damit der beste auf diesem Gebiet. Als [LINK=PROFESSION_BLOODWOOD_CUTTER]Holzfällers (Blauholz)[\LINK] zur Gewinnung von [LINK=YIELD_LOGWOOD]Blauholz[\LINK] arbeitet er hingegen nur etwas besser als [COLOR_HIGHLIGHT_TEXT]Freie Kolonisten[COLOR_REVERT].[PARAGRAPH:1]Erfahrene Holzfäller können in [LINK=CONCEPT_EUROPE]Europa[\LINK] angeheuert werden oder in einer Kolonie mit einer [LINK=BUILDING_SCHOOLHOUSE]Schule[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
         <Italian>Nessuna foresta può sperare di resistere a lungo di fronte a un [COLOR_UNIT_TEXT]boscaiolo esperto[COLOR_REVERT]. Le caselle di foresta in cui lavora un boscaiolo esperto forniscono il doppio di [COLOR_HIGHLIGHT_TEXT]legname[COLOR_REVERT] rispetto al normale.</Italian>
