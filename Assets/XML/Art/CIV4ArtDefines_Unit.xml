@@ -795,6 +795,23 @@
             </AudioRunSounds>
         </UnitArtInfo>
         <UnitArtInfo>
+            <Type>ART_DEF_UNIT_SIBERIAN_LUMBERJACK</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,3,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Siberian_Lumberjack.dds</FullLengthIcon>
+            <fScale>0.51</fScale>
+            <fInterfaceScale>0.85</fInterfaceScale>
+            <NIF>Art/Units/Unique_units/Siberian_Lumberjack/Expert_Lumberjack.nif</NIF>
+            <KFM>Art/Units/Expert_Lumberjack/Expert_Lumberjack.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_STONECUTTER</Type>
             <Button>,Art/colonization_atlas_units.dds,4,2</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Stonecutter.dds</FullLengthIcon>
