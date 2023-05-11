@@ -322,7 +322,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
-        <Russian>Мастер кузнец:Мастера кузнецы</Russian>
+        <Russian>Искусный кузнец:Искусные кузнецы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_JARNSMED_PEDIA</Tag>
@@ -693,7 +693,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
-        <Russian>Мастер плотник:Мастера плотники</Russian>
+        <Russian>Искусный плотник:Искусные плотники</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_TIMMERMAN_PEDIA</Tag>
@@ -3536,7 +3536,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
-        <Russian>Опытный лесоруб:Опытные лесорубы</Russian>
+        <Russian>Сибирский лесоруб:Сибирские лесорубы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_SIBERIAN_LUMBERJACK_PEDIA</Tag>
