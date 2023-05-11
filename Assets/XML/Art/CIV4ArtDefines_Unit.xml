@@ -674,6 +674,23 @@
             </AudioRunSounds>
         </UnitArtInfo>
         <UnitArtInfo>
+            <Type>ART_DEF_UNIT_TIMMERMAN</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,2,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Timmerman.dds</FullLengthIcon>
+            <fScale>0.50</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Unique_Units/Timmerman/Master_Carpenter.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Carpenter/Master_Carpenter.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_COTTON_PLANTER</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_CottonPlanter.dds</FullLengthIcon>
