@@ -451,6 +451,23 @@
             </AudioRunSounds>
         </UnitArtInfo>
         <UnitArtInfo>
+            <Type>ART_DEF_UNIT_JARNSMED</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,4,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Jarnsmed.dds</FullLengthIcon>
+            <fScale>0.50</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Unique_units/Jarnsmed/Jarnsmed.nif</NIF>
+            <KFM>Art/Units/Master_Blacksmith/Master_Blacksmith.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_GUNSMITH</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/MasterGunsmith.dds</FullLengthIcon>
