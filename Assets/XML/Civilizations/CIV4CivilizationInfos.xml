@@ -1182,6 +1182,10 @@
                     <UnitClassType>UNITCLASS_PREACHER</UnitClassType>
                     <UnitType>UNIT_PRIEST</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SCOUT</UnitClassType>
+                    <UnitType>UNIT_EXPLORADOR</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -3773,6 +3777,10 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SCOUT</UnitClassType>
+                    <UnitType>UNIT_EXPLORADOR</UnitType>
                 </Unit>
             </Units>
             <Professions>
