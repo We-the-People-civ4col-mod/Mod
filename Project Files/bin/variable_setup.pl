@@ -32,10 +32,10 @@ my @compatible_variables = (
 $var{Achieve}          = {not_strict => 1, XML => 1};
 $var{Alarm}            = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
 $var{AreaAI}           = {not_strict => 1,           JIT => "NO_JIT_ARRAY_TYPE"};
-$var{ArtStyle}         = {not_strict => 1, XML => 1};
+$var{ArtStyle}         = {not_strict => 1, XML => 1, getTypeStr => 0};
 $var{Attitude}         = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
 $var{Attachable}       = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
-$var{Automate}         = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
+$var{Automate}         = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE", getTypeStr => 0};
 $var{Bonus}            = {not_strict => 1, XML => 1};
 $var{Build}            = {not_strict => 1, XML => 1};
 $var{Building}         = {not_strict => 1, XML => 1};
@@ -52,7 +52,7 @@ $var{Climate}          = {not_strict => 1, XML => 1};
 $var{Color}            = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
 $var{Command}          = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
 $var{Concept}          = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE", INFO => "getConceptInfo"};
-$var{Contact}          = {not_strict => 1};
+$var{Contact}          = {not_strict => 1          , getTypeStr => 0};
 $var{Control}          = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
 $var{Culture}          = {not_strict => 1, XML => 1, type => "CultureLevelTypes", NUM => "NUM_CULTURELEVEL_TYPES", COMPILE => "COMPILE_TIME_NUM_CULTURELEVEL_TYPES"};
 $var{Cursor}           = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
@@ -162,6 +162,7 @@ foreach my $name (sort(keys %var))
 	$var{$name}{END} = $var{$name}{NUM} unless exists $var{$name}{END};
 	$var{$name}{HARDCODED} = exists $var{$name}{XML} ? isAlwaysHardcodedEnum($type) : 1;
 	$var{$name}{DYNAMIC} = 0 unless exists $var{$name}{DYNAMIC};
+	$var{$name}{getTypeStr} = 1 unless exists $var{$name}{getTypeStr};
 	
 	
 	if (exists $var{$name}{LENGTH_KNOWN_WHILE_COMPILING})
@@ -409,16 +410,19 @@ sub structEnum
 	$output .= "\ttemplate <int T> struct COMPATIBLE {\n";
 	$output .= "\t\tstatic const bool VAL = boost::is_same<" . $type . ", T>::VAL;\n";
 	$output .= "\t};\n";
-	$output_cpp .= "template<>\nconst char* getTypeStr($type eIndex)\n{\n";
-	if (defined $var{$name}{INFO})
+	if ($var{$name}{getTypeStr})
 	{
-		$output_cpp .= "\treturn GC." . $var{$name}{INFO} . "(eIndex).getType();\n";
+		$output_cpp .= "template<>\nconst char* getTypeStr($type eIndex)\n{\n";
+		if (defined $var{$name}{INFO})
+		{
+			$output_cpp .= "\treturn GC." . $var{$name}{INFO} . "(eIndex).getType();\n";
+		}
+		else
+		{
+			$output_cpp .= "\treturn getArrayType(VARINFO<$type>::JIT, eIndex);\n";
+		}
+		$output_cpp .= "}\n\n";
 	}
-	else
-	{
-		$output_cpp .= "\treturn getArrayType(VARINFO<$type>::JIT, eIndex);\n";
-	}
-	$output_cpp .= "}\n\n";
 
 }
 
