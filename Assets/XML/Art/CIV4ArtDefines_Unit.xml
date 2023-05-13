@@ -536,6 +536,23 @@
             </AudioRunSounds>
         </UnitArtInfo>
         <UnitArtInfo>
+            <Type>ART_DEF_UNIT_COLONIAL_DISTILLER</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,6,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Colonial_Distiller.dds</FullLengthIcon>
+            <fScale>0.50</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Unique_units/Colonial_Distiller/Colonial_Distiller.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Vintager/Master_Distiller.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_WEAVER</Type>
             <Button>,Art/colonization_atlas_units.dds,8,7</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Weaver.dds</FullLengthIcon>
