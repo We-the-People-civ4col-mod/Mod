@@ -1800,6 +1800,46 @@
         <Spanish>Los [COLOR_UNIT_TEXT]Maestros destiladores[COLOR_REVERT] son los heraldos de la embriaguez, pues son capaces de producir el doble de cantidad de [COLOR_HIGHLIGHT_TEXT]Ron[COLOR_REVERT] que un [COLOR_UNIT_TEXT]Colono libre[COLOR_REVERT] puede crear en la misma cantidad de tiempo.</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_COLONIAL_DISTILLER</Tag>
+        <English>Colonial Distiller:Colonial Distillers</English>
+        <French>
+            <Text>Distillateur colonial:Distillateurs coloniaux</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Kolonialbrenner:Kolonialbrenner</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Distillatore coloniale:Distillatori coloniali</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Destilador colonial:Destiladores coloniales</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COLONIAL_DISTILLER_PEDIA</Tag>
+        <English>COLONIAL DISTILLER TO DO While sugar was a valued commodity in Europe, it took a lot of it to be worthwhile, and the cost of shipping tonnes of the product to Europe ate up much of the profit.[NEWLINE]Struggling to survive, desperate colonists were always on the lookout for ways to increase their income from crops.[NEWLINE]Enter the distiller.[NEWLINE]A distiller has an almost magical ability to turn a tonne of raw sugar, worth a pittance after shipping costs, into a couple of barrels of really tasty rum which are not only more valuable than the sugar they came from, but also much lighter and thus cheaper to ship to Europe.[NEWLINE]A top-quality distillery could increase the profitability of a sugar plantation exponentially.</English>
+        <French>Le sucre est une denrée très appréciée en Europe, mais il faut en vendre des quantités industrielles pour espérer en vivre, et les coûts d'expédition engloutissent une large part du bénéfice.[NEWLINE]Luttant pour survivre, les colons sont constamment à la recherche de nouvelles façons d'augmenter les revenus qu'ils tirent de leurs récoltes.[NEWLINE]C'est là qu'entre en scène le Distillateur.[NEWLINE]Le Distillateur a le pouvoir presque magique de transformer une tonne de sucre brut, d'une valeur dérisoire une fois les coûts d'expédition payés, en rhum savoureux, plus précieux que le sucre dont il est dérivé mais également plus léger et donc moins cher à expédier en Europe.[NEWLINE]Une distillerie de haute qualité peut aisément augmenter la rentabilité d'une plantation de sucre de façon exponentielle.</French>
+        <German>Auch wenn Zucker in Europa ein geschätztes Gut war, musste man doch zunächst eine ganze Menge davon verkaufen, um genug Geld zum Leben damit zu verdienen. Und die Kosten für die Verschiffung einer Tonne des Produktes nach Europa verschlangen bereits einen großen Teil des Profits.[NEWLINE]In ihrem Kampf ums Überleben waren Kolonisten stets auf der Suche nach Möglichkeiten, um das Einkommen aus ihrer Ernte zu erhöhen.[NEWLINE]Auftritt: der Rumbrenner![NEWLINE]Ein Rumbrenner hat die fast schon magische Fähigkeit, eine Tonne rohen Zuckers, der abzüglich der Transportkosten nur noch einen Hungerlohn wert ist, in ein paar Fässer köstlichen Rums zu verwandeln. Der Rum ist nicht nur wertvoller als der Zucker, sondern auch leichter und somit günstiger nach Europa zu transportieren.[NEWLINE]Eine Rumbrennerei konnte die Rentabilität einer Zuckerplantage leicht exponentiell erhöhen.</German>
+        <Italian>Pur essendo lo zucchero un bene prezioso in Europa, era necessario venderne una grande quantità per realizzare abbastanza soldi per sopravvivere, e i costi di spedizione di tonnellate di prodotto in Europa si portavano via gran parte del profitto.[NEWLINE]Cercando di sopravvivere, i disperati coloni continuavano a cercare nuovi modi per aumentare il profitto dei raccolti.[NEWLINE]E qui entra in gioco il distillatore.[NEWLINE]Un distillatore ha l'abilità quasi magica di trasformare una tonnellata di zucchero non raffinato, che dedotti i costi di spedizione valeva un'inezia, in un paio di barili di gustoso rum; i quali non solo valevano di più dello zucchero da cui erano ricavati, ma erano anche molto più leggeri e quindi meno costosi da spedire in Europa.[NEWLINE]Una distilleria di prima qualità può aumentare in maniera esponenziale i profitti di una piantagione di zucchero.</Italian>
+        <Spanish>Aunque el Azúcar era una mercancía muy preciada en Europa, se tenía que vender una gran cantidad de éste para conseguir el dinero necesario para subsistir, y los costes de embarcar a Europa toneladas de este producto se comían gran parte de los beneficios.[NEWLINE]En la lucha por la supervivencia, los desesperados Colonos siempre buscaban una manera de aumentar el rendimiento de sus cultivos.[NEWLINE]Y ahí entraba el Destilador.[NEWLINE]Un Destilador tenía la habilidad casi mágica de convertir una tonelada de azúcar en bruto, que valía una miseria tras deducir los costes de transporte, en un par de barriles de un delicioso Ron, que no solo era más valioso que todo el Azúcar que contenía, sino que además era mucho más ligero y, por tanto, más barato de transportar.[NEWLINE]Una buena Destilería de ron podía con facilidad aumentar exponencialmente los dividendos de una plantación de Azúcar.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COLONIAL_DISTILLER_STRATEGY</Tag>
+        <English>COLONIAL DISTILLER TO DO [COLOR_UNIT_TEXT]Master distillers[COLOR_REVERT] are artisans of inebriation, capable of producing double the amount of [LINK=YIELD_RUM]rum[\LINK] from [LINK=YIELD_SUGAR]sugar[\LINK] that an average colonist might make in the same period of time, when assigned to the [LINK=PROFESSION_DISTILLER]distiller[\LINK] profession. Master distillers also create [LINK=YIELD_HOOCH]fruit brandy[\LINK] from [LINK=YIELD_FRUITS]fruit[\LINK].[PARAGRAPH:1]Master distillers can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]trained[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its upgrades.</English>
+        <French>Les [COLOR_UNIT_TEXT]Maîtres distillateurs[COLOR_REVERT] sont des spécialistes de l'ébriété, capables de produire deux fois plus de [COLOR_HIGHLIGHT_TEXT]rhum[COLOR_REVERT] que ne le ferait un [COLOR_UNIT_TEXT]colon libre[COLOR_REVERT] durant le même laps de temps !</French>
+        <German>[COLOR_UNIT_TEXT]Brennermeister[COLOR_REVERT] sind Handwerker des Rausches, die in der Lage sind, aus [LINK=YIELD_SUGAR]Zucker[\LINK] die doppelte Menge an [LINK=YIELD_RUM]Rum[\LINK] herzustellen, die ein freier Kolonist produzieren könnte, wenn er dem Beruf [LINK=PROFESSION_DISTILLER]Rumbrenners[\LINK] zugewiesen ist. [COLOR_HIGHLIGHT_TEXT]Brennermeister[COLOR_REVERT] stellen als [LINK=PROFESSION_HOOCH_DISTILLER]Schnapsbrenner[\LINK] auch [LINK=YIELD_HOOCH]Schnaps[\LINK] aus [LINK=YIELD_FRUITS]Früchten[\LINK] her.[PARAGRAPH:1]Brennmeister können in [LINK=CONCEPT_EUROPE]Europa[\LINK] angeworben werden, und sie können auch in einer Kolonie mit einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] oder einer ihrer Erweiterungen ausgebildet werden.</German>
+        <Italian>I [COLOR_UNIT_TEXT]mastri distillatori[COLOR_REVERT] sono artigiani del bere, in grado di produrre il doppio di [COLOR_HIGHLIGHT_TEXT]rum[COLOR_REVERT] rispetto a quello che potrebbe distillare un [COLOR_UNIT_TEXT]libero colono[COLOR_REVERT] nello stesso tempo!</Italian>
+        <Spanish>Los [COLOR_UNIT_TEXT]Maestros destiladores[COLOR_REVERT] son los heraldos de la embriaguez, pues son capaces de producir el doble de cantidad de [COLOR_HIGHLIGHT_TEXT]Ron[COLOR_REVERT] que un [COLOR_UNIT_TEXT]Colono libre[COLOR_REVERT] puede crear en la misma cantidad de tiempo.</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_DOCTOR</Tag>
         <English>Renowned Medic</English>
         <French>
@@ -2361,6 +2401,46 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_FUR_TRADER_STRATEGY</Tag>
         <English>If you need a lot of [LINK=YIELD_COATS]coats[\LINK] or [LINK=YIELD_PREMIUM_COATS]luxury coats[\LINK] fast, the [COLOR_UNIT_TEXT]master fur trader[COLOR_REVERT] is your man.[NEWLINE]In the [LINK=PROFESSION_FUR_TRADER]coat maker[\LINK] or [LINK=PROFESSION_PREMIUM_FUR_TRADER]luxury coat maker[\LINK] profession, he can tailor double what regular colonists could from [LINK=YIELD_FUR]fur[\LINK] and [LINK=YIELD_PREMIUM_FUR]premium fur[\LINK].[PARAGRAPH:1]Master fur traders can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]trained[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its upgrades.</English>
+        <French>Si vous avez rapidement besoin d'une grande quantité de [COLOR_HIGHLIGHT_TEXT]manteaux[COLOR_REVERT], le [COLOR_UNIT_TEXT]Maître fourreur[COLOR_REVERT] est votre homme. Capable de créer deux fois plus de [COLOR_HIGHLIGHT_TEXT]manteaux[COLOR_REVERT] que ne le ferait un [COLOR_UNIT_TEXT]colon libre[COLOR_REVERT], les Maîtres fourreurs peuvent être source de profits rapides si vous avez un excédent de fourrure dans votre colonie.</French>
+        <German>[COLOR_UNIT_TEXT]Meister-Pelzhändler[COLOR_REVERT] arbeiten im Beruf des Pelzhändlers bei der Herstellung von [COLOR_HIGHLIGHT_TEXT]Pelzwaren[COLOR_REVERT] doppelt so produktiv wie Freie Kolonisten.</German>
+        <Italian>Se ti servono molti [COLOR_HIGHLIGHT_TEXT]mantelli[COLOR_REVERT] in poco tempo, il [COLOR_UNIT_TEXT]mastro pellicciaio[COLOR_REVERT] è l'uomo che fa per te. È in grado di creare il doppio di [COLOR_HIGHLIGHT_TEXT]mantelli[COLOR_REVERT] di quelli prodotti da un [COLOR_UNIT_TEXT]libero colono[COLOR_REVERT] nello stesso tempo, ed è in grado di farti guadagnare rapidamente se hai pellicce in eccesso nel tuo insediamento.</Italian>
+        <Spanish>Si necesitáis muchos [COLOR_HIGHLIGHT_TEXT]Abrigos[COLOR_REVERT] y rápido, el [COLOR_UNIT_TEXT]Maestro peletero[COLOR_REVERT] es vuestro hombre. Capaces de crear el doble de la cantidad normal de [COLOR_HIGHLIGHT_TEXT]Abrigos[COLOR_REVERT] que tarda un [COLOR_UNIT_TEXT]Colono libre[COLOR_REVERT] en el mismo tiempo, los Maestros peleteros son una manera rápida de obtener beneficios si se tiene un exceso de Pieles en el asentamiento.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FRENCH_FUR_TRADER</Tag>
+        <English>French Fur Trader:French Fur Traders</English>
+        <French>
+            <Text>Fourreur Français:Fourreurs Français</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Französischer Pelzhändler:Französische Pelzhändler</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Pellicciaio Francese:Pellicciai Francesi</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Peletero Francés:Peleteros Franceses</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FRENCH_FUR_TRADER_PEDIA</Tag>
+        <English>FRENCH FUR TRADER TO DO The fur trader is the middleman in the fur business.[NEWLINE]After the trapper has separated the pelt from its reluctant former owner, he delivers the fur to the trader in exchange for gold, food, bullets and powder.[NEWLINE]The furrier processes the pelt, trims and cleans it, and prepares it for its long journey to the markets of Europe.[NEWLINE]A good trader can multiply the value of a bale of pelts, earning himself and his colony a tidy profit on each shipment.</English>
+        <French>Le Fourreur joue le rôle d'intermédiaire dans le commerce de la fourrure. Une fois que le trappeur a accompli la difficile tâche de se procurer des fourrures malgré la réticence de leurs précédents propriétaires, il les donne au fourreur, en échange d'or ou de nourriture, de balles ou de poudre, ou d'autres marchandises. Le Fourreur s'occupe de la fourrure, la taille et la nettoie, puis la prépare pour son long voyage jusqu'aux marchés européens. Un bon Fourreur peut considérablement augmenter la valeur d'une fourrure, réalisant ainsi, pour lui et la colonie, un joli bénéfice sur chaque expédition.</French>
+        <German>Der Trapper tauschte seine Felle bei Händlern gegen Gold, Nahrung, Kugeln, Schießpulver oder andere Vorräte ein. Dieser Händler waren oft zugleich Pelzhändler und stellten aus den Fellen einfache Übermäntel oder Umhänge her. Manchmal bearbeiteten sie die Felle aber auch nur, reinigten und schnitten sie zu und verkauften sie dann nach Europa.</German>
+        <Italian>Il pellicciaio è l'intermediario nel mercato delle pellicce. Dopo che il cacciatore ha portato a termine il difficile compito di separare la pelliccia dal riluttante proprietario, la passa al pellicciaio in cambio di oro o cibo, proiettili e polvere, o altri beni. Il pellicciaio tratta la pelle, la rifinisce e la pulisce, e in generale la prepara per il lungo viaggio verso i mercati europei. Un bravo pellicciaio può aumentare notevolmente il valore di una pelliccia, procurando a se stesso e alla propria colonia un bel profitto con ogni spedizione.</Italian>
+        <Spanish>El Peletero es el intermediario en el negocio de las Pieles. Después de que el Trampero de pieles haya conseguido la difícil tarea de arrancarle la piel a su reticente dueño, se la cambia a éste por oro o comida, balas y pólvora u otras provisiones. El Peletero procesa la piel, la peina y la limpia y la prepara para su largo viaje hasta los mercados de Europa. Un buen Peletero puede aumentar enormemente el valor de las Pieles, lo que dará para él y su colonia un buen beneficio con cada cargamento enviado.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FRENCH_FUR_TRADER_STRATEGY</Tag>
+        <English>FRENCH FUR TRADER TO DO If you need a lot of [LINK=YIELD_COATS]coats[\LINK] or [LINK=YIELD_PREMIUM_COATS]luxury coats[\LINK] fast, the [COLOR_UNIT_TEXT]master fur trader[COLOR_REVERT] is your man.[NEWLINE]In the [LINK=PROFESSION_FUR_TRADER]coat maker[\LINK] or [LINK=PROFESSION_PREMIUM_FUR_TRADER]luxury coat maker[\LINK] profession, he can tailor double what regular colonists could from [LINK=YIELD_FUR]fur[\LINK] and [LINK=YIELD_PREMIUM_FUR]premium fur[\LINK].[PARAGRAPH:1]Master fur traders can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]trained[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its upgrades.</English>
         <French>Si vous avez rapidement besoin d'une grande quantité de [COLOR_HIGHLIGHT_TEXT]manteaux[COLOR_REVERT], le [COLOR_UNIT_TEXT]Maître fourreur[COLOR_REVERT] est votre homme. Capable de créer deux fois plus de [COLOR_HIGHLIGHT_TEXT]manteaux[COLOR_REVERT] que ne le ferait un [COLOR_UNIT_TEXT]colon libre[COLOR_REVERT], les Maîtres fourreurs peuvent être source de profits rapides si vous avez un excédent de fourrure dans votre colonie.</French>
         <German>[COLOR_UNIT_TEXT]Meister-Pelzhändler[COLOR_REVERT] arbeiten im Beruf des Pelzhändlers bei der Herstellung von [COLOR_HIGHLIGHT_TEXT]Pelzwaren[COLOR_REVERT] doppelt so produktiv wie Freie Kolonisten.</German>
         <Italian>Se ti servono molti [COLOR_HIGHLIGHT_TEXT]mantelli[COLOR_REVERT] in poco tempo, il [COLOR_UNIT_TEXT]mastro pellicciaio[COLOR_REVERT] è l'uomo che fa per te. È in grado di creare il doppio di [COLOR_HIGHLIGHT_TEXT]mantelli[COLOR_REVERT] di quelli prodotti da un [COLOR_UNIT_TEXT]libero colono[COLOR_REVERT] nello stesso tempo, ed è in grado di farti guadagnare rapidamente se hai pellicce in eccesso nel tuo insediamento.</Italian>
@@ -4639,6 +4719,50 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_PROSPECTOR_STRATEGY</Tag>
         <English>To make the most of a bountiful silver vein, gold vein or gemstone deposit bring in an [COLOR_UNIT_TEXT]expert prospector[COLOR_REVERT]. Expert prospectors will produce double the amount of [LINK=YIELD_SILVER]silver[\LINK], [LINK=YIELD_GOLD]gold[\LINK] or [LINK=YIELD_GEMS]gems[\LINK] from the tile![PARAGRAPH:1]Expert prospectors can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK] and be trained by [LINK=CONCEPT_NATIVES]Natives[\LINK], and they can also [LINK=CONCEPT_TRAINING]learn[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
+        <French>Pour exploiter au mieux une importante veine d'argent, engagez un [COLOR_UNIT_TEXT]expert prospecteur[COLOR_REVERT]. Les experts prospecteurs sont capables d'extraire deux fois plus d'[LINK=YIELD_SILVER]argent[\LINK] que la normale !</French>
+        <German>Um eine Silberader, eine Goldader oder ein Edelsteinvorkommen optimal zu nutzen, sollten Sie einen [COLOR_UNIT_TEXT]Erfahrenen Schürfer[COLOR_REVERT] daran arbeiten lassen. Erfahrene Schürfer können doppelt so viel [LINK=YIELD_SILVER]Silber[\LINK], [LINK=YIELD_GOLD]Gold[\LINK] oder [LINK=YIELD_GEMS]Edelstein[\LINK] von einem Geländefeld fördern!</German>
+        <Italian>Per sfruttare al massimo una ricca vena d'oro, chiama un [COLOR_UNIT_TEXT]minatore d'oro esperto[COLOR_REVERT]. I minatori d'oro esperti sono in grado di raddoppiare la quantità di [LINK=YIELD_GOLD]Oro[\LINK] ottenuta dalla casella!</Italian>
+        <Spanish>Para sacar el mejor partido de una vena de oro, llamad a un [COLOR_UNIT_TEXT]Minero de oro experto[COLOR_REVERT]. Los Mineros de oro expertos son capaces de extraer el doble de [LINK=YIELD_GOLD]Oro[\LINK] de una casilla en la que haya este metal.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ESCAVADOR</Tag>
+        <English>
+            <Text>Escavador:Escavadores</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Escavador:Escavadores</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Escavador:Escavadores</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Escavador:Escavadores</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Escavador:Escavadores</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ESCAVADOR_PEDIA</Tag>
+        <English>ESCAVADOR TO DO Gold miners, silver miners and other prospectors arrived early during the exploration of the Americas, the first gold miners coming with Columbus on his second voyage to the New World.[NEWLINE]After the tales of the fabulous wealth of the Aztecs and Incas, many early European expeditions contained gold miners hoping that they too like the Spanish would find valuable deposits.[NEWLINE]Gold miners continued to be drawn to the Americas with reports of every strike, such as that of the California gold rush of the mid 1800s. Numerous mining towns sprang up, though most towns along with the miners disappeared just as quickly once the gold petered out.</English>
+        <French>L'or a toujours été l'un des métaux les plus recherchés au monde. Il est utilisé dans la fabrication de nombreux produits, allant des bijoux aux appareils électroniques. Il sert aussi de référence pour des systèmes monétaires internationaux. Ce qui donne sa valeur à l'or est sa rareté. Bien que l'on en trouve dans de nombreux endroits, les gisements les plus importants sont des veines de minerai d'or situées sous des massifs montagneux. Lorsqu'un gisement important est découvert, son exploitation stimule considérablement l'économie des villes environnantes. Ainsi, au XIXe siècle, la ruée vers l'or en Californie conduisit en peu de temps à la fondation de nombreuses villes prospères.</French>
+        <German>Gold und Silber zählen seit jeher zu den begehrtesten und wertvollsten Metallen der Welt. Die Verwendungszwecke reichen von der Schmuckfertigung bis hin zur Elektronik, und sogar das weltweite Währungssystem basiert auf diesem Edelmetall. Die Ursache für den hohen Wert von Gold oder Silber ist die Seltenheit. Zwar gibt es in vielen Regionen der Welt Goldvorkommen, allerdings sind die wertvollsten großen Goldadern tief im Inneren der Berge. Das Auffinden eines großen Vorkommens bedeutet für die Siedlungen und Städte in der Nähe der Mine einen bedeutenden wirtschaftlichen Aufschwung. Ein historisches Beispiel für dieses Phänomen sind die vielen Ortschaften, die während des kalifornischen Goldrauschs entstanden und eine kurze Blütezeit erlebten.</German>
+        <Italian>L'oro è da sempre uno dei metalli più preziosi del pianeta ed è stato utilizzato per realizzare qualsiasi oggetto, dai gioielli ai componenti elettronici, ponendo le basi per un sistema economico mondiale. L'oro è molto prezioso a causa della sua rarità. Sebbene sia possibile trovare oro in differenti zone del mondo, i giacimenti più ricchi sono all'interno delle montagne. Quando viene scoperto un grande giacimento, l'estrazione dell'oro migliora sensibilmente l'economia degli insediamenti e delle città circostanti. Nel 1800, molte città della California sono prosperate in breve tempo durante la corsa all'oro.</Italian>
+        <Spanish>El oro siempre ha sido uno de los metales más valorados del mundo. Se usa en la fabricación de todo tipo de artículos, desde joyas a electrónica, y constituye la base del sistema monetario mundial. El factor que otorga al oro su valor es su rareza. Aunque se puede encontrar oro en muchas regiones distintas, los yacimientos más valiosos son grandes vetas de mineral de oro situadas en el interior de montañas. Cuando se encuentra un gran yacimiento, la explotación de la veta potencia enormemente la economía en las poblaciones y ciudades que están cerca de la mina. Un ejemplo histórico de este fenómeno son las numerosas ciudades que crecieron y prosperaron en poco tiempo durante la fiebre del oro de California en el siglo XIX.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ESCAVADOR_STRATEGY</Tag>
+        <English>ESCAVADOR TO DO To make the most of a bountiful silver vein, gold vein or gemstone deposit bring in an [COLOR_UNIT_TEXT]expert prospector[COLOR_REVERT]. Expert prospectors will produce double the amount of [LINK=YIELD_SILVER]silver[\LINK], [LINK=YIELD_GOLD]gold[\LINK] or [LINK=YIELD_GEMS]gems[\LINK] from the tile![PARAGRAPH:1]Expert prospectors can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK] and be trained by [LINK=CONCEPT_NATIVES]Natives[\LINK], and they can also [LINK=CONCEPT_TRAINING]learn[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
         <French>Pour exploiter au mieux une importante veine d'argent, engagez un [COLOR_UNIT_TEXT]expert prospecteur[COLOR_REVERT]. Les experts prospecteurs sont capables d'extraire deux fois plus d'[LINK=YIELD_SILVER]argent[\LINK] que la normale !</French>
         <German>Um eine Silberader, eine Goldader oder ein Edelsteinvorkommen optimal zu nutzen, sollten Sie einen [COLOR_UNIT_TEXT]Erfahrenen Schürfer[COLOR_REVERT] daran arbeiten lassen. Erfahrene Schürfer können doppelt so viel [LINK=YIELD_SILVER]Silber[\LINK], [LINK=YIELD_GOLD]Gold[\LINK] oder [LINK=YIELD_GEMS]Edelstein[\LINK] von einem Geländefeld fördern!</German>
         <Italian>Per sfruttare al massimo una ricca vena d'oro, chiama un [COLOR_UNIT_TEXT]minatore d'oro esperto[COLOR_REVERT]. I minatori d'oro esperti sono in grado di raddoppiare la quantità di [LINK=YIELD_GOLD]Oro[\LINK] ottenuta dalla casella!</Italian>
