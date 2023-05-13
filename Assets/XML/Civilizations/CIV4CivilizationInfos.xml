@@ -354,6 +354,10 @@
                     <UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
                     <UnitType>UNIT_CHRISTIAN_MISSIONARY_PROT</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_DISTILLER</UnitClassType>
+                    <UnitType>UNIT_COLONIAL_DISTILLER</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -783,6 +787,10 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_PREACHER</UnitClassType>
                     <UnitType>UNIT_PRIEST</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FUR_TRADER</UnitClassType>
+                    <UnitType>UNIT_FRENCH_FUR_TRADER</UnitType>
                 </Unit>
             </Units>
             <Professions>
@@ -1865,6 +1873,10 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_PREACHER</UnitClassType>
                     <UnitType>UNIT_PRIEST</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_PROSPECTOR</UnitClassType>
+                    <UnitType>UNIT_ESCAVADOR</UnitType>
                 </Unit>
             </Units>
             <Professions>
@@ -3153,6 +3165,10 @@
                     <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_DISTILLER</UnitClassType>
+                    <UnitType>UNIT_COLONIAL_DISTILLER</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -3466,6 +3482,10 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FUR_TRADER</UnitClassType>
+                    <UnitType>UNIT_FRENCH_FUR_TRADER</UnitType>
                 </Unit>
             </Units>
             <Professions>
@@ -4401,6 +4421,10 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_PROSPECTOR</UnitClassType>
+                    <UnitType>UNIT_ESCAVADOR</UnitType>
                 </Unit>
             </Units>
             <Professions>
