@@ -314,6 +314,23 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
+       <UnitArtInfo>
+            <Type>ART_DEF_UNIT_ESCAVADOR</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,7,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Escavador.dds</FullLengthIcon>
+            <fScale>0.51</fScale>
+            <fInterfaceScale>0.86</fInterfaceScale>
+            <NIF>Art/Units/Unique_units/Escavador/Escavador.nif</NIF>
+            <KFM>Art/Units/Expert_Ore_Miner/Expert_Ore_Miner.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_WINE_MAKER</Type>
             <Button>,Art/colonization_atlas_units.dds,5,3</Button>
