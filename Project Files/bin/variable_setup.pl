@@ -30,67 +30,98 @@ my @compatible_variables = (
 
 
 $var{Achieve}          = {not_strict => 1, XML => 1};
-$var{AreaAI}           = {not_strict => 1, JIT => "NO_JIT_ARRAY_TYPE"};
+$var{Alarm}            = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
+$var{AreaAI}           = {not_strict => 1,           JIT => "NO_JIT_ARRAY_TYPE"};
 $var{ArtStyle}         = {not_strict => 1, XML => 1};
+$var{Attitude}         = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
+$var{Attachable}       = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
+$var{Automate}         = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
 $var{Bonus}            = {not_strict => 1, XML => 1};
 $var{Build}            = {not_strict => 1, XML => 1};
 $var{Building}         = {not_strict => 1, XML => 1};
 $var{BuildingClass}    = {not_strict => 1, XML => 1};
 $var{SpecialBuilding}  = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_BUILDING_SPECIAL"};
-$var{CivCategory}      = {not_strict => 1, JIT => "JIT_ARRAY_CIV_CATEGORY", NUM => "NUM_CIV_CATEGORY_TYPES", COMPILE => "COMPILE_TIME_NUM_CIV_CATEGORY_TYPES", HARDCODED => 1};
+$var{Calendar}         = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
+$var{CivCategory}      = {not_strict => 1,           JIT => "JIT_ARRAY_CIV_CATEGORY", NUM => "NUM_CIV_CATEGORY_TYPES", COMPILE => "COMPILE_TIME_NUM_CIV_CATEGORY_TYPES", HARDCODED => 1};
 $var{CivEffect}        = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_CIV_EFFECT", NUM => "NUM_CIV_EFFECT_TYPES", COMPILE => "COMPILE_TIME_NUM_CIV_EFFECT_TYPES"};
 $var{Civic}            = {not_strict => 1, XML => 1};
 $var{CivicOption}      = {not_strict => 1, XML => 1};
 $var{Civilization}     = {not_strict => 1, XML => 1};
-$var{CityPlot}         = {not_strict => 1, JIT => "NO_JIT_ARRAY_TYPE", NUM => "NUM_CITY_PLOTS", COMPILE => "NUM_CITY_PLOTS_2_PLOTS", LENGTH_KNOWN_WHILE_COMPILING => "0"};
+$var{CityPlot}         = {not_strict => 1,           JIT => "NO_JIT_ARRAY_TYPE", NUM => "NUM_CITY_PLOTS", COMPILE => "NUM_CITY_PLOTS_2_PLOTS", LENGTH_KNOWN_WHILE_COMPILING => "0"};
 $var{Climate}          = {not_strict => 1, XML => 1};
-$var{Concept}          = {JIT => "NO_JIT_ARRAY_TYPE", INFO => "getConceptInfo"};
+$var{Color}            = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
+$var{Command}          = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
+$var{Concept}          = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE", INFO => "getConceptInfo"};
 $var{Contact}          = {not_strict => 1};
+$var{Control}          = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
 $var{Culture}          = {not_strict => 1, XML => 1, type => "CultureLevelTypes", NUM => "NUM_CULTURELEVEL_TYPES", COMPILE => "COMPILE_TIME_NUM_CULTURELEVEL_TYPES"};
-$var{Diplomacy}        = {XML => 1};
+$var{Cursor}           = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
+$var{Denial}           = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
+$var{Diplomacy}        = {                 XML => 1};
+$var{DetailManager}    = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE", DYNAMIC => 1};
 $var{Domain}           = {not_strict => 1, XML => 1};
 $var{Emotion}          = {not_strict => 1};
 $var{Effect}           = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE", INFO => "getEffectInfo"};
+$var{EntityEvent}      = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
 $var{Era}              = {not_strict => 1, XML => 1};
 $var{Emphasize}        = {not_strict => 1, XML => 1};
 $var{Europe}           = {not_strict => 1};
 $var{Event}            = {not_strict => 1, XML => 1};
 $var{EventTrigger}     = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_EVENT_TRIGGER"};
 $var{Father}           = {not_strict => 1, XML => 1};
+$var{FatherCategory}   = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
 $var{FatherPoint}      = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_FATHER_POINT", NUM => "NUM_FATHER_POINT_TYPES", COMPILE => "COMPILE_TIME_NUM_FATHER_POINT_TYPES"};
 $var{Feat}             = {not_strict => 1};
 $var{Feature}          = {not_strict => 1, XML => 1};
+$var{ForceControl}     = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
 $var{Formation}        = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE", DYNAMIC => 1};
 $var{GameOption}       = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_GAME_OPTION"};
 $var{GameSpeed}        = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_GAME_SPEED"};
 $var{Goody}            = {not_strict => 1, XML => 1};
-#$var{GraphicOption}    = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
+$var{GraphicOption}    = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
 $var{Handicap}         = {not_strict => 1, XML => 1};
 $var{Hint}             = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE", DYNAMIC => 1};
 $var{Hurry}            = {not_strict => 1, XML => 1};
 $var{Improvement}      = {not_strict => 1, XML => 1};
+$var{InterfaceMode}    = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
 $var{Invisible}        = {not_strict => 1, XML => 1};
+$var{Landscape}        = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
 $var{LeaderHead}       = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_LEADER", NUM => "NUM_LEADER_TYPES", COMPILE => "COMPILE_TIME_NUM_LEADER_TYPES"};
+$var{MainMenu}         = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
 $var{Memory}           = {not_strict => 1};
+$var{Mission}          = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
+$var{Month}            = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
+$var{MultiplayerOption}= {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE", NUM => "NUM_MPOPTION_TYPES", COMPILE => "COMPILE_TIME_NUM_MPOPTION_TYPES"};
 $var{Player}           = {not_strict => 1};
-$var{PlayerColor}      = {not_strict => 1, JIT => "JIT_ARRAY_PLAYER_COLOR"};
+$var{PlayerColor}      = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_PLAYER_COLOR"};
 $var{PlayerOption}     = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_PLAYER_OPTION"};
-$var{Plot}             = {not_strict => 1, get => "getPlotType", JIT => "JIT_ARRAY_PLOT_TYPE"};
+$var{Plot}             = {not_strict => 1,           get => "getPlotType", JIT => "JIT_ARRAY_PLOT_TYPE"};
 $var{Profession}       = {not_strict => 1, XML => 1};
 $var{Promotion}        = {not_strict => 1, XML => 1};
+$var{RiverModel}       = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE", DYNAMIC => 1};
 $var{Route}            = {not_strict => 1, XML => 1};
+$var{RouteModel}       = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE", DYNAMIC => 1};
 $var{SeaLevel}         = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_SEA_LEVEL"};
+$var{Season}           = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
+$var{SlideShow}        = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE", DYNAMIC => 1};
+$var{SlideShowRandom}  = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE", DYNAMIC => 1};
 $var{Strategy}         = {not_strict => 1};
 $var{Team}             = {not_strict => 1};
 $var{Terrain}          = {not_strict => 1, XML => 1};
-$var{Trait}            = {XML => 1};
+$var{TerrainPlane}     = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE", DYNAMIC => 1};
+$var{Trait}            = {                 XML => 1};
+$var{TurnTimer}        = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
+$var{TradeScreen}      = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
 $var{Unit}             = {not_strict => 1, XML => 1};
+$var{UnitArtStyle}     = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE", NUM => "NUM_UNIT_ARTSTYLE_TYPES", COMPILE => "COMPILE_TIME_NUM_UNIT_ARTSTYLE_TYPES"};
 $var{UnitAI}           = {not_strict => 1, XML => 1};
 $var{UnitClass}        = {not_strict => 1, XML => 1};
 $var{UnitCombat}       = {not_strict => 1, XML => 1};
 $var{SpecialUnit}      = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_UNIT_SPECIAL"};
 $var{Victory}          = {not_strict => 1, XML => 1};
-$var{WarPlan}          = {not_strict => 1, JIT => "NO_JIT_ARRAY_TYPE"};
+$var{WarPlan}          = {not_strict => 1,           JIT => "NO_JIT_ARRAY_TYPE"};
+$var{WaterPlane}       = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE", DYNAMIC => 1};
+$var{WorldPicker}      = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE", DYNAMIC => 1};
 $var{WorldSize}        = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_WORLD_SIZE"};
 $var{Yield}            = {not_strict => 1, XML => 1};
 
@@ -354,10 +385,19 @@ sub structEnum
 		{
 			$output .= "#else\n";
 			
+			if ($var{$name}{DYNAMIC})
+			{
+				$output_cpp_init .= "#endif\n";
+				$output_cpp_declare .= "#endif\n";
+			}
 			addVariableConstant($name, "END", "$var{$name}{END}");
 			addVariableConstant($name, "LAST", "$var{$name}{END} - static_cast<$type>(1)");
 			addVariableConstant($name, "NUM_ELEMENTS", "VARINFO<$type>::END - VARINFO<$type>::FIRST");
-			
+			if ($var{$name}{DYNAMIC})
+			{
+				$output_cpp_init .= "#ifndef HARDCODE_XML_VALUES\n";
+				$output_cpp_declare .= "#ifndef HARDCODE_XML_VALUES\n";
+			}
 			$output .= "#endif\n";
 		}
 	}

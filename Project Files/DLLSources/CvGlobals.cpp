@@ -1003,8 +1003,7 @@ std::vector<CvColorInfo*>& CvGlobals::getColorInfo()
 
 CvColorInfo& CvGlobals::getColorInfo(ColorTypes e)
 {
-	FAssert(e > -1);
-	FAssert(e < GC.getNumColorInfos());
+	FAssert(VARINFO<ColorTypes>::isInRange(e));
 	return *(m_paColorInfo[e]);
 }
 
@@ -1978,8 +1977,7 @@ std::vector<CvTurnTimerInfo*>& CvGlobals::getTurnTimerInfo()	// Do NOT export ou
 
 CvTurnTimerInfo& CvGlobals::getTurnTimerInfo(TurnTimerTypes eTurnTimerNum)
 {
-	FAssert(eTurnTimerNum > -1);
-	FAssert(eTurnTimerNum < GC.getNumTurnTimerInfos());
+	FAssert(VARINFO<TurnTimerTypes>::isInRange(eTurnTimerNum));
 	return *(m_paTurnTimerInfo[eTurnTimerNum]);
 }
 
@@ -2443,8 +2441,7 @@ std::vector<CvUnitArtStyleTypeInfo*>& CvGlobals::getUnitArtStyleTypeInfo()
 
 CvUnitArtStyleTypeInfo& CvGlobals::getUnitArtStyleTypeInfo(UnitArtStyleTypes eUnitArtStyleTypeNum)
 {
-	FAssert(eUnitArtStyleTypeNum > -1);
-	FAssert(eUnitArtStyleTypeNum < GC.getNumUnitArtStyleTypeInfos());
+	FAssert(VARINFO<UnitArtStyleTypes>::isInRange(eUnitArtStyleTypeNum));
 	return *(m_paUnitArtStyleTypeInfo[eUnitArtStyleTypeNum]);
 }
 //Androrc End

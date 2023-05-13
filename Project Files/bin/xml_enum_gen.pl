@@ -193,14 +193,14 @@ sub processFile
 	
 	unless ($isHardcoded)
 	{
-		$output .= "#ifndef HARDCODE_XML_VALUES\n";
+		$output .= "#ifndef HARDCODE_XML_VALUES\n" if $found_type;
 		$output .= "extern const " . $enum . "& NUM_" . $TYPE . "_TYPES;\n";
-		$output .= "#endif\n\n";
+		$output .= "#endif\n\n" if $found_type;
 		$output_preload_dynamic .= "const " . $enum . "& NUM_" . $TYPE . "_TYPES = NUM_" . $TYPE . "_TYPES_NON_CONST;\n" if $found_type;
 	}
 	$output .= "#define NUM_" . substr($enum, 0, -5) . "_TYPES NUM_" . $TYPE . "_TYPES\n\n";
 	# blindly test the lenght of all enum types. If it is dynamic, the length will be tested against itself, hence always true
-	$output_length_test .= "\tStartupCheck::CheckXmlLength(\"" . $enum . "\", NUM_" . $TYPE . "_TYPES, NUM_" . $TYPE . "_TYPES_NON_CONST);\n";
+	$output_length_test .= "\tStartupCheck::CheckXmlLength(\"" . $enum . "\", VARINFO<" . $enum . ">::END, NUM_" . $TYPE . "_TYPES_NON_CONST);\n";
 }
 
 sub getTypesInFile
