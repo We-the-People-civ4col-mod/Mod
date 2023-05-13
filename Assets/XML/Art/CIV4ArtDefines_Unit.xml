@@ -12620,6 +12620,23 @@
             </AudioRunSounds>
         </UnitArtInfo>
         <UnitArtInfo>
+            <Type>ART_DEF_UNIT_EXPLORADOR</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,5,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Explorador.dds</FullLengthIcon>
+            <fScale>0.48</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Unique_units/Explorador/Unit/Explorador.nif</NIF>
+            <KFM>Art/Units/Unique_units/Explorador/Unit/Explorador.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_CONVERT_SCOUT</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Scout_Seasoned.dds</FullLengthIcon>
@@ -12660,6 +12677,23 @@
             <fScale>0.6</fScale>
             <fInterfaceScale>0.68</fInterfaceScale>
             <NIF>Art/Units/Seasoned_Scout_Mnt/Seasoned_Scout_Mnt.nif</NIF>
+            <KFM>Art/Units/Seasoned_Scout_Mnt/Seasoned_Scout_Mnt.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>1</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_PROFESSION_UNIT_EXPLORADOR</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,5,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Explorador.dds</FullLengthIcon>
+            <fScale>0.6</fScale>
+            <fInterfaceScale>0.68</fInterfaceScale>
+            <NIF>Art/Units/Unique_units/Explorador/Seasoned_Scout_Mnt/Explorador.nif</NIF>
             <KFM>Art/Units/Seasoned_Scout_Mnt/Seasoned_Scout_Mnt.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
