@@ -2552,6 +2552,10 @@
                 <UnitType>UNIT_SCOUT</UnitType>
                 <iNumber>2</iNumber>
             </NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_EXPLORADOR</UnitType>
+                <iNumber>2</iNumber>
+            </NumUnits>
         </NumUnits>
         <NumProfessions/>
         <YieldProduced/>
@@ -2800,6 +2804,10 @@
                 <UnitType>UNIT_DISTILLER</UnitType>
                 <iNumber>3</iNumber>
             </NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_COLONIAL_DISTILLER</UnitType>
+                <iNumber>3</iNumber>
+            </NumUnits>
         </NumUnits>
         <NumProfessions/>
         <YieldProduced/>
@@ -2891,6 +2899,10 @@
         <NumUnits>
             <NumUnits>
                 <UnitType>UNIT_FUR_TRADER</UnitType>
+                <iNumber>3</iNumber>
+            </NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_FRENCH_FUR_TRADER</UnitType>
                 <iNumber>3</iNumber>
             </NumUnits>
         </NumUnits>
@@ -3083,6 +3095,10 @@
                 <UnitType>UNIT_LUMBERJACK</UnitType>
                 <iNumber>8</iNumber>
             </NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_SIBERIAN_LUMBERJACK</UnitType>
+                <iNumber>8</iNumber>
+            </NumUnits>
         </NumUnits>
         <NumProfessions/>
         <YieldProduced/>
@@ -3267,6 +3283,10 @@
         <NumUnits>
             <NumUnits>
                 <UnitType>UNIT_PROSPECTOR</UnitType>
+                <iNumber>3</iNumber>
+            </NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_ESCAVADOR</UnitType>
                 <iNumber>3</iNumber>
             </NumUnits>
         </NumUnits>
@@ -5792,6 +5812,10 @@
             </NumUnits>
             <NumUnits>
                 <UnitType>UNIT_BLACKSMITH</UnitType>
+                <iNumber>5</iNumber>
+            </NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_JARNSMED</UnitType>
                 <iNumber>5</iNumber>
             </NumUnits>
         </NumUnits>
