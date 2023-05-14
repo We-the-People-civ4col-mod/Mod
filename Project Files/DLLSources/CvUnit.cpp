@@ -552,7 +552,9 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 	FAssert(eCaptureProfession == NO_PROFESSION || !GC.getProfessionInfo(eCaptureProfession).isCitizen());
 	if (eCapturingPlayer != NO_PLAYER)
 	{
-		eCaptureUnitType = getCaptureUnitType(GET_PLAYER(eCapturingPlayer).getCivilizationType());
+		// WTP, ray, change because we want to capture Nation specific Units - START
+		// eCaptureUnitType = getCaptureUnitType(GET_PLAYER(eCapturingPlayer).getCivilizationType());
+		eCaptureUnitType = getUnitType();
 	}
 	YieldTypes eYield = getYield();
 
