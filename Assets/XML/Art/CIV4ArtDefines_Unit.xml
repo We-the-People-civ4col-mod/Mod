@@ -691,6 +691,23 @@
             </AudioRunSounds>
         </UnitArtInfo>
         <UnitArtInfo>
+            <Type>ART_DEF_UNIT_FRENCH_FURRIER</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,8,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/French_Furrier.dds</FullLengthIcon>
+            <fScale>0.48</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Unique_units/French_Furrier/French_Furrier.nif</NIF>
+            <KFM>Art/Units/Master_Fur_Trader/Master_Fur_Trader.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_TANNER</Type>
             <Button>,Art/colonization_atlas_units.dds,3,4.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/tanner.dds</FullLengthIcon>
