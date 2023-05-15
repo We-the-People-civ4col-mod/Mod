@@ -347,7 +347,6 @@ public:
 	DllExport	CvWorldPickerInfo& getWorldPickerInfo(int iIndex);
 
 	int getNumUnitInfos() const;
-	int getNumUnitInfosFakeExe() const;
 	std::vector<CvUnitInfo*>& getUnitInfo();
 	CvUnitInfo& getUnitInfo(UnitTypes eUnitNum);
 
@@ -1564,26 +1563,13 @@ protected:
 		inline bool getUSE_DO_COMBAT_CALLBACK() { return m_bUSE_DO_COMBAT_CALLBACK; }
 
 public:
-	void enableNumUnitInfosFakeExe()
+	void setExeXmlLengthOverride(bool bEnabled)
 	{
-		m_enableNumUnitInfosFakeExe = true;
-	}
-	void disableNumUnitInfosFakeExe()
-	{
-		m_enableNumUnitInfosFakeExe = false;
-	}
-	void enableNumBuildingInfosFakeExe()
-	{
-		m_enableNumBuildingInfosFakeExe = true;
-	}
-	void disableNumBuildingInfosFakeExe()
-	{
-		m_enableNumBuildingInfosFakeExe = false;
+		m_bExeXmlLengthOverride = bEnabled;
 	}
 
 protected:
-	bool m_enableNumUnitInfosFakeExe;
-	bool m_enableNumBuildingInfosFakeExe;
+	bool m_bExeXmlLengthOverride;
 };
 
 extern CvGlobals gGlobals;	// for debugging

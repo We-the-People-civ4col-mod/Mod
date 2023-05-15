@@ -530,6 +530,11 @@ void CyGlobalContext::setDomesticAdvisorState(int iPage)
 	iDomesticAdvisorState = iPage;
 }
 
+void CyGlobalContext::setExeXmlLengthOverride(bool bEnabled)
+{
+	GC.setExeXmlLengthOverride(bEnabled);
+}
+
 CyUserSettings* CyGlobalContext::getUserSettings() const
 {
 	return new CyUserSettings();

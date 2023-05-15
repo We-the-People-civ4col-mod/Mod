@@ -2304,7 +2304,7 @@ class CvWorldBuilderScreen:
 
 		self.m_normalPlayerTabCtrl = getWBToolNormalPlayerTabCtrl()
 
-		self.m_normalPlayerTabCtrl.setNumColumns((gc.getNumUnitInfosFakeExe()/10)+2);
+		self.m_normalPlayerTabCtrl.setNumColumns((gc.getNumUnitInfos()/10)+2);
 		self.m_normalPlayerTabCtrl.addTabSection(localText.getText("TXT_KEY_WB_UNITS",()));
 		self.m_iUnitTabID = 0
 		self.m_iNormalPlayerCurrentIndexes.append(0)
@@ -2315,9 +2315,9 @@ class CvWorldBuilderScreen:
 		self.m_iNormalPlayerCurrentIndexes.append(0)
 		# ugly hack: disable the NumUnitInfos deception for the exe for this function only
 		# so WB will only display the real units, not the placeholders
-		gc.disableNumUnitInfosFakeExe();
+		gc.setExeXmlLengthOverride(false);
 		addWBPlayerControlTabs()
-		gc.enableNumUnitInfosFakeExe();
+		gc.setExeXmlLengthOverride(true);
 		return
 
 	def refreshAdvancedStartTabCtrl(self, bReuse):
@@ -2352,7 +2352,7 @@ class CvWorldBuilderScreen:
 			self.m_iASAutomateListID = 1
 			self.m_iAdvancedStartCurrentList.append(self.m_iASCityListID)
 
-			self.m_advancedStartTabCtrl.setNumColumns((gc.getNumUnitInfosFakeExe()/10)+2);
+			self.m_advancedStartTabCtrl.setNumColumns((gc.getNumUnitInfos()/10)+2);
 			self.m_advancedStartTabCtrl.addTabSection(localText.getText("TXT_KEY_WB_AS_UNITS",()));
 			self.m_iASUnitTabID = 1
 			self.m_iAdvancedStartCurrentIndexes.append(0)

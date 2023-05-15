@@ -36,13 +36,6 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
-// set the number of total unit/building/yield infos passed to the execute
-// these will affect padding in the savegame, keeping the number in the exe constant
-// helps with savegame compatibility even if we add units/buildings later
-const int iNumUnitInfosFakeExe = 384;
-const int iNumBuildingInfosFakeExe = 384;
-// const int iNumYieldInfosFakeExe = 192;
-
 //
 // CONSTRUCTOR
 //
@@ -392,8 +385,7 @@ m_bUSE_DO_COMBAT_CALLBACK(false),
 // K-Mod \RaR end,
 m_paHints(NULL),
 m_paMainMenus(NULL),
-m_enableNumUnitInfosFakeExe(true),
-m_enableNumBuildingInfosFakeExe(true)
+m_bExeXmlLengthOverride(true)
 {
 }
 
@@ -1458,11 +1450,6 @@ int CvGlobals::getNumUnitInfos() const
 	return (int)m_paUnitInfo.size();
 }
 
-int CvGlobals::getNumUnitInfosFakeExe() const
-{
-	return m_enableNumUnitInfosFakeExe ? iNumUnitInfosFakeExe : NUM_UNIT_TYPES-1; // NUM_UNIT_TYPES-1: don't return the placeholder unit!
-}
-
 std::vector<CvUnitInfo*>& CvGlobals::getUnitInfo()	// For Moose - XML Load Util, CvInfos
 {
 	return m_paUnitInfo;
@@ -2001,11 +1988,6 @@ CvBuildingClassInfo& CvGlobals::getBuildingClassInfo(BuildingClassTypes eBuildin
 int CvGlobals::getNumBuildingInfos() const
 {
 	return (int)m_paBuildingInfo.size();
-}
-
-int CvGlobals::getNumBuildingInfosFakeExe() const
-{
-	return m_enableNumBuildingInfosFakeExe ? iNumBuildingInfosFakeExe : NUM_BUILDING_TYPES-1; // NUM_BUILDING_TYPES-1: don't return the placeholder unit!
 }
 
 std::vector<CvBuildingInfo*>& CvGlobals::getBuildingInfo()	// For Moose - XML Load Util, CvInfos, CvCacheObject
