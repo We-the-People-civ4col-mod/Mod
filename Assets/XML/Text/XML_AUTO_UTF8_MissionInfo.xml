@@ -118,6 +118,7 @@
         <German>Mit diesem Befehl gründet der [COLOR_UNIT_TEXT]Siedler[COLOR_REVERT] an dem aktuellen Standort eine Siedlung.</German>
         <Italian>Questo comando fa in modo che il [COLOR_UNIT_TEXT]colono[COLOR_REVERT] costruisca un insediamento nel punto in cui si trova.</Italian>
         <Spanish>Esta orden hace que el [COLOR_UNIT_TEXT]colono[COLOR_REVERT] construya un asentamiento en el lugar en que se encuentre.</Spanish>
+        <Russian>Этот приказ заставляет [COLOR_UNIT_TEXT]поселенца[COLOR_REVERT] построить поселение в его текущем местоположении.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_HEAL</Tag>
@@ -247,6 +248,7 @@
         <German>Straße nach</German>
         <Italian>Intinerario</Italian>
         <Spanish>Ir en ruta a</Spanish>
+        <Russian>Построить дорогу к выбранной точке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_ROUTE_TO_HELP</Tag>
@@ -259,6 +261,7 @@
     <TEXT>
         <Tag>TXT_KEY_MISSION_ROUTE_TO_ROAD</Tag>
         <English>Route to (country road)</English>
+        <Russian>Построить проселочную дорогу к выбранной точке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_ROUTE_TO_ROAD_HELP</Tag>
@@ -267,6 +270,7 @@
     <TEXT>
         <Tag>TXT_KEY_MISSION_ROUTE_TO_PLASTERED_ROAD</Tag>
         <English>Route to (plastered road)</English>
+        <Russian>Построить вымощенную камнем дорогу к выбранной точке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_ROUTE_TO_PLASTERED_ROAD_HELP</Tag>

@@ -1931,27 +1931,32 @@
         <English>We would like to respectfully thank Your Majesty and we appreciate Your support. May we most humbly state that we are in dire need of resources to build up our colonies?</English>
         <French>Nous tenons à remercier respectueusement Sa Majesté et nous apprécions son soutien. Pouvons-nous faire état que nos colonies manquent cruellement de ressources pour leur construction ?</French>
         <German>Wir danken Eurer Majestät und nehmen die wohlfeile Hilfe gerne an. Wenn wir demütigst einen Wunsch äußern dürften: Rohstoffe für den Aufbau unserer Kolonie kämen uns sehr gelegen.</German>
+        <Russian>Мы хотели бы со всем почтением поблагодарить Ваше Величество и сказать, что мы ценим Вашу поддержку. Можем ли мы со смирением заявить, что остро нуждаемся в ресурсах для создания наших колоний?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SECONDCOLONY_2</Tag>
         <English>Your Majesty, if I may reconsider... The protection of our colony against wild animals and Native raiders is even more important.</English>
         <French>Votre Majesté, sauf votre respect, la protection de notre colonie contre les dangers environnants, animaux sauvages et raids indigènes, est encore plus prioritaire.</French>
         <German>Eure Majestät, wichtiger noch als der Aufbau unserer Kolonie ist ihr Schutz vor den Gefahren der Wildnis. Bestien und Eingeborene lauern uns allerorten auf.</German>
+        <Russian>Ваше Величество, защита нашей колонии от опасностей дикой природы важнее, чем строительство. Дикие звери и не менее дикие туземцы подстерегают нас повсюду.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THIRDCOLONY_1</Tag>
         <English>Ensure that these brave young men get what they require for this enterprise. We must know what this new world offers for us. His Majesty will be delighted.</English>
         <German>Stellt sicher, dass diese mutigen jungen Männer alles erhalten, das sie für dieses Unterfangen benötigen. Wir müssen erfahren, was diese Welt für uns bereit hält. Ihre Majestät wird erfreut sein.</German>
+        <Russian>Убедитесь, что эти отважные молодые люди получат то, что им нужно для этого предприятия. Мы должны знать, что предлагает нам этот новый мир. Его Величество будет в восторге.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THIRDCOLONY_2</Tag>
         <English>While we appreciate the initiative of these young men, their skills are first needed to help us build our colony and its infrastruture. They shall work as pioneers instead.</English>
         <German>Auch wenn wir die Innitiative dieser jungen Männer begrüßen, werden ihre Fähigkeiten zuerst zum Aufbau unsere Kolonie und ihrer Infrastruktur benötigt. Rüstet sie als Pioniere aus.</German>
+        <Russian>Хотя мы ценим инициативу этих молодых людей, их навыки необходимы в первую очередь для того, чтобы помочь нам построить нашу колонию и ее инфраструктуру. Приобретите все необходимое для работы первопроходцев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THIRDCOLONY_3</Tag>
         <English>Our colony's finances are in dire straits. What little income we have must be saved for more urgent matters. We regretfully deny our support for this enterprise.</English>
         <German>Unsere Kolonie ist aktuell in einer schwierigen finanziellen Lage. Wir müssen unsere geringen Einnahmen für wichtigere Investitionen aufsparen und daher unsere Unterstützung verwehren.</German>
+        <Russian>Финансы нашей колонии в плачевном состоянии. Те небольшие доходы, которые у нас есть, должны быть сохранены для более неотложных дел. К сожалению, мы отказываемся от поддержки этого предприятия, но какую-нибудь работу мы им найдем.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SECOND_CHANCE_1</Tag>
