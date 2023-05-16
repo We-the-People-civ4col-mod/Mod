@@ -790,7 +790,7 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_FUR_TRADER</UnitClassType>
-                    <UnitType>UNIT_FRENCH_FUR_TRADER</UnitType>
+                    <UnitType>UNIT_FRENCH_FURRIER</UnitType>
                 </Unit>
             </Units>
             <Professions>
@@ -3485,7 +3485,7 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_FUR_TRADER</UnitClassType>
-                    <UnitType>UNIT_FRENCH_FUR_TRADER</UnitType>
+                    <UnitType>UNIT_FRENCH_FURRIER</UnitType>
                 </Unit>
             </Units>
             <Professions>
