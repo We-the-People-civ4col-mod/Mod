@@ -6705,15 +6705,14 @@ void CvCityAI::AI_educateStudent(int iUnitId)
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	UnitTypes eBestUnit = NO_UNIT;
 	int iBestValue = 0;
-	for (int i = 0; i < GC.getNumUnitInfos(); ++i)
+	for (UnitTypes eLoopUnit = FIRST_UNIT; eLoopUnit < NUM_UNIT_TYPES; ++eLoopUnit)
 	{
-		int iTuition = getSpecialistTuition((UnitTypes) i);
+		int iTuition = getSpecialistTuition(eLoopUnit);
 		if (GET_PLAYER(getOwnerINLINE()).getGold() >= iTuition && iTuition >= 0)
 		{
-			UnitTypes eLoopUnit = (UnitTypes)i;
-			CvUnitInfo& kUnit = GC.getUnitInfo(eLoopUnit);
+			const CvUnitInfo& kUnit = GC.getUnitInfo(eLoopUnit);
 
-			UnitClassTypes eUnitClassType = (UnitClassTypes)kUnit.getUnitClassType(); // R&R, ray, changed
+			const UnitClassTypes eUnitClassType = kUnit.getUnitClassType(); // R&R, ray, changed
 
 			int iValue = 50;
 

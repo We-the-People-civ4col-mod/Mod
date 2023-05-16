@@ -6177,8 +6177,7 @@ bool CvPlayer::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool
 {
 	PROFILE_FUNC();
 
-	UnitClassTypes eUnitClass;
-	eUnitClass = ((UnitClassTypes)(GC.getUnitInfo(eUnit).getUnitClassType()));
+	const UnitClassTypes eUnitClass = GC.getUnitInfo(eUnit).getUnitClassType();
 
 	FAssert(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass) == eUnit);
 	if (GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass) != eUnit)
@@ -6320,7 +6319,7 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 
 int CvPlayer::getYieldProductionNeeded(UnitTypes eUnit, YieldTypes eYield) const
 {
-	UnitClassTypes eUnitClass = (UnitClassTypes)GC.getUnitInfo(eUnit).getUnitClassType();
+	const UnitClassTypes eUnitClass = GC.getUnitInfo(eUnit).getUnitClassType();
 	FAssert(NO_UNITCLASS != eUnitClass);
 
 	int iProductionNeeded = GC.getUnitInfo(eUnit).getYieldCost(eYield);
@@ -16355,7 +16354,7 @@ int CvPlayer::getEuropeUnitBuyPrice(UnitTypes eUnit, bool bIncrease) const
 	//iCost += GET_TEAM(getTeam()).getEuropeUnitsPurchased((UnitClassTypes) kUnit.getUnitClassType()) * kUnit.getEuropeCostIncrease();
 	if (bIncrease)
 	{
-		iCost += GET_TEAM(getTeam()).getUnitsPurchasedHistory((UnitClassTypes) kUnit.getUnitClassType()) * kUnit.getEuropeCostIncrease();
+		iCost += GET_TEAM(getTeam()).getUnitsPurchasedHistory(kUnit.getUnitClassType()) * kUnit.getEuropeCostIncrease();
 	}
 	// TAC - AI purchases military units - koma13 - END
 
@@ -17739,7 +17738,7 @@ int CvPlayer::getAfricaUnitBuyPrice(UnitTypes eUnit) const
 		return iCost;
 	}
 
-	iCost += GET_TEAM(getTeam()).getUnitsPurchasedHistory((UnitClassTypes) kUnit.getUnitClassType()) * kUnit.getAfricaCostIncrease();
+	iCost += GET_TEAM(getTeam()).getUnitsPurchasedHistory(kUnit.getUnitClassType()) * kUnit.getAfricaCostIncrease();
 
 	// WTP, ray, capping UnitBuyPrices at 200 percent - START
 	if (iCost > kUnit.getAfricaCost() * 2)
@@ -17846,7 +17845,7 @@ int CvPlayer::getPortRoyalUnitBuyPrice(UnitTypes eUnit) const
 		return iCost;
 	}
 
-	iCost += GET_TEAM(getTeam()).getUnitsPurchasedHistory((UnitClassTypes) kUnit.getUnitClassType()) * kUnit.getPortRoyalCostIncrease();
+	iCost += GET_TEAM(getTeam()).getUnitsPurchasedHistory(kUnit.getUnitClassType()) * kUnit.getPortRoyalCostIncrease();
 
 	// WTP, ray, capping UnitBuyPrices at 200 percent - START
 	if (iCost > kUnit.getPortRoyalCost() * 2)
@@ -19330,7 +19329,7 @@ UnitTypes CvPlayer::pickBestImmigrant()
 		{
 			const CvUnitInfo& kInfo = GC.getUnitInfo(eUnit);
 			int iWeight = kInfo.getImmigrationWeight();
-			for (int i = 0; i < getUnitClassImmigrated(static_cast<UnitClassTypes>(kInfo.getUnitClassType())); ++i)
+			for (int i = 0; i < getUnitClassImmigrated(kInfo.getUnitClassType()); ++i)
 			{
 				iWeight *= std::max(0, 100 - kInfo.getImmigrationWeightDecay());
 				iWeight /= 100;
@@ -19344,7 +19343,7 @@ UnitTypes CvPlayer::pickBestImmigrant()
 	FAssert(NO_UNIT != eBestUnit);
 	if (eBestUnit != NO_UNIT)
 	{
-		changeUnitClassImmigrated((UnitClassTypes) GC.getUnitInfo(eBestUnit).getUnitClassType(), 1);
+		changeUnitClassImmigrated(GC.getUnitInfo(eBestUnit).getUnitClassType(), 1);
 	}
 
 	return eBestUnit;
@@ -20825,7 +20824,7 @@ bool CvPlayer::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pr
 	}
 
 	//cases criminal or servant
-	int modcase = convUnit->getUnitInfo().getUnitClassType();
+	const UnitClassTypes modcase = convUnit->getUnitInfo().getUnitClassType();
 
 	//default case is servant
 	int mod = mod_serv;

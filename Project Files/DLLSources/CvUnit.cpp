@@ -253,7 +253,7 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 	setGameTurnCreated(GC.getGameINLINE().getGameTurn());
 
 	GC.getGameINLINE().incrementUnitCreatedCount(getUnitType());
-	GC.getGameINLINE().incrementUnitClassCreatedCount((UnitClassTypes)(m_pUnitInfo->getUnitClassType()));
+	GC.getGameINLINE().incrementUnitClassCreatedCount(m_pUnitInfo->getUnitClassType());
 
 	updateOwnerCache(1);
 
@@ -725,8 +725,8 @@ void CvUnit::updateOwnerCache(int iChange)
 
 	CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
 
-	GET_TEAM(getTeam()).changeUnitClassCount(((UnitClassTypes)(m_pUnitInfo->getUnitClassType())), iChange);
-	kPlayer.changeUnitClassCount(((UnitClassTypes)(m_pUnitInfo->getUnitClassType())), iChange);
+	GET_TEAM(getTeam()).changeUnitClassCount(m_pUnitInfo->getUnitClassType(), iChange);
+	kPlayer.changeUnitClassCount(m_pUnitInfo->getUnitClassType(), iChange);
 	kPlayer.changeAssets(getAsset() * iChange);
 	kPlayer.changePower(getPower() * iChange);
 	CvArea* pArea = area();
@@ -8386,7 +8386,7 @@ CvCity* CvUnit::getUpgradeCity(UnitTypes eUnit, bool bSearch, int* iSearchValue)
 		return NULL;
 	}
 
-	if (!upgradeAvailable(getUnitType(), ((UnitClassTypes)(kUnitInfo.getUnitClassType()))))
+	if (!upgradeAvailable(getUnitType(), kUnitInfo.getUnitClassType()))
 	{
 		return NULL;
 	}
@@ -12739,7 +12739,7 @@ CvUnitInfo &CvUnit::getUnitInfo() const
 
 UnitClassTypes CvUnit::getUnitClassType() const
 {
-	return (UnitClassTypes)m_pUnitInfo->getUnitClassType();
+	return m_pUnitInfo->getUnitClassType();
 }
 
 UnitTypes CvUnit::getLeaderUnitType() const
@@ -16590,8 +16590,9 @@ bool CvUnit::isBarbarianUnitOnAdjacentPlotOfUnit(int /*UnitClassTypes*/ iIndex) 
 // Erik: We should come up with a XML tag (e.g. bJoin vs. bFound) so that we don't need to hard-code this
 bool CvUnit::isPrisonerOrSlave() const
 {
-	const int unitClassIntToBeChecked = m_pUnitInfo->getUnitClassType();
+	const UnitClassTypes unitClassIntToBeChecked = m_pUnitInfo->getUnitClassType();
 
+	// TODO: optimize this one to avoid using getDefineINT
 	if (unitClassIntToBeChecked == GC.getDefineINT("UNITCLASS_PRISONER") || unitClassIntToBeChecked == GC.getDefineINT("UNITCLASS_NATIVE_SLAVE") || unitClassIntToBeChecked == GC.getDefineINT("UNITCLASS_AFRICAN_SLAVE"))
 	{
 		return true;

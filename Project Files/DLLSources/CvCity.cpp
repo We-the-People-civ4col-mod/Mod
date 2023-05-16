@@ -6474,7 +6474,7 @@ void CvCity::pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bo
 			}
 
 			UnitAITypes const eUnitAI = (UnitAITypes)iData2; // advc
-			GET_PLAYER(getOwner()).changeUnitClassMaking((UnitClassTypes)GC.getUnitInfo(eUnit).getUnitClassType(), 1);
+			GET_PLAYER(getOwner()).changeUnitClassMaking(GC.getUnitInfo(eUnit).getUnitClassType(), 1);
 			area()->changeNumTrainAIUnits(getOwner(), eUnitAI, 1);
 			GET_PLAYER(getOwner()).AI_changeNumTrainAIUnits(eUnitAI, 1);
 
@@ -6623,7 +6623,7 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 		FAssertMsg(eTrainUnit != NO_UNIT, "eTrainUnit is expected to be assigned a valid unit type");
 		FAssertMsg(eTrainAIUnit != NO_UNITAI, "eTrainAIUnit is expected to be assigned a valid unit AI type");
 
-		GET_PLAYER(getOwnerINLINE()).changeUnitClassMaking(((UnitClassTypes)(GC.getUnitInfo(eTrainUnit).getUnitClassType())), -1);
+		GET_PLAYER(getOwnerINLINE()).changeUnitClassMaking(GC.getUnitInfo(eTrainUnit).getUnitClassType(), -1);
 
 		area()->changeNumTrainAIUnits(getOwnerINLINE(), eTrainAIUnit, -1);
 		GET_PLAYER(getOwnerINLINE()).AI_changeNumTrainAIUnits(eTrainAIUnit, -1);
@@ -7654,7 +7654,7 @@ bool CvCity::doCheckProduction()
 					{
 						if (pOrderNode->m_data.iData1 == iI)
 						{
-							GET_PLAYER(getOwnerINLINE()).changeUnitClassMaking(((UnitClassTypes)(GC.getUnitInfo((UnitTypes)(pOrderNode->m_data.iData1)).getUnitClassType())), -1);
+							GET_PLAYER(getOwnerINLINE()).changeUnitClassMaking(GC.getUnitInfo((UnitTypes)(pOrderNode->m_data.iData1)).getUnitClassType(), -1);
 							pOrderNode->m_data.iData1 = eUpgradeUnit;
 							if (GET_PLAYER(getOwnerINLINE()).AI_unitValue(eUpgradeUnit, ((UnitAITypes)(pOrderNode->m_data.iData2)), area()) == 0)
 							{
@@ -7664,7 +7664,7 @@ bool CvCity::doCheckProduction()
 								area()->changeNumTrainAIUnits(getOwnerINLINE(), ((UnitAITypes)(pOrderNode->m_data.iData2)), 1);
 								GET_PLAYER(getOwnerINLINE()).AI_changeNumTrainAIUnits(((UnitAITypes)(pOrderNode->m_data.iData2)), 1);
 							}
-							GET_PLAYER(getOwnerINLINE()).changeUnitClassMaking(((UnitClassTypes)(GC.getUnitInfo((UnitTypes)(pOrderNode->m_data.iData1)).getUnitClassType())), 1);
+							GET_PLAYER(getOwnerINLINE()).changeUnitClassMaking(GC.getUnitInfo((UnitTypes)(pOrderNode->m_data.iData1)).getUnitClassType(), 1);
 						}
 					}
 
@@ -12698,7 +12698,7 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 	// now we check if the esxpert is in the City as teacher
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
 	{
-		if (m_aPopulationUnits[i]->getUnitInfo().getUnitClassType() == (UnitClassTypes)GC.getUnitInfo(expertUnitType).getUnitClassType())
+		if (m_aPopulationUnits[i]->getUnitInfo().getUnitClassType() == GC.getUnitInfo(expertUnitType).getUnitClassType())
 		{
 			bValidTeacherFound = true;
 			continue;

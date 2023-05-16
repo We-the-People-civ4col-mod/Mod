@@ -2741,7 +2741,7 @@ m_iCargoSpace(0),
 m_iRequiredTransportSize(0),
 m_iAssetValue(0),
 m_iPowerValue(0),
-m_iUnitClassType(NO_UNITCLASS),
+m_eUnitClassType(NO_UNITCLASS),
 m_iSpecialUnitType(NO_SPECIALUNIT),
 m_iUnitCaptureClassType(NO_UNITCLASS),
 m_iUnitCombatType(NO_UNITCOMBAT),
@@ -3044,9 +3044,9 @@ int CvUnitInfo::getPowerValue() const
 {
 	return m_iPowerValue;
 }
-int CvUnitInfo::getUnitClassType() const
+UnitClassTypes CvUnitInfo::getUnitClassType() const
 {
-	return m_iUnitClassType;
+	return m_eUnitClassType;
 }
 int CvUnitInfo::getSpecialUnitType() const
 {
@@ -3666,7 +3666,7 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iBarracksSpaceNeeded); // WTP, ray, new Barracks System - START
 	stream->Read(&m_iAssetValue);
 	stream->Read(&m_iPowerValue);
-	stream->Read(&m_iUnitClassType);
+	stream->Read(&m_eUnitClassType);
 	stream->Read(&m_iSpecialUnitType);
 	stream->Read(&m_iUnitCaptureClassType);
 	stream->Read(&m_iUnitCombatType);
@@ -3895,7 +3895,7 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iBarracksSpaceNeeded); // WTP, ray, new Barracks System - START
 	stream->Write(m_iAssetValue);
 	stream->Write(m_iPowerValue);
-	stream->Write(m_iUnitClassType);
+	stream->Write(m_eUnitClassType);
 	stream->Write(m_iSpecialUnitType);
 	stream->Write(m_iUnitCaptureClassType);
 	stream->Write(m_iUnitCombatType);
@@ -4020,8 +4020,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	int j=0;				//loop counter
 	int k=0;				//loop counter
 	int iNumSibs=0;				// the number of siblings the current xml node has
-	pXML->GetChildXmlValByName(szTextVal, "Class");
-	m_iUnitClassType = pXML->FindInInfoClass(szTextVal);
+	pXML->GetEnum(getType(), m_eUnitClassType, "Class");
 	pXML->GetChildXmlValByName(szTextVal, "Special");
 	m_iSpecialUnitType = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "Capture");

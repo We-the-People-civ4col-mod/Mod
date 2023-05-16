@@ -734,7 +734,7 @@ public:
 	int getRequiredTransportSize() const;
 	int getAssetValue() const;
 	int getPowerValue() const;
-	int getUnitClassType() const;
+	UnitClassTypes getUnitClassType() const;
 	int getSpecialUnitType() const;
 	int getUnitCaptureClassType() const;
 	int getUnitCombatType() const;
@@ -927,7 +927,7 @@ protected:
 	int m_iRequiredTransportSize;
 	int m_iAssetValue;
 	int m_iPowerValue;
-	int m_iUnitClassType;
+	UnitClassTypes m_eUnitClassType;
 	int m_iSpecialUnitType;
 	int m_iUnitCaptureClassType;
 	int m_iUnitCombatType;

@@ -5455,7 +5455,7 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 	}
 
 	CvUnitInfo& kUnitInfo = GC.getUnitInfo(eUnit);
-	int unitClassIntToBeChecked = kUnitInfo.getUnitClassType();
+	const UnitClassTypes unitClassIntToBeChecked = kUnitInfo.getUnitClassType();
 
 	if (!bCivilopediaText)
 	{
@@ -6140,7 +6140,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit, bool
 	}
 
 	// test for unique unit
-	UnitClassTypes eUnitClass = (UnitClassTypes)GC.getUnitInfo(eUnit).getUnitClassType();
+	const UnitClassTypes eUnitClass = GC.getUnitInfo(eUnit).getUnitClassType();
 	UnitTypes eDefaultUnit = (UnitTypes)GC.getUnitClassInfo(eUnitClass).getDefaultUnitIndex();
 
 	if (NO_UNIT != eDefaultUnit && eDefaultUnit != eUnit)
@@ -6414,17 +6414,17 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit, bool
 	{
 		if(NO_UNIT != eDefaultUnit && eDefaultUnit == eUnit)
 		{
-			for(int iI = 0; iI < GC.getNumUnitInfos(); ++iI)
+			for(UnitTypes eLoopUnit = FIRST_UNIT; eLoopUnit < NUM_UNIT_TYPES; ++eLoopUnit)
 			{
-				if(((UnitTypes)iI) == eUnit)
+				if(eLoopUnit == eUnit)
 				{
 					continue;
 				}
 
-				if(eUnitClass == ((UnitClassTypes)GC.getUnitInfo((UnitTypes)iI).getUnitClassType()))
+				if(eUnitClass == GC.getUnitInfo(eLoopUnit).getUnitClassType())
 				{
 					szBuffer.append(NEWLINE);
-					szBuffer.append(gDLL->getText("TXT_KEY_REPLACED_BY_UNIT", GC.getUnitInfo((UnitTypes)iI).getTextKeyWide()));
+					szBuffer.append(gDLL->getText("TXT_KEY_REPLACED_BY_UNIT", GC.getUnitInfo(eLoopUnit).getTextKeyWide()));
 				}
 			}
 		}

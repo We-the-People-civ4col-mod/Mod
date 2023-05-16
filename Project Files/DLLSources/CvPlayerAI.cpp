@@ -10955,13 +10955,12 @@ int CvPlayerAI::AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUni
 // simply returns the first Expert to Profession that matches UnitType
 ProfessionTypes CvPlayerAI::AI_idealProfessionForUnit(UnitTypes eUnitType) const
 {
-	int eUnitClassType = GC.getUnitInfo(eUnitType).getUnitClassType();
+	const UnitClassTypes eUnitClassType = GC.getUnitInfo(eUnitType).getUnitClassType();
 	ProfessionTypes eIdealProfession = NO_PROFESSION;
 
-	for (int iI = 0; iI < GC.getNumProfessionInfos(); ++iI)
+	for (ProfessionTypes eLoopProfession = FIRST_PROFESSION; eLoopProfession < NUM_PROFESSION_TYPES; ++eLoopProfession)
 	{
-		ProfessionTypes eLoopProfession = (ProfessionTypes)iI;
-		CvProfessionInfo& kProfession = GC.getProfessionInfo(eLoopProfession);
+		const CvProfessionInfo& kProfession = GC.getProfessionInfo(eLoopProfession);
 
 		if (kProfession.isCitizen())
 		{
@@ -14077,7 +14076,7 @@ UnitTypes CvPlayerAI::AI_bestAdvancedStartUnitAI(CvPlot* pPlot, UnitAITypes eUni
 								break;
 							}
 
-							if (isFreePromotion((UnitClassTypes)GC.getUnitInfo(eLoopUnit).getUnitClassType(), (PromotionTypes)iK))
+							if (isFreePromotion(GC.getUnitInfo(eLoopUnit).getUnitClassType(), (PromotionTypes)iK))
 							{
 								iPromotionValue += 15;
 								break;
@@ -15058,21 +15057,20 @@ void CvPlayerAI::AI_doEnemyUnitData()
 	}
 
 	//Decay
-	for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
+	for (UnitClassTypes eUnitClass = FIRST_UNITCLASS; eUnitClass < NUM_UNITCLASS_TYPES; ++eUnitClass)
 	{
-		m_em_iUnitClassWeights.add((UnitClassTypes)iI, -100);
-		m_em_iUnitClassWeights.set((UnitClassTypes)iI, (m_em_iUnitClassWeights.get((UnitClassTypes)iI)*3)/4);
-		m_em_iUnitClassWeights.set((UnitClassTypes)iI, std::max(0, m_em_iUnitClassWeights.get((UnitClassTypes)iI)));
+		m_em_iUnitClassWeights.add(eUnitClass, -100);
+		m_em_iUnitClassWeights.set(eUnitClass, (m_em_iUnitClassWeights.get(eUnitClass)*3)/4);
+		m_em_iUnitClassWeights.set(eUnitClass, std::max(0, m_em_iUnitClassWeights.get(eUnitClass)));
 	}
 
-	for (iI = 0; iI < GC.getNumUnitInfos(); iI++)
+	for (UnitTypes eLoopUnit = FIRST_UNIT; eLoopUnit < NUM_UNIT_TYPES; ++eLoopUnit)
 	{
 		if (aiUnitCounts[iI] > 0)
 		{
-			UnitTypes eLoopUnit = (UnitTypes)iI;
 			aiUnitCounts[iI] = 0;
 			FAssert(aiDomainSums[GC.getUnitInfo(eLoopUnit).getDomainType()] > 0);
-			m_em_iUnitClassWeights.add((UnitClassTypes)GC.getUnitInfo(eLoopUnit).getUnitClassType(), (5000 * aiUnitCounts[iI]) / std::max(1, aiDomainSums[GC.getUnitInfo(eLoopUnit).getDomainType()]));
+			m_em_iUnitClassWeights.add(GC.getUnitInfo(eLoopUnit).getUnitClassType(), (5000 * aiUnitCounts[iI]) / std::max(1, aiDomainSums[GC.getUnitInfo(eLoopUnit).getDomainType()]));
 		}
 	}
 
@@ -15080,12 +15078,12 @@ void CvPlayerAI::AI_doEnemyUnitData()
 	m_em_iUnitCombatWeights.reset();
 
 
-	for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
+	for (UnitClassTypes eUnitClass = FIRST_UNITCLASS; eUnitClass < NUM_UNITCLASS_TYPES; ++eUnitClass)
 	{
-		if (m_em_iUnitClassWeights.get((UnitClassTypes)iI) > 0)
+		if (m_em_iUnitClassWeights.get(eUnitClass) > 0)
 		{
-			UnitTypes eUnit = (UnitTypes)GC.getUnitClassInfo((UnitClassTypes)iI).getDefaultUnitIndex();
-			m_em_iUnitCombatWeights.add((UnitCombatTypes)GC.getUnitInfo(eUnit).getUnitCombatType(), m_em_iUnitClassWeights.get((UnitClassTypes)iI));
+			UnitTypes eUnit = (UnitTypes)GC.getUnitClassInfo(eUnitClass).getDefaultUnitIndex();
+			m_em_iUnitCombatWeights.add((UnitCombatTypes)GC.getUnitInfo(eUnit).getUnitCombatType(), m_em_iUnitClassWeights.get(eUnitClass));
 
 		}
 	}
@@ -16151,12 +16149,11 @@ int CvPlayerAI::AI_getNumCityUnitsNeeded(UnitTypes eUnit)
 	//ProfessionTypes eIdealProfession = AI_idealProfessionForUnit(eUnit);
 
 	ProfessionTypes eIdealProfession = NO_PROFESSION; // only need one ideal profession, since we just check slots in building for same specialist
-	UnitClassTypes eUnitClassType = (UnitClassTypes)GC.getUnitInfo(eUnit).getUnitClassType();
+	const UnitClassTypes eUnitClassType = GC.getUnitInfo(eUnit).getUnitClassType();
 
-	for (int iI = 0; iI < GC.getNumProfessionInfos(); ++iI)
+	for (ProfessionTypes eLoopProfession = FIRST_PROFESSION; eLoopProfession < NUM_PROFESSION_TYPES; ++eLoopProfession)
 	{
-		ProfessionTypes eLoopProfession = (ProfessionTypes)iI;
-		CvProfessionInfo& kProfession = GC.getProfessionInfo(eLoopProfession);
+		const CvProfessionInfo& kProfession = GC.getProfessionInfo(eLoopProfession);
 
 		if (kProfession.isCitizen())
 		{

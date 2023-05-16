@@ -6,3 +6,8 @@ int CyUnitInfo::getDefaultProfession() const
 {
 	return CvUnitInfo::getDefaultProfession();
 }
+
+int CyUnitInfo::getUnitClassType() const
+{
+	return CvUnitInfo::getUnitClassType();
+}
