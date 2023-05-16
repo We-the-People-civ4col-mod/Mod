@@ -2412,32 +2412,32 @@
         <Spanish>Si necesitáis muchos [COLOR_HIGHLIGHT_TEXT]Abrigos[COLOR_REVERT] y rápido, el [COLOR_UNIT_TEXT]Maestro peletero[COLOR_REVERT] es vuestro hombre. Capaces de crear el doble de la cantidad normal de [COLOR_HIGHLIGHT_TEXT]Abrigos[COLOR_REVERT] que tarda un [COLOR_UNIT_TEXT]Colono libre[COLOR_REVERT] en el mismo tiempo, los Maestros peleteros son una manera rápida de obtener beneficios si se tiene un exceso de Pieles en el asentamiento.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_FRENCH_FUR_TRADER</Tag>
-        <English>French Fur Trader:French Fur Traders</English>
+        <Tag>TXT_KEY_UNIT_FRENCH_FURRIER</Tag>
+        <English>French Furrier:French Furriers</English>
         <French>
-            <Text>Fourreur Français:Fourreurs Français</Text>
+            <Text>Furrier Français:Furriers Français</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Französischer Pelzhändler:Französische Pelzhändler</Text>
+            <Text>Französischer Furrier:Französische Furriers</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Pellicciaio Francese:Pellicciai Francesi</Text>
+            <Text>Furrier Francese:Furriers Francesi</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Peletero Francés:Peleteros Franceses</Text>
+            <Text>Furrier Francés:Furriers Franceses</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Искусный скорняк:Искусные скорняки</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_FRENCH_FUR_TRADER_PEDIA</Tag>
+        <Tag>TXT_KEY_UNIT_FRENCH_FURRIER_PEDIA</Tag>
         <English>FRENCH FUR TRADER TO DO The fur trader is the middleman in the fur business.[NEWLINE]After the trapper has separated the pelt from its reluctant former owner, he delivers the fur to the trader in exchange for gold, food, bullets and powder.[NEWLINE]The furrier processes the pelt, trims and cleans it, and prepares it for its long journey to the markets of Europe.[NEWLINE]A good trader can multiply the value of a bale of pelts, earning himself and his colony a tidy profit on each shipment.</English>
         <French>Le Fourreur joue le rôle d'intermédiaire dans le commerce de la fourrure. Une fois que le trappeur a accompli la difficile tâche de se procurer des fourrures malgré la réticence de leurs précédents propriétaires, il les donne au fourreur, en échange d'or ou de nourriture, de balles ou de poudre, ou d'autres marchandises. Le Fourreur s'occupe de la fourrure, la taille et la nettoie, puis la prépare pour son long voyage jusqu'aux marchés européens. Un bon Fourreur peut considérablement augmenter la valeur d'une fourrure, réalisant ainsi, pour lui et la colonie, un joli bénéfice sur chaque expédition.</French>
         <German>Der Trapper tauschte seine Felle bei Händlern gegen Gold, Nahrung, Kugeln, Schießpulver oder andere Vorräte ein. Dieser Händler waren oft zugleich Pelzhändler und stellten aus den Fellen einfache Übermäntel oder Umhänge her. Manchmal bearbeiteten sie die Felle aber auch nur, reinigten und schnitten sie zu und verkauften sie dann nach Europa.</German>
@@ -2445,7 +2445,7 @@
         <Spanish>El Peletero es el intermediario en el negocio de las Pieles. Después de que el Trampero de pieles haya conseguido la difícil tarea de arrancarle la piel a su reticente dueño, se la cambia a éste por oro o comida, balas y pólvora u otras provisiones. El Peletero procesa la piel, la peina y la limpia y la prepara para su largo viaje hasta los mercados de Europa. Un buen Peletero puede aumentar enormemente el valor de las Pieles, lo que dará para él y su colonia un buen beneficio con cada cargamento enviado.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_FRENCH_FUR_TRADER_STRATEGY</Tag>
+        <Tag>TXT_KEY_UNIT_FRENCH_FURRIER_STRATEGY</Tag>
         <English>FRENCH FUR TRADER TO DO If you need a lot of [LINK=YIELD_COATS]coats[\LINK] or [LINK=YIELD_PREMIUM_COATS]luxury coats[\LINK] fast, the [COLOR_UNIT_TEXT]master fur trader[COLOR_REVERT] is your man.[NEWLINE]In the [LINK=PROFESSION_FUR_TRADER]coat maker[\LINK] or [LINK=PROFESSION_PREMIUM_FUR_TRADER]luxury coat maker[\LINK] profession, he can tailor double what regular colonists could from [LINK=YIELD_FUR]fur[\LINK] and [LINK=YIELD_PREMIUM_FUR]premium fur[\LINK].[PARAGRAPH:1]Master fur traders can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]trained[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its upgrades.</English>
         <French>Si vous avez rapidement besoin d'une grande quantité de [COLOR_HIGHLIGHT_TEXT]manteaux[COLOR_REVERT], le [COLOR_UNIT_TEXT]Maître fourreur[COLOR_REVERT] est votre homme. Capable de créer deux fois plus de [COLOR_HIGHLIGHT_TEXT]manteaux[COLOR_REVERT] que ne le ferait un [COLOR_UNIT_TEXT]colon libre[COLOR_REVERT], les Maîtres fourreurs peuvent être source de profits rapides si vous avez un excédent de fourrure dans votre colonie.</French>
         <German>[COLOR_UNIT_TEXT]Meister-Pelzhändler[COLOR_REVERT] arbeiten im Beruf des Pelzhändlers bei der Herstellung von [COLOR_HIGHLIGHT_TEXT]Pelzwaren[COLOR_REVERT] doppelt so produktiv wie Freie Kolonisten.</German>
