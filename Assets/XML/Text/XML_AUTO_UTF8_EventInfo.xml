@@ -1981,12 +1981,14 @@
         <English>As they wish... perhaps this will help us to curry favour at Court.</English>
         <French>Si tel est leur bon vouloir... Cela améliorera peut-être nos relations avec le Roi.</French>
         <German>Wir werden dem Wunsch folgen. Vielleicht bringt uns das ja auch einen Gefallen bei Hofe ein.</German>
+        <Russian>Как им будет угодно... возможно, это поможет нам выслужиться перед Двором.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SENDCONVERTS_2</Tag>
         <English>These people are human beings, not a museum exhibit!</English>
         <French>Ces indiens sont des êtres humains. Ils ne sont pas des monstres de foire!</French>
         <German>Wir sprechen hier von Menschen und nicht von Ausstellungsstücken!</German>
+        <Russian>Индейцы - живые люди, а не музейные экспонаты!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SHIPYARD_1</Tag>
@@ -2448,12 +2450,14 @@
         <English>Actually we always wanted to do this, only it was never the right time. Give him the job!</English>
         <French>Actually we always wanted to do this, only the right time for doing this had never opened up. Give him the job!</French>
         <German>Perfekt, das wollten wir doch schon lange in Angriff nehmen. Stellt ihn ein!</German>
+        <Russian>На самом деле мы всегда хотели это сделать, но не было подходящего времени. Дайте ему работу!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_WHALE_OIL_COOKER_2</Tag>
         <English>With so many pirates cruising in this area at the moment? We don't have the means to have all our whalers guarded by warships. And without protection, it's a pointless endeavour. We cannot employ him at the moment.</English>
         <French>Oh my god, what a stupid idea! The pirates cruising along our coasts are already waiting for such fat prey! We have not enough military vessels to protect our whaling ships and without procetion this is a rather senseless endeavor. We cannot employ him.</French>
         <German>Bei den vielen Piraten, die hier in dieser Gegend zur Zeit kreuzen? Wir haben nicht die Mittel, um alle unsere Walfänger von Kriegschiffen bewachen zu lassen. Und ohne Schutz ist das ein sinnloses Unterfangen. Wir können ihn derzeit nicht gebrauchen.</German>
+        <Russian>С таким количеством пиратов, курсирующих сейчас в этом районе? У нас нет средств, чтобы все наши китобойные суда охранялись военными кораблями. А без защиты это бессмысленное занятие. Мы не можем нанять его в данный момент.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_WHALING_1</Tag>
