@@ -15066,11 +15066,11 @@ void CvPlayerAI::AI_doEnemyUnitData()
 
 	for (UnitTypes eLoopUnit = FIRST_UNIT; eLoopUnit < NUM_UNIT_TYPES; ++eLoopUnit)
 	{
-		if (aiUnitCounts[iI] > 0)
+		if (aiUnitCounts[eLoopUnit] > 0)
 		{
-			aiUnitCounts[iI] = 0;
+			aiUnitCounts[eLoopUnit] = 0;
 			FAssert(aiDomainSums[GC.getUnitInfo(eLoopUnit).getDomainType()] > 0);
-			m_em_iUnitClassWeights.add(GC.getUnitInfo(eLoopUnit).getUnitClassType(), (5000 * aiUnitCounts[iI]) / std::max(1, aiDomainSums[GC.getUnitInfo(eLoopUnit).getDomainType()]));
+			m_em_iUnitClassWeights.add(GC.getUnitInfo(eLoopUnit).getUnitClassType(), (5000 * aiUnitCounts[eLoopUnit]) / std::max(1, aiDomainSums[GC.getUnitInfo(eLoopUnit).getDomainType()]));
 		}
 	}
 

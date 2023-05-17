@@ -232,6 +232,7 @@
     <ClCompile Include="DLLSources\UserSettings.cpp" />
     <ClCompile Include="DLLSources\XMLLengthSet.cpp" />
     <ClCompile Include="DLLSources\_precompile.cpp" />
+    <ClCompile Include="DLLSources\PlayerHelperFunctions.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\AlertWindow.h" />
@@ -381,6 +382,7 @@
     <ClInclude Include="DLLSources\tinyxml2.h" />
     <ClInclude Include="DLLSources\UserSettings.h" />
     <ClInclude Include="DLLSources\xmlFiles.h" />
+    <ClInclude Include="DLLSources\PlayerHelperFunctions.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DLLSources\CvGameCoreDLL.def" />

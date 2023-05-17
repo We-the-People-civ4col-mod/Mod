@@ -3118,11 +3118,11 @@ CvCity* CvPlayer::buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitT
 		CvCity* locationToAppear = NULL;
 		CvCity* pLoopCity = NULL;
 
-		if(eLocationFlags == LocationFlags::LocationFlagNone)
+		if(eLocationFlags.none)
 		{
 			locationToAppear = firstCity(&iLoop);
 		}
-		else if (eLocationFlags == LocationFlags::LocationFlagDeepCoastal)
+		if (locationToAppear == NULL && eLocationFlags.deepCoastal)
 		{
 			for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 			{
@@ -3133,7 +3133,7 @@ CvCity* CvPlayer::buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitT
 				}
 			}
 		}
-		else if (eLocationFlags == LocationFlags::LocationFlagCoastal)
+		if (locationToAppear == NULL && eLocationFlags.coastal)
 		{
 			for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 			{
@@ -3144,7 +3144,7 @@ CvCity* CvPlayer::buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitT
 				}
 			}
 		}
-		else if (eLocationFlags == LocationFlags::LocationFlagInland)
+		if (locationToAppear == NULL && eLocationFlags.inland)
 		{
 			for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 			{
@@ -3156,12 +3156,27 @@ CvCity* CvPlayer::buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitT
 			}
 		}
 
-		if (locationToAppear != NULL)
+		if (locationToAppear != NULL || eLocationFlags.europe)
 		{
 			CvUnit* kBuyUnit = NULL;
+			const Coordinates coord = locationToAppear ? locationToAppear->coord() : Coordinates::invalidCoord();
 			for (int iI = 0; iI < iNumUnits; iI++)
 			{
-				kBuyUnit = initUnit(eUnitType, GC.getUnitInfo(eUnitType).getDefaultProfession(), locationToAppear->coord(), NO_UNITAI);
+				kBuyUnit = initUnit(eUnitType, GC.getUnitInfo(eUnitType).getDefaultProfession(), coord, NO_UNITAI);
+				if (!locationToAppear)
+				{
+					CvPlot* pStartingPlot = getStartingPlot();
+					if (GC.getUnitInfo(eUnitType).getDomainType() == DOMAIN_SEA && pStartingPlot != NULL)
+					{
+						kBuyUnit->setUnitTravelState(UNIT_TRAVEL_STATE_IN_EUROPE, false);
+						//add unit to map after setting Europe state so that it doesn't bump enemy units
+						kBuyUnit->addToMap(pStartingPlot->coord());
+					}
+					else
+					{
+						FAssertMsg(GC.getUnitInfo(eUnitType).getDomainType() != DOMAIN_SEA, "Player failed to create ship in Europe");
+					}
+				}
 			}
 
 			//pay
@@ -4383,8 +4398,12 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			// we have chosen one of the 2 Options that give us Royal Units
 			if(choice == 1 || choice == 2)
 			{
-				CvCity *locationToAppear = kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_ROYAL_INTERVENTIONS_SHIP", 1, "", 0, LocationFlags::LocationFlagDeepCoastal, false, false);
-				CvWString szBuffer = gDLL->getText("TXT_KEY_ROYAL_INTERVENTION_ACCEPTED", GC.getLeaderHeadInfo(GET_PLAYER(enemyID).getLeaderType()).getDescription(), locationToAppear->getNameKey());
+				LocationFlags location;
+				location.deepCoastal = true;
+				location.europe = true;
+				CvCity *locationToAppear = kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_ROYAL_INTERVENTIONS_SHIP", 1, "", 0, location, false, false);
+				CvWString locationName = locationToAppear != NULL ? locationToAppear->getNameKey() : gDLL->getText("TXT_KEY_CONCEPT_EUROPE");
+				CvWString szBuffer = gDLL->getText("TXT_KEY_ROYAL_INTERVENTION_ACCEPTED", GC.getLeaderHeadInfo(GET_PLAYER(enemyID).getLeaderType()).getDescription(), locationName.c_str());
 
 				kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_1", 1, szBuffer, 0, LocationFlags::LocationFlagDeepCoastal, false, false);
 				kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_2", 1, "", 0, LocationFlags::LocationFlagDeepCoastal, false, false);
