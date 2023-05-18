@@ -839,6 +839,7 @@
         <Tag>TXT_KEY_UNIT_MORE_GOLD_GOODIES_AND_CHIEFTAINS</Tag>
         <English>[ICON_BULLET]%D1%% more gold from goodies and chieftains</English>
         <German>[ICON_BULLET]%D1%% mehr Gold von Grabstätten und Häuptlingen</German>
+        <Russian>[ICON_BULLET]на %D1%% больше золота от goodies и вождей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BETTER_MISSION_RATE</Tag>
