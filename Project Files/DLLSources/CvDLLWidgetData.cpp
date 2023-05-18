@@ -3075,16 +3075,16 @@ void CvDLLWidgetData::parseSelectedHelp(CvWidgetDataStruct &widgetDataStruct, Cv
 
 		if (pOrder != NULL)
 		{
-			switch (pOrder->eOrderType)
+			switch (pOrder->getType())
 			{
 			case ORDER_TRAIN:
-				GAMETEXT.setUnitHelp(szBuffer, ((UnitTypes)(pOrder->iData1)), false, false, pHeadSelectedCity);
+				GAMETEXT.setUnitHelp(szBuffer, pOrder->unit(), false, false, pHeadSelectedCity);
 				break;
 			case ORDER_CONSTRUCT:
-				GAMETEXT.setBuildingHelp(szBuffer, ((BuildingTypes)(pOrder->iData1)), false, false, pHeadSelectedCity);
+				GAMETEXT.setBuildingHelp(szBuffer, pOrder->building(), false, false, pHeadSelectedCity);
 				break;
 			case ORDER_CONVINCE:
-				GAMETEXT.setFatherPointHelp(szBuffer, (FatherPointTypes) pOrder->iData1);
+				GAMETEXT.setFatherPointHelp(szBuffer, pOrder->fatherpoint());
 				break;
 
 			default:

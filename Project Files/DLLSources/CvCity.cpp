@@ -1877,7 +1877,7 @@ bool CvCity::isProductionUnit() const
 
 	if (pOrderNode != NULL)
 	{
-		return (pOrderNode->m_data.eOrderType == ORDER_TRAIN);
+		return (pOrderNode->m_data.getType() == ORDER_TRAIN);
 	}
 
 	return false;
@@ -1890,7 +1890,7 @@ bool CvCity::isProductionBuilding() const
 
 	if (pOrderNode != NULL)
 	{
-		return (pOrderNode->m_data.eOrderType == ORDER_CONSTRUCT);
+		return (pOrderNode->m_data.getType() == ORDER_CONSTRUCT);
 	}
 
 	return false;
@@ -1902,7 +1902,7 @@ bool CvCity::isProductionConvince() const
 
 	if (pOrderNode != NULL)
 	{
-		return (pOrderNode->m_data.eOrderType == ORDER_CONVINCE);
+		return (pOrderNode->m_data.getType() == ORDER_CONVINCE);
 	}
 
 	return false;
@@ -1911,18 +1911,18 @@ bool CvCity::isProductionConvince() const
 
 bool CvCity::canContinueProduction(OrderData order) const
 {
-	switch (order.eOrderType)
+	switch (order.getType())
 	{
 	case ORDER_TRAIN:
-		return canTrain((UnitTypes)(order.iData1), true);
+		return canTrain(order.unit(), true);
 		break;
 
 	case ORDER_CONSTRUCT:
-		return canConstruct((BuildingTypes)(order.iData1), true);
+		return canConstruct(order.building(), true);
 		break;
 
 	case ORDER_CONVINCE:
-		return canConvince((FatherPointTypes) order.iData1, true);
+		return canConvince(order.fatherpoint(), true);
 		break;
 
 	default:
@@ -1982,10 +1982,10 @@ UnitTypes CvCity::getProductionUnit() const
 
 	if (pOrderNode != NULL)
 	{
-		switch (pOrderNode->m_data.eOrderType)
+		switch (pOrderNode->m_data.getType())
 		{
 		case ORDER_TRAIN:
-			return ((UnitTypes)(pOrderNode->m_data.iData1));
+			return pOrderNode->m_data.unit();
 			break;
 
 		case ORDER_CONSTRUCT:
@@ -2008,10 +2008,10 @@ UnitAITypes CvCity::getProductionUnitAI() const
 
 	if (pOrderNode != NULL)
 	{
-		switch (pOrderNode->m_data.eOrderType)
+		switch (pOrderNode->m_data.getType())
 		{
 		case ORDER_TRAIN:
-			return ((UnitAITypes)(pOrderNode->m_data.iData2));
+			return pOrderNode->m_data.unitAI();
 			break;
 
 		case ORDER_CONSTRUCT:
@@ -2034,14 +2034,14 @@ BuildingTypes CvCity::getProductionBuilding() const
 
 	if (pOrderNode != NULL)
 	{
-		switch (pOrderNode->m_data.eOrderType)
+		switch (pOrderNode->m_data.getType())
 		{
 		case ORDER_TRAIN:
 		case ORDER_CONVINCE:
 			break;
 
 		case ORDER_CONSTRUCT:
-			return ((BuildingTypes)(pOrderNode->m_data.iData1));
+			return pOrderNode->m_data.building();
 			break;
 
 		default:
@@ -2059,14 +2059,14 @@ FatherPointTypes CvCity::getProductionFatherPoint() const
 
 	if (pOrderNode != NULL)
 	{
-		switch (pOrderNode->m_data.eOrderType)
+		switch (pOrderNode->m_data.getType())
 		{
 		case ORDER_TRAIN:
 		case ORDER_CONSTRUCT:
 			break;
 
 		case ORDER_CONVINCE:
-			return ((FatherPointTypes)(pOrderNode->m_data.iData1));
+			return pOrderNode->m_data.fatherpoint();
 			break;
 
 		default:
@@ -2084,18 +2084,18 @@ const CvInfoBase* CvCity::getProductionInfo() const
 
 	if (pOrderNode != NULL)
 	{
-		switch (pOrderNode->m_data.eOrderType)
+		switch (pOrderNode->m_data.getType())
 		{
 		case ORDER_TRAIN:
-			return &GC.getUnitInfo((UnitTypes) pOrderNode->m_data.iData1);
+			return &GC.getUnitInfo(pOrderNode->m_data.unit());
 			break;
 
 		case ORDER_CONSTRUCT:
-			return &GC.getBuildingInfo((BuildingTypes) pOrderNode->m_data.iData1);
+			return &GC.getBuildingInfo(pOrderNode->m_data.building());
 			break;
 
 		case ORDER_CONVINCE: // Lumber Mill is building Founding Father Points -- DO NOT TOUCH
-			return &GC.getFatherPointInfo((FatherPointTypes) pOrderNode->m_data.iData1);
+			return &GC.getFatherPointInfo(pOrderNode->m_data.fatherpoint());
 			break;
 
 		default:
@@ -2126,14 +2126,14 @@ int CvCity::getGeneralProductionTurnsLeft() const
 
 	if (pOrderNode != NULL)
 	{
-		switch (pOrderNode->m_data.eOrderType)
+		switch (pOrderNode->m_data.getType())
 		{
 		case ORDER_TRAIN:
-			return getProductionTurnsLeft((UnitTypes)pOrderNode->m_data.iData1, 0);
+			return getProductionTurnsLeft(pOrderNode->m_data.unit(), 0);
 			break;
 
 		case ORDER_CONSTRUCT:
-			return getProductionTurnsLeft((BuildingTypes)pOrderNode->m_data.iData1, 0);
+			return getProductionTurnsLeft(pOrderNode->m_data.building(), 0);
 			break;
 
 		case ORDER_CONVINCE:
@@ -2168,9 +2168,9 @@ int CvCity::getFirstUnitOrder(UnitTypes eUnit) const
 
 	while (pOrderNode != NULL)
 	{
-		if (pOrderNode->m_data.eOrderType == ORDER_TRAIN)
+		if (pOrderNode->m_data.getType() == ORDER_TRAIN)
 		{
-			if (pOrderNode->m_data.iData1 == eUnit)
+			if (pOrderNode->m_data.unit() == eUnit)
 			{
 				return iCount;
 			}
@@ -2193,9 +2193,9 @@ int CvCity::getFirstBuildingOrder(BuildingTypes eBuilding) const
 
 	while (pOrderNode != NULL)
 	{
-		if (pOrderNode->m_data.eOrderType == ORDER_CONSTRUCT)
+		if (pOrderNode->m_data.getType() == ORDER_CONSTRUCT)
 		{
-			if (pOrderNode->m_data.iData1 == eBuilding)
+			if (pOrderNode->m_data.building() == eBuilding)
 			{
 				return iCount;
 			}
@@ -2217,9 +2217,9 @@ int CvCity::getNumTrainUnitAI(UnitAITypes eUnitAI) const
 
 	while (pOrderNode != NULL)
 	{
-		if (pOrderNode->m_data.eOrderType == ORDER_TRAIN)
+		if (pOrderNode->m_data.getType() == ORDER_TRAIN)
 		{
-			if (pOrderNode->m_data.iData2 == eUnitAI)
+			if (pOrderNode->m_data.unitAI() == eUnitAI)
 			{
 				iCount++;
 			}
@@ -2238,14 +2238,14 @@ int CvCity::getProduction() const
 
 	if (pOrderNode != NULL)
 	{
-		switch (pOrderNode->m_data.eOrderType)
+		switch (pOrderNode->m_data.getType())
 		{
 		case ORDER_TRAIN:
-			return getUnitProduction((UnitTypes)(pOrderNode->m_data.iData1));
+			return getUnitProduction(pOrderNode->m_data.unit());
 			break;
 
 		case ORDER_CONSTRUCT:
-			return getBuildingProduction((BuildingTypes)(pOrderNode->m_data.iData1));
+			return getBuildingProduction(pOrderNode->m_data.building());
 			break;
 
 		case ORDER_CONVINCE:
@@ -2267,14 +2267,14 @@ int CvCity::getProductionNeededUncached(YieldTypes eYield) const
 
 	if (pOrderNode != NULL)
 	{
-		switch (pOrderNode->m_data.eOrderType)
+		switch (pOrderNode->m_data.getType())
 		{
 		case ORDER_TRAIN:
-			return getYieldProductionNeeded((UnitTypes)pOrderNode->m_data.iData1, eYield);
+			return getYieldProductionNeeded(pOrderNode->m_data.unit(), eYield);
 			break;
 
 		case ORDER_CONSTRUCT:
-			return getYieldProductionNeeded((BuildingTypes)pOrderNode->m_data.iData1, eYield);
+			return getYieldProductionNeeded(pOrderNode->m_data.building(), eYield);
 			break;
 
 		case ORDER_CONVINCE:
@@ -2333,14 +2333,14 @@ int CvCity::getProductionTurnsLeft() const
 
 	if (pOrderNode != NULL)
 	{
-		switch (pOrderNode->m_data.eOrderType)
+		switch (pOrderNode->m_data.getType())
 		{
 		case ORDER_TRAIN:
-			return getProductionTurnsLeft(((UnitTypes)(pOrderNode->m_data.iData1)), 0);
+			return getProductionTurnsLeft(pOrderNode->m_data.unit(), 0);
 			break;
 
 		case ORDER_CONSTRUCT:
-			return getProductionTurnsLeft(((BuildingTypes)(pOrderNode->m_data.iData1)), 0);
+			return getProductionTurnsLeft(pOrderNode->m_data.building(), 0);
 			break;
 
 		case ORDER_CONVINCE:
@@ -2455,14 +2455,14 @@ int CvCity::getProductionModifier() const
 
 	if (pOrderNode != NULL)
 	{
-		switch (pOrderNode->m_data.eOrderType)
+		switch (pOrderNode->m_data.getType())
 		{
 		case ORDER_TRAIN:
-			return getProductionModifier((UnitTypes)(pOrderNode->m_data.iData1));
+			return getProductionModifier(pOrderNode->m_data.unit());
 			break;
 
 		case ORDER_CONSTRUCT:
-			return getProductionModifier((BuildingTypes)(pOrderNode->m_data.iData1));
+			return getProductionModifier(pOrderNode->m_data.building());
 			break;
 
 		case ORDER_CONVINCE:
@@ -2945,14 +2945,14 @@ int CvCity::getHurryCostModifier(bool bIgnoreNew) const
 
 	if (pOrderNode != NULL)
 	{
-		switch (pOrderNode->m_data.eOrderType)
+		switch (pOrderNode->m_data.getType())
 		{
 		case ORDER_TRAIN:
-			iModifier = getHurryCostModifier((UnitTypes) pOrderNode->m_data.iData1, bIgnoreNew);
+			iModifier = getHurryCostModifier(pOrderNode->m_data.unit(), bIgnoreNew);
 			break;
 
 		case ORDER_CONSTRUCT:
-			iModifier = getHurryCostModifier((BuildingTypes) pOrderNode->m_data.iData1, bIgnoreNew);
+			iModifier = getHurryCostModifier(pOrderNode->m_data.building(), bIgnoreNew);
 			break;
 
 		case ORDER_CONVINCE:
@@ -5312,43 +5312,38 @@ void CvCity::updateCacheStorageLossTradingValues(BuildingTypes eBuilding, bool b
 	}
 }
 
-void CvCity::pushOrderInternal(OrderTypes eOrder, int eBuildingOrUnit)
+void CvCity::pushOrderInternal(BuildingTypes eBuilding)
 {
-	OrderData order;
-	order.eOrderType = eOrder;
+	OrderData order(ORDER_CONSTRUCT);
+	order.building() = eBuilding;
 
-	if (eOrder == ORDER_CONSTRUCT)
+	if (gCityLogLevel >= 2)
 	{
-		order.iData1 = static_cast<BuildingTypes>(eBuildingOrUnit);
-		order.iData2 = -1; // Unused
+		logBBAI(" Player %S City %S considers hurrying of building %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
+			getName().GetCString(), GC.getBuildingInfo(eBuilding).getDescription());
+	}
+	pushOrderInternal(order);
+}
 
-		if (gCityLogLevel >= 2)
-		{
-			logBBAI(" Player %S City %S considers hurrying of building %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
-				getName().GetCString(), GC.getBuildingInfo(static_cast<BuildingTypes>(eBuildingOrUnit)).getDescription());
-		}
-	}
-	else if (eOrder == ORDER_TRAIN)
-	{
-		order.iData1 = static_cast<UnitTypes>(eBuildingOrUnit);
-		order.iData2 = NO_UNITAI;
+void CvCity::pushOrderInternal(UnitTypes eUnit)
+{
+	OrderData order(ORDER_TRAIN);
+	order.unit() = eUnit;
+	order.unitAI() = NO_UNITAI;
 
-		if (gCityLogLevel >= 2)
-		{
-			logBBAI(" Player %S City %S considers hurrying of unit %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
-				getName().GetCString(), GC.getUnitInfo(static_cast<UnitTypes>(eBuildingOrUnit)).getDescription());
-		}
-	}
-	else
+	if (gCityLogLevel >= 2)
 	{
-		FAssertMsg(false, "Unsupported OrderType");
+		logBBAI(" Player %S City %S considers hurrying of unit %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
+			getName().GetCString(), GC.getUnitInfo(eUnit).getDescription());
 	}
+	pushOrderInternal(order);
+}
+
+void CvCity::pushOrderInternal(OrderData& order)
+{
 	order.bSave = false;
-
 	m_orderQueue.insertAtBeginning(order);
-
 	startHeadOrder();
-
 }
 
 void CvCity::popOrderInternal()
@@ -6459,61 +6454,85 @@ void CvCity::pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bo
 		popOrder(0);
 	}
 
+	OrderData order(eOrder);
+	switch (order.getType())
+	{
+	case ORDER_TRAIN:
+		order.unit() = static_cast<UnitTypes>(iData1);
+		order.unitAI() = static_cast<UnitAITypes>(iData2);
+		break;
+	case ORDER_CONSTRUCT:
+		order.building() = static_cast<BuildingTypes>(iData1);
+		break;
+	case ORDER_CONVINCE:
+		order.fatherpoint() = static_cast<FatherPointTypes>(iData1);
+		break;
+	default:
+		FAssertMsg(false, "unhandled case");
+		return;
+	}
+
+	pushOrder(order, false, bAppend, bForce);
+}
+
+void CvCity::pushOrder(OrderData order, bool bPop, bool bAppend, bool bForce)
+{
+	if (bPop)
+	{
+		popOrder(0);
+	}
+
 	bool bValid = false;
 
-	switch (eOrder)
+	switch (order.getType())
 	{
 	case ORDER_TRAIN:
 	{
-		UnitTypes const eUnit = (UnitTypes)iData1; // advc
-		if (canTrain(eUnit) || bForce)
+		if (canTrain(order.unit()) || bForce)
 		{
-			if (iData2 == NO_UNITAI)
+			if (order.unitAI() == NO_UNITAI)
 			{
-				iData2 = GC.getUnitInfo(eUnit).getDefaultUnitAIType();
+				order.unitAI() = (UnitAITypes)GC.getUnitInfo(order.unit()).getDefaultUnitAIType();
 			}
 
-			UnitAITypes const eUnitAI = (UnitAITypes)iData2; // advc
-			GET_PLAYER(getOwner()).changeUnitClassMaking(GC.getUnitInfo(eUnit).getUnitClassType(), 1);
-			area()->changeNumTrainAIUnits(getOwner(), eUnitAI, 1);
-			GET_PLAYER(getOwner()).AI_changeNumTrainAIUnits(eUnitAI, 1);
+			GET_PLAYER(getOwner()).changeUnitClassMaking(GC.getUnitInfo(order.unit()).getUnitClassType(), 1);
+			area()->changeNumTrainAIUnits(getOwner(), order.unitAI(), 1);
+			GET_PLAYER(getOwner()).AI_changeNumTrainAIUnits(order.unitAI(), 1);
 
 			bValid = true;
-			gDLL->getEventReporterIFace()->cityBuildingUnit(this, (UnitTypes)iData1);
+			gDLL->getEventReporterIFace()->cityBuildingUnit(this, order.unit());
 
 			if (gCityLogLevel >= 1)
 			{
 				CvWString szString;
-				getUnitAIString(szString, eUnitAI);
+				getUnitAIString(szString, order.unitAI());
 				logBBAI(" Player %S City %S pushes production of unit %S with UNITAI %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
-					getName().GetCString(), GC.getUnitInfo(eUnit).getDescription(), szString.GetCString());
+					getName().GetCString(), GC.getUnitInfo(order.unit()).getDescription(), szString.GetCString());
 			}
 		}
 		break;
 	}
 	case ORDER_CONSTRUCT:
 	{
-		BuildingTypes const eBuilding = (BuildingTypes)iData1; // advc
-		if (canConstruct(eBuilding) || bForce)
+		if (canConstruct(order.building()) || bForce)
 		{
-			GET_PLAYER(getOwnerINLINE()).changeBuildingClassMaking(((BuildingClassTypes)(GC.getBuildingInfo((BuildingTypes)iData1).getBuildingClassType())), 1);
+			GET_PLAYER(getOwnerINLINE()).changeBuildingClassMaking(((BuildingClassTypes)(GC.getBuildingInfo(order.building()).getBuildingClassType())), 1);
 
 			bValid = true;
 
-			gDLL->getEventReporterIFace()->cityBuildingBuilding(this, (BuildingTypes)iData1);
+			gDLL->getEventReporterIFace()->cityBuildingBuilding(this, order.building());
 			if (gCityLogLevel >= 1) logBBAI(" Player %S City %S pushes production of building %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
-				getName().GetCString(), GC.getBuildingInfo(eBuilding).getDescription());
+				getName().GetCString(), GC.getBuildingInfo(order.building()).getDescription());
 		}
 		break;
 	}
 	case ORDER_CONVINCE:
 	{
-		FatherPointTypes const eFatherPoint = (FatherPointTypes)iData1; // advc
-		if (canConvince(eFatherPoint) || bForce)
+		if (canConvince(order.fatherpoint()) || bForce)
 		{
 			bValid = true;
 			if (gCityLogLevel >= 1) logBBAI(" Player % S City % S pushes convincing of type % S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
-				getName().GetCString(), GC.getFatherPointInfo(eFatherPoint).getDescription());
+				getName().GetCString(), GC.getFatherPointInfo(order.fatherpoint()).getDescription());
 		}
 		break;
 
@@ -6527,12 +6546,6 @@ void CvCity::pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bo
 	{
 		return;
 	}
-
-	OrderData order;
-	order.eOrderType = eOrder;
-	order.iData1 = iData1;
-	order.iData2 = iData2;
-	order.bSave = bSave;
 
 	if (bAppend)
 	{
@@ -6571,7 +6584,6 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 {
 	CvWString szBuffer;
 	CvString szSound;
-	UnitAITypes eTrainAIUnit;
 	bool bStart;
 	bool bMessage;
 	int iProductionNeeded;
@@ -6609,17 +6621,18 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 
 	if (bFinish && pOrderNode->m_data.bSave)
 	{
-		pushOrder(pOrderNode->m_data.eOrderType, pOrderNode->m_data.iData1, pOrderNode->m_data.iData2, true, false, true);
+		pushOrder(pOrderNode->m_data, false, true);
 	}
 
 	UnitTypes eTrainUnit = NO_UNIT;
 	BuildingTypes eConstructBuilding = NO_BUILDING;
 
-	switch (pOrderNode->m_data.eOrderType)
+	switch (pOrderNode->m_data.getType())
 	{
 	case ORDER_TRAIN:
-		eTrainUnit = ((UnitTypes)(pOrderNode->m_data.iData1));
-		eTrainAIUnit = ((UnitAITypes)(pOrderNode->m_data.iData2));
+	{
+		eTrainUnit = pOrderNode->m_data.unit();
+		UnitAITypes eTrainAIUnit = pOrderNode->m_data.unitAI();
 		FAssertMsg(eTrainUnit != NO_UNIT, "eTrainUnit is expected to be assigned a valid unit type");
 		FAssertMsg(eTrainAIUnit != NO_UNITAI, "eTrainAIUnit is expected to be assigned a valid unit AI type");
 
@@ -6661,9 +6674,10 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 
 		}
 		break;
-
+	}
 	case ORDER_CONSTRUCT:
-		eConstructBuilding = ((BuildingTypes)(pOrderNode->m_data.iData1));
+	{
+		eConstructBuilding = pOrderNode->m_data.building();
 
 		GET_PLAYER(getOwnerINLINE()).changeBuildingClassMaking(((BuildingClassTypes)(GC.getBuildingInfo(eConstructBuilding).getBuildingClassType())), -1);
 
@@ -6677,9 +6691,8 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 			setBuildingProduction(eConstructBuilding, 0);
 			setHasRealBuilding(eConstructBuilding, true);
 
-			for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
+			for (FatherPointTypes ePointType = FIRST_FATHER_POINT; ePointType < NUM_FATHER_POINT_TYPES; ++ePointType)
 			{
-				FatherPointTypes ePointType = (FatherPointTypes) i;
 				int gameSpeedMod =  GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
 				int  buildBonus =  GC.getFatherPointInfo(ePointType).getBuildingPoints(GC.getBuildingInfo(eConstructBuilding).getBuildingClassType());
 				buildBonus = buildBonus * gameSpeedMod /100;
@@ -6693,7 +6706,7 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 				logBBAI("    City %S finishes production of building %S", getName().GetCString(), GC.getBuildingInfo(eConstructBuilding).getDescription());
 		}
 		break;
-
+	}
 	case ORDER_CONVINCE:
 		break;
 
@@ -6800,12 +6813,10 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 
 // Returns true if all yields are present to complete the current build, false otherwise. If eYieldException is not equal to NO_YIELD then
 // the specified yield will not be included in the check. Intended to check if yields other than hammers are sufficient.
-bool CvCity::checkRequiredYields(OrderTypes eOrder, int iData1, YieldTypes eYieldException) const
+bool CvCity::checkRequiredYields(OrderTypes eOrder, BuildingTypes eBuilding, UnitTypes eUnit, YieldTypes eYieldException) const
 {
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes) iYield;
-
 		if (eYieldException == eYield)
 			continue;
 
@@ -6815,10 +6826,10 @@ bool CvCity::checkRequiredYields(OrderTypes eOrder, int iData1, YieldTypes eYiel
 			switch (eOrder)
 			{
 			case ORDER_TRAIN:
-				iAmount = GET_PLAYER(getOwnerINLINE()).getYieldProductionNeeded((UnitTypes) iData1, eYield);
+				iAmount = GET_PLAYER(getOwnerINLINE()).getYieldProductionNeeded(eUnit, eYield);
 				break;
 			case ORDER_CONSTRUCT:
-				iAmount = GET_PLAYER(getOwnerINLINE()).getYieldProductionNeeded((BuildingTypes) iData1, eYield);
+				iAmount = GET_PLAYER(getOwnerINLINE()).getYieldProductionNeeded(eBuilding, eYield);
 				break;
 			default:
 				break;
@@ -6834,6 +6845,26 @@ bool CvCity::checkRequiredYields(OrderTypes eOrder, int iData1, YieldTypes eYiel
 	}
 
 	return true;
+}
+
+bool CvCity::checkRequiredYields(OrderTypes eOrder, int iData1, YieldTypes eYieldException) const
+{
+	BuildingTypes eBuilding = eOrder == ORDER_CONSTRUCT ? static_cast<BuildingTypes>(iData1) : NO_BUILDING;
+	UnitTypes eUnit = eOrder == ORDER_TRAIN ? static_cast<UnitTypes>(iData1) : NO_UNIT;
+	return checkRequiredYields(eOrder, eBuilding, eUnit, eYieldException);
+}
+
+bool CvCity::checkRequiredYields(OrderData order, YieldTypes eYieldException) const
+{
+	switch (order.getType())
+	{
+	case ORDER_TRAIN:
+		return checkRequiredYields(order.getType(), NO_BUILDING, order.unit(), eYieldException);
+	case ORDER_CONSTRUCT:
+		return checkRequiredYields(order.getType(), order.building(), NO_UNIT, eYieldException);
+	default:
+		return checkRequiredYields(order.getType(), NO_BUILDING, NO_UNIT, eYieldException);
+	}
 }
 
 void CvCity::checkCompletedBuilds(YieldTypes eYield, int iChange)
@@ -6898,24 +6929,23 @@ bool CvCity::processRequiredYields(int iNum)
 		return false;
 	}
 
-	if (!checkRequiredYields(pOrderNode->m_data.eOrderType, pOrderNode->m_data.iData1))
+	if (!checkRequiredYields(pOrderNode->m_data))
 	{
 		return false;
 	}
 
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes) iYield;
 		if (GC.getYieldInfo(eYield).isCargo())
 		{
 			int iNeeded = 0;
-			switch (pOrderNode->m_data.eOrderType)
+			switch (pOrderNode->m_data.getType())
 			{
 			case ORDER_TRAIN:
-				iNeeded = GET_PLAYER(getOwnerINLINE()).getYieldProductionNeeded((UnitTypes) pOrderNode->m_data.iData1, eYield);
+				iNeeded = GET_PLAYER(getOwnerINLINE()).getYieldProductionNeeded(pOrderNode->m_data.unit(), eYield);
 				break;
 			case ORDER_CONSTRUCT:
-				iNeeded = GET_PLAYER(getOwnerINLINE()).getYieldProductionNeeded((BuildingTypes) pOrderNode->m_data.iData1, eYield);
+				iNeeded = GET_PLAYER(getOwnerINLINE()).getYieldProductionNeeded(pOrderNode->m_data.building(), eYield);
 				break;
 			default:
 				break;
@@ -6934,9 +6964,8 @@ void CvCity::getOrdersWaitingForYield(std::vector< std::pair<OrderTypes, int> >&
 {
 	int iStored = getYieldStored(eYield) + getYieldRushed(eYield);
 
-	for (int iUnit = 0; iUnit < GC.getNumUnitInfos(); ++iUnit)
+	for (UnitTypes eUnit = FIRST_UNIT; eUnit < NUM_UNIT_TYPES; ++eUnit)
 	{
-		UnitTypes eUnit = (UnitTypes) iUnit;
 		if (getUnitProduction(eUnit) > 0)
 		{
 			int iNeeded = getYieldProductionNeeded(eUnit, eYield);
@@ -6947,7 +6976,7 @@ void CvCity::getOrdersWaitingForYield(std::vector< std::pair<OrderTypes, int> >&
 					bool bFound = false;
 					for  (CLLNode<OrderData>* pOrderNode = headOrderQueueNode(); pOrderNode != NULL; pOrderNode = nextOrderQueueNode(pOrderNode))
 					{
-						if (pOrderNode->m_data.eOrderType == ORDER_TRAIN && pOrderNode->m_data.iData1 == eUnit)
+						if (pOrderNode->m_data.getType() == ORDER_TRAIN && pOrderNode->m_data.unit() == eUnit)
 						{
 							bFound = true;
 							break;
@@ -6976,7 +7005,7 @@ void CvCity::getOrdersWaitingForYield(std::vector< std::pair<OrderTypes, int> >&
 					bool bFound = false;
 					for  (CLLNode<OrderData>* pOrderNode = headOrderQueueNode(); pOrderNode != NULL; pOrderNode = nextOrderQueueNode(pOrderNode))
 					{
-						if (pOrderNode->m_data.eOrderType == ORDER_CONSTRUCT && pOrderNode->m_data.iData1 == eBuilding)
+						if (pOrderNode->m_data.getType() == ORDER_CONSTRUCT && pOrderNode->m_data.building() == eBuilding)
 						{
 							bFound = true;
 							break;
@@ -7624,7 +7653,6 @@ bool CvCity::doCheckProduction()
 	UnitTypes eUpgradeUnit;
 	int iUpgradeProduction;
 	CvWString szBuffer;
-	int iI;
 	bool bOK = true;
 
 	if (!isProduction() && !isDisorder() && isHuman() && !isProductionAutomated())
@@ -7633,38 +7661,42 @@ bool CvCity::doCheckProduction()
 		return bOK;
 	}
 
-	for (iI = 0; iI < GC.getNumUnitInfos(); iI++)
+	for (UnitTypes eLoopUnit = FIRST_UNIT; eLoopUnit < NUM_UNIT_TYPES; ++eLoopUnit)
 	{
-		if (getFirstUnitOrder((UnitTypes)iI) != -1)
+		if (getFirstUnitOrder(eLoopUnit) != -1)
 		{
-			eUpgradeUnit = allUpgradesAvailable((UnitTypes)iI);
+			eUpgradeUnit = allUpgradesAvailable(eLoopUnit);
 
 			if (eUpgradeUnit != NO_UNIT)
 			{
-				FAssertMsg(eUpgradeUnit != iI, "eUpgradeUnit is expected to be different from iI");
-				iUpgradeProduction = getUnitProduction((UnitTypes)iI);
-				setUnitProduction(((UnitTypes)iI), 0);
+				FAssertMsg(eUpgradeUnit != eLoopUnit, "eUpgradeUnit is expected to be different from iI");
+				iUpgradeProduction = getUnitProduction(eLoopUnit);
+				setUnitProduction(eLoopUnit, 0);
 				setUnitProduction(eUpgradeUnit, iUpgradeProduction);
 
 				pOrderNode = headOrderQueueNode();
 
 				while (pOrderNode != NULL)
 				{
-					if (pOrderNode->m_data.eOrderType == ORDER_TRAIN)
+					if (pOrderNode->m_data.getType() == ORDER_TRAIN)
 					{
-						if (pOrderNode->m_data.iData1 == iI)
+						OrderData& order = pOrderNode->m_data;
+						if (order.unit() == eLoopUnit)
 						{
-							GET_PLAYER(getOwnerINLINE()).changeUnitClassMaking(GC.getUnitInfo((UnitTypes)(pOrderNode->m_data.iData1)).getUnitClassType(), -1);
-							pOrderNode->m_data.iData1 = eUpgradeUnit;
-							if (GET_PLAYER(getOwnerINLINE()).AI_unitValue(eUpgradeUnit, ((UnitAITypes)(pOrderNode->m_data.iData2)), area()) == 0)
+							CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+							const CvUnitInfo& kUnitInfo = GC.getUnitInfo(order.unit());
+
+							kOwner.changeUnitClassMaking(kUnitInfo.getUnitClassType(), -1);
+							pOrderNode->m_data.unit() = eUpgradeUnit;
+							if (kOwner.AI_unitValue(eUpgradeUnit, order.unitAI(), area()) == 0)
 							{
-								area()->changeNumTrainAIUnits(getOwnerINLINE(), ((UnitAITypes)(pOrderNode->m_data.iData2)), -1);
-								GET_PLAYER(getOwnerINLINE()).AI_changeNumTrainAIUnits(((UnitAITypes)(pOrderNode->m_data.iData2)), -1);
-								pOrderNode->m_data.iData2 = GC.getUnitInfo(eUpgradeUnit).getDefaultUnitAIType();
-								area()->changeNumTrainAIUnits(getOwnerINLINE(), ((UnitAITypes)(pOrderNode->m_data.iData2)), 1);
-								GET_PLAYER(getOwnerINLINE()).AI_changeNumTrainAIUnits(((UnitAITypes)(pOrderNode->m_data.iData2)), 1);
+								area()->changeNumTrainAIUnits(getOwnerINLINE(), order.unitAI(), -1);
+								kOwner.AI_changeNumTrainAIUnits(order.unitAI(), -1);
+								pOrderNode->m_data.unitAI() = (UnitAITypes)kUnitInfo.getDefaultUnitAIType();
+								area()->changeNumTrainAIUnits(getOwnerINLINE(), order.unitAI(), 1);
+								kOwner.AI_changeNumTrainAIUnits(order.unitAI(), 1);
 							}
-							GET_PLAYER(getOwnerINLINE()).changeUnitClassMaking(GC.getUnitInfo((UnitTypes)(pOrderNode->m_data.iData1)).getUnitClassType(), 1);
+							kOwner.changeUnitClassMaking(kUnitInfo.getUnitClassType(), 1);
 						}
 					}
 
@@ -7674,7 +7706,7 @@ bool CvCity::doCheckProduction()
 		}
 	}
 
-	for (iI = (getOrderQueueLength() - 1); iI >= 0; iI--)
+	for (int iI = (getOrderQueueLength() - 1); iI >= 0; iI--)
 	{
 		OrderData* const pOrder = getOrderFromQueue(iI);
 
@@ -12536,14 +12568,14 @@ void CvCity::setAutoThresholdCache(YieldTypes eYield)
 	// everything in production queue
 	for  (CLLNode<OrderData>* pOrderNode = headOrderQueueNode(); pOrderNode != NULL; pOrderNode = nextOrderQueueNode(pOrderNode))
 	{
-		switch (pOrderNode->m_data.eOrderType)
+		switch (pOrderNode->m_data.getType())
 		{
 		case ORDER_TRAIN:
-			m_em_iTradeAutoThreshold.keepMax(eYield,getYieldProductionNeeded((UnitTypes)pOrderNode->m_data.iData1, eYield));
+			m_em_iTradeAutoThreshold.keepMax(eYield,getYieldProductionNeeded(pOrderNode->m_data.unit(), eYield));
 			break;
 
 		case ORDER_CONSTRUCT:
-			m_em_iTradeAutoThreshold.keepMax(eYield, getYieldProductionNeeded((BuildingTypes)pOrderNode->m_data.iData1, eYield));
+			m_em_iTradeAutoThreshold.keepMax(eYield, getYieldProductionNeeded(pOrderNode->m_data.building(), eYield));
 			break;
 		}
 	}

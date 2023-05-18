@@ -627,13 +627,16 @@ public:
 
 		plot
 			?plot@CvCity@@QBEPAVCvPlot@@XZ=?plot@EXE_CvCity@@QBEPAVCvPlot@@XZ
-
-		popOrder
-			?popOrder@CvCity@@QAEXH_N0@Z=?popOrder@EXE_CvCity@@QAEXH_N0@Z
-
-		pushOrder
-			?pushOrder@CvCity@@QAEXW4OrderTypes@@HH_N111@Z=?pushOrder@EXE_CvCity@@QAEXW4OrderTypes@@HH_N111@Z
-
+			*/
+	DllExport void pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bool bPop, bool bAppend, bool bForce = false)
+	{
+		CvCity::pushOrder(eOrder, iData1, iData2, bSave, bPop, bAppend, bForce);
+	}
+	DllExport void popOrder(int iNum, bool bFinish = false, bool bChoose = false)
+	{
+		CvCity::popOrder(iNum, bFinish, bChoose);
+	}
+	/*
 		setBillboardDirty
 			?setBillboardDirty@CvCity@@QAEX_N@Z=?setBillboardDirty@EXE_CvCity@@QAEX_N@Z
 

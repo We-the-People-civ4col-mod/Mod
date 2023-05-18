@@ -73,14 +73,41 @@ struct DllExport GameTurnInfo
 
 struct DllExport OrderData
 {
+	friend void CyStructsPythonInterface1();
+private:
 	OrderTypes eOrderType;
-	int iData1;
-	int iData2;
+	union
+	{
+		int iData1;
+		UnitTypes m_unit;
+		BuildingTypes m_building;
+		FatherPointTypes m_fatherpoint;
+	};
+	union
+	{
+		int iData2;
+		UnitAITypes m_unitAI;
+	};
+public:
 	bool bSave;
+
+	OrderData();
+	OrderData(OrderTypes);
+
+	const OrderTypes getType() const;
+	UnitTypes& unit();
+	const UnitTypes unit() const;
+	UnitAITypes& unitAI();
+	const UnitAITypes unitAI() const;
+	BuildingTypes& building();
+	const BuildingTypes building() const;
+	FatherPointTypes& fatherpoint();
+	const FatherPointTypes fatherpoint() const;
 
 	void read(CvSavegameReader& reader);
 	void write(CvSavegameWriter& writer) const;
 };
+BOOST_STATIC_ASSERT(sizeof(OrderData) == 16);
 
 struct DllExport MissionData
 {

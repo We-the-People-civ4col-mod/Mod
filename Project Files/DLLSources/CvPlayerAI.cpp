@@ -10487,7 +10487,7 @@ int CvPlayerAI::AI_highestProfessionOutput(ProfessionTypes eProfession, const Cv
 
 			while (pOrderNode != NULL)
 			{
-				switch (pOrderNode->m_data.eOrderType)
+				switch (pOrderNode->m_data.getType())
 				{
 				case ORDER_TRAIN:
 				case ORDER_CONVINCE:
@@ -10495,7 +10495,7 @@ int CvPlayerAI::AI_highestProfessionOutput(ProfessionTypes eProfession, const Cv
 
 				case ORDER_CONSTRUCT:
 					{
-						BuildingTypes eBuilding = ((BuildingTypes)(pOrderNode->m_data.iData1));
+						const BuildingTypes eBuilding = pOrderNode->m_data.building();
 						if (eBuilding != NO_BUILDING)
 						{
 							if (GC.getProfessionInfo(eProfession).getSpecialBuilding() == GC.getBuildingInfo(eBuilding).getSpecialBuildingType())

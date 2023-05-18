@@ -41,6 +41,62 @@ void IDInfo::write(CvSavegameWriter& writer) const
 	writer.Write(iID);
 }
 
+OrderData::OrderData()
+{
+}
+OrderData::OrderData(OrderTypes eOrder)
+	: eOrderType(eOrder)
+	, iData1(-1)
+	, iData2(-1)
+	, bSave(false)
+{
+}
+
+const OrderTypes OrderData::getType() const
+{
+	return eOrderType;
+}
+UnitTypes& OrderData::unit()
+{
+	FAssert(eOrderType == ORDER_TRAIN);
+	return m_unit;
+}
+const UnitTypes OrderData::unit() const
+{
+	FAssert(eOrderType == ORDER_TRAIN);
+	return m_unit;
+}
+UnitAITypes& OrderData::unitAI()
+{
+	FAssert(eOrderType == ORDER_TRAIN);
+	return m_unitAI;
+}
+const UnitAITypes OrderData::unitAI() const
+{
+	FAssert(eOrderType == ORDER_TRAIN);
+	return m_unitAI;
+}
+BuildingTypes& OrderData::building()
+{
+	FAssert(eOrderType == ORDER_CONSTRUCT);
+	return m_building;
+}
+const BuildingTypes OrderData::building() const
+{
+	FAssert(eOrderType == ORDER_CONSTRUCT);
+	return m_building;
+}
+FatherPointTypes& OrderData::fatherpoint()
+{
+	FAssert(eOrderType == ORDER_CONVINCE);
+	return m_fatherpoint;
+}
+const FatherPointTypes OrderData::fatherpoint() const
+{
+	FAssert(eOrderType == ORDER_CONVINCE);
+	return m_fatherpoint;
+}
+
 void OrderData::read(CvSavegameReader& reader)
 {
 	reader.Read(eOrderType);

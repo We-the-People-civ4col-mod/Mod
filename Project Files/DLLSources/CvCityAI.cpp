@@ -2300,7 +2300,7 @@ void CvCityAI::AI_doHurry(bool bForce)
 			!checkRequiredYields(ORDER_CONSTRUCT, eLoopBuilding, YIELD_HAMMERS))
 		{
 			// Need to push the order to make the hurry computation correct since only the current build is considered
-			pushOrderInternal(ORDER_CONSTRUCT, eLoopBuilding);
+			pushOrderInternal(eLoopBuilding);
 			const int iHurryCost = hurryGold(eGoldHurry);
 			buildingHurryCostList.push_back(std::make_pair(iHurryCost, eLoopBuilding));
 			popOrderInternal();
@@ -2357,7 +2357,7 @@ void CvCityAI::AI_doHurry(bool bForce)
 			!checkRequiredYields(ORDER_TRAIN, eLoopUnit, YIELD_HAMMERS))
 		{
 			// Need to push the order to make the hurry computation correct since only the current build is considered
-			pushOrderInternal(ORDER_TRAIN, eLoopUnit);
+			pushOrderInternal(eLoopUnit);
 			const int iHurryCost = hurryGold(eGoldHurry);
 			unitHurryCostList.push_back(std::make_pair(iHurryCost, eLoopUnit));
 			popOrderInternal();
