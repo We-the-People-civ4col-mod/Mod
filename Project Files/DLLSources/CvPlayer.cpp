@@ -5544,10 +5544,6 @@ int CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 
 		iReturnValue = iGold;
 
-		// WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
-
-		// WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - END
-
 		//store gold in treasure unit instead
 		UnitClassTypes eUnitClass = (UnitClassTypes) kGoody.getUnitClassType();
 		bool bTreasure = false;
