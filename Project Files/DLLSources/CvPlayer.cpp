@@ -5514,11 +5514,18 @@ int CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 
 	int iGold = kGoody.getGold() + GC.getGameINLINE().getSorenRandNum(kGoody.getGoldRand1(), "Goody Gold 1") + GC.getGameINLINE().getSorenRandNum(kGoody.getGoldRand2(), "Goody Gold 2");
 	iGold = iGold * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() / 100;
-	if ((pUnit != NULL) && pUnit->isNoBadGoodies())
+	// WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
+	// Comment about NO_BAD_GOODIES_GOLD_PERCENT: It is very bad style to have such hidden modifiers that are not visible to player
+	// now instead the GoldModifier at Unit below is used - thus the old logic is commented out
+	// if ((pUnit != NULL) && pUnit->isNoBadGoodies())
+	// {
+	//		iGold = iGold * GC.getDefineINT("NO_BAD_GOODIES_GOLD_PERCENT") / 100;
+	// }
+	if ((pUnit != NULL) && pUnit->getUnitInfo().getGoldFromGoodiesAndChiefsModifier() != 0)
 	{
-		iGold = iGold * GC.getDefineINT("NO_BAD_GOODIES_GOLD_PERCENT") / 100;
+		iGold = iGold + (iGold * pUnit->getUnitInfo().getGoldFromGoodiesAndChiefsModifier() / 100);
 	}
-
+	// WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - END
 	if (iGold != 0)
 	{
 		CvCity* pCity = pPlot->getPlotCity();
@@ -5536,6 +5543,10 @@ int CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 		}
 
 		iReturnValue = iGold;
+
+		// WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
+
+		// WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - END
 
 		//store gold in treasure unit instead
 		UnitClassTypes eUnitClass = (UnitClassTypes) kGoody.getUnitClassType();
@@ -5592,7 +5603,9 @@ int CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 	int iRange = kGoody.getMapRange();
 	if ((pUnit != NULL) && pUnit->isNoBadGoodies())
 	{
-		iRange = iRange * GC.getDefineINT("NO_BAD_GOODIES_GOLD_PERCENT") / 100;
+		// WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
+		// iRange = iRange * GC.getDefineINT("NO_BAD_GOODIES_GOLD_PERCENT") / 100;
+		iRange = iRange * GC.getDefineINT("NO_BAD_GOODIES_MAP_RANGE_PERCENT") / 100;
 	}
 
 	if (iRange > 0)

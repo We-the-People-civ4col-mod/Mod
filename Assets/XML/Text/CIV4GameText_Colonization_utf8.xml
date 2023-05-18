@@ -836,6 +836,11 @@
         <Russian>[ICON_BULLET]Строит улучшения быстрее на %D1%%</Russian>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_MORE_GOLD_GOODIES_AND_CHIEFTAINS</Tag>
+        <English>[ICON_BULLET]%D1%% more gold from goodies and chieftains</English>
+        <German>[ICON_BULLET]%D1%% mehr Gold von Grabstätten und Häuptlingen</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_BETTER_MISSION_RATE</Tag>
         <English>[ICON_BULLET]Missions are %D1%% more effective</English>
         <French>[ICON_BULLET]Les missions sont %D1%% plus efficaces</French>

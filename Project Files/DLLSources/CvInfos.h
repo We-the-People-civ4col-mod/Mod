@@ -714,6 +714,7 @@ public:
 	int getMoves() const;
 	int getWorkRate() const;
 	int getWorkRateModifier() const;
+	int getGoldFromGoodiesAndChiefsModifier() const; // WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
 	int getMissionaryRateModifier() const;
 	int getNativeTradeRateModifier() const; // WTP, ray, Native Trade Posts - START
 	int getCombat() const;
@@ -909,6 +910,7 @@ protected:
 	int m_iMoves;
 	int m_iWorkRate;
 	int m_iWorkRateModifier;
+	int m_iGoldFromGoodiesAndChiefsModifier; // WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
 	int m_iMissionaryRateModifier;
 	int m_iNativeTradeRateModifier; // WTP, ray, Native Trade Posts - START
 	int m_iCombat;

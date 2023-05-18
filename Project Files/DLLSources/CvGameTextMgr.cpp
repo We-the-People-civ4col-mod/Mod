@@ -5882,6 +5882,13 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_FASTER_WORK_RATE", kUnitInfo.getWorkRateModifier()));
 	}
+	// WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
+	if (kUnitInfo.getGoldFromGoodiesAndChiefsModifier() != 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_MORE_GOLD_GOODIES_AND_CHIEFTAINS", kUnitInfo.getGoldFromGoodiesAndChiefsModifier()));
+	}
+	// WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - END
 	if (kUnitInfo.getMissionaryRateModifier() != 0)
 	{
 		szBuffer.append(NEWLINE);

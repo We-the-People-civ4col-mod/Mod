@@ -2724,6 +2724,7 @@ m_iMinAreaSize(0),
 m_iMoves(0),
 m_iWorkRate(0),
 m_iWorkRateModifier(0),
+m_iGoldFromGoodiesAndChiefsModifier(0), // WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
 m_iMissionaryRateModifier(0),
 m_iNativeTradeRateModifier(0), // WTP, ray, Native Trade Posts - START
 m_iCombat(0),
@@ -2966,6 +2967,12 @@ int CvUnitInfo::getWorkRateModifier() const
 {
 	return m_iWorkRateModifier;
 }
+// WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
+int CvUnitInfo::getGoldFromGoodiesAndChiefsModifier() const
+{
+	return m_iGoldFromGoodiesAndChiefsModifier;
+}
+// WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - END
 int CvUnitInfo::getMissionaryRateModifier() const
 {
 	return m_iMissionaryRateModifier;
@@ -3645,6 +3652,7 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iMoves);
 	stream->Read(&m_iWorkRate);
 	stream->Read(&m_iWorkRateModifier);
+	stream->Read(&m_iGoldFromGoodiesAndChiefsModifier); // WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
 	stream->Read(&m_iMissionaryRateModifier);
 	stream->Read(&m_iNativeTradeRateModifier); // WTP, ray, Native Trade Posts - START
 	stream->Read(&m_iCombat);
@@ -3874,6 +3882,7 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iMoves);
 	stream->Write(m_iWorkRate);
 	stream->Write(m_iWorkRateModifier);
+	stream->Write(m_iGoldFromGoodiesAndChiefsModifier); // WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
 	stream->Write(m_iMissionaryRateModifier);
 	stream->Write(m_iNativeTradeRateModifier); // WTP, ray, Native Trade Posts - START
 	stream->Write(m_iCombat);
@@ -4142,6 +4151,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iMoves, "iMoves");
 	pXML->GetChildXmlValByName(&m_iWorkRate, "iWorkRate");
 	pXML->GetChildXmlValByName(&m_iWorkRateModifier, "iWorkRateModifier");
+	pXML->GetChildXmlValByName(&m_iGoldFromGoodiesAndChiefsModifier, "iGoldFromGoodiesAndChiefsModifier"); // WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
 	pXML->GetChildXmlValByName(&m_iMissionaryRateModifier, "iMissionaryRateModifier");
 	pXML->GetChildXmlValByName(&m_iNativeTradeRateModifier, "iNativeTradeRateModifier"); // WTP, ray, Native Trade Posts - START
 	pXML->SetVariableListTagPair(&m_abTerrainImpassable, "TerrainImpassables", GC.getNumTerrainInfos(), false);
