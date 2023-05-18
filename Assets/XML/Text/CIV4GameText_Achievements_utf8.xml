@@ -3854,7 +3854,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_MILKMAIDS_TEXT</Tag>
-        <English>Milord, You truly seem to have lost a farmer. You are developing a taste for agriculture that only the king himself seems to have.[NEWLINE][NEWLINE]You not only build farms, but also provide the right farmhands and maids to keep them running. You have just hired another milker who will lovingly take care of the cows. The cows will give twice as much milk. Wouldn't you like to be pampered by such a milkmaid?[NEWLINE][NEWLINE]</English>
+        <English>Milord, you truly seem to have lost a farmer. You are developing a taste for agriculture that only the king himself seems to have.[NEWLINE][NEWLINE]You not only build farms, but also provide the right farmhands and maids to keep them running. You have just hired another milker who will lovingly take care of the cows. The cows will give twice as much milk. Wouldn't you like to be pampered by such a milkmaid?[NEWLINE][NEWLINE]</English>
         <German>Mylord, an Euch scheint wahrlich ein Bauer verlorengegangen. Ihr entwickelt eine Vorliebe für die Landwirtschaft, wie es sonst offenbar nur der König selbst zu tun pflegt. [NEWLINE][NEWLINE]Ihr errichtet nicht nur Farmen, sondern sorgt auch für die richtigen Knechte und Mägde, die diese am Laufen halten. Gerade habt Ihr wieder eine Melkerin eingestellt, die sich liebevoll um die Kühe kümmern wird. Da geben die Kühe gleich noch mal doppelt so viel Milch. Würdet Ihr Euch nicht auch gern von so einer Mildmagd verwöhnen lassen?[NEWLINE][NEWLINE]</German>
 	</TEXT>
     <TEXT>
@@ -3916,5 +3916,65 @@
         <Tag>TXT_KEY_ACHIEVE_MASTER_BAKER_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Dear Mr. Baker, I am here to pick up the ordered bags of flour, my warehouse is empty again[COLOR_REVERT]", the confectioner tells the baker hopefully.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh dear, these are currently the last bags I can give you, the militia has already bought up everything again[COLOR_REVERT]" the baker replies apologetically.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Wait, they are also still urgently needed by the troops,,[COLOR_REVERT]," the officer steps in. [COLOR_SELECTED_TEXT]I'm also reluctant to confiscate the bags, but if I have to....[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]What? That's it?[COLOR_REVERT]", the confectioner cries out. "[COLOR_SELECTED_TEXT]I can't put off my customers again, you urgently need to produce more[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Werter Herr Bäcker, ich bin hier um die bestellten Säcke mit Mehl abzuholen, mein Lager ist schon wieder leer[COLOR_REVERT]", teilt der Konditor dem Bäcker hoffnungsfroh mit.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh je, dies hier sind derzeit die letzten Säcke, die ich Euch geben kann, die Miliz hat schon wieder alles aufgekauft[COLOR_REVERT]" entgegnet der Bäcker entschuldigend.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Moment, die werden von der Truppe auch noch dringend gebraucht, [COLOR_REVERT]," schreitet der Offizier ein." [COLOR_SELECTED_TEXT]Ich möchte die Säcke auch nur ungern requirieren, aber wenn es sein muss...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Waaas? Das ist alles?[COLOR_REVERT]", schreit der Konditor entsetzt auf. "[COLOR_SELECTED_TEXT]Ich kann doch nicht schon wieder meine Kunden vertrösten, Ihr müsst dringend noch mehr herstellen[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_CASSAVA_PLANTER</Tag>
+        <English>Three experienced cassava planter</English>
+        <German>Drei erfahrene Maniokpflanzer</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_CASSAVA_PLANTER_HEAD</Tag>
+        <English>More cassava</English>
+        <German>Mehr Maniok</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_CASSAVA_PLANTER_TEXT</Tag>
+        <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced cassava planters for the colonies. With this, you will now achieve even higher yields in the harvest of this commodity. Keep up the good work and soon your colonies will be widely known for the cultivation of this specialty.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Maniokpflanzer für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte dieses Rohstoffs erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau dieser Spezialität bekannt sein.[NEWLINE][NEWLINE]</German>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_COCHINEAL_COLLECTOR</Tag>
+        <English>Three experienced cochineal collector</English>
+        <German>Drei erfahrene Cochenille Sammler</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_COCHINEAL_COLLECTOR_HEAD</Tag>
+        <English>More cochineal</English>
+        <German>Mehr Cochenille</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_COCHINEAL_COLLECTOR_TEXT</Tag>
+        <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced cochineal collectors for the colonies. With this, you will now achieve even higher yields in the harvest of this commodity. Keep up the good work and soon your colonies will be widely known for the cultivation of this specialty.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Cochenille Sammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte dieses Rohstoffs erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau dieser Spezialität bekannt sein.[NEWLINE][NEWLINE]</German>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_FRUITS_PICKER</Tag>
+        <English>Three experienced fruits picker</English>
+        <German>Drei erfahrene Fruchtsammler</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_FRUITS_PICKER_HEAD</Tag>
+        <English>More fruits</English>
+        <German>Mehr Früchte</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_FRUITS_PICKER_TEXT</Tag>
+        <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced fruits picker for the colonies. With this, you will now achieve even higher yields in the harvest of all kind of fruits. Keep up the good work and your colonies will soon be widely known for growing abundant fruits.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Fruchtsammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte aller Art von Früchte erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von reichhaltigen Früchten bekannt sein.[NEWLINE][NEWLINE]</German>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_INDIGO_PLANTER</Tag>
+        <English>Three experienced indigo planter</English>
+        <German>Drei erfahrene Indigo Pflanzer</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_INDIGO_PLANTER_HEAD</Tag>
+        <English>More indigo blue</English>
+        <German>Mehr blaue Farben</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_INDIGO_PLANTER_TEXT</Tag>
+        <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced indigo planter for the colonies. With this, you will now achieve even higher yields in the harvest of indigo. Keep up the good work and your colonies will soon be widely known for the cultivation of indigo.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Indigo-Sammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Indigo erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Indigo bekannt sein.[NEWLINE][NEWLINE]</German>
 	</TEXT>
 </Civ4GameText>
