@@ -111,7 +111,7 @@
         <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1:2_civ_adjective Überfall! Der gesamte Fortschritt bei der Errichtung des Gebäudes %s3_buildName wurde von feindlichen Eindringlingen zerstört!</German>
         <Italian>Raid %s1_civ_adjective a %s2_city! Tutti i progressi in %s3_buildName sono stati distrutti da nemici infiltrati!</Italian>
         <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! ¡Los infiltrados enemigos han destruido todo el progreso [NUM1:del:de la:de los:de las] %s3_buildName!</Spanish>
-        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]нападение индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]! Они полностью разрушили строящееся здание [COLOR_SELECTED_TEXT]%s3_buildName[COLOR_REVERT]! Нам придется начинать все заново!</Russian>
+        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]нападение индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]! Негодяи полностью разрушили строящееся здание [COLOR_SELECTED_TEXT]%s3_buildName[COLOR_REVERT]! Нам придется начинать все заново!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PRODUCTION_RAIDED_PARTIAL</Tag>
@@ -120,6 +120,7 @@
         <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1:2_civ_adjective Überfall! Ein Teil des Fortschritts bei der Errichtung des Gebäudes %s3_buildName wurde von feindlichen Eindringlingen zerstört!</German>
         <Italian>Raid %s1_civ_adjective a %s2_city! Parte del progresso in %s3_buildName sono stati distrutti da nemici infiltrati!</Italian>
         <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! ¡Los infiltrados enemigos han destruido parte del progreso [NUM1:del:de la:de los:de las] %s3_buildName!</Spanish>
+        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]нападение индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]! Они разрушили часть строящегося здания [COLOR_SELECTED_TEXT]%s3_buildName[COLOR_REVERT], но мы вовремя их отогнали! Не всё потеряно, милорд!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TREASURY_RAIDED</Tag>
