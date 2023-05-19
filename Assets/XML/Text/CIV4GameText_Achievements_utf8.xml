@@ -3977,4 +3977,64 @@
         <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced indigo planter for the colonies. With this, you will now achieve even higher yields in the harvest of indigo. Keep up the good work and your colonies will soon be widely known for the cultivation of indigo.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Indigo-Sammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Indigo erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Indigo bekannt sein.[NEWLINE][NEWLINE]</German>
 	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_LINEN_PLANTER</Tag>
+        <English>Three experienced linen planter</English>
+        <German>Drei erfahrene Flax-Pflanzer</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_LINEN_PLANTER_HEAD</Tag>
+        <English>More fibrous linen</English>
+        <German>Mehr Fasern auf dem Feld</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_LINEN_PLANTER_TEXT</Tag>
+        <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced linen planter for the colonies. With this, you will now achieve even higher yields in the harvest of linen. Keep up the good work and your colonies will soon be widely known for the cultivation of linen.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Flax-Pflanzer für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Flax erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Flax bekannt sein.[NEWLINE][NEWLINE]</German>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_MAPLE_SIRUP_COLLECTOR</Tag>
+        <English>Three experienced maple sirup collector</English>
+        <German>Drei erfahrene Ahorn-Sirup-Sammler</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_MAPLE_SIRUP_COLLECTOR_HEAD</Tag>
+        <English>More liquid gold</English>
+        <German>Mehr flüssiges Gold</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_MAPLE_SIRUP_COLLECTOR_TEXT</Tag>
+        <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced maple sirup collector for the colonies. With this, you will now achieve even higher yields in the harvest of maple sirup. Keep up the good work and your colonies will soon be widely known for the cultivation of maple sirup.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Ahorn-Sirup-Sammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Ahorn-Sirup erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Ahorn-Sirup bekannt sein.[NEWLINE][NEWLINE]</German>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_RAPE_PLANTER</Tag>
+        <English>Three experienced rapeseed planter</English>
+        <German>Drei erfahrene Raps-Pflanzer</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_RAPE_PLANTER_HEAD</Tag>
+        <English>A greasy business</English>
+        <German>Eine schmierige Angelegenheit</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_RAPE_PLANTER_TEXT</Tag>
+        <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced rapeseed planter for the colonies. With this, you will now achieve even higher yields in the harvest of rape. Keep up the good work and your colonies will soon be widely known for the cultivation of oilseed rape.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Raps-Pflanzer für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Raps erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Raps bekannt sein.[NEWLINE][NEWLINE]</German>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_OLIVES_PLANTER</Tag>
+        <English>Three experienced olives planter</English>
+        <German>Drei erfahrene Oliven-Pflanzer</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_OLIVES_PLANTER_HEAD</Tag>
+        <English>The land needs new fruit</English>
+        <German>Neue Früchte braucht das Land</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_OLIVES_PLANTER_TEXT</Tag>
+        <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced olives planter for the colonies. With this, you will now achieve even higher yields in the harvest of olives. Keep up the good work and your colonies will soon be widely known for the cultivation of olives.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Oliven-Pflanzer für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Oliven erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Oliven bekannt sein.[NEWLINE][NEWLINE]</German>
+	</TEXT>
 </Civ4GameText>
