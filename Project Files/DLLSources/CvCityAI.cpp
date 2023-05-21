@@ -956,7 +956,7 @@ BuildingTypes CvCityAI::AI_bestBuildingIgnoreRequirements(int iFocusFlags, int i
 
 		if ((eLoopBuilding != NO_BUILDING) && (!isHasConceptualBuilding(eLoopBuilding)))
 		{
-			if (canConstruct(eLoopBuilding), true, true, true)
+			if (canConstruct(eLoopBuilding, true, true, true))
 			{
 				int iValue = AI_buildingValue(eLoopBuilding, iFocusFlags);
 
