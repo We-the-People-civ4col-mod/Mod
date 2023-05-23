@@ -599,14 +599,14 @@
         <English>Put those cutthroats in chains. Nobody is going to raid our Native friends.</English>
         <French>Que ces égorgeurs soient enchaînés. Nous n'autorisons personne à s'en prendre à nos amis indigènes.</French>
         <German>Legt diesen Halsabschneidern ketten an. Niemand darf ungestraft unsere wilden Freunde angreifen.</German>
-        <Russian>Заковать этих головорезов в цепи. Никто не собирается совершать набеги на наших друзей индейцев.</Russian>
+        <Russian>Заковать этих головорезов в цепи. Никто не должен совершать набеги на наших друзей индейцев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DESPERATE_CONQUISTADORES_2</Tag>
         <English>Those men were simply desperate. They will be put into our service. Such an incident will not happen again.</English>
         <French>Ces hommes étaient désespérés. Nous allons les mettre à notre service et un tel incident n'arrivera plus.</French>
         <German>Die Männer waren schlicht verzweifelt. Wir werden sie in uneren Dienst stellen und Sorge tragen, dass so etwas nicht wieder vorkommt.</German>
-        <Russian>Эти люди просто были в отчаянии. Они перейдут к нам на службу. Подобное больше не повторится.</Russian>
+        <Russian>Эти люди не знали о наших дружеских отношениях. Однако, это не повод отдавать их индейцам. Они поступят к нам на службу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DIPLOMATIC_CONNECTIONS_1</Tag>
@@ -2464,12 +2464,14 @@
         <English>Agreed, the region and our purse will benefit from this deal. However, I assume that we will need to calm down our neighbours.</English>
         <French>Agreed, the region and our purse will benefit from this deal. However, I assume that we will need to calm down the reaction of our neighbours.</French>
         <German>Das kommt uns sehr gelegen, die Region und unsere Geldbörse werden davon sehr profitieren. Also einverstanden, setzen Sie die entsprechenden Verträge auf. Die Steuern setz ohnehin der König fest. Mit unseren Nachbarn werden wir uns schon arrangieren.</German>
+        <Russian>Согласитесь, от этой сделки выиграет и колония и наш кошелек. Однако я предполагаю, что нам нужно будет успокоить наших соседей, промышляющих в этом районе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_WHALING_2</Tag>
         <English>These poor animals. They need our protection but not our harpoons. Furthermore our neighbours are already whaling in this area. I will not jeopardise our relationship.</English>
         <French>These poor animals. They need our protection but not our harpoons. Furthermore our neighbours do already whaling in this area. I will not jeopardise our relationship.</French>
         <German>Diese armen Tiere. Sie benötigen unseren Schutz, nicht unsere Harpunen. Außerdem betreiben unsere Nachbarn hier bereits Walfang. Ich möchte die guten Beziehungen nicht gefährden.</German>
+        <Russian>Бедные животные. Они нуждаются в нашей защите, а не в наших гарпунах. Кроме того, наши соседи уже ведут китобойный промысел в этом районе. Я не буду рисковать нашими отношениями.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_WILD_ANIMAL_1</Tag>
