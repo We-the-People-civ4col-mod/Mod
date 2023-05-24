@@ -15,6 +15,7 @@
         <German>Bombardierung</German>
         <Italian>Bombarda</Italian>
         <Spanish>Cañonear</Spanish>
+        <Russian>Бомбардировка</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_BOMBARD_HELP</Tag>
@@ -23,6 +24,7 @@
         <German>Die Befestigungsbauten einer Siedlung beschädigen und deren Verteidigungsbonus senken.</German>
         <Italian>Distrugge le fortificazioni e riduce i bonus difensivi degli insediamenti.</Italian>
         <Spanish>Destruye las fortificaciones y reduce la bonificación defensiva del asentamiento.</Spanish>
+        <Russian>Разрушает укрепления и снижает бонус защиты поселения.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_BUILD</Tag>

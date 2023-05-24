@@ -2422,6 +2422,7 @@
         <German>Organisiert ein Fest, um diese glückliche Wendung des Schicksals zu feiern.</German>
         <Italian>Organizzate festivita per celebrare questa fortunata.</Italian>
         <Spanish>Organiza una fiesta para celebrar este feliz giro del destino.</Spanish>
+        <Russian>Организуйте празднества, чтобы отпраздновать этот удачный поворот событий.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_WASHED_OUT_1</Tag>
@@ -2430,6 +2431,7 @@
         <German>Das ist bedauerlich. Aber von Bedeutung dünkt es mir nicht zu sein.</German>
         <Italian>Dovremo inviare i lavoratori per ripararle in un secondo momento.</Italian>
         <Spanish>Tendremos que enviar trabajadores a repararlas cuanto antes.</Spanish>
+        <Russian>Мы не можем отправить рабочих для их ремонта прямо сейчас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_WASHED_OUT_2</Tag>
@@ -2438,6 +2440,7 @@
         <German>Baukolonnen sollen möglichst rasch den Schlamm wegschippen, auf dass die Straße wieder befahrbar ist.[NEWLINE]Rüstet die Männer großzügig mit Fleisch, Brot und geistigen Getränken aus, damit sie ihren Auftrag frohen Herzens angehen!</German>
         <Italian>Invia squadre di emergenza per riparare i danni, senza badare ai costi.</Italian>
         <Spanish>Que partan equipos de emergencia a arreglar los daños, sin reparar en gastos.</Spanish>
+        <Russian>Отправьте аварийные бригады для устранения повреждений.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_WHALEOFATHING_1</Tag>
