@@ -4037,4 +4037,34 @@
         <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced olives planter for the colonies. With this, you will now achieve even higher yields in the harvest of olives. Keep up the good work and your colonies will soon be widely known for the cultivation of olives.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Oliven-Pflanzer für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Oliven erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Oliven bekannt sein.[NEWLINE][NEWLINE]</German>
 	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_VANILLA_COLLECTOR</Tag>
+        <English>Three experienced vanilla collector</English>
+        <German>Drei erfahrene Vanille-Sammler</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_VANILLA_COLLECTOR_HEAD</Tag>
+        <English>The land needs new sweet spices</English>
+        <German>Neue süße Gewürze braucht das Land</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_VANILLA_COLLECTOR_TEXT</Tag>
+        <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced vanilla collector for the colonies. With this, you will now achieve even higher yields in the harvest of vanilla. Keep up the good work and your colonies will soon be widely known for the cultivation of vanilla.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Vanille-Sammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Vanille erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Vanille bekannt sein.[NEWLINE][NEWLINE]</German>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_HEMP_PLANTER</Tag>
+        <English>Three experienced hemp planter</English>
+        <German>Drei erfahrene Hanf-Pflanzer</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_HEMP_PLANTER_HEAD</Tag>
+        <English>Ropes and cordage</English>
+        <German>Seile und Tauwerk</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_HEMP_PLANTER_TEXT</Tag>
+        <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced hemp planter for the colonies. With this, you will now achieve even higher yields in the harvest of hemp. Keep up the good work and you will soon be able to equip even more ships with good cordage.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Hanf-Pflanzer für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Hanf erzielen. Macht weiter so und Ihr könnt bald noch mehr Schiffe mit gutem Tauwerk ausrüsten.[NEWLINE][NEWLINE]</German>
+	</TEXT>
 </Civ4GameText>
