@@ -4067,4 +4067,34 @@
         <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced hemp planter for the colonies. With this, you will now achieve even higher yields in the harvest of hemp. Keep up the good work and you will soon be able to equip even more ships with good cordage.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Hanf-Pflanzer für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Hanf erzielen. Macht weiter so und Ihr könnt bald noch mehr Schiffe mit gutem Tauwerk ausrüsten.[NEWLINE][NEWLINE]</German>
 	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_KAUTSCHUK_COLLECTOR</Tag>
+        <English>Three experienced rubber collector</English>
+        <German>Drei erfahrene Kautschuk-Sammler</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_KAUTSCHUK_COLLECTOR_HEAD</Tag>
+        <English>Rubber grows on trees</English>
+        <German>Kautschuk wächst auf Bäumen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_KAUTSCHUK_COLLECTOR_TEXT</Tag>
+        <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced rubber collector for the colonies. With this, you will now achieve even higher yields in the harvest of rubber. Keep up the good work and your colonies will soon be widely known for the cultivation of rubber.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Kautschuk-Sammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Kautschuk erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Kautschuk bekannt sein.[NEWLINE][NEWLINE]</German>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_BUTCHER</Tag>
+        <English>Three master butcher</English>
+        <German>Drei Meister Schlachter</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_BUTCHER_HEAD</Tag>
+        <English>Ham, pork chops or poultry?</English>
+        <German>Schinken, Kotlett oder Geflügel?</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_BUTCHER_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]What do you want to do with this puny knife, with which you can at best cut the finished roast. You need real tools for butchering[COLOR_REVERT]", the master butcher holds his new hatchet in front of the poultry butcher's nose.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Show off, I'm as fast with this knife here as you are with this huge murder instrument,[COLOR_REVERT]" replies the poultry butcher sourly."[COLOR_SELECTED_TEXT]Besides, I don't just hack away, but cut the critters cleanly and without spilling too much blood.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Sure, you can already see that from your apron....[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Pah, but I don't have heaps of bones lying around everywhere.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]That's right, you'd better feed your leftovers to my pigs....[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <German>"[COLOR_SELECTED_TEXT]Was wollt Ihr denn mit diesem mickrigen Messer anfangen, damit könnt ihr doch bestenfalls den fertigen Braten anschneiden. Zum Schlachten braucht ihr richtiges Werkzeug[COLOR_REVERT]", hält der Fleischermeister dem Geflügelschlachter sein neues Beil vor die Nase.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Angeber, ich bin mit diesem Messer hier genauso schnell wie Ihr mit diesem riesigen Mordinstrument,[COLOR_REVERT]" entgegnet der Geflügelschlachter säuerlich. "[COLOR_SELECTED_TEXT]Außerdem hack' ich nicht einfach drauflos, sondern zerlege die Viecher sauber und ohne zu viel Blut zu vergießen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Klar, das sieht man schon an Eurer Schürze....[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Pah, dafür liegen bei mir nicht überall haufenweise Knochen rum.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Stimmt, Ihr verfüttert Eure Reste lieber an meine Schweine...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+	</TEXT>
 </Civ4GameText>
