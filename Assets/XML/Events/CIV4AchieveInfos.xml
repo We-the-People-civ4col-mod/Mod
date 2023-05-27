@@ -6052,10 +6052,6 @@
                 <iNumber>3</iNumber>
             </NumUnits>
             <NumUnits>
-                <UnitType>UNIT_FURNITURE_MAKER</UnitType>
-                <iNumber>3</iNumber>
-            </NumUnits>
-            <NumUnits>
                 <UnitType>UNIT_POTTER</UnitType>
                 <iNumber>3</iNumber>
             </NumUnits>
@@ -6495,6 +6491,99 @@
         <NumUnits>
             <NumUnits>
                 <UnitType>UNIT_FAILED_TRADER</UnitType>
+                <iNumber>3</iNumber>
+            </NumUnits>
+        </NumUnits>
+        <NumProfessions/>
+        <YieldProduced/>
+    </AchieveInfo>
+    <AchieveInfo>
+        <Type>ACHIEVE_THIRD_MASTER_DYER</Type>
+        <Description>TXT_KEY_ACHIEVE_THIRD_MASTER_DYER</Description>
+        <bActive>1</bActive>
+        <bAfterMove>0</bAfterMove>
+        <HeaderTextKey>TXT_KEY_ACHIEVE_THIRD_MASTER_DYER_HEAD</HeaderTextKey>
+        <BodyTextKey>TXT_KEY_ACHIEVE_THIRD_MASTER_DYER_TEXT</BodyTextKey>
+        <PictureFileName>Art/Achievements/dyer.dds</PictureFileName>
+        <iPictureX>360</iPictureX>
+        <iPictureY>240</iPictureY>
+        <iLowTurnNumber>0</iLowTurnNumber>
+        <iHighTurnNumber>10000</iHighTurnNumber>
+        <bLandDiscovered>0</bLandDiscovered>
+        <bDiscoverEast>0</bDiscoverEast>
+        <bDiscoverWest>0</bDiscoverWest>
+        <iNumColonies>0</iNumColonies>
+        <iNumEuroContacts>0</iNumEuroContacts>
+        <iNumNativeContacts>0</iNumNativeContacts>
+        <iNumGoodsTraded>-1</iNumGoodsTraded>
+        <iNumCombatsWonNeeded>-1</iNumCombatsWonNeeded>
+        <iNumSeaCombatsWonNeeded>-1</iNumSeaCombatsWonNeeded>
+        <NumBuildings/>
+        <NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_DYER</UnitType>
+                <iNumber>3</iNumber>
+            </NumUnits>
+        </NumUnits>
+        <NumProfessions/>
+        <YieldProduced/>
+    </AchieveInfo>
+    <AchieveInfo>
+        <Type>ACHIEVE_THIRD_MASTER_CONFECTIONER</Type>
+        <Description>TXT_KEY_ACHIEVE_THIRD_MASTER_CONFECTIONER</Description>
+        <bActive>1</bActive>
+        <bAfterMove>0</bAfterMove>
+        <HeaderTextKey>TXT_KEY_ACHIEVE_THIRD_MASTER_CONFECTIONER_HEAD</HeaderTextKey>
+        <BodyTextKey>TXT_KEY_ACHIEVE_THIRD_MASTER_CONFECTIONER_TEXT</BodyTextKey>
+        <PictureFileName>Art/Achievements/confectioner.dds</PictureFileName>
+        <iPictureX>360</iPictureX>
+        <iPictureY>240</iPictureY>
+        <iLowTurnNumber>0</iLowTurnNumber>
+        <iHighTurnNumber>10000</iHighTurnNumber>
+        <bLandDiscovered>0</bLandDiscovered>
+        <bDiscoverEast>0</bDiscoverEast>
+        <bDiscoverWest>0</bDiscoverWest>
+        <iNumColonies>0</iNumColonies>
+        <iNumEuroContacts>0</iNumEuroContacts>
+        <iNumNativeContacts>0</iNumNativeContacts>
+        <iNumGoodsTraded>-1</iNumGoodsTraded>
+        <iNumCombatsWonNeeded>-1</iNumCombatsWonNeeded>
+        <iNumSeaCombatsWonNeeded>-1</iNumSeaCombatsWonNeeded>
+        <NumBuildings/>
+        <NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_CONFECTIONER</UnitType>
+                <iNumber>3</iNumber>
+            </NumUnits>
+        </NumUnits>
+        <NumProfessions/>
+        <YieldProduced/>
+    </AchieveInfo>
+    <AchieveInfo>
+        <Type>ACHIEVE_THIRD_MASTER_FURNITURE_MAKER</Type>
+        <Description>TXT_KEY_ACHIEVE_THIRD_MASTER_FURNITURE_MAKER</Description>
+        <bActive>1</bActive>
+        <bAfterMove>0</bAfterMove>
+        <HeaderTextKey>TXT_KEY_ACHIEVE_THIRD_MASTER_FURNITURE_MAKER_HEAD</HeaderTextKey>
+        <BodyTextKey>TXT_KEY_ACHIEVE_THIRD_MASTER_FURNITURE_MAKER_TEXT</BodyTextKey>
+        <PictureFileName>Art/Achievements/furniture_maker.dds</PictureFileName>
+        <iPictureX>360</iPictureX>
+        <iPictureY>240</iPictureY>
+        <iLowTurnNumber>0</iLowTurnNumber>
+        <iHighTurnNumber>10000</iHighTurnNumber>
+        <bLandDiscovered>0</bLandDiscovered>
+        <bDiscoverEast>0</bDiscoverEast>
+        <bDiscoverWest>0</bDiscoverWest>
+        <iNumColonies>0</iNumColonies>
+        <iNumEuroContacts>0</iNumEuroContacts>
+        <iNumNativeContacts>0</iNumNativeContacts>
+        <iNumGoodsTraded>-1</iNumGoodsTraded>
+        <iNumCombatsWonNeeded>-1</iNumCombatsWonNeeded>
+        <iNumSeaCombatsWonNeeded>-1</iNumSeaCombatsWonNeeded>
+        <NumBuildings/>
+        <NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_FURNITURE_MAKER</UnitType>
                 <iNumber>3</iNumber>
             </NumUnits>
         </NumUnits>
