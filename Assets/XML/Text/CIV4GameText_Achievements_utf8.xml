@@ -4097,4 +4097,19 @@
         <English>"[COLOR_SELECTED_TEXT]What do you want to do with this puny knife, with which you can at best cut the finished roast. You need real tools for butchering[COLOR_REVERT]", the master butcher holds his new hatchet in front of the poultry butcher's nose.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Show off, I'm as fast with this knife here as you are with this huge murder instrument,[COLOR_REVERT]" replies the poultry butcher sourly."[COLOR_SELECTED_TEXT]Besides, I don't just hack away, but cut the critters cleanly and without spilling too much blood.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Sure, you can already see that from your apron....[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Pah, but I don't have heaps of bones lying around everywhere.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]That's right, you'd better feed your leftovers to my pigs....[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Was wollt Ihr denn mit diesem mickrigen Messer anfangen, damit könnt ihr doch bestenfalls den fertigen Braten anschneiden. Zum Schlachten braucht ihr richtiges Werkzeug[COLOR_REVERT]", hält der Fleischermeister dem Geflügelschlachter sein neues Beil vor die Nase.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Angeber, ich bin mit diesem Messer hier genauso schnell wie Ihr mit diesem riesigen Mordinstrument,[COLOR_REVERT]" entgegnet der Geflügelschlachter säuerlich. "[COLOR_SELECTED_TEXT]Außerdem hack' ich nicht einfach drauflos, sondern zerlege die Viecher sauber und ohne zu viel Blut zu vergießen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Klar, das sieht man schon an Eurer Schürze....[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Pah, dafür liegen bei mir nicht überall haufenweise Knochen rum.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Stimmt, Ihr verfüttert Eure Reste lieber an meine Schweine...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_FAILED_TRADER</Tag>
+        <English>Three failed trader</English>
+        <German>Drei gescheiterte Händler</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_FAILED_TRADER_HEAD</Tag>
+        <English>Lost merchandise</English>
+        <German>Verlorene Handelsgeschäfte</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_FAILED_TRADER_TEXT</Tag>
+        <English>Milord, the third trader has already returned from the natives, who has obviously failed and is now drinking himself senseless in the streets, because of the horror he apparently experienced among the savages. [NEWLINE][NEWLINE]You should do something, they are making the rest of the merchants nervous. Soon no one will dare to leave the colony because of the stories about the savages. You should also rethink your strategy towards the savages.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, es ist jetzt bereits der dritte Händler von den Ureinwohnern zurückgekommen, der offensichtlich gescheitert ist und sich nun sinnlos in den Straßen betrinkt, ob des Grauens, dass er offenbar bei den Wilden erlebt hat.[NEWLINE][NEWLINE]Ihr Ihr solltet etwas unternehmen, sie machen die übrigen Händler nervös. Bald traut sich keiner mehr aus der Kolonie wegen der Geschichten, die über die Wilden kursieren. Ihr solltet zudem Eure Strategie gegenüber den Wilden überdenken.[NEWLINE][NEWLINE]</German>
+	</TEXT>
 </Civ4GameText>
