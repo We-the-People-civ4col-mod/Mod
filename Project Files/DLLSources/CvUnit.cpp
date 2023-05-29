@@ -4259,19 +4259,12 @@ bool CvUnit::canLoadUnit(const CvUnit* pTransport, const CvPlot* pPlot, bool bCh
 	if (pTransport->getUnitInfo().isTroopShip() && isHuman())
 	{
 		// it is neither Goods nor a Slave
-		if (getSpecialUnitType() == NO_SPECIALUNIT && !canAttack() && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_GENERAL") && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL") && getUnitClassType() != GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT") && getUnitClassType() != GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN")  && getUnitInfo().getProductionWhenUsed() <= 0)
+		if (getSpecialUnitType() == NO_SPECIALUNIT && !canAttack() && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_GENERAL") && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL") && getUnitClassType() != GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT") && getUnitClassType() != GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN") && getUnitInfo().getProductionWhenUsed() <= 0)
 		{
 			return false;
 		}
 	}
 	// WTP, ray Treasure Ship - END
-
-
-//	if (!(pTransport->cargoSpaceAvailable(getSpecialUnitType(), getDomainType())))
-//	{
-//		return false;
-//	}
-	// PatchMod: Berth size END
 
 	if (pTransport->cargoSpace() < getUnitInfo().getRequiredTransportSize())
 	{
@@ -10057,7 +10050,9 @@ int CvUnit::cargoSpaceAvailable(SpecialUnitTypes eSpecialCargo, DomainTypes eDom
 
 	if (domainCargo() != NO_DOMAIN)
 	{
-		if (domainCargo() != eDomainCargo)
+		// WTP, ray, Construction Supplies - START
+		//if (domainCargo() != eDomainCargo)
+		if (domainCargo() != eDomainCargo && eDomainCargo != DOMAIN_IMMOBILE)
 		{
 			return 0;
 		}
