@@ -3936,211 +3936,253 @@
         <Tag>TXT_KEY_ACHIEVE_HOUSEHOLD_GOODS</Tag>
         <English>Three master craftsmen</English>
         <German>Drei Meister Handwerker</German>
+        <Russian>Три производителя хозтоваров</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_HOUSEHOLD_GOODS_HEAD</Tag>
         <English>Household goods</English>
         <German>Haushaltswaren</German>
+        <Russian>Товары для домашнего хозяйства</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_HOUSEHOLD_GOODS_TEXT</Tag>
         <English>Milord, you also think about practical things. Several master craftsmen have settled in your colony. The supply of practical household goods and furniture to the colony is increasing.[NEWLINE][NEWLINE]This will especially please those who can and want to afford a little luxury. And for you certainly also some taxes should be gained through the trade with these goods...[NEWLINE][NEWLINE]</English>
         <German>Mylord, Ihr denkt auch an praktischen Dinge. Mehrere Meister-Handwerker haben sich in Eurer Kolonie niedergelassen. Die Versorgung der Kolonie mit praktischen Haushaltswaren und Möbeln nimmt zu.[NEWLINE][NEWLINE]Das wird besonders diejenigen freuen, die sich ein wenig Luxus leisten können und wollen. Und für Euch fällt sicher auch die eine oder andere Münze Steuern beim Handel damit ab...[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, вы думаете и о практических вещах. В вашей колонии поселились несколько мастеров-ремесленников. Поступление в колонию практичных предметов домашнего обихода и мебели увеличивается.[NEWLINE][NEWLINE]Это особенно порадует тех, кто хочет и может позволить себе немного роскоши. И для вас, конечно же, также должны быть интересны налоги с торговли этими товарами...[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MASTER_BAKER</Tag>
         <English>Several master baker</English>
         <German>Mehrere Meister Bäcker</German>
+        <Russian>Несколько пекарей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MASTER_BAKER_HEAD</Tag>
         <English>Homemade bakery products</English>
         <German>Begehrte Backwaren</German>
+        <Russian>Домашняя выпечка</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MASTER_BAKER_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Dear Mr. Baker, I'm here to pick up the bags of flour I ordered. My warehouse is empty again,[COLOR_REVERT]" says the confectioner hopefully.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I'm sorry, but these are the last bags I can give you. The militia has already bought up everything again,[COLOR_REVERT]" the baker replies apologetically.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Not so fast! The troops need these bags as well,[COLOR_REVERT]" the officer declares. "[COLOR_SELECTED_TEXT]I don't want to confiscate them, but if I have to ...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]What? That's it?[COLOR_REVERT]" the desperate confectioner cries out. "[COLOR_SELECTED_TEXT]I can't put off my customers again. You're just going to have to produce more flour.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Werter Herr Bäcker, ich bin hier um die bestellten Säcke mit Mehl abzuholen, mein Lager ist schon wieder leer[COLOR_REVERT]", teilt der Konditor dem Bäcker hoffnungsfroh mit.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh je, dies hier sind derzeit die letzten Säcke, die ich Euch geben kann, die Miliz hat schon wieder alles aufgekauft[COLOR_REVERT]" entgegnet der Bäcker entschuldigend.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Moment, die werden von der Truppe auch noch dringend gebraucht, [COLOR_REVERT]," schreitet der Offizier ein." [COLOR_SELECTED_TEXT]Ich möchte die Säcke auch nur ungern requirieren, aber wenn es sein muss...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Waaas? Das ist alles?[COLOR_REVERT]", schreit der Konditor entsetzt auf. "[COLOR_SELECTED_TEXT]Ich kann doch nicht schon wieder meine Kunden vertrösten, Ihr müsst dringend noch mehr herstellen[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+        <Russian>"[COLOR_SELECTED_TEXT]Здравствуйте, уважаемый мельник, я пришел забрать заказанные мешки с мукой. Мой склад снова пуст.[COLOR_REVERT]" — с надеждой говорит пекарь.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Извините, но это всё, что осталось из заготовленного мной за эту неделю. Ополченцы скупили почти всю муку...[COLOR_REVERT]" – извиняющимся тоном отвечает мельник.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Не так быстро! Войскам тоже нужны эти мешки.[COLOR_REVERT]" — заявляет вошедший во время разговора офицер. "[COLOR_SELECTED_TEXT]Не хотелось бы их конфисковывать, но если придется...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что? Вы заберёте вообще всё?![COLOR_REVERT]" – восклицает отчаявшийся пекарь. И добавляет, обращаясь уже к мельнику: "[COLOR_SELECTED_TEXT]Я больше не могу отказывать своим клиентам. Вам придется производить больше муки.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_CASSAVA_PLANTER</Tag>
         <English>Three experienced cassava planter</English>
         <German>Drei erfahrene Maniokpflanzer</German>
+        <Russian>Три опытних плантатора маниоки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_CASSAVA_PLANTER_HEAD</Tag>
         <English>More cassava</English>
         <German>Mehr Maniok</German>
+        <Russian>Больше маниоки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_CASSAVA_PLANTER_TEXT</Tag>
         <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced cassava planters for the colonies. With this, you will now achieve even higher yields in the harvest of this commodity. Keep up the good work and soon your colonies will be widely known for the cultivation of this specialty.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Maniokpflanzer für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte dieses Rohstoffs erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau dieser Spezialität bekannt sein.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши колонии растут. К счастью, вы догадались пригласить в колонии еще одного специалиста.[NEWLINE][NEWLINE]Теперь у вас трудятся уже три опытных плантаторов маниоки. Благодаря этому теперь вы будете получать еще более высокие урожаи при сборе этого товара. Продолжайте в том же духе и вскоре ваши колонии станут широко известны благодаря выращиванию этого деликатеса.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_COCHINEAL_COLLECTOR</Tag>
         <English>Three experienced cochineal collector</English>
         <German>Drei erfahrene Cochenille Sammler</German>
+        <Russian>Три опытных сборщика кошенили</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_COCHINEAL_COLLECTOR_HEAD</Tag>
         <English>More cochineal</English>
         <German>Mehr Cochenille</German>
+        <Russian>Больше кошенили</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_COCHINEAL_COLLECTOR_TEXT</Tag>
         <English>Milord, you colonies are growing. Fortunately another specialist has arrived in the colonies.[NEWLINE][NEWLINE]You've been able to recruit three experienced cochineal collectors. Using them you can expect even higher yields from the harvest. With such good work soon your colonies will be known far and wide for cochineal cultivation.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Cochenille Sammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte dieses Rohstoffs erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau dieser Spezialität bekannt sein.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши колонии растут. К счастью, в колонии прибыл еще один специалист.[NEWLINE][NEWLINE]Вы смогли завербовать трех опытных сборщиков кошенили. Используя их, вы можете рассчитывать на более высокие урожаи. С такой хорошей работой скоро ваши колонии станут широко известны благодаря выращиванию кошенили.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_FRUITS_PICKER</Tag>
         <English>Three experienced fruits picker</English>
         <German>Drei erfahrene Fruchtsammler</German>
+        <Russian>Три опытных сборщика фруктов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_FRUITS_PICKER_HEAD</Tag>
         <English>More fruits</English>
         <German>Mehr Früchte</German>
+        <Russian>Больше фруктов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_FRUITS_PICKER_TEXT</Tag>
         <English>Milord, you colonies are growing. Luckily you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You've now recruited three experienced fruit pickers. This means you'll be getting even higher yields during the harvest. Keep up the good work! Soon the colonies will be widely known for our abundant fruit.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Fruchtsammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte aller Art von Früchte erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von reichhaltigen Früchten bekannt sein.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши колонии растут. К счастью, вы можете принять в колонии еще одного специалиста.[NEWLINE][NEWLINE]Теперь вы наняли трех опытных сборщиков фруктов. Это означает, что вы можете рассчитывать на более высокие урожаи. Продолжайте начатое! Скоро колонии станут широко известны благодаря изобилию фруктов.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_INDIGO_PLANTER</Tag>
         <English>Three experienced indigo planter</English>
         <German>Drei erfahrene Indigo Pflanzer</German>
+        <Russian>Три опытных плантатора индиго</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_INDIGO_PLANTER_HEAD</Tag>
         <English>More indigo blue</English>
         <German>Mehr blaue Farben</German>
+        <Russian>Больше синего индиго</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_INDIGO_PLANTER_TEXT</Tag>
         <English>Milord, you colonies are growing. Now you've added yet another specialist.[NEWLINE][NEWLINE]Three experienced indigo planters have been recruited. We can expect even higher yields from the indigo harvest. Attracting these immigrants means your colonies are going be widely known for indigo.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Indigo-Sammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Indigo erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Indigo bekannt sein.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши колонии растут. У вас появился еще один ценный специалист.[NEWLINE][NEWLINE]Три опытных плантатора индиго. Мы можем ожидать более высоких урожаев индиго. Привлечение этих специалистов означает, что ваши колонии станут широко известны благодаря индиго.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_LINEN_PLANTER</Tag>
         <English>Three experienced linen planter</English>
         <German>Drei erfahrene Flax-Pflanzer</German>
+        <Russian>Три опытных плантатора льна</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_LINEN_PLANTER_HEAD</Tag>
         <English>More fibrous linen</English>
         <German>Mehr Fasern auf dem Feld</German>
+        <Russian>Больше волнистого льна</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_LINEN_PLANTER_TEXT</Tag>
         <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced linen planter for the colonies. With this, you will now achieve even higher yields in the harvest of linen. Keep up the good work and your colonies will soon be widely known for the cultivation of linen.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Flax-Pflanzer für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Flax erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Flax bekannt sein.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши колонии растут. К счастью, вы можете пригласить в колонии еще одного специалиста.[NEWLINE][NEWLINE]Вы смогли нанять уже трех опытных плантаторов льна для колоний. Благодаря этому вы теперь добьетесь еще более высоких урожаев при уборке льна. Продолжайте в том же духе и вскоре ваши колонии станут широко известны благодаря выращиванию льна.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_MAPLE_SIRUP_COLLECTOR</Tag>
         <English>Three experienced maple sirup collector</English>
         <German>Drei erfahrene Ahorn-Sirup-Sammler</German>
+        <Russian>Три опытных сборщика кленового сиропа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_MAPLE_SIRUP_COLLECTOR_HEAD</Tag>
         <English>More liquid gold</English>
         <German>Mehr flüssiges Gold</German>
+        <Russian>Больше сладостей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_MAPLE_SIRUP_COLLECTOR_TEXT</Tag>
         <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced maple sirup collector for the colonies. With this, you will now achieve even higher yields in the harvest of maple sirup. Keep up the good work and your colonies will soon be widely known for the cultivation of maple sirup.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Ahorn-Sirup-Sammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Ahorn-Sirup erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Ahorn-Sirup bekannt sein.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши колонии растут. К счастью, вы можете пригласить в колонии еще одного специалиста.[NEWLINE][NEWLINE]Теперь вы смогли нанять трех опытных сборщиков кленового сиропа для колоний. Благодаря этому вы теперь добьетесь более высоких урожаев при сборе кленового сиропа. Продолжайте в том же духе и вскоре ваши колонии станут широко известны благодаря сбору кленового сиропа.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_RAPE_PLANTER</Tag>
         <English>Three experienced rapeseed planter</English>
         <German>Drei erfahrene Raps-Pflanzer</German>
+        <Russian>Три опытных плантатора рапса</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_RAPE_PLANTER_HEAD</Tag>
         <English>A greasy business</English>
         <German>Eine schmierige Angelegenheit</German>
+        <Russian>Жирный бизнес</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_RAPE_PLANTER_TEXT</Tag>
         <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced rapeseed planter for the colonies. With this, you will now achieve even higher yields in the harvest of rape. Keep up the good work and your colonies will soon be widely known for the cultivation of oilseed rape.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Raps-Pflanzer für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Raps erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Raps bekannt sein.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши колонии растут. К счастью, вы можете пригласить в колонии еще одного специалиста.[NEWLINE][NEWLINE]Вы смогли нанять уже трех опытных плантаторов рапса для колоний. Благодаря этому вы теперь будете получать еще более высокие урожаи рапса. Продолжайте в том же духе и вскоре ваши колонии станут широко известны благодаря выращиванию масличного рапса.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_OLIVES_PLANTER</Tag>
         <English>Three experienced olives planter</English>
         <German>Drei erfahrene Oliven-Pflanzer</German>
+        <Russian>Три опытных плантатора оливок</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_OLIVES_PLANTER_HEAD</Tag>
         <English>The land needs new fruit</English>
         <German>Neue Früchte braucht das Land</German>
+        <Russian>Земля нуждается в новых плодах</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_OLIVES_PLANTER_TEXT</Tag>
         <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced olives planter for the colonies. With this, you will now achieve even higher yields in the harvest of olives. Keep up the good work and your colonies will soon be widely known for the cultivation of olives.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Oliven-Pflanzer für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Oliven erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Oliven bekannt sein.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши колонии растут. К счастью, вы смогли пригласить в колонии еще одного специалиста.[NEWLINE][NEWLINE]Теперь вы смогли нанять трех опытных плантаторов оливок для колоний. Благодаря этому вы теперь добьетесь еще более высоких урожаев при сборе оливок. Продолжайте в том же духе и вскоре ваши колонии станут широко известны благодаря выращиванию оливок.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_VANILLA_COLLECTOR</Tag>
         <English>Three experienced vanilla collector</English>
         <German>Drei erfahrene Vanille-Sammler</German>
+        <Russian>Три опытных сборщика ванили</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_VANILLA_COLLECTOR_HEAD</Tag>
         <English>The land needs new sweet spices</English>
         <German>Neue süße Gewürze braucht das Land</German>
+        <Russian>Земле нужны новые сладкие специи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_VANILLA_COLLECTOR_TEXT</Tag>
         <English>Milord, you colonies are growing. We've just welcomed another specialist.[NEWLINE][NEWLINE]There are now three experienced vanilla collectors in your colonies. The vanilla harvest will be richer than ever! If we all keep up the good work your colonies will be known far and wide for vanilla.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Vanille-Sammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Vanille erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Vanille bekannt sein.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши колонии растут. Мы только что приветствовали еще одного специалиста.[NEWLINE][NEWLINE]Теперь в ваших колониях трое опытных сборщиков ванили. Урожай ванили будет богаче, чем когда-либо! Если мы все продолжим в том же духе, ваши колонии будут широко известны своей ванилью.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_HEMP_PLANTER</Tag>
         <English>Three experienced hemp planter</English>
         <German>Drei erfahrene Hanf-Pflanzer</German>
+        <Russian>Три опытных плантатора конопли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_HEMP_PLANTER_HEAD</Tag>
         <English>Ropes and cordage</English>
         <German>Seile und Tauwerk</German>
+        <Russian>Веревки и снасти</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_HEMP_PLANTER_TEXT</Tag>
         <English>Milord, your colonies are growing. Fortunately we just welcomed another specialist to the colonies.[NEWLINE][NEWLINE]You've managed to recruit three experienced hemp planters. You're going to see an even bigger hemp harvest. Keep up the good work. More ships can be built now, with sturdy sails and strong rigging.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Hanf-Pflanzer für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Hanf erzielen. Macht weiter so und Ihr könnt bald noch mehr Schiffe mit gutem Tauwerk ausrüsten.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши колонии растут. К счастью, мы только что приветствовали в колониях еще одного специалиста.[NEWLINE][NEWLINE]Вам удалось нанять трех опытных плантаторов конопли. Вы увидите еще больший урожай конопли. Продолжайте в том же духе. Теперь можно построить больше кораблей с большими парусами и крепким такелажем.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_KAUTSCHUK_COLLECTOR</Tag>
         <English>Three experienced rubber collector</English>
         <German>Drei erfahrene Kautschuk-Sammler</German>
+        <Russian>Три опытных сборщика каучука</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_KAUTSCHUK_COLLECTOR_HEAD</Tag>
         <English>Rubber grows on trees</English>
         <German>Kautschuk wächst auf Bäumen</German>
+        <Russian>Каучуковые деревья</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_KAUTSCHUK_COLLECTOR_TEXT</Tag>
         <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced rubber collector for the colonies. With this, you will now achieve even higher yields in the harvest of rubber. Keep up the good work and your colonies will soon be widely known for the cultivation of rubber.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Kautschuk-Sammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Kautschuk erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Kautschuk bekannt sein.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши колонии растут. К счастью, вы можете пригласить в колонии еще одного специалиста.[NEWLINE][NEWLINE]Вы смогли нанять трех опытных сборщиков каучука для колоний. Благодаря этому вы теперь добьетесь еще более высоких урожаев при сборе каучука. Продолжайте в том же духе и вскоре ваши колонии станут широко известны благодаря выращиванию каучука.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_BUTCHER</Tag>
         <English>Three master butcher</English>
         <German>Drei Meister Schlachter</German>
+        <Russian>Три мастера мясника</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_BUTCHER_HEAD</Tag>
         <English>Ham, pork chops or poultry?</English>
         <German>Schinken, Kotlett oder Geflügel?</German>
+        <Russian>Ветчина, свиные отбивные или домашняя птица?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_BUTCHER_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]What do you plan to do with this puny knife? It could barely cut an overcooked roast. Butchering needs real tools[COLOR_REVERT]." The master butcher casually waves his cleaver right next to the poultry butcher's nose.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I'm faster with my knife than you'll ever be. That oversized blade looks like you're getting ready to massacre a helpless family[COLOR_REVERT]," replies the poultry butcher sourly."[COLOR_SELECTED_TEXT]Besides, I don't just hack away. I have to cut along the joints cleanly, without spilling too much blood.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh, sure, anyone can see that just by looking at your apron...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]At least I don't have heaps of bones lying around everywhere.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]That's right! You count on my pigs to eat up your leftovers![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Was wollt Ihr denn mit diesem mickrigen Messer anfangen, damit könnt ihr doch bestenfalls den fertigen Braten anschneiden. Zum Schlachten braucht ihr richtiges Werkzeug[COLOR_REVERT]", hält der Fleischermeister dem Geflügelschlachter sein neues Beil vor die Nase.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Angeber, ich bin mit diesem Messer hier genauso schnell wie Ihr mit diesem riesigen Mordinstrument,[COLOR_REVERT]" entgegnet der Geflügelschlachter säuerlich. "[COLOR_SELECTED_TEXT]Außerdem hack' ich nicht einfach drauflos, sondern zerlege die Viecher sauber und ohne zu viel Blut zu vergießen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Klar, das sieht man schon an Eurer Schürze....[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Pah, dafür liegen bei mir nicht überall haufenweise Knochen rum.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Stimmt, Ihr verfüttert Eure Reste lieber an meine Schweine...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+        <Russian>"[COLOR_SELECTED_TEXT]Что вы планируете делать с этим хилым ножом? Им едва можно разрезать пережаренное жаркое. Для разделки нужны настоящие инструменты[COLOR_REVERT]". Мастер мясник небрежно машет своим огромным тесаком прямо перед носом мясника птицы.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я владею своим ножом лучше, чем вы когда-либо сможете. Этот огромный клинок выглядит так, будто вы собираетесь расправиться с беспомощной семьей[COLOR_REVERT]" — кисло отвечает мясник птицы. "[COLOR_SELECTED_TEXT]Кроме того, я не просто рублю. Я должен аккуратно разрезать суставы, не проливая слишком много крови.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Конечно, любой может увидеть это, просто взглянув на ваш фартук...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]По крайней мере, у меня не валяются повсюду кучи костей.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Правильно! Вы рассчитываете, что мои свиньи съедят остатки вашей возни![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_FAILED_TRADER</Tag>
