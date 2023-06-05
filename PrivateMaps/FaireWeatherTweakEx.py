@@ -1,6 +1,6 @@
 ##############################################################################
 ## File: FaireWeather.py version 1.07
-## Author: Rich Marinaccio / Revisions by TAC Team
+## Author: Rich Marinaccio / Revisions by TAC Team, RaR Team and WTP Team
 ## Copyright 2008 Rich Marinaccio
 ##############################################################################
 ##
@@ -3122,7 +3122,7 @@ class RiverMap :
                         ii = GetIndex(xx,yy)
                         avg += sm.rainFallMap[ii]
                 avg = avg/4.0
-                self.averageRainfallMap[i] = avg + 0.02 # encouraging longer rivers
+                self.averageRainfallMap[i] = avg + 0.03 # encouraging longer rivers
                 
         # cleanup copy flowmap3
         for i in self.flowMap2:
