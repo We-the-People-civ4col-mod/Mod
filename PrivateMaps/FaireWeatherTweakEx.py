@@ -474,15 +474,13 @@ class MapConstants :
                 self.minLargeRiverLength = 13
             #Landsize
             selectionID = mmap.getCustomMapOption(self.getMapOption("land percent"))
-            if selectionID == 0: # this should be random
-                self.landPercent = randint(25,60) / 100
-            if selectionID == 1:
+            if selectionID == 0:
                 self.landPercent = 0.25
-            elif selectionID == 2:
+            elif selectionID == 1:
                 self.landPercent = 0.38
-            elif selectionID == 3:
+            elif selectionID == 2:
                 self.landPercent = 0.45
-            elif selectionID == 4:
+            elif selectionID == 3:
                 self.landPercent = 0.55
            
         else:
@@ -5112,10 +5110,10 @@ def generateWetland():
                             if PRand.random() <= wetlandAdjacentChance:
                                 plot.setTerrainType(terrainWetland, True, True)
                                 if PRand.random() <= wetlandHillChance:
-                                	plot.setPlotType(PlotTypes.PLOT_HILLS,True,True)       
+                                	plot.setPlotType(PlotTypes.PLOT_HILLS,True,True)
                         else:
                             if PRand.random() <= wetlandChance:
-                                plot.setTerrainType(terrainWetland, True, True)                    
+                                plot.setTerrainType(terrainWetland, True, True)
     
     # Convert non-dry plots adjacent to lakes and coast
     for y in range(mc.height):
@@ -5126,10 +5124,10 @@ def generateWetland():
                     if not isAnyAdjacentPlotTerrainType(x, y, terrainDesert) and not isAnyAdjacentPlotTerrainType(x, y, terrainTundra):
                         if isAnyAdjacentPlotTerrainType(x, y, terrainWetland):
                             if PRand.random() <= wetlandAdjacentChance:
-                                plot.setTerrainType(terrainWetland, True, True)               
+                                plot.setTerrainType(terrainWetland, True, True)
                         else:
                             if PRand.random() <= wetlandChance:
-                                plot.setTerrainType(terrainWetland, True, True)                    
+                                plot.setTerrainType(terrainWetland, True, True)
                         
 def afterGeneration():
     gc = CyGlobalContext()
