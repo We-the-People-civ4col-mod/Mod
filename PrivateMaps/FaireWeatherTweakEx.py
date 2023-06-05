@@ -353,7 +353,7 @@ class MapConstants :
         self.DESERT = 5
         self.TUNDRA = 6
         self.SNOW = 7
-	#Androrc Savannah
+        #Androrc Savannah
         self.SAVANNAH = 8
         #Androrc End
         self.PLAINS = 9
@@ -2111,18 +2111,18 @@ class SmallMaps :
                         self.terrainMap[i] = mc.GRASS
                     else:
                         if self.averageTempMap[i] > (PRand.random() * (mc.alwaysMarshTemp - mc.MinMarshTemp)) + mc.MinMarshTemp:
-							#ray Savannah
-				            #Ramstormp Marsh Hill
-					        if PRand.random() <= 0.3: 
-						        self.terrainMap[i] = mc.MARSH
-						        self.plotMap[i] = mc.HILLS
-					        elif PRand.random() <= 0.5:
-						        self.terrainMap[i] = mc.MARSH
-					        else:
-						        self.terrainMap[i] = mc.SAVANNAH
-							#ray Savannah End
+                            #ray Savannah
+                            #Ramstormp Marsh Hill
+                            if PRand.random() <= 0.3: 
+                                self.terrainMap[i] = mc.MARSH
+                                self.plotMap[i] = mc.HILLS
+                            elif PRand.random() <= 0.6:
+                                self.terrainMap[i] = mc.MARSH
+                            else:
+                                self.terrainMap[i] = mc.SAVANNAH
+                            #ray Savannah End
                         else:
-							self.terrainMap[i] = mc.GRASS
+                            self.terrainMap[i] = mc.GRASS
 
         #Make sure ice is always higher than tundra, and tundra is always higher than
         #everything else
