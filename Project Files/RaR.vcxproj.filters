@@ -460,12 +460,6 @@
     <ClCompile Include="DLLSources\CvXMLLoadUtilityInit.cpp">
       <Filter>Classes\XML\CPP</Filter>
     </ClCompile>
-    <ClCompile Include="DLLSources\StartupErrorChecking.cpp">
-      <Filter>CV\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\AlertWindow.cpp">
-      <Filter>Classes\Utilities\CPP</Filter>
-    </ClCompile>
     <ClCompile Include="DLLSources\OpenURL.cpp">
       <Filter>Classes\Utilities\CPP</Filter>
     </ClCompile>
@@ -486,6 +480,16 @@
     </ClCompile>
     <ClCompile Include="DLLSources\PlayerHelperFunctions.cpp">
       <Filter>Classes\Player\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="SavegameAlert.cpp" />
+    <ClCompile Include="DLLSources\AlertWindow.cpp">
+      <Filter>Classes\AlertWindow\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\SavegameAlert.cpp">
+      <Filter>Classes\AlertWindow\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\StartupErrorChecking.cpp">
+      <Filter>Classes\AlertWindow\CPP</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -915,9 +919,6 @@
     <ClInclude Include="DLLSources\StartupErrorChecking.h">
       <Filter>CV\Header</Filter>
     </ClInclude>
-    <ClInclude Include="DLLSources\AlertWindow.h">
-      <Filter>Classes\Utilities\Header</Filter>
-    </ClInclude>
     <ClInclude Include="DLLSources\OpenURL.h">
       <Filter>Classes\Utilities\Header</Filter>
     </ClInclude>
@@ -932,6 +933,15 @@
     </ClInclude>
     <ClInclude Include="DLLSources\PlayerHelperFunctions.h">
       <Filter>Classes\Player\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\SavegameAlert.h">
+      <Filter>Classes\AlertWindow\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\AlertWindow.h">
+      <Filter>Classes\AlertWindow\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\SavegameConstants.h">
+      <Filter>CV\Savegames</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1041,6 +1051,15 @@
     </Filter>
     <Filter Include="Classes\Player\Header">
       <UniqueIdentifier>{2546ffe1-0517-454d-989a-c48759383617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\AlertWindow">
+      <UniqueIdentifier>{9daa7284-7523-453a-87bd-252d5efad3c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\AlertWindow\Header">
+      <UniqueIdentifier>{d8b54943-2245-4a87-aad7-6465aae47324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\AlertWindow\CPP">
+      <UniqueIdentifier>{20d5ec07-833a-419a-8744-1ea196a2e052}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

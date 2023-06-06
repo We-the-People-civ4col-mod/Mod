@@ -201,6 +201,11 @@ bool CvSavegameReader::isDebug() const
 	return m_ReaderBase.isDebug();
 }
 
+unsigned int CvSavegameReader::getSavegameVersion()
+{
+	return CvSavegameReaderBase::getSavegameVersion();
+}
+
 void CvSavegameReader::AssignClassType(SavegameClassTypes eType)
 {
 	m_eClassType = eType;
@@ -814,10 +819,26 @@ bool CvSavegameBase::isCompressed() const
 	return HasBit(m_iFlag, Savegame_baseclass_flags_compressed);
 }
 
+unsigned int CvSavegameReaderBase::m_iSavegameVersion = 0;
+
 CvSavegameReaderBase::CvSavegameReaderBase(FDataStreamBase* pStream)
 	: m_pStream(pStream),
 	m_MemoryAllocation(NULL),
 	m_iRead(0)
+{
+	init();
+}
+
+CvSavegameReaderBase::CvSavegameReaderBase(FDataStreamBase* pStream, unsigned int iSavegameVersion)
+	: m_pStream(pStream),
+	m_MemoryAllocation(NULL),
+	m_iRead(0)
+{
+	m_iSavegameVersion = iSavegameVersion;
+	init();
+}
+
+void CvSavegameReaderBase::init()
 {
 	m_pStream->Read(&m_iFlag);
 	m_pStream->Read(&m_iSize);
@@ -828,6 +849,11 @@ CvSavegameReaderBase::CvSavegameReaderBase(FDataStreamBase* pStream)
 		int iReturnVal = ReadChunk();
 		FAssert(iReturnVal);
 	}
+}
+
+unsigned int CvSavegameReaderBase::getSavegameVersion()
+{
+	return m_iSavegameVersion;
 }
 
 int CvSavegameReaderBase::ReadChunk()

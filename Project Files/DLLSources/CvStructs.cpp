@@ -19,7 +19,7 @@
 
 void IDInfo::read(FDataStreamBase* pStream)
 {
-	pStream->Read((int*)&eOwner);
+	pStream->Read(&eOwner);
 	pStream->Read(&iID);
 }
 
@@ -100,23 +100,62 @@ const FatherPointTypes OrderData::fatherpoint() const
 void OrderData::read(CvSavegameReader& reader)
 {
 	reader.Read(eOrderType);
-	reader.Read(iData1);
-	reader.Read(iData2);
+	if (reader.getSavegameVersion() == 1)
+	{
+		reader.Read(iData1);
+		reader.Read(iData2);
+		reader.Read(bSave);
+		return;
+	}
+
 	reader.Read(bSave);
+	switch (eOrderType)
+	{
+	case ORDER_TRAIN:
+		reader.Read(m_unit);
+		reader.Read(m_unitAI);
+		break;
+	case ORDER_CONSTRUCT:
+		reader.Read(m_building);
+		break;
+	case ORDER_CONVINCE:
+		reader.Read(m_fatherpoint);
+		break;
+	}
 }
 
 void OrderData::write(CvSavegameWriter& writer) const
 {
 	writer.Write(eOrderType);
-	writer.Write(iData1);
-	writer.Write(iData2);
-	writer.Write(bSave);
+	writer.Write(bSave); 
+	
+	switch (eOrderType)
+	{
+	case ORDER_TRAIN:
+		writer.Write(m_unit);
+		writer.Write(m_unitAI);
+		break;
+	case ORDER_CONSTRUCT:
+		writer.Write(m_building);
+		break;
+	case ORDER_CONVINCE:
+		writer.Write(m_fatherpoint);
+		break;
+	}
 }
 
 void MissionData::read(CvSavegameReader& reader)
 {
+	// iData1 is BuildTypes when eMissionType == MISSION_BUILD
 	reader.Read(eMissionType);
-	reader.Read(iData1);
+	if (reader.getSavegameVersion() > 1 && eMissionType == MISSION_BUILD)
+	{
+		reader.Read(eBuild);
+	}
+	else
+	{
+		reader.Read(iData1);
+	}
 	reader.Read(iData2);
 	reader.Read(iFlags);
 	reader.Read(iPushTurn);
@@ -125,7 +164,14 @@ void MissionData::read(CvSavegameReader& reader)
 void MissionData::write(CvSavegameWriter& writer) const
 {
 	writer.Write(eMissionType);
-	writer.Write(iData1);
+	if (eMissionType == MISSION_BUILD)
+	{
+		writer.Write(eBuild);
+	}
+	else
+	{
+		writer.Write(iData1);
+	}
 	writer.Write(iData2);
 	writer.Write(iFlags);
 	writer.Write(iPushTurn);
@@ -151,8 +197,17 @@ void TradeData::write(FDataStreamBase* pStream) const
 
 void TradeData::read(CvSavegameReader& reader)
 {
+	// m_iData1 is YieldTypes if m_eItemType == TRADE_YIELD
+
 	reader.Read(m_eItemType);
-	reader.Read(m_iData1);
+	if (reader.getSavegameVersion() > 1 && m_eItemType == TRADE_YIELD)
+	{
+		reader.Read(m_eYield);
+	}
+	else
+	{
+		reader.Read(m_iData1);
+	}
 	m_kTransport.read(reader);
 	reader.Read(m_bOffering);
 	reader.Read(m_bHidden);
@@ -161,7 +216,14 @@ void TradeData::read(CvSavegameReader& reader)
 void TradeData::write(CvSavegameWriter& writer) const
 {
 	writer.Write(m_eItemType);
-	writer.Write(m_iData1);
+	if (m_eItemType == TRADE_YIELD)
+	{
+		writer.Write(m_eYield);
+	}
+	else
+	{
+		writer.Write(m_iData1);
+	}
 	m_kTransport.write(writer);
 	writer.Write(m_bOffering);
 	writer.Write(m_bHidden);
@@ -175,40 +237,6 @@ int EventTriggeredData::getID() const
 void EventTriggeredData::setID(int iID)
 {
 	m_iId = iID;
-}
-
-void EventTriggeredData::read(FDataStreamBase* pStream)
-{
-	pStream->Read(&m_iId);
-	pStream->Read((int*)&m_eTrigger);
-	pStream->Read(&m_iTurn);
-	pStream->Read((int*)&m_ePlayer);
-	pStream->Read(&m_iCityId);
-	pStream->Read(&m_iPlotX);
-	pStream->Read(&m_iPlotY);
-	pStream->Read(&m_iUnitId);
-	pStream->Read((int*)&m_eOtherPlayer);
-	pStream->Read(&m_iOtherPlayerCityId);
-	pStream->Read((int*)&m_eBuilding);
-	pStream->ReadString(m_szText);
-	pStream->ReadString(m_szGlobalText);
-}
-
-void EventTriggeredData::write(FDataStreamBase* pStream)
-{
-	pStream->Write(m_iId);
-	pStream->Write(m_eTrigger);
-	pStream->Write(m_iTurn);
-	pStream->Write(m_ePlayer);
-	pStream->Write(m_iCityId);
-	pStream->Write(m_iPlotX);
-	pStream->Write(m_iPlotY);
-	pStream->Write(m_iUnitId);
-	pStream->Write(m_eOtherPlayer);
-	pStream->Write(m_iOtherPlayerCityId);
-	pStream->Write(m_eBuilding);
-	pStream->WriteString(m_szText);
-	pStream->WriteString(m_szGlobalText);
 }
 
 void EventTriggeredData::read(CvSavegameReader& reader)
@@ -243,29 +271,6 @@ void EventTriggeredData::write(CvSavegameWriter& writer) const
 	writer.Write(m_eBuilding);
 	writer.Write(m_szText);
 	writer.Write(m_szGlobalText);
-}
-
-void PlotExtraYield::read(FDataStreamBase* pStream)
-{
-	pStream->Read(&m_iX);
-	pStream->Read(&m_iY);
-	m_aeExtraYield.clear();
-	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
-	{
-		int iYield;
-		pStream->Read(&iYield);
-		m_aeExtraYield.push_back(iYield);
-	}
-}
-
-void PlotExtraYield::write(FDataStreamBase* pStream)
-{
-	pStream->Write(m_iX);
-	pStream->Write(m_iY);
-	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
-	{
-		pStream->Write(m_aeExtraYield[i]);
-	}
 }
 
 void PlotExtraYield::read(CvSavegameReader& reader)

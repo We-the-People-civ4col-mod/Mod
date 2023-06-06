@@ -1689,18 +1689,4 @@
 		<DefineName>USE_NIF_LOGGING</DefineName>
 		<iDefineIntVal>0</iDefineIntVal>
 	</Define>
-	<Define>
-		<!-- warning: changing this breaks savegames -->
-		<!-- the idea is that savegames won't break by adding more xml content -->
-		<!-- as long as the xml length doesn't exceed this value -->
-		<DefineName>EXE_FALSE_XML_BUILDINGS</DefineName>
-		<iDefineIntVal>384</iDefineIntVal>
-	</Define>
-	<Define>
-		<!-- warning: changing this breaks savegames -->
-		<!-- the idea is that savegames won't break by adding more xml content -->
-		<!-- as long as the xml length doesn't exceed this value -->
-		<DefineName>EXE_FALSE_XML_UNITS</DefineName>
-		<iDefineIntVal>384</iDefineIntVal>
-	</Define>
 </Civ4Defines>

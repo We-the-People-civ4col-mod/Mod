@@ -81,4 +81,16 @@ See Readme for more details.</English>
         <English>The DLL is compiled with the assumption that %s has a length of %d. However the xml file has an actual length of %d. This will cause issues and likely crashes and it needs to be fixed. This can be fixed by recompiling the DLL file, through the DLL file can't be updated while the game is running. Do you want to quit now?</English>
         <Russian>DLL компилируется с предположением, что файл %s имеет длину %d. Однако фактическая длина файла составляет %d. Это может вызвать проблемы и вероятные сбои и требует исправления. Это можно сделать, перекомпилировав файл DLL. Но поскольку он не может быть обновлен во время работы игры, запуск нужно прервать. Хотите сделать это?</Russian>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ALERT_SAVEGAME_READ_ERROR_HEADER</Tag>
+        <English>Savegame read error</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ALERT_SAVEGAME_TOO_OLD</Tag>
+        <English>The savegame is too old to be read. It was made using an outdated savegame format and can sadly not be converted to match current requirements. The game will now shut down to prevent the savegame code from crashing.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ALERT_SAVEGAME_TOO_NEW</Tag>
+        <English>The savegame is made with a version of We The People, which is newer than the version you are currently using. Without knowing what data was added, there is no way the savegame can be read. The game will now shut down to prevent the savegame code from crashing.</English>
+    </TEXT>
 </Civ4GameText>

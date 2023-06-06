@@ -39,6 +39,8 @@
 #include "CyArgsList.h"
 #include "CyPlot.h"
 
+#include "SavegameConstants.h"
+
 
 class EXE_CvActionInfo : public CvActionInfo
 {
@@ -1773,7 +1775,7 @@ public:
 		static int iNumBuildings = 0;
 		if (iNumBuildings == 0)
 		{
-			iNumBuildings = GLOBAL_DEFINE_EXE_FALSE_XML_BUILDINGS;
+			iNumBuildings = SAVEGAME_EXE_FALSE_XML_BUILDINGS;
 			while (iNumBuildings <= NUM_BUILDING_TYPES)
 			{
 				iNumBuildings += 25;
@@ -1919,7 +1921,7 @@ public:
 		static int iNumUnits = 0;
 		if (iNumUnits == 0)
 		{
-			iNumUnits = GLOBAL_DEFINE_EXE_FALSE_XML_UNITS;
+			iNumUnits = SAVEGAME_EXE_FALSE_XML_UNITS;
 			while (iNumUnits <= NUM_UNIT_TYPES)
 			{
 				iNumUnits += 25;

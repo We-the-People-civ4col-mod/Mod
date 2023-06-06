@@ -8850,7 +8850,7 @@ BuildTypes CvUnit::getBuildType() const
 			break;
 
 		case MISSION_BUILD:
-			return (BuildTypes)pGroup->headMissionQueueNode()->m_data.iData1;
+			return pGroup->headMissionQueueNode()->m_data.eBuild;
 			break;
 
 		default:

@@ -68,6 +68,7 @@ public:
 	CvSavegameReader(const CvSavegameReader& reader);
 
 	bool isDebug() const;
+	static unsigned int getSavegameVersion();
 
 	void AssignClassType(SavegameClassTypes eType);
 
@@ -869,10 +870,15 @@ class CvSavegameReaderBase
 	friend class CvSavegameReader;
 public:
 	CvSavegameReaderBase(FDataStreamBase* pStream);
+	CvSavegameReaderBase(FDataStreamBase* pStream, unsigned int iSavegameVersion);
 	
 	~CvSavegameReaderBase();
 
+	static unsigned int getSavegameVersion();
+
 private:
+
+	void init();
 
 	void Read(byte* var, unsigned int iSize);
 	int ReadChunk();
@@ -883,6 +889,7 @@ private:
 	byte *m_MemoryEnd;
 	unsigned int m_iSize;
 	unsigned int m_iRead;
+	static unsigned int m_iSavegameVersion;
 
 };
 

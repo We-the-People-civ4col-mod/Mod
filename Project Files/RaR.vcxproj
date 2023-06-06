@@ -99,6 +99,7 @@
     <ClCompile Include="DLLSources\KmodPathFinder.cpp" />
     <ClCompile Include="DLLSources\OpenURL.cpp" />
     <ClCompile Include="DLLSources\Profile.cpp" />
+    <ClCompile Include="DLLSources\SavegameAlert.cpp" />
     <ClCompile Include="DLLSources\StartupErrorChecking.cpp" />
     <ClCompile Include="DLLSources\TestEnumMap.cpp" />
     <ClCompile Include="DLLSources\CvPlotFunctions.cpp" />
@@ -233,6 +234,7 @@
     <ClCompile Include="DLLSources\XMLLengthSet.cpp" />
     <ClCompile Include="DLLSources\_precompile.cpp" />
     <ClCompile Include="DLLSources\PlayerHelperFunctions.cpp" />
+    <ClCompile Include="SavegameAlert.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\AlertWindow.h" />
@@ -378,6 +380,8 @@
     <ClInclude Include="DLLSources\JustInTimeArray.h" />
     <ClInclude Include="DLLSources\LinkedList.h" />
     <ClInclude Include="DLLSources\resource.h" />
+    <ClInclude Include="DLLSources\SavegameAlert.h" />
+    <ClInclude Include="DLLSources\SavegameConstants.h" />
     <ClInclude Include="DLLSources\StartupErrorChecking.h" />
     <ClInclude Include="DLLSources\tinyxml2.h" />
     <ClInclude Include="DLLSources\UserSettings.h" />
