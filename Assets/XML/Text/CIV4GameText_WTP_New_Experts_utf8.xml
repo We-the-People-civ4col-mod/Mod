@@ -1482,9 +1482,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COAL_MINER_STRATEGY</Tag>
-        <English>Coal mining causes premature death and illness, but it's a soft rock that doesn't need as many explosives as hard rock mining. It's a job where labourers use picks and shovels, and they don't get paid much.[NEWLINE]When assigned to the Coal Miner profession, the expert can get twice the tonnage of coal in the same time as a regular colonist.</English>
+        <English>Coal mining causes premature death and illness, but it's a soft rock that doesn't need as many explosives as hard rock mining. It's a job where labourers use picks and shovels, and they don't get paid much.[NEWLINE]When assigned to the [LINK=PROFESSION_COAL_MINER]coal miner[\LINK] profession, the expert can get twice the tonnage of [LINK=YIELD_COAL]coal[\LINK] in the same time as a regular colonist.</English>
         <French>xxx</French>
-        <German>xxx</German>
+        <German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Kohlekumpel[COLOR_REVERT], der als [LINK=PROFESSION_COAL_MINER]Bergmann[\LINK] dem Abbau von [LINK=YIELD_COAL]Kohle[\LINK] zugewiesen ist, produziert doppelt so viel Kohle wie ein freier Kolonist.  </German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
     </TEXT>
