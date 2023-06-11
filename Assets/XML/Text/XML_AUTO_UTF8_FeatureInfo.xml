@@ -46,8 +46,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_DENSE_FOREST_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Dense forest[COLOR_REVERT] is almost impassable. In the tropics getting through it means using a machete. Travelling in the temperate dense forest takes a lot of time and a sharp axe.</English>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Dichter Wald[COLOR_REVERT]tbd</German>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Dense forest[COLOR_REVERT] is almost impassable. In the tropics getting through it means using a machete. Travelling in the temperate dense forest takes a lot of time and a sharp axe. A [LINK=PROFESSION_PIONEER]Pioneer[\LINK] can plant dense forests on [LINK=TERRAIN_PLAINS_FERTILE]plains[\LINK] terrain.</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Dichter Wald[COLOR_REVERT] is fast unpassierbar. Man braucht eine Machete oder Axt, um voranzukommen. Ein [LINK=PROFESSION_PIONEER]Pionier[\LINK] kann dichten Wald auf dem [LINK=TERRAIN_PLAINS_FERTILE]Ebenen[\LINK] Terrain anpflanzen. </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_FOREST_TUNDRA</Tag>
