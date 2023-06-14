@@ -22453,6 +22453,22 @@ void CvPlayer::checkForEuropeanPeace()
 		return;
 	}
 
+	//WTP, ray, fix to prevent European Peace triggering directly after European Wars - START
+	//if there was European Wars triggered at least half to the timer needs to have passed
+	if(m_iTimerEuropeanWars > GC.getTIMER_EUROPEAN_WARS() / 2)
+	{
+		return;
+	}
+	//WTP, ray, fix to prevent European Peace triggering directly after European Wars - END
+
+	//WTP, ray, fix to prevent European Peace triggering directly after Royal Interventions - START
+	//if there was Royal Interventions triggered at least half to the timer needs to have passed
+	if(m_iTimerRoyalInterventions > GC.getTIMER_ROYAL_INTERVENTIONS() / 2)
+	{
+		return;
+	}
+	//WTP, ray, fix to prevent European Peace triggering directly after Royal Interventions - START
+
 	int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 
 	int randomEuropePeaceValue = GC.getGameINLINE().getSorenRandNum(1000, "European Peace");
@@ -22544,6 +22560,14 @@ void CvPlayer::checkForRoyalIntervention()
 		m_iTimerRoyalInterventions = (m_iTimerRoyalInterventions - 1);
 		return;
 	}
+
+	//WTP, ray, fix to prevent Royal Intervention triggering directly after European Wars - START
+	//if there was European Wars triggered at least half to the timer needs to have passed
+	if(m_iTimerEuropeanWars > GC.getTIMER_EUROPEAN_WARS() / 2)
+	{
+		return;
+	}
+	//WTP, ray, fix to prevent European Peace triggering directly after European Wars - END
 
 	int randomRoyalInterventionValue = GC.getGameINLINE().getSorenRandNum(1000, "Royal Interventions");
 	int iRoyalInterventionChance = GC.getBASE_CHANCE_ROYAL_INTERVENTIONS();
