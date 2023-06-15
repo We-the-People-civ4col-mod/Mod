@@ -84,13 +84,16 @@ See Readme for more details.</English>
     <TEXT>
         <Tag>TXT_KEY_ALERT_SAVEGAME_READ_ERROR_HEADER</Tag>
         <English>Savegame read error</English>
+        <Russian>Ошибка чтения сохранения игры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ALERT_SAVEGAME_TOO_OLD</Tag>
         <English>The savegame is too old to be read. It was made using an outdated savegame format and can sadly not be converted to match current requirements. The game will now shut down to prevent the savegame code from crashing.</English>
+        <Russian>Сохранение слишком старое. Оно было создано с использованием устаревшего формата сохранения и, к сожалению, не может быть преобразовано в соответствии с текущими требованиями. Игра будет закрыта, чтобы предотвратить сбой кода сохранения.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ALERT_SAVEGAME_TOO_NEW</Tag>
         <English>The savegame is made with a version of We The People, which is newer than the version you are currently using. Without knowing what data was added, there is no way the savegame can be read. The game will now shut down to prevent the savegame code from crashing.</English>
+        <Russian>Сохранение сделано с версией We The People, которая новее, чем версия, которую вы используете сейчас. Не зная, какие данные были добавлены, невозможно прочитать сохранение. Игра будет закрыта, чтобы предотвратить сбой кода сохранения.</Russian>
     </TEXT>
 </Civ4GameText>
