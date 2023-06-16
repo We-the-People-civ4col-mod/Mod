@@ -2689,4 +2689,46 @@
         <German>Aye, das Schiff ist nicht mehr zu retten. Diese verdammten seichten Gewässer. Dann steuert das Schiff wenigstens in Ufernähe, vielleicht können wir später noch etwas daraus bergen!</German>
         <Russian>Да, корабль не подлежит восстановлению. Чёртовы мелководья! Подведите корабль поближе к берегу. Может быть, мы сможем извлечь из него что-нибудь позже.</Russian>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_COLONY_GROWTH</Tag>
+        <English>Your colony has grown a lot. But we can only expect that our rivals do the same. We need to reach a population of 20 to increase our production and strengthen our borders.</English>
+        <French>Votre colonie a beaucoup grandi. Mais nous ne pouvons que nous attendre à ce que nos rivaux fassent de même. Nous devons atteindre une population de 20 pour augmenter notre production et renforcer nos frontières.</French>
+        <German>> Ihre Kolonie ist stark gewachsen. Aber wir können nur erwarten, dass unsere Konkurrenten dasselbe tun. Wir müssen eine Bevölkerungszahl von 20 erreichen, um unsere Produktion zu steigern und unsere Grenzen zu stärken.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_COLONY_GROWTH</Tag>
+        <English>I’ll make sure more colonists are persuaded to join the settlement.</English>
+        <French>Je veillerai à ce que davantage de colons soient persuadés de rejoindre la colonie.</French>
+        <German>Ich werde dafür sorgen dass sich weitere Kolonisten der Siedlung anschließen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAIL_COLONY_GROWTH</Tag>
+        <English>Another nation did expand a settlement to 20 colonists.</English>
+        <French>Une autre nation a étendu une colonie à 20 colon.</French>
+        <German>Eine andere Nation erweiterte eine Siedlung auf 20 Kolonisten.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_COLONY_GROWTH_DONE_WORLD</Tag>
+        <English>You successfully expanded a settlement to 20 colonists.</English>
+        <French>Vous avez réussi à étendre une colonie à 20 colons.</French>
+        <German>Sie haben eine Siedlung erfolgreich auf 20 Kolonisten erweitert.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_COLONY_GROWTH_DONE</Tag>
+        <English>Congratulations! You have strengthened our position by expanding the colony to 20 colonists. By now they all live cramped together and hardly know each other anymore.</English>
+        <French>Félicitations! Vous avez renforcé notre position en élargissant la colonie à 20 colons. Désormais, ils vivent tous à l'étroit et ne se connaissent presque plus.</French>
+        <German>> Glückwunsch! Sie haben unsere Position gestärkt, indem Sie die Kolonie auf 20 Kolonisten erweitert haben. Mittlerweile leben sie alle auf engstem Raum zusammen und kennen sich kaum noch.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_COLONY_GROWTH_DONE_1</Tag>
+        <English>Fighting disease is a priority. Call for a doctor immediately!</English>
+        <French>La lutte contre la maladie est une priorité. Appelez immédiatement un médecin!</French>
+        <German>Die Bekämpfung von Krankheiten hat Priorität. Rufen Sie sofort einen Arzt!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_COLONY_GROWTH_DONE_2</Tag>
+        <English>Theft and other shady business take place in broad daylight. We need a judge to restore order!</English>
+        <French>> Les vols et autres affaires louches ont lieu en plein jour. Il nous faut un juge pour rétablir l'ordre!</French>
+        <German>Diebstähle und andere dubiose Geschäfte geschehen am helllichten Tag. Wir brauchen einen Richter, der die Ordnung wiederherstellt!</German>
+    </TEXT>
 </Civ4GameText>
