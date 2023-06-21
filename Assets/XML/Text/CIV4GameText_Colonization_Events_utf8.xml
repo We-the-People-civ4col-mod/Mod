@@ -4443,7 +4443,7 @@
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_LUMBER_DONE</Tag>
         <English>A European Nation succeeded to become the market leader for [COLOR_FONT_GOLD]lumber[COLOR_REVERT].</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Holz[COLOR_REVERT] zu werden.</German>
-		<Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT]!</Russian>
+        <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_LUMBER_DONE</Tag>
