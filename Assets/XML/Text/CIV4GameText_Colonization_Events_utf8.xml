@@ -7810,7 +7810,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE</Tag>
-        <English>Milord, we have managed to dominate the trade in [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is excited.</English>
+        <English>A European Nation managed to dominate the trade in [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is excited.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -7900,7 +7900,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_FOOD_DONE</Tag>
-        <English>Milord, we have managed to dominate the trade in [COLOR_FONT_GOLD]food[COLOR_REVERT] with Port Royal.</English>
+        <English>A European Nation managed to dominate the trade in [COLOR_FONT_GOLD]food[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -7972,7 +7972,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CLAY_DONE</Tag>
-        <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]clay[COLOR_REVERT] with Port Royal.</English>
+        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]clay[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]глины[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -8020,7 +8020,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE</Tag>
-        <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]baked goods[COLOR_REVERT] with Port Royal.</English>
+        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]baked goods[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]хлебобулочных изделий[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -8140,7 +8140,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
-        <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Port Royal.</English>
+        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -8182,7 +8182,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CASSAVA_DONE</Tag>
-        <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]cassava[COLOR_REVERT] with Port Royal.</English>
+        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]cassava[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]маниоки[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -8200,7 +8200,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CASSAVA_DONE</Tag>
-        <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]cassava[COLOR_REVERT] with Port Royal.</English>
+        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]cassava[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]маниоки[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -8380,7 +8380,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_HORSES_DONE</Tag>
-        <English>Milord, we now control the trade in African [COLOR_FONT_GOLD]horses[COLOR_REVERT].</English>
+        <English>A European Nation now controls the trade in African [COLOR_FONT_GOLD]horses[COLOR_REVERT].</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Pferden[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]лошадей[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -8410,7 +8410,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_ORE_DONE</Tag>
-        <English>Milord, we have managed to dominate the trade in [COLOR_FONT_GOLD]ore[COLOR_REVERT] with Africa.</English>
+        <English>A European Nation managed to dominate the trade in [COLOR_FONT_GOLD]ore[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Erzen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]руды[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -8680,7 +8680,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COCA_LEAVES_DONE</Tag>
-        <English>Milord, we have managed to dominate the trade in [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Africa.</English>
+        <English>A European Nation managed to dominate the trade in [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Coca-Blättern[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -8740,7 +8740,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COTTON_DONE</Tag>
-        <English>Milord, we are now the leading trader in [COLOR_FONT_GOLD]cotton[COLOR_REVERT] with Africa.</English>
+        <English>A European Nation is now leading trader in [COLOR_FONT_GOLD]cotton[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]хлопка[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -8782,7 +8782,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_LOGWOOD_DONE</Tag>
-        <English>Milord, we are now the leading trader in [COLOR_FONT_GOLD]logwood[COLOR_REVERT] with Africa.</English>
+        <English>A European Nation is now leading trader in [COLOR_FONT_GOLD]logwood[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Blauholz[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]кампеша[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -8800,7 +8800,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_LOGWOOD_DONE</Tag>
-        <English>Milord, we are now the leading trader in [COLOR_FONT_GOLD]logwood[COLOR_REVERT] with Africa.</English>
+        <English>A European Nation is now leading trader in [COLOR_FONT_GOLD]logwood[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Blauholz[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кампеша[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -8812,7 +8812,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COCHINEAL_DONE</Tag>
-        <English>Milord, we are now the leading trader in [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] with Africa.</English>
+        <English>A European Nation is now leading trader in [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Cochenille-Schildläusen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]кошенили[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -8830,7 +8830,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COCHINEAL_DONE</Tag>
-        <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] with Africa.</English>
+        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Cochenille-Schildläusen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кошенили[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -8842,7 +8842,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COFFEE_BERRIES_DONE</Tag>
-        <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]coffee berries[COLOR_REVERT] with Africa.</English>
+        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]coffee berries[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]кофейных ягод[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -8860,7 +8860,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COFFEE_BERRIES_DONE</Tag>
-        <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]coffee berries[COLOR_REVERT] with Africa.</English>
+        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]coffee berries[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кофейных ягод[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -8872,7 +8872,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_PEANUTS_DONE</Tag>
-        <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] with Africa.</English>
+        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]арахиса[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -8890,7 +8890,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_PEANUTS_DONE</Tag>
-        <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] with Africa.</English>
+        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]арахиса[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -8920,7 +8920,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_RED_PEPPER_DONE</Tag>
-        <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] with Africa.</English>
+        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]rotem Pfeffer[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]красного перца[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
