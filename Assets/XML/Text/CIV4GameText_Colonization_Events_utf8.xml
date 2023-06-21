@@ -11,7 +11,7 @@
         <English>[BOLD]Production and Resource Management[\BOLD][NEWLINE][TAB]Congratulations! You just increased the population of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. These new citizens can be assigned to work the plots adjacent to your settlement to gather raw materials. Citizens can also be assigned to buildings within your settlement to convert raw materials into manufactured goods. On the settlement screen, simply double-click your citizens to assign them to a specific profession or drag them to the plot or building you want worked.</English>
         <French>[BOLD]Gestion des ressources et de la production[\BOLD][NEWLINE][TAB]Félicitations ! La population de la colonie : [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vient d'augmenter. Vous pouvez désormais ordonner aux nouveaux citoyens d'exploiter les cases adjacentes à la colonie afin d'y récolter des matières premières. Vous pouvez également les assigner à la construction de bâtiments qui vous permettront de transformer ces dernières en produits manufacturés. Pour cela, une fois sur l'écran de colonie, il vous suffit d'effectuer un double-clic sur votre citoyen pour lui attribuer une profession ou de le faire glisser vers la case ou le bâtiment où vous aimeriez qu'il travaille.</French>
         <German>[BOLD]Produktion und Ressourcen-Management[\BOLD][NEWLINE][TAB]Glückwunsch! Sie haben eben die Bevölkerung Ihrer Siedlung [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] erhöht. Diese neuen Bürger wurden zur Arbeit auf den Geländefeldern neben Ihrer Siedlung eingeteilt, um Rohstoffe zu produzieren. Bürger können auch den Gebäuden in Ihrer Siedlung zugewiesen werden, um Rohstoffe zu Fertigwaren weiterzuverarbeiten. Im Siedlungsbildschirm klicken Sie einfach doppelt auf Ihren Bürger, um ihm einen speziellen Beruf zuzuweisen, oder ziehen Sie ihn auf das Geländefeld oder Gebäude, wo er arbeiten soll.</German>
-        <Italian>[BOLD]Produzione e gestione risorse[\BOLD][NEWLINE][TAB]Congratulazioni! Hai appena fatto aumentare la popolazione di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Puoi assegnare questi nuovi cittadini a lavorare nelle caselle adiacenti all'insediamento, per raccogliere materie prime. Puoi anche assegnare i cittadini a lavorare negli edifici all'interno dell'insediamento, per trasformare le materie prime in beni. Nella schermata dell'insediamento, [clicca due volte] sul cittadino per assegnarlo a una professione specifica, o trascinalo sulla casella o edificio in cui vuoi che lavori.</Italian>
+        <Italian>[BOLD]Produzione e gestione risorse[\BOLD][NEWLINE][TAB]Congratulazioni! Hai appena fatto auEs ist einer Nation gelungen, der Marktführer im Handel mitmentare la popolazione di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Puoi assegnare questi nuovi cittadini a lavorare nelle caselle adiacenti all'insediamento, per raccogliere materie prime. Puoi anche assegnare i cittadini a lavorare negli edifici all'interno dell'insediamento, per trasformare le materie prime in beni. Nella schermata dell'insediamento, [clicca due volte] sul cittadino per assegnarlo a una professione specifica, o trascinalo sulla casella o edificio in cui vuoi che lavori.</Italian>
         <Spanish>[BOLD]Producción y gestión de recursos[\BOLD][NEWLINE][TAB]¡Felicidades! Acabáis de aumentar la población de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Podéis asignar estos nuevos ciudadanos a trabajar en las casillas adyacentes al asentamiento para obtener materias primas. También se pueden asignar ciudadanos a los edificios del asentamiento para convertir materias primas en productos manufacturados. En la pantalla del asentamiento, basta con hacer doble clic en el ciudadano para asignarlo a una profesión específica o arrastrarlo a la casilla o edificio en el que queréis que trabaje.</Spanish>
         <Russian>[BOLD]Управление производством и ресурсами[\BOLD][NEWLINE][TAB]Поздравляем! Вы только что увеличили население [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Новые горожане могут быть назначены на обработку участков, прилегающих к вашему поселению, для сбора ресурсов. Также они могут быть назначены в здания в вашем поселении для преобразования добытых ресурсов в промышленные товары. На экране поселения дважды щелкните горожанина, чтобы назначить ему определенную профессию или перенесите на участок или в здание, которое вы хотите обработать.</Russian>
     </TEXT>
@@ -4352,7 +4352,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_SUGAR_DONE</Tag>
         <English>Milord, we're now the market leader in the [COLOR_FONT_GOLD]sugar[COLOR_REVERT] trade.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Zucker[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Zucker[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]сахара[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -4382,7 +4382,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_TOBACCO_DONE</Tag>
         <English>Milord, we're now the market leader for trade in [COLOR_FONT_GOLD]tobacco[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Tabak[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Tabak[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]табака[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -4412,7 +4412,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_FOOD_DONE</Tag>
         <English>Milord, we're now the market leader for [COLOR_FONT_GOLD]food[COLOR_REVERT] in Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Nahrung[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Nahrung[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]еды[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -4470,8 +4470,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_ORE_DONE</Tag>
-        <English>Milord, we're the market leader for [COLOR_FONT_GOLD]ore[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Eisenerz[COLOR_REVERT] zu werden.</German>
+        <English>A European Nation succeeded to become the market leader for[COLOR_FONT_GOLD]ore[COLOR_REVERT].</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Eisenerz[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]руды[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -4500,8 +4500,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_STONE_DONE</Tag>
-        <English>Milord, we're the market leader for [COLOR_FONT_GOLD]stone[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] zu werden.</German>
+        <English>A European Nation succeeded to become the market leader for[COLOR_FONT_GOLD]stone[COLOR_REVERT].</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]камня[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -4530,8 +4530,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_HEMP_DONE</Tag>
-        <English>Milord, we're the market leader for trade in [COLOR_FONT_GOLD]hemp[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hanf[COLOR_REVERT] zu werden.</German>
+        <English>A European Nation succeeded to become the market leader for trade in [COLOR_FONT_GOLD]hemp[COLOR_REVERT].</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hanf[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]конопли[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -4562,7 +4562,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_SHEEP_DONE</Tag>
         <English>Milord, we're now the market leader for trade in [COLOR_FONT_GOLD]sheep[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schafen[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schafen[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]овец[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -4592,7 +4592,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CATTLE_DONE</Tag>
         <English>Milord, we're the market leader trading in [COLOR_FONT_GOLD]cattle[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rindern[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rindern[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]коров[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -4622,7 +4622,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_HORSES_DONE</Tag>
         <English>Milord, we're now the market leader for [COLOR_FONT_GOLD]horses[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Pferden[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Pferden[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]лошадей[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -4652,7 +4652,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COCOA_FRUITS_DONE</Tag>
         <English>Milord, we're now the market leader for [COLOR_FONT_GOLD]cocoa pods[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kakaofrüchten[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kakaofrüchten[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]плодов какао[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -4682,7 +4682,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COCA_LEAVES_DONE</Tag>
         <English>Milord, we're now the market leader for [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Coca-Blättern[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Coca-Blättern[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -4711,8 +4711,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_FUR_DONE</Tag>
-        <English>Milord, we're the market leader for trade in [COLOR_FONT_GOLD]furs[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Fellen[COLOR_REVERT] zu werden.</German>
+        <English>A European Nation succeeded to become the market leader for trade in [COLOR_FONT_GOLD]furs[COLOR_REVERT].</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Fellen[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]меха[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -4742,7 +4742,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COFFEE_BERRIES_DONE</Tag>
         <English>Milord, we're now the market leader for [COLOR_FONT_GOLD]coffee berries[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]кофейных ягод[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -4772,7 +4772,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_WOOL_DONE</Tag>
         <English>Milord, we've become the market leader in [COLOR_FONT_GOLD]wool[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schafswolle[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schafswolle[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]шерсти[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -4801,8 +4801,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COTTON_DONE</Tag>
-        <English>Milord, we're the market leader for [COLOR_FONT_GOLD]cotton[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] zu werden.</German>
+        <English>A European Nation succeeded to become the market leader for[COLOR_FONT_GOLD]cotton[COLOR_REVERT].</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]хлопка[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -4832,7 +4832,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_INDIGO_DONE</Tag>
         <English>Milord, we're dominant in [COLOR_FONT_GOLD]indigo[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]индиго[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -4861,8 +4861,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_HIDES_DONE</Tag>
-        <English>Milord, we're the market leader for the European [COLOR_FONT_GOLD]cowhides[COLOR_REVERT] trade.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rindshäuten[COLOR_REVERT] zu werden.</German>
+        <English>A European Nation succeeded to become the market leader forthe European [COLOR_FONT_GOLD]cowhides[COLOR_REVERT] trade.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rindshäuten[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]коровьих шкур[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -4892,7 +4892,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PREMIUM_FUR_DONE</Tag>
         <English>Milord, we're now the leading traders in [COLOR_FONT_GOLD]premium furs[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hochwertigen Pelzen[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hochwertigen Pelzen[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]премиального меха[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -4922,7 +4922,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_RAW_SALT_DONE</Tag>
         <English>Milord, we now dominate trade in [COLOR_FONT_GOLD]rock salt[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Steinsalz[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Steinsalz[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]каменной соли[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -4952,7 +4952,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_RED_PEPPER_DONE</Tag>
         <English>Milord, we now are the leading traders in [COLOR_FONT_GOLD]red pepper[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rotem Pfeffer[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rotem Pfeffer[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]красного перца[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -4982,7 +4982,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_BARLEY_DONE</Tag>
         <English>Milord, we dominate trade in [COLOR_FONT_GOLD]barley[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gerste[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gerste[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]ячменя[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5012,7 +5012,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GRAPES_DONE</Tag>
         <English>Milord, we now dominate trade in [COLOR_FONT_GOLD]grapes[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Weintrauben[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Weintrauben[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]винограда[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5042,7 +5042,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_WHALE_BLUBBER_DONE</Tag>
         <English>Milord, we now are the leading traders in [COLOR_FONT_GOLD]whale fat[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Walspeck[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Walspeck[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]китового жира[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5072,7 +5072,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_VALUABLE_WOOD_DONE</Tag>
         <English>Milord, we're the leading trader in [COLOR_FONT_GOLD]valuable wood[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Edelholz[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Edelholz[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]ценной древесины[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5102,7 +5102,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_TRADE_GOODS_DONE</Tag>
         <English>Milord, we now have achieved market dominance in European [COLOR_FONT_GOLD]trade goods[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Handelsgütern[COLOR_REVERT] aus Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Handelsgütern[COLOR_REVERT] aus Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке поставок [COLOR_FONT_GOLD]мануфактуры[COLOR_REVERT] в Новый Свет!</Russian>
     </TEXT>
     <TEXT>
@@ -5132,7 +5132,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_SAILCLOTH_DONE</Tag>
         <English>Milord, we now dominate trade in [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]парусины[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5162,7 +5162,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_TOOLS_DONE</Tag>
         <English>Milord, we dominate trade in [COLOR_FONT_GOLD]tools[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Eisenwaren[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Eisenwaren[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]инструментов[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5192,7 +5192,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_BLADES_DONE</Tag>
         <English>Milord, we're now the market leader for [COLOR_FONT_GOLD]blades[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]клинков[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5222,7 +5222,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_MUSKETS_DONE</Tag>
         <English>Milord, we're now the top dealer in [COLOR_FONT_GOLD]guns[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schusswaffen[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schusswaffen[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5252,7 +5252,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CANNONS_DONE</Tag>
         <English>Milord, we're the leading trader in [COLOR_FONT_GOLD]cannons[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]пушек[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5282,7 +5282,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_ROPE_DONE</Tag>
         <English>Milord, we now dominate trade in [COLOR_FONT_GOLD]ropes[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Seilen[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Seilen[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]канатов[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5312,7 +5312,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_SILVER_DONE</Tag>
         <English>Milord, we now dominate trade in [COLOR_FONT_GOLD]silver[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Silber[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Silber[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]серебра[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5342,7 +5342,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GOLD_DONE</Tag>
         <English>Milord, we're now the number one [COLOR_FONT_GOLD]gold[COLOR_REVERT] trader.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gold[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gold[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]золота[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5372,7 +5372,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GEMS_DONE</Tag>
         <English>Milord, we're the leading traders in [COLOR_FONT_GOLD]gems[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5390,7 +5390,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COCOA_FRUITS_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]cocoa pods[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Kakaofrüchten[COLOR_REVERT] aus Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kakaofrüchten[COLOR_REVERT] aus Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]плодов какао[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5408,7 +5408,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COCOA_FRUITS_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]cocoa pods[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Kakaofrüchten[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kakaofrüchten[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]плодов какао[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5432,7 +5432,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COCOA_DONE</Tag>
         <English>Milord, we now dominate trade in [COLOR_FONT_GOLD]cocoa[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]какао[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5462,7 +5462,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COFFEE_DONE</Tag>
         <English>Milord, we now trade the most [COLOR_FONT_GOLD]coffee[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]кофе[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5492,7 +5492,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CIGARS_DONE</Tag>
         <English>Milord, we dominate trade in [COLOR_FONT_GOLD]cigars[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]сигар[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5523,7 +5523,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_WOOL_CLOTH_DONE</Tag>
         <English>Milord, we're now the top trader for [COLOR_FONT_GOLD]wool cloth[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Wollstoffen[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Wollstoffen[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]шерстяной ткани[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5553,7 +5553,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CLOTH_DONE</Tag>
         <English>Milord, we now dominate trade in [COLOR_FONT_GOLD]cloth[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Stoffen[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Stoffen[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]ткани[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5583,7 +5583,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COLOURED_CLOTH_DONE</Tag>
         <English>Milord, we now dominate trading in [COLOR_FONT_GOLD]coloured cloth[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gefärbten Stoffen[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gefärbten Stoffen[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]цветной ткани[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5613,7 +5613,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_LEATHER_DONE</Tag>
         <English>Milord, we now dominate trade in [COLOR_FONT_GOLD]leather[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Lederwaren[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Lederwaren[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]выделанной кожи[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5643,7 +5643,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COATS_DONE</Tag>
         <English>Milord, we now dominate trade in [COLOR_FONT_GOLD]coats[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Pelzwaren[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Pelzwaren[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]пальто[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5673,7 +5673,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PREMIUM_COATS_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]premium coats[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Teurer Pelzkleidung[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Teurer Pelzkleidung[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]премиумных шуб[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5703,7 +5703,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_SPICES_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]spices[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gewürzen[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gewürzen[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]специй[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5733,7 +5733,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_SALT_DONE</Tag>
         <English>Milord, we now dominate trade in [COLOR_FONT_GOLD]salt[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Salz[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Salz[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]соли[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5763,7 +5763,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_FURNITURE_DONE</Tag>
         <English>Milord, we now have the biggest share in the trade with [COLOR_FONT_GOLD]furniture[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Möbeln[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Möbeln[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]мебели[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5793,7 +5793,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_WHALE_OIL_DONE</Tag>
         <English>Milord, we now have the biggest share in the trade with [COLOR_FONT_GOLD]train oil[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Tran[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Tran[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]ворвани[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5823,7 +5823,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_WINE_DONE</Tag>
         <English>Milord, we now sell the most [COLOR_FONT_GOLD]wine[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Wein[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Wein[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]вина[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5853,7 +5853,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_BEER_DONE</Tag>
         <English>Milord, we sell more [COLOR_FONT_GOLD]beer[COLOR_REVERT] than anyone else.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Bier[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Bier[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]пива[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5883,7 +5883,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_LUXURY_GOODS_DONE</Tag>
         <English>Milord, we now have the largest market for European [COLOR_FONT_GOLD]luxury goods[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Luxusgütern[COLOR_REVERT] aus Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Luxusgütern[COLOR_REVERT] aus Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на колониальном рынке [COLOR_FONT_GOLD]предметов роскоши[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5901,7 +5901,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CLAY_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]clay[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]глины[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5919,7 +5919,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CLAY_DONE</Tag>
         <English>Milord, we are now dominant in the European [COLOR_FONT_GOLD]clay[COLOR_REVERT] trade.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]глины[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5931,7 +5931,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PEAT_DONE</Tag>
         <English>Milord, we have managed to become the dominant trader of [COLOR_FONT_GOLD]peat[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Torf[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Torf[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]торфа[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5949,7 +5949,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PEAT_DONE</Tag>
         <English>Milord, we have managed to dominate the trade of [COLOR_FONT_GOLD]peat[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Torf[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Torf[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]торфа[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5961,7 +5961,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_RICE_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]rice[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Reis[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]риса[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5979,7 +5979,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_RICE_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]rice[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Reis[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]риса[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -5991,7 +5991,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CASSAVA_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]cassava[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]маниоки[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6009,7 +6009,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CASSAVA_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]cassava[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]маниоки[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6021,7 +6021,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_HARDWOOD_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6039,7 +6039,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_HARDWOOD_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6051,7 +6051,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_FLAX_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]flax[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Flachs[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Flachs[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]льна[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6069,7 +6069,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_FLAX_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]flax[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Flachs[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Flachs[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]льна[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6081,7 +6081,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PEANUTS_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Erdnüssen[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Erdnüssen[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]арахиса[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6099,7 +6099,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PEANUTS_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Erdnüssen[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Erdnüssen[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]арахиса[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6111,7 +6111,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_FRUITS_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]fruit[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Früchten[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Früchten[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]фруктов[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6129,7 +6129,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_FRUITS_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]fruit[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Früchten[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Früchten[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]фруктов[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6141,7 +6141,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_YERBA_LEAVES_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]yerba leaves[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Mate-Blättern[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Mate-Blättern[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]чайных листьев[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6159,7 +6159,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_YERBA_LEAVES_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]yerba leaves[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Mate-Blättern[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Mate-Blättern[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]чайных листьев[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6171,7 +6171,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_LOGWOOD_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]logwood[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Blauholz[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Blauholz[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кампеша[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6189,7 +6189,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_LOGWOOD_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]logwood[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Blauholz[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Blauholz[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]кампеша[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6201,7 +6201,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COCHINEAL_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Cochenille-Schildläusen[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Cochenille-Schildläusen[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кошенили[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6219,7 +6219,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COCHINEAL_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Cochenille-Schildläusen[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Cochenille-Schildläusen[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]кошенили[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6231,7 +6231,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_VANILLA_PODS_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]green vanilla pods[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]grünen Vanilleschoten[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]grünen Vanilleschoten[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]стручков ванили[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6249,7 +6249,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_VANILLA_PODS_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]green vanilla pods[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]grünen Vanilleschoten[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]grünen Vanilleschoten[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]стручков ванили[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6261,7 +6261,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_MAPLE_SIRUP_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Ahornsirup[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Ahornsirup[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кленового сиропа[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6279,7 +6279,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_MAPLE_SIRUP_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Ahornsirup[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Ahornsirup[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]кленового сиропа[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6291,7 +6291,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_KAUTSCHUK_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]rubber[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]каучука[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6309,7 +6309,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_KAUTSCHUK_DONE</Tag>
         <English>Milord, we are now the leader trading [COLOR_FONT_GOLD]rubber[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]каучука[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6321,7 +6321,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COAL_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]coal[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Kohle[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kohle[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]угля[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6339,7 +6339,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COAL_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]coal[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Kohle[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kohle[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]угля[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6351,7 +6351,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CHAR_COAL_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]charcoal[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Holzkohle[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Holzkohle[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]древесного угля[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6369,7 +6369,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CHAR_COAL_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]charcoal[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Holzkohle[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Holzkohle[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]древесного угля[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6381,7 +6381,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_BAKERY_GOODS_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]bakery goods[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]хлебобулочных изделий[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6399,7 +6399,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_BAKERY_GOODS_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]bakery goods[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]хлебобулочных изделий[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6411,7 +6411,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]пороха[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6429,7 +6429,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]пороха[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6441,7 +6441,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GEESE_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]geese[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Gänsen[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gänsen[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]гусей[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6459,7 +6459,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GEESE_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]geese[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Gänsen[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gänsen[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]гусей[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6471,7 +6471,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CHICKEN_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]chicken[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Hühnern[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hühnern[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]курицы[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6489,7 +6489,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CHICKEN_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]chicken[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Hühnern[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hühnern[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]курицы[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6501,7 +6501,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PIGS_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]pigs[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Schweinen[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schweinen[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]свиней[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6519,7 +6519,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PIGS_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]pigs[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Schweinen[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schweinen[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]свиней[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6531,7 +6531,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GOATS_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]goats[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Ziegen[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Ziegen[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]коз[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6549,7 +6549,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GOATS_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]goats[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Ziegen[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Ziegen[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]коз[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6561,7 +6561,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_OLIVES_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]olives[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Oliven[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Oliven[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]оливок[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6579,7 +6579,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_OLIVES_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]olives[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Oliven[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Oliven[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]оливок[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6591,7 +6591,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_RAPE_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]rapeseed[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Raps[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Raps[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]рапса[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6609,7 +6609,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_RAPE_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]rapeseed[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Raps[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Raps[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]рапса[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6621,7 +6621,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_WILD_FEATHERS_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]wild bird feathers[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Vogelfedern[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Vogelfedern[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]перьев диких птиц[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6639,7 +6639,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_WILD_FEATHERS_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]wild bird feathers[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Vogelfedern[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Vogelfedern[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]перьев диких птиц[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6651,7 +6651,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_MILK_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]milk[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Milch[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Milch[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]молока[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6669,7 +6669,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_MILK_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]milk[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Milch[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Milch[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]молока[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6681,7 +6681,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GOAT_HIDES_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]goatskins[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Ziegenfellen[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Ziegenfellen[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]козьих шкур[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6699,7 +6699,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GOAT_HIDES_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]goatskins[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Ziegenfellen[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Ziegenfellen[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]козьих шкур[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6711,7 +6711,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PIG_SKIN_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]pigskins[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Schweinehäuten[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schweinehäuten[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]свиной кожи[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6729,7 +6729,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PIG_SKIN_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]pigskins[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Schweinehäuten[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schweinehäuten[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]свиной кожи[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6741,7 +6741,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_DOWNS_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]down[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Daunen[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Daunen[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]пуха[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6759,7 +6759,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_DOWNS_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]down[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Daunen[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Daunen[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пуха[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6771,7 +6771,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_ROASTED_PEANUTS_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]roasted peanuts[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]gerösteten Erdnüssen[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]gerösteten Erdnüssen[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]жаренного арахиса[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6789,7 +6789,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_ROASTED_PEANUTS_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]roasted peanuts[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]gerösteten Erdnüssen[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]gerösteten Erdnüssen[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]жаренного арахиса[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6801,7 +6801,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CHEESE_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]cheese[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Käse[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Käse[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]сыра[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6819,7 +6819,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CHEESE_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]cheese[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Käse[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Käse[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]сыра[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6831,7 +6831,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_YERBA_TEA_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]чая[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6849,7 +6849,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_YERBA_TEA_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]чая[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6861,7 +6861,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CHOCOLATE_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]chocolate[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Schokolade[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schokolade[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]шоколада[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6879,7 +6879,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CHOCOLATE_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]chocolate[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Schokolade[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schokolade[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]шоколада[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6891,7 +6891,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_RUM_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]rum[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Rum[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rum[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]рома[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6909,7 +6909,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_RUM_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]rum[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Rum[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rum[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]рома[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6921,7 +6921,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_HOOCH_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]fruit brandy[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6939,7 +6939,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_HOOCH_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]fruit brandy[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6951,7 +6951,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_OLIVE_OIL_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]olive oil[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Olivenöl[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Olivenöl[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]оливкового масла[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6969,7 +6969,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_OLIVE_OIL_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]olive oil[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Olivenöl[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Olivenöl[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]оливкового масла[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6981,7 +6981,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_RAPE_OIL_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]rapeseed oil[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Rapsöl[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rapsöl[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]рапсового масла[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -6999,7 +6999,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_RAPE_OIL_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]rapeseed oil[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Rapsöl[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rapsöl[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]рапсового масла[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7011,7 +7011,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_EVERYDAY_CLOTHES_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]everyday clothes[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Alltagskleidung[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Alltagskleidung[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]повседневной одежды[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7029,7 +7029,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_EVERYDAY_CLOTHES_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]everyday clothes[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Alltagskleidung[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Alltagskleidung[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]повседневной одежды[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7041,7 +7041,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_FESTIVE_CLOTHES_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]festive clothes[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]eleganten Kleidern[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]eleganten Kleidern[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]праздничной одежды[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7059,7 +7059,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_FESTIVE_CLOTHES_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]festive clothes[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]eleganten Kleidern[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]eleganten Kleidern[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]праздничной одежды[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7071,7 +7071,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COLOURED_WOOL_CLOTH_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]coloured wool cloth[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]gefärbten Wollstoff[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]gefärbten Wollstoff[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]цветной шерстяной ткани[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7089,7 +7089,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COLOURED_WOOL_CLOTH_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]coloured wool cloth[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]gefärbten Wollstoff[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]gefärbten Wollstoff[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]цветной шерстяной ткани[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7101,7 +7101,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GOAT_HIDE_BOOTS_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]goathide boots[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Ziegenlederstiefeln[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Ziegenlederstiefeln[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]сапогов из козьих шкур[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7119,7 +7119,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GOAT_HIDE_BOOTS_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]goathide boots[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Ziegenlederstiefel[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Ziegenlederstiefel[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]сапогов из козьих шкур[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7131,7 +7131,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PIG_LEATHER_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]pig leather aprons[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Schweinslederschürzen[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schweinslederschürzen[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]фартуков из свиной кожи[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7149,7 +7149,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PIG_LEATHER_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]pig leather aprons[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Schweinslederschürzen[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schweinslederschürzen[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]фартуков из свиной кожи[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7161,7 +7161,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PADDED_LEATHER_COATS_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]lined leather coats[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]gefütterte Ledermänteln[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]gefütterte Ledermänteln[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]утеплённых курток[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7179,7 +7179,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PADDED_LEATHER_COATS_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]lined leather coats[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]gefütterte Ledermänteln[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]gefütterte Ledermänteln[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]утеплённых курток[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7191,7 +7191,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_VANILLA_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]vanilla[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Vanille[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Vanille[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]ванили[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7209,7 +7209,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_VANILLA_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]vanilla[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Vanille[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Vanille[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]ванили[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7221,7 +7221,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_POTTERY_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]pottery[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Töpferwaren[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Töpferwaren[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]керамики[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7239,7 +7239,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_POTTERY_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]pottery[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Töpferwaren[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Töpferwaren[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]керамики[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7251,7 +7251,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PADDED_FURNITURE_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]upholstered furniture[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Polstermöbel[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Polstermöbel[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]мягкой мебели[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7269,7 +7269,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PADDED_FURNITURE_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]upholstered furniture[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Polstermöbel[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Polstermöbel[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]мягкой мебели[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7281,7 +7281,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_FIELD_WORKER_TOOLS_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]fieldworker tools[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Feldarbeiterwerkzeugen[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Feldarbeiterwerkzeugen[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]товаров для полевых работ[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7299,7 +7299,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_FIELD_WORKER_TOOLS_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]fieldworker tools[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Feldarbeiterwerkzeugen[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Feldarbeiterwerkzeugen[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]товаров для полевых работ[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7311,7 +7311,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_HOUSEHOLD_GOODS_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]household goods[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Haushaltswaren[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Haushaltswaren[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]товаров для домашнего хозяйства[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7329,7 +7329,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_HOUSEHOLD_GOODS_DONE</Tag>
         <English>Milord, we're now the top trader in [COLOR_FONT_GOLD]household goods[COLOR_REVERT] with Europe.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Haushaltswaren[COLOR_REVERT] mit Europa zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Haushaltswaren[COLOR_REVERT] in Europa zu werden.</German>
         <Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]товаров для домашнего хозяйства[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
@@ -7340,8 +7340,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLADES_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7358,8 +7358,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLADES_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
@@ -7370,8 +7370,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] with Port Royal.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]парусины[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7388,8 +7388,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]парусины[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
@@ -7401,7 +7401,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CANNONS_DONE</Tag>
         <English>Milord, we have managed to become the leading trader in [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7419,7 +7419,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CANNONS_DONE</Tag>
         <English>Milord, we have managed to dominate trading in [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
@@ -7431,7 +7431,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GUNS_DONE</Tag>
         <English>Milord, we now dominate the trade in [COLOR_FONT_GOLD]guns[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Musketen[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Musketen[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7449,8 +7449,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GUNS_DONE</Tag>
-        <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]guns[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Musketen[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
+        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]guns[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Musketen[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
@@ -7462,7 +7462,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_ROPES_DONE</Tag>
         <English>Milord, we are now the leader trading in [COLOR_FONT_GOLD]ropes[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Seile[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Seile[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]канатов[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7480,7 +7480,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_ROPES_DONE</Tag>
         <English>Milord, we have managed to become dominant in the trade of [COLOR_FONT_GOLD]ropes[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Seile[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Seile[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]канатов[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
@@ -7492,7 +7492,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CIGARS_DONE</Tag>
         <English>Milord, we are now dominant in the trade of [COLOR_FONT_GOLD]cigars[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]сигар[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7509,8 +7509,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CIGARS_DONE</Tag>
-        <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]cigars[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
+        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]cigars[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]сигар[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
@@ -7522,7 +7522,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SPICES_DONE</Tag>
         <English>Milord, we are now the leader in the trade of [COLOR_FONT_GOLD]spices[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Gewürze[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gewürze[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]специй[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7541,7 +7541,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SPICES_DONE</Tag>
         <English>Milord, we have managed to become dominant in the trade of [COLOR_FONT_GOLD]spices[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Gewürze[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gewürze[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]специй[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
@@ -7553,7 +7553,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SILVER_DONE</Tag>
         <English>Milord, we now are on top of the [COLOR_FONT_GOLD]silver[COLOR_REVERT] trade from Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Silber[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Silber[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]серебра[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7571,7 +7571,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SILVER_DONE</Tag>
         <English>Milord, we are now first in the [COLOR_FONT_GOLD]silver[COLOR_REVERT] trade from Port Royal. The Captains Council of Port Royal is enjoying his profits.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Silber[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Silber[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]серебра[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
@@ -7583,7 +7583,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SALT_DONE</Tag>
         <English>Milord, we have managed to become the leader in the Port Royal [COLOR_FONT_GOLD]salt[COLOR_REVERT] trade.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Salz[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Salz[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]соли[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7600,8 +7600,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SALT_DONE</Tag>
-        <English>Milord, we have managed to become the leader trading in [COLOR_FONT_GOLD]salt[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is well pleased.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Salz[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
+        <English>A European Nation managed to become the leader trading in [COLOR_FONT_GOLD]salt[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is well pleased.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Salz[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]соли[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
@@ -7613,7 +7613,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_RUM_DONE</Tag>
         <English>Milord, we now dominate the Port Royal [COLOR_FONT_GOLD]rum[COLOR_REVERT] trade.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Rum[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rum[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]рома[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7631,7 +7631,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_RUM_DONE</Tag>
         <English>Milord, we are now the leader in the Port Royal [COLOR_FONT_GOLD]rum[COLOR_REVERT] market. The Captains Council of Port Royal shows his pleasure.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Rum[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rum[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]рома[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
@@ -7643,7 +7643,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GOLD_DONE</Tag>
         <English>Milord, we have managed to dominate trading in [COLOR_FONT_GOLD]gold[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Gold[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gold[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]золота[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7661,7 +7661,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GOLD_DONE</Tag>
         <English>Milord, we now lead trading in [COLOR_FONT_GOLD]gold[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is delighted.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Gold[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gold[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]золота[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
@@ -7673,7 +7673,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GEMS_DONE</Tag>
         <English>Milord, we have managed to become the leader trading [COLOR_FONT_GOLD]gems[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7690,8 +7690,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GEMS_DONE</Tag>
-        <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]gems[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is very happy.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
+        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]gems[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is very happy.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
@@ -7702,8 +7702,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_DONE</Tag>
-        <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]furniture[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]furniture[COLOR_REVERT] with Port Royal.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]мебели[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7721,7 +7721,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_DONE</Tag>
         <English>Milord, we have managed to become dominant in the trade of [COLOR_FONT_GOLD]furniture[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]мебели[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
@@ -7732,8 +7732,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_DONE</Tag>
-        <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]coffee[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]coffee[COLOR_REVERT] with Port Royal.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кофе[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7750,8 +7750,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]coffee[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal finds himself energized.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]coffee[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal finds himself energized.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]кофе[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
@@ -7763,7 +7763,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCOA_DONE</Tag>
         <English>Milord, we have managed to become the leader in the Port Royal [COLOR_FONT_GOLD]cocoa[COLOR_REVERT] trade.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]какао[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7781,7 +7781,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCOA_DONE</Tag>
         <English>Milord, we are now the leader in the Port Royal [COLOR_FONT_GOLD]cocoa[COLOR_REVERT] trade. The Captains Council of Port Royal is quite pleased.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]какао[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
@@ -7792,8 +7792,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE</Tag>
-        <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Port Royal.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7811,7 +7811,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE</Tag>
         <English>Milord, we have managed to dominate the trade in [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is excited.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
@@ -7822,8 +7822,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_WINE_DONE</Tag>
-        <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]wine[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Wein[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]wine[COLOR_REVERT] with Port Royal.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Wein[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]вина[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7841,7 +7841,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_WINE_DONE</Tag>
         <English>Milord, we have managed to become dominant in the Port Royal [COLOR_FONT_GOLD]wine[COLOR_REVERT] trade. The Captains Council of Port Royal is happy and relaxed.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Wein[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Wein[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]вина[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
     <TEXT>
@@ -7853,7 +7853,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_HARDWOOD_DONE</Tag>
         <English>Milord, we are now the leader in the Port Royal [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] trade.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7871,7 +7871,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_HARDWOOD_DONE</Tag>
         <English>Milord, we have managed to become dominant in the trade of [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7883,7 +7883,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FOOD_DONE</Tag>
         <English>Milord, we have managed to become the leader trading [COLOR_FONT_GOLD]food[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7901,7 +7901,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_FOOD_DONE</Tag>
         <English>Milord, we have managed to dominate the trade in [COLOR_FONT_GOLD]food[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7913,7 +7913,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_STONE_DONE</Tag>
         <English>Milord, we are now the lead trader of [COLOR_FONT_GOLD]stone[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7931,7 +7931,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_STONE_DONE</Tag>
         <English>Milord, we are now the lead trader of [COLOR_FONT_GOLD]stone[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7942,8 +7942,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]lumber[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]lumber[COLOR_REVERT] with Port Royal.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7961,7 +7961,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_DONE</Tag>
         <English>Milord, we are now the lead trader in [COLOR_FONT_GOLD]lumber[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7973,7 +7973,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CLAY_DONE</Tag>
         <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]clay[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]глины[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -7990,8 +7990,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CLAY_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]clay[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]clay[COLOR_REVERT] with Port Royal.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]глины[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -8003,7 +8003,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE</Tag>
         <English>Milord, we are now the lead trader in [COLOR_FONT_GOLD]baked goods[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]хлебобулочных изделий[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -8021,7 +8021,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE</Tag>
         <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]baked goods[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]хлебобулочных изделий[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -8032,8 +8032,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BEER_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]beer[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]beer[COLOR_REVERT] with Port Royal.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]пива[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -8050,8 +8050,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BEER_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]beer[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]beer[COLOR_REVERT] with Port Royal.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пива[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -8063,7 +8063,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_HOOCH_DONE</Tag>
         <English>W are now the top trader in [COLOR_FONT_GOLD]fruit brandy[COLOR_REVERT] from PortRoyal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -8080,8 +8080,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_HOOCH_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]fruit brandy[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]fruit brandy[COLOR_REVERT] with Port Royal.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -8092,8 +8092,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_YERBA_TEA_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]чая[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -8110,8 +8110,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_YERBA_TEA_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]чая[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -8122,8 +8122,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Port Royal.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -8141,7 +8141,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
         <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -8152,8 +8152,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_RICE_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]rice[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]rice[COLOR_REVERT] with Port Royal.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]риса[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -8170,8 +8170,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_RICE_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]rice[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]rice[COLOR_REVERT] with Port Royal.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]риса[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -8183,7 +8183,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CASSAVA_DONE</Tag>
         <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]cassava[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]маниоки[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -8201,7 +8201,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CASSAVA_DONE</Tag>
         <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]cassava[COLOR_REVERT] with Port Royal.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Port Royal zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]маниоки[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
@@ -8272,8 +8272,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_FOOD_DONE</Tag>
-        <English>Milord, we now lead the trade in [COLOR_FONT_GOLD]food[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Nahrung[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation succeeded to become the market leader for [COLOR_FONT_GOLD]food[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Nahrung[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8290,8 +8290,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_FOOD_DONE</Tag>
-        <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]food[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Nahrung[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]food[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Nahrung[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8303,7 +8303,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_LUMBER_DONE</Tag>
         <English>Milord, we have managed to become dominant in the African [COLOR_FONT_GOLD]lumber[COLOR_REVERT] trade.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Holz[COLOR_REVERT] mit Afrika zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Holz[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8320,8 +8320,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_LUMBER_DONE</Tag>
-        <English>Milord, we now lead the trade in [COLOR_FONT_GOLD]lumber[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Holz[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation succeeded to become the market leader for [COLOR_FONT_GOLD]lumber[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Holz[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8332,8 +8332,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_STONE_DONE</Tag>
-        <English>Milord, we have managed to become the leader in the African [COLOR_FONT_GOLD]stone[COLOR_REVERT] trade.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become dominant in African [COLOR_FONT_GOLD]stone[COLOR_REVERT] trade.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8350,8 +8350,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_STONE_DONE</Tag>
-        <English>Milord, we have managed to become the leader in the trade of African [COLOR_FONT_GOLD]stone[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation  managed to become the leader in the trade of African [COLOR_FONT_GOLD]stone[COLOR_REVERT].</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8362,8 +8362,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_HORSES_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]horses[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Pferden[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]horses[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Pferden[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]лошадей[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8381,7 +8381,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_HORSES_DONE</Tag>
         <English>Milord, we now control the trade in African [COLOR_FONT_GOLD]horses[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Pferden[COLOR_REVERT] mit Afrika zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Pferden[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]лошадей[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8393,7 +8393,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_ORE_DONE</Tag>
         <English>Milord, we lead the trade in [COLOR_FONT_GOLD]ore[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Erzen[COLOR_REVERT] mit Afrika zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Erzen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]руды[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8411,7 +8411,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_ORE_DONE</Tag>
         <English>Milord, we have managed to dominate the trade in [COLOR_FONT_GOLD]ore[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Erzen[COLOR_REVERT] mit Afrika zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Erzen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]руды[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8423,7 +8423,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_SILVER_DONE</Tag>
         <English>Milord, we are now first in the African[COLOR_FONT_GOLD]silver[COLOR_REVERT] trade.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Silber[COLOR_REVERT] mit Afrika zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Silber[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]серебра[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8440,8 +8440,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_SILVER_DONE</Tag>
-        <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]silver[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Silber[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]silver[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Silber[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]серебра[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8452,8 +8452,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_CATTLE_DONE</Tag>
-        <English>Milord, we now lead the trade in African [COLOR_FONT_GOLD]cattle[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Rindern[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation succeeded to become the market leader for trade with [COLOR_FONT_GOLD]cattle[COLOR_REVERT] in Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rindern[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]коров[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8470,8 +8470,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_CATTLE_DONE</Tag>
-        <English>Milord, we have managed to become the leader in the trade of African [COLOR_FONT_GOLD]cattle[COLOR_REVERT].</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Rindern[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation  managed to become the leader in the trade of African [COLOR_FONT_GOLD]cattle[COLOR_REVERT].</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rindern[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]коров[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8482,8 +8482,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_SHEEP_DONE</Tag>
-        <English>Milord, we have managed to become dominant in African [COLOR_FONT_GOLD]sheep[COLOR_REVERT] trading.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Schafen[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become dominant in African [COLOR_FONT_GOLD]sheep[COLOR_REVERT] trading.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schafen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]овец[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8500,8 +8500,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_SHEEP_DONE</Tag>
-        <English>Milord, we have managed to become the leader in the African [COLOR_FONT_GOLD]sheep[COLOR_REVERT] trade.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Schafen[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become dominant in African [COLOR_FONT_GOLD]sheep[COLOR_REVERT] trade.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schafen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]овец[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8512,8 +8512,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_TOOLS_DONE</Tag>
-        <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]tools[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Werkzeugen[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]tools[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Werkzeugen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]инструментов[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8530,8 +8530,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_TOOLS_DONE</Tag>
-        <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]tools[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Werkzeugen[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]tools[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Werkzeugen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]инструментов[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8542,8 +8542,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_GUNS_DONE</Tag>
-        <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]guns[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Schußwaffen[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]guns[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schußwaffen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8561,7 +8561,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_GUNS_DONE</Tag>
         <English>Milord, we have managed to become the leader trading [COLOR_FONT_GOLD]guns[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Schußwaffen[COLOR_REVERT] mit Afrika zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schußwaffen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8572,8 +8572,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_CLOTH_DONE</Tag>
-        <English>Milord, we are now dominant in the African [COLOR_FONT_GOLD]cloth[COLOR_REVERT] trade.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Stoffen[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become dominant in the African [COLOR_FONT_GOLD]cloth[COLOR_REVERT] trade.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Stoffen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]ткани[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8590,8 +8590,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_CLOTH_DONE</Tag>
-        <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]cloth[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Stoffen[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]cloth[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Stoffen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]ткани[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8602,8 +8602,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_SALT_DONE</Tag>
-        <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]salt[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Salz[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]salt[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Salz[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]соли[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8620,8 +8620,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_SALT_DONE</Tag>
-        <English>Milord, we have managed to become the leader in the trade of [COLOR_FONT_GOLD]salt[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Salz[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]salt[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Salz[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]соли[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8632,8 +8632,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_SPICES_DONE</Tag>
-        <English>Milord, we have managed to become the leader trading in [COLOR_FONT_GOLD]spices[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Gewürzen[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become the leader trading in [COLOR_FONT_GOLD]spices[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gewürzen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]специй[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8651,7 +8651,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_SPICES_DONE</Tag>
         <English>Milord, we have managed to become dominant in the trade of [COLOR_FONT_GOLD]spices[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Gewürzen[COLOR_REVERT] mit Afrika zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gewürzen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]специй[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8662,8 +8662,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COCA_LEAVES_DONE</Tag>
-        <English>Milord, we are now dominant in the African [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] trade.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Coca-Blättern[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become dominant in the African [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] trade.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Coca-Blättern[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8681,7 +8681,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COCA_LEAVES_DONE</Tag>
         <English>Milord, we have managed to dominate the trade in [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Coca-Blättern[COLOR_REVERT] mit Afrika zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Coca-Blättern[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8692,8 +8692,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE</Tag>
-        <English>Milord, we have managed to become the leader supplying [COLOR_FONT_GOLD]trading goods[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit afrikanischen [COLOR_FONT_GOLD]Handelsgütern[COLOR_REVERT] zu werden.</German>
+        <English>A European NAtoon managed to become the leader supplying [COLOR_FONT_GOLD]trading goods[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit afrikanischen [COLOR_FONT_GOLD]Handelsgütern[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]мануфактуры[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8711,7 +8711,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE</Tag>
         <English>Milord, we are now the leader handling [COLOR_FONT_GOLD]trading goods[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit afrikanischen [COLOR_FONT_GOLD]Handelsgütern[COLOR_REVERT] zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit afrikanischen [COLOR_FONT_GOLD]Handelsgütern[COLOR_REVERT] zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]мануфактуры[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8722,8 +8722,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COTTON_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]cotton[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]cotton[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]хлопка[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8741,7 +8741,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COTTON_DONE</Tag>
         <English>Milord, we are now the leading trader in [COLOR_FONT_GOLD]cotton[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] mit Afrika zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]хлопка[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8752,8 +8752,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_INDIGO_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]indigo[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]indigo[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]индиго[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8771,7 +8771,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_INDIGO_DONE</Tag>
         <English>Milord, we are now the leading trader of [COLOR_FONT_GOLD]indigo[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] mit Afrika zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]индиго[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8783,7 +8783,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_LOGWOOD_DONE</Tag>
         <English>Milord, we are now the leading trader in [COLOR_FONT_GOLD]logwood[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Blauholz[COLOR_REVERT] mit Afrika zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Blauholz[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]кампеша[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8801,7 +8801,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_LOGWOOD_DONE</Tag>
         <English>Milord, we are now the leading trader in [COLOR_FONT_GOLD]logwood[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Blauholz[COLOR_REVERT] mit Afrika zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Blauholz[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кампеша[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8813,7 +8813,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COCHINEAL_DONE</Tag>
         <English>Milord, we are now the leading trader in [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Cochenille-Schildläusen[COLOR_REVERT] mit Afrika zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Cochenille-Schildläusen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]кошенили[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8831,7 +8831,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COCHINEAL_DONE</Tag>
         <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Cochenille-Schildläusen[COLOR_REVERT] mit Afrika zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Cochenille-Schildläusen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кошенили[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8843,7 +8843,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COFFEE_BERRIES_DONE</Tag>
         <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]coffee berries[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] mit Afrika zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]кофейных ягод[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8861,7 +8861,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COFFEE_BERRIES_DONE</Tag>
         <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]coffee berries[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] mit Afrika zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кофейных ягод[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8873,7 +8873,7 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_PEANUTS_DONE</Tag>
         <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] mit Afrika zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]арахиса[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8891,7 +8891,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_PEANUTS_DONE</Tag>
         <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] mit Afrika zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]арахиса[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8902,8 +8902,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_RED_PEPPER_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]rotem Pfeffer[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]rotem Pfeffer[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]красного перца[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8921,7 +8921,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_RED_PEPPER_DONE</Tag>
         <English>Milord, we are now the dominant trader in [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]rotem Pfeffer[COLOR_REVERT] mit Afrika zu werden.</German>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]rotem Pfeffer[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]красного перца[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8932,8 +8932,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_VANILLA_PODS_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]green vanilla pods[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]grünen Vanilleschoten[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]green vanilla pods[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]grünen Vanilleschoten[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]стручков ванили[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8950,8 +8950,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_VANILLA_PODS_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]green vanilla pods[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]grünen Vanilleschoten[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]green vanilla pods[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]grünen Vanilleschoten[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]стручков ванили[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8962,8 +8962,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_MAPLE_SIRUP_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Ahornsaft[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Ahornsaft[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]кленового сиропа[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8980,8 +8980,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_MAPLE_SIRUP_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Ahornsaft[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Ahornsaft[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кленового сиропа[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -8992,8 +8992,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_KAUTSCHUK_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]rubber[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]rubber[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]каучука[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -9010,8 +9010,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_KAUTSCHUK_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]rubber[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]rubber[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]каучука[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -9022,8 +9022,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_HARDWOOD_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -9040,8 +9040,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_HARDWOOD_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -9052,8 +9052,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -9070,8 +9070,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -9082,8 +9082,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_BLADES_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]blades[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]blades[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -9100,8 +9100,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_BLADES_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]blades[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]blades[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -9112,8 +9112,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_CANNONS_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel von [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
     <TEXT>
@@ -9130,8 +9130,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_CANNONS_DONE</Tag>
-        <English>Milord, we are now the top trader in [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Africa.</English>
-        <German>Milord, es ist uns gelungen, der Marktführer für den Handel mit [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] mit Afrika zu werden.</German>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Africa.</English>
+        <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
 </Civ4GameText>
