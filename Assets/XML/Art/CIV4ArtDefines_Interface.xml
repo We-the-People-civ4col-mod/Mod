@@ -834,5 +834,9 @@
             <Type>INTERFACE_DOMESTIC_MARKET</Type>
             <Path>Art/Interface/Screens/City_Management/button_market.dds</Path>
         </InterfaceArtInfo>
+        <InterfaceArtInfo>
+            <Type>INTERFACE_SHOW_OR_HIDE_YIELDS</Type>
+            <Path>Art/Interface/Game Hud/Actions/Toggle_Goods_Rows.dds</Path>
+        </InterfaceArtInfo>
     </InterfaceArtInfos>
 </Civ4ArtDefines>

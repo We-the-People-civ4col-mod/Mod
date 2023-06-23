@@ -139,6 +139,7 @@ RESOURCE_TABLE_COLUMN_WIDTH = -1
 RESOURCE_TABLE_MARGIN = -1
 
 AVOID_GROWTH = -1
+SHOW_ALL_YIELDS = -1
 
 # R&R, Robert Surcouf, No More Variables Hidden game option START
 #HELPTEXT_AREA_Y_MARGIN = 8
@@ -237,6 +238,7 @@ SHIP_MANAGMENT_PANEL_UP = False
 AUTOMATION_MANAGMENT_PANEL_UP = False
 MAP_MANAGMENT_PANEL_UP = False
 GARRISON_MANAGMENT_PANEL_UP = False
+SHOW_ALL_YIELDS = True
 
 # HIDE TYPE
 HIDE_TYPE_CITY = 0
@@ -556,6 +558,10 @@ class CvMainInterface:
 		if (CyGame().isPitbossHost()):
 			return
 
+		self.TableYields = []
+		for iYield in range(YieldTypes.NUM_YIELD_TYPES):
+			if gc.getYieldInfo(iYield).isCargo():
+				self.TableYields.append(iYield)
 	# GLOBAL NUM VARIABLES SET
 		global g_NumEmphasizeInfos
 		global g_NumHurryInfos
@@ -879,6 +885,8 @@ class CvMainInterface:
 		self.appendtoHideState(screen, "LockCitizens", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
 
 	# RESOURCE TABLE
+		screen.setImageButton("AutomateCitizens", ArtFileMgr.getInterfaceArtInfo("INTERFACE_CITY_AUTOMATE_CITIZENS").getPath(), yResolution - BOTTOM_CENTER_HUD_HEIGHT, xResolution - SMALL_BUTTON_SIZE, SMALL_BUTTON_SIZE * 2, SMALL_BUTTON_SIZE * 2, WidgetTypes.WIDGET_AUTOMATE_CITIZENS, 1, -1)
+		#self.appendtoHideState(screen, "AutomateCitizens", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
 		screen.addScrollPanel("ResourceTable", u"", 0, yResolution - BOTTOM_CENTER_HUD_HEIGHT, xResolution, BOTTOM_CENTER_HUD_HEIGHT, PanelStyles.PANEL_STYLE_STANDARD, false, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		screen.hide("ResourceTable")
 		
@@ -886,15 +894,10 @@ class CvMainInterface:
 		self.RESOURCE_LABELS[0] = localText.getText("TXT_KEY_SCREEN_STORED", ())
 		self.RESOURCE_LABELS[1] = localText.getText("TXT_KEY_SCREEN_NET", ())
 		
-		TableYields = []
-		for iYield in range(YieldTypes.NUM_YIELD_TYPES):
-			if gc.getYieldInfo(iYield).isCargo():
-				TableYields.append(iYield)
-
 		global RESOURCE_TABLE_COLUMN_WIDTH
-		RESOURCE_TABLE_COLUMN_WIDTH = int((xResolution) / len(TableYields))
+		RESOURCE_TABLE_COLUMN_WIDTH = int((xResolution) / len(self.TableYields))
 		global RESOURCE_TABLE_MARGIN
-		RESOURCE_TABLE_MARGIN = int((xResolution - RESOURCE_TABLE_COLUMN_WIDTH * len(TableYields)) / 2)
+		RESOURCE_TABLE_MARGIN = int((xResolution - RESOURCE_TABLE_COLUMN_WIDTH * len(self.TableYields)) / 2)
 		ArtPath = ""
 
 # VET DynamicYieldsIcon - 1/15 - start
@@ -905,7 +908,7 @@ class CvMainInterface:
 		iK2 = 1
 		iK3 = 1
 		iMax = (xResolution * 2) / (yResolution * 33)
-		iNum = len(TableYields)
+		iNum = len(self.TableYields)
 		iY = yResolution - BOTTOM_CENTER_HUD_HEIGHT / iK1
 		if iNum > iMax:
 			if iNum % 3 == 1:
@@ -918,7 +921,7 @@ class CvMainInterface:
 			RESOURCE_TABLE_COLUMN_WIDTH = (xResolution - STACK_BAR_HEIGHT) / iNum
 			iK2 = 3
 			iK3 = 7
-			if len(TableYields) % 3 == 1:
+			if len(self.TableYields) % 3 == 1:
 				ixDelta = RESOURCE_TABLE_COLUMN_WIDTH / 2
 		self.iIconWidth = RESOURCE_TABLE_COLUMN_WIDTH
 		if iK2 == 3:
@@ -926,7 +929,7 @@ class CvMainInterface:
 			if RESOURCE_TABLE_COLUMN_WIDTH > iMax:
 				self.iIconWidth = iMax
 # VET DynamicYieldsIcon - 1/15 - end
-		for iYield in TableYields:
+		for iYield in self.TableYields:
 			szName = "BonusPane" + str(iYield)
 # VET DynamicYieldsIcon - 2/15 - start
 
@@ -954,9 +957,9 @@ class CvMainInterface:
 # VET DynamicYieldsIcon - 3/15 - start
 			#RWL, ray
 			#elif (iYield == (len(TableYields) - 1)):
-			elif (iYield - iDelta) == (len(TableYields) / 3 - 1): # WTP, ray, adjustments
+			elif (iYield - iDelta) == (len(self.TableYields) / 3 - 1): # WTP, ray, adjustments
 				ArtPath = ArtFileMgr.getInterfaceArtInfo("INTERFACE_BOX_END").getPath()
-			elif (iYield - iDelta) == ((len(TableYields) / 3) * 2 - 1): # WTP, ray, adjustments
+			elif (iYield - iDelta) == ((len(self.TableYields) / 3) * 2 - 1): # WTP, ray, adjustments
 				ArtPath = ArtFileMgr.getInterfaceArtInfo("INTERFACE_BOX_END").getPath()
 			#elif (iYield - iDelta) == (len(TableYields) / 2 - 1):
 				#ArtPath = ArtFileMgr.getInterfaceArtInfo("INTERFACE_BOX_END").getPath()
@@ -983,7 +986,7 @@ class CvMainInterface:
 				ArtPath = ArtFileMgr.getInterfaceArtInfo("INTERFACE_BOX_POS_START").getPath()
 # VET DynamicYieldsIcon - 6/15 - start
 			#elif (iYield == (len(TableYields) - 1)):
-			elif (iYield - iDelta) == (len(TableYields) - 1):
+			elif (iYield - iDelta) == (len(self.TableYields) - 1):
 # VET DynamicYieldsIcon - 6/15 - end
 				ArtPath = ArtFileMgr.getInterfaceArtInfo("INTERFACE_BOX_POS_END").getPath()
 			else:
@@ -1006,7 +1009,7 @@ class CvMainInterface:
 				ArtPath = ArtFileMgr.getInterfaceArtInfo("INTERFACE_BOX_NEG_START").getPath()
 # VET DynamicYieldsIcon - 9/15 - start
 			#elif (iYield == (len(TableYields) - 1)):
-			elif (iYield - iDelta) == (len(TableYields) - 1):
+			elif (iYield - iDelta) == (len(self.TableYields) - 1):
 # VET DynamicYieldsIcon - 9/15 - end
 				ArtPath = ArtFileMgr.getInterfaceArtInfo("INTERFACE_BOX_NEG_END").getPath()
 			else:
@@ -1041,7 +1044,7 @@ class CvMainInterface:
 		screen.addScrollPanel("CityReciveCargo", u"", 0, yResolution - BOTTOM_CENTER_HUD_HEIGHT, xResolution, BOTTOM_CENTER_HUD_HEIGHT, PanelStyles.PANEL_STYLE_MAIN, false, WidgetTypes.WIDGET_RECEIVE_MOVE_CARGO_TO_CITY, -1, -1 )
 		self.appendtoHideState(screen, "CityReciveCargo", HIDE_TYPE_CITY, HIDE_LEVEL_NORMAL)
 
-		for iYield in TableYields:
+		for iYield in self.TableYields:
 			screen.moveToFront("YieldIcon" + str(iYield))
 
 	# MAP YIELD EMPHASIZE
@@ -1235,8 +1238,12 @@ class CvMainInterface:
 		self.appendtoHideState(screen, "CityExitText", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
 
 	# GROWTH EMPHASIZE/DEMPHASIZE
-		screen.setImageButton("AvoidGrowth", ArtFileMgr.getInterfaceArtInfo("INTERFACE_BUTTONS_CANCEL").getPath(), xResolution * 1 / 100, CITY_TITLE_BAR_HEIGHT / 10, ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_EMPHASIZE, -1, AVOID_GROWTH)
+		screen.setImageButton("AvoidGrowth", ArtFileMgr.getInterfaceArtInfo("INTERFACE_BUTTONS_CANCEL").getPath(), 0, CITY_TITLE_BAR_HEIGHT / 10, ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_EMPHASIZE, -1, AVOID_GROWTH)
 		self.appendtoHideState(screen, "AvoidGrowth", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
+    
+    #Erik Resource table
+		screen.setImageButton("ShowOrHideYields", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SHOW_OR_HIDE_YIELDS").getPath(), 0, yResolution * 82 / 100, ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_HELP_SHOW_OR_HIDE_YIELDS, -1, -1)
+		self.appendtoHideState(screen, "ShowOrHideYields", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
 		
 	# Garrison and Transport Panel
 		screen.addScrollPanel("CityGarrisonPanel", u"", CITIZEN_BAR_WIDTH + (SMALL_BUTTON_SIZE / 8), yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT * 9 / 8 - 2, xResolution - CITIZEN_BAR_WIDTH - TRANSPORT_AREA_WIDTH + STACK_BAR_HEIGHT * 4 / 8, TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT / 3), PanelStyles.PANEL_STYLE_EMPTY, false, WidgetTypes.WIDGET_EJECT_CITIZEN, -1, -1 )	
@@ -1259,6 +1266,8 @@ class CvMainInterface:
 
 		# This should show the screen immidiately and pass input to the game
 		screen.showScreen(PopupStates.POPUPSTATE_IMMEDIATE, True)
+
+
 
 	# Will update the screen (every 250 MS)
 	def updateScreen( self ):
@@ -2344,7 +2353,7 @@ class CvMainInterface:
 												iProfession = iArrayProfession
 												bFirstYield = false
 											else:
-												iSecondYield = gc.getProfessionInfo(iArrayProfession).getYieldsProduced(0) #MultipleYieldsProduced Start
+												iSecondYield = gc.getProfessionInfo(iArrayProfession).getYieldsProduced(1) #MultipleYieldsProduced Start
 							
 							if (CityBuilding != -1 and iProfession != -1):
 								ButtonSize = LARGE_BUTTON_SIZE * 5 / 2
@@ -2665,8 +2674,8 @@ class CvMainInterface:
 						screen.hide( szString + "Icon")
 				
 				screen.show("ResourceTable")
-				for iYield in range(YieldTypes.NUM_YIELD_TYPES):
-					screen.show("YieldIcon" + str(iYield))
+				#for iYield in range(YieldTypes.NUM_YIELD_TYPES):
+				#	screen.show("YieldIcon" + str(iYield))
 
 			# CITY SCROLL BUTTONS
 				if (pHeadSelectedCity.getTeam() == gc.getGame().getActiveTeam()):
@@ -3086,11 +3095,6 @@ class CvMainInterface:
 			screen.hideList(RESOURCE_TABLE_HIDE)
 			return
 			
-		TableYields = []
-		for iYield in range(YieldTypes.NUM_YIELD_TYPES):
-			if gc.getYieldInfo(iYield).isCargo():
-				TableYields.append(iYield)
-
 # VET DynamicYieldsIcon - 12/15 - start
 		xDelta = 0
 		ixDelta = 0 
@@ -3098,7 +3102,7 @@ class CvMainInterface:
 		yDelta = CyInterface().determineWidth(self.setFontSize(u"0", 0)) * 3 / 2
 		iK1 = 2
 		iMax = (xResolution * 2) / (yResolution * 33) 
-		iNum = len(TableYields) 
+		iNum = len(self.TableYields) 
 		if iNum > iMax:
 			if iNum % 3 == 1:
 				iNum += 1
@@ -3107,12 +3111,12 @@ class CvMainInterface:
 			#RESOURCE_TABLE_COLUMN_WIDTH = (xResolution - STACK_BAR_HEIGHT * 2) / iNum
 			RESOURCE_TABLE_COLUMN_WIDTH = (xResolution - STACK_BAR_HEIGHT) / iNum
 			iK1 = 1
-			if len(TableYields) % 3 == 1:
+			if len(self.TableYields) % 3 == 1:
 				ixDelta = RESOURCE_TABLE_COLUMN_WIDTH / 2
 # VET DynamicYieldsIcon - 12/15 - end
 		pCity = CyInterface().getHeadSelectedCity()
 		if pCity != None:
-			for index in range(len(TableYields)):
+			for index in range(len(self.TableYields)):
 # VET DynamicYieldsIcon - 13/15 - start
 				if index >= 2 * iNum:
 					xDelta = ixDelta
@@ -3124,17 +3128,21 @@ class CvMainInterface:
 					iDelta = iNum
 					iK1 = 2
 # VET DynamicYieldsIcon - 13/15 - end
-				i = TableYields[index]
+				i = self.TableYields[index]
 				iStored = pCity.getYieldStored(i)
 				iRate = pCity.calculateNetYield(i)
 				
 				# ray, making special storage capacity rules for Yields XML configurable
 				bIgnoredForStorageCapacity = gc.getYieldInfo(i).isIgnoredForStorageCapacity()
 				# if (iStored > pCity.getMaxYieldCapacity() and i != int(YieldTypes.YIELD_FOOD) and i != int(YieldTypes.YIELD_LUMBER) and i != int(YieldTypes.YIELD_STONE)): # WTP, ray, fix for unnecessary red colour of more Stone or Lumber stored than total Storage
+				szStored = ""
 				if (iStored > pCity.getMaxYieldCapacity() and not bIgnoredForStorageCapacity):
 					szStored = u"<color=255,0,0>%d</color>" %(iStored)
 				else:
-					szStored = u"<color=0,255,255>%d</color>" %(iStored)
+					if iStored == 0:
+						szStored = u""
+					else:
+						szStored = u"<color=0,255,255>%d</color>" %(iStored)
 				szRate = u"%d" %(iRate)
 				if(iRate > 0):
 					szRate = u"<color=0,255,0>+" + szRate + u"</color>"
@@ -3144,10 +3152,6 @@ class CvMainInterface:
 					szRate = u"<color=255,255,0>" + szRate + u"</color>"
 
 				szStorageLabel = "YieldStoredlabel" + str(i)
-# VET DynamicYieldsIcon - 14/15 - start
-				#szStored = self.setFontSize(szStored, 0)
-				#szRate = self.setFontSize(szRate, 0)
-				#screen.setLabel(szStorageLabel, "", self.setFontSize(szStored, 1), CvUtil.FONT_CENTER_JUSTIFY, STACK_BAR_HEIGHT + (i * RESOURCE_TABLE_COLUMN_WIDTH) + (RESOURCE_TABLE_COLUMN_WIDTH / 2), yResolution - (STACK_BAR_HEIGHT * 3), -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_RECEIVE_MOVE_CARGO_TO_CITY, -1, -1 )
 				iX = STACK_BAR_HEIGHT + ((index - iDelta) * RESOURCE_TABLE_COLUMN_WIDTH) + (RESOURCE_TABLE_COLUMN_WIDTH / 2) + xDelta
 				iY = yResolution - BOTTOM_CENTER_HUD_HEIGHT / iK1 + self.iIconWidth - yResolution / 25
 				# WTP, ray, 3 rows
@@ -3156,15 +3160,16 @@ class CvMainInterface:
 				elif (iK1 == 3):
 					iY = yResolution - BOTTOM_CENTER_HUD_HEIGHT / 3 + self.iIconWidth - yResolution / 25
 				screen.setLabel(szStorageLabel, "", self.setFontSize(szStored, 0), CvUtil.FONT_CENTER_JUSTIFY, iX, iY, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_RECEIVE_MOVE_CARGO_TO_CITY, -1, -1 )
-# VET DynamicYieldsIcon - 14/15 - start
 				ResourceHideList.append(szStorageLabel)
 				szRateLabel = "YieldNetlabel" + str(i)
-# VET DynamicYieldsIcon - 15/15 - start
-				#screen.setLabel(szRateLabel, "", self.setFontSize(szRate, 1), CvUtil.FONT_CENTER_JUSTIFY, STACK_BAR_HEIGHT + (i * RESOURCE_TABLE_COLUMN_WIDTH) + (RESOURCE_TABLE_COLUMN_WIDTH / 2), yResolution - (STACK_BAR_HEIGHT * 2), -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_RECEIVE_MOVE_CARGO_TO_CITY, -1, -1 )
 				iY += yDelta
 				screen.setLabel(szRateLabel, "", self.setFontSize(szRate, 0), CvUtil.FONT_CENTER_JUSTIFY, iX, iY, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_RECEIVE_MOVE_CARGO_TO_CITY, -1, -1 )
-# VET DynamicYieldsIcon - 15/15 - start
 				ResourceHideList.append(szRateLabel)
+				
+				if SHOW_ALL_YIELDS == False and iStored == 0 and iRate == 0:
+					screen.hide("YieldIcon" + str(index))
+				else:
+					screen.show("YieldIcon" + str(index))
 
 				screen.registerHideList(ResourceHideList, len(ResourceHideList), RESOURCE_TABLE_HIDE)
 			
@@ -3202,6 +3207,8 @@ class CvMainInterface:
 				screen.overlayButtonGFC("AvoidGrowth", ArtFileMgr.getInterfaceArtInfo("INTERFACE_HIGHLIGHTED_BUTTON").getPath())
 			else:
 				screen.overlayButtonGFC("AvoidGrowth", None)
+			#screen.hide("YieldIcon0")
+			#screen.hide("YieldIcon1")
 
 	# Will update the info pane strings
 	def updateInfoPaneStrings( self ):
@@ -3499,8 +3506,6 @@ class CvMainInterface:
 					screen.enableSelect("ScoreBackground", False)
 					screen.setTableColumnHeader("ScoreBackground", 0, "", iWidth - 10)
 			
-				#i = gc.getMAX_CIV_TEAMS() - 1
-				#while (i > -1):
 				i = 0
 				while (i < gc.getMAX_CIV_TEAMS()):
 					eTeam = gc.getGame().getRankTeam(i)
@@ -3816,6 +3821,8 @@ class CvMainInterface:
 		global BUILDING_MANAGMENT_PANEL_UP
 		global AUTOMATION_MANAGMENT_PANEL_UP
 		global MAP_MANAGMENT_PANEL_UP
+		global SHOW_ALL_YIELDS
+		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
 
 		if (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED):
 
@@ -3836,7 +3843,15 @@ class CvMainInterface:
 
 			elif (inputClass.getButtonType() == WidgetTypes.WIDGET_CLOSE_SCREEN):
 				CyInterface().clearSelectedCities()		
-			
+
+			elif (inputClass.getButtonType() == WidgetTypes.WIDGET_HELP_SHOW_OR_HIDE_YIELDS):
+				if SHOW_ALL_YIELDS == True:
+					SHOW_ALL_YIELDS = False
+					screen.overlayButtonGFC("ShowOrHideYields", ArtFileMgr.getInterfaceArtInfo("INTERFACE_HIGHLIGHTED_BUTTON").getPath())
+				else:
+					SHOW_ALL_YIELDS = True
+ 					screen.overlayButtonGFC("ShowOrHideYields", None)
+				self.updateResourceTable()
 # Achievements START
 			elif (inputClass.getButtonType() == WidgetTypes.WIDGET_GENERAL and inputClass.getData1() == ACHIEVE_ADVISOR_SCREEN_MI):
 				CvScreensInterface.showAchieveAdvisorScreen()

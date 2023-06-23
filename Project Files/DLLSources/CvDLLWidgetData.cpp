@@ -424,6 +424,9 @@ void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, CvWidgetDataStruct &w
 		break;
 	// WTP, ray, Widgets for Harbour System and Barracks System - END
 
+	case WIDGET_HELP_SHOW_OR_HIDE_YIELDS:
+		parseShowOrHideYieldsHelp(widgetDataStruct, szBuffer);
+		break;
 	}
 }
 
@@ -3010,6 +3013,14 @@ void CvDLLWidgetData::parseCityBarracksSystemHelp(CvWidgetDataStruct &widgetData
 }
 // WTP, ray, Widgets for Harbour System and Barracks System - END
 
+void CvDLLWidgetData::parseShowOrHideYieldsHelp(CvWidgetDataStruct& widgetDataStruct, CvWStringBuffer& szBuffer)
+{
+	CvCity* pHeadSelectedCity = gDLL->getInterfaceIFace()->getHeadSelectedCity();
+	if (pHeadSelectedCity != NULL)
+	{
+		szBuffer.append(gDLL->getText("TXT_KEY_RESOURCETABLE_SHOW_OR_HIDE_YIELDS"));
+	}
+}
 
 void CvDLLWidgetData::parseFlagHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer)
 {
