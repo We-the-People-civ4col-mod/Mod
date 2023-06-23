@@ -1236,7 +1236,7 @@ void CvSelectionGroup::continueMission(int iSteps)
 						break;
 
 					case MISSION_BUILD:
-						if (!groupBuild((BuildTypes)(headMissionQueueNode()->m_data.iData1)))
+						if (!groupBuild(headMissionQueueNode()->m_data.eBuild))
 						{
 							bDone = true;
 						}

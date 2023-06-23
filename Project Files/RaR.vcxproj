@@ -79,6 +79,7 @@
     <ClCompile Include="DLLSources\CvDiploParametersSavegames.cpp" />
     <ClCompile Include="DLLSources\CvDLLEngineIFaceBase.cpp" />
     <ClCompile Include="DLLSources\CvDLLInterfaceIFaceBase.cpp" />
+    <ClCompile Include="DLLSources\CvEnums.cpp" />
     <ClCompile Include="DLLSources\CvGameAISavegame.cpp" />
     <ClCompile Include="DLLSources\CvGameSavegame.cpp" />
     <ClCompile Include="DLLSources\CvPopupInfoSavegame.cpp" />
@@ -99,6 +100,7 @@
     <ClCompile Include="DLLSources\KmodPathFinder.cpp" />
     <ClCompile Include="DLLSources\OpenURL.cpp" />
     <ClCompile Include="DLLSources\Profile.cpp" />
+    <ClCompile Include="DLLSources\SavegameAlert.cpp" />
     <ClCompile Include="DLLSources\StartupErrorChecking.cpp" />
     <ClCompile Include="DLLSources\TestEnumMap.cpp" />
     <ClCompile Include="DLLSources\CvPlotFunctions.cpp" />
@@ -232,6 +234,7 @@
     <ClCompile Include="DLLSources\UserSettings.cpp" />
     <ClCompile Include="DLLSources\XMLLengthSet.cpp" />
     <ClCompile Include="DLLSources\_precompile.cpp" />
+    <ClCompile Include="DLLSources\PlayerHelperFunctions.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\AlertWindow.h" />
@@ -377,10 +380,13 @@
     <ClInclude Include="DLLSources\JustInTimeArray.h" />
     <ClInclude Include="DLLSources\LinkedList.h" />
     <ClInclude Include="DLLSources\resource.h" />
+    <ClInclude Include="DLLSources\SavegameAlert.h" />
+    <ClInclude Include="DLLSources\SavegameConstants.h" />
     <ClInclude Include="DLLSources\StartupErrorChecking.h" />
     <ClInclude Include="DLLSources\tinyxml2.h" />
     <ClInclude Include="DLLSources\UserSettings.h" />
     <ClInclude Include="DLLSources\xmlFiles.h" />
+    <ClInclude Include="DLLSources\PlayerHelperFunctions.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DLLSources\CvGameCoreDLL.def" />

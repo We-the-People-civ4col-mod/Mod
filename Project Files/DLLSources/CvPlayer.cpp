@@ -3118,11 +3118,11 @@ CvCity* CvPlayer::buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitT
 		CvCity* locationToAppear = NULL;
 		CvCity* pLoopCity = NULL;
 
-		if(eLocationFlags == LocationFlags::LocationFlagNone)
+		if(eLocationFlags.none)
 		{
 			locationToAppear = firstCity(&iLoop);
 		}
-		else if (eLocationFlags == LocationFlags::LocationFlagDeepCoastal)
+		if (locationToAppear == NULL && eLocationFlags.deepCoastal)
 		{
 			for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 			{
@@ -3133,7 +3133,7 @@ CvCity* CvPlayer::buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitT
 				}
 			}
 		}
-		else if (eLocationFlags == LocationFlags::LocationFlagCoastal)
+		if (locationToAppear == NULL && eLocationFlags.coastal)
 		{
 			for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 			{
@@ -3144,7 +3144,7 @@ CvCity* CvPlayer::buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitT
 				}
 			}
 		}
-		else if (eLocationFlags == LocationFlags::LocationFlagInland)
+		if (locationToAppear == NULL && eLocationFlags.inland)
 		{
 			for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 			{
@@ -3156,12 +3156,27 @@ CvCity* CvPlayer::buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitT
 			}
 		}
 
-		if (locationToAppear != NULL)
+		if (locationToAppear != NULL || eLocationFlags.europe)
 		{
 			CvUnit* kBuyUnit = NULL;
+			const Coordinates coord = locationToAppear ? locationToAppear->coord() : Coordinates::invalidCoord();
 			for (int iI = 0; iI < iNumUnits; iI++)
 			{
-				kBuyUnit = initUnit(eUnitType, GC.getUnitInfo(eUnitType).getDefaultProfession(), locationToAppear->coord(), NO_UNITAI);
+				kBuyUnit = initUnit(eUnitType, GC.getUnitInfo(eUnitType).getDefaultProfession(), coord, NO_UNITAI);
+				if (!locationToAppear)
+				{
+					CvPlot* pStartingPlot = getStartingPlot();
+					if (GC.getUnitInfo(eUnitType).getDomainType() == DOMAIN_SEA && pStartingPlot != NULL)
+					{
+						kBuyUnit->setUnitTravelState(UNIT_TRAVEL_STATE_IN_EUROPE, false);
+						//add unit to map after setting Europe state so that it doesn't bump enemy units
+						kBuyUnit->addToMap(pStartingPlot->coord());
+					}
+					else
+					{
+						FAssertMsg(GC.getUnitInfo(eUnitType).getDomainType() != DOMAIN_SEA, "Player failed to create ship in Europe");
+					}
+				}
 			}
 
 			//pay
@@ -4383,8 +4398,12 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			// we have chosen one of the 2 Options that give us Royal Units
 			if(choice == 1 || choice == 2)
 			{
-				CvCity *locationToAppear = kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_ROYAL_INTERVENTIONS_SHIP", 1, "", 0, LocationFlags::LocationFlagDeepCoastal, false, false);
-				CvWString szBuffer = gDLL->getText("TXT_KEY_ROYAL_INTERVENTION_ACCEPTED", GC.getLeaderHeadInfo(GET_PLAYER(enemyID).getLeaderType()).getDescription(), locationToAppear->getNameKey());
+				LocationFlags location;
+				location.deepCoastal = true;
+				location.europe = true;
+				CvCity *locationToAppear = kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_ROYAL_INTERVENTIONS_SHIP", 1, "", 0, location, false, false);
+				CvWString locationName = locationToAppear != NULL ? locationToAppear->getNameKey() : gDLL->getText("TXT_KEY_CONCEPT_EUROPE");
+				CvWString szBuffer = gDLL->getText("TXT_KEY_ROYAL_INTERVENTION_ACCEPTED", GC.getLeaderHeadInfo(GET_PLAYER(enemyID).getLeaderType()).getDescription(), locationName.c_str());
 
 				kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_1", 1, szBuffer, 0, LocationFlags::LocationFlagDeepCoastal, false, false);
 				kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_2", 1, "", 0, LocationFlags::LocationFlagDeepCoastal, false, false);
@@ -5495,11 +5514,18 @@ int CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 
 	int iGold = kGoody.getGold() + GC.getGameINLINE().getSorenRandNum(kGoody.getGoldRand1(), "Goody Gold 1") + GC.getGameINLINE().getSorenRandNum(kGoody.getGoldRand2(), "Goody Gold 2");
 	iGold = iGold * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() / 100;
-	if ((pUnit != NULL) && pUnit->isNoBadGoodies())
+	// WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
+	// Comment about NO_BAD_GOODIES_GOLD_PERCENT: It is very bad style to have such hidden modifiers that are not visible to player
+	// now instead the GoldModifier at Unit below is used - thus the old logic is commented out
+	// if ((pUnit != NULL) && pUnit->isNoBadGoodies())
+	// {
+	//		iGold = iGold * GC.getDefineINT("NO_BAD_GOODIES_GOLD_PERCENT") / 100;
+	// }
+	if ((pUnit != NULL) && pUnit->getUnitInfo().getGoldFromGoodiesAndChiefsModifier() != 0)
 	{
-		iGold = iGold * GC.getDefineINT("NO_BAD_GOODIES_GOLD_PERCENT") / 100;
+		iGold = iGold + (iGold * pUnit->getUnitInfo().getGoldFromGoodiesAndChiefsModifier() / 100);
 	}
-
+	// WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - END
 	if (iGold != 0)
 	{
 		CvCity* pCity = pPlot->getPlotCity();
@@ -5573,7 +5599,9 @@ int CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 	int iRange = kGoody.getMapRange();
 	if ((pUnit != NULL) && pUnit->isNoBadGoodies())
 	{
-		iRange = iRange * GC.getDefineINT("NO_BAD_GOODIES_GOLD_PERCENT") / 100;
+		// WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
+		// iRange = iRange * GC.getDefineINT("NO_BAD_GOODIES_GOLD_PERCENT") / 100;
+		iRange = iRange * GC.getDefineINT("NO_BAD_GOODIES_MAP_RANGE_PERCENT") / 100;
 	}
 
 	if (iRange > 0)
@@ -6177,8 +6205,7 @@ bool CvPlayer::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool
 {
 	PROFILE_FUNC();
 
-	UnitClassTypes eUnitClass;
-	eUnitClass = ((UnitClassTypes)(GC.getUnitInfo(eUnit).getUnitClassType()));
+	const UnitClassTypes eUnitClass = GC.getUnitInfo(eUnit).getUnitClassType();
 
 	FAssert(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass) == eUnit);
 	if (GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass) != eUnit)
@@ -6320,7 +6347,7 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 
 int CvPlayer::getYieldProductionNeeded(UnitTypes eUnit, YieldTypes eYield) const
 {
-	UnitClassTypes eUnitClass = (UnitClassTypes)GC.getUnitInfo(eUnit).getUnitClassType();
+	const UnitClassTypes eUnitClass = GC.getUnitInfo(eUnit).getUnitClassType();
 	FAssert(NO_UNITCLASS != eUnitClass);
 
 	int iProductionNeeded = GC.getUnitInfo(eUnit).getYieldCost(eYield);
@@ -16355,7 +16382,7 @@ int CvPlayer::getEuropeUnitBuyPrice(UnitTypes eUnit, bool bIncrease) const
 	//iCost += GET_TEAM(getTeam()).getEuropeUnitsPurchased((UnitClassTypes) kUnit.getUnitClassType()) * kUnit.getEuropeCostIncrease();
 	if (bIncrease)
 	{
-		iCost += GET_TEAM(getTeam()).getUnitsPurchasedHistory((UnitClassTypes) kUnit.getUnitClassType()) * kUnit.getEuropeCostIncrease();
+		iCost += GET_TEAM(getTeam()).getUnitsPurchasedHistory(kUnit.getUnitClassType()) * kUnit.getEuropeCostIncrease();
 	}
 	// TAC - AI purchases military units - koma13 - END
 
@@ -17739,7 +17766,7 @@ int CvPlayer::getAfricaUnitBuyPrice(UnitTypes eUnit) const
 		return iCost;
 	}
 
-	iCost += GET_TEAM(getTeam()).getUnitsPurchasedHistory((UnitClassTypes) kUnit.getUnitClassType()) * kUnit.getAfricaCostIncrease();
+	iCost += GET_TEAM(getTeam()).getUnitsPurchasedHistory(kUnit.getUnitClassType()) * kUnit.getAfricaCostIncrease();
 
 	// WTP, ray, capping UnitBuyPrices at 200 percent - START
 	if (iCost > kUnit.getAfricaCost() * 2)
@@ -17846,7 +17873,7 @@ int CvPlayer::getPortRoyalUnitBuyPrice(UnitTypes eUnit) const
 		return iCost;
 	}
 
-	iCost += GET_TEAM(getTeam()).getUnitsPurchasedHistory((UnitClassTypes) kUnit.getUnitClassType()) * kUnit.getPortRoyalCostIncrease();
+	iCost += GET_TEAM(getTeam()).getUnitsPurchasedHistory(kUnit.getUnitClassType()) * kUnit.getPortRoyalCostIncrease();
 
 	// WTP, ray, capping UnitBuyPrices at 200 percent - START
 	if (iCost > kUnit.getPortRoyalCost() * 2)
@@ -19330,7 +19357,7 @@ UnitTypes CvPlayer::pickBestImmigrant()
 		{
 			const CvUnitInfo& kInfo = GC.getUnitInfo(eUnit);
 			int iWeight = kInfo.getImmigrationWeight();
-			for (int i = 0; i < getUnitClassImmigrated(static_cast<UnitClassTypes>(kInfo.getUnitClassType())); ++i)
+			for (int i = 0; i < getUnitClassImmigrated(kInfo.getUnitClassType()); ++i)
 			{
 				iWeight *= std::max(0, 100 - kInfo.getImmigrationWeightDecay());
 				iWeight /= 100;
@@ -19344,7 +19371,7 @@ UnitTypes CvPlayer::pickBestImmigrant()
 	FAssert(NO_UNIT != eBestUnit);
 	if (eBestUnit != NO_UNIT)
 	{
-		changeUnitClassImmigrated((UnitClassTypes) GC.getUnitInfo(eBestUnit).getUnitClassType(), 1);
+		changeUnitClassImmigrated(GC.getUnitInfo(eBestUnit).getUnitClassType(), 1);
 	}
 
 	return eBestUnit;
@@ -20825,7 +20852,7 @@ bool CvPlayer::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pr
 	}
 
 	//cases criminal or servant
-	int modcase = convUnit->getUnitInfo().getUnitClassType();
+	const UnitClassTypes modcase = convUnit->getUnitInfo().getUnitClassType();
 
 	//default case is servant
 	int mod = mod_serv;
@@ -22426,6 +22453,22 @@ void CvPlayer::checkForEuropeanPeace()
 		return;
 	}
 
+	//WTP, ray, fix to prevent European Peace triggering directly after European Wars - START
+	//if there was European Wars triggered at least half to the timer needs to have passed
+	if(m_iTimerEuropeanWars > GC.getTIMER_EUROPEAN_WARS() / 2)
+	{
+		return;
+	}
+	//WTP, ray, fix to prevent European Peace triggering directly after European Wars - END
+
+	//WTP, ray, fix to prevent European Peace triggering directly after Royal Interventions - START
+	//if there was Royal Interventions triggered at least half to the timer needs to have passed
+	if(m_iTimerRoyalInterventions > GC.getTIMER_ROYAL_INTERVENTIONS() / 2)
+	{
+		return;
+	}
+	//WTP, ray, fix to prevent European Peace triggering directly after Royal Interventions - START
+
 	int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 
 	int randomEuropePeaceValue = GC.getGameINLINE().getSorenRandNum(1000, "European Peace");
@@ -22517,6 +22560,14 @@ void CvPlayer::checkForRoyalIntervention()
 		m_iTimerRoyalInterventions = (m_iTimerRoyalInterventions - 1);
 		return;
 	}
+
+	//WTP, ray, fix to prevent Royal Intervention triggering directly after European Wars - START
+	//if there was European Wars triggered at least half to the timer needs to have passed
+	if(m_iTimerEuropeanWars > GC.getTIMER_EUROPEAN_WARS() / 2)
+	{
+		return;
+	}
+	//WTP, ray, fix to prevent European Peace triggering directly after European Wars - END
 
 	int randomRoyalInterventionValue = GC.getGameINLINE().getSorenRandNum(1000, "Royal Interventions");
 	int iRoyalInterventionChance = GC.getBASE_CHANCE_ROYAL_INTERVENTIONS();

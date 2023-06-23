@@ -73,19 +73,50 @@ struct DllExport GameTurnInfo
 
 struct DllExport OrderData
 {
+	friend void CyStructsPythonInterface1();
+private:
 	OrderTypes eOrderType;
-	int iData1;
-	int iData2;
+	union
+	{
+		int iData1;
+		UnitTypes m_unit;
+		BuildingTypes m_building;
+		FatherPointTypes m_fatherpoint;
+	};
+	union
+	{
+		int iData2;
+		UnitAITypes m_unitAI;
+	};
+public:
 	bool bSave;
+
+	OrderData();
+	OrderData(OrderTypes);
+
+	const OrderTypes getType() const;
+	UnitTypes& unit();
+	const UnitTypes unit() const;
+	UnitAITypes& unitAI();
+	const UnitAITypes unitAI() const;
+	BuildingTypes& building();
+	const BuildingTypes building() const;
+	FatherPointTypes& fatherpoint();
+	const FatherPointTypes fatherpoint() const;
 
 	void read(CvSavegameReader& reader);
 	void write(CvSavegameWriter& writer) const;
 };
+BOOST_STATIC_ASSERT(sizeof(OrderData) == 16);
 
 struct DllExport MissionData
 {
 	MissionTypes eMissionType;
-	int iData1;
+	union
+	{
+		int iData1;
+		BuildTypes eBuild;
+	};
 	int iData2;
 	int iFlags;
 	int iPushTurn;
@@ -97,7 +128,11 @@ struct DllExport MissionData
 struct DllExport TradeData
 {
 	TradeableItems m_eItemType;				//	What type of item is this
-	int m_iData1;											//	Any additional data?
+	union
+	{
+		int m_iData1;											//	Any additional data?
+		YieldTypes m_eYield;
+	};
 	IDInfo m_kTransport;
 	bool m_bOffering;									//	Is this item up for grabs?
 	bool m_bHidden;										//	Are we hidden?
@@ -127,8 +162,6 @@ struct EventTriggeredData
 
 	int getID() const;
 	void setID(int iID);
-	void read(FDataStreamBase* pStream);
-	void write(FDataStreamBase* pStream);
 
 	void read(CvSavegameReader& reader);
 	void write(CvSavegameWriter& writer) const;
@@ -150,9 +183,6 @@ struct PlotExtraYield
 	int m_iX;
 	int m_iY;
 	std::vector<int> m_aeExtraYield;
-
-	void read(FDataStreamBase* pStream);
-	void write(FDataStreamBase* pStream);
 
 	void read(CvSavegameReader& reader);
 	void write(CvSavegameWriter& writer) const;

@@ -177,6 +177,7 @@ const char* getSavedEnumNameGame(SavegameVariableTypes eType)
 	case GameSave_CultureVictoryCultureLevel: return "GameSave_CultureVictoryCultureLevel";
 
 	}
+	FAssertMsg(0, "Missing case");
 	return "";
 }
 

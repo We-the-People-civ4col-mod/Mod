@@ -310,6 +310,7 @@ const char* getSavedEnumNameCity(SavegameVariableTypes eType)
 		case CitySave_Oppressometer: return "CitySave_Oppressometer";
 		case CitySave_OppressometerGrowthModifier: return "CitySave_OppressometerGrowthModifier";
 	}
+	FAssertMsg(0, "Missing case");
 	return "";
 }
 

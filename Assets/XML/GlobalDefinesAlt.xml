@@ -58,6 +58,14 @@
 		<iDefineIntVal>2000</iDefineIntVal>
 	</Define>
 	<Define>
+		<DefineName>NO_BAD_GOODIES_MAP_RANGE_PERCENT</DefineName>
+		<iDefineIntVal>200</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>NO_BAD_GOODIES_EXPERIENCE_PERCENT</DefineName>
+		<iDefineIntVal>150</iDefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>NBMOD_REF_ENABLE</DefineName>
 		<iDefineIntVal>1</iDefineIntVal>
 	</Define>

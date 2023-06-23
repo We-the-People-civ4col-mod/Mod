@@ -12,6 +12,7 @@
 #include "CvIdVector.h"
 #include "CvTalkingHeadMessage.h"
 #include "CvTradeRouteGroup.h" //R&R mod, vetiarvind, trade groups
+#include "PlayerHelperFunctions.h"
 
 
 class CvDiploParameters;
@@ -33,14 +34,6 @@ typedef std::vector< std::pair<CivilizationTypes, LeaderHeadTypes> > CivLeaderAr
 class CvPlayer
 {
 public:
-
-enum LocationFlags {
-	LocationFlagNone 				= 0x0000,
-	LocationFlagCoastal 		= 0x0001,
-	LocationFlagDeepCoastal = 0x0002,
-	LocationFlagInland			= 0x0004
-};
-
 	// add support for AI and CivEffect calls
 	__forceinline CvPlayerAI& AI() { return (CvPlayerAI&)*this; }
 	__forceinline const CvPlayerAI& AI() const { return (CvPlayerAI&)*this; }

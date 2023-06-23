@@ -29,6 +29,7 @@ const char* getSavedEnumNameTradeRoute(SavegameVariableTypes eType)
 	case TradeRouteSave_DestinationCity: return "TradeRouteSave_DestinationCity";
 	case TradeRouteSave_Yield: return "TradeRouteSave_Yield";
 	}
+	FAssertMsg(0, "Missing case");
 	return "";
 }
 

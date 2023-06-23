@@ -61,6 +61,7 @@ const char* getSavedEnumNameMap(SavegameVariableTypes eType)
 	case Save_Areas: return "Save_Areas";
 	case Save_Plots: return "Save_Plots";
 	}
+	FAssertMsg(0, "Missing case");
 	return "";
 }
 

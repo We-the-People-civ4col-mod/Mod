@@ -160,6 +160,7 @@ const char* getSavedEnumNamePlot(SavegameVariableTypes eType)
 	case Save_eRiverNSDirection: return "Save_eRiverNSDirection";
 	case Save_eRiverWEDirection: return "Save_eRiverWEDirection";
 	case Save_eEurope: return "Save_eEurope";
+	case Save_bmRiverCrossing: return "Save_bmRiverCrossing";
 
 	case Save_plotCity: return "Save_plotCity";
 	case Save_workingCity: return "Save_workingCity";
@@ -172,7 +173,22 @@ const char* getSavedEnumNamePlot(SavegameVariableTypes eType)
 	case Save_DangerMap: return "Save_DangerMap";
 	case Save_Culture: return "Save_Culture";
 	case Save_CultureRangeForts: return "Save_CultureRangeForts";
+	case Save_FoundValue: return "Save_FoundValue";
+	case Save_PlayerCityRadiusCount: return "Save_PlayerCityRadiusCount";
+
+	case Save_VisibilityCount: return "Save_VisibilityCount";
+	case Save_RevealedOwner: return "Save_RevealedOwner";
+
+	case Save_CultureRangeCities: return "Save_CultureRangeCities";
+	case Save_InvisibleVisibilityCount: "Save_InvisibleVisibilityCount";
+
+	case Save_ScriptData: return "Save_ScriptData";
+
+	case Save_BuildProgress: return "Save_BuildProgress";
+
+	case Save_Units: return "Save_Units";
 	}
+	FAssertMsg(0, "Missing case");
 	return "";
 }
 

@@ -253,7 +253,7 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 	setGameTurnCreated(GC.getGameINLINE().getGameTurn());
 
 	GC.getGameINLINE().incrementUnitCreatedCount(getUnitType());
-	GC.getGameINLINE().incrementUnitClassCreatedCount((UnitClassTypes)(m_pUnitInfo->getUnitClassType()));
+	GC.getGameINLINE().incrementUnitClassCreatedCount(m_pUnitInfo->getUnitClassType());
 
 	updateOwnerCache(1);
 
@@ -552,7 +552,9 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 	FAssert(eCaptureProfession == NO_PROFESSION || !GC.getProfessionInfo(eCaptureProfession).isCitizen());
 	if (eCapturingPlayer != NO_PLAYER)
 	{
-		eCaptureUnitType = getCaptureUnitType(GET_PLAYER(eCapturingPlayer).getCivilizationType());
+		// WTP, ray, change because we want to capture Nation specific Units - START
+		// eCaptureUnitType = getCaptureUnitType(GET_PLAYER(eCapturingPlayer).getCivilizationType());
+		eCaptureUnitType = getUnitType();
 	}
 	YieldTypes eYield = getYield();
 
@@ -723,8 +725,8 @@ void CvUnit::updateOwnerCache(int iChange)
 
 	CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
 
-	GET_TEAM(getTeam()).changeUnitClassCount(((UnitClassTypes)(m_pUnitInfo->getUnitClassType())), iChange);
-	kPlayer.changeUnitClassCount(((UnitClassTypes)(m_pUnitInfo->getUnitClassType())), iChange);
+	GET_TEAM(getTeam()).changeUnitClassCount(m_pUnitInfo->getUnitClassType(), iChange);
+	kPlayer.changeUnitClassCount(m_pUnitInfo->getUnitClassType(), iChange);
 	kPlayer.changeAssets(getAsset() * iChange);
 	kPlayer.changePower(getPower() * iChange);
 	CvArea* pArea = area();
@@ -4257,19 +4259,12 @@ bool CvUnit::canLoadUnit(const CvUnit* pTransport, const CvPlot* pPlot, bool bCh
 	if (pTransport->getUnitInfo().isTroopShip() && isHuman())
 	{
 		// it is neither Goods nor a Slave
-		if (getSpecialUnitType() == NO_SPECIALUNIT && !canAttack() && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_GENERAL") && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL") && getUnitClassType() != GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT") && getUnitClassType() != GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN")  && getUnitInfo().getProductionWhenUsed() <= 0)
+		if (getSpecialUnitType() == NO_SPECIALUNIT && !canAttack() && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_GENERAL") && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL") && getUnitClassType() != GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT") && getUnitClassType() != GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN") && getUnitInfo().getProductionWhenUsed() <= 0)
 		{
 			return false;
 		}
 	}
 	// WTP, ray Treasure Ship - END
-
-
-//	if (!(pTransport->cargoSpaceAvailable(getSpecialUnitType(), getDomainType())))
-//	{
-//		return false;
-//	}
-	// PatchMod: Berth size END
 
 	if (pTransport->cargoSpace() < getUnitInfo().getRequiredTransportSize())
 	{
@@ -8384,7 +8379,7 @@ CvCity* CvUnit::getUpgradeCity(UnitTypes eUnit, bool bSearch, int* iSearchValue)
 		return NULL;
 	}
 
-	if (!upgradeAvailable(getUnitType(), ((UnitClassTypes)(kUnitInfo.getUnitClassType()))))
+	if (!upgradeAvailable(getUnitType(), kUnitInfo.getUnitClassType()))
 	{
 		return NULL;
 	}
@@ -8855,7 +8850,7 @@ BuildTypes CvUnit::getBuildType() const
 			break;
 
 		case MISSION_BUILD:
-			return (BuildTypes)pGroup->headMissionQueueNode()->m_data.iData1;
+			return pGroup->headMissionQueueNode()->m_data.eBuild;
 			break;
 
 		default:
@@ -10055,7 +10050,9 @@ int CvUnit::cargoSpaceAvailable(SpecialUnitTypes eSpecialCargo, DomainTypes eDom
 
 	if (domainCargo() != NO_DOMAIN)
 	{
-		if (domainCargo() != eDomainCargo)
+		// WTP, ray, Construction Supplies - START
+		//if (domainCargo() != eDomainCargo)
+		if (domainCargo() != eDomainCargo && eDomainCargo != DOMAIN_IMMOBILE)
 		{
 			return 0;
 		}
@@ -12737,7 +12734,7 @@ CvUnitInfo &CvUnit::getUnitInfo() const
 
 UnitClassTypes CvUnit::getUnitClassType() const
 {
-	return (UnitClassTypes)m_pUnitInfo->getUnitClassType();
+	return m_pUnitInfo->getUnitClassType();
 }
 
 UnitTypes CvUnit::getLeaderUnitType() const
@@ -16588,8 +16585,9 @@ bool CvUnit::isBarbarianUnitOnAdjacentPlotOfUnit(int /*UnitClassTypes*/ iIndex) 
 // Erik: We should come up with a XML tag (e.g. bJoin vs. bFound) so that we don't need to hard-code this
 bool CvUnit::isPrisonerOrSlave() const
 {
-	const int unitClassIntToBeChecked = m_pUnitInfo->getUnitClassType();
+	const UnitClassTypes unitClassIntToBeChecked = m_pUnitInfo->getUnitClassType();
 
+	// TODO: optimize this one to avoid using getDefineINT
 	if (unitClassIntToBeChecked == GC.getDefineINT("UNITCLASS_PRISONER") || unitClassIntToBeChecked == GC.getDefineINT("UNITCLASS_NATIVE_SLAVE") || unitClassIntToBeChecked == GC.getDefineINT("UNITCLASS_AFRICAN_SLAVE"))
 	{
 		return true;

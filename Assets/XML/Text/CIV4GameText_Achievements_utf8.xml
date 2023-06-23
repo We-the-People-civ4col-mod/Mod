@@ -2178,7 +2178,7 @@
         <English>His Majesty, your king, sovereign by the grace of God, has sent his representative to the New World to secure control over the colonies and to establish an orderly administration. So help us God![NEWLINE][NEWLINE]</English>
         <French>Sa Majesté, votre roi, souverain par la grâce de Dieu, a envoyé son représentant dans le Nouveau Monde pour s'assurer le contrôle des colonies et établir une administration ordonnée. Que Dieu nous aide ![NEWLINE][NEWLINE]</French>
         <German>Seine Majestät, Euer König, Herrscher von Gottes Gnaden, hat seinen Stellvertreter in die Neue Welt gesandt, um die Kontrolle über die Kolonien zu sichern und um eine geordnete Verwaltung aufzubauen. So helfe uns Gott![NEWLINE][NEWLINE]</German>
-        <Russian>Его Величество, ваш Король, державный по милости Божией, прислал своего представителя в Новый Свет, дабы обеспечить контроль над колониями и установить справедливое управление. Да поможет нам Бог![NEWLINE][NEWLINE]</Russian>
+        <Russian>Его Величество, ваш Король, державный по милости Божией, прислал своего представителя в Новый Свет, дабы обеспечить контроль над колониями и установить справедливое управление. Боже, храни Короля![NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_VETERANS</Tag>
@@ -3550,7 +3550,7 @@
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_HEAVY_ARTILLERY_TEXT</Tag>
         <English>Milord, from what we hear, the King is not thrilled with this buildup of heavy artillery in the colonies. In Europe, there is growing concern - not only with our own King - about what you actually intend to do with it. You don't really need that much heavy artillery to defend a colony, and you'd rather fight the savages with musket and bayonet. [NEWLINE][NEWLINE]So what do you want with it? Which nearby colony do you long for? Or would you go so far as to defy the King's army? Decide soon, before someone beats you to the punch.[NEWLINE][NEWLINE]</English>
         <German>Mylord, was man hört ist der König von dieser Ansammlung schwerer Artillerie in den Kolonien nicht begeistert. In Europa wächst die Sorge - nicht nur bei unserem eigenen König - was Ihr damit eigentlich vorhabt. So viel schwere Artillerie braucht man eigentlich nicht zur Verteidugung einer Kolonie und die Wilden bekämpft man eher mit Muskete und Bajonett. [NEWLINE][NEWLINE]Was also wollt Ihr damit? Nach welcher nahegelegenen Kolonie gelüstet es Euch? Oder wollt Ihr gar des Königs Armee die Stirn bieten? Ihr solltet Euch bald entscheiden, bevor Euch jemand zuvor kommt.[NEWLINE][NEWLINE]</German>
-	</TEXT>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_RELIGIOUS_ZEALOTS</Tag>
         <English>Several religious people</English>
@@ -3565,7 +3565,7 @@
         <Tag>TXT_KEY_ACHIEVE_RELIGIOUS_ZEALOTS_TEXT</Tag>
         <English>Milord, you've certainly noticed that a wide variety of religious nonconformists have settled in the colonies. Basically, the colonies are open to everyone as long as they work hard for the good of the colonies and do not cause trouble.[NEWLINE][NEWLINE]The only problem is that these people ended up here in the New World for a reason. That reason is that Europe didn't want them. Take care that they don't make trouble while they preach the word of God. If they endanger the welfare of the colonies, you might have to send them on their way again.[NEWLINE][NEWLINE]</English>
         <German>Mylord, mittlerweile haben sich in den Kolonien verschiedenste religiöse Vertriebene niedergelassen. Grundsätzlich stehen die Kolonien allen offen, solange sie hart für das Wohl der Kolonien arbeiten und keinen Ärger machen.[NEWLINE][NEWLINE]Das Problem ist nur, dass diese Leute aus gutem Grund hier in die neue Welt gekommen sind und man sie in Europa nicht mehr haben wollte. Achtet darauf, dass sie keinen Unfrieden stiften und nichts weiter tun als das Wort Gottes zu predigen. Sollten sie das Wohl der Kolonien gefährden, solltet Ihr Euch vielleicht wieder von Ihnen trennen. [NEWLINE][NEWLINE]</German>
-	</TEXT>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BISHOP</Tag>
         <English>The first bishop</English>
@@ -3580,7 +3580,7 @@
         <Tag>TXT_KEY_ACHIEVE_FIRST_BISHOP_TEXT</Tag>
         <English>Milord, the Church obviously feels that its flock in the New World needs more discipline and order. They have sent you a bishop to take command.[NEWLINE][NEWLINE]"The word is credible: whoever aspires to the office of a bishop aspires to a great task. Therefore, let the bishop be blameless, the husband of one wife, sober, prudent, of dignified bearing, hospitable, able to teach; let him not be a drunkard or a violent man, but considerate; let him not be quarrelsome or greedy for money.[NEWLINE][NEWLINE]He must preside well over his own house, educate his children in obedience and all decency. If one cannot preside over his own house, how can he take care of God's church? He must not be a new convert, lest he become haughty and fall into the devil's judgment. But he must also have a good reputation among outsiders, lest he come into ill repute and fall into the devil's trap." [NEWLINE][NEWLINE]</English>
         <German>Mylord, die Kirche ist offensichtlich der Meinung, dass ihre Schäfchen in der Neuen Welt ein wenig mehr Zucht und Ordnung benötigen. Man hat Euch einen Bischof geschickt, der das übernehmen soll. [NEWLINE][NEWLINE]"Das Wort ist glaubwürdig: Wer das Amt eines Bischofs anstrebt, der strebt nach einer großen Aufgabe. Deshalb soll der Bischof untadelig, Mann einer einzigen Frau, nüchtern, besonnen sein, von würdiger Haltung, gastfreundlich, fähig zu lehren; er sei kein Trinker und kein gewalttätiger Mensch, sondern rücksichtsvoll; er sei nicht streitsüchtig und nicht geldgierig.[NEWLINE][NEWLINE]Er muss seinem eigenen Haus gut vorstehen, seine Kinder in Gehorsam und allem Anstand erziehen. Wenn einer seinem eigenen Haus nicht vorstehen kann, wie soll der für die Kirche Gottes sorgen? Er darf kein Neubekehrter sein, damit er nicht hochmütig wird und dem Gericht des Teufels verfällt. Er muss aber auch bei den Außenstehenden einen guten Ruf haben, damit er nicht in üble Nachrede kommt und in die Falle des Teufels gerät. [NEWLINE][NEWLINE]</German>
-	</TEXT>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_NOBLE</Tag>
         <English>The third noble</English>
@@ -3595,7 +3595,7 @@
         <Tag>TXT_KEY_ACHIEVE_THIRD_NOBLE_TEXT</Tag>
         <English>Milord, it seems that your colonies are so successful that even the nobles are discovering the New World for themselves. It is now en vogue in Europe to spend time in the "adventurous" New World or to buy a country house here and organize hunts within sight of Indian camps. These nobles then have tales to tell back home.[NEWLINE][NEWLINE]That this place is teeming with hostile Natives, wild animals, unbearable climate and who knows what else doesn't dawn on most of them until they find themselves alone without servants and no one hands them the warmed towel or the sherry. Make sure you help them survive this surprising adventure. They can be very useful to you in the administration of your colony.[NEWLINE][NEWLINE]</English>
         <German>Mylord, es scheint, dass Eure Kolonien so erfolgreich sind, dass mittlerweile sogar etliche Adlige die Neue Welt für sich entdecken. Offenbar wird es in Europa gerade en vogue mal eine Zeit in der "abenteuerreichen" Neuen Welt zu verbringen oder sich hier ein Landhaus zuzulegen und Jagden in Sichtweite von Indianerlagern zu veranstalten. Dann hat man zuhause etwas zu berichten.[NEWLINE][NEWLINE]Dass es hier von feindlichen Ureinwohnern, wilden Tieren, unerträglichem Klima und wert weiß was sonst noch nur so wimmelt, dämmert den meisten erst, wenn sie hier ohne Diener dastehen und keiner ihnen das angewärmte Handtuch oder den Sherry reicht. Sorgt trotzdem dafür, dass dieses Abenteuer überleben. Sie werden Euch sehr nützlich bei der Verwaltung Eurer Kolonie sein.[NEWLINE][NEWLINE]</German>
-	</TEXT>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_SETTLER</Tag>
         <English>The third settler</English>
@@ -3610,7 +3610,7 @@
         <Tag>TXT_KEY_ACHIEVE_THIRD_SETTLER_TEXT</Tag>
         <English>Milord, the materials for the new settlement are piling up on the just-completed dock and the settlers are ready to leave. What are you waiting for?[NEWLINE][NEWLINE]The longer you wait, the more likely it is that the settlers here in the colony will catch some disease or scatter to the taverns and gambling dens at the harbour. You should get them on their way as soon as possible. Otherwise the best places for a new settlement will be snatched away by the competitors![NEWLINE][NEWLINE]</English>
         <German>Mylord, auf dem gerade erst fertiggestellten Dock stapeln sich die Materialien für die neue Siedlung und die Siedler sind bereit aufzubrechen. Worauf wartet Ihr denn noch?[NEWLINE][NEWLINE]Je länger Ihr wartet, desto eher stecken sich die Siedler hier in der Kolonie mit irgendwelchen Krankheiten an oder zerstreuen sich in die Wirtshäuser und Spielhöllen am Hafen. Ihr solltet sie möglichst bald auf den Weg bringen, damit Euch die besten Plätze für eine neue Siedlung nicht von der Konkurrenz weggeschnappt werden![NEWLINE][NEWLINE]</German>
-	</TEXT>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_PENAL_COLONY</Tag>
         <English>Twelve criminals</English>
@@ -3625,7 +3625,7 @@
         <Tag>TXT_KEY_ACHIEVE_PENAL_COLONY_TEXT</Tag>
         <English>Milord, the colony is slowly but surely becoming a penal colony. There are currently many criminals in the colony - too many, in fact. The prisons are overcrowded. You should intervene with the King so he stops sending you new convicts.[NEWLINE][NEWLINE]The problem in Europe is quickly solved as long as they can deport convicts here, but that may not be conducive to the success of this colony. Instead you should increase wages for real craftsmen to boost the production of goods![NEWLINE][NEWLINE]</English>
         <German>Mylord, die Kolonie entwickelt sich langsam aber sicher zu einer Strafkolonie. Es befinden sich derzeit viele Kriminelle in der Kolonie - zu viele, um genau zu sein. Die Gefängnisse sind überfüllt. Ihr solltet beim König intervenieren, Euch keine neuen Sträflinge mehr zu schicken.[NEWLINE][NEWLINE]In Europa ist das Problem schnell gelöst, wenn man die Sträflinge hierher abschieben kann, aber dem Erfolg der Kolonie ist das vielleicht nicht gerade zuträglich. Ihr solltet lieber das Handgeld für echte Handwerker erhöhen und zusehen, dass Ihr die Güterproduktion verstärkt![NEWLINE][NEWLINE]</German>
-	</TEXT>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ROASTING</Tag>
         <English>Roasting economy</English>
@@ -3666,225 +3666,582 @@
         <Tag>TXT_KEY_ACHIEVE_LOGWOOD_COLLECTORS</Tag>
         <English>Three logwood collectors</English>
         <German>Drei Blauholzsammler</German>
+        <Russian>Три сборщика кампеша</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_LOGWOOD_COLLECTORS_HEAD</Tag>
         <English>The jungle's rich colors</English>
         <German>Des Urwalds satte Farben</German>
+        <Russian>Яркие краски джунглей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_LOGWOOD_COLLECTORS_TEXT</Tag>
         <English>Milord, the primeval forest always holds new surprises. Not only does it offer an almost inexhaustible supply of good wood for building colonies, it also offers very special types of wood that can even be used to make paints.[NEWLINE][NEWLINE]You would do well to send your craftsmen with special skills in finding such wood species out into the jungle. Procure the wood, extract the dyes, and make fine fabrics! The new citizens of your colony will snatch them from your hands - or sell them for expensive money to Europe![NEWLINE][NEWLINE]</English>
         <German>Mylord, der Urwald birgt doch immer wieder neue Überraschungen. Er bietet nicht nur einen schier unerschöpflichen Vorrat an guten Hölzern für den Aufbau der Kolonien, er bietet auch ganz besonderte Holzarten, aus denen man sogar Farben herstellen kann.[NEWLINE][NEWLINE]Ihr tut gut daran, Eure Handwerker mit besonderen Fähigkeiten im Aufspüren solcher Holzarten in den Urwald ausschwärmen zu lassen. Beschafft Euch das Holz, extrahiert die Farben und stellt edle Stoffe her! Die neuen Bürger Eurer Kolonie werden sie Euch aus den Händen reißen - oder verkauft sie für teures Geld nach Europa![NEWLINE][NEWLINE]</German>
-	</TEXT>
+        <Russian>Милорд, первобытный лес всегда таит в себе новые сюрпризы. Мало того, что он предлагает почти неисчерпаемый запас хорошей древесины для строительства колоний. В некоторых местах находятся очень интересные породы дерева, которые можно использовать даже для изготовления красок.[NEWLINE][NEWLINE]Хорошо бы отправить в джунгли наших мастеров, обладающих специальными навыками в поиске таких пород дерева. Добывайте древесину, извлекайте красители и шейте прекрасные ткани! Новые жители вашей колонии вырвут их у вас из рук, ну или продадут за большие деньги в Европу![NEWLINE][NEWLINE]</Russian>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_FORTS</Tag>
         <English>Five forts</English>
         <German>Fünf Forts</German>
+        <Russian>Пять укреплений</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_FORTS_HEAD</Tag>
         <English>Palisades</English>
         <German>Palisaden</German>
+        <Russian>Бревенчатая защита</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_FORTS_TEXT</Tag>
         <English>Milord, once again you have completed a palisade and one of your cities is now much better protected.[NEWLINE][NEWLINE]Keep it up, then even the last savage will understand that there is nothing to get here. But don't overdo it with the deforestation, after all the trees have to grow again, so that our colonies and our new trading fleet will still find enough wood in 1-2 years.[NEWLINE][NEWLINE]</English>
         <German>Mylord, schon wieder habt Ihr eine Palisade fertiggestellt und eine Eurer Städte ist jetzt viel besser geschützt. [NEWLINE][NEWLINE]Macht nur weiter so, dann wird auch der letzte Wilde begreifen, dass es hier nichts zu holen gibt. Übertreibt es aber mit der Abholzung der Wälder auch nicht, immerhin müssen die Bäume ja auch wieder nachwachsen, damit unsere Kolonien und unsere neue Handelsflotte auch in 1-2 Jahren noch genug Holz vorfinden. [NEWLINE][NEWLINE]</German>
-	</TEXT>
+        <Russian>Милорд, мы построили еще одно укрепление и теперь один из наших городов стал лучше защищен.[NEWLINE][NEWLINE]Будем продолжать в том же духе и даже самый злобный дикарь поймет, что здесь он не прорвётся. Главное, не переусердствовать с вырубкой леса, ведь деревья должны снова отрасти, чтобы наши колонии и наш новый торговый флот находили достаточно древесины через некоторое время.[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_LAW_AND_ORDER</Tag>
         <English>Many court buildings</English>
         <German>Viele Gerichtsgebäude</German>
+        <Russian>Множество зданий суда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_LAW_AND_ORDER_HEAD</Tag>
         <English>Law and order</English>
         <German>Recht und Ordnung</German>
+        <Russian>Закон и порядок</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_LAW_AND_ORDER_TEXT</Tag>
         <English>Milord, law and order really rule in your colonies. Once again, you have completed a court building where small fish and big sharks...er I mean petty criminals and felons are brought to their just punishment.[NEWLINE][NEWLINE]However, you should also let people get away with something here and there. Life in the colonies is hard and many a person is fighting just for bare survival. The bigger the courthouse, the bigger the shadow it casts...[NEWLINE][NEWLINE]</English>
         <German>Mylord, in Euren Kolonien herrschen wirklich Recht und Ordnung. Schon wieder habt Ihr ein Gerichtsgebäude fertiggestellt, wo kleine Fische und große Haie...ähm ich meine Kleinkriminelle und Schwerverbrecher ihrer gerechten Strafe zugeführt werden.[NEWLINE][NEWLINE]Ihr solltet den Leuten allerdings auch hier und da mal was durchgehen lassen. Das Leben in den Kolonien ist hart und so manch einer kämpft nur ums nackte Überleben. Je größer das Gerichtsgebäude, desto größer auch der Schatten, den es wirft...[NEWLINE][NEWLINE]</German>
-	</TEXT>
+        <Russian>Милорд, в ваших колониях действительно царит закон и порядок. Построено очередное здание суда, где маленькие рыбы и большие акулы ... эээ, я хотел сказать, мелкие преступники и матёрые уголовники подвергаются справедливому наказанию.[NEWLINE][NEWLINE]Тем не менее, вы должны позволять людям делать что-то безнаказанно. Жизнь в колониях тяжела и некоторые люди просто борются за выживание. Да и чем больше здание суда, тем большую тень оно отбрасывает...[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SHIP_EQUIPMENT</Tag>
         <English>Many ship chandler</English>
         <German>Viele Schiffsausrüster</German>
+        <Russian>Множество корабельных мастеров</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SHIP_EQUIPMENT_HEAD</Tag>
         <English>Sails and ropes</English>
         <German>Segel und Seile</German>
+        <Russian>Паруса и канаты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SHIP_EQUIPMENT_TEXT</Tag>
-        <English>"[COLOR_SELECTED_TEXT]Alright guys, now listen to me[COLOR_REVERT]", the shipyard director intervenes forcefully, "[COLOR_SELECTED_TEXT]You both did a good job, but look at all the stuff that's still lying around. That ship there still needs to be fully equipped and that cart there also needs to be unloaded. Look, the buyer is already waiting impatiently and comes by every day. You can't just go to the next pub now![COLOR_REVERT][NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]So I'm done for today, my back hurts so much again[COLOR_REVERT]," the rope maker complains. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]But this does not come from braiding ropes,[COLOR_REVERT]", the sailmaker interjects laughing,[COLOR_SELECTED_TEXT]That's from all the visits to the harlots. The new redhead impresses you, admit it....[COLOR_REVERT]"[NEWLINE][NEWLINE]     </English>
+        <English>"[COLOR_SELECTED_TEXT]Alright guys, now listen to me[COLOR_REVERT]", the shipyard director intervenes forcefully, "[COLOR_SELECTED_TEXT]You both did a good job, but look at all the stuff that's still lying around. That ship there still needs to be fully equipped and that cart there also needs to be unloaded. Look, the buyer is already waiting impatiently and comes by every day. You can't just go to the next pub now![COLOR_REVERT][NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]So I'm done for today, my back hurts so much again[COLOR_REVERT]," the rope maker complains. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]But this does not come from braiding ropes,[COLOR_REVERT]", the sailmaker interjects laughing,[COLOR_SELECTED_TEXT]That's from all the visits to the harlots. The new redhead impresses you, admit it....[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Also gut Jungs, jetzt hört mir mal zu[COLOR_REVERT]", schreitet der Werftdirektor energisch ein, "[COLOR_SELECTED_TEXT]Ihr habt Eure Sache beide gut gemacht, aber schaut Euch das ganze Zeug an, dass hier noch rumliegt. Das Schiff da muss immer noch vollständig ausgerüstet werden und der Karren da muss auch noch abgeladen werden. Seht mal, der Käufer wartet schon ungeduldig und schaut jeden Tag hier vorbei. Ihr könnt doch jetzt nicht einfach in die nächste Kneipe gehen![COLOR_REVERT][NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Also ich bin fertig für heute, mein Rücken tut mir schon wieder so weh[COLOR_REVERT]," beschwert sich der Seilmacher. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das kommt aber nicht vom Seile flechten,[COLOR_REVERT]", wirft der Segelmacher lachend ein,[COLOR_SELECTED_TEXT]Das kommt von den vielen Besuchen bei den Animierdamen. Die neue Rothaarige hat es dir doch angetan, gib's ruhig zu....[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-	</TEXT>
+        <Russian>"[COLOR_SELECTED_TEXT]Хорошо, ребята, а теперь послушайте меня[COLOR_REVERT]" — говорит управляющий верфи своим работникам. "[COLOR_SELECTED_TEXT]Вы оба отлично потрудились, но работа еще далека от завершения. Тот корабль у дальнего причала всё ещё не полностью укомплектован, да и вон та телега у бочек до сих пор стоит не разгруженная. Покупатель с нетерпением приходит каждый день и ждёт окончания работ. Так что никаких хождений по тавернам - продолжаем![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]На сегодня я закончил, у меня опять и так сильно болит спина[COLOR_REVERT]" - жалуется мастер плетения канатов.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Вот только это не из-за плетения канатов,[COLOR_REVERT]" – смеясь, вставляет раскройщик парусины, "[COLOR_SELECTED_TEXT]а из-за визитов к блудницам. Признайся, новенькая рыжая вертихвостка произвела на тебя впечатление...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_CHARCOAL_POWDER</Tag>
         <English>Black powder production</English>
         <German>Schwarzpulver-Herstellung</German>
+        <Russian>Производство черного пороха</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_CHARCOAL_POWDER_HEAD</Tag>
         <English>Charcoal and black powder</English>
         <German>Holzkohle und Schwarzpulver</German>
+        <Russian>Уголь и черный порох</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_CHARCOAL_POWDER_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]How can you stand this heat, my beard is already dripping again [COLOR_REVERT]", the fireworker interjects with a gasp. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well, I'm not sitting in the workshop all day with a ton of gunpowder around me[COLOR_REVERT]," the master charcoal burner returns with a sneer. "[COLOR_SELECTED_TEXT]The little bit of smoke doesn't bother me. Besides, I don't have to constantly worry about blowing up half the city." [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well, eyes open when choosing a career, that's all I'm saying. But enough palaver, back to work. The militia has already ordered more supplies. One could almost think that they eat the stuff instead of shooting it.[COLOR_REVERT]" [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]That's fine with me, as long as I get paid decently..."[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Wie hältst Du diese Hitze blos immer aus, mir tropft schon wieder der Schweiß den Bart runter[COLOR_REVERT]", wirft der Feuerwerker keuchend ein.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Naja, ich hocke ja auch nicht den ganzen Tag in der Werkstatt mit einer Tonne Schießpulver um mich rum[COLOR_REVERT]," gibt der Köhlermeister höhnisch grinsend zurück. "[COLOR_SELECTED_TEXT]Das bisschen Rauch macht mir nichts. Außerdem muss ich mir auch nicht ständig Gedanken machen, vielleicht gleich die halbe Stadt in die Luft zu jagen."[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Wohl war, Augen auf bei der Berufswahl sag ich da nur. Aber genug palavert, zurück an die Arbeit. Die Miliz hat schon wieder Nachschub bestellt. Man könnte fast meinen die Essen das Zeug, statt es zu verschießen.[COLOR_REVERT]" [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Soll mir recht sein, solange ich anständig bezahlt werde..."[NEWLINE][NEWLINE]</German>
-	</TEXT>
+        <Russian>"[COLOR_SELECTED_TEXT]Как вы можете выносить эту жару? С моей бороды уже снова капает[COLOR_REVERT]" — задыхаясь, вставляет производитель пороха.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ну, я же не сижу весь день в мастерской с кучей пороха вокруг меня[COLOR_REVERT]" — с ухмылкой отвечает мастер-угольщик. "[COLOR_SELECTED_TEXT]А небольшой дым меня не беспокоит. Кроме того, мне не нужно постоянно беспокоиться о том, что я взорву полгорода."[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что ж, выбирать профессию надо с открытыми глазами, вот и все, что я хочу сказать. Но хватит болтовни, вернемся к работе. Ополчение уже заказало дополнительные припасы. Можно подумать, что они едят эту дрянь, а не используют для стрельбы.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Меня это устраивает, пока мне прилично платят..."[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIREWORKS</Tag>
         <English>Black powder buildings</English>
         <German>Schwarzpulver-Industrie</German>
+        <Russian>Производство черного пороха</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIREWORKS_HEAD</Tag>
         <English>Smoke over the city</English>
         <German>Rauch über der Stadt</German>
+        <Russian>Дым над городом</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIREWORKS_TEXT</Tag>
         <English>Milord, the smoke over your colonies is so thick that one could think they are falling victim to an inferno. But not at all, it is very clever of you to make yourselves more and more independent of supplies from Europe, even in the delicate matter of black powder.[NEWLINE][NEWLINE]The king and your competitors won't like it, but soon you'll be making more powder than any other nation in the New World if you keep this up. Then, in any case, hardly anyone can dictate anything to you. But beware, this must inevitably lead to armed conflict.[NEWLINE][NEWLINE]</English>
         <German>Mylord, über Euren Kolonien steht der Rauch so dicht, dass man denken könnte, sie fallen einem Inferno zum Opfer. Aber mitnichten, sehr schlau von Euch, dass Ihr Euch auch bei dem heiklen Thema Schwarzpulver immer mehr von Lieferungen aus Europa unabhängig macht.[NEWLINE][NEWLINE]Dem König und Euren Konkurrenten wird das zwar nicht gefallen, aber bald stellt Ihr mehr Pulver her, als alle anderen Nationen in der Neuen Welt, wenn Ihr so weitermacht. Dann kann Euch ohnehin kaum noch jemand etwas vorschreiben. Aber Obacht, das muss zwangsläufig zu einem bewaffneten Konflikt führen.[NEWLINE][NEWLINE]</German>
-	</TEXT>
+        <Russian>Милорд, дым над вашими колониями такой густой, что можно подумать, что они стали жертвами ада. Но нет, с вашей стороны было очень умно сделать нас более независимыми от поставок из Европы, даже в деликатном вопросе черного пороха.[NEWLINE][NEWLINE]Королю и вашим конкурентам это не понравится, но если будете продолжать в том же духе, скоро вы будете производить больше пороха, чем любая другая нация в Новом Свете. Тогда вряд ли кто-то сможет вам что-то диктовать. Но будьте осторожны, это неизбежно приведет к вооруженному конфликту.[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SURFACE_MINING</Tag>
         <English>Many surface miners</English>
         <German>Viele Tagebauarbeiter</German>
+        <Russian>Множество карьерных рабочих</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SURFACE_MINING_HEAD</Tag>
         <English>Stone, clay and peat</English>
         <German>Stein, Lehm und Torf</German>
+        <Russian>Камень, глина и торф</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SURFACE_MINING_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]My shovel is broken again, I urgently need a new shovel[COLOR_REVERT]", complains the peat cutter.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]You might want to try a pickaxe like this one[COLOR_REVERT]," the stone cutter returns well-meaning. "[COLOR_SELECTED_TEXT]I just got them out of the depot. It makes things go much faster." [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]What am I supposed to do with a pickaxe? I have to cut out the material in blocks and not chop it into pieces. You can't do that with a pickaxe.[COLOR_REVERT]" [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Yes, well, I only know about stones, not about this greasy stuff here..."[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Meine Schaufel ist schon wieder kaputt, ich brauch dringend eine neue Schaufel[COLOR_REVERT]", beschwert sich der Torfstecher.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Du solltest es vielleicht mal mit einer Spitzhacke wie dieser hier versuchen[COLOR_REVERT]," gibt der Steinbrecher wohlmeinend zurück. "[COLOR_SELECTED_TEXT]Die hab ich mir gerade erst aus dem Depot geholt. Damit geht's viel schneller voran."[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Was soll ich denn bitte mit einer Spitzhacke? Ich muss das Material doch in Blöcken heraustrennen und nicht in Stücke hauen. Das geht nicht mit einer Spitzhacke.[COLOR_REVERT]" [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, gut, ich kenn mich halt nur mit Steinen aus, nicht mit diesem schmierigen Zeug hier..."[NEWLINE][NEWLINE]</German>
-	</TEXT>
+        <Russian>"[COLOR_SELECTED_TEXT]Моя лопата снова сломалась, мне срочно нужна новая![COLOR_REVERT]" — жалуется добытчик торфа.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Может, попробуешь вот эту кирку?[COLOR_REVERT]" — добродушно спрашивает каменотес. "[COLOR_SELECTED_TEXT]Я только что забрал несколько штук со склада. Они значительно ускоряют работу."[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что мне делать с киркой? Я должен вырезать материал блоками, а не рубить на куски. Киркой этого не сделать.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что же, я много знаю о камнях, а не об этой жирной дряни..."[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MINING</Tag>
         <English>Many miners</English>
         <German>Viele Minenarbeiter</German>
+        <Russian>Множество шахтёров</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MINING_HEAD</Tag>
         <English>Ore and coal mining</English>
         <German>Erz- und Kohleförderung</German>
+        <Russian>Руда и уголь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MINING_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]It's damn dark and stuffy in there, we really need to provide more light and ventilation[COLOR_REVERT]", complains the miner.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Yes, definitely. Take the new lantern with you next time. What about your shoulder, did it also get something when the big chunk came down[COLOR_REVERT]," the other miner answers questioningly.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Yes, I couldn't see properly and then it came down from the ceiling. The support beams won't hold the weight. It must be a big vein, the way it shimmers down there.[COLOR_REVERT]" [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Then we should call the others and keep digging here.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Es ist verdammt dunkel und stickig da drin, wir müssen unbedingt für mehr Licht und Belüftung sorgen[COLOR_REVERT]", beschwert sich der Bergarbeiter.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, auf jeden Fall. Nimm das nächste Mal die neue Laterne hier mit. Was ist mit deiner Schulter, hat die auch was abbekommen, als der große Brocken runterkam[COLOR_REVERT]," gibt der andere Kumpel fragend zurück.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, ich konnte nicht richtig sehen und dann kam der auch schon von der Decke. Die Stützbalken halten das Gewicht nicht. Das muss eine große Ader sein, so wie dass da unten schimmert.[COLOR_REVERT]" [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Dann sollten wir die anderen rufen und hier weitergraben.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-	</TEXT>
+        <Russian>"[COLOR_SELECTED_TEXT]Там чертовски темно и душно, нужно добавить света и вентиляции[COLOR_REVERT]" – жалуется шахтер.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да, обязательно. В следующий раз нужно захватить ещё один фонарь. Кстати, что с твоим плечом, оно тоже пострадало, когда упал тот большой кусок?[COLOR_REVERT]" — отвечает другой.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да, я не заметил, как образовался провис породы, а потом часть всё же обвалилась. Опорные балки не выдерживают веса. Должно быть, это большая жила, вроде той, что мерцает там, внизу.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Тогда надо позвать остальных и продолжать копать здесь.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_WEAPONSMITHS</Tag>
         <English>Many miners</English>
         <German>Viele Minenarbeiter</German>
+        <Russian>Множество оружейников</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_WEAPONSMITHS_HEAD</Tag>
         <English>Many weapon forging smiths</English>
         <German>Viele waffenschmiedende Schmiede</German>
+        <Russian>Оружия много не бывает</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_WEAPONSMITHS_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Dear Mr. Blacksmith, thank you for delivering the the blank weapons[COLOR_REVERT]", the gunsmith nods to the blacksmith.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]This is excellent quality master blacksmith, I can sell it directly to the dragoons. Together with my muskets, the troop is then well equipped.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Yes, your new muskets are also impressive, good work. The commander will be pleased. So cough up the money, you tightwad[COLOR_REVERT]," the blacksmith replies with a wide grin.[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Werter Herr Schmied, ich danke Euch für das Vorbeibringen der Blankwaffen[COLOR_REVERT]", nickt der Waffenschmied dem Schmied zu.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das ist hervorragende Qualität Meister Schmied, die kann ich direkt an die Dragoner weiterverkaufen. Zusammen mit meinen Musketen ist die Truppe dann bestens ausgerüstet.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, Eure neuen Musketen können sich aber auch sehen lassen, gute Arbeit. Der Kommandeur wird zufrieden sein. Dann rück' mal das Geld raus, du Geizkragen[COLOR_REVERT]," erwidert der Schmied mit einem breiten Grinsen.[NEWLINE][NEWLINE]</German>
-	</TEXT>
+        <Russian>"[COLOR_SELECTED_TEXT]Господин кузнец, спасибо за доставку клинков[COLOR_REVERT]" — кивает кузнецу оружейник."[COLOR_SELECTED_TEXT]Они отличного качества, что говорит о вашей высокой квалификации. Я немедленно свяжусь с командиром драгун. Вместе с моими мушкетами отряд будет хорошо экипирован.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ваши новые мушкеты тоже впечатляют, прекрасная работа. Командир будет доволен. Так что выкладывай деньги, скупердяй[COLOR_REVERT]" — с широкой улыбкой отвечает кузнец.[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_BREWER</Tag>
         <English>Several distillers</English>
         <German>Mehrere Destillateure</German>
+        <Russian>Несколько винокуров</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_BREWER_HEAD</Tag>
         <English>Liquid happiness</English>
         <German>Flüssiges Glück</German>
+        <Russian>Жидкое счастье</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_BREWER_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Well boys, what can I serve you? Beer, whiskey or wine? [COLOR_REVERT]", asks the barkeeper.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well, we were actually just about to ask the exact same thing,[COLOR_REVERT]" grins the brewer and holds a mug of beer under the bartender's nose.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well, I'll be damned, then let's see - or better taste[COLOR_REVERT]," replies the bartender and grabs the mug.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hey, not so fast, leave some space for my wine, this is a particular good one[COLOR_REVERT]," interjects the winemaker, somewhat disappointed.[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Na Jungs, was darf ich Euch servieren? Bier, Whiskey oder lieber Wein? [COLOR_REVERT]", fragt der Barkeeper.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Tja, wir wollten eigentlich gerade genau dasselbe fragen,[COLOR_REVERT]" grinst der Brauer und hält dem Barkeeper einen Krug Bier unter die Nase.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ach, was Ihr nicht sagt, dann lasst mal sehen - oder besser probieren[COLOR_REVERT]," erwidert der Barkeeper und greift sich den Krug.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]He, nicht so hastig, lasst noch Platz für meinen Wein, das ist ein ganz besonders edler Tropfen[COLOR_REVERT]," wirft der Winzer etwas enttäuscht ein.[NEWLINE][NEWLINE]</German>
-	</TEXT>
+        <Russian>"[COLOR_SELECTED_TEXT]Ну, парни, что вам предложить? Пиво, виски или вино?[COLOR_REVERT]" – спрашивает бармен.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ну, мы как раз собирались спросить то же самое.[COLOR_REVERT]" — усмехается пивовар и протягивает кружку пива бармену.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ну, будь я проклят, давайте смотреть, а точнее - пробовать[COLOR_REVERT]!" — отвечает бармен и хватает кружку.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Эй, не пей так много, оставь место и для моего вина! Сегодняшнее особенно хорошо...[COLOR_REVERT]" — несколько разочарованно вставляет винодел.[ NEWLINE][NEWLINE]</Russian>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_FARMER</Tag>
         <English>Several experienced farmer</English>
         <German>Viele erfahrene Farmer</German>
+        <Russian>Несколько опытных фермеров</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_FARMER_HEAD</Tag>
         <English>Food supply</English>
         <German>Nahrungsmittelversorgung</German>
+        <Russian>Поставки продовольствия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_FARMER_TEXT</Tag>
         <English>Milord, You are well on your way to securing the food supply in your colonies. You already have several experienced farmers tilling your fields and reclaiming the wilderness.[NEWLINE][NEWLINE]Just keep it up so that there is enough food for the colonists and immigrants and your colonies keep growing. Only a good food supply ensures regulated growth.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Ihr seid auf einem guten Weg, die Nahrungsmittelversorgung in Euren Kolonien sicherzustellen. Ihr habe jetzt schon etliche erfahrene Bauern, die Eure Felder bestellen und die Wildnis urbar machen.[NEWLINE][NEWLINE]Macht nur weiter so, damit genug Nahrungsmittel für die Kolonisten und Neuankömmlinge zur Verfügung stehen und Eure Kolonien immer weiter wachsen. Nur eine gute Nahrungsmittelversorgung stellt geregeltes Wachstum sicher.[NEWLINE][NEWLINE]</German>
-	</TEXT>
+        <Russian>Милорд, вы на правильном пути к обеспечению продовольствием своих колоний. У вас уже есть несколько опытных фермеров, которые возделывают ваши поля и осваивают дикую природу.[NEWLINE][NEWLINE]Просто продолжайте в том же духе, чтобы колонистам и иммигрантам хватало еды, а ваши колонии продолжали расти. Только хорошее питание обеспечивает требуемый рост.[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MANY_FISHERMEN</Tag>
         <English>Many experienced fishermen</English>
         <German>Viele erfahrene Fischer</German>
+        <Russian>Несколько опытных рыболовов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MANY_FISHERMEN_HEAD</Tag>
         <English>Freshly-fried flying fish</English>
         <German>Fischers Fritze</German>
+        <Russian>Свежеобжаренная летучая рыба</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MANY_FISHERMEN_TEXT</Tag>
         <English>Milord, fish is a nutritious and abundant resource off the coasts that will taste good to your colonists. You already have quite a few experienced fishermen manning your boats and bringing in their catch off the coasts.[NEWLINE][NEWLINE]Just keep it up so that there is enough food for the colonists and immigrants and your colonies keep growing. Only a good food supply ensures regulated growth.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Fisch ist eine nahrhafte und vor den Küsten reichlich vorhandene Ressource, die Euren Kolonisten gut schmecken wird. Ihr habe jetzt schon etliche erfahrene Fischer, die Eure Boote bemannen und vor den Küsten ihren Fang einbringen.[NEWLINE][NEWLINE]Macht nur weiter so, damit genug Nahrungsmittel für die Kolonisten und Neuankömmlinge zur Verfügung stehen und Eure Kolonien immer weiter wachsen. Nur eine gute Nahrungsmittelversorgung stellt geregeltes Wachstum sicher.[NEWLINE][NEWLINE]</German>
-	</TEXT>
+        <Russian>Милорд, рыба — питательный и обильный ресурс у побережья, который понравится вашим колонистам. У вас уже есть несколько опытных рыбаков, которые обслуживают ваши лодки и привозят улов в хранилища.[NEWLINE][NEWLINE]Продолжайте в том же духе, чтобы у колонистов и иммигрантов было достаточно еды, а ваши колонии продолжали расти. Только хорошее питание обеспечивает требуемый рост.[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_MILKMAIDS</Tag>
         <English>Three skilled milkmaids</English>
         <German>Drei fleißige Milchmädchen</German>
+        <Russian>Три опытных доярки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_MILKMAIDS_HEAD</Tag>
         <English>Fresh milk</English>
         <German>Frische Milch</German>
+        <Russian>Свежее молоко</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_MILKMAIDS_TEXT</Tag>
-        <English>Milord, You truly seem to have lost a farmer. You are developing a taste for agriculture that only the king himself seems to have.[NEWLINE][NEWLINE]You not only build farms, but also provide the right farmhands and maids to keep them running. You have just hired another milker who will lovingly take care of the cows. The cows will give twice as much milk. Wouldn't you like to be pampered by such a milkmaid?[NEWLINE][NEWLINE]</English>
+        <English>Milord, you truly seem to have lost a farmer. You are developing a taste for agriculture that only the king himself seems to have.[NEWLINE][NEWLINE]You not only build farms, but also provide the right farmhands and maids to keep them running. You have just hired another milker who will lovingly take care of the cows. The cows will give twice as much milk. Wouldn't you like to be pampered by such a milkmaid?[NEWLINE][NEWLINE]</English>
         <German>Mylord, an Euch scheint wahrlich ein Bauer verlorengegangen. Ihr entwickelt eine Vorliebe für die Landwirtschaft, wie es sonst offenbar nur der König selbst zu tun pflegt. [NEWLINE][NEWLINE]Ihr errichtet nicht nur Farmen, sondern sorgt auch für die richtigen Knechte und Mägde, die diese am Laufen halten. Gerade habt Ihr wieder eine Melkerin eingestellt, die sich liebevoll um die Kühe kümmern wird. Da geben die Kühe gleich noch mal doppelt so viel Milch. Würdet Ihr Euch nicht auch gern von so einer Mildmagd verwöhnen lassen?[NEWLINE][NEWLINE]</German>
-	</TEXT>
+        <Russian>Милорд, похоже, женщины могут ухаживать не только за своими детьми и мужьями. Вы прививаете вкус к сельскому хозяйству многим колонистам и их жёнам.[NEWLINE][NEWLINE]Вы не только строите фермы, но и предоставляете работу всем, кто желает ею заниматься. Вы только что наняли еще одну доярку, которая будет со всей любовью заботиться о коровах. Коровы будут давать в два раза больше молока. Может, вы хотели бы, чтобы и вас баловала такая доярка?[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_CHEESE_MAKER</Tag>
         <English>Three master cheese maker</English>
         <German>Drei Meister Käsemacher </German>
+        <Russian>Три сыровара</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_CHEESE_MAKER_HEAD</Tag>
         <English>Homemade Cheesemaking</English>
         <German>Heimische Käseerzeugung</German>
+        <Russian>Домашнее сыроварение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_CHEESE_MAKER_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Well, young man, have you used up all the milk again? How much can I sell you today, sir?[COLOR_REVERT]", asks the maid hopefully.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Yes, indeed. Since I opened the cheese dairy, the townspeople have been beating down my doors. We haven't had fresh cheese around here before. I need two buckets full,[COLOR_REVERT]" the cheese maker grins back and holds out the empty bucket from the last purchase to the maid.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ah, got that,[COLOR_REVERT]," grins the maid and grabs the bucket.[COLOR_SELECTED_TEXT]Have a seat then, it will take a while to fill these up[COLOR_REVERT]."[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Na, junger Mann, habt Ihr denn schon wieder alle Milch aufgebraucht? Wie viel darf ich Euch denn heute verkaufen, Sir?[COLOR_REVERT]", fragt die Magd hoffnungsvoll.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, in der Tat. Seitdem ich die Käserei eröffnet habe, rennt mir die Stadtbevölkerung die Türen ein. Frischen Käse hatten wir hier in der Gegend bisher nicht. Ich brauche zwei Eimer voll[COLOR_REVERT]" grinst der Käsemacher zurück und hält der Magd den leeren Eimer vom letzten Kauf hin.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ach, was Ihr nicht sagt, [COLOR_REVERT]," grinst die Magd und greift sich den Eimer." [COLOR_SELECTED_TEXT]Dann setzt Euch mal, es wird eine Weile dauern die hier voll zu machen[COLOR_REVERT]."[NEWLINE][NEWLINE]</German>
-	</TEXT>
+        <Russian>"[COLOR_SELECTED_TEXT]Ну, молодой человек, вы опять израсходовали все молоко? Сколько же вам вам нужно сегодня?[COLOR_REVERT]" - с улыбкой спрашивает работница фермы.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да, действительно. С тех пор, как я открыл сыроварню, горожане с самого утра ломятся в двери моей сырной лавки, ведь раньше у нас здесь не было свежего сыра. Пожалуй, сегодня я возьму два полных ведра.[COLOR_REVERT]" — ухмыляется в ответ сыровар и протягивает девушке пустое ведро от последней покупки.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что ж,[COLOR_REVERT]" – усмехается работница, забирая ведро - "[COLOR_SELECTED_TEXT]тогда присаживайтесь, нужно время, чтобы наполнить их[COLOR_REVERT]."[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_BREEDER</Tag>
         <English>Several animal breeder</English>
         <German>Mehrere Tierzüchter</German>
+        <Russian>Несколько заводчиков животных</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_BREEDER_HEAD</Tag>
         <English>Successful breeding</English>
         <German>Erfolgreiche Zucht</German>
+        <Russian>Успешное разведение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_BREEDER_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Well, what are you feeding? Looks like my pigs also like it very much and not just the chickens[COLOR_REVERT]", the shepherd remarks casually.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ah, this is a proven mixture of corn kernels, oats and vegetable husks,[COLOR_REVERT]" says the poultry farmer. "[COLOR_SELECTED_TEXT]I'm sure your pigs would like it, but I don't think this little bucket will be enough for them. They eat from morning till night. My chickens are much more frugal.[COLOR_REVERT]" [NEWLINE][NEWLINE][COLOR_SELECTED_TEXT]But my pigs feed half the city when they are slaughtered, while your skinny hens are only good for the fox at best[COLOR_REVERT]," the shepherd happily returns with a smile.[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Na, was fütterst du denn da? Sieht so aus, als würde es meinen Schweinen auch sehr gut schmecken und nicht nur den Hühnern[COLOR_REVERT]", bemerkt der Hirte wie beiläufig.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ach, das ist eine bewährte Mischung aus Maiskörnern, Hafer und Gemüseschalen [COLOR_REVERT]" meint der Geflügelzüchter. "[COLOR_SELECTED_TEXT]Das würde deinen Schweinen bestimmt gut schmecken, aber ich glaube nicht, dass ihnen dieser kleine Eimer reichen wird. Die fressen doch von morgens bis abends. Meine Hühner sind da viel genügsamer.[COLOR_REVERT]." [NEWLINE][NEWLINE][COLOR_SELECTED_TEXT]Dafür wird von meinen Schweinen aber auch die halbe Stadt satt, wenn sie geschlachtet werden, während deine mageren Hennen höchstens für den Fuchs gut sind,[COLOR_REVERT]" gibt der Hirte fröhlich feixend zurück.[NEWLINE][NEWLINE]</German>
-	</TEXT>
+        <Russian>"[COLOR_SELECTED_TEXT]Ну, и чем ты их кормишь? Похоже, моим свиньям эта смесь тоже очень нравится.[COLOR_REVERT]" - небрежно замечает пастух.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]А, это проверенная смесь кукурузных зерен, овса и овощной шелухи.[COLOR_REVERT]" – говорит птицевод. "[COLOR_SELECTED_TEXT]Я уверен, что вашим свиньям она понравится, но я не думаю, что им будет достаточно этого маленького ведерка. Они едят с утра до вечера. Мои куры намного экономнее.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Но мои свиньи кормят полгорода, когда их забивают, а ваши худые куры годятся в лучшем случае только для легкого завтрака лисы[COLOR_REVERT]" – счастливо улыбаясь, отвечает пастух.[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_HOUSEHOLD_GOODS</Tag>
+        <English>Three master craftsmen</English>
+        <German>Drei Meister Handwerker</German>
+        <Russian>Три производителя хозтоваров</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_HOUSEHOLD_GOODS_HEAD</Tag>
+        <English>Household goods</English>
+        <German>Haushaltswaren</German>
+        <Russian>Товары для домашнего хозяйства</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_HOUSEHOLD_GOODS_TEXT</Tag>
+        <English>Milord, you also think about practical things. Several master craftsmen have settled in your colony. The supply of practical household goods and furniture to the colony is increasing.[NEWLINE][NEWLINE]This will especially please those who can and want to afford a little luxury. And for you certainly also some taxes should be gained through the trade with these goods...[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Ihr denkt auch an praktischen Dinge. Mehrere Meister-Handwerker haben sich in Eurer Kolonie niedergelassen. Die Versorgung der Kolonie mit praktischen Haushaltswaren und Möbeln nimmt zu.[NEWLINE][NEWLINE]Das wird besonders diejenigen freuen, die sich ein wenig Luxus leisten können und wollen. Und für Euch fällt sicher auch die eine oder andere Münze Steuern beim Handel damit ab...[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, вы думаете и о практических вещах. В вашей колонии поселились несколько мастеров-ремесленников. Поступление в колонию практичных предметов домашнего обихода и мебели увеличивается.[NEWLINE][NEWLINE]Это особенно порадует тех, кто хочет и может позволить себе немного роскоши. И для вас, конечно же, также должны быть интересны налоги с торговли этими товарами...[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_MASTER_BAKER</Tag>
+        <English>Several master baker</English>
+        <German>Mehrere Meister Bäcker</German>
+        <Russian>Несколько пекарей</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_MASTER_BAKER_HEAD</Tag>
+        <English>Homemade bakery products</English>
+        <German>Begehrte Backwaren</German>
+        <Russian>Домашняя выпечка</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_MASTER_BAKER_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]Dear Mr. Baker, I'm here to pick up the bags of flour I ordered. My warehouse is empty again,[COLOR_REVERT]" says the confectioner hopefully.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I'm sorry, but these are the last bags I can give you. The militia has already bought up everything again,[COLOR_REVERT]" the baker replies apologetically.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Not so fast! The troops need these bags as well,[COLOR_REVERT]" the officer declares. "[COLOR_SELECTED_TEXT]I don't want to confiscate them, but if I have to ...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]What? That's it?[COLOR_REVERT]" the desperate confectioner cries out. "[COLOR_SELECTED_TEXT]I can't put off my customers again. You're just going to have to produce more flour.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <German>"[COLOR_SELECTED_TEXT]Werter Herr Bäcker, ich bin hier um die bestellten Säcke mit Mehl abzuholen, mein Lager ist schon wieder leer[COLOR_REVERT]", teilt der Konditor dem Bäcker hoffnungsfroh mit.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh je, dies hier sind derzeit die letzten Säcke, die ich Euch geben kann, die Miliz hat schon wieder alles aufgekauft[COLOR_REVERT]" entgegnet der Bäcker entschuldigend.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Moment, die werden von der Truppe auch noch dringend gebraucht, [COLOR_REVERT]," schreitet der Offizier ein." [COLOR_SELECTED_TEXT]Ich möchte die Säcke auch nur ungern requirieren, aber wenn es sein muss...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Waaas? Das ist alles?[COLOR_REVERT]", schreit der Konditor entsetzt auf. "[COLOR_SELECTED_TEXT]Ich kann doch nicht schon wieder meine Kunden vertrösten, Ihr müsst dringend noch mehr herstellen[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+        <Russian>"[COLOR_SELECTED_TEXT]Здравствуйте, уважаемый мельник, я пришел забрать заказанные мешки с мукой. Мой склад снова пуст.[COLOR_REVERT]" — с надеждой говорит пекарь.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Извините, но это всё, что осталось из заготовленного мной за эту неделю. Ополченцы скупили почти всю муку...[COLOR_REVERT]" – извиняющимся тоном отвечает мельник.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Не так быстро! Войскам тоже нужны эти мешки.[COLOR_REVERT]" — заявляет вошедший во время разговора офицер. "[COLOR_SELECTED_TEXT]Не хотелось бы их конфисковывать, но если придется...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что? Вы заберёте вообще всё?![COLOR_REVERT]" – восклицает отчаявшийся пекарь. И добавляет, обращаясь уже к мельнику: "[COLOR_SELECTED_TEXT]Я больше не могу отказывать своим клиентам. Вам придется производить больше муки.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_CASSAVA_PLANTER</Tag>
+        <English>Three experienced cassava planter</English>
+        <German>Drei erfahrene Maniokpflanzer</German>
+        <Russian>Три опытних плантатора маниоки</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_CASSAVA_PLANTER_HEAD</Tag>
+        <English>More cassava</English>
+        <German>Mehr Maniok</German>
+        <Russian>Больше маниоки</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_CASSAVA_PLANTER_TEXT</Tag>
+        <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced cassava planters for the colonies. With this, you will now achieve even higher yields in the harvest of this commodity. Keep up the good work and soon your colonies will be widely known for the cultivation of this specialty.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Maniokpflanzer für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte dieses Rohstoffs erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau dieser Spezialität bekannt sein.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши колонии растут. К счастью, вы догадались пригласить в колонии еще одного специалиста.[NEWLINE][NEWLINE]Теперь у вас трудятся уже три опытных плантаторов маниоки. Благодаря этому теперь вы будете получать еще более высокие урожаи при сборе этого товара. Продолжайте в том же духе и вскоре ваши колонии станут широко известны благодаря выращиванию этого деликатеса.[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_COCHINEAL_COLLECTOR</Tag>
+        <English>Three experienced cochineal collector</English>
+        <German>Drei erfahrene Cochenille Sammler</German>
+        <Russian>Три опытных сборщика кошенили</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_COCHINEAL_COLLECTOR_HEAD</Tag>
+        <English>More cochineal</English>
+        <German>Mehr Cochenille</German>
+        <Russian>Больше кошенили</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_COCHINEAL_COLLECTOR_TEXT</Tag>
+        <English>Milord, you colonies are growing. Fortunately another specialist has arrived in the colonies.[NEWLINE][NEWLINE]You've been able to recruit three experienced cochineal collectors. Using them you can expect even higher yields from the harvest. With such good work soon your colonies will be known far and wide for cochineal cultivation.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Cochenille Sammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte dieses Rohstoffs erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau dieser Spezialität bekannt sein.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши колонии растут. К счастью, в колонии прибыл еще один специалист.[NEWLINE][NEWLINE]Вы смогли завербовать трех опытных сборщиков кошенили. Используя их, вы можете рассчитывать на более высокие урожаи. С такой хорошей работой скоро ваши колонии станут широко известны благодаря выращиванию кошенили.[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_FRUITS_PICKER</Tag>
+        <English>Three experienced fruits picker</English>
+        <German>Drei erfahrene Fruchtsammler</German>
+        <Russian>Три опытных сборщика фруктов</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_FRUITS_PICKER_HEAD</Tag>
+        <English>More fruits</English>
+        <German>Mehr Früchte</German>
+        <Russian>Больше фруктов</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_FRUITS_PICKER_TEXT</Tag>
+        <English>Milord, you colonies are growing. Luckily you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You've now recruited three experienced fruit pickers. This means you'll be getting even higher yields during the harvest. Keep up the good work! Soon the colonies will be widely known for our abundant fruit.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Fruchtsammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte aller Art von Früchte erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von reichhaltigen Früchten bekannt sein.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши колонии растут. К счастью, вы можете принять в колонии еще одного специалиста.[NEWLINE][NEWLINE]Теперь вы наняли трех опытных сборщиков фруктов. Это означает, что вы можете рассчитывать на более высокие урожаи. Продолжайте начатое! Скоро колонии станут широко известны благодаря изобилию фруктов.[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_INDIGO_PLANTER</Tag>
+        <English>Three experienced indigo planter</English>
+        <German>Drei erfahrene Indigo Pflanzer</German>
+        <Russian>Три опытных плантатора индиго</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_INDIGO_PLANTER_HEAD</Tag>
+        <English>More indigo blue</English>
+        <German>Mehr blaue Farben</German>
+        <Russian>Больше синего индиго</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_INDIGO_PLANTER_TEXT</Tag>
+        <English>Milord, you colonies are growing. Now you've added yet another specialist.[NEWLINE][NEWLINE]Three experienced indigo planters have been recruited. We can expect even higher yields from the indigo harvest. Attracting these immigrants means your colonies are going be widely known for indigo.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Indigo-Sammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Indigo erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Indigo bekannt sein.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши колонии растут. У вас появился еще один ценный специалист.[NEWLINE][NEWLINE]Три опытных плантатора индиго. Мы можем ожидать более высоких урожаев индиго. Привлечение этих специалистов означает, что ваши колонии станут широко известны благодаря индиго.[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_LINEN_PLANTER</Tag>
+        <English>Three experienced linen planter</English>
+        <German>Drei erfahrene Flax-Pflanzer</German>
+        <Russian>Три опытных плантатора льна</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_LINEN_PLANTER_HEAD</Tag>
+        <English>More fibrous linen</English>
+        <German>Mehr Fasern auf dem Feld</German>
+        <Russian>Больше волнистого льна</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_LINEN_PLANTER_TEXT</Tag>
+        <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced linen planter for the colonies. With this, you will now achieve even higher yields in the harvest of linen. Keep up the good work and your colonies will soon be widely known for the cultivation of linen.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Flax-Pflanzer für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Flax erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Flax bekannt sein.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши колонии растут. К счастью, вы можете пригласить в колонии еще одного специалиста.[NEWLINE][NEWLINE]Вы смогли нанять уже трех опытных плантаторов льна для колоний. Благодаря этому вы теперь добьетесь еще более высоких урожаев при уборке льна. Продолжайте в том же духе и вскоре ваши колонии станут широко известны благодаря выращиванию льна.[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_MAPLE_SIRUP_COLLECTOR</Tag>
+        <English>Three experienced maple sirup collector</English>
+        <German>Drei erfahrene Ahorn-Sirup-Sammler</German>
+        <Russian>Три опытных сборщика кленового сиропа</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_MAPLE_SIRUP_COLLECTOR_HEAD</Tag>
+        <English>More liquid gold</English>
+        <German>Mehr flüssiges Gold</German>
+        <Russian>Больше сладостей</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_MAPLE_SIRUP_COLLECTOR_TEXT</Tag>
+        <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced maple sirup collector for the colonies. With this, you will now achieve even higher yields in the harvest of maple sirup. Keep up the good work and your colonies will soon be widely known for the cultivation of maple sirup.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Ahorn-Sirup-Sammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Ahorn-Sirup erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Ahorn-Sirup bekannt sein.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши колонии растут. К счастью, вы можете пригласить в колонии еще одного специалиста.[NEWLINE][NEWLINE]Теперь вы смогли нанять трех опытных сборщиков кленового сиропа для колоний. Благодаря этому вы теперь добьетесь более высоких урожаев при сборе кленового сиропа. Продолжайте в том же духе и вскоре ваши колонии станут широко известны благодаря сбору кленового сиропа.[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_RAPE_PLANTER</Tag>
+        <English>Three experienced rapeseed planter</English>
+        <German>Drei erfahrene Raps-Pflanzer</German>
+        <Russian>Три опытных плантатора рапса</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_RAPE_PLANTER_HEAD</Tag>
+        <English>A greasy business</English>
+        <German>Eine schmierige Angelegenheit</German>
+        <Russian>Жирный бизнес</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_RAPE_PLANTER_TEXT</Tag>
+        <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced rapeseed planter for the colonies. With this, you will now achieve even higher yields in the harvest of rape. Keep up the good work and your colonies will soon be widely known for the cultivation of oilseed rape.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Raps-Pflanzer für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Raps erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Raps bekannt sein.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши колонии растут. К счастью, вы можете пригласить в колонии еще одного специалиста.[NEWLINE][NEWLINE]Вы смогли нанять уже трех опытных плантаторов рапса для колоний. Благодаря этому вы теперь будете получать еще более высокие урожаи рапса. Продолжайте в том же духе и вскоре ваши колонии станут широко известны благодаря выращиванию масличного рапса.[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_OLIVES_PLANTER</Tag>
+        <English>Three experienced olives planter</English>
+        <German>Drei erfahrene Oliven-Pflanzer</German>
+        <Russian>Три опытных плантатора оливок</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_OLIVES_PLANTER_HEAD</Tag>
+        <English>The land needs new fruit</English>
+        <German>Neue Früchte braucht das Land</German>
+        <Russian>Земля нуждается в новых плодах</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_OLIVES_PLANTER_TEXT</Tag>
+        <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced olives planter for the colonies. With this, you will now achieve even higher yields in the harvest of olives. Keep up the good work and your colonies will soon be widely known for the cultivation of olives.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Oliven-Pflanzer für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Oliven erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Oliven bekannt sein.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши колонии растут. К счастью, вы смогли пригласить в колонии еще одного специалиста.[NEWLINE][NEWLINE]Теперь вы смогли нанять трех опытных плантаторов оливок для колоний. Благодаря этому вы теперь добьетесь еще более высоких урожаев при сборе оливок. Продолжайте в том же духе и вскоре ваши колонии станут широко известны благодаря выращиванию оливок.[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_VANILLA_COLLECTOR</Tag>
+        <English>Three experienced vanilla collector</English>
+        <German>Drei erfahrene Vanille-Sammler</German>
+        <Russian>Три опытных сборщика ванили</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_VANILLA_COLLECTOR_HEAD</Tag>
+        <English>The land needs new sweet spices</English>
+        <German>Neue süße Gewürze braucht das Land</German>
+        <Russian>Земле нужны новые сладкие специи</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_VANILLA_COLLECTOR_TEXT</Tag>
+        <English>Milord, you colonies are growing. We've just welcomed another specialist.[NEWLINE][NEWLINE]There are now three experienced vanilla collectors in your colonies. The vanilla harvest will be richer than ever! If we all keep up the good work your colonies will be known far and wide for vanilla.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Vanille-Sammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Vanille erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Vanille bekannt sein.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши колонии растут. Мы только что приветствовали еще одного специалиста.[NEWLINE][NEWLINE]Теперь в ваших колониях трое опытных сборщиков ванили. Урожай ванили будет богаче, чем когда-либо! Если мы все продолжим в том же духе, ваши колонии будут широко известны своей ванилью.[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_HEMP_PLANTER</Tag>
+        <English>Three experienced hemp planter</English>
+        <German>Drei erfahrene Hanf-Pflanzer</German>
+        <Russian>Три опытных плантатора конопли</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_HEMP_PLANTER_HEAD</Tag>
+        <English>Ropes and cordage</English>
+        <German>Seile und Tauwerk</German>
+        <Russian>Веревки и снасти</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_HEMP_PLANTER_TEXT</Tag>
+        <English>Milord, your colonies are growing. Fortunately we just welcomed another specialist to the colonies.[NEWLINE][NEWLINE]You've managed to recruit three experienced hemp planters. You're going to see an even bigger hemp harvest. Keep up the good work. More ships can be built now, with sturdy sails and strong rigging.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Hanf-Pflanzer für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Hanf erzielen. Macht weiter so und Ihr könnt bald noch mehr Schiffe mit gutem Tauwerk ausrüsten.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши колонии растут. К счастью, мы только что приветствовали в колониях еще одного специалиста.[NEWLINE][NEWLINE]Вам удалось нанять трех опытных плантаторов конопли. Вы увидите еще больший урожай конопли. Продолжайте в том же духе. Теперь можно построить больше кораблей с большими парусами и крепким такелажем.[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_KAUTSCHUK_COLLECTOR</Tag>
+        <English>Three experienced rubber collector</English>
+        <German>Drei erfahrene Kautschuk-Sammler</German>
+        <Russian>Три опытных сборщика каучука</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_KAUTSCHUK_COLLECTOR_HEAD</Tag>
+        <English>Rubber grows on trees</English>
+        <German>Kautschuk wächst auf Bäumen</German>
+        <Russian>Каучуковые деревья</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_KAUTSCHUK_COLLECTOR_TEXT</Tag>
+        <English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You have now already been able to recruit three experienced rubber collector for the colonies. With this, you will now achieve even higher yields in the harvest of rubber. Keep up the good work and your colonies will soon be widely known for the cultivation of rubber.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Kautschuk-Sammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Kautschuk erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Kautschuk bekannt sein.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши колонии растут. К счастью, вы можете пригласить в колонии еще одного специалиста.[NEWLINE][NEWLINE]Вы смогли нанять трех опытных сборщиков каучука для колоний. Благодаря этому вы теперь добьетесь еще более высоких урожаев при сборе каучука. Продолжайте в том же духе и вскоре ваши колонии станут широко известны благодаря выращиванию каучука.[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_BUTCHER</Tag>
+        <English>Three master butcher</English>
+        <German>Drei Meister Schlachter</German>
+        <Russian>Три мастера мясника</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_BUTCHER_HEAD</Tag>
+        <English>Ham, pork chops or poultry?</English>
+        <German>Schinken, Kotlett oder Geflügel?</German>
+        <Russian>Ветчина, свиные отбивные или домашняя птица?</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_BUTCHER_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]What do you plan to do with this puny knife? It could barely cut an overcooked roast. Butchering needs real tools[COLOR_REVERT]." The master butcher casually waves his cleaver right next to the poultry butcher's nose.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I'm faster with my knife than you'll ever be. That oversized blade looks like you're getting ready to massacre a helpless family[COLOR_REVERT]," replies the poultry butcher sourly."[COLOR_SELECTED_TEXT]Besides, I don't just hack away. I have to cut along the joints cleanly, without spilling too much blood.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh, sure, anyone can see that just by looking at your apron...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]At least I don't have heaps of bones lying around everywhere.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]That's right! You count on my pigs to eat up your leftovers![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <German>"[COLOR_SELECTED_TEXT]Was wollt Ihr denn mit diesem mickrigen Messer anfangen, damit könnt ihr doch bestenfalls den fertigen Braten anschneiden. Zum Schlachten braucht ihr richtiges Werkzeug[COLOR_REVERT]", hält der Fleischermeister dem Geflügelschlachter sein neues Beil vor die Nase.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Angeber, ich bin mit diesem Messer hier genauso schnell wie Ihr mit diesem riesigen Mordinstrument,[COLOR_REVERT]" entgegnet der Geflügelschlachter säuerlich. "[COLOR_SELECTED_TEXT]Außerdem hack' ich nicht einfach drauflos, sondern zerlege die Viecher sauber und ohne zu viel Blut zu vergießen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Klar, das sieht man schon an Eurer Schürze....[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Pah, dafür liegen bei mir nicht überall haufenweise Knochen rum.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Stimmt, Ihr verfüttert Eure Reste lieber an meine Schweine...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+        <Russian>"[COLOR_SELECTED_TEXT]Что вы планируете делать с этим хилым ножом? Им едва можно разрезать пережаренное жаркое. Для разделки нужны настоящие инструменты[COLOR_REVERT]". Мастер мясник небрежно машет своим огромным тесаком прямо перед носом мясника птицы.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я владею своим ножом лучше, чем вы когда-либо сможете. Ваш огромный клинок выглядит так, будто вы собираетесь расправиться с беспомощной семьей[COLOR_REVERT]" — кисло отвечает мясник птицы. "[COLOR_SELECTED_TEXT]Кроме того, я не просто рублю. Я должен аккуратно разрезать суставы, не проливая слишком много крови.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Конечно, любой может увидеть это, просто взглянув на ваш фартук...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]По крайней мере, у меня не валяются повсюду кучи костей.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Правильно! Вы рассчитываете, что мои свиньи съедят остатки вашей возни![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_FAILED_TRADER</Tag>
+        <English>Three failed trader</English>
+        <German>Drei gescheiterte Händler</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_FAILED_TRADER_HEAD</Tag>
+        <English>Lost merchandise</English>
+        <German>Verlorene Handelsgeschäfte</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_FAILED_TRADER_TEXT</Tag>
+        <English>Milord, obviously our third trader has failed to deal profitably with the Natives. He's now drinking himself senseless in the streets, claiming he endured unimaginable horrors in their camp. [NEWLINE][NEWLINE]You should do something! When Natives surrounding us prefer to trade with each other. attacking our own traders, it makes our merchants nervous. Soon no settler will dare to leave the colony, fearing such hostile neighbours. You should find a better way to handle the many different nations of Natives who surround us.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, es ist jetzt bereits der dritte Händler von den Ureinwohnern zurückgekommen, der offensichtlich gescheitert ist und sich nun sinnlos in den Straßen betrinkt, ob des Grauens, dass er offenbar bei den Wilden erlebt hat.[NEWLINE][NEWLINE]Ihr Ihr solltet etwas unternehmen, sie machen die übrigen Händler nervös. Bald traut sich keiner mehr aus der Kolonie wegen der Geschichten, die über die Wilden kursieren. Ihr solltet zudem Eure Strategie gegenüber den Wilden überdenken.[NEWLINE][NEWLINE]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_DYER</Tag>
+        <English>Three master dyer</English>
+        <German>Drei Meister Färber</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_DYER_HEAD</Tag>
+        <English>Colorful colonies</English>
+        <German>Farbenfrohe Kolonien</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_DYER_TEXT</Tag>
+        <English>Milord, your colonies are growing. Your cities produce more and more goods. You are truly blessed! Just today you've welcomed another trained craftsman. [NEWLINE][NEWLINE]You now have three experienced master dyers. This colony is destined to become a prosperous trading center for dyed fabrics. If we keep up the good work your citizens will certainly thank you.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen und Eure Städte können immer mehr Waren herstellen. Ihr seid wahrlich gesegnet und könnt einen weiteren ausgebildeten Handwerker in den Kolonien begrüßen. [NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Meister-Färber für die Kolonien anwerben. Eure Kolonie wird sich bald zu einem wahren Handelszentrum für gefärbte Stoffe entwickeln. Macht weiter so und Eure braven Bürger werden es Euch danken.[NEWLINE][NEWLINE]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_CONFECTIONER</Tag>
+        <English>Three master confectioner</English>
+        <German>Drei Meister Konditoren</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_CONFECTIONER_HEAD</Tag>
+        <English>Cakes and confectionery</English>
+        <German>Kuchen und Konfekt</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_CONFECTIONER_TEXT</Tag>
+        <English>Milord, your colonies are growing! Now you can welcome yet another skilled craftsman. [NEWLINE][NEWLINE]You've succeeded in recruiting three talented master confectioners. Your colony is going to become the main trading center for chocolate and vanilla. As long as we keep up the good work your citizens are bound to thank you for it.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen und Eure Städte können immer mehr Waren herstellen. Ihr seid wahrlich gesegnet und könnt einen weiteren ausgebildeten Handwerker in den Kolonien begrüßen. [NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Meister-Konditoren für die Kolonien anwerben. Eure Kolonie wird sich bald zu einem wahren Handelszentrum für Schokolade und Vanille entwickeln. Macht weiter so und Eure braven Bürger werden es Euch danken.[NEWLINE][NEWLINE]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_FURNITURE_MAKER</Tag>
+        <English>Three master furniture maker</English>
+        <German>Drei Meister Möbelschreiner</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_FURNITURE_MAKER_HEAD</Tag>
+        <English>Tables and chairs</English>
+        <German>Tische und Stühle</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_FURNITURE_MAKER_TEXT</Tag>
+        <English>Milord, your colonies are growing. Your cities produce more and more goods. You are truly blessed! Today we welcome another creative craftsman. [NEWLINE][NEWLINE]Three experienced master furniture makers are now at work here. Your colony will soon become a popular trading center for colonial furniture. Keep up your successful work! Your citizens look forward to enjoying the good life.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Kolonien wachsen und Eure Städte können immer mehr Waren herstellen. Ihr seid wahrlich gesegnet und könnt einen weiteren ausgebildeten Handwerker in den Kolonien begrüßen. [NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Meister Möbelschreiner für die Kolonien anwerben. Eure Kolonie wird sich bald zu einem wahren Handelszentrum für koloniale Möbel entwickeln. Macht weiter so und Eure braven Bürger werden es Euch danken.[NEWLINE][NEWLINE]</German>
+    </TEXT>
 </Civ4GameText>

@@ -16,6 +16,7 @@
 #include"xmlFiles.h"
 
 #include "CvSavegame.h"
+#include "SavegameConstants.h"
 
 // ignore type check for template functions
 // no need to be strict in this file
@@ -556,6 +557,10 @@ bool CvXMLLoadUtility::ReadGlobalDefines(const TCHAR* szXMLFileName, CvCacheObje
 	{
 		logMsg("Read GobalDefines from cache");
 	}
+
+	// override vanilla xml and use the version set in SavegameConstants.h
+	// see SavegameConstants.h for more info
+	GC.getDefinesVarSystem()->SetValue("SAVE_VERSION", SAVEGAME_VERSION_EXE);
 
 	return true;
 }

@@ -2,6 +2,7 @@
 #include "AlertWindow.h"
 #include "StartupErrorChecking.h"
 #include "OpenURL.h"
+#include "SavegameAlert.h"
 
 #include <iostream>
 #include <sstream>
@@ -287,6 +288,9 @@ namespace StartupCheck
 		showWindow<WINDOW_LARGE_ADDRESS_AWARE>();
 		showWindow<WINDOW_WRONG_STEAM_VERION>();
 		showWindow<WINDOW_XML_HARDCODE_MISMATCH>("TestTypes", 1, 2);
+
+		SavegameAlert::SavegameTooOld();
+		SavegameAlert::SavegameTooNew();
 
 		window.message = "Test complete";
 		window.openWindow();

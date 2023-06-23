@@ -451,10 +451,13 @@ public:
 	bool isDominantSpecialBuilding(BuildingTypes eIndex) const;
 	BuildingTypes getDominantBuilding(SpecialBuildingTypes eSpecialBuilding) const;
 	void clearOrderQueue();
-	DllExport void pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bool bPop, bool bAppend, bool bForce = false);
-	DllExport void popOrder(int iNum, bool bFinish = false, bool bChoose = false);
+	void pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bool bPop, bool bAppend, bool bForce = false);
+	void pushOrder(OrderData order, bool bPop, bool bAppend, bool bForce = false);
+	void popOrder(int iNum, bool bFinish = false, bool bChoose = false);
 	bool processRequiredYields(int iNum);
+	bool checkRequiredYields(OrderTypes eOrder, BuildingTypes, UnitTypes, YieldTypes eYieldException = NO_YIELD) const;
 	bool checkRequiredYields(OrderTypes eOrder, int iData1, YieldTypes eYieldException = NO_YIELD) const;
+	bool checkRequiredYields(OrderData, YieldTypes eYieldException = NO_YIELD) const;
 	void checkCompletedBuilds(YieldTypes eYield, int iChange);
 	void getOrdersWaitingForYield(std::vector< std::pair<OrderTypes, int> >& aOrders, YieldTypes eYield, bool bYieldsComplete, int iChange) const;
 	void startHeadOrder();
@@ -1044,7 +1047,9 @@ protected:
 	void cache_storageLossTradeValues_usingCachedData(BuildingTypes eBuilding);
 	void cache_storageLossTradeValues_usingRawData();
 	void updateCacheStorageLossTradingValues(BuildingTypes eBuilding, bool bWasAdded);
-	void pushOrderInternal(OrderTypes eOrder, int eBuildingOrUnit);
+	void pushOrderInternal(BuildingTypes);
+	void pushOrderInternal(UnitTypes);
+	void pushOrderInternal(OrderData&);
 	void popOrderInternal();
 
 public:

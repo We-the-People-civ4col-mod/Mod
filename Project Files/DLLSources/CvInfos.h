@@ -714,6 +714,7 @@ public:
 	int getMoves() const;
 	int getWorkRate() const;
 	int getWorkRateModifier() const;
+	int getGoldFromGoodiesAndChiefsModifier() const; // WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
 	int getMissionaryRateModifier() const;
 	int getNativeTradeRateModifier() const; // WTP, ray, Native Trade Posts - START
 	int getCombat() const;
@@ -734,7 +735,7 @@ public:
 	int getRequiredTransportSize() const;
 	int getAssetValue() const;
 	int getPowerValue() const;
-	int getUnitClassType() const;
+	UnitClassTypes getUnitClassType() const;
 	int getSpecialUnitType() const;
 	int getUnitCaptureClassType() const;
 	int getUnitCombatType() const;
@@ -909,6 +910,7 @@ protected:
 	int m_iMoves;
 	int m_iWorkRate;
 	int m_iWorkRateModifier;
+	int m_iGoldFromGoodiesAndChiefsModifier; // WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
 	int m_iMissionaryRateModifier;
 	int m_iNativeTradeRateModifier; // WTP, ray, Native Trade Posts - START
 	int m_iCombat;
@@ -927,7 +929,7 @@ protected:
 	int m_iRequiredTransportSize;
 	int m_iAssetValue;
 	int m_iPowerValue;
-	int m_iUnitClassType;
+	UnitClassTypes m_eUnitClassType;
 	int m_iSpecialUnitType;
 	int m_iUnitCaptureClassType;
 	int m_iUnitCombatType;
@@ -4172,6 +4174,7 @@ public:
 
 
 	static bool readString(CvXMLLoadUtility* pXML, CvWString &szString, const char* szTagName, bool bUTF8, const char *szFileName, bool bLanguageFound, const char* szType);
+	static CvWString convertFromUTF8(const CvString sourceString, bool bFallback, const char *szFileName, const char* szType);
 
 protected:
 

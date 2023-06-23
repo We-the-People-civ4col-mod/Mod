@@ -91,6 +91,7 @@ const char* getSavedEnumNameTeam(SavegameVariableTypes eType)
 
 	case TeamSave_RevealedBonuses: return "TeamSave_RevealedBonuses";
 	}
+	FAssertMsg(0, "Missing case");
 	return "";
 }
 

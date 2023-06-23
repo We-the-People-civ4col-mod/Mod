@@ -15,6 +15,7 @@
         <German>Bombardierung</German>
         <Italian>Bombarda</Italian>
         <Spanish>Cañonear</Spanish>
+        <Russian>Бомбардировка</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_BOMBARD_HELP</Tag>
@@ -23,6 +24,7 @@
         <German>Die Befestigungsbauten einer Siedlung beschädigen und deren Verteidigungsbonus senken.</German>
         <Italian>Distrugge le fortificazioni e riduce i bonus difensivi degli insediamenti.</Italian>
         <Spanish>Destruye las fortificaciones y reduce la bonificación defensiva del asentamiento.</Spanish>
+        <Russian>Разрушает укрепления и снижает бонус защиты поселения.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_BUILD</Tag>
@@ -31,6 +33,7 @@
         <German>Modernisierung errichten</German>
         <Italian>Costruire miglioramento</Italian>
         <Spanish>Construir mejora</Spanish>
+        <Russian>Построить улучшение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_BUILD_HELP</Tag>
@@ -118,6 +121,7 @@
         <German>Mit diesem Befehl gründet der [COLOR_UNIT_TEXT]Siedler[COLOR_REVERT] an dem aktuellen Standort eine Siedlung.</German>
         <Italian>Questo comando fa in modo che il [COLOR_UNIT_TEXT]colono[COLOR_REVERT] costruisca un insediamento nel punto in cui si trova.</Italian>
         <Spanish>Esta orden hace que el [COLOR_UNIT_TEXT]colono[COLOR_REVERT] construya un asentamiento en el lugar en que se encuentre.</Spanish>
+        <Russian>Этот приказ заставляет [COLOR_UNIT_TEXT]поселенца[COLOR_REVERT] построить поселение в его текущем местоположении.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_HEAL</Tag>
@@ -170,6 +174,7 @@
         <German>Truppen anführen</German>
         <Italian>Guida le truppe</Italian>
         <Spanish>Liderar tropas</Spanish>
+        <Russian>Возглавить отряд</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_LEAD_HELP</Tag>
@@ -239,6 +244,7 @@
         <German>Die Einheit zerstört eine Modernisierung oder Straße auf ihrem Geländefeld.</German>
         <Italian>L'unità distrugge un miglioramento o un collegamento sulla casella che occupa.</Italian>
         <Spanish>La unidad destruye una mejora o ruta en la casilla en que se encuentre.</Spanish>
+        <Russian>Отряд уничтожает улучшение или дорогу на клетке, которую он занимает.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_ROUTE_TO</Tag>
@@ -247,6 +253,7 @@
         <German>Straße nach</German>
         <Italian>Intinerario</Italian>
         <Spanish>Ir en ruta a</Spanish>
+        <Russian>Построить дорогу к выбранной точке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_ROUTE_TO_HELP</Tag>
@@ -255,22 +262,27 @@
         <German>Befehlen Sie einem Pionier, eine Straße zur gewählten Position zu bauen. Ihr Pionier wählt nun den kürzesten Weg und wartet nach dem Bau auf weitere Befehle.</German>
         <Italian>Questo comando fa in modo che il pioniere costruisca una strada fino alla destinazione scelta. L'unità seguirà il percorso più breve verso la destinazione e si renderà nuovamente disponibile una volta completato l'incarico.</Italian>
         <Spanish>Con esta orden hacéis que un Pionero construya una carretera al lugar seleccionado. El Pionero seguirá el camino más corto hasta dicho lugar. Se podrá seleccionar cuando haya cumplido su cometido.</Spanish>
+        <Russian>Этот приказ заставляет первопроходца построить обычную дорогу к выбранной точке на карте. Первопроходец будет следовать кратчайшим путем к локации. Он станет активным для других приказов после выполнения текущего задания.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_ROUTE_TO_ROAD</Tag>
         <English>Route to (country road)</English>
+        <Russian>Построить проселочную дорогу к выбранной точке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_ROUTE_TO_ROAD_HELP</Tag>
         <English>This order causes the pioneer to build a country road to the location selected. The pioneer will follow the shortest path to the location. The pioneer wakes when it has completed the assignment.</English>
+        <Russian>Этот приказ заставляет первопроходца построить проселочную дорогу к выбранной точке на карте. Первопроходец будет следовать кратчайшим путем к локации. Он станет активным для других приказов после выполнения текущего задания.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_ROUTE_TO_PLASTERED_ROAD</Tag>
         <English>Route to (plastered road)</English>
+        <Russian>Построить вымощенную камнем дорогу к выбранной точке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_ROUTE_TO_PLASTERED_ROAD_HELP</Tag>
         <English>This order causes the pioneer to build a plastered road to the location selected. The pioneer will follow the shortest path to the location. The pioneer wakes when it has completed the assignment.</English>
+        <Russian>Этот приказ заставляет первопроходца построить вымощенную камнем дорогу к выбранной точке на карте. Первопроходец будет следовать кратчайшим путем к локации. Он станет активным для других приказов после выполнения текущего задания.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_SENTRY</Tag>

@@ -188,6 +188,7 @@ const char* getSavedEnumNameUnit(SavegameVariableTypes eType)
 	case UnitSave_HasRealPromotion: return "UnitSave_HasRealPromotion";
 	case UnitSave_FreePromotionCount: return "UnitSave_FreePromotionCount";
 }
+	FAssertMsg(0, "Missing case");
 	return "";
 }
 

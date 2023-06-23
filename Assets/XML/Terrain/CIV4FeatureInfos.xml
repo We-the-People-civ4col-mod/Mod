@@ -5902,7 +5902,7 @@
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
             <bNoCity>0</bNoCity>
-            <bNoImprovement>1</bNoImprovement>
+            <bNoImprovement>0</bNoImprovement>
             <bVisibleAlways>0</bVisibleAlways>
             <OnUnitChangeTo/>
             <TerrainBooleans>

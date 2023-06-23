@@ -2724,6 +2724,7 @@ m_iMinAreaSize(0),
 m_iMoves(0),
 m_iWorkRate(0),
 m_iWorkRateModifier(0),
+m_iGoldFromGoodiesAndChiefsModifier(0), // WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
 m_iMissionaryRateModifier(0),
 m_iNativeTradeRateModifier(0), // WTP, ray, Native Trade Posts - START
 m_iCombat(0),
@@ -2741,7 +2742,7 @@ m_iCargoSpace(0),
 m_iRequiredTransportSize(0),
 m_iAssetValue(0),
 m_iPowerValue(0),
-m_iUnitClassType(NO_UNITCLASS),
+m_eUnitClassType(NO_UNITCLASS),
 m_iSpecialUnitType(NO_SPECIALUNIT),
 m_iUnitCaptureClassType(NO_UNITCLASS),
 m_iUnitCombatType(NO_UNITCOMBAT),
@@ -2966,6 +2967,12 @@ int CvUnitInfo::getWorkRateModifier() const
 {
 	return m_iWorkRateModifier;
 }
+// WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
+int CvUnitInfo::getGoldFromGoodiesAndChiefsModifier() const
+{
+	return m_iGoldFromGoodiesAndChiefsModifier;
+}
+// WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - END
 int CvUnitInfo::getMissionaryRateModifier() const
 {
 	return m_iMissionaryRateModifier;
@@ -3044,9 +3051,9 @@ int CvUnitInfo::getPowerValue() const
 {
 	return m_iPowerValue;
 }
-int CvUnitInfo::getUnitClassType() const
+UnitClassTypes CvUnitInfo::getUnitClassType() const
 {
-	return m_iUnitClassType;
+	return m_eUnitClassType;
 }
 int CvUnitInfo::getSpecialUnitType() const
 {
@@ -3645,6 +3652,7 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iMoves);
 	stream->Read(&m_iWorkRate);
 	stream->Read(&m_iWorkRateModifier);
+	stream->Read(&m_iGoldFromGoodiesAndChiefsModifier); // WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
 	stream->Read(&m_iMissionaryRateModifier);
 	stream->Read(&m_iNativeTradeRateModifier); // WTP, ray, Native Trade Posts - START
 	stream->Read(&m_iCombat);
@@ -3666,7 +3674,7 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iBarracksSpaceNeeded); // WTP, ray, new Barracks System - START
 	stream->Read(&m_iAssetValue);
 	stream->Read(&m_iPowerValue);
-	stream->Read(&m_iUnitClassType);
+	stream->Read(&m_eUnitClassType);
 	stream->Read(&m_iSpecialUnitType);
 	stream->Read(&m_iUnitCaptureClassType);
 	stream->Read(&m_iUnitCombatType);
@@ -3874,6 +3882,7 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iMoves);
 	stream->Write(m_iWorkRate);
 	stream->Write(m_iWorkRateModifier);
+	stream->Write(m_iGoldFromGoodiesAndChiefsModifier); // WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
 	stream->Write(m_iMissionaryRateModifier);
 	stream->Write(m_iNativeTradeRateModifier); // WTP, ray, Native Trade Posts - START
 	stream->Write(m_iCombat);
@@ -3895,7 +3904,7 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iBarracksSpaceNeeded); // WTP, ray, new Barracks System - START
 	stream->Write(m_iAssetValue);
 	stream->Write(m_iPowerValue);
-	stream->Write(m_iUnitClassType);
+	stream->Write(m_eUnitClassType);
 	stream->Write(m_iSpecialUnitType);
 	stream->Write(m_iUnitCaptureClassType);
 	stream->Write(m_iUnitCombatType);
@@ -4020,8 +4029,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	int j=0;				//loop counter
 	int k=0;				//loop counter
 	int iNumSibs=0;				// the number of siblings the current xml node has
-	pXML->GetChildXmlValByName(szTextVal, "Class");
-	m_iUnitClassType = pXML->FindInInfoClass(szTextVal);
+	pXML->GetEnum(getType(), m_eUnitClassType, "Class");
 	pXML->GetChildXmlValByName(szTextVal, "Special");
 	m_iSpecialUnitType = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "Capture");
@@ -4143,6 +4151,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iMoves, "iMoves");
 	pXML->GetChildXmlValByName(&m_iWorkRate, "iWorkRate");
 	pXML->GetChildXmlValByName(&m_iWorkRateModifier, "iWorkRateModifier");
+	pXML->GetChildXmlValByName(&m_iGoldFromGoodiesAndChiefsModifier, "iGoldFromGoodiesAndChiefsModifier"); // WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
 	pXML->GetChildXmlValByName(&m_iMissionaryRateModifier, "iMissionaryRateModifier");
 	pXML->GetChildXmlValByName(&m_iNativeTradeRateModifier, "iNativeTradeRateModifier"); // WTP, ray, Native Trade Posts - START
 	pXML->SetVariableListTagPair(&m_abTerrainImpassable, "TerrainImpassables", GC.getNumTerrainInfos(), false);
@@ -13962,6 +13971,14 @@ bool CvGameText::readString(CvXMLLoadUtility* pXML, CvWString &wszTextVal, const
 		return false;
 	}
 
+	wszTextVal = convertFromUTF8(szBuffer, !bLanguageFound, szFileName, szType);
+	return true;
+}
+
+CvWString CvGameText::convertFromUTF8(const CvString szBuffer, bool bFallback, const char *szFileName, const char* szType)
+{
+	CvWString wszTextVal;
+
 	for (unsigned int i = 0; i < szBuffer.size(); ++i)
 	{
 		unsigned int iBuffer = szBuffer.c_str()[i] & 0xFF; // GetBits doesn't work if it wants to read all the bits, like 8 bits from a byte
@@ -14008,7 +14025,7 @@ bool CvGameText::readString(CvXMLLoadUtility* pXML, CvWString &wszTextVal, const
 
 		if (iReturnVal != 1)
 		{
-			if (!bLanguageFound && getCodePage() != 1252)
+			if (bFallback && getCodePage() != 1252)
 			{
 				// Convert to ASCII if possible as 0x7F and below is the same for all code pages
 				switch (iBuffer)
@@ -14152,7 +14169,7 @@ bool CvGameText::readString(CvXMLLoadUtility* pXML, CvWString &wszTextVal, const
 		wchar_t buffer = iChar;
 		wszTextVal.append(&buffer, 1);
 	}
-	return true;
+	return wszTextVal;
 }
 
 //////////////////////////////////////////////////////////////////////////

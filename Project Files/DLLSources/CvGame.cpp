@@ -4089,7 +4089,7 @@ void CvGame::resetTurnTimer()
 			{
 				// Let's allow more time for the initial turn
 				TurnTimerTypes eTurnTimer = GC.getInitCore().getTurnTimer();
-				FAssertMsg(eTurnTimer >= 0 && eTurnTimer < GC.getNumTurnTimerInfos(), "Invalid TurnTimer selection in InitCore");
+				FAssertMsg(VARINFO<TurnTimerTypes>::isInRange(eTurnTimer), "Invalid TurnTimer selection in InitCore");
 				iTurnLen = (iTurnLen * GC.getTurnTimerInfo(eTurnTimer).getFirstTurnMultiplier());
 			}
 			// Set the current turn slice to start the 'timer'
@@ -4148,7 +4148,7 @@ int CvGame::getMaxTurnLen()
 
 		// Now return turn len based on base len and unit and city bonuses
 		TurnTimerTypes eTurnTimer = GC.getInitCore().getTurnTimer();
-		FAssertMsg(eTurnTimer >= 0 && eTurnTimer < GC.getNumTurnTimerInfos(), "Invalid TurnTimer Selection in InitCore");
+		FAssertMsg(VARINFO<TurnTimerTypes>::isInRange(eTurnTimer), "Invalid TurnTimer Selection in InitCore");
 		return ( GC.getTurnTimerInfo(eTurnTimer).getBaseTime() +
 			    (GC.getTurnTimerInfo(eTurnTimer).getCityBonus()*iMaxCities) +
 				(GC.getTurnTimerInfo(eTurnTimer).getUnitBonus()*iMaxUnits) );

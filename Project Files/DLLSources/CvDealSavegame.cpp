@@ -35,6 +35,7 @@ const char* getSavedEnumNameDeal(SavegameVariableTypes eType)
 		case DealSave_firstTrades: return "DealSave_firstTrades";
 		case DealSave_secondTrades: return "DealSave_secondTrades";
 	}
+	FAssertMsg(0, "Missing case");
 	return "";
 }
 

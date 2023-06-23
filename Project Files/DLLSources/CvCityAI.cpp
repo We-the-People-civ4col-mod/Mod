@@ -956,7 +956,7 @@ BuildingTypes CvCityAI::AI_bestBuildingIgnoreRequirements(int iFocusFlags, int i
 
 		if ((eLoopBuilding != NO_BUILDING) && (!isHasConceptualBuilding(eLoopBuilding)))
 		{
-			if (canConstruct(eLoopBuilding), true, true, true)
+			if (canConstruct(eLoopBuilding, true, true, true))
 			{
 				int iValue = AI_buildingValue(eLoopBuilding, iFocusFlags);
 
@@ -2300,7 +2300,7 @@ void CvCityAI::AI_doHurry(bool bForce)
 			!checkRequiredYields(ORDER_CONSTRUCT, eLoopBuilding, YIELD_HAMMERS))
 		{
 			// Need to push the order to make the hurry computation correct since only the current build is considered
-			pushOrderInternal(ORDER_CONSTRUCT, eLoopBuilding);
+			pushOrderInternal(eLoopBuilding);
 			const int iHurryCost = hurryGold(eGoldHurry);
 			buildingHurryCostList.push_back(std::make_pair(iHurryCost, eLoopBuilding));
 			popOrderInternal();
@@ -2357,7 +2357,7 @@ void CvCityAI::AI_doHurry(bool bForce)
 			!checkRequiredYields(ORDER_TRAIN, eLoopUnit, YIELD_HAMMERS))
 		{
 			// Need to push the order to make the hurry computation correct since only the current build is considered
-			pushOrderInternal(ORDER_TRAIN, eLoopUnit);
+			pushOrderInternal(eLoopUnit);
 			const int iHurryCost = hurryGold(eGoldHurry);
 			unitHurryCostList.push_back(std::make_pair(iHurryCost, eLoopUnit));
 			popOrderInternal();
@@ -4998,8 +4998,9 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 			break;
 		case YIELD_CRIME: // WTP, ray, Crime and Law - START
 			break;
-		case YIELD_CANNONS:
 		case YIELD_BLACK_POWDER:
+			break;
+		case YIELD_CANNONS:
 			// Erik: Since the AI cannot use this yield for military purposes, I've decided to
 			// block it so that production is not diverted to it. (cannons are usually just sold in Europe
 			// without this fix)
@@ -6704,15 +6705,14 @@ void CvCityAI::AI_educateStudent(int iUnitId)
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	UnitTypes eBestUnit = NO_UNIT;
 	int iBestValue = 0;
-	for (int i = 0; i < GC.getNumUnitInfos(); ++i)
+	for (UnitTypes eLoopUnit = FIRST_UNIT; eLoopUnit < NUM_UNIT_TYPES; ++eLoopUnit)
 	{
-		int iTuition = getSpecialistTuition((UnitTypes) i);
+		int iTuition = getSpecialistTuition(eLoopUnit);
 		if (GET_PLAYER(getOwnerINLINE()).getGold() >= iTuition && iTuition >= 0)
 		{
-			UnitTypes eLoopUnit = (UnitTypes)i;
-			CvUnitInfo& kUnit = GC.getUnitInfo(eLoopUnit);
+			const CvUnitInfo& kUnit = GC.getUnitInfo(eLoopUnit);
 
-			UnitClassTypes eUnitClassType = (UnitClassTypes)kUnit.getUnitClassType(); // R&R, ray, changed
+			const UnitClassTypes eUnitClassType = kUnit.getUnitClassType(); // R&R, ray, changed
 
 			int iValue = 50;
 

@@ -213,6 +213,7 @@
 	<ElementType name="iCaptureShipsChanceIncrease" content="textOnly" dt:type="int"/>
 	<ElementType name="iWorkRate" content="textOnly" dt:type="int"/>
 	<ElementType name="iWorkRateModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iGoldFromGoodiesAndChiefsModifier" content="textOnly" dt:type="int"/>																				  
 	<ElementType name="iMissionaryRateModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iNativeTradeRateModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="bTerrainImpassable" content="textOnly" dt:type="boolean"/>
@@ -513,6 +514,7 @@
 		<element type="iCaptureShipsChanceIncrease"/>
 		<element type="iWorkRate"/>
 		<element type="iWorkRateModifier"/>
+		<element type="iGoldFromGoodiesAndChiefsModifier" minOccurs="0"/>
 		<element type="iMissionaryRateModifier"/>
 		<element type="iNativeTradeRateModifier"/>
 		<element type="TerrainImpassables"/>

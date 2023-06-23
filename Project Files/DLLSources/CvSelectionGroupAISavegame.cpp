@@ -42,6 +42,7 @@ const char* getSavedEnumNameSelectionGroupAi(SavegameVariableTypes eType)
 	case SelectionGroupAISave_GroupAttackX: return "SelectionGroupAISave_GroupAttackX";
 	case SelectionGroupAISave_GroupAttackY: return "SelectionGroupAISave_GroupAttackY";
 	}
+	FAssertMsg(0, "Missing case");
 	return "";
 }
 

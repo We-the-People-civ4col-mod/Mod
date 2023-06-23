@@ -39,11 +39,8 @@
 #include "CyArgsList.h"
 #include "CyPlot.h"
 
-std::vector<CvBuildingInfo*> vpBuildingInfos;
-bool bIsBuildingInfosInitialized = false;
+#include "SavegameConstants.h"
 
-std::vector<CvUnitInfo*> vpUnitInfos;
-bool bIsUnitInfosInitialized = false;
 
 class EXE_CvActionInfo : public CvActionInfo
 {
@@ -632,13 +629,16 @@ public:
 
 		plot
 			?plot@CvCity@@QBEPAVCvPlot@@XZ=?plot@EXE_CvCity@@QBEPAVCvPlot@@XZ
-
-		popOrder
-			?popOrder@CvCity@@QAEXH_N0@Z=?popOrder@EXE_CvCity@@QAEXH_N0@Z
-
-		pushOrder
-			?pushOrder@CvCity@@QAEXW4OrderTypes@@HH_N111@Z=?pushOrder@EXE_CvCity@@QAEXW4OrderTypes@@HH_N111@Z
-
+			*/
+	DllExport void pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bool bPop, bool bAppend, bool bForce = false)
+	{
+		CvCity::pushOrder(eOrder, iData1, iData2, bSave, bPop, bAppend, bForce);
+	}
+	DllExport void popOrder(int iNum, bool bFinish = false, bool bChoose = false)
+	{
+		CvCity::popOrder(iNum, bFinish, bChoose);
+	}
+	/*
 		setBillboardDirty
 			?setBillboardDirty@CvCity@@QAEX_N@Z=?setBillboardDirty@EXE_CvCity@@QAEX_N@Z
 
@@ -1469,22 +1469,22 @@ public:
 */
 	DllExport std::vector<CvBuildingInfo*>& getBuildingInfo()
 	{
-		if (!bIsBuildingInfosInitialized)
+		static std::vector<CvBuildingInfo*> vector;
+
+		if (vector.size() == 0)
+		{
+			vector = CvGlobals::getBuildingInfo();
+			while(vector.size() < static_cast<unsigned int>(getNumBuildingInfos()))
 			{
-				vpBuildingInfos.clear();
-				vpBuildingInfos = CvGlobals::getBuildingInfo();
-				while(vpBuildingInfos.size() < static_cast<unsigned int>(CvGlobals::getNumBuildingInfosFakeExe()))
-				{
-					vpBuildingInfos.push_back(&CvGlobals::getBuildingInfo(BUILDING_PLACEHOLDER));
-				}
-				bIsBuildingInfosInitialized = true;
+				vector.push_back(&CvGlobals::getBuildingInfo(BUILDING_PLACEHOLDER));
 			}
-		return vpBuildingInfos;
+		}
+		return vector;
 	}
 
 	DllExport CvBuildingInfo& getBuildingInfo(BuildingTypes eBuildingNum)
 	{
-		if (eBuildingNum <= BUILDING_PLACEHOLDER)
+		if (eBuildingNum < NUM_BUILDING_TYPES)
 		{
 			return CvGlobals::getBuildingInfo(eBuildingNum);
 		}
@@ -1768,7 +1768,20 @@ public:
 		// show the exe an arbitrarily high number of building types because that somehow affects savegame padding
 		// the free slots will be directed to the BUILDING_PLACEHOLDER by getBuildingInfo()
 		// This is meant to be a workaround for savegames becoming incompatible each time a building is added or removed
-		return CvGlobals::getNumBuildingInfosFakeExe(); // NUM_BUILDING_TYPES;
+		if (!m_bExeXmlLengthOverride)
+		{
+			return BUILDING_PLACEHOLDER;
+		}
+		static int iNumBuildings = 0;
+		if (iNumBuildings == 0)
+		{
+			iNumBuildings = SAVEGAME_EXE_FALSE_XML_BUILDINGS;
+			while (iNumBuildings <= NUM_BUILDING_TYPES)
+			{
+				iNumBuildings += 25;
+			}
+		}
+		return iNumBuildings;
 	}
 
 	/*
@@ -1901,7 +1914,20 @@ public:
 		// show the exe an arbitrarily high number of unit types because that somehow affects savegame padding
 		// the free slots will be directed to the UNIT_PLACEHOLDER by getUnitInfo()
 		// This is meant to be a workaround for savegames becoming incompatible each time a unit is added or removed
-		return CvGlobals::getNumUnitInfosFakeExe(); // NUM_UNIT_TYPES;
+		if (!m_bExeXmlLengthOverride)
+		{
+			return UNIT_PLACEHOLDER;
+		}
+		static int iNumUnits = 0;
+		if (iNumUnits == 0)
+		{
+			iNumUnits = SAVEGAME_EXE_FALSE_XML_UNITS;
+			while (iNumUnits <= NUM_UNIT_TYPES)
+			{
+				iNumUnits += 25;
+			}
+		}
+		return iNumUnits;
 	}
 
 			/*
@@ -2032,23 +2058,23 @@ public:
 	// this one might not be necessary
 	DllExport std::vector<CvUnitInfo*>& getUnitInfo()
 	{
-		if (!bIsUnitInfosInitialized)
+		static std::vector<CvUnitInfo*> vector;
+
+		if (vector.size() == 0)
+		{
+			vector = CvGlobals::getUnitInfo();
+			while(vector.size() < static_cast<unsigned int>(getNumUnitInfos()))
 			{
-				vpUnitInfos.clear();
-				vpUnitInfos = CvGlobals::getUnitInfo();
-				while(vpUnitInfos.size() < static_cast<unsigned int>(CvGlobals::getNumUnitInfosFakeExe()))
-				{
-					vpUnitInfos.push_back(&CvGlobals::getUnitInfo(UNIT_PLACEHOLDER));
-				}
-				bIsUnitInfosInitialized = true;
+				vector.push_back(&CvGlobals::getUnitInfo(UNIT_PLACEHOLDER));
 			}
-		return vpUnitInfos;
+		}
+		return vector;
 	}
 
 	// this is probably the relevant one
 	DllExport	CvUnitInfo& getUnitInfo(UnitTypes eUnitNum)
 	{
-		if (eUnitNum <= UNIT_PLACEHOLDER)
+		if (eUnitNum < NUM_UNIT_TYPES)
 		{
 			return CvGlobals::getUnitInfo(eUnitNum);
 		}

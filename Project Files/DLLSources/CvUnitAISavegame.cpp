@@ -42,6 +42,7 @@ const char* getSavedEnumNameUnitAi(SavegameVariableTypes eType)
 	case UnitSaveAI_AutomatedAbortTurn: return "UnitSaveAI_AutomatedAbortTurn";
 
 }
+	FAssertMsg(0, "Missing case");
 	return "";
 }
 

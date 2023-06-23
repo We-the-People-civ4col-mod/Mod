@@ -314,6 +314,23 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
+       <UnitArtInfo>
+            <Type>ART_DEF_UNIT_ESCAVADOR</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,7,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Escavador.dds</FullLengthIcon>
+            <fScale>0.51</fScale>
+            <fInterfaceScale>0.86</fInterfaceScale>
+            <NIF>Art/Units/Unique_units/Escavador/Escavador.nif</NIF>
+            <KFM>Art/Units/Expert_Ore_Miner/Expert_Ore_Miner.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_WINE_MAKER</Type>
             <Button>,Art/colonization_atlas_units.dds,5,3</Button>
@@ -399,6 +416,23 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
+       <UnitArtInfo>
+            <Type>ART_DEF_UNIT_DANSK_FISKER</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,1,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Dansk_Fisker.dds</FullLengthIcon>
+            <fScale>0.49</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Unique_units/Dansk_Fisker/Expert_Fisherman.nif</NIF>
+            <KFM>Art/Units/Expert_Fisherman/Expert_Fisherman.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_PEARLS_HUNTER</Type>
             <Button>,Art/colonization_atlas_units.dds,1,2</Button>
@@ -423,6 +457,23 @@
             <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Master_Blacksmith/Master_Blacksmith.nif</NIF>
+            <KFM>Art/Units/Master_Blacksmith/Master_Blacksmith.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_JARNSMED</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,4,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Jarnsmed.dds</FullLengthIcon>
+            <fScale>0.50</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Unique_units/Jarnsmed/Jarnsmed.nif</NIF>
             <KFM>Art/Units/Master_Blacksmith/Master_Blacksmith.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -492,6 +543,23 @@
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Master_Distiller/Master_Distiller.nif</NIF>
             <KFM>Art/Units/Master_Distiller/Master_Distiller.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_COLONIAL_DISTILLER</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,6,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Colonial_Distiller.dds</FullLengthIcon>
+            <fScale>0.50</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Unique_units/Colonial_Distiller/Colonial_Distiller.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Vintager/Master_Distiller.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -623,6 +691,23 @@
             </AudioRunSounds>
         </UnitArtInfo>
         <UnitArtInfo>
+            <Type>ART_DEF_UNIT_FRENCH_FURRIER</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,8,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/French_Furrier.dds</FullLengthIcon>
+            <fScale>0.48</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Unique_units/French_Furrier/French_Furrier.nif</NIF>
+            <KFM>Art/Units/Master_Fur_Trader/Master_Fur_Trader.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_TANNER</Type>
             <Button>,Art/colonization_atlas_units.dds,3,4.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/tanner.dds</FullLengthIcon>
@@ -646,6 +731,23 @@
             <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Master_Carpenter/Master_Carpenter.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Carpenter/Master_Carpenter.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_TIMMERMAN</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,2,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Timmerman.dds</FullLengthIcon>
+            <fScale>0.50</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Unique_Units/Timmerman/Master_Carpenter.nif</NIF>
             <KFM>Art/Units/Settler/Master_Carpenter/Master_Carpenter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -750,6 +852,23 @@
             <fScale>0.51</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Expert_Lumberjack/Expert_Lumberjack.nif</NIF>
+            <KFM>Art/Units/Expert_Lumberjack/Expert_Lumberjack.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_SIBERIAN_LUMBERJACK</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,3,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Siberian_Lumberjack.dds</FullLengthIcon>
+            <fScale>0.51</fScale>
+            <fInterfaceScale>0.85</fInterfaceScale>
+            <NIF>Art/Units/Unique_units/Siberian_Lumberjack/Expert_Lumberjack.nif</NIF>
             <KFM>Art/Units/Expert_Lumberjack/Expert_Lumberjack.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -12552,6 +12671,23 @@
             </AudioRunSounds>
         </UnitArtInfo>
         <UnitArtInfo>
+            <Type>ART_DEF_UNIT_EXPLORADOR</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,5,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Explorador.dds</FullLengthIcon>
+            <fScale>0.48</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Unique_units/Explorador/Unit/Explorador.nif</NIF>
+            <KFM>Art/Units/Unique_units/Explorador/Unit/Explorador.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_CONVERT_SCOUT</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Scout_Seasoned.dds</FullLengthIcon>
@@ -12592,6 +12728,23 @@
             <fScale>0.6</fScale>
             <fInterfaceScale>0.68</fInterfaceScale>
             <NIF>Art/Units/Seasoned_Scout_Mnt/Seasoned_Scout_Mnt.nif</NIF>
+            <KFM>Art/Units/Seasoned_Scout_Mnt/Seasoned_Scout_Mnt.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>1</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_PROFESSION_UNIT_EXPLORADOR</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,5,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Explorador.dds</FullLengthIcon>
+            <fScale>0.6</fScale>
+            <fInterfaceScale>0.68</fInterfaceScale>
+            <NIF>Art/Units/Unique_units/Explorador/Seasoned_Scout_Mnt/Explorador.nif</NIF>
             <KFM>Art/Units/Seasoned_Scout_Mnt/Seasoned_Scout_Mnt.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>

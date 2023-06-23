@@ -45,6 +45,7 @@ const char* getSavedEnumNameSelectionGroup(SavegameVariableTypes eType)
 	case SelectionGroupSave_missionQueue: return "SelectionGroupSave_missionQueue";
 	case SelectionGroupSave_TradeRoutes: return "SelectionGroupSave_TradeRoutes";
 	}
+	FAssertMsg(0, "Missing case");
 	return "";
 }
 

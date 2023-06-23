@@ -64,19 +64,10 @@
     <ClCompile Include="DLLSources\CvMapGenerator.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
-    <ClCompile Include="DLLSources\CvPlayerAI.cpp">
-      <Filter>CV\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CvPlayerCivEffect.cpp">
-      <Filter>CV\CPP</Filter>
-    </ClCompile>
     <ClCompile Include="DLLSources\CvPopupInfo.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
     <ClCompile Include="DLLSources\CvMap.cpp">
-      <Filter>CV\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CvPlayer.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
     <ClCompile Include="DLLSources\CvPopupReturn.cpp">
@@ -355,12 +346,6 @@
     <ClCompile Include="DLLSources\CvPlotFunctions.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
-    <ClCompile Include="DLLSources\CvPlayerAISavegame.cpp">
-      <Filter>CV\Savegames</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CvPlayerSavegame.cpp">
-      <Filter>CV\Savegames</Filter>
-    </ClCompile>
     <ClCompile Include="DLLSources\CvPopupInfoSavegame.cpp">
       <Filter>CV\Savegames</Filter>
     </ClCompile>
@@ -475,14 +460,38 @@
     <ClCompile Include="DLLSources\CvXMLLoadUtilityInit.cpp">
       <Filter>Classes\XML\CPP</Filter>
     </ClCompile>
-    <ClCompile Include="DLLSources\StartupErrorChecking.cpp">
-      <Filter>CV\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\AlertWindow.cpp">
-      <Filter>Classes\Utilities\CPP</Filter>
-    </ClCompile>
     <ClCompile Include="DLLSources\OpenURL.cpp">
       <Filter>Classes\Utilities\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvPlayerSavegame.cpp">
+      <Filter>Classes\Player\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvPlayerAISavegame.cpp">
+      <Filter>Classes\Player\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvPlayer.cpp">
+      <Filter>Classes\Player\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvPlayerAI.cpp">
+      <Filter>Classes\Player\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvPlayerCivEffect.cpp">
+      <Filter>Classes\Player\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\PlayerHelperFunctions.cpp">
+      <Filter>Classes\Player\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\AlertWindow.cpp">
+      <Filter>Classes\AlertWindow\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\SavegameAlert.cpp">
+      <Filter>Classes\AlertWindow\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\StartupErrorChecking.cpp">
+      <Filter>Classes\AlertWindow\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvEnums.cpp">
+      <Filter>CV\CPP</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -598,15 +607,6 @@
       <Filter>CV\Header</Filter>
     </ClInclude>
     <ClInclude Include="DLLSources\CvMapGenerator.h">
-      <Filter>CV\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CvPlayer.h">
-      <Filter>CV\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CvPlayerAI.h">
-      <Filter>CV\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CvPlayerCivEffect.h">
       <Filter>CV\Header</Filter>
     </ClInclude>
     <ClInclude Include="DLLSources\CvPlot.h">
@@ -921,11 +921,29 @@
     <ClInclude Include="DLLSources\StartupErrorChecking.h">
       <Filter>CV\Header</Filter>
     </ClInclude>
-    <ClInclude Include="DLLSources\AlertWindow.h">
-      <Filter>Classes\Utilities\Header</Filter>
-    </ClInclude>
     <ClInclude Include="DLLSources\OpenURL.h">
       <Filter>Classes\Utilities\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvPlayer.h">
+      <Filter>Classes\Player\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvPlayerAI.h">
+      <Filter>Classes\Player\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvPlayerCivEffect.h">
+      <Filter>Classes\Player\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\PlayerHelperFunctions.h">
+      <Filter>Classes\Player\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\SavegameAlert.h">
+      <Filter>Classes\AlertWindow\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\AlertWindow.h">
+      <Filter>Classes\AlertWindow\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\SavegameConstants.h">
+      <Filter>CV\Savegames</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1026,6 +1044,24 @@
     </Filter>
     <Filter Include="Classes\Utilities\Header">
       <UniqueIdentifier>{41b6075f-ffb6-4adc-a7ab-c8985a5a14ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Player">
+      <UniqueIdentifier>{96e572e2-dab5-4df9-9268-02aaa80f74b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Player\CPP">
+      <UniqueIdentifier>{f0d3b017-e01d-4069-9299-4294aaee6c47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Player\Header">
+      <UniqueIdentifier>{2546ffe1-0517-454d-989a-c48759383617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\AlertWindow">
+      <UniqueIdentifier>{9daa7284-7523-453a-87bd-252d5efad3c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\AlertWindow\Header">
+      <UniqueIdentifier>{d8b54943-2245-4a87-aad7-6465aae47324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\AlertWindow\CPP">
+      <UniqueIdentifier>{20d5ec07-833a-419a-8744-1ea196a2e052}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

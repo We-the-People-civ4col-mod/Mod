@@ -13,6 +13,10 @@ EXPORTS
 ?getKFM@CvArtInfoAsset@@QBEPBDXZ=?getKFM@EXE_CvArtInfoAsset@@QBEPBDXZ
 ?getNIF@CvArtInfoAsset@@QBEPBDXZ=?getNIF@EXE_CvArtInfoAsset@@QBEPBDXZ
 
+; CvCity
+?popOrder@CvCity@@QAEXH_N0@Z=?popOrder@EXE_CvCity@@QAEXH_N0@Z
+?pushOrder@CvCity@@QAEXW4OrderTypes@@HH_N111@Z=?pushOrder@EXE_CvCity@@QAEXW4OrderTypes@@HH_N111@Z
+
 ; CvGlobals
 ?getBuildingInfo@CvGlobals@@QAEAAVCvBuildingInfo@@W4BuildingTypes@@@Z=?getBuildingInfo@EXE_CvGlobals@@QAEAAVCvBuildingInfo@@W4BuildingTypes@@@Z
 ?getBuildingInfo@CvGlobals@@QAEAAV?$vector@PAVCvBuildingInfo@@V?$allocator@PAVCvBuildingInfo@@@std@@@std@@XZ=?getBuildingInfo@EXE_CvGlobals@@QAEAAV?$vector@PAVCvBuildingInfo@@V?$allocator@PAVCvBuildingInfo@@@std@@@std@@XZ

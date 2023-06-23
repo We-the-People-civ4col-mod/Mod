@@ -1,6 +1,6 @@
 ##############################################################################
 ## File: FaireWeather.py version 1.07
-## Author: Rich Marinaccio / Revisions by TAC Team
+## Author: Rich Marinaccio / Revisions by TAC Team, RaR Team and WTP Team
 ## Copyright 2008 Rich Marinaccio
 ##############################################################################
 ##
@@ -91,7 +91,7 @@ class MapConstants :
 ## GLOBAL TUNING VARIABLES: Change these to customize the map results
 
         #Percent of land vs. water
-        self.landPercent = 0.38
+        self.landPercent = 0.48
 
         #This map tries to maintain a specific distance to Europe over
         #the entire coast. The distance is greater than the default so that
@@ -353,7 +353,7 @@ class MapConstants :
         self.DESERT = 5
         self.TUNDRA = 6
         self.SNOW = 7
-	#Androrc Savannah
+        #Androrc Savannah
         self.SAVANNAH = 8
         #Androrc End
         self.PLAINS = 9
@@ -472,12 +472,15 @@ class MapConstants :
                 self.minLargeRiverLength = 11
             elif selectionID == 5:
                 self.minLargeRiverLength = 13
+            #Landsize
             selectionID = mmap.getCustomMapOption(self.getMapOption("land percent"))
             if selectionID == 0:
                 self.landPercent = 0.25
+            elif selectionID == 1:
+                self.landPercent = 0.38
             elif selectionID == 2:
                 self.landPercent = 0.45
-            elif selectionID == 2:
+            elif selectionID == 3:
                 self.landPercent = 0.55
            
         else:
@@ -489,14 +492,13 @@ class MapConstants :
             self.hmMaxGrain = 8
             self.hmNumberOfPlates = int(float(self.hmWidth * self.hmHeight) * 0.0030)
             self.minSeedRange = 10
-          #  self.landPercent = 0.28
             self.plateMapScale = 0.5
             self.hmNoiseLevel = 1.5
     
             self.plateGrowthChanceY = 0.33
             self.LargeRiverThreshold = 48.0
             self.minLargeRiverLength = 7
-            self.landPercent = 0.38
+            self.landPercent = 0.45
         return
     
 mc = MapConstants()
@@ -2107,14 +2109,18 @@ class SmallMaps :
                         self.terrainMap[i] = mc.GRASS
                     else:
                         if self.averageTempMap[i] > (PRand.random() * (mc.alwaysMarshTemp - mc.MinMarshTemp)) + mc.MinMarshTemp:
-							#ray Savannah
-							if PRand.random() <= 0.5:
-								self.terrainMap[i] = mc.MARSH
-							else:
-								self.terrainMap[i] = mc.SAVANNAH
-							#ray Savannah End
+                            #ray Savannah
+                            #Ramstormp Marsh Hill
+                            if PRand.random() <= 0.3: 
+                                self.terrainMap[i] = mc.MARSH
+                                self.plotMap[i] = mc.HILLS
+                            elif PRand.random() <= 0.6:
+                                self.terrainMap[i] = mc.MARSH
+                            else:
+                                self.terrainMap[i] = mc.SAVANNAH
+                            #ray Savannah End
                         else:
-							self.terrainMap[i] = mc.GRASS
+                            self.terrainMap[i] = mc.GRASS
 
         #Make sure ice is always higher than tundra, and tundra is always higher than
         #everything else
@@ -4392,7 +4398,6 @@ def getNumCustomMapOptionValues(argsList):
             return 6
         elif mc.mapOptionNames[optionID] == "land percent":
             return 4
-        
         return 0
 	
 def getCustomMapOptionDescAt(argsList):
@@ -4652,7 +4657,7 @@ def getGridSize(argsList):
             WorldSizeTypes.WORLDSIZE_STANDARD:	(30 + mc.distanceToEurope * 2,60),
             WorldSizeTypes.WORLDSIZE_LARGE:		(40 + mc.distanceToEurope * 2,80),
             WorldSizeTypes.WORLDSIZE_HUGE:		(58,100),
-            WorldSizeTypes.WORLDSIZE_MASSIVE:		(85,137),
+            WorldSizeTypes.WORLDSIZE_MASSIVE:	(85,137),
 			WorldSizeTypes.WORLDSIZE_GIGANTIC:	(127,184)
     }
     if (argsList[0] == -1): # (-1,) is passed to function on loads
@@ -5091,8 +5096,8 @@ def generateWetland():
     terrainTundra = gc.getInfoTypeForString("TERRAIN_TUNDRA")
     
     wetlandChance = 0.2 # Baseline chance for converting terrain
-    wetlandAdjacentChance = 0.3 # Higher chance if there's already adjacent wetland
-    wetlandHillChance = 0.4
+    wetlandAdjacentChance = 0.4 # Higher chance if there's already adjacent wetland
+    wetlandHillChance = 0.5
 
     # Convert non-dry river plots
     for y in range(mc.height):
@@ -5105,10 +5110,10 @@ def generateWetland():
                             if PRand.random() <= wetlandAdjacentChance:
                                 plot.setTerrainType(terrainWetland, True, True)
                                 if PRand.random() <= wetlandHillChance:
-                                	plot.setPlotType(PlotTypes.PLOT_HILLS,True,True)       
+                                	plot.setPlotType(PlotTypes.PLOT_HILLS,True,True)
                         else:
                             if PRand.random() <= wetlandChance:
-                                plot.setTerrainType(terrainWetland, True, True)                    
+                                plot.setTerrainType(terrainWetland, True, True)
     
     # Convert non-dry plots adjacent to lakes and coast
     for y in range(mc.height):
@@ -5119,10 +5124,10 @@ def generateWetland():
                     if not isAnyAdjacentPlotTerrainType(x, y, terrainDesert) and not isAnyAdjacentPlotTerrainType(x, y, terrainTundra):
                         if isAnyAdjacentPlotTerrainType(x, y, terrainWetland):
                             if PRand.random() <= wetlandAdjacentChance:
-                                plot.setTerrainType(terrainWetland, True, True)               
+                                plot.setTerrainType(terrainWetland, True, True)
                         else:
                             if PRand.random() <= wetlandChance:
-                                plot.setTerrainType(terrainWetland, True, True)                    
+                                plot.setTerrainType(terrainWetland, True, True)
                         
 def afterGeneration():
     gc = CyGlobalContext()

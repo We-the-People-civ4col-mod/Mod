@@ -354,6 +354,10 @@
                     <UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
                     <UnitType>UNIT_CHRISTIAN_MISSIONARY_PROT</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_DISTILLER</UnitClassType>
+                    <UnitType>UNIT_COLONIAL_DISTILLER</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -784,6 +788,10 @@
                     <UnitClassType>UNITCLASS_PREACHER</UnitClassType>
                     <UnitType>UNIT_PRIEST</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FUR_TRADER</UnitClassType>
+                    <UnitType>UNIT_FRENCH_FURRIER</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -1182,6 +1190,10 @@
                     <UnitClassType>UNITCLASS_PREACHER</UnitClassType>
                     <UnitType>UNIT_PRIEST</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SCOUT</UnitClassType>
+                    <UnitType>UNIT_EXPLORADOR</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -1533,6 +1545,10 @@
                     <UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
                     <UnitType>UNIT_CHRISTIAN_MISSIONARY_PROT</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
+                    <UnitType>UNIT_TIMMERMAN</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -1858,6 +1874,10 @@
                     <UnitClassType>UNITCLASS_PREACHER</UnitClassType>
                     <UnitType>UNIT_PRIEST</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_PROSPECTOR</UnitClassType>
+                    <UnitType>UNIT_ESCAVADOR</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -2135,6 +2155,10 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
                     <UnitType>UNIT_CHRISTIAN_MISSIONARY_PROT</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FISHERMAN</UnitClassType>
+                    <UnitType>UNIT_DANSK_FISKER</UnitType>
                 </Unit>
             </Units>
             <Professions>
@@ -2447,6 +2471,10 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
                     <UnitType>UNIT_CHRISTIAN_MISSIONARY_PROT</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BLACKSMITH</UnitClassType>
+                    <UnitType>UNIT_JARNSMED</UnitType>
                 </Unit>
             </Units>
             <Professions>
@@ -2927,6 +2955,10 @@
                     <UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
                     <UnitType>UNIT_RUSSIAN_MISSIONARY</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_LUMBERJACK</UnitClassType>
+                    <UnitType>UNIT_SIBERIAN_LUMBERJACK</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -3132,6 +3164,10 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_DISTILLER</UnitClassType>
+                    <UnitType>UNIT_COLONIAL_DISTILLER</UnitType>
                 </Unit>
             </Units>
             <Professions>
@@ -3447,6 +3483,10 @@
                     <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FUR_TRADER</UnitClassType>
+                    <UnitType>UNIT_FRENCH_FURRIER</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -3757,6 +3797,10 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SCOUT</UnitClassType>
+                    <UnitType>UNIT_EXPLORADOR</UnitType>
                 </Unit>
             </Units>
             <Professions>
@@ -4072,6 +4116,14 @@
                     <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
+                    <UnitType>UNIT_CHRISTIAN_MISSIONARY_PROT</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
+                    <UnitType>UNIT_TIMMERMAN</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -4369,6 +4421,10 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_PROSPECTOR</UnitClassType>
+                    <UnitType>UNIT_ESCAVADOR</UnitType>
                 </Unit>
             </Units>
             <Professions>
@@ -4669,6 +4725,10 @@
                     <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FISHERMAN</UnitClassType>
+                    <UnitType>UNIT_DANSK_FISKER</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -4968,6 +5028,10 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BLACKSMITH</UnitClassType>
+                    <UnitType>UNIT_JARNSMED</UnitType>
                 </Unit>
             </Units>
             <Professions>
@@ -5271,6 +5335,10 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_LUMBERJACK</UnitClassType>
+                    <UnitType>UNIT_SIBERIAN_LUMBERJACK</UnitType>
                 </Unit>
             </Units>
             <Professions>

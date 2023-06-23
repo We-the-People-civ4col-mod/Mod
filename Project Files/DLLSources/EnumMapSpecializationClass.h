@@ -37,6 +37,7 @@ public:
 	void reset();
 
 	bool hasContent();
+	bool hasContent() const;
 
 	int getNumTrueElements() const;
 
@@ -91,6 +92,22 @@ void EnumMapBase<IndexType, T, 0, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TY
 
 template<class IndexType, class T, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 bool EnumMapBase<IndexType, T, 0, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>::hasContent()
+{
+	if (isAllocated())
+	{
+		for (LengthType i = (LengthType)0; i < NUM_ELEMENTS; ++i)
+		{
+			if (m_Array[i].hasContent())
+			{
+				return true;
+			}
+		}
+	}
+	return false;
+}
+
+template<class IndexType, class T, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+bool EnumMapBase<IndexType, T, 0, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>::hasContent() const
 {
 	if (isAllocated())
 	{
