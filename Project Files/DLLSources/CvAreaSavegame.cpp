@@ -41,6 +41,36 @@ enum SavegameVariableTypes
 	NUM_SAVE_ENUM_VALUES,
 };
 
+const char* getSavedEnumNameArea(SavegameVariableTypes eType)
+{
+	switch (eType)
+	{
+	case Save_END: return "Save_END";
+	case Save_ID: return "Save_ID";
+	case Save_NumTiles: return "Save_NumTiles";
+	case Save_NumOwnedTiles: return "Save_NumOwnedTiles";
+	case Save_NumRiverEdges: return "Save_NumRiverEdges";
+	case Save_NumUnits: return "Save_NumUnits";
+
+	case Save_NumCities: return "Save_NumCities";
+	case Save_NumStartingPlots: return "Save_NumStartingPlots";
+	case Save_bWater: return "Save_bWater";
+	case Save_UnitsPerPlayer: return "Save_UnitsPerPlayer";
+	case Save_CitiesPerPlayer: return "Save_CitiesPerPlayer";
+	case Save_PopulationPerPlayer: return "Save_PopulationPerPlayer";
+	case Save_Power: return "Save_Power";
+	case Save_BestFoundValue: return "Save_BestFoundValue";
+	case Save_NumRevealedTiles: return "Save_NumRevealedTiles";
+	case Save_AreaAIType: return "Save_AreaAIType";
+	case Save_YieldRateModifier: return "Save_YieldRateModifier";
+	case Save_NumTrainAIUnits: return "Save_NumTrainAIUnits";
+	case Save_iNumAIUnits: return "Save_iNumAIUnits";
+	case Save_TargetCities: return "Save_TargetCities";
+	}
+	FAssertMsg(0, "Missing case");
+	return "";
+}
+
 int getNumSavedEnumValuesArea()
 {
 	return NUM_SAVE_ENUM_VALUES;

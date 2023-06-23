@@ -481,7 +481,6 @@
     <ClCompile Include="DLLSources\PlayerHelperFunctions.cpp">
       <Filter>Classes\Player\CPP</Filter>
     </ClCompile>
-    <ClCompile Include="SavegameAlert.cpp" />
     <ClCompile Include="DLLSources\AlertWindow.cpp">
       <Filter>Classes\AlertWindow\CPP</Filter>
     </ClCompile>
@@ -490,6 +489,9 @@
     </ClCompile>
     <ClCompile Include="DLLSources\StartupErrorChecking.cpp">
       <Filter>Classes\AlertWindow\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvEnums.cpp">
+      <Filter>CV\CPP</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -55,6 +55,7 @@ const char* getSavedEnumNamePopupInfo(SavegameVariableTypes eType)
 	case PopupInfoSave_PythonModule: return "PopupInfoSave_PythonModule";
 	case PopupInfoSave_PythonButtons: return "PopupInfoSave_PythonButtons";
 	}
+	FAssertMsg(0, "Missing case");
 	return "";
 }
 

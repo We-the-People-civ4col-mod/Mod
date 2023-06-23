@@ -55,6 +55,7 @@ const char* getSavedEnumNameDiploParameters(SavegameVariableTypes eType)
 	case DiploParametersSave_Transport: return "DiploParametersSave_Transport";
 	case DiploParametersSave_City: return "DiploParametersSave_City";
 	}
+	FAssertMsg(0, "Missing case");
 	return "";
 }
 

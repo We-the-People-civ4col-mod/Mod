@@ -27,6 +27,7 @@ const char* getSavedEnumNameTradeRouteGroup(SavegameVariableTypes eType)
 	case TradeRouteGroupSave_Name: return "TradeRouteGroupSave_Name";
 	case TradeRouteGroupSave_Routes: return "TradeRouteGroupSave_Routes";
 	}
+	FAssertMsg(0, "Missing case");
 	return "";
 }
 

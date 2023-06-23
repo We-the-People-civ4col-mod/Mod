@@ -23,7 +23,9 @@ const char* getSavedEnumNameGameAi(SavegameVariableTypes eType)
 	case GameSaveAI_END: return "GameSaveAI_END";
 	case GameSaveAI_Pad: return "GameSaveAI_Pad";
 
-	}	return "";
+	}
+	FAssertMsg(0, "Missing case");
+	return "";
 }
 
 int getNumSavedEnumValuesGameAI()

@@ -147,7 +147,9 @@ const char* getSavedEnumNamePlayerAi(SavegameVariableTypes eType)
 		case PlayerSaveAI_StrategyStartedTurn: return "PlayerSaveAI_StrategyStartedTurn";
 		case PlayerSaveAI_StrategyData: return "PlayerSaveAI_StrategyData";
 
-	}	return "";
+	}
+	FAssertMsg(0, "Missing case");
+	return "";
 }
 
 int getNumSavedEnumValuesPlayerAI()

@@ -53,6 +53,7 @@ const char* getSavedEnumNameTeamAI(SavegameVariableTypes eType)
 	case TeamAISave_WarPlan: return "TeamAISave_WarPlan";
 	case TeamAISave_WorstEnemy: return "TeamAISave_WorstEnemy";
 	}
+	FAssertMsg(0, "Missing case");
 	return "";
 }
 

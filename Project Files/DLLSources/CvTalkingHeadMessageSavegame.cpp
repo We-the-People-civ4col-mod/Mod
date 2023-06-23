@@ -58,6 +58,7 @@ const char* getSavedEnumNameTalkingHeadMessage(SavegameVariableTypes eType)
 	case TalkingHeadMessageSave_Target: return "TalkingHeadMessageSave_Target";
 	case TalkingHeadMessageSave_Shown: return "TalkingHeadMessageSave_Shown";
 	}
+	FAssertMsg(0, "Missing case");
 	return "";
 }
 
