@@ -1377,7 +1377,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
-        <Russian>Мастер мясник птицы и свинины:Мастера мясник птицы и свинины </Russian>
+        <Russian>Мастер мясник птицы:Мастера мясники птицы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POULTRY_BUTCHER</Tag>
@@ -1402,7 +1402,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
-        <Russian>Мастер мясник птицы и свинины:Мастера мясник птицы и свинины</Russian>
+        <Russian>Мастер мясник птицы:Мастера мясники птицы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POULTRY_BUTCHER_PEDIA</Tag>
