@@ -136,12 +136,13 @@
         <Tag>TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_FAIL</Tag>
         <English>Milord, your missionary failed to establish a mission in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Though the Natives might have killed him for insulting their gods, instead they beat him badly leaving him completely broken and disillusioned.</English>
         <German>Milord, Euer Missionar ist dabei gescheitert, die Ureinwohner in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] zu missionieren. Trotz der Beleidigung ihrer Götter haben die Ureinwohner Euren Missionar nicht getötet, sondern sie haben ihn nur schwer verprügelt, so daß er nun komplett gebrochen und desillusioniert ist.</German>
-        <Russian>Милорд, нашему миссионеру не удалось установить миссию в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Хотя индейцы и могли убить его за оскорбление их богов, вместо этого они сильно избили его, выбросив за пределы деревни полностью сломленным и разочарованным.</Russian>
+        <Russian>Милорд, нашему миссионеру не удалось установить миссию в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Хотя индейцы и могли убить его за оскорбление их богов, вместо этого они, сильно избив его, выбросили за пределы деревни полностью сломленным и разочарованным.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FAILED_TRADER_SPAWNED_FROM_FAIL</Tag>
         <English>Milord, your trader failed to establish a trade post in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. He gave alcohol to the tribal men and they got violent when becoming drunk. Luckily they did not kill him. But they beat him up and stole all his goods. But he is now broken and traumatised.</English>
         <German>Milord, Euer Ureinwohnerhändler ist dabei gescheitert, einen Handelsposten in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] zu errichten. Er gab den Männdern des Stammes Alkohol. Als sie betrunken waren wurden sie gewalttätig. Glücklicherweise haben sie ihn nicht getötet. Jedoch schlugen sie ihn und stahlen alle seine Güter. Er ist nun mittellos und traumatisiert.</German>
+        <Russian>Милорд, нашему торговцу не удалось открыть торговый пост в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Он давал алкоголь мужчинам племени и когда они напивались, становились ужасно буйными. К счастью, они не убили его, но избили, отобрали все имущество и выгнали из деревни. Мы должны помочь ему восстановиться телесно и духовно.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_MISSION_REPLACED</Tag>
@@ -153,6 +154,7 @@
         <Tag>TXT_KEY_FAILED_TRADER_SPAWNED_FROM_TRADE_POST_REPLACED</Tag>
         <English>Milord, the Natives in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] have beaten and chased away your trader. A trader from another nation managed to replace him, by giving the Natives presents and accusing our own trader of greediness.</English>
         <German>Milord, die Ureinwohner von [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] haben Euren Ureinwohnderhändler mit Prügeln aus dem Dorf verjagt. Ein anderer Ureinwohnderhändler hat ihn verdrängt indem er dem Stamm Geschenke machte und unseren Mann der Gier beschuldigte.</German>
+        <Russian>Милорд, торговец из другой страны оклеветал нашего торговца в деревне [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Он подкупил вождей подарками и обвинил нашего торговца в обмане. Туземцы жестоко избили и прогнали нашего торговца. </Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSIONARY_EJECTED_FROM_GIFTED_CITY</Tag>
@@ -186,6 +188,7 @@
         <Tag>TXT_KEY_RESOURCETABLE_SHOW_OR_HIDE_YIELDS</Tag>
         <English>Toggle displayed yields</English>
         <German>Waren ein-/ausblenden</German>
+        <Russian>Переключить отображаемые товары</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TEST_MESSAGE</Tag>
@@ -194,9 +197,11 @@
     <TEXT>
         <Tag>TXT_KEY_OPPRESSOMETER_GROWTH_CITY</Tag>
         <English>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]: Oppressometer has increased from %d2 to %d3</English>
+        <Russian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]: Опрессометр увеличился с %d2 до %d3.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPPRESSOMETER_RECALCULATION_PLAYER</Tag>
         <English>Your total Oppressometer has increased from %d1 to %d2</English>
+        <Russian>Ваш общий Опрессометр увеличился с %d1 до %d2.</Russian>
     </TEXT>
 </Civ4GameText>

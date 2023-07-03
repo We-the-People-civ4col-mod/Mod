@@ -11009,6 +11009,7 @@
         <Tag>TXT_KEY_IMPROVEMENT_HEAL_MODIFIER</Tag>
         <English>[ICON_BULLET]Units on plot [COLOR_HIGHLIGHT_TEXT]heal %d1_Num%% faster[COLOR_REVERT]</English>
         <German>[ICON_BULLET]Einheiten auf Feld [COLOR_HIGHLIGHT_TEXT]heilen %d1_Num%% schneller[COLOR_REVERT]</German>
+        <Russian>[ICON_BULLET]Отряды на участке [COLOR_HIGHLIGHT_TEXT]лечатся на %d1_Num%% быстрее[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_SCREEN_BUILDING</Tag>
