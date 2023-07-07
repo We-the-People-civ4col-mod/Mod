@@ -2383,7 +2383,7 @@ bool CvDLLButtonPopup::launchMainMenuPopup(CvPopup* pPopup, CvPopupInfo &info)
 	gDLL->getInterfaceIFace()->popupSetStyle( pPopup, "Window_NoTitleBar_Style" );
 
 	// 288,72
-	gDLL->getInterfaceIFace()->popupAddDDS(pPopup, "resource/temp/civ4_title_small.dds", 192, 48);
+	gDLL->getInterfaceIFace()->popupAddDDS(pPopup, "Resource/Temp/civ4_title_small.dds", 192, 48);
 
 	gDLL->getInterfaceIFace()->popupAddSeparator(pPopup);
 
