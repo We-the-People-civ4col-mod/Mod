@@ -535,9 +535,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEAT_CUTTER_STRATEGY</Tag>
-        <English>Peat is a peasant fuel, warming the poor and slaves at low or no cost. Peat is the world's most efficient carbon sink, storing 42% of all soil carbon, more than all other vegetation types, including the world's forests. It's not renewable.[NEWLINE]When assigned to the Peat Cutter profession, the expert can cut twice as much peat in the same amount of time as a regular colonist.</English>
+        <English>Peat is a peasant fuel, warming the poor and slaves at low or no cost. Peat is the world's most efficient carbon sink, storing 42% of all soil carbon, more than all other vegetation types, including the world's forests. It's not renewable.[NEWLINE]When assigned to the [LINK=PROFESSION_CLAY_MINER]clay cutter[\LINK] or [LINK=PROFESSION_PEAT_CUTTER]peat cutter[\LINK] profession, the expert can cut twice as much [LINK=YIELD_CLAY]clay[\LINK] and [LINK=YIELD_PEAT]peat[\LINK] in the same amount of time as a regular colonist.</English>
         <French>xxx</French>
-        <German>xxx</German>
+        <German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Torf- und Lehmstecher[COLOR_REVERT] kann, wenn er den Berufen [LINK=PROFESSION_CLAY_MINER]Lehmkuhlenarbeiter[\LINK] oder [LINK=PROFESSION_PEAT_CUTTER]Torfstecher[\LINK] zugewiesen ist, doppelt so viel [LINK=YIELD_CLAY]Lehm[\LINK] und [LINK=YIELD_PEAT]Torf[\LINK] produzieren, als ein normaler Kolonist.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
     </TEXT>
