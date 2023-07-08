@@ -200,9 +200,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR_STRATEGY</Tag>
-        <English>A [COLOR_HIGHLIGHT_TEXT]expert cochineal collector[COLOR_REVERT] is more effective at [LINK=PROFESSION_COCHINEAL_COLLECTOR]collecting[\LINK] [LINK=YIELD_COCHINEAL]cochineal[\LINK] than any other expert.[PARAGRAPH:1]Expert cochineal collectors can be [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]natives[\LINK] or in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its extensions.</English>
+        <English>A [COLOR_HIGHLIGHT_TEXT]expert cochineal collector[COLOR_REVERT] is more effective at [LINK=PROFESSION_COCHINEAL_COLLECTOR]collecting[\LINK] [LINK=YIELD_COCHINEAL]cochineal[\LINK] than any other expert.[PARAGRAPH:1]Expert cochineal collectors can be [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]natives[\LINK] or in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its extensions. They can also be purchased in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT].</English>
         <French>xxx</French>
-        <German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Cochenille-Sammler[COLOR_REVERT] ist effektiver im [LINK=PROFESSION_COCHINEAL_COLLECTOR]Sammeln[\LINK] von [LINK=YIELD_COCHINEAL]Cochenille-Schildläusen[\LINK] als alle anderen Experten.[PARAGRAPH:1]Erfahrene Cochenille-Sammler können in Dörfern der [LINK=CONCEPT_NATIVES]Ureinwohner[\LINK] oder in einer Kolonie mit einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
+        <German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Cochenille-Sammler[COLOR_REVERT] ist effektiver im [LINK=PROFESSION_COCHINEAL_COLLECTOR]Sammeln[\LINK] von [LINK=YIELD_COCHINEAL]Cochenille-Schildläusen[\LINK] als alle anderen Experten.[PARAGRAPH:1]Erfahrene Cochenille-Sammler können in Dörfern der [LINK=CONCEPT_NATIVES]Ureinwohner[\LINK] oder in einer Kolonie mit einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden. Man kann sie auch in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT] erwerben.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
     </TEXT>
