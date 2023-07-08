@@ -546,7 +546,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_HOUSE_STRATEGY</Tag>
         <English>The [COLOR_HIGHLIGHT_TEXT]potter's house[COLOR_REVERT] is where a colonist with the [LINK=PROFESSION_POTTER]potter[\LINK] profession uses [LINK=YIELD_PEAT]peat[\LINK] to transform [LINK=YIELD_CLAY]clay[\LINK] into [LINK=YIELD_POTTERY]pottery[\LINK]. [LINK=UNIT_POTTER]Master potters[\LINK] are artists at this, and more productive as well.</English>
-        <German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Töpfers[COLOR_REVERT] ist der Ort, an dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] im Beruf des [LINK=PROFESSION_POTTER]Töpfers[\LINK] den [LINK=YIELD_CLAY]Lehm[\LINK] zu [LINK=YIELD_POTTERY]Töpferwaren[\LINK] verarbeitet.[PARAGRAPH:1][LINK=UNIT_POTTER]Töpfermeister[\LINK] sind hierbei besonders effektiv.</German>
+        <German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Töpfers[COLOR_REVERT] ist der Ort, an dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] im Beruf des [LINK=PROFESSION_POTTER]Töpfers[\LINK] den [LINK=YIELD_CLAY]Lehm[\LINK], mit Hilfe von [LINK=YIELD_PEAT]Torf[\LINK], zu [LINK=YIELD_POTTERY]Töpferwaren[\LINK] verarbeitet.[PARAGRAPH:1][LINK=UNIT_POTTER]Töpfermeister[\LINK] sind hierbei besonders effektiv.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_SHOP_PEDIA</Tag>
@@ -555,8 +555,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_SHOP_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]pottery shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_POTTERY_HOUSE]potter's house[\LINK] where colonists with the [LINK=PROFESSION_POTTER]potter[\LINK] profession turn [LINK=YIELD_CLAY]clay[\LINK] into [LINK=YIELD_POTTERY]pottery[\LINK]. [LINK=UNIT_POTTER]Master potters[\LINK] are particularly effective at this.</English>
-        <German>Der [COLOR_HIGHLIGHT_TEXT]Töpferladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_POTTERY_HOUSE]Haus des Töpfers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] im Beruf des [LINK=PROFESSION_POTTER]Töpfers[\LINK] den [LINK=YIELD_CLAY]Lehm[\LINK] zur Herstellung von [LINK=YIELD_POTTERY]Töpferwaren[\LINK] verwenden.[PARAGRAPH:1][LINK=UNIT_POTTER]Töpfermeister[\LINK] sind hierbei besonders effektiv.</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]pottery shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_POTTERY_HOUSE]potter's house[\LINK] where colonists with the [LINK=PROFESSION_POTTER]potter[\LINK] profession use [LINK=YIELD_PEAT]peat[\LINK] to transform [LINK=YIELD_CLAY]clay[\LINK] into [LINK=YIELD_POTTERY]pottery[\LINK]. [LINK=UNIT_POTTER]Master potters[\LINK] are particularly effective at this.</English>
+        <German>Der [COLOR_HIGHLIGHT_TEXT]Töpferladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_POTTERY_HOUSE]Haus des Töpfers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] im Beruf des [LINK=PROFESSION_POTTER]Töpfers[\LINK] den [LINK=YIELD_CLAY]Lehm[\LINK], mit Hilfe von [LINK=YIELD_PEAT]Torf[\LINK], zur Herstellung von [LINK=YIELD_POTTERY]Töpferwaren[\LINK] verwenden.[PARAGRAPH:1][LINK=UNIT_POTTER]Töpfermeister[\LINK] sind hierbei besonders effektiv.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_FACTORY_PEDIA</Tag>
@@ -565,8 +565,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_FACTORY_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]pottery factory[COLOR_REVERT] is the final upgrade of the [LINK=BUILDING_POTTERY_HOUSE]potter's house[\LINK] where colonists with the [LINK=PROFESSION_POTTER]potter[\LINK] profession turn [LINK=YIELD_CLAY]clay[\LINK] into [LINK=YIELD_POTTERY]pottery[\LINK]. [LINK=UNIT_POTTER]Master potters[\LINK] are particularly effective at this.</English>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Töpferei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_POTTERY_HOUSE]Haus des Töpfers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] im Beruf des [LINK=PROFESSION_POTTER]Töpfers[\LINK] den [LINK=YIELD_CLAY]Lehm[\LINK] zur Herstellung von [LINK=YIELD_POTTERY]Töpferwaren[\LINK] verwenden.[PARAGRAPH:1][LINK=UNIT_POTTER]Töpfermeister[\LINK] sind hierbei besonders effektiv.</German>
+        <English>The [COLOR_HIGHLIGHT_TEXT]pottery factory[COLOR_REVERT] is the final upgrade of the [LINK=BUILDING_POTTERY_HOUSE]potter's house[\LINK] where colonists with the [LINK=PROFESSION_POTTER]potter[\LINK] profession use [LINK=YIELD_PEAT]peat[\LINK] to transform [LINK=YIELD_CLAY]clay[\LINK] into [LINK=YIELD_POTTERY]pottery[\LINK]. [LINK=UNIT_POTTER]Master potters[\LINK] are particularly effective at this.</English>
+        <German>Die [COLOR_HIGHLIGHT_TEXT]Töpferei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_POTTERY_HOUSE]Haus des Töpfers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] im Beruf des [LINK=PROFESSION_POTTER]Töpfers[\LINK] den [LINK=YIELD_CLAY]Lehm[\LINK], mit Hilfe von [LINK=YIELD_PEAT]Torf[\LINK], zur Herstellung von [LINK=YIELD_POTTERY]Töpferwaren[\LINK] verwenden.[PARAGRAPH:1][LINK=UNIT_POTTER]Töpfermeister[\LINK] sind hierbei besonders effektiv.</German>
     </TEXT>
     <!-- TAILOR -->
     <TEXT>
