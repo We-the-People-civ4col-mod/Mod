@@ -840,7 +840,7 @@
         <English>Maple Syrup</English>
         <French>Sirop d'érable</French>
         <German>
-            <Text>Ahornsaft</Text>
+            <Text>Ahornsirup</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
@@ -853,7 +853,7 @@
         <English>Maple Syrup</English>
         <French>Sirop d'érable</French>
         <German>
-            <Text>Ahornsaft</Text>
+            <Text>Ahornsirup</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
@@ -866,7 +866,7 @@
         <English>Maple Syrup</English>
         <French>Sirop d'érable</French>
         <German>
-            <Text>Ahornsaft</Text>
+            <Text>Ahornsirup</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
@@ -876,9 +876,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_MAPLE_SIRUP_PEDIA</Tag>
-        <English>[H1]MAPLE SYRUP[\H1][NEWLINE][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Maple syrup[COLOR_REVERT] is the sap from maple trees, which grow in hills on [LINK=TERRAIN_TAIGA]taiga[\LINK] terrain. To collect it, a colonist needs to have the [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]maple syrup collector[\LINK] profession. The maple syrup supply can be doubled by employing [LINK=UNIT_MAPLE_SIRUP_COLLECTOR]expert maple tree tappers[\LINK] who can be trained in Native villages.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]In the spring when sap starts to flow in the maple forests, tappers hammer spouts into the bark and collect a thin fluid that's then distilled over a slow fire into a rich thick syrup. It can also be poured on snow to make maple sugar.</English>
+        <English>[H1]MAPLE SYRUP[\H1][NEWLINE][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Maple syrup[COLOR_REVERT] is the sap from maple trees, which grow in hills on [LINK=TERRAIN_TAIGA]taiga[\LINK] terrain. To collect it, a colonist needs to have the [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]maple syrup collector[\LINK] profession. The maple syrup supply can be doubled by employing [LINK=UNIT_MAPLE_SIRUP_COLLECTOR]expert maple tree tappers[\LINK], who can be trained in Native villages, or aquired in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT].[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]In the spring when sap starts to flow in the maple forests, tappers hammer spouts into the bark and collect a thin fluid that's then distilled over a slow fire into a rich thick syrup. It can also be poured on snow to make maple sugar.</English>
         <French>[H1]SIROP D'ÉRABLE[\H1][NEWLINE][BOLD]Stratégie :[\BOLD][NEWLINE]Le [COLOR_HIGHLIGHT_TEXT]sirop d'érable[COLOR_REVERT] est la sève des érables, qui poussent dans les [COLOR_HIGHLIGHT_TEXT]forêts[COLOR_REVERT] sur un terrain de [LINK=TERRAIN_TUNDRA]toundra[\LINK]. Pour le recueillir, un colon doit avoir la profession de [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]collecteur de sirop d'érable[\LINK]. L'approvisionnement en sirop d'érable peut être doublé en employant des [LINK=UNIT_MAPLE_SIRUP_COLLECTOR]érablières expertes[\LINK] qui peuvent être embauchées en Europe ou formées dans les villages autochtones.[NEWLINE][NEWLINE][BOLD]Contexte :[\BOLD][NEWLINE]Au printemps, lorsque la sève commence à couler dans les forêts d'érables, les érablières plantent des becs dans l'écorce et recueillent un fluide fin qui est ensuite distillé sur un feu lent en un sirop riche et épais. Il peut également être versé sur de la neige pour obtenir du sucre d'érable.</French>
-        <German>[H1]Ahornsaft[\H1][NEWLINE][BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Ahornsirup[COLOR_REVERT] ist der Saft von Ahornbäumen, die in den Hügeln der [LINK=TERRAIN_TAIGA]Taiga[\LINK] wachsen. Um ihn zu sammeln, muss ein Kolonist den Beruf [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]Ahornsirupsammler[\LINK] ausüben. Die Ausbeute an Ahornsirup kann verdoppelt werden, indem man [LINK=UNIT_MAPLE_SIRUP_COLLECTOR]erfahrene Ahornsaft-Sammler[\LINK] anstellt in den Dörfern der Ureinwohner ausgebildet werden können.[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]Im Frühjahr, wenn der Saft in den Ahornwäldern zu fließen beginnt, hämmern die Zapfer Tüllen in die Rinde und sammeln eine dünne Flüssigkeit, die dann über einem langsamen Feuer zu einem reichhaltigen, dicken Sirup destilliert wird. Er kann auch auf Schnee gegossen werden, um Ahornzucker herzustellen.</German>
+        <German>[H1]Ahornsirup[\H1][NEWLINE][BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Ahornsirup[COLOR_REVERT] wird aus dem Saft von Ahornbäumen hergestellt, die in den Hügeln der [LINK=TERRAIN_TAIGA]Taiga[\LINK] wachsen. Um ihn zu sammeln, muss ein Kolonist den Beruf [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]Ahornsirup-Sammler[\LINK] ausüben. Die Ausbeute an Ahornsirup kann verdoppelt werden, indem man [LINK=UNIT_MAPLE_SIRUP_COLLECTOR]erfahrene Ahornsirup-Sammler[\LINK] anstellt, die in den Dörfern der Ureinwohner ausgebildet, oder in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT] erworben werden können.[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]Im Frühjahr, wenn der Saft in den Ahornwäldern zu fließen beginnt, hämmern die Zapfer Tüllen in die Rinde und sammeln eine dünne Flüssigkeit, die dann über einem langsamen Feuer zu einem reichhaltigen, dicken Sirup destilliert wird. Er kann auch auf Schnee gegossen werden, um Ahornzucker herzustellen.</German>
         <Italian>[H1]SCIROPPO D'ACERO[\H1][NEWLINE][BOLD]Strategia :[\BOLD][NEWLINE]Lo [COLOR_HIGHLIGHT_TEXT]sciroppo d'acero[COLOR_REVERT] è la linfa degli aceri, che crescono nelle [COLOR_HIGHLIGHT_TEXT]foreste[COLOR_REVERT] su terreni [LINK=TERRAIN_TUNDRA]tundra[\LINK]. Per raccoglierlo, un colono deve avere la professione [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]raccoglitore di sciroppo d'acero[\LINK]. Le scorte di sciroppo d'acero possono essere raddoppiate impiegando [LINK=UNIT_MAPLE_SIRUP_COLLECTOR]esperti intagliatori di alberi d'acero[\LINK] che possono essere assunti in Europa o addestrati nei villaggi dei nativi.[NEWLINE][NEWLINE][BOLD]Sfondo :[\BOLD][NEWLINE]In primavera, quando la linfa inizia a scorrere nelle foreste di acero, gli intagliatori martellano i becchi nella corteccia e raccolgono un fluido sottile che viene poi distillato a fuoco lento in un ricco e denso sciroppo. Può anche essere versato sulla neve per ottenere lo zucchero d'acero.</Italian>
         <Spanish>[H1]SIROPE DE ARCE[\H1][NEWLINE][BOLD]Estrategia :[\BOLD][NEWLINE]El [COLOR_HIGHLIGHT_TEXT]sirope de arce[COLOR_REVERT] es la savia de los arces, que crecen en [COLOR_HIGHLIGHT_TEXT]bosques[COLOR_REVERT] sobre terreno de [LINK=TERRAIN_TUNDRA]tundra[\LINK]. Para recolectarlo, un colono necesita tener la profesión [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]recolector de sirope de arce[\LINK]. El suministro de sirope de arce puede duplicarse empleando [LINK=UNIT_MAPLE_SIRUP_COLLECTOR]expertos recolectores de sirope de arce[\LINK] que pueden ser contratados en Europa o entrenados en las aldeas nativas.[NEWLINE][NEWLINE][BOLD]Antecedentes :[\BOLD][NEWLINE]En primavera, cuando la savia comienza a fluir en los bosques de arce, los recolectores martillean la corteza y recogen un líquido fino que luego se destila sobre un fuego lento en un rico y espeso sirope. También se puede verter sobre la nieve para obtener azúcar de arce.</Spanish>
     </TEXT>

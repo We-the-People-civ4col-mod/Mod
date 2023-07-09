@@ -253,12 +253,12 @@
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_MAPLE_SIRUP</Tag>
         <English>Emphasize Maple Syrup</English>
-        <German>Schwerpunkt Ahornsaft</German>
+        <German>Schwerpunkt Ahornsirup</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_NO_MAPLE_SIRUP</Tag>
         <English>Deemphasize Maple Syrup</English>
-        <German>Schwerpunkt Ahornsaft aufheben</German>
+        <German>Schwerpunkt Ahornsirup aufheben</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_KAUTSCHUK</Tag>

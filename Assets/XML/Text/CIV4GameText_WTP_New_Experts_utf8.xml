@@ -894,7 +894,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Erfahrener Ahornsaft-Sammler:Erfahrene Ahornsaft-Sammler</Text>
+            <Text>Erfahrener Ahornsirup-Sammler:Erfahrene Ahornsirup-Sammler</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -919,7 +919,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Erfahrener Ahornsaft-Sammler:Erfahrene Ahornsaft-Sammler</Text>
+            <Text>Erfahrener Ahornsirup-Sammler:Erfahrene Ahornsirup-Sammler</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -945,9 +945,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Expert Maple Tree Tapper[COLOR_REVERT] collect in the hills of the [LINK=TERRAIN_TAIGA]taiga[\LINK] or in [LINK=BONUS_MAPLE_TREES]maple forests[\LINK] as [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]collector[\LINK] twice as much [LINK=YIELD_MAPLE_SIRUP]maple syrup[\LINK] in the same time as regular colonists.[PARAGRAPH:1]Expert Maple Tree Tapper can be trained by [LINK=CONCEPT_NATIVES]natives[\LINK], or [LINK=CONCEPT_TRAINING]trained[\LINK] in a colony in a [LINK=BUILDING_COLLEGE]college[\LINK] or its extensions.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Expert maple tree tappers[COLOR_REVERT] collect in the hills of the [LINK=TERRAIN_TAIGA]taiga[\LINK] or in [LINK=BONUS_MAPLE_TREES]maple forests[\LINK] as [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]maple syrup collector[\LINK] twice as much [LINK=YIELD_MAPLE_SIRUP]maple syrup[\LINK] in the same time as regular colonists.[PARAGRAPH:1]Expert Maple Tree Tappers can be trained by [LINK=CONCEPT_NATIVES]natives[\LINK], or [LINK=CONCEPT_TRAINING]trained[\LINK] in a colony in a [LINK=BUILDING_COLLEGE]college[\LINK] or its extensions. They can also be aquired in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT].</English>
         <French>xxx</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]Erfahrene Ahornsaft-Sammler[COLOR_REVERT] können in den Hügeln der [LINK=TERRAIN_TAIGA]Taiga[\LINK] oder in [LINK=BONUS_MAPLE_TREES]Ahorn-Wäldern[\LINK] als [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]Sammler[\LINK] doppelt so viel [LINK=YIELD_MAPLE_SIRUP]Ahornsaft[\LINK] sammeln, wie freie Kolonisten.[PARAGRAPH:1]Erfahrene Ahornsaft-Sammler können von [LINK=CONCEPT_NATIVES]Ureinwohnern[\LINK] ausgebildet werden, oder in einer Kolonie in einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] bzw. dessen Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
+        <German>[COLOR_HIGHLIGHT_TEXT]Erfahrene Ahornsirup-Sammler[COLOR_REVERT] können in den Hügeln der [LINK=TERRAIN_TAIGA]Taiga[\LINK] oder in [LINK=BONUS_MAPLE_TREES]Ahorn-Wäldern[\LINK] als [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]Ahornsirup-Sammler[\LINK] doppelt so viel [LINK=YIELD_MAPLE_SIRUP]Ahornsirup[\LINK] sammeln, wie freie Kolonisten.[PARAGRAPH:1]Erfahrene Ahornsirup-Sammler können von [LINK=CONCEPT_NATIVES]Ureinwohnern[\LINK] ausgebildet werden, oder in einer Kolonie in einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] bzw. dessen Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden. Sie können auch in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT] erworben werden.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
     </TEXT>

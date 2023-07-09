@@ -1059,7 +1059,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Sammler (Ahornsaft):Sammler (Ahornsaft)</Text>
+            <Text>Sammler (Ahornsirup):Sammler (Ahornsirup)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -1089,9 +1089,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_MAPLE_SIRUP_COLLECTOR_STRATEGY</Tag>
-        <English>Forest tiles let you gather [LINK=YIELD_MAPLE_SIRUP]maple syrup[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]maple syrup collector[COLOR_REVERT] profession. Maple syrup production can be increased by assigning an [LINK=UNIT_MAPLE_SIRUP_COLLECTOR]expert maple tree tapper[\LINK] to the job.</English>
+        <English>[LINK=TERRAIN_TAIGA]Taiga[\LINK] terrain with hills lets you gather [LINK=YIELD_MAPLE_SIRUP]maple syrup[\LINK], if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]maple syrup collector[COLOR_REVERT] profession. Maple syrup production can be increased by assigning an [LINK=UNIT_MAPLE_SIRUP_COLLECTOR]expert maple tree tapper[\LINK] to the job.</English>
         <French>Les tuiles de forêt permettent de récolter du [LINK=YIELD_MAPLE_SIRUP]sirop d'érable[\LINK] si le colon qui les exploite est affecté à la profession de [COLOR_HIGHLIGHT_TEXT]collecteur de sirop d'érable[COLOR_REVERT]. La production de sirop d'érable peut être augmentée en affectant un [LINK=UNIT_MAPLE_SIRUP_COLLECTOR]collecteur de sirop d'érable expert[\LINK] à ce travail.</French>
-        <German>Wald-Geländefelder ermöglichen Ihnen das Abzapfen von [LINK=YIELD_MAPLE_SIRUP]Ahornsirup[\LINK], wenn der Kolonist, der sie bearbeitet, dem Beruf [COLOR_HIGHLIGHT_TEXT]Ahornsirup-Sammler[COLOR_REVERT] zugeordnet ist. Die Produktion an Ahornsirup kann gesteigert werden, indem ein [LINK=UNIT_MAPLE_SIRUP_COLLECTOR]erfahrener Ahornsirup-Sammler[\LINK] mit der Arbeit beauftragt wird.</German>
+        <German>Hügelige [LINK=TERRAIN_TAIGA]Taiga[\LINK]-Geländefelder ermöglichen Ihnen das Abzapfen von [LINK=YIELD_MAPLE_SIRUP]Ahornsirup[\LINK], wenn der Kolonist, der sie bearbeitet, dem Beruf [COLOR_HIGHLIGHT_TEXT]Ahornsirup-Sammler[COLOR_REVERT] zugeordnet ist. Die Produktion von Ahornsirup kann gesteigert werden, indem ein [LINK=UNIT_MAPLE_SIRUP_COLLECTOR]erfahrener Ahornsirup-Sammler[\LINK] mit der Arbeit beauftragt wird.</German>
         <Italian>Le tessere foresta permettono di raccogliere [LINK=YIELD_MAPLE_SIRUP]sciroppo d'acero[\LINK] se il colono che le lavora è assegnato alla professione [COLOR_HIGHLIGHT_TEXT]raccoglitore di sciroppo d'acero[COLOR_REVERT]. La produzione di sciroppo d'acero può essere aumentata assegnando al lavoro un [LINK=UNIT_MAPLE_SIRUP_COLLECTOR]raccoglitore esperto di sciroppo d'acero[\LINK].</Italian>
         <Spanish>Las losetas de bosque te permiten recolectar [LINK=YIELD_MAPLE_SIRUP]sirope de arce[\LINK] si el colono que las trabaja tiene asignada la profesión de [COLOR_HIGHLIGHT_TEXT]recolector de sirope de arce[COLOR_REVERT]. La producción de sirope de arce puede aumentarse asignando un [LINK=UNIT_MAPLE_SIRUP_COLLECTOR]experto recolector de sirope de arce[\LINK] al trabajo.</Spanish>
     </TEXT>
