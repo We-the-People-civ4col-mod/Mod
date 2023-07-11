@@ -3018,7 +3018,7 @@
         <Tag>TXT_KEY_EVENTTRIGGER_SIX_WARSHIPS_QUEST_DONE_WORLD</Tag>
         <English>Milord, another colonial nation is the first to have a war fleet of at least six warships (frigate or larger).</English>
         <German>Eine Kolonialmacht konnte vor allen anderen eine Flotte von sechs Kriegsschiffen (Fregatte oder größer) aufbauen.</German>
-        <Russian>Милорд, другая колониальная нация стала первой, у которой есть военный флот, состоящий как минимум из шести военных кораблей (фрегат или больше).</Russian>
+        <Russian>У одной из европейских колониальных наций есть военный флот, состоящий как минимум из шести военных кораблей (фрегат или больше).</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SIX_WARSHIPS_QUEST_DONE</Tag>
@@ -3090,7 +3090,7 @@
         <Tag>TXT_KEY_EVENTTRIGGER_SLAVE_TRADER_QUEST_DONE_WORLD</Tag>
         <English>Milord, another colonial nation is the first to have acquired two slave barques.</English>
         <German>Eine Kolonialmacht konnte vor allen anderen zwei Sklavenschiffe erwerben.</German>
-        <Russian>Милорд, другая колониальная нация первой приобрела два невольничьих барка.</Russian>
+        <Russian>У одной из европейских колониальных наций есть два невольничьих барка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SLAVE_TRADER_QUEST_DONE</Tag>
@@ -4227,7 +4227,7 @@
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_14</Tag>
         <English>For the Glory and Wealth of our colonies! Higher market prices are always welcome!</English>
         <German>Für Ruhm und Reichtum unserer Kolonien! Höhere Verkaufspreise sind immer willkommen!</German>
-        <Russian>For the Glory and Wealth of our colonies! Higher market prices are always welcome!</Russian>
+        <Russian>Во славу и богатство наших колоний! Более высокие рыночные цены всегда приветствуются!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_YIELD_AND_TARGET_AMOUNT_HELP</Tag>
