@@ -4182,66 +4182,78 @@
         <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_BUTCHER_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]What do you plan to do with this puny knife? It could barely cut an overcooked roast. Butchering needs real tools[COLOR_REVERT]." The master butcher casually waves his cleaver right next to the poultry butcher's nose.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I'm faster with my knife than you'll ever be. That oversized blade looks like you're getting ready to massacre a helpless family[COLOR_REVERT]," replies the poultry butcher sourly."[COLOR_SELECTED_TEXT]Besides, I don't just hack away. I have to cut along the joints cleanly, without spilling too much blood.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh, sure, anyone can see that just by looking at your apron...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]At least I don't have heaps of bones lying around everywhere.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]That's right! You count on my pigs to eat up your leftovers![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Was wollt Ihr denn mit diesem mickrigen Messer anfangen, damit könnt ihr doch bestenfalls den fertigen Braten anschneiden. Zum Schlachten braucht ihr richtiges Werkzeug[COLOR_REVERT]", hält der Fleischermeister dem Geflügelschlachter sein neues Beil vor die Nase.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Angeber, ich bin mit diesem Messer hier genauso schnell wie Ihr mit diesem riesigen Mordinstrument,[COLOR_REVERT]" entgegnet der Geflügelschlachter säuerlich. "[COLOR_SELECTED_TEXT]Außerdem hack' ich nicht einfach drauflos, sondern zerlege die Viecher sauber und ohne zu viel Blut zu vergießen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Klar, das sieht man schon an Eurer Schürze....[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Pah, dafür liegen bei mir nicht überall haufenweise Knochen rum.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Stimmt, Ihr verfüttert Eure Reste lieber an meine Schweine...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Russian>"[COLOR_SELECTED_TEXT]Что вы планируете делать с этим хилым ножом? Им едва можно разрезать пережаренное жаркое. Для разделки нужны настоящие инструменты[COLOR_REVERT]". Мастер мясник небрежно машет своим огромным тесаком прямо перед носом мясника птицы.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я владею своим ножом лучше, чем вы когда-либо сможете. Ваш огромный клинок выглядит так, будто вы собираетесь расправиться с беспомощной семьей[COLOR_REVERT]" — кисло отвечает мясник птицы. "[COLOR_SELECTED_TEXT]Кроме того, я не просто рублю. Я должен аккуратно разрезать суставы, не проливая слишком много крови.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Конечно, любой может увидеть это, просто взглянув на ваш фартук...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]По крайней мере, у меня не валяются повсюду кучи костей.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Правильно! Вы рассчитываете, что мои свиньи съедят остатки вашей возни![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+        <Russian>"[COLOR_SELECTED_TEXT]Что вы планируете делать с этим хилым ножом? Им едва можно разрезать пережаренное мясо. Для разделки нужны настоящие инструменты[COLOR_REVERT]". Мастер мясник небрежно машет своим огромным тесаком прямо перед носом мясника птицы.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я владею своим ножом лучше, чем вы когда-либо сможете научиться. Ваш огромный нож выглядит так, будто вы собираетесь лишить пастора всех его прихожан[COLOR_REVERT]" — кисло отвечает мясник птицы. "[COLOR_SELECTED_TEXT]Кроме того, я не просто рублю. Я должен аккуратно разрезать суставы, не проливая слишком много крови.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Конечно, любой может увидеть это, просто взглянув на ваш фартук...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]По крайней мере, у меня не валяются повсюду кучи костей.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Правильно! Вы рассчитываете, что мои свиньи съедят остатки вашей возни![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_FAILED_TRADER</Tag>
         <English>Three failed trader</English>
         <German>Drei gescheiterte Händler</German>
+        <Russian>Три неудачливых торговца</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_FAILED_TRADER_HEAD</Tag>
         <English>Lost merchandise</English>
         <German>Verlorene Handelsgeschäfte</German>
+        <Russian>Неудачная сделка</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_FAILED_TRADER_TEXT</Tag>
         <English>Milord, obviously our third trader has failed to deal profitably with the Natives. He's now drinking himself senseless in the streets, claiming he endured unimaginable horrors in their camp. [NEWLINE][NEWLINE]You should do something! When Natives surrounding us prefer to trade with each other. attacking our own traders, it makes our merchants nervous. Soon no settler will dare to leave the colony, fearing such hostile neighbours. You should find a better way to handle the many different nations of Natives who surround us.[NEWLINE][NEWLINE]</English>
         <German>Mylord, es ist jetzt bereits der dritte Händler von den Ureinwohnern zurückgekommen, der offensichtlich gescheitert ist und sich nun sinnlos in den Straßen betrinkt, ob des Grauens, dass er offenbar bei den Wilden erlebt hat.[NEWLINE][NEWLINE]Ihr Ihr solltet etwas unternehmen, sie machen die übrigen Händler nervös. Bald traut sich keiner mehr aus der Kolonie wegen der Geschichten, die über die Wilden kursieren. Ihr solltet zudem Eure Strategie gegenüber den Wilden überdenken.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, нашему третьему торговцу не удалось организовать торговый пост в деревне туземцев. Теперь он напивается до потери сознания на улицах, утверждая, что пережил невообразимые ужасы в их лагере.[NEWLINE][NEWLINE]Сделайте что-нибудь! Окружающие нас туземцы предпочитают торговать друг с другом, нападая на наших торговцев. Люди нервничают. Скоро ни один поселенец не посмеет покинуть колонию, опасаясь таких враждебно настроенных соседей. Вам следует найти способ справиться с этими дикарями, которые нас окружают.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_DYER</Tag>
         <English>Three master dyer</English>
         <German>Drei Meister Färber</German>
+        <Russian>Три мастера красильщика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_DYER_HEAD</Tag>
         <English>Colorful colonies</English>
         <German>Farbenfrohe Kolonien</German>
+        <Russian>Разноцветные колонии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_DYER_TEXT</Tag>
         <English>Milord, your colonies are growing. Your cities produce more and more goods. You are truly blessed! Just today you've welcomed another trained craftsman. [NEWLINE][NEWLINE]You now have three experienced master dyers. This colony is destined to become a prosperous trading center for dyed fabrics. If we keep up the good work your citizens will certainly thank you.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Eure Kolonien wachsen und Eure Städte können immer mehr Waren herstellen. Ihr seid wahrlich gesegnet und könnt einen weiteren ausgebildeten Handwerker in den Kolonien begrüßen. [NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Meister-Färber für die Kolonien anwerben. Eure Kolonie wird sich bald zu einem wahren Handelszentrum für gefärbte Stoffe entwickeln. Macht weiter so und Eure braven Bürger werden es Euch danken.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, наши колонии растут. Города производят все больше и больше товаров. Вы действительно благословенны! Только сегодня мы приветствуем еще одного обученного мастера.[NEWLINE][NEWLINE]Теперь у нас есть три опытных красильщика. Этой колонии суждено стать процветающим центром торговли цветными тканями.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_CONFECTIONER</Tag>
         <English>Three master confectioner</English>
         <German>Drei Meister Konditoren</German>
+        <Russian>Три мастера кондитера</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_CONFECTIONER_HEAD</Tag>
         <English>Cakes and confectionery</English>
         <German>Kuchen und Konfekt</German>
+        <Russian>Торты и кондитерские изделия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_CONFECTIONER_TEXT</Tag>
         <English>Milord, your colonies are growing! Now you can welcome yet another skilled craftsman. [NEWLINE][NEWLINE]You've succeeded in recruiting three talented master confectioners. Your colony is going to become the main trading center for chocolate and vanilla. As long as we keep up the good work your citizens are bound to thank you for it.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Eure Kolonien wachsen und Eure Städte können immer mehr Waren herstellen. Ihr seid wahrlich gesegnet und könnt einen weiteren ausgebildeten Handwerker in den Kolonien begrüßen. [NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Meister-Konditoren für die Kolonien anwerben. Eure Kolonie wird sich bald zu einem wahren Handelszentrum für Schokolade und Vanille entwickeln. Macht weiter so und Eure braven Bürger werden es Euch danken.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, наши колонии растут! Сегодня к нам присоединился еще один искусный мастер.[NEWLINE][NEWLINE]Нам удалось нанять трех талантливых мастеров кондитеров. Наша колония станет главным центром торговли шоколадом и ванилью. Если мы продолжим в том же духе, граждане будут благодарны вам за это.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_FURNITURE_MAKER</Tag>
         <English>Three master furniture maker</English>
         <German>Drei Meister Möbelschreiner</German>
+        <Russian>Три краснодеревщика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_FURNITURE_MAKER_HEAD</Tag>
         <English>Tables and chairs</English>
         <German>Tische und Stühle</German>
+        <Russian>Столы и стулья</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_FURNITURE_MAKER_TEXT</Tag>
         <English>Milord, your colonies are growing. Your cities produce more and more goods. You are truly blessed! Today we welcome another creative craftsman. [NEWLINE][NEWLINE]Three experienced master furniture makers are now at work here. Your colony will soon become a popular trading center for colonial furniture. Keep up your successful work! Your citizens look forward to enjoying the good life.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Eure Kolonien wachsen und Eure Städte können immer mehr Waren herstellen. Ihr seid wahrlich gesegnet und könnt einen weiteren ausgebildeten Handwerker in den Kolonien begrüßen. [NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Meister Möbelschreiner für die Kolonien anwerben. Eure Kolonie wird sich bald zu einem wahren Handelszentrum für koloniale Möbel entwickeln. Macht weiter so und Eure braven Bürger werden es Euch danken.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, наши колонии растут. Города производят все больше и больше товаров. Вы действительно благословенны! Сегодня к нам присоединился еще один мастер.[NEWLINE][NEWLINE]Теперь у нас трудятся три опытных краснодеревщика. Ваша колония скоро станет популярным центром торговли колониальной мебелью. Продолжайте в том же духе! Ваши граждане с нетерпением ждут хорошей мебели.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
 </Civ4GameText>
