@@ -72,7 +72,7 @@
         <Tag>TXT_KEY_GOODY_SLAVE_MASTER</Tag>
         <English>You've discovered a [COLOR_UNIT_TEXT]slave master[COLOR_REVERT] gone missing while hunting one of his runaway slaves!</English>
         <German>Ihr habt einen [COLOR_UNIT_TEXT]Sklavenhalter[COLOR_REVERT] gefunden, der einen seiner entlaufenen Sklaven sucht!</German>
-        <Russian>Вы обнаружили [COLOR_UNIT_TEXT]надсмоторщика за рабами[COLOR_REVERT], который ищет работу. Нам пригодятся его умения!</Russian>
+        <Russian>Вы обнаружили [COLOR_UNIT_TEXT]надсмотрщика за рабами[COLOR_REVERT], который ищет работу. Нам пригодятся его умения!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_MESTIZZO</Tag>
