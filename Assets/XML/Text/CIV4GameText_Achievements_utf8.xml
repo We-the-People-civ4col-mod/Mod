@@ -1006,7 +1006,7 @@
         <English>"[COLOR_SELECTED_TEXT]What is there honourable about it?[COLOR_REVERT]" the young soldier murmurs disgustedly to the veteran at his side. "[COLOR_SELECTED_TEXT]To ambush the enemy's wagons and slaughter their defenceless escort - I never dreamed of such heroic deeds when I volunteered to take up arms.[COLOR_REVERT]"[NEWLINE][NEWLINE]Grimly, the greybeard glares back at him. "[COLOR_SELECTED_TEXT]If the enemy runs out of provisions and ammunition, it will save the lives of many a man in our ranks - perhaps you too, laddie. If you need to be a hero, go home and play with your tin soldiers.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Vous venez de remporter votre soixante-dizième victoire militaire. Votre armée devient chaque jour plus grande, plus expérimentée, plus professionnelle.[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Was soll denn daran ehrenhaft sein?[COLOR_REVERT]", raunt der junge Soldat angewidert dem Veteranen an seiner Seite zu. "[COLOR_SELECTED_TEXT]Den Tross des Feindes aus dem Hinterhalt zu überfallen und dessen wehrlose Eskorte abzuschlachten - von solchen Heldentaten hatte ich nicht geträumt, als ich mich freiwillig zu den Waffen meldete.[COLOR_REVERT]"[NEWLINE][NEWLINE]Grimmig mustert ihn der Graubart. "[COLOR_SELECTED_TEXT]Wenn dem Feind Proviant und Munition ausgehen, dann wird das so manchem in unseren Reihen das Leben retten - vielleicht auch dir, Bürschchen. Wenn du lieber den Helden spielen willst, dann geh nach Hause und misch dich unter deine Zinnsoldaten.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Russian>«[COLOR_SELECTED_TEXT]Что в этом почетного?[COLOR_REVERT]» — с отвращением бормочет молодой солдат ветерану рядом с ним."[COLOR_SELECTED_TEXT]Устроить засаду на вражеские фургоны и перебить их слабовооружённый эскорт - о таких подвигах я и не мечтал, когда добровольцем брался за оружие.[COLOR_REVERT]"[NEWLINE][NEWLINE]Седобородый мрачно смотрит на него в ответ. "[COLOR_SELECTED_TEXT]Если у врага закончатся провизия и боеприпасы, это спасет жизни многим людям в наших рядах - возможно, тебе тоже, приятель. Ну а если ты хочешь быть героем, то иди домой и играй со своими оловянными солдатиками.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+        <Russian>"[COLOR_SELECTED_TEXT]Что в этом почетного?[COLOR_REVERT]" — с отвращением бормочет молодой солдат ветерану рядом с ним."[COLOR_SELECTED_TEXT]Устроить засаду на вражеские фургоны и перебить их слабовооружённый эскорт - о таких подвигах я и не мечтал, когда добровольцем брался за оружие.[COLOR_REVERT]"[NEWLINE][NEWLINE]Седобородый мрачно смотрит на него в ответ. "[COLOR_SELECTED_TEXT]Если у врага закончатся провизия и боеприпасы, это спасет жизни многим людям в наших рядах - возможно, тебе тоже, приятель. Ну а если ты хочешь быть героем, то иди домой и играй со своими оловянными солдатиками.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_HUNDRED_VICTORY</Tag>
@@ -3150,481 +3150,577 @@
         <Tag>TXT_KEY_ACHIEVE_FIRST_FEMALE_ENTERTAINER</Tag>
         <English>The first actress</English>
         <German>Die erste Schauspielerin</German>
+        <Russian>Первая актриса</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_FEMALE_ENTERTAINER_HEAD</Tag>
         <English>The ballroom becomes a stage</English>
         <German>Der Ballsaal wird zur Bühne</German>
+        <Russian>Бальный зал превращается в сцену</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_FEMALE_ENTERTAINER_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]I really need to fix my hair and dress before the show starts. Otherwise people won't just be laughing at my role and my lines.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]My lady, you look especially lovely again today. Nothing needs fixing. Please, may I escort you to the stage?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh, you are a true gentleman, as well as a dangerous flatterer. But thank you for your kind words, sir. That reduces my stage fright a little bit.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Ich muss unbedingt noch einmal meine Haare und mein Kleid richten, bevor es losgeht. Sonst lachen die Leute nicht nur über meine Rolle und mein Text.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Mylady, Ihr seht heute wieder ganz besonders reizend aus, da bedarf es doch keiner Korrektur mehr. Darf ich Euch zur Bühne geleiten?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh, Ihr seid ein wahrer Gentleman, aber auch ein ganz gefährlicher Schmeichler. Aber Danke Euch für Eure lieben Worte Sir, das senkt mein Lampenfieber doch ein klein wenig.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+        <Russian>"[COLOR_SELECTED_TEXT]Мне действительно нужно поправить прическу и переодеться, прежде чем представление начнется. Иначе люди просто не будут смеяться над моей ролью и моими репликами.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Миледи, вы выглядите сегодня особенно мило, нет нужды в исправлениях. Могу я проводить вас на сцену?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]О, вы настоящий джентльмен и при этом очень опасный льстеец. Но спасибо за добрые слова, сэр, это немного уменьшило мой страх перед сценой.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_EXPERT_TRADER</Tag>
         <English>The first trader</English>
         <German>Der erste erfahrene Händler</German>
+        <Russian>Первый торговец</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_EXPERT_TRADER_HEAD</Tag>
         <English>Trade with the natives</English>
         <German>Handel mit den Wilden</German>
+        <Russian>Торговля с индейцами</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_EXPERT_TRADER_TEXT</Tag>
-        <English>"[COLOR_SELECTED_TEXT]White man, these are very good guns. But the price is much too high.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]You're right. You can't beat the quality. Well, okay. I'll add some cartridges and this good rum. What do you say? Deal?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Double the cartridges and sell the rum to my enemies. Then we have a deal!"[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
-        <German>"[COLOR_SELECTED_TEXT]Weißer Mann, das sein sehr gute Waffe. Aber Preis viel zu hoch.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Na, ihr bekommt ja auch was dafür. Ich leg noch Patronen drauf und diesen guten Rum hier. Was sagt ihr? Sind wir im Geschäft?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Gib mir Rum, vorher muss ich testen. Zwei Fässer und zehn Gewehre wollen wir.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+        <English>"[COLOR_SELECTED_TEXT]White man, these are very good guns. But the price is much too high.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]You're right. You can't beat the quality. Well, okay. I'll add some cartridges and this good rum. What do you say? Deal?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Double the cartridges and sell the rum to my enemies. Then we have a deal!"[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <German>"[COLOR_SELECTED_TEXT]Weißer Mann, das sein sehr gute Waffe. Aber Preis viel zu hoch.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Na, ihr bekommt ja auch was dafür. Ich leg noch Patronen drauf und diesen guten Rum hier. Was sagt ihr? Sind wir im Geschäft?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Gib mir Rum, vorher muss ich testen. Zwei Fässer und zehn Gewehre wollen wir.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+        <Russian>"[COLOR_SELECTED_TEXT]Бледнолицый, ты предлагаешь хорошее оружие. Но цена слишком высока.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что ж, я могу добавить еще немного пуль и вот этот чудесный ром. Что скажешь?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Налей мне рома, я хочу сначала проверить его. Если ты не лжец, мы возьмём два бочонка и десять винтовок.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_EUROPEAN_LINE_INFANTRY</Tag>
         <English>The first European line infantry</English>
         <German>Die erste Europäische Linieninfanterie</German>
+        <Russian>Первая Европейская линейная пехота</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_EUROPEAN_LINE_INFANTRY_HEAD</Tag>
         <English>Elite troops in the New World</English>
         <German>Eilitetruppen in der Neuen Welt</German>
+        <Russian>Элитные войска в Новом Свете</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_EUROPEAN_LINE_INFANTRY_TEXT</Tag>
-        <English>"[COLOR_SELECTED_TEXT]Men, listen to me. We've been sent to this godforsaken place to do great things and conquer even more of this beautiful country for our King.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]The savages here are no match for us. We will sweep them away and take their gold.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Um, sir, just the other day in the forest these "savages" surrounded and destroyed an entire troop. We should be careful, sir.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
-        <German>"[COLOR_SELECTED_TEXT]Männer, hört mir zu. Man hat uns an diesen gottverlassenen Ort geschickt, um Großes zu leisten und für unseren König ein neues Stückchen dieser schönes Erade zu erobern.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Die Wilden hier sind keine Gegner für uns. Wir werden sie hinwegfegen und uns ihr Gold holen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ähm, Sir, erst neulich sollen diese "Wilden" eine ganze Truppe im Wald umzingelt und ausgeschaltet haben. Wir sollten uns vorsehen, Sir![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+        <English>"[COLOR_SELECTED_TEXT]Men, listen to me. We've been sent to this godforsaken place to do great things and conquer even more of this beautiful country for our King.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]The savages here are no match for us. We will sweep them away and take their gold.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Um, sir, just the other day in the forest these "savages" surrounded and destroyed an entire troop. We should be careful, sir.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <German>"[COLOR_SELECTED_TEXT]Männer, hört mir zu. Man hat uns an diesen gottverlassenen Ort geschickt, um Großes zu leisten und für unseren König ein neues Stückchen dieser schönes Erade zu erobern.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Die Wilden hier sind keine Gegner für uns. Wir werden sie hinwegfegen und uns ihr Gold holen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ähm, Sir, erst neulich sollen diese "Wilden" eine ganze Truppe im Wald umzingelt und ausgeschaltet haben. Wir sollten uns vorsehen, Sir![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+        <Russian>"[COLOR_SELECTED_TEXT]Парни, послушайте меня. Нас послали в это Богом забытое место, чтобы вершить великие дела и завоевать еще больше земель для нашего Короля.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Местные дикари нам не ровня. Мы сметем их и заберем всё их золото.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Гхм, сэр, буквально на днях в лесу эти "дикари" окружили и уничтожили целый отряд. Мы должны быть осторожны, сэр.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_ACHIEVE_SECOND_CONQUISTADOR</Tag>
         <English>Some conquistadors</English>
         <German>Mehrere Konquistadoren</German>
+        <Russian>Несколько конкистадоров</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SECOND_CONQUISTADOR_HEAD</Tag>
         <English>Conquistadors conquer the New World</English>
         <German>Konquistadoren erobern die Neue [NEWLINE]Welt</German>
+        <Russian>Конкистадоры покоряют Новый Свет</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SECOND_CONQUISTADOR_TEXT</Tag>
-        <English>"[COLOR_SELECTED_TEXT]Men, the New World is ours. Look at this! One of the Seven Cities of Cibola, I know it, I'm sure. Follow me![NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Lord, this looks more like the burial place of a high king of the savages. We're more likely to find dusty bones or death or both. If any savages see us, that's the death of us all.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]What are you, conquerors or cowards? Follow me...I can smell the gold already![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
-        <German>"[COLOR_SELECTED_TEXT]Männer, die Neue Welt gehört uns. Seht Euch das an! Eine der sieben Städte von Cibola, ich weiß es, ich bin sicher. Folgt mir![NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Herr, das sieht mir eher wie die Begräbnisstätte eines hohen Königs der Wilden aus. Ich glaube hier werden wir eher nur verstaubte Knochen oder den Tod finden oder beides. Wenn die Wilden uns sehen, sind wir geliefert.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Was seid ihr, Eroberer oder Feiglinge? Mir nach...ich kann das Gold schon riechen![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+        <English>"[COLOR_SELECTED_TEXT]Men, the New World is ours. Look at this! One of the Seven Cities of Cibola, I know it, I'm sure. Follow me![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Lord, this looks more like the burial place of a high king of the savages. We're more likely to find dusty bones or death or both. If any savages see us, that's the death of us all.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]What are you, conquerors or cowards? Follow me...I can smell the gold already![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <German>"[COLOR_SELECTED_TEXT]Männer, die Neue Welt gehört uns. Seht Euch das an! Eine der sieben Städte von Cibola, ich weiß es, ich bin sicher. Folgt mir![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Herr, das sieht mir eher wie die Begräbnisstätte eines hohen Königs der Wilden aus. Ich glaube hier werden wir eher nur verstaubte Knochen oder den Tod finden oder beides. Wenn die Wilden uns sehen, sind wir geliefert.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Was seid ihr, Eroberer oder Feiglinge? Mir nach...ich kann das Gold schon riechen![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+        <Russian>"[COLOR_SELECTED_TEXT]Парни, Новый Свет наш. Посмотрите туда! Это один из семи городов Сиболы, я уверен. Следуйте за мной![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Господи, это больше похоже на место захоронения верховного вождя туземцев. Скорее всего, мы найдем лишь обглоданные кости. А если кто-то из дикарей увидит нас, мы все погибнем...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Вы завоеватели или трусы? За мной! Я уже чувствую запах золота!!![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
    <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWENTY_BLADES</Tag>
         <English>Eager weaponsmiths</English>
         <German>Eifrige Waffenschmiede</German>
+        <Russian>Двадцать клинков</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWENTY_BLADES_HEAD</Tag>
         <English>Blade weapons for the armory</English>
         <German>Klingenwaffen für das Waffenlager</German>
+        <Russian>Клинки для оружейной</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWENTY_BLADES_TEXT</Tag>
         <English>Sir, your smiths are keeping busy. They've forged plenty of new swords along with other weapons.[NEWLINE][NEWLINE]It's not enough for an army yet, but we can all defend ourselves better now. You could even equip some new units.[NEWLINE][NEWLINE]</English>
         <German>Sir, Eure Waffenschmiede sind wirklich fleißig. Es wurden reichlich neue Schwerter und andere Klingenwaffen geschmiedet.[NEWLINE][NEWLINE]Es reicht noch nicht für eine Armee, aber Ihr könnt Euch jetzt jedenfalls besser verteidigen und einige neue Einheiten ausrüsten.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваши кузнецы завалены работой. Они сделали уже много новых клинков и другого оружия.[NEWLINE][NEWLINE]И хоть этого пока недостаточно для большой армии, но теперь мы не беззащитны и даже можем экипировать несколькох колонистов.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SMALL_COASTAL_SHIP</Tag>
         <English>First Small Coastal Ship</English>
         <German>Erster Kleiner Küstensegler</German>
+        <Russian>Первый малый прибрежный корабль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SMALL_COASTAL_SHIP_HEAD</Tag>
         <English>Shallow waters can be navigated</English>
         <German>Küstengewässer können befahren werden</German>
+        <Russian>Мелководье больше не проблема</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SMALL_COASTAL_SHIP_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Very splendid, Captain. You've successfully sailed your barge up the river and returned with much-needed goods.[NEWLINE][NEWLINE]See these barrels here and those back there. Please take them back with you. We rely on you.[COLOR_REVERT]"[NEWLINE][NEWLINE]You now have the first small coastal ship. Use it well, and don't put it on the next sandbank right away.[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Ganz famos Käpt'n, Ihr habt Euren Kahn endlich den Fluss rauf geschippert und bringt uns die dringend benötigten Waren.[NEWLINE][NEWLINE]Diese Fässer hier und die da hinten nehmt bitte wieder mit zurück, wir verlassen uns auf Euch[COLOR_REVERT]"[NEWLINE][NEWLINE]Ihr verfügt nun über den ersten kleinen Küstensegler. Gebraucht ihn wohl und setzt nicht gleich auf die nächste Sandbank. [NEWLINE][NEWLINE]</German>
+        <Russian>"[COLOR_SELECTED_TEXT]Отлично, капитан. Вы успешно провели баржу вверх по реке и вернулись со столь необходимыми нам товарами.[NEWLINE][NEWLINE]Видите эти бочки здесьна пирсе и те у здания? Пожалуйста, захватите их с собой. Мы полагаемся на вас.[COLOR_REVERT]"[NEWLINE][NEWLINE]Теперь у вас есть первый малый прибрежный корабль. Используйте его бережно и постарайтесь не посадить на ближайшую отмель.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BIG_COASTAL_SHIP</Tag>
         <English>First Big Coastal Ship</English>
         <German>Erster Großer Küstensegler</German>
+        <Russian>Перый большой прибрежный корабль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BIG_COASTAL_SHIP_HEAD</Tag>
         <English>Coastal shipping grows and grows</English>
         <German>Die Küstenschifffahrt wächst und wächst</German>
+        <Russian>Прибрежное судоходство расширяется</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BIG_COASTAL_SHIP_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Captain, this is really a big ship. Its cargo capacity rivals a sea-going vessel. I realize it can't get any bigger, or else you'll get stuck in the mud.[NEWLINE][NEWLINE]We have a lot of goods. Please take them up the river with you, and be assured you'll receive a decent reward.[COLOR_REVERT]"[NEWLINE][NEWLINE]You now have the first big coastal ship. Use it well. Don't beach it on a sandbank.[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Käpt'n, Ihr habt Euch wahrlich verbessert, seit dem Ihr das letzte Mal hier wart. Dieses Schiff kann es ja schon fast mit einem Vollschiff aufnehmen. Aber noch größer darf es nicht werden, sonst macht Euch der Tiefgang einen Strich durch die Rechnung und Ihr bleibt im Schlick hängen.[NEWLINE][NEWLINE]Wir haben wieder ordentlich Ware, die Ihr bitte den Fluss mit runternehmt. Man wird Euch auch anständig dafür entlohnen.[COLOR_REVERT]"[NEWLINE][NEWLINE]Ihr verfügt nun über den ersten großen Küstensegler. Gebraucht ihn wohl und setzt nicht gleich auf die nächste Sandbank. [NEWLINE][NEWLINE]</German>
+        <Russian>"[COLOR_SELECTED_TEXT]Поздравляю, капитан, у вас теперь действительно большой корабль. Предположу, что он может принять столько же груза, сколько и небольшое морское судно. Жаль, что он не может стать еще больше, иначе вы рискуете завязнуть придонном иле.[NEWLINE][NEWLINE] У нас скопилось множество товаров. Возьмите их с собой в следующий рейс вверх по реке и будьте уверены, вы сможете выручить за них достойную награду.[COLOR_REVERT]"[NEWLINE][NEWLINE]Теперь у вас есть первый большой прибрежный корабль. Он больше и сядет на мель быстрее малого прибрежного корабля, так что будьте аккуратны.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
    <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_TOWN_GUARD</Tag>
         <English>First town guard</English>
         <German>Erste Stadtwache</German>
+        <Russian>Первый городской стражник</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_TOWN_GUARD_HEAD</Tag>
         <English>A settler has taken the profession of town guard</English>
         <German>Ein Siedler hat den Beruf Stadtwache ergriffen</German>
+        <Russian>Поселенец выбрал профессию городского стража</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_TOWN_GUARD_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Hey, you, don't fall asleep on guard duty. That's not what we're paid for. We're supposed to keep peace and order here."[NEWLINE][NEWLINE]"Oh, come on, let me sit here for a bit. Yesterday we had a few drinks, right up to closing time in fact. I just need some rest. The city is in good hands with you...[COLOR_REVERT]"[NEWLINE][NEWLINE]A settler has taken the profession of city guard. Very good. The city now has a little protection. But that won't be enough in the long run.[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Hey, Du, schlaf blos nicht auf Wache ein. Dafür werden wir nicht bezahlt. Wir sollen doch hier für Ruhe und Ordnung sorgen.[NEWLINE][NEWLINE]Ach was, lass mich doch ein wenig hier ausruhen. Gestern haben wir ganz schön ins Glas geschaut. Es dauerte bis zur Sperrstunde. Ich brauch' jetzt einfach Ruhe. Die Stadt ist doch bei Dir in guten Händen...[COLOR_REVERT]"[NEWLINE][NEWLINE]Ein Siedler hat den Beruf Stadtwache ergriffen. Sehr gut, damit sollte die Stadt schon ein wenig mehr geschützt sein. Aber das wird auf die Dauer nicht ausreichen. [NEWLINE][NEWLINE]</German>
+        <Russian>"[COLOR_SELECTED_TEXT]Эй, ты, не спать в карауле! Нам платят не за это. Мы здесь, чтобы поддерживать мир и порядок[COLOR_REVERT]".[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да бросьте, позвольте мне хоть немного посидеть. Вчера мы сидели в таверне почти до закрытия. Мне просто нужно малость отдохнуть. С такими, как вы, этот город в надежных руках...[COLOR_REVERT]"[NEWLINE][NEWLINE]Один из колонистов выбрал для себя профессию городского стража. Очень хорошо - теперь колония хоть как-то защищена. Но в долгосрочной перспективе этого будет недостаточно.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_BARQUE</Tag>
         <English>First slave barque</English>
         <German>Erste Sklavenbarke</German>
+        <Russian>Первый невольничий барк</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_BARQUE_HEAD</Tag>
         <English>Professional slave trade</English>
         <German>Professioneller Sklavenhandel</German>
+        <Russian>Профессиональная работорговля</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_BARQUE_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Sir, this is not a ship to carry emigrants. That should be obvious to you. It's cramped and stuffy down there in the hold. There's only one purpose for this kind of ship - to get as many slaves from Africa to this place as possible.[NEWLINE][NEWLINE]I guess we both know what we're saying here. We don't need to talk about it any further. This ship looks like it's in good shape. What do you want for it? I'll need one or two more ships like this one.[COLOR_REVERT]"[NEWLINE][NEWLINE]You are now the owner of a slave transporter. Are you really sure you want to get into this kind of business? The good citizens of your colony might be frightened on the day such a cargo is suddenly unloaded at their docks.[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Sir, das ist kein Schiff, um Auswanderer zu transportieren. Das sollte Euch klar sein. Es ist eng und stickig da unten im Laderaum. Es gibt nur einen Zweck für diese Art Schiffe - möglichst viele Sklaven von Afrika hierher zu schaffen. [NEWLINE][NEWLINE]Schätze, wir beide wissen, wovon wir hier reden. Reden wir nicht weiter davon. Sie scheint gut in Schuss zu sein. Was wollt Ihr dafür? Ich brauche vermutlich noch ein oder zwei Schiffe mehr von der Sorte.[COLOR_REVERT]"[NEWLINE][NEWLINE]Ihr seid nun Besitzer eines Sklaven-Transporters. Seid Ihr Euch wirklich sicher, dass Ihr in diese Art von Geschäft einsteigen wollt? Die braven Bürger Eurer Kolonie könnte es verschrecken, wenn an den Docks plötzlich solche Ladung gelöscht wird.[NEWLINE][NEWLINE]</German>
+        <Russian>"[COLOR_SELECTED_TEXT]Сэр, это не корабль для перевозки эмигрантов. Если вы не в курсе, то в его огромных трюмах тесно и душно. У такого корабля только одна цель - доставить в колонии как можно больше чёрного дерева из Африки[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Думаю, мы оба знаем, о чем говорим. Можете не беспокоиться об этом. Похоже, этот корабль в хорошем состоянии. Сколько вы хотите за него? Кстати, я готов купить еще один или два таких корабля.[COLOR_REVERT]"[NEWLINE][NEWLINE]Теперь вы владелец транспорта для перевозки рабов. Вы действительно уверены, что хотите заняться этим бизнесом? Добрые граждане вашей колонии могут прийти в ужас, когда в доках их колонии внезапно появится такой груз.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_HUNTER</Tag>
         <English>First slave hunter</English>
         <German>Erster Sklavenjäger</German>
+        <Russian>Первый охотник на рабов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_HUNTER_HEAD</Tag>
         <English>Tracking runaway slaves</English>
         <German>Aufspüren von entlaufenen Sklaven</German>
+        <Russian>Выслеживание беглых рабов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_HUNTER_TEXT</Tag>
         <English>You have hired a slave hunter to bring back runaway slaves. Now that you're obviously fully committed to this business and are running your plantations with slaves, there's really nothing more to say about it. May the Lord forgive you for your deeds.[NEWLINE][NEWLINE]</English>
         <German>Ihr habt einen Sklavenjäger angeheuert, der Euch entlaufene Sklaven zurückbringt. Da ihr nun offensichtlich ganz und gar in dieses Geschäft eingestiegen seid und Eure Plantagen mit Sklaven betreibt, gibt es dazu eigentlich nichts mehr zu sagen. Möge der Herr Euch Eure Taten vergeben.[NEWLINE][NEWLINE]</German>
+        <Russian>Вы наняли охотника за рабами, чтобы вернуть сбежавших наглецов. Теперь, когда вы полностью посвятили себя этому делу и поручили работу на плантациях рабам, больше нечего сказать об этом. Господь милосердный да простит вас за дела неправедные.[NEWLINE][NEWLINE]</Russian>
     </TEXT>	
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_MASTER</Tag>
         <English>First slave master</English>
         <German>Erster Sklavenaufseher</German>
+        <Russian>Первый надсмотрщик за рабами</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_MASTER_HEAD</Tag>
         <English>Using the whip</English>
         <German>Antreiben mit der Peitsche</German>
+        <Russian>Помощь хлыста</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_MASTER_TEXT</Tag>
         <English>First you snatch these poor creatures from their homes and families and bring them to the New World in deplorable conditions, and now you hire an overseer who will whip the slaves into working? [NEWLINE][NEWLINE]Have you no conscience at all? Certainly, your productivity will increase considerably - but at what price? There is still a way back. The Lord may forgive you if you abandon your plan and use the overseer elsewhere.[NEWLINE][NEWLINE]</English>
         <German>Zuerst entreißt Ihr diese armen Kreaturen ihrer Heimat und ihren Familien und schafft sie unter erbärmlichen Bedingungen in die Neue Welt und nun heuert Ihr auch noch einen Aufseher an, der die Sklaven mit der Peitsche zur Arbeit antreiben wird? [NEWLINE][NEWLINE]Habt Ihr denn gar kein Gewissen? Gewiss, Eure Produktivität wird erheblich steigen - aber zu welchem Preis? Noch gibt es ein zurück. Der Herr wird Euch vielleicht vergeben, wenn Ihr von Eurem Plan ablasst und den Aufseher anderweitig verwendet.[NEWLINE][NEWLINE]</German>
+        <Russian>Сначала вы отрываете этих несчастных от их домов и семей, привозите в Новый Свет в нечеловеческих условиях, а теперь нанимаете надсмотрщика, который будет заставлять их работать при помощи кнута и палок?[NEWLINE][NEWLINE]У вас совсем нет совести? Конечно, производительность ваших плантаций значительно повысится, но какой ценой?! Однако еще не всё потеряно. Наш Господь великодушен и может простить вас, если вы откажетесь от своего плана и воспользуетесь надсмотрщиком в другом месте.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_AFRICAN_SLAVES</Tag>
         <English>Five african slaves</English>
         <German>Fünf afrikanische Sklaven</German>
+        <Russian>Пять африканских рабов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_AFRICAN_SLAVES_HEAD</Tag>
         <English>Expansion of slavery</English>
         <German>Ausweitung der Sklaverei</German>
+        <Russian>Распространение рабства</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_AFRICAN_SLAVES_TEXT</Tag>
         <English>My lord, your plantations and farms are booming, no question - but at what cost? It seems you have finally switched to running the colonies in the New World with slaves instead of God-fearing settlers from Europe. [NEWLINE][NEWLINE]The colony seems to be turning more and more into a godless place. This is not the Garden of Eden we all expected. If you free the slaves, perhaps more emigrants will join you. How will you ever free yourself from the yoke of the King's oppression if parts of your population remain unfree?[NEWLINE][NEWLINE]</English>
         <German>Mylord, Eure Plantagen und Farmen nehmen einen gewaltigen Aufschwung, keine Frage - aber zu welchem Preis? Es scheint Ihr seid nun endgültig dazu übergegangen, die Kolonien in der Neuen Welt mit Sklaven zu betreiben anstatt mit gottesfürchtigen Siedlern aus Europa. [NEWLINE][NEWLINE]Die Kolonie entwickelt sich offenbar immer mehr zu einem gottlosen Ort. Das hier ist nicht der Garten Eden, den wir alle erwartet haben. Wenn Ihr die Sklaven freilasst, schließen sich Euch vielleicht wieder mehr Auswanderer an. Wie wollt Ihr Euch je vom Joch der Unterdrückung durch den König befreien, wenn selbst Teile Eurer Bevölkerung unfrei bleiben? [NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, плантации и фермы процветают - но какой ценой? Вы предпочитаете использовать в колониях Нового Света труд рабов вместо богобоязненных переселенцев из Европы.[NEWLINE][NEWLINE]Кажется, колония все больше и больше превращается в безбожное место. Это не тот райский сад, которого мы все ожидали. Если вы освободите рабов, возможно, к вам присоединится больше эмигрантов. Как вы собираетесь освободиться от ига королевского гнета, если часть вашего населения останется несвободной?[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_FREED_SLAVES</Tag>
         <English>Five freed slaves</English>
         <German>Fünf befreite Sklaven</German>
+        <Russian>Пять </Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_FREED_SLAVES_HEAD</Tag>
         <English>Slaves become free citizens</English>
         <German>Sklaven werden freie Bürger</German>
+        <Russian>Рабы становятся свободными гражданами</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_FREED_SLAVES_TEXT</Tag>
         <English>Milord, in your colony more and more slaves are becoming free citizens. They now volunteer to help develop the colony. This will increase their productivity. [NEWLINE][NEWLINE]Maybe more slaves will find their way to freedom. It would not harm the colony.[NEWLINE][NEWLINE]</English>
         <German>Mylord, in Eurer Kolonie werden immer mehr Sklaven zu freien Bürgern. Sie werden nun freiwillig für den Aufbau und den Erfolg der Kolonie mitarbeiten. Dadurch erhöht sich Ihre Produktivität. [NEWLINE][NEWLINE]Vielleicht finden ja noch mehr Sklaven den Weg in die Freiheit. Der Kolonie würde es nicht schaden. [NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, в колонии все больше и больше рабов становятся свободными гражданами. Теперь они добровольно помогают развивать колонию. В конечном итоге это повысит их продуктивность.[NEWLINE][NEWLINE]Возможно, в будущем еще больше рабов найдут путь к свободе. Это не повредит колонии. Мы будем молить Господа направить вас на путь истинный.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_HIGH_PROFITABLE_TRADE</Tag>
         <English>30,000 goods traded</English>
         <German>30.000 Waren gehandelt</German>
+        <Russian>30'000 товаров продано</Russian>
      </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_HIGH_PROFITABLE_TRADE_HEAD</Tag>
         <English>Thirty thousand goods traded</English>
         <German>Dreißigtausend Waren gehandelt</German>
+        <Russian>Бойкая торговля</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_HIGH_PROFITABLE_TRADE_TEXT</Tag>
         <English>My lord, your economy is now running smoothly, you have the piracy problem under control and a large merchant fleet is carrying your goods to Europe. Your colonies are the pearl of your King's empire.[NEWLINE][NEWLINE]Despite the ever-increasing tax burden, your treasury is filling up more and more. Don't forget to protect the colony. So much wealth attracts envious people.[NEWLINE][NEWLINE]If you're thinking about renouncing the King, bear in mind that this needs to be well-planned. You need an army, weapons, supplies and much more. You'll lose everything if you're not well-prepared for the revolution.</English>
         <German>Mylord, Eure Wirtschaft läuft mittlerweile wie geschmiert, Ihr habt das Piratenproblem im Griff und eine große Handelsflotte schafft Eure Waren nach Europa. Eure Kolonien sind mittlerweile die Perle des Reiches Eures Königs.[NEWLINE][NEWLINE]Trotz der immer größeren Steuerlast füllt sich Eure Schatzkammer mehr und mehr. Ihr solltet auf jeden Fall auch den Schutz der Kolonie nicht vergessen. So viel Reichtum ruft Neider auf den Plan.[NEWLINE][NEWLINE]Und solltet Ihr darüber nachdenken, den König König sein zu lassen und sich eventuell vom König loszusagen, dann bedenkt: Das will gut geplant sein. Ihr braucht dafür auch eine Armee, viele Waffen, Vorräte und noch mehr. Ihr könntet alles verlieren, wenn Ihr nicht gut für eine Revolution gerüstet seid. [NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, ваша экономика теперь работает гладко, проблема пиратства решена и большой торговый флот везет ваши товары в Европу. Ваши колонии — жемчужины империи вашего Короля.[NEWLINE][NEWLINE]Несмотря на постоянно растущее налоговое бремя, ваша казна пополняется все больше и больше. Но не забывайте защищать колонию. Такое богатство привлекает завистников.[NEWLINE][NEWLINE]Если вы думаете об отречении от Короля, помните, что это нужно хорошо спланировать. Вам понадобится армия, оружие, припасы и многое другое. Вы потеряете все, если не будете хорошо подготовлены к революции.</Russian>
     </TEXT>
    <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MASS_TRANSPORT</Tag>
         <English>Horse and Carriages</English>
         <German>Viele Kutschengespanne</German>
+        <Russian>Лошади и транспорт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MASS_TRANSPORT_HEAD</Tag>
         <English>Carriages facilitate the transportation</English>
         <German>Kutschen erleichtern den Transport</German>
+        <Russian>Развитие перевозок</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MASS_TRANSPORT_TEXT</Tag>
         <English>Milord, you've made a lot of progress developing your colonies. More and more carriages. wagons and carts are travelling on the well-paved roads that connect your coastal cities with the inland boondocks where they collect a variety of merchandise for export.[NEWLINE][NEWLINE]A solid infrastructure is a wonderful thing. Keep up the good work![NEWLINE][NEWLINE]</English>
         <German>Mylord, Ihr macht beachtliche Fortschritte bei der Erschließung Eurer Kolonien. Immer mehr Kutschen und Fuhrwerke sind auf Euren gut ausgebauten Straßen unterwegs, um die Küstenstädte mit dem Hinterland zu verbinden und Waren für den Export heranzuschaffen. [NEWLINE][NEWLINE]Eine funktionierende Infrastruktur ist eine gute Sache. Macht weiter so! [NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, вы добились больших успехов в развитии своих колоний. Все больше различных вагонов, фургонов и повозок едут по хорошо вымощенным дорогам, которые соединяют ваши прибрежные города с внутренними поместьями, где они собирают разнообразные товары на экспорт.[NEWLINE][NEWLINE]Надежная инфраструктура — замечательная вещь. Продолжайте в том же духе![NEWLINE][NEWLINE]</Russian>
     </TEXT>
    <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SOME_SMALL_VESSELS</Tag>
         <English>Some small vessels</English>
         <German>Einige kleinere Schiffe</German>
+        <Russian>Несколько малых судов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SOME_SMALL_VESSELS_HEAD</Tag>
         <English>Small, fast and agile</English>
         <German>Klein, schnell und wendig</German>
+        <Russian>Маленький, быстрый и маневренный</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SOME_SMALL_VESSELS_TEXT</Tag>
         <English>Milord, congratulations on your flotilla, your new fleet of small naval vessels. These ships may be compact, but that makes them agile and fast.[NEWLINE][NEWLINE]Exactly the right ships for the narrow bays and flat coastal sections here. Remember not to neglect the large transport ships that will carry your goods across the ocean to Europe.[NEWLINE][NEWLINE]</English>
         <German>Mylord, man darf Euch zum Aufbau einer Flotille von kleineren Marinefahrzeugen neuen Typs gratulieren. Diese Fahrzeuge sind zwar klein, dafür aber auch wendig und schnell. [NEWLINE][NEWLINE]Genau die richtigen Schiffe für die engen Buchten und flachen Küstenabschnitte hier. Ihr solltet aber auch die großen Transportschiffe wie die Westindienfahrer und Galleonen nicht vernachlässigen, um Eure Waren nach Europa verschiffen zu können.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, поздравляю с новым флотом малых кораблей. Они могут быть небольшими, но это делает их маневренными и быстрыми.[NEWLINE][NEWLINE]Это как раз то, что нужно в узких заливах и на мелководных участках побережья. Но не пренебрегайте большими транспортными судами, которые должны доставлять ваши товары через океан в Европу.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
    <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_BIG_VESSELS</Tag>
         <English>Several large merchant ships</English>
         <German>Mehrere große Handelsschiffe</German>
+        <Russian>Несколько крупных торговых судов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_BIG_VESSELS_HEAD</Tag>
         <English>Cargo holds as big as a church</English>
         <German>Laderäume so große wie eine Kirche</German>
+        <Russian>Грузовые отсеки размером с церковь</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_BIG_VESSELS_TEXT</Tag>
         <English>Milord, you are to be congratulated on the construction of an impressive fleet of merchant ships. These vessels are a bit slower, but sturdy and well-suited for an Atlantic crossing. In their huge cargo holds they can transport enormous quantities of goods to Europe.[NEWLINE][NEWLINE]They're exactly the right ships for a merchant navy. At the same time remember not to neglect the small and maneuverable schooners, brigs and sloops to trade along your own coasts. These small vessels are better suited to shallow coastal waters.[NEWLINE][NEWLINE]</English>
         <German>Mylord, man darf Euch zum Aufbau einer Flotille von imposanten Handelsschiffen neuen Typs gratulieren. Diese Fahrzeuge sind zwar etwas langsamer, dafür aber stabil gebaut und für eine Atlantiküberquerung gut geeignet. Sie haben riesige Laderäume und können enorme Mengen an Waren nach Europa transportieren. [NEWLINE][NEWLINE]Genau die richtigen Schiffe für den Aufbau einer Handelsmarine. Ihr solltet aber auch die kleinen und wendigen Schooner, Brigs und Sloops nicht vernachlässigen, um an Euren eigenen Küsten Handel zu treiben. Für die seichten Küstengewässer sind diese kleinen Fahrzeuge oft besser geeignet.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, вас можно поздравить с постройкой внушительного флота торговых кораблей. И хотя эти суда немного неповоротнливы, но они прочны и отлично подходят для пересечения Атлантики. В своих огромных трюмах они могут перевозить огромное количество товаров в Европу.[NEWLINE][NEWLINE]Это как раз те корабли, которые подходят торговому флоту. Однако не пренебрегайте маленькими и маневренными шхунами, бригами и шлюпами для торговли вдоль своих берегов. Эти небольшие суда лучше подходят для мелководья прибрежных вод.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
    <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_MEDIUM_VESSELS</Tag>
         <English>Several medium merchant ships</English>
         <German>Mehrere mittelgroße Handelsschiffe</German>
+        <Russian>Несколько средних торговых кораблей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_MEDIUM_VESSELS_HEAD</Tag>
         <English>A merchant marine emerges</English>
         <German>Eine Handelsmarine entsteht</German>
+        <Russian>Появление торгового флота</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_MEDIUM_VESSELS_TEXT</Tag>
-        <English>Milord, congratulations on the construction of a flotilla of merchant ships. These vessels will form the basis of your trading activities. They are suitable for an Atlantic crossing. The ships are quite cheap and easy to build. With them you can transport your first goods to Europe and explore the coasts.[NEWLINE][NEWLINE]However, these ships are not quite up to date with the latest developments in shipping. Marine designers are already working on faster ships that can also transport significantly more goods. You might want to think about a shipyard that can build even better ships. [NEWLINE][NEWLINE]</English>
-        <German>Mylord, man darf Euch zum Aufbau einer Flotille von Handelsschiffen gratulieren. Diese Fahrzeuge werden den Grundstock für Eure Handelsaktivitäten bilden und sie sind für eine Atlantiküberquerung geeignet. Die Schiffe sind recht billig und leicht zu bauen. Mit ihnen könnt Ihr erste Waren nach Europa transportieren und die Küsten erkunden. [NEWLINE][NEWLINE]Die Schiffe sind allerdings nicht mehr ganz auf dem neuesten Stand der Entwicklung in der Seefahrt. Es gibt Pioniere der Seefahrt, die bereits an schnelleren und wenigeren Schiffen arbeiten, die auch deutlich mehr Waren transportieren können. Ihr solltet vielleicht über den Bau einer Werft nachdenken, um noch bessere Schiffe bauen zu können. [NEWLINE][NEWLINE]</German>
+        <English>Milord, congratulations on the construction of a flotilla of merchant ships. These vessels will form the basis of your trading activities. They are suitable for an Atlantic crossing. The ships are quite cheap and easy to build. With them you can transport your first goods to Europe and explore the coasts.[NEWLINE][NEWLINE]However, these ships are not quite up to date with the latest developments in shipping. Marine designers are already working on faster ships that can also transport significantly more goods. You might want to think about a shipyard that can build even better ships.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, man darf Euch zum Aufbau einer Flotille von Handelsschiffen gratulieren. Diese Fahrzeuge werden den Grundstock für Eure Handelsaktivitäten bilden und sie sind für eine Atlantiküberquerung geeignet. Die Schiffe sind recht billig und leicht zu bauen. Mit ihnen könnt Ihr erste Waren nach Europa transportieren und die Küsten erkunden.[NEWLINE][NEWLINE]Die Schiffe sind allerdings nicht mehr ganz auf dem neuesten Stand der Entwicklung in der Seefahrt. Es gibt Pioniere der Seefahrt, die bereits an schnelleren und wenigeren Schiffen arbeiten, die auch deutlich mehr Waren transportieren können. Ihr solltet vielleicht über den Bau einer Werft nachdenken, um noch bessere Schiffe bauen zu können.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, поздравляю с постройкой флотилии торговых судов. Эти суда станут основой нашей торговой деятельности. Они подходят для пересечения Атлантики и довольно дешевы и просты в постройке. На них мы сможем доставить свои первые товары в Европу и исследовать побережье.[NEWLINE][NEWLINE]Однако эти корабли не совсем соответствуют последним разработкам в области судостроения. Морские конструкторы уже работают над более быстрыми кораблями, которые также могут перевозить значительно больше грузов. Возможно, вы захотите подумать о верфи, которая может строить еще более совершенные корабли.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_TREASURES</Tag>
         <English>Five treasures</English>
         <German>Fünf Schätze</German>
+        <Russian>Пять сокровищ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_TREASURES_HEAD</Tag>
         <English>Treasures were hoarded</English>
         <German>Schätze wurden gehortet</German>
+        <Russian>Запасы золота</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_TREASURES_TEXT</Tag>
         <English>Milord, you currently have five treasure chests filled to the brim with gold. Bandits, the city council and other riffraff are surely already after the gold. You have to guard your treasures all the time. [NEWLINE][NEWLINE]You should get a suitable vessel that can take the treasures to Europe, and turn them into hard cash. Bring them to Europe yourself, unless you want to let the King keep the largest part for himself![NEWLINE][NEWLINE]</English>
         <German>Mylord, Ihr nennt derzeit fünf Schatztruhen, randvoll gefüllt mit Gold, Euer Eigentum. Banditen, der Stadtrat und anderes Gesindel sind sicher schon hinter dem Gold her. Außerdem müsst Ihr die Schätze die ganze Zeit bewachen lassen. [NEWLINE][NEWLINE]Ihr solltet darüber nachdenken, Euch ein geeignetes Transportmittel zu beschaffen und die Schätze nach Europa schaffen, wo man sie Euch mit barer Münze vergüten wird. Bringt sie auf jeden Fall selbst nach Europa. Der König wird ansonsten den größten Teil davon in seine eigene Schatzkammer wandern lassen! [NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, у вас сейчас пять сундуков с сокровищами, до краев наполненных золотом. Индейцы, бандиты и прочие негодяи наверняка будут охотиться за ними. Нам следует позаботиться об охране.[NEWLINE][NEWLINE]Вы должны найти подходящее судно, которое сможет доставить сокровища в Европу и превратить их в наличные деньги, если не хотите, чтобы Король оставил большую часть себе![NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MULATTOS</Tag>
         <English>Ten mulattos</English>
         <German>Zehn Mulatten</German>
+        <Russian>Десять мулатов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MULATTOS_HEAD</Tag>
         <English>Descendants of European settlers [NEWLINE]and African slaves</English>
         <German>Nachkommen europäischer Siedler [NEWLINE]und afrikanischer Sklaven</German>
+        <Russian>Потомки европейских поселенцев и африканских рабов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MULATTOS_TEXT</Tag>
         <English>My lord, in your colonies the proportion of mixed descendants of European settlers and African slaves is increasing. A not-insignificant part of your colonies belongs to this population group.[NEWLINE][NEWLINE]It seems that the mutual dislike of both races is not as great as thought. It's only natural for the population to develop accordingly.[NEWLINE][NEWLINE]</English>
         <German>Mylord, in Euren Kolonien steigt der Anteil an gemischten Nachkommen von europäischen Siedlern und afrikanischen Sklaven. Ein nicht unerheblicher Anteil in Euren Kolonien gehört dieser Bevölkerungsgruppe an. [NEWLINE][NEWLINE]Es scheint, als wäre die gegenseitige Abneigung beider Rassen doch nicht bei allen so groß wie gedacht. Da scheint es nur natürlich zu sein, dass sich die Bevölkerung dementsprechend weiterentwickelt. [NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, в колониях увеличивается доля смешанных потомков европейских переселенцев и африканских рабов. Немалая часть ваших колоний принадлежит к этой группе населения.[NEWLINE][NEWLINE]Кажется, взаимная неприязнь обеих рас не так уж велика, как кажется. Так что вполне естественно, что население будет приростать соответствующим образом.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MESTIZZOS</Tag>
         <English>Ten mulattos</English>
         <German>Zehn Mulatten</German>
+        <Russian>Десять метисов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MESTIZZOS_HEAD</Tag>
         <English>Descendants of European settlers [NEWLINE]and indigenous population</English>
         <German>Nachkommen europäischer Siedler [NEWLINE]und indigener Bevölkerung</German>
+        <Russian>Потомки европейских поселенцев и тузевцев</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MESTIZZOS_TEXT</Tag>
         <English>My lord, in your colonies, the share of mixed descendants of European settlers and Indigenous population is increasing. A not-insignificant proportion in your colonies belongs to this population group.[NEWLINE][NEWLINE]It seems that the mutual dislike of both races is not as great as thought. It's only natural that the population develops accordingly.[NEWLINE][NEWLINE]</English>
         <German>Mylord, in Euren Kolonien steigt der Anteil an gemischten Nachkommen von europäischen Siedlern und indigener Bevölkerung. Ein nicht unerheblicher Anteil in Euren Kolonien gehört dieser Bevölkerungsgruppe an. [NEWLINE][NEWLINE]Es scheint, als wäre die gegenseitige Abneigung beider Rassen doch nicht bei allen so groß wie gedacht. Da scheint es nur natürlich zu sein, dass sich die Bevölkerung dementsprechend weiterentwickelt. [NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, в колониях увеличивается доля смешанных потомков европейских переселенцев и местных жителей. Немалая часть ваших колоний принадлежит к этой группе населения.[NEWLINE][NEWLINE]Кажется, взаимная неприязнь обеих рас не так уж велика, как кажется. Так что вполне естественно, что население будет приростать соответствующим образом.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_JUDGES</Tag>
         <English>Three judges</English>
         <German>Drei Richter</German>
+        <Russian>Три судьи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_JUDGES_HEAD</Tag>
         <English>Establishment of a judicial system</English>
         <German>Aufbau eines Justizsystems</German>
+        <Russian>Становление системы правосудия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_JUDGES_TEXT</Tag>
         <English>My lord, I congratulate you on the ongoing establishment of a working judiciary. A well-organized colony needs a functioning judicial system.[NEWLINE][NEWLINE]You seem to be well on your way to dealing with all the riffraff that have come here to the New World. The problems are the same as in the Old World. Keep order! The King and the good settlers will thank you.[NEWLINE][NEWLINE]</English>
         <German>Mylord, ich beglückwünsche Euch zu dem fortschreitenden Aufbau einer finktionierenden Justiz. Eine gut organisierte Kolonie braucht ein funktionierendes Justizsystem. [NEWLINE][NEWLINE]Ihr seid offenbar auf einem guten Weg um mit dem ganzen Gesindel fertig zu werden, dass es hier in die Neue Welt verschlagen hat. Die Probleme sind dieselben wie in der Alten Welt. Haltet Ordnung und der König und die braven Siedler werden es Euch danken. [NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, поздравляю, прогресс в становлении судебной системы очевиден всем. Нашим колониям это нужно, как никогда.[NEWLINE][NEWLINE]Кажется, вы уже научились разбираться со всей этой сволочью, пришедшей сюда, в Новый Свет. Да, проблемы те же, что и в Старом Свете. Наведите здесь порядок! Король и добропорядочные поселенцы будут вам благодарны.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_INFANTRY</Tag>
         <English>Fifteen colonial militias</English>
         <German>Fünfzehn koloniale Milizen</German>
+        <Russian>Пятнадцать колониальных ополченцев</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_INFANTRY_HEAD</Tag>
         <English>Basic infantry training [NEWLINE]instead of daily labor</English>
         <German>Grundausbildung statt [NEWLINE]täglicher Arbeit</German>
+        <Russian>Военная подготовка вместо повседневного труда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_INFANTRY_TEXT</Tag>
         <English>Milord, you have already raised 15 units of colonial militia. The colonies have to send more and more of their best workers to the military. Is that really necessary?  [NEWLINE][NEWLINE]Consider that most of these men work in shops or on farms to increase our economic output. The King wants revenue from the colonies especially since he's put so much money into them. You should be ready with a good reason when he asks.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Ihr habt jetzt schon 15 Einheiten Kolonialmiliz aufstellen lassen. Die Kolonien müssen immer mehr ihrer guten und gesunden Arbeiter an das Militär abgeben. Ist das wirklich nötig?  [NEWLINE][NEWLINE]Bedenkt, dass ein Großteil dieser Männer auch in Werkstätten oder auf Farmen arbeiten  könnte, um die Wirtschaftsleistung zu steigern. Der König will durch die Kolonien verdienen anstatt dort nur immer Geld reinstecken zu müssen. Ihr solltet dafür einen guten Grund haben, wenn Ihr gefragt werdet.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, вы создали уже 15 отрядов колониальных ополченцев. Поселениям приходится отправлять в армию все больше и больше своих лучших работников. Это действительно необходимо?[NEWLINE][NEWLINE]Учтите, что большинство этих мужчин заняты работой на производствах или фермах, чтобы увеличить нашу экономическую производительность. Король хочет получить доход от колоний, тем более что он вложил в них так много денег. Когда он спросит, почему доходы не растут, как планировалось, у вас должен быть готов достойный ответ.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_LINE_INFANTRY</Tag>
         <English>Fifteen line infantries</English>
         <German>Fünfzehn Einheiten Linieninfanterie</German>
+        <Russian>Пятнадцать линейных пехотинцев</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_LINE_INFANTRY_HEAD</Tag>
         <English>Population in concern</English>
         <German>Die Bevölkerung in Sorge</German>
+        <Russian>Население в опасности</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_LINE_INFANTRY_TEXT</Tag>
         <English>Milord, you have already raised 15 units of line infantry. Such a large military is not only expensive, but also increasingly worries the population. Is a war imminent? [NEWLINE][NEWLINE]Well-trained infantry is important to protect your emerging colonies in the New World. The question is whether the colony really needs the troops or whether you should invest the money in other ways. Expansion with the sword must be well-thought out.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Ihr habt jetzt schon 15 Einheiten Linieninfanterie aufstellen lassen. Soviel Militär ist nicht nur teuer, es versetzt die Bevölkerung auch zunehmend in Sorge. Steht etwa ein Krieg bevor? [NEWLINE][NEWLINE]Gut ausgebildete Infanterie ist wichtig zum Schutz Eurer aufstrebenden Kolonien in der Neuen Welt. Die Frage ist, ob die Kolonie die Truppen wirklich benötigt oder Ihr das Geld nicht besser anders investieren solltet. Expansion mit dem Schwert sollte ebenfalls gut durchdacht sein.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, вы создали уже 15 отрядов линейной пехоты. Такая большая армия не только дорого обходится, но и все больше беспокоит население. Неужели война неизбежна?[NEWLINE][NEWLINE]Хорошо обученная пехота важна для защиты новых колоний в Новом Свете. Вопрос в том, действительно ли колонии нужны эти войска или стоит вложить деньги во что-то другое. Экспансия с оружием в руках должна быть хорошо продумана.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_CAVALRY</Tag>
         <English>Fifteen mounted units</English>
         <German>Fünfzehn berittene Einheiten</German>
+        <Russian>Пятнадцать конных отрядов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_CAVALRY_HEAD</Tag>
         <English>Sabers and oats bags</English>
         <German>Säbel und Hafersäcke</German>
+        <Russian>Сабли и овсяные мешки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_CAVALRY_TEXT</Tag>
         <English>Milord, you are obviously a horse lover. You have purchased only the best horses and weapons to equip mounted units in the colonies. Many of the horses are gone at the moment, used to equip new carriages. But I guess you know what you're doing.[NEWLINE][NEWLINE]Horses are prey animals. Running from danger is instinctive for them. These warhorses will have to suppress that reflex in order to carry their riders into battle. Perhaps this is the best way to protect the colonies and to conquer new territories. Fighting is much faster on horseback. On the other hand their maintenance is so much more expensive.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Ihr seid offensichtlich ein Pferdeliebhaber. Nur die besten Pferde und Blankwaffen habt Ihr angeschafft, und in den Kolonien eine stattliche Anzahl von berittenen Einheiten ausgerüstet. Die Pferde fehlen jetzt natürlich, um neue Fuhrwerke auszurüsten. Aber Ihr werdet schon wissen, was Ihr tut.[NEWLINE][NEWLINE]Pferde sind Fluchttiere. Es scheint allerdings, dass diese Pferde in nicht allzulanger Zeit diesen Reflex unterdrücken müssen, um ihre Reiter in die Schlacht zu führen. Aber vielleicht ist das notwendig, um die Kolonien zu schützen und neue Territorien zu erobern. Das geht vom Pferderücken aus natürlich viel schneller. Allerdings ist der Unterhalt auch teurer. [NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, вы явно любитель лошадей. Вы покупали только лучших лошадей и оружие для оснащения конных отрядов. И теперь у нас не хватает лошадей для организации транспортных сетей. Но надеемся, вы знаете, что делаете.[NEWLINE][NEWLINE]Лошади не хищные животные. Бегство от опасности является для них инстинктивным. И этим боевым коням придётся научиться подавлять этот рефлекс, чтобы нести своих всадников в бой. Возможно, это лучший способ защитить колонии и завоевать новые территории. Сражаться намного быстрее верхом. Однако с другой стороны, их содержание намного дороже.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_LIGHT_ARTILLERY</Tag>
         <English>Fifteen light artilleries</English>
         <German>Fünfzehn leichte Geschütze</German>
+        <Russian>Пятнадцать легких артиллерийских орудий</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_LIGHT_ARTILLERY_HEAD</Tag>
         <English>Protected forts</English>
         <German>Geschützte Forts</German>
+        <Russian>Под надёжной защитой</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_LIGHT_ARTILLERY_TEXT</Tag>
         <English>Milord, to defend a city effectively requires a sufficient number of light artillery. You have quite a lot of them already, so that many of our new colonies are well-protected.[NEWLINE][NEWLINE]However, light artillery and the equipment for it also takes up a lot of space. In addition, the guns need to be regularly checked and adjusted, and the operating crews need training. In short, artillery is really expensive. Think about that when you buy more guns, even if it makes the population feel a little safer every time.[NEWLINE][NEWLINE]</English>
         <German>Mylord, eine Stadt lässt sich nur mit einer gewissen Anzahl von leichten Geschützen wirksam verteidigen. Ihr habt jetzt schon eine ganze Menge davon angeschafft, so dass viele unserer neuen Kolonien wirksam geschützt werden können. [NEWLINE][NEWLINE]Allerdings nehmen Geschütze und die Ausrüstung dafür auch viel Platz weg. Zudem müssen die Geschütze regelmäßig überprüft und gereigt werden und die Bedienungsmannschaften brauchen Training. Kurzum, Artillerie ist wirklich teuer. Denkt daran, wenn Ihr weitere Geschütze anschafft. Immerhin fühlt die Bevölkerung sich damit jedes Mal ein Stückchen sicherer.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, для эффективной защиты города требуется достаточное количество легкой артиллерии. Их у вас уже довольно много, так что многие из наших новых колоний хорошо защищены.[NEWLINE][NEWLINE]Однако легкая артиллерия и оборудование для нее также занимают много места. Кроме того, орудия необходимо регулярно проверять и настраивать, а действующие расчеты – обучать. Словом, артиллерия действительно дорогая. Думайте об этом, когда покупаете больше оружия, даже если это позволяет населению чувствовать себя в большей безопасности.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_HEAVY_ARTILLERY</Tag>
         <English>Fifteen heavy artilleries</English>
         <German>Fünfzehn schwere Geschütze</German>
+        <Russian>Пятнадцать тяжелых артиллерийских орудий</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_HEAVY_ARTILLERY_HEAD</Tag>
         <English>Iron balls and[NEWLINE] black powder</English>
         <German>Eisenkugeln und Schwarzpulver</German>
+        <Russian>Тяжелые ядра</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_HEAVY_ARTILLERY_TEXT</Tag>
         <English>Milord, from what we hear, the King is not thrilled with this buildup of heavy artillery in the colonies. In Europe, there is growing concern - not only with our own King - about what you actually intend to do with it. You don't really need that much heavy artillery to defend a colony, and you'd rather fight the savages with musket and bayonet. [NEWLINE][NEWLINE]So what do you want with it? Which nearby colony do you long for? Or would you go so far as to defy the King's army? Decide soon, before someone beats you to the punch.[NEWLINE][NEWLINE]</English>
         <German>Mylord, was man hört ist der König von dieser Ansammlung schwerer Artillerie in den Kolonien nicht begeistert. In Europa wächst die Sorge - nicht nur bei unserem eigenen König - was Ihr damit eigentlich vorhabt. So viel schwere Artillerie braucht man eigentlich nicht zur Verteidugung einer Kolonie und die Wilden bekämpft man eher mit Muskete und Bajonett. [NEWLINE][NEWLINE]Was also wollt Ihr damit? Nach welcher nahegelegenen Kolonie gelüstet es Euch? Oder wollt Ihr gar des Königs Armee die Stirn bieten? Ihr solltet Euch bald entscheiden, bevor Euch jemand zuvor kommt.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, судя по тому, что мы слышали, Король не в восторге от этого наращивания количества тяжелой артиллерии в колониях. По всей Европе растет озабоченность о том, что вы на самом деле собираетесь с ней делать. Нам не нужно столько тяжелой артиллерии, чтобы защитить колонию, да и с дикарями сражаться сподручнее с помощью мушкета и штыка.[NEWLINE][NEWLINE]Может, вы обратили свой взор на какую-то соседнюю колонию? Или вы готовы зайти так далеко, чтобы бросить вызов армии Короля? Принимайте решение скорее, пока кто-нибудь не опередил вас.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_RELIGIOUS_ZEALOTS</Tag>
         <English>Several religious people</English>
         <German>Mehrere religiöse Eiferer</German>
+        <Russian>Несколько религиозных людей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_RELIGIOUS_ZEALOTS_HEAD</Tag>
         <English>Religious zealots</English>
         <German>Religiöse Eiferer</German>
+        <Russian>Религиозные фанатики</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_RELIGIOUS_ZEALOTS_TEXT</Tag>
         <English>Milord, you've certainly noticed that a wide variety of religious nonconformists have settled in the colonies. Basically, the colonies are open to everyone as long as they work hard for the good of the colonies and do not cause trouble.[NEWLINE][NEWLINE]The only problem is that these people ended up here in the New World for a reason. That reason is that Europe didn't want them. Take care that they don't make trouble while they preach the word of God. If they endanger the welfare of the colonies, you might have to send them on their way again.[NEWLINE][NEWLINE]</English>
         <German>Mylord, mittlerweile haben sich in den Kolonien verschiedenste religiöse Vertriebene niedergelassen. Grundsätzlich stehen die Kolonien allen offen, solange sie hart für das Wohl der Kolonien arbeiten und keinen Ärger machen.[NEWLINE][NEWLINE]Das Problem ist nur, dass diese Leute aus gutem Grund hier in die neue Welt gekommen sind und man sie in Europa nicht mehr haben wollte. Achtet darauf, dass sie keinen Unfrieden stiften und nichts weiter tun als das Wort Gottes zu predigen. Sollten sie das Wohl der Kolonien gefährden, solltet Ihr Euch vielleicht wieder von Ihnen trennen. [NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, вы наверняка заметили, что в колониях поселились самые разные религиозные нонконформисты. По сути, колонии открыты для всех, если они усердно трудятся на благо колоний и не создают проблем.[NEWLINE][NEWLINE]Единственная проблема в том, что эти люди оказались здесь, в Новом Свете, не просто так. Причина в том, что в Европе они стали кому-то неугодны. Следите за тем, чтобы они не создавали проблем, когда проповедуют слово Божье. Если они угрожают благополучию колоний, возможно, нам придется снова отправить их в путь...[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BISHOP</Tag>
         <English>The first bishop</English>
         <German>Der erste Bischoff</German>
+        <Russian>Первый епископ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BISHOP_HEAD</Tag>
         <English>The chief shepherd for the colony</English>
         <German>Der oberste Hirte für die Kolonie</German>
+        <Russian>Главный пастырь колонии</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BISHOP_TEXT</Tag>
         <English>Milord, the Church obviously feels that its flock in the New World needs more discipline and order. They have sent you a bishop to take command.[NEWLINE][NEWLINE]"The word is credible: whoever aspires to the office of a bishop aspires to a great task. Therefore, let the bishop be blameless, the husband of one wife, sober, prudent, of dignified bearing, hospitable, able to teach; let him not be a drunkard or a violent man, but considerate; let him not be quarrelsome or greedy for money.[NEWLINE][NEWLINE]He must preside well over his own house, educate his children in obedience and all decency. If one cannot preside over his own house, how can he take care of God's church? He must not be a new convert, lest he become haughty and fall into the devil's judgment. But he must also have a good reputation among outsiders, lest he come into ill repute and fall into the devil's trap." [NEWLINE][NEWLINE]</English>
         <German>Mylord, die Kirche ist offensichtlich der Meinung, dass ihre Schäfchen in der Neuen Welt ein wenig mehr Zucht und Ordnung benötigen. Man hat Euch einen Bischof geschickt, der das übernehmen soll. [NEWLINE][NEWLINE]"Das Wort ist glaubwürdig: Wer das Amt eines Bischofs anstrebt, der strebt nach einer großen Aufgabe. Deshalb soll der Bischof untadelig, Mann einer einzigen Frau, nüchtern, besonnen sein, von würdiger Haltung, gastfreundlich, fähig zu lehren; er sei kein Trinker und kein gewalttätiger Mensch, sondern rücksichtsvoll; er sei nicht streitsüchtig und nicht geldgierig.[NEWLINE][NEWLINE]Er muss seinem eigenen Haus gut vorstehen, seine Kinder in Gehorsam und allem Anstand erziehen. Wenn einer seinem eigenen Haus nicht vorstehen kann, wie soll der für die Kirche Gottes sorgen? Er darf kein Neubekehrter sein, damit er nicht hochmütig wird und dem Gericht des Teufels verfällt. Er muss aber auch bei den Außenstehenden einen guten Ruf haben, damit er nicht in üble Nachrede kommt und in die Falle des Teufels gerät. [NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, Церковь явно считает, что ее паства в Новом Свете нуждается в большей дисциплине и порядке. Они прислали к нам епископа для управления делами Церкви.[NEWLINE][NEWLINE]"Верно слово: кто стремится к сану епископа, тот стремится к великому делу. Итак, да будет епископ непорочен, муж одной жены, трезвый, благоразумный, с достоинством, гостеприимный, способный к обучению, не пьяница и не буйный человек, но рассудительный, не сварливый и не жадный до денег.[NEWLINE][NEWLINE]Он должен хорошо руководить своим домом, воспитывать своих детей в послушании и приличиях. Если кто не может руководить своим домом, как может он заботиться о Божьей церкви? Он не должен быть новообращенным, чтобы не возгордиться и не попасть на суд дьявола. Он также должен иметь хорошую репутацию среди страждущих, чтобы он не приобрел дурной славы и не попал в ловушку дьявола".[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_NOBLE</Tag>
         <English>The third noble</English>
         <German>Der dritte Edelmann</German>
+        <Russian>Третий дворянин</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_NOBLE_HEAD</Tag>
         <English>Nobles discover the New World</English>
         <German>Adlige entdecken die Neue Welt</German>
+        <Russian>Дворяне открывают Новый Свет</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_NOBLE_TEXT</Tag>
         <English>Milord, it seems that your colonies are so successful that even the nobles are discovering the New World for themselves. It is now en vogue in Europe to spend time in the "adventurous" New World or to buy a country house here and organize hunts within sight of Indian camps. These nobles then have tales to tell back home.[NEWLINE][NEWLINE]That this place is teeming with hostile Natives, wild animals, unbearable climate and who knows what else doesn't dawn on most of them until they find themselves alone without servants and no one hands them the warmed towel or the sherry. Make sure you help them survive this surprising adventure. They can be very useful to you in the administration of your colony.[NEWLINE][NEWLINE]</English>
         <German>Mylord, es scheint, dass Eure Kolonien so erfolgreich sind, dass mittlerweile sogar etliche Adlige die Neue Welt für sich entdecken. Offenbar wird es in Europa gerade en vogue mal eine Zeit in der "abenteuerreichen" Neuen Welt zu verbringen oder sich hier ein Landhaus zuzulegen und Jagden in Sichtweite von Indianerlagern zu veranstalten. Dann hat man zuhause etwas zu berichten.[NEWLINE][NEWLINE]Dass es hier von feindlichen Ureinwohnern, wilden Tieren, unerträglichem Klima und wert weiß was sonst noch nur so wimmelt, dämmert den meisten erst, wenn sie hier ohne Diener dastehen und keiner ihnen das angewärmte Handtuch oder den Sherry reicht. Sorgt trotzdem dafür, dass dieses Abenteuer überleben. Sie werden Euch sehr nützlich bei der Verwaltung Eurer Kolonie sein.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, кажется, наши колонии настолько успешны, что даже дворяне решили открыть для себя Новый Свет. Сейчас в Европе модно проводить время в "авантюрном" Новом Свете или покупать здесь загородный дом и устраивать охоту в пределах видимости индейских лагерей. Этим дворянам есть что рассказать дома.[NEWLINE][NEWLINE]То, что это место кишит враждебными туземцами, дикими животными, невыносимым климатом и кто знает чем еще, до большинства из них не доходит, пока они не оказываются одни без слуг и никто не протягивает им подогретое полотенце или херес. Постарайтесь помочь им пережить это удивительное приключение. Они могут очень пригодиться нам в управлении колонией.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_SETTLER</Tag>
         <English>The third settler</English>
         <German>Der dritte Siedlungsgründer</German>
+        <Russian>Третий поселенец</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_SETTLER_HEAD</Tag>
         <English>Preparations completed</English>
         <German>Vorbereitungen abgeschlossen</German>
+        <Russian>Подготовка завершена</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_SETTLER_TEXT</Tag>
         <English>Milord, the materials for the new settlement are piling up on the just-completed dock and the settlers are ready to leave. What are you waiting for?[NEWLINE][NEWLINE]The longer you wait, the more likely it is that the settlers here in the colony will catch some disease or scatter to the taverns and gambling dens at the harbour. You should get them on their way as soon as possible. Otherwise the best places for a new settlement will be snatched away by the competitors![NEWLINE][NEWLINE]</English>
         <German>Mylord, auf dem gerade erst fertiggestellten Dock stapeln sich die Materialien für die neue Siedlung und die Siedler sind bereit aufzubrechen. Worauf wartet Ihr denn noch?[NEWLINE][NEWLINE]Je länger Ihr wartet, desto eher stecken sich die Siedler hier in der Kolonie mit irgendwelchen Krankheiten an oder zerstreuen sich in die Wirtshäuser und Spielhöllen am Hafen. Ihr solltet sie möglichst bald auf den Weg bringen, damit Euch die besten Plätze für eine neue Siedlung nicht von der Konkurrenz weggeschnappt werden![NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, материалы для нового поселения собраны у только что построенного дока и поселенцы готовы уйти. Чего вы ждете?[NEWLINE][NEWLINE]Чем дольше вы ждете, тем выше вероятность того, что поселенцы здесь, в колонии, подхватят какую-нибудь болезнь или разбегутся по тавернам и игорным заведениям в гавани. Вы должны отправить их в путь как можно скорее. Иначе лучшие места для нового поселения отберут конкуренты![NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_PENAL_COLONY</Tag>
         <English>Twelve criminals</English>
         <German>Zwölf Kleinkriminelle</German>
+        <Russian>Двенадцать каторжников</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_PENAL_COLONY_HEAD</Tag>
         <English>Penal colony</English>
         <German>Strafkolonie</German>
+        <Russian>Исправительная колония</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_PENAL_COLONY_TEXT</Tag>
         <English>Milord, the colony is slowly but surely becoming a penal colony. There are currently many criminals in the colony - too many, in fact. The prisons are overcrowded. You should intervene with the King so he stops sending you new convicts.[NEWLINE][NEWLINE]The problem in Europe is quickly solved as long as they can deport convicts here, but that may not be conducive to the success of this colony. Instead you should increase wages for real craftsmen to boost the production of goods![NEWLINE][NEWLINE]</English>
         <German>Mylord, die Kolonie entwickelt sich langsam aber sicher zu einer Strafkolonie. Es befinden sich derzeit viele Kriminelle in der Kolonie - zu viele, um genau zu sein. Die Gefängnisse sind überfüllt. Ihr solltet beim König intervenieren, Euch keine neuen Sträflinge mehr zu schicken.[NEWLINE][NEWLINE]In Europa ist das Problem schnell gelöst, wenn man die Sträflinge hierher abschieben kann, aber dem Erfolg der Kolonie ist das vielleicht nicht gerade zuträglich. Ihr solltet lieber das Handgeld für echte Handwerker erhöhen und zusehen, dass Ihr die Güterproduktion verstärkt![NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, колония медленно, но верно превращается в исправительную колонию. Сейчас в колонии много преступников, даже слишком много. Тюрьмы переполнены. Вы должны вмешаться в дела Короля, чтобы он перестал присылать нам новых заключенных.[NEWLINE][NEWLINE]Проблема в Европе быстро решается, пока сюда можно депортировать заключенных, но это не способствет успеху самой колонии. Вместо этого мы должны повысить заработную плату настоящим мастерам, чтобы увеличить производство товаров![NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ROASTING</Tag>
