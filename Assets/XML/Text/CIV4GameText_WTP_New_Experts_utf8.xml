@@ -1884,9 +1884,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHEESE_MAKER_STRATEGY</Tag>
-        <English>Cheese is valued for its transportability, long shelf life, and high content of fat, protein, calcium, and phosphorus. The long storage life of some cheeses, especially when encased in a protective rind, allows selling when markets are favourable.[NEWLINE]When assigned to the Cheesemaker profession, the master can get twice the weight of cheese in the same time as a regular colonist.</English>
+        <English>Cheese is valued for its transportability, long shelf life, and high content of fat, protein, calcium, and phosphorus. The long storage life of some cheeses, especially when encased in a protective rind, allows selling when markets are favourable.[NEWLINE]When assigned to the [LINK=PROFESSION_CHEESE_MAKER]cheese maker[\LINK] profession, the master can get twice the weight of [LINK=UNIT_CHEESE]cheese[\LINK] in the same time as a regular colonist.</English>
         <French>xxx</French>
-        <German>xxx</German>
+        <German>Wenn der [COLOR_HIGHLIGHT_TEXT]Meister Käsemacher[COLOR_REVERT] den Beruf des [LINK=PROFESSION_CHEESE_MAKER]Käsemachers[\LINK] ausübt, kann er in derselben Zeit doppelt so viel [LINK=UNIT_CHEESE]Käse[\LINK] herstellen, wie ein normaler Kolonist.</German>
         <Italian>xxx</Italian>
         <Spanish>xxx</Spanish>
     </TEXT>
