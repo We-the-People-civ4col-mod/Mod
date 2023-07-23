@@ -3480,7 +3480,9 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 		if (getUnitInfo().getCargoSpace() == 6) // easisest way to identify train
 		{
 			//Check if the Plot has railroad
-			if (kPlot.getRouteType() != 2)
+			//WTP, ray, now Carriages may also use Ferry Stations
+			//if (kPlot.getRouteType() != 2)
+			if (kPlot.getRouteType() < 2)
 			{
 				return false;
 			}
