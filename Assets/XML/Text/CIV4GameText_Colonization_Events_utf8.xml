@@ -4255,13 +4255,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Tag>
-        <English>We will comply with the request of the Captains Council!</English>
+        <English>We will comply with the request of the Captains' Council!</English>
         <German>Wir werden der Aufforderung des Kapitänsrates nachkommen!</German>
         <Russian>Мы выполним просьбу Совета капитанов!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1</Tag>
-        <English>The Captains Council can surely enforce higher prices!</English>
+        <English>The Captains' Council can surely enforce higher prices!</English>
         <German>Der Kapitänsrat kann sicherlich höhere Verkaufspreise durchsetzten!</German>
         <Russian>Совет капитанов, безусловно, может настоять на повышении цены!</Russian>
     </TEXT>
@@ -4327,7 +4327,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_PRICE_AND_ATTITUDE_HELP</Tag>
-        <English>The quality of our goods has impressed the citizens in Port Royal.[NEWLINE]The Captains Council is delighted. Demand for colonial goods is rising.</English>
+        <English>The quality of our goods has impressed the citizens in Port Royal.[NEWLINE]The Captains' Council is delighted. Demand for colonial goods is rising.</English>
         <German>Die Bürger in Port Royal sind von der Qualität unsere Kolonialwaren begeistert.[NEWLINE]Der Kapitänsrat ist hocherfreut. Die Nachfrage nach unseren Waren steigt.</German>
         <Russian>Качество наших товаров произвело впечатление на жителей Порт Ройала.[NEWLINE]Совет капитанов в восторге. Спрос на колониальные товары растет.</Russian>
     </TEXT>
@@ -7347,7 +7347,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLADES_START</Tag>
-        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the dominant market leader.</English>
+        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal asks us to become the dominant market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
         <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
@@ -7359,7 +7359,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLADES_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -7377,7 +7377,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SAILCLOTH_START</Tag>
-        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the dominant market leader.</English>
+        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal asks us to become the dominant market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
         <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]парусины[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
@@ -7389,7 +7389,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]парусины[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -7407,7 +7407,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CANNONS_START</Tag>
-        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
+        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
         <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
@@ -7419,7 +7419,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CANNONS_DONE</Tag>
-        <English>Milord, we have managed to dominate trading in [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
+        <English>Milord, we have managed to dominate trading in [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -7437,7 +7437,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GUNS_START</Tag>
-        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]guns[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
+        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]guns[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Musketen[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
         <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.
 </Russian>
@@ -7450,7 +7450,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GUNS_DONE</Tag>
-        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]guns[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
+        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]guns[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Musketen[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -7468,7 +7468,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_ROPES_START</Tag>
-        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]ropes[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
+        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]ropes[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Seile[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
         <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]канатов[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
@@ -7480,7 +7480,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_ROPES_DONE</Tag>
-        <English>Milord, we have managed to become dominant in the trade of [COLOR_FONT_GOLD]ropes[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
+        <English>Milord, we have managed to become dominant in the trade of [COLOR_FONT_GOLD]ropes[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Seile[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]канатов[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -7498,7 +7498,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CIGARS_START</Tag>
-        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]cigars[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
+        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]cigars[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
         <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]сигар[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
@@ -7510,7 +7510,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CIGARS_DONE</Tag>
-        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]cigars[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
+        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]cigars[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]сигар[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -7528,7 +7528,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SPICES_START</Tag>
-        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]spices[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
+        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]spices[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Gewürze[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
         <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]специй[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.
 </Russian>
@@ -7541,7 +7541,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SPICES_DONE</Tag>
-        <English>Milord, we have managed to become dominant in the trade of [COLOR_FONT_GOLD]spices[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
+        <English>Milord, we have managed to become dominant in the trade of [COLOR_FONT_GOLD]spices[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gewürze[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]специй[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -7559,7 +7559,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SILVER_START</Tag>
-        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]silver[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
+        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]silver[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Silber[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
         <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]серебра[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
@@ -7571,7 +7571,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SILVER_DONE</Tag>
-        <English>Milord, we are now first in the [COLOR_FONT_GOLD]silver[COLOR_REVERT] trade from Port Royal. The Captains Council of Port Royal is enjoying his profits.</English>
+        <English>Milord, we are now first in the [COLOR_FONT_GOLD]silver[COLOR_REVERT] trade from Port Royal. The Captains' Council of Port Royal is enjoying his profits.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Silber[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]серебра[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -7589,7 +7589,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SALT_START</Tag>
-        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]salt[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the dominant market leader.</English>
+        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]salt[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal asks us to become the dominant market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Salz[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
         <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]соли[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
@@ -7601,7 +7601,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SALT_DONE</Tag>
-        <English>A European Nation managed to become the leader trading in [COLOR_FONT_GOLD]salt[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is well pleased.</English>
+        <English>A European Nation managed to become the leader trading in [COLOR_FONT_GOLD]salt[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is well pleased.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Salz[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]соли[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -7619,7 +7619,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_RUM_START</Tag>
-        <English>Our colonists are thrilled with the first shipments of Port Royal [COLOR_FONT_GOLD]rum[COLOR_REVERT]. The Captains Council of Port Royal asks us to become the market leader.</English>
+        <English>Our colonists are thrilled with the first shipments of Port Royal [COLOR_FONT_GOLD]rum[COLOR_REVERT]. The Captains' Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Rum[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
         <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]рома[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
@@ -7631,7 +7631,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_RUM_DONE</Tag>
-        <English>Milord, we are now the leader in the Port Royal [COLOR_FONT_GOLD]rum[COLOR_REVERT] market. The Captains Council of Port Royal shows his pleasure.</English>
+        <English>Milord, we are now the leader in the Port Royal [COLOR_FONT_GOLD]rum[COLOR_REVERT] market. The Captains' Council of Port Royal shows his pleasure.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rum[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]рома[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -7649,7 +7649,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GOLD_START</Tag>
-        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]gold[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
+        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]gold[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Gold[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
         <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]золота[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
@@ -7661,7 +7661,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GOLD_DONE</Tag>
-        <English>Milord, we now lead trading in [COLOR_FONT_GOLD]gold[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is delighted.</English>
+        <English>Milord, we now lead trading in [COLOR_FONT_GOLD]gold[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is delighted.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gold[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]золота[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -7679,7 +7679,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GEMS_START</Tag>
-        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]gems[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
+        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]gems[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
         <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
@@ -7691,7 +7691,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GEMS_DONE</Tag>
-        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]gems[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is very happy.</English>
+        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]gems[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is very happy.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -7709,7 +7709,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_START</Tag>
-        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]furniture[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
+        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]furniture[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
         <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]мебели[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
@@ -7721,7 +7721,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_DONE</Tag>
-        <English>Milord, we have managed to become dominant in the trade of [COLOR_FONT_GOLD]furniture[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is extremely satisfied.</English>
+        <English>Milord, we have managed to become dominant in the trade of [COLOR_FONT_GOLD]furniture[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]мебели[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -7739,7 +7739,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_START</Tag>
-        <English>Our colonists are enjoying the first shipments of [COLOR_FONT_GOLD]coffee[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
+        <English>Our colonists are enjoying the first shipments of [COLOR_FONT_GOLD]coffee[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
         <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]кофе[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
@@ -7751,7 +7751,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]coffee[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal finds himself energized.</English>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]coffee[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal finds himself energized.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]кофе[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -7769,7 +7769,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCOA_START</Tag>
-        <English>Our colonists are enjoying the first shipments of [COLOR_FONT_GOLD]cocoa[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
+        <English>Our colonists are enjoying the first shipments of [COLOR_FONT_GOLD]cocoa[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
         <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]какао[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
@@ -7781,7 +7781,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCOA_DONE</Tag>
-        <English>Milord, we are now the leader in the Port Royal [COLOR_FONT_GOLD]cocoa[COLOR_REVERT] trade. The Captains Council of Port Royal is quite pleased.</English>
+        <English>Milord, we are now the leader in the Port Royal [COLOR_FONT_GOLD]cocoa[COLOR_REVERT] trade. The Captains' Council of Port Royal is quite pleased.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]какао[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -7799,7 +7799,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Tag>
-        <English>Our colonists work tirelessly following the first shipments of [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
+        <English>Our colonists work tirelessly following the first shipments of [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
         <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
@@ -7811,7 +7811,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE</Tag>
-        <English>A European Nation managed to dominate the trade in [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal is excited.</English>
+        <English>A European Nation managed to dominate the trade in [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is excited.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -7829,7 +7829,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_WINE_START</Tag>
-        <English>Our colonists are giddy with the first shipments of [COLOR_FONT_GOLD]wine[COLOR_REVERT] with Port Royal. The Captains Council of Port Royal asks us to become the market leader.</English>
+        <English>Our colonists are giddy with the first shipments of [COLOR_FONT_GOLD]wine[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal asks us to become the market leader.</English>
         <German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Wein[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
         <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]вина[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
     </TEXT>
@@ -7841,7 +7841,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_WINE_DONE</Tag>
-        <English>Milord, we have managed to become dominant in the Port Royal [COLOR_FONT_GOLD]wine[COLOR_REVERT] trade. The Captains Council of Port Royal is happy and relaxed.</English>
+        <English>Milord, we have managed to become dominant in the Port Royal [COLOR_FONT_GOLD]wine[COLOR_REVERT] trade. The Captains' Council of Port Royal is happy and relaxed.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Wein[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]вина[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
