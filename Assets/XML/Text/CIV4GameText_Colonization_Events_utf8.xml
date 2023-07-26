@@ -7997,31 +7997,31 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_START</Tag>
-        <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]baked goods[COLOR_REVERT] with Port Royal has begun.</English>
+        <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]provisions[COLOR_REVERT] with Port Royal has begun.</English>
         <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal hat begonnen.</German>
         <Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]хлебобулочных изделий[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE</Tag>
-        <English>Milord, we are now the lead trader in [COLOR_FONT_GOLD]baked goods[COLOR_REVERT] with Port Royal.</English>
+        <English>Milord, we are now the lead trader in [COLOR_FONT_GOLD]provisions[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]хлебобулочных изделий[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_START</Tag>
-        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]baked goods[COLOR_REVERT] with Port Royal.</English>
+        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]provisions[COLOR_REVERT] with Port Royal.</English>
         <German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal begeistert.</German>
         <Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]хлебобулочных изделий[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_FAILED</Tag>
-        <English>Milord, another colonial nation is the first to corner the market in the colonies for [COLOR_FONT_GOLD]baked goods[COLOR_REVERT] with Port Royal.</English>
+        <English>Milord, another colonial nation is the first to corner the market in the colonies for [COLOR_FONT_GOLD]provisions[COLOR_REVERT] with Port Royal.</English>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
         <Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]хлебобулочных изделий[COLOR_REVERT] в Порт Ройал.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE</Tag>
-        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]baked goods[COLOR_REVERT] with Port Royal.</English>
+        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]provisions[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]хлебобулочных изделий[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
