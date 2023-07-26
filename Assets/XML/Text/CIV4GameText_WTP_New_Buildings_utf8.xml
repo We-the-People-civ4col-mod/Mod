@@ -845,7 +845,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_HOUSE_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]baker's house[COLOR_REVERT] is where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]baked goods[\LINK] from [LINK=YIELD_BARLEY]barley[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] are particularly effective here.</English>
+        <English>The [COLOR_HIGHLIGHT_TEXT]baker's house[COLOR_REVERT] is where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]provisions[\LINK] from [LINK=YIELD_BARLEY]barley[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] are particularly effective here.</English>
         <French>TBD</French>
         <German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Bäckers[COLOR_REVERT] stellen [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Backwaren[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] her. [LINK=UNIT_BAKER]Bäckermeister[\LINK] sind hier besonders effektiv.</German>
         <Italian>TBD</Italian>
@@ -853,12 +853,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_SHOP_PEDIA</Tag>
-        <English>As the bakery gets more workers it might add a pastry chef who creates sweet treats that bring in business. The business also provides a variety of loaves so that new arrivals can buy the kind of bread that reminds them of home.[NEWLINE]As the bakery grows, offering cookies and pastries, it becomes a social center. Some bakers even set up tables where tea is served to accompany the treats. A few serve coffee which is considered scandalous because of the stimulating effect.</English>
+        <English>As the bakery gets more workers it might add a pastry chef who creates sweet treats that bring in business. The business also provides a variety of loaves so that new arrivals can buy the kind of bread that reminds them of home. The bakery also has cured meats for sandwiches, soon offering all the variety a hungry traveller might want.[NEWLINE]As the bakery grows, offering cookies and pastries, it becomes a social center. Some bakers even set up tables where tea is served to accompany the treats. A few serve coffee which is considered scandalous because of the stimulating effect.</English>
         <German>Wenn die Bäckerei mehr Mitarbeiter hat, kann sie einen Konditor einstellen, der süße Leckereien herstellt, die das Geschäft ankurbeln. Das Unternehmen bietet auch eine Vielzahl von Brotsorten an, damit Gäste das Brot kaufen können, das sie an ihre Heimat erinnert.[NEWLINE]Wenn die Bäckerei wächst und Kekse und Gebäck anbietet, wird sie zu einem sozialen Zentrum. Einige Bäcker stellen sogar Tische auf, an denen Tee zu den Leckereien serviert wird. Einige wenige servieren Kaffee, der wegen seiner anregenden Wirkung als skandalös gilt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_SHOP_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]bakeshop[COLOR_REVERT] is the upgrade of the[LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]baked goods[\LINK] from [LINK=YIELD_BARLEY]barley[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] are particularly effective here.</English>
+        <English>The [COLOR_HIGHLIGHT_TEXT]bakeshop[COLOR_REVERT] is the upgrade of the[LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]provisions[\LINK] from [LINK=YIELD_BARLEY]barley[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] are particularly effective here.</English>
         <French>TBD</French>
         <German>Der [COLOR_HIGHLIGHT_TEXT]Bäckerladen[COLOR_REVERT] ist die Erweiterung des [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Backwaren[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] herstellen. [LINK=UNIT_BAKER]Bäckermeister[\LINK] sind hier besonders effektiv.</German>
         <Italian>TBD</Italian>
@@ -871,7 +871,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKERY_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]bakery[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]baked goods[\LINK] from [LINK=YIELD_BARLEY]barley[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] are particularly effective here.</English>
+        <English>The [COLOR_HIGHLIGHT_TEXT]bakery[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]provisions[\LINK] from [LINK=YIELD_BARLEY]barley[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] are particularly effective here.</English>
         <French>TBD</French>
         <German>Die [COLOR_HIGHLIGHT_TEXT]Bäckerei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Backwaren[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] herstellen. [LINK=UNIT_BAKER]Bäckermeister[\LINK] sind hier besonders effektiv.</German>
         <Italian>TBD</Italian>

@@ -1994,7 +1994,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BAKER_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]Master Baker[COLOR_REVERT] may be employed in the [LINK=BUILDING_BAKER_HOUSE]House of the Baker[\LINK] or one of its extensions as a [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] ([LINK=PROFESSION_BAKER_BARLEY]barley[\LINK], [LINK=PROFESSION_BAKER_RICE]rice[\LINK], [LINK=PROFESSION_BAKER_CASSAVA]cassava[\LINK]) produce twice as much [LINK=YIELD_BAKERY_GOODS]baked goods[\LINK] in the same time as a normal colonist.</English>
+        <English>The [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] may be employed in the [LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] or one of its extensions supplying provisions made from ([LINK=PROFESSION_BAKER_BARLEY]barley[\LINK], [LINK=PROFESSION_BAKER_RICE]rice[\LINK] or [LINK=PROFESSION_BAKER_CASSAVA]cassava[\LINK]). The master baker will produce twice as many [LINK=YIELD_BAKERY_GOODS]provisions[\LINK] in the same time as a typical colonist.</English>
         <French>xxx</French>
         <German>Der [COLOR_HIGHLIGHT_TEXT]Bäckermeister[COLOR_REVERT] kann im [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK] bzw. einer seiner Erweiterungen als [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] ([LINK=PROFESSION_BAKER_BARLEY]Gerste[\LINK], [LINK=PROFESSION_BAKER_RICE]Reis[\LINK], [LINK=PROFESSION_BAKER_CASSAVA]Maniok[\LINK]) in der gleichen Zeit doppelt so viel [LINK=YIELD_BAKERY_GOODS]Backwaren[\LINK] herstellen, wie ein normaler Kolonist.</German>
         <Italian>xxx</Italian>
