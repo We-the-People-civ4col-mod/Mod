@@ -7571,7 +7571,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SILVER_DONE</Tag>
-        <English>Milord, we are now first in the [COLOR_FONT_GOLD]silver[COLOR_REVERT] trade from Port Royal. The Captains' Council of Port Royal is enjoying his profits.</English>
+        <English>Milord, we are now first in the [COLOR_FONT_GOLD]silver[COLOR_REVERT] trade from Port Royal. The Captains' Council of Port Royal is enjoying the profits.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Silber[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]серебра[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -7631,7 +7631,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_RUM_DONE</Tag>
-        <English>Milord, we are now the leader in the Port Royal [COLOR_FONT_GOLD]rum[COLOR_REVERT] market. The Captains' Council of Port Royal shows his pleasure.</English>
+        <English>Milord, we are now the leader in the Port Royal [COLOR_FONT_GOLD]rum[COLOR_REVERT] market. The Captains' Council of Port Royal shows its pleasure.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rum[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]рома[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -7751,7 +7751,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]coffee[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal finds himself energized.</English>
+        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]coffee[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal finds itself energized.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]кофе[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
