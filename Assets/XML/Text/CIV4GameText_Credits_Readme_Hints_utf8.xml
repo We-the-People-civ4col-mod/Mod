@@ -744,6 +744,14 @@ Viel Spass![NEWLINE]
 		<Spanish>A la hora de construir el primer asentamiento, siempre es una buena idea hacerlo lo más cerca posible de la ruta con Europa. Esto supone que vuestros barcos pasarán menos tiempo en los tránsitos entre la colonia y la madre patria, y reducir la posibilidad de ser atacados por naves enemigas.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_HINT_42</Tag>
+		<English>Quests are usually more complicated than simply meeting a trading quota. The colony might need to reach a certain size, or have enough of the right experts, or a particular building so that the quest trading total is believable for the local economy. In other words, it's possible to do what's asked and still not succeed right away. Just like in real life.</English>
+		<French>Lorsque vous fondez votre première colonie, il est toujours judicieux de le faire le plus près possible de votre voie d'accès à l'Europe. Ainsi, vos navires passeront moins de temps en mer entre votre colonie et votre patrie, réduisant le risque qu'ils soient assaillis par un navire ennemi.</French>
+		<German>Wenn Sie Ihre erste Siedlung errichten, ist es immer sinnvoll, diese so nah wie möglich an Ihrer Route nach Europa anzulegen. Das bedeutet, daß Ihre Schiffe benötigen weniger lange für die Reise zwischen Kolonie und Mutterland brauchen. Zudem sinkt auch die Wahrscheinlichkeit, dass sie von gegnerischen Schiffen angegriffen werden.</German>
+		<Italian>Quando costruisci il tuo primo insediamento è sempre una buona idea costruirlo il più vicino possibile alla tua rotta per l'Europa. In questo modo le tue navi spenderanno meno tempo in viaggio tra la colonia e la madrepatria, riducendo le probabilità di venire attaccate dalle navi nemiche.</Italian>
+		<Spanish>A la hora de construir el primer asentamiento, siempre es una buena idea hacerlo lo más cerca posible de la ruta con Europa. Esto supone que vuestros barcos pasarán menos tiempo en los tránsitos entre la colonia y la madre patria, y reducir la posibilidad de ser atacados por naves enemigas.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_HINT_43</Tag>
 		<English>Galleons are the finest transport ships available and the only ships capable of transporting treasure units to Europe. However they cannot transport any other units. Once you have enough treasures, the King may offer you a special price on a galleon to carry them, but he'll wait until you have enough gold on hand.</English>
 		<French>Les galions sont les navires de transport disponibles les plus performants. Ils sont notamment les seuls à pouvoir transporter les trésors en Europe.</French>
