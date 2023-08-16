@@ -1689,4 +1689,8 @@
 		<DefineName>USE_NIF_LOGGING</DefineName>
 		<iDefineIntVal>0</iDefineIntVal>
 	</Define>
+	<Define>
+		<DefineName>SHOW_TERRAIN_SPECIFIC_CITY_BACKGROUNDS</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
 </Civ4Defines>

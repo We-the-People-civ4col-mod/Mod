@@ -621,6 +621,54 @@
         <InterfaceArtInfo>
             <Type>INTERFACE_SCROLL_BG</Type>
             <Path>Art/Interface/Screens/City_Management/ScrollBG.dds</Path>
+        </InterfaceArtInfo>	
+        <InterfaceArtInfo>
+            <Type>INTERFACE_SCROLL_BG_GRASLAND</Type>
+            <Path>Art/Interface/Screens/City_Management/ScrollBG_Grasland.dds</Path>
+        </InterfaceArtInfo>
+        <InterfaceArtInfo>
+            <Type>INTERFACE_SCROLL_BG_PLAINS_FERTILE</Type>
+            <Path>Art/Interface/Screens/City_Management/ScrollBG_Plains_Fertile.dds</Path>
+        </InterfaceArtInfo>
+        <InterfaceArtInfo>
+            <Type>INTERFACE_SCROLL_BG_ROCK_STEPPES</Type>
+            <Path>Art/Interface/Screens/City_Management/ScrollBG_Rock_Steppes.dds</Path>
+        </InterfaceArtInfo>
+        <InterfaceArtInfo>
+            <Type>INTERFACE_SCROLL_BG_WETLAND</Type>
+            <Path>Art/Interface/Screens/City_Management/ScrollBG_Wetland.dds</Path>
+        </InterfaceArtInfo>
+        <InterfaceArtInfo>
+            <Type>INTERFACE_SCROLL_BG_PLAINS</Type>
+            <Path>Art/Interface/Screens/City_Management/ScrollBG_Plains.dds</Path>
+        </InterfaceArtInfo>
+        <InterfaceArtInfo>
+            <Type>INTERFACE_SCROLL_BG_DESERT</Type>
+            <Path>Art/Interface/Screens/City_Management/ScrollBG_Desert.dds</Path>
+        </InterfaceArtInfo>
+        <InterfaceArtInfo>
+            <Type>INTERFACE_SCROLL_BG_SHRUBLAND</Type>
+            <Path>Art/Interface/Screens/City_Management/ScrollBG_Shrubland.dds</Path>
+        </InterfaceArtInfo>
+        <InterfaceArtInfo>
+            <Type>INTERFACE_SCROLL_BG_SAVANNAH</Type>
+            <Path>Art/Interface/Screens/City_Management/ScrollBG_Savannah.dds</Path>
+        </InterfaceArtInfo>
+        <InterfaceArtInfo>
+            <Type>INTERFACE_SCROLL_BG_MARSH</Type>
+            <Path>Art/Interface/Screens/City_Management/ScrollBG_Marsh.dds</Path>
+        </InterfaceArtInfo>
+        <InterfaceArtInfo>
+            <Type>INTERFACE_SCROLL_BG_TAIGA</Type>
+            <Path>Art/Interface/Screens/City_Management/ScrollBG_Taiga.dds</Path>
+        </InterfaceArtInfo>
+        <InterfaceArtInfo>
+            <Type>INTERFACE_SCROLL_BG_TUNDRA</Type>
+            <Path>Art/Interface/Screens/City_Management/ScrollBG_Tundra.dds</Path>
+        </InterfaceArtInfo>
+        <InterfaceArtInfo>
+            <Type>INTERFACE_SCROLL_BG_SNOW</Type>
+            <Path>Art/Interface/Screens/City_Management/ScrollBG_Snow.dds</Path>
         </InterfaceArtInfo>
         <InterfaceArtInfo>
             <Type>INTERFACE_CITY_LEFT_ARROW</Type>
