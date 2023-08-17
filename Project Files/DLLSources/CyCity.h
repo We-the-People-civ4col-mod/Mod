@@ -374,6 +374,10 @@ public:
 
 	python::tuple isOrderWaitingForYield(int /*YieldTypes*/ eYield);
 
+	// WTP, ray, Center Plot specific Backgrounds - Start
+	int /*TerrainTypes*/ getCenterPlotTerrainType() const;
+	// WTP, ray, Center Plot specific Backgrounds - END
+
 private:
 	CvCity* m_pCity;
 };

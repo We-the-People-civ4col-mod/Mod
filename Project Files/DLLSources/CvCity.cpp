@@ -14441,3 +14441,19 @@ void CvCity::doOppressometerDecay()
 
 	changeOppressometer(-iOppressometerDecay);
 }
+
+// WTP, ray, Center Plot specific Backgrounds - Start
+TerrainTypes CvCity::getCenterPlotTerrainType() const
+{
+	CvPlot* pCityCenterPlot = plot();
+	if (pCityCenterPlot != NULL)
+	{
+		return pCityCenterPlot->getTerrainType();
+	}
+	else
+	{
+		return NO_TERRAIN;
+	}
+}
+// WTP, ray, Center Plot specific Backgrounds - END
+

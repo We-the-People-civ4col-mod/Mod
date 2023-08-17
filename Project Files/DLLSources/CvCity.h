@@ -784,6 +784,9 @@ public:
 	bool getOrderedStudentsRepeat(UnitTypes eUnit);
 	// Teacher List - end - Nightinggale
 
+	// WTP, ray, Center Plot specific Backgrounds - Start
+	TerrainTypes getCenterPlotTerrainType() const;
+	// WTP, ray, Center Plot specific Backgrounds - End
 
 	YieldTypes getPreferredYieldAtCityPlot() const { return m_ePreferredYieldAtCityPlot; }
 

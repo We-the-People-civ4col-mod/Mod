@@ -1614,3 +1614,11 @@ python::tuple CyCity::isOrderWaitingForYield(int /*YieldTypes*/ eYield)
 
 	return python::make_tuple();
 }
+
+// WTP, ray, Center Plot specific Backgrounds - Start
+int /*TerrainTypes*/ CyCity::getCenterPlotTerrainType() const
+{
+	return m_pCity ? m_pCity->getCenterPlotTerrainType() : -1;
+}
+// WTP, ray, Center Plot specific Backgrounds - END
+
