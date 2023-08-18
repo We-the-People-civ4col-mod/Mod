@@ -3098,12 +3098,12 @@ class CvMainInterface:
 				screen.hide("ProductionBox" + str(iSpecial))
 
 			# WTP, ray, Center Plot specific Backgrounds - START
-			self.appendtoHideState(screen, "CityManagerBackground", HIDE_TYPE_CITY, HIDE_LEVEL_ALL)
+			screen.hide("CityManagerBackground")
 			# WTP, ray, Center Plot specific Backgrounds - END
 
 			# WTP, ray: had to move this here
 			#Erik Resource table
-			self.appendtoHideState(screen, "ShowOrHideYields", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
+			screen.hide("ShowOrHideYields")
 
 			screen.hideList(RESOURCE_TABLE_HIDE)
 			screen.hide("CityList")
