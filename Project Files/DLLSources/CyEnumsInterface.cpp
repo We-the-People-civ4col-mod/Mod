@@ -34,6 +34,7 @@ void CyEnumsPythonInterface()
 	// 4 name of NUM_
 	addEnumValues(NO_CONCEPT           , "ConceptTypes"       , "NO_CONCEPT"       , "NUM_CONCEPT_TYPES"        );
 	addEnumValues(MAX_NUM_SYMBOLS      , "FontSymbols"        , NULL               , "MAX_NUM_SYMBOLS"          );
+	addEnumValues(NO_TERRAIN           , "TerrainTypes"       , "NO_TERRAIN"       , "NUM_TERRAIN_TYPES"        );
 	addEnumValues(NO_WORLDSIZE         , "WorldSizeTypes"     , "NO_WORLDSIZE"     , "NUM_WORLDSIZE_TYPES"      );
 	addEnumValues(NO_YIELD             , "YieldTypes"         , "NO_YIELD"         , "NUM_YIELD_TYPES"          );
 
@@ -412,14 +413,6 @@ void CyEnumsPythonInterface()
 		;
 	python::enum_<CustomMapOptionTypes>("CustomMapOptionTypes")
 		.value("NO_CUSTOM_MAPOPTION", NO_CUSTOM_MAPOPTION)
-		;
-	python::enum_<TerrainTypes>("TerrainTypes")
-		// WTP, ray, making at least fresh water terraubs available to Python
-		.value("TERRAIN_LARGE_RIVERS", TERRAIN_LARGE_RIVERS)
-		.value("TERRAIN_LAKE", TERRAIN_LAKE)
-		.value("TERRAIN_ICE_LAKE", TERRAIN_ICE_LAKE)
-		.value("NO_TERRAIN", NO_TERRAIN)
-		.value("NUM_TERRAIN_TYPES", NUM_TERRAIN_TYPES)
 		;
 	python::enum_<PlotTypes>("PlotTypes")
 		.value("NO_PLOT", NO_PLOT)
