@@ -2983,11 +2983,9 @@ class CvMainInterface:
 			screen.show("CityTransportPanel")
 			for iYield in self.TableYields:
 				screen.moveToFront("YieldIcon" + str(iYield))
-			screen.show("ResourceTable")
 		else:
 			screen.hide("CityGarrisonPanel")
 			screen.hide("CityTransportPanel")
-			screen.hide("ResourceTable")
 		return 0
 
 	# Will set the table to display the out put of a city or the players whole empire
