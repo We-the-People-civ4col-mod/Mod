@@ -2334,7 +2334,7 @@ class CvMainInterface:
 								if (CityBuilding != -1):
 									screen.show("ProductionBox" + str(iSpecialBuildingType))
 									szName = "YieldOutPutIcon" + str(iYield)
-									if (iSecondYield == -1 or iSecondYield == iYield):
+									if (iSecondYield < 0 or iSecondYield >= YieldTypes.NUM_YIELD_TYPES or iSecondYield == iYield):
 										screen.addDDSGFC(szName, gc.getYieldInfo(iYield).getIcon(), BUILDING_GRID[iSpecialBuildingType][0] + (STACK_BAR_HEIGHT / 2), BUILDING_GRID[iSpecialBuildingType][1] + BUILDING_GRID[iSpecialBuildingType][2] - (BUILDING_GRID[iSpecialBuildingType][2] / 6) + STACK_BAR_HEIGHT, STACK_BAR_HEIGHT * 3 / 2, STACK_BAR_HEIGHT * 3 / 2, WidgetTypes.WIDGET_HELP_YIELD, iYield, -1)
 									else:
 										# R&R, we do not show the first icon any more, if we have MultipleProfessionsPerBuilding
