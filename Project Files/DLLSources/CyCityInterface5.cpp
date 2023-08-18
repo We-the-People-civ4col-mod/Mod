@@ -132,5 +132,6 @@ void CyCityPythonInterface5(python::class_<CyCity>& x)
 		// transport feeder - end - Nightinggale
 
 		.def("isOrderWaitingForYield", &CyCity::isOrderWaitingForYield, "python::tuple isOrderWaitingForYield(int /*YieldTypes*/ eYield)")
+		.def("getCenterPlotTerrainType", &CyCity::getCenterPlotTerrainType, "int /*TerrainTypes*/ getCenterPlotTerrainType()")// WTP, ray, Center Plot specific Backgrounds - Start
 		;
 }
