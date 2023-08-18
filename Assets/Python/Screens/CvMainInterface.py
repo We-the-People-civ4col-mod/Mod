@@ -1153,11 +1153,11 @@ class CvMainInterface:
 		self.appendtoHideState(screen, "AvoidGrowth", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
 		
 	# Garrison and Transport Panel
-		screen.addScrollPanel("CityGarrisonPanel", u"", CITIZEN_BAR_WIDTH + (SMALL_BUTTON_SIZE / 8), yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT * 9 / 8 - 2, xResolution - CITIZEN_BAR_WIDTH - TRANSPORT_AREA_WIDTH + STACK_BAR_HEIGHT * 4 / 8, TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT / 3), PanelStyles.PANEL_STYLE_EMPTY, false, WidgetTypes.WIDGET_EJECT_CITIZEN, -1, -1 )	
-		self.appendtoHideState(screen, "CityGarrisonPanel", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
+		#screen.addScrollPanel("CityGarrisonPanel", u"", CITIZEN_BAR_WIDTH + (SMALL_BUTTON_SIZE / 8), yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT * 9 / 8 - 2, xResolution - CITIZEN_BAR_WIDTH - TRANSPORT_AREA_WIDTH + STACK_BAR_HEIGHT * 4 / 8, TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT / 3), PanelStyles.PANEL_STYLE_EMPTY, false, WidgetTypes.WIDGET_EJECT_CITIZEN, -1, -1 )	
+		#self.appendtoHideState(screen, "CityGarrisonPanel", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
 		
-		screen.addScrollPanel("CityTransportPanel", u"", xResolution - TRANSPORT_AREA_WIDTH + MAP_EDGE_MARGIN_WIDTH - SMALL_BUTTON_SIZE / 2, yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT * 9 / 8 - 2, TRANSPORT_AREA_WIDTH * 126 / 128, TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT / 3), PanelStyles.PANEL_STYLE_MAIN, false, WidgetTypes.WIDGET_RECEIVE_MOVE_CARGO_TO_CITY, -1, -1 )
-		self.appendtoHideState(screen, "CityTransportPanel", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
+		#screen.addScrollPanel("CityTransportPanel", u"", xResolution - TRANSPORT_AREA_WIDTH + MAP_EDGE_MARGIN_WIDTH - SMALL_BUTTON_SIZE / 2, yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT * 9 / 8 - 2, TRANSPORT_AREA_WIDTH * 126 / 128, TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT / 3), PanelStyles.PANEL_STYLE_MAIN, false, WidgetTypes.WIDGET_RECEIVE_MOVE_CARGO_TO_CITY, -1, -1 )
+		#self.appendtoHideState(screen, "CityTransportPanel", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
 		
 	# SCORES TABLE
 		screen.addPanel("ScoreBackground", u"", u"", True, False, 0, 0, 0, 0, PanelStyles.PANEL_STYLE_HUD_HELP, WidgetTypes.WIDGET_GENERAL, -1, -1 )
@@ -2971,6 +2971,19 @@ class CvMainInterface:
 			screen.hideList(RESOURCE_TABLE_HIDE)
 			screen.hide("CityList")
 			
+		# Garrison and Transport Panel
+		screen.addScrollPanel("CityGarrisonPanel", u"", CITIZEN_BAR_WIDTH + (SMALL_BUTTON_SIZE / 8), yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT * 9 / 8 - 2, xResolution - CITIZEN_BAR_WIDTH - TRANSPORT_AREA_WIDTH + STACK_BAR_HEIGHT * 4 / 8, TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT / 3), PanelStyles.PANEL_STYLE_EMPTY, false, WidgetTypes.WIDGET_EJECT_CITIZEN, -1, -1 )	
+		screen.hide("CityGarrisonPanel")
+		
+		screen.addScrollPanel("CityTransportPanel", u"", xResolution - TRANSPORT_AREA_WIDTH + MAP_EDGE_MARGIN_WIDTH - SMALL_BUTTON_SIZE / 2, yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT * 9 / 8 - 2, TRANSPORT_AREA_WIDTH * 126 / 128, TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT / 3), PanelStyles.PANEL_STYLE_MAIN, false, WidgetTypes.WIDGET_RECEIVE_MOVE_CARGO_TO_CITY, -1, -1 )
+		screen.hide("CityTransportPanel")
+		
+		if (CyInterface().isCityScreenUp()):
+			screen.show("CityGarrisonPanel")
+			screen.show("CityTransportPanel")
+		else:
+			screen.hide("CityGarrisonPanel")
+			screen.hide("CityTransportPanel")
 		return 0
 
 	# Will set the table to display the out put of a city or the players whole empire
