@@ -1088,7 +1088,7 @@ class CvMainInterface:
 		screen.setHitMargins("EndTurnLayer", LARGE_BUTTON_SIZE / 3, LARGE_BUTTON_SIZE / 3)
 		screen.hide("EndTurnLayer")
 		
-#TAC --->
+
 	# BUILDING CONSTRUCTION BAR
 		screen.addStackedBarGFC("CityProductionBar", CITIZEN_BAR_WIDTH - 2 + CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100 - SMALL_BUTTON_SIZE / 4, CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH - (MAP_EDGE_MARGIN_WIDTH * 2) + (STACK_BAR_HEIGHT * 3 / 2) + (MAP_EDGE_MARGIN_WIDTH / 2) - (CITY_MULTI_TAB_SIZE / 2) - ((CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100) / 2) + (CITY_MULTI_TAB_SIZE / 2) - (STACK_BAR_HEIGHT / 2) + CITY_MULTI_TAB_SIZE * RelativeButtonSize / 200, xResolution - (MAP_EDGE_MARGIN_WIDTH * 2) - CITY_MULTI_TAB_SIZE - ((CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100) / 2) + (CITY_MULTI_TAB_SIZE / 2) - CITIZEN_BAR_WIDTH - CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100 + SMALL_BUTTON_SIZE / 2 + 4, STACK_BAR_HEIGHT, InfoBarTypes.NUM_INFOBAR_TYPES, WidgetTypes.WIDGET_HELP_SELECTED, 0, -1 )
 		screen.setStackedBarColors("CityProductionBar", InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_GREAT_PEOPLE_STORED") )
@@ -1100,9 +1100,7 @@ class CvMainInterface:
 		screen.addPanel("CityProductionBarFrame", u"", u"", True, False, CITIZEN_BAR_WIDTH - 2 + CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100 - SMALL_BUTTON_SIZE / 4, CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH - (MAP_EDGE_MARGIN_WIDTH * 2) + (STACK_BAR_HEIGHT * 3 / 2) + (MAP_EDGE_MARGIN_WIDTH / 2) - (CITY_MULTI_TAB_SIZE / 2) - ((CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100) / 2) + (CITY_MULTI_TAB_SIZE / 2) - (STACK_BAR_HEIGHT / 2) + CITY_MULTI_TAB_SIZE * RelativeButtonSize / 200, xResolution - (MAP_EDGE_MARGIN_WIDTH * 2) - CITY_MULTI_TAB_SIZE - ((CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100) / 2) + (CITY_MULTI_TAB_SIZE / 2) - CITIZEN_BAR_WIDTH - CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100 + SMALL_BUTTON_SIZE / 2 + 4, STACK_BAR_HEIGHT, PanelStyles.PANEL_STYLE_STANDARD, WidgetTypes.WIDGET_HELP_SELECTED, 0, -1 )
 		screen.addDrawControl("CityProductionBarFrame", ArtFileMgr.getInterfaceArtInfo("INTERFACE_BUILD_PROGRESS_BAR").getPath(), CITIZEN_BAR_WIDTH - 2 + CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100 - SMALL_BUTTON_SIZE / 4, CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH - (MAP_EDGE_MARGIN_WIDTH * 2) + (STACK_BAR_HEIGHT * 3 / 2) + (MAP_EDGE_MARGIN_WIDTH / 2) - (CITY_MULTI_TAB_SIZE / 2) - ((CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100) / 2) + (CITY_MULTI_TAB_SIZE / 2) - (STACK_BAR_HEIGHT / 2) + CITY_MULTI_TAB_SIZE * RelativeButtonSize / 200, xResolution - (MAP_EDGE_MARGIN_WIDTH * 2) - CITY_MULTI_TAB_SIZE - ((CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100) / 2) + (CITY_MULTI_TAB_SIZE / 2) - CITIZEN_BAR_WIDTH - CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100 + SMALL_BUTTON_SIZE / 2 + 4, STACK_BAR_HEIGHT, WidgetTypes.WIDGET_HELP_SELECTED, 0, -1 )
 		self.appendtoHideState(screen, "CityProductionBarFrame", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)	
-
 		screen.setLabelAt("ProductionText", "CityProductionBar", "", CvUtil.FONT_CENTER_JUSTIFY, (xResolution - CITIZEN_BAR_WIDTH - BUILD_AREA_WIDTH - (MAP_EDGE_MARGIN_WIDTH * 2)) / 2, 0, -1.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_HELP_SELECTED, 0, -1 )
-#<--- TAC
 
 	# CITY REBEL BAR
 		screen.addStackedBarGFC("RebelBar", STACK_BAR_HEIGHT, yResolution - BOTTOM_CENTER_HUD_HEIGHT - STACK_BAR_HEIGHT, CITIZEN_BAR_WIDTH - (STACK_BAR_HEIGHT * 2), STACK_BAR_HEIGHT, InfoBarTypes.NUM_INFOBAR_TYPES, WidgetTypes.WIDGET_HELP_REBEL, 1, -1 )
@@ -2304,7 +2302,6 @@ class CvMainInterface:
 		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
 		pHeadSelectedCity = CyInterface().getHeadSelectedCity()
 
-
 #TAC --->
 	# TRANSPORT MANAGMENT
 		TransportButtonSize = LARGE_BUTTON_SIZE * 4 / 3
@@ -2920,10 +2917,8 @@ class CvMainInterface:
 		else: # CITY SCREEN IS DOWN
 			self.MINIMAP_SIDE_MARGIN = MINIMAP_HEIGHT * 13 / 100
 			screen.placeMinimap(self.MINIMAP_SIDE_MARGIN, MINIMAP_HEIGHT - self.MINIMAP_SIDE_MARGIN, yResolution - MINIMAP_HEIGHT + self.MINIMAP_SIDE_MARGIN * 2, yResolution)
-			# R&R, Robert Surcouf, No More Variables Hidden game option START
-			#screen.setHelpTextArea( HELPTEXT_AREA_MAX_WIDTH, FontTypes.SMALL_FONT, HELTTEXT_AREA_X_MARGIN, yResolution - SADDLE_HEIGHT, -0.1, False, "", True, False, CvUtil.FONT_LEFT_JUSTIFY, HELPTEXT_AREA_MIN_WIDTH )
 			screen.setHelpTextArea( HELPTEXT_AREA_MAX_WIDTH, FontTypes.SMALL_FONT, HELTTEXT_AREA_X_MARGIN, yResolution - SADDLE_HEIGHT+HELPTEXT_AREA_Y_MARGIN, -0.1, False, "", True, False, CvUtil.FONT_LEFT_JUSTIFY, HELPTEXT_AREA_MIN_WIDTH )
-			# R&R, Robert Surcouf, No More Variables Hidden game option END
+
 			if ( CyInterface().getShowInterface() == InterfaceVisibility.INTERFACE_SHOW ):
 				self.setMinimapButtonVisibility(True)
 				pPlayer = gc.getPlayer(gc.getGame().getActivePlayer())
@@ -2948,25 +2943,21 @@ class CvMainInterface:
 				screen.hide("CultureText")
 				screen.hide("HarbourText")
 				screen.hide("BarracksText")
-				# R&R, Robert Surcouf,START
 				screen.hide("StorageCapacityText")
-				# R&R, Robert Surcouf,END
 
 			for iSpecial in range(gc.getNumSpecialBuildingInfos()):
 				screen.hide("CityBuildingGraphic" + str(iSpecial))
 				screen.hide("ProductionBox" + str(iSpecial))
 
-			# WTP, ray, Center Plot specific Backgrounds - START
-			screen.hide("CityManagerBackground")
-			# WTP, ray, Center Plot specific Backgrounds - END
-
 			screen.hideList(RESOURCE_TABLE_HIDE)
 			screen.hide("CityList")
-			
+
+		# WTP, ray, Center Plot specific Backgrounds - START
+		# WTP, ray: had to add this here
 		# Garrison and Transport Panel
 		screen.addScrollPanel("CityGarrisonPanel", u"", CITIZEN_BAR_WIDTH + (SMALL_BUTTON_SIZE / 8), yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT * 9 / 8 - 2, xResolution - CITIZEN_BAR_WIDTH - TRANSPORT_AREA_WIDTH + STACK_BAR_HEIGHT * 4 / 8, TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT / 3), PanelStyles.PANEL_STYLE_EMPTY, false, WidgetTypes.WIDGET_EJECT_CITIZEN, -1, -1 )
 		screen.addScrollPanel("CityTransportPanel", u"", xResolution - TRANSPORT_AREA_WIDTH + MAP_EDGE_MARGIN_WIDTH - SMALL_BUTTON_SIZE / 2, yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT * 9 / 8 - 2, TRANSPORT_AREA_WIDTH * 126 / 128, TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT / 3), PanelStyles.PANEL_STYLE_MAIN, false, WidgetTypes.WIDGET_RECEIVE_MOVE_CARGO_TO_CITY, -1, -1 )
-		
+
 		if (CyInterface().isCityScreenUp()):
 			screen.show("CityGarrisonPanel")
 			screen.show("CityTransportPanel")
@@ -2974,8 +2965,11 @@ class CvMainInterface:
 			for iYield in self.TableYields:
 				screen.moveToFront("YieldIcon" + str(iYield))
 		else:
+			screen.hide("CityManagerBackground")
 			screen.hide("CityGarrisonPanel")
 			screen.hide("CityTransportPanel")
+		# WTP, ray, Center Plot specific Backgrounds - END
+
 		return 0
 
 	# Will set the table to display the out put of a city or the players whole empire
