@@ -1158,6 +1158,7 @@ class CvMainInterface:
 
 	#Erik Resource table toggle Yields
 		screen.setImageButton("ShowOrHideYields", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SHOW_OR_HIDE_YIELDS").getPath(), 0, yResolution * 82 / 100, ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_HELP_SHOW_OR_HIDE_YIELDS, -1, -1)
+		self.appendtoHideState(screen, "ShowOrHideYields", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
 
 	# GROWTH EMPHASIZE/DEMPHASIZE
 		screen.setImageButton("AvoidGrowth", ArtFileMgr.getInterfaceArtInfo("INTERFACE_BUTTONS_CANCEL").getPath(), 0, CITY_TITLE_BAR_HEIGHT / 10, ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_EMPHASIZE, -1, AVOID_GROWTH)
