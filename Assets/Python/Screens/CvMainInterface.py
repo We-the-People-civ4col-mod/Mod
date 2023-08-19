@@ -1129,7 +1129,7 @@ class CvMainInterface:
 
 			screen.setImageButton("CityBuildingGraphic" + str(iSpecial), "", BUILDING_GRID[iSpecial][0] + STACK_BAR_HEIGHT, BUILDING_GRID[iSpecial][1] + CITY_TITLE_BAR_HEIGHT, BUILDING_GRID[iSpecial][3], BUILDING_GRID[iSpecial][3], WidgetTypes.WIDGET_ASSIGN_CITIZEN_TO_BUILDING, iSpecial, iTargetBuilding)
 			screen.addDDSGFC("ProductionBox" + str(iSpecial), ArtFileMgr.getInterfaceArtInfo("INTERFACE_PRODUCTION_BOX").getPath(), BUILDING_GRID[iSpecial][0] + STACK_BAR_HEIGHT, BUILDING_GRID[iSpecial][1] + BUILDING_GRID[iSpecial][2], (BUILDING_GRID[iSpecial][3] + STACK_BAR_HEIGHT)*3/4, STACK_BAR_HEIGHT*3/4, WidgetTypes.WIDGET_GENERAL, -1, -1)
-			screen.hide("ProductionBox" + str(iSpecial))                                           
+			screen.hide("ProductionBox" + str(iSpecial))
 
 	# BUTTONS
 		screen.setImageButton("HurryGold", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_PURCHASE_UNIT").getPath(), CITIZEN_BAR_WIDTH - 2, CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH - (MAP_EDGE_MARGIN_WIDTH * 2) + (STACK_BAR_HEIGHT * 3 / 2) + (MAP_EDGE_MARGIN_WIDTH / 2) - (CITY_MULTI_TAB_SIZE / 2) - ((CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100) / 2) + (CITY_MULTI_TAB_SIZE / 2), CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100, CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100, WidgetTypes.WIDGET_HURRY, gc.getInfoTypeForString("HURRY_GOLD"), -1)
@@ -2656,9 +2656,9 @@ class CvMainInterface:
 						screen.changeImageButton("CityBuildingGraphic" + str(iSpecial), szTexture)
 						screen.show("CityBuildingGraphic" + str(iSpecial))
 				
-				# R&R, Robert Surcouf Screen Resolution/Ratio - Start
-				iXmodifier = max(xResolution * 5 / 100 - (xResolution - 1000)/200 , 0) 					# More or less: 1024 -> 5% 1280 -> 4% / 1600 -> 2% / 1980 -> 0%
-				# R&R, Robert Surcouf Screen Resolution/Ratio - End
+				# More or less: 1024 -> 5% 1280 -> 4% / 1600 -> 2% / 1980 -> 0%
+				iXmodifier = max(xResolution * 5 / 100 - (xResolution - 1000)/200 , 0)
+
 			# CITIY DEFENSE MODIFIER
 				iDefenseModifier = pHeadSelectedCity.getDefenseModifier()
 				if (iDefenseModifier != 0):
@@ -2667,15 +2667,11 @@ class CvMainInterface:
 						szTempBuffer = u" (%d%%)" %(( ( gc.getMAX_CITY_DEFENSE_DAMAGE() - pHeadSelectedCity.getDefenseDamage() ) * 100 ) / gc.getMAX_CITY_DEFENSE_DAMAGE() )
 						szBuffer = szBuffer + szTempBuffer
 					szBuffer = "<font=3>" + szBuffer + "</font>"
-					# R&R, Robert Surcouf Screen Resolution/Ratio - Start
-					#screen.setLabel("DefenseText", "Background", szBuffer, CvUtil.FONT_RIGHT_JUSTIFY, xResolution * 88 / 100, CITY_TITLE_BAR_HEIGHT / 8, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_DEFENSE, -1, -1 )
 					screen.setLabel("DefenseText", "Background", szBuffer, CvUtil.FONT_RIGHT_JUSTIFY, xResolution * 89 / 100 -iXmodifier , CITY_TITLE_BAR_HEIGHT / 8, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_DEFENSE, -1, -1 )
-					# R&R, Robert Surcouf Screen Resolution/Ratio  - End
 					screen.show("DefenseText")
 
 			# CITY HAMMER PRODUCTION
 				iHammers = pHeadSelectedCity.getCurrentProductionDifference(True)
-				# R&R, Robert Surcouf Screen Resolution/Ratio - Start
 				szBuffer = u"<font=3>" + u"%i%c" % (iHammers, gc.getYieldInfo(YieldTypes.YIELD_HAMMERS).getChar()) + u"</font>"
 				screen.setLabel("HammerText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 11 / 100 +iXmodifier , CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PRODUCTION_MOD_HELP, -1, -1 )
 
@@ -2857,9 +2853,8 @@ class CvMainInterface:
 				screen.setLabelAt("RebelText", "RebelBar", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, (CITIZEN_BAR_WIDTH - (STACK_BAR_HEIGHT * 3 / 2)) / 2, STACK_BAR_HEIGHT / 2, -1.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 				screen.setHitTest("RebelText", HitTestTypes.HITTEST_NOHIT)
 				screen.show("RebelText")
-			# R&R, Robert Surcouf VET NewCapacity - Start
-#VET NewCapacity - begin 1/1
-				#szBuffer = u"<font=4>"
+
+			# PRODUCTION
 				szBuffer = u"<font=3>"
 				aiProducedYields = [[]] * YieldTypes.NUM_YIELD_TYPES
 				for iYield in range(YieldTypes.NUM_YIELD_TYPES):
@@ -2875,10 +2870,6 @@ class CvMainInterface:
 								aiProducedYields[iNeedYield] += iUnproducedYield
 					iProducedYield = pHeadSelectedCity.calculateNetYield(iYield)
 					aiProducedYields[iYield] += iProducedYield
-
-				#	if iYield == YieldTypes.YIELD_FOOD or not gc.getYieldInfo(iYield).isCargo():
-				#		continue
-				#	iNetYield += pHeadSelectedCity.getYieldStored(iYield)
 
 				iProdusedYield = 0
 				for iYield in range(YieldTypes.NUM_YIELD_TYPES):
@@ -2901,16 +2892,12 @@ class CvMainInterface:
 				elif iProdusedYield < 0:
 					szBuffer += str(iProdusedYield)
 				szBuffer += u"/" + str(iMaxYield) + u")"
-#VET NewCapacity - end 1/1
 				szBuffer += u"</font>"
-				# WTP, ray, adding the Yield Icon for Trade Goods
+
+				# WTP, ray, adding the Yield Icon for Trade Goods to Storage Capacity
 				szBuffer += u"<font=3>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar()) + u"</font>"
-				
-				#screen.setLabel("StorageCapacityText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 83 / 100, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_CITY_NAME, -1, -1 )
 				screen.setLabel("StorageCapacityText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 90 / 100 , CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, VET_NEW_CAPACITY, -1 )
-				#screen.setLabel("StorageCapacityText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 84 / 100 , CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 				
-			# R&R, Robert Surcouf VET NewCapacity - End
 			screen.hide("TimeText")
 			screen.hide("GoldText")
 			
@@ -3015,7 +3002,6 @@ class CvMainInterface:
 				iStored = pCity.getYieldStored(i)
 				iRate = pCity.calculateNetYield(i)
 				
-				# ray, making special storage capacity rules for Yields XML configurable
 				bIgnoredForStorageCapacity = gc.getYieldInfo(i).isIgnoredForStorageCapacity()
 				szStored = ""
 				if (iStored > pCity.getMaxYieldCapacity() and not bIgnoredForStorageCapacity):
@@ -3134,11 +3120,8 @@ class CvMainInterface:
 		screen.hide("SelectedUnitText")
 		screen.hide("SelectedUnitLabel")
 		
-		
 		QueueWidth = (xResolution - CITIZEN_BAR_WIDTH) * 3 / 7
-# TAC --->
 		screen.addTableControlGFC("CityBuildQueue", 2, CITIZEN_BAR_WIDTH + 5, CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH - (MAP_EDGE_MARGIN_WIDTH * 2) + (STACK_BAR_HEIGHT * 3 / 2) + (MAP_EDGE_MARGIN_WIDTH / 2) - (CITY_MULTI_TAB_SIZE / 2) - ((CITY_MULTI_TAB_SIZE * 130 / 100) / 2) + (CITY_MULTI_TAB_SIZE / 2) - (STACK_BAR_HEIGHT / 2) + CITY_MULTI_TAB_SIZE * 130 / 100, QueueWidth, TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT * 2) - SMALL_BUTTON_SIZE * 3 / 2 + 5, False, False, self.SELECTION_PANEL_ROW_HEIGHT, self.SELECTION_PANEL_ROW_HEIGHT, TableStyles.TABLE_STYLE_STANDARD)
-# <--- TAC
 		screen.setStyle("CityBuildQueue", "Table_EmptyScroll_Style")
 		screen.hide("CityBuildQueue")
 
@@ -3180,7 +3163,6 @@ class CvMainInterface:
 
 		if (pHeadSelectedCity):
 			iOrders = CyInterface().getNumOrdersQueued()
-# TAC --->
 			for i in range(iOrders):
 				if (not i == 0):
 
@@ -3207,7 +3189,6 @@ class CvMainInterface:
 	
 					iRow += 1
 
-# <--- TAC
 		elif (pHeadSelectedUnit and CyInterface().getShowInterface() == InterfaceVisibility.INTERFACE_SHOW and not pHeadSelectedCity):
 			screen.setTableColumnHeader("SelectedUnitName", 0, u"", LOWER_RIGHT_CORNER_BACKGROUND_WIDTH * 105 / 100 + 5)
 			screen.setTableColumnHeader("SelectedUnitText", 0, u"", LOWER_RIGHT_CORNER_BACKGROUND_WIDTH * 105 / 100 - self.SELECTION_PALEL_LEFT_COLUMN_WIDTH)
@@ -3238,19 +3219,15 @@ class CvMainInterface:
 
 								szBuffer = szLeftBuffer + u"  " + szRightBuffer
 								iRow = screen.appendTableRow("SelectedUnitText")
-								#screen.setTableText("SelectedUnitText", 0, iRow, szLeftBuffer, "", WidgetTypes.WIDGET_HELP_SELECTED, i, -1, CvUtil.FONT_LEFT_JUSTIFY )
-								#screen.setTableText("SelectedUnitText", 1, iRow, szRightBuffer, "", WidgetTypes.WIDGET_HELP_SELECTED, i, -1, CvUtil.FONT_RIGHT_JUSTIFY )
 								screen.show("SelectedUnitText")
 								screen.show("SelectedUnitPanel")
-				#else:
-					#screen.setText("SelectedUnitLabel", "Background", localText.getText("TXT_KEY_UNIT_STACK", (CyInterface().getLengthSelectionList(), )), CvUtil.FONT_LEFT_JUSTIFY, xResolution - LOWER_RIGHT_CORNER_BACKGROUND_WIDTH, yResolution - LOWER_RIGHT_CORNER_BACKGROUND_HEIGHT , -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_UNIT_NAME, -1, -1 )
+
 			else:
 				if (pHeadSelectedUnit.getHotKeyNumber() == -1):
 					szBuffer = localText.getText("INTERFACE_PANE_UNIT_NAME", (pHeadSelectedUnit.getName(), ))
 				else:
 					szBuffer = localText.getText("INTERFACE_PANE_UNIT_NAME_HOT_KEY", (pHeadSelectedUnit.getHotKeyNumber(), pHeadSelectedUnit.getName()))
 				szBuffer = "<font=2b>" + szBuffer + "</font>"
-				#screen.setText("SelectedUnitLabel", "Background", szBuffer, CvUtil.FONT_RIGHT_JUSTIFY, xResolution - LOWER_RIGHT_CORNER_BACKGROUND_WIDTH, yResolution - LOWER_RIGHT_CORNER_BACKGROUND_HEIGHT, -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_UNIT_NAME, -1, -1 )
 
 				iRow = screen.appendTableRow("SelectedUnitName")
 				
@@ -3412,12 +3389,9 @@ class CvMainInterface:
 									if gc.getGame().getPlayerScore(ePlayer) > 0:
 										szBuffer += u"%d: " % gc.getGame().getPlayerScore(ePlayer)
 									
-									# R&R, Robert Surcouf, No More Variables Hidden game option START
-									#if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_MORE_VARIABLES_HIDDEN):
 									if (gc.getTeam(eTeam).isParentOf(gc.getGame().getActiveTeam())):
 											szTempBuffer = u"%c" %(CyGame().getSymbolID(FontSymbols.ANCHOR_EUROPE_CHAR))
 											szBuffer = szBuffer +  szTempBuffer  + " "
-									# R&R, Robert Surcouf, No More Variables Hidden game option END
 									
 									if (not CyInterface().isFlashingPlayer(ePlayer) or CyInterface().shouldFlash(ePlayer)):
 										if (ePlayer == gc.getGame().getActivePlayer()):
@@ -3482,8 +3456,6 @@ class CvMainInterface:
 									if not pHeadSelectedCity:
 										iRow = screen.appendTableRow("ScoreBackground")
 										screen.setTableText("ScoreBackground", 0, iRow, szBuffer, "", WidgetTypes.WIDGET_CONTACT_CIV, ePlayer, -1, CvUtil.FONT_RIGHT_JUSTIFY)
-										#screen.setText( szName, "Background", szBuffer, CvUtil.FONT_RIGHT_JUSTIFY, xResolution - 12, yCoord - (iCount * iBtnHeight) - 31, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_CONTACT_CIV, ePlayer, -1 )
-										#screen.show( szName )
 
 									CyInterface().checkFlashReset(ePlayer)
 
@@ -3498,7 +3470,6 @@ class CvMainInterface:
 				else:
 					yCoord = yResolution - SADDLE_HEIGHT - self.SCORE_BACKGROUND_BOTTOM_MARGIN_SMALL
 
-				#screen.setPanelSize("ScoreBackground", xResolution - self.SCORE_BACKGROUND_SIDE_MARGIN - iWidth, yCoord - (iBtnHeight * iCount) - 35, iWidth + 12, (iBtnHeight * iCount) + 8 )
 				if not pHeadSelectedCity:
 					screen.show("ScoreBackground")
 
@@ -3722,10 +3693,10 @@ class CvMainInterface:
 					SHOW_ALL_YIELDS = True
  					screen.overlayButtonGFC("ShowOrHideYields", None)
 				self.updateResourceTable()
-# Achievements START
+
 			elif (inputClass.getButtonType() == WidgetTypes.WIDGET_GENERAL and inputClass.getData1() == ACHIEVE_ADVISOR_SCREEN_MI):
 				CvScreensInterface.showAchieveAdvisorScreen()
-# Achievements END
+
 		return 0
 	
 	# Updates the Screen
