@@ -866,8 +866,6 @@ class CvMainInterface:
 		self.appendtoHideState(screen, "LockCitizens", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
 
 	# RESOURCE TABLE
-		#screen.setImageButton("AutomateCitizens", ArtFileMgr.getInterfaceArtInfo("INTERFACE_CITY_AUTOMATE_CITIZENS").getPath(), yResolution - BOTTOM_CENTER_HUD_HEIGHT, xResolution - SMALL_BUTTON_SIZE, SMALL_BUTTON_SIZE * 2, SMALL_BUTTON_SIZE * 2, WidgetTypes.WIDGET_AUTOMATE_CITIZENS, 1, -1)
-		#self.appendtoHideState(screen, "AutomateCitizens", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
 		screen.addScrollPanel("ResourceTable", u"", 0, yResolution - BOTTOM_CENTER_HUD_HEIGHT, xResolution, BOTTOM_CENTER_HUD_HEIGHT, PanelStyles.PANEL_STYLE_STANDARD, false, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		screen.hide("ResourceTable")
 		
