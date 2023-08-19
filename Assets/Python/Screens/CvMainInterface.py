@@ -1118,14 +1118,24 @@ class CvMainInterface:
 
 		screen.setLabelAt("RebelText", "RebelBar", "", CvUtil.FONT_CENTER_JUSTIFY, (CITIZEN_BAR_WIDTH - (STACK_BAR_HEIGHT * 3 / 2)) / 2, 0, -1.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 	
+	# CITY BUILDING GRID	
+		#Androrc Multiple Professions per Building
+		pHeadSelectedCity = CyInterface().getHeadSelectedCity()
+		for iSpecial in range(gc.getNumSpecialBuildingInfos()):
+			iTargetBuilding = -1
+			for iBuilding in range(gc.getNumBuildingInfos()):
+				if gc.getCivilizationInfo(gc.getActivePlayer().getCivilizationType()).getCivilizationBuildings(gc.getBuildingInfo(iBuilding).getBuildingClassType()) == iBuilding:
+					if(gc.getBuildingInfo(iBuilding).getSpecialBuildingType() == iSpecial):
+						iTargetBuilding = iBuilding
+						break
 
-#TAC --->
+			screen.setImageButton("CityBuildingGraphic" + str(iSpecial), "", BUILDING_GRID[iSpecial][0] + STACK_BAR_HEIGHT, BUILDING_GRID[iSpecial][1] + CITY_TITLE_BAR_HEIGHT, BUILDING_GRID[iSpecial][3], BUILDING_GRID[iSpecial][3], WidgetTypes.WIDGET_ASSIGN_CITIZEN_TO_BUILDING, iSpecial, iTargetBuilding)
+			screen.addDDSGFC("ProductionBox" + str(iSpecial), ArtFileMgr.getInterfaceArtInfo("INTERFACE_PRODUCTION_BOX").getPath(), BUILDING_GRID[iSpecial][0] + STACK_BAR_HEIGHT, BUILDING_GRID[iSpecial][1] + BUILDING_GRID[iSpecial][2], (BUILDING_GRID[iSpecial][3] + STACK_BAR_HEIGHT)*3/4, STACK_BAR_HEIGHT*3/4, WidgetTypes.WIDGET_GENERAL, -1, -1)
+			screen.hide("ProductionBox" + str(iSpecial))                                           
+
 	# BUTTONS
 		screen.setImageButton("HurryGold", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_PURCHASE_UNIT").getPath(), CITIZEN_BAR_WIDTH - 2, CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH - (MAP_EDGE_MARGIN_WIDTH * 2) + (STACK_BAR_HEIGHT * 3 / 2) + (MAP_EDGE_MARGIN_WIDTH / 2) - (CITY_MULTI_TAB_SIZE / 2) - ((CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100) / 2) + (CITY_MULTI_TAB_SIZE / 2), CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100, CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100, WidgetTypes.WIDGET_HURRY, gc.getInfoTypeForString("HURRY_GOLD"), -1)
-		#screen.setImageButton("HurryGold", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_PURCHASE_UNIT").getPath(), CITIZEN_BAR_WIDTH - 2, CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH + (STACK_BAR_HEIGHT / 2) - SMALL_BUTTON_SIZE + 5, SMALL_BUTTON_SIZE * 2, SMALL_BUTTON_SIZE * 2, WidgetTypes.WIDGET_HURRY, gc.getInfoTypeForString("HURRY_GOLD"), -1)
-
 		self.appendtoHideState(screen, "HurryGold", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
-#<--- TAC
 
 	# CITY AND PLOT SCROLL BUTTONS
 		ScrollButtonSize = MEDIUM_BUTTON_SIZE
@@ -1147,6 +1157,9 @@ class CvMainInterface:
 	# EXIT BUTTON
 		screen.setText("CityExitText", "", u"<font=4>" + localText.getText("TXT_KEY_PEDIA_SCREEN_EXIT", ()).upper() + u"</font>", CvUtil.FONT_RIGHT_JUSTIFY, xResolution - 10, CITY_TITLE_BAR_HEIGHT / 12, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_CLOSE_SCREEN, -1, -1 )
 		self.appendtoHideState(screen, "CityExitText", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
+
+	#Erik Resource table toggle Yields
+		screen.setImageButton("ShowOrHideYields", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SHOW_OR_HIDE_YIELDS").getPath(), 0, yResolution * 82 / 100, ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_HELP_SHOW_OR_HIDE_YIELDS, -1, -1)
 
 	# GROWTH EMPHASIZE/DEMPHASIZE
 		screen.setImageButton("AvoidGrowth", ArtFileMgr.getInterfaceArtInfo("INTERFACE_BUTTONS_CANCEL").getPath(), 0, CITY_TITLE_BAR_HEIGHT / 10, ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_EMPHASIZE, -1, AVOID_GROWTH)
@@ -2507,30 +2520,13 @@ class CvMainInterface:
 			else:
 				screen.addDrawControl("CityManagerBackground", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SCROLL_BG").getPath(), 0, CITY_TITLE_BAR_HEIGHT, int(CITIZEN_BAR_WIDTH * 1.07), int((yResolution - (BOTTOM_CENTER_HUD_HEIGHT + CITY_TITLE_BAR_HEIGHT)) * 1.04), WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
-			# WTP, ray: had to move this here
+			# WTP, ray: had to add this here
 			# CITY BUILDING GRID	
 			#Androrc Multiple Professions per Building
 			for iSpecial in range(gc.getNumSpecialBuildingInfos()):
-				iTargetBuilding = -1
-				for iBuilding in range(gc.getNumBuildingInfos()):
-					if gc.getCivilizationInfo(gc.getActivePlayer().getCivilizationType()).getCivilizationBuildings(gc.getBuildingInfo(iBuilding).getBuildingClassType()) == iBuilding:
-						if(gc.getBuildingInfo(iBuilding).getSpecialBuildingType() == iSpecial):
-							iTargetBuilding = iBuilding
-							break
-
-				#screen.addDDSGFC("BuildingBox" + str(iSpecial), ArtFileMgr.getInterfaceArtInfo("INTERFACE_WORKER_BOX").getPath(), BUILDING_GRID[iSpecial][0] + STACK_BAR_HEIGHT, BUILDING_GRID[iSpecial][1] + CITY_TITLE_BAR_HEIGHT, BUILDING_GRID[iSpecial][3], BUILDING_GRID[iSpecial][3], WidgetTypes.WIDGET_GENERAL, -1, -1 )
-				#Androrc Multiple Professions per Building
-				#screen.setImageButton("CityBuildingGraphic" + str(iSpecial), "", BUILDING_GRID[iSpecial][0] + STACK_BAR_HEIGHT, BUILDING_GRID[iSpecial][1] + CITY_TITLE_BAR_HEIGHT, BUILDING_GRID[iSpecial][3], BUILDING_GRID[iSpecial][3], WidgetTypes.WIDGET_CITY_UNIT_ASSIGN_PROFESSION, iSpecial, iTargetProfession)
-				screen.setImageButton("CityBuildingGraphic" + str(iSpecial), "", BUILDING_GRID[iSpecial][0] + STACK_BAR_HEIGHT, BUILDING_GRID[iSpecial][1] + CITY_TITLE_BAR_HEIGHT, BUILDING_GRID[iSpecial][3], BUILDING_GRID[iSpecial][3], WidgetTypes.WIDGET_ASSIGN_CITIZEN_TO_BUILDING, iSpecial, iTargetBuilding)
-				#Androrc End
-				screen.addDDSGFC("ProductionBox" + str(iSpecial), ArtFileMgr.getInterfaceArtInfo("INTERFACE_PRODUCTION_BOX").getPath(), BUILDING_GRID[iSpecial][0] + STACK_BAR_HEIGHT, BUILDING_GRID[iSpecial][1] + BUILDING_GRID[iSpecial][2], (BUILDING_GRID[iSpecial][3] + STACK_BAR_HEIGHT)*3/4, STACK_BAR_HEIGHT*3/4, WidgetTypes.WIDGET_GENERAL, -1, -1)
-				screen.hide("ProductionBox" + str(iSpecial))
+				screen.moveToFront("CityBuildingGraphic" + str(iSpecial))
+				screen.moveToFront("ProductionBox" + str(iSpecial))
 			# WTP, ray, Center Plot specific Backgrounds - END
-
-			# WTP, ray: had to move this here
-			#Erik Resource table
-			ScrollButtonSize = MEDIUM_BUTTON_SIZE
-			screen.setImageButton("ShowOrHideYields", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SHOW_OR_HIDE_YIELDS").getPath(), 0, yResolution * 82 / 100, ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_HELP_SHOW_OR_HIDE_YIELDS, -1, -1)
 
 			for iYield in EMPHASIZEYIELDS:
 				screen.hide("MapYieldBox" + str(iYield))
@@ -2964,23 +2960,17 @@ class CvMainInterface:
 			screen.hide("CityManagerBackground")
 			# WTP, ray, Center Plot specific Backgrounds - END
 
-			# WTP, ray: had to move this here
-			#Erik Resource table
-			screen.hide("ShowOrHideYields")
-
 			screen.hideList(RESOURCE_TABLE_HIDE)
 			screen.hide("CityList")
 			
 		# Garrison and Transport Panel
-		screen.addScrollPanel("CityGarrisonPanel", u"", CITIZEN_BAR_WIDTH + (SMALL_BUTTON_SIZE / 8), yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT * 9 / 8 - 2, xResolution - CITIZEN_BAR_WIDTH - TRANSPORT_AREA_WIDTH + STACK_BAR_HEIGHT * 4 / 8, TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT / 3), PanelStyles.PANEL_STYLE_EMPTY, false, WidgetTypes.WIDGET_EJECT_CITIZEN, -1, -1 )	
-		screen.hide("CityGarrisonPanel")
-		
+		screen.addScrollPanel("CityGarrisonPanel", u"", CITIZEN_BAR_WIDTH + (SMALL_BUTTON_SIZE / 8), yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT * 9 / 8 - 2, xResolution - CITIZEN_BAR_WIDTH - TRANSPORT_AREA_WIDTH + STACK_BAR_HEIGHT * 4 / 8, TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT / 3), PanelStyles.PANEL_STYLE_EMPTY, false, WidgetTypes.WIDGET_EJECT_CITIZEN, -1, -1 )
 		screen.addScrollPanel("CityTransportPanel", u"", xResolution - TRANSPORT_AREA_WIDTH + MAP_EDGE_MARGIN_WIDTH - SMALL_BUTTON_SIZE / 2, yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT * 9 / 8 - 2, TRANSPORT_AREA_WIDTH * 126 / 128, TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT / 3), PanelStyles.PANEL_STYLE_MAIN, false, WidgetTypes.WIDGET_RECEIVE_MOVE_CARGO_TO_CITY, -1, -1 )
-		screen.hide("CityTransportPanel")
 		
 		if (CyInterface().isCityScreenUp()):
 			screen.show("CityGarrisonPanel")
 			screen.show("CityTransportPanel")
+			screen.moveToFront("ShowOrHideYields")
 			for iYield in self.TableYields:
 				screen.moveToFront("YieldIcon" + str(iYield))
 		else:
