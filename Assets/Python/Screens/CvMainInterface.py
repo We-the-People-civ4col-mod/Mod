@@ -613,8 +613,9 @@ class CvMainInterface:
 		self.appendtoHideState(screen, "CityGarrisonBackGroundPanel", HIDE_TYPE_CITY, HIDE_LEVEL_ALL)	
 
 		# WTP, ray, Center Plot specific Backgrounds - START
+		scrollbackgroundgraphic = "INTERFACE_SCROLL_BG"
 		screen.addPanel("CityManagerBackground", u"", u"", True, False, 0, CITY_TITLE_BAR_HEIGHT, int(CITIZEN_BAR_WIDTH * 1.07), int((yResolution - (BOTTOM_CENTER_HUD_HEIGHT + CITY_TITLE_BAR_HEIGHT)) * 1.07), PanelStyles.PANEL_STYLE_STANDARD, WidgetTypes.WIDGET_GENERAL, -1, -1 )
-		# screen.addDrawControl("CityManagerBackground", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SCROLL_BG").getPath(), 0, CITY_TITLE_BAR_HEIGHT, int(CITIZEN_BAR_WIDTH * 1.07), int((yResolution - (BOTTOM_CENTER_HUD_HEIGHT + CITY_TITLE_BAR_HEIGHT)) * 1.04), WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.addDrawControl("CityManagerBackground", ArtFileMgr.getInterfaceArtInfo(scrollbackgroundgraphic).getPath(), 0, CITY_TITLE_BAR_HEIGHT, int(CITIZEN_BAR_WIDTH * 1.07), int((yResolution - (BOTTOM_CENTER_HUD_HEIGHT + CITY_TITLE_BAR_HEIGHT)) * 1.04), WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		self.appendtoHideState(screen, "CityManagerBackground", HIDE_TYPE_CITY, HIDE_LEVEL_ALL)
 		# WTP, ray, Center Plot specific Backgrounds - END
 
@@ -1116,7 +1117,7 @@ class CvMainInterface:
 	
 	# CITY BUILDING GRID	
 		#Androrc Multiple Professions per Building
-		pHeadSelectedCity = CyInterface().getHeadSelectedCity()
+		# pHeadSelectedCity = CyInterface().getHeadSelectedCity() --- This is can not be used un global and also is not used!
 		for iSpecial in range(gc.getNumSpecialBuildingInfos()):
 			iTargetBuilding = -1
 			for iBuilding in range(gc.getNumBuildingInfos()):
@@ -1163,11 +1164,11 @@ class CvMainInterface:
 		self.appendtoHideState(screen, "AvoidGrowth", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
 		
 	# Garrison and Transport Panel
-		#screen.addScrollPanel("CityGarrisonPanel", u"", CITIZEN_BAR_WIDTH + (SMALL_BUTTON_SIZE / 8), yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT * 9 / 8 - 2, xResolution - CITIZEN_BAR_WIDTH - TRANSPORT_AREA_WIDTH + STACK_BAR_HEIGHT * 4 / 8, TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT / 3), PanelStyles.PANEL_STYLE_EMPTY, false, WidgetTypes.WIDGET_EJECT_CITIZEN, -1, -1 )	
-		#self.appendtoHideState(screen, "CityGarrisonPanel", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
+		screen.addScrollPanel("CityGarrisonPanel", u"", CITIZEN_BAR_WIDTH + (SMALL_BUTTON_SIZE / 8), yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT * 9 / 8 - 2, xResolution - CITIZEN_BAR_WIDTH - TRANSPORT_AREA_WIDTH + STACK_BAR_HEIGHT * 4 / 8, TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT / 3), PanelStyles.PANEL_STYLE_EMPTY, false, WidgetTypes.WIDGET_EJECT_CITIZEN, -1, -1 )	
+		self.appendtoHideState(screen, "CityGarrisonPanel", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
 		
-		#screen.addScrollPanel("CityTransportPanel", u"", xResolution - TRANSPORT_AREA_WIDTH + MAP_EDGE_MARGIN_WIDTH - SMALL_BUTTON_SIZE / 2, yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT * 9 / 8 - 2, TRANSPORT_AREA_WIDTH * 126 / 128, TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT / 3), PanelStyles.PANEL_STYLE_MAIN, false, WidgetTypes.WIDGET_RECEIVE_MOVE_CARGO_TO_CITY, -1, -1 )
-		#self.appendtoHideState(screen, "CityTransportPanel", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
+		screen.addScrollPanel("CityTransportPanel", u"", xResolution - TRANSPORT_AREA_WIDTH + MAP_EDGE_MARGIN_WIDTH - SMALL_BUTTON_SIZE / 2, yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT * 9 / 8 - 2, TRANSPORT_AREA_WIDTH * 126 / 128, TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT / 3), PanelStyles.PANEL_STYLE_MAIN, false, WidgetTypes.WIDGET_RECEIVE_MOVE_CARGO_TO_CITY, -1, -1 )
+		self.appendtoHideState(screen, "CityTransportPanel", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
 		
 	# SCORES TABLE
 		screen.addPanel("ScoreBackground", u"", u"", True, False, 0, 0, 0, 0, PanelStyles.PANEL_STYLE_HUD_HELP, WidgetTypes.WIDGET_GENERAL, -1, -1 )
@@ -2488,41 +2489,6 @@ class CvMainInterface:
 
 	# CITY SCREEN UP
 		if (CyInterface().isCityScreenUp()):
-			# WTP, ray, Center Plot specific Backgrounds - START
-			if (gc.getDefineINT("SHOW_TERRAIN_SPECIFIC_CITY_BACKGROUNDS") == 1 and pHeadSelectedCity and pHeadSelectedCity.getCenterPlotTerrainType() == TerrainTypes.TERRAIN_GRASS):
-				screen.addDrawControl("CityManagerBackground", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SCROLL_BG_GRASS").getPath(), 0, CITY_TITLE_BAR_HEIGHT, int(CITIZEN_BAR_WIDTH * 1.07), int((yResolution - (BOTTOM_CENTER_HUD_HEIGHT + CITY_TITLE_BAR_HEIGHT)) * 1.04), WidgetTypes.WIDGET_GENERAL, -1, -1 )
-			elif (gc.getDefineINT("SHOW_TERRAIN_SPECIFIC_CITY_BACKGROUNDS") == 1 and pHeadSelectedCity and pHeadSelectedCity.getCenterPlotTerrainType() == TerrainTypes.TERRAIN_PLAINS_FERTILE):
-				screen.addDrawControl("CityManagerBackground", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SCROLL_BG_PLAINS_FERTILE").getPath(), 0, CITY_TITLE_BAR_HEIGHT, int(CITIZEN_BAR_WIDTH * 1.07), int((yResolution - (BOTTOM_CENTER_HUD_HEIGHT + CITY_TITLE_BAR_HEIGHT)) * 1.04), WidgetTypes.WIDGET_GENERAL, -1, -1 )
-			elif (gc.getDefineINT("SHOW_TERRAIN_SPECIFIC_CITY_BACKGROUNDS") == 1 and pHeadSelectedCity and pHeadSelectedCity.getCenterPlotTerrainType() == TerrainTypes.TERRAIN_ROCK_STEPPES):
-				screen.addDrawControl("CityManagerBackground", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SCROLL_BG_ROCK_STEPPES").getPath(), 0, CITY_TITLE_BAR_HEIGHT, int(CITIZEN_BAR_WIDTH * 1.07), int((yResolution - (BOTTOM_CENTER_HUD_HEIGHT + CITY_TITLE_BAR_HEIGHT)) * 1.04), WidgetTypes.WIDGET_GENERAL, -1, -1 )
-			elif (gc.getDefineINT("SHOW_TERRAIN_SPECIFIC_CITY_BACKGROUNDS") == 1 and pHeadSelectedCity and pHeadSelectedCity.getCenterPlotTerrainType() == TerrainTypes.TERRAIN_WETLAND):
-				screen.addDrawControl("CityManagerBackground", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SCROLL_BG_WETLAND").getPath(), 0, CITY_TITLE_BAR_HEIGHT, int(CITIZEN_BAR_WIDTH * 1.07), int((yResolution - (BOTTOM_CENTER_HUD_HEIGHT + CITY_TITLE_BAR_HEIGHT)) * 1.04), WidgetTypes.WIDGET_GENERAL, -1, -1 )
-			elif (gc.getDefineINT("SHOW_TERRAIN_SPECIFIC_CITY_BACKGROUNDS") == 1 and pHeadSelectedCity and pHeadSelectedCity.getCenterPlotTerrainType() == TerrainTypes.TERRAIN_PLAINS):
-				screen.addDrawControl("CityManagerBackground", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SCROLL_BG_PLAINS").getPath(), 0, CITY_TITLE_BAR_HEIGHT, int(CITIZEN_BAR_WIDTH * 1.07), int((yResolution - (BOTTOM_CENTER_HUD_HEIGHT + CITY_TITLE_BAR_HEIGHT)) * 1.04), WidgetTypes.WIDGET_GENERAL, -1, -1 )
-			elif (gc.getDefineINT("SHOW_TERRAIN_SPECIFIC_CITY_BACKGROUNDS") == 1 and pHeadSelectedCity and pHeadSelectedCity.getCenterPlotTerrainType() == TerrainTypes.TERRAIN_DESERT):
-				screen.addDrawControl("CityManagerBackground", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SCROLL_BG_DESERT").getPath(), 0, CITY_TITLE_BAR_HEIGHT, int(CITIZEN_BAR_WIDTH * 1.07), int((yResolution - (BOTTOM_CENTER_HUD_HEIGHT + CITY_TITLE_BAR_HEIGHT)) * 1.04), WidgetTypes.WIDGET_GENERAL, -1, -1 )
-			elif (gc.getDefineINT("SHOW_TERRAIN_SPECIFIC_CITY_BACKGROUNDS") == 1 and pHeadSelectedCity and pHeadSelectedCity.getCenterPlotTerrainType() == TerrainTypes.TERRAIN_SHRUBLAND):
-				screen.addDrawControl("CityManagerBackground", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SCROLL_BG_SHRUBLAND").getPath(), 0, CITY_TITLE_BAR_HEIGHT, int(CITIZEN_BAR_WIDTH * 1.07), int((yResolution - (BOTTOM_CENTER_HUD_HEIGHT + CITY_TITLE_BAR_HEIGHT)) * 1.04), WidgetTypes.WIDGET_GENERAL, -1, -1 )
-			elif (gc.getDefineINT("SHOW_TERRAIN_SPECIFIC_CITY_BACKGROUNDS") == 1 and pHeadSelectedCity and pHeadSelectedCity.getCenterPlotTerrainType() == TerrainTypes.TERRAIN_SAVANNAH):
-				screen.addDrawControl("CityManagerBackground", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SCROLL_BG_SAVANNAH").getPath(), 0, CITY_TITLE_BAR_HEIGHT, int(CITIZEN_BAR_WIDTH * 1.07), int((yResolution - (BOTTOM_CENTER_HUD_HEIGHT + CITY_TITLE_BAR_HEIGHT)) * 1.04), WidgetTypes.WIDGET_GENERAL, -1, -1 )
-			elif (gc.getDefineINT("SHOW_TERRAIN_SPECIFIC_CITY_BACKGROUNDS") == 1 and pHeadSelectedCity and pHeadSelectedCity.getCenterPlotTerrainType() == TerrainTypes.TERRAIN_MARSH):
-				screen.addDrawControl("CityManagerBackground", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SCROLL_BG_MARSH").getPath(), 0, CITY_TITLE_BAR_HEIGHT, int(CITIZEN_BAR_WIDTH * 1.07), int((yResolution - (BOTTOM_CENTER_HUD_HEIGHT + CITY_TITLE_BAR_HEIGHT)) * 1.04), WidgetTypes.WIDGET_GENERAL, -1, -1 )
-			elif (gc.getDefineINT("SHOW_TERRAIN_SPECIFIC_CITY_BACKGROUNDS") == 1 and pHeadSelectedCity and pHeadSelectedCity.getCenterPlotTerrainType() == TerrainTypes.TERRAIN_TAIGA):
-				screen.addDrawControl("CityManagerBackground", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SCROLL_BG_TAIGA").getPath(), 0, CITY_TITLE_BAR_HEIGHT, int(CITIZEN_BAR_WIDTH * 1.07), int((yResolution - (BOTTOM_CENTER_HUD_HEIGHT + CITY_TITLE_BAR_HEIGHT)) * 1.04), WidgetTypes.WIDGET_GENERAL, -1, -1 )
-			elif (gc.getDefineINT("SHOW_TERRAIN_SPECIFIC_CITY_BACKGROUNDS") == 1 and pHeadSelectedCity and pHeadSelectedCity.getCenterPlotTerrainType() == TerrainTypes.TERRAIN_TUNDRA):
-				screen.addDrawControl("CityManagerBackground", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SCROLL_BG_TUNDRA").getPath(), 0, CITY_TITLE_BAR_HEIGHT, int(CITIZEN_BAR_WIDTH * 1.07), int((yResolution - (BOTTOM_CENTER_HUD_HEIGHT + CITY_TITLE_BAR_HEIGHT)) * 1.04), WidgetTypes.WIDGET_GENERAL, -1, -1 )
-			elif (gc.getDefineINT("SHOW_TERRAIN_SPECIFIC_CITY_BACKGROUNDS") == 1 and pHeadSelectedCity and pHeadSelectedCity.getCenterPlotTerrainType() == TerrainTypes.TERRAIN_SNOW):
-				screen.addDrawControl("CityManagerBackground", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SCROLL_BG_SNOW").getPath(), 0, CITY_TITLE_BAR_HEIGHT, int(CITIZEN_BAR_WIDTH * 1.07), int((yResolution - (BOTTOM_CENTER_HUD_HEIGHT + CITY_TITLE_BAR_HEIGHT)) * 1.04), WidgetTypes.WIDGET_GENERAL, -1, -1 )
-			else:
-				screen.addDrawControl("CityManagerBackground", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SCROLL_BG").getPath(), 0, CITY_TITLE_BAR_HEIGHT, int(CITIZEN_BAR_WIDTH * 1.07), int((yResolution - (BOTTOM_CENTER_HUD_HEIGHT + CITY_TITLE_BAR_HEIGHT)) * 1.04), WidgetTypes.WIDGET_GENERAL, -1, -1 )
-
-			# WTP, ray: had to add this here
-			# CITY BUILDING GRID	
-			#Androrc Multiple Professions per Building
-			for iSpecial in range(gc.getNumSpecialBuildingInfos()):
-				screen.moveToFront("CityBuildingGraphic" + str(iSpecial))
-				screen.moveToFront("ProductionBox" + str(iSpecial))
-			# WTP, ray, Center Plot specific Backgrounds - END
 
 			for iYield in EMPHASIZEYIELDS:
 				screen.hide("MapYieldBox" + str(iYield))
@@ -2937,27 +2903,6 @@ class CvMainInterface:
 
 			screen.hideList(RESOURCE_TABLE_HIDE)
 			screen.hide("CityList")
-
-		# WTP, ray, Center Plot specific Backgrounds - START
-		# WTP, ray: had to add this here
-		# Garrison and Transport Panel
-		screen.addScrollPanel("CityGarrisonPanel", u"", CITIZEN_BAR_WIDTH + (SMALL_BUTTON_SIZE / 8), yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT * 9 / 8 - 2, xResolution - CITIZEN_BAR_WIDTH - TRANSPORT_AREA_WIDTH + STACK_BAR_HEIGHT * 4 / 8, TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT / 3), PanelStyles.PANEL_STYLE_EMPTY, false, WidgetTypes.WIDGET_EJECT_CITIZEN, -1, -1 )
-		screen.addScrollPanel("CityTransportPanel", u"", xResolution - TRANSPORT_AREA_WIDTH + MAP_EDGE_MARGIN_WIDTH - SMALL_BUTTON_SIZE / 2, yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT * 9 / 8 - 2, TRANSPORT_AREA_WIDTH * 126 / 128, TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT / 3), PanelStyles.PANEL_STYLE_MAIN, false, WidgetTypes.WIDGET_RECEIVE_MOVE_CARGO_TO_CITY, -1, -1 )
-
-		if (CyInterface().isCityScreenUp()):
-			screen.show("CityGarrisonPanel")
-			screen.show("CityTransportPanel")
-			screen.moveToFront("ShowOrHideYields")
-			screen.moveToFront("AutomateProduction")
-			screen.moveToFront("AutomateCitizens")
-			screen.moveToFront("LockCitizens")
-			for iYield in self.TableYields:
-				screen.moveToFront("YieldIcon" + str(iYield))
-		else:
-			screen.hide("CityManagerBackground")
-			screen.hide("CityGarrisonPanel")
-			screen.hide("CityTransportPanel")
-		# WTP, ray, Center Plot specific Backgrounds - END
 
 		return 0
 
