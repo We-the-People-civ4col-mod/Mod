@@ -121,7 +121,7 @@
             <iSeeThrough>1</iSeeThrough>
             <iBuildModifier>0</iBuildModifier>
             <iDefense>0</iDefense>
-            <Button>Art/Interface\Buttons\WorldBuilder\Terrain_Grass.dds</Button>
+            <Button>Art\Interface\Buttons\Grassland.dds</Button>
             <FootstepSounds>
                 <FootstepSound>
                     <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
@@ -318,7 +318,7 @@
             <iSeeThrough>1</iSeeThrough>
             <iBuildModifier>0</iBuildModifier>
             <iDefense>0</iDefense>
-            <Button>Art/Interface\Buttons\WorldBuilder\Terrain_Plains.dds</Button>
+            <Button>Art\Interface\Buttons\Plains.dds</Button>
             <FootstepSounds>
                 <FootstepSound>
                     <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
@@ -491,7 +491,7 @@
             <iSeeThrough>1</iSeeThrough>
             <iBuildModifier>25</iBuildModifier>
             <iDefense>0</iDefense>
-            <Button>Art/Interface/Buttons/Rock_Steppes.dds</Button>
+            <Button>Art\Interface\Buttons\Rock_Steppes.dds</Button>
             <FootstepSounds>
                 <FootstepSound>
                     <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
@@ -688,7 +688,7 @@
             <iSeeThrough>1</iSeeThrough>
             <iBuildModifier>25</iBuildModifier>
             <iDefense>10</iDefense>
-            <Button>Art/Interface\Buttons\Terrain_Wetland.dds</Button>
+            <Button>Art\Interface\Buttons\Terrain_Wetland.dds</Button>
             <FootstepSounds>
                 <FootstepSound>
                     <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
@@ -885,7 +885,7 @@
             <iSeeThrough>1</iSeeThrough>
             <iBuildModifier>0</iBuildModifier>
             <iDefense>0</iDefense>
-            <Button>Art/Interface\Buttons\WorldBuilder\Terrain_Plains.dds</Button>
+            <Button>Art\Interface\Buttons\Prairie.dds</Button>
             <FootstepSounds>
                 <FootstepSound>
                     <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
@@ -1058,7 +1058,7 @@
             <iSeeThrough>1</iSeeThrough>
             <iBuildModifier>25</iBuildModifier>
             <iDefense>0</iDefense>
-            <Button>Art/Interface\Buttons\WorldBuilder\Terrain_Desert.dds</Button>
+            <Button>Art\Interface\Buttons\Desert.dds</Button>
             <FootstepSounds>
                 <FootstepSound>
                     <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
@@ -1255,7 +1255,7 @@
             <iSeeThrough>1</iSeeThrough>
             <iBuildModifier>0</iBuildModifier>
             <iDefense>0</iDefense>
-            <Button>Art/Interface\Buttons\WorldBuilder\Terrain_Plains.dds</Button>
+            <Button>Art\Interface\Buttons\Shrubland_Button.dds</Button>
             <FootstepSounds>
                 <FootstepSound>
                     <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
@@ -1452,7 +1452,7 @@
             <iSeeThrough>1</iSeeThrough>
             <iBuildModifier>0</iBuildModifier>
             <iDefense>0</iDefense>
-            <Button>Art/Interface\Buttons\WorldBuilder\Terrain_Grass.dds</Button>
+            <Button>Art\Interface\Buttons\Savannah.dds</Button>
             <FootstepSounds>
                 <FootstepSound>
                     <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
@@ -1645,7 +1645,7 @@
             <iSeeThrough>1</iSeeThrough>
             <iBuildModifier>25</iBuildModifier>
             <iDefense>10</iDefense>
-            <Button>Art/Interface\Buttons\WorldBuilder\Terrain_Tundra.dds</Button>
+            <Button>Art\Interface\Buttons\Marsh.dds</Button>
             <FootstepSounds>
                 <FootstepSound>
                     <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
@@ -1850,7 +1850,7 @@
             <iSeeThrough>1</iSeeThrough>
             <iBuildModifier>25</iBuildModifier>
             <iDefense>0</iDefense>
-            <Button>Art/Interface\Buttons\WorldBuilder\Terrain_Tundra.dds</Button>
+            <Button>Art\Interface\Buttons\Taiga.dds</Button>
             <FootstepSounds>
                 <FootstepSound>
                     <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
@@ -1963,7 +1963,7 @@
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_CLAY</YieldType>
+                    <YieldType>YIELD_COAL</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -2031,7 +2031,7 @@
             <iSeeThrough>1</iSeeThrough>
             <iBuildModifier>25</iBuildModifier>
             <iDefense>0</iDefense>
-            <Button>Art/Interface\Buttons\WorldBuilder\Terrain_Tundra.dds</Button>
+            <Button>Art\Interface\Buttons\Tundra.dds</Button>
             <FootstepSounds>
                 <FootstepSound>
                     <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
@@ -2200,7 +2200,7 @@
             <iSeeThrough>1</iSeeThrough>
             <iBuildModifier>50</iBuildModifier>
             <iDefense>0</iDefense>
-            <Button>Art/Interface\Buttons\WorldBuilder\Terrain_Ice.dds</Button>
+            <Button>Art\Interface\Buttons\Permafrost.dds</Button>
             <FootstepSounds>
                 <FootstepSound>
                     <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
@@ -2304,7 +2304,7 @@
             <iSeeThrough>0</iSeeThrough>
             <iBuildModifier>0</iBuildModifier>
             <iDefense>10</iDefense>
-            <Button>Art/Interface\Buttons\WorldBuilder\Terrain_Coast.dds</Button>
+            <Button>Art\Interface\Buttons\Coast.dds</Button>
             <FootstepSounds>
                 <FootstepSound>
                     <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
@@ -2408,7 +2408,7 @@
             <iSeeThrough>0</iSeeThrough>
             <iBuildModifier>0</iBuildModifier>
             <iDefense>10</iDefense>
-            <Button>,Art/Interface/Buttons/ShallowCoast.dds</Button>
+            <Button>Art\Interface\Buttons\ShallowCoast.dds</Button>
             <FootstepSounds>
                 <FootstepSound>
                     <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
@@ -2616,7 +2616,7 @@
             <iSeeThrough>0</iSeeThrough>
             <iBuildModifier>0</iBuildModifier>
             <iDefense>0</iDefense>
-            <Button>Art/Interface/Buttons/Lake3.dds</Button>
+            <Button>Art\Interface\Buttons\Lake3.dds</Button>
             <FootstepSounds>
                 <FootstepSound>
                     <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
@@ -2720,7 +2720,7 @@
             <iSeeThrough>0</iSeeThrough>
             <iBuildModifier>0</iBuildModifier>
             <iDefense>0</iDefense>
-            <Button>Art/Interface/Buttons/Ice_Lake.dds</Button>
+            <Button>Art\Interface\Buttons\Ice_Lake.dds</Button>
             <FootstepSounds>
                 <FootstepSound>
                     <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
@@ -2828,7 +2828,7 @@
             <iSeeThrough>0</iSeeThrough>
             <iBuildModifier>0</iBuildModifier>
             <iDefense>0</iDefense>
-            <Button>Art/Interface\Buttons\WorldBuilder\Terrain_Ocean.dds</Button>
+            <Button>Art\Interface\Buttons\Ocean.dds</Button>
             <FootstepSounds>
                 <FootstepSound>
                     <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
@@ -2927,7 +2927,7 @@
             <iSeeThrough>0</iSeeThrough>
             <iBuildModifier>0</iBuildModifier>
             <iDefense>0</iDefense>
-            <Button>Art/Interface/Buttons/Peak.dds</Button>
+            <Button>Art\Interface\Buttons\Peak.dds</Button>
             <FootstepSounds>
                 <FootstepSound>
                     <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
@@ -3025,7 +3025,7 @@
             <iSeeThrough>0</iSeeThrough>
             <iBuildModifier>0</iBuildModifier>
             <iDefense>0</iDefense>
-            <Button>Art/Interface/Buttons/Hills.dds</Button>
+            <Button>Art\Interface\Buttons\Hills.dds</Button>
             <FootstepSounds>
                 <FootstepSound>
                     <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
