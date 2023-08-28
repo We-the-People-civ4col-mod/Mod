@@ -5012,7 +5012,7 @@
             <ArtDefineTag>ART_DEF_FEATURE_VD</ArtDefineTag>
             <YieldChanges/>
             <RiverYieldIncreases/>
-            <iMovement>3</iMovement>
+            <iMovement>2</iMovement>
             <iSeeThrough>1</iSeeThrough>
             <iDefense>15</iDefense>
             <iAppearance>500</iAppearance>
@@ -5320,7 +5320,7 @@
                 </YieldIntegerPair>
             </YieldChanges>
             <RiverYieldIncreases/>
-            <iMovement>3</iMovement>
+            <iMovement>2</iMovement>
             <iSeeThrough>0</iSeeThrough>
             <iDefense>-15</iDefense>
             <iAppearance>100</iAppearance>
@@ -5543,7 +5543,7 @@
                 </YieldIntegerPair>
             </YieldChanges>
             <RiverYieldIncreases/>
-            <iMovement>3</iMovement>
+            <iMovement>2</iMovement>
             <iSeeThrough>0</iSeeThrough>
             <iDefense>-15</iDefense>
             <iAppearance>100</iAppearance>
@@ -5661,7 +5661,7 @@
                 </YieldIntegerPair>
             </YieldChanges>
             <RiverYieldIncreases/>
-            <iMovement>3</iMovement>
+            <iMovement>2</iMovement>
             <iSeeThrough>0</iSeeThrough>
             <iDefense>-15</iDefense>
             <iAppearance>100</iAppearance>
@@ -5775,7 +5775,7 @@
                 </YieldIntegerPair>
             </YieldChanges>
             <RiverYieldIncreases/>
-            <iMovement>1</iMovement>
+            <iMovement>2</iMovement>
             <iSeeThrough>0</iSeeThrough>
             <iDefense>0</iDefense>
             <iAppearance>100</iAppearance>
