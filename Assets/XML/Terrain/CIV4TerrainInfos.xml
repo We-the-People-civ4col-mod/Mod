@@ -588,8 +588,8 @@
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_RICE</YieldType>
-                    <iValue>3</iValue>
+                    <YieldType>YIELD_ORE</YieldType>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_PIGS</YieldType>
@@ -640,10 +640,6 @@
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
                     <iValue>0</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_RICE</YieldType>
-                    <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_PEAT</YieldType>
@@ -1545,6 +1541,10 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
+                    <YieldType>YIELD_RICE</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_ORE</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
@@ -1592,6 +1592,10 @@
             <RiverYieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_RICE</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
