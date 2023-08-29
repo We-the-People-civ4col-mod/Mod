@@ -512,7 +512,7 @@
 		</SoundData>
 		<SoundData>
 			<SoundID>SONG_WTP_50</SoundID>
-			<Filename>Sounds/Soundtrack/Your_God_Is_Dead</Filename>
+			<Filename>Sounds/Soundtrack/Timeless_Tale</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
