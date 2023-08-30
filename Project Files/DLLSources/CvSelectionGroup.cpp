@@ -565,7 +565,7 @@ CvPlot* CvSelectionGroup::lastMissionPlot()
 		case MISSION_MOVE_TO:
 		case MISSION_ROUTE_TO:
 		case MISSION_ROUTE_TO_ROAD:
-		case MISSION_ROUTE_TO_PLASTERED_ROAD:
+		case MISSION_ROUTE_TO_COUNTRY_ROAD:
 			return GC.getMap().plotINLINE(pMissionNode->m_data.iData1, pMissionNode->m_data.iData2);
 			break;
 
@@ -668,9 +668,9 @@ bool CvSelectionGroup::canStartMission(int iMission, int iData1, int iData2, CvP
 				break;
 			}
 
-		case MISSION_ROUTE_TO_PLASTERED_ROAD:
+		case MISSION_ROUTE_TO_COUNTRY_ROAD:
 			{
-				if (!(pPlot->at(iData1, iData2)) || canBuildRoute(pPlot, ROUTE_PLASTERED_ROAD))
+				if (!(pPlot->at(iData1, iData2)) || canBuildRoute(pPlot, ROUTE_COUNTRY_ROAD))
 				{
 					return true;
 				}
@@ -847,7 +847,7 @@ void CvSelectionGroup::startMission()
 		case MISSION_MOVE_TO:
 		case MISSION_ROUTE_TO:
 		case MISSION_ROUTE_TO_ROAD:
-		case MISSION_ROUTE_TO_PLASTERED_ROAD:
+		case MISSION_ROUTE_TO_COUNTRY_ROAD:
 		case MISSION_MOVE_TO_UNIT:
 			break;
 
@@ -916,7 +916,7 @@ void CvSelectionGroup::startMission()
 				case MISSION_MOVE_TO:
 				case MISSION_ROUTE_TO:
 				case MISSION_ROUTE_TO_ROAD:
-				case MISSION_ROUTE_TO_PLASTERED_ROAD:
+				case MISSION_ROUTE_TO_COUNTRY_ROAD:
 				case MISSION_MOVE_TO_UNIT:
 				case MISSION_SKIP:
 				case MISSION_SLEEP:
@@ -1168,8 +1168,8 @@ void CvSelectionGroup::continueMission(int iSteps)
 						}
 						break;
 
-					case MISSION_ROUTE_TO_PLASTERED_ROAD:
-						if (groupRouteTo(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2, headMissionQueueNode()->m_data.iFlags, ROUTE_PLASTERED_ROAD))
+					case MISSION_ROUTE_TO_COUNTRY_ROAD:
+						if (groupRouteTo(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2, headMissionQueueNode()->m_data.iFlags, ROUTE_COUNTRY_ROAD))
 						{
 							bAction = true;
 						}
@@ -1284,10 +1284,10 @@ void CvSelectionGroup::continueMission(int iSteps)
 				}
 				break;
 
-			case MISSION_ROUTE_TO_PLASTERED_ROAD:
+			case MISSION_ROUTE_TO_COUNTRY_ROAD:
 				if (at(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2))
 				{
-					if (!canBuildRoute(plot(), ROUTE_PLASTERED_ROAD))
+					if (!canBuildRoute(plot(), ROUTE_COUNTRY_ROAD))
 					{
 						bDone = true;
 					}
@@ -1373,7 +1373,7 @@ void CvSelectionGroup::continueMission(int iSteps)
 						if ((headMissionQueueNode()->m_data.eMissionType == MISSION_MOVE_TO) ||
 							(headMissionQueueNode()->m_data.eMissionType == MISSION_ROUTE_TO) ||
 							(headMissionQueueNode()->m_data.eMissionType == MISSION_ROUTE_TO_ROAD) ||
-							(headMissionQueueNode()->m_data.eMissionType == MISSION_ROUTE_TO_PLASTERED_ROAD) ||
+							(headMissionQueueNode()->m_data.eMissionType == MISSION_ROUTE_TO_COUNTRY_ROAD) ||
 							(headMissionQueueNode()->m_data.eMissionType == MISSION_MOVE_TO_UNIT))
 						{
 							gDLL->getInterfaceIFace()->changeCycleSelectionCounter((GET_PLAYER(getOwnerINLINE()).isOption(PLAYEROPTION_QUICK_MOVES)) ? 1 : 2);
@@ -1623,10 +1623,10 @@ bool CvSelectionGroup::canDoInterfaceMode(InterfaceModeTypes eInterfaceMode)
 			}
 			break;
 
-		case INTERFACEMODE_ROUTE_TO_PLASTERED_ROAD:
+		case INTERFACEMODE_ROUTE_TO_COUNTRY_ROAD:
 			if (pLoopUnit->workRate(true) > 0)
 			{
-				if (pLoopUnit->canBuildRoute(ROUTE_PLASTERED_ROAD))
+				if (pLoopUnit->canBuildRoute(ROUTE_COUNTRY_ROAD))
 				{
 					return true;
 				}
@@ -3352,7 +3352,7 @@ void CvSelectionGroup::updateMissionTimer(int iSteps)
 		if ((headMissionQueueNode()->m_data.eMissionType == MISSION_MOVE_TO) ||
 				(headMissionQueueNode()->m_data.eMissionType == MISSION_ROUTE_TO) ||
 				(headMissionQueueNode()->m_data.eMissionType == MISSION_ROUTE_TO_ROAD) ||
-				(headMissionQueueNode()->m_data.eMissionType == MISSION_ROUTE_TO_PLASTERED_ROAD) ||
+				(headMissionQueueNode()->m_data.eMissionType == MISSION_ROUTE_TO_COUNTRY_ROAD) ||
 				(headMissionQueueNode()->m_data.eMissionType == MISSION_MOVE_TO_UNIT))
 		{
 			if (headMissionQueueNode()->m_data.eMissionType == MISSION_MOVE_TO_UNIT)

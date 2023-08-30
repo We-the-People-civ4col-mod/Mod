@@ -207,7 +207,7 @@
             <MaxStartEra>NONE</MaxStartEra>
             <ProductionTraits/>
             <FreePromotion>NONE</FreePromotion>
-            <RouteTypeCreated>ROUTE_PLASTERED_ROAD</RouteTypeCreated>
+            <RouteTypeCreated>ROUTE_COUNTRY_ROAD</RouteTypeCreated>
             <bGraphicalOnly>0</bGraphicalOnly>
             <bWorksWater>0</bWorksWater>
             <bWater>0</bWater>

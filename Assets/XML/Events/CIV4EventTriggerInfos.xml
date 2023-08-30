@@ -2437,7 +2437,7 @@
 			<ImprovementsRequired/>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_PLASTERED_ROAD</RouteType>
+				<RouteType>ROUTE_COUNTRY_ROAD</RouteType>
 				<RouteType>ROUTE_RAILROAD</RouteType>
 			</RoutesRequired>
 			<Events>

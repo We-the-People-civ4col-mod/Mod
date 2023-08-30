@@ -2306,7 +2306,7 @@ void getMissionTypeString(CvWString& szString, MissionTypes eMissionType)
 	case MISSION_MOVE_TO: szString = L"MISSION_MOVE_TO"; break;
 	case MISSION_ROUTE_TO: szString = L"MISSION_ROUTE_TO"; break;
 	case MISSION_ROUTE_TO_ROAD: szString = L"MISSION_ROUTE_TO_ROAD"; break;
-	case MISSION_ROUTE_TO_PLASTERED_ROAD: szString = L"MISSION_ROUTE_TO_PLASTERED_ROAD"; break;
+	case MISSION_ROUTE_TO_COUNTRY_ROAD: szString = L"MISSION_ROUTE_TO_COUNTRY_ROAD"; break;
 	case MISSION_MOVE_TO_UNIT: szString = L"MISSION_MOVE_TO_UNIT"; break;
 	case MISSION_SKIP: szString = L"MISSION_SKIP"; break;
 	case MISSION_SLEEP: szString = L"MISSION_SLEEP"; break;

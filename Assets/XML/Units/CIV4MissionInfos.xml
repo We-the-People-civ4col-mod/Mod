@@ -431,9 +431,9 @@
             <bSound>1</bSound>
         </MissionInfo>
         <MissionInfo>
-            <Type>MISSION_ROUTE_TO_PLASTERED_ROAD</Type>
-            <Description>TXT_KEY_MISSION_ROUTE_TO_PLASTERED_ROAD</Description>
-            <Help>TXT_KEY_MISSION_ROUTE_TO_PLASTERED_ROAD_HELP</Help>
+            <Type>MISSION_ROUTE_TO_COUNTRY_ROAD</Type>
+            <Description>TXT_KEY_MISSION_ROUTE_TO_COUNTRY_ROAD</Description>
+            <Help>TXT_KEY_MISSION_ROUTE_TO_COUNTRY_ROAD_HELP</Help>
             <Waypoint>EFFECT_FOOTSTEP_ON</Waypoint>
             <iTime>4</iTime>
             <bTarget>1</bTarget>

@@ -119,12 +119,12 @@
         <German>Befehlen Sie der Einheit, einfache Straßen bis zum gewählten Geländefeld zu bauen.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_PLASTERED_ROAD</Tag>
+        <Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_COUNTRY_ROAD</Tag>
         <English>Route To Mode (country road)</English>
         <German>Straße nach-Modus (Landstraße)</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_PLASTERED_ROAD_HELP</Tag>
+        <Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_COUNTRY_ROAD_HELP</Tag>
         <English>Order the unit to build country roads to the selected tile</English>
         <German>Befehlen Sie der Einheit, Landstraßen bis zum gewählten Geländefeld zu bauen.</German>
     </TEXT>

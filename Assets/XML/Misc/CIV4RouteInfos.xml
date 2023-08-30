@@ -18,8 +18,8 @@
             <Button>Art/Interface/Buttons/Builds/BuildRoad.dds</Button>
         </RouteInfo>
         <RouteInfo>
-            <Type>ROUTE_PLASTERED_ROAD</Type>
-            <Description>TXT_KEY_ROUTE_PLASTERED_ROAD</Description>
+            <Type>ROUTE_COUNTRY_ROAD</Type>
+            <Description>TXT_KEY_ROUTE_COUNTRY_ROAD</Description>
             <iValue>2</iValue>
             <iAdvancedStartCost>20</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>

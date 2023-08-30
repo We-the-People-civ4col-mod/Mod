@@ -8833,8 +8833,8 @@ BuildTypes CvUnit::getBuildType() const
 		case MISSION_ROUTE_TO_ROAD:
 			return pGroup->getBestBuildRouteBuild(plot(), ROUTE_ROAD);
 
-		case MISSION_ROUTE_TO_PLASTERED_ROAD:
-			return pGroup->getBestBuildRouteBuild(plot(), ROUTE_PLASTERED_ROAD);
+		case MISSION_ROUTE_TO_COUNTRY_ROAD:
+			return pGroup->getBestBuildRouteBuild(plot(), ROUTE_COUNTRY_ROAD);
 
 		case MISSION_MOVE_TO_UNIT:
 		case MISSION_SKIP:

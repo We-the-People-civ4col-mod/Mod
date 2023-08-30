@@ -275,14 +275,14 @@
         <Russian>Этот приказ заставляет первопроходца построить проселочную дорогу к выбранной точке на карте. Первопроходец будет следовать кратчайшим путем к локации. Он станет активным для других приказов после выполнения текущего задания.</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_MISSION_ROUTE_TO_PLASTERED_ROAD</Tag>
-        <English>Route to (plastered road)</English>
-        <Russian>Построить вымощенную камнем дорогу к выбранной точке</Russian>
+        <Tag>TXT_KEY_MISSION_ROUTE_TO_COUNTRY_ROAD</Tag>
+        <English>Route to (country road)</English>
+        <German>Straße nach-Modus (country Landstraße)</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_MISSION_ROUTE_TO_PLASTERED_ROAD_HELP</Tag>
-        <English>This order causes the pioneer to build a plastered road to the location selected. The pioneer will follow the shortest path to the location. The pioneer wakes when it has completed the assignment.</English>
-        <Russian>Этот приказ заставляет первопроходца построить вымощенную камнем дорогу к выбранной точке на карте. Первопроходец будет следовать кратчайшим путем к локации. Он станет активным для других приказов после выполнения текущего задания.</Russian>
+        <Tag>TXT_KEY_MISSION_ROUTE_TO_COUNTRY_ROAD_HELP</Tag>
+        <English>This order causes the pioneer to build a country road to the location selected. The pioneer will follow the shortest path to the location. The pioneer wakes when it has completed the assignment.</English>
+		<German>Durch diesen Befehl wird der Pionier eine Landstraße zum angegebenen Ziel bauen. Er wird dabei den kürzesten Pfad nehmen. Wenn der Befehl ausgeführt ist wird er sich für neue Befehle melden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_SENTRY</Tag>
