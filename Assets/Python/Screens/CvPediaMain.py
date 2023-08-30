@@ -614,7 +614,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 		list = self.getSortedList( gc.getNumFeatureInfos(), gc.getFeatureInfo )
 
 		ButtonSize = 24
-		nColumns = 3
+		nColumns = 2
 		nEntries = len(list)
 		nRows = nEntries // nColumns
 		if (nEntries % nColumns):
