@@ -29,15 +29,15 @@
             <Button>,Art/colonization_atlas_buildings.dds,5,12</Button>
         </RouteInfo>
         <RouteInfo>
-            <Type>ROUTE_RAILROAD</Type>
-            <Description>TXT_KEY_ROUTE_RAILROAD</Description>
+            <Type>ROUTE_PLASTERED_ROAD</Type>
+            <Description>TXT_KEY_ROUTE_PLASTERED_ROAD</Description>
             <iValue>3</iValue>
             <iAdvancedStartCost>30</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iMovement>15</iMovement>
             <iFlatMovement>15</iFlatMovement>
             <Yields/>
-            <Button>Art/Interface/Buttons/Builds/Railroad.dds</Button>
+            <Button>Art/Interface/Buttons/Builds/Plastered_Road.dds</Button>
         </RouteInfo>
         <RouteInfo>
             <Type>ROUTE_RAFT_STATION</Type>
@@ -49,7 +49,7 @@
             <iMovement>15</iMovement>
             <iFlatMovement>15</iFlatMovement>
             <Yields/>
-            <Button>Art/Interface/Buttons/Builds/Railroad.dds</Button>
+            <Button>Art/Interface/Buttons/Builds/Plastered_Road.dds</Button>
         </RouteInfo>
     </RouteInfos>
 </Civ4RouteInfos>

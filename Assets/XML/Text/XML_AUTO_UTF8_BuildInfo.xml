@@ -255,14 +255,14 @@
         <English>????</English>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILD_RAILROAD</Tag>
+        <Tag>TXT_KEY_BUILD_PLASTERED_ROAD</Tag>
         <English>Build plastered country roads</English>
         <French>Construire une route pavée</French>
         <German>gepflasterte Landstraße bauen</German>
         <Russian>Построить вымощенную камнем дорогу</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILD_RAILROAD_HELP</Tag>
+        <Tag>TXT_KEY_BUILD_PLASTERED_ROAD_HELP</Tag>
         <English>????</English>
     </TEXT>
     <TEXT>

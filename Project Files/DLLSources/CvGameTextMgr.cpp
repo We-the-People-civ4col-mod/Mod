@@ -831,7 +831,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 			if (pUnit->getDomainType() == DOMAIN_LAND && pUnit->cargoSpace() == 6)
 			{
 				szString.append(NEWLINE);
-				szString.append(gDLL->getText("TXT_KEY_UNIT_TRAVEL_RAILROAD_ONLY"));
+				szString.append(gDLL->getText("TXT_KEY_UNIT_TRAVEL_PLASTERED_ROAD_ONLY"));
 			}
 			// R&R, ray, END Logic for Trains
 
@@ -5844,7 +5844,7 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 	if (kUnitInfo.getDomainType() == DOMAIN_LAND && kUnitInfo.getCargoSpace()== 6)
 	{
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_TRAVEL_RAILROAD_ONLY"));
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_TRAVEL_PLASTERED_ROAD_ONLY"));
 	}
 	// R&R, ray, END Logic for Trains
 

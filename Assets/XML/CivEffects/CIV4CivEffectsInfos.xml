@@ -135,7 +135,7 @@
 			</AllowImprovements>
 			<AllowRoutes>
 				<AllowRoute>
-					<eRoute>ROUTE_RAILROAD</eRoute>
+					<eRoute>ROUTE_PLASTERED_ROAD</eRoute>
 					<iAllow>-50</iAllow>
 				</AllowRoute>
 			</AllowRoutes>

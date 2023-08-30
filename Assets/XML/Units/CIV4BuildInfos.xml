@@ -49,9 +49,9 @@
             <Button>Art\Interface\Game Hud\Actions\build_country_road_high_res.dds</Button>
         </BuildInfo>
         <BuildInfo>
-            <Type>BUILD_RAILROAD</Type>
-            <Description>TXT_KEY_BUILD_RAILROAD</Description>
-            <Help>TXT_KEY_BUILD_RAILROAD_HELP</Help>
+            <Type>BUILD_PLASTERED_ROAD</Type>
+            <Description>TXT_KEY_BUILD_PLASTERED_ROAD</Description>
+            <Help>TXT_KEY_BUILD_PLASTERED_ROAD_HELP</Help>
             <iTime>500</iTime>
             <iCost>40</iCost>
             <bKill>0</bKill>
@@ -59,7 +59,7 @@
             <PrereqTerrainType>NONE</PrereqTerrainType>
             <ResultTerrainType>NONE</ResultTerrainType>
             <ResultFeatureType>NONE</ResultFeatureType>
-            <RouteType>ROUTE_RAILROAD</RouteType>
+            <RouteType>ROUTE_PLASTERED_ROAD</RouteType>
             <EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
             <FeatureStructs/>
             <HotKey>KB_R</HotKey>
@@ -67,7 +67,7 @@
             <bShiftDown>0</bShiftDown>
             <bCtrlDown>0</bCtrlDown>
             <iHotKeyPriority>0</iHotKeyPriority>
-            <Button>Art\Interface\Game Hud\Actions\build_railroad_high_res.dds</Button>
+            <Button>Art\Interface\Game Hud\Actions\build_plastered_road_high_res.dds</Button>
         </BuildInfo>
         <BuildInfo>
             <Type>BUILD_REMOVE_ROAD</Type>

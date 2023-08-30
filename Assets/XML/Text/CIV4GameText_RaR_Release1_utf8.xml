@@ -1097,7 +1097,7 @@
         <German>Die Einheit wird auf Ladefläche des Fuhrwerks verladen</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_TRAVEL_RAILROAD_ONLY</Tag>
+        <Tag>TXT_KEY_UNIT_TRAVEL_PLASTERED_ROAD_ONLY</Tag>
         <English>[ICON_BULLET]Requires [COLOR_WARNING_TEXT]plastered country roads[COLOR_REVERT] to travel</English>
         <French>[ICON_BULLET][COLOR_WARNING_TEXT]Nécessite une route pavée[COLOR_REVERT] pour voyager</French>
         <German>[ICON_BULLET]Kann nur auf [COLOR_WARNING_TEXT]gepflasterten Landstraßen[COLOR_REVERT] fahren</German>

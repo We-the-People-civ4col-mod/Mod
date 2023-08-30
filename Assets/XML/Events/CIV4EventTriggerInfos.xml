@@ -2438,7 +2438,7 @@
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
 				<RouteType>ROUTE_COUNTRY_ROAD</RouteType>
-				<RouteType>ROUTE_RAILROAD</RouteType>
+				<RouteType>ROUTE_PLASTERED_ROAD</RouteType>
 			</RoutesRequired>
 			<Events>
 				<Event>EVENT_HIGHWAYMAN_ATTACK_1</Event>

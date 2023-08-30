@@ -99,15 +99,15 @@ public:
 	int getArea() const;
 	CvArea* area() const;
 	DomainTypes getDomainType() const;
-  bool canBuildRoute(CvPlot* pPlot, RouteTypes ePreferredRoute = NO_ROUTE) const;
-  BuildTypes getBestBuildRouteBuild(CvPlot *pPlot, RouteTypes ePreferredRoute) const;
+	bool canBuildRoute(CvPlot* pPlot, RouteTypes ePreferredRoute = NO_ROUTE) const;
+	BuildTypes getBestBuildRouteBuild(CvPlot *pPlot, RouteTypes ePreferredRoute) const;
 	RouteTypes getBestBuildRoute(CvPlot* pPlot, BuildTypes* peBestBuild = NULL, RouteTypes ePreferredRoute = NO_ROUTE) const;
 
 	bool groupDeclareWar(CvPlot* pPlot, bool bForce = false);
 	bool groupAttack(int iX, int iY, int iFlags, bool& bFailedAlreadyFighting);
 	void groupMove(CvPlot* pPlot, bool bCombat, CvUnit* pCombatUnit = NULL, bool bEndMove = false);
 	bool groupPathTo(int iX, int iY, int iFlags);
-	bool groupRouteTo(int iX, int iY, int iFlags, RouteTypes ePreferredRoute = ROUTE_RAILROAD);
+	bool groupRouteTo(int iX, int iY, int iFlags, RouteTypes ePreferredRoute = ROUTE_PLASTERED_ROAD);
 	bool groupBuild(BuildTypes eBuild);
 	void setTransportUnit(CvUnit* pTransportUnit);
 	bool isAmphibPlot(const CvPlot* pPlot) const;
