@@ -258,7 +258,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 					list.remove(item)
 
 		ButtonSize = 24
-		nColumns = 2
+		nColumns = 4
 		nEntries = len(list)
 		nRows = nEntries // nColumns
 		if (nEntries % nColumns):
@@ -290,7 +290,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 		list = self.getSortedList( gc.getNumProfessionInfos(), gc.getProfessionInfo )
 
 		ButtonSize = 24
-		nColumns = 2
+		nColumns = 4
 		nEntries = len(list)
 		nEntries -= 1	# TAC - Hide Whaling Profession - koma13
 		nRows = nEntries // nColumns
@@ -327,7 +327,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 					list.remove(item)
 
 		ButtonSize = 24
-		nColumns = 2
+		nColumns = 4
 		nEntries = len(list)
 		nRows = nEntries // nColumns
 		if (nEntries % nColumns):
@@ -356,7 +356,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 		list = self.getSortedList( gc.getNumBonusInfos(), gc.getBonusInfo )
 
 		ButtonSize = 24
-		nColumns = 2
+		nColumns = 3
 		nEntries = len(list)
 		nRows = nEntries // nColumns
 		if (nEntries % nColumns):
@@ -385,7 +385,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 		list = self.getSortedList( gc.getNumImprovementInfos(), gc.getImprovementInfo )
 
 		ButtonSize = 24
-		nColumns = 1
+		nColumns = 2
 		nEntries = len(list)
 		nRows = nEntries // nColumns
 		if (nEntries % nColumns):
@@ -414,7 +414,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 		list = self.getSortedList( gc.getNumPromotionInfos(), gc.getPromotionInfo )
 
 		ButtonSize = 24
-		nColumns = 2
+		nColumns = 3
 		nEntries = len(list)
 		nRows = nEntries // nColumns
 		if (nEntries % nColumns):
@@ -585,7 +585,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 		list = self.getSortedList( gc.getNumYieldInfos(), gc.getYieldInfo )
 
 		ButtonSize = 24
-		nColumns = 1
+		nColumns = 3
 		nEntries = len(list)
 		nRows = nEntries // nColumns
 		if (nEntries % nColumns):
@@ -614,7 +614,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 		list = self.getSortedList( gc.getNumFeatureInfos(), gc.getFeatureInfo )
 
 		ButtonSize = 24
-		nColumns = 1
+		nColumns = 3
 		nEntries = len(list)
 		nRows = nEntries // nColumns
 		if (nEntries % nColumns):
@@ -643,7 +643,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 		list = self.getSortedList( gc.getNumFatherInfos(), gc.getFatherInfo )
 
 		ButtonSize = 24
-		nColumns = 2
+		nColumns = 4
 		nEntries = len(list)
 		nRows = nEntries // nColumns
 		if (nEntries % nColumns):
