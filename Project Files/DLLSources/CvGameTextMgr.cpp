@@ -7329,6 +7329,36 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 	}
 	if (bCivilopediaText)
 	{
+		//WTP, ray, show Plot Yield Requirmenet for Improvement - START
+		bool bRequiresTerrainYields = false;
+		bool bFirstRequiredYield = true;
+		CvWString szRequiredYieldsIconTempBuffer = "";
+		for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
+		{
+			if (info.getPrereqNatureYield(iYield) > 0)
+			{
+				if (bFirstRequiredYield)
+				{
+					szRequiredYieldsIconTempBuffer.append(gDLL->getText("TXT_KEY_REQUIRED_TERRAIN_YIELDS_ICON_FIRST_BUFFER", GC.getYieldInfo((YieldTypes)iYield).getChar()));
+					bFirstRequiredYield = false;
+				}
+				// add a comma
+				else
+				{
+					szRequiredYieldsIconTempBuffer.append(gDLL->getText("TXT_KEY_REQUIRED_TERRAIN_YIELDS_ICON_BUFFER", GC.getYieldInfo((YieldTypes)iYield).getChar()));
+				}
+				// we have prerequired Terrain Yields
+				bRequiresTerrainYields = true;
+			}
+		}
+		
+		if (bRequiresTerrainYields)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_REQUIRED_TERRAIN_YIELDS_TEXT") + szRequiredYieldsIconTempBuffer);
+		}
+		//WTP, ray, show Plot Yield Requirmenet for Improvement - END
+
 		if (info.isWater())
 		{
 			//WTP, ray, Large Rivers - START

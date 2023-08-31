@@ -321,6 +321,21 @@
         <Russian>[ICON_BULLET]будет принадлежать[SPACE]</Russian>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_REQUIRED_TERRAIN_YIELDS_ICON_FIRST_BUFFER</Tag>
+        <English>%F1_yield</English>
+        <German>%F1_yield</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_REQUIRED_TERRAIN_YIELDS_ICON_BUFFER</Tag>
+        <English>,%F1_yield</English>
+        <German>,%F1_yield</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_REQUIRED_TERRAIN_YIELDS_TEXT</Tag>
+        <English>[ICON_BULLET]Required Terrain Yields:</English>
+        <German>[ICON_BULLET]Benötigte Terrain Yields:</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_BUILD_ONLY_WATER</Tag>
         <English>[ICON_BULLET]Built only in water</English>
         <French>[ICON_BULLET]Uniquement dans l'eau</French>
