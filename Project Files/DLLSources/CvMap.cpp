@@ -1284,15 +1284,23 @@ void CvMap::updateWaterPlotTerrainTypes()
 	EnumMap<TerrainTypes, bool> em;
 	em.set(TERRAIN_COAST, true);
 	em.set(TERRAIN_OCEAN, true);
-	em.set(TERRAIN_SHALLOW_COAST, true); //WTP, ray considering shallow Coasts as well for being transformed to lakes
+	em.set(TERRAIN_SHALLOW_COAST, true);
 	em.set(TERRAIN_LAKE, true);
 	em.set(TERRAIN_ICE_LAKE, true);
 
 	PlotRegionMap regions(em);
 
-	// reuse the now unused EnumMap to detect snow in regions
-	em.reset();
-	em.set(TERRAIN_SNOW, true);
+	// EnumMap to detect snow in regions, for potential Ice Lake
+	EnumMap<TerrainTypes, bool> emIce;
+	emIce.set(TERRAIN_SNOW, true);
+
+	// WTP, ray we check there is no hot Terrain adjacent to Ice Lake
+	EnumMap<TerrainTypes, bool> emHot;
+	emHot.set(TERRAIN_PLAINS, true);
+	emHot.set(TERRAIN_DESERT, true);
+	emHot.set(TERRAIN_SHRUBLAND, true);
+	emHot.set(TERRAIN_SAVANNAH, true);
+	emHot.set(TERRAIN_MARSH, true);
 
 	const int iNumRegions = regions.getNumRegions();
 	for (int iRegion = 0; iRegion < iNumRegions; ++iRegion)
@@ -1302,17 +1310,26 @@ void CvMap::updateWaterPlotTerrainTypes()
 
 		bool bLake = !kRegion.isEurope() && kRegion.getNumPlots() < 50;
 		bool bIceLake = false;
+		bool bTooHotForIceLake = false;
+
+		// possible checks for Ice Lake
 		if (bLake)
 		{
-			// em now holds the terrains, which triggers ice lakes
-			bIceLake = kRegion.isTerrainAdjacent(em);
+			// emIce now holds the terrains, which may triggers ice lakes
+			bIceLake = kRegion.isTerrainAdjacent(emIce);
+			// emHot now holds the terrains, which my still prevent ice lakes
+			// only check if Ice lake possible to not waste performance
+			if (bIceLake)
+			{
+				bTooHotForIceLake = kRegion.isTerrainAdjacent(emHot);
+			}
 		}
 
 		for (int iPlot = 0; iPlot < iNumPlots; ++iPlot)
 		{
 			if (bLake)
 			{
-				const TerrainTypes eLakeTerrain = bIceLake ? TERRAIN_ICE_LAKE : TERRAIN_LAKE;
+				const TerrainTypes eLakeTerrain = (bIceLake && !bTooHotForIceLake) ? TERRAIN_ICE_LAKE : TERRAIN_LAKE;
 				kRegion.getPlot(iPlot)->setTerrainType(eLakeTerrain);
 			}
 			else // ocean
