@@ -1315,10 +1315,10 @@ void CvMap::updateWaterPlotTerrainTypes()
 		// possible checks for Ice Lake
 		if (bLake)
 		{
-			// emIce now holds the terrains, which may triggers ice lakes
+			// emIce now holds the terrains, which may trigger ice lakes
 			bIceLake = kRegion.isTerrainAdjacent(emIce);
-			// emHot now holds the terrains, which my still prevent ice lakes
-			// only check if Ice lake possible to not waste performance
+			// emHot now holds the terrains, which may still prevent ice lakes
+			// only check if Ice lake is possible - thus not wasting performance
 			if (bIceLake)
 			{
 				bTooHotForIceLake = kRegion.isTerrainAdjacent(emHot);
