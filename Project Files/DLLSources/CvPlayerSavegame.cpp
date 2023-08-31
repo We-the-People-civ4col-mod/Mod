@@ -856,7 +856,7 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_ImprovementCount: reader.Read(m_em_iImprovementCount); break;
 		case PlayerSave_FreeBuildingCount: reader.Read(m_em_iFreeBuildingCount); break;
 		case PlayerSave_UnitClassCount: reader.Read(m_em_iUnitClassCount); break;
-		case PlayerSave_UnitClassMaking: reader.Read(m_em_iUnitClassMaking); break;
+		case PlayerSave_UnitClassMaking: reader.Read(m_em_iUnitClassMaking); break; // recalculated later. Only kept for savegame compatibility
 		case PlayerSave_UnitClassImmigrated: reader.Read(m_em_iUnitClassImmigrated); break;
 		case PlayerSave_UnitMoveChange: reader.Read(m_em_iUnitMoveChange); break;
 		case PlayerSave_UnitStrengthModifier: reader.Read(m_em_iUnitStrengthModifier); break;
@@ -1081,7 +1081,7 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_ImprovementCount, m_em_iImprovementCount);
 	writer.Write(PlayerSave_FreeBuildingCount, m_em_iFreeBuildingCount);
 	writer.Write(PlayerSave_UnitClassCount, m_em_iUnitClassCount);
-	writer.Write(PlayerSave_UnitClassMaking, m_em_iUnitClassMaking);
+	// no save m_em_iUnitClassMaking
 	writer.Write(PlayerSave_UnitClassImmigrated, m_em_iUnitClassImmigrated);
 	writer.Write(PlayerSave_UnitMoveChange, m_em_iUnitMoveChange);
 	writer.Write(PlayerSave_UnitStrengthModifier, m_em_iUnitStrengthModifier);

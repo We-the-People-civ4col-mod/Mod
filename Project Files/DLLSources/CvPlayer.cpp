@@ -24711,6 +24711,27 @@ void CvPlayer::postLoadFixes()
 				m_validCityJobProfessions.push_back(eProfession);
 			}
 		}
+
+		m_em_iUnitClassMaking.reset();
+
+		int iLoop;
+		for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+		{
+			const int iLength = pLoopCity->getOrderQueueLength();
+			for (int i = 0; i < iLength; ++i)
+			{
+				OrderData *order = pLoopCity->getOrderFromQueue(i);
+				if (order->getType() == ORDER_TRAIN)
+				{
+					const CvUnitInfo& kUnitInfo = GC.getUnitInfo(order->unit());
+					const UnitClassTypes eUnitType = kUnitInfo.getUnitClassType();
+					if (eUnitType != NO_UNITCLASS)
+					{
+						m_em_iUnitClassMaking.add(eUnitType, 1);
+					}
+				}
+			}
+		}
 	}
 	recalculatePlayerOppressometer();
 }
