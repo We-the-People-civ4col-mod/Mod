@@ -33,6 +33,7 @@ void CyPlayerPythonInterface3(python::class_<CyPlayer>& x)
 		.def("canDoCivics", &CyPlayer::canDoCivics, "bool (int (CivicTypes) eCivic)")
 		.def("greatGeneralThreshold", &CyPlayer::greatGeneralThreshold, "int ()")
 		.def("greatAdmiralThreshold", &CyPlayer::greatAdmiralThreshold, "int ()")
+		.def("getImmigrationThresholdModifierFromUnitsWaitingOnDock", &CyPlayer::getImmigrationThresholdModifierFromUnitsWaitingOnDock, "int ()") // WTP, ray, increase threshold if more than X units waiting on the docks - START
 		.def("immigrationThreshold", &CyPlayer::immigrationThreshold, "int ()")
 		.def("revolutionEuropeUnitThreshold", &CyPlayer::revolutionEuropeUnitThreshold, "int ()")
 		.def("getStartingPlot", &CyPlayer::getStartingPlot, python::return_value_policy<python::manage_new_object>(), "CyPlot* ()")

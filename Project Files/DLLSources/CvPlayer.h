@@ -328,6 +328,7 @@ public:
 	int greatGeneralThreshold() const;
 	int greatAdmiralThreshold() const; // R&R, ray, Great Admirals
 	int immigrationThreshold() const;
+	int getImmigrationThresholdModifierFromUnitsWaitingOnDock() const; // WTP, ray, increase threshold if more than X units waiting on the docks - START
 	int revolutionEuropeUnitThreshold() const;
 	CvPlot* getStartingPlot() const;
 	void setStartingPlot(CvPlot* pNewValue, bool bUpdateStartDist);

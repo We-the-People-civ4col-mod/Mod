@@ -718,6 +718,10 @@
 		<iDefineIntVal>10</iDefineIntVal>
 	</Define>
 	<Define>
+		<DefineName>MIN_UNITS_ON_DOCK_BEFORE_THRESHOLD_INCREASED</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>IMMIGRATION_THRESHOLD_MODIFIER_UNITS_ON_DOCK</DefineName>
 		<iDefineIntVal>10</iDefineIntVal>
 	</Define>

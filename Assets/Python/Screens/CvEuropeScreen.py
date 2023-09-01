@@ -911,7 +911,12 @@ class CvEuropeScreen:
 				return localText.getText("TXT_KEY_ECON_GOLD_RESERVE" , ())
 			elif iData1 == self.HELP_CROSS_RATE:
 				#  WTP, ray, Happiness
-				return localText.getText("TXT_KEY_YIELD_RATE_CROSSES_HAPPINESS_UNHAPPINESS", (player.getYieldRate(YieldTypes.YIELD_CROSSES), gc.getYieldInfo(YieldTypes.YIELD_CROSSES).getChar(), player.getHappinessRate(), gc.getYieldInfo(YieldTypes.YIELD_HAPPINESS).getChar(), player.getUnHappinessRate(), gc.getYieldInfo(YieldTypes.YIELD_UNHAPPINESS).getChar(), player.getLawRate(), gc.getYieldInfo(YieldTypes.YIELD_LAW).getChar(), player.getCrimeRate(), gc.getYieldInfo(YieldTypes.YIELD_CRIME).getChar()))
+				# WTP, ray, increase threshold if more than X units waiting on the docks - START
+				textForCrossRateHelp = localText.getText("TXT_KEY_YIELD_RATE_CROSSES_HAPPINESS_UNHAPPINESS", (player.getYieldRate(YieldTypes.YIELD_CROSSES), gc.getYieldInfo(YieldTypes.YIELD_CROSSES).getChar(), player.getHappinessRate(), gc.getYieldInfo(YieldTypes.YIELD_HAPPINESS).getChar(), player.getUnHappinessRate(), gc.getYieldInfo(YieldTypes.YIELD_UNHAPPINESS).getChar(), player.getLawRate(), gc.getYieldInfo(YieldTypes.YIELD_LAW).getChar(), player.getCrimeRate(), gc.getYieldInfo(YieldTypes.YIELD_CRIME).getChar()))
+				iImmigrationThresholdModifierFromUnitsWaitingOnDock = player.getImmigrationThresholdModifierFromUnitsWaitingOnDock()
+				if (iImmigrationThresholdModifierFromUnitsWaitingOnDock > 0):
+					textForCrossRateHelp = textForCrossRateHelp + localText.getText("TXT_KEY_HIGHER_IMMIGRATION_THRESHOLD_DUE_TO_UNITS_ON_DOCK", (iImmigrationThresholdModifierFromUnitsWaitingOnDock, ))
+				return textForCrossRateHelp
 			elif iData1 == self.TRAVEL_INFO or iData1 == self.RECALL:
 				return self.cargoMessage(iData2)
 			elif iData1 == self.TRADE_LOG:

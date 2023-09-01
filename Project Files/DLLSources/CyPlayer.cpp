@@ -293,6 +293,14 @@ int CyPlayer::greatAdmiralThreshold()
 	return m_pPlayer ? m_pPlayer->greatAdmiralThreshold() : -1;
 }
 // R&R, ray, Great Admirals - END
+
+// WTP, ray, increase threshold if more than X units waiting on the docks - START
+int CyPlayer::getImmigrationThresholdModifierFromUnitsWaitingOnDock()
+{
+	return m_pPlayer ? m_pPlayer->getImmigrationThresholdModifierFromUnitsWaitingOnDock() : -1;
+}
+// WTP, ray, increase threshold if more than X units waiting on the docks - END
+
 int CyPlayer::immigrationThreshold()
 {
 	return m_pPlayer ? m_pPlayer->immigrationThreshold() : -1;

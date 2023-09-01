@@ -135,6 +135,11 @@
         <Russian>%d1%F2 за ход[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]от %F4 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]от %F6 [NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d7%[COLOR_REVERT][SPACE][TAB][SPACE]от %F8 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d9%[SPACE][TAB][SPACE][COLOR_REVERT]от %F10</Russian>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_HIGHER_IMMIGRATION_THRESHOLD_DUE_TO_UNITS_ON_DOCK</Tag>
+        <English>[NEWLINE][COLOR_NEGATIVE_TEXT]Immigration threshold increased by %d1%% [NEWLINE]due to many immigrants waiting on dock[COLOR_REVERT]</English>
+        <German>[NEWLINE][COLOR_NEGATIVE_TEXT]Grenzwert für Auswanderung um %d1%% erhöht [NEWLINE]da viele Auswanderer warten bereits am Dock[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_LAW_FROM_DEFENDERS</Tag>
         <English>[ICON_BULLET]%d2%F3_Icon[TAB]by guards stationed in the city</English>
         <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch stationierte Wachen der Stadt</German>

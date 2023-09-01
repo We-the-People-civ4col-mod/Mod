@@ -103,6 +103,7 @@ public:
 	bool canDoCivics(int /*CivicTypes*/ eCivic);
 	int greatGeneralThreshold();
 	int greatAdmiralThreshold(); // R&R, ray, Great Admirals
+	int getImmigrationThresholdModifierFromUnitsWaitingOnDock(); // WTP, ray, increase threshold if more than X units waiting on the docks - START
 	int immigrationThreshold();
 	int revolutionEuropeUnitThreshold();
 	CyPlot* getStartingPlot();

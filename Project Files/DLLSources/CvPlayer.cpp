@@ -7089,6 +7089,17 @@ int CvPlayer::greatAdmiralThreshold() const
 }
 // R&R, ray, Great Admirals - END
 
+// WTP, ray, increase threshold if more than X units waiting on the docks - START
+int CvPlayer::getImmigrationThresholdModifierFromUnitsWaitingOnDock() const
+{
+	int iTooManyUnitsWaitingEurope = std::max(0, getNumEuropeUnits() - GLOBAL_DEFINE_MIN_UNITS_ON_DOCK_BEFORE_THRESHOLD_INCREASED);
+	int iImmigrationThresholdModiferUnitsOnDockBase = GLOBAL_DEFINE_IMMIGRATION_THRESHOLD_MODIFIER_UNITS_ON_DOCK;
+	int ImmigrationThresholdModifierFromUnitsWaitingOnDock = iTooManyUnitsWaitingEurope * iImmigrationThresholdModiferUnitsOnDockBase;
+
+	return ImmigrationThresholdModifierFromUnitsWaitingOnDock;
+}
+// WTP, ray, increase threshold if more than X units waiting on the docks - END
+
 int CvPlayer::immigrationThreshold() const
 {
 	int iThreshold = ((GC.getIMMIGRATION_THRESHOLD() * std::max(0, (getImmigrationThresholdMultiplier()))) / 100);
@@ -7127,16 +7138,11 @@ int CvPlayer::immigrationThreshold() const
 	iThreshold *= GC.getEraInfo(GC.getGameINLINE().getStartEra()).getGrowthPercent();
 	iThreshold /= 100;
 
-	// WTP, jooe - 2023-04-08: increase threshold if more than 5 units waiting on the docks - START
-	const int iUnitsWaitingEuropeModifier = std::max(0, getNumEuropeUnits() - 5);
-	const int iImmigrationThresholdModiferUnitsOnDock = GC.getIMMIGRATION_THRESHOLD_MODIFIER_UNITS_ON_DOCK();
-
-	for (int i = 0; i < iUnitsWaitingEuropeModifier; i++)
-	{
-		iThreshold *= 100 + iImmigrationThresholdModiferUnitsOnDock;
-		iThreshold /= 100;
-	}
-	// WTP, jooe - 2023-04-08: increase threshold if more than 5 units waiting on the docks - END
+	// WTP, ray, increase threshold if more than X units waiting on the docks - START
+	int ImmigrationThresholdModiferUnitsOnDock = getImmigrationThresholdModifierFromUnitsWaitingOnDock();
+	iThreshold *= 100 + ImmigrationThresholdModiferUnitsOnDock;
+	iThreshold /= 100;
+	// WTP, ray, increase threshold if more than X units waiting on the docks - END
 
 	if (!isHuman())
 	{
