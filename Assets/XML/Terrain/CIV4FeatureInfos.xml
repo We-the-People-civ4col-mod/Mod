@@ -5323,7 +5323,7 @@
             <iMovement>2</iMovement>
             <iSeeThrough>0</iSeeThrough>
             <iDefense>-15</iDefense>
-            <iAppearance>100</iAppearance>
+            <iAppearance>50</iAppearance>
             <iDisappearance>0</iDisappearance>
             <iTurnDamage>0</iTurnDamage>
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
@@ -5344,10 +5344,6 @@
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_OCEAN</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>
