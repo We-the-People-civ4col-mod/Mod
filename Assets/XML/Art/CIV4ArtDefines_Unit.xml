@@ -12608,8 +12608,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Pioneer_no_tools.dds</FullLengthIcon>
             <fScale>0.55</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Railroad_Worker/Hardy_pioneer.nif</NIF>
-            <KFM>Art/Units/Settler/Railroad_Worker/Hardy_pioneer.kfm</KFM>
+            <NIF>Art/Units/Hardy_pioneer_NT/Hardy_pioneer_NT.nif</NIF>
+            <KFM>Art/Units/Hardy_pioneer_NT/Hardy_pioneer_NT.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
