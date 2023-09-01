@@ -55,7 +55,7 @@
 	</Define>
 	<Define>
 		<DefineName>IMMIGRATION_MAX_CROSS_LIMIT</DefineName>
-		<iDefineIntVal>2000</iDefineIntVal>
+		<iDefineIntVal>1000</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>NO_BAD_GOODIES_MAP_RANGE_PERCENT</DefineName>
