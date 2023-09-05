@@ -5216,7 +5216,7 @@
             <RiverYieldIncreases/>
             <iMovement>4</iMovement>
             <iSeeThrough>1</iSeeThrough>
-            <iDefense>15</iDefense>
+            <iDefense>0</iDefense>
             <iAppearance>250</iAppearance>
             <iDisappearance>1000</iDisappearance>
             <iTurnDamage>25</iTurnDamage>
