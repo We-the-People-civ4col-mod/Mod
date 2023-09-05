@@ -4106,10 +4106,6 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_RICE</YieldType>
-                    <iValue>-1</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
                     <YieldType>YIELD_PEAT</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
