@@ -16,6 +16,7 @@
         <German>"Es würde uns nie in den Sinn kommen, enge Freunde zu hintergehen!"</German>
         <Italian>"Non potremmo mai tradire i nostri più cari amici!"</Italian>
         <Spanish>"¡No podríamos traicionar a nuestros amigos del alma!"</Spanish>
+        <Russian>"Мы не можем предать наших близких друзей!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DENIAL_CONTACT_THEM</Tag>
@@ -32,6 +33,7 @@
         <German>"Ihr beliebt wohl zu scherzen ..."</German>
         <Italian>"Seriamente, stai scherzando..."</Italian>
         <Spanish>"Seguro que debéis de estar bromeando..."</Spanish>
+        <Russian>"Вы, должно быть, шутите..."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DENIAL_MYSTERY</Tag>
@@ -48,6 +50,7 @@
         <German>"Nur über unsere Leichen!"</German>
         <Italian>"Dovrai passare sul nostro cadavere."</Italian>
         <Spanish>"Nos lo arrebataréis por encima de nuestro cadáver."</Spanish>
+        <Russian>"Вы сможете забрать это только из наших холодных мёртвых рук!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DENIAL_NOT_ALLIED</Tag>
@@ -56,6 +59,7 @@
         <German>"Wir haben lange genug kein Verteidigungsbündnis geschlossen oder sind gemeinsam in den Krieg gezogen."</German>
         <Italian>"Non abbiamo avuto un'alleanza difensiva o combattuto una guerra insieme da troppo tempo."</Italian>
         <Spanish>"No hemos firmado un acuerdo de protección ni guerreado el tiempo suficiente."</Spanish>
+        <Russian>"Мы не подписывали оборонительный пакт и не сражались вместе достаточно долго для этого."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DENIAL_NOT_INTERESTED</Tag>
@@ -64,6 +68,7 @@
         <German>"Wir sind nicht interessiert."</German>
         <Italian>"Non siamo interessati".</Italian>
         <Spanish>"No estamos interesados".</Spanish>
+        <Russian>"Мы не заинтересованы в этом."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DENIAL_NO_GAIN</Tag>
@@ -72,6 +77,7 @@
         <German>"Davon hätten wir nichts."</German>
         <Italian>"Non avremmo niente da guadagnarci."</Italian>
         <Spanish>"No tenemos nada que ganar."</Spanish>
+        <Russian>"Мы ничего не выиграем от этого."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DENIAL_PEACE_NOT_POSSIBLE_US</Tag>
@@ -80,6 +86,7 @@
         <German>Eine Versöhnung mit unseren Feinden ist völlig ausgeschlossen</German>
         <Italian>Fare pace coi nostri nemici è fuori questione</Italian>
         <Spanish>Firmar la paz con nuestros enemigos es inconcebible</Spanish>
+        <Russian>О мире с нашими врагами не может быть и речи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DENIAL_PEACE_NOT_POSSIBLE_YOU</Tag>
@@ -88,6 +95,7 @@
         <German>Ihr könnt mit Euren Feinden nicht Frieden schließen</German>
         <Italian>Non ti è possibile fare pace coi tuoi nemici</Italian>
         <Spanish>Firmar la paz con vuestros enemigos no es posible para vos</Spanish>
+        <Russian>Зачем вам мириться с вашими врагами?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DENIAL_POWER_THEM</Tag>
@@ -96,6 +104,7 @@
         <German>"Wir haben mächtigen Respekt vor ihrer militärischen Stärke."</German>
         <Italian>"Temiamo la loro potenza militare."</Italian>
         <Spanish>"Tememos su poder militar."</Spanish>
+        <Russian>"Мы боимся их военной мощи."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DENIAL_POWER_US</Tag>
@@ -104,6 +113,7 @@
         <German>"Wir kommen ganz gut allein klar."</German>
         <Italian>"Ce la facciamo da soli."</Italian>
         <Spanish>"Nos va bien sin ayuda."</Spanish>
+        <Russian>"Мы прекрасно справляемся и сами."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DENIAL_POWER_YOU</Tag>
@@ -112,6 +122,7 @@
         <German>"Ihr seid zu mächtig für uns geworden."</German>
         <Italian>"Siete diventati troppo potenti per noi."</Italian>
         <Spanish>"Os habéis hecho demasiado poderosos para nosotros."</Spanish>
+        <Russian>"Ты стал слишком могущественным для нас."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DENIAL_POWER_YOUR_ENEMIES</Tag>
@@ -120,6 +131,7 @@
         <German>Wir fürchten Eure Feinde!</German>
         <Italian>I tuoi nemici ci fanno paura!</Italian>
         <Spanish>Tememos a vuestros enemigos.</Spanish>
+        <Russian>Мы боимся ваших врагов!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DENIAL_RECENT_CANCEL</Tag>
@@ -128,6 +140,7 @@
         <German>"Das ist ein schlechter Zeitpunkt ... Vielleicht ändern wir unsere Meinung ja in ein paar Jahren."</German>
         <Italian>"Non ora... Forse cambieremo idea tra qualche anno."</Italian>
         <Spanish>"Ahora no... Quizá cambiemos de idea en unos años."</Spanish>
+        <Russian>"Не сейчас. Хотя не исключено, что через некоторое время мы изменим свое мнение."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DENIAL_TOO_FAR</Tag>
@@ -136,6 +149,7 @@
         <German>Euer Reich ist zu weit entfernt.</German>
         <Italian>Il tuo territorio è troppo lontano</Italian>
         <Spanish>Vuestra tierra está demasiado lejos.</Spanish>
+        <Russian>Твоя земля слишком далеко</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DENIAL_TOO_MANY_WARS</Tag>
@@ -144,6 +158,7 @@
         <German>"Zurzeit haben wir genug andere Sorgen."</German>
         <Italian>"Stiamo già affrontando troppi conflitti."</Italian>
         <Spanish>"Ya tenemos demasiado entre manos."</Spanish>
+        <Russian>"Сейчас у нас достаточно других забот."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DENIAL_TOO_MUCH</Tag>
@@ -152,6 +167,7 @@
         <German>"Da verlangt Ihr zu viel!"</German>
         <Italian>"Sul serio, hai preteso troppo!"</Italian>
         <Spanish>"¡Está claro que pedís demasiado!"</Spanish>
+        <Russian>"Вы просите слишком многого!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DENIAL_UNKNOWN</Tag>
@@ -160,7 +176,7 @@
         <German>"Wir haben leider kein Interesse, damit zu handeln."</German>
         <Italian>"Ci spiace, ma non vogliamo commerciare."</Italian>
         <Spanish>"Lo sentimos... No deseamos intercambiar esto."</Spanish>
-        <Russian>«Извините, мы не готовы торговать этим».</Russian>
+        <Russian>"Извините, мы не готовы торговать этим."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DENIAL_VICTORY</Tag>
@@ -169,6 +185,7 @@
         <German>"Wir haben eigentlich vor zu gewinnen! Besten Dank ..."</German>
         <Italian>"Ci piacerebbe vincere la partita, grazie lo stesso..."</Italian>
         <Spanish>"Preferimos ganar la partida, muchas gracias..."</Spanish>
+        <Russian>"Мы намерены победить! Большое спасибо и прощай..."</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DENIAL_WAR_NOT_POSSIBLE_US</Tag>
@@ -177,6 +194,7 @@
         <German>Wir können in diesem Krieg nicht auf Eurer Seite kämpfen.</German>
         <Italian>Non possiamo scendere in guerra al tuo fianco</Italian>
         <Spanish>No nos es posible unirnos a la guerra en vuestro bando.</Spanish>
+        <Russian>Мы не можем вступить в эту войну на вашей стороне</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DENIAL_WAR_NOT_POSSIBLE_YOU</Tag>
@@ -185,6 +203,7 @@
         <German>Ihr könnt in diesem Krieg nicht auf unserer Seite kämpfen.</German>
         <Italian>Non puoi scendere in guerra al nostro fianco</Italian>
         <Spanish>No es posible que os unáis a la guerra en nuestro bando.</Spanish>
+        <Russian>Вы не можете воевать вместе с нами</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DENIAL_WORST_ENEMY</Tag>
@@ -193,5 +212,6 @@
         <German>"Ihr seid unsere Erzfeinde. Wir werden niemals Handel mit Euch treiben!"</German>
         <Italian>"Non tratteremo mai con voi, siete i nostri peggiori nemici!"</Italian>
         <Spanish>"¡Nunca negociaremos con vosotros, nuestros peores enemigos!"</Spanish>
+        <Russian>"Мы никогда не будем торговать с нашим злейшим врагом!!!"</Russian>
     </TEXT>
 </Civ4GameText>

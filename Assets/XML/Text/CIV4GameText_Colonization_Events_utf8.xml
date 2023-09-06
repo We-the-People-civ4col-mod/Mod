@@ -1298,7 +1298,7 @@
         <English>A [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] adventurer was the first to discover the western route to Asia.</English>
         <French>Un aventurier [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] a été le premier à découvrir la route vers l'Asie.</French>
         <German>Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Abenteurer hat als Erster die Westküste erkundet und eine Passage nach Asien gefunden.</German>
-        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] искатель приключений первым открыл западный путь в Азию.</Russian>
+        <Russian>Искатель приключений из [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] первым открыл западный путь в Азию.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PACIFIC_DONE</Tag>

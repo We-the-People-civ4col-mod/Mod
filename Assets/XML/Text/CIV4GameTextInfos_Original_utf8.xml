@@ -334,6 +334,7 @@
         <Tag>TXT_KEY_REQUIRED_TERRAIN_YIELDS_TEXT</Tag>
         <English>[ICON_BULLET]Required Terrain Yields: </English>
         <German>[ICON_BULLET]Benötigte Terrain Yields: </German>
+        <Russian>[ICON_BULLET]Требуемая урожайность местности: </Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_BUILD_ONLY_WATER</Tag>
@@ -10564,6 +10565,7 @@
         <Tag>TXT_KEY_MISC_BL_BORN_SOMEWHERE</Tag>
         <English>In a distant region, a young soldier is making a name for himself as a brave lieutenant.</English>
         <German>In einer fernen Gegend macht ein junger Soldat als ein mutiger Leutnant von sich reden.</German>
+        <Russian>В далеком крае молодой солдат стал известным храбрым лейтенантом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_BL_BORN_FIELD</Tag>

@@ -138,6 +138,7 @@
         <Tag>TXT_KEY_HIGHER_IMMIGRATION_THRESHOLD_DUE_TO_UNITS_ON_DOCK</Tag>
         <English>[NEWLINE][COLOR_NEGATIVE_TEXT]Immigration threshold increased by %d1%% [NEWLINE]due to many immigrants waiting on dock[COLOR_REVERT]</English>
         <German>[NEWLINE][COLOR_NEGATIVE_TEXT]Grenzwert für Auswanderung um %d1%% erhöht [NEWLINE]da viele Auswanderer warten bereits am Dock[COLOR_REVERT]</German>
+        <Russian>[NEWLINE][COLOR_NEGATIVE_TEXT]Порог иммиграции увеличился на %d1%% [NEWLINE]из-за большого количества иммигрантов, ожидающих на причале[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LAW_FROM_DEFENDERS</Tag>
