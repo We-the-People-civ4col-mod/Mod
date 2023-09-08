@@ -1478,9 +1478,9 @@
             <Type>ART_DEF_UNIT_TREK</Type>
             <Button>,Art/colonization_atlas_military.dds,7,18</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Wagon_Train.dds</FullLengthIcon>
-            <fScale>0.18</fScale>
-            <fInterfaceScale>1.4</fInterfaceScale>
-            <NIF>Art/Units/Wagon_Train/Wagon_Train.nif</NIF>
+            <fScale>0.24</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Units/Ships_Transport/trek/Wagon_Train.nif</NIF>
             <KFM>Art/Units/Wagon_Train/Wagon_Train.kfm</KFM>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
