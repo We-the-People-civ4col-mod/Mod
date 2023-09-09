@@ -16767,6 +16767,40 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_POW</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,1,6</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/PoW.dds</FullLengthIcon>
+            <fScale>0.54</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Special_Military/PoW/PoW/PoW.nif</NIF>
+            <KFM>Art/Units/Criminal/Criminal.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_POW_REVOLTING</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,1,6</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/PoW.dds</FullLengthIcon>
+            <fScale>0.48</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Special_Military/PoW/PoW_Revolting/PoW_Revolting.nif</NIF>
+            <KFM>Art/Units/Imperial_Soldier/Imperial_Soldier.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
         <!-- WTP, ray, Art Defs of new Trade Goods start -->
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_GOATS</Type>
