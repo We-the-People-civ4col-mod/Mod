@@ -1112,7 +1112,7 @@ void CvSelectionGroup::continueMission(int iSteps)
 					}
 				}
 
-				if (!bDone)
+				if (!bDone && (headMissionQueueNode() != NULL))
 				{
 					switch (headMissionQueueNode()->m_data.eMissionType)
 					{
