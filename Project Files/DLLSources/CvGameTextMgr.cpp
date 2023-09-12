@@ -5778,14 +5778,14 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 		// WTP, ray, Capture Ship chance increase - END
 	}
 	//TAC Whaling, ray
-	if (unitClassIntToBeChecked == GC.getUNITCLASS_WHALING_BOAT())
+	if (unitClassIntToBeChecked == UNITCLASS_WHALING_BOAT)
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_GATHER_BOAT_WHALING"));
 	}
 	//End TAC Whaling, ray
 	// R&R, ray, High Sea Fishing - START
-	if (unitClassIntToBeChecked == GC.getUNITCLASS_FISHING_BOAT())
+	if (unitClassIntToBeChecked == UNITCLASS_FISHING_BOAT)
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_GATHER_BOAT_FISHING"));

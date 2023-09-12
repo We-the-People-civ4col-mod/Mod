@@ -12074,7 +12074,7 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 	}
 
 	//TAC Whaling, ray
-	if (eProfession == (ProfessionTypes)GC.getPROFESSION_WHALING_BOAT_WORKING()) // cache ship profession - Nightinggale
+	if (eProfession == PROFESSION_WHALING_BOAT_WORKING)
 	{
 		if (!isWhalingBoat())
 		{
@@ -12084,7 +12084,7 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 	//End TAC Whaling, ray
 
 	// R&R, ray, High Sea Fishing - START
-	if (eProfession == (ProfessionTypes)GC.getPROFESSION_FISHING_BOAT_WORKING()) // cache ship profession - Nightinggale
+	if (eProfession == PROFESSION_FISHING_BOAT_WORKING)
 	{
 		if (!isFishingBoat())
 		{
@@ -15992,12 +15992,12 @@ void CvUnit::convertFishingBoat()
 		{
 			if (eCurrentProfession == NO_PROFESSION)
 			{
-				setProfession((ProfessionTypes)(GC.getPROFESSION_WHALING_BOAT_WORKING()));
+				setProfession(PROFESSION_WHALING_BOAT_WORKING);
 			}
 		}
 		else
 		{
-			if (eCurrentProfession == ((ProfessionTypes)(GC.getPROFESSION_WHALING_BOAT_WORKING())))
+			if (eCurrentProfession == PROFESSION_WHALING_BOAT_WORKING)
 			{
 				setProfession(NO_PROFESSION);
 			}
@@ -16011,12 +16011,12 @@ void CvUnit::convertFishingBoat()
 		{
 			if (eCurrentProfession == NO_PROFESSION)
 			{
-				setProfession((ProfessionTypes)GC.getPROFESSION_FISHING_BOAT_WORKING());
+				setProfession(PROFESSION_FISHING_BOAT_WORKING);
 			}
 		}
 		else
 		{
-			if (eCurrentProfession == ((ProfessionTypes)GC.getPROFESSION_FISHING_BOAT_WORKING()))
+			if (eCurrentProfession == PROFESSION_FISHING_BOAT_WORKING)
 			{
 				setProfession(NO_PROFESSION);
 			}
@@ -16153,14 +16153,14 @@ bool CvUnit::gatherResource()
 
 bool CvUnit::isWhalingBoat() const
 {
-	return (getUnitClassType() == (UnitClassTypes)GC.getUNITCLASS_WHALING_BOAT());
+	return (getUnitClassType() == UNITCLASS_WHALING_BOAT);
 }
 //End TAC Whaling, ray
 
 // R&R, ray, High Sea Fishing - START
 bool CvUnit::isFishingBoat() const
 {
-	return (getUnitClassType() == (UnitClassTypes)GC.getUNITCLASS_FISHING_BOAT());
+	return (getUnitClassType() == UNITCLASS_FISHING_BOAT);
 }
 // R&R, ray, High Sea Fishing - END
 

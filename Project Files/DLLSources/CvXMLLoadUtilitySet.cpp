@@ -923,12 +923,10 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		SetGlobalDefine("UNITCLASS_WHALING_BOAT", szVal);
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("UNITCLASS_WHALING_BOAT", idx);
-		GC.m_UNITCLASS_WHALING_BOAT = idx;// R&R, ray, write this in CvGlobals because faster
 
 		SetGlobalDefine("PROFESSION_WHALING_BOAT_WORKING", szVal);
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("PROFESSION_WHALING_BOAT_WORKING", idx);
-		GC.m_PROFESSION_WHALING_BOAT_WORKING = idx; // R&R, ray, write this in CvGlobals because faster
 
 		SetGlobalDefine("BONUS_WHALE", szVal);
 		idx = FindInInfoClass(szVal);
@@ -943,12 +941,10 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		SetGlobalDefine("UNITCLASS_FISHING_BOAT", szVal);
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("UNITCLASS_FISHING_BOAT", idx);
-		GC.m_UNITCLASS_FISHING_BOAT = idx;// R&R, ray, write this in CvGlobals because faster
 
 		SetGlobalDefine("PROFESSION_FISHING_BOAT_WORKING", szVal);
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("PROFESSION_FISHING_BOAT_WORKING", idx);
-		GC.m_PROFESSION_FISHING_BOAT_WORKING = idx; // R&R, ray, write this in CvGlobals because faster
 
 		SetGlobalDefine("BONUS_HIGH_SEA_FISH", szVal);
 		idx = FindInInfoClass(szVal);

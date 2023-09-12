@@ -827,16 +827,6 @@ public:
 	int getTAX_TRADE_INCREASE_CHANCE_KING_ATTITUDE_BASE();
 	// R&R, ray, caching globals from Global Defines Alt - END
 
-	// cache ship profession - start - Nightinggale
-	int getPROFESSION_WHALING_BOAT_WORKING();
-	int getPROFESSION_FISHING_BOAT_WORKING();
-	// cache ship profession - end - Nightinggale
-
-	// R&R, ray, enhanced caching Whaling and Fishing - START
-	int getUNITCLASS_WHALING_BOAT();
-	int getUNITCLASS_FISHING_BOAT();
-	// R&R, ray, enhanced caching Whaling and Fishing - END
-
 	// R&R, ray, Health - START
 	int getMIN_POP_NEG_HEALTH();
 	int getPOP_DIVISOR_NEG_HEALTH();
@@ -1416,13 +1406,6 @@ protected:
 	// Improvement TAX mechanism
 	int m_TAX_TRADE_INCREASE_CHANCE_KING_ATTITUDE_BASE;
 	// R&R, ray, caching globals from Global Defines Alt - END
-
-	// cache ship profession - start - Nightinggale
-	int m_PROFESSION_WHALING_BOAT_WORKING;
-	int m_PROFESSION_FISHING_BOAT_WORKING;
-	int m_UNITCLASS_WHALING_BOAT; // R&R, ray
-	int m_UNITCLASS_FISHING_BOAT; // R&R, ray
-	// cache ship profession - end - Nightinggale
 
 	// R&R, ray, Health - START
 	int m_MIN_POP_NEG_HEALTH;
@@ -2417,30 +2400,6 @@ inline int CvGlobals::getTAX_TRADE_INCREASE_CHANCE_KING_ATTITUDE_BASE()
 	return m_TAX_TRADE_INCREASE_CHANCE_KING_ATTITUDE_BASE;
 }
 // R&R, ray, caching globals from Global Defines Alt - END
-
-// cache ship profession - start - Nightinggale
-inline int CvGlobals::getPROFESSION_WHALING_BOAT_WORKING()
-{
-	return m_PROFESSION_WHALING_BOAT_WORKING;
-}
-
-inline int CvGlobals::getPROFESSION_FISHING_BOAT_WORKING()
-{
-	return m_PROFESSION_FISHING_BOAT_WORKING;
-}
-// cache ship profession - end - Nightinggale
-
-// R&R, ray, enhanced caching Whaling and Fishing - START
-inline int CvGlobals::getUNITCLASS_WHALING_BOAT()
-{
-	return m_UNITCLASS_WHALING_BOAT;
-}
-
-inline int CvGlobals::getUNITCLASS_FISHING_BOAT()
-{
-	return m_UNITCLASS_FISHING_BOAT;
-}
-// R&R, ray, enhanced caching Whaling and Fishing - END
 
 // R&R, ray, Health - START
 inline int CvGlobals::getMIN_POP_NEG_HEALTH()

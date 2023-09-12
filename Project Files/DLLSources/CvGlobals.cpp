@@ -282,15 +282,6 @@ m_CUSTOMHOUSE_PRODUCED_SELL_THRESHOLD(0),
 m_TAX_TRADE_INCREASE_CHANCE_KING_ATTITUDE_BASE(0),
 // R&R, ray, caching globals from Global Defines Alt - END
 
-// cache ship profession - start - Nightinggale
-m_PROFESSION_WHALING_BOAT_WORKING(-1),
-m_PROFESSION_FISHING_BOAT_WORKING(-1),
-// cache ship profession - end - Nightinggale
-// R&R, ray, enhanced caching Whaling and Fishing - START
-m_UNITCLASS_WHALING_BOAT(-1),
-m_UNITCLASS_FISHING_BOAT(-1),
-// R&R, ray, enhanced caching Whaling and Fishing - END
-
 // R&R, ray, Health - START
 m_MIN_POP_NEG_HEALTH(0),
 m_POP_DIVISOR_NEG_HEALTH(0),

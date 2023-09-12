@@ -19068,19 +19068,18 @@ bool CvPlayer::isProfessionValid(ProfessionTypes eProfession, UnitTypes eUnit) c
 					return false;
 				}
 				// R&R, ray, High Sea Fishing
-				else if (eProfession == (ProfessionTypes)GC.getPROFESSION_WHALING_BOAT_WORKING() && GC.getUnitInfo(eUnit).getUnitClassType() != (UnitClassTypes)GC.getUNITCLASS_WHALING_BOAT())
+				else if (eProfession == PROFESSION_WHALING_BOAT_WORKING && GC.getUnitInfo(eUnit).getUnitClassType() != UNITCLASS_WHALING_BOAT)
 				{
 					return false;
 				}
-				else if (eProfession == (ProfessionTypes)GC.getPROFESSION_FISHING_BOAT_WORKING() && GC.getUnitInfo(eUnit).getUnitClassType() != (UnitClassTypes)GC.getUNITCLASS_FISHING_BOAT())
+				else if (eProfession == PROFESSION_FISHING_BOAT_WORKING && GC.getUnitInfo(eUnit).getUnitClassType() != UNITCLASS_FISHING_BOAT)
 				{
 					return false;
 				}
 			}
 		}
 		// R&R, ray, High Sea Fishing
-		//else if (eProfession == (ProfessionTypes)GC.getDefineINT("PROFESSION_WHALING_BOAT_WORKING"))
-		else if (eProfession == (ProfessionTypes)GC.getPROFESSION_WHALING_BOAT_WORKING() || eProfession == (ProfessionTypes)GC.getPROFESSION_FISHING_BOAT_WORKING())
+		else if (eProfession == PROFESSION_WHALING_BOAT_WORKING || eProfession == PROFESSION_FISHING_BOAT_WORKING)
 		{
 			return false;
 		}
