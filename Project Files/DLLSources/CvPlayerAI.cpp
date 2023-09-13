@@ -16637,6 +16637,10 @@ int CvPlayerAI::AI_getAvailableGold(PurchaseType::Category ePurchaseType, int iP
 				// TAC - AI Military Buildup - koma13
 	//if (!AI().AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
 
+	/*int iMercRand = GC.getGameINLINE().getSorenRandNum(100, "AI should buy Mercenaries?");
+						if (iMercRand < GC.getDefineINT("AI_CHANCE_FOR_BUYING_MERCENARIES"))
+						*/
+
 	return 0;
 }
 

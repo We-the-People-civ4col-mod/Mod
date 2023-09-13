@@ -467,8 +467,8 @@ public:
 	bool AI_shouldHurryUnit() const;
 
 	// Returns the amount of gold the AI is willing to spend on this particular purchase type given the price and amount purchased
-	int AI_getAvailableGold(PurchaseType::Category ePurchaseType, int iPrice, int iAmount = 1) const;
-	bool AI_isAvailableGold(PurchaseType::Category ePurchaseType, int iPrice, int iAmount = 1) const;
+	int AI_getAvailableGold(PurchaseType::Category ePurchaseType, int iPrice, int iAmount) const;
+	bool AI_isAvailableGold(PurchaseType::Category ePurchaseType, int iPrice, int iAmount) const;
 
 	// TODO: Make protective and replace with a getter
 	int m_estimatedUnemploymentCount;
