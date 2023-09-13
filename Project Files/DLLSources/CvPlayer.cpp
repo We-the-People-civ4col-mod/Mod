@@ -21190,19 +21190,10 @@ void CvPlayer::checkForNativeMercs()
 				//simple logik for AI
 				if (!isHuman())
 				{
-					// TAC - AI Military Buildup - koma13
-					if (!AI().AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
+					if (AI().AI_isAvailableGold(PurchaseType::MILITARY, cheapmercprice, 1))
 					{
-						int iMercRand = GC.getGameINLINE().getSorenRandNum(100, "AI should buy Mercenaries?");
-						if (iMercRand < GC.getDefineINT("AI_CHANCE_FOR_BUYING_MERCENARIES"))
-						{
-							int iMercPriceAI = totalmercprice * GC.getDefineINT("AI_PRICE_PERCENT_FOR_BUYING_MERCENARIES") / 100;
-							if (AI().AI_getAvailableGold(PurchaseType::MILITARY, iMercPriceAI) > iMercPriceAI)
-							{
-								m_iTimerNativeMerc = GC.getTIMER_NATIVE_MERC() * gamespeedMod / 100; // WTP, ray, small correction in balancing
-								buyNativeMercs(potentialMercPlayer.getID(), iMercPriceAI, false);
-							}
-						}
+						m_iTimerNativeMerc = GC.getTIMER_NATIVE_MERC() * gamespeedMod / 100; // WTP, ray, small correction in balancing
+						buyNativeMercs(potentialMercPlayer.getID(), cheapmercprice, false);
 					}
 				}
 				//more complicated case for human
@@ -21273,13 +21264,13 @@ void CvPlayer::checkForNativeSlaves()
 		//check if Player is native AND we can contact AND is willing to talk AND minMercAttitude reached AND for Safety checking Peace
 		if(potentialSlavePlayer.isNative() && canContact((PlayerTypes) iPlayer) && potentialSlavePlayer.AI_isWillingToTalk(getID()) && potentialSlavePlayer.AI_getAttitude(getID(), false) >= GC.getLeaderHeadInfo(potentialSlavePlayer.getPersonalityType()).getMinAttitudeGiveNativeSlaves() && !GET_TEAM(getTeam()).isAtWar(potentialSlavePlayer.getTeam()))
 		{
-			//checking random chance for merc
+			//checking random chance for slave
 			int randomSlaveValue = GC.getGameINLINE().getSorenRandNum(1000, "Native Slave");
 			int slaveChance = GC.getLeaderHeadInfo(potentialSlavePlayer.getPersonalityType()).getBaseChanceGiveNativeSlaves();
 
 			if (slaveChance > randomSlaveValue)
 			{
-				//calculating merc prices
+				//calculating slave prices
 				int baseslaveprice = GC.getDefineINT("BASE_NATIVE_SLAVE_PRICE");
 				int discount = potentialSlavePlayer.AI_getAttitude(getID(), false) * 10;
 				if (discount > 50)
@@ -21292,34 +21283,30 @@ void CvPlayer::checkForNativeSlaves()
 				//simple logik for AI
 				if (!isHuman())
 				{
-					// TAC - AI Military Buildup - koma13
-					if (!AI().AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
+					if (AI().AI_isAvailableGold(PurchaseType::SLAVE, totalslaveprice, 1))
 					{
-						if (AI().AI_getAvailableGold(PurchaseType::SLAVE, totalslaveprice * 2) > totalslaveprice * 2)
+						//get City
+						CvCity* pLoopCity = NULL;
+						CvCity* locationToAppear = NULL;
+						int iLoop;
+						locationToAppear = firstCity(&iLoop);
+
+						//for safety stop if no city
+						if (locationToAppear == NULL)
 						{
-							//get City
-							CvCity* pLoopCity = NULL;
-							CvCity* locationToAppear = NULL;
-							int iLoop;
-							locationToAppear = firstCity(&iLoop);
-
-							//for safety stop if no city
-							if (locationToAppear == NULL)
-							{
-								return;
-							}
-
-							//exchanging gold
-							OOS_LOG("CvPlayer::checkForNativeSlaves AI", totalslaveprice);
-							potentialSlavePlayer.changeGold(totalslaveprice);
-							changeGold(-totalslaveprice);
-							m_iTimerNativeSlave = GC.getTIMER_NATIVE_SLAVE() * gamespeedMod / 100; // WTP, ray, small correction in balancing
-
-							//creating unit
-							UnitTypes DefaultSlaveUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_NATIVE_SLAVE"));
-							FAssert(DefaultSlaveUnitType != NO_UNIT);
-							CvUnit* SlaveUnit = initUnit(DefaultSlaveUnitType, GC.getUnitInfo(DefaultSlaveUnitType).getDefaultProfession(), locationToAppear->coord(), NO_UNITAI);
+							return;
 						}
+
+						//exchanging gold
+						OOS_LOG("CvPlayer::checkForNativeSlaves AI", totalslaveprice);
+						potentialSlavePlayer.changeGold(totalslaveprice);
+						changeGold(-totalslaveprice);
+						m_iTimerNativeSlave = GC.getTIMER_NATIVE_SLAVE() * gamespeedMod / 100; // WTP, ray, small correction in balancing
+
+						//creating unit
+						UnitTypes DefaultSlaveUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_NATIVE_SLAVE"));
+						FAssert(DefaultSlaveUnitType != NO_UNIT);
+						CvUnit* SlaveUnit = initUnit(DefaultSlaveUnitType, GC.getUnitInfo(DefaultSlaveUnitType).getDefaultProfession(), locationToAppear->coord(), NO_UNITAI);
 					}
 				}
 
