@@ -270,6 +270,10 @@
 		<DefineTextVal>UNITCLASS_REVOLTING_CRIMINAL</DefineTextVal>
 	</Define>
 	<Define>
+		<DefineName>UNITCLASS_REVOLTING_PRISONER_OF_WAR</DefineName>
+		<DefineTextVal>UNITCLASS_REVOLTING_PRISONER_OF_WAR</DefineTextVal>
+	</Define>
+	<Define>
 		<DefineName>LBD_MIN_EXPERIENCE_FREE_BY_COMBAT</DefineName>
 		<iDefineIntVal>5</iDefineIntVal>
 	</Define>
@@ -1696,5 +1700,10 @@
 	<Define>
 		<DefineName>SHOW_TERRAIN_SPECIFIC_CITY_BACKGROUNDS</DefineName>
 		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<!-- PRISONERS of WAR -->
+	<Define>
+		<DefineName>UNITCLASS_PRISONER_OF_WAR</DefineName>
+		<DefineTextVal>UNITCLASS_PRISONER_OF_WAR</DefineTextVal>
 	</Define>
 </Civ4Defines>

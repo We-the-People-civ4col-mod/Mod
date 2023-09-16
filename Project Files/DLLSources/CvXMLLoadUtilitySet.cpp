@@ -809,6 +809,17 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		GC.getDefinesVarSystem()->SetValue("UNITCLASS_REVOLTING_CRIMINAL", idx);
 		// WTP, ray, LbD Slaves Revolt and Free - END
 
+
+		// WTP, ray, Prisoners of War - START
+		SetGlobalDefine("UNITCLASS_PRISONER_OF_WAR", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("UNITCLASS_PRISONER_OF_WAR", idx);
+
+		SetGlobalDefine("UNITCLASS_REVOLTING_PRISONER_OF_WAR", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("UNITCLASS_REVOLTING_PRISONER_OF_WAR", idx);
+		// WTP, ray, Prisoners of War - END
+
 		//Ramstormp, Disillusioned Missionary - START
 		SetGlobalDefine("UNITCLASS_FAILED_MISSIONARY", szVal);
 		idx = FindInInfoClass(szVal);

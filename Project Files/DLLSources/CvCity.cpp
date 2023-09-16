@@ -12901,8 +12901,8 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 
 	// convert Unit to Free Unit (Colonist, Freed Slave or Converted Native
 
-	// if CRIMIAL general Default Pop-Unit
-	if (modcase == GC.getDefineINT("UNITCLASS_PRISONER"))
+	// if CRIMIAL or PRISONER of WAR general Default Pop-Unit, but lower chances
+	if (modcase == GC.getDefineINT("UNITCLASS_PRISONER") || modcase == GC.getDefineINT("UNITCLASS_PRISONER_OF_WAR"))
 	{
 		mod = mod_crim; // Criminals are supposed to have a lower chance
 		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
@@ -12995,8 +12995,8 @@ bool CvCity::LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_se
 	//default case is servant
 	int mod = mod_serv;
 
-	// if criminal
-	if (modcase == 2)
+	// if criminal or prisoner of war there is a bit higher chance of escaping
+	if (modcase == GC.getDefineINT("UNITCLASS_PRISONER") || modcase == GC.getDefineINT("UNITCLASS_PRISONER_OF_WAR"))
 	{
 		mod = mod_crim;
 	}
@@ -13083,11 +13083,16 @@ bool CvCity::LbD_try_revolt(CvUnit* convUnit, int base, int mod_crim, int mod_sl
 		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REVOLTING_SLAVE"));
 	}
 	// if Native Slave
-	//default case is Criminal - also if we ever have something else
 	else if (modcase == GC.getDefineINT("UNITCLASS_NATIVE_SLAVE"))
 	{
 		mod = mod_slave;
 		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REVOLTING_NATIVE_SLAVE"));
+	}
+	// if Prisoner of War
+	else if (modcase == GC.getDefineINT("UNITCLASS_PRISONER_OF_WAR"))
+	{
+		mod = mod_crim;
+		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REVOLTING_PRISONER_OF_WAR"));
 	}
 	//default case is Criminal - also if we ever have something else
 	else
@@ -13119,8 +13124,6 @@ bool CvCity::LbD_try_revolt(CvUnit* convUnit, int base, int mod_crim, int mod_sl
 	}
 	calculatedChance = calculatedChance * (100 + iLearningByDoingRevoltModifier) / 100 ;
 	// WTP, ray, adding modifiers for other LBD features - END
-
-
 
 	int randomValue = GC.getGameINLINE().getSorenRandNum(1000, "LbD Revolt Slave");
 
