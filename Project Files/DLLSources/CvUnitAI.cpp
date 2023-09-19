@@ -12072,6 +12072,9 @@ bool CvUnitAI::AI_exploreRange(int iRange)
 
 					if (iValue > 0)
 					{
+						if ((pLoopPlot->isVisibleEnemyUnit(this)))
+							continue;
+
 						if (GET_PLAYER(getOwnerINLINE()).AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_EXPLORE, getGroup(), 3) == 0)
 						{
 							if (generatePath(pLoopPlot, MOVE_BUST_FOG, true))
