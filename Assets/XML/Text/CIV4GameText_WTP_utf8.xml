@@ -233,4 +233,8 @@
         <French>L'Oppressomètre total monte de %d1 à %d2</French>
         <Russian>Ваш общий Опрессометр увеличился с %d1 до %d2.</Russian>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SCOUT_FINISHED_EXPLORING</Tag>
+        <English>Your scout has finished exploring and is awaiting new orders!</English>
+    </TEXT>
 </Civ4GameText>
