@@ -127,6 +127,8 @@ void CvDiploParameters::read(CvSavegameReader reader)
 
 void CvDiploParameters::write(CvSavegameWriter writer) const
 {
+	LogIntentHelper helper(writer, "CvDiploParameters");
+
 	writer.AssignClassType(SAVEGAME_CLASS_DIPLOPARAMETERS);
 
 	// Write the data.

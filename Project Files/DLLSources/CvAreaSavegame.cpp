@@ -169,6 +169,8 @@ void CvArea::read(CvSavegameReader reader)
 
 void CvArea::write(CvSavegameWriter writer)
 {
+	LogIntentHelper helper(writer, "CvArea");
+
 	writer.AssignClassType(SAVEGAME_CLASS_AREA);
 
 	// Write the data.

@@ -186,6 +186,8 @@ void CvMap::read(CvSavegameReader reader)
 
 void CvMap::write(CvSavegameWriter writer)
 {
+	LogIntentHelper helper(writer, "CvMap");
+
 	writer.AssignClassType(SAVEGAME_CLASS_MAP);
 
 	if (writer.isDebug())

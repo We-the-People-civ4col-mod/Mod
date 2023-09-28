@@ -75,6 +75,8 @@ void CvTradeRouteGroup::read(CvSavegameReader reader)
 
 void CvTradeRouteGroup::write(CvSavegameWriter writer)
 {
+	LogIntentHelper helper(writer, "CvTradeRouteGroup");
+
 	writer.AssignClassType(SAVEGAME_CLASS_TRADEROUTEGROUP);
 
 	// Write the data.

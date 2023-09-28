@@ -387,6 +387,8 @@ void CvPlot::read(CvSavegameReader reader)
 
 void CvPlot::write(CvSavegameWriter writer)
 {
+	LogIntentHelper helper(writer, "CvPlot");
+
 	writer.AssignClassType(SAVEGAME_CLASS_PLOT);
 
 	if (writer.isDebug())

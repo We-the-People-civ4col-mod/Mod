@@ -1,10 +1,15 @@
 #include "CvGameCoreDLL.h"
 
+#include "CvDLLEngineIFaceBase.h"
+
 #include "CvSavegame.h"
 #include "FVariableSystem.h"
 #include "CvPopupInfo.h"
 #include "CvDiploParameters.h"
 #include "CvPlotFunctions.h"
+
+static bool bWRITE_LOG = false;
+
 
 /* The exe calls some read() and write() functions, which in turn calls the others. The exe calling order is as follows:
  * CvInitCore
@@ -497,6 +502,7 @@ void CvSavegameReader::Read(CvTradeRouteGroup     & variable) { variable.read(*t
 CvSavegameWriter::CvSavegameWriter(CvSavegameWriterBase& writerbase)
 	: m_vector(writerbase.m_vector)
 	, m_writerbase(writerbase)
+	, m_iLogIntent(0)
 {
 	m_eClassType = NUM_SAVEGAME_CLASS_TYPES;
 #ifdef WITH_DEBUG_WRITE_SAVEGAME
@@ -508,6 +514,7 @@ CvSavegameWriter::CvSavegameWriter(CvSavegameWriterBase& writerbase)
 CvSavegameWriter::CvSavegameWriter(const CvSavegameWriter& writer)
 	: m_vector(writer.m_vector)
 	, m_writerbase(writer.m_writerbase)
+	, m_iLogIntent(0)
 {
 	m_eClassType = NUM_SAVEGAME_CLASS_TYPES;
 }
@@ -802,7 +809,7 @@ void CvSavegameWriter::Write(CvTradeRouteGroup    &variable) { variable.write(*t
 
 bool CvSavegameWriter::isLogWriting() const
 {
-	return false;
+	return bWRITE_LOG;
 }
 
 const char* CvSavegameWriter::getEnumName(SavegameVariableTypes eType) const
@@ -816,21 +823,22 @@ void CvSavegameWriter::Log(const char* name) const
 	{
 		return;
 	}
-	gDLL->logMsg(getLogFile(), name, false, false);
+	CvString line;
+	for (int i = 0; i < m_iLogIntent; ++i)
+	{
+		line.append("\t");
+	}
+	line.append(name);
+	gDLL->logMsg(getLogFile(), line.c_str(), false, false);
 }
 
-void CvSavegameWriter::Log(const char* name, const char* value, int indent) const
+void CvSavegameWriter::Log(const char* name, const char* value) const
 {
 	if (!isLogWriting())
 	{
 		return;
 	}
 	CvString line;
-	for (int i = 0; i < indent; ++i)
-	{
-		line.append("\t");
-	}
-
 	line
 		.append(name)
 		.append(": ")
@@ -1215,3 +1223,33 @@ bool CvSavegameWriter::DEBUG_compare() const
 	return false;
 }
 #endif
+
+LogIntentHelper::LogIntentHelper(CvSavegameWriter& kWriter, const char* title)
+	: m_kWriter(kWriter)
+{
+	m_kWriter.Log(title);
+	m_kWriter.m_iLogIntent += 1;
+}
+LogIntentHelper::LogIntentHelper(CvSavegameWriter& kWriter, const char* title, const char* name)
+	: m_kWriter(kWriter)
+{
+	m_kWriter.Log(title, name);
+	m_kWriter.m_iLogIntent += 1;
+}
+LogIntentHelper::~LogIntentHelper()
+{
+	m_kWriter.m_iLogIntent -= 1;
+}
+
+void CreateOOSSavegame()
+{
+	CvString filename = gDLL->getModName();
+	filename.append(CvString::format("Desync save for player %d.ColonizationSave", GC.getGameINLINE().getActivePlayer()));
+
+	// remove the savegame file if it exist. Let it silently fail if it's not there.
+	remove(filename.c_str());
+
+	bWRITE_LOG = true;
+	gDLL->getEngineIFace()->SaveGame(filename);
+	bWRITE_LOG = false;
+}

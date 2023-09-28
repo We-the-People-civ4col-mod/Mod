@@ -631,6 +631,8 @@ void CvCity::read(CvSavegameReader reader)
 
 void CvCity::write(CvSavegameWriter writer)
 {
+	LogIntentHelper helper(writer, "CvCity");
+
 	writer.AssignClassType(SAVEGAME_CLASS_CITY);
 
 	// Write the data.

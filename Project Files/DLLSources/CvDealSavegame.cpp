@@ -90,6 +90,8 @@ void CvDeal::read(CvSavegameReader reader)
 
 void CvDeal::write(CvSavegameWriter writer)
 {
+	LogIntentHelper helper(writer, "CvDeal");
+
 	writer.AssignClassType(SAVEGAME_CLASS_DEAL);
 
 	// Write the data.

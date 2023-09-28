@@ -99,6 +99,8 @@ void CvReplayMessage::read(CvSavegameReader reader)
 
 void CvReplayMessage::write(CvSavegameWriter writer) const
 {
+	LogIntentHelper helper(writer, "CvReplayMessage");
+
 	writer.AssignClassType(SAVEGAME_CLASS_REPLAYMESSAGE);
 
 	// Write the data.

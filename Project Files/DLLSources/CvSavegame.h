@@ -280,6 +280,7 @@ private:
 
 class CvSavegameWriter
 {
+	friend class LogIntentHelper;
 public:
 	CvSavegameWriter(CvSavegameWriterBase& writerbase);
 	CvSavegameWriter(const CvSavegameWriter& writer);
@@ -478,7 +479,7 @@ public:
 
 
 	void Log(const char* name) const;
-	void Log(const char* name, const char* value, int indent = 0) const;
+	void Log(const char* name, const char* value) const;
 	template<class T>
 	void Log(const char* name, T eVariable) const;
 	template<class T>
@@ -488,6 +489,7 @@ public:
 
 private:
 	const char* getLogFile() const;
+	int m_iLogIntent;
 
 	template<int TYPE2>
 	struct WriteEnumMap
@@ -496,7 +498,7 @@ private:
 		static void Write(CvSavegameWriter& kWriter, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em);
 
 		template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-		static void Log(const CvSavegameWriter& kWriter, SavegameVariableTypes eType, const EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em);
+		static void Log(CvSavegameWriter& kWriter, SavegameVariableTypes eType, const EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em);
 	};
 
 	template<typename T>
@@ -876,7 +878,7 @@ void CvSavegameWriter::Log(const char* name, T eVariable) const
 
 template<>
 template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-inline void CvSavegameWriter::WriteEnumMap<VARIABLE_TYPE_CLASS>::Log(const CvSavegameWriter& kWriter, SavegameVariableTypes eType, const EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em)
+inline void CvSavegameWriter::WriteEnumMap<VARIABLE_TYPE_CLASS>::Log(CvSavegameWriter& kWriter, SavegameVariableTypes eType, const EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em)
 {
 	if (!kWriter.isLogWriting())
 	{
@@ -888,7 +890,7 @@ inline void CvSavegameWriter::WriteEnumMap<VARIABLE_TYPE_CLASS>::Log(const CvSav
 		return;
 	}
 
-	kWriter.Log("EnumMap (2D)", kWriter.getEnumName(eType));
+	LogIntentHelper helper(kWriter, "EnumMap (2D)", kWriter.getEnumName(eType));
 
 	for (IndexType loopVar = em.FIRST; loopVar <= em.LAST; ++loopVar)
 	{
@@ -902,7 +904,7 @@ inline void CvSavegameWriter::WriteEnumMap<VARIABLE_TYPE_CLASS>::Log(const CvSav
 
 template<int TYPE2>
 template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-inline void CvSavegameWriter::WriteEnumMap<TYPE2>::Log(const CvSavegameWriter& kWriter, SavegameVariableTypes eType, const EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em)
+inline void CvSavegameWriter::WriteEnumMap<TYPE2>::Log(CvSavegameWriter& kWriter, SavegameVariableTypes eType, const EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em)
 {
 	if (!kWriter.isLogWriting())
 	{
@@ -914,13 +916,13 @@ inline void CvSavegameWriter::WriteEnumMap<TYPE2>::Log(const CvSavegameWriter& k
 		return;
 	}
 
-	kWriter.Log("EnumMap", kWriter.getEnumName(eType));
+	LogIntentHelper helper(kWriter, "EnumMap", kWriter.getEnumName(eType));
 
 	for (IndexType loopVar = em.FIRST; loopVar <= em.LAST; ++loopVar)
 	{
 		if (em.get(loopVar) != DEFAULT)
 		{
-			kWriter.Log(getTypeStr(loopVar), getTypeStr(em.get(loopVar)), 1);
+			kWriter.Log(getTypeStr(loopVar), getTypeStr(em.get(loopVar)));
 		}
 	}
 }
@@ -1000,5 +1002,16 @@ private:
 };
 
 #include "CvSavegameEnumMap.h"
+
+class LogIntentHelper
+{
+public:
+	LogIntentHelper(CvSavegameWriter& kWriter, const char* title);
+	LogIntentHelper(CvSavegameWriter& kWriter, const char* title, const char* name);
+	~LogIntentHelper();
+
+private:
+	CvSavegameWriter& m_kWriter;
+};
 
 #endif

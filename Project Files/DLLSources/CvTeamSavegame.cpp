@@ -190,6 +190,8 @@ void CvTeam::read(CvSavegameReader reader)
 
 void CvTeam::write(CvSavegameWriter writer)
 {
+	LogIntentHelper helper(writer, "CvTeam");
+
 	writer.AssignClassType(SAVEGAME_CLASS_TEAM);
 
 	// Write the data.

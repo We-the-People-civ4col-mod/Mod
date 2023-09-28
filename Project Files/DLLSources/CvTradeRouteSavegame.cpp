@@ -79,6 +79,8 @@ void CvTradeRoute::read(CvSavegameReader reader)
 
 void CvTradeRoute::write(CvSavegameWriter writer)
 {
+	LogIntentHelper helper(writer, "CvTradeRoute");
+
 	writer.AssignClassType(SAVEGAME_CLASS_TRADEROUTE);
 
 	// Write the data.

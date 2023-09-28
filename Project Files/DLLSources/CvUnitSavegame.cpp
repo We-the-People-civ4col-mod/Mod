@@ -379,6 +379,8 @@ void CvUnit::read(CvSavegameReader reader)
 
 void CvUnit::write(CvSavegameWriter writer)
 {
+	LogIntentHelper helper(writer, "CvUnit");
+
 	writer.AssignClassType(SAVEGAME_CLASS_UNIT);
 
 	// Write the data.

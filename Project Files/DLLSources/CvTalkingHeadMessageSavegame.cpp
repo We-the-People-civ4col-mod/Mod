@@ -128,6 +128,8 @@ void CvTalkingHeadMessage::read(CvSavegameReader reader)
 
 void CvTalkingHeadMessage::write(CvSavegameWriter writer)
 {
+	LogIntentHelper helper(writer, "CvTalkingHeadMessage");
+
 	writer.AssignClassType(SAVEGAME_CLASS_TALKINGHEADMESSAGE);
 
 	// Write the data.

@@ -125,6 +125,8 @@ void CvPopupInfo::read(CvSavegameReader reader)
 
 void CvPopupInfo::write(CvSavegameWriter writer) const
 {
+	LogIntentHelper helper(writer, "CvPopupInfo");
+
 	writer.AssignClassType(SAVEGAME_CLASS_POPUPINFO);
 
 	// Write the data.

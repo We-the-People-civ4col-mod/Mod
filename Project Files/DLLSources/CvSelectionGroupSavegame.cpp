@@ -110,6 +110,8 @@ void CvSelectionGroup::read(CvSavegameReader reader)
 
 void CvSelectionGroup::write(CvSavegameWriter writer)
 {
+	LogIntentHelper helper(writer, "CvSelectionGroup");
+
 	writer.AssignClassType(SAVEGAME_CLASS_SELECTIONGROUP);
 
 	// Write the data.

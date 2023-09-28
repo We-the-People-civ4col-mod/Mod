@@ -7369,6 +7369,9 @@ void CvGame::setWBCentralAmericanNative(bool bValue)
 }
 // R&R, ray, Correct Geographical Placement of Natives - END
 
+
+void CreateOOSSavegame();
+
 // function to write a log file containing various data useful to track down OOS issues.
 // Never call this directly, call it by clicking a WIDGET_NETWORK_DESYNC button in python.
 // This in turn will send PLAYER_ACTION_NETWORK_DESYNC_LOG_WRITE on the network to call this function in sync.
@@ -7408,13 +7411,7 @@ void CvGame::writeDesyncLog()
 		fclose(f);
 	}
 
-	filename = gDLL->getModName();
-	filename.append(CvString::format("Desync save for player %d.ColonizationSave", getActivePlayer()));
-
-	// remove the savegame file if it exist. Let it silently fail if it's not there.
-	remove(filename.c_str());
-
-	gDLL->getEngineIFace()->SaveGame(filename);
+	CreateOOSSavegame();
 
 	// create a popup telling the task is done
 	CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_DESYNC_LOG_COMPLETE);

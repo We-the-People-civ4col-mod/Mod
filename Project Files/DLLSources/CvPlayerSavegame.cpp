@@ -960,6 +960,8 @@ void CvPlayer::read(CvSavegameReader reader)
 
 void CvPlayer::write(CvSavegameWriter writer)
 {
+	LogIntentHelper helper(writer, "CvPlayer");
+
 	writer.AssignClassType(SAVEGAME_CLASS_PLAYER);
 
 	// Write the data.
