@@ -1709,16 +1709,19 @@
         <Tag>TXT_KEY_ACHIEVE_FIRST_BRAVE_LIEUTENANT</Tag>
         <English>Your first brave lieutenant</English>
         <German>Euer erster Mutiger Leutnant</German>
+        <Russian>Ваш первый храбрый лейтенант</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BRAVE_LIEUTENANT_HEAD</Tag>
         <English>Leaders lead from the front</English>
         <German>Anführer führen von vorn</German>
+        <Russian>Лидеры всегда впереди</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BRAVE_LIEUTENANT_TEXT</Tag>
         <English>A general is important for the right strategy and leadership of the army. He is the commander of the whole bunch. [NEWLINE][NEWLINE]But who takes care of everything and executes the orders? Who takes care of the company, the men, the ammunition and the rations? Who leads the way with the saber? Who honors his men after victory and who straightens the men after defeat? The lieutenant![NEWLINE][NEWLINE]</English>
         <German>Ein General ist wichtig für die richtige Strategie und die Führung der Armee. Er ist der Kommandeur der ganzen Horde. [NEWLINE][NEWLINE]Aber wer kümmert sich um alles und setzt die Befehle um? Wer kümmert sich um die Kompanie, um die Männer, die Munition und die Verpflegung? Wer geht mit dem Säbel voran? Wer ehrt seine Männer nach dem Sieg und wer richtet die Männer nach der Niederlage wieder auf? Der Leutnant![NEWLINE][NEWLINE]</German>
+        <Russian>Генерал важен для правильной стратегии и руководства армией. Он командир всей группировки.[NEWLINE][NEWLINE]Но кто обо всём заботится и выполняет приказы? Кто позаботится о роте, людях, боеприпасах и пайках? Кто идет вперед с саблей? Кто чествует своих людей после победы и кто приводит их в порядок после поражения? Лейтенант![NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_WAREHOUSES</Tag>
