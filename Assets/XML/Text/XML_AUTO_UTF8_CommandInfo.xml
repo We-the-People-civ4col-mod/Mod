@@ -211,7 +211,7 @@
         <German>König kontaktieren, um diesen Schatz gegen eine Gebühr zu transportieren.</German>
         <Italian>Contatta il re per il trasporto del tesoro, in cambio di un onorario.</Italian>
         <Spanish>Contactar con el rey para que transporte este Tesoro a cambio de una comisión.</Spanish>
-        <Russian>Попросить Короля переправить Сокровище в Европу. Стоимость транспортировки равна ценности Сокровища плюс ставка налога.</Russian>
+        <Russian>Попросить Короля переправить Сокровище в Европу. Стоимость транспортировки равна половине ценности Сокровища плюс ставка налога.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_LEARN</Tag>
@@ -545,7 +545,7 @@
         <German>Vereine die Schätze auf dem Geländefeld zu einer Einheit.</German>
         <Italian>Unire i tesori della trama in una sola unità.</Italian>
         <Spanish>Fusiona los tesoros de la parcela en una unidad.</Spanish>
-        <Russian>Позволяет объединить несколько сокровищ в один юнит с максимальной ценностью в 3000 золотых</Russian>
+        <Russian>Позволяет объединить несколько сокровищ в один юнит с максимальной ценностью в 3000 золотых (для Нормальной скорости игры)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_ESTABLISH_TRADE_POST</Tag>

@@ -468,7 +468,7 @@
         <Tag>TXT_KEY_BUILD_FISHING_NETS</Tag>
         <English>Build [LINK=IMPROVEMENT_FISHING_NETS]fishing nets[\LINK]</English>
         <German>[LINK=IMPROVEMENT_FISHING_NETS]Fischernetze[\LINK] auslegen</German>
-        <Russian>Build [LINK=IMPROVEMENT_FISHING_NETS]рыбацкие сети[\LINK]</Russian>
+        <Russian>Построить [LINK=IMPROVEMENT_FISHING_NETS]рыбацкие сети[\LINK]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_FISHING_NETS_HELP</Tag>

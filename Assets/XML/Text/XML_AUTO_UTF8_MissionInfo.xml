@@ -78,6 +78,7 @@
         <German>Fischfang</German>
         <Italian>Pesca</Italian>
         <Spanish>Pesca</Spanish>
+        <Russian>Ловить рыбу</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_FISHING_HELP</Tag>
@@ -86,6 +87,7 @@
         <German>Fängt Fische bis der Frachtraum voll ist.</German>
         <Italian>Cattura il pesce fino a quando la stiva è piena.</Italian>
         <Spanish>Atrapa peces hasta que la bodega está llena.</Spanish>
+        <Russian>Лодка будет заниматься рыбной ловлей, пока трюм не заполнится полностью.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_FORTIFY</Tag>
@@ -187,6 +189,7 @@
         <German>Fortbewegen nach</German>
         <Italian>Vai</Italian>
         <Spanish>Mover a</Spanish>
+        <Russian>Идти к точке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_MOVE_TO_HELP</Tag>
@@ -195,6 +198,7 @@
         <German>Einheit auf ein bestimmtes Geländefeld schicken.</German>
         <Italian>Ordina alla tua unità di muoversi in una casella specifica.</Italian>
         <Spanish>Para decirle a la unidad que vaya a una casilla concreta.</Spanish>
+        <Russian>Приказать юниту двигаться к определенной клетке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_MOVE_TO_UNIT</Tag>

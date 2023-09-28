@@ -7,6 +7,7 @@
         <German>Fortgeschrittener Start</German>
         <Italian>Avvio avanzato</Italian>
         <Spanish>Inicio avanzado</Spanish>
+        <Russian>Настраиваемый старт игры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ADVANCED_START_HELP</Tag>
@@ -15,6 +16,7 @@
         <German>Ermöglicht den Spielern, bei Spielbeginn ihre Auswahl an Siedlungen, Einheiten, Gelände-Modernisierungen etc. zu erwerben.</German>
         <Italian>Permette ai giocatori di "acquistare" insediamenti, unità, miglioramenti del terreno, ecc. all'avvio del gioco.</Italian>
         <Spanish>Permite a los jugadores "adquirir" los asentamientos, unidades, mejoras del terreno, etc. que quieran al empezar la partida.</Spanish>
+        <Russian>Позволяет игрокам "покупать" стартовые поселения, юниты и улучшения по своему выбору в начале игры.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_AGGRESSIVE_AI</Tag>
@@ -23,6 +25,7 @@
         <German>Aggressive KI</German>
         <Italian>IA aggressiva</Italian>
         <Spanish>IA agresiva</Spanish>
+        <Russian>Агрессивный ИИ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_AGGRESSIVE_AI_HELP</Tag>
@@ -31,6 +34,7 @@
         <German>Computergegner bevorzugen den Krieg gegenüber der Diplomatie.</German>
         <Italian>L'IA dei leader preferisce la guerra alla diplomazia.</Italian>
         <Spanish>Los líderes de la IA prefieren la guerra a la diplomacia.</Spanish>
+        <Russian>Лидеры ИИ предпочитают войну дипломатии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ALWAYS_PEACE</Tag>
@@ -39,6 +43,7 @@
         <German>Immer Frieden</German>
         <Italian>Sempre in pace</Italian>
         <Spanish>Siempre en paz</Spanish>
+        <Russian>Всегда мир</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ALWAYS_PEACE_HELP</Tag>
@@ -47,6 +52,7 @@
         <German>Spieler können sich nicht gegenseitig den Krieg erklären.</German>
         <Italian>I giocatori non possono dichiararsi guerra tra loro.</Italian>
         <Spanish>Los jugadores no se pueden declarar la guerra.</Spanish>
+        <Russian>Игроки не могут объявлять войну друг другу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ALWAYS_WAR</Tag>
@@ -55,6 +61,7 @@
         <German>Immer Krieg</German>
         <Italian>Sempre in guerra</Italian>
         <Spanish>Siempre en guerra</Spanish>
+        <Russian>Всегда война</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ALWAYS_WAR_HELP</Tag>
@@ -63,6 +70,7 @@
         <German>Alle KI-Spieler befinden sich für die gesamte Spieldauer mit den menschlichen Spielern im Krieg.</German>
         <Italian>Tutti i giocatori gestiti dall'IA sono in guerra con le colonie dei giocatori per tutta la partita.</Italian>
         <Spanish>Todos los jugadores de la IA están en guerra con los humanos hasta que acabe la partida.</Spanish>
+        <Russian>Все игроки ИИ находятся в состоянии войны с игроком-человеком на протяжении всей игры.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_LEAD_ANY_CIV</Tag>
@@ -71,6 +79,7 @@
         <German>Freie Wahl des Anführers</German>
         <Italian>Leader senza limitazioni</Italian>
         <Spanish>Líderes sin restricciones</Spanish>
+        <Russian>Неограниченные лидеры</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_LEAD_ANY_CIV_HELP</Tag>
@@ -79,6 +88,7 @@
         <German>Die Spieler können eine jede Nation mit jedem Anführer anführen.</German>
         <Italian>I giocatori possono condurre una nazione qualsiasi con un qualsiasi leader.</Italian>
         <Spanish>Los jugadores pueden dirigir cualquier nación con cualquier líder.</Spanish>
+        <Russian>Игроки могут возглавить любую нацию с любым лидером.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_LOCK_MODS</Tag>
@@ -87,6 +97,7 @@
         <German>Modifizierte Daten sperren</German>
         <Italian>Blocca la modifica dei beni</Italian>
         <Spanish>Bloquear parámetros modificados</Spanish>
+        <Russian>Блокировка изменений</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_LOCK_MODS_HELP</Tag>
@@ -95,6 +106,7 @@
         <German>Debug-Tools können nicht verwendet und die Spieldaten können nicht modifiziert werden. Hilfreich für herausfordernde Einzelspieler-Partien.</German>
         <Italian>Impedisce l'utilizzo degli strumenti di debug, impedendo la modifica dei beni di gioco. Utile per delle competitive partite a giocatore singolo.</Italian>
         <Spanish>No se pueden usar herramientas de depuración, ni se pueden modificar los parámetros del juego. Útil para partidas competitivas de un jugador.</Spanish>
+        <Russian>Устанавливает случайный пароль администратора, чтобы нельзя было использовать инструменты отладки и нельзя было изменять игровые ресурсы. (Только для одиночных игр).</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NEW_RANDOM_SEED</Tag>
@@ -121,6 +133,7 @@
         <German>Kein Wechsel Krieg oder Frieden</German>
         <Italian>Guerra o pace permanente</Italian>
         <Spanish>Sin cambio de guerra o paz</Spanish>
+        <Russian>Перманентная война или мир</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_CHANGING_WAR_PEACE_HELP</Tag>
@@ -129,6 +142,7 @@
         <German>Alle Spieler befinden sich für die gesamte Spieldauer entweder im Krieg oder im Frieden.</German>
         <Italian>Tutti i giocatori sono bloccati in guerra o in pace per tutta la partita.</Italian>
         <Spanish>Todos los jugadores quedarán bloqueados en guerra o en paz hasta que acabe la partida.</Spanish>
+        <Russian>Все игроки привязаны либо к войне, либо к миру на протяжении всей игры.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_CITY_RAZING</Tag>

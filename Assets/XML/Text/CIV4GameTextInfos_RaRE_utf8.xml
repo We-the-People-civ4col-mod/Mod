@@ -8,6 +8,7 @@
     <TEXT>
         <Tag>TXT_KEY_DLL_FLAG_ERROR</Tag>
         <English>DLL incompatible with the savegame. The DLL needs to be recompiled with the same flags as was used when the game was saved.[NEWLINE]Required Flags:</English>
+        <Russian>DLL несовместима с сохраненной игрой. DLL необходимо перекомпилировать с теми же флагами, которые использовались при сохранении игры.[NEWLINE]Обязательные флаги:</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_BECOMES_STRING</Tag>

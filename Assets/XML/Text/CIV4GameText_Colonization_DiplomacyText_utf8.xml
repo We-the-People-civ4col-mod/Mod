@@ -21,7 +21,7 @@
         <German>Unsere Geduld ist erschöpft. Wir sehen uns auf dem Schlachtfeld wieder. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] erklärt Euch den Krieg!)</German>
         <Italian>Abbiamo subito le tue insolenze troppo a lungo! ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] dichiara guerra!)</Italian>
         <Spanish>¡Ya hemos aguantado bastante vuestras insolencias! (¡[COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] os declara la guerra!)</Spanish>
-        <Russian>Наше терпение на исходе. До встречи на поле боя! ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] объявляет войну!)</Russian>
+        <Russian>Наше терпение закончилось. До встречи на поле боя! ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] объявляет войну!)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DECLARE_WAR_3</Tag>
@@ -75,7 +75,7 @@
         <German>Küsst ein letztes Mal Euer Weib und packt Eure Waffen. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] erklärt Euch den Krieg!)</German>
         <Italian>Folle! Ti distruggeremo! ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] dichiara guerra!)</Italian>
         <Spanish>¡Idiota! ¡Ahora os destruiremos! (¡[COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] os declara la guerra!)</Spanish>
-        <Russian>Поцелуй свою жену в последний раз и возьми свое оружие. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] объявляет войну!)</Russian>
+        <Russian>Поцелуй свою жену в последний раз и берись за оружие. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] объявляет войну!)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DECLARE_WAR_9</Tag>
@@ -93,7 +93,7 @@
         <German>Eine dunkle Zeit steht Euch bevor. Nehmt Abschied von Eurer Familie und bestimmt, wo Euer Grabstein stehen soll. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] erklärt Euch den Krieg!)</German>
         <Italian>L'[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] ne ha abbastanza della tua perfidia e dei tuoi tradimenti! Ora pagherai! ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] dichiara guerra!)</Italian>
         <Spanish>¡El poderoso [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] ya ha soportado bastante vuestras traiciones y engaños! ¡Lo vais a pagar! (¡[COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] os declara la guerra!)</Spanish>
-        <Russian>Для вас настали тёмные времена. Попрощайтесь с семьей и выберите надгробие. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] объявляет войну!)</Russian>
+        <Russian>Для вас настали тёмные времена. Прощайтесь с семьей и выбирайте надгробие. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] объявляет войну!)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_1</Tag>
@@ -561,7 +561,7 @@
         <German>Was wollt IHR?</German>
         <Italian>Che COSA vuoi?</Italian>
         <Spanish>¿Qué queréis?</Spanish>
-        <Russian>Что ты хочешь?</Russian>
+        <Russian>Чего ты хочешь?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_5</Tag>
@@ -588,7 +588,7 @@
         <German>Meine Zeit ist wertvoll, [CT_NAME]! Also, was wollt Ihr?</German>
         <Italian>Il mio tempo è prezioso, [CT_NAME]. Cosa vuoi?</Italian>
         <Spanish>Nuestro tiempo es valioso, [CT_NAME]. ¿Qué queréis?</Spanish>
-        <Russian>Мое время дорого, [CT_NAME]. Что ты хочешь?</Russian>
+        <Russian>Мое время дорого стоит, [CT_NAME]. Что тебе нужно?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_8</Tag>
@@ -2001,7 +2001,7 @@
         <German>Ausgezeichnet! Ich bin sehr erfreut. Setzen wir uns doch und trinken eine Tasse Tee, einverstanden?</German>
         <Italian>Eccellente, siamo soddisfatti! Sediamoci e beviamoci una tazza di tè, ti va?</Italian>
         <Spanish>¡Magnífico! Nos complace sobremanera. Sentémonos a tomar una taza de té, ¿de acuerdo?</Spanish>
-        <Russian>Отличный! Я очень доволен. Давай сядем и выпьем вкусного чая?</Russian>
+        <Russian>Отлично! Я очень доволен. Давай сядем и выпьем вкусного чая?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_10</Tag>
@@ -2019,7 +2019,7 @@
         <German>Dankbar neige ich mein Haupt.</German>
         <Italian>Io [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], signore del poderoso [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT], offro i miei più sinceri ringraziamenti al mio caro amico, [CT_NAME].</Italian>
         <Spanish>Nos, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], gobernante del poderoso [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT], ofrecemos nuestro más sincero agradecimiento a [CT_NAME], nuestro gran amigo.</Spanish>
-        <Russian>Я, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], безраздельно властвую над могущественной [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT], настоящим хочу выразить искреннюю благодарность [CT_NAME] за дружбу.</Russian>
+        <Russian>Я, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], безраздельно властвующий над могущественной [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT], настоящим хочу выразить искреннюю благодарность [CT_NAME] за дружбу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_12</Tag>
@@ -2235,7 +2235,7 @@
         <German>Ihr wollt mir danken? Nein, nein ... Ich danke Euch, [CT_NAME]!</German>
         <Italian>Grazie a me? No, no... Grazie a te, [CT_NAME]!</Italian>
         <Spanish>¿Darnos las gracias? No, no... ¡Gracias a vos, [CT_NAME]!</Spanish>
-        <Russian>Спасибо мне? Нет, нет... спасибо, [CT_NAME]!</Russian>
+        <Russian>Вы благодарите меня? Нет, нет... спасибо Вам, [CT_NAME]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_37</Tag>
@@ -2298,7 +2298,7 @@
         <German>Es war ein kleines Stückchen vom Himmel. Das meine ich aufrichtig.</German>
         <Italian>È stato bellissimo, davvero.</Italian>
         <Spanish>Ha sido como estar en el cielo. Os lo decimos con total sinceridad.</Spanish>
-        <Russian>Мы на седьмом небе от счастья.</Russian>
+        <Russian>Мы на седьмом небе от счастья!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_44</Tag>
@@ -2352,7 +2352,7 @@
         <German>Das Volk von [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] dankt dem Volk von - wie auch immer Euer Name lautet - ganz herzlich.</German>
         <Italian>Il popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT] ringrazia sentitamente la tua gente... anche se non sappiamo il nome della tua civiltà.</Italian>
         <Spanish>La civilización [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:2][COLOR_REVERT] da las gracias al pueblo de... como se llame vuestra cultura.</Spanish>
-        <Russian>Люди [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] любезно благодарят народ... независимо от названия вашей страны.</Russian>
+        <Russian>Люди [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] любезно благодарят народ... а, не важно, как называется ваша страна.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_50</Tag>
@@ -2667,7 +2667,7 @@
         <German>Wie könnt Ihr es wagen, uns mit solchen dreisten Forderungen zu beleidigen?</German>
         <Italian>Come osi insultare [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:2][COLOR_REVERT] con le tue stupide richieste!</Italian>
         <Spanish>¿Cómo osáis insultar a la gloriosa tierra de [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] con vuestras estúpidas exigencias?</Spanish>
-        <Russian>Как вы смеете оскорблять нас своими глупыми требованиями!</Russian>
+        <Russian>Как вы смеете оскорблять нас своими глупыми требованиями?!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REJECT_DEMAND_3</Tag>
@@ -3252,7 +3252,7 @@
         <German>Ich frage mich, ob Ihr wohl bereit wärt, uns ein kleines Geschenk zu machen, [CT_NAME]? In Anerkennung der freundschaftlichen Beziehungen zwischen dem mächtigen [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] Volk und Euren schwachen, wehrlosen Leuten?</German>
         <Italian>Mi chiedo se ti andrebbe di offrirci un piccolo dono, [CT_NAME], per onorare la vecchia amicizia tra [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:2][COLOR_REVERT] e la tua debole gente.</Italian>
         <Spanish>Me pregunto si nos haríais un pequeño regalo, [CT_NAME], en honor a la eterna amistad entre la poderosa civilización de [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] y vuestro pueblo débil e indefenso.</Spanish>
-        <Russian>Не могли бы вы подарить нам небольшой подарок, [CT_NAME], в честь вечной дружбы между могущественными [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] и вашим слабым и беззащитным народом?</Russian>
+        <Russian>Не могли бы вы сделать нам небольшой подарок, [CT_NAME], в честь вечной дружбы между могущественными [COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] и вашим слабым и беззащитным народом?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_8</Tag>
@@ -3684,7 +3684,7 @@
         <German>Würdet Ihr einem guten Freund diesen kleinen Gefallen tun?</German>
         <Italian>Avresti un po' di questi, in nome della nostra amicizia?</Italian>
         <Spanish>¿Podríais darles esto a unos buenos amigos?</Spanish>
-        <Russian>Не могли бы вы пожертвовать этим для хорошего друга?</Russian>
+        <Russian>Не могли бы вы пожертвовать этим ради хорошего друга?</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_DEMAND_1</Tag>
@@ -3907,7 +3907,7 @@
         <German>Untersteht Euch, den Namen dieses Bastards in meiner Anwesenheit auch nur auszusprechen. (Wütend)</German>
         <Italian>Nemmeno io mi fido di [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]! (Tono furioso)</Italian>
         <Spanish>Ni nos gusta %s1 ni confiamos en [NUM1:él:ella]. (Furiosa)</Spanish>
-        <Russian>Не смей даже произносить имя этого ублюдка в моем присутствии. (В ярости)</Russian>
+        <Russian>Не смей даже произносить имя этого ублюдка в моем присутствии! (В ярости)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_FURIOUS_4</Tag>
@@ -4033,7 +4033,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Seid Ihr ein Freund von ihm? Ich hoffe nicht. (Verärgert)</German>
         <Italian>Non ho una grande considerazione di [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. (Tono infastidito)</Italian>
         <Spanish>No tenemos muy buena opinión de [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT], que digamos. (Molesta)</Spanish>
-        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Вы его друг? Надеюсь нет. (Раздраженно)</Russian>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Вы его друг? Надеюсь, что нет. (Раздраженно)</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_ANNOYED_8</Tag>

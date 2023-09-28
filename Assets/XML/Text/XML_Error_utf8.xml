@@ -4,6 +4,7 @@
     <TEXT>
         <Tag>TXT_KEY_ERROR_XML_TITLE</Tag>
         <English>XML LOAD ERROR</English>
+        <Russian>ОШИБКА ЗАГРУЗКИ XML</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ERROR_XML_WRONG_TYPE_STRING</Tag>
@@ -15,6 +16,7 @@ Expected string of type %s4</English>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ERROR_TITLE</Tag>
         <English>EVENT TRIGGER MISCONFIGURED</English>
+        <Russian>ТРИГГЕР СОБЫТИЯ НАСТРОЕН НЕПРАВИЛЬНО</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ERROR</Tag>
@@ -22,37 +24,49 @@ Expected string of type %s4</English>
 %s1
 %s2
 %s3</English>
+        <Russian>Триггер события имеет требование к сюжету, которое не может сработать.
+%s1
+%s2
+%s3</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ERROR_GRAPHICAL_ONLY</Tag>
         <English>Can't require graphical only entries</English>
+        <Russian>Не могут требоваться только графические записи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE</Tag>
         <English>Can't be used with required PlotType</English>
+        <Russian>Невозможно использовать с требуемым PlotType.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_TERRAIN</Tag>
         <English>Can't be used with any of the required terrains</English>
+        <Russian>Не может использоваться ни с одним из требуемых ландшафтов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_FEATURE</Tag>
         <English>Can't be used with any of the required features</English>
+        <Russian>Невозможно использовать ни с одной из необходимых функций.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_IMPROVEMENT</Tag>
         <English>Can't be used with any of the required improvements</English>
+        <Russian>Невозможно использовать ни с одним из необходимых улучшений.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_ROUTE</Tag>
         <English>Can't be used with any of the required routes</English>
+        <Russian>Невозможно использовать ни с одним из требуемых маршрутов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_TERRAIN_PLOT_TYPE</Tag>
         <English>None of the terrains required by the feature allows the PlotType required</English>
+        <Russian>Ни один из ландшафтов, требуемых для этого объекта, не позволяет использовать требуемый PlotType.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_FEATURE_TERRAIN</Tag>
         <English>None of the features required by the improvement can be placed on any of the required terrains</English>
+        <Russian>Ни один из объектов, требуемых улучшением, не может быть размещен ни на одном из требуемых ландшафтов.</Russian>
     </TEXT>
 </Civ4GameText>

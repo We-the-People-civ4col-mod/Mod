@@ -81,7 +81,7 @@
         <Tag>TXT_KEY_HAPPINESS_TREATIES</Tag>
         <English>[ICON_BULLET]%d2%F3_Icon[TAB]by Treaties with other Europeans</English>
         <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Verträge mit anderen Europäern</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]by Treaties with other Europeans</Russian>
+        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от договоров с другими европейцами</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_UNHAPPINESS_PRODUCED</Tag>
@@ -99,13 +99,13 @@
         <Tag>TXT_KEY_UNHAPPINESS_CRIME</Tag>
         <English>[ICON_BULLET]%d2%F3_Icon[TAB]by Crime in City</English>
         <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Kriminalität</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от Преступности в городе</Russian>
+        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от преступности в городе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNHAPPINESS_SLAVERY</Tag>
         <English>[ICON_BULLET]%d2%F3_Icon[TAB]by Slaves</English>
         <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Sklavenhaltung</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от присутствия Рабов</Russian>
+        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от присутствия рабов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNHAPPINESS_WARS</Tag>
@@ -117,13 +117,13 @@
         <Tag>TXT_KEY_UNHAPPINES_MISSING_DEFENSES</Tag>
         <English>[ICON_BULLET]%d2%F3_Icon[TAB]by Missing Protection</English>
         <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch fehlenden Schutz</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]нет солдат в гарнизоне</Russian>
+        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от отсутствия солдат в гарнизоне</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNHAPPINES_TAX_RATE</Tag>
         <English>[ICON_BULLET]%d2%F3_Icon[TAB]by Tax Rate</English>
         <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Besteuerung</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от Ставки налога</Russian>
+        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от ставки налога</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_RATE_CROSSES_HAPPINESS_UNHAPPINESS</Tag>
@@ -138,7 +138,7 @@
         <Tag>TXT_KEY_HIGHER_IMMIGRATION_THRESHOLD_DUE_TO_UNITS_ON_DOCK</Tag>
         <English>[NEWLINE][COLOR_NEGATIVE_TEXT]Immigration threshold increased by %d1%% [NEWLINE]due to many immigrants waiting on dock[COLOR_REVERT]</English>
         <German>[NEWLINE][COLOR_NEGATIVE_TEXT]Grenzwert für Auswanderung um %d1%% erhöht [NEWLINE]da viele Auswanderer warten bereits am Dock[COLOR_REVERT]</German>
-        <Russian>[NEWLINE][COLOR_NEGATIVE_TEXT]Порог иммиграции увеличился на %d1%% [NEWLINE]из-за большого количества иммигрантов, ожидающих на причале[COLOR_REVERT]</Russian>
+        <Russian>[NEWLINE][COLOR_NEGATIVE_TEXT]Порог иммиграции увеличился на %d1%%[NEWLINE]из-за большого количества желающих отправиться в Новый Свет[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LAW_FROM_DEFENDERS</Tag>

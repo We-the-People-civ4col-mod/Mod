@@ -19,7 +19,7 @@
         <Tag>TXT_KEY_CITY_CONSTRUCTION_SUPPLIES_USED</Tag>
         <English>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Construction Supplies were added to the City.</English>
         <German>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Baumaterialien wurden der Stadt hinzugefügt.</German>
-        <Russian>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Construction Supplies were added to the City.</Russian>
+        <Russian>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Строительные материалы были добавлены в город.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_YOU_SHIP_ESCAPED_CITY</Tag>

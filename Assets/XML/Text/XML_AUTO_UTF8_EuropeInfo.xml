@@ -23,6 +23,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Восток</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_NORTH</Tag>
@@ -47,6 +48,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Север</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_SOUTH</Tag>
@@ -71,6 +73,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Юг</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WEST</Tag>
@@ -95,5 +98,6 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+        <Russian>Запад</Russian>
     </TEXT>
 </Civ4GameText>

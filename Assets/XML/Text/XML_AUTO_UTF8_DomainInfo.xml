@@ -23,6 +23,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Неподвижные юниты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMAIN_LAND</Tag>
@@ -47,6 +48,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Наземные юниты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMAIN_SEA</Tag>
@@ -71,5 +73,6 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+        <Russian>Водные юниты</Russian>
     </TEXT>
 </Civ4GameText>

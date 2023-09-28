@@ -40,6 +40,7 @@
     <TEXT>
         <Tag>TXT_KEY_CONTROL_TURN_LOG_HELP</Tag>
         <English>????</English>
+        <Russian>Хронология большинства игровых событий</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU</Tag>
@@ -62,6 +63,7 @@
     <TEXT>
         <Tag>TXT_KEY_CONTROL_CIVILOPEDIA_HELP</Tag>
         <English>????</English>
+        <Russian>Обширная справочная информация обо всем, что есть в игре</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_DOMESTIC_SCREEN</Tag>
@@ -75,6 +77,7 @@
     <TEXT>
         <Tag>TXT_KEY_CONTROL_DOMESTIC_SCREEN_HELP</Tag>
         <English>????</English>
+        <Russian>Информация о строительстве, добыче ресурсов, производстве и т.д.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_EUROPE_SCREEN</Tag>
@@ -130,6 +133,7 @@
     <TEXT>
         <Tag>TXT_KEY_CONTROL_REVOLUTION_SCREEN_HELP</Tag>
         <English>????</English>
+        <Russian>Информация о готовности к началу Войны за независимость</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_FOREIGN_SCREEN</Tag>
@@ -143,6 +147,7 @@
     <TEXT>
         <Tag>TXT_KEY_CONTROL_FOREIGN_SCREEN_HELP</Tag>
         <English>????</English>
+        <Russian>Информация обо всех известных зарубежных контактах</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_MILITARY_SCREEN</Tag>
@@ -169,6 +174,7 @@
     <TEXT>
         <Tag>TXT_KEY_CONTROL_FATHER_SCREEN_HELP</Tag>
         <English>????</English>
+        <Russian>Информация обо всех Отцах основателях</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_CONGRESS_SCREEN</Tag>
@@ -182,6 +188,7 @@
     <TEXT>
         <Tag>TXT_KEY_CONTROL_CONGRESS_SCREEN_HELP</Tag>
         <English>????</English>
+        <Russian>Список Отцов основателей, входящих в состав вашего конгресса</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_VICTORY_SCREEN</Tag>
@@ -216,6 +223,7 @@
         <German>Spiel laden</German>
         <Italian>Carica partita</Italian>
         <Spanish>Cargar partida</Spanish>
+        <Russian>Загрузить игру</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_LOAD_GAME_HELP</Tag>
@@ -228,6 +236,7 @@
         <German>Spiel speichern</German>
         <Italian>Salva partita</Italian>
         <Spanish>Guardar partida</Spanish>
+        <Russian>Сохранить игру</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_SAVE_NORMAL_HELP</Tag>
@@ -266,6 +275,7 @@
         <German>Alle automatisierten Züge auslösen</German>
         <Italian>Attiva tutti i movimenti automatici</Italian>
         <Spanish>Activa todos los movimientos automatizados</Spanish>
+        <Russian>Запускает все автоматические движения</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_AUTOMOVES_HELP</Tag>
@@ -278,10 +288,12 @@
         <German>Auf Auswahl zentrieren</German>
         <Italian>Centra sulla selezione</Italian>
         <Spanish>Centrar en selección</Spanish>
+        <Russian>Отцентрировать выбор</Russian> 
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_CENTERONSELECTION_HELP</Tag>
         <English>????</English>
+        <Russian>Выбранный юнит окажется в центре экрана</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_CHAT_ALL</Tag>
@@ -611,6 +623,7 @@
         <German>Hauptstadt wählen</German>
         <Italian>Seleziona città</Italian>
         <Spanish>Seleccionar capital</Spanish>
+        <Russian>Выбрать столицу</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_SELECTCAPITAL_HELP</Tag>
@@ -623,6 +636,7 @@
         <German>Siedlung wählen</German>
         <Italian>Seleziona insediamento</Italian>
         <Spanish>Seleccionar asentamiento</Spanish>
+        <Russian>Выбрать поселение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_SELECTCITY_HELP</Tag>
@@ -635,6 +649,7 @@
         <German>Alle Einheiten auswählen</German>
         <Italian>Seleziona tutte le unità</Italian>
         <Spanish>Seleccionar todas las unidades</Spanish>
+        <Russian>Выбрать все юниты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_SELECTYUNITALL_HELP</Tag>
@@ -647,6 +662,7 @@
         <German>Alle Einheiten vom gleichen Typ auswählen</German>
         <Italian>Seleziona tutte le unità (dello stesso tipo)</Italian>
         <Spanish>Seleccionar todas las unidades (del mismo tipo)</Spanish>
+        <Russian>Выбрать все юниты (данного типа)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_SELECTYUNITTYPE_HELP</Tag>
