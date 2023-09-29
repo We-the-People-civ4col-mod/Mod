@@ -19,7 +19,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>Колониальная</Russian>
+        <Russian>Колониальная (пока не поддерживается)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ERA_COLONIAL_STRATEGY</Tag>
@@ -77,7 +77,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>Экспансия</Russian>
+        <Russian>Экспансия (пока не поддерживается)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ERA_EXPANSION_STRATEGY</Tag>
@@ -106,7 +106,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>Независимость</Russian>
+        <Russian>Независимость (пока не поддерживается)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ERA_INDEPENDENCE_STRATEGY</Tag>

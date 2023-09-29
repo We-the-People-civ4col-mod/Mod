@@ -12,6 +12,7 @@
         <German>Amerayca (Gigantisch, 110x215): Optimiert für das Spielen des Mods. Weder geographisch noch historisch korrekt.</German>
         <Italian>Amerayca (Gigantesca, 110x215): Non è corretto né geograficamente né storicamente.</Italian>
         <Spanish>Amerayca (Gigante, 110x215): Ni geográfica ni históricamente correcto.</Spanish>
+        <Russian>Amerayca (110x215): Не верно ни географически, ни исторически..</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_GIGANTIC</Tag>
@@ -20,6 +21,7 @@
         <German>Amerika (Gigantisch,  136x256): Karte von Amerika, genaue Karte mit korrekten Ressourcen und historischen Siedlungsgebieten der Eingeborenen</German>
         <Italian>Americhe (Gigantesca, 136x256): Mappa delle Americhe, mappa fedele con le posizioni storiche dei nativi e delle risorse</Italian>
         <Spanish>Américas (Gigante, 136x256): Mapa de las Américas, mapa fiel con ubicaciones históricas de nativos y recursos</Spanish>
+        <Russian>Americas (68x128): точная карта Америки с историческими местами проживания индейцев и расположением ресурсов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_GIGANTIC_RANDOM</Tag>
@@ -28,6 +30,7 @@
         <German>Amerika - Random (Gigantisch, 136x256): Karte von Amerika, genaue Karte mit zufälligen Ressourcen und Siedlungsgebieten der Eingeborenen sowie Startplätzen für die Europäer</German>
         <Italian>Americhe - Random (Gigantesca, 136x256): Mappa delle Americhe, mappa fedele con le posizioni casuali dei nativi, le risorse e le posizioni di partenza degli europei.</Italian>
         <Spanish>Américas - Random (Gigante, 136x256): Mapa de las Américas, mapa fiel con ubicaciones aleatorias de los nativos, recursos y ubicaciones iniciales para los europeos</Spanish>
+        <Russian>Americas - Random (68x128): точная карта Америки со случайным расположением индейцев, ресурсов и стартовых локаций для европейцев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_HUGE</Tag>
@@ -36,6 +39,7 @@
         <German>Amerika (Huge, 68x128): Karte von Amerika, genaue Karte mit korrekten Ressourcen und historischen Siedlungsgebieten der Eingeborenen</German>
         <Italian>Americhe (Huge, 68x128): Mappa delle Americhe, mappa fedele con le posizioni casuali dei nativi, le risorse e le posizioni iniziali degli europei.</Italian>
         <Spanish>Américas (Huge, 68x128): Mapa de las Américas, mapa fiel con ubicaciones aleatorias de los nativos, recursos y ubicaciones iniciales para los europeos</Spanish>
+        <Russian>Americas (68x128): точная карта Америки с историческими местами проживания индейцев и расположением ресурсов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_HUGE_RANDOM</Tag>
@@ -44,6 +48,7 @@
         <German>Amerika - Random (Riesig, 68x128): Karte von Amerika, genaue Karte mit zufälligen Ressourcen und Siedlungsgebieten der Eingeborenen sowie Startplätzen für die Europäer</German>
         <Italian>Americhe - Random (Enorme, 68x128): Mappa delle Americhe, mappa fedele con le posizioni casuali dei nativi, le risorse e le posizioni di partenza degli europei.</Italian>
         <Spanish>Américas - Random (Enorme, 68x128): Mapa de las Américas, mapa fiel con ubicaciones aleatorias de los nativos, recursos y ubicaciones iniciales para los europeos</Spanish>
+        <Russian>Americas - Random (68x128): точная карта Америки со случайным расположением индейцев, ресурсов и стартовых локаций для европейцев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_CENTRAL_AMERICA_DESC</Tag>
@@ -52,6 +57,7 @@
         <German>Mittel-Amerika (Groß, 64x64): von den Karibischen Inseln bis Mexiko, vom Mississippi-Delta bis hin zu den Dschungeln des Amazonas</German>
         <Italian>America central (Grande, 64x64): dal Mar dei Caraibi al Messico, dal fiume Mississippi al Rio delle Amazzoni</Italian>
         <Spanish>América Central (Grande, 64x64): del Mar Caribe a México, del río Mississippi al Amazonas</Spanish>
+        <Russian>Центральная Америка (64x64): от Карибского моря до Мексики, от Миссисипи до Амазонки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_COLONIAL_AMERICA</Tag>
@@ -60,6 +66,7 @@
         <German>Nord-Amerika (Groß, 40x100): Karte von Nord-Amerika, zufällige Ressourcen und Siedlungsgebiete der Eingeborenen sowie Startplätze für die Europäer</German>
         <Italian>Nord America (Grande, 40x100): Mappa del Nord America, posizione casuale dei nativi, risorse e luoghi di partenza per gli europei.</Italian>
         <Spanish>Norteamérica (Grande, 40x100): Mapa de Norteamérica, ubicaciones aleatorias de los nativos, recursos y lugares de partida de los europeos</Spanish>
+        <Russian>Северная Америка (40x100): карта Северной Америки со случайным расположением индейцев, ресурсов и стартовых локаций для европейцев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_EAST_COAST_DESC</Tag>
@@ -68,6 +75,7 @@
         <German>Ostküste Nord-Amerikas (Riesig, 72x96): von Neufundland bis Florida, von den Großen Seen bis zur Atlantikküste. Technisch als "kleine" Karte ausgewiesen, damit sie nur von den vier Indianerstämmen des Nordens besiedelt ist.</German>
         <Italian>Costa orientale del Nord America (Enorme, 72x96): Terranova a sud fino alla Florida, i Grandi Laghi a est fino all'Atlantico. Definita come una mappa piccola, per cui solo quattro tribù native nordamericane hanno insediamenti.</Italian>
         <Spanish>Costa este de Norteamérica (Enorme, 72x96): Terranova al sur hasta Florida, los Grandes Lagos al este hasta el Atlántico. Definido como un mapa pequeño, por lo que sólo cuatro tribus nativas de América del Norte tienen asentamientos.</Spanish>
+        <Russian>Восточное побережье Северной Америки (72x96): от Ньюфаундленда до Флориды, от Великих озёр до Атлантики. Карта небольшая, поэтому только четыре племени индейцев Северной Америки имеют здесь свои поселения.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_NEW_ENGLAND_DESC</Tag>
@@ -76,6 +84,7 @@
         <German>Neu-England (Standard, 30x70): Karte von Neu-England</German>
         <Italian>New England (Standard, 30x70): Mappa del New England</Italian>
         <Spanish>Nueva Inglaterra (Estándar, 30x70): Mapa de Nueva Inglaterra</Spanish>
+        <Russian>Новая Англия (30x70): карта Новой Англии времен колонизации Северной Америки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_NORTH_AMERICA_DESC</Tag>
@@ -84,14 +93,16 @@
         <German>Nord-Amerika (Groß, 50x90): Karte von Nord-Amerika</German>
         <Italian>Nord America (Grande, 50x90): Mappa del Nord America</Italian>
         <Spanish>Norteamérica (Grande, 50x90): Mapa de Norteamérica</Spanish>
+        <Russian>Северная Америка (50x90): географически корректная карта Северной Америки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_NORTHWEST_DESC</Tag>
-        <English>Northwest Passage (Large, 80x59): ply the icy waters of North America and Canada in this scenario</English>
+        <English>Northwest Passage (Large, 80x59): play the icy waters of North America and Canada in this scenario</English>
         <French>Passage par le Nord Ouest (Grande, 80x59): voguez sur les eaux glacées d'Amérique du Nord dans le scénario "Passage du Nord-Ouest"</French>
         <German>Nordwest-Passage (Groß, 80x59): durchkreuzt die eisigen Gewässer und erforscht die Großen Seen im Landesinneren!</German>
         <Italian>Passaggio a Nord-Ovest (Grande, 80x59): in questo scenario, esplorate le acque ghiacciate del Nord America e del Canada</Italian>
         <Spanish>Paso del Noroeste (Grande, 80x59): surca las gélidas aguas de Norteamérica y Canadá en este escenario</Spanish>
+        <Russian>Северо-Западный проход (80x59): добейтесь успеха в ледяных водах Северной Америки и Канады.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_SOUTH_AMERICA_DESC</Tag>
@@ -100,6 +111,7 @@
         <German>Süd-Amerika (Standard, 40x53): erkundet den Amazonasdschungel und die Gipfel der Anden und segelt um den Südzipfel der Neuen Welt!</German>
         <Italian>Sud America (Standard, 40x53): conquistate le giungle dell'Amazzonia, le vette delle Ande e le pianure della Patagonia in questo scenario</Italian>
         <Spanish>Sudamérica (Estándar, 40x53): conquista las selvas del Amazonas, las cumbres de los Andes y las llanuras de la Patagonia en este escenario</Spanish>
+        <Russian>Южная Америка (40x53): покорите джунгли Амазонки, вершины Анд и равнины Патагонии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_THE_NEW_WORLD</Tag>
@@ -108,6 +120,7 @@
         <German>Die Neue Welt (Gigantisch, 110x215): Geographisch korrekte Karte der Neuen Welt.</German>
         <Italian>Il Nuovo Mondo (Gigantesca, 110x215): Mappa geograficamente corretta del Nuovo Mondo.</Italian>
         <Spanish>El Nuevo Mundo (Gigante, 110x215): Mapa geográficamente correcto del Nuevo Mundo.</Spanish>
+        <Russian>Новый мир (110x215): географически корректная карта Нового Света</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_TWO_CONTINENTS</Tag>
@@ -116,6 +129,7 @@
         <German>Zwei Kontinente (Gigantisch, 110x215): Je ein großer Kontinent in der Nördlichen und in der Südlichen Hemisphäre, beide voneinander getrennt durch eine breite Wasserstraße.</German>
         <Italian>Due Continenti (Gigantesca, 110x215): Due giganteschi continenti situati nell'emisfero settentrionale e meridionale, separati da un ampio stretto.</Italian>
         <Spanish>Dos Continentes (Gigante, 110x215): Dos gigantescos continentes situados en los hemisferios Norte y Sur, separados por un ancho estrecho.</Spanish>
+        <Russian>Два континента (110x215): два гигантских континента, расположенные в Северном и Южном полушариях, разделенные широким проливом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_WTP_UNCHARTED_LANDS_DESC</Tag>
@@ -124,6 +138,7 @@
         <German>Unbekannte Länder (Riesig, 58x100): Unbekannte Länder ist eine generierte Karte und manuell für WTP modifiziert.</German>
         <Italian>Terre Inesplorate (Enorme, 58x100): Terre Inesplorate è una mappa generata e modificata manualmente per WTP.</Italian>
         <Spanish>Tierras Inexploradas (Enorme, 58x100): Tierras Inexploradas es un mapa generado y modificado manualmente para WTP.</Spanish>
+        <Russian>Неизведанные земли (58x100): автоматически сгенерированная карта, модифицированная вручную для WTP 4.Х.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_WTP_UNDISCOVERED_WORLD_DESC</Tag>
@@ -132,6 +147,7 @@
         <German>Unentdeckte Welt (Gigantisch, 108x215): Unentdeckte Welt ist eine generierte Karte und manuell für WTP modifiziert.</German>
         <Italian>Mondi da Scoprire (Gigantesca, 108x215): Mondi da Scoprire è una mappa generata e modificata manualmente per WTP.</Italian>
         <Spanish>Mundos por Descubrir (Gigante, 108x215): Mundos por Descubrir es un mapa generado y modificado manualmente para WTP.</Spanish>
+        <Russian>Неоткрытые миры (108x215): автоматически сгенерированная карта, модифицированная вручную для WTP 4.Х.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_WTP_UNKNOWN_CONTINENTS_DESC</Tag>
@@ -140,6 +156,7 @@
         <German>Unbekannte Kontinente (Massiv, 85x137): Unbekannte Kontinente ist eine generierte Karte und manuell für WTP modifiziert.</German>
         <Italian>Continenti Sconosciuti (Massicce, 85x137): Continenti Sconosciuti  è una mappa generata e modificata manualmente per WTP.</Italian>
         <Spanish>Continentes Desconocidos (Masivo, 85x137): Continentes Desconocidos es un mapa generado y modificado manualmente para WTP.</Spanish>
+        <Russian>Неизвестные континенты (85x137): автоматически сгенерированная карта, модифицированная вручную для WTP 4.Х.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_WEST_INDIES_DESC</Tag>
@@ -148,6 +165,7 @@
         <German>West-Indien (Riesig, 88x58): Karte von West-Indien</German>
         <Italian>Le Antille (Enorme, 88x58): Mappa delle Antille</Italian>
         <Spanish>Las Antillas (Enorme, 88x58): Mapa de las Antillas</Spanish>
+        <Russian>Западная Индия (88x58): карта островов Карибского бассейна </Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_WESTERN_HEMI_DESC</Tag>
@@ -156,6 +174,7 @@
         <German>Westlichen Hemisphäre (Standard, 49x70): hinterlassen Sie in diesem Szenario Ihre Spuren in allem, was westlich des Atlantiks liegt!</German>
         <Italian>Emisfero occidentale (Standard, 49x70): lasciate il vostro segno su tutto ciò che si trova a ovest dell'Atlantico in questo scenario!</Italian>
         <Spanish>Hemisferio occidental (Estándar, 49x70): ¡deja tu huella en todo lo que hay al oeste del Atlántico en este escenario!</Spanish>
+        <Russian>Западное полушарие (49x70): оставьте свой след на всем, что находится к западу от Атлантики!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_WESTERN_HEMI_HUGE_DESC</Tag>
@@ -164,6 +183,7 @@
         <German>Westlichen Hemisphäre (Riesig, 72x100): kolonisieren Sie die gesamte Neue Welt in diesem Szenario</German>
         <Italian>Emisfero occidentale (Enorme, 72x100): colonizzare tutto il Nuovo Mondo in questo scenario</Italian>
         <Spanish>Hemisferio occidental (Enorme, 72x100): coloniza todo el Nuevo Mundo en este escenario</Spanish>
+        <Russian>Западное полушарие (72x100): колонизируйте весь Новый Свет</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_SCRIPT_ANEWWORLD_DESCR</Tag>
@@ -172,6 +192,7 @@
         <German>Zufallsgenerierte Welt mit einem großen Kontinent, der vom Nord- bis zum Südpol reicht</German>
         <Italian>Un Nuovo Mondo attende di essere scoperto. Lo script di questa mappa crea un continente che si estende dal Polo Nord al Polo Sud.</Italian>
         <Spanish>Un Nuevo Mundo aguarda a ser descubierto. Esta secuencia de comandos del mapa genera un continente que se extiende desde el Polo Norte al Polo Sur.</Spanish>
+        <Russian>Новый Мир ждет своего первооткрывателя. Этот скрипт карты создает континент, простирающийся от Северного полюса до Южного полюса.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_SCRIPT_CARIBBEAN_DESCR</Tag>
@@ -180,6 +201,7 @@
         <German>Zufallsgenerierte Inselwelt, die der Karibik ähnelt.</German>
         <Italian>Fai una vacanza al mare e conquista un intero arcipelago, in questa mappa caraibica semi-casuale.</Italian>
         <Spanish>Dejaos seducir por el ambiente de las islas y apoderaos de ellas en este mapa semialeatorio del Caribe.</Spanish>
+        <Russian>Вдохните чудесный островной воздух и захватите сами острова на этой полурандомизированной карте Карибского бассейна.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_DISTANCE</Tag>
@@ -323,6 +345,7 @@
         <German>[COLOR_WARNING_TEXT]Maximal %d1 [NUM1:Einheit:Einheiten] pro Siedlung[COLOR_REVERT]</German>
         <Italian>[COLOR_WARNING_TEXT]Massimo %d1 unità per insediamento[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_WARNING_TEXT]%d1 [NUM1:unidad:unidades] como máximo por asentamiento[COLOR_REVERT]</Spanish>
+        <Russian>[COLOR_WARNING_TEXT]Максимум %d1 [NUM1:юнит:юнитов] на поселение[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_CITY_DATA</Tag>
@@ -707,6 +730,7 @@
         <German>Kartengröße : %s1_size</German>
         <Italian>Dimensioni mappa : %s1_size</Italian>
         <Spanish>Tamaño : %s1_size</Spanish>
+        <Russian>Размер карты : %s1_size</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_REGENERATE_MAP</Tag>
