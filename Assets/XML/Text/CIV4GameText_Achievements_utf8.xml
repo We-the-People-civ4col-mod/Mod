@@ -132,21 +132,21 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_PACIFIC_HEAD</Tag>
         <English>A sea as still and peaceful as the sky</English>
-        <French>Vous avez découvert l'océan Pacifique</French>
+        <French>Une mer aussi calme et sereine que le ciel</French>
         <German>Ein Meer, so still und friedlich wie der Himmel</German>
         <Russian>Продолжаем плыть на Запад</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_PACIFIC_TEXT</Tag>
         <English>Not long ago your explorer peered into the distance in disbelief. Beyond the beach, an endless expanse of water stretched to the horizon. A sea as wide as the sky.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]He was right,[COLOR_REVERT]" he murmurs, "[COLOR_SELECTED_TEXT]the governor was right.[COLOR_REVERT]" There is a sea route leading west from the New World, out into the endless expanse of a new ocean.[NEWLINE][NEWLINE]An ocean whose calm swells seem so peaceful, as if the thought of storms was just an old sailor's yarn. "[COLOR_SELECTED_TEXT]It shall be called the 'Pacific Ocean'. The 'Pacificus'![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
-        <French>Lorsque votre navire s'éloigne de la côte, vous réalisez que vous avez découvert l'Océan Pacifique. La route des Indes est enfin ouverte... Mais n'est-elle pas plus longue que Colomb l'imaginait ?[NEWLINE][NEWLINE]</French>
+        <French>Il y a peu, votre explorateur perdit son regard dans le lointain. Par delà la plage, une étendue d'eau sans fin s'étirait sous l'horizon. Une Mer aussi vaste que les cieux. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Il avait raison,[COLOR_REVERT]" murmura-t-il, "[COLOR_SELECTED_TEXT]le gouverneur avait raison.[COLOR_REVERT]" Il y a une route maritime vers l'Ouest, partant du Nouveau Monde, dans l'infinie étendue d'un nouvel océan.[NEWLINE][NEWLINE] Un océan dont le calme clapotis semble si apaisé, comme si les tempêtes n'étaient qu'un cauchemar de vieux marin. "[COLOR_SELECTED_TEXT]Ce sera donc "l'Océan Pacifique". Le 'Pacifique'![COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
         <German>Ungläubig starrt Euer Entdecker in die Ferne. Jenseits der Küstenlinie dehnt sich eine schier endlose Wasserfläche bis zum Horizont. Ein Meer, so weit wie der Himmel.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Er hatte recht,[COLOR_REVERT]" murmelt er, "[COLOR_SELECTED_TEXT]der Gouverneur hatte recht.[COLOR_REVERT]" Es gibt einen Seeweg, der von der Neuen Welt aus Richtung Westen führt, hinaus in die endlose Weite eines neuen Ozeans.[NEWLINE][NEWLINE]Ein Ozean, dessen ruhiger Wellengang so friedlich wirkt, als wäre der Gedanke an Unwetter nur Seemannsgarn. "[COLOR_SELECTED_TEXT]Der 'Stille Ozean' soll er heißen. Der 'Pacificus'![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>Не так давно ваш исследователь недоверчиво вглядывался вдаль. За береговой линией до самого горизонта простиралась бесконечная водная гладь. Море такое же широкое, как небо.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Он был прав,[COLOR_REVERT] – бормочет он, – [COLOR_SELECTED_TEXT]губернатор был прав.[COLOR_REVERT]" Морской путь ведет на запад от Нового Света, в бескрайние просторы нового океана.[NEWLINE][NEWLINE]Океан, чьи спокойные волны кажутся такими умиротворяющими, как будто мысли о штормах были просто сказкой старого моряка. "[COLOR_SELECTED_TEXT]Какой же он спокойный. Тихий океан![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ATLANTIC</Tag>
         <English>A dream of fame and glory</English>
-        <French>Vous rêvez d'un monde nouveau</French>
+        <French>Un rêve de gloire et de renommée</French>
         <German>Ein Traum von Ruhm und Glorie</German>
         <Italian>Un sogno di fama e gloria</Italian>
         <Spanish>Un sueño de fama y gloria</Spanish>
@@ -155,7 +155,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ATLANTIC_HEAD</Tag>
         <English>A dream of fame and glory</English>
-        <French>Vous rêvez d'un monde nouveau</French>
+        <French>Un rêve de gloire et de renommée</French>
         <German>Ein Traum von Ruhm und Glorie</German>
         <Italian>Un sogno di fama e gloria</Italian>
         <Spanish>Un sueño de fama y gloria</Spanish>
@@ -164,14 +164,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ATLANTIC_TEXT</Tag>
         <English>Just a moment ago, you were sitting at your desk by candlelight, poring over old parchments that whisper of an unknown land on faraway shores.[NEWLINE][NEWLINE]A vision appears. Sights and sounds of everyday life fade away. Night-black darkness and silence stun your senses.[NEWLINE][NEWLINE]You see yourself on a coast far from home. You stand surrounded by your men. You hear your voice claiming this wilderness as your own.[NEWLINE][NEWLINE]An ensign plants your flag in the soil of this New World, and a devout churchman thanks the Creator for letting you discover it.[NEWLINE][NEWLINE]You realize that this is the path predestined for you. The path that will write your name in the annals of history, so that for a thousand years and more every child will see you as a symbol of daring and bravery.[NEWLINE][NEWLINE]As your vision fades away, you understand what you must do in the morning.[NEWLINE][NEWLINE]</English>
-        <French>Cela fait déjà 77 ans que des navigateurs portugais un peu fou ont réussi à franchir le Cap Chaunar, ouvrant alors le monde au-delà des côtes marocaines. Aujourd'hui, il n'y a plus de doutes possibles : navigateurs, astronomes, mathématiciens, savants, tous par leurs observations convergent vers la même conclusion... elle est ronde.[NEWLINE][NEWLINE]Cette nuit vous avez rêvé. Rêver d'un chemin vers l'Ouest, un chemin vers les Indes, un chemin vers le Nouveau Monde. Ce matin, vous savez ce qu'il vous reste à faire.[NEWLINE][NEWLINE]</French>
+        <French>À l'instant, vous étiez assis à votre bureau éclairé à la bougie, repassant sur de vieux parchemins qui évoquent une terre inconnue aux rivages lointains.[NEWLINE][NEWLINE]Une vision vous assaille. Les bruits et les images du quotidien s'effacent. Le silence et l'obscurité profonde de la nuit assoment vos sens.[NEWLINE][NEWLINE] Vous vous voyez sur une côte loin de vos foyer. Vous vous dressez entouré de vos hommes. Vous entendez votre voix revendiquer ces terres sauvages comme les vôtres.[NEWLINE][NEWLINE]Un porte-drapeau plante votre drapeau dans le sol de ce Nouveau Monde, et un prélât dévôt remercie le Seigneur pour cette découverte.NEWLINE][NEWLINE]Vous réalisez que cette voie vous est prédestinée. Cette voie qui gardera votre nom gravé dans les annales, so that for a thousand years and more every child will see you as a symbol of daring and bravery.[NEWLINE][NEWLINE]As your vision fades away, you understand what you must do in the morning.[NEWLINE][NEWLINE]</French>
         <German>Eben habt Ihr noch bei Kerzenschein an Eurem Schreibtisch gesessen und über alten Pergamenten gebrütet, die von einem unbekanntem Land an fernen Gestaden raunen.[NEWLINE][NEWLINE]Da sucht Euch eine Vision heim. Licht und Lärm des Lebens verstummen, nachtschwarze Dunkelheit und Stille betäuben Eure Sinne. Dann seht Ihr Euch selbst, an einer Küste fern der Heimat.[NEWLINE][NEWLINE]Ihr steht im Kreise Eurer Männer. Ihr hört Eure Stimme, wie sie diese Wildnis als Euer Eigen beansprucht.[NEWLINE][NEWLINE]Ein Fähnrich pflanzt Eure Flagge in das Erdreich dieser Neuen Welt, und ein frommer Kirchenmann dankt dem Schöpfer, dass er Euch sie entdecken ließ.[NEWLINE][NEWLINE]Ihr erkennt, dass dies der Euch vorherbestimmte Pfad ist. Der Weg, der Euren Namen in die Annalen schreiben wird, auf dass er noch im nächsten Millennium als Symbol für Wagemut und Tapferkeit jedem Kind bekannt ist.[NEWLINE][NEWLINE]Als Eure Vision erlischt, wisst Ihr, was Ihr am nächsten Morgen zu tun habt.[NEWLINE][NEWLINE]</German>
         <Russian>Всего минуту назад вы сидели за письменным столом при свете свечи и корпели над старыми пергаментами, своими записями шептавшими вам о неведомой земле за бескрайней водной гладью на западе.[NEWLINE][NEWLINE]И тут вас посещает видение. Свет и шум жизни умолкают, кромешная тьма и тишина ошеломляют ваши чувства.[NEWLINE][NEWLINE]А потом вы видите себя на каком-то берегу, вдали от дома. Вы стоите в окружении своих людей, слышите свой голос, объявляющий эту дикую местность своей собственностью.[NEWLINE][NEWLINE]Знаменосец водружает ваш флаг на небольшом песчаном холме новой земли, а благочестивый священник благодарит Создателя за то, что тот открыл его слуге путь к Новому миру.[NEWLINE][NEWLINE]Вы понимаете, что это путь, предначертанный вам. Путь, который впишет ваше имя в анналы истории, чтобы еще тысячу лет каждый ребенок видел в вас символ смелости и отваги.[NEWLINE][NEWLINE]По мере того, как ваше видение угасает, вы начинаете понимать, чем должны будете заняться следующим утром.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_LANDFALL</Tag>
         <English>"Land, ho!"</English>
-        <French>« Terre en vu ! »</French>
+        <French>« Terre en vue ! »</French>
         <German>"Land in Sicht!"</German>
         <Russian>"Земля-я-я-я!"</Russian>
     </TEXT>
@@ -185,7 +185,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_LANDFALL_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Land, ho![COLOR_REVERT]" comes the call from the crow's nest one morning, and your men rush on deck.[NEWLINE][NEWLINE]On the horizon you can make out a distant silhouette. At last! After long weeks at sea, you have reached a land where no devout Christian man has ever before set foot.[NEWLINE][NEWLINE]A New World waits for you to subdue it. What wonders and what horrors await you?[NEWLINE][NEWLINE]</English>
-        <French>C'est le cri poussé par le matelot du haut de la vigie. Vous ne vous trompiez donc pas, votre survie est assurée ! N'est-ce pas un Nouveau Monde qui semble s'ouvrir à vous ?[NEWLINE][NEWLINE]</French>
+        <French>« [COLOR_SELECTED_TEXT]Terre en vue ! [COLOR_REVERT] » C'est le cri poussé par le gabier du haut de la vigie un beau matin, et vos hommes se ruent sur le pont.[NEWLINE][NEWLINE] À l'horizon, vous distinguez au loin une silhouette. Enfin! Après de longues semaines en mer, vous avez atteint une terre qu'aucun fidèle chrétien n'avait encore foulée.[NEWLINE][NEWLINE]Un Nouveau Monde s'ouvre à vous pour que vous le soumettiez. Quelles merveilles, quelles horreurs vous y attendent?[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Land in Sicht![COLOR_REVERT]" erschallt eines Morgens der Ruf aus dem Krähennest, und Eure Männer stürzen an Deck.[NEWLINE][NEWLINE]Ihr erspäht am Horizont einen grauen Schattenriss. Endlich! Nach langen Wochen auf See habt Ihr ein Land entdeckt, auf das noch kein frommer Christenmensch seinen Fuß gesetzt hat.[NEWLINE][NEWLINE]Eine Neue Welt wartet darauf, dass Ihr sie Euch untertan macht. Welche Wunder und welche Schrecknisse werden Euch erwarten?[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Земля, йо-хо![COLOR_REVERT]" — раздается однажды утром крик наблюдателя из вороньего гнезда и ваши люди выбегают на палубу.[NEWLINE][NEWLINE]На горизонте видны очертания суши. Наконец-то! После долгих недель в море вы достигли земли, где еще не ступала нога набожного христианина.[NEWLINE][NEWLINE]Новый мир ждет своих исследователей и покорителей. Какие чудеса и какие ужасы ждут вас? Неизвестность пугает и манит. Вперед![NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -199,14 +199,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FOUNDING_HEAD</Tag>
         <English>Housewarming</English>
-        <French>Votre première colonie</French>
+        <French>Pendaison de crémaillère</French>
         <German>Richtfest</German>
         <Russian>Новоселье</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FOUNDING_TEXT</Tag>
         <English>The carpenters put aside their hammers, and you open the last barrel of brandy you brought from the old country.[NEWLINE][NEWLINE]Exhausted and satisfied, your people look at the first camp they have set up. It is not large, but it is a beginning.[NEWLINE][NEWLINE]You now have your first settlement in the New World. The brush will be cleared; fertile land will be cultivated.[NEWLINE][NEWLINE]You clear your throat and look around. Heads bow, and you raise your voice in thanksgiving to the Lord who watches over you.[NEWLINE][NEWLINE]</English>
-        <French>Vos colons ont découvert un lieu propice à l'établissement d'une colonie dans ce Nouveau Monde, riche en bois de construction et en gibier de toute sorte.[NEWLINE][NEWLINE]</French>
+        <French>Les charpentiers posent leurs outils, et vous ouvrez le dernier tonneau de liqueur de votre pays d'origine. [NEWLINE][NEWLINE]Épuisés mais contents, vos gens regardent le camp de départ qu'ils ont établi. Il n'est pas bien gros, mais c'est un bon début.[NEWLINE][NEWLINE] Vosu avez votre première colonies dans le nouveau monde. Les terres seront défrichées; les plus fertiles seront cultivées.[NEWLINE][NEWLINE] Vous vous éclaircissez la gorge et regardez à la ronde. Tous s'inclinent, et vous prononcez fort et clair l'action de grâce pour le Seigneur qui vous regarde.[NEWLINE][NEWLINE]</French>
         <German>Die Zimmerleute legen ihre Hämmer beiseite, und Ihr lasst das letzte Fässchen Branntwein öffnen, das Ihr aus der alten Heimat mitgebracht habt.[NEWLINE][NEWLINE]Erschöpft und zufrieden blicken Eure Leute auf das erste Lager, das sie errichtet haben. Es ist nicht groß, aber es ist ein Anfang.[NEWLINE][NEWLINE]Ihr habt nun Eure erste Niederlassung in der Neuen Welt. Das Gestrüpp wird gerodet, das fruchtbare Land bestellt werden.[NEWLINE][NEWLINE]Ihr räuspert Euch und blickt in die Runde. Die Köpfe senken sich, und Ihr erhebt Eure Stimme zu einem Dankgebet an den Herrn, der über Euch wacht.[NEWLINE][NEWLINE]</German>
         <Russian>Плотники отложили в сторону молотки и вы открыли последнюю бочку с бренди, которую привезли с собой из Европы.[NEWLINE][NEWLINE]Измученные и довольные, ваши люди смотрят на своё поселение. Оно небольшое, но это только начало.[NEWLINE][NEWLINE]Теперь у вас есть первое поселение в Новом Свете. Заросли будут расчищены, плодородная земля будет возделана.[NEWLINE][NEWLINE]Вы оглядываете своих спутников. Склоняются головы и вы произносите молитвы, благодаря Господа, который охраняет и направляет вас на этом полном опасностей пути.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -220,14 +220,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWO_COLONIES_HEAD</Tag>
         <English>Extended journey</English>
-        <French>L'expansion commence !</French>
+        <French>Un voyage qui perdure.</French>
         <German>Weiterfahrt</German>
         <Russian>Долгое путешествие</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWO_COLONIES_TEXT</Tag>
         <English>Stunned cries ring out, then there is a clatter up the narrow stairs, and a ragged crowd of emigrant children in clogs tumbles onto the ship's bridge.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Take it easy![COLOR_REVERT]" the captain grumbles amiably.[NEWLINE][NEWLINE]Their parents follow, the mother wringing her hands, and the father looking as indignant as if he'd eaten bad porridge. "[COLOR_SELECTED_TEXT]Jesus, Mary and Joseph![COLOR_REVERT]" he shouts, pointing to the nearby coastal village the ship is sailing past, "[COLOR_SELECTED_TEXT]why don't you take us ashore?[COLOR_REVERT]"[NEWLINE][NEWLINE]Distrust and fear are suddenly written all over his face. "[COLOR_SELECTED_TEXT]Are you looking for a remote bay to sell us to the pirates?[COLOR_REVERT]"[NEWLINE][NEWLINE]Then the captain laughs, so heartily that the children start to giggle.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Don't worry, my good man! Look down the coast and see those plumes of smoke on the horizon. The good governor has long called this second settlement his own. There you will find your new home.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
-        <French>Vous avez désormais deux colonies dans le Nouveau Monde[NEWLINE][NEWLINE]</French>
+        <French>Des cris étouffés résonnent, suivi d'une cavalcade gravissant l'escalier étroits, et une foule d'enfants dépenaillés en guenilles déboulent sur le pont du navire.[NEWLINE][NEWLINE]« [COLOR_SELECTED_TEXT]Du calme ![COLOR_REVERT] » bougonne gentiment le capitaine.[NEWLINE][NEWLINE] Leurs parents arrivent, la mère se tordant les mains, et le père avec la mine renfrognée, comme s'il venait de manger un mauvais gruau. « Jésus, Marie, Joseph ! » crie-t-il quand il voit le village côtier pourtant si proche s'éloigner; le navire est en train de le doubler, «[COLOR_SELECTED_TEXT] Pourquoi vous ne nous débarquez pas ?[COLOR_REVERT] » [NEWLINE][NEWLINE] Son visage se crispe immédiatement de défiance et de peur. « [COLOR_SELECTED_TEXT] Vous cherchez une baie discrète pour nous vendre aux pirates ou quoi ?[COLOR_REVERT] » [NEWLINE][NEWLINE] Le capitaine se met alors à rire, de si bon coeur que les enfants en gloussent.[NEWLINE][NEWLINE] «[COLOR_SELECTED_TEXT] Ne vous faites pas de souci, mon brave! Regardez au loin sur la côte, et voyez ces panaches de fumée à l'horizon. Notre cher gouverneur revendique depuis longtemps cette deuxième colonie comme l'une des siennes. Votre nouveau foyer sera là-bas.[COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
         <German>Verblüffte Schreie erschallen, dann klappert es die schmale Stiege herauf, und eine zerlumpte Schar Auswandererkinder in Holzschuhen purzelt auf das Achterdeck.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Immer mit der Ruhe![COLOR_REVERT]", brummt der Kapitän freundlich.[NEWLINE][NEWLINE]Ihre Eltern folgen, die Mutter ringt die Hände, und der Vater blickt so empört, als habe man ihm in die Morgengrütze gespuckt. "[COLOR_SELECTED_TEXT]Jesses, Maria und Josef![COLOR_REVERT]", ruft er und zeigt auf das nahe Küstendorf, an dem das Schiff vorbeisegelt, "[COLOR_SELECTED_TEXT]warum bringt Ihr uns nicht an Land?[COLOR_REVERT]"[NEWLINE][NEWLINE]Misstrauen und Angst stehen ihm plötzlich ins Gesicht geschrieben. "[COLOR_SELECTED_TEXT]Wollt Ihr uns vielleicht in einer entlegenen Bucht an die Piraten verkaufen?[COLOR_REVERT]"[NEWLINE][NEWLINE]Da lacht der Kapitän, so herzhaft, dass die Kinder mitkichern müssen.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Keine Sorge, guter Mann! Schaut mal die Küste entlang und blickt auf die Rauchfahnen am Horizont. Der gute Gouverneur nennt längst eine zweite Siedlung sein Eigen, und dort werdet Ihr Eure neue Heimat finden.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>Раздаются громкие крики, затем слышится топот башмаков по узкой лестнице и на мостике корабля появляется пёстрая толпа эмигрантских детей.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Тихо, вы, успокойтесь![COLOR_REVERT]" — дружелюбно ворчит капитан.[NEWLINE][NEWLINE]За детьми появляются их родители. Мать заламывает руки, а отец выглядит таким возмущенным, как будто он съел недоваренную кашу. "[COLOR_SELECTED_TEXT]Иисус, Мария и Иосиф![COLOR_REVERT] – кричит он, указывая на какую-то прибрежную деревушку, мимо которой проплывает корабль. – [COLOR_SELECTED_TEXT]Почему бы вам не высадить нас на берег в этом месте?[COLOR_REVERT]"[NEWLINE][NEWLINE] На его лице внезапно появляются недоверие и страх. "[COLOR_SELECTED_TEXT]Вы ищете удаленную бухту, чтобы продать нас пиратам?![COLOR_REVERT]"[NEWLINE][NEWLINE]После этих слов капитан начинает смеяться так искренне, что дети начинают хихикать.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Не волнуйся, добрый человек! Посмотри чуть дальше вдоль берега и увидишь вон те клубы дыма на горизонте. Этот второй поселок, который добрый губернатор приказал заложить на теперь уже нашей земле. Там вы найдете свой новый дом.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -248,7 +248,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FOUR_COLONIES_TEXT</Tag>
         <English>A loud voice resounds across the square in front of your austere governor's mansion. You walk to the narrow window and look down at the crowd surrounding the crier.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]This land is blessed[COLOR_REVERT]", the man announces in a clear voice. "[COLOR_SELECTED_TEXT]Out in the wilderness the fourth of our settlements has been established in the past week. Fertile fields will be tilled, strong houses built, healthy children born, and the word of the Lord proclaimed.[NEWLINE][NEWLINE]Undoubtedly, we owe this not only to our diligence and the benevolence of the Almighty; but also to the wisdom and prudence of our leader.[COLOR_REVERT]"[NEWLINE][NEWLINE]The crowd nods approvingly.[NEWLINE][NEWLINE]</English>
-        <French>Vous disposez dorénavant de quatre colonies dans le Nouveau Monde. Les richesses de ces terres sont-elles sans limite ?[NEWLINE][NEWLINE]</French>
+        <French>Une voie forte résonne à travers la place devant votre austère manoir de gouverneur. Vous marchez devant l'étroite fenêtre et baissez votre regard vers la foule entourant le crieur public. [NEWLINE][NEWLINE] «[COLOR_SELECTED_TEXT] Cette terre est bénie.[COLOR_REVERT]» L'homme annonce d'un timbre clair «[COLOR_SELECTED_TEXT]Dans les terres sauvages, nous avons fondés la quatrième de nos colonies. Les champs féconds seront labourés, des maisons solides construites, et des enfants sains mis au monde, et la parole du Seigneur sera louée.[NEWLINE][NEWLINE]Sans doute, nous devons ceci à la bienveillance et aux bons soins du Tout-Puissant; mais aussi à la sagesse et aux bons conseils de notre chef.[COLOR_REVERT]»[NEWLINE][NEWLINE]La foule approuve en hochant.[NEWLINE][NEWLINE]</French>
         <German>Eine laute Stimme erschallt über den Platz vor Eurem schmucklosen Gouverneurspalast. Ihr schreitet zum schmalen Fenster und blickt hinunter auf die Menge, die den Ausrufer umringt.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Dieses Land ist gesegnet[COLOR_REVERT]", verkündet der Mann mit klarer Stimme. "[COLOR_SELECTED_TEXT]Ein Stück weiter die Wildnis herab wurde in der vergangenen Woche die vierte unserer Siedlungen errichtet. Fruchtbare Äcker werden bestellt, feste Häuser gebaut, gesunde Kinder geboren und das Wort des Herrn verkündet werden.[NEWLINE][NEWLINE]Zweifellos verdanken wir dies nicht nur unserem Fleiß und dem Wohlwollen des Allmächtigen. Sondern auch der Klugheit und Umsicht unseres Anführers.[COLOR_REVERT]"[NEWLINE][NEWLINE]Die Menge nickt beifällig.[NEWLINE][NEWLINE]</German>
         <Russian>Громкий голос разносится по площади перед вашим строгим особняком губернатора. Вы подходите к узкому окну и смотрите на толпу, окружавшую глашатая.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Эта земля благословлена[COLOR_REVERT]" — отчетливо объявляет мужчина. "[COLOR_SELECTED_TEXT]На прошлой неделе в глуши было основано четвертое наше поселение.Будут строиться крепкие дома, возделываться плодородные поля, рождаться здоровые дети и благодать Господа нашего защитит детей его от невзгод и бед.[NEWLINE][NEWLINE]Несомненно, этим мы обязаны не только нашему усердию и благосклонности Всевышнего, но и мудрости и благоразумию нашего лидера.[COLOR_REVERT]"[NEWLINE][NEWLINE]Толпа одобрительно кивает.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -262,7 +262,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_COLONIES_HEAD</Tag>
         <English>The oracle</English>
-        <French>« Mais que recherchent ces gens chez nous ? »</French>
+        <French>L'oracle</French>
         <German>Das Orakel</German>
         <Russian>Оракул</Russian>
     </TEXT>
@@ -367,7 +367,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWO_CHURCHES_HEAD</Tag>
         <English>Praise the Lord</English>
-        <French>Votre deuxième église</French>
+        <French>Loué soit le Seigneur</French>
         <German>Lobet den Herrn</German>
         <Russian>Хвала Господу</Russian>
     </TEXT>
@@ -423,7 +423,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_LUMBERMILLS</Tag>
         <English>Three lumbermills</English>
-        <French>Votre troisième la scierie</French>
+        <French>Votre troisième scierie</French>
         <German>Drei Sägewerke in Städten</German>
         <Russian>Три лесопилки</Russian>
     </TEXT>
