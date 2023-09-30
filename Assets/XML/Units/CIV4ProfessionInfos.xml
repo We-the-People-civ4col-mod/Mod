@@ -5266,7 +5266,7 @@
             <bCityDefender>1</bCityDefender>
             <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
-            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <bNoDefensiveBonus>1</bNoDefensiveBonus>
             <iCombatChange>3</iCombatChange>
             <iBarracksSpaceNeededChange>1</iBarracksSpaceNeededChange>
             <iMovesChange>0</iMovesChange>
@@ -5431,7 +5431,7 @@
             <bCityDefender>1</bCityDefender>
             <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
-            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <bNoDefensiveBonus>1</bNoDefensiveBonus>
             <iCombatChange>8</iCombatChange>
             <iBarracksSpaceNeededChange>1</iBarracksSpaceNeededChange>
             <iMovesChange>0</iMovesChange>
@@ -5480,7 +5480,7 @@
             <bCityDefender>1</bCityDefender>
             <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
-            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <bNoDefensiveBonus>1</bNoDefensiveBonus>
             <iCombatChange>12</iCombatChange>
             <iBarracksSpaceNeededChange>1</iBarracksSpaceNeededChange>
             <iMovesChange>0</iMovesChange>
@@ -5768,7 +5768,7 @@
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>5</iCombatChange>
-        	<iBombardRateChangeProfession>10</iBombardRateChangeProfession>
+            <iBombardRateChangeProfession>10</iBombardRateChangeProfession>
             <iBarracksSpaceNeededChange>1</iBarracksSpaceNeededChange>
             <iMovesChange>0</iMovesChange>
             <bMoveIntoPeak>0</bMoveIntoPeak>
@@ -5821,7 +5821,7 @@
             <bCityDefender>1</bCityDefender>
             <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
-            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <bNoDefensiveBonus>1</bNoDefensiveBonus>
             <iCombatChange>7</iCombatChange>
             <iBombardRateChangeProfession>20</iBombardRateChangeProfession>
             <iBarracksSpaceNeededChange>2</iBarracksSpaceNeededChange>
@@ -5876,7 +5876,7 @@
             <bCityDefender>1</bCityDefender>
             <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
-            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <bNoDefensiveBonus>1</bNoDefensiveBonus>
             <iCombatChange>9</iCombatChange>
             <iBombardRateChangeProfession>30</iBombardRateChangeProfession>
             <iBarracksSpaceNeededChange>2</iBarracksSpaceNeededChange>
