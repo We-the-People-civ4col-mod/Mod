@@ -62,7 +62,7 @@
     <TEXT>
         <Tag>TXT_KEY_CITIZEN_STATUS_INDENTURED</Tag>
         <English>[ICON_BULLET]Social Status : [COLOR_HIGHLIGHT_TEXT]Indentured Worker[COLOR_REVERT]</English>
-        <French>[ICON_BULLET]Statut Social : [COLOR_HIGHLIGHT_TEXT]Engagé[COLOR_REVERT]</French>
+        <French>[ICON_BULLET]Statut Social : [COLOR_HIGHLIGHT_TEXT]Travailleur sous contrat[COLOR_REVERT]</French>
         <German>[ICON_BULLET]Sozialer Status : [COLOR_HIGHLIGHT_TEXT]Schuldknecht[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET]Status Sociale : [COLOR_HIGHLIGHT_TEXT]Servo per contratto[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]Estatus Social : [COLOR_HIGHLIGHT_TEXT]Siervo por deudas[COLOR_REVERT]</Spanish>
@@ -71,7 +71,7 @@
     <TEXT>
         <Tag>TXT_KEY_CITIZEN_STATUS_FREE</Tag>
         <English>[ICON_BULLET]Social Status : [COLOR_HIGHLIGHT_TEXT]Free Citizen[COLOR_REVERT]</English>
-        <French>[ICON_BULLET]Statut Social : [COLOR_HIGHLIGHT_TEXT]Engagé[COLOR_REVERT]</French>
+        <French>[ICON_BULLET]Statut Social : [COLOR_HIGHLIGHT_TEXT]Citoyen libre[COLOR_REVERT]</French>
         <German>[ICON_BULLET]Sozialer Status : [COLOR_HIGHLIGHT_TEXT]Freier Bürger[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET]Status Sociale : [COLOR_HIGHLIGHT_TEXT]Cittadino libero[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]Estatus Social : [COLOR_HIGHLIGHT_TEXT]Ciudadano libre[COLOR_REVERT]</Spanish>
