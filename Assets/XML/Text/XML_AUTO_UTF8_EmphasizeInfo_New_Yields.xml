@@ -53,12 +53,12 @@
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_BAKERY_GOODS</Tag>
         <English>Emphasize Bakery Goods</English>
-        <German>Schwerpunkt Backwaren</German>
+        <German>Schwerpunkt Proviant</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_NO_BAKERY_GOODS</Tag>
         <English>Deemphasize Bakery Goods</English>
-        <German>Schwerpunkt Backwaren aufheben</German>
+        <German>Schwerpunkt Proviant aufheben</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_PEAT</Tag>

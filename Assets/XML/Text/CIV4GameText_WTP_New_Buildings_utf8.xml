@@ -847,7 +847,7 @@
         <Tag>TXT_KEY_BUILDING_BAKER_HOUSE_STRATEGY</Tag>
         <English>The [COLOR_HIGHLIGHT_TEXT]baker's house[COLOR_REVERT] is where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]provisions[\LINK] from [LINK=YIELD_BARLEY]barley[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] are particularly effective here.</English>
         <French>TBD</French>
-        <German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Bäckers[COLOR_REVERT] stellen [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Backwaren[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] her. [LINK=UNIT_BAKER]Bäckermeister[\LINK] sind hier besonders effektiv.</German>
+        <German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Bäckers[COLOR_REVERT] stellen [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Proviant[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] her. [LINK=UNIT_BAKER]Bäckermeister[\LINK] sind hier besonders effektiv.</German>
         <Italian>TBD</Italian>
         <Spanish>TBD</Spanish>
     </TEXT>
@@ -860,7 +860,7 @@
         <Tag>TXT_KEY_BUILDING_BAKER_SHOP_STRATEGY</Tag>
         <English>The [COLOR_HIGHLIGHT_TEXT]bakeshop[COLOR_REVERT] is the upgrade of the[LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]provisions[\LINK] from [LINK=YIELD_BARLEY]barley[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] are particularly effective here.</English>
         <French>TBD</French>
-        <German>Der [COLOR_HIGHLIGHT_TEXT]Bäckerladen[COLOR_REVERT] ist die Erweiterung des [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Backwaren[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] herstellen. [LINK=UNIT_BAKER]Bäckermeister[\LINK] sind hier besonders effektiv.</German>
+        <German>Der [COLOR_HIGHLIGHT_TEXT]Bäckerladen[COLOR_REVERT] ist die Erweiterung des [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Proviant[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] herstellen. [LINK=UNIT_BAKER]Bäckermeister[\LINK] sind hier besonders effektiv.</German>
         <Italian>TBD</Italian>
         <Spanish>TBD</Spanish>
     </TEXT>
@@ -873,7 +873,7 @@
         <Tag>TXT_KEY_BUILDING_BAKERY_STRATEGY</Tag>
         <English>The [COLOR_HIGHLIGHT_TEXT]bakery[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]provisions[\LINK] from [LINK=YIELD_BARLEY]barley[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] are particularly effective here.</English>
         <French>TBD</French>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Bäckerei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Backwaren[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] herstellen. [LINK=UNIT_BAKER]Bäckermeister[\LINK] sind hier besonders effektiv.</German>
+        <German>Die [COLOR_HIGHLIGHT_TEXT]Bäckerei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Proviant[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] herstellen. [LINK=UNIT_BAKER]Bäckermeister[\LINK] sind hier besonders effektiv.</German>
         <Italian>TBD</Italian>
         <Spanish>TBD</Spanish>
     </TEXT>
