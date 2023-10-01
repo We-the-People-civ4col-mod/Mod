@@ -362,7 +362,7 @@ def canTriggerThirdCity(argsList):
 	if not player.isPlayable():
 		return false
 	
-	if player.getNumCities() >= 2:
+	if player.getNumCities() >= 3:
 		return true
 
 	return false
