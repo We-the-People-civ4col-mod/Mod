@@ -3,7 +3,7 @@
     <TEXT>
         <Tag>TXT_KEY_ATTITUDE_ANNOYED</Tag>
         <English>Annoyed</English>
-        <French>S'inquiète</French>
+        <French>Contrarié:Contrariée</French>
         <German>Verärgert</German>
         <Italian>Infastidito:Infastidita</Italian>
         <Spanish>Molesta</Spanish>
@@ -12,7 +12,7 @@
     <TEXT>
         <Tag>TXT_KEY_ATTITUDE_CAUTIOUS</Tag>
         <English>Cautious</English>
-        <French>Se méfie</French>
+        <French>Prudent:Prudente</French>
         <German>Vorsichtig</German>
         <Italian>Cauto:Cauta</Italian>
         <Spanish>Cauta</Spanish>
@@ -30,7 +30,7 @@
     <TEXT>
         <Tag>TXT_KEY_ATTITUDE_FURIOUS</Tag>
         <English>Furious</English>
-        <French>En colère</French>
+        <French>Furieux:Furieuse</French>
         <German>Wütend</German>
         <Italian>Furioso:Furiosa</Italian>
         <Spanish>Furiosa</Spanish>

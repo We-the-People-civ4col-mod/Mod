@@ -153,7 +153,7 @@
         <Tag>TXT_KEY_PROMOTION_BROADSIDE</Tag>
         <English>Broadside</English>
         <French>
-            <Text>Flanc</Text>
+            <Text>Bordée</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
@@ -228,6 +228,7 @@
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_EVENT_CARGOSPACE</Tag>
         <English>Shipwright's Upgrade (Event)</English>
+        <French>Amélioration du charpentier de marine (Event)</French>
         <Russian>Искусный корабел (Событие)</Russian>
     </TEXT>
     <TEXT>
@@ -258,7 +259,7 @@
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_DISCOVERER</Tag>
         <English>Great Discoverer</English>
-        <French>Great Discoverer</French>
+        <French>Grand découvreur</French>
         <German>Großer Entdecker</German>
         <Italian>Great Discoverer</Italian>
         <Spanish>Great Discoverer</Spanish>
@@ -292,7 +293,7 @@
         <Tag>TXT_KEY_PROMOTION_DRILL_SERGEANT</Tag>
         <English>Drill Sergeant</English>
         <French>
-            <Text>Drill Sergeant</Text>
+            <Text>Sergent instructeur</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
@@ -430,8 +431,8 @@
         <Tag>TXT_KEY_PROMOTION_FORCED_MARCH1</Tag>
         <English>Forced March I</English>
         <French>
-            <Text>Forced March I</Text>
-            <Gender>Male</Gender>
+            <Text>Marche forcée I</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
         <German>Gewaltmarsch I</German>
@@ -451,7 +452,7 @@
         <Tag>TXT_KEY_PROMOTION_FORCED_MARCH2</Tag>
         <English>Forced March II</English>
         <French>
-            <Text>Forced March II</Text>
+            <Text>Marche forcée II</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
@@ -472,7 +473,7 @@
         <Tag>TXT_KEY_PROMOTION_FORMATION</Tag>
         <English>Fearless</English>
         <French>
-            <Text>Formation</Text>
+            <Text>Intrépide</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
@@ -589,7 +590,7 @@
         <Tag>TXT_KEY_PROMOTION_HOMELAND_GUARD1</Tag>
         <English>Homeland Guard I</English>
         <French>
-            <Text>Homeland Guard I</Text>
+            <Text>Garde patriote I</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
@@ -614,7 +615,7 @@
         <Tag>TXT_KEY_PROMOTION_HOMELAND_GUARD2</Tag>
         <English>Homeland Guard II</English>
         <French>
-            <Text>Homeland Guard II</Text>
+            <Text>Garde patriote  II</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
@@ -639,7 +640,7 @@
         <Tag>TXT_KEY_PROMOTION_HOMELAND_GUARD3</Tag>
         <English>Homeland Guard III</English>
         <French>
-            <Text>Homeland Guard III</Text>
+            <Text>Garde patriote III</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
@@ -808,7 +809,7 @@
         <Tag>TXT_KEY_PROMOTION_MINUTEMAN1</Tag>
         <English>Minuteman I</English>
         <French>
-            <Text>Patriote I</Text>
+            <Text>Garde volontaire I</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
@@ -829,7 +830,7 @@
         <Tag>TXT_KEY_PROMOTION_MINUTEMAN2</Tag>
         <English>Minuteman II</English>
         <French>
-            <Text>Patriote II</Text>
+            <Text>Garde volontaire II</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
@@ -850,7 +851,7 @@
         <Tag>TXT_KEY_PROMOTION_MINUTEMAN3</Tag>
         <English>Minuteman III</English>
         <French>
-            <Text>Patriote III</Text>
+            <Text>Garde volontaire III</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
@@ -1073,7 +1074,7 @@
         <Tag>TXT_KEY_PROMOTION_PIRACY1</Tag>
         <English>Piracy I</English>
         <French>
-            <Text>Piracy I</Text>
+            <Text>Piraterie I</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
@@ -1098,7 +1099,7 @@
         <Tag>TXT_KEY_PROMOTION_PIRACY2</Tag>
         <English>Piracy II</English>
         <French>
-            <Text>Piracy II</Text>
+            <Text>Piraterie II</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
@@ -1123,7 +1124,7 @@
         <Tag>TXT_KEY_PROMOTION_PIRACY3</Tag>
         <English>Piracy III</English>
         <French>
-            <Text>Piracy III</Text>
+            <Text>Piraterie III</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
@@ -1148,7 +1149,7 @@
         <Tag>TXT_KEY_PROMOTION_RANGER1</Tag>
         <English>Ranger I</English>
         <French>
-            <Text>Ranger I</Text>
+            <Text>Forestier I</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
@@ -1169,7 +1170,7 @@
         <Tag>TXT_KEY_PROMOTION_RANGER2</Tag>
         <English>Ranger II</English>
         <French>
-            <Text>Ranger II</Text>
+            <Text>Forestier II</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
@@ -1190,7 +1191,7 @@
         <Tag>TXT_KEY_PROMOTION_RANGER3</Tag>
         <English>Ranger III</English>
         <French>
-            <Text>Ranger III</Text>
+            <Text>Forestier III</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
@@ -1210,7 +1211,7 @@
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_RELIEF_BATTALION</Tag>
         <English>Relief Battalion</English>
-        <French>Relief Battalion</French>
+        <French>Bataillon de secours</French>
         <German>Reserve-Bataillon</German>
         <Italian>Relief Battalion</Italian>
         <Spanish>Relief Battalion</Spanish>
@@ -1273,7 +1274,7 @@
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_LARGE_RIVER_SAILING</Tag>
         <English>River Sailor</English>
-        <French>Swift de rivière</French>
+        <French>Navigation de rivière</French>
         <German>Flußsegler</German>
         <Italian>Fiume Veloce</Italian>
         <Spanish>Río Swift</Spanish>
@@ -1309,7 +1310,7 @@
         <Tag>TXT_KEY_PROMOTION_SEEHUNTER1</Tag>
         <English>High Sea Fisherman I</English>
         <French>
-            <Text>High-Sea Fisherman I</Text>
+            <Text>Pêcheur en haute mer I</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
@@ -1334,7 +1335,7 @@
         <Tag>TXT_KEY_PROMOTION_SEEHUNTER2</Tag>
         <English>High Sea Fisherman II</English>
         <French>
-            <Text>High-Sea Fisherman II</Text>
+            <Text>Pêcheur en haute mer II</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
@@ -1377,7 +1378,7 @@
         <Tag>TXT_KEY_PROMOTION_SIEGE</Tag>
         <English>Siege Guns</English>
         <French>
-            <Text>Siege Guns</Text>
+            <Text>Canons de siège</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
@@ -1770,7 +1771,7 @@
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Veterana I</Text>
+            <Text>Veterana III</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
@@ -1850,108 +1851,126 @@
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SLAVE_HUNTER_1</Tag>
         <English>Slave Hunter I</English>
+        <French>Chasseur d'esclave I</French>
         <German>Sklavenjäger I</German>
         <Russian>Охотник за рабами I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SLAVE_HUNTER_2</Tag>
         <English>Slave Hunter II</English>
+        <French>Chasseur d'esclave II</French>
         <German>Sklavenjäger II</German>
         <Russian>Охотник за рабами II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SLAVE_HUNTER_3</Tag>
         <English>Slave Hunter III</English>
+        <French>Chasseur d'esclave III</French>
         <German>Sklavenjäger III</German>
         <Russian>Охотник за рабами III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SLAVE_MASTER_1</Tag>
         <English>Slave Overseer I</English>
+        <French>Maitre des esclaves I</French>
         <German>Sklavenaufseher I</German>
         <Russian>Надсмотрщик I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SLAVE_MASTER_2</Tag>
         <English>Slave Overseer II</English>
+        <French>Maitre des esclaves II</French>
         <German>Sklavenaufseher II</German>
         <Russian>Надсмотрщик II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SLAVE_MASTER_3</Tag>
         <English>Slave Overseer III</English>
+        <French>Maitre des esclaves III</French>
         <German>Sklavenaufseher III</German>
         <Russian>Надсмотрщик III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_LAW_KEEPER_1</Tag>
         <English>Law Keeper I</English>
+        <French>Forces de l'ordre I</French>
         <German>Gesetzeshüter I</German>
         <Russian>Блюститель закона I</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_LAW_KEEPER_2</Tag>
         <English>Law Keeper II</English>
+        <French>Forces de l'ordre II</French>
         <German>Gesetzeshüter II</German>
         <Russian>Блюститель закона II</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_LAW_KEEPER_3</Tag>
         <English>Law Keeper III</English>
+        <French>Forces de l'ordre III</French>
         <German>Gesetzeshüter III</German>
         <Russian>Блюститель закона III</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_BRAVE_LIEUTENANT</Tag>
         <English>Commanded by Brave Lieutenant</English>
+        <French>Mené par un lieutenant hardi</French>
         <German>Befehligt durch Mutigen Leutnant</German>
         <Russian>Под началом Храброго лейтенанта</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_CAPABLE_CAPTAIN</Tag>
         <English>Commanded by Capable Captain</English>
+        <French>Commandé par un capitaine capable</French>
         <German>Commanded by Capable Captain</German>
         <Russian>Под началом Умелого капитана</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_NEGATIVE_LEAKING_HULL</Tag>
         <English>(Negative) Leaking Hull</English>
+        <French>(Négative) Voie d'eau</French>
         <German>(Negativ) Undichter Rumpf</German>
         <Russian>(Недостаток) Пробоина в корпусе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_NEGATIVE_TORN_SAILS</Tag>
         <English>(Negative) Torn Sails</English>
+        <French>(Négative) Voiles déchirée</French>
         <German>(Negativ) Gerissene Segel</German>
         <Russian>(Недостаток) Порванный парус</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_NEGATIVE_BROKEN_CANNONS</Tag>
         <English>(Negative) Broken Cannons</English>
+        <French>(Négative) Canons brisés</French>
         <German>(Negativ) Zerbrochene Kannonen</German>
         <Russian>(Недостаток) Сломанные пушки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_NEGATIVE_INFECTED_WOUNDS</Tag>
         <English>(Negative) Infected Wounds</English>
+        <French>(Négative) Blessure infectée</French>
         <German>(Negativ) Infizierte Wunden</German>
         <Russian>(Недостаток) Зараженные раны</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_NEGATIVE_WOUNDED_HORSES</Tag>
         <English>(Negative) Wounded Horses</English>
+        <French>(Négative) Chevaux blessés</French>
         <German>(Negativ) Verletzte Pferde</German>
         <Russian>(Недостаток) Раненые лошади</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_NEGATIVE_BROKEN_BLADES</Tag>
         <English>(Negative) Broken Blades</English>
+        <French>(Négative) Lames brisées</French>
         <German>(Negativ) Zerbrochene Klingen</German>
         <Russian>(Недостаток) Сломанные клинки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_NEGATIVE_BROKEN_GUNS</Tag>
         <English>(Negative) Broken Guns</English>
+        <French>(Négative) Fusils brisés</French>
         <German>(Negativ) Zerbrochene Gewehre</German>
         <Russian>(Недостаток) Сломанные ружья</Russian>
     </TEXT>

@@ -85,6 +85,7 @@
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_FEEDER</Tag>
         <English>Feeder</English>
+        <French>Gestionnaire d'importation</French>
         <German>Import-Manager</German>
         <Russian>Фидер</Russian>
     </TEXT>
