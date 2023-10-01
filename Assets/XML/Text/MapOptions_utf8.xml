@@ -4,61 +4,73 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS</Tag>
 		<English>Colony Land Size:</English>
+		<French>Taille de la colonie</French>
 		<Russian>Радиус колонии</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS_1_PLOT</Tag>
 		<English>1 Plot Radius</English>
+		<French>1 case de rayon</French>
 		<Russian>1 клетка</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS_2_PLOT</Tag>
 		<English>2 Plot Radius</English>
+		<French>2 cases de rayon</French>
 		<Russian>2 клетки</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_REGULARITY</Tag>
 		<English>Land Regularity:</English>
+		<French>Regularité des terres:</French>
 		<Russian>Кривизну береговой линии</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_REGULARITY_OPT_0</Tag>
 		<English>Very Irregular</English>
+		<French>Très irrégulière</French>
 		<Russian>Сильно искривлена</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_REGULARITY_OPT_1</Tag>
 		<English>Irregular Land Shapes (default)</English>
+		<French>Formes de terres irrégulières (par défaut)</French>
 		<Russian>Неправильные очертания (по умолчанию)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_REGULARITY_OPT_2</Tag>
 		<English>Regular</English>
+		<French>Irrégulière</French>
 		<Russian>Обычная</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LARGE_RIVER_PREVALENCE</Tag>
 		<English>River Prevalence:</English>
+		<French>Abondance des rivières:</French>
 		<Russian>Распространенность больших рек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LARGE_RIVER_PREVALENCE_OPT_0</Tag>
 		<English>Lower Likelihood of Large Rivers</English>
+		<French>Probabilité réduite de grandes rivières</French>
 		<Russian>Маленькая вероятность появления</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LARGE_RIVER_PREVALENCE_OPT_1</Tag>
 		<English>Balanced Odds of Large River Formation (default)</English>
+		<French>Probabilité moyenne de grandes rivières (par défaut)</French>
 		<Russian>Сбалансированные шансы образования (по умолчанию)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LARGE_RIVER_PREVALENCE_OPT_2</Tag>
 		<English>Higher Likelihood of Large Rivers</English>
+		<French>Probabilité élevée de grandes rivières</French>
 		<Russian>Высокая вероятность появления</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH</Tag>
 		<English>River Length:</English>
+		<French>Longueur des grandes rivières:</French>
 		<Russian>Длину больших рек</Russian>
 	</TEXT>
 	<TEXT>
@@ -74,6 +86,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_2</Tag>
 		<English>Minimum 7 Plots per Large River (default)</English>
+		<French>Minimum 7 cases par grande rivière (par défaut)</French>
 		<Russian>Минимум 7 плиток (по умолчанию)</Russian>
 	</TEXT>
 	<TEXT>
@@ -94,26 +107,31 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT</Tag>
 		<English>Land Mass:</English>
+		<French>Proportions de terres :</French>
 		<Russian>Долю массива суши</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT_OPT_0</Tag>
 		<English>25% Land</English>
+		<French>25% de terres</French>
 		<Russian>25% земли</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT_OPT_1</Tag>
 		<English>38% Land Size Ratio vs Ocean (default)</English>
+		<French>38% de terres (par défaut)</French>
 		<Russian>38% земли (по умолчанию)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT_OPT_2</Tag>
 		<English>45% Land</English>
+		<French>45% de terres</French>
 		<Russian>45% земли</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT_OPT_3</Tag>
 		<English>55% Land</English>
+		<French>55% de terres</French>
 		<Russian>55% земли</Russian>
 	</TEXT>
 </Civ4GameText>
