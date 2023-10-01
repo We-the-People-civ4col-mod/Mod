@@ -95,7 +95,7 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/experienced_settler.dds</FullLengthIcon>
             <fScale>0.54</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/settler/experienced_settler/Free_Colonist.nif</NIF>
+            <NIF>Art/Units/settler/experienced_settler/experienced_settler.nif</NIF>
             <KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -112,7 +112,7 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/experienced_settler.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/settler/experienced_settler_female/Expert_Sugar_Planter.nif</NIF>
+            <NIF>Art/Units/settler/experienced_settler_female/experienced_settler_female.nif</NIF>
             <KFM>Art/Units/Expert_Sugar_Planter/Expert_Sugar_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -129,7 +129,7 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/settler_woman/Expert_Sugar_Planter.nif</NIF>
+            <NIF>Art/Units/Settler/settler_woman/settler_woman.nif</NIF>
             <KFM>Art/Units/Expert_Sugar_Planter/Expert_Sugar_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -197,7 +197,7 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/native_slave.dds</FullLengthIcon>
             <fScale>0.54</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Native_Slave/Converted_Native.nif</NIF>
+            <NIF>Art/Units/Settler/Native_Slave/Native_Slave.nif</NIF>
             <KFM>Art/Units/Converted_Native/Converted_Native.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -231,8 +231,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/red_pepper_planter.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Red_Pepper_Planter/Expert_Sugar_Planter.nif</NIF>
-            <KFM>Art/Units/Settler/Expert_Red_Pepper_Planter/Expert_Sugar_Planter.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Red_Pepper_Planter/Expert_Red_Pepper_Planter.nif</NIF>
+            <KFM>Art/Units/Settler/Expert_Red_Pepper_Planter/Expert_Red_Pepper_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -250,7 +250,7 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/spice_trader.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Master_Spice_Trader/Expert_Sugar_Planter.nif</NIF>
+            <NIF>Art/Units/Settler/Master_Spice_Trader/Master_Spice_Trader.nif</NIF>
             <KFM>Art/Units/Expert_Sugar_Planter/Expert_Sugar_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -269,8 +269,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/furniture_maker.dds</FullLengthIcon>
             <fScale>0.55</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Master_Furniture_Maker/Indentured_Servant.nif</NIF>
-            <KFM>Art/Units/Settler/Master_Furniture_Maker/Indentured_Servant.kfm</KFM>
+            <NIF>Art/Units/Settler/Master_Furniture_Maker/Master_Furniture_Maker.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Furniture_Maker/Master_Furniture_Maker.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -286,8 +286,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/grapes_picker.dds</FullLengthIcon>
             <fScale>0.55</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Grapes_Picker/Trader.nif</NIF>
-            <KFM>Art/Units/Settler/Expert_Grapes_Picker/settler_male.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Grapes_Picker/Expert_Grapes_Picker.nif</NIF>
+            <KFM>Art/Units/Settler/Expert_Fruits_Collector/Expert_Fruits_Collector.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -303,7 +303,7 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/prospector.dds</FullLengthIcon>
             <fScale>0.51</fScale>
             <fInterfaceScale>0.86</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Prospector/Expert_Ore_Miner.nif</NIF>
+            <NIF>Art/Units/Settler/Expert_Prospector/Expert_Prospector.nif</NIF>
             <KFM>Art/Units/Expert_Ore_Miner/Expert_Ore_Miner.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -337,8 +337,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/wine_maker.dds</FullLengthIcon>
             <fScale>0.49</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Master_Vintager/master_distiller.nif</NIF>
-            <KFM>Art/Units/Settler/Master_Vintager/master_distiller.kfm</KFM>
+            <NIF>Art/Units/Settler/Master_Vintager/Master_Vintager.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Vintager/Master_Vintager.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -354,8 +354,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/alemaker.dds</FullLengthIcon>
             <fScale>0.49</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Master_Brewer/Master_Distiller.nif</NIF>
-            <KFM>Art/Units/Settler/Master_Brewer/Master_Distiller.kfm</KFM>
+            <NIF>Art/Units/Settler/Master_Brewer/Master_Brewer.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Brewer/Master_Brewer.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -439,8 +439,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Pearls_Hunter.dds</FullLengthIcon>
             <fScale>0.49</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Pearls_Hunter/Expert_Cotton_Planter.nif</NIF>
-            <KFM>Art/Units/Settler/Expert_Pearls_Hunter/Expert_Cotton_Planter.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Pearls_Hunter/Expert_Pearls_Hunter.nif</NIF>
+            <KFM>Art/Units/Expert_Cotton_Planter/Expert_Cotton_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -507,8 +507,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Fireworker.dds</FullLengthIcon>
             <fScale>0.51</fScale>
             <fInterfaceScale>0.84</fInterfaceScale>
-            <NIF>Art/Units/Settler/Master_Fireworker/Expert_Lumberjack.nif</NIF>
-            <KFM>Art/Units/Settler/Master_Fireworker/Expert_Lumberjack.kfm</KFM>
+            <NIF>Art/Units/Settler/Master_Fireworker/Master_Fireworker.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Fireworker/Master_Fireworker.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -524,8 +524,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Charcoal_Burner.dds</FullLengthIcon>
             <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/units/Settler/Master_Charcoal_Burner/Whale_Oil_Cook1.nif</NIF>
-            <KFM>Art/units/Settler/Master_Charcoal_Burner/Whale_Oil_Cook1.kfm</KFM>
+            <NIF>Art/units/Settler/Master_Charcoal_Burner/Master_Charcoal_Burner.nif</NIF>
+            <KFM>Art/units/Settler/Master_Charcoal_Burner/Master_Charcoal_Burner.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -559,7 +559,7 @@
             <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Unique_units/Colonial_Distiller/Colonial_Distiller.nif</NIF>
-            <KFM>Art/Units/Settler/Master_Vintager/Master_Distiller.kfm</KFM>
+            <KFM>Art/Units/Settler/Master_Vintager/Master_Vintager.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -575,8 +575,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Weaver.dds</FullLengthIcon>
             <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/units/Settler/Master_Weaver/Master_Carpenter.nif</NIF>
-            <KFM>Art/units/Settler/Master_Weaver/Master_Carpenter.kfm</KFM>
+            <NIF>Art/units/Settler/Master_Weaver/Master_Weaver.nif</NIF>
+            <KFM>Art/units/Settler/Master_Weaver/Master_Weaver.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -594,8 +594,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Dyer.dds</FullLengthIcon>
             <fScale>0.49</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Dyer/Expert_Fisherman.nif</NIF>
-            <KFM>Art/Units/Settler/Dyer/Expert_Fisherman.kfm</KFM>
+            <NIF>Art/Units/Settler/Dyer/Expert_Dyer.nif</NIF>
+            <KFM>Art/Units/Settler/Dyer/Expert_Dyer.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -628,8 +628,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Yerba_Tea_Trader.dds</FullLengthIcon>
             <fScale>0.55</fScale>
             <fInterfaceScale>0.86</fInterfaceScale>
-            <NIF>Art/Units/Settler/Master_Yerba_Tea_Trader/Indentured_Servant.nif</NIF>
-            <KFM>Art/Units/Settler/Master_Yerba_Tea_Trader/Indentured_Servant.kfm</KFM>
+            <NIF>Art/Units/Settler/Master_Yerba_Tea_Trader/Master_Yerba_Tea_Trader.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Yerba_Tea_Trader/Master_Yerba_Tea_Trader.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -645,8 +645,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/sailcloth_maker.dds</FullLengthIcon>
             <fScale>0.58</fScale>
             <fInterfaceScale>0.86</fInterfaceScale>
-            <NIF>Art/Units/Settler/Sailcloth_Maker/Imperial_Soldier.nif</NIF>
-            <KFM>Art/Units/Settler/Sailcloth_Maker/Imperial_Soldier.kfm</KFM>
+            <NIF>Art/Units/Settler/Sailcloth_Maker/Sailcloth_Maker.nif</NIF>
+            <KFM>Art/Units/Settler/Sailcloth_Maker/Sailcloth_Maker.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -713,7 +713,7 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/tanner.dds</FullLengthIcon>
             <fScale>0.55</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Tanner/Indentured_Servant.nif</NIF>
+            <NIF>Art/Units/Settler/Tanner/Tanner.nif</NIF>
             <KFM>Art/Units/Indentured_Servant/Indentured_Servant.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -817,8 +817,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Hunter.dds</FullLengthIcon>
             <fScale>0.49</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Hunter/Native_Musketman.nif</NIF>
-            <KFM>Art/Units/Settler/Expert_Hunter/Native_Musketman.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Hunter/Expert_Hunter.nif</NIF>
+            <KFM>Art/Units/Settler/Expert_Hunter/Expert_Hunter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -834,7 +834,7 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Seals_Hunter.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Seals_Hunter/Native_Musketman.nif</NIF>
+            <NIF>Art/Units/Settler/Expert_Seals_Hunter/Expert_Seals_Hunter.nif</NIF>
             <KFM>Art/Units/Native_Musketman/Native_Musketman.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -885,7 +885,7 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Stonecutter.dds</FullLengthIcon>
             <fScale>0.51</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Stonecutter/Expert_Silver_Miner.nif</NIF>
+            <NIF>Art/Units/Settler/Expert_Stonecutter/Expert_Stonecutter.nif</NIF>
             <KFM>Art/Units/Expert_Silver_Miner/Expert_Silver_Miner.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -972,7 +972,7 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/hemp_planter.dds</FullLengthIcon>
             <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Hemp_Planter/Expert_Cotton_Planter.nif</NIF>
+            <NIF>Art/Units/Settler/Hemp_Planter/Hemp_Planter.nif</NIF>
             <KFM>Art/Units/Expert_Cotton_Planter/Expert_Cotton_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -989,8 +989,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Cocoa_Planter.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/units/Settler/Expert_Cocoa_Planter/Expert_Sugar_Planter.nif</NIF>
-            <KFM>Art/units/Settler/Expert_Cocoa_Planter/Expert_Sugar_Planter.kfm</KFM>
+            <NIF>Art/units/Settler/Expert_Cocoa_Planter/Expert_Cocoa_Planter.nif</NIF>
+            <KFM>Art/units/Settler/Expert_Cocoa_Planter/Expert_Cocoa_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -1008,8 +1008,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/expert_coca_collector.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/units/Settler/Expert_Coca_Collector/Expert_Sugar_Planter.nif</NIF>
-            <KFM>Art/units/Settler/Expert_Cocoa_Planter/Expert_Sugar_Planter.kfm</KFM>
+            <NIF>Art/units/Settler/Expert_Coca_Collector/Expert_Coca_Collector.nif</NIF>
+            <KFM>Art/units/Settler/Expert_Cocoa_Planter/Expert_Cocoa_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -1027,7 +1027,7 @@
             <FullLengthIcon>,Art/Interface/Screens/city_management/female_coffee_collector.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/female_coffee_collector/Expert_Sugar_Planter.nif</NIF>
+            <NIF>Art/Units/Settler/female_coffee_collector/female_coffee_collector.nif</NIF>
             <KFM>Art/Units/Expert_Sugar_Planter/Expert_Sugar_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -1046,8 +1046,8 @@
             <FullLengthIcon>,Art/Interface/Screens/city_management/Master_Coffee_Trader.dds</FullLengthIcon>
             <fScale>0.51</fScale>
             <fInterfaceScale>0.86</fInterfaceScale>
-            <NIF>Art/Units/Settler/Master_Coffee_Trader/Master_Tobacconist.nif</NIF>
-            <KFM>Art/Units/Settler/Master_Coffee_Trader/Master_Tobacconist.kfm</KFM>
+            <NIF>Art/Units/Settler/Master_Coffee_Trader/Master_Coffee_Trader.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Coffee_Trader/Master_Coffee_Trader.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -1065,8 +1065,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/WhaleOil_Cook.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.90</fInterfaceScale>
-            <NIF>Art/units/Settler/WhaleOil_Cook/Whale_Oil_Cook1.nif</NIF>
-            <KFM>Art/units/Settler/WhaleOil_Cook/Whale_Oil_Cook1.kfm</KFM>
+            <NIF>Art/units/Settler/WhaleOil_Cook/Whale_Oil_Cook.nif</NIF>
+            <KFM>Art/units/Settler/WhaleOil_Cook/Whale_Oil_Cook.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -1099,7 +1099,7 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/emigrant.dds</FullLengthIcon>
             <fScale>0.51</fScale>
             <fInterfaceScale>0.87</fInterfaceScale>
-            <NIF>Art/Units/Settler/european_emigrant/Elder_Statesman.nif</NIF>
+            <NIF>Art/Units/Settler/european_emigrant/european_emigrant.nif</NIF>
             <KFM>Art/Units/Elder_Statesman/Elder_Statesman.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -1116,7 +1116,7 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/noble.dds</FullLengthIcon>
             <fScale>0.52</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/noble/Elder_Statesman.nif</NIF>
+            <NIF>Art/Units/Settler/noble/noble.nif</NIF>
             <KFM>Art/Units/Elder_Statesman/Elder_Statesman.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -1133,7 +1133,7 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Governor.dds</FullLengthIcon>
             <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Governor/Elder_Statesman.nif</NIF>
+            <NIF>Art/Units/Settler/Governor/Governor.nif</NIF>
             <KFM>Art/Units/Elder_Statesman/Elder_Statesman.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -1252,8 +1252,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/CM_russion_missionary.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Russian_Orthodox_missionary/missionary.nif</NIF>
-            <KFM>Art/Units/Settler/Russian_Orthodox_missionary/missionary.kfm</KFM>
+            <NIF>Art/Units/Settler/Russian_Orthodox_missionary/Russian_Orthodox_missionary.nif</NIF>
+            <KFM>Art/Units/Settler/Russian_Orthodox_missionary/Russian_Orthodox_missionary.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -1303,8 +1303,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_trader.dds</FullLengthIcon>
             <fScale>0.49</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Trader/master_distiller.nif</NIF>
-            <KFM>Art/Units/Settler/profession_trader/master_distiller.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Trader/Expert_Trader.nif</NIF>
+            <KFM>Art/Units/Settler/profession_trader/profession_trader.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -1320,8 +1320,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Failed_trader.dds</FullLengthIcon>
             <fScale>0.49</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Failed_Trader/master_distiller.nif</NIF>
-            <KFM>Art/Units/Settler/profession_trader/master_distiller.kfm</KFM>
+            <NIF>Art/Units/Settler/Failed_Trader/Failed_Trader.nif</NIF>
+            <KFM>Art/Units/Settler/profession_trader/profession_trader.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -1337,8 +1337,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/prof_trader.dds</FullLengthIcon>
             <fScale>0.49</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/profession_trader/master_distiller.nif</NIF>
-            <KFM>Art/Units/Settler/profession_trader/master_distiller.kfm</KFM>
+            <NIF>Art/Units/Settler/profession_trader/profession_trader.nif</NIF>
+            <KFM>Art/Units/Settler/profession_trader/profession_trader.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -16722,8 +16722,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/CM_free_slave.dds</FullLengthIcon>
             <fScale>0.54</fScale>
             <fInterfaceScale>0.84</fInterfaceScale>
-            <NIF>Art/Units/settler/free_slave/Expert_Cotton_Planter.nif</NIF>
-            <KFM>Art/Units/settler/free_slave/Expert_Cotton_Planter.kfm</KFM>
+            <NIF>Art/Units/settler/free_slave/free_slave.nif</NIF>
+            <KFM>Art/Units/settler/free_slave/free_slave.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17384,8 +17384,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Breeder.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Breeder/Expert_Fisherman.nif</NIF>
-            <KFM>Art/Units/Settler/Dyer/Expert_Fisherman.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Breeder/Expert_Breeder.nif</NIF>
+            <KFM>Art/Units/Settler/Dyer/Expert_Dyer.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17401,7 +17401,7 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Cassava_Planter.dds</FullLengthIcon>
             <fScale>0.50</fScale>
             <fInterfaceScale>0.86</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Cassava_Planter/Expert_Tobacco_Planter.nif</NIF>
+            <NIF>Art/Units/Settler/Expert_Cassava_Planter/Expert_Cassava_Planter.nif</NIF>
             <KFM>Art/Units/Expert_Tobacco_Planter/Expert_Tobacco_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -17418,7 +17418,7 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Cochineal_Collector.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Cochineal_Collector/Expert_Cotton_Planter.nif</NIF>
+            <NIF>Art/Units/Settler/Expert_Cochineal_Collector/Expert_Cochineal_Collector.nif</NIF>
             <KFM>Art/Units/Expert_Cotton_Planter/Expert_Cotton_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -17435,7 +17435,7 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Linen_Planter.dds</FullLengthIcon>
             <fScale>0.46</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Linen_Planter/Expert_Farmer.nif</NIF>
+            <NIF>Art/Units/Settler/Expert_Linen_Planter/Expert_Linen_Planter.nif</NIF>
             <KFM>Art/Units/Expert_Farmer/Expert_Farmer.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -17452,8 +17452,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Logwood_Collector.dds</FullLengthIcon>
             <fScale>0.49</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Logwood_Collector/Expert_Lumberjack.nif</NIF>
-            <KFM>Art/Units/Settler/Expert_Logwood_Collector/Expert_Lumberjack.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Logwood_Collector/Expert_Logwood_Collector.nif</NIF>
+            <KFM>Art/Units/Settler/Expert_Logwood_Collector/Expert_Logwood_Collector.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17469,8 +17469,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Olives_Planter.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Olives_Planter/Expert_Sugar_Planter.nif</NIF>
-            <KFM>Art/Units/Settler/Expert_Rape_Planter/Expert_Sugar_Planter.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Olives_Planter/Expert_Olives_Planter.nif</NIF>
+            <KFM>Art/Units/Settler/Expert_Rape_Planter/Expert_Rape_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17486,8 +17486,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Peanut_Planter.dds</FullLengthIcon>
             <fScale>0.49</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Peanut_Planter/Expert_Cotton_Planter.nif</NIF>
-            <KFM>Art/Units/Settler/Expert_Peanut_Planter/Expert_Cotton_Planter.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Peanut_Planter/Expert_Peanut_Planter.nif</NIF>
+            <KFM>Art/Units/Expert_Cotton_Planter/Expert_Cotton_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17503,7 +17503,7 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Peat_Cutter.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Peat_Cutter/expert_silver_miner.nif</NIF>
+            <NIF>Art/Units/Settler/Expert_Peat_Cutter/Expert_Peat_Cutter.nif</NIF>
             <KFM>Art/Units/Expert_Silver_Miner/Expert_Silver_Miner.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -17520,8 +17520,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Rape_Planter.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Rape_Planter/Expert_Sugar_Planter.nif</NIF>
-            <KFM>Art/Units/Settler/Expert_Rape_Planter/Expert_Sugar_Planter.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Rape_Planter/Expert_Rape_Planter.nif</NIF>
+            <KFM>Art/Units/Settler/Expert_Rape_Planter/Expert_Rape_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17539,8 +17539,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Rice_Farmer.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Rice_Farmer/expert_fisherman.nif</NIF>
-            <KFM>Art/Units/Settler/Expert_Rice_Farmer/expert_fisherman.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Rice_Farmer/Expert_Rice_Farmer.nif</NIF>
+            <KFM>Art/Units/Settler/Expert_Rice_Farmer/Expert_Rice_Farmer.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17556,8 +17556,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Vanilla_Collector.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Vanilla_Collector/Expert_Sugar_Planter.nif</NIF>
-            <KFM>Art/Units/Settler/Expert_Red_Pepper_Planter/Expert_Sugar_Planter.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Vanilla_Collector/Expert_Vanilla_Collector.nif</NIF>
+            <KFM>Art/Units/Settler/Expert_Red_Pepper_Planter/Expert_Red_Pepper_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17573,7 +17573,7 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Yerba_Planter.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Yerba_Planter/Expert_Sugar_Planter.nif</NIF>
+            <NIF>Art/Units/Settler/Expert_Yerba_Planter/Expert_Yerba_Planter.nif</NIF>
             <KFM>Art/Units/Expert_Sugar_Planter/Expert_Sugar_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -17592,8 +17592,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Herder.dds</FullLengthIcon>
             <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Herder/Expert_Rancher.nif</NIF>
-            <KFM>Art/Units/Settler/Expert_Herder/Expert_Rancher.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Herder/Expert_Herder.nif</NIF>
+            <KFM>Art/Units/Settler/Expert_Herder/Expert_Herder.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17609,8 +17609,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Maple_Sirup_Collector.dds</FullLengthIcon>
             <fScale>0.55</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Maple_Sirup_Collector/Indentured_Servant.nif</NIF>
-            <KFM>Art/Units/Settler/Expert_Maple_Sirup_Collector/Indentured_Servant.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Maple_Sirup_Collector/Expert_Maple_Sirup_Collector.nif</NIF>
+            <KFM>Art/Units/Settler/Expert_Maple_Sirup_Collector/Expert_Maple_Sirup_Collector.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17626,7 +17626,7 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Kautschuk_Collector.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Kautschuk_Collector/Expert_Trapper.nif</NIF>
+            <NIF>Art/Units/Settler/Kautschuk_Collector/Kautschuk_Collector.nif</NIF>
             <KFM>Art/Units/Expert_Trapper/Expert_Trapper.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -17643,8 +17643,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Confectioner.dds</FullLengthIcon>
             <fScale>0.52</fScale>
             <fInterfaceScale>0.84</fInterfaceScale>
-            <NIF>Art/Units/Settler/Master_Confectioner/Elder_Statesman.nif</NIF>
-            <KFM>Art/Units/Settler/Master_Confectioner/Elder_Statesman.kfm</KFM>
+            <NIF>Art/Units/Settler/Master_Confectioner/Master_Confectioner.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Confectioner/Master_Confectioner.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17660,8 +17660,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Baker.dds</FullLengthIcon>
             <fScale>0.50</fScale>
             <fInterfaceScale>0.84</fInterfaceScale>
-            <NIF>Art/Units/Settler/Master_Baker/Master_Distiller.nif</NIF>
-            <KFM>Art/Units/Settler/Master_Oil_Trader/Master_Distiller.kfm</KFM>
+            <NIF>Art/Units/Settler/Master_Baker/Master_Baker.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Oil_Trader/Master_Oil_Trader.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17677,8 +17677,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Household_Goods_Trader.dds</FullLengthIcon>
             <fScale>0.60</fScale>
             <fInterfaceScale>0.78</fInterfaceScale>
-            <NIF>Art/Units/Settler/Master_Household_Goods_Trader/Indentured_Servant.nif</NIF>
-            <KFM>Art/Units/Settler/Master_Household_Goods_Trader/Indentured_Servant.kfm</KFM>
+            <NIF>Art/Units/Settler/Master_Household_Goods_Trader/Goods_Trader.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Household_Goods_Trader/Goods_Trader.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17694,8 +17694,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Oil_Trader.dds</FullLengthIcon>
             <fScale>0.49</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Master_Oil_Trader/Master_Distiller.nif</NIF>
-            <KFM>Art/Units/Settler/Master_Oil_Trader/Master_Distiller.kfm</KFM>
+            <NIF>Art/Units/Settler/Master_Oil_Trader/Master_Oil_Trader.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Oil_Trader/Master_Oil_Trader.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17711,8 +17711,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Fruits_Collector.dds</FullLengthIcon>
             <fScale>0.55</fScale>
             <fInterfaceScale>0.84</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Fruits_Collector/settler_male.nif</NIF>
-            <KFM>Art/Units/Settler/Expert_Fruits_Collector/settler_male.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Fruits_Collector/Expert_Fruits_Collector.nif</NIF>
+            <KFM>Art/Units/Settler/Expert_Fruits_Collector/Expert_Fruits_Collector.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17728,7 +17728,7 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Poultry_butcher.dds</FullLengthIcon>
             <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Master_Poultry_butcher/butcher.nif</NIF>
+            <NIF>Art/Units/Settler/Master_Poultry_butcher/Master_Poultry_butcher.nif</NIF>
             <KFM>Art/Units/Master_Gunsmith/Master_Gunsmith.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -17745,8 +17745,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Coal_Miner.dds</FullLengthIcon>
             <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Coal_Miner/Expert_Silver_Miner.nif</NIF>
-            <KFM>Art/Units/Settler/Expert_Coal_Miner/Expert_Silver_Miner.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Coal_Miner/Expert_Coal_Miner.nif</NIF>
+            <KFM>Art/Units/Settler/Expert_Coal_Miner/Expert_Coal_Miner.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17762,8 +17762,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Lether_Taylor.dds</FullLengthIcon>
             <fScale>0.52</fScale>
             <fInterfaceScale>0.84</fInterfaceScale>
-            <NIF>Art/Units/Settler/Master_Leather_Taylor/Expert_Cotton_Planter.nif</NIF>
-            <KFM>Art/Units/Settler/Master_Leather_Taylor/Expert_Cotton_Planter.kfm</KFM>
+            <NIF>Art/Units/Settler/Master_Leather_Taylor/Master_Leather_Taylor.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Leather_Taylor/Master_Leather_Taylor.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17796,8 +17796,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Potter.dds</FullLengthIcon>
             <fScale>0.57</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Mater_Potter/greatscientistancient.nif</NIF>
-            <KFM>Art/Units/Settler/Mater_Potter/greatscientistancient.kfm</KFM>
+            <NIF>Art/Units/Settler/Master_Potter/Master_Potter.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Potter/Master_Potter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17832,7 +17832,7 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Cheese_Maker.dds</FullLengthIcon>
             <fScale>0.55</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Master_Cheese_Maker/Indentured_Servant.nif</NIF>
+            <NIF>Art/Units/Settler/Master_Cheese_Maker/Master_Cheese_Maker.nif</NIF>
             <KFM>Art/Units/Indentured_Servant/Indentured_Servant.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -17849,8 +17849,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Mestizzo.dds</FullLengthIcon>
             <fScale>0.50</fScale>
             <fInterfaceScale>0.86</fInterfaceScale>
-            <NIF>Art/Units/Settler/Mestizzo/Expert_Cotton_Planter.nif</NIF>
-            <KFM>Art/Units/Settler/Mestizzo/Expert_Cotton_Planter.kfm</KFM>
+            <NIF>Art/Units/Settler/Mestizzo/Mestizzo.nif</NIF>
+            <KFM>Art/Units/Settler/Mestizzo/Mestizzo.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17866,8 +17866,8 @@
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Mulatto.dds</FullLengthIcon>
             <fScale>0.50</fScale>
             <fInterfaceScale>0.86</fInterfaceScale>
-            <NIF>Art/Units/Settler/Mulatto/Expert_Cotton_Planter.nif</NIF>
-            <KFM>Art/Units/Settler/Mulatto/Expert_Cotton_Planter.kfm</KFM>
+            <NIF>Art/Units/Settler/Mulatto/Mulatto.nif</NIF>
+            <KFM>Art/Units/Settler/Mulatto/Mulatto.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
