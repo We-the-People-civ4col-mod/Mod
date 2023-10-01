@@ -161,7 +161,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Big Coastal Ship:Big Coastal Ships</Text>
+            <Text>Grand bâteau côtier:Grands bâteaux côtiers</Text>
             <Plural>0:1</Plural>
         </French>
         <German>
@@ -186,7 +186,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Evêque:Evêques</Text>
+            <Text>Évêque:Évêques</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -322,6 +322,11 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </English>
+        <French>
+            <Text>Navire négrier:Navires négriers</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
         <German>
             <Text>Sklavenbarke:Sklavenbarken</Text>
             <Gender>Female</Gender>
@@ -361,7 +366,11 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CANNONS</Tag>
         <English>Cannons</English>
-        <French>Canon</French>
+        <French>
+            <Text>Canons</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </French>
         <German>
             <Text>Kanonen</Text>
             <Gender>Female</Gender>
@@ -629,7 +638,11 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COCOA_FRUITS</Tag>
         <English>Cocoa Pods</English>
-        <French>Cabosses de cacaoyer</French>
+        <French>
+            <Text>Cacao en cabosses</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
         <German>
             <Text>Kakaofrüchte</Text>
             <Gender>Female</Gender>
@@ -676,7 +689,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COFFEE_BERRIES</Tag>
         <English>Coffee Berries</English>
-        <French>Grains de café</French>
+        <French>Cerises de café</French>
         <German>
             <Text>Kaffeebeeren</Text>
             <Gender>Female</Gender>
@@ -719,7 +732,7 @@
         <Tag>TXT_KEY_UNITCLASS_COLOURED_CLOTH</Tag>
         <English>Coloured Cloth</English>
         <French>
-            <Text>Vêtement teinté</Text>
+            <Text>Tissu teinté</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
@@ -826,6 +839,11 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </English>
+        <French>
+            <Text>Brick:Bricks</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
         <German>
             <Text>Kanonenbrigg:Kanonenbriggs</Text>
             <Gender>Female</Gender>
@@ -958,7 +976,7 @@
         <Tag>TXT_KEY_UNITCLASS_DOCTOR</Tag>
         <English>Renowned Medic</English>
         <French>
-            <Text>Médecin formé:Médecins formés</Text>
+            <Text>Médecin renommé:Médecins renommés</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -1008,7 +1026,7 @@
         <Tag>TXT_KEY_UNITCLASS_EMIGRANT</Tag>
         <English>Political Refugee:Political Refugees</English>
         <French>
-            <Text>Political Refugee:Political Refugees</Text>
+            <Text>Exilé politique:Exilés politiques</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -1033,7 +1051,7 @@
         <Tag>TXT_KEY_UNITCLASS_EUROPEAN_LINE_INFANTRY</Tag>
         <English>European Line Infantry:European Line Infantry</English>
         <French>
-            <Text>European Line Infantry:European Line Infantry</Text>
+            <Text>Infanterie de ligne européenne:Infanteries de ligne européennes</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -1312,6 +1330,11 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROYAL_TROOP_GALLEON</Tag>
         <English>Royal Troop Galleon:Royal Troop Galleons</English>
+        <French>
+            <Text>Galion de transport royal:Galions de transport royal</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
         <German>
             <Text>Königliche Transportgaleone:Königliche Transportgaleonen</Text>
             <Gender>Female</Gender>
@@ -1853,7 +1876,7 @@
         <English>Kraken</English>
         <French>
             <Text>Kraken</Text>
-            <Gender>Female</Gender>
+            <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
         <German>
@@ -2185,7 +2208,7 @@
         <English>Orca</English>
         <French>
             <Text>Orque</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
         <German>
@@ -2209,7 +2232,7 @@
         <Tag>TXT_KEY_UNITCLASS_ORE</Tag>
         <English>Ore</English>
         <French>
-            <Text>Minerai de fer:Minerais de fer</Text>
+            <Text>Mineral:Mineraux</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -2320,6 +2343,11 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </English>
+        <French>
+            <Text>Cotre Pirate:Cotres Pirates </Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
         <German>
             <Text>Piratenkutter:Piratenkutter</Text>
             <Gender>Male</Gender>
@@ -2622,7 +2650,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Cavalier royal:cavalier royaux</Text>
+            <Text>Cavalier royal:Cavaliers royaux</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -2709,7 +2737,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Royal d'Infanterie:Royaux d'Infanterie</Text>
+            <Text>Infanterie de ligne royale:Infanteries de ligne royales</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -2841,6 +2869,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_EXPERT_SETTLER</Tag>
         <English>Prepared Settler:Prepared Settlers</English>
+        <French>Fondateur préparé:Fondateurs Préparés</French>
         <German>
             <Text>Vorbereiteter Siedler:Vorbereitete Siedler</Text>
             <Gender>Male</Gender>
@@ -2919,7 +2948,7 @@
         <Tag>TXT_KEY_UNITCLASS_ROYAL_SHIP_OF_THE_LINE</Tag>
         <English>Royal Ship of the Line:Royal Ships of the Line</English>
         <French>
-            <Text>Navire de ligne royal:Navires de ligne royal</Text>
+            <Text>Navire de ligne royal:Navires de ligne royaux</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -2943,6 +2972,11 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROYAL_MAN_O_WAR</Tag>
         <English>Royal Man O' War:Royal Men O' War</English>
+        <French>
+            <Text>Vaisseau de haut-bord royal:Vaisseaux de haut-bord royaux</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
         <German>
             <Text>Königliches Schlachtschiff:Königliche Schlachtschiffe</Text>
             <Gender>Neuter</Gender>
@@ -2953,6 +2987,11 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COLONIAL_MAN_O_WAR</Tag>
         <English>Man O' War:Men O' War</English>
+        <French>
+            <Text>Vaisseau de haut-bord:Vaisseaux de haut-bord</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
         <German>
             <Text>Schlachtschiff:Schlachtschiffe</Text>
             <Gender>Neuter</Gender>
@@ -2989,8 +3028,8 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Sloop:Sloops</Text>
-            <Gender>Male</Gender>
+            <Text>Chaloupe à voile:Chaloupes à voile</Text>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>
@@ -3017,6 +3056,11 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
+        <French>
+            <Text>Goélette:Goélettes</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </French>
         <German>
             <Text>Schooner:Schooner</Text>
             <Gender>Male</Gender>
@@ -3031,7 +3075,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Small Coastal Ship:Small Coastal Ships</Text>
+            <Text>Petit bâteau côtier:Petits bâteaux côtiers</Text>
             <Plural>0:1</Plural>
         </French>
         <German>
@@ -3085,7 +3129,7 @@
             <Plural>1</Plural>
         </English>
         <French>
-            <Text>Epices</Text>
+            <Text>Épices</Text>
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </French>
@@ -3210,7 +3254,7 @@
         <Tag>TXT_KEY_UNITCLASS_STONECUTTER</Tag>
         <English>Expert Stonecutter:Expert Stonecutters</English>
         <French>
-            <Text>Expert tailleur:Experts tailleurs</Text>
+            <Text>Expert tailleur de pîerre:Experts tailleurs de pierres</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -3260,7 +3304,7 @@
         <Tag>TXT_KEY_UNITCLASS_SUGAR_PLANTER</Tag>
         <English>Expert Sugar Planter:Expert Sugar Planters</English>
         <French>
-            <Text>Expert planteur de canne:Experts planteurs de canne</Text>
+            <Text>Expert planteur de canne à sucre:Experts planteurs de canne à sucre</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -3505,7 +3549,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_VALUABLE_WOOD</Tag>
         <English>Exotic Wood</English>
-        <French>Bois précieux</French>
+        <French>Bois exotique</French>
         <German>
             <Text>Edelholz</Text>
             <Gender>Neuter</Gender>
@@ -3519,7 +3563,7 @@
         <Tag>TXT_KEY_UNITCLASS_VETERAN</Tag>
         <English>Veteran Infantry Soldier:Veteran Infantry Soldiers</English>
         <French>
-            <Text>Veteran Infantry Soldier:Veteran Infantry Soldiers</Text>
+            <Text>Soldat vétéran:Soldats vétérans</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -3860,9 +3904,9 @@
         <Tag>TXT_KEY_UNITCLASS_WOOL_CLOTH</Tag>
         <English>Wool Cloth</English>
         <French>
-            <Text>Draps de laine</Text>
+            <Text>Tissu de laine</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </French>
         <German>
             <Text>Wollstoffe</Text>
@@ -3889,7 +3933,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Esclave exempté:Esclaves exemptés</Text>
+            <Text>Esclave affranchi:Esclaves affranchis</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -3972,7 +4016,7 @@
         <Tag>TXT_KEY_UNITCLASS_REVOLTING_CRIMINAL</Tag>
         <English>Rebelling Criminal:Rebelling Criminals</English>
         <French>
-            <Text>Bagnard revolté:Bagnards revoltés</Text>
+            <Text>Bagnard révolté:Bagnards révoltés</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -4001,7 +4045,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Expert commerçant indigènes:Expert commerçants indigènes</Text>
+            <Text>Expert marchand indigènes:Experts marchands indigènes</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -4026,7 +4070,7 @@
         <Tag>TXT_KEY_UNITCLASS_HOSTILE_NATIVE</Tag>
         <English>Hostile Native:Hostile Natives</English>
         <French>
-            <Text>Indigène hostiles:Indigènes hostiles</Text>
+            <Text>Indigène hostile:Indigènes hostiles</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>

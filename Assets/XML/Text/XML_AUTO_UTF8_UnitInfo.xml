@@ -188,7 +188,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Big Coastal Ship:Big Coastal Ships</Text>
+            <Text>Grand bâteau côtier:Grands bâteaux côtiers</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -464,6 +464,11 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </English>
+        <French>
+            <Text>Navire négrier:Navires négriers</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
         <German>
             <Text>Sklavenbarke:Sklavenbarken</Text>
             <Gender>Female</Gender>
@@ -474,11 +479,14 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_SLAVE_BARQUE_PEDIA</Tag>
         <English>In the early 1600s, more than a century after the arrival of Europeans to the Americas, demand for unpaid labour to work plantations made slave-trading a profitable business. The Atlantic slave trade peaked in the last two decades of the 18th century, during and following the Congo Civil War. To ensure profitability, the owners of the ships divided their hulls into cramped holds with little headroom in order to transport as many slaves as possible. Unhygienic conditions, dehydration, dysentery and scurvy led to a high mortality rate, averaging 15% but sometimes killing a third of the captives. Often the ships carried hundreds of slaves who were chained tightly to plank beds. For example, the slave ship Henrietta Marie carried about 200 slaves on the long Middle Passage. The most significant routes of the slave ships led from the northwestern and western coasts of Africa to South America and the southeast coast of what is today the United States, and the Caribbean. Slave ships brought over as many as 20 million Africans. The transportation of slaves from Africa to America was known as the Middle Passage of the triangular trade.</English>
+        <French>Au début du XVIIe siècle, plus d'un siècle après l'arrivées des Européens dans les Amérique, la demande pour du travail non payé dans les plantations ont rendu le commerce des esclaves rentables. La traite négrière atlantique a atteint des sommets dans les deux dernières décennies du XVIIIe siècle, pendant at après la guerre civile au Congo. Pour assurer la rentabilité des voyages, les armateurs divisaient les cales en étages étroits avec très peu d'espace libre pour transporter autant d'esclaves que possible. Les conditions d'hygiène déplorables, la déhydration, la dysenterie et le scorbut provoquaient de très nombreaux décès, en moyenne 15% mais pouvant atteindre le tiers des captifs. Souvent les navires embarquaient des centaines d'esclaves entravés sur des lits de planches. Par exemple, le navire négrier «Henrietta Marie» transportait environ 200 esclaves sur la long Passage du Milieu. Les routes le plus importantes des navires négriers menait des côtes ouest et nord-ouest de l'Afrique vers l'Amérique du Sud, ce qui sera le sud-est des États-Unis, et les Caraïbes. Les navires négriers ont transportés pas moins de 20 millions d'Afrcains.
+        </French>
         <German>Um hohen Profit aus den Transporten zu schlagen, zogen die Eigentümer der Sklavenschiffe Zwischendecks in den Schiffsrumpf ein, um möglichst viele Sklaven transportieren zu können. Dies führte zu unhygienischen Zuständen und in der Folge zu einer erhöhten Todesrate. Da nur die Widerstandsfähigsten den Transport überlebten, führte dies auch zu einer starken Selektion. Oft transportierten die Schiffe mehrere hundert Sklaven, die auf engen Massen-Pritschen angekettet waren. Beispielsweise konnte das Sklavenschiff „Henrietta Marie“ auf einer Passage bis zu 400 Sklaven befördern, die auf zwei Decks untergebracht waren und die wochenlange Passage angekettet auf je einem halben Quadratmeter verbrachten. Wenn die überladenen Schiffe sanken, rissen sie die Sklaven mit in die Tiefe und in den sicheren Tod.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_SLAVE_BARQUE_STRATEGY</Tag>
         <English>[COLOR_UNIT_TEXT]Slave barques[COLOR_REVERT] are relatively pricey [COLOR_HIGHLIGHT_TEXT]merchant ships[COLOR_REVERT] Like ships with hidden nationality they can sail to Port Royal. They can carry only [COLOR_HIGHLIGHT_TEXT]goods[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]slaves[COLOR_REVERT]. They have five cargo slots with a speed of five tiles and are stronger than [LINK=UNIT_BRIGANTINE]brigantines[\LINK].[PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Slave barques[COLOR_REVERT] can be bought in [LINK=CONCEPT_AFRICA]Africa[\LINK] or built in colonies with a [LINK=BUILDING_DRYDOCK]drydock[\LINK] or one of its upgrades. Like most ships, they require [LINK=YIELD_CANNONS]cannons[\LINK], [LINK=YIELD_ROPE]ropes[\LINK], [LINK=YIELD_SAILCLOTH]sailcloth[\LINK] and [LINK=YIELD_TOOLS]tools[\LINK].[PARAGRAPH:2]For a comparison of all available ships, see [LINK=CONCEPT_SHIPS]Ships[\LINK].</English>
+        <French>[COLOR_UNIT_TEXT]Les navires négriers[COLOR_REVERT] sont des [COLOR_HIGHLIGHT_TEXT]navires marchands[COLOR_REVERT] assez coûteux. Comme les anvires à nationalité secrète, ile  peuvent voguer vers Port Royal. Ils peuvent trasnporter uniquement [COLOR_HIGHLIGHT_TEXT] des biens[COLOR_REVERT] ou [COLOR_HIGHLIGHT_TEXT]des esclaves[COLOR_REVERT]. Ils ont cinq emplacements de cale avec une vitesse de cinq cases and sont plus forts que des [LINK=UNIT_BRIGANTINE]brigantins[\LINK].[PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Les navires négriers[COLOR_REVERT] peuvent être achetés en [LINK=CONCEPT_AFRICA]Afrique[\LINK] ou construit dans des colonies avec une [LINK=BUILDING_DRYDOCK]cale sèche[\LINK] ou une amélioration. Comme la plupart des navires, ils ont besoin de [LINK=YIELD_CANNONS]canons[\LINK], de [LINK=YIELD_ROPE]cordages[\LINK], de [LINK=YIELD_SAILCLOTH]voiles[\LINK] et d'[LINK=YIELD_TOOLS]outils[\LINK].[PARAGRAPH:2]Pour une comparaison de tous les navires et bâteaux disponibles, voir [LINK=CONCEPT_SHIPS]la page sur les navires[\LINK].</French>
         <German>[COLOR_UNIT_TEXT]Sklavenbarken[COLOR_REVERT] sind relativ teure [COLOR_HIGHLIGHT_TEXT]Handelsschiffe[COLOR_REVERT], die wie sonst nur Schiffe unter versteckter Nationalität auch nach Port Royal segeln können. Allerdings können sie lediglich [COLOR_HIGHLIGHT_TEXT]Güter[COLOR_REVERT] oder [COLOR_HIGHLIGHT_TEXT]Sklaven[COLOR_REVERT] laden. Sie haben fünf und auch eine Geschwindigkeit von fünf Feldern pro Zug und sind stärker als eine [LINK=UNIT_BRIGANTINE]Brigantine[\LINK].[PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sklavenbarken[COLOR_REVERT] können in [LINK=CONCEPT_AFRICA]Afrika[\LINK] erworben oder in den Kolonien mit einem [LINK=BUILDING_DRYDOCK]Trockendock[\LINK] oder dessen Ausbauten gebaut werden. Wie die meisten Schiffe benötigen sie dazu [LINK=YIELD_CANNONS]Kanonen[\LINK], [LINK=YIELD_ROPE]Seile[\LINK], [LINK=YIELD_SAILCLOTH]Segeln[\LINK] und [LINK=YIELD_TOOLS]Werkzeuge[\LINK].</German>
     </TEXT>
     <TEXT>
@@ -924,6 +932,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_FAILED_MISSIONARY</Tag>
         <English>Disillusioned Missionary:Disilussioned Missionaries</English>
+        <French>Missionnaire désabusé:Missionnaires désabusés</French>
         <German>
             <Text>Desillusionierter Missionar:Desillusionierte Missionare</Text>
             <Gender>Male</Gender>
@@ -1158,7 +1167,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCOA_FRUITS</Tag>
         <English>Cocoa pods</English>
-        <French>Cabosses de cacaoyer</French>
+        <French>Cacao en cabosse</French>
         <German>
             <Text>Kakaofrüchte</Text>
             <Gender>Female</Gender>
@@ -1194,7 +1203,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCOA_PLANTER_STRATEGY</Tag>
         <English>Assigning an [COLOR_UNIT_TEXT]expert cocoa planter[COLOR_REVERT] to the [LINK=PROFESSION_COCOA_PLANTER]cocoa planter[\LINK] profession will double the amount of [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK] you receive from that tile.[PARAGRAPH:1]Expert cocoa planters can be trained by [LINK=CONCEPT_NATIVES]Natives[\LINK], and they can also be [LINK=CONCEPT_TRAINING]educated[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its upgrades.</English>
-        <French>Lorsque vous assignez un citoyen pour travailler sur une case de jungle, vous pouvez opter pour la profession de [COLOR_HIGHLIGHT_TEXT]planteur de cacao[COLOR_REVERT] pour ainsi produire du [COLOR_HIGHLIGHT_TEXT]cacao[COLOR_REVERT].[PARAGRAPH:2]Si vous assez un [COLOR_UNIT_TEXT]expert planteur de cacao[COLOR_REVERT], celui-ci produira significativement plus de cacao.</French>
+        <French>Lorsque vous assignez un citoyen pour travailler sur une case de jungle, vous pouvez opter pour la profession de [COLOR_HIGHLIGHT_TEXT]planteur de cacao[COLOR_REVERT] pour ainsi produire du [LINK=YIELD_COCOA_FRUITS]cacao en cabosse[\LINK].[PARAGRAPH:2]Si vous assez un [COLOR_UNIT_TEXT]expert planteur de cacao[COLOR_REVERT], celui-ci produira significativement plus de cacao.</French>
         <German>Die Zuweisung eines [COLOR_UNIT_TEXT]Erfahrenen Kakaopflückers[COLOR_REVERT] in den Beruf [LINK=PROFESSION_COCOA_PLANTER]Kakaopflücker[\LINK] verdoppelt die Ernte an [LINK=YIELD_COCOA_FRUITS]Kakaofrüchten[\LINK] des Geländefeldes, auf dem er arbeitet.[PARAGRAPH:2]Erfahrene Kakaopflücker stehen nicht im [LINK=CONCEPT_EUROPE]Europahafen[\LINK] zur Verfügung. Aber es gibt andere Wege, sie zu gewinnen: Manche [LINK=CONCEPT_NATIVES]Ureinwohnerdörfer[\LINK] bilden diese Experten aus. Alternativ können sie auch in einer Kolonie mit einem [LINK=BUILDING_COLLEGE]College[\LINK] oder einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden. Oder man löst das Problem durch Kidnapping - und erobert eine europäische Siedlung, in der einer dieser begehrten Experten Stadtbürger ist.</German>
     </TEXT>
     <TEXT>
@@ -1237,7 +1246,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_COFFEE_BERRIES</Tag>
         <English>Coffee Berries</English>
-        <French>Grains de café</French>
+        <French>Cerises de café</French>
         <German>
             <Text>Kaffeebeeren</Text>
             <Gender>Female</Gender>

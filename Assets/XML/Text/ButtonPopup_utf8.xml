@@ -136,7 +136,7 @@
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_MAIN_TABLE</Tag>
         <English>Available transport routes :</English>
-        <French>Route commerciale :</French>
+        <French>Routes commerciales disponibles :</French>
         <German>Liste verfügbarer Transportrouten</German>
         <Russian>Доступные транспортные маршруты :</Russian>
     </TEXT>
@@ -152,7 +152,7 @@
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_YIELD_HELP</Tag>
         <English>Select a yield type for new transport route</English>
-        <French>Sélectionner une ressource</French>
+        <French>Sélectionner une ressource pour la nouvelle route:</French>
         <German>Warentyp für neue Transportroute auswählen</German>
         <Italian>Select a yield type</Italian>
         <Spanish>Select a yield type</Spanish>
@@ -170,7 +170,7 @@
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_EXPORT_HELP</Tag>
         <English>Select an export city for new transport route (minimum stocks of goods that are not to be transported away can be set locally in the settlement screen)</English>
-        <French>Sélectionner une colonie exportatrice</French>
+        <French>Sélectionner une colonie exportatrice pour cette nouvelle route (le niveau minimal de ressources à conserver peut être ajusté localement dans l'écran de la colonie)</French>
         <German>Exportsiedlung für neue Transportroute auswählen (Mindestbestände von Waren, die nicht abtransportiert werden sollen, lassen sich vor Ort im Siedlungsbildschirm einstellen)</German>
         <Italian>Select an export city</Italian>
         <Spanish>Select an export city</Spanish>
@@ -188,7 +188,7 @@
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_IMPORT_HELP</Tag>
         <English>Select an import city for new transport route</English>
-        <French>Sélectionner une colonie importatrice</French>
+        <French>Sélectionner une colonie importatrice pour cette nouvelle route</French>
         <German>Importsiedlung für neue Transportroute auswählen</German>
         <Italian>Select an import city</Italian>
         <Spanish>Select an import city</Spanish>
@@ -234,7 +234,7 @@
     <TEXT>
         <Tag>TXT_KEY_HELP_LOAD_TRADE_GROUP</Tag>
         <English> ([COLOR:140:255:40:255]&lt; Click &gt;[COLOR_REVERT] to load)</English>
-        <French> (cliquer pour charger)</French>
+        <French> ([COLOR:140:255:40:255]&gt; Cliquer &lt;[COLOR_REVERT] pour charger)</French>
         <German> ([COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT], um zu laden)</German>
         <Italian> (clicca per caricare)</Italian>
         <Spanish> (clic para cargar)</Spanish>
@@ -268,7 +268,7 @@
     <TEXT>
         <Tag>TXT_KEY_HELP_DELETE_TRADE_GROUP</Tag>
         <English> ([COLOR:140:255:40:255]&lt; Click &gt;[COLOR_REVERT] to delete)</English>
-        <French> (cliquer pour effacer)</French>
+        <French> ([COLOR:140:255:40:255]&gt; Cliquer &lt;[COLOR_REVERT] pour effacer)</French>
         <German> ([COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT], um zu löschen)</German>
         <Italian> (clic per rimuovere)</Italian>
         <Spanish> (clic para quitar)</Spanish>
@@ -350,14 +350,14 @@
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_IGNORE_DANGER_HELP</Tag>
         <English>Unit does currently stop when an enemy comes into view ([COLOR:140:255:40:255]&lt; Click &gt;[COLOR_REVERT] to change)</English>
-        <French>Ignorer les dangers</French>
+        <French>L'unité s'arrête quand un ennemi est en vue ([COLOR:140:255:40:255]&lt; Cliquer &gt;[COLOR_REVERT]pour ignorer les dangers)</French>
         <German>Einheit hält derzeit an, wenn ein Feind in Sichtweite gerät ([COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT], um das zu ändern)</German>
         <Russian>В настоящее время юнит останавливается, когда враг появляется в поле зрения ([COLOR:140:255:40:255]&lt; Нажмите &gt;[COLOR_REVERT] для изменения)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_CANCEL_IGNORE_DANGER_HELP</Tag>
         <English>Unit does not currently stop when an enemy comes into view ([COLOR:140:255:40:255]&lt; Click &gt;[COLOR_REVERT] to change)</English>
-        <French>Annuler l'ordre d'ignorer les dangers</French>
+        <French>L'unité poursuit sa route même si un ennemi est en vue ([COLOR:140:255:40:255]&lt; Cliquer &gt;[COLOR_REVERT]pour tenir compte des dangers)</French>
         <German>Einheit hält nicht derzeit an, wenn ein Feind in Sichtweite gerät ([COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT], um das zu ändern)</German>
         <Russian>В настоящее время отряд не останавливается, когда в поле зрения появляется враг ([COLOR:140:255:40:255]&lt; Нажмите &gt;[COLOR_REVERT] для изменения)</Russian>
     </TEXT>
@@ -379,24 +379,28 @@
     <TEXT>
         <Tag>TXT_KEY_POPUP_CHOOSE_PROFESSION_UNREST</Tag>
         <English>The colony is in unrest. Nobody will be able to leave before order is restored.</English>
+        <French>La colonie est en émeute. Personne ne sort tant que l'ordre n'est pas restoré.</French>
         <German>Die Kolonie ist in Aufruhr. Kolonisten können die Kolonie nicht verlassen.</German>
         <Russian>В колонии хаос. Никто не может покинуть поселение, пока не будет восстановлен порядок.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_STARTUP_TEST_ERROR</Tag>
         <English>Balancing Warning</English>
+        <French>Problème d'équilibrage</French>
         <German>Balancing Hinweis</German>
         <Russian>ВНИМАНИЕ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_STARTUP_TEST_WETLANDS</Tag>
         <English>The generated map is missing at least one terrain to produce strategic goods. Please try to regenrate the Map. Or play Scenario Maps which will work for sure.</English>
+        <French>La carte générée manque un type de terrain nécessaire à la production de biens stratégique. Veuillez relancer la génération de carte. Ou jouez sur un scénario qui marchera à coup sûr.</French>
         <German>Die Karte beinhaltet mindestens eine Geländeart nicht, die wichtig für strategische Waren ist. Bitte generiere die Karte neu. Oder spiele eine Szneario Karte, da diese sicher funktionieren.</German>
         <Russian>На карте отсутствует местность для добычи критически важных ресурсов. Вероятно, скрипт карты устарел и не соответствует текущим требованиям модификации.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_STARTUP_TEST_AI_PLAYERS</Tag>
         <English>No European AI players detected. It's possible they were excluded by mistake. "Open" player slots in multiplayer will not be used by AI players.</English>
+        <French>Aucun joueur IA pour les puissances coloniales détecté. Il est possible qu'ils aient été désactivés par mégarde. Les sièges de joueurs « Ouvert » en multijoueurs ne seront pas utilisés par l'IA.</French>
         <German>Keine KI-Kolonialmächte im Spiel. Es ist möglich, dass diese versehentlich deaktiviert wurden. "Offene" Player Slots werden im Multiplayer nicht automatisch gefüllt.</German>
         <Russian>Европейские ИИ-игроки не обнаружены. Возможно, они были исключены по ошибке. "Открытые" слоты для игроков в мультиплеере не будут использоваться ИИ-игроками.</Russian>
     </TEXT>
