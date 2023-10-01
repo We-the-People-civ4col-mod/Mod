@@ -29,7 +29,8 @@ In general, this means arguments are named %d (number) and %s (string). No numbe
 Please move it to Mods in the game directory.
 See Readme for more details.</English>
         <French>Ce mod ne fonctionne pas correctement quand il est installé dans le dossier « Mes documents ».
-Veuillez le déplacer dans le dossier « Mods » du programme du jeu. Regardez le fichier Readme </French>
+Veuillez le déplacer dans le dossier « Mods » du programme du jeu.
+Regardez le fichier Readme pour plus de détails.</French>
         <Russian>Этот мод работает некорректно при установке в папке "Мои документы".
 Пожалуйста, переместите его в папку Mods в папке с игрой.
 Для более подробной информации прочитайте Readme.</Russian>
@@ -43,6 +44,7 @@ Veuillez le déplacer dans le dossier « Mods » du programme du jeu. Regardez l
     <TEXT>
         <Tag>TXT_KEY_ALERT_CONFIGURATION_ERROR</Tag>
         <English>The game tried to set AllowPublicMaps to 0 in %s. Something went wrong while doing so and now it's possible that incompatible public maps can be selected ingame. Please manually open this file and set AllowPublicMaps = 0 Restart the game once this is done.</English>
+        <French>Le jeu a essayé de placer AllowPublicMaps à 0 dans %s. Cette opération a échoué et il est maintenant possible de sélectionner en jeu des cartes non compatibles. Veuillez ouvrir manuellement ce fichier et passer AllowPublicMaps = 0. Redémarrez le jeu après que c'est fait.</French>
         <Russian>Игра пыталась установить значение AllowPublicMaps (старые карты из Vanilla) на 0 в файле %s. При этом что-то пошло не так и теперь в игре могут быть выбраны общедоступные карты, несовместимые с модом. Пожалуйста, вручную откройте этот файл и установите AllowPublicMaps = 0 Перезапустите игру, как только это будет сделано.</Russian>
     </TEXT>
     <TEXT>
@@ -66,7 +68,7 @@ Veuillez le déplacer dans le dossier « Mods » du programme du jeu. Regardez l
     <TEXT>
         <Tag>TXT_KEY_ALERT_LARGE_ADDRESS_AWARE</Tag>
         <English>Colonization.exe is currently set to use max 2 GB of RAM. We The People will sometimes need more than that and if so the game will crash. Do you want to quit the game and open the readme on how to patch the game to use 4 GB?</English>
-        <French>Colonization.exe est configuré pour utiliser au plus 2 Go de Ram. We the People aura besoin de temps à autre de davantage et le jeu plantera dans ce que là. Voulez-vous quitter le jeu et lire le fichier Readme pour appliquer le correctif de jeu qui lui permette d'utiliser 4 Go ?</French>
+        <French>Colonization.exe est configuré pour utiliser au plus 2 Go de RAM. We the People aura besoin de temps à autre de davantage et le jeu plantera dans ce cas-là. Voulez-vous quitter le jeu et lire le fichier Readme pour appliquer le correctif de jeu qui lui permette d'utiliser 4 Go ?</French>
         <Russian>В настоящее время Colonization.exe настроен на использование не более 2 ГБ ОЗУ. Моду "We The People" иногда может понадобится больше и тогда игра вылетит. Хотите выйти из игры и открыть инструкцию о том, как пропатчить игру, чтобы использовать 4 ГБ?</Russian>
     </TEXT>
     <TEXT>

@@ -30,7 +30,7 @@
         <Tag>TXT_KEY_CIV_INUIT_ADJECTIVE</Tag>
         <English>Inuit</English>
         <French>
-            <Text>inuit:inuit:inuits:inuits</Text>
+            <Text>Inuit:Inuit:Inuits:Inuits</Text>
             <Gender>Male:Female:Male:Female</Gender>
             <Plural>0:0:1:1</Plural>
         </French>
@@ -49,7 +49,7 @@
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_TUGLAWINA_1</Tag>
         <English>Do you know why we have so many words for snow? Because snow is vastly more interesting to us than you are. Go away.</English>
-        <French>Vous vous demandez pourquoi nous avons autant de mots différents pour désigner la neige ? Parce que la neige nous est bien plus utile que vous. Maintenant allez-vous-en.</French>
+        <French>Vous vous demandez pourquoi nous avons autant de mots différents pour désigner la neige ? Parce que la neige nous est bien plus utile que vous. Partez.</French>
         <German>Ihr fragt Euch, warum wir so viele verschiedene Wörter für Schnee haben? Denn Schnee ist für uns viel nützlicher als für Euch. Und jetzt verschwindet hier.</German>
         <Russian>Знаете, почему у нас так много слов для обозначения снега? Потому что снег гораздо интереснее для нас, чем вы. Уходите.</Russian>
     </TEXT>
@@ -70,7 +70,7 @@
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_TUGLAWINA_1</Tag>
         <English>Back again? Please, educate us further in the fine arts of deceit and treachery.</English>
-        <French>Encore vous ? Notre Conseil fédéral est fasciné par votre grand Art de la trahison.</French>
+        <French>Encore vous ? Veuillez nous enseigner est vos arts raffinés de la tromperie et de la trahison.</French>
         <German>Wieder zurück? Bitte unterrichtet uns weiter in den feinen Künsten der Täuschung und des Verrats.</German>
         <Russian>Снова вернуться? Пожалуйста, научи нас искусству обмана и предательства. Ты преуспел в этом.</Russian>
     </TEXT>
@@ -142,7 +142,7 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_KONDIARONK_1</Tag>
         <English>I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], chief of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT], and I bid you welcome. The elders of our people desire to extend the hand of friendship to you and your people. I hope you appreciate the honour we bestow upon you by doing so. If you do not, you will regret it. I have spoken.</English>
-        <French>Bonjour. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], chef de la nation [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT] des Pétuns. Les doyens désire que nous vous tendions la main en guise d'amitié envers vous et votre peuple. J'espère que vous appréciez l'honneur que nous vous accordons par ce geste.</French>
+        <French>Bonjour. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], chef de la nation [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT] des Pétuns. Les doyens désire que nous vous tendions la main en guise d'amitié envers vous et votre peuple. J'espère que vous appréciez l'honneur que nous vous accordons par ce geste. Si ce n'est pas le cas, vous le regretterez. Ainsi ai-je parlé.</French>
         <German>Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Häuptling der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT], und ich heiße Euch willkommen. Die Ältesten unseres Volkes möchten Euch und Eurem Volk die Hand der Freundschaft reichen. Ich hoffe, Ihr wisst die Ehre zu schätzen, die wir Euch damit erweisen. Tut Ihr es nicht, werdet Ihr es bereuen. Ich habe gesprochen.</German>
         <Russian>Я держу судьбу [CT_EMPIRE] в своих руках. Есть ли у вас действительно другой выбор, кроме как дать нам то, что я требую?</Russian>
     </TEXT>
@@ -163,14 +163,14 @@
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_KONDIARONK_1</Tag>
         <English>Welcome to the longhouses of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Let our meeting take place under the blessing of the Great Spirit.</English>
-        <French>Quel plaisir d'avoir de vos nouvelles ! Installez-vous donc dans l'une de nos fameuses maisons longues. Que notre heureuse rencontre soit bénie par notre Grand Esprit !</French>
+        <French>Bienvenue dans nos maisons longues [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Que notre rencontre prenne place sous les auspices du Grand Esprit.</French>
         <German>Willkommen in den Langhäusern der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Unser Treffen soll mit dem Segen des Großen Geistes stattfinden.</German>
         <Russian>Добро пожаловать в длинные дома [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Да благословит Великий Дух нашу встречу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_KONDIARONK_1</Tag>
         <English>Your arrival in [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] lands was heralded by unrest among evil spirits. Apparently, they are horrified by your presence. As are we. What do you want?</English>
-        <French>Votre arrivée sur les [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] étaient annoncée par les mauvais esprits. Apparemment, ils sont horrifiés par votre présence. Comme nous le sommes également. Que voulez-vous donc ?</French>
+        <French>Votre arrivée sur les terres [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] était annoncée par les mauvais esprits. Apparemment, ils sont horrifiés par votre présence. Comme nous le sommes également. Que voulez-vous donc ?</French>
         <German>Eure Ankunft im [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Stammesgebiet wurde von den bösen Geistern vorhergesagt. Offenbar sind sie von Eurer Anwesenheit entsetzt. Genau wie wir. Was wollt Ihr?</German>
         <Russian>О твоём прибытии в земли [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] предупредило волнение среди злых духов. Видимо, они в ужасе от твоего присутствия. Как и мы. Что ты хочешь?</Russian>
     </TEXT>
@@ -232,7 +232,7 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_COCIJOEZA_1</Tag>
         <English>I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], fourth king of the peaceful [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] kingdom of Zaachila. I hope you share our ideals of friendship and fellowship.</English>
-        <French>Bonjour. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], 4ème souverain du royaume [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT] de Zaachila. J'espère que vous partagez nos idéaux d'amitié et de loyauté.</French>
+        <French>Bonjour. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], 4ème souverain du pacifique royaume [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT] de Zaachila. J'espère que vous partagez nos idéaux d'amitié et de loyauté.</French>
         <German>Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], der vierte Herrscher des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT] Königreichs von Zaachilas. Ich hoffe, Ihr teilt unsere Ideale von Freundschaft und Loyalität...</German>
         <Russian>Я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], четвертый король мирного королевства [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Надеюсь, вы разделяете наши идеалы дружбы и товарищества.</Russian>
     </TEXT>
@@ -260,7 +260,7 @@
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_COCIJOEZA_1</Tag>
         <English>As a sophisticated man it's my duty to educate all creatures, even the most vile, so consider yourself lucky. Which of your many follies shall we discuss?</English>
-        <French>En tant qu'homme de culture, je considère de mon devoir d'éduquer toutes créatures, même les plus vils. Considérez-vous donc chanceux. Quelle est donc votre dernière lubie ?</French>
+        <French>En tant qu'homme de culture, je considère de mon devoir d'éduquer toutes créatures, même les plus viles. Considérez-vous donc chanceux. Quelle est donc votre dernière lubie ?</French>
         <German>Als kultivierter Mann sehe ich es als meine Pflicht an, alle Kreaturen zu erziehen, selbst die abscheulichsten, also schätzt Euch glücklich. Welche Eurer vielen Torheiten sollen wir besprechen?</German>
         <Russian>Мой долг, как искушенного человека, воспитывать всех существ, даже самых мерзких, так что считай себя счастливчиком. Какую из твоих многочисленных глупостей мы обсудим?</Russian>
     </TEXT>
@@ -466,7 +466,7 @@
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_EGEDE_1</Tag>
         <English>As 2nd Chronicles 19:2 says: "Should you help the wicked and love those who hate the Lord?" There can be no peace with the sinful [CT_EMPIRE].</English>
-        <French>Comme il est dit dans la 2nde Chronique 19:2 : "Pourquoi aider celui qui est habité par le vice alors qu'il déteste notre Seigneur ?" Il ne peut y avoir de paix avec ceux qui vivent par le pêché.</French>
+        <French>Comme il est dit dans la 2nde Chronique 19:2 : "Pourquoi aider celui qui est habité par le vice alors qu'il déteste notre Seigneur ?" Il ne peut y avoir de paix avec [CT_EMPIRE] qui vivent par le pêché.</French>
         <German>Wie heißt es in der Zweiten Chronik 19,2: "Warum dem helfen, der vom Laster bewohnt ist, wenn er unseren Herrn hasst?" Es kann keinen Frieden mit denen geben, die von der Sünde leben.</German>
         <Russian>Как сказано в 2 Паралипоменон 19:2: «Должен ли ты помогать нечестивому и любить ненавидящих Господа?» С грешниками из [CT_EMPIRE] мира быть не может.</Russian>
     </TEXT>
@@ -521,7 +521,7 @@
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_PRINTZ_1</Tag>
         <English>You have managed to make the friendliest and most honourable people on this planet too angry to even talk with you. Congratulations.</English>
-        <French>Vous avez réussi à mettre le peuple le plus amicale de la terre trop en colère pour vous recevoir. Félicitations !</French>
+        <French>Vous avez réussi à mettre le peuple le plus amical de la terre trop en colère pour vous recevoir. Félicitations !</French>
         <German>Ihr habt es geschafft, die freundlichsten und ehrenwertesten Menschen auf der Welt so wütend zu machen, daß sie überhaupt nicht mehr mit Euch sprechen wollen. Glückwunsch!</German>
         <Russian>Вам удалось так разозлить самых дружелюбных и самых благородных людей на этой планете, что они не желают даже разговаривать с вами. Поздравляем.</Russian>
     </TEXT>
@@ -604,7 +604,7 @@
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_RISING_1</Tag>
         <English>Why have the people of the [CT_EMPIRE] sent their village idiot to negotiate with me? What, you're actually their leader? I didn't realize that. Well, get on with it then.</English>
-        <French>Quel est cette idiot envoyé par l'[CT_EMPIRE] pour négocier avec moi ? Ah, vous êtes leur dirigeant ? Je ne m'en étais pas rendu compte. Parlez-donc dans ce cas.</French>
+        <French>Pourquoi l'[CT_EMPIRE] a-t-il envoyé l'idiot du village pour négocier avec moi ? Ah, vous êtes leur dirigeant ? Je ne m'en étais pas rendu compte. Parlez-donc dans ce cas.</French>
         <German>Warum haben die Leute von [CT_EMPIRE] ihren Dorftrottel geschickt, um mit mir zu verhandeln? Ach, Ihr seid sogar deren Anführer? Das war mir nicht klar. Nun, dann macht weiter.</German>
         <Russian>Почему жители [CT_EMPIRE] прислали своего деревенского дурачка для переговоров со мной? Что, ты действительно их лидер? Я не понял этого. Ну что же, тогда говори.</Russian>
     </TEXT>
@@ -796,14 +796,14 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_JAUREYBO_1</Tag>
         <English>Stranger, my name is [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], and I greet you on behalf of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] people. If you are peaceful, we consider you to be a friend. If you are warlike, we consider you to be food. What is your choice?</English>
-        <French>Bonjour. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], cacique des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Je vous considère comme mon ami, mais si votre humeur devient guerrière, je vous considérerais alors comme ma nourriture. C'est à vous de choisir.</French>
+        <French>Bonjour. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], cacique des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Montrez-vous amical, nous vous considèrons comme un ami. Montrez-vous belliqueux, et vous passez à la casserole. C'est à vous de choisir.</French>
         <German>Fremder, ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Cacique der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Wenn Ihr friedlich seid, betrachten wir Euch als einen Freund. Aber wenn Ihr kriegerisch seid, dann betrachten wir Euch als Nahrung. Ihr habt die Wahl.</German>
         <Russian>Незнакомец, меня зовут [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] и я приветствую тебя от лица [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Если ты любишь мир, мы будем считать тебя своим другом. Если же ты предпочитаешь войну, мы будем считать вас своей едой. Что ты выберешь, незнакомец?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_JAUREYBO_1</Tag>
         <English>You want me to speak with you, [CT_NAME]? I'm sorry, I consider it inappropriate to play with my dinner.</English>
-        <French>Vous voulez parler, [CT_NAME] ? Désolé mais je n'aime pas bavarder avec mon prochain repas.</French>
+        <French>Vous voulez parler, [CT_NAME] ? Désolé mais je ne joue pas avec la nourriture, ce serait mal élevé.</French>
         <German>Ihr wollt mit mir reden, [CT_NAME]? Es tut mir leid, ich halte es für unangebracht, mit meinem Essen zu spielen.</German>
         <Russian>Вы хотите, чтобы я поговорил с вами, [CT_NAME]? Извините, я считаю неуместным разговаривать со своим обедом.</Russian>
     </TEXT>
@@ -824,7 +824,7 @@
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_JAUREYBO_1</Tag>
         <English>If it isn't the most unappetizing of my enemies! Have you come solely to annoy us, or is that just an unfortunate side effect?</English>
-        <French>Vous êtes un ennemi bien peu appetissant ! Etes-vous de passage seulement pour nous embêter ?</French>
+        <French>Vous êtes un ennemi bien peu appétissant ! Etes-vous de passage seulement pour nous embêter, ou est-ce un effet secondaire malencontreux ?</French>
         <German>Wenn das nicht der unappetitlichste meiner Feinde ist! Seid Ihr nur gekommen, um uns zu ärgern, oder ist das nur ein unglücklicher Nebeneffekt?</German>
         <Russian>Кто это там мешает мне завтракать? О, нет, это самый неаппетитный из моих врагов! Ты пришёл исключительно для того, чтобы досадить нам или это всего лишь неприятный побочный эффект твоего существования?</Russian>
     </TEXT>
@@ -1094,7 +1094,7 @@
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_MACHIPARA_1</Tag>
         <English>The wise men of our tribes inform me that the rain gods plan to wash your nation off the face of the earth for your disrespect. Are you here to redeem yourself, or do you intend to anger them even further?</English>
-        <French>Les sages de notre tribu m'ont informé que les Dieux de la pluie ont demandé la désintégration de votre peuple en tribut. Souhaitez-vous les appaiser ou nourrir encore davantage leur colère ?</French>
+        <French>Les sages de notre tribu m'ont informé que les Dieux de la pluie vont laver votre nation hors de cette terre pour votre manque de respect. Souhaitez-vous les apaiser ou nourrir encore davantage leur colère ?</French>
         <German>Die Weisen unseres Stammes haben mich darüber informiert, dass die Regengötter planen, Eure Nation wegen Eurer Respektlosigkeit vom Angesicht der Erde zu waschen. Seid Ihr hier, um sie zu beschwichtigen oder ihre Wut weiter zu nähren?</German>
         <Russian>Шаманы наших племен сообщили мне, что боги дождя планируют смыть ваш народ с лица земли за ваше неуважение. Вы здесь, чтобы искупить свою вину, или вы намерены разозлить их еще больше?</Russian>
     </TEXT>
@@ -1156,7 +1156,7 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_SERPENT_QUECHQUEMITL_1</Tag>
         <English>My name is [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], and I bid you welcome to the great empire of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. I expect that your presence here will beneficial to the interests of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. If not, expect to die either on the battlefield or on the altars of our glorious pyramid temples.</English>
-        <French>Mon nom est [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Au nom de l'Empire [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT], je vous souhaite la bienvenue. J'espère que votre présence sera bénéfique au peuple [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Si ce n'est pas le cas, attendez-vous à finir au sommet d'une de nos pyramides.</French>
+        <French>Mon nom est [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Au nom de l'Empire [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT], je vous souhaite la bienvenue. J'espère que votre présence sera bénéfique au peuple [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Si ce n'est pas le cas, attendez-vous à finir dans le champs de batailles ou sur l'autel au sommet d'une de nos pyramides.</French>
         <German>Mein Name ist [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], und ich heiße Euch im großen Reich der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] willkommen. Ich erwarte, dass Eure Anwesenheit hier den Interessen der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] zugute kommt. Wenn nicht, erwartet Euer Ende entweder auf dem Schlachtfeld oder auf den Spitzen unserer glorreichen Pyramidentempel.</German>
         <Russian>Меня зовут [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] и я приветствую вас в великой империи [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Я ожидаю, что ваше присутствие здесь пойдет на пользу интересам [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Если нет, ожидайте смерти либо на поле боя, либо на алтарях наших величественных храмов-пирамид.</Russian>
     </TEXT>
@@ -1343,7 +1343,7 @@
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_IRON_JACKET_1</Tag>
         <English>Negotiations with you have proven to be bad medicine in the past. We learn from our mistakes. Go away!</English>
-        <French>Mes connaissances en médecine m'ont permis de connaîtres les poisons. Et votre parole en fait partie. Partez !</French>
+        <French>Mes connaissances en médecine m'ont permis de connaître les poisons. Et votre parole en fait partie. Partez !</French>
         <German>Verhandlungen mit Euch haben sich in der Vergangenheit als eine schlechte Medizin erwiesen. Wir lernen aus unseren Fehlern. Geht weg!</German>
         <Russian>В прошлом переговоры с вами оказались плохим лекарством. Мы учимся на своих ошибках. Уходите!</Russian>
     </TEXT>
@@ -1638,7 +1638,7 @@
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_PINE_LEAF_1</Tag>
         <English>I regret to inform you that the [CT_CIV_ADJ] are no longer welcome on our lands. The [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] are greatly troubled by your actions of late. Why do you disturb our peace?</English>
-        <French>J'ai le regret de vous informer que les [CT_CIV_ADJ] ne sont plus les bienvenus à notre niveau, car les [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] sont très troublés par vos actions récentes. Pourquoi dérangez-vous notre paix ?</French>
+        <French>J'ai le regret de vous informer que les [CT_CIV_ADJ] ne sont plus les bienvenus sur nos terres. car les [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] sont très troublés par vos actions récentes. Pourquoi dérangez-vous notre paix ?</French>
         <German>Ich bedauere, Ihnen mitteilen zu müssen, dass [CT_CIV_ADJ] auf unseren Ebenen nicht mehr willkommen sind, da die [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] durch Eure Aktionen in der letzten Zeit sehr beunruhigt sind. Warum stört Ihr unseren Frieden?</German>
         <Russian>С сожалением сообщаю вам, что мы больше не рады видеть [CT_CIV_ADJ] на наших землях. [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] сильно обеспокоены вашими действиями в последнее время. Почему вы нарушаете наш покой?</Russian>
     </TEXT>
@@ -1757,7 +1757,7 @@
         <Tag>TXT_KEY_CIV_GUAYMI_SHORT_DESC</Tag>
         <English>Ngabe</English>
         <French>
-            <Text>Guaymís</Text>
+            <Text>Ngabe</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </French>
@@ -1778,7 +1778,7 @@
         <Tag>TXT_KEY_CIV_GUAYMI_ADJECTIVE</Tag>
         <English>Ngabe</English>
         <French>
-            <Text>guaymí:guaymí:guaymís:guaymís</Text>
+            <Text>Ngabe:Ngabe:Ngabe:Ngabe</Text>
             <Gender>Male:Female:Male:Female</Gender>
             <Plural>0:0:1:1</Plural>
         </French>
@@ -1797,7 +1797,7 @@
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_URRACA_1</Tag>
         <English>The presence of you cockroaches pollutes the rainforest. Leave us alone.</English>
-        <French>Vous êtes des cafards qui polluent notre belle forêt tropical. Laissons-nous tranquille.</French>
+        <French>Vous êtes des cafards qui polluent notre belle forêt tropicale. Laissons-nous tranquille.</French>
         <German>Ihr seid Kakerlaken, deren Anwesenheit unseren schönen Regenwald verschmutzt. Lasst uns in Ruhe.</German>
         <Russian>Присутствие тараканов загрязняет тропический лес. Оставь нас в покое</Russian>
     </TEXT>
@@ -1887,7 +1887,7 @@
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_ERENDIRA_1</Tag>
         <English>I'm not willing to talk with someone so vastly inferior in wisdom, strength and honour. Scurry off to the cesspits where you live.</English>
-        <French>Je ne souhaite pas parler à quelqu'un d'aussi indigent que vous. Retournez donc dans les huttes qui vous servent d'abri.</French>
+        <French>Je ne souhaite pas parler à un être aussi indigent en sagesse, force, et honneur. Retournez donc dans les cloaques qui vous servent d'abri.</French>
         <German>Ich bin nicht bereit, mit jemandem zu reden, der an Weisheit, Stärke und Ehre so weit unterlegen ist. Verzieht Euch zu den Kloaken, in denen Ihr lebt.</German>
         <Russian>Я не желаю разговаривать с кем-то, кто столь значительно уступает мне в мудрости, силе и чести. Возвращайся к выгребным ямам, где вы живете.</Russian>
     </TEXT>
@@ -1908,7 +1908,7 @@
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_ERENDIRA_1</Tag>
         <English>The beggars of the [CT_EMPIRE] are here again to grovel at my feet. Tell us why you are here, and I may decide to let you leave while still in possession of the regular number of limbs.</English>
-        <French>Les mendiants du [CT_EMPIRE] sont de nouveau là pour ramper à mes pieds. Dites-nous pourquoi vous êtes ici, et je pourrais décider de vous laisser partir tout en étant en possession du nombre régulier de membres.</French>
+        <French>Les mendiants du [CT_EMPIRE] sont de nouveau là pour ramper à mes pieds. Dites-nous pourquoi vous êtes ici, et je pourrais décider de vous laisser partir avec autant de bras et de jambes qu'en arrivant.</French>
         <German>Die Bettler der [CT_EMPIRE] sind wieder hier, um zu meinen Füßen zu kriechen. Sagt uns, warum Ihr hier sind, und ich werde vielleicht beschließen, Euch gehen zu lassen, während Ihr noch im Besitz der regulären Anzahl von Gliedmaßen sind.</German>
         <Russian>Нищие из [CT_EMPIRE] снова здесь, чтобы пресмыкаться передо мной. Скажи нам, почему ты здесь, и я, возможно, решу позволить тебе уйти, пока у тебя есть обычное количество конечностей.</Russian>
     </TEXT>
@@ -1984,7 +1984,7 @@
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_AOMAGUA_1</Tag>
         <English>Peace is not in the interests of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Our blowguns shoot further than your arquebuses. Your weapons are weak.</English>
-        <French>La paix n'est pas dans l'intérêt des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. S'assurer que vous n'aurez plus l'occasion de répéter vos crimes passés l'est davantage.</French>
+        <French>La paix n'est pas dans l'intérêt des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Nos sarbacanes ont plus de portée que vos arquebuses. Vos armes sont faibles.</French>
         <German>Frieden ist nicht im Interesse von [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Unsere Blasrohre schießen weiter als Eure Arkebusen. Eure Waffen sind schwach.</German>
         <Russian>Мы не говорим с предателями. Твои слова смертоноснее твоих болезней.</Russian>
     </TEXT>
@@ -2067,7 +2067,7 @@
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_LAUTARO_1</Tag>
         <English>Go away. I need to go hunting. On your people.</English>
-        <French>Je n'ai pas de temps pour vous. Je dois partir à la chasse... contre votre peuple.</French>
+        <French>Partez. Je dois me préparer à la chasse. Contre votre peuple.</French>
         <German>Geht weg. Ich muss auf die Jagd gehen. Auf Euer Volk.</German>
         <Russian>Уходи. Я отправляюсь на охоту. На твоих людей.</Russian>
     </TEXT>
