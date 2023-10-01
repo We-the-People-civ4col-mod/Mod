@@ -67,6 +67,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_WHEAT</Tag>
         <English>Wheat</English>
+        <French>Blé</French>
         <German>
             <Text>Weizen</Text>
             <Gender>Male</Gender>
@@ -113,7 +114,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_BOREAL_FOREST</Tag>
         <English>Boreal forest</English>
-        <French>Pin blanc</French>
+        <French>Forêt boréale</French>
         <German>
             <Text>Borealwald</Text>
             <Gender>Male</Gender>
@@ -132,6 +133,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_HARDWOOD</Tag>
         <English>Hardwood</English>
+        <French>Bois de coeur</French>
         <German>
             <Text>Hartholz</Text>
             <Gender>Neuter</Gender>
@@ -147,7 +149,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_CATTLE</Tag>
         <English>Cattle</English>
-        <French>Bétail</French>
+        <French>Boeufs</French>
         <German>
             <Text>Rinder</Text>
             <Gender>Neuter</Gender>
@@ -197,6 +199,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_YERBA</Tag>
         <English>Yerba plants</English>
+        <French>Plant de Yerba</French>
         <German>
             <Text>Yerbapflanzen</Text>
             <Gender>Female</Gender>
@@ -317,7 +320,7 @@
         <Tag>TXT_KEY_BONUS_COTTON</Tag>
         <English>Cotton plants</English>
         <French>
-            <Text>Coton</Text>
+            <Text>Plant de Coton</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
@@ -415,6 +418,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_CARIBOU</Tag>
         <English>Caribou</English>
+        <French>Caribou</French>
         <German>Karibus</German>
         <Russian>Карибу</Russian>
     </TEXT>
@@ -426,6 +430,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_MOOSE</Tag>
         <English>Moose</English>
+        <French>Élan</French>
         <German>
             <Text>Elche</Text>
             <Gender>Male</Gender>
@@ -441,6 +446,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_BIG_HORN</Tag>
         <English>Bighorn Sheep</English>
+        <French>Mouflon</French>
         <German>
             <Text>Dickhornschafe</Text>
             <Gender>Neuter</Gender>
@@ -474,6 +480,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_MUSK_OX</Tag>
         <English>Musk Ox</English>
+        <French>Boeuf musqué</French>
         <German>
             <Text>Moschusochsen</Text>
             <Gender>Male</Gender>
@@ -489,6 +496,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_LLAMA</Tag>
         <English>Llamas</English>
+        <French>Lama</French>
         <German>
             <Text>Llamas</Text>
             <Gender>Neuter</Gender>
@@ -504,6 +512,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_BOOBY</Tag>
         <English>Boobies</English>
+        <French>Fous de Bassan</French>
         <German>
             <Text>Tölpel</Text>
             <Gender>Male</Gender>
@@ -519,6 +528,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_GULL</Tag>
         <English>Gulls</English>
+        <French>Mouettes</French>
         <German>
             <Text>Möwen</Text>
             <Gender>Female</Gender>
@@ -534,6 +544,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_DUCK</Tag>
         <English>Ducks</English>
+        <French>Canards</French>
         <German>
             <Text>Enten</Text>
             <Gender>Female</Gender>
@@ -549,6 +560,11 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_LOON</Tag>
         <English>Loons</English>
+        <French>
+            <Text>Huards à collier</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </French>
         <German>
             <Text>Seetaucher</Text>
             <Gender>Male</Gender>
@@ -564,6 +580,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_CANADA_GOOSE</Tag>
         <English>Canada Goose</English>
+        <French>Bernache du Canada</French>
         <German>
             <Text>Kanadagänse</Text>
             <Gender>Female</Gender>
@@ -573,12 +590,14 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CANADA_GOOSE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][NEWLINE]One[COLOR_HIGHLIGHT_TEXT]Canada goose[COLOR_REVERT] is a big meal for a hunting party. In the north wild game is often very lean. Geese are a good source of fat in temperate or cold climates. Geese are strong fliers. Flocks of geese can be found anywhere on land or water.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]The Canada goose is a large aquatic bird. As a black goose it's in a different genera from domestic grey and white geese. Fairly tolerant of cold, as winter comes it migrates south in large V-shaped flocks. It's hunted and is an especially good source of fat. A single cooked goose will provide several bowls of grease. With its wing an adult goose can break a man's arm.</English>
+        <English>[BOLD]Strategy :[\BOLD][NEWLINE]One[COLOR_HIGHLIGHT_TEXT]Canada goose[COLOR_REVERT] is a big meal for a hunting party. In the north wild game is often very lean. Geese are a good source of fat in temperate or cold climates. Geese are strong fliers. Flocks of geese can be found anywhere on land or water.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]The Canada goose is a large aquatic bird. As a black goose it's in a different genera from domestic grey and white geese. Fairly tolerant of cold, as winter comes it migrates south in large V-shaped flocks. It's hunted and is an especially good source of fat. A single cooked goose will provide several bowls of grease. With its wing an adult goose can break a man's arm.</English><!--
+        <French>La seule façon de pardonner l'oie du Canada pour son sale caractère est de bien la rôtir, et de récupèrer le gras pouur y faire frire des légumes.</French>-->
         <German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Kanadagans[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_GUINEA_PIG</Tag>
         <English>Guinea Pigs</English>
+        <French>Cochon d'Inde</French>
         <German>
             <Text>Meerschweinchen</Text>
             <Gender>Neuter</Gender>
@@ -594,6 +613,11 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_PARROTS</Tag>
         <English>Parrots</English>
+        <French>
+            <Text>Perroquets</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </French>
         <German>
             <Text>Papageien</Text>
             <Gender>Male</Gender>
@@ -609,6 +633,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_TOUCAN</Tag>
         <English>Toucans</English>
+        <French>Toucans</French>
         <German>
             <Text>Toucane</Text>
             <Gender>Male</Gender>
@@ -624,6 +649,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_CAPYBARA</Tag>
         <English>Capybaras</English>
+        <French>Capybaras</French>
         <German>
             <Text>Wasserschweine</Text>
             <Gender>Neuter</Gender>
@@ -639,6 +665,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_TAPIR</Tag>
         <English>Tapirs</English>
+        <French>Tapirs</French>
         <German>
             <Text>Tapire</Text>
             <Gender>Neuter</Gender>
@@ -654,6 +681,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_RABBIT</Tag>
         <English>Rabbits</English>
+        <French>Lapins</French>
         <German>
             <Text>Kaninchen</Text>
             <Gender>Neuter</Gender>
@@ -752,8 +780,8 @@
         <Tag>TXT_KEY_BONUS_FUR</Tag>
         <English>Beavers</English>
         <French>
-            <Text>Fourrure</Text>
-            <Gender>Female</Gender>
+            <Text>Castor</Text>
+            <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
         <German>
@@ -784,6 +812,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_POLAR_FOX</Tag>
         <English>Polar foxes</English>
+        <French>Renards polaires</French>
         <German>
             <Text>Polarfüchse</Text>
             <Gender>Male</Gender>
@@ -799,6 +828,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_RED_FOX</Tag>
         <English>Red foxes</English>
+        <French>Renards roux</French>
         <German>
             <Text>Rotfüchse</Text>
             <Gender>Male</Gender>
@@ -815,7 +845,7 @@
         <Tag>TXT_KEY_BONUS_GEMS</Tag>
         <English>Gemstone deposits</English>
         <French>
-            <Text>Pierres précieuses</Text>
+            <Text>Gisement de pierres précieuses</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
@@ -847,7 +877,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_GIANT_TREE</Tag>
         <English>Giant Trees</English>
-        <French>Acajou</French>
+        <French>Arbres géants</French>
         <German>
             <Text>Urwaldriesen</Text>
             <Gender>Male</Gender>
@@ -867,7 +897,7 @@
         <Tag>TXT_KEY_BONUS_GOLD</Tag>
         <English>Gold deposits</English>
         <French>
-            <Text>Or</Text>
+            <Text>Filon d'or</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
@@ -900,9 +930,9 @@
         <Tag>TXT_KEY_BONUS_GRAPES</Tag>
         <English>Grapevines</English>
         <French>
-            <Text>Raisin</Text>
+            <Text>Ceps de vigne</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </French>
         <German>
             <Text>Weinreben</Text>
@@ -932,6 +962,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_OLIVES</Tag>
         <English>Olive Trees</English>
+        <French>Oliviers</French>
         <German>
             <Text>Olivenbäume</Text>
             <Gender>Maale</Gender>
@@ -947,6 +978,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_RAPE</Tag>
         <English>Rapeseed Plants</English>
+        <French>Plant de Colza</French>
         <German>
             <Text>Rapspflanzen</Text>
             <Gender>Female</Gender>
@@ -963,7 +995,7 @@
         <Tag>TXT_KEY_BONUS_HEMP</Tag>
         <English>Hemp plants</English>
         <French>
-            <Text>Chanvre</Text>
+            <Text>Plant de chanvre</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
@@ -993,6 +1025,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_FLAX</Tag>
         <English>Flax plants</English>
+        <French>Plant de lin</French>
         <German>
             <Text>Flachs</Text>
             <Gender>Female</Gender>
@@ -1010,7 +1043,7 @@
         <English>Cod</English>
         <French>
             <Text>Cabillaud</Text>
-            <Gender>Female</Gender>
+            <Gender>Male</Gender>
             <Plural>1</Plural>
         </French>
         <German>
@@ -1039,6 +1072,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_HIGH_SEA_FISH2</Tag>
         <English>Mackerel</English>
+        <French>Maquereau</French>
         <German>
             <Text>Makrelen</Text>
             <Gender>Female</Gender>
@@ -1054,6 +1088,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_HIGH_SEA_FISH3</Tag>
         <English>Blue Marlin</English>
+        <French>Marlin bleu</French>
         <German>
             <Text>Blauer Marlin</Text>
             <Gender>Male</Gender>
@@ -1069,6 +1104,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_HIGH_SEA_FISH4</Tag>
         <English>Tuna</English>
+        <French>Thon rouge</French>
         <German>
             <Text>Thunfisch</Text>
             <Gender>Male</Gender>
@@ -1118,9 +1154,9 @@
         <Tag>TXT_KEY_BONUS_INDIGO</Tag>
         <English>Indigo shrubs</English>
         <French>
-            <Text>Indigo</Text>
+            <Text>Indigotiers</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </French>
         <German>
             <Text>Indigopflanzen</Text>
@@ -1150,6 +1186,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_BLOODWOOD</Tag>
         <English>Bloodwood Trees</English>
+        <French>Bois de campêche</French>
         <German>
             <Text>Blauholzbäume</Text>
             <Gender>Male</Gender>
@@ -1166,7 +1203,7 @@
         <Tag>TXT_KEY_BONUS_IRON</Tag>
         <English>Iron ore deposits</English>
         <French>
-            <Text>Fer</Text>
+            <Text>Veine de fer</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
@@ -1198,6 +1235,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_BOG_ORE</Tag>
         <English>Bog Iron</English>
+        <French>Fer des marais</French>
         <German>
             <Text>Raseneisenstein</Text>
             <Gender>Male</Gender>
@@ -1296,6 +1334,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_WATERHOLE</Tag>
         <English>Watering hole</English>
+        <French>Trou d'eau</French>
         <German>
             <Text>Tiertränkstelle:Tiertränkstellen</Text>
             <Gender>Female</Gender>
@@ -1387,8 +1426,8 @@
         <English>Potatoes</English>
         <French>
             <Text>Pommes de terre</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
         </French>
         <German>
             <Text>Kartoffeln</Text>
@@ -1450,7 +1489,7 @@
         <Tag>TXT_KEY_BONUS_RED_PEPPER</Tag>
         <English>Red pepper plants</English>
         <French>
-            <Text>Piment rouge</Text>
+            <Text>Plants de piment rouge</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
@@ -1480,6 +1519,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_MAPLE_TREES</Tag>
         <English>Maple Trees</English>
+        <French>Érable sucrier</French>
         <German>
             <Text>Ahornbäume</Text>
             <Gender>Male</Gender>
@@ -1495,6 +1535,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_KAUTSCHUK</Tag>
         <English>Rubber Trees</English>
+        <French>Hévéas</French>
         <German>
             <Text>Kautschukbäume</Text>
             <Gender>Male</Gender>
@@ -1574,6 +1615,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_VULTURE</Tag>
         <English>Vultures</English>
+        <French>Vautours</French>
         <German>
             <Text>Geier</Text>
             <Gender>Male</Gender>
@@ -1589,6 +1631,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_IGUANA</Tag>
         <English>Iguana</English>
+        <French>Iguane</French>
         <German>
             <Text>Iguana</Text>
             <Gender>Male</Gender>
@@ -1686,7 +1729,7 @@
         <Tag>TXT_KEY_BONUS_SILVER</Tag>
         <English>Silver deposits</English>
         <French>
-            <Text>Argent</Text>
+            <Text>Veine d'argent</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
@@ -1751,6 +1794,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_CLAY</Tag>
         <English>Clay</English>
+        <French>Argile</French>
         <German>
             <Text>Lehm</Text>
             <Gender>Male</Gender>
@@ -1766,6 +1810,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_COAL</Tag>
         <English>Coal</English>
+        <French>Gisement de charbon</French>
         <German>
             <Text>Kohle</Text>
             <Gender>Female</Gender>
@@ -1781,6 +1826,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_PEAT</Tag>
         <English>Peat</English>
+        <French>Tourbe</French>
         <German>
             <Text>Torf</Text>
             <Gender>Male</Gender>
@@ -1796,6 +1842,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_VANILLA</Tag>
         <English>Vanilla</English>
+        <French>Vanille</French>
         <German>
             <Text>Vanille</Text>
             <Gender>Female</Gender>
@@ -1812,7 +1859,7 @@
         <Tag>TXT_KEY_BONUS_SUGAR</Tag>
         <English>Sugarcane</English>
         <French>
-            <Text>Sucre</Text>
+            <Text>Canne à sucre</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
@@ -1860,9 +1907,9 @@
         <Tag>TXT_KEY_BONUS_TOBACCO</Tag>
         <English>Tobacco plants</English>
         <French>
-            <Text>Tabac</Text>
+            <Text>Plants de Tabac</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </French>
         <German>
             <Text>Tabakpflanzen</Text>
@@ -1923,6 +1970,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_FUR_SEAL</Tag>
         <English>Fur Seal</English>
+        <French>Otarie à fourrure</French>
         <German>
             <Text>Seebär</Text>
             <Gender>Neuter</Gender>
@@ -1969,6 +2017,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_PENGUIN</Tag>
         <English>Penguins</English>
+        <French>Pingouins</French>
         <German>
             <Text>Pinguine</Text>
             <Gender>Male</Gender>
@@ -2017,6 +2066,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_HUMPBACK_WHALE</Tag>
         <English>Humpback Whales</English>
+        <French>Baleine à bosse</French>
         <German>
             <Text>Buckelwale</Text>
             <Gender>Male</Gender>
@@ -2032,6 +2082,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_SWEET_POTATO</Tag>
         <English>Sweet Potatoes</English>
+        <French>Patates douce</French>
         <German>
             <Text>Süßkratoffeln</Text>
             <Gender>Female</Gender>
@@ -2047,6 +2098,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_SQUASH</Tag>
         <English>Squash</English>
+        <French>Courge d'hiver</French>
         <German>
             <Text>Zuchini</Text>
             <Gender>Female</Gender>
@@ -2062,6 +2114,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_AVOCADO</Tag>
         <English>Avocado Trees</English>
+        <French>Avocatiers</French>
         <German>
             <Text>Avocado Bäume</Text>
             <Gender>Male</Gender>
@@ -2077,6 +2130,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_PRICKLY_PEAR</Tag>
         <English>Prickly Pears</English>
+        <French>Figues de Barbarie</French>
         <German>
             <Text>Feigenkaktusse</Text>
             <Gender>Male</Gender>
@@ -2113,6 +2167,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_CHERRIES</Tag>
         <English>Cherry Trees</English>
+        <French>Cerisiers</French>
         <German>
             <Text>Kirschbäume</Text>
             <Gender>Male</Gender>
@@ -2128,6 +2183,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_PINE_APPLE</Tag>
         <English>Pineapple Trees</English>
+        <French>Plant d'ananas</French>
         <German>
             <Text>Ananasbäume</Text>
             <Gender>Male</Gender>
@@ -2143,6 +2199,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_PASSION_FRUIT</Tag>
         <English>Passionfruit Trees</English>
+        <French>Fruits de la passion</French>
         <German>
             <Text>Passionsfruchtbäume</Text>
             <Gender>Male</Gender>
@@ -2158,6 +2215,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_GUAVA</Tag>
         <English>Guava Trees</English>
+        <French>Goyavier</French>
         <German>
             <Text>Guavabäume</Text>
             <Gender>Male</Gender>
@@ -2173,6 +2231,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_PAPAYA</Tag>
         <English>Papaya Trees</English>
+        <French>Papayer</French>
         <German>
             <Text>Papayabäume</Text>
             <Gender>Male</Gender>
@@ -2189,7 +2248,7 @@
         <Tag>TXT_KEY_BONUS_LEMONS</Tag>
         <English>Lemon Trees</English>
         <French>
-            <Text>Tilleul</Text>
+            <Text>Citronnier</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
@@ -2250,6 +2309,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_TUNDRA_BERRIES</Tag>
         <English>Lingonberries</English>
+        <French>Airelles rouges</French>
         <German>
             <Text>Tundrabeeren</Text>
             <Gender>Female</Gender>
@@ -2265,6 +2325,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_HUCKLE_BERRIES</Tag>
         <English>Huckleberries</English>
+        <French>Airelles du Nouveau-Monde</French>
         <German>
             <Text>Heidelbeeren</Text>
             <Gender>Female</Gender>
@@ -2280,6 +2341,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_BLUE_BERRIES</Tag>
         <English>Blueberries</English>
+        <French>Myrtilles</French>
         <German>
             <Text>Blaubeeren</Text>
             <Gender>Female</Gender>
@@ -2295,6 +2357,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_CRAN_BERRIES</Tag>
         <English>Cranberries</English>
+        <French>Canneberges</French>
         <German>
             <Text>Moosbeeren</Text>
             <Gender>Female</Gender>
@@ -2311,9 +2374,9 @@
         <Tag>TXT_KEY_BONUS_SHRIMP</Tag>
         <English>Shrimps</English>
         <French>
-            <Text>Shrimps</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Text>Crevettes</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
         </French>
         <German>
             <Text>Shrimps</Text>
@@ -2350,6 +2413,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_CASSAVA</Tag>
         <English>Cassava</English>
+        <French>Manioc</French>
         <German>Maniok</German>
         <Russian>Маниока</Russian>
     </TEXT>
@@ -2361,6 +2425,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_BEANS</Tag>
         <English>Beans</English>
+        <French>Haricots</French>
         <German>
             <Text>Bohnen</Text>
             <Gender>Female</Gender>
@@ -2398,7 +2463,7 @@
         <English>Beehives</English>
         <French>
             <Text>Ruche d'abeille</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
         <German>
