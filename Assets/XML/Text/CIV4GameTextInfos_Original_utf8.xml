@@ -1005,7 +1005,7 @@
     <TEXT>
         <Tag>TXT_KEY_PLOT_HELP_IMPROVEMENT_STORAGE</Tag>
         <English>[ICON_BULLET]Adds %d1_StorageCapacity [COLOR_CYAN]Storage Capacity[COLOR_REVERT] to City if worked</English>
-        <French>[ICON_BULLET]Ajoute d1_StorageCapacity [COLOR_CYAN]capacité d'entrepôt[COLOR_REVERT] à la ville si travaillée </French>
+        <French>[ICON_BULLET]Ajoute %d1_StorageCapacity [COLOR_CYAN]capacité d'entrepôt[COLOR_REVERT] à la ville si travaillée</French>
         <German>[ICON_BULLET]Gibt Stadt %d1_StorageCapacity [COLOR_CYAN]Lagerkapazität[COLOR_REVERT] wenn bearbeitet</German>
         <Russian>[ICON_BULLET]Добавляет %d1_StorageCapacity к [COLOR_CYAN]объему хранилища[COLOR_REVERT] в городе, если на клетке работает горожанин</Russian>
     </TEXT>
