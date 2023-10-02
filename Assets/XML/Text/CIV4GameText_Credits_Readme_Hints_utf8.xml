@@ -25,6 +25,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_SPECIAL</Tag>
 		<English>[H1]Special Credits[\H1]</English>
+		<French>[H1]Nos remerciements particuliers[\H1]</French>
 		<German>[H1]Besonderen Dank[\H1]</German>
 		<Spanish>[H1]Agradecimientos Especiales[\H1]</Spanish>
 		<Russian>[H1]Особая благодарность[\H1]</Russian>
@@ -38,7 +39,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_TAC</Tag>
 		<English>[H1]Special Credits to "The Authentic Colonization" (TAC), including former members:[\H1]</English>
-		<French>[H1]Nous tenons à remercier tout particulièrementles membres de l'équipe de développement du mod TAC ("The Authentic Colonization") y compris les anciens membres[\H1]</French>
+		<French>[H1]Nous tenons à remercier tout particulièrement les membres de l'équipe de développement du mod TAC ("The Authentic Colonization") y compris les anciens membres[\H1]</French>
 		<Russian>[H1]Особенная благодарность команде "The Authentic Colonization" (TAC), включая бывших участников:[\H1]</Russian>
 	</TEXT>
 	<TEXT>
@@ -250,34 +251,42 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_QUOTE_3</Tag>
 		<English>America owes most of its social prejudices to the exaggerated religious opinions of the different sects which were so instrumental in establishing the colonies.[NEWLINE]--- James Fenimore Cooper (1789 - 1851), novelist</English>
+		<French>L'Amérique doit la plupart de ses préjugés sociaux aux opinions religieuses si prévalentes des différentes chapelles qui furent si fondamentales à l'établissement des colonies.[NEWLINE]--- James Fenimore Cooper (1789 - 1851), romancier.</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_QUOTE_4</Tag>
 		<English>Slavery is no more sinful, by the Christian code, than it is sinful to wear a whole coat, while another is in tatters, to eat a better meal than a neighbour, or otherwise to enjoy ease and plenty, while our fellow creatures are suffering and in want.[NEWLINE]--- James Fenimore Cooper (1789 - 1851), novelist</English>
+		<French>L'esclavage n'est pas plus un pêché, selon le code de conduite chrétien, que ne le sont le fait de porter un manteau confortable, quand un autre est en lambeaux, de mieux manger que son voisin, ou jouir de l'abondance et d'une vie facile, quand nos frères souffrent et manquent de tout.[NEWLINE]--- James Fenimore Cooper (1789 - 1851), romancier.</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_QUOTE_5</Tag>
 		<English>The Indian Corn, or Maiz, proves the most useful Grain in the World; and had it not been for the Fruitfulness of this Species, it would have proved very difficult to have settled some of the Plantations in America.[NEWLINE]--- John Lawson (1674 - 1711), British explorer</English>
+		<French>Le blé indien, ou maïs, s'est montré la meilleure céréale dans ce monde, et sans l'abondance et la fertilité de cette plante, l'établissement des Plantations en Amériques se serait avéré bien difficile.[NEWLINE]--- John Lawson (1674 - 1711), explorateur britannique</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_QUOTE_6</Tag>
 		<English>There are not enough Indians in the world to defeat the Seventh Cavalry.[NEWLINE]--- George Armstrong Custer, Seventh Cavalry Commander, prior to being massacred by the Sioux at the Battle of Little Bighorn (June 25-26, 1876)</English>
+		<French>Il n'y a pas assez d'indiens dans ce monde pour battre la Septième Cavalerie.[NEWLINE]--- George Armstrong Custer, Commandant de la Septième Cavalerie, avant de se faire massacrer avec ses troupes par les Sioux à la bataille de Little Bighorn (25-26 juin 1876)</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_QUOTE_7</Tag>
 		<English>The Indians gave up the land of their own free will, and for it received brass kettles, blankets, guns, shirts, flints, tobacco, rum and many trinkets in which their simple hearts delighted.[NEWLINE]--- Patrick Gordon (1635 - 1699), Scottish explorer</English>
+		<French>Les Indiens ont cédé leurs terres de leur plein gré, et ils ont reçu en échange des bouilloires, des couvertures, des fusils, des vêtements, du tabac, du rhum, et biens des babioles qui ont ravi leur esprit simple.[NEWLINE]--- Patrick Gordon (1635 - 1699), Explorateur écossais</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_QUOTE_8</Tag>
 		<English>It affords me sincere pleasure to be able to apprise you of the entire removal of the Cherokee Nation of Indians to their new homes west of the Mississippi.[NEWLINE]--- Martin Van Buren, 8th President of the United States</English>
+		<French>J'ai le plus grand plaisir de pouvoir vous annoncer la déportation de toute la nation indienne des Cherokkes vers leur nouveau domicile à l'ouest du Mississipi.[NEWLINE]--- Martin Van Buren, 8e président des États-Unis</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_QUOTE_9</Tag>
 		<English>We derive our authority from God and the West India Company, not from the pleasure of a few ignorant subjects.[NEWLINE]--- Peter Stuyvesant, directeur-generaal of Nieuw-Nederland in the period 1647-1664</English>
+		<French>Nous tenons notre autorité de Dieu et de la Companie des Indes Occidentales, et non du bon-vouloir d'une poignée de sujets idiots.[NEWLINE]--- Peter Stuyvesant, directeur-généraal de la Nouvelle-Néerlande dans la période 1647-1664</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_QUOTE_10</Tag>
 		<English>We pray that the deceitful race - such hateful enemies and blasphemers of the name of Christ - be not allowed to further infect and trouble this new colony.[NEWLINE]--- Peter Stuyvesant, directeur-generaal of Nieuw-Nederland in the period 1647-1664, on Jewish citizens of Nieuw-Amsterdam</English>
+		<French>Nous prions que cette race perfide - des ennemis haineux et blasphémateurs envers le Christ - ne soit pas autorisé à infester davantage et gâter cette nouvelle colonieNEWLINE]--- Peter Stuyvesant, directeur-généraal de la Nouvelle-Néerlande dans la période 1647-1664, au sujet des juifs établis à la Nouvelle-Amsterdam</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_QUOTE_11</Tag>
