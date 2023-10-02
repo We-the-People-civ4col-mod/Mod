@@ -127,6 +127,7 @@
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_DEFENSE</Tag>
         <English>Fortress</English>
+        <French>Forteresses</French>
         <German>
             <Text>Festung</Text>
             <Gender>Female</Gender>
@@ -137,7 +138,7 @@
         <Tag>TXT_KEY_SPECIALBUILDING_DOCK</Tag>
         <English>Docks</English>
         <French>
-            <Text>Docks</Text>
+            <Text>Quais</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </French>
@@ -285,7 +286,7 @@
         <Tag>TXT_KEY_SPECIALBUILDING_RUM</Tag>
         <English>Rum Buildings</English>
         <French>
-            <Text>Bâtiments dédiés au rhum</Text>
+            <Text>Bâtiments des alcools distillés</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </French>
@@ -304,7 +305,7 @@
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_SPICES</Tag>
         <English>Spice Trading</English>
-        <French>Commerce des Épices</French>
+        <French>Commerce des Épices et du Sel</French>
         <German>Gewürzhandel</German>
         <Italian>Spicetrading</Italian>
         <Spanish>Spicetrading</Spanish>
@@ -396,7 +397,7 @@
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_WELL</Tag>
         <English>Water Well</English>
-        <French>Puit à eau</French>
+        <French>Puits à eau</French>
         <German>Brunnen</German>
         <Italian>Water Well</Italian>
         <Spanish>Water Well</Spanish>
