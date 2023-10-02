@@ -71,7 +71,7 @@
         <Tag>TXT_KEY_TRAIT_CAPITALIST</Tag>
         <English>Capitalist</English>
         <French>
-            <Text>Capitalist</Text>
+            <Text>Capitaliste:Capitaliste</Text>
             <Gender>Male:Female</Gender>
             <Plural>0:0</Plural>
         </French>
@@ -146,7 +146,7 @@
         <Tag>TXT_KEY_TRAIT_CLIMBER</Tag>
         <English>Rock Climber</English>
         <French>
-            <Text>Arriviste:Arriviste</Text>
+            <Text>Montagnard:Montagnarde</Text>
             <Gender>Male:Female</Gender>
             <Plural>0:0</Plural>
         </French>
@@ -364,7 +364,7 @@
         <Tag>TXT_KEY_TRAIT_FORESTWARRIORS</Tag>
         <English>Forest Warriors</English>
         <French>
-            <Text>Forrestier:Forrestière</Text>
+            <Text>Forestier:Forestière</Text>
             <Gender>Male:Female</Gender>
             <Plural>0:0</Plural>
         </French>
@@ -416,7 +416,7 @@
     <TEXT>
         <Tag>TXT_KEY_TRAIT_GATHERER</Tag>
         <English>Gatherer</English>
-        <French>Gatherer</French>
+        <French>Collecteur</French>
         <German>Sammler</German>
         <Italian>Gatherer</Italian>
         <Spanish>Gatherer</Spanish>
@@ -519,7 +519,7 @@
     <TEXT>
         <Tag>TXT_KEY_TRAIT_IMPERIALIST</Tag>
         <English>Imperialist</English>
-        <French>Imperialist</French>
+        <French>Impérialiste</French>
         <German>Imperialist</German>
         <Italian>Imperialist</Italian>
         <Spanish>Imperialist</Spanish>
@@ -749,7 +749,7 @@
     <TEXT>
         <Tag>TXT_KEY_TRAIT_PATRIARCH</Tag>
         <English>Patriarch</English>
-        <French>Patriarch</French>
+        <French>Patriarche:Matriarche</French>
         <German>Stammeshäuptling</German>
         <Italian>Patriarch</Italian>
         <Spanish>Patriarch</Spanish>
@@ -787,7 +787,7 @@
         <Tag>TXT_KEY_TRAIT_PIONEER</Tag>
         <English>Pioneer</English>
         <French>
-            <Text>Pioneer</Text>
+            <Text>Pionnier</Text>
             <Gender>Male:Female</Gender>
             <Plural>0:0</Plural>
         </French>
@@ -904,7 +904,7 @@
         <Tag>TXT_KEY_TRAIT_SOPHISTICATED</Tag>
         <English>Sophisticated</English>
         <French>
-            <Text>Sophisticated</Text>
+            <Text>Sophistiqué</Text>
             <Gender>Male:Female</Gender>
             <Plural>0:0</Plural>
         </French>
