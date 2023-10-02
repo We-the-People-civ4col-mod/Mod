@@ -968,7 +968,6 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_FAILED_TRADER_PEDIA</Tag>
         <English>TBD</English>
-        <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FAILED_TRADER_STRATEGY</Tag>
@@ -1621,7 +1620,6 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_NAVAL_BRIG_PEDIA</Tag>
         <English>A brig is a type of sailing vessel defined by its rig: two masts which are both square-rigged. As small warships, brigs carried 10 to 18 guns but they did need a large crew to handle the rigging. A skilled brig captain could manoeuvre it with ease and elegance; a brig could turn around almost on the spot.</English>
-        <German>tbd</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_NAVAL_BRIG_STRATEGY</Tag>
@@ -2522,7 +2520,6 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROYAL_TROOP_GALLEON_PEDIA</Tag>
         <English>[COLOR_UNIT_TEXT]Royal Troop Galleons[COLOR_REVERT] have six cargo slots, the most of any naval unit in the game, so they can transport more troops than the Man o' War, and can carry goods as well.[NEWLINE]Though they are no match for the biggest fighting ships they are stronger than normal [LINK=UNIT_GALLEON]galleons[\LINK]. They also have the ability to attack other units.[PARAGRAPH:1]For a comparison of all ships that are available, see [LINK=CONCEPT_SHIPS]Ships[\LINK].</English>
-        <German>tbd</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROYAL_TROOP_GALLEON_STRATEGY</Tag>
@@ -5764,7 +5761,6 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_SCHOONER_PEDIA</Tag>
         <English>The schooner is a sailing vessel defined by its rig: fore-and-aft rigged on all of two or more masts and, in the case of a two-masted schooner, the foremast is shorter than the mainmast. The name 'schooner' first appeared in eastern North America in the early 1700s.[NEWLINE]Fishing vessels that worked the Grand Banks of Newfoundland were schooners.[NEWLINE]A fast hull and good ability to windward were useful for privateers, blockade runners, slave ships and smaller naval craft. Schooners usually had cargo-carrying hulls that were designed to take the ground in drying harbours, or even to unload while beached.</English>
-        <German>tbd</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_SCHOONER_STRATEGY</Tag>

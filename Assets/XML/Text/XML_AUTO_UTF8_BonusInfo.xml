@@ -144,7 +144,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_HARDWOOD_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Hardwood[COLOR_REVERT] is found in broad-leaved temperate and tropical forests. Tropical hardwoods like mahogany, are valued for furniture. Teak, while not native, can be grown in the Caribbean and is important in ship-building.</English>
-        <German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Hartholz[COLOR_REVERT]tbd</German>
+        <!--<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Hartholz[COLOR_REVERT]tbd</German>-->
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CATTLE</Tag>
@@ -973,7 +973,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_OLIVES_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Olive trees[COLOR_REVERT] grow on[COLOR_REVERT] [LINK=TERRAIN_GRASS]grass[\LINK] terrain.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]The olive is a small tree originating in the Mediterranean basin. Olives are one of the core ingredients in Mediterranean cuisine. The olive tree has thousands of cultivars.</English>
-        <German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Olivenbäume[COLOR_REVERT]tbd[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]xxx</German>
+        <!--<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Olivenbäume[COLOR_REVERT]tbd[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]xxx</German>-->
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_RAPE</Tag>
@@ -989,7 +989,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_RAPE_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rapeseed[COLOR_REVERT] grows on [LINK=TERRAIN_GRASS]grass[\LINK] terrain.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]Rapeseed with its bright yellow flowers is cultivated mainly for its oil-rich seed, which has appreciable amounts of erucic acid. Rapeseed meal, left after the oil is extracted, is a high-protein animal feed.</English>
-        <German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rapspflanzen[COLOR_REVERT]tbd[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]xxx</German>
+        <!--<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rapspflanzen[COLOR_REVERT]tbd[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]xxx</German>-->
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HEMP</Tag>
@@ -1197,7 +1197,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_BLOODWOOD_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Bloodwood Trees[COLOR_REVERT] produce a versatile dye, used for both textiles and paper. It can also be used as a pH indicator, yellow-reddish under acidic conditions and purple when alkaline. The bark and leaves are also used in various medical applications.</English>
-        <German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Blauholzbäume[COLOR_REVERT]tbd</German>
+        <!--<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Blauholzbäume[COLOR_REVERT]tbd</German>-->
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_IRON</Tag>
@@ -1530,7 +1530,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_MAPLE_TREES_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][NEWLINE]Maple syrup comes from [COLOR_HIGHLIGHT_TEXT]maple trees[COLOR_REVERT] which grow in north temperate regions. In spring when sap starts to flow in the maple forests, tappers hammer spouts through the bark and collect a thin fluid that's then distilled over a slow fire into a rich thick syrup. It can also be poured on snow to make maple sugar.</English>
-        <German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Ahornbäume[COLOR_REVERT]tbd</German>
+        <!--<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Ahornbäume[COLOR_REVERT]tbd</German>-->
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_KAUTSCHUK</Tag>
@@ -1546,7 +1546,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_KAUTSCHUK_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rubber trees[COLOR_REVERT] grow in [LINK=FEATURE_JUNGLE]jungle[\LINK] terrain. Rubber has a large stretch ratio, high resilience and is also water-proof. It's classified as an elastomer.</English>
-        <German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Kautschukbäume[COLOR_REVERT]tbd</German>
+        <!--<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Kautschukbäume[COLOR_REVERT]tbd</German>-->
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_SALT</Tag>
@@ -1805,7 +1805,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_CLAY_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Clay[COLOR_REVERT] develops plasticity when wet, due to a molecular film of water surrounding the clay particles, but becomes hard, brittle and non-plastic upon drying or firing. Clay can be used as a building material, providing smooth interior walls for the town hall and its upgrades.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]Clay is the oldest known ceramic material. Prehistoric humans used it for making pottery. Early pottery shards have been dated to 14,000 BC, and clay tablets are the first known writing medium.</English>
-        <German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Lehm[COLOR_REVERT]tbd[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]xxx</German>
+        <!--<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Lehm[COLOR_REVERT]tbd[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]xxx</German>-->
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_COAL</Tag>
@@ -1821,7 +1821,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_COAL_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Coal[COLOR_REVERT] is formed when dead plant matter decays into peat and is converted by the heat and pressure of deep burial over millions of years. For most of colonial times coal is used for heating, not for industry.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]In 1709 in Coalbrookdale, England, Adam Darby begins using coal instead of charcoal as a way to smelt pig iron cheaply because of coal's much greater energy intensity. It's the start of the Industrial Revolution.</English>
-        <German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Kohle[COLOR_REVERT]tbd[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]xxx</German>
+        <!--<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Kohle[COLOR_REVERT]tbd[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]xxx</German>-->
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PEAT</Tag>
@@ -1837,7 +1837,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_PEAT_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][NEWLINE]A swamp dries and over centuries turns into a [COLOR_HIGHLIGHT_TEXT]peat[COLOR_REVERT] bog, which offers cheap fuel where wood and coal aren't available. Peat cutters don't need much equipment to do their work, just a cutter and a hod to carry chunks of peat on their back.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]Peat is a peasant fuel, warming the poor and slaves at low or no cost. Peat is the world's most efficient carbon sink, storing 42% of all soil carbon, more than all other vegetation types, including the world's forests. It's not renewable.</English>
-        <German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Torf[COLOR_REVERT]tbd[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]xxx</German>
+        <!--<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Torf[COLOR_REVERT]tbd[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]xxx</German>-->
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_VANILLA</Tag>
@@ -1853,7 +1853,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_VANILLA_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Vanilla[COLOR_REVERT] is a spice derived from orchids. There are three major species, all derived from the original Mexican plant. It can be pollinated by hand to produce the vanilla bean.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]Vanilla is one of the two most popular flavours for sweet treats, the other being chocolate. It's used in candy, baking and liqueurs, all of which would be familiar to monks in colonial missions.</English>
-        <German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Vanille[COLOR_REVERT]tbd[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]xxx</German>
+        <!--<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Vanille[COLOR_REVERT]tbd[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]xxx</German>-->
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_SUGAR</Tag>

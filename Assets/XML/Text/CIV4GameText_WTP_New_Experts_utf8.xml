@@ -59,18 +59,10 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_BREEDER_PEDIA</Tag>
         <English>Poultry farmers raise chickens, ducks, turkeys and geese for meat and eggs. Children can look after a pen with few chickens. When the flock gets bigger wolves and bobcats discover an opportunity, so poultry breeding turns into an adult job.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BREEDER_STRATEGY</Tag>
         <English>Chickens are an excellent food source. They travel well so they often provide the first domestic protein in a new colony.[NEWLINE]When assigned to the Poultry Farmer profession, the expert is capable of producing double the poultry in the same amount of time it would take a regular colonist.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- CASSAVA_PLANTER -->
     <TEXT>
@@ -126,18 +118,12 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_CASSAVA_PLANTER_PEDIA</Tag>
         <English>Cassava roots are a staple food in tropical and subtropical climates. Cassava can be either sweet or bitter, with the bitter more pest-resistant. Proper preparation is important to avoid the risk of acute cyanide intoxication.[NEWLINE]Cassava is drought-resistant. It grows on marginal soils. It's usually boiled, but the starch can be extracted for tapioca. In Brazil it's grated and dried into a coarse flour.</English>
-        <French>xxx</French>
         <German>Maniokwurzeln sind ein Grundnahrungsmittel in tropischen und subtropischen Klimazonen. Maniok kann entweder süß oder bitter sein, wobei die bittere Variante schädlingsresistenter ist. Die richtige Zubereitung ist wichtig, um das Risiko einer akuten Zyanidvergiftung zu vermeiden.[NEWLINE]Maniok ist dürreresistent. Sie wächst auf marginalen Böden. Normalerweise wird sie gekocht, aber die Stärke kann für Tapioka extrahiert werden. In Brasilien wird sie gerieben und zu grobem Mehl getrocknet.</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CASSAVA_PLANTER_STRATEGY</Tag>
         <English>An [COLOR_HIGHLIGHT_TEXT]expert cassava planter[COLOR_REVERT] is more effective at [LINK=PROFESSION_CASSAVA_PLANTER]planting[\LINK] [LINK=YIELD_CASSAVA]cassava[\LINK] than any other expert.[PARAGRAPH:1]Expert cassava planters can be bought in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT], [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]natives[\LINK] or in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its extensions.</English>
-        <French>xxx</French>
         <German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Maniokpflanzer[COLOR_REVERT] ist effektiver im [LINK=PROFESSION_CASSAVA_PLANTER]pflanzen[\LINK] von [LINK=YIELD_CASSAVA]Maniok[\LINK] als alle anderen Experten.[PARAGRAPH:1]Erfahrene Maniokpflanzer können in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT] erworben werden, in Dörfern der [LINK=CONCEPT_NATIVES]Ureinwohner[\LINK] oder in einer Kolonie mit einer [LINK=BUILDING_SCHOOLHOUSE]Schule[\LINK] bzw. einer seiner Erweiterungen können sie [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- COCHINEAL_COLLECTOR -->
     <TEXT>
@@ -193,18 +179,12 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR_PEDIA</Tag>
         <English>The cochineal insects found on prickly pear cactus pads produce carminic acid, a predator-deterring chemical. When mixed with aluminum or calcium salts dried cochineal becomes carmine dye. Collectors gather the bugs by brushing them off the cactus pads.[NEWLINE]Bright red carmine dye, used in the Americas for colouring fabrics, became an important export good in the 16th century. Cochineal insects are found in the areas now known as Peru, Mexico, Chile and Argentina.[NEWLINE]When assigned to the Cochineal Collector profession, the expert can gather double the quantity of cochineal in the same amount of time it would take a regular colonist.</English>
-        <French>xxx</French>
         <German>Die Cochenille-Schildläuse, die auf den Blättern des Feigenkaktus zu finden sind, produzieren Karminsäure, eine Chemikalie, die Raubtiere abschreckt. In Verbindung mit Aluminium- oder Kalziumsalzen wird aus den getrockneten Cochenille-Schildläusen ein karminroter Farbstoff. Sammler sammeln die Schildläuse ein, indem sie sie von den Kaktusblättern abbürsten.[NEWLINE]Der leuchtend rote Karminfarbstoff, der in Amerika zum Färben von Stoffen verwendet wurde, wurde ab Mitte des 16. Jahrhunderts zu einem wichtigen Exportgut. Cochenille-Insekten kommen in den Gebieten vor, die heute als Peru, Mexiko, Chile und Argentinien bekannt sind.[NEWLINE]Wenn ein Experte den Beruf des Cochenille-Sammlers ausübt, kann er die doppelte Menge an Cochenille-Schildläusen in der gleichen Zeit sammeln, die ein normaler Kolonist benötigen würde.</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR_STRATEGY</Tag>
         <English>A [COLOR_HIGHLIGHT_TEXT]expert cochineal collector[COLOR_REVERT] is more effective at [LINK=PROFESSION_COCHINEAL_COLLECTOR]collecting[\LINK] [LINK=YIELD_COCHINEAL]cochineal[\LINK] than any other expert.[PARAGRAPH:1]Expert cochineal collectors can be [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]natives[\LINK] or in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its extensions. They can also be purchased in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT].</English>
-        <French>xxx</French>
         <German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Cochenille-Sammler[COLOR_REVERT] ist effektiver im [LINK=PROFESSION_COCHINEAL_COLLECTOR]Sammeln[\LINK] von [LINK=YIELD_COCHINEAL]Cochenille-Schildläusen[\LINK] als alle anderen Experten.[PARAGRAPH:1]Erfahrene Cochenille-Sammler können in Dörfern der [LINK=CONCEPT_NATIVES]Ureinwohner[\LINK] oder in einer Kolonie mit einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden. Man kann sie auch in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT] erwerben.</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- LINEN_PLANTER -->
     <TEXT>
@@ -260,18 +240,12 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_LINEN_PLANTER_PEDIA</Tag>
         <English>Linen fabrics woven from wild flax date back over 30,000 years. Devout colonists all know that linen is frequently mentioned in the Bible.[NEWLINE]Linen is comfortable to wear in hot weather. The fabric is strong and absorbent, though it does wrinkle.</English>
-        <French>xxx</French>
         <German>Leinenstoffe, die aus wildem Flachs gewebt werden, gibt es schon seit über 30.000 Jahren. Fromme Kolonisten wissen, dass Leinen häufig in der Bibel erwähnt wird.[NEWLINE]Leinen ist bei heißem Wetter angenehm zu tragen. Der Stoff ist stark und saugfähig, knittert aber.</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LINEN_PLANTER_STRATEGY</Tag>
         <English>A [COLOR_HIGHLIGHT_TEXT]expert flax planter[COLOR_REVERT] is more effective at [LINK=PROFESSION_FLAX_PLANTER]planting[\LINK] [LINK=YIELD_FLAX]flax[\LINK] than any other expert.[PARAGRAPH:1]Expert flax planter can be [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]natives[\LINK] or in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its extensions.</English>
-        <French>xxx</French>
         <German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Flachspflanzer[COLOR_REVERT] ist effektiver im [LINK=PROFESSION_FLAX_PLANTER]pflanzen[\LINK] von [LINK=YIELD_FLAX]Flachs[\LINK] als alle anderen Experten.[PARAGRAPH:1]Erfahrene Flachspflanzer können in Dörfern der [LINK=CONCEPT_NATIVES]Ureinwohner[\LINK] oder in einer Kolonie mit einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- LOGWOOD_COLLECTOR -->
     <TEXT>
@@ -327,18 +301,12 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_LOGWOOD_COLLECTOR_PEDIA</Tag>
         <English>The logwood tree was of great economic importance in the colonial era when it was exported to Europe for dyeing fabrics. Defying Spanish territorial claims, foreign sailors cut and collected trees for shipment back to Europe. Spain responded by commissioning privateers to attack them. Under attack from Spanish privateers, logwood cutters formed their own pirate crews to raid the Spanish. Blackbeard turned captured logwood sloops into pirate ships.</English>
-        <French>xxx</French>
         <German>In der Kolonialzeit war Blauholz von großer wirtschaftlicher Bedeutung, da es zum Färben von Stoffen nach Europa exportiert wurde. Unter Missachtung spanischer Gebietsansprüche fällten und sammelten ausländische Seeleute Bäume, um sie nach Europa zu verschiffen. Spanien beauftragte daraufhin Freibeuter, um sie anzugreifen. Unter den Angriffen der spanischen Freibeuter gründeten die Holzfäller ihre eigenen Piratencrews, um die Spanier zu überfallen. Blackbeard verwandelte gekaperte Holzschiffe in Piratenschiffe.</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LOGWOOD_COLLECTOR_STRATEGY</Tag>
         <English>If an [COLOR_HIGHLIGHT_TEXT]Experienced Logwood Collector[COLOR_REVERT] is employed in the [LINK=PROFESSION_BLOODWOOD_CUTTER]logwood cutter[\LINK] profession, the yield of [LINK=YIELD_LOGWOOD]logwood[\LINK] extraction is greater than other experts. For other types of wood ([LINK=YIELD_LUMBER]lumber[\LINK], [LINK=YIELD_HARDWOOD]hardwood[\LINK] and [LINK=YIELD_VALUABLE_WOOD]exotic wood[\LINK]), the experienced bluewood collector scores slightly higher than [COLOR_HIGHLIGHT_TEXT]free colonists[COLOR_REVERT].[PARAGRAPH:1]Expert Logwood Collector can be hired in [LINK=CONCEPT_AFRICA]Africa[\LINK], and they can also be [LINK=CONCEPT_TRAINING]taught[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
-        <French>xxx</French>
         <German>Wird ein [COLOR_HIGHLIGHT_TEXT]Erfahrener Blauholz-Sammler[COLOR_REVERT] im Beruf des [LINK=PROFESSION_BLOODWOOD_CUTTER]Holzfällers (Blauholz)[\LINK] eingesetzt, ist die Ausbeute bei der Gewinnung von [LINK=YIELD_LOGWOOD]Blauholz[\LINK] größer als bei anderen Experten. Bei anderen Holzsorten ([LINK=YIELD_LUMBER]Holz[\LINK], [LINK=YIELD_HARDWOOD]Hartholz[\LINK] und [LINK=YIELD_VALUABLE_WOOD]Edelholz[\LINK]) erzielt der erfahrene Blauholz-Sammler etwas mehr als [COLOR_HIGHLIGHT_TEXT]Freie Kolonisten[COLOR_REVERT].[PARAGRAPH:1]Erfahrene Holzfäller können in [LINK=CONCEPT_AFRICA]Afrika[\LINK] angeheuert werden oder in einer Kolonie mit einer [LINK=BUILDING_SCHOOLHOUSE]Schule[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- LOGWOOD_OLIVES_PLANTER -->
     <TEXT>
@@ -469,10 +437,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEANUT_PLANTER_STRATEGY</Tag>
         <English>A [COLOR_HIGHLIGHT_TEXT]expert penut planter[COLOR_REVERT] is more effective at [LINK=PROFESSION_PEANUT_PLANTER]planting[\LINK] [LINK=YIELD_PEANUTS]penuts[\LINK] than any other expert.[PARAGRAPH:1]Expert penut planter can be [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]natives[\LINK] or in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its extensions.</English>
-        <French>xxx</French>
         <German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Erdnusspflanzer[COLOR_REVERT] ist effektiver im [LINK=PROFESSION_PEANUT_PLANTER]pflanzen[\LINK] von [LINK=YIELD_PEANUTS]Erdnüssen[\LINK] als alle anderen Experten.[PARAGRAPH:1]Erfahrene Erdnusspflanzer können in Dörfern der [LINK=CONCEPT_NATIVES]Ureinwohner[\LINK] oder in einer Kolonie mit einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- PEAT_CUTTER -->
     <TEXT>
@@ -536,10 +501,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEAT_CUTTER_STRATEGY</Tag>
         <English>Peat is a peasant fuel, warming the poor and slaves at low or no cost. Peat is the world's most efficient carbon sink, storing 42% of all soil carbon, more than all other vegetation types, including the world's forests. It's not renewable.[NEWLINE]When assigned to the [LINK=PROFESSION_CLAY_MINER]clay cutter[\LINK] or [LINK=PROFESSION_PEAT_CUTTER]peat cutter[\LINK] profession, the expert can cut twice as much [LINK=YIELD_CLAY]clay[\LINK] and [LINK=YIELD_PEAT]peat[\LINK] in the same amount of time as a regular colonist.</English>
-        <French>xxx</French>
         <German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Torf- und Lehmstecher[COLOR_REVERT] kann, wenn er den Berufen [LINK=PROFESSION_CLAY_MINER]Lehmkuhlenarbeiter[\LINK] oder [LINK=PROFESSION_PEAT_CUTTER]Torfstecher[\LINK] zugewiesen ist, doppelt so viel [LINK=YIELD_CLAY]Lehm[\LINK] und [LINK=YIELD_PEAT]Torf[\LINK] produzieren, als ein normaler Kolonist.</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- RAPE_PLANTER -->
     <TEXT>
@@ -595,18 +557,10 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_RAPE_PLANTER_PEDIA</Tag>
         <English>Rapeseed with its bright yellow flowers is cultivated mainly for its oil-rich seed, which has appreciable amounts of erucic acid. Rapeseed meal, left after the oil is extracted, is a high-protein animal feed.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RAPE_PLANTER_STRATEGY</Tag>
         <English>Rapeseed is a valuable oil crop. Once the oil is extracted, what's left is used as fodder for domestic animals, mainly cattle, but also pigs and poultry. It's a member of the cabbage family.[NEWLINE]When assigned to the Rapeseed Planter profession, the expert can harvest double the rapeseed in the same time as a regular colonist.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- RICE_FARMER -->
     <TEXT>
@@ -662,18 +616,10 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_RICE_FARMER_PEDIA</Tag>
         <English>In tropical areas rice can survive as a perennial. It grows in water. Rice seeds are milled with a huller to remove the chaff, producing brown rice. Removing the bran creates white rice.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RICE_FARMER_STRATEGY</Tag>
         <English>Rice is nutritious and light to carry. Scouts may have a loaf of bread for their first day on the trail but it's the bag of dried rice that feeds them for the rest of the trip.[NEWLINE]When assigned to the Rice Farmer profession, the expert can grow double the rice in the same time as a regular colonist.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- VANILLA_COLLECTOR -->
     <TEXT>
@@ -871,18 +817,10 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_HERDER_PEDIA</Tag>
         <English>Herding flocks is ancient. Biblical shepherds carried slings which they used to kill lions and Philistines, so herders in the New World were already well-prepared for wolves and bears.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HERDER_STRATEGY</Tag>
         <English>Cattle graze the tops of grass stalks. so they can use the same field for years. Sheep eat the whole grass plant down to the root, leaving pastures barren. The result can be a range war.[NEWLINE]When assigned to the Herder profession, the expert can raise twice as many animals in the same time as a regular colonist.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- MAPLE_SIRUP_COLLECTOR -->
     <TEXT>
@@ -938,18 +876,12 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR_PEDIA</Tag>
         <English>Maple syrup comes from maple forests which grow in north temperate regions. It's a popular treat, contributing to happiness. In spring when sap starts to flow in the maple forests, tappers hammer spouts through the bark and collect a thin fluid that's then distilled over a slow fire into a rich thick syrup. The sap can also be poured on snow to make maple sugar.</English>
-        <French>xxx</French>
         <German>Ahornsirup stammt aus Ahornwäldern, die in den nördlichen gemäßigten Zonen wachsen. Er ist ein beliebtes Süßungsmittel und trägt zum Glücklichsein bei. Im Frühjahr, wenn in den Ahornwäldern der Saft zu fließen beginnt, schlagen die Pflücker mit dem Hammer Tüllen durch die Rinde und sammeln eine dünne Flüssigkeit, die dann langsam über einem Feuer zu einem reichhaltigen, dicken Sirup destilliert wird. Der Saft kann auch auf Schnee gegossen werden, um Ahornzucker herzustellen.</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR_STRATEGY</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]Expert maple tree tappers[COLOR_REVERT] gather twice as much [LINK=YIELD_MAPLE_SIRUP]maple syrup[\LINK] per hour as regular colonists assigned to be [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]maple syrup collectors[\LINK]. The syrup comes from trees on [LINK=TERRAIN_TAIGA]taiga[\LINK] hills or in [LINK=BONUS_MAPLE_TREES]maple forests[\LINK][PARAGRAPH:1]Expert maple tree tappers can be taught by [LINK=CONCEPT_NATIVES]Natives[\LINK], or [LINK=CONCEPT_TRAINING]trained[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or its extensions. They can also be hired in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT].</English>
-        <French>xxx</French>
         <German>[COLOR_HIGHLIGHT_TEXT]Erfahrene Ahornsirup-Sammler[COLOR_REVERT] können in den Hügeln der [LINK=TERRAIN_TAIGA]Taiga[\LINK] oder in [LINK=BONUS_MAPLE_TREES]Ahorn-Wäldern[\LINK] als [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]Ahornsirup-Sammler[\LINK] doppelt so viel [LINK=YIELD_MAPLE_SIRUP]Ahornsirup[\LINK] sammeln, wie freie Kolonisten.[PARAGRAPH:1]Erfahrene Ahornsirup-Sammler können von [LINK=CONCEPT_NATIVES]Ureinwohnern[\LINK] ausgebildet werden, oder in einer Kolonie in einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] bzw. dessen Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden. Sie können auch in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT] erworben werden.</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- KAUTSCHUK_COLLECTOR -->
     <TEXT>
@@ -1005,18 +937,10 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR_PEDIA</Tag>
         <English>Rubber is harvested by making incisions in the bark of rubber trees. The latex is heated to create rubber that can be dried into waterproof sheets, along with other industrial products.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR_STRATEGY</Tag>
         <English>Rubber has a large stretch ratio, high resilience and is also water-proof. It's classified as an elastomer.[NEWLINE]When assigned to the Rubber Collector profession, the expert can get twice as much rubber in the same time as a regular colonist.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- CONFECTIONER -->
     <TEXT>
@@ -1080,10 +1004,6 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONFECTIONER_STRATEGY</Tag>
         <English>The confectioner creates variety, candy for every taste, alongside traditional sweets that remind people of home. The business can become a social destination, with tables and beverages to accompany the treats.[NEWLINE]When assigned to the Confectioner profession, the master can make twice as much candy in the time a regular colonist would take to do the job.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- HOUSEHOLD_TRADER -->
     <TEXT>
@@ -1139,18 +1059,10 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_HOUSEHOLD_TRADER_PEDIA</Tag>
         <English>Housewares encompass everything that makes life comfortable, extending from basic necessities to rare luxuries. At first everything comes from Europe but clever artisans soon learn to make, and sometimes improve, familiar items.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HOUSEHOLD_TRADER_STRATEGY</Tag>
         <English>Pots and pans are important trade goods. The houseware trader is expected to have all the necessities in stock at a fair price.[NEWLINE]When assigned to the Household Trader profession, the master can handle twice the goods in the same time as a regular colonist.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- YERBA_TRADER -->
     <TEXT>
@@ -1206,18 +1118,10 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_TRADER_PEDIA</Tag>
         <English>Getting started in the yerba-maté trade meant dealing with two especially dangerous Indigenous nations: the Guaraní and Tupí. To add to the challenge, yerba was found in only two regions, Amambay and Alto Paraná.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_TRADER_STRATEGY</Tag>
         <English>Yerba leaves are steeped in hot water to make a caffeinated beverage: yerba-maté. Brewed cold, it is used to make tereré.[NEWLINE]When assigned to the yerba-maté trader profession, the master can market twice the quantity of yerba leaves in the same time as a regular colonist.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- OIL_TRADER -->
     <TEXT>
@@ -1273,18 +1177,10 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_OIL_TRADER_PEDIA</Tag>
         <English>Pressing oil is an ancient craft in Europe, particularly in Mediterranean cultures. Olives are crushed for their oil. Once rapeseed oil is extracted, what's left is used as fodder for domestic animals, mainly cattle, but also pigs and poultry.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OIL_TRADER_STRATEGY</Tag>
         <English>Cooking oil is used in most households almost every day. Because the market is so widespread it's a good cover for smuggling. Nostalgic settlers often prefer the taste of oil from their home country.[NEWLINE]When assigned to the Cooking Oil Trader profession, the master can sell twice as much cooking oil in the same time as a regular colonist.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- FRUITS_PICKER -->
     <TEXT>
@@ -1340,18 +1236,10 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_FRUITS_PICKER_PEDIA</Tag>
         <English>Fresh fruit is essential for good health. Fruits mature in different seasons, giving people a feeling for nature. Knowing the right moment to capture a crop's ripeness means getting the best price.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FRUITS_PICKER_STRATEGY</Tag>
         <English>Fruit picking is one of the most laborious jobs available, what with climbing and stooping, but without pickers good food rots. It's usually a first job for immigrants and young people, and they move on to something less strenuous at the first opportunity.[NEWLINE]When assigned to the Fruit Picker profession, the expert can harvest twice as much fruit in the same time as a regular colonist.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- POULTRY_BUTCHER -->
     <TEXT>
@@ -1407,18 +1295,10 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_POULTRY_BUTCHER_PEDIA</Tag>
         <English>Butchers use sharp knives and they have to work fast so it's a dangerous job. Poultry is tricky because not only do the carcasses have to be cleaned and the meat portioned, but the feathers and down, particularly from geese and ducks, must be plucked for insulation.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POULTRY_BUTCHER_STRATEGY</Tag>
         <English>Poultry is usually the cheapest domestic meat in any settlement. A good butcher works fast and keeps the price down. Workers who don't get paid much still can eat well and the result is a busy happy community.[NEWLINE]When assigned to the Poultry Butcher profession, the master can get twice as much meat and feathers in the same time as a regular colonist.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- COAL_MINER -->
     <TEXT>
@@ -1483,10 +1363,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_COAL_MINER_STRATEGY</Tag>
         <English>Coal mining causes premature death and illness, but it's a soft rock that doesn't need as many explosives as hard rock mining. It's a job where labourers use picks and shovels, and they don't get paid much.[NEWLINE]When assigned to the [LINK=PROFESSION_COAL_MINER]coal miner[\LINK] profession, the expert can get twice the tonnage of [LINK=YIELD_COAL]coal[\LINK] in the same time as a regular colonist.</English>
-        <French>xxx</French>
         <German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Kohlekumpel[COLOR_REVERT], der als [LINK=PROFESSION_COAL_MINER]Bergmann[\LINK] dem Abbau von [LINK=YIELD_COAL]Kohle[\LINK] zugewiesen ist, produziert doppelt so viel Kohle wie ein freier Kolonist.  </German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- LEATHER_TAYLOR -->
     <TEXT>
@@ -1542,18 +1419,10 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_LEATHER_TAYLOR_PEDIA</Tag>
         <English>Sewing padding and a lining into leather doesn't just make the garment more comfortable. By adding insulation it also improves health for those working outside, and can even save their lives.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LEATHER_TAYLOR_STRATEGY</Tag>
         <English>The clothing business has efficiencies and economies of scale. A solitary leatherworker might spend days fitting a coat to a single customer but a factory can have enough sizes in stock for everyone to buy off the rack.[NEWLINE]When assigned to the Leather Clothier profession, the master can produce twice as much leatherwear in the same time as a regular colonist.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- CLOTH_TAYLOR -->
     <TEXT>
@@ -1678,16 +1547,12 @@
         <English>After the coffee berries are picked, the green coffee is processed by the wet method, where berries are fermented to produce a mild coffee.[NEWLINE]Beans are sorted for ripeness and the flesh of the beans is removed.[NEWLINE]Beans are then fermented to remove the oily mucilage.[NEWLINE]When fermentation is finished, the beans are washed with lots of fresh water to remove the fermentation residue, causing massive amounts of coffee wastewater.[NEWLINE]Finally the seeds are dried.</English>
         <French>Après la cueillette des baies de café, le café vert est traité par la méthode humide, où les baies sont fermentées pour produire un café doux. Les grains sont triés en fonction de leur maturité et la chair des grains est retirée. Les grains sont ensuite fermentés pour éliminer la couche visqueuse de mucilage encore présente sur le grain. Lorsque la fermentation est terminée, les grains sont lavés et séchés. Ils sont ensuite triés en fonction de leur maturité et de leur couleur. Le plus souvent, la chair de la baie est enlevée, généralement par machine, et les graines - généralement appelées haricots - sont fermentées pour enlever la couche visqueuse de mucilage encore présente sur le haricot. Lorsque la fermentation est terminée, les grains sont lavés avec de grandes quantités d'eau douce pour éliminer le résidu de fermentation, ce qui génère des quantités massives d'eaux usées de café. Enfin, les graines sont séchées.</French>
         <German>Nach dem Pflücken der Kaffeebeeren werden diese fermentiert, um die schleimige Schicht, die sich noch auf der Kaffeebohne befindet, zu entfernen. Ist die Fermentation beendet, werden die Bohnen gewaschen und getrocknet. Danach werden sie nach Reifegrad und Farbe sortiert und meist maschinell das Fruchtfleisch der Beere entfernt. Die Kerne - meist Bohnen genannt - werden dann fermentiert, um die noch vorhandene schleimige Schicht der Bohne zu entfernen. Nach Beendigung der Fermentation werden die Bohnen mit großen Mengen Frischwasser gewaschen, um die Fermentationsrückstände zu entfernen, wodurch große Mengen an Kaffeeabwasser entstehen. Schließlich werden die Samen getrocknet.</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROASTER_STRATEGY</Tag>
         <English>[COLOR_UNIT_TEXT]Master roasters[COLOR_REVERT] are proficient in roasting [LINK=YIELD_PEANUTS]peanuts[\LINK], [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK] and [LINK=YIELD_COFFEE_BERRIES]coffee berries[\LINK] to make [LINK=YIELD_ROASTED_PEANUTS]roasted peanuts[\LINK], [LINK=YIELD_COCOA]cocoa[\LINK] and [LINK=YIELD_COFFEE]coffee[\LINK] out of them.[NEWLINE]When assigned to the [LINK=PROFESSION_PEANUT_ROASTER]peanut roaster[\LINK], [LINK=PROFESSION_COCOA_ROASTER]cocoa roaster[\LINK] or [LINK=PROFESSION_COFFEE_ROASTER]coffee roaster[\LINK] profession, they are capable of turning out double the amount of either resource in the same amount of time it would take a regular colonist.[PARAGRAPH:1]Master roasters can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]taught[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its upgrades.</English>
         <French>Les [COLOR_UNIT_TEXT]Maîtres torrefacteurs[COLOR_REVERT] produisent deux fois plus de [COLOR_HIGHLIGHT_TEXT]café torréfié ou cacao[COLOR_REVERT] depuis les [COLOR_HIGHLIGHT_TEXT]grains de cafés ou fèves de cacao[COLOR_REVERT].</French>
         <German>[COLOR_UNIT_TEXT]Röstmeister[COLOR_REVERT] verarbeiten doppelt soviele [LINK=YIELD_PEANUTS]Erdnüsse[\LINK], [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] oder [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] zu gerösteten [LINK=YIELD_ROASTED_PEANUTS]Erdnüssen[\LINK], [LINK=YIELD_COFFEE]Kaffee[\LINK] bzw. [LINK=YIELD_COCOA]Kakao[\LINK], wie andere Kolonisten.[PARAGRAPH:1]Röstmeister können in [LINK=CONCEPT_EUROPE]Europa[\LINK] rekrutiert werden, und sie können auch in einer Kolonie in einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] oder einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- POTTER -->
     <TEXT>
@@ -1751,10 +1616,6 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_POTTER_STRATEGY</Tag>
         <English>Pottery lets villages store their surplus grain to get them through the hungry winter. Loading sturdy pots into wagons is a handy way to ship grain and supply food to new settlements.[NEWLINE]When assigned to the Potter profession, the master can make twice as many pots in the same time as a regular colonist.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- MILK_MAID -->
     <TEXT>
@@ -1877,18 +1738,11 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHEESE_MAKER_PEDIA</Tag>
         <English>Cheese is produced by coagulation of the milk protein casein. Milk is usually acidified and the enzymes of either rennet or bacterial enzymes are added so the casein coagulates. Curds are then separated from the liquid whey and pressed into finished cheese.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHEESE_MAKER_STRATEGY</Tag>
         <English>Cheese is valued for its transportability, long shelf life, and high content of fat, protein, calcium, and phosphorus. The long storage life of some cheeses, especially when encased in a protective rind, allows selling when markets are favourable.[NEWLINE]When assigned to the [LINK=PROFESSION_CHEESE_MAKER]cheese maker[\LINK] profession, the master can get twice the weight of [LINK=YIELD_CHEESE]cheese[\LINK] in the same time as a regular colonist.</English>
-        <French>xxx</French>
         <German>Wenn der [COLOR_HIGHLIGHT_TEXT]Meister Käsemacher[COLOR_REVERT] den Beruf des [LINK=PROFESSION_CHEESE_MAKER]Käsemachers[\LINK] ausübt, kann er in derselben Zeit doppelt so viel [LINK=YIELD_CHEESE]Käse[\LINK] herstellen, wie ein normaler Kolonist.</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- CHARCOAL_BURNER -->
     <TEXT>
@@ -1995,10 +1849,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_BAKER_STRATEGY</Tag>
         <English>The [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] may be employed in the [LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] or one of its extensions supplying provisions made from ([LINK=PROFESSION_BAKER_BARLEY]barley[\LINK], [LINK=PROFESSION_BAKER_RICE]rice[\LINK] or [LINK=PROFESSION_BAKER_CASSAVA]cassava[\LINK]). The master baker will produce twice as many [LINK=YIELD_BAKERY_GOODS]provisions[\LINK] in the same time as a typical colonist.</English>
-        <French>xxx</French>
         <German>Der [COLOR_HIGHLIGHT_TEXT]Bäckermeister[COLOR_REVERT] kann im [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK] bzw. einer seiner Erweiterungen als [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] ([LINK=PROFESSION_BAKER_BARLEY]Gerste[\LINK], [LINK=PROFESSION_BAKER_RICE]Reis[\LINK], [LINK=PROFESSION_BAKER_CASSAVA]Maniok[\LINK]) in der gleichen Zeit doppelt so viel [LINK=YIELD_BAKERY_GOODS]Proviant[\LINK] herstellen, wie ein normaler Kolonist.</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- FIREWORKER -->
     <TEXT>
@@ -2062,10 +1913,6 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_FIREWORKER_STRATEGY</Tag>
         <English>The powder maker needs to produce enough black powder for the soldiers' guns. Even more is needed for miners and the pioneers building roads. Black powder may be dangerous, but it's not as dangerous as having a weak army without enough ammunition.[NEWLINE]When assigned to the Powder Maker profession, the master can mix twice as much gunpowder in the same time as a regular colonist.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- MESTIZZO -->
     <TEXT>
@@ -2121,18 +1968,10 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_MESTIZZO_PEDIA</Tag>
         <English>The mestizo is the child of a European and an Indigenous parent. Mestizo children are often rejected by both communities.[NEWLINE]Further north Metis means the same thing. Louis Riel, a Metis, is one of Canada's Fathers of Confederation, though he was hanged for treason before his contribution was recognized.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MESTIZZO_STRATEGY</Tag>
         <English>Sometimes mestizos advance in spite of of the prejudice. Quanah Parker, a mestizo born to a European mother, was known as the most terrifying Comanche leader in raids on white settlements.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- MULATTO -->
     <TEXT>
@@ -2188,18 +2027,10 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_MULATTO_PEDIA</Tag>
         <English>The mulatto is the child of a European and an African parent, often a slave woman. The child grows up as part of the slave population. To maintain cultural separation Europeans create artificial distinctions, such as being repelled by the idea of touching Black people.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MULATTO_STRATEGY</Tag>
         <English>Mulattos add to the slave population but they also create cultural confusion. European women are not happy to see their husbands fathering Black babies.[NEWLINE]Because slave life expectancy on sugar plantations is three years, or twenty-one for mulattos born into slavery, plantation owners develop a racial justification for the deaths of their children.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- CONSTRUCTION_SUPPLIES -->
     <TEXT>
@@ -2255,18 +2086,12 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES_PEDIA</Tag>
         <English>Construction supplies is a vast category, ranging from wood and bricks to nails and forged hardware. The carpenter needs construction supplies to work.</English>
-        <French>xxx</French>
         <German>Baubedarf ist eine große Kategorie, die von Holz und Ziegeln bis zu Nägeln und Schmiedeeisen reicht. Der Zimmermann braucht Baumaterial für seine Arbeit.</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES_STRATEGY</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]Construction suplies[COLOR_REVERT] can be purchased in [LINK=CONCEPT_EUROPE]Europe[\LINK] or produced in a settlement for 50 [LINK=YIELD_HAMMERS]hammers[\LINK] and support a building project with 40 hammers once. The construction suplies behaves like an immobile unit, which can be [LINK=CONCEPT_TRANSPORT]transported[\LINK], however, so that new settlements can be supported by this with the building construction.</English>
-        <French>xxx</French>
         <German>[COLOR_HIGHLIGHT_TEXT]Baumaterial[COLOR_REVERT] kann in [LINK=CONCEPT_EUROPE]Europa[\LINK] gekauft oder in einer Siedlung für 50 [LINK=YIELD_HAMMERS]Hämmer[\LINK] produziert werden und einmalig ein Bauprojekt mit 40 Hämmern unterstützen. Das Baumaterial verhält sich wie eine unbewegliche Einheit, welche jedoch [LINK=CONCEPT_TRANSPORT]transportiert[\LINK] werden kann, sodass hierdurch neue Siedlungen beim Gebäudebau unterstützt werden können.</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- BRAVE_LIEUTENANT -->
     <TEXT>
@@ -2322,18 +2147,10 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_BRAVE_LIEUTENANT_PEDIA</Tag>
         <English>Like the great general, the brave lieutenant contributes experience points to one or more military units, just not as much experience.[NEWLINE]When younger sons aren't smart enough for the priesthood, and their father's rich enough to buy them an army commission, they start as junior officers, charging into battle at the head of their troops. Bravery gives them a fighting chance.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BRAVE_LIEUTENANT_STRATEGY</Tag>
         <English>Brave lieutenants are rare, appearing perhaps once out of every ten battles.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- CAPABLE_CAPTAIN -->
     <TEXT>
@@ -2389,18 +2206,10 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN_PEDIA</Tag>
         <English>Like the great admiral, the capable captain adds experience points to one or more military units, just not as much experience.[NEWLINE]To attain command a capable captain needs the ability to win a fight. In the American Revolutionary War naval battles were fought on inland lakes and rivers, as well as on the open ocean. Seaports were also a common target.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN_STRATEGY</Tag>
         <English>Capable captains are front line leaders. They are rare, occurring perhaps once out of every ten battles.</English>
-        <French>xxx</French>
-        <German>xxx</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- ENTERTAINER -->
     <TEXT>
@@ -2472,10 +2281,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_ENTERTAINER_STRATEGY</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]Famous actresses[COLOR_REVERT] are in the profession of [LINK=PROFESSION_ENTERTAINER]entertainer[\LINK] excellent at providing [LINK=YIELD_CULTURE]culture[\LINK] in a city.</English>
-        <French>xxx</French>
         <German>[COLOR_HIGHLIGHT_TEXT]Berühmte Schauspielerinen[COLOR_REVERT] sind als [LINK=PROFESSION_ENTERTAINER]Unterhalter[\LINK] ausgezeichnet darin für [LINK=YIELD_CULTURE]Kultur[\LINK] in einer Stadt zu sorgen.</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
     <!-- HARLOT -->
     <TEXT>
@@ -2590,9 +2396,6 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_JUDGE_STRATEGY</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]Honorable judges[COLOR_REVERT] are experts at dispensing justice and therefore, as [LINK=PROFESSION_JUDGE]judges[\LINK], generate twice as much [LINK=YIELD_LAW]justice[\LINK] as free colonists.</English>
-        <French>xxx</French>
         <German>[COLOR_HIGHLIGHT_TEXT]Ehrenwerte Richter[COLOR_REVERT] sind Experten im Sprechen von Recht und erzeugen daher als [LINK=PROFESSION_JUDGE]Richter[\LINK] doppelt so viel [LINK=YIELD_LAW]Justiz[\LINK] wie freie Kolonisten.</German>
-        <Italian>xxx</Italian>
-        <Spanish>xxx</Spanish>
     </TEXT>
 </Civ4GameText>
