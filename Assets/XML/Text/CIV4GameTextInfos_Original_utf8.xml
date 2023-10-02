@@ -10582,6 +10582,7 @@
         <German>In der jüngsten Schlacht fiel [COLOR_SELECTED_TEXT]%s1_GreatPersonName[COLOR_REVERT] über seine Feinde her wie der Wolf über die Lämmer. Er gilt nun allerorten als Großer General.</German>
         <Italian>%s1_GreatPersonName si è distinto sul campo</Italian>
         <Spanish>Ha aparecido %s1_GreatPersonName en el campo de batalla</Spanish>
+        <Russian>В недавней битве один командующий так выстроил свои войска, что противник ничего не мог с ними поделать и ему пришлось отступить. Теперь [COLOR_SELECTED_TEXT]%s1_GreatPersonName[COLOR_REVERT] повсюду известен как великий полководец.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_BL_BORN</Tag>
@@ -10623,6 +10624,7 @@
         <English>In the recent sea battle a young captain led his crew into the enemy like a shark against a bunch of tuna. He is now known everywhere as a truly capable commander.</English>
         <French>Lors de la dernière bataille navale un jeune capitaine a mené son équipage contre l'ennemi comme un requin dans un banc de thons. Il est reconnu de tous comme un commandant vraiment capable. </French>
         <German>In der jüngsten Seeschlacht fiel ein junger Seemann und seine Mannschaft über seine Feinde her wie der Hai über Thunfische. Er gilt nun allerorten als wahrhaft fähiger Kapitän.</German>
+        <Russian>В недавнем морском сражении молодой командер, искусно управляя своим кораблём, нанёс противнику серьёзный ушерб. Теперь повсюду его знают как действительно способного капитана.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_GREAT_GENERAL_MODIFIER</Tag>
