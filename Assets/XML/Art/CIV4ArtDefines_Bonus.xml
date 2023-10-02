@@ -1155,7 +1155,7 @@
             <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Huckle_Berries/dye.nif</NIF>
-            <KFM>Art/Terrain/Resources/Huckle_Berries/dye.kfm</KFM>
+            <KFM/>
             <Button>Art/interface/buttons/Huckle_Berry_Button.dds</Button>
             <FontButtonIndex>75</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
@@ -1166,7 +1166,7 @@
             <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Blue_Berries/dye.nif</NIF>
-            <KFM>Art/Terrain/Resources/Blue_Berries/dye.kfm</KFM>
+            <KFM/>
             <Button>Art/interface/buttons/Blue_Berry_Button.dds</Button>
             <FontButtonIndex>76</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>

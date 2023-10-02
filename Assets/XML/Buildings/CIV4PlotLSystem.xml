@@ -5944,7 +5944,7 @@
 		<ArtRef Name="goal:IMPROVEMENT_FRUIT_PLANTATION">
 			<Attribute Class="Improvement">IMPROVEMENT_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_COCOA</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
 			<Attribute Class="Scalar">szExtra:art:FRUIT_PLANTATION_RACK</Attribute>
 			<Attribute Class="Scalar">szExtra:art:FRUIT_PLANTATION_RACK</Attribute>
 			<Attribute Class="Scalar">iCropAreaMultiplier:6</Attribute>
@@ -5959,7 +5959,7 @@
 		<ArtRef Name="goal:IMPROVEMENT_LARGE_FRUIT_PLANTATION">
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_COCOA</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
 			<Attribute Class="Scalar">szExtra:art:FRUIT_PLANTATION_RACK</Attribute>
 			<Attribute Class="Scalar">szExtra:art:FRUIT_PLANTATION_RACK</Attribute>
 			<Attribute Class="Scalar">iCropAreaMultiplier:6</Attribute>
@@ -5974,7 +5974,7 @@
 		<ArtRef Name="goal:IMPROVEMENT_FRUIT_PLANTATION">
 			<Attribute Class="Improvement">IMPROVEMENT_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_COCOA</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
 			<Attribute Class="Scalar">szExtra:art:FRUIT_PLANTATION_RACK</Attribute>
 			<Attribute Class="Scalar">szExtra:art:FRUIT_PLANTATION_RACK</Attribute>
 			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
@@ -5989,7 +5989,7 @@
 		<ArtRef Name="goal:IMPROVEMENT_LARGE_FRUIT_PLANTATION">
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_COCOA</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
 			<Attribute Class="Scalar">szExtra:art:FRUIT_PLANTATION_RACK</Attribute>
 			<Attribute Class="Scalar">szExtra:art:FRUIT_PLANTATION_RACK</Attribute>
 			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
@@ -7315,7 +7315,7 @@
 		<ArtRef Name="goal:IMPROVEMENT_FRUIT_PLANTATION">
 			<Attribute Class="Improvement">IMPROVEMENT_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Bonus">BONUS_KAUTSCHUK</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_COCOA</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
 			<Attribute Class="Scalar">szExtra:art:KAUTSCHUK_PLANTATION_RACK</Attribute>
 			<Attribute Class="Scalar">szExtra:art:KAUTSCHUK_PLANTATION_RACK</Attribute>
 			<Attribute Class="Scalar">iCropAreaMultiplier:6</Attribute>
@@ -7330,7 +7330,7 @@
 		<ArtRef Name="goal:IMPROVEMENT_LARGE_FRUIT_PLANTATION">
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Bonus">BONUS_KAUTSCHUK</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_COCOA</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
 			<Attribute Class="Scalar">szExtra:art:KAUTSCHUK_PLANTATION_RACK</Attribute>
 			<Attribute Class="Scalar">szExtra:art:KAUTSCHUK_PLANTATION_RACK</Attribute>
 			<Attribute Class="Scalar">iCropAreaMultiplier:6</Attribute>
@@ -7345,7 +7345,7 @@
 		<ArtRef Name="goal:IMPROVEMENT_FRUIT_PLANTATION">
 			<Attribute Class="Improvement">IMPROVEMENT_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Bonus">BONUS_KAUTSCHUK</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_COCOA</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
 			<Attribute Class="Scalar">szExtra:art:KAUTSCHUK_PLANTATION_RACK</Attribute>
 			<Attribute Class="Scalar">szExtra:art:KAUTSCHUK_PLANTATION_RACK</Attribute>
 			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
@@ -7360,7 +7360,7 @@
 		<ArtRef Name="goal:IMPROVEMENT_LARGE_FRUIT_PLANTATION">
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Bonus">BONUS_KAUTSCHUK</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_COCOA</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
 			<Attribute Class="Scalar">szExtra:art:KAUTSCHUK_PLANTATION_RACK</Attribute>
 			<Attribute Class="Scalar">szExtra:art:KAUTSCHUK_PLANTATION_RACK</Attribute>
 			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
@@ -7384,7 +7384,7 @@
 		<ArtRef Name="goal:IMPROVEMENT_FRUIT_PLANTATION">
 			<Attribute Class="Improvement">IMPROVEMENT_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Bonus">BONUS_CHERRIES</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_COCOA</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
 			<Attribute Class="Scalar">szExtra:art:CHERRY_PLANTATION_GRINDER</Attribute>
 			<Attribute Class="Scalar">iCropAreaMultiplier:6</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
@@ -7398,7 +7398,7 @@
 		<ArtRef Name="goal:IMPROVEMENT_LARGE_FRUIT_PLANTATION">
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Bonus">BONUS_CHERRIES</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_COCOA</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
 			<Attribute Class="Scalar">szExtra:art:CHERRY_PLANTATION_GRINDER</Attribute>
 			<Attribute Class="Scalar">iCropAreaMultiplier:6</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
@@ -7412,7 +7412,7 @@
 		<ArtRef Name="goal:IMPROVEMENT_FRUIT_PLANTATION">
 			<Attribute Class="Improvement">IMPROVEMENT_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Bonus">BONUS_CHERRIES</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_COCOA</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
 			<Attribute Class="Scalar">szExtra:art:CHERRY_PLANTATION_GRINDER</Attribute>
 			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
@@ -7426,7 +7426,7 @@
 		<ArtRef Name="goal:IMPROVEMENT_LARGE_FRUIT_PLANTATION">
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Bonus">BONUS_CHERRIES</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_COCOA</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
 			<Attribute Class="Scalar">szExtra:art:CHERRY_PLANTATION_GRINDER</Attribute>
 			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
@@ -7589,6 +7589,18 @@
 	</LProduction>
 	<LProduction From="Node_4x4" Name="Node_4x4_Farm">
 		<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+		<Attribute Class="Scalar">bNotBFS:1</Attribute>
+		<To Name="Farm_4x4"/>
+		<To Name="GNode_4x4"/>
+	</LProduction>
+	<LProduction From="Node_4x4" Name="Node_4x4_Farm">
+		<Attribute Class="Improvement">IMPROVEMENT_FRUIT_PLANTATION</Attribute>
+		<Attribute Class="Scalar">bNotBFS:1</Attribute>
+		<To Name="Farm_4x4"/>
+		<To Name="GNode_4x4"/>
+	</LProduction>
+	<LProduction From="Node_4x4" Name="Node_4x4_Farm">
+		<Attribute Class="Improvement">IMPROVEMENT_LARGE_FRUIT_PLANTATION</Attribute>
 		<Attribute Class="Scalar">bNotBFS:1</Attribute>
 		<To Name="Farm_4x4"/>
 		<To Name="GNode_4x4"/>
