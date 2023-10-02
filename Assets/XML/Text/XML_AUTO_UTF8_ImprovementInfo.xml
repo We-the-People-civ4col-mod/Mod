@@ -564,13 +564,13 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
-		<French></French>
+		<French>Camps des maraudeurs</French>
         <Russian>Лагерь разбойников</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT6_PEDIA</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]Raiders' camps[COLOR_REVERT] are goodies that are protected. When you defeat the outlaws you can take their riches.</English>
-		<French></French>
+		<French>Les [COLOR_HIGHLIGHT_TEXT]camps des maraudeurs[COLOR_REVERT] sont des goodies protégés par des hors-la-loi. Une fois battus, vous pouvez confisquer leurs biens.</French>
         <German>[COLOR_HIGHLIGHT_TEXT]Verbrecherversteck[COLOR_REVERT] sind Goodies, die bewacht werden. Wenn die Kriminellen besiegt wurden, gehören Ihnen ihre Schätze.</German>
     </TEXT>
     <TEXT>
