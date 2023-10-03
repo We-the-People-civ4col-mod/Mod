@@ -8142,7 +8142,7 @@ bool CvUnit::giveExperience()
 
 				// WTP, adjustment ray, small improvement, let us read the UnitClassTypes only once
 				UnitClassTypes eLeaderUnitClassType = getUnitClassType();
-				if (eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL") || eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN"))
+				if (eLeaderUnitClassType == UNITCLASS_GREAT_ADMIRAL || eLeaderUnitClassType == UNITCLASS_CAPABLE_CAPTAIN)
 				{
 					// not really happy about the >= 20 being hardcoded but for now it prevents e.g. Fishing Boat, which is good
 					if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20)

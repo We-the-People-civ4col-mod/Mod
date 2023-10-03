@@ -10001,13 +10001,10 @@ CvUnit* CvPlot::getFortDefender()
 		if (pLoopUnit == NULL)
 			continue;
 
-		const UnitCombatTypes eSiegeType = (UnitCombatTypes)GC.getInfoTypeForString("UNITCOMBAT_SIEGE");
-		const UnitCombatTypes eGunType = (UnitCombatTypes)GC.getInfoTypeForString("UNITCOMBAT_GUN");
-
 		// Erik: Non-invisible units with firearms or defensive artillery may defend the fort.
 		if (pLoopUnit != NULL && !pLoopUnit->alwaysInvisible())
 		{
-			if (pLoopUnit->getUnitCombatType() == eSiegeType && !pLoopUnit->noDefensiveBonus() || pLoopUnit->getUnitCombatType() == eGunType)
+			if (pLoopUnit->getUnitCombatType() == UNITCOMBAT_SIEGE && !pLoopUnit->noDefensiveBonus() || pLoopUnit->getUnitCombatType() == UNITCOMBAT_GUN)
 			{
 				if (pLoopUnit->getTeam() == getTeam() && pLoopUnit->getFortifyTurns() > 0)
 				{

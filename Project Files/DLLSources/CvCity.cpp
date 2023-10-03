@@ -13498,8 +13498,6 @@ void CvCity::doExtraCityDefenseAttacks()
 	// Do the Infantery Defense Attack
 	if (getBuildingDefense() >= 60) // This is only true for Fort, Fortress and Stronghold.
 	{
-		int defenseDamageMultiplier = GC.getDefineINT("DEFENSE_DAMAGE_MULTIPLIER");
-
 		CvWString szBuffer;
 		CvPlot* pPlot = plot();
 		CvPlot* pAdjacentPlot = NULL;
@@ -13520,7 +13518,10 @@ void CvCity::doExtraCityDefenseAttacks()
 
 			if (pLoopUnit != NULL)
 			{
-				bool isInfanteryType = (pLoopUnit->getUnitClassType() == GC.getDefineINT("UNITCLASS_KING_REINFORCEMENT_LAND") || GC.getDefineINT("UNITCLASS_CONTINENTAL_GUARD") || (pLoopUnit->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pLoopUnit->getProfession()).isCityDefender() && !GC.getProfessionInfo(pLoopUnit->getProfession()).isUnarmed()));
+				bool isInfanteryType = false
+					|| pLoopUnit->getUnitClassType() == GLOBAL_DEFINE_UNITCLASS_KING_REINFORCEMENT_LAND
+					|| pLoopUnit->getUnitClassType() == GLOBAL_DEFINE_UNITCLASS_CONTINENTAL_GUARD
+					|| (pLoopUnit->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pLoopUnit->getProfession()).isCityDefender() && !GC.getProfessionInfo(pLoopUnit->getProfession()).isUnarmed());
 
 				if (isInfanteryType && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
 				{
@@ -13533,9 +13534,9 @@ void CvCity::doExtraCityDefenseAttacks()
 
 					if (bCanFire)
 					{
-						for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+						for (DirectionTypes eDirection = FIRST_DIRECTION; eDirection < NUM_DIRECTION_TYPES; ++eDirection)
 						{
-							pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+							pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), eDirection);
 							//we do not fire on Water here
 							if (pAdjacentPlot != NULL && !pAdjacentPlot->isWater())
 							{
@@ -13554,7 +13555,7 @@ void CvCity::doExtraCityDefenseAttacks()
 										if (defenseRandNum > 10)
 										{
 											iDamage = pLoopUnit2->maxHitPoints()* defenseRandNum / 100;
-											iDamage = iDamage * defenseDamageMultiplier;
+											iDamage = iDamage * GLOBAL_DEFINE_DEFENSE_DAMAGE_MULTIPLIER;
 
 											//taking into account different strengths of units
 											int iDefenderCombatMod = pLoopUnit2->baseCombatStr();
