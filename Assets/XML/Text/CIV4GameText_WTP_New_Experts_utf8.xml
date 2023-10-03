@@ -58,11 +58,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BREEDER_PEDIA</Tag>
-        <English>Poultry farmers raise chickens, ducks, turkeys and geese for meat and eggs. Children can look after a pen with few chickens. When the flock gets bigger wolves and bobcats discover an opportunity, so poultry breeding turns into an adult job.</English>
+        <English>Chickens are an excellent food source. They travel well so they often provide the first domestic protein in a new colony. Poultry farmers raise chickens, ducks, turkeys and geese for meat and eggs. Children can look after a pen with few chickens. When the flock gets bigger wolves and bobcats discover an opportunity, so poultry breeding turns into an adult job.</English>
+        <German>Hühner sind eine hervorragende Nahrungsquelle. Da sie sich gut transportieren lassen, sind sie oft das erste heimische Eiweiß in einer neuen Kolonie. Geflügelzüchter züchten Hühner, Enten, Truthähne und Gänse für Fleisch und Eier. Kinder können sich um einen Stall mit wenigen Hühnern kümmern. Wenn die Herde größer wird, werden Wölfe und Rotluchse eine Gefahr, und die Geflügelzucht wird zu einer Aufgabe für Erwachsene.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BREEDER_STRATEGY</Tag>
-        <English>Chickens are an excellent food source. They travel well so they often provide the first domestic protein in a new colony.[NEWLINE]When assigned to the Poultry Farmer profession, the expert is capable of producing double the poultry in the same amount of time it would take a regular colonist.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Expert Poultry Breeder[COLOR_REVERT] are particularly effective in poultry breeding ([LINK=PROFESSION_CHICKEN_BREEDER]chickens[\LINK] / [LINK=PROFESSION_GEESE_BREEDER]geese[\LINK]) of [LINK=YIELD_CHICKEN]chickens[\LINK] and [LINK=YIELD_GEESE]geese[\LINK]. [NEWLINE]Some animals of the appropriate species must be kept for breeding purposes. For more information, see the [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]livestock[\LINK] concept.</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]Erfahrene Geflügelzüchter[COLOR_REVERT] sind bei der Geflügelzucht ([LINK=PROFESSION_CHICKEN_BREEDER]Hühner[\LINK] / [LINK=PROFESSION_GEESE_BREEDER]Gänse[\LINK]) von [LINK=YIELD_CHICKEN]Hühnern[\LINK] und [LINK=YIELD_GEESE]Gänsen[\LINK] besonders effektiv.[NEWLINE]Einige Tiere der entsprechenden Art muss zu Zuchtzwecken gehalten werden. Mehr Informationen dazu unter dem Konzept [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]Tierzucht[\LINK].</German>
     </TEXT>
     <!-- CASSAVA_PLANTER -->
     <TEXT>
@@ -816,11 +818,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HERDER_PEDIA</Tag>
-        <English>Herding flocks is ancient. Biblical shepherds carried slings which they used to kill lions and Philistines, so herders in the New World were already well-prepared for wolves and bears.</English>
+        <English>Cattle graze the tops of grass stalks. so they can use the same field for years. Sheep eat the whole grass plant down to the root, leaving pastures barren. The result can be a range war. Herding flocks is ancient. Biblical shepherds carried slings which they used to kill lions and Philistines, so herders in the New World were already well-prepared for wolves and bears.</English>
+        <German>Rinder weiden nur die Spitzen der Grashalme ab, so dass sie jahrelang dieselbe Wiese nutzen können. Schafe fressen die gesamte Graspflanze bis zur Wurzel ab und machen die Weiden unfruchtbar, was unter Umständen zu einem Kampf bzgl. der Weidenutzung führte. Bereits die biblischen Hirten trugen Schleudern, mit denen sie Löwen und Philister töteten, so dass die Hirten in der Neuen Welt gut auf Wölfe und Bären vorbereitet waren.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HERDER_STRATEGY</Tag>
-        <English>Cattle graze the tops of grass stalks. so they can use the same field for years. Sheep eat the whole grass plant down to the root, leaving pastures barren. The result can be a range war.[NEWLINE]When assigned to the Herder profession, the expert can raise twice as many animals in the same time as a regular colonist.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Expert Herder[COLOR_REVERT] are in breeding ([LINK=PROFESSION_SHEPHERD]Sheep[\LINK] / [LINK=PROFESSION_COWBOY]cattle[\LINK] / [LINK=PROFESSION_GOATHERD]goats[\LINK]) of [LINK=YIELD_SHEEP]sheep[\LINK], [LINK=YIELD_PIG]pigs[\LINK], and [LINK=YIELD_GOATS]goats[\LINK]. [NEWLINE]Some animals of the appropriate species must be kept for breeding purposes. For more information, see the [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]livestock[\LINK] concept.</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]Erfahrene Hirten[COLOR_REVERT] sind beim Züchten ([LINK=PROFESSION_SHEPHERD]Schafe[\LINK] / [LINK=PROFESSION_GOATHERD]Ziegen[\LINK] / [LINK=PROFESSION_PIG_BREEDER]Schweine[\LINK]) von [LINK=YIELD_SHEEP]Schafen[\LINK], [LINK=YIELD_GOATS]Ziegen[\LINK] und [LINK=YIELD_PIG]Schweinen[\LINK] besonders effektiv. [NEWLINE]Einige Tiere der entsprechenden Art muss zu Zuchtzwecken gehalten werden. Mehr Informationen dazu unter dem Konzept [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]Tierzucht[\LINK].</German>
     </TEXT>
     <!-- MAPLE_SIRUP_COLLECTOR -->
     <TEXT>
@@ -1235,11 +1239,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FRUITS_PICKER_PEDIA</Tag>
-        <English>Fresh fruit is essential for good health. Fruits mature in different seasons, giving people a feeling for nature. Knowing the right moment to capture a crop's ripeness means getting the best price.</English>
+        <English>Fruit picking is one of the most laborious jobs available, what with climbing and stooping, but without pickers good food rots. It's usually a first job for immigrants and young people, and they move on to something less strenuous at the first opportunity.[NEWLINE]When assigned to the Fruit Picker profession, the expert can harvest twice as much fruit in the same time as a regular colonist.[PARAGRAPH:1]Fresh fruit is essential for good health. Fruits mature in different seasons, giving people a feeling for nature. Knowing the right moment to capture a crop's ripeness means getting the best price.</English>
+        <German>Obstpflücken ist einer der mühsamsten Berufe überhaupt, denn man muss klettern und sich bücken, aber ohne Pflücker verderben gute Lebensmittel. Für Einwanderer und junge Leute ist es in der Regel der erste Job, und sie wechseln bei der ersten Gelegenheit zu etwas weniger Anstrengendem.[NEWLINE]Wenn der Beruf des Obstpflückers ausgeübt wird, kann der Experte in der gleichen Zeit doppelt so viel Obst ernten wie ein normaler Kolonist.[PARAGRAPH:1]Frisches Obst ist für eine gute Gesundheit unerlässlich. Früchte reifen zu verschiedenen Jahreszeiten und vermitteln den Menschen ein Gefühl für die Natur. Das Wissen um den richtigen Zeitpunkt, um die Reife einer Frucht zu erfassen, bedeutet, den besten Preis zu erzielen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FRUITS_PICKER_STRATEGY</Tag>
-        <English>Fruit picking is one of the most laborious jobs available, what with climbing and stooping, but without pickers good food rots. It's usually a first job for immigrants and young people, and they move on to something less strenuous at the first opportunity.[NEWLINE]When assigned to the Fruit Picker profession, the expert can harvest twice as much fruit in the same time as a regular colonist.</English>
+        <English>COLOR_HIGHLIGHT_TEXT]Expert Fruit Picker[COLOR_REVERT] achieve particularly high yields of [LINK=YIELD_FRUITS]fruits[\LINK] as [LINK=PROFESSION_FRUITS_PICKER]fruit pickers[\LINK].</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]Erfahrene Fruchtsammler[COLOR_REVERT] erzielen als [LINK=PROFESSION_FRUITS_PICKER]Obstpflücker[\LINK] besonders hohe Erträge bei [LINK=YIELD_FRUITS]Früchten[\LINK].</German>
     </TEXT>
     <!-- POULTRY_BUTCHER -->
     <TEXT>
@@ -1294,11 +1300,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POULTRY_BUTCHER_PEDIA</Tag>
-        <English>Butchers use sharp knives and they have to work fast so it's a dangerous job. Poultry is tricky because not only do the carcasses have to be cleaned and the meat portioned, but the feathers and down, particularly from geese and ducks, must be plucked for insulation.</English>
+        <English>Poultry is usually the cheapest domestic meat in any settlement. A good butcher works fast and keeps the price down. Workers who don't get paid much still can eat well and the result is a busy happy community.[NEWLINE]Butchers use sharp knives and they have to work fast so it's a dangerous job. Poultry is tricky because not only do the carcasses have to be cleaned and the meat portioned, but the feathers and down, particularly from geese and ducks, must be plucked for insulation.</English>
+        <German>Geflügel ist in der Regel das billigste einheimische Fleisch in jeder Siedlung. Ein guter Fleischer arbeitet schnell und hält den Preis niedrig. Arbeiter, die nicht viel verdienen, können sich trotzdem gut ernähren.[NEWLINE]Metzger arbeiten mit scharfen Messern und müssen schnell arbeiten, daher ist es ein gefährlicher Beruf. Geflügel ist eine schwierige Angelegenheit, da nicht nur die Kadaver gesäubert und das Fleisch portioniert werden müssen, sondern auch die Federn und Daunen, vor allem von Gänsen und Enten, zur Isolierung gerupft werden müssen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POULTRY_BUTCHER_STRATEGY</Tag>
-        <English>Poultry is usually the cheapest domestic meat in any settlement. A good butcher works fast and keeps the price down. Workers who don't get paid much still can eat well and the result is a busy happy community.[NEWLINE]When assigned to the Poultry Butcher profession, the master can get twice as much meat and feathers in the same time as a regular colonist.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Master Poultry Butcher[COLOR_REVERT] achieve particularly high yields of [LINK=YIELD_FOOD]food[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] when [LINK=PROFESSION_BUTCHER_CHICKEN]slaughtering[\LINK] [LINK=YIELD_CHICKEN]chickens[\LINK] in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK].</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]Meister-Geflügelschlachter[COLOR_REVERT] erzielen beim [LINK=PROFESSION_BUTCHER_CHICKEN]Schlachten[\LINK] von [LINK=YIELD_CHICKEN]Hühnern[\LINK] im [LINK=BUILDING_BUTCHERS_HOUSE]Haus des Schlachters[\LINK] besonders hohe Erträge von [LINK=YIELD_FOOD]Nahrung[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK].</German>
     </TEXT>
     <!-- COAL_MINER -->
     <TEXT>
@@ -1363,7 +1371,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_COAL_MINER_STRATEGY</Tag>
         <English>Coal mining causes premature death and illness, but it's a soft rock that doesn't need as many explosives as hard rock mining. It's a job where labourers use picks and shovels, and they don't get paid much.[NEWLINE]When assigned to the [LINK=PROFESSION_COAL_MINER]coal miner[\LINK] profession, the expert can get twice the tonnage of [LINK=YIELD_COAL]coal[\LINK] in the same time as a regular colonist.</English>
-        <German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Kohlekumpel[COLOR_REVERT], der als [LINK=PROFESSION_COAL_MINER]Bergmann[\LINK] dem Abbau von [LINK=YIELD_COAL]Kohle[\LINK] zugewiesen ist, produziert doppelt so viel Kohle wie ein freier Kolonist.  </German>
+        <German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Kohlekumpel[COLOR_REVERT], der als [LINK=PROFESSION_COAL_MINER]Bergmann[\LINK] dem Abbau von [LINK=YIELD_COAL]Kohle[\LINK] zugewiesen ist, produziert doppelt so viel Kohle wie ein freier Kolonist.</German>
     </TEXT>
     <!-- LEATHER_TAYLOR -->
     <TEXT>
@@ -1418,11 +1426,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LEATHER_TAYLOR_PEDIA</Tag>
-        <English>Sewing padding and a lining into leather doesn't just make the garment more comfortable. By adding insulation it also improves health for those working outside, and can even save their lives.</English>
+        <English>The clothing business has efficiencies and economies of scale. A solitary leatherworker might spend days fitting a coat to a single customer but a factory can have enough sizes in stock for everyone to buy off the rack.[NEWLINE] Sewing padding and a lining into leather doesn't just make the garment more comfortable. By adding insulation it also improves health for those working outside, and can even save their lives.</English>
+        <German>In der Bekleidungsbranche gibt es deutliche Effizienzgewinne durch Skalierungseffekte. Ein einzelner Lederarbeiter kann Tage damit verbringen, einen Mantel an einen einzigen Kunden anzupassen, aber eine Fabrik kann genügend Größen auf Lager haben, damit jeder sie von der Stange kaufen kann.[NEWLINE]Das Einnähen von Polstern und Futter in Leder macht das Kleidungsstück nicht nur bequemer. Durch die zusätzliche Isolierung wird auch die Gesundheit derjenigen verbessert, die im Freien arbeiten, und kann ihnen sogar das Leben retten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LEATHER_TAYLOR_STRATEGY</Tag>
-        <English>The clothing business has efficiencies and economies of scale. A solitary leatherworker might spend days fitting a coat to a single customer but a factory can have enough sizes in stock for everyone to buy off the rack.[NEWLINE]When assigned to the Leather Clothier profession, the master can produce twice as much leatherwear in the same time as a regular colonist.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Master Leatherworker[COLOR_REVERT] produce as [LINK=PROFESSION_LEATHER_PADDER_COATS]coat maker[\LINK] or [LINK=PROFESSION_LEATHER_PADDER_BOOTS]bootmaker[\LINK] in the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's hous[\LINK] more lined [LINK=YIELD_PADDED_LEATHER_COATS]leather coats[\LINK] made of [LINK=YIELD_HIDES]cowhides[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] resp. more lined [LINK=YIELD_GOAT_HIDE_BOOTS]goatskin boots[\LINK] made of [LINK=YIELD_GOAT_HIDES]goatskin[\LINK] and [LINK=YIELD_WOOL]wool[\LINK] than free colonists.</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]Meister-Lederschneider[COLOR_REVERT] produzieren als [LINK=PROFESSION_LEATHER_PADDER_COATS]Polsterer[\LINK] oder [LINK=PROFESSION_LEATHER_PADDER_BOOTS]Stiefelmacher[\LINK] im [LINK=BUILDING_LEATHER_PADDER_HOUSE]Haus des Lederschneiders[\LINK] mehr gefütterte [LINK=YIELD_PADDED_LEATHER_COATS]Ledermäntel[\LINK] aus [LINK=YIELD_HIDES]Rindshäuten[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK] bzw. mehr gefütterte [LINK=YIELD_GOAT_HIDE_BOOTS]Ziegenledersstiefel[\LINK] aus [LINK=YIELD_GOAT_HIDES]Ziegenfell[\LINK] und [LINK=YIELD_WOOL]Schafswolle[\LINK] als freie Kolonisten.</German>
     </TEXT>
     <!-- CLOTH_TAYLOR -->
     <TEXT>

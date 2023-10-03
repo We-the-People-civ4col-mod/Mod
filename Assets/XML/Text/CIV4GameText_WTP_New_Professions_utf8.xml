@@ -316,7 +316,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Ziegenhirte:Ziegenhirten</Text>
+            <Text>Hirte (Ziegen):Hirten (Ziegen)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -352,7 +352,7 @@
         <Tag>TXT_KEY_PROFESSION_GOATHERD_STRATEGY</Tag>
         <English>Plains tiles let you raise [LINK=YIELD_GOATS]goats[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]goatherd[COLOR_REVERT] profession. Goat herds can be increased by assigning an [LINK=UNIT_HERDER]expert herder[\LINK] to the job.</English>
         <French>Les tuiles de plaine vous permettent d'élever des [LINK=YIELD_GOATS]chèvres[\LINK] si le colon qui les exploite est affecté à la profession de [COLOR_HIGHLIGHT_TEXT]chevrier[COLOR_REVERT]. Les troupeaux de chèvres peuvent être augmentés en affectant un [LINK=UNIT_HERDER]berger expérimenté[\LINK] à ce travail.</French>
-        <German>Auf Flachland-Geländefeldern können Sie [LINK=YIELD_GOATS]Ziegen[\LINK] züchten, wenn der Kolonist, der sie bearbeitet, dem Beruf [COLOR_HIGHLIGHT_TEXT]Ziegenhirte[COLOR_REVERT] angehört. Ziegenherden können vergrößert werden, indem man einen [LINK=UNIT_HERDER]erfahrenen Hirten[\LINK] mit der Aufgabe betraut.</German>
+        <German>Auf Hügel-Geländefeldern ([LINK=TERRAIN_TAIGA]Taiga[\LINK], [LINK=TERRAIN_MARSH]Sumpf[\LINK], [LINK=TERRAIN_WETLAND]Moor[\LINK], [LINK=TERRAIN_SHRUBLAND]Buschland[\LINK]) können Sie [LINK=YIELD_GOATS]Ziegen[\LINK] züchten, wenn der Kolonist, der sie bearbeitet, dem Beruf [COLOR_HIGHLIGHT_TEXT]Ziegenhirte[COLOR_REVERT] angehört. Ziegenherden können vergrößert werden, indem man einen [LINK=UNIT_HERDER]erfahrenen Hirten[\LINK] mit der Aufgabe betraut.</German>
         <Italian>Le tessere pianura permettono di allevare [LINK=YIELD_GOATS]capre[\LINK] se il colono che le lavora è assegnato alla professione di [COLOR_HIGHLIGHT_TEXT]capraio[COLOR_REVERT]. Gli allevamenti di capre possono essere aumentati assegnando al lavoro un [LINK=UNIT_HERDER]pastore esperto[\LINK].</Italian>
         <Spanish>Las losetas de llanura te permiten criar [LINK=YIELD_GOATS]cabras[\LINK] si el colono que las trabaja tiene asignada la profesión de [COLOR_HIGHLIGHT_TEXT]cabrero[COLOR_REVERT]. Los rebaños de cabras pueden aumentarse asignando un [LINK=UNIT_HERDER]pastor experto[\LINK] al trabajo.</Spanish>
     </TEXT>
@@ -401,7 +401,7 @@
         <Tag>TXT_KEY_PROFESSION_PIG_BREEDER_STRATEGY</Tag>
         <English>Plains tiles let you raise [LINK=YIELD_PIGS]pigs[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]pig breeder[COLOR_REVERT] profession. Pig production can be increased by assigning an [LINK=UNIT_HERDER]expert herder[\LINK] to the job.</English>
         <French>Les tuiles de plaine vous permettent d'élever des [LINK=YIELD_PIGS]porcs[\LINK] si le colon qui les exploite est affecté à la profession de [COLOR_HIGHLIGHT_TEXT]éleveur de porcs[COLOR_REVERT]. La production de porcs peut être augmentée en affectant un [LINK=UNIT_HERDER]berger expérimenté[\LINK] à ce travail.</French>
-        <German>Auf Ebenen-Geländefeldern können Sie [LINK=YIELD_PIGS]Schweine[\LINK] züchten, wenn der Kolonist, der sie bearbeitet, dem Beruf [COLOR_HIGHLIGHT_TEXT]Schweinezüchter[COLOR_REVERT] zugeordnet ist. Die Schweineproduktion kann gesteigert werden, indem man einen [LINK=UNIT_HERDER]erfahrenen Hirten[\LINK] mit der Arbeit beauftragt.</German>
+        <German>Auf Flachland-Geländefeldern ([LINK=TERRAIN_TAIGA]Taiga[\LINK], [LINK=TERRAIN_MARSH]Sumpf[\LINK], [LINK=TERRAIN_WETLAND]Moor[\LINK], [LINK=TERRAIN_SHRUBLAND]Buschland[\LINK]) können Sie [LINK=YIELD_PIGS]Schweine[\LINK] züchten, wenn der Kolonist, der sie bearbeitet, dem Beruf [COLOR_HIGHLIGHT_TEXT]Schweinehirte[COLOR_REVERT] zugeordnet ist. Die Schweineproduktion kann gesteigert werden, indem man einen [LINK=UNIT_HERDER]erfahrenen Hirten[\LINK] mit der Arbeit beauftragt.</German>
         <Italian>Le caselle di pianura consentono di allevare [LINK=YIELD_PIGS]maiali[\LINK] se il colono che vi lavora è assegnato alla professione di [COLOR_HIGHLIGHT_TEXT]allevatore di maiali[COLOR_REVERT]. La produzione di maiali può essere aumentata assegnando al lavoro un [LINK=UNIT_HERDER]pastore esperto[\LINK].</Italian>
         <Spanish>Las losetas de llanura te permiten criar [LINK=YIELD_PIGS]cerdos[\LINK] si el colono que las trabaja tiene asignada la profesión de [COLOR_HIGHLIGHT_TEXT]criador de cerdos[COLOR_REVERT]. La producción de cerdos puede aumentarse asignando un [LINK=UNIT_HERDER]pastor experto[\LINK] al trabajo.</Spanish>
     </TEXT>
@@ -418,7 +418,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Hirte (Hühner):Hirten (Hühner)</Text>
+            <Text>Geflügelzüchter (Hühner):Geflügelzüchter (Hühner)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -450,7 +450,7 @@
         <Tag>TXT_KEY_PROFESSION_CHICKEN_BREEDER_STRATEGY</Tag>
         <English>Plains tiles let you raise [LINK=YIELD_CHICKEN]chickens[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]chicken breeder[COLOR_REVERT] profession. Chicken production can be increased by assigning an [LINK=UNIT_BREEDER]expert poultry breeder[\LINK] to the job.</English>
         <French>Les tuiles de plaine vous permettent d'élever des [LINK=YIELD_CHICKEN]poulets[\LINK] si le colon qui les travaille est affecté à la profession d'[COLOR_HIGHLIGHT_TEXT]éleveur de poulets[COLOR_REVERT]. La production de poulets peut être augmentée en affectant un [LINK=UNIT_BREEDER]éleveur de volailles expert[\LINK] à ce travail.</French>
-        <German>Auf Ebenen-Geländefeldern können Sie [LINK=YIELD_CHICKEN]Hühner[\LINK] züchten, wenn der Kolonist, der sie bearbeitet, dem Beruf [COLOR_HIGHLIGHT_TEXT]Hühnerzüchter[COLOR_REVERT] angehört. Die Hühnerproduktion kann gesteigert werden, indem ein [LINK=UNIT_BREEDER]erfahrenen Geflügelzüchter[\LINK] mit der Aufgabe betraut wird.</German>
+        <German>Auf Flachland-Geländefeldern ([LINK=TERRAIN_MARSH]Sumpf[\LINK], [LINK=TERRAIN_SHRUBLAND]Buschland[\LINK]) können Sie [LINK=YIELD_CHICKEN]Hühner[\LINK] züchten, wenn der Kolonist, der sie bearbeitet, dem Beruf [COLOR_HIGHLIGHT_TEXT]Geflügelzüchter (Hühner)[COLOR_REVERT] angehört. Die Hühnerproduktion kann gesteigert werden, indem ein [LINK=UNIT_BREEDER]erfahrenen Geflügelzüchter[\LINK] mit der Aufgabe betraut wird.</German>
         <Italian>Le tessere pianura permettono di allevare [LINK=YIELD_CHICKEN]polli[\LINK] se il colono che vi lavora è assegnato alla professione di [COLOR_HIGHLIGHT_TEXT]allevatore di polli[COLOR_REVERT]. La produzione di polli può essere aumentata assegnando al lavoro un [LINK=UNIT_BREEDER]esperto allevatore di pollame[\LINK].</Italian>
         <Spanish>Las losetas de llanura te permiten criar [LINK=YIELD_CHICKEN]pollos[\LINK] si el colono que las trabaja tiene asignada la profesión de [COLOR_HIGHLIGHT_TEXT]criador de pollos[COLOR_REVERT]. La producción de pollos puede aumentarse asignando un [LINK=UNIT_BREEDER]experto criador de aves de corral[\LINK] al trabajo.</Spanish>
     </TEXT>
@@ -467,7 +467,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Hirte (Gänse):Hirten (Gänse)</Text>
+            <Text>Geflügelzüchter (Gänse):Geflügelzüchter (Gänse)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -499,7 +499,7 @@
         <Tag>TXT_KEY_PROFESSION_GEESE_BREEDER_STRATEGY</Tag>
         <English>Plains tiles let you raise [LINK=YIELD_GEESE]geese[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]goose breeder[COLOR_REVERT] profession. Goose production can be increased by assigning an [LINK=UNIT_BREEDER]expert poultry breeder[\LINK] to the job.</English>
         <French>Les tuiles de plaine vous permettent d'élever des [LINK=YIELD_GEESE]oies[\LINK] si le colon qui les exploite est affecté à la profession d'[COLOR_HIGHLIGHT_TEXT]éleveur d'oies[COLOR_REVERT]. La production d'oies peut être augmentée en affectant un [LINK=UNIT_BREEDER]éleveur de volailles expert[\LINK] à ce travail.</French>
-        <German>Auf Flachland-Geländefeldern können Sie [LINK=YIELD_GEESE]Gänse[\LINK] züchten, wenn der Kolonist, der sie bearbeitet, dem Beruf [COLOR_HIGHLIGHT_TEXT]Gänsezüchter[COLOR_REVERT] zugeordnet ist. Die Gänseproduktion kann erhöht werden, indem man einen [LINK=UNIT_BREEDER]erfahrenen Geflügelzüchter[\LINK] mit der Arbeit beauftragt.</German>
+        <German>Auf Flachland-Geländefeldern ([LINK=TERRAIN_TAIGA]Taiga[\LINK], [LINK=TERRAIN_WETLAND]Moor[\LINK]) können Sie [LINK=YIELD_GEESE]Gänse[\LINK] züchten, wenn der Kolonist, der sie bearbeitet, dem Beruf [COLOR_HIGHLIGHT_TEXT]Geflügelzüchter (Gänse)[COLOR_REVERT] zugeordnet ist. Die Gänseproduktion kann erhöht werden, indem man einen [LINK=UNIT_BREEDER]erfahrenen Geflügelzüchter[\LINK] mit der Arbeit beauftragt.</German>
         <Italian>Le tessere pianura permettono di allevare [LINK=YIELD_GEESE]oche[\LINK] se il colono che vi lavora è assegnato alla professione [COLOR_HIGHLIGHT_TEXT]allevatore di oche[COLOR_REVERT]. La produzione di oche può essere aumentata assegnando al lavoro un [LINK=UNIT_BREEDER]esperto allevatore di pollame[\LINK].</Italian>
         <Spanish>Las losetas de llanura te permiten criar [LINK=YIELD_GEESE]gansos[\LINK] si el colono que las trabaja tiene asignada la profesión de [COLOR_HIGHLIGHT_TEXT]criador de gansos[COLOR_REVERT]. La producción de gansos puede aumentarse asignando un [LINK=UNIT_BREEDER]experto criador de aves de corral[\LINK] al trabajo.</Spanish>
     </TEXT>
