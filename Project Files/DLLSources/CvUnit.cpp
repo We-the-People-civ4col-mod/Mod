@@ -13483,10 +13483,6 @@ bool CvUnit::isPromotionValid(PromotionTypes ePromotion) const
 				return false;
 			}
 		}
-		if (kPromotion.getWithdrawalChange() != 0)
-		{
-			return false;
-		}
 	}
 
 	if (NO_PROMOTION != kPromotion.getPrereqPromotion())
