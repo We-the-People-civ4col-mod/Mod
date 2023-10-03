@@ -759,7 +759,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_NATIVE_CONTACT</Tag>
         <English>First Native tribe met</English>
-        <French>Contact avec des indigènes</French>
+        <French>First Native met</French>
         <German>Erster Stamm getroffen</German>
         <Russian>Первое туземное племя</Russian>
     </TEXT>
@@ -773,7 +773,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_NATIVE_CONTACT_TEXT</Tag>
         <English>Cheerful children with brown dirty faces. Young men with spears and bows, painted faces and a wary curiosity.[NEWLINE][NEWLINE]Young women grind grain in clay jars while they glance furtively at you. Toothless old men hobble trustingly towards you.[NEWLINE][NEWLINE]You suspected that this foreign land held wonders and dangers. But you would not have thought it possible that so many godless heathen children live here, without knowledge of the mercy of Jesus.[NEWLINE][NEWLINE]In the coming weeks you will tell them of the salvation that true Christian faith will give to their sin-laden souls.[NEWLINE][NEWLINE]And perhaps you can indeed save them from avarice for the treasures they surely hide, the gold your men hope to get from this unknown world.[NEWLINE][NEWLINE]</English>
-        <French>Les coutumes de ces indigènes semblent bien étranges, n'ont-ils jamais entendu parler de Dieu ? Sans doute faudrait-il envoyé des hommes pieux en mission pour mieux les connaître et leur apprendre la foi chrétienne.[NEWLINE][NEWLINE]</French>
+        <French>Des enfants joyeux aux faces brun sale. De jeunes gens avec arcs et lances, aux faces peintes et une curiosité soupçonneuse.[NEWLINE][NEWLINE]De jeunes femmes broient du grain dans des jarres en terre e, en vous lançant des regards furtifs. Des vieillards édentés cahotent vers vous en toute confiance.[NEWLINE][NEWLINE]Vous supectiez que cette terre étrangère tenait en son sein merveilles et dangers. Mais vous n'aviez jamais pensé qu'il était possible qu'il y ait tant de fils païens sans Dieu vivant ici, sans rien savoir de Jésus.[NEWLINE][NEWLINE]Dans les semaines qui viennent, vous allez leur parler du salut pour leur âme de pêcheurs que leur apportera la seule vrai foi chrétienne.[NEWLINE][NEWLINE]Et sans doute pourriez vous les sauver de l'avarice avec les trésors qu'ils cachent, l'or que vos hommes espèrent prendre de ce monde inconnu.[NEWLINE][NEWLINE]</French>
         <German>Fröhliche Augen in braunen, schmutzigen Gesichtern. Junge Männer mit Speeren und Bögen, bemalten Gesichtern und einem kindlichen Staunen. Junge Frauen, die in Tonkrügen Körner mahlen und Euch verstohlen anblicken. Zahnlose Alte, die zutraulich heranhumpeln.[NEWLINE][NEWLINE]Ihr ahntet, dass dieses fremde Land Wunder und Gefahren birgt. Doch dass hier so viele gottlose Heidenkinder hausen, ohne Kenntnis von der Barmherzigkeit Jesu, das hättet Ihr nicht für möglich gehalten.[NEWLINE][NEWLINE]Ihr werdet Ihnen in den nächsten Wochen von der Erlösung berichten, die der wahre christliche Glaube ihren mit Sünde beladenen Seelen schenken wird.[NEWLINE][NEWLINE]Und vielleicht könnt Ihr sie auch tatsächlich erlösen - von den Schätzen, die sie gewisslich verstecken, dem Gold, das Eure Männer in diesem Teil der Welt zu erbeuten hoffen.[NEWLINE][NEWLINE]</German>
         <Russian>Веселые дети с грязными коричневыми лицами. Молодые люди с копьями и луками, разрисованными лицами и осторожным любопытством.[NEWLINE][NEWLINE]Молодые женщины перемалывают зерно в глиняных кувшинах, украдкой поглядывая на вас. К вам доверчиво ковыляют беззубые старики.[NEWLINE][NEWLINE]Вы подозревали, что эта чужая земля таит в себе чудеса и опасности. Но вы даже и подумать не могли, что здесь живет так много безбожных языческих детей, не знающих милости Иисуса.[NEWLINE][NEWLINE]В ближайшие время вы расскажете им о спасении, которое истинная христианская вера подарит их обремененным грехом душам.[NEWLINE][NEWLINE]И, возможно, вы действительно сможете спасти их от жадности до сокровищ, которые они наверняка скрывают, и золота, которое ваши люди надеются получить в подарок от этого неизвестного мира.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -787,7 +787,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_NATIVE_CONTACT_HEAD</Tag>
         <English>Native gold</English>
-        <French>Vous avez rencontré trois peuples indigènes</French>
+        <French>L'or des indigènes</French>
         <German>Das Gold der Wilden</German>
         <Russian>Золото индейцев</Russian>
     </TEXT>
@@ -857,14 +857,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_TRADE_TEXT</Tag>
         <English>Your ship's captain puts a leather pouch bulging with gold coins on the counter of the trading house.[NEWLINE][NEWLINE]The timid merchant does not bat an eyelid. For him, such transactions are as commonplace as the goose fat on his lunch sandwich.[NEWLINE][NEWLINE]For your captain, on the other hand, they are a burden. The gold may no longer be his responsibility, but now he has to carry back the precious cargo.[NEWLINE][NEWLINE]If a skull and crossbones flag appears on the horizon, the journey may have been in vain.[NEWLINE][NEWLINE]</English>
-        <French>Vous avez déchargé vos premières marchandises.[NEWLINE][NEWLINE]</French>
+        <French>Le capitaine de votre navire sort une bourse en cuir gonflée de pièces d'or sur le comptoir de la maison de commerce.[NEWLINE][NEWLINE]Le marchand timoré ne sourcille pas, pour lui de telles transactions sont aussi monnaie courante qu'une tartine à la graisse d'oie pour le déjeuner.[NEWLINE][NEWLINE]Pour votre capitaine, c'est une autre paire de manches. L'or n'est certes plus un souci, mais il doit ramener cette précieuse marchandise.[NEWLINE][NEWLINE][NEWLINE][NEWLINE]Si le pavillon noir à la tête de mort apparaît à l'horizon, le voyage pourrait être en vain.[NEWLINE][NEWLINE]</French>
         <German>Einen Lederbeutel, prall gefüllt mit Goldmünzen, legt Euer Schiffskapitän auf den Tresen des Kontors.[NEWLINE][NEWLINE]Der feiste Kaufmann zuckt mit keiner Wimper. Für ihn sind solche Geschäfte so alltäglich wie der Gänseschmalz auf seinem Mittagsbrot.[NEWLINE][NEWLINE]Für Euren Kapitän dagegen sind sie eine Last. Die Verantwortung für das Gold ist er los, doch nun gilt es, mit der kostbaren Fracht wieder unbeschadet heimzukommen.[NEWLINE][NEWLINE]Taucht eine Totenkopfflagge am Horizont auf, könnte die Reise vergeblich gewesen sein.[NEWLINE][NEWLINE]</German>
         <Russian>Капитан вашего корабля кладёт на прилавок торгового дома кожаный мешочек, набитый золотыми монетами.[NEWLINE][NEWLINE]Толстый торговец и глазом не моргнул. Для него такие сделки так же обыденны, как гусиный жир на бутерброде за обедом.[NEWLINE][NEWLINE]Однако для вашего капитана они в тягость. Он избавился от ответственности за золото, но теперь важно благополучно добраться до дома с драгоценным грузом.[NEWLINE][NEWLINE] И если на горизонте появится флаг с черепом и скрещенными костями, возможно, путешествие было напрасным.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THOUSAND_TRADE</Tag>
         <English>1,000 goods traded</English>
-        <French>Mille échanges commerciaux</French>
+        <French>1.000 biens échangés</French>
         <German>1.000 Waren gehandelt</German>
         <Russian>Продано 1000 товаров</Russian>
     </TEXT>
@@ -878,28 +878,28 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THOUSAND_TRADE_TEXT</Tag>
         <English>The whispering in the pews falls silent. The preacher strides forward and begins the Lord's Prayer in a firm and pious voice.[NEWLINE][NEWLINE]You pull your hands out of your waistcoat pockets and fold them in prayer.[NEWLINE][NEWLINE]A murmur goes through the crowd. The preacher pauses. His eyes follow the looks of the citizens. They are glued to a sparkling gem, encircled by a golden ring. Your hand raised in prayer casually shows it to the faithful.[NEWLINE][NEWLINE]The preacher shakes his head disapprovingly.[NEWLINE][NEWLINE]You smile back calmly, knowing you are only revealing the wealth your trading skills have brought you.[NEWLINE][NEWLINE]</English>
-        <French>Vos colonies ont déjà réalisées un millier d'échanges commerciaux, vous êtes un véritable homme d'affaires ![NEWLINE][NEWLINE]</French>
+        <French>Le brouhaha sur les bancs de l'église s'estompe. Le prêtre s'avance et commence à déclamer d'une voie forte portant sa ferveur le Notre Père.[NEWLINE][NEWLINE]Vous sorteez les mains des poches de votre manteau et les pliez pour la prière. La foule se met à murmurer. Le prêtre d'arrête. Ses yeux suivent les regards des citoyens. Ils sont rivés sur une gemme étincelante, sertie sur un anneau doré. Votre main le montre sans l'exposer aux fidèle.[NEWLINE][NEWLINE]Le prêtre secoue la tête en réprobation.[NEWLINE][NEWLINE]Vous souriez doucement en retour, car vous ne faites que révéler la richesse que vos talents de commerçant vous a apportée.[NEWLINE][NEWLINE]</French>
         <German>Das Tuscheln auf den Kirchenbänken verstummt. Der Prediger schreitet nach vorne und beginnt mit fester und frommer Stimme das Vaterunser.[NEWLINE][NEWLINE]Ihr zieht Eure Hände aus den Westentasche und faltet sie zum Gebet.[NEWLINE][NEWLINE]Ein Raunen geht durch die Menge. Der Prediger stutzt und folgt mit den Augen den Blicken der Bürger. Sie kleben an einem funkelnden Edelstein, groß wie ein Augapfel. Ein goldener Ring fasst ihn ein, Eure zum Gebet erhobene Hand zeigt ihn beiläufig den Gläubigen.[NEWLINE][NEWLINE]Der Prediger schüttelt missbilligend sein Haupt.[NEWLINE][NEWLINE]Ihr lächelt gelassen zurück, im Wissen, nur den Wohlstand zu offenbaren, den Euer Handelsgeschick Euch eingetragen hat.[NEWLINE][NEWLINE]</German>
         <Russian>Шепот на скамьях стихает. Проповедник выходит вперед и начинает молитву «Отче наш» твердым и благочестивым голосом.[NEWLINE][NEWLINE]Вы вытаскиваете руки из карманов жилета и складываете их в молитве.[NEWLINE][NEWLINE]По толпе проносится ропот. Проповедник замолкает и переводит свой взгляд туда, куда обращёны взоры всех прихожан. Они устремлены к большому сверкающему самоцвету, заключённому в золотое кольцо. Поднятая в молитве рука небрежно показывает его верующим.[NEWLINE][NEWLINE]Священник неодобрительно качает головой. [NEWLINE][NEWLINE]Вы безмятежно улыбаетесь в ответ, зная, что это лишь малая часть того, что принесли вам ваши торговые навыки.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TENTHOUSAND_TRADE</Tag>
         <English>3,000 goods traded</English>
-        <French>Trois mille échanges commerciaux</French>
+        <French>3.000 biens échangés</French>
         <German>3.000 Waren gehandelt</German>
         <Russian>Продано 3000 товаров</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TENTHOUSAND_TRADE_HEAD</Tag>
         <English>Three thousand goods traded</English>
-        <French>Un très grand nombre d'échanges commerciaux</French>
+        <French>Trois mille échanges commerciaux</French>
         <German>Dreitausend Waren gehandelt</German>
         <Russian>Скучать совсем некогда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TENTHOUSAND_TRADE_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Again?[COLOR_REVERT]" The old man raises his bushy brows. "[COLOR_SELECTED_TEXT]Weren't you here last month?[COLOR_REVERT]"[NEWLINE][NEWLINE]Your secretary nods calmly. "[COLOR_SELECTED_TEXT]And now you need one again?[COLOR_REVERT]" asks the shopkeeper. "[COLOR_SELECTED_TEXT]What happened to the account book I sold you?[COLOR_REVERT]"[NEWLINE][NEWLINE]Your secretary smiles. "[COLOR_SELECTED_TEXT]My master filled it up. The governor's business is going well.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
-        <French>Vos colonies ont déjà réalisées trois mille échanges commerciaux. Vous êtes un homme d'affaires remarquable ![NEWLINE][NEWLINE]</French>
+        <French>« [COLOR_SELECTED_TEXT]Encore ?[COLOR_REVERT] » Le vieil homme hausse ses sourcils broussailleux «[COLOR_SELECTED_TEXT] N'étiez-vous pas ici le mois dernier ?[COLOR_REVERT] »[NEWLINE][NEWLINE]Votre secrétaire approuve de la tête. «[COLOR_SELECTED_TEXT] Et vous en avez encore besoin d'un de plus ?[COLOR_REVERT] » demande le boutiquier «[COLOR_SELECTED_TEXT] Qu'est-il arrivé au livre de compte que je vous ai vendu ?[COLOR_REVERT] »[NEWLINE][NEWLINE]Votre secrétaire sourit. «[COLOR_SELECTED_TEXT]Notre maître l'a déjà rempli. Les affaires du gouverneur marchent très bien.[COLOR_REVERT]»[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Schon wieder?[COLOR_REVERT]" Der alte Mann hebt seine buschigen Brauen. "[COLOR_SELECTED_TEXT]Wart Ihr nicht vergangenen Monat das letzte Mal hier?[COLOR_REVERT]"[NEWLINE][NEWLINE]Euer Sekretär nickt gelassen. "[COLOR_SELECTED_TEXT]Und jetzt braucht Ihr erneut eines?[COLOR_REVERT]", fragt der Ladenbesitzer. "[COLOR_SELECTED_TEXT]Was ist mit dem Kontobuch geschehen, das ich Euch verkauft hatte?[COLOR_REVERT]"[NEWLINE][NEWLINE]Euer Sekretär lächelt. "[COLOR_SELECTED_TEXT]Mein Herr hat es vollgeschrieben. Die Geschäfte des Gouverneurs gehen gut.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Опять вы?[COLOR_REVERT]" Старик поднимает кустистые брови. "[COLOR_SELECTED_TEXT]Разве не вы были здесь в прошлом месяце?[COLOR_REVERT]"[NEWLINE][NEWLINE]Ваш секретарь спокойно кивает. "[COLOR_SELECTED_TEXT]И сейчас она опять нужна вам?[COLOR_REVERT]" — удивлённо спрашивает продавец. "[COLOR_SELECTED_TEXT]А что случилось с предыдущей бухгалтерской книгой, которую я вам продал?[COLOR_REVERT]"[NEWLINE][NEWLINE]Ваш секретарь улыбается. "[COLOR_SELECTED_TEXT]Она закончилась. Дела губернатора идут хорошо.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -913,14 +913,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_HUNDREDTHOUSAND_TRADE_HEAD</Tag>
         <English>Ten thousand goods traded</English>
-        <French>Dix mille échanges commerciaux !</French>
+        <French>Dix mille biens échangés</French>
         <German>Zehntausend Waren gehandelt</German>
         <Russian>Дел невпроворот</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_HUNDREDTHOUSAND_TRADE_TEXT</Tag>
         <English>The six-horse carriage, crafted from the finest mahogany, proceeds at a walking pace up the busy boulevard to the government palace. A young market woman calls curiously to one of the garrison soldiers riding along with the carriage.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Who is so important,[COLOR_REVERT]" she asks him, "[COLOR_SELECTED_TEXT]that the High Lord sends his private carriage to fetch him from the harbour?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]It is a merchant from Europe,[COLOR_REVERT]" the soldier calls back. "[COLOR_SELECTED_TEXT]He wants to do business with the governor.[COLOR_REVERT]"[NEWLINE][NEWLINE]He leans down from the saddle and murmurs confidentially "[COLOR_SELECTED_TEXT]This Jakob Fugger is said to be one of the richest men in the world.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]He could be,[COLOR_REVERT]" the sutler returns with a smile, "[COLOR_SELECTED_TEXT]but he will probably be at most the second richest in the world.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
-        <French>Vos colonies ont réalisées dix mille échanges commerciaux. Partout en Europe, les Rois sont impressionnés par votre réussite commerciale.[NEWLINE][NEWLINE]</French>
+        <French>Le carrosse de six cheveux, construit dans l'acajou le plus fin, avance au pas dans le boulevard très fréquenté vers le palais du gouvernement. Une jeune vendeuse hèle un des soldats de la garnison chevauchant à côté du carrosse.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT] Qui a donc tant d'importance[COLOR_REVERT] » lui demande-t-elle «[COLOR_SELECTED_TEXT] Pour que Monsieur le gouverneur envoie son carrosse privé le chercher au port ? [COLOR_REVERT]»[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT] C'est un marchand d'Europe » répond le soldat « Il tient à faire affaire avec le gouverneur » Il se baisse en restant sur sa selle et murmure en confidence « Ce Jakob Fugger est l'un des hommes les plus riche au monde. »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT] Il peut bien l'être » rétorque la magasinière en souriant, «[COLOR_SELECTED_TEXT]Mais il n'est sans doute au plus que le deuxième homme le plus riche au monde. »[NEWLINE][NEWLINE]</French>
         <German>Sechsspännig ist die Kutsche aus edelstem Mahagoni, die im Schritttempo den belebten Boulevard zum Regierungspalast hinaufrollt. Ein junges Marktweib wendet sich voller Neugierde an einen der Garnisonssoldaten, der hoch zu Ross das Gefährt begleitet.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Wer ist denn so bedeutsam[COLOR_REVERT]", fragt sie ihn, "[COLOR_SELECTED_TEXT]dass der Hohe Herr seine private Kutsche schickt, ihn vom Hafen abzuholen?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Es ist ein Kaufmann aus Europa[COLOR_REVERT]", ruft der Soldat zurück, "[COLOR_SELECTED_TEXT]er will mit dem Gouverneur Geschäfte machen.[COLOR_REVERT]"[NEWLINE][NEWLINE]Er beugt sich herab vom Sattel und raunt vertraulich "[COLOR_SELECTED_TEXT]Dieser Jakob Fugger soll einer der reichsten Männer der Welt sein.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Er könnte[COLOR_REVERT]", gibt die Marketenderin lächelnd zurück, "[COLOR_SELECTED_TEXT]aber er wird wohl höchstens der zweitreichste der Welt sein.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>Коляска из лучшего красного дерева, запряжённая шестёркой прекрасных лошадей, неспешно едет по оживленному бульвару к правительственному дворцу. Преисполненная любопытства, молодая торговка окликает одного из солдат гарнизона, сопровождающего повозку верхом.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что за важная персона,[COLOR_REVERT] – спрашивает она – [COLOR_SELECTED_TEXT]что наш Губернатор посылает свою личную карету, чтобы забрать его из гавани?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Это торговец из Европы.[COLOR_REVERT]" - отвечает солдат. "[COLOR_SELECTED_TEXT]Он хочет вести дела с Губернатором.[COLOR_REVERT]"[NEWLINE][NEWLINE]Он наклоняется и доверительно шепчет: "[COLOR_SELECTED_TEXT]Этот Джейкоб Фуггер считается одним из самых богатых людей в мире.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Может быть,[COLOR_REVERT]" – с улыбкой говорит соседний торговец – [COLOR_SELECTED_TEXT]но, скорее всего, скоро он станет всего лишь вторым в этом списке.[COLOR_REVERT]"[NEWLINE] [NEWLINE]</Russian>
     </TEXT>
@@ -955,7 +955,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_VICTORY_HEAD</Tag>
         <English>Ten victories</English>
-        <French>Dixième victoire militaire !</French>
+        <French>Dix victoires</French>
         <German>Zehn siegreiche Gefechte</German>
         <Russian>Дым сражений</Russian>
     </TEXT>
@@ -976,7 +976,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FORTY_VICTORY_HEAD</Tag>
         <English>Blood red</English>
-        <French>Quarantième victoire militaire</French>
+        <French>Rouge sang</French>
         <German>Blutrot</German>
         <Russian>Кроваво красный рассвет</Russian>
     </TEXT>
@@ -3054,14 +3054,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY_HEAD</Tag>
         <English>Religious salvation for the natives</English>
-        <French>Religious salvation for the natives</French>
+        <French>Le salut religieux pour les indigènes</French>
         <German>Religiöse Rettung für die Wilden</German>
         <Russian>Религия спасет туземцев</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. If you do fail, you'd better stay right there with them. Now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
-        <French>"[COLOR_SELECTED_TEXT]Go then into the wilderness and proclaim God's Word. Convert these godless savages so that they may follow us to heaven and give us their gold for the benefit of the church. Save their souls from eternal damnation and bring me their gold.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Yes, Father. I will not disappoint you.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I know that, my son. And if you do, you'd better stay right there with them. And now go...[COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
+        <French>« [COLOR_SELECTED_TEXT]Va dans la nature et proclame la parole de Dieu. Convertit ces sauvages athées pour qu'ils nous suivent au paradis et qu'ils nous donnent leur or au bénéfice notre Église.. Sauve leurs âmes de la souffrance éternel et ramène-moi leur or.[COLOR_REVERT] »[NEWLINE][NEWLINE]« [COLOR_SELECTED_TEXT]Oui mon père, je ne vous décevrai pas .[COLOR_REVERT]»[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Je le sais bien, mon fils. Et si c'est le cas, tu ferais mieux de rester avec eux. Va donc, maintenant...[COLOR_REVERT]»[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]So gehet denn hinein in die Wildnis und verkündet Gottes Word. Bekehrt diese gottlosen Wilden, auf dass sie uns in den Himmel folgen mögen und uns ihr Gold überlassen zum Wohle der Kirche. Rettet ihre Seele vor der ewigen Verdammnis und bringt mir ihre Reichtümer.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Ja, Herr. Ich werde euch nicht enttäuschen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das weiß ich mein Sohn. Und wenn doch, dann bleibt besser gleich bei Ihnen. Und nun geht...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Иди же в пустыню и проповедуй Слово Божье. Обрати этих безбожных дикарей в Истинную Веру, чтобы они последовали за нами на Небо и отдали нам свое золото на благо Церкви. Спаси их души от вечного проклятия и принеси мне их золото.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да, отец. Я не разочарую вас.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я знаю это, сын мой. И если ты это сделаешь, тебе лучше остаться там, с ними. А теперь иди...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>

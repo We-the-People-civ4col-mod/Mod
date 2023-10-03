@@ -733,7 +733,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAMOUS_ACTORS_2</Tag>
         <English>We have no money to spare for such things. Culture is the least of our concerns.</English>
-        <French>Nous n'avons pas d'argent pour ce genre de choses. Développer la culture n'est pas ce qui est le plus stratégique en ce moment.</French>
+        <French>Nous n'avons pas d'argent pour ce genre de choses. La culture est le cadet de nos soucis.</French>
         <German>Wir haben kein Geld für sowetwas übrig. Kultur is unser geringstes Problem.</German>
         <Russian>У нас нет лишних денег на такие вещи. Культура — это наименьшая из наших забот.</Russian>
     </TEXT>
@@ -795,21 +795,21 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRSTCOLONY_1</Tag>
         <English>"This be a shelter for devout, for Christians it is set about!"</English>
-        <French>"Cette colonie est un abri pour les hommes pieux, pour les vrais Chrétiens !"</French>
+        <French>"Ce sera pour les devôts un havre, pour les Chrétiens un monde qui s'ouvre!"</French>
         <German>"Dies sei ein Hort der Frommen, zu dem die Christen kommen!"</German>
         <Russian>"Этот приют будет обустроен для благочестивых христиан!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRSTCOLONY_2</Tag>
         <English>"Liberty is what we teach, good fortune is within our reach!"</English>
-        <French>"La Liberté, voilà notre bien le plus précieux !"</French>
+        <French>« La Liberté est ce que nous professons, la chance sera là à profusion !»</French>
         <German>"Der Welt die Freiheit lehren, soll uns zum Glücke führen!"</German>
         <Russian>"Свобода это то, чему мы будем учить и пусть удача улыбнётся нам!"</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRSTCOLONY_3</Tag>
         <English>"Even if our stomachs rumble, we, your men, will never grumble!"</English>
-        <French>"Le bien-être de nos concitoyens sera notre priorité !"</French>
+        <French>« Même la faim au ventre, nous resterons votre chantre ! »</French>
         <German>"Wir scheuen keine Mühen, auf dass die Ernten blühen!"</German>
         <Russian>"Благополучие наших сограждан будет нашим приоритетом!"</Russian>
     </TEXT>
