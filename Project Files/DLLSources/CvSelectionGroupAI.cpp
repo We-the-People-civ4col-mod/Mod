@@ -63,10 +63,13 @@ void CvSelectionGroupAI::AI_separate()
 		pLoopUnit = ::getUnit(pEntityNode->m_data);
 		pEntityNode = nextUnitNode(pEntityNode);
 
-		pLoopUnit->joinGroup(NULL);
-		if (pLoopUnit->plot()->getTeam() == getTeam())
+		if (pLoopUnit != NULL)
 		{
-			pLoopUnit->getGroup()->pushMission(MISSION_SKIP);
+			pLoopUnit->joinGroup(NULL);
+			if (pLoopUnit->plot()->getTeam() == getTeam())
+			{
+				pLoopUnit->getGroup()->pushMission(MISSION_SKIP);
+			}
 		}
 	}
 }
@@ -82,7 +85,7 @@ void CvSelectionGroupAI::AI_seperateNonAI(UnitAITypes eUnitAI)
 	{
 		pLoopUnit = ::getUnit(pEntityNode->m_data);
 		pEntityNode = nextUnitNode(pEntityNode);
-		if (pLoopUnit->AI_getUnitAIType() != eUnitAI)
+		if (pLoopUnit != NULL && pLoopUnit->AI_getUnitAIType() != eUnitAI)
 		{
 			pLoopUnit->joinGroup(NULL);
 			if (pLoopUnit->plot()->getTeam() == getTeam())
@@ -104,7 +107,7 @@ void CvSelectionGroupAI::AI_seperateAI(UnitAITypes eUnitAI)
 	{
 		pLoopUnit = ::getUnit(pEntityNode->m_data);
 		pEntityNode = nextUnitNode(pEntityNode);
-		if (pLoopUnit->AI_getUnitAIType() == eUnitAI)
+		if (pLoopUnit != NULL && pLoopUnit->AI_getUnitAIType() == eUnitAI)
 		{
 			pLoopUnit->joinGroup(NULL);
 			// TAC - AI Assault Sea - koma13, jdog5000(BBAI)
@@ -130,7 +133,7 @@ void CvSelectionGroupAI::AI_separateEmptyTransports()
 	{
 		pLoopUnit = ::getUnit(pEntityNode->m_data);
 		pEntityNode = nextUnitNode(pEntityNode);
-		if ((pLoopUnit->AI_getUnitAIType() == UNITAI_ASSAULT_SEA) && (pLoopUnit->getCargo() == 0))
+		if (pLoopUnit != NULL && (pLoopUnit->AI_getUnitAIType() == UNITAI_ASSAULT_SEA) && (pLoopUnit->getCargo() == 0))
 		{
 			pLoopUnit->joinGroup(NULL);
 			if (pLoopUnit->plot()->getTeam() == getTeam())
@@ -258,7 +261,10 @@ bool CvSelectionGroupAI::AI_update()
 					pLoopUnit = ::getUnit(pEntityNode->m_data);
 					pEntityNode = nextUnitNode(pEntityNode);
 
-					pLoopUnit->AI_europeUpdate();
+					if (pLoopUnit != NULL)
+					{
+						pLoopUnit->AI_europeUpdate();
+					}
 				}
 			}
 		}
@@ -277,7 +283,7 @@ bool CvSelectionGroupAI::AI_update()
 					pLoopUnit = ::getUnit(pEntityNode->m_data);
 					pEntityNode = nextUnitNode(pEntityNode);
 
-					if (pLoopUnit->canMove())
+					if (pLoopUnit != NULL && pLoopUnit->canMove())
 					{
 						if (pLoopUnit->AI_follow())
 						{
@@ -372,7 +378,7 @@ CvUnit* CvSelectionGroupAI::AI_getBestGroupAttacker(const CvPlot* pPlot, bool bP
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = nextUnitNode(pUnitNode);
 
-		if (!pLoopUnit->isDead())
+		if (pLoopUnit != NULL && !pLoopUnit->isDead())
 		{
 			bool bCanAttack = false;
 			bCanAttack = pLoopUnit->canAttack();
@@ -429,7 +435,7 @@ CvUnit* CvSelectionGroupAI::AI_getBestGroupSacrifice(const CvPlot* pPlot, bool b
 		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = nextUnitNode(pUnitNode);
 
-		if (!pLoopUnit->isDead())
+		if (pLoopUnit != NULL && !pLoopUnit->isDead())
 		{
 			bool bCanAttack = false;
 			bCanAttack = pLoopUnit->canAttack();
@@ -507,7 +513,7 @@ int CvSelectionGroupAI::AI_sumStrength(const CvPlot* pAttackedPlot, DomainTypes 
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = nextUnitNode(pUnitNode);
 
-		if (!pLoopUnit->isDead())
+		if (pLoopUnit != NULL && !pLoopUnit->isDead())
 		{
 			bool bCanAttack = pLoopUnit->canAttack();
 
@@ -700,7 +706,7 @@ bool CvSelectionGroupAI::AI_isFull()
 		{
 			pLoopUnit = ::getUnit(pUnitNode->m_data);
 			pUnitNode = nextUnitNode(pUnitNode);
-			if (pLoopUnit->AI_getUnitAIType() == eUnitAI)
+			if (pLoopUnit != NULL && pLoopUnit->AI_getUnitAIType() == eUnitAI)
 			{
 				if (pLoopUnit->cargoSpace() > 0)
 				{
@@ -727,7 +733,7 @@ bool CvSelectionGroupAI::AI_isFull()
 				pLoopUnit = ::getUnit(pUnitNode->m_data);
 				pUnitNode = nextUnitNode(pUnitNode);
 
-				if (pLoopUnit->AI_getUnitAIType() == eUnitAI)
+				if (pLoopUnit != NULL && pLoopUnit->AI_getUnitAIType() == eUnitAI)
 				{
 					if (!(pLoopUnit->isFull()))
 					{
@@ -757,7 +763,7 @@ bool CvSelectionGroupAI::AI_launchAssault(CvPlot* pTargetCityPlot)
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = plot()->nextUnitNode(pUnitNode);
 
-        if (pLoopUnit->isCargo())
+        if (pLoopUnit != NULL && pLoopUnit->isCargo())
         {
             if (pLoopUnit->getTransportUnit()->getGroup() == this)
             {
@@ -834,7 +840,7 @@ void CvSelectionGroupAI::AI_groupBombard()
 		pLoopUnit = ::getUnit(pEntityNode->m_data);
 		pEntityNode = nextUnitNode(pEntityNode);
 
-		if (pLoopUnit->canBombard(plot()))
+		if (pLoopUnit != NULL && pLoopUnit->canBombard(plot()))
 		{
 		    pLoopUnit->bombard();
 		}
@@ -1414,13 +1420,17 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 				{
 					pLoopUnit = ::getUnit(pUnitNode->m_data);
 					pUnitNode = plot()->nextUnitNode(pUnitNode);
-					YieldTypes eYield = pLoopUnit->getYield();
 
-					if ((eYield != NO_YIELD) && pLoopUnit->isCargo())
+					if (pLoopUnit != NULL)
 					{
-						if (pLoopUnit->getTransportUnit()->getGroup() == this && pLoopUnit->canUnload())
+						const YieldTypes eYield = pLoopUnit->getYield();
+
+						if ((eYield != NO_YIELD) && pLoopUnit->isCargo())
 						{
-							units.push_back(pLoopUnit);
+							if (pLoopUnit->getTransportUnit()->getGroup() == this && pLoopUnit->canUnload())
+							{
+								units.push_back(pLoopUnit);
+							}
 						}
 					}
 				}
@@ -1462,7 +1472,7 @@ CvUnit* CvSelectionGroupAI::AI_ejectBestDefender(CvPlot* pDefendPlot)
 		pLoopUnit = ::getUnit(pEntityNode->m_data);
 		pEntityNode = nextUnitNode(pEntityNode);
 
-		if (!pLoopUnit->noDefensiveBonus())
+		if (pLoopUnit != NULL && !pLoopUnit->noDefensiveBonus())
 		{
 			int iValue = pLoopUnit->currEffectiveStr(pDefendPlot, NULL) * 100;
 

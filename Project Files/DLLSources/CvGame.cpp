@@ -1825,7 +1825,7 @@ CvUnit* CvGame::getPlotUnit(const CvPlot* pPlot, int iIndex)
 				pLoopUnit1 = ::getUnit(pUnitNode1->m_data);
 				pUnitNode1 = pPlot->nextUnitNode(pUnitNode1);
 
-				if (!(pLoopUnit1->isInvisible(activeTeam, true)))
+				if (pLoopUnit1 != NULL && !(pLoopUnit1->isInvisible(activeTeam, true)))
 				{
 					if (!(pLoopUnit1->isCargo()))
 					{
@@ -1849,7 +1849,7 @@ CvUnit* CvGame::getPlotUnit(const CvPlot* pPlot, int iIndex)
 										pLoopUnit2 = ::getUnit(pUnitNode2->m_data);
 										pUnitNode2 = pPlot->nextUnitNode(pUnitNode2);
 
-										if (!(pLoopUnit2->isInvisible(activeTeam, true)))
+										if (pLoopUnit2 != NULL && !(pLoopUnit2->isInvisible(activeTeam, true)))
 										{
 											if (pLoopUnit2->getTransportUnit() == pLoopUnit1)
 											{
@@ -1898,7 +1898,7 @@ void CvGame::getPlotUnits(const CvPlot *pPlot, std::vector<CvUnit *> &plotUnits)
 				pLoopUnit1 = ::getUnit(pUnitNode1->m_data);
 				pUnitNode1 = pPlot->nextUnitNode(pUnitNode1);
 
-				if (!(pLoopUnit1->isInvisible(activeTeam, true)))
+				if (pLoopUnit1 != NULL && !(pLoopUnit1->isInvisible(activeTeam, true)))
 				{
 					if (!(pLoopUnit1->isCargo()))
 					{
@@ -1917,7 +1917,7 @@ void CvGame::getPlotUnits(const CvPlot *pPlot, std::vector<CvUnit *> &plotUnits)
 										pLoopUnit2 = ::getUnit(pUnitNode2->m_data);
 										pUnitNode2 = pPlot->nextUnitNode(pUnitNode2);
 
-										if (!(pLoopUnit2->isInvisible(activeTeam, true)))
+										if (pLoopUnit2 != NULL && !(pLoopUnit2->isInvisible(activeTeam, true)))
 										{
 											if (pLoopUnit2->getTransportUnit() == pLoopUnit1)
 											{
@@ -2047,7 +2047,7 @@ bool CvGame::cyclePlotUnits(CvPlot* pPlot, bool bForward, bool bAuto, int iCount
 		{
 			pLoopUnit = ::getUnit(pUnitNode->m_data);
 
-			if (pLoopUnit->IsSelected())
+			if (pLoopUnit != NULL && pLoopUnit->IsSelected())
 			{
 				break;
 			}
@@ -2120,7 +2120,7 @@ bool CvGame::cyclePlotUnits(CvPlot* pPlot, bool bForward, bool bAuto, int iCount
 				}
 			}
 
-			if (pLoopUnit->getOwnerINLINE() == getActivePlayer())
+			if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getActivePlayer())
 			{
 				if (bAuto)
 				{
@@ -2201,7 +2201,7 @@ void CvGame::selectionListMove(CvPlot* pPlot, bool bAlt, bool bShift, bool bCtrl
 		// Erik: No annoying popup for transport units
 		// WTP, ray, unless it is a "Troop only" ship
 		//if (pSelectedUnit->cargoSpace() == 0 && eRivalTeam != NO_TEAM)
-		if ((pSelectedUnit->cargoSpace() == 0 || pSelectedUnit->getUnitInfo().isTroopShip())&& eRivalTeam != NO_TEAM)
+		if (pSelectedUnit != NULL && eRivalTeam != NO_TEAM && (pSelectedUnit->cargoSpace() == 0 || pSelectedUnit->getUnitInfo().isTroopShip()))
 		{
 			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_DECLAREWARMOVE);
 			if (NULL != pInfo)
@@ -2265,19 +2265,22 @@ void CvGame::selectionListGameNetMessage(int eMessage, int iData2, int iData3, i
 				{
 					pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
 					pSelectedUnitNode = gDLL->getInterfaceIFace()->nextSelectionListNode(pSelectedUnitNode);
-
-					if (bShift)
+				
+					if (pSelectedUnit != NULL)
 					{
-						gDLL->sendJoinGroup(pSelectedUnit->getID(), FFreeList::INVALID_INDEX);
-					}
-					else
-					{
-						if (pSelectedUnit == pHeadSelectedUnit)
+						if (bShift)
 						{
 							gDLL->sendJoinGroup(pSelectedUnit->getID(), FFreeList::INVALID_INDEX);
 						}
+						else
+						{
+							if (pSelectedUnit == pHeadSelectedUnit)
+							{
+								gDLL->sendJoinGroup(pSelectedUnit->getID(), FFreeList::INVALID_INDEX);
+							}
 
-						gDLL->sendJoinGroup(pSelectedUnit->getID(), pHeadSelectedUnit->getID());
+							gDLL->sendJoinGroup(pSelectedUnit->getID(), pHeadSelectedUnit->getID());
+						}
 					}
 				}
 
@@ -2295,7 +2298,10 @@ void CvGame::selectionListGameNetMessage(int eMessage, int iData2, int iData3, i
 					pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
 					pSelectedUnitNode = gDLL->getInterfaceIFace()->nextSelectionListNode(pSelectedUnitNode);
 
-					gDLL->sendDoCommand(pSelectedUnit->getID(), ((CommandTypes)iData2), iData3, iData4, bAlt);
+					if (pSelectedUnit != NULL)
+					{
+						gDLL->sendDoCommand(pSelectedUnit->getID(), ((CommandTypes)iData2), iData3, iData4, bAlt);
+					}
 				}
 			}
 			else if ((eMessage == GAMEMESSAGE_PUSH_MISSION) || (eMessage == GAMEMESSAGE_AUTO_MISSION))
@@ -2432,7 +2438,11 @@ void CvGame::selectUnit(CvUnit* pUnit, bool bClear, bool bToggle, bool bSound)
 		while (pEntityNode != NULL)
 		{
 			FAssertMsg(::getUnit(pEntityNode->m_data), "null entity in selection group");
-			gDLL->getInterfaceIFace()->insertIntoSelectionList(::getUnit(pEntityNode->m_data), false, bToggle, bGroup, bSound, true);
+			CvUnit *pUnit = ::getUnit(pEntityNode->m_data);
+			if (pUnit != NULL)
+			{
+				gDLL->getInterfaceIFace()->insertIntoSelectionList(pUnit, false, bToggle, bGroup, bSound, true);
+			}
 
 			pEntityNode = pSelectionGroup->nextUnitNode(pEntityNode);
 		}
@@ -2484,7 +2494,7 @@ void CvGame::selectGroup(CvUnit* pUnit, bool bShift, bool bCtrl, bool bAlt)
 			pLoopUnit = ::getUnit(pUnitNode->m_data);
 			pUnitNode = pUnitPlot->nextUnitNode(pUnitNode);
 
-			if (pLoopUnit->getOwnerINLINE() == getActivePlayer())
+			if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getActivePlayer())
 			{
 				if (pLoopUnit->canMove())
 				{

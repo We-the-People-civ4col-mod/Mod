@@ -426,7 +426,7 @@ void CvCity::kill()
 			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 			pUnitNode = plot()->nextUnitNode(pUnitNode);
 
-			if (pLoopUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_LIVE_AMONG_NATIVES)
+			if (pLoopUnit != NULL && pLoopUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_LIVE_AMONG_NATIVES)
 			{
 				aUnits.push_back(pLoopUnit);
 			}
@@ -8175,7 +8175,7 @@ bool CvCity::getCityBillboardBottomBarValues(float& fStored, float& fRate, float
 			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 			pUnitNode = plot()->nextUnitNode(pUnitNode);
 
-			if (pLoopUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_LIVE_AMONG_NATIVES)
+			if (pLoopUnit != NULL && pLoopUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_LIVE_AMONG_NATIVES)
 			{
 				if (pLoopUnit->getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
 				{
@@ -9213,7 +9213,7 @@ void CvCity::ejectTeachUnits()
 		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-		if (pLoopUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_LIVE_AMONG_NATIVES)
+		if (pLoopUnit != NULL && pLoopUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_LIVE_AMONG_NATIVES)
 		{
 			pLoopUnit->setUnitTravelState(NO_UNIT_TRAVEL_STATE, false);
 			pLoopUnit->setUnitTravelTimer(0);
@@ -11533,7 +11533,7 @@ UnitClassTypes CvCity::bestGrowthUnitClass()
 		pUnitNode = plot()->nextUnitNode(pUnitNode);
 
 		// however, we only consider Units that belong to the same Player as the City
-		if (pLoopUnit2->getOwnerINLINE() == getOwnerINLINE())
+		if (pLoopUnit2 != NULL && pLoopUnit2->getOwnerINLINE() == getOwnerINLINE())
 		{
 			EthnicityTypes eEthnicityCityPlot = pLoopUnit2->getUnitInfo().getEthnicity();
 			CitizenStatusTypes eCitizenStatusCityPlot = pLoopUnit2->getUnitInfo().getCitizenStatus();
@@ -13302,187 +13302,190 @@ void CvCity::doExtraCityDefenseAttacks()
 			pLoopUnit = ::getUnit(pUnitNode->m_data);
 			pUnitNode = plot()->nextUnitNode(pUnitNode);
 
-			bool isCannonType = (pLoopUnit->bombardRate() > 0 && pLoopUnit->getDomainType() == DOMAIN_LAND);
-			if (isCannonType && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
+			if (pLoopUnit != NULL)
 			{
-				bCanBomb = false;
-				if (pLoopUnit->getFortifyTurns() > 0)
+				bool isCannonType = (pLoopUnit->bombardRate() > 0 && pLoopUnit->getDomainType() == DOMAIN_LAND);
+				if (isCannonType && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
 				{
-					bCanBomb = true;
-					pBombUnit = pLoopUnit;
-				}
-
-				if (bCanBomb)
-				{
-					for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+					bCanBomb = false;
+					if (pLoopUnit->getFortifyTurns() > 0)
 					{
-						pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
-						if (pAdjacentPlot != NULL)
+						bCanBomb = true;
+						pBombUnit = pLoopUnit;
+					}
+
+					if (bCanBomb)
+					{
+						for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 						{
-							pUnitNode2 = pAdjacentPlot->headUnitNode();
-							while (pUnitNode2)
+							pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+							if (pAdjacentPlot != NULL)
 							{
-								pLoopUnit2 = ::getUnit(pUnitNode2->m_data);
-								pUnitNode2 = pAdjacentPlot->nextUnitNode(pUnitNode2);
-
-								if (getTeam() != pLoopUnit2->getTeam() && (GET_TEAM(getTeam()).isAtWar(pLoopUnit2->getTeam()) || pLoopUnit2->getUnitInfo().isHiddenNationality()) && !pLoopUnit2->isCargo())
+								pUnitNode2 = pAdjacentPlot->headUnitNode();
+								while (pUnitNode2)
 								{
-									int randNum = GC.getGameINLINE().getSorenRandNum(100, "City Defense Bomb");
-									int iDamage = 0;
-									// 10 Percent chance to totally miss
-									if (randNum > 10)
+									pLoopUnit2 = ::getUnit(pUnitNode2->m_data);
+									pUnitNode2 = pAdjacentPlot->nextUnitNode(pUnitNode2);
+
+									if (pLoopUnit != NULL && (getTeam() != pLoopUnit2->getTeam() && (GET_TEAM(getTeam()).isAtWar(pLoopUnit2->getTeam()) || pLoopUnit2->getUnitInfo().isHiddenNationality()) && !pLoopUnit2->isCargo()))
 									{
-										iDamage = pLoopUnit2->maxHitPoints() * pBombUnit->bombardRate() / 100 * randNum / 10;
+										int randNum = GC.getGameINLINE().getSorenRandNum(100, "City Defense Bomb");
+										int iDamage = 0;
+										// 10 Percent chance to totally miss
+										if (randNum > 10)
+										{
+											iDamage = pLoopUnit2->maxHitPoints() * pBombUnit->bombardRate() / 100 * randNum / 10;
 
-										// using XML balancing modifier
-										if (pAdjacentPlot->isWater())
-										{
-											iDamage = iDamage * citadelDamageMultiplierWater;
-										}
-										else
-										{
-											iDamage = iDamage * citadelDamageMultiplierLand;
-										}
-
-										//taking into account different strengths of units
-										int iDefenderCombatMod = pLoopUnit2->baseCombatStr();
-										if (iDefenderCombatMod == 0)
-										{
-											iDefenderCombatMod = 1;
-										}
-										iDamage = iDamage / iDefenderCombatMod;
-
-										//checking Terrain
-										int iTerrainDamageMod = 0;
-										if (pAdjacentPlot->isWater())
-										{
-											iTerrainDamageMod = 0;
-										}
-										else
-										{
-											if (pAdjacentPlot->isPeak())
+											// using XML balancing modifier
+											if (pAdjacentPlot->isWater())
 											{
-												iTerrainDamageMod = 50;
-											}
-											else if (pAdjacentPlot->isHills())
-											{
-												iTerrainDamageMod = 25;
-											}
-
-											//Forests, Jungle ...
-											if (pAdjacentPlot->getTerrainType() != NO_TERRAIN)
-											{
-												iTerrainDamageMod = iTerrainDamageMod + 20;
-											}
-										}
-										iDamage = iDamage * (100 - iTerrainDamageMod) / 100;
-									}
-									else
-									{
-										iDamage = 0;
-									}
-
-									pLoopUnit2->changeDamage(iDamage, pBombUnit);
-
-									//case enemy is in water
-									if (pAdjacentPlot->isWater())
-									{
-										if (iDamage > 0)
-										{
-											if (pLoopUnit2->isDead())
-											{
-												int iExperience = pLoopUnit2->attackXPValue();
-												iExperience = ((iExperience * pLoopUnit2->currCombatStr(plot(), pBombUnit)) / pBombUnit->currCombatStr(NULL, NULL));
-												iExperience = range(iExperience, GC.getDefineINT("MIN_EXPERIENCE_PER_COMBAT"), GC.getDefineINT("MAX_EXPERIENCE_PER_COMBAT"));
-
-												pBombUnit->changeExperience(iExperience, pLoopUnit2->maxXPValue(), true, plot()->getOwnerINLINE() == pBombUnit->getOwnerINLINE(), true);
-
-												szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_SUNK_GOOD", getNameKey());
-												gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
-
-												szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_SUNK_BAD", getNameKey());
-												gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
+												iDamage = iDamage * citadelDamageMultiplierWater;
 											}
 											else
 											{
-												szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_HIT_GOOD", getNameKey());
-												gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
-
-												szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_HIT_BAD", getNameKey());
-												gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
+												iDamage = iDamage * citadelDamageMultiplierLand;
 											}
-										}
-										else
-										{
-											szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_MISS_BAD", getNameKey());
-											gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 
-											szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_MISS_GOOD", getNameKey());
-											gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
-										}
-									}
-									//case water end
-
-									//case enemy is on land
-									if (!pAdjacentPlot->isWater())
-									{
-										if (iDamage > 0)
-										{
-											if (pLoopUnit2->isDead())
+											//taking into account different strengths of units
+											int iDefenderCombatMod = pLoopUnit2->baseCombatStr();
+											if (iDefenderCombatMod == 0)
 											{
-												int iExperience = pLoopUnit2->attackXPValue();
-												iExperience = ((iExperience * pLoopUnit2->currCombatStr(plot(), pBombUnit)) / pBombUnit->currCombatStr(NULL, NULL));
-												iExperience = range(iExperience, GC.getDefineINT("MIN_EXPERIENCE_PER_COMBAT"), GC.getDefineINT("MAX_EXPERIENCE_PER_COMBAT"));
+												iDefenderCombatMod = 1;
+											}
+											iDamage = iDamage / iDefenderCombatMod;
 
-												pBombUnit->changeExperience(iExperience, pLoopUnit2->maxXPValue(), true, plot()->getOwnerINLINE() == pBombUnit->getOwnerINLINE(), true);
-
-												szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_DESTROYED_GOOD", getNameKey());
-												gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
-
-												szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_DESTROYED_BAD", getNameKey());
-												gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
+											//checking Terrain
+											int iTerrainDamageMod = 0;
+											if (pAdjacentPlot->isWater())
+											{
+												iTerrainDamageMod = 0;
 											}
 											else
 											{
-												szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_HIT_LAND_GOOD", getNameKey(), iDamage);
-												gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
+												if (pAdjacentPlot->isPeak())
+												{
+													iTerrainDamageMod = 50;
+												}
+												else if (pAdjacentPlot->isHills())
+												{
+													iTerrainDamageMod = 25;
+												}
 
-												szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_HIT_LAND_BAD", getNameKey(), iDamage);
-												gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
+												//Forests, Jungle ...
+												if (pAdjacentPlot->getTerrainType() != NO_TERRAIN)
+												{
+													iTerrainDamageMod = iTerrainDamageMod + 20;
+												}
 											}
+											iDamage = iDamage * (100 - iTerrainDamageMod) / 100;
 										}
 										else
 										{
-											szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_MISS_LAND_BAD", getNameKey());
-											gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
+											iDamage = 0;
+										}
 
-											szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_MISS_LAND_GOOD", getNameKey());
-											gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
+										pLoopUnit2->changeDamage(iDamage, pBombUnit);
+
+										//case enemy is in water
+										if (pAdjacentPlot->isWater())
+										{
+											if (iDamage > 0)
+											{
+												if (pLoopUnit2->isDead())
+												{
+													int iExperience = pLoopUnit2->attackXPValue();
+													iExperience = ((iExperience * pLoopUnit2->currCombatStr(plot(), pBombUnit)) / pBombUnit->currCombatStr(NULL, NULL));
+													iExperience = range(iExperience, GC.getDefineINT("MIN_EXPERIENCE_PER_COMBAT"), GC.getDefineINT("MAX_EXPERIENCE_PER_COMBAT"));
+
+													pBombUnit->changeExperience(iExperience, pLoopUnit2->maxXPValue(), true, plot()->getOwnerINLINE() == pBombUnit->getOwnerINLINE(), true);
+
+													szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_SUNK_GOOD", getNameKey());
+													gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
+
+													szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_SUNK_BAD", getNameKey());
+													gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
+												}
+												else
+												{
+													szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_HIT_GOOD", getNameKey());
+													gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
+
+													szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_HIT_BAD", getNameKey());
+													gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
+												}
+											}
+											else
+											{
+												szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_MISS_BAD", getNameKey());
+												gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
+
+												szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_MISS_GOOD", getNameKey());
+												gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
+											}
+										}
+										//case water end
+
+										//case enemy is on land
+										if (!pAdjacentPlot->isWater())
+										{
+											if (iDamage > 0)
+											{
+												if (pLoopUnit2->isDead())
+												{
+													int iExperience = pLoopUnit2->attackXPValue();
+													iExperience = ((iExperience * pLoopUnit2->currCombatStr(plot(), pBombUnit)) / pBombUnit->currCombatStr(NULL, NULL));
+													iExperience = range(iExperience, GC.getDefineINT("MIN_EXPERIENCE_PER_COMBAT"), GC.getDefineINT("MAX_EXPERIENCE_PER_COMBAT"));
+
+													pBombUnit->changeExperience(iExperience, pLoopUnit2->maxXPValue(), true, plot()->getOwnerINLINE() == pBombUnit->getOwnerINLINE(), true);
+
+													szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_DESTROYED_GOOD", getNameKey());
+													gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
+
+													szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_DESTROYED_BAD", getNameKey());
+													gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
+												}
+												else
+												{
+													szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_HIT_LAND_GOOD", getNameKey(), iDamage);
+													gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
+
+													szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_HIT_LAND_BAD", getNameKey(), iDamage);
+													gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
+												}
+											}
+											else
+											{
+												szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_MISS_LAND_BAD", getNameKey());
+												gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
+
+												szBuffer = gDLL->getText("TXT_KEY_FORTBOMB_MISS_LAND_GOOD", getNameKey());
+												gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
+											}
+										}
+										//case land end
+
+										if (pAdjacentPlot->isActiveVisible(false))
+										{
+											// Bombard entity mission
+											CvMissionDefinition kDefiniton;
+											kDefiniton.setMissionTime(GC.getMissionInfo(MISSION_BOMBARD).getTime() * gDLL->getSecsPerTurn());
+											kDefiniton.setMissionType(MISSION_BOMBARD);
+											kDefiniton.setPlot(pAdjacentPlot);
+											kDefiniton.setUnit(BATTLE_UNIT_ATTACKER, pBombUnit);
+											kDefiniton.setUnit(BATTLE_UNIT_DEFENDER, pLoopUnit2);
+											gDLL->getEntityIFace()->AddMission(&kDefiniton);
+										}
+
+										if (pLoopUnit2->isDead())
+										{
+											pLoopUnit2->kill(false);
 										}
 									}
-									//case land end
 
-									if (pAdjacentPlot->isActiveVisible(false))
-									{
-										// Bombard entity mission
-										CvMissionDefinition kDefiniton;
-										kDefiniton.setMissionTime(GC.getMissionInfo(MISSION_BOMBARD).getTime() * gDLL->getSecsPerTurn());
-										kDefiniton.setMissionType(MISSION_BOMBARD);
-										kDefiniton.setPlot(pAdjacentPlot);
-										kDefiniton.setUnit(BATTLE_UNIT_ATTACKER, pBombUnit);
-										kDefiniton.setUnit(BATTLE_UNIT_DEFENDER, pLoopUnit2);
-										gDLL->getEntityIFace()->AddMission(&kDefiniton);
-									}
-
-									if (pLoopUnit2->isDead())
-									{
-										pLoopUnit2->kill(false);
-									}
+									// we stop, because we have already fired once. reason is balancing
+									alreadyBombarded = true;
+									pUnitNode2 = NULL;
 								}
-
-								// we stop, because we have already fired once. reason is balancing
-								alreadyBombarded = true;
-								pUnitNode2 = NULL;
 							}
 						}
 					}
@@ -13515,138 +13518,141 @@ void CvCity::doExtraCityDefenseAttacks()
 			pLoopUnit = ::getUnit(pUnitNode->m_data);
 			pUnitNode = plot()->nextUnitNode(pUnitNode);
 
-			bool isInfanteryType = (pLoopUnit->getUnitClassType() == GC.getDefineINT("UNITCLASS_KING_REINFORCEMENT_LAND") || GC.getDefineINT("UNITCLASS_CONTINENTAL_GUARD") || (pLoopUnit->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pLoopUnit->getProfession()).isCityDefender() && !GC.getProfessionInfo(pLoopUnit->getProfession()).isUnarmed()));
-
-			if (isInfanteryType && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
+			if (pLoopUnit != NULL)
 			{
-				bCanFire = false;
-				if (pLoopUnit->getFortifyTurns() > 0)
-				{
-					bCanFire = true;
-					pDefenseUnit = pLoopUnit;
-				}
+				bool isInfanteryType = (pLoopUnit->getUnitClassType() == GC.getDefineINT("UNITCLASS_KING_REINFORCEMENT_LAND") || GC.getDefineINT("UNITCLASS_CONTINENTAL_GUARD") || (pLoopUnit->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pLoopUnit->getProfession()).isCityDefender() && !GC.getProfessionInfo(pLoopUnit->getProfession()).isUnarmed()));
 
-				if (bCanFire)
+				if (isInfanteryType && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
 				{
-					for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+					bCanFire = false;
+					if (pLoopUnit->getFortifyTurns() > 0)
 					{
-						pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
-						//we do not fire on Water here
-						if (pAdjacentPlot != NULL && !pAdjacentPlot->isWater())
+						bCanFire = true;
+						pDefenseUnit = pLoopUnit;
+					}
+
+					if (bCanFire)
+					{
+						for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 						{
-							pUnitNode2 = pAdjacentPlot->headUnitNode();
-							while (pUnitNode2)
+							pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+							//we do not fire on Water here
+							if (pAdjacentPlot != NULL && !pAdjacentPlot->isWater())
 							{
-								pLoopUnit2 = ::getUnit(pUnitNode2->m_data);
-								pUnitNode2 = pAdjacentPlot->nextUnitNode(pUnitNode2);
-
-								if (getTeam() != pLoopUnit2->getTeam() && (GET_TEAM(getTeam()).isAtWar(pLoopUnit2->getTeam()) || pLoopUnit2->getUnitInfo().isHiddenNationality()) && !pLoopUnit2->isCargo())
+								pUnitNode2 = pAdjacentPlot->headUnitNode();
+								while (pUnitNode2)
 								{
-									int defenseRandNum = GC.getGameINLINE().getSorenRandNum(100, "City Defense Attack");
-									int iDamage = 0;
+									pLoopUnit2 = ::getUnit(pUnitNode2->m_data);
+									pUnitNode2 = pAdjacentPlot->nextUnitNode(pUnitNode2);
 
-									//10 percent chance to miss
-									if (defenseRandNum > 10)
+									if (pLoopUnit2 != NULL && getTeam() != pLoopUnit2->getTeam() && (GET_TEAM(getTeam()).isAtWar(pLoopUnit2->getTeam()) || pLoopUnit2->getUnitInfo().isHiddenNationality()) && !pLoopUnit2->isCargo())
 									{
-										iDamage = pLoopUnit2->maxHitPoints()* defenseRandNum / 100;
-										iDamage = iDamage * defenseDamageMultiplier;
+										int defenseRandNum = GC.getGameINLINE().getSorenRandNum(100, "City Defense Attack");
+										int iDamage = 0;
 
-										//taking into account different strengths of units
-										int iDefenderCombatMod = pLoopUnit2->baseCombatStr();
-										if (iDefenderCombatMod == 0)
+										//10 percent chance to miss
+										if (defenseRandNum > 10)
 										{
-											iDefenderCombatMod = 1;
-										}
+											iDamage = pLoopUnit2->maxHitPoints()* defenseRandNum / 100;
+											iDamage = iDamage * defenseDamageMultiplier;
 
-										iDamage = iDamage / iDefenderCombatMod;
-
-										//checking Terrain
-										int iTerrainDamageMod = 0;
-										if (pAdjacentPlot->isWater())
-										{
-											iTerrainDamageMod = 0;
-										}
-										else
-										{
-											if (pAdjacentPlot->isPeak())
+											//taking into account different strengths of units
+											int iDefenderCombatMod = pLoopUnit2->baseCombatStr();
+											if (iDefenderCombatMod == 0)
 											{
-												iTerrainDamageMod = 50;
-											}
-											else if (pAdjacentPlot->isHills())
-											{
-												iTerrainDamageMod = 25;
+												iDefenderCombatMod = 1;
 											}
 
-											//Forests, Jungle ...
-											if (pAdjacentPlot->getTerrainType() != NO_TERRAIN)
+											iDamage = iDamage / iDefenderCombatMod;
+
+											//checking Terrain
+											int iTerrainDamageMod = 0;
+											if (pAdjacentPlot->isWater())
 											{
-												iTerrainDamageMod = iTerrainDamageMod + 20;
-											}
-										}
-										iDamage = iDamage * (100 - iTerrainDamageMod) / 100;
-
-										pLoopUnit2->changeDamage(iDamage, pDefenseUnit);
-									}
-
-									//case enemy is on land
-									if (!pAdjacentPlot->isWater())
-									{
-										if (iDamage > 0)
-										{
-											if (pLoopUnit2->isDead())
-											{
-												int iExperience = pLoopUnit2->attackXPValue();
-												iExperience = ((iExperience * pLoopUnit2->currCombatStr(plot(), pDefenseUnit)) / pDefenseUnit->currCombatStr(NULL, NULL));
-												iExperience = range(iExperience, GC.getDefineINT("MIN_EXPERIENCE_PER_COMBAT"), GC.getDefineINT("MAX_EXPERIENCE_PER_COMBAT"));
-
-												pDefenseUnit->changeExperience(iExperience, pLoopUnit2->maxXPValue(), true, plot()->getOwnerINLINE() == pDefenseUnit->getOwnerINLINE(), true);
-
-												szBuffer = gDLL->getText("TXT_KEY_FORTDEFENSE_DESTROYED_GOOD", getNameKey());
-												gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
-
-												szBuffer = gDLL->getText("TXT_KEY_FORTDEFENSE_DESTROYED_BAD", getNameKey());
-												gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
+												iTerrainDamageMod = 0;
 											}
 											else
 											{
-												szBuffer = gDLL->getText("TXT_KEY_FORTDEFENSE_HIT_LAND_GOOD", getNameKey(), iDamage);
-												gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"),true, true);
+												if (pAdjacentPlot->isPeak())
+												{
+													iTerrainDamageMod = 50;
+												}
+												else if (pAdjacentPlot->isHills())
+												{
+													iTerrainDamageMod = 25;
+												}
 
-												szBuffer = gDLL->getText("TXT_KEY_FORTDEFENSE_HIT_LAND_BAD", getNameKey(), iDamage);
-												gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
+												//Forests, Jungle ...
+												if (pAdjacentPlot->getTerrainType() != NO_TERRAIN)
+												{
+													iTerrainDamageMod = iTerrainDamageMod + 20;
+												}
+											}
+											iDamage = iDamage * (100 - iTerrainDamageMod) / 100;
+
+											pLoopUnit2->changeDamage(iDamage, pDefenseUnit);
+										}
+
+										//case enemy is on land
+										if (!pAdjacentPlot->isWater())
+										{
+											if (iDamage > 0)
+											{
+												if (pLoopUnit2->isDead())
+												{
+													int iExperience = pLoopUnit2->attackXPValue();
+													iExperience = ((iExperience * pLoopUnit2->currCombatStr(plot(), pDefenseUnit)) / pDefenseUnit->currCombatStr(NULL, NULL));
+													iExperience = range(iExperience, GC.getDefineINT("MIN_EXPERIENCE_PER_COMBAT"), GC.getDefineINT("MAX_EXPERIENCE_PER_COMBAT"));
+
+													pDefenseUnit->changeExperience(iExperience, pLoopUnit2->maxXPValue(), true, plot()->getOwnerINLINE() == pDefenseUnit->getOwnerINLINE(), true);
+
+													szBuffer = gDLL->getText("TXT_KEY_FORTDEFENSE_DESTROYED_GOOD", getNameKey());
+													gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
+
+													szBuffer = gDLL->getText("TXT_KEY_FORTDEFENSE_DESTROYED_BAD", getNameKey());
+													gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
+												}
+												else
+												{
+													szBuffer = gDLL->getText("TXT_KEY_FORTDEFENSE_HIT_LAND_GOOD", getNameKey(), iDamage);
+													gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
+
+													szBuffer = gDLL->getText("TXT_KEY_FORTDEFENSE_HIT_LAND_BAD", getNameKey(), iDamage);
+													gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
+												}
+											}
+											else
+											{
+												szBuffer = gDLL->getText("TXT_KEY_FORTDEFENSE_MISS_LAND_BAD", getNameKey());
+												gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
+
+												szBuffer = gDLL->getText("TXT_KEY_FORTDEFENSE_MISS_LAND_GOOD", getNameKey());
+												gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
 											}
 										}
-										else
-										{
-											szBuffer = gDLL->getText("TXT_KEY_FORTDEFENSE_MISS_LAND_BAD", getNameKey());
-											gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
+										//case land end
 
-											szBuffer = gDLL->getText("TXT_KEY_FORTDEFENSE_MISS_LAND_GOOD", getNameKey());
-											gDLL->UI().addPlayerMessage(pLoopUnit2->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopUnit2, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), true, true);
+										if (pAdjacentPlot->isActiveVisible(false))
+										{
+											// Bombard pDefenseUnit mission
+											CvMissionDefinition kDefiniton;
+											kDefiniton.setMissionTime(GC.getMissionInfo(MISSION_BOMBARD).getTime() * gDLL->getSecsPerTurn());
+											kDefiniton.setMissionType(MISSION_BOMBARD);
+											kDefiniton.setPlot(pAdjacentPlot);
+											kDefiniton.setUnit(BATTLE_UNIT_ATTACKER, pDefenseUnit);
+											kDefiniton.setUnit(BATTLE_UNIT_DEFENDER, pLoopUnit2);
+											gDLL->getEntityIFace()->AddMission(&kDefiniton);
+										}
+
+										if (pLoopUnit2->isDead())
+										{
+											pLoopUnit2->kill(false);
 										}
 									}
-									//case land end
-
-									if (pAdjacentPlot->isActiveVisible(false))
-									{
-										// Bombard pDefenseUnit mission
-										CvMissionDefinition kDefiniton;
-										kDefiniton.setMissionTime(GC.getMissionInfo(MISSION_BOMBARD).getTime() * gDLL->getSecsPerTurn());
-										kDefiniton.setMissionType(MISSION_BOMBARD);
-										kDefiniton.setPlot(pAdjacentPlot);
-										kDefiniton.setUnit(BATTLE_UNIT_ATTACKER, pDefenseUnit);
-										kDefiniton.setUnit(BATTLE_UNIT_DEFENDER, pLoopUnit2);
-										gDLL->getEntityIFace()->AddMission(&kDefiniton);
-									}
-
-									if (pLoopUnit2->isDead())
-									{
-										pLoopUnit2->kill(false);
-									}
+									// we stop, because we have already fired once. reason is balancing
+									alreadyFired = true;
+									pUnitNode2 = NULL;
 								}
-								// we stop, because we have already fired once. reason is balancing
-								alreadyFired = true;
-								pUnitNode2 = NULL;
 							}
 						}
 					}
@@ -13724,7 +13730,7 @@ void CvCity::getYieldDemands(YieldCargoArray<int> &aYields) const
 		pUnitNode = plot()->nextUnitNode(pUnitNode);
 
 		// however, we only consider Units that belong to the same Player as the City
-		if (pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
+		if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
 		{
 			aYields.addCache(1, GC.getUnitInfo(pLoopUnit->getUnitType()).getYieldDemands());
 		}
@@ -13999,7 +14005,7 @@ int CvCity::getSlaveRevoltReductionBonus() const
 		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = plot()->nextUnitNode(pUnitNode);
 
-		if (pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
+		if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
 		{
 			iSlaveRevoltReductionBonus += pLoopUnit->getSlaveRevoltReductionBonus();
 		}
@@ -14039,7 +14045,7 @@ void CvCity::updateSlaveWorkerProductionBonus(int iBonus)
 		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = plot()->nextUnitNode(pUnitNode);
 
-		if (pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
+		if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
 		{
 			iSlaveWorkerProductionBonus += pLoopUnit->getSlaveWorkerProductionBonus();
 		}
@@ -14174,7 +14180,7 @@ bool CvCity::isOwnPlayerUnitOnAdjacentPlotOfCity(int /*UnitClassTypes*/ iIndex) 
 					pUnitNode = pAdjacentPlot->nextUnitNode(pUnitNode);
 
 					// check for owner and UnitType
-					if (pLoopUnit->getOwnerINLINE() == eOwnPlayerType && pLoopUnit->getUnitType() == eUnit)
+					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == eOwnPlayerType && pLoopUnit->getUnitType() == eUnit)
 					{
 						// we found a unit of our player;
 						return true;
@@ -14213,7 +14219,7 @@ bool CvCity::isBarbarianUnitOnAdjacentPlotOfCity(int /*UnitClassTypes*/ iIndex) 
 					pUnitNode = pAdjacentPlot->nextUnitNode(pUnitNode);
 
 					// check for owner and UnitType
-					if (pLoopUnit->getOwnerINLINE() == eBarbarianPlayerType && pLoopUnit->getUnitType() == eUnit)
+					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == eBarbarianPlayerType && pLoopUnit->getUnitType() == eUnit)
 					{
 						// we found a unit of our player;
 						return true;

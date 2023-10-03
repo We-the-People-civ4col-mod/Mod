@@ -1709,7 +1709,10 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 				while (pSelectedUnitNode != NULL)
 				{
 					pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
-					iTurns = std::max(iTurns, pSelectedUnit->healTurns(pMissionPlot));
+					if (pSelectedUnit != NULL)
+					{
+						iTurns = std::max(iTurns, pSelectedUnit->healTurns(pMissionPlot));
+					}
 
 					pSelectedUnitNode = gDLL->getInterfaceIFace()->nextSelectionListNode(pSelectedUnitNode);
 				}
@@ -1838,7 +1841,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 				{
 					pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
 
-					if (pSelectedUnit->canBuild(pMissionPlot, eBuild))
+					if (pSelectedUnit != NULL && pSelectedUnit->canBuild(pMissionPlot, eBuild))
 					{
 						bValid = true;
 						break;
@@ -2044,8 +2047,11 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 				{
 					pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
 
-					iNowWorkRate += pSelectedUnit->workRate(false);
-					iThenWorkRate += pSelectedUnit->workRate(true);
+					if (pSelectedUnit != NULL)
+					{
+						iNowWorkRate += pSelectedUnit->workRate(false);
+						iThenWorkRate += pSelectedUnit->workRate(true);
+					}
 
 					pSelectedUnitNode = gDLL->getInterfaceIFace()->nextSelectionListNode(pSelectedUnitNode);
 				}
@@ -2072,7 +2078,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 					pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
 					// R&R, ray, High Sea Fishing - START
 					//if (pSelectedUnit->getUnitInfo().isGatherBoat())
-					if (pSelectedUnit->isWhalingBoat())
+					if (pSelectedUnit != NULL && pSelectedUnit->isWhalingBoat())
 					{
 						pCommandUnit = pSelectedUnit;
 						break;
@@ -2165,7 +2171,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 				while (pSelectedUnitNode != NULL)
 				{
 					pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
-					if (pSelectedUnit->isFishingBoat())
+					if (pSelectedUnit != NULL && pSelectedUnit->isFishingBoat())
 					{
 						pCommandUnit = pSelectedUnit;
 						break;
@@ -2280,7 +2286,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 					{
 						pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
 
-						if (pSelectedUnit->canUpgrade(((UnitTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getCommandData())), true))
+						if (pSelectedUnit != NULL && pSelectedUnit->canUpgrade(((UnitTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getCommandData())), true))
 						{
 							iPrice += pSelectedUnit->upgradePrice((UnitTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getCommandData()));
 						}
@@ -2310,7 +2316,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 					{
 						pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
 
-						if (!(GET_PLAYER(eGiftPlayer).AI_acceptUnit(pSelectedUnit)))
+						if (pSelectedUnit != NULL && !(GET_PLAYER(eGiftPlayer).AI_acceptUnit(pSelectedUnit)))
 						{
 							szBuffer.append(NEWLINE);
 							szBuffer.append(gDLL->getText("TXT_KEY_REFUSE_GIFT", GET_PLAYER(eGiftPlayer).getNameKey()));
@@ -2342,7 +2348,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 				while (pSelectedUnitNode != NULL)
 				{
 					pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
-					if (pSelectedUnit->canEstablishMission())
+					if (pSelectedUnit != NULL && pSelectedUnit->canEstablishMission())
 					{
 						pMissionary = pSelectedUnit;
 						break;
@@ -2366,7 +2372,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 				while (pSelectedUnitNode != NULL)
 				{
 					pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
-					if (pSelectedUnit->canEstablishTradePost())
+					if (pSelectedUnit != NULL && pSelectedUnit->canEstablishTradePost())
 					{
 						pTrader = pSelectedUnit;
 						break;
@@ -2391,7 +2397,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 				while (pSelectedUnitNode != NULL)
 				{
 					pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
-					if (pSelectedUnit->canStirUp())
+					if (pSelectedUnit != NULL && pSelectedUnit->canStirUp())
 					{
 						pMissionary = pSelectedUnit;
 						break;

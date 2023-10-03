@@ -9789,7 +9789,7 @@ void CvPlayer::updateGroupCycle(CvUnit* pUnit)
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-		if (pLoopUnit->isGroupHead())
+		if (pLoopUnit != NULL && pLoopUnit->isGroupHead())
 		{
 			if (pLoopUnit != pUnit)
 			{
@@ -11786,7 +11786,7 @@ void CvPlayer::doAdvancedStartAction(AdvancedStartActionTypes eAction, Coordinat
 						CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 						pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-						if (pLoopUnit->getUnitType() == eUnit)
+						if (pLoopUnit != NULL && pLoopUnit->getUnitType() == eUnit)
 						{
 							pLoopUnit->kill(false);
 							changeAdvancedStartPoints(iCost);
@@ -11801,10 +11801,13 @@ void CvPlayer::doAdvancedStartAction(AdvancedStartActionTypes eAction, Coordinat
 				{
 					CvUnit* pUnit = ::getUnit(pUnitNode->m_data);
 
-					iCost = getAdvancedStartUnitCost(pUnit->getUnitType(), false);
-					FAssertMsg(iCost != -1, "If this is -1 then that means it's going to try to delete a unit which shouldn't exist");
-					pUnit->kill(false);
-					changeAdvancedStartPoints(iCost);
+					if (pUnit != NULL)
+					{
+						iCost = getAdvancedStartUnitCost(pUnit->getUnitType(), false);
+						FAssertMsg(iCost != -1, "If this is -1 then that means it's going to try to delete a unit which shouldn't exist");
+						pUnit->kill(false);
+						changeAdvancedStartPoints(iCost);
+					}
 				}
 			}
 
@@ -12303,7 +12306,7 @@ int CvPlayer::getAdvancedStartUnitCost(UnitTypes eUnit, bool bAdd, CvPlot* pPlot
 				CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 				pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-				if (pLoopUnit->getUnitType() == eUnit)
+				if (pLoopUnit != NULL && pLoopUnit->getUnitType() == eUnit)
 				{
 					bUnitFound = true;
 				}

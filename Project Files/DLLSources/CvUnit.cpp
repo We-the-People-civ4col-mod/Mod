@@ -440,7 +440,7 @@ void CvUnit::convert(CvUnit* pUnit, bool bKill)
 				pLoopUnit = ::getUnit(pUnitNode->m_data);
 				pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-				if (pLoopUnit->getTransportUnit() == pUnit)
+				if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == pUnit)
 				{
 					pLoopUnit->setTransportUnit(this);
 				}
@@ -2147,14 +2147,17 @@ bool CvUnit::isActionRecommended(int iAction)
 			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 			pUnitNode = listCargo.next(pUnitNode);
 
-			if (pLoopUnit->getYield() != NO_YIELD && GET_PLAYER(getOwnerINLINE()).isYieldEuropeTradable(pLoopUnit->getYield()))
+			if (pLoopUnit != NULL)
 			{
-				return true;
-			}
+				if (pLoopUnit->getYield() != NO_YIELD && GET_PLAYER(getOwnerINLINE()).isYieldEuropeTradable(pLoopUnit->getYield()))
+				{
+					return true;
+				}
 
-			if (pLoopUnit->getUnitInfo().isTreasure())
-			{
-				return true;
+				if (pLoopUnit->getUnitInfo().isTreasure())
+				{
+					return true;
+				}
 			}
 		}
 
@@ -3838,7 +3841,7 @@ int CvUnit::canCrossCoastOnly() const
 	{
 		CvUnit *pLoopUnit = ::getUnit(pUnitNode->m_data);
 
-		if (pLoopUnit->getUnitInfo().getTerrainImpassable(TERRAIN_OCEAN))
+		if (pLoopUnit != NULL && pLoopUnit->getUnitInfo().getTerrainImpassable(TERRAIN_OCEAN))
 		{
 			return true;
 		}
@@ -3944,7 +3947,7 @@ bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 
 			// WTP, ray Slave Ship
 			// we allow Slave Ships to sail to Port Royal as well
-			if (!pLoopUnit->getUnitInfo().isHiddenNationality() && !pLoopUnit->getUnitInfo().isSlaveShip())
+			if (pLoopUnit != NULL && !pLoopUnit->getUnitInfo().isHiddenNationality() && !pLoopUnit->getUnitInfo().isSlaveShip())
 			{
 				return false;
 			}
@@ -4060,7 +4063,7 @@ bool CvUnit::canGift(bool bTestVisible, bool bTestTransport)
 			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 			pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-			if (pLoopUnit->getTransportUnit() == this)
+			if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 			{
 				if (!pLoopUnit->canGift(false, false))
 				{
@@ -4147,7 +4150,7 @@ void CvUnit::gift(bool bTestTransport)
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-		if (pLoopUnit->getTransportUnit() == this)
+		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 		{
 			pLoopUnit->gift(false);
 		}
@@ -5061,7 +5064,7 @@ bool CvUnit::canSailToPortRoyal(const CvPlot* pPlot, UnitTravelStates eNewState)
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = getGroup()->nextUnitNode(pUnitNode);
 
-		if (pLoopUnit->getTransportUnit() == NULL)
+		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == NULL)
 		{
 			// WTP, ray Slave Ship
 			// we allow Slave Ships to sail to Port Royal as well
@@ -5138,7 +5141,7 @@ bool CvUnit::canLoad(const CvPlot* pPlot, bool bCheckCity) const
 		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-		if (canLoadUnit(pLoopUnit, pPlot, bCheckCity))
+		if (pLoopUnit != NULL && canLoadUnit(pLoopUnit, pPlot, bCheckCity))
 		{
 			return true;
 		}
@@ -5171,7 +5174,7 @@ bool CvUnit::load(bool bCheckCity)
 			pLoopUnit = ::getUnit(pUnitNode->m_data);
 			pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-			if (canLoadUnit(pLoopUnit, pPlot, bCheckCity))
+			if (pLoopUnit != NULL && canLoadUnit(pLoopUnit, pPlot, bCheckCity))
 			{
 				// First pass matches only ships that are not sleeping, subsequent matches ignore activity
 				if ((iPass == 0 && pLoopUnit->getGroup()->getActivityType() != ACTIVITY_SLEEP && pLoopUnit->getOwnerINLINE() == getOwnerINLINE()) ||
@@ -5411,7 +5414,7 @@ bool CvUnit::canUnloadAll() const
 		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-		if (pLoopUnit->getTransportUnit() == this)
+		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 		{
 			if(pLoopUnit->canUnload())
 			{
@@ -5444,7 +5447,7 @@ void CvUnit::unloadAll()
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-		if (pLoopUnit->getTransportUnit() == this)
+		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 		{
 			if (pLoopUnit->canUnload())
 			{
@@ -5530,7 +5533,7 @@ void CvUnit::learn()
 			pUnitNode = plot()->nextUnitNode(pUnitNode);
 			// this checks if there is already another Native Living in this village
 			// if yes, we send a message and exit the method by return
-			if (pLoopUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_LIVE_AMONG_NATIVES)
+			if (pLoopUnit != NULL && pLoopUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_LIVE_AMONG_NATIVES)
 			{
 				CvWString szBuffer = gDLL->getText("TXT_KEY_NATIVES_NOT_WILLING_ALREADY_COLONIST_LEARNING", plot()->getPlotCity()->getNameKey());
 				gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_LEARN).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
@@ -6755,7 +6758,7 @@ int CvUnit::healRate(const CvPlot* pPlot) const
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-		if (pLoopUnit->getTeam() == getTeam()) // XXX what about alliances?
+		if (pLoopUnit != NULL && pLoopUnit->getTeam() == getTeam()) // XXX what about alliances?
 		{
 			iHeal = pLoopUnit->getSameTileHeal();
 
@@ -6781,7 +6784,7 @@ int CvUnit::healRate(const CvPlot* pPlot) const
 					pLoopUnit = ::getUnit(pUnitNode->m_data);
 					pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
 
-					if (pLoopUnit->getTeam() == getTeam()) // XXX what about alliances?
+					if (pLoopUnit != NULL && pLoopUnit->getTeam() == getTeam()) // XXX what about alliances?
 					{
 						iHeal = pLoopUnit->getAdjacentTileHeal();
 
@@ -8033,9 +8036,10 @@ int CvUnit::canLead(const CvPlot* pPlot, int iUnitId) const
 			pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
 			// WTP, fixing Generals and Admirals to lead civilists or small tiny fishing boats - START
-			if ((kUnitInfo.getDomainType() == DOMAIN_LAND && pUnit->canAttack()) || (kUnitInfo.getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20))
+			if (pUnit != NULL && pUnit != this &&
+				((kUnitInfo.getDomainType() == DOMAIN_LAND && pUnit->canAttack()) || (kUnitInfo.getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20)))
 			{
-				if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canPromote((PromotionTypes)kUnitInfo.getLeaderPromotion(), getID()))
+				if (pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canPromote((PromotionTypes)kUnitInfo.getLeaderPromotion(), getID()))
 				{
 					++iNumUnits;
 				}
@@ -8049,9 +8053,10 @@ int CvUnit::canLead(const CvPlot* pPlot, int iUnitId) const
 		CvUnit* pUnit = GET_PLAYER(getOwnerINLINE()).getUnit(iUnitId);
 
 		// WTP, fixing Generals and Admirals to lead civilists or small tiny fishing boats - START
-		if ((kUnitInfo.getDomainType() == DOMAIN_LAND && pUnit->canAttack()) || (kUnitInfo.getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20))
+		if (pUnit != NULL && pUnit != this &&
+			((kUnitInfo.getDomainType() == DOMAIN_LAND && pUnit->canAttack()) || (kUnitInfo.getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20)))
 		{
-			if (pUnit && pUnit != this && pUnit->canPromote((PromotionTypes)kUnitInfo.getLeaderPromotion(), getID()))
+			if (pUnit->canPromote((PromotionTypes)kUnitInfo.getLeaderPromotion(), getID()))
 			{
 				iNumUnits = 1;
 			}
@@ -8397,7 +8402,7 @@ CvCity* CvUnit::getUpgradeCity(UnitTypes eUnit, bool bSearch, int* iSearchValue)
 		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = plot()->nextUnitNode(pUnitNode);
 
-		if (pLoopUnit->getTransportUnit() == this)
+		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 		{
 			if (kUnitInfo.getSpecialCargo() != NO_SPECIALUNIT)
 			{
@@ -10083,7 +10088,7 @@ bool CvUnit::hasAnyUnitInCargo() const
 	{
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 
-		if (pLoopUnit->getTransportUnit() == this)
+		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 		{
 			if (!pLoopUnit->isGoods())
 			{
@@ -10117,7 +10122,7 @@ bool CvUnit::canCargoAllMove() const
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-		if (pLoopUnit->getTransportUnit() == this)
+		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 		{
 			if (pLoopUnit->getDomainType() == DOMAIN_LAND)
 			{
@@ -10143,7 +10148,7 @@ bool CvUnit::canCargoEnterArea(PlayerTypes ePlayer, const CvArea* pArea, bool bI
 		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-		if (pLoopUnit->getTransportUnit() == this)
+		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 		{
 			if (!pLoopUnit->canEnterArea(ePlayer, pArea, bIgnoreRightOfPassage))
 			{
@@ -10173,7 +10178,7 @@ int CvUnit::getUnitAICargo(UnitAITypes eUnitAI) const
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-		if (pLoopUnit->getTransportUnit() == this)
+		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 		{
 			if (pLoopUnit->AI_getUnitAIType() == eUnitAI)
 			{
@@ -10219,7 +10224,7 @@ bool CvUnit::canAssignTradeRoute(int iRouteID, bool bReusePath) const
 		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = listCargo.next(pUnitNode);
 
-		if (pLoopUnit->getYield() == NO_YIELD)
+		if (pLoopUnit != NULL && pLoopUnit->getYield() == NO_YIELD)
 		{
 			return false;
 		}
@@ -10945,7 +10950,7 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 				pLoopUnit = ::getUnit(pUnitNode->m_data);
 				pUnitNode = pOldPlot->nextUnitNode(pUnitNode);
 
-				if (pLoopUnit->getTransportUnit() == this)
+				if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 				{
 					pLoopUnit->jumpTo(toCoord, bGroup, bUpdate);
 					if (pLoopUnit->getYield() != NO_YIELD)
@@ -14701,7 +14706,7 @@ void CvUnit::setUnitTravelState(UnitTravelStates eState, bool bShowEuropeScreen)
 				for(CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode(); pUnitNode != NULL; pUnitNode = pPlot->nextUnitNode(pUnitNode))
 				{
 					CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-					if (pLoopUnit->getTransportUnit() == this)
+					if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 					{
 						pLoopUnit->setUnitTravelState(eState, false);
 					}
@@ -15567,7 +15572,7 @@ bool CvUnit::raidHarbor(CvCity* pCity)
 		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-		if (pLoopUnit->getDomainType() == DOMAIN_SEA)
+		if (pLoopUnit != NULL && pLoopUnit->getDomainType() == DOMAIN_SEA)
 		{
 			if (pLoopUnit->getOwner() == pCity->getOwner())
 			{
@@ -15812,6 +15817,11 @@ bool CvUnit::isFullToBrim() const
 			{
 				CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 				pUnitNode = listCargo.next(pUnitNode);
+
+				if (pLoopUnit == NULL)
+				{
+					continue;
+				}
 
 				if (pLoopUnit->getYieldStored() != GC.getGameINLINE().getCargoYieldCapacity())
 				{
@@ -16201,7 +16211,7 @@ int CvUnit::getCargoValue(Port port) const
 		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = plot()->nextUnitNode(pUnitNode);
 
-		if (pLoopUnit->getTransportUnit() == this)
+		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 		{
 			YieldTypes eYield = pLoopUnit->getYield();
 
@@ -16259,7 +16269,7 @@ bool CvUnit::canMergeTreasures() const
 		pUnitNode = plot()->nextUnitNode(pUnitNode);
 
 		// we only count our own treasuers and only the ones that are smaller than max gold amount
-		if (pLoopUnit->getUnitInfo().isTreasure() && pLoopUnit->getOwner() == getOwner() && pLoopUnit->getYieldStored() < maxTreasureGold)
+		if (pLoopUnit != NULL && pLoopUnit->getUnitInfo().isTreasure() && pLoopUnit->getOwner() == getOwner() && pLoopUnit->getYieldStored() < maxTreasureGold)
 		{
 			validTreasuresCounter++;
 		}
@@ -16294,7 +16304,7 @@ void CvUnit::mergeTreasures()
 		// WTP, ray, small improvements
 		// we only count gold of our own treasuers and those that are not yet at max
 		// after that we can directly kill them, so no extra loop is needed
-		if (pLoopUnit->getUnitInfo().isTreasure() && pLoopUnit->getOwner() == getOwner() && pLoopUnit->getYieldStored() < maxTreasureGold)
+		if (pLoopUnit != NULL && pLoopUnit->getUnitInfo().isTreasure() && pLoopUnit->getOwner() == getOwner() && pLoopUnit->getYieldStored() < maxTreasureGold)
 		{
 			overallAmount += pLoopUnit->getYieldStored();
 			pLoopUnit->kill(true);
@@ -16527,7 +16537,7 @@ bool CvUnit::isOwnPlayerUnitOnAdjacentPlotOfUnit(int /*UnitClassTypes*/ iIndex) 
 					pUnitNode = pAdjacentPlot->nextUnitNode(pUnitNode);
 
 					// check for owner and UnitType
-					if (pLoopUnit->getOwnerINLINE() == eOwnPlayerType && pLoopUnit->getUnitType() == eUnit)
+					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == eOwnPlayerType && pLoopUnit->getUnitType() == eUnit)
 					{
 						// we found a unit of our player;
 						return true;
@@ -16566,7 +16576,7 @@ bool CvUnit::isBarbarianUnitOnAdjacentPlotOfUnit(int /*UnitClassTypes*/ iIndex) 
 					pUnitNode = pAdjacentPlot->nextUnitNode(pUnitNode);
 
 					// check for owner and UnitType
-					if (pLoopUnit->getOwnerINLINE() == eBarbarianPlayerType && pLoopUnit->getUnitType() == eUnit)
+					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == eBarbarianPlayerType && pLoopUnit->getUnitType() == eUnit)
 					{
 						// we found a unit of our player;
 						return true;

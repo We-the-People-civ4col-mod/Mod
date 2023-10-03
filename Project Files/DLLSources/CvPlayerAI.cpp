@@ -2537,9 +2537,16 @@ int CvPlayerAI::AI_getPlotDanger(CvPlot* pPlot, int iRange, bool bTestMoves, boo
 						pLoopUnit = ::getUnit(pUnitNode->m_data);
 						pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
 
+						if (pLoopUnit == NULL)
+						{
+							continue;
+						}
+
 						// Ignore animals
 						if (pLoopUnit->getUnitInfo().isAnimal())
+						{
 							continue;
+						}
 
 						if (pLoopUnit->isEnemy(getTeam()))
 						{
@@ -2641,7 +2648,7 @@ int CvPlayerAI::AI_getUnitDanger(CvUnit* pUnit, int iRange, bool bTestMoves, boo
 						pLoopUnit = ::getUnit(pUnitNode->m_data);
 						pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
 
-						if (atWar(pLoopUnit->getTeam(), getTeam()))
+						if (pLoopUnit != NULL && atWar(pLoopUnit->getTeam(), getTeam()))
 						{
 							if (pLoopUnit->canAttack())
 							{
@@ -2728,6 +2735,11 @@ int CvPlayerAI::AI_getWaterDanger(CvPlot* pPlot, int iRange, bool bTestMoves, bo
 							{
 								pLoopUnit = ::getUnit(pUnitNode->m_data);
 								pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+
+								if (pLoopUnit == NULL)
+								{
+									continue;
+								}
 
 								if (!pLoopUnit->isEnemy(getTeam()))
 									continue;
@@ -4328,6 +4340,11 @@ int CvPlayerAI::AI_yieldTradeVal(YieldTypes eYield, const IDInfo& kTransport, Pl
 DenialTypes CvPlayerAI::AI_yieldTrade(YieldTypes eYield, const IDInfo& kTransport, PlayerTypes ePlayer) const
 {
 	CvUnit* pTransport = ::getUnit(kTransport);
+	if (pTransport == NULL)
+	{
+		FAssert(pTransport != NULL);
+		return NO_DENIAL;
+	}
 	CvCity* pCity = pTransport->plot()->getPlotCity();
 	if (pCity != NULL)
 	{
@@ -5369,7 +5386,7 @@ int CvPlayerAI::AI_adjacentPotentialAttackers(CvPlot* pPlot, bool bTestCanMove)
 					pLoopUnit = ::getUnit(pUnitNode->m_data);
 					pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
 
-					if (pLoopUnit->getOwnerINLINE() == getID())
+					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getID())
 					{
 						if (pLoopUnit->getDomainType() == ((pPlot->isWater()) ? DOMAIN_SEA : DOMAIN_LAND))
 						{
@@ -11950,7 +11967,7 @@ int CvPlayerAI::AI_sumAttackerStrength(CvPlot* pPlot, CvPlot* pAttackedPlot, int
 					pLoopUnit = ::getUnit(pUnitNode->m_data);
 					pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
 
-					if (pLoopUnit->getOwnerINLINE() == getID())
+					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getID())
 					{
 						if (!pLoopUnit->isDead())
 						{
@@ -11993,7 +12010,7 @@ int CvPlayerAI::AI_sumEnemyStrength(CvPlot* pPlot, int iRange, bool bAttack, Dom
 					pLoopUnit = ::getUnit(pUnitNode->m_data);
 					pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
 
-					if (pLoopUnit->isEnemy(getTeam(), pLoopPlot))
+					if (pLoopUnit != NULL && pLoopUnit->isEnemy(getTeam(), pLoopPlot))
 					{
 						if (!pLoopUnit->isDead())
 						{
@@ -12031,7 +12048,7 @@ int CvPlayerAI::AI_setUnitAIStatesRange(CvPlot* pPlot, int iRange, UnitAIStates 
 					pLoopUnit = ::getUnit(pUnitNode->m_data);
 					pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
 
-					if ((eValidUnitAIState == NO_UNITAI_STATE) || (pLoopUnit->AI_getUnitAIState() == eValidUnitAIState))
+					if (pLoopUnit != NULL && (eValidUnitAIState == NO_UNITAI_STATE || pLoopUnit->AI_getUnitAIState() == eValidUnitAIState))
 					{
 						if (std::find(validUnitAITypes.begin(), validUnitAITypes.end(), pLoopUnit->AI_getUnitAIType()) == validUnitAITypes.end())
 						{
@@ -13149,6 +13166,11 @@ void CvPlayerAI::AI_doEmotions()
 					pLoopUnit = ::getUnit(pUnitNode->m_data);
 					pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
 
+					if (pLoopUnit == NULL)
+					{
+						continue;
+					}
+
 					if (pLoopUnit->getTeam() == getTeam())
 					{
 						iFriendlyUnits++;
@@ -13522,7 +13544,7 @@ int CvPlayerAI::AI_getOurPlotStrength(CvPlot* pPlot, int iRange, bool bDefensive
 						pLoopUnit = ::getUnit(pUnitNode->m_data);
 						pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
 
-						if (pLoopUnit->getOwnerINLINE() == getID())
+						if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getID())
 						{
 							if ((bDefensiveBonuses && pLoopUnit->canDefend()) || pLoopUnit->canAttack())
 							{
@@ -13586,7 +13608,7 @@ int CvPlayerAI::AI_getEnemyPlotStrength(CvPlot* pPlot, int iRange, bool bDefensi
 						pLoopUnit = ::getUnit(pUnitNode->m_data);
 						pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
 
-						if (atWar(pLoopUnit->getTeam(), getTeam()))
+						if (pLoopUnit != NULL && atWar(pLoopUnit->getTeam(), getTeam()))
 						{
 							if ((bDefensiveBonuses && pLoopUnit->canDefend()) || pLoopUnit->canAttack())
 							{
@@ -15004,7 +15026,7 @@ void CvPlayerAI::AI_doEnemyUnitData()
 				pLoopUnit = ::getUnit(pUnitNode->m_data);
 				pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
 
-				if (pLoopUnit->canFight())
+				if (pLoopUnit != NULL && pLoopUnit->canFight())
 				{
 					int iUnitValue = 1;
 					if (atWar(getTeam(), pLoopUnit->getTeam()))
@@ -16215,7 +16237,7 @@ int CvPlayerAI::AI_countPromotions(PromotionTypes ePromotion, CvPlot* pPlot, int
 					pLoopUnit = ::getUnit(pUnitNode->m_data);
 					pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
 
-					if (pLoopUnit->getOwnerINLINE() == getID())
+					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getID())
 					{
 						if (pLoopUnit->isHasPromotion(ePromotion))
 						{

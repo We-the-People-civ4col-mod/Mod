@@ -5788,7 +5788,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 			pLoopUnit = ::getUnit(pUnitNode->m_data);
 			pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-			if (pLoopUnit->getBuildType() != NO_BUILD)
+			if (pLoopUnit != NULL && pLoopUnit->getBuildType() != NO_BUILD)
 			{
 				if (GC.getBuildInfo(pLoopUnit->getBuildType()).getImprovement() != NO_IMPROVEMENT)
 				{

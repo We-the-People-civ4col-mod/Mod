@@ -419,7 +419,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 					pLoopUnit = ::getUnit(pUnitNode->m_data);
 					pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-					if (pSelectionGroup->canDoCommand(COMMAND_LOAD_UNIT, pLoopUnit->getOwnerINLINE(), pLoopUnit->getID()))
+					if (pLoopUnit != NULL && pSelectionGroup->canDoCommand(COMMAND_LOAD_UNIT, pLoopUnit->getOwnerINLINE(), pLoopUnit->getID()))
 					{
 						iCount--;
 						if (iCount == 0)
@@ -480,7 +480,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 						pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
 						// WTP, fixing Generals and Admirals to lead civilists or small tiny fishing boats - START
-						if ((pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->canAttack()) || (pLoopUnit->getDomainType() == DOMAIN_SEA && pLoopUnit->baseCombatStr() >= 20))
+						if (pLoopUnit != NULL && ((pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->canAttack()) || (pLoopUnit->getDomainType() == DOMAIN_SEA && pLoopUnit->baseCombatStr() >= 20)))
 						{
 							if (pLoopUnit->canPromote((PromotionTypes) info.getData1(), info.getData2()))
 							{
@@ -2205,7 +2205,7 @@ bool CvDLLButtonPopup::launchLoadUnitPopup(CvPopup* pPopup, CvPopupInfo &info)
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-		if (pSelectionGroup->canDoCommand(COMMAND_LOAD_UNIT, pLoopUnit->getOwnerINLINE(), pLoopUnit->getID()))
+		if (pLoopUnit != NULL && pSelectionGroup->canDoCommand(COMMAND_LOAD_UNIT, pLoopUnit->getOwnerINLINE(), pLoopUnit->getID()))
 		{
 			if (!pFirstUnit)
 			{
@@ -2346,7 +2346,7 @@ bool CvDLLButtonPopup::launchLeadUnitPopup(CvPopup* pPopup, CvPopupInfo &info)
 		pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
 		// WTP, fixing Generals and Admirals to lead civilists or small tiny fishing boats - START
-		if ((pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->canAttack()) || (pLoopUnit->getDomainType() == DOMAIN_SEA && pLoopUnit->baseCombatStr() >= 20))
+		if (pLoopUnit != NULL && ((pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->canAttack()) || (pLoopUnit->getDomainType() == DOMAIN_SEA && pLoopUnit->baseCombatStr() >= 20)))
 		{
 			if (pLoopUnit->canPromote((PromotionTypes) info.getData1(), info.getData2()))
 			{
@@ -3561,7 +3561,7 @@ bool CvDLLButtonPopup::launchPromotionPopup(CvPopup* pPopup, CvPopupInfo &info)
 			{
 				CvUnit* pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
 				pSelectedUnitNode = gDLL->getInterfaceIFace()->nextSelectionListNode(pSelectedUnitNode);
-				if (pSelectedUnit->canPromote((PromotionTypes) iPromotion, info.getData2()))
+				if (pSelectedUnit != NULL && pSelectedUnit->canPromote((PromotionTypes) iPromotion, info.getData2()))
 				{
 					gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText(GC.getPromotionInfo((PromotionTypes) iPromotion).getTextKeyWide()), GC.getPromotionInfo((PromotionTypes)iPromotion).getButton(), iPromotion, WIDGET_HELP_PROMOTION, iPromotion, -1);
 					++iNumPromotions;

@@ -1743,7 +1743,7 @@ void CvPlot::updateSight(bool bIncrement)
 	for (CLLNode<IDInfo>* pUnitNode = headUnitNode(); pUnitNode != NULL; pUnitNode = nextUnitNode(pUnitNode))
 	{
 		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		if (pLoopUnit->isOnMap())
+		if (pLoopUnit != NULL && pLoopUnit->isOnMap())
 		{
 			changeAdjacentSight(pLoopUnit->getTeam(), pLoopUnit->visibilityRange(), bIncrement, pLoopUnit);
 		}
@@ -2571,7 +2571,7 @@ int CvPlot::getBuildTurnsLeft(BuildTypes eBuild, int iNowExtra, int iThenExtra) 
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = nextUnitNode(pUnitNode);
 
-		if (pLoopUnit->getBuildType() == eBuild)
+		if (pLoopUnit != NULL && pLoopUnit->getBuildType() == eBuild)
 		{
 			if (pLoopUnit->canMove())
 			{
@@ -2664,7 +2664,7 @@ CvUnit* CvPlot::getBestDefender(PlayerTypes eOwner, PlayerTypes eAttackingPlayer
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = nextUnitNode(pUnitNode);
 
-		if (pLoopUnit->isOnMap() && !pLoopUnit->isCargo())
+		if (pLoopUnit != NULL && pLoopUnit->isOnMap() && !pLoopUnit->isCargo())
 		{
 			if ((eOwner == NO_PLAYER) || (pLoopUnit->getOwnerINLINE() == eOwner))
 			{
@@ -2707,7 +2707,7 @@ bool CvPlot::hasDefender(bool bCheckCanAttack, PlayerTypes eOwner, PlayerTypes e
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = nextUnitNode(pUnitNode);
 
-		if (pLoopUnit->isOnMap() && !pLoopUnit->isCargo())
+		if (pLoopUnit != NULL && pLoopUnit->isOnMap() && !pLoopUnit->isCargo())
 		{
 			if ((eOwner == NO_PLAYER) || (pLoopUnit->getOwnerINLINE() == eOwner))
 			{
@@ -2750,6 +2750,11 @@ int CvPlot::AI_sumStrength(PlayerTypes eOwner, PlayerTypes eAttackingPlayer, Dom
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = nextUnitNode(pUnitNode);
 
+		if (pLoopUnit == NULL)
+		{
+			continue;
+		}
+
 		if ((eOwner == NO_PLAYER) || (pLoopUnit->getOwnerINLINE() == eOwner))
 		{
 			if ((eAttackingPlayer == NO_PLAYER) || !(pLoopUnit->isInvisible(GET_PLAYER(eAttackingPlayer).getTeam(), false)))
@@ -2789,7 +2794,7 @@ CvUnit* CvPlot::getSelectedUnit() const
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = nextUnitNode(pUnitNode);
 
-		if (pLoopUnit->IsSelected())
+		if (pLoopUnit != NULL && pLoopUnit->IsSelected())
 		{
 			return pLoopUnit;
 		}
@@ -2808,7 +2813,7 @@ int CvPlot::getUnitPower(PlayerTypes eOwner) const
 		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = nextUnitNode(pUnitNode);
 
-		if ((eOwner == NO_PLAYER) || (pLoopUnit->getOwnerINLINE() == eOwner))
+		if (pLoopUnit != NULL && (eOwner == NO_PLAYER || pLoopUnit->getOwnerINLINE() == eOwner))
 		{
 			iCount += pLoopUnit->getPower();
 		}
@@ -8647,7 +8652,7 @@ void CvPlot::addUnit(CvUnit* pUnit, bool bUpdate)
 	{
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 
-		if (!isBeforeUnitCycle(pLoopUnit, pUnit))
+		if (pLoopUnit != NULL && !isBeforeUnitCycle(pLoopUnit, pUnit))
 		{
 			break;
 		}
@@ -9458,7 +9463,7 @@ bool CvPlot::canTrigger(EventTriggerTypes eTrigger, PlayerTypes ePlayer) const
 			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 			pUnitNode = nextUnitNode(pUnitNode);
 
-			if (pLoopUnit->getOwnerINLINE() == ePlayer)
+			if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == ePlayer)
 			{
 				if (-1 != pLoopUnit->getTriggerValue(eTrigger, this, false))
 				{
@@ -9884,7 +9889,7 @@ CvUnit* CvPlot::getUnitLayerUnit(UnitLayerOptionTypes eOption, CvWStringBuffer& 
 			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 			pUnitNode = nextUnitNode(pUnitNode);
 
-			if (!pLoopUnit->isInvisible(eActiveTeam, GC.getGame().isDebugMode()))
+			if (pLoopUnit != NULL && !pLoopUnit->isInvisible(eActiveTeam, GC.getGame().isDebugMode()))
 			{
 
 				// now, is this unit of interest?
@@ -10000,7 +10005,7 @@ CvUnit* CvPlot::getFortDefender()
 		const UnitCombatTypes eGunType = (UnitCombatTypes)GC.getInfoTypeForString("UNITCOMBAT_GUN");
 
 		// Erik: Non-invisible units with firearms or defensive artillery may defend the fort.
-		if (!pLoopUnit->alwaysInvisible())
+		if (pLoopUnit != NULL && !pLoopUnit->alwaysInvisible())
 		{
 			if (pLoopUnit->getUnitCombatType() == eSiegeType && !pLoopUnit->noDefensiveBonus() || pLoopUnit->getUnitCombatType() == eGunType)
 			{
@@ -10083,7 +10088,7 @@ void CvPlot::doFort()
 				pLoopUnit2 = ::getUnit(pUnitNode2->m_data);
 				pUnitNode2 = pAdjacentPlot->nextUnitNode(pUnitNode2);
 
-				if (pDefenseUnit->getTeam() != pLoopUnit2->getTeam() && (GET_TEAM(pDefenseUnit->getTeam()).isAtWar(pLoopUnit2->getTeam()) || pLoopUnit2->getUnitInfo().isHiddenNationality()) && !pLoopUnit2->isCargo())
+				if (pLoopUnit2 != NULL && pDefenseUnit->getTeam() != pLoopUnit2->getTeam() && (GET_TEAM(pDefenseUnit->getTeam()).isAtWar(pLoopUnit2->getTeam()) || pLoopUnit2->getUnitInfo().isHiddenNationality()) && !pLoopUnit2->isCargo())
 				{
 					int defenseRandNum = GC.getGameINLINE().getSorenRandNum(100, "Fort Defense Attack");
 					int iDamage = 0;
@@ -10273,7 +10278,7 @@ void CvPlot::doMonastery()
 				pUnitNode2 = pAdjacentPlot->nextUnitNode(pUnitNode2);
 
 				// Native Unit and we are not at war
-				if (pLoopUnit2->isNative() && !GET_TEAM(missionaryUnit->getTeam()).isAtWar(pLoopUnit2->getTeam()))
+				if (pLoopUnit2 != NULL && pLoopUnit2->isNative() && !GET_TEAM(missionaryUnit->getTeam()).isAtWar(pLoopUnit2->getTeam()))
 				{
 					int iMonasteryFeatureChance= GC.getGameINLINE().getSorenRandNum(100, "Monastery Feature");
 
@@ -10526,7 +10531,7 @@ bool CvPlot::isPlayerUnitOnAdjacentPlot(int /*PlayerTypes*/ iPlayer, int /*UnitC
 					pUnitNode = pAdjacentPlot->nextUnitNode(pUnitNode);
 
 					// check for owner and UnitType
-					if (pLoopUnit->getOwnerINLINE() == eOwnPlayerType && pLoopUnit->getUnitType() == eUnit)
+					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == eOwnPlayerType && pLoopUnit->getUnitType() == eUnit)
 					{
 						// we found a unit of our player;
 						return true;
@@ -10565,7 +10570,7 @@ bool CvPlot::isBarbarianUnitOnAdjacentPlot(int /*UnitClassTypes*/ iIndex) const
 					pUnitNode = pAdjacentPlot->nextUnitNode(pUnitNode);
 
 					// check for owner and UnitType
-					if (pLoopUnit->getOwnerINLINE() == eBarbarianPlayerType && pLoopUnit->getUnitType() == eUnit)
+					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == eBarbarianPlayerType && pLoopUnit->getUnitType() == eUnit)
 					{
 						// we found a unit of our player;
 						return true;

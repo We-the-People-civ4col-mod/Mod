@@ -966,14 +966,14 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 				pUnitNode1 != NULL; pUnitNode1 = pSelectionGroup->nextUnitNode(pUnitNode1))
 			{
 				CvUnit const* pLoopUnit1 = ::getUnit(pUnitNode1->m_data);
-				if (pLoopUnit1->getCargo() > 0 && pLoopUnit1->domainCargo() == DOMAIN_LAND)
+				if (pLoopUnit1 != NULL && pLoopUnit1->getCargo() > 0 && pLoopUnit1->domainCargo() == DOMAIN_LAND)
 				{
 					bool bValid = false;
 					for (CLLNode<IDInfo>* pUnitNode2 = pLoopUnit1->plot()->headUnitNode();
 						pUnitNode2 != NULL; pUnitNode2 = pLoopUnit1->plot()->nextUnitNode(pUnitNode2))
 					{
 						CvUnit const* pLoopUnit2 = ::getUnit(pUnitNode2->m_data);
-						if (pLoopUnit2->getTransportUnit() == pLoopUnit1)
+						if (pLoopUnit2 != NULL && pLoopUnit2->getTransportUnit() == pLoopUnit1)
 						{
 							if (pLoopUnit2->isGroupHead())
 							{
@@ -1309,6 +1309,7 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 		for (CLLNode<IDInfo> const* pUnitNode = pSelectionGroup->headUnitNode();
 			pUnitNode != NULL; pUnitNode = pSelectionGroup->nextUnitNode(pUnitNode))
 		{
+			// TODO: getUnit can return NULL in rare cases
 			CvUnit const* pLoopUnit = ::getUnit(pUnitNode->m_data);
 			int iMoveCost = kToPlot.movementCost(pLoopUnit, &kFromPlot,
 				false); // advc.001i
@@ -1507,7 +1508,7 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 			pUnitNode != NULL; pUnitNode = pSelectionGroup->nextUnitNode(pUnitNode))
 		{
 			CvUnit const* pLoopUnit = ::getUnit(pUnitNode->m_data);
-			if (!pLoopUnit->canFight())
+			if (pLoopUnit == NULL || !pLoopUnit->canFight())
 				continue; // advc
 			iDefenceCount++;
 			if (pLoopUnit->canDefend(&kToPlot))
@@ -1836,6 +1837,7 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 		#endif
 
 		CLLNode<IDInfo> const* pUnitNode = pSelectionGroup->headUnitNode();
+		// TODO: getUnit can return NULL in rare cases
 		int iMoveCost = kToPlot.movementCost(::getUnit(pUnitNode->m_data), &kFromPlot/*,
 			false*/); // advc.001i
 		bool bUniformCost = true;
@@ -1844,10 +1846,13 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 			bUniformCost && pUnitNode != NULL; pUnitNode = pSelectionGroup->nextUnitNode(pUnitNode))
 		{
 			CvUnit const* pLoopUnit = ::getUnit(pUnitNode->m_data);
-			int iLoopCost = kToPlot.movementCost(pLoopUnit, &kFromPlot/*,
-				false*/); // advc.001i
-			if (iLoopCost != iMoveCost)
-				bUniformCost = false;
+			if (pLoopUnit != NULL)
+			{
+				int iLoopCost = kToPlot.movementCost(pLoopUnit, &kFromPlot/*,
+					false*/); // advc.001i
+				if (iLoopCost != iMoveCost)
+					bUniformCost = false;
+			}
 		}
 
 		if (bUniformCost)
@@ -1879,6 +1884,12 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 			for (pUnitNode = pSelectionGroup->headUnitNode(); pUnitNode != NULL; pUnitNode = pSelectionGroup->nextUnitNode(pUnitNode))
 			{
 				CvUnit const* pLoopUnit = ::getUnit(pUnitNode->m_data);
+
+				if (pLoopUnit == NULL)
+				{
+					continue;
+				}
+
 				int iUnitMoves = bMaxMoves ? pLoopUnit->maxMoves() : pLoopUnit->movesLeft();
 				for (size_t i = plot_list.size() - 1; i > 0; i--)
 				{
