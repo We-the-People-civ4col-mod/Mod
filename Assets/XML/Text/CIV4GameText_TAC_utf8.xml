@@ -1369,56 +1369,56 @@
     <TEXT>
         <Tag>TXT_KEY_MISC_STUDENT_ALMOST_GRADUATED</Tag>
         <English>%s2_city : A striving citizen will finish his education at the %s3_building in %d1_Num [NUM1:turn:turns].</English>
-        <French>%s2_city : Un étudiant va bientôt achever sa formation dans l'%s3_building : %d1_Num [NUM1:turn:turns].</French>
+        <French>%s2_city : Un étudiant va bientôt achever sa formation dans l'%s3_building : %d1_Num [NUM1:tour:tours].</French>
         <German>%s2_city : In %d1 [NUM1:Runde:Runden] wird ein strebsamer Bürger an der %s3_building seine Ausbildung beenden.</German>
         <Russian>[COLOR_SELECTED_TEXT]%s2_city :[COLOR_REVERT] Способный горожанин закончит обучение в [COLOR_FONT_CREAM]%s3_building[COLOR_REVERT] через %d1_Num [NUM1:ход:хода].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_EXPERT</Tag>
         <English>A free colonist who has worked long in his profession has now gained enough knowledge to be considered [COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT].</English>
-        <French>[COLOR_POSITIVE_TEXT]Un colon a été promu %s1_expert.[COLOR_REVERT]</French>
+        <French>Un colon libre avec de l'expérience dans sa profession a acquis assez de compétences pour être tenu pour [COLOR_UNIT_TEXT]%s1_expert.[COLOR_REVERT].</French>
         <German>Ein Freier Kolonist, der lange in seinem Beruf gearbeitet hat, hat nun genug Wissen erlangt, um als [COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT] zu gelten.</German>
         <Russian>Свободный колонист, который долгое время работал по своей профессии, теперь получил достаточно знаний, чтобы считаться [COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_EXPERT_IN_CITY</Tag>
         <English>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]A free colonist who has worked long in his profession has now gained enough knowledge to be considered [COLOR_UNIT_TEXT]%s2_expert[COLOR_REVERT].</English>
-        <French>[COLOR_POSITIVE_TEXT]Un colon a été promu expert %s2_expert.[COLOR_REVERT]</French>
+        <French>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT] Un colon libre avec de l'expérience dans sa profession a acquis assez de compétences pour être tenu pour [COLOR_UNIT_TEXT]%s1_expert.[COLOR_REVERT].</French>
         <German>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Ein Freier Kolonist, der lange in seinem Beruf gearbeitet hat, hat nun genug Wissen erlangt, um als [COLOR_UNIT_TEXT]%s2_expert[COLOR_REVERT] zu gelten.</German>
         <Russian>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Свободный колонист, долго трудившийся по своей профессии, теперь получил достаточно знаний, чтобы стать [COLOR_UNIT_TEXT]%s2_expert[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_FREE</Tag>
         <English>An unfree colonist has earned his [COLOR_POSITIVE_TEXT]freedom[COLOR_REVERT] through hard work.</English>
-        <French>[COLOR_POSITIVE_TEXT]Un colon a gagné sa liberté.[COLOR_REVERT]</French>
+        <French>Un colon sous servitude a gagné sa [COLOR_POSITIVE_TEXT]liberté[COLOR_REVERT] en travaillant dur.</French>
         <German>Ein Unfreier hat sich durch harte Arbeit seine [COLOR_POSITIVE_TEXT]Freiheit[COLOR_REVERT] verdient.</German>
         <Russian>Несвободный колонист тяжелым трудом заработал себе [COLOR_POSITIVE_TEXT]свободу[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_FREE_IN_CITY</Tag>
         <English>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]An unfree colonist has earned his freedom through hard work.</English>
-        <French>[COLOR_POSITIVE_TEXT]Un colon a gagné sa liberté.[COLOR_REVERT]</French>
+        <French>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT] Un colon sous servitude a gagné sa liberté en travaiilant dur.</French>
         <German>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Ein Unfreier hat sich durch harte Arbeit seine Freiheit verdient.</German>
         <Russian>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Несвободный колонист добился освобождения своим упорным трудом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_ESCAPE</Tag>
         <English>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]An unfree colonist has disappeared. It is suspected that he has fled into the wilderness.</English>
-        <French>[COLOR_WARNING_TEXT]Un captif s'est enfui de %s1_city.[COLOR_REVERT]</French>
+        <French>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT] Un captif a disparu. On soupçonne qu'il a fui dans la nature.</French>
         <German>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Ein Unfreier ist verschwunden. Man vermutet, dass er in die Wildnis geflohen ist.</German>
         <Russian>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Несвободный колонист сбежал из колонии! Срочно собрать поисковую партию, он не мог далеко уйти!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_REVOLT</Tag>
         <English>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]An unfree colonist has revolted. He is believed to have fled into the wilderness.</English>
-        <French>[COLOR_WARNING_TEXT]Un captif s'est revolté et enfui de %s1_city.[COLOR_REVERT]</French>
+        <French>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT] Un captif s'est soulevé. On soupçonne qu'il a fui dans la nature.</French>
         <German>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Ein Unfreier hat revoltiert. Man vermutet, dass er in die Wildnis geflohen ist.</German>
         <Russian>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Несвободный колонист взбунтовался, где-то раздобыл оружие и сбежал из колонии! Все, кто свободен от работ, к оружию! Убьем негодяя!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_VETERAN_BY_MILITARY_SERVICE</Tag>
         <English>[COLOR_POSITIVE_TEXT]A free colonist has gained enough experience through combat to become a [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT]</English>
-        <French>[COLOR_POSITIVE_TEXT]Un colon libre a gagné suffisamment d'expérience pour devenir %s1_expert[COLOR_REVERT]</French>
+        <French>[COLOR_POSITIVE_TEXT]Un colon libre a gagné suffisamment d'expérience pour devenir [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT]</French>
         <German>[COLOR_POSITIVE_TEXT]Ein Freier Kolonist hat im Kampf genug Erfahrung gesammelt, um jetzt als [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT][COLOR_POSITIVE_TEXT] zu gelten.[COLOR_REVERT]</German>
         <Russian>[COLOR_POSITIVE_TEXT]Свободный колонист набрал достаточно опыта в боях, чтобы стать [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT]</Russian>
     </TEXT>
@@ -1450,7 +1450,7 @@
     <TEXT>
         <Tag>TXT_KEY_COMPETITIOR_INDEPENDENCE_WAR</Tag>
         <English>The community of the world's peoples is holding its breath: The [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] colonies have risen up against their king. They no longer want to bow to the heel of a tyrant.</English>
-        <French>Les colonies [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] ont déclaré la guerre contre leur propre roi !! Ils se battront pour leurs droits jusqu'à ce qu'ils gagnent leur liberté.</French>
+        <French>La communauté des peuples de la terre retient son souffle :  Les colonies [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] se ont soulevées contre leur propre roi. Ils ne veulent plus s'incliner et être sous le joug d'un tyran.</French>
         <German>Die Gemeinschaft der Völker dieser Welt hält den Atem an: Die [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Kolonien haben sich gegen ihren König erhoben. Sie wollen sich nicht länger der Knute eines Tyrannen beugen.</German>
         <Russian>Сообщество народов мира затаило дыхание: [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] колонии восстали против своего короля. Они больше не хотят жить под пятой этого тирана.</Russian>
     </TEXT>
@@ -1485,14 +1485,14 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_ESCAPE</Tag>
         <English>[ICON_BULLET]Can flee to avoid his fate</English>
-        <French>[ICON_BULLET]Peut s'enfuir</French>
+        <French>[ICON_BULLET]Peut s'enfuir pour éviter son sort</French>
         <German>[ICON_BULLET]Kann fliehen, um sich seinem Schicksal zu entziehen</German>
         <Russian>[ICON_BULLET]Может совершить побег, чтобы избежать своей участи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_REVOLT</Tag>
         <English>[ICON_BULLET]Can revolt and become a threat</English>
-        <French>[ICON_BULLET]Peut revolter</French>
+        <French>[ICON_BULLET]Peut se soulever et devenir une menace</French>
         <German>[ICON_BULLET]Kann revoltieren und zur Bedrohung werden</German>
         <Russian>[ICON_BULLET]Может взбунтоваться и стать угрозой для колоний</Russian>
     </TEXT>
@@ -1506,28 +1506,28 @@
     <TEXT>
         <Tag>TXT_KEY_PROF_LBD2</Tag>
         <English>[ICON_BULLET]A free colonist can become an expert in the profession after a long time</English>
-        <French>[ICON_BULLET]Un colon libre exerçant cette profession peut devenir un expert au bout d'un certain temps</French>
+        <French>[ICON_BULLET]Un colon libre exerçant cette profession peut devenir un expert au bout d'un long moment</French>
         <German>[ICON_BULLET]Ein Freier Kolonist kann nach langer Zeit zum Experten in diesem Beruf werden</German>
         <Russian>[ICON_BULLET]Свободный колонист может стать экспертом в этой профессии спустя долгое время.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROF_LBD3</Tag>
         <English>[ICON_BULLET]A free colonist can become an expert in the profession after a very long time</English>
-        <French>[ICON_BULLET]Un colon libre exerçant cette profession peut devenir un expert au bout d'une très longue période</French>
+        <French>[ICON_BULLET]Un colon libre exerçant cette profession peut devenir un expert au bout d'un très long moment</French>
         <German>[ICON_BULLET]Ein Freier Kolonist kann nach sehr langer Zeit zum Experten in diesem Beruf werden</German>
         <Russian>[ICON_BULLET]Свободный колонист может стать экспертом в своей профессии спустя очень долгое время</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAPTURED_AFTER_FIGHT</Tag>
         <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]We have been able to overwhelm and capture an enemy [COLOR_WARNING_TEXT]%s1_unit[COLOR_REVERT]!</English>
-        <French>L'unité ennemie %s1_unit a été capturée après la bataille.</French>
+        <French>[COLOR_POSITIVE_TEXT]Bonne nouvelle, Sire ! [COLOR_REVERT]Nous avons été capable de subjuguer et de capturer l'unité ennemie [COLOR_WARNING_TEXT]%s1_unit[COLOR_REVERT]!.</French>
         <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Wir haben einen feindlichen [COLOR_WARNING_TEXT]%s1_unit[COLOR_REVERT] überwältigen und gefangennehmen können!</German>
         <Russian>[COLOR_POSITIVE_TEXT]Хорошие новости, Милорд! [COLOR_REVERT]Нам удалось сокрушить и захватить вражеский [COLOR_WARNING_TEXT]%s1_unit[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_YOU_UNIT_CAPTURED_ENEMY_SHIP</Tag>
         <English>[COLOR_POSITIVE_TEXT]Victory, Milord! [COLOR_REVERT]We were able to capture an enemy [COLOR_WARNING_TEXT]ship[COLOR_REVERT]!</English>
-        <French>Une unité ennemie a été capturé après le combat.</French>
+        <French>[COLOR_POSITIVE_TEXT]Victoire, Sire ! [COLOR_REVERT]Nous avons été capable de capturer le [COLOR_WARNING_TEXT]navire [COLOR_REVERT]ennemi !</French>
         <German>[COLOR_POSITIVE_TEXT]Sieg, Milord! [COLOR_REVERT]Wir konnten ein feindliches [COLOR_WARNING_TEXT]Schiff[COLOR_REVERT] kapern !</German>
         <Russian>[COLOR_POSITIVE_TEXT]Победа, Милорд! [COLOR_REVERT]К тому же, нам удалось захватить вражеский [COLOR_WARNING_TEXT]корабль[COLOR_REVERT]!</Russian>
     </TEXT>
@@ -1543,7 +1543,7 @@
     <TEXT>
         <Tag>TXT_KEY_MISC_ENEMY_UNIT_ESCAPED</Tag>
         <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]Your [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] has survived combat with a [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] by escaping in the sunset. The ship is now in the port of [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] under repair.</English>
-        <French>Votre %s1_UnitName a survécu au combat contre l'unité %s2_EnUName et se trouve actuellement à %s3_city en réparation.</French>
+        <French>[COLOR_POSITIVE_TEXT]Bonne nouvelle, Sire! [COLOR_REVERT] Votre %s1_UnitName a survécu au combat contre l'unité %s2_EnUName et se trouve actuellement à %s3_city en réparation.</French>
         <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Trotz drohender Niederlage im Kampf gegen [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] gelang es Eurem Schiff [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] in der aufkommenden Dunkelheit zu entkommen. Das Schiff wird nun in der Werft von [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] repariert.</German>
         <Italian>La tua unità %s1_UnitName è sopravvissuta al combattimento con l'unità %s2_EnUName e ora si sta riprendendo a %s3_city</Italian>
         <Spanish>[NUM1:Vuestro:Vuestra:Vuestros:Vuestras]%s1_UnitName [NUM1:ha:ha:han:han] sobrevivido al combate con [NUM1:un:una:unos:unas] %s2_EnUName y se [NUM1:encuentra:encuentra:encuentran:encuentran] reparándose en %s3_city</Spanish>
@@ -1559,42 +1559,42 @@
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_NATIVE_MERC</Tag>
         <English>Milord, you have acquired [COLOR_UNIT_TEXT]Native Mercenaries[COLOR_REVERT].</English>
-        <French>Vous avez acquis une unité de mercenaires indigènes.</French>
+        <French>Vous avez acquis une unité de [COLOR_UNIT_TEXT]mercenaires indigènes[COLOR_REVERT].</French>
         <German>Milord, unsere [COLOR_UNIT_TEXT]Indianischen Söldner[COLOR_REVERT] stehen bereit.</German>
         <Russian>Милорд, мы приобрели [COLOR_UNIT_TEXT]Индейских наемников[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_REV_SUPPORT_ARRIVED</Tag>
         <English>Milord, the reinforcement troops sent by the [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT] have arrived.</English>
-        <French>Les renforts du %s1_king sont arrivés.</French>
+        <French>Sire, les renforts du [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT] sont arrivés.</French>
         <German>Milord, die Unterstützungstruppen des [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT] sind eingetroffen.</German>
         <Russian>Милорд, подкрепление из войск, отправленное [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT], достигло колоний.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WAR_KING_DECREASED_MAX_TAX</Tag>
         <English>Pleased with our obedience, His Majesty has reduced the maximum tax rate by %d1_decrease.</English>
-        <French>Le Roi est satisfait et accepte de réduire notre taux maximal d'imposition.</French>
+        <French>Le Roi est satisfait et accepte de réduire notre taux maximal d'imposition de %d1_decrease.</French>
         <German>Erfreut über unseren Gehorsam hat Seine Majestät den maximalen Steuersatz um %d1_decrease gesenkt.</German>
         <Russian>Довольный нашей покорностью, Его Величество милостливо снизил максимальную ставку налога на %d1_decrease.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS</Tag>
         <English>Milord, the reinforcement troops sent by His Majesty have arrived. We have heard rumours that your enemy's king has also sent reinforcements as well.</English>
-        <French>Les renforts de notre roi sont arrivés. Les renforts du otre roi sont arrivés aussi.</French>
+        <French>Sire, les renforts de notre roi sont arrivés. La rumeur court que ceux de l'autre roi a également envoyés des renforts. aussi.</French>
         <German>Milord, die von Seiner Majestät entsandten Unterstützungstruppen sind eingetroffen. Wir haben Gerüchte gehört, dass der Gegner Seiner Majestät auch Unterstützungstruppen in die Neue Welt entsandt hat.</German>
         <Russian>Милорд, войска, отправленные Его Величеством нам на подмогу, прибыли. До нас дошли слухи, что король вашего врага тоже прислал подкрепление.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WAR_KING_INCCREASED_MAX_TAX</Tag>
         <English>Angered by our disobedience, His Majesty has increased our maximum tax rate by %d1_increase.[NEWLINE]However, our relationship with [COLOR_HIGHLIGHT_TEXT]%s2_nation[COLOR_REVERT] has improved.</English>
-        <French>Irrité par notre désobéissance, le roi a augmenté notre taux maximal d'imposition de %d1_increase.[NEWLINE]Notre relation avec [COLOR_HIGHLIGHT_TEXT]%s2_nation[COLOR_REVERT] mais s'est améliorée.</French>
+        <French>Irrité par notre désobéissance, le roi a augmenté notre taux maximal d'imposition de %d1_increase.[NEWLINE]Cependant, notre relation avec [COLOR_HIGHLIGHT_TEXT]%s2_nation[COLOR_REVERT] s'est améliorée.</French>
         <German>Verärgert über unseren Ungehorsam hat Seine Majestät unseren maximalen Steuersatz um %d1_increase erhöht.[NEWLINE]Unsere Beziehung zu [COLOR_HIGHLIGHT_TEXT]%s2_nation[COLOR_REVERT] hat sich jedoch verbessert.</German>
         <Russian>Разгневанный вашим неповиновением, Его Величество повысил ставку налога на %d1_increase.[NEWLINE]Однако, наши отношения с [COLOR_HIGHLIGHT_TEXT]%s2_nation[COLOR_REVERT] улучшились.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAKE_PEACE_AFTER_ACQUIRE_CITY</Tag>
         <English>Convinced by our compensation of our good intentions, [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] has buried the hatchet again.</English>
-        <French>Convaincu par notre tribu, [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] accepte la paix.</French>
+        <French>Convaincu par notre tribu et nos bonnes intentions, [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] accepte la paix.</French>
         <German>Durch unsere Entschädigung von unseren guten Absichten überzeugt, hat [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] das Kriegsbeil wieder begraben.</German>
         <Russian>Убедившись в наших добрых намерениях, [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] закопал топор войны.</Russian>
     </TEXT>
@@ -1908,14 +1908,14 @@
     <TEXT>
         <Tag>TXT_KEY_EU_SAIL_EAST</Tag>
         <English>[COLOR_REVERT]Crossing the Atlantic</English>
-        <French>Atlantique</French>
+        <French>[COLOR_REVERT]Voguant sur l'Atlantique</French>
         <German>[COLOR_REVERT]Überquert den Atlantik</German>
         <Russian>[COLOR_REVERT]Пересекает Атлантику</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_SAIL_WEST</Tag>
         <English>[COLOR_REVERT]Rounding Cape Horn to the Pacific</English>
-        <French>Pacifique</French>
+        <French>[COLOR_REVERT]Double le Cap Horn vers le Pacifique</French>
         <German>[COLOR_REVERT]Umrundet Kap Hoorn in Richtung Pazifik</German>
         <Russian>[COLOR_REVERT]Огибает мыс Доброй надежды в сторону Атлантики</Russian>
     </TEXT>
@@ -1954,14 +1954,14 @@
     <TEXT>
         <Tag>TXT_KEY_EU_SAIL_EAST_MESSAGE</Tag>
         <English>New World - [COLOR_HIGHLIGHT_TEXT]crossing the Atlantic[COLOR_REVERT]</English>
-        <French>Nouveau monde - [COLOR_HIGHLIGHT_TEXT]Atlantique[COLOR_REVERT]</French>
+        <French>Nouveau monde - [COLOR_HIGHLIGHT_TEXT]voguant sur l'Atlantique[COLOR_REVERT]</French>
         <German>Neue Welt - [COLOR_HIGHLIGHT_TEXT]überquert den Atlantik[COLOR_REVERT]</German>
         <Russian>Новый мир - [COLOR_HIGHLIGHT_TEXT]пересекает Атлантику[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_SAIL_WEST_MESSAGE</Tag>
         <English>New World - [COLOR_HIGHLIGHT_TEXT]rounding Cape Horn[COLOR_REVERT]</English>
-        <French>Nouveau monde - [COLOR_HIGHLIGHT_TEXT]Pacifique[COLOR_REVERT]</French>
+        <French>Nouveau monde - [COLOR_HIGHLIGHT_TEXT]voguant sur le Pacifique[COLOR_REVERT]</French>
         <German>Neue Welt - [COLOR_HIGHLIGHT_TEXT]umrundet Kap Hoorn[COLOR_REVERT]</German>
         <Russian>Новый мир - [COLOR_HIGHLIGHT_TEXT]огибает мыс Доброй надежды[COLOR_REVERT]</Russian>
     </TEXT>
@@ -2065,7 +2065,7 @@
     <TEXT>
         <Tag>TXT_KEY_EU_SELL_MESSAGE</Tag>
         <English>That floating coffin named [COLOR_UNIT_TEXT]%s1[COLOR_REVERT]? Well, I'll give you %d2[ICON_GOLD].</English>
-        <French>Ce raffiot que vous appelez [COLOR_UNIT_TEXT]%s1[COLOR_REVERT] ? Et bien ... je vous en donne %d2[ICON_GOLD].</French>
+        <French>Ce raffiot que vous appelez [COLOR_UNIT_TEXT]%s1[COLOR_REVERT] ? Et bien, je vous en donne %d2[ICON_GOLD].</French>
         <German>Diesen morschen Kahn namens [COLOR_UNIT_TEXT]%s1[COLOR_REVERT]? Nun, %d2[ICON_GOLD] seien Euch gewährt.</German>
         <Russian>[COLOR_UNIT_TEXT]%s1[COLOR_REVERT], этот плавающий гроб? Хмм, что ж, я дам вам за него %d2[ICON_GOLD]</Russian>
     </TEXT>

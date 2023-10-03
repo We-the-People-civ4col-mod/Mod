@@ -9892,7 +9892,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_UNIT_EXPERIENCE</Tag>
         <English>[ICON_BULLET]The [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] receives %d1 XP</English>
-        <French>[ICON_BULLET][NUM2:Le:La:L'] [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] reçoit %d1 EXP</French>
+        <French>[ICON_BULLET]Le [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] reçoit %d1 EXP</French>
         <German>[ICON_BULLET]Die Einheit [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] erhält %d1 EP</German>
         <Italian>[ICON_BULLET]L'unità [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] riceve %d1 PE</Italian>
         <Spanish>[ICON_BULLET][NUM2:El:La:Los:Las] [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] [NUM2:recibe:recibe:reciben:reciben] %d1 PX</Spanish>
