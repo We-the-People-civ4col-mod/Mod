@@ -36,7 +36,7 @@ class CvPediaProfession:
 				infoList[j] = (gc.getProfessionInfo(i).getDescription(), i)
 				j += 1
 
-		infoList.sort()
+		infoList.sort(key = CvUtil.sortkey)
 		return infoList
 
 	# Screen construction function

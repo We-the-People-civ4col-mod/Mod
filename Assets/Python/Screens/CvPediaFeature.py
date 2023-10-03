@@ -198,7 +198,7 @@ class CvPediaFeature:
 		listSorted=[(0,0)]*gc.getNumFeatureInfos()
 		for j in range(gc.getNumFeatureInfos()):
 			listSorted[j] = (gc.getFeatureInfo(j).getDescription(), j)
-		listSorted.sort()
+		listSorted.sort(key = CvUtil.sortkey)
 
 		iSelected = 0
 		i = 0

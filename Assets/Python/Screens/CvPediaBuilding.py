@@ -252,7 +252,7 @@ class CvPediaBuilding:
 		for iBuilding in listBuildings:
 			listSorted[iI] = (gc.getBuildingInfo(iBuilding).getDescription(), iBuilding)
 			iI += 1
-		listSorted.sort()
+		listSorted.sort(key = CvUtil.sortkey)
 		return listSorted
 
 

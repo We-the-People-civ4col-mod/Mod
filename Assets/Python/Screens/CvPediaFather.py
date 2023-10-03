@@ -197,7 +197,7 @@ class CvPediaFather( CvScreen.CvScreen ):
 				infoList[j] = (gc.getFatherInfo(i).getDescription(), i)
 				j += 1
 
-		return infoList.sort()
+		return infoList.sort(key = CvUtil.sortkey)
 
 	# Will handle the input for this screen...
 	def handleInput (self, inputClass):

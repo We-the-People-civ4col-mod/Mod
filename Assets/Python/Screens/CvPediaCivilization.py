@@ -186,7 +186,7 @@ class CvPediaCivilization:
 		listSorted=[(0,0)]*gc.getNumCivilizationInfos()
 		for j in range(gc.getNumCivilizationInfos()):
 			listSorted[j] = (gc.getCivilizationInfo(j).getDescription(), j)
-		listSorted.sort()
+		listSorted.sort(key = CvUtil.sortkey)
 
 		iSelected = 0
 		i = 0

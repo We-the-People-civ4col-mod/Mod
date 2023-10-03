@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_LANGUAGE_NAME_IN_ENGLISH</Tag><!-- DO NOT TRANSLATE THIS ONE, as it is for language-dependant code -->
+        <English>English</English>
+        <French>French</French>
+        <German>German</German>
+        <Italian>Italian</Italian>
+        <Spanish>Spanish</Spanish>
+        <Russian>Russian</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACCENT_SOUP</Tag><!--  Keep this resource in English only , see CvUtils.py sortkey method -->
+        <English>ÁÀÄáâäÉÊÈËéèêëÍÎÌíîìÑñÖÔöôÜÛÙúüûù</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACCENT_SOUP_BASE_LOWERCASE_LETTER</Tag><!-- Keep this resource in English only, see CvUtils.py sortkey method  -->
+        <English>aaaaaaeeeeeeeeiiiiiinnoooouuuuuuu</English>
+    </TEXT>
+</Civ4GameText>

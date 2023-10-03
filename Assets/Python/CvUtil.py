@@ -361,6 +361,28 @@ def addIconToMap(infoChar, desc):
 	if (uc>=0):
 		FontIconMap[desc] = u"%c" %(uc,)
 
+
+def sortkey(word_and_number):
+
+	language = localText.getText("TXT_KEY_LANGUAGE_NAME_IN_ENGLISH", ())
+	word,_ = word_and_number
+	if language not in ["English", "German", "French", "Spanish", "Italian"]:
+		return word
+
+	# accents     ="ÁÀÄáâäÉÊÈËéèêëÍÎÌíîìÑñÖÔöôÜÛÙúüûù" in cp1252
+	accents =localText.getText("TXT_KEY_ACCENT_SOUP", ())
+	replacement = localText.getText("TXT_KEY_ACCENT_SOUP_BASE_LOWERCASE_LETTER", ())
+
+	newkey = ""
+	for letter in word:
+		if letter in accents:
+			newkey = newkey + replacement[accents.index(letter)]
+			continue
+		newkey = newkey + letter
+
+	return newkey.lower()
+
+
 OtherFontIcons = {}
 if not bIsVanillaDLL:
 	# placing it inside an if statement fixes a conflict with the "DLL not loaded" error message.

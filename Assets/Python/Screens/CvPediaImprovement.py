@@ -173,7 +173,7 @@ class CvPediaImprovement:
 		rowListName=[(0,0)] * gc.getNumImprovementInfos()
 		for j in range(gc.getNumImprovementInfos()):
 			rowListName[j] = (gc.getImprovementInfo(j).getDescription(), j)
-		rowListName.sort()
+		rowListName.sort(key = CvUtil.sortkey)
 
 		iSelected = 0
 		i = 0
