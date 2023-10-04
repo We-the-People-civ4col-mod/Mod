@@ -6,34 +6,6 @@
 <!-- Game Text - New -->
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
-        <Tag>TXT_KEY_UNIT_CANNONSMITH</Tag>
-        <English>
-            <Text>Master Cannonsmith:Master Cannonsmiths</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </English>
-        <French>
-            <Text>Maître canonnier:Maîtres canonniers</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Geschützmeister:Geschützmeister</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </German>
-        <Italian>
-            <Text>Master Cannonsmith:Master Cannonsmiths</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Master Cannonsmith:Master Cannonsmiths</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_PEDIA</Tag>
         <English>[TAB]Butchery is traditional work. Slaughterhouses use butchers to slaughter animals, performing steps repeatedly as specialists on an organized disassembly line. These include stunning (rendering the animal incapacitated), exsanguination (severing the carotid or brachial arteries to facilitate blood removal), skinning (removing the hide) or scalding and dehairing (pork), evisceration (removing the viscera) and splitting (dividing the carcass in half longitudinally).</English>
         <French>[TAB]Une boucherie est un établissement commercial où l'on fait rassir et où l'on découpe et vend au détail de la viande d'animaux de boucherie. Son gérant est un artisan, le boucher. Les boucheries, lorsqu'elles ne sont pas constituées par un rayon dans une grande surface alimentaire, sont une forme de commerce de proximité.</French>
@@ -81,6 +53,7 @@
         <German>Schiff geht vollautomatisch auf Fischfang und bringt diesen in eine Hafenstadt, wenn der Laderaum voll ist.</German>
         <Italian>Colletta alimentare a partire dai pesci fino balena o la nave è piena</Italian>
         <Spanish>Recoger la comida de pescado o la ballena hasta que el barco está lleno</Spanish>
+        <Russian>Будет собирать рыбу из морских ресурсов, пока корабль не заполнится, а затем выгружать груз в выбранном порту.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_FISH_CITY_RADIUS</Tag>
@@ -94,30 +67,35 @@
         <English>[COLOR_PLAYER_RED]This spot is already being worked by the neighboring city[COLOR_REVERT]</English>
         <French>[COLOR_PLAYER_RED]Cet emplacement est déjà exploité par une colonie environante[COLOR_REVERT]</French>
         <German>[COLOR_PLAYER_RED]Dieser Platz wird bereits durch eine Stadt bewirtschaftet[COLOR_REVERT]</German>
+        <Russian>[COLOR_PLAYER_RED]Это место уже обрабатывается соседним городом[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_FISH_NO_FISH</Tag>
         <English>[COLOR_PLAYER_RED]Fish bonus is required[COLOR_REVERT]</English>
         <French>[COLOR_PLAYER_RED]Un bateau de pêche est requis[COLOR_REVERT]</French>
         <German>[COLOR_PLAYER_RED]Fischvorkommen wird benötigt[COLOR_REVERT]</German>
+        <Russian>[COLOR_PLAYER_RED]Требуется рыбный бонус[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_FISH_NEEDS_FISHING_BOAT</Tag>
         <English>[COLOR_PLAYER_RED]Fishing boat required to gather resource[COLOR_REVERT]</English>
         <French>[COLOR_PLAYER_RED]Un bateau de pêche est requis pour rêcolter des ressources[COLOR_REVERT]</French>
         <German>[COLOR_PLAYER_RED]Fischerboot wird benötigt[COLOR_REVERT]</German>
+        <Russian>[COLOR_PLAYER_RED]Для сбора ресурсов требуется рыбацкая лодка[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_FISH_FULL</Tag>
         <English>[COLOR_PLAYER_RED]No more room in cargo for food[COLOR_REVERT]</English>
         <French>[COLOR_PLAYER_RED]Il n'y a plus de place pour de la nourriture[COLOR_REVERT]</French>
         <German>[COLOR_PLAYER_RED]Der Frachtraum ist voll![COLOR_REVERT]</German>
+        <Russian>[COLOR_PLAYER_RED]В грузовом отсеке больше нет места для еды[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_FISH_TAKEN</Tag>
         <English>[COLOR_PLAYER_RED]This spot is taken, only one fishing boat per resource[COLOR_REVERT]</English>
         <French>[COLOR_PLAYER_RED]Cet emplacement est occupé, il ne peut y avoir qu'un Navire par Ressource[COLOR_REVERT]</French>
         <German>[COLOR_PLAYER_RED]Hier geht bereits ein anderes Schiff auf die Fang![COLOR_REVERT]</German>
+        <Russian>[COLOR_PLAYER_RED]Это место занято, только одна рыбацкая лодка может обрабатывать один ресурс[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FISHER_FULL</Tag>
@@ -126,6 +104,7 @@
         <German>Das Schiff %s1_unit hat jetzt so viel Fisch an Bord, wie es fassen kann.</German>
         <Italian>Il vostro %s1_unit è riempito al bordo con il cibo dal mare.</Italian>
         <Spanish>Su %s1_unit está llena hasta el tope con los alimentos del mar.</Spanish>
+        <Russian>Ваш %s1_unit до краев наполнен добычей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FISHER_HELP</Tag>
@@ -134,5 +113,6 @@
         <German>(%s1_symbol_list pro Runde)</German>
         <Italian>(%s1_symbol_list per turno)</Italian>
         <Spanish>(%s1_symbol_list por turno)</Spanish>
+        <Russian>(%s1_symbol_list за ход)</Russian>
     </TEXT>
 </Civ4GameText>
