@@ -6990,7 +6990,10 @@ bool CvUnit::bombard()
 	}
 
 	setMadeAttack(true);
-	changeMoves(GLOBAL_DEFINE_MOVE_DENOMINATOR);
+	// WTP, ray, issue #892 - bombard should set movement points to 0 - START
+	// changeMoves(GLOBAL_DEFINE_MOVE_DENOMINATOR);
+	setMoves(maxMoves());
+	// WTP, ray, issue #892 - bombard should set movement points to 0 - END
 
 	// Super Forts begin *bombard* *text*
 	//R&R mod, vetiarvind, super forts merge ..invert if clause and let R&R code be the case when pBombardCity != null
@@ -7008,7 +7011,6 @@ bool CvUnit::bombard()
 	}
 	else
 	{
-
 		pBombardCity->changeDefenseModifier(-(bombardRate() * std::max(0, 100 - pBombardCity->getBuildingBombardDefense())) / 100);
 
 		CvWString szBuffer = gDLL->getText("TXT_KEY_MISC_DEFENSES_IN_CITY_REDUCED_TO", pBombardCity->getNameKey(), pBombardCity->getDefenseModifier(), GET_PLAYER(getOwnerINLINE()).getNameKey());
@@ -7018,6 +7020,7 @@ bool CvUnit::bombard()
 		gDLL->UI().addPlayerMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_BOMBARD", MESSAGE_TYPE_INFO, getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pBombardCity->getX_INLINE(), pBombardCity->getY_INLINE());
 
 	}//super forts
+
 	if (pPlot->isActiveVisible(false))
 	{
 		// Super Forts begin *bombard*
