@@ -1013,15 +1013,18 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				// WTP, ray, Lieutenants and Captains - START
 				if (GET_PLAYER(pDefender->getOwnerINLINE()).isPlayable() || GET_PLAYER(pDefender->getOwnerINLINE()).isEurope())
 				{
-					// WTP, ray, prevent unimmersive cases of Brave Lieutenants being spawned by Combat with e.g. Missioniaries
-					if (pDefender->getDomainType() == DOMAIN_LAND && !pDefender->getUnitInfo().isOnlyDefensive())
+					if (pDefender->getDomainType() == DOMAIN_LAND)
 					{
-						int iBraveLieutenantChance = GC.getDefineINT("LIEUTENANT_CHANCE_PER_LAND_COMBAT_IN_PERCENT");
-						int randomValue = GC.getGameINLINE().getSorenRandNum(100, "Check for Lieutenant");
-						if (iBraveLieutenantChance > randomValue)
+						// WTP, ray, prevent unimmersive cases of Brave Lieutenants being spawned by Combat with e.g. Missioniaries
+						if(!pDefender->isCapturableLandUnit())
 						{
-							UnitTypes eBraveLieutentantUnitTypes = (UnitTypes)GC.getCivilizationInfo(pDefender->getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT"));
-							GET_PLAYER(pDefender->getOwnerINLINE()).createBraveLieutenant(eBraveLieutentantUnitTypes, pDefender->coord());
+							int iBraveLieutenantChance = GC.getDefineINT("LIEUTENANT_CHANCE_PER_LAND_COMBAT_IN_PERCENT");
+							int randomValue = GC.getGameINLINE().getSorenRandNum(100, "Check for Lieutenant");
+							if (iBraveLieutenantChance > randomValue)
+							{
+								UnitTypes eBraveLieutentantUnitTypes = (UnitTypes)GC.getCivilizationInfo(pDefender->getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT"));
+								GET_PLAYER(pDefender->getOwnerINLINE()).createBraveLieutenant(eBraveLieutentantUnitTypes, pDefender->coord());
+							}
 						}
 					}
 					else
@@ -1064,14 +1067,18 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				if (GET_PLAYER(getOwnerINLINE()).isPlayable() || GET_PLAYER(getOwnerINLINE()).isEurope())
 				{
 					// WTP, ray, prevent unimmersive cases of Brave Lieutenants being spawned by Combat with e.g. Missioniaries
-					if (getDomainType() == DOMAIN_LAND && !pDefender->getUnitInfo().isOnlyDefensive())
+					if (getDomainType() == DOMAIN_LAND)
 					{
-						const int iBraveLieutenantChance = GC.getDefineINT("LIEUTENANT_CHANCE_PER_LAND_COMBAT_IN_PERCENT");
-						const int randomValue = GC.getGameINLINE().getSorenRandNum(100, "Check for Lieutenant");
-						if (iBraveLieutenantChance > randomValue)
+						// WTP, ray, prevent unimmersive cases of Brave Lieutenants being spawned by Combat with e.g. Missioniaries
+						if(!pDefender->isCapturableLandUnit())
 						{
-							const UnitTypes eBraveLieutentantUnitTypes = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT"));
-							GET_PLAYER(getOwnerINLINE()).createBraveLieutenant(eBraveLieutentantUnitTypes, coord());
+							const int iBraveLieutenantChance = GC.getDefineINT("LIEUTENANT_CHANCE_PER_LAND_COMBAT_IN_PERCENT");
+							const int randomValue = GC.getGameINLINE().getSorenRandNum(100, "Check for Lieutenant");
+							if (iBraveLieutenantChance > randomValue)
+							{
+								const UnitTypes eBraveLieutentantUnitTypes = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT"));
+								GET_PLAYER(getOwnerINLINE()).createBraveLieutenant(eBraveLieutentantUnitTypes, coord());
+							}
 						}
 					}
 					else
@@ -1499,12 +1506,12 @@ void CvUnit::updateCombat(bool bQuick)
 		{
 			// TAC Capturing Ships - ray
 			bool displayCapturedShipMessage = false;
-			int capturingShipChance = GC.getBASE_CHANCE_CAPTURING_SHIPS();
-			const int randomShipCaptureValue = GC.getGameINLINE().getSorenRandNum(1000, "Capture Ships");
 
 			// ray, fix for bNoCapture being ingored
 			if (getUnitInfo().isCapturesShips() && !pDefender->getUnitInfo().isAnimal() && !pDefender->getUnitInfo().isNoCapture())
 			{
+				int capturingShipChance = GC.getBASE_CHANCE_CAPTURING_SHIPS();
+				const int randomShipCaptureValue = GC.getGameINLINE().getSorenRandNum(1000, "Capture Ships");
 				// WTP, ray, Capture Ship chance increase - START
 				const int iCaptureShipsChanceIncrease = getUnitInfo().getCaptureShipsChanceIncrease();
 				capturingShipChance = capturingShipChance * (100 + iCaptureShipsChanceIncrease) / 100;
@@ -1551,6 +1558,40 @@ void CvUnit::updateCombat(bool bQuick)
 				}
 			}
 			// TAC Capturing Ships - ray - END
+
+			// WTP, ray, Prisoners of War - START
+			bool displayCapturedPrisoneOfWarMessage = false;
+
+			// We only want to have this for Military Combat between Europeans and Kings, and only during War
+			bool bAttackingPlayerInvalid = !GET_PLAYER(getOwner()).isPlayable(); // only playable Civs will capture Prisoners of War, to prevent future issues
+			bool bDefendingPlayerInvalid = GET_PLAYER(pDefender->getOwner()).isNative() || GC.getGameINLINE().isBarbarianPlayer(pDefender->getOwner());
+			bool bAttackingUnitInvalid = getDomainType() == DOMAIN_SEA || getUnitInfo().isAnimal() || getUnitInfo().isHiddenNationality();
+			bool bDefendingUnitInvalid = pDefender->getDomainType() == DOMAIN_SEA || pDefender->getUnitInfo().isAnimal() || pDefender->isCapturableLandUnit() || pDefender->getUnitInfo().isHiddenNationality();
+			bool bAtWar = GET_TEAM(getTeam()).isAtWar(pDefender->getTeam());
+
+			if (!bAttackingPlayerInvalid && !bDefendingPlayerInvalid && !bAttackingUnitInvalid && !bDefendingUnitInvalid && bAtWar)
+			{
+				int capturingPrisonerOfWarChance = GLOBAL_DEFINE_BASE_CHANCE_CAPTURING_PRISONER_OF_WAR;
+				const int randomCapturePrisonerOfWarValue = GC.getGameINLINE().getSorenRandNum(1000, "Capture Prisoner of War");
+
+				// WTP, ray, here we could in the future have modifiers for specific Units
+				//const int iCapturePrisonersOfWarChanceIncrease = getUnitInfo().getCapturePrisonersOfWarChanceIncrease();
+				//capturingPrisonerOfWarChance = capturingPrisonerOfWarChance * (100 + iCapturePrisonersOfWarChanceIncrease) / 100;
+
+				if (capturingPrisonerOfWarChance > randomCapturePrisonerOfWarValue)
+				{	
+					UnitTypes eCapturedPrisonerOfWar = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(getOwner()).getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_PRISONER_OF_WAR"));
+					CvUnit* PrisonerOfWarUnit = GET_PLAYER(getOwner()).initUnit(eCapturedPrisonerOfWar, GC.getUnitInfo(eCapturedPrisonerOfWar).getDefaultProfession(), pDefender->plot()->coord(), NO_UNITAI);
+					// WTP, ray, Prisoners of War should also get some damage and a Negative Promotion
+					if (PrisonerOfWarUnit != NULL)
+					{
+						PrisonerOfWarUnit->addDamageRandom(10, 75, 5);
+						PrisonerOfWarUnit->acquireAnyNegativePromotion();
+					}
+					displayCapturedPrisoneOfWarMessage = true;
+				}
+			}
+			// WTP, ray, Prisoners of War - END
 
 			// PatchMod: Achievements START
 			if(!pDefender->getUnitInfo().isAnimal())
@@ -1609,6 +1650,13 @@ void CvUnit::updateCombat(bool bQuick)
 				szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_UNIT_CAPTURED_ENEMY_SHIP", pDefender->getNameOrProfessionKey());
 			}
 			// TAC Capturing Ships - ray - END
+
+			// WTP, ray, Prisoners of War - START
+			if (displayCapturedPrisoneOfWarMessage)
+			{
+				szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_UNIT_CAPTURED_PRISONER_OF_WAR", pDefender->getNameOrProfessionKey());
+			}
+			// WTP, ray, Prisoners of War - END
 
 			//ray14
 			// R&R, ray, changes to Wild Animals - added addittional check so Animals do not capture
