@@ -2421,6 +2421,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PRISONER_OF_WAR</Tag>
         <English>Prisoner of War:Prisoners of War</English>
+        <French>Prisonnier de Guerre:Prisonniers de guerre</French>
         <German>
             <Text>Kriegsgefangener:Kriegsgefangene</Text>
             <Gender>Male</Gender>
@@ -2430,6 +2431,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_PRISONER_OF_WAR</Tag>
         <English>Prisoner of War:Prisoners of War</English>
+        <French>Prisonnier de Guerre:Prisonniers de guerre</French>
         <German>
             <Text>Kriegsgefangener:Kriegsgefangene</Text>
             <Gender>Male</Gender>
@@ -2450,6 +2452,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_REVOLTING_PRISONER_OF_WAR</Tag>
         <English>Revolting Prisoner of War:Revolting Prisoners of War</English>
+        <French>Prisonnier de guerre mutiné:Prisonniers de guerre mutinés</French>
         <German>
             <Text>Revoltierender Kriegsgefangener:Revoltierende Kriegsgefangene</Text>
             <Gender>Male</Gender>
@@ -2459,6 +2462,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_REVOLTING_PRISONER_OF_WAR</Tag>
         <English>Revolting Prisoner of War:Revolting Prisoners of War</English>
+        <French>Prisonnier de guerre mutiné:Prisonniers de guerre mutinés</French>
         <German>
             <Text>Revoltierender Kriegsgefangener:Revoltierende Kriegsgefangene</Text>
             <Gender>Male</Gender>
