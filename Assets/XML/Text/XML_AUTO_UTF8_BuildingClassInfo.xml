@@ -140,7 +140,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_CARPENTER_SHOP</Tag>
         <English>Carpenter's Shop</English>
         <French>
-            <Text>Atelier du menuisier:Ateliers de menuisier</Text>
+            <Text>Maison du charpentier:Maisonsw de charpentier</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -232,7 +232,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_CHURCH</Tag>
         <English>Church</English>
         <French>
-            <Text>Eglise:Eglises</Text>
+            <Text>Église:Églises</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -304,8 +304,8 @@
         <Tag>TXT_KEY_BUILDINGCLASS_COLLEGE</Tag>
         <English>College</English>
         <French>
-            <Text>Académie:Académies</Text>
-            <Gender>Female</Gender>
+            <Text>Lycée:Lycées</Text>
+            <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>Akademie</German>
@@ -348,7 +348,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_CORN_CHAMBER</Tag>
         <English>Corn Chamber</English>
         <French>
-            <Text>Grenier à maïs</Text>
+            <Text>Grenier à céréales</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
@@ -416,7 +416,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_DISTILLERS_HOUSE</Tag>
         <English>Distiller's House</English>
         <French>
-            <Text>Atelier du distillateur:Ateliers de distillateur</Text>
+            <Text>Maison du distillateur:Maisons de distillateur</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -456,7 +456,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_DOCK</Tag>
         <English>Dock</English>
         <French>
-            <Text>Docks</Text>
+            <Text>Quais</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </French>
@@ -592,8 +592,8 @@
         <Tag>TXT_KEY_BUILDINGCLASS_FUR_TRADERS_HOUSE</Tag>
         <English>Fur Trader's House</English>
         <French>
-            <Text>Atelier du fourreur:Ateliers de fourreur</Text>
-            <Gender>Male</Gender>
+            <Text>Maison du fourreur:Maisons de fourreur</Text>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>Haus des Pelzhändlers</German>
@@ -741,7 +741,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_GREAT_WHEELWRIGHTS_WORKSHOP</Tag>
         <English>Great Wheelwright's Workshop</English>
         <French>
-            <Text>Scierie industrielle:Scieries industrielles</Text>
+            <Text>Grande fabrique de chariots:Grandes Fabriques de chariots</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -825,7 +825,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_LUMBER_MILL</Tag>
         <English>Lumber Mill</English>
         <French>
-            <Text>Menuiserie:Menuiserie</Text>
+            <Text>Scierie:Scieries</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -865,7 +865,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_MARKET</Tag>
         <English>Village Market</English>
         <French>
-            <Text>Marché:Marchés</Text>
+            <Text>Marché du village:Marchés du village</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -997,8 +997,8 @@
         <Tag>TXT_KEY_BUILDINGCLASS_PUBLISHING</Tag>
         <English>Colonial Publisher</English>
         <French>
-            <Text>Editions coloniales</Text>
-            <Gender>Female</Gender>
+            <Text>Éditeur colonial</Text>
+            <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
         <German>
@@ -1085,7 +1085,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_SCHOOLHOUSE</Tag>
         <English>Schoolhouse</English>
         <French>
-            <Text>Ecole:Ecoles</Text>
+            <Text>École:Écoles</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -1149,7 +1149,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_SPICE_TRADERS_POST</Tag>
         <English>Spice Trading Post</English>
-        <French>Epicerie</French>
+        <French>Épicerie</French>
         <German>Gewürzhandelsposten</German>
         <Italian>Spice Trading Post</Italian>
         <Spanish>Spice Trading Post</Spanish>
@@ -1158,7 +1158,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_STABLE</Tag>
         <English>Stable</English>
         <French>
-            <Text>Etable:Etables</Text>
+            <Text>Étable:Étables</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -1290,7 +1290,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_TOBACCONIST_HOUSE</Tag>
         <English>Tobacconist's House</English>
         <French>
-            <Text>Atelier du cigarier:Ateliers de cigarier</Text>
+            <Text>Maison du cigarier:Maison de cigarier</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -1310,8 +1310,8 @@
         <Tag>TXT_KEY_BUILDINGCLASS_TOBACCONIST_SHOP</Tag>
         <English>Tobacconist's Shop</English>
         <French>
-            <Text>Boutique de tabac:Boutiques de tabac</Text>
-            <Gender>Female</Gender>
+            <Text>Atelier de tabac:Ateliers de tabac</Text>
+            <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>Tabakwarenbetrieb</German>
@@ -1433,7 +1433,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_VILLAGE_WELL</Tag>
         <English>Village Well</English>
-        <French>Lavoir</French>
+        <French>Puits du village</French>
         <German>Dorfbrunnen</German>
         <Italian>Village Well</Italian>
         <Spanish>Village Well</Spanish>
@@ -1542,8 +1542,8 @@
         <Tag>TXT_KEY_BUILDINGCLASS_WEAVERS_HOUSE</Tag>
         <English>Weaver's House</English>
         <French>
-            <Text>Atelier du tisserand:Ateliers de tisserand</Text>
-            <Gender>Male</Gender>
+            <Text>Maison du tisserand:Maisons du tisserand</Text>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>Haus des Webers</German>
@@ -1582,7 +1582,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_WHALE_OIL_FACTORY</Tag>
         <English>Train Oil Rendering Plant</English>
         <French>
-            <Text>Manufacture oléicole</Text>
+            <Text>Usine de raffinage des baleines:Usines de raffinage des baleines</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -1594,7 +1594,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_WHALE_OIL_HOUSE</Tag>
         <English>Train Oil Manufactory</English>
         <French>
-            <Text>Pressoir à huile:Pressoirs à huile</Text>
+            <Text>Maison du raffineur de baleine:Maison du raffineur de baleine</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -1606,7 +1606,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_WHEELWRIGHTS_WORKSHOP</Tag>
         <English>Wheelwright's Workshop</English>
         <French>
-            <Text>Scierie:Scieries</Text>
+            <Text>Fabrique de chariots:Fabriques de chariot</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>

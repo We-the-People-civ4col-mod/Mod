@@ -3200,7 +3200,7 @@
         <Tag>TXT_KEY_UNITCLASS_STATESMAN</Tag>
         <English>Elder Statesman:Elder Statesmen</English>
         <French>
-            <Text>Homme d'Etat vétéran:Hommes d'Etat vétérans</Text>
+            <Text>Homme d'État émérite:Hommes d'État émérite</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -4045,7 +4045,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Expert marchand indigènes:Experts marchands indigènes</Text>
+            <Text>Expert marchand indigène:Experts marchands indigènes</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>

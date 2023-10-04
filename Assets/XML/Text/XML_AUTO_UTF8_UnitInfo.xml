@@ -3265,7 +3265,7 @@
         <Tag>TXT_KEY_UNIT_INDENTURED_SERVANT</Tag>
         <English>Indentured Servant:Indentured Servants</English>
         <French>
-            <Text>Engagé:Engagés</Text>
+            <Text>Domestique sous contrat:Domestiques sous contrat</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -5961,7 +5961,7 @@
         <Tag>TXT_KEY_UNIT_STATESMAN</Tag>
         <English>Elder Statesman:Elder Statesmen</English>
         <French>
-            <Text>Homme d'Etat vétéran:Hommes d'Etat vétérans</Text>
+            <Text>Homme d'État émérite:Hommes d'Etat émérites</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -5993,7 +5993,8 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_STATESMAN_STRATEGY</Tag>
         <English>[COLOR_UNIT_TEXT]Elder statesmen[COLOR_REVERT] are expert [LINK=YIELD_BELLS]liberty bell[\LINK] producers.[NEWLINE]Assigning an elder statesman to the [LINK=PROFESSION_STATESMAN]statesman[\LINK] profession will generate double the number of [COLOR_HIGHLIGHT_TEXT]liberty bells[COLOR_REVERT] a normal colonist would produce.[NEWLINE]Elder statesmen can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]educated[\LINK] in a colony with a [LINK=BUILDING_UNIVERSITY]university[\LINK] or one of its upgrades.</English>
-        <French>Les [COLOR_UNIT_TEXT]Hommes d'Etat vétérans[COLOR_REVERT] sont d'excellents producteurs de [COLOR_HIGHLIGHT_TEXT]cloches de la liberté[COLOR_REVERT]. En assignant un homme d'Etat vétéran à la profession d'homme d'Etat, vous doublerez le nombre de [COLOR_HIGHLIGHT_TEXT]cloches de la liberté[COLOR_REVERT] produites.</French>
+        <French>Les [COLOR_UNIT_TEXT]Hommes d'Etat émérites[COLOR_REVERT] sont d'excellents producteurs de [LINK=YIELD_BELLS]Cloches de la liberté[\LINK]. En assignant un homme d'Etat émérite à la profession d'[LINK=PROFESSION_STATESMAN]homme d'Etat[\LINK] , vous doublerez le nombre de [COLOR_HIGHLIGHT_TEXT]cloches de la liberté[COLOR_REVERT] produites comparé a un colon normal.
+        Les hommes d'État peuvent être recrutés en [LINK=CONCEPT_EUROPE]Europe[\LINK], ou [LINK=CONCEPT_TRAINING]éduqués[\LINK] dans une ville avec une [LINK=BUILDING_UNIVERSITY]université[\LINK] ou mieux</French>
         <German>Wird ein [COLOR_UNIT_TEXT]Weiser Staatsmann[COLOR_REVERT] dem Beruf des [COLOR_HIGHLIGHT_TEXT]Staatsmannes[COLOR_REVERT] zugewiesen, verdoppelt sich die Anzahl der produzierten [LINK=YIELD_BELLS]Freiheitsglocken[\LINK].[PARAGRAPH:2]In [COLOR_BUILDING_TEXT]Gemeindehaus[COLOR_REVERT], [COLOR_BUILDING_TEXT]Stadthalle[COLOR_REVERT], [COLOR_BUILDING_TEXT]Rathaus[COLOR_REVERT] und [COLOR_BUILDING_TEXT]Regierungspalast[COLOR_REVERT] können Bürger im Beruf des Staatsmannes arbeiten und [LINK=YIELD_BELLS]Freiheitsglocken[\LINK] herstellen. [COLOR_BUILDING_TEXT]Druckerpresse[COLOR_REVERT] und [COLOR_BUILDING_TEXT]Zeitung[COLOR_REVERT] geben Aufschläge auf die Produktion. Freiheitsglocken sind eine virtuelle Ware, die die [COLOR_HIGHLIGHT_TEXT]Rebellische Stimmung[COLOR_REVERT] steigen lässt und zudem Politikpunkte für Gründerväter erzeugt.</German>
         <Italian>Gli [COLOR_UNIT_TEXT]statisti anziani[COLOR_REVERT] sono esperti produttori di [COLOR_HIGHLIGHT_TEXT]campane della libertà[COLOR_REVERT]. Assegnandone uno alla professione di statista raddoppierai il numero di [COLOR_HIGHLIGHT_TEXT]campane della libertà[COLOR_REVERT] prodotte.</Italian>
         <Spanish>Los [COLOR_UNIT_TEXT]Estadistas mayores[COLOR_REVERT] son expertos productores de [COLOR_HIGHLIGHT_TEXT]Campanas de la libertad[COLOR_REVERT]. Asignar a uno de ellos a la profesión de Estadista doblará el número de [COLOR_HIGHLIGHT_TEXT]Campanas de la libertad[COLOR_REVERT] producidas.</Spanish>
@@ -6043,7 +6044,7 @@
         <Tag>TXT_KEY_UNIT_STONECUTTER</Tag>
         <English>Expert Stonecutter:Expert Stonecutters</English>
         <French>
-            <Text>Expert tailleur:Experts tailleurs</Text>
+            <Text>Expert Tailleur de pierre:Experts Tailleurs de pierre</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -7163,7 +7164,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Esclave exempté:Esclaves exemptés</Text>
+            <Text>Esclave affranchi:Esclaves affranchis</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>

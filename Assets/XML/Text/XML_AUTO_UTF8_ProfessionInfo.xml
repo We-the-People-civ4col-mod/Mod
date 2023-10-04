@@ -3586,7 +3586,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Commerçant indigènes:Commerçants indigènes</Text>
+            <Text>Marchand indigènes:Marchands indigènes</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -3614,12 +3614,13 @@
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_NATIVE_TRADER_STRATEGY</Tag>
         <English>[LINK=PROFESSION_NATIVE_TRADER]Native traders[\LINK] are special [LINK=CONCEPT_UNITS]units[\LINK] who can establish [COLOR_HIGHLIGHT_TEXT]trading posts[COLOR_REVERT] in [LINK=CONCEPT_NATIVES]Native[\LINK] settlements.[NEWLINE]Over time, trading posts will generate money and create [LINK=UNIT_TREASURE]treasures[\LINK], to be sent back to the colonies.[PARAGRAPH:1]Doing this with an [LINK=UNIT_EXPERT_TRADER]expert trader[\LINK] speeds up the rate at which new [LINK=UNIT_TREASURE]treasures[\LINK] are created.</English>
-        <French>Les [LINK=PROFESSION_NATIVE_TRADER]commerçants indigènes[\LINK] sont des [LINK=CONCEPT_UNITS]unités[\LINK] spéciales qui peuvent établir des [COLOR_HIGHLIGHT_TEXT]postes de commerce[COLOR_REVERT] dans les colonies [LINK=CONCEPT_NATIVES]indigènes[\LINK].[NEWLINE]Au fil du temps, les postes de traite généreront de l'argent et créeront des [LINK=UNIT_TREASURE]trésors[\LINK], qui seront renvoyés dans les colonies.[PARAGRAPH:1]Faire cela avec un [LINK=UNIT_EXPERT_TRADER]commerçant expert[\LINK] accélère la vitesse à laquelle de nouveaux [LINK=UNIT_TREASURE]trésors[\LINK] sont créés.</French>
+        <French>Les [LINK=PROFESSION_NATIVE_TRADER]marchands indigènes[\LINK] sont des [LINK=CONCEPT_UNITS]unités[\LINK] spéciales qui peuvent établir des [COLOR_HIGHLIGHT_TEXT]comptoirs de commerce[COLOR_REVERT] dans les villes et villages [LINK=CONCEPT_NATIVES]indigènes[\LINK].[NEWLINE]Au fil du temps, ces comptoirs généreront de l'argent et créeront des [LINK=UNIT_TREASURE]trésors[\LINK], qui seront renvoyés dans les colonies.[PARAGRAPH:1]Faire cela avec un [LINK=UNIT_EXPERT_TRADER]marchand expert[\LINK] accélère la vitesse à laquelle de nouveaux [LINK=UNIT_TREASURE]trésors[\LINK] sont créés.</French>
         <German>[LINK=PROFESSION_NATIVE_TRADER]Ureinwohnerhändler[\LINK] sind spezielle [LINK=CONCEPT_UNITS]Einheiten[\LINK], die [COLOR_HIGHLIGHT_TEXT]Handelsposten[COLOR_REVERT] in [LINK=CONCEPT_NATIVES]Ureinwohnerdörfern[\LINK] errichten können.[NEWLINE]Von Zeit zu Zeit erzeugen Handelsposten einen [LINK=UNIT_TREASURE]Schatz[\LINK], mit dem das in der Zwischenzeit verdiente Gold zurück in die Kolonien geschickt wird.[PARAGRAPH:1]Nutzt man einen [LINK=UNIT_EXPERT_TRADER]Erfahrenen Ureinwohnerhändler[\LINK], werden deutlich häufiger [LINK=UNIT_TREASURE]Schätze[\LINK] erzeugt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SETTLER</Tag>
         <English>Settler:Settlers</English>
+        <French>Fondateur:Fondateurs</French>
         <German>
             <Text>Siedlungsgründer:Siedlungsgründer</Text>
             <Gender>Male</Gender>
@@ -3641,7 +3642,7 @@
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SETTLER_STRATEGY</Tag>
         <English>[LINK=PROFESSION_SETTLER]Settlers[\LINK] are the only [LINK=CONCEPT_PROFESSION]profession[\LINK] that can establish new [LINK=CONCEPT_SETTLEMENTS]settlements[\LINK].[PARAGRAPH:1]To do so requires [COLOR_HIGHLIGHT_TEXT]equipment[COLOR_REVERT]. You can either equip colonists in your settlements if you have the necessary supplies stored there or in Europe by paying gold for what's needed.</English>
-        <French>Les [LINK=PROFESSION_SETTLER]fondateurs de colonies[\LINK] sont la seule [LINK=CONCEPT_PROFESSION]profession[\LINK] qui peut fonder de nouvelles [LINK=CONCEPT_SETTLEMENTS]colonies[\LINK][PARAGRAPH:1]Mais pour cela ils ont besoin d'[COLOR_HIGHLIGHT_TEXT]equipement[COLOR_REVERT]. Vous pouvez équiper les colons en tant que fondateurs de colonies, soit dans une colonie, si l'équipement est stocké, soit déjà en Europe, si vous avez l'or nécessaire pour l'équipement.</French>
+        <French>Les [LINK=PROFESSION_SETTLER]fondateurs de colonies[\LINK] sont la seule [LINK=CONCEPT_PROFESSION]profession[\LINK] qui peut fonder de nouvelles [LINK=CONCEPT_SETTLEMENTS]colonies[\LINK][PARAGRAPH:1]Mais pour cela ils ont besoin d'[COLOR_HIGHLIGHT_TEXT]équipement[COLOR_REVERT]. Vous pouvez équiper les colons en tant que fondateurs de colonies, soit dans une colonie, si l'équipement est stocké, soit déjà en Europe, si vous avez l'or nécessaire pour l'équipement.</French>
         <German>[LINK=PROFESSION_SETTLER]Siedlungsgründer[\LINK] sind der einzige [LINK=CONCEPT_PROFESSION]Beruf[\LINK] der neue [LINK=CONCEPT_SETTLEMENTS]Siedlungen[\LINK] gründen kann.[PARAGRAPH:1]Dafür brauchen sie aber [COLOR_HIGHLIGHT_TEXT]Ausrüstung[COLOR_REVERT]. Man kann Kolonisten als Siedlungsgründer entweder in einer Siedlung ausrüsten, wenn diese die Ausrüstung gelagert hat, oder aber schon gleich in Europa, sofern man das nötige Gold für die Ausrüstung hat.</German>
     </TEXT>
     <TEXT>

@@ -105,14 +105,14 @@
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_IRON_MILL_BONUS</Tag>
         <English>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Ironmills Bonus</English>
-        <French>[ICON_BULLET]+%d1_NewVal%%%F2_Icon bonus de fonderie</French>
+        <French>[ICON_BULLET]+%d1_NewVal%%%F2_Icon bonus de bas-fourneaux</French>
         <German>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Bonus durch Eisenmühlen</German>
         <Russian>[ICON_BULLET]+%d1_NewVal%%%F2_Icon от Железной мельницы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PRODUCTION_PERCENT_MODIFIER_CITIZENHELP</Tag>
         <English>Production modifier of %d1_NewVal%% :</English>
-        <French>modificateur de production de %d1_NewVal%%</French>
+        <French>Modificateur de production de %d1_NewVal%%</French>
         <German>Produktionsmodifikator von %d1_NewVal%% :</German>
         <Russian>Модификатор производства %d1_NewVal%% :</Russian>
     </TEXT>

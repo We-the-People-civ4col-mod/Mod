@@ -2751,20 +2751,20 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_VILLAGE_WELL</Tag>
         <English>Village Well</English>
-        <French>Lavoir</French>
+        <French>Puits du village</French>
         <German>Dorfbrunnen</German>
         <Russian>Колодец</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_VILLAGE_WELL_PEDIA</Tag>
         <English>Almost all artificial wells in the New World were pumpless hand-dug wells. They were an essential source of water in rural areas. Clean water was and still is crucial for health and survival.[PARAGRAPH:1]Hand-dug wells are excavations with diameters large enough to accommodate one or more persons with shovels digging down to below the water table. They can be lined with stones or brick. Extending this lining above the ground forms a wall around the well, reducing both contamination and injuries from falling into the well.</English>
-        <French>A l'époque de la colonisation du Nouveau Monde, la plupart des puits artificiels étaient dépourvus de pompe et creuser à la main. Ils représentaient une source important d'eau dans les environnements ruraux. L'eau potable était, et est toujours, essentiel à la bonne santé.[PARAGRAPH:1]Les puits creusés à la main sont des excavations dont le diamètre est suffisant pour permettre à une personne avec des pioches de creuser sous la nappe phréatique. Ils peuvent être renforcés par des parois de pierre ou de brique qui s'étendent au-dessus du niveau du sol non seulement par mesure de sécurité mais également de façon à limiter la contamination de l'eau.</French>
+        <French>A l'époque de la colonisation du Nouveau Monde, la plupart des puits artificiels étaient dépourvus de pompe et creuséd à la main. Ils représentaient une source important d'eau dans les environnements ruraux. L'eau potable était, et est toujours, essentiel à la bonne santé.[PARAGRAPH:1]Les puits creusés à la main sont des excavations dont le diamètre est suffisant pour permettre à une personne avec des pioches de creuser sous la nappe phréatique. Ils peuvent être renforcés par des parois de pierre ou de brique qui s'étendent au-dessus du niveau du sol non seulement par mesure de sécurité mais également de façon à limiter la contamination de l'eau.</French>
         <German>Während der Zeit der Kolonisierung der Neuen Welt wurden fast alle künstlichen Brunnen von Hand gegraben und waren ohne Pumpsystem. Sie waren eine sehr wichtige Quelle für Wasser, vor allem in den ländlichen Gegenden, wo Brunnen dieser Art routinemässig gegraben wurden. Sauberes Wasser war und ist essentiell für die Gesundheit der Menschen und allgemein für ihr Leben.[PARAGRAPH:1]Handgegrabene Brunnen sind Erdschächte, die tief genug in die Erde reichen, um unter den Grundwasserspiegel zu gelangen. Sie können vollständig mit Steinen oder Ziegeln ausgekleidet sein, die normalerweise bis über die Erdoberfläche reichen. Dies verhindert sowohl eine Verschmutzung des Wassers, wie auch Verletzungen durch einen Sturz in den Brunnen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_VILLAGE_WELL_STRATEGY</Tag>
         <English>Fresh water is essential for human health. [COLOR_HIGHLIGHT_TEXT]Village wells[COLOR_REVERT] are a good source of fresh water. They increase the [LINK=YIELD_HEALTH]health[\LINK] of your citizens which positively affects productivity and population growth.[PARAGRAPH:2]For more information, see [LINK=CONCEPT_HEALTH]Health and Medical Care[\LINK].</English>
-        <French>L'eau potable est essentiel à la bonne santé des humains. Les lavoirs sont de très bonne source d'eau potable. Ils permettent ainsi d'augmenter la santé de vos citoyens ce qui améliorera sa productivité et accélerera la croissance de sa population.</French>
+        <French>L'eau potable est essentiel à la bonne santé des humains. [COLOR_HIGHLIGHT_TEXT]Les puits[COLOR_REVERT] sont de très bonne source d'eau potable. Ils permettent ainsi d'améliorer la  [LINK=YIELD_HEALTH]bonne santé [\LINK] de vos citoyens ce qui améliorera sa productivité et accélèrera la croissance de sa population.PARAGRAPH:2]Pour plus d'information, voir [LINK=CONCEPT_HEALTH]Health and Medical Care[\LINK]</French>
         <German>Frisches Wasser ist für die menschliche Gesundheit unerlässlich. [COLOR_HIGHLIGHT_TEXT]Dorfbrunnen[COLOR_REVERT] sind eine gute Quelle für frisches Wasser. Sie erhöhen die [LINK=YIELD_HEALTH]Gesundheit[\LINK] Ihrer Bürger, was sich positiv auf die Produktivität und das Bevölkerungswachstum auswirkt.[PARAGRAPH:2]Weitere Informationen finden Sie unter [LINK=CONCEPT_HEALTH]Gesundheit und medizinische Versorgung[\LINK].</German>
     </TEXT>
     <TEXT>

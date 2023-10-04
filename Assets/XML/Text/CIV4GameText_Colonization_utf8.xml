@@ -1421,14 +1421,14 @@
     <TEXT>
         <Tag>TXT_KEY_FATHER_LEARNING_BY_DOING_RUNAWAY_MODIFIER</Tag>
         <English>[ICON_BULLET]%D1%% chance for unfree to try to run away</English>
-        <French>{ICON_BULLET]%D1%% pour qu'un travailleur sous servitude tente de s'échapper</French>
+        <French>[ICON_BULLET]%D1%% pour qu'un travailleur sous servitude tente de s'échapper</French>
         <German>[ICON_BULLET]%D1%% Chance für Unfreie eine Flucht zu vesuchen</German>
         <Russian>[ICON_BULLET]%D1%% к шану побега несвободных колонистов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_LEARNING_BY_DOING_REVOLT_MODIFIER</Tag>
         <English>[ICON_BULLET]%D1%% chance for unfree to start a revolt</English>
-        <French>{ICON_BULLET]%D1%% pour qu'un travailleur sous servitude lance une révolte</French>
+        <French>[ICON_BULLET]%D1%% pour qu'un travailleur sous servitude lance une révolte</French>
         <German>[ICON_BULLET]%D1%% Chance für Unfreie eine Revolte zu starten</German>
         <Russian>[ICON_BULLET]%D1%% к шансу мятежа несвободных колонистов</Russian>
     </TEXT>

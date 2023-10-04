@@ -271,7 +271,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACTION_BECOMES_IMP</Tag>
         <English>[ICON_BULLET]Becomes a [LINK=literal]%s1_ImpName[\LINK] in %d2_Num [NUM2:turn:turns]</English>
-        <French>[ICON_BULLET]Transformation en : [LINK=literal]%s1_ImpName[\LINK] dans %d2_Num [NUM2:tour:tours]</French>
+        <French>[ICON_BULLET]Se transforme en : [LINK=literal]%s1_ImpName[\LINK] dans %d2_Num [NUM2:tour:tours]</French>
         <German>[ICON_BULLET]Wird in %d2_Num [NUM2:Runde:Runden] zur Modernisierung [LINK=literal]%s1_ImpName[\LINK]</German>
         <Italian>[ICON_BULLET]Diventa [NUM1:un:una] [LINK=literal]%s1_ImpName[\LINK] in %d2_Num [NUM2:turno:turni]</Italian>
         <Spanish>[ICON_BULLET]Se convierte en [LINK=literal]%s1_ImpName[\LINK] en %d2_Num [NUM2:turno:turnos]</Spanish>
@@ -412,7 +412,7 @@
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_BUILD_MODIFIER</Tag>
         <English>[ICON_BULLET]Improvements take %D1%% time to build</English>
-        <French>[ICON_BULLET]La construction d'aménagements prend %D1%% tours</French>
+        <French>[ICON_BULLET]Le temps pris pour la construction d'aménagements évolue de %D1%%</French>
         <German>[ICON_BULLET]Die Fertigstellung von Modernisierungen erfordert %D1%% Zeit</German>
         <Italian>[ICON_BULLET]I miglioramenti impiegheranno %D1%% per essere realizzati</Italian>
         <Spanish>[ICON_BULLET]Construir mejoras cuesta un %D1%% del tiempo</Spanish>
@@ -570,7 +570,7 @@
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_HEALS_EXTRA_TEXT</Tag>
         <English>[ICON_BULLET]Heals %d1_Amount%%[SPACE]faster[SPACE]</English>
-        <French>[ICON_BULLET]Guérison + %d1_Amount%%[SPACE]</French>
+        <French>[ICON_BULLET]Guérison plus rapide de %d1_Amount%%[SPACE]</French>
         <German>[ICON_BULLET]%d1_Amount%%[SPACE]schnellere Heilung[SPACE]</German>
         <Italian>[ICON_BULLET]Cura il %d1_Amount%% supplementare[SPACE]</Italian>
         <Spanish>[ICON_BULLET]Cura un %d1_Amount%% más de[SPACE]</Spanish>
@@ -613,7 +613,7 @@
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_HEALS_SAME_TEXT</Tag>
         <English>[ICON_BULLET]Heals units in same tile extra %d1_Amount%%[SPACE]</English>
-        <French>[ICON_BULLET]Soigne les unités dans la même case de + %d1_Amount%%[SPACE]</French>
+        <French>[ICON_BULLET]Soigne les unités dans la même case de %d1_Amount%%[SPACE] en plus</French>
         <German>[ICON_BULLET]Heilt Einheiten auf demselben Geländefeld um zusätzliche %d1_Amount%%[SPACE]</German>
         <Italian>[ICON_BULLET]Cura le unità nella stessa casella del %d1_Amount%%[SPACE]</Italian>
         <Spanish>[ICON_BULLET]Cura a las unidades en la misma casilla un %d1_Amount%% más de[SPACE]</Spanish>
@@ -631,7 +631,7 @@
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_HEALS_ADJACENT_TEXT</Tag>
         <English>[ICON_BULLET]Heals units in adjacent tiles extra %d1_Heals%%[SPACE]</English>
-        <French>[ICON_BULLET]Soigne les unités dans les cases adjacentes de + %d1_Heals%%[SPACE]</French>
+        <French>[ICON_BULLET]Soigne les unités dans les cases adjacentes de %d1_Heals%% en plus[SPACE]</French>
         <German>[ICON_BULLET]Heilt Einheiten auf benachbarten Geländefeldern um zusätzliche %d1_Heals%%[SPACE]</German>
         <Italian>[ICON_BULLET]Cura le unità nelle caselle adiacenti del %d1_Heals%%[SPACE]</Italian>
         <Spanish>[ICON_BULLET]Cura a las unidades en casillas adyacentes un %d1_Amount%% más de[SPACE]</Spanish>
@@ -640,7 +640,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_ATTACK</Tag>
         <English>[ICON_BULLET]%D1_Change%% %s2_TerrOrFeat attack</English>
-        <French>[ICON_BULLET]%D1_Change%% %s2_TerrOrFeat Attaque</French>
+        <French>[ICON_BULLET]Attaque en %s2_TerrOrFeat : %D1_Change%%</French>
         <German>[ICON_BULLET]%D1_Change%% %s2_TerrOrFeat-Angriff</German>
         <Italian>[ICON_BULLET]%D1_Change%% all'attacco in %s2_TerrOrFeat</Italian>
         <Spanish>[ICON_BULLET]%D1_Change%% a ataque a %s2:2_TerrOrFeat</Spanish>
@@ -649,7 +649,7 @@
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_ATTACK_TEXT</Tag>
         <English>[ICON_BULLET]%D1_Bonus%% %s2_TerrFeat attack</English>
-        <French>[ICON_BULLET]%D1_Bonus%% %s2_TerrFeat Attaque</French>
+        <French>[ICON_BULLET]Attaque en %s2_TerrFeat : %D1_Bonus%%</French>
         <German>[ICON_BULLET]%D1_Bonus%% %s2_TerrFeat-Angriff</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% di attacco in %s2_TerrFeat</Italian>
         <Spanish>[ICON_BULLET]%D1_Bonus%% a ataque a %s2:2_TerrFeat</Spanish>
@@ -658,7 +658,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_STRENGTH</Tag>
         <English>[ICON_BULLET]%D1_Change%% %s2_TerrOrFeat strength</English>
-        <French>[ICON_BULLET]%D1_Change%% %s2_TerrOrFeat Force</French>
+        <French>[ICON_BULLET]Puissance en %s2_TerrOrFeat de %D1_Change%%</French>
         <German>[ICON_BULLET]%D1_Change%% %s2_TerrOrFeat-Stärke</German>
         <Italian>[ICON_BULLET]%D1_Change%% alla forza in %s2_TerrOrFeat</Italian>
         <Spanish>[ICON_BULLET]%D1_Change%% a fuerza en %s2:2_TerrOrFeat</Spanish>
@@ -676,7 +676,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_HILLS_DEFENSE</Tag>
         <English>[ICON_BULLET]%D1_Change%% hills defense</English>
-        <French>[ICON_BULLET]Défense des collines %D1_Change%%</French>
+        <French>[ICON_BULLET]Défense en collines %D1_Change%%</French>
         <German>[ICON_BULLET]%D1_Change%% Hügel-Verteidigung</German>
         <Italian>[ICON_BULLET]%D1_Change%% di difesa in collina</Italian>
         <Spanish>[ICON_BULLET]%D1_Change%% a defender colinas</Spanish>
@@ -685,7 +685,7 @@
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_HILLS_DEFENSE_TEXT</Tag>
         <English>[ICON_BULLET]%D1_Bonus%% hills defense</English>
-        <French>[ICON_BULLET]Défense de collines %D1_Bonus%%</French>
+        <French>[ICON_BULLET]Défense en collines de %D1_Bonus%%</French>
         <German>[ICON_BULLET]%D1_Bonus%% Hügel-Verteidigung</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% di difesa in collina</Italian>
         <Spanish>[ICON_BULLET]%D1_Bonus%% a defender colinas</Spanish>
@@ -739,7 +739,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_HARBOR_SPACE_NEEDED</Tag>
         <English>[ICON_BULLET]Dock Space Needed : %d1_Num%F2_Icon</English>
-        <French>[ICON_BULLET] Espace d'ammarage nécessaire : %d1_Num%F2_Icon</French>
+        <French>[ICON_BULLET] Espace d'amarrage nécessaire : %d1_Num%F2_Icon</French>
         <German>[ICON_BULLET]Braucht zum Andocken : %d1_Num%F2_Icon</German>
         <Russian>[ICON_BULLET]Требуется места в гавани : %d1_Num%F2_Icon</Russian>
     </TEXT>
@@ -899,7 +899,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_DEFENSE_MOD_VS_CLASS</Tag>
         <English>[ICON_BULLET]%D1_Change%% defense vs. [LINK=literal]%s2_Type[\LINK]</English>
-        <French>[ICON_BULLET]%D1_Change%% en défense contre [LINK=literal]%s2_Class[\LINK]</French>
+        <French>[ICON_BULLET]%D1_Change%% en défense contre [LINK=literal]%s2_Type[\LINK]</French>
         <German>[ICON_BULLET]%D1_Change%% Verteidigung gegen [LINK=literal]%s2_Class[\LINK]</German>
         <Italian>[ICON_BULLET]%D1_Change%% quando difende contro [LINK=literal]%s2:2_Class[\LINK]</Italian>
         <Spanish>[ICON_BULLET]%D1_Change%% al defender contra [LINK=literal]%s2:2_Type[\LINK]</Spanish>

@@ -98,7 +98,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVES</Tag>
         <English>%s1 - %d2 [NUM2:Achievement:Achievements]</English>
-        <French>%s1 - %d2 [NUM2:réalisation:réalisations]</French>
+        <French>%s1 - %d2 [NUM2:haut-fait:hauts-faits]</French>
         <German>%s1 - %d2 [NUM2:Leistung:Leistungen]</German>
         <Italian>%s1 - %d2 [NUM2:Realizzazione:Realizzazioni]</Italian>
         <Spanish>%s1 - %d2 [NUM2:Logro:Logros]</Spanish>
@@ -1902,14 +1902,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ONE_WHALE_OIL_HOUSE</Tag>
         <English>Your first train oil manufactory</English>
-        <French>Deux raffineries de blanc de baleine</French>
+        <French>Votre première raffinerie de blanc de baleine</French>
         <German>Eure erste Trankocherei</German>
         <Russian>Ваша первая фабрика ворвани</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ONE_WHALE_OIL_HOUSE_HEAD</Tag>
         <English>Let there be light</English>
-        <French>Votre premier pressoir à huile</French>
+        <French>Que la lumière soit!</French>
         <German>Es werde Licht</German>
         <Russian>Да будет свет</Russian>
     </TEXT>
@@ -1950,7 +1950,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_LANDING_STAGE_HEAD</Tag>
         <English>Good luck!</English>
-        <French>De nombreux embarcadères</French>
+        <French>Bonne chance !</French>
         <German>Petri Heil!</German>
         <Russian>Удачи!</Russian>
     </TEXT>
@@ -1970,7 +1970,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWO_SCOUTS_HEAD</Tag>
         <English>A well-travelled man</English>
-        <French>Deux éclaireurs aguerris</French>
+        <French>Un très grand voyageur</French>
         <German>Ein weitgereister Mann</German>
         <Russian>Много путешествовавший человек</Russian>
     </TEXT>
@@ -1990,7 +1990,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_RANCHERS_HEAD</Tag>
         <English>Undeserved mockery</English>
-        <French>Deux experts éleveurs</French>
+        <French>Des moqueries gratuites</French>
         <German>Unverdienter Spott</German>
         <Russian>Незаслуженное издевательство</Russian>
     </TEXT>
@@ -2010,7 +2010,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_MILITIAS_HEAD</Tag>
         <English>The settler militia</English>
-        <French>Trois milices</French>
+        <French>La milice coloniale</French>
         <German>Die Siedler-Miliz</German>
         <Russian>Одни из первых</Russian>
     </TEXT>
@@ -2032,7 +2032,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CONTINENTAL_GUARD_HEAD</Tag>
         <English>On the parade ground</English>
-        <French>Première garde continentale recrutée</French>
+        <French>Sur le champ de parade</French>
         <German>Auf dem Exerzierplatz</German>
         <Russian>На плацу</Russian>
     </TEXT>
@@ -2053,7 +2053,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_RANGER_HEAD</Tag>
         <English>Attack from ambush</English>
-        <French>Trois gardes-forestiers</French>
+        <French>Attaques en embuscade</French>
         <German>Angriff aus dem Hinterhalt</German>
         <Russian>Атака из засады</Russian>
     </TEXT>
@@ -2067,14 +2067,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_HESSIAN</Tag>
         <English>The Landgrave of Hesse-Kassel provides you with even more Hessian mercenaries (3)</English>
-        <French>Three Hessian Mercenaries</French>
+        <French>Le Landgrave de Hesse-Kassel vous fournit des mercenaires hessiens supplémentaire</French>
         <German>Der Landgraf von Hessen-Kassel stellt euch noch mehr hessische Söldner zur Verfügung (3)</German>
         <Russian>Три гессенских наёмника</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_HESSIAN_HEAD</Tag>
         <English>Three Hessian mercenaries</English>
-        <French>Three Hessian Mercenaries</French>
+        <French>Trois mercenaires hessiens</French>
         <German>Drei hessische Söldner-Regimenter</German>
         <Russian>Три пули и штык</Russian>
     </TEXT>
@@ -2136,7 +2136,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_VETERANS_HEAD</Tag>
         <English>The backbone of the army</English>
-        <French>Trois officiers vétérans</French>
+        <French>L'épine dorsale de votre armée</French>
         <German>Das Rückgrat der Armee</German>
         <Russian>Костяк армии</Russian>
     </TEXT>
@@ -2156,7 +2156,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWENTY_VETERANS_HEAD</Tag>
         <English>Water battle</English>
-        <French>Vingt vétérans</French>
+        <French>Bataiile humide</French>
         <German>Wasserschlacht</German>
         <Russian>Влияние воды на артиллерию</Russian>
     </TEXT>
@@ -2236,7 +2236,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FUR_TRADERS_HEAD</Tag>
         <English>New World wealth</English>
-        <French>Trois fourreurs</French>
+        <French>La richesseadu Nouveau Monde</French>
         <German>Geldadel</German>
         <Russian>Богатство Нового Света</Russian>
     </TEXT>
@@ -2256,7 +2256,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_WHALE_OIL_COOKERS_HEAD</Tag>
         <English>The plump life</English>
-        <French>Deux affineurs d'huile</French>
+        <French>Une vie rondelette</French>
         <German>Das pralle Leben</German>
         <Russian>Пухлая жизнь</Russian>
     </TEXT>
@@ -2276,7 +2276,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_HUNTER_HEAD</Tag>
         <English>Trappers set traps</English>
-        <French>Cinq chasseurs aguerris</French>
+        <French>La chasse au piège, par les piégeurs</French>
         <German>Fallensteller stellen Fallen</German>
         <Russian>Охотники расставляют ловушки</Russian>
     </TEXT>
@@ -2296,7 +2296,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_TRAPPER_HEAD</Tag>
         <English>A noble fur</English>
-        <French>Une fourrur noble</French>
+        <French>Une fourrure noble</French>
         <German>Ein edler Pelz</German>
         <Russian>Благородный мех</Russian>
     </TEXT>
@@ -2356,7 +2356,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_CONVERTED_NATIVES_HEAD</Tag>
         <English>Pious service</English>
-        <French>Six convertis</French>
+        <French>Un service pieu</French>
         <German>Fromme Fron</German>
         <Russian>Благочестивое служение</Russian>
     </TEXT>
