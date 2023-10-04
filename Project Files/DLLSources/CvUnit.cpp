@@ -1013,7 +1013,8 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				// WTP, ray, Lieutenants and Captains - START
 				if (GET_PLAYER(pDefender->getOwnerINLINE()).isPlayable() || GET_PLAYER(pDefender->getOwnerINLINE()).isEurope())
 				{
-					if (pDefender->getDomainType() == DOMAIN_LAND)
+					// WTP, ray, prevent unimmersive cases of Brave Lieutenants being spawned by Combat with e.g. Missioniaries
+					if (pDefender->getDomainType() == DOMAIN_LAND && !pDefender->getUnitInfo().isOnlyDefensive())
 					{
 						int iBraveLieutenantChance = GC.getDefineINT("LIEUTENANT_CHANCE_PER_LAND_COMBAT_IN_PERCENT");
 						int randomValue = GC.getGameINLINE().getSorenRandNum(100, "Check for Lieutenant");
@@ -1062,7 +1063,8 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				// WTP, ray, Lieutenants and Captains - START
 				if (GET_PLAYER(getOwnerINLINE()).isPlayable() || GET_PLAYER(getOwnerINLINE()).isEurope())
 				{
-					if (getDomainType() == DOMAIN_LAND)
+					// WTP, ray, prevent unimmersive cases of Brave Lieutenants being spawned by Combat with e.g. Missioniaries
+					if (getDomainType() == DOMAIN_LAND && !pDefender->getUnitInfo().isOnlyDefensive())
 					{
 						const int iBraveLieutenantChance = GC.getDefineINT("LIEUTENANT_CHANCE_PER_LAND_COMBAT_IN_PERCENT");
 						const int randomValue = GC.getGameINLINE().getSorenRandNum(100, "Check for Lieutenant");
