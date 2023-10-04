@@ -561,9 +561,10 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
 
 					if (iAmount > 0)
 					{
-						GET_PLAYER(eFromPlayer).changeYieldTradedTotal(eYield, iAmount);
-						GET_PLAYER(eToPlayer).changeYieldTradedTotal(eYield, iAmount);
-						GC.getGameINLINE().changeYieldBoughtTotal(GET_PLAYER(eToPlayer).getID(), eYield, -iAmount);
+						// WTP, ray, fixing that deals with other Players through Diplomacy changes Yield bought (in Europe) and thus affects taxes
+						// GET_PLAYER(eFromPlayer).changeYieldTradedTotal(eYield, iAmount);
+						// GET_PLAYER(eToPlayer).changeYieldTradedTotal(eYield, iAmount);
+						// GC.getGameINLINE().changeYieldBoughtTotal(GET_PLAYER(eToPlayer).getID(), eYield, -iAmount);
 
 						int iNativeHappy = GC.getYieldInfo(eYield).getNativeHappy();
 						if (iNativeHappy != 0)
