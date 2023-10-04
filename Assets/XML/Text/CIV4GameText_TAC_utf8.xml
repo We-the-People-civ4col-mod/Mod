@@ -1533,7 +1533,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_YOU_UNIT_CAPTURED_PRISONER_OF_WAR</Tag>
-        <English>A few wounded enemy soldier surived the battle and war taken as [COLOR_WARNING_TEXT]prisoners of war[COLOR_REVERT].</English>
+        <English>A few wounded enemy soldier surived the battle and were taken as [COLOR_WARNING_TEXT]prisoners of war[COLOR_REVERT].</English>
         <French>Une unité ennemie a été capturé après le combat.</French>
         <German>Einige verletzte feindliche Soldaten haben die Schlacht überlebt und wurden als [COLOR_WARNING_TEXT]Kriegsgefangene[COLOR_REVERT] genommen.</German>
     </TEXT>
