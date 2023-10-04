@@ -1383,7 +1383,7 @@
     <TEXT>
         <Tag>TXT_KEY_LBD_EXPERT_IN_CITY</Tag>
         <English>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]A free colonist who has worked long in his profession has now gained enough knowledge to be considered [COLOR_UNIT_TEXT]%s2_expert[COLOR_REVERT].</English>
-        <French>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT] Un colon libre avec de l'expérience dans sa profession a acquis assez de compétences pour être tenu pour [COLOR_UNIT_TEXT]%s1_expert.[COLOR_REVERT].</French>
+        <French>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT] Un colon libre avec de l'expérience dans sa profession a acquis assez de compétences pour être tenu pour [COLOR_UNIT_TEXT]%s2_expert[COLOR_REVERT].</French>
         <German>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Ein Freier Kolonist, der lange in seinem Beruf gearbeitet hat, hat nun genug Wissen erlangt, um als [COLOR_UNIT_TEXT]%s2_expert[COLOR_REVERT] zu gelten.</German>
         <Russian>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Свободный колонист, долго трудившийся по своей профессии, теперь получил достаточно знаний, чтобы стать [COLOR_UNIT_TEXT]%s2_expert[COLOR_REVERT].</Russian>
     </TEXT>
