@@ -1393,7 +1393,7 @@
     <TEXT>
         <Tag>TXT_KEY_FATHER_IMPROVEMENT_GROWTH_TIME_MODIFIER</Tag>
         <English>[ICON_BULLET]%D1%% time for improvements to upgrade to next level</English>
-        <French>[ICON_BULLET]%D1%% pour que le travail de terrain passe au niveau supérieur.</French>
+        <French>[ICON_BULLET]%D1%% de temps pour que les aménagements s'améliorent.</French>
         <German>[ICON_BULLET]%D1%% Zeit für Wachstum von Geländeverbesserungen</German>
         <Russian>[ICON_BULLET]%D1%% времени, нужного для получения улучшением следующего уровня</Russian>
     </TEXT>

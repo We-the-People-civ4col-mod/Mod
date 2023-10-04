@@ -5588,7 +5588,7 @@
     <TEXT>
         <Tag>USER_DIPLO_TAX_PARTY_1</Tag>
         <English>I regret I must oppose You, Your Majesty. And so must my citizens. I hear that in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] they have destroyed all [COLOR_UNIT_TEXT]%s2_yield[COLOR_REVERT] in protest. (You will no longer be able to trade this good with Europe)</English>
-        <French>Non, j'ai inauguré la fête nationale du [COLOR_UNIT_TEXT]%s2_yield[COLOR_REVERT] ! (Vous ne pourrez plus faire le commerce de ce bien avec l'Europe.)</French>
+        <French>Nos citoyens et moi sommes dans le plus profond regret de ne pas y consentir. J'ai entendu dire que [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] avait détruit toutes ses réserves de [COLOR_UNIT_TEXT]%s2_yield[COLOR_REVERT] en protestation. (Vous ne pourrez plus faire le commerce de ce bien avec l'Europe.)</French>
         <German>Bedaure, ich muss mich Euch widersetzen, Eure Majestät. Und meine Bürger auch. Wie ich höre, haben sie in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] aus Protest alle [COLOR_UNIT_TEXT]%s2_yield[COLOR_REVERT] vernichtet. (Ihr könnt dieses Handelsgut nun nicht mehr mit Europa handeln.)</German>
         <Italian>No, è ora di smetterla col [COLOR_UNIT_TEXT]%s2_yield[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]! (Non potrai più commerciare questo bene con l'Europa.)</Italian>
         <Spanish>¡No, es hora del partido [NUM2:del:de la:de los:de las] [COLOR_UNIT_TEXT]%s2_yield[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]! (Ya no podréis intercambiar esta mercancía con Europa).</Spanish>
@@ -5714,7 +5714,7 @@
     <TEXT>
         <Tag>USER_DIPLO_REVOLUTION_1</Tag>
         <English>We, the people, demand our freedom! (REVOLUTION)</English>
-        <French>Nous, le peuple, exigeons notre liberté ! (REVOLUTION)</French>
+        <French>Nous, le peuple, exigeons notre liberté ! (RÉVOLUTION)</French>
         <German>Wir, das Volk, verlangen unsere Freiheit! (REVOLUTION)</German>
         <Italian>Noi, il popolo, vogliamo la libertà! (RIVOLUZIONE)</Italian>
         <Spanish>¡Nosotros, el pueblo, exigimos nuestra libertad! (REVOLUCIÓN)</Spanish>
@@ -5768,7 +5768,7 @@
     <TEXT>
         <Tag>AI_DIPLO_ACQUIRE_NATIVE_SLAVE_1</Tag>
         <English>Our warriors have been victorious in many battles during the last months and have taken many prisoners. Our wise men say that a hard winter is coming. We cannot feed more hungry mouths. Give us %d1[ICON_GOLD]and take them as slaves.</English>
-        <French>Étrangers, nos guerriers ont été victorieux dans de nombreuses batailles ces derniers mois. Ils ont fait de nombreux prisonniers. Nos sages nous préviennent cependant que l'hiver prochain sera rude et que nous ne risquons de ne pas pouvoir nourrir tout le monde. Nous vous les offrons en tant qu'esclaves pour seulement %d1[ICON_GOLD].</French>
+        <French>Étrangers, nos guerriers ont été victorieux dans de nombreuses batailles ces derniers mois. Ils ont fait de nombreux prisonniers. Nos sages nous préviennent cependant que l'hiver prochain sera rude. Nous ne pourrons pas nourrir tout le monde. Nous vous les offrons en tant qu'esclaves pour seulement %d1[ICON_GOLD].</French>
         <German>Weißer Mann, unsere Krieger haben in den letzten Monate siegreich gekämpft und viele Gefangene gemacht. Doch es steht ein harter Winter bevor und wir können keine weiteren hungrigen Münder gebrauchen. Wenn Ihr uns lediglich %d1[ICON_GOLD] gebt, werden wir sie Euch als Sklaven überlassen.</German>
         <Italian>Uomo bianco, i nostri guerrieri hanno combattuto vittoriosamente in questi mesi e hanno fatto molti prigionieri. Ma sta arrivando un duro inverno e non possiamo usare altre bocche affamate. Se vi limitate a darci %d1[ICON_GOLD], ve li daremo come schiavi.</Italian>
         <Spanish>Hombre blanco, nuestros guerreros han luchado victoriosamente estos últimos meses y han tomado muchos prisioneros. Pero se avecina un duro invierno y no podemos utilizar más bocas hambrientas. Si simplemente nos das %d1[ICON_GOLD], te los daremos como esclavos.</Spanish>
@@ -5777,7 +5777,7 @@
     <TEXT>
         <Tag>AI_DIPLO_ACQUIRE_AFRICAN_SLAVES_1</Tag>
         <English>Our governors in Africa have informed Us that slave markets are overstocked. Slaves are cheap. Although We consider slavery morally reprehensible, We cannot help but point out to you that slaves would increase your productivity and Our income. We therefore strongly advise you to consider using slaves. A shipment of slaves would only cost %d1[ICON_GOLD].</English>
-        <French>Nos représentants en Afrique nous ont dit qu'un grand nombre d'esclaves sont disponibles sur le marché à un prix très raisonnable. Davantage d'esclaves améliorera certainement la productivité et les revenus de nos colonies. Nous pouvons nous arranger pour en acquérir et vous les livrer aux Amériques pour seulement %d1[ICON_GOLD].</French>
+        <French>Nos représentants en Afrique Nous ont informés que les marchés aux esclaves débordent. Bien que Nous considérions l'esclavage comme moralement condamnable, Nous ne pouvons être insensible au fait que les esclaves permettrait d'améliorer la productivité  de vos colonies et Nos revenus. Nous vous recommendons donc fortement d'user des esclaves. Une cargaison d'esclaves vous coûterait seulement %d1[ICON_GOLD].</French>
         <German>Unsere Statthalter in Afrika haben uns mitgeteilt, dass die Sklavenmärkte gegenwärtig ein hohes Angebot aufweisen und Sklaven günstig zu haben sind. Auch wenn Wir Sklavenhaltung für moralisch verwerflich halten, kommen Wir nicht umhin Euch darauf hinzuweisen, dass der Einsatz von Sklaven Eure Produktivität und Unser Einkommen deutlich erhöhen würde. Wir raten Euch daher dringend an, den Einsatz von Sklaven in Erwägung zu ziehen. Die Überfahrt der Sklaven würde Euch lediglich %d1[ICON_GOLD] kosten.</German>
         <Italian>I nostri rappresentanti in Africa ci hanno parlato di un enorme carico di schiavi disponibili nei mercati degli schiavi ad un prezzo molto ragionevole. Più schiavi aumenteranno sicuramente la produttività e il reddito delle nostre colonie. Possiamo organizzare il loro acquisto e la spedizione nelle nostre colonie americane per solo %d1[ICON_GOLD].</Italian>
         <Spanish>Nuestros representantes en África nos han informado de que hay una gran cantidad de esclavos disponibles en los mercados de esclavos a un precio muy razonable. Un mayor número de esclavos seguramente aumentará la productividad y los ingresos de nuestras colonias. Podemos organizar su adquisición y envío a nuestras colonias americanas por sólo %d1[ICON_GOLD].</Spanish>
@@ -5786,7 +5786,7 @@
     <TEXT>
         <Tag>AI_DIPLO_PRISONS_CROWDED</Tag>
         <English>Our prisons are overcrowded. These criminals spout sacrilegious opinions such as "Only without taxes are people free" or "WE are the people" and otherwise speak out against their rightful King. We will place them in your custody if you pay the %d1[ICON_GOLD] travel expense for them.</English>
-        <French>Nos prisons sont pleines. Même si certains d'entre eux ont commis des crimes impardonnables comme « ne pas avoir payer ses impôts » ou « parler contre notre Majesté si légitime », nous sommes prêts à vous les laisser comme force de travail pour seulement %d1[ICON_GOLD].</French>
+        <French>Nos prisons sont surpeuplées. Ces criminels profèrent des opinions sacrilèges comme « le peuple n'est libre qu'en absence de taxes » ou « NOUS sommes le peuple » et osent  éléver la voix contre leur Roi légitime. Nous les plaçons sous votre garde si vous payez leur traversée pour %d1[ICON_GOLD].</French>
         <German>Unsere Gefängnisse sind überfüllt. Auch wenn einige dieser Kriminellen ohne Unterlass frevelhafte Gedanken und Meinungen äußern, wie "nur ohne Steuern sind die Menschen frei" oder "WIR sind das Volk" oder auf andere Art und Weise das Wort erheben gegen ihren rechtmäßigen König, werden Wir sie Eurer Obhut unterstellen, wenn Ihr die Unkosten von %d1[ICON_GOLD] dafür übernehmt.</German>
         <Italian>Le nostre prigioni sono sovraffollate. Questi criminali sputano opinioni sacrileghe come "Solo senza tasse le persone sono libere" o "Noi siamo il popolo" e altrimenti parlano contro il loro legittimo Re. Li metteremo sotto la vostra custodia se pagherete le spese di viaggio %d1[ICON_GOLD] per loro.</Italian>
         <Spanish>Nuestras cárceles están superpobladas. Estos delincuentes emiten opiniones sacrílegas como "Sólo sin impuestos el pueblo es libre" o "Nosotros somos el pueblo" y se manifiestan en contra de su legítimo Rey. Los pondremos bajo tu custodia si pagas los gastos de viaje %d1[ICON_GOLD] por ellos.</Spanish>
@@ -5795,7 +5795,7 @@
     <TEXT>
         <Tag>AI_DIPLO_REVOLUTIONARY_NOBLE</Tag>
         <English>A well-known nobleman has lost his mind. Against all sense of reality, he talks about how "All men are created equal". We have decided that it is best that he disappears from Our sight. We would be grateful if you would support Us in this matter. He needs %d1[ICON_GOLD] to start a new life in the New World.</English>
-        <French>Un noble devenu célèbre et se prétendant philosophe est devenu complètement fou, énonçant des principes aussi peu naturels que « tous les hommes sont égaux » ! Nous souhaitons l'envoyer voir votre beau pays. Il est prêt à accepter son départ à la condition que vous lui offriez %d1[ICON_GOLD] pour commencer sa nouvelle vie.</French>
+        <French>Un noble célèbre a perdu la tête. Dans un déni de la réalité, il avance des idées farfelues comme « tous les hommes sont égaux » ! Il est de notre plaisir de l'envoyer voir du pays, loin de Notre vue. Nous vous serions reconnaissant de nous aider en cette tâche. Il aurait besoin de %d1[ICON_GOLD] pour recommencer sa vie dans le Nouveau Monde.</French>
         <German>Ein bekannter Edelmann hat den Verstand verloren. Gegen jedes Rechtsempfinden spricht er darüber, dass "alle Menschen gleich geschaffen sind". Wir haben entschieden, dass es dass Beste ist, wenn er aus Unseren Augen verschwindet. Wir wären Euch dankbar, wenn Ihr Uns in dieser Sache unterstützt. Er benötigt %d1[ICON_GOLD], um in der Neuen Welt ein neues Leben zu beginnen.</German>
         <Italian>Un noto nobile ha perso la testa. Contro ogni senso di giustizia, parla di come "tutti gli uomini sono creati uguali". Abbiamo deciso che sarebbe meglio che sparisse dalla nostra vista. Vi saremmo grati se ci sosteneste in questa faccenda. Ha bisogno di %d1[ICON_GOLD] per iniziare una nuova vita nel Nuovo Mondo.</Italian>
         <Spanish>Un conocido noble ha perdido la cabeza. Contra todo sentido de la justicia, habla de que "todos los hombres son creados iguales". Hemos decidido que lo mejor sería que desapareciera de nuestra vista. Le agradeceríamos que nos apoyara en este asunto. Necesita %d1[ICON_GOLD] para empezar una nueva vida en el Nuevo Mundo.</Spanish>
@@ -5804,7 +5804,7 @@
     <TEXT>
         <Tag>AI_DIPLO_BISHOP</Tag>
         <English>Your Mother Church is pleased with your progress in spreading Christianity in the New World. We therefore offer you, for only %d1[ICON_GOLD], to send a bishop to the New World to guide the faithful safely on the path of the righteous.</English>
-        <French>Notre Saint-Mère l'église est ravie de voir vos efforts pour faire prospérer la Chrétienté au Nouveau Monde. Nous proposons de vous envoyer un évêque guider vos ouailles pour la modique somme de %d1[ICON_GOLD].</French>
+        <French>Notre Saint-Mère l'Église est ravie de voir vos efforts pour faire prospérer la Chrétienté au Nouveau Monde. Nous proposons de vous envoyer un évêque guider vos ouailles pour la modique somme de %d1[ICON_GOLD].</French>
         <German>Die Heilige Mutter Kirche ist erfreut über Eure Fortschritte, das Christentum in der Neuen Welt zu verbreiten. Wir bieten Euch daher an, für nur %d1[ICON_GOLD] einen Bischof in die Neue Welt zu entsenden, um die Gläubigen sicher auf den Pfad der Gerechten zu geleiten.</German>
         <Italian>La Santa Madre Chiesa si compiace dei vostri progressi nella diffusione del cristianesimo nel Nuovo Mondo. Ti offriamo quindi, per solo %d1[ICON_GOLD], di inviare un vescovo nel Nuovo Mondo per guidare i fedeli in modo sicuro sul sentiero dei giusti.</Italian>
         <Spanish>La Santa Madre Iglesia está complacida con su progreso en la difusión del cristianismo en el Nuevo Mundo. Por lo tanto, te ofrecemos, por sólo %d1[ICON_GOLD], enviar un obispo al Nuevo Mundo para guiar a los fieles con seguridad en el camino de los justos.</Spanish>
@@ -5822,7 +5822,7 @@
     <TEXT>
         <Tag>AI_DIPLO_CHURCH_WELCOME_FUR</Tag>
         <English>Ah, the sinner returns. Do you wish to ask the forgiveness of the Almighty?</English>
-        <French>Tiens, le pêcheur est de retour. Souhaitez-vous demander l'absolution pour tous vos pêchés ?</French>
+        <French>Tiens, le pêcheur est de retour. Souhaitez-vous demander au Tout-Puissant l'absolution pour tous vos pêchés ?</French>
         <German>Oh, der Sünder kehrt zurück. Seid Ihr gekommen, um Gottes Vergebung zu erbitten ?</German>
         <Italian>Oh, il peccatore ritorna. Sei venuto a cercare il perdono di Dio?</Italian>
         <Spanish>Oh, el pecador vuelve. ¿Has venido a buscar el perdón de Dios?</Spanish>
@@ -5837,13 +5837,14 @@
     <TEXT>
         <Tag>AI_DIPLO_KING_WELCOME_FUR</Tag>
         <English>Ah, the proud governor finally visits the court again. What is it this time? Do not waste the time of your most generous Majesty.</English>
+        <France>Ah, notre si orgueilleux gouverneur  daigne à nouveau visiter Notre court. De quoi s'agit-il cette fois? ne gâchez pas le temps de votre si généreuse Majesté.</France>
         <German>Soso, der Stolze Gouverneur besucht den Hof erneut. Was benötigt ihr dieses Mal? Kommt zum Punkt und verschwendet nicht die Zeit eures großzügigen Herrschers.</German>
         <Russian>Ах, гордый губернатор наконец-то снова посетил двор. Что на этот раз? Поторопись и не теряй времени твоего Великодушнейшего Величества.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_CHURCH_DEMAND</Tag>
         <English>We are delighted to see the colonies acquiring wealth, but in Europe people are suffering. Thus, since you are good Christians, you would surely like to donate %d1[ICON_GOLD] to your Mother Church, so we can help them.</English>
-        <French>Nous sommes ravis de voir vos colonies prospérer et acquérir tant d'opulence... Sachez qu'en Europe le peuple souffre. En tant que bons chrétiens miséricordieux, j'imagine que vous donneriez naturellement %d1[ICON_GOLD] à notre Sainte église pour leur venir en aide.</French>
+        <French>Nous sommes ravis de voir vos colonies prospérer et s'enrichir, Sachez qu'en Europe le peuple souffre. En tant que bons chrétiens miséricordieux, j'imagine que vous donneriez naturellement %d1[ICON_GOLD] à notre Sainte-Mère l'Église pour que nous les aidions.</French>
         <German>Wir sind erfreut zu sehen, dass die Kolonien in Wohlstand schwelgen. Aber in Europa leiden die Menschen. Daher werdet Ihr als gute Christen doch sicherlich der Mutter Kirche die kleine Summe von %d1[ICON_GOLD] spenden, damit ihnen geholfen wird.</German>
         <Italian>Siamo lieti di vedere che le colonie si crogiolano nella prosperità. Ma in Europa il popolo sta soffrendo. Perciò, da buoni cristiani, donerete sicuramente la piccola somma di %d1[ICON_GOLD] alla Chiesa Madre affinché siano aiutati.</Italian>
         <Spanish>Nos complace ver que las colonias gozan de prosperidad. Pero en Europa la gente está sufriendo. Por lo tanto, como buenos cristianos, seguramente donarán la pequeña suma de %d1[ICON_GOLD] a la Iglesia Madre para que puedan ser ayudados.</Spanish>
@@ -5852,7 +5853,7 @@
     <TEXT>
         <Tag>AI_DIPLO_CHURCH_FAVOUR</Tag>
         <English>What can the Holy Mother Church do to help the good Christians of the colonies? (Favour will require donation of %d1[ICON_GOLD])</English>
-        <French>Que peut faire notre Sainte église pour aider les bons chrétiens de vos colonies ? (la faveur nécessitera un don de %d1[ICON_GOLD])</French>
+        <French>Que peut faire notre notre Sainte-Mère l'Église pour aider les bons chrétiens de vos colonies ? (la faveur nécessitera un don de %d1[ICON_GOLD])</French>
         <German>Wie kann die Heilige Mutter Kirche die guten Christen in den Kolonien unterstützen? (Unterstützung setzt eine Spende von %d1[ICON_GOLD] voraus)</German>
         <Italian>Come può la Santa Madre Chiesa sostenere i buoni cristiani nelle colonie? (Il sostegno richiede una donazione di %d1[ICON_GOLD])</Italian>
         <Spanish>¿Cómo puede la Santa Madre Iglesia apoyar a los buenos cristianos de las colonias? (El apoyo requiere una donación de %d1[ICON_GOLD])</Spanish>
@@ -5861,7 +5862,7 @@
     <TEXT>
         <Tag>AI_DIPLO_SMUGGLERS</Tag>
         <English>We have heard rumours that smugglers are peddling their goods from the New World in Our ports, committing an unacceptable crime against the Crown. These criminals must be caught! We command you to investigate these rumours and apprehend the smugglers.[NEWLINE](HINT: Hiring smugglers will cost %d1_gold[ICON_GOLD])</English>
-        <French>Certaines rumeurs alarmantes font état d'un trafic de contrebande dans nos ports. Ces criminels doivent être éradiqués ! Nous vous ordonnons une enquête sur le sujet.[NEWLINE](NOTE: les contrebandiers vont vous coûter %d1_gold[ICON_GOLD])</French>
+        <French>Certaines rumeurs alarmantes font état d'un trafic de contrebande en provenance du Nouveau Monde dans nos ports, se rendant coupable de lèse-majesté. Ces criminels doivent être capturés ! Nous vous ordonnons une enquête sur le sujet et de les capturer.[NEWLINE](NOTE: les contrebandiers vont vous coûter %d1_gold[ICON_GOLD])</French>
         <German>Wir haben Gemunkel darüber verlauten hören, dass Schmuggler ihre Waren aus der Neuen Welt in Unseren Häfen feilbieten und damit nicht hinnehmbare Verbrechen gegen die Krone begehen. Diese Verbrecher müssen gefasst werden! Wir befehlen Euch, diesen Gerüchten nachzugehen und die Schmuggler dingfest zu machen.[NEWLINE](Hinweis: Die Anwerbung von Schmugglern kostet %d1_gold[ICON_GOLD])</German>
         <Italian>Abbiamo sentito voci che i contrabbandieri del Nuovo Mondo vendono la loro merce nei nostri porti, commettendo crimini inaccettabili contro la Corona. Questi criminali devono essere presi! Vi ordiniamo di indagare su queste voci e di arrestare i contrabbandieri.[NEWLINE](Nota: reclutare contrabbandieri costa %d1_gold[ICON_GOLD])</Italian>
         <Spanish>Hemos oído rumores de que contrabandistas del Nuevo Mundo están vendiendo sus mercancías en nuestros puertos, cometiendo crímenes inaceptables contra la Corona. ¡Hay que atrapar a estos criminales! Te ordenamos que investigues estos rumores y detengas a los contrabandistas.[NEWLINE](Nota: Reclutar contrabandistas cuesta %d1_gold[ICON_GOLD])</Spanish>
@@ -5905,21 +5906,21 @@
     <TEXT>
         <Tag>AI_DIPLO_GET_REV_SUPPORT</Tag>
         <English>Our sovereign, [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT], is impressed by your quest for independence and wishes to support your struggle.</English>
-        <French>Notre Majesté, [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT], souhaite vous soutenir dans votre guerre d'indépendance.</French>
+        <French>Notre Majesté, [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT], est impressionné par votre quête d'indépendance et souhaite vous soutenir dans vos combats..</French>
         <German>Unser Herrscher, der [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT], ist beeindruckt von Eurem Bestreben nach Unabhängigkeit und wünscht, Euren Kampf zu unterstützen.</German>
         <Russian>Наш повелитель, [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT], впечатлен вашим стремлением к независимости и желает поддержать вашу борьбу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_EUROPE_WAR</Tag>
         <English>It has pleased Us to declare war on the [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT]. We expect you to attack his colonies in the New World!</English>
-        <French>Nous sommes en guerre contre notre ennemi sans moral, [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT]. Nous vous ordonnons de détruire toutes ses colonies au Nouveau Monde.</French>
+        <French>Il est de Notre plaisir de déclarer la guerre à [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT]. Nous vous ordonnons de d'attaquer toutes ses colonies au Nouveau Monde.</French>
         <German>Uns hat beliebt, dem [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT] den Krieg zu erklären. Von Euch erwarten Wir, dass Ihr seine Kolonien in der Neuen Welt angreift!</German>
         <Russian>Нам было угодно объявить войну [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT]. Мы ожидаем, что вы атакуете его колонии в Новом Свете!</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_EUROPE_PEACE</Tag>
         <English>The [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT] has asked Us that you end the war with his colonies. As We fear for Our reputation, We wish this to happen. If you desire it, We will send you a well-respected diplomat along with an adept of the Church to assist in the negotiations.</English>
-        <French>Il nous a été demandé par [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT] que vous mettiez fin à votre guerre contre ses colonies.</French>
+        <French>Le [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT] Nous a demandé que vous cessiez votre guerre contre les colonies de son royaume. Comme nous craignons pour notre réputation, il est de notre plaisir qu'il en soit ainsi. Si vous le souhaitez, Nous vous enverrons un diplomaté apprécié de ses pairs ainsi qu'un prélat de haut rang pour mener à bien les négociations. </French>
         <German>Der [COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT] hat Uns gebeten, dass Ihr den Krieg mit seinen Kolonien beendet. Da wir um Unseren Ruf fürchten, wünschen Wir, dass dem so geschieht. Wenn Ihr es wünscht, schicken Wir Euch einen bekannten Diplomaten und einen weisen Mann der Kirche zur Unterstützung der Verhandlungen.</German>
         <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_king[COLOR_REVERT] попросил Нас положить конец войне с его колониями. Поскольку на кону Наша репутация, Мы желаем, чтобы это произошло. Если нужно, Мы пришлем к вам уважаемого дипломата вместе с его секретарём для помощи в переговорах.</Russian>
     </TEXT>
@@ -5983,48 +5984,56 @@
     <TEXT>
         <Tag>USER_DIPLO_ASK_TO_BUY_USED_SHIP</Tag>
         <English>Could your Majesty help us to acquire a used ship for a good price?</English>
+        <French>Sa majesté pourrait-elle nous aider à acquérir un navire de seconde main à bon prix?</French>
         <German>Könnte Ihre Majestät uns helfen günstig ein gebrauchtes Schiffe zu erwerben?</German>
         <Russian>Ваше Величество, не могли бы Вы помочь нам приобрести подержанный корабль по сходной цене?</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_OFFERS_USED_SHIP</Tag>
         <English>We know a ship trader willing to sell a %s3_unit for %d1[ICON_GOLD]. We could arrange that deal.</English>
+        <French>Nous connaissons un armateur prêt à vendre un navire de classe %s3_unit for %d1[ICON_GOLD]. Nous pouvons mener cette affaire à bien.</French>
         <German>Wir kennen einen Schiffshändler, der ein Schiff des Typs %s3_unit für %d1[ICON_GOLD] verkaufen möchte.</German>
         <Russian>Мы знаем одного торговца кораблями, который хочет продать [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] за %d1[ICON_GOLD]. Мы могли бы устроить эту сделку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_REFUSES_TO_OFFER_USED_SHIP</Tag>
         <English>Currently we cannot be bothered with such business. Ask again in a few months.</English>
+        <French>Nous n'avons guère cure de ce genre d'affaire en ce moment. Demandez quelque temps plus tard</French>
         <German>Im Moment können wir mit solch Lapalien nicht belästigt werden. Vielleicht können wir aber in einigen Monaten helfen.</German>
         <Russian>В настоящее время Мы заняты более важными делами и не можем ничем вам помочь. Рады были увидеть вас в добром здравии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACCEPT_BUY_USED_SHIP</Tag>
         <English>Thank you, your Majesty. We appreciate your support and will gladly buy the ship.</English>
+        <French>Sire, nous vous remercions. Nous apprécions votre aide et achèterons bien volontiers ce navire.</French>
         <German>Danke Eure Majestät. Wir schätzen eure Unterstätzung und erwerben das Schiff gerne.</German>
         <Russian>Благодарю вас, Ваше Величество. Мы ценим Вашу поддержку и с радостью выкупим этот чудесный корабль.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ASK_FOREIGN_KING_BUY_IMMIGRANTS</Tag>
         <English>Would your Majesty help us to hire skilled workers for our colony? We will pay a good price.</English>
+        <French>Sa majesté pourrait-elle nous aider à recruter des travailleurs qualifiés pour notre colonies? Nous paieront un bon prix.</French>
         <German>Könnte Ihre Majestät uns helfen willige und fähige Arbeiter für unsere Kolonie zu suchen? Wir bezahlen auch einen guten Preis.</German>
         <Russian>Ваше Величество, не поможете ли нам нанять квалифицированных рабочих для нашей колонии? Мы заплатим хорошую цену.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FOREIGN_KING_OFFERS_IMMIGRANTS</Tag>
         <English>We heard of a [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] looking for a new home and for %d1[ICON_GOLD] we might arrange their passage.</English>
+        <French>Nous avons entendu parler d'un [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] cherchant un nouveau chez-soi et nous pourrions arranger sa venue pour %d1[ICON_GOLD] </French>
         <German>Wir haben von einem [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] gehört, der eine neue Heimat sucht und für %d1[ICON_GOLD] könnten wir ihre Überfahrt arrangieren.</German>
         <Russian>Мы слышали, что [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] ищет возможность перебраться в колонии и за скромную сумму в %d1[ICON_GOLD] мы готовы ему в этом помочь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FOREIGN_KING_REFUSES_IMMIGRANTS</Tag>
         <English>Currently we cannot be bothered with such business. Come back in a few months.</English>
+        <French>Nous n'avons guère cure de ce genre d'affaire en ce moment. Demandez quelque temps plus tard</French>
         <German>Im Moment können wir mit solch Lapalien nicht belästigt werden. Vielleicht können wir aber in einigen Monaten helfen.</German>
         <Russian>В настоящее время Мы заняты более важными делами и не можем ничем вам помочь. Рады были увидеть вас в добром здравии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACCEPT_FOREIGN_IMMIGRANTS</Tag>
         <English>Thank you, your Majesty. We appreciate your support and will gladly hire the workers.</English>
+        <French>Sire, nous vous remercions. Nous apprécions votre aide et recruterons bien volontiers ces travailleurs.</French>
         <German>Danke Eure Majestät. Wir schätzen eure Unterstätzung und werben die Arbeiter freudig an.</German>
         <Russian>Спасибо, Ваше Величество. Мы ценим Вашу поддержку и с удовольствием наймем этого опытного работника.</Russian>
     </TEXT>
@@ -6067,7 +6076,7 @@
     <TEXT>
         <Tag>AI_DIPLO_TREASURE_TRANSPORT_1</Tag>
         <English>A treasure! Well, well. This New World seems to have riches. A Royal Galleon can ferry the valuables home. Leave the find to the Crown, you will receive %d2[ICON_GOLD] from Us instantly, and you can get back to your daily business.</English>
-        <French>Un trésor ! Eh bien, eh bien. Ce Nouveau Monde semble avoir des richesses. Un galion royal peut transporter les objets de valeur chez vous. Laissez la découverte à la Couronne, vous recevrez %d2[ICON_GOLD] de notre part instantanément, et vous pourrez retourner à vos occupations quotidiennes.</French>
+        <French>Un trésor ! Eh bien, eh bien. Ce Nouveau Monde semble avoir des richesses. Un galion royal peut transporter les objets de valeur chez vous. Laissez la découverte à la Couronne, vous recevrez %d2[ICON_GOLD] de notre part instantanément, et vous pourrez vaquer à vos occupations quotidiennes.</French>
         <German>Ein Schatz! Sieh an. Diese Neue Welt scheint über gewisse Reichtümer zu verfügen. Nun, eine Königliche Galeone kann die Pretiosen in die Heimat überführen. Überlasst den Fund der Krone, und Ihr erhaltet von Uns stante pede %d2[ICON_GOLD] und könnt Euch danach wieder Eurem Tagesgeschäft widmen.</German>
         <Italian>Un tesoro! Bene, bene. Questo Nuovo Mondo sembra avere ricchezze. Un galeone reale può traghettare gli oggetti di valore a casa. Lascia il ritrovamento alla Corona, riceverai %d2[ICON_GOLD] da Noi all'istante, e potrai tornare ai tuoi affari quotidiani.</Italian>
         <Spanish>Ein Schatz! Sieh an, sieh an. Diese Neue Welt scheint Reichtümer zu haben. Eine königliche Galeone kann die Kostbarkeiten nach Hause transportieren. Überlasst den Fund der Krone, Ihr erhaltet sofort %d2[ICON_GOLD] von Uns, und Ihr könnt Euch wieder Eurem Tagesgeschäft widmen.</Spanish>
@@ -6166,7 +6175,7 @@
     <TEXT>
         <Tag>AI_DIPLO_KISS_PINKY_3</Tag>
         <English>From now on, instead of paying Us %d1_old_rate%% taxes, you may pay Us %d2_new_rate%%, [CT_NAME]. We know that you love Us and graciously grant you an opportunity to show it. Give thanks and kiss Our ring.</English>
-        <French>À partir de maintenant, au lieu de nous payer des taxes au taux %d1_old_rate%%, vous pouvez nous payer au taux %d2_new_rate%%, [CT_NAME]. Nous savons que vous Nous aimez et nous vous donnons gracieusement l'occasion de le montrer. Remerciements et baise Notre anneau.</French>
+        <French>À partir de maintenant, au lieu de nous payer des taxes au taux %d1_old_rate%%, vous pouvez nous payer au taux %d2_new_rate%%, [CT_NAME]. Nous savons que vous Nous aimez et nous vous donnons gracieusement l'occasion de le montrer. Veuillez Nous remercier et baiser Notre anneau.</French>
         <German>Ab sofort dürft Ihr Uns statt %d1_old_rate%% Steuern deren %d2_new_rate%% entrichten, [CT_NAME]. Wir wissen, dass Ihr Uns liebt, und gewähren Euch huldvoll eine Gelegenheit, dies zu zeigen. Bedankt Euch und küsst Unseren Ring.</German>
         <Italian>D'ora in poi, invece di pagarci le tasse %d1_old_rate%%, potete pagarci %d2_new_rate%%, [CT_NAME]. Sappiamo che ci ami e ti concediamo gentilmente l'opportunità di dimostrarlo. Ringrazia e bacia il nostro anello.</Italian>
         <Spanish>A partir de ahora, en lugar de pagarnos %d1_old_rate%% de impuestos, puede pagarnos %d2_new_rate%%, [CT_NAME]. Sabemos que nos amas y te damos la oportunidad de demostrarlo. Da las gracias y besa Nuestro anillo.</Spanish>
@@ -6175,7 +6184,7 @@
     <TEXT>
         <Tag>AI_DIPLO_KISS_PINKY_4</Tag>
         <English>You pay Us %d2_new_rate%% instead of %d1_old_rate%% taxes from now on, [CT_NAME]. Surprised? Had you forgotten about Us? Well, We have not forgotten you. Now kiss Our ring.</English>
-        <French>Vous paierez désormais des impôts à %d2_new_rate%% au lieu de %d1_old_rate%%, [CT_NAME]. Surpris ? Tu nous avais oubliés ? Nous ne vous avions pas oublié. Et maintenant, embrassez notre anneau.</French>
+        <French>Vous paierez désormais une taxe portée à %d2_new_rate%% au lieu de %d1_old_rate%%, [CT_NAME]. Surpris ? Nous auriez-vous oubliés ? Nous ne vous avions pas oublié. Et maintenant, embrassez notre anneau.</French>
         <German>Ihr zahlt Uns ab sofort %d2_new_rate%% statt %d1_old_rate%% Steuern, [CT_NAME]. Überrascht? Hattet Ihr Uns vergessen? Nun, Wir Euch nicht. Und nun küsst Unseren Ring.</German>
         <Italian>D'ora in poi pagherai noi %d2_new_rate%% invece di %d1_old_rate%% di tasse, [NOME_TC]. Sorpreso? Ti eri dimenticato di noi? Beh, non ti avevamo dimenticato. E ora bacia il nostro anello.</Italian>
         <Spanish>A partir de ahora pagará %d2_new_rate%% en lugar de %d1_old_rate%% de impuestos, [CT_NAME]. ¿Sorprendido? ¿Te has olvidado de nosotros? Bueno, no nos habíamos olvidado de ti. Y ahora besa nuestro anillo.</Spanish>
@@ -6184,7 +6193,7 @@
     <TEXT>
         <Tag>AI_DIPLO_KISS_PINKY_5</Tag>
         <English>From now on you pay %d2_new_rate%% taxes instead of their %d1_old_rate%%, [CT_NAME]. Generosity is a virtue. Now kiss Our ring.</English>
-        <French>Désormais, vous payez des impôts au %d2_new_rate%% au lieu de leur %d1_old_rate%%, [CT_NAME]. Car la générosité est une vertu. Et maintenant, embrassez notre anneau.</French>
+        <French>Désormais, vous payez des taxes de %d2_new_rate%% au lieu de leur %d1_old_rate%%, [CT_NAME]. Car la générosité est une vertu. Et maintenant, embrassez notre anneau.</French>
         <German>Ab sofort zahlt Ihr %d2_new_rate%% Steuern statt deren %d1_old_rate%%, [CT_NAME]. Denn Freigiebigkeit ist eine Tugend. Und nun küsst Unseren Ring.</German>
         <Italian>D'ora in poi pagherete %d2_new_rate%% di tasse invece di %d1_old_rate%%, [CT_NAME]. Perché la generosità è una virtù. E ora bacia il nostro anello.</Italian>
         <Spanish>A partir de ahora pagas %d2_new_rate%% impuestos en lugar de su %d1_old_rate%%, [CT_NAME]. Porque la generosidad es una virtud. Y ahora besa nuestro anillo.</Spanish>
@@ -6202,7 +6211,7 @@
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_1</Tag>
         <English>Our missionaries are celibate but that's an unlucky mistake. They're poor readers. Jesus actually tells his disciples to celebrate.</English>
-        <French>Je vous remercie pour votre hospitalité. Même si vous êtes païens, vous avez peut-être quelque chose d'humain en vous.</French>
+        <French>Nos missionnaires ont fait voeu de célibat mais c'est une erreur. Ils lisent mal. Jésus a demandé à ses disciples de célébrer.</French>
         <German>Ich danke Euch für Eure Gastfreundschaft. Auch wenn Ihr Heiden seid, habt Ihr womöglich etwas Menschliches an Euch.</German>
         <Italian>Vi ringrazio per la vostra ospitalità. Anche se siete pagani, potete avere qualcosa di umano in voi.</Italian>
         <Spanish>Le agradezco su hospitalidad. Aunque sean paganos, pueden tener algo de humano.</Spanish>
@@ -6211,7 +6220,7 @@
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_2</Tag>
         <English>Thank you! The chief's charming daughter made me very happy. Until her mother found us.</English>
-        <French>Merci ! Aussi pour le fait que la fille du chef m'a rendu heureux avec son charme.</French>
+        <French>Merci ! La fille du chef m'a rendu heureux avec son charme, jusqu'à ce que sa mère nous touve.</French>
         <German>Habt Dank! Auch dafür, dass mich die Häuptlingstochter mit ihrem Liebreiz beglückte.</German>
         <Italian>Grazie! Anche per il fatto che la figlia del capo mi ha reso felice con il suo fascino.</Italian>
         <Spanish>¡Gracias! También por el hecho de que la hija del jefe me hizo feliz con su encanto.</Spanish>
@@ -6544,7 +6553,7 @@
     <TEXT>
         <Tag>USER_DIPLO_KING_REFUSE_GOLD_2</Tag>
         <English>Your Majesty, You confuse me with Saint Nicholas. (Annoy king, maximum tax rate increases)</English>
-        <French>Votre Majesté, vous me confondez avec le Saint Nicolas. (Rendre le roi furieux, le taux d'imposition maximum)</French>
+        <French>Votre Majesté, vous me confondez avec Saint Nicolas. (Rendre le roi furieux, le taux d'imposition maximum)</French>
         <German>Eure Majestät, Ihr verwechselt mich mit Sankt Nikolaus. (König verärgern, maximaler Steuersatz steigt)</German>
         <Italian>Vostra Maestà, voi mi confondete con San Nicola. (Fai arrabbiare il re, il tasso massimo di tasse aumenta)</Italian>
         <Spanish>Su Majestad, me confunde con San Nicolás. (Enojar al rey, aumenta la tasa máxima de impuestos)</Spanish>
@@ -6625,7 +6634,7 @@
     <TEXT>
         <Tag>AI_DIPLO_KING_REFUSE_GOLD_1</Tag>
         <English>You defy a demand of the Crown? What folly! What hubris! Are you out of your mind, fellow?</English>
-        <French>Vous défiez une demande de la Couronne ? Quelle folie ! Quelle arrogance ! Tu as perdu la tête, mec ?</French>
+        <French>Vous défiez une demande de la Couronne ? Quelle folie ! Quelle arrogance ! Auriez-vous perdu la raison ?</French>
         <German>Ihr widersetzt Euch einer Forderung der Krone? Was für eine Narretei! Welche Hybris! Seid Ihr von Sinnen, Kerl?</German>
         <Italian>Sfidate una richiesta della Corona? Che follia! Che arroganza! Sei fuori di testa, ragazzo?</Italian>
         <Spanish>¿Desafías una demanda de la Corona? ¡Qué locura! ¡Qué arrogancia! ¿Estás loco, muchacho?</Spanish>
@@ -7120,7 +7129,7 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_PACAL_1</Tag>
         <English>I do not know you, nor am I sure I want to know you. I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], ruler of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:2][COLOR_REVERT]. The glory of my people is just a memory. Foreign fighters have destroyed our cities, stolen our children and ravished our daughters. Strangers like you.</English>
-        <French>Bonjour. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], chef et protecteur des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Je vous considère comme mon ami. Il va de votre intérêt que je ne change jamais d'opinion.</French>
+        <French>Je ne vous connais pas, et je ne suis pas sur de vouloir vous connaitre. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], chef et protecteur des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:2][COLOR_REVERT]. LA gloirs de mon peuple n'est plus qu'n souvenir. Des combattants étrangers ont rasé nos villes, volé nos enfants et abusé de nos filles. Des étrangers comme vous.</French>
         <German>Ich kenne Euch nicht, und ich bin mir auch nicht sicher, ob ich Euch kennenlernen möchte. Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Herrscher der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:2][COLOR_REVERT]. Der Ruhm meines Volkes ist mittlerweile nur noch eine Legende. Fremde Krieger haben unsere Städte zerstört, unsere Kinder gestohlen und unsere Töchter geschändet. Fremde Krieger wie Ihr einer seid.</German>
         <Italian>Salve. Mi chiamo [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], capo e protettore del popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Ti considero un amico. È nel tuo migliore interesse che io non cambi mai idea.</Italian>
         <Spanish>Hola. Soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], jefe y protector del pueblo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT]. Os considero mis amigos. Y más os vale que nunca cambie de opinión.</Spanish>
@@ -7129,7 +7138,7 @@
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_PACAL_1</Tag>
         <English>I am very busy. Come back another time.</English>
-        <French>Ecoutez, je suis très occupé. Pourquoi n'iriez-vous pas faire quelques pâtés de sable ?</French>
+        <French>Je suis occupé. Revenez plus tard.</French>
         <German>Ich bin sehr beschäftigt. Kommt ein anderes Mal wieder.</German>
         <Italian>Senti, sono molto occupato. Perché non prendi i bambini e te ne torni al circolo?</Italian>
         <Spanish>Mirad, estoy muy ocupado. ¿Por qué no os lleváis a los niños y os volvéis al club?</Spanish>
