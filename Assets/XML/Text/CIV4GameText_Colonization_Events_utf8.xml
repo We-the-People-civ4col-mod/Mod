@@ -237,6 +237,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_THIRDCOLONY</Tag>
         <English>A group of eager young adventurers offers to explore this new world in the name of our glorious nation, if we pay for the supplies and equipment needed for this enterprise.</English>
+        <French>Un groupe de jeunes gens ayant soif d'aventure vous propose d'explorer ce nouveau monde au nom de votre nation, si vous payez pour les équipements et les vivre pour cette entreprise.</French>
         <German>Eine Gruppe junger ehrgeiziger Abenteurer bietet an, für unsere glorreiche Nation diese neue Welt zu erkunden, falls wir für die Vorräte und Ausrüstung dieses Unterfangens aufkommen.</German>
         <Russian>Группа энергичных юных авантюристов предлагает исследовать этот новый мир во имя нашей славной нации, если мы оплатим припасы и оборудование, необходимые для этого предприятия.</Russian>
     </TEXT>
@@ -252,7 +253,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FOREST_FIRE_1</Tag>
         <English>Mischievious children from [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sparked a fire in the nearby forest and went home without stamping it out. Many acres of forest have been burnt down due to these brats!</English>
-        <French>Catastrophe à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] : l'incendie d'un village s'est propagé à la forêt, brûlant des milliers d'hectares.</French>
+        <French>Des gamins malappris de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ont allumé un feu en forêt et sont repartis chez eux sans l'éteindre. Des hectares de froêt sont partis en fumée par la faute de ces garnements.</French>
         <German>Spielende Kinder aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben im nahen Wald ein Feuerchen entfacht und sind nach Hause gelaufen, ohne es auszutreten. Diese Bälger! Viele Morgen besten Waldes sind abgebrannt.</German>
         <Italian>Tragedia nei pressi di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]: è scoppiato un incendio in un villaggio e si è propagato alla vicina foresta, devastando il territorio per chilometri.</Italian>
         <Spanish>La tragedia se ha cebado con [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], pues un incendio en la aldea se ha propagado al bosque, y ha chamuscado una gran superficie de tierra.</Spanish>
@@ -261,7 +262,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FOREST_FIRE_2</Tag>
         <English>Outlaws set a fire in a forest near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] to escape their henchmen in the smoke, but they got lost and roasted themselves. May they burn forever in Hell! The bad news is that a wide swathe of land now lies in ruins.</English>
-        <French>Des criminels ont mis le feu à la forêt près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] en tentant vainement d'échapper à la justice.</French>
+        <French>Des criminels ont mis le feu à la forêt près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] en tentant vainement d'échapper à la justice, mais ils se sont perdus dans les flammes qui les ont rôtis. Qu'ils finissent de brûler en Enfer! La mauvaise nouvelle est que des hectares de terres sont maintenant en cendres.</French>
         <German>Gesetzlose haben in einem Wald nahe [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ein Feuer gelegt, um ihren Häschern im Rauch zu entkommen. Die Spitzbuben verliefen sich und wurden zum Opfer der Flammen - recht so! Mögen sie in der Hölle weiterbrennen. Doch ein weiter Landstrich liegt nun in Schutt und Asche.</German>
         <Italian>Dei criminali hanno appiccato il fuoco alla foresta vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], nel fallito tentativo di coprire la propria fuga.</Italian>
         <Spanish>Unos prófugos han prendido fuego al bosque cercano a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] en un triste intento por huir de la justicia.</Spanish>
@@ -297,7 +298,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HAPPY_HUNTING_2</Tag>
         <English>The people of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] celebrate as the latest caribou hunting season has brought a rich harvest.</English>
-        <French>Les citoyens de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] célèbrent une saison de chasse aux élans particulièrement fructueuse.</French>
+        <French>Les citoyens de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] célèbrent une saison de chasse au caribou particulièrement fructueuse.</French>
         <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ist ein fetter Wirt überführt worden, seinen Gästen Rattenkadaver als Hirschragout serviert zu haben.[NEWLINE]Der Mann wurde an die eigenen Schweine verfüttert! Seine reichen Kellervorräte an Getreide, Käse und Bier wurden ins Lagerhaus der Gemeinde verbracht.</German>
         <Italian>La popolazione di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] festeggia l'abbondanza della recente stagione di caccia al caribù.</Italian>
         <Spanish>Las gentes de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] celebran que la última temporada de caza de caribúes ha sido muy generosa.</Spanish>
@@ -435,21 +436,21 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_FESTIVITY_1_HELP</Tag>
         <English>[COLOR_FONT_GOLD]His Majesty is not amused. Rumours report that He was asking for His smelling salts.[COLOR_REVERT]</English>
-        <French>[COLOR_FONT_GOLD]Le Roi n'apprécie pas votre humour.[COLOR_REVERT]</French>
+        <French>[COLOR_FONT_GOLD]Le Roi n'apprécie pas votre humour. Il aurait même demandé sa fiole de salmiac pour se remonter.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Eure Antwort wurde Seiner Majestät zugetragen. Kammerdiener berichten, dass er nach seinem Riechsalz verlangte.[COLOR_REVERT]</German>
         <Russian>[COLOR_FONT_GOLD]Его Величеству не до смеха. Ходят слухи, что Он просил Свою нюхательную соль.[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FESTIVITY_2_HELP</Tag>
         <English>[COLOR_FONT_GOLD]Nobles and citizens are following the example of His Majesty. Demand for our colonial goods is rising.[COLOR_REVERT]</English>
-        <French>[COLOR_FONT_GOLD]Nobles et citoyens suivent l'exemple de leur Roi. La demande pour nos biens coloniaux augmentent.[COLOR_REVERT]</French>
+        <French>[COLOR_FONT_GOLD]Nobles et citoyens suivent l'exemple de leur Roi. La demande pour nos biens coloniaux augmente.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Eure Antwort wurde Seiner Majestät zugetragen. Kammerdiener berichten, er habe gleich eine Probe verköstigt und anschließend huldvoll genickt.[NEWLINE]Adlige und reiche Bürger in unserer Heimat eifern nun dem König nach. Die Nachfrage nach unseren Kolonialwaren steigt.[COLOR_REVERT]</German>
         <Russian>[COLOR_FONT_GOLD]Вельможи и граждане следуют примеру Его Величества. Спрос на наши колониальные товары растет.[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FESTIVITY_4_HELP</Tag>
         <English>[COLOR_FONT_GOLD]Nobles and citizens are following the example of His Majesty. Demand for our colonial goods is rising.[COLOR_REVERT]</English>
-        <French>[COLOR_FONT_GOLD]Nobles et citoyens suivent l'exemple de leur Roi. La demande pour nos biens coloniaux augmentent.[COLOR_REVERT]</French>
+        <French>[COLOR_FONT_GOLD]Nobles et citoyens suivent l'exemple de leur Roi. La demande pour nos biens coloniaux augmente.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Eure Antwort wurde Seiner Majestät zugetragen. Kammerdiener berichten, er habe gleich eine Probe verköstigt und anschließend huldvoll genickt.[NEWLINE]Adlige und reiche Bürger in unserer Heimat eifern nun dem König nach. Die Nachfrage nach unseren Kolonialwaren steigt.[COLOR_REVERT]</German>
         <Russian>[COLOR_FONT_GOLD]Ваш ответ доставлен Его Величеству. Доверенные лица сообщают, что он сразу же попробовал образец, а затем любезно кивнул.[NEWLINE]Знать и богатые граждане нашей родины начали подражать своему Королю. Спрос на наши товары растет.[COLOR_REVERT]</Russian>
     </TEXT>
@@ -463,14 +464,14 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WINTER</Tag>
         <English>Several years of cold winters in our European homeland.</English>
-        <French>Notre patrie en Europe subit du ans de hiver particulièrement froid.</French>
+        <French>Notre patrie en Europe subit depuis quelques années des hivers rigoureux.</French>
         <German>Mehrere Jahre in Folge mit bitterkalten Wintern in unserer europäischen Heimat lassen die Menschen frieren.</German>
         <Russian>Несколько лет подряд лютые морозы на нашей европейской родине заставляют людей мерзнуть.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_WINTER_HELP</Tag>
         <English>[COLOR_FONT_GOLD]The cold winter means increasing demand for our furs and coats in [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT].</English>
-        <French>[COLOR_FONT_GOLD]L'hiver froid en Europe génère une augmentation de la demande pour nos fourrures et manteaux de [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT].</French>
+        <French>[COLOR_FONT_GOLD]Les hivers froids en Europe génère une augmentation de la demande pour nos fourrures et manteaux de [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT].</French>
         <German>[COLOR_FONT_GOLD]Der eisigkalte Winter führt zu erhöhter Nachfrage nach unseren Pelzwaren und Fellen in [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT].</German>
         <Russian>[COLOR_FONT_GOLD]Холодная зима означает, что спрос на наши меха и пальто в [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] будет расти.</Russian>
     </TEXT>
@@ -484,7 +485,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_END_WINTER</Tag>
         <English>A cold winter in our European homeland has come to an end.</English>
-        <French>La vague de froid en Europe a pris fin.</French>
+        <French>La vague d'hivers glaciaux en Europe a pris fin.</French>
         <German>Die Kälteperiode mit harter Wintern in unserer europäischen Heimat ist vorbei.</German>
         <Russian>Холодный период с суровыми зимами на нашей европейской родине закончился.</Russian>
     </TEXT>
@@ -507,7 +508,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_VOLCANO_1</Tag>
         <English>Milord, terrible things have happened at [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. First the birds fell silent. Then the earth rumbled. And then, then the mountain next to the city burst, and a volcano rose from the rock. It shot glowing hot stones into the air. They fell on the nearby town, killing chickens and dogs and many a small child. Finally, thick flakes of ash floated down, laying a black shroud over the settlement. What a catastrophe for the crops! The survivors beg you to send help.</English>
-        <French>Seigneur, des choses terribles sont arrivées à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. D'abord, les oiseaux se sont tus. Puis la terre a grondé. Et puis, la montagne à côté de la ville a éclaté, et un volcan s'est élevé de la roche. Il a tiré des pierres rouges en l'air. Ils sont descendus dans la ville voisine, tuant des poulets et des chiens et beaucoup de petits enfants. Enfin, d'épais flocons de cendres sont tombés et ont recouvert le village d'un linceul noir. Quel malheur fertile ! Les survivants vous supplient d'envoyer de l'aide.</French>
+        <French>Sire, des choses terribles sont arrivées à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. D'abord, les oiseaux se sont tus. Puis la terre a grondé. Et puis, la montagne à côté de la ville a éclaté, et un volcan s'est élevé de la roche. Il a tiré des pierres rouges en l'air. Ils sont descendus dans la ville voisine, tuant des poulets et des chiens et beaucoup de petits enfants. Enfin, d'épais flocons de cendres sont tombés et ont recouvert le village d'un linceul noir. Quel malheur pour nos récoltes ! Les survivants vous supplient d'envoyer de l'aide.</French>
         <German>Milord, Schreckliches ist bei [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] geschehen. Zunächst verstummten die Vögel. Dann grollte die Erde. Und dann, dann barst der Berg neben der Stadt, und ein Vulkan erstieg aus dem Gestein. Er schoss glühendheiße Steine in die Luft. Sie gingen in der nahen Stadt nieder und erschlugen Hühner und Hunde und auch so manches kleine Kind. Schließlich schwebten dichte Ascheflocken herab und legten ein schwarzes Leichentuch über die Siedlung. Welch fruchtbares Unglück! Die Überlebenden flehen Euch an, Hilfe zu schicken.</German>
         <Italian>Signore, sono successe cose terribili a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Prima gli uccelli si sono ammutoliti. Poi la terra ha rimbombato. E poi, poi la montagna vicino alla città è scoppiata, e un vulcano è sorto dalla roccia. Ha sparato rocce incandescenti nell'aria. Sono scesi nella città vicina, uccidendo polli e cani e molti bambini piccoli. Infine, spesse scaglie di cenere scesero e stesero un sudario nero sull'insediamento. Che fertile sfortuna! I sopravvissuti vi implorano di mandare aiuto.</Italian>
         <Spanish>Excelencia, han ocurrido cosas terribles en [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Primero los pájaros se callaron. Entonces la tierra retumbó. Y entonces, la montaña junto a la ciudad estalló, y un volcán surgió de la roca. Lanzó rocas al rojo vivo al aire. Bajaron en el pueblo cercano, matando gallinas y perros y muchos niños pequeños. Finalmente, gruesos copos de ceniza flotaron hacia abajo y pusieron un manto negro sobre el asentamiento. ¡Qué desgracia tan fértil! Los supervivientes le ruegan que envíe ayuda.</Spanish>
@@ -543,7 +544,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FARM_BANDITS_3</Tag>
         <English>The farmers of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] are increasingly being ambushed by highwaymen. It's so bad hardly any of the locals dare to work their fields.</English>
-        <French>De plus en plus souvent, les bandits de grand chemin guettent les paysans de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Petit à petit, presque plus aucun habitant n'ose se rendre dans ses champs.</French>
+        <French>De plus en plus souvent, les bandits de grand chemin dévalisent les paysans de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Petit à petit, presque plus aucun habitant n'ose se rendre dans ses champs.</French>
         <German>Immer öfter lauern Wegelagerer den Bauern von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] auf. Allmählich traut sich kaum ein Einheimischer noch, seinen Hof zu verlassen und auf den Feldern zu arbeiten.</German>
         <Italian>Sempre più spesso i briganti sono in attesa dei contadini di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. A poco a poco, quasi nessuno dei locali osa andare nei loro campi.</Italian>
         <Spanish>Cada vez es más frecuente que los salteadores de caminos acechen a los agricultores de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Poco a poco, casi ninguno de los lugareños se atreve a ir a sus campos.</Spanish>
@@ -597,7 +598,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MINING_ACCIDENT_2</Tag>
         <English>Gases ignited underground in a mine. The air burned and many miners met a cruel death. May they find happiness again in the heavenly paradise![NEWLINE]Unfortunately, we cannot recover their mortal bodies, because the wooden supporting beams of the underground passages are charred and brittle.</English>
-        <French>Des gaz se sont enflammés sous terre dans une mine. L'air était brûlant, et de nombreux mineurs ont connu une mort atroce. Puissent-ils retrouver le bonheur dans le paradis céleste ![NEWLINE]Malheureusement, nous ne pouvons pas récupérer leurs corps mortels, car les poutres de soutien en bois des passages souterrains sont carbonisées et fragiles.</French>
+        <French>Un coup de grisou a éclaté dans la mine. L'air était brûlant, et de nombreux mineurs ont connu une mort atroce. Puissent-ils retrouver le bonheur dans le paradis céleste ![NEWLINE]Malheureusement, nous ne pouvons pas récupérer leurs dépouilles mortelles, car les poutres de soutien en bois des passages souterrains sont carbonisées et fragiles.</French>
         <German>In einer Mine haben sich untertage Gase entzündet. Die Luft brannte, und viele Bergarbeiter fanden einen grausamen Tod. Mögen sie im himmlischen Paradies ihr Glück wiederfinden![NEWLINE]Ihre sterblichen Hüllen können wir leider nicht bergen, denn die hölzernen Stützbalken der unterirdischen Gänge sind verkohlt und brüchig.</German>
         <Italian>I gas si sono incendiati nel sottosuolo di una miniera. L'aria bruciava e molti minatori incontrarono una morte orribile. Che possano ritrovare la felicità nel paradiso celeste![NEWLINE]Purtroppo non possiamo recuperare i loro corpi mortali, perché le travi di legno dei passaggi sotterranei sono carbonizzate e fragili.</Italian>
         <Spanish>Los gases se encendieron bajo tierra en una mina. El aire ardía y muchos mineros encontraron una muerte espantosa. Que vuelvan a encontrar la felicidad en el paraíso celestial![NEWLINE]Por desgracia, no podemos recuperar sus cuerpos mortales, porque las vigas de soporte de madera de los pasajes subterráneos están carbonizadas y son frágiles.</Spanish>
@@ -631,7 +632,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AT_THE_SWORD_1</Tag>
         <English>Soldiers from our victorious [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] are rallying behind their combat heroes! Their resolve is unshakeable! Their proficiency has increased!</English>
-        <French>Des soldats de notre glorieuse unité ([COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]) se sont ralliés à leurs héros de guerre ! Leur force et leur détermination se sont aguerries ! Leur compétence s'est accrue !</French>
+        <French>Des soldats de notre unité victorieuse ([COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]) se sont ralliés à leurs héros de guerre ! Leur détermination est inébranlable ! Leur compétence s'est accrue !</French>
         <German>Als [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] haben einige unserer Soldaten Heldenhaftes geleistet.</German>
         <Italian>I soldati della vittoriosa unità [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] si sono riuniti attorno ai loro eroi combattenti! La loro forza e la loro determinazione si sono rinsaldate! La loro efficacia è aumentata!</Italian>
         <Spanish>Los soldados de [NUM3:nuestro:nuestra:nuestros:nuestras] [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] han cerrado filas alrededor de sus héroes de guerra. ¡Su fuerza y su resolución son ahora más inquebrantables y su habilidad ha aumentado!</Spanish>
@@ -640,7 +641,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_UNIT_AT_THE_SWORD</Tag>
         <English>Heroes of the New World</English>
-        <French>Héros de guerre</French>
+        <French>Héros du nouveau monde</French>
         <German>Kriegshelden</German>
         <Italian>Eroi della Spada</Italian>
         <Spanish>Héroes de la espada</Spanish>
@@ -746,21 +747,21 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_MAXTAX_INCREASE</Tag>
         <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT]Maximum Tax increase to %D2% total</English>
-        <French>[ICON_BULLET]Augmentation maximale du taux d'impôt de [COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] pour atteindre %D2%</French>
+        <French>[ICON_BULLET]Augmentation du taux d'impôt maximal de [COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] pour atteindre %D2%</French>
         <German>[ICON_BULLET]Maximalsteuer erhöht sich um [COLOR_NEGATIVE_TEXT]%D1%[COLOR_REVERT] auf %D2%</German>
         <Russian>[ICON_BULLET]Максимальная налоговая ставка повышена на [COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] до %D2%</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MAXTAXDECREASE</Tag>
         <English>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1%%[COLOR_REVERT]Maximum Tax decrease to %D2% total</English>
-        <French>[ICON_BULLET]Réduction maximale du taux d'impôt de [COLOR_POSITIVE_TEXT]%D1%%[COLOR_REVERT] pour atteindre %D2% total</French>
+        <French>[ICON_BULLET]Réduction du taux d'impôt maximal de [COLOR_POSITIVE_TEXT]%D1%%[COLOR_REVERT] pour atteindre %D2% total</French>
         <German>[ICON_BULLET]Maximalsteuer sinkt um [COLOR_POSITIVE_TEXT]%D1%[COLOR_REVERT] auf %D2%</German>
         <Russian>[ICON_BULLET]Максимальная налоговая ставка понижена на [COLOR_POSITIVE_TEXT]%D1%%[COLOR_REVERT] до %D2%</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_RELATION_KING_DECREASE</Tag>
         <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] relations hit with [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] king</English>
-        <French>[ICON_BULLET]Vos relations avec le Roi [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] ont été dégradées de [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT]</French>
+        <French>[ICON_BULLET]Vos relations avec le Roi [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] se sont dégradées de [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT]</French>
         <German>[ICON_BULLET]Beziehungen zum [COLOR_HIGHLIGHT_TEXT]%s2:2_civ_adjective[COLOR_REVERT] König verschlechtern sich um [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT]</German>
         <Russian>[ICON_BULLET]Отношения с [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] Королем ухудшились на [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT]</Russian>
     </TEXT>
@@ -809,28 +810,28 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_PRICE_INCREASE_AFRICA</Tag>
         <English>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in Africa</English>
-        <French>[ICON_BULLET]Le prix augmente de [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield chez Africa</French>
+        <French>[ICON_BULLET]Le prix augmente de [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield en Afrique</French>
         <German>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in Afrika</German>
         <Russian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в Африке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PRICE_DECREASE_AFRICA</Tag>
         <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in Africa</English>
-        <French>[ICON_BULLET]Le prix diminue de [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield chez Africa</French>
+        <French>[ICON_BULLET]Le prix diminue de [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield en Afrique</French>
         <German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in Afrika</German>
         <Russian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в Африке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PRICE_INCREASE_PORT_ROYAL</Tag>
         <English>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in Port Royal</English>
-        <French>[ICON_BULLET]Le prix augmente de [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield chez Port Royal</French>
+        <French>[ICON_BULLET]Le prix augmente de [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield à Port Royal</French>
         <German>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in Port Royal</German>
         <Russian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в Порт Ройале</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PRICE_DECREASE_PORT_ROYAL</Tag>
         <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in Port Royal</English>
-        <French>[ICON_BULLET]Le prix diminue de [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield chez Port Royal</French>
+        <French>[ICON_BULLET]Le prix diminue de [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield à Port Royal</French>
         <German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in Port Royal</German>
         <Russian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в Порт Ройале</Russian>
     </TEXT>
@@ -873,282 +874,329 @@
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_NATIVE_TRADER_ATTACKED</Tag>
         <English>There's a rumour that a peaceful [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] trader has been attacked and murdered by hostile Natives.</English>
+        <French>Selon une rumeur, un marchand [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] pacifique a été attaqué et tué par des indiens hostiles.</French>
         <German>Ein Gerücht macht die Runde: Ein friedlicher [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Händler wurde von Ureinwohnern angegriffen und abgeschlachtet.</German>
         <Russian>Ходят слухи, что мирный [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] торговец подвергся нападению и был убит враждебно настроенными индейцами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_TRADER_ATTACKED_1</Tag>
         <English>Our Native trader travels to the nearest village to do some business there. He looks forward to seeing the attractive Native woman from his last visit. She liked talking with him.[NEWLINE]At the same time he remembers a dangerous look from one of the young men while he was talking to her. Lost in thought, he suddenly catches a movement out of the corner of his eye.[NEWLINE]Barely a hand's width away an arrow flies past his face.</English>
+        <French>Notre marchand chez les indigène voyage vers le village le plus proche pour affaire. Il se voit à nouveau voir la charmante indigène de la dernière fois. Elle appréciait sa compagnie. En même temps, il se rappelle qu'un des jeunes hommes le foudroyait du regard pendant que lui et elle discurtait. Perdu dans ses pensée, il perçoit soudain du coin de l'oeil quelque chose filer.[NEWLINE]Une flèche vole à deux doigts de son visage.</French>
         <German>Unser Ureinwohnerhändler ist auf dem Weg zum nahgelegenen Dorf, um dort seine Geschäfte zu verrichten. Er freut sich darauf das junge freundliche Ureinwohndermädchen wieder zu sehen, dass so gerne mit ihm redet. Aber denkt er auch an die bösen Blicke eines der jungen Ureinwohnermänner, als er mit ihr sprach. ... Während er so in Gedanken ist, sieht er plötzlich einen Bewegung im Augenwinkel und ein Pfeil fliegt nur um eine Handbreite an seinem Gesicht vorbei.</German>
         <Russian>Наш торговец с индейцами едет в ближайшую деревню туземцев, чтобы продать там очередную партию своих товаров. А еще он с нетерпением ждет встречи с привлекательной молодой туземкой, с которой познакомился во время своей последней поездки. Ей нравилось с ним разговаривать.[NEWLINE]Но в то же время торговец помнил недобрый взгляд одного из молодых индейцев деревни, во время своих разговоров с девушкой. Погруженный в эти мысли, он вдруг краем глаза улавливает сбоку какое-то движение.[NEWLINE]На расстоянии ширины ладони мимо его лица пролетает стрела...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_NATIVE_TRADER_ATTACKED_1</Tag>
         <English>It is the young Native man from the village. He is attacking.</English>
+        <French>C'est le jeune homme de la dernière fois. Il attaque.</French>
         <German>Das ist der junge Ureinwohner aus dem Dorf. Er greift an.</German>
         <Russian>Это молодой индейский воин из той деревни. Он атакует.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_RANGER_BEAR_ATTACK</Tag>
         <English>A rumour is spreading: A peaceful [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] missionary was attacked by a grizzly but a brave ranger saved him.</English>
+        <French>Selon une rumeur, un grizzly a attaqué un missionnaire [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] mais un garde-forestier l'a sauvé.</French>
         <German>Ein Gerücht macht die Runde: Ein friedlicher [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Missionar wurde von einem Grizzly angegriffen aber ein mutiger Ranger hat ihn gerettet.</German>
         <Russian>По колониям ползут слухи: на мирного [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] миссионера напал гризли, но храбрый рейнджер спас его от неминуемой смерти.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RANGER_BEAR_ATTACK_1</Tag>
         <English>Our ranger is on patrol through the forest. Suddenly he hears a high-pitched scream of fear followed by a rattling sound, like a tree in a high wind. He heads toward the noise and sees a missionary up in a tree, while a hungry grizzly methodically tries to shake him loose.</English>
+        <French>Notre garde forestier patrouille en forêt. Il entend un cri de peur haut-perché suivi par un bruit de branches, comme un arbre pris dans une rafale. Il se dirige vers le vacarme et voit un missionnaire haut perché dans un arbre, tandis qu'un grissly affamé secoue l'arbre comme un prunier pour récupérer le morceau.</French>
         <German>Einer unserer Missionare ist auf Parolie in den Wäldern. Plötzlich hört er Schreie voller Angst. Nach einer kurzen Suche findet er den Urpsrpung der Schreie. Er wird Zeuge wie ein Missionar in einem Baum von einem hungrigen Grizzly angegriffen wird, der wütend versucht ihn herunter zu schütteln.</German>
         <Russian>Наш рейнджер патрулирует лес. Внезапно он слышит пронзительный крик, за которым следует глухой стук, как будто чем-то бъют по деревяшке. Он направляется на шум и видит на дереве трясущегося от страха миссионера, в то время как большой голодный гризли методичными ударами по дереву пытается стряхнуть его.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_RANGER_BEAR_ATTACK_1</Tag>
         <English>We must protect the missionary from the grizzly!</English>
+        <French>Nous devons protéger le missionnaire du grizzly !</French>
         <German>Wir müssen den Missionar vor dem Grizzly verteidigen!</German>
         <Russian>Мы должны защитить миссионера от гризли!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_RANGER_BEAR_ATTACK_HELP</Tag>
         <English>A grizzly attacks. A missionary needs to be defended.</English>
+        <French>Le Grizzly attaque. Le missionnaire doit être protégé.</French>
         <German>Ein Grizzly greift an. Ein Missionar muss verteidigt werden.</German>
         <Russian>Гризли атакует. Нужно защищать миссионера.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_CONQUISTADORES_BEING_AMBUSHED</Tag>
         <English>A rumour is spreading: [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] conquistadores were ambushed by hostile Natives.</English>
+        <French>Selon une rumeur, des indigènes hostiles ont pris en embuscade des conquistadors [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT]  </French>
         <German>Ein Gerücht macht die Runde: Ein friedlicher [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Conquistadore wurden von feindlichen Ureinwohnern überfallen.</German>
         <Russian>Ходят слухи, что [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] конкистадоры попали в засаду, устроенную враждебными туземцами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONQUISTADORES_BEING_AMBUSHED_1</Tag>
         <English>Our bold conquistadors drift aimlessly through the green hell, hoping to stumble over a treasure that will make them rich. The next moment they notice that all birds and animals have gone silent.[NEWLINE]They stop. One of the men turns around, screams a warning and points towards the trees. Suddenly an arrow hits him in the chest. The silence is over. War screams come from the bushes and trees.[NEWLINE]We are being ambushed!</English>
+        <French>Nos hardis conquistadors explorent l'enfer vert sans répit, espérant tomber sur un trésor qui les rendra riche. L'instant d'après, ils remarquent que tous les oiseaux et toutes les bêtes se sont tues.[NEWLINE]Ils s'arrêtent. Un des hommes se retourne, et met en garde ses compagnons en hurlant et en pointant du doigt les arbres. Une flèche le frappe alors en pleine poitrine. Des cris de guerre résonnent des arbres et des fourrés.[NEWLINE]Nous sommes pris en embuscade !</French>
         <German>Unsere tapferen Conquistadores schreiten müde durch die grüne Hölle, hoffend auf eine Entdeckung, um reich zu werden. Plötzlich bemerken sie, dass alle Geräusche von Vögeln und Tieren verschwunden sind und halten daher an. Einer der Männer dreht sich plötzlich um, schreit eine Warnung und zeigt in Richtung der Bäume, als auch schon ein Pfeil in seiner Brust steckt. Die Stille ist nun vorbei und Kriegsschreie hallen aus den Büschen. Wir werden überfallen!</German>
         <Russian>Наши смелые конкистадоры блуждают по зеленому аду джунглей, надеясь наткнуться на сокровище, которое сделает их богатыми. Как вдруг они замечают, что голоса всех птицы и звери замолкли.[NEWLINE]Они останавливаются. Один из мужчин оборачивается, пытается что-то крикнуть, указывая на деревья. Но уже через мгновение из его груди торчит стрела. Тишина закончилась - отовсюду доносятся боевой клич индейцев.[NEWLINE]Мы попали в засаду!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CONQUISTADOR_AMBUSH_1</Tag>
         <English>Cover the flanks and fight for your lives!</English>
+        <French>Couvrez les flancs et battez-vous jusqu'à la mort</French>
         <German>Verteidigt die Flanken und kämpft um euer Leben!</German>
         <Russian>Прикрывайте фланги! Покажем краснокожим, что они зря это затеяли!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CONQUISTADOR_AMBUSH_HELP</Tag>
         <English>From out of the jungle hostile Natives attack.</English>
+        <French>Des indigènes hostiles attaquent de la jungle.</French>
         <German>Feindliche Ureinwohner greifen aus dem Dschungel an.</German>
         <Russian>Из джунглей лезут толпы враждебные туземцы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HIGHWAYMAN_ATTACK</Tag>
         <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] stagecoach was attacked by highwaymen but brave passengers defended it.</English>
+        <French>Selon une rumeur, des brigands ont attaqué une diligence [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] mais des passagers l'ont défendue.</French>
         <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Kutsche wurde von Straßenräubern angegriffen, aber die mutigen Passagiere haben sie verteidigt.</German>
         <Russian>Ходят слухи, что почтовый дилижанс [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] подвергся нападению разбойников, но храбрые пассажиры сумели отбиться от негодяев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HIGHWAYMAN_ATTACK_1</Tag>
         <English>Travelling to the next city our stagecoach halts suddenly as its horses shy back, startled by loud gunshots. From behind the rocks highwaymen emerge, pointing their guns at the stagecoach driver. Inside the coach a few strong men reach for their own guns, ready to defend the ladies and their lives.</English>
+        <French>En voyage vers la ville suivante, notre diligence s'arrête brusquement alors que ses chevaux renâclent, effrayés par des coups de fey. De derrière des rocher, des bandits de grand-chemin émergent, pointant leurs armes vers le cocher. Dans la diligence, quelques hommes hardis prennent leurs propres armes pour défendre les dames et leurs vie.</French>
         <German>Auf dem Weg zur nächsten Stadt wird unsere Kutsche durch den plötzlichen Knall von Schüssen und das Aufscheuen ihrer Pferde aufgehalten. Straßenräuber erheben sich aus ihrem Versteck hinter einigen Felsen und richten ihre Waffen auf den Kutscher. Aber innerhalb der Kutsche greifen einige junge starke Männer zu ihren Waffen, um die Damen und ihr eigenes Leben zu verteidigen.</German>
         <Russian>Почтовый дилижанс совершал свой обычный рейс из столицы в соседнюю колонию. Внезапно лошади остановились и начали пятится назад, испуганные громкими выстрелами. Из-за ближайших скал появляется банда разбойников, печально известная тем, что не оставляет свиделей. Бандиты хотят присвоить перевозимый груз, о котором им поведал их человек из города. Молодой испуганный возница пытается спрятаться за камнями, забыв о своём оружии и беспрестанно шепча молитвы. Но внутри дилижанса находятся несколько смелых мужчин с ружьями, готовых защищать женщин и их жизни.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HIGHWAYMAN_ATTACK_1</Tag>
         <English>If the passengers want to survive they must defend the stagecoach!</English>
+        <French>Si les passagers veulent en réchapper, ils doivent défendre la diligence!</French>
         <German>Wenn die Passagiere überleben wollen, müssen sie die Kutsche verteidigen!</German>
         <Russian>Если пассажиры хотят выжить, они должны защищать дилижанс!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HIGHWAYMAN_ATTACK_HELP</Tag>
         <English>Highwaymen attack the stagecoach. Brave passengers defend it.</English>
+        <French>Des bandits attaquent la diligence. Des passagers courageux la défendent.</French>
         <German>Straßenräuber greifen die Kutsche an. Ein paar mutige Passagiere verteidigen sie.</German>
         <Russian>На дилижанс нападают разбойники. Храбрые пассажиры защищаются.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MILKMAID_IN_NEED</Tag>
         <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] milkmaid is being forced to marry her uncle. She asks the governor for help.</English>
+        <French>Selon une rumeur, une laitière [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] est obligée d'épouser son oncle. Elle appelle le gouverneur à la rescousse.</French>
         <German>Ein Gerücht macht die Runde: Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Milchmädchen soll gezwungen werden, ihren Onkel zu heiraten. Sie erbittet Hilfe vom Gouverneur.</German>
         <Russian>Ходят слухи, что [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] доярку вынуждают выйти замуж за своего дядю. Она просит помощи у губернатора.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MILKMAID_IN_NEED_1</Tag>
         <English>After the death of her father a milkmaid is being forced to marry her uncle against her will so he can inherit the cattle farm. She has come to the city to plead for help, hoping that the law will intervene. We can support her but, if we do, we will turn her uncle and the rest of this greedy family against us.</English>
+        <French>À la mort de son père, une laitière est forcée d'épouser son oncle contre son gré pour qu'il hérite de la ferme bovine. Elle est venue en ville pour demander de l'aide, espérant un secours de la loi. Nous pouvons l'aider, mais dans ce cas, l'oncle et le reste de cette famille avide va se retourner contre nous.</French>
         <German>Nach dem Tod ihres Vaters wird eine junge Milchmaid durch Ihren Onkel gezwungen, ihn gegen ihren Willen zu heiraten. Sie ist nun in die Stadt gekommen, um um Hilfe und rechtliche Unterstützung zu bitten. Wenn wir ihr helfen, wird sich ihr Onkel und der Rest dieser gierigen Familie gegen uns wenden.</German>
         <Russian>После смерти отца, доярку, против ее воли, вынуждают выйти замуж за дядю, чтобы тот мог унаследовать животноводческую ферму. Она приехала в город просить помощи, надеясь, что закон вмешается. Мы можем поддержать ее, но если мы это сделаем, то настроим против нас ее дядю и остальную часть этой жадной семьи.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MILKMAID_IN_NEED_1</Tag>
         <English>Of course we will protect that poor young girl! We're not afraid of a few hillbillies!</English>
+        <French>Bien sûr, nous aiderons cette pauvre jeune femme ! On ne va pas se plier devant quelques péquenauts !</French>
         <German>Wir werden dem jungen Mädchen natürlich helfen! Wir fürchten uns nicht vor ein paar Hinterwäldlern!</German>
         <Russian>Конечно, мы защитим эту бедную девушку! Неужели мы испугаемся каких-то деревенщин!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MILKMAID_IN_NEED_2</Tag>
         <English>This is family business. We have no right to get involved.</English>
+        <French>Ne nous mêlons pas de ces histoires de familles. Ce n'est pas notre domaine.</French>
         <German>Wir sollten uns nicht in diese Familienangelegenheit einmischen.</German>
         <Russian>Это семейное дело. Мы не имеем права вмешиваться.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MILKMAID_IN_NEED_HELP</Tag>
         <English>Criminals will attack the City.</English>
+        <French>Des criminels vont attaquer la ville.</French>
         <German>Kriminelle werden die Stadt angreifen.</German>
         <Russian>Преступники нападут на город.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HERDER_IN_NEED</Tag>
         <English>There's a rumour that a [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] pigpen is being attacked by wolves.</English>
+        <French>Selon la rumeur, des loups attaquent une porcherie [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT].</French>
         <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Schweinestall und sein Besitzer werden von Wölfen angegriffen.</German>
         <Russian>Ходят слухи, что на свинарник [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] напали волки.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HERDER_IN_NEED_1</Tag>
         <English>A pig breeder has sent his young son to the city to beg for help. Wolves are attacking the pigpen and the farmer is desperately trying to protect the animals. He pleads for our help.</English>
+        <French>Un eleveur de cochon nous a envoyé sonc fils cadet pour obtenir de l'aide. Des loups attaque sa porcherie, et le fermier essaie désespéremny de protéger ses bêtes. Il prie pour avoir notre aide.</French>
         <German>Ein Schweinezüchter hat seinen kleinen Sohn in die Stadt geschickt, um Hilfe zu holen. Wölfe greifen den Stall an und der Züchter versucht verzweifelt, seine Tiere zu beschützen. Er bitte uns um Hilfe.</German>
         <Russian>Свиновод отправил в город своего маленького сына просить о помощи. Волки нападают на свинарник, и фермер отчаянно пытается защитить животных. Он умоляет нас помочь ему.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HERDER_IN_NEED_1</Tag>
         <English>We will send help as fast as possible! He must hold on just a little longer!</English>
+        <French>Nous allons envoyer de l'aide ! Il doit tenir un peu plus longtemps.</French>
         <German>Wir werden versuchen so schnell wie möglich Hilfe zu schicken! Aber er muss noch etwas durchhalten!</German>
         <Russian>Мы вышлем помощь как можно быстрее! Он должен продержаться еще немного!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HERDER_IN_NEED_HELP</Tag>
         <English>Wolves attack the pigpen.</English>
+        <French> Des loups attaquent la porcherie.</French>
         <German>Wölfe greifen den Stall an.</German>
         <Russian>Волки атакуют свинарник.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FERRY_STATION_ROBBERS</Tag>
         <English>There's a rumour that the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] ferry station is being attacked by robbers.</English>
+        <French>Selon une rumeur, des voleurs attaquent un bac [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]</French>
         <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Fährstation wird von Straßenräubern angegriffen.</German>
         <Russian>Ходят слухи, что на паромную переправу [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] напали грабители.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FERRY_STATION_ROBBERS_1</Tag>
         <English>Milord, a citizen has recognized a few rough-looking men riding through the city. They're wanted for ferry robbery, they're heavily armed and they're heading toward the local ferry station. If we ride now we just might have time to catch them and prevent another crime.</English>
+        <French>Sire, un citoyen a reconnu quelques hommes patibulaires à cheval dans la ville. Ils sont recherchés pour vol à main armée sur le bac, ils sont armés et se dirigent vers le bac local. Si nous montons maintenant, nous arriverons juste à temps pour les capturer et prévenir un autre crime.</French>
         <German>Milord, ein Ortsansässiger hat einge nach Ärger aussehende Männer, die durch die Stadt ritten, als gesuchte Straßenräuber erkannt. Sie ritten in Richtung der örtlichen Fährstation und waren schwer bewaffnet. Wenn wir jetzt losreiten könnten wir sie noch einholen und Schlimmeres verhindern.</German>
         <Russian>Милорд, горожанин узнал несколько мужчин, едущих по городу. Их разыскивают за ограбление парома ниже по реке. Они хорошо вооружены и направляются к местной паромной станции, возможно, замышляя новое нападение. Если мы поедем прямо сейчас, у нас как раз будет время, чтобы поймать их и предотвратить новое преступление.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FERRY_STATION_ROBBERS_1</Tag>
         <English>We will gather the milita and teach those ferry robbers a lesson!</English>
+        <French>Nous allons lever la milice et apprendre la vie à ces bandits!</French>
         <German>Wir werden die Miliz versammeln und diesen Straßenräubern eine Lektion erteilen!</German>
         <Russian>Мы соберем ополчение и проучим этих грабителей паромов!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FERRY_STATION_ROBBERS_2</Tag>
         <English>We are deeply sorry but we are unable to send any help!</English>
+        <French>Désolé, mais nous ne pouvons rien y faire pour le moment ! </French>
         <German>Wir sind zu tiefst bestürzt, aber uns ist es nicht möglich Hilfe zu schicken!</German>
         <Russian>Нам очень жаль, но мы не можем отправить какую-либо помощь!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FERRY_STATION_ROBBERS_HELP</Tag>
         <English>Highwaymen attack the ferry station.</English>
+        <French>Des bandits attaquent le bac</French>
         <German>Straßenräuber greifen die Fährstation an.</German>
         <Russian>Разбойники атакуют паромную переправу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SLAVE_AND_PLANATION_OWNER_DAUGHTER</Tag>
         <English>A rumour is spreading that the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] daughter of a plantation owner fell in love with a slave.</English>
+        <French>Selon une rumeur, la fille d'un riche planteur [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] est tombé amouruese d'un esclave.</French>
         <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Tocher eines Plantagenbesitzers hat sich in einen Sklaven verliebt.</German>
         <Russian>Ходят слухи, что [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] дочь плантатора влюбилась в раба.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SLAVE_AND_PLANATION_OWNER_DAUGHTER_1</Tag>
         <English>Milord, we have a bad situation. The daughter of one of the richest plantation owners in this region fell in love with a slave. When her father found out about the relationship and tried to kill the slave, she helped her lover to escape.[NEWLINE]The slave now sits in our waiting room. He pleads for our help. Out that window you can see the plantation owner with his armed men trying to get in here to lynch this poor slave.</English>
+        <French>Sire, nous avons un dilemme. La fille d'un de nos plus riches planteurs de la région est tombé amoureuse d'un esclave. Quand le père a découvert cette relation et a voulu tué l'esclave, la jeune fille a aidé son amant à fuir.[NEWLINE]L'esclave attend ici en arrière salle. Il nous demande de l'aide. Par la fenêtre vous voyez le planteur et ses hommes de main tenter de pénétrer nos locaux pour rosser le pauvre esclave.</French>
         <German>Milord, wir sind in einer schlimmen Situation. Die Tochter eines der reichsten Plantagenbesitzer der Region hat sich in einen Sklaven verliebt und diesem zur Flucht verholfen, nachdem ihr Vater von der Beziehung erfahren hat und drohte, den Sklaven zu töten. Der Sklave sitzt nun im Vorraum und bittet um Hilfe. Der Vater hat jedoch bewaffnete Männer versammelt und droht jetzt damit, das Gebäude gewaltsam zu betreten, um den Sklaven zu lynchen.</German>
         <Russian>Милорд, у нас неприятная ситуация. Дочь одного из самых богатых плантаторов этого региона влюбилась в раба. Когда ее отец узнал об этих отношениях и попытался убить раба, она помогла возлюбленному бежать.[NEWLINE]Сейчас раб сидит в нашей приёмной. Он умоляет помочь ему. Из этого окна вы можете видеть владельца плантации со своими вооруженными людьми, пытающимися проникнуть сюда, чтобы линчевать этого бедного раба.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SLAVE_AND_PLANATION_OWNER_DAUGHTER_1</Tag>
         <English>We will not allow mob justice in this city! The slave is under our protection!</English>
+        <French>Pas de justice expéditive dans ma ville ! L'esclave est sous ma protection !</French>
         <German>Wir werden keine Lynchjustiz in dieser Stadt erlauben! Der Sklave steht unter unserem Schutz!</German>
         <Russian>Мы не допустим самосуда в этом городе! Раб находится под нашей защитой!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SLAVE_AND_PLANATION_OWNER_DAUGHTER_2</Tag>
         <English>Let us solve this peacefully! We will pay the plantation owner a good price for the slave. We can only hope this will calm him down. The slave and the daughter shall never meet again.</English>
+        <French>Résolvons ceci à l'amiable. Nous dédommagerons généreusement le propriétaire pour son esclave. Nous espérons que cela le calemera. L'esclave et la fille ne doivent jamais se revoir.</French>
         <German>Lasst uns dies friedlich regeln und dem Plantagenbesitzer eine so großzügige Summe zukommen, um den Sklaven freizukaufen, sodass er sich wieder beruhigt! Der Sklave und die Tochter sollen sich nie wieder treffen.</German>
         <Russian>Давайте решим это мирным путем! Мы заплатим хозяину плантации за раба хорошую цену. Нам остается только надеяться, что это его успокоит. Но этот раб и дочь плантатора больше никогда не встретятся.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SLAVE_AND_PLANATION_OWNER_DAUGHTER_3</Tag>
         <English>Justice demands we hand over the slave to the father! No slave should lay hands on an innocent girl and twist her young mind.</English>
+        <French>La justice exige que nous livrions l'esclave au père! Aucun esclave ne doit molester une jeune fille et pervertir son esprit.</French>
         <German>Händigt den Sklaven dem Vater aus, damit er Gerechtigkeit nehmen kann! Dieser Sklave ist deutlich zuweit gegangen als er seine Hände an das junge Mädchen legte und ihr den Kopf verdrehte.</German>
         <Russian>Справедливость требует, чтобы мы отдали раба отцу! Ни один раб не должен прикасаться к невинной девушке и извращать ее юный ум.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SLAVE_AND_PLANATION_OWNER_DAUGHTER_1_HELP</Tag>
         <English>Outraged citizens and members of the militia attack the city.</English>
+        <French>Des citoyens outrés et des membres de la milice attaquent la ville.</French>
         <German>Aufgebrachte Bürger und Mitglieder der Miliz greifen die Stadt an.</German>
         <Russian>Возмущенные горожане и ополченцы нападают на город.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_WHALE_ATTACK</Tag>
         <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] whaling ship is being attacked by a whale seeking revenge.</English>
+        <French>Une rumeur se répend : Un baleinier [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] est attaqué par une baleine revancharde.</French>
         <German>Ein Gerücht macht die Runde: Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Walfangschiff wird von eime Rache suchenden Wal angegriffen.</German>
         <Russian>Ходят слухи: [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] китобойное судно подвергается нападению мстительного кита.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WHALE_ATTACK_1</Tag>
         <English>It's very strange. For several days a giant whale has been following our ship. It's like he's waiting to attack us when we're not paying attention. Wait! What is this? He's trying to ram us amidships!</English>
+        <French>Très étrange. Depuis des jours, une baleine géante poursuit notre navire. C'est comme si elle cherchait à attaquer dès que nous baissons la garde. Attendez! C'est quoi ça ? Elle essaie de nous éperonner par franc-bord !</French>
         <German>Das ist in der Tat seltsam. Seit Tagen verfolgt unser Schiff ein riesiger Wal. Es scheint fast so als warte er nur auf eine Gelgenheit, um uns anzugreifen, wenn wir nicht aufmerksam sind. Wartet! Was ist das? Der Walf versucht uns tatsächlich auf Backbord zu rammen.</German>
         <Russian>Это очень странно. Уже несколько дней за нашим кораблем следует гигантский кит. Как будто он ждет удобный момент, чтобы напасть на нас, когда мы перестанем обращать на него внимание. Подождите! Что это?! Он пытается протаранить нас на миделе!!!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_WHALE_ATTACK_1</Tag>
         <English>All men, grab your harpoons! We are a whaling ship! We hunt whales, not the other way around!</English>
+        <French>Tous sur le pont, et aux harpons ! Nous sommes un baleinier ! Nous chassons les baleines, pas l'inverse !</French>
         <German>Alle Mann an die Harpunen! Wir sind ein Walfangschiff! Wir jagen die Wale und nicht anders herum!</German>
         <Russian>Парни, хватайте свои гарпуны! Мы - китобойный корабль! Мы охотимся на китов, а не наоборот!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WHALE_ATTACK_HELP</Tag>
         <English>The humpback whale attacks.</English>
+        <French>La baleine à bosse attaque</French>
         <German>Ein Buckelwal greift an.</German>
         <Russian>Нападение горбатого кита.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CRIMINALS_BLACKMAIL_CITY</Tag>
         <English>A rumour is spreading: The peaceful city of [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] is being blackmailed by criminals.</English>
+        <French>Selon une rumeur, la paisible ville de [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] est sous un chantage de criminels.</French>
         <German>Ein Gerücht macht die Runde: Die friedliche Stadt [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] wird von Kriminellen erpresst.</German>
         <Russian>Распространяется слух: преступники шантажируют мирный город [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CRIMINALS_BLACKMAIL_CITY_1</Tag>
         <English>Milord, some criminals have broken into our armoury and stolen weapons. They claim that they're just impoverished citizens who can't even afford food. They demand to be given food and money, just a little. They promise to then lay down their weapons. Otherwise they threaten to attack the citizens.</English>
+        <French>Sire, des criminels ont dévalisé une armurerie et volé nos armes. Ils prétendent être des citoyens miésreux qui ne peuvent même pas manger à leur faim. Ils exigent un peu de nourriture et d'argent, just un peu. Ils promettent par la suite de baisser les armes. Sinon ils attaqueront les citpyens.</French>
         <German>Milord, einige Kriminelle sind in die Waffenkammer eingebrochen und haben sich bewaffnet. Sie behaupten lediglich verarmte Bürger zu sein, die sich kein Essen mehr leisten können. Sie verlangen von uns etwas Nahrung und Geld. Sie verspechen daraufhin die Waffen niederzulegen. Andernfalls drohen sie damit die Bürger der Stadt anzugreifen.</German>
         <Russian>Милорд, какие-то преступники проникли в наш арсенал и украли оружие. Они утверждают, что они просто бедные граждане, которые не могут позволить себе даже еду. Они требуют, чтобы им дали еды и денег, совсем немного. Обещают после этого сложить оружие. В противном случае они угрожают напасть на горожан.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CRIMINALS_BLACKMAIL_CITY_GIVE</Tag>
         <English>Give them some food and gold. We will even pardon them if they promise never again to use violence to solve such issues.</English>
+        <French>Donnez leur la nourriture et l'or. Nous leur ferons grâce s'ils promettent de ne plus jamais user de violence pour résoudre le problème.</French>
         <German>Gebt ihnen etwas Essen und Gold. Zusätzlich begnadigen wir sie, wenn sie versprechen nächstes Mal keine Gewalt anzuwenden.</German>
         <Russian>Дайте им немного еды и золота. Мы даже простим их, если они пообещают никогда больше не применять насилие для решения таких вопросов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CRIMINALS_BLACKMAIL_CITY_REFUSE</Tag>
         <English>We will not let criminals blackmail us. The only thing they get from us is death.</English>
+        <French>Nous ne subirons pas le chantage. La seule chose qu'ils recevront, c'est du plomb.</French>
         <German>Wir lassen uns nicht von Kriminellen erpresssen. Das einzige was sie von uns bekommen werden ist ihr eigener Tod.</German>
         <Russian>Мы не позволим преступникам шантажировать нас. Единственное, что они получают от нас, это смерть.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER</Tag>
         <English>A rumour is spreading: In [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] an indentured servant has stolen money from his employer.</English>
+        <French>Selon une rumeur à [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT], un domestique sous contrat vole de l'argent à son patron.</French>
         <German>Ein Gerücht macht die Runde: In [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] hat ein Schuldknecht Geld von seinem Arbeitgeber gestohlen.</German>
         <Russian>Ходят слухи, что в городе [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] наемный слуга украл деньги у своего работодателя.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_1</Tag>
         <English>Milord, an indentured servant is begging for our help. He stole money from his employer and lost it all gambling. He says he was trying to win enough money to buy his freedom.[NEWLINE]Now he feels guilty and pleads for a loan so he can put the money back before his employer notices the theft. He promises to pay us back. Otherwise it's likely that he'll run away to avoid prison.</English>
+        <French>Sire, un domestique sous contrat prie pour notre recours. Il a volé de l'argent a son employeur et l'a perdu au jeu. Il dit qu'il essyait de gagner suffisamment pour racheter sa liberté.[NEWLINE]Il se sent coupable et demande un prêt pour rembourser son patron avant que celui-ci ne se rende compte du vol. Il promet de nous rembourser. Sinon, il est probable qu'il prenne la fuit pour éviter la prison.</French>
         <German>Milord, ein Schuldknecht ersucht unsere Hilfe. Er hat Geld von seinem Arbeitgeber gestohlen und es beim Spielen verloren. Er hat versuchte genug Geld zu gewinnen, um sich freizukaufen. Er fühlt sich nun schuldig und bittet uns ihm das Geld zu leihen, damit er es ersetzen kann, bevor sein Arbeitgeber den Diebstahl bemerkt. Er verspricht es uns wieder zurück zu zahlen. Falls nicht ist anzunehmen, dass er zu fliehen versucht.</German>
         <Russian>Милорд, наемный слуга умоляет нас о помощи. Он украл деньги у своего работодателя и проиграл все в азартные игры. Он говорит, что пытался выиграть достаточно денег, чтобы купить свою свободу.[NEWLINE]Теперь он чувствует себя виноватым и умоляет о ссуде, чтобы вернуть деньги до того, как работодатель заметит кражу. Он обещает вернуть нам деньги. В противном случае, скорее всего, он сбежит, чтобы избежать тюрьмы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_1</Tag>
         <English>The indentured servant must take responsibility for his deeds! It is not up to us to solve the problems of petty thieves.</English>
+        <French>Ce domestique doit prendre ses responsabilités pour ses méfaits ! Ce ne'est pas à nous de nous occuper des voleurs à la petite semaine.</French>
         <German>Der Schuldknecht muss zu seinen Taten stehen! Wir sind nicht für die Probleme von gewöhnlichen Dieben verantwortlich.</German>
         <Russian>Наемный слуга должен взять на себя ответственность за свои дела! Мы не будем решать проблемы мелких воришек.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_2</Tag>
         <English>We will show this man mercy, even give him the money to buy his freedom, as long as he understands that from now on he owes us loyalty.</English>
+        <French>Nous allons faire preuve de clémence, et même racheter sa liberté, s'il comprend bien qu'il doit nous être loyal par la suite.</French>
         <German>Wir werden Mitleid mit diesem Mann haben und ihm sogar genug Geld geben, um sich freizukaufen. Ab nun schuldet er uns aber Loyalität.</German>
         <Russian>Мы пожалеем этого человека и даже дадим ему достаточно денег, чтобы выкупить его свободу. Отныне он обязан нам, проверим его верность.</Russian>
     </TEXT>
@@ -1161,36 +1209,42 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PREACHER_AND_HARLOT</Tag>
         <English>A rumour is spreading: In [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] a priest was caught red-handed with a harlot.</English>
+        <French>Selon une rumeur à [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT], un prêtre a été pris sur le fait dans les bras d'une catin.</French>
         <German>Ein Gerücht macht die Runde: In [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] wurde ein Priester mit einer Hure erwischt.</German>
         <Russian>Распространяется слух: в городе [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] священника застукали с блудницей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PREACHER_AND_HARLOT_1</Tag>
         <English>Milord, we have a very delicate matter. The local priest was caught red-handed with a harlot from the lower district. He now claims that he was bewitched by her. The citizens from the upper district believe him and want to burn her as a witch. The poor people from the lower district have gathered around her to protect her, insisting that she is the actual victim. Whatever we will do, there will be unrest. How should we decide?</English>
+        <French>Sire, une affaire épineuse nous attend. Le prêtre de la paroisse a été pris sur le fait avec une catin des bas-fonds. Il prétend qu'elle l'a ensorcelé. Les citoyens des quartiers riches le croient et veulent la brûler comme sorcière. Le petit peuple des quartiers pauvres font corps avec elle pour la protéger, et insistent que c'est elle la victime. Quel que soit notre choix, il y aura des émeutes. Comment allons nous trancher ?</French>
         <German>Milord, wir sind in einer schwierigen Situation. Der örtliche Priester wurde auf frischer Tat mit einer Hure aus dem Unterviertel erwischt. Er behauptet nur er sei von dieser verhext worden. Die Bürger der Oberstadt scheinen ihm zu glauben und wollen die Hure als Hexe verbrennen. Aber die Armen aus der Unterstadt stellen sich schützend vor die Hure und behaupten sie sei das eigentliche Opfer. Was auch immer wir tun, es wird zu Unruhen kommen. Wie sollen wir uns entscheiden?</German>
         <Russian>Милорд, у нас очень щекотливое дело. Местного священника поймали с поличным с блудницей из Нижнего округа. Теперь он утверждает, что был заколдован ею. Жители Верхнего района верят ему и хотят сжечь ее, как ведьму. Бедные люди из нижнего района собрались вокруг нее, чтобы защитить, настаивая на том, что она настоящая жертва. Что бы мы ни делали, будут волнения. Как мы должны поступить?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PREACHER_AND_HARLOT_1</Tag>
         <English>We will not let a woman be burned because of superstition and a weak priest!</English>
+        <French>Nous n'allons pas rôtir une femme à cause de la superstition et d'un prêtre faible dans sa chair !</French>
         <German>Wir werden nicht zulassen, dass eine Frau aufgrund von Aberglaube und eines schwachen Priesters verbrannt wird!</German>
         <Russian>Мы не позволим сжечь женщину из-за суеверия и слабости священника!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PREACHER_AND_HARLOT_2</Tag>
         <English>We must preserve peace in this village and make sure this doesn't happen again. Let them burn the harlot!</English>
+        <French>Préservons la paix dans notre village et assurons-nous que cela n'arrive plus. Qui veut du rôti de catin ?</French>
         <German>Wir müssen den Frieden in der Stadt bewahren und verhindern, dass so etwas noch einmal passiert. Lasst sie die Hure verbrennen!</German>
         <Russian>Мы должны сохранить мир в этой деревне и сделать так, чтобы это больше не повторилось. Пусть сожгут шлюху!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PREACHER_AND_HARLOT_1_HELP</Tag>
         <English>The citizens revolt due to your decision to protect the harlot.</English>
+        <French>Les gens des beaux quartiers se révoltent suite à votre décision de protéger la prostituée.</French>
         <German>Die Bürger werden aufgrund eurer Entscheidung, die Hure zu beschützen, revoltieren.</German>
         <Russian>Горожане бунтуют из-за вашего решения защитить шлюху.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PREACHER_AND_HARLOT_2_HELP</Tag>
         <English>The poor from the lower district are outraged that you condemn the harlot. They revolt.</English>
+        <French>Les pauvres des bas quartiers sont outrés par la condamnation de la prostituée. Ils se révolent.</French>
         <German>Die Armen aus dem Unterviertel werden darüber aufgebracht sein, dass ihr die Hure verurteilt, und revoltieren.</German>
         <Russian>Бедняки из нижнего округа возмущены тем, что вы осуждаете блудницу. На улицах полно бунтовщиков.</Russian>
     </TEXT>
@@ -1203,48 +1257,56 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SLAVE_HUNTER_OFFERS_SERVICE_1</Tag>
         <English>Milord, a slave hunter has heard that escaped slaves were sighted near [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT]. He offers us his services.</English>
+        <French>Sire, un chasseur d'eclave a entendu que des esclaves figitifs ont été aperçus près de [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT].  Il nous propose ses services.</French>
         <German>Milord, ein Sklavenjäger hat gehört, dass entflohene Sklaven in der Nähen von [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] gesichtet wurden. Er bietet uns seine Dienste an.</German>
         <Russian>Милорд, охотник за рабами слышал, что недалеко от [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] были замечены сбежавшие рабы. Он предлагает нам свои услуги.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SLAVE_HUNTER_SERVICE_ACCEPT</Tag>
         <English>We will hire him. Tell him to bring these slaves back alive. They are valuable.</English>
+        <French>Nous l'embauchons. Dites-lui de ramener les esclaves vivants. Ils sont précieux.</French>
         <German>Wir werden seine Dienste in Anspruch nehmen. Er soll diese Sklaven alle lebend zurück bringen, da sie wertvoll sind.</German>
         <Russian>Мы наймем его. Скажи ему, чтобы вернул этих рабов живыми, они еще пригодятся.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SLAVE_HUNTER_SERVICE_REFUSE</Tag>
         <English>We do not need his services. Our militia can handle this.</English>
+        <French>Nous n'avons pas besoin de lui. La milice peut s'en charger.</French>
         <German>Wir benötigen seine Dienste nicht. Unsere Miliz kann der Situation auch Herr werden.</German>
         <Russian>Мы не нуждаемся в его услугах. Наше ополчение справиться с этим самостоятельно.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SILVER_MINE_ROBBERY</Tag>
         <English>A rumour is spreading: A silver mine is regularly being robbed by buccaneers.</English>
+        <Franch>Selon une rumeur, des boucaniers s'en prennent régulièrement à une mine d'argent.</Franch>
         <German>Ein Gerücht macht die Runde: Eine Silbermine wird regelmäßig von Bukanieren ausgeraubt.</German>
         <Russian>Ходят слухи, что пираты регулярно грабят серебряный рудник.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SILVER_MINE_ROBBERY_1</Tag>
         <English>Milord, there's a report from the foreman of one of our silver mines that buccaneers bribe workers there to let them steal some of the mined silver.</English>
+        <French>Sire, le contremaitre d'une de nos mines d'argent nous signales que des boucaniers achètent les mineurs pour que lesdits boucaniers puissent emprocher une partie de l'argent extrait.</French>
         <German>Milord, einer der Vorarbeiter einer unserer Silberminen berichtet, dass Bukaniere regelmäßig die Minenarbeiter bestechen, damit diese sie einen Teil des Silbers stehlen lassen.</German>
         <Russian>Милорд, мастер одного из наших серебряных рудников сообщает, что пираты регулярно подкупают горняков, чтобы они позволили им украсть часть серебра.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SILVER_MINE_ROBBERY_1</Tag>
         <English>This must be stopped immediately! Gather some men from the militia and pay them gold to guard the mine.</English>
+        <French>Il faut mettre halte au plus vite à tout ceci ! Levez quelques hommes pour la milice, et payez-les pour qu'ils montent la garde.</French>
         <German>Das muss sofort aufhören! Versammelt einige Männer aus der Miliz und zahlt ihnen Gold,, um die Mine zu bewachen.</German>
         <Russian>Это нужно немедленно прекратить! Выделите несколько человек из ополчения и заплатите им золотом за охрану шахты.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SILVER_MINE_ROBBERY_2</Tag>
         <English>These criminals must pay for this! Search for them! Put an end to their miserable lives!</English>
+        <French>Ces criminels doivent le payer ! Trouvez les, et mettez fin à leur misérable vie!</French>
         <German>Diese Kriminellen werden dafür bezahlen! Sucht sie und setzt ihrem Leben ein Ende.</German>
         <Russian>Эти преступники должны заплатить за это! Найти и убить негодяев!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SILVER_MINE_ROBBERY_3</Tag>
         <English>Let us solve this peacefully, with as little cost as possible. Offer the miners enough gold so they will guard the silver themselves.</English>
+        <French>Employons la méthode douce, celle le meilleur marché possible. Offrez aux mineurs assez d'argent pours qu'ils montent la garde de l'argent eux-même.</French>
         <German>Lasst uns dies friedlich und mit so wenig Kosten wie möglich bereinigen. Bietet den Minenarbeitern etwas Gold, damit sie das Silber selbst bewachen.</German>
         <Russian>Давайте решим это мирным путем, с минимальными затратами. Предложите старателям достаточно золота, чтобы они сами охраняли серебро.</Russian>
     </TEXT>
@@ -1272,24 +1334,28 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_NATIVE_TRADER_ATTACK_HELP</Tag>
         <English>[ICON_BULLET]We are being attacked by hostile Natives!</English>
+        <French>[ICON_BULLET]Nous sommes attaqués par des indigènes hostiles !</French>
         <German>[ICON_BULLET]Wir werden durch Ureinwohner angegriffen!</German>
         <Russian>[ICON_BULLET]На нас напали враждебно настроенные индейцы!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CRIMINALS_REVOLT_HELP</Tag>
         <English>[ICON_BULLET]The poor in our city revolt!</English>
+        <French>[ICON_BULLEt]Les pauvres dans notre ville se soulèvent !</French>
         <German>[ICON_BULLET]Die Armen in unserer Stadt revoltieren!</German>
         <Russian>[ICON_BULLET]Бедняки нашего города устроили бунт!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_BUCCANNERS_ATTACK_MINE_HELP</Tag>
         <English>[ICON_BULLET]Our silver mine is looted by buccaneers!</English>
+        <French>[ICON_BULLET]Des boucaniers pillent notre mine d'argent</French>
         <German>[ICON_BULLET]Unseren Silbermine wird von Bukanieren angegriffen!</German>
         <Russian>[ICON_BULLET]Наш серебряный рудник разграблен пиратами!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MILITIA_DEFENDS_MINE_HELP</Tag>
         <English>[ICON_BULLET]Our silver mine will be guarded by our militia!</English>
+        <French>[ICON_BULLET]La milice gardera notre mine d'argent </French>
         <German>[ICON_BULLET]Unseren Silbermine wird von unserer Miliz bewacht!</German>
         <Russian>[ICON_BULLET]Ополченцы будут охранять наш рудник!</Russian>
     </TEXT>
@@ -1406,7 +1472,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BABY_BOOM_1</Tag>
         <English>Milord, worn out and tired, our men are returning home from the war you sent them to. But they're not so tired that they can't party in the taverns and spend their war loot. The barmaids make eyes at the war heroes and soon we see many big bellies. A disgraceful goings-on, don't you think?</English>
-        <French>De retour de la guerre, nos soldats se sont consacrés à la paix et à fonder des familles. Notre civilisation connaît un baby-boom !</French>
+        <French>Sire, nos hommes recrus de fatigue et épuisés reviennent chez eux de la guerre. Mais ils ne sont pas épuisés au point de renoncer à célébrer ça dans les tavernes et dépenser leur butin. Les serveuses aguichent ces héros de guerre et bientôt leurs ventre s'arrondiront. Un état des choses bien immoral, non? </French>
         <German>Milord, abgekämpft und müde kehren unsere Männer aus dem Krieg, in den Ihr sie schicktet, heim. Doch sind sie nicht müde genug, in den Wirtshäusern zu feiern und ihre Kriegsbeute zu verprassen. Die Schankmaiden machen den Kriegshelden schöne Augen und diese den Jungfern dicke Bäuche. Es ist ein schandhaftes Treiben, findet Ihr nicht?</German>
         <Italian>I nostri soldati, tornati dalla guerra, si sono dedicati alla pace e a crearsi delle famiglie. La nostra civiltà gode di un boom di nascite!</Italian>
         <Spanish>Nuestros soldados, al volver de la guerra, se han dedicado a la paz y a cuidar de sus familias. ¡Nuestra civilización está atravesando un "baby boom"!</Spanish>
@@ -1415,7 +1481,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_BABY_BOOM_HELP</Tag>
         <English>Population growth in 1 to %d1 cities.</English>
-        <French>Croissance de la population dans 1 à %d1 villes.</French>
+        <French>La population croît dans 1 à %d1 villes.</French>
         <German>Bevölkerungswachstum in 1 bis %d1 Siedlungen.</German>
         <Russian>В %d1 городах население увеличивается на 1</Russian>
     </TEXT>
@@ -1506,7 +1572,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HERBS_1</Tag>
         <English>Milord, the midwife of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], a cranky, crazy old woman, cured the feverish chief of the nearby Native settlement with a tea she made for him. They both stank terribly - the tea as well as the woman - but the brew helped.[PARAGRAPH:2]Now all the Native villages want the woman to help them with their herbs, hoping she can take away every ache and pain. Do you agree with this, Milord?</English>
-        <French>Seigneur, un thé médicinal cultivé par des herboristes locaux s'est avéré efficace pour traiter certaines maladies. Ce thé ne pousse que dans une région bien spécifique près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
+        <French>Sire, une sage-femme de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], une vieille folle acariâtre, a soigné le chef du village indigène voisin avec un thé médicinal. Aussi bien le thé que la vieille femme puaient horriblement, mais le breuvage a aidé. [PARAGRAPH:2]Par la suite, tous les villages indigènes veulent l'aide de cette femme pour leurs herbes, l'espérant capable de soigner tous les maux. Êtes vous d'accord, Sire ?</French>
         <German>Milord, die Hebamme von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], eine hutzlige, verrückte Alte, hat den hitzig fiebernden Häuptling des nahen Ureinwohnerdorfes geheilt vermittels eines Tees, den sie ihm eingeflößt hatte. Sie stanken beide erbärmlich - der Tee wie das Weib -, doch der Sud half.[PARAGRAPH:2]Nun ersuchen die Wilden, die Frau möge ihnen mit ihren Kräutern zukünftig bei all ihren kleinen und großen Nöten beistehen, möge ihnen jedes Weh und jede Warze hinfortnehmen. Seid Ihr damit einverstanden, Milord?</German>
         <Italian>Si è scoperto che un tè medicinale coltivato dalla gente del posto è efficace nel curare i malanni. Questo tè cresce solo in una specifica regione vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
         <Spanish>Se ha descubierto que una infusión medicinal cultivada por los lugareños es eficaz para tratar enfermedades. Esta planta solo crece en una región muy concreta, cerca de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
@@ -1536,7 +1602,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TAILWIND_1</Tag>
         <English>[COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] is affected by a strong tailwind.</English>
-        <French>Votre navire [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] est affecté par de forts vents arrières.</French>
+        <French>Votre navire [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] a le vent en poupe.</French>
         <German>Euer Schiff [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] wird von kräftigem Rückenwind begünstigt.</German>
         <Russian>Какая удача! Сильный попутный ветер значительно ускорил ход нашего [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT].</Russian>
     </TEXT>
@@ -1571,7 +1637,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TERRAX_1</Tag>
         <English>Milord, astonishing news has reached us from the Old World. At the coronation feast of the Habsburg Emperor, the rulers of Europe were all gathered together. As the wine flowed, they bragged and teased each other. One word led to another and finally a bet was made: the ruler first to have the most new towns in the interior of the New World will win. Our own King promises us rich rewards if we help Him win the bet!</English>
-        <French>Seigneur, du Vieux Monde nous parvient une nouvelle étonnante : lors de la fête du couronnement de l'empereur teuton, les souverains d'Europe ont festoyé ensemble au banquet. Le vin coule à flot, ils se vantent et se taquinent. Un mot a mené à un autre et finalement un pari a été fait : Pour la Majesté qui réussit la première à fonder de nombreuses nouvelles villes à l'intérieur du Nouveau Monde, les autres Altesses doivent embrasser son cul nu. Sa Majesté nous a promis de riches récompenses si nous l'aidons à gagner le pari !</French>
+        <French>Seigneur, du Vieux Monde nous parvient une nouvelle étonnante : lors de la fête du couronnement de l'empereur Habsburg, les souverains d'Europe ont festoyé ensemble au banquet. Le vin coule à flot, ils se vantent et se taquinent. Un mot a mené à un autre et finalement un pari a été fait : Pour la Majesté qui réussit la première à fonder de nombreuses nouvelles villes à l'intérieur du Nouveau Monde, les autres Altesses doivent embrasser son cul nu. Sa Majesté nous a promis de riches récompenses si nous l'aidons à gagner le pari !</French>
         <German>Milord, aus der Alten Welt dringt eine erstaunliche Kunde: Beim Krönungsfest des teutschen Kaisers zechten die Herrscher Europas gemeinsam beim Bankett. Der Rebensaft floss, man prahlte und neckte einander. Ein Wort gab das andere und schließlich wurde eine Wette geschlossen: Der Majestät, der es als Erster gelingt, viele neue Städte im Landesinneren der Neuen Welt zu gründen, der müssen die anderen Hoheiten den blanken Arsch küssen. Seine Majestät hat uns reichen Lohn versprochen, wenn wir ihm zum Wettsieg verhelfen!</German>
         <Russian>Милорд, из Старого Света до нас дошли удивительные новости. На пиру в честь коронации Императора Габсбургов собрались все правители Европы. В винном угаре монархи хвастались и поддразнивали друг друга. Одно слово тянулось за другим и в конце концов было заключено пари: победит тот правитель, у которого первым окажется больше всего новых городов во внутренних районах Нового Света. Наш Король сулит нам богатые награды, если мы поможем Ему выиграть пари!</Russian>
     </TEXT>
@@ -1606,14 +1672,14 @@
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SHIPYARD</Tag>
         <English>The shipyard in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] attracts harlots from the Old World.</English>
-        <French>Le port de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] attirent des prostitués venus d'Europe.</French>
+        <French>Le port de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] attirent des prostituées venus d'Europe.</French>
         <German>Die Schiffswerft in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] lockt Dirnen aus der Alten Welt an.</German>
         <Russian>Верфь в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] привлекает проституток из Старого Света.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SHIPYARD</Tag>
         <English>Milord, in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a resolute captain's widow has opened a brothel next to the shipyard and recruited a few young whores from home, who now sweeten the stevedores' evenings. Should we expel these wanton women?</English>
-        <French>Seigneur, la veuve d'un capitaine a ouvert un bordel à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Elle a recruté des jeunes prostitués venues d'Europe pour adoucir les soirées de nos marins. Devons-nous les expulser hors de nos colonies ?</French>
+        <French>Seigneur, la veuve d'un capitaine a ouvert un bordel à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Elle a recruté des jeunes prostituées venues d'Europe pour adoucir les soirées de nos marins. Devons-nous les expulser hors de nos colonies ?</French>
         <German>Milord, in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hat eine resolute Kapitänswitwe neben der Schiffswerft ein Bordell aufgemacht und ein paar junge Dirnen aus der Heimat angeworben, die nun den Zimmerleuten und Schauerleuten den Feierabend versüßen. Sollen wir die Weibsbilder vertreiben?</German>
         <Russian>Милорд, в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] решительная вдова капитана открыла бордель рядом с верфью и набрала несколько молодых шлюх из Европы, которые теперь услаждают вечера грузчиков. Должны ли мы изгнать этих распутных женщин?</Russian>
     </TEXT>
@@ -1641,14 +1707,14 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_CARGOSPACE_FAILED</Tag>
         <English>[COLOR_NEGATIVE_TEXT]Milord, the impostor has fled with your money![COLOR_REVERT]</English>
-        <French>[COLOR_NEGATIVE_TEXT]Milord, l'imposteur s'est enfui avec votre argent ![COLOR_REVERT]</French>
+        <French>[COLOR_NEGATIVE_TEXT]Sire, l'imposteur s'est enfui avec votre argent ![COLOR_REVERT]</French>
         <German>[COLOR_NEGATIVE_TEXT]Milord, der Hochstapler hat sich mit Eurem Geld auf und davon gemacht![COLOR_REVERT]</German>
         <Russian>[COLOR_NEGATIVE_TEXT]Милорд, мошенник скрылся с нашими деньгами![COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CARGOSPACE_SUCCESS</Tag>
         <English>[COLOR_POSITIVE_TEXT]Milord, the expansion of the [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] cargo space is progressing quickly.[COLOR_REVERT]</English>
-        <French>[COLOR_POSITIVE_TEXT]Milord, l'amélioration de la cargaison pour le navire [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] avance rapidement.[COLOR_REVERT]</French>
+        <French>[COLOR_POSITIVE_TEXT]Sire, l'amélioration de la cargaison pour le navire [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] avance rapidement.[COLOR_REVERT]</French>
         <German>[COLOR_POSITIVE_TEXT]Milord, der Ausbau der [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] schreitet zügig voran.[COLOR_REVERT]</German>
         <Russian>[COLOR_POSITIVE_TEXT]Милорд, расширение грузового отсека [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] идет полным ходом.[COLOR_REVERT]</Russian>
     </TEXT>
@@ -1696,7 +1762,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_ANTI_PIRATE_3</Tag>
         <English>Privateers and pirates are still terrorizing the merchants. A king in Europe is sending a third frigate to America to protect the sea lanes.</English>
-        <French>Les bateaux de guerre et les pirates continuent à terroriser nos marchands. Un roi en Europe décide d'envoyer une troisième frégate aux Amériques pour protéger les voies maritimes.</French>
+        <French>Les corsaires et les pirates continuent à terroriser nos marchands. Un roi en Europe décide d'envoyer une troisième frégate aux Amériques pour protéger les voies maritimes.</French>
         <German>Piraten terrorisieren ohne Unterlass die Überfahrten der Händler nach Europa. Ein Monarch scheut weder Kosten noch Mühen und schickt zum dritten Mal eine Fregatte nach Amerika, um die Küste sicherer zu machen.</German>
         <Russian>Каперы и пираты все еще терроризируют купцов. Короли Европы отправляют в Америку третий фрегат для защиты морских путей.</Russian>
     </TEXT>
@@ -1742,14 +1808,14 @@
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BUGS</Tag>
         <English>Boll weevils are destroying cotton crops.</English>
-        <French>Une invasion de charançons trouble nos récoltes.</French>
+        <French>Une invasion de charançons trouble nos récoltes de coton.</French>
         <German>Rüsselkäfer und ihre Larven plagen eine Baumwollplantage.</German>
         <Russian>Долгоносики уничтожают посевы хлопка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BUGS_1</Tag>
         <English>Milord, boll weevils have infested a plantation near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. The black beetle bores into the cotton boll and lays eggs there. Larvae eat everything in the capsules before we can harvest the cotton filaments. An Indian medicine man advises us to destroy the fields and burn down the plantation. Otherwise the infestation will spread.</English>
-        <French>Seigneur, une invasion de charançons trouble nos récoltes dans une plantation près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Que devons-nous faire ?</French>
+        <French>Seigneur, une invasion de charançons du coton trouble nos récoltes dans une plantation près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Ce scarabée noir fore dans la fleur et y pond. Les larves dévorent tout de l'intérieur avant que nous ne puvions récolter les filament. Un guérissuer indigène nous recommande de détruire les champs et d'incendier la plantation. Sinon l'insecte va se répandre.</French>
         <German>Milord, Baumwollkapselkäfer haben eine Plantage bei [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] befallen. Das schwarze Getier bohrt seine Rüssel in die Kapselfrüchte und legt dort Eier ab. Larven fresssen die Kapseln leer, bevor wir ihre Samenfäden ernten können. Ein indianischer Medizinmann hat uns geraten, die Felder zu vernichten und sogar das Anwesen niederzubrennen, anderenfalls sei der Plage nicht Herr zu werden.</German>
         <Russian>Милорд, долгоносики заполонили плантацию возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Черный жук вгрызается в хлопковую коробочку и откладывает туда яйца. Личинки съедают все, что находится в капсулах, прежде чем мы успеваем собрать хлопковые нити. Шаман индейцев советует нам уничтожить поля и сжечь плантацию. В противном случае заражение будет распространяться.</Russian>
     </TEXT>
@@ -1784,28 +1850,28 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_GREAT_TOOL_FACTORY_1</Tag>
         <English>A delegation from the craftsmen's guilds is here to see you. The masters praise your efforts in setting up a blacksmith's workshop for the mass production of ironmongery. The demand for nails and rivets, bolts and axes, clamps and screws is growing. Productivity means more progress in the colonies. They suggest building a factory in a central location, larger than any the New World has ever seen.</English>
-        <French>Vous avez construit votre premier usine sidérurgique. Très bien ! Mais est-ce suffisant ?</French>
+        <French>Une délagation de la guilde des quincailliers demande à vous voir. Les maitres de forge vous félicitent de vos efforts à mettre en place un fabrique d'outil pour la fabrication en masse de quincaillerie. La demande en clous, rivets, écrous et axes, serre-joints et vis croît. La productivité entrainera le progrès dans les colonies. ILs suggèrent construire une grande fabrique d'outils dans un lieu central, plus grande que ce que le Nouveau Monde n'ait jamais vu.</French>
         <German>Eine Abordnung der Handwerkergilden wird bei Euch vorstellig. Die Meister loben Eure Tatkraft, eine Schmiedemanufaktur errichtet zu haben, in der Eisenwaren in großen Mengen hergestellt werden können. Doch wüchse die Nachfrage an Nägeln und Nieten, Bolzen und Beilen, Schellen und Schrauben noch weiter an. Die Entwicklung der Kolonien hinge maßgeblich davon ab, diesen Bedarf zu decken. Demütig unterbreitet man Euch die Idee, an zentraler Stelle eine Fabrik zu errichten, größer als alle anderen, die die Neue Welt bisher gesehen hat.</German>
         <Russian>Делегация от гильдий ремесленников к Губернатору. Мастера хвалят ваши усилия по созданию кузнечного цеха для массового производства скобяных изделий. Спрос на гвозди и заклепки, болты и оси, струбцины и винты растет. Производительность означает больший прогресс в колониях. Они предлагают построить фабрику, больше, чем когда-либо видел Новый Свет.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_GREAT_TOOL_FACTORY</Tag>
         <English>Another governor was the first to build a big hardware factory. Don't count on any rewards even if you catch up.</English>
-        <French>Oh non ! Un autre gouverneur a déjà construit des Hauts fourneaux. Oubliez la récompense !</French>
+        <French>Oh non ! Un autre gouverneur a déjà construit une grande fabrique d'outils. Oubliez la récompense !</French>
         <German>Ein anderer Gouverneur hat als Erster eine Große Eisenwarenfabrik errichtet. Rechnet nicht mehr mit einer Belohnung, wenn Ihr gleichzieht.</German>
         <Russian>Другой губернатор первым построил завод инструментов. Можете не рассчитывать ни на какие награды, даже если построите свой.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_GREAT_TOOL_FACTORY_DONE</Tag>
         <English>Somebody has built a great tool factory.</English>
-        <French>Une puissance étrangère a construit des Hauts fourneaux.</French>
+        <French>Une puissance étrangère a construit une grande fabrique d'outils.</French>
         <German>Eine Nation hat eine Große Eisenwarenfabrik errichtet.</German>
         <Russian>Кто-то построил отличный завод по производству инструментов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_GREAT_TOOL_FACTORY_DONE</Tag>
         <English>What an amazing achievement! You were the first governor to establish a great tool factory in the New World. The artisan guilds feel indebted to you.</English>
-        <French>Félicitations ! Vous êtes le premier gouverneur à construire des Hauts fourneaux dans le nouveau monde. Vos citoyens vous sont reconnaissants.</French>
+        <French>Félicitations ! Vous êtes le premier gouverneur à construire une grande fabrique d'outils dans le nouveau monde. La guilde des artisans vous en est reconnaissante.</French>
         <German>Welch erstaunliche Leistung! Ihr habt als erster Gouverneur eine Große Eisenwarenfabrik in der Neuen Welt errichtet. Die Handwerkergilden fühlen sich Euch zu Dank verpflichtet.</German>
         <Russian>Какое удивительное достижение! Вы были первым губернатором, построившим в Новом Свете завод инструментов. Ремесленные гильдии чувствуют себя в долгу перед вами.</Russian>
     </TEXT>

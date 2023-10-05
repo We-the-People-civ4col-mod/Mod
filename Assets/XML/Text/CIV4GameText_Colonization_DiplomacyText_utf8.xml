@@ -7300,7 +7300,7 @@
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_SOUSA_1</Tag>
         <English>Take a seat on the veranda of my plantation. May I offer you some refreshment? A glass of rum? A cup of coffee? A slave girl?</English>
-        <French>Enfin un adversaire à ma mesure ! Que peuvent faire les [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] pour vous ?</French>
+        <French>Asseyez vous sous la veranda de ma plantation. Puis je vous offir quelque chose? Un verre de rhum ? Une tasse de café ? Une esclave ?</French>
         <German>Nehmt Platz auf der Veranda meiner Plantage. Darf ich Euch eine Erfrischung anbieten? Ein Glas Rum? Eine Tasse Kaffee? Eine junge Sklavin?</German>
         <Italian>Finalmente parlo con un degno avversario. Cosa può fare [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] per te?</Italian>
         <Spanish>Por fin consigo hablar con un adversario digno. ¿Qué puede hacer el [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] por vos?</Spanish>
@@ -7435,7 +7435,7 @@
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_NUNKUI_1</Tag>
         <English>Stranger, I will not let my warlike youths return until they bring me what I long for: your head. Emptied, smoked and with your mouth sewn shut - to silence your chatter forever.</English>
-        <French> Je ne laisserai pas mes jeunes guerriers revenir avant qu'il me rapportent ce que je sougaite si fort : votre tête, vidée, fumée, avec la bouche cousue - pour mettre fin à jamais à vos bavardages.</French>
+        <French>Étranger, Je ne laisserai pas mes jeunes guerriers revenir avant qu'ils me rapportent ce que je souhaite si fort : votre tête, vidée, fumée, avec la bouche cousue - pour mettre fin à jamais à vos bavardages.</French>
         <German>Fremder, ich werde erst dann meine kriegslüsternen Jünglinge zurückkommen lassen, wenn sie mir das mitbringen, wonach es mich verlangt: Euren Kopf. Entleert, geräuchert und mit zugenähtem Mund - auf dass Euer Geschwätz für immer verstummt.</German>
         <Italian>Pace? Ci sarà la pace quando ti arrenderai!</Italian>
         <Spanish>¿Paz? ¡La tendremos cuando os rindáis!</Spanish>
@@ -7471,7 +7471,7 @@
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_NUNKUI_1</Tag>
         <English>Stranger, more and more of your kind are coming into this world. Where there was jungle yesterday, there is only stone today, monuments to your lifeless culture. Know that the Earth Mother watches your actions closely. What gifts have you for her?</English>
-        <French>Étranger, vous êtes de plus en plus nombreux à venir dans ce monde. Vous avez érigé des cités de pierre aussi mortes que votre culture, là où la jungle luxuriante se trouvait. Sachez que la Terre-Mère suit comme une ombre chacun de vos faits et gestes. Quels cadeaux avez vous pour elle?</French>
+        <French>Étranger, vous êtes de plus en plus nombreux à venir dans ce monde. Vous avez érigé des cités de pierre aussi mortes que votre culture, là où la jungle luxuriante se trouvait. Sachez que la Terre-Mère suit comme une ombre chacun de vos faits et gestes. Quels cadeaux avez-vous pour elle?</French>
         <German>Fremder, immer mehr Eures Schlages kommen in diese Welt, und wo gestern noch Urwald stand, sind heute steinerne Wüsten. Wisset, dass die Erdmutter Euer Treiben und Tun aufmerksam beobachtet. Was habt Ihr ihr als Gaben mitgebracht?</German>
         <Italian>Ti sei dimenticato dell'anniversario della mia colonia? Non ti preoccupare. Come dono potresti darci quello che chiediamo.</Italian>
         <Spanish>¿Habéis olvidado que es el aniversario de mi colonia? Bueno, no pasa nada. Como regalo nos podríais dar lo que os pedimos.</Spanish>
@@ -7597,7 +7597,7 @@
     <TEXT>
         <Tag>TXT_KEY_CHURCH_WAR_ACCEPTED_PRESTIGE</Tag>
         <English>You have followed the command of the Church and declared war on [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. Your prestige in Europe has grown.</English>
-        <French>Vous avez suivi le commandement de l'église et déclaré la guerre aux [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. Votre prestige s'est accru en Europe.</French>
+        <French>Vous avez suivi le commandement de l'Église et déclaré la guerre aux [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. Votre prestige s'est accru en Europe.</French>
         <German>Ihr seid dem Befehl der Kirche gefolgt und habt [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] den Krieg erklärt. Euer Ansehen in Europa ist gestiegen.</German>
         <Italian>Avete seguito il comando della Chiesa e dichiarato guerra a [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. Il vostro prestigio in Europa è cresciuto.</Italian>
         <Spanish>Has seguido el mandato de la Iglesia y has declarado la guerra a [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. Tu prestigio en Europa ha crecido.</Spanish>
@@ -7606,7 +7606,7 @@
     <TEXT>
         <Tag>TXT_KEY_CHURCH_WAR_ACCEPTED_TROOPS</Tag>
         <English>You have followed the command of the Church and declared war on [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. Support troops from the Church have arrived.</English>
-        <French>Vous avez suivi le commandement de l'église et déclaré la guerre aux [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. De nouvelles troupes envoyées par l'église sont arrivés à bon port.</French>
+        <French>Vous avez suivi le commandement de l'Église et déclaré la guerre aux [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. De nouvelles troupes envoyées par l'église sont arrivés à bon port.</French>
         <German>Ihr seid dem Befehl der Kirche gefolgt und habt [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] den Krieg erklärt. Die Truppen der Kirche sind bereits eingetroffen.</German>
         <Italian>Hai seguito il comando della Chiesa e hai dichiarato guerra a [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. Le truppe di supporto della Chiesa sono arrivate.</Italian>
         <Spanish>Has seguido la orden de la Iglesia y has declarado la guerra a [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. Las tropas de apoyo de la Iglesia han llegado.</Spanish>
@@ -7649,14 +7649,14 @@
     <TEXT>
         <Tag>USER_DIPLO_COLONIAL_INTERVENTION_NATIVE_WAR_END</Tag>
         <English>Very well, we will do as you wish for this time. But a time will come when we ask a favour in exchange. (War ends, Attitude improved)</English>
-        <French>Très bien, nous agirons selon vos souhait cette fois-ci. Mais un jour viendra où nous demanderons une faveur en retour. (Fin de la guerre, l'attitude s'améliore)</French>
+        <French>Très bien, nous agirons selon vos souhaits cette fois-ci. Mais un jour viendra où nous demanderons une faveur en retour. (Fin de la guerre, l'attitude s'améliore)</French>
         <German>Wir werden das Urteil Gottes über sie bringen, Euer Eminenz. (Krieg endet, Ansehen verbessert)</German>
         <Russian>Очень хорошо, мы сделаем, как вы хотите на этот раз. Но придет время, когда мы попросим об одолжении взамен. (Война закончилась, отношения улучшились)</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_COLONIAL_INTERVENTION_NATIVE_WAR_CONTINUE</Tag>
         <English>Impossible, these heathens must be purged by fire. (War continues, Attitude worsened, King and Church Attitude improved, Natives get War Support)</English>
-        <French>Impossible, ces païens doivent être passés par l'épée. (Poursuite de la guerre, l'attitude se crispe, le Roi et l'Église vous apprécient davantage, les Indigènes recoivent des renforts de guerre.) </French>
+        <French>Impossible, ces païens doivent être passés par l'épée. (Poursuite de la guerre, les relations se crispent, le Roi et l'Église vous apprécient davantage, les Indigènes recoivent des renforts de guerre.) </French>
         <German>Unmöglich, diese Heiden müssen durch Feuer gereinigt werden. (Krieg geht weit, Ansehen verschlechter, Ansehen bei König und Kirche verbessert, Ureinwohner erhalten Unterstützung)</German>
         <Russian>Невозможно, этих язычников нужно очистить огнем. (Война продолжается, отношения ухудшились, отношение короля и церкви улучшилось, туземцы получают военную поддержку)</Russian>
     </TEXT>
@@ -7712,14 +7712,14 @@
     <TEXT>
         <Tag>AI_DIPLO_ROYAL_INTERVENTION</Tag>
         <English>We wonder why the conflict against [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] is taking so long. Do you require more troops? If yes, we are willing to send you a ship and two battalions for just [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD]. If you prefer, we could levy a tax increase of [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT] instead of the gold.</English>
-        <French>Nous nosu demandons pourquoi la guerre contre [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] perdure. Avez vous besoin de renforts? Si oui, nous vous donnerons un navire et deux bataillons pour [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD]. Si vous le souhaitez, il est également possible de financer cette expédition via une hausse des taxes de [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT].</French>
+        <French>Nous nous demandons pourquoi la guerre contre [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] perdure. Avez-vous besoin de renforts? Si oui, nous vous donnerons un navire et deux bataillons pour [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD]. Si vous le souhaitez, il est également possible de financer cette expédition via une hausse des taxes de [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT].</French>
         <German>Wir fragen uns warum der Konflikt mit [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] so lange andauert. Benötigt ihr mehr Truppen? Falls ja, sind wir bereit euch ein Schiff und zwei ein Battallione Truppen für lediglich [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD] zu überlassen. Als Alternative zu der Goldzahlung bieten wir euch eine Steuererhöhung von [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT] an.</German>
         <Russian>Мы удивляемся, почему конфликт с [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] длится так долго. Вам нужно больше войск? Если да, мы готовы отправить вам корабль и несколько батальон всего за [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD]. Если хотите, вместо оплаты золотом мы можем увеличить налог на [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ROYAL_INTERVENTION_YES_GOLD</Tag>
         <English>We will gladly pay that price to receive Your Majesty's elite troops. Be assured this war will end soon. (pay gold)</English>
-        <French>Nous vous payons rubis sur l'ongle pour les troupes d'élite de Sa Mjesté. Nous vous assurons que cette guerre se concluera bientôt. (Payer comptant avec de l'or)</French>
+        <French>Nous vous payons rubis sur l'ongle pour les troupes d'élite de Votre Majesté. Nous vous assurons que cette guerre se conclura bientôt. (Payer comptant avec de l'or)</French>
         <German>Wir zahlen gerne diesen Preis um die Elite Truppen Ihrer Majestät zu bekommen! Seid versichert, dieser Krieg endet bald. (Gold bezahlen)</German>
         <Russian>Мы с радостью заплатим эту цену, чтобы получить элитные войска Вашего Величества. Будьте уверены, эта война скоро закончится. (заплатить золотом)</Russian>
     </TEXT>
