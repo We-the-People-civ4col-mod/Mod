@@ -229,7 +229,7 @@ class CvPediaUnit:
 		unitsList=[(0,0)]*gc.getNumUnitInfos()
 		for j in range(gc.getNumUnitInfos()):
 			unitsList[j] = (gc.getUnitInfo(j).getDescription(), j)
-		unitsList.sort()
+		unitsList.sort(key = CvUtil.sortkey)
 
 		i = 0
 		iSelected = 0

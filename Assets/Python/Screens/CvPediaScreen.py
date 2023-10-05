@@ -30,7 +30,7 @@ class CvPediaScreen( CvScreen.CvScreen ):
 				infoList[j] = (getInfo(i).getDescription(), i)
 				j += 1
 
-		infoList.sort()
+		infoList.sort(key = CvUtil.sortkey)
 
 		return infoList
 	

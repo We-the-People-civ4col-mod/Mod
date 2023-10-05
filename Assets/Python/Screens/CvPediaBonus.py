@@ -198,7 +198,7 @@ class CvPediaBonus:
 		rowListName=[(0,0)]*gc.getNumBonusInfos()
 		for j in range(gc.getNumBonusInfos()):
 			rowListName[j] = (gc.getBonusInfo(j).getDescription(), j)
-		rowListName.sort()
+		rowListName.sort(key = CvUtil.sortkey)
 
 		iSelected = 0
 		i = 0

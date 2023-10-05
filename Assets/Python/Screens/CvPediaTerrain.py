@@ -235,7 +235,7 @@ class CvPediaTerrain:
 		listSorted=[(0,0)]*gc.getNumTerrainInfos()
 		for j in range(gc.getNumTerrainInfos()):
 			listSorted[j] = (gc.getTerrainInfo(j).getDescription(), j)
-		listSorted.sort()
+		listSorted.sort(key = CvUtil.sortkey)
 
 		iSelected = 0
 		i = 0
