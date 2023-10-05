@@ -83,7 +83,7 @@
             <Plural>0</Plural>
         </English>
         <French>
-            <Text>War Ships</Text>
+            <Text>Navires de guerre</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
@@ -112,9 +112,9 @@
             <Plural>0</Plural>
         </English>
         <French>
-            <Text>Corsairs</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Text>Navires pirates</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
         </French>
         <German>
             <Text>Piratenschiffe</Text>
@@ -141,8 +141,8 @@
             <Plural>0</Plural>
         </English>
         <French>
-            <Text>Merchant Ships</Text>
-            <Gender>Female</Gender>
+            <Text>Navires de commerce</Text>
+            <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
         <German>
