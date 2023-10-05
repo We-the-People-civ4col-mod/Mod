@@ -13501,46 +13501,9 @@ bool CvUnit::isPromotionValid(PromotionTypes ePromotion) const
 		return false;
 	}
 
-	if (isOnlyDefensive())
+	if (isOnlyDefensive() && !kPromotion.isAvailableForDefensiveUnit())
 	{
-		if (kPromotion.getCityAttackPercent() != 0)
-		{
-			return false;
-		}
-		if (kPromotion.getWithdrawalChange() != 0)
-		{
-			return false;
-		}
-		if (kPromotion.isBlitz())
-		{
-			return false;
-		}
-		if (kPromotion.isAmphib())
-		{
-			return false;
-		}
-		if (kPromotion.isRiver())
-		{
-			return false;
-		}
-		if (kPromotion.getHillsAttackPercent() != 0)
-		{
-			return false;
-		}
-		for (int iTerrain = 0; iTerrain < GC.getNumTerrainInfos(); ++iTerrain)
-		{
-			if (kPromotion.getTerrainAttackPercent(iTerrain) != 0)
-			{
-				return false;
-			}
-		}
-		for (int iFeature = 0; iFeature < GC.getNumFeatureInfos(); ++iFeature)
-		{
-			if (kPromotion.getFeatureAttackPercent(iFeature) != 0)
-			{
-				return false;
-			}
-		}
+		return false;
 	}
 
 	if (NO_PROMOTION != kPromotion.getPrereqPromotion())

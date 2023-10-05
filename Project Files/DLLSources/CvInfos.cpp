@@ -935,6 +935,8 @@ m_bRiver(false),
 m_bEnemyRoute(false),
 m_bAlwaysHeal(false),
 m_bHillsDoubleMove(false),
+m_bAvailableForDefensiveUnit(false),       // WTP, johanb - cache for defensive unit availabilty
+m_bAvailableForDefensiveUnitCached(false), // WTP, johanb - cache for defensive unit availabilty
 m_aiTerrainAttackPercent(NULL),
 m_aiTerrainDefensePercent(NULL),
 m_aiFeatureAttackPercent(NULL),
@@ -1154,6 +1156,65 @@ bool CvPromotionInfo::isHillsDoubleMove() const
 {
 	return m_bHillsDoubleMove;
 }
+bool CvPromotionInfo::isAvailableForDefensiveUnit()
+{
+	if (m_bAvailableForDefensiveUnitCached) // Cached result;
+		return m_bAvailableForDefensiveUnit;
+
+	calculateAvailableForDefensiveUnit();
+	return m_bAvailableForDefensiveUnit;
+}
+
+void CvPromotionInfo::calculateAvailableForDefensiveUnit()
+{
+	if (getCityAttackPercent() != 0)
+	{
+		m_bAvailableForDefensiveUnit = false;  m_bAvailableForDefensiveUnitCached = true; return;
+	}
+	if (getWithdrawalChange() != 0)
+	{
+		m_bAvailableForDefensiveUnit = false;  m_bAvailableForDefensiveUnitCached = true; return;
+	}
+	if (isBlitz())
+	{
+		m_bAvailableForDefensiveUnit = false;  m_bAvailableForDefensiveUnitCached = true; return;
+	}
+	if (isAmphib())
+	{
+		m_bAvailableForDefensiveUnit = false;  m_bAvailableForDefensiveUnitCached = true; return;
+	}
+	if (isRiver())
+	{
+		m_bAvailableForDefensiveUnit = false;  m_bAvailableForDefensiveUnitCached = true; return;
+	}
+	if (getHillsAttackPercent() != 0)
+	{
+		m_bAvailableForDefensiveUnit = false;  m_bAvailableForDefensiveUnitCached = true; return;
+	}
+	for (int iTerrain = 0; iTerrain < GC.getNumTerrainInfos(); ++iTerrain)
+	{
+		if (getTerrainAttackPercent(iTerrain) != 0)
+		{
+			m_bAvailableForDefensiveUnit = false;  m_bAvailableForDefensiveUnitCached = true; return;
+		}
+	}
+	for (int iFeature = 0; iFeature < GC.getNumFeatureInfos(); ++iFeature)
+	{
+		if (getFeatureAttackPercent(iFeature) != 0)
+		{
+			m_bAvailableForDefensiveUnit = false;  m_bAvailableForDefensiveUnitCached = true; return;
+		}
+	}
+	for (int iUnitClass = 0; iUnitClass < GC.getNumUnitClassInfos(); ++iUnitClass)
+	{
+		if (getUnitClassAttackModifier(iUnitClass) != 0)
+		{
+			m_bAvailableForDefensiveUnit = false;  m_bAvailableForDefensiveUnitCached = true; return;
+		}
+	}
+	m_bAvailableForDefensiveUnit = true; m_bAvailableForDefensiveUnitCached = true;
+}
+
 const char* CvPromotionInfo::getSound() const
 {
 	return m_szSound;

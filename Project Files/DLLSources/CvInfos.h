@@ -268,6 +268,7 @@ public:
 	bool isEnemyRoute() const;
 	bool isAlwaysHeal() const;
 	bool isHillsDoubleMove() const;
+	bool isAvailableForDefensiveUnit(); //WTP, jbu - recalculates once per load;
 
 	const char* getSound() const;
 	void setSound(const char* szVal);
@@ -331,7 +332,9 @@ protected:
 	bool m_bEnemyRoute;
 	bool m_bAlwaysHeal;
 	bool m_bHillsDoubleMove;
-
+	bool m_bAvailableForDefensiveUnit;
+	bool m_bAvailableForDefensiveUnitCached;
+	void calculateAvailableForDefensiveUnit();
 	CvString m_szSound;
 	// Arrays
 	int* m_aiTerrainAttackPercent;
