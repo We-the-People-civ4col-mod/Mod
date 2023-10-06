@@ -3450,15 +3450,15 @@
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_WHALING_BOAT_WORKING_PEDIA</Tag>
         <English>Whaling, the hunting and killing of whales for oil and other byproducts, was practiced as an organized industry as early as 875 AD. By the 16th century it was the principal industry along the coasts of Spain and France. As the industry spread throughout the world trade became increasingly profitable. Some regions of the world's oceans along the animals' migration routes had a dense whale population which attracted large concentrations of whaling ships, and the industry continued to grow well into the 20th century. Depleting some whale species to near extinction led to the banning of whaling in many countries by 1969, and to a worldwide cessation of whaling as an industry in the late 1980s.</English>
-        <French>La baleine est chassée entre autres pour sa graisse dont on fait de l'huile, et ce de manière organisée depuis au moins l'an 875. Au XVIe siècle, la chasse à la baleine est devenue la principale activité économique des régions côtières de la France et de l'Espagne. Cette pratique s'est répandue à travers le monde, et est devenue de plus en plus lucrative en termes de commerce et de ressources. Dans certaines régions océaniques longeant leurs routes migratoires, la population des baleines est très importante. Ces régions sont devenues la cible de nombreux baleiniers, la chasse ayant connu un essor important au cours du XXe siècle. Certaines espèces de baleines étant en voie de disparition, de nombreux pays à décidèrent d'en interdire la chasse dès 1969, avant qu'un moratoire, signé à la fin des années 1980, n'interdise au niveau mondial la chasse industrielle à la baleine.</French>
-        <German>Schon vor Jahrtausenden machten die Menschen in Küstennähe Jagd auf Wale. Felszeichnungen und Knochenfunde im Süden Koreas zeigen Jagdszenen, die sich vor 7000 Jahren ereignet haben. Skandinavische Höhlenmalereien belegen, daß auch in Europa bereits in der Steinzeit Jagd auf die riesigen Meeressäuger gemacht wurden. Die Inuit Nord-Amerikas erlegen noch heute Wale mit Speeren, die sie aus ihren Kajaks werfen. Im 17. Jahrhundert begannen die europäischen Kolonisten in Nord-Amerika, mit Kuttern und Harpunen Jagd auf die Walschulen zu machen, die an der Nordostküste der Neuen Welt beheimatet waren.</German>
+        <French>La baleine est chassée entre autres pour sa graisse dont on fait de l'huile, et ce de manière organisée depuis au moins l'an 875. Au XVIe siècle, la chasse à la baleine est devenue la principale activité économique des régions côtières de la France et de l'Espagne. Cette pratique s'est répandue à travers le monde, et est devenue de plus en plus lucrative en termes de commerce et de ressources. Dans certaines régions océaniques longeant leurs routes migratoires, la population des baleines est très importante. Ces régions sont devenues la cible de nombreux baleiniers, la chasse ayant connu un essor important au cours du XXe siècle. Certaines espèces de baleines étant en voie de disparition, de nombreux pays décidèrent d'en interdire la chasse dès 1969, avant qu'un moratoire, signé à la fin des années 1980, n'interdise au niveau mondial la chasse industrielle à la baleine.</French>
+        <German>Schon vor Jahrtausenden machten die Menschen in Küstennähe Jagd auf Wale. Felszeichnungen und Knochenfunde im Süden Koreas zeigen Jagdszenen, die sich vor 7000 Jahren ereignet haben. Skandinavische Höhlenmalereien belegen, daß auch in Europa bereits in der Steinzeit Jagd auf die riesigen Meeressäuger gemacht wurden. Die Inuit Nord-Amerikas erlegen noch heute Wale mit Speeren, die sie aus ihren Kajaks werfen. Im 17. Jahrhundert begannen die europäischen Kolonisten in Nord-Amerika, mit Kuttern und Harpunen Jagd auf die Walschulen zu machen, die an der Nordostküste der Neuen Welt beheimatet waren. 1969 wurde der Walejagd in zahlreichenden Ländern verboten, als die Beistände vieler Walarten.   </German>
         <Italian>La caccia alla balena, organizzata per l'estrazione di olii e altri sottoprodotti, risale addirittura all'875 d. C. Durante il 16° secolo, divenne la maggior fonte di sostentamento delle regioni costiere di Spagna e Francia. Questo tipo di industria si diffuse in tutto il mondo e divenne molto redditizia in termini di commercio e risorse; alcune regioni oceaniche posizionate nel mezzo delle rotte di migrazione potevano contare su un'alta densità di balene e divennero il punto di concentrazione di molti pescherecci adibiti alla caccia. L'attività continuò florida fino al 20° secolo: nel 1969 venne proibito questo tipo di attività in alcune zone del mondo, a causa della scomparsa di alcune specie e al pericolo di estinzione delle balene. Intorno al 1980, la caccia alla balena è stata abolita in tutto il mondo.</Italian>
         <Spanish>La caza de ballenas para conseguir aceite y otros derivados ya se practicaba como una industria organizada en el año 875 d. C. En el siglo XVI había crecido hasta convertirse en la principal industria en las regiones costeras de España y Francia. Esta industria se expandió por el mundo, y se hizo cada vez más lucrativa en términos de comercio y recursos. En algunas partes de los océanos, a lo largo de las rutas migratorias de estos animales, la población de ballenas era particularmente densa, lo que atrajo grandes concentraciones de barcos balleneros. Esto condujo a un crecimiento sostenido de la industria hasta bien entrado el siglo XX. La reducción del número de ejemplares de algunas especies de ballena, hasta casi su extinción, condujo a la prohibición de su pesca en el año 1969, y al cese de su actividad industrial a nivel mundial a finales de los 80.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_WHALING_BOAT_WORKING_STRATEGY</Tag>
         <English>Only the [COLOR_UNIT_TEXT]whaling boat[COLOR_REVERT] can go whaling. For technical reasons it has to be listed as a profession, although strictly speaking it is not a freely available profession, since it is restricted to whaling boats.</English>
-        <French>Le [COLOR_UNIT_TEXT]baleinier[COLOR_REVERT] peut exercer la profession de "baleinier". Pour des raisons techniques, celui-ci est listé en tant que profession, même si la tâche ne peut être réalisé que par un baleinier et par aucun autre colon.</French>
+        <French>Le [COLOR_UNIT_TEXT]navire baleinier[COLOR_REVERT] peut exercer la profession de "baleinier". Pour des raisons techniques, celui-ci est listé en tant que profession, même si la tâche ne peut être réalisé que par un baleinier et par aucun autre colon.</French>
         <German>Der [COLOR_UNIT_TEXT]Walfänger[COLOR_REVERT] kann als Schiff den Befehl "Waljagd" ausführen. Aus technischen Gründen wird diese Tätigkeit hier in dieser Rubrik aufgeführt, obwohl es sich strenggenommen um keinen frei wählbaren Beruf handelt.</German>
     </TEXT>
     <TEXT>
@@ -3516,8 +3516,8 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Brigade:Brigades</Text>
-            <Gender>Female</Gender>
+            <Text>Piquier de garde:Piquiers de garde</Text>
+            <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>
@@ -3540,7 +3540,7 @@
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_TOWN_GUARD_STRATEGY</Tag>
         <English>[COLOR_UNIT_TEXT]Town guards[COLOR_REVERT] are cheap military units who serve as a first line of defense when a colony is under attack. These soldiers do not have guns, but use [LINK=YIELD_BLADES]blades[\LINK] as their weapons of choice. Due to the long halberds they wield, they are particularly effective in fighting cavalry units. If an unspecialized colonist practices this profession long enough, he might eventually become a [LINK=UNIT_VETERAN_TOWN_GUARD]veteran soldier[\LINK].[PARAGRAPH:2]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
-        <French>Les [COLOR_UNIT_TEXT]brigades[COLOR_REVERT] sont des unités militaires peu coûteuses qui peuvent être équipées pour servir de première ligne de défense lorsqu'une colonie est attaquée. Ils ne possèdent pas d'armes à feu, mais utilisent des [LINK=YIELD_BLADES]sabres[\LINK] comme armes de prédilection. Grâce à leurs longues hallebardes, ils sont particulièrement efficaces dans le combat contre les unités montées. Si un colon exerce cette profession suffisamment longtemps, il peut éventuellement devenir un [LINK=UNIT_VETERAN_TOWN_GUARD]vétéran[\LINK].[PARAGRAPH:2]Pour plus d'informations, voir [LINK=CONCEPT_MILITARY_UNITS]Unités militaires[\LINK].</French>
+        <French>Les [COLOR_UNIT_TEXT]piquiers de garde[COLOR_REVERT] sont des unités militaires peu coûteuses qui peuvent être équipées pour servir de première ligne de défense lorsqu'une colonie est attaquée. Ils ne possèdent pas d'armes à feu, mais utilisent des [LINK=YIELD_BLADES]sabres et lances[\LINK] comme armes de prédilection. Grâce à leurs longues hallebardes, ils sont particulièrement efficaces dans le combat contre les unités montées. Si un colon exerce cette profession suffisamment longtemps, il peut éventuellement devenir un [LINK=UNIT_VETERAN_TOWN_GUARD]vétéran[\LINK].[PARAGRAPH:2]Pour plus d'informations, voir [LINK=CONCEPT_MILITARY_UNITS]Unités militaires[\LINK].</French>
         <German>[COLOR_UNIT_TEXT]Stadtwachen[COLOR_REVERT] sind günstige Militäreinheiten, die ausgerüstet werden können, um als erste Verteidigungslinie zu dienen, wenn eine Kolonie angegriffen wird. Sie haben keine Schusswaffen, sondern benutzen [LINK=YIELD_BLADES]Klingenwaffen[\LINK] als Waffen ihrer Wahl. Aufgrund der langen Hellebarden sind sie besonders im Kampf gegen berittene Einheiten effektiv. Wenn ein Kolonist diesen Beruf lange genug ausübt, kann er schließlich ein [LINK=UNIT_VETERAN_TOWN_GUARD]Veteran[\LINK] werden.[PARAGRAPH:2]Weitere Informationen finden Sie unter [LINK=CONCEPT_MILITARY_UNITS]Militäreinheiten[\LINK].</German>
     </TEXT>
     <TEXT>
@@ -3557,7 +3557,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Brigadier royal:Brigadiers royaux</Text>
+            <Text>Piquier royal:Piquiers royaux</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -3586,7 +3586,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Marchand indigènes:Marchands indigènes</Text>
+            <Text>Marchand indigène:Marchands indigènes</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
