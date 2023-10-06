@@ -2037,10 +2037,12 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_MULATTO_PEDIA</Tag>
         <English>The mulatto is the child of a European and an African parent, often a slave woman. The child grows up as part of the slave population. To maintain cultural separation Europeans create artificial distinctions, such as being repelled by the idea of touching Black people.</English>
+        <French>Un mulâtre est l'enfant d'un parent Européen et d'un parent africain, le plus souvent une femme esclave. L'enfant grandit parmi les esclaves. Pour maintenir une séparation culturelle, les Européeens créent des coutumes artificielles, comme en faisant mine d'être dégouté à l'idée de toucher un Noir.</French>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MULATTO_STRATEGY</Tag>
         <English>Mulattos add to the slave population but they also create cultural confusion. European women are not happy to see their husbands fathering Black babies.[NEWLINE]Because slave life expectancy on sugar plantations is three years, or twenty-one for mulattos born into slavery, plantation owners develop a racial justification for the deaths of their children.</English>
+        <French>Les mulâtres comptent parmi les esclaves mais ils contribuent au mélange des cultures. Les femmes européennes ne sont pas ravies de voir leur maris procréer des enfants blancs.[NEWLINE] Comme l'espérance de vie des esclaves ne dépasse pas les trois ans dans les plantations de sucre, ou vingt et un ans pour les mulâtres nés en servitude, les propriétaires de plantation ont mis en oeuvre une justification raciale pour la mort de leurs enfants.</French>
     </TEXT>
     <!-- CONSTRUCTION_SUPPLIES -->
     <TEXT>
@@ -2072,7 +2074,7 @@
         <Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES</Tag>
         <English>Construction Supplies:Construction Supplies</English>
         <French>
-            <Text>Matériel de construction:Matériel de construction</Text>
+            <Text>Matériau de construction:Matériaux de construction</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -2096,11 +2098,13 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES_PEDIA</Tag>
         <English>Construction supplies is a vast category, ranging from wood and bricks to nails and forged hardware. The carpenter needs construction supplies to work.</English>
+        <French>Les matériaux de constructions sont une vaste catégorie, comprenant le bois, les briques, les clous et les pièces métalliques. Le charpentier a besoin de ces matériaux pour travailler.</French>
         <German>Baubedarf ist eine große Kategorie, die von Holz und Ziegeln bis zu Nägeln und Schmiedeeisen reicht. Der Zimmermann braucht Baumaterial für seine Arbeit.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Construction suplies[COLOR_REVERT] can be purchased in [LINK=CONCEPT_EUROPE]Europe[\LINK] or produced in a settlement for 50 [LINK=YIELD_HAMMERS]hammers[\LINK] and support a building project with 40 hammers once. The construction suplies behaves like an immobile unit, which can be [LINK=CONCEPT_TRANSPORT]transported[\LINK], however, so that new settlements can be supported by this with the building construction.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Construction supplies[COLOR_REVERT] can be purchased in [LINK=CONCEPT_EUROPE]Europe[\LINK] or produced in a settlement for 50 [LINK=YIELD_HAMMERS]hammers[\LINK] and support a building project with 40 hammers once. The construction suplies behaves like an immobile unit, which can be [LINK=CONCEPT_TRANSPORT]transported[\LINK], however, so that new settlements can be supported by this with the building construction.</English>
+        <French>[COLOR_HIGHLIGHT_TEXT]Les matériaux de construction[COLOR_REVERT] peuvent être achetés en [LINK=CONCEPT_EUROPE]Europe[\LINK] ou produits dans une colonie pour 50 [LINK=YIELD_HAMMERS]production[\LINK] et donne une contribution ponctuelle de 40 production aux projets de la colonie. Les matériaux de contructions sont immoblies mais peuvent être [LINK=CONCEPT_TRANSPORT]transportés[\LINK], pour aider à établir les premiers bâtiments indispensables des nouvelles colonies.</French>
         <German>[COLOR_HIGHLIGHT_TEXT]Baumaterial[COLOR_REVERT] kann in [LINK=CONCEPT_EUROPE]Europa[\LINK] gekauft oder in einer Siedlung für 50 [LINK=YIELD_HAMMERS]Hämmer[\LINK] produziert werden und einmalig ein Bauprojekt mit 40 Hämmern unterstützen. Das Baumaterial verhält sich wie eine unbewegliche Einheit, welche jedoch [LINK=CONCEPT_TRANSPORT]transportiert[\LINK] werden kann, sodass hierdurch neue Siedlungen beim Gebäudebau unterstützt werden können.</German>
     </TEXT>
     <!-- BRAVE_LIEUTENANT -->
@@ -2157,10 +2161,12 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_BRAVE_LIEUTENANT_PEDIA</Tag>
         <English>Like the great general, the brave lieutenant contributes experience points to one or more military units, just not as much experience.[NEWLINE]When younger sons aren't smart enough for the priesthood, and their father's rich enough to buy them an army commission, they start as junior officers, charging into battle at the head of their troops. Bravery gives them a fighting chance.</English>
+        <French>Tout comme un [LINK=UNIT_GREAT_GENERAL]général illustre[\LINK], le lieutenant courageux fournit des points d'expériences aux unités présentes sur sa case, en quantité moindre que le général. Quand les fils cadets ne sont pas assez scolaires pour la prêtrise, et que leur père est assez richje pour leur acheter une commission dans l'armée, chargeant dans la bataille à la tête de leur troupe. La bravoure leur donne la chance de l'emporter.</French>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BRAVE_LIEUTENANT_STRATEGY</Tag>
         <English>Brave lieutenants are rare, appearing perhaps once out of every ten battles.</English>
+        <French>Les lieutenants courageux sont peu communs, apparaissant environ une fois toutes les dix batailles</French>
     </TEXT>
     <!-- CAPABLE_CAPTAIN -->
     <TEXT>
@@ -2216,10 +2222,12 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN_PEDIA</Tag>
         <English>Like the great admiral, the capable captain adds experience points to one or more military units, just not as much experience.[NEWLINE]To attain command a capable captain needs the ability to win a fight. In the American Revolutionary War naval battles were fought on inland lakes and rivers, as well as on the open ocean. Seaports were also a common target.</English>
+        <French>Tout comme un [LINK=UNIT_GREAT_ADMIRAL]amiral illustre[\LINK], un capitaine compétent donne des points d'expérience aux unités navales présentes sur sa case, en quantité moindre que l'amiral.[NEWLINE]Pour se démarquer, un capitaine compétent doit gagner un combat. Pendant la guerre d'indépendance des États Unis, les batailles navales ont eu lieu sur les lacs et les rivières, ainsi qu'en haute mere. Les ports maritimes étaient eux aussi des cibles fréquentes.</French>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN_STRATEGY</Tag>
         <English>Capable captains are front line leaders. They are rare, occurring perhaps once out of every ten battles.</English>
+        <French>Les capitaines compétents mènent en première ligne. Ils sont peu communs, se démarquant du rang environ une fois toutes les dix batailles.</French>
     </TEXT>
     <!-- ENTERTAINER -->
     <TEXT>
@@ -2302,7 +2310,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Pute séductrice:Putes séduisantes</Text>
+            <Text>Belle-de-nuit séduisante:Belles-de-nuit séduisantes</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -2331,7 +2339,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Pute séductrice:Putes séduisantes</Text>
+            <Text>Belle-de-nuit séduisante:Belles-de-nuit séduisantes</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -2355,7 +2363,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_HARLOT_PEDIA</Tag>
         <English>Church-going ladies may look down on an honest whore but harlots often have influence with the high and mighty, including those in the church. Prostitution is as diverse as society itself. The seductive harlot might have a lucrative career but it's short. Some who like the life go into management after their peak personal earning years.</English>
-        <French>Les dames pratiquantes peuvent mépriser une prostituée honnête, mais les prostituées ont souvent de l'influence sur les puissants, y compris ceux de l'église. La prostitution est aussi diverse que la société elle-même. La prostituée séductrice peut avoir une carrière lucrative, mais elle est de courte durée. Certaines d'entre elles, qui aiment cette vie, se lancent dans le management après avoir atteint le sommet de leurs revenus personnels.</French>
+        <French>Les dames pratiquantes peuvent mépriser une prostituée honnête, mais les prostituées ont souvent de l'influence sur les puissants, y compris ceux de l'église. La prostitution est aussi diverse que la société elle-même. Une belle-de-nuit séduisante peut avoir une carrière lucrative, mais elle est de courte durée. Certaines d'entre elles, qui aiment cette vie, se lancent dans comme tenancières après avoir atteint le sommet de leurs revenus personnels.</French>
         <German>Frömmlerische Damen mögen auf eine ehrliche Hure herabblicken, aber Huren haben oft Einfluß bei den Mächtigen, auch in der Kirche. Die Prostitution ist so vielfältig wie die Gesellschaft selbst. Eine verführerische Hure mag eine lukrative Karriere haben, aber sie ist nur kurz. Manche, denen das Leben gefällt, eröffnen nach den Jahren, in denen sie am meisten Geld verdient haben, ein eigenes Etablissement auf.</German>
         <Italian>Le signore che frequentano la chiesa possono guardare dall'alto in basso una prostituta onesta, ma le prostitute hanno spesso influenza sui potenti, compresi quelli della chiesa. La prostituzione è varia come la società stessa. La prostituta seducente può avere una carriera redditizia, ma breve. Alcune che amano questa vita si dedicano all'amministrazione dopo gli anni di massimo guadagno personale.</Italian>
         <Spanish>Las señoras que van a la iglesia pueden despreciar a una puta honesta, pero las rameras suelen tener influencia con los altos y poderosos, incluidos los de la iglesia. La prostitución es tan diversa como la propia sociedad. La prostituta seductora puede tener una carrera lucrativa, pero corta. Algunas, a las que les gusta la vida, se dedican a la administración después de sus mejores años de ganancias personales.</Spanish>
@@ -2372,7 +2380,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_JUDGE</Tag>
         <English>Honourable Judge:Honourable Judges</English>
-        <French>Honorable juge:Honorables juges</French>
+        <French>Juge équitable:Juges équitables</French>
         <German>
             <Text>Ehrenwerter Richter:Ehrenwerte Richter</Text>
             <Gender>Male</Gender>
@@ -2406,6 +2414,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_JUDGE_STRATEGY</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]Honorable judges[COLOR_REVERT] are experts at dispensing justice and therefore, as [LINK=PROFESSION_JUDGE]judges[\LINK], generate twice as much [LINK=YIELD_LAW]justice[\LINK] as free colonists.</English>
+        <French>Les [COLOR_HIGHLIGHT_TEXT]juges équitables[COLOR_REVERT] sont experts à dispenser la justice et de ce fait contribuent deux fois plus au maintien de l'[LINK=YIELD_LAW]ordre[\LINK] en tant que [LINK=PROFESSION_JUDGE]juges[\LINK] qu'un colon libre au même poste.</French>
         <German>[COLOR_HIGHLIGHT_TEXT]Ehrenwerte Richter[COLOR_REVERT] sind Experten im Sprechen von Recht und erzeugen daher als [LINK=PROFESSION_JUDGE]Richter[\LINK] doppelt so viel [LINK=YIELD_LAW]Justiz[\LINK] wie freie Kolonisten.</German>
     </TEXT>
 </Civ4GameText>

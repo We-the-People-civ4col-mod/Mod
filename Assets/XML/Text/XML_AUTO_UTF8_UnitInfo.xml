@@ -2844,9 +2844,9 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Général illustre</Text>
+            <Text>Général illustre:Généraux illustres</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>0:1</Plural>
         </French>
         <German>
             <Text>Großer General:Große Generäle</Text>
@@ -2876,7 +2876,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_GREAT_GENERAL_STRATEGY</Tag>
         <English>A [COLOR_UNIT_TEXT]great general[COLOR_REVERT] can join another fighting unit.[NEWLINE]When attached to that unit, he grants it the [LINK=PROMOTION_LEADER]Led By Great General[\LINK] promotion, which gives a 25% combat bonus against gunpowder and melee units, as well as access to other promotions.[NEWLINE]It also gives a one-time experience bonus shared among units on the same tile.[NEWLINE]They can be obtained by earning [COLOR_HIGHLIGHT_TEXT]Great General Points[COLOR_REVERT] through combat experience.[NEWLINE]For each additional great general, a colony needs more military experience.[NEWLINE]In the unit list ([COLOR:140:255:40:255]&lt; F5 &gt;[COLOR_REVERT]) you can see how much experience has already been gained in a progress bar at the bottom.[PARAGRAPH:2]For information about how great generals work, see [LINK=CONCEPT_GREAT_GENERALS]Great Generals and Admirals[\LINK].</English>
-        <French>Un [COLOR_UNIT_TEXT]Général illustre[COLOR_REVERT] peut rejoindre une autre unité sur le champ de bataille, conférant ainsi une grande expérience martiale aux unités présentes dans la même case et conférant à ces unités l'accès à des promotions uniques.</French>
+        <French>Un [COLOR_UNIT_TEXT]Général illustre[COLOR_REVERT] peut rejoindre une autre unité sur le champ de bataille.[NEWLINE]Rattaché à cette unité, il lui confère la promotion [LINK=PROMOTION_LEADER]mené par un général illustre[\LINK] lui donnant des bonus de combat de 25% contre les unités de combat rapproché et celles munies d'arme à feu, ainsi que l'accès à des promotions uniques.[NEWLINE]Le rattachement donne également un bonus ponctuel d'expérience aux unités terrestres présentes sur la même case.[NEWLINE]Les généraux peuvent être obtenus en acculant des [COLOR_HIGHLIGHT_TEXT]Points de généraux illustres[COLOR_REVERT] via l'expérience de combat.[NEWLINE][PARAGRAPH:2]Pour plus d'informations sur le fonctionnement des généraux, voir [LINK=CONCEPT_GREAT_GENERALS]Généraux et Amiraux illustres[\LINK]</French>
         <German>Wenn ein Volk viele Schlachten bestreitet, bringt es im Laufe der Zeit einen [COLOR_UNIT_TEXT]Großen General[COLOR_REVERT] hervor. Der General ist kein guter Kämpfer und kann sich zudem nur verteidigen. Aber er kann sich einer anderen Einheit im Feld anschließen und dabei dieser und allen anderen Einheiten auf demselben Geländefeld einen einmaligen Erfahrungsbonus sowie die Möglichkeit besonderer Beförderungen gewähren.[PARAGRAPH:2]Für jeden weiteren Großen General braucht ein Volk mehr militärische Erfahrung. In der Einheitenliste ([COLOR:140:255:40:255]&lt; F5 &gt;[COLOR_REVERT]) kann man unten in einem Fortschrittsbalken ablesen, wieviel Erfahrung bereits gesammelt wurde.</German>
         <Italian>Un [COLOR_UNIT_TEXT]Grande Generale[COLOR_REVERT] puó unirsi a un'altra unità sul campo, dando alle unità presenti nella stessa casella un bonus di esperienza da combattimento una tantum, e assicurando all'unità a cui si è unito accesso a promozioni uniche.</Italian>
         <Spanish>Un [COLOR_UNIT_TEXT]Gran general[COLOR_REVERT] puede unirse a otra unidad que haya en el campo, con lo que aportará una bonificación única a las unidades de la misma casilla y garantizará a su unidad acceder a ascensos especiales.</Spanish>
