@@ -501,7 +501,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_STOCKADE_TEXT</Tag>
         <English>Suddenly a shadow fills the doorway, blocking out the evening sun.[NEWLINE][NEWLINE]The woman is startled as the shadow touches her - but then she looks up and smiles.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A beautiful evening, darling,[COLOR_REVERT]" the man says amiably. "[COLOR_SELECTED_TEXT]Where is our little one?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Isn't he playing with the chickens outside the door?[COLOR_REVERT]" she asks, worried again.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Be calm. We finished putting up the palisades today. No wolf will be skulking around our houses, looking for a chicken. Or something bigger.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
-        <French>Une ombre s'abat le sur pas de la porte, bloquant le crépuscule.[NEWLINE][NEWLINE]La femme sursaute lorsque l'ombre la touche - mais elle lève les yeux et sourit.[NEWLINE][NEWLINE] « Une soirée magnifique, ma chérie » dit aimablement l'homme. Une femme s'approche appeurée d'un soldat : «[COLOR_SELECTED_TEXT]Mon fils est parti pourchassé un poulet et ne le retrouve plus, je crains pour sa sécurité ![COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]N'ayez aucune crainte[COLOR_REVERT] », lui répond le soldat, «[COLOR_SELECTED_TEXT]avec notre nouvelle défense, les loups n'erreront plus dans nos rues.[COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
+        <French>Une ombre s'abat le sur pas de la porte, bloquant le crépuscule.[NEWLINE][NEWLINE]La femme sursaute lorsque l'ombre la touche - mais elle lève les yeux et sourit.[NEWLINE][NEWLINE] «[COLOR_SELECTED_TEXT]Une soirée magnifique, ma chérie [COLOR_REVERT] » dit aimablement l'homme. Une femme s'approche appeurée d'un soldat : «[COLOR_SELECTED_TEXT]Mon fils est parti pourchassé un poulet et ne le retrouve plus, je crains pour sa sécurité ![COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]N'ayez aucune crainte[COLOR_REVERT] », lui répond le soldat, «[COLOR_SELECTED_TEXT]avec notre nouvelle défense, les loups n'erreront plus dans nos rues.[COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
         <German>Ein Schatten steht plötzlich im Türrahmen und verdeckt die Abendsonne. Die Frau erschrickt, als sie der Schatten berührt - doch als sie aufsieht, lächelt sie. "[COLOR_SELECTED_TEXT]Guten Abend, Eheweib[COLOR_REVERT]", brummt der Mann freundlich. "[COLOR_SELECTED_TEXT]Wo steckt denn unser Kleiner?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Spielt er denn nicht vor der Tür mit den Hühnern?[COLOR_REVERT]" fragt sie zurück und ist erneut besorgt. "[COLOR_SELECTED_TEXT]Beruhige dich, Weib. Wir sind heute mit dem Verteidigungswerk fertig geworden. Kein Wolf wird mehr zwischen den Häusern umherstreifen, auf der Suche nach einem Huhn. Oder etwas Größerem.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>Внезапно тень заполняет дверной проем, закрывая собой вечернее солнце.[NEWLINE][NEWLINE]Женщина вздрагивает, когда тень касается ее, но потом поднимает взгляд и улыбается.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Добрый вечер, дорогая.[COLOR_REVERT]" – дружелюбно говорит мужчина. "[COLOR_SELECTED_TEXT]Где наш малыш?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Разве он не играет с цыплятами за дверью?[COLOR_REVERT] – снова обеспокоенно спрашивает она.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Успокойся. Сегодня мы закончили ставить частокол. Ни один волк не будет рыскать вокруг наших домов в поисках курицы. Или чего-то большего.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -564,7 +564,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_BASTION_TEXT</Tag>
         <English>The workmen lay aside their tools, the priest blesses the walls, the new guard marches up and the commander speaks confidently of the fortress impregnability.[NEWLINE][NEWLINE]Towering high above the city, proud and mighty - the first great bastion gives this fortress a truly majestic appearance.[NEWLINE][NEWLINE]From a distance, the governor listens to the gun salutes.[NEWLINE][NEWLINE]His wife asks, "[COLOR_SELECTED_TEXT]Can we honestly feel safe now? Might not such a large fortress provoke our neighbours more?[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
-        <French>Les artisans rangent leurs outils, le prêtre apporte sa bénédiction aux nouveaux murs, la nouvelle garde arrive et le commandant se vante de l'inviolabilité de la forteresse.[NEWLINE][NEWLINE]Surplombant la ville, le premier Grand Bastion de votre nation, domine avec puissance et majesté.[NEWLINE][NEWLINE]Au loin, alors que le gouverneur fait tirer la salve d'honneur. Sa femme lui glisse à l'oreille : « Espérons que cet ouvrage suscite chez nos voisins davantage de craintes que de convoitises ».[NEWLINE][NEWLINE]</French>
+        <French>Les artisans rangent leurs outils, le prêtre apporte sa bénédiction aux nouveaux murs, la nouvelle garde arrive et le commandant se vante de l'inviolabilité de la forteresse.[NEWLINE][NEWLINE]Surplombant la ville, le premier Grand Bastion de votre nation, domine avec puissance et majesté.[NEWLINE][NEWLINE]Au loin, alors que le gouverneur fait tirer la salve d'honneur. Sa femme lui glisse à l'oreille : «[COLOR_SELECTED_TEXT]Espérons que cet ouvrage suscite chez nos voisins davantage de craintes que de convoitises [COLOR_REVERT] ».[NEWLINE][NEWLINE]</French>
         <German>Die Handwerker legen ihre Werkzeuge beiseite, der Pfarrer segnet die Mauern, die neue Wache zieht auf und der Kommandeur spricht von der Uneinnehmbarkeit dieser Festung.[NEWLINE][NEWLINE]Hoch über der Stadt ragt sie auf, stolz und mächtig - die erste Große Bastion dieser Festung verleiht ihr ein wahrlich majestätisches Aussehen.[NEWLINE][NEWLINE]Aus der Ferne lauscht der Gouverneur den Salutschüssen.[NEWLINE][NEWLINE]Seine Frau meint fragend zu ihm: "[COLOR_SELECTED_TEXT]Ob wir uns nun wirklich sicherer fühlen können? Wird eine so große Festung unsere Nachbarn nicht vielleicht doch eher provozieren?[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>Рабочие откладывают инструменты, священник освящает стены, выдвигается новая стража и командир с уверенностью говорит о неприступности новой крепости.[NEWLINE][NEWLINE]Возвышающийся над городом, гордый и могучий - первый большой бастион придает этой крепости поистине величественный вид.[NEWLINE][NEWLINE]Губернатор издалека наблюдает за салютом в честь нового укрепления.[NEWLINE][NEWLINE]Его жена спрашивает: "[COLOR_SELECTED_TEXT]Можем ли мы теперь чувствовать себя в безопасности? Не может ли такая большая крепость еще больше спровоцировать наших соседей?[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -578,13 +578,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIFTY_BELLS_HEAD</Tag>
         <English>A hint of freedom</English>
-        <French>Cinquante cloches par tour</French>
+        <French>Un soupçon de liberté</French>
         <German>Eine Ahnung von Freiheit</German>
         <Russian>Намек на свободу</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIFTY_BELLS_TEXT</Tag>
         <English>More and more frequently your citizens ring the assembly hall bells, announcing their desire for freedom.[NEWLINE][NEWLINE]Meekly you shake your head. You still rely on the goodwill of your king. In the wilderness lurk predators, some on four legs and some on two.[NEWLINE][NEWLINE]Your subjects still fear for their lives when they venture outside the protective settlements.[NEWLINE][NEWLINE]Only those who live in peace have the strength to go to war for freedom.[NEWLINE][NEWLINE]You know you need patience and staying power.[NEWLINE][NEWLINE]</English>
+        <French>De plus en plus fréquemment, vos citoyens sonnent les cloches des assemblées, annonçant leur désir de liberté.[NEWLINE][NEWLINE] Vous hochez faiblement la tête. Vous comptez sur le plaisir de votre roi. Dans les terres sauvages rôdent des prédateurs sur deux ou quatres pattes.[NEWLINE][NEWLINE]Vos sujets craignent pour leur vie dès qu'ils mettent le pied hors de leur colonies si bien prtoégées.[NEWLINE][NEWLINE]Seuls  ceux qui vivent en paix ont la force de conquérir leur liberté[NEWLINE][NEWLINE]Voys savez avoir besoin de patience et de longueur de temps, qui font plus que force ni que rage.</French>
         <German>Immer häufiger lassen Eure Bürger die Glocken ihrer Versammlungshalle läuten und verleihen damit ihrem Wunsch nach Freiheit Ausdruck.[NEWLINE][NEWLINE]Ihr schüttelt milde Euer Haupt. Noch braucht Ihr das Wohlwollen Eures Königs. In der Wildnis verstecken sich Raubtiere, solche auf vier - und solche auf zwei Beinen.[NEWLINE][NEWLINE]Noch müssen Eure Untertanen um ihr Leben bangen, wenn sie den Schutz der Siedlungen verlassen.[NEWLINE][NEWLINE]Nur wer im Frieden lebt, hat die Kraft, für die Freiheit in den Krieg zu ziehen.[NEWLINE][NEWLINE]Ihr wisst, Ihr braucht Geduld und einen langen Atem.[NEWLINE][NEWLINE]</German>
         <Russian>Все чаще и чаще ваши граждане звонят в колокола актового зала, заявляя о своем стремлении к свободе.[NEWLINE][NEWLINE]Ты осторожно качаешь головой. Вы все еще полагаетесь на добрую волю своего короля. В пустыне прячутся хищники, кто на четырех ногах, кто на двух.[NEWLINE][NEWLINE]Ваши подданные по-прежнему должны опасаться за свою жизнь, когда покидают укреплённые поселения.[NEWLINE][NEWLINE]Только у тех, кто живет в мире, есть силы, чтобы вступить в войну за свою свободу.[NEWLINE][NEWLINE]Вы знаете, что вам нужно терпение и упорство.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -598,13 +599,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWOHUNDRED_BELLS_HEAD</Tag>
         <English>Impatient for freedom</English>
-        <French>Deux cent cloches par tour</French>
+        <French>La liberté trépigne</French>
         <German>Flammende Sehnsucht</German>
         <Russian>С нетерпением жду свободы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWOHUNDRED_BELLS_TEXT</Tag>
         <English>More and more people are ringing the bells of their assembly halls to sound the signal for freedom. Their clamour resounds throughout the land, throughout the New World - even across the ocean.[NEWLINE][NEWLINE]The distant king hears their clanging. You are aware of that.[NEWLINE][NEWLINE]His anger grows. The time is not far off when he will send for his generals to plan a war.[NEWLINE][NEWLINE]And you, governor, you will no longer hear the ringing of bells, but the sound of battle.[NEWLINE][NEWLINE]</English>
+        <French>De plus en plus de gens sonnent les cloches des assemblées pour sonner l'appel à la liberté. Leur clameur résonne à travers le pays, à travers le Nouveau Monde - et même à travers l'océan[NEWLINE][NEWLINE]Vous avez que le roi si distant a entendu leur battement[NEWLINE][NEWLINE] La colère monte. L'heure s'approche où il va envoyer ses généraux pour préparer la guerre[NEWLINE][NEWLINE] Et vius , gouverneur, vous n'entendrez plus le son de ces cloches, mais la fureur des combats.[NEWLINE][NEWLINE]</French>
         <German>Immer mehr Bürger lassen die Glocken ihrer Versammlungshallen läuten, um ein Zeichen für die Freiheit zu setzen. Ihr Klang erschallt durchs ganze Land, durch die ganze Neue Welt - sogar über den Ozean hinweg.[NEWLINE][NEWLINE]Der ferne König vernimmt ihr Schwingen, dessen seid Ihr Euch bewusst.[NEWLINE][NEWLINE]Sein Zorn wächst. Die Zeit ist nicht mehr fern, in der er seine Marschälle kommen lässt, um einen Krieg zu planen.[NEWLINE][NEWLINE]Und Ihr, Gouverneur, Ihr werdet dann nicht mehr Glockengeläute, sondern Schlachtenlärm hören.[NEWLINE][NEWLINE]</German>
         <Russian>Все больше и больше людей звонят в колокола своих актовых залов, чтобы подать сигнал к свободе. Их шум разносится по всей земле, по всему Новому Свету и даже за океан.[NEWLINE][NEWLINE]Даже Король, сидящий далеко-далеко, слышит их. Вы знаете об этом.[NEWLINE][NEWLINE]Его гнев растет. Не за горами время, когда он пошлет за своими генералами, чтобы начать планировать карательную экспедицию.[NEWLINE][NEWLINE]А ты, губернатор, будешь слушать не колокольный звон, а шум битвы.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -618,13 +620,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREEHUNDRED_BELLS_HEAD</Tag>
         <English>Conspiracy</English>
-        <French>Trois cents cloches par tour</French>
+        <French>Conjuration</French>
         <German>Verschwörung</German>
         <Russian>Заговор</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREEHUNDRED_BELLS_TEXT</Tag>
         <English>Across the rooftops of the cities the bells ring more and more often, calling out for the freedom of a new nation.[NEWLINE][NEWLINE]The colonists, however, make their revolutionary preparations secretly - after all, this is nothing less than treason.[NEWLINE][NEWLINE]Conspiratorial meetings in the back rooms of pubs, drawing up secret plans for mobilisation in the event of war against the king, procuring money and weapons for the new continental army...[NEWLINE][NEWLINE]</English>
+        <French>Au dessus des toits de vos villes les cloches carillonnent de plus en plus souvent, sonnant l'appel à la liberté d'une nation nouvelle.[NEWLINE][NEWLINE] Les colons, de leur côté, préparent la révolution en cachettes - après tout, ce n'(est rien moins que de la trahison.[NEWLINE][NEWLINE] des conjurés se rencontre dans l'arrière salle des tavernes, décidant d'un plan de movilisation en cas de guerre contre le roi, se procurant argent et nourriture pour la nouvelle armée continentale... [NEWLINE][NEWLINE]  </French>
         <German>Während über den Dächern der Städte immer öfter die Glocken für die Freiheit einer neuen Nation läuten, treffen die Menschen in den Kolonien die Vorbereitungen für die Revolution jedoch im Verborgenen - schließlich handelt es sich hierbei um nichts weniger als Hochverrat.[NEWLINE][NEWLINE]Konspirative Treffen in den Hinterzimmern der Kneipen, Ausarbeitung geheimer Pläne für eine Mobilmachung im Falle eines Krieges gegen den König, Beschaffung von Geld und Waffen für die neue kontinentale Armee...[NEWLINE][NEWLINE]</German>
         <Russian>Над крышами городов всё чаще и чаще разносится звон колоколов, взывая к свободе новой нации.[NEWLINE][NEWLINE]Колонисты, однако, готовятся к революции тайно — ведь это не что иное, как измена.[NEWLINE][NEWLINE]Собрания заговорщиков в подсобках пабов, составление секретных планов мобилизации на случай войны против короля, закупка денег и оружия для новой континентальной армии...[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -645,26 +648,28 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_CROSSES_TEXT</Tag>
         <English>Not only is God respected, but also the freedom of the word. Here men who had to remain silent in their old homeland can preach freely.[NEWLINE][NEWLINE]There the stubborn sovereign actively oppressed their faith.[NEWLINE][NEWLINE]Back in the old country word gets around. More and more people jostle on the harbour quays looking a place on an emigrant ship.[NEWLINE][NEWLINE]</English>
+        <French>Non seulement Dieu est respecté, mais aussi la liberté du Verbe. Ici des hommes tenus au silence dans leur terre d'origine peuvent prêcher librement[NEWLINE][NEWLINE]Là bas, le souverain entêté opprimait activement leur foi[NEWLINE][NEWLINE]On se passe le mot dans l'ancien monde. De plus en plus de gens se pressent sur le quais pour une place sur un bateau en partance.[NEWLINE][NEWLINE]</French>
         <German>Nicht nur Gott wird in Eurer Kirche Achtung gezollt, sondern auch der Freiheit des Wortes. Hier dürfen Männer frei predigen, die in ihrer alten Heimat schweigen mussten.[NEWLINE][NEWLINE]Ihre Konfession war dem sturen Landesherrn nicht erwünscht.[NEWLINE][NEWLINE]Das spricht sich zu Hause herum. Immer mehr Menschen drängeln auf den Hafenkais, um einen Platz auf einem Auswandererschiff zu finden.[NEWLINE][NEWLINE]</German>
         <Russian>В вашей церкви есть уважение не только к Богу, но и к свободе слова. Здесь могут свободно проповедовать люди, которые должны были хранить молчание на своей старой родине.[NEWLINE][NEWLINE]Упрямому правителю не нужна была ваша религия.[NEWLINE][NEWLINE]Слухи о свободе вероисповедания быстро распространяются по всему Старому свету. Все больше и больше людей толпятся на пристани в поисках места на кораблях, идущих к новым землям.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MANY_CROSSES</Tag>
         <English>More zealous preachers</English>
-        <French>De nombreuses croix par tour</French>
+        <French>Davantage de crois par tour</French>
         <German>Sehr eifrige Prediger</German>
         <Russian>Множество крестов за ход</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MANY_CROSSES_HEAD</Tag>
         <English>New faiths compete</English>
-        <French>De nouvelles façons de croire.</French>
+        <French>Des nouvelles croyances en concurrence</French>
         <German>Wähle deinen Herrn</German>
         <Russian>Конкуренция конфессий</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MANY_CROSSES_TEXT</Tag>
         <English>Again and again during the Sunday devotions men get to their feet and stride to the pulpit. They praise God - and they also praise you, the governor, who allows them to choose for themselves whichever denomination will offer true salvation.[NEWLINE][NEWLINE]The news that in the New World everyone can worship in his own way, that he is allowed to determine for himself the rules by which he wants to live - this news finds open ears in the Old World.[NEWLINE][NEWLINE]</English>
+        <French>Encore et encore, durant les dévotions du dimanche des hommes se lèvent et vont au chapitre. Ils rendent louange à Dieu - et aussi à vous le gouverneur, qui leur pemet de choisir la foi qui leur apportera le salut éternel[NEWLINE][NEWLINE] Les nouvelles selon lesquelle le nouveau monde permet à chaucun de vénérer à sa façon, de déterminer pour lui même ses règles de vies sont très attentivement accueillies dans l'ancien monde. [NEWLINE][NEWLINE]  </French>
         <German>Immer wieder stehen während der sonntäglichen Andachten Männer auf und schreiten auf die Kanzel. Sie preisen Gott - und sie rühmen auch Euch, den Gouverneur, der es Ihnen gestattet, selbst die Konfession zu wählen, in der sie ihr Seelenheil finden möchten.[NEWLINE][NEWLINE]Die Kunde, dass in der Neuen Welt ein jeder in der ihm eigenen Weise den Gottesdienst feiern kann, dass er die Regeln, nach denen er leben will, selber bestimmen darf - diese Kunde findet in der Alten Welt offene Ohren.[NEWLINE][NEWLINE]</German>
         <Russian>Снова и снова во время воскресных богослужений мужчины встают и идут к кафедре. Они восхваляют Бога — и они также восхваляют тебя, правителя, который позволяет им выбрать для себя любое вероисповедание, которое предложит истинное спасение.[NEWLINE][NEWLINE]Новость о том, что в Новом Свете каждый может поклоняться по-своему, что ему позволено самому определять правила, по которым он хочет жить, - эта новость находит отклик в Старом Свете.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -685,6 +690,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_EDUCATION_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Tell us what you see, you dreamer![COLOR_REVERT]"[NEWLINE][NEWLINE]The student is startled. As he gazes out the window the lecturer suddenly appears next to him and gently shakes his shoulder.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Uh, well ...[COLOR_REVERT]" he stammers, searching for an idea that will save him.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I was admiring the splendour of this New World. And meditating on nature as God created it. Thinking about the nature of man, how he is born free, subject to no one.[NEWLINE][NEWLINE]No king should demand obedience from him, but only God.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well, well,[COLOR_REVERT]" the lecturer replies, smiling, "[COLOR_SELECTED_TEXT]I guess we have the same dream.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <French>«[COLOR_SELECTED_TEXT]Que vois tu dans tes révasseries ? [COLOR_REVERT] »[NEWLINE][NEWLINE]L'étudiant est surpris. Alors qu'il regarde oar la fenêtre, le maitre d'école apparait d'un coup juste à côté de lui et le prend doucement par l'épaule.[NEWLINE][NEWLINE] «[COLOR_SELECTED_TEXT]Euh, ben.... [COLOR_REVERT] » Il bégaie en cherchant les mots pour se tirer de là.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]J'admirais la splendeur de ce nouveau monde. Et je méditais sur la beauté du monde tel que Dieu le créa. Je pensais à la nature de l'homme, né libre et sujet de personne. Aucun roi ne saurait exiger l'obéissance, seulement Dieu. [COLOR_REVERT] » [NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Très bien, très bien. [COLOR_REVERT] » répond le maitre en souriant : «[COLOR_SELECTED_TEXT]Je crois que nous avons le même rêve. [COLOR_REVERT] »</French>
         <German>"[COLOR_SELECTED_TEXT]Erzähl uns doch mal, was du siehst, du Träumer![COLOR_REVERT]"[NEWLINE][NEWLINE]Erschrocken fährt der Student zusammen. Gerade hatte er noch aus dem Fenster geschaut, da steht unvermittelt die Dozentin neben ihm und rüttelt sanft an seiner Schulter.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Äh, tja ...[COLOR_REVERT]", stammelt er und sucht nach einem Einfall, der ihn rettet.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hinaus in die Lieblichkeit dieser Neuen Welt blickte ich. Und sann über die Natur nach, wie Gott sie erschaffen hat. Und über die Natur des Menschen. Dass er frei geboren ist und nicht als Untertan.[NEWLINE][NEWLINE]Und dass kein König von ihm Gehorsam verlangen sollte, sondern nur Gott.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]So, so[COLOR_REVERT]", erwidert die Dozentin und muss lächeln, "[COLOR_SELECTED_TEXT]da haben wir wohl den gleichen Traum.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Расскажи нам, что ты видишь, мечтатель![COLOR_REVERT]"[NEWLINE][NEWLINE]Ученик вздрогнул. Пока он смотрит в окно, рядом с ним внезапно появляется лектор и слегка трясет его за плечо.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ну...[COLOR_REVERT]" - запинается он, пытаясь найти идею, которая его спасет.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я любовался великолепием Нового Света. И размышлял о природе, какой ее создал Бог. Думал о природе человека, о том, как он рождается свободным, никому не подчиняющимся.[NEWLINE] [NEWLINE]Ни один король не должен требовать от него повиновения, а только Бог.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ну-ну,[COLOR_REVERT]" — улыбаясь, отвечает лектор — [COLOR_SELECTED_TEXT]Похоже, у нас одна и та же мечта.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -705,6 +711,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_EURO_CONTACT_TEXT</Tag>
         <English>Your men look at you, startled. They are not used to their governor swearing; and certainly not so crudely, so blasphemously.[NEWLINE][NEWLINE]A maid looks down and crosses herself silently.[NEWLINE][NEWLINE]But you care only for what you have spied in the distance. A familiar flag. The flag of a king - and it is not yours.[NEWLINE][NEWLINE]Your fears have come true. Other powers have also sent ships, settlers and scouts to subjugate this New World.[NEWLINE][NEWLINE]Suddenly you shiver and pull your cloak tighter around your shoulders.[NEWLINE][NEWLINE]</English>
+        <French>Vos hommes vous regardent, stupéfaits. ILs ne sont pas habitués à vous entendre jurer, et certainement pas avec un énorme blasphème aussi grossier.[NEWLINE][NEWLINE]Une femme de chambre baisse le regard et se signe en silence.[NEWLINE][NEWLINE]Mais vous ne vous souciez que de ce que vous avez vu au loin. Un drapeau familier. Un drapeau d'un roi -- et pas le vôtre.[NEWLINE][NEWLINE]Vos craintes se sont avérées. D'autres puissances ont envoyés des navires, des colons et des éclaireur pour soumettre ce Nouveau Monde.[NEWLINE][NEWLINE]Vous vous mettez à trembler, et resserrez le manteau sur vous.[NEWLINE][NEWLINE]</French>
         <German>Erschrocken blicken Eure Männer Euch an. Sie sind nicht gewohnt, dass Ihr Gouverneur flucht. Und erst recht nicht so derbe, so gotteslästerlich.[NEWLINE][NEWLINE]Eine Magd blickt zu Boden und bekreuzigt sich stumm.[NEWLINE][NEWLINE]Doch Euch kümmert nur das, was Ihr in der Ferne erspäht habt. Eine altbekannte Flagge. Die Flagge eines Königs - und es ist nicht der Eure.[NEWLINE][NEWLINE]Eure Befürchtungen sind wahrgeworden. Auch andere Mächte haben Schiffe, Siedler und Späher entsandt, um sich diese Neue Welt untertan zu machen.[NEWLINE][NEWLINE]Plötzlich fröstelt Euch und Ihr zieht Euch den Umhang fester um die Schultern.[NEWLINE][NEWLINE]</German>
         <Russian>Ваши люди смотрят на вас с изумлением. Они не привыкли, чтобы их губернатор ругался; и уж точно не так грубо.[NEWLINE][NEWLINE]Служанка опускает глаза и молча крестится.[NEWLINE][NEWLINE]Но вас волнует только то, что вы увидели вдалеке. Знакомый флаг. Флаг Короля - и не вашего.[NEWLINE][NEWLINE]Ваши опасения подтвердились. Другие державы также послали корабли, поселенцев и разведчиков, чтобы покорить  Новый Свет.[NEWLINE][NEWLINE]Внезапно вы вздрагиваете и плотнее натягиваете плащ на плечи.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -718,13 +725,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_EURO_CONTACT_HEAD</Tag>
         <English>Family reunion overseas</English>
-        <French>Vous avez contacté trois autre nations européennes</French>
+        <French>Réunion de famille outre-mer</French>
         <German>Familientreffen in Übersee</German>
         <Russian>Воссоединение семьи за морем</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_EURO_CONTACT_TEXT</Tag>
         <English>Friendly, the foreign officer waves his hat with the bobbing peacock feather. You wave your own hat, just as friendly.[NEWLINE][NEWLINE]But your smile is only a masquerade. Once again you have encountered a foreign patrol. Once again you have encountered other Europeans who, like you, have set out for foreign lands.[NEWLINE][NEWLINE]This continent once seemed so infinitely large to you ...[NEWLINE][NEWLINE]</English>
+        <French>Gracieusement, l'officier étranger vous salue de son chapeau orné d'une plume de paon. Vous faites chapeau bas en retour tout aussi gracieusement.[NEWLINE][NEWLINE]Mais votre sourire n'est que de façade. Une fois de plus vous avez rencontré une patrouille étrangère. Une fois de plus vous avez reonctré d'autres Européens qui comme vous cherchent à se saisir de terres étrangères.[NEWLINE][NEWLINE]Ce continent vous paraissait à l'origine si immensément vaste...[NEWLINE][NEWLINE]</French>
         <German>Freundlich schwenkt der fremde Offizier seinen Hut mit der wippenden Pfauenfeder. Und ebenso freundlich winkt Ihr mit Eurem Hut zurück.[NEWLINE][NEWLINE]Doch Euer Lächeln ist nur Maskerade. Wieder seid Ihr einer fremden Patrouille begegnet. Erneut seid Ihr auf andere Europäer gestoßen, die wie Ihr in die Fremde gezogen seid.[NEWLINE][NEWLINE]So unendlich weit schien Euch dieser Kontinent einst zu sein ...[NEWLINE][NEWLINE]</German>
         <Russian>Иностранный офицер дружелюбно машет вам шляпой с плюмажем из павлиньих перьев. Вы машете своей шляпой в ответ, так же дружелюбно.[NEWLINE][NEWLINE]Но ваша улыбка всего лишь маскарад. Вы снова столкнулись с иностранным патрулем. Очередная встреча с другими европейцами, которые, как и вы, отправились в чужие земли.[NEWLINE][NEWLINE]Когда-то этот континент казался вам таким бесконечно большим...[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -738,13 +746,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ALL_EURO_CONTACT_HEAD</Tag>
         <English>It's getting crowded</English>
-        <French>Vous avez contacté sept autres nations européennes</French>
+        <French>Quelle promiscuité</French>
         <German>Es wird eng</German>
         <Russian>Здесь становится тесновато</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ALL_EURO_CONTACT_TEXT</Tag>
         <English>This continent once seemed so infinitely large to you. Now you have discovered seven other European powers that also settled in the New World.[NEWLINE][NEWLINE]Do you want to maintain good trade relations with them, trade with them and thereby fill our coffers? Or do you want to plunder their colonies and annex them to your colonial empire?[NEWLINE][NEWLINE]In any case, you should re-examine your military strength and, if necessary, ask the King for more troops.[NEWLINE][NEWLINE]You never know what those other powers might be up to...[NEWLINE][NEWLINE]</English>
+        <French>Ce continent vous paraissait à l'origine si immensément vaste. Là vous avez découvert sept autres puissances européennes qui ont aussi mis pied dans le Nouveau Monde.[NEWLINE][NEWLINE]Allez-vous entretenir des relations commerciales cordiales avec eux, faire du commerce et remplir vos coffres dans la foulée ? Ou voulez vous piller ces colonies et les annexer à votre empire colonial ?[NEWLINE][NEWLINE]Dans tous les cas, vous devriez revoir votre armée, et, si nécessaire, demander plus de troupe à votre roi.[NEWLINE][NEWLINE]Vous ne savez jamais ce que les autres puissances mijotent.[NEWLINE][NEWLINE]</French>
         <German>So unendlich weit schien Euch dieser Kontinent einst zu sein, aber jetzt habt Ihr bereits sieben weitere europäische Mächte entdeckt, die sich ebenfalls in die Neue Welt aufgemacht haben.[NEWLINE][NEWLINE]Ihr solltet einmal Eure Strategie überdenken, Gouverneur! Wollt Ihr mit ihnen gute Beziehungen pflegen, mit ihnen Handel treiben und dadurch unsere Kassen füllen? Oder wollt Ihr ihre Kolonien plündern und sie Eurem Kolonialreich einverleiben?[NEWLINE][NEWLINE]Auf jeden Fall solltet Ihr Euch einen Überblick über Eure militärische Stärke verschaffen, damit Ihr gegebenenfalls den König um weitere Truppen bitten könnt.[NEWLINE][NEWLINE]Man weiß ja nie, wass die anderen Mächte im Schilde führen...[NEWLINE][NEWLINE]</German>
         <Russian>Когда-то этот континент казался вам таким бесконечно большим. Теперь вы повстречали семь других европейских держав, также обосновавшихся в Новом Свете.[NEWLINE][NEWLINE]Хотите поддерживать с ними хорошие торговые отношения, торговать, пополняя тем самым нашу казну? Или вы желаете разграбить их колонии и присоединить к своей колониальной империи?[NEWLINE][NEWLINE]В любом случае вам следует проинспектировать свои войска и, если необходимо, попросить короля прислать подкрепление.[NEWLINE][NEWLINE]Никогда не знаешь, на что способны и готовы пойти другие государства...[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -786,6 +795,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_NATIVE_CONTACT_TEXT</Tag>
         <English>With a smile, some Natives approach. They open their hands.[NEWLINE][NEWLINE]In the midday light of the sun, the silver amulets, the gold rings and the gemstone-decorated totem masks they offer you glisten.[NEWLINE][NEWLINE]A trapper who spent last winter with the heathens translates the words of their chief, who in exchange wants three iron hammers, a hemp sack with nails, a barrel of brandy and a blunderbuss.[NEWLINE][NEWLINE]You have to smile. Perhaps you can take the treasures of this foreign land without paying for them with the blood of your men.[NEWLINE][NEWLINE]</English>
+        <French>Des indigènes approchent avec le sourire. Ils tendent leur main ouverte[NEWLINE][NEWLINE] Sous le soleil du midi brillent les amulettes d'argent, les anneaux dorés et les masques-totem sertis de pierres précieuses qu'ils vous offrent.[NEWLINE][NEWLINE] Un trappeur qui a passé l'hiver dernier avec ces païens traduit le discours de leur chef, qui sohaite en échange trois marteaux en fer, un sac en chanvre remplis de clous, un tonnelet d'eau de vie et une arquebuse.[NEWLINE][NEWLINE] Vous en avez le sourire. Vous pouvez peut-être prendre les trésors de cette terre sans avoir à payer le prix du sang de vos hommes.[NEWLINE][NEWLINE]</French>
         <German>Mit einem Lächeln nähern sich die Eingeborenen. Sie öffnen ihre Hände.[NEWLINE][NEWLINE]Im Mittagslicht der Sonne glitzern die silbernen Amulette, die Goldringe und edelsteingeschmückten Totemmasken, die sie Euch anbieten.[NEWLINE][NEWLINE]Ein Trapper, der den letzten Winter bei den Heiden verbracht hat, übersetzt die Worte ihres Häuptlings. Drei Eisenhämmer erbittet der Wilde im Tausch, ein Hanfsäckcken mit Nägeln, ein Fässchen Branntwein und eine Donnerbüchse.[NEWLINE][NEWLINE]Ihr müsst schmunzeln. Vielleicht könnt Ihr diesem fremden Land seine Schätze nehmen, ohne dafür mit dem Blut Eurer Männer zu zahlen.[NEWLINE][NEWLINE]</German>
         <Russian>Некоторые туземцы подходят с улыбкой. Они раскрывают руки.[NEWLINE][NEWLINE]В полуденном солнечном свете серебряные амулеты, золотые кольца и украшенные драгоценными камнями тотемные маски, которые они вам предлагают, сияют.[NEWLINE][NEWLINE]Зверолов, проведший прошлую зиму с язычниками, переводит слова их вождя, который взамен хочет три железных молота, пеньковый мешок с гвоздями, бочку бренди и мушкетон.[NEWLINE][NEWLINE]Улыбка озаряет ваше лицо. Возможно, вы сможете забрать сокровища этой чужой земли, не заплатив за них кровью своих людей.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -806,6 +816,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_NATIVE_CONTACT_TEXT</Tag>
         <English>A sigh escapes your chest. Again the smoke of campfires curls into the sky in the distance. Again you meet a tribe of these savages who seize this fertile land and claim their ancestors bequeathed it to them.[NEWLINE][NEWLINE]But you know better. Only he who can enforce that right can claim it.[NEWLINE][NEWLINE]You order your men to load their rifles and the priest to bless you.[NEWLINE][NEWLINE]</English>
+        <French>Un soupir vous échappe. La fumée des feux de camps vrille au loin dans le ciel. Vous rencontrez une tribu de ces sauvages qui tiennent ces terres fertiles et prétendent que leurs ancêtres les leur ont confiées.[NEWLINE][NEWLINE]Mais vous  faites la part des choses. Seul ceux capables de défendre ce droit le tiennent pour de bon.[NEWLINE][NEWLINE] Vous ordonnez à vos hommes de charger leur fusil et au prêtre de vous bénir.[NEWLINE][NEWLINE]</French>
         <German>Ein Seufzen entschlüpft Eurer Brust. Wieder kräuselt in der Ferne der Rauch von Lagerfeuern in den Himmel. Wieder trefft Ihr auf einen Stamm dieser Wilden, die dieses fruchtbare Land in Beschlag nehmen und behaupten, ihre Ahnen hätten es ihnen vermacht.[NEWLINE][NEWLINE]Doch Ihr wisst es besser. Nur derjenige erhebt einen Anspruch zu Recht, der dieses Recht auch durchzusetzen vermag.[NEWLINE][NEWLINE]Ihr befehlt Euren Männern, ihre Gewehre zu laden, und dem Priester, Euch zu segnen.[NEWLINE][NEWLINE]</German>
         <Russian>Вздох вырывается из твоей груди. Снова вдалеке вьется дым костров. Вы снова встречаете племя этих дикарей, которые захватывают эту плодородную землю и утверждают, что их предки завещали ее им.[NEWLINE][NEWLINE]Но вам-то лучше знать. Только тот, кто может реализовать это право, может требовать его.[NEWLINE][NEWLINE]Вы приказываете своим людям зарядить ружья, а священнику благословить вас.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -819,13 +830,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWENTY_NATIVE_CONTACT_HEAD</Tag>
         <English>Many Native nations</English>
-        <French>Vous avez rencontré vingt peuples indigènes</French>
+        <French>Beaucoup de tribus indigènes</French>
         <German>Indianische Vielfalt</German>
         <Russian>Краснокожие, они повсюду</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWENTY_NATIVE_CONTACT_TEXT</Tag>
         <English>You already have twenty different tribes on your map. How many more do you think there could be?[NEWLINE][NEWLINE]If you imagined that this vast land was essentially uninhabited, your scouts have proved you wrong.[NEWLINE][NEWLINE]What will contact with these different cultures bring? War or peace? Trade? Will the Church rid them of their superstitions and make them good Christians with the Bible in hand, or will you have to use your sword?[NEWLINE][NEWLINE]There is still a lot of work ahead of you, that much is certain...[NEWLINE][NEWLINE]</English>
+        <French> Vous avez sur votre carte vingt tribus différentes. Combien y en a-t-il de plus encore?[NEWLINE][NEWLINE] Si vous imagniez cette terre inhabitée, vos éclaireurs vous ont démenti.[NEWLINE][NEWLINE] Qu'apportera le contact avec ces cultures? La guerre ou la paix? Du commerce? L'Église arrivera-t-elle à les débarrasser de leur superstition et à en faire de bons chrétiens, ou devrons nous les passer par l'épée?[NEWLINE][NEWLINE] Ce qui est sûr, c'est qu'une tâche de vaste ampleur vous attend....[NEWLINE][NEWLINE]</French>
         <German>Zwanzig verschiedene Stämme habt Ihr nun bereits auf Eurer Landkarte verzeichnet. Wieviele werden wohl noch hinzukommen?[NEWLINE][NEWLINE]Wenn Ihr gedacht habt, dieses weite Land sei im Wesentlichen unbesiedelt, haben Euch Eure Scouts mittlerweile eines Besseren belehrt.[NEWLINE][NEWLINE]Was wird der Kontakt mit diesen unterschiedlichen Kulturen wohl bringen? Krieg oder Frieden? Handel? Wird die Kirche sie von ihrem Aberglauben befreien und sie mit der Bibel in der Hand zu guten Christenmenschen machen oder müsst Ihr dafür Euer Schwert einsetzen?[NEWLINE][NEWLINE]Es liegt noch viel Arbeit vor Euch, soviel ist jedenfalls sicher...[NEWLINE][NEWLINE]</German>
         <Russian>На наших картах отмечено по меньшей мере двадцать индейских племён. Как вы думаете, сколько их еще может быть?[NEWLINE][NEWLINE]Если вы думали, что эта обширная земля практически необитаема, ваши разведчики доказали, что вы ошибались.[NEWLINE][NEWLINE]Что принесет знакомство с этими необычными культурами? Войну или мир? Возможности для торговли? Сможет ли Церковь избавить их от суеверий и сделать хорошими христианами с Библией в руках или нам придется использовать свой меч?[NEWLINE][NEWLINE]Один факт неоспорим - впереди еще много работы...[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -951,7 +963,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_VICTORY_TEXT</Tag>
         <English>The messenger, dusty and sweaty, slides awkwardly off his horse. The guards catch him as he stumbles.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Where is the governor?[COLOR_REVERT]" gasps the young man. "[COLOR_SELECTED_TEXT]I have a message from his officers.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I'll take you to him,[COLOR_REVERT]" says the sergeant of the palace guard, a grey-bearded, sinewy old man.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Tell me,[COLOR_REVERT]" he says, talking as he walks, "[COLOR_SELECTED_TEXT]did we win the battle?[COLOR_REVERT]"[NEWLINE][NEWLINE]The messenger grins. "[COLOR_SELECTED_TEXT]Would I be here otherwise?[COLOR_REVERT]"[NEWLINE][NEWLINE]The midday sun smiles down on him.[NEWLINE][NEWLINE]</English>
-        <French>« Où est le gouverneur ? », demande le messager en sueur, « J'ai un courrier de ses officiers. ». Le garde trépigne et ne peut s'empêcher de poser la question : « Dites-moi...Nous avons gagné la bataille ? ». Le messager sourit, « Serais-je ici autrement ? »[NEWLINE][NEWLINE]</French>
+        <French>Le messager, sale et en sueur, descend sans grâce de son cheval. Les gardes l'interceptent alors qu'il trébuche.«[COLOR_SELECTED_TEXT]Où est le gouverneur ? [COLOR_REVERT] », demande le messager en sueur, «[COLOR_SELECTED_TEXT]J'ai un courrier de ses officiers. [COLOR_REVERT] ».[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Je vous amène à lui.[COLOR_REVERT] » répondit le sergent de la garde du palais, un viel homme sec à la barbe grise.[NEWLINE][NEWLINE]Il ne peut s'empêcher de poser la question : «[COLOR_SELECTED_TEXT]Dites-moi...Nous avons gagné la bataille ? [COLOR_REVERT] ». Le messager sourit, «[COLOR_SELECTED_TEXT]Serais-je ici autrement ? [COLOR_REVERT] »[NEWLINE][NEWLINE]Le soleil de midi illumine son visage.[NEWLINE][NEWLINE]</French>
         <German>Staubig und verschwitzt ist der Bote. Er springt vom Pferd, stolpert, die Wachen können ihn gerade noch stützen.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Wo ist der Gouverneur?[COLOR_REVERT]" keucht der junge Mann. "[COLOR_SELECTED_TEXT]Ich habe eine Botschaft von seinen Offizieren.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ich bringe dich zu ihm[COLOR_REVERT]", sagt der Feldwebel der Palastwache, ein graubärtiger, sehniger Alter.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Sag mir,[COLOR_REVERT]" spricht er bereits im Gehen, "[COLOR_SELECTED_TEXT]haben wir die Schlacht gewonnen?[COLOR_REVERT]"[NEWLINE][NEWLINE]Der Bote schmunzelt. "[COLOR_SELECTED_TEXT]Wäre ich sonst hier?[COLOR_REVERT]"[NEWLINE][NEWLINE]Die Mittagssonne lacht ihn an.[NEWLINE][NEWLINE]</German>
         <Russian>Гонец, запыленный и уставший, неуклюже соскальзывает с лошади. Охранники еле успевают подхватить его, когда он спотыкается.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Где губернатор?[COLOR_REVERT]" - выдыхает молодой человек. "[COLOR_SELECTED_TEXT]У меня сообщение от его офицеров.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я отведу вас к нему.[COLOR_REVERT]" – говорит сержант стражи, седобородый, мускулистый старик.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Скажите мне,[COLOR_REVERT] – говорит он на ходу – [COLOR_SELECTED_TEXT]мы выиграли битву?[COLOR_REVERT]"[NEWLINE][NEWLINE]Гонец усмехается. "[COLOR_SELECTED_TEXT]Иначе ты бы меня здесь не увидел.[COLOR_REVERT]"[NEWLINE][NEWLINE]Полуденное солнце ласково улыбалось победителям недавнего сражения.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -972,6 +984,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FORTY_VICTORY_TEXT</Tag>
         <English>The sun burns on the far horizon, turning the sunset prairie red. Silently, your cavalry rides across the plain.[NEWLINE][NEWLINE]The men have no eye for the beauty of the landscape. They are already thinking with cold fury of the coming dawn when they will ride against the enemy city.[NEWLINE][NEWLINE]Unprotected by ramparts, far from the battle front, it believes itself safe from the distant horrors of war.[NEWLINE][NEWLINE]But with your cavalry you dispatch death to all corners of the New World - whose beauty and wealth should belong to one master only ... you.[NEWLINE][NEWLINE]</English>
+        <French>Le soleil cramoisit sur l'horizon, colorant la prairie du couchant en rouge. En silence, votre cavalerie chevauche à tarvers la pleine.[NEWLINE][NEWLINE]Vos hommes sont insensible à la beauté du pausage. Ils calculent dans une colère froide leur chevauchée du lendemain dès l'aube vers la ville ennemie.[NEWLINE][NEWLINE]Sans remparts, loin du champ de btaille, elle se pensait à l'abri des horreurs lointaines de la guerre.[NEWLINE][NEWLINE] Mais votre cavalerie sème la mort aux qautre coins du Nouveau Monde - dont la beauté et les richesses ne doivent appartenir qu'à un seul maître ... vous.[NEWLINE][NEWLINE]</French>
         <German>Die Sonne verglüht am Horizont, ihr sterbendes Licht entflammt die Steppe. Schweigend reitet Euer Kavallerietrupp durch die Ebene.[NEWLINE][NEWLINE]Die Männer haben kein Auge für den Liebreiz der Landschaft. Sie denken bereits voller kaltem Grimm an den nächsten Morgen, in dessen Dämmerlicht sie in die Stadt des Feindes einreiten werden.[NEWLINE][NEWLINE]Durch keine Wälle geschützt, liegt sie im Hinterland und glaubt sich sicher vor den weit entfernten Schrecken des Krieges.[NEWLINE][NEWLINE]Doch mit Eurer Kavallerie entsendet Ihr den Tod in alle Winkel der Neuen Welt - deren Schönheit und Reichtum nur einem Herren gehören sollte ... Euch.[NEWLINE][NEWLINE]</German>
         <Russian>Солнце догорает на горизонте, окрашивая закатную прерию в алый цвет. Ваши конные отряды неспешно едут по степной дороге.[NEWLINE][NEWLINE]Но мужчины не замечают красоту пейзажей. Они уже с холодной яростью думают о грядущем рассвете, в лучах которого ворвутся во вражеский город.[NEWLINE][NEWLINE]Незащищенный крепостными стенами, он расположен в глубине страны, считая себя в безопасности от ужасов войны.[NEWLINE][NEWLINE]Но со своей конницей вы рассылаете смерть во все уголки Нового Света, красота и богатство которого должны принадлежать только одному господину... Вам.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -985,14 +998,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVENTY_VICTORY_HEAD</Tag>
         <English>Playing the hero</English>
-        <French>Soixante-dizième victoire militaire</French>
+        <French>Jouant aux héros</French>
         <German>Den Helden spielen</German>
         <Russian>Игра в героев</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVENTY_VICTORY_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]What is there honourable about it?[COLOR_REVERT]" the young soldier murmurs disgustedly to the veteran at his side. "[COLOR_SELECTED_TEXT]To ambush the enemy's wagons and slaughter their defenceless escort - I never dreamed of such heroic deeds when I volunteered to take up arms.[COLOR_REVERT]"[NEWLINE][NEWLINE]Grimly, the greybeard glares back at him. "[COLOR_SELECTED_TEXT]If the enemy runs out of provisions and ammunition, it will save the lives of many a man in our ranks - perhaps you too, laddie. If you need to be a hero, go home and play with your tin soldiers.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
-        <French>Vous venez de remporter votre soixante-dizième victoire militaire. Votre armée devient chaque jour plus grande, plus expérimentée, plus professionnelle.[NEWLINE][NEWLINE]</French>
+        <French>«[COLOR_SELECTED_TEXT]Qu'a-t-il d'honorable à cela ?[COLOR_REVERT] » dem [NEWLINE][NEWLINE] chuchote le jeune soldat dégouté au vétéran à ses côtés. «[COLOR_SELECTED_TEXT]Embusquer le train de bagages ennemi et massacrer l'escorte - ce n'est jamais ce dont j'avais rêvé quand je me suis enrôlé. [COLOR_REVERT] »[NEWLINE][NEWLINE] l'homme à la barbe demi-sel le fixe du regard, sans une once d'humour. «[COLOR_SELECTED_TEXT]Si l'ennemi tombe à court de vivres et de munitions, cela sauvera la vie à bien des nôtres - et sans doute la tienne, bleusaille. Si tu veux jouer aux héros, retourne à la maison et à tes soldats de plomb. [COLOR_REVERT] »[NEWLINE][NEWLINE]  </French>
         <German>"[COLOR_SELECTED_TEXT]Was soll denn daran ehrenhaft sein?[COLOR_REVERT]", raunt der junge Soldat angewidert dem Veteranen an seiner Seite zu. "[COLOR_SELECTED_TEXT]Den Tross des Feindes aus dem Hinterhalt zu überfallen und dessen wehrlose Eskorte abzuschlachten - von solchen Heldentaten hatte ich nicht geträumt, als ich mich freiwillig zu den Waffen meldete.[COLOR_REVERT]"[NEWLINE][NEWLINE]Grimmig mustert ihn der Graubart. "[COLOR_SELECTED_TEXT]Wenn dem Feind Proviant und Munition ausgehen, dann wird das so manchem in unseren Reihen das Leben retten - vielleicht auch dir, Bürschchen. Wenn du lieber den Helden spielen willst, dann geh nach Hause und misch dich unter deine Zinnsoldaten.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Что в этом почетного?[COLOR_REVERT]" — с отвращением бормочет молодой солдат ветерану рядом с ним."[COLOR_SELECTED_TEXT]Устроить засаду на вражеские фургоны и перебить их слабовооружённый эскорт - о таких подвигах я и не мечтал, когда добровольцем брался за оружие.[COLOR_REVERT]"[NEWLINE][NEWLINE]Седобородый мрачно смотрит на него в ответ. "[COLOR_SELECTED_TEXT]Если у врага закончатся провизия и боеприпасы, это спасет жизни многим людям в наших рядах - возможно, тебе тоже, приятель. Ну а если ты хочешь быть героем, то иди домой и играй со своими оловянными солдатиками.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1013,7 +1026,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_HUNDRED_VICTORY_TEXT</Tag>
         <English>It's early when the winter sun sinks back down into its tomb and the moon stands guard over the deserted firmament.[NEWLINE][NEWLINE]Wearily, the soldier climbs the hill behind his parents' farm.[NEWLINE][NEWLINE]His battalion commander has granted home leave. The man's footsteps crunch in the snow and he feels chilled when he reaches the crest.[NEWLINE][NEWLINE]There's a lonely stone cross. The soldier unshoulders his rifle and stands for a moment, still and silent like the evening star.[NEWLINE][NEWLINE]After an eternity he swallows and whispers, "[COLOR_SELECTED_TEXT]You came home from the war before me, brother.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
-        <French>Déjà cent victoires au combat pour les troupes de vos colonies. Tout le monde sur le continent craint aujourd'hui vos armées, mais êtes-vous vraiment prêt à combattre contre n'importe quel adversaire ? Même s'il venait d'outre-Atlantique ?[NEWLINE][NEWLINE]</French>
+        <French>Le soleil d'hiver retourne dans son cercueil nocturne très tôt et la lune monte garde dans le désert du firmament?[NEWLINE][NEWLINE] Pesamment, le coldat gravit la colline derrière la ferme de ses parents. [NEWLINE][NEWLINE] Son commandant lui a accirdé une permission. Ses pas crissent dans la neige, et il se sent glacé arrivé à la crête.[NEWLINE][NEWLINE] Une croix de pierre se dresse seule ici. Le soldat désépaule son fusil et reste là, calme distant et silencieux comme l'étoile du soir.[NEWLINE][NEWLINE] Après un long moment, il déglutit et chuchote, «[COLOR_SELECTED_TEXT]Mon frère, tu as eu ta permission bien avant moi.[COLOR_REVERT] » </French>
         <German>Früh ist die Wintersonne herab in ihre Gruft gestiegen, und der Mond bewacht das verwaiste Firmament.[NEWLINE][NEWLINE]Müden Schritts erklimmt der Soldat den Hügel hinter dem Gehöft seiner Eltern.[NEWLINE][NEWLINE]Heimaturlaub hat ihm sein Bataillonskommandant gewährt. Die Schritte des Mannes knirschen im Schnee, und klamm ist ihm zumute, als er an der Kuppe anlangt.[NEWLINE][NEWLINE]Ein einsames Kreuz aus Stein steht dort. Der Soldat schultert sein Gewehr ab und steht bloß da, still und schweigend wie das Nachtgestirn.[NEWLINE][NEWLINE]Längst scheint die Ewigkeit angebrochen, als er schluckt und flüstert. "[COLOR_SELECTED_TEXT]Bist vor mir aus dem Krieg heimgekehrt, Bruderherz.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Italian>You have won your hundredth military victory.[NEWLINE][NEWLINE]</Italian>
         <Spanish>You have won your hundredth military victory.[NEWLINE][NEWLINE]</Spanish>
@@ -1036,6 +1049,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_SEAVICTORY_TEXT</Tag>
         <English>Gunwales are splintered, sails have been torn to shreds, men have fallen. The price of victory was once again far too high, the captain thinks to himself.[NEWLINE][NEWLINE]And yet success truly tastes better than failure. The captured ship will please the Admiral and the damage can be easily repaired in the shipyard.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]An extra ration of rum for the men![COLOR_REVERT]" he bellows to the boatswain across the deck.[NEWLINE][NEWLINE]The men cheer. How easy it is to please these poor devils, the captain thinks, and disappears into his cabin.[NEWLINE][NEWLINE]</English>
+        <French>Les sabords sont défoncés, les voiles déchirées, et des hommes sont tombés. Le prix de la victoire fut une fois de plus bien trop élevé, songea le capitaine.[NEWLINE][NEWLINE] Et pourtant la victoire est bien plus douce que l'échec. Le navire capturé plaira à l'Amiral, et les dommages seront bien vite réparés au chantier naval.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Double ration de rhum pour tout le monde! [COLOR_REVERT] » lance-t-il au bosco à travers le pont.[NEWLINE][NEWLINE] Les hommes exultent? Qu'il est facile de plaire à ces braves gars, pense le capitaine en se retirant dans sa cabine.[NEWLINE][NEWLINE]</French>
         <German>Holz ist zersplittert, Segel wurden zerfetzt, Männer sind gefallen. Der Preis für den Sieg war wieder einmal viel zu hoch, denkt sich der Captain.[NEWLINE][NEWLINE]Und doch schmeckt der Erfolg wahrlich besser als der Misserfolg. Die eroberte Prise wird dem Admiral gut gefallen und die Schäden können in der Werft leicht behoben werden.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Eine Extraration Rum für die Männer![COLOR_REVERT]" brüllt er dem Bootsmann über das Deck entgegen.[NEWLINE][NEWLINE]Die Männer jubeln. Wie leicht diese armen Teufel doch zufrieden zu stellen sind, denkt der Captain und verschwindet in seiner Kabine.[NEWLINE][NEWLINE]</German>
         <Russian>Планширы расколоты, паруса разорваны в клочья, погибли люди. Цена победы снова оказалась слишком высока, думает про себя капитан.[NEWLINE][NEWLINE]И все же успех действительно вкуснее поражения. Захваченный корабль понравится адмиралу, а повреждения можно будет устранить на верфи по возвращении в порт.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Дополнительная порция рома для всей команды![COLOR_REVERT]" - командует он боцману.[NEWLINE][NEWLINE]Матроссы встречают это распоряжение радостными возгласами. Как легко угодить этим бедолагам, думает капитан и исчезает в своей каюте.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1056,6 +1070,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRTY_SEAVICTORY_TEXT</Tag>
         <English>The new epaulette gleams in the sunlight. Self-satisfied, the captain gazes across the small squadron he now commands.[NEWLINE][NEWLINE]The lords of the admiralty have been generous. But, after all, at sea he did put the fear of God into the enemy.[NEWLINE][NEWLINE]Was it worth it? Under his command too many sailors and marines have already fallen. And with the war looming, there are likely to be even more.[NEWLINE][NEWLINE]But what the hell. After all, nothing comes for free.[NEWLINE][NEWLINE]Not even death, for that costs one's own life, the captain thinks to himself as he invites his officers to dinner to celebrate their latest victory.[NEWLINE][NEWLINE]</English>
+        <French> Les nouvelles épaulettes brillent sous le soleil. Content de lui même, le capitaine regarde la petite escadrille qu'il commande.[NEWLINE][NEWLINE]Les hauts-gradé de l'amirauté ont été généreux. Après tout, en mer il a provoqué la crainte de Dieu au sein de l'ennemi.[NEWLINE][NEWLINE] Mais cela en valait-il le coût? Sous ses ordres, tant de marins, tant de soldats, ont déjà péri. Et avec la guerre à l'horizon, ils y aurait encore plus de victimes.[NEWLINE][NEWLINE]Rien n'est jamais gratuit.[NEWLINE][NEWLINE] Même la mort d'un autre, si elle vient au prix de sa propre vie, pense le capitaine alors qu'il invite ses officiers à diner pour célébrer leur dernière victoire.</French>
         <German>Die neue Epaulette auf der Schulter glänzt im Sonnenlicht. Selbstzufrieden blickt der Captain über sein kleines Geschwader, das er nunmehr kommandiert.[NEWLINE][NEWLINE]Die Herren Admiräle waren großzügig. Aber schließlich war er es ja auch, der die Gegner auf See das Fürchten gelehrt hat.[NEWLINE][NEWLINE]Aber war es das wert? Zuviele Matrosen und Seesoldaten sind unter seinem Kommando schon gefallen. Und bei dem heraufziehenden Kampf dürften es sogar noch mehr werden.[NEWLINE][NEWLINE]Aber was soll's. Schließlich gibt es nichts umsonst.[NEWLINE][NEWLINE]Nicht einmal den Tod, denn der kostet das Leben, denkt sich der Captain und lädt seine Offiziere zum Dinner, um den neuesten Sieg gebührend zu feiern.[NEWLINE][NEWLINE]</German>
         <Russian>Новый эполет ярко блестит на солнце. Довольный собой, капитан смотрит на небольшую эскадру, которой он теперь командует.[NEWLINE][NEWLINE]Лорды адмиралтейства наконец-то расщедрились. И это была заслуженная награда, ведь именно он вселял в сердца вражеских капитанов смертельный ужас.[NEWLINE][NEWLINE]Но стоило ли оно того? Слишком много морских пехотинцев и простых моряков уже погибло под его командованием. А в приближающейся войне их, вероятно, будет еще больше.[NEWLINE][NEWLINE]Да какого черта. Ведь бесплатно никогда ничего не бывает. [NEWLINE][NEWLINE]Даже смерть стоит собственной жизни, думает про себя капитан, приглашая своих офицеров на обед, чтобы отпраздновать их последнюю победу.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1076,6 +1091,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIFTY_SEAVICTORY_TEXT</Tag>
         <English>What a glorious fleet![NEWLINE][NEWLINE]Knowing that mastery of the sea is the key to success in the New World, you have built a navy second to none.[NEWLINE][NEWLINE]Strong enough to protect your colonies from pirates and privateers, powerful enough to defy your neighbours.[NEWLINE][NEWLINE]But will it be powerful enough to take on the king's fleet if need be?[NEWLINE][NEWLINE]Well, the day you find out is not as far away as you might think.[NEWLINE][NEWLINE]</English>
+        <French>Quelle flotte glorieuse ![NEWLINE][NEWLINE] Sachant que la maitrise des mer est la clé du succès au nouveau monde, vous avez construit une flotte sans pareil.[NEWLINE][NEWLINE] Assez forte pour vous protéger des corsaires et des pirates, assez puissante pour défier vos voisins.[NEWLINE][NEWLINE] Mais elle assez forte pour tenir tête à la flotte royale si nécessaire ?[NEWLINE][NEWLINE] Bien, le jour où vous le découvrirez est plus proche que vous ne le croyiez.[NEWLINE][NEWLINE]</French>
         <German>Was für eine Flotte![NEWLINE][NEWLINE]Wohlwissend, daß die Herrschaft über die See der Schlüssel zum Erfolg in der Neuen Welt ist, habt Ihr Euch eine Flotte aufgebaut, die ihresgleichen sucht.[NEWLINE][NEWLINE]Stark genug, um Eure Kolonien vor Piraten und Freibeutern zu schützen, mächtig genug, um Euren Nachbarn zu trotzen.[NEWLINE][NEWLINE]Aber wird sie auch kampfkräftig genug sein, um es notfalls mit der Flotte des Königs aufzunehmen?[NEWLINE][NEWLINE]Nun, der Tag an dem Ihr das herausfinden werdet, ist nicht mehr so fern wie Ihr vielleicht denkt.[NEWLINE][NEWLINE]</German>
         <Russian>Какой великолепный флот![NEWLINE][NEWLINE]Зная, что господство на море — ключ к успеху в Новом Свете, вы построили флот, которому нет равных.[NEWLINE][NEWLINE]Достаточно силен, чтобы защитить свои колонии от пиратов и каперов, достаточно силен, чтобы бросить вызов своим соседям.[NEWLINE][NEWLINE]Но будет ли достаточно его мощи, чтобы сразиться с королевским флотом, если потребуется?[NEWLINE][NEWLINE]Что ж, день, когда вы это узнаете, не так уж и далек, как вы думаете.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1089,13 +1105,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_GALLEON_HEAD</Tag>
         <English>A floating giant</English>
-        <French>Votre premier Galion</French>
+        <French>Un géant des mers</French>
         <German>Ein schwimmender Riese</German>
         <Russian>Плавающий гигант</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_GALLEON_TEXT</Tag>
         <English>The onlookers stand in disbelief as porters climb the ship's catwalk again and again. On their bent backs they haul bales, crates and barrels.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]How much does a galleon hold?[COLOR_REVERT]" calls a little boy curiously.[NEWLINE][NEWLINE]A grizzled mate leans down. "[COLOR_SELECTED_TEXT]As much as we can put into her,[COLOR_REVERT]" he says kindly.[NEWLINE][NEWLINE]</English>
+        <French>Les badauds regardent avec stupeur les hommes de mains monter sur le ponton encore et encore. Sur leur dos courbés, ils hissent à bord des balots, des caisses et des tonneaux.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Combien peut contenir un galion ? [COLOR_REVERT] » demande un petit garçon curieux. Un matelot grisonnant se penche. «[COLOR_SELECTED_TEXT]Autant que ce que nous pouvons y placer. [COLOR_REVERT]» répond-il gentiment.[NEWLINE][NEWLINE]  </French>
         <German>Ungläubig stehen die Schaulustigen Spalier, als wieder und wieder Lastenträger über den Laufsteg das Schiff erklimmen. Auf ihren gebeugten Rücken schleppen sie Ballen, Kisten und Fässer.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Wieviel passt denn in eine Galeone rein?[COLOR_REVERT]" kräht ein kleiner Junge neugierig.[NEWLINE][NEWLINE]Ein graubärtiger Maat beugt sich herab. "[COLOR_SELECTED_TEXT]Soviel, wie muss[COLOR_REVERT]", sagt er freundlich.[NEWLINE][NEWLINE]</German>
         <Russian>Зеваки в порту недоверчиво наблюдают, как носильщики снова и снова взбираются по трапу на корабль. На своих согнутых спинах они таскают тюки и ящики, катят бочки.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]А сколько груза может вместить в себя галеон?[COLOR_REVERT]" - с любопытством спрашивает маленький мальчик.[NEWLINE][NEWLINE]Седой помощник капитана наклоняется к нему. "[COLOR_SELECTED_TEXT]Столько, сколько мы захотим погрузить в него.[COLOR_REVERT]" — улыбаясь говорит он.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1109,13 +1126,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_GALLEON_HEAD</Tag>
         <English>From forest to sea</English>
-        <French>Trois Galions</French>
+        <French>Une forêt en mer</French>
         <German>Wald und Wasser</German>
         <Russian>От леса до моря</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_GALLEON_TEXT</Tag>
         <English>Suddenly the world shakes. Startled, the flying squirrel jumps off and sails over to the next tree.[NEWLINE][NEWLINE]The trunk it was hanging from trembles, then splinters and falls with a crash. At its feet, the loggers grin.[NEWLINE][NEWLINE]More planks and beams for the nearby shipyard. Stout timber for solid decks and a strong keel - for the next galleon.[NEWLINE][NEWLINE]</English>
+        <French>Soudain, le monde tremble. Effrayé, l'écureuil volant saute et plane vers un autre arbre.[NEWLINE][NEWLINE] Le tronc sur lequel il était accroché, tremble, se fend et s'abat dans un fracas. À son pied, le bucheron sourit.[NEWLINE][NEWLINE] Plus de planches et de poutres pour le chantier naval du coin. Du bois bien robuste, pour des ponts solide et une quille dure - pour le prochain galion.[NEWLINE][NEWLINE]</French>
         <German>Plötzlich wackelt die Welt. Erschrocken springt das Flughörnchen ab und segelt hinüber zum nächsten Baum.[NEWLINE][NEWLINE]Der Stamm, an dem es eben noch hing, erzittert, dann neigt er sich und fällt krachend um. Zu seinen Füßen feixen die Waldarbeiter.[NEWLINE][NEWLINE]Etliche Klafter Holz mehr für die Werft in der nahen Stadt. Gutes Bauholz für feste Planken und einen strammen Kiel - für die nächste Galeone.[NEWLINE][NEWLINE]</German>
         <Russian>Внезапно мир сотрясается. Испугавшись, белка-летяга спрыгивает со своего дерева и планирует к другому.[NEWLINE][NEWLINE]Ствол дерева, на котором она сидела, дрожит, трещит и с грохотом падает. Лесорубы, стоящие у огромного пня, ухмыляются.[NEWLINE][NEWLINE]Больше досок и балок для ближайшей верфи. Прочная древесина для прочных палуб и прочный киль для следующего галеона.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1129,14 +1147,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_WESTINDIANMAN_HEAD</Tag>
         <English>A class of its own</English>
-        <French>Premier navire des Indes Occidentales</French>
+        <French>Quelle classe, ce navire</French>
         <German>Ein neuer Schiffstyp</German>
         <Russian>Новый тип корабля</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_WESTINDIANMAN_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]The storm astern is approaching fast. Let's hope we reach the colony before it hits, bosun. Our enormous hold is filled to the brim with the best the Old World has to offer.[NEWLINE][NEWLINE]Have the topsails set, so that we don't lose the High Lords' profit in the deep sea,[COLOR_REVERT]" says the captain to his boatswain as he looks nervously at the pursuing cloud bank.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aye aye, sir,[COLOR_REVERT]" answers the boatswain with a mild smile as he thinks to himself "[COLOR_SELECTED_TEXT]the High Lords' profit? Well, I can see you've taken a leaf out of their book too, friend, with those boxes in the aft cabin...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
-        <French>« J'espère que nous allons atteindre la colonie avant que la tempête ne se lève. »[NEWLINE][NEWLINE]« Commandant, donnez l'ordre de monter les voiles hautes. Notre câle est remplie de marchandises en provenance d'Europe, nous ne pouvons nous permettre aucun risque de sombrer en mer. »[NEWLINE][NEWLINE]</French>
+        <French>«[COLOR_SELECTED_TEXT]Gros temps à l'horizon, filant droit sur nous. J'espère que nous allons atteindre la colonie avant que la tempête ne nous touche, bosco. notre cale est remplie à ras bord de ce que l'Ancien Monde a de mieux à nous offrir[NEWLINE][NEWLINE] Faites monter le hunier, que nous ne perdions rien des profits de Monsieur en haute mer. [COLOR_REVERT]» Dit le capitaine à son maitre de manoeuvre en regardant nerveusement le mur de nuages d'approcher. [NEWLINE][NEWLINE]« [COLOR_SELECTED_TEXT]Oui mon commandant [COLOR_REVERT] » répond le maitre de maoeyvre avec un demi sourire alors qu'il pensaie pour lui même «[COLOR_SELECTED_TEXT]Les Profits de monsieur? Ouais, bien je peux voir que tu en as déjà pris ta part, l'ami, avec toutes ces boites dans la cabine de poupe.[COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Hoffen wir, dass wir die Kolonie noch vor dem nächsten Sturm erreichen, Bootsmann, unsere Laderäume sind so groß wie eine Kiche und randvoll mit den besten Waren aus der Alten Welt.[NEWLINE][NEWLINE]Lassen Sie die Toppsegel setzen, damit wir den Profit der hohen Herren nicht doch noch im Meer versenken[COLOR_REVERT]", meint der Käpt'n zu seinem Bootsmann und blickt sorgenvoll zu der achteraus aufziehenden Wolkenbank.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aye, Aye, Sir,[COLOR_REVERT]" gibt der Boostmann milde lächelnd zurück und denkt sich "[COLOR_SELECTED_TEXT]Den Profit der hohen Herren? Na, du wirst dir davon doch sicher auch eine schöne Scheibe abschneiden, Freundchen, wenn ich so an die Kisten in der Achterkajüte denke...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Шторм за кормой быстро приближается. Будем надеяться, что мы доберемся до колонии до того, как буря нанесет удар, боцман. Наш огромный трюм до краев заполнен лучшим, что может предложить Старый Свет.[NEWLINE][NEWLINE]Установите марсели, чтобы мы не потеряли прибыль Лордов Парламента в глубоком море.[COLOR_REVERT]" – говорит капитан своему боцману, нервно поглядывая на преследующую их гряду черных облаков.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да, да, сэр,[COLOR_REVERT]" отвечает боцман с легкой улыбкой, думая про себя."[COLOR_SELECTED_TEXT]Лорды Парламента? Что ж, дружище, я думаю, ты тоже видел листок из их книги, выпавшей при погрузке из какого-то ящика в кормовой каюте...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1150,13 +1168,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BRIGANTINE_HEAD</Tag>
         <English>A capable merchantman</English>
-        <French>Votre premier brigantin</French>
+        <French>Un navire marchand vaillant</French>
         <German>Ein braver Handelsfahrer</German>
         <Russian>Способный торговец</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BRIGANTINE_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Can you make out anything, boatswain...[COLOR_REVERT]" the captain asks excitedly, "[COLOR_SELECTED_TEXT]is it a damned privateer or one of our customs cutters? The company would resent it very much if I lost this wonderful new ship to the pirates on our first voyage.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I'm afraid I can't make anything out, sir. The sails are only partly above the horizon,[COLOR_REVERT]" the boatswain replies nervously.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Then up the mast with you, bosun - all the way to the top. You should be able to see the hull from up there.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aye, aye, sir[COLOR_REVERT]", the boatswain answers with a tug on his cap, thinking to himself, 'We'll know in 10 minutes anyway. This ship can't escape. We're too heavily loaded.'[NEWLINE][NEWLINE]</English>
+        <French>«[COLOR_SELECTED_TEXT]Bosco, tu en dis quoi ... [COLOR_REVERT] » demande le capitaine avec impatience «[COLOR_SELECTED_TEXT]C'est un cotre de nos douanes, ou un de ces damnés corsaires ? La compagnie m'en voudrait si je venais à perdre ce bâteau magnifique contre les pirates des ma première course à son bord. [COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Désolé, capitaine, je ne peux rien en dire. On voit juste la pointe des voiles au dessus de l'horizon. [COLOR_REVERT] » répond nerveusement le maitre de manoeuvre.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Grimpe au mat, alors, bosco - tout en haut, au nid-de-pie. Tu devrais voir leur coque de la haut. [COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Affirmatif, capitaine. [COLOR_REVERT] » conclut le maitre de manoeuvre, portant la main au chapeau, et gardant cette pensée pour lui : « On le saura dans dix minutes de toute manière. Nous sommes trop chargés, on ne pourra pas s'échapper. »[NEWLINE][NEWLINE] </French>
         <German>"[COLOR_SELECTED_TEXT]Könnt Ihr irgend etwas erkennen, Bootsmann...[COLOR_REVERT]" fragt der Käpt'n aufgeregt, "[COLOR_SELECTED_TEXT]ist es ein verdammter Kaperer oder einer von unseren Zollkuttern? Die Kompanie würde es mir sehr übelnehmen, wenn ich dieses wunderbare neue Schiff gleich bei unserer ersten Fahrt an die Piraten verliere.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ich kann leider nichts erkennen, Sir. Die Segel sind noch nicht weit genug über der Kimm[COLOR_REVERT]", gibt der Bootsmann nervös zurück.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Dann rauf mit Euch in den Mast, Bootsmann - bis ganz nach oben. Von dort oben solltet Ihr den Rumpf eigentlich bereits erkennen können.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aye, Aye, Sir[COLOR_REVERT]", gibt der Bootsmann pflichtschuldig zurück und denkt sich "[COLOR_SELECTED_TEXT]In 10 Minuten wissen wir sowieso Bescheid. Entkommen können wir mit diesem Kahn eh' nicht mehr, dafür haben wir zu schwer geladen.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Вы можете что-нибудь разобрать, боцман?[COLOR_REVERT]" - взволнованно спрашивает капитан."[COLOR_SELECTED_TEXT]Это чертов капер или один из наших таможенных катеров? В компании будут очень недовольны, если я потеряю этот замечательный новый корабль из-за пиратов во время нашего первого рейса.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Боюсь, я ничего не могу разобрать, сэр. Лишь множество парусов на горизонте.[COLOR_REVERT]" – нервно отвечает боцман.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Тогда поднимитесь на мачту, боцман, до самого верха. Оттуда вы должны будете увидеть очертания корпуса.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Есть, есть, сэр![COLOR_REVERT]" - отвечает боцман, дергая кепку и думая про себя: "На кой чёрт это нужно? Через несколько часов нас всё равно догонят. Наш корабль настолько загружен, что нас сейчас и на шлюпке можно обойти."[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1170,33 +1189,35 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SECOND_FISHINGBOAT_HEAD</Tag>
         <English>Fresh fish on the table</English>
-        <French>Les filets sont prêts à être déployés !</French>
+        <French>Poisson frais sur la table</French>
         <German>Frischer Fisch auf den Tisch</German>
         <Russian>Свежая рыба на столе</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SECOND_FISHINGBOAT_TEXT</Tag>
         <English>The fishermen can hardly believe their luck, as they pull one plump cod after another out of the water.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I told you right away, the new fishing boats from our shipyard will make us rich,[COLOR_REVERT]" the worker in the small boat rejoices. "[COLOR_SELECTED_TEXT]On the coast there are just too many of us fishermen, but out here it's like a land of milk and honey - I mean cod and herring. You only have to hold out your hands...and the fish jump right into them.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Your nose is about to jump into my closed fist,[COLOR_REVERT]" the helmsman roars from behind, "[COLOR_SELECTED_TEXT]if you don't stop chattering and the catch isn't in soon. We have to be back in the harbour before the market opens, or you'll eating all this cod yourself.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <French>Les pêcheurs peuvent à peine croire à leur coup de chance, alors qu'ils tirent une morue dodue l'une après l'autres des eaux.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Je vous l'avais bien dit, ces nouveaux chalutiers sortis droits de nos chantiers allait nous rendre riche. [COLOR_REVERT] » Les travailleurs dans le petit bateau se réjouisseny. «[COLOR_SELECTED_TEXT]Près des côtes, il y a déjà bien trop de concurrence entre nous pêcheurs, mais en haute mer, c'est comme une terre de lait et miel - je devrais dire une mer de cabillaud et de hareng. Vous pouvez levez les bras... et le poisson sautera droit dans vos mains. [COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]et mon poing va sauter sur ton nez si tu n'arrêtes pas de déblatérer et que nous n'avons toute la prise à bord bientôt. [COLOR_REVERT] » gueule le timonier de l'arrière «[COLOR_SELECTED_TEXT]Nous devons retourner au port avant que le marché n'ouvre, sinon tu devras manger tout seul toute notre prise. [COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
         <German>Die Fischer können ihr Glück kaum fassen, einen dicken Brocken nach dem anderen ziehen sie aus dem Wasser.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ich hab's doch gleich gesagt, die neuen Fischerboote aus unser Werft werden uns reich machen,[COLOR_REVERT]" frohlockt der Fischer des kleinen Fischerbootes. "[COLOR_SELECTED_TEXT]An der Küste sind wir einfach zu viele Fischer, aber hier draußen ist es wie im Schlaraffenland. Man braucht nur die Hand aufzuhalten und schon springen einem die Fische in die Hände.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Deine Nase springt auch gleich in meine Faust,[COLOR_REVERT]" brüllt der Steuermann von hinten, "[COLOR_SELECTED_TEXT]wenn Du nicht aufhörst, zu schwätzen, und der Fang nicht bald eingebracht ist. Wir müssen wieder im Hafen sein, bevor der Markt öffnet, sonst kannst Du den ganzen schönen Kabeljau alleine essen.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>Рыбаки с трудом верят своему счастью, вытаскивая из воды одну упитанную треску за другой.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я сразу сказал вам, что новые рыбацкие лодки с нашей верфи сделают нас богатыми![COLOR_REVERT]" – радуется молодой рабочий в маленькой лодке. "[COLOR_SELECTED_TEXT]У побережья слишком много рыбаков, но здесь все как в стране молока и меда - я имею в виду треску и сельдь. Стоит только вытянуть руки... и рыба прыгает прямо в них.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Твой нос вот-вот прыгнет в мой сжатый кулак![COLOR_REVERT]" - ревет сзади рулевой. "[COLOR_SELECTED_TEXT]Если ты не перестанешь болтать и не займёшься уловом. Мы должны вернуться в гавань до открытия рынка, иначе ты сам съешь всю эту треску.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_WHALING_BOAT</Tag>
         <English>Your first Whaling Boat</English>
-        <French>Premier baleinier</French>
+        <French>Premier navire baleinier</French>
         <German>Euer erster Walfänger</German>
         <Russian>Ваш первый китобойный корабль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_WHALING_BOAT_HEAD</Tag>
         <English>Of striplings and grey whales</English>
-        <French>Premier baleinier</French>
+        <French>Les jouvanceaux contre les baleines grises</French>
         <German>Von Grünschnäbeln und Grauwalen</German>
         <Russian>Молодёжь и серые киты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_WHALING_BOAT_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Which one of you worn-out sods has ever felt planks under your feet?[COLOR_REVERT]" The stubble-bearded mate glares with his grey eyes in the dawn light.[NEWLINE][NEWLINE]In front of him, dishevelled and dirty, are a handful of young lads, mostly confused about where they are and what they drank yesterday.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I see,[COLOR_REVERT]" a black stream of tobacco juice hits the deck in front of a trembling youth, "[COLOR_SELECTED_TEXT]I'm going to have to go wide here. Have you scrawny pegs ever seen anything like this?[COLOR_REVERT]"[NEWLINE][NEWLINE]He plants the wooden shaft of a monstrous harpoon in front of him. Pale faces turn green, green faces ashen.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Get ready, because hell is waiting for you. Do any of you mama's boys even know that there are bigger critters in the world than rats and fleas?[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <French> «[COLOR_SELECTED_TEXT]Bande des marins d'eau douce avariés, qui n'a jamais marché sur le pont d'un bâteau ? [COLOR_REVERT] »  Le marin mal rasé les fixe de son regard gris dans la lueur de l'aube.[NEWLINE][NEWLINE]En face de lui, hirsutes et sales, tout une bande de jeunes gens se demandant ce qu'ils ont bien pu ingurgiter la veille, et là où ils se trouvent tout suite.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT] Je vois le genre. [COLOR_REVERT] » Une chique noire de tabac s'écrase sur le pont auprès d'un des jeunes tremblotant. «[COLOR_SELECTED_TEXT]On va tout passer en revue. Bande d'échalas, vous avez déjà vu un de ces engins ? [COLOR_REVERT] »[NEWLINE][NEWLINE]Il flanque la hampe en bois d'un harpon monstrueux devant lui. Les visage palôts, virent au vert, et en finissent blêmes.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Tenez vous prêts, car nous allons faire un tour en enfer. Vous avez déjà quittés les jupons de vos mères pour voir qu'il y avait de plus gros bestiaux que des rats et des puces ?[COLOR_REVERT]»[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Wer von euch abgetakelten Belegnägeln hatte schon mal Planken unter den Füßen?[COLOR_REVERT]" Der stoppelbärtige Maat stiert mit seinen grauen Augen durch das erste Licht des Tages.[NEWLINE][NEWLINE]Vor ihm stehen mehr schlecht als recht eine Handvoll junger Burschen, die sich vor allem fragen, wo sie sind und was sie gestern getrunken haben.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ich seh schon[COLOR_REVERT]", ein schwarzer Strahl Tabaksaft landet vor einem zitternden Jüngling auf dem Deck, "[COLOR_SELECTED_TEXT]hier muss ich weit ausholen, also, habt ihr dürren Heringe so was schon mal gesehen?[COLOR_REVERT]"[NEWLINE][NEWLINE]Er pflanzt den Holzschaft einer monströsen Harpune vor sich auf, bleiche Gesichter werden grün, grüne Gesichter aschfahl.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, hol mich der Teufel, weiß irgendeiner von euch Muttersöhnchen überhaupt, dass es größeres Viehzeuch auf der Welt gibt als Ratten und Flöhe?[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Кто-нибудь из вас, чёрт побери, когда-нибудь выходил в море?[COLOR_REVERT]" Помощник капитана с густой щетиной на скулах смотрит серыми глазами на людей перед собой.[NEWLINE][NEWLINE]Перед ним стоит кучка молодых парней, растрепанных и грязных, в основном не понимающих, где они и что вчера пили.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Вижу,[COLOR_REVERT]" - черная капля табачного сока падает на палубу перед дрожащими юношами - "[COLOR_SELECTED_TEXT]здесь мне придется кое-что пояснить. Вы когда-нибудь видели что-нибудь подобное, тощие прищепки?[COLOR_REVERT]"[NEWLINE][NEWLINE]Он ставит перед собой деревянное древко чудовищного гарпуна. Бледные лица становятся зелеными, зеленые лица пепельными.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Готовьтесь, вас ждет ад. Кто-нибудь из вас, маменькины сынки, вообще знает, что на свете есть твари покрупнее крыс и блох?[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1224,20 +1245,21 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SLOOP</Tag>
         <English>Your first sloop</English>
-        <French>Votre premier sloop</French>
+        <French>Votre premier sloup</French>
         <German>Eure erste Sloop</German>
         <Russian>Ваш первый шлюп</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SLOOP_HEAD</Tag>
         <English>Your first sloop</English>
-        <French>Votre premier sloop</French>
+        <French>Votre premier sloup</French>
         <German>Eure erste Sloop</German>
         <Russian>Морской шпион</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SLOOP_TEXT</Tag>
         <English>From the window of your dining room you look down on the harbour as the sun rises - and yet another ship has moored at the quay.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A sloop, sir,[COLOR_REVERT]" your secretary tells you officiously. "[COLOR_SELECTED_TEXT]She is said to run a smooth 12 knots, sir, though she is not very big, nor can she carry many goods.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Then what are we going to do with this thing? Has the Admiralty given us nothing but useless stuff again? Don't they know in Europe that we need ships to bring as many supplies and settlers as possible?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hm...um...sir, the sloop is a fast reconnaissance ship that can spy on pirate hideouts or other colonies. With her shallow draft she can hide in small bays and even enter larger rivers. She will certainly serve us well, sir.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aha, well then ... where's the invoice for this sloop? Surely they'll want to make us pay for it?[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <French>Vous regardez le port depuis la fenêtre de la salle à manger alors que le soleil se lève - et un nouveau type de bateau s'est amarré.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Un sloup, sire [COLOR_REVERT] » vous informe votre secrétaire «[COLOR_SELECTED_TEXT]Elle filerait 12 noeuds, mais elle est petite en taille et en cale. [COLOR_REVERT] » [NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Qu'allons nous faire alors de ce machin ? L'amirauté ne nous adonc rien donné que des babioles inutiles ? Ils ne savent donc pas en Europe que nous avons besoin avec une large cale pour emporter autant de colons et de biens que possible ? [COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Euh .. Humm.. Sire, le sloup est une navire de reconnaissance rapide qui peut espionner les autres colonies et débusquer les repaires de pirates. Avec son faible tirant d'eau, elle peut se cacher en eaux peu profondes, dans des baies étroites, et même remonter de grande rivières. Il nous sera bien utile à coup sur. [COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Aha, très bien ... où est donc la facture pour ce sloup? Ils s'attendent à ce que nous les payions pour ce navire ? [COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
         <German>Ihr blickt aus dem Fenster Eures Dienstzimmers auf den Hafen hinunter, über dem gerade die Sonne aufgeht - Und schon wieder hat ein Schiff am Kai festgemacht.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Eine Sloop, Herr Gouverneur[COLOR_REVERT]" wie Euch Euer Sekretär dienstbeflissen berichtet. "[COLOR_SELECTED_TEXT]Sie soll glatte 12 Knoten laufen, Herr Gouverneur, obwohl sie nicht sehr groß ist und auch nicht viele Waren transportieren kann.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Was sollen wir dann mit dem Ding? Hat uns die Admiralität wieder nur unnützes Zeug zuerkannt? Wissen die denn da in Europa nicht, dass wir hier Schiffe brauchen, die möglichst viele Versorgungsgüter und Siedler herschaffen können?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hm...ähm...Herr Gouverneur, die Sloop ist ein schneller Aufklärer, die Piratennester und andere Kolonien hervorragend ausspionieren kann. Aufgrund ihres geringen Tiefgangs kann sie auch kleine Buchten anlaufen und sogar in größere Flüsse einlaufen. Sie wird uns sicher gute Dienste leisten, Herr Gouverneur.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aha, na dann ... her mit der Faktura für diese Sloop. Man wird uns doch sicher trotzdem dafür bezahlen lassen wollen?![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>На рассвете из окна своей столовой вы смотрите на гавань, где у причала только что пришвартовался еще один корабль.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Шлюп, сэр.[COLOR_REVERT]" – официально говорит вам секретарь. "[COLOR_SELECTED_TEXT]Говорят, судно плавает со скоростью целых 12 узлов, сэр. Хотя оно не очень большое и не может перевозить много грузов.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Тогда что мы будем делать с этой штукой? Адмиралтейство снова не дало нам ничего, кроме бесполезного хлама? Разве в Европе не знают, что нам нужны корабли, чтобы доставлять как можно больше припасов и поселенцев?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Кхм... эм... сэр, шлюп — быстроходный разведывательный корабль, который может шпионить за укрытиями пиратов и...или другими колониями. Благодаря небольшой осадке он может прятаться в небольших бухтах и даже заходить в большие реки. Безусловно, он сослужит нам хорошую службу, сэр.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ага, тогда... где бумаги на этот шлюп? Неужели они хотят заставить нас платить за него?[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1271,13 +1293,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FRIGATES_HEAD</Tag>
         <English>Wolfhounds</English>
-        <French>Cinq frégates</French>
+        <French>Tueur de loups</French>
         <German>Wolfsjagd</German>
         <Russian>Волкодавы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FRIGATES_TEXT</Tag>
         <English>You shade your eyes with your hand and peer out across the harbour entrance. A warship lies in wait there. Its hull is narrow so that it can fly swiftly across the sea. The decks bristle with cannon; powder kegs are stacked in the armoury. Smaller merchant ships arrive from east and west, easy prey for such a fighter.[NEWLINE][NEWLINE]But the boats glide past unconcerned, for the captains have long since learned that they are approaching one of your frigates - the shepherd dogs protecting the lambs from the wolves.[NEWLINE][NEWLINE]</English>
+        <French>Vous abritez vos yeux de la main et visez l'embouchure du port. Un navire de guerre vous y attend. Sa coque étroite va fendre les mers à toute vitesse. Les ponts sont bardés de canon. La sainte-barbe regorge de tonnelets de poudre. De plus petits vaisseaux marchand arrivent de l'est et de l'ouest, des proies faciles pour un tel chien de mer.[NEWLINE][NEWLINE]Mais ces bateaux passent sans sourciller, car leurs capitaines ont compris depuis bien longtemps qu'il ne s'agissait que d'une de vos frégates - un chien-berger de haute mer gardant les moutons contre les loups.[NEWLINE][NEWLINE]</French>
         <German>Ihr verschattet die Augen mit Eurer Hand und späht hinaus auf die Hafeneinfahrt. Ein Kriegsschiff liegt dort auf der Lauer. Sein Rumpf ist schmal, damit es schnell über die See fliegen kann. Die Decks starren vor Kanonen, in der Waffenkammer stapeln sich gewiß die Pulverfässer. Von Ost und West nähern sich kleinere Handelsschiffe, eine leichte Beute für einen solchen Jäger.[NEWLINE][NEWLINE]Doch die Boote gleiten unbesorgt näher, denn die Kapitäne haben längst erkannt, dass sie sich einer Eurer Fregatten nähern - den Schäferhunden, die die Lämmer vor den Wölfen schützen.[NEWLINE][NEWLINE]</German>
         <Russian>Ты прикрываешь глаза рукой и смотришь на вход в гавань. Там стоит военный корабль. Его узкий корпус позволяет быстро лететь по морю. Палубы ощетинелись пушками; в оружейной сложен запас бочек с порохом. Меньшие торговые суда, прибывающие с востока и запада, легкая добыча для такого воителя.[NEWLINE][NEWLINE]Но торговцы беспечно скользят мимо, ибо капитаны уже давно знают, что приближаются к одному из ваших фрегатов - овчарок, охраняющих ягнят от волков.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1298,47 +1321,49 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SHIP_OF_THE_LINE_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Sail in sight![COLOR_REVERT]" the ship's watch roars across the deck.[NEWLINE][NEWLINE]His comrades crane their heads. "[COLOR_SELECTED_TEXT]Booty again at last,[COLOR_REVERT]" laughs the buccaneer captain, a gigantic man with a grim look. He flashes his sabre through the air.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Men! It looks like a merchantman tacking ahead![COLOR_REVERT]"[NEWLINE][NEWLINE]Just then the ship's cook tugs at his sleeve. "[COLOR_SELECTED_TEXT]Captain![COLOR_REVERT]" he sputters, "[COLOR_SELECTED_TEXT]look![COLOR_REVERT]" With a trembling arm he points over the rail.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]The prize is changing course - it's heading straight for us![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
-        <French>Votre puissance maritime croît. Un galion de guerre est un superbe navire, symbole de la puissance de nos colonies.[NEWLINE][NEWLINE]</French>
+        <French>«[COLOR_SELECTED_TEXT]Voile à l'horizon [COLOR_REVERT] » rugit la vigie vers le pont.[NEWLINE][NEWLINE]Ses camarades s'étirent le coup. «[COLOR_SELECTED_TEXT]Enfin du butin, [COLOR_REVERT] » s'écrie le capitaine pirate, un colosse à la mine patibulaire. Il lève haut son sabre en l'air.  «[COLOR_SELECTED_TEXT]Les gars, on dirait un navure marchand droit devant! [COLOR_REVERT] »[NEWLINE][NEWLINE]À ce moment, le cuistot du navire le tire par la manche. «[COLOR_SELECTED_TEXT]Capitaine, [COLOR_REVERT] » s'écrie-t-il, «[COLOR_SELECTED_TEXT]Regardez ! [COLOR_REVERT] » D'une main tremblante il pointe au dessus de la rembarde.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Notre cible change de course - il fonce droit sur nous ! [COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Segel in Sicht![COLOR_REVERT]" brüllt der Ausguck über das Deck.[NEWLINE][NEWLINE]Seine Kameraden recken die Köpfe. "[COLOR_SELECTED_TEXT]Endlich wieder Beute[COLOR_REVERT]", lacht der Kapitän der Seeräuber, ein Hüne mit grimmigem Blick. Er stößt den Säbel in die Luft.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Männer! Dort kreuzt ein Handelschiff unseren Kurs![COLOR_REVERT]"[NEWLINE][NEWLINE]Da zupft der Smutje an seinem Ärmel. "[COLOR_SELECTED_TEXT]Käpt'n![COLOR_REVERT]" stottert er, "[COLOR_SELECTED_TEXT]seht![COLOR_REVERT]" Mit zitterndem Arm zeigt er über die Reling.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Die Prise ändert ihren Kurs - sie hält direkt auf uns zu![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Паруса на горизонте![COLOR_REVERT]" — раздаётся крик вахтенного.[NEWLINE][NEWLINE]Его товарищи вытягивают головы в указанную сторону. "[COLOR_SELECTED_TEXT]Наконец-то, снова добыча![COLOR_REVERT]" — смеется капитан пиратов, огромный мужчина с мрачным взглядом, размахивая своей саблей в воздухе.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Парни! Похоже, что впереди лавирует торговый корабль![COLOR_REVERT]"[NEWLINE][NEWLINE]В этот момент корабельный повар дернул его за рукав. "[COLOR_SELECTED_TEXT]Капитан![COLOR_REVERT]" — бормочет кок - "[COLOR_SELECTED_TEXT]Смотрите![COLOR_REVERT]" Он дрожащей рукой указывает на леер.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Приз меняет курс - он направляется прямо к нам![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_SHIPS_OF_THE_LINE</Tag>
         <English>Six ships of the line</English>
-        <French>Six galions de guerre</French>
+        <French>>Six navires de ligne</French>
         <German>Sechs Linienschiffe</German>
         <Russian>Шесть линейных кораблей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_SHIPS_OF_THE_LINE_HEAD</Tag>
         <English>Majestic</English>
-        <French>Six navires de ligne</French>
+        <French>Majestueux</French>
         <German>Majestätisch</German>
         <Russian>Величие и спокойствие</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_SHIPS_OF_THE_LINE_TEXT</Tag>
         <English>The glowing ball of the evening sun lights the firmament on fire as it sinks into the ocean.[NEWLINE][NEWLINE]Weary, the people trudge home from the day's work. Farmers leave the fields, woodcutters the forest, the carpenters their workshops.[NEWLINE][NEWLINE]Before entering their homes they cast an awe-struck glance toward the sea. It's not the brilliant sky that captivates them - it is instead the mighty warship gliding along the coast in majestic calm: one of six battleships which make you, the governor, the ruler of these shores.[NEWLINE][NEWLINE]</English>
+        <French>Le soleil couchant embrase le firmament alors qu'il somnre dans l'océan.[NEWLINE][NEWLINE]Fourbus, les gens rentrent chez eux de leur journée de travil. Les paysans quittent les champs, les bûcherons leur forêts, les charpentiers leurs ateliers.[NEWLINE][NEWLINE]Avant de rentrer chez eux, ils regardent vers l'océan abasourdis. Ce n'est pas le coucher de soleil qui les captive - mais ce puissant vaisseau de ligne voguant près de la côte dans un calme majestueux. Un des six navires de guerres qui font de vous, gouverneur, le maître de cette côte.[NEWLINE][NEWLINE]</French>
          <German>Der Glutball der Abendsonne entflammt das Firmament, bevor er in den Fluten versinkt.[NEWLINE][NEWLINE]Ermattet schreiten die Menschen vom vollbrachten Tagewerk nach Hause. Die Bauern verlassen die Felder, die Holzfäller den Forst, die Zimmermänner ihre Werkstätten.[NEWLINE][NEWLINE]Bevor sie ihre Heime betreten, werfen sie einen ehrfurchtsvoll staunenden Blick aufs Meer. Doch ist es nicht der Weltenbrand am Himmel, der sie bannt - es ist vielmehr der Anblick eines mächtigen Linienschiffes, das in majestätischer Ruhe die Küste entlang gleitet. Einem von nunmehr sechs Schlachtschiffen, mit denen Ihr, der Gouverneur, Euch zum Herrscher dieser Gestade aufschwingt.[NEWLINE][NEWLINE]</German>
         <Russian>Светящийся шар вечернего солнца освещает небосвод огнем, погружаясь в океан.[NEWLINE][NEWLINE]Усталые люди бредут домой после рабочего дня. Крестьяне уходят с полей, дровосеки — из леса, плотники — из мастерской.[NEWLINE][NEWLINE]Перед тем как войти в свои дома, они с благоговением смотрят на море. Но привлекает их не сияющее небо, а могучий военный корабль, в величественном спокойствии скользящий вдоль побережья: один из шести Линейных кораблей, которые делают вас, губернатор, правителем этих берегов.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWELVE_SHIPS_OF_THE_LINE</Tag>
         <English>Twelve ships of the line</English>
-        <French>Douze galions de guerre</French>
+        <French>Douze navires de ligne</French>
         <German>Zwölf Linienschiffe</German>
         <Russian>Двенадцать линейных кораблей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWELVE_SHIPS_OF_THE_LINE_HEAD</Tag>
         <English>Bear hunting</English>
-        <French>Douze galions de guerre</French>
+        <French>Chasse à l'ours</French>
         <German>Bärenjagd</German>
         <Russian>Охота на медведя</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWELVE_SHIPS_OF_THE_LINE_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]That ship of the line is smaller than ours![COLOR_REVERT]" Frowning, the Royal Navy captain sets down his telescope. "[COLOR_SELECTED_TEXT]But many wolves can be dangerous to a bear.[COLOR_REVERT]"[NEWLINE][NEWLINE]He turns away from the railing and sees his spy, who has been listening to everything in the colony's coastal towns for the past few weeks.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]You said they've already commissioned twelve of these ships of the line? His Majesty won't like to hear that.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <French>« Ce navire de ligne est plus petit que le nôtre ! » Le capitaine de la marine royale baisse son télescope. « Mais une meute de loup peut mettre à mal un ours. »[NEWLINE][NEWLINE]Il se détourne de la rembarde et regarde son espion, qui a mené l'enquête sur toutes les colonies côtières ces dernières semaines.[NEWLINE][NEWLINE]« Vous dites qu'ils ont déjà paré douze navires de ligne de la même classe ? Sa Majesté ne va pas aimer cette nouvelle. »[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Dieses Linienschiff ist kleiner als die unsrigen![COLOR_REVERT]" Stirnrunzelnd setzt der Kapitän der Königlichen Marine sein Fernrohr ab. "[COLOR_SELECTED_TEXT]Aber viele Füchse können einem Bären gefährlich werden.[COLOR_REVERT]"[NEWLINE][NEWLINE]Er dreht sich von der Reling weg und mustert seinen Spion, der in den letzten Wochen in den Küstenstädten der Kolonie die Ohren gespitzt hatte.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ihr sagtet, sie hätten bereits zwölf dieser Linienschiffe vom Stapel laufen lassen? Nun, das wird Seine Majestät nicht gerne vernehmen.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Этот линейный корабль меньше нашего![COLOR_REVERT]" Нахмурившись, капитан Королевского флота опускает подзорную трубу. "[COLOR_SELECTED_TEXT]Но стая волков может быть опасна даже для медведя.[COLOR_REVERT]"[NEWLINE][NEWLINE]Он отворачивается от перил и видит своего шпиона, который последние несколько недель подслушивал всё, что происходит в прибрежных городах колонии.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Так значит, вы утверждаете, что они уже ввели в строй двенадцать линейных кораблей? Его Величеству это не понравится.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1352,13 +1377,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_MAN_O_WAR_HEAD</Tag>
         <English>Your first three-decker</English>
-        <French>Votre premier vaisseau de guerre</French>
+        <French>Votre premier trois-ponts</French>
         <German>Euer erster Dreidecker</German>
         <Russian>Плавающая крепость</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_MAN_O_WAR_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]A truly magnificent and powerful ship, Admiral. 100 guns, 950 crew, thick oak planks, a veritable fortress at sea. We can protect our colonies with this, sir![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Maybe so, Colonel. But the ship is new and the crew is not yet very familiar with her. I'll have the captain practice with the guns every day, starting today and on all three decks.[NEWLINE][NEWLINE]Have your officers drill the marines vigorously. We'll know in a month's time whether we have the most powerful ship in these waters. Before that we have a lot of work to do![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aye, aye, sir. We will begin training the marines immediately.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <French>«[COLOR_SELECTED_TEXT]Un navire puissant et magnifique, amiral. Cent canons, 950 hommes, des planches en chêne massif, une véritable fortersse des mer. Nous pouvons protéger nos olonies avec ceci, monsieur! [COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Sans doute, colonel. Mais ce navire est neuf, et les hommes n'y sont pas familiers. Je veux que le capitaine lance l'entraînement à la canonnade quotidiennement, dès aujourd'hui et sur les trois ponts.[NEWLINE][NEWLINE]Vos officiers doivent mener à l'exercice nos soldats de marine avec la plus grande rigueur. Nous saurons dans un mois si ce navire nous permet de dominer ces eaux. Mais avant, nous avons du pain sur planche ![COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Affirmatif ! Nous lançons l'entrainement de nos marins tout de suite. [COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Ein wahrlich herrliches und mächtiges Schiff, Admiral. 100 Kanonen, 950 Mann Besatzung, Planken so dick wie Eichen. Eine wahre Festung auf See. Damit können wir unsere Kolonien beschützen, Sir![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Mag sein, Colonel. Aber das Schiff ist neu und die Mannschaft ist noch nicht sehr vertraut mit ihr. Ich lasse den Kapitän ab heute täglich mit den Kanonen üben und zwar auf allen drei Decks.[NEWLINE][NEWLINE]Lassen Sie Ihre Offiziere die Seesoldaten ebenfalls kräftig drillen. In einem Monat sehen wir weiter, dann haben wir vielleicht das kampfkräftigste Schiff in diesen Gewässern. Aber vorher haben wir noch eine Menge Arbeit vor uns![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aye, Aye, Sir. Wir werden sofort mit der Ausbildung der Seesoldaten beginnen.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Поистине великолепный и мощный корабль, адмирал. 100 орудий, 950 человек экипажа, толстые дубовые доски, настоящая крепость на море. С ним мы сможем защитить наши колонии, сэр![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Возможно, полковник. Но корабль новый и экипаж с ним еще не очень знаком. Я прикажу капитану тренироваться с орудиями каждый день, начиная с сегодняшнего дня, и на всех трех палубах.[NEWLINE][NEWLINE]Поручите вашим офицерам усердно тренировать морских пехотинцев. Через месяц мы узнаем, есть ли у нас самый мощный корабль в этих водах. А до этого нам предстоит много работы![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да, да, сэр. Мы немедленно приступим к обучению морских пехотинцев.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1381,6 +1407,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_PRIVATEER_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Gentlemen,[COLOR_REVERT]" the captain announces, "[COLOR_SELECTED_TEXT]the time has come.[COLOR_REVERT]"[NEWLINE][NEWLINE]He heaves the small chest onto the chart table in his cabin. Curious, the officers watch as he breaks the seal. "[COLOR_SELECTED_TEXT]As soon as our port is out of sight, we are to open this. Those are the governor's orders.[COLOR_REVERT]"[NEWLINE][NEWLINE]He flips open the lid and has to grin. "[COLOR_SELECTED_TEXT]Gentlemen, here's what will be on our flagpole.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <French>«[COLOR_SELECTED_TEXT] Messieurs, [COLOR_REVERT] » annonce le capitaine «[COLOR_SELECTED_TEXT]l 'heure est venue. [COLOR_REVERT] »[NEWLINE][NEWLINE]Il hisse le petit coffre sur la table des cartes dans sa cabines. Les officiers regardent avec attention quand il brise le sceau. «[COLOR_SELECTED_TEXT] Dès que notre port n'est plus en vue, nous devons ouvrir ceci. Ce sont les ordres du gouverneur. [COLOR_REVERT]»[NEWLINE][NEWLINE]Il fait basculer le couvercle et en sourit. «[COLOR_SELECTED_TEXT] Messieurs, voici le pavillon que nous hisserons . [COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Meine Herren[COLOR_REVERT]", verkündet der Kapitän, "[COLOR_SELECTED_TEXT]es ist soweit.[COLOR_REVERT]"[NEWLINE][NEWLINE]Er hievt die kleine Truhe auf den Kartentisch seiner Kajüte. Neugierig schauen die Offiziere zu, wie er das Siegel zerbricht. "[COLOR_SELECTED_TEXT]Sobald unser Hafen nicht mehr in Sicht ist, sollen wir dies öffnen. So lautet der Befehl des Gouverneurs.[COLOR_REVERT]"[NEWLINE][NEWLINE]Er klappt den Deckel auf und muss grinsen. "[COLOR_SELECTED_TEXT]Meine Herren, dies soll wohl an den Flaggenmast.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Господа,[COLOR_REVERT]" — объявляет капитан - "[COLOR_SELECTED_TEXT]время пришло.[COLOR_REVERT]"[NEWLINE][NEWLINE]Он достаёт небольшой сундучок и ставит его на штурманский стол в своей каюте. "[COLOR_SELECTED_TEXT]Как только наш порт скроется из виду, мы должны открыть его. Это приказ губернатора.[COLOR_REVERT]" Офицеры с любопытством наблюдают, как он ломает печать.[NEWLINE][NEWLINE]Открыв крышку, капитан улыбается. "[COLOR_SELECTED_TEXT]Господа, вот что будет развеваться на нашем флагштоке.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1401,6 +1428,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_PRIVATEER_TEXT</Tag>
         <English>With a fearful look, the captain evaluates the foreign ship that is chasing his merchantman. Full sails are set, but the privateer is still gaining on him.[NEWLINE][NEWLINE]He turns towards the bow and looks ahead. The fog bank in which he wants to hide his heavy ship is getting closer. "[COLOR_SELECTED_TEXT]We can make it,[COLOR_REVERT]" he murmurs.[NEWLINE][NEWLINE]But suddenly another ship breaks out of the fog, and it too carries the Jolly Roger on the mast. "[COLOR_SELECTED_TEXT]You wolves![COLOR_REVERT]" the captain shouts in helpless rage.[NEWLINE][NEWLINE]</English>
+        <French>Empli de crainte, le regard du capitaine soupèse le navire étranger pourchassant son navire marchand. Il est toutes voiles dehors, mais le corsaire gagne la course contre lui.[NEWLINE][NEWLINE]Il se tourne vers la proue et regarde à l'avant. Le banc de brouillard dans lequel il veut cacher son lourd vaisseau se rapproche.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Nous pouvons y arriver [COLOR_REVERT] » murmure-t-il. Soudain, un autre navire surgit des brumes, avec le pavillon noir au sommet.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Bande de loups affamés ![COLOR_REVERT] » hurle le capitaine de dépit et de rage impuissante.[NEWLINE][NEWLINE]</French>
         <German>Mit angstvollem Blick taxiert der Kapitän das fremde Schiff, das seinen Handelskahn jagt. Vollzeug hat er setzen lassen, dennoch holt der Kaperfahrer auf.[NEWLINE][NEWLINE]Er dreht sich gen Bug und blickt voraus. Die Nebelbank, in der er seinen Pott verstecken will, rückt näher. "[COLOR_SELECTED_TEXT]Wir können es schaffen[COLOR_REVERT]", murmelt er.[NEWLINE][NEWLINE]Doch urplötzlich bricht ein anderes Schiff aus dem Nebel, und auch dieses führt die Totenkopfflagge am Mast. "[COLOR_SELECTED_TEXT]Ihr Wölfe![COLOR_REVERT]", schreit der Kapitän in hilfloser Wut hinüber.[NEWLINE][NEWLINE]</German>
         <Russian>Испуганным взглядом оценивает капитан незнакомый корабль, преследующий его купеческое судно. Поставлены полные паруса , но капер все равно настигает его.[NEWLINE][NEWLINE]Капитан обращает свой взгляд вперед, по ходу судна. Гряда тумана, в которой он хочет спрятать свой тяжелый корабль, все ближе."[COLOR_SELECTED_TEXT]Мы сможем это сделать.[COLOR_REVERT]" – бормочет он.[NEWLINE][NEWLINE]Но вдруг из тумана показывается силуэт еще одиного корабля, на мачте которого также проглядывается Весёлый Роджер. "[COLOR_SELECTED_TEXT]Вы, волки, ненавижу![COLOR_REVERT]" — кричит капитан в беспомощной ярости.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1421,6 +1449,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_PRIVATEER_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]A fat prey![COLOR_REVERT]" the harpooner shouts to the sailors at the oars. "[COLOR_SELECTED_TEXT]We'll have the whale in a moment. Pull, men, pull![COLOR_REVERT]"[NEWLINE][NEWLINE]But suddenly the oarsmen drop their blades. Pale with fright, they point over the harpooner's shoulder. He turns around - and swallows.[NEWLINE][NEWLINE]A privateer glides in, swift as a hawk. The pirates stand at the railing and grin down.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Don't let us interrupt your work, boys![COLOR_REVERT]" one of them shouts and laughs. "[COLOR_SELECTED_TEXT]We won't take the ship from you until you've filled its belly with oil. That should make a fat booty![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <French>«[COLOR_SELECTED_TEXT]Une proie dodue [COLOR_REVERT] » crie le harponneur aux marins rameurs. «[COLOR_SELECTED_TEXT]Nous aurons cette baleine dans un instant. Souquez ferme, les gars! [COLOR_REVERT] »[NEWLINE][NEWLINE]D'un coup, les rameurs laissent tomber leur rames. Pâles d'effroi, ils pointent au dessus de l'épaule du harponneur. Celui-ci se retourne et déglutit.[NEWLINE][NEWLINE]Un corsaire s'approche, vif comme un faucon. Les pirates à bord sont à la rembarde et sourient supérieurement.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Ne vous arrêtez pas de bosser pour nous, les gars ![COLOR_REVERT] » gueule l'un d'entre eux, rigolard. «[COLOR_SELECTED_TEXT]On ne fera pas main basse sur votre bateu tant que ses cales ne seront pas remplies de gras de baleine. Ca nous fera une proie bien dodue. [COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Eine fette Beute![COLOR_REVERT]", ruft der Harpunier den Matrosen an den Riemen zu. "[COLOR_SELECTED_TEXT]Gleich haben wir den Wal. Pullt, Männer, pullt![COLOR_REVERT]"[NEWLINE][NEWLINE]Doch plötzlich lassen die Ruderer die Blätter fallen. Schreckensbleich zeigen sie über die Schulter des Harpuniers. Der dreht sich um - und schluckt.[NEWLINE][NEWLINE]Ein Kaperschiff gleitet heran, geschwind wie ein Falke. Die Piraten stehen an der Reling und grinsen herab.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Lasst Euch nicht bei der Arbeit stören, Jungs![COLOR_REVERT]", ruft einer und lacht. "[COLOR_SELECTED_TEXT]Wir nehmen Euch das Schiff erst weg, wenn ihr seinen Bauch mit Speck gefüllt habt. Das soll eine fette Beute geben![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Жирная добыча![COLOR_REVERT]" — кричит гарпунщик матросам на веслах. "[COLOR_SELECTED_TEXT]Кит будет у нас через минуту. Тяните, парни, тяните![COLOR_REVERT]"[NEWLINE][NEWLINE]Но вдруг гребцы роняют вёсла. Бледные от испуга, они указывают через плечо гарпунщика. Он оборачивается и нервно сглатывает.[NEWLINE][NEWLINE]Капер скользит вперед быстро, как ястреб. Пираты стоят у перил и ухмыляются.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Мы не станем прерывать вашу работу, парни![COLOR_REVERT]" - кричит один из них и смеется. "[COLOR_SELECTED_TEXT]Мы не отберем у вас корабль, пока вы не наполните его брюхо жиром до самых краёв. Это будет жирная добыча![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1441,26 +1470,28 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_PIRATE_FRIGATE_TEXT</Tag>
         <English>Formerly you were a gentleman. And now? In command of a pirate ship?[NEWLINE][NEWLINE]Take a good look at this scum, Governor! Are you sure you want to go down this road and lead these people?[NEWLINE][NEWLINE]On land, you'd hand every one of them over to the militia at once or, better still, hang them from the nearest tree.[NEWLINE][NEWLINE]On the other hand, it promises good profits to send out a crew that fears neither death nor the devil and is loyal to you as long as the rum keeps flowing...[NEWLINE][NEWLINE]</English>
+        <French>Vous étiez un gentilhomme avant. Et là ? Aux commandes d'un bateau pirate ? [NEWLINE][NEWLINE]Regardez-moi cette racaille, gouverneur. Êtes-vous sur que vous voulez suivre cette route et mener ces gens?[NEWLINE][NEWLINE]Sure terre, vous livreriez chacun d'eux à la milice sur le champ ou, mieux, vous les pendriez à l'arbre le plus proche[NEWLINE][NEWLINE]D'un autre côté, ce sont des beaux profits en perspective que d'envoyer un équipage qui ne craint ni Dieu ni Diable et qui vous restera loyal tant que le rhum coule à flot...[NEWLINE][NEWLINE]</French>
         <German>Früher waren Sie ein Gentleman. Und jetzt untersteht Euch ein Piratenschiff?[NEWLINE][NEWLINE]Seht Euch diesen Abschaum genau an, Gouverneur! Seid Ihr sicher, dass Ihr diesen Weg gehen und diese Leute anführen wollt?[NEWLINE][NEWLINE]An Land würdet Ihr jeden von denen sofort der Miliz übergeben oder besser gleich am nächsten Baum aufhängen.[NEWLINE][NEWLINE]Andererseits verspricht es gute Gewinne, eine Mannschaft aufs Meer hinaus zu jagen, die weder Tod noch Teufel fürchtet und Euch treu ergeben ist, solange der Rum in Strömen fließt...[NEWLINE][NEWLINE]</German>
         <Russian>Раньше ты был джентльменом. А сейчас? Командир пиратского корабля?[NEWLINE][NEWLINE]Внимательно посмотрите на эту сволочь, губернатор! Вы уверены, что хотите пойти по этому пути и повести за собой этих людей?[NEWLINE][NEWLINE]На суше любого из них вы бы сразу сдали ополченцам, а еще быстрее повесили бы на ближайшем дереве.[NEWLINE][NEWLINE]С другой стороны, иметь под рукой команду, которая не боится ни смерти, ни дьявола и верна вам, пока ром льется рекой, сулит хорошую прибыль...[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_PIRATE_FRIGATE</Tag>
         <English>Brother of the Coast you may now call yourself - with three pirate frigates you spread fear and terror!</English>
-        <French>Trois frégates pirates</French>
+        <French>Vous êtes à vous seul deux des Frères de la Côtes - vous semez la crainte et la terreur avec trois frégates pirates !</French>
         <German>Bruder der Küste dürft Ihr euch nun nennen - mit drei Piratenfregatten verbreitet Ihr Angst und Schrecken!</German>
         <Russian>Три пиратских фрегата</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_PIRATE_FRIGATE_HEAD</Tag>
         <English>Brethren of the Coast</English>
-        <French>Trois frégates pirates</French>
+        <French>Frères de la Côte</French>
         <German>Brüder der Küste</German>
         <Russian>Береговое братство</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_PIRATE_FRIGATE_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Fifteen men on the dead man's chest, yo ho ho and a bottle of rum[COLOR_REVERT]" the captain hums to himself. Since setting sail this morning the shanty just won't leave his head. Nervously, he looks through his telescope in search of the black sail that has been doggedly following his fully laden merchant ship all morning.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]One more stroke and we'll be safe.[COLOR_REVERT]"[NEWLINE][NEWLINE]But there...what is it? Two more sails to windward![NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]We are all lost,[COLOR_REVERT]" cries the captain fearfully. "[COLOR_SELECTED_TEXT]Hide purses and women below decks![COLOR_REVERT]"[NEWLINE][NEWLINE]The Brothers of the Coast are here...[NEWLINE][NEWLINE]</English>
+        <French>«[COLOR_SELECTED_TEXT]15 hommes sur le coffre du mort, oh oh oh et une bouteille de rhum. [COLOR_REVERT] » chantonne le capitaine. Depuis qu'il a levé les voile ce metin, cet air de marin joue dans sa tête comme une scie. Il regarde à travers sa lunette à la recherche du pirate qui a poursuivi avec entêtement tout ce matin son navire marchand chargé à plein.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Encore quelques encablures, et nous serons  tous saufs. [COLOR_REVERT] »[NEWLINE][NEWLINE]Mais là bas, qu'est ce que c'est ? Deux voiles de plus, loin, au vent![NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Nous sommes perdus. [COLOR_REVERT] » dit le capitaine en pleur. «[COLOR_SELECTED_TEXT]Cachez vos bourses et vos femmes sous le pont ! [COLOR_REVERT] »[NEWLINE][NEWLINE]Les Frères de la Côte sont là.[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Fünfzehn Mann auf des Totenmann's Kiste, johoo. Fünfzehn Mann auf des Totenmann's Kiste, johoo...und ne Buddel voll Rum[COLOR_REVERT]" summt der Käpt'n vor sich hin. Der Shanty vom Segelsetzen heute morgen will ihm einfach nicht aus dem Kopf. Nervös blickt er durch sein Fernrohr auf der Suche nach dem schwarzen Segel, dass sein voll beladenes Handelsschiff schon seit der Morgenwache hartnäckig verfolgt.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ein Schlag noch, dann sind wir sicher.[COLOR_REVERT]"[NEWLINE][NEWLINE]Doch da...was ist das? Zwei weitere Segel in Luv![NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Wir sind alle verloren[COLOR_REVERT]" schreit der Käpt'n angstvoll auf, "[COLOR_SELECTED_TEXT]versteckt Geldbeutel und Frauen unter Deck![COLOR_REVERT]"[NEWLINE][NEWLINE]Die Brüder der Küste schlagen wieder zu...[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Пятнадцать человек на сундук мертвеца, йо-хо-хо и бутылка рома[COLOR_REVERT]" — напевает себе под нос капитан. С тех пор, как сегодня утром он отплыл, мысль о трактире нет-нет, да возвращается в его голову. Он нервно осматривает горизонт в подзорную трубу в поисках черного паруса, который все утро упрямо следовал за его полностью загруженным торговым судном.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Еще немного и мы будем в безопасности.[COLOR_REVERT]"[NEWLINE][NEWLINE]Но... что это? Еще два паруса против ветра![NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Мы все пропали![COLOR_REVERT]" – в ужасе кричит капитан. "[COLOR_SELECTED_TEXT]Прячьте кошельки и женщин под палубой![COLOR_REVERT]"[NEWLINE][NEWLINE]Береговые братья здесь...[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1474,7 +1505,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_MORTAR_HEAD</Tag>
         <English>Your first mortar is ready</English>
-        <French>Votre premier mortier</French>
+        <French>Votre premier mortier est prêt</French>
         <German>Euer erster Mörser steht bereit</German>
         <Russian>Горе осаждённым</Russian>
     </TEXT>
@@ -1487,14 +1518,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CANNON</Tag>
         <English>Your first heavy artillery</English>
-        <French>Premier régiment de canon</French>
+        <French>Premier régiment de canon lourd</French>
         <German>Eure erste Schwere Artillerie</German>
         <Russian>Ваша первая тяжёлая артиллерия</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CANNON_HEAD</Tag>
         <English>Heavy artillery</English>
-        <French>Premier régiment de canon</French>
+        <French>Artillerie lourde</French>
         <German>Erste Schwere Artillerie</German>
         <Russian>Повод для беспокойства</Russian>
     </TEXT>
@@ -1507,7 +1538,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_CANNON</Tag>
         <English>Six heavy artilleries</English>
-        <French>Six régiments de canon</French>
+        <French>Six régiments de canon lourd</French>
         <German>Sechs Schwere Artillerie</German>
         <Russian>Шесть тяжёлых артиллерий</Russian>
     </TEXT>
@@ -1534,6 +1565,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_LIGHT_CANNONS_HEAD</Tag>
         <English>Attentive</English>
+        <French>Attentifs</French>
         <German>Achtsam</German>
         <Russian>Лёгкое дыхание смерти</Russian>
     </TEXT>
@@ -1646,7 +1678,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CAPABLE_CAPTAIN</Tag>
         <English>Your first able captain</English>
-        <French>Your first able captain</French>
+        <French>Votre premier capitaine capable</French>
         <German>Euer erster Fähiger Kapitän</German>
         <Russian>Ваш первый способный капитан</Russian>
     </TEXT>
@@ -1666,12 +1698,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BRAVE_LIEUTENANT</Tag>
         <English>Your first brave lieutenant</English>
+        <French>Votre premier lieutenant courageux</French>
         <German>Euer erster Mutiger Leutnant</German>
         <Russian>Ваш первый храбрый лейтенант</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BRAVE_LIEUTENANT_HEAD</Tag>
         <English>Leaders lead from the front</English>
+        <French>Les chefs mènent en première ligne</French>
         <German>Anführer führen von vorn</German>
         <Russian>Лидеры всегда впереди</Russian>
     </TEXT>
@@ -1711,7 +1745,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ONE_WEAVERS_HOUSE_HEAD</Tag>
         <English>Piecework</English>
-        <French>Première maison de tisserand</French>
+        <French>Travail à la pièce</French>
         <German>Weberknecht</German>
         <Russian>Сдельная работа</Russian>
     </TEXT>
@@ -1731,7 +1765,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_WEAVERS_HOUSE_HEAD</Tag>
         <English>The textile business</English>
-        <French>Trois maisons de tisserand</French>
+        <French>Le marché du textile</French>
         <German>Stoff für Geschichten</German>
         <Russian>Текстильный бизнес</Russian>
     </TEXT>
@@ -1893,7 +1927,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_ARMORY_HEAD</Tag>
         <English>World class work</English>
-        <French>Votre première armurerie</French>
+        <French>Travail de classe mondiale</French>
         <German>Wehrhaft</German>
         <Russian>Работа мирового уровня</Russian>
     </TEXT>
@@ -2007,7 +2041,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_MILITIAS</Tag>
         <English>You have established your third settler militia</English>
-        <French>Trois milices</French>
+        <French>Vous avez levé trois milices coloniales</French>
         <German>Ihr habt Eure dritte Siedler-Miliz aufgestellt</German>
         <Russian>Три вооруженных колониста</Russian>
     </TEXT>
@@ -2064,8 +2098,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_RANGER_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]I don't know, General,[COLOR_REVERT]" says the governor. "[COLOR_SELECTED_TEXT]When I look at these men they're certainly frightening, but I can smell their rancid leather jackets all the way from here, and their equipment is certainly not regulation. Knives, tomahawks, long-barreled rifles...and no discipline in their bodies, don't even salute their officers.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]You're right, Governor. They're rough fellows. But if I'm being honest, I'd rather have one of them in the wilderness with me than ten of our guardsmen.[NEWLINE][NEWLINE]The rangers fight like Indians, read their tracks and you only notice that they've attacked when it's all over.[NEWLINE][NEWLINE]Our soldiers are trained to fight against other European troops. In the wilderness they are as good as helpless.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well, if you say so, General. As long as they leave our women and rum alone...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
-        <French>Vous avez recruté trois gardes forestiers.[NEWLINE][NEWLINE]</French>
-        <German>"[COLOR_SELECTED_TEXT]Ich weiß nicht, General,[COLOR_REVERT]" meint der Gouverneur, "[COLOR_SELECTED_TEXT]wenn ich mir diese Kerle so ansehe. Furchteinflößend sind sie mit Sicherheit, aber ihre ranzigen Lederwämse kann ich bis hier riechen und ihre Ausrüstung ist sicher auch nicht vorschriftsmäßig. Messer, Tomahawks, langläufige Gewehre...und keine Disziplin im Leib, grüßen nicht mal ihre Offiziere.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Sicher, Herr Gouverneur, es sind rauhe Gesellen. Aber wenn ich ehrlich bin, habe ich da draußen in der Wildnis lieber einen von denen dabei als zehn unserer Gardisten.[NEWLINE][NEWLINE]Die Ranger kämpfen wie die Indianer, lesen ihre Spuren, und dass sie angegriffen haben, merkt man erst, wenn alles längst vorbei ist.[NEWLINE][NEWLINE]Unsere Soldaten taugen nur gegen andere europäische Truppen. In der Wildnis sind sie so gut wie hilflos.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Na, wenn Ihr meint, General. Solange sie unsere Frauen und den Rum in Ruhe lassen...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+         <German>"[COLOR_SELECTED_TEXT]Ich weiß nicht, General,[COLOR_REVERT]" meint der Gouverneur, "[COLOR_SELECTED_TEXT]wenn ich mir diese Kerle so ansehe. Furchteinflößend sind sie mit Sicherheit, aber ihre ranzigen Lederwämse kann ich bis hier riechen und ihre Ausrüstung ist sicher auch nicht vorschriftsmäßig. Messer, Tomahawks, langläufige Gewehre...und keine Disziplin im Leib, grüßen nicht mal ihre Offiziere.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Sicher, Herr Gouverneur, es sind rauhe Gesellen. Aber wenn ich ehrlich bin, habe ich da draußen in der Wildnis lieber einen von denen dabei als zehn unserer Gardisten.[NEWLINE][NEWLINE]Die Ranger kämpfen wie die Indianer, lesen ihre Spuren, und dass sie angegriffen haben, merkt man erst, wenn alles längst vorbei ist.[NEWLINE][NEWLINE]Unsere Soldaten taugen nur gegen andere europäische Truppen. In der Wildnis sind sie so gut wie hilflos.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Na, wenn Ihr meint, General. Solange sie unsere Frauen und den Rum in Ruhe lassen...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Я не знаю, генерал...[COLOR_REVERT]" — говорит губернатор. "[COLOR_SELECTED_TEXT]Когда я смотрю на этих мужчин, они, безусловно, пугают. И я чувствовал запах их прогорклых кожаных курток на всем пути сюда, а их экипировка определенно не соответствует правилам. Ножи, томагавки, длинноствольные винтовки... и никакой дисциплины, даже не отдают честь своим офицерам.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Вы правы, губернатор. Они грубые ребята. Но, если быть честным, я бы предпочел, чтобы один из них был со мной в глуши, чем десять наших гвардейцев.[NEWLINE][NEWLINE]Рейнджеры дерутся как индейцы, читают их следы и вы узнаете, что они напали только тогда, когда все кончено.[NEWLINE][NEWLINE]Наши солдаты обучены сражаться против других европейских войск. В глуши они почти беспомощны.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ну, если вы так считаете, генерал... Хорошо, пока они не трогают наших женщин и ром...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
     <TEXT>
@@ -2180,7 +2213,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_DISTILLERS_HEAD</Tag>
         <English>Cheers!</English>
-        <French>« Ba moin en ti bo!»</French>
+        <French>Ba moin en ti bo!</French>
         <German>Prosit!</German>
         <Russian>Ваше здоровье!</Russian>
     </TEXT>
@@ -2400,7 +2433,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_CRIMINALS_HEAD</Tag>
         <English>Land of opportunity</English>
-        <French>Six bagnards</French>
+        <French>Terre des possibles</French>
         <German>Land der unbegrenzten [NEWLINE]Möglichkeiten</German>
         <Russian>Земля возможностей</Russian>
     </TEXT>
@@ -2413,14 +2446,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_INDENTURED_SERVANTS</Tag>
         <English>Six Indentured Servants</English>
-        <French>Six engagés</French>
+        <French>Six domestiques sous contrats</French>
         <German>Sechs Schuldknechte</German>
         <Russian>Шесть наёмных работников</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_INDENTURED_SERVANTS_HEAD</Tag>
         <English>The wages of the servants</English>
-        <French>Six engagés</French>
+        <French>Les gages des serviteurs</French>
         <German>Der Lohn der Knechte</German>
         <Russian>Заработная плата слуг</Russian>
     </TEXT>
@@ -2440,7 +2473,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_COCOA_PLANTER_HEAD</Tag>
         <English>Ladies' choice</English>
-        <French>Trois planteurs de cacao</French>
+        <French>Le choix des dames</French>
         <German>Damenwahl</German>
         <Russian>Дамский угодник</Russian>
     </TEXT>
@@ -2541,7 +2574,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MANY_PRINTING_PRESSES_HEAD</Tag>
         <English>No false modesty</English>
-        <French>De nombreuses imprimeries</French>
+        <French>Pas de fausse modestie</French>
         <German>Keine falsche Bescheidenheit</German>
         <Russian>Без ложной скромности</Russian>
     </TEXT>
@@ -2582,7 +2615,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BREWERY_HEAD</Tag>
         <English>Hops and malt, God be praised</English>
-        <French>Une brasserie dans le Nouveau Monde</French>
+        <French>Dieu soit loué pour le houblon et le malt</French>
         <German>Hopfen und Malz, Gott erhalt's</German>
         <Russian>Хмель и солод, хвала Господу</Russian>
     </TEXT>
@@ -2602,7 +2635,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIFTH_GREAT_WAREHOUSE_EXPANSION_HEAD</Tag>
         <English>It's getting tight</English>
-        <French>Votre cinquième expansion d'entrepôt</French>
+        <French>Entassés</French>
         <German>Es wird eng</German>
         <Russian>Плотная застройка</Russian>
     </TEXT>
@@ -2622,7 +2655,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_TOWN_MARKETS_HEAD</Tag>
         <English>Trade is thriving</English>
-        <French>Trois marchés couverts</French>
+        <French>Le commerce prospère</French>
         <German>Der Handel blüht</German>
         <Russian>Торговля процветает</Russian>
     </TEXT>
@@ -2662,7 +2695,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_THEATRE_HEAD</Tag>
         <English>High society</English>
-        <French>Votre premier théâtre</French>
+        <French>Haut-monde</French>
         <German>Die feine Gesellschaft</German>
         <Russian>Высшее общество</Russian>
     </TEXT>
@@ -2675,14 +2708,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_COLONIAL_CONGRESS</Tag>
         <English>Your Congress Hall</English>
-        <French>Un congrès pour toutes nos colonies</French>
+        <French>Un palais de Congrès</French>
         <German>Eure Kongresshalle</German>
         <Russian>Ваш первый континентальный конгресс</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_COLONIAL_CONGRESS_HEAD</Tag>
         <English>A conspiratorial place</English>
-        <French>Un congrès pour toutes nos colonies</French>
+        <French>Conjurations en place</French>
         <German>Ein konspirativer Ort</German>
         <Russian>Место для заговорщиков</Russian>
     </TEXT>
@@ -2702,7 +2735,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_TANNERY_HEAD</Tag>
         <English>Money doesn't stink</English>
-        <French>Votre troisième tannerie</French>
+        <French>L'argent n'a pas d'odeur</French>
         <German>Geld stinkt nicht</German>
         <Russian>Деньги не пахнут</Russian>
     </TEXT>
@@ -2722,7 +2755,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SECOND_LARGE_DYERY_HEAD</Tag>
         <English>It's getting colourful here</English>
-        <French>Deuxième teinturerie industrielle</French>
+        <French>Les couleurs ne sont pas des douleurs</French>
         <German>Hier wird's langsam bunt</German>
         <Russian>Раскрасить серые будни</Russian>
     </TEXT>
@@ -2742,7 +2775,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SPICE_TRADERS_HALL_HEAD</Tag>
         <English>Label fraud - America or India?</English>
-        <French>Votre première halle aux Épices</French>
+        <French>Fraude à l'étiquette - Amérique ou Inde? </French>
         <German>Etikettenschwindel - Amerika oder Indien?</German>
         <Russian>Мошенничество с этикетками — Америка или Индия?</Russian>
     </TEXT>
@@ -2755,14 +2788,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_CORN_CHAMBER</Tag>
         <English>Your fifth corn chamber</English>
-        <French>Cinquième grenier à maïs</French>
+        <French>Cinquième grenier à grain</French>
         <German>Eure fünfte Getreidekammer</German>
         <Russian>Ваш пятый амбар</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_CORN_CHAMBER_HEAD</Tag>
         <English>Space is in the smallest cabin</English>
-        <French>Cinquième grenier à maïs</French>
+        <French>De la place dans le plus petit rangement</French>
         <German>Raum ist in der kleinsten Hütte</German>
         <Russian>Портной для склада</Russian>
     </TEXT>
@@ -2775,7 +2808,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_WINERY</Tag>
         <English>Your first winery</English>
-        <French>Un chai à vin dans le Nouveau Monde !</French>
+        <French>Votre premier chai!</French>
         <German>Eure erste Winzerei</German>
         <Russian>Ваш первый цех виноделов</Russian>
     </TEXT>
@@ -2795,14 +2828,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SECOND_SLAUGHTERHOUSE</Tag>
         <English>Your second slaughterhouse</English>
-        <French>Votre deuxième abattoirs</French>
+        <French>Votre deuxième abattoir</French>
         <German>Euer zweites Schlachthaus</German>
         <Russian>Ваша вторая скотобойня</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SECOND_SLAUGHTERHOUSE_HEAD</Tag>
         <English>The right tools</English>
-        <French>Votre deuxième abattoirs</French>
+        <French>Les bons outils</French>
         <German>Das richtige Werkzeug</German>
         <Russian>Правильные инструменты</Russian>
     </TEXT>
@@ -2822,7 +2855,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_FURNITURY_HEAD</Tag>
         <English>Lumber or precious wood?</English>
-        <French>Votre première ébenisterie</French>
+        <French>Sapin ou acajou?</French>
         <German>Bauholz oder Edelholz?</German>
         <Russian>Трудный выбор</Russian>
     </TEXT>
@@ -2979,14 +3012,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_RUSSIAN_MISSIONARY</Tag>
         <English>The first missionary</English>
-        <French>Le premier missionnaire</French>
+        <French>Le salut religieux pour les indigènes</French>
         <German>Der erste Missionar</German>
         <Russian>Ваш первый миссионер</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_RUSSIAN_MISSIONARY_HEAD</Tag>
         <English>Religious salvation for the natives</English>
-        <French>Religious salvation for the natives</French>
+        <French>Le salut religieux pour les indigènes</French>
         <German>Religiöse Rettung für die Wilden</German>
         <Russian>Религия спасет туземцев</Russian>
     </TEXT>
@@ -3007,7 +3040,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY_PROT_HEAD</Tag>
         <English>Religious salvation for the natives</English>
-        <French>Religious salvation for the natives</French>
+        <French>Le salut religieux pour les indigènes</French>
         <German>Religiöse Rettung für die Wilden</German>
         <Russian>Религия спасет туземцев</Russian>
     </TEXT>

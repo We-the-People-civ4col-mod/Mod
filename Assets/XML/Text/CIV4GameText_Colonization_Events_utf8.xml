@@ -1061,7 +1061,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HERDER_IN_NEED_1</Tag>
         <English>A pig breeder has sent his young son to the city to beg for help. Wolves are attacking the pigpen and the farmer is desperately trying to protect the animals. He pleads for our help.</English>
-        <French>Un eleveur de cochon nous a envoyé sonc fils cadet pour obtenir de l'aide. Des loups attaque sa porcherie, et le fermier essaie désespéremny de protéger ses bêtes. Il prie pour avoir notre aide.</French>
+        <French>Un éleveur de cochon nous a envoyé sont fils cadet pour obtenir de l'aide. Des loups attaque sa porcherie, et le fermier essaie désespéremny de protéger ses bêtes. Il prie pour avoir notre aide.</French>
         <German>Ein Schweinezüchter hat seinen kleinen Sohn in die Stadt geschickt, um Hilfe zu holen. Wölfe greifen den Stall an und der Züchter versucht verzweifelt, seine Tiere zu beschützen. Er bitte uns um Hilfe.</German>
         <Russian>Свиновод отправил в город своего маленького сына просить о помощи. Волки нападают на свинарник, и фермер отчаянно пытается защитить животных. Он умоляет нас помочь ему.</Russian>
     </TEXT>
@@ -1466,7 +1466,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TORNADO_1</Tag>
         <English>Milord, a whirlwind as high as the sky is raging through our country. Anyone who doesn't flee is snatched up, dancing through the air like autumn leaves. One community is now without %s8_improvement because the storm destroyed all the buildings. Can we help the people?</English>
-        <French>Les cieux se sont ouverts et le poing du châtiment s'est abattu. D'effroyables volutes d'air ont anéanti notre %s8_improvement.</French>
+        <French>Sire, une tornade aussi haute que les cieux s'est abattue sur notre pays. Tous ceux qui n'ont pas fui ont été arraché au sol en dansant comme des fétus de  pailles dans l'air. Une communauté a perdu son %s8_improvement car la tornade a tout détruit. Pouvons-nous aider ces gens?</French>
         <German>Milord, eine Windhose, so hoch wie der Himmel, tobt durch unser Land. Wer nicht schnell genug flüchtet, den packt sie und lässt ihn wie Herbstlaub durch die Luft tanzen. Eine Gemeinde ist nun ohne %s8_improvement, weil der Sturm alle Bauten zerriss. Können wir den Menschen helfen?</German>
         <Italian>I cieli si sono aperti e la giustizia divina ha colpito. Dei terribili tornado hanno spazzato via %s8_improvement.</Italian>
         <Spanish>Los cielos se han abierto y un puño castigador ha caído sobre nosotros. Las terribles ráfagas de viento huracanado han derribado [NUM8:nuestro:nuestra:nuestros:nuestras] %s8_improvement.</Spanish>
@@ -1496,7 +1496,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_CATHEDRAL</Tag>
         <English>Milord, a ranger is waiting outside the door. Terrible things he has seen in the wilderness, he says, and terrible things he has done. From afar he saw the tower of our cathedral, and took this as a sign to change his life.</English>
-        <French>Seigneur, un garde-forestier vous attend. Il dit qu'il a fait des choses terribles. Des scalpes sont accrochés à sa ceinture et sa veste est pleine de sang. Il a vu la tour de notre cathédrale et veut changer de vie. Il demande ce qu'il peut faire pour la communauté.</French>
+        <French>Sire, un garde-forestier vous attend. Il dit qu'il a fait des choses terribles. Des scalps sont accrochés à sa ceinture et sa veste est pleine de sang. Il a vu la tour de notre cathédrale et veut changer de vie. Il demande ce qu'il peut faire pour la communauté.</French>
         <German>Milord, ein Waldläufer wartet vor der Tür. Furchtbares habe er in der Wildnis gesehen, meint er, und Furchtbares habe er getan. Aus der Ferne sah er den Turm unserer Kathedrale, und hielt dies für ein Zeichen, sein Leben zu ändern.</German>
         <Russian>Милорд, за дверью вас ждет рейнджер. Он говорит, что в своей жизни он совершил много всего ужасного, но не думал об этом до того момента, пока издалека не увидел башню нашего собора. Он воспринял это как знак изменить свою жизнь.</Russian>
     </TEXT>
@@ -1537,7 +1537,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_JADE_1</Tag>
         <English>Milord, in the mountains near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], miners have come across strange piles of rubble. It appears to be jade. The rich green of the forest and the soulful blue of the sea shimmer in the soft stones.[NEWLINE]The workers showed one to the Natives. Their faces lit up with happiness, and they offered them gold in exchange.</English>
-        <French>Seigneur, dans les montagnes près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], les mineurs ont trouvé d'étranges tas de gravats. Il semble que ce soit du jade. Le vert riche de la forêt et le bleu tendre de la mer scintillent dans les pierres douces. Les ouvriers en ont montré une aux indigènes. Leurs visages se sont illuminés de bonheur, et ils leur ont offert de l'or en échange.</French>
+        <French>Sire, dans les montagnes près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], les mineurs ont trouvé d'étranges tas de gravats. Il semble que ce soit du jade. Le vert riche de la forêt et le bleu tendre de la mer scintillent dans les pierres tendres. Les ouvriers en ont montré une aux indigènes. Leurs visages se sont illuminés de bonheur, et ils leur ont offert de l'or en échange.</French>
         <German>Milord, in den Bergen nahe [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sind Minenarbeiter auf seltsame Geröllhaufen gestoßen. Es scheint Jade zu sein. Das satte Grün des Waldes und das seelenvolle Blau des Meeres schimmern in den weichen Steinen.[NEWLINE]Einen haben die Arbeiter den Eingeborenen gezeigt. Ihre Gesichter leuchteten vor Glück, und sie boten ihnen Gold zum Tausch an.</German>
         <Italian>Signore, nelle montagne vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], i minatori si sono imbattuti in strani cumuli di macerie. Sembra essere giada. Il verde ricco della foresta e l'azzurro intenso del mare brillano nelle pietre morbide. I loro volti si illuminarono di felicità e offrirono loro dell'oro in cambio.</Italian>
         <Spanish>Excelencia, en las montañas cercanas a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], los mineros han encontrado extraños montones de escombros. Parece ser jade. El verde intenso del bosque y el azul conmovedor del mar brillan en las piedras blandas.[NEWLINE]Los trabajadores mostraron una a los nativos. Sus rostros se iluminaron de felicidad y les ofrecieron oro a cambio.</Spanish>
@@ -1564,7 +1564,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WHALEOFATHING_1</Tag>
         <English>You peer up at the tavern's vaulted ceiling, dimly lit by sconces holding candles. The air nips at your heels. Tobacco smoke and the rank breath of drunken sailors fill the room. Many surround a gaunt captain, eyes dilated, voice hoarse, as he entertains the crowd. You hear snatches of words amid much laughter: [COLOR_SELECTED_TEXT]"Eyes as glowing as forge fire ... thirty tentacles."[COLOR_REVERT] [COLOR_SELECTED_TEXT]"Snapping hellmouths ... my ship almost smashed to pieces ..."[COLOR_REVERT]. Your adjutant whispers to you calmly: [COLOR_SELECTED_TEXT]"A moment ago it was just one sea monster with a mere twenty tentacles. Milord, what do you intend to do with this braggart?"[COLOR_REVERT]</English>
-        <French>Vous regardez dans la voûte de la taverne, faiblement éclairée par les transfonctions. L'air est coupant. La fumée du tabac et les exhalaisons des marins ivres emplissent la pièce. Beaucoup entourent un capitaine décharné qui divertit la foule avec des yeux dilatés et une voix rauque. Vous entendez quelques bribes de mots stridents et des rires : [COLOR_SELECTED_TEXT]"Des yeux aussi brillants que du feu de forge... trente tentacules." [COLOR_REVERT] [COLOR_SELECTED_TEXT]"Des bouches d'enfer qui claquent... J'ai failli mettre mon vaisseau en pièces..." [COLOR_REVERT], ça sonne fini. Votre adjudant vous chuchote, avec complaisance : [COLOR_SELECTED_TEXT]"Il y a un instant, c'était un seul monstre marin avec seulement vingt tentacules. Milord, que comptez-vous faire de ce fanfaron ?"[COLOR_REVERT]</French>
+        <French>Vous regardez dans la voûte de la taverne, faiblement éclairée par les chandeliers. L'air est lourd. La fumée du tabac et le souflle chargé des marins ivres emplissent la pièce. Beaucoup entourent un capitaine décharné qui divertit la foule avec des yeux dilatés et une voix rauque. Vous entendez quelques bribes de mots stridents et des rires : [COLOR_SELECTED_TEXT]"Des yeux aussi brillants que du feu de forge... trente tentacules." [COLOR_REVERT] [COLOR_SELECTED_TEXT]"Des bouches d'enfer qui claquent... J'ai failli mettre mon vaisseau en pièces..." [COLOR_REVERT], ça sonne fini. Votre adjudant vous chuchote, avec complaisance : [COLOR_SELECTED_TEXT]"Il y a un instant, c'était un seul monstre marin avec seulement vingt tentacules. Sire, que comptez-vous faire de ce fanfaron ?"[COLOR_REVERT]</French>
         <German>Ihr späht in das von Tranfunzeln dürftig erhellte Gewölbe der Taverne. Die Luft ist zum Schneiden. Tabakqualm und die Ausdünstungen saufender Seefahrer füllen den Raum. Viele umringen einen hageren Kapitän, der mit geweiteten Augen und heiserer Stimme die Meute unterhält. Ihr vernehmt neben viel Gelächter einige schrille Wortfetzen: [COLOR_SELECTED_TEXT]"Augen, glühend groß wie Schmiedefeuer ... dreißig Tentakel."[COLOR_REVERT] [COLOR_SELECTED_TEXT]"Schnappende Höllenmäuler ... mein Schiff fast zertrümmert ..."[COLOR_REVERT], tönt es herüber. Euer Adjutant flüstert Euch beflissen zu: [COLOR_SELECTED_TEXT]"Nun, vorhin war es noch ein einziges Seeungeheuer mit schlappen zwanzig Tentakeln. Milord, was gedenkt Ihr mit diesem Aufschneider zu tun?"[COLOR_REVERT]</German>
         <Italian>Scruti il soffitto a volta della taverna, fiocamente illuminato dalle trasfusioni. L'aria è tagliente. Il fumo del tabacco e le esalazioni dei marinai ubriachi riempiono la stanza. Molti circondano un capitano magro che intrattiene la folla con occhi dilatati e una voce rauca. Si sentono alcuni frammenti di parole stridenti insieme a molte risate: [COLOR_SELECTED_TEXT]"Occhi incandescenti come fuoco di fucina ... trenta tentacoli."[COLOR_REVERT] [COLOR_SELECTED_TEXT]"Bocche infernali che scattano ... Quasi distrutto la mia nave a pezzi ..."[COLOR_REVERT], suona finita. Il tuo aiutante ti sussurra, compiaciuto: [COLOR_SELECTED_TEXT]"Beh, un attimo fa era un singolo mostro marino con appena venti tentacoli. Milord, cosa intende fare con questo millantatore?"[COLOR_REVERT]</Italian>
         <Spanish>Te asomas al techo abovedado de la taberna, tenuemente iluminado por las transfunciones. El aire es cortante. El humo del tabaco y las exhalaciones de los marineros borrachos llenan la habitación. Muchos rodean a un capitán demacrado que entretiene a la multitud con los ojos dilatados y la voz ronca. Se oyen unas cuantas palabras estridentes junto con muchas risas: [COLOR_SELECTED_TEXT]"Ojos tan brillantes como el fuego de una fragua... treinta tentáculos."[COLOR_REVERT] [COLOR_SELECTED_TEXT]"Bocas del infierno chasqueantes... Casi destroza mi nave..."[COLOR_REVERT], suena por encima. Su ayudante le susurra, complaciente: [COLOR_SELECTED_TEXT]"Bueno, hace un momento era un solo monstruo marino con apenas veinte tentáculos. Milord, ¿qué piensa hacer con este fanfarrón?"[COLOR_REVERT]</Spanish>
@@ -1677,7 +1677,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TERRAX_1</Tag>
         <English>Milord, astonishing news has reached us from the Old World. At the coronation feast of the Habsburg Emperor, the rulers of Europe were all gathered together. As the wine flowed, they bragged and teased each other. One word led to another and finally a bet was made: the ruler first to have the most new towns in the interior of the New World will win. Our own King promises us rich rewards if we help Him win the bet!</English>
-        <French>Seigneur, du Vieux Monde nous parvient une nouvelle étonnante : lors de la fête du couronnement de l'empereur Habsburg, les souverains d'Europe ont festoyé ensemble au banquet. Le vin coule à flot, ils se vantent et se taquinent. Un mot a mené à un autre et finalement un pari a été fait : Pour la Majesté qui réussit la première à fonder de nombreuses nouvelles villes à l'intérieur du Nouveau Monde, les autres Altesses doivent embrasser son cul nu. Sa Majesté nous a promis de riches récompenses si nous l'aidons à gagner le pari !</French>
+        <French>Sire, du Vieux Monde nous parvient une nouvelle étonnante : lors de la fête du couronnement de l'empereur Habsburg, les souverains d'Europe ont festoyé ensemble au banquet. Le vin coule à flot, ils se vantent et se taquinent. Un mot a mené à un autre et finalement un pari a été fait : Pour la Majesté qui réussit la première à fonder de nombreuses nouvelles villes à l'intérieur du Nouveau Monde, les autres Altesses doivent embrasser son cul nu. Sa Majesté nous a promis de riches récompenses si nous l'aidons à gagner le pari !</French>
         <German>Milord, aus der Alten Welt dringt eine erstaunliche Kunde: Beim Krönungsfest des teutschen Kaisers zechten die Herrscher Europas gemeinsam beim Bankett. Der Rebensaft floss, man prahlte und neckte einander. Ein Wort gab das andere und schließlich wurde eine Wette geschlossen: Der Majestät, der es als Erster gelingt, viele neue Städte im Landesinneren der Neuen Welt zu gründen, der müssen die anderen Hoheiten den blanken Arsch küssen. Seine Majestät hat uns reichen Lohn versprochen, wenn wir ihm zum Wettsieg verhelfen!</German>
         <Russian>Милорд, из Старого Света до нас дошли удивительные новости. На пиру в честь коронации Императора Габсбургов собрались все правители Европы. В винном угаре монархи хвастались и поддразнивали друг друга. Одно слово тянулось за другим и в конце концов было заключено пари: победит тот правитель, у которого первым окажется больше всего новых городов во внутренних районах Нового Света. Наш Король сулит нам богатые награды, если мы поможем Ему выиграть пари!</Russian>
     </TEXT>
@@ -1691,7 +1691,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_TERRAX</Tag>
         <English>Bad news, Milord! Another governor was faster than you and was the first to found new settlements in the heartland. His Majesty has lost the bet.</English>
-        <French>Mauvaise nouvelle, Milord. Votre Roi a perdu son pari. Les colons d'une autre nations ont fondé plusieurs colonies à l'intérieur des terres.</French>
+        <French>Mauvaise nouvelle, Sire. Votre Roi a perdu son pari. Les colons d'une autre nations ont fondé plusieurs colonies à l'intérieur des terres.</French>
         <German>Schlechte Kunde, Milord! Ein anderer Statthalter war schneller als Ihr und hat als Erster im Landesinneren neue Siedlungen gegründet. Seine Majestät hat die Wette verloren.</German>
         <Russian>Плохие новости, милорд! Другой губернатор был быстрее нас и первым основал новые поселения в вдали от побережья. Его Величество проиграл пари.</Russian>
     </TEXT>
@@ -1705,7 +1705,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TERRAX_DONE</Tag>
         <English>Great news, Milord! His Majesty, our beloved King, has won his wager. Your settlers now have several communities in the heartland.</English>
-        <French>Excellente nouvelle, Milord ! Nous avons fait gagner à notre Roi son pari. Vous avez fondé plusieurs colonies à l'intérieur des terres.</French>
+        <French>Excellente nouvelle, Sire ! Nous avons fait gagner à notre Roi son pari. Vous avez fondé plusieurs colonies à l'intérieur des terres.</French>
         <German>Großartige Kunde, Milord! Ihr habt so viele neue Siedlungen im Landesinneren gegründet, dass unser König seine Wette gewinnen konnte. Seine Majestät ist voll des Lobes über Euch!</German>
         <Russian>Отличные новости, милорд! Его Величество, наш любимый Король, выиграл пари. У наших поселенцев теперь есть несколько поселений вдали от моря.</Russian>
     </TEXT>
@@ -1918,7 +1918,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_GREAT_ARSENAL_1</Tag>
         <English>Milord, at the opening ceremony for your arsenal, an oddly dressed foreigner pulls you aside. He speaks your language, but with a terrible accent. The man claims to be acting on behalf of a Russian prince who would like to do business with the strongest economic power in the New World.</English>
-        <French>Seigneur, un émissaire étranger de la cour de Russie est arrivée à notre capitale.</French>
+        <French>Sire, lors de la cérémonie d'ouverture de l'arsenal, un étranger accoutré de manière étrange vous tire à l'écart. Il parle votre langue avec un accent à couper au couteau. L'homme prétend agir au nom d'un prince Russe voulant faire affaire avec la plus grande puissance économique du Nouveau Monde.</French>
         <German>Milord, beim Richtfest Eures Arsenals zieht Euch ein fremdartig gekleideter Ausländer beiseite. Er spricht Eure Muttersprache, doch mit einem fürchterlichen Akzent. Der Mann behauptet, im Auftrag eines russischen Fürsten zu handeln, der gerne mit der stärksten Wirtschaftsmacht der Neuen Welt ins Geschäft kommen möchte.</German>
         <Russian>Милорд, на церемонии открытия вашего арсенала вас отводит в сторону странно одетый иностранец. Он говорит на вашем языке, но с жутким акцентом. Этот человек утверждает, что действует от имени русского князя, который хотел бы вести дела с сильнейшей экономической державой Нового Света.</Russian>
     </TEXT>
@@ -1953,14 +1953,14 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RUM_BLOSSOM_1</Tag>
         <English>A warehouse in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] has been raided. Our [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] neighbours in [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] are suspected of stealing a cartload of rum.</English>
-        <French>Un entrepôt à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a subi un raid. Nos voisins [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] sont suspectés d'avoir piller notre cargaison de rhum.</French>
+        <French>Un entrepôt à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a subi un raid. Nos voisins [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] sont suspectés d'avoir pillé notre cargaison de rhum.</French>
         <German>Ein Lagerhaus in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] wurde überfallen und ausgeraubt. Unsere [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] Nachbarn in [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] werden verdächtigt, den Überfall begangen und die Ladung Rum geraubt zu haben.</German>
         <Russian>Склад в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] подвергся налету. Наши соседи [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] из [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] подозреваются в краже тележки рома.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RUINS_1</Tag>
         <English>Milord, the ruins near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] were never explored properly. Your councillors recommend sending an expedition.</English>
-        <French>Seigneur, les ruines près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] n'avait jamais été exploré proprement. Vos conseillers vous recommendent d'envoyer une expédition.</French>
+        <French>Sire, les ruines près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] n'avaient jamais été explorées proprement. Vos conseillers vous recommendent d'y envoyer une expédition.</French>
         <German>Milord, die Ruinen nahe [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sind bis heute nicht gründlich untersucht worden. Eure Ratgeber empfehlen, eine Expedition zu entsenden.</German>
         <Russian>Милорд, руины возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] так и не были исследованы должным образом. Советники рекомендуют отправить туда экспедицию.</Russian>
     </TEXT>
@@ -1988,7 +1988,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RUINS_DONE</Tag>
         <English>Milord, our expedition has arrived at the ruins. What are we looking for?</English>
-        <French>Seigneur, notre expédition est arrivé aux ruines. Sur quoi nos hommes doivent-ils se concentrer ?</French>
+        <French>Seigneur, notre expédition est arrivée aux ruines. Sur quoi nos hommes doivent-ils se concentrer ?</French>
         <German>Milord, unsere Expedition hat die Ruinen erreicht. Wonach sollen unsere Männer suchen?</German>
         <Russian>Милорд, наша экспедиция прибыла к руинам. Что будем искать?</Russian>
     </TEXT>
@@ -2009,7 +2009,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BOOK_MORMON</Tag>
         <English>A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] citizen near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] has proclaimed that an angel has revealed to him the sacred Book of Mormon.</English>
-        <French>Un citoyen [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] citoyen près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a proclamé qu'un ange lui a révélé le Livre sacré de Mormon.</French>
+        <French>Un citoyen [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a proclamé qu'un ange lui a révélé le Livre sacré de Mormon.</French>
         <German>Im [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Reich behauptet ein Mann, ein Engel hätte ihm nahe der Stadt [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] das Buch Mormon überreicht.</German>
         <Russian>Житель [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] заявил, что ангел открыл ему священную Книгу Мормона.</Russian>
     </TEXT>
@@ -2023,7 +2023,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_THE_ROYALS</Tag>
         <English>A royalist riot in the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] colonies is taking place in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
-        <French>Une émeute dans les colonies [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] est survenue à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
+        <French>Une émeute royaliste dans les colonies [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] est survenue à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>Das [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Kolonialreich wird von Protesten treuer Royalisten erschüttert, sie gehen in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] auf die Straße!</German>
         <Russian>В [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] колонии [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] бунт роялистов.</Russian>
     </TEXT>
@@ -2100,7 +2100,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_THE_ROYALS_CONSEQUENCES_3</Tag>
         <English>Milord. The King's loyalists have tricked us. They've gotten into all the granaries in all the cities and destroyed everything edible. In many places good people helped because they were told you gave the order! The royalists printed fake notices that said, "Because of outrageously high taxes it is the first duty of citizens to oppose the king! Destroy all food in all cities in protest!"</English>
-        <French>Milord ! Les royalistes nous ont durement touchés. Ils ont détruit de grandes réserves de nourritures dans tous nos greniers. Apparemment, ils ont dupé les populations locales et les troupes en proclamant qu'il s'agissait de votre ordre : la « fête de la nourriture » contre le Roi.</French>
+        <French>Sire ! Les royalistes nous ont durement touchés. Ils ont détruit de grandes réserves de nourritures dans tous nos greniers. Apparemment, ils ont dupé les populations locales et les troupes en proclamant qu'il s'agissait de votre ordre : la « fête de la nourriture » contre le Roi.</French>
         <German>Milord! Die Königstreuen haben uns übel mitgespielt. Sie haben in allen Städten die Kornspeicher besetzt und begonnen, das Getreide und alles andere Essbare zu vernichten. Vielerorts beteiligten sich brave Leute an diesem Frevel, weil es hieß, es wäre Eure Order! Auf getürkten Anschlägen stand zu lesen: "Aufgrund der unverschämt hohen Steuern ist es erste Bürgerpflicht, sich dem König zu widersetzen! Vernichtet aus Protest alle Nahrungsmittel in allen Städten!"</German>
         <Russian>Милорд. Сторонники короля обманули нас. Они забрались во все зернохранилища во всех городах и уничтожили все съестное. Во многих местах хорошие люди помогали, потому что им сказали, что это вы отдали такой приказ! Роялисты напечатали поддельные объявления, в которых говорилось: "Из-за возмутительно высоких налогов первая обязанность граждан — выступить против Короля! В знак протеста уничтожить всю еду во всех городах!"</Russian>
     </TEXT>

@@ -4344,6 +4344,7 @@
     <TEXT>
         <Tag>AI_DIPLO_JOIN_WAR_KING_VS_COLONY</Tag>
         <English>Those disloyal, ungrateful [COLOR_HIGHLIGHT_TEXT]%s1:3[COLOR_REVERT] colonies threaten the God-given order of this world. By declaring their independence they have turned against Us, their rightful Monarch. They insult, beat and rob decent subjects still loyal to the Crown. They attack and murder Royal soldiers sent to protect them. [CT_NAME], will you stand alongside us to suppress this insubordination? Help Us bring peace and stability back to the colonies.</English>
+        <French>Ces colonies [COLOR_HIGHLIGHT_TEXT]%s1:3[COLOR_REVERT] déloyales et ingrates menacent l'ordre tenu de droit divin. En déclarant leur indépendance, ils se sont retournés contre Nous, leur Souverain légitime. Ils injurient, frappent et volent nos sujets loyaux qui Nous sont restés fidèles. Ils attaquent et tuent les soldats royaux envoyés pour les protéger. [CT_NAME], vous battrez vous à nos côtés pour mater cette rébellion ? Aidez-nous à rétablir l'ordre et le calme dans les colonies.</French>
         <German>Die illoyalen [COLOR_HIGHLIGHT_TEXT]%s1:3[COLOR_REVERT] Kolonien bedrohen die durch Gott gegebene Ordnung dieser Welt. Indem sie ihre Unabhängigkeit erklärt haben, haben sie sich gegen Uns, ihren rechtmäßigen Monarchen, gewendet. Nun bringen sie ihren Nachbarn, die immer noch loyal zur Krone stehen, Unterdrückung und Leid. Sie wagen es sogar königliche Soldaten zu töten, die zu deren Schutz geschickt wurden. [CT_NAME], werdet ihr uns beistehen um diesen Ungehorsam zu beenden und wieder Frieden und Stabilität in die Kolonien zu bringen?</German>
         <Russian>[COLOR_HIGHLIGHT_TEXT]%s1:3[COLOR_REVERT] колонии угрожают данному Богом порядку в этом мире. Провозгласив свою независимость, они восстали против Нас, своего праведного монарха. Теперь они приносят боль и страдания своим собратьям, которые по-прежнему верны короне и даже осмеливаются убивать королевских солдат, посланных для защиты лояльных Короне колонистов. [CT_NAME], поддержите ли вы Нас, чтобы положить конец этому недопустимому неподчинению и вернуть мир и стабильность в колонии?</Russian>
     </TEXT>
@@ -4368,7 +4369,7 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_PENN_1</Tag>
         <English>Greetings, kind brother [CT_NAME]! A spring-like day today, isn't it? A balmy breeze, white cotton clouds in the sky - this seems to be the Garden of Eden. Peace on earth is a promise that could come true in Pennsylvania. Have I introduced myself? [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], I will make this New World a haven of freedom and brotherhood.</English>
-        <French>Je vous salue, cher ami. Je m'appelle [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Je représente les [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT] et j'espère que nous pourrons coexister pacifiquement.</French>
+        <French>Je vous salue, cher ami. Je m'appelle [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Je représente les [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT] et je tiens à établir dans ce nouveau monde un hâvre de liberté et de fraterbité.</French>
         <German>Greetings, kind brother [CT_NAME]! Ein frühlingshafter Tag heute, nicht wahr? Ein laues Lüftchen, weiße Wolkenwatte am Himmel - dies scheint der Garten Eden zu sein. Frieden auf Erden, dieses Versprechen könnte in Pennsylvania wahr werden. Hatte ich mich schon vorgestellt? [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], ich werde diese Neue Welt zu einem Hort der Freiheit und der Brüderlichkeit machen.</German>
         <Italian>Saluti, gentile signore, mi chiamo [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Rappresento la civiltà [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] e auspico tra di noi una convivenza pacifica.</Italian>
         <Spanish>Saludos, amable señor, me llamo [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Represento a los [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT] y espero que ambos pueblos coexistamos pacíficamente.</Spanish>
@@ -4377,7 +4378,7 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_BOLIVAR_1</Tag>
         <English>It's a pleasure to welcome you and your entourage, [CT_NAME]! My friend, you must have travelled far. You look tired. Let me help you and show you the way. This way, always towards the sunrise. That's where you came from. That's where you must return.</English>
-        <French>C'est un plaisir de faire votre connaissance, [CT_NAME] ! Je vous propose un traité de paix et je vous suggère de l'accepter.</French>
+        <French>C'est un plaisir de vous souhaiter la bienvenue, [CT_NAME] ! Très cher, vous avez l'air de venir de loin. Vous avez l'air épuisé. Laisez moi vous guider. Par là, toujours vers le levant. Là d'où vous venez, et où vous vous devez de retourner.</French>
         <German>Es ist mir eine Freude, Euch und Euer Gefolge begrüßen zu dürfen, [CT_NAME]! Mein Freund, Ihr seid sicher weitgereist, Ihr seht müde aus. Lasst mich Euch helfen und Euch den Weg zeigen. Da geht es lang, immer Richtung Sonnenaufgang. Da seid Ihr hergekommen, da müsst Ihr wieder hin.</German>
         <Italian>Sono contento di incontrarti, [CT_NAME]! Ti offro un trattato di pace... e ti suggerisco di accettarlo.</Italian>
         <Spanish>Hola, amigo! Soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Me alegro mucho de conoceros, [CT_NAME]. Os ofrezco un tratado de paz. Os sugiero que lo aceptéis.</Spanish>
@@ -4386,7 +4387,7 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_CHAMPLAIN_1</Tag>
         <English>Bonjour, monsieur. Quel plaisir! I welcome you. Be our guest for as long as we please. Have my Indian friends greeted you? Well, I don't think so. You still have your scalp under your wig. Better safe than sorry, eh? Forgive my jokes. And above all, laugh at them. Around here I can put in a good word for you.</English>
-        <French>Les [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT] vous souhaitent la bienvenue. J'espère que nous connaitrons une paix durable. Et vous ?</French>
+        <French>Bonjour, monsieur. Quel plaisir! Je vous souhaite la bienvenue. Soyez nos invités aussi longtemps qu'il nous plaira. Mes amis indiens se sont-ils présentés ? Je ne crois pas, vous avez encore tout votre cuir chevelu sous votre perruque. Restons prudents, hein ? Veuillez excusez mes piques, et rions en ensemble. Je peux glisser un mot favorable pour vous dans le coin.</French>
         <German>Bonjour, monsieur. Quel plaisir! Ich heiße Euch willkommen. Seid unser Gast, solange es uns beliebt. Haben Euch schon meine indianischen Freunde begrüßt? Nun, ich denke nicht, Ihr tragt ja noch Euren Skalp unter der Perücke. Doppelt hält besser, was? Verzeiht meine Witze. Und lacht vor allem über sie! Dann werde ich bei den Rothäuten auch ein gutes Wort für Euch einlegen.</German>
         <Italian>Il popolo della civiltà [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] ti dà il benvenuto. Non vedo l'ora che ci sia tra di noi una pace duratura. Cosa rispondi?</Italian>
         <Spanish>El pueblo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT] os da la bienvenida. Espero que haya una paz duradera entre ambos. ¿Y vos?</Spanish>
@@ -4395,7 +4396,7 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_DONCK_1</Tag>
         <English>Hartelijk welkom! Allow me to pay you my respects, Mijnheer. [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], lawyer, naturalist and elected representative of the [COLOR_HIGHLIGHT_TEXT]Dutch[COLOR_REVERT] expedition. I must confess the beauties of this New World intoxicate me.</English>
-        <French>C'est un honneur de rencontrer le grand [CT_NAME]! Que peuvent faire les [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT] pour vous, aujourd'hui ?</French>
+        <French>Hartelijk welkom! Veuillez accepter mes hommages, Mijnheer. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], homme de loi, naturaliste et représentant élu de l'expédition[COLOR_HIGHLIGHT_TEXT]néérlandaises[COLOR_REVERT]. Je dois admettre que les beautés de ce Nouveau Monde me subjuguent.</French>
         <German>Hartelijk welkom! Gestattet, dass ich Euch meine Aufwartung mache, Mijnheer. [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Rechtsanwalt, Naturforscher und gewählter Repräsentant der [COLOR_HIGHLIGHT_TEXT]niederländischen[COLOR_REVERT] Expedition. Ich muss gestehen, die Schönheiten dieser Neuen Welt berauschen mich.</German>
         <Italian>Sono onorato di incontrarti, grande [CT_NAME]! Come può aiutarti, oggi, la civiltà [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]?</Italian>
         <Spanish>Es un honor conocer al gran [CT_NAME]. ¿En qué pueden ayudaros hoy los [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]?</Spanish>
@@ -4404,7 +4405,7 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_FRONTENAC_1</Tag>
         <English>Bonjour, [CT_NAME]. I am sure there is room enough in this vast land for two important men. For me and for my king. Don't get in my way, lad. Now depart before I have you arrested. Tell your master that the New World is a protectorate of the French King; and I, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], am his loyal governor.</English>
-        <French>C'est un plaisir de vous rencontrer, [CT_NAME]. Allons faire quelques pas pour discuter de l'avenir de ce Nouveau monde.</French>
+        <French>Bonjour, [CT_NAME]. Je suis sûr qu'il y a la place sur ces vastes terres pour deux hgommes importants :  moi et mon roi. Ôtez vous de mon chemin, l'ami. Partez avant que je ne vous fasse arrêter. Dites à votre maître que le Nouveau Monde est sous la protection du Roi de France; et que moi, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], en suis son gouverneur fidèle. </French>
         <German>Bonjour, [CT_NAME]. Ich bin mir sicher, in diesem weiten Land ist Platz genug für zwei bedeutende Männer. Für mich und für meinen König. Kommt mir nicht in die Quere, Bursche. Und nun zieht von dannen, bevor ich Euch arretieren lasse. Und richtet Eurem Herrn aus, dass die Neue Welt ein Protektorat des französischen Königs ist und ich, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], sein treuer Gouverneur.</German>
         <Italian>È un piacere incontrarti, [CT_NAME]. Ora troviamoci un angolino e discutiamo del futuro di questo Nuovo Mondo.</Italian>
         <Spanish>Es un placer conoceros, [CT_NAME]. Y ahora vayamos a algún sitio a hablar del futuro del Nuevo Mundo.</Spanish>
@@ -4413,7 +4414,7 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_HERNAN_CORTES_1</Tag>
         <English>Buenas dias, stranger. Allow me: [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], conquistador, soldier of fortune and treasure hunter. I am on my way to the god-king of this pagan realm to be honoured and gifted by him. Don't get in my way!</English>
-        <French>Bonjour, mon ami. Je m'appelle [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], mais vous pouvez m'appeler Hernán. Evitez simplement de m'appeler trop tard pour dîner.</French>
+        <French>Buenas dias, étranger. Permettez moi : [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], soldat de fortune, conquérant, et chasseur de trésor. Je suis sur ma route vers le roi-dieu de ce royaume païen pour être honoré et couvert de cadeaux. Ne restez pas au milieu !</French>
         <German>Buenas dias, Fremder. Gestatten: [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Konquistador, Glücksritter und Schatzjäger. Ich bin auf dem Weg zum Gottkönig dieses heidnischen Reiches, um mich von ihm ehren und beschenken zu lassen. Kommt mir nicht in die Quere, Streuner!</German>
         <Italian>Salve, amico. Il mio nome è [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], ma puoi chiamarmi Hernán. Basta che non mi chiami troppo tardi per la cena.</Italian>
         <Spanish>Hola, amigo. Soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], pero podéis llamarme Hernán. Pero no me llaméis tarde para la cena.</Spanish>
@@ -4422,7 +4423,7 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_STUYVESANT_1</Tag>
         <English>Domme boer, what are you doing here? No, don't tell me your name. You can keep your sovereign's credentials in your pocket. Just listen to me for a moment and then leave. I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], I'm going to be the administrator of this New World and I'm already tired of you.</English>
-        <French>Salutations, je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Mais vous le saviez certainement déjà. Maintenant, parlons de quelque chose d'important...</French>
+        <French>Domme boer, que faites vous au milieu? ne me dites pas votre nom. Vous pouvez garder vos lettres de mission de votre souverain en poche. Écoutez moi et repartez. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Je suis en passe d'e^tre le gérant général de ce nouveau monde et vous me lassez déjà.</French>
         <German>Domme boer, was treibt Ihr denn hier? Nein, nennt mir nicht Euren Namen, und die Legitimationen Eures Landesherrn könnt Ihr auch in der Tasche lassen. Hört mir nur kurz zu und verschwindet dann. Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], werde der Verwalter dieser Neuen Welt sein und bin schon heute Euer überdrüssig.</German>
         <Italian>Saluti, sono [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Anche se di sicuro lo sapevi già. Ora andiamo a parlare di qualcosa di importante... me.</Italian>
         <Spanish>Saludos, yo soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Aunque seguro que vos ya lo sabíais. Y ahora hablemos de algo importante... de mí.</Spanish>
@@ -4431,7 +4432,7 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_WASHINGTON_1</Tag>
         <English>Welcome, Sir! I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. I received word from my homeland that you too are on your way to the New World. It is an honour to meet you, sir. I will immediately send a messenger to Europe with the good news that you have survived the perilous crossing safely; and that you will shortly return to your country.</English>
-        <French>Bonjour, je suis le général [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. C'est un honneur de vous rencontrer.</French>
+        <French>Welcome, Sir!  je suis le général [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. J'ai eu vent de mon pays d'origine que vous êtes aussi en route vers le nouveau monde. C'est un honneur que de vous rencontrer. Je vais envoyer sur-le-champ un messager en Europe avec la bonne nouvelle que vous avez survécu à cette si dangereuse traversée sain et sauf; et que vous allez bientôt y retourner.</French>
         <German>Welcome, Sir! I am General [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Ich hatte bereits Botschaft aus meiner Heimat erhalten, dass auch Ihr unterwegs seid in die Neue Welt. It is an honour to meet you, Sir. Ich werde sofort einen Boten gen Europa segeln lassen, mit der frohen Botschaft, dass Ihr die gefahrvolle Überfahrt wohlbehalten überstanden habt. Und dass Ihr in Kürze in Euer Land zurückkehren werdet.</German>
         <Italian>Salve, sono il generale [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. È un onore incontrarti.</Italian>
         <Spanish>Hola, soy el general [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Es un honor conoceros.</Spanish>
@@ -4440,7 +4441,7 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_AGUEYBANA_1</Tag>
         <English>Your canoe is the size of a whale. Coming from so far away, traveller, you must be hungry. Come and eat some of our cassava porridge. I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Cacique of the [COLOR_HIGHLIGHT_TEXT]Arawak[COLOR_REVERT]. Laugh with us, dance with us and sleep in our midst. If you are not an enemy to us, we will be a friend to you.</English>
-        <French>Bonjour, voyageur des mers. Je suis le cacique [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] de la tribu des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Partageons-nous ces terres et devenons amis !</French>
+        <French>Votre canoë est gros comme une baleine. Venu de si loin, voyageur, vous devez être affamé. Venez et mangez de notre purée de manioc. Je suis le cacique [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] de la tribu des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Riez, dansez avec nous et dormz avec nous. Si vous n'êtes pas notre ennemi, nous vous serons amis.</French>
         <German>Euer Kanu ist so groß wie ein Wal. Ihr müsst von weit her kommen, Reisender, und hungrig sein. Kommt und esst von unserem Maniokbrei. Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Kazike der [COLOR_HIGHLIGHT_TEXT]Arawak[COLOR_REVERT]. Lacht mit uns, tanzt mit uns und schlaft in unserer Mitte. Seid Ihr uns kein Feind, werden wir Euch ein Freund sein.</German>
         <Italian>Salve, viaggiatore che arriva dal grande mare. Sono il cacique [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] della tribù [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Dividiamoci questa terra e diventiamo amici.</Italian>
         <Spanish>Hola, viajero del Gran Mar. Soy el cacique [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] de la tribu [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:2][COLOR_REVERT]. Compartamos esta tierra y seamos amigos.</Spanish>
@@ -4449,7 +4450,7 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_CUNHAMBEBE_1</Tag>
         <English>Truly, you look strange, traveller. Hair grows from your face, your skin is white as salt and your gaze is fixed. I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Cacique of the [COLOR_HIGHLIGHT_TEXT]Tupi[COLOR_REVERT]. If you wish to trade with us, I welcome you. If an evil spirit dwells in your heart, our blowguns will expel it from your body and your flesh will cook over our fires.</English>
-        <French>Bonjour, visage pâle. Moi, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], chef des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT] vous souhaite la bienvenue. Allons festoyer en votre honneur.</French>
+        <French>Voyageur, vous avez l'air étrange, vraiment. Vous avez des poil sur le visage, votre peau est blanche comme du sel, et vous avez le regard fixé. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], cacique des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Si vous venez faire du commerce, vous êtes bienvenus. Si un esprit mauvais loge dans vos coeurs, nos sarbacanes l'expulseront de vos corps et votre chair sera rôtie sur nos feu.</French>
         <German>Wahrlich, fremdartig seht Ihr aus, Reisender. Haare wuchern aus Eurem Gesicht, Eure Haut ist weiß wie Salz und Euer Blick starr. Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Kazike der [COLOR_HIGHLIGHT_TEXT]Tupi[COLOR_REVERT]. Wollt Ihr mit uns Waren tauschen, heiße ich Euch willkommen. Doch wohnt ein böser Geist in Eurem Herzen, werden unsere Blasrohre ihn aus Eurem Körper austreiben und Euer Fleisch wird über unseren Feuern garen.</German>
         <Italian>Saluti, viso pallido. Io, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] del popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT], ti do il benvenuto. Facciamo festa in tuo onore.</Italian>
         <Spanish>Hola, rostro pálido. Yo, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] del pueblo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT] os doy la bienvenida. Daremos un festín en vuestro honor.</Spanish>
@@ -4458,7 +4459,7 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_HUAYNA_CAPAC_1</Tag>
         <English>You look lost and sad, stranger. You pretend to be of high standing, yet you are carried not on a palanquin but on the back of a wild animal. You worship neither sun nor earth, only a tiny cross. You can't play snail trumpets or bone flutes. You don't understand the writing in knots. I see no children among you, while I alone have two hundred sons and daughters. I pity you.</English>
-        <French>Les [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] souhaitent la bienvenue aux glorieux [CT_CIV_ADJ:3] et à leur chef, [CT_NAME]. Si vous jouez le jeu avec nous, nous jouerons le jeu avec vous.</French>
+        <French> Vous avez l'air triste et perdu, étranger. Vous prétndez être de haut rang, et pourtant vous êtes à dos d'un animal sauvage et non sur un palanquin. Vous ne vénérez ni le soleil, ni la terre, mais seulement une petite croix. Vous ne jouez ni de la trompe ni de la flute en os. Vous ne comprenez pas notre écriture sur les cordes. Je ne vois aucun enfant parmi vous, quand j'ai à moi seul deux cents fils et filles. Vous me faites pitié.</French>
         <German>Seltsam und armselig wirkt Ihr, Fremder. Ihr gebt vor, von hohem Stand zu sein, doch lasst Ihr Euch nicht in Sänften tragen, sondern auf dem Rücken wilder Tiere. Ihr betet weder Sonne noch Erde an, sondern ein kleines Kreuz. Ihr kennt weder Schneckentrompeten noch Knochenflöten und auch nicht die Knotenschrift. Ich sehe kaum Kinder bei Euch, während ich alleine 200 Söhne und Töchter habe. Ihr dauert mich.</German>
         <Italian>L'[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] dà il benvenuto alla popolazione [CT_CIV_ADJ] e alla loro guida, [CT_NAME]. Giochiamo insieme alla palla cerimoniale.</Italian>
         <Spanish>El [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] le da la bienvenida al glorioso pueblo [CT_CIV_ADJ:1] y a su líder, [CT_NAME]. Si jugáis con nosotros al juego ceremonial de la pelota, nosotros haremos lo propio.</Spanish>
@@ -4467,7 +4468,7 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_LOGAN_1</Tag>
         <English>Stranger, I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], head of the [COLOR_HIGHLIGHT_TEXT]Iroquois Confederacy[COLOR_REVERT], elected by the Seneca, Cayuga, Onondaga, Oneida and Mohawk. Our brother nations were in endless war until the prophet Deganawidah and the wise chief Hiawatha united us. Equal and free we are in our covenant. Treat us with respect so we will also respect you. I have spoken.</English>
-        <French>Bonjour. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], chef et protecteur des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Je vous considère comme mon ami. Il va de votre intérêt que je ne change jamais d'opinion.</French>
+        <French>Étranger, je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], chef de la [COLOR_HIGHLIGHT_TEXT]Confédération Iroquoise[COLOR_REVERT], élus par les Seneca, Cayuga, Onondaga, Oneida, et les Mohawk. Nos nations soeurs étaient en guerre éternelles jusqu'à ce que le prophète Deganawidah et notre si sage chef Hiawatha nous unisse. Nous sommes libres et égaux dans notre union. Traitez nous avec respect, et nous vous respecterons également. Ainsi ai-je parlé.</French>
         <German>Fremder, ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Oberhaupt der [COLOR_HIGHLIGHT_TEXT]Irokesenliga[COLOR_REVERT], gewählt von den Seneca, Cayuga, Onondaga, Oneida und Mohawk. Einst waren die Brudervölker in einem endlosen Krieg, bis uns der Prophet Deganawidah und der weise Häuptling Hiawatha vereinten. Gleich und frei sind wir in unserem Bund. Begegnet uns mit Achtung, und wir werden auch Euch achten. Ich habe gesprochen.</German>
         <Italian>Salve. Mi chiamo [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], capo e protettore del popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Ti considero un amico. È nel tuo migliore interesse che io non cambi mai idea.</Italian>
         <Spanish>Hola. Soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], jefe y protector del pueblo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT]. Os considero mis amigos. Y más os vale que nunca cambie de opinión.</Spanish>
@@ -4476,7 +4477,7 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_MANGAS_COLORADAS_1</Tag>
         <English>I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Many warriors of the [COLOR_HIGHLIGHT_TEXT]Apache[COLOR_REVERT] have joined me because I know how to hunt prey. You could easily be prey. Give us generous gifts. We'll leave you enough to live on, maybe. You should eat more, paleface. You don't look strong enough to endure much torture.</English>
-        <French>Bienvenue. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Je prie pour que la paix ait autant de valeur à vos yeux qu'aux nôtres.</French>
+        <French>Bienvenue. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Bien des guerriers [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT] m'ont rejoint car je sais mener une chasse. Vous pourriez être notre proie. Versez un tribut généreux. Nous vous laisserons bien assez pour vivre, je crois. Vous devriez manger davantage. Vous n'avez pas l'air d'être assez fort pour subir une torture qui dure.</French>
         <German>Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Viele Krieger der [COLOR_HIGHLIGHT_TEXT]Apachen[COLOR_REVERT] haben sich mir angeschlossen, weil ich weiß, wo wir leichte Beute finden. Ihr seht aus wie Beute. Ihr solltet uns großzügige Geschenke geben, dann lassen wir Euch vielleicht genug, dass Ihr weiterleben könnt. Und esst mehr, Bleichgesicht. Ihr seht nicht kräftig genug aus, um eine Marter lange zu ertragen.</German>
         <Italian>Benvenuto. Sono [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] della civiltà [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Prego che tu e il tuo popolo diate tanto valore alla pace quanto gliene diamo noi.</Italian>
         <Spanish>Bienvenido. Soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], de los [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Rezo porque vuestro pueblo valore la paz tanto como nosotros.</Spanish>
@@ -4485,7 +4486,7 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_MONTEZUMA_1</Tag>
         <English>You must be a protégé of the gods, that they allow you to land on my shores. Thirteen slave children were sacrificed to them this morning on the Altar of the Sun so that your intentions might be revealed to me - unfortunately in vain. I will spare your lives now, but do not mistake my caution for weakness.</English>
-        <French>Je suis le chef des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT], le grand et puissant [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]! Je vous souhaite la bienvenue dans mon empire et vous propose la paix. Mais je vous avertis, ne prenez pas cette proposition pour de la faiblesse ou je vous ferai immoler.</French>
+        <French>Vous devez être protégé des dieux, pour qu'ils vous permettent de débarquer sur nos rivages. Treize esclaves enfants ont été sacrifié sur l'autel du soleil pour que vos intentions nous soient révélées - hélas en vain. Je vais vous épargener avec vie pour le moment, ne prenez pas ma prudence pour de la faiblesse.</French>
         <German>Ihr scheint ein Schützling der Götter zu sein, dass Sie Euch gestatten, die Gestade meiner Küste zu betreten. Ich habe ihnen heute morgen dreizehn Kinder auf dem Sonnenaltar opfern lassen, damit mir Eure Absichten offenbart werden - leider vergeblich. Vorerst werde ich Euer Leben schonen, doch verwechselt meine Vorsicht nicht mit Schwäche.</German>
         <Italian>Sono il leader del popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT], il grande e potente [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]! Ti do il benvenuto nel mio impero e ti offro la pace. Ma ti avverto: non fare l'errore di considerare quest'offerta come un segno di debolezza, o ti farò condurre all'altare sacrificale.</Italian>
         <Spanish>Soy el gran y poderoso [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], líder del pueblo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT]. Os doy la bienvenida a mi imperio y os ofrezco la paz. Pero os prevengo: no toméis mi oferta de paz como una muestra de debilidad o no tendré más remedio que llevaros a mi altar.</Spanish>
@@ -4494,7 +4495,7 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_OCONOSTOTA_1</Tag>
         <English>Paleface, I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], the war chief of the [COLOR_HIGHLIGHT_TEXT]Cherokee[COLOR_REVERT]. My people number more than any others across this land. Our enemies fear us, and our friends enjoy our protection. Will you trade with us and fight by our side?</English>
-        <French>Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], chef des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Commençons par commercer pour renforcer notre amitié</French>
+        <French>Visage pâle, je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], chef de guerre des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Mon peuple est plus nombreux que tous les autres dans ces ontrées. Nos ennemis nous craignent, et nos amis se heureux de notre protection.  Allez vous  commercer avec nous et vous battre à nos côtés ?</French>
         <German>Bleichgesicht, ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], der Kriegshäuptling der [COLOR_HIGHLIGHT_TEXT]Cherokee[COLOR_REVERT]. Mein Volk zählt mehr Köpfe als jedes andere in diesem Land. Unsere Feinde fürchten uns, und unsere Freunde genießen unseren Schutz. Wollt Ihr mit uns Handel treiben und an unserer Seite kämpfen?</German>
         <Italian>Sono [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], capo del popolo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Commerciamo e consolidiamo la nostra amicizia.</Italian>
         <Spanish>Soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], jefe del pueblo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT]. Comerciemos y estrechemos nuestros lazos de amistad.</Spanish>
@@ -4512,7 +4513,7 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_CHIEF_JOSEPH_1</Tag>
         <English>Paleface, I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], chief of the [COLOR_HIGHLIGHT_TEXT]Nez Perce[COLOR_REVERT]. The salmon is sacred to my people. Its flesh nourishes us and provides for us all year round. Do not take our fish from us and we will spare you. We also breed powerful and enduring horses. Leave our horses in peace and we will welcome you peacefully at our campfires.</English>
-        <French>Bonjour, je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Allons discuter autour du feu.</French>
+        <French>Visage pâle, je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Le saumon est sacré pour mon peuple. Sa chair nous nourrit et nous repait tout au long de l'année. Ne volez pas notre poisson et nous vous épargnerons. Nous élevons aussi de puissant chevaux endurants. Laissez les tranquille, et vous serez les bienvenus devant nos feus.</French>
         <German>Bleichgesicht, ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Häuptling der [COLOR_HIGHLIGHT_TEXT]Nez Perce[COLOR_REVERT]. Der Fisch ist meinem Volk heilig. Sein Fleisch nährt und versorgt uns das ganze Jahr über. Nehmt uns nicht unsere Fische, und wir werden Euch verschonen. Wir züchten auch kraftvolle und ausdauernde Pferde. Lasst unsere Pferde in Frieden und wir werden Euch friedlich an unseren Lagerfeuern empfangen.</German>
         <Italian>Saluti, sono [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] della civiltà [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Sediamoci davanti al fuoco e parliamo.</Italian>
         <Spanish>Saludos. Soy [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], de los [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Sentémonos alrededor de la hoguera y hablemos.</Spanish>
@@ -4521,7 +4522,7 @@
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_PENN_1</Tag>
         <English>You have disappointed me greatly, brother [CT_NAME]. I had hoped to find in you a soul mate who, like me, would fight for virtue and freedom. But you have turned out to be a scoundrel.</English>
-        <French>Je suis navré, mais je n'ai pas de temps à vous consacrer pour le moment. Je trouverai peut-être le temps plus tard.</French>
+        <French>Vous m'avez profondément déçu, [CT_NAME]. J'avais espéré trouver en vous une âme soeur qui se battrait pour la vertu et la liberté. Mais vous êtes avéré un brigand.</French>
         <German>Ihr habt mich außerordentlich enttäuscht, Bruder [CT_NAME]. Ich hatte gehofft, in Euch einen Seelenverwandten zu finden, der wie ich für Tugend und Freiheit streitet. Doch habt Ihr Euch als Schuft entpuppt.</German>
         <Italian>Mi dispiace, ma ora non ho tempo per umiliarti. Forse potrei trovarne più tardi.</Italian>
         <Spanish>Lo siento, pero ahora no tengo tiempo ni para menospreciaros. Quizá más tarde.</Spanish>
@@ -4530,7 +4531,7 @@
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_BOLIVAR_1</Tag>
         <English>I am very busy, Señor [CT_NAME]. We can talk another time. Or not.</English>
-        <French>Ecoutez, je suis très occupé. Pourquoi n'iriez-vous pas faire quelques pâtés de sable ?</French>
+        <French>Ecoutez, je suis très occupé, Señor [CT_NAME]. Nous pourrions nous parler à un autre moment. Ou nin.</French>
         <German>Ich bin sehr beschäftigt, Señor [CT_NAME]. Wir können ein andermal reden. Oder auch nicht.</German>
         <Italian>Senti, sono molto occupato. Perché non prendi i bambini e te ne torni al circolo?</Italian>
         <Spanish>Mirad, estoy muy ocupado. ¿Por qué no os lleváis a los niños y os volvéis al club?</Spanish>
@@ -4539,7 +4540,7 @@
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_CHAMPLAIN_1</Tag>
         <English>You again, Monsieur [CT_NAME]! And you're still wearing your scalp, I see. Well, come back when that has changed.</English>
-        <French>Je ne voudrais pas vous froisser, mais qu'importe ! Je n'ai vraiment pas de temps à vous consacrer. Au revoir.</French>
+        <French>Encore vous, Monsieur [CT_NAME]! Vous êtes toujours pourvu de votre scalp. Je vois. Et bien, revenez me voir quand cela aura changé.</French>
         <German>Ihr schon wieder, Monsieur [CT_NAME]! Und Ihr tragt immer noch Euren Skalp, wie ich sehe. Nun, kommt wieder, wenn sich das geändert hat.</German>
         <Italian>Pur non avendo intenzione di offenderti, anche se lo faccio non importa. Semplicemente non ho tempo da perdere con te. Addio.</Italian>
         <Spanish>Aunque no pretendo ofenderos, si lo hago no me importa. Simplemente es que no tengo tiempo que perder con vos. Adiós.</Spanish>
@@ -4548,7 +4549,7 @@
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_DONCK_1</Tag>
         <English>Mijnheer [CT_NAME], this New World is a godsend for every man of noble spirit who appreciates beauty and decency. So not for you.</English>
-        <French>Je crains qu'il ne soit guère avantageux de vous parler en ce moment.</French>
+        <French>Mijnheer [CT_NAME], le Nouveau Monde est un don des cieux pour tout homme noble d'esprit, appréciant la beauté et la décence. Vous n'en êtes pas.</French>
         <German>Mijnheer [CT_NAME], diese Neue Welt ist ein Gottesgeschenk für jeden Mann edlen Geistes, der Schönheit und Anstand zu schätzen weiß. Also nicht für Euch.</German>
         <Italian>Ho paura che non sia conveniente parlarti in questo momento.</Italian>
         <Spanish>Me temo que no me sería ventajoso hablar con vos en este momento.</Spanish>
@@ -4557,7 +4558,7 @@
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_FRONTENAC_1</Tag>
         <English>[CT_NAME], I am a busy man. Bore someone else, please, lad. Au revoir.</English>
-        <French>Je n'ai pas le temps de parler des stupides problèmes de votre stupide colonie.</French>
+        <French>[CT_NAME], je suis un homme occupé. Allez ennuyer quelq'un d'autre, je vous en prie. Au revoir.</French>
         <German>[CT_NAME], ich bin ein vielbeschäftigter Mann. Langweilt bitte jemand anderen, Bursche. Au revoir.</German>
         <Italian>Non ho tempo di parlare con te dei primitivi problemi della tua primitiva colonia.</Italian>
         <Spanish>No tengo tiempo para hablar con vos de los problemas atrasados de vuestra atrasada colonia.</Spanish>
@@ -4566,7 +4567,7 @@
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_HERNAN_CORTES_1</Tag>
         <English>Caramba! You again. You are stealing my time, Señor [CT_NAME]. Pack your bags and leave this part of the world!</English>
-        <French>Je vais maintenant vous démontrer mes talents de stratège en vous ignorant totalement.</French>
+        <French>Caramba! Encore vous. Vous me volez mon temps, Señor [CT_NAME]. Faites vos bagages et quittez cette partie du monde !</French>
         <German>Caramba! Ihr schon wieder. Ihr stehlt meine Zeit, Señor [CT_NAME]. Packt Eure Siebensachen und verschwindet endlich aus diesem Teil der Welt!</German>
         <Italian>Ora userò la mia incredibile conoscenza della tattica per ignorarti.</Italian>
         <Spanish>Ahora utilizaré mi astuto conocimiento de la táctica para hacer caso omiso de vos.</Spanish>
@@ -4575,7 +4576,7 @@
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_STUYVESANT_1</Tag>
         <English>Mijnheer [CT_NAME], I'm sorry but I don't have time to talk to errand boys right now.</English>
-        <French>Navré, je n'ai pas le temps de parler à votre misérable peuple dans l'immédiat.</French>
+        <French>Mijnheer [CT_NAME],, je n'ai pas le temps de parler à des garçons de course à l'instant.</French>
         <German>Mijnheer [CT_NAME], ich bedaure, aber ich habe gerade keine Zeit, mich mit Laufburschen zu unterhalten.</German>
         <Italian>Mi dispiace, ora non ho tempo di parlare con le persone poco importanti.</Italian>
         <Spanish>Lo siento, ahora mismo no tengo tiempo para hablar con los pequeños pueblos.</Spanish>
@@ -4584,7 +4585,7 @@
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_WASHINGTON_1</Tag>
         <English>Sir, I regret. I am sorry, but my time is too precious for your chatter.</English>
-        <French>Je suis navré, mais mon devoir m'impose de partir immédiatement.</French>
+        <French>Sire, je suis désolé, mais mon temps est trop précieux pour vos palabres.</French>
         <German>Sir, I regret. Es tut mir leid, aber für Euer Geschwätz ist mir meine Zeit zu teuer.</German>
         <Italian>Mi dispiace, ma il mio dovere mi impone di essere altrove, in questo momento.</Italian>
         <Spanish>Lo siento, pero ahora mismo el deber me reclama en otro sitio.</Spanish>
