@@ -287,7 +287,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
-		<French>Les moulins à vent</French>
+		<French>Moulin àvent</French>
         <Russian>Ветряк</Russian>
     </TEXT>
     <TEXT>
@@ -304,13 +304,13 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
-		<French>Les moulins à fer</French>
+		<French>Bas-fourneaux</French>
         <Russian>Железная мельница</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_IRON_MILL_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Iron mills[COLOR_REVERT] on the map add a bonus percentage to the total production of [LINK=YIELD_TOOLS]tools[\LINK] in their city when they are worked by a citizen of the city.[NEWLINE]The iron mill can be built only on terrains that already have [LINK=YIELD_ORE]iron ore[\LINK]. It's like the situation for windmills on terrains where there's no food.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]An iron mill relies on a power source and gearing. It can increase the volume of forced air for smelting, or drive a mechanical process for grinding, rolling, or hammering. Such processes accelerate the production of many metal products.</English>
-		<French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Les moulins à fer[COLOR_REVERT] sur la carte ajoutent un pourcentage de bonus à la production totale de [LINK=YIELD_TOOLS]outils[\LINK] dans leur ville quand ils sont travaillés par un citoyen de la ville. [Ils ne peuvent être construits que sur les terrains qui possèdent déjà du [LINK=YIELD_ORE]minerai de fer[\LINK].[PARAGRAPH:2][BOLD]Contexte :[\BOLD][PARAGRAPH:1]Un moulin à fer repose sur une source d'énergie et un engrenage. Il peut augmenter le volume d'air forcé pour la fusion, ou entraîner un processus mécanique pour le broyage, le laminage ou le martelage. Ces processus accélèrent la production de nombreux produits métalliques.</French>
+		<French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]bas-fourneaux[COLOR_REVERT] sur la carte ajoutent un pourcentage de bonus à la production totale de [LINK=YIELD_TOOLS]outils[\LINK] dans leur ville quand ils sont travaillés par un citoyen de la ville. [Ils ne peuvent être construits que sur les terrains qui possèdent déjà du [LINK=YIELD_ORE]minerai de fer[\LINK].[PARAGRAPH:2][BOLD]Contexte :[\BOLD][PARAGRAPH:1]Un moulin à fer repose sur une source d'énergie et un engrenage. Il peut augmenter le volume d'air forcé pour la fusion, ou entraîner un processus mécanique pour le broyage, le laminage ou le martelage. Ces processus accélèrent la production de nombreux produits métalliques.</French>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Eisenmühlen[COLOR_REVERT] auf der Karte geben, wenn sie von einem Bürger in der Stadt bearbeitet werden, einen prozentualen Bonus auf die gesamte Herstellung von [LINK=YIELD_TOOLS]Eisenwaren[\LINK] in der Stadt.[NEWLINE]Sie können nur auf Gelände errichtet werden, auf welchem bereits [LINK=YIELD_ORE]Eisenerz[\LINK] abgebaut werden kann.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Eine Wassermühle ist eine meist historische technische Anlage, die mittels einer Wasserkraftmaschine durch Wasserkraft angetrieben wird und die kinetische Energie des Wassers nutzt. Bei der Anlage kann es sich um eine Mühle im engeren Sinne handeln, in der etwas gemahlen bzw. zerkleinert wird (Mahlmühle), oder um eine Mühle, in der sonstige Maschinen angetrieben werden (z. B. Hammerwerk, Sägemühle, Schleifmühle, Papiermühle, Pumpwerk, Pochmühle). Für die Umsetzung der Wasserenergie in mechanische Arbeit kommen bei historischen Mühlen fast ausschließlich Wasserräder zum Einsatz; diese wurden in neuerer Zeit oft durch Wasserturbinen ersetzt. Das zum Antrieb nötige Wasser (Aufschlagwasser) wird normalerweise einem Fließgewässer entnommen. Je nach örtlichen Gegebenheiten sind zur Erhöhung der Fallhöhe und zur Speicherung von Wasser Teiche, Stauwehre, Kanäle oder andere Wasserbauwerke erforderlich, siehe dazu auch Schlacht (Wasserbauwerk).</German>
     </TEXT>
     <TEXT>
@@ -321,7 +321,7 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
-		<French>Les dépôts d'approvisionnement</French>
+		<French>Dépôt d'approvisionnement</French>
         <Russian>Склад припасов</Russian>
     </TEXT>
     <TEXT>
@@ -355,7 +355,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
-		<French>Les canaux</French>
+		<French>Canal</French>
         <Russian>Канал</Russian>
     </TEXT>
     <TEXT>
@@ -576,7 +576,7 @@
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT7</Tag>
         <English>Animal Lair</English>
-        <French>Les repaires d'animaux</French>
+        <French>Antre d'animaux</French>
 		<German>
             <Text>Tierversteck</Text>
             <Gender>Neuter</Gender>
@@ -593,7 +593,7 @@
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT8</Tag>
         <English>Hostile Native Village</English>
-        <French>Les villages d'indigènes hostiles</French>
+        <French>Village indigène hostile</French>
 		<German>
             <Text>Feindliches Ureinwohnerdorf</Text>
             <Gender>Neuter</Gender>
@@ -699,7 +699,7 @@
         <Tag>TXT_KEY_IMPROVEMENT_LUMBERMILL</Tag>
         <English>Sawmill</English>
         <French>
-            <Text>Les scieries</Text>
+            <Text>Scierie</Text>
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </French>

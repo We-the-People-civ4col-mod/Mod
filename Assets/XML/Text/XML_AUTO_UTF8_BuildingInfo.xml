@@ -149,8 +149,8 @@
         <Tag>TXT_KEY_BUILDING_BLACKSMITH_HOUSE</Tag>
         <English>Blacksmith's House</English>
         <French>
-            <Text>Atelier du forgeron:Ateliers de forgeron</Text>
-            <Gender>Male</Gender>
+            <Text>Maison du forgeron:Maisons de forgerons</Text>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>Dorfschmiede</German>
@@ -299,7 +299,7 @@
         <Tag>TXT_KEY_BUILDING_CARPENTER_SHOP</Tag>
         <English>Carpenter's Shop</English>
         <French>
-            <Text>Atelier du menuisier:Ateliers de menuisier</Text>
+            <Text>Maison du charpentier:Maisons de charpentier</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -748,8 +748,8 @@
         <Tag>TXT_KEY_BUILDING_DISTILLERS_HOUSE</Tag>
         <English>Distiller's House</English>
         <French>
-            <Text>Atelier du distillateur:Ateliers de distillateur</Text>
-            <Gender>Male</Gender>
+            <Text>Maison du distillateur:Maisons de distillateur</Text>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>Haus des Brenners</German>
@@ -1106,8 +1106,8 @@
         <Tag>TXT_KEY_BUILDING_FUR_TRADERS_HOUSE</Tag>
         <English>Fur Trader's House</English>
         <French>
-            <Text>Atelier du fourreur:Ateliers de fourreur</Text>
-            <Gender>Male</Gender>
+            <Text>Maison du fourreur:Maisons de fourreur</Text>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>Haus des Pelzhändlers</German>
@@ -2490,8 +2490,8 @@
         <Tag>TXT_KEY_BUILDING_TOBACCONIST_HOUSE</Tag>
         <English>Tobacco and Yerba House</English>
         <French>
-            <Text>Atelier du cigarier:Ateliers de cigarier</Text>
-            <Gender>Male</Gender>
+            <Text>Maison du cigarier:Maisons de cigarier</Text>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>Tabak- und Teehaus</German>
@@ -2920,8 +2920,8 @@
         <Tag>TXT_KEY_BUILDING_WEAVERS_HOUSE</Tag>
         <English>Weaver's House</English>
         <French>
-            <Text>Atelier du tisserand:Ateliers de tisserand</Text>
-            <Gender>Male</Gender>
+            <Text>Maison du tisserand:Maisons de tisserands</Text>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>Haus des Webers</German>

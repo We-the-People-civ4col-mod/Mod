@@ -64,7 +64,7 @@
         <Tag>TXT_KEY_BUILDINGCLASS_BLACKSMITH_HOUSE</Tag>
         <English>Blacksmith's House</English>
         <French>
-            <Text>Atelier du forgeron:Ateliers de forgeron</Text>
+            <Text>Maison du forgeron:Maisons de forgeron</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>

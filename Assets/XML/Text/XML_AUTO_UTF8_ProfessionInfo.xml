@@ -748,7 +748,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Tirailleur:Tirailleurs</Text>
+            <Text>Soldat d'infanterie:Soldats d'infanterie</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -934,7 +934,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Distillateur (Ron):Distillateurs (Ron)</Text>
+            <Text>Distillateur (Rhum):Distillateurs (Rhum)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -2485,7 +2485,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Tirailleur royal:Tirailleurs royaux</Text>
+            <Text>Soldat d'infanterie royale:Soldats d'infanterie royale</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
