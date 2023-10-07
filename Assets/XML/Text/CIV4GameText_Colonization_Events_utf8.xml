@@ -872,6 +872,46 @@
         <Russian>[COLOR_WARNING_TEXT](Недоступно, если [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_WARNING_TEXT] уже работает на вас.)[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_PRISONER_OF_WAR_AT_MONASTERY</Tag>
+        <English>News spread that the release of a prisoner of war has been negotiated by a [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] monastery. Praise the Lord for his Mercy.</English>
+        <German>Es verbreitet sich die Meldung, dass die Freilassung eines Kriegsgefangenen durch ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Kloster verhandelt wurde. Gelobt sei der Herr für seine Gnade.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_PRISONER_OF_WAR_AT_MONASTERY</Tag>
+        <English>Milord, the abbot of the monastery asks to be allowed to speak to you about our prisoner of war. He takes personal interest in the matter because his brother died in captivity. Thus he begs to be allowed to negotiate the terms of the release of this prisoner with our rivals. [NEWLINE]He promises that such an action will improve our standing at the church. Also he will try to negotiate a ransom.</English>
+        <German>Milor, der Abt des Klosters bittet darum mit euch über das Schicksal unseres Kriegsgefangenen reden zu dürfen. Er hat ein persönliches Interess an der Angelegenheit, da sein Bruder in Gefangenschaft starb. Daher bittet er darum, mit unseren Rivalen die Bedingungen der Freilassung dieses Gefangenen vermitteln zu dürfen. [NEWLINE]Er verspricht, dass dies unser Ansehen bei der Kirche verbessern wird. Er will aber auch ein Lösegeld verhandeln.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_PRISONER_OF_WAR_AT_MONASTERY_1</Tag>
+        <English>We will show mercy and allow the abbot to negotiate the release of our prisoner.</English>
+        <German>Wir werden Gnade zeigen und dem Abt erlauben die Freilassung unseres Gefangenen zu verhandeln.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_PRISONER_OF_WAR_AT_MONASTERY_2</Tag>
+        <English>We cannot allow that. This prisoner must serve the sentence for his deeds.</English>
+        <German>Wir können dies nicht erlauben. Der Gefangene muss die Strafe für seine Taten absitzen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_PRISONER_OF_WAR_AT_FORT</Tag>
+        <English>News spread that the release of a prisoner of war has been negotiated in a [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] Fort. Reason was victorious again over hate.</English>
+        <German>Es verbreitet sich die Meldung, dass die Freilassung eines Kriegsgefangenen in einem [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Fort verhandelt wurde. Die Vernuft hat erneut über den Hass gesiegt.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_PRISONER_OF_WAR_AT_FORT</Tag>
+        <English>Milord, an officer of the fort asks to speak to you. He saw that our prisoner is wounded and believes he may not survive long captivity. He claims that honor demands that we contact our rivals in order to negotiate an exchange of prisoners. [NEWLINE]He promises that such an action will improve our prestige with other nations. He will also try to negotiate a ransom.</English>
+        <German>Milor, ein Offizier des Forts bittet um eine Audienz. Er hat gesehen, dass der Gefangen verwundet ist und befürchtet dieser könnte eine lange Gefangenschaft nicht überleben. Er behauptet, dass es die Ehre gebietet unsere Rivalen zu kontaktieren und einen Austausch von Gefangenen zu verhandeln. [NEWLINE]Er verspricht, dass dies unser Ansehen bei anderen Nationen verbessern wird. Er will aber auch ein Lösegeld verhandeln.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_PRISONER_OF_WAR_AT_FORT_1</Tag>
+        <English>We will do as honor demands and allow the officer to negotiate the release of our prisoner.</English>
+        <German>Wir werden dem Gebot der Ehre folge leisten und dem Offizier erlauben die Freilassung unseres Gefangenen zu verhandeln.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_PRISONER_OF_WAR_AT_FORT_2</Tag>
+        <English>We cannot allow that. This prisoner must serve the sentence for his deeds.</English>
+        <German>Wir können dies nicht erlauben. Der Gefangene muss die Strafe für seine Taten absitzen.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_NATIVE_TRADER_ATTACKED</Tag>
         <English>There's a rumour that a peaceful [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] trader has been attacked and murdered by hostile Natives.</English>
         <French>Selon une rumeur, un marchand [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] pacifique a été attaqué et tué par des indiens hostiles.</French>

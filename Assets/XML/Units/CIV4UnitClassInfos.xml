@@ -12,6 +12,11 @@
             <DefaultUnit>UNIT_CRIMINAL</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_PRISONER_OF_WAR</Type>
+            <Description>TXT_KEY_UNITCLASS_PRISONER_OF_WAR</Description>
+            <DefaultUnit>UNIT_PRISONER_OF_WAR</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_INDENTURED_SERVANT</Type>
             <Description>TXT_KEY_UNITCLASS_INDENTURED_SERVANT</Description>
             <DefaultUnit>UNIT_INDENTURED_SERVANT</DefaultUnit>
@@ -605,6 +610,11 @@
             <Type>UNITCLASS_REVOLTING_CRIMINAL</Type>
             <Description>TXT_KEY_UNITCLASS_REVOLTING_CRIMINAL</Description>
             <DefaultUnit>UNIT_REVOLTING_CRIMINAL</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_REVOLTING_PRISONER_OF_WAR</Type>
+            <Description>TXT_KEY_UNITCLASS_REVOLTING_PRISONER_OF_WAR</Description>
+            <DefaultUnit>UNIT_REVOLTING_PRISONER_OF_WAR</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_HOSTILE_NATIVE</Type>

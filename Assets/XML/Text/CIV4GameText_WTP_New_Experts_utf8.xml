@@ -2417,4 +2417,62 @@
         <French>Les [COLOR_HIGHLIGHT_TEXT]juges équitables[COLOR_REVERT] sont experts à dispenser la justice et de ce fait contribuent deux fois plus au maintien de l'[LINK=YIELD_LAW]ordre[\LINK] en tant que [LINK=PROFESSION_JUDGE]juges[\LINK] qu'un colon libre au même poste.</French>
         <German>[COLOR_HIGHLIGHT_TEXT]Ehrenwerte Richter[COLOR_REVERT] sind Experten im Sprechen von Recht und erzeugen daher als [LINK=PROFESSION_JUDGE]Richter[\LINK] doppelt so viel [LINK=YIELD_LAW]Justiz[\LINK] wie freie Kolonisten.</German>
     </TEXT>
+    <!-- PRISONER_OF_WAR -->
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_PRISONER_OF_WAR</Tag>
+        <English>Prisoner of War:Prisoners of War</English>
+        <German>
+            <Text>Kriegsgefangener:Kriegsgefangene</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PRISONER_OF_WAR</Tag>
+        <English>Prisoner of War:Prisoners of War</English>
+        <German>
+            <Text>Kriegsgefangener:Kriegsgefangene</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PRISONER_OF_WAR_PEDIA</Tag>
+        <English>tbd</English>
+        <German>tbd</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PRISONER_OF_WAR_STRATEGY</Tag>
+        <English>[COLOR_HIGHLIGHT_TEXT]Prisoners of War[COLOR_REVERT] tbd</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]Kriegsgefangene[COLOR_REVERT] tbd</German>
+    </TEXT>
+    <!-- REVOLTING_PRISONER_OF_WAR -->
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_REVOLTING_PRISONER_OF_WAR</Tag>
+        <English>Revolting Prisoner of War:Revolting Prisoners of War</English>
+        <German>
+            <Text>Revoltierender Kriegsgefangener:Revoltierende Kriegsgefangene</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_REVOLTING_PRISONER_OF_WAR</Tag>
+        <English>Revolting Prisoner of War:Revolting Prisoners of War</English>
+        <German>
+            <Text>Revoltierender Kriegsgefangener:Revoltierende Kriegsgefangene</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_REVOLTING_PRISONER_OF_WAR_PEDIA</Tag>
+        <English>tbd</English>
+        <German>tbd</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_REVOLTING_PRISONER_OF_WAR_STRATEGY</Tag>
+        <English>[COLOR_HIGHLIGHT_TEXT]Revolting Prisoners of War[COLOR_REVERT] tbd</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]Revoltierende Kriegsgefangene[COLOR_REVERT] tbd</German>
+    </TEXT>	
 </Civ4GameText>
