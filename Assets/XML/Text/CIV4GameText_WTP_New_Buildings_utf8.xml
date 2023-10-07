@@ -60,6 +60,7 @@
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_CONFECTIONER</Tag>
         <English>Confectioner</English>
+        <French>Confiseur</French>
         <German>
             <Text>Konditor</Text>
             <Gender>Male</Gender>
@@ -69,6 +70,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_HOUSE</Tag>
         <English>Confectioner's House</English>
+        <French>Maison du confiseur</French>
         <German>
             <Text>Haus des Konditors</Text>
             <Gender>Neuter</Gender>
@@ -79,6 +81,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_SHOP</Tag>
         <English>Confectioner's Shop</English>
+        <French>Atelier du confiseur</French>
         <German>
             <Text>Konditorladen</Text>
             <Gender>Male</Gender>
@@ -89,6 +92,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_FACTORY</Tag>
         <English>Confectionery</English>
+        <French>Confiserie</French>
         <German>
             <Text>Konditorei</Text>
             <Gender>Female</Gender>
@@ -99,6 +103,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE</Tag>
         <English>Confectioner's House</English>
+        <French>Maison du confiseur</French>
         <German>
             <Text>Haus des Konditors</Text>
             <Gender>Neuter</Gender>
@@ -109,6 +114,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP</Tag>
         <English>Confectioner's Shop</English>
+        <French>Atelier du confiseur</French>
         <German>
             <Text>Konditorladen</Text>
             <Gender>Male</Gender>
@@ -119,6 +125,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY</Tag>
         <English>Confectionery</English>
+        <French>Confiserie</French>
         <German>
             <Text>Konditorei</Text>
             <Gender>Female</Gender>
@@ -263,6 +270,7 @@
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_OIL_TRADER</Tag>
         <English>Cooking Oil Trader</English>
+        <French>Marchand d'huile</French>
         <German>
             <Text>Speiseölhändler</Text>
             <Gender>Male</Gender>
@@ -272,6 +280,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_HOUSE</Tag>
         <English>Cooking Oil Trader's House</English>
+        <French>Maison du marchand d'huile</French>
         <German>
             <Text>Haus des Ölhändlers</Text>
             <Gender>Neuter</Gender>
@@ -282,6 +291,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_SHOP</Tag>
         <English>Cooking Oil Trader's Shop</English>
+        <French>Atelier du marchand d'huile</French>
         <German>
             <Text>Speiseölladen</Text>
             <Gender>Male</Gender>
@@ -292,6 +302,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_FACTORY</Tag>
         <English>Cooking Oil Trader Factory</English>
+        <French>Pressoir à huile industriel</French>
         <German>
             <Text>Speiseölfabrik</Text>
             <Gender>Female</Gender>
@@ -302,6 +313,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE</Tag>
         <English>Cooking Oil Trader's House</English>
+        <French>Maison du marchand d'huile</French>
         <German>
             <Text>Haus des Ölhändlers</Text>
             <Gender>Neuter</Gender>
@@ -312,6 +324,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP</Tag>
         <English>Cooking Oil Trader's Shop</English>
+        <French>Atelier du marchand d'huile</French>
         <German>
             <Text>Speiseölladen</Text>
             <Gender>Male</Gender>
@@ -322,6 +335,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY</Tag>
         <English>Cooking Oil Factory</English>
+        <French>Pressoir à huile industriel</French>
         <German>
             <Text>Speiseölfabrik</Text>
             <Gender>Female</Gender>
@@ -375,6 +389,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_ROASTER_HOUSE</Tag>
         <English>Roaster's House</English>
+        <French>Maison de torréfaction</French>
         <German>
             <Text>Haus des Rösters</Text>
             <Gender>Neuter</Gender>
@@ -385,6 +400,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_ROASTER_SHOP</Tag>
         <English>Roaster's Shop</English>
+        <French>Maison du rôtisseur de graines</French>
         <German>
             <Text>Röstwarenladen</Text>
             <Gender>Male</Gender>
@@ -395,6 +411,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_ROASTER_FACTORY</Tag>
         <English>Roastery</English>
+        <French>Rôtisserie de graines</French>
         <German>
             <Text>Rösterei</Text>
             <Gender>Female</Gender>
@@ -405,6 +422,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_HOUSE</Tag>
         <English>Roaster's House</English>
+        <French>Maison du rôtisseur de graines</French>
         <German>
             <Text>Haus des Rösters</Text>
             <Gender>Neuter</Gender>
@@ -415,6 +433,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_SHOP</Tag>
         <English>Roaster's Shop</English>
+        <French>Atelier du rôtisseur de graines</French>
         <German>
             <Text>Röstwarenladen</Text>
             <Gender>Male</Gender>
@@ -425,6 +444,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_FACTORY</Tag>
         <English>Roastery</English>
+        <French>Rôtisserie de graines industrielle </French>
         <German>
             <Text>Rösterei</Text>
             <Gender>Female</Gender>
@@ -469,6 +489,7 @@
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_POTTERY</Tag>
         <English>Potter's House</English>
+        <French>Maison du potier</French>
         <German>
             <Text>Töpferei</Text>
             <Gender>Female</Gender>
@@ -478,6 +499,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_POTTERY_HOUSE</Tag>
         <English>Potter's House</English>
+        <French>Maison du potier</French>
         <German>
             <Text>Haus des Töpfers</Text>
             <Gender>Neuter</Gender>
@@ -488,6 +510,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_POTTERY_SHOP</Tag>
         <English>Potter's Shop</English>
+        <French>Atelier du potier</French>
         <German>
             <Text>Töpferladen</Text>
             <Gender>Male</Gender>
@@ -498,6 +521,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_POTTERY_FACTORY</Tag>
         <English>Pottery Factory</English>
+        <French>Usine de poterie</French>
         <German>
             <Text>Töpferei</Text>
             <Gender>Female</Gender>
@@ -508,6 +532,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_HOUSE</Tag>
         <English>Potter's House</English>
+        <French>Maison du potier</French>
         <German>
             <Text>Haus des Töpfers</Text>
             <Gender>Neuter</Gender>
@@ -518,6 +543,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_SHOP</Tag>
         <English>Potter's Shop</English>
+        <French>Atelier du potier</French>
         <German>
             <Text>Töpferladen</Text>
             <Gender>Male</Gender>
@@ -528,6 +554,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_FACTORY</Tag>
         <English>Pottery Factory</English>
+        <French>Usine de poterie</French>
         <German>
             <Text>Töpferei</Text>
             <Gender>Female</Gender>
@@ -611,6 +638,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_HOUSE</Tag>
         <English>Tailor's House</English>
+        <French>Maison du tailleur de vêtements</French>
         <German>
             <Text>Haus des Schneiders</Text>
             <Gender>Neuter</Gender>
@@ -621,6 +649,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_SHOP</Tag>
         <English>Tailor's Shop</English>
+        <French>Atelier du tailleur de vêtements</French>
         <German>
             <Text>Schneiderladen</Text>
             <Gender>Male</Gender>
@@ -631,6 +660,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_FACTORY</Tag>
         <English>Clothing Factory</English>
+        <French>Usine de vêtements</French>
         <German>
             <Text>Schneiderei</Text>
             <Gender>Female</Gender>
@@ -719,6 +749,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP</Tag>
         <English>Powder Makers' Shop</English>
+        <French>Atelier du fabricant de poudre</French>
         <German>
             <Text>Pulverladen</Text>
             <Gender>Male</Gender>
@@ -729,6 +760,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY</Tag>
         <English>Powder Magazine</English>
+        <French>Usine poudrière</French>
         <German>
             <Text>Pulverfabrik</Text>
             <Gender>Female</Gender>
@@ -818,6 +850,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_SHOP</Tag>
         <English>Baker's Shop</English>
+        <French>Atelier du boulanger</French>
         <German>
             <Text>Bäckerladen</Text>
             <Gender>Male</Gender>
@@ -880,6 +913,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_VILLAGE_COURT</Tag>
         <English>Village Courthouse</English>
+        <French>Maison du juge</French>
         <German>
             <Text>Dorfgerichtshaus</Text>
             <Gender>Neuter</Gender>
@@ -890,6 +924,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_TOWN_COURT</Tag>
         <English>Town Courthouse</English>
+        <French>Tribunal de la ville</French>
         <German>
             <Text>Stadtgerichtshaus</Text>
             <Gender>Neuter</Gender>
@@ -900,6 +935,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_CITY_COURT</Tag>
         <English>City Courthouse</English>
+        <French>Tribunal d'arrondissement</French>
         <German>
             <Text>Distriktsgerichthaus</Text>
             <Gender>Neuter</Gender>
@@ -910,6 +946,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_SUPREME_COURT</Tag>
         <English>Supreme Court</English>
+        <French>Cour suprême</French>
         <German>
             <Text>Oberstes Gericht</Text>
             <Gender>Neuter</Gender>
@@ -920,6 +957,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_VILLAGE_COURT</Tag>
         <English>Village Courthouse</English>
+        <French>Maison du juge de paix</French>
         <German>
             <Text>Dorfgerichtshaus</Text>
             <Gender>Neuter</Gender>
@@ -930,6 +968,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOWN_COURT</Tag>
         <English>Town Courthouse</English>
+        <French>Tribunal de la ville</French>
         <German>
             <Text>Stadtgerichtshaus</Text>
             <Gender>Neuter</Gender>
@@ -940,6 +979,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CITY_COURT</Tag>
         <English>City Courthouse</English>
+        <French>Tribunal d'arrondissement</French>
         <German>
             <Text>Distriktsgerichthaus</Text>
             <Gender>Neuter</Gender>
@@ -950,6 +990,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SUPREME_COURT</Tag>
         <English>Supreme Court</English>
+        <French>Cour suprême</French>
         <German>
             <Text>Oberstes Gericht</Text>
             <Gender>Neuter</Gender>
@@ -1001,6 +1042,7 @@
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_JAIL</Tag>
         <English>Jail</English>
+        <French>Prison</French>
         <German>
             <Text>Gefängnis</Text>
             <Gender>Neuter</Gender>
@@ -1010,6 +1052,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_JAIL</Tag>
         <English>Jail</English>
+        <French>Prison</French>
         <German>
             <Text>Gefängnis</Text>
             <Gender>Neuter</Gender>
@@ -1020,6 +1063,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_JAIL</Tag>
         <English>Jail</English>
+        <French>Prison</French>
         <German>
             <Text>Gefängnis</Text>
             <Gender>Neuter</Gender>

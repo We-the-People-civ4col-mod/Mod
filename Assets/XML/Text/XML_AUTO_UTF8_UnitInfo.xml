@@ -1971,7 +1971,7 @@
         <Tag>TXT_KEY_UNIT_EUROPEAN_LINE_INFANTRY</Tag>
         <English>European Line Infantry:European Line Infantry</English>
         <French>
-            <Text>European Line Infantry:European Line Infantry</Text>
+            <Text>Infanterie de ligne européenne:Infanterie de ligne européenne</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -2993,6 +2993,9 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
+        <French>
+            <Text>Artilleur lourd vétéran:Artilleurs lourds vétérans</Text>
+        </French>
         <German>
             <Text>Schwere Artillerie Veteran:Schwere Artillerie Veteranen</Text>
             <Gender>Female</Gender>
@@ -3521,6 +3524,9 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
+        <French>
+            <Text>Artilleur léger vétéran:Artilleurs légers vétérans</Text>
+        </French>
         <German>
             <Text>Leichte Artillerie Veteran:Leichte Artillerie Veteranen</Text>
             <Gender>Female</Gender>
@@ -5097,6 +5103,11 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
+        <French>
+            <Text>Artilleur royal:Artilleurs royaux</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
         <German>
             <Text>Königlicher Artillerist:Königliche Artilleristen</Text>
             <Gender>Female</Gender>
@@ -5280,7 +5291,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Royal d'Infanterie:Royaux d'Infanterie</Text>
+            <Text>Fantassin de ligne royale:Fantassins de ligne royales</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -5712,9 +5723,14 @@
         <Tag>TXT_KEY_UNIT_SLOOP</Tag>
         <English>
             <Text>Sloop:Sloops</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </English>
+        <French>
+            <Text>Sloup:Sloups</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
         <German>
             <Text>Schaluppe:Schaluppen</Text>
             <Gender>Female</Gender>
@@ -5740,8 +5756,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_SLOOP_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Sloops[COLOR_REVERT] are the fastest naval units in the game and, because of that, they are particularly suitable for exploring the seas of the New World and searching out [LINK=IMPROVEMENT_GOODY_HUT3]shipwrecks[\LINK].[NEWLINE]They have only one cargo slot which makes them practically useless as trading vessels, but they can transport [LINK=CONCEPT_UNITS]military units[\LINK] very swiftly to where they are needed.[NEWLINE][COLOR_HIGHLIGHT_TEXT]Sloops[COLOR_REVERT] are cheap in [LINK=CONCEPT_EUROPE]Europe[\LINK] and can be built in colonies with a [LINK=BUILDING_DRYDOCK]drydock[\LINK] or one of its upgrades.[NEWLINE]Like most ships they need [LINK=YIELD_CANNONS]cannons[\LINK], [LINK=YIELD_ROPE]ropes[\LINK], [LINK=YIELD_SAILCLOTH]sailcloth[\LINK] and [LINK=YIELD_TOOLS]tools[\LINK].[PARAGRAPH:2]For a comparison of all ships that are available, see [LINK=CONCEPT_SHIPS]Ships[\LINK].</English>
-        <French>Même si peu puissants, les [COLOR_UNIT_TEXT]sloops[COLOR_REVERT] sont d'excellents navires de reconnaissance qui peuvent achever des navires déjà endommagés.</French>
+        <English>[COLOR_UNIT_TEXT]Sloops[COLOR_REVERT] are the fastest naval units in the game and, because of that, they are particularly suitable for exploring the seas of the New World and searching out [LINK=IMPROVEMENT_GOODY_HUT3]shipwrecks[\LINK].[NEWLINE]They have only one cargo slot which makes them practically useless as trading vessels, but they can transport [LINK=CONCEPT_UNITS]military units[\LINK] very swiftly to where they are needed.[NEWLINE]Their limited draft allows them to sail up [LINK=CONCEPT_LARGE_RIVERS]Large Rivers[\LINK] mostly unopposed by other ship classes. [NEWLINE][COLOR_HIGHLIGHT_TEXT]Sloops[COLOR_REVERT] are cheap in [LINK=CONCEPT_EUROPE]Europe[\LINK] and can be built in colonies with a [LINK=BUILDING_DRYDOCK]drydock[\LINK] or one of its upgrades.[NEWLINE]Like most ships they need [LINK=YIELD_CANNONS]cannons[\LINK], [LINK=YIELD_ROPE]ropes[\LINK], [LINK=YIELD_SAILCLOTH]sailcloth[\LINK] and [LINK=YIELD_TOOLS]tools[\LINK].[PARAGRAPH:2]For a comparison of all ships that are available, see [LINK=CONCEPT_SHIPS]Ships[\LINK].</English>
+        <French>Les [COLOR_UNIT_TEXT]Sloups[COLOR_REVERT] sont les unités navales les plus rapides du jeu, et à cause de ça, sont adaptées à l'exploration des mers du Nouveau Monde et à fouiller les [LINK=IMPROVEMENT_GOODY_HUT3]épaves[\LINK].[NEWLINE]Ils n'ont qu'un emplacement de cale, ce qui les rend quasi inutiles comme navire marchand, mais ils peuvent transporter des [LINK=CONCEPT_UNITS]troupes[\LINK] là où elles sont nécessaires.[NEWLINE] Leur faible tirant d'eau leur permet de remonter [LINK=CONCEPT_LARGE_RIVERS]les grandes rivières[\LINK] sans rencontrer d'opposition d'autres classe de navires.
+            <!-- TODO -->.</French>
         <German>Obwohl eine [COLOR_UNIT_TEXT]Schaluppe[COLOR_REVERT] kein besonders starkes Kriegsschiff ist, eignet es sich hervorragend zur Aufklärung und auch dazu angeschlagenen Schiffen den Rest zu geben.</German>
     </TEXT>
     <TEXT>

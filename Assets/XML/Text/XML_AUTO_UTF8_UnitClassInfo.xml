@@ -2708,7 +2708,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Tirailleur royal:Tirailleurs royaux</Text>
+            <Text>Soldat d'infanterie royale:Soldats d'infanterie royale</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -3563,7 +3563,7 @@
         <Tag>TXT_KEY_UNITCLASS_VETERAN</Tag>
         <English>Veteran Infantry Soldier:Veteran Infantry Soldiers</English>
         <French>
-            <Text>Soldat vétéran:Soldats vétérans</Text>
+            <Text>Soldat d'infanterie vétéran:Soldats d'infanteries vétérans</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>

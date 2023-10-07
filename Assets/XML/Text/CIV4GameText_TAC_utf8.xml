@@ -1532,6 +1532,13 @@
         <Russian>[COLOR_POSITIVE_TEXT]Победа, Милорд! [COLOR_REVERT]К тому же, нам удалось захватить вражеский [COLOR_WARNING_TEXT]корабль[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_MISC_YOU_UNIT_CAPTURED_PRISONER_OF_WAR</Tag>
+        <English>A few wounded enemy soldiers survived the battle and were taken as [COLOR_WARNING_TEXT]prisoners of war[COLOR_REVERT].</English>
+        <French>Une unité ennemie a été capturé après le combat.</French>
+        <German>Einige verletzte feindliche Soldaten haben die Schlacht überlebt und wurden als [COLOR_WARNING_TEXT]Kriegsgefangene[COLOR_REVERT] genommen.</German>
+        <Russian>Несколько раненых солдат противника выжили в бою и были взяты в качестве [COLOR_WARNING_TEXT]военнопленных[COLOR_REVERT].</Russian>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_MISC_YOU_UNIT_ESCAPED</Tag>
         <English>[COLOR_WARNING_TEXT]Bad news, Milord! [COLOR_REVERT]Although already being defeated by your [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT], a [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] has escaped during sunset!</English>
         <French>Après sa défaite contre votre %s1_UnitName, l'unité %s2_EnUName a pris la fuite.</French>

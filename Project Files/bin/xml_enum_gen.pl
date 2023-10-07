@@ -436,6 +436,21 @@ sub addVanillaSingleValue
 	$$valueContainer{hardcoded}{$tag} = 1;
 }
 
+sub addVanillaSingleValueEnum
+{
+	my $valueContainer = shift;
+	my $tag = shift;
+	my $number = shift;
+	my $hardcoded = shift;
+	$hardcoded = 1 unless defined $hardcoded;
+	
+	my $type = $varToEnum{$number} || return;
+	
+	$$valueContainer{value}{$tag} = $number;
+	$$valueContainer{vartype}{$tag} = $type;
+	$$valueContainer{hardcoded}{$tag} = $hardcoded;
+}
+
 sub addVanillaValues
 {
 	my %valueContainer =
@@ -617,4 +632,6 @@ sub addVanillaValues
 	addVanillaSingleValue(\%valueContainer, "NATIVE_GOODS_RAID_PERCENT", 50);
 	addVanillaSingleValue(\%valueContainer, "NATIVE_GROWTH_THRESHOLD_MULTIPLIER", 100);
 	addVanillaSingleValue(\%valueContainer, "END_GAME_DISPLAY_WARNING", 100);
+	
+	addVanillaSingleValueEnum(\%valueContainer, "DEFAULT_POPULATION_UNIT", "UNITCLASS_COLONIST", 0);
 }

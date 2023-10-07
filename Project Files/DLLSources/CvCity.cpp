@@ -12890,7 +12890,7 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 	}
 
 	//cases criminal or servant
-	int modcase = convUnit->getUnitInfo().getUnitClassType();
+	UnitClassTypes modcase = convUnit->getUnitInfo().getUnitClassType();
 
 	// WTP, ray, LbD Slaves Revolt and Free - START
 	// modified code to have specific Units for African Slaves and Native Slaves
@@ -12899,34 +12899,36 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 	UnitTypes GeneratedUnitType;
 	int mod;
 
+	const CvPlayer& owner = GET_PLAYER(getOwnerINLINE());
+
 	// convert Unit to Free Unit (Colonist, Freed Slave or Converted Native
 
-	// if CRIMIAL general Default Pop-Unit
-	if (modcase == GC.getDefineINT("UNITCLASS_PRISONER"))
+	// if CRIMIAL or PRISONER of WAR general Default Pop-Unit, but lower chances
+	if (modcase == GLOBAL_DEFINE_UNITCLASS_PRISONER || modcase == GLOBAL_DEFINE_UNITCLASS_PRISONER_OF_WAR)
 	{
 		mod = mod_crim; // Criminals are supposed to have a lower chance
-		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
+		GeneratedUnitType = owner.getUnitType(GLOBAL_DEFINE_DEFAULT_POPULATION_UNIT);
 	}
 
 	// If African Slave generate a Freed Slave
-	else if (modcase == GC.getDefineINT("UNITCLASS_AFRICAN_SLAVE"))
+	else if (modcase == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE)
 	{
 		mod = mod_crim; // we just use the same lower chance as for Criminals
-		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_FREED_SLAVE"));
+		GeneratedUnitType = owner.getUnitType(GLOBAL_DEFINE_UNITCLASS_FREED_SLAVE);
 	}
 
 	// If Native Slave generate a Converted Native
-	else if (modcase == GC.getDefineINT("UNITCLASS_NATIVE_SLAVE"))
+	else if (modcase == GLOBAL_DEFINE_UNITCLASS_NATIVE_SLAVE)
 	{
 		mod = mod_crim; // we just use the same lower chance as for Criminals
-		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_CONVERTED_NATIVE"));
+		GeneratedUnitType = owner.getUnitType(GLOBAL_DEFINE_UNITCLASS_CONVERTED_NATIVE);
 	}
 
 	//default case is servant (and potential others to be configured)
 	else
 	{
 		mod = mod_serv; // Servants are supposed to have a higher chance
-		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
+		GeneratedUnitType = owner.getUnitType(GLOBAL_DEFINE_DEFAULT_POPULATION_UNIT);
 	}
 
 	// WTP, ray, LbD Slaves Revolt and Free - END
@@ -12935,15 +12937,11 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 
 	// WTP, ray, adding modifiers for other LBD features - START
 	int iLearningByDoingFreeModifier = 0;
-	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
+	for (TraitTypes eTrait = FIRST_TRAIT; eTrait < NUM_TRAIT_TYPES; ++eTrait)
 	{
-		TraitTypes eTrait = (TraitTypes) iTrait;
-		if (eTrait != NO_TRAIT)
+		if (hasTrait(eTrait))
 		{
-			if (hasTrait(eTrait))
-			{
-				iLearningByDoingFreeModifier = iLearningByDoingFreeModifier + GC.getTraitInfo(eTrait).getLearningByDoingFreeModifier();
-			}
+			iLearningByDoingFreeModifier = iLearningByDoingFreeModifier + GC.getTraitInfo(eTrait).getLearningByDoingFreeModifier();
 		}
 	}
 	calculatedChance = calculatedChance * (100 + iLearningByDoingFreeModifier) / 100 ;
@@ -12990,13 +12988,13 @@ bool CvCity::LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_se
 	}
 
 	//cases criminal or servant
-	int modcase = convUnit->getUnitInfo().getUnitClassType();
+	UnitClassTypes modcase = convUnit->getUnitInfo().getUnitClassType();
 
 	//default case is servant
 	int mod = mod_serv;
 
-	// if criminal
-	if (modcase == 2)
+	// if criminal or prisoner of war there is a bit higher chance of escaping
+	if (modcase == GLOBAL_DEFINE_UNITCLASS_PRISONER || modcase == GLOBAL_DEFINE_UNITCLASS_PRISONER_OF_WAR)
 	{
 		mod = mod_crim;
 	}
@@ -13011,15 +13009,11 @@ bool CvCity::LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_se
 
 	// WTP, ray, adding modifiers for other LBD features - START
 	int iLearningByDoingRunawayModifier = 0;
-	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
+	for (TraitTypes eTrait = FIRST_TRAIT; eTrait < NUM_TRAIT_TYPES; ++eTrait)
 	{
-		TraitTypes eTrait = (TraitTypes) iTrait;
-		if (eTrait != NO_TRAIT)
+		if (hasTrait(eTrait))
 		{
-			if (hasTrait(eTrait))
-			{
-				iLearningByDoingRunawayModifier = iLearningByDoingRunawayModifier + GC.getTraitInfo(eTrait).getLearningByDoingRunawayModifier();
-			}
+			iLearningByDoingRunawayModifier = iLearningByDoingRunawayModifier + GC.getTraitInfo(eTrait).getLearningByDoingRunawayModifier();
 		}
 	}
 	calculatedChance = calculatedChance * (100 + iLearningByDoingRunawayModifier) / 100 ;
@@ -13070,30 +13064,37 @@ bool CvCity::LbD_try_revolt(CvUnit* convUnit, int base, int mod_crim, int mod_sl
 	}
 
 	//cases criminal or slave
-	int modcase = convUnit->getUnitInfo().getUnitClassType();
+	UnitClassTypes modcase = convUnit->getUnitInfo().getUnitClassType();
 
 	//default case is Criminal - also if we ever have something else
 	int mod;
 	UnitTypes GeneratedUnitType;
 
+	const CvPlayer& owner = GET_PLAYER(getOwnerINLINE());
+
 	// if African Slave
-	if (modcase == GC.getDefineINT("UNITCLASS_AFRICAN_SLAVE"))
+	if (modcase == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE)
 	{
 		mod = mod_slave;
-		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REVOLTING_SLAVE"));
+		GeneratedUnitType = owner.getUnitType(GLOBAL_DEFINE_UNITCLASS_REVOLTING_SLAVE);
 	}
 	// if Native Slave
-	//default case is Criminal - also if we ever have something else
-	else if (modcase == GC.getDefineINT("UNITCLASS_NATIVE_SLAVE"))
+	else if (modcase == GLOBAL_DEFINE_UNITCLASS_NATIVE_SLAVE)
 	{
 		mod = mod_slave;
-		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REVOLTING_NATIVE_SLAVE"));
+		GeneratedUnitType = owner.getUnitType(GLOBAL_DEFINE_UNITCLASS_REVOLTING_NATIVE_SLAVE);
+	}
+	// if Prisoner of War
+	else if (modcase == GLOBAL_DEFINE_UNITCLASS_PRISONER_OF_WAR)
+	{
+		mod = mod_crim;
+		GeneratedUnitType = owner.getUnitType(GLOBAL_DEFINE_UNITCLASS_REVOLTING_PRISONER_OF_WAR);
 	}
 	//default case is Criminal - also if we ever have something else
 	else
 	{
 		mod = mod_crim;
-		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REVOLTING_CRIMINAL"));
+		GeneratedUnitType = owner.getUnitType(GLOBAL_DEFINE_UNITCLASS_REVOLTING_CRIMINAL);
 	}
 
 	// get chance and random value
@@ -13106,21 +13107,15 @@ bool CvCity::LbD_try_revolt(CvUnit* convUnit, int base, int mod_crim, int mod_sl
 
 	// WTP, ray, adding modifiers for other LBD features - START
 	int iLearningByDoingRevoltModifier = 0;
-	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
+	for (TraitTypes eTrait = FIRST_TRAIT; eTrait < NUM_TRAIT_TYPES; ++eTrait)
 	{
-		TraitTypes eTrait = (TraitTypes) iTrait;
-		if (eTrait != NO_TRAIT)
+		if (hasTrait(eTrait))
 		{
-			if (hasTrait(eTrait))
-			{
-				iLearningByDoingRevoltModifier = iLearningByDoingRevoltModifier + GC.getTraitInfo(eTrait).getLearningByDoingRevoltModifier();
-			}
+			iLearningByDoingRevoltModifier = iLearningByDoingRevoltModifier + GC.getTraitInfo(eTrait).getLearningByDoingRevoltModifier();
 		}
 	}
 	calculatedChance = calculatedChance * (100 + iLearningByDoingRevoltModifier) / 100 ;
 	// WTP, ray, adding modifiers for other LBD features - END
-
-
 
 	int randomValue = GC.getGameINLINE().getSorenRandNum(1000, "LbD Revolt Slave");
 

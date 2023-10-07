@@ -1518,6 +1518,12 @@ void CvUnitAI::AI_settlerMove()
 			return;
 		}
 
+		// If we cannot find any suitable city spot, disembark
+		// so that we don't needlessly occupy a cargo hold
+		// TODO: Check if the ship has other cargo
+		if (canUnload())
+			unload();
+
 		getGroup()->pushMission(MISSION_SKIP);
 		return;
 	}
