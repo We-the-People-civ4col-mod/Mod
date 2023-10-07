@@ -1259,6 +1259,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_1_HELP</Tag>
         <English>The indentured servant will run away.</English>
+        <French>Le domestique va prendre la fuite.</French>
         <German>Der Schuldknecht versucht zu fliehen.</German>
         <Russian>Наемный слуга убежит.</Russian>
     </TEXT>
@@ -1307,6 +1308,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SLAVE_HUNTER_OFFERS_SERVICE</Tag>
         <English>A rumour is spreading: There are escaped slaves near [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT].</English>
+        <French>Selon une rumeur, des esclaves fugitifs se trouvent près de [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>Ein Gerücht macht die Runde: Entflohene Sklaven in der Nähe von [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT].</German>
         <Russian>Ходят слухи, что рядом с [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] появились сбежавшие рабы.</Russian>
     </TEXT>
@@ -2737,252 +2739,294 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_GRAVEYARDS</Tag>
         <English>Milord, the church requests that we build graveyards in at least five cities to bury dead citizens. We are promised that also priests will then be sent to hold funeral ceremonies.</English>
+        <French>Sire, l'église demande que nous construisions des ciletières dans cinq villes pour y enterrer nos morts. Il nous a été promis que des prêtres nous seraient envoyés pour mener les funérailles.</French>
         <German>Milord, die Kirche verlangt, dass wir in mindestens fünf Städten Friedhöfe bauen, um tote Bürger zu begraben. Uns wurde versprochen, dass dann auch Priester für die Beerdigungen geschickt werden.</German>
         <Russian>Милорд, церковь требует, чтобы мы построили кладбища как минимум в пяти городах для захоронения умерших граждан. Нам обещают, что потом будут присланы священники для совершения похоронных обрядов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_GRAVEYARDS_DONE</Tag>
         <English>Milord, another colonial nation is the first to have graveyards in five cities.</English>
+        <French>Sire, une autre nation a été la première à construire cinq cimetières dans les villes.</French>
         <German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Friedhöfe errichten.</German>
         <Russian>Милорд, другая колониальная нация первой организовала кладбища в пяти городах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_GRAVEYARDS_DONE</Tag>
         <English>Milord, you've built graveyards in five cities before any other colony could. The church now sends the priests as promised.</English>
+        <French>Sire, vous avez construit les cimetières dans cinq villes, avant qu'une autre civilization ne le fasse. L'Église nous envoie les prêtres promis.</French>
         <German>Milord, Eure Kolonie konnte vor allen anderen in 5 Städten Friedhöfe errichten. Die Kirche schickt nun wie versprochen die Priester.</German>
         <Russian>Милорд, мы построили кладбища в пяти городах раньше, чем любая другая колониальная нация. Церковь уже отправила священников, как и обещалось.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIVE_GRAVEYARDS</Tag>
         <English>Milord, the governor of another colony has built graveyards in five cities before you. You've missed the chance to get the reward from the church.</English>
+        <French>Sire, le gouverneur d'une autre nation a construit cinq cimetières dans ses villes avant vous. Vous avez laissé passer votre chance pour recevoir la récompense de l'Église </French>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch in 5 Städten Friedhöfe errichten. Dadurch habt Ihr die Chance auf eine Belohung durch die Kirche vertan.</German>
         <Russian>Милорд, губернатор другой колонии построил кладбища в пяти городах. Мы упустили шанс получить награду от церкви.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_GRAVEYARDS</Tag>
         <English>Of course we shall ensure that all our dead can rest peacefully in holy soil.</English>
+        <French>Bien sûr, nous ferons en sorte que nous morts connaissent le repos éternel en terre sacrée.</French>
         <German>Selbstverständlich werden wir sicherstellen, dass alle unsere Toten friedvoll in heilger Erde ruhen können.</German>
         <Russian>Конечно, мы позаботимся о том, чтобы все наши умершие могли мирно упокоиться на святой земле.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_GRAVEYARDS_DONE_1</Tag>
         <English>Ensure that the priests are welcomed with a ceremony.</English>
+        <French>Assurez-vous que les prêtres soient accueillis avec cérémonie.</French>
         <German>Stellt sicher, dass die Priester mit Feierlichkeiten willkommen geheißen werden.</German>
         <Russian>Удостоверьтесь, что священники приветствуются должным образом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BAKERIES</Tag>
         <English>Milord, the commander of the town guard of our capitol suggests that we build five more bakeries in our cities to supply the guard with better rations. He promises that this would bring many new volunteers to the guard.</English>
+        <French>Sire, le commandant des piquiers de garde de notre capitale suggère de construire cinq boulangeries dans le nouveau monde pour fournir à la garde de meilleures rations. Il promet que ceci amènera de nombreux volontaires pour la garde.</French>
         <German>Milord, der Befehlshaber der Statdwache unserer Haupstadt schlägt vor, dass wir mehr Bäckereien in unseren Städten bauen, um die Wache mit besseren Rationen zu versorgen. Er verspricht dass dies zu vielen neuen Freiwilligen für die Wache führne wird.</German>
         <Russian>Милорд, командир городской стражи нашей столицы, предлагает нам построить еще пять пекарен в наших городах, чтобы снабжать стражу лучшим пайком. Он обещает, что это приведет в гвардию много новых добровольцев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_BAKERIES_DONE</Tag>
         <English>Milord, another colonial nation is the first to have bakeries in five cities.</English>
+        <French>Une autre nation a construit la première une boulangerie dans cinq de ses villes.</French>
         <German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Bäckereien errichten.</German>
         <Russian>Милорд, другая колониальная нация первой открыла пекарни в пяти городах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BAKERIES_DONE</Tag>
         <English>Milord, you've built bakeries in five cities before any other colony could. New volunteers are ready to be recruited for the guard.</English>
+        <French>Sire, vous avez construit une boulangerie dans cinq villes avant toutes les autres colonies. Les volonatires se pressent pour s'enrôler dans la garde.</French>
         <German>Milord, Eure Kolonie konnte vor allen anderen in fünf Städten Bäckereien errichten. Neue Freiwillge wollen sich der Wache anschließen.</German>
         <Russian>Милорд, мы построили пекарни в пяти городах раньше, чем любая другая колониальная держава. В охрану готовы набрать новых добровольцев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIVE_BAKERIES</Tag>
         <English>Milord, the governor of another colony has built bakeries in five cities before you. You've missed the chance to get new volunteers for the guard.</English>
+        <French>Sire, le gouverneur d'une autre nation a construit une boulangerie dans cinq de ses villes avant vous. Vous avez laissé passer la chance pour l'afflux des volontaires dans la garde.</French>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch in 5 Städten Bäckereien errichten. Dadurch habt Ihr die Chance auf neue Freiwillige für die Wache vertan.</German>
         <Russian>Милорд, губернатор другой колонии построил пекарни в пяти городах раньше нас. Мы упустили шанс получить новых добровольцев для охраны наших городов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_BAKERIES</Tag>
         <English>Of course we shall ensure that the brave men guarding our cities shall be well provisioned.</English>
+        <French>Bien sûr, nous allons nous assurer que les hommes courageux gardant nos villes aient les meilleures rations.</French>
         <German>Selbstverständlich werden wir sicherstellen, dass die mutigen Männer, die unsere Städte bewachen gut versorgt sind.</German>
         <Russian>Конечно, мы позаботимся о том, чтобы храбрецы, охраняющие наши города, были хорошо обеспечены.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_BAKERIES_DONE_1</Tag>
         <English>Ensure that these new volunteers get well trained. But give them a good meal first.</English>
+        <French>Entrainez au mieux ces nouveaux volontaires. Mais donnez leur un bon repas d'abord.</French>
         <German>Stellt sicher, dass die neuen Freiwilligen gut trainiert werden. Aber zuerst gebt ihnen eine anständige Mahlzeit.</German>
         <Russian>Проследите, чтобы новички прошли хорошую подготовку. Но сначала обеспечте их хорошим пайком.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BUTCHERS</Tag>
         <English>Milord, some Hessian mercenaries are looking for a new contract. But they include a strange demand that they will only work for the country with the best sausages. Maybe if we build butcheries in five of our cities we could convince them to come to us.</English>
+        <French>Sire, des mercenaires de Hesse recherchent un nouveau contrat. Mais parmi leurs conditions, ils souhaitent travailler pour le pays avec les meilleures saucisses. Peut-être que si nous construisons des boucheries dans cinq de nos villes, nous pourrons les convaincre de nous rejoindre</French>
         <German>Milord, einige hessische Söldner suchen nach einem neuen Auftrag. Aber sie stellen die seltsame Bedingung dass sie nur für das Land mit den besten Würsten arbeiten wollen. Vielleicht können wir sie davon überzeugen zu uns zu kommen indem wir in fünf unserer Städte Schlachtereien errichten.</German>
         <Russian>Милорд, несколько гессенских наемников ищут новый контракт. Но включают странное требование, что они будут работать только на страну с лучшими колбасами. Может быть, если мы построим дома мясников в пяти наших городах, мы сможем убедить их прийти к нам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_BUTCHERS_DONE</Tag>
         <English>Milord, another colonial nation is the first to have butcheries in five cities.</English>
+        <French>Sire, une autre nation a été la première à construire des boucheries dans cinq de ses villes.</French>
         <German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Schlachtereien errichten.</German>
         <Russian>Милорд, другая колониальная нация первой построила дома мясников в пяти городах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BUTCHERS_DONE</Tag>
         <English>Milord, you've built butcheries in five cities before any other colony could. That convinced the Hessian mercenaries to fight for us.</English>
+        <French>Sire, vous avez construits des boucheries dans cinq de vos villes avant toutes les autres colonies. Les mercenaires de Hesse sont convaincus et nosu ont rejoint.</French>
         <German>Milord, Eure Kolonie konnte vor allen anderen in fünf Städten Schlachtereien errichten. Das hat die hessischen Söldner überzeugt für uns zu kämpfen.</German>
         <Russian>Милорд, мы построили дома мясников в пяти городах раньше, чем любая другая колониальная держава. Это убедило гессенских наемников сражаться за нас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIVE_BUTCHERS</Tag>
         <English>Milord, the governor of another colony has built butcheries in five cities before you. You've missed the chance to hire the Hessian mercenaries.</English>
+        <French>Sire, le gouverneur d'une autre colonie a construit les boucheries dans cinq villes avant vous. Vous avez laissé passer la chance de recruter les mercenaires de Hesse.</French>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch in 5 Städten Schlachtereien errichten. Dadurch habt Ihr die Chance auf die hessischen Söldner vertan.</German>
         <Russian>Милорд, губернатор другой колонии построил дома мясников в пяти городах раньше нас. Мы упустили шанс нанять гессенских наемников.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_BUTCHERS</Tag>
         <English>We shall show them that our butchers make the best sausages in the World!</English>
+        <French>Nous leur montrerons que nos bouchers sont les rois du monde de la saucisse !</French>
         <German>Wir werden beweisen, dass unsere Schlachter die besten Würste der Welt machen!</German>
         <Russian>Мы покажем им, что наши мясники делают лучшие колбасы в мире!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_BUTCHERS_DONE_1</Tag>
         <English>Wonderful, let us celebrate a Hessian sausage festival.</English>
+        <French>Merveilleux, faisons une foire à la saucisse de Francfort.</French>
         <German>Wundervoll, laßt uns ein hessisches Wurstfest feiern.</German>
         <Russian>Замечательно, давайте отпразднуем фестиваль гессенских колбас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_MEDICAL_OFFICES</Tag>
         <English>Milord, our ships that return from Europe bring bad news. There have been outbreaks of the plague in major cities of several countries. Our citizens are worried and demand that we build hospitals in at least five cities to be prepared for the worst. They even offer to raise money to hire more doctors.</English>
+        <French>Sire, une bien mauvaise nouvelle arrive d'Europe avec nos navires. Des résurgences de peste ont frappé des villes majeures dans de nombreux paus. Nos citoyens sont inquiest et exigent que nous construisions des hôpitaux dans au moins cinq de nos villes pour être parés au pire. Ils sont prêt à payer pour recruter plus de médecins?</French>
         <German>Milord, unsere Schiffe die aus Europa zurückkehren bringen schlechte Neuigkeiten. Es scheint, als hätte es Ausbrüche der Pest in den Großstädten mehrerer Länder gegeben. Unsere Bürger sind daher beunruhigt und verlangen, dass wir Krankenhäuser in mindestens fünf Städten bauen, um auf das Schlimmste vorbereitet zu sein. Sie bieten sogar an, Geld für die Anstellung von mehr Ärzten zu sammeln.</German>
         <Russian>Милорд, наши корабли, возвращающиеся из Европы, приносят плохие новости. Вспышки чумы имели место в крупных городах нескольких стран. Наши граждане обеспокоены и требуют построить дома для врачей как минимум в пяти городах, чтобы быть готовыми к худшему. Они даже предлагают собрать деньги, чтобы нанять больше медиков.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_MEDICAL_OFFICES_DONE</Tag>
         <English>Milord, another colonial nation is the first to have hospitals in five cities.</English>
+        <French>Sire, une autre nation a construit la première des hôpitaux dans cinq villes</French>
         <German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Krankenhäuser errichten.</German>
         <Russian>Милорд, другая колониальная нация, первой построила дома для врачей в пяти городах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_MEDICAL_OFFICES_DONE</Tag>
         <English>Milord, you've built hospitals in five cities before any other colony could. As promised our citizens collected money to hire more doctors.</English>
+        <French>Sire, vous avez construit des hôpitaux dans cinq villes avant toute autre nation. Comme promis, nos citoyens se sont cotisés pour recruter des médecins.</French>
         <German>Milord, Eure Kolonie konnte vor allen anderen in fünf Städten Krankenhäuser errichten. Wie versprochen, haben unsere Bürger Geld gesammelt, um mehr Ärzte einzustellen.</German>
         <Russian>Милорд, мы построили дома для врачей в пяти городах раньше, чем любая другая колониальная держава. Как и было обещано, наши граждане собрали деньги, чтобы нанять больше врачей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIVE_MEDICAL_OFFICES</Tag>
         <English>Milord, the governor of another colony has built hospitals in five cities before you. You've missed the chance to convince your citizens to pay for more doctors.</English>
+        <French>Sire, le gouverneur d'une autre colonie a construits des hôpitaux dans cinq villes avant vous. Vosu avez laissé passer l'occasion de faire cotiser vos citoyens pour des médecins.</French>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch in 5 Städten Krankenhäuser errichten. Dadurch habt Ihr die Chance vertan, eure Bürger davon zu überzeugen für mehr Ärzte zu bezahlen.</German>
         <Russian>Милорд, губернатор другой колониальной нации построил больницы в пяти городах. Мы упустили шанс убедить своих граждан платить за большее количество врачей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_MEDICAL_OFFICES</Tag>
         <English>We will ensure medical care for our citizens.</English>
+        <French>Nous assurerons les soins médicaux pour nos citoyens</French>
         <German>Wir werden so gut wie möglich die medizinische Versorgung unserer Bürger sichern.</German>
         <Russian>Мы обеспечим медицинскую помощь нашим гражданам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_MEDICAL_OFFICES_DONE_1</Tag>
         <English>The doctors shall get all they need. Any first sign of the plague shall be reported immediately.</English>
+        <French>Les docteurs recevront tout ce dont ils ont besoin. Tout signe de peste doit être signalé immédiatement.</French>
         <German>Die Ärzte sollen alles bekommen was sie brauche. Jedes noch so kleine Zeichen der Pest muss sofort berichtet werden.</German>
         <Russian>Врачи получат все необходимое. О любых признаках чумы немедленно сообщать мне лично.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_OPERA</Tag>
         <English>Milord, our diplomats in Europe have heard how European high society claims that we're uncivilized barbarians with no culture. If we're the first to build an opera in the New World we would change that image. That would also convince famous artists and actors to come to our colonies.</English>
+        <French>Sire, nos diplomates en Europe ont entendu que la haute société nous tient pour des barbares rustres et pas civilisés. Si nous sommes les premiers à construire un opéra dans le nouveay monde, ceci changera leur perception. Nous pourrions même convaincre des acteurs et artistes célèbres devenir dans nos colonies.</French>
         <German>Milord, unsere Dimplomaten in Europa berichten dass die europäischen Adeligen und die Reichen der Oberschicht behaupten wir wären Barbaren ohne Kultur. Wenn wir die ersten in der Neuen Welt wären, die eine Oper bauen würden, könnten wir dieses Bild ändern. Das würde sicherlich auch berühmte Schauspieler und Künstler überzeugen in unsere Kolonien zu kommen.</German>
         <Russian>Милорд, наши дипломаты в Европе слышали, как европейское высшее общество утверждает, что мы нецивилизованные варвары без культуры. Если бы мы первыми построили оперу в Новом Свете, мы изменили бы этот имидж. Это также убедило бы известных художников и актеров приехать в наши колонии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_OPERA_DONE</Tag>
         <English>Milord, another colonial nation is the first to have built an opera.</English>
+        <French>Sire, une autre colonie a construit a été la première à construire un Opéra.</French>
         <German>Eine Kolonialmacht konnte vor allen anderen eine Oper errichten.</German>
         <Russian>Милорд, другая колониальная нация первой построила оперу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_OPERA_DONE</Tag>
         <English>Milord, you've built an opera before any other colony could. Famous entertainers from Europe and want to come and play in it.</English>
+        <French>Sire, vous avez été le premier à construire un opéra. Des artistes célèbres d'Europe veulent venir et y jouer.</French>
         <German>Milord, Eure Kolonie konnte vor allen anderen eine Oper errichten. Berühmte Schauspieler aus Europa wollen nun darin auftreten.</German>
         <Russian>Милорд, мы построили оперу раньше любой другой колониальной державы. Известные артисты из Европы уже присылают свои заявки на выступление в ней.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIRST_OPERA</Tag>
         <English>Milord, the governor of another colony has built an opera before you. You've missed the chance to convince famous entertainers to come to our colonies.</English>
+        <French>Sire, un gouverneur a construit un opéra avant vous. Vous avez manqué l'occasion de convaincre les artistes de venir dans nos colonies.</French>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch eine Oper errichten. Dadurch habt Ihr die Chance vertan, berühmte Schauspieler anzulocken.</German>
         <Russian>Милорд, губернатор другой колониальной нации построил оперу раньше вас. Мы упустили шанс убедить известных артистов приехать в наши колонии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_OPERA</Tag>
         <English>We shall build that opera and demonstrate our culture to the world.</English>
+        <French>Nous construirons un opéra et monrerons notre culture au reste du monde.</French>
         <German>Wir werden diese Oper bauen und der Welt unsere Kultur demonstrieren.</German>
         <Russian>Мы построим эту оперу и продемонстрируем нашу культуру всему миру.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_OPERA_DONE_1</Tag>
         <English>We are looking forward to see the first performances in our new Opera.</English>
+        <French>Nous attendons avec impatience les premières représentations dans notre nouvel Opéra.</French>
         <German>Wir freuen uns bereits auf die ersten Aufführungen in unserer neuen Oper.</German>
         <Russian>С нетерпением ждем первых спектаклей в нашей новой опере.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_SUPREME_COURT</Tag>
         <English>Milord, European nobles claim that we are not trustworthy business partners because our legal system is not centralized, thus unstable. We could change that by being the first in the New World to build a Supreme Court. If we do so, it would surely motivate judges from Europe to come to our colonies.</English>
+        <French>Sire, des nobles Européens prétendent que nous ne sommes des partenaires commerciaux fiable car notre système légal est trop décentralisé, et donc instable. Nous pourrions changer cela en étant les premiers dans le nouveau monde à construire une Cour Suprême. SI c'est le cas, cela pourra motiver des juges à venir dans nos colonies.</French>
         <German>Milord, europäische Adlige behaupten, dass wir keine vertrauenswürdinge Geschäftspartner seine, da unser Rechtssystem nicht zentralisiert und daher nicht stabil sei. Wir könnten dies dadurch ändern, indem wir die ersten in der Neuen Welt sind, die einen Obersten Gerichtshof bauen. Wenn wir dies erreichen, wird dies sicherlich auch Richter aus Europe davon überzeugen in die neue Welt zu migrieren.</German>
         <Russian>Милорд, европейские дворяне утверждают, что мы ненадежные деловые партнеры, потому что наша правовая система не централизована, а значит, нестабильна. Мы могли бы изменить это, построив первыми в Новом Свете Верховный суд. Если мы это сделаем, это наверняка побудит судей из Европы приехать в наши колонии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_SUPREME_COURT_DONE</Tag>
         <English>Milord, another colonial nation is the first to have built a Supreme Court.</English>
+        <French>Sire, une autre nation a été la première à construire une Cour Suprême.</French>
         <German>Eine Kolonialmacht konnte vor allen anderen einen Obersten Gerichtshof errichten.</German>
         <Russian>Милорд, другая колониальная нация первой построила Верховный суд.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_SUPREME_COURT_DONE</Tag>
         <English>Milord, you've built a Supreme Court before any other colony could. As expected judges from Europe seek the opportunity to work in it.</English>
+        <French>Sire, vous êtes le premier à construire une Cour Suprême. Comme attendu, des juges venus d'Europe recherche la possibilité de venir y travailler</French>
         <German>Milord, Eure Kolonie konnte vor allen anderen einen Obersten Gerichtshof errichten. Wie erwartet suchen nun Richter aus Europa darin eine Anstellung.</German>
         <Russian>Милорд, мы построили Верховный суд раньше любой другой колонии. Как и ожидалось, судьи из Европы ищут возможность поработать в нем.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIRST_SUPREME_COURT</Tag>
         <English>Milord, the governor of another colony has built a Supreme Court before you. You've missed the chance to convince judges from Europe to come to us.</English>
+        <French>Sire, le gouverneur d'une autre colonie a construit une Cour Suprême avant vous. Vous avez laissé passer votre chance pour convaincre des juges à travailler pour nous.</French>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch einen Obersten Gerichtshof errichten. Dadurch habt Ihr die Chance vertan, Richter aus Europa anzulocken.</German>
         <Russian>Милорд, губернатор другой колониальной державы построил Верховный суд раньше нас. Мы упустили шанс убедить судей из Европы приехать к нам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_SUPREME_COURT</Tag>
         <English>We will build a Supreme Court to ensure a stable legal system in our colonies.</English>
+        <French>Nous construirons une Cour Suprême pour assurer l'uniformité du droit dans nos colonies.</French>
         <German>Wir werden einen Obersten Gerichtshof bauen, um ein stabiles Rechtssystem in unseren Kolonien zu gewährleisten.</German>
         <Russian>Мы построим Верховный суд, чтобы обеспечить стабильную правовую систему в наших колониях.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_SUPREME_COURT_DONE_1</Tag>
         <English>The judges shall get to work. There will be law and order in our colonies.</English>
+        <French>Les juges doivent se mettre au travail. Le droit, la loi et l'ordre règneront dans nos colonies.</French>
         <German>Die Richter sollen ans Werk gehen. Es soll Recht und Ordnung in useren Kolonien herrschen.</German>
         <Russian>Судьи должны приступить к работе. В наших колониях воцарится закон и порядок.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_COLONIAL_CONGRESS</Tag>
         <English>Milord, our diplomats negotiating with the other colonies report that we seem politically fragmented. We should install a Colonial Congress to consolidate political opinions. This would also attract more qualified statesmen.</English>
+        <French>Sire, nos diplomates négoicant avec les autres colonies nous rapportent notre désunion politique. Nous devons installer un Congrès Colonial pour réunir les différentes opinions politiques. Ceci attirera des hommes d'État qualifiée.</French>
         <German>Milord, unsere Diplmaten, die von Verhandlungen mit anderen Kolonialmächten zurückkehren berichten dass wir den Eindruck vermitteln politisch uneins zu sein. Wir sollten einen Kolonialkongress gründen, um die politische Meinungen zu konsolidieren. Dies würde sicherlich auch dazu führen, dass wir weitere begabte Staasmänner findne.</German>
         <Russian>Милорд, наши дипломаты, ведущие переговоры с другими колониальными державами, сообщают, что мы кажемся политически раздробленными. Мы должны создать Колониальный Конгресс, чтобы консолидировать политические взгляды. Это также привлекло бы более квалифицированных государственных деятелей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_COLONIAL_CONGRESS_DONE</Tag>
         <English>Milord, another colonial nation is the first to have built a Colonial Congress.</English>
+        <French>Sire, une autre nation a construit la première un Congrès Colonial.</French>
         <German>Eine Kolonialmacht konnte vor allen anderen einen Kolonialkongress errichten.</German>
         <Russian>Милорд, другая колониальная нация первой создала Колониальный Конгресс.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_COLONIAL_CONGRESS_DONE</Tag>
         <English>Milord, you've built a Colonial Congress before any other colony could. As promised young motivated statesmen are waiting to get to work.</English>
+        <French>Sire, vous avez été le premier à construire un Congrès colonial. Comme promis, des jeunes hommes d'État motivés attendent de venir au travail.</French>
         <German>Milord, Eure Kolonie konnte vor allen anderen in fünf Städten Krankenhäuser errichten. Wie versprochen warten nun junge motivierte Staatsmänner darauf ans Werk zu gehen.</German>
         <Russian>Милорд, мы построили Колониальный Конгресс раньше, чем любая другая колониальная нация. Как и ожидалось, молодые целеустремленные государственные деятели ждут начала работы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIRST_COLONIAL_CONGRESS</Tag>
         <English>Milord, the governor of another colony has built a Colonial Congress before you. You've missed the chance to convince more statesmen to work for us.</English>
+        <French>Sire, le gouverneur d'une autre colonie a construit un congrès colonial avant vous. Vous avez laissé passer votre chance de convaincre plus d'hommes d'États à travailleur pour notre cause.</French>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch einen Kolonialkongress in errichten. Dadurch habt Ihr die Chance vertan, weitere Staatsmänner zu gewinnen.</German>
         <Russian>Милорд, губернатор другой колониальной державы построил Колониальный Конгресс раньше нас. Мы упустили возможность убедить больше государственных деятелей работать на нас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_COLONIAL_CONGRESS</Tag>
         <English>We shall establish a Colonial Congress as central political institution in the colonies.</English>
+        <French>Nous établirons un congrès colonual comme institution politique centrale dans nos colonies.</French>
         <German>Wir werden einen Kolonialkongress als zentrale politische Einrichtung in den Kolonien etablieren.</German>
         <Russian>Мы создадим Колониальный Конгресс как центральный политический институт в колониях.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_COLONIAL_CONGRESS_DONE_1</Tag>
         <English>The new statesmen shall get to work. From now on our colonies shall speak with one political voice in negotations with foreign powers.</English>
+        <French>Les nouveaux hommes d'État doivent se concerter. À partir de maintenant, nos colonies doivent parler à l'unisson lors des négociations avec les puissances étrangères.</French>
         <German>Die neuen Staatsmänner sollen ans Werk gene. Unsere Kolonien sollen von nun an in Verhandlungen mit anderne Mächten mit einer einzigen politischen Stimme sprechen.</German>
         <Russian>Новые государственные деятели должны приступать к работе. Отныне наши колонии будут говорить единым политическим голосом в переговорах с иностранными державами.</Russian>
     </TEXT>

@@ -720,6 +720,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_SHOP</Tag>
         <English>Powder Makers' Shop</English>
+        <French>Atelier du fabricant de poudre</French>
         <German>
             <Text>Pulverladen</Text>
             <Gender>Male</Gender>
@@ -730,6 +731,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_FACTORY</Tag>
         <English>Powder Magazine</English>
+        <French>Usine poudrière</French>
         <German>
             <Text>Pulverfabrik</Text>
             <Gender>Female</Gender>
