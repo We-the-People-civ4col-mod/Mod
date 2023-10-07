@@ -6710,6 +6710,9 @@ void CvPlayer::processTrait(TraitTypes eTrait, int iChange)
 					// R&R, ray, making peace with Animals fixed
 					if (!GC.getGameINLINE().isBarbarianPlayer(kLoopPlayer.getID()))
 					{
+						if (GC.getGameINLINE().isChurchPlayer(kLoopPlayer.getID()))
+							continue;
+
 						forcePeace(eLoopPlayer);
 					}
 				}
