@@ -3,6 +3,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_FOREST</Tag>
         <English>Deciduous Forest</English>
+        <French>Forêt de feuillus</French>
         <German>
             <Text>Laubwald</Text>
             <Gender>Male</Gender>
@@ -19,6 +20,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_FOREST_EVERGREEN</Tag>
         <English>Coniferous Forest</English>
+        <French>Forêt de conifères</French>
         <German>
             <Text>Nadelwald</Text>
             <Gender>Male</Gender>
@@ -37,6 +39,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_DENSE_FOREST</Tag>
         <English>Dense Forest</English>
+        <French>Forêt dense</French>
         <German>
             <Text>Dichter Wald</Text>
             <Gender>Male</Gender>
@@ -52,6 +55,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_FOREST_TUNDRA</Tag>
         <English>Northern Forest</English>
+        <French>Forêt boréale</French>
         <German>
             <Text>Nordwald</Text>
             <Gender>Female</Gender>
@@ -62,6 +66,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ANCIENT_FOREST</Tag>
         <English>Ancient Northern Forest</English>
+        <French>Forêt boréale primordiale</French>
         <German>
             <Text>Alter Nordwald</Text>
             <Gender>Male</Gender>
@@ -141,6 +146,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_MANGROVE</Tag>
         <English>Mangroves</English>
+        <French>Mangrove</French>
         <German>
             <Text>Mangroven</Text>
             <Gender>Female</Gender>
@@ -156,6 +162,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_TROPICAL_GROVES</Tag>
         <English>Tropical Grove</English>
+        <French>Bosquet tropical:Bosquets tropicaux</French>
         <German>
             <Text>Tropischer Hain</Text>
             <Gender>Male</Gender>
@@ -171,6 +178,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_TAR_PIT</Tag>
         <English>Tar Pit</English>
+        <French>Goudron</French>
         <German>
             <Text>Teergrube</Text>
             <Gender>Female</Gender>
@@ -186,6 +194,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_SALT_PAN</Tag>
         <English>Salt Desert</English>
+        <French>Désert salin</French>
         <German>
             <Text>Salzwüste</Text>
             <Gender>Female</Gender>
@@ -201,6 +210,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_SALT_DRAINAGE</Tag>
         <English>Salt Water Pools</English>
+        <French>Marais salant naturel</French>
         <German>
             <Text>Salzwassertümpel</Text>
             <Gender>Female</Gender>
@@ -216,6 +226,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_FLOOD_PLAINS</Tag>
         <English>Fertile Flood Plains</English>
+        <French>Plaine d'inondation</French>
         <German>
             <Text>Fruchtbares Schwemmland</Text>
             <Gender>Female</Gender>
@@ -231,6 +242,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_CRATER</Tag>
         <English>Meteor Crater</English>
+        <French>Cartère de météorite</French>
         <German>
             <Text>Meteoritenkrater</Text>
             <Gender>Female</Gender>
@@ -246,6 +258,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_IMPASSABLE_MOUNTAIN</Tag>
         <English>Impassable Mountain</English>
+        <French>Montagne infranchissable</French>
         <German>
             <Text>Unpassierbarer Berg</Text>
             <Gender>Female</Gender>
@@ -261,6 +274,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_DESERT</Tag>
         <English>Rock Formation (Desert)</English>
+        <French>Formation rocheuse (Désert)</French>
         <German>
             <Text>Felsenformation (Wüste)</Text>
             <Gender>Female</Gender>
@@ -276,6 +290,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_TEMPERATE</Tag>
         <English>Rock Formation (Temperate)</English>
+        <French>Formation rocheuse (tempérée)</French>
         <German>
             <Text>Felsenformation (Gemäßigt)</Text>
             <Gender>Female</Gender>
@@ -291,6 +306,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_POLAR</Tag>
         <English>Rock Formation (Polar)</English>
+        <French>Formation rocheuse (polaire)</French>
         <German>
             <Text>Felsenformation (Polar)</Text>
             <Gender>Female</Gender>
@@ -333,6 +349,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_SWAMP</Tag>
         <English>Swamp</English>
+        <French>Marais</French>
         <German>
             <Text>Sumpf</Text>
             <Gender>Male</Gender>
@@ -348,6 +365,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_BOG</Tag>
         <English>Bog</English>
+        <French>Fondrière</French>
         <German>
             <Text>Moorpflanzen</Text>
             <Gender>Female</Gender>
@@ -363,6 +381,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_BARREL_CACTUS</Tag>
         <English>Barrel Cactus Field</English>
+        <French>Champ de cactus</French>
         <German>
             <Text>Kugelkaktusfeld</Text>
             <Gender>Neuter</Gender>
@@ -378,6 +397,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_CACTUS_TREES</Tag>
         <English>Cactus Trees</English>
+        <French>Cactus géant</French>
         <German>
             <Text>Kaktusbäume</Text>
             <Gender>Male</Gender>
@@ -393,6 +413,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_LICHEN</Tag>
         <English>Lichen</English>
+        <French>Lichen</French>
         <German>
             <Text>Flechten</Text>
             <Gender>Female</Gender>
@@ -408,6 +429,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_MOSS</Tag>
         <English>Moss</English>
+        <French>Mousse</French>
         <German>
             <Text>Moos</Text>
             <Gender>Neuter</Gender>
@@ -423,6 +445,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_THICKET</Tag>
         <English>Thicket</English>
+        <French>Bosquet</French>
         <German>
             <Text>Dickicht</Text>
             <Gender>Neuter</Gender>
@@ -469,6 +492,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_SANDSTORM</Tag>
         <English>Sandstorm</English>
+        <French>Tempête de sable</French>
         <German>
             <Text>Sandsturm</Text>
             <Gender>Male</Gender>
@@ -499,6 +523,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_FOG</Tag>
         <English>Fog</English>
+        <French>Brouillard</French>
         <German>
             <Text>Nebel</Text>
             <Gender>Male</Gender>
@@ -514,6 +539,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_REEF</Tag>
         <English>Coral Reef</English>
+        <French>Récif de coraux</French>
         <German>
             <Text>Korallenriff</Text>
             <Gender>Male</Gender>
@@ -529,6 +555,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_STONE_REEF</Tag>
         <English>Rock Reef</English>
+        <French>Récifs rocheux</French>
         <German>
             <Text>Felsenriff</Text>
             <Gender>Male</Gender>
@@ -544,6 +571,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_PEARL_REEF</Tag>
         <English>Pearl Reef</English>
+        <French>Récif perlier</French>
         <German>
             <Text>Perlenriff</Text>
             <Gender>Male</Gender>
@@ -559,6 +587,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_KELP</Tag>
         <English>Kelp</English>
+        <French>Varech</French>
         <German>
             <Text>Seetang</Text>
             <Gender>Male</Gender>
@@ -574,6 +603,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_SEAGRASS</Tag>
         <English>Seagrass</English>
+        <French>Sargasse</French>
         <German>
             <Text>Seegrass</Text>
             <Gender>Male</Gender>
@@ -589,6 +619,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_N</Tag>
         <English>North Stream</English>
+        <French>Courant vers le nord</French>
         <German>
             <Text>Nord Strömung</Text>
             <Gender>Male</Gender>
@@ -604,6 +635,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_S</Tag>
         <English>South Stream</English>
+        <French>Courant vers le sud</French>
         <German>
             <Text>Süd Strömung</Text>
             <Gender>Male</Gender>
@@ -619,6 +651,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_E</Tag>
         <English>East Stream</English>
+        <French>Courant vers l'est</French>
         <German>
             <Text>Ost Strömung</Text>
             <Gender>Male</Gender>
@@ -634,6 +667,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_W</Tag>
         <English>West Stream</English>
+        <French>Courant vers l'Ouest</French>
         <German>
             <Text>West Strömung</Text>
             <Gender>Male</Gender>
@@ -649,6 +683,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_NE</Tag>
         <English>North-East Stream</English>
+        <French>Courant vers le Nord Est</French>
         <German>
             <Text>Nord-Ost Strömung</Text>
             <Gender>Male</Gender>
@@ -664,6 +699,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_NW</Tag>
         <English>North-West Stream</English>
+        <French>Courant vers le Nord-Ouest</French>
         <German>
             <Text>Nord-West Strömung</Text>
             <Gender>Male</Gender>
@@ -679,6 +715,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_SE</Tag>
         <English>South-East Stream</English>
+        <French>Courant vers le Sud-Est</French>
         <German>
             <Text>Süd-Ost Strömung</Text>
             <Gender>Male</Gender>
@@ -694,6 +731,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_ARROW_SW</Tag>
         <English>South-West Stream</English>
+        <French>Courant vers le Sud-Ouest</French>
         <German>
             <Text>Süd-Ost Strömung</Text>
             <Gender>Male</Gender>
@@ -709,6 +747,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_LUSHGRASS</Tag>
         <English>Lush Grass</English>
+        <French>Herbes hautes</French>
         <German>
             <Text>Saftiges Gras</Text>
             <Gender>Male</Gender>
@@ -724,6 +763,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_WILD_FLOWERS</Tag>
         <English>Wild Flowers</English>
+        <French>Fleurs sauvages</French>
         <German>
             <Text>Wilde Blumen</Text>
             <Gender>Male</Gender>
@@ -734,11 +774,13 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_WILD_FLOWERS_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Wildflowers[COLOR_REVERT] are pretty, but in the colonial era their commercial value is insignificant.</English>
+        <French>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Wildflowers[COLOR_REVERT] sont jolies, mais leur valeur commerciale à l'ère coloniale est dérisoire. Elles permettent de plus grandes possibilités d'élevages.</French>
         <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Wilde Blumen[COLOR_REVERT]tbd</German>-->
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_MEADOW</Tag>
         <English>Hill Meadow</English>
+        <French>Bocage de collines</French>
         <German>
             <Text>Weidelhügel</Text>
             <Gender>Male</Gender>
@@ -754,6 +796,7 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_SHRUB</Tag>
         <English>Shrubs</English>
+        <French>Buissons</French>
         <German>
             <Text>Sträuche</Text>
             <Gender>Male</Gender>
@@ -861,17 +904,20 @@
     <TEXT>
         <Tag>TXT_KEY_FEATURE_RIVER_FORD</Tag>
         <English>River Ford</English>
+        <French>Passage à gué</French>
         <German>Flussfurt</German>
         <Russian>Речной брод</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_RIVER_FORD_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]River fords[COLOR_REVERT] allow all land units to make it across a [LINK=TERRAIN_LARGE_RIVERS]large river[\LINK] without being swept away. They form naturally from sediment deposited by the flowing river.</English>
+        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]passages à gué[COLOR_REVERT] permettent à toutes les unités de traverser des [LINK=TERRAIN_LARGE_RIVERS]grandes  rivières[\LINK] sans être emportés par le courant. Ils se forment naturellement avec le dépôt de sédiments par le cours de la rivière. </French>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Flussfurten[COLOR_REVERT] erlauben es allen Landeinheiten, einen [LINK=TERRAIN_LARGE_RIVERS]Großen Fluss[\LINK] zu überqueren. Sie enstehen auf natürliche Weise durch Ablagerungen von Sedimenten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_FEATURE_ALLOWS_CROSSING_OF_LARGE_RIVERS</Tag>
         <English>[ICON_BULLET]Allows all land units to cross [LINK=TERRAIN_LARGE_RIVERS]large rivers[\LINK]</English>
+        <French>[ICON_BULLETPermet à toutes les unités terrestres de traverser les [LINK=TERRAIN_LARGE_RIVERS]grandes rivières[\LINK]</French>
         <German>[ICON_BULLET]Erlaubt es allen Landeinheiten, einen [LINK=TERRAIN_LARGE_RIVERS]Großen Fluss[\LINK] zu überqueren.</German>
     </TEXT>
 </Civ4GameText>
