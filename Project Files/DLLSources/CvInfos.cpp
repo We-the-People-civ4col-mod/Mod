@@ -4249,6 +4249,19 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	m_iLeaderPromotion = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(&m_iLeaderExperience, "iLeaderExperience");
 	updateArtDefineButton();
+
+
+#ifdef FASSERT_ENABLE
+	// test if xml data is valid
+	for (int i = 0; i < m_info_YieldDemands.getLength(); ++i)
+	{
+		FAssertMsg(m_info_YieldDemands.get1(i) > 0, CvString::format("%s: %s demanded at 0 amount (index %d)", getType(), getTypeStr(m_info_YieldDemands.get0(i)), i).c_str());
+	}
+
+#endif // FASSERT_ENABLE
+
+
+
 	return true;
 }
 
