@@ -2907,7 +2907,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_OPERA</Tag>
         <English>Milord, our diplomats in Europe have heard how European high society claims that we're uncivilized barbarians with no culture. If we're the first to build an opera in the New World we would change that image. That would also convince famous artists and actors to come to our colonies.</English>
-        <French>Sire, nos diplomates en Europe ont entendu que la haute société nous tient pour des barbares rustres et pas civilisés. Si nous sommes les premiers à construire un opéra dans le nouveay monde, ceci changera leur perception. Nous pourrions même convaincre des acteurs et artistes célèbres devenir dans nos colonies.</French>
+        <French>Sire, nos diplomates en Europe ont entendu que la haute société d'Europe nous tient pour des rustres sans culture. Si nous sommes les premiers à construire un opéra dans le nouveay monde, ceci changera leur perception. Nous pourrions même convaincre des acteurs et artistes célèbres devenir dans nos colonies.</French>
         <German>Milord, unsere Dimplomaten in Europa berichten dass die europäischen Adeligen und die Reichen der Oberschicht behaupten wir wären Barbaren ohne Kultur. Wenn wir die ersten in der Neuen Welt wären, die eine Oper bauen würden, könnten wir dieses Bild ändern. Das würde sicherlich auch berühmte Schauspieler und Künstler überzeugen in unsere Kolonien zu kommen.</German>
         <Russian>Милорд, наши дипломаты в Европе слышали, как европейское высшее общество утверждает, что мы нецивилизованные варвары без культуры. Если бы мы первыми построили оперу в Новом Свете, мы изменили бы этот имидж. Это также убедило бы известных художников и актеров приехать в наши колонии.</Russian>
     </TEXT>
@@ -2920,8 +2920,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_OPERA_DONE</Tag>
-        <English>Milord, you've built an opera before any other colony could. Famous entertainers from Europe and want to come and play in it.</English>
-        <French>Sire, vous avez été le premier à construire un opéra. Des artistes célèbres d'Europe veulent venir et y jouer.</French>
+        <English>Milord, you've built an opera before any other colony could. Famous entertainers from Europe want to come and play in it.</English>
+        <French>Sire, vous avez été le premier à construire un opéra. Des artistes célèbres d'Europe veulent venir y jouer.</French>
         <German>Milord, Eure Kolonie konnte vor allen anderen eine Oper errichten. Berühmte Schauspieler aus Europa wollen nun darin auftreten.</German>
         <Russian>Милорд, мы построили оперу раньше любой другой колониальной державы. Известные артисты из Европы уже присылают свои заявки на выступление в ней.</Russian>
     </TEXT>
@@ -3033,12 +3033,14 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_CUSTOM_OFFICE</Tag>
         <English>Milord, our customs officers report that our customs system is flawed and corrupt. We lose money each day. We need to establish a Central Customs Auhtority to regulate affairs and root out such corruption. Some black market traders might end up working for us legally.</English>
+        <French>Sire, nos offciers des douanes nous rapporte que notre système de collecte actuel est corrompu et faillible. Il y a un manque à gagner énorme. Nous devons mettre en place une autorité centrale des douanes pour réguler tout ça et mettre fin aux abus. Il sera même possible de recruter des marchands qui travaillaient dans le marché  noir.</French>
         <German>Milord, unsere Zollbeamten berichten, dass die Zollerhebung eher schlecht funktioniert und zudem korruptionsanfällig ist. Uns entgehen dadurch tagtäglich Einnahmen. Wir müssen ein Zentrales Zollamt errichten, um die Zollerhebung einheitlich zu regeln und der Korruption die Basis zu entziehen. Dann werden sich letztlich auch Schmuggler und die Verkäufer von geschmuggelter Waren der Zollerhebung nicht mehr entziehen können und ihre Abgaben abführen.</German>
         <Russian>Милорд, наши таможенники сообщают, что наша таможенная система несовершенна и коррумпирована. Мы теряем деньги каждый день. Нам необходимо создать Центральное таможенное управление для регулирования дел и искоренения такой коррупции. Некоторые торговцы с черного рынка могут работать на нас легально.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_CUSTOM_OFFICE_DONE</Tag>
         <English>Milord, another colonial nation is the first to have built a Central Customs Authority.</English>
+        <French>Sire, une autre nation a construit une Autorité Centrale des Douanes avant nous.</French>
         <German>Eine Kolonialmacht konnte vor allen anderen ein Zentrales Zollamt errichten.</German>
         <Russian>Милорд, другая колониальная нация первой построила Центральное таможенное управление.</Russian>
     </TEXT>
@@ -3321,21 +3323,21 @@
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BURNING_CORN_CHAMBER</Tag>
         <English>A corn chamber in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] caught fire.</English>
-        <French>Un grenier à maïs à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a pris feu.</French>
+        <French>Un grenier à grain à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a pris feu.</French>
         <German>Eine Getreidekammer in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hat Feuer gefangen.</German>
         <Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] загорелся амбар.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BURNING_CORN_CHAMBER</Tag>
         <English>A corn chamber in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] caught fire. Although the fire was extinguished and most of the corn saved, the building is heavily damaged and needs to be repaired or it will collapse.</English>
-        <French>Un grenier à maïs a pris feu à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Même si le feu a pu être éteint, la récolte de grain n'a pas pu être sauvée, le bâtiment est très endommagé et a besoin de réparation pour ne pas s'écrouler.</French>
+        <French>Un grenier à grain a pris feu à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Même si le feu a pu être éteint, la récolte de grain n'a pas pu être sauvée, le bâtiment est très endommagé et a besoin de réparation pour ne pas s'écrouler.</French>
         <German>Eine Getreidekammer in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hat Feuer gefangen. Obwohl das Feuer gelöscht werden konnte, so daß das meiste Getreide gerettet wurde, muss das Gebäude wieder repariert werden, denn es wird sonst bald zusammenfallen.</German>
         <Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] загорелся амбар. И хотя пожар был потушен и большая часть кукурузы спасена, здание сильно повреждено и требует ремонта, иначе оно может рухнуть.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_CONTAMINATED_WELL</Tag>
         <English>The well water in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] was contaminated by a dead animal.</English>
-        <French>L'eau d'un puit à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a été contaminé par le corps d'un animal mort.</French>
+        <French>L'eau d'un puits à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a été contaminé par le corps d'un animal mort.</French>
         <German>Das Wasser eines Brunnens in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] wurde durch ein totes Tier verseucht.</German>
         <Russian>Вода из колодца в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] была загрязнена мертвым животным.</Russian>
     </TEXT>
