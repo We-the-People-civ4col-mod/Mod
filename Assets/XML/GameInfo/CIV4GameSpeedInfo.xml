@@ -83,11 +83,11 @@
             <Type>GAMESPEED_TAC_LONGTERMFORBUILDERS</Type>
             <Description>TXT_KEY_GAMESPEED_TAC_LONGTERMFORBUILDERS</Description>
             <Help>TXT_KEY_GAMESPEED_TAC_LONGTERMFORBUILDERS_HELP</Help>
-            <iGrowthPercent>75</iGrowthPercent>
+            <iGrowthPercent>100</iGrowthPercent>
             <iStoragePercent>300</iStoragePercent>
-            <iTrainPercent>75</iTrainPercent>
+            <iTrainPercent>100</iTrainPercent>
             <iConstructPercent>100</iConstructPercent>
-            <iFatherPercent>1000</iFatherPercent>
+            <iFatherPercent>900</iFatherPercent>
             <iGreatGeneralPercent>100</iGreatGeneralPercent>
             <iRevolutionTurns>3600</iRevolutionTurns>
             <GameTurnInfos>
