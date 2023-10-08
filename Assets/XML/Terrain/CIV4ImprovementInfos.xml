@@ -132,7 +132,7 @@
         </ImprovementInfo>
         <ImprovementInfo>
             <Type>IMPROVEMENT_GOODY_HUT</Type>
-            <Description>TXT_KEY_IMPROVEMENT_GOODY_HUT</Description>
+            <Description>TXT_KEY_GOODY_BURIAL_GROUNDS</Description>
             <Civilopedia>TXT_KEY_IMPROVEMENT_GOODY_HUT_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_IMPROVEMENT_GOODY_HUT</ArtDefineTag>
             <PrereqNatureYields/>
