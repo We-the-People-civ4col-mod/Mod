@@ -70,8 +70,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMESPEED_TAC_LONGTERMFORBUILDERS</Tag>
-        <English>Builder: Long term, but with focus on buildup player</English>
-        <German>Aufbauspiel: Langes Spiel mit Fokus für Aufbauspieler</German>
+        <English>Builder, long term, but with focus on buildup player</English>
+        <German>Aufbauspiel, langes Spiel mit Fokus für Aufbauspieler</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMESPEED_TAC_LONGTERMFORBUILDER_HELP</Tag>
