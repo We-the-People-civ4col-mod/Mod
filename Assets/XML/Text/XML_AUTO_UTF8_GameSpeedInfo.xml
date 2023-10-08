@@ -72,6 +72,7 @@
         <Tag>TXT_KEY_GAMESPEED_TAC_LONGTERMFORBUILDERS</Tag>
         <English>Builder, long term, but with focus on buildup player</English>
         <German>Aufbauspiel, langes Spiel mit Fokus für Aufbauspieler</German>
+        <Russian>Строитель (1 месяц/ход)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMESPEED_TAC_LONGTERMFORBUILDER_HELP</Tag>
