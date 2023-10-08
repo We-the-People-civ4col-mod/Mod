@@ -80,9 +80,9 @@
             </GameTurnInfos>
         </GameSpeedInfo>
         <GameSpeedInfo>
-            <Type>GAMESPEED_TAC_LONGTERMFORBUILDERS</Type>
-            <Description>TXT_KEY_GAMESPEED_TAC_LONGTERMFORBUILDERS</Description>
-            <Help>TXT_KEY_GAMESPEED_TAC_LONGTERMFORBUILDERS_HELP</Help>
+            <Type>GAMESPEED_TAC_FORBUILDERS</Type>
+            <Description>TXT_KEY_GAMESPEED_TAC_FORBUILDERS</Description>
+            <Help>TXT_KEY_GAMESPEED_TAC_FORBUILDERS_HELP</Help>
             <iGrowthPercent>100</iGrowthPercent>
             <iStoragePercent>300</iStoragePercent>
             <iTrainPercent>100</iTrainPercent>
