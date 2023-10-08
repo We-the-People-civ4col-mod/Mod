@@ -2132,7 +2132,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_THE_ROYALS_CONSEQUENCES_4</Tag>
         <English>Milord, MILORD! The newspaper in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] has been blown up! It looks like revenge by a royalist underground movement. They painted "Long live the King" on a nearby wall, signed Sir Sekwaf Yug, a clumsy alias.</English>
-        <French>Seigneur, SEIGNEUR ! Le journal de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a été détruit ! Il semble qu'un mouvement clandestin royaliste est sorti de terre pour se venger. Ils ont peint « Longue vie au Roi » sur un mur à proximité. Le graffiti est signé de M. Sekwaf Yug, un drôle de nom...</French>
+        <French>Seigneur, SEIGNEUR ! Le journal de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a été détruit ! Il semble qu'un mouvement clandestin royaliste est sorti de terre pour se venger. Ils ont peint « Longue vie au Roi » sur un mur à proximité. Le graffiti est signé de M. Alçofricas Lavrain, un drôle de nom...</French><!-- Guy Fawkes à l'envers = anagramme de François Ravaillac -->
         <German>Milord! MILORD ! In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] wurden die Druckerpressen der lokalen Zeitung in die Luft gejagt. Eine versprengte Gruppe Royalisten hat wohl Rache genommen. An einer Wirtshauswand in der Nähe stand in großen Lettern: "Es lebe der König!", unterzeichnet von einem gewissen Sir Sekwaf Yug. Es scheint ein Tarnname zu sein, so heißt doch kein ...</German>
         <Russian>Милорд, МИЛОРД! В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] было взорвано здание газеты! Это похоже на месть подпольного роялистского движения. Они нарисовали "Да здравствует король" на соседней стене и оставили глупую подпись "Сэр Секваф Юг".</Russian>
     </TEXT>
@@ -2156,7 +2156,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_OVERFISHING</Tag>
         <English>Changing currents have disrupted the usual spawning patterns. Fishermen trawling from the ports of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] are hauling in an unusually rich catch. Although seasonal yields are booming, local elders grumble that such intense harvesting may jeopardize the catch in years to come.</English>
-        <French>Un changement dans les courants a perturbé les habitudes de reproduction des poissons. Les pêcheurs de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] transportent une prise exceptionnellement abondante. Bien que les rendements saisonniers sont en plein essor, les anciens se plaignent de cette récolte intense qui peut compromettre la pêche dans les années à venir.</French>
+        <French>Un changement dans les courants a perturbé les habitudes de reproduction des poissons. Les pêcheurs de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] transportent une prise exceptionnellement abondante. Bien que les rendements saisonniers sont en plein essor, les anciens grommèlent que cette surpêche pour cette saison ponctuelle entrainera des années dee vaches maigres.</French>
         <German>Eine Strömungsänderung hat das übliche Laichverhalten gestört und die Fischerleute aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ziehen ungewöhnlich reiche Fänge auf ihre Boote. Obwohl die saisonalen Erträge in die Höhe schiessen, raten erfahrene Fischer zur Zuückhaltung, um durch das intensive Fischen nicht die Erträge der kommenden Jahre zu gefährden.</German>
         <Russian>Изменение течения нарушило обычные схемы нереста. Рыбаки из портов [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] вылавливают необычайно богатый улов. Хотя сезонные урожаи растут, местные старейшины ворчат, что это может поставить под угрозу улов в ближайшие годы.</Russian>
     </TEXT>
@@ -2170,7 +2170,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WITCHTRIAL</Tag>
         <English>The townsfolk are whispering that a large family of recent immigrants to [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] are witches! They keep to themselves, grow strange roots in cottage gardens, and don't attend church on Sundays. One of them even has a birthmark!</English>
-        <French>Le bruit cour qu'une famille de récents immigrants à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] est en fait composée de sorcières ! Elles restent entre elles, font pousser d'étranges racines dans leur jardin, et ne vont pas à l'église le dimanche. L'une d'elles a même une tache de naissance !</French>
+        <French>Le bruit court qu'une famille de récents immigrants à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] est en fait composée de sorcières ! Elles restent entre elles, font pousser d'étranges racines dans leur jardin, et ne vont pas à l'église le dimanche. L'une d'elles a même une tache de naissance !</French>
         <German>Die Bevölkerung flüstert, dass eine grosse Familie, die kürzlich in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] eingewandert ist, unter dem Verdacht der Hexerei steht. Sie bleiben unter sich, bauen seltsame Wurzeln und Kräuter an und nehmen nicht an Gottesdiensten teil. Einer von Ihnen hat sogar ein auffallendes Geburtsmal.</German>
         <Russian>Горожане шепчутся, что женщины большой семьи недавних иммигрантов в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] — ведьмы! Они держатся особняком, собирают какие-то коренья в недалеко от города и не ходят в церковь по воскресеньям. У одной из них даже есть родимое пятно!</Russian>
     </TEXT>
@@ -2198,21 +2198,21 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_WHALING_1_HELP</Tag>
         <English>[COLOR_FONT_GOLD]The price increases since, due to the new offer, citizens now know that train oil burns better than tallow.[COLOR_REVERT]</English>
-        <French>[COLOR_FONT_GOLD]Le prix augmente car, grâce à la nouvelle offre, les citoyens savent maintenant que l'huile de train brûle mieux que le suif.[COLOR_REVERT]</French>
+        <French>[COLOR_FONT_GOLD]Le prix augmente car, grâce à la nouvelle offre, les citoyens savent maintenant que l'huile de baleine brûle mieux que le suif.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Die Nachfrage nach edlem Tranöl steigt in Europa, da die braven Bürger sich aufgrund des neuen Angebots darüber bewusst werden, dass Öl besser brennt als Talg.[COLOR_REVERT]</German>
         <Russian>[COLOR_FONT_GOLD]Цена растёт, так как благодаря новому предложению горожане теперь знают, что ворвань горит лучше, чем обычный жир.[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_COMMANDEERED</Tag>
         <English>Milord, the Royal Navy has requisitioned one of our finest ships to aid in a campaign against the Barbary pirates. How shall we respond?</English>
-        <French>Seigneur, la marine Royale a réquisitionné l'un de nos meilleurs navires pour aider dans une campagne contre des pirates barbares. Comment devons-nous répondre ?</French>
+        <French>Seigneur, la marine Royale a réquisitionné l'un de nos meilleurs navires pour aider dans une campagne contre des pirates barbaresques. Comment devons-nous répondre ?</French>
         <German>Milord, die Royal Navy hat eines unserer besten Schiffe requiriert, um eine Strafaktion gegen die Berber-Piraten zu unterstützen. Wie sollen wir darauf reagieren?</German>
         <Russian>Милорд, Королевский флот требует один из наших лучших кораблей для помощи в кампании против берберских пиратов. Что мы им ответим?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SENDCONVERTS</Tag>
         <English>The Royal Court has been taken with the picturesque garb and customs of certain of our converted Native subjects, and has sent for them to be transported to Europe.</English>
-        <French>La Cour Royale a été saisie de joie en voyant les tenues pittoresques des sauvages. Le Roi souhaite que vous rapportiez un converti à la Cour.</French>
+        <French>La Cour Royale s'est esbaudie en voyant les tenues pittoresques et les coutumes de nos sujets indigènes fraichement convertis, et souhaite que quelques un d'entre eux soient envoyés en Europe.</French>
         <German>Der königliche Hof ist fasziniert von der Kunst und Geschichten der Ureinwohner. Man wünscht, dass wir einen Konvertierten Ureinwohner nach Europa schicken.</German>
         <Russian>Королевский двор очарован искусством и историями нашего крещенного индейца и требует, чтобы мы отправили его в Европу.</Russian>
     </TEXT>
@@ -2268,7 +2268,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HORSETHIEF</Tag>
         <English>A gang of scruffy horse rustlers has seized the finest animals in our herd, and will burn the barns if they're pursued.</English>
-        <French>Une ignoble bande de voleurs de chevaux a saisi les plus beaux animaux de notre troupeau, et menace de mettre le feu aux granges si ils sont poursuivis.</French>
+        <French>Une ignoble bande de voleurs de chevaux a saisi les plus beaux animaux de notre troupeau, et menace de mettre le feu aux écuries si ils sont poursuivis.</French>
         <German>Eine Bande von niederträchtigen Pferdedieben hat die besten Tiere unserer Herde geraubt und droht sogar damit die Stallungen und Scheunen zu verbrennen, wenn Sie verfolgt werden.</German>
         <Russian>Банда угонщиков лошадей захватила лучших животных из нашего стада и грозится поджечь амбары, если мы станем их преследовать.</Russian>
     </TEXT>
@@ -2296,7 +2296,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_KINGFURIOUS</Tag>
         <English>By solemn decree of His Royal Majesty's Privy Council, your treasonous and egregious perfidy has gone on long enough! As partial recompense for your countless misdeeds, a heavy fine must be paid at once into the royal coffers, or royal agents will be authorized to sack [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] and confiscate your undeserved wealth!</English>
-        <French>Par décret Royal, votre perfidie touche à sa fin. En récompense de vos mauvaises actions, le Roi vient d'autoriser la mise à sac des de la colonie suivante: [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ... A moins bien sûr que vous ne dédomagiez la Couronne!</French>
+        <French>Par décret solennel du Conseil privé du Roi, votre perfide  traîtrise éhontée n'a que trop longtemps duré. En compensation de vos innombrables méfaits, le Roi vient d'autoriser la mise à sac de la colonie suivante: [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] pour y saisir vôtre insolente richesse ... à moins bien sûr que vous ne dédommagiez la Couronne comme il se doit.</French>
         <German>Durch unumstösslichen Beschluss Seiner Majestät wird Euer verräterisches Handeln bestraft. Als teilweise Wiedergutmachung Eurer vielen Vergehen werdet Ihr sofort eine Strafe zahlen oder königliche Abgesandte werden dazu autorisiert, im Umland von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] alles zu konfiszieren, was rechtmässig Seiner Majestät gehört!</German>
         <Russian>По указу Тайного Совета Его Королевского Величества ваше изменническое поведение и вопиющее вероломство продолжаются достаточно долго! В качестве частичного возмещения за ваши бесчисленные проступки, крупный штраф должен быть немедленно уплачен в королевскую казну, иначе королевские агенты получат право разграбить [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] и конфисковать ваше незаслуженное богатство!</Russian>
     </TEXT>
@@ -2311,14 +2311,14 @@
         <Tag>TXT_KEY_EVENT_TRIGGER_NATIVETRADE</Tag>
         <!-- used originally %s2city -->
         <English>Since your colonies have now made contact with various Native nations, a local merchant in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] proposes to invest in a network of trading posts to gather rare and valuable spices from distant tribes.</English>
-        <French>Maintenant que vos colonies ont pris contact avec de multiples civilisations indigènes, un marchand local de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vous propose d'investir dans un réseau de poste de douane pour ainsi reccueillir des épices de valeur provenant de tribus lointaines.</French>
+        <French>Maintenant que vos colonies ont pris contact avec de multiples civilisations indigènes, un marchand local de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vous propose d'investir dans un réseau de comptoirs à épices chez les indigènes pour ainsi recueillir des saveurs rares, appréciées, et lointaines.</French>
         <German>Da unsere Kolonien nun Kontakt zu mehreren Ureinwohnerstämmen in unserer Nachbarschaft haben, hat ein örtlicher Händler aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vorgeschlagen, ein Netzwerk aus Handelsposten aufzubauen, dass seltene und wertvolle Gewürze von diesen Stämmen erwirbt.</German>
         <Russian>Поскольку ваши колонии теперь установили контакт с различными коренными народами, местный торговец из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] предлагает инвестировать в сеть торговых постов, чтобы собирать редкие и ценные специи из далеких племен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PIRATEATTACK1</Tag>
         <English>Spying the growing wealth of our sea traders, a scurvy collection of pirates is massing off our shores, demanding ransom lest they put our shipping to fire and the sword!</English>
-        <French>Après avoir espionné nos négociants maritimes dont la richesse est grandissante, une bande de pirates a pillé nos côtes, demandant en rançon pour ne pas passer nos navires par le feux.</French>
+        <French>Après avoir espionné nos négociants maritimes dont la richesse est grandissante, une bande de pirates a pillé nos côtes, demandant en rançon pour ne pas passer nos navires par le feu.</French>
         <German>Durch den wachsenden Reichtum unserer Fernhändler angelockt, hat sich eine dreckige Bande Piraten vor unseren Küsten versammelt. Sie verlangen Lösegeld, damit sie unsere Schiffe nicht in Flammen aufgehen lassen.</German>
         <Russian>Наблюдая за растущим богатством наших морских торговцев, шайка пиратов собирается у наших берегов, требуя выкупа. Иначе они грозятся предать наши корабли огню!</Russian>
     </TEXT>
@@ -2340,7 +2340,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WINE_PLANTS</Tag>
         <English>A European vintager offers to sell us his best grapevines. Of course he wants be paid in gold.</English>
-        <French>Un vigneron européen propose de vendre l'un de ses meilleurs cépages. Il demande d'argon.</French>
+        <French>Un vigneron européen propose de vendre l'un de ses meilleurs cépages. Il demande de l'or en contrepartie.</French>
         <German>Ein Winzer aus Europa bietet uns seine besten Rebstöcke zum Kauf. Er verlangt dafür natürlich gold.</German>
         <Russian>Европейский виноградарь предлагает продать нам свои лучшие виноградные лозы. И конечно, он хочет, чтобы ему платили золотом.</Russian>
     </TEXT>
@@ -2354,7 +2354,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RED_PEPPER_PLANTS</Tag>
         <English>Local Natives will sell us some seeds from their red pepper plants. They ask to be paid in gold in exchange.</English>
-        <French>Des indigènes proposent de nous vendre leurs semences pour des plants de piment. Il demande d'argon.</French>
+        <French>Des indigènes proposent de nous vendre leurs semences de piment rouge. Ils demandent de l'or en contrepartie.</French>
         <German>Ureinwohner aus der Gegend bieten uns Setzlinge ihres Roten Pfeffers zum Kauf. Sie verlangen dafür natürlich gold.</German>
         <Russian>Местные индейцы продадут нам несколько семян своего красного перца. Взамен они хотят получить золото.</Russian>
     </TEXT>
@@ -2368,7 +2368,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SICK_IMMIGRANTS</Tag>
         <English>Some new immigrants have arrived. They're sick and weak from the long voyage.</English>
-        <French>Quelques nouveaux immigrants sont arrivés. Mais ils semblent malade en raison du long voyage en mer.</French>
+        <French>Quelques nouveaux immigrants sont arrivés. Ils sont malades et souffrants en raison du long voyage en mer.</French>
         <German>Einige neue Einwanderer sind eingetroffen. Sie scheinen durch die lange Schiffreise krank geworden zu sein.</German>
         <Russian>Прибыло несколько новых иммигрантов. После длительного путешествия они больны и слабы.</Russian>
     </TEXT>
@@ -2396,7 +2396,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SALT_RESOURCE</Tag>
         <English>Local settlers report that, on nearby hills in the desert, the air tastes very salty. A mining expedition might discover salt deposits but it will cost some gold.</English>
-        <French>Ces colons nous ont informé que l'air est particulièrement salé dans quelques collines du désert. Une expédition minière pourrait y trouver un gisement de sel, mais celle-ci coûtera d'argon.</French>
+        <French>Ces colons nous ont informé que l'air est particulièrement salé dans quelques collines du désert. Une expédition minière pourrait y trouver un gisement de sel, mais celle-ci coûtera un peu.</French>
         <German>Lokale Siedler berichten, dass die Luft auf nahegelegenen Hügeln in der Wüste nach Salz riecht. Eine Expedition zur Exploration des Salzvorkommens würde uns natürlich etwas Gold kosten.</German>
         <Russian>Местные поселенцы сообщают, что в близлежащих холмах в пустыне воздух очень солоноватый на вкус. Горнодобывающая экспедиция может поискать залежи соли, но это будет стоить золота.</Russian>
     </TEXT>
@@ -2424,14 +2424,14 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HOLY_GIANT_TREES</Tag>
         <English>Natives of a nearby tribe are deeply upset because our lumberjacks have cut down a giant tree that was sacred to them. They demand that the lumberjacks be handed over to them for punishment.</English>
-        <French>Les indigènes d'une tribu voisine sont furieux contre nos bûcherons qui ont coupé un arbre géant qui leur était sacré. Ils demandent que les bûcherons leurs sont rendus pour les punir de leur infamie.</French>
+        <French>Les indigènes d'une tribu voisine sont furieux contre nos bûcherons qui ont coupé un arbre géant qui leur était sacré. Ils demandent que les bûcherons leurs soient livrés pour les châtier.</French>
         <German>Ureinwohner eines nahegelegenen Stammes sind sehr verärgert, weil einige unserer Holzfäller einen außergewöhnlich großen Baum gefällt haben, der ihnen heilig war. Sie fordern, dass wir ihnen die Schuldigen zur Bestrafung ausliefern.</German>
         <Russian>Туземцы соседнего племени в ярости от того, что наши лесорубы срубили священное для индейцев гигантское дерево. Они требуют, чтобы лесорубы были переданы им для наказания.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_THANKSGIVING</Tag>
         <English>European colonists in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] have celebrated the first Thanksgiving.</English>
-        <French>Des colons européens de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ont célébré leur premier Thanksgiving.</French>
+        <French>Des colons européens de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ont célébré leur première action de grâce.</French>
         <German>Europäische Kolonisten in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben das erste Erntedankfest gefeiert.</German>
         <Russian>Европейские колонисты в городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] отпраздновали первый День Благодарения.</Russian>
     </TEXT>
@@ -2459,14 +2459,14 @@
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MOLESTING_MISSIONARY</Tag>
         <English>A missionary is accused of sexually molesting Native women.</English>
-        <French>Des missionnaires sont accusés d'avoir abusés de femmes indigènes.</French>
+        <French>Des missionnaires sont accusés d'avoir abusé de femmes indigènes.</French>
         <German>Ein Missionar wurde beschuldigt, Ureinwohnerinnen sexuell zu belästigen.</German>
         <Russian>Миссионера обвиняют в сексуальных домогательствах к туземным женщинам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MOLESTING_MISSIONARY</Tag>
         <English>Some Natives from a nearby village are in one of our cities. They've brought a missionary, his hands tied, and they accuse him of having sexually molested their women.</English>
-        <French>Des indigènes d'un village voisin sont venus dans l'une de nos villes. Ils avaient un missionnaire avec eux auxquels ils ont liés les mains. Ils l'accusent d'avoir abusé sexuellement de leurs femmes.</French>
+        <French>Des indigènes d'un village voisin sont venus dans l'une de nos villes. Ils avaient un missionnaire avec eux auquel ils ont lié les mains. Ils l'accusent d'avoir abusé de leurs femmes.</French>
         <German>Einige Wilde aus einer nahegelegenen Siedlung sind in eine unserer Städte angekommen. Sie haben einen gefesselten Missionar bei sich und beschuldigen diesen, dass er ihre Frauen sexuell belästigt habe.</German>
         <Russian>Несколько индейцев из близлежащей деревни живут в одном из наших городов. Они привели миссионера со связанными руками и обвиняют его в сексуальных домогательствах к их женщинам.</Russian>
     </TEXT>
@@ -2480,21 +2480,21 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_DESERTED_WOLF_WHELP</Tag>
         <English>Our men have found a deserted wolf cub in the wilderness. His mother is probably dead. Perhaps this young beast could be tamed or else sold to some crazy rich person.</English>
-        <French>Nos hommes ont trouvé un louveteau abandonné dans le désert. Sa mère est probablement morte. Cette jeune bête peut sans doute être dompté ou même vendu à un home riche qui s'ennuie.</French>
+        <French>Nos hommes ont trouvé un louveteau abandonné dans le désert. Sa mère est probablement morte. Cette jeune bête peut sans doute être domptée ou même vendu à un original fortuné.</French>
         <German>Einer unserer Männer hat einen verlassenen Wolfswelpen in der Wildnis gefunden. Seine Mutter ist wahrscheinlich tot. Vielleicht kann das kleine Biest ja gezähmt werden. Oder wir verkaufen es einem Reichen, der gelangweilt genug ist.</German>
         <Russian>Наши люди нашли в глуши брошенного волчонка. Его мать, вероятно, мертва. Возможно, этого молодого зверя можно было бы приручить или продать какому-нибудь безумно богатому человеку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_TAVERN_VS_CHAPEL</Tag>
         <English>Some left-over construction materials from a former colony have been found.</English>
-        <French>Certains matériaux de construction délaissés à l'époque de la fondation de la colonie ont été retrouvés.</French>
+        <French>Des matériaux de construction laissés à l'abandon dans une ancienne colonie ont été retrouvés.</French>
         <German>Einige übriggelassene Baumaterialien von der Gründung einer Kolonie wurden entdeckt.</German>
         <Russian>Найдены остатки строительных материалов после основания колонии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TAVERN_VS_CHAPEL</Tag>
         <English>Colonists at a recently founded city have materials left over from its construction. Some want to build a chapel. Others want a tavern. Whatever we decide will make one party unhappy.</English>
-        <French>Certains colons ont récemment découvert des matériaux de construction délaissés lors de la fondation de leur colonoe. Certains d'entre eux souhaitent l'utiliser pour construire une chapelle, d'autres pour construire une taverne. Quelque soit la décision, l'un des deux camps ne sera pas satisfait.</French>
+        <French>Des colons ont récemment découvert des matériaux de construction délaissés lors de la fondation de leur colonie. Certains veulent l'utiliser pour construire une chapelle, d'autres pour construire une taverne. Quelle que soit la décision, l'un des deux camps en sera contrarié.</French>
         <German>Einige Kolonisten einer kürzlich gegründeten Stadt haben entdeckt, dass noch einige Baumaterialien übrig geblieben sind. Einige Bewohner wollen mit diesen Baumaterialien eine Kapelle errichten. Andere Bewohner wollen stattdessen eine Taverne bauen. Wie auch immer wir uns entscheiden, eine Seite wird unzufrieden sein.</German>
         <Russian>У колонистов в недавно основанном городе остались материалы, оставшиеся от его строительства. Некоторые хотят построить часовню. Другие хотят таверну. Что бы мы ни решили, одна из сторон будет недовольна.</Russian>
     </TEXT>
@@ -2508,7 +2508,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BANKRUPT_FARMER</Tag>
         <English>A farmer, recently arrived, got a big loan to buy land but now he can't pay. He wants to sell everything he has to repay the loan and go back to Europe.</English>
-        <French>Un fermier ayant récemment immigré s'est lourdement endetté pour acheter des terres qu'il ne peut plus rembourser. Il veut tout ce qui lui reste pour clore ses dettes et rentrer en Europe.</French>
+        <French>Un fermier ayant récemment immigré s'est lourdement endetté pour acheter des terres et il ne peut plus rembourser. Il veut vendre tout ce qui lui reste pour clore ses dettes et rentrer en Europe.</French>
         <German>Ein kürzlich eingewanderter Farmer hat einen hohen Kredit aufgenommen, um sich etwas Land zu kaufen. Diesen kann er nun nicht mehr zurückzahlen. Daher will er sein gesamtes Habe verkaufen, um damit den Kredit zu begleichen und wieder nach Europa zurückzukehren.</German>
         <Russian>Недавно приехавший фермер получил большую ссуду на покупку земли, но теперь не может заплатить. Он хочет продать все, что у него есть, чтобы погасить кредит и вернуться в Европу.</Russian>
     </TEXT>
@@ -2522,35 +2522,35 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPEAN_CONFLICT_ENDED</Tag>
         <English>A large-scale military conflict in Europe has ended. Many troops are no longer needed and have been sent home. Maybe we could hire some of them.</English>
-        <French>Un conflit militaire d'importance a pris fin en Europe. De nombreuses troupes n'y sont plus nécessaires et ont été renvoyés à leur maison. Peut-être pourrions-nous en engager quelques-unes.</French>
+        <French>Un conflit militaire d'importance a pris fin en Europe. De nombreuses troupes n'y sont plus nécessaires et ont été renvoyées à leur maison. Peut-être pourrions-nous en engager quelques-unes.</French>
         <German>Ein bedeutender militärischer Konflikt wurde in Europa beendet. Viele Soldaten sind schon entlassen worden. Vielleicht können wir einige davon anheuern.</German>
         <Russian>Крупномасштабный военный конфликт в Европе завершился. Многие войска больше не нужны и их отправили по домам. Может быть, мы могли бы нанять некоторых из этих бравых солдат.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_DRUNKEN_FISHER</Tag>
         <English>A drunken fisher died in a storm.</English>
-        <French>Un pêcheur alcoolisé est moort dans une tempête.</French>
+        <French>Un pêcheur ivre est mort dans une tempête.</French>
         <German>Ein betrunkener Fischer starb in einem Sturm.</German>
         <Russian>Пьяный рыбак погиб во время шторма.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_DRUNKEN_FISHER</Tag>
         <English>A drunken fisher fell overboard during a storm and drowned. His widow now wants to sell his fishing boat, since she has no use for it.</English>
-        <French>Un pêcheur alcoolisé est passé par dessus bord lors d'une tempête. Il s'est noyé. Sa veuve souhaite vendre son bâteau de pêche, n'en ayant plus d'usage.</French>
+        <French>Un pêcheur ivre est passé par-dessus bord lors d'une tempête. Il s'est noyé. Sa veuve souhaite vendre son bâteau de pêche, n'en ayant plus d'usage.</French>
         <German>Ein betrunkener Fischer fiel während eines Sturms über Bord und ertrank. Seine Witwe möchte nun dessen Fischerboot verkaufen, da sie keine Verwendung dafür hat.</German>
         <Russian>Пьяный рыбак во время шторма упал за борт и утонул. Теперь его вдова хочет продать его рыбацкую лодку, так как она ей не нужна.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_ROTTEN_MEAT</Tag>
         <English>A butcher has fled Europe where he was accused of selling rotten meat.</English>
-        <French>Un boûcher venu d'Europe est accusé d'être en fuite après avoir vendu de la viande pourrie.</French>
+        <French>Un boucher a fui l'Europe où il est accusé de vendre de la viande pourrie.</French>
         <German>Ein Fleischermeister ist aus Europa geflohen, weil er verdorbenes Fleisch verkauft haben soll.</German>
         <Russian>Мясник сбежал из Европы, где его обвинили в продаже тухлого мяса.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ROTTEN_MEAT</Tag>
         <English>A butcher has arrived in the harbour of one of our cities. He had to flee Europe because he was accused of selling rotten meat. He pleads his innocence and wants a second chance.</English>
-        <French>Un ancien boûcher est arrivé au port de l'une de nos villes. Il a fui d'Europe parce qu'il était accusé d'avoir vendu de la viande pourrie. Il clâme son innocence et souhaite qu'on lui laisse une deuxième chance.</French>
+        <French>Un ancien boucher est arrivé au port de l'une de nos villes. Il a fui d'Europe parce qu'il était accusé de vendre de la viande pourrie. Il clâme son innocence et souhaite une deuxième chance ici.</French>
         <German>Ein Fleischermeister ist im Hafen einer unserer Städte eingetroffen. Er musste aus Europa fliehen, weil er verdorbenes Fleisch verkauft haben soll. Er behauptet aber, unschuldig zu sein, und bittet um eine zweite Chance.</German>
         <Russian>В порт одного из наших городов прибыл мясник. Ему пришлось бежать из Европы, потому что его обвинили в продаже тухлого мяса. Он заявляет о своей невиновности и хочет получить второй шанс.</Russian>
     </TEXT>
@@ -2648,7 +2648,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MONASTERY_HEALING_WOUNDED</Tag>
         <English>Some Natives from a nearby village brought a young warrior, badly wounded, to one of our monasteries. He was attacked by a bear. If we do not help him, he will surely die.</English>
-        <French>Des indigènes d'un village avoisinant ont ramené un jeune guerrier sérieusement blessé dans l'un de nos monastères. Il semble avoir été attaqué par un ours. Si nous ne l'aidons pas, il va probablement mourrir.</French>
+        <French>Des indigènes d'un village avoisinant ont ramené un jeune guerrier sérieusement blessé dans l'un de nos monastères. Il semble avoir été attaqué par un ours. Si nous ne l'aidons pas, il va probablement mourir.</French>
         <German>Einige Ureinwohner eines nahegelegen Dorfes haben einen schwer verwundeten jungen Krieger in eines unserer Klöster gebracht. Er scheint vom einem Bären angegriffen worden zu sein. Wenn wir nicht helfen, wird er sterben.</German>
         <Russian>Индейцы из близлежащей деревни принесли в один из наших монастырей тяжело раненного молодого воина. На него напал медведь. Если мы ему не поможем, он наверняка умрет.</Russian>
     </TEXT>
@@ -3287,18 +3287,21 @@
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FOUR_TREASURES</Tag>
         <English>Milord, His Majesty is deeply discontented that so many treasures are not being shipped in time to Europe. To solve this issue He offers us a [COLOR_HIGHLIGHT_TEXT]galleon[COLOR_REVERT] for a discounted price.</English>
+        <French>Sa majesté est pronfondément déçu que tant de trésors ne soient pas envoyés en Europe en temps et en heure. Pour résoudre ce probème, Il nous propose un [COLOR_HIGHLIGHT_TEXT]galion[COLOR_REVERT] à un prix réduit.</French>
         <German>Milord, Seine Majestät ist sehr unzufrieden, dass so viele Schätze nicht rechtzeitig nach Europa verschifft werden. Um das Problem zu lösen bietet man uns eine [COLOR_HIGHLIGHT_TEXT]Galeone[COLOR_REVERT] zu einem vergünstigten Preis an.</German>
         <Russian>Милорд, Его Величество крайне недоволен тем, что так много [COLOR_HIGHLIGHT_TEXT]сокровищ[COLOR_REVERT] не отправляется вовремя в Европу. Для решения этой проблемы Он предлагает нам [COLOR_HIGHLIGHT_TEXT]галеон[COLOR_REVERT] по сниженной цене.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FOUR_TREASURES_1</Tag>
         <English>Sadly we must refuse this generous offer. We need to save our money for other purposes.</English>
+        <French>Nous devons hélas refuser cette offre pourtant généreuse. Nous avons besoin d'épargner l'argent à d'autres fins.</French>
         <German>Wir müssen dieses großzügige Angebot ablehnen, aber im Moment benötigen wir das Geld anderweitig.</German>
         <Russian>К сожалению, мы вынуждены отказаться от этого щедрого предложения. Мы должны сохранить наши деньги для других целей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FOUR_TREASURES_2</Tag>
         <English>That is an excellent offer! We will happily buy the galleon for that price.</English>
+        <French>Une offre qu'on ne saurait réfuser ! Nous achetons volontiers le galion à ce prix.</French>
         <German>Das ist ein hervorragendes Angebot! Wir kaufen die Galeone gerne zu diesem Preis.</German>
         <Russian>Какое превосходное предложение! Мы с радостью купим галеон за эту цену.</Russian>
     </TEXT>
@@ -4298,6 +4301,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_START</Tag>
         <English>We will fulfill the orders of his Majesty!</English>
+        <French>Nous suivrons les ordres de sa Majesté!</French>
         <German>Wir werden den Wünschen Seiner Majestät nachkommen!</German>
         <Russian>Мы выполним приказ Его Величества!</Russian>
     </TEXT>
@@ -8376,6 +8380,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_START</Tag>
         <English>We will fulfill the orders of His Majesty!</English>
+        <French>Nous suivrons les ordres de sa Majesté !</French>
         <German>Wir werden den Wünschen Seiner Majestät nachkommen!</German>
         <Russian>Мы выполним приказ Его Величества!</Russian>
     </TEXT>

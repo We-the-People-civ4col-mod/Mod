@@ -462,7 +462,7 @@
     <TEXT>
         <Tag>TXT_KEY_GOODY_NATIVE_TRADER</Tag>
         <English>You have discovered a [COLOR_UNIT_TEXT]Native trader[COLOR_REVERT] who had gotten lost. He now wants to work with you!</English>
-        <French>Vous avez découvert un [COLOR_UNIT_TEXT]marchand avec les indigènes[COLOR_REVERT] qui s'était pedu. Il demande à travailler avec nous.</French>
+        <French>Vous avez découvert un [COLOR_UNIT_TEXT]marchand avec les indigènes[COLOR_REVERT] qui s'était perdu. Il demande à travailler avec nous.</French>
         <German>Ihr habt einen [COLOR_UNIT_TEXT]Ureinwohnerhändler[COLOR_REVERT] entdeckt, der die Orientierung verloren hatte und Euch nun seine Dienste anbietet!</German>
         <Russian>Вы обнаружили [COLOR_UNIT_TEXT]торговца с индейцами[COLOR_REVERT], который заблудился в этих диких местах. Он хочет остаться и работать вместе с нами!</Russian>
     </TEXT>

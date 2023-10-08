@@ -1884,14 +1884,14 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_RUM_BLOSSOM_1</Tag>
         <English>Shiver me timbers! It's been a long time since I last saw such rum blossoms! Let them keep the rum, the drunkenness in our colony was worrying me anyway.</English>
-        <French>Sacre bleu ! Cela faisant longtemps que je n'avais pas vu autant de rhum disparaître ! Qu'ils gardent le rhum, le niveau d'alcoolisme dans notre colonie m'inquiétait déjà de toute façon.</French>
+        <French>Sacre bleu ! Cela faisant longtemps que je n'avais pas vu autant de rhum disparaître ! Qu'ils gardent le rhum, ça leur fera une belle gueule de bois. L'ivrognerie généralisée de notre colonie m'inquiétait déjà de toute façon.</French>
         <German>Potzblitz! Solche Schnapsnasen sind mir lange nicht mehr untergekommen. Lasst ihnen den Rum, es wurde sowieso Zeit gegen die Trunkenheit in unserer Kolonie vorzugehen.</German>
         <Russian>Чёрт возьми! Никогда не видел, чтобы исчезало так много рома! Ром пусть себе оставят, уровень алкоголизма в нашей колонии меня и так уже беспокоил... Но, Чёрт возьми!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_RUM_BLOSSOM_2</Tag>
         <English>Our dockers and sailors will mutiny if they run low on rum. Stop them! Take up your arms!</English>
-        <French>Nos dockers et marins vont se mutiner s'ils n'auront pas leur rhum. Arrêtons les ! A vos armes !</French>
+        <French>Nos débardeurs et marins vont se mutiner s'ils n'ont pas leur ration de rhum. Arrêtons les ! A vos armes !</French>
         <German>Die Werftarbeiter und Matrosen werden meutern, wenn der Schnaps ausgeht. Haltet sie auf! Zu den Waffen, Männer!</German>
         <Russian>Наши докеры и моряки поднимут бунт, если у них кончится ром. Остановите их! К оружию!</Russian>
     </TEXT>
@@ -1947,14 +1947,14 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_SECONDCOLONY_2</Tag>
         <English>Your Majesty, if I may reconsider... The protection of our colony against wild animals and Native raiders is even more important.</English>
-        <French>Votre Majesté, sauf votre respect, la protection de notre colonie contre les dangers environnants, animaux sauvages et raids indigènes, est encore plus prioritaire.</French>
+        <French>Votre Majesté, sauf votre respect, la protection de notre colonie contre les  animaux sauvages et les raids indigènes est encore plus prioritaire.</French>
         <German>Eure Majestät, wichtiger noch als der Aufbau unserer Kolonie ist ihr Schutz vor den Gefahren der Wildnis. Bestien und Eingeborene lauern uns allerorten auf.</German>
         <Russian>Ваше Величество, защита нашей колонии от опасностей дикой природы важнее, чем строительство. Дикие звери и не менее дикие туземцы подстерегают нас повсюду.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THIRDCOLONY_1</Tag>
         <English>Ensure that these brave young men get what they require for this enterprise. We must know what this new world offers for us. His Majesty will be delighted.</English>
-        <French>Donnez à ces jeunes gens courageux ce dont il besoin pour cette aventure. Nous devons savoir les rochesses offertes par ce Nouveau Monde. Le Roi en sera ravi.</French>
+        <French>Donnez à ces jeunes gens courageux ce dont il besoin pour cette aventure. Nous devons savoir les richesses offertes par ce Nouveau Monde. Le Roi en sera ravi.</French>
         <German>Stellt sicher, dass diese mutigen jungen Männer alles erhalten, das sie für dieses Unterfangen benötigen. Wir müssen erfahren, was diese Welt für uns bereit hält. Ihre Majestät wird erfreut sein.</German>
         <Russian>Убедитесь, что эти отважные молодые люди получат то, что им нужно для этого предприятия. Мы должны знать, что предлагает нам этот новый мир. Его Величество будет в восторге.</Russian>
     </TEXT>
@@ -2010,7 +2010,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_SHIPYARD_1</Tag>
         <English>Leave the harlots alone. They satisfy our workers. That might make them more productive.</English>
-        <French>Laissez donc ces prostitués tranquille. Elles satisfont nos travailleurs bien solitaires. Peut-être qu'ils deviendront plus productifs.</French>
+        <French>Laissez donc ces prostituées tranquille. Elles satisfont nos travailleurs bien solitaires. Peut-être qu'ils deviendront plus productifs.</French>
         <German>Lasst die Freudenmädchen in Ruhe! Den Männern wird's die Laune heben, und fröhlich und frisch arbeitet's am besten.</German>
         <Russian>Оставьте шлюх в покое. Они удовлетворяют наших рабочих. Возможно, это сделает их более продуктивными.</Russian>
     </TEXT>
@@ -2045,7 +2045,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_SICK_IMMIGRANTS_ACCEPT</Tag>
         <English>These poor souls shall be welcomed. Give them something to eat so they can recover their strength.</English>
-        <French>Ces pauvres âmes doivent être accueillis. Donnez leur une bonne couverture et de quoi manger pour qu'ils retrouvent leur force.</French>
+        <French>Ces pauvres âmes doivent être accueillies. Donnez leur une bonne couverture et de quoi manger pour qu'ils retrouvent leur force.</French>
         <German>Diese armen Seelen sind uns wie alle anderen Willkommen. Gebt ihnen etwas zu Essen, damit sie wieder zu Kräften kommen.</German>
         <Russian>Эти бедняги должны быть приняты. Дайте им что-нибудь поесть, чтобы они могли восстановить свои силы.</Russian>
     </TEXT>
@@ -2112,14 +2112,14 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TAVERN_VS_CHAPEL_3</Tag>
         <English>To avoid any arguments, the materials shall be confiscated and sold.</English>
-        <French>Pour éviter tout argument, les matériaux seront confisqués et vendus. Qu'on ne me dérange plus pour ces enfantillages !</French>
+        <French>Pour éviter toute querelle, les matériaux seront confisqués et vendus.</French>
         <German>Um Streit zu verhindern, sollen die Materialien einfach verkauft werden.</German>
         <Russian>Во избежание каких-либо споров материалы подлежат конфискации и последующей реализации.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TERRAX_1</Tag>
         <English>Well then, the early bird catches the worm. Let our settlers pack their belongings and head out into the wilderness.</English>
-        <French>Eh bien, l'oiseau doit bien finir par attraper le ver. Laissons nos colons faire leurs bagages et envoyons-les dans l'arrière-pays.</French>
+        <French>Eh bien, la fortune appartient à ceux qui agissent tôt. Laissons nos colons faire leurs bagages et envoyons-les dans l'arrière-pays.</French>
         <German>Nun denn, der frühe Vogel fängt den Wurm. Lasst unsere Siedler ihre Habseligkeiten packen und scheucht sie in die Wildnis!</German>
         <Russian>Пусть наши поселенцы собирают свои вещи и отправляются в глушь.</Russian>
     </TEXT>
@@ -2154,7 +2154,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_THE_ROYALS_1</Tag>
         <English>Get me the leader of this crowd and hoist some more of our king's flags. A fair word between two gentleman and a glass of wine should sort things out. I'll make him an offer he can't refuse.</English>
-        <French>Amenez moi le meneur de cette foule et hisser davantage de drapeau de notre roi. Un simple dialogue entre deux gentilshommes autour d'un verre de vin devrait clarifier les choses. Je vais lui faire une offre qu'il ne pourra refuser...</French>
+        <French>Amenez moi le meneur de cette foule et hisser davantage de drapeaux de notre roi. Un simple dialogue entre deux gentilshommes autour d'un verre de vin devrait clarifier les choses. Je vais lui faire une offre qu'il ne pourra refuser...</French>
         <German>Holt mir den führenden Kopf hierher und hängt noch zwei königliche Banner aus dem Fenster. Ein guter Schluck Wein und ein offenes Gespräch haben schon so manche Bluttat verhindert. Ich werde ihm ein Angebot machen, dass er nicht ablehnen kann.</German>
         <Russian>Приведите ко мне лидера этой толпы и поднимите еще несколько королевских флагов. Простой диалог между двумя джентльменами за бокалом вина должен прояснить ситуацию. Я собираюсь сделать ему предложение, от которого он не сможет отказаться...</Russian>
     </TEXT>
@@ -2175,7 +2175,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_THE_ROYALS_2a</Tag>
         <English>Don´t bother me again with these powdered fops! They give me a headache.</English>
-        <French>Ne me déranger pas à nouveau avec fats en poudre ! Cela me donne mal à la tête.</French>
+        <French>Ne me dérangez pas à nouveau avec ces fats en perruque poudrée ! Cela me donne mal à la tête.</French>
         <German>Davon kriege ich Kopfschmerzen, bitte, belästigt mich nicht weiter mit diesen gepuderten Affenhirnen.</German>
         <Russian>Не беспокойте меня больше этими напудренными пижонами! Они вызывают у меня приступы мигрени.</Russian>
     </TEXT>
