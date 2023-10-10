@@ -873,14 +873,14 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_PRISONER_OF_WAR_AT_MONASTERY</Tag>
-        <English>News spread that the release of a prisoner of war has been negotiated by a [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] monastery. Praise the Lord for his Mercy.</English>
+        <English>News spread that the release of a prisoner of war has been negotiated by a [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] monastery. Praise the Lord for his mercy.</English>
         <French>La nouvelle se propage selon laquelle la libération des prisonniers de guerre a été négociée par un monastère [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]. Que le Seigneur soit loué dans sa miséricorde.</French>
         <German>Es verbreitet sich die Meldung, dass die Freilassung eines Kriegsgefangenen durch ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Kloster verhandelt wurde. Gelobt sei der Herr für seine Gnade.</German>
         <Russian>Ходят слухи о том, что переговоры об освобождении военнопленного ведутся в одном из [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] монастырей. Хвала Господу нашему за Его Милосердие.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PRISONER_OF_WAR_AT_MONASTERY</Tag>
-        <English>Milord, the abbot of the monastery asks to be allowed to speak to you about our prisoner of war. He takes personal interest in the matter because his brother died in captivity. Thus he begs to be allowed to negotiate the terms of the release of this prisoner with our rivals. [NEWLINE]He promises that such an action will improve our standing at the church. Also he will try to negotiate a ransom.</English>
+        <English>Milord, the abbot of the monastery wants to speak to you about our prisoner of war. He takes a personal interest because his brother died in captivity. He begs you to allow him to negotiate with our rivals for this prisoner's release. [NEWLINE]He promises your support will improve our standing within the church. He will also try to negotiate a ransom.</English>
         <French>Sire, le frère supérieur du monastère demande une entrevue pour discuter au sujet des prisonniers de guerre. Il se sent personellement touché dans cette affaire car son propre fère est mort en captivité. Il nous prie donc de négocier les termes de la libération du prisonnier avec nos rivaux. [NEWLINE]Il promet que de telles actions vont augmenter notre réputation auprès de l'Église. Il essaiera aussi de négocier une rançon.</French>
         <German>Milor, der Abt des Klosters bittet darum mit euch über das Schicksal unseres Kriegsgefangenen reden zu dürfen. Er hat ein persönliches Interess an der Angelegenheit, da sein Bruder in Gefangenschaft starb. Daher bittet er darum, mit unseren Rivalen die Bedingungen der Freilassung dieses Gefangenen vermitteln zu dürfen. [NEWLINE]Er verspricht, dass dies unser Ansehen bei der Kirche verbessern wird. Er will aber auch ein Lösegeld verhandeln.</German>
         <Russian>Милорд, настоятель монастыря просит разрешения поговорить с вами о нашем военнопленном. Он проявляет личный интерес к этому вопросу, поскольку его брат умер в плену. Он не хочет, чтобы такая же участь постигла других бедолаг и просит разрешить ему обсудить условия освобождения этого заключенного с нашими соперниками.[NEWLINE]Он обещает, что этот шаг улучшит наше положение в церкви. Также он попытается договориться о сумме выкупа.</Russian>
@@ -901,21 +901,21 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_PRISONER_OF_WAR_AT_FORT</Tag>
-        <English>News spread that the release of a prisoner of war has been negotiated in a [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] Fort. Reason was victorious again over hate.</English>
+        <English>News spread that the release of a prisoner of war has been negotiated inside a [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] fort. Yet again reason has been victorious again over hate.</English>
         <French>La nouvelle se répand selon laquelle un prisonnier de guerre a vu sa libération négociée dans un fort [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]. La raison a triopmhé sur la haine.</French>
         <German>Es verbreitet sich die Meldung, dass die Freilassung eines Kriegsgefangenen in einem [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Fort verhandelt wurde. Die Vernuft hat erneut über den Hass gesiegt.</German>
         <Russian>Ходят слухи, что переговоры об освобождении военнопленного ведутся в [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] форте. Разум снова победил ненависть.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PRISONER_OF_WAR_AT_FORT</Tag>
-        <English>Milord, an officer of the fort asks to speak to you. He saw that our prisoner is wounded and believes he may not survive long captivity. He claims that honor demands that we contact our rivals in order to negotiate an exchange of prisoners. [NEWLINE]He promises that such an action will improve our prestige with other nations. He will also try to negotiate a ransom.</English>
+        <English>Milord, an officer at the fort asks to speak to you. He saw that our prisoner is wounded and fears he may not survive captivity. He declares that honour demands we contact our rivals to negotiate a prisoner exchange. [NEWLINE]He promises that decision will improve our prestige with other nations. He will also try to negotiate a ransom.</English>
         <French>Sire, un officier du fort demande une entrevue. Il a remarqué qu'un de nos prisonnier est blessé et ne vivra pas longtemps en captivité. Il prétend que l'honneur exige que nous contactions nos rivaux pour procéder à un échange de prisonniers. Il promet que de telles actions réhaussera notre prestige auprès des autres notions. Il essaiera aussi de négocier une rançon.</French>
         <German>Milor, ein Offizier des Forts bittet um eine Audienz. Er hat gesehen, dass der Gefangen verwundet ist und befürchtet dieser könnte eine lange Gefangenschaft nicht überleben. Er behauptet, dass es die Ehre gebietet unsere Rivalen zu kontaktieren und einen Austausch von Gefangenen zu verhandeln. [NEWLINE]Er verspricht, dass dies unser Ansehen bei anderen Nationen verbessern wird. Er will aber auch ein Lösegeld verhandeln.</German>
         <Russian>Милорд, с вами хочет поговорить командир одного из наших фортов. Ему доложили, что наш пленник серьёзно ранен и он считает, что долгого плена тот не выдержит. Командир форта утверждает, что честь офицера требует, чтобы мы связались с нашими соперниками и договорились об обмене.[NEWLINE]Он обещает, что такие действия повысят наш престиж среди других стран. Он также попытается договориться о сумме выкупа.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PRISONER_OF_WAR_AT_FORT_1</Tag>
-        <English>We will do as honor demands and allow the officer to negotiate the release of our prisoner.</English>
+        <English>We will do as honour demands and allow the officer to negotiate the release of our prisoner.</English>
         <French>Nous suivrons les exigence de l'honneur et permettre à l'officier de négocier la libération du prisonnier.</French>
         <German>Wir werden dem Gebot der Ehre folge leisten und dem Offizier erlauben die Freilassung unseres Gefangenen zu verhandeln.</German>
         <Russian>Ну что же, если ему удасться договориться, не видим в этом никаких проблем.</Russian>
