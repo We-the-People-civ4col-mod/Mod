@@ -9312,10 +9312,12 @@
         <Tag>TXT_KEY_EVENTTRIGGER_ECCENTRIC_ARCHITECT</Tag>
         <English>There are rumors that his Majesty has sent an experienced architect to your colonies in order to support the development of the colonies.</English>
         <German>Es heißt, der König habe zur Förderung der Entwicklung seiner Kolonien in der Neuen Welt einen Architekten nach [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] entsandt.</German>
+        <Russian>Ходят слухи, что Его Величество направил в наши колонии опытного архитектора, чтобы поддержать их развитие.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ECCENTRIC_ARCHITECT</Tag>
         <English>Sir, the number of colonies you manage in the New World is growing steadily, but the construction is not going fast enough. His Majesty has therefore decided to send a very experienced architect of the highest repute to the colonies to support the construction work of the colonies.</English>
         <German>Sir, die Anzahl der Kolonien in der Neuen Welt wächst stetig, aber der Aufbau geht nicht schnell genug voran. Seine Majestät hat daher entschieden, einen erfahrenen Architekten mit höchstem Ansehen in die Kolonien zu entsenden, um den Aufbau voranzutreiben.</German>
+        <Russian>Милорд, количество управляемых вами колоний в Новом Свете неуклонно растёт, но строительство идёт недостаточно быстро. Поэтому Его Величество решил прислать к нам опытного архитектора с самой высокой репутацией для поддержки строительных работ в колониях.</Russian>
     </TEXT>
 </Civ4GameText>
