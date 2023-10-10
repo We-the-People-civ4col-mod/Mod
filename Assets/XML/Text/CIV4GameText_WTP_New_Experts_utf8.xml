@@ -2455,7 +2455,7 @@
     <!-- REVOLTING_PRISONER_OF_WAR -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_REVOLTING_PRISONER_OF_WAR</Tag>
-        <English>Revolting Prisoner of War:Revolting Prisoners of War</English>
+        <English>Rebelling Prisoner of War:Rebelling Prisoners of War</English>
         <French>Prisonnier de guerre mutiné:Prisonniers de guerre mutinés</French>
         <German>
             <Text>Revoltierender Kriegsgefangener:Revoltierende Kriegsgefangene</Text>
@@ -2466,7 +2466,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_REVOLTING_PRISONER_OF_WAR</Tag>
-        <English>Revolting Prisoner of War:Revolting Prisoners of War</English>
+        <English>Rebelling Prisoner of War:Rebelling Prisoners of War</English>
         <French>Prisonnier de guerre mutiné:Prisonniers de guerre mutinés</French>
         <German>
             <Text>Revoltierender Kriegsgefangener:Revoltierende Kriegsgefangene</Text>
@@ -2483,7 +2483,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_REVOLTING_PRISONER_OF_WAR_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Revolting Prisoners of War[COLOR_REVERT] tbd</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Rebelling Prisoners of War[COLOR_REVERT] tbd</English>
         <German>[COLOR_HIGHLIGHT_TEXT]Revoltierende Kriegsgefangene[COLOR_REVERT] tbd</German>
         <Russian>[COLOR_HIGHLIGHT_TEXT]Военнопленные[COLOR_REVERT][NEWLINE]когда-нибудь здесь появится описание</Russian>
     </TEXT>	
