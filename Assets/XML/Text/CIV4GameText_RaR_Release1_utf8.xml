@@ -534,6 +534,7 @@
         <German>Produziert : %s1_symbol_list</German>
         <Italian>Produce : %s1_symbol_list</Italian>
         <Spanish>Produce : %s1_symbol_list</Spanish>
+        <Russian>Производит : %s1_symbol_list</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHOOSE_PROFESSION_ITEMS</Tag>
@@ -1391,7 +1392,7 @@
         <English>Milord, there is unrest in city [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] because the population feels unprotected.</English>
         <French>Sire, il y a des émeutes à  [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] car la population ne s'y sent pas protégée.</French>
         <German>Milord, in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] gibt es Unruhen, weil die Bürger sich nicht ausreichend geschützt fühlen.</German>
-        <Russian>[COLOR_NEGATIVE_TEXT]Беда, Милорд![COLOR_REVERT] В городе [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] беспорядки. Из-за отсутствия войск население чувствует себя незащищенным.</Russian>
+        <Russian>[COLOR_NEGATIVE_TEXT]Беда, Милорд![COLOR_REVERT] В городе [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] беспорядки. Из-за отсутствия войск жители чувствуют себя беззащитными.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PAYED_CHURCH_DEMAND</Tag>
@@ -1639,6 +1640,7 @@
         <German>[ICON_BULLET]%D1_Change[ICON_CULTURE] für Besitzer des Geländefelds</German>
         <Italian>[ICON_BULLET]%D1_Change[ICON_CULTURE] per il proprietario di complotto</Italian>
         <Spanish>[ICON_BULLET]%D1_Change[ICON_CULTURE] para el propietario de la parcela</Spanish>
+        <Russian>[ICON_BULLET]%D1_Change[ICON_CULTURE] для владельца клетки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_CULTURE_RANGE</Tag>
@@ -1647,6 +1649,7 @@
         <German>[ICON_BULLET]Beeinflusst Geländefelder im Radius von %d1_Num</German>
         <Italian>[ICON_BULLET]Trame influenze entro una distanza di %d1_Num</Italian>
         <Spanish>[ICON_BULLET]Influye en las parcelas dentro de una distancia de %d1_Num</Spanish>
+        <Russian>[ICON_BULLET]Распространение влияния на %d1_Num клетку</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_BOMBARD</Tag>
@@ -1655,6 +1658,7 @@
         <German>[ICON_BULLET]Kann bombardiert werden</German>
         <Italian>[ICON_BULLET]Puo essere bombardati</Italian>
         <Spanish>[ICON_BULLET]Puede ser bombardeado</Spanish>
+        <Russian>[ICON_BULLET]Может быть подвергнут бомбардировке</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_FORTIFY_TO_UPGRADE</Tag>
@@ -1672,6 +1676,7 @@
         <German>[ICON_BULLET]%D1_Change Sichtweite</German>
         <Italian>[ICON_BULLET]%D1_Change raggio di visibilità</Italian>
         <Spanish>[ICON_BULLET]%D1_Change al alcance de la visibilidad</Spanish>
+        <Russian>[ICON_BULLET]%D1_Change к обзору</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_SEE_FROM</Tag>
@@ -1680,6 +1685,7 @@
         <German>[ICON_BULLET]%D1_Change Sichthöhe</German>
         <Italian>[ICON_BULLET]%D1_Change visibilita Altezza</Italian>
         <Spanish>[ICON_BULLET]%D1_Change visibilidad Altura</Spanish>
+        <Russian>[ICON_BULLET]%D1_Change к высоте обзора</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_UNIQUE_RANGE</Tag>
@@ -1688,6 +1694,7 @@
         <German>[ICON_BULLET]Mindestabstand zu anderen Geländeverbesserungen desselben Typs von %d1_Num</German>
         <Italian>[ICON_BULLET]Non e possibile costruire un altro ad una distanza di %d1_Num</Italian>
         <Spanish>[ICON_BULLET]No se puede construir otro a una distancia de %d1_Num</Spanish>
+        <Russian>[ICON_BULLET]Невозможно построить еще один на расстоянии %d1_Num клетки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CITY_REVOLTED_JOINED</Tag>
@@ -1743,6 +1750,7 @@
         <English>[NEWLINE][BOLD]Valid Features :[\BOLD]</English>
         <French>[NEWLINE][BOLD]Ressources valides :[\BOLD]</French>
         <German>[NEWLINE][BOLD]Gültige Features :[\BOLD]</German>
+        <Russian>[NEWLINE][BOLD]Где встречается :[\BOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_YIELD_INCREASES</Tag>
