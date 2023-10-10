@@ -1456,6 +1456,11 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
+        <French>
+            <Text>Chasseur d'esclaves:Chasseurs d'esclaves</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
         <German>
             <Text>Sklavenjäger:Sklavenjäger</Text>
             <Gender>Male</Gender>
@@ -1480,6 +1485,11 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
+        <French>
+            <Text>Contre-maître des esclaves:Contre-maîtres des esclaves</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
         <German>
             <Text>Sklavenaufseher:Sklavenaufseher</Text>
             <Gender>Male</Gender>
@@ -2511,6 +2521,11 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROYAL_TROOP_GALLEON</Tag>
         <English>Royal Troop Galleon:Royal Troop Galleons</English>
+        <French>
+            <Text>Galion de transport royal:Galions de transport royaux</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
         <German>
             <Text>Königliche Truppengaleone:Königliche Truppengaleonen</Text>
             <Gender>Female</Gender>
@@ -6651,7 +6666,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Veteran Infantry Soldier:Veteran Infantry Soldiers</Text>
+            <Text>Soldat d'infanterie vétéran: Soldats d'infantierie vétérans</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -7352,7 +7367,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Expert Native Trader:Expert Native Traders</Text>
+            <Text>Expert marchand chez les indigènes:Experts marchands chez les indigènes</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>

@@ -1331,7 +1331,7 @@
         <Tag>TXT_KEY_UNITCLASS_ROYAL_TROOP_GALLEON</Tag>
         <English>Royal Troop Galleon:Royal Troop Galleons</English>
         <French>
-            <Text>Galion de transport royal:Galions de transport royal</Text>
+            <Text>Galion de transport royal:Galions de transport royaux</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>

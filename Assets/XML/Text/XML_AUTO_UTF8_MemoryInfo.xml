@@ -75,7 +75,7 @@
     <TEXT>
         <Tag>TXT_KEY_MEMORY_EVENT_BAD_TO_US</Tag>
         <English>"Past events have proven your bad nature to us."</English>
-        <French>"Les événements passés prouvent qu'on ne peut pas vous faire confiance."</French>
+        <French>"Les événements passés prouvent votre méchanceté."</French>
         <German>"Frühere Geschehnisse haben gezeigt, dass Ihr uns nicht wohl gesonnen seid."</German>
         <Italian>"Gli eventi passati ci hanno dimostrato la tua buona natura."</Italian>
         <Spanish>"Los acontecimientos pasados nos han demostrado vuestra maldad."</Spanish>
@@ -84,7 +84,7 @@
     <TEXT>
         <Tag>TXT_KEY_MEMORY_EVENT_GOOD_TO_US</Tag>
         <English>"Past events have proven your good nature to us."</English>
-        <French>"Les événements passés prouvent qu'on peut vous faire confiance."</French>
+        <French>"Les événements passés prouvent votre bonté."</French>
         <German>"Frühere Geschehnisse haben gezeigt, dass Ihr uns wohl gesonnen seid."</German>
         <Italian>"Gli eventi passati ci hanno dimostrato la tua buona natura."</Italian>
         <Spanish>"Los acontecimientos pasados nos han demostrado vuestra bondad."</Spanish>
