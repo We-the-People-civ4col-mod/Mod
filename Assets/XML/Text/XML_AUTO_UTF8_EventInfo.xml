@@ -2748,4 +2748,14 @@
         <German>Diebstähle und andere dubiose Geschäfte geschehen am helllichten Tag. Wir brauchen einen Richter, der die Ordnung wiederherstellt!</German>
         <Russian>Кражи и другие тёмные дела происходят средь бела дня! Нам срочно нужен судья, чтобы восстановить порядок!</Russian>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_ECCENTRIC_ARCHITECT_1</Tag>
+        <English>Inform His Majesty we are extremely grateful for his support. Indeed, an experienced architect would be of great help to us. May we be graciously sent the man and the King's bill. Presumably the man will not be sent to us free of charge.</English>
+        <German>Richten Sie Seiner Majestät aus, wir sind ihm für seine Unterstützung äußerst dankbar. In der Tat würde uns ein erfahrener Architekt sehr helfen. Man möge uns gnädigerweise den Mann und die Kostennote des Königs übersenden. Vermutlich wird man uns den Mann ja nicht kostenlos übersenden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_ECCENTRIC_ARCHITECT_2</Tag>
+        <English>We should exercise extreme caution here. His Majesty likes to send us people who have made themselves unpopular at court, and there is bound to be a catch. Tell His Majesty that we will graciously do without, but will take care of the construction ourselves.</English>
+         <German>Wir sollten hier äußerste Vorsicht walten lasen. Seine Majestät schickt uns gerne Leute herüber, die sich bei Hofe unbeliebt gemacht haben und die Sache hat bestimmt einen Haken. Richtet seiner Majestät aus, dass wir gnädigst darauf verzichten, aber uns selbst um den Aufbau kümmern werden.</German>
+    </TEXT>
 </Civ4GameText>

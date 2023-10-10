@@ -2486,5 +2486,25 @@
         <English>[COLOR_HIGHLIGHT_TEXT]Rebelling Prisoners of War[COLOR_REVERT] tbd</English>
         <German>[COLOR_HIGHLIGHT_TEXT]Revoltierende Kriegsgefangene[COLOR_REVERT] tbd</German>
         <Russian>[COLOR_HIGHLIGHT_TEXT]Военнопленные[COLOR_REVERT][NEWLINE]когда-нибудь здесь появится описание</Russian>
-    </TEXT>	
+    </TEXT>
+    <!-- ECCENTRIC ARCHITECT -->
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ECCENTRIC_ARCHITECT</Tag>
+        <English>Eccentric Architect:Eccentric Architects</English>
+        <German>
+            <Text>Exzentrischer Architekt:Exzentrische Architekten</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ECCENTRIC_ARCHITECT_PEDIA</Tag>
+        <English>The architect is a master builder who will do great for the construction work of a colony - as long as he works in the profession of a carpenter and produces proper hammers. He is unsuitable for other professions.</English>
+        <German>Der Architekt ist ein Meister der Baukunst, der den Aufbau einer Kolonie wahre Wunder vollbringen wird - solange er in dem Beruf des Zimmermanns arbeitet und ordentlich Hämmer produziert. Für andere Berufe ist er ungeeignet. </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ECCENTRIC_ARCHITECT_STRATEGY</Tag>
+        <English>The [COLOR_UNIT_TEXT]eccentric architect[COLOR_REVERT] is a true expert in the art of building - experienced and gifted, he is a visionary of his guild; but also a bon vivant and dreamer. As soon as you have built 5 lumber mills or higher classes of this building and 5,000[ICON_GOLD] in your treasury and your colonies have at least 15 citizens the king will think about sending a eccentric architect to his colonies to support the construction work in the colonies.[PARAGRAPH:1]The [COLOR_UNIT_TEXT]eccentric architect[COLOR_REVERT] is the best [LINK=YIELD_HAMMERS]hammer[\LINK] producer available.[NEWLINE]Assigning the eccentric architect to the [LINK=PROFESSION_CARPENTER]carpenter[\LINK] profession will quadruple the number of [COLOR_HIGHLIGHT_TEXT]hammers[COLOR_REVERT] an average colonist would produce.[NEWLINE]The eccentric architect cannot be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they cannot be [LINK=CONCEPT_TRAINING]educated[\LINK] in a [LINK=BUILDING_UNIVERSITY]university[\LINK] or any of its upgrades. [NEWLINE]In all other professions he suffers severe production penalties. [NEWLINE]Furthermore he is weak so using him as a soldier is not be a good idea. [NEWLINE]However, he is also a cheerful nature and man of life, who will quickly make friends in the colony with his generous lifestyle. He therefore lifts the happiness in the colony. However, this is exactly what gets him into trouble. It could be a reason why the king wanted to get rid of this very man and deport him to the new world. You should keep an eye on him.</English>
+        <German>Der [COLOR_UNIT_TEXT]Exzentrische Architekt[COLOR_REVERT] ist ein wahrer Experte der Baukunst - erfahren, gestählt und begabt ist er ein Visionär seiner Zunft; aber auch ein Lebemann und Träumer. Sobald Ihr 5 Sägewerke oder höhere Gebäudestufen errichtet habt, sich wenigstens 15 Bewohner in den Kolonien befinden und sich 5000[ICON_GOLD] in Eurer Schatzkammer befinden, wird der König darüber nachdenken, diesen Mann in seine Kolonien zu schicken, um den Aufbau der Kolonien zu unterstützen.[PARAGRAPH:1]Der [COLOR_HIGHLIGHT_TEXT]Exzentrische Architekt[COLOR_REVERT] vervierfacht die Anzahl der produzierten [LINK=YIELD_HAMMERS]Hämmer[\LINK] gegenüber einem normalen Bürger, der im Beruf [LINK=PROFESSION_CARPENTER]Zimmermann[\LINK] arbeitet.[PARAGRAPH:2]Für alle anderen Arbeiten ist er jedoch nicht zu gebrauchen und erhält hohe Produktionsmali. Außerdem ist er schwach, so dass er nicht zum Soldaten taugt. [NEWLINE]Er ist jedoch auch eine Frohnatur und Lebenmann, der sich in der Kolonie durch seinen freigebigen Lebensstil schnell Freunde machen wird. Er hebt daher die Stimmung in der Kolonie. Allerdings bringt ihm genau das auch Schwierigkeiten ein. Es könnte ein Grund sein, warum der König gerade diesen Mann loswerden und in die neue Welt abschieben wollte. Ihr solltet ihn im Auge behalten.</German>
+    </TEXT>
 </Civ4GameText>

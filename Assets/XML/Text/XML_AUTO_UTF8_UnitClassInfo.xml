@@ -4091,4 +4091,13 @@
         </Spanish>
         <Russian>Враждебные индейцы</Russian>
     </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_ECCENTRIC_ARCHITECT</Tag>
+        <English>Eccentric Architect:Eccentric Architects</English>
+        <German>
+            <Text>Exzentrischer Architekt:Exzentrische Architekten</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
 </Civ4GameText>

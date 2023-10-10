@@ -442,6 +442,11 @@
             <DefaultUnit>UNIT_DOCTOR</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_ECCENTRIC_ARCHITECT</Type>
+            <Description>TXT_KEY_UNITCLASS_ECCENTRIC_ARCHITECT</Description>
+            <DefaultUnit>UNIT_ECCENTRIC_ARCHITECT</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_JUDGE</Type>
             <Description>TXT_KEY_UNITCLASS_JUDGE</Description>
             <DefaultUnit>UNIT_JUDGE</DefaultUnit>
