@@ -3863,9 +3863,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_WEAPONSMITHS</Tag>
-        <English>Many miners</English>
-        <German>Viele Minenarbeiter</German>
-        <Russian>Множество оружейников</Russian>
+        <English>Many armourer</English>
+        <German>Viele Waffenschmiede</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_WEAPONSMITHS_HEAD</Tag>
