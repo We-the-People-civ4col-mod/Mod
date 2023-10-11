@@ -417,7 +417,7 @@
         <Tag>TXT_KEY_UNITCLASS_CARPENTER</Tag>
         <English>Master Carpenter:Master Carpenters</English>
         <French>
-            <Text>Maître menuisier:Maîtres menuisiers</Text>
+            <Text>Maître charpentier:Maîtres charpentiers</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -4094,6 +4094,7 @@
    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ECCENTRIC_ARCHITECT</Tag>
         <English>Eccentric Architect:Eccentric Architects</English>
+        <French>Architecte excentrique:Architectes excentriques</French>
         <German>
             <Text>Exzentrischer Architekt:Exzentrische Architekten</Text>
             <Gender>Male</Gender>

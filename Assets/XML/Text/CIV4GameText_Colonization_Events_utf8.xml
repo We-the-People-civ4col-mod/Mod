@@ -1493,14 +1493,14 @@
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_WHEELWRIGHT</Tag>
         <English>Eager wheelwrights work sacrificially for the citizens in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
-        <French>Des menuisiers-charrons souhaitent aider les citoyens de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
+        <French>Des charpentiers-charrons souhaitent aider les citoyens de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>Eifrige Stellmacher setzen sich aufopferungsvoll für die kleinen Leute in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ein.</German>
         <Russian>Усердные колесные мастера самоотверженно трудятся ради жителей [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_WHEELWRIGHT</Tag>
         <English>Milord, the wheelwrights in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] offer to construct carts for the farmers to help them cultivate their fields.</English>
-        <French>Seigneur, les menuisiers-charrons de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vous proposent de construire des chariots pour aider les fermiers à cultiver leurs champs.</French>
+        <French>Seigneur, les charpentiers-charrons de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vous proposent de construire des chariots pour aider les fermiers à cultiver leurs champs.</French>
         <German>Milord, die Stellmacher Eurer Wagnerei in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] bieten an, den Bauern Karren zu bauen, so dass sie ihre Felder flinker bewirtschaften können.</German>
         <Russian>Милорд, колесные мастера в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] предлагают построить тележки для фермеров, чтобы помочь им обрабатывать поля.</Russian>
     </TEXT>

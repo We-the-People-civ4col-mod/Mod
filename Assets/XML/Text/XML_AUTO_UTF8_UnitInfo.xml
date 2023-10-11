@@ -643,7 +643,7 @@
         <Tag>TXT_KEY_UNIT_CARPENTER</Tag>
         <English>Master Carpenter:Master Carpenters</English>
         <French>
-            <Text>Maître menuisier:Maîtres menuisiers</Text>
+            <Text>Maître charpentier:Maîtres charpentiers</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -667,7 +667,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_CARPENTER_PEDIA</Tag>
         <English>The carpenter transforms lumber into practical and pleasing objects.[NEWLINE]While anyone can use a saw or a plane, it takes a skilled craftsman to turn out the many items needed quickly by a growing colony.[NEWLINE]The blacksmith needs a counter to display his wares, the preacher benches for the faithful. Buckets for the wells; seats for the statehouse.[NEWLINE]Only a skilled carpenter can fill every need while ensuring speed and quality.</English>
-        <French>Le menuisier est capable de façonner le bois en divers objets pratiques ou décoratifs. Et même s'il est à portée de tout un chacun de manier une scie ou un rabot, seul un artisan expérimenté peut produire rapidement les nombreux objets requis par une colonie en pleine expansion. Le forgeron a besoin d'un nouveau porte-outils pour exhiber sa marchandise, le pasteur de bancs pour les fidèles. Il faut des seaux pour les puits, des sièges pour l'Assemblée... Seul un Menuisier expérimenté peut combler les besoins de chacun tout en garantissant rapidité et qualité.</French>
+        <French>Le charpentier est capable de façonner le bois en divers objets pratiques ou décoratifs. Et même s'il est à portée de tout un chacun de manier une scie ou un rabot, seul un artisan expérimenté peut produire rapidement les nombreux objets requis par une colonie en pleine expansion. Le forgeron a besoin d'un nouveau porte-outils pour exhiber sa marchandise, le pasteur de bancs pour les fidèles. Il faut des seaux pour les puits, des sièges pour l'Assemblée... Seul un charpentier expérimenté peut combler les besoins de chacun tout en garantissant rapidité et qualité.</French>
         <German>Der Zimmermann ist in der Lage aus Holz eine Vielzahl praktischer und schöner Gegenstände zu erschaffen. Und auch wenn jeder Säge oder Hobel benutzen kann, braucht man schon einen fähigen Handwerker, um schnell die vielen Objekte zu bauen, die eine neue Kolonie benötigt. Der Schmied braucht ein neues Regal, um seine Ware auszustellen, der Prediger Bänke für die Gläubigen. Eimer für die Brunnen, Sitze für das Kapitol; nur ein fähiger Zimmermann kann jeden Bedarf decken und dabei schnell gute Qualität liefern.</German>
         <Italian>Il carpentiere è in grado di realizzare oggetti pratici e piacevoli con il legname. Anche se chiunque è in grado di usare una sega o una pialla, ci vuole un abile artigiano per realizzare rapidamente i vari oggetti necessari a una colonia in crescita. Il fabbro ha bisogno di un nuovo scaffale per mettere in mostra la propria merce, al predicatore servono panche per i fedeli. Secchi per i pozzi; sedie per il municipio. Solo un abile carpentiere può soddisfare ogni richiesta assicurando contemporaneamente rapidità e qualità.</Italian>
         <Spanish>El Carpintero es capaz de convertir la Madera en una gran variedad de objetos prácticos y agradables. Y, aunque todo el mundo es capaz de usar una sierra o un cepillo de carpintero, solo un artesano habilidoso puede producir rápidamente los diversos objetos que necesita una colonia. El Herrero necesita un nuevo estante en el que mostrar sus mercancías; y el Predicador, bancos para los fieles. Hay que hacer cubos para los pozos y sillas para el Ayuntamiento. Únicamente un Carpintero habilidoso puede satisfacer todas las necesidades con rapidez y calidad.</Spanish>
@@ -675,7 +675,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_CARPENTER_STRATEGY</Tag>
         <English>[COLOR_UNIT_TEXT]Master carpenters[COLOR_REVERT] can construct buildings and ships faster than any other colonist.[NEWLINE]Assigning them to the [LINK=PROFESSION_CARPENTER]carpenter[\LINK] profession in your settlement will get all your construction jobs completed in half the usual time, because they generate twice as much [LINK=YIELD_HAMMERS]production[\LINK] as other colonists, as long as enough [LINK=YIELD_LUMBER]lumber[\LINK] is available.[PARAGRAPH:1]Master carpenters can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also [LINK=CONCEPT_TRAINING]apprentice[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
-        <French>Les [COLOR_UNIT_TEXT]Maîtres menuisiers[COLOR_REVERT] peuvent construire des bâtiments et des bateaux bien plus vite que n'importe quel autre colon. Si vous les assignez à la profession de menuisiers, ils bâtiront vos projets deux fois plus rapidement qu'un colon ordinaire.</French>
+        <French>Les [COLOR_UNIT_TEXT]Maîtres charpentiers[COLOR_REVERT] peuvent construire des bâtiments et des bateaux bien plus vite que n'importe quel autre colon. Si vous les assignez à la profession de charpentiers, ils bâtiront vos projets deux fois plus rapidement qu'un colon ordinaire.</French>
         <German>[COLOR_UNIT_TEXT]Zimmermeister[COLOR_REVERT] können Gebäude und Schiffe rascher bauen als jeder andere Bürger. Weist man ihnen den Beruf des Zimmermanns zu, produzieren sie für alle Bauprojekte doppelt so viele Hämmer wie Freie Kolonisten.</German>
         <Italian>I [COLOR_UNIT_TEXT]mastri carpentieri[COLOR_REVERT] possono costruire edifici e navi più rapidamente di qualsiasi altro colono. Assegnarne uno alla professione di carpentiere nel tuo insediamento farà in modo che tutti i lavori di costruzione vengano finiti nella metà del tempo.</Italian>
         <Spanish>Los [COLOR_UNIT_TEXT]Maestros carpinteros[COLOR_REVERT] pueden construir barcos y edificios más rápido que cualquier otro Colono. Asignarlos a la profesión de Carpintero en vuestro asentamiento hará que tengáis terminados todos los trabajos de construcción en la mitad de tiempo.</Spanish>
@@ -4365,6 +4365,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_EXPERT_SETTLER</Tag>
         <English>Prepared Settler:Prepared Settlers</English>
+        <French>Fondateur préparé:Fondateurs Préparés</French>
         <German>
             <Text>Vorbereiteter Siedler:Vorbereitete Siedler</Text>
             <Gender>Male</Gender>

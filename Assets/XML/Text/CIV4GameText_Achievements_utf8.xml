@@ -3464,7 +3464,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_TREASURES_HEAD</Tag>
         <English>Treasures were hoarded</English>
-        <French>Des trésosrs sous le coude</French>
+        <French>Des trésors sous le coude</French>
         <German>Schätze wurden gehortet</German>
         <Russian>Запасы золота</Russian>
     </TEXT>
@@ -3484,6 +3484,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MULATTOS_HEAD</Tag>
         <English>Descendants of European settlers [NEWLINE]and African slaves</English>
+        <French>L'Europe et l'Afrique se mêlent en eux</French>
         <German>Nachkommen europäischer Siedler [NEWLINE]und afrikanischer Sklaven</German>
         <Russian>Потомки европейских поселенцев и африканских рабов</Russian>
     </TEXT>
@@ -3503,6 +3504,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MESTIZZOS_HEAD</Tag>
         <English>Descendants of European settlers [NEWLINE]and indigenous population</English>
+        <French>L'Europe et les Amériques se mêlent en eux</French>
         <German>Nachkommen europäischer Siedler [NEWLINE]und indigener Bevölkerung</German>
         <Russian>Потомки европейских поселенцев и тузевцев</Russian>
     </TEXT>
@@ -4254,7 +4256,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_OLIVES_PLANTER</Tag>
         <English>Three experienced olives planter</English>
-        <French>Trosi experts cueilleur d'olives</French>
+        <French>Trois experts ramasseurs d'olives</French>
         <German>Drei erfahrene Oliven-Pflanzer</German>
         <Russian>Три опытных плантатора оливок</Russian>
     </TEXT>
