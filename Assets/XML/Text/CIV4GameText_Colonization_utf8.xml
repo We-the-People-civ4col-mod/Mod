@@ -2092,6 +2092,7 @@
         <German>[ICON_BULLET]%D1_Change%% Siedlungsstärke</German>
         <Italian>[ICON_BULLET]%D1_Change%% alla forza degli insediamenti</Italian>
         <Spanish>[ICON_BULLET]%D1_Change%% a la fuerza del asentamiento</Spanish>
+        <Russian>[ICON_BULLET]%D1_Change%% к силе в поселениях</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CITY_ATTACK_MOD</Tag>
