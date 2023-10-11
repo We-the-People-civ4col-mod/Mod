@@ -7972,6 +7972,11 @@ def getHelpCriminalsAttackCity(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_CRIMINALS_REVOLT_HELP", ())
 	return szHelp
 
+######## Bailiffs search for Architect and attack city ###########
+
+def getHelpBailiffsAttackCity(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_ARCHITECT_BAILIFF_HELP", ())
+	return szHelp
 
 ######## Buccanners attack Silver Mine ###########
 

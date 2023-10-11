@@ -9320,4 +9320,34 @@
         <German>Sir, die Anzahl der Kolonien in der Neuen Welt wächst stetig, aber der Aufbau geht nicht schnell genug voran. Seine Majestät hat daher entschieden, einen erfahrenen Architekten mit höchstem Ansehen in die Kolonien zu entsenden, um den Aufbau voranzutreiben.</German>
         <Russian>Милорд, количество управляемых вами колоний в Новом Свете неуклонно растёт, но строительство идёт недостаточно быстро. Поэтому Его Величество решил прислать к нам опытного архитектора с самой высокой репутацией для поддержки строительных работ в колониях.</Russian>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_ARCHITECT_BAILIFF</Tag>
+        <English>A rumour is spreading that the bailiffs are in the colonies looking for a for an architect in debt.</English>
+        <German>Es heißt die Büttel sind in den Kolonien auf der Suche nach einem verschuldeten Architekten.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_ARCHITECT_BAILIFF_1</Tag>
+        <English>Milord, the architect we recently accepted into our colony, is doing a good job. Unfortunately, there is also a catch. Apparently, he has made enemies in Europe and gotten himself heavily into debt. The bailiffs have heard that he is working for us and are now comb through our colonies from north to south. They demand that we pay the whole sum immediately, otherwise the man will face the debtors' prison and be brought back to Europe in disgrace.</English>
+        <German>Milord, der Architekt, den wir kürzlich in unsere Kolonie aufgenommen haben, leistet gute Arbeit. Leider hat das Ganze auch einen Haken. Offenbar hat er sich in der Alten Welt Feinde gemacht und sich hoch verschuldet. Die Büttel haben gehört, dass er für uns arbeitet und durchsuchen unsere Kolonien von Nord nach Süd. Sie verlangen, dass wir die ganze Summe sogleich bezahlen, ansonsten droht dem Mann der Schuldturm und man wird ihn in Schande nach Europa zurückbringen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_PAY</Tag>
+        <English>Darn it and sew it up, I knew there was a catch when we took him in. The letter of recommendation was too generously worded. Still, we can't leave him hanging. Pay the bailiffs and then hopefully the grass will grow over the matter. But keep quiet about it, the king should not know that we helped the man.</English>
+        <German>Verflixt und zugenäht, ich wusste da war ein Haken, als wir ihn aufnahmen. Das Empfehlungsschreiben war allzu großzügig abgefasst. Dennoch, wir können ihn nicht hängen lassen. Bezahlt die Büttel und dann wächst hoffentlich Gras über die Sache. Aber schweigt darüber, der König sollte nicht erfahren, dass wir dem Mann geholfen haben.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_NEGOTIATE</Tag>
+        <English>It's really maddening. Let's try to negotiate with the bailiffs first. Let's offer them half of what the architect owes.</English>
+        <German>Verd...ah man, soll ja nicht fluchen. Aber es ist doch wirklich zum verrückt werden. Versuchen wir erst einmal mit den Halunken zu verhandeln. Bieten wir ihnen die Hälfte von dem was der Architekt ihnen schuldet.</German>
+    </TEXT> 
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_REFUSE</Tag>
+        <English>Aha, that would have been too good to be true. But this is a free colony and everyone should be happy here - his old misdemeanors should be forgiven. Call the guard and scare away this rabble. We will not hand over this faithful servant of our progress just like that.</English>
+        <German>Aha, wäre ja auch zu schön gewesen. Aber dies ist eine freie Kolonie und jeder soll hier glücklich werden - seine Altlasten seien ihm vergeben. Ruft die Wache und verscheucht dieses Pack. Wir liefern diesen treuen Diener unseres Fortschritts nicht einfach so aus.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_HELP</Tag>
+        <English>[ICON_BULLET]The bailiffs will comb our city! Call to arms!</English>
+        <German>[ICON_BULLET]Die Büttel werden unsere Stadt durchsuchen! Zu den Waffen!</German>
+    </TEXT>
 </Civ4GameText>
