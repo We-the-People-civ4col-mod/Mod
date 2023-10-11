@@ -3163,6 +3163,7 @@
         <German>Klicken, um nach [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] zu gelangen</German>
         <Italian>Clicca per andare a [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]</Italian>
         <Spanish>Hacer clic para ir a [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]</Spanish>
+        <Russian>Нажмите, чтобы перейти к [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_SELECT_A_CIV_LEADER</Tag>
