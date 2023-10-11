@@ -221,7 +221,7 @@
             <iEuropePriceThresholdMultiplier>120</iEuropePriceThresholdMultiplier>
             <iNativePacifismPercent>90</iNativePacifismPercent>
             <iMissionFailureThresholdPercent>97</iMissionFailureThresholdPercent>
-            <iInitMaxTaxRate>50</iInitMaxTaxRate>
+            <iInitMaxTaxRate>45</iInitMaxTaxRate>
             <iMaxGoldAskPercent>30</iMaxGoldAskPercent>
             <iMinGoldAskPercent>10</iMinGoldAskPercent>
             <iNBMOD_REF_Weight>75</iNBMOD_REF_Weight>
@@ -567,7 +567,7 @@
             <iEuropePriceThresholdMultiplier>90</iEuropePriceThresholdMultiplier>
             <iNativePacifismPercent>70</iNativePacifismPercent>
             <iMissionFailureThresholdPercent>91</iMissionFailureThresholdPercent>
-            <iInitMaxTaxRate>60</iInitMaxTaxRate>
+            <iInitMaxTaxRate>55</iInitMaxTaxRate>
             <iMaxGoldAskPercent>45</iMaxGoldAskPercent>
             <iMinGoldAskPercent>20</iMinGoldAskPercent>
             <iNBMOD_REF_Weight>110</iNBMOD_REF_Weight>
@@ -740,7 +740,7 @@
             <iEuropePriceThresholdMultiplier>80</iEuropePriceThresholdMultiplier>
             <iNativePacifismPercent>60</iNativePacifismPercent>
             <iMissionFailureThresholdPercent>89</iMissionFailureThresholdPercent>
-            <iInitMaxTaxRate>65</iInitMaxTaxRate>
+            <iInitMaxTaxRate>60</iInitMaxTaxRate>
             <iMaxGoldAskPercent>50</iMaxGoldAskPercent>
             <iMinGoldAskPercent>25</iMinGoldAskPercent>
             <iNBMOD_REF_Weight>125</iNBMOD_REF_Weight>
@@ -913,7 +913,7 @@
             <iEuropePriceThresholdMultiplier>70</iEuropePriceThresholdMultiplier>
             <iNativePacifismPercent>40</iNativePacifismPercent>
             <iMissionFailureThresholdPercent>87</iMissionFailureThresholdPercent>
-            <iInitMaxTaxRate>70</iInitMaxTaxRate>
+            <iInitMaxTaxRate>65</iInitMaxTaxRate>
             <iMaxGoldAskPercent>50</iMaxGoldAskPercent>
             <iMinGoldAskPercent>25</iMinGoldAskPercent>
             <iNBMOD_REF_Weight>150</iNBMOD_REF_Weight>

@@ -159,7 +159,7 @@
 	</Define>
 	<Define>
 		<DefineName>MAX_TAX_RATE</DefineName>
-		<iDefineIntVal>60</iDefineIntVal>
+		<iDefineIntVal>70</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>MIN_TAX_RATE</DefineName>
