@@ -9275,7 +9275,7 @@ void CvCity::ejectTrader()
 	}
 }
 
-bool CvCity::canProduceYield(YieldTypes eYield)
+bool CvCity::canProduceYield(YieldTypes eYield) const
 {
 	CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
 	for (int i = 0; i < GC.getNumProfessionInfos(); i++)
