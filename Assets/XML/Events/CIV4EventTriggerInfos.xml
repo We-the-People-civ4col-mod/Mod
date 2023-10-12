@@ -37404,7 +37404,7 @@
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
-			<bOwnPlot>1</bOwnPlot>
+			<bOwnPlot>0</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
 			<FeaturesRequired/>
 			<TerrainsRequired/>
@@ -37417,7 +37417,7 @@
 			<PrereqEvents>
 				<Event>EVENT_ARCHITECT_BAILIFF_NEGOTIATE</Event>
 			</PrereqEvents>
-			<bPrereqEventPlot>1</bPrereqEventPlot>
+			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
 			<bGlobal>0</bGlobal>
