@@ -5608,7 +5608,7 @@ void CvGame::createAnimalsSea()
 
 	for(pLoopArea = GC.getMap().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMap().nextArea(&iLoop))
 	{
-		iNeededAnimals = (pLoopArea->getNumTiles() * GC.getHandicapInfo(getHandicapType()).getAIAnimalLandMaxPercent()) / 100;
+		iNeededAnimals = (pLoopArea->getNumTiles() * GC.getHandicapInfo(getHandicapType()).getAIAnimalSeaMaxPercent()) / 100;
 		//iNeededAnimals = std::min(100, iNeededAnimals);
 		//iNeededAnimals -= pLoopArea->getUnitsPerPlayer(getBarbarianPlayer());
 		if (iNeededAnimals == 0 && GC.getGameINLINE().getSorenRandNum(10, "Small Area Animal Spwan") == 1)
