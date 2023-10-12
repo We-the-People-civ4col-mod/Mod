@@ -12658,7 +12658,7 @@
 			<UnitsRequired>
 				<UnitClass>UNITCLASS_WHALE_OIL_COOKER</UnitClass>
 			</UnitsRequired>
-			<iNumUnits>0</iNumUnits>
+			<iNumUnits>2</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
