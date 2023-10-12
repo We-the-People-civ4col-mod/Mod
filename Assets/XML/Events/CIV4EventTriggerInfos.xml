@@ -37237,7 +37237,7 @@
 			<iPercentGamesActive>100</iPercentGamesActive>
 			<iWeight>-1</iWeight>
 			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
-			<bProbabilityBuildingMultiply>1</bProbabilityBuildingMultiply>
+			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
 			<iMinTreasury>6000</iMinTreasury>
 			<iMinPopulation>20</iMinPopulation>
@@ -37307,7 +37307,7 @@
 			<bSinglePlayer>0</bSinglePlayer>
 			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
 			<iPercentGamesActive>100</iPercentGamesActive>
-			<iWeight>200</iWeight>
+			<iWeight>-1</iWeight>
 			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
@@ -37344,6 +37344,78 @@
 			</Events>
 			<PrereqEvents>
 				<Event>EVENT_ECCENTRIC_ARCHITECT_1</Event>
+			</PrereqEvents>
+			<bPrereqEventPlot>1</bPrereqEventPlot>
+			<bRecurring>0</bRecurring>
+			<bTeam>0</bTeam>
+			<bGlobal>0</bGlobal>
+			<bPickPlayer>0</bPickPlayer>
+			<bOtherPlayerWar>0</bOtherPlayerWar>
+			<bOtherPlayerAI>0</bOtherPlayerAI>
+			<bOtherPlayerNative>0</bOtherPlayerNative>
+			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bShowPlot>1</bShowPlot>
+			<bFrontPopup>0</bFrontPopup>
+			<iCityFoodWeight>0</iCityFoodWeight>
+			<PythonCanDo/>
+			<PythonCanDoCity>canTriggerCriminalsAttackCity</PythonCanDoCity>
+			<PythonCanDoUnit/>
+			<PythonCallback/>
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_ARCHITECT_BAILIFF_FINAL</Type>
+			<WorldNewsTexts>
+				<Text>TXT_KEY_EVENT_TRIGGER_ARCHITECT_BAILIFF_FINAL</Text>
+			</WorldNewsTexts>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_TRIGGER_ARCHITECT_BAILIFF_FINALLY</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<bTutorial>0</bTutorial>
+			<bSinglePlayer>0</bSinglePlayer>
+			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>-1</iWeight>
+			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+			<eCivic>NONE</eCivic>
+			<iMinTreasury>1000</iMinTreasury>
+			<iMinPopulation>0</iMinPopulation>
+			<iMaxPopulation>0</iMaxPopulation>
+			<iMinMapLandmass>0</iMinMapLandmass>
+			<iMinOurLandmass>0</iMinOurLandmass>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<eMinDifficulty>NONE</eMinDifficulty>
+			<UnitsRequired> 
+				<UnitClass>UNITCLASS_ECCENTRIC_ARCHITECT</UnitClass>
+			</UnitsRequired>
+			<iNumUnits>1</iNumUnits>
+			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iUnitDamagedWeight>0</iUnitDamagedWeight>
+			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitExperienceWeight>0</iUnitExperienceWeight>
+			<bUnitsOnPlot>0</bUnitsOnPlot>
+			<BuildingsRequired/>
+			<iNumBuildings>0</iNumBuildings>
+			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+			<iNumPlotsRequired>0</iNumPlotsRequired>
+			<bOwnPlot>1</bOwnPlot>
+			<ePlotType>NONE</ePlotType>
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
+			<Events>
+				<Event>EVENT_ARCHITECT_BAILIFF_FINAL_PAY</Event>
+				<Event>EVENT_ARCHITECT_BAILIFF_FINAL_REFUSE</Event>
+			</Events>
+			<PrereqEvents>
+				<Event>EVENT_ARCHITECT_BAILIFF_NEGOTIATE</Event>
 			</PrereqEvents>
 			<bPrereqEventPlot>1</bPrereqEventPlot>
 			<bRecurring>0</bRecurring>

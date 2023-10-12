@@ -9356,4 +9356,24 @@
         <German>[ICON_BULLET]Die Büttel werden unsere Stadt durchsuchen! Zu den Waffen!</German>
         <Russian>[ICON_BULLET]Приставы вооружены и готовы к перестрелке! Тревога!!!</Russian>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_ARCHITECT_BAILIFF_FINAL</Tag>
+        <English>Bailiffs want money.</English>
+        <German>Es heißt die Büttel wollen mehr Geld.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_ARCHITECT_BAILIFF_FINALLY</Tag>
+        <English>Milord, it didn't help that we fobbed off the bailiffs with half the debt. They are back and want to collect the rest of the debt. What do we do now?</English>
+        <German>Milord, es hat nichts genutzt, dass wir die Büttel mit der Hälfte der Schulden abgespeist haben. Sie sind wieder da und wollen den Rest der Schulden eintreiben. Was machen wir jetzt?</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_FINAL_PAY</Tag>
+        <English>All right, then maybe they'll finally give it a rest. People are already talking on the streets. Pay out the money and then chase them away.</English>
+        <German>Also gut, dann geben sie vielleicht endlich Ruhe. Auf der Straße wird schon geredet. Zahlt das Geld aus und dann jagt sie fort.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_FINAL_REFUSE</Tag>
+        <English>It's really maddening. Let's try to negotiate with the bailiffs first. Let's offer them half of what the architect owes.</English>
+        <German>Jetzt reicht es uns aber. Noch mehr bekommen sie nicht! Unser Geldbeutel bleibt geschlossen. Mobilisiert die Milz!</German>     
+    </TEXT>
 </Civ4GameText>
