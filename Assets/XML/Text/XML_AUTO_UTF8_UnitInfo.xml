@@ -1945,7 +1945,7 @@
         <Tag>TXT_KEY_UNIT_EMIGRANT</Tag>
         <English>Political Refugee:Political Refugees</English>
         <French>
-            <Text>Political Refugee:Political Refugees</Text>
+            <Text>Exilé politique:Exilés politiques</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -5265,7 +5265,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Tirailleur royal:Tirailleurs royaux</Text>
+            <Text>Soldat d'infanterie royale:Soldats d'infanterie royale</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
