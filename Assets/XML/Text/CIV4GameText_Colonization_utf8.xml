@@ -416,7 +416,7 @@
         <German>[COLOR_REVERT]Ein [COLOR_UNIT_TEXT]%s2[COLOR_REVERT] wünscht, in die Kolonien auszuwandern. Er hat vernommen, dass ihm in der Neuen Welt kein Landesherr Vorschriften macht, in welche Kirche er zu gehen habe, und wie gut das Leben dort sei.</German>
         <Italian>[COLOR_REVERT]I disordini religiosi in %s1_europe hanno causato un aumento dell'emigrazione. [COLOR_UNIT_TEXT]%s2[COLOR_REVERT] attende in Europa.</Italian>
         <Spanish>[COLOR_REVERT]El malestar religioso en %s1_europe ha aumentado la emigración. [NUM2:Un:Una] [COLOR_UNIT_TEXT]%s2[COLOR_REVERT] aguarda en Europa.</Spanish>
-        <Russian>[COLOR_REVERT][COLOR_UNIT_TEXT]%s2[COLOR_REVERT] хочет эмигрировать в колонии. Он слышал, как хороша жизнь в Новом Свете. Там никто не будет диктовать ему, в какую церковь ходить.</Russian>
+        <Russian>[COLOR_UNIT_TEXT]%s2[COLOR_REVERT] хочет эмигрировать в колонии. Там никто не указывает, в какую церковь ходить и на каком языке возносить молитвы. Свобода для всех!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NEW_IMMIGRANT_AVAILABLE_SHORT</Tag>

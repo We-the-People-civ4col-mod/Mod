@@ -4113,6 +4113,7 @@
         <German>([COLOR:140:255:40:255]&lt; STRG &gt;[COLOR_REVERT] zur Auswahl aller %s1-Einheiten)</German>
         <Italian>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] per selezionare %s1)</Italian>
         <Spanish>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] para seleccionar [NUM1:todos los:todas las:todos los:todas las] %s1:2)</Spanish>
+        <Russian>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] чтобы выделить все %s1)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ALT_SELECT</Tag>
