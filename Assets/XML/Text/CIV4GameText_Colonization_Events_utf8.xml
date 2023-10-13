@@ -9415,60 +9415,70 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ARCHITECT_BAILIFF</Tag>
         <English>A rumour is spreading that the bailiffs are in the colonies looking for a for an architect in debt.</English>
+        <French>Une rumeur veut que des huissiers venus d'Europe sont à la recherche d'un architecte perclus de dettes.</French>
         <German>Es heißt die Büttel sind in den Kolonien auf der Suche nach einem verschuldeten Architekten.</German>
         <Russian>Ходят слухи, что судебные приставы объявили в розыск архитектора-должника.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ARCHITECT_BAILIFF_1</Tag>
         <English>Milord, the architect we recently accepted into our colony, is doing a good job. Unfortunately, there is also a catch. Apparently, he has made enemies in Europe and gotten himself heavily into debt. The bailiffs have heard that he is working for us and are now comb through our colonies from north to south. They demand that we pay the whole sum immediately, otherwise the man will face the debtors' prison and be brought back to Europe in disgrace.</English>
+        <French>Sire, l'architecte que nous avons accueilli récemment fait du très bon travail. Hélas, il est venu avec des ennuis. Apparemment il s'est fait des ennemis en Europe et s'est retrouvé lourdement endetté. Les huissiers ont entendu qu'il travaille pour notre compte et passent nos colonies au peigne fin du nord au sud. Ils exigent que nous payions immédiatement toute sa dette, sinon ils ramènent l'homme pieds et poings liés en Europe pour y faite de la prison pour dettes.</French>
         <German>Milord, der Architekt, den wir kürzlich in unsere Kolonie aufgenommen haben, leistet gute Arbeit. Leider hat das Ganze auch einen Haken. Offenbar hat er sich in der Alten Welt Feinde gemacht und sich hoch verschuldet. Die Büttel haben gehört, dass er für uns arbeitet und durchsuchen unsere Kolonien von Nord nach Süd. Sie verlangen, dass wir die ganze Summe sogleich bezahlen, ansonsten droht dem Mann der Schuldturm und man wird ihn in Schande nach Europa zurückbringen.</German>
         <Russian>Милорд, архитектор, который недавно принехал к нам, хорошо справляется со своей работой. Однако, есть одна проблема: он по уши в долгах, с которыми не может расплатиться. Приставы прослышали, что он работает на нас и теперь прочесывают наши колонии вдоль и поперёк. Они требуют, чтобы мы незамедлительно выплатили всю сумму долга, иначе мужчине грозит долговая тюрьма и его с позором вернут в Европу, как только найдут.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_PAY</Tag>
         <English>Darn it and sew it up, I knew there was a catch when we took him in. The letter of recommendation was too generously worded. Still, we can't leave him hanging. Pay the bailiffs and then hopefully the grass will grow over the matter. But keep quiet about it, the king should not know that we helped the man.</English>
+        <French>Misère de misère, je savais qu'il y avait un os avec lui. La lettre de recommandation était trop fleurie pour être honnête. On ne peut pourtant pas le laisser tomber. Payez les huissiers et espérons que de l'eau coule sous les ponts. Restez discrets, le roi ne doit rien savoir à ce sujet.</French>
         <German>Verflixt und zugenäht, ich wusste da war ein Haken, als wir ihn aufnahmen. Das Empfehlungsschreiben war allzu großzügig abgefasst. Dennoch, wir können ihn nicht hängen lassen. Bezahlt die Büttel und dann wächst hoffentlich Gras über die Sache. Aber schweigt darüber, der König sollte nicht erfahren, dass wir dem Mann geholfen haben.</German>
         <Russian>Три тысячи чертей, я чувствовал, что здесь что-то не чисто, когда мы его брали! Рекомендательные письма были слишком хороши! Тем не менее, мы не можем лишиться такого ценного сотрудника. Заплатите судебным приставам и будем надеяться, что об этом скоро забудут. Но прошу вас - никому не слова. И уж тем более Король не должен знать, что мы помогли этому человеку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_NEGOTIATE</Tag>
         <English>It's really maddening. Let's try to negotiate with the bailiffs first. Let's offer them half of what the architect owes.</English>
+        <French>Jarnicoton. Essayions de négocier avec les huissiers. Offrons-leur la moitié de ce que doit cet architecte</French>
         <German>Verd...ach, man soll ja nicht fluchen. Aber es ist doch wirklich zum verrückt werden. Versuchen wir erst einmal mit den Halunken zu verhandeln. Bieten wir ihnen die Hälfte von dem was der Architekt ihnen schuldet.</German>
         <Russian>Дьявол... Что же, давайте попробуем договориться с судебными приставами. Предложите им половину того, что должен архитектор и будем надеяться, их аппетиты не вырастут.</Russian>
     </TEXT> 
     <TEXT>
         <Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_REFUSE</Tag>
         <English>Aha, that would have been too good to be true. But this is a free colony and everyone should be happy here - his old misdemeanors should be forgiven. Call the guard and scare away this rabble. We will not hand over this faithful servant of our progress just like that.</English>
+        <French>C'était donc trop beau pour être vrai. Mais nous sommes une colonie libre et tout le monde doit être heureux ici - ses écarts passés doivent être pardonnés. Appelez la garde et virez-moi ces chiens. Nous ne leur livrerons pas notre fidèle serviteur dans le progrès sur un coup de tête.</French>
         <German>Aha, wäre ja auch zu schön gewesen. Aber dies ist eine freie Kolonie und jeder soll hier glücklich werden - seine Altlasten seien ihm vergeben. Ruft die Wache und verscheucht dieses Pack. Wir liefern diesen treuen Diener unseres Fortschritts nicht einfach so aus.</German>
         <Russian>Я так и знал, что этот старый прохвост доставит нам хлопот. Но в Новом Свете мы строим новое общество и ошибки прошлого должны быть забыты. Прикажите охране вышвырнуть этих ищеек с нашей территории. Мы никому не отдадим верного слугу нашего прогресса.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_HELP</Tag>
         <English>[ICON_BULLET]The bailiffs will comb our city! Call to arms!</English>
+        <French>[ICON_BULLET]Les huissiers vont fouiller la ville de fond en comble ! Aux armes!</French>
         <German>[ICON_BULLET]Die Büttel werden unsere Stadt durchsuchen! Zu den Waffen!</German>
         <Russian>[ICON_BULLET]Приставы вооружены и готовы к перестрелке! Тревога!!!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ARCHITECT_BAILIFF_FINAL</Tag>
         <English>Bailiffs want money.</English>
+        <French>Les huissiers veulent leur sous.</French>
         <German>Es heißt die Büttel wollen mehr Geld.</German>
         <Russian>Приставы недовольны выплатой только части долга</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ARCHITECT_BAILIFF_FINALLY</Tag>
         <English>Milord, it didn't help that we fobbed off the bailiffs with half the debt. They are back and want to collect the rest of the debt. What do we do now?</English>
+        <French>Sire, esquiver en payant la moitié de la dette aux huissiers n'a pas suffi. Ils reviennent à la charge et veulent le reste. Que faire ?</French>
         <German>Milord, es hat nichts genutzt, dass wir die Büttel mit der Hälfte der Schulden abgespeist haben. Sie sind wieder da und wollen den Rest der Schulden eintreiben. Was machen wir jetzt?</German>
         <Russian>То, что мы отдали приставам половину долга, не помогло. Они хотят получить оставшуюся часть денег. Что будем делать, Милорд?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_FINAL_PAY</Tag>
         <English>All right, then maybe they'll finally give it a rest. People are already talking on the streets. Pay out the money and then chase them away.</English>
+        <French>Très bien, dans ce cas ils laisseront en paix. Ca commence déjà à jaser dans les rues. Payons leur le reste et chassez-les de chez nous.</French>
         <German>Also gut, dann geben sie vielleicht endlich Ruhe. Auf der Straße wird schon geredet. Zahlt das Geld aus und dann jagt sie fort.</German>
         <Russian>Вот негодяи, мы же договорились!.. Ай, чего уж там, отдайте им недостающую сумму и проследите, чтобы они как можно скорее покинули колонии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_FINAL_REFUSE</Tag>
         <English>It's really maddening. Let's try to negotiate with the bailiffs first. Let's offer them half of what the architect owes.</English>
+        <French>C'est de la folie, cette histoire. On va essayer de négocier avec les huissiers. On va leur offrir la moitié de ce que l'architecte leur doit.</French>
         <German>Jetzt reicht es uns aber. Noch mehr bekommen sie nicht! Unser Geldbeutel bleibt geschlossen. Mobilisiert die Milz!</German>     
         <Russian>Ах вот как?! Они не получат ни цента! Надо проучить этих наглецов - соберите ополченцев!</Russian>
     </TEXT>
