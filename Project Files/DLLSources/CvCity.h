@@ -685,7 +685,7 @@ public:
 	virtual CvUnit* AI_bestPopulationUnit(UnitAITypes eUnitAI, ProfessionTypes eProfession = NO_PROFESSION) = 0;
 	virtual ProfessionTypes AI_bestPlotProfession(const CvUnit* pUnit, const CvPlot* pPlot) const = 0;
 	virtual int AI_bestProfessionPlot(ProfessionTypes eProfession, const CvUnit* pUnit) const = 0;
-	virtual int AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUnit, const CvPlot* pPlot, const CvUnit* pDisplaceUnit, bool bAllowNotOnMap = false) const = 0;
+	virtual int AI_citizenProfessionValue(ProfessionTypes eProfession, const CvUnit* pUnit, const CvPlot* pPlot, const CvUnit* pDisplaceUnit, bool bAllowNotOnMap = false) const = 0;
 	virtual int AI_professionBasicOutput(ProfessionTypes eProfession, UnitTypes eUnit, const CvPlot* pPlot) const = 0;
 	virtual int AI_unitJoinCityValue(const CvUnit& kUnit, ProfessionTypes* peNewProfession) const = 0;
 	virtual int AI_unitJoinReplaceValue(CvUnit* pUnit, CvUnit** pReplaceUnit = NULL) const = 0;
