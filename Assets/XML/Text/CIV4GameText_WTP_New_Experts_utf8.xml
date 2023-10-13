@@ -2444,13 +2444,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PRISONER_OF_WAR_PEDIA</Tag>
-        <English>tbd</English>
+        <English>Prisoners of war, especially officers, are often ransomed. The rank and file are more likely to be released during a prisoner exchange.[NEWLINE]Taking prisoners is a relatively recent idea. During the Trojan War defeated fighters were killed. More recently knights counted on the value of their armour and horse to show that ransoming would be worthwhile. By colonial times capturing a prisoner meant the price his conquerors could expect to receive was the value of his life.</English>
         <German>tbd</German>
         <Russian>когда-нибудь здесь появится описание</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PRISONER_OF_WAR_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Prisoners of War[COLOR_REVERT] tbd</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Prisoners of War[COLOR_REVERT][COLOR_HIGHLIGHT_TEXT]Prisoners of War[COLOR_REVERT][NEWLINE]Defeated soldiers usually die in battle, but a few are captured to become prisoners of war. They may be ransomed or transferred in a prisoner exchange if the enemy commander is willing to make a deal.</English>
         <German>[COLOR_HIGHLIGHT_TEXT]Kriegsgefangene[COLOR_REVERT] tbd</German>
         <Russian>[COLOR_HIGHLIGHT_TEXT]Военнопленные[COLOR_REVERT][NEWLINE]когда-нибудь здесь появится описание</Russian>
     </TEXT>
@@ -2479,13 +2479,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_REVOLTING_PRISONER_OF_WAR_PEDIA</Tag>
-        <English>tbd</English>
+        <English>Once captured, prisoners of war have a duty as soldiers to escape. The best opportunity is during a riot. While the guards are distracted a few prisoners try to sneak away into the forest.[NEWLINE]If the guards manage to suppress the riot without too much trouble the remaining prisoners may survive, but punishment usually follows.</English>
         <German>tbd</German>
         <Russian>когда-нибудь здесь появится описание</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_REVOLTING_PRISONER_OF_WAR_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Rebelling Prisoners of War[COLOR_REVERT] tbd</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Rebelling Prisoners of War[COLOR_REVERT][COLOR_HIGHLIGHT_TEXT]Rebelling Prisoners of War[COLOR_REVERT] [NEWLINE]If the conditions of their captivity are bad, or if they see an opportunity to escape, prisoners of war will riot. Once they get away they hide in the woods and fight with greater strength than petty criminals, but not as much power as when they were soldiers.</English>
         <German>[COLOR_HIGHLIGHT_TEXT]Revoltierende Kriegsgefangene[COLOR_REVERT] tbd</German>
         <Russian>[COLOR_HIGHLIGHT_TEXT]Военнопленные[COLOR_REVERT][NEWLINE]когда-нибудь здесь появится описание</Russian>
     </TEXT>
