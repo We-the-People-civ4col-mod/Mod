@@ -2999,8 +2999,19 @@ bool CvUnit::generatePath(const CvPlot* pToPlot, int iFlags, bool bReuse,
 	int* piPathTurns, int iMaxPath,   // <advc.128>
 	bool bUseTempFinder) const
 {
-	if (!bUseTempFinder) // </advc.128>
-		return getGroup()->generatePath(plot(), pToPlot, iFlags, bReuse, piPathTurns, iMaxPath);
+	int res = false;
+
+	if (!bUseTempFinder) // </advc.128> 
+	{
+		res = getGroup()->generatePath(plot(), pToPlot, iFlags, bReuse, piPathTurns, iMaxPath);
+		if (res)
+		{
+			CvPlot* const endTurnPlot = getPathEndTurnPlot();
+			FAssertMsg(endTurnPlot, "getPathEndTurnPlot() must return a non-null pointer!");
+		}
+		return res;
+	}
+
 	// <advc.128>
 	FAssert(!bReuse);
 	KmodPathFinder temp_finder;
