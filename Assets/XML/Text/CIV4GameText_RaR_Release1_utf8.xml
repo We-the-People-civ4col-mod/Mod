@@ -421,18 +421,21 @@
     <TEXT>
         <Tag>TXT_KEY_USED_SHIP_BOUGHT</Tag>
         <English>Milord, the [COLOR_UNIT_TEXT]%s1_shipname[COLOR_REVERT], the used [COLOR_SELECTED_TEXT]%s2_shiptype[COLOR_REVERT] we recently bought for [COLOR_SELECTED_TEXT]%d3_gold[COLOR_REVERT][ICON_GOLD] has been readied in Europe.</English>
+        <French>Sire, le navire de seconde main [COLOR_UNIT_TEXT]%s1_shipname[COLOR_REVERT] de classe [COLOR_SELECTED_TEXT]%s2_shiptype[COLOR_REVERT] que nous avons payé [COLOR_SELECTED_TEXT]%d3_gold[COLOR_REVERT][ICON_GOLD] a été paré en Europe.</French>
         <German>Milord, die [COLOR_UNIT_TEXT]%s1_shipname[COLOR_REVERT], das gebrauchtes Schiff vom Typ [COLOR_SELECTED_TEXT]%s2_shiptype[COLOR_REVERT], welches wir [COLOR_SELECTED_TEXT]%d3_gold[COLOR_REVERT][ICON_GOLD] erworben haben, steht in Europa bereit.</German>
         <Russian>Милорд, [COLOR_FONT_CREAM]%s1_shipname[COLOR_REVERT], подержанный [COLOR_SELECTED_TEXT]%s2_shiptype[COLOR_REVERT], который мы недавно купили за [COLOR_SELECTED_TEXT]%d3_gold[COLOR_REVERT][ICON_GOLD], ждет в доках Европы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FOREIGN_COLONIST_HIRED</Tag>
         <English>Milord, the [COLOR_SELECTED_TEXT]%s1_unit[COLOR_REVERT] we recently hired have arrived in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
+        <French>Sire, les [COLOR_SELECTED_TEXT]%s1_unit[COLOR_REVERT] que nous avons recrutés spnt arrivé à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>Milord, die [COLOR_SELECTED_TEXT]%s1_unit[COLOR_REVERT], welche wir kürzlich angeworben haben, sind in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] angekommen.</German>
         <Russian>Милорд, [COLOR_SELECTED_TEXT]%s1_unit[COLOR_REVERT], которого мы недавно наняли, прибыл в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_USED_SHIP_BARGAIN_AVAILABLE</Tag>
         <English>Milord, one of our contacts in Europe told us that a [COLOR_UNIT_TEXT]used ship[COLOR_REVERT] in good shape will be sold for a bargain price. Our King could help to arrange the deal before it is sold to others.</English>
+        <French>Sire, un de nos contacts en Europe nous signale qu'un [COLOR_UNIT_TEXT]navire de seconde main[COLOR_REVERT] en bon état va être vendu à bon marché. Notre roi peut exercer son droit de préemption à notre avantage.</French>
         <German>Milord, einer unserer Kontakte in Europa hat uns davon berichtet, dass ein [COLOR_UNIT_TEXT]Schiff[COLOR_REVERT] zu einem guten Preis zum Verkauf steht. Seine Majestät könnte uns helfen, dass wir den Zuschlag bekommen.</German>
         <Russian>Милорд, один из наших контактов в Европе сообщил, что [COLOR_SELECTED_TEXT]подержанный корабль[COLOR_REVERT] в довольно неплохом состоянии будет продаваться по выгодной цене. Наш Король мог бы помочь устроить сделку, прежде чем об этом предложении станет известно остальным.</Russian>
     </TEXT>
@@ -470,7 +473,7 @@
     <TEXT>
         <Tag>TXT_KEY_RUNNING_OUT_OF_SPACE_NEW_CAPACITY</Tag>
         <English>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Storage capacity is almost at its limits.</English>
-        <French>La capacité de stockage à %s1_city a presque atteint ses limites, Mylord.</French>
+        <French>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT] La capacité d'entrepôt  a presque atteint ses limites, Mylord.</French>
         <German>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Die Lagerhauskapazität ist fast an ihren Grenzen.</German>
         <Italian>La capacità di storage in %s1_city è quasi al suo limite, Mylord.</Italian>
         <Spanish>La capacidad de almacenamiento en %s1_city es casi en su límite, Mylord.</Spanish>
@@ -488,7 +491,7 @@
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_SMUGGLERS</Tag>
         <English>Milord, the [COLOR_UNIT_TEXT]smugglers[COLOR_REVERT] we have hired await your orders in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
-        <French>Seigneur, les contrebandiers que nous avons recrutés attendent vos ordres à %s1_city.</French>
+        <French>Seigneur, les [COLOR_UNIT_TEXT]contrebandiers[COLOR_REVERT] que nous avons recrutés attendent vos ordres à [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</French>
         <German>Milord, die angeheuerten [COLOR_UNIT_TEXT]Schmuggler[COLOR_REVERT] erwarten Eure Befehle in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</German>
         <Russian>Милорд, [COLOR_SELECTED_TEXT]контрабандисты[COLOR_REVERT], которых мы недавно наняли, ждут ваших приказов в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
     </TEXT>
@@ -501,7 +504,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_COASTAL_TRANSPORT_STRATEGY</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]Coastal ships[COLOR_REVERT] are built to move goods and people. They are small but fast, faster and more spacious than wagon trains. Because of their shallow draft they are unable to use ocean fields, so they can't sail to the Old World. The small coastal ship has two slots for goods and people. The bigger one has three slots. Both can only defend themselves poorly.</English>
-        <French>Les bâteaux côtiers sont conçus pour transporter biens et personnes. Ils sont petits mais rapides, plus rapides et spacieux que les chariots. À cause de leur tirant d'eau faible, ils sont inaptes à la haute mer, et ne peuvent donc naviguer vers l'Ancien Monde. Le petit bâteau côtier compte deux emplacements pour les biens et les personnes, le grand en compte trois. Les deux ne peuvent que se défendre contre les attaques, et ce bien mal.</French>
+        <French>Les [COLOR_HIGHLIGHT_TEXT]bâteaux côtiers[COLOR_REVERT] sont conçus pour transporter biens et personnes. Ils sont petits mais rapides, plus rapides et spacieux que les chariots. À cause de leur tirant d'eau faible, ils sont inaptes à la haute mer, et ne peuvent donc naviguer vers l'Ancien Monde. Le petit bâteau côtier compte deux emplacements pour les biens et les personnes, le grand en compte trois. Les deux ne peuvent que se défendre contre les attaques, et ce bien mal.</French>
         <German>[COLOR_HIGHLIGHT_TEXT]Küstensegler[COLOR_REVERT] sind eigens für den küstennahen Transport von Waren und Menschen gedacht. Sie sind zwar klein, dafür aber sehr wendig und außerdem deutlich geräumiger und schneller als ein Planwagen. Sie können nur in [COLOR_HIGHLIGHT_TEXT]Küstennähe[COLOR_REVERT] eingesetzt werden. Den Ozean kann man mit ihnen nicht befahren, so dass sie nicht nach Europa segeln können. Der Kleine Küstensegler hat zwei Frachtplätze, der große Küstensegler drei. Beide können sich nur schlecht verteidigen.</German>
     </TEXT>
     <TEXT>
