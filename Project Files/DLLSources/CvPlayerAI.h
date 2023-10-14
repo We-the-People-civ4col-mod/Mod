@@ -464,6 +464,7 @@ public:
 	void AI_hurryBestDockUnits(int iHurryCount);
 	int AI_getColonialMilitaryModifier() const;
 	bool AI_shouldHurryUnit() const;
+	ProfessionTypes getSettlerProfession() const;
 
 	// TODO: Make protective and replace with a getter
 	int m_estimatedUnemploymentCount;

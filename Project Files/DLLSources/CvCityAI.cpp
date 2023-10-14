@@ -6902,25 +6902,8 @@ void CvCityAI::AI_doSettlerProfessionCheat()
 	if (!(!kOwner.isHuman() && !kOwner.isNative() && !GC.getGameINLINE().isBarbarianPlayer(kOwner.getID()) && !kOwner.isEurope() && getPopulation() > 3))
 		return;
 
-	// Hackish way to cache this compution
-	static ProfessionTypes eSettlerProfession = NO_PROFESSION;
-
-	if (eSettlerProfession == NO_PROFESSION)
-	{
-		for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
-		{
-			const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
-
-			if (kProfession.canFound() && GC.getCivilizationInfo(kOwner.getCivilizationType()).isValidProfession(eProfession))
-			{
-				eSettlerProfession = eProfession;
-				break;
-			}
-		}
-	}
-
-	if (eSettlerProfession == NO_PROFESSION)
-		return;
+	const ProfessionTypes eSettlerProfession = static_cast<CvPlayerAI&>(kOwner).getSettlerProfession();
+	FAssert(eSettlerProfession != NO_PROFESSION);
 
 	//make sure all equipment is available
 	if (kOwner.hasContentsYieldEquipmentAmount(eSettlerProfession))
@@ -7017,4 +7000,26 @@ bool CvCityAI::canHaveCitizenProfession(const CvUnit& kUnit, ProfessionTypes ePr
 		}
 	}
 	return true;
+}
+
+// Returns the number of colonists that are hanging out on the city plot
+int CvCityAI::AI_getIdleColonistCount() const
+{
+	CLLNode<IDInfo>* pUnitNode;
+	pUnitNode = plot()->headUnitNode();
+	int cnt = 0;
+
+	while (pUnitNode != NULL)
+	{
+		CvUnit* const pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = plot()->nextUnitNode(pUnitNode);
+
+		if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getOwnerINLINE() && pLoopUnit->AI_getUnitAIType() == UNITAI_COLONIST && pLoopUnit->isOnMap() && !pLoopUnit->isCargo() &&
+			pLoopUnit->getGroup()->getActivityType() != ACTIVITY_MISSION)
+		{
+			cnt++;
+		}
+	}
+
+	return cnt;
 }
