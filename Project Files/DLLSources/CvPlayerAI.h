@@ -466,6 +466,7 @@ public:
 	int AI_getColonialMilitaryModifier() const;
 	bool AI_shouldHurryUnit() const;
 	ProfessionTypes getSettlerProfession() const;
+	int AI_getUnitAICount(UnitAITypes eUnitAI) const;
 
 	// Returns the amount of gold the AI is willing to spend on this particular purchase type given the price and amount purchased
 	int AI_getAvailableGold(PurchaseType::Category ePurchaseType, int iPrice, int iAmount) const;

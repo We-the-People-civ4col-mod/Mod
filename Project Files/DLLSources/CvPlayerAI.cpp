@@ -5377,6 +5377,47 @@ int CvPlayerAI::AI_neededWorkers(CvArea* pArea) const
 	return std::max(1, (iCount * 2) / 3);
 }
 
+// Returns the total count of units with eUnitAI regardless of their location
+int CvPlayerAI::AI_getUnitAICount(UnitAITypes eUnitAI) const
+{
+	int iCount = 0;
+
+	int iLoop;
+	for (const CvUnit* pLoopUnit = firstUnit(&iLoop); NULL != pLoopUnit; pLoopUnit = nextUnit(&iLoop))
+	{
+		if (pLoopUnit->AI_getUnitAIType() == eUnitAI)
+		{
+			iCount++;
+		}
+	}
+
+	for (uint i = 0; i < m_aEuropeUnits.size(); ++i)
+	{
+		if (m_aEuropeUnits[i]->AI_getUnitAIType() == eUnitAI)
+		{
+			iCount++;
+		}
+	}
+
+	for (uint i = 0; i < m_aAfricaUnits.size(); ++i)
+	{
+		if (m_aAfricaUnits[i]->AI_getUnitAIType() == eUnitAI)
+		{
+			iCount++;
+		}
+	}
+
+	for (uint i = 0; i < m_aPortRoyalUnits.size(); ++i)
+	{
+		if (m_aPortRoyalUnits[i]->AI_getUnitAIType() == eUnitAI)
+		{
+			iCount++;
+		}
+	}
+
+	return iCount;
+}
+
 int CvPlayerAI::AI_adjacentPotentialAttackers(CvPlot* pPlot, bool bTestCanMove)
 {
 	CLLNode<IDInfo>* pUnitNode;
@@ -8415,6 +8456,8 @@ void CvPlayerAI::AI_doEurope()
 
 	AI_updateNextBuyUnit();
 
+	bool bSettlerNeeded = AI_getUnitAICount(UNITAI_SETTLER) == 0 && AI_estimateUnemploymentCount() > getNumCities() * 2;
+
 	for (int i = 0; i < getNumEuropeUnits(); i++)
 	{
 		CvUnit *pUnit = getEuropeUnit(i);
@@ -8422,6 +8465,14 @@ void CvPlayerAI::AI_doEurope()
 
 		if (kUnit.getTeacherWeight() <= 0 || AI_isStrategy(STRATEGY_REVOLUTION_PREPARING))
 		{
+			// If we've got no settlers and a bunch of idle colonists then prioritize getting a settler
+			if (bSettlerNeeded && pUnit->getProfession() == GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession() && pUnit->canHaveProfession(getSettlerProfession(), false))
+			{
+				changeProfessionEurope(pUnit->getID(), getSettlerProfession());
+				logBBAI(" Player(%S) equips settler in Europe", getCivilizationDescription());
+				bSettlerNeeded = false;
+			}
+
 			bool bProfessionChange = false;
 			eBuyUnit = AI_nextBuyUnit(&eBuyUnitAI, &iBuyUnitValue);
 			if (eBuyUnit != NO_UNIT)
@@ -8450,7 +8501,7 @@ void CvPlayerAI::AI_doEurope()
 			}
 
 			// Only consider changing the profession if this is a regular, unequipped colonist.
-			// TODO: Consider checkinf for lack of equipment instead!
+			// TODO: Consider checking for lack of equipment instead!
 			if (!bProfessionChange && (pUnit->getProfession() == GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession()) && !AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
 			{
 				if (AI_neededWorkers(NULL) > 0)
