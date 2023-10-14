@@ -181,6 +181,7 @@ public:
 
 	void AI_doHurry(bool bForce = false);
 	bool canHaveCitizenProfession(const CvUnit& kUnit, ProfessionTypes eProfession, bool bBumpOther) const;
+	int AI_getIdleColonistCount() const;
 
 protected:
 
