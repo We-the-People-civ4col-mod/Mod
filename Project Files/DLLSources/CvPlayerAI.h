@@ -152,7 +152,6 @@ public:
 
 	int AI_neededExplorers(CvArea* pArea);
 	int AI_neededWorkers(CvArea* pArea) const;
-	//int AI_neededMissionary(CvArea* pArea);
 	
 	int AI_adjacentPotentialAttackers(CvPlot* pPlot, bool bTestCanMove = false);
 	// TAC - AI City Defense - koma13 - START
@@ -465,6 +464,7 @@ public:
 	int AI_getColonialMilitaryModifier() const;
 	bool AI_shouldHurryUnit() const;
 	ProfessionTypes getSettlerProfession() const;
+	int AI_getUnitAICount(UnitAITypes eUnitAI) const;
 
 	// TODO: Make protective and replace with a getter
 	int m_estimatedUnemploymentCount;
