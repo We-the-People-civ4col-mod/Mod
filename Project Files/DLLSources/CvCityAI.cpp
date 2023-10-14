@@ -1204,7 +1204,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 				CvPlot* pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), iI);
 				if (pLoopPlot != NULL)
 				{
-					if (pLoopPlot->isWater())
+					if (pLoopPlot->isWater() && canWork(pLoopPlot, /*bIgnoreCityWorksWaterCheck*/true))
 					{
 						iValue += 8 * std::max(0, pLoopPlot->getYield(YIELD_FOOD) - GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION);
 					}
@@ -1430,50 +1430,50 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 
 				if (iYieldChange != 0)
 				{
-				int iTempValue = 0;
+					int iTempValue = 0;
 
-				int iFood = 0;
-				int iNumLandPlots = 0;
+					int iFood = 0;
+					int iNumLandPlots = 0;
 
-				for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-				{
-					CvPlot* pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), iI);
-					if ((pLoopPlot != NULL) && (pLoopPlot->getWorkingCity() == this))
+					for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 					{
-						if (pLoopPlot->isWater())
+						CvPlot* pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), iI);
+						if (pLoopPlot != NULL && canWork(pLoopPlot, /*bIgnoreCityWorksWaterCheck*/true))
 						{
-							iTempValue += iYieldChange;
-							if (pLoopPlot->isBeingWorked())
+							if (pLoopPlot->isWater())
 							{
 								iTempValue += iYieldChange;
+								if (pLoopPlot->isBeingWorked())
+								{
+									iTempValue += iYieldChange;
+								}
+								if (pLoopPlot->getBonusType() != NO_BONUS)
+								{
+									iTempValue += iYieldChange * 3;
+								}
 							}
-							if (pLoopPlot->getBonusType() != NO_BONUS)
+							else if (iI != CITY_HOME_PLOT)
 							{
-								iTempValue += iYieldChange * 3;
+								iFood += pLoopPlot->getYield(YIELD_FOOD);
+								iNumLandPlots++;
 							}
 						}
-						else if (iI != CITY_HOME_PLOT)
+					}
+
+					iTempValue = AI_estimateYieldValue(eLoopYield, iTempValue);
+
+					if (eLoopYield == YIELD_FOOD && iTempValue > 0 && iNumLandPlots > 0)
+					{
+						if (iFood / iNumLandPlots < 2)
 						{
-							iFood += pLoopPlot->getYield(YIELD_FOOD);
-							iNumLandPlots++;
+							iTempValue += 10;
+							iTempValue += iNumLandPlots * 4 - iFood * 2;
 						}
 					}
+
+					iValue += iTempValue;
+					bIsMilitary = true;
 				}
-
-				iTempValue = AI_estimateYieldValue(eLoopYield, iTempValue);
-
-				if (eLoopYield == YIELD_FOOD && iTempValue > 0 && iNumLandPlots > 0)
-				{
-					if (iFood / iNumLandPlots < 2)
-					{
-						iTempValue += 10;
-						iTempValue += iNumLandPlots * 4 - iFood * 2;
-					}
-				}
-
-				iValue += iTempValue;
-				bIsMilitary = true;
-			}
 			}
 
 			// R&R, ray, Landplot Yields - START
@@ -1485,49 +1485,49 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 
 				if (iYieldChange != 0)
 				{
-				int iYieldChange = kBuildingInfo.getLandPlotYieldChange(i);
-				int iTempValue = 0;
+					int iYieldChange = kBuildingInfo.getLandPlotYieldChange(i);
+					int iTempValue = 0;
 
-				int iFood = 0;
-				int iNumLandPlots = 0;
+					int iFood = 0;
+					int iNumLandPlots = 0;
 
-				for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-				{
-					CvPlot* pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), iI);
-					if ((pLoopPlot != NULL) && (pLoopPlot->getWorkingCity() == this))
+					for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 					{
-						if (!pLoopPlot->isWater()) // here we check for Land
+						CvPlot* pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), iI);
+						if (pLoopPlot != NULL && canWork(pLoopPlot, /*bIgnoreCityWorksWaterCheck*/true))
 						{
-							iTempValue += iYieldChange;
-							if (pLoopPlot->isBeingWorked())
+							if (!pLoopPlot->isWater()) // here we check for Land
 							{
 								iTempValue += iYieldChange;
-							}
-							if (pLoopPlot->getBonusType() != NO_BONUS)
-							{
-								iTempValue += iYieldChange * 3;
+								if (pLoopPlot->isBeingWorked())
+								{
+									iTempValue += iYieldChange;
+								}
+								if (pLoopPlot->getBonusType() != NO_BONUS)
+								{
+									iTempValue += iYieldChange * 3;
+								}
 							}
 						}
 					}
-				}
 
-				iTempValue = AI_estimateYieldValue(eLoopYield, iTempValue);
+					iTempValue = AI_estimateYieldValue(eLoopYield, iTempValue);
 
-				if (eLoopYield == YIELD_FOOD && iTempValue > 0 && iNumLandPlots > 0)
-				{
-					if (iFood / iNumLandPlots < 2)
+					if (eLoopYield == YIELD_FOOD && iTempValue > 0 && iNumLandPlots > 0)
 					{
-						iTempValue += 10;
-						iTempValue += iNumLandPlots * 4 - iFood * 2;
+						if (iFood / iNumLandPlots < 2)
+						{
+							iTempValue += 10;
+							iTempValue += iNumLandPlots * 4 - iFood * 2;
+						}
 					}
-				}
 
-				iValue += iTempValue;
-				bIsMilitary = true;
+					iValue += iTempValue;
+					bIsMilitary = true;
+				}
+				// R&R, ray, Landplot Yields - END
 			}
-			// R&R, ray, Landplot Yields - END
 		}
-	}
 	}
 
 	// Just because we're a major cities does not mean that we should value the unlocking of units which

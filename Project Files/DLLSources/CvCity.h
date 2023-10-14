@@ -90,7 +90,7 @@ public:
 	DllExport int getCityPlotIndex(const CvPlot* pPlot) const;
 	CvPlot* getCityIndexPlot(CityPlotTypes eCityPlot) const;
 
-	bool canWork(const CvPlot* pPlot) const;
+	bool canWork(const CvPlot* pPlot, bool bIgnoreCityWorksWaterCheck = false) const;
 	void verifyWorkingPlot(int iPlotIndex);
 	void verifyWorkingPlots();
 	int getNumAvailableWorkPlots() const;
