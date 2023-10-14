@@ -1071,7 +1071,7 @@ CvPlot* CvCity::getCityIndexPlot(CityPlotTypes eCityPlot) const
 }
 
 
-bool CvCity::canWork(const CvPlot* pPlot) const
+bool CvCity::canWork(const CvPlot* pPlot, bool bIgnoreCityWorksWaterCheck) const
 {
 	if (pPlot == NULL)
 	{
@@ -1090,7 +1090,8 @@ bool CvCity::canWork(const CvPlot* pPlot) const
 		return false;
 	}
 
-	if (pPlot->isWater())
+
+	if (!bIgnoreCityWorksWaterCheck && pPlot->isWater())
 	{
 		if (!isWorksWater() && !GC.getCivilizationInfo(getCivilizationType()).isWaterWorks())
 		{
@@ -1102,6 +1103,8 @@ bool CvCity::canWork(const CvPlot* pPlot) const
 	{
 		return false;
 	}
+
+	// TODO: What about culture ?
 
 	return true;
 }
