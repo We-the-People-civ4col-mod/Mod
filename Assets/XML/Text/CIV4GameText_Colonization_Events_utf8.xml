@@ -9557,114 +9557,133 @@
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_OFFICERS_WIFE</Tag>
         <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] an offier intends to duel with another gentleman.</English>
+        <French>Un officier a l'intention de provoquer en duel un autre gentilhomme à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] will sich ein Offizier mit einen anderen Ehrenmann duellieren.</German>
         <Russian>В городе [COLOR_SELECTED_TEXT]%s2[COLOR REVERT] офицер вызвал на дуэль горожанина.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_OFFICERS_WIFE</Tag>
         <English>The wife of an officer has apparently once too much cheated on her husband. The husband - an officer of our garrison - thinks that this can be solved only in one way. He has challenged the other man of honor to a duel.</English>
+        <French>La femme d'un officier a décidé de batifoler avec un autre une fois de trop. Le mari - un officier de notre garnison - pense qu'il n'y a plus qu'une solution. Il a provoqué l'autre homme d'honneur en duel</French>
         <German>Milord, die Ehefrau eines Offiziers hat offenbar einmal zu viel mit einem anderen angebandelt. Der Ehemann - ein Offizier unserer Garnison - meint, dass kann nur auf eine Weise aus der Welt geschafft werden. Er hat den anderen Ehrenmann zum Duell gefordert.</German>
         <Russian>Кажется, женщина изменила своему супругу. Муж, молодой офицер нашего гарнизона, считает, что решить эту проблему можно только одним способом - дуэль чести</Russian>
     </TEXT>
    <TEXT>
         <Tag>TXT_KEY_EVENT_OFFICERS_WIFE_1</Tag>
         <English>A duel? How wonderful, we haven't had that for a long time! I will second.</English>
+        <French>Un duel ? Merveilleux, on n'en a pas eu depuis longtemps ! Je vais servir de témoins.</French>
         <German>Ein Duell? Wie wunderbar, das hatten wir schon lange nicht mehr! Ich werde sekundieren.</German>
         <Russian>Дуэль? Как здорово, давно у нас такого не было! Я буду секундантом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_OFFICERS_WIFE_2</Tag>
         <English>Lord in heaven! Duels are also forbidden in the coloniescountry.</English>
+        <French>Dieu du ciel ! Les duels sont prohibés.</French>
         <German>Herr im Himmel! Duelle sind auch hier zulande verboten.</German>
         <Russian>Господи! Какая дуэль? Они же запрещены!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_OFFICER_DUEL_HELP</Tag>
         <English>[ICON_BULLET]The duelists shoot wildly. There are injured among the spectators.</English>
+        <French>[ICON_BULLET]Les duellistes tirent à tout-va. Il y a des blessés dans la foule.</French>
         <German>[ICON_BULLET]Die Duellanten schießen wild um sich. Es gibt Verletzte unter den Zuschauern.</German>
         <Russian>[ICON_BULLET]Беспорядочная стрельба дуэлянтов. Есть пострадавшие среди зрителей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_OFFICER_NODUEL_HELP</Tag>
         <English>[ICON_BULLET]The people are upset that they miss such a spectacle.</English>
+        <French>[ICON_BULLET]Les gens sont déçus de rater un tel spectacle</French>
         <German>[ICON_BULLET]Die Bevölkerung ist wütend um so ein Spektakel gebracht zu werden.</German>
         <Russian>[ICON_BULLET]Люди расстроены тем, что пропустили такое зрелище.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_OFFICERS_WIFE_AFTERDUEL</Tag>
         <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] the injured have recovered from the duel.</English>
+        <French>À [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] les gens touchés par les balles perdues du duel ont récupéré.</French>
         <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben sich die Verletzten von dem Duell erholt.</German>
         <Russian>В [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] раненые оправились от последствий дуэли.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_OFFICERS_WIFE_AFTERDUEL</Tag>
         <English>Milord, now that the wounded have recovered from the duel and the bullet wounds have healed, the doctor can again devote his full attention to the normal infirmities and diseases of the colony.</English>
+        <French>Sire, les blessés suite au duel ont guéri de leurs blessures par balle. Le docteur qui les soignait peut se consacrer à nouveau aux maladies et tracas du quotiden de la colonie.</French>
         <German>Milord, nachdem sich die Verletzten von dem Duell erholt haben und die Schusswunden verheilt sind, kann sich der Arzt nun wieder vollständig den normalen Gebrechen und Krankheiten der Kolonie widmen.</German>
         <Russian>Милорд. Теперь, когда раненые оправились от ран, полученных на дуэли, доктор снова может полностью посвятить себя лечению обычных недугов и болезней колонии.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_OFFICERS_WIFE_AFTERDUEL</Tag>
         <English>Thank you for the message. Finally everything is back to normal.</English>
+       <French>Merci pour le message. Tout rentre à la normale</French>
         <German>Ich danke Euch für die Nachricht. Endlich kehrt wieder Normalität ein.</German>
         <Russian>Благодарю вас. Наконец-то всё вернулось на круги своя.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_OFFICERS_WIFE_ASSIGNMENT</Tag>
         <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] an officer was transferred to the wilderness.</English>
+        <French>À [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] un officier a été réassigné loin de la ville.</French>
         <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] wurde ein Offizier in die Wildnis versetzt.</German>
         <Russian>Офицера города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] отправили служить в отдалённый форт.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_OFFICERS_WIFE_ASSIGNMENT</Tag>
         <English>Milord, there is unrest in the city because you have forbidden the duel. The situation will not calm down until you transfer the officer and his horny wife to a quiet outpost.</English>
+        <French>Sire, il y a de l'agitation en ville suite à l'interdiction du duel. La situation ne se tassera pas tant que vous n'écarterez pas cet officier et sa femme insatiable dans un poste reculé.</French>
         <German>Milord, es gibt Unruhen in der Stadt, weil ihr das Duell verboten habt. Die Lage wird sich erst beruhigen, wenn ihr den Offizier samt seiner umtriebigen Ehefrau zu einem ruhigen Außenposten versetzt.</German>
         <Russian>Милорд, в городе беспорядки после запрещения дуэлей. Для спокойствия горожан есть смысл отправить офицера вместе с его похотливой жёнушкой на одну из наших отдалённых застав.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_OFFICERS_WIFE_ASSIGNMENT</Tag>
         <English>I confirm. Hopefully, the officer will then have enough time to take care of his service as well as his wife.</English>
+       <French> Je confirme. J'espère que l'officier trouvera assez de temps pour s'occuper de sa mission et de son épouse.</French>
         <German>Ja, es lässt sich wohl nicht ändern. Der Offizier hat dann hoffentlich genug Zeit, sich um seinen Dienst und seine Frau zu kümmern.</German>
         <Russian>Согласен. Для всех нас это будет благом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_OFFICERS_WIFE_ARRIVAL</Tag>
         <English>An officer has arrived at his new post at the fort.</English>
+        <French>L'officier est arrivé à son nouveau poste au fort</French>
         <German>Ein Offizier ist auf seinem neuen Posten im Fort eingetroffen.</German>
         <Russian>Офицер прибыл на своё новое место службы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_OFFICERS_WIFE_ARRIVAL</Tag>
         <English>My lord, we have received a message that the officer you transferred because of his horny wife has arrived at the fort safe and sound. He can begin his duties there immediately.</English>
+        <French>Sire, nous avons reçu une lettre selon laquelle l'officier que vous avez muté suite aux aventure de sa femme est arrivé sain et sauf au fort. Il peut prendre son service immédiatement.</French>
         <German>Milord, wir haben Nachricht erhalten, dass der Offizier, den ihr wg. seiner umtriebigen Ehefrau versetzt habt, wohlbehalten im Fort angekommen ist. Er kann dort gleich seinen Dienst antreten.</German>
         <Russian>Милорд, мы получили сообщение, что офицер, которого вы перевели из-за скандальной дуэли в отдалённый форт, прибыл на место.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_OFFICERS_WIFE_ARRIVAL</Tag>
         <English>Thank you. Hopefully, that will get him and his horny wife rid of trouble. Hopefully he won't fight a duel with all the other officers.</English>
+        <French>$Merci. J'espère que cela évitera des tentations à lui et et à sa femme, et qu'il ne provoquera pas en duel tous les autres officiers.</French>
         <German>Ich danke Euch. Das wird ihm und seiner Frau hoffentlich die Flausen austreiben. Hoffentlich duelliert er sich nicht mit sämtlichen anderen Offizieren. Die Herren Offiziere sind da ja sehr speziell.</German>
         <Russian>Спасибо. Будем надеяться, что это избавит его и его похотливую жену от неприятностей.</Russian>
     </TEXT>	
     <TEXT>
         <Tag>TXT_KEY_EVENT_OFFICER_ARRIVAL_AT_FORT_HELP</Tag>
         <English>[ICON_BULLET]The Officer takes up duty.</English>
+        <French>[ICON_BULLET]L'officier prend su service.</French>
         <German>[ICON_BULLET]Der Offizier nimmt seinen Dienst auf.</German>
         <Russian>[ICON_BULLET]Офицер приступает к исполнению своих обязанностей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_OFFICERS_WIFE_UPGRADE</Tag>
         <English>Through hard work and good service, the pioneers upgraded the fort.</English>
+        <French>Les pionniers améliorent le fort en se livrant à la tâche avec zèle et ardeur.</French>
         <German>Durch harte Arbeit und guten Dienst haben die Pioniere ein Fort ausgebaut.</German>
         <Russian>Благодаря упорному труду и хорошей службе Первопроходцы улучшили форт.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_OFFICERS_WIFE_UPGRADE</Tag>
         <English>My lord, it seems we have made the right decision. The officer - you remember, the one with the horny wife - is doing an excellent job and has ensured that the fort has been expanded and better fortified.</English>
+        <French>Sire, nous avons pris la bonne décision. L'officier - vous savez, celui avec l'épouse insatiable - fait un excellent travail et s'assure que le fort est agrandi et renforcé.</French>
         <German>Milord, es scheint wir haben die richtige Entscheidung getroffen. Der Offizier - ihr erinnert euch, der mit der umtriebigen Ehefrau - leistet hervorragende Arbeit und hat dafür gesorgt, dass das Fort ausgebaut und besser befestigt wurde.</German>
         <Russian>Милорд, кажется, мы приняли правильное решение. Офицер, помните тот, у которого была похотливая жёнушка, отлично справляется со своей работой и позаботился о том, чтобы форт был расширен и лучше укреплен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_OFFICERS_WIFE_UPGRADE</Tag>
         <English>It seems that the man will become a good officer after all. I always say it: the wilderness makes real guys out of the boys.</English>
+        <French>On dirait que cet homme deviendra un bon offcier après tout. Je l'ai toujours dit : la nature sauvage forme de vrais hommes de nos recrues.</French>
         <German>Es scheint, als würde aus dem Mann doch noch ein guter Offizier werden. Ich sage es ja immer: Die Wildniss macht aus den Jungens echte Kerle.</German>
         <Russian>Похоже, из этого парня выйдет хороший офицер. Я всегда говорил: дикая природа делает из мальчиков настоящих мужчин.</Russian>
     </TEXT>	
