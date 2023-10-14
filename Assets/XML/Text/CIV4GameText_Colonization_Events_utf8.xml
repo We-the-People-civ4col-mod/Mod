@@ -2132,7 +2132,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_THE_ROYALS_CONSEQUENCES_4</Tag>
         <English>Milord, MILORD! The newspaper in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] has been blown up! It looks like revenge by a royalist underground movement. They painted "Long live the King" on a nearby wall, signed Sir Sekwaf Yug, a clumsy alias.</English>
-        <French>Seigneur, SEIGNEUR ! Le journal de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a été détruit ! Il semble qu'un mouvement clandestin royaliste est sorti de terre pour se venger. Ils ont peint « Longue vie au Roi » sur un mur à proximité. Le graffiti est signé de M. Alçofricas Lavrain, un drôle de nom...</French>
+        <French>Seigneur, SEIGNEUR ! Le journal de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a été détruit ! Il semble qu'un mouvement clandestin royaliste est sorti de terre pour se venger. Ils ont peint « Longue vie au Roi » sur un mur à proximité. Le graffiti est signé de M. Alçofricas Lavrain, un drôle de nom...</French><!-- Guy Fawkes à l'envers ... anagramme de François Ravaillac -->
         <German>Milord! MILORD ! In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] wurden die Druckerpressen der lokalen Zeitung in die Luft gejagt. Eine versprengte Gruppe Royalisten hat wohl Rache genommen. An einer Wirtshauswand in der Nähe stand in großen Lettern: "Es lebe der König!", unterzeichnet von einem gewissen Sir Sekwaf Yug. Es scheint ein Tarnname zu sein, so heißt doch kein ...</German>
         <Russian>Милорд, МИЛОРД! В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] было взорвано здание газеты! Это похоже на месть подпольного роялистского движения. Они нарисовали "Да здравствует король" на соседней стене и оставили глупую подпись "Сэр Секваф Юг".</Russian>
     </TEXT>
