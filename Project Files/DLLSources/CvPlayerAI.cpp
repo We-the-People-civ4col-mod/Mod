@@ -122,7 +122,7 @@ void CvPlayerAI::AI_doTurnPre()
 	FAssertMsg(getLeaderType() != NO_LEADER, "getLeaderType() is not expected to be equal with NO_LEADER");
 	FAssertMsg(getCivilizationType() != NO_CIVILIZATION, "getCivilizationType() is not expected to be equal with NO_CIVILIZATION");
 
-	int m_estimatedUnemploymentCount = AI_estimateUnemploymentCount();
+	m_estimatedUnemploymentCount = AI_estimateUnemploymentCount();
 
 	AI_invalidateCloseBordersAttitudeCache();
 
@@ -16558,7 +16558,7 @@ int CvPlayerAI::AI_estimateUnemploymentCount() const
 		// 1) On the map (so not inside a city or on the docs)
 		// 2) Not being transported
 		// 3) Not executing a mission(acitvity)
-		if (pLoopUnit->AI_getUnitAIType() == UNITAI_COLONIST && pLoopUnit->isOnMap() && !pLoopUnit->isCargo() &&
+		if (pLoopUnit->getOwnerINLINE() == getID() && pLoopUnit->AI_getUnitAIType() == UNITAI_COLONIST && pLoopUnit->isOnMap() && !pLoopUnit->isCargo() &&
 			pLoopUnit->getGroup()->getActivityType() != ACTIVITY_MISSION)
 		{
 			cnt++;
@@ -16641,3 +16641,26 @@ bool CvPlayerAI::AI_isAvailableGold(PurchaseType::Category ePurchaseType, int iP
 {
 	return AI_getAvailableGold(ePurchaseType, iPrice, iAmount) >= iPrice;
 }
+	
+ProfessionTypes CvPlayerAI::getSettlerProfession() const
+{
+	// Hackish way to cache this compution
+	static ProfessionTypes eSettlerProfession = NO_PROFESSION;
+
+	if (eSettlerProfession == NO_PROFESSION)
+	{
+		for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
+		{
+			const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+
+			if (kProfession.canFound() && GC.getCivilizationInfo(getCivilizationType()).isValidProfession(eProfession))
+			{
+				eSettlerProfession = eProfession;
+				break;
+			}
+		}
+	}
+
+	return eSettlerProfession;
+}
+
