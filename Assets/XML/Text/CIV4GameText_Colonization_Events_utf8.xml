@@ -3264,54 +3264,63 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_SIX_PRIVATEERS_QUEST</Tag>
         <English>Milord, the governor of another colony has acquired a fleet of six ships with hidden nationality before you. You no longer have the chance to win the buccaneers for your cause.</English>
+        <French>Sire, le gouverneur d'une autre colonie a constitué une flotte de six navires à nationalité cachée avant vous. Vous avez laissé passer l'occasion de recruter les boucaniers.</French>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch eine Flotte von sechs Schiffen mit versteckter Nationalität aufbauen. Dadurch habt Ihr die Chance vertan, die Bukaniere für Euch zu gewinnen.</German>
         <Russian>Милорд, губернатор другой колониальной державы до нас построил флот из шести кораблей со скрытой национальной принадлежностью. У нас больше нет шансов привлечь пиратов на свою сторону.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SIX_PRIVATEERS_QUEST</Tag>
         <English>We will get this fleet with hidden nationality. This alliance with the buccaneers could become valuable.</English>
+        <French>Nous constituerons cette flotte à nationalité cachée. Cette alliance avec les boucaniers peut se montrer précieuse.</French>
         <German>Wir werden diese Flotte mit versteckter Nationalität erwerben. Diese Allianz mit den Bukanieren könnte wertvoll werden.</German>
         <Russian>Мы создадим такую флотилию. Этот союз с пиратами может оказаться крайне полезным.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SIX_PRIVATEERS_QUEST_DONE_1</Tag>
         <English>That's great, but keep a good eye on them in case they cause trouble. Or better, send them to cause trouble for our enemies.</English>
+        <French>C'est très bien mais gardez les à l'oeil au cas où ils causeraient des ennuis. Ou mieux, envoyez les causer des ennuis ailleurs, à nos ennemis.</French>
         <German>Das ist großartig. Aber behaltet sie im Auge, so dass sie keinen Ärger verursachen. Oder noch besser, schickt sie los, um unseren Feinden Ärger zu verursachen.</German>
         <Russian>Прекрасно, но внимательно следите за ними, чтобы они не доставили нам неприятности. А еще лучше отправьте их доставлять неприятности нашим врагам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SLAVE_TRADER_QUEST</Tag>
         <English>Milord, our plantation owners in the colonies are very pleased that we have brought the first slaves to the colonies. Now they want us to enter the profitable slave trade business ourselves rather than leaving it to others. They suggest we acquire [COLOR_HIGHLIGHT_TEXT]two slave barques[COLOR_REVERT] before any other colonial power. If we are the first they promise to pay for experienced [COLOR_HIGHLIGHT_TEXT]slave overseers[COLOR_REVERT].</English>
+        <French>Sire, nos propriétaires de plantations dans les colonies sont très satisfaits des premiers esclaves importés dans nos colonies. Maintenant, ils voudraient se lancer dans le transport d'esclaves eux-même plutôt que de le laisser aux autres. Ils suggèrent d'acquérir [COLOR_HIGHLIGHT_TEXT]deux navires négriers[COLOR_REVERT] avant les autres colonies. Si nous sommes les premiers à le faire, ils promettent de recruter des [COLOR_HIGHLIGHT_TEXT]contre-maîtres d'esclaves[COLOR_REVERT] expérimentés. </French>
         <German>Milord, unsere Plantagenbesitzer sind sehr zufrieden mit der Arbeitsleistung der ersten Sklaven, die in die Kolonien gebracht wurden. Nun wünschen sie, dass wir selbst in das profitable Geschäft des Slavenhandels einsteigen, anstatt es anderen zu überlassen. Sie schlagen daher vor, dass wir umgehend [COLOR_HIGHLIGHT_TEXT]zwei Slavenschiffe[COLOR_REVERT] erwerben, um den anderen Nationen zuvorzukommen. Sollte uns dies gelingen, versprechen sie sogar die Kosten für die Bezahlung erfahrener [COLOR_HIGHLIGHT_TEXT]Sklavenaufseher[COLOR_REVERT] zu übernehmen.</German>
         <Russian>Милорд, наши плантаторы в колониях очень довольны тем, что мы привезли в колонии первых рабов. Теперь они хотят, чтобы мы сами занялись прибыльным бизнесом работорговли, а не отдавали его на откуп другим. Они предлагают нам приобрести [COLOR_HIGHLIGHT_TEXT]два невольничьих барка[COLOR_REVERT] прежде, чем любая другая колониальная держава сделает это. Если мы будем первыми, они обещают оплатить услуги опытных [COLOR_HIGHLIGHT_TEXT]надсмоторщиков за рабами[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SLAVE_TRADER_QUEST_DONE_WORLD</Tag>
         <English>Milord, another colonial nation is the first to have acquired two slave barques.</English>
+        <French>Sire, une autre nation coloniale a acquis deux navires négrier avant nous.</French>
         <German>Eine Kolonialmacht konnte vor allen anderen zwei Sklavenschiffe erwerben.</German>
         <Russian>У одной из европейских колониальных наций есть два невольничьих барка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SLAVE_TRADER_QUEST_DONE</Tag>
-        <English>Milord, you've acquired two slave barques before any other colony could. The planation owners have kept their word and hired slave overseers.</English>
+        <English>Milord, you've acquired two slave barques before any other colony could. The plantation owners have kept their word and hired slave overseers.</English>
+        <French>Sire, nous avons acquis deux navires négriers avant les autres. Les propriétaires-planteurs ont tenu parole et recruté des contre-maîtres d'esclaves.</French>
         <German>Milord, Eure Kolonie konnte vor allen anderen zwei Sklavenschiffe erwerben. Die Plantagenbesitzer haben ihr Wort gehalten und Sklavenaufseher angeworben.</German>
         <Russian>Милорд, мы приобрели два невольничьих барка раньше, чем любая другая колониальная держава. Плантаторы сдержали свое слово и наняли надсмотрщиков за рабами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_SLAVE_TRADER_QUEST</Tag>
         <English>Milord, the governor of another colony has acquired two slave barques before you. You've missed the chance to let the planation owners pay for slave overseers.</English>
+        <French>Sire, le gouverneur d'une autre colonie a caquis des navires négriers avant vous. Vous avez laissé passer l'occasion de faire payer les planteurs pour les contre-maîtres.</French>
         <German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch zwei Sklavenschiffe erwerben. Dadurch habt Ihr die Chance vertan, dass die Kosten für die Anwerbung von Sklavenaufsehern von den Plantagenbesitzern übernommen werden.</German>
         <Russian>Милорд, губернатор другой колониальной нации раньше нас приобрел два невольничьих барка. Мы упустили шанс получить надзирателей за рабами за счет плантаторов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SLAVE_TRADER_QUEST</Tag>
         <English>We shall acquire these slave barques and become the dominating power in that profitable business.</English>
+        <French>Nous allons acquérir ces navires négriers et dominer ce marché si profitable</French>
         <German>Wir werden die Sklavenschiffe erwerben und die beherrschende Macht in diesem profitablen Geschäft werden.</German>
         <Russian>Мы приобретем эти невольничьи барки и станем единолично заправлять этим прибыльным делом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SLAVE_TRADER_QUEST_DONE_1</Tag>
         <English>Wonderful! Tell the slave overseers to be careful not to damage our property.</English>
+        <French>Merveilleux ! Dites aux contremaitres de faire attention à ne pas abîmer la « marchandise ».</French>
         <German>Wundervoll, laßt den Sklavenaufsehern aber ausrichten, dass sie vorsichtig mit unserem Besitz sein sollen.</German>
         <Russian>Замечательно! И передайте надсмотрщикам за рабами, чтобы они были аккуратны в отношении нашего имущества.</Russian>
     </TEXT>
@@ -3857,36 +3866,42 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_4</Tag>
         <English>Milord, a passing Native was inspired by the stained glass windows in your house of worship. He says the morning light shone through them straight into his soul. Now he wants to live with us.</English>
+        <French>Sire, un indigène de passage a été inspiré par les vitraux de notre lieu de prière. Il dit que la lueur du matin à travers eux a illuminé son âme, et il veut vivre avec nous.</French>
         <German>Milord, ein vorbeiziehender Indianer hat der Anblick der bunten Glasfenster in Eurem Gotteshaus bezaubert. Er sah das Morgenlicht durch sie hindurch in seine Seele leuchten, meint er. Nun möchte er unter uns Weißen leben.</German>
         <Russian>Милорд, туземец, проходивший мимо церкви вдохновился её витражами. Он говорит, что утренний свет проник сквозь них прямо в его душу. Теперь он хочет среди нас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_5</Tag>
         <English>Milord, a Native experienced a vision during our church service. He saw the Saviour standing at the altar with a flaming sword, and the severed head of a wolf in his left hand. This Native is now eager to join our fight.</English>
+        <French>Sire, un indigène a eu une vision durant l'office à l'église. Il a vu le Sauveur a l'autel muni d'une épée flamboyante, et la tête tranchée d'un loup en main gauche. Cet indigène est maintenant pressé de rejoindre notre combat.</French>
         <German>Milord, ein Indianer erlebte beim zufälligen Besuch unseres Gottesdienstes eine Vision. Er sah den Heiland mit einem Flammenschwerte am Altar stehen, in der Linken trug er den abgeschlagenen Kopf eines Wolfes. Ehrfürchtig möchte sich die Rothaut nun unserem Kampfe anschließen.</German>
         <Russian>Милорд, индейцу во время нашей церковной службы было видение. Он увидел Спасителя, стоящего у алтаря с пламенным мечом в правой руке и с отрубленной головой волка в левой руке. Теперь этот туземец хочет присоединиться к нашей борьбе со злом.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_6</Tag>
         <English>Milord, a young Native asks you to teach him to read so that he can study the Holy Scriptures. In return he offers to help wherever there is a need.</English>
+        <French>Sire, un jeune indigène vous demande de lui apprendre à lire pour qu'il puisse étudier les Saintes Écritures. En retour, il propose d'aider où que ce sera nécessaire.</French>
         <German>Milord, ein junger Indianer bittet Euch, ihm das Lesen beizubringen, damit er in unserem Gotteshaus die Heilige Schrift studieren kann. Im Gegenzug bietet er an, überall anzupacken, wo Not am Mann ist.</German>
         <Russian>Милорд, молодой индеец просит вас научить его читать, чтобы он мог изучать Священное Писание. Взамен он предлагает свою помощь везде, где будет потребность.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_7</Tag>
         <English>Milord, a Native is ready to renounce the Manitou and serve our Lord Jesus Christ instead.</English>
+        <French>Sire, un indigène est prêt à renoncer à ses croyances au Manitou pour servir le Seigneur Jésus-Christ.</French>
         <German>Milord, eine Rothaut möchte Manitou abschwören und stattdessen unserem Herrn Jesus Christus dienen.</German>
         <Russian>Милорд, туземец готов отказаться от Маниту и вместо этого служить Господу нашему Иисусу Христу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_8</Tag>
         <English>Milord, a Native youth has fallen in love with the statue of the Blessed Virgin Mary that is in our place of worship. He now wants to live in our parish to always be near her.</English>
+        <French>Sire, un jeune indigène est tombé amoureux de la Bienheureuse Vierge Marie représentée dans notre église. il veut vivre dans notre paroisse pour toujoiurs être auprès d'elle.</French>
         <German>Milord, ein Indianerjüngling hat sich in die Statue der Heiligen Jungfrau Maria verliebt, die in unserem Gotteshaus steht. Er möchte nun in unserer Gemeinde leben, um stets in ihrer Nähe zu sein.</German>
         <Russian>Милорд, местный юноша влюбился в статую Пресвятой Девы Марии, которая находится в нашем храме. Он теперь хочет жить в нашем приходе, чтобы всегда быть рядом с ней.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_9</Tag>
         <English>Milord, we caught a young Native who broke into the cellar of our church and drank an entire keg of our mass wine. The boy is repentant and wants to pay off his debt through service.</English>
+        <French>Sire, nous avons pris sur le fait un jeune indigène qui a dévalisé la cave de notre église et y a bu tout un tonnelet du vin de messe. Il s'en repent et souhaite réparer sa faute en nous servant.</French>
         <German>Milord, wir haben eine Rothaut erwischt, die in den Keller unseres Gotteshauses eingebrochen und ein ganzes Fässchen unseres Messweines ausgesoffen hat. Der Bursche ist reuig und will seine Schuld durch Dienste abtragen.</German>
         <Russian>Милорд, мы поймали молодого туземца, который пробрался в подвал нашей церкви и выпил целый бочонок вина для причастия. Мальчик раскаивается и хочет отдать свой долг служением.</Russian>
     </TEXT>
