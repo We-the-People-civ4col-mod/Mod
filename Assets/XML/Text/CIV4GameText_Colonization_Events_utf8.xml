@@ -2132,7 +2132,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_THE_ROYALS_CONSEQUENCES_4</Tag>
         <English>Milord, MILORD! The newspaper in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] has been blown up! It looks like revenge by a royalist underground movement. They painted "Long live the King" on a nearby wall, signed Sir Sekwaf Yug, a clumsy alias.</English>
-        <French>Seigneur, SEIGNEUR ! Le journal de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a été détruit ! Il semble qu'un mouvement clandestin royaliste est sorti de terre pour se venger. Ils ont peint « Longue vie au Roi » sur un mur à proximité. Le graffiti est signé de M. Alçofricas Lavrain, un drôle de nom...</French><!-- Guy Fawkes à l'envers = anagramme de François Ravaillac -->
+        <French>Seigneur, SEIGNEUR ! Le journal de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a été détruit ! Il semble qu'un mouvement clandestin royaliste est sorti de terre pour se venger. Ils ont peint « Longue vie au Roi » sur un mur à proximité. Le graffiti est signé de M. Alçofricas Lavrain, un drôle de nom...</French>
         <German>Milord! MILORD ! In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] wurden die Druckerpressen der lokalen Zeitung in die Luft gejagt. Eine versprengte Gruppe Royalisten hat wohl Rache genommen. An einer Wirtshauswand in der Nähe stand in großen Lettern: "Es lebe der König!", unterzeichnet von einem gewissen Sir Sekwaf Yug. Es scheint ein Tarnname zu sein, so heißt doch kein ...</German>
         <Russian>Милорд, МИЛОРД! В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] было взорвано здание газеты! Это похоже на месть подпольного роялистского движения. Они нарисовали "Да здравствует король" на соседней стене и оставили глупую подпись "Сэр Секваф Юг".</Russian>
     </TEXT>
@@ -2309,7 +2309,6 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_NATIVETRADE</Tag>
-        <!-- used originally %s2city -->
         <English>Since your colonies have now made contact with various Native nations, a local merchant in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] proposes to invest in a network of trading posts to gather rare and valuable spices from distant tribes.</English>
         <French>Maintenant que vos colonies ont pris contact avec de multiples civilisations indigènes, un marchand local de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vous propose d'investir dans un réseau de comptoirs à épices chez les indigènes pour ainsi recueillir des saveurs rares, appréciées, et lointaines.</French>
         <German>Da unsere Kolonien nun Kontakt zu mehreren Ureinwohnerstämmen in unserer Nachbarschaft haben, hat ein örtlicher Händler aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vorgeschlagen, ein Netzwerk aus Handelsposten aufzubauen, dass seltene und wertvolle Gewürze von diesen Stämmen erwirbt.</German>
@@ -2329,7 +2328,6 @@
         <German>Der berüchtigte Piratenführer Roc Brasiliano sendet uns einen Abgesandten, der eine königliche Summe Gold und Silber fordert. Andernfalls droht er damit, unsere verletzlichen Handelsschiffe auf den Grund von Davy Jones Reich zu schicken. Wie wollen wir reagieren, Milord?</German>
         <Russian>Печально известный пират Рок Бразилиано прислал эмиссара, требуя целое состояние в золоте и серебре. В противном случае он угрожает отправить наших морских торговцев в шкафчик Дэви Джонса. Что нам ему ответить, милорд?</Russian>
     </TEXT>
-    <!--New Event RaR 2.1 -->
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_WINE_PLANTS</Tag>
         <English>A European vintager has brought his finest grapevines to the colonies.</English>
@@ -9658,7 +9656,7 @@
         <French>$Merci. J'espère que cela évitera des tentations à lui et et à sa femme, et qu'il ne provoquera pas en duel tous les autres officiers.</French>
         <German>Ich danke Euch. Das wird ihm und seiner Frau hoffentlich die Flausen austreiben. Hoffentlich duelliert er sich nicht mit sämtlichen anderen Offizieren. Die Herren Offiziere sind da ja sehr speziell.</German>
         <Russian>Спасибо. Будем надеяться, что это избавит его и его похотливую жену от неприятностей.</Russian>
-    </TEXT>	
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_OFFICER_ARRIVAL_AT_FORT_HELP</Tag>
         <English>[ICON_BULLET]The Officer takes up duty.</English>
@@ -9686,5 +9684,5 @@
         <French>On dirait que cet homme deviendra un bon offcier après tout. Je l'ai toujours dit : la nature sauvage forme de vrais hommes de nos recrues.</French>
         <German>Es scheint, als würde aus dem Mann doch noch ein guter Offizier werden. Ich sage es ja immer: Die Wildniss macht aus den Jungens echte Kerle.</German>
         <Russian>Похоже, из этого парня выйдет хороший офицер. Я всегда говорил: дикая природа делает из мальчиков настоящих мужчин.</Russian>
-    </TEXT>	
+    </TEXT>
 </Civ4GameText>
