@@ -9554,4 +9554,99 @@
         <German>Jetzt reicht es uns aber. Noch mehr bekommen sie nicht! Unser Geldbeutel bleibt geschlossen. Mobilisiert die Milz!</German>     
         <Russian>Ах вот как?! Они не получат ни цента! Надо проучить этих наглецов - соберите ополченцев!</Russian>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_OFFICERS_WIFE</Tag>
+        <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] an offier intends to duel with another gentleman.</English>
+        <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] will sich ein Offizier mit einen anderen Ehrenmann duellieren.</German>
+     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_OFFICERS_WIFE</Tag>
+        <English>The wife of an officer has apparently once too much cheated on her husband. The husband - an officer of our garrison - thinks that this can be solved only in one way. He has challenged the other man of honor to a duel.</English>
+        <German>Milord, die Ehefrau eines Offiziers hat offenbar einmal zu viel mit einem anderen angebandelt. Der Ehemann - ein Offizier unserer Garnison - meint, dass kann nur auf eine Weise aus der Welt geschafft werden. Er hat den anderen Ehrenmann zum Duell gefordert.</German>
+    </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENT_OFFICERS_WIFE_1</Tag>
+        <English>A duel? How wonderful, we haven't had that for a long time! I will second.</English>
+        <German>Ein Duell? Wie wunderbar, das hatten wir schon lange nicht mehr! Ich werde sekundieren.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_OFFICERS_WIFE_2</Tag>
+        <English>Lord in heaven! Duels are also forbidden in the coloniescountry.</English>
+        <German>Herr im Himmel! Duelle sind auch hier zulande verboten.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_OFFICER_DUEL_HELP</Tag>
+        <English>[ICON_BULLET]The duelists shoot wildly. There are injured among the spectators.</English>
+        <German>[ICON_BULLET]Die Duellanten schießen wild um sich. Es gibt Verletzte unter den Zuschauern.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_OFFICER_NODUEL_HELP</Tag>
+        <English>[ICON_BULLET]The people are upset that they miss such a spectacle.</English>
+        <German>[ICON_BULLET]Die Bevölkerung ist wütend um so ein Spektakel gebracht zu werden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_OFFICERS_WIFE_AFTERDUEL</Tag>
+        <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] the injured have recovered from the duel.</English>
+        <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben sich die Verletzten von dem Duell erholt.</German>
+     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_OFFICERS_WIFE_AFTERDUEL</Tag>
+        <English>Milord, now that the wounded have recovered from the duel and the bullet wounds have healed, the doctor can again devote his full attention to the normal infirmities and diseases of the colony.</English>
+        <German>Milord, nachdem sich die Verletzten von dem Duell erholt haben und die Schusswunden verheilt sind, kann sich der Arzt nun wieder vollständig den normalen Gebrechen und Krankheiten der Kolonie widmen.</German>
+    </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENT_OFFICERS_WIFE_AFTERDUEL</Tag>
+        <English>Thank you for the message. Finally everything is back to normal.</English>
+        <German>Ich danke Euch für die Nachricht. Endlich kehrt wieder Normalität ein.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_OFFICERS_WIFE_ASSIGNMENT</Tag>
+        <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] an officer was transferred to the wilderness.</English>
+        <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] wurde ein Offizier in die Wildnis versetzt.</German>
+     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_OFFICERS_WIFE_ASSIGNMENT</Tag>
+        <English>Milord, there is unrest in the city because you have forbidden the duel. The situation will not calm down until you transfer the officer and his horny wife to a quiet outpost.</English>
+        <German>Milord, es gibt Unruhen in der Stadt, weil ihr das Duell verboten habt. Die Lage wird sich erst beruhigen, wenn ihr den Offizier samt seiner umtriebigen Ehefrau zu einem ruhigen Außenposten versetzt.</German>
+    </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENT_OFFICERS_WIFE_ASSIGNMENT</Tag>
+        <English>I confirm. Hopefully, the officer will then have enough time to take care of his service as well as his wife.</English>
+        <German>Ja, es lässt sich wohl nicht ändern. Der Offizier hat dann hoffentlich genug Zeit, sich um seinen Dienst und seine Frau zu kümmern.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_OFFICERS_WIFE_ARRIVAL</Tag>
+        <English>An officer has arrived at his new post at the fort.</English>
+        <German>Ein Offizier ist auf seinem neuen Posten im Fort eingetroffen.</German>
+     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_OFFICERS_WIFE_ARRIVAL</Tag>
+        <English>My lord, we have received a message that the officer you transferred because of his horny wife has arrived at the fort safe and sound. He can begin his duties there immediately.</English>
+        <German>Milord, wir haben Nachricht erhalten, dass der Offizier, den ihr wg. seiner umtriebigen Ehefrau versetzt habt, wohlbehalten im Fort angekommen ist. Er kann dort gleich seinen Dienst antreten.</German>
+    </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENT_OFFICERS_WIFE_ARRIVAL</Tag>
+        <English>Thank you. Hopefully, that will get him and his horny wife rid of trouble. Hopefully he won't fight a duel with all the other officers.</English>
+        <German>Ich danke Euch. Das wird ihm und seiner Frau hoffentlich die Flausen austreiben. Hoffentlich duelliert er sich nicht mit sämtlichen anderen Offizieren. Die Herren Offiziere sind da ja sehr speziell.</German>
+    </TEXT>	
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_OFFICER_ARRIVAL_AT_FORT_HELP</Tag>
+        <English>[ICON_BULLET]The Officer takes up duty.</English>
+        <German>[ICON_BULLET]Der Offizier nimmt seinen Dienst auf.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_OFFICERS_WIFE_UPGRADE</Tag>
+        <English>Through hard work and good service, the pioneers upgraded the fort.</English>
+        <German>Durch harte Arbeit und guten Dienst haben die Pioniere ein Fort ausgebaut.</German>
+     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_OFFICERS_WIFE_UPGRADE</Tag>
+        <English>My lord, it seems we have made the right decision. The officer - you remember, the one with the horny wife - is doing an excellent job and has ensured that the fort has been expanded and better fortified.</English>
+        <German>Milord, es scheint wir haben die richtige Entscheidung getroffen. Der Offizier - ihr erinnert euch, der mit der umtriebigen Ehefrau - leistet hervorragende Arbeit und hat dafür gesorgt, dass das Fort ausgebaut und besser befestigt wurde.</German>
+    </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENT_OFFICERS_WIFE_UPGRADE</Tag>
+        <English>It seems that the man will become a good officer after all. I always say it: the wilderness makes real guys out of the boys.</English>
+        <German>Es scheint, als würde aus dem Mann doch noch ein guter Offizier werden. Ich sage es ja immer: Die Wildniss macht aus den Jungens echte Kerle.</German>
+    </TEXT>	
 </Civ4GameText>

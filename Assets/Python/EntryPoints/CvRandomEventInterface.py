@@ -7972,6 +7972,16 @@ def getHelpCriminalsAttackCity(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_CRIMINALS_REVOLT_HELP", ())
 	return szHelp
 
+######## Officer duel ###########
+
+def getHelpOfficerDuel(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_OFFICER_DUEL_HELP", ())
+	return szHelp
+
+def getHelpOfficerNoDuel(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_OFFICER_NODUEL_HELP", ())
+	return szHelp
+    
 ######## Bailiffs search for Architect and attack city ###########
 
 def getHelpBailiffsAttackCity(argsList):
@@ -7986,6 +7996,12 @@ def getHelpBuccanneersAttackMine(argsList):
 
 def getHelpMilitiaDefend(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_MILITIA_DEFENDS_MINE_HELP", ())
+	return szHelp
+
+######## Officer arrives at fort ###########
+
+def getHelpOfficerAtFort(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_OFFICER_ARRIVAL_AT_FORT_HELP", ())
 	return szHelp
 
 ######## Slave Hunter Offers Service ###########
