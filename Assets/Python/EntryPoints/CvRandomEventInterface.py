@@ -1744,7 +1744,7 @@ def CheckCheesemakerInCity(argsList):
 	# you could add checks for several Units like this
 	iUnitType = CvUtil.findInfoTypeNum('UNIT_CHEESE_MAKER')
 	iUnitsCurrent = countUnitsInCityForCityTrigger(argsList, iUnitType)
-	if iUnitsCurrent = 0:
+	if iUnitsCurrent == 0:
 		return false
 
 	return true
