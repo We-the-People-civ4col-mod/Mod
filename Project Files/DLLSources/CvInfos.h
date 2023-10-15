@@ -1703,7 +1703,7 @@ public:
 	bool isValidProfession(int i) const;
 	bool hasTrait(int i) const;
 
-	std::string getCityNames(int i) const;
+	CvWString getCityNames(int i) const;
 
 	// TAC - Great General Names - Ray - START
 	std::string getGeneralNames(int i) const;

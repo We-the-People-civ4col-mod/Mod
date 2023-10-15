@@ -6442,14 +6442,14 @@ const char* CvCivilizationInfo::getButton() const
 {
 	return getArtInfo()->getButton();
 }
-std::string CvCivilizationInfo::getCityNames(int i) const
+CvWString CvCivilizationInfo::getCityNames(int i) const
 {
 	FAssertMsg(i < getNumCityNames(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
 
 	CvWString tag;
 	tag.Format(L"%s_CITY_%d", m_szTextKey.GetCString(), i);
-	return CvString(gDLL->getText(tag));
+	return gDLL->getText(tag);
 }
 
 // TAC - Great General Names - Ray - START
