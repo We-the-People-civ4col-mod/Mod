@@ -2775,4 +2775,9 @@
         <English>In one of your colonies the milk production has increased.</English>
         <German>In einer Eurer Kolonien hat sich die Milchproduktion erhöht.</German>
     </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_CHEESE_MAKER_4</Tag>
+        <English>In one of your colonies, cheese production is stagnating.</English>
+        <German>In einer Eurer Kolonien stagniert die Käseproduktion.</German>
+    </TEXT>
 </Civ4GameText>

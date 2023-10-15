@@ -37805,7 +37805,7 @@
 			<bSinglePlayer>0</bSinglePlayer>
 			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
 			<iPercentGamesActive>100</iPercentGamesActive>
-			<iWeight>-1</iWeight>
+			<iWeight>300</iWeight>
 			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
@@ -37839,6 +37839,7 @@
 				<Event>EVENT_CHEESE_MAKER_1</Event>
 				<Event>EVENT_CHEESE_MAKER_2</Event>
 				<Event>EVENT_CHEESE_MAKER_3</Event>
+				<Event>EVENT_CHEESE_MAKER_4</Event>
 			</Events>
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
