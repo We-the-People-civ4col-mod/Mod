@@ -37816,10 +37816,8 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired>
-				<UnitClass>UNITCLASS_CHEESE_MAKER</UnitClass>
-			</UnitsRequired>
-			<iNumUnits>1</iNumUnits>
+			<UnitsRequired/>
+			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
@@ -37852,13 +37850,13 @@
 			<bOtherPlayerNative>0</bOtherPlayerNative>
 			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
 			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
-			<bPickCity>0</bPickCity>
+			<bPickCity>1</bPickCity>
 			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
 			<bShowPlot>0</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo>CheckCheesemaker</PythonCanDo>
-			<PythonCanDoCity/>
+			<PythonCanDo/>
+			<PythonCanDoCity>CheckCheesemakerInCity</PythonCanDoCity/>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
 		</EventTriggerInfo>

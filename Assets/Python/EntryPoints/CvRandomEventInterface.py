@@ -1701,7 +1701,8 @@ def CheckCarpenter(argsList):
 	return false
 
 
-######## Check Units in Colonies ###########
+######## Helper Method to count Units in all Cities ###########
+######## This can also be used for PLOT TRIGGER or UNIT TRIGGER ###########
 
 def countUnitsColonies(argsList, iUnitType):
 	kTriggeredData = argsList[0]
@@ -1716,18 +1717,37 @@ def countUnitsColonies(argsList, iUnitType):
 		(city, iter) = player.nextCity(iter, true)
 	return iUnitsCurrent
 
-def CheckCheesemaker(argsList):
-	kTriggeredData = argsList[0]
-	player = gc.getPlayer(kTriggeredData.ePlayer)
+######## Helper Method to count Units in specific City ###########
+######## This requires a CITY TRIGGER ###########
+def countUnitsInCityForCityTrigger(argsList, iUnitType):
+	ePlayer = argsList[1]
+	player = gc.getPlayer(ePlayer)
+	iCity = argsList[2]
+	city = player.getCity(iCity)
+	
+	iUnitsCurrent = 0	
+	for iCitizen in range(city.getPopulation()):
+		Unit = city.getPopulationUnitByIndex(iCitizen)
+		if iUnitType == Unit.getUnitType():
+			iUnitsCurrent += 1
+
+	return iUnitsCurrent
+
+###### Cheese Maker Event ###### 
+def CheckCheesemakerInCity(argsList):
+	ePlayer = argsList[1]
+	player = gc.getPlayer(ePlayer)
 
 	if not player.isPlayable():
 		return false
 
+	# you could add checks for several Units like this
 	iUnitType = CvUtil.findInfoTypeNum('UNIT_CHEESE_MAKER')
-	iUnitsCurrent = countUnitsColonies(argsList, iUnitType)
-	if iUnitsCurrent > 0:
-		return true
-	return false
+	iUnitsCurrent = countUnitsInCityForCityTrigger(argsList, iUnitType)
+	if iUnitsCurrent = 0:
+		return false
+
+	return true
 
 
 ######## Bonus Funktionen ###########
@@ -3196,8 +3216,8 @@ def applyQuestDoneEuropeTradePriceAndAttitude(argsList):
 	
 	# getting the Yield for the Price Change
 	iYield = event.getGenericParameter(2)
-    
-    # changing the Price
+	
+	# changing the Price
 	iPrice = king.getYieldBuyPrice(iYield)
 	king.setYieldBuyPrice(iYield, iPrice+event.getGenericParameter(4), 1)
 
@@ -6105,7 +6125,7 @@ def applyQuestDonePortRoyalTradePriceAndAttitude(argsList):
 	
 	# getting the Yield for the Price Change
 	iYield = event.getGenericParameter(2)
-    
+	
 	# careful, uses Port Royal methods here
 	iPrice = king.getYieldPortRoyalBuyPriceNoModifier(iYield)
 	king.setYieldPortRoyalBuyPrice(iYield, iPrice+event.getGenericParameter(4), 1)
@@ -6501,7 +6521,7 @@ def canTriggerPortRoyalTradeQuest_COCA_LEAVES_DONE(argsList):
 	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
 	
 	return bTrigger
-    
+	
 def canTriggerPortRoyalTradeQuest_WINE_START(argsList):
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
@@ -8011,7 +8031,7 @@ def getHelpOfficerDuel(argsList):
 def getHelpOfficerNoDuel(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_OFFICER_NODUEL_HELP", ())
 	return szHelp
-    
+	
 ######## Bailiffs search for Architect and attack city ###########
 
 def getHelpBailiffsAttackCity(argsList):
@@ -8220,3 +8240,4 @@ def canTriggerAtCityPopluationOf20(argsList):
 	if city.getPopulation() < 20:
 		return false
 	return true
+    
