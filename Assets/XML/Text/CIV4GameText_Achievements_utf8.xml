@@ -4437,4 +4437,19 @@
         <German>Mylord, Eure Kolonien wachsen und Eure Städte können immer mehr Waren herstellen. Ihr seid wahrlich gesegnet und könnt einen weiteren ausgebildeten Handwerker in den Kolonien begrüßen. [NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Meister Möbelschreiner für die Kolonien anwerben. Eure Kolonie wird sich bald zu einem wahren Handelszentrum für koloniale Möbel entwickeln. Macht weiter so und Eure braven Bürger werden es Euch danken.[NEWLINE][NEWLINE]</German>
         <Russian>Милорд, наши колонии растут. Города производят все больше и больше товаров. Вы действительно благословенны! Сегодня к нам присоединился еще один мастер.[NEWLINE][NEWLINE]Теперь у нас трудятся три опытных краснодеревщика. Ваша колония скоро станет популярным центром торговли колониальной мебелью. Продолжайте в том же духе! Ваши граждане с нетерпением ждут хорошей мебели.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_PRISONER_OF_WAR</Tag>
+        <English>Three prisoners of war</English>
+        <German>Drei Kriegsgefangene</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_PRISONER_OF_WAR_HEAD</Tag>
+        <English>3 Prisoners of War</English>
+        <German>3 Kriegsgefangene</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_PRISONER_OF_WAR_TEXT</Tag>
+        <English>Milord, Your prisons are filling up with prisoners of war. Obviously, you were very successful in battle. However, prisoners of war are poor workers. Besides, you need to have them guarded all the time.[NEWLINE][NEWLINE]You should consider sending them back to the enemy at face value - on their word of honor, of course, that they will never fight on this continent and against you again.[NEWLINE][NEWLINE]</English>
+        <German>Mylord, Eure Gefängnisse füllen sich mit Kriegsgefangenen. Offensichtlich wart Ihr im Kampf sehr erfolgreich. Kriegsgefangene sind aber schlechte Arbeiter. Außerdem müsst Ihr sie ständig bewachen lassen.[NEWLINE][NEWLINE]Ihr solltet Euch überlegen, ob Ihr sie nicht gegen bare Münze dem Feind zurückschickt - natürlich nur auf Ehrenwort, dass sie nie wieder auf diesem Kontinent und gegen Euch kämpfen werden.[NEWLINE][NEWLINE]</German>
+    </TEXT>
 </Civ4GameText>
