@@ -3,450 +3,562 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_0</Tag>
 		<English>Jamestown</English>
+		<Russian>Джеймстаун</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_1</Tag>
 		<English>Plymouth</English>
+		<Russian>Плимут</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_2</Tag>
 		<English>Boston</English>
+		<Russian>Бостон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_3</Tag>
 		<English>Salem</English>
+		<Russian>Салем</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_4</Tag>
 		<English>Providence</English>
+		<Russian>Провиденс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_5</Tag>
 		<English>Hartford</English>
+		<Russian>Хартфорд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_6</Tag>
 		<English>New Haven</English>
+		<Russian>Нью Хэвен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_7</Tag>
 		<English>Newport</English>
+		<Russian>Ньюпорт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_8</Tag>
 		<English>Charles Town</English>
+		<Russian>Чарльз Таун</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_9</Tag>
 		<English>Philadelphia</English>
+		<Russian>Филадельфия</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_10</Tag>
 		<English>Kingston</English>
+		<Russian>Кингстон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_11</Tag>
 		<English>Newport News</English>
+		<Russian>Ньюпорт Ньюс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_12</Tag>
 		<English>Portsmouth</English>
+		<Russian>Портсмут</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_13</Tag>
 		<English>Rocksbury</English>
+		<Russian>Роксбери</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_14</Tag>
 		<English>Middle Plantation</English>
+		<Russian>Средняя Плантация</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_15</Tag>
 		<English>Concord</English>
+		<Russian>Конкорд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_16</Tag>
 		<English>Springfield</English>
+		<Russian>Спрингфилд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_17</Tag>
 		<English>Cambridge</English>
+		<Russian>Кэмбридж</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_18</Tag>
 		<English>Lexington</English>
+		<Russian>Лексингтон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_19</Tag>
 		<English>New Bedford</English>
+		<Russian>Нью Бэдфорд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_20</Tag>
 		<English>Stamford</English>
+		<Russian>Стэмфорд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_21</Tag>
 		<English>Annapolis</English>
+		<Russian>Аннаполис</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_22</Tag>
 		<English>Halifax</English>
+		<Russian>Галифакс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_23</Tag>
 		<English>Worcester</English>
+		<Russian>Вустер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_24</Tag>
 		<English>Norfolk</English>
+		<Russian>Норфолк</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_25</Tag>
 		<English>Yorktown</English>
+		<Russian>Йорктаун</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_26</Tag>
 		<English>Beaufort</English>
+		<Russian>Бофорт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_27</Tag>
 		<English>Baltimore</English>
+		<Russian>Балтимор</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_28</Tag>
 		<English>Camden</English>
+		<Russian>Камден</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_29</Tag>
 		<English>Savannah</English>
+		<Russian>Саванна</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_30</Tag>
 		<English>Augusta</English>
+		<Russian>Огаста</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_31</Tag>
 		<English>Richmond</English>
+		<Russian>Ричмонд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_32</Tag>
 		<English>Salisbury</English>
+		<Russian>Солсбери</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_33</Tag>
 		<English>Reading</English>
+		<Russian>Рединг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_34</Tag>
 		<English>Georgetown</English>
+		<Russian>Джоржтаун</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_35</Tag>
 		<English>Burlington</English>
+		<Russian>Берлингтон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_36</Tag>
 		<English>Fort Erie</English>
+		<Russian>Форт Эри</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_37</Tag>
 		<English>Charlotte</English>
+		<Russian>Шарлотт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_38</Tag>
 		<English>Roanoke</English>
+		<Russian>Роанок</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_39</Tag>
 		<English>Exeter</English>
+		<Russian>Эксетер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_40</Tag>
 		<English>New York</English>
+		<Russian>Нью Йорк</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_41</Tag>
 		<English>Albany</English>
+		<Russian>Олбани</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_42</Tag>
 		<English>Newbury</English>
+		<Russian>Ньюбери</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_43</Tag>
 		<English>New Jersey</English>
+		<Russian>Нью Джерси</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_44</Tag>
 		<English>Barbados</English>
+		<Russian>Барбадос</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_45</Tag>
 		<English>Penobscot</English>
+		<Russian>Пенобскот</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_46</Tag>
 		<English>Williamsburg</English>
+		<Russian>Вильямсбург</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_47</Tag>
 		<English>Saint John's</English>
+		<Russian>Сент-Джонс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_48</Tag>
 		<English>Wilmington</English>
+		<Russian>Уилмингтон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_49</Tag>
 		<English>Rupert House</English>
+		<Russian>Руперт Хаус</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_50</Tag>
 		<English>Ottawa</English>
+		<Russian>Оттава</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_51</Tag>
 		<English>Maine</English>
+		<Russian>Мэйн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_52</Tag>
 		<English>New Hampshire</English>
+		<Russian>Нью-Гемпшир</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_53</Tag>
 		<English>Martha's Vineyard</English>
+		<Russian>Мартас-Винъярд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_54</Tag>
 		<English>Saint George's</English>
+		<Russian>Сент-Джордж</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_55</Tag>
 		<English>Dover</English>
+		<Russian>Дувр</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_56</Tag>
 		<English>Hampton</English>
+		<Russian>Хэмптон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_57</Tag>
 		<English>Gloucester</English>
+		<Russian>Глостер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_58</Tag>
 		<English>Berwick</English>
+		<Russian>Бервик</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_59</Tag>
 		<English>Windsor</English>
+		<Russian>Бервик</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_60</Tag>
 		<English>New London</English>
+		<Russian>Нью-Лондон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_61</Tag>
 		<English>Saint Kitts</English>
+		<Russian>Сент-Китс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_62</Tag>
 		<English>Medford</English>
+		<Russian>Медфорд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_63</Tag>
 		<English>Weymouth</English>
+		<Russian>Уэймут</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_64</Tag>
 		<English>Green Bay</English>
+		<Russian>Грин Бэй</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_65</Tag>
 		<English>Taunton</English>
+		<Russian>Тонтон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_66</Tag>
 		<English>Lancaster</English>
+		<Russian>Ланкастер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_67</Tag>
 		<English>Bridgetown</English>
+		<Russian>Бриджтаун</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_68</Tag>
 		<English>Newark</English>
+		<Russian>Ньюарк</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_69</Tag>
 		<English>Cupids</English>
+		<Russian>Капидс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_70</Tag>
 		<English>Kecoughtan</English>
+		<Russian>Кекотан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_71</Tag>
 		<English>Henricus</English>
+		<Russian>Хенрикус</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_72</Tag>
 		<English>Chelsea</English>
+		<Russian>Челси</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_73</Tag>
 		<English>Lynn</English>
+		<Russian>Линн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_74</Tag>
 		<English>Jersey City</English>
+		<Russian>Джерси-Сити</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_75</Tag>
 		<English>Lewes</English>
+		<Russian>Льюис</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_76</Tag>
 		<English>Saint Mary's City</English>
+		<Russian>Сент-Мэри Сити</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_77</Tag>
 		<English>Sandwich</English>
+		<Russian>Сэндвич</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_78</Tag>
 		<English>Saint Marks</English>
+		<Russian>Сент-Маркс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_79</Tag>
 		<English>Stratford</English>
+		<Russian>Стратфорд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_80</Tag>
 		<English>Sudbury</English>
+		<Russian>Садбери</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_81</Tag>
 		<English>Woburn</English>
+		<Russian>Воберн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_82</Tag>
 		<English>Haverhill</English>
+		<Russian>Хаверхилл</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_83</Tag>
 		<English>Guilford</English>
+		<Russian>Гилфорд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_84</Tag>
 		<English>Andover</English>
+		<Russian>Андовер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_85</Tag>
 		<English>Kittery</English>
+		<Russian>Киттери</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_86</Tag>
 		<English>Speightstown</English>
+		<Russian>Спейтстаун</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_87</Tag>
 		<English>Medfield</English>
+		<Russian>Медфилд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_88</Tag>
 		<English>New Castle</English>
+		<Russian>Ньюкасл</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_89</Tag>
 		<English>Old Road Town</English>
+		<Russian>Старый Роуд-Таун</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_90</Tag>
 		<English>Pelham</English>
+		<Russian>Пелем</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_91</Tag>
 		<English>Chelmsford</English>
+		<Russian>Челмсфорд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_92</Tag>
 		<English>Groton</English>
+		<Russian>Гротон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_93</Tag>
 		<English>Billerica</English>
+		<Russian>Биллерика</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_94</Tag>
 		<English>Hopewell</English>
+		<Russian>Хоупвелл</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_95</Tag>
 		<English>Rye</English>
+		<Russian>Рай</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_96</Tag>
 		<English>Uxbridge</English>
+		<Russian>Аксбридж</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_97</Tag>
 		<English>Piscatawaytown</English>
+		<Russian>Пискатавейтаун</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_98</Tag>
 		<English>Mendon</English>
+		<Russian>Мендон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_99</Tag>
 		<English>Amesbury</English>
+		<Russian>Эймсбери</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_100</Tag>
 		<English>Westfield</English>
+		<Russian>Вестфилд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_101</Tag>
 		<English>Middleborough</English>
+		<Russian>Миддлборо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_102</Tag>
 		<English>Wallingford</English>
+		<Russian>Уоллингфорд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_103</Tag>
 		<English>Waterbury</English>
+		<Russian>Уотербери</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_104</Tag>
 		<English>South Orange</English>
+		<Russian>Южный Ориндж</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_105</Tag>
 		<English>Bridgewater</English>
+		<Russian>Бриджуотер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_106</Tag>
 		<English>Harbour Grace</English>
+		<Russian>Харбор Грейс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_107</Tag>
 		<English>Cockburn Town</English>
+		<Russian>Кокберн Таун</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_108</Tag>
 		<English>New Britain</English>
+		<Russian>Нью-Бритен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_109</Tag>
 		<English>Chatham</English>
+		<Russian>Чатем</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_110</Tag>
 		<English>New Bern</English>
+		<Russian>Нью Берн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_CITY_111</Tag>
 		<English>Freehold</English>
+		<Russian>Фригольд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_0</Tag>
