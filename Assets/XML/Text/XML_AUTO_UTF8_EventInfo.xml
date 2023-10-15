@@ -2764,20 +2764,24 @@
         <Tag>TXT_KEY_EVENT_TRIGGER_CHEESE_MAKER_1</Tag>
         <English>A hardworking milkmaid has joined your colony.</English>
         <German>Ein fleißiges Milchmädchen hat sich Eurer Kolonie angeschlossen</German>
-   </TEXT>
-   <TEXT>
+        <Russian>К вашей колонии присоединилась трудолюбивая доярка.</Russian>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CHEESE_MAKER_2</Tag>
         <English>In one of your colonies cheese production has increased.</English>
         <German>In einer Eurer Kolonien hat sich die Käseproduktion erhöht.</German>
+        <Russian>В одной из ваших колоний увеличилось производство сыра.</Russian>
     </TEXT>
-   <TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CHEESE_MAKER_3</Tag>
         <English>In one of your colonies the milk production has increased.</English>
         <German>In einer Eurer Kolonien hat sich die Milchproduktion erhöht.</German>
+        <Russian>В одной из ваших колоний увеличилось производство молока.</Russian>
     </TEXT>
-   <TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CHEESE_MAKER_4</Tag>
         <English>In one of your colonies, cheese production is stagnating.</English>
         <German>In einer Eurer Kolonien stagniert die Käseproduktion.</German>
+        <Russian>В одной из ваших колоний производство сыра находится в стагнации.</Russian>
     </TEXT>
 </Civ4GameText>

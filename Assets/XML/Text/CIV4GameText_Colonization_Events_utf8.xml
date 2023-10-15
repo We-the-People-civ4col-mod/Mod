@@ -9720,29 +9720,34 @@
         <English>One of the new master cheese makers complains about the inadequate working conditions. He thinks we could produce far more for the domestic market if we expand the production or hire a new milkmaid.</English>
         <French>Un de nos nouveaux maitres fromagers se plaint de ses conditions de travail inadaptées. Il pense que nous produirions bien davantage pour le marché local si nous élargissions la fromagerie ou embauchons une laitière.</French>
         <German>Einer der neuen Meister-Käsemacher beschwert sich über die unzureichenden Arbeitsbedingungen. Er meint wir könnten noch weit mehr für den heimischen Markt produzieren, wenn wir die Produktion ausweiten oder neue Milchmägde einstellen würden.</German>
+        <Russian>Один из новых мастеров-сыроделов жалуется на неудовлетворительные условия труда. Он считает, что мы могли бы производить гораздо больше для внутреннего рынка, если расширим производство, ну или наймем доярку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CHEESE_MAKER_1</Tag>
         <English>He shall get his maid.</English>
         <French>Il aura une laitière comme compagne. Mais le premier enfant devra porter mon nom.</French>
         <German>Er soll seine Magd haben. Aber das erste Kind wird nach mir benannt.</German>
+        <Russian>Хорошо, у него будет своя прислуга. Но первого ребенка назовут в мою честь.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CHEESE_MAKER_2</Tag>
         <English>This is true. We produce far too little for our inhabitants so far. We buy a new cheese vat.</English>
         <French>Il n'a pas tort. Nous produisons bien trop peu pour nos habitants. Nous achèterons une nouvelle marmite de caillage.</French>
         <German>Er hat nicht unrecht. Wir produzieren bisher viel zu wenig für unsere Einwohner. Wir kaufen einen neuen Käsebottich.</German>
+        <Russian>Действительно, пока мы производим слишком мало для наших жителей. Надо купить новый сырный чан.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CHEESE_MAKER_3</Tag>
         <English>We can make enough cheese, but we really need more milk. Let's buy buckets, milking stools and a few new cows.</English>
         <French>Nous produisons assez de dromage, mais nous manquons de lait. Achetons des seaux, des tabourets de traits et des vaches.</French>
         <German>Käse können wir genug herstellen, aber wir brauchen unbedingt noch mehr Milch. Kaufen wir Eimer, Melkschemel und ein paar neue Kühe.</German>
+        <Russian>Мы можем производить достаточно сыра, но нам определенно нужно больше молока. Давайте купим ведра, табуретки для дойки и несколько новых коров.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CHEESE_MAKER_4</Tag>
         <English>What is this nonsense? Do I have to take care of something like that now? He should see for himself how he gets along. What we need is more tobacco, whiskey and meat.</English>
         <French>C'est quoi ces histoires ? Dois-je vraiment m'occuper de ce genre de chose par dessus le marché ? Qu'il se débrouille tout seul. C'est de tabac, de whisky et de viande dont nous avons besoin.</French>
         <German>Was soll denn der Quatsch. Muss ich mich jetzt auch noch um sowas kümmern? Er soll selber sehen wie er klarkommt. Was wir brauchen ist mehr Tabak, Whiskey und Fleisch.</German>
+        <Russian>Что за ерунда? Почему я должен заботиться о такой ерунде? А вот что нам сейчас действительно нужно, так это больше табака, виски и мяса.</Russian>
     </TEXT>
 </Civ4GameText>
