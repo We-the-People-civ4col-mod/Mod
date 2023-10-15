@@ -13379,10 +13379,9 @@ void CvPlayerAI::AI_doStrategy()
 			{
 				iProb = 0;
 			}
-
-			if (!AI_isStrategy(STRATEGY_REVOLUTION_PREPARING))
+			else if (!AI_isStrategy(STRATEGY_REVOLUTION_PREPARING))
 			{
-				if (GC.getGameINLINE().getSorenRandNum(10000, "AI Start Revolution") < iProb)
+				//if (GC.getGameINLINE().getSorenRandNum(10000, "AI Start Revolution") < iProb)
 				{
 					AI_setStrategy(STRATEGY_REVOLUTION_PREPARING);
 					AI_clearStrategy(STRATEGY_FAST_BELLS);
@@ -13423,7 +13422,7 @@ void CvPlayerAI::AI_doStrategy()
 
 			else if (!AI_isStrategy(STRATEGY_REVOLUTION_DECLARING))
 			{
-				if ((iRebelPercent > iRebelsNeeded) &&  (AI_getStrategyDuration(STRATEGY_REVOLUTION_PREPARING) > GC.getGameINLINE().AI_adjustedTurn(20)))
+				if ((iRebelPercent > iRebelsNeeded) && (AI_getStrategyDuration(STRATEGY_REVOLUTION_PREPARING) > GC.getGameINLINE().AI_adjustedTurn(10)))
 				{
 					if (getEuropeMilitary() < (NBMOD_GetColonialMilitaryValue() * AI_getColonialMilitaryModifier()) / 100)
 					{
@@ -13435,7 +13434,7 @@ void CvPlayerAI::AI_doStrategy()
 			else
 			{
 				FAssert(AI_isStrategy(STRATEGY_REVOLUTION_DECLARING));
-				if (AI_getStrategyDuration(STRATEGY_REVOLUTION_DECLARING) > GC.getGameINLINE().AI_adjustedTurn(20))
+				if (AI_getStrategyDuration(STRATEGY_REVOLUTION_DECLARING) > GC.getGameINLINE().AI_adjustedTurn(10))
 				{
 					int iValue = iRebelPercent + 100 * AI_getStrategyDuration(STRATEGY_REVOLUTION_DECLARING) / GC.getGameINLINE().AI_adjustedTurn(50);
 
@@ -15816,6 +15815,8 @@ void CvPlayerAI::AI_setStrategy(StrategyTypes eStrategy, int iData)
 	FAssert(eStrategy < NUM_STRATEGY_TYPES);
 	m_em_iStrategyStartedTurn.set(eStrategy, GC.getGameINLINE().getGameTurn());
 	m_em_iStrategyData.set(eStrategy, iData);
+	logBBAI(" Player(%S) AI_setStrategy (%S) ",
+		getCivilizationDescription(), getStrategyString(eStrategy));
 }
 
 void CvPlayerAI::AI_clearStrategy(StrategyTypes eStrategy)
@@ -15824,6 +15825,8 @@ void CvPlayerAI::AI_clearStrategy(StrategyTypes eStrategy)
 	FAssert(eStrategy < NUM_STRATEGY_TYPES);
 	m_em_iStrategyStartedTurn.set(eStrategy, -1);
 	m_em_iStrategyData.set(eStrategy, -1);
+	logBBAI(" Player(%S) AI_clearStrategy (%S) ",
+		getCivilizationDescription(), getStrategyString(eStrategy));
 }
 // TAC - AI Military Buildup - koma13 - START
 UnitAITypes CvPlayerAI::AI_bestBuildupUnitAI()
