@@ -2760,4 +2760,19 @@
          <German>Wir sollten hier äußerste Vorsicht walten lasen. Seine Majestät schickt uns gerne Leute herüber, die sich bei Hofe unbeliebt gemacht haben und die Sache hat bestimmt einen Haken. Richtet seiner Majestät aus, dass wir gnädigst darauf verzichten, aber uns selbst um den Aufbau kümmern werden.</German>
         <Russian>Здесь нам следует проявлять крайнюю осторожность. Его Величество любит присылать к нам людей, которые стали непопулярными при Дворе и здесь обязательно должен быть какой-то подвох. Скажите Его Величеству, что мы сожалеем о том, что не сможем принять столь высокую персону в наших скромных обителях. Ну а о строительстве мы как-нибудь сами позаботимся.</Russian>
     </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_CHEESE_MAKER_1</Tag>
+        <English>A hardworking milkmaid has joined your colony.</English>
+        <German>Ein fleißiges Milchmädchen hat sich Eurer Kolonie angeschlossen</German>
+   </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_CHEESE_MAKER_2</Tag>
+        <English>In one of your colonies cheese production has increased.</English>
+        <German>In einer Eurer Kolonien hat sich die Käseproduktion erhöht.</German>
+    </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_CHEESE_MAKER_3</Tag>
+        <English>In one of your colonies the milk production has increased.</English>
+        <German>In einer Eurer Kolonien hat sich die Milchproduktion erhöht.</German>
+    </TEXT>
 </Civ4GameText>

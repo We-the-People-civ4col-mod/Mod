@@ -1700,6 +1700,36 @@ def CheckCarpenter(argsList):
 		return true
 	return false
 
+
+######## Check Units in Colonies ###########
+
+def countUnitsColonies(argsList, iUnitType):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	iUnitsCurrent = 0	
+	(city, iter) = player.firstCity(true)
+	while(city):
+		for iCitizen in range(city.getPopulation()):
+			Unit = city.getPopulationUnitByIndex(iCitizen)
+			if iUnitType == Unit.getUnitType():
+				iUnitsCurrent += 1
+		(city, iter) = player.nextCity(iter, true)
+	return iUnitsCurrent
+
+def CheckCheesemaker(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+
+	if not player.isPlayable():
+		return false
+
+	iUnitType = CvUtil.findInfoTypeNum('UNIT_CHEESE_MAKER')
+	iUnitsCurrent = countUnitsColonies(argsList, iUnitType)
+	if iUnitsCurrent > 0:
+		return true
+	return false
+
+
 ######## Bonus Funktionen ###########
 
 def CanApplyBonus(argsList):

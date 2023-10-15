@@ -9685,4 +9685,24 @@
         <German>Es scheint, als würde aus dem Mann doch noch ein guter Offizier werden. Ich sage es ja immer: Die Wildniss macht aus den Jungens echte Kerle.</German>
         <Russian>Похоже, из этого парня выйдет хороший офицер. Я всегда говорил: дикая природа делает из мальчиков настоящих мужчин.</Russian>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_CHEESE_MAKER</Tag>
+        <English>One of the new master cheese makers complains about the inadequate working conditions. He thinks we could produce far more for the domestic market if we expand the production or hire a new milkmaid.</English>
+        <German>Einer der neuen Meister-Käsemacher beschwert sich über die unzureichenden Arbeitsbedingungen. Er meint wir könnten noch weit mehr für den heimischen Markt produzieren, wenn wir die Produktion ausweiten oder neue Milchmägde einstellen würden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_CHEESE_MAKER_1</Tag>
+        <English>He shall get his maid.</English>
+        <German>Er soll seine Magd haben. Aber das erste Kind wird nach mir benannt.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_CHEESE_MAKER_2</Tag>
+        <English>This is true. We produce far too little for our inhabitants so far. We buy a new cheese vat.</English>
+        <German>Er hat nicht unrecht. Wir produzieren bisher viel zu wenig für unsere Einwohner. Wir kaufen einen neuen Käsebottich.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_CHEESE_MAKER_3</Tag>
+        <English>We can make enough cheese, but we really need more milk. Let's buy buckets, milking stools and a few new cows.</English>
+        <German>Käse können wir genug herstellen, aber wir brauchen unbedingt noch mehr Milch. Kaufen wir Eimer, Melkschemel und ein paar neue Kühe.</German>
+    </TEXT>
 </Civ4GameText>
