@@ -6453,38 +6453,38 @@ CvWString CvCivilizationInfo::getCityNames(int i) const
 }
 
 // TAC - Great General Names - Ray - START
-std::string CvCivilizationInfo::getGeneralNames(int i) const
+CvWString CvCivilizationInfo::getGeneralNames(int i) const
 {
 	FAssertMsg(i < getNumGeneralNames(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
 	
 	CvWString tag;
 	tag.Format(L"%s_GENERAL_%d", m_szTextKey.GetCString(), i);
-	return CvString(gDLL->getText(tag));
+	return gDLL->getText(tag);
 }
 // TAC - Great General Names - Ray - END
 
 // R&R, ray, Great Admirals - START
-std::string CvCivilizationInfo::getAdmiralNames(int i) const
+CvWString CvCivilizationInfo::getAdmiralNames(int i) const
 {
 	FAssertMsg(i < getNumAdmiralNames(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
 	
 	CvWString tag;
 	tag.Format(L"%s_ADMIRAL_%d", m_szTextKey.GetCString(), i);
-	return CvString(gDLL->getText(tag));
+	return gDLL->getText(tag);
 }
 // R&R, ray, Great Admirals - END
 
 // TAC - Ship Names - Ray - START
-std::string CvCivilizationInfo::getShipNames(int i) const
+CvWString CvCivilizationInfo::getShipNames(int i) const
 {
 	FAssertMsg(i < getNumShipNames(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
 	
 	CvWString tag;
 	tag.Format(L"%s_SHIP_%d", m_szTextKey.GetCString(), i);
-	return CvString(gDLL->getText(tag));
+	return gDLL->getText(tag);
 }
 // TAC - Ship Names - Ray - END
 

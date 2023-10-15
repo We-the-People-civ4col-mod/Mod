@@ -157,7 +157,7 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 			for (iI = 0; iI < maxNumberGenerals; iI++)
 			{
 				int iIndex = (iI + iOffset) % maxNumberGenerals;
-				CvWString szName = CvWString(GC.getCivilizationInfo(getCivilizationType()).getGeneralNames(iIndex));
+				CvWString szName = GC.getCivilizationInfo(getCivilizationType()).getGeneralNames(iIndex);
 
 				if (!GC.getGameINLINE().isGreatGeneralBorn(szName))
 				{
@@ -187,7 +187,7 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 			for (iI = 0; iI < maxNumberAdmirals; iI++)
 			{
 				int iIndex = (iI + iOffset) % maxNumberAdmirals;
-				CvWString szName = CvWString(GC.getCivilizationInfo(getCivilizationType()).getAdmiralNames(iIndex));
+				CvWString szName = GC.getCivilizationInfo(getCivilizationType()).getAdmiralNames(iIndex);
 
 				if (!GC.getGameINLINE().isGreatAdmiralBorn(szName))
 				{
@@ -213,7 +213,7 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 			for (iI = 0; iI < maxNumberShips; iI++)
 			{
 				int iIndex = (iI + iOffset) % maxNumberShips;
-				CvWString szName = CvWString(GC.getCivilizationInfo(getCivilizationType()).getShipNames(iIndex));
+				CvWString szName = GC.getCivilizationInfo(getCivilizationType()).getShipNames(iIndex);
 
 				if (!GC.getGameINLINE().isShipNamed(szName))
 				{

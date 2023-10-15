@@ -1706,15 +1706,15 @@ public:
 	CvWString getCityNames(int i) const;
 
 	// TAC - Great General Names - Ray - START
-	std::string getGeneralNames(int i) const;
+	CvWString getGeneralNames(int i) const;
 	// TAC - Great General Names - Ray - END
 
 	// R&R, ray, Great Admirals - START
-	std::string getAdmiralNames(int i) const;
+	CvWString getAdmiralNames(int i) const;
 	// R&R, ray, Great Admirals - END
 
 	// TAC - Ship Names - Ray - START
-	std::string getShipNames(int i) const;
+	CvWString getShipNames(int i) const;
 	// TAC - Ship Names - Ray - END
 
 	DllExport const CvArtInfoCivilization* getArtInfo() const;

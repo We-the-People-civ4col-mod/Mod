@@ -1530,7 +1530,7 @@ void CvPlayer::getCivilizationCityName(CvWString& szBuffer, CivilizationTypes eC
 {
 	for (int iI = 0; iI < GC.getCivilizationInfo(eCivilization).getNumCityNames(); iI++)
 	{
-		szBuffer = CvWString(GC.getCivilizationInfo(eCivilization).getCityNames(iI));
+		szBuffer = GC.getCivilizationInfo(eCivilization).getCityNames(iI);
 		if (isCityNameValid(szBuffer, true))
 		{
 			return;
