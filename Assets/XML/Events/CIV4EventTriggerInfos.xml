@@ -37466,7 +37466,7 @@
 			<UnitsRequired>
 				<UnitClass>UNITCLASS_BRAVE_LIEUTENANT</UnitClass>
 			</UnitsRequired>
-			<iNumUnits>0</iNumUnits>
+			<iNumUnits>1</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
