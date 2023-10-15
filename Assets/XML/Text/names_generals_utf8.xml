@@ -106,7 +106,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_3</Tag>
-		<English>Pierre Fran&#231;ois de Rigaud</English>
+		<English>Pierre François de Rigaud</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_4</Tag>
@@ -134,7 +134,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_10</Tag>
-		<English>Fran&#231;ois-Jean de Chastellux</English>
+		<English>François-Jean de Chastellux</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_11</Tag>
@@ -142,11 +142,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_12</Tag>
-		<English>Charles du Houx de Viom&#233;nil</English>
+		<English>Charles du Houx de Vioménil</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_13</Tag>
-		<English>Fran&#231;ois-Marie Le Marchand de Lignery</English>
+		<English>François-Marie Le Marchand de Lignery</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_14</Tag>
@@ -162,7 +162,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_0</Tag>
-		<English>Sebastian de Miranda Rodr&#237;guez</English>
+		<English>Sebastian de Miranda Rodríguez</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_1</Tag>
@@ -170,7 +170,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_2</Tag>
-		<English>Jos&#233; Francisco Berm&#250;dez</English>
+		<English>José Francisco Bermúdez</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_3</Tag>
@@ -178,7 +178,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_4</Tag>
-		<English>Antonio Nari&#241;o</English>
+		<English>Antonio Nariño</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_5</Tag>
@@ -186,19 +186,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_6</Tag>
-		<English>Jos&#233; Antonio P&#225;ez </English>
+		<English>José Antonio Páez </English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_7</Tag>
-		<English>Bernardo de G&#225;lvez</English>
+		<English>Bernardo de Gálvez</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_8</Tag>
-		<English>Mat&#237;as de G&#225;lvez</English>
+		<English>Matías de Gálvez</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_9</Tag>
-		<English>Esteban Rodr&#237;guez Mir&#243;</English>
+		<English>Esteban Rodríguez Miró</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_10</Tag>
@@ -270,7 +270,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_2</Tag>
-		<English>Andr&#233; Vidal de Negreiros</English>
+		<English>André Vidal de Negreiros</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_3</Tag>
@@ -278,7 +278,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_4</Tag>
-		<English>Ant&#243;nio Filipe Camar&#227;o</English>
+		<English>António Filipe Camarão</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_5</Tag>
@@ -578,7 +578,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_9</Tag>
-		<English>Ren&#233; Duguay-Trouin</English>
+		<English>René Duguay-Trouin</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_10</Tag>
@@ -618,7 +618,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_GENERAL_2</Tag>
-		<English>Francisco Tom&#225;s Morales</English>
+		<English>Francisco Tomás Morales</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_GENERAL_3</Tag>
@@ -626,15 +626,15 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_GENERAL_4</Tag>
-		<English>Luis M&#233;ndez de Haro</English>
+		<English>Luis Méndez de Haro</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_GENERAL_5</Tag>
-		<English>Juan Jos&#233; de Austria</English>
+		<English>Juan José de Austria</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_GENERAL_6</Tag>
-		<English>Mart&#237;n &#193;lvarez de Sotomayor</English>
+		<English>Martín Álvarez de Sotomayor</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_GENERAL_7</Tag>
@@ -690,7 +690,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_GENERAL_1</Tag>
-		<English>Jo&#227;o de Castro</English>
+		<English>João de Castro</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_GENERAL_2</Tag>
@@ -714,7 +714,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_GENERAL_7</Tag>
-		<English>Johann Heinrich B&#246;hm</English>
+		<English>Johann Heinrich Böhm</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_GENERAL_0</Tag>
@@ -842,7 +842,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_GENERAL_2</Tag>
-		<English>Urayo&#225;n</English>
+		<English>Urayoán</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_GENERAL_3</Tag>
@@ -862,11 +862,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_GENERAL_2</Tag>
-		<English>Cuitl&#225;huac</English>
+		<English>Cuitláhuac</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_GENERAL_3</Tag>
-		<English>Cuauht&#233;moc</English>
+		<English>Cuauhtémoc</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_GENERAL_4</Tag>
@@ -882,7 +882,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_INCA_GENERAL_1</Tag>
-		<English>Rumi&#241;ahui</English>
+		<English>Rumiñahui</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_INCA_GENERAL_2</Tag>
@@ -890,7 +890,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_INCA_GENERAL_3</Tag>
-		<English>Manco C&#225;pac</English>
+		<English>Manco Cápac</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_INCA_GENERAL_4</Tag>
@@ -1102,7 +1102,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_9</Tag>
-		<English>Illanguli&#233;n</English>
+		<English>Illangulién</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_10</Tag>

@@ -450,11 +450,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_0</Tag>
-		<English>Qu&#233;bec</English>
+		<English>Québec</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_1</Tag>
-		<English>Montr&#233;al</English>
+		<English>Montréal</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_2</Tag>
@@ -462,7 +462,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_3</Tag>
-		<English>Trois-Rivi&#232;res</English>
+		<English>Trois-Rivières</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_4</Tag>
@@ -470,7 +470,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_5</Tag>
-		<English>Petit-Go&#226;ve</English>
+		<English>Petit-Goâve</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_6</Tag>
@@ -482,7 +482,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_8</Tag>
-		<English>La Nouvelle-Orl&#233;ans</English>
+		<English>La Nouvelle-Orléans</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_9</Tag>
@@ -526,7 +526,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_19</Tag>
-		<English>Fort Cr&#232;vecoeur</English>
+		<English>Fort Crèvecoeur</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_20</Tag>
@@ -558,7 +558,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_27</Tag>
-		<English>Sainte Genevi&#232;ve</English>
+		<English>Sainte Geneviève</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_28</Tag>
@@ -578,7 +578,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_32</Tag>
-		<English>Cap-Fran&#231;ais</English>
+		<English>Cap-Français</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_33</Tag>
@@ -630,7 +630,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_45</Tag>
-		<English>Fort Rouill&#233;</English>
+		<English>Fort Rouillé</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_46</Tag>
@@ -662,7 +662,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_53</Tag>
-		<English>Fort Orl&#233;ans</English>
+		<English>Fort Orléans</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_54</Tag>
@@ -694,11 +694,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_61</Tag>
-		<English>Fort Libert&#233;</English>
+		<English>Fort Liberté</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_62</Tag>
-		<English>Car&#233;nage</English>
+		<English>Carénage</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_63</Tag>
@@ -706,7 +706,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_64</Tag>
-		<English>Fort D&#233;troit</English>
+		<English>Fort Détroit</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_65</Tag>
@@ -714,7 +714,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_66</Tag>
-		<English>Cap-Ha&#239;tien</English>
+		<English>Cap-Haïtien</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_67</Tag>
@@ -794,7 +794,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_86</Tag>
-		<English>Ch&#226;teau-Richer</English>
+		<English>Château-Richer</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_87</Tag>
@@ -826,7 +826,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_94</Tag>
-		<English>Sainte Anne de Beaupr&#233;</English>
+		<English>Sainte Anne de Beaupré</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_95</Tag>
@@ -886,7 +886,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_109</Tag>
-		<English>Verch&#232;res</English>
+		<English>Verchères</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_110</Tag>
@@ -914,7 +914,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_116</Tag>
-		<English>Fort Fran&#231;ois Xavier</English>
+		<English>Fort François Xavier</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_117</Tag>
@@ -926,7 +926,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_119</Tag>
-		<English>La Pocati&#232;re</English>
+		<English>La Pocatière</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_120</Tag>
@@ -934,7 +934,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_121</Tag>
-		<English>L&#233;vis</English>
+		<English>Lévis</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_122</Tag>
@@ -962,7 +962,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_128</Tag>
-		<English>Saint Fran&#231;ois</English>
+		<English>Saint François</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_129</Tag>
@@ -978,11 +978,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_132</Tag>
-		<English>Rivi&#232;re-du-Loup</English>
+		<English>Rivière-du-Loup</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_133</Tag>
-		<English>B&#233;cancour</English>
+		<English>Bécancour</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_0</Tag>
@@ -990,7 +990,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_1</Tag>
-		<English>Concepci&#243;n de la Vega</English>
+		<English>Concepción de la Vega</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_2</Tag>
@@ -1006,11 +1006,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_5</Tag>
-		<English>Ciudad de M&#233;xico</English>
+		<English>Ciudad de México</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_6</Tag>
-		<English>Potos&#237;</English>
+		<English>Potosí</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_7</Tag>
@@ -1026,7 +1026,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_10</Tag>
-		<English>Asunci&#243;n</English>
+		<English>Asunción</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_11</Tag>
@@ -1034,7 +1034,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_12</Tag>
-		<English>Santa Mar&#237;a</English>
+		<English>Santa María</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_13</Tag>
@@ -1046,7 +1046,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_15</Tag>
-		<English>Ciudad de Panam&#225;</English>
+		<English>Ciudad de Panamá</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_16</Tag>
@@ -1066,7 +1066,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_20</Tag>
-		<English>Esp&#237;ritu Santo</English>
+		<English>Espíritu Santo</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_21</Tag>
@@ -1086,15 +1086,15 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_25</Tag>
-		<English>Bogot&#225;</English>
+		<English>Bogotá</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_26</Tag>
-		<English>M&#233;rida</English>
+		<English>Mérida</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_27</Tag>
-		<English>Valpara&#237;so</English>
+		<English>Valparaíso</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_28</Tag>
@@ -1114,7 +1114,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_32</Tag>
-		<English>San August&#237;n</English>
+		<English>San Augustín</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_33</Tag>
@@ -1134,7 +1134,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_37</Tag>
-		<English>Medell&#237;n</English>
+		<English>Medellín</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_38</Tag>
@@ -1146,7 +1146,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_40</Tag>
-		<English>San Jos&#233;</English>
+		<English>San José</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_41</Tag>
@@ -1194,7 +1194,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_52</Tag>
-		<English>Canc&#250;n</English>
+		<English>Cancún</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_53</Tag>
@@ -1222,11 +1222,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_59</Tag>
-		<English>Le&#243;n</English>
+		<English>León</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_60</Tag>
-		<English>Ciudad Ju&#225;rez</English>
+		<English>Ciudad Juárez</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_61</Tag>
@@ -1246,7 +1246,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_65</Tag>
-		<English>C&#243;rdoba</English>
+		<English>Córdoba</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_66</Tag>
@@ -1266,7 +1266,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_70</Tag>
-		<English>Ciudad Bol&#237;var</English>
+		<English>Ciudad Bolívar</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_71</Tag>
@@ -1298,7 +1298,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_78</Tag>
-		<English>Ac&#225;mbaro</English>
+		<English>Acámbaro</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_79</Tag>
@@ -1306,11 +1306,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_80</Tag>
-		<English>Mazatl&#225;n</English>
+		<English>Mazatlán</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_81</Tag>
-		<English>Culiac&#225;n</English>
+		<English>Culiacán</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_82</Tag>
@@ -1330,7 +1330,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_86</Tag>
-		<English>San Germ&#225;n</English>
+		<English>San Germán</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_87</Tag>
@@ -1370,11 +1370,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_96</Tag>
-		<English>Cotu&#237;</English>
+		<English>Cotuí</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_97</Tag>
-		<English>Salvale&#243;n</English>
+		<English>Salvaleón</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_98</Tag>
@@ -1386,15 +1386,15 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_100</Tag>
-		<English>Cuman&#225;</English>
+		<English>Cumaná</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_101</Tag>
-		<English>Tecp&#225;n</English>
+		<English>Tecpán</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_102</Tag>
-		<English>San Crist&#243;bal</English>
+		<English>San Cristóbal</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_103</Tag>
@@ -1422,7 +1422,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_109</Tag>
-		<English>Popay&#225;n</English>
+		<English>Popayán</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_110</Tag>
@@ -1438,7 +1438,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_113</Tag>
-		<English>Hu&#225;nuco</English>
+		<English>Huánuco</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_114</Tag>
@@ -1450,7 +1450,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_116</Tag>
-		<English>Cob&#225;n</English>
+		<English>Cobán</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_117</Tag>
@@ -1458,7 +1458,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_118</Tag>
-		<English>Tepezal&#225;</English>
+		<English>Tepezalá</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_119</Tag>
@@ -1470,7 +1470,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_121</Tag>
-		<English>Sa&#237;n Alto</English>
+		<English>Saín Alto</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_122</Tag>
@@ -1478,11 +1478,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_123</Tag>
-		<English>Susticac&#225;n</English>
+		<English>Susticacán</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_124</Tag>
-		<English>Tucum&#225;n</English>
+		<English>Tucumán</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_125</Tag>
@@ -1510,7 +1510,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_131</Tag>
-		<English>Juay&#250;a</English>
+		<English>Juayúa</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_132</Tag>
@@ -1862,7 +1862,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_0</Tag>
-		<English>S&#227;o Salvador</English>
+		<English>São Salvador</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_1</Tag>
@@ -1870,11 +1870,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_2</Tag>
-		<English>S&#227;o Vicente</English>
+		<English>São Vicente</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_3</Tag>
-		<English>Vila do Esp&#237;rito Santo</English>
+		<English>Vila do Espírito Santo</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_4</Tag>
@@ -1886,7 +1886,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_6</Tag>
-		<English>Vit&#243;ria</English>
+		<English>Vitória</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_7</Tag>
@@ -1894,19 +1894,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_8</Tag>
-		<English>S&#227;o Paulo</English>
+		<English>São Paulo</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_9</Tag>
-		<English>Fortim de S&#227;o Tiago</English>
+		<English>Fortim de São Tiago</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_10</Tag>
-		<English>Santo Andr&#233;</English>
+		<English>Santo André</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_11</Tag>
-		<English>S&#227;o Bernardo do Campo</English>
+		<English>São Bernardo do Campo</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_12</Tag>
@@ -1918,19 +1918,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_14</Tag>
-		<English>Santo Ant&#244;nio de S&#225;</English>
+		<English>Santo Antônio de Sá</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_15</Tag>
-		<English>S&#227;o Louren&#231;o dos &#205;ndios</English>
+		<English>São Lourenço dos Índios</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_16</Tag>
-		<English>S&#227;o Gon&#231;alo</English>
+		<English>São Gonçalo</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_17</Tag>
-		<English>Jo&#227;o Pessoa</English>
+		<English>João Pessoa</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_18</Tag>
@@ -1938,31 +1938,31 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_19</Tag>
-		<English>S&#227;o Lu&#237;s</English>
+		<English>São Luís</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_20</Tag>
-		<English>Feliz Lusit&#226;nia</English>
+		<English>Feliz Lusitânia</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_21</Tag>
-		<English>Paranagu&#225;</English>
+		<English>Paranaguá</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_22</Tag>
-		<English>Jacara&#237;</English>
+		<English>Jacaraí</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_23</Tag>
-		<English>Jundia&#237;</English>
+		<English>Jundiaí</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_24</Tag>
-		<English>Santar&#233;m</English>
+		<English>Santarém</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_25</Tag>
-		<English>S&#227;o Jos&#233;</English>
+		<English>São José</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_26</Tag>
@@ -1970,11 +1970,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_27</Tag>
-		<English>Col&#243;nia do Sacramento</English>
+		<English>Colónia do Sacramento</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_28</Tag>
-		<English>Curit&#237;ba</English>
+		<English>Curitíba</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_29</Tag>
@@ -1982,11 +1982,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_30</Tag>
-		<English>Contag&#233;m</English>
+		<English>Contagém</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_31</Tag>
-		<English>Cuiab&#225;</English>
+		<English>Cuiabá</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_32</Tag>
@@ -1998,15 +1998,15 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_34</Tag>
-		<English>Viam&#227;o</English>
+		<English>Viamão</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_35</Tag>
-		<English>Macap&#225;</English>
+		<English>Macapá</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_36</Tag>
-		<English>Gravata&#237;</English>
+		<English>Gravataí</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_37</Tag>
@@ -2030,15 +2030,15 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_42</Tag>
-		<English>Ilh&#233;us</English>
+		<English>Ilhéus</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_43</Tag>
-		<English>Cura&#231;&#227;o</English>
+		<English>Curação</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_44</Tag>
-		<English>S&#227;o Tom&#233;</English>
+		<English>São Tomé</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_45</Tag>
@@ -2062,15 +2062,15 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_50</Tag>
-		<English>Jo&#227;o Pessoa</English>
+		<English>João Pessoa</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_51</Tag>
-		<English>Bel&#233;m</English>
+		<English>Belém</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_52</Tag>
-		<English>S&#227;o Miguel</English>
+		<English>São Miguel</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_53</Tag>
@@ -2078,7 +2078,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_54</Tag>
-		<English>Maranh&#227;o</English>
+		<English>Maranhão</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_55</Tag>
@@ -2086,7 +2086,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_56</Tag>
-		<English>Alc&#226;ntara</English>
+		<English>Alcântara</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_57</Tag>
@@ -2102,11 +2102,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_60</Tag>
-		<English>S&#227;o Felix</English>
+		<English>São Felix</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_61</Tag>
-		<English>Canan&#233;ia</English>
+		<English>Cananéia</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_62</Tag>
@@ -2122,11 +2122,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_65</Tag>
-		<English>S&#227;o Mateus</English>
+		<English>São Mateus</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_66</Tag>
-		<English>S&#227;o Crist&#243;v&#227;o</English>
+		<English>São Cristóvão</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_67</Tag>
@@ -2142,7 +2142,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_70</Tag>
-		<English>Sirinha&#233;m</English>
+		<English>Sirinhaém</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_71</Tag>
@@ -2158,7 +2158,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_74</Tag>
-		<English>Boqueir&#227;o</English>
+		<English>Boqueirão</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_75</Tag>
@@ -2166,7 +2166,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_76</Tag>
-		<English>S&#227;o Borja</English>
+		<English>São Borja</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_77</Tag>
@@ -2174,15 +2174,15 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_78</Tag>
-		<English>S&#227;o Luiz Gonzaga</English>
+		<English>São Luiz Gonzaga</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_79</Tag>
-		<English>S&#227;o Nicolau</English>
+		<English>São Nicolau</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_80</Tag>
-		<English>S&#227;o Louren&#231;o das Miss&#245;es</English>
+		<English>São Lourenço das Missões</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_81</Tag>
@@ -2190,7 +2190,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_82</Tag>
-		<English>Ass&#250;</English>
+		<English>Assú</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_83</Tag>
@@ -2198,11 +2198,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_84</Tag>
-		<English>S&#227;o Jo&#227;o</English>
+		<English>São João</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_85</Tag>
-		<English>Santo &#194;ngelo</English>
+		<English>Santo Ângelo</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_86</Tag>
@@ -2226,15 +2226,15 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_91</Tag>
-		<English>Florian&#243;polis</English>
+		<English>Florianópolis</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_92</Tag>
-		<English>Goi&#225;s</English>
+		<English>Goiás</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_93</Tag>
-		<English>Piren&#243;polis</English>
+		<English>Pirenópolis</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_94</Tag>
@@ -2266,7 +2266,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_6</Tag>
-		<English>Godth&#229;b</English>
+		<English>Godthåb</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_7</Tag>
@@ -2278,11 +2278,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_9</Tag>
-		<English>Christiansh&#229;b</English>
+		<English>Christianshåb</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_10</Tag>
-		<English>Fort Christiansv&#230;rn</English>
+		<English>Fort Christiansværn</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_11</Tag>
@@ -2290,7 +2290,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_12</Tag>
-		<English>Frederiksh&#229;b</English>
+		<English>Frederikshåb</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_13</Tag>
@@ -2322,7 +2322,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_20</Tag>
-		<English>H&#229;b</English>
+		<English>Håb</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_21</Tag>
@@ -2346,7 +2346,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_26</Tag>
-		<English>Julianeh&#229;b</English>
+		<English>Julianehåb</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_27</Tag>
@@ -2378,7 +2378,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_34</Tag>
-		<English>S&#248;ndre Str&#248;mfjord</English>
+		<English>Søndre Strømfjord</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_35</Tag>
@@ -2398,7 +2398,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_39</Tag>
-		<English>Motzfeldt S&#248;</English>
+		<English>Motzfeldt Sø</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_40</Tag>
@@ -2414,7 +2414,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_43</Tag>
-		<English>R&#248;kerne</English>
+		<English>Røkerne</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_44</Tag>
@@ -2430,7 +2430,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_2</Tag>
-		<English>Nya G&#246;teborg</English>
+		<English>Nya Göteborg</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_3</Tag>
@@ -2438,7 +2438,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_4</Tag>
-		<English>Nya &#196;lfsborg</English>
+		<English>Nya Älfsborg</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_5</Tag>
@@ -2530,7 +2530,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_27</Tag>
-		<English>Timmer&#246;n</English>
+		<English>Timmerön</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_28</Tag>
@@ -2566,11 +2566,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_36</Tag>
-		<English>M&#246;lndal</English>
+		<English>Mölndal</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_37</Tag>
-		<English>&#214;versidolandet</English>
+		<English>Översidolandet</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_38</Tag>
@@ -2582,11 +2582,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_40</Tag>
-		<English>Sk&#246;ldpadde Kill</English>
+		<English>Sköldpadde Kill</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_41</Tag>
-		<English>Druwee&#255;land</English>
+		<English>Druweeÿland</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_42</Tag>
@@ -2670,7 +2670,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_62</Tag>
-		<English>G&#246;tepori</English>
+		<English>Götepori</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_63</Tag>
@@ -2678,7 +2678,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_64</Tag>
-		<English>R&#228;s&#228;l&#228;</English>
+		<English>Räsälä</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_0</Tag>
@@ -5126,11 +5126,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_1</Tag>
-		<English>&#209;uu Tnoo</English>
+		<English>Ñuu Tnoo</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_2</Tag>
-		<English>&#209;uu Ndecu</English>
+		<English>Ñuu Ndecu</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_3</Tag>
@@ -5138,7 +5138,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_4</Tag>
-		<English>&#209;uu Dee</English>
+		<English>Ñuu Dee</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_5</Tag>
@@ -5150,7 +5150,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_7</Tag>
-		<English>Yucu&#241;udahui</English>
+		<English>Yucuñudahui</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_8</Tag>
@@ -5166,7 +5166,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_11</Tag>
-		<English>&#209;uu Ndaya</English>
+		<English>Ñuu Ndaya</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_12</Tag>
