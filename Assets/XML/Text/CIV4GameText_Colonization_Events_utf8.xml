@@ -3255,7 +3255,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SIX_PRIVATEERS_QUEST_DONE</Tag>
         <English>Milord, you've acquired a fleet of six ships with hidden nationality before any other colony could. The buccanneers have joined your cause.</English>
-        <French></French>
+        <French>Sire, vous avez acquis une flotte de six navires à la nationalité cachée avant tous les autres. Les boucaniers rentrent dans vos rangs.</French>
         <German>Milord, Eure Kolonie konnte vor allen anderen eine Flotte von sechs Schiffen mit versteckter Nationalität aufbauen. Die Bukaniere haben sich unserer Sache verschworen.</German>
         <Russian>Милорд, флот из шести кораблей со скрытой национальностью появился у нас раньше, чем у любой другая колониальной нации. Буканьеры решили присоединиться к нашему делу.</Russian>
     </TEXT>
@@ -5091,150 +5091,175 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_WOOL_START</Tag>
         <English>The race to dominate the [COLOR_FONT_GOLD]wool[COLOR_REVERT] market in Europe has started.</English>
+        <French>La course pour dominer le marché européen de la  [COLOR_FONT_GOLD]laine[COLOR_REVERT] a été lancée.</French>
         <German>Das Rennen zur Beherrschung des europäischen Marktes für [COLOR_FONT_GOLD]Schafswolle[COLOR_REVERT] hat begonnen.</German>
         <Russian>Началось состязание за доминирование на рынке [COLOR_FONT_GOLD]шерсти[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_WOOL_START</Tag>
         <English>His Majesty and citizens back home are delighted to get [COLOR_FONT_GOLD]wool[COLOR_REVERT] from the colonies. His Majesty orders you to become the market leader for wool.</English>
+        <French>Sa Majesté et ses sujets en Europe sont ravis avec les premières livraisons de [COLOR_FONT_GOLD]laine[COLOR_REVERT] des colonies. Sa majesté vous ordonne de devenir maitre de ce marché.</French>
         <German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Schafswolle[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
         <Russian>Его Величество и граждане метрополии в восторге от первых поставок колониальной [COLOR_FONT_GOLD]шерсти[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_WOOL_FAILED</Tag>
         <English>Milord, another colonial nation now dominates the [COLOR_FONT_GOLD]wool[COLOR_REVERT] business in Europe.</English>
+        <French>Sire, une autre colonie est devenue maitre du marché de la [COLOR_FONT_GOLD]laine[COLOR_REVERT] en Europe.</French>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Schafswolle[COLOR_REVERT] zu beherrschen.</German>
         <Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]шерсти[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_WOOL_DONE</Tag>
         <English>Milord, we've become the market leader in [COLOR_FONT_GOLD]wool[COLOR_REVERT].</English>
+        <French>Sire, nous sommes devenus les maitres du marché de la [COLOR_FONT_GOLD]laine[COLOR_REVERT] en Europe.</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schafswolle[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]шерсти[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_WOOL_DONE</Tag>
         <English>Milord, carrying out the orders of His Majesty, we're now the market leader for [COLOR_FONT_GOLD]wool[COLOR_REVERT] trading. His Majesty is in a generous mood and wants to reward us.</English>
+        <French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant de la [COLOR_FONT_GOLD]laine[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
         <German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Schafswolle[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
         <Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]шерсти[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COTTON_START</Tag>
         <English>The race to dominate the [COLOR_FONT_GOLD]cotton[COLOR_REVERT] business in Europe has started.</English>
+        <French>La course pour dominer le marché européen du [COLOR_FONT_GOLD]coton[COLOR_REVERT] a été lancée.</French>
         <German>Das Rennen zur Beherrschung des europäischen Marktes für [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] hat begonnen.</German>
         <Russian>Началось состязание за доминирование на рынке [COLOR_FONT_GOLD]хлопка[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COTTON_START</Tag>
         <English>His Majesty and citizens back home are delighted to get [COLOR_FONT_GOLD]cotton[COLOR_REVERT] from the colonies. His Majesty thus orders you to become the market leader for that good.</English>
+        <French>Sa Majesté et ses sujets en Europe sont ravis avec les premières livraisons de [COLOR_FONT_GOLD]coton[COLOR_REVERT] des colonies. Sa majesté vous ordonne de devenir maitre de ce marché.</French>
         <German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
         <Russian>Его Величество и граждане метрополии в восторге от первых поставок колониального [COLOR_FONT_GOLD]хлопка[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_COTTON_FAILED</Tag>
         <English>Milord, another colonial nation now dominates the [COLOR_FONT_GOLD]cotton[COLOR_REVERT] market in Europe.</English>
+        <French>Sire, une autre colonie est devenue maitre du marché du [COLOR_FONT_GOLD]coton[COLOR_REVERT] en Europe.</French>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] zu beherrschen.</German>
         <Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]хлопка[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COTTON_DONE</Tag>
         <English>A European Nation succeeded to become the market leader for[COLOR_FONT_GOLD]cotton[COLOR_REVERT].</English>
+        <French>Une nation Européenne est devenue maître du marché du [COLOR_FONT_GOLD]coton[COLOR_REVERT].</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]хлопка[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COTTON_DONE</Tag>
         <English>Milord, we've fulfilled the orders of His Majesty to dominate the trade in [COLOR_FONT_GOLD]cotton[COLOR_REVERT]. His Majesty is in a generous mood and wants to reward us.</English>
+        <French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant de [COLOR_FONT_GOLD]coton[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
         <German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
         <Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]хлопка[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_INDIGO_START</Tag>
         <English>The race to dominate the [COLOR_FONT_GOLD]indigo[COLOR_REVERT] market in Europe has started.</English>
+        <French>La course pour dominer le marché européen de l' [COLOR_FONT_GOLD]indigo[COLOR_REVERT] a été lancée.</French>
         <German>Das Rennen zur Beherrschung des europäischen Marktes für [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] hat begonnen.</German>
         <Russian>Началось состязание за доминирование на рынке [COLOR_FONT_GOLD]индиго[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_INDIGO_START</Tag>
         <English>His Majesty and His citizens are delighted with the first deliveries of [COLOR_FONT_GOLD]indigo[COLOR_REVERT] from the colonies. His Majesty orders you to become the market leader for indigo.</English>
+        <French>Sa Majesté et ses sujets en Europe sont ravis avec les premières livraisons d'[COLOR_FONT_GOLD]indigo[COLOR_REVERT] des colonies. Sa majesté vous ordonne de devenir maitre de ce marché.</French>
         <German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
         <Russian>Его Величество и граждане метрополии в восторге от первых поставок колониального [COLOR_FONT_GOLD]индиго[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_INDIGO_FAILED</Tag>
         <English>Milord, another colonial nation has dominated the European [COLOR_FONT_GOLD]indigo[COLOR_REVERT] market.</English>
+        <French>Sire, une autre colonie est devenue maitre du marché de l' [COLOR_FONT_GOLD]indigo[COLOR_REVERT] en Europe.</French>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] zu beherrschen.</German>
         <Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]индиго[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_INDIGO_DONE</Tag>
         <English>Milord, we're dominant in [COLOR_FONT_GOLD]indigo[COLOR_REVERT].</English>
+        <French>Sire, nous sommes devenus les maitres du marché de l' [COLOR_FONT_GOLD]indigo[COLOR_REVERT] en Europe.</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]индиго[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_INDIGO_DONE</Tag>
         <English>Milord, fulfilling the orders of His Majesty, we're now the market leader for [COLOR_FONT_GOLD]indigo[COLOR_REVERT]. His Majesty is in a generous mood and wants to reward us.</English>
+        <French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant d'[COLOR_FONT_GOLD]indigo[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
         <German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
         <Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]индиго[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_HIDES_START</Tag>
         <English>The race for the European market in [COLOR_FONT_GOLD]cowhides[COLOR_REVERT] has begun.</English>
+        <French>La course pour dominer le marché européen des [COLOR_FONT_GOLD]peaux de vache[COLOR_REVERT] a été lancée.</French>
         <German>Das Rennen zur Beherrschung des europäischen Marktes für [COLOR_FONT_GOLD]Rindshäute[COLOR_REVERT] hat begonnen.</German>
         <Russian>Началось состязание за доминирование на рынке [COLOR_FONT_GOLD]коровьих шкур[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_HIDES_START</Tag>
         <English>His Majesty and the citizens back home are delighted to get [COLOR_FONT_GOLD]cowhides[COLOR_REVERT] from the colonies. His Majesty commands you to become the market leader for cowhides.</English>
+        <French>Sa Majesté et ses sujets en Europe sont ravis avec les premières livraisons de [COLOR_FONT_GOLD]peaux de vaches[COLOR_REVERT] des colonies. Sa majesté vous ordonne de devenir maitre de ce marché.</French>
         <German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Rindshäuten[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
         <Russian>Его Величество и граждане метрополии в восторге от первых поставок колониальных [COLOR_FONT_GOLD]коровьих шкур[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_HIDES_FAILED</Tag>
         <English>Milord, another colonial nation now dominates the [COLOR_FONT_GOLD]cowhides[COLOR_REVERT] market in Europe.</English>
+        <French>Sire, une autre colonie est devenue maitre du marché des [COLOR_FONT_GOLD]peaux de vaches[COLOR_REVERT] en Europe.</French>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Rindshäute[COLOR_REVERT] zu beherrschen.</German>
         <Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]коровьих шкур[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_HIDES_DONE</Tag>
-        <English>A European Nation succeeded to become the market leader forthe European [COLOR_FONT_GOLD]cowhides[COLOR_REVERT] trade.</English>
+        <English>A European Nation succeeded to become the market leader for the European [COLOR_FONT_GOLD]cowhides[COLOR_REVERT] trade.</English>
+        <French>Une nation Européenne est devenue maître du marché des [COLOR_FONT_GOLD]peaux de vaches[COLOR_REVERT].</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rindshäuten[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]коровьих шкур[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_HIDES_DONE</Tag>
         <English>Milord, fulfilling the orders of His Majesty, we're now the market leader for [COLOR_FONT_GOLD]cowhides[COLOR_REVERT]. His Majesty is in a generous mood and wants to reward us.</English>
+        <French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant de [COLOR_FONT_GOLD]peaux de vaches[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
         <German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Rindshäuten[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
         <Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]коровьих шкур[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PREMIUM_FUR_START</Tag>
         <English>The race to dominate the European market for [COLOR_FONT_GOLD]premium furs[COLOR_REVERT] is under way.</English>
+        <French>La course pour dominer le marché européen de la [COLOR_FONT_GOLD]fourrure de qualité[COLOR_REVERT] a été lancée.</French>
         <German>Das Rennen zur Beherrschung des europäischen Marktes für [COLOR_FONT_GOLD]Hochwertige Pelze[COLOR_REVERT] hat begonnen.</German>
         <Russian>Началось состязание за доминирование на рынке [COLOR_FONT_GOLD]премиального меха[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PREMIUM_FUR_START</Tag>
         <English>His Majesty and citizens of the homeland are delighted with [COLOR_FONT_GOLD]premium furs[COLOR_REVERT] from the colonies. His Majesty thus orders you to become the market leader for premium furs.</English>
+        <French>Sa Majesté et ses sujets en Europe sont ravis avec les premières livraisons de [COLOR_FONT_GOLD]fourrure de qualité[COLOR_REVERT] des colonies. Sa majesté vous ordonne de devenir maitre de ce marché.</French>
         <German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Hochwertigen Pelzen[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
         <Russian>Его Величество и граждане метрополии в восторге от первых поставок колониального [COLOR_FONT_GOLD]премиального меха[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_PREMIUM_FUR_FAILED</Tag>
         <English>Milord, another colonial nation now dominates the European market for [COLOR_FONT_GOLD]premium furs[COLOR_REVERT].</English>
+        <French>Sire, une autre colonie est devenue maitre du marché de la [COLOR_FONT_GOLD]fourrure de qualité[COLOR_REVERT] en Europe.</French>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Hochwertige Pelze[COLOR_REVERT] zu beherrschen.</German>
         <Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]премиального меха[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PREMIUM_FUR_DONE</Tag>
         <English>Milord, we're now the leading traders in [COLOR_FONT_GOLD]premium furs[COLOR_REVERT].</English>
+        <French>Sire, nous sommes devenus les maitres du marché de la  [COLOR_FONT_GOLD]fourrure de qualité[COLOR_REVERT] en Europe.</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hochwertigen Pelzen[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]премиального меха[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PREMIUM_FUR_DONE</Tag>
         <English>Milord, fulfilling the orders of His Majesty, we're now the market leader for [COLOR_FONT_GOLD]premium furs[COLOR_REVERT]. His Majesty is in a generous mood and wants to reward us.</English>
+        <French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant de [COLOR_FONT_GOLD]fourrure de qualité[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
         <German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Hochwertigen Pelzen[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
         <Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]премиального меха[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
     </TEXT>

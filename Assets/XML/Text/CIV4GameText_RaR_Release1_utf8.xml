@@ -64,7 +64,7 @@
     <TEXT>
         <Tag>CITY_ABANDONED</Tag>
         <English>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]The last citizens have turned their backs on this town. The houses will fall into disrepair and soon no one will remember this place.</English>
-        <French>La Colonie de %s1_city a été abandonnée.</French>
+        <French>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT] les derniers citoyens ont déserté la ville. Les maisons vont bientôt se délabrer et d'ici peu personne ne se rappelera de cett ville.</French>
         <German>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Die letzten Bürger haben der Stadt den Rücken gekehrt. Die Häuser werden verfallen, und schon bald wird sich niemand mehr dieses Ortes entsinnen.</German>
         <Italian>City %s1_city è stato abbandonato.</Italian>
         <Spanish>Ciudad %s1_city ha sido abandonado.</Spanish>
@@ -73,7 +73,7 @@
     <TEXT>
         <Tag>NO_ABANDONING_CITY_BECAUSE_WAR</Tag>
         <English>Milord, there is a war going on and the settlers are afraid to give up the protective settlement.</English>
-        <French>L'abandon d'une colonie est impossible en temps de guerre.</French>
+        <French>Sire, nous sommes en guerre, et les colons sont terrifiés d'abandonner leur protection au sein de la colonie.</French>
         <German>Milord, es herrscht Krieg, und die Siedler fürchten sich, die schützende Siedlung aufzugeben.</German>
         <Italian>Abbandonare la città non è possibile durante la guerra.</Italian>
         <Spanish>El abandono de una ciudad no es posible durante la guerra.</Spanish>
@@ -81,7 +81,7 @@
     <TEXT>
         <Tag>NO_TRADE_BECAUSE_BAD_BARGAIN</Tag>
         <English>The [COLOR_HIGHLIGHT_TEXT]%s1_Civ[COLOR_REVERT] people refuse to trade with you at this time.</English>
-        <French>Cette colonie refuse de commercer avec vous.</French>
+        <French>Les [COLOR_HIGHLIGHT_TEXT]%s1_Civ[COLOR_REVERT] refusent de commercer avec vous pour le moment.</French>
         <German>Das Volk der [COLOR_HIGHLIGHT_TEXT]%s1_Civ[COLOR_REVERT] möchte zur Zeit nicht mit euch handeln.</German>
         <Italian>Questa città attualmente non vuole commerciare con voi.</Italian>
         <Spanish>Esta ciudad actualmente no quiere negociar con usted.</Spanish>
@@ -97,72 +97,72 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_RAIDED</Tag>
-        <English>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective raid! A %s3_BldngName was destroyed by the raiding party!</English>
-        <French>Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! [NUM1:Un:Une] %s3_BldngName [NUM1:a été détruit:a été détruite] par des ennemis infiltrés !</French>
-        <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1:2_civ_adjective Überfall! Das Gebäude %s3_BldngName wurde von feindlichen Eindringlingen zerstört!</German>
+        <English>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective raid! A %s3_BldngName was destroyed by the raiding party!</English>
+        <French>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! [NUM1:Un:Une] %s3_BldngName [NUM1:a été détruit:a été détruite] par des ennemis infiltrés !</French>
+        <German>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1:2_civ_adjective Überfall! Das Gebäude %s3_BldngName wurde von feindlichen Eindringlingen zerstört!</German>
         <Italian>Raid %s1_civ_adjective a %s2_city! Infiltrati nemici hanno distrutto [NUM1:un:una] %s3_BldngName!</Italian>
         <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! ¡Los enemigos infiltrados han destruido [NUM1:un:una:unos:unas] %s3_BldngName!</Spanish>
         <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]нападение индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]! Краснокожие варвары разрушили [COLOR_SELECTED_TEXT]%s3_BldngName[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PRODUCTION_RAIDED</Tag>
-        <English>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective raid! All progress in the construction of %s3_buildName has been destroyed by the raiding party!</English>
-        <French>Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! Toutes les progressions du bâtiment : %s3_buildName ont été détruites par des ennemis infiltrés !</French>
-        <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1:2_civ_adjective Überfall! Der gesamte Fortschritt bei der Errichtung des Gebäudes %s3_buildName wurde von feindlichen Eindringlingen zerstört!</German>
+        <English>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective raid! All progress in the construction of %s3_buildName has been destroyed by the raiding party!</English>
+        <French>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Les %s1_civ_adjective ont lancé un raid! Toutes les progressions du bâtiment : %s3_buildName ont été détruites par des ennemis infiltrés !</French>
+        <German>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1:2_civ_adjective Überfall! Der gesamte Fortschritt bei der Errichtung des Gebäudes %s3_buildName wurde von feindlichen Eindringlingen zerstört!</German>
         <Italian>Raid %s1_civ_adjective a %s2_city! Tutti i progressi in %s3_buildName sono stati distrutti da nemici infiltrati!</Italian>
         <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! ¡Los infiltrados enemigos han destruido todo el progreso [NUM1:del:de la:de los:de las] %s3_buildName!</Spanish>
         <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]нападение индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]! Негодяи полностью разрушили строящееся здание [COLOR_SELECTED_TEXT]%s3_buildName[COLOR_REVERT]! Нам придется начинать все заново!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PRODUCTION_RAIDED_PARTIAL</Tag>
-        <English>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective raid! Some progress in the construction of %s3_buildName has been destroyed by the raiding party!</English>
-        <French>Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! Une parte des progressions du bâtiment : %s3_buildName ont été détruites par des ennemis infiltrés !</French>
-        <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1:2_civ_adjective Überfall! Ein Teil des Fortschritts bei der Errichtung des Gebäudes %s3_buildName wurde von feindlichen Eindringlingen zerstört!</German>
+        <English>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective raid! Some progress in the construction of %s3_buildName has been destroyed by the raiding party!</English>
+        <French>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Les %s1:2_civ_adjective ont lancé un raid sur la ville : %s2_city ! Une parte des progressions du bâtiment : %s3_buildName ont été détruites par des ennemis infiltrés !</French>
+        <German>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1:2_civ_adjective Überfall! Ein Teil des Fortschritts bei der Errichtung des Gebäudes %s3_buildName wurde von feindlichen Eindringlingen zerstört!</German>
         <Italian>Raid %s1_civ_adjective a %s2_city! Parte del progresso in %s3_buildName sono stati distrutti da nemici infiltrati!</Italian>
         <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! ¡Los infiltrados enemigos han destruido parte del progreso [NUM1:del:de la:de los:de las] %s3_buildName!</Spanish>
         <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]нападение индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]! Они разрушили часть строящегося здания [COLOR_SELECTED_TEXT]%s3_buildName[COLOR_REVERT], но мы вовремя их отогнали! Не всё потеряно, милорд!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TREASURY_RAIDED</Tag>
-        <English>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective raid! %d3[ICON_GOLD] from our state treasury was looted by raiding party!</English>
-        <French>Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! %d3[ICON_GOLD] de notre trésor a été pillée par des ennemis infiltrés !</French>
-        <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1:2_civ_adjective Überfall! Feindliche Eindringlinge haben %d3[ICON_GOLD] unseres Staatsschatzes erbeutet!</German>
+        <English>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective raid! %d3[ICON_GOLD] from our state treasury was looted by raiding party!</English>
+        <French>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! %d3[ICON_GOLD] de notre trésor a été pillée par des ennemis infiltrés !</French>
+        <German>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1:2_civ_adjective Überfall! Feindliche Eindringlinge haben %d3[ICON_GOLD] unseres Staatsschatzes erbeutet!</German>
         <Italian>Raid %s1_civ_adjective a %s2_city! Infiltrati nemici hanno rubato %d3[ICON_GOLD] del nostro tesoro di stato!</Italian>
         <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! ¡Los enemigos infiltrados han saqueado %d3[ICON_GOLD] de nuestro tesoro!</Spanish>
         <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]нападение индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]! Краснокожие демоны стащили %d3[ICON_GOLD] из городской казны!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SCALP_RAIDED</Tag>
-        <English>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective raid!  The raiders take scalps, with [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] killed.</English>
-        <French>Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! %s3_unit a subi des dégâts</French>
-        <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1:2_civ_adjective Überfall! Angreifer nehmen Skalps: [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] wurde getötet.</German>
+        <English>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective raid!  The raiders take scalps, with [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] killed.</English>
+        <French>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! %s3_unit a subi des dégâts</French>
+        <German>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1:2_civ_adjective Überfall! Angreifer nehmen Skalps: [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] wurde getötet.</German>
         <Italian>Raid %s1_civ_adjective a %s2_city! sono morti %s3_unit</Italian>
         <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! Se lamenta la pérdida de %s3_unit</Spanish>
         <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]нападение индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]! Краснокожие сняли скальп с [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HARBOR_RAIDED</Tag>
-        <English>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective raid! Raiders attack the harbour, damaging your [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]!</English>
-        <French>Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! Votre %s3_unit a subi des dégâts !</French>
-        <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1:2_civ_adjective Überfall! Räuber greifen Hafenanlagen an. Euer Schiff [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] wurde beschädigt!</German>
+        <English>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective raid! Raiders attack the harbour, damaging your [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]!</English>
+        <French>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Les %s1_civ_adjective ont lancé un raid ! Votre %s3_unit a subi des dégâts !</French>
+        <German>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1:2_civ_adjective Überfall! Räuber greifen Hafenanlagen an. Euer Schiff [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] wurde beschädigt!</German>
         <Italian>Raid %s1_civ_adjective a %s2_city! La tua unità %s3_unit  è stata danneggiata!</Italian>
         <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! [NUM2:ha dañado:ha dañado:han dañado:han dañado] a [NUM1:vuestro:vuestra:vuestros:vuestras] %s3_unit!</Spanish>
         <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]нападение индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]! Они атаковали наш порт, повредив [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NOTHING_RAIDED</Tag>
-        <English>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective raiding party wiped out! Nothing destroyed or stolen.</English>
-        <French>%s1_civ_adjective raid anéanti en %s2_city! Rien n'a été détruit ou volé.</French>
-        <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective Stoßtrupp ausgelöscht! Keine ernstzunehmenden Schäden verursacht.</German>
+        <English>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective raiding party wiped out! Nothing destroyed or stolen.</English>
+        <French>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]%s1_civ_adjective raid anéanti en %s2_city! Rien n'a été détruit ou volé.</French>
+        <German>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective Stoßtrupp ausgelöscht! Keine ernstzunehmenden Schäden verursacht.</German>
         <Italian>%s1_civ_adjective gruppo di incursori spazzato via in %s2_city! Niente distrutto o rubato.</Italian>
         <Spanish>%s1_civ_adjective partido de ataque acabó en %s2_city! Nada destruye o se lo roban.</Spanish>
         <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]набег индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] отражен! Все в целости и сохранности.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_RAIDING_NATIVE_CAPTURED</Tag>
-        <English>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective raiding party captured! They will pay with forced labour for their crimes.</English>
-        <French>%s1_civ_adjective raid capturé en %s2_city! Ils paieront pour leurs crimes par le travail.</French>
-        <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective Stoßtrupp gefangen genommen! Sie werden mit Zwangsarbeit für ihre Verbrechen büßen.</German>
+        <English>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective raiding party captured! They will pay with forced labour for their crimes.</English>
+        <French>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT] le raid %s1_civ_adjective raid a été capturé ! Ils paieront pour leurs crimes par le travail.</French>
+        <German>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective Stoßtrupp gefangen genommen! Sie werden mit Zwangsarbeit für ihre Verbrechen büßen.</German>
         <Italian>%s1_civ_adjective gruppo di incursori catturato in %s2_city! Pagheranno con il lavoro per i loro crimini.</Italian>
         <Spanish>%s1_civ_adjective grupo asaltante capturado en %s2_city! Pagarán con el trabajo de sus crímenes.</Spanish>
         <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]группа индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT], пытавшихся утроить набег, схвачена! Отправьте их на плантации, Милорд! Пусть расплачиваются за свои преступления.</Russian>
@@ -170,7 +170,7 @@
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_SUNK_GOOD</Tag>
         <English>[COLOR_POSITIVE_TEXT]Victory, Milord! [COLOR_REVERT]The citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has targeted an enemy ship with its cannons, sinking it!</English>
-        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur un navire ennemi et l'a coulé !</French>
+        <French>[COLOR_POSITIVE_TEXT]Victoire, Sire ! [COLOR_REVERT]La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur un navire ennemi et l'a coulé !</French>
         <German>[COLOR_POSITIVE_TEXT]Sieg, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf ein feindliches Schiff abgefeuert und es versenkt!</German>
         <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni ad una nave nemica e affondato it!</Italian>
         <Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones a un barco enemigo y hundido!</Spanish>
@@ -179,7 +179,7 @@
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_SUNK_BAD</Tag>
         <English>[COLOR_WARNING_TEXT]Defeat, Milord! [COLOR_REVERT]With its cannons the citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has sunk our ship!</English>
-        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur notre navire et l'a coulé !</French>
+        <French>[COLOR_WARNING_TEXT]Défaite, Sire ! [COLOR_REVERT]La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur notre navire et l'a coulé !</French>
         <German>[COLOR_WARNING_TEXT]Niederlage, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf unser Schiff abgefeuert und es versenkt!</German>
         <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni presso la nostra nave e affondata it!</Italian>
         <Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones en nuestro barco y hundido!</Spanish>
@@ -188,7 +188,7 @@
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_HIT_GOOD</Tag>
         <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]Using its cannons the citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has damaged an enemy ship!</English>
-        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur un navire ennemi et l'a endommagé !</French>
+        <French>[COLOR_POSITIVE_TEXT]Bonne nouvelle, Sire ! [COLOR_REVERT]La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur un navire ennemi et l'a endommagé !</French>
         <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf ein feindliches Schiff abgefeuert und es beschädigt!</German>
         <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni ad una nave nemica e danneggiato it!</Italian>
         <Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones a un barco enemigo y dañado!</Spanish>
@@ -197,7 +197,7 @@
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_HIT_BAD</Tag>
         <English>[COLOR_WARNING_TEXT]Bad news, Milord! [COLOR_REVERT]The citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has fired its cannons at our ship, damaging it!</English>
-        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur notre navire et l'a endommagé !</French>
+        <French>[COLOR_WARNING_TEXT]Mauvaise nouvelle, Sire ! [COLOR_REVERT]La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur notre navire et l'a endommagé !</French>
         <German>[COLOR_WARNING_TEXT]Schlechte Nachrichten, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf unser Schiff abgefeuert und es beschädigt!</German>
         <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni presso la nostra nave e danneggiato it!</Italian>
         <Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones en nuestro barco y dañado!</Spanish>
@@ -206,7 +206,7 @@
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_MISS_BAD</Tag>
         <English>[COLOR_WARNING_TEXT]Bad news, Milord! [COLOR_REVERT]The citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has fired its cannons at an enemy ship but missed it!</English>
-        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur un navire ennemi, mais elle l'a raté !</French>
+        <French>[COLOR_WARNING_TEXT]Mauvaise nouvelle, Sire ! [COLOR_REVERT]La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur un navire ennemi, mais elle l'a raté !</French>
         <German>[COLOR_WARNING_TEXT]Schlechte Nachrichten, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf ein feindliches Schiff abgefeuert, dieses jedoch verfehlt!</German>
         <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni ad una nave nemica, ma perso!</Italian>
         <Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones a un barco enemigo, pero lo perdimos!</Spanish>
@@ -215,7 +215,7 @@
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_MISS_GOOD</Tag>
         <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]The citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] fired its cannons at our ship but missed it!</English>
-        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur notre navire, mais l'a raté !</French>
+        <French>[COLOR_POSITIVE_TEXT]Bonne nouvelle, Sire ! [COLOR_REVERT]La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur notre navire, mais l'a raté !</French>
         <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf unser Schiff abgefeuert, dieses jedoch verfehlt!</German>
         <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni presso la nostra nave, ma perso!</Italian>
         <Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones en nuestro barco, pero lo perdimos!</Spanish>
@@ -224,7 +224,7 @@
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_DESTROYED_GOOD</Tag>
         <English>[COLOR_POSITIVE_TEXT]Victory, Milord! [COLOR_REVERT]Cannon fire from the citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has destroyed enemy troops!</English>
-        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur les troupes ennemies et les a détruites !</French>
+        <French>[COLOR_POSITIVE_TEXT]Victoire, Sire ! [COLOR_REVERT]La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur les troupes ennemies et les a détruites !</French>
         <German>[COLOR_POSITIVE_TEXT]Sieg, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf feindliche Truppen abgefeuert und diese vernichtet!</German>
         <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni contro le truppe nemiche e distrutti!</Italian>
         <Spanish>La ciudadela de %s1_city ha disparado sus cañones contra las tropas enemigas y los destruyó!</Spanish>
@@ -233,7 +233,7 @@
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_DESTROYED_BAD</Tag>
         <English>[COLOR_WARNING_TEXT]Defeat, Milord! [COLOR_REVERT]Cannons in the citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] have destroyed our troops!</English>
-        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons à nos troupes et les a détruites !</French>
+        <French>[COLOR_WARNING_TEXT]Défaite, Sire ! [COLOR_REVERT]La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons à nos troupes et les a détruites !</French>
         <German>[COLOR_WARNING_TEXT]Niederlage, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf unsere Truppen abgefeuert und diese vernichtet!</German>
         <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni alle nostre truppe e distrutti!</Italian>
         <Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones a nuestras tropas y los destruyó!</Spanish>
@@ -242,7 +242,7 @@
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_HIT_LAND_GOOD</Tag>
         <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]Cannons in the citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] have damaged enemy troops!</English>
-        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur les troupes ennemies et les a endommagées !</French>
+        <French>[COLOR_POSITIVE_TEXT]Bonne nouvelle, Sire ! [COLOR_REVERT]La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur les troupes ennemies et les a endommagées !</French>
         <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf feindliche Truppen abgefeuert und diesen Schaden zugefügt!</German>
         <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni contro le truppe nemiche e damaged!</Italian>
         <Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones contra las tropas enemigas y les damamged!</Spanish>
@@ -251,7 +251,7 @@
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_HIT_LAND_BAD</Tag>
         <English>[COLOR_WARNING_TEXT]Bad news, Milord! [COLOR_REVERT]The citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has fired its cannons at our troops and damaged them!</English>
-        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons à nos troupes et les a endommagées !</French>
+        <French>[COLOR_WARNING_TEXT]Mauvaise nouvelle, Sire ! [COLOR_REVERT]La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons à nos troupes et les a endommagées !</French>
         <German>[COLOR_WARNING_TEXT]Schlechte Nachrichten, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf unsere Truppen abgefeuert und diesen Schaden zugefügt!</German>
         <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni alle nostre truppe e damaged!</Italian>
         <Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones a nuestras tropas y les damaged!</Spanish>
@@ -260,7 +260,7 @@
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_MISS_LAND_BAD</Tag>
         <English>[COLOR_WARNING_TEXT]Bad news, Milord! [COLOR_REVERT]The citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] missed the enemy troops with its cannons!</English>
-        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur les troupes ennemies, mais elle les a manquées !</French>
+        <French>[COLOR_WARNING_TEXT]Mauvaise nouvelle, Sire ! [COLOR_REVERT]La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur les troupes ennemies, mais elle les a manquées !</French>
         <German>[COLOR_WARNING_TEXT]Schlechte Nachrichten, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf feindliche Truppen abgefeuert, diese jedoch verfehlt!</German>
         <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni contro le truppe nemiche ma li perdere!</Italian>
         <Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones contra las tropas enemigas, sino que los puedes perder!</Spanish>
@@ -269,7 +269,7 @@
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_MISS_LAND_GOOD</Tag>
         <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]The citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has fired its cannons at our troops to no effect!</English>
-        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons à nos troupes, mais elle les a manquées !</French>
+        <French>[COLOR_POSITIVE_TEXT]Bonne nouvelle, Sire ! [COLOR_REVERT]La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a fait feu au canon sur nos troupes, mais elle les a manquées !</French>
         <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf unsere Truppen abgefeuert, diese jedoch verfehlt!</German>
         <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni alle nostre truppe, ma li perdere!</Italian>
         <Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones a nuestras tropas, sino que las pierda!</Spanish>
@@ -278,7 +278,7 @@
     <TEXT>
         <Tag>TXT_KEY_FORTDEFENSE_DESTROYED_GOOD</Tag>
         <English>[COLOR_POSITIVE_TEXT]Victory, Milord! [COLOR_REVERT]The defenders of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] have fired at enemy troops and destroyed them!</English>
-        <French>Les défenses de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ont tiré sur les troupes ennemies et les a détruites !</French>
+        <French>[COLOR_POSITIVE_TEXT]Bonne nouvelle, Sire ! [COLOR_REVERT]Les défenses de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ont tiré sur les troupes ennemies et les a détruites !</French>
         <German>[COLOR_POSITIVE_TEXT]Sieg, Milord! [COLOR_REVERT]Die Verteidiger von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] haben auf feindliche Truppen gefeuert und diese vernichtet!</German>
         <Italian>Le difese di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hanno sparato contro le truppe nemiche e distrutti!</Italian>
         <Spanish>Las defensas de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] han disparado contra las tropas enemigas y los destruyó!</Spanish>
@@ -287,7 +287,7 @@
     <TEXT>
         <Tag>TXT_KEY_FORTDEFENSE_DESTROYED_BAD</Tag>
         <English>[COLOR_WARNING_TEXT]Defeat, Milord! [COLOR_REVERT]The defenders of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] have fired at our troops and wiped them out!</English>
-        <French>Les défenses de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ont tiré sur nos troupes et les a détruites !</French>
+        <French>[COLOR_WARNING_TEXT]Mauvaise nouvelle, Sire ! [COLOR_REVERT]Les défenses de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ont tiré sur nos troupes et les a détruites !</French>
         <German>[COLOR_WARNING_TEXT]Niederlage, Milord! [COLOR_REVERT]Die Verteidiger von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] haben auf unsere Truppen gefeuert und diese vernichtet!</German>
         <Italian>Le difese di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hanno sparato alle nostre truppe e distrutti!</Italian>
         <Spanish>Las defensas de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] han disparado contra nuestras tropas y los destruyó!</Spanish>
@@ -296,7 +296,7 @@
     <TEXT>
         <Tag>TXT_KEY_FORTDEFENSE_HIT_LAND_GOOD</Tag>
         <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]The defenders of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] have fired at enemy troops and damaged them!</English>
-        <French>Les défenses de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ont tiré sur les troupes ennemies et les a endommagées !</French>
+        <French>[COLOR_POSITIVE_TEXT]Bonne nouvelle, Sire ! [COLOR_REVERT]Les défenses de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ont tiré sur les troupes ennemies et les a endommagées !</French>
         <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Die Verteidiger von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] haben auf feindliche Truppen gefeuert und diesen Schaden zugefügt!</German>
         <Italian>Le difese di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hanno sparato contro le truppe nemiche e danneggiati!</Italian>
         <Spanish>Las defensas de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] han disparado contra las tropas enemigas y les dañado!</Spanish>
@@ -305,7 +305,7 @@
     <TEXT>
         <Tag>TXT_KEY_FORTDEFENSE_HIT_LAND_BAD</Tag>
         <English>[COLOR_WARNING_TEXT]Bad news, Milord! [COLOR_REVERT]The defenders of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] have fired at our troops and damaged them!</English>
-        <French>Les défenses de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ont tiré sur nos troupes et les a endommagées !</French>
+        <French>[COLOR_WARNING_TEXT]Mauvaise noouvelle, Sire! [COLOR_REVERT]Les défenses de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ont tiré sur nos troupes et les a endommagées !</French>
         <German>[COLOR_WARNING_TEXT]Schlechte Nachrichten, Milord! [COLOR_REVERT]Die Verteidiger von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] haben auf unsere Truppen gefeuert und diesen Schaden zugefügt!</German>
         <Italian>Le difese di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hanno sparato alle nostre truppe e danneggiati!</Italian>
         <Spanish>Las defensas de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] han disparado contra nuestras tropas y les dañado!</Spanish>
@@ -314,7 +314,7 @@
     <TEXT>
         <Tag>TXT_KEY_FORTDEFENSE_MISS_LAND_BAD</Tag>
         <English>[COLOR_WARNING_TEXT]Bad news, Milord! [COLOR_REVERT]Our defenders of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] have fired at enemy troops but missed them!</English>
-        <French>Les défenses de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ont tiré sur les troupes ennemies, mais elle les a manquées !</French>
+        <French>[COLOR_WARNING_TEXT]Mauvaise noouvelle, Sire! [COLOR_REVERT]Les défenses de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ont tiré sur les troupes ennemies, mais elles les ont manquées !</French>
         <German>[COLOR_WARNING_TEXT]Schlechte Nachrichten, Milord! [COLOR_REVERT]Unsere Verteidiger von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] haben auf feindliche Truppen gefeuert, diese jedoch verfehlt!</German>
         <Italian>Le difese di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hanno sparato contro le truppe nemiche ma li perdere!</Italian>
         <Spanish>Las defensas de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] han disparado contra tropas enemigas, sino que los puedes perder!</Spanish>
@@ -323,7 +323,7 @@
     <TEXT>
         <Tag>TXT_KEY_FORTDEFENSE_MISS_LAND_GOOD</Tag>
         <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]The defenders of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] fired at our troops but did no damage!</English>
-        <French>Les défenses de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ont tiré sur nos troupes, mais elle les a manquées !</French>
+        <French>[COLOR_POSITIVE_TEXT]Bonne nouvelle, Sire ! [COLOR_REVERT]Les défenses de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ont tiré sur nos troupes, mais elle les a manquées !</French>
         <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Die Verteidiger von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] feuerten auf unsere Truppen, verursachten aber keine Verluste!</German>
         <Italian>Le difese di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hanno sparato alle nostre truppe, ma li perdere!</Italian>
         <Spanish>Las defensas de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] han disparado contra nuestras tropas, sino que las pierda!</Spanish>
@@ -341,7 +341,7 @@
     <TEXT>
         <Tag>TXT_KEY_STIR_UP_FAILED</Tag>
         <English>[COLOR_WARNING_TEXT]%s1_CityName : [COLOR_REVERT]Your missionary was unable to persuade the Natives in this village to see the evil of their white neighbours.</English>
-        <French>Votre missionnaire n'a pas réussi à convaincre les autochtones de ce village de la méchanceté de leurs voisins.</French>
+        <French>[COLOR_WARNING_TEXT]%s1_CityName : [COLOR_REVERT]Votre missionnaire n'a pas réussi à convaincre les autochtones de ce village de la méchanceté de leurs voisins.</French>
         <German>[COLOR_WARNING_TEXT]%s1_CityName : [COLOR_REVERT]Euer Missionar war bei dem Versuch, die Einwohner dieses Dorfes von der Bösartigkeit ihrer weißen Nachbarn zu überzeugen, nicht erfolgreich.</German>
         <Italian>Il tuo missionaria non è riuscita quando si cerca di convincere i nativi di questo villaggio della malvagità dei loro vicini bianchi.</Italian>
         <Spanish>Su Misionero no tuvo éxito al tratar de convencer a los nativos de este pueblo de la maldad de sus vecinos blancos.</Spanish>
@@ -350,7 +350,7 @@
     <TEXT>
         <Tag>TXT_KEY_STIR_UP_SUCCESSFULL</Tag>
         <English>[COLOR_POSITIVE_TEXT]%s1_CityName : [COLOR_REVERT]Your missionary successfully convinced some young Natives in this village to raid their evil white neighbours.</English>
-        <French>Votre missionnaire a réussi à convaincre certains jeunes indigènes de ce village d'aller piller leurs mauvais voisins.</French>
+        <French>[COLOR_POSITIVE_TEXT]%s1_CityName : [COLOR_REVERT]Votre missionnaire a réussi à convaincre certains jeunes indigènes de ce village d'aller piller leurs mauvais voisins.</French>
         <German>[COLOR_POSITIVE_TEXT]%s1_CityName : [COLOR_REVERT]Euer Missionar hat die Einwohner dieses Dorfes erfolgreich zu einem Überfall auf ihre bösen weißen Nachbarn überzeugt.</German>
         <Italian>Il tuo Missionario convinto con successo alcuni giovani nativi di questo villaggio a razziare i loro vicini bianchi malvagi.</Italian>
         <Spanish>Su Misionero convencido con éxito algunos jóvenes nativos de este pueblo para atacar a sus vecinos blancos malignos.</Spanish>
@@ -359,7 +359,7 @@
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_PRISONERS</Tag>
         <English>Milord, the [COLOR_UNIT_TEXT]prisoners[COLOR_REVERT] we have bought from our King have arrived in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
-        <French>Les prisonniers que nous avons achetés à notre roi sont arrivés en %s1_city, Mylord.</French>
+        <French>Sire, les [COLOR_UNIT_TEXT]prisonniers[COLOR_REVERT] que nous avons achetés à notre roi sont arrivés à [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</French>
         <German>Milord, die [COLOR_UNIT_TEXT]Gefangenen[COLOR_REVERT], die wir von unserem König erworben haben, sind nach [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] gebracht worden.</German>
         <Italian>I prigionieri che abbiamo comprato dal nostro re sono arrivati in %s1_city, mio signore.</Italian>
         <Spanish>Los Prisioneros que hemos comprado a nuestro Rey han llegado %s1_city, Milord.</Spanish>
@@ -368,28 +368,28 @@
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_NOBLE</Tag>
         <English>Milord, the [COLOR_UNIT_TEXT]famous noble[COLOR_REVERT] has arrived in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
-        <French>Le Noble célèbre est arrivé a%s1_city, Monseigneur.</French>
+        <French>Sire, le [COLOR_UNIT_TEXT]Noble célèbre[COLOR_REVERT] est arrivé à [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</French>
         <German>Milord, der [COLOR_UNIT_TEXT]berühmte Edelmann[COLOR_REVERT] ist in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] angekommen.</German>
         <Russian>Милорд, [COLOR_UNIT_TEXT]потомственный дворянин[COLOR_REVERT] прибыл в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAINED_RANGERS</Tag>
         <English>Milord, a new unit of [COLOR_UNIT_TEXT]rangers[COLOR_REVERT] awaits your commands in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
-        <French>Seigneur, une nouvelle unité de gardes-forestiers attend vos ordres à %s1_city.</French>
+        <French>Sire, une nouvelle unité de [COLOR_UNIT_TEXT]gardes-forestiers[COLOR_REVERT] attend vos ordres à [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</French>
         <German>Milord, eine neue Einheit [COLOR_UNIT_TEXT]Ranger[COLOR_REVERT] erwartet Ihre Befehle in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</German>
         <Russian>Милорд, новый отряд [COLOR_UNIT_TEXT]рейнджеров[COLOR_REVERT] ожидает ваших приказов в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HIRED_CONQUISTADORS</Tag>
         <English>Milord, the [COLOR_UNIT_TEXT]conquistadors[COLOR_REVERT] from Europe have arrived in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
-        <French>Seigneur, les conquistadors venus d'Europe sont arrivés à %s1_city.</French>
+        <French>Sire, les [COLOR_UNIT_TEXT]conquistadors[COLOR_REVERT] venus d'Europe sont arrivés à [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</French>
         <German>Milord, die [COLOR_UNIT_TEXT]Konquistadoren[COLOR_REVERT] aus Europe sind in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ausgeschifft worden.</German>
         <Russian>Милорд, [COLOR_UNIT_TEXT]конкистадоры[COLOR_REVERT] из Европы прибыли в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_NATIVE_SLAVE</Tag>
         <English>Milord, the [COLOR_UNIT_TEXT]Native slaves[COLOR_REVERT] we bought have been delivered to [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
-        <French>Seigneur, les Esclaves indigènes que nous avons achetés sont arrivés à %s1_city.</French>
+        <French>Sire, les [COLOR_UNIT_TEXT]esclaves indigènes[COLOR_REVERT] que nous avons achetés sont arrivés à [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</French>
         <German>Milord, die [COLOR_UNIT_TEXT]Versklavten Ureinwohner[COLOR_REVERT], die wir gekauft haben, wurden nach [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] gebracht.</German>
         <Italian>I nativi schiavi che abbiamo comprato sono stati consegnati a %s1_city, Mylord.</Italian>
         <Spanish>Los esclavos nativos compramos han sido entregados a %s1_city, Mylord.</Spanish>
@@ -398,7 +398,7 @@
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_AFRICAN_SLAVE</Tag>
         <English>Milord, the [COLOR_UNIT_TEXT]slaves[COLOR_REVERT] we bought from Africa have arrived in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
-        <French>Seigneur, les esclaves que nous avons acheté en Afrique sont arrivés en %s1_city.</French>
+        <French>Sire, les [COLOR_UNIT_TEXT]esclaves[COLOR_REVERT] que nous avons acheté en Afrique sont arrivés en [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</French>
         <German>Milord, die [COLOR_UNIT_TEXT]Sklaven aus Afrika[COLOR_REVERT] wurden nach [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] geliefert.</German>
         <Italian>Gli schiavi che abbiamo comprato dall'Africa sono arrivati in %s1_city, Mylord.</Italian>
         <Spanish>Los esclavos que compramos de África han llegado %s1_city, Mylord.</Spanish>
@@ -407,14 +407,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACQUIRED_CONTINENTAL_GUARD</Tag>
         <English>Milord, with the help of our European allies, we have successfully trained a [COLOR_UNIT_TEXT]Continental Guard[COLOR_REVERT] in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
-        <French>Seigneur, avec l'aide de nos alliés européens, nous avons formé avec succès une garde continental %s1_city.</French>
+        <French>Seigneur, avec l'aide de nos alliés européens, nous avons formé avec succès une [COLOR_UNIT_TEXT]garde continentale[COLOR_REVERT] à  [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</French>
         <German>Milord, mit der Hilfe unserer europäischen Alliierten haben wir erfolgreich eine [COLOR_UNIT_TEXT]Kontinentalgarde[COLOR_REVERT] in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ausgebildet.</German>
         <Russian>Милорд, благодаря помощи наших европейских союзников в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] мы успешно обучили [COLOR_UNIT_TEXT]континентальную гвардию[COLOR_REVERT].</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACQUIRED_MORTAR</Tag>
         <English>Milord, the [COLOR_UNIT_TEXT]mortar[COLOR_REVERT] we have bought from our European allies has arrived in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
-        <French>Seigneur, le mortier que nous avons acheté à nos alliés européens sont arrivés à %s1_city.</French>
+        <French>Sire, le [COLOR_UNIT_TEXT]mortier[COLOR_REVERT] que nous avons acheté à nos alliés européens sont arrivés à [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</French>
         <German>Milord, der [COLOR_UNIT_TEXT]Mörser[COLOR_REVERT], den wir von unseren europäischen Alliierten gekauft haben, ist nach [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] geliefert worden.</German>
         <Russian>Милорд, [COLOR_UNIT_TEXT]мортира[COLOR_REVERT], купленная у наших европейских союзников, прибыла в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
     </TEXT>
