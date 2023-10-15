@@ -86412,6 +86412,11 @@
 					<YieldType>YIELD_CHEESE</YieldType>
 					<iExtraYield>1</iExtraYield>
 				</BuildingExtraYield>
+				<BuildingExtraYield>
+					<BuildingClass>BUILDINGCLASS_HORSE_MARKET</BuildingClass>
+					<YieldType>YIELD_CHEESE</YieldType>
+					<iExtraYield>1</iExtraYield>
+				</BuildingExtraYield>
 			</BuildingExtraYields>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
@@ -86481,6 +86486,11 @@
 				</BuildingExtraYield>
 				<BuildingExtraYield>
 					<BuildingClass>BUILDINGCLASS_RANCH</BuildingClass>
+					<YieldType>YIELD_MILK</YieldType>
+					<iExtraYield>1</iExtraYield>
+				</BuildingExtraYield>
+				<BuildingExtraYield>
+					<BuildingClass>BUILDINGCLASS_HORSE_MARKET</BuildingClass>
 					<YieldType>YIELD_MILK</YieldType>
 					<iExtraYield>1</iExtraYield>
 				</BuildingExtraYield>
