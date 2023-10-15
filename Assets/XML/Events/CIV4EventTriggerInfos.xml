@@ -37856,7 +37856,7 @@
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
 			<PythonCanDo/>
-			<PythonCanDoCity>CheckCheesemakerInCity</PythonCanDoCity/>
+			<PythonCanDoCity>CheckCheesemakerInCity</PythonCanDoCity>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
 		</EventTriggerInfo>
