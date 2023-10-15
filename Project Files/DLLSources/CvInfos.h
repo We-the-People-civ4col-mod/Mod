@@ -1740,17 +1740,14 @@ protected:
 
 	// TAC - Great General Names - Ray - START
 	int m_iNumGeneralNames;
-	CvString* m_paszGeneralNames;
 	// TAC - Great General Names - Ray - END
 
 	// R&R, ray, Great Admirals - START
 	int m_iNumAdmiralNames;
-	CvString* m_paszAdmiralNames;
 	// R&R, ray, Great Admirals - END
 
 	// TAC - Ship Names - Ray - Start
 	int m_iNumShipNames;
-	CvString* m_paszShipNames;
 	// TAC - Ship Names - Ray - END
 
 	int m_iNumCityNames;
@@ -1800,7 +1797,6 @@ protected:
 	bool* m_abCivilizationFreeBuildingClass;
 	bool* m_abValidProfessions;
 	bool* m_abTraits;
-	CvString* m_paszCityNames;
 
 	mutable std::vector<CvWString> m_szCachedShortDescription;
 	mutable std::vector<CvWString> m_szCachedAdjective;
