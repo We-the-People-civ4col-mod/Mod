@@ -8485,30 +8485,7 @@ void CvPlayerAI::AI_nativeYieldGift(CvUnit* pUnit)
 		return;
 	}
 
-	YieldTypes eBestYield = NO_YIELD;
-	int iBestValue = 0;
-
-	for(int i=0;i<NUM_YIELD_TYPES;i++)
-	{
-		if (pHomeCity->canProduceYield((YieldTypes)i))
-		{
-			if ((YIELD_FOOD != i) && (YIELD_HORSES != i))
-			{
-				YieldTypes eYield = (YieldTypes) i;
-				if (GC.getYieldInfo(eYield).getNativeSellPrice() > 0)
-				{
-					int iRandValue = 100 + GC.getGameINLINE().getSorenRandNum(900, "Native Yield Gift: pick yield");
-					iRandValue *= pHomeCity->getYieldStored(eYield);
-					if (iRandValue > iBestValue)
-					{
-						eBestYield = eYield;
-						iBestValue = iRandValue;
-					}
-				}
-			}
-		}
-	}
-
+	YieldTypes eBestYield = getBestYieldForTrade(*pHomeCity, "Native Yield Gift: pick yield");
 	if (eBestYield == NO_YIELD)
 	{
 		return;
@@ -8567,31 +8544,8 @@ void CvPlayerAI::AI_nativeTrade(CvUnit* pUnit)
 	{
 		return;
 	}
-
-	YieldTypes eBestYield = NO_YIELD;
-	int iBestValue = 0;
-
-	for(int i=0;i<NUM_YIELD_TYPES;i++)
-	{
-		if (pHomeCity->canProduceYield((YieldTypes)i))
-		{
-			if ((YIELD_FOOD != i) && (YIELD_HORSES != i))
-			{
-				YieldTypes eYield = (YieldTypes) i;
-				if (GC.getYieldInfo(eYield).getNativeSellPrice() > 0)
-				{
-					int iRandValue = 100 + GC.getGameINLINE().getSorenRandNum(900, "Native Yield Gift: pick yield");
-					iRandValue *= pHomeCity->getYieldStored(eYield);
-					if (iRandValue > iBestValue)
-					{
-						eBestYield = eYield;
-						iBestValue = iRandValue;
-					}
-				}
-			}
-		}
-	}
-
+	
+	YieldTypes eBestYield = getBestYieldForTrade(*pHomeCity, "Native Yield Gift: pick yield");
 	if (eBestYield == NO_YIELD)
 	{
 		return;
@@ -8659,6 +8613,47 @@ void CvPlayerAI::AI_nativeTrade(CvUnit* pUnit)
 		}
 	}
 }
+
+// Function randomly chooses a yield weighted proportionally by the amount of valid yields available in settlement
+YieldTypes CvPlayerAI::getBestYieldForTrade(const CvCity& city, const char* pszLog) const
+{
+	// Compute the total weight of all items together.
+	int totalYieldsStored = 0;
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_CARGO_YIELD_TYPES; ++eYield) 
+	{
+		if (isYieldValidForNativeTrade(eYield, city))
+		{
+			totalYieldsStored += city.getYieldStored(eYield);
+		}
+	}
+
+	// Choose a random yield with probability weighted on how much yield is stored.
+	int rand = GC.getGameINLINE().getSorenRandNum(totalYieldsStored, pszLog);
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_CARGO_YIELD_TYPES; ++eYield) 
+	{
+		if (isYieldValidForNativeTrade(eYield, city))
+		{
+			rand -= city.getYieldStored(eYield);
+			if (rand <= 0)
+			{
+				return eYield;
+			}
+		}
+	}
+
+	return NO_YIELD;
+}
+
+bool CvPlayerAI::isYieldValidForNativeTrade(YieldTypes yield, const CvCity& city) const
+{
+	return yield >= FIRST_YIELD
+		&& yield < NUM_CARGO_YIELD_TYPES
+		&& (YIELD_FOOD != yield)
+		&& (YIELD_HORSES != yield)
+		&& city.canProduceYield(yield)
+		&& GC.getYieldInfo(yield).getNativeSellPrice() > 0;
+}
+
 // R&R, ray, Natives Trading - END
 
 bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
