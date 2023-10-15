@@ -16805,7 +16805,7 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_REVOLTING_PRISONER_OF_WAR</Type>
-            <Button>,Art/colonization_atlas_units_two.dds,1,6</Button>
+            <Button>,Art/colonization_atlas_units_two.dds,3,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/PoW.dds</FullLengthIcon>
             <fScale>0.54</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
