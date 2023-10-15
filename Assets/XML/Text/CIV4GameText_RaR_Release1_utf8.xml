@@ -1101,13 +1101,13 @@
     <TEXT>
         <Tag>TXT_KEY_COMMAND_TAKE_TRAIN_HELP</Tag>
         <English>The carriage will load this unit</English>
-        <French>Le convoyeur va charger cette unité</French>
+        <French>Le convoi va prendre cette unité à bord</French>
         <German>Die Einheit wird auf Ladefläche des Fuhrwerks verladen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_TRAVEL_PLASTERED_ROAD_ONLY</Tag>
         <English>[ICON_BULLET]Requires [COLOR_WARNING_TEXT]plastered country roads[COLOR_REVERT] to travel</English>
-        <French>[ICON_BULLET][COLOR_WARNING_TEXT]Nécessite une route pavée[COLOR_REVERT] pour voyager</French>
+        <French>[ICON_BULLET]Nécessite [COLOR_WARNING_TEXT] une route pavée[COLOR_REVERT] pour voyager</French>
         <German>[ICON_BULLET]Kann nur auf [COLOR_WARNING_TEXT]gepflasterten Landstraßen[COLOR_REVERT] fahren</German>
         <Russian>[ICON_BULLET]Требует [COLOR_WARNING_TEXT]вымощенную камнем дорогу[COLOR_REVERT] для передвижения</Russian>
     </TEXT>
@@ -1198,7 +1198,7 @@
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_FORT_FEATURES</Tag>
         <English>[ICON_BULLET]Protects an area against raiding Natives, wild animals and other enemies</English>
-        <French>[ICON_BULLET]Protège une zone des raids indigènes, des animaux sauvages et d'autres ennemies</French>
+        <French>[ICON_BULLET]Protège une zone des raids indigènes, des animaux sauvages et des autres ennemis</French>
         <German>[ICON_BULLET]Schützt ein Gebiet vor Überfallen der Ureinwohner, Wilden Tiere und anderen Gegnern</German>
         <Russian>[ICON_BULLET]Позволяет защитить территорию от набегов туземцев, диких животных и других врагов.</Russian>
     </TEXT>
