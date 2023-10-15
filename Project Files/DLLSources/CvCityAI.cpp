@@ -1199,6 +1199,8 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 	{
 		if (!isWorksWater())
 		{
+			// It's tricky to evaluate the potential value of unlocked plots but let's
+			// assume that the 
 			for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 			{
 				CvPlot* pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), iI);
@@ -1206,6 +1208,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 				{
 					if (pLoopPlot->isWater() && canWork(pLoopPlot, /*bIgnoreCityWorksWaterCheck*/true))
 					{
+						// TODO: Add check for YIELD_FOOD being unlocked by the ability to work water.
 						iValue += 8 * std::max(0, pLoopPlot->getYield(YIELD_FOOD) - GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION);
 					}
 				}
@@ -1485,7 +1488,6 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 
 				if (iYieldChange != 0)
 				{
-					int iYieldChange = kBuildingInfo.getLandPlotYieldChange(i);
 					int iTempValue = 0;
 
 					int iFood = 0;
