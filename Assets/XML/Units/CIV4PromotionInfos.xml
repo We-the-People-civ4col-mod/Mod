@@ -1463,7 +1463,7 @@
                 </UnitCombat>
                 <UnitCombat>
                     <UnitCombatType>UNITCOMBAT_NAVAL_MILITARY</UnitCombatType>
-                    <bUnitCombat>1</bUnitCombat>
+                    <bUnitCombat>0</bUnitCombat>
                 </UnitCombat>
                 <UnitCombat>
                     <UnitCombatType>UNITCOMBAT_NAVAL_PIRACY</UnitCombatType>
@@ -1546,7 +1546,7 @@
                 </UnitCombat>
                 <UnitCombat>
                     <UnitCombatType>UNITCOMBAT_NAVAL_MILITARY</UnitCombatType>
-                    <bUnitCombat>1</bUnitCombat>
+                    <bUnitCombat>0</bUnitCombat>
                 </UnitCombat>
                 <UnitCombat>
                     <UnitCombatType>UNITCOMBAT_NAVAL_PIRACY</UnitCombatType>
