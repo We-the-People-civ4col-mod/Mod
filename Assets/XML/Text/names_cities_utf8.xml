@@ -1913,334 +1913,417 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_0</Tag>
 		<English>Nieuw Amsterdam</English>
+		<Russian>Нью Амстердам</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_1</Tag>
 		<English>Fort Nassau</English>
+		<Russian>Форт Нассау</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_2</Tag>
 		<English>Fort Oranje</English>
+		<Russian>Форт Оранье</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_3</Tag>
 		<English>Paramaribo</English>
+		<Russian>Парамарибо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_4</Tag>
 		<English>Rensselaerswyck</English>
+		<Russian>Ренсселерсвик</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_5</Tag>
 		<English>Hoboken</English>
+		<Russian>Хобокен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_6</Tag>
 		<English>Willemstad</English>
+		<Russian>Виллемстад</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_7</Tag>
 		<English>Mauritsstad</English>
+		<Russian>Маурицстад</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_8</Tag>
 		<English>Breuckelen</English>
+		<Russian>Брейкель</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_9</Tag>
 		<English>Philipsburg</English>
+		<Russian>Филипсбург</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_10</Tag>
 		<English>Nieuw Haarlem</English>
+		<Russian>Нью Харлем</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_11</Tag>
 		<English>Essequibo</English>
+		<Russian>Эссекибо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_12</Tag>
 		<English>Berbice</English>
+		<Russian>Бербис</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_13</Tag>
 		<English>Harsimus</English>
+		<Russian>Харсимус</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_14</Tag>
 		<English>Pavonia</English>
+		<Russian>Павония</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_15</Tag>
 		<English>Zwaanendael</English>
+		<Russian>Зваанендаль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_16</Tag>
 		<English>Communipaw</English>
+		<Russian>Коммунипау</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_17</Tag>
 		<English>Fort Huys de Goede Hoop</English>
+		<Russian>Форт Юис де Гёде Хооп</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_18</Tag>
 		<English>De Punt</English>
+		<Russian>Ди Пант</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_19</Tag>
 		<English>Vriessendael</English>
+		<Russian>Вриссендал</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_20</Tag>
 		<English>'s Gravesande</English>
+		<Russian>'с Гравензанде</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_21</Tag>
 		<English>Vlissingen</English>
+		<Russian>Флиссинген</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_22</Tag>
 		<English>Yonkers</English>
+		<Russian>Йонкерс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_23</Tag>
 		<English>Nieuw Amersfoort</English>
+		<Russian>Нью Амерсфорт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_24</Tag>
 		<English>Fort Schoonenborch</English>
+		<Russian>Форт Шуненборх</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_25</Tag>
 		<English>Fort Casimir</English>
+		<Russian>Форт Казимир</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_26</Tag>
 		<English>Midwout</English>
+		<Russian>Мидвоут</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_27</Tag>
 		<English>Nieuw Utrecht</English>
+		<Russian>Новый Утрехт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_28</Tag>
 		<English>Wiltwijk</English>
+		<Russian>Вильтвейк</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_29</Tag>
 		<English>Bergen</English>
+		<Russian>Берген</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_30</Tag>
 		<English>Boswijck</English>
+		<Russian>Босвейк</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_31</Tag>
 		<English>Oud Tappan</English>
+		<Russian>Уд Таппан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_32</Tag>
 		<English>Fort Saratoga</English>
+		<Russian>Форт Саратога</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_33</Tag>
 		<English>Fort Sint Andries</English>
+		<Russian>Форт Синт Андрис</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_34</Tag>
 		<English>Demerara</English>
+		<Russian>Демерара</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_35</Tag>
 		<English>Oranjestad</English>
+		<Russian>Ораньестад</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_36</Tag>
 		<English>Sint Maarten</English>
+		<Russian>Синт Мартен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_37</Tag>
 		<English>Sint Eustatius</English>
+		<Russian>Синт Эстатиус</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_38</Tag>
 		<English>Rustdorp</English>
+		<Russian>Рустдорп</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_39</Tag>
 		<English>Noortwijck</English>
+		<Russian>Ноортвейк</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_40</Tag>
 		<English>Lampsinsburg</English>
+		<Russian>Лампзинсбург</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_41</Tag>
 		<English>Fort Altena</English>
+		<Russian>Форт Альтена</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_42</Tag>
 		<English>Nieuw Walcheren</English>
+		<Russian>Нью Вальхерен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_43</Tag>
 		<English>Saba</English>
+		<Russian>Шеба</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_44</Tag>
 		<English>Aruba</English>
+		<Russian>Аруба</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_45</Tag>
 		<English>Roodenbergh</English>
+		<Russian>Руденберг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_46</Tag>
 		<English>Nieuw Brunswijck</English>
+		<Russian>Нью Брансвик</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_47</Tag>
 		<English>Nieuw Amstel</English>
+		<Russian>Нью Амстел</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_48</Tag>
 		<English>Middelburgh</English>
+		<Russian>Мидделбург</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_49</Tag>
 		<English>Staten Eylant</English>
+		<Russian>Статен Айленд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_50</Tag>
 		<English>Beverwijck</English>
+		<Russian>Бевервейк</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_51</Tag>
 		<English>Colen Donck</English>
+		<Russian>Колин Донк</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_52</Tag>
 		<English>Fort Sterreschans</English>
+		<Russian>Форт Стеррешан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_53</Tag>
 		<English>Heemstede</English>
+		<Russian>Хемстеде</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_54</Tag>
 		<English>Fort Wilhelmus</English>
+		<Russian>Форт Вильгельмус</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_55</Tag>
 		<English>Oude Dorpe</English>
+		<Russian>Уде Дорпе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_56</Tag>
 		<English>Vriedelandt</English>
+		<Russian>Фриделандт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_57</Tag>
 		<English>Achter Col</English>
+		<Russian>Ахтер Кол</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_58</Tag>
 		<English>Fort Beversreede</English>
+		<Russian>Форт Беверсрид</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_59</Tag>
 		<English>Roode Hoek</English>
+		<Russian>Руд Хук</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_60</Tag>
 		<English>Kievets Hoek</English>
+		<Russian>Киевец Хук</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_61</Tag>
 		<English>Fort Amsterdam</English>
+		<Russian>Форт Амстердам</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_62</Tag>
 		<English>Fort Beveren</English>
+		<Russian>Форт Беверен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_63</Tag>
 		<English>Maspat</English>
+		<Russian>Маспат</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_64</Tag>
 		<English>Stabroek</English>
+		<Russian>Стабрук</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_65</Tag>
 		<English>Fort Keulen</English>
+		<Russian>Форт Кёльн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_66</Tag>
 		<English>Jemseq</English>
+		<Russian>Джемсек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_67</Tag>
 		<English>De Bouwerij</English>
+		<Russian>Де Буверий</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_68</Tag>
 		<English>Oester Baai</English>
+		<Russian>Ойстер Бэй</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_69</Tag>
 		<English>Noten Eylant</English>
+		<Russian>Нотен Айлент</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_70</Tag>
 		<English>De Wal</English>
+		<Russian>Де Валь</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_71</Tag>
 		<English>Ter Tholen</English>
+		<Russian>Тер Толен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_72</Tag>
 		<English>Pomeroon</English>
+		<Russian>Померун</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_73</Tag>
 		<English>Peekskill</English>
+		<Russian>Пикскилл</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_74</Tag>
 		<English>Fort Bennet</English>
+		<Russian>Форт Беннет</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_75</Tag>
 		<English>Broncks</English>
+		<Russian>Бронкс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_76</Tag>
 		<English>Brouwershaven</English>
+		<Russian>Брауэрсхавен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_77</Tag>
 		<English>Nieuw Dorp</English>
+		<Russian>Нью Дорп</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_78</Tag>
 		<English>Nieuw Holland</English>
+		<Russian>Нью Холлэнд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_79</Tag>
 		<English>Santa Catharina</English>
+		<Russian>Санта Катарина</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_80</Tag>
 		<English>Nederhorst</English>
+		<Russian>Недерхорст</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_81</Tag>
 		<English>Fort Elsenburgh</English>
+		<Russian>Форт Эльсенбург</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_82</Tag>
 		<English>Naiack</English>
+		<Russian>Найак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_0</Tag>
