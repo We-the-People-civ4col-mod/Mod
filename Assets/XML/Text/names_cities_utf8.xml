@@ -2328,382 +2328,477 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_0</Tag>
 		<English>São Salvador</English>
+		<Russian>Сан Сальвадор</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_1</Tag>
 		<English>Rio de Janeiro</English>
+		<Russian>Рио де Жанейро</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_2</Tag>
 		<English>São Vicente</English>
+		<Russian>Сан Винсент</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_3</Tag>
 		<English>Vila do Espírito Santo</English>
+		<Russian>Вила ду Эспириту Санту</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_4</Tag>
 		<English>Igarassu</English>
+		<Russian>Игарассу</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_5</Tag>
 		<English>Olinda</English>
+		<Russian>Олинда</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_6</Tag>
 		<English>Vitória</English>
+		<Russian>Витория</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_7</Tag>
 		<English>Santos</English>
+		<Russian>Сантос</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_8</Tag>
 		<English>São Paulo</English>
+		<Russian>Сан Паулу</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_9</Tag>
 		<English>Fortim de São Tiago</English>
+		<Russian>Форт де Сан Тьягу</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_10</Tag>
 		<English>Santo André</English>
+		<Russian>Санту Андре</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_11</Tag>
 		<English>São Bernardo do Campo</English>
+		<Russian>Сан Бернарду ду Кампу</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_12</Tag>
 		<English>Mogi das Cruzes</English>
+		<Russian>Можи дас Крузес</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_13</Tag>
 		<English>Santa Cruz</English>
+		<Russian>Санта Круз</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_14</Tag>
 		<English>Santo Antônio de Sá</English>
+		<Russian>Санто Антониу де Са</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_15</Tag>
 		<English>São Lourenço dos Índios</English>
+		<Russian>Сан Лоуренсу дус Индиос</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_16</Tag>
 		<English>São Gonçalo</English>
+		<Russian>Сан-Гонсалу</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_17</Tag>
 		<English>João Pessoa</English>
+		<Russian>Жоау Пессоа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_18</Tag>
 		<English>Natal</English>
+		<Russian>Натал</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_19</Tag>
 		<English>São Luís</English>
+		<Russian>Сан Луис</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_20</Tag>
 		<English>Feliz Lusitânia</English>
+		<Russian>Фелис Лузитания</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_21</Tag>
 		<English>Paranaguá</English>
+		<Russian>Паранагуа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_22</Tag>
 		<English>Jacaraí</English>
+		<Russian>Жакараи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_23</Tag>
 		<English>Jundiaí</English>
+		<Russian>Жундиаи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_24</Tag>
 		<English>Santarém</English>
+		<Russian>Сантарен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_25</Tag>
 		<English>São José</English>
+		<Russian>Сан Хосе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_26</Tag>
 		<English>Laguna</English>
+		<Russian>Лагуна</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_27</Tag>
 		<English>Colónia do Sacramento</English>
+		<Russian>Колония дель Сакраменто</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_28</Tag>
 		<English>Curitíba</English>
+		<Russian>Куритиба</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_29</Tag>
 		<English>Ouro Preto</English>
+		<Russian>Ору Прету</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_30</Tag>
 		<English>Contagém</English>
+		<Russian>Контагем</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_31</Tag>
 		<English>Cuiabá</English>
+		<Russian>Куяба</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_32</Tag>
 		<English>Desterro</English>
+		<Russian>Дестерру</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_33</Tag>
 		<English>Rio Grande</English>
+		<Russian>Рио Гранде</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_34</Tag>
 		<English>Viamão</English>
+		<Russian>Виаман</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_35</Tag>
 		<English>Macapá</English>
+		<Russian>Макапа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_36</Tag>
 		<English>Gravataí</English>
+		<Russian>Граватаи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_37</Tag>
 		<English>Porto Alegre</English>
+		<Russian>Порту Алегри</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_38</Tag>
 		<English>Campinas</English>
+		<Russian>Кампинас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_39</Tag>
 		<English>Recife</English>
+		<Russian>Ресифи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_40</Tag>
 		<English>Porto Seguro</English>
+		<Russian>Порту Сегуру</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_41</Tag>
 		<English>Bahia</English>
+		<Russian>Баия</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_42</Tag>
 		<English>Ilhéus</English>
+		<Russian>Ильеус</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_43</Tag>
 		<English>Curação</English>
+		<Russian>Кюрасао</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_44</Tag>
 		<English>São Tomé</English>
+		<Russian>Сан Томас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_45</Tag>
 		<English>Santo Amaro</English>
+		<Russian>Санто Амаро</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_46</Tag>
 		<English>Santa Anna</English>
+		<Russian>Санта Анна</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_47</Tag>
 		<English>Vila Velha</English>
+		<Russian>Вила Велья</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_48</Tag>
 		<English>Goiana</English>
+		<Russian>Гойана</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_49</Tag>
 		<English>Fortaleza</English>
+		<Russian>Форталеза</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_50</Tag>
 		<English>João Pessoa</English>
+		<Russian>Жоау Пессоа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_51</Tag>
 		<English>Belém</English>
+		<Russian>Белен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_52</Tag>
 		<English>São Miguel</English>
+		<Russian>Сан Мигел</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_53</Tag>
 		<English>Oliveira</English>
+		<Russian>Оливейра</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_54</Tag>
 		<English>Maranhão</English>
+		<Russian>Мараньян</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_55</Tag>
 		<English>Caxias</English>
+		<Russian>Кашиас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_56</Tag>
 		<English>Alcântara</English>
+		<Russian>Алькантара</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_57</Tag>
 		<English>Linhares</English>
+		<Russian>Линьярес</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_58</Tag>
 		<English>Juazeiro</English>
+		<Russian>Жуазейро</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_59</Tag>
 		<English>Petropolis</English>
+		<Russian>Петрополис</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_60</Tag>
 		<English>São Felix</English>
+		<Russian>Сан Фелис</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_61</Tag>
 		<English>Cananéia</English>
+		<Russian>Кананея</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_62</Tag>
 		<English>Iguape</English>
+		<Russian>Игуапе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_63</Tag>
 		<English>Embu</English>
+		<Russian>Эмбу</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_64</Tag>
 		<English>Ipojuca</English>
+		<Russian>Ипожука</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_65</Tag>
 		<English>São Mateus</English>
+		<Russian>Сан Матеус</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_66</Tag>
 		<English>São Cristóvão</English>
+		<Russian>Сан Кристован</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_67</Tag>
 		<English>Paudalho</English>
+		<Russian>Паудальо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_68</Tag>
 		<English>Marechal Deodoro</English>
+		<Russian>Марешал Деодору</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_69</Tag>
 		<English>Penedo</English>
+		<Russian>Пенедо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_70</Tag>
 		<English>Sirinhaém</English>
+		<Russian>Сиринхем</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_71</Tag>
 		<English>Cabo Frio</English>
+		<Russian>Кабо Фрио</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_72</Tag>
 		<English>Cabo de Santo Agostinho</English>
+		<Russian>Кабо де Санто Агостиньо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_73</Tag>
 		<English>Paraty</English>
+		<Russian>Парати</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_74</Tag>
 		<English>Boqueirão</English>
+		<Russian>Бокейран</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_75</Tag>
 		<English>Cachoeira</English>
+		<Russian>Кашуэйра</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_76</Tag>
 		<English>São Borja</English>
+		<Russian>Сан Боржа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_77</Tag>
 		<English>Escada</English>
+		<Russian>Эскада</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_78</Tag>
 		<English>São Luiz Gonzaga</English>
+		<Russian>Сан Луис Гонзага</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_79</Tag>
 		<English>São Nicolau</English>
+		<Russian>Сан Николау</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_80</Tag>
 		<English>São Lourenço das Missões</English>
+		<Russian>Сан Лоуренсу дас Миссойнс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_81</Tag>
 		<English>Bom Jesus da Lapa</English>
+		<Russian>Бом Жезус да Лапа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_82</Tag>
 		<English>Assú</English>
+		<Russian>Ассу</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_83</Tag>
 		<English>Barreiras</English>
+		<Russian>Баррейрас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_84</Tag>
 		<English>São João</English>
+		<Russian>Сан Жуан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_85</Tag>
 		<English>Santo Ângelo</English>
+		<Russian>Санто Анджело</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_86</Tag>
 		<English>Antonina</English>
+		<Russian>Антонина</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_87</Tag>
 		<English>Serro</English>
+		<Russian>Серро</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_88</Tag>
 		<English>Brejo do Cruz</English>
+		<Russian>Брежо ду Круз</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_89</Tag>
 		<English>Rio de Contas</English>
+		<Russian>Рио де Контас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_90</Tag>
 		<English>Tiradentes</English>
+		<Russian>Тирадентис</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_91</Tag>
 		<English>Florianópolis</English>
+		<Russian>Флорианополис</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_92</Tag>
 		<English>Goiás</English>
+		<Russian>Гояс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_93</Tag>
 		<English>Pirenópolis</English>
+		<Russian>Пиренополис</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_CITY_94</Tag>
 		<English>Inhambupe</English>
+		<Russian>Инхамбупе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_0</Tag>
