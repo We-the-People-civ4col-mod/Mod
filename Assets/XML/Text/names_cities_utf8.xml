@@ -563,538 +563,672 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_0</Tag>
 		<English>Québec</English>
+		<Russian>Квебек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_1</Tag>
 		<English>Montréal</English>
+		<Russian>Монреаль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_2</Tag>
 		<English>Tadoussac</English>
+		<Russian>Тадуссак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_3</Tag>
 		<English>Trois-Rivières</English>
+		<Russian>Труа-Ривьер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_4</Tag>
 		<English>Port-au-Prince</English>
+		<Russian>Порт-о-Пренс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_5</Tag>
 		<English>Petit-Goâve</English>
+		<Russian>Пети-Гоав</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_6</Tag>
 		<English>Cayenne</English>
+		<Russian>Кайенна</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_7</Tag>
 		<English>Ville d'Etroit</English>
+		<Russian>Детройт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_8</Tag>
 		<English>La Nouvelle-Orléans</English>
+		<Russian>Новый Орлеан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_9</Tag>
 		<English>Fort Caroline</English>
+		<Russian>Форт Кэролайн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_10</Tag>
 		<English>Baton Rouge</English>
+		<Russian>Батон-Руж</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_11</Tag>
 		<English>Fort de Rocher</English>
+		<Russian>Форт Рок</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_12</Tag>
 		<English>Fort-Royal</English>
+		<Russian>Форт Роял</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_13</Tag>
 		<English>Fort Richelieu</English>
+		<Russian>Форт Ришелье</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_14</Tag>
 		<English>Charlesbourg</English>
+		<Russian>Шарльбур</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_15</Tag>
 		<English>Sault-Sainte-Marie</English>
+		<Russian>Су-Сент-Мари</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_16</Tag>
 		<English>Saint Ignace</English>
+		<Russian>Сейнт Игнас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_17</Tag>
 		<English>Fort Frontenac</English>
+		<Russian>Форт Фронтенак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_18</Tag>
 		<English>Duluth</English>
+		<Russian>Дулут</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_19</Tag>
 		<English>Fort Crèvecoeur</English>
+		<Russian>Форт Кревекёр</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_20</Tag>
 		<English>Pesaquid</English>
+		<Russian>Песакид</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_21</Tag>
 		<English>Fort Saint Joseph</English>
+		<Russian>Форт Сен-Джозеф</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_22</Tag>
 		<English>La Mobile</English>
+		<Russian>Мобил</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_23</Tag>
 		<English>Louisbourg</English>
+		<Russian>Луисбург</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_24</Tag>
 		<English>Port-la-Joye</English>
+		<Russian>Порт-ла-Джой</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_25</Tag>
 		<English>Fort des Miamis</English>
+		<Russian>Форт-де-Майами</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_26</Tag>
 		<English>Basse-Terre</English>
+		<Russian>Бас-Тер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_27</Tag>
 		<English>Sainte Geneviève</English>
+		<Russian>Сен-Женевьев</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_28</Tag>
 		<English>Saint Louis</English>
+		<Russian>Сен-Луис</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_29</Tag>
 		<English>Fort Maurepas</English>
+		<Russian>Форт Морепас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_30</Tag>
 		<English>Castries</English>
+		<Russian>Кастри</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_31</Tag>
 		<English>Fort Conti</English>
+		<Russian>Форт Конти</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_32</Tag>
 		<English>Cap-Français</English>
+		<Russian>Кап-Франсэ</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_33</Tag>
 		<English>Martinique</English>
+		<Russian>Мартиника</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_34</Tag>
 		<English>Fort Coligny</English>
+		<Russian>Форт Колиньи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_35</Tag>
 		<English>Plaisance</English>
+		<Russian>Плезанс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_36</Tag>
 		<English>Fort Presque Isle</English>
+		<Russian>Форт Преск-Айл</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_37</Tag>
 		<English>Biloxi</English>
+		<Russian>Билокси</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_38</Tag>
 		<English>Fort Balize</English>
+		<Russian>Форт Бализ</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_39</Tag>
 		<English>Chambly</English>
+		<Russian>Шамбли</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_40</Tag>
 		<English>Fort Rosalie</English>
+		<Russian>Форт Розали</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_41</Tag>
 		<English>Fort Toulouse</English>
+		<Russian>Форт Тулуза</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_42</Tag>
 		<English>Saint Philippe</English>
+		<Russian>Сен-Филип</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_43</Tag>
 		<English>Prairie du Rocher</English>
+		<Russian>Прери дю Роше</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_44</Tag>
 		<English>Acadie</English>
+		<Russian>Акадия</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_45</Tag>
 		<English>Fort Rouillé</English>
+		<Russian>Форт Руйе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_46</Tag>
 		<English>Saint Martin</English>
+		<Russian>Сен-Мартен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_47</Tag>
 		<English>Kaskaskia</English>
+		<Russian>Каскаския</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_48</Tag>
 		<English>Fort Dauphin</English>
+		<Russian>Форт Дофин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_49</Tag>
 		<English>Lafayette</English>
+		<Russian>Лафайет</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_50</Tag>
 		<English>Bonaire</English>
+		<Russian>Бонайре</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_51</Tag>
 		<English>Fort Rouge</English>
+		<Russian>Форт Руж</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_52</Tag>
 		<English>Saint Alexis</English>
+		<Russian>Сен-Алексис</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_53</Tag>
 		<English>Fort Orléans</English>
+		<Russian>Форт Орлеан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_54</Tag>
 		<English>Saint Croix</English>
+		<Russian>Сен-Круа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_55</Tag>
 		<English>Saint Vincent</English>
+		<Russian>Сен-Винсент</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_56</Tag>
 		<English>Fort du Quesne</English>
+		<Russian>Форт дю Кен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_57</Tag>
 		<English>Saint Thomas</English>
+		<Russian>Сен-Томас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_58</Tag>
 		<English>Montserrat</English>
+		<Russian>Монтсеррат</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_59</Tag>
 		<English>Fort Niagara</English>
+		<Russian>Форт Ниагара</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_60</Tag>
 		<English>Miquelon</English>
+		<Russian>Микелон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_61</Tag>
 		<English>Fort Liberté</English>
+		<Russian>Форт Либерти</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_62</Tag>
 		<English>Carénage</English>
+		<Russian>Карнейдж</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_63</Tag>
 		<English>Vieux Fort</English>
+		<Russian>Вьё-Фор</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_64</Tag>
 		<English>Fort Détroit</English>
+		<Russian>Форт Детройт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_65</Tag>
 		<English>Port-de-Paix</English>
+		<Russian>Порт-де-Пе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_66</Tag>
 		<English>Cap-Haïtien</English>
+		<Russian>Кап-Аитьен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_67</Tag>
 		<English>Fort Saint-Michel</English>
+		<Russian>Форт Сен-Мишель</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_68</Tag>
 		<English>Marigot</English>
+		<Russian>Мариго</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_69</Tag>
 		<English>Fort Prud'homme</English>
+		<Russian>Форт Прюдомм</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_70</Tag>
 		<English>Saint Marc</English>
+		<Russian>Сен-Марк</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_71</Tag>
 		<English>Rimouski</English>
+		<Russian>Римуски</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_72</Tag>
 		<English>Pointe-Sainte-Anne</English>
+		<Russian>Пуэнт-Сен-Анн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_73</Tag>
 		<English>Fort Pontchartain</English>
+		<Russian>Форт Пончартрейн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_74</Tag>
 		<English>Vincennes</English>
+		<Russian>Венсен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_75</Tag>
 		<English>Pointe-à-Pitre</English>
+		<Russian>Пуэнт-а-Питр</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_76</Tag>
 		<English>Fort Bourbon</English>
+		<Russian>Форт Бурбон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_77</Tag>
 		<English>Florissant</English>
+		<Russian>Флориссент</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_78</Tag>
 		<English>Beauport</English>
+		<Russian>Бопор</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_79</Tag>
 		<English>Fort Saint-Pierre</English>
+		<Russian>Форт Сен-Пьер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_80</Tag>
 		<English>Sillery</English>
+		<Russian>Силлери</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_81</Tag>
 		<English>Fort Brest</English>
+		<Russian>Форт Брест</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_82</Tag>
 		<English>Fort Michillamakinac</English>
+		<Russian>Форт Мичилимакинак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_83</Tag>
 		<English>Sainte Foy</English>
+		<Russian>Сен-Фуа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_84</Tag>
 		<English>Sorel</English>
+		<Russian>Сорель</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_85</Tag>
 		<English>Fort Beauharnois</English>
+		<Russian>Форт Богарнуа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_86</Tag>
 		<English>Château-Richer</English>
+		<Russian>Шато-Рише</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_87</Tag>
 		<English>La Prairie</English>
+		<Russian>Ла Прери</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_88</Tag>
 		<English>Fort La Reine</English>
+		<Russian>Форт Ла Рейн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_89</Tag>
 		<English>Fort des Moines</English>
+		<Russian>Форт де Монкс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_90</Tag>
 		<English>Saint Ours</English>
+		<Russian>Сен-Ур</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_91</Tag>
 		<English>Fort Sandouski</English>
+		<Russian>Форт Сандаски</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_92</Tag>
 		<English>Cap de la Madeleine</English>
+		<Russian>Кап де ла Мадлен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_93</Tag>
 		<English>Fort de Chartres</English>
+		<Russian>Форт де Шартр</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_94</Tag>
 		<English>Sainte Anne de Beaupré</English>
+		<Russian>Сент Анн де Бопре</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_95</Tag>
 		<English>Cap-Saint-Ignace</English>
+		<Russian>Кап-Сен-Игнас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_96</Tag>
 		<English>Fort La Baye</English>
+		<Russian>Форт Ла Бай</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_97</Tag>
 		<English>Longueuil</English>
+		<Russian>Лонгёй</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_98</Tag>
 		<English>Fort Saint-Charles</English>
+		<Russian>Форт Сен-Чарльз</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_99</Tag>
 		<English>L'Ange-Gardien</English>
+		<Russian>Л'Анж-Гардьен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_100</Tag>
 		<English>Boucherville</English>
+		<Russian>Бушервиль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_101</Tag>
 		<English>Fort Kaministiquia</English>
+		<Russian>Форт Каминистикия</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_102</Tag>
 		<English>Saint Nicolas</English>
+		<Russian>Сен-Николас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_103</Tag>
 		<English>Fort Roquelai</English>
+		<Russian>Форт Рокелаи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_104</Tag>
 		<English>Neuville</English>
+		<Russian>Невиль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_105</Tag>
 		<English>Repentigny</English>
+		<Russian>Репантиньи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_106</Tag>
 		<English>Fort Canada</English>
+		<Russian>Форт Канада</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_107</Tag>
 		<English>Varennes</English>
+		<Russian>Варенн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_108</Tag>
 		<English>Fort-de-France</English>
+		<Russian>Фор-де-Франс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_109</Tag>
 		<English>Verchères</English>
+		<Russian>Вершер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_110</Tag>
 		<English>L'Ancienne-Lorette</English>
+		<Russian>Л'Ансьен-Лоретт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_111</Tag>
 		<English>Pointe-aux-Trembles</English>
+		<Russian>Пуэнт-о-Трембль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_112</Tag>
 		<English>Fort l'Aguille</English>
+		<Russian>Форт Эгюий</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_113</Tag>
 		<English>Fort Saint-Antoine</English>
+		<Russian>Форт Сен-Антуан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_114</Tag>
 		<English>Lachine</English>
+		<Russian>Лашин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_115</Tag>
 		<English>Lavaltrie</English>
+		<Russian>Лавальтри</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_116</Tag>
 		<English>Fort François Xavier</English>
+		<Russian>Форт Франсуа Ксавье</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_117</Tag>
 		<English>Contrecoeur</English>
+		<Russian>Контрекёр</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_118</Tag>
 		<English>Loretteville</English>
+		<Russian>Лоретвилл</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_119</Tag>
 		<English>La Pocatière</English>
+		<Russian>Ла Покатьер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_120</Tag>
 		<English>Montmagny</English>
+		<Russian>Монманьи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_121</Tag>
 		<English>Lévis</English>
+		<Russian>Леви</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_122</Tag>
 		<English>L'Islet</English>
+		<Russian>Л'Айлет</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_123</Tag>
 		<English>Saint Augustin de Desmaures</English>
+		<Russian>Сен Огюстен де Демор</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_124</Tag>
 		<English>Fort Saint-Joseph</English>
+		<Russian>Форт Сен-Жозеф</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_125</Tag>
 		<English>Baie-Saint-Paul</English>
+		<Russian>Бэ-Сен-Поль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_126</Tag>
 		<English>Fort Chicago</English>
+		<Russian>Форт Чикаго</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_127</Tag>
 		<English>Berthierville</English>
+		<Russian>Бертьевилль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_128</Tag>
 		<English>Saint François</English>
+		<Russian>Сен-Франсуа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_129</Tag>
 		<English>Fort Conde</English>
+		<Russian>Форт Конде</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_130</Tag>
 		<English>Lachenaie</English>
+		<Russian>Лашене</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_131</Tag>
 		<English>Fort Pensacola</English>
+		<Russian>Форт Пенсакола</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_132</Tag>
 		<English>Rivière-du-Loup</English>
+		<Russian>Ривьер-дю-Лу</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_133</Tag>
 		<English>Bécancour</English>
+		<Russian>Беканкур</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_0</Tag>
