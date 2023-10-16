@@ -2803,182 +2803,227 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_0</Tag>
 		<English>Trankebar</English>
+		<Russian>Транкебар</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_1</Tag>
 		<English>Frederiksberg</English>
+		<Russian>Фредериксберг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_2</Tag>
 		<English>Fort Christiansborg</English>
+		<Russian>Форт Кристиансборг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_3</Tag>
 		<English>Fort Christian</English>
+		<Russian>Форт Кристиан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_4</Tag>
 		<English>Tap Hus</English>
+		<Russian>Тап Хус</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_5</Tag>
 		<English>Skytsborg</English>
+		<Russian>Скитсборг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_6</Tag>
 		<English>Godthåb</English>
+		<Russian>Готхоб</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_7</Tag>
 		<English>Fort Frederiksborg</English>
+		<Russian>Форт Фредериксборг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_8</Tag>
 		<English>Fredriksted</English>
+		<Russian>Фредрикстед</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_9</Tag>
 		<English>Christianshåb</English>
+		<Russian>Кристиансхоб</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_10</Tag>
 		<English>Fort Christiansværn</English>
+		<Russian>Форт Кристиансверн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_11</Tag>
 		<English>Jakobshavn</English>
+		<Russian>Якобсхавн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_12</Tag>
 		<English>Frederikshåb</English>
+		<Russian>Фредериксхоб</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_13</Tag>
 		<English>Fort Fredensborg</English>
+		<Russian>Форт Фреденсборг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_14</Tag>
 		<English>Fort Kongensten</English>
+		<Russian>Форт Конгенстен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_15</Tag>
 		<English>Achne</English>
+		<Russian>Акне</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_16</Tag>
 		<English>Pirapur</English>
+		<Russian>Пирапур</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_17</Tag>
 		<English>Sukkertoppen</English>
+		<Russian>Суккертоппен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_18</Tag>
 		<English>Fort Frederik</English>
+		<Russian>Форт Фредерик</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_19</Tag>
 		<English>Egedesminde</English>
+		<Russian>Эгедесминде</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_20</Tag>
 		<English>Håb</English>
+		<Russian>Хоб</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_21</Tag>
 		<English>Neu-Herrnhut</English>
+		<Russian>Ной-Херрнхут</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_22</Tag>
 		<English>Claushavn</English>
+		<Russian>Клаусхавн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_23</Tag>
 		<English>Ritenbenck</English>
+		<Russian>Ритенбенк</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_24</Tag>
 		<English>Holsteinsborg</English>
+		<Russian>Гольштейнсборг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_25</Tag>
 		<English>Godhavn</English>
+		<Russian>Годхавн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_26</Tag>
 		<English>Julianehåb</English>
+		<Russian>Джулианхоб</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_27</Tag>
 		<English>Sankt Jan</English>
+		<Russian>Санкт Йен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_28</Tag>
 		<English>Upernavik</English>
+		<Russian>Упернавик</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_29</Tag>
 		<English>Nennortalik</English>
+		<Russian>Нанорталик</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_30</Tag>
 		<English>Ammassalik</English>
+		<Russian>Аммассалик</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_31</Tag>
 		<English>Sankt Croix</English>
+		<Russian>Санкт Круа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_32</Tag>
 		<English>Amalienborg</English>
+		<Russian>Амалиенборг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_33</Tag>
 		<English>Christiansted</English>
+		<Russian>Кристианстед</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_34</Tag>
 		<English>Søndre Strømfjord</English>
+		<Russian>Сёндре Стрёмфьорд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_35</Tag>
 		<English>Scoresbysund</English>
+		<Russian>Скорсбисунд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_36</Tag>
 		<English>Thule</English>
+		<Russian>Туле</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_37</Tag>
 		<English>Daneborg</English>
+		<Russian>Данеборг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_38</Tag>
 		<English>Savissivik</English>
+		<Russian>Сависсивик</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_39</Tag>
 		<English>Motzfeldt Sø</English>
+		<Russian>Мотсфельд Зю</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_40</Tag>
 		<English>Kulusuk</English>
+		<Russian>Кулусук</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_41</Tag>
 		<English>Danmark Havn</English>
+		<Russian>Денмарк Хавн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_42</Tag>
 		<English>Onarfok</English>
+		<Russian>Онарфок</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_43</Tag>
 		<English>Røkerne</English>
+		<Russian>Рёкене</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_CITY_44</Tag>
 		<English>Hvudserk</English>
+		<Russian>Хвитсерк</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_0</Tag>
