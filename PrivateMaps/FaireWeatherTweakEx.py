@@ -4856,97 +4856,9 @@ def addLakes():
 
         
 def addFeatures():
-    NiTextOut("Generating Features  ...")
-    print "Adding Features"
-    gc = CyGlobalContext()
-    mmap = gc.getMap()
-    featureIce = gc.getInfoTypeForString("FEATURE_ICE")
-    featureJungle = gc.getInfoTypeForString("FEATURE_JUNGLE")
-    featureForest = gc.getInfoTypeForString("FEATURE_FOREST")
-    featureForestEvergreen = gc.getInfoTypeForString("FEATURE_FOREST_EVERGREEN")
-    featureForestTundra = gc.getInfoTypeForString("FEATURE_FOREST_TUNDRA")
-    featureLightForest = gc.getInfoTypeForString("FEATURE_LIGHT_FOREST")
-    featureVolcano = gc.getInfoTypeForString("FEATURE_VOLCANO")
-    featureRiverFord = gc.getInfoTypeForString("FEATURE_RIVER_FORD")
-  
-    FORESTLEAFY = 0
-    FORESTEVERGREEN = 1
-    FORESTSNOWY = 2
-    #Ice must be created later because it is overwritten by the addEurope
-    #function that is not exposed to python.
-##    iceChance = 1.0
-##    for y in range(4):
-##        for x in range(mc.width):
-##            plot = mmap.plot(x,y)
-##            if plot != 0 and plot.isWater() == True and PRand.random() < iceChance:
-##                plot.setFeatureType(featureIce,0)
-##        iceChance *= .66
-##    iceChance = 1.0
-##    for y in range(mc.height - 1,mc.height - 5,-1):
-##        for x in range(mc.width):
-##            plot = mmap.plot(x,y)
-##            if plot != 0 and plot.isWater() == True and PRand.random() < iceChance:
-##                plot.setFeatureType(featureIce,0)
-##        iceChance *= .66
-    #Now plant forest or jungle
-##    PrintTempMap(tm,tm.tempMap)
-##    PrintRainMap(rm,rm.rainMap,False)
-    ## R&R, ray, corrected maps to generate Savannah plains
-    terrainSavannah = gc.getInfoTypeForString("TERRAIN_SAVANNAH")
-    for y in range(mc.height):
-        for x in range(mc.width):
-            i = GetIndex(x,y)
-            plot = mmap.plot(x,y)
-            if sm.terrainMap[i] == mc.LARGE_RIVER:
-                if PRand.random() < mc.riverFordProbability:
-                    plot.setFeatureType(featureRiverFord,0)
-            #forest and jungle
-            if plot.isWater() == False and sm.terrainMap[i] != mc.DESERT and\
-            plot.isPeak() == False:
-                if sm.rainFallMap[i] > sm.plainsThreshold*1.5:#jungle
-                    if sm.averageTempMap[i] > mc.JungleTemp:
-                        if sm.terrainMap[i] == mc.PRAIRIE:
-                            plot.setFeatureType(featureForest,0)
-                        ## R&R, ray, corrected maps to generate Savannah plains
-                        ## agnat86, generates also unvegetated Savannah
-                        elif PRand.random() <= mc.chanceForTreelessSavannah:
-                            plot.setFeatureType(FeatureTypes.NO_FEATURE,0)
-                            if sm.terrainMap[i] == mc.GRASS:
-                                plot.setTerrainType(terrainSavannah,True,True)
-                        elif PRand.random() <= 0.6:
-                            plot.setFeatureType(featureJungle,0)
-                            if sm.terrainMap[i] == mc.GRASS:
-                                plot.setTerrainType(terrainSavannah,True,True)
-                        elif sm.terrainMap[i] == mc.MARSH:
-                            plot.setFeatureType(featureJungle,0)
-                        else:
-                           plot.setFeatureType(featureForest,0)
-                    elif sm.averageTempMap[i] > mc.ForestTemp:
-                        plot.setFeatureType(featureForest,0)
-                    elif sm.averageTempMap[i] > mc.TundraTemp:
-                        plot.setFeatureType(featureForestEvergreen,0)
-                    elif sm.averageTempMap[i] > mc.SnowTemp:
-                        plot.setFeatureType(featureForestTundra,0)
-                elif sm.rainFallMap[i] > sm.desertThreshold:#forest
-                    if sm.rainFallMap[i] > PRand.random() * sm.plainsThreshold * 1.5:
-                        if sm.averageTempMap[i] > mc.ForestTemp:
-                           plot.setFeatureType(featureForest,0)
-                        elif sm.averageTempMap[i] > mc.TundraTemp:
-                            plot.setFeatureType(featureForestEvergreen,0)
-                        elif sm.averageTempMap[i] > mc.SnowTemp * 0.8:
-                            plot.setFeatureType(featureForestTundra,0)
 
-            if plot.isPeak() == False and plot.isWater() == False:
-                if sm.terrainMap[i] == mc.PRAIRIE and PRand.random() < mc.chanceForLightForest:
-                    plot.setFeatureType(featureLightForest,0)
-                if sm.terrainMap[i] == mc.MARSH and PRand.random() < mc.chanceForTreelessMarsh:
-                    plot.setFeatureType(FeatureTypes.NO_FEATURE,0)
-# neue Terrain start
-            if plot.isPeak():
-                if PRand.random() < mc.volcanoProbability:
-                    plot.setFeatureType(featureVolcano,0)
-# neue Terrain ende
-                
+## nothing should be done here anymore, because DLL is used instead
+## the calls are here: def afterGeneration():                
     return
 
 def europeMatch(x,y):
