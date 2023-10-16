@@ -477,6 +477,11 @@
             <DefaultUnit>UNIT_EXPERT_TRADER</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_SEASONED_TRADER</Type>
+            <Description>TXT_KEY_UNITCLASS_SEASONED_TRADER</Description>
+            <DefaultUnit>UNIT_SEASONED_TRADER</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_FAILED_TRADER</Type>
             <Description>TXT_KEY_UNITCLASS_FAILED_TRADER</Description>
             <DefaultUnit>UNIT_FAILED_TRADER</DefaultUnit>

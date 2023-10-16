@@ -2784,4 +2784,19 @@
         <German>In einer Eurer Kolonien stagniert die Käseproduktion.</German>
         <Russian>В одной из ваших колоний производство сыра находится в стагнации.</Russian>
     </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_MEETING_1</Tag>
+        <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] the friendship was celebrated with a great festivity and future trade was promised.</English>
+        <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] wurde die Freundschaft mit einem großen Palaver gefeiert und zukünftiger Handel beschlossen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_MEETING_2</Tag>
+        <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] native people scalped and murdered local traders.</English>
+        <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben die Ureinwohner lokale Händler skalpiert und ermordet.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_MEETING_3</Tag>
+        <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a friendly meeting between settlers and native people took place.</English>
+        <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] fand ein freundschaftliches Treffen zwischen Siedlern und Ureinwohnern statt.</German>
+    </TEXT>
 </Civ4GameText>

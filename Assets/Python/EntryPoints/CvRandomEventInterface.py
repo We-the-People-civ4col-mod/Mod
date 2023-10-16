@@ -2940,6 +2940,65 @@ def getHelpHorseDeal1(argsList):
 		szHelp = localText.getText("TXT_KEY_EVENT_YIELD_LOOSE", (quantity,  gc.getYieldInfo(iYield).getChar(), city.getNameKey()))
 	return szHelp
 
+######## Seasoned Trader Horse Gift and Event Help ###########
+
+def canTriggerHorseGift(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	if player.isNone() :
+		return false
+	if not player.isPlayable():
+		return false
+	if city.isNone():
+		return false
+	# Read Parameter 1 from the first event and check if enough yield is stored in city
+	eEvent1 = gc.getInfoTypeForString("EVENT_SEASONED_TRADER_MEETING_1")
+	event1 = gc.getEventInfo(eEvent1)
+	iYield = gc.getInfoTypeForString("YIELD_HORSES")
+	quantity = event1.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity*2 :
+		return false
+	return true
+
+def applyHorseGift1(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	iYield = gc.getInfoTypeForString("YIELD_HORSES")
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity :
+		return
+	city.changeYieldStored(iYield, quantity)
+
+def getHelpHorseGift1(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	iYield = gc.getInfoTypeForString("YIELD_HORSES")
+	szHelp = ""
+
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	if event.getGenericParameter(1) <> 0 :
+		szHelp = localText.getText("TXT_KEY_EVENT_YIELD_LOOSE", (quantity,  gc.getYieldInfo(iYield).getChar(), city.getNameKey()))
+	return szHelp
+
+
+def getHelpSeasonedTraderNo(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_SEASONED_TRADER_MEETING_HELP", ())
+	return szHelp
+
+
 ######## Wild Animal ###########
 
 def canApplyWildAnimal1(argsList):

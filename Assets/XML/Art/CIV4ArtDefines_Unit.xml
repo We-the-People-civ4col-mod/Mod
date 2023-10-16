@@ -1334,6 +1334,40 @@
             </AudioRunSounds>
         </UnitArtInfo>
         <UnitArtInfo>
+            <Type>ART_DEF_UNIT_SEASONED_TRADER</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,5,6</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/seasoned_trader.dds</FullLengthIcon>
+            <fScale>0.49</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Settler/Seasoned_Trader/seasoned_trader/profession_trader.nif</NIF>
+            <KFM>Art/Units/Settler/profession_trader/profession_trader.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_SEASONED_TRADER_MOUNTED</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,4,6</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/seasoned_trader_mounted.dds</FullLengthIcon>
+            <fScale>0.48</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Settler/Seasoned_Trader/seasoned_trader_mounted/profession_trader_mounted.nif</NIF>
+            <KFM>Art/Units/Settler/Seasoned_Trader/seasoned_trader_mounted/profession_trader_mounted.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_FAILED_TRADER</Type>
             <Button>,Art/colonization_atlas_units_two.dds,8,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Failed_trader.dds</FullLengthIcon>

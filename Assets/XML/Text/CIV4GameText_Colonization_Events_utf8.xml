@@ -9750,4 +9750,39 @@
         <German>Was soll denn der Quatsch. Muss ich mich jetzt auch noch um sowas kümmern? Er soll selber sehen wie er klarkommt. Was wir brauchen ist mehr Tabak, Whiskey und Fleisch.</German>
         <Russian>Что за ерунда? Почему я должен заботиться о такой ерунде? А вот что нам сейчас действительно нужно, так это больше табака, виски и мяса.</Russian>
     </TEXT>
+	
+
+
+
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_SEASONED_TRADER_MEETING</Tag>
+        <English>Merchants and natives hold a great festivity and rendezvous for friendship and trade in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
+        <German>Händler und Ureinwohner veranstalten in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ein großes Palaver und Rendezvous für Freundschaft und Handel.</German>
+    </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_MEETING</Tag>
+        <English>Milord, many merchants, trappers and natives have gathered in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] to exchange goods, to make friendly bonds and to feast. It goes wild with these rough fellows and the natives.</English>
+         <German>Milord, viele Händler, Trapper und Ureinwohner sind in in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] zusammengekommen um Waren auszutauschen, freundschaftliche Bande zu knüpfen und um zu feiern. Es geht hoch her bei diesen rauen Gesellen und den Wilden.</German>
+     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_TRADER_MEETING_1</Tag>
+        <English>That is very welcome. Let them feast until they drop. We will bear the costs of the festivity and promise the Indians new, profitable trade. We need to send out new traders on short notice.</English>
+        <German>Das ist sehr zu begrüßen. Sollen sie ruhig feiern bis zum Umfallen. Wir übernehmen die Kosten für das Fest und versprechen den Indianern neuen, ertragreichen Handel. Wir müssen dann bald neue Händler aussenden. Wir sollten auch ein paar indianische Scouts anwerben.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_TRADER_MEETING_2</Tag>
+        <English>Go ahead and get the indians drunk. Then steal their goods, jewelry and women and send them back to where they came from.</English>
+        <German>Macht die Wilden ordentlich besoffen. Danach stehlt ihnen ihre Waren, den Schmuck und die Frauen und schickt sie hin wo sie hergekommen sind.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_TRADER_MEETING_3</Tag>
+        <English>Yes, well, ...agreed. But I do not trust the peace. Let's share some of the costs and donate them a few horses. When the indians leave, send scouts after them to explore their villages.</English>
+        <German>Ja, gut,... einverstanden. Ich traue dem Frieden aber nicht. Beteiligen wir uns mit einem Teil der Kosten und schenken ihnen ein paar Pferde. Wenn die Wilden wieder abziehen, schickt Ihnen Kundschafter hinterher, um ihre Dörfer zu erkunden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_TRADER_MEETING_HELP</Tag>
+        <English>[ICON_BULLET]The natives are furious and scalp some trader.</English>
+        <German>[ICON_BULLET]Die Ureinwohner sind wütend und skalpieren einige Händler.</German>
+    </TEXT>
+
 </Civ4GameText>
