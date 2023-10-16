@@ -3028,262 +3028,327 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_0</Tag>
 		<English>Fort Christina</English>
+		<Russian>Форт Кристина</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_1</Tag>
 		<English>Nya Stockholm</English>
+		<Russian>Ная Стакхолм</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_2</Tag>
 		<English>Nya Göteborg</English>
+		<Russian>Ная Гетеборг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_3</Tag>
 		<English>Fort Trefaldighet</English>
+		<Russian>Форт Трефальдигхет</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_4</Tag>
 		<English>Nya Älfsborg</English>
+		<Russian>Ная Эльфсборг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_5</Tag>
 		<English>Sveaborg</English>
+		<Russian>Свеаборг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_6</Tag>
 		<English>Uppland</English>
+		<Russian>Уппланд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_7</Tag>
 		<English>Minquas</English>
+		<Russian>Минкуас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_8</Tag>
 		<English>Tenakonk</English>
+		<Russian>Тенаконк</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_9</Tag>
 		<English>Provins</English>
+		<Russian>Провен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_10</Tag>
 		<English>Printztorp</English>
+		<Russian>Принцторп</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_11</Tag>
 		<English>Finlandia</English>
+		<Russian>Финляндия</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_12</Tag>
 		<English>Nya Korsholm</English>
+		<Russian>Ная Корсхольм</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_13</Tag>
 		<English>Nya Vaasa</English>
+		<Russian>Ная Вааса</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_14</Tag>
 		<English>Fort Mylndal</English>
+		<Russian>Форт Милндал</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_15</Tag>
 		<English>Torne</English>
+		<Russian>Турнэ</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_16</Tag>
 		<English>Fort Nassau</English>
+		<Russian>Форт Нассау</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_17</Tag>
 		<English>Fort Casimir</English>
+		<Russian>Форт Казимир</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_18</Tag>
 		<English>Sidoland</English>
+		<Russian>Сидоленд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_19</Tag>
 		<English>Ammansland</English>
+		<Russian>Аммансланд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_20</Tag>
 		<English>Fort Mecoponacka</English>
+		<Russian>Форт Мекопонака</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_21</Tag>
 		<English>Fort William</English>
+		<Russian>Форт Уильям</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_22</Tag>
 		<English>Fort Batenstein</English>
+		<Russian>Форт Батенштейн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_23</Tag>
 		<English>Christiansborg</English>
+		<Russian>Кристиансборг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_24</Tag>
 		<English>Fort Witsen</English>
+		<Russian>Форт Витсен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_25</Tag>
 		<English>Fort Apollonia</English>
+		<Russian>Форт Аполлония</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_26</Tag>
 		<English>Strandviken</English>
+		<Russian>Страндвикен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_27</Tag>
 		<English>Timmerön</English>
+		<Russian>Тиммерён</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_28</Tag>
 		<English>Carolusborg</English>
+		<Russian>Каролусборг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_29</Tag>
 		<English>Gemoree Faktori</English>
+		<Russian>Жемори Фактори</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_30</Tag>
 		<English>Accara Faktori</English>
+		<Russian>Аккара Фактори</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_31</Tag>
 		<English>Saint-Bartholemy</English>
+		<Russian>Сен-Бартелеми</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_32</Tag>
 		<English>Guadeloupe</English>
+		<Russian>Гваделупа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_33</Tag>
 		<English>Fort Frederiksborg</English>
+		<Russian>Форт Фредериксборг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_34</Tag>
 		<English>Tequirassy</English>
+		<Russian>Текираси</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_35</Tag>
 		<English>Kingsessing</English>
+		<Russian>Кингсессинг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_36</Tag>
 		<English>Mölndal</English>
+		<Russian>Мёльндаль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_37</Tag>
 		<English>Översidolandet</English>
+		<Russian>Ёверсидоландет</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_38</Tag>
 		<English>Gustavia</English>
+		<Russian>Густавия</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_39</Tag>
 		<English>Lillefolls</English>
+		<Russian>Лиллефолль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_40</Tag>
 		<English>Sköldpadde Kill</English>
+		<Russian>Скёльпадда Килль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_41</Tag>
 		<English>Druweeÿland</English>
+		<Russian>Друвиленд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_42</Tag>
 		<English>Aronaneck</English>
+		<Russian>Аронанек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_43</Tag>
 		<English>Manaiping</English>
+		<Russian>Манайпинг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_44</Tag>
 		<English>Chamassungh</English>
+		<Russian>Чамассунг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_45</Tag>
 		<English>Marikens Hook</English>
+		<Russian>Марикенс Хук</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_46</Tag>
 		<English>Mantes Kill</English>
+		<Russian>Мантес Килль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_47</Tag>
 		<English>Sassaekon</English>
+		<Russian>Сассаеко</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_48</Tag>
 		<English>Rode Udden</English>
+		<Russian>Роде Удден</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_49</Tag>
 		<English>Fort Elsingborg</English>
+		<Russian>Форт Хельсингборг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_50</Tag>
 		<English>Christinehamn</English>
+		<Russian>Кристинехамн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_51</Tag>
 		<English>Fort Korsholra</English>
+		<Russian>Форт Коршолра</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_52</Tag>
 		<English>Henlopen</English>
+		<Russian>Хенлопен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_53</Tag>
 		<English>Tinicum</English>
+		<Russian>Тиникум</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_54</Tag>
 		<English>Darby</English>
+		<Russian>Дарби</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_55</Tag>
 		<English>Moyamensing</English>
+		<Russian>Мояменсинг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_56</Tag>
 		<English>Nitapkung</English>
+		<Russian>Нитапкунг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_57</Tag>
 		<English>Wicaco</English>
+		<Russian>Викаку</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_58</Tag>
 		<English>Shackamaxon</English>
+		<Russian>Шакамакс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_59</Tag>
 		<English>Mill Dorp</English>
+		<Russian>Милл Дорп</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_60</Tag>
 		<English>Swanwyck</English>
+		<Russian>Суонвик</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_61</Tag>
 		<English>Gripsholm</English>
+		<Russian>Грипсхольм</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_62</Tag>
 		<English>Götepori</English>
+		<Russian>Гётепори</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_63</Tag>
 		<English>Prinzinhovi</English>
+		<Russian>Прицинхови</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_CITY_64</Tag>
 		<English>Räsälä</English>
+		<Russian>Расала</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_0</Tag>
