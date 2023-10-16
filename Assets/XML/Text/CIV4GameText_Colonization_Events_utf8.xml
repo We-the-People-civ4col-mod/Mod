@@ -9750,10 +9750,6 @@
         <German>Was soll denn der Quatsch. Muss ich mich jetzt auch noch um sowas kümmern? Er soll selber sehen wie er klarkommt. Was wir brauchen ist mehr Tabak, Whiskey und Fleisch.</German>
         <Russian>Что за ерунда? Почему я должен заботиться о такой ерунде? А вот что нам сейчас действительно нужно, так это больше табака, виски и мяса.</Russian>
     </TEXT>
-	
-
-
-
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SEASONED_TRADER_MEETING</Tag>
         <English>Merchants and natives hold a great festivity and rendezvous for friendship and trade in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
@@ -9784,5 +9780,4 @@
         <English>[ICON_BULLET]The natives are furious and scalp some trader.</English>
         <German>[ICON_BULLET]Die Ureinwohner sind wütend und skalpieren einige Händler.</German>
     </TEXT>
-
 </Civ4GameText>
