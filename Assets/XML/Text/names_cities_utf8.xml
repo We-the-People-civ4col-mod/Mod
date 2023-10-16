@@ -613,17 +613,17 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_10</Tag>
 		<English>Baton Rouge</English>
-		<Russian>Батон-Руж</Russian>
+		<Russian>Батон Руж</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_11</Tag>
 		<English>Fort de Rocher</English>
-		<Russian>Форт Рок</Russian>
+		<Russian>Форт де Роше</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_12</Tag>
 		<English>Fort-Royal</English>
-		<Russian>Форт Роял</Russian>
+		<Russian>Форт-Роял</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_13</Tag>
@@ -668,12 +668,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_21</Tag>
 		<English>Fort Saint Joseph</English>
-		<Russian>Форт Сен-Джозеф</Russian>
+		<Russian>Форт Сен Джозеф</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_22</Tag>
 		<English>La Mobile</English>
-		<Russian>Мобил</Russian>
+		<Russian>Ла Мобил</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_23</Tag>
@@ -688,7 +688,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_25</Tag>
 		<English>Fort des Miamis</English>
-		<Russian>Форт-де-Майами</Russian>
+		<Russian>Форт де Майами</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_26</Tag>
@@ -698,12 +698,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_27</Tag>
 		<English>Sainte Geneviève</English>
-		<Russian>Сен-Женевьев</Russian>
+		<Russian>Сен Женевьев</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_28</Tag>
 		<English>Saint Louis</English>
-		<Russian>Сен-Луис</Russian>
+		<Russian>Сен Луис</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_29</Tag>
@@ -743,7 +743,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_36</Tag>
 		<English>Fort Presque Isle</English>
-		<Russian>Форт Преск-Айл</Russian>
+		<Russian>Форт Преск Айл</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_37</Tag>
@@ -773,7 +773,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_42</Tag>
 		<English>Saint Philippe</English>
-		<Russian>Сен-Филип</Russian>
+		<Russian>Сен Филип</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_43</Tag>
@@ -793,7 +793,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_46</Tag>
 		<English>Saint Martin</English>
-		<Russian>Сен-Мартен</Russian>
+		<Russian>Сен Мартен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_47</Tag>
@@ -823,7 +823,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_52</Tag>
 		<English>Saint Alexis</English>
-		<Russian>Сен-Алексис</Russian>
+		<Russian>Сен Алексис</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_53</Tag>
@@ -833,12 +833,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_54</Tag>
 		<English>Saint Croix</English>
-		<Russian>Сен-Круа</Russian>
+		<Russian>Сен Круа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_55</Tag>
 		<English>Saint Vincent</English>
-		<Russian>Сен-Винсент</Russian>
+		<Russian>Сен Винсент</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_56</Tag>
@@ -848,7 +848,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_57</Tag>
 		<English>Saint Thomas</English>
-		<Russian>Сен-Томас</Russian>
+		<Russian>Сен Томас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_58</Tag>
@@ -878,7 +878,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_63</Tag>
 		<English>Vieux Fort</English>
-		<Russian>Вьё-Фор</Russian>
+		<Russian>Вьё Фор</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_64</Tag>
@@ -913,7 +913,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_70</Tag>
 		<English>Saint Marc</English>
-		<Russian>Сен-Марк</Russian>
+		<Russian>Сен Марк</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_71</Tag>
@@ -978,7 +978,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_83</Tag>
 		<English>Sainte Foy</English>
-		<Russian>Сен-Фуа</Russian>
+		<Russian>Сен Фуа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_84</Tag>
@@ -1013,7 +1013,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_90</Tag>
 		<English>Saint Ours</English>
-		<Russian>Сен-Ур</Russian>
+		<Russian>Сен Ур</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_91</Tag>
@@ -1073,7 +1073,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_102</Tag>
 		<English>Saint Nicolas</English>
-		<Russian>Сен-Николас</Russian>
+		<Russian>Сен Николас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_103</Tag>
@@ -1123,7 +1123,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_112</Tag>
 		<English>Fort l'Aguille</English>
-		<Russian>Форт Эгюий</Russian>
+		<Russian>Форт Л'Эгий</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_113</Tag>
@@ -1203,7 +1203,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_128</Tag>
 		<English>Saint François</English>
-		<Russian>Сен-Франсуа</Russian>
+		<Russian>Сен Франсуа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_CITY_129</Tag>
@@ -1243,12 +1243,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_2</Tag>
 		<English>Santo Domingo</English>
-		<Russian>Санто-Доминго</Russian>
+		<Russian>Санто Доминго</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_3</Tag>
 		<English>La Habana</English>
-		<Russian>Гавана</Russian>
+		<Russian>Ла Гавана</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_4</Tag>
@@ -3653,114 +3653,142 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_CITY_0</Tag>
 		<English>London</English>
+		<Russian>Лондон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_CITY_0</Tag>
 		<English>La Rochelle</English>
+		<Russian>Ла Рошель</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_CITY_0</Tag>
 		<English>Sevilla</English>
+		<Russian>Севилья</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_CITY_0</Tag>
 		<English>Amsterdam</English>
+		<Russian>Амстердам</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_CITY_0</Tag>
 		<English>Lisboa</English>
+		<Russian>Лиссабон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_CITY_0</Tag>
 		<English>Kopenhagen</English>
+		<Russian>Копенгаген</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_CITY_0</Tag>
 		<English>Stockholm</English>
+		<Russian>Стокгольм</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_CITY_0</Tag>
 		<English>St. Petersburg</English>
+		<Russian>Санкт-Петербург</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_CITY_0</Tag>
 		<English>Sy Ara</English>
+		<Russian>Си Ара</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_CITY_1</Tag>
 		<English>Para</English>
+		<Russian>Пара</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_CITY_2</Tag>
 		<English>Taubate</English>
+		<Russian>Таубате</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_CITY_3</Tag>
 		<English>Parana</English>
+		<Russian>Парана</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_CITY_4</Tag>
 		<English>Tocantins</English>
+		<Russian>Токантинс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_CITY_5</Tag>
 		<English>Paraiba</English>
+		<Russian>Параиба</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_CITY_6</Tag>
 		<English>Pernambuco</English>
+		<Russian>Пернамбуку</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_CITY_7</Tag>
 		<English>Guaporee</English>
+		<Russian>Гуапори</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_CITY_8</Tag>
 		<English>Piauy</English>
+		<Russian>Пиау</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_CITY_9</Tag>
 		<English>Siri Jibe</English>
+		<Russian>Сири Джибе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_CITY_10</Tag>
 		<English>Piabuyu</English>
+		<Russian>Пиабую</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_CITY_11</Tag>
 		<English>Tupinamba</English>
+		<Russian>Тупинамба</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_CITY_12</Tag>
 		<English>Tamoyo</English>
+		<Russian>Тамойо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_CITY_13</Tag>
 		<English>Peabiru</English>
+		<Russian>Пеабиру</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_CITY_14</Tag>
 		<English>Tupiniquim</English>
+		<Russian>Тупиниким</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_CITY_15</Tag>
 		<English>Tape Aviru</English>
+		<Russian>Тэйп Авирю</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_CITY_16</Tag>
 		<English>Oimagua</English>
+		<Russian>Оимагуа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_CITY_17</Tag>
 		<English>Cocama</English>
+		<Russian>Кокама</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_CITY_18</Tag>
 		<English>Nhehgatu</English>
+		<Russian>Нхехагату</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_CITY_19</Tag>
 		<English>Potiguara</English>
+		<Russian>Потигуара</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_0</Tag>
