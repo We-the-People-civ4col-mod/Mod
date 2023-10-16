@@ -1456,9 +1456,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SCHOOL_BUILDING_NEEDED</Tag>
-        <English>[ICON_BULLET]Can be trained in [COLOR_BUILDING_TEXT][LINK=literal]%s1_building[\LINK][COLOR_REVERT]</English>
-        <French>[ICON_BULLET]Peut être formé dans les [COLOR_BUILDING_TEXT][LINK=literal]%s1:2_building[\LINK][COLOR_REVERT]</French>
-        <German>[ICON_BULLET]Ausbildung möglich in [COLOR_BUILDING_TEXT][LINK=literal]%s1_building[\LINK][COLOR_REVERT]</German>
+        <English>[ICON_BULLET]Can be trained in [COLOR_BUILDING_TEXT][LINK=literal]%s1_building[\LINK][COLOR_REVERT] or better</English>
+        <French>[ICON_BULLET]Peut être formé dans les [COLOR_BUILDING_TEXT][LINK=literal]%s1:2_building[\LINK][COLOR_REVERT] ou mieux</French>
+        <German>[ICON_BULLET]Ausbildung möglich in [COLOR_BUILDING_TEXT][LINK=literal]%s1_building[\LINK][COLOR_REVERT] oder besser</German>
         <Russian>[ICON_BULLET]Можно обучить в [COLOR_BUILDING_TEXT][LINK=literal]%s1_building[\LINK][COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
