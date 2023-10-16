@@ -319,6 +319,8 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_aiTradeMessageCommissions.clear();
 	// TAC - Trade Messages - koma13 - END
 
+	m_pTempUnit = NULL;
+
 	if (!bConstructorCall)
 	{
 		AI_reset();
@@ -1585,7 +1587,7 @@ CvUnit* CvPlayer::initUnit(UnitTypes eUnit, ProfessionTypes eProfession, int iX,
 	return initUnit(eUnit, eProfession, Coordinates(iX, iY), eUnitAI, eFacingDirection, iYieldStored);
 }
 
-CvUnit* CvPlayer::initUnit(UnitTypes eUnit, ProfessionTypes eProfession, Coordinates initCoord, UnitAITypes eUnitAI, DirectionTypes eFacingDirection, int iYieldStored)
+CvUnit* CvPlayer::initUnit(UnitTypes eUnit, ProfessionTypes eProfession, Coordinates initCoord, UnitAITypes eUnitAI, DirectionTypes eFacingDirection, int iYieldStored, int iBirthmark)
 {
 	PROFILE_FUNC();
 
@@ -1594,6 +1596,7 @@ CvUnit* CvPlayer::initUnit(UnitTypes eUnit, ProfessionTypes eProfession, Coordin
 	OOS_LOG("Init unit", getTypeStr(eUnit));
 
 	CvUnit* pUnit = addUnit();
+
 	FAssertMsg(pUnit != NULL, "Unit is not assigned a valid value");
 	if (NULL != pUnit)
 	{
@@ -1607,7 +1610,7 @@ CvUnit* CvPlayer::initUnit(UnitTypes eUnit, ProfessionTypes eProfession, Coordin
 			eUnitAI = (UnitAITypes) GC.getUnitInfo(eUnit).getDefaultUnitAIType();
 		}
 
-		pUnit->init(pUnit->getID(), eUnit, eProfession, eUnitAI, getID(), initCoord, eFacingDirection, iYieldStored);
+		pUnit->init(pUnit->getID(), eUnit, eProfession, eUnitAI, getID(), initCoord, eFacingDirection, iYieldStored, iBirthmark);
 
 		if (getID() == GC.getGameINLINE().getActivePlayer())
 		{
@@ -9788,6 +9791,13 @@ void CvPlayer::updateGroupCycle(CvUnit* pUnit)
 		return;
 	}
 
+	/*
+	if (isTempUnit(pUnit))
+	{
+		return;
+	}
+	*/
+
 	FAssertMsg(pUnit->getGroup() != NULL, "Unit->getGroup() is not assigned a valid value");
 
 	removeGroupCycle(pUnit->getGroupID());
@@ -9976,6 +9986,18 @@ void CvPlayer::deleteCity(int iID)
 
 CvUnit* CvPlayer::firstUnit(int *pIterIdx) const
 {
+	CvUnit* pUnit = firstUnitInternal(pIterIdx);
+
+	if (pUnit == m_pTempUnit)
+	{
+		pUnit = firstUnitInternal(pIterIdx);
+	}
+
+	return pUnit;
+}
+
+CvUnit* CvPlayer::firstUnitInternal(int* pIterIdx) const
+{
 	if (m_units.empty())
 	{
 		return NULL;
@@ -9998,6 +10020,18 @@ CvUnit* CvPlayer::firstUnit(int *pIterIdx) const
 }
 
 CvUnit* CvPlayer::nextUnit(int *pIterIdx) const
+{
+	CvUnit* pUnit = nextUnitInternal(pIterIdx);
+
+	if (pUnit == m_pTempUnit)
+	{
+		pUnit = nextUnitInternal(pIterIdx);
+	}
+
+	return pUnit;
+}
+
+CvUnit* CvPlayer::nextUnitInternal(int* pIterIdx) const
 {
 	CvIdVector<CvUnitAI>::const_iterator it = m_units.find(*pIterIdx);
 
@@ -10023,7 +10057,7 @@ CvUnit* CvPlayer::nextUnit(int *pIterIdx) const
 
 int CvPlayer::getNumUnits() const
 {
-	return (int)(m_units.size());
+	return (int)(m_units.size()) - (m_pTempUnit ? 1 : 0);
 }
 
 CvUnit* CvPlayer::getUnit(int iID) const
@@ -10382,19 +10416,32 @@ int CvPlayer::countNumDomainUnits(DomainTypes eDomain) const
 
 CvSelectionGroup* CvPlayer::firstSelectionGroup(int *pIterIdx, bool bRev) const
 {
-	return !bRev ? m_selectionGroups.beginIter(pIterIdx) : m_selectionGroups.endIter(pIterIdx);
+	CvSelectionGroup* pResult = !bRev ? m_selectionGroups.beginIter(pIterIdx) : m_selectionGroups.endIter(pIterIdx);
+	if (pResult && pResult->getHeadUnit() && pResult->getHeadUnit() == m_pTempUnit)
+	{
+		pResult = nextSelectionGroup(pIterIdx, bRev);
+	}
+
+	return pResult;
+
 }
 
 
 CvSelectionGroup* CvPlayer::nextSelectionGroup(int *pIterIdx, bool bRev) const
 {
-	return !bRev ? m_selectionGroups.nextIter(pIterIdx) : m_selectionGroups.prevIter(pIterIdx);
+	CvSelectionGroup* pResult = !bRev ? m_selectionGroups.nextIter(pIterIdx) : m_selectionGroups.prevIter(pIterIdx);
+	if (pResult && pResult->getHeadUnit() && pResult->getHeadUnit() == m_pTempUnit)
+	{
+		pResult = nextSelectionGroup(pIterIdx, bRev);
+	}
+
+	return pResult;
 }
 
 
 int CvPlayer::getNumSelectionGroups() const
 {
-	return m_selectionGroups.getCount();
+	return m_selectionGroups.getCount() - (m_pTempUnit ? 1 : 0);
 }
 
 
@@ -20048,6 +20095,9 @@ bool CvPlayer::checkPopulation() const
 	int iLoop;
 	for (CvUnit* pLoopUnit = firstUnit(&iLoop); NULL != pLoopUnit; pLoopUnit = nextUnit(&iLoop))
 	{
+		if (pLoopUnit->isTempUnit())
+			continue;
+
 		if (pLoopUnit->getUnitInfo().isFound())
 		{
 			++iNumPopulation;
@@ -24870,22 +24920,21 @@ void CvPlayer::onTurnLogging() const
 
 CvUnit* CvPlayer::getTempUnit(UnitTypes eUnit, int iX, int iY)
 {
-	if (m_pTempUnit == NULL)
+	if (m_pTempUnit)
 	{
-		// TODO: Deal with profession type!
-		m_pTempUnit = initUnit(eUnit, NO_PROFESSION, iX, iY, NO_UNITAI, NO_DIRECTION, UNIT_BIRTHMARK_TEMP_UNIT);
-		((CvPlayerAI*)this)->AI_changeNumAIUnits(m_pTempUnit->AI_getUnitAIType(), -1);	//	This one doesn't count
-		removeGroupCycle(m_pTempUnit->getGroup()->getID());
-	}
-	else
-	{
-		if (m_pTempUnit->plot() != NULL)
+		if (m_pTempUnit->plot())
 		{
 			m_pTempUnit->setXY(INVALID_PLOT_COORD, INVALID_PLOT_COORD, true, false);
 		}
-
 		m_pTempUnit->changeIdentity(eUnit);
 		m_pTempUnit->setXY(iX, iY, true, false);
+	}
+	else
+	{
+		// TODO: Deal with profession type!
+		m_pTempUnit = initUnit(eUnit, NO_PROFESSION, Coordinates(iX, iY), NO_UNITAI, NO_DIRECTION, 0, UNIT_BIRTHMARK_TEMP_UNIT);
+		((CvPlayerAI*)this)->AI_changeNumAIUnits(m_pTempUnit->AI_getUnitAIType(), -1);	//	This one doesn't count
+		removeGroupCycle(m_pTempUnit->getGroup()->getID());
 	}
 
 	//	Set an arbitrary automation type - just need it to be flagged as automated	

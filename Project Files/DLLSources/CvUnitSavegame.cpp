@@ -207,6 +207,7 @@ void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool b
 	m_iID = iID;
 	if (!bIdentityChange)
 	{
+		// Do not alter the existing group when only bIdentityChange is desired (required by hypothetical unit pathfinding)
 		m_iGroupID = defaultGroupID;
 	}
 	m_iHotKeyNumber = defaultHotKeyNumber;

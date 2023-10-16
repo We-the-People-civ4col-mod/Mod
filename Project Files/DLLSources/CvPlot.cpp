@@ -489,6 +489,9 @@ void CvPlot::doTurn()
 			pLoopUnit = ::getUnit(pUnitNode->m_data);
 			pUnitNode = nextUnitNode(pUnitNode);
 
+			if (pLoopUnit->isTempUnit())
+				continue;
+
 			FAssertMsg(pLoopUnit->atPlot(this), "pLoopUnit is expected to be at the current plot instance");
 		}
 	}
@@ -3951,6 +3954,9 @@ bool CvPlot::isVisible(TeamTypes eTeam, bool bDebug) const
 
 bool CvPlot::isActiveVisible(bool bDebug) const
 {
+	if (this == NULL)
+		return false;
+
 	return isVisible(GC.getGameINLINE().getActiveTeam(), bDebug);
 }
 

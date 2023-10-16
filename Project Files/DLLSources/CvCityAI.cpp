@@ -100,6 +100,26 @@ void CvCityAI::AI_doTurn()
 {
 	PROFILE_FUNC();
 
+	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
+	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+
+
+	bool res = false;
+	int iLoop;
+	for (CvCity* pLoopCity = kOwner.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kOwner.nextCity(&iLoop))
+	{
+		if (pLoopCity != this)
+		{
+			// Determine if these cities share a common water area
+			//if (waterArea() == pLoopCity->waterArea())
+			{
+				res = generatePathForHypotheticalUnit(plot(), pLoopCity->plot(), getOwner(), eUnit);
+				res = res;
+			}
+		}
+	}
+
+
 	AI_doTradedYields();
 
 	if (!isHuman())

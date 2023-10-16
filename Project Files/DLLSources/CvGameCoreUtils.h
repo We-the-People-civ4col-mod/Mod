@@ -406,4 +406,7 @@ private:
 int getDefineFlagsForDLL();
 CvString getCompileFlags(int iDefineFlags);
 // city radius end
+
+bool generatePathForHypotheticalUnit(const CvPlot* pFrom, const CvPlot* pTo, PlayerTypes ePlayer, UnitTypes eUnit, int iFlags = 0, int iMaxTurns = -1);
+
 #endif

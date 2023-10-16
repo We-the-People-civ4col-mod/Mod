@@ -48,13 +48,13 @@ CvUnitAI::~CvUnitAI()
 }
 
 
-void CvUnitAI::AI_init()
+void CvUnitAI::AI_init(int iBirthmark)
 {
 	AI_reset();
 
 	//--------------------------------
 	// Init other game data
-	AI_setBirthmark(GC.getGameINLINE().getSorenRandNum(10000, "AI Unit Birthmark"));
+	AI_setBirthmark(iBirthmark);
 }
 
 

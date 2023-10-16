@@ -288,6 +288,9 @@ bool shouldMoveBefore(const CvUnit* pUnitA, const CvUnit* pUnitB)
 
 bool shouldUnitMove(const CvUnit* pUnit)
 {
+	if (pUnit->isTempUnit())
+		return false;
+
 	if (pUnit->isDead() || pUnit->isDelayedDeath())
 	{
 		return false;
@@ -2566,14 +2569,10 @@ CvWString getStrategyString(StrategyTypes eStrategy)
 bool generatePathForHypotheticalUnit(const CvPlot* pFrom, const CvPlot* pTo, PlayerTypes ePlayer, UnitTypes eUnit, int iFlags, int iMaxTurns)
 {
 	PROFILE_FUNC();
-
-	CvUnit* pTempUnit = GET_PLAYER(ePlayer).getTempUnit(eUnit, pFrom->getX(), pFrom->getY());
-
+	CvUnit* const pTempUnit = GET_PLAYER(ePlayer).getTempUnit(eUnit, pFrom->getX(), pFrom->getY());
 	pTempUnit->finishMoves();
-
-	const bool bResult = pTempUnit->generatePath(pTo, iFlags, iMaxTurns);
-
+	int pathTurns;
+	const bool bResult = pTempUnit->generatePath(pTo, iFlags, false, &pathTurns, iMaxTurns, /*bUseTempFinder*/true);
 	GET_PLAYER(ePlayer).releaseTempUnit();
-
 	return bResult;
 }

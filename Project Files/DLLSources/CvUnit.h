@@ -93,8 +93,7 @@ public:
 	virtual ~CvUnit();
 
 	void reloadEntity();
-	void init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI, PlayerTypes eOwner, Coordinates initCoord, DirectionTypes eFacingDirection, int iYieldStored);
-	void init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI, PlayerTypes eOwner, int iX, int iY, DirectionTypes eFacingDirection, int iYieldStored);
+	void init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI, PlayerTypes eOwner, Coordinates initCoord, DirectionTypes eFacingDirection, int iYieldStored, int iBirthmark);
 	void changeIdentity(UnitTypes eUnit);
 	void uninit();
 	void reset(int iID = 0, UnitTypes eUnit = NO_UNIT, PlayerTypes eOwner = NO_PLAYER, bool bConstructorCall = false, bool bIdentityChange = false);
@@ -783,7 +782,7 @@ public:
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);
 
-	virtual void AI_init() = 0;
+	virtual void AI_init(int iBirthmark) = 0;
 	virtual void AI_uninit() = 0;
 	virtual void AI_reset() = 0;
 	virtual bool AI_update() = 0;
@@ -836,6 +835,8 @@ public:
 	bool isOwnPlayerUnitOnAdjacentPlotOfUnit(int /*UnitClassTypes*/ iIndex) const;
 	bool isBarbarianUnitOnAdjacentPlotOfUnit(int /*UnitClassTypes*/ iIndex) const;
 	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
+
+	bool isTempUnit() const;
 
 protected:
 
