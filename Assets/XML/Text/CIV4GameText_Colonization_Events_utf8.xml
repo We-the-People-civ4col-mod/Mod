@@ -9753,31 +9753,37 @@
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SEASONED_TRADER_MEETING</Tag>
         <English>Merchants and natives hold a great festivity and rendezvous for friendship and trade in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
+        <French>Les marchands et les indigènes organisent une grande fête de commerce et d'amitié à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>Händler und Ureinwohner veranstalten in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ein großes Palaver und Rendezvous für Freundschaft und Handel.</German>
     </TEXT>
-   <TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_MEETING</Tag>
         <English>Milord, many merchants, trappers and natives have gathered in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] to exchange goods, to make friendly bonds and to feast. It goes wild with these rough fellows and the natives.</English>
+        <French>Sire, de nombreux marchands, chasseurs et indigènes se sont rassemblés à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] pour une foire commerciale très festive. Tout le monde y va de très bon coeur.</French>
          <German>Milord, viele Händler, Trapper und Ureinwohner sind in in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] zusammengekommen um Waren auszutauschen, freundschaftliche Bande zu knüpfen und um zu feiern. Es geht hoch her bei diesen rauen Gesellen und den Wilden.</German>
-     </TEXT>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SEASONED_TRADER_MEETING_1</Tag>
-        <English>That is very welcome. Let them feast until they drop. We will bear the costs of the festivity and promise the Indians new, profitable trade. We need to send out new traders on short notice.</English>
+        <English>That is very welcome. Let them feast until they drop. We will bear the costs of the festivity and promise the Indians new, profitable trade. We need to send out new traders on short notice. We should recruit a few indians scouts too.</English>
+        <French>Que c'est bienvenu. Laissez les faire une fête à tout casser. Nous paierons la note pour ces réjouissances et promettrons aux Indiens de nouveaux échanges profitables. Nous leur enverrons de nouveaux marchands d'ici peu. Nous recruterons au passage quelques éclaireurs Indiens.</French>
         <German>Das ist sehr zu begrüßen. Sollen sie ruhig feiern bis zum Umfallen. Wir übernehmen die Kosten für das Fest und versprechen den Indianern neuen, ertragreichen Handel. Wir müssen dann bald neue Händler aussenden. Wir sollten auch ein paar indianische Scouts anwerben.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SEASONED_TRADER_MEETING_2</Tag>
         <English>Go ahead and get the indians drunk. Then steal their goods, jewelry and women and send them back to where they came from.</English>
+        <French>Allez-y et énivrez les Indiens. Et après faites main basse sur leurs biens, leurs bijoux, leurs femmes et renvoyez-les chez eux.</French>
         <German>Macht die Wilden ordentlich besoffen. Danach stehlt ihnen ihre Waren, den Schmuck und die Frauen und schickt sie hin wo sie hergekommen sind.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SEASONED_TRADER_MEETING_3</Tag>
         <English>Yes, well, ...agreed. But I do not trust the peace. Let's share some of the costs and donate them a few horses. When the indians leave, send scouts after them to explore their villages.</English>
+        <French>Et bien, .. d'accord. Mais je ne crois pas dans cette paix. On va se répartir les coûts et leur faire don de quelques chevaux. Quand les Indiens partiront, on enverra des éclaireurs les pister pour ecplorer leurs villages.</French>
         <German>Ja, gut,... einverstanden. Ich traue dem Frieden aber nicht. Beteiligen wir uns mit einem Teil der Kosten und schenken ihnen ein paar Pferde. Wenn die Wilden wieder abziehen, schickt Ihnen Kundschafter hinterher, um ihre Dörfer zu erkunden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SEASONED_TRADER_MEETING_HELP</Tag>
         <English>[ICON_BULLET]The natives are furious and scalp some trader.</English>
+        <French>[ICON_BULLET]Les indigènes furieux décident de scalper quelques marchands.</French>
         <German>[ICON_BULLET]Die Ureinwohner sind wütend und skalpieren einige Händler.</German>
     </TEXT>
 </Civ4GameText>
