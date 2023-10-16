@@ -3353,242 +3353,302 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_0</Tag>
 		<English>Novo Arkhangelsk</English>
+		<Russian>Ново-Архангельск</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_1</Tag>
-		<English>Fort Ross</English>
+		<English>Unalashka</English>
+		<Russian>Уналашка</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_2</Tag>
-		<English>Unalashka</English>
+		<English>Kodiak</English>
+		<Russian>Кодьяк</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_3</Tag>
-		<English>Kodiak</English>
+		<English>Yakutat</English>
+		<Russian>Якутат</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_4</Tag>
-		<English>Sitka</English>
+		<English>Nikolaevsky Fort</English>
+		<Russian>Николаевский редут</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_5</Tag>
-		<English>Fort Bering</English>
+		<English>Fort Ross</English>
+		<Russian>Крепость Росс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_6</Tag>
 		<English>Elizavetinsk</English>
+		<Russian>Елизаветинск</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_7</Tag>
-		<English>Balabanovo</English>
+		<English>Ozersky</English>
+		<Russian>Озёрский</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_8</Tag>
 		<English>Alexandrovsk</English>
+		<Russian>Александровск</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_9</Tag>
-		<English>Mikhailovsk</English>
+		<English>Mikhailovsky</English>
+		<Russian>Михайловский</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_10</Tag>
 		<English>Petropavlovsk</English>
+		<Russian>Петропавловск</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_11</Tag>
 		<English>Nikolaevsk</English>
+		<Russian>Николаевск</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_12</Tag>
 		<English>Belogorsk</English>
+		<Russian>Белогорск</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_13</Tag>
-		<English>Slavorossia</English>
+		<English>Georgievsky Fort</English>
+		<Russian>Георгиевская крепость</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_14</Tag>
 		<English>Okhotsk</English>
+		<Russian>Охотск</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_15</Tag>
-		<English>Belgorod</English>
+		<English>Balabanovo</English>
+		<Russian>Балабаново</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_16</Tag>
 		<English>Egorovsk</English>
+		<Russian>Егоровск</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_17</Tag>
 		<English>Mednorechinsk</English>
+		<Russian>Медноречинск</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_18</Tag>
-		<English>Slavyansk</English>
+		<English>Fort Bering</English>
+		<Russian>Форт Беринг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_19</Tag>
-		<English>Novo Moskva</English>
+		<English>Kolmakovsky Fort</English>
+		<Russian>Колмаковский редут</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_20</Tag>
 		<English>Yakutat</English>
+		<Russian>Якутат</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_21</Tag>
 		<English>Dezhnev</English>
+		<Russian>Дежнев</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_22</Tag>
-		<English>Fort Kolmakov</English>
+		<English>Nulato</English>
+		<Russian>Нулато</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_23</Tag>
-		<English>Tmutarakan</English>
+		<English>Alexandrovsky Fort</English>
+		<Russian>Александровский редут</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_24</Tag>
-		<English>Novo Vasyuki</English>
+		<English>Fort of Good Accord</English>
+		<Russian>Форт Доброго согласия</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_25</Tag>
-		<English>Abakan</English>
+		<English>Gizhiginsky Fort</English>
+		<Russian>Гижигинская крепость</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_26</Tag>
-		<English>Noyabrsk</English>
+		<English>Irkutsk</English>
+		<Russian>Иркутск</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_27</Tag>
-		<English>Marunitch</English>
+		<English>Kulukak</English>
+		<Russian>Кулукак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_28</Tag>
-		<English>Polovina</English>
+		<English>Kenai</English>
+		<Russian>Кенайское</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_29</Tag>
-		<English>Zapadni</English>
+		<English>Akhtinskoe</English>
+		<Russian>Ахтинское</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_30</Tag>
-		<English>Pribylovsk</English>
+		<English>Belkovskoe</English>
+		<Russian>Бельковское</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_31</Tag>
-		<English>Kasilov</English>
+		<English>Voskresenskaya Harbor</English>
+		<Russian>Воскресенская гавань</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_32</Tag>
-		<English>Gavan Trekh Svyatitelyei</English>
+		<English>Harbor of the Three Saints</English>
+		<Russian>Гавань трёх святителей</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_33</Tag>
-		<English>Pavlovskaya</English>
+		<English>Dionysevsky Fort</English>
+		<Russian>Дионисьевский редут</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_34</Tag>
-		<English>Svyataya Nikolaya</English>
+		<English>Ilyaminskaya</English>
+		<Russian>Иляминская</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_35</Tag>
 		<English>Fort Arkhangela Mikhaila</English>
+		<Russian>Крепость Архангела Михаила</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_36</Tag>
-		<English>Nulato</English>
+		<English>Kalsinsky</English>
+		<Russian>Кальсинский</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_37</Tag>
-		<English>Pokrovskaya</English>
+		<English>Karluski</English>
+		<Russian>Карлуский</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_38</Tag>
-		<English>Svyataya Dionisiya</English>
+		<English>Kasilov</English>
+		<Russian>Касилов</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_39</Tag>
-		<English>Ikogmiut</English>
+		<English>Kachemak</English>
+		<Russian>Качемак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_40</Tag>
 		<English>Novo Alexandrovsk</English>
+		<Russian>Ново-Александровск</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_41</Tag>
-		<English>Ninilchik</English>
+		<English>Katmai</English>
+		<Russian>Катмайский</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_42</Tag>
-		<English>Georgievskaya</English>
+		<English>Knyk</English>
+		<Russian>Кнык</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_43</Tag>
-		<English>Fort Nushagak</English>
+		<English>Komarovsky Fort</English>
+		<Russian>Комаровский форт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_44</Tag>
-		<English>Fort Wrangel</English>
+		<English>Fort Konstantinovsky</English>
+		<Russian>Константиновская крепость</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_45</Tag>
-		<English>Fort Suvarov</English>
+		<English>Kyngowey</English>
+		<Russian>Кынговей</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_46</Tag>
-		<English>Konstantinovsk</English>
+		<English>Novorossiysk</English>
+		<Russian>Новороссийск</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_47</Tag>
-		<English>Fort Andreavski</English>
+		<English>Fort Pavlovsky</English>
+		<Russian>Павловская крепость</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_48</Tag>
-		<English>Fort Batzulnetas</English>
+		<English>Northern post</English>
+		<Russian>Северный пост</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_49</Tag>
-		<English>Chitina</English>
+		<English>Pavlovskaya harbor</English>
+		<Russian>Павловская гавань</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_50</Tag>
-		<English>Fort Delarov</English>
+		<English>Khlebnikov</English>
+		<Russian>Хлебников</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_51</Tag>
-		<English>Georgiyevsk</English>
+		<English>Chiniaksky</English>
+		<Russian>Чиниакский</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_52</Tag>
-		<English>Fort Pavlosk</English>
+		<English>Fort Semionovsky</English>
+		<Russian>Семионовская крепость</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_53</Tag>
 		<English>Ozerskoye</English>
+		<Russian>Озёрское</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_54</Tag>
-		<English>Fort Kusilov</English>
+		<English>Sukhtumskaya</English>
+		<Russian>Сухтумская</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_55</Tag>
-		<English>Katlianski</English>
+		<English>Fort Ozersky</English>
+		<Russian>Озёрский редут</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_56</Tag>
-		<English>Fort Derabin</English>
+		<English>Attu</English>
+		<Russian>Атту</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_57</Tag>
-		<English>Saint Simeon</English>
+		<English>Kostrominov</English>
+		<Russian>Костроминов</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_58</Tag>
-		<English>Fort Stikine</English>
+		<English>Ukamoksky</English>
+		<Russian>Укамокский</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_59</Tag>
-		<English>Fort Naknek</English>
+		<English>Unga</English>
+		<Russian>Унга</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_CITY_0</Tag>
