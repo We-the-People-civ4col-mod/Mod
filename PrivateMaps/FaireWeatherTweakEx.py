@@ -4856,6 +4856,19 @@ def addLakes():
 
         
 def addFeatures():
+    NiTextOut("Generating Large Rivers  ...")
+    print "Adding Large Rivers"
+    gc = CyGlobalContext()
+    mmap = gc.getMap()
+    featureRiverFord = gc.getInfoTypeForString("FEATURE_RIVER_FORD")
+
+    for y in range(mc.height):
+        for x in range(mc.width):
+            i = GetIndex(x,y)
+            plot = mmap.plot(x,y)
+            if sm.terrainMap[i] == mc.LARGE_RIVER:
+                if PRand.random() < mc.riverFordProbability:
+                    plot.setFeatureType(featureRiverFord,0)
 
 ## nothing should be done here anymore, because DLL is used instead
 ## the calls are here: def afterGeneration():                
