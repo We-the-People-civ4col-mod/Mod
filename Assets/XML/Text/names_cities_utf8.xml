@@ -1233,547 +1233,682 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_0</Tag>
 		<English>La Isabela</English>
-		<Russian>Изабелла</Russian>
+		<Russian>Ла Изабелла</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_1</Tag>
 		<English>Concepción de la Vega</English>
+		<Russian>Консепсьон де ла Вега</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_2</Tag>
 		<English>Santo Domingo</English>
+		<Russian>Санто-Доминго</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_3</Tag>
 		<English>La Habana</English>
+		<Russian>Гавана</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_4</Tag>
 		<English>Vera Cruz</English>
+		<Russian>Вера Круз</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_5</Tag>
 		<English>Ciudad de México</English>
+		<Russian>Сьюдад де Мехико</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_6</Tag>
 		<English>Potosí</English>
+		<Russian>Потоси</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_7</Tag>
 		<English>Ciudad de los Reyes</English>
+		<Russian>Сьюдад де лос Рейес</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_8</Tag>
 		<English>Santiago</English>
+		<Russian>Сантьяго</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_9</Tag>
 		<English>Buenos Aires</English>
+		<Russian>Буэнос Айрес</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_10</Tag>
 		<English>Asunción</English>
+		<Russian>Асунсьон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_11</Tag>
 		<English>Caparra</English>
+		<Russian>Капарра</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_12</Tag>
 		<English>Santa María</English>
+		<Russian>Санта Мария</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_13</Tag>
 		<English>Baracoa</English>
+		<Russian>Баракоа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_14</Tag>
 		<English>Trinidad</English>
+		<Russian>Тринидад</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_15</Tag>
 		<English>Ciudad de Panamá</English>
+		<Russian>Сьюдад де Панама</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_16</Tag>
 		<English>Guatemala</English>
+		<Russian>Гватемала</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_17</Tag>
 		<English>Santa Marta</English>
+		<Russian>Санта Марта</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_18</Tag>
 		<English>San Salvador</English>
+		<Russian>Сан Сальвадор</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_19</Tag>
 		<English>Acapulco</English>
+		<Russian>Акапулько</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_20</Tag>
 		<English>Espíritu Santo</English>
+		<Russian>Эспириту Санту</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_21</Tag>
 		<English>Cartagena</English>
+		<Russian>Картахена</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_22</Tag>
 		<English>Quito</English>
+		<Russian>Кито</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_23</Tag>
 		<English>Comayagua</English>
+		<Russian>Комаягуа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_24</Tag>
 		<English>Ciudad de la Plata</English>
+		<Russian>Сьюдад де ла Плата</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_25</Tag>
 		<English>Bogotá</English>
+		<Russian>Богота</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_26</Tag>
 		<English>Mérida</English>
+		<Russian>Мерида</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_27</Tag>
 		<English>Valparaíso</English>
+		<Russian>Вальпараисо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_28</Tag>
 		<English>La Paz</English>
+		<Russian>Ла Пас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_29</Tag>
 		<English>Puerto de los Hispanioles</English>
+		<Russian>Пуэрто де ла Испаньола</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_30</Tag>
 		<English>San Juan</English>
+		<Russian>Сан Хуан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_31</Tag>
 		<English>Campeche</English>
+		<Russian>Кампече</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_32</Tag>
 		<English>San Augustín</English>
+		<Russian>Сент Огастин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_33</Tag>
 		<English>Caracas</English>
+		<Russian>Каракас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_34</Tag>
 		<English>Santa Fe</English>
+		<Russian>Санта Фе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_35</Tag>
 		<English>Villahermosa</English>
+		<Russian>Вильяэрмоса</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_36</Tag>
 		<English>Monterrey</English>
+		<Russian>Монтерей</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_37</Tag>
 		<English>Medellín</English>
+		<Russian>Медельин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_38</Tag>
 		<English>El Paso</English>
+		<Russian>Эль Пасо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_39</Tag>
 		<English>San Diego</English>
+		<Russian>Сан Диего</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_40</Tag>
 		<English>San José</English>
+		<Russian>Сан Хосе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_41</Tag>
 		<English>Cartago</English>
+		<Russian>Картаго</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_42</Tag>
 		<English>La Navidad</English>
+		<Russian>Ла Навидад</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_43</Tag>
 		<English>Lima</English>
+		<Russian>Лима</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_44</Tag>
 		<English>Guadalajara</English>
+		<Russian>Гвадалахара</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_45</Tag>
 		<English>Managua</English>
+		<Russian>Манагуа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_46</Tag>
 		<English>Costa Rica</English>
+		<Russian>Коста Рика</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_47</Tag>
 		<English>Los Angeles</English>
+		<Russian>Лос Анджелес</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_48</Tag>
 		<English>Corpus Christi</English>
+		<Russian>Корпус Кристи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_49</Tag>
 		<English>Tobago</English>
+		<Russian>Тобаго</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_50</Tag>
 		<English>San Francisco</English>
+		<Russian>Сан Франциско</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_51</Tag>
 		<English>San Angelo</English>
+		<Russian>Сан Анджело</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_52</Tag>
 		<English>Cancún</English>
+		<Russian>Канкун</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_53</Tag>
 		<English>La Plata</English>
+		<Russian>Ла Плата</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_54</Tag>
 		<English>Nombre de Dios</English>
+		<Russian>Номбре де Диос</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_55</Tag>
 		<English>Granada</English>
+		<Russian>Гранада</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_56</Tag>
 		<English>Saltillo</English>
+		<Russian>Сальтильо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_57</Tag>
 		<English>Montevideo</English>
+		<Russian>Монтевидео</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_58</Tag>
 		<English>Portobelo</English>
+		<Russian>Портобело</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_59</Tag>
 		<English>León</English>
+		<Russian>Леон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_60</Tag>
 		<English>Ciudad Juárez</English>
+		<Russian>Сьюдад Хуарес</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_61</Tag>
 		<English>Loreto</English>
+		<Russian>Лорето</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_62</Tag>
 		<English>Santa Barbara</English>
+		<Russian>Санта Барбара</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_63</Tag>
 		<English>Chihuahua</English>
+		<Russian>Чихуахуа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_64</Tag>
 		<English>Albuquerque</English>
+		<Russian>Альбукерке</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_65</Tag>
 		<English>Córdoba</English>
+		<Russian>Кордова</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_66</Tag>
 		<English>Trujillo</English>
+		<Russian>Трухильо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_67</Tag>
 		<English>Puerto Principe</English>
+		<Russian>Пуэрто Принс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_68</Tag>
 		<English>Nuevo Segovia</English>
+		<Russian>Нуэва Сеговия</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_69</Tag>
 		<English>Maracaibo</English>
+		<Russian>Маракаибо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_70</Tag>
 		<English>Ciudad Bolívar</English>
+		<Russian>Сьюдад Боливар</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_71</Tag>
 		<English>San Fernando</English>
+		<Russian>Сан Фернандо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_72</Tag>
 		<English>Guayaquil</English>
+		<Russian>Гуаякиль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_73</Tag>
 		<English>Cali</English>
+		<Russian>Кали</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_74</Tag>
 		<English>Buenaventura</English>
+		<Russian>Бонавентура</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_75</Tag>
 		<English>Arica</English>
+		<Russian>Арика</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_76</Tag>
 		<English>Santa Cruz</English>
+		<Russian>Санта Круз</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_77</Tag>
 		<English>Valdivia</English>
+		<Russian>Вальдивия</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_78</Tag>
 		<English>Acámbaro</English>
+		<Russian>Акамбаро</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_79</Tag>
 		<English>San Miguel</English>
+		<Russian>Сан Мигель</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_80</Tag>
 		<English>Mazatlán</English>
+		<Russian>Масатлан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_81</Tag>
 		<English>Culiacán</English>
+		<Russian>Кулиакан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_82</Tag>
 		<English>Oaxaca</English>
+		<Russian>Оахака</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_83</Tag>
 		<English>San Pedro Sula</English>
+		<Russian>Сан Педро Сула</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_84</Tag>
 		<English>Yuriria</English>
+		<Russian>Юририя</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_85</Tag>
 		<English>Antigua</English>
+		<Russian>Антигуа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_86</Tag>
 		<English>San Germán</English>
+		<Russian>Сан Хераман</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_87</Tag>
 		<English>Aguascalientes</English>
+		<Russian>Агуаскальентес</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_88</Tag>
 		<English>Parras</English>
+		<Russian>Паррас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_89</Tag>
 		<English>Salamanca</English>
+		<Russian>Саламанка</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_90</Tag>
 		<English>Dolores Hidalgo</English>
+		<Russian>Долорес Идальго</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_91</Tag>
 		<English>Salvatierra</English>
+		<Russian>Сальватьерра</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_92</Tag>
 		<English>Cortazar</English>
+		<Russian>Кортасар</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_93</Tag>
 		<English>San Blas</English>
+		<Russian>Сан Блас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_94</Tag>
 		<English>Orizaba</English>
+		<Russian>Орисаба</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_95</Tag>
 		<English>Azua de Compostela</English>
+		<Russian>Асуа де Компостела</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_96</Tag>
 		<English>Cotuí</English>
+		<Russian>Котуи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_97</Tag>
 		<English>Salvaleón</English>
+		<Russian>Сальвалеон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_98</Tag>
 		<English>Bonao</English>
+		<Russian>Бонао</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_99</Tag>
 		<English>Hato Mayor</English>
+		<Russian>Ато Майор</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_100</Tag>
 		<English>Cumaná</English>
+		<Russian>Кумана</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_101</Tag>
 		<English>Tecpán</English>
+		<Russian>Текпан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_102</Tag>
 		<English>San Cristóbal</English>
+		<Russian>Сан Кристобаль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_103</Tag>
 		<English>Puebla</English>
+		<Russian>Пуэбла</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_104</Tag>
 		<English>Piura</English>
+		<Russian>Пьюра</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_105</Tag>
 		<English>Tepic</English>
+		<Russian>Тепик</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_106</Tag>
 		<English>Otavalo</English>
+		<Russian>Отавало</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_107</Tag>
 		<English>Bayaja</English>
+		<Russian>Баяджа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_108</Tag>
 		<English>Paria</English>
+		<Russian>Пария</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_109</Tag>
 		<English>Popayán</English>
+		<Russian>Попаян</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_110</Tag>
 		<English>Tupiza</English>
+		<Russian>Тупиза</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_111</Tag>
 		<English>Sucre</English>
+		<Russian>Сукре</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_112</Tag>
 		<English>Ayacucho</English>
+		<Russian>Аякучо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_113</Tag>
 		<English>Huánuco</English>
+		<Russian>Уануко</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_114</Tag>
 		<English>Moquegua</English>
+		<Russian>Мокегуа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_115</Tag>
 		<English>Genaro Codina</English>
+		<Russian>Хенаро Кодина</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_116</Tag>
 		<English>Cobán</English>
+		<Russian>Кобан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_117</Tag>
 		<English>Neyba</English>
+		<Russian>Нейба</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_118</Tag>
 		<English>Tepezalá</English>
+		<Russian>Тепезала</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_119</Tag>
 		<English>Asientos</English>
+		<Russian>Асьентос</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_120</Tag>
 		<English>Sonsonate</English>
+		<Russian>Сонсонате</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_121</Tag>
 		<English>Saín Alto</English>
+		<Russian>Сан Альто</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_122</Tag>
 		<English>Cuenca</English>
+		<Russian>Куэнка</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_123</Tag>
 		<English>Susticacán</English>
+		<Russian>Сустикакан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_124</Tag>
 		<English>Tucumán</English>
+		<Russian>Тукуман</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_125</Tag>
 		<English>Mazapil</English>
+		<Russian>Мазапил</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_126</Tag>
 		<English>Jerez</English>
+		<Russian>Херес</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_127</Tag>
 		<English>Sombrerete</English>
+		<Russian>Сомбререте</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_128</Tag>
 		<English>Huancavelica</English>
+		<Russian>Уанкавелика</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_129</Tag>
 		<English>Huaraz</English>
+		<Russian>Уарас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_130</Tag>
 		<English>Tarija</English>
+		<Russian>Тариха</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_131</Tag>
 		<English>Juayúa</English>
+		<Russian>Хуаюа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_132</Tag>
 		<English>Coamo</English>
+		<Russian>Коамо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_133</Tag>
 		<English>Salta</English>
+		<Russian>Салта</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_134</Tag>
 		<English>Corrientes</English>
+		<Russian>Корриентес</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_CITY_135</Tag>
 		<English>Juan Aldama</English>
+		<Russian>Хуан Альдама</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_CITY_0</Tag>
