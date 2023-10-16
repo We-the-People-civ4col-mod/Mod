@@ -1710,4 +1710,8 @@
 		<DefineName>BASE_CHANCE_CAPTURING_PRISONER_OF_WAR</DefineName>
 		<iDefineIntVal>100</iDefineIntVal>
 	</Define>
+	<Define>
+		<DefineName>BASE_TERRAINS_WITHOUT_FEATURE_PERCENTAGE</DefineName>
+		<iDefineIntVal>20</iDefineIntVal>
+	</Define>
 </Civ4Defines>
