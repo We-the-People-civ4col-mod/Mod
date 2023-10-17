@@ -37893,8 +37893,8 @@
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
-			<iUnitExperienceWeight>1</iUnitExperienceWeight>
-			<bUnitsOnPlot>1</bUnitsOnPlot>
+			<iUnitExperienceWeight>0</iUnitExperienceWeight>
+			<bUnitsOnPlot>0</bUnitsOnPlot>
 			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
