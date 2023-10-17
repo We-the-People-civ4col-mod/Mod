@@ -3798,242 +3798,302 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_1</Tag>
 		<English>Cubanacan</English>
+		<Russian>Кубанакан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_2</Tag>
 		<English>Haiti</English>
+		<Russian>Гаити</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_3</Tag>
 		<English>Kiskeya</English>
+		<Russian>Кискея</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_4</Tag>
 		<English>Jamaica</English>
+		<Russian>Ямайка</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_5</Tag>
 		<English>Arakaka</English>
+		<Russian>Арака</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_6</Tag>
 		<English>Imataka</English>
+		<Russian>Иматака</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_7</Tag>
 		<English>Guanaba</English>
+		<Russian>Гуанаба</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_8</Tag>
 		<English>Liguanea</English>
+		<Russian>Лигуана</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_9</Tag>
 		<English>Amakura</English>
+		<Russian>Амакура</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_10</Tag>
 		<English>Iere</English>
+		<Russian>Иэре</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_11</Tag>
 		<English>Malliouhana</English>
+		<Russian>Маллиухана</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_12</Tag>
 		<English>Aloi</English>
+		<Russian>Алои</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_13</Tag>
 		<English>Ocanmanru</English>
+		<Russian>Оканманру</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_14</Tag>
 		<English>Liamugua</English>
+		<Russian>Лиамугуа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_15</Tag>
 		<English>Atabei</English>
+		<Russian>Атабей</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_16</Tag>
 		<English>Waitukubuli</English>
+		<Russian>Вайтукубули</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_17</Tag>
 		<English>Ichirouganaim</English>
+		<Russian>Ичируганаим</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_18</Tag>
 		<English>Kalaoucera</English>
+		<Russian>Калаусера</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_19</Tag>
 		<English>Oualiche</English>
+		<Russian>Уалише</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_20</Tag>
 		<English>Touloukaera</English>
+		<Russian>Тулукаэра</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_21</Tag>
 		<English>Iyanola</English>
+		<Russian>Иянола</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_22</Tag>
 		<English>Oualie</English>
+		<Russian>Уали</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_23</Tag>
 		<English>Hairoun</English>
+		<Russian>Хайрун</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_CITY_24</Tag>
 		<English>Wadadli</English>
+		<Russian>Вададли</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_0</Tag>
 		<English>Tenochtitlan</English>
+		<Russian>Теночтитлан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_1</Tag>
 		<English>Teotihuacan</English>
+		<Russian>Теотиуакан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_2</Tag>
 		<English>Tlatelolco</English>
+		<Russian>Тлателолко</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_3</Tag>
 		<English>Texcoco</English>
+		<Russian>Тескоко</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_4</Tag>
 		<English>Tlaxcala</English>
+		<Russian>Тласкала</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_5</Tag>
 		<English>Calixtlahuaca</English>
+		<Russian>Каликстлауака</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_6</Tag>
 		<English>Xochicalco</English>
+		<Russian>Шочикалько</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_7</Tag>
 		<English>Tlacopan</English>
+		<Russian>Тлакопан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_8</Tag>
 		<English>Atzcapotzalco</English>
+		<Russian>Аскапоцалько</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_9</Tag>
 		<English>Cholula</English>
+		<Russian>Чолула</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_10</Tag>
 		<English>Malinalco</English>
+		<Russian>Малиналько</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_11</Tag>
 		<English>Tula</English>
+		<Russian>Тула</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_12</Tag>
 		<English>Tamuin</English>
+		<Russian>Тамуин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_13</Tag>
 		<English>Teayo</English>
+		<Russian>Тейо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_14</Tag>
 		<English>Cempoala</English>
+		<Russian>Семпоала</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_15</Tag>
 		<English>Chalco</English>
+		<Russian>Чалко</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_16</Tag>
 		<English>Tlalmanalco</English>
+		<Russian>Тлальманалько</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_17</Tag>
 		<English>Ixtapaluca</English>
+		<Russian>Икстапалука</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_18</Tag>
 		<English>Huexotla</English>
+		<Russian>Уексотла</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_19</Tag>
 		<English>Tepexpan</English>
+		<Russian>Тепэкспан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_20</Tag>
 		<English>Tepetlaoxtoc</English>
+		<Russian>Тепетлаоксток</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_21</Tag>
 		<English>Chiconautla</English>
+		<Russian>Чиконаутла</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_22</Tag>
 		<English>Zitlaltepec</English>
+		<Russian>Зитлалтепек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_23</Tag>
 		<English>Coyotepec</English>
+		<Russian>Койотепек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_24</Tag>
 		<English>Tequixquiac</English>
+		<Russian>Койотепек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_25</Tag>
 		<English>Jilotzingo</English>
+		<Russian>Джилоцинго</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_26</Tag>
 		<English>Tlapanaloya</English>
+		<Russian>Тлапаналоя</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_27</Tag>
 		<English>Tultitan</English>
+		<Russian>Тультитан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_28</Tag>
 		<English>Ecatepec</English>
+		<Russian>Экатепек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_29</Tag>
 		<English>Coatepec</English>
+		<Russian>Экатепек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_30</Tag>
 		<English>Chalchiuites</English>
+		<Russian>Чалчиуиты</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_31</Tag>
 		<English>Chiauhita</English>
+		<Russian>Чиауита</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_32</Tag>
 		<English>Chapultepec</English>
+		<Russian>Чапультепек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_33</Tag>
 		<English>Itzapalapa</English>
+		<Russian>Истапалапа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_34</Tag>
 		<English>Ayotzinco</English>
+		<Russian>Айоцинко</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_CITY_35</Tag>
 		<English>Iztapam</English>
+		<Russian>Истапам</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_INCA_CITY_0</Tag>

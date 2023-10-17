@@ -129,7 +129,7 @@
         <English>[ICON_BULLET]%d2%F3_Icon[TAB]by Wars with other Europeans</English>
         <French>[ICON_BULLET]%d2%F3_Icon[TAB]à cause des guerres contre les autres Européens</French>
         <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Kriege mit anderen Europäern</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от войны с другими европейцами</Russian>
+        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от войны с европейцами</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNHAPPINES_MISSING_DEFENSES</Tag>

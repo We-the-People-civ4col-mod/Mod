@@ -35,7 +35,7 @@
         <German>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][PARAGRAPH:2]Importe, Exporte sowie Ober- und Untergrenze für Lagerbestände festlegen (Details sind in der Colopedia unter dem Konzept [COLOR_HIGHLIGHT_TEXT]Transportautomatisierung[COLOR_REVERT] nachzulesen) :[NEWLINE]</German>
         <Italian>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][PARAGRAPH:2]Seleziona le importazioni, le esportazioni, le merci minime e massime immagazzinate (Leggi la pagina del concetto di Colopedia [COLOR_HIGHLIGHT_TEXT]Automazione dei trasporti[COLOR_REVERT] per sapere come usarlo). :[NEWLINE]</Italian>
         <Spanish>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][PARAGRAPH:2]Seleccione las importaciones, las exportaciones y las mercancías mínimas y máximas almacenadas (Lea la página de conceptos de Colopedia [COLOR_HIGHLIGHT_TEXT]Automatización del transporte[COLOR_REVERT] para aprender a utilizarlo). :[NEWLINE]</Spanish>
-        <Russian>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][PARAGRAPH:2]Выберите импорт или фидер, экспорт или автоматизацию и количество товаров (прочитайте концептуальную страницу Колопедии [COLOR_HIGHLIGHT_TEXT]Автоматизация транспорта[COLOR_REVERT], чтобы узнать, как это использовать) :[NEWLINE]</Russian>
+        <Russian>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Выберите импорт или фидер, экспорт или автоматизацию и количество товаров (прочитайте концептуальную страницу Колопедии [COLOR_HIGHLIGHT_TEXT]Автоматизация транспорта[COLOR_REVERT], чтобы узнать, как это использовать) :[NEWLINE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_CLEAR_ALL</Tag>
