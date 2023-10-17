@@ -163,7 +163,7 @@ AI
 Performance:
 - New building rules replaces old code, which was way slower
 - #439 Updating map view while moving weather much faster (typically 90% CPU reduction)
-- Natives no longer spends time checking if European only random events will trigger for them
+- Natives no longer spend time checking if European-only random events will trigger for them
 - Lakes are now identified by terrain rather than more complex (slower) code, which takes number of plots into account
 
 Release:
@@ -205,11 +205,11 @@ Fixes:
 - Removed case where raiding natives could report burning down a building without removing any buildings
 - #401 Blocked vanilla from trying to load map scripts (and fail) while starting vanilla
 - Fixed vanilla bug where circles on the map might not update correctly if a team has more than one player
-- Shipwrecks discovered by founding a colony will no longer causes bugs due to referring to the ship doing the discovery
+- Shipwrecks discovered by founding a colony will no longer cause bugs due to referring to the ship doing the discovery
 - Barbarian units are no longer called "wild animals" in mouseover help text
 - Ships using automated exploration will now aim for shipwrecks just like automated scouts on land search ruins
-- Clearing a unit speciality in a revolting colony will no longer crash the game
-- Forts now updates field of view as intended
+- Clearing a unit speciality in a rebelling colony will no longer crash the game
+- Forts now update field of view as intended
 - #437 Scrolling up will no longer move the "unit pointer icon" behind the bottom panel
 - #459 Founding Fathers and traits providing extra yield on the colony plot will now provide the bonus (vanilla bug)
 
@@ -350,7 +350,7 @@ New Features
 - New game option: Only 1 colonist living with Natives at at time
 
 Improvements:
-- #309 Added message when uprest ends in a colony
+- #309 Added message when unrest ends in a colony
 - added 5 new quests
 - Turn counter displayed for units working to become experts or become free
 - Citizen help now display yield modifiers
