@@ -6858,25 +6858,29 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 		CvWString tag;
 		CvWString text;
 
-		for (tag = L"start"; tag != text; ++m_iNumAdmiralNames)
+		for (;; ++m_iNumAdmiralNames)
 		{
 			tag.Format(L"%s_ADMIRAL_%d", m_szTextKey.GetCString(), m_iNumAdmiralNames);
 			text = gDLL->getText(tag);
+			if (tag == text) break;
 		}
-		for (tag = L"start"; tag != text; ++m_iNumCityNames)
+		for (;; ++m_iNumCityNames)
 		{
 			tag.Format(L"%s_CITY_%d", m_szTextKey.GetCString(), m_iNumCityNames);
 			text = gDLL->getText(tag);
+			if (tag == text) break;
 		}
-		for (tag = L"start"; tag != text; ++m_iNumGeneralNames)
+		for (;; ++m_iNumGeneralNames)
 		{
 			tag.Format(L"%s_GENERAL_%d", m_szTextKey.GetCString(), m_iNumGeneralNames);
 			text = gDLL->getText(tag);
+			if (tag == text) break;
 		}
-		for (tag = L"start"; tag != text; ++m_iNumShipNames)
+		for (;; ++m_iNumShipNames)
 		{
 			tag.Format(L"%s_SHIP_%d", m_szTextKey.GetCString(), m_iNumShipNames);
 			text = gDLL->getText(tag);
+			if (tag == text) break;
 		}
 	}
 
