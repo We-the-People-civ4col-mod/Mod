@@ -3172,6 +3172,10 @@ CvCity* CvPlayer::buyUnitFromPlayer(PlayerTypes eSellingPlayer, UnitTypes eUnitT
 						//add unit to map after setting Europe state so that it doesn't bump enemy units
 						kBuyUnit->addToMap(pStartingPlot->coord());
 					}
+					else if (GC.getUnitInfo(eUnitType).getDomainType() != DOMAIN_SEA && pStartingPlot != NULL)
+					{
+						unloadUnitToEurope(kBuyUnit);
+					}
 					else
 					{
 						FAssertMsg(GC.getUnitInfo(eUnitType).getDomainType() != DOMAIN_SEA, "Player failed to create ship in Europe");
@@ -4145,15 +4149,19 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 	{
 		bool choosenLandSupport = iData1;
 
+		LocationFlags location;
+		location.deepCoastal = true;
+		location.europe = true;
+
 		if(choosenLandSupport)
 		{
 			CvWString szBuffer = gDLL->getText("TXT_KEY_REV_SUPPORT_ARRIVED", GC.getLeaderHeadInfo(GET_PLAYER(getParent()).getLeaderType()).getDescription());
-			GET_PLAYER(ePlayer).buyUnitFromParentPlayer(getID(), "UNITCLASS_REV_SUPPORT_LAND", GLOBAL_DEFINE_REV_SUPPORT_LAND, szBuffer, 0, LocationFlags::LocationFlagDeepCoastal, false, false);
+			GET_PLAYER(ePlayer).buyUnitFromParentPlayer(getID(), "UNITCLASS_REV_SUPPORT_LAND", GLOBAL_DEFINE_REV_SUPPORT_LAND, szBuffer, 0, location, false, false);
 		}
 		else
 		{
 			CvWString szBuffer = gDLL->getText("TXT_KEY_REV_SUPPORT_ARRIVED", GC.getLeaderHeadInfo(GET_PLAYER(getParent()).getLeaderType()).getDescription());
-			GET_PLAYER(ePlayer).buyUnitFromParentPlayer(getID(), "UNITCLASS_REV_SUPPORT_SEA", GLOBAL_DEFINE_REV_SUPPORT_SEA, szBuffer, 0, LocationFlags::LocationFlagDeepCoastal, false, false);
+			GET_PLAYER(ePlayer).buyUnitFromParentPlayer(getID(), "UNITCLASS_REV_SUPPORT_SEA", GLOBAL_DEFINE_REV_SUPPORT_SEA, szBuffer, 0, location, false, false);
 		}
 	}
 		break;
@@ -4199,34 +4207,38 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			// we have chosen to obey but asked for troops
 			else if(choice == 2)
 			{
+				LocationFlags location;
+				location.deepCoastal = true;
+				location.europe = true;
+
 				//declaring limited war
 				GET_TEAM(kPlayer.getTeam()).declareWar(kEnemyPlayer.getTeam(),false, WARPLAN_LIMITED);
 
-				bool bSuccess = kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_KING_REINFORCEMENT_SEA", GLOBAL_DEFINE_KING_REINFORCEMENT_SEA, "", 0, LocationFlags::LocationFlagDeepCoastal);
+				bool bSuccess = kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_KING_REINFORCEMENT_SEA", GLOBAL_DEFINE_KING_REINFORCEMENT_SEA, "", 0, location);
 				if (bSuccess)
 				{
-					kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_KING_REINFORCEMENT_LAND", GLOBAL_DEFINE_KING_REINFORCEMENT_LAND, "TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS", 0, LocationFlags::LocationFlagDeepCoastal, false, false);
-					kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_KING_REINFORCEMENT_ARTIL", GLOBAL_DEFINE_KING_REINFORCEMENT_ARTIL, "", 0, LocationFlags::LocationFlagDeepCoastal);
+					kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_KING_REINFORCEMENT_LAND", GLOBAL_DEFINE_KING_REINFORCEMENT_LAND, "TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS", 0, location, false, false);
+					kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_KING_REINFORCEMENT_ARTIL", GLOBAL_DEFINE_KING_REINFORCEMENT_ARTIL, "", 0, location);
 				}
 				else	// we need to find an alternative since the Player seems to have not gotten a proper city
 							// we just give the player more land Units in his Capitol but no Sea Units
 				{
-					kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_KING_REINFORCEMENT_LAND", GLOBAL_DEFINE_KING_REINFORCEMENT_LAND + 1, "TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS", 0, LocationFlags::LocationFlagNone, false, false);
-					kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_KING_REINFORCEMENT_ARTIL", GLOBAL_DEFINE_KING_REINFORCEMENT_ARTIL + 1, "", 0, LocationFlags::LocationFlagNone);
+					kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_KING_REINFORCEMENT_LAND", GLOBAL_DEFINE_KING_REINFORCEMENT_LAND + 1, "TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS", 0, location, false, false);
+					kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_KING_REINFORCEMENT_ARTIL", GLOBAL_DEFINE_KING_REINFORCEMENT_ARTIL + 1, "", 0, location);
 				}
 
 				// WTP, ray, giving reinforcement to other Player as well - START
-				bSuccess = kEnemyPlayer.buyUnitFromParentPlayer(eEnemyParentPlayer, "UNITCLASS_KING_REINFORCEMENT_SEA", GLOBAL_DEFINE_KING_REINFORCEMENT_SEA, "", 0, LocationFlags::LocationFlagDeepCoastal);
+				bSuccess = kEnemyPlayer.buyUnitFromParentPlayer(eEnemyParentPlayer, "UNITCLASS_KING_REINFORCEMENT_SEA", GLOBAL_DEFINE_KING_REINFORCEMENT_SEA, "", 0, location);
 				if (bSuccess)
 				{
-					kEnemyPlayer.buyUnitFromParentPlayer(eEnemyParentPlayer, "UNITCLASS_KING_REINFORCEMENT_LAND", GLOBAL_DEFINE_KING_REINFORCEMENT_LAND, "TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER", 0, LocationFlags::LocationFlagDeepCoastal, false, false);
-					kEnemyPlayer.buyUnitFromParentPlayer(eEnemyParentPlayer, "UNITCLASS_KING_REINFORCEMENT_ARTIL", GLOBAL_DEFINE_KING_REINFORCEMENT_ARTIL, "", 0, LocationFlags::LocationFlagDeepCoastal);
+					kEnemyPlayer.buyUnitFromParentPlayer(eEnemyParentPlayer, "UNITCLASS_KING_REINFORCEMENT_LAND", GLOBAL_DEFINE_KING_REINFORCEMENT_LAND, "TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER", 0, location, false, false);
+					kEnemyPlayer.buyUnitFromParentPlayer(eEnemyParentPlayer, "UNITCLASS_KING_REINFORCEMENT_ARTIL", GLOBAL_DEFINE_KING_REINFORCEMENT_ARTIL, "", 0, location);
 				}
 				else	// we need to find an alternative since the other Player seems to have not gotten a proper city
 							// we just give the player more land Units in his Capitol but no Sea Units
 				{
-					kEnemyPlayer.buyUnitFromParentPlayer(eEnemyParentPlayer, "UNITCLASS_KING_REINFORCEMENT_LAND", GLOBAL_DEFINE_KING_REINFORCEMENT_LAND + 1, "TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER", 0, LocationFlags::LocationFlagNone, false, false);
-					kEnemyPlayer.buyUnitFromParentPlayer(eEnemyParentPlayer, "UNITCLASS_KING_REINFORCEMENT_ARTIL", GLOBAL_DEFINE_KING_REINFORCEMENT_ARTIL + 1, "", 0, LocationFlags::LocationFlagNone);
+					kEnemyPlayer.buyUnitFromParentPlayer(eEnemyParentPlayer, "UNITCLASS_KING_REINFORCEMENT_LAND", GLOBAL_DEFINE_KING_REINFORCEMENT_LAND + 1, "TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER", 0, location, false, false);
+					kEnemyPlayer.buyUnitFromParentPlayer(eEnemyParentPlayer, "UNITCLASS_KING_REINFORCEMENT_ARTIL", GLOBAL_DEFINE_KING_REINFORCEMENT_ARTIL + 1, "", 0, location);
 				}
 				// WTP, ray, giving reinforcement to other Player as well - END
 
@@ -22670,11 +22682,15 @@ void CvPlayer::checkForRoyalIntervention()
 	// directly handle it in logic
 	else
 	{
-		if (buyUnitFromParentPlayer(getParent(), "UNITCLASS_ROYAL_INTERVENTIONS_SHIP", 1, "", 0, LocationFlags::LocationFlagDeepCoastal, false, false))
+		LocationFlags location;
+		location.deepCoastal = true;
+		location.europe = true;
+
+		if (buyUnitFromParentPlayer(getParent(), "UNITCLASS_ROYAL_INTERVENTIONS_SHIP", 1, "", 0, location, false, false))
 		{
 			// it is possible to buy the ship from the parent player
-			buyUnitFromParentPlayer(getParent(), "UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_1", 1, "", 0, LocationFlags::LocationFlagDeepCoastal, false, false);
-			buyUnitFromParentPlayer(getParent(), "UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_2", 1, "", 0, LocationFlags::LocationFlagDeepCoastal, false, false);
+			buyUnitFromParentPlayer(getParent(), "UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_1", 1, "", 0, location, false, false);
+			buyUnitFromParentPlayer(getParent(), "UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_2", 1, "", 0, location, false, false);
 
 			// if AI has the money
 			if (getGold() > iGoldModifiedByAttitude)
