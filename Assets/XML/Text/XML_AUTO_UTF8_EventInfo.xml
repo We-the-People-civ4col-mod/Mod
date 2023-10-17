@@ -2788,15 +2788,18 @@
         <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_MEETING_1</Tag>
         <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] the friendship was celebrated with a great festivity and future trade was promised.</English>
         <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] wurde die Freundschaft mit einem großen Palaver gefeiert und zukünftiger Handel beschlossen.</German>
+        <Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] на большой ярмарке заключили множество союзов и торговых сделок.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_MEETING_2</Tag>
         <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] native people scalped and murdered local traders.</English>
         <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben die Ureinwohner lokale Händler skalpiert und ermordet.</German>
+        <Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] краснокожие демоны скальпировали и убили местных торговцев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_MEETING_3</Tag>
         <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a friendly meeting between settlers and native people took place.</English>
         <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] fand ein freundschaftliches Treffen zwischen Siedlern und Ureinwohnern statt.</German>
+        <Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] состоялась дружеская встреча индейцев и европейских поселенцев.</Russian>
     </TEXT>
 </Civ4GameText>
