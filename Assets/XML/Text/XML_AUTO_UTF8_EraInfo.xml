@@ -2,13 +2,13 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
         <Tag>TXT_KEY_ERA_COLONIAL</Tag>
-        <English>Colonial</English>
+        <English>Colonial (not implemented)</English>
         <French>
-            <Text>Coloniale</Text>
+            <Text>Coloniale (ne pas utiliser)</Text>
             <Gender>Female</Gender>
             <Plural>0:0:1:1</Plural>
         </French>
-        <German>Kolonial</German>
+        <German>Kolonial (nicht verfügbar)</German>
         <Italian>
             <Text>Coloniale</Text>
             <Gender>Female</Gender>
@@ -56,14 +56,14 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ERA_EXPANSION</Tag>
-        <English>Expansion</English>
+        <English>Expansion (not implemented)</English>
         <French>
-            <Text>Expansion</Text>
+            <Text>Expansion (ne pas utiliser)</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Expansion</Text>
+            <Text>Expansion (nicht verfügbar)</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
@@ -85,14 +85,14 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ERA_INDEPENDENCE</Tag>
-        <English>Independence</English>
+        <English>Independence (not implemented)</English>
         <French>
-            <Text>Indépendance</Text>
+            <Text>Indépendance (ne pas utiliser)</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Unabhängigkeit</Text>
+            <Text>Unabhängigkeit (nicht verfügbar)</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
