@@ -7408,6 +7408,11 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
+        <French>
+            <Text>Marchand chez les indigènes courageux:Marchands chez les indigènes courageux </Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
         <German>
             <Text>Couragierter Ureinwohnerhändler:Couragierter Ureinwohnerhändler</Text>
             <Gender>Male</Gender>
