@@ -2112,7 +2112,7 @@ class SmallMaps :
                             #ray Savannah
                             # Chose Terrain
                             iRandTerrain = PRand.random()
-                            if iRandTerrain <= 0.5: 
+                            if iRandTerrain <= 0.6: 
                                 self.terrainMap[i] = mc.MARSH
                             else:
                                 self.terrainMap[i] = mc.SAVANNAH
@@ -2122,7 +2122,14 @@ class SmallMaps :
                                 self.plotMap[i] = mc.HILLS
                             #ray Savannah End
                         else:
-                            self.terrainMap[i] = mc.GRASS
+                            iRandTerrain = PRand.random()
+                            if iRandTerrain <= 0.4: 
+                                self.terrainMap[i] = mc.GRASS
+                            elif iRandTerrain <= 0.8: 
+                                self.terrainMap[i] = mc.PLAINS
+                            else:
+                                self.terrainMap[i] = mc.SAVANNAH
+
 
         #Make sure ice is always higher than tundra, and tundra is always higher than
         #everything else
