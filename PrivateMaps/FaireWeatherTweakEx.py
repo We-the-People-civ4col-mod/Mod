@@ -2128,7 +2128,7 @@ class SmallMaps :
                         else:
                             iRandTerrain = PRand.random()
                             if iRandTerrain <= 0.2: 
-                                self.terrainMap[i] = mc.PLAINS
+                                self.terrainMap[i] = mc.GRASS
                             elif iRandTerrain <= 0.4: 
                                 self.terrainMap[i] = mc.PLAINS
                             else:
