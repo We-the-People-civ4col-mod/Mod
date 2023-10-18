@@ -4956,18 +4956,26 @@ def generateShrubland():
     terrainShrubland = gc.getInfoTypeForString("TERRAIN_SHRUBLAND")
     terrainPrairie = gc.getInfoTypeForString("TERRAIN_PLAINS")
     terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
+    terrainGrassland = gc.getInfoTypeForString("TERRAIN_GRASS")
     terrainDesert = gc.getInfoTypeForString("TERRAIN_DESERT")
 
-    shrublandChance = 0.3 # Baseline chance for converting prairie to shrubland
+    shrublandChance = 0.5 # Baseline chance for converting terrains around desert to shrubland
+    shrublandNextToShrublandChance = 0.5 # Chance to create Shrubland next to other Shrubland
     
     # Convert some prairie that's adjaceant to desert to shrubland 
     for y in range(mc.height):
         for x in range(mc.width):
             plot = mmap.plot(x,y)
             if not plot.getPlotType() == PlotTypes.PLOT_PEAK:
-                if plot.getTerrainType() == terrainPrairie or plot.getTerrainType() == terrainPlains:
+                if plot.getTerrainType() == terrainPrairie or plot.getTerrainType() == terrainPlains or plot.getTerrainType() == terrainGrassland:
                     if isAnyAdjacentPlotTerrainType(x, y, terrainDesert):
                         if PRand.random() <= shrublandChance:
+                            plot.setTerrainType(terrainShrubland, True, True)
+                            iRandPlotType = PRand.random()
+                            if iRandPlotType <= 0.3: 
+                                plot.setPlotType(PlotTypes.PLOT_HILLS,True,True)
+                    elif isAnyAdjacentPlotTerrainType(x, y, terrainShrubland):
+                        if PRand.random() <= shrublandNextToShrublandChance:
                             plot.setTerrainType(terrainShrubland, True, True)
                             iRandPlotType = PRand.random()
                             if iRandPlotType <= 0.3: 
