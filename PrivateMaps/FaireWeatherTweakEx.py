@@ -2114,7 +2114,10 @@ class SmallMaps :
                             if PRand.random() <= 0.3: 
                                 self.terrainMap[i] = mc.MARSH
                                 self.plotMap[i] = mc.HILLS
-                            elif PRand.random() <= 0.6:
+                            elif PRand.random() <= 0.5: 
+                                self.terrainMap[i] = mc.SAVANNAH
+                                self.plotMap[i] = mc.HILLS
+                            elif PRand.random() <= 0.7:
                                 self.terrainMap[i] = mc.MARSH
                             else:
                                 self.terrainMap[i] = mc.SAVANNAH
