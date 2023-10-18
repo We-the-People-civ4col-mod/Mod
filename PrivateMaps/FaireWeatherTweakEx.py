@@ -2099,7 +2099,11 @@ class SmallMaps :
                         if self.rainFallMap[i] < ((PRand.random() * (self.grassThreshold - self.plainsThreshold) + self.grassThreshold - self.plainsThreshold))/2.0 + self.plainsThreshold: 
                             self.terrainMap[i] = mc.GRASS
                         else:
-                            self.terrainMap[i] = mc.GRASS
+                            iRandTerrain = PRand.random()
+                            if iRandTerrain <= 0.3: 
+                                self.terrainMap[i] = mc.GRASS
+                            else:
+                                self.terrainMap[i] = mc.SAVANNAH
                 else:
                     if self.averageTempMap[i] < mc.SnowTemp:
                         self.terrainMap[i] = mc.SNOW
@@ -2112,7 +2116,7 @@ class SmallMaps :
                             #ray Savannah
                             # Chose Terrain
                             iRandTerrain = PRand.random()
-                            if iRandTerrain <= 0.6: 
+                            if iRandTerrain <= 0.7: 
                                 self.terrainMap[i] = mc.MARSH
                             else:
                                 self.terrainMap[i] = mc.SAVANNAH
@@ -2125,7 +2129,7 @@ class SmallMaps :
                             iRandTerrain = PRand.random()
                             if iRandTerrain <= 0.4: 
                                 self.terrainMap[i] = mc.GRASS
-                            elif iRandTerrain <= 0.8: 
+                            elif iRandTerrain <= 0.7: 
                                 self.terrainMap[i] = mc.PLAINS
                             else:
                                 self.terrainMap[i] = mc.SAVANNAH
