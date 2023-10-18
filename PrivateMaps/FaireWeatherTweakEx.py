@@ -4980,7 +4980,7 @@ def generateTaiga():
     terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
     
     tundraToTaigaChance = 0.4 # Baseline chance to convert Tundra To Taiga
-    taigaNearTundraChance = 0.2 # Baseline chance for converting other terrain next to Tundar to Taiga
+    taigaNearTundraChance = 0.1 # Baseline chance for converting other terrain next to Tundar to Taiga
     
     # Convert some plot to Taiga
     for y in range(mc.height):
