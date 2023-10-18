@@ -96,7 +96,7 @@ public:
 	void setCityCatchmentRadiusNoMapMaker(int iSetting);
 
 	// debug code, might be slow
-	CyInfoArray* getTerrainCount() const;
+	CyInfoArray* getTerrainCount(bool bHills) const;
 
 protected:
 	CvMap* m_pMap;
