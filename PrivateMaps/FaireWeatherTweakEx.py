@@ -5056,8 +5056,8 @@ def generateWetland():
     terrainDesert = gc.getInfoTypeForString("TERRAIN_DESERT")
     terrainTundra = gc.getInfoTypeForString("TERRAIN_TUNDRA")
     
-    wetlandChance = 0.2 # Baseline chance for converting terrain
-    wetlandAdjacentChance = 0.4 # Higher chance if there's already adjacent wetland
+    wetlandChance = 0.1 # Baseline chance for converting terrain
+    wetlandAdjacentChance = 0.5 # Higher chance if there's already adjacent wetland
     wetlandHillChance = 0.5
 
     # Convert non-dry river plots
