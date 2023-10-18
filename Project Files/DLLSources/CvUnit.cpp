@@ -142,6 +142,14 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 		}
 	}
 
+	if (isTempUnit() || iBirthmark == UNIT_BIRTHMARK_TEMP_UNIT)
+	{
+		AI_init(iBirthmark);
+		jumpTo(initCoord, false, false);
+		return;
+	}
+
+	
 	// TAC - Great General Names - Ray - START
 	//Neuer Code
 	//identifiziere General anhand UnitClass
@@ -10688,7 +10696,6 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 
 	// Temp units do not really exist, and are just used to provide a data anchor for virtual pathing calculations.
 	// As such they do not need to process their position into the wider game state and indeed should not without additional concurrency protection.
-	/*
 	if (isTempUnit())
 	{
 		m_coord = toCoord;
@@ -10698,7 +10705,6 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 		}
 		return;
 	}
-	*/
 
 	FAssert(!at(toCoord) || coord().isInvalidPlotCoord());
 	FAssert(!isFighting());

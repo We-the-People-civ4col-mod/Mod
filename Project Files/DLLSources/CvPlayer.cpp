@@ -319,7 +319,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_aiTradeMessageCommissions.clear();
 	// TAC - Trade Messages - koma13 - END
 
-	m_pTempUnit = NULL;
+	m_pTempUnit = NULL; // (CvUnit*)-1;
 
 	if (!bConstructorCall)
 	{
@@ -9988,9 +9988,16 @@ CvUnit* CvPlayer::firstUnit(int *pIterIdx) const
 {
 	CvUnit* pUnit = firstUnitInternal(pIterIdx);
 
-	if (pUnit == m_pTempUnit)
+	if (pUnit != NULL)
 	{
-		pUnit = firstUnitInternal(pIterIdx);
+		if (pUnit == m_pTempUnit)
+		{
+			pUnit = firstUnitInternal(pIterIdx);
+		}
+		else
+		{
+			return pUnit;
+		}
 	}
 
 	return pUnit;
@@ -10023,9 +10030,16 @@ CvUnit* CvPlayer::nextUnit(int *pIterIdx) const
 {
 	CvUnit* pUnit = nextUnitInternal(pIterIdx);
 
-	if (pUnit == m_pTempUnit)
+	if (pUnit != NULL)
 	{
-		pUnit = nextUnitInternal(pIterIdx);
+		if (pUnit == m_pTempUnit)
+		{ 
+			pUnit = nextUnitInternal(pIterIdx);
+		}
+		else
+		{
+			return pUnit;
+		}
 	}
 
 	return pUnit;
@@ -20135,6 +20149,8 @@ bool CvPlayer::checkPopulation() const
 	}
 	// R&R, ray, Port Royal - END
 
+	const int iTotalPopulation = getTotalPopulation();
+	FAssert(iNumPopulation == iTotalPopulation);
 	return (iNumPopulation == getTotalPopulation());
 }
 
@@ -20146,6 +20162,9 @@ bool CvPlayer::checkPower(bool bReset)
 	int iLoop;
 	for (CvUnit* pUnit = firstUnit(&iLoop); pUnit != NULL; pUnit = nextUnit(&iLoop))
 	{
+		if (pUnit->isTempUnit())
+			continue;
+
 		int iUnitPower = pUnit->getPower();
 		iPower += iUnitPower;
 		// large rivers power fix - Nightinggale - start
@@ -24933,8 +24952,10 @@ CvUnit* CvPlayer::getTempUnit(UnitTypes eUnit, int iX, int iY)
 	{
 		// TODO: Deal with profession type!
 		m_pTempUnit = initUnit(eUnit, NO_PROFESSION, Coordinates(iX, iY), NO_UNITAI, NO_DIRECTION, 0, UNIT_BIRTHMARK_TEMP_UNIT);
+		// TODO: assert that we did not change any statistics / counters like below!
 		((CvPlayerAI*)this)->AI_changeNumAIUnits(m_pTempUnit->AI_getUnitAIType(), -1);	//	This one doesn't count
 		removeGroupCycle(m_pTempUnit->getGroup()->getID());
+		//m_pTempUnit->joinGroup(NULL);
 	}
 
 	//	Set an arbitrary automation type - just need it to be flagged as automated	
