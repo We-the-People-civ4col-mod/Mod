@@ -4972,7 +4972,8 @@ def generateTaiga():
     terrainPrairie = gc.getInfoTypeForString("TERRAIN_PLAINS")
     terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
     
-    taigaChance = 0.6 # Baseline chance for converting terrain to Taiga
+    tundraToTaigaChance = 0.4 # Baseline chance to convert Tundra To Taiga
+    taigaNearTundraChance = 0.2 # Baseline chance for converting other terrain next to Tundar to Taiga
     
     # Convert some plot to Taiga
     for y in range(mc.height):
@@ -4981,11 +4982,19 @@ def generateTaiga():
             if not plot.getPlotType() == PlotTypes.PLOT_PEAK:
                 if plot.getTerrainType() == terrainGrassland or plot.getTerrainType() == terrainPrairie or plot.getTerrainType() == terrainPlains:
                     if isAnyAdjacentPlotTerrainType(x, y, terrainTundra):
-                        if PRand.random() <= taigaChance:
+                        if PRand.random() <= taigaNearTundraChance:
                             plot.setTerrainType(terrainTaiga, True, True)
                             # Generate some Hills
                             iRandPlotType = PRand.random()
                             if iRandPlotType <= 0.3: 
+                                plot.setPlotType(PlotTypes.PLOT_HILLS,True,True)
+                if plot.getTerrainType() == terrainTundra:
+                    if isAnyAdjacentPlotTerrainType(x, y, terrainTundra):
+                        if PRand.random() <= tundraToTaigaChance:
+                            plot.setTerrainType(terrainTaiga, True, True)
+                            # Generate some Hills
+                            iRandPlotType = PRand.random()
+                            if iRandPlotType <= 0.2: 
                                 plot.setPlotType(PlotTypes.PLOT_HILLS,True,True)
 
 def generateRockSteppes():
