@@ -5538,7 +5538,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_SAILCLOTH_DONE</Tag>
-        <English>Milord, in obedience to the orders of His Majesty we're now the market leader for [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT]. His Majesty is in a generous mood and wants to reward us.</English>        <French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant de [COLOR_FONT_GOLD]voiles[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
+        <English>Milord, in obedience to the orders of His Majesty we're now the market leader for [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT]. His Majesty is in a generous mood and wants to reward us.</English>
+        <French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant de [COLOR_FONT_GOLD]voiles[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
         <German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
         <Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]парусины[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
     </TEXT>
