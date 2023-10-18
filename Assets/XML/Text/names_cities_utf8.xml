@@ -5463,1701 +5463,2126 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_0</Tag>
 		<English>Ossossane</English>
+		<Russian>Оссоссане</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_1</Tag>
 		<English>Ihonatiria</English>
+		<Russian>Ихонатирия</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_2</Tag>
 		<English>Teanhatenaron</English>
+		<Russian>Теанхатенарон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_3</Tag>
 		<English>Touaguainchain</English>
+		<Russian>Туагуайнчейн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_4</Tag>
 		<English>Cahiague</English>
+		<Russian>Каиаге</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_5</Tag>
 		<English>Teanaustayae</English>
+		<Russian>Теанаустайе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_6</Tag>
 		<English>Scanonaerat</English>
+		<Russian>Сканонаэрат</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_7</Tag>
 		<English>Anonatea</English>
+		<Russian>Анонатея</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_8</Tag>
 		<English>Endarahy</English>
+		<Russian>Эндарахи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_9</Tag>
 		<English>Iaenhouton</English>
+		<Russian>Йенхутон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_10</Tag>
 		<English>Arontaen</English>
+		<Russian>Аронтен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_11</Tag>
 		<English>Angoutenc</English>
+		<Russian>Ангутенк</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_12</Tag>
 		<English>Oukhahitoua</English>
+		<Russian>Уухахитуа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_13</Tag>
 		<English>Carhagouha</English>
+		<Russian>Кархагуха</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_14</Tag>
 		<English>Ouenrio</English>
+		<Russian>Ouenrio</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_15</Tag>
 		<English>Arente</English>
+		<Russian>Аренте</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_16</Tag>
 		<English>Tondakhra</English>
+		<Russian>Тондахра</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_17</Tag>
 		<English>Khioetoa</English>
+		<Russian>Киоэтоа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_18</Tag>
 		<English>Contarea</English>
+		<Russian>Контареа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_19</Tag>
 		<English>Andiata</English>
+		<Russian>Андиата</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_20</Tag>
 		<English>Khinonascarant</English>
+		<Russian>Хинонаскарант</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_21</Tag>
 		<English>Onentisati</English>
+		<Russian>Онентисати</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_22</Tag>
 		<English>Ekhiondatsaan</English>
+		<Russian>Эхиондацаан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_23</Tag>
 		<English>Arendaonatia </English>
+		<Russian>Арендаонатия</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_24</Tag>
 		<English>Junqusindundeh</English>
+		<Russian>Джункусиндунде</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_25</Tag>
 		<English>Karenhassa</English>
+		<Russian>Каренхасса</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_26</Tag>
 		<English>Teandewiata</English>
+		<Russian>Теандевиата</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_CITY_27</Tag>
 		<English>Carmaron</English>
+		<Russian>Кармарон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_0</Tag>
 		<English>Danibaan</English>
+		<Russian>Данибаан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_1</Tag>
 		<English>Lyobaa</English>
+		<Russian>Любаа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_2</Tag>
 		<English>Zaachila-Yoo</English>
+		<Russian>Заачила-Ю</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_3</Tag>
 		<English>Guiengola</English>
+		<Russian>Гиенгола</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_4</Tag>
 		<English>Huijazoo</English>
+		<Russian>Уиджазу</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_5</Tag>
 		<English>Yagul</English>
+		<Russian>Ягул</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_6</Tag>
 		<English>Dainzu</English>
+		<Russian>Даинзу</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_7</Tag>
 		<English>Lambityeco</English>
+		<Russian>Ламбитеко</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_8</Tag>
 		<English>Guila Naquitz</English>
+		<Russian>Гила Накиц</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_9</Tag>
 		<English>Zegache</English>
+		<Russian>Зегаче</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_10</Tag>
 		<English>Guisisi Gui</English>
+		<Russian>Гуисиси Ги</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_11</Tag>
 		<English>Lachiroo</English>
+		<Russian>Лачиру</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_12</Tag>
 		<English>Guillbaan</English>
+		<Russian>Гийбан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_13</Tag>
 		<English>Xaguixe</English>
+		<Russian>Ксагише</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_14</Tag>
 		<English>Tejao</English>
+		<Russian>Теджао</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_15</Tag>
 		<English>Naxhingee</English>
+		<Russian>Наксинги</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_16</Tag>
 		<English>Miahuatlan</English>
+		<Russian>Миауатлан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_17</Tag>
 		<English>Nejapa</English>
+		<Russian>Неджапа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_18</Tag>
 		<English>Huaxyacac</English>
+		<Russian>Уаксиакак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_19</Tag>
 		<English>Nochixtian</English>
+		<Russian>Ночиштианский</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_20</Tag>
 		<English>Atepec</English>
+		<Russian>Атепек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_21</Tag>
 		<English>Ozolotepec</English>
+		<Russian>Озолотепец</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_22</Tag>
 		<English>Kaimasatchu</English>
+		<Russian>Каймасатчу</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_23</Tag>
 		<English>Tomaltepec</English>
+		<Russian>Томалтепек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_24</Tag>
 		<English>Tlapacoyan</English>
+		<Russian>Тлапакоян</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_25</Tag>
 		<English>Tuxtepec</English>
+		<Russian>Тустепек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_26</Tag>
 		<English>Xoxocotlan</English>
+		<Russian>Ксоксокотлан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_27</Tag>
 		<English>Ixtepec</English>
+		<Russian>Икстепек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_28</Tag>
 		<English>Atzompa</English>
+		<Russian>Ацомпа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_29</Tag>
 		<English>Pochutla</English>
+		<Russian>Почутла</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_30</Tag>
 		<English>Atempa</English>
+		<Russian>Атемпа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_CITY_31</Tag>
 		<English>Jamiltepec</English>
+		<Russian>Джамильтепек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_0</Tag>
 		<English>Itatin</English>
+		<Russian>Итатин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_1</Tag>
 		<English>Tobatin</English>
+		<Russian>Итатин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_2</Tag>
 		<English>Takuara</English>
+		<Russian>Такуара</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_3</Tag>
 		<English>Kaiowa</English>
+		<Russian>Кайова</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_4</Tag>
 		<English>Mborore</English>
+		<Russian>Мбороре</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_5</Tag>
 		<English>Mbya</English>
+		<Russian>Мбия</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_6</Tag>
 		<English>Nandeva</English>
+		<Russian>Нандева</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_7</Tag>
 		<English>Cario</English>
+		<Russian>Карио</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_8</Tag>
 		<English>Mbaracayu</English>
+		<Russian>Мбаракаю</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_9</Tag>
 		<English>Parana</English>
+		<Russian>Парана</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_10</Tag>
 		<English>Mlove</English>
+		<Russian>Млове</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_11</Tag>
 		<English>Angatupry</English>
+		<Russian>Ангатупри</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_12</Tag>
 		<English>Pombero</English>
+		<Russian>Помберо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_13</Tag>
 		<English>Abaangui</English>
+		<Russian>Абаанги</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_14</Tag>
 		<English>Jurupari</English>
+		<Russian>Джурупари</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_15</Tag>
 		<English>Yande Yari</English>
+		<Russian>Янде Яри</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_16</Tag>
 		<English>Mala</English>
+		<Russian>Мала</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_17</Tag>
 		<English>Yvyguy</English>
+		<Russian>Ивыгуй</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_18</Tag>
 		<English>Mboi Tui</English>
+		<Russian>Мбои Туи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_19</Tag>
 		<English>Jasy Jetere</English>
+		<Russian>Яси Джетере</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_20</Tag>
 		<English>Kurupi</English>
+		<Russian>Курупи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_21</Tag>
 		<English>Ao Ao</English>
+		<Russian>Ао Ао</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_22</Tag>
 		<English>Teju</English>
+		<Russian>Теджу</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_23</Tag>
 		<English>Jagua</English>
+		<Russian>Ягуа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_24</Tag>
 		<English>Luison</English>
+		<Russian>Луисон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_25</Tag>
 		<English>Tupan</English>
+		<Russian>Тупан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_26</Tag>
 		<English>Arasy</English>
+		<Russian>Арасы</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_27</Tag>
 		<English>Aregua</English>
+		<Russian>Арегуа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_28</Tag>
 		<English>Rupave</English>
+		<Russian>Рупаве</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_29</Tag>
 		<English>Sypave</English>
+		<Russian>Сюпаве</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_30</Tag>
 		<English>Tume</English>
+		<Russian>Туме</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_31</Tag>
 		<English>Arandu</English>
+		<Russian>Аранду</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_CITY_32</Tag>
 		<English>Kerana</English>
+		<Russian>Керана</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_0</Tag>
 		<English>Karie</English>
+		<Russian>Карие</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_1</Tag>
 		<English>Yarra</English>
+		<Russian>Ярра</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_2</Tag>
 		<English>Airpo</English>
+		<Russian>Аирпо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_3</Tag>
 		<English>Charuma</English>
+		<Russian>Чарума</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_4</Tag>
 		<English>Guanapo</English>
+		<Russian>Гуанапо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_5</Tag>
 		<English>Makeripe</English>
+		<Russian>Макарипе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_6</Tag>
 		<English>Talparo</English>
+		<Russian>Тальпаро</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_7</Tag>
 		<English>Guatoapajaro</English>
+		<Russian>Гуатоапахаро</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_8</Tag>
 		<English>Siparia</English>
+		<Russian>Сипария</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_9</Tag>
 		<English>Palmiste</English>
+		<Russian>Пальмисте</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_10</Tag>
 		<English>Aruaca</English>
+		<Russian>Аруака</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_11</Tag>
 		<English>Carapanchima</English>
+		<Russian>Карапанчима</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_12</Tag>
 		<English>Guayaguayare</English>
+		<Russian>Гуаягуаяре</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_13</Tag>
 		<English>Matelot</English>
+		<Russian>Мателот</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_14</Tag>
 		<English>Irois</English>
+		<Russian>Ируа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_15</Tag>
 		<English>Caroni</English>
+		<Russian>Карони</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_16</Tag>
 		<English>Tabaquite</English>
+		<Russian>Табакит</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_17</Tag>
 		<English>Paria</English>
+		<Russian>Пария</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_18</Tag>
 		<English>Oropuche</English>
+		<Russian>Оропуче</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_19</Tag>
 		<English>Turure</English>
+		<Russian>Туруре</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_20</Tag>
 		<English>Navet</English>
+		<Russian>Навет</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_21</Tag>
 		<English>Maruga</English>
+		<Russian>Маруга</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_22</Tag>
 		<English>Tacarigua</English>
+		<Russian>Такаригуа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_23</Tag>
 		<English>Kalipuna</English>
+		<Russian>Калипуна</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_CITY_24</Tag>
 		<English>Yaio</English>
+		<Russian>Яйо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_0</Tag>
 		<English>Ta Chee</English>
+		<Russian>Та Чи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_1</Tag>
 		<English>Sis Na' Jin</English>
+		<Russian>Сис На' Джин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_2</Tag>
 		<English>Tse Nee Tat</English>
+		<Russian>Це Ни Тат</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_3</Tag>
 		<English>Ash Chee</English>
+		<Russian>Эш Чи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_4</Tag>
 		<English>Tqo Toda Sihee</English>
+		<Russian>Тко Тода Сихэ</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_5</Tag>
 		<English>Dzil Na'odili</English>
+		<Russian>Дзил На'одили</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_6</Tag>
 		<English>Tse Dzinki'ni</English>
+		<Russian>Це Дзинки'ни</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_7</Tag>
 		<English>Haskendine</English>
+		<Russian>Хаскендайн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_8</Tag>
 		<English>Tqo Dzil</English>
+		<Russian>Тко Дзил</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_9</Tag>
 		<English>Tse'tlani</English>
+		<Russian>Це'тлани</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_10</Tag>
 		<English>Nat Ege Saka'te</English>
+		<Russian>Нат Эге Сака'те</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_11</Tag>
 		<English>Tsa Ya Hat Tso</English>
+		<Russian>Ца Йа Хат Цо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_12</Tag>
 		<English>Carrizos</English>
+		<Russian>Каррисос</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_13</Tag>
 		<English>Tqo Hee Tle</English>
+		<Russian>Тко Хи Тле</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_14</Tag>
 		<English>Zuni</English>
+		<Russian>Зуни</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_15</Tag>
 		<English>Tohatchi</English>
+		<Russian>Тохатчи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_16</Tag>
 		<English>Mancos</English>
+		<Russian>Манкос</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_17</Tag>
 		<English>Tsa Ha Gaye</English>
+		<Russian>Ца Ха Гайе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_18</Tag>
 		<English>Tse'hoghan</English>
+		<Russian>Це'хоган</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_19</Tag>
 		<English>To'waya'lane</English>
+		<Russian>Ту'вайя'лейн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_20</Tag>
 		<English>Taaitalone</English>
+		<Russian>Таиталоне</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_21</Tag>
 		<English>Chol'i'i</English>
+		<Russian>Чол'и'и</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_22</Tag>
 		<English>Tqo Bit'cloch</English>
+		<Russian>Тку Бит'клох</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_23</Tag>
 		<English>Tse'the Neesa'en</English>
+		<Russian>Це'те Ниса'ен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_24</Tag>
 		<English>To Dotsos</English>
+		<Russian>Ту Дотсос</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_CITY_25</Tag>
 		<English>Tqo Yah Ha'tline</English>
+		<Russian>Тко Ях Хатлайн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_0</Tag>
 		<English>Werowacomoco</English>
+		<Russian>Веровокомоко</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_1</Tag>
 		<English>Orapaks</English>
+		<Russian>Орапакс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_2</Tag>
 		<English>Pamunkey</English>
+		<Russian>Памунки</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_3</Tag>
 		<English>Paspahegh</English>
+		<Russian>Паспахех</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_4</Tag>
 		<English>Potomac</English>
+		<Russian>Потомак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_5</Tag>
 		<English>Appomattoc</English>
+		<Russian>Аппоматтокс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_6</Tag>
 		<English>Chawopo</English>
+		<Russian>Чавопо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_7</Tag>
 		<English>Chesapeak</English>
+		<Russian>Чесапик</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_8</Tag>
 		<English>Kerahocak</English>
+		<Russian>Керахокак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_9</Tag>
 		<English>Mattanock</English>
+		<Russian>Мэттанок</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_10</Tag>
 		<English>Wannemoisett</English>
+		<Russian>Ваннемуазетт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_11</Tag>
 		<English>Sowams</English>
+		<Russian>Совамс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_12</Tag>
 		<English>Matianuck</English>
+		<Russian>Матианук</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_13</Tag>
 		<English>Aptucxet</English>
+		<Russian>Аптуксет</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_14</Tag>
 		<English>Natick</English>
+		<Russian>Натик</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_15</Tag>
 		<English>Rappahannock</English>
+		<Russian>Раппаханнок</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_16</Tag>
 		<English>Ritanoe</English>
+		<Russian>Ританое</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_17</Tag>
 		<English>Secobec</English>
+		<Russian>Секобек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_18</Tag>
 		<English>Norridgewock</English>
+		<Russian>Норриджвок</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_19</Tag>
 		<English>Pequawket</English>
+		<Russian>Пеквакет</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_20</Tag>
 		<English>Odanak</English>
+		<Russian>Оданак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_21</Tag>
 		<English>Mistinni</English>
+		<Russian>Мистинни</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_22</Tag>
 		<English>Washoganish</English>
+		<Russian>Вашоганиш</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_23</Tag>
 		<English>Nemiscau</English>
+		<Russian>Немискау</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_24</Tag>
 		<English>Eskippakithiki</English>
+		<Russian>Эскиппакитики</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_25</Tag>
 		<English>Sonnionto</English>
+		<Russian>Соннионто</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_26</Tag>
 		<English>Suwanee</English>
+		<Russian>Сувани</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_27</Tag>
 		<English>Wakatomika</English>
+		<Russian>Вакатомика</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_CITY_28</Tag>
 		<English>Shekomeko</English>
+		<Russian>Шекомеко</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_CITY_0</Tag>
 		<English>Cariries</English>
+		<Russian>Карири</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_CITY_1</Tag>
 		<English>Manaus</English>
+		<Russian>Манаус</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_CITY_2</Tag>
 		<English>Coari</English>
+		<Russian>Коари</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_CITY_3</Tag>
 		<English>Tabating</English>
+		<Russian>Табатинг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_CITY_4</Tag>
 		<English>Aparia</English>
+		<Russian>Апария</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_CITY_5</Tag>
 		<English>Aguas</English>
+		<Russian>Агуас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_CITY_6</Tag>
 		<English>Manicuri</English>
+		<Russian>Маникури</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_CITY_7</Tag>
 		<English>Tapuyas</English>
+		<Russian>Тапуяс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_CITY_8</Tag>
 		<English>Mepuri</English>
+		<Russian>Мепури</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_CITY_9</Tag>
 		<English>Borba</English>
+		<Russian>Борба</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_CITY_10</Tag>
 		<English>Faro</English>
+		<Russian>Фаро</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_CITY_11</Tag>
 		<English>Obidocura</English>
+		<Russian>Обидокура</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_CITY_12</Tag>
 		<English>Alatansa</English>
+		<Russian>Алатанса</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_CITY_13</Tag>
 		<English>Tobatiri</English>
+		<Russian>Тобатири</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_CITY_14</Tag>
 		<English>Culamiri</English>
+		<Russian>Куламири</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_0</Tag>
 		<English>Xaltepec</English>
+		<Russian>Халтепек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_1</Tag>
 		<English>Ñuu Tnoo</English>
+		<Russian>Сюу Тноо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_2</Tag>
 		<English>Ñuu Ndecu</English>
+		<Russian>Сюу Ндеку</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_3</Tag>
 		<English>Sahayuca</English>
+		<Russian>Сахаюка</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_4</Tag>
 		<English>Ñuu Dee</English>
+		<Russian>Сюу Ди</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_5</Tag>
 		<English>Ndijiinu</English>
+		<Russian>Ндиджиину</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_6</Tag>
 		<English>Yucu Dzaa</English>
+		<Russian>Юку Дзаа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_7</Tag>
 		<English>Yucuñudahui</English>
+		<Russian>Юкунюдахуи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_8</Tag>
 		<English>Dzandaya</English>
+		<Russian>Дзандая</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_9</Tag>
 		<English>Yodzocoo</English>
+		<Russian>Йодзокоо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_10</Tag>
 		<English>Chiyo Cahnu</English>
+		<Russian>Чиё Кану</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_11</Tag>
 		<English>Ñuu Ndaya</English>
+		<Russian>Сюу Ндайя</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_12</Tag>
 		<English>Yucunindaba</English>
+		<Russian>Юкуниндаба</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_13</Tag>
 		<English>Yukuita</English>
+		<Russian>Юкуита</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_14</Tag>
 		<English>Juxtlahuaca</English>
+		<Russian>Хукстлауака</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_15</Tag>
 		<English>Diquiyu</English>
+		<Russian>Дикию</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_16</Tag>
 		<English>Tilantongo</English>
+		<Russian>Тилантонго</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_17</Tag>
 		<English>Achiutla</English>
+		<Russian>Ачиутла</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_18</Tag>
 		<English>Cuilapan</English>
+		<Russian>Куилапан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_19</Tag>
 		<English>Huajuapan</English>
+		<Russian>Хуахуапан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_20</Tag>
 		<English>Mitla</English>
+		<Russian>Митла</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_21</Tag>
 		<English>Tlaxiaco</English>
+		<Russian>Тлаксиако</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_22</Tag>
 		<English>Tututepec</English>
+		<Russian>Тутутепек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_23</Tag>
 		<English>Juxtlahuaca</English>
+		<Russian>Хукстлауака</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_24</Tag>
 		<English>Etla</English>
+		<Russian>Этла</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_25</Tag>
 		<English>Cosolapa</English>
+		<Russian>Косолапа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_26</Tag>
 		<English>Tapanatepec</English>
+		<Russian>Тапанатепек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_27</Tag>
 		<English>Zanatepec</English>
+		<Russian>Занатепек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_28</Tag>
 		<English>Tlalixtac</English>
+		<Russian>Тлаликстак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_29</Tag>
 		<English>Acatlan</English>
+		<Russian>Акатлан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_30</Tag>
 		<English>Xadani</English>
+		<Russian>Хадани</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_31</Tag>
 		<English>Quetzal</English>
+		<Russian>Кецаль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_CITY_32</Tag>
 		<English>Mictlantongo</English>
+		<Russian>Миктлантонго</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_CITY_0</Tag>
 		<English>Boyaca</English>
+		<Russian>Бояка</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_CITY_1</Tag>
 		<English>Duitama</English>
+		<Russian>Дуитама</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_CITY_2</Tag>
 		<English>Tobasia</English>
+		<Russian>Тобасия</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_CITY_3</Tag>
 		<English>Paipa</English>
+		<Russian>Пайпа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_CITY_4</Tag>
 		<English>Cerinza</English>
+		<Russian>Серинца</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_CITY_5</Tag>
 		<English>Ocabita</English>
+		<Russian>Окабита</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_CITY_6</Tag>
 		<English>Onzaga</English>
+		<Russian>Онзага</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_CITY_7</Tag>
 		<English>Soata</English>
+		<Russian>Соата</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_CITY_8</Tag>
 		<English>Ibacucu</English>
+		<Russian>Ибакуку</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_CITY_9</Tag>
 		<English>Tibana</English>
+		<Russian>Тибана</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_CITY_10</Tag>
 		<English>Pisba</English>
+		<Russian>Писба</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_CITY_11</Tag>
 		<English>Topaga</English>
+		<Russian>Топага</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_CITY_12</Tag>
 		<English>Saboya</English>
+		<Russian>Сабойя</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_CITY_13</Tag>
 		<English>Tahuina</English>
+		<Russian>Тауина</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_CITY_14</Tag>
 		<English>Zaquencipa</English>
+		<Russian>Сакенсипа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_CITY_15</Tag>
 		<English>Initayulma</English>
+		<Russian>Инитаюлма</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_CITY_0</Tag>
 		<English>Ata Kahni</English>
+		<Russian>Ата Кахни</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_CITY_1</Tag>
 		<English>Nuenuhkiki</English>
+		<Russian>Нуэнухикики</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_CITY_2</Tag>
 		<English>Pake Kahni</English>
+		<Russian>Паке Кани</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_CITY_3</Tag>
 		<English>Tabe Nanika</English>
+		<Russian>Табе Наника</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_CITY_4</Tag>
 		<English>Tupi Wunu</English>
+		<Russian>Тупи Вуну</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_CITY_5</Tag>
 		<English>Ekatotsa</English>
+		<Russian>Экатоца</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_CITY_6</Tag>
 		<English>Pia Baa</English>
+		<Russian>Пиа Баа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_CITY_7</Tag>
 		<English>Taibo Sukui</English>
+		<Russian>Тайбо Сукуи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_CITY_8</Tag>
 		<English>Tupi Sokoobi</English>
+		<Russian>Тупи Сокуби</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_CITY_9</Tag>
 		<English>Kuhtu</English>
+		<Russian>Кухту</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_CITY_10</Tag>
 		<English>Nuetutsi</English>
+		<Russian>Нуэтутси</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_CITY_11</Tag>
 		<English>Omo Sumui</English>
+		<Russian>Омо Сумуи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_CITY_12</Tag>
 		<English>Tupi Takai</English>
+		<Russian>Тупи Такай</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_CITY_13</Tag>
 		<English>Nuetaloi</English>
+		<Russian>Нуэталои</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_CITY_14</Tag>
 		<English>Ata Lomoi</English>
+		<Russian>Ата Ломой</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_CITY_15</Tag>
 		<English>Tupi Lamasii</English>
+		<Russian>Тупи Ламасии</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_CITY_0</Tag>
 		<English>Acamuedzii</English>
+		<Russian>Акамуэдзии</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_CITY_1</Tag>
 		<English>Wanahunupi</English>
+		<Russian>Ванахунупи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_CITY_2</Tag>
 		<English>Suhuyoi</English>
+		<Russian>Сухуёй</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_CITY_3</Tag>
 		<English>Yo Gamatue</English>
+		<Russian>Йо Гаматуэ</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_CITY_4</Tag>
 		<English>Tu Nava</English>
+		<Russian>Ту Нава</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_CITY_5</Tag>
 		<English>Watuhad</English>
+		<Russian>Ватухад</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_CITY_6</Tag>
 		<English>Tu Nva</English>
+		<Russian>Ту Нва</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_CITY_7</Tag>
 		<English>Sohoduhatu</English>
+		<Russian>Соходухату</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_CITY_8</Tag>
 		<English>Ozao Win</English>
+		<Russian>Озао Вин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_CITY_9</Tag>
 		<English>Pae Uva</English>
+		<Russian>Пае Ува</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_CITY_10</Tag>
 		<English>Takussati</English>
+		<Russian>Такусати</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_CITY_11</Tag>
 		<English>Wazzobi-pida</English>
+		<Russian>Ваззоби-пида</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_CITY_12</Tag>
 		<English>Panossa Nnobi</English>
+		<Russian>Паносса Нноби</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_CITY_13</Tag>
 		<English>Tonomuccaidaa</English>
+		<Russian>Тономуккайдаа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_CITY_14</Tag>
 		<English>Toiva</English>
+		<Russian>Тойва</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_CITY_15</Tag>
 		<English>Wadoya</English>
+		<Russian>Вадоя</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_CITY_16</Tag>
 		<English>Kwadumba</English>
+		<Russian>Квадумба</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_CITY_17</Tag>
 		<English>Hugapa</English>
+		<Russian>Хугапа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_CITY_18</Tag>
 		<English>Suhuva</English>
+		<Russian>Сухува</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_CITY_0</Tag>
 		<English>Madidi</English>
+		<Russian>Мадиди</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_CITY_1</Tag>
 		<English>Tuichi</English>
+		<Russian>Туичи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_CITY_2</Tag>
 		<English>Puina</English>
+		<Russian>Пуина</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_CITY_3</Tag>
 		<English>Tahua</English>
+		<Russian>Тахуа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_CITY_4</Tag>
 		<English>Baturu</English>
+		<Russian>Батуру</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_CITY_5</Tag>
 		<English>Mojos</English>
+		<Russian>Моджос</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_CITY_6</Tag>
 		<English>Pata</English>
+		<Russian>Пата</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_CITY_7</Tag>
 		<English>Yuri</English>
+		<Russian>Юри</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_CITY_8</Tag>
 		<English>Hami</English>
+		<Russian>Хами</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_CITY_9</Tag>
 		<English>Toichos</English>
+		<Russian>Тойчос</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_CITY_10</Tag>
 		<English>Icaina</English>
+		<Russian>Икаина</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_CITY_11</Tag>
 		<English>Alnaijos</English>
+		<Russian>Алнайхос</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_CITY_12</Tag>
 		<English>Toami</English>
+		<Russian>Тоами</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_CITY_13</Tag>
 		<English>Batuchi</English>
+		<Russian>Батучи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_CITY_14</Tag>
 		<English>Latmini</English>
+		<Russian>Латмини</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_CITY_0</Tag>
 		<English>Kaposia</English>
+		<Russian>Капосия</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_CITY_1</Tag>
 		<English>Petchaleruhpaka</English>
+		<Russian>Петчалерухпака</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_CITY_2</Tag>
 		<English>Afognak</English>
+		<Russian>Афогнак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_CITY_3</Tag>
 		<English>Esekepkabuk</English>
+		<Russian>Эсекепкабук</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_CITY_4</Tag>
 		<English>Ashinadea</English>
+		<Russian>Ашинадея</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_CITY_5</Tag>
 		<English>Noota</English>
+		<Russian>Нута</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_CITY_6</Tag>
 		<English>Ehartsar</English>
+		<Russian>Эхарсар</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_CITY_7</Tag>
 		<English>Ahachik</English>
+		<Russian>Ахачик</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_CITY_8</Tag>
 		<English>Esachkabuk</English>
+		<Russian>Исачкабук</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_CITY_9</Tag>
 		<English>Hokarutcha</English>
+		<Russian>Хокаручча</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_CITY_10</Tag>
 		<English>Ahaharopirnopa</English>
+		<Russian>Ахахаропирнопа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_CITY_11</Tag>
 		<English>Oosabotsee</English>
+		<Russian>Оосаботзее</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_CITY_12</Tag>
 		<English>Booadasha</English>
+		<Russian>Буадаша</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_CITY_13</Tag>
 		<English>Ashbochiah</English>
+		<Russian>Ашбохия</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_CITY_14</Tag>
 		<English>Pareescar</English>
+		<Russian>Парискар</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_CITY_15</Tag>
 		<English>Ashkanena</English>
+		<Russian>Ашканена</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_CITY_16</Tag>
 		<English>Shiptetza</English>
+		<Russian>Шиптеца</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_CITY_17</Tag>
 		<English>Achepabecha</English>
+		<Russian>Ачепабеча</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_CITY_18</Tag>
 		<English>Laktarota</English>
+		<Russian>Лактарота</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_CITY_19</Tag>
 		<English>Shimeasha</English>
+		<Russian>Шимеаша</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_CITY_20</Tag>
 		<English>Efonak</English>
+		<Russian>Эфонак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_CITY_21</Tag>
 		<English>Metetza</English>
+		<Russian>Метеца</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_CITY_0</Tag>
 		<English>Piegan</English>
+		<Russian>Пиган</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_CITY_1</Tag>
 		<English>Kainai</English>
+		<Russian>Кайнай</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_CITY_2</Tag>
 		<English>Siksika</English>
+		<Russian>Сиксика</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_CITY_3</Tag>
 		<English>Tsuu T'ina</English>
+		<Russian>Цу Тина</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_CITY_4</Tag>
 		<English>Ahahnelin</English>
+		<Russian>Аханелин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_CITY_5</Tag>
 		<English>Inuck'siks</English>
+		<Russian>Инук'сикс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_CITY_6</Tag>
 		<English>Nitsiitapi</English>
+		<Russian>Нициитапи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_CITY_7</Tag>
 		<English>Apatohsipikani</English>
+		<Russian>Апатосипикани</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_CITY_8</Tag>
 		<English>Moh-Kins-Tsis</English>
+		<Russian>Мох-Кинс-Цис</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_CITY_9</Tag>
 		<English>Nitsitapii</English>
+		<Russian>Ницитапии</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_CITY_10</Tag>
 		<English>Ponokasisahta</English>
+		<Russian>Понокасисахта</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_CITY_11</Tag>
 		<English>Kaayihkimikoyi</English>
+		<Russian>Каайихкимикойи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_CITY_12</Tag>
 		<English>Omahskispatsikoyii</English>
+		<Russian>Омахскиспацикойии</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_CITY_13</Tag>
 		<English>Nitawahsin-nanni</English>
+		<Russian>Нитавасин-нанни</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_CITY_14</Tag>
 		<English>Miistakistsi</English>
+		<Russian>Мийтакикисти</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_CITY_15</Tag>
 		<English>Piik-siik-sii-naa</English>
+		<Russian>Пийк-сийк-сий-наа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_CITY_16</Tag>
 		<English>Ninastako</English>
+		<Russian>Нинастако</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_CITY_17</Tag>
 		<English>Pohasakcha</English>
+		<Russian>Похасакча</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_CITY_18</Tag>
 		<English>Muinaas</English>
+		<Russian>Муинаас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_CITY_0</Tag>
 		<English>Veraguas</English>
+		<Russian>Верагуас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_CITY_1</Tag>
 		<English>Chirqui</English>
+		<Russian>Шрики</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_CITY_2</Tag>
 		<English>Azuero</English>
+		<Russian>Асуэро</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_CITY_3</Tag>
 		<English>Cocle</English>
+		<Russian>Кокле</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_CITY_4</Tag>
 		<English>Nueruen</English>
+		<Russian>Нуэруэн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_CITY_5</Tag>
 		<English>Besiko</English>
+		<Russian>Бесико</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_CITY_6</Tag>
 		<English>Kankintu</English>
+		<Russian>Канкинту</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_CITY_7</Tag>
 		<English>Kusapin</English>
+		<Russian>Кусапин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_CITY_8</Tag>
 		<English>Mirono</English>
+		<Russian>Мироно</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_CITY_9</Tag>
 		<English>Muna</English>
+		<Russian>Муна</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_CITY_10</Tag>
 		<English>Burica</English>
+		<Russian>Бурица</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_CITY_11</Tag>
 		<English>Custina</English>
+		<Russian>Кустина</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_CITY_12</Tag>
 		<English>Luriapoin</English>
+		<Russian>Луриапоин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_CITY_13</Tag>
 		<English>Aterta</English>
+		<Russian>Атерта</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_CITY_14</Tag>
 		<English>Zumini</English>
+		<Russian>Зумини</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_CITY_15</Tag>
 		<English>Atotle</English>
+		<Russian>Атотле</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_CITY_16</Tag>
 		<English>Uimuitle</English>
+		<Russian>Уимуитл</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_CITY_17</Tag>
 		<English>Wanarin</English>
+		<Russian>Ванарин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_CITY_18</Tag>
 		<English>Iustari</English>
+		<Russian>Юстари</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_CITY_0</Tag>
 		<English>Tzintzuntzan</English>
+		<Russian>Цинцунцан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_CITY_1</Tag>
 		<English>Ihuatzio</English>
+		<Russian>Иуацио</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_CITY_2</Tag>
 		<English>Patzcuaro</English>
+		<Russian>Пацкуаро</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_CITY_3</Tag>
 		<English>Huandacareo</English>
+		<Russian>Уандакарео</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_CITY_4</Tag>
 		<English>Tepalcatepec</English>
+		<Russian>Тепалкатепек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_CITY_5</Tag>
 		<English>Apatzingan</English>
+		<Russian>Апацинган</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_CITY_6</Tag>
 		<English>Zinapecuaro</English>
+		<Russian>Зинапекуаро</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_CITY_7</Tag>
 		<English>Zacapu</English>
+		<Russian>Сакапу</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_CITY_8</Tag>
 		<English>Uruapan</English>
+		<Russian>Уруапан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_CITY_9</Tag>
 		<English>Tzitzio</English>
+		<Russian>Цицио</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_CITY_10</Tag>
 		<English>Cutzamala</English>
+		<Russian>Куцамала</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_CITY_11</Tag>
 		<English>Yacatecharo</English>
+		<Russian>Якатехаро</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_CITY_12</Tag>
 		<English>Lhotzio</English>
+		<Russian>Лхоцио</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_CITY_13</Tag>
 		<English>Cutopecu</English>
+		<Russian>Кутопеку</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_CITY_14</Tag>
 		<English>Ahuestze</English>
+		<Russian>Ахуэсце</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_CITY_15</Tag>
 		<English>Omiale</English>
+		<Russian>Омиале</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_CITY_16</Tag>
 		<English>Tepulpemaias</English>
+		<Russian>Тепульпемайас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_CITY_17</Tag>
 		<English>Lastariacho</English>
+		<Russian>Ластариачо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_CITY_18</Tag>
 		<English>Maiastero</English>
+		<Russian>Майастеро</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_CITY_19</Tag>
 		<English>Usucantu</English>
+		<Russian>Усуканту</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_CITY_0</Tag>
 		<English>Abraao</English>
+		<Russian>Абраао</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_CITY_1</Tag>
 		<English>Solimoes</English>
+		<Russian>Солимоэнс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_CITY_2</Tag>
 		<English>Ticuna</English>
+		<Russian>Тикуна</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_CITY_3</Tag>
 		<English>Tefe</English>
+		<Russian>Тефе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_CITY_4</Tag>
 		<English>Jaquiri</English>
+		<Russian>Джакири</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_CITY_5</Tag>
 		<English>Igarape</English>
+		<Russian>Игарапе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_CITY_6</Tag>
 		<English>Betel</English>
+		<Russian>Бетель</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_CITY_7</Tag>
 		<English>Kokama</English>
+		<Russian>Кокама</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_CITY_8</Tag>
 		<English>Cajuhiri</English>
+		<Russian>Каджухири</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_CITY_9</Tag>
 		<English>Napo</English>
+		<Russian>Напо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_CITY_10</Tag>
 		<English>Matura</English>
+		<Russian>Матура</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_CITY_11</Tag>
 		<English>Ampiyacu</English>
+		<Russian>Ампияку</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_CITY_12</Tag>
 		<English>Botyacu</English>
+		<Russian>Ботьяку</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_CITY_13</Tag>
 		<English>Sinare</English>
+		<Russian>Синаре</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_CITY_14</Tag>
 		<English>Taina</English>
+		<Russian>Таина</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_CITY_15</Tag>
 		<English>Lefese</English>
+		<Russian>Лефесе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_CITY_16</Tag>
 		<English>Moina</English>
+		<Russian>Мойна</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_CITY_17</Tag>
 		<English>Nama</English>
+		<Russian>Нама</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_CITY_18</Tag>
 		<English>Uitecue</English>
+		<Russian>Уитекуэ</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_CITY_0</Tag>
 		<English>Arauco</English>
+		<Russian>Арауко</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_CITY_1</Tag>
 		<English>Itata</English>
+		<Russian>Итата</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_CITY_2</Tag>
 		<English>Quinchamali</English>
+		<Russian>Кинчамали</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_CITY_3</Tag>
 		<English>Temucuicui</English>
+		<Russian>Темукуикуи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_CITY_4</Tag>
 		<English>Trawupeyum</English>
+		<Russian>Травупеюм</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_CITY_5</Tag>
 		<English>Curarruhue</English>
+		<Russian>Кюрарреуэ</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_CITY_6</Tag>
 		<English>Lago Budi</English>
+		<Russian>Лаго Буди</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_CITY_7</Tag>
 		<English>Maullin</English>
+		<Russian>Мауллин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_CITY_8</Tag>
 		<English>Neuquen</English>
+		<Russian>Неукен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_CITY_9</Tag>
 		<English>Toltan</English>
+		<Russian>Толтан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_CITY_10</Tag>
 		<English>Bullam</English>
+		<Russian>Буллам</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_CITY_11</Tag>
 		<English>Soltem</English>
+		<Russian>Солтем</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_CITY_12</Tag>
 		<English>Tarmeyum</English>
+		<Russian>Тармеюм</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_CITY_13</Tag>
 		<English>Surarroh</English>
+		<Russian>Сураро</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_CITY_14</Tag>
 		<English>Etanta</English>
+		<Russian>Этанта</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_CITY_15</Tag>
 		<English>Peli Budi</English>
+		<Russian>Пели Буди</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_0</Tag>
 		<English>Lenore</English>
+		<Russian>Ленор</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_1</Tag>
 		<English>Myrtle</English>
+		<Russian>Мирт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_2</Tag>
 		<English>Ahsahka</English>
+		<Russian>Ахсака</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_3</Tag>
 		<English>Orofino</English>
+		<Russian>Орофино</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_4</Tag>
 		<English>Nimi-ipuu</English>
+		<Russian>Ними-ипуу</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_5</Tag>
 		<English>Kaminu</English>
+		<Russian>Камину</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_6</Tag>
 		<English>Tsupeli</English>
+		<Russian>Цупели</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_7</Tag>
 		<English>Lapwai</English>
+		<Russian>Лапвай</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_8</Tag>
 		<English>Nezperce</English>
+		<Russian>Незперце</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_9</Tag>
 		<English>Kamiah</English>
+		<Russian>Камия</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_10</Tag>
 		<English>Waha</English>
+		<Russian>Ваха</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_11</Tag>
 		<English>Kooskia</English>
+		<Russian>Куския</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_12</Tag>
 		<English>Stites</English>
+		<Russian>Ститес</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_13</Tag>
 		<English>Slickpoo </English>
+		<Russian>Сликпу</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_14</Tag>
 		<English>Penuti</English>
+		<Russian>Пенути</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_15</Tag>
 		<English>Idaho</English>
+		<Russian>Айдахо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_16</Tag>
 		<English>Assuti</English>
+		<Russian>Ассути</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_17</Tag>
 		<English>Sahaptin</English>
+		<Russian>Сахаптин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_18</Tag>
 		<English>Salmon</English>
+		<Russian>Сальмон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_19</Tag>
 		<English>Cuupn-itpel-uu</English>
+		<Russian>Куупн-итпел-уу</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_20</Tag>
 		<English>Chopunnish</English>
+		<Russian>Чопунский</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_21</Tag>
 		<English>Tsoop-Nit-Pa-Loo</English>
+		<Russian>Цуп-Нит-Па-Лоо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_CITY_22</Tag>
 		<English>Wallowa</English>
+		<Russian>Валлова</Russian>
 	</TEXT>
 </Civ4GameText>
