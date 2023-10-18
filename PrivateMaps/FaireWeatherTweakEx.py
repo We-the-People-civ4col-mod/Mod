@@ -4970,7 +4970,7 @@ def generateTaiga():
     terrainPrairie = gc.getInfoTypeForString("TERRAIN_PLAINS")
     terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
     
-    taigaChance = 0.6 # Baseline chance for converting terrain to shrubland
+    taigaChance = 0.6 # Baseline chance for converting terrain to Taiga
     
     # Convert some prairie that's adjaceant to desert to shrubland 
     for y in range(mc.height):
