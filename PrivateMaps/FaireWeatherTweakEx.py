@@ -2110,17 +2110,16 @@ class SmallMaps :
                     else:
                         if self.averageTempMap[i] > (PRand.random() * (mc.alwaysMarshTemp - mc.MinMarshTemp)) + mc.MinMarshTemp:
                             #ray Savannah
-                            #Ramstormp Marsh Hill
-                            if PRand.random() <= 0.3: 
-                                self.terrainMap[i] = mc.MARSH
-                                self.plotMap[i] = mc.HILLS
-                            elif PRand.random() <= 0.5: 
-                                self.terrainMap[i] = mc.SAVANNAH
-                                self.plotMap[i] = mc.HILLS
-                            elif PRand.random() <= 0.7:
+                            # Chose Terrain
+                            iRandTerrain = PRand.random()
+                            if iRandTerrain <= 0.5: 
                                 self.terrainMap[i] = mc.MARSH
                             else:
                                 self.terrainMap[i] = mc.SAVANNAH
+                            # Generate some Hills
+                            iRandPlotType = PRand.random()
+                            if iRandPlotType <= 0.3: 
+                                self.plotMap[i] = mc.HILLS
                             #ray Savannah End
                         else:
                             self.terrainMap[i] = mc.GRASS
@@ -4935,7 +4934,7 @@ def generateShallowCoast():
                 if plot.getTerrainType() == terrainCoast and not am.isChokePoint(x,y):
                     if isAnyAdjacentPlotTerrainType(x, y, terrainShallowCoast):
                         if PRand.random() <= shallowCostAdjacentChance:
-                            plot.setTerrainType(terrainShallowCoast, True, True)               
+                            plot.setTerrainType(terrainShallowCoast, True, True)
                     elif PRand.random() <= shallowCoastChance:
                         plot.setTerrainType(terrainShallowCoast, True, True)
 
@@ -4958,7 +4957,10 @@ def generateShrubland():
                 if plot.getTerrainType() == terrainPrairie or plot.getTerrainType() == terrainPlains:
                     if isAnyAdjacentPlotTerrainType(x, y, terrainDesert):
                         if PRand.random() <= shrublandChance:
-                            plot.setTerrainType(terrainShrubland, True, True)               
+                            plot.setTerrainType(terrainShrubland, True, True)
+                            iRandPlotType = PRand.random()
+                            if iRandPlotType <= 0.3: 
+                                plot.setPlotType(PlotTypes.PLOT_HILLS,True,True)
 
 def generateTaiga():
     
@@ -4972,7 +4974,7 @@ def generateTaiga():
     
     taigaChance = 0.6 # Baseline chance for converting terrain to Taiga
     
-    # Convert some prairie that's adjaceant to desert to shrubland 
+    # Convert some plot to Taiga
     for y in range(mc.height):
         for x in range(mc.width):
             plot = mmap.plot(x,y)
@@ -4980,7 +4982,11 @@ def generateTaiga():
                 if plot.getTerrainType() == terrainGrassland or plot.getTerrainType() == terrainPrairie or plot.getTerrainType() == terrainPlains:
                     if isAnyAdjacentPlotTerrainType(x, y, terrainTundra):
                         if PRand.random() <= taigaChance:
-                            plot.setTerrainType(terrainTaiga, True, True)               
+                            plot.setTerrainType(terrainTaiga, True, True)
+                            # Generate some Hills
+                            iRandPlotType = PRand.random()
+                            if iRandPlotType <= 0.3: 
+                                plot.setPlotType(PlotTypes.PLOT_HILLS,True,True)
 
 def generateRockSteppes():
 
@@ -5002,7 +5008,11 @@ def generateRockSteppes():
                         if plot.getTerrainType() == terrainPrairie or plot.getTerrainType() == terrainPlains:
                             if isAllAdjacentPlotTerrainType(x, y, terrainPrairie) or isAllAdjacentPlotTerrainType(x, y, terrainPlains):
                                 if PRand.random() <= rockSteppesChance * 0.2:
-                                    plot.setTerrainType(terrainRockSteppes, True, True)               
+                                    plot.setTerrainType(terrainRockSteppes, True, True)
+                                    # Generate some Hills
+                                    iRandPlotType = PRand.random()
+                                    if iRandPlotType <= 0.3: 
+                                        plot.setPlotType(PlotTypes.PLOT_HILLS,True,True)
 
     
     for y in range(mc.height):
@@ -5013,7 +5023,10 @@ def generateRockSteppes():
                     if not isAnyAdjacentPlotType(x, y, PlotTypes.PLOT_OCEAN):
                         if plot.getTerrainType() == terrainPrairie or plot.getTerrainType() == terrainPlains:
                             if PRand.random() <= rockSteppesChance:
-                                plot.setTerrainType(terrainRockSteppes, True, True)               
+                                plot.setTerrainType(terrainRockSteppes, True, True)
+                                iRandPlotType = PRand.random()
+                                if iRandPlotType <= 0.3: 
+                                    plot.setPlotType(PlotTypes.PLOT_HILLS,True,True)
 
 def generateWetland():
 
