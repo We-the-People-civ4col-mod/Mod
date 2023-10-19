@@ -9990,7 +9990,7 @@ CvUnit* CvPlayer::firstUnit(int *pIterIdx) const
 
 	if (pUnit != NULL)
 	{
-		if (pUnit == m_pTempUnit)
+		if (isTempUnit(pUnit))
 		{
 			pUnit = firstUnitInternal(pIterIdx);
 		}
@@ -10032,7 +10032,7 @@ CvUnit* CvPlayer::nextUnit(int *pIterIdx) const
 
 	if (pUnit != NULL)
 	{
-		if (pUnit == m_pTempUnit)
+		if (isTempUnit(pUnit))
 		{ 
 			pUnit = nextUnitInternal(pIterIdx);
 		}

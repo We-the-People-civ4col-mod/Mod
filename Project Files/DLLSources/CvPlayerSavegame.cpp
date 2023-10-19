@@ -112,6 +112,7 @@ const int defaultTotalPlayerDomesticMarketProfitModifierInPercent = 0; // WTP, r
 
 const int defaultOppressometerDiscriminationModifier = GLOBAL_DEFINE_OPPRESSOMETER_DISCRIMINATION_MODIFIER_BASE_COLONIZERS;
 const int defaultOppressometerForcedLaborModifier = GLOBAL_DEFINE_OPPRESSOMETER_FORCED_LABOR_MODIFIER_BASE;
+const int defaultTempUnitId = -1;
 
 const unsigned long defaultRandomSeed = 0;
 
@@ -309,6 +310,8 @@ enum SavegameVariableTypes
 
 	PlayerSave_RandomSeed,
 
+	PlayerSave_TempUnitId,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -379,6 +382,8 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_TimerStealingImmigrant: return "PlayerSave_TimerStealingImmigrant";
 	case PlayerSave_ChurchFavoursReceived: return "PlayerSave_ChurchFavoursReceived";
 	case PlayerSave_RandomSeed: return "PlayerSave_RandomSeed";
+	case PlayerSave_TempUnitId: return "PlayerSave_TempUnitId";
+
 
 	case PlayerSave_KingNumUnitMultiplier: return "PlayerSave_KingNumUnitMultiplier";
 	case PlayerSave_MissionarySuccessPercent: return "PlayerSave_MissionarySuccessPercent";
@@ -727,6 +732,8 @@ void CvPlayer::read(CvSavegameReader reader)
 	// This will ensure that all variables not included in the savegame will have default values
 	reset();
 
+	int iTempUnitId = -1;
+
 	// loop read all the variables
 	// As long as each variable has a UnitSavegameVariables "header", order doesn't matter.
 	// Variables can be read in any order and any number of variables can be skipped.
@@ -802,7 +809,7 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_TimerStealingImmigrant: reader.Read(m_iTimerStealingImmigrant); break;
 		case PlayerSave_ChurchFavoursReceived: reader.Read(m_iChurchFavoursReceived); break;
 		case PlayerSave_RandomSeed: reader.Read(m_ulRandomSeed); break;
-
+		case PlayerSave_TempUnitId: reader.Read(iTempUnitId); break;
 		case PlayerSave_KingNumUnitMultiplier: reader.Read(m_iKingNumUnitMultiplier); break;
 		case PlayerSave_MissionarySuccessPercent: reader.Read(m_iMissionarySuccessPercent); break;
 		case PlayerSave_NativeTradePostSuccessPercent: reader.Read(m_iNativeTradePostSuccessPercent); break; // WTP, ray, Native Trade Posts - START)
@@ -943,6 +950,15 @@ void CvPlayer::read(CvSavegameReader reader)
 		}
 	}
 
+
+	// We need to defer this until we have loaded the actual m_units
+	if (iTempUnitId != -1)
+	{
+		m_pTempUnit = getUnit(iTempUnitId);
+		FAssert(m_pTempUnit);
+	}
+
+
 	// Get the NetID from the initialization structure
 	setNetID(gDLL->getAssignedNetworkID(getID()));
 
@@ -1032,7 +1048,8 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_TimerStealingImmigrant, m_iTimerStealingImmigrant, defaultTimerStealingImmigrant);
 	writer.Write(PlayerSave_ChurchFavoursReceived, m_iChurchFavoursReceived, defaultChurchFavoursReceived);
 	writer.Write(PlayerSave_RandomSeed, m_ulRandomSeed, defaultRandomSeed);
-
+	const int tempUnitId = (m_pTempUnit ? m_pTempUnit->getID() : -1);
+	writer.Write(PlayerSave_TempUnitId, tempUnitId, defaultTempUnitId);
 	writer.Write(PlayerSave_KingNumUnitMultiplier, m_iKingNumUnitMultiplier, defaultKingNumUnitMultiplier);
 	writer.Write(PlayerSave_MissionarySuccessPercent, m_iMissionarySuccessPercent, defaultMissionarySuccessPercent);
 	writer.Write(PlayerSave_NativeTradePostSuccessPercent, m_iNativeTradePostSuccessPercent, defaultNativeTradePostSuccessPercent); // WTP, ray, Native Trade Posts - START

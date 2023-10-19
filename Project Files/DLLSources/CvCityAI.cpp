@@ -103,22 +103,10 @@ void CvCityAI::AI_doTurn()
 	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 
-
-	bool res = false;
-	int iLoop;
-	for (CvCity* pLoopCity = kOwner.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kOwner.nextCity(&iLoop))
+	if (!isNative())
 	{
-		if (pLoopCity != this)
-		{
-			// Determine if these cities share a common water area
-			//if (waterArea() == pLoopCity->waterArea())
-			{
-				res = generatePathForHypotheticalUnit(plot(), pLoopCity->plot(), getOwner(), eUnit);
-				res = res;
-			}
-		}
+		bool res = AI_hasCoastalRoute();
 	}
-
 
 	AI_doTradedYields();
 
@@ -866,10 +854,7 @@ BuildingTypes CvCityAI::AI_bestBuilding(int iFocusFlags, int iMaxTurns, bool bAs
 /// <summary>Determine if there's a coastal route to another city. Both cities must be in different areas (cannot share continent/island)</summary>
 bool CvCityAI::AI_hasCoastalRoute() const
 {
-	gDLL->getFAStarIFace()->ForceReset(&GC.getCoastalRouteFinder());
-
-	// Erik: determine if it makes sense to build a coastal transport
-	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+	const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 
 	int iLoop;
 	for (CvCity* pLoopCity = kOwner.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kOwner.nextCity(&iLoop))
@@ -879,12 +864,13 @@ bool CvCityAI::AI_hasCoastalRoute() const
 			// Determine if these cities share a common water area
 			if (waterArea() == pLoopCity->waterArea())
 			{
+				static const UnitTypes eShipUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_SMALL_COASTAL_SHIP"));
+				FAssert(eShipUnit != NO_UNIT);
+
 				// Check if there's a coastal / cultural route between the cities
-				if (gDLL->getFAStarIFace()->GeneratePath(&GC.getCoastalRouteFinder(), getX_INLINE(), getY_INLINE(), pLoopCity->getX_INLINE(), pLoopCity->getY_INLINE(), false, getOwnerINLINE(), true))
-				{
-					// We found a valid path
+				const bool found = generatePathForHypotheticalUnit(plot(), pLoopCity->plot(), getOwner(), eShipUnit);
+				if (found)
 					return true;
-				}
 			}
 		}
 	}
