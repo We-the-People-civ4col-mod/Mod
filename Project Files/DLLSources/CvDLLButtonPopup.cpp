@@ -36,6 +36,205 @@ class PopupButtonContainer
 };
 
 template <>
+class PopupButtonContainer<BUTTONPOPUP_MAIN_MENU>
+{
+	enum PopupButtonsMainMenu
+	{
+		PopupButtonsMainMenu_ExitDesktop,
+		PopupButtonsMainMenu_ExitMenu,
+		PopupButtonsMainMenu_Retire,
+		PopupButtonsMainMenu_RegenerateMap,
+		PopupButtonsMainMenu_Load,
+		PopupButtonsMainMenu_Save,
+		PopupButtonsMainMenu_Options,
+		PopupButtonsMainMenu_WorldBuilder,
+		PopupButtonsMainMenu_GameDetails,
+		PopupButtonsMainMenu_DetailsTitle,
+		PopupButtonsMainMenu_Cancel,
+		PopupButtonsMainMenu_OOS,
+
+	};
+
+public:
+	static bool launch(CvPopup* pPopup, CvPopupInfo &info)
+	{
+		gDLL->getInterfaceIFace()->popupSetStyle(pPopup, "Window_NoTitleBar_Style");
+
+		// 288,72
+		gDLL->getInterfaceIFace()->popupAddDDS(pPopup, "Resource/Temp/civ4_title_small.dds", 192, 48);
+
+		gDLL->getInterfaceIFace()->popupAddSeparator(pPopup);
+
+		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_EXIT_TO_DESKTOP").c_str(), NULL, PopupButtonsMainMenu_ExitDesktop, WIDGET_GENERAL, PopupButtonsMainMenu_ExitDesktop, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+
+		// commenting out since you can't exit to main menu and then restart a game
+		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_EXIT_TO_MAIN_MENU").c_str(), NULL, PopupButtonsMainMenu_ExitMenu, WIDGET_GENERAL, PopupButtonsMainMenu_ExitMenu, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+
+		if (GC.getGameINLINE().canDoControl(CONTROL_RETIRE))
+		{
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_RETIRE").c_str(), NULL, PopupButtonsMainMenu_Retire, WIDGET_GENERAL, PopupButtonsMainMenu_Retire, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+		}
+
+		if ((GC.getGameINLINE().getElapsedGameTurns() == 0) && !(GC.getGameINLINE().isGameMultiPlayer()) && !(GC.getInitCore().getWBMapScript()))
+		{
+			// Don't allow if there has already been diplomacy
+			bool bShow = true;
+			for (int i = 0; bShow && i < MAX_TEAMS; i++)
+			{
+				for (int j = i + 1; bShow && j < MAX_TEAMS; j++)
+				{
+					if (GET_TEAM((TeamTypes)i).isHasMet((TeamTypes)j))
+					{
+						bShow = false;
+					}
+				}
+			}
+
+			if (bShow)
+			{
+				if (!GC.getGameINLINE().getScriptData().empty())
+				{
+					bShow = false;
+				}
+			}
+
+			if (bShow)
+			{
+				for (int i = 0; i < GC.getMap().numPlots(); ++i)
+				{
+					CvPlot* pPlot = GC.getMap().plotByIndexINLINE(i);
+					if (!pPlot->getScriptData().empty())
+					{
+						bShow = false;
+						break;
+					}
+				}
+			}
+
+			if (bShow)
+			{
+				gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_REGENERATE_MAP").c_str(), NULL, PopupButtonsMainMenu_RegenerateMap, WIDGET_GENERAL, PopupButtonsMainMenu_RegenerateMap, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+			}
+		}
+
+		if (GC.getGameINLINE().canDoControl(CONTROL_LOAD_GAME))
+		{
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_LOAD_GAME").c_str(), NULL, PopupButtonsMainMenu_Load, WIDGET_GENERAL, PopupButtonsMainMenu_Load, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+		}
+		if (GC.getGameINLINE().canDoControl(CONTROL_SAVE_NORMAL))
+		{
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_SAVE_GAME").c_str(), NULL, PopupButtonsMainMenu_Save, WIDGET_GENERAL, PopupButtonsMainMenu_Save, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+		}
+		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_OPTIONS").c_str(), NULL, PopupButtonsMainMenu_Options, WIDGET_GENERAL, PopupButtonsMainMenu_Options, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+
+		if (GC.getGameINLINE().canDoControl(CONTROL_WORLD_BUILDER))
+		{
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_ENTER_WB").c_str(), NULL, PopupButtonsMainMenu_WorldBuilder, WIDGET_GENERAL, PopupButtonsMainMenu_WorldBuilder, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+		}
+
+		if (GC.getGameINLINE().canDoControl(CONTROL_ADMIN_DETAILS))
+		{
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_GAME_DETAILS").c_str(), NULL, PopupButtonsMainMenu_GameDetails, WIDGET_GENERAL, PopupButtonsMainMenu_GameDetails, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+		}
+
+		if (GC.getGameINLINE().canDoControl(CONTROL_DETAILS))
+		{
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_DETAILS_TITLE").c_str(), NULL, PopupButtonsMainMenu_DetailsTitle, WIDGET_GENERAL, PopupButtonsMainMenu_DetailsTitle, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+		}
+
+		if (gDLL->isOOSVisible())
+		{
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_DEBUG_DESYNC_LOG_BUTTON").c_str(), NULL, PopupButtonsMainMenu_OOS, WIDGET_GENERAL, PopupButtonsMainMenu_OOS, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+		}
+
+		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_CANCEL").c_str(), NULL, PopupButtonsMainMenu_Cancel, WIDGET_GENERAL, PopupButtonsMainMenu_Cancel, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+
+
+
+		gDLL->getInterfaceIFace()->popupLaunch(pPopup, false, POPUPSTATE_IMMEDIATE);
+
+		return true;
+	}
+
+	static void clicked(PopupReturn *pPopupReturn)
+	{
+		if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_ExitDesktop)
+		{	// exit to desktop
+			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CONFIRM_MENU);
+			if (NULL != pInfo)
+			{
+				pInfo->setData1(0);
+				gDLL->getInterfaceIFace()->addPopup(pInfo, GC.getGameINLINE().getActivePlayer(), true);
+			}
+		}
+		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_ExitMenu)
+		{	// exit to main menu
+			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CONFIRM_MENU);
+			if (NULL != pInfo)
+			{
+				pInfo->setData1(1);
+				gDLL->getInterfaceIFace()->addPopup(pInfo, GC.getGameINLINE().getActivePlayer(), true);
+			}
+		}
+		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_Retire)
+		{
+			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CONFIRM_MENU);
+			if (NULL != pInfo)
+			{
+				pInfo->setData1(2);
+				gDLL->getInterfaceIFace()->addPopup(pInfo, GC.getGameINLINE().getActivePlayer(), true);
+			}
+		}
+		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_RegenerateMap)
+		{
+			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CONFIRM_MENU);
+			if (NULL != pInfo)
+			{
+				pInfo->setData1(3);
+				gDLL->getInterfaceIFace()->addPopup(pInfo, GC.getGameINLINE().getActivePlayer(), true);
+			}
+		}
+		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_Load)
+		{	// load game
+			GC.getGameINLINE().doControl(CONTROL_LOAD_GAME);
+		}
+		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_Save)
+		{	// save game
+			GC.getGameINLINE().doControl(CONTROL_SAVE_NORMAL);
+		}
+		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_Options)
+		{	// options
+			gDLL->getPythonIFace()->callFunction("CvScreensInterface", "showOptionsScreen");
+		}
+		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_WorldBuilder)
+		{
+			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CONFIRM_MENU);
+			if (NULL != pInfo)
+			{
+				pInfo->setData1(4);
+				gDLL->getInterfaceIFace()->addPopup(pInfo, GC.getGameINLINE().getActivePlayer(), true);
+			}
+		}
+		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_GameDetails)
+		{	// Game details
+			GC.getGameINLINE().doControl(CONTROL_ADMIN_DETAILS);
+		}
+		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_DetailsTitle)
+		{	// player details
+			GC.getGameINLINE().doControl(CONTROL_DETAILS);
+		}
+
+		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_OOS)
+		{	// write network desync log. Has to be done in sync, hence send network traffic
+			gDLL->sendPlayerAction(static_cast<PlayerTypes>(0), PLAYER_ACTION_NETWORK_DESYNC_LOG_WRITE, -1, -1, -1);
+		}
+
+		// 10 - cancel
+	}
+};
+
+
+template <>
 class PopupButtonContainer<BUTTONPOPUP_START_GAME_CHECK_FAILED>
 {
 	enum ErrorTypes
@@ -158,29 +357,6 @@ public:
 	}
 };
 
-// WTP enums
-// Nake it easier to read windows with a lot of buttons
-// This also allows easy access to changing the order of buttons
-
-enum PopupButtonsMainMenu
-{
-	PopupButtonsMainMenu_ExitDesktop,
-	PopupButtonsMainMenu_ExitMenu,
-	PopupButtonsMainMenu_Retire,
-	PopupButtonsMainMenu_RegenerateMap,
-	PopupButtonsMainMenu_Load,
-	PopupButtonsMainMenu_Save,
-	PopupButtonsMainMenu_Options,
-	PopupButtonsMainMenu_WorldBuilder,
-	PopupButtonsMainMenu_GameDetails,
-	PopupButtonsMainMenu_DetailsTitle,
-	PopupButtonsMainMenu_Cancel,
-	PopupButtonsMainMenu_OOS,
-
-};
-
-// WTP end
-
 CvDLLButtonPopup* CvDLLButtonPopup::m_pInst = NULL;
 
 CvDLLButtonPopup& CvDLLButtonPopup::getInstance()
@@ -295,78 +471,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 		break;
 
 	case BUTTONPOPUP_MAIN_MENU:
-		if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_ExitDesktop)
-		{	// exit to desktop
-			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CONFIRM_MENU);
-			if (NULL != pInfo)
-			{
-				pInfo->setData1(0);
-				gDLL->getInterfaceIFace()->addPopup(pInfo, GC.getGameINLINE().getActivePlayer(), true);
-			}
-		}
-		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_ExitMenu)
-		{	// exit to main menu
-			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CONFIRM_MENU);
-			if (NULL != pInfo)
-			{
-				pInfo->setData1(1);
-				gDLL->getInterfaceIFace()->addPopup(pInfo, GC.getGameINLINE().getActivePlayer(), true);
-			}
-		}
-		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_Retire)
-		{
-			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CONFIRM_MENU);
-			if (NULL != pInfo)
-			{
-				pInfo->setData1(2);
-				gDLL->getInterfaceIFace()->addPopup(pInfo, GC.getGameINLINE().getActivePlayer(), true);
-			}
-		}
-		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_RegenerateMap)
-		{
-			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CONFIRM_MENU);
-			if (NULL != pInfo)
-			{
-				pInfo->setData1(3);
-				gDLL->getInterfaceIFace()->addPopup(pInfo, GC.getGameINLINE().getActivePlayer(), true);
-			}
-		}
-		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_Load)
-		{	// load game
-			GC.getGameINLINE().doControl(CONTROL_LOAD_GAME);
-		}
-		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_Save)
-		{	// save game
-			GC.getGameINLINE().doControl(CONTROL_SAVE_NORMAL);
-		}
-		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_Options)
-		{	// options
-			gDLL->getPythonIFace()->callFunction("CvScreensInterface", "showOptionsScreen");
-		}
-		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_WorldBuilder)
-		{
-			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CONFIRM_MENU);
-			if (NULL != pInfo)
-			{
-				pInfo->setData1(4);
-				gDLL->getInterfaceIFace()->addPopup(pInfo, GC.getGameINLINE().getActivePlayer(), true);
-			}
-		}
-		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_GameDetails)
-		{	// Game details
-			GC.getGameINLINE().doControl(CONTROL_ADMIN_DETAILS);
-		}
-		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_DetailsTitle)
-		{	// player details
-			GC.getGameINLINE().doControl(CONTROL_DETAILS);
-		}
-
-		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_OOS)
-		{	// write network desync log. Has to be done in sync, hence send network traffic
-			gDLL->sendPlayerAction(static_cast<PlayerTypes>(0), PLAYER_ACTION_NETWORK_DESYNC_LOG_WRITE, -1, -1, -1);
-		}
-
-		// 10 - cancel
+		PopupButtonContainer<BUTTONPOPUP_MAIN_MENU>::clicked(pPopupReturn);
 		break;
 
 	case BUTTONPOPUP_DECLAREWARMOVE:
@@ -1435,7 +1540,7 @@ bool CvDLLButtonPopup::launchButtonPopup(CvPopup* pPopup, CvPopupInfo &info)
 		bLaunched = launchLeadUnitPopup(pPopup, info);
 		break;
 	case BUTTONPOPUP_MAIN_MENU:
-		bLaunched = launchMainMenuPopup(pPopup, info);
+		bLaunched = PopupButtonContainer<BUTTONPOPUP_MAIN_MENU>::launch(pPopup, info);
 		break;
 	case BUTTONPOPUP_CONFIRM_MENU:
 		bLaunched = launchConfirmMenu(pPopup, info);
@@ -2372,106 +2477,6 @@ bool CvDLLButtonPopup::launchLeadUnitPopup(CvPopup* pPopup, CvPopupInfo &info)
 	}
 
 	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_NEVER_MIND"), NULL, 0, WIDGET_GENERAL);
-
-	gDLL->getInterfaceIFace()->popupLaunch(pPopup, false, POPUPSTATE_IMMEDIATE);
-
-	return (true);
-}
-
-bool CvDLLButtonPopup::launchMainMenuPopup(CvPopup* pPopup, CvPopupInfo &info)
-{
-	gDLL->getInterfaceIFace()->popupSetStyle( pPopup, "Window_NoTitleBar_Style" );
-
-	// 288,72
-	gDLL->getInterfaceIFace()->popupAddDDS(pPopup, "Resource/Temp/civ4_title_small.dds", 192, 48);
-
-	gDLL->getInterfaceIFace()->popupAddSeparator(pPopup);
-
-	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_EXIT_TO_DESKTOP").c_str(), NULL, PopupButtonsMainMenu_ExitDesktop, WIDGET_GENERAL, PopupButtonsMainMenu_ExitDesktop, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
-
-	// commenting out since you can't exit to main menu and then restart a game
-	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_EXIT_TO_MAIN_MENU").c_str(), NULL, PopupButtonsMainMenu_ExitMenu, WIDGET_GENERAL, PopupButtonsMainMenu_ExitMenu, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
-
-	if (GC.getGameINLINE().canDoControl(CONTROL_RETIRE))
-	{
-		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_RETIRE").c_str(), NULL, PopupButtonsMainMenu_Retire, WIDGET_GENERAL, PopupButtonsMainMenu_Retire, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
-	}
-
-	if ((GC.getGameINLINE().getElapsedGameTurns() == 0) && !(GC.getGameINLINE().isGameMultiPlayer()) && !(GC.getInitCore().getWBMapScript()))
-	{
-		// Don't allow if there has already been diplomacy
-		bool bShow = true;
-		for (int i = 0; bShow && i < MAX_TEAMS; i++)
-		{
-			for (int j = i+1; bShow && j < MAX_TEAMS; j++)
-			{
-				if (GET_TEAM((TeamTypes)i).isHasMet((TeamTypes)j))
-				{
-					bShow = false;
-				}
-			}
-		}
-
-		if (bShow)
-		{
-			if (!GC.getGameINLINE().getScriptData().empty())
-			{
-				bShow = false;
-			}
-		}
-
-		if (bShow)
-		{
-			for (int i = 0; i < GC.getMap().numPlots(); ++i)
-			{
-				CvPlot* pPlot = GC.getMap().plotByIndexINLINE(i);
-				if (!pPlot->getScriptData().empty())
-				{
-					bShow = false;
-					break;
-				}
-			}
-		}
-
-		if (bShow)
-		{
-			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_REGENERATE_MAP").c_str(), NULL, PopupButtonsMainMenu_RegenerateMap, WIDGET_GENERAL, PopupButtonsMainMenu_RegenerateMap, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
-		}
-	}
-
-	if (GC.getGameINLINE().canDoControl(CONTROL_LOAD_GAME))
-	{
-		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_LOAD_GAME").c_str(), NULL, PopupButtonsMainMenu_Load, WIDGET_GENERAL, PopupButtonsMainMenu_Load, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
-	}
-	if (GC.getGameINLINE().canDoControl(CONTROL_SAVE_NORMAL))
-	{
-		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_SAVE_GAME").c_str(), NULL, PopupButtonsMainMenu_Save, WIDGET_GENERAL, PopupButtonsMainMenu_Save, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
-	}
-	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_OPTIONS").c_str(), NULL, PopupButtonsMainMenu_Options, WIDGET_GENERAL, PopupButtonsMainMenu_Options, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
-
-	if (GC.getGameINLINE().canDoControl(CONTROL_WORLD_BUILDER))
-	{
-		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_ENTER_WB").c_str(), NULL, PopupButtonsMainMenu_WorldBuilder, WIDGET_GENERAL, PopupButtonsMainMenu_WorldBuilder, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
-	}
-
-	if (GC.getGameINLINE().canDoControl(CONTROL_ADMIN_DETAILS))
-	{
-		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_GAME_DETAILS").c_str(), NULL, PopupButtonsMainMenu_GameDetails, WIDGET_GENERAL, PopupButtonsMainMenu_GameDetails, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
-	}
-
-	if (GC.getGameINLINE().canDoControl(CONTROL_DETAILS))
-	{
-		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_DETAILS_TITLE").c_str(), NULL, PopupButtonsMainMenu_DetailsTitle, WIDGET_GENERAL, PopupButtonsMainMenu_DetailsTitle, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
-	}
-
-	if (gDLL->isOOSVisible())
-	{
-		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_DEBUG_DESYNC_LOG_BUTTON").c_str(), NULL, PopupButtonsMainMenu_OOS, WIDGET_GENERAL, PopupButtonsMainMenu_OOS, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
-	}
-
-	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_CANCEL").c_str(), NULL, PopupButtonsMainMenu_Cancel, WIDGET_GENERAL, PopupButtonsMainMenu_Cancel, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
-
-
 
 	gDLL->getInterfaceIFace()->popupLaunch(pPopup, false, POPUPSTATE_IMMEDIATE);
 
