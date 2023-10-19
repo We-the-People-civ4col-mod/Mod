@@ -393,10 +393,10 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_STARTUP_TEST_WETLANDS</Tag>
-        <English>The generated map is missing at least one terrain to produce strategic goods. Please try to regenrate the Map. Or play Scenario Maps which will work for sure.</English>
+        <English>The generated map is missing at least one terrain to produce strategic goods. Please try to regenerate the Map. Or play Scenario Maps which will work for sure.</English>
         <French>La carte générée manque un type de terrain nécessaire à la production de biens stratégique. Veuillez relancer la génération de carte. Ou jouez sur un scénario qui marchera à coup sûr.</French>
         <German>Die Karte beinhaltet mindestens eine Geländeart nicht, die wichtig für strategische Waren ist. Bitte generiere die Karte neu. Oder spiele eine Szneario Karte, da diese sicher funktionieren.</German>
-        <Russian>На карте отсутствует местность для добычи критически важных ресурсов. Вероятно, скрипт карты устарел и не соответствует текущим требованиям модификации.</Russian>
+        <Russian>На карте отсутствует минимум один из типов местности, требуемый для добычи критически важных ресурсов. Попробуйте сгенерировать карту еще раз (возможно, стоит увеличить размер карты). Или выберите любой из существующих сценариев - их карты содержат все типы местности.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_STARTUP_TEST_AI_PLAYERS</Tag>
