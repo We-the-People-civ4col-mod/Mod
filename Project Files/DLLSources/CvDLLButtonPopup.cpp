@@ -35,8 +35,30 @@ class PopupButtonContainer
 {
 };
 
+class PopupButtonContainerBase
+{
+public:
+	virtual bool launchButtonPopup(CvPopup* pPopup, CvPopupInfo &info) = 0;
+	virtual void OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, CvPopupInfo &info) = 0;
+	virtual void OnAltExecute(CvPopup& popup, const PopupReturn& popupReturn, CvPopupInfo &info) {}
+	virtual void OnEscape(CvPopup& pPopup, CvPopupInfo &info) {}
+	virtual void OnFocus(CvPopup* pPopup, CvPopupInfo &info) {}
+
+	static PopupButtonContainerBase* getNew(ButtonPopupTypes eType);
+};
+
+class PopupButtonContainerCancelOnEscape : public PopupButtonContainerBase
+{
+public:
+	void OnEscape(CvPopup& pPopup, CvPopupInfo &info)
+	{
+		gDLL->getInterfaceIFace()->popupSetAsCancelled(&pPopup);
+	}
+};
+
+
 template <>
-class PopupButtonContainer<BUTTONPOPUP_MAIN_MENU>
+class PopupButtonContainer<BUTTONPOPUP_MAIN_MENU> : public PopupButtonContainerCancelOnEscape
 {
 	enum PopupButtonsMainMenu
 	{
@@ -56,7 +78,7 @@ class PopupButtonContainer<BUTTONPOPUP_MAIN_MENU>
 	};
 
 public:
-	static bool launch(CvPopup* pPopup, CvPopupInfo &info)
+	bool launchButtonPopup(CvPopup* pPopup, CvPopupInfo &info)
 	{
 		gDLL->getInterfaceIFace()->popupSetStyle(pPopup, "Window_NoTitleBar_Style");
 
@@ -156,7 +178,7 @@ public:
 		return true;
 	}
 
-	static void clicked(PopupReturn *pPopupReturn)
+	void OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, CvPopupInfo &info)
 	{
 		if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_ExitDesktop)
 		{	// exit to desktop
@@ -357,6 +379,17 @@ public:
 	}
 };
 
+// this has to be after all specialized declarations of PopupButtonContainer
+PopupButtonContainerBase* PopupButtonContainerBase::getNew(ButtonPopupTypes eType)
+{
+	switch (eType)
+	{
+	case BUTTONPOPUP_MAIN_MENU: return new PopupButtonContainer<BUTTONPOPUP_MAIN_MENU>();
+	}
+
+	return NULL;
+}
+
 CvDLLButtonPopup* CvDLLButtonPopup::m_pInst = NULL;
 
 CvDLLButtonPopup& CvDLLButtonPopup::getInstance()
@@ -385,6 +418,14 @@ CvDLLButtonPopup::~CvDLLButtonPopup()
 
 void CvDLLButtonPopup::OnAltExecute(CvPopup& popup, const PopupReturn& popupReturn, CvPopupInfo &info)
 {
+	PopupButtonContainerBase* container = PopupButtonContainerBase::getNew(info.getButtonPopupType());
+	if (container != NULL)
+	{
+		container->OnAltExecute(popup, popupReturn, info);
+		SAFE_DELETE(container);
+		return;
+	}
+
 	switch (info.getButtonPopupType())
 	{
 	case BUTTONPOPUP_CHOOSE_PROFESSION:
@@ -405,9 +446,16 @@ void CvDLLButtonPopup::OnAltExecute(CvPopup& popup, const PopupReturn& popupRetu
 
 void CvDLLButtonPopup::OnEscape(CvPopup& popup, CvPopupInfo &info)
 {
+	PopupButtonContainerBase* container = PopupButtonContainerBase::getNew(info.getButtonPopupType());
+	if (container != NULL)
+	{
+		container->OnEscape(popup, info);
+		SAFE_DELETE(container);
+		return;
+	}
+
 	switch (info.getButtonPopupType())
 	{
-	case BUTTONPOPUP_MAIN_MENU:
 	case BUTTONPOPUP_CHOOSE_PROFESSION:
 	case BUTTONPOPUP_PURCHASE_EUROPE_UNIT:
 	case BUTTONPOPUP_PURCHASE_AFRICA_UNIT:
@@ -439,6 +487,14 @@ void CvDLLButtonPopup::OnEscape(CvPopup& popup, CvPopupInfo &info)
 
 void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, CvPopupInfo &info)
 {
+	PopupButtonContainerBase* container = PopupButtonContainerBase::getNew(info.getButtonPopupType());
+	if (container != NULL)
+	{
+		container->OnOkClicked(pPopup, pPopupReturn, info);
+		SAFE_DELETE(container);
+		return;
+	}
+
 	int iExamineCityID;
 
 	switch (info.getButtonPopupType())
@@ -468,10 +524,6 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 				break;
 			}
 		}
-		break;
-
-	case BUTTONPOPUP_MAIN_MENU:
-		PopupButtonContainer<BUTTONPOPUP_MAIN_MENU>::clicked(pPopupReturn);
 		break;
 
 	case BUTTONPOPUP_DECLAREWARMOVE:
@@ -1416,6 +1468,14 @@ void CvDLLButtonPopup::OnFocus(CvPopup* pPopup, CvPopupInfo &info)
 		return;
 	}
 
+	PopupButtonContainerBase* container = PopupButtonContainerBase::getNew(info.getButtonPopupType());
+	if (container != NULL)
+	{
+		container->OnFocus(pPopup, info);
+		SAFE_DELETE(container);
+		return;
+	}
+
 	switch (info.getButtonPopupType())
 	{
 	case BUTTONPOPUP_CHOOSEPRODUCTION:
@@ -1501,6 +1561,14 @@ bool CvDLLButtonPopup::launchButtonPopup(CvPopup* pPopup, CvPopupInfo &info)
 {
 	bool bLaunched = false;
 
+	PopupButtonContainerBase* container = PopupButtonContainerBase::getNew(info.getButtonPopupType());
+	if (container != NULL)
+	{
+		bLaunched = container->launchButtonPopup(pPopup, info);
+		SAFE_DELETE(container);
+		return bLaunched;
+	}
+
 	switch (info.getButtonPopupType())
 	{
 	case BUTTONPOPUP_TEXT:
@@ -1538,9 +1606,6 @@ bool CvDLLButtonPopup::launchButtonPopup(CvPopup* pPopup, CvPopupInfo &info)
 		break;
 	case BUTTONPOPUP_LEADUNIT:
 		bLaunched = launchLeadUnitPopup(pPopup, info);
-		break;
-	case BUTTONPOPUP_MAIN_MENU:
-		bLaunched = PopupButtonContainer<BUTTONPOPUP_MAIN_MENU>::launch(pPopup, info);
 		break;
 	case BUTTONPOPUP_CONFIRM_MENU:
 		bLaunched = launchConfirmMenu(pPopup, info);
