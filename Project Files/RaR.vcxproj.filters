@@ -493,6 +493,12 @@
     <ClCompile Include="DLLSources\CvEnums.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\CyXMLEditor.cpp">
+      <Filter>XML Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyXMLEditorInterface1.cpp">
+      <Filter>XML Editor</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
@@ -945,6 +951,9 @@
     <ClInclude Include="DLLSources\SavegameConstants.h">
       <Filter>CV\Savegames</Filter>
     </ClInclude>
+    <ClInclude Include="DLLSources\CyXMLEditor.h">
+      <Filter>XML Editor</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="DLLSources\FVariableSystem.inl">
@@ -1062,6 +1071,9 @@
     </Filter>
     <Filter Include="Classes\AlertWindow\CPP">
       <UniqueIdentifier>{20d5ec07-833a-419a-8744-1ea196a2e052}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XML Editor">
+      <UniqueIdentifier>{18ea1776-7fbf-485a-959e-6fb9226eff6c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
