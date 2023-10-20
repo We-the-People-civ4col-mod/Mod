@@ -2,15 +2,6 @@
 
 #include "CyXMLEditor.h"
 
-void CyXMLEditorPythonInterfaceTextString(python::class_<CyXMLTextString>& x)
-{
-	x
-		.def("getText", &CyXMLTextString::getText, "string (bool, bool)")
-		.def("getTextFromIndex", &CyXMLTextString::getTextFromIndex, "string (int)")
-		.def("getNameFromIndex", &CyXMLTextString::getNameFromIndex, "string (int)")
-		;
-}
-
 void CyXMLEditorPythonInterface1(python::class_<CyXMLEditor>& x)
 {
 	OutputDebugString("Python Extension Module - CyXMLEditorPythonInterface1\n");
@@ -45,7 +36,6 @@ void CyXMLEditorPythonInterface1(python::class_<CyXMLEditor>& x)
 		.def("resetKeyboard", &CyXMLEditor::resetKeyboard, "void ()")
 		.def("setKeyboardKey", &CyXMLEditor::setKeyboardKey, "void (string, bool, bool, bool)")
 		.def("toUnicode", &CyXMLEditor::toUnicode, "string (int)")
-		.def("generateTextFiles", &CyXMLEditor::generateTextFiles, "void ()")
 		.def("cleanActiveFile", &CyXMLEditor::cleanActiveFile, "void ()")
 
 		.def("copyFiles", &CyXMLEditor::copyFiles, "void ()")
@@ -108,10 +98,8 @@ void CyXMLEditorPythonObjectInterface1(python::class_<CyXMLObject>& x)
 		.def("getButtonArtChild", &CyXMLObject::getButtonArtChild, "string ()")
 		.def("getActiveComboFile", &CyXMLObject::getActiveComboFile, "int ()")
 		.def("getText", &CyXMLObject::getText, "wstring ()")
-		.def("getTextString", &CyXMLObject::getTextString, python::return_value_policy<python::manage_new_object>(), "object ()")
 
 		.def("setValue", &CyXMLObject::setValue, "void (string)")
-		.def("setTxtKey", &CyXMLObject::setTxtKey, "void (string, string, string, string)")
 		.def("createRemote", &CyXMLObject::createRemote, "void ()")
 		.def("setGameFontChar", &CyXMLObject::setGameFontChar, "void (int)")
 		.def("deleteXMLEntry", &CyXMLObject::deleteXMLEntry, "void ()")
