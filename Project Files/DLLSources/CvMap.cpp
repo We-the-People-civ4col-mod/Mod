@@ -602,14 +602,14 @@ void CvMap::verifyUnitValidPlot()
 	}
 }
 
-CvPlot* CvMap::syncRandPlot(int iFlags, int iArea, int iMinUnitDistance, int iTimeout)
+CvPlot* CvMap::syncRandPlot(int iFlags, int iArea, int iMinUnitDistance, int iTimeout) const
 {
 	CvPlot* pPlot = NULL;
 	int iCount = 0;
 
 	while (iCount < iTimeout)
 	{
-		CvPlot* pTestPlot = plotSoren(GC.getGameINLINE().getSorenRandNum(getGridWidthINLINE(), "Rand Plot Width"), GC.getGameINLINE().getSorenRandNum(getGridHeightINLINE(), "Rand Plot Height"));
+		CvPlot* const pTestPlot = plotSoren(GC.getGameINLINE().getSorenRandNum(getGridWidthINLINE(), "Rand Plot Width"), GC.getGameINLINE().getSorenRandNum(getGridHeightINLINE(), "Rand Plot Height"));
 
 		FAssertMsg(pTestPlot != NULL, "TestPlot is not assigned a valid value");
 

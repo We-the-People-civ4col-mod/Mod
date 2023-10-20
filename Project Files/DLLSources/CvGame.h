@@ -525,6 +525,7 @@ protected:
 	void updateOceanDistances();
 
 	void doUpdateCacheOnTurn();
+	CvPlot* getAnyEuropePlot() const;
 };
 
 #endif

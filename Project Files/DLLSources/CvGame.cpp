@@ -5598,15 +5598,15 @@ void CvGame::createAnimalsSea()
 		return;
 	}
 
-	CvArea* pLoopArea;
-	CvPlot* pPlot;
 	UnitTypes eLastUnit, eBestUnit, eLoopUnit;
 	int iNeededAnimals;
 	int iValue, iBestValue, iRand;
-	int iLoop, iI, iJ;
 	int iStartDist = 0;
 
-	for(pLoopArea = GC.getMap().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMap().nextArea(&iLoop))
+	CvPlot* const pEuropePlot = getAnyEuropePlot();
+
+	int iLoop;
+	for(CvArea* pLoopArea = GC.getMap().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMap().nextArea(&iLoop))
 	{
 		iNeededAnimals = (pLoopArea->getNumTiles() * GC.getHandicapInfo(getHandicapType()).getAIAnimalSeaMaxPercent()) / 100;
 		//iNeededAnimals = std::min(100, iNeededAnimals);
@@ -5617,7 +5617,7 @@ void CvGame::createAnimalsSea()
 		}
 
 		// Another random to create less wild Animals in Water
-		int lessrandom = getSorenRandNum(5, "Less Animal Sea Unit Random");
+		const int lessrandom = getSorenRandNum(5, "Less Animal Sea Unit Random");
 
 		if (lessrandom <= 1 && iNeededAnimals > pLoopArea->getUnitsPerPlayer(getBarbarianPlayer()))
 		{
@@ -5625,28 +5625,25 @@ void CvGame::createAnimalsSea()
 
 			if (pLoopArea->isWater())
 			{
-				for (iI = 0; iI < iNeededAnimals; iI++)
+				for (int iI = 0; iI < iNeededAnimals; iI++)
 				{
-				    pPlot = GC.getMap().syncRandPlot((RANDPLOT_NOT_CITY), pLoopArea->getID(), iStartDist);
-
 					// WTP, ray, Do not spawn in impassable Terrain - owner is checked below
-					if (pPlot != NULL && !pPlot->isImpassable())
+					CvPlot* const pPlot = GC.getMap().syncRandPlot((RANDPLOT_NOT_VISIBLE_TO_CIV | RANDPLOT_PASSIBLE), pLoopArea->getID(), iStartDist);
+
+					if (pPlot != NULL)
 					{
-					    /*
-					    // May Cause OOS Errors as Active Player is different on each Computer
-					    if (pPlot->isActiveVisible(false))
-					    {
-					        continue
-					    }
-					    */
-						eBestUnit = NO_UNIT;
+					    eBestUnit = NO_UNIT;
 						iBestValue = 0;
 
 						CivilizationTypes eBarbCiv = GET_PLAYER(getBarbarianPlayer()).getCivilizationType();
-						for (iJ = 0; iJ < GC.getNumUnitInfos(); iJ++)
+						for (int iJ = 0; iJ < GC.getNumUnitInfos(); iJ++)
 						{
 							//eLoopUnit = (UnitTypes) GC.getCivilizationInfo(eBarbCiv).getCivilizationUnits(iJ);
 							eLoopUnit = (UnitTypes) iJ;
+
+							const bool bHasPathToEuropePlots = generatePathForHypotheticalUnit(pPlot, pEuropePlot, getBarbarianPlayer(), eLoopUnit, 0);
+							if (!bHasPathToEuropePlots)
+								continue;
 
 							if (eLoopUnit == NO_UNIT)
 							{
@@ -5659,7 +5656,7 @@ void CvGame::createAnimalsSea()
 							iValue = 0;
 							if (pPlot->getTerrainType() != NO_TERRAIN)
 							{
-								// WTP, ray, for spawing we now als check that the Owern of the Plot is either NO_Player or Native, thus it will not spawn in cultural radius of Europeans and Kings
+								// WTP, ray, for spawing we now also check that the Owner of the Plot is either NO_Player or Native, thus it will not spawn in cultural radius of Europeans and Kings
 								if (GC.getUnitInfo(eLoopUnit).getTerrainNative(pPlot->getTerrainType()) && (pPlot->getOwnerINLINE() == NO_PLAYER || GET_PLAYER(pPlot->getOwnerINLINE()).isNative()))
 								{
 									iRand = GC.getWILD_ANIMAL_SEA_TERRAIN_NATIVE_WEIGHT();
@@ -5680,8 +5677,7 @@ void CvGame::createAnimalsSea()
 
 						if (eBestUnit != NO_UNIT)
 						{
-						    CvUnit* pNewUnit;
-							pNewUnit = GET_PLAYER(getBarbarianPlayer()).initUnit(eBestUnit, NO_PROFESSION, pPlot->getX_INLINE(), pPlot->getY_INLINE(), UNITAI_ANIMAL_SEA);
+							CvUnit* const pNewUnit = GET_PLAYER(getBarbarianPlayer()).initUnit(eBestUnit, NO_PROFESSION, pPlot->getX_INLINE(), pPlot->getY_INLINE(), UNITAI_ANIMAL_SEA);
 							pNewUnit->setBarbarian(true);
 							eLastUnit = eBestUnit;
 						}
@@ -7434,4 +7430,23 @@ int CvGame::getRemainingForcedPeaceTurns() const
 	const int forcedPeaceTurns = GC.getDefineINT("COLONIAL_FORCED_PEACE_TURNS") * gamespeedMod / 100;
 	const int diff = forcedPeaceTurns - GC.getGameINLINE().getElapsedGameTurns();
 	return std::max(0, diff);
+}
+
+CvPlot* CvGame::getAnyEuropePlot() const
+{
+	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ePlayer++)
+	{
+		CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+		
+		if (kPlayer.isEverAlive() && kPlayer.getCivCategoryTypes() == CIV_CATEGORY_EUROPEAN)
+		{
+			 CvPlot* const pStartingPlot = kPlayer.getStartingPlot();
+			 if (pStartingPlot != NULL)
+			 {
+				 return pStartingPlot;
+			 }
+		}
+	}
+	
+	return NULL;
 }
