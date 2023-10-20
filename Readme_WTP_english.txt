@@ -71,6 +71,7 @@ WTP team members:
 	Fürstbischof
 	Tucker8
 	victorxucp
+	Aemon
 
 Special Credits:
 	f1rpo (continous support related to coding)
