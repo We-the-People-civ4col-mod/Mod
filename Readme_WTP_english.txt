@@ -54,7 +54,7 @@ https://forums.civfanatics.com/forums/civ4col-we-the-people.591/
 
 ------------------
 
-WTP team members
+WTP team members:
 
 	raystuttgart
 	Devolution
@@ -76,7 +76,7 @@ Special Credits:
 	f1rpo (continous support related to coding)
 	karadoc (for his pathfinding code)
 
-Former (now inactive) RaR / WTP members:
+Former (now inactive) RaR members:
 
 	Robert Surcouf
 	colonialfan

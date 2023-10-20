@@ -53,7 +53,7 @@ https://forums.civfanatics.com/forums/civ4col-we-the-people.591/
 
 ------------------
 
-WTP Teammitglieder
+WTP Teammitglieder:
 
 	raystuttgart
 	Devolution
