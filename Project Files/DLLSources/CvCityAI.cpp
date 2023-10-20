@@ -103,11 +103,6 @@ void CvCityAI::AI_doTurn()
 	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 
-	if (!isNative())
-	{
-		bool res = AI_hasCoastalRoute();
-	}
-
 	AI_doTradedYields();
 
 	if (!isHuman())

@@ -350,7 +350,6 @@ int stepValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 int stepCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
 int stepAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
 int routeValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
-int coastalRouteValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
 int borderValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
 int areaValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
 int joinArea(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);

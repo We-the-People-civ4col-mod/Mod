@@ -2055,62 +2055,6 @@ int routeValid(FAStarNode* parent, FAStarNode* node, int data, const void* point
 	return FALSE;
 }
 
-int coastalRouteValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
-{
-	CvPlot* pNewPlot;
-
-	if (parent == NULL)
-	{
-		return true;
-	}
-
-	pNewPlot = GC.getMap().plotSoren(node->m_iX, node->m_iY);
-
-	const PlayerTypes ePlayer = ((PlayerTypes)(gDLL->getFAStarIFace()->GetInfo(finder)));
-
-	// Erik: It's ok to check for a city here since cities they have to be separated by at least 1-non city plot
-	// Erik: TODO: check that it's our own city! When we implement trading with natives\Europeans, we can allow it
-	if (pNewPlot->isCity())
-	{
-		return true;
-	}
-
-	// WTP, ray, Canal - START
-	if (pNewPlot->getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(pNewPlot->getImprovementType()).isCanal())
-	{
-		return true;
-	}
-	// WTP, ray, Canal - END
-
-	const TeamTypes eTeam = GET_PLAYER(ePlayer).getTeam();
-
-	if (pNewPlot->isWater() && pNewPlot->isRevealed(eTeam, false) && !pNewPlot->isImpassable())
-	{
-		const FeatureTypes featureType = pNewPlot->getFeatureType();
-
-		// Erik: If the plot has a feature it can't be impassable
-		if (featureType != NO_FEATURE)
-		{
-			const CvFeatureInfo& kFeatureInfo = GC.getFeatureInfo(featureType);
-
-			// Erik: Just in case impassable terrain is added to the game (unused in WTP)
-			if (!kFeatureInfo.isImpassable())
-			{
-				return false;
-			}
-		}
-
-		//WTP, ray, Large Rivers
-		// if (pNewPlot->getTerrainType() == TERRAIN_COAST || pNewPlot->getTeam() == eTeam)
-		//WTP, ray, Lakes
-		if (pNewPlot->getTerrainType() == TERRAIN_COAST || pNewPlot->getTerrainType() == TERRAIN_SHALLOW_COAST || pNewPlot->getTerrainType() == TERRAIN_LARGE_RIVERS || pNewPlot->getTerrainType() == TERRAIN_LAKE || pNewPlot->getTerrainType() == TERRAIN_ICE_LAKE || pNewPlot->getTeam() == eTeam)
-		{
-			return true;
-		}
-	}
-
-	return false;
-}
 
 int borderValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
 {
