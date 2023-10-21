@@ -268,7 +268,8 @@ public:
 	bool isEnemyRoute() const;
 	bool isAlwaysHeal() const;
 	bool isHillsDoubleMove() const;
-	bool isAvailableForDefensiveUnit(); //WTP, jbu - recalculates once per load;
+	bool isAvailableForDefensiveUnit() const; //WTP, jbu - calculated from attack characteristics or rather lack thereof
+	bool isNotAvailableForDefensiveUnit() const; //WTP, jbu
 
 	const char* getSound() const;
 	void setSound(const char* szVal);
@@ -290,6 +291,7 @@ public:
 	void write(FDataStreamBase* stream);
 	bool read(CvXMLLoadUtility* pXML);
 	bool readPass2(CvXMLLoadUtility* pXML);
+	bool postLoadSetup();
 
 protected:
 
@@ -333,7 +335,6 @@ protected:
 	bool m_bAlwaysHeal;
 	bool m_bHillsDoubleMove;
 	bool m_bAvailableForDefensiveUnit;
-	bool m_bAvailableForDefensiveUnitCached;
 	void calculateAvailableForDefensiveUnit();
 	CvString m_szSound;
 	// Arrays
