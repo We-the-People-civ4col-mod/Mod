@@ -38,7 +38,7 @@
         <Tag>TXT_KEY_GAMESPEED_TAC_EPIC</Tag>
         <English>Epic</English>
         <French>Épique</French>
-        <German>(Episch</German>
+        <German>Episch</German>
         <Italian>Epica</Italian>
         <Spanish>Épica</Spanish>
         <Russian>Эпичная (6 месяцев/ход)</Russian>
@@ -67,5 +67,16 @@
         <German>(4 Monate/Zug) - Extrem langsames Spieltempo : Die Spieldaten werden ausbalanciert, um die Spieldauer deutlich zu verlängern.</German>
         <Italian>(4 mesi/turno) - Velocità di gioco incredibilmente lunga : I dati di gioco sono bilanciati per prolungare in modo significativo la durata del gioco. </Italian>
         <Spanish>(4 meses/turno) - Velocidad de juego extremadamente lento : Los datos del juego están equilibrados para prolongar significativamente la duración del juego.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GAMESPEED_TAC_BUILDUP_MODE</Tag>
+        <English>Buildup mode</English>
+        <German>Aufbauspiel</German>
+        <Russian>Строитель (1 месяц/ход)</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GAMESPEED_TAC_BUILDUP_MODE_HELP</Tag>
+        <English>(1 month/turn) - Extremely slow game speed for buildup player: The game data is balanced to significantly extend the game duration. However, not everything is simply scaled up. The speed is intended to give builders much more time to build the perfect colony. However, construction, training and growth go faster.</English>
+        <German>(1 Monate/Zug) - Extrem langsames Spieltempo für Aufbauspieler: Die Spieldaten werden ausbalanciert, um die Spieldauer deutlich zu verlängern. Allerdings werden nicht alle Modifier einfach hochskaliert. Die Geschwindigkeit ist dazu vorgesehen, Aufbauspielern viel mehr Zeit für die perfekte Kolonie zu geben. Aufbau, Ausbildung und Wachstum gehen aber schneller.</German>
     </TEXT>
 </Civ4GameText>

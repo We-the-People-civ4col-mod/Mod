@@ -281,6 +281,13 @@ void CvInfoBase::checkStringContents(CvWString& szStr, const wchar* szExtension)
 	}
 }
 
+bool CvInfoBase::postLoadSetup()
+{
+	// returns if all instances will need to be run postLoadSetup
+	// obvoiusly if this is overwritten somewhere, then it must return true to make it work
+	return false;
+}
+
 //
 // XML reading code
 //
@@ -6197,13 +6204,7 @@ m_aiTeachUnitClassWeights(NULL),
 m_abLeaders(NULL),
 m_abCivilizationFreeBuildingClass(NULL),
 m_abValidProfessions(NULL),
-m_abTraits(NULL),
-
-m_paszGeneralNames(NULL), // TAC - Great General Names - Ray - START
-m_paszAdmiralNames(NULL), // R&R, ray, Great Admirals - START
-m_paszShipNames(NULL), // TAC - Great Ship Names - Ray - START
-
-m_paszCityNames(NULL)
+m_abTraits(NULL)
 {
 }
 //------------------------------------------------------------------------------------------------------
@@ -6224,10 +6225,6 @@ CvCivilizationInfo::~CvCivilizationInfo()
 	SAFE_DELETE_ARRAY(m_abCivilizationFreeBuildingClass);
 	SAFE_DELETE_ARRAY(m_abValidProfessions);
 	SAFE_DELETE_ARRAY(m_abTraits);
-	SAFE_DELETE_ARRAY(m_paszCityNames);
-	SAFE_DELETE_ARRAY(m_paszGeneralNames); // TAC - Great General Names - Ray - START
-	SAFE_DELETE_ARRAY(m_paszAdmiralNames); // R&R, ray, Great Admirals - START
-	SAFE_DELETE_ARRAY(m_paszShipNames); // TAC - Ship Names - Ray - START
 }
 void CvCivilizationInfo::reset()
 {
@@ -6513,37 +6510,49 @@ const char* CvCivilizationInfo::getButton() const
 {
 	return getArtInfo()->getButton();
 }
-std::string CvCivilizationInfo::getCityNames(int i) const
+CvWString CvCivilizationInfo::getCityNames(int i) const
 {
 	FAssertMsg(i < getNumCityNames(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_paszCityNames[i];
+
+	CvWString tag;
+	tag.Format(L"%s_CITY_%d", m_szTextKey.GetCString(), i);
+	return gDLL->getText(tag);
 }
 
 // TAC - Great General Names - Ray - START
-std::string CvCivilizationInfo::getGeneralNames(int i) const
+CvWString CvCivilizationInfo::getGeneralNames(int i) const
 {
 	FAssertMsg(i < getNumGeneralNames(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_paszGeneralNames[i];
+	
+	CvWString tag;
+	tag.Format(L"%s_GENERAL_%d", m_szTextKey.GetCString(), i);
+	return gDLL->getText(tag);
 }
 // TAC - Great General Names - Ray - END
 
 // R&R, ray, Great Admirals - START
-std::string CvCivilizationInfo::getAdmiralNames(int i) const
+CvWString CvCivilizationInfo::getAdmiralNames(int i) const
 {
 	FAssertMsg(i < getNumAdmiralNames(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_paszAdmiralNames[i];
+	
+	CvWString tag;
+	tag.Format(L"%s_ADMIRAL_%d", m_szTextKey.GetCString(), i);
+	return gDLL->getText(tag);
 }
 // R&R, ray, Great Admirals - END
 
 // TAC - Ship Names - Ray - START
-std::string CvCivilizationInfo::getShipNames(int i) const
+CvWString CvCivilizationInfo::getShipNames(int i) const
 {
 	FAssertMsg(i < getNumShipNames(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_paszShipNames[i];
+	
+	CvWString tag;
+	tag.Format(L"%s_SHIP_%d", m_szTextKey.GetCString(), i);
+	return gDLL->getText(tag);
 }
 // TAC - Ship Names - Ray - END
 
@@ -6643,28 +6652,6 @@ void CvCivilizationInfo::read(FDataStreamBase* stream)
 	SAFE_DELETE_ARRAY(m_abTraits);
 	m_abTraits = new bool[GC.getNumTraitInfos()];
 	stream->Read(GC.getNumTraitInfos(), m_abTraits);
-
-	SAFE_DELETE_ARRAY(m_paszCityNames);
-	m_paszCityNames = new CvString[m_iNumCityNames];
-	stream->ReadString(m_iNumCityNames, m_paszCityNames);
-
-	// TAC - Great General Names - Ray - START
-	SAFE_DELETE_ARRAY(m_paszGeneralNames);
-	m_paszGeneralNames = new CvString[m_iNumGeneralNames];
-	stream->ReadString(m_iNumGeneralNames, m_paszGeneralNames);
-	// TAC - Great General Names - Ray - END
-
-	// R&R, ray, Great Admirals - START
-	SAFE_DELETE_ARRAY(m_paszAdmiralNames);
-	m_paszAdmiralNames = new CvString[m_iNumAdmiralNames];
-	stream->ReadString(m_iNumAdmiralNames, m_paszAdmiralNames);
-	// R&R, ray, Great Admirals - END
-
-	// TAC - Ship Names - Ray - START
-	SAFE_DELETE_ARRAY(m_paszShipNames);
-	m_paszShipNames = new CvString[m_iNumShipNames];
-	stream->ReadString(m_iNumShipNames, m_paszShipNames);
-	// TAC - Ship Names - Ray - END
 }
 void CvCivilizationInfo::write(FDataStreamBase* stream)
 {
@@ -6721,10 +6708,6 @@ void CvCivilizationInfo::write(FDataStreamBase* stream)
 	stream->Write(GC.getNumBuildingClassInfos(), m_abCivilizationFreeBuildingClass);
 	stream->Write(GC.getNumProfessionInfos(), m_abValidProfessions);
 	stream->Write(GC.getNumTraitInfos(), m_abTraits);
-	stream->WriteString(m_iNumCityNames, m_paszCityNames);
-	stream->WriteString(m_iNumGeneralNames, m_paszGeneralNames); // TAC - Great General Names - Ray - START
-	stream->WriteString(m_iNumAdmiralNames, m_paszAdmiralNames); // R&R, ray, Great Admirals - START
-	stream->WriteString(m_iNumShipNames, m_paszShipNames); // TAC - Ship Names - Ray - START
 }
 
 bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
@@ -6778,36 +6761,6 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetEnum(getType(), m_eCivCategory, "eCivCategory");
 
 	pXML->GetEnum(getType(), m_eCivEffect, "eCivEffect", false);
-
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"Cities"))
-	{
-		pXML->SetStringList(&m_paszCityNames, &m_iNumCityNames);
-		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-	}
-
-	// TAC - Great General Names - Ray - START
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"Generals"))
-	{
-		pXML->SetStringList(&m_paszGeneralNames, &m_iNumGeneralNames);
-		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-	}
-	// TAC - Great General Names - Ray - END
-
-	// R&R, ray, Great Admirals - START
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"Admirals"))
-	{
-		pXML->SetStringList(&m_paszAdmiralNames, &m_iNumAdmiralNames);
-		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-	}
-	// R&R, ray, Great Admirals - END
-
-	// TAC - Ship Names - Ray - START
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"Ships"))
-	{
-		pXML->SetStringList(&m_paszShipNames, &m_iNumShipNames);
-		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-	}
-	// TAC - Ship Names - Ray - END
 
 	// if we can set the current xml node to it's next sibling
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"Buildings"))
@@ -6967,8 +6920,43 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 	}
 	pXML->SetVariableListTagPair(&m_abLeaders, "Leaders", GC.getNumLeaderHeadInfos(), false);
 	pXML->GetChildXmlValByName(szTextVal, "CivilizationSelectionSound");
+
 	return true;
 }
+
+bool CvCivilizationInfo::postLoadSetup()
+{
+	// setlength of lists of names based on available TXT_KEYs
+	CvWString tag;
+	CvWString text;
+
+	for (;; ++m_iNumAdmiralNames)
+	{
+		tag.Format(L"%s_ADMIRAL_%d", m_szTextKey.GetCString(), m_iNumAdmiralNames);
+		text = gDLL->getText(tag);
+		if (tag == text) break;
+	}
+	for (;; ++m_iNumCityNames)
+	{
+		tag.Format(L"%s_CITY_%d", m_szTextKey.GetCString(), m_iNumCityNames);
+		text = gDLL->getText(tag);
+		if (tag == text) break;
+	}
+	for (;; ++m_iNumGeneralNames)
+	{
+		tag.Format(L"%s_GENERAL_%d", m_szTextKey.GetCString(), m_iNumGeneralNames);
+		text = gDLL->getText(tag);
+		if (tag == text) break;
+	}
+	for (;; ++m_iNumShipNames)
+	{
+		tag.Format(L"%s_SHIP_%d", m_szTextKey.GetCString(), m_iNumShipNames);
+		text = gDLL->getText(tag);
+		if (tag == text) break;
+	}
+	return true;
+}
+
 bool CvCivilizationInfo::readPass2(CvXMLLoadUtility* pXML)
 {
 	CvString szTextVal;

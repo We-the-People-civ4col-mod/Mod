@@ -467,7 +467,7 @@
         <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT3</Tag>
         <English>Ship Wreckage</English>
         <French>
-            <Text>Epave de navire</Text>
+            <Text>Débris d'épave</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
@@ -491,15 +491,15 @@
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT3_PEDIA</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]Shipwrecks[COLOR_REVERT] indicate ships that sank or lost something during a storm. In any case, the flotsam may still contain valuable items. Maps or gold might be found among the wreckage.</English>
-        <French>Les [COLOR_HIGHLIGHT_TEXT]épaves de navires[COLOR_REVERT] indiquent qu'il devait y avoir un navire à proximité. Soit il a coulé, soit il a perdu quelque chose dans la tempête. Dans tous les cas, les débris peuvent contenir des objets de valeur. Des cartes ou de l'or peuvent être trouvés parmi les épaves.</French>
+        <French>Les [COLOR_HIGHLIGHT_TEXT]débris d'épaves[COLOR_REVERT] indiquent qu'il devait y avoir un navire à proximité. Soit il a coulé, soit il a perdu quelque chose dans la tempête. Dans tous les cas, les débris peuvent contenir des objets de valeur. Des cartes ou de l'or peuvent être trouvés parmi les épaves.</French>
         <German>[COLOR_HIGHLIGHT_TEXT]Treibgut[COLOR_REVERT] zeugt davon, dass sich ganz in der Nähe ein Schiff befunden haben muss. Entweder ist es gesunken oder es hat im Sturm etwas verloren. Jedenfalls kann man in dem Treibgut vielleicht noch wertvolle Dinge finden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT4</Tag>
         <English>Ship Wreck</English>
         <French>
-            <Text>Ship Wreck</Text>
-            <Gender>Neutral</Gender>
+            <Text>Épave échouée</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
         <German>
@@ -699,7 +699,7 @@
         <Tag>TXT_KEY_IMPROVEMENT_LUMBERMILL</Tag>
         <English>Sawmill</English>
         <French>
-            <Text>Scierie</Text>
+            <Text>Scierie en forêt</Text>
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </French>
@@ -884,6 +884,7 @@
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_PEN</Tag>
         <English>Breeding Pen</English>
+        <French>Basse-cour</French>
         <German>
             <Text>Zuchtstall</Text>
             <Gender>Male</Gender>
@@ -894,12 +895,13 @@
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_PEN_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Breeding Pen[COLOR_REVERT]A pigpen keeps the animals close, safe from predators and easy to feed. It's also a good source of manure for the fields - a dirty job but somebody's got to do it</English>
-        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]La porcherie[COLOR_REVERT]Une porcherie permet de garder les animaux proches, à l'abri des prédateurs et faciles à nourrir. C'est aussi une bonne source de fumier pour les champs. C'est un travail sale mais quelqu'un doit le faire.</French>
+        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Les basses-cours[COLOR_REVERT]Une porcherie permet de garder les animaux proches, à l'abri des prédateurs et faciles à nourrir. C'est aussi une bonne source de fumier pour les champs. C'est un travail sale mais quelqu'un doit le faire.</French>
 		<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Zuchtstall[COLOR_REVERT]Ein Stall hält die Tiere in zusammen, schützt sie vor Raubtieren und lässt sie leichter füttern. Darüber hinaus bietet sich so eine gute Düngerquelle für die Felder - eine schmutzige Arbeit, aber irgendjemand muss sie ja machen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LARGE_PEN</Tag>
         <English>Large Breeding Pen</English>
+        <French>Grande basse-cour:Grandes basses-cours</French>
         <German>
             <Text>Großer Zuchtbetrieb</Text>
             <Gender>Male</Gender>
@@ -1355,7 +1357,7 @@
         <Tag>TXT_KEY_IMPROVEMENT_CLAY_PIT</Tag>
         <English>Clay Pit</English>
         <French>
-            <Text>Clay Pit</Text>
+            <Text>Fosse à argile</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
@@ -1386,7 +1388,7 @@
         <Tag>TXT_KEY_IMPROVEMENT_OPEN_CLAY_MINE</Tag>
         <English>Open Clay Mine</English>
         <French>
-            <Text>Open Clay Mine</Text>
+            <Text>Mine ouverte d'argile</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
@@ -1417,7 +1419,7 @@
         <Tag>TXT_KEY_IMPROVEMENT_PEAT_PIT</Tag>
         <English>Peat Pit</English>
         <French>
-            <Text>Peat Pit</Text>
+            <Text>Fosse à tourbe</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
@@ -1448,7 +1450,7 @@
         <Tag>TXT_KEY_IMPROVEMENT_OPEN_PEAT_MINE</Tag>
         <English>Open Peat Mine</English>
         <French>
-            <Text>Open Peat Mine</Text>
+            <Text>Mine ouverte de tourbe</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>

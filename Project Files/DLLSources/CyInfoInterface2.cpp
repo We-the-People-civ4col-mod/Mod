@@ -65,7 +65,7 @@ void CyInfoPythonInterface2()
 		.def("isCivilizationFreeBuildingClass", &CvCivilizationInfo::isCivilizationFreeBuildingClass, "bool (int i)")
 		.def("isValidProfession", &CvCivilizationInfo::isValidProfession, "bool (int i)")
 		.def("hasTrait", &CvCivilizationInfo::hasTrait, "bool (int i)")
-		.def("getCityNames", &CvCivilizationInfo::getCityNames, "string (int i)")
+		.def("getCityNames", &CvCivilizationInfo::getCityNames, "stringw (int i)")
 		;
 	python::class_<CyVictoryInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvVictoryInfo")
 		.def("getPopulationPercentLead", &CvVictoryInfo::getPopulationPercentLead, "int ()")

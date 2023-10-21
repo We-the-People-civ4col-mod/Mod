@@ -79,5 +79,23 @@
                 </GameTurnInfo>
             </GameTurnInfos>
         </GameSpeedInfo>
+        <GameSpeedInfo>
+            <Type>GAMESPEED_TAC_BUILDUP_MODE</Type>
+            <Description>TXT_KEY_GAMESPEED_TAC_BUILDUP_MODE</Description>
+            <Help>TXT_KEY_GAMESPEED_TAC_BUILDUP_MODE_HELP</Help>
+            <iGrowthPercent>100</iGrowthPercent>
+            <iStoragePercent>300</iStoragePercent>
+            <iTrainPercent>100</iTrainPercent>
+            <iConstructPercent>100</iConstructPercent>
+            <iFatherPercent>900</iFatherPercent>
+            <iGreatGeneralPercent>100</iGreatGeneralPercent>
+            <iRevolutionTurns>3600</iRevolutionTurns>
+            <GameTurnInfos>
+                <GameTurnInfo>
+                    <iMonthIncrement>1</iMonthIncrement>
+                    <iTurnsPerIncrement>7200</iTurnsPerIncrement>
+                </GameTurnInfo>
+            </GameTurnInfos>
+        </GameSpeedInfo>
     </GameSpeedInfos>
 </Civ4GameSpeedInfo>

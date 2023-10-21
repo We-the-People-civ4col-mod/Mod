@@ -53,19 +53,24 @@ https://forums.civfanatics.com/forums/civ4col-we-the-people.591/
 
 ------------------
 
-Aktuelle aktive WTP Teammitglieder
+WTP Teammitglieder:
 
 	raystuttgart
 	Devolution
 	Nightinggale
 	Schmiddie
 	Mr.Zorg
-	Fürstbischof
 	Kendon
 	Raubwürger
-	FlaviusBelisarius
 	Liet
+	Barthoze
+	sneed
+	FlaviusBelisarius
+	Fürstbischof
 	jooe
+	Tucker8
+	victorxucp
+	Aemon
 
 Besonderen Dank:
 	f1rpo (wiederholte Unterstützung zu Code)

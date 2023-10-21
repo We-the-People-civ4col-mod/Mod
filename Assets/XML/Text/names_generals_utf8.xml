@@ -1,0 +1,1811 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_0</Tag>
+		<English>Horatio Lloyd Gates</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_1</Tag>
+		<English>Daniel Morgan</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_2</Tag>
+		<English>Charles Lee</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_3</Tag>
+		<English>Daniel Morgan</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_4</Tag>
+		<English>Arthur St. Clair</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_5</Tag>
+		<English>Seth Warner</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_6</Tag>
+		<English>Nicholas Herkimer</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_7</Tag>
+		<English>Nathanael Greene</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_8</Tag>
+		<English>Edward Braddock</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_9</Tag>
+		<English>Richard Montgomery</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_10</Tag>
+		<English>James Wolfe</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_11</Tag>
+		<English>Henry Knox</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_12</Tag>
+		<English>George Rogers Clark</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_13</Tag>
+		<English>Anthony Wayne</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_14</Tag>
+		<English>Thomas Conway</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_15</Tag>
+		<English>Josiah Harmar</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_16</Tag>
+		<English>John Sullivan</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_17</Tag>
+		<English>David Wooster</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_18</Tag>
+		<English>Francis Marion</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_19</Tag>
+		<English>William Alexander</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_20</Tag>
+		<English>John Cadwalader</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_21</Tag>
+		<English>Enoch Poor</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_22</Tag>
+		<English>James Abercrombie</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_0</Tag>
+		<English>Chevalier de Mercy</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_1</Tag>
+		<English>Jean-Baptiste Le Moyne de Bienville</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_2</Tag>
+		<English>Comte de La Galissoniere</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_3</Tag>
+		<English>Pierre François de Rigaud</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_4</Tag>
+		<English>Louis-Joseph de Montcalm</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_5</Tag>
+		<English>Jean-Baptiste-Donatien de Rochambeau</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_6</Tag>
+		<English>Joseph Coulon de Jumonville</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_7</Tag>
+		<English>Francis de Gaston</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_8</Tag>
+		<English>Jean-Baptiste de Vimeur</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_9</Tag>
+		<English>Armand Louis de Gontaut</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_10</Tag>
+		<English>François-Jean de Chastellux</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_11</Tag>
+		<English>Antoine-Charles du Houx</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_12</Tag>
+		<English>Charles du Houx de Vioménil</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_13</Tag>
+		<English>François-Marie Le Marchand de Lignery</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_14</Tag>
+		<English>Michel-Ange de Menneville</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_15</Tag>
+		<English>Daniel de Beaujeu</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_16</Tag>
+		<English>Charles Tuffin</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_0</Tag>
+		<English>Sebastian de Miranda Rodríguez</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_1</Tag>
+		<English>Carlos Soublette</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_2</Tag>
+		<English>José Francisco Bermúdez</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_3</Tag>
+		<English>Rafael Urdaneta</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_4</Tag>
+		<English>Antonio Nariño</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_5</Tag>
+		<English>Francisco de Paula Santander</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_6</Tag>
+		<English>José Antonio Páez </English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_7</Tag>
+		<English>Bernardo de Gálvez</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_8</Tag>
+		<English>Matías de Gálvez</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_9</Tag>
+		<English>Esteban Rodríguez Miró</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_10</Tag>
+		<English>Luis de Unzaga</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_11</Tag>
+		<English>Francisco de Miranda</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_0</Tag>
+		<English>Willem Kieft</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_1</Tag>
+		<English>Cornelis Jacobszoon May</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_2</Tag>
+		<English>Adrian Joriszoon Thienpont</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_3</Tag>
+		<English>Abraham Crijnssen</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_4</Tag>
+		<English>Siegmund von Schkoppe</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_5</Tag>
+		<English>Johannes Heinisius</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_6</Tag>
+		<English>Wouter van Twiller</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_7</Tag>
+		<English>Sebastiaen Jansen Krol</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_8</Tag>
+		<English>Willem Verhulst</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_9</Tag>
+		<English>Brant Aertzsz van Slechtenhorst</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_10</Tag>
+		<English>Johan Maurits</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_11</Tag>
+		<English>Elias Herkmans</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_12</Tag>
+		<English>Hendrik van Haus</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_0</Tag>
+		<English>Matias de Albuquerque</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_1</Tag>
+		<English>Fernandes Vieira</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_2</Tag>
+		<English>André Vidal de Negreiros</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_3</Tag>
+		<English>Henrique Dias</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_4</Tag>
+		<English>António Filipe Camarão</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_5</Tag>
+		<English>Afonso Sardinha</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_6</Tag>
+		<English>Antonio Dias Adorno</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_7</Tag>
+		<English>Antonio Dias de Oliveira</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_8</Tag>
+		<English>Bartolomeu Bueno da Silva</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_9</Tag>
+		<English>Belchior Dias Moria</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_10</Tag>
+		<English>Manuel da Borba Gato</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_11</Tag>
+		<English>Domingos Jorge Velho</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_12</Tag>
+		<English>Fernandes Tourinho</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_13</Tag>
+		<English>Ferno Dias Pais</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_14</Tag>
+		<English>Francisco Dias Velho</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_15</Tag>
+		<English>Henrique da Cunha Gago</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_16</Tag>
+		<English>Manuel Preto</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_17</Tag>
+		<English>Pascoal Moreira Cabral</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_18</Tag>
+		<English>Antonio Raposo Tavares</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_GENERAL_0</Tag>
+		<English>Camus</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_GENERAL_1</Tag>
+		<English>Axel Urup</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_GENERAL_2</Tag>
+		<English>Anders Bille</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_GENERAL_3</Tag>
+		<English>Vincens Budde</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_GENERAL_4</Tag>
+		<English>Prince Christian of Hesse</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_GENERAL_5</Tag>
+		<English>Johan Caspar von Cicignon</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_GENERAL_6</Tag>
+		<English>Johann Ewald</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_GENERAL_7</Tag>
+		<English>Svend Poulsen Gonge</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_GENERAL_8</Tag>
+		<English>Caspar Herman Hausemann</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_0</Tag>
+		<English>Otto Louis of Salm</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_1</Tag>
+		<English>Knut Jonsson Posse</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_2</Tag>
+		<English>Henrik von Rehbinder</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_3</Tag>
+		<English>Jindrich Matyas Thurn-Valsassina</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_4</Tag>
+		<English>Count Nils Brahe</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_5</Tag>
+		<English>Carl Gustaf Armfeldt</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_6</Tag>
+		<English>Goeran Silfverhielm</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_7</Tag>
+		<English>Johan August Meijerfeldt</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_8</Tag>
+		<English>Arvid Axel Mardefelt</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_9</Tag>
+		<English>Magnus De la Gardie</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_10</Tag>
+		<English>Berendt von Mehlen</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_11</Tag>
+		<English>Lars Eriksson</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_12</Tag>
+		<English>Gustav Horn</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_0</Tag>
+		<English>Count Fedor Golovin</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_1</Tag>
+		<English>Count Boris Sheremetev</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_2</Tag>
+		<English>Prince Alexander Menshikov</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_3</Tag>
+		<English>Prince Anikita Repnin</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_4</Tag>
+		<English>Prince Mikhail Galitzine</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_5</Tag>
+		<English>Prince Ivan Trubetskoy</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_6</Tag>
+		<English>Stepan Apraksin</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_7</Tag>
+		<English>Nikolai Rezanov</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_8</Tag>
+		<English>Gerasim Izmailov</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_9</Tag>
+		<English>Lavrenty Zagoskin</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_0</Tag>
+		<English>John Burgoyne</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_1</Tag>
+		<English>William Johnson</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_2</Tag>
+		<English>Henry Clinton</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_3</Tag>
+		<English>William Howe</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_4</Tag>
+		<English>Simon Fraser</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_5</Tag>
+		<English>William Phillips</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_6</Tag>
+		<English>Jeffrey Amherst</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_7</Tag>
+		<English>James Wolfe</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_8</Tag>
+		<English>Charles Cornwallis</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_9</Tag>
+		<English>George Augustus Howe</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_10</Tag>
+		<English>Thomas Gage</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_11</Tag>
+		<English>Edward Braddock</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_12</Tag>
+		<English>Henry Seymour Conway</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_13</Tag>
+		<English>George Augustus Eliott</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_14</Tag>
+		<English>Robert Monckton</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_15</Tag>
+		<English>Guy Carleton</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_16</Tag>
+		<English>James Grant</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_17</Tag>
+		<English>Thomas Wentworth</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_18</Tag>
+		<English>Benedict Arnold</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_0</Tag>
+		<English>Friedrich von Schomberg</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_1</Tag>
+		<English>Louis de Bourbon-Penthievre</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_2</Tag>
+		<English>Louis Augustin d'Affry</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_3</Tag>
+		<English>Jean Le Miceaud d'Aron</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_4</Tag>
+		<English>Armand Fouquet</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_5</Tag>
+		<English>Peter von Besenval</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_6</Tag>
+		<English>Armand-Louis de Gontaut</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_7</Tag>
+		<English>Louis II. de Bourbon</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_8</Tag>
+		<English>Louis de Bourbon-Cond</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_9</Tag>
+		<English>René Duguay-Trouin</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_10</Tag>
+		<English>Jacques Dugommier</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_11</Tag>
+		<English>Victor-Marie d'Estres</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_12</Tag>
+		<English>Charles Fouquet</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_13</Tag>
+		<English>Louis Fouquet</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_14</Tag>
+		<English>Charles Patissier</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_15</Tag>
+		<English>Joseph Dupleix</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_16</Tag>
+		<English>Claude de Villars</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_GENERAL_0</Tag>
+		<English>Juan Domingo de Monteverde</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_GENERAL_1</Tag>
+		<English>Miguel de la Torre</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_GENERAL_2</Tag>
+		<English>Francisco Tomás Morales</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_GENERAL_3</Tag>
+		<English>Ambrosio Spinola</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_GENERAL_4</Tag>
+		<English>Luis Méndez de Haro</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_GENERAL_5</Tag>
+		<English>Juan José de Austria</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_GENERAL_6</Tag>
+		<English>Martín Álvarez de Sotomayor</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_GENERAL_7</Tag>
+		<English>Rafael Conti</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_GENERAL_0</Tag>
+		<English>Ludwig von Nassau-Dillenburg</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_GENERAL_1</Tag>
+		<English>Ludwig von Boisot</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_GENERAL_2</Tag>
+		<English>Johann Wolfart van Brederode</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_GENERAL_3</Tag>
+		<English>Theodorus Frederik van Capellen</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_GENERAL_4</Tag>
+		<English>Francois Nicolaas Fagel</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_GENERAL_5</Tag>
+		<English>Reinhardt Vincent von Hompesch</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_GENERAL_6</Tag>
+		<English>Niels Juel</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_GENERAL_7</Tag>
+		<English>Justinus von Nassau</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_GENERAL_8</Tag>
+		<English>Albrecht Graf zu Schaumburg-Lippe</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_GENERAL_9</Tag>
+		<English>Ludwig von Nassau-Dillenburg</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_GENERAL_10</Tag>
+		<English>Heinrich von Nassau-Ouwerkerk</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_GENERAL_0</Tag>
+		<English>Antonio Lus de Meneses</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_GENERAL_1</Tag>
+		<English>João de Castro</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_GENERAL_2</Tag>
+		<English>Gomes Freire de Andrade</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_GENERAL_3</Tag>
+		<English>Antonio Lus de Sousa</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_GENERAL_4</Tag>
+		<English>Antonio de Saldanha</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_GENERAL_5</Tag>
+		<English>Antonio Correia</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_GENERAL_6</Tag>
+		<English>Martim Afonso de Castro</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_GENERAL_7</Tag>
+		<English>Johann Heinrich Böhm</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_GENERAL_0</Tag>
+		<English>Nils Eriksson Gyldenstjerne</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_GENERAL_1</Tag>
+		<English>Karl Christian von Trampe</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_GENERAL_2</Tag>
+		<English>P.C. Lilienskiold</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_GENERAL_3</Tag>
+		<English>Frands Brockenhuus</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_GENERAL_4</Tag>
+		<English>Iver Huitfeldt</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_GENERAL_5</Tag>
+		<English>Svend Poulsen Gonge</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_GENERAL_6</Tag>
+		<English>Martin von Falkenskjold</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_GENERAL_7</Tag>
+		<English>Christian af Holstein</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_GENERAL_8</Tag>
+		<English>Holger Rosenkrantz</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_GENERAL_0</Tag>
+		<English>Hemming Gadh</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_GENERAL_1</Tag>
+		<English>Johan Tre Rosor</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_GENERAL_2</Tag>
+		<English>Karl Horn</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_GENERAL_3</Tag>
+		<English>Carl Gustaf Wrangel</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_GENERAL_4</Tag>
+		<English>Arvid Wittenberg</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_GENERAL_5</Tag>
+		<English>Agustin Ehrensvard</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_GENERAL_6</Tag>
+		<English>Fredrik von Fersen</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_GENERAL_7</Tag>
+		<English>Henrik af Trolle</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_GENERAL_8</Tag>
+		<English>Carl J. Adlercreutz</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_GENERAL_9</Tag>
+		<English>Lennart Torstensson</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_GENERAL_10</Tag>
+		<English>Johan Baner</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_GENERAL_0</Tag>
+		<English>Count Alexander Buturlin</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_GENERAL_1</Tag>
+		<English>Count Alexei Razumovsky</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_GENERAL_2</Tag>
+		<English>Count Pyotr Saltykov</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_GENERAL_3</Tag>
+		<English>Prince Nikita Trubetskoy</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_GENERAL_4</Tag>
+		<English>Count Kirill Razumovsky</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_GENERAL_5</Tag>
+		<English>Prince Grigori Potemkin</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TUPI_GENERAL_0</Tag>
+		<English>Deadly Piranha</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TUPI_GENERAL_1</Tag>
+		<English>Great Jaguar</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TUPI_GENERAL_2</Tag>
+		<English>Great Tapir</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_GENERAL_0</Tag>
+		<English>Hatuey</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_GENERAL_1</Tag>
+		<English>Guarocuya</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_GENERAL_2</Tag>
+		<English>Urayoán</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_GENERAL_3</Tag>
+		<English>Guarionex</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_GENERAL_4</Tag>
+		<English>Jumacao</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_AZTEC_GENERAL_0</Tag>
+		<English>Ahuitzotl</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_AZTEC_GENERAL_1</Tag>
+		<English>Nezahualpilli</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_AZTEC_GENERAL_2</Tag>
+		<English>Cuitláhuac</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_AZTEC_GENERAL_3</Tag>
+		<English>Cuauhtémoc</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_AZTEC_GENERAL_4</Tag>
+		<English>Ixtlilxochitl</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_AZTEC_GENERAL_5</Tag>
+		<English>Tizoc</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_INCA_GENERAL_0</Tag>
+		<English>Atahualpa</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_INCA_GENERAL_1</Tag>
+		<English>Rumiñahui</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_INCA_GENERAL_2</Tag>
+		<English>Chalcuchimac</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_INCA_GENERAL_3</Tag>
+		<English>Manco Cápac</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_INCA_GENERAL_4</Tag>
+		<English>Tupac Amaru</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_INCA_GENERAL_5</Tag>
+		<English>Ninan Cuyochi</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_APACHE_GENERAL_0</Tag>
+		<English>Geronimo</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_APACHE_GENERAL_1</Tag>
+		<English>Cochise</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_APACHE_GENERAL_2</Tag>
+		<English>Naiche</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_APACHE_GENERAL_3</Tag>
+		<English>Nana</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_APACHE_GENERAL_4</Tag>
+		<English>Ulzana</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_APACHE_GENERAL_5</Tag>
+		<English>Chato</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_APACHE_GENERAL_6</Tag>
+		<English>Nokedaklinne</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_APACHE_GENERAL_7</Tag>
+		<English>Hashkaila</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SIOUX_GENERAL_0</Tag>
+		<English>Little Crow</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SIOUX_GENERAL_1</Tag>
+		<English>Red Cloud</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SIOUX_GENERAL_2</Tag>
+		<English>High Backbone</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SIOUX_GENERAL_3</Tag>
+		<English>Crazy Horse</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SIOUX_GENERAL_4</Tag>
+		<English>Gall</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SIOUX_GENERAL_5</Tag>
+		<English>Waneta</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SIOUX_GENERAL_6</Tag>
+		<English>Big Eagle</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SIOUX_GENERAL_7</Tag>
+		<English>Rain-in-the-Face</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SIOUX_GENERAL_8</Tag>
+		<English>Big Foot</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_CHEROKEE_GENERAL_0</Tag>
+		<English>Chief Bowl</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_CHEROKEE_GENERAL_1</Tag>
+		<English>Attakullakulla</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_CHEROKEE_GENERAL_2</Tag>
+		<English>Guwisguwi</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_CHEROKEE_GENERAL_3</Tag>
+		<English>Black Fox</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_CHEROKEE_GENERAL_4</Tag>
+		<English>Kunagadoga</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_CHEROKEE_GENERAL_5</Tag>
+		<English>Sequoyah</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS_GENERAL_0</Tag>
+		<English>Canaqueese</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS_GENERAL_1</Tag>
+		<English>Thayendanegea</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS_GENERAL_2</Tag>
+		<English>Segoyewatha</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS_GENERAL_3</Tag>
+		<English>Tododaho</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS_GENERAL_4</Tag>
+		<English>Black Snake</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS_GENERAL_5</Tag>
+		<English>Garakonthie</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS_GENERAL_6</Tag>
+		<English>Red Head</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS_GENERAL_7</Tag>
+		<English>Skenandoa</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS_GENERAL_8</Tag>
+		<English>Skandawati</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MAYA_GENERAL_0</Tag>
+		<English>Jacinto Canek</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MAYA_GENERAL_1</Tag>
+		<English>Cecilio Chi</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MAYA_GENERAL_2</Tag>
+		<English>Crescencio Poot</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MAYA_GENERAL_3</Tag>
+		<English>Hunahau</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MAYA_GENERAL_4</Tag>
+		<English>Hunapu</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MAYA_GENERAL_5</Tag>
+		<English>Gonzalo Guerrero</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MAYA_GENERAL_6</Tag>
+		<English>Tecn Umn</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MAYA_GENERAL_7</Tag>
+		<English>Napuk Chi</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MAYA_GENERAL_8</Tag>
+		<English>Kayb'il B'alam</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_0</Tag>
+		<English>Lautaro</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_1</Tag>
+		<English>Caupolican</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_2</Tag>
+		<English>Galvarino</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_3</Tag>
+		<English>Ainavillo</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_4</Tag>
+		<English>Butapichon</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_5</Tag>
+		<English>Chechehet</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_6</Tag>
+		<English>Colo-Colo</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_7</Tag>
+		<English>Curinancu</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_8</Tag>
+		<English>Didiuhet</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_9</Tag>
+		<English>Illangulién</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_10</Tag>
+		<English>Lemucaguin</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_11</Tag>
+		<English>Lientur</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_12</Tag>
+		<English>Llanganabal</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_13</Tag>
+		<English>Loble</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_14</Tag>
+		<English>Malloquete</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_15</Tag>
+		<English>Mestizo Alejo</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_16</Tag>
+		<English>Millalelmo</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_17</Tag>
+		<English>Paillamachu</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_18</Tag>
+		<English>Pelantaru</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_19</Tag>
+		<English>Taluhet</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_20</Tag>
+		<English>Turcupichun</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_21</Tag>
+		<English>Vilumilla</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_0</Tag>
+		<English>Quiruba</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_1</Tag>
+		<English>Yahuarmaqui</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_2</Tag>
+		<English>Tsere</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_3</Tag>
+		<English>Kunamp</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_4</Tag>
+		<English>Patach</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_5</Tag>
+		<English>Sumpa</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_6</Tag>
+		<English>Kujancham</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_7</Tag>
+		<English>Tsentsak</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_8</Tag>
+		<English>Etsa</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_9</Tag>
+		<English>Uwishin</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_10</Tag>
+		<English>Kakaram</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_11</Tag>
+		<English>Musiak</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_12</Tag>
+		<English>Nekas</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_INUIT_GENERAL_0</Tag>
+		<English>Tiggak</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_INUIT_GENERAL_1</Tag>
+		<English>Akigsiak</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_INUIT_GENERAL_2</Tag>
+		<English>Namak</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_INUIT_GENERAL_3</Tag>
+		<English>Pisagsak</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_INUIT_GENERAL_4</Tag>
+		<English>Akutak</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_INUIT_GENERAL_5</Tag>
+		<English>Manik</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_INUIT_GENERAL_6</Tag>
+		<English>Saugak</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_HURON_GENERAL_0</Tag>
+		<English>Magua</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_HURON_GENERAL_1</Tag>
+		<English>Acona</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_HURON_GENERAL_2</Tag>
+		<English>Ochastequin</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_HURON_GENERAL_3</Tag>
+		<English>Atironta</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_HURON_GENERAL_4</Tag>
+		<English>Donnacona</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_HURON_GENERAL_5</Tag>
+		<English>Anenkhiondic</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_HURON_GENERAL_6</Tag>
+		<English>Tsondakina</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_HURON_GENERAL_7</Tag>
+		<English>Pieskaret</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_GENERAL_0</Tag>
+		<English>Maxin</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_GENERAL_1</Tag>
+		<English>Huijatoo</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_GENERAL_2</Tag>
+		<English>Zaachila</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_GENERAL_3</Tag>
+		<English>Cocijopii</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_GENERAL_4</Tag>
+		<English>Nucano</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_GENERAL_5</Tag>
+		<English>Laamasii</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_GUARANI_GENERAL_0</Tag>
+		<English>Nisio</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_GUARANI_GENERAL_1</Tag>
+		<English>Nhech</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_GUARANI_GENERAL_2</Tag>
+		<English>Apiaguaiki</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_GUARANI_GENERAL_3</Tag>
+		<English>Etiguara</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_GUARANI_GENERAL_4</Tag>
+		<English>Tuma</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_CARIBS_GENERAL_0</Tag>
+		<English>Caonabo</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_CARIBS_GENERAL_1</Tag>
+		<English>Hyarima</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_CARIBS_GENERAL_2</Tag>
+		<English>Queskeya</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_CARIBS_GENERAL_3</Tag>
+		<English>Hyarema</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_CARIBS_GENERAL_4</Tag>
+		<English>Ahameke</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_CARIBS_GENERAL_5</Tag>
+		<English>Jaureybo II</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_GENERAL_0</Tag>
+		<English>Na'yei na'zone</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_GENERAL_1</Tag>
+		<English>Nai'dikisi</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_GENERAL_2</Tag>
+		<English>Tqo bajishchini</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_GENERAL_3</Tag>
+		<English>Bad'ni</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_GENERAL_4</Tag>
+		<English>Tqo toko je</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_GENERAL_5</Tag>
+		<English>Ndso doko</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_0</Tag>
+		<English>Opechancanough</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_1</Tag>
+		<English>Assacumbuit</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_2</Tag>
+		<English>Paugus</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_3</Tag>
+		<English>Mehkskeme-Sukahs</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_4</Tag>
+		<English>Black Kettle</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_5</Tag>
+		<English>Tepastenam</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_6</Tag>
+		<English>Tecumseh</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_7</Tag>
+		<English>Pontiac</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_8</Tag>
+		<English>Cheeseekau</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_9</Tag>
+		<English>Metacomet</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_10</Tag>
+		<English>Massasoit</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_11</Tag>
+		<English>Wassamapah</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_GENERAL_0</Tag>
+		<English>Aparia</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_GENERAL_1</Tag>
+		<English>Ica</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_GENERAL_2</Tag>
+		<English>Dirimara</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_GENERAL_3</Tag>
+		<English>Paytiti</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_GENERAL_4</Tag>
+		<English>Paguana</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_GENERAL_0</Tag>
+		<English>Eight Deer</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_GENERAL_1</Tag>
+		<English>Twelve Earthquake</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_GENERAL_2</Tag>
+		<English>Five Crocodile</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_GENERAL_3</Tag>
+		<English>Eight Crocodile</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_GENERAL_4</Tag>
+		<English>Nine Flower</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_GENERAL_5</Tag>
+		<English>Eleven Wind</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_GENERAL_6</Tag>
+		<English>Four Jaguar</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MUISCA_GENERAL_0</Tag>
+		<English>Hunzahua</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MUISCA_GENERAL_1</Tag>
+		<English>Tomagata</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MUISCA_GENERAL_2</Tag>
+		<English>Tutazua</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MUISCA_GENERAL_3</Tag>
+		<English>Michua</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MUISCA_GENERAL_4</Tag>
+		<English>Meicuchuca</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MUISCA_GENERAL_5</Tag>
+		<English>Saguamanchica</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MUISCA_GENERAL_6</Tag>
+		<English>Nemequene</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MUISCA_GENERAL_7</Tag>
+		<English>Tisquesusa</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MUISCA_GENERAL_8</Tag>
+		<English>Sagipa</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MUISCA_GENERAL_9</Tag>
+		<English>Aquiminzaque</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_GENERAL_0</Tag>
+		<English>Buffalo Hump</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_GENERAL_1</Tag>
+		<English>Old Owl</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_GENERAL_2</Tag>
+		<English>Ten Bears</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_GENERAL_3</Tag>
+		<English>Green Horn</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_GENERAL_4</Tag>
+		<English>Santa Anna</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_GENERAL_5</Tag>
+		<English>Tosawi</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_GENERAL_6</Tag>
+		<English>Isa-Tai</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_GENERAL_0</Tag>
+		<English>Pocatello</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_GENERAL_1</Tag>
+		<English>Cameahwait</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_GENERAL_2</Tag>
+		<English>Sagwitch</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_GENERAL_3</Tag>
+		<English>Sanpitch</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_GENERAL_4</Tag>
+		<English>Bear Hunter</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_GENERAL_5</Tag>
+		<English>Little Soldier</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_GENERAL_6</Tag>
+		<English>Soquitch</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_GENERAL_0</Tag>
+		<English>Wiracocha</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_GENERAL_1</Tag>
+		<English>Pachamama</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_GENERAL_2</Tag>
+		<English>Vatana</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_GENERAL_3</Tag>
+		<English>Buada</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_GENERAL_4</Tag>
+		<English>Itseti</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_GENERAL_5</Tag>
+		<English>Sotara</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_CROW_GENERAL_0</Tag>
+		<English>Arapooish</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_CROW_GENERAL_1</Tag>
+		<English>Kaamneewiash</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_CROW_GENERAL_2</Tag>
+		<English>Eshsuppeemeshish</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_CROW_GENERAL_3</Tag>
+		<English>Daasawatash</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_CROW_GENERAL_4</Tag>
+		<English>Buahisshish</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_CROW_GENERAL_5</Tag>
+		<English>Baattaaxalusshish</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_CROW_GENERAL_6</Tag>
+		<English>Ishtuwatash</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_CROW_GENERAL_7</Tag>
+		<English>Chiitdeehisshish</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_CROW_GENERAL_8</Tag>
+		<English>Shiipdeetash</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_GENERAL_0</Tag>
+		<English>Crowfoot</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_GENERAL_1</Tag>
+		<English>Calf Shirt</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_GENERAL_2</Tag>
+		<English>Acaoomahcaye</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_GENERAL_3</Tag>
+		<English>Mekaisto</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_GENERAL_4</Tag>
+		<English>Old Sun</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_GENERAL_5</Tag>
+		<English>Kill Eagle</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_GENERAL_6</Tag>
+		<English>Penukwiim</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_GENERAL_7</Tag>
+		<English>Kangicu</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_GENERAL_0</Tag>
+		<English>Nata</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_GENERAL_1</Tag>
+		<English>Parita</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_GENERAL_2</Tag>
+		<English>Yaravi</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_GENERAL_3</Tag>
+		<English>Chiriquf</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_GENERAL_4</Tag>
+		<English>Vareclas</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_GENERAL_5</Tag>
+		<English>Perequete</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_GENERAL_6</Tag>
+		<English>Tabore</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_GENERAL_7</Tag>
+		<English>Chame</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_GENERAL_8</Tag>
+		<English>Chird</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_GENERAL_0</Tag>
+		<English>Hiripan</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_GENERAL_1</Tag>
+		<English>Ticatame</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_GENERAL_2</Tag>
+		<English>Zinzicha</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_GENERAL_3</Tag>
+		<English>Paquingata</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_GENERAL_4</Tag>
+		<English>Tangaxoan</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_GENERAL_5</Tag>
+		<English>Zuangua</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_GENERAL_6</Tag>
+		<English>Huiquingaje</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_GENERAL_0</Tag>
+		<English>Rimyura</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_GENERAL_1</Tag>
+		<English>Coelho</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_GENERAL_2</Tag>
+		<English>Ucayali</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_GENERAL_3</Tag>
+		<English>Parahus</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_GENERAL_4</Tag>
+		<English>Imonas</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_GENERAL_5</Tag>
+		<English>Boreat</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_GENERAL_6</Tag>
+		<English>Manali</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_GENERAL_0</Tag>
+		<English>Caupolican</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_GENERAL_1</Tag>
+		<English>Colo-Colo</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_GENERAL_2</Tag>
+		<English>Paillamachu</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_GENERAL_3</Tag>
+		<English>Pelantaru</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_GENERAL_4</Tag>
+		<English>Lientur</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_GENERAL_5</Tag>
+		<English>Butapichon</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_GENERAL_6</Tag>
+		<English>Mestizo Alejo</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_GENERAL_7</Tag>
+		<English>Vilumilla</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_GENERAL_8</Tag>
+		<English>Curinancu</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_0</Tag>
+		<English>Ollokot</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_1</Tag>
+		<English>White Bird</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_2</Tag>
+		<English>Old Joseph</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_3</Tag>
+		<English>Yellow Bull</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_4</Tag>
+		<English>Looking Glass</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_5</Tag>
+		<English>Toohoolhoolzote</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_6</Tag>
+		<English>Red Owl</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_7</Tag>
+		<English>Wahchumyus</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_8</Tag>
+		<English>Pahkatos Owyeen</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_9</Tag>
+		<English>Hal-hal-hoot-soot</English>
+	</TEXT>
+</Civ4GameText>

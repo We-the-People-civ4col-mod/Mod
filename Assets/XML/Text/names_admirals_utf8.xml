@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_ADMIRAL_0</Tag>
+		<English>William Hotham</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_ADMIRAL_1</Tag>
+		<English>George Anson</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_ADMIRAL_2</Tag>
+		<English>Martin Frobisher</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_ADMIRAL_3</Tag>
+		<English>Charles Saunders</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_ADMIRAL_4</Tag>
+		<English>Charles Hardy</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_ADMIRAL_5</Tag>
+		<English>John Byron</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_ADMIRAL_6</Tag>
+		<English>Edward Hawke</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_ADMIRAL_7</Tag>
+		<English>Samuel Hood</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_ADMIRAL_8</Tag>
+		<English>Abraham Whipple</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_ADMIRAL_9</Tag>
+		<English>Nicholas Biddle</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_ADMIRAL_10</Tag>
+		<English>Esek Hopkins</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_ADMIRAL_11</Tag>
+		<English>John Barry</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_ADMIRAL_12</Tag>
+		<English>Hector McNeill</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_ADMIRAL_13</Tag>
+		<English>John Burroughs Hopkins</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_ADMIRAL_14</Tag>
+		<English>James Nicholson</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_ADMIRAL_15</Tag>
+		<English>Samuel Tucker</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_ADMIRAL_16</Tag>
+		<English>John Manley</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_ADMIRAL_17</Tag>
+		<English>Lambert Wickes</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_ADMIRAL_18</Tag>
+		<English>Jonathan Haraden</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_ADMIRAL_19</Tag>
+		<English>Dudley Saltonstall</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_ADMIRAL_0</Tag>
+		<English>François Thurot</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_ADMIRAL_1</Tag>
+		<English>Pierre Le Moyne d'Iberville</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_ADMIRAL_2</Tag>
+		<English>Louis-Philippe de Vaudreuil</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_ADMIRAL_3</Tag>
+		<English>Louis-Philippe de Rigaud</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_ADMIRAL_4</Tag>
+		<English>René Duguay-Trouin</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_ADMIRAL_5</Tag>
+		<English>Louis Guillouet</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_ADMIRAL_6</Tag>
+		<English>Charles Hector d'Estaing</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_ADMIRAL_7</Tag>
+		<English>Jean Gaspard de Vence</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_ADMIRAL_8</Tag>
+		<English>Aymar Chaste</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_ADMIRAL_9</Tag>
+		<English>Jean-Baptiste du Casse</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_ADMIRAL_10</Tag>
+		<English>Jean-François du Cheyron</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_ADMIRAL_11</Tag>
+		<English>Charles René Dominique Sochet</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_ADMIRAL_12</Tag>
+		<English>Jacques-Melchior Saint-Laurent</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_ADMIRAL_13</Tag>
+		<English>Luc Urbain de Bouëxic</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_ADMIRAL_0</Tag>
+		<English>Lope de Aguirre</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_ADMIRAL_1</Tag>
+		<English>Diego de Almagro</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_ADMIRAL_2</Tag>
+		<English>Sebastián de Belalcázar</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_ADMIRAL_3</Tag>
+		<English>Salvador Fidalgo</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_ADMIRAL_4</Tag>
+		<English>Nicolás de Cardona</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_ADMIRAL_5</Tag>
+		<English>Sebastián de Ocampo</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_ADMIRAL_6</Tag>
+		<English>Juan de Cartagena</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_ADMIRAL_7</Tag>
+		<English>Juan Bautista de Anza</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_ADMIRAL_8</Tag>
+		<English>Juan de Lángara</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_ADMIRAL_9</Tag>
+		<English>Blas de Lezo</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_ADMIRAL_10</Tag>
+		<English>Juan Manuel Cagiga</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_ADMIRAL_11</Tag>
+		<English>Luis de Córdova</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_ADMIRAL_12</Tag>
+		<English>José Solano y Bote</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_ADMIRAL_13</Tag>
+		<English>Lope de Hoces</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_ADMIRAL_14</Tag>
+		<English>Gonzalo Méndez de Canço</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_ADMIRAL_15</Tag>
+		<English>Andrés de Pez</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_ADMIRAL_16</Tag>
+		<English>Federico Carlos Gravina</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_ADMIRAL_17</Tag>
+		<English>Ramón Power y Giralt</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_ADMIRAL_0</Tag>
+		<English>Jacques l'Hermite</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_ADMIRAL_1</Tag>
+		<English>Jacob Willekens</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_ADMIRAL_2</Tag>
+		<English>Cornelis Jol</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_ADMIRAL_3</Tag>
+		<English>Samuel Godijn</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_ADMIRAL_4</Tag>
+		<English>Jacob Binckes</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_ADMIRAL_5</Tag>
+		<English>Pieter Adriaanszoon Ita</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_ADMIRAL_6</Tag>
+		<English>Witte de With</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_ADMIRAL_7</Tag>
+		<English>Hendrick Lonck</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_ADMIRAL_8</Tag>
+		<English>Joost van Trappen Banckert</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_ADMIRAL_9</Tag>
+		<English>Henry Hudson</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_ADMIRAL_10</Tag>
+		<English>Sebastian de Cordes</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_ADMIRAL_11</Tag>
+		<English>Hendrik Brouwer</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_ADMIRAL_12</Tag>
+		<English>David Pieterszoon de Vries</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_ADMIRAL_13</Tag>
+		<English>Adriaen Block</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_ADMIRAL_14</Tag>
+		<English>Hendrick Christiaensen</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_ADMIRAL_15</Tag>
+		<English>Johan Zoutman</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_ADMIRAL_16</Tag>
+		<English>Jacob van Heemskerk</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_ADMIRAL_17</Tag>
+		<English>Moses Cohen Henriques Eanes</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_ADMIRAL_0</Tag>
+		<English>Vasco da Gama</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_ADMIRAL_1</Tag>
+		<English>João Fernandes Lavrador</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_ADMIRAL_2</Tag>
+		<English>Diogo Cão</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_ADMIRAL_3</Tag>
+		<English>Antonio de Abreu</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_ADMIRAL_4</Tag>
+		<English>Francisco Serrão</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_ADMIRAL_5</Tag>
+		<English>Jorge de Meneses</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_ADMIRAL_6</Tag>
+		<English>Diogo Lopes de Sequeira</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_ADMIRAL_7</Tag>
+		<English>Fernão Pires de Andrade</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_ADMIRAL_8</Tag>
+		<English>Cristovão de Mendonca</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_ADMIRAL_0</Tag>
+		<English>Erik af Pommern</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_ADMIRAL_1</Tag>
+		<English>Peder Skram</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_ADMIRAL_2</Tag>
+		<English>Herluf Trolle</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_ADMIRAL_3</Tag>
+		<English>Peter Jensen Bredal</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_ADMIRAL_4</Tag>
+		<English>Henrik Bielke</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_ADMIRAL_5</Tag>
+		<English>Ulrik Gyldenlove</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_ADMIRAL_6</Tag>
+		<English>Peter Jansen Wessel</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_ADMIRAL_7</Tag>
+		<English>Peter Willemoes</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_ADMIRAL_8</Tag>
+		<English>Christian Wulff</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_ADMIRAL_9</Tag>
+		<English>Andreas Polder</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_ADMIRAL_0</Tag>
+		<English>Klas Horn</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_ADMIRAL_1</Tag>
+		<English>Jakob Bagge</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_ADMIRAL_2</Tag>
+		<English>Claes Nilsson Stiernskold</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_ADMIRAL_3</Tag>
+		<English>Carl Carlsson Gyllenhielm</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_ADMIRAL_4</Tag>
+		<English>Evert Fredrik Taube</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_ADMIRAL_5</Tag>
+		<English>Gustaf Adolph Sparrel</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_ADMIRAL_6</Tag>
+		<English>Erik Carlsson Sjoblad</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_ADMIRAL_7</Tag>
+		<English>Gustaf von Psilander</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_0</Tag>
+		<English>Vitus Bering</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_1</Tag>
+		<English>Semyon Dezhnev</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_2</Tag>
+		<English>Alexei Chirikov</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_3</Tag>
+		<English>Grigory Shelikhov</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_4</Tag>
+		<English>Ferdinand von Wrangel</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_5</Tag>
+		<English>Ivan Kruzenshtern</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_6</Tag>
+		<English>Leonty Gagemeyster</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_7</Tag>
+		<English>Evstratii Delarov</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_8</Tag>
+		<English>Mikhail Tebenkov</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_9</Tag>
+		<English>Gavriil Pribylov</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_10</Tag>
+		<English>Efim Popov</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_11</Tag>
+		<English>Mikhail Stadukhin</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_12</Tag>
+		<English>Joseph Billings</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_13</Tag>
+		<English>Adolf Etolin</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_14</Tag>
+		<English>Vasily Golovnin</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_15</Tag>
+		<English>Ivan Fyodorov</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_16</Tag>
+		<English>Fedot Popov</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_17</Tag>
+		<English>Johan Hampus Furuhjelm</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_18</Tag>
+		<English>Otto von Kotzebue</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_19</Tag>
+		<English>Pyotr Krenitsyn</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_20</Tag>
+		<English>Mikhail Levashev</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_21</Tag>
+		<English>Yuri Lisyansky</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_22</Tag>
+		<English>Fyodor Litke</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_23</Tag>
+		<English>Gavriil Sarychev</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_24</Tag>
+		<English>Gleb Shishmaryov</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_0</Tag>
+		<English>George Brydges Rodney</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_1</Tag>
+		<English>Richard Howe</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_2</Tag>
+		<English>Edward Boscawen</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_3</Tag>
+		<English>Augustus Keppel</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_4</Tag>
+		<English>Charles Douglas</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_5</Tag>
+		<English>Charles Dashwood</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_6</Tag>
+		<English>Hugh Palliser</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_7</Tag>
+		<English>Samuel Barrington</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_8</Tag>
+		<English>Hyde Parker</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_9</Tag>
+		<English>Chaloner Ogle</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_10</Tag>
+		<English>Cloudesley Shovell</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_11</Tag>
+		<English>Edward Vernon</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_12</Tag>
+		<English>George Anson</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_13</Tag>
+		<English>Edward Hawke</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_14</Tag>
+		<English>Mariot Arbuthnot</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_15</Tag>
+		<English>Edward Russell</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_16</Tag>
+		<English>John Jervis</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_17</Tag>
+		<English>Samuel Hood</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_18</Tag>
+		<English>George Collier</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_19</Tag>
+		<English>Samuel Graves</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_20</Tag>
+		<English>Thomas Graves</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_21</Tag>
+		<English>John Byron</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_22</Tag>
+		<English>Matthew Aylmer</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_23</Tag>
+		<English>Peter Warren</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_24</Tag>
+		<English>John Byng</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_ADMIRAL_0</Tag>
+		<English>Roland-Michel de La Galissoniere</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_ADMIRAL_1</Tag>
+		<English>Anne de Tourville</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_ADMIRAL_2</Tag>
+		<English>Louis de Bougainville</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_ADMIRAL_3</Tag>
+		<English>Pierre de Suffren</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_ADMIRAL_4</Tag>
+		<English>Claude de Forbin</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_ADMIRAL_5</Tag>
+		<English>Justin-Bonaventure de Galles</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_ADMIRAL_6</Tag>
+		<English>Joseph de Richery</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_ADMIRAL_7</Tag>
+		<English>André Savary</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_ADMIRAL_8</Tag>
+		<English>Pierre-Gustave Roze</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_ADMIRAL_9</Tag>
+		<English>Jean-Baptiste Perrée</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_ADMIRAL_10</Tag>
+		<English>Anne Antoine</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_ADMIRAL_11</Tag>
+		<English>Toussaint-Guillaume de la Motte</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_ADMIRAL_12</Tag>
+		<English>Charles-Henri-Louis d'Arsac</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_ADMIRAL_13</Tag>
+		<English>Pierre Van Stabel</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_ADMIRAL_0</Tag>
+		<English>Casto Méndez Núñez</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_ADMIRAL_1</Tag>
+		<English>Gabriel de Castilla</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_ADMIRAL_2</Tag>
+		<English>José María Narváez</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_ADMIRAL_3</Tag>
+		<English>Dionisio Alcalá Galiano</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_ADMIRAL_4</Tag>
+		<English>José de Bustamante y Guerra</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_ADMIRAL_5</Tag>
+		<English>Jose de Mazarredo y Salazar</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_ADMIRAL_6</Tag>
+		<English>Álvaro de Bazán</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_ADMIRAL_7</Tag>
+		<English>Fadrique Álvarez de Toledo</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_ADMIRAL_8</Tag>
+		<English>Antonio Barceló</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_ADMIRAL_9</Tag>
+		<English>Bonaventura Moreno</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_ADMIRAL_10</Tag>
+		<English>Martín de Bertendona</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_ADMIRAL_11</Tag>
+		<English>Francisco Díaz Pimienta</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_ADMIRAL_12</Tag>
+		<English>José Antonio Castañeta</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_ADMIRAL_13</Tag>
+		<English>Miguel de Horna</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_ADMIRAL_14</Tag>
+		<English>Antonio de Oquendo</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_ADMIRAL_15</Tag>
+		<English>Juan Martínez de Recalde</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_ADMIRAL_16</Tag>
+		<English>Manuel de Velasco y Tejada</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_ADMIRAL_17</Tag>
+		<English>Ignacio María de Álava</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_ADMIRAL_18</Tag>
+		<English>Alonso Pérez de Guzmán</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_ADMIRAL_19</Tag>
+		<English>Juan José Navarro</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_ADMIRAL_0</Tag>
+		<English>Philips van Dorp</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_ADMIRAL_1</Tag>
+		<English>Tjerk Hiddes de Vries</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_ADMIRAL_2</Tag>
+		<English>Cornelis Evertsen</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_ADMIRAL_3</Tag>
+		<English>Cornelis Tromp</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_ADMIRAL_4</Tag>
+		<English>Willem Joseph van Ghent</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_ADMIRAL_5</Tag>
+		<English>Maarten Tromp</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_ADMIRAL_6</Tag>
+		<English>Johan Evertsen</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_ADMIRAL_7</Tag>
+		<English>Carel Hendrik Ver Huell</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_ADMIRAL_8</Tag>
+		<English>Jan Hendrik van Kinsbergen</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_ADMIRAL_9</Tag>
+		<English>Laurens Jacobsz Alteras</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_ADMIRAL_10</Tag>
+		<English>Jacob van Wassenaer Duivenvoorde</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_ADMIRAL_11</Tag>
+		<English>Willem Haultain de Zoete</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_ADMIRAL_12</Tag>
+		<English>Gilles Schey</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_ADMIRAL_13</Tag>
+		<English>Pieter Melvill van Carnbee</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_ADMIRAL_14</Tag>
+		<English>Gerard Callenburgh</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_ADMIRAL_15</Tag>
+		<English>Paulus van Caerden</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_ADMIRAL_16</Tag>
+		<English>Jan van Brakel</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_ADMIRAL_17</Tag>
+		<English>Adriaen van Trappen Banckert</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_ADMIRAL_18</Tag>
+		<English>Philips van Almonde</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_ADMIRAL_19</Tag>
+		<English>Jacob van Wassenaer Obdam</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_ADMIRAL_0</Tag>
+		<English>Pêro da Covilhã</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_ADMIRAL_1</Tag>
+		<English>Francisco de Almeida</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_ADMIRAL_2</Tag>
+		<English>Afonso de Albuquerque</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_ADMIRAL_3</Tag>
+		<English>Pedro da Silva</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_ADMIRAL_4</Tag>
+		<English>Antonio Teles de Meneses</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_ADMIRAL_5</Tag>
+		<English>Nuno Alvares Botelho</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_ADMIRAL_6</Tag>
+		<English>Martim Afonso de Castro</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_ADMIRAL_0</Tag>
+		<English>Frederik grev Danneskiold</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_ADMIRAL_1</Tag>
+		<English>Andreas Christian Polder</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_ADMIRAL_2</Tag>
+		<English>Steen Bille</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_ADMIRAL_3</Tag>
+		<English>Cort Adeler</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_ADMIRAL_4</Tag>
+		<English>Niels Iuel</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_ADMIRAL_5</Tag>
+		<English>Johan Olfert Fischer</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_ADMIRAL_6</Tag>
+		<English>Carl Wilhelm Jessen</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_ADMIRAL_0</Tag>
+		<English>Clas Eriksson Fleming</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_ADMIRAL_1</Tag>
+		<English>Gustaf Otto Stenbock</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_ADMIRAL_2</Tag>
+		<English>Johan Bar</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_ADMIRAL_3</Tag>
+		<English>Hans Clerck</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_ADMIRAL_4</Tag>
+		<English>Theodor Ankarcrona</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_ADMIRAL_5</Tag>
+		<English>Olof von Unge</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_0</Tag>
+		<English>Nikolay Mordvinov</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_1</Tag>
+		<English>Pavel Chichagov</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_2</Tag>
+		<English>Aleksandr Menshikov</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_3</Tag>
+		<English>Cornelius Cruys</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_4</Tag>
+		<English>Fyodor Apraksin</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_5</Tag>
+		<English>Samuel Greig</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_6</Tag>
+		<English>Ivan Botsis</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_7</Tag>
+		<English>Thomas Gordon</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_8</Tag>
+		<English>Alexei Senyavin</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_9</Tag>
+		<English>Naum Senyavin</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_10</Tag>
+		<English>Mikhail Golitsyn</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_11</Tag>
+		<English>Grigory Spiridov</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_12</Tag>
+		<English>Feodor Ushakov</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_13</Tag>
+		<English>Dmitry Senyavin</English>
+	</TEXT>
+</Civ4GameText>

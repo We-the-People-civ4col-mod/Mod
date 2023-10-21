@@ -517,7 +517,7 @@
             <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Yerba/Cnq.nif</NIF>
-            <KFM>Art/Terrain/Resources/Yerba/Cnq.kfm</KFM>
+            <KFM/>
             <Button>Art/Interface/Buttons/Yerba_Button.dds</Button>
             <FontButtonIndex>99</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>

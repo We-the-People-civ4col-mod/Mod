@@ -6590,4 +6590,35 @@
         <NumProfessions/>
         <YieldProduced/>
     </AchieveInfo>
+    <AchieveInfo>
+        <Type>ACHIEVE_THIRD_PRISONER_OF_WAR</Type>
+        <Description>TXT_KEY_ACHIEVE_THIRD_PRISONER_OF_WAR</Description>
+        <bActive>1</bActive>
+        <bAfterMove>0</bAfterMove>
+        <HeaderTextKey>TXT_KEY_ACHIEVE_THIRD_PRISONER_OF_WAR_HEAD</HeaderTextKey>
+        <BodyTextKey>TXT_KEY_ACHIEVE_THIRD_PRISONER_OF_WAR_TEXT</BodyTextKey>
+        <PictureFileName>Art/Achievements/prisoner_of_war.dds</PictureFileName>
+        <iPictureX>360</iPictureX>
+        <iPictureY>240</iPictureY>
+        <iLowTurnNumber>0</iLowTurnNumber>
+        <iHighTurnNumber>10000</iHighTurnNumber>
+        <bLandDiscovered>0</bLandDiscovered>
+        <bDiscoverEast>0</bDiscoverEast>
+        <bDiscoverWest>0</bDiscoverWest>
+        <iNumColonies>0</iNumColonies>
+        <iNumEuroContacts>0</iNumEuroContacts>
+        <iNumNativeContacts>0</iNumNativeContacts>
+        <iNumGoodsTraded>-1</iNumGoodsTraded>
+        <iNumCombatsWonNeeded>-1</iNumCombatsWonNeeded>
+        <iNumSeaCombatsWonNeeded>-1</iNumSeaCombatsWonNeeded>
+        <NumBuildings/>
+        <NumUnits>
+            <NumUnits>
+                <UnitType>UNIT_PRISONER_OF_WAR</UnitType>
+                <iNumber>3</iNumber>
+            </NumUnits>
+        </NumUnits>
+        <NumProfessions/>
+        <YieldProduced/>
+    </AchieveInfo>
 </Civ4AchieveInfos>

@@ -161,7 +161,7 @@
     <TEXT>
         <Tag>TXT_KEY_FAILED_TRADER_SPAWNED_FROM_FAIL</Tag>
         <English>Milord, your trader failed to establish a trade post in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. He gave alcohol to the tribal men and they got violent when becoming drunk. Luckily they did not kill him. But they beat him up and stole all his goods. But he is now broken and traumatised.</English>
-        <French>Sire, notre marchand a échoué à établir un poste commercial à [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Il a donné de l'alcool aux indigènes, et l'ivresse les a rendus violent. Heureusement, ils ne l'ont pas tué; mais ils l'ont battu et dépouillé de tous ses bien. Cette mésaventure l'a ruiné financièrement et moralement.</French>
+        <French>Sire, notre marchand a échoué à établir un poste commercial à [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Il a donné de l'alcool aux indigènes, et l'ivresse les a rendus violent. Heureusement, ils ne l'ont pas tué; mais ils l'ont battu et dépouillé de tous ses biens. Cette mésaventure l'a ruiné financièrement et moralement.</French>
         <German>Milord, Euer Ureinwohnerhändler ist dabei gescheitert, einen Handelsposten in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] zu errichten. Er gab den Männdern des Stammes Alkohol. Als sie betrunken waren wurden sie gewalttätig. Glücklicherweise haben sie ihn nicht getötet. Jedoch schlugen sie ihn und stahlen alle seine Güter. Er ist nun mittellos und traumatisiert.</German>
         <Russian>Милорд, нашему торговцу не удалось открыть торговый пост в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Он давал алкоголь мужчинам племени и когда они напивались, становились ужасно буйными. К счастью, они не убили его, но избили, отобрали все имущество и выгнали из деревни. Мы должны помочь ему восстановиться телесно и духовно.</Russian>
     </TEXT>
@@ -213,7 +213,7 @@
     <TEXT>
         <Tag>TXT_KEY_RESOURCETABLE_SHOW_OR_HIDE_YIELDS</Tag>
         <English>Toggle displayed yields</English>
-        <French>Bascule l'affichage des ressources</French>
+        <French>Basculer l'affichage des ressources</French>
         <German>Waren ein-/ausblenden</German>
         <Russian>Переключить отображаемые товары</Russian>
     </TEXT>

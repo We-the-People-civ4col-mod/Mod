@@ -664,13 +664,18 @@ void CvMapGenerator::addFeaturesOnLand()
 		// only for Land Plots
 		if(!pPlot->isWater())
 		{
-			for (iJ = 0; iJ < GC.getNumFeatureInfos(); iJ++)
+			//WTP, ray, make sure some Plots stay without Terrain Feature
+			int iPlotsWithoutFeature = GLOBAL_DEFINE_BASE_TERRAINS_WITHOUT_FEATURE_PERCENTAGE * 100;
+			if (GC.getGameINLINE().getMapRandNum(10000, "addFeaturesOnLand") > iPlotsWithoutFeature)
 			{
-				if (pPlot->canHaveFeature((FeatureTypes)iJ))
+				for (iJ = 0; iJ < GC.getNumFeatureInfos(); iJ++)
 				{
-					if (GC.getGameINLINE().getMapRandNum(10000, "addFeaturesOnLand") < GC.getFeatureInfo((FeatureTypes)iJ).getAppearanceProbability())
+					if (pPlot->canHaveFeature((FeatureTypes)iJ))
 					{
-						pPlot->setFeatureType((FeatureTypes)iJ);
+						if (GC.getGameINLINE().getMapRandNum(10000, "addFeaturesOnLand") < GC.getFeatureInfo((FeatureTypes)iJ).getAppearanceProbability())
+						{
+							pPlot->setFeatureType((FeatureTypes)iJ);
+						}
 					}
 				}
 			}

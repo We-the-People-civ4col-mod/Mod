@@ -4,7 +4,7 @@
         <Tag>TXT_KEY_GOODY_BURIAL_GROUNDS</Tag>
         <English>Burial Grounds</English>
         <French>
-            <Text>Cimetière:Cimetières</Text>
+            <Text>Cimetière indigène:Cimetières indigènes</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -40,12 +40,14 @@
     <TEXT>
         <Tag>TXT_KEY_GOODY_FAILED_MISSIONARY</Tag>
         <English>You've discovered a [COLOR_UNIT_TEXT]failed missionary[COLOR_REVERT] on the return from his failed mission!</English>
+        <French>Vous avez découvert un [COLOR_UNIT_TEXT]missionnaire désabusé[COLOR_REVERT] de retour dans sa mission en déshérence. </French>
         <German>Ihr habt einen [COLOR_UNIT_TEXT]gescheiterten Missionar[COLOR_REVERT] auf der Rückkehr von seiner gescheiterten Mission entdeckt!</German>
         <Russian>Вы обнаружили [COLOR_UNIT_TEXT]разочаровавшегося миссионера[COLOR_REVERT], который бесцельно брел по тропе. Надо взять его с собой, иначе один он тут пропадет!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_FAILED_TRADER</Tag>
         <English>You've discovered a [COLOR_UNIT_TEXT]failed trader[COLOR_REVERT] on the return from his failed attempt to establish a trade post!</English>
+        <French>Vous avez découvert un [COLOR_UNIT_TEXT]marchand ruiné[COLOR_REVERT] de retour après l'échec de l'établissement de son comptoir.</French>
         <German>Ihr habt einen [COLOR_UNIT_TEXT]gescheiterter Händler[COLOR_REVERT] auf der Rückkehr von seinem gescheiterten Handelsposten!</German>
         <Russian>Вы встретили [COLOR_UNIT_TEXT]неудачливого торговца[COLOR_REVERT], разорившегося после провальной попытки основать торговый пост и решили помочь бедолаге.</Russian>
     </TEXT>
@@ -59,18 +61,21 @@
     <TEXT>
         <Tag>TXT_KEY_GOODY_BUCCANNEER</Tag>
         <English>You've discovered a [COLOR_UNIT_TEXT]buccanneer[COLOR_REVERT]! [NEWLINE]At first he seems ready to attack but after a moment of indecision he lowers his weapons and asks to join you.</English>
+        <French>Vous avez découvert un [COLOR_UNIT_TEXT]boucanier[COLOR_REVERT] ![NEWLINE] Il semblait d'abord prêt à vous attaquer mais il s'est ravisé en baissant ses armes et a démandé à vous rejoindre.</French>
         <German>Ihr habt einen [COLOR_UNIT_TEXT]Bukanier[COLOR_REVERT] entdeckt! [NEWLINE]Zuerst scheint es, als würde er angreifen wollen, aber nach kurzer Zeit senkt er seine Waffen und bittet darum, sich uns anschließen zu dürfen.</German>
         <Russian>Вы обнаружили [COLOR_UNIT_TEXT]буканьера[COLOR_REVERT]! [NEWLINE]Сначала кажется, что он хочет атаковать вас, но после секундной нерешительности опускает оружие и просит разрешения присоединиться к вам.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_SLAVE_HUNTER</Tag>
         <English>You've discovered a [COLOR_UNIT_TEXT]slave hunter[COLOR_REVERT] searching for his bounty!</English>
+        <French>Vous avez découvert un [COLOR_UNIT_TEXT]chasseur d'esclaves[COLOR_REVERT] à la recherche de sa cible.</French>
         <German>Ihr habt einen [COLOR_UNIT_TEXT]Sklavenjäger[COLOR_REVERT] auf der Suche nach Entflohenen entdeckt!</German>
         <Russian>Вы обнаружили [COLOR_UNIT_TEXT]охотника за рабами[COLOR_REVERT], который пропал без вести во время погони за одним из своих беглых рабов!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_SLAVE_MASTER</Tag>
         <English>You've discovered a [COLOR_UNIT_TEXT]slave master[COLOR_REVERT] gone missing while hunting one of his runaway slaves!</English>
+        <French>Vous avez découvert un [COLOR_UNIT_TEXT]maitre d'esclaves[COLOR_REVERT] perdu après avoir pourchassé des esclaves fugitifs.</French>
         <German>Ihr habt einen [COLOR_UNIT_TEXT]Sklavenhalter[COLOR_REVERT] gefunden, der einen seiner entlaufenen Sklaven sucht!</German>
         <Russian>Вы обнаружили [COLOR_UNIT_TEXT]надсмотрщика за рабами[COLOR_REVERT], который ищет работу. Нам пригодятся его умения!</Russian>
     </TEXT>
@@ -204,7 +209,7 @@
     <TEXT>
         <Tag>TXT_KEY_GOODY_ANNOUNCE_GOLD_SEA</Tag>
         <English>You've discovered some gold in a shipwreck!</English>
-        <French>Vous avez découvert de l'or dans l'épave !</French>
+        <French>Vous avez découvert de l'or dans les débris de l'épave !</French>
         <German>Ihr habt etwas Gold in den Überresten eines verunglückten Schiffes entdeckt!</German>
         <Russian>Вы нашли золото среди обломков корабля!</Russian>
     </TEXT>
@@ -270,7 +275,7 @@
     <TEXT>
         <Tag>TXT_KEY_GOODY_ANNOUNCE_MAP</Tag>
         <English>Local hunters have carved a sketch of the surrounding area into the old masonry. What a helpful find!</English>
-        <French>Vous avez découvert une carte antique !</French>
+        <French>Des chasseurs du coin ont gravé un esquisse des alentours dans les vieux murs. Quelle trouvaille !</French>
         <German>Einheimische Jäger haben in das alte Gemäuer eine Skizze der Umgebung eingeritzt. Welch hilfreicher Fund!</German>
         <Italian>Hai scoperto un'antica mappa!</Italian>
         <Spanish>¡Habéis descubierto un mapa antiguo!</Spanish>
@@ -283,7 +288,7 @@
     <TEXT>
         <Tag>TXT_KEY_GOODY_ANNOUNCE_MAP_SEA</Tag>
         <English>You've discovered a map in a shipwreck!</English>
-        <French>Vous avez découvert une carte dans l'épave !</French>
+        <French>Vous avez découvert une carte dans les débris de l'épave !</French>
         <German>Ihr habt eine Karte in den Überresten eines verunglückten Schiffes entdeckt!</German>
         <Russian>Вы нашли карту среди обломков затонувшего корабля!</Russian>
     </TEXT>
@@ -297,19 +302,21 @@
     <TEXT>
         <Tag>TXT_KEY_GOODY_NATIVE_SLAVE</Tag>
         <English>You've discovered a [COLOR_UNIT_TEXT]runaway slave[COLOR_REVERT] from a Native tribe.</English>
-        <French>Vous avez découvert un [COLOR_UNIT_TEXT]esclave fuyant[COLOR_REVERT] une tribu indigène.</French>
+        <French>Vous avez découvert un [COLOR_UNIT_TEXT]esclave indigène[COLOR_REVERT] fuyant la tribu qui le tenait.</French>
         <German>Ihr habt einen [COLOR_UNIT_TEXT]Versklavten Ureinwohner[COLOR_REVERT] entdeckt, der von seinem Stamm geflohen ist.</German>
         <Russian>Вы обнаружили [COLOR_UNIT_TEXT]беглого раба[COLOR_REVERT] из индейского племени.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHIEF_NATIVE_SLAVE</Tag>
         <English>You have shown yourselves to be fierce warriors. As a sign of our friendship, take this worthless prisoner captured from our enemies.</English>
+        <French>Vous vous êtes montrés des guerriers hardis. Comme signe de notre amitué, venez prendre cet esclave en trop que nous avons capturé sur nos ennemis.</French>
         <German>Ihr habt euch als starke Kämpfer erwiesen. Erlaubt uns euch diesen unwürdigen Gefangenen von einem unserer Beutetzüge als Geschenk zu übergeben.</German>
         <Russian>Вы показали себя свирепыми воинами. В знак нашей дружбы возьми этого никчемного пленника, захваченного нашими славными воинами у врагов.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHIEF_NATIVE_MERC</Tag>
         <English>One of our young warriors seeks glory in battle. He asks to be allowed to fight beside you shoulder by shoulder against your enemies.</English>
+        <French>Un de nos jeunes guerriers cherche la gloire dans la bataille. Il demande à se battre à vos côtés contre vos ennemis.</French>
         <German>Einer unsere jungen Krieger sucht den Ruhm des Kampfes. Er fragt, ob er mit euch Schulter an Schulter gegen eure Feinde kämpfen kann.</German>
         <Russian>Один из наших молодых воинов ищет славы в бою. Он просит разрешения сражаться рядом с вами плечом к плечу против ваших врагов.</Russian>
     </TEXT>
@@ -365,7 +372,7 @@
         <Tag>TXT_KEY_GOODY_SCOUT</Tag>
         <English>Seasoned Scout:Seasoned Scouts</English>
         <French>
-            <Text>Eclaireur aguerri:Eclaireurs aguerris</Text>
+            <Text>Éclaireur aguerri:Éclaireurs aguerris</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -448,12 +455,14 @@
     <TEXT>
         <Tag>TXT_KEY_GOODY_RANGER</Tag>
         <English>You have discovered a wounded [COLOR_UNIT_TEXT]ranger[COLOR_REVERT] who gratefully offers his services to us!</English>
+        <French>Vous avez découvert un garde foresteier blessé qui nous offre en retour ses services</French>
         <German>Ihr habt einen verwundeten [COLOR_UNIT_TEXT]Ranger[COLOR_REVERT] entdeckt, der uns für unsere Hilfe seine Dienste anbietet!</German>
         <Russian>Вы обнаружили раненого [COLOR_UNIT_TEXT]рейнджера[COLOR_REVERT] и помогли ему. В благодарность за это он желает присоединиться к нам!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_NATIVE_TRADER</Tag>
         <English>You have discovered a [COLOR_UNIT_TEXT]Native trader[COLOR_REVERT] who had gotten lost. He now wants to work with you!</English>
+        <French>Vous avez découvert un [COLOR_UNIT_TEXT]marchand avec les indigènes[COLOR_REVERT] qui s'était perdu. Il demande à travailler avec nous.</French>
         <German>Ihr habt einen [COLOR_UNIT_TEXT]Ureinwohnerhändler[COLOR_REVERT] entdeckt, der die Orientierung verloren hatte und Euch nun seine Dienste anbietet!</German>
         <Russian>Вы обнаружили [COLOR_UNIT_TEXT]торговца с индейцами[COLOR_REVERT], который заблудился в этих диких местах. Он хочет остаться и работать вместе с нами!</Russian>
     </TEXT>

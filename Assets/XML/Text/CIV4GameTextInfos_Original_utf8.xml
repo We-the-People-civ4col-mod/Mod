@@ -1107,7 +1107,7 @@
         <German>[COLOR_WARNING_TEXT]Erfordert : %s1_Name (%d2_NumTotal für jedes)[COLOR_REVERT]</German>
         <Italian>[COLOR_WARNING_TEXT]Richiede %s1_Name (%d2_NumTotal ogni)[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_WARNING_TEXT]Requiere %s1_Name (%d2_NumTotal de cada)[COLOR_REVERT]</Spanish>
-        <Russian>[COLOR_WARNING_TEXT]Требуется : %s1_Name (%d2_NumTotal на каждую постройку)[COLOR_REVERT]</Russian>
+        <Russian>[COLOR_WARNING_TEXT]Требуется : [LINK=literal]%s1_Name[\LINK] (%d2_NumTotal на каждую постройку)[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_REQUIRES_STRING</Tag>
@@ -4113,6 +4113,7 @@
         <German>([COLOR:140:255:40:255]&lt; STRG &gt;[COLOR_REVERT] zur Auswahl aller %s1-Einheiten)</German>
         <Italian>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] per selezionare %s1)</Italian>
         <Spanish>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] para seleccionar [NUM1:todos los:todas las:todos los:todas las] %s1:2)</Spanish>
+        <Russian>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] чтобы выделить все %s1)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ALT_SELECT</Tag>
@@ -11057,6 +11058,7 @@
         <German>[ICON_BULLET]Eine Plünderung erzielt durchschnittlich %d1_Num[ICON_GOLD]</German>
         <Italian>[ICON_BULLET]Saccheggia in media %d1_Num[ICON_GOLD] prodotti</Italian>
         <Spanish>[ICON_BULLET]El saqueo reporta %d1_Num[ICON_GOLD] de media</Spanish>
+        <Russian>[ICON_BULLET]Разграбление принесет примерно %d1_Num[ICON_GOLD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_HEAL_MODIFIER</Tag>

@@ -33,6 +33,13 @@ class CvCacheObject;
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 class CvXMLLoadUtility
 {
+	enum XMLReadStage
+	{
+		XML_STAGE_BASIC,
+		XML_STAGE_FULL,
+		XML_STAGE_POST_SETUP,
+	};
+
 	struct GameTextContainer
 	{
 		CvWString m_Text;
@@ -330,9 +337,9 @@ private:
 
 	/// XML type preloading - start - Nightinggale
 	template <class T>
-	void PreLoadGlobalClassInfo(std::vector<T*>& aInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, bool bTwoPass, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (const TCHAR*) = NULL);
+	void PreLoadGlobalClassInfo(XMLReadStage eStage, std::vector<T*>& aInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, bool bTwoPass, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (const TCHAR*) = NULL);
 	void PreUpdateProgressCB(const char* szMessage);
-	void readXMLfiles(bool bFirst);
+	void readXMLfiles(XMLReadStage eStage);
 	/// XML type preloading - end - Nightinggale
 };
 

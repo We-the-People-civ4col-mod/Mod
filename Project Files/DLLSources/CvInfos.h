@@ -65,6 +65,7 @@ public:
 	virtual bool readPass3() { FAssertMsg(false, "Override this"); return false; }
 
 	void cleanStrings();
+	bool postLoadSetup();
 
 protected:
 	void checkStringContents(CvWString& szStr, const wchar* szExtension);
@@ -1706,18 +1707,18 @@ public:
 	bool isValidProfession(int i) const;
 	bool hasTrait(int i) const;
 
-	std::string getCityNames(int i) const;
+	CvWString getCityNames(int i) const;
 
 	// TAC - Great General Names - Ray - START
-	std::string getGeneralNames(int i) const;
+	CvWString getGeneralNames(int i) const;
 	// TAC - Great General Names - Ray - END
 
 	// R&R, ray, Great Admirals - START
-	std::string getAdmiralNames(int i) const;
+	CvWString getAdmiralNames(int i) const;
 	// R&R, ray, Great Admirals - END
 
 	// TAC - Ship Names - Ray - START
-	std::string getShipNames(int i) const;
+	CvWString getShipNames(int i) const;
 	// TAC - Ship Names - Ray - END
 
 	DllExport const CvArtInfoCivilization* getArtInfo() const;
@@ -1728,6 +1729,8 @@ public:
 	bool readPass2(CvXMLLoadUtility* pXML);
 	void read(FDataStreamBase* stream);
 	void write(FDataStreamBase* stream);
+
+	bool postLoadSetup();
 
 	// EXE/python access functions
 	int PY_getDefaultProfession() const;
@@ -1743,17 +1746,14 @@ protected:
 
 	// TAC - Great General Names - Ray - START
 	int m_iNumGeneralNames;
-	CvString* m_paszGeneralNames;
 	// TAC - Great General Names - Ray - END
 
 	// R&R, ray, Great Admirals - START
 	int m_iNumAdmiralNames;
-	CvString* m_paszAdmiralNames;
 	// R&R, ray, Great Admirals - END
 
 	// TAC - Ship Names - Ray - Start
 	int m_iNumShipNames;
-	CvString* m_paszShipNames;
 	// TAC - Ship Names - Ray - END
 
 	int m_iNumCityNames;
@@ -1803,7 +1803,6 @@ protected:
 	bool* m_abCivilizationFreeBuildingClass;
 	bool* m_abValidProfessions;
 	bool* m_abTraits;
-	CvString* m_paszCityNames;
 
 	mutable std::vector<CvWString> m_szCachedShortDescription;
 	mutable std::vector<CvWString> m_szCachedAdjective;

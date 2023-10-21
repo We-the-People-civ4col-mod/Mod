@@ -49,7 +49,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILD_DRAIN_WETLAND</Tag>
         <English>Drain wetland</English>
-        <French>Drainer les marais</French>
+        <French>Drainer les marécages</French>
         <German>Moor trockenlegen</German>
         <Russian>Осушить заболоченную местность</Russian>
     </TEXT>
@@ -73,6 +73,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILD_WINDMILL</Tag>
         <English>Build a [LINK=IMPROVEMENT_WIND_MILL]windmill[\LINK]</English>
+        <French>Construire un [LINK=IMPROVEMENT_WIND_MILL]moulin à vent[\LINK]</French>
         <German>[LINK=IMPROVEMENT_WIND_MILL]Windmühle[\LINK] bauen</German>
         <Russian>Построить [LINK=IMPROVEMENT_WIND_MILL]ветряк[\LINK]</Russian>
     </TEXT>
@@ -83,6 +84,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILD_IRONMILL</Tag>
         <English>Build an [LINK=IMPROVEMENT_IRON_MILL]ironmill[\LINK]</English>
+        <French>Construire un [LINK=IMPROVEMENT_IRON_MILL]bas-fourneau[\LINK]</French>
         <German>[LINK=IMPROVEMENT_IRON_MILL]Eisenmühle[\LINK] bauen</German>
         <Russian>Построить [LINK=IMPROVEMENT_IRON_MILL]железную мельницу[\LINK]</Russian>
     </TEXT>
@@ -93,6 +95,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILD_SAWMILL</Tag>
         <English>Build a [LINK=IMPROVEMENT_LUMBERMILL]sawmill[\LINK]</English>
+        <French>Construire une [LINK=IMPROVEMENT_IRON_MILL]scierie en forêt[\LINK]</French>
         <German>[LINK=IMPROVEMENT_LUMBERMILL]Sägewerk[\LINK] bauen</German>
         <Russian>Построить [LINK=IMPROVEMENT_LUMBERMILL]лесопилку[\LINK]</Russian>
     </TEXT>
@@ -107,6 +110,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILD_SUPPLY_DEPOT</Tag>
         <English>Build a [LINK=IMPROVEMENT_SUPPLY_DEPOT]supply depot[\LINK]</English>
+        <French>Construire un [LINK=IMPROVEMENT_SUPPLY_DEPOT]dépôt de ravitaillement[\LINK] </French>
         <German>[LINK=IMPROVEMENT_SUPPLY_DEPOT]Versorgungslager[\LINK] bauen</German>
         <Russian>Построить [LINK=IMPROVEMENT_SUPPLY_DEPOT]склад припасов[\LINK]</Russian>
     </TEXT>
@@ -117,6 +121,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILD_CANAL</Tag>
         <English>Build a [LINK=IMPROVEMENT_CANAL]canal[\LINK]</English>
+        <French>Construire un canal</French>
         <German>[LINK=IMPROVEMENT_CANAL]Kanal[\LINK] bauen</German>
         <Russian>Построить [LINK=IMPROVEMENT_CANAL]канал[\LINK]</Russian>
     </TEXT>
@@ -190,6 +195,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILD_PEN</Tag>
         <English>Build a [LINK=IMPROVEMENT_PEN]breeding pen[\LINK]</English>
+        <French>Construire une basse-cour</French>
         <German>[LINK=IMPROVEMENT_PEN]Zuchtgehege[\LINK] bauen</German>
         <Russian>Построить [LINK=IMPROVEMENT_PEN]загон для скота[\LINK]</Russian>
     </TEXT>
@@ -237,6 +243,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILD_PEAT_PIT</Tag>
         <English>Build a [LINK=IMPROVEMENT_QUARRY]peat pit[\LINK]</English>
+        <French>Creuser une [LINK=IMPROVEMENT_QUARRY]fosse à tourbe[\LINK] </French>
         <German>[LINK=IMPROVEMENT_QUARRY]Torfgrube[\LINK] anlegen</German>
         <Russian>Построить [LINK=IMPROVEMENT_PEAT_PIT]торфяной карьер[\LINK]</Russian>
     </TEXT>
@@ -247,6 +254,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILD_CLAY_PIT</Tag>
         <English>Build a [LINK=IMPROVEMENT_QUARRY]clay pit[\LINK]</English>
+        <French>Creuser une [LINK=IMPROVEMENT_QUARRY]fosse à argile[\LINK] </French>
         <German>[LINK=IMPROVEMENT_QUARRY]Lehmgrube[\LINK] anlegen</German>
         <Russian>Построить [LINK=IMPROVEMENT_CLAY_PIT]глиняный карьер[\LINK]</Russian>
     </TEXT>
@@ -333,7 +341,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILD_REFORESTATION_TAIGA</Tag>
         <English>Plant northern forrest</English>
-        <French>Planter une foret du nord</French>
+        <French>Planter une foret boréale</French>
         <German>Nordwald aufforsten</German>
         <Russian>Высадить тайгу</Russian>
     </TEXT>
@@ -344,12 +352,14 @@
     <TEXT>
         <Tag>TXT_KEY_BUILD_DESERT_IRRIGATION</Tag>
         <English>Irrigate Desert</English>
+        <French>Irriguer le désert</French>
         <German>Wüste bewässern</German>
         <Russian>Создать ирригацию пустыни</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_DESERT_IRRIGATION_HELP</Tag>
         <English>Needs River to create Flood Plains.</English>
+        <French>Une rivière est nécessaire pour créer des plaines d'inondations</French>
         <German>Benötigt einen Fluss um fruchtbares Schwemmland zu erzeugen.</German>
     </TEXT>
     <TEXT>
@@ -389,6 +399,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILD_REMOVE_LUSHGRASS</Tag>
         <English>Cut down the [LINK=FEATURE_LUSHGRASS]grass[\LINK]</English>
+        <French>Faucher les  [LINK=FEATURE_LUSHGRASS]herbes hautes[\LINK]</French>
         <German>[LINK=FEATURE_LUSHGRASS]Gras[\LINK] entfernen</German>
         <Russian>Скосить [LINK=FEATURE_LUSHGRASS]траву[\LINK]</Russian>
     </TEXT>
@@ -399,6 +410,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILD_REMOVE_CACTUS</Tag>
         <English>Chop down the [LINK=FEATURE_BARREL_CACTUS]cactus field[\LINK]</English>
+        <French>Mettre à bas les [LINK=FEATURE_BARREL_CACTUS]champs de cactus[\LINK]</French>
         <German>[LINK=FEATURE_BARREL_CACTUS]Kaktusfeld[\LINK] entfernen</German>
         <Russian>Вырубить [LINK=FEATURE_BARREL_CACTUS]кактусовое поле[\LINK]</Russian>
     </TEXT>
@@ -409,6 +421,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILD_REMOVE_ROCK_FORMATION</Tag>
         <English>Destroy the [LINK=FEATURE_BARREL_CACTUS]rock formation[\LINK]</English>
+        <French>Briser la  [LINK=FEATURE_BARREL_CACTUS]formation rocheuse[\LINK]</French>
         <German>[LINK=FEATURE_BARREL_CACTUS]Felsformation[\LINK] zerstören</German>
         <Russian>Уничтожить [LINK=FEATURE_ROCK_FORMATION]скальные образования[\LINK]</Russian>
     </TEXT>
@@ -456,6 +469,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILD_RAFT_STATION</Tag>
         <English>Build a [LINK=IMPROVEMENT_RAFT_STATION]river ferry station[\LINK]</English>
+        <French>Construire un [LINK=IMPROVEMENT_RAFT_STATION]bac sur la rivière[\LINK]</French>
         <German>[LINK=IMPROVEMENT_RAFT_STATION]Flussfährenstation[\LINK] bauen</German>
         <Russian>Построить [LINK=IMPROVEMENT_RAFT_STATION]речную паромную переправу[\LINK]</Russian>
     </TEXT>
@@ -463,38 +477,45 @@
         <Tag>TXT_KEY_BUILD_RAFT_STATION_HELP</Tag>
         <English>Allows [LINK=TERRAIN_LARGE_RIVERS]large rivers[\LINK] to be crossed </English>
         <German>Erlaubt die Überquerung eines [LINK=TERRAIN_LARGE_RIVERS]Großen Flusses[\LINK]</German>
+        <French>Permet de traverser une [LINK=TERRAIN_LARGE_RIVERS]grande rivière[\LINK]</French>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_FISHING_NETS</Tag>
         <English>Build [LINK=IMPROVEMENT_FISHING_NETS]fishing nets[\LINK]</English>
         <German>[LINK=IMPROVEMENT_FISHING_NETS]Fischernetze[\LINK] auslegen</German>
+        <French>Placer des  [LINK=IMPROVEMENT_FISHING_NETS]filets de nets[\LINK]</French>
         <Russian>Построить [LINK=IMPROVEMENT_FISHING_NETS]рыбацкие сети[\LINK]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_FISHING_NETS_HELP</Tag>
         <English>Increases fishing yields</English>
         <German>Erhöht Erträge aus Fischfang</German>
+        <French>Augmente le produit de la pêche</French>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_HUNTERS_STAGE</Tag>
         <English>Build [LINK=IMPROVEMENT_HUNTERS_STAGE]hunters' blind[\LINK]</English>
+        <French>Construire des postes de chasses</French>
         <German>[LINK=IMPROVEMENT_HUNTERS_STAGE]Jagdpier[\LINK] bauen</German>
         <Russian>Построить [LINK=IMPROVEMENT_HUNTERS_STAGE]охотничье укрытие[\LINK]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_HUNTERS_STAGE_HELP</Tag>
         <English>Increases hunting yields on water</English>
+        <French>Augmente les fruits de la chasse sur les eaux.</French>
         <German>Erhöht Erträge der Jagd auf dem Wasser</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_SALINA</Tag>
         <English>Build [LINK=IMPROVEMENT_HUNTERS_STAGE]Salina[\LINK]</English>
+        <French>Construit des [LINK=IMPROVEMENT_HUNTERS_STAGE]marais salant[\LINK]</French>
         <German>[LINK=IMPROVEMENT_HUNTERS_STAGE]Saline[\LINK] bauen</German>
         <Russian>Построить [LINK=IMPROVEMENT_HUNTERS_STAGE]соляной рудник[\LINK]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_SALINA_HELP</Tag>
         <English>Yields raw salt from coastal terrain.</English>
+        <French>Permet de recueillir du sel sur un terrain côtier</French>
         <German>Erbringt Salzerträge auf Küstengebiet</German>
     </TEXT>
     <TEXT>

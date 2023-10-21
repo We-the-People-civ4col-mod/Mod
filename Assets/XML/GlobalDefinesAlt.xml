@@ -159,7 +159,7 @@
 	</Define>
 	<Define>
 		<DefineName>MAX_TAX_RATE</DefineName>
-		<iDefineIntVal>60</iDefineIntVal>
+		<iDefineIntVal>70</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>MIN_TAX_RATE</DefineName>
@@ -1709,5 +1709,9 @@
 	<Define>
 		<DefineName>BASE_CHANCE_CAPTURING_PRISONER_OF_WAR</DefineName>
 		<iDefineIntVal>100</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BASE_TERRAINS_WITHOUT_FEATURE_PERCENTAGE</DefineName>
+		<iDefineIntVal>20</iDefineIntVal>
 	</Define>
 </Civ4Defines>

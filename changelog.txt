@@ -1,5 +1,123 @@
 We the People Changelog
 
+Version 4.1
+
+Changes:
+- New MapSize "Massive" + some new Maps for it
+- Reduced generation of Coral Reefs on Ocean
+- "Bakery Products" have been renamed to "Provisions"
+- Immigration Overhaul (too many Units on Dock waiting reduces Immigration)
+- The flag on the Danish Schooner is no longer mirrored
+- Buttons to import/export all yields now include more yields
+- More background music added
+- Changes to when some events will trigger (no spoilers with specifics here)
+- Production help text (like mouseover on hammers) now has the leader contribution listed as a standalone line
+- Domestic Advisor gained mouseover help text on the production page
+- Event help text now informs more about production changes
+- Wild Feathers are now used to produce (padded) Goat Hide Boots.
+- #427 #820 Build road to location now allows the player to pick which type of road to build
+- Readme is now html as that allows index with links to each section
+- Savegames will no longer break if more buildings or units are added to xml
+- Added more achievements
+- #723 Map sizes have changed to avoid black map when zooming out (random maps only, doesn't affect existing savegames)
+- Added proper error message windows. Also message windows will no longer show error icon and error sound.
+- #813: Button to filter Yields in City Screen to only available ones
+- Random map adjustments to terrain and land mass
+- Removed source code from releases (mod starts faster). Source code is still available in a seperate release zip file
+- Added new game speed for builders (slower than Marathon)
+- Names of colonies, generals, admirals and ships now support Cyrillic (Russian only, manually entering colony names still has issues)
+- City billboards now support Cyrillic without manually replacing GameFont.tga (game restart required when switching to/from Russian)
+- Random map generation is now updated to handle new terrains and terrain features in a more balanced way
+
+New Units:
+- Added failed native trader
+- Seasoned trader
+- Eccentric architect
+- Prisoners of war (incl. Events to exchange them in Missions / Forts)
+- A new unique unit for each European civilization
+
+Graphic updates (new or improved):
+- Achievements: 71
+- Bonuses: 7
+- Buttons: 9
+- Units: 26
+
+Colopedia:
+- Major improvements
+
+Translations:
+- Improved quality of English text
+- French translation is being maintained again due to the arrival of a new translator
+- Major updates to French
+- Significant updates to Russian
+- German is still being maintained and is still up to date
+
+Balance:
+- Native raids no longer destroys all production
+- Cross cost of immigrants now increases slower, but max price has increased
+- Slave Overseer and Slave Hunter are now less overpowered
+- Town guard is now a bit stronger
+- Master carpenters now reqiures a college for education
+- Cargo price changes
+- Dutch Mercantile trait now provides trade goods in colonies
+- French now gets 2 baked goods per colony per turn
+- Hemp and flax planters are now available in Europe
+- Rebalanced what some of the terrains can produce
+- More terrains now produce clay (should reduce the risk of not being able to produce any)
+- Corrected Balancing of REF to not get Terrain Defenses
+
+Fixes:
+- Goodies no longer spawn on mountain peaks
+- Domestic prices are no longer unattractive compared to European prices
+- Full barracks no longer blocks civilians and cargo from being unloaded
+- Founding fathers will no longer be able to reveal shipwrecks as that would discover the Pacific without going there
+- Russian dragoons will no longer have greatly oversized heads in some situations
+- Event where servant steals money will now remove money rather than adding them to the player
+- Peace granted through a founding father will now have a minimum duration (prevents declaring war the following turn)
+- Failed Missionary could not use the school system
+- #808: leader traits granding production bonuses to all colonies will now always provide those in all colonies
+- Production help text (like mouseover on hammers) will now display the correct numbers
+- Taiga no longer prevents pioneers from building farms or plantations
+- Danish ship (which?) now has a Danish flag, not English
+- Fixed issue where docks could not be built on certain small lakes
+- Great general can now join artillery professions
+- FF Verrazano now reveals goodie huts
+- Fixed a missing ambient sound for Terrains
+- Sea animals no longer spawns under ice
+- Fixed issue with wool related to storage capacity view
+- Fixed issue with Cochineal using wrong Improvement
+- #842 Fixed issue caused by cashing of Slave Production Modifier
+- Foreign kings offering immigrants will now offer a random unit and not just the same as what other kings offer
+- #846 starting a game in another era than discovery will no longer crash the game (still not recommended to start in anything but discovery)
+- #854 Buying deep water ships from king without any suitable colony no longer crashes the game
+- Fixed issue where construction supplies didn't take up cargo space as intended
+- #865 with Construction supplies that could not be loaded on Wagon Trains, Smuggling Ships
+- Fixed vanilla bug where AI assumed it could construct all buildings due to a typo
+- Attacking smuggler ships no longer reveals their owner
+- Fog no longer prevents pioneers from building improvements
+- #845 European wars will no longer be able to end right after they started
+- Port Royal, not Africa is where new world resource experts can be bought
+- #872 Colony screen no longer breaks completely by trying to draw the icon of NO_YIELD
+- Carriages can now use ferries across large rivers
+- Fixed pathfinding issue where ships would sometimes prefer to go through storms
+- Iron Mines, Iron Mills and Peat Pits no longer destroys bogs (ore boosting improvements should not remove a +2 ore bonus)
+- #804 Ice lakes are no longer generated in deserts
+- Fixed a number of seemingly random crashes caused by selection groups containing a NULL unit
+- Citadels ands Bastions will no longer view all units as infrantry
+- #874 Automated scouts will now take enemy units into account when moving
+- #874 Automated scouts will now stop automation if they are done exploring, hence making the player aware that the scout is available
+- Units can no longer move after bombarding a colony
+- Fixed (vanilla?) bug where selling to natives increases the counter of what has been sold in Europe
+- AI settlers will no longer permanently take up a cargo slot on a ship if it can't find a suitable location to settle
+- Ranchers no longer lists domestic requirements, which it doesn't actually require
+- #900 Fixed issue where tax increases could cause tax to decrease (only happened with taxes above 60%)
+- #902 createAnimalsSea now uses xml settings for sea animals rather than land animals
+- Fixed rare issue where Town guard could end up with blue skin
+
+Internals:
+- Added wrapper classes to avoid exe and python from calling our code directly (adds modding freedom)
+- Complete rewrite of OOS logging to allow savegame to dump all saved data to the log output
+
 Version 4.0.2
 
 Changes:
@@ -163,7 +281,7 @@ AI
 Performance:
 - New building rules replaces old code, which was way slower
 - #439 Updating map view while moving weather much faster (typically 90% CPU reduction)
-- Natives no longer spends time checking if European only random events will trigger for them
+- Natives no longer spend time checking if European-only random events will trigger for them
 - Lakes are now identified by terrain rather than more complex (slower) code, which takes number of plots into account
 
 Release:
@@ -205,11 +323,11 @@ Fixes:
 - Removed case where raiding natives could report burning down a building without removing any buildings
 - #401 Blocked vanilla from trying to load map scripts (and fail) while starting vanilla
 - Fixed vanilla bug where circles on the map might not update correctly if a team has more than one player
-- Shipwrecks discovered by founding a colony will no longer causes bugs due to referring to the ship doing the discovery
+- Shipwrecks discovered by founding a colony will no longer cause bugs due to referring to the ship doing the discovery
 - Barbarian units are no longer called "wild animals" in mouseover help text
 - Ships using automated exploration will now aim for shipwrecks just like automated scouts on land search ruins
-- Clearing a unit speciality in a revolting colony will no longer crash the game
-- Forts now updates field of view as intended
+- Clearing a unit speciality in a rebelling colony will no longer crash the game
+- Forts now update field of view as intended
 - #437 Scrolling up will no longer move the "unit pointer icon" behind the bottom panel
 - #459 Founding Fathers and traits providing extra yield on the colony plot will now provide the bonus (vanilla bug)
 
@@ -350,7 +468,7 @@ New Features
 - New game option: Only 1 colonist living with Natives at at time
 
 Improvements:
-- #309 Added message when uprest ends in a colony
+- #309 Added message when unrest ends in a colony
 - added 5 new quests
 - Turn counter displayed for units working to become experts or become free
 - Citizen help now display yield modifiers

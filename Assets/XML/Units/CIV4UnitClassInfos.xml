@@ -442,6 +442,11 @@
             <DefaultUnit>UNIT_DOCTOR</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_ECCENTRIC_ARCHITECT</Type>
+            <Description>TXT_KEY_UNITCLASS_ECCENTRIC_ARCHITECT</Description>
+            <DefaultUnit>UNIT_ECCENTRIC_ARCHITECT</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_JUDGE</Type>
             <Description>TXT_KEY_UNITCLASS_JUDGE</Description>
             <DefaultUnit>UNIT_JUDGE</DefaultUnit>
@@ -470,6 +475,11 @@
             <Type>UNITCLASS_EXPERT_TRADER</Type>
             <Description>TXT_KEY_UNITCLASS_EXPERT_TRADER</Description>
             <DefaultUnit>UNIT_EXPERT_TRADER</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_SEASONED_TRADER</Type>
+            <Description>TXT_KEY_UNITCLASS_SEASONED_TRADER</Description>
+            <DefaultUnit>UNIT_SEASONED_TRADER</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_FAILED_TRADER</Type>

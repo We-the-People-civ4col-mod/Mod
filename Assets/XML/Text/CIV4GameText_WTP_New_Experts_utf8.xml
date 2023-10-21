@@ -315,7 +315,7 @@
         <Tag>TXT_KEY_UNITCLASS_OLIVES_PLANTER</Tag>
         <English>Expert Olive Picker:Expert Olive Pickers</English>
         <French>
-            <Text>Cueilleur de olives expert:Cueilleurs de olives expert</Text>
+            <Text>Ramasseur d'olives expert:Ramasseurs d'olives expert</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -340,7 +340,7 @@
         <Tag>TXT_KEY_UNIT_OLIVES_PLANTER</Tag>
         <English>Expert Olive Picker:Expert Olive Pickers</English>
         <French>
-            <Text>Cueilleur de olives expert:Cueilleurs de olives expert</Text>
+            <Text>Ramasseur d'olives expert:Ramasseurs d'olives expert</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -365,7 +365,7 @@
         <Tag>TXT_KEY_UNIT_OLIVES_PLANTER_PEDIA</Tag>
         <English>Olive trees produce either table olives or olives for oil. Spanish colonists brought the olive to the New World in 1560, where its cultivation prospered in present-day Peru, Chile, and Argentina. In the 18th century Spanish missionaries planted olive trees in California.[NEWLINE]Before European contact cooking oil was essential for Pacific Northwest Native nations. Candlefish oil was so central to Native commerce that the trade routes were called grease trails.</English>
         <French>Les oliviers produisent soit des olives de table, soit des olives à huile. Les colons espagnols ont introduit l'olive dans le Nouveau Monde en 1560, où sa culture a prospéré dans les pays actuels que sont le Pérou, le Chili et l'Argentine. Au XVIIIe siècle, les missionnaires espagnols ont planté des oliviers en Californie.[NEWLINE]Avant le contact avec les Européens, l'huile de cuisson était essentielle pour les nations autochtones du nord-ouest du Pacifique. L'huile d'oolichan provenant de la chandelle constituait une si grande partie du commerce amérindien que les routes commerciales étaient appelées "pistes de graisse".</French>
-        <German>Olivenbäume liefern entweder Tafeloliven oder Oliven zur Ölgewinnung. Spanische Kolonisten brachten die Olive im Jahr 1560 in die Neue Welt, wo ihr Anbau im heutigen Peru, Chile und Argentinien florierte. Im 18. Jahrhundert pflanzten spanische Missionare Olivenbäume in Kalifornien.[NEWLINE]Vor dem Kontakt mit den Europäern war Speiseöl für die Ureinwohner des pazifischen Nordwestens lebenswichtig. Der Handel Oolichan-Öl aus Kerzenfisch hatte eine so große Bedeutung für die Ureinwohner, daß die Handelsrouten als "Fettstraßen" bezeichnet wurden.</German>
+        <German>Olivenbäume liefern entweder Tafeloliven oder Oliven zur Ölgewinnung. Spanische Kolonisten brachten die Olive im Jahr 1560 in die Neue Welt, wo ihr Anbau im heutigen Peru, Chile und Argentinien florierte. Im 18. Jahrhundert pflanzten spanische Missionare Olivenbäume in Kalifornien.[NEWLINE]Vor dem Kontakt mit den Europäern war Speiseöl für die Ureinwohner des pazifischen Nordwestens lebenswichtig. Der Handel Oolichan-Öl aus Kerzenfisch hatte eine so große Bedeutung für die Ureinwohner, dass die Handelsrouten als "Fettstraßen" bezeichnet wurden.</German>
         <Italian>Gli olivi producono olive da tavola o olive da olio. I coloni spagnoli portarono l'olivo nel Nuovo Mondo nel 1560, dove la sua coltivazione prosperò negli attuali Perù, Cile e Argentina. Nel XVIII secolo i missionari spagnoli piantarono olivi in California.[NEWLINE]Prima del contatto europeo, l'olio da cucina era essenziale per i nativi del Pacifico nordoccidentale. L'olio di oolichan ricavato dal pesce candela costituiva una parte così importante del commercio dei nativi che le rotte commerciali venivano chiamate "vie del grasso".</Italian>
         <Spanish>Los olivos producen aceitunas de mesa o aceitunas para aceite. Los colonos españoles llevaron el olivo al Nuevo Mundo en 1560, donde su cultivo prosperó en los actuales Perú, Chile y Argentina. En el siglo XVIII, los misioneros españoles plantaron olivos en California.[NEWLINE]Antes del contacto europeo, el aceite de cocina era esencial para las naciones indígenas del noroeste del Pacífico. El aceite de oolichan procedente del pez vela constituía una parte tan importante del comercio nativo que las rutas comerciales se llamaban "rutas de la grasa".</Spanish>
     </TEXT>
@@ -1690,7 +1690,7 @@
         <Tag>TXT_KEY_UNIT_MILK_MAID_STRATEGY</Tag>
         <English>Milkmaids work hard to deliver much-needed protein to settlers young and old. Anyone who thinks the work is easy hasn't been close enough to the business end of a cow. Milkmaids are also immune to smallpox, a rare advantage in colonial times.[NEWLINE]When assigned to the Milkmaid profession, the skilled milkmaid can get twice the milk in the same time as a regular colonist.</English>
         <French>Les laitières travaillent dur pour fournir les protéines dont les colons, jeunes et vieux, ont tant besoin. Quiconque pense que ce travail est facile n'a jamais été assez près de l'extrémité d'une vache. Les laitières sont également immunisées contre la variole, un avantage rare à l'époque coloniale.[NEWLINE]Lorsqu'elle est affectée à la profession de laitière, la laitière qualifiée peut obtenir deux fois plus de lait dans le même temps qu'un colon ordinaire.</French>
-        <German>Milchmädchen arbeiten hart, um die Siedler, ob jung oder alt, mit dem dringend benötigten Eiweiß zu versorgen. Wer glaubt, daß die Arbeit leicht ist, war noch nicht nah genug am Hinterteil einer Kuh. Milchmädchen sind auch immun gegen Pocken, ein seltener Vorteil in der Kolonialzeit.[NEWLINE]Wenn ein fleißiges Milchmädchen den Beruf des Milchmädchens ausübt, kann sie in der gleichen Zeit doppelt so viel Milch wie ein normaler Kolonist produzieren.</German>
+        <German>Milchmädchen arbeiten hart, um die Siedler, ob jung oder alt, mit dem dringend benötigten Eiweiß zu versorgen. Wer glaubt, dass die Arbeit leicht ist, war noch nicht nah genug am Hinterteil einer Kuh. Milchmädchen sind auch immun gegen Pocken, ein seltener Vorteil in der Kolonialzeit.[NEWLINE]Wenn ein fleißiges Milchmädchen den Beruf des Milchmädchens ausübt, kann sie in der gleichen Zeit doppelt so viel Milch wie ein normaler Kolonist produzieren.</German>
         <Italian>Le lattaie lavorano duramente per fornire le proteine tanto necessarie ai coloni giovani e anziani. Chiunque pensi che il lavoro sia facile non è stato abbastanza vicino alla parte commerciale di una mucca. Le lattaie sono anche immuni al vaiolo, un vantaggio raro in epoca coloniale.[NEWLINE]Se assegnata alla professione di lattaio, la lattaia esperta può ottenere il doppio del latte nello stesso tempo di un normale colono.</Italian>
         <Spanish>Las lecheras trabajan duro para suministrar las proteínas que tanto necesitan los colonos jóvenes y viejos. Cualquiera que piense que el trabajo es fácil no se ha acercado lo suficiente al negocio de una vaca. Las lecheras también son inmunes a la viruela, una ventaja poco común en la época colonial.[NEWLINE]Cuando se le asigna la profesión de lechera, la lechera experta puede obtener el doble de leche en el mismo tiempo que un colono normal.</Spanish>
     </TEXT>
@@ -2104,7 +2104,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES_STRATEGY</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]Construction supplies[COLOR_REVERT] can be purchased in [LINK=CONCEPT_EUROPE]Europe[\LINK] or produced in a settlement for 50 [LINK=YIELD_HAMMERS]hammers[\LINK] and support a building project with 40 hammers once. The construction suplies behaves like an immobile unit, which can be [LINK=CONCEPT_TRANSPORT]transported[\LINK], however, so that new settlements can be supported by this with the building construction.</English>
-        <French>[COLOR_HIGHLIGHT_TEXT]Les matériaux de construction[COLOR_REVERT] peuvent être achetés en [LINK=CONCEPT_EUROPE]Europe[\LINK] ou produits dans une colonie pour 50 [LINK=YIELD_HAMMERS]production[\LINK] et donne une contribution ponctuelle de 40 production aux projets de la colonie. Les matériaux de contructions sont immoblies mais peuvent être [LINK=CONCEPT_TRANSPORT]transportés[\LINK], pour aider à établir les premiers bâtiments indispensables des nouvelles colonies.</French>
+        <French>[COLOR_HIGHLIGHT_TEXT]Les matériaux de construction[COLOR_REVERT] peuvent être achetés en [LINK=CONCEPT_EUROPE]Europe[\LINK] ou produits dans une colonie pour 50 [LINK=YIELD_HAMMERS]marteaux[\LINK] et donne une contribution ponctuelle de 40 production aux projets de la colonie. Les matériaux de contructions sont immoblies mais peuvent être [LINK=CONCEPT_TRANSPORT]transportés[\LINK], pour aider à établir les premiers bâtiments indispensables des nouvelles colonies.</French>
         <German>[COLOR_HIGHLIGHT_TEXT]Baumaterial[COLOR_REVERT] kann in [LINK=CONCEPT_EUROPE]Europa[\LINK] gekauft oder in einer Siedlung für 50 [LINK=YIELD_HAMMERS]Hämmer[\LINK] produziert werden und einmalig ein Bauprojekt mit 40 Hämmern unterstützen. Das Baumaterial verhält sich wie eine unbewegliche Einheit, welche jedoch [LINK=CONCEPT_TRANSPORT]transportiert[\LINK] werden kann, sodass hierdurch neue Siedlungen beim Gebäudebau unterstützt werden können.</German>
     </TEXT>
     <!-- BRAVE_LIEUTENANT -->
@@ -2222,11 +2222,13 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN_PEDIA</Tag>
         <English>Like the great admiral, the capable captain adds experience points to one or more military units, just not as much experience.[NEWLINE]To attain command a capable captain needs the ability to win a fight. In the American Revolutionary War naval battles were fought on inland lakes and rivers, as well as on the open ocean. Seaports were also a common target.</English>
+        <German>Im Amerikanischen Revolutionskrieg wurden Seeschlachten sowohl auf Binnenseen und Flüssen als auch auf dem offenen Meer ausgetragen. Auch Seehäfen waren ein häufiges Ziel.</German>
         <French>Tout comme un [LINK=UNIT_GREAT_ADMIRAL]amiral illustre[\LINK], un capitaine compétent donne des points d'expérience aux unités navales présentes sur sa case, en quantité moindre que l'amiral.[NEWLINE]Pour se démarquer, un capitaine compétent doit gagner un combat. Pendant la guerre d'indépendance des États Unis, les batailles navales ont eu lieu sur les lacs et les rivières, ainsi qu'en haute mere. Les ports maritimes étaient eux aussi des cibles fréquentes.</French>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN_STRATEGY</Tag>
         <English>Capable captains are front line leaders. They are rare, occurring perhaps once out of every ten battles.</English>
+        <German>Wie der große Admiral fügt der fähige Kapitän einer oder mehreren Militäreinheiten Erfahrungspunkte hinzu, jedoch deutlich weniger.[NEWLINE]Um einen fähigen Kapitän zu erhalten, ist es notwendig einen Kampf zu gewinnen. Fähige Kapitäne sind Anführer an vorderster Front. Sie sind selten und kommen vielleicht einmal in jeder zehnten Schlacht vor.</German>
         <French>Les capitaines compétents mènent en première ligne. Ils sont peu communs, se démarquant du rang environ une fois toutes les dix batailles.</French>
     </TEXT>
     <!-- ENTERTAINER -->
@@ -2372,7 +2374,7 @@
         <Tag>TXT_KEY_UNIT_HARLOT_STRATEGY</Tag>
         <English>Lonely men often find happiness with a whore who also knows how to be a good listener. For the harlot herself, being in a world with five men for every woman means the chance to find her own husband instead of having her marriage arranged by her parents.</English>
         <French>Les hommes solitaires trouvent souvent le bonheur auprès d'une prostituée qui sait aussi être à l'écoute. Pour la prostituée elle-même, le fait d'être dans un monde où il y a cinq hommes pour chaque femme signifie la possibilité de trouver son propre mari au lieu de voir son mariage arrangé par ses parents.</French>
-        <German>Einsame Männer finden oft ihr Glück bei einer Hure, die auch ein guter Zuhörer ist. Für die Hure selbst bedeutet die Tatsache, daß in einer Welt mit fünf Männern auf eine Frau fünf Männer kommen, die Chance, ihren eigenen Ehemann zu finden, anstatt von ihren Eltern verheiratet zu werden.</German>
+        <German>Einsame Männer finden oft ihr Glück bei einer Hure, die auch ein guter Zuhörer ist. Für die Hure selbst bedeutet die Tatsache, dass in einer Welt mit fünf Männern auf eine Frau fünf Männer kommen, die Chance, ihren eigenen Ehemann zu finden, anstatt von ihren Eltern verheiratet zu werden.</German>
         <Italian>Gli uomini soli spesso trovano la felicità con una prostituta che sa anche essere una buona ascoltatrice. Per la prostituta stessa, trovarsi in un mondo con cinque uomini per ogni donna significa avere la possibilità di trovarsi un marito da sola, invece di avere un matrimonio combinato dai genitori.</Italian>
         <Spanish>Los hombres solitarios suelen encontrar la felicidad con una ramera que también sabe escuchar bien. Para la propia ramera, estar en un mundo con cinco hombres por cada mujer significa tener la oportunidad de encontrar su propio marido en lugar de que sus padres le arreglen el matrimonio.</Spanish>
     </TEXT>
@@ -2407,7 +2409,7 @@
         <Tag>TXT_KEY_UNIT_JUDGE_PEDIA</Tag>
         <English>A judge presides over court proceedings, hears all the witnesses and any other evidence presented by the barristers or solicitors of the case, assesses the credibility and arguments of the parties, and then issues a ruling in the case based on his interpretation of the law and his own personal judgment. A judge is expected to conduct the trial impartially in an open court.</English>
         <French>Un juge préside les procédures judiciaires, entend tous les témoins et toute autre preuve présentée par les avocats ou les avoués de l'affaire, évalue la crédibilité et les arguments des parties, puis rend une décision sur l'affaire en se basant sur son interprétation de la loi et son jugement personnel. On attend d'un juge qu'il mène le procès de manière impartiale dans un tribunal ouvert.</French>
-        <German>Ein Richter leitet die Verhandlung, hört alle Zeugen und alle anderen von den Anwälten vorgelegten Beweise an, beurteilt die Glaubwürdigkeit und die Argumente der Parteien und fällt dann auf der Grundlage seiner Rechtsauffassung und seines persönlichen Urteils eine Entscheidung in der Sache. Von einem Richter wird erwartet, daß er die Verhandlung unparteiisch und in öffentlicher Sitzung führt.</German>
+        <German>Ein Richter leitet die Verhandlung, hört alle Zeugen und alle anderen von den Anwälten vorgelegten Beweise an, beurteilt die Glaubwürdigkeit und die Argumente der Parteien und fällt dann auf der Grundlage seiner Rechtsauffassung und seines persönlichen Urteils eine Entscheidung in der Sache. Von einem Richter wird erwartet, dass er die Verhandlung unparteiisch und in öffentlicher Sitzung führt.</German>
         <Italian>Un giudice presiede il procedimento giudiziario, ascolta tutti i testimoni e qualsiasi altra prova presentata dagli avvocati o dai legali della causa, valuta la credibilità e le argomentazioni delle parti, quindi emette una sentenza sulla base della sua interpretazione della legge e del suo giudizio personale. Il giudice è tenuto a condurre il processo in modo imparziale in un'aula aperta.</Italian>
         <Spanish>El juez preside los procedimientos judiciales, escucha a todos los testigos y cualquier otra prueba presentada por los abogados o procuradores del caso, evalúa la credibilidad y los argumentos de las partes y, a continuación, dicta sentencia en el caso basándose en su interpretación de la ley y en su propio criterio personal. El juez debe dirigir el juicio con imparcialidad en audiencia pública.</Spanish>
     </TEXT>
@@ -2442,20 +2444,20 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PRISONER_OF_WAR_PEDIA</Tag>
-        <English>tbd</English>
+        <English>Prisoners of war, especially officers, are often ransomed. The rank and file are more likely to be released during a prisoner exchange.[NEWLINE]Taking prisoners is a relatively recent idea. During the Trojan War defeated fighters were killed. More recently knights counted on the value of their armour and horse to show that ransoming would be worthwhile. By colonial times capturing a prisoner meant the price his conquerors could expect to receive was the value of his life.</English>
         <German>tbd</German>
         <Russian>когда-нибудь здесь появится описание</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PRISONER_OF_WAR_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Prisoners of War[COLOR_REVERT] tbd</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Prisoners of War[COLOR_REVERT][COLOR_HIGHLIGHT_TEXT]Prisoners of War[COLOR_REVERT][NEWLINE]Defeated soldiers usually die in battle, but a few are captured to become prisoners of war. They may be ransomed or transferred in a prisoner exchange if the enemy commander is willing to make a deal.</English>
         <German>[COLOR_HIGHLIGHT_TEXT]Kriegsgefangene[COLOR_REVERT] tbd</German>
         <Russian>[COLOR_HIGHLIGHT_TEXT]Военнопленные[COLOR_REVERT][NEWLINE]когда-нибудь здесь появится описание</Russian>
     </TEXT>
     <!-- REVOLTING_PRISONER_OF_WAR -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_REVOLTING_PRISONER_OF_WAR</Tag>
-        <English>Revolting Prisoner of War:Revolting Prisoners of War</English>
+        <English>Rebelling Prisoner of War:Rebelling Prisoners of War</English>
         <French>Prisonnier de guerre mutiné:Prisonniers de guerre mutinés</French>
         <German>
             <Text>Revoltierender Kriegsgefangener:Revoltierende Kriegsgefangene</Text>
@@ -2466,7 +2468,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_REVOLTING_PRISONER_OF_WAR</Tag>
-        <English>Revolting Prisoner of War:Revolting Prisoners of War</English>
+        <English>Rebelling Prisoner of War:Rebelling Prisoners of War</English>
         <French>Prisonnier de guerre mutiné:Prisonniers de guerre mutinés</French>
         <German>
             <Text>Revoltierender Kriegsgefangener:Revoltierende Kriegsgefangene</Text>
@@ -2477,14 +2479,40 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_REVOLTING_PRISONER_OF_WAR_PEDIA</Tag>
-        <English>tbd</English>
+        <English>Once captured, prisoners of war have a duty as soldiers to escape. The best opportunity is during a riot. While the guards are distracted a few prisoners try to sneak away into the forest.[NEWLINE]If the guards manage to suppress the riot without too much trouble the remaining prisoners may survive, but punishment usually follows.</English>
         <German>tbd</German>
         <Russian>когда-нибудь здесь появится описание</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_REVOLTING_PRISONER_OF_WAR_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Revolting Prisoners of War[COLOR_REVERT] tbd</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Rebelling Prisoners of War[COLOR_REVERT][COLOR_HIGHLIGHT_TEXT]Rebelling Prisoners of War[COLOR_REVERT] [NEWLINE]If the conditions of their captivity are bad, or if they see an opportunity to escape, prisoners of war will riot. Once they get away they hide in the woods and fight with greater strength than petty criminals, but not as much power as when they were soldiers.</English>
         <German>[COLOR_HIGHLIGHT_TEXT]Revoltierende Kriegsgefangene[COLOR_REVERT] tbd</German>
         <Russian>[COLOR_HIGHLIGHT_TEXT]Военнопленные[COLOR_REVERT][NEWLINE]когда-нибудь здесь появится описание</Russian>
-    </TEXT>	
+    </TEXT>
+    <!-- ECCENTRIC ARCHITECT -->
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ECCENTRIC_ARCHITECT</Tag>
+        <English>Eccentric Architect:Eccentric Architects</English>
+        <French>Architecte excentrique:Architectes excentriques</French>
+        <German>
+            <Text>Exzentrischer Architekt:Exzentrische Architekten</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Russian>Эксцентричный архитектор:Эксцентричные архитекторы</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ECCENTRIC_ARCHITECT_PEDIA</Tag>
+        <English>The architect is a master builder who will do great for the construction work of a colony - as long as he works in the profession of a carpenter and produces proper hammers. He is unsuitable for other professions.</English>
+        <French>L'architecte est un maître en construction qui excellera dans l'édification des bâtiments de la colonie - dès lors qu'il est affecté à la construction dans un atelier de charpentier, une scierie, ou mieux. Il est inapte à toute autre profession.</French>
+        <German>Der Architekt ist ein Meister der Baukunst, der den Aufbau einer Kolonie wahre Wunder vollbringen wird - solange er in dem Beruf des Zimmermanns arbeitet und ordentlich Hämmer produziert. Für andere Berufe ist er ungeeignet. </German>
+        <Russian>[NEWLINE]Архитектор — мастер-строитель, который отлично подойдет для строительных работ в колонии. Под его началом плотники будут работать лучше, чем после благословения Папы (да простит Господь мне эти слова). Другую профессию назначить ему нельзя.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ECCENTRIC_ARCHITECT_STRATEGY</Tag>
+        <English>The [COLOR_UNIT_TEXT]eccentric architect[COLOR_REVERT] is a true expert in the art of building - experienced and gifted, he is a visionary of his guild; but also a bon vivant and dreamer. As soon as you have built 5 lumber mills or higher classes of this building and 5,000[ICON_GOLD] in your treasury and your colonies have at least 15 citizens the king will think about sending a eccentric architect to his colonies to support the construction work in the colonies.[PARAGRAPH:1]The [COLOR_UNIT_TEXT]eccentric architect[COLOR_REVERT] is the best [LINK=YIELD_HAMMERS]hammer[\LINK] producer available.[NEWLINE]Assigning the eccentric architect to the [LINK=PROFESSION_CARPENTER]carpenter[\LINK] profession will quadruple the number of [COLOR_HIGHLIGHT_TEXT]hammers[COLOR_REVERT] an average colonist would produce.[NEWLINE]The eccentric architect cannot be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they cannot be [LINK=CONCEPT_TRAINING]educated[\LINK] in a [LINK=BUILDING_UNIVERSITY]university[\LINK] or any of its upgrades. [NEWLINE]In all other professions he suffers severe production penalties. [NEWLINE]Furthermore he is weak so using him as a soldier is not be a good idea. [NEWLINE]However, he is also a cheerful nature and man of life, who will quickly make friends in the colony with his generous lifestyle. He therefore lifts the happiness in the colony. However, this is exactly what gets him into trouble. It could be a reason why the king wanted to get rid of this very man and deport him to the new world. You should keep an eye on him.</English>
+        <French>L'architecte excentrique est un véritable expert dans l'art de la construction - doué et avec du métier, c'est l'un des visionnaires de sa guilde, mais aussi un bon vivant et un rêveur. Dès que vous avez construits cinq scieries ou mieux, vous disposez de 5.000[ICON_GOLD], et que vos colonies ont plus de 15 habitants le roi songera à vous envoyer un architecte excentrique dans ses colonies pour accélérer leur construction.[PARAGRAPH:1]The [COLOR_UNIT_TEXT]L'architecte excentrique[COLOR_REVERT] est le meilleur fabricant de [LINK=YIELD_HAMMERS]marteaux[\LINK] disponible. [NEWLINE]Affecter l'architecte excentrique à la profession de [LINK=PROFESSION_CARPENTER]charpentier[\LINK] quadruple la nombre de [COLOR_HIGHLIGHT_TEXT] marteaux[COLOR_REVERT] produit chaque tour comparé à un colon moyen.[NEWLINE]L'architecte excenrique ne peut être embauché en  [LINK=CONCEPT_EUROPE]Europe[\LINK], et ne peut être formé dans votre système éducatif, même dans l'université la plus prestigieuse.[NEWLINE]Dans toutes les autres professions, il souffrira de malus de production très sévères.[NEWLINE]Il est de plus phyisiquement faible, et le faire servir dans l'armée est une mauvaise idée.[NEWLINE]Toutefois, sa nature bonhomme et joviale lui permet de se faire des amis en se montrant généreux dans la vie. Il rendra la colonie plus heureuse par sa présence. Toutefois ceci s'est retourné contre lui; ce pourrait même être la raison pour laquelle le roi l'a envoyé loin, dans le Nouveau Monde. Vous devriez le garder à l'oeil.</French>
+        <German>Der [COLOR_UNIT_TEXT]Exzentrische Architekt[COLOR_REVERT] ist ein wahrer Experte der Baukunst - erfahren, gestählt und begabt ist er ein Visionär seiner Zunft; aber auch ein Lebemann und Träumer. Sobald Ihr 5 Sägewerke oder höhere Gebäudestufen errichtet habt, sich wenigstens 15 Bewohner in den Kolonien befinden und sich 5000[ICON_GOLD] in Eurer Schatzkammer befinden, wird der König darüber nachdenken, diesen Mann in seine Kolonien zu schicken, um den Aufbau der Kolonien zu unterstützen.[PARAGRAPH:1]Der [COLOR_HIGHLIGHT_TEXT]Exzentrische Architekt[COLOR_REVERT] vervierfacht die Anzahl der produzierten [LINK=YIELD_HAMMERS]Hämmer[\LINK] gegenüber einem normalen Bürger, der im Beruf [LINK=PROFESSION_CARPENTER]Zimmermann[\LINK] arbeitet.[PARAGRAPH:2]Für alle anderen Arbeiten ist er jedoch nicht zu gebrauchen und erhält hohe Produktionsmali. Außerdem ist er schwach, so dass er nicht zum Soldaten taugt. [NEWLINE]Er ist jedoch auch eine Frohnatur und Lebenmann, der sich in der Kolonie durch seinen freigebigen Lebensstil schnell Freunde machen wird. Er hebt daher die Stimmung in der Kolonie. Allerdings bringt ihm genau das auch Schwierigkeiten ein. Es könnte ein Grund sein, warum der König gerade diesen Mann loswerden und in die neue Welt abschieben wollte. Ihr solltet ihn im Auge behalten.</German>
+        <Russian>[NEWLINE][COLOR_UNIT_TEXT]Эксцентричный архитектор[COLOR_REVERT] — настоящий эксперт в строительном искусстве: опытный и одаренный, он суровый руководитель своей гильдии; но в то же время весельчак и мечтатель. Как только вы построите несколько [LINK=BUILDING_LUMBER_MILL]плотницких цехов[\LINK] или зданий более высокого класса, в казне будет достаточно [ICON_GOLD], а в колониях соберётся большое количество жителей, Король подумает о том, чтобы отправить лучшего из своих архитекторов в Новый Свет для поддержки строительных работ.[NEWLINE][COLOR_UNIT_TEXT]Эксцентричный архитектор[COLOR_REVERT] – лучший из доступных [LINK=YIELD_HAMMERS]строителей[\LINK].[NEWLINE][NEWLINE]Назначение Эксцентричному архитектору профессии [LINK=PROFESSION_CARPENTER]плотник[\LINK] в четыре раза увеличит количество [COLOR_HIGHLIGHT_TEXT]молотков[COLOR_REVERT], которые производит средний колонист.[NEWLINE][NEWLINE]Эксцентричного архитектора нельзя нанять в [LINK=CONCEPT_EUROPE]Европе[\LINK], его нельзя [LINK=CONCEPT_TRAINING]обучить[\LINK] даже в [LINK=BUILDING_UNIVERSITY]университете[\LINK], не говоря уже о более низших учебных заведениях.[NEWLINE]Во всех остальных профессиях он подвергается серьезным производственным штрафам.[NEWLINE][NEWLINE]Кроме того, он довольно слаб для несения военной службы, поэтому использовать его в качестве солдата — не лучшая идея.[NEWLINE][NEWLINE]Однако это жизнерадостный человек с веселой натурой, который благодаря своему щедрому образу жизни быстро найдет друзей в колониях. Одним словом, он точно поднимет уровень счастья там, где вы прикажете ему поселиться. Однако именно эта черта и доставляет ему большинство неприятностей. Возможно, это могло стать причиной того, что Король захотел избавиться от этого человека и депортировать его в Новый Мир. Нам следует приглядывать за ним.</Russian>
+    </TEXT>
 </Civ4GameText>

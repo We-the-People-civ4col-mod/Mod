@@ -417,7 +417,7 @@
         <Tag>TXT_KEY_UNITCLASS_CARPENTER</Tag>
         <English>Master Carpenter:Master Carpenters</English>
         <French>
-            <Text>Maître menuisier:Maîtres menuisiers</Text>
+            <Text>Maître charpentier:Maîtres charpentiers</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -1331,7 +1331,7 @@
         <Tag>TXT_KEY_UNITCLASS_ROYAL_TROOP_GALLEON</Tag>
         <English>Royal Troop Galleon:Royal Troop Galleons</English>
         <French>
-            <Text>Galion de transport royal:Galions de transport royal</Text>
+            <Text>Galion de transport royal:Galions de transport royaux</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -4090,5 +4090,16 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Враждебные индейцы</Russian>
+    </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_ECCENTRIC_ARCHITECT</Tag>
+        <English>Eccentric Architect:Eccentric Architects</English>
+        <French>Architecte excentrique:Architectes excentriques</French>
+        <German>
+            <Text>Exzentrischer Architekt:Exzentrische Architekten</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Russian>Эксцентричный архитектор:Эксцентричные архитекторы</Russian>
     </TEXT>
 </Civ4GameText>

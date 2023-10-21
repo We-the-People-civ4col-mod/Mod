@@ -466,21 +466,21 @@
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_EGEDE_1</Tag>
         <English>As 2nd Chronicles 19:2 says: "Should you help the wicked and love those who hate the Lord?" There can be no peace with the sinful [CT_EMPIRE].</English>
-        <French>Comme il est dit dans la 2nde Chronique 19:2 : "Pourquoi aider celui qui est habité par le vice alors qu'il déteste notre Seigneur ?" Il ne peut y avoir de paix avec [CT_EMPIRE] qui vivent par le pêché.</French>
+        <French>Comme il est dit dans le deuxième livre des Chroniques 19:2 : "Doit-on secourir le méchant, et aimes-tu ceux qui haïssent l'Éternel ?" Il ne peut y avoir de paix avec [CT_EMPIRE] qui vivent par le pêché.</French><!-- traduction Louis Segond 1910 -->
         <German>Wie heißt es in der Zweiten Chronik 19,2: "Warum dem helfen, der vom Laster bewohnt ist, wenn er unseren Herrn hasst?" Es kann keinen Frieden mit denen geben, die von der Sünde leben.</German>
         <Russian>Как сказано в 2 Паралипоменон 19:2: «Должен ли ты помогать нечестивому и любить ненавидящих Господа?» С грешниками из [CT_EMPIRE] мира быть не может.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_EGEDE_1</Tag>
         <English>Welcome, brother, to the God-fearing [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Let us celebrate our friendship in modesty, and give thanks to the Lord in Heaven.</English>
-        <French>Bienvenue mon fils. Sois la bienvenue dans les [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Célébrons ensemble notre amitié sans fastes inutiles. Que le Seigneur nous bénisse.</French>
+        <French>Bienvenue mon fils. Sois la bienvenu dans les [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Célébrons ensemble notre amitié sans fastes inutiles, pour mieux rendre grâce au Seigneur très haut.</French>
         <German>Willkommen, Bruder, bei dem gottesfürchtigen [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Lasst uns unsere Freundschaft in Bescheidenheit feiern und dem Herrn im Himmel danken.</German>
         <Russian>Добро пожаловать, брат, в благочестивую [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Давайте праздновать нашу дружбу в скромности и возблагодарим Господа на Небесах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_EGEDE_1</Tag>
         <English>Your evil nation is destined for a bloody, fiery end but, let me tell you, there will be a hotter fire waiting for you. I hope you have come to confess your sins and surrender your belongings to the people of God.</English>
-        <French>Votre nation est habitée par le mal. Vous qui aimez tant le sang et la fureur, sachez qu'encore plus de flammes vous attendent après votre mort. J'espère que vous êtes au moins venu pour vous repantir de vos pêchés.</French>
+        <French>Votre nation cruelle connaîtra une fin dans le sang et la feu, sachez qu'un enfer encore plus ardent vous attend après votre mort. J'espère que vous êtes au moins venu pour vous repentir de vos pêchés et céder vos biens au peuple de Dieu.</French>
         <German>Eure böse Nation ist für ein blutiges, feuriges Ende bestimmt, aber lasst mich Euch sagen, dass nach dem Ende noch mehr Feuer auf Euch warten wird. Ich hoffe, Ihr sind gekommen, um Eure Sünden zu bekennen und Euer Hab und Gut dem Volk Gottes zu übergeben.</German>
         <Russian>Вашему злому народу уготован кровавый, огненный конец, но истинно говорю вам, лично вас будет ждать более жаркий огонь. Я надеюсь, вы пришли исповедовать свои грехи и отдать свое имущество народу Божьему.</Russian>
     </TEXT>
@@ -514,7 +514,7 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_PRINTZ_1</Tag>
         <English>Welcome, [CT_NAME], to the [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. My name is [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. It is good to see a familiar face in these strange lands. I hope a bond of mutual trust can grow between us and our subjects.</English>
-        <French>Bienvenue, [CT_NAME] dans nos [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Mon nom est [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Cela fait plaisir de voir un européen dans ses terres si étranges. J'espère que nous bâtirons une relation de confiance entre nos sujets.</French>
+        <French>Bienvenue, [CT_NAME] dans nos [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Mon nom est [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Cela fait plaisir de voir un européen dans ses terres si étranges. J'espère que nous et nos sujets bâtirons une relation de confiance réciproque.</French>
         <German>Willkommen, [CT_NAME], in [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Mein Name ist [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Es ist gut, ein vertrautes Gesicht in diesen fremden Ländern zu sehen. Ich hoffe, dass ein Band des gegenseitigen Vertrauens zwischen uns und unseren Untertanen wachsen kann.</German>
         <Russian>Добро пожаловать, [CT_NAME], в [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Меня зовут [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Приятно видеть знакомое лицо в этих странных землях. Я надеюсь, что между нами и нашими подданными возникнут узы взаимного доверия.</Russian>
     </TEXT>
@@ -576,7 +576,7 @@
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_RISING_1</Tag>
         <English>I present you my greetings, [CT_NAME]. I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], governor of the [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Yes, I know you're excited, now that you finally have met me. I advise you to make peace with us, as there is much that we can teach you.</English>
-        <French>Cher [CT_NAME], je vous salue ! Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], gouverneur des [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Oui, je me rends compte de la joie qui vous habite à l'idée d'enfin me rencontrer. Je vous invite à faire la paix avec vous, pour le grand bien de votre propre peuple.</French>
+        <French>Cher [CT_NAME], je vous salue ! Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], gouverneur des [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Oui, je me rends compte de la joie qui vous habite à l'idée d'enfin me rencontrer. Je vous invite à faire la paix avec nous, il y a tant que nous pouvons vous apprendre.</French>
         <German>Lieber [CT_NAME], ich grüße Euch! Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Gouverneur von [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Ja, ich kann sehen, wie glücklich Ihr sind, mich endlich zu treffen. Ich lade Euch ein, Frieden mit uns zu schließen, denn es gibt viel, was wir Euch lehren können.</German>
         <Russian>Я приветствую тебя, [CT_NAME]. Я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], губернатор [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Да, я знаю, что ты взволнован нашей неожиданной встречей. Советую тебе жить с нами в мире, так как мы многому можем тебя научить.</Russian>
     </TEXT>
@@ -1667,7 +1667,7 @@
         <Tag>TXT_KEY_CIV_BLACKFOOT_SHORT_DESC</Tag>
         <English>Blackfoot</English>
         <French>
-            <Text>Blackfoot</Text>
+            <Text>Niitsítapi</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </French>
@@ -1688,7 +1688,7 @@
         <Tag>TXT_KEY_CIV_BLACKFOOT_ADJECTIVE</Tag>
         <English>Blackfoot</English>
         <French>
-            <Text>pied-noir:pied-noir:pieds-noirs:pieds-noirs</Text>
+            <Text>niitsítapi:niitsítapi:niitsítapi:niitsítapi</Text>
             <Gender>Male:Female:Male:Female</Gender>
             <Plural>0:0:1:1</Plural>
         </French>

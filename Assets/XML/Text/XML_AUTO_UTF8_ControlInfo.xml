@@ -849,7 +849,7 @@
         <German>Einheitensymbole ein/aus</German>
         <Italian>Abilita/Disabilita la visualizzazione delle unità nemiche</Italian>
         <Spanish>Activar el visor de unidades enemigas</Spanish>
-        <Russian>Отображение вражеских юнитов</Russian>
+        <Russian>Отображение военных юнитов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_UNIT_ICONS_HELP</Tag>
@@ -858,6 +858,6 @@
         <German>Einheitensymbole ein-/ausblenden</German>
         <Italian>Attiva/Disattiva la visualizzazione della posizione delle unità</Italian>
         <Spanish>Alterna el visor de posicionamiento de unidades</Spanish>
-        <Russian>Переключает отображение позиций юнитов</Russian>
+        <Russian>Показать/скрыть отображение позиций всех военных юнитов</Russian>
     </TEXT>
 </Civ4GameText>

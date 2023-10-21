@@ -290,6 +290,8 @@ public:
 	int AI_getPlotChokeValue(CvPlot* pPlot) const; // Super Forts begin *choke*
 	
 	void AI_nativeYieldGift(CvUnit* pUnit);
+	YieldTypes getBestYieldForTrade(const CvCity& city, const char* pszLog) const;
+	bool isYieldValidForNativeTrade(YieldTypes yield, const CvCity& city) const;
 
 	void AI_nativeTrade(CvUnit* pUnit); // R&R, ray, Natives Trading - START
 	

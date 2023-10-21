@@ -749,7 +749,7 @@ public:
 	void ejectTeachUnits();
 	void ejectMissionary();
 	void ejectTrader();
-	bool canProduceYield(YieldTypes eYield);
+	bool canProduceYield(YieldTypes eYield) const;
 
 	bool educateStudent(int iUnitId, UnitTypes eUnit);
 	bool canTeach(UnitTypes eUnit) const;

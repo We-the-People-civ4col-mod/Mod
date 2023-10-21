@@ -643,7 +643,7 @@
         <Tag>TXT_KEY_UNIT_CARPENTER</Tag>
         <English>Master Carpenter:Master Carpenters</English>
         <French>
-            <Text>Maître menuisier:Maîtres menuisiers</Text>
+            <Text>Maître charpentier:Maîtres charpentiers</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -667,7 +667,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_CARPENTER_PEDIA</Tag>
         <English>The carpenter transforms lumber into practical and pleasing objects.[NEWLINE]While anyone can use a saw or a plane, it takes a skilled craftsman to turn out the many items needed quickly by a growing colony.[NEWLINE]The blacksmith needs a counter to display his wares, the preacher benches for the faithful. Buckets for the wells; seats for the statehouse.[NEWLINE]Only a skilled carpenter can fill every need while ensuring speed and quality.</English>
-        <French>Le menuisier est capable de façonner le bois en divers objets pratiques ou décoratifs. Et même s'il est à portée de tout un chacun de manier une scie ou un rabot, seul un artisan expérimenté peut produire rapidement les nombreux objets requis par une colonie en pleine expansion. Le forgeron a besoin d'un nouveau porte-outils pour exhiber sa marchandise, le pasteur de bancs pour les fidèles. Il faut des seaux pour les puits, des sièges pour l'Assemblée... Seul un Menuisier expérimenté peut combler les besoins de chacun tout en garantissant rapidité et qualité.</French>
+        <French>Le charpentier est capable de façonner le bois en divers objets pratiques ou décoratifs. Et même s'il est à portée de tout un chacun de manier une scie ou un rabot, seul un artisan expérimenté peut produire rapidement les nombreux objets requis par une colonie en pleine expansion. Le forgeron a besoin d'un nouveau porte-outils pour exhiber sa marchandise, le pasteur de bancs pour les fidèles. Il faut des seaux pour les puits, des sièges pour l'Assemblée... Seul un charpentier expérimenté peut combler les besoins de chacun tout en garantissant rapidité et qualité.</French>
         <German>Der Zimmermann ist in der Lage aus Holz eine Vielzahl praktischer und schöner Gegenstände zu erschaffen. Und auch wenn jeder Säge oder Hobel benutzen kann, braucht man schon einen fähigen Handwerker, um schnell die vielen Objekte zu bauen, die eine neue Kolonie benötigt. Der Schmied braucht ein neues Regal, um seine Ware auszustellen, der Prediger Bänke für die Gläubigen. Eimer für die Brunnen, Sitze für das Kapitol; nur ein fähiger Zimmermann kann jeden Bedarf decken und dabei schnell gute Qualität liefern.</German>
         <Italian>Il carpentiere è in grado di realizzare oggetti pratici e piacevoli con il legname. Anche se chiunque è in grado di usare una sega o una pialla, ci vuole un abile artigiano per realizzare rapidamente i vari oggetti necessari a una colonia in crescita. Il fabbro ha bisogno di un nuovo scaffale per mettere in mostra la propria merce, al predicatore servono panche per i fedeli. Secchi per i pozzi; sedie per il municipio. Solo un abile carpentiere può soddisfare ogni richiesta assicurando contemporaneamente rapidità e qualità.</Italian>
         <Spanish>El Carpintero es capaz de convertir la Madera en una gran variedad de objetos prácticos y agradables. Y, aunque todo el mundo es capaz de usar una sierra o un cepillo de carpintero, solo un artesano habilidoso puede producir rápidamente los diversos objetos que necesita una colonia. El Herrero necesita un nuevo estante en el que mostrar sus mercancías; y el Predicador, bancos para los fieles. Hay que hacer cubos para los pozos y sillas para el Ayuntamiento. Únicamente un Carpintero habilidoso puede satisfacer todas las necesidades con rapidez y calidad.</Spanish>
@@ -675,7 +675,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_CARPENTER_STRATEGY</Tag>
         <English>[COLOR_UNIT_TEXT]Master carpenters[COLOR_REVERT] can construct buildings and ships faster than any other colonist.[NEWLINE]Assigning them to the [LINK=PROFESSION_CARPENTER]carpenter[\LINK] profession in your settlement will get all your construction jobs completed in half the usual time, because they generate twice as much [LINK=YIELD_HAMMERS]production[\LINK] as other colonists, as long as enough [LINK=YIELD_LUMBER]lumber[\LINK] is available.[PARAGRAPH:1]Master carpenters can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also [LINK=CONCEPT_TRAINING]apprentice[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
-        <French>Les [COLOR_UNIT_TEXT]Maîtres menuisiers[COLOR_REVERT] peuvent construire des bâtiments et des bateaux bien plus vite que n'importe quel autre colon. Si vous les assignez à la profession de menuisiers, ils bâtiront vos projets deux fois plus rapidement qu'un colon ordinaire.</French>
+        <French>Les [COLOR_UNIT_TEXT]Maîtres charpentiers[COLOR_REVERT] peuvent construire des bâtiments et des bateaux bien plus vite que n'importe quel autre colon. Si vous les assignez à la profession de charpentiers, ils bâtiront vos projets deux fois plus rapidement qu'un colon ordinaire.</French>
         <German>[COLOR_UNIT_TEXT]Zimmermeister[COLOR_REVERT] können Gebäude und Schiffe rascher bauen als jeder andere Bürger. Weist man ihnen den Beruf des Zimmermanns zu, produzieren sie für alle Bauprojekte doppelt so viele Hämmer wie Freie Kolonisten.</German>
         <Italian>I [COLOR_UNIT_TEXT]mastri carpentieri[COLOR_REVERT] possono costruire edifici e navi più rapidamente di qualsiasi altro colono. Assegnarne uno alla professione di carpentiere nel tuo insediamento farà in modo che tutti i lavori di costruzione vengano finiti nella metà del tempo.</Italian>
         <Spanish>Los [COLOR_UNIT_TEXT]Maestros carpinteros[COLOR_REVERT] pueden construir barcos y edificios más rápido que cualquier otro Colono. Asignarlos a la profesión de Carpintero en vuestro asentamiento hará que tengáis terminados todos los trabajos de construcción en la mitad de tiempo.</Spanish>
@@ -1431,6 +1431,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
+        <French>Boucanier:Boucaniers</French>
         <German>
             <Text>Bukanier:Bukaniere</Text>
             <Gender>Male</Gender>
@@ -1455,6 +1456,11 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
+        <French>
+            <Text>Chasseur d'esclaves:Chasseurs d'esclaves</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
         <German>
             <Text>Sklavenjäger:Sklavenjäger</Text>
             <Gender>Male</Gender>
@@ -1479,6 +1485,11 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
+        <French>
+            <Text>Contre-maître des esclaves:Contre-maîtres des esclaves</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
         <German>
             <Text>Sklavenaufseher:Sklavenaufseher</Text>
             <Gender>Male</Gender>
@@ -1934,7 +1945,7 @@
         <Tag>TXT_KEY_UNIT_EMIGRANT</Tag>
         <English>Political Refugee:Political Refugees</English>
         <French>
-            <Text>Political Refugee:Political Refugees</Text>
+            <Text>Exilé politique:Exilés politiques</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -2510,6 +2521,11 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROYAL_TROOP_GALLEON</Tag>
         <English>Royal Troop Galleon:Royal Troop Galleons</English>
+        <French>
+            <Text>Galion de transport royal:Galions de transport royaux</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
         <German>
             <Text>Königliche Truppengaleone:Königliche Truppengaleonen</Text>
             <Gender>Female</Gender>
@@ -4349,6 +4365,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_EXPERT_SETTLER</Tag>
         <English>Prepared Settler:Prepared Settlers</English>
+        <French>Fondateur préparé:Fondateurs Préparés</French>
         <German>
             <Text>Vorbereiteter Siedler:Vorbereitete Siedler</Text>
             <Gender>Male</Gender>
@@ -5248,7 +5265,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Tirailleur royal:Tirailleurs royaux</Text>
+            <Text>Soldat d'infanterie royale:Soldats d'infanterie royale</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -5757,7 +5774,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_SLOOP_STRATEGY</Tag>
         <English>[COLOR_UNIT_TEXT]Sloops[COLOR_REVERT] are the fastest naval units in the game and, because of that, they are particularly suitable for exploring the seas of the New World and searching out [LINK=IMPROVEMENT_GOODY_HUT3]shipwrecks[\LINK].[NEWLINE]They have only one cargo slot which makes them practically useless as trading vessels, but they can transport [LINK=CONCEPT_UNITS]military units[\LINK] very swiftly to where they are needed.[NEWLINE]Their limited draft allows them to sail up [LINK=CONCEPT_LARGE_RIVERS]Large Rivers[\LINK] mostly unopposed by other ship classes. [NEWLINE][COLOR_HIGHLIGHT_TEXT]Sloops[COLOR_REVERT] are cheap in [LINK=CONCEPT_EUROPE]Europe[\LINK] and can be built in colonies with a [LINK=BUILDING_DRYDOCK]drydock[\LINK] or one of its upgrades.[NEWLINE]Like most ships they need [LINK=YIELD_CANNONS]cannons[\LINK], [LINK=YIELD_ROPE]ropes[\LINK], [LINK=YIELD_SAILCLOTH]sailcloth[\LINK] and [LINK=YIELD_TOOLS]tools[\LINK].[PARAGRAPH:2]For a comparison of all ships that are available, see [LINK=CONCEPT_SHIPS]Ships[\LINK].</English>
-        <French>Les [COLOR_UNIT_TEXT]Sloups[COLOR_REVERT] sont les unités navales les plus rapides du jeu, et à cause de ça, sont adaptées à l'exploration des mers du Nouveau Monde et à fouiller les [LINK=IMPROVEMENT_GOODY_HUT3]épaves[\LINK].[NEWLINE]Ils n'ont qu'un emplacement de cale, ce qui les rend quasi inutiles comme navire marchand, mais ils peuvent transporter des [LINK=CONCEPT_UNITS]troupes[\LINK] là où elles sont nécessaires.[NEWLINE] Leur faible tirant d'eau leur permet de remonter [LINK=CONCEPT_LARGE_RIVERS]les grandes rivières[\LINK] sans rencontrer d'opposition d'autres classe de navires.
+        <French>Les [COLOR_UNIT_TEXT]Sloups[COLOR_REVERT] sont les unités navales les plus rapides du jeu, et grace à  ça, sont adaptées à l'exploration des mers du Nouveau Monde et à fouiller les [LINK=IMPROVEMENT_GOODY_HUT3]épaves[\LINK].[NEWLINE]Ils n'ont qu'un emplacement de cale, ce qui les rend quasi inutiles comme navire marchand, mais ils peuvent transporter des [LINK=CONCEPT_UNITS]troupes[\LINK] là où elles sont nécessaires.[NEWLINE] Leur faible tirant d'eau leur permet de remonter [LINK=CONCEPT_LARGE_RIVERS]les grandes rivières[\LINK] sans rencontrer d'opposition d'autres classes de navires.
             <!-- TODO -->.</French>
         <German>Obwohl eine [COLOR_UNIT_TEXT]Schaluppe[COLOR_REVERT] kein besonders starkes Kriegsschiff ist, eignet es sich hervorragend zur Aufklärung und auch dazu angeschlagenen Schiffen den Rest zu geben.</German>
     </TEXT>
@@ -5768,6 +5785,11 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
+        <French>
+            <Text>Goélette:Goélettes</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
         <German>
             <Text>Schooner:Schooner</Text>
             <Gender>Male</Gender>
@@ -6645,7 +6667,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Veteran Infantry Soldier:Veteran Infantry Soldiers</Text>
+            <Text>Soldat d'infanterie vétéran: Soldats d'infantierie vétérans</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -7346,7 +7368,7 @@
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Expert Native Trader:Expert Native Traders</Text>
+            <Text>Expert marchand chez les indigènes:Experts marchands chez les indigènes</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -7369,15 +7391,40 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_EXPERT_TRADER_STRATEGY</Tag>
-        <English>[LINK=PROFESSION_NATIVE_TRADER]Native traders[\LINK] are special [LINK=CONCEPT_UNITS]units[\LINK] that can establish [COLOR_HIGHLIGHT_TEXT]trading posts[COLOR_REVERT] in [LINK=CONCEPT_NATIVES]Native[\LINK] settlements.[NEWLINE]Over time trading posts will generate money and create [LINK=UNIT_TREASURE]treasures[\LINK] that can travel back to the colonies.[PARAGRAPH:1]Doing this with an [LINK=UNIT_EXPERT_TRADER]expert trader[\LINK] speeds up the rate at which new [LINK=UNIT_TREASURE]treasures[\LINK] are accumulated.</English>
+        <English>[LINK=PROFESSION_NATIVE_TRADER]Native traders[\LINK] are special [LINK=CONCEPT_UNITS]units[\LINK] that can establish [COLOR_HIGHLIGHT_TEXT]trading posts[COLOR_REVERT] in [LINK=CONCEPT_NATIVES]Native[\LINK] settlements.[NEWLINE]Over time trading posts will generate money and create [LINK=UNIT_TREASURE]treasures[\LINK] that can travel back to the colonies.[PARAGRAPH:1]Doing this with an [LINK=UNIT_EXPERT_TRADER]expert trader[\LINK] speeds up the rate at which new [LINK=UNIT_TREASURE]treasures[\LINK] are accumulated. [PARAGRAPH:1]Doing this with an [LINK=UNIT_SEASONED_TRADER]courageous trader[\LINK] speeds up additionally the rate at which new [LINK=UNIT_TREASURE]treasures[\LINK] are accumulated. The courageous native trader can also move forward faster. However, it cannot be acquired as often as you like, but only through special events in the game.</English>
         <French>Les [LINK=PROFESSION_NATIVE_TRADER]commerçants indigènes[\LINK] sont des [LINK=CONCEPT_UNITS]unités[\LINK] spéciales qui peuvent établir des [COLOR_HIGHLIGHT_TEXT]postes de commerce[COLOR_REVERT] dans les colonies [LINK=CONCEPT_NATIVES]indigènes[\LINK].[NEWLINE]Au fil du temps, les postes de traite généreront de l'argent et créeront des [LINK=UNIT_TREASURE]trésors[\LINK] qui peuvent être ramenés dans les colonies.[PARAGRAPH:1]Faire cela avec un [LINK=UNIT_EXPERT_TRADER]commerçant expert[\LINK] accélère la vitesse à laquelle de nouveaux [LINK=UNIT_TREASURE]trésors[\LINK] sont créés.</French>
-        <German>[LINK=PROFESSION_NATIVE_TRADER]Ureinwohnerhändler[\LINK] sind spezielle [LINK=CONCEPT_UNITS]Einheiten[\LINK], die [COLOR_HIGHLIGHT_TEXT]Handelsposten[COLOR_REVERT] in [LINK=CONCEPT_NATIVES]Ureinwohnerdörfern[\LINK] errichten können. Von Zeit zu Zeit erzeugen Handelsposten einen [LINK=UNIT_TREASURE]Schatz[\LINK], mit dem das in der Zwischenzeit verdiente Gold zurück in die Kolonien geschickt wird.[PARAGRAPH:1]Nutzt man einen [LINK=UNIT_EXPERT_TRADER]Erfahrenen Ureinwohnerhändler[\LINK], werden deutlich häufiger [LINK=UNIT_TREASURE]Schätze[\LINK] erzeugt.</German>
+        <German>[LINK=PROFESSION_NATIVE_TRADER]Ureinwohnerhändler[\LINK] sind spezielle [LINK=CONCEPT_UNITS]Einheiten[\LINK], die [COLOR_HIGHLIGHT_TEXT]Handelsposten[COLOR_REVERT] in [LINK=CONCEPT_NATIVES]Ureinwohnerdörfern[\LINK] errichten können. Von Zeit zu Zeit erzeugen Handelsposten einen [LINK=UNIT_TREASURE]Schatz[\LINK], mit dem das in der Zwischenzeit verdiente Gold zurück in die Kolonien geschickt wird.[PARAGRAPH:1]Nutzt man einen [LINK=UNIT_EXPERT_TRADER]Erfahrenen Ureinwohnerhändler[\LINK], werden deutlich häufiger [LINK=UNIT_TREASURE]Schätze[\LINK] erzeugt. [PARAGRAPH:1]Nutzt man einen [LINK=UNIT_SEASONED_TRADER]Couragierten Ureinwohnerhändler[\LINK], werden noch häufiger [LINK=UNIT_TREASURE]Schätze[\LINK] erzeugt. Der Couragierte Ureinwohnerhändler kann sich außerdem schneller vorwärtsbewegen. Er kann aber nicht beliebig oft erworben werden, sondern nur durch besondere Ereignisse im Spiel.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_EXPERT_TRADER_PEDIA</Tag>
         <English>Fur trading was one of the main economic activities in Northern America from the late 16th century to the mid-19th century.[NEWLINE]At the time, demand for fur was surging in Europe because it was used to make cloth and top hats.[NEWLINE]Data collected from England in the 18th century highlights that the years from 1746 to 1763 saw an increase of 12 shillings per pelt.[NEWLINE]It has been calculated that over 20 million beaver hats were exported from England alone from 1700 to 1770.[NEWLINE]Natives and Europeans cooperated to create a comparative advantage in the fur trade.[NEWLINE]Routes formed an early communications network.[NEWLINE]The opportunity cost of hunting beavers in Europe was extremely high: by the seventeenth and eighteenth centuries, the Eurasian beaver was near extinction in England and France.[NEWLINE]Across the pond traders and trappers thought wildlife in the New World was essentially limitless.[NEWLINE]Natives valued the trade goods received, particularly knives, axes, and guns.[NEWLINE]The fur trade provided a stable source of income for many Native nations until the mid-19th century, when changing fashion trends in Europe and a decline in the beaver population in North America brought about a collapse in demand for fur.</English>
         <French>La traite des fourrures a été l'une des principales activités économiques en Amérique du Nord de la fin du 16e siècle au milieu du 19e siècle. À l'époque, la demande de fourrure était en forte hausse en Europe, car elle servait à fabriquer des tissus et des chapeaux fantaisie. Les données recueillies en Angleterre au 18e siècle montrent que les années 1746 à 1763 ont vu une augmentation de 12 shillings par peau. On a calculé que plus de 20 millions de chapeaux de castor ont été exportés de la seule Angleterre entre 1700 et 1770. Les Amérindiens et les Européens se sont associés pour créer un avantage comparatif dans le commerce de la fourrure. Les routes formaient un réseau de communication précoce. Le coût d'opportunité de la chasse au castor en Europe était extrêmement élevé : aux XVIIe et XVIIIe siècles, le castor d'Eurasie était en voie d'extinction en Angleterre et en France. D'un autre côté, les commerçants et les trappeurs pensaient que la faune du Nouveau Monde était essentiellement illimitée. Les Amérindiens appréciaient les biens d'échange reçus, notamment les couteaux, les haches et les fusils. Le commerce de la fourrure a constitué une source de revenus stable pour de nombreux Amérindiens jusqu'au milieu du XIXe siècle, lorsque l'évolution des tendances de la mode en Europe et le déclin de la population de castors en Amérique du Nord ont entraîné un effondrement de la demande de fourrure.</French>
         <German>Der Pelzhandel war vom späten 16. Jahrhundert bis zur Mitte des 19. Jahrhunderts eine der wichtigsten wirtschaftlichen Aktivitäten in Nordamerika. Zu dieser Zeit stieg die Nachfrage nach Pelzen in Europa stark an, da sie zur Herstellung von Stoffen und schicken Hüten verwendet wurden. Aus Daten, die im 18. Jahrhundert in England gesammelt wurden, geht hervor, dass in den Jahren von 1746 bis 1763 ein Anstieg von 12 Schilling pro Pelz zu verzeichnen war. Es wurde berechnet, dass allein von 1700 bis 1770 über 20 Millionen Biberhüte aus England exportiert wurden. Amerikanische Ureinwohner und Europäer schufen gemeinsam einen komparativen Vorteil im Pelzhandel. Die Routen bildeten ein frühes Kommunikationsnetz. Die Opportunitätskosten der Biberjagd in Europa waren extrem hoch: Im siebzehnten und achtzehnten Jahrhundert war der eurasische Biber in England und Frankreich fast ausgerottet. Auf der anderen Seite hielten Händler und Fallensteller die Wildtiere in der Neuen Welt für nahezu unbegrenzt. Die amerikanischen Ureinwohner schätzten die erhaltenen Handelsgüter, insbesondere Messer, Äxte und Gewehre. Der Pelzhandel stellte für viele amerikanische Ureinwohner eine stabile Einkommensquelle dar, bis Mitte des 19. Jahrhunderts, als veränderte Modetrends in Europa und ein Rückgang der Biberpopulation in Nordamerika zu einem Einbruch der Nachfrage nach Pelzen führten.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_SEASONED_TRADER</Tag>
+        <English>
+            <Text>Courageous Native Trader:Courageous Native Traders</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Marchand chez les indigènes courageux:Marchands chez les indigènes courageux </Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Couragierter Ureinwohnerhändler:Couragierter Ureinwohnerhändler</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Russian>Отважный торговец с индейцами:Отважные торговцы с индейцами</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_SEASONED_TRADER_STRATEGY</Tag>
+        <English>[LINK=PROFESSION_NATIVE_TRADER]Native traders[\LINK] are special [LINK=CONCEPT_UNITS]units[\LINK] that can establish [COLOR_HIGHLIGHT_TEXT]trading posts[COLOR_REVERT] in [LINK=CONCEPT_NATIVES]Native[\LINK] settlements.[NEWLINE]Over time trading posts will generate money and create [LINK=UNIT_TREASURE]treasures[\LINK] that can travel back to the colonies.[PARAGRAPH:1]Doing this with an [LINK=UNIT_EXPERT_TRADER]expert trader[\LINK] speeds up the rate at which new [LINK=UNIT_TREASURE]treasures[\LINK] are accumulated. [PARAGRAPH:1]Doing this with an [LINK=UNIT_SEASONED_TRADER]courageous trader[\LINK] speeds up additionally the rate at which new [LINK=UNIT_TREASURE]treasures[\LINK] are accumulated. The courageous native trader can also move forward faster. However, it cannot be acquired as often as you like, but only through special events in the game.</English>
+        <German>[LINK=PROFESSION_NATIVE_TRADER]Ureinwohnerhändler[\LINK] sind spezielle [LINK=CONCEPT_UNITS]Einheiten[\LINK], die [COLOR_HIGHLIGHT_TEXT]Handelsposten[COLOR_REVERT] in [LINK=CONCEPT_NATIVES]Ureinwohnerdörfern[\LINK] errichten können. Von Zeit zu Zeit erzeugen Handelsposten einen [LINK=UNIT_TREASURE]Schatz[\LINK], mit dem das in der Zwischenzeit verdiente Gold zurück in die Kolonien geschickt wird.[PARAGRAPH:1]Nutzt man einen [LINK=UNIT_EXPERT_TRADER]Erfahrenen Ureinwohnerhändler[\LINK], werden deutlich häufiger [LINK=UNIT_TREASURE]Schätze[\LINK] erzeugt. [PARAGRAPH:1]Nutzt man einen [LINK=UNIT_SEASONED_TRADER]Couragierten Ureinwohnerhändler[\LINK], werden noch häufiger [LINK=UNIT_TREASURE]Schätze[\LINK] erzeugt. Der Couragierte Ureinwohnerhändler kann sich außerdem schneller vorwärtsbewegen. Er kann aber nicht beliebig oft erworben werden, sondern nur durch besondere Ereignisse im Spiel.</German>
+        <Russian>[LINK=PROFESSION_NATIVE_TRADER]Торговцы с индейцами[\LINK] — специальные [LINK=CONCEPT_UNITS]юниты[\LINK], которые могут создавать [COLOR_HIGHLIGHT_TEXT]торговые посты[COLOR_REVERT] в деревнях [LINK=CONCEPT_NATIVES]индейцев[\LINK].[NEWLINE]По прошествии некоторого времени торговые посты будут собирать накопленный доход и создавать [LINK=UNIT_TREASURE]сокровища[\LINK], которые можно будет отправить в колонии.[PARAGRAPH:1]Основывая торговый пост [COLOR_HIGHLIGHT_TEXT]опытным торговцем[COLOR_REVERT], вы ускоряете скорость накопления новых сокровищ.[PARAGRAPH:1]Если торговый пост будет основан [COLOR_HIGHLIGHT_TEXT]отважным торговцем[COLOR_REVERT], это дополнительно увеличит скорость накопления новых [COLOR_HIGHLIGHT_TEXT]сокровищ[COLOR_REVERT]. Также он передвигается быстрее остальных торговцев. Однако таких смельчаков невозможно нанять где-нибудь в Европе, поэтому встреча с ним будет большой удачей.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HOSTILE_NATIVE</Tag>

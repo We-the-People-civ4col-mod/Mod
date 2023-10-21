@@ -165,7 +165,7 @@ class CvPediaUnit:
 		if (gc.getUnitInfo(self.iUnit).NBMOD_GetTeachLevel() < 100): 
 			for iBuilding in range(gc.getNumBuildingInfos()):
 				if (gc.getBuildingInfo(iBuilding).getSpecialBuildingType() == gc.getInfoTypeForString("SPECIALBUILDING_EDUCATION")):
-					if (gc.getBuildingInfo(iBuilding).NBMOD_GetTeachLevel() >= gc.getUnitInfo(self.iUnit).NBMOD_GetTeachLevel()):
+					if (gc.getBuildingInfo(iBuilding).NBMOD_GetTeachLevel() == gc.getUnitInfo(self.iUnit).NBMOD_GetTeachLevel()):
 						szSpecialText += "\n" + localText.getText("TXT_KEY_SCHOOL_BUILDING_NEEDED", (gc.getBuildingInfo(iBuilding).getDescription(), ))
 		# Check learning by doing
 		if gc.getUnitInfo(self.iUnit).LbD_canBecomeExpert():

@@ -1,0 +1,20 @@
+How to add names to the game
+
+Names are now added by adding the TXT KEY and nothing else. There is no setup in the info xml files.
+
+Keys follows the form:
+- Description from civilization info
+- The type of object to name
+- A number to tell them apart (welll index)
+
+Example:
+- TXT_KEY_CIVILIZATION_ENGLAND
+- CITY
+- 0
+
+Joined with _, it becomes TXT_KEY_CIVILIZATION_ENGLAND_CITY_0
+
+No number is allowed to be missing. If a civ has the cities 0, 1, 3, 4 etc, then the DLL will notice 
+that there is no 2 and will assume the list to only contain two names.
+
+No translation needed of names unless the translation differs from English.

@@ -364,7 +364,7 @@ void CyMap::setCityCatchmentRadiusNoMapMaker(int iSetting)
 	}
 }
 
-CyInfoArray* CyMap::getTerrainCount() const
+CyInfoArray* CyMap::getTerrainCount(bool bHills) const
 {
 	EnumMap<TerrainTypes, int> em;
 
@@ -378,15 +378,19 @@ CyInfoArray* CyMap::getTerrainCount() const
 				TerrainTypes eTerrain = pPlot->getTerrainType();
 				if (eTerrain != NO_TERRAIN)
 				{
+					if ((bHills && pPlot->isHills()) || (!bHills && !pPlot->isHills() && !pPlot->isPeak()))
 					em.add(eTerrain, 1);
 				}
-				if (pPlot->isHills())
+				if (bHills)
 				{
-					em.add(TERRAIN_HILL, 1);
-				}
-				if (pPlot->isPeak())
-				{
-					em.add(TERRAIN_PEAK, 1);
+					if (pPlot->isHills())
+					{
+						em.add(TERRAIN_HILL, 1);
+					}
+					if (pPlot->isPeak())
+					{
+						em.add(TERRAIN_PEAK, 1);
+					}
 				}
 			}
 		}

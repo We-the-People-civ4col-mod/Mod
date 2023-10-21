@@ -214,6 +214,7 @@
         <German>[ICON_BULLET]%d1%%[ICON_FOOD] in allen Siedlungen eingelagert</German>
         <Italian>[ICON_BULLET]%d1%%[ICON_FOOD] conservato in tutti gli insediamenti</Italian>
         <Spanish>[ICON_BULLET]%d1%%[ICON_FOOD] almacenados en todos los asentamientos</Spanish>
+        <Russian>[ICON_BULLET]%d1%% [ICON_FOOD] хранится во всех поселениях</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FOOD</Tag>
@@ -222,6 +223,7 @@
         <German>[ICON_BULLET]Nahrungsvorräte in allen Siedlungen: %D1[ICON_FOOD]</German>
         <Italian>[ICON_BULLET]Riserve di cibo in tutti gli insediamenti: %D1[ICON_FOOD]</Italian>
         <Spanish>[ICON_BULLET]Alimentos almacenados en todos los asentamientos: %D1[ICON_FOOD]</Spanish>
+        <Russian>[ICON_BULLET]Еды хранится во всех поселениях: %D1[ICON_FOOD]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CULTURE</Tag>
@@ -414,7 +416,7 @@
         <German>[COLOR_REVERT]Ein [COLOR_UNIT_TEXT]%s2[COLOR_REVERT] wünscht, in die Kolonien auszuwandern. Er hat vernommen, dass ihm in der Neuen Welt kein Landesherr Vorschriften macht, in welche Kirche er zu gehen habe, und wie gut das Leben dort sei.</German>
         <Italian>[COLOR_REVERT]I disordini religiosi in %s1_europe hanno causato un aumento dell'emigrazione. [COLOR_UNIT_TEXT]%s2[COLOR_REVERT] attende in Europa.</Italian>
         <Spanish>[COLOR_REVERT]El malestar religioso en %s1_europe ha aumentado la emigración. [NUM2:Un:Una] [COLOR_UNIT_TEXT]%s2[COLOR_REVERT] aguarda en Europa.</Spanish>
-        <Russian>[COLOR_REVERT][COLOR_UNIT_TEXT]%s2[COLOR_REVERT] хочет эмигрировать в колонии. Он слышал, как хороша жизнь в Новом Свете. Там никто не будет диктовать ему, в какую церковь ходить.</Russian>
+        <Russian>[COLOR_UNIT_TEXT]%s2[COLOR_REVERT] хочет эмигрировать в колонии. Там никто не указывает, в какую церковь ходить и на каком языке возносить молитвы. Свобода для всех!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NEW_IMMIGRANT_AVAILABLE_SHORT</Tag>
@@ -1023,6 +1025,7 @@
         <German>[ICON_BULLET]%D1 Bevölkerung pro Siedlung</German>
         <Italian>[ICON_BULLET]%D1 popolazione per insediamento</Italian>
         <Spanish>[ICON_BULLET]%D1 población por asentamiento</Spanish>
+        <Russian>[ICON_BULLET]%D1 к численности жителей на поселение</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_PROFESSION_EXTRA_STRENGTH</Tag>
@@ -1395,7 +1398,7 @@
         <English>[ICON_BULLET]%D1%% time for improvements to upgrade to next level</English>
         <French>[ICON_BULLET]%D1%% de temps pour que les aménagements s'améliorent.</French>
         <German>[ICON_BULLET]%D1%% Zeit für Wachstum von Geländeverbesserungen</German>
-        <Russian>[ICON_BULLET]%D1%% времени, нужного для получения улучшением следующего уровня</Russian>
+        <Russian>[ICON_BULLET]%D1%% ко времени, нужного для получения улучшением следующего уровня</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_EFFECT_NUM_UNITS_WAITING_ON_DOCK</Tag>
@@ -1448,7 +1451,7 @@
         <German>[ICON_BULLET]%D1%% Lagerkapazität in allen Siedlungen</German>
         <Italian>[ICON_BULLET]%D1%% Storage Capacity in all settlements</Italian>
         <Spanish>[ICON_BULLET]%D1%% Storage Capacity in all settlements</Spanish>
-        <Russian>[ICON_BULLET]%D1%% к емкости хранилищ во всех поселениях</Russian>
+        <Russian>[ICON_BULLET]%D1%% к ёмкости хранилищ во всех поселениях</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_POINT_PRODUCTION</Tag>
@@ -1939,7 +1942,7 @@
         <German>[ICON_BULLET]Marktpreise verändern sich nur halb so schnell und die Steuerobergrenze ist niedriger</German>
         <Italian>[ICON_BULLET]I prezzi di mercato sono meno instabili e l'aliquota fiscale massima è più bassa</Italian>
         <Spanish>[ICON_BULLET]Los precios del mercado son menos sensibles y el tipo impositivo máximo es menor</Spanish>
-        <Russian>[ICON_BULLET]Рыночные цены реже изменяются, а максимальная ставка налога ниже</Russian>
+        <Russian>[ICON_BULLET]Рыночные цены изменяются реже, а максимальная ставка налога ниже</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_MARKET_SENSITIVE_HELP</Tag>
@@ -2089,6 +2092,7 @@
         <German>[ICON_BULLET]%D1_Change%% Siedlungsstärke</German>
         <Italian>[ICON_BULLET]%D1_Change%% alla forza degli insediamenti</Italian>
         <Spanish>[ICON_BULLET]%D1_Change%% a la fuerza del asentamiento</Spanish>
+        <Russian>[ICON_BULLET]%D1_Change%% к силе в поселениях</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CITY_ATTACK_MOD</Tag>
@@ -2142,6 +2146,7 @@
         <German>[ICON_BULLET]Dient als Standort für militärische Zwecke</German>
         <Italian>[ICON_BULLET]Ai fini dei combattimenti, equivalgono a un insediamento</Italian>
         <Spanish>[ICON_BULLET]Hace las veces de asentamiento a efectos de combate.</Spanish>
+        <Russian>[ICON_BULLET]Выполняет роль поселения для боевых задач.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_TREASURE_MODIFIER</Tag>
@@ -2926,6 +2931,7 @@
         <German>Schwerpunkt aufheben</German>
         <Italian>Disattiva accentuazione</Italian>
         <Spanish>Desactivar favorecimiento</Spanish>
+        <Russian>Выключить акценты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CLICK_TO</Tag>
@@ -2934,6 +2940,7 @@
         <German>Per Mausklick :[SPACE]</German>
         <Italian>Clicca per[SPACE]</Italian>
         <Spanish>Hacer clic en[SPACE]</Spanish>
+        <Russian>Нажмите для[SPACE]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DESIRED_YIELD_CHANGE</Tag>
@@ -3156,6 +3163,7 @@
         <German>Klicken, um nach [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] zu gelangen</German>
         <Italian>Clicca per andare a [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]</Italian>
         <Spanish>Hacer clic para ir a [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]</Spanish>
+        <Russian>Нажмите, чтобы перейти к [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_SELECT_A_CIV_LEADER</Tag>
@@ -3298,6 +3306,7 @@
         <German>Schwerpunkt setzen</German>
         <Italian>Accentua</Italian>
         <Spanish>Favorecer</Spanish>
+        <Russian>Акценты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZED</Tag>
@@ -3306,6 +3315,7 @@
         <German>%F1_symbol Schwerpunkt gesetzt</German>
         <Italian>%F1_symbol accentuato</Italian>
         <Spanish>%F1_symbol [NUM1:favorecido:favorecida:favorecidos:favorecidas]</Spanish>
+        <Russian>%F1_symbol активирован</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DEEMPHASIZED</Tag>
@@ -3314,6 +3324,7 @@
         <German>%F1_symbol Schwerpunkt aufgehoben</German>
         <Italian>%F1_symbol de-accentuato</Italian>
         <Spanish>%F1_symbol [NUM1:desfavorecido:desfavorecida:desfavorecidos:desfavorecidas]</Spanish>
+        <Russian>%F1_symbol деактивирован</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIS_NEUTRAL</Tag>
@@ -3322,6 +3333,7 @@
         <German>%F1_symbol Neutral</German>
         <Italian>%F1_symbol neutrale</Italian>
         <Spanish>%F1_symbol [NUM1:neutral:neutral:neutrales:neutrales]</Spanish>
+        <Russian>%F1_symbol нейтрально</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_OFF_CITIZEN_AUTO</Tag>
@@ -3443,6 +3455,7 @@
         <German>Kartenmarkierungen</German>
         <Italian>Linee e segnali</Italian>
         <Spanish>Líneas y señales</Spanish>
+        <Russian>Линии и знаки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_IN_QUEUE</Tag>

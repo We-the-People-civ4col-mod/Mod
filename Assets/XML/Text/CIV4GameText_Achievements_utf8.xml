@@ -1175,7 +1175,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BRIGANTINE_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Can you make out anything, boatswain...[COLOR_REVERT]" the captain asks excitedly, "[COLOR_SELECTED_TEXT]is it a damned privateer or one of our customs cutters? The company would resent it very much if I lost this wonderful new ship to the pirates on our first voyage.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I'm afraid I can't make anything out, sir. The sails are only partly above the horizon,[COLOR_REVERT]" the boatswain replies nervously.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Then up the mast with you, bosun - all the way to the top. You should be able to see the hull from up there.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aye, aye, sir[COLOR_REVERT]", the boatswain answers with a tug on his cap, thinking to himself, 'We'll know in 10 minutes anyway. This ship can't escape. We're too heavily loaded.'[NEWLINE][NEWLINE]</English>
-        <French>«[COLOR_SELECTED_TEXT]Bosco, tu en dis quoi ... [COLOR_REVERT] » demande le capitaine avec impatience «[COLOR_SELECTED_TEXT]C'est un cotre de nos douanes, ou un de ces damnés corsaires ? La compagnie m'en voudrait si je venais à perdre ce bâteau magnifique contre les pirates des ma première course à son bord. [COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Désolé, capitaine, je ne peux rien en dire. On voit juste la pointe des voiles au dessus de l'horizon. [COLOR_REVERT] » répond nerveusement le maitre de manoeuvre.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Grimpe au mat, alors, bosco - tout en haut, au nid-de-pie. Tu devrais voir leur coque de la haut. [COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Affirmatif, capitaine. [COLOR_REVERT] » conclut le maitre de manoeuvre, portant la main au chapeau, et gardant cette pensée pour lui : « On le saura dans dix minutes de toute manière. Nous sommes trop chargés, on ne pourra pas s'échapper. »[NEWLINE][NEWLINE] </French>
+        <French>«[COLOR_SELECTED_TEXT]Bosco, tu en dis quoi ... [COLOR_REVERT] » demande le capitaine avec impatience «[COLOR_SELECTED_TEXT]C'est un cotre de nos douanes, ou un de ces damnés corsaires ? La compagnie m'en voudrait si je venais à perdre ce bâteau magnifique contre les pirates des ma première course à son bord. [COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Désolé, capitaine, je ne peux rien en dire. On voit juste la pointe des voiles au dessus de l'horizon. [COLOR_REVERT] » répond nerveusement le maitre de manoeuvre.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Grimpe au mat, alors, bosco - tout en haut, au nid-de-pie. Tu devrais voir leur coque de la haut. [COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Affirmatif, capitaine. [COLOR_REVERT] » conclut le maitre de manoeuvre, portant la main au chapeau, et gardant cette pensée pour lui : «[COLOR_SELECTED_TEXT]On le saura dans dix minutes de toute manière. Nous sommes trop chargés, on ne pourra pas s'échapper. [COLOR_REVERT] »[NEWLINE][NEWLINE] </French>
         <German>"[COLOR_SELECTED_TEXT]Könnt Ihr irgend etwas erkennen, Bootsmann...[COLOR_REVERT]" fragt der Käpt'n aufgeregt, "[COLOR_SELECTED_TEXT]ist es ein verdammter Kaperer oder einer von unseren Zollkuttern? Die Kompanie würde es mir sehr übelnehmen, wenn ich dieses wunderbare neue Schiff gleich bei unserer ersten Fahrt an die Piraten verliere.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ich kann leider nichts erkennen, Sir. Die Segel sind noch nicht weit genug über der Kimm[COLOR_REVERT]", gibt der Bootsmann nervös zurück.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Dann rauf mit Euch in den Mast, Bootsmann - bis ganz nach oben. Von dort oben solltet Ihr den Rumpf eigentlich bereits erkennen können.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aye, Aye, Sir[COLOR_REVERT]", gibt der Bootsmann pflichtschuldig zurück und denkt sich "[COLOR_SELECTED_TEXT]In 10 Minuten wissen wir sowieso Bescheid. Entkommen können wir mit diesem Kahn eh' nicht mehr, dafür haben wir zu schwer geladen.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Вы можете что-нибудь разобрать, боцман?[COLOR_REVERT]" - взволнованно спрашивает капитан."[COLOR_SELECTED_TEXT]Это чертов капер или один из наших таможенных катеров? В компании будут очень недовольны, если я потеряю этот замечательный новый корабль из-за пиратов во время нашего первого рейса.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Боюсь, я ничего не могу разобрать, сэр. Лишь множество парусов на горизонте.[COLOR_REVERT]" – нервно отвечает боцман.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Тогда поднимитесь на мачту, боцман, до самого верха. Оттуда вы должны будете увидеть очертания корпуса.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Есть, есть, сэр![COLOR_REVERT]" - отвечает боцман, дергая кепку и думая про себя: "На кой чёрт это нужно? Через несколько часов нас всё равно догонят. Наш корабль настолько загружен, что нас сейчас и на шлюпке можно обойти."[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1363,7 +1363,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWELVE_SHIPS_OF_THE_LINE_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]That ship of the line is smaller than ours![COLOR_REVERT]" Frowning, the Royal Navy captain sets down his telescope. "[COLOR_SELECTED_TEXT]But many wolves can be dangerous to a bear.[COLOR_REVERT]"[NEWLINE][NEWLINE]He turns away from the railing and sees his spy, who has been listening to everything in the colony's coastal towns for the past few weeks.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]You said they've already commissioned twelve of these ships of the line? His Majesty won't like to hear that.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
-        <French>« Ce navire de ligne est plus petit que le nôtre ! » Le capitaine de la marine royale baisse son télescope. « Mais une meute de loup peut mettre à mal un ours. »[NEWLINE][NEWLINE]Il se détourne de la rembarde et regarde son espion, qui a mené l'enquête sur toutes les colonies côtières ces dernières semaines.[NEWLINE][NEWLINE]« Vous dites qu'ils ont déjà paré douze navires de ligne de la même classe ? Sa Majesté ne va pas aimer cette nouvelle. »[NEWLINE][NEWLINE]</French>
+        <French>«[COLOR_SELECTED_TEXT]Ce navire de ligne est plus petit que le nôtre ! [COLOR_REVERT] » Le capitaine de la marine royale baisse son télescope. «[COLOR_SELECTED_TEXT]Mais une meute de loup peut mettre à mal un ours. [COLOR_REVERT] »[NEWLINE][NEWLINE]Il se détourne de la rembarde et regarde son espion, qui a mené l'enquête sur toutes les colonies côtières ces dernières semaines.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Vous dites qu'ils ont déjà paré douze navires de ligne de la même classe ? Sa Majesté ne va pas aimer cette nouvelle. [COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Dieses Linienschiff ist kleiner als die unsrigen![COLOR_REVERT]" Stirnrunzelnd setzt der Kapitän der Königlichen Marine sein Fernrohr ab. "[COLOR_SELECTED_TEXT]Aber viele Füchse können einem Bären gefährlich werden.[COLOR_REVERT]"[NEWLINE][NEWLINE]Er dreht sich von der Reling weg und mustert seinen Spion, der in den letzten Wochen in den Küstenstädten der Kolonie die Ohren gespitzt hatte.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ihr sagtet, sie hätten bereits zwölf dieser Linienschiffe vom Stapel laufen lassen? Nun, das wird Seine Majestät nicht gerne vernehmen.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Этот линейный корабль меньше нашего![COLOR_REVERT]" Нахмурившись, капитан Королевского флота опускает подзорную трубу. "[COLOR_SELECTED_TEXT]Но стая волков может быть опасна даже для медведя.[COLOR_REVERT]"[NEWLINE][NEWLINE]Он отворачивается от перил и видит своего шпиона, который последние несколько недель подслушивал всё, что происходит в прибрежных городах колонии.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Так значит, вы утверждаете, что они уже ввели в строй двенадцать линейных кораблей? Его Величеству это не понравится.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1512,6 +1512,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_MORTAR_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Milord, the colonial army is now in possession of a truly terrifying weapon, previously used only in Europe. Our troops now have a mortar at their disposal. A siege gun that can shoot explosive projectiles across walls and crush anything within those walls. Any siege of a fortress will be shortened by this.[COLOR_REVERT]" The general is eager to make this weapon palatable to you.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]It is a persuasive way to make our case,[COLOR_REVERT]" you agree, nodding your head. "[COLOR_SELECTED_TEXT]We'll test it at the next opportunity.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <French>«[COLOR_SELECTED_TEXT] Sire, l'armée coloniale dispose maintenant d'une arme terrifiante, jusque là utilisée uniquement en Europe. Nos troupes disposent maintenant d'un mortier, un canon capable d'envoyer des projectiles explosives à travers les murs et de réduire en charpie ce que ces murs protégeaient. Les forteresses tomberont beaucoup plus vite avec un tel engin. [COLOR_REVERT] »[NEWLINE][NEWLINE]le général s'empresse pour rendre son nouveau jouet accpetable a vos yeux. «[COLOR_SELECTED_TEXT]C'est un argument de poids dans nos discussions futures avec nos voisins. [COLOR_REVERT] » souligezn vous en approuvant. «[COLOR_SELECTED_TEXT]On en usera dès que l'occasion se présente. [COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Milord, unsere Armee ist nun im Besitz einer wahrlich schreckenerregenden Waffe, wie sie bislang nur in Europa verwendet wurde: unseren Truppen steht nun ein Mörser zur Verfügung. Ein Belagerungsgeschütz, dass Sprengstoffgeschosse über Mauern hinweg schießen kann und alles zermalmt, was sich innerhalb dieser Mauern befindet. Die Belagerung einer Festung oder eines Forts wird damit erheblich verkürzt,[COLOR_REVERT]" versucht der General Euch den Einsatz dieser Waffe schmackhaft zu machen.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hm, auf jeden Fall lassen sich damit unsere Argumente wirklich hervorragend vertreten,[COLOR_REVERT]" stimmt Ihr dem General kopfnickend zu. "[COLOR_SELECTED_TEXT]Wir werden das bei nächster Gelegenheit einmal testen.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Милорд, колониальная армия теперь обладает поистине ужасающим оружием, ранее использовавшимся только в Европе. Наши войска теперь имеют в своем распоряжении мортиру. Это осадное орудие, способное стрелять разрывными снарядами по стенам и разрушать все, что находится внутри этих стен. Это ускорит осаду любой крепости. [COLOR_REVERT]" Генерал явно пытается заставить вас поскорее испытать новое оружие.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Это убедительный способ изложить свою позицию,[COLOR_REVERT]" — соглашаетесь вы, кивая. "[COLOR_SELECTED_TEXT]Проверим при первой же возможности.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1532,6 +1533,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CANNON_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]What does he want with that?[COLOR_REVERT]" the foreign secretary asks, aghast when he hears the message. "[COLOR_SELECTED_TEXT]Are we a threat to this man? Is he so afraid of us that he feels he must protect himself in this way?[COLOR_REVERT]"[NEWLINE][NEWLINE]Then he jumps up so abruptly that his powdered wig slips down his forehead and a white cloud rises. "[COLOR_SELECTED_TEXT]Or does he want us to be afraid of him?[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <French>«[COLOR_SELECTED_TEXT]Que nous veut-il donc ? [COLOR_REVERT] » demande le secrétaire aux affaires étrangères, pris de court en entendant le message. «[COLOR_SELECTED_TEXT]Sommes-nous donc une menace pour cette homme ? Est-il si apeuré qu'il éprouve le besoin de se protéger de la sorte? [COLOR_REVERT] » [NEWLINE][NEWLINE]Il sursaute si brusquement que sa perruque poudrée glisse de son front, et un petit nuage blanc s'en élève. «[COLOR_SELECTED_TEXT]Ou veut-il ques nous ayons peur de lui ? [COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Was will er bloß damit?[COLOR_REVERT]", fragt der fremde Gouverneur entgeistert, als er die Botschaft vernommen hat. "[COLOR_SELECTED_TEXT]Sind wir diesem Mann eine Bedrohung? Fürchtet er sich so sehr vor uns, dass er glaubt, sich auf diese Weise schützen zu müssen?[COLOR_REVERT]"[NEWLINE][NEWLINE]Dann springt er so abrupt auf, dass ihm die gepuderte Perücke in die Stirn rutscht und ein weißes Wölkchen aufsteigt. "[COLOR_SELECTED_TEXT]Oder will er, dass wir uns vor ihm fürchten?[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Что он хочет этим сказать?[COLOR_REVERT]" — спрашивает ошеломленный министр иностранных дел, услышав сообщение. "[COLOR_SELECTED_TEXT]Мы представляем угрозу для этого человека? Он так боится нас, что думает таким образом защищать себя?[COLOR_REVERT]"[NEWLINE][NEWLINE]Затем он вскакивает так резко, что его напудренный парик соскальзывает ему на лоб и поднимает белое облако пудры. "[COLOR_SELECTED_TEXT]Или он хочет, чтобы мы боялись его?![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1552,6 +1554,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_CANNON_TEXT</Tag>
         <English>The foreign envoy tries to look confident as he sits in your reception room. But his red ears reveal how excited he is.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Governor,[COLOR_REVERT]" he begins, "[COLOR_SELECTED_TEXT]we have heard that you have procured six batteries of heavy artillery. We wish...[COLOR_REVERT]"[NEWLINE][NEWLINE]You interrupt him with a wave of your hand. "[COLOR_SELECTED_TEXT]You wish for something?[COLOR_REVERT]" you ask ironically. "[COLOR_SELECTED_TEXT]Well, you know about the guns. Therefore you know that now is the time for me to present my own wishes.[COLOR_REVERT]"[NEWLINE][NEWLINE]The envoy begins to sweat...[NEWLINE][NEWLINE]</English>
+        <French>L'envoyé étranger essaie de se donner bonne figure alors qu'il est assis dans votre salle de réception. Mais ses oreilles rougies trahissent son excitation.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Gouverneur [COLOR_REVERT] » Commence-t-il «[COLOR_SELECTED_TEXT]nous avons appris que vous avez six batteries d'artillerie lourde sous votre commendement. Nous souhaiterions ...[COLOR_REVERT] »[NEWLINE][NEWLINE]Vous l'interrompez d'un geste de la main. «[COLOR_SELECTED_TEXT]Vous savez pour les canons. Vous savez donc qu'il est l'heure pour moi de présenter mes propres souhaits.[COLOR_REVERT] »[NEWLINE][NEWLINE]L'envoyé commence à suer à grosses gouttes.[NEWLINE][NEWLINE]</French>
         <German>Der fremde Gesandte versucht, blasiert aus der Wäsche zu schauen, als er in Eurem Empfangszimmer sitzt. Doch seine roten Ohren verraten, wie aufgeregt er ist.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Herr Gouverneur[COLOR_REVERT]", hebt er an, "[COLOR_SELECTED_TEXT]wir haben gehört, dass Ihr Euch sechs Batterien Schwere Artillerie beschafft habt. Wir wünschen ...[COLOR_REVERT]"[NEWLINE][NEWLINE]Mit einer Handbewegung unterbrecht Ihr ihn. "[COLOR_SELECTED_TEXT]Ihr wünscht etwas?[COLOR_REVERT]", fragt Ihr mit mildem Spott, "[COLOR_SELECTED_TEXT]wohlan, Ihr wisst von den Geschützen. Also wisst Ihr auch, dass nun die Zeit gekommen ist, dass ich meine eigenen Wünsche vortrage.[COLOR_REVERT]"[NEWLINE][NEWLINE]Der Gesandte beginnt zu schwitzen...[NEWLINE][NEWLINE]</German>
         <Russian>Иностранный посол пытается выглядеть уверенно, сидя в вашей приемной. Но его красные уши говорят о том, насколько сильно он взволнован.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Губернатор,[COLOR_REVERT] – начинает он – [COLOR_SELECTED_TEXT]мы слышали, что вы приобрели шесть батарей тяжелой артиллерии. Мы желаем...[COLOR_REVERT]"[NEWLINE][NEWLINE]Вы прерываете его взмахом руки. "[COLOR_SELECTED_TEXT]Вы чего-то желаете?[COLOR_REVERT]" — иронично спрашиваете вы. "[COLOR_SELECTED_TEXT]Что же, про пушки вы теперь знаете, хорошо. Исходя из этого я считаю, что настало время мне представить свои собственные пожелания.[COLOR_REVERT]"[NEWLINE][NEWLINE]Посланник начинает потеть...[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1572,6 +1575,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_LIGHT_CANNONS_TEXT</Tag>
         <English>Dawn is approaching. The stranger sneaks from trunk to trunk, then crouches. Here the edge of the forest reaches closest to the rampart.[NEWLINE][NEWLINE]He studies the battlement - and is startled when the first ray of the rising sun reflects back with a silvery glint.[NEWLINE][NEWLINE]Light artillery now watches over the settlement. Alert, the soldiers observe the surrounding countryside.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Darn it![COLOR_REVERT]" murmurs the scout. "[COLOR_SELECTED_TEXT]My people won't find any easy prey here ...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <French>L'aube se lève. L'étranger se faufile de tronc en tronc, puis s'aplatit. À la lisière de la forêt, à proximité des remparts.[NEWLINE][NEWLINE]Il examine le camp - et est surpris quand le premier rayon de soleil lui renvoie une lueur métallique.[NEWLINE][NEWLINE]De l'artillerie légère protège maintenant cette colonie. Les soldats aux aguets surveillent la campagne aux alentours.[NEWLINE][NEWLINE]« Malheur ! » murmure l'eclaireur. « Mon peuple ne trouvera pas une cible facile ici... » [NEWLINE][NEWLINE]</French>
         <German>Der Morgen graut heran. Geduckt huscht der Fremde von Stamm zu Stamm, bis er sich fallen lässt. Der Waldrand reicht hier bis dicht an den Wall.[NEWLINE][NEWLINE]Aufmerksam späht er hinauf zur Zinne - und erschrickt, als der erste Strahl der aufgehenden Sonne mit einem silbrigen Funkeln erwidert wird.[NEWLINE][NEWLINE]Leichte Artillerie wacht über die Siedlung. Aufmerksam spähen die Soldaten ins Umland.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Verflixt![COLOR_REVERT]", murmelt der Kundschafter. "[COLOR_SELECTED_TEXT]Leichte Beute werden meine Leute hier keine finden ...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>Близится рассвет. Незнакомец крадется по лесу, переходя от ствола к стволу, и вскоре приседает. Здесь опушка леса ближе всего подходит к крепостному валу.[NEWLINE][NEWLINE]Он смотрит на зубчатую стену и вздрагивает, когда первый луч восходящего солнца пробегает по жерлу орудия...[NEWLINE][NEWLINE]В поселении установлены орудия лёгкой артиллерии. Солдаты бдительно наблюдают за окружающей местностью.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Чёрт бы их всех побрал![COLOR_REVERT]" — бормочет разведчик. "[COLOR_SELECTED_TEXT]Теперь мои люди не найдут здесь легкой добычи...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -1592,6 +1596,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_NATIVE_MERC_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]... and then they flutter away on their eagle wings, gurruuh![COLOR_REVERT]" Laughing, the young recruit staggers around the campfire, a chicken feather in his hand.[NEWLINE][NEWLINE]Just then a scarred soldier yanks the drunkard down to the ground. "[COLOR_SELECTED_TEXT]Hush, you fool, don't mock, you have no idea![COLOR_REVERT]" he snaps at him.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Back at the Broken Horn, they took out one of the enemy's gun emplacements, five men! Only one shot was fired, their signal that the coast is clear now.[COLOR_REVERT]"[NEWLINE][NEWLINE]The veteran holds the young soldier tightly with one hand, picks up the chicken feather with the other and strokes it slowly across the boy's throat.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Only one shot, otherwise silence start to finish.[COLOR_REVERT]"[NEWLINE][NEWLINE]The recruit looks uncertainly at his comrades; no one returns his weak smile.[NEWLINE][NEWLINE]</English>
+        <French>«[COLOR_SELECTED_TEXT]... Et là ils repartent en volant de leurs ailes d'aigle, frlrlrllll! [COLOR_REVERT] » Riarde, la jeune recrue titube autour du feu de camp, une plume de poulet à la main.[NEWLINE][NEWLINE]Un soldat lacéré tire l'ivrogne d'un coup vers le sol. «[COLOR_SELECTED_TEXT]Ferme-la, jeune crétin, t'as aucune idée, t'en moques pas ![COLOR_REVERT] » rétorque-t-il.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]À la Corne-cassée, ils ont pris une des batteries ennemies, à cinq seulement! Un seul coup a été tiré, leur signal que nous pouvions passer. [COLOR_REVERT] »[NEWLINE][NEWLINE]Le vétéran agrippe le jeune soldat d'une main, de l'autre main il lui caresse doucement la gorge avec la plume de poulet. »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Un seul coup de feu, comme signal, sinon c'était le silence de la mort du début à la fin. [COLOR_REVERT] »[NEWLINE][NEWLINE]La recrue sourit à ses camarades en se forçant un peu. Personne ne lui retourne son sourire.[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]... und dann flattern sie davon mit ihren Adlerschwingen, gurruuh![COLOR_REVERT]" Lachend torkelt der junge Rekrut um das Lagerfeuer, eine Hühnerfeder in der Hand.[NEWLINE][NEWLINE]Da reißt ein vernarbter Soldat den Trunkenbold zu Boden. "[COLOR_SELECTED_TEXT]Still, du Narr, spotte nicht, du hast ja keine Ahnung![COLOR_REVERT]", schnauzt er ihn an.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Damals am Gebrochenen Horn, da haben sie eine Geschützstellung des Feindes ausgeschaltet, zu fünft! Dabei fiel nur ein einziger Schuss, ihr Signal, dass die Luft jetzt rein ist.[COLOR_REVERT]"[NEWLINE][NEWLINE]Der Veteran drückt den Blassgewordenen mit einer Hand fest hinunter, hebt mit der anderen die Hühnerfeder auf und streicht mit ihr langsam über die Kehle des Jungen.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nur ein Schuss, ansonsten Stille.[COLOR_REVERT]" Unsicher schaut der Rekrut zu den Kameraden, niemand erwidert sein schwaches Lächeln.[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]... а затем они улетают на своих орлиных крыльях, фррррр![COLOR_REVERT]" Смеясь и пошатываясь, молодой рекрут идет вокруг костра с куриным пером в руке.[NEWLINE][NEWLINE]И тут солдат в шрамах сбивает пьяницу на землю. "[COLOR_SELECTED_TEXT]Тише, дурак, уймись, ты понятия не имеешь, о чем мелешь![COLOR_REVERT]" — рявкает он на него.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Возвратившись к Брокен-Хорну, они уничтожили одну из вражеских огневых точек, пять человек! Был произведен только один выстрел, сигнал о том, что берег свободен.[COLOR_REVERT]"[NEWLINE][NEWLINE]Одной рукой ветеран крепко держит молодого солдата, другой берет куриное перо и медленно проводит им по горлу парня.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Всего один выстрел, и потом снова тишина.[COLOR_REVERT]"[NEWLINE][NEWLINE]Новобранец неуверенно смотрит на своих товарищей; на его слабую улыбку никто не отвечает.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
@@ -2506,14 +2511,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_DOCTOR</Tag>
         <English>The first Renowned Medic</English>
-        <French>The first Renowned Medic</French>
+        <French>Le premier médecin renommé</French>
         <German>Der erste ausgebildete Ärzte</German>
         <Russian>Первый известный медик</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_DOCTOR_HEAD</Tag>
         <English>First medical care</English>
-        <French>First medical care</French>
+        <French>Premiers soins</French>
         <German>Erste medizinische Versorgung</German>
         <Russian>Первая медицинская помощь</Russian>
     </TEXT>
@@ -2554,7 +2559,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_EXPERT_COCA_COLLECTOR_HEAD</Tag>
         <English>It overwhelms the senses</English>
-        <French>Premier expert planteur de coca</French>
+        <French>Ivresse des sens</French>
         <German>Es benebelt die Sinne</German>
         <Russian>Это притупляет чувства</Russian>
     </TEXT>
@@ -2675,7 +2680,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ONE_HORSE_MARKET_HEAD</Tag>
         <English>Successful breeding</English>
-        <French>Grande Halle aux bestiaux</French>
+        <French>De bien belles bêtes</French>
         <German>Erfolgreiche Zucht</German>
         <Russian>Успешная селекция</Russian>
     </TEXT>
@@ -3089,23 +3094,21 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_HARLOT_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]So sweetheart, you take care of the workers and craftsmen from today on, when they're tired of working and want to have some fun. Just make sure they always have fun.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]You got it, as long as they pay for it![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]They will, otherwise they'll get tossed right out. I can see you're really going to improve the mood in this colony![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
-        <French>«[COLOR_SELECTED_TEXT]Alors, ma jolie, tu t'occupes des travailleurs et des artisans, quand ils sont las de leur travail et veulent s'amuser un peu. Assure-toi qu'ils en jouissent au mieux.[COLOR_REVERT] »
-
-            «[COLOR_SELECTED_TEXT]D'accord, tant qu'ils me paient pour ça.[COLOR_REVERT] »
-
-        «[COLOR_SELECTED_TEXT]Ils vont le faire, sinon on les vire sur-le-champ. Je vois que tu vas bien remonter le moral de cette colonie.[COLOR_REVERT] » </French>
+        <French>«[COLOR_SELECTED_TEXT]Alors, ma jolie, tu t'occupes des travailleurs et des artisans, quand ils sont las de leur travail et veulent s'amuser un peu. Assure-toi qu'ils en jouissent au mieux.[COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]D'accord, tant qu'ils me paient pour ça.[COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Ils vont le faire, sinon on les vire sur-le-champ. Je vois que tu vas bien remonter le moral de cette colonie.[COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Also Schätzchen, Du kümmerst Dich dann ab heute um die Arbeiter und Handwerker, wenn sie müde von der Arbeit hier ihren Spaß haben wollen. Sorg nur immer dafür, dass sie sich amüsieren.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Geht klar. Solange sie dafür bezahlen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das werden sie, ansonsten fliegen sie raus. Ich sag Dir was, damit leistest du einen ganz wesentlichen Beitrag für die Stimmung in der Kolonie.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Так что, дорогая, с сегодняшнего дня ты будешь заботиться о рабочих и ремесленниках, когда они придут сюда после работы и захотят повеселиться. Только всегда делай так, чтобы им было весело.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Понятно, хозяин. Но только пока они будут за это платить.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Будут платить, крошка, иначе вылетят из дверей выстрее ядра из пушки. И вот что я вам скажу, барышни: этим вы вносите очень значительный вклад в развитие нашей колонии.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_FEMALE_ENTERTAINER</Tag>
         <English>The first actress</English>
+        <French>La première actrice</French>
         <German>Die erste Schauspielerin</German>
         <Russian>Первая актриса</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_FEMALE_ENTERTAINER_HEAD</Tag>
         <English>The ballroom becomes a stage</English>
+        <French>La salle de bal est une scène</French>
         <German>Der Ballsaal wird zur Bühne</German>
         <Russian>Бальный зал превращается в сцену</Russian>
     </TEXT>
@@ -3132,24 +3135,21 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_EXPERT_TRADER_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]White man, these are very good guns. But the price is much too high.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]You're right. You can't beat the quality. Well, okay. I'll add some cartridges and this good rum. What do you say? Deal?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Double the cartridges and sell the rum to my enemies. Then we have a deal!"[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
-        <French>«[COLOR_SELECTED_TEXT]Visage pâle, ce sont de très bons fusils. Mais ils sont bien trop chers.[COLOR_REVERT] »
-
-        «[COLOR_SELECTED_TEXT]Vous avez raison, on ne fait pas mieux. Bon, très bien. Je vais ajouter par-dessus le marché des cartouches et ce bon rhum. Qu'en dites-vous ? Marché conclu ? [COLOR_REVERT]»
-
-        «[COLOR_SELECTED_TEXT]Il nous faut le double de cartouches, et vendez plutôt le rhum à nos ennemis. Et là nous ferons affaire. [COLOR_REVERT] »
-        </French>
+        <French>«[COLOR_SELECTED_TEXT]Visage pâle, ce sont de très bons fusils. Mais ils sont bien trop chers.[COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Vous avez raison, on ne fait pas mieux. Bon, très bien. Je vais ajouter par-dessus le marché des cartouches et ce bon rhum. Qu'en dites-vous ? Marché conclu ? [COLOR_REVERT]»[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Il nous faut le double de cartouches, et vendez plutôt le rhum à nos ennemis. Et là nous ferons affaire. [COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Weißer Mann, das sein sehr gute Waffe. Aber Preis viel zu hoch.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Na, ihr bekommt ja auch was dafür. Ich leg noch Patronen drauf und diesen guten Rum hier. Was sagt ihr? Sind wir im Geschäft?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Gib mir Rum, vorher muss ich testen. Zwei Fässer und zehn Gewehre wollen wir.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Бледнолицый, ты предлагаешь хорошее оружие. Но цена слишком высока.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что ж, я могу добавить еще немного пуль и вот этот чудесный ром. Что скажешь?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Налей мне рома, я хочу сначала проверить его. Если ты не лжец, мы возьмём два бочонка и десять винтовок.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_EUROPEAN_LINE_INFANTRY</Tag>
         <English>The first European line infantry</English>
+        <French>La première infantierie de ligne européenne</French>
         <German>Die erste Europäische Linieninfanterie</German>
         <Russian>Первая Европейская линейная пехота</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_EUROPEAN_LINE_INFANTRY_HEAD</Tag>
         <English>Elite troops in the New World</English>
+        <French>Troupes d'élite au Nouveau Monde</French>
         <German>Eilitetruppen in der Neuen Welt</German>
         <Russian>Элитные войска в Новом Свете</Russian>
     </TEXT>
@@ -3162,12 +3162,14 @@
 	<TEXT>
         <Tag>TXT_KEY_ACHIEVE_SECOND_CONQUISTADOR</Tag>
         <English>Some conquistadors</English>
+        <French>Plusieurs conquistadors</French>
         <German>Mehrere Konquistadoren</German>
         <Russian>Несколько конкистадоров</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SECOND_CONQUISTADOR_HEAD</Tag>
         <English>Conquistadors conquer the New World</English>
+        <French>Comme un vol de gerfauts ...</French>
         <German>Konquistadoren erobern die Neue [NEWLINE]Welt</German>
         <Russian>Конкистадоры покоряют Новый Свет</Russian>
     </TEXT>
@@ -3180,12 +3182,14 @@
    <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWENTY_BLADES</Tag>
         <English>Eager weaponsmiths</English>
+        <French>Des forgerons ardus à la tâche</French>
         <German>Eifrige Waffenschmiede</German>
         <Russian>Двадцать клинков</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWENTY_BLADES_HEAD</Tag>
         <English>Blade weapons for the armory</English>
+        <French>Pointes et sabres pour l'armurerie</French>
         <German>Klingenwaffen für das Waffenlager</German>
         <Russian>Клинки для оружейной</Russian>
     </TEXT>
@@ -3198,12 +3202,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SMALL_COASTAL_SHIP</Tag>
         <English>First Small Coastal Ship</English>
+        <French>Premier petit bâteau côtier</French>
         <German>Erster Kleiner Küstensegler</German>
         <Russian>Первый малый прибрежный корабль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SMALL_COASTAL_SHIP_HEAD</Tag>
         <English>Shallow waters can be navigated</English>
+        <French>Cabotage en eaux basses.</French>
         <German>Küstengewässer können befahren werden</German>
         <Russian>Мелководье больше не проблема</Russian>
     </TEXT>
@@ -3216,12 +3222,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BIG_COASTAL_SHIP</Tag>
         <English>First Big Coastal Ship</English>
+        <French>Premier grand bateau côtier</French>
         <German>Erster Großer Küstensegler</German>
         <Russian>Перый большой прибрежный корабль</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BIG_COASTAL_SHIP_HEAD</Tag>
         <English>Coastal shipping grows and grows</English>
+        <French>Le commerce côtier grossit à vue d'oeil</French>
         <German>Die Küstenschifffahrt wächst und wächst</German>
         <Russian>Прибрежное судоходство расширяется</Russian>
     </TEXT>
@@ -3234,12 +3242,14 @@
    <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_TOWN_GUARD</Tag>
         <English>First town guard</English>
+        <French>Premier piquier de garde</French>
         <German>Erste Stadtwache</German>
         <Russian>Первый городской стражник</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_TOWN_GUARD_HEAD</Tag>
         <English>A settler has taken the profession of town guard</English>
+        <French>Un colon est devenu piquier de garde</French>
         <German>Ein Siedler hat den Beruf Stadtwache ergriffen</German>
         <Russian>Поселенец выбрал профессию городского стража</Russian>
     </TEXT>
@@ -3252,12 +3262,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_BARQUE</Tag>
         <English>First slave barque</English>
+        <French>Premier navire négrier</French>
         <German>Erste Sklavenbarke</German>
         <Russian>Первый невольничий барк</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_BARQUE_HEAD</Tag>
         <English>Professional slave trade</English>
+        <French>Commerce d'esclave professionnel</French>
         <German>Professioneller Sklavenhandel</German>
         <Russian>Профессиональная работорговля</Russian>
     </TEXT>
@@ -3270,12 +3282,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_HUNTER</Tag>
         <English>First slave hunter</English>
+        <French>Premier chasseur d'esclave</French>
         <German>Erster Sklavenjäger</German>
         <Russian>Первый охотник на рабов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_HUNTER_HEAD</Tag>
         <English>Tracking runaway slaves</English>
+        <French>À la poursuite des fuyards</French>
         <German>Aufspüren von entlaufenen Sklaven</German>
         <Russian>Выслеживание беглых рабов.</Russian>
     </TEXT>
@@ -3288,12 +3302,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_MASTER</Tag>
         <English>First slave master</English>
+        <French>Premier contre-maître</French>
         <German>Erster Sklavenaufseher</German>
         <Russian>Первый надсмотрщик за рабами</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_MASTER_HEAD</Tag>
         <English>Using the whip</English>
+        <French>Faites claquer le fouet</French>
         <German>Antreiben mit der Peitsche</German>
         <Russian>Помощь хлыста</Russian>
     </TEXT>
@@ -3306,12 +3322,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_AFRICAN_SLAVES</Tag>
         <English>Five african slaves</English>
+        <French>Cinq esclaves africains</French>
         <German>Fünf afrikanische Sklaven</German>
         <Russian>Пять африканских рабов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_AFRICAN_SLAVES_HEAD</Tag>
         <English>Expansion of slavery</English>
+        <French>Expansion de l'esclavage</French>
         <German>Ausweitung der Sklaverei</German>
         <Russian>Распространение рабства</Russian>
     </TEXT>
@@ -3324,12 +3342,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_FREED_SLAVES</Tag>
         <English>Five freed slaves</English>
+        <French>Cinq affranchis</French>
         <German>Fünf befreite Sklaven</German>
         <Russian>Пять освобожденных рабов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_FREED_SLAVES_HEAD</Tag>
         <English>Slaves become free citizens</English>
+        <French>D'esclaves à hommes libres</French>
         <German>Sklaven werden freie Bürger</German>
         <Russian>Рабы становятся свободными гражданами</Russian>
     </TEXT>
@@ -3342,12 +3362,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_HIGH_PROFITABLE_TRADE</Tag>
         <English>30,000 goods traded</English>
+        <French>30.000 biens échangés</French>
         <German>30.000 Waren gehandelt</German>
         <Russian>30'000 товаров продано</Russian>
      </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_HIGH_PROFITABLE_TRADE_HEAD</Tag>
         <English>Thirty thousand goods traded</English>
+        <French>Trente mille biens échangés</French>
         <German>Dreißigtausend Waren gehandelt</German>
         <Russian>Бойкая торговля</Russian>
     </TEXT>
@@ -3360,12 +3382,14 @@
    <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MASS_TRANSPORT</Tag>
         <English>Horse and Carriages</English>
+        <French>Chevaux et coches</French>
         <German>Viele Kutschengespanne</German>
         <Russian>Лошади и транспорт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MASS_TRANSPORT_HEAD</Tag>
         <English>Carriages facilitate the transportation</English>
+        <French>Les coches facilitent le transport</French>
         <German>Kutschen erleichtern den Transport</German>
         <Russian>Развитие перевозок</Russian>
     </TEXT>
@@ -3378,12 +3402,14 @@
    <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SOME_SMALL_VESSELS</Tag>
         <English>Some small vessels</English>
+        <French>Quelques petits vaisseaux</French>
         <German>Einige kleinere Schiffe</German>
         <Russian>Несколько малых судов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SOME_SMALL_VESSELS_HEAD</Tag>
         <English>Small, fast and agile</English>
+        <French>Petits, rapides et agiles</French>
         <German>Klein, schnell und wendig</German>
         <Russian>Маленький, быстрый и маневренный</Russian>
     </TEXT>
@@ -3396,12 +3422,14 @@
    <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_BIG_VESSELS</Tag>
         <English>Several large merchant ships</English>
+        <French>Quelques gros navires marchands</French>
         <German>Mehrere große Handelsschiffe</German>
         <Russian>Несколько крупных торговых судов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_BIG_VESSELS_HEAD</Tag>
         <English>Cargo holds as big as a church</English>
+        <French>Des cales grandes comme une église</French>
         <German>Laderäume so große wie eine Kirche</German>
         <Russian>Грузовые отсеки размером с церковь</Russian>
     </TEXT>
@@ -3414,12 +3442,14 @@
    <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_MEDIUM_VESSELS</Tag>
         <English>Several medium merchant ships</English>
+        <French>Quelques navires commerciaux de taille moyenne</French>
         <German>Mehrere mittelgroße Handelsschiffe</German>
         <Russian>Несколько средних торговых кораблей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_MEDIUM_VESSELS_HEAD</Tag>
         <English>A merchant marine emerges</English>
+        <French>Une marine marchande se forme</French>
         <German>Eine Handelsmarine entsteht</German>
         <Russian>Появление торгового флота</Russian>
     </TEXT>
@@ -3432,12 +3462,14 @@
 	<TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_TREASURES</Tag>
         <English>Five treasures</English>
+        <French>Cinq trésors</French>
         <German>Fünf Schätze</German>
         <Russian>Пять сокровищ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_TREASURES_HEAD</Tag>
         <English>Treasures were hoarded</English>
+        <French>Des trésors sous le coude</French>
         <German>Schätze wurden gehortet</German>
         <Russian>Запасы золота</Russian>
     </TEXT>
@@ -3450,12 +3482,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MULATTOS</Tag>
         <English>Ten mulattos</English>
+        <French>Dix mulâtres</French>
         <German>Zehn Mulatten</German>
         <Russian>Десять мулатов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MULATTOS_HEAD</Tag>
         <English>Descendants of European settlers [NEWLINE]and African slaves</English>
+        <French>L'Europe et l'Afrique se mêlent en eux</French>
         <German>Nachkommen europäischer Siedler [NEWLINE]und afrikanischer Sklaven</German>
         <Russian>Потомки европейских поселенцев и африканских рабов</Russian>
     </TEXT>
@@ -3468,12 +3502,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MESTIZZOS</Tag>
         <English>Ten mestizos</English>
+        <French>Dix métis</French>
         <German>Zehn Mestizen</German>
         <Russian>Десять метисов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MESTIZZOS_HEAD</Tag>
         <English>Descendants of European settlers [NEWLINE]and indigenous population</English>
+        <French>L'Europe et les Amériques se mêlent en eux</French>
         <German>Nachkommen europäischer Siedler [NEWLINE]und indigener Bevölkerung</German>
         <Russian>Потомки европейских поселенцев и тузевцев</Russian>
     </TEXT>
@@ -3486,12 +3522,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_JUDGES</Tag>
         <English>Three judges</English>
+        <French>Trois juges</French>
         <German>Drei Richter</German>
         <Russian>Три судьи</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_JUDGES_HEAD</Tag>
         <English>Establishment of a judicial system</English>
+        <French>Établissement d'un système juridique</French>
         <German>Aufbau eines Justizsystems</German>
         <Russian>Становление системы правосудия</Russian>
     </TEXT>
@@ -3504,12 +3542,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_INFANTRY</Tag>
         <English>Fifteen colonial militias</English>
+        <French>Quinze milices coloniales</French>
         <German>Fünfzehn koloniale Milizen</German>
         <Russian>Пятнадцать колониальных ополченцев</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_INFANTRY_HEAD</Tag>
         <English>Basic infantry training [NEWLINE]instead of daily labor</English>
+        <French>Entrainement militaire [NEWLINE] plutôt que travailler la terre</French>
         <German>Grundausbildung statt [NEWLINE]täglicher Arbeit</German>
         <Russian>Военная подготовка вместо повседневного труда</Russian>
     </TEXT>
@@ -3522,12 +3562,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_LINE_INFANTRY</Tag>
         <English>Fifteen line infantries</English>
+        <French>Quinze infanteries de ligne</French>
         <German>Fünfzehn Einheiten Linieninfanterie</German>
         <Russian>Пятнадцать линейных пехотинцев</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_LINE_INFANTRY_HEAD</Tag>
         <English>Population in concern</English>
+        <French>Inquiétude de la population</French>
         <German>Die Bevölkerung in Sorge</German>
         <Russian>Население в опасности</Russian>
     </TEXT>
@@ -3540,12 +3582,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_CAVALRY</Tag>
         <English>Fifteen mounted units</English>
+        <French>Quinze unités montées</French>
         <German>Fünfzehn berittene Einheiten</German>
         <Russian>Пятнадцать конных отрядов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_CAVALRY_HEAD</Tag>
         <English>Sabers and oats bags</English>
+        <French>Des sabres et des sacs d'avoine</French>
         <German>Säbel und Hafersäcke</German>
         <Russian>Сабли и овсяные мешки</Russian>
     </TEXT>
@@ -3558,12 +3602,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_LIGHT_ARTILLERY</Tag>
         <English>Fifteen light artilleries</English>
+        <French>Quinze artilleries légères</French>
         <German>Fünfzehn leichte Geschütze</German>
         <Russian>Пятнадцать легких артиллерийских орудий</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_LIGHT_ARTILLERY_HEAD</Tag>
         <English>Protected forts</English>
+        <French>Des forts protégés</French>
         <German>Geschützte Forts</German>
         <Russian>Под надёжной защитой</Russian>
     </TEXT>
@@ -3576,12 +3622,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_HEAVY_ARTILLERY</Tag>
         <English>Fifteen heavy artilleries</English>
+        <French>Quinze artilleries lourde</French>
         <German>Fünfzehn schwere Geschütze</German>
         <Russian>Пятнадцать тяжелых артиллерийских орудий</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_COLONIAL_HEAVY_ARTILLERY_HEAD</Tag>
         <English>Iron balls and[NEWLINE] black powder</English>
+        <French>Boulets en fer et poudre noire</French>
         <German>Eisenkugeln und Schwarzpulver</German>
         <Russian>Тяжелые ядра</Russian>
     </TEXT>
@@ -3594,12 +3642,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_RELIGIOUS_ZEALOTS</Tag>
         <English>Several religious people</English>
+        <French>Plusieurs hommes religieux</French>
         <German>Mehrere religiöse Eiferer</German>
         <Russian>Несколько религиозных людей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_RELIGIOUS_ZEALOTS_HEAD</Tag>
         <English>Religious zealots</English>
+        <French>Des fanatiques</French>
         <German>Religiöse Eiferer</German>
         <Russian>Религиозные фанатики</Russian>
     </TEXT>
@@ -3612,12 +3662,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BISHOP</Tag>
         <English>The first bishop</English>
+        <French>Le premier évêque</French>
         <German>Der erste Bischoff</German>
         <Russian>Первый епископ</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BISHOP_HEAD</Tag>
         <English>The chief shepherd for the colony</English>
+        <French>Le maitre-berger des ouailles la colonie</French>
         <German>Der oberste Hirte für die Kolonie</German>
         <Russian>Главный пастырь колонии</Russian>
     </TEXT>
@@ -3630,12 +3682,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_NOBLE</Tag>
         <English>The third noble</English>
+        <French>Le troisième noble</French>
         <German>Der dritte Edelmann</German>
         <Russian>Третий дворянин</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_NOBLE_HEAD</Tag>
         <English>Nobles discover the New World</English>
+        <French>Les nobles découvrent le nouveau monde</French>
         <German>Adlige entdecken die Neue Welt</German>
         <Russian>Дворяне открывают Новый Свет</Russian>
     </TEXT>
@@ -3648,12 +3702,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_SETTLER</Tag>
         <English>The third settler</English>
+        <French>Le troisième fondateur</French>
         <German>Der dritte Siedlungsgründer</German>
         <Russian>Третий поселенец</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_SETTLER_HEAD</Tag>
         <English>Preparations completed</English>
+        <French>Fin prêts</French>
         <German>Vorbereitungen abgeschlossen</German>
         <Russian>Подготовка завершена</Russian>
     </TEXT>
@@ -3666,12 +3722,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_PENAL_COLONY</Tag>
         <English>Twelve criminals</English>
+        <French>Douze criminel</French>
         <German>Zwölf Kleinkriminelle</German>
         <Russian>Двенадцать каторжников</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_PENAL_COLONY_HEAD</Tag>
         <English>Penal colony</English>
+        <French>Colonie pénitenciaire</French>
         <German>Strafkolonie</German>
         <Russian>Исправительная колония</Russian>
     </TEXT>
@@ -3684,12 +3742,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ROASTING</Tag>
         <English>Roasting economy</English>
+        <French>Une économie torréfiée et rôtie</French>
         <German>Experten für das Rösten</German>
         <Russian>Экономика обжаривания</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ROASTING_HEAD</Tag>
         <English>Coffee, cocoa and peanuts</English>
+        <French>Café, cacao et cacahuètes</French>
         <German>Kaffee, Kakao und Erdnüsse</German>
         <Russian>Кофе, какао и арахис</Russian>
     </TEXT>
@@ -3702,12 +3762,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEATIME</Tag>
         <English>Tea- and spice experts</English>
+        <French>Experts en thés et épices </French>
         <German>Tee- und Gewürzexperten</German>
         <Russian>Эксперты по чаю и специям</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEATIME_HEAD</Tag>
         <English>Tea and spices</English>
+        <French>Thé et épices</French>
         <German>Tee und Gewürze</German>
         <Russian>Чай и специи</Russian>
     </TEXT>
@@ -3720,12 +3782,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_LOGWOOD_COLLECTORS</Tag>
         <English>Three logwood collectors</English>
+        <French>Trois coupeurs de bois de sang</French>
         <German>Drei Blauholzsammler</German>
         <Russian>Три сборщика кампеша</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_LOGWOOD_COLLECTORS_HEAD</Tag>
         <English>The jungle's rich colors</English>
+        <French>Les teintes profondes de la jungle</French>
         <German>Des Urwalds satte Farben</German>
         <Russian>Яркие краски джунглей</Russian>
     </TEXT>
@@ -3738,12 +3802,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_FORTS</Tag>
         <English>Five forts</English>
+        <French>Cinq forts</French>
         <German>Fünf Forts</German>
         <Russian>Пять укреплений</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_FORTS_HEAD</Tag>
         <English>Palisades</English>
+        <French>Palissades</French>
         <German>Palisaden</German>
         <Russian>Бревенчатая защита</Russian>
     </TEXT>
@@ -3756,12 +3822,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_LAW_AND_ORDER</Tag>
         <English>Many court buildings</English>
+        <French>Beaucoup de tribunaux</French>
         <German>Viele Gerichtsgebäude</German>
         <Russian>Множество зданий суда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_LAW_AND_ORDER_HEAD</Tag>
         <English>Law and order</English>
+        <French>La loi et l'ordre</French>
         <German>Recht und Ordnung</German>
         <Russian>Закон и порядок</Russian>
     </TEXT>
@@ -3774,12 +3842,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SHIP_EQUIPMENT</Tag>
         <English>Many ship chandler</English>
+        <French>Beaucoup de grééements</French>
         <German>Viele Schiffsausrüster</German>
         <Russian>Множество корабельных мастеров</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SHIP_EQUIPMENT_HEAD</Tag>
         <English>Sails and ropes</English>
+        <French>Voiles et cordes</French>
         <German>Segel und Seile</German>
         <Russian>Паруса и канаты</Russian>
     </TEXT>
@@ -3792,12 +3862,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_CHARCOAL_POWDER</Tag>
         <English>Black powder production</English>
+        <French>Production de poudre noire</French>
         <German>Schwarzpulver-Herstellung</German>
         <Russian>Производство черного пороха</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_CHARCOAL_POWDER_HEAD</Tag>
         <English>Charcoal and black powder</English>
+        <French>Charbon de bois et poudre noire</French>
         <German>Holzkohle und Schwarzpulver</German>
         <Russian>Уголь и черный порох</Russian>
     </TEXT>
@@ -3810,12 +3882,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIREWORKS</Tag>
         <English>Black powder buildings</English>
+        <French>Industrie poudrière</French>
         <German>Schwarzpulver-Industrie</German>
         <Russian>Производство черного пороха</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIREWORKS_HEAD</Tag>
         <English>Smoke over the city</English>
+        <French>Villes enfumées</French>
         <German>Rauch über der Stadt</German>
         <Russian>Дым над городом</Russian>
     </TEXT>
@@ -3828,12 +3902,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SURFACE_MINING</Tag>
         <English>Many surface miners</English>
+        <French>Beaucoup de mines à ciel ouvert</French>
         <German>Viele Tagebauarbeiter</German>
         <Russian>Множество карьерных рабочих</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SURFACE_MINING_HEAD</Tag>
         <English>Stone, clay and peat</English>
+        <French>Pierre, argile et tourbe</French>
         <German>Stein, Lehm und Torf</German>
         <Russian>Камень, глина и торф</Russian>
     </TEXT>
@@ -3846,12 +3922,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MINING</Tag>
         <English>Many miners</English>
+        <French>Beaucoup de mineurs</French>
         <German>Viele Minenarbeiter</German>
         <Russian>Множество шахтёров</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MINING_HEAD</Tag>
         <English>Ore and coal mining</English>
+        <French>Extraction du fer et du charbon</French>
         <German>Erz- und Kohleförderung</German>
         <Russian>Руда и уголь</Russian>
     </TEXT>
@@ -3863,13 +3941,15 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_WEAPONSMITHS</Tag>
-        <English>Many miners</English>
-        <German>Viele Minenarbeiter</German>
+        <English>Many armourer</English>
+        <French>Beaucoup d'armuriers</French>
+        <German>Viele Waffenschmiede</German>
         <Russian>Множество оружейников</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_WEAPONSMITHS_HEAD</Tag>
         <English>Many weapon forging smiths</English>
+        <French>Bien des armuriers à l'oeuvre</French>
         <German>Viele waffenschmiedende Schmiede</German>
         <Russian>Оружия много не бывает</Russian>
     </TEXT>
@@ -3882,12 +3962,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_BREWER</Tag>
         <English>Several distillers</English>
+        <French>Beaucoup de distilleurs</French>
         <German>Mehrere Destillateure</German>
         <Russian>Несколько винокуров</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_BREWER_HEAD</Tag>
         <English>Liquid happiness</English>
+        <French>Du bonheur liquide</French>
         <German>Flüssiges Glück</German>
         <Russian>Жидкое счастье</Russian>
     </TEXT>
@@ -3900,12 +3982,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_FARMER</Tag>
         <English>Several experienced farmer</English>
+        <French>Beaucoup de fermiers expérimentés</French>
         <German>Viele erfahrene Farmer</German>
         <Russian>Несколько опытных фермеров</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_FARMER_HEAD</Tag>
         <English>Food supply</English>
+        <French>Ravitaillement</French>
         <German>Nahrungsmittelversorgung</German>
         <Russian>Поставки продовольствия</Russian>
     </TEXT>
@@ -3924,6 +4008,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MANY_FISHERMEN_HEAD</Tag>
         <English>Freshly-fried flying fish</English>
+        <French>Poissons-pilotes prestement pannés</French>
         <German>Fischers Fritze</German>
         <Russian>Свежеобжаренная летучая рыба</Russian>
     </TEXT>
@@ -3936,12 +4021,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_MILKMAIDS</Tag>
         <English>Three skilled milkmaids</English>
+        <French>Trois laitières</French>
         <German>Drei fleißige Milchmädchen</German>
         <Russian>Три опытных доярки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_MILKMAIDS_HEAD</Tag>
         <English>Fresh milk</English>
+        <French>Lait frais</French>
         <German>Frische Milch</German>
         <Russian>Свежее молоко</Russian>
     </TEXT>
@@ -3954,12 +4041,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_CHEESE_MAKER</Tag>
         <English>Three master cheese maker</English>
+        <French>Trois maîtres-fromagers</French>
         <German>Drei Meister Käsemacher </German>
         <Russian>Три сыровара</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_CHEESE_MAKER_HEAD</Tag>
         <English>Homemade Cheesemaking</English>
+        <French>Fromages moulés maison</French>
         <German>Heimische Käseerzeugung</German>
         <Russian>Домашнее сыроварение</Russian>
     </TEXT>
@@ -3972,12 +4061,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_BREEDER</Tag>
         <English>Several animal breeder</English>
+        <French>Plusieurs éleveurs d'animaux</French>
         <German>Mehrere Tierzüchter</German>
         <Russian>Несколько заводчиков животных</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVERAL_BREEDER_HEAD</Tag>
         <English>Successful breeding</English>
+        <French>Élevages primés</French>
         <German>Erfolgreiche Zucht</German>
         <Russian>Успешное разведение</Russian>
     </TEXT>
@@ -3990,12 +4081,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_HOUSEHOLD_GOODS</Tag>
         <English>Three master craftsmen</English>
+        <French>Trois maitres fabricants</French>
         <German>Drei Meister Handwerker</German>
         <Russian>Три производителя хозтоваров</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_HOUSEHOLD_GOODS_HEAD</Tag>
         <English>Household goods</English>
+        <French>Des biens du quotidien</French>
         <German>Haushaltswaren</German>
         <Russian>Товары для домашнего хозяйства</Russian>
     </TEXT>
@@ -4008,12 +4101,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MASTER_BAKER</Tag>
         <English>Several master baker</English>
+        <French>Plusieurs maitre boulanger</French>
         <German>Mehrere Meister Bäcker</German>
         <Russian>Несколько пекарей</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MASTER_BAKER_HEAD</Tag>
         <English>Homemade bakery products</English>
+        <French>Pain fait maison</French>
         <German>Begehrte Backwaren</German>
         <Russian>Домашняя выпечка</Russian>
     </TEXT>
@@ -4026,12 +4121,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_CASSAVA_PLANTER</Tag>
         <English>Three experienced cassava planter</English>
+        <French>Trosi planteurs de manioc</French>
         <German>Drei erfahrene Maniokpflanzer</German>
         <Russian>Три опытних плантатора маниоки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_CASSAVA_PLANTER_HEAD</Tag>
         <English>More cassava</English>
+        <French>Plus de Manioc</French>
         <German>Mehr Maniok</German>
         <Russian>Больше маниоки</Russian>
     </TEXT>
@@ -4044,12 +4141,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_COCHINEAL_COLLECTOR</Tag>
         <English>Three experienced cochineal collector</English>
+        <French>Trois collecteur de cochenille expérimenté</French>
         <German>Drei erfahrene Cochenille Sammler</German>
         <Russian>Три опытных сборщика кошенили</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_COCHINEAL_COLLECTOR_HEAD</Tag>
         <English>More cochineal</English>
+        <French>Voir rouge sans la colère</French>
         <German>Mehr Cochenille</German>
         <Russian>Больше кошенили</Russian>
     </TEXT>
@@ -4062,12 +4161,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_FRUITS_PICKER</Tag>
         <English>Three experienced fruits picker</English>
+        <French>Trois cueilleurs de fruits experts</French>
         <German>Drei erfahrene Fruchtsammler</German>
         <Russian>Три опытных сборщика фруктов</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_FRUITS_PICKER_HEAD</Tag>
         <English>More fruits</English>
+        <French>Plus de fruits</French>
         <German>Mehr Früchte</German>
         <Russian>Больше фруктов</Russian>
     </TEXT>
@@ -4080,12 +4181,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_INDIGO_PLANTER</Tag>
         <English>Three experienced indigo planter</English>
+        <French>Trois planteurs d'indigo expert</French>
         <German>Drei erfahrene Indigo Pflanzer</German>
         <Russian>Три опытных плантатора индиго</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_INDIGO_PLANTER_HEAD</Tag>
         <English>More indigo blue</English>
+        <French>Bleu indigo</French>
         <German>Mehr blaue Farben</German>
         <Russian>Больше синего индиго</Russian>
     </TEXT>
@@ -4098,12 +4201,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_LINEN_PLANTER</Tag>
         <English>Three experienced linen planter</English>
+        <French>Trois planteurs de lin expert</French>
         <German>Drei erfahrene Flax-Pflanzer</German>
         <Russian>Три опытных плантатора льна</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_LINEN_PLANTER_HEAD</Tag>
         <English>More fibrous linen</English>
+        <French>Du lin pour la fibre</French>
         <German>Mehr Fasern auf dem Feld</German>
         <Russian>Больше волнистого льна</Russian>
     </TEXT>
@@ -4116,12 +4221,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_MAPLE_SIRUP_COLLECTOR</Tag>
         <English>Three experienced maple sirup collector</English>
+        <French>Trois collecteurs de sirop d'érable expert</French>
         <German>Drei erfahrene Ahorn-Sirup-Sammler</German>
         <Russian>Три опытных сборщика кленового сиропа</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_MAPLE_SIRUP_COLLECTOR_HEAD</Tag>
         <English>More liquid gold</English>
+        <French>Plus d'or liquide</French>
         <German>Mehr flüssiges Gold</German>
         <Russian>Больше сладостей</Russian>
     </TEXT>
@@ -4134,12 +4241,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_RAPE_PLANTER</Tag>
         <English>Three experienced rapeseed planter</English>
+        <French>Trois planteurs de colza expert</French>
         <German>Drei erfahrene Raps-Pflanzer</German>
         <Russian>Три опытных плантатора рапса</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_RAPE_PLANTER_HEAD</Tag>
         <English>A greasy business</English>
+        <French>Des affaires bien grasses</French>
         <German>Eine schmierige Angelegenheit</German>
         <Russian>Жирный бизнес</Russian>
     </TEXT>
@@ -4152,12 +4261,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_OLIVES_PLANTER</Tag>
         <English>Three experienced olives planter</English>
+        <French>Trois experts ramasseurs d'olives</French>
         <German>Drei erfahrene Oliven-Pflanzer</German>
         <Russian>Три опытных плантатора оливок</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_OLIVES_PLANTER_HEAD</Tag>
         <English>The land needs new fruit</English>
+        <French>Ce pays a besoin de nouveaux fruits</French>
         <German>Neue Früchte braucht das Land</German>
         <Russian>Земля нуждается в новых плодах</Russian>
     </TEXT>
@@ -4170,12 +4281,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_VANILLA_COLLECTOR</Tag>
         <English>Three experienced vanilla collector</English>
+        <French>Trois experts collecteur de vanille</French>
         <German>Drei erfahrene Vanille-Sammler</German>
         <Russian>Три опытных сборщика ванили</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_VANILLA_COLLECTOR_HEAD</Tag>
         <English>The land needs new sweet spices</English>
+        <French>Ce pays a besoin de parfums sucrés</French>
         <German>Neue süße Gewürze braucht das Land</German>
         <Russian>Земле нужны новые сладкие специи</Russian>
     </TEXT>
@@ -4188,12 +4301,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_HEMP_PLANTER</Tag>
         <English>Three experienced hemp planter</English>
+        <French>Trois planteurs de chanvre experts</French>
         <German>Drei erfahrene Hanf-Pflanzer</German>
         <Russian>Три опытных плантатора конопли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_HEMP_PLANTER_HEAD</Tag>
         <English>Ropes and cordage</English>
+        <French>Cordes et épissures</French>
         <German>Seile und Tauwerk</German>
         <Russian>Веревки и снасти</Russian>
     </TEXT>
@@ -4206,12 +4321,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_KAUTSCHUK_COLLECTOR</Tag>
         <English>Three experienced rubber collector</English>
+        <French>Trois collecteurs expérimentés de caoutchouc</French>
         <German>Drei erfahrene Kautschuk-Sammler</German>
         <Russian>Три опытных сборщика каучука</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_KAUTSCHUK_COLLECTOR_HEAD</Tag>
         <English>Rubber grows on trees</English>
+        <French>Le caoutchouc pousse sur les arbres</French>
         <German>Kautschuk wächst auf Bäumen</German>
         <Russian>Каучуковые деревья</Russian>
     </TEXT>
@@ -4224,12 +4341,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_BUTCHER</Tag>
         <English>Three master butcher</English>
+        <French>Trois maitres bouchers</French>
         <German>Drei Meister Schlachter</German>
         <Russian>Три мастера мясника</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_BUTCHER_HEAD</Tag>
         <English>Ham, pork chops or poultry?</English>
+        <French>Jambon, côtelettes ou volaille ?</French>
         <German>Schinken, Kotlett oder Geflügel?</German>
         <Russian>Ветчина, свиные отбивные или домашняя птица?</Russian>
     </TEXT>
@@ -4242,12 +4361,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_FAILED_TRADER</Tag>
         <English>Three failed trader</English>
+        <French>Trois marchand ruinés</French>
         <German>Drei gescheiterte Händler</German>
         <Russian>Три неудачливых торговца</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_FAILED_TRADER_HEAD</Tag>
         <English>Lost merchandise</English>
+        <French>Marchandise perdue</French>
         <German>Verlorene Handelsgeschäfte</German>
         <Russian>Неудачная сделка</Russian>
     </TEXT>
@@ -4260,12 +4381,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_DYER</Tag>
         <English>Three master dyer</English>
+        <French>Trois maitres teinturier</French>
         <German>Drei Meister Färber</German>
         <Russian>Три мастера красильщика</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_DYER_HEAD</Tag>
         <English>Colorful colonies</English>
+        <French>Des colonies colorées</French>
         <German>Farbenfrohe Kolonien</German>
         <Russian>Разноцветные колонии</Russian>
     </TEXT>
@@ -4278,12 +4401,14 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_CONFECTIONER</Tag>
         <English>Three master confectioner</English>
+        <French>Trois maitres confiseurs</French>
         <German>Drei Meister Konditoren</German>
         <Russian>Три мастера кондитера</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_CONFECTIONER_HEAD</Tag>
         <English>Cakes and confectionery</English>
+        <French>Gâteaux et gâte-dents</French>
         <German>Kuchen und Konfekt</German>
         <Russian>Торты и кондитерские изделия</Russian>
     </TEXT>
@@ -4302,6 +4427,7 @@
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_FURNITURE_MAKER_HEAD</Tag>
         <English>Tables and chairs</English>
+        <French>Tables et chaises</French>
         <German>Tische und Stühle</German>
         <Russian>Столы и стулья</Russian>
     </TEXT>
@@ -4310,5 +4436,26 @@
         <English>Milord, your colonies are growing. Your cities produce more and more goods. You are truly blessed! Today we welcome another creative craftsman. [NEWLINE][NEWLINE]Three experienced master furniture makers are now at work here. Your colony will soon become a popular trading center for colonial furniture. Keep up your successful work! Your citizens look forward to enjoying the good life.[NEWLINE][NEWLINE]</English>
         <German>Mylord, Eure Kolonien wachsen und Eure Städte können immer mehr Waren herstellen. Ihr seid wahrlich gesegnet und könnt einen weiteren ausgebildeten Handwerker in den Kolonien begrüßen. [NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Meister Möbelschreiner für die Kolonien anwerben. Eure Kolonie wird sich bald zu einem wahren Handelszentrum für koloniale Möbel entwickeln. Macht weiter so und Eure braven Bürger werden es Euch danken.[NEWLINE][NEWLINE]</German>
         <Russian>Милорд, наши колонии растут. Города производят все больше и больше товаров. Вы действительно благословенны! Сегодня к нам присоединился еще один мастер.[NEWLINE][NEWLINE]Теперь у нас трудятся три опытных краснодеревщика. Ваша колония скоро станет популярным центром торговли колониальной мебелью. Продолжайте в том же духе! Ваши граждане с нетерпением ждут хорошей мебели.[NEWLINE][NEWLINE]</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_PRISONER_OF_WAR</Tag>
+        <English>Three prisoners of war</English>
+        <French>Trois prisonniers de guerre</French>
+        <German>Drei Kriegsgefangene</German>
+        <Russian>Три военнопленных</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_PRISONER_OF_WAR_HEAD</Tag>
+        <English>3 Prisoners of War</English>
+        <French>3 prisonniers de guerre</French>
+        <German>3 Kriegsgefangene</German>
+        <Russian>Работники или золото</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_THIRD_PRISONER_OF_WAR_TEXT</Tag>
+        <English>Milord, Your prisons are filling up with prisoners of war. Obviously, you were very successful in battle. However, prisoners of war are poor workers. Besides, you need to have them guarded all the time.[NEWLINE][NEWLINE]You should consider sending them back to the enemy at face value - on their word of honor, of course, that they will never fight on this continent and against you again.[NEWLINE][NEWLINE]</English>
+        <French>Sire, vos prisons débordent de prisonniers de guerre. Vous avez recontré le succès en cours des batailles, c'est sûr. Toutefois, ce sont de piètres travailleurs, qu'il faut surveiller tout le temps.[NEWLINE][NEWLINE]Vous devriez peut-être les renvoyer chez eux sans autre forme de procès - sur leur seremnt, bien sûr, de ne jamais reprendre les armes contre vous, ni jamais sur ce continent.</French>
+        <German>Mylord, Eure Gefängnisse füllen sich mit Kriegsgefangenen. Offensichtlich wart Ihr im Kampf sehr erfolgreich. Kriegsgefangene sind aber schlechte Arbeiter. Außerdem müsst Ihr sie ständig bewachen lassen.[NEWLINE][NEWLINE]Ihr solltet Euch überlegen, ob Ihr sie nicht gegen bare Münze dem Feind zurückschickt - natürlich nur auf Ehrenwort, dass sie nie wieder auf diesem Kontinent und gegen Euch kämpfen werden.[NEWLINE][NEWLINE]</German>
+        <Russian>Милорд, наши тюрьмы заполняются военнопленными. Несомненно, мы могли бы использовать их на плантациях. Однако военнопленные — плохие работники. Кроме того, их ннужно постоянно охранять.[NEWLINE][NEWLINE]Вам следует рассмотреть возможность отправки их обратно врагу в обмен на золото. И, конечно, под честное слово, что они никогда больше не будут воевать на этом континенте и против нас.[NEWLINE][NEWLINE]</Russian>
     </TEXT>
 </Civ4GameText>

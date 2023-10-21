@@ -19,6 +19,7 @@
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_GRAVEYARD</Tag>
         <English>Graveyard</English>
+        <French>Cimetière</French>
         <German>
             <Text>Friedhof</Text>
             <Gender>Male</Gender>
@@ -29,6 +30,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_GRAVEYARD</Tag>
         <English>Graveyard</English>
+        <French>Cimetière</French>
         <German>
             <Text>Friedhof</Text>
             <Gender>Male</Gender>
@@ -39,6 +41,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GRAVEYARD</Tag>
         <English>Graveyard</English>
+        <French>Cimetière</French>
         <German>
             <Text>Friedhof</Text>
             <Gender>Male</Gender>
@@ -167,6 +170,7 @@
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_LEATHER_PADDER</Tag>
         <English>Leatherworker</English>
+        <French>Maroquinier</French>
         <German>
             <Text>Lederpolsterei</Text>
             <Gender>Female</Gender>
@@ -176,6 +180,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_HOUSE</Tag>
         <English>Leatherworker's House</English>
+        <French>Maison du maroquinier</French>
         <German>
             <Text>Haus des Lederschneiders</Text>
             <Gender>Neuter</Gender>
@@ -186,6 +191,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_SHOP</Tag>
         <English>Leatherworker's Shop</English>
+        <French>Atelier du maroquinier</French>
         <German>
             <Text>Lederwarenladen</Text>
             <Gender>Male</Gender>
@@ -196,6 +202,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_FACTORY</Tag>
         <English>Leather Coat Factory</English>
+        <French>Usine de maroquinerie</French>
         <German>
             <Text>Lederwarenfabrik</Text>
             <Gender>Female</Gender>
@@ -206,6 +213,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE</Tag>
         <English>Leatherworker's House</English>
+        <French>Maison du maroquinier</French>
         <German>
             <Text>Haus des Lederschneiders</Text>
             <Gender>Neuter</Gender>
@@ -216,6 +224,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP</Tag>
         <English>Leatherworker's Shop</English>
+        <French>Atelier du Maroquinier</French>
         <German>
             <Text>Lederwarenladen</Text>
             <Gender>Male</Gender>
@@ -226,6 +235,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY</Tag>
         <English>Leather Coat Factory</English>
+        <French>Usine de maroquinerie</French>
         <German>
             <Text>Lederwarenfabrik</Text>
             <Gender>Female</Gender>
@@ -720,6 +730,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_SHOP</Tag>
         <English>Powder Makers' Shop</English>
+        <French>Atelier du fabricant de poudre</French>
         <German>
             <Text>Pulverladen</Text>
             <Gender>Male</Gender>
@@ -730,6 +741,7 @@
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_FACTORY</Tag>
         <English>Powder Magazine</English>
+        <French>Usine poudrière</French>
         <German>
             <Text>Pulverfabrik</Text>
             <Gender>Female</Gender>

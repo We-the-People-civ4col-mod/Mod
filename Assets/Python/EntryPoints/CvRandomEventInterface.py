@@ -1700,6 +1700,56 @@ def CheckCarpenter(argsList):
 		return true
 	return false
 
+
+######## Helper Method to count Units in all Cities ###########
+######## This can also be used for PLOT TRIGGER or UNIT TRIGGER ###########
+
+def countUnitsColonies(argsList, iUnitType):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	iUnitsCurrent = 0	
+	(city, iter) = player.firstCity(true)
+	while(city):
+		for iCitizen in range(city.getPopulation()):
+			Unit = city.getPopulationUnitByIndex(iCitizen)
+			if iUnitType == Unit.getUnitType():
+				iUnitsCurrent += 1
+		(city, iter) = player.nextCity(iter, true)
+	return iUnitsCurrent
+
+######## Helper Method to count Units in specific City ###########
+######## This requires a CITY TRIGGER ###########
+def countUnitsInCityForCityTrigger(argsList, iUnitType):
+	ePlayer = argsList[1]
+	player = gc.getPlayer(ePlayer)
+	iCity = argsList[2]
+	city = player.getCity(iCity)
+	
+	iUnitsCurrent = 0	
+	for iCitizen in range(city.getPopulation()):
+		Unit = city.getPopulationUnitByIndex(iCitizen)
+		if iUnitType == Unit.getUnitType():
+			iUnitsCurrent += 1
+
+	return iUnitsCurrent
+
+###### Cheese Maker Event ###### 
+def CheckCheesemakerInCity(argsList):
+	ePlayer = argsList[1]
+	player = gc.getPlayer(ePlayer)
+
+	if not player.isPlayable():
+		return false
+
+	# you could add checks for several Units like this
+	iUnitType = CvUtil.findInfoTypeNum('UNIT_CHEESE_MAKER')
+	iUnitsCurrent = countUnitsInCityForCityTrigger(argsList, iUnitType)
+	if iUnitsCurrent == 0:
+		return false
+
+	return true
+
+
 ######## Bonus Funktionen ###########
 
 def CanApplyBonus(argsList):
@@ -2890,6 +2940,65 @@ def getHelpHorseDeal1(argsList):
 		szHelp = localText.getText("TXT_KEY_EVENT_YIELD_LOOSE", (quantity,  gc.getYieldInfo(iYield).getChar(), city.getNameKey()))
 	return szHelp
 
+######## Seasoned Trader Horse Gift and Event Help ###########
+
+def canTriggerHorseGift(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	if player.isNone() :
+		return false
+	if not player.isPlayable():
+		return false
+	if city.isNone():
+		return false
+	# Read Parameter 1 from the first event and check if enough yield is stored in city
+	eEvent1 = gc.getInfoTypeForString("EVENT_SEASONED_TRADER_MEETING_1")
+	event1 = gc.getEventInfo(eEvent1)
+	iYield = gc.getInfoTypeForString("YIELD_HORSES")
+	quantity = event1.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity*2 :
+		return false
+	return true
+
+def applyHorseGift1(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	iYield = gc.getInfoTypeForString("YIELD_HORSES")
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity :
+		return
+	city.changeYieldStored(iYield, quantity)
+
+def getHelpHorseGift1(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	iYield = gc.getInfoTypeForString("YIELD_HORSES")
+	szHelp = ""
+
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	if event.getGenericParameter(1) <> 0 :
+		szHelp = localText.getText("TXT_KEY_EVENT_YIELD_LOOSE", (quantity,  gc.getYieldInfo(iYield).getChar(), city.getNameKey()))
+	return szHelp
+
+
+def getHelpSeasonedTraderNo(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_SEASONED_TRADER_MEETING_HELP", ())
+	return szHelp
+
+
 ######## Wild Animal ###########
 
 def canApplyWildAnimal1(argsList):
@@ -3166,8 +3275,8 @@ def applyQuestDoneEuropeTradePriceAndAttitude(argsList):
 	
 	# getting the Yield for the Price Change
 	iYield = event.getGenericParameter(2)
-    
-    # changing the Price
+	
+	# changing the Price
 	iPrice = king.getYieldBuyPrice(iYield)
 	king.setYieldBuyPrice(iYield, iPrice+event.getGenericParameter(4), 1)
 
@@ -6075,7 +6184,7 @@ def applyQuestDonePortRoyalTradePriceAndAttitude(argsList):
 	
 	# getting the Yield for the Price Change
 	iYield = event.getGenericParameter(2)
-    
+	
 	# careful, uses Port Royal methods here
 	iPrice = king.getYieldPortRoyalBuyPriceNoModifier(iYield)
 	king.setYieldPortRoyalBuyPrice(iYield, iPrice+event.getGenericParameter(4), 1)
@@ -6471,7 +6580,7 @@ def canTriggerPortRoyalTradeQuest_COCA_LEAVES_DONE(argsList):
 	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
 	
 	return bTrigger
-    
+	
 def canTriggerPortRoyalTradeQuest_WINE_START(argsList):
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
@@ -7972,6 +8081,21 @@ def getHelpCriminalsAttackCity(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_CRIMINALS_REVOLT_HELP", ())
 	return szHelp
 
+######## Officer duel ###########
+
+def getHelpOfficerDuel(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_OFFICER_DUEL_HELP", ())
+	return szHelp
+
+def getHelpOfficerNoDuel(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_OFFICER_NODUEL_HELP", ())
+	return szHelp
+	
+######## Bailiffs search for Architect and attack city ###########
+
+def getHelpBailiffsAttackCity(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_ARCHITECT_BAILIFF_HELP", ())
+	return szHelp
 
 ######## Buccanners attack Silver Mine ###########
 
@@ -7981,6 +8105,12 @@ def getHelpBuccanneersAttackMine(argsList):
 
 def getHelpMilitiaDefend(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_MILITIA_DEFENDS_MINE_HELP", ())
+	return szHelp
+
+######## Officer arrives at fort ###########
+
+def getHelpOfficerAtFort(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_OFFICER_ARRIVAL_AT_FORT_HELP", ())
 	return szHelp
 
 ######## Slave Hunter Offers Service ###########
@@ -8169,3 +8299,4 @@ def canTriggerAtCityPopluationOf20(argsList):
 	if city.getPopulation() < 20:
 		return false
 	return true
+    
