@@ -935,8 +935,7 @@ m_bRiver(false),
 m_bEnemyRoute(false),
 m_bAlwaysHeal(false),
 m_bHillsDoubleMove(false),
-m_bAvailableForDefensiveUnit(false),       // WTP, johanb - cache for defensive unit availabilty
-m_bAvailableForDefensiveUnitCached(false), // WTP, johanb - cache for defensive unit availabilty
+m_bAvailableForDefensiveUnit(true),       // WTP, johanb - cache for defensive unit availabilty - by default everything is allowed
 m_aiTerrainAttackPercent(NULL),
 m_aiTerrainDefensePercent(NULL),
 m_aiFeatureAttackPercent(NULL),
@@ -1156,63 +1155,75 @@ bool CvPromotionInfo::isHillsDoubleMove() const
 {
 	return m_bHillsDoubleMove;
 }
-bool CvPromotionInfo::isAvailableForDefensiveUnit()
-{
-	if (m_bAvailableForDefensiveUnitCached) // Cached result;
-		return m_bAvailableForDefensiveUnit;
 
-	calculateAvailableForDefensiveUnit();
+bool CvPromotionInfo::isAvailableForDefensiveUnit() const
+{
 	return m_bAvailableForDefensiveUnit;
 }
+
+bool CvPromotionInfo::isNotAvailableForDefensiveUnit() const
+{
+	return !m_bAvailableForDefensiveUnit;
+}
+
+bool CvPromotionInfo::postLoadSetup()
+{
+	calculateAvailableForDefensiveUnit();
+	return true;
+}
+
 
 void CvPromotionInfo::calculateAvailableForDefensiveUnit()
 {
 	if (getCityAttackPercent() != 0)
 	{
-		m_bAvailableForDefensiveUnit = false;  m_bAvailableForDefensiveUnitCached = true; return;
+		m_bAvailableForDefensiveUnit = false;   return;
 	}
 	if (getWithdrawalChange() != 0)
 	{
-		m_bAvailableForDefensiveUnit = false;  m_bAvailableForDefensiveUnitCached = true; return;
+		m_bAvailableForDefensiveUnit = false;   return;
 	}
 	if (isBlitz())
 	{
-		m_bAvailableForDefensiveUnit = false;  m_bAvailableForDefensiveUnitCached = true; return;
+		m_bAvailableForDefensiveUnit = false;   return;
 	}
 	if (isAmphib())
 	{
-		m_bAvailableForDefensiveUnit = false;  m_bAvailableForDefensiveUnitCached = true; return;
+		m_bAvailableForDefensiveUnit = false;   return;
 	}
 	if (isRiver())
 	{
-		m_bAvailableForDefensiveUnit = false;  m_bAvailableForDefensiveUnitCached = true; return;
+		m_bAvailableForDefensiveUnit = false;   return;
 	}
 	if (getHillsAttackPercent() != 0)
 	{
-		m_bAvailableForDefensiveUnit = false;  m_bAvailableForDefensiveUnitCached = true; return;
+		m_bAvailableForDefensiveUnit = false;   return;
 	}
-	for (int iTerrain = 0; iTerrain < GC.getNumTerrainInfos(); ++iTerrain)
+
+
+
+	for (TerrainTypes iTerrain = FIRST_TERRAIN; iTerrain < NUM_TERRAIN_TYPES; ++iTerrain)
 	{
 		if (getTerrainAttackPercent(iTerrain) != 0)
 		{
-			m_bAvailableForDefensiveUnit = false;  m_bAvailableForDefensiveUnitCached = true; return;
+			m_bAvailableForDefensiveUnit = false;   return;
 		}
 	}
-	for (int iFeature = 0; iFeature < GC.getNumFeatureInfos(); ++iFeature)
+	for (FeatureTypes iFeature = FIRST_FEATURE; iFeature < NUM_FEATURE_TYPES; ++iFeature)
 	{
 		if (getFeatureAttackPercent(iFeature) != 0)
 		{
-			m_bAvailableForDefensiveUnit = false;  m_bAvailableForDefensiveUnitCached = true; return;
+			m_bAvailableForDefensiveUnit = false;   return;
 		}
 	}
-	for (int iUnitClass = 0; iUnitClass < GC.getNumUnitClassInfos(); ++iUnitClass)
+	for (UnitClassTypes iUnitClass = FIRST_UNITCLASS; iUnitClass < NUM_UNITCLASS_TYPES; ++iUnitClass)
 	{
 		if (getUnitClassAttackModifier(iUnitClass) != 0)
 		{
-			m_bAvailableForDefensiveUnit = false;  m_bAvailableForDefensiveUnitCached = true; return;
+			m_bAvailableForDefensiveUnit = false;   return;
 		}
 	}
-	m_bAvailableForDefensiveUnit = true; m_bAvailableForDefensiveUnitCached = true;
+	m_bAvailableForDefensiveUnit = true; 
 }
 
 const char* CvPromotionInfo::getSound() const

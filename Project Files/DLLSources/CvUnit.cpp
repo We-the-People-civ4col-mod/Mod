@@ -13501,7 +13501,7 @@ bool CvUnit::isPromotionValid(PromotionTypes ePromotion) const
 		return false;
 	}
 
-	if (isOnlyDefensive() && !kPromotion.isAvailableForDefensiveUnit())
+	if (isOnlyDefensive() && kPromotion.isNotAvailableForDefensiveUnit())
 	{
 		return false;
 	}
