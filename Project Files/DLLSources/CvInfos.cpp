@@ -281,6 +281,13 @@ void CvInfoBase::checkStringContents(CvWString& szStr, const wchar* szExtension)
 	}
 }
 
+bool CvInfoBase::postLoadSetup()
+{
+	// returns if all instances will need to be run postLoadSetup
+	// obvoiusly if this is overwritten somewhere, then it must return true to make it work
+	return false;
+}
+
 //
 // XML reading code
 //
@@ -6853,39 +6860,42 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_abLeaders, "Leaders", GC.getNumLeaderHeadInfos(), false);
 	pXML->GetChildXmlValByName(szTextVal, "CivilizationSelectionSound");
 
-	{
-		// setlength of lists of names based on available TXT_KEYs
-		CvWString tag;
-		CvWString text;
-
-		for (;; ++m_iNumAdmiralNames)
-		{
-			tag.Format(L"%s_ADMIRAL_%d", m_szTextKey.GetCString(), m_iNumAdmiralNames);
-			text = gDLL->getText(tag);
-			if (tag == text) break;
-		}
-		for (;; ++m_iNumCityNames)
-		{
-			tag.Format(L"%s_CITY_%d", m_szTextKey.GetCString(), m_iNumCityNames);
-			text = gDLL->getText(tag);
-			if (tag == text) break;
-		}
-		for (;; ++m_iNumGeneralNames)
-		{
-			tag.Format(L"%s_GENERAL_%d", m_szTextKey.GetCString(), m_iNumGeneralNames);
-			text = gDLL->getText(tag);
-			if (tag == text) break;
-		}
-		for (;; ++m_iNumShipNames)
-		{
-			tag.Format(L"%s_SHIP_%d", m_szTextKey.GetCString(), m_iNumShipNames);
-			text = gDLL->getText(tag);
-			if (tag == text) break;
-		}
-	}
-
 	return true;
 }
+
+bool CvCivilizationInfo::postLoadSetup()
+{
+	// setlength of lists of names based on available TXT_KEYs
+	CvWString tag;
+	CvWString text;
+
+	for (;; ++m_iNumAdmiralNames)
+	{
+		tag.Format(L"%s_ADMIRAL_%d", m_szTextKey.GetCString(), m_iNumAdmiralNames);
+		text = gDLL->getText(tag);
+		if (tag == text) break;
+	}
+	for (;; ++m_iNumCityNames)
+	{
+		tag.Format(L"%s_CITY_%d", m_szTextKey.GetCString(), m_iNumCityNames);
+		text = gDLL->getText(tag);
+		if (tag == text) break;
+	}
+	for (;; ++m_iNumGeneralNames)
+	{
+		tag.Format(L"%s_GENERAL_%d", m_szTextKey.GetCString(), m_iNumGeneralNames);
+		text = gDLL->getText(tag);
+		if (tag == text) break;
+	}
+	for (;; ++m_iNumShipNames)
+	{
+		tag.Format(L"%s_SHIP_%d", m_szTextKey.GetCString(), m_iNumShipNames);
+		text = gDLL->getText(tag);
+		if (tag == text) break;
+	}
+	return true;
+}
+
 bool CvCivilizationInfo::readPass2(CvXMLLoadUtility* pXML)
 {
 	CvString szTextVal;

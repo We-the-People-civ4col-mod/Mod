@@ -65,6 +65,7 @@ public:
 	virtual bool readPass3() { FAssertMsg(false, "Override this"); return false; }
 
 	void cleanStrings();
+	bool postLoadSetup();
 
 protected:
 	void checkStringContents(CvWString& szStr, const wchar* szExtension);
@@ -1725,6 +1726,8 @@ public:
 	bool readPass2(CvXMLLoadUtility* pXML);
 	void read(FDataStreamBase* stream);
 	void write(FDataStreamBase* stream);
+
+	bool postLoadSetup();
 
 	// EXE/python access functions
 	int PY_getDefaultProfession() const;
