@@ -1172,7 +1172,6 @@ bool CvPromotionInfo::postLoadSetup()
 	return true;
 }
 
-
 void CvPromotionInfo::calculateAvailableForDefensiveUnit()
 {
 	if (getCityAttackPercent() != 0)
@@ -1200,25 +1199,23 @@ void CvPromotionInfo::calculateAvailableForDefensiveUnit()
 		m_bAvailableForDefensiveUnit = false;   return;
 	}
 
-
-
-	for (TerrainTypes iTerrain = FIRST_TERRAIN; iTerrain < NUM_TERRAIN_TYPES; ++iTerrain)
+	for (TerrainTypes eTerrain = FIRST_TERRAIN; eTerrain < NUM_TERRAIN_TYPES; ++eTerrain)
 	{
-		if (getTerrainAttackPercent(iTerrain) != 0)
+		if (getTerrainAttackPercent(eTerrain) != 0)
 		{
 			m_bAvailableForDefensiveUnit = false;   return;
 		}
 	}
-	for (FeatureTypes iFeature = FIRST_FEATURE; iFeature < NUM_FEATURE_TYPES; ++iFeature)
+	for (FeatureTypes eFeature = FIRST_FEATURE; eFeature < NUM_FEATURE_TYPES; ++eFeature)
 	{
-		if (getFeatureAttackPercent(iFeature) != 0)
+		if (getFeatureAttackPercent(eFeature) != 0)
 		{
 			m_bAvailableForDefensiveUnit = false;   return;
 		}
 	}
-	for (UnitClassTypes iUnitClass = FIRST_UNITCLASS; iUnitClass < NUM_UNITCLASS_TYPES; ++iUnitClass)
+	for (UnitClassTypes eUnitClass = FIRST_UNITCLASS; eUnitClass < NUM_UNITCLASS_TYPES; ++eUnitClass)
 	{
-		if (getUnitClassAttackModifier(iUnitClass) != 0)
+		if (getUnitClassAttackModifier(eUnitClass) != 0)
 		{
 			m_bAvailableForDefensiveUnit = false;   return;
 		}
