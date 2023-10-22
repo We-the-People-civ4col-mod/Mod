@@ -1166,12 +1166,6 @@ bool CvPromotionInfo::isNotAvailableForDefensiveUnit() const
 	return !m_bAvailableForDefensiveUnit;
 }
 
-bool CvPromotionInfo::postLoadSetup()
-{
-	calculateAvailableForDefensiveUnit();
-	return true;
-}
-
 void CvPromotionInfo::calculateAvailableForDefensiveUnit()
 {
 	if (getCityAttackPercent() != 0)
@@ -1498,6 +1492,13 @@ bool CvPromotionInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_abUnitCombat, "UnitCombats", GC.getNumUnitCombatInfos(), false);
 	return true;
 }
+
+bool CvPromotionInfo::postLoadSetup()
+{
+	calculateAvailableForDefensiveUnit();
+	return true;
+}
+
 bool CvPromotionInfo::readPass2(CvXMLLoadUtility* pXML)
 {
 	CvString szTextVal;
@@ -1509,6 +1510,8 @@ bool CvPromotionInfo::readPass2(CvXMLLoadUtility* pXML)
 	m_iPrereqOrPromotion2 = GC.getInfoTypeForString(szTextVal);
 	return true;
 }
+
+
 
 //======================================================================================================
 //					CvProfessionInfo
