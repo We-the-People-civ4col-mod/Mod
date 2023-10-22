@@ -2802,4 +2802,37 @@
         <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] fand ein freundschaftliches Treffen zwischen Siedlern und Ureinwohnern statt.</German>
         <Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] состоялась дружеская встреча индейцев и европейских поселенцев.</Russian>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_1</Tag>
+        <English>Send experienced traders! This trade must necessarily be a success. The welfare of the colony also depends on it!</English>
+        <German>Schickt erfahrene Händler! Dieser Handel muss unbedingt ein Erfolg werden. Das Wohl der Kolonie hängt auch davon ab!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_1</Tag>
+        <English>We expect a lot from this trade. However, we should be careful. Send out good cars, but don't overdo it either.</English>
+        <German>Wir erwarten uns viel von diesem Handel. Allerdings sollten wir vorsichtig sein. Schickt gute Wagen aus, aber übertreibt es auch nicht.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_2</Tag>
+        <English>Send out the wagons and see what the savages have to offer us. Fill the wagons up to the tarp and best of all have additional wagons follow.</English>
+        <German>Schickt die Wagen aus und seht, was die Wilden uns zu bieten haben. Macht die Wagen voll bis unter die Plane und am besten lasst Ihr noch zusätzliche Wagen nachkommen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_3</Tag>
+        <English>Send our most experienced traders! Treasures await the men if they handle the trade with the Indians properly. And believe me, they better not come back without full wagons!</English>
+        <German>Schickt unsere erfahrensten Händler! Reichtum erwartet die Männer, wenn sie den Handel mit den Indianern richtig angehen. Und glaubt mir, sie sollten besser nicht ohne volle Wagen zurückkommen!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_4</Tag>
+        <English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] wagon train successfully returns from the Indian village in the wilderness!</English>
+        <German>Der [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Wagenzug kehrt erfolgreich aus dem Indianer-Dorf in der Wildnis zurück!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_5</Tag>
+        <English>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_4</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_6</Tag>
+        <English>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_4</English>
+    </TEXT>
 </Civ4GameText>

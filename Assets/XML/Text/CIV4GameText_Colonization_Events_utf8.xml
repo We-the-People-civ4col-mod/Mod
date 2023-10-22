@@ -9872,4 +9872,124 @@
         <German>[ICON_BULLET]Die Ureinwohner sind wütend und skalpieren einige Händler.</German>
         <Russian>[ICON_BULLET]Разъяренные индейцы решают снять скальпы с некоторых торговцев.</Russian>
     </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_SCOUT_NATIVE_CITY_1</Tag>
+        <English>Your scout has entered a previously unnoticed native village. The natives look at you expectantly. What do you want to do?</English>
+          <German>Euer Scout hat ein bisher unbeachtet gebliebenes Dorf der Ureinwohner betreten. Die Ureinwohner blicken Euch erwartungsvoll an. Was wollt Ihr tun?</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_SCOUT_NATIVE_CITY_2</Tag>
+        <English>Your scout has stumbled unawares into a native indian camp. Here you are apparently the intruder.They look at you skeptically, but not hostilely. The village is preparing for a feast, do you want to stay?</English>
+          <German>Euer Scout ist unversehens in ein Lager der Ureinwohner gestolpert. Hier seid Ihr offenbar der Eindringling. Man blickt Euch skeptisch, aber nicht feindlich an. Das Dorf bereitet sich auf ein Fest vor, wollt ihr bleiben?</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_SCOUT_NATIVE_CITY_3</Tag>
+        <English>Your scout has discovered a native indian village. However, the natives have been watching you for quite a while and could easily take you down. How do you behave?</English>
+          <German>Euer Scout hat ein Dorf der Ureinwohner entdeckt. Die Ureinwohner beobachten Euch allerdings schon eine ganze Weile und könnten Euch mühelos überwältigen. Wie verhaltet Ihr Euch?</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_1</Tag>
+        <English>We stay here for a while to make friends with the natives and warm ourselves at their campfires.</English>
+        <German>Wir bleiben eine Weile hier, um mit den Ureinwohnern Freundschaft zu schließen und uns an deren Lagerfeuern zu wärmen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_2</Tag>
+        <English>We are not here to make friends. Let us ask for treasures from which we can redeem them.</English>
+         <German>Wir sind nicht hier um Freundschaft zu schließen. Fragen wir nach Schätzen, von denen wir sie erlösen können.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_3</Tag>
+        <English>Unfortunately, we are in a hurry. The natives don't look like they could be of any use to us either.</English>
+        <German>Wir haben es leider sehr eilig. Die Ureinwohner sehen auch nicht so aus, als könnten Sie uns von Nutzen sein.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_HELP</Tag>
+        <English>[ICON_BULLET]Some natives are angry and do not approve of their chief giving you such a rich gift.</English>
+        <German>[ICON_BULLET]Einige Ureinwohner sind wütend und nicht damit einverstanden, dass ihr Häuptling Euch so reich beschenkt.</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_NATIVE_CITY_1</Tag>
+        <English>Your seasoned trader has entered a previously unnoticed native village. The natives look at you expectantly. What do you want to do?</English>
+          <German>Euer couragierter Händler hat ein bisher unbeachtet gebliebenes Dorf der Ureinwohner betreten. Die Ureinwohner blicken Euch erwartungsvoll an. Was wollt Ihr tun?</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_NATIVE_CITY_2</Tag>
+        <English>Your seasoned trader has stumbled unawares into a native indian camp. Here you are apparently the intruder.They look at you skeptically, but not hostilely. The natives are obviously interested in your goods. Do you want to stay and to trade?</English>
+          <German>Euer couragierter Ureinwohnerhändler ist unversehens in ein Lager der Ureinwohner gestolpert. Hier seid Ihr offenbar der Eindringling. Man blickt Euch skeptisch, aber nicht feindlich an. Die Einwohner sind offenbar an Euren Waren interessiert. Wollt ihr bleiben und handeln?</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_NATIVE_CITY_3</Tag>
+        <English>Your seasoned trader has discovered a native indian village. However, the natives have been watching you for quite a while and could easily take you down. How do you behave?</English>
+          <German>Euer couragierter Ureinwohnerhändler hat ein Dorf der Ureinwohner entdeckt. Die Ureinwohner beobachten Euch allerdings schon eine ganze Weile und könnten Euch mühelos überwältigen. Wie verhaltet Ihr Euch?</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_1_News</Tag>
+        <English>Our scouts and the natives have a lively party - relations improve.</English>
+          <German>Unsere Kundschafter und die Wilden feiern ein rauschendes Fest - die Beziehungen verbessern sich.</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_2_News</Tag>
+        <English>Our scouts receive rich gifts. But not all Indians like it.</English>
+          <German>Unsere Kundschafter werden reich beschenkt. Aber nicht allen Indianern gfällt das.</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_3News</Tag>
+        <English>Our Scouts do not enter a certain native village.</English>
+          <German>Unsere Kundschafter lassen ein Indianer-Dorf links liegen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_1</Tag>
+        <English>We stay here for a while to make friends with the natives and warm ourselves at their campfires.</English>
+        <German>Wir bleiben eine Weile hier, um mit den Ureinwohnern Freundschaft zu schließen und uns an deren Lagerfeuern zu wärmen. Eine gute Grundlage für zukünftigen Handel.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_2</Tag>
+        <English>We are not here to make friends. Let us ask for treasures from which we can redeem them.</English>
+         <German>Wir sind nicht hier um Freundschaft zu schließen. Fragen wir nach Schätzen, von denen wir sie erlösen können. Wir versprechen Ihnen Waren dafür.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_3</Tag>
+        <English>We should move on.The natives don't look like they could be of any use to us.</English>
+        <German>Wir sollten weiterziehen. Die Ureinwohner sehen nicht so aus, als könnten Sie uns von Nutzen sein. </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_1_News</Tag>
+        <English>Our traders and the natives have a lively party - relations improve.</English>
+          <German>Unsere Händler und die Wilden feiern ein rauschendes Fest - die Beziehungen verbessern sich.</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_2_News</Tag>
+        <English>Our traders receive rich gifts. But not all Indians like it.</English>
+          <German>Unsere Händler werden reich beschenkt. Aber nicht allen Indianern gfällt das.</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_3_News</Tag>
+        <English>Our traders prefer to give this native village a wide berth.</English>
+          <German>Um dieses Indianer-Dorf machen unsere Händler lieber einen Bogen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_TRADE_WAGON_1</Tag>
+        <English>Milord, our neighbors are waiting for us to start trading with us. We should definitely send a wagon train and start trade relations.</English>
+        <German>Milord, unsere Nachbarn warten darauf, dass wir den Handel mit Ihnen aufnehmen. Wir sollten unbedingt einen Wagenzug entsenden und Handelsbeziehungen beginnen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_NATIVE_TRADE_WAGON_DONE</Tag>
+        <English>A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] wagon train sets out into the wilderness to trade.</English>
+        <German>Ein [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Wagenzug bricht zum Handel in die Wildnis auf.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_HELP</Tag>
+        <English>Send a unit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] to the indian village within %d3 rounds where the trader who initiated the trade is located.</English>
+        <German>Schickt innerhalb von %d3 Runden eine Einheit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] zu dem Indianer-Dorf, wo sich der Händler befindet, der den Handel eingefädelt hat.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAIL_NATIVE_TRADE_WAGON</Tag>
+        <English>Unfortunately, the trade can no longer take place. You have waited too long. The conditions have changed. You can now use the wagon train in another way.</English>
+        <German>Leider kann der Handel nicht mehr stattfinden. Ihr habt zulange gewartet. Die Bedingungen haben sich geändert. Ihr könnt den Wagenzug nun wieder anderweitig verwenden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_TRADE_WAGON_DONE</Tag>
+        <English>Milord, our wagon train has reached the Indian village. What deal should we make?</English>
+        <German>Milord, unser Wagenzug hat das Indianer-Dorf erreicht. Welchen Handel sollen wir abschließen?</German>
+    </TEXT>
 </Civ4GameText>
