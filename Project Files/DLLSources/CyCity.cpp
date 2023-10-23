@@ -1615,10 +1615,7 @@ python::tuple CyCity::isOrderWaitingForYield(int /*YieldTypes*/ eYield)
 	return python::make_tuple();
 }
 
-// WTP, ray, Center Plot specific Backgrounds - Start
-int /*TerrainTypes*/ CyCity::getCenterPlotTerrainType() const
+bool CyCity::isAccessibleByShip(CyUnit* pUnit) const
 {
-	return m_pCity ? m_pCity->getCenterPlotTerrainType() : -1;
+	return m_pCity ? m_pCity->isAccessibleByShip(pUnit->getUnit()) : false;
 }
-// WTP, ray, Center Plot specific Backgrounds - END
-

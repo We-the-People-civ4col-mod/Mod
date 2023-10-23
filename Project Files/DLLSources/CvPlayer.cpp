@@ -24937,7 +24937,7 @@ void CvPlayer::onTurnLogging() const
 	}
 }
 
-CvUnit* CvPlayer::getTempUnit(UnitTypes eUnit, int iX, int iY)
+CvUnit* CvPlayer::getOrCreateTempUnit(UnitTypes eUnit, int iX, int iY)
 {
 	if (m_pTempUnit)
 	{
@@ -24955,7 +24955,6 @@ CvUnit* CvPlayer::getTempUnit(UnitTypes eUnit, int iX, int iY)
 		// TODO: assert that we did not change any statistics / counters like below!
 		((CvPlayerAI*)this)->AI_changeNumAIUnits(m_pTempUnit->AI_getUnitAIType(), -1);	//	This one doesn't count
 		removeGroupCycle(m_pTempUnit->getGroup()->getID());
-		//m_pTempUnit->joinGroup(NULL);
 	}
 
 	//	Set an arbitrary automation type - just need it to be flagged as automated	

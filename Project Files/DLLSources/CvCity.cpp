@@ -332,6 +332,11 @@ void CvCity::init(int iID, PlayerTypes eOwner, Coordinates initCoord, bool bBump
 
 	m_iOppressometer = 0;
 	m_iOppressometerGrowthModifier = 100;
+
+	if (isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()) && GET_PLAYER(getOwner()).isColonialNation())
+	{
+		updateLocationMask();
+	}
 }
 
 
@@ -14458,4 +14463,99 @@ TerrainTypes CvCity::getCenterPlotTerrainType() const
 	}
 }
 // WTP, ray, Center Plot specific Backgrounds - END
+
+// WTP, ray, Center Plot specific Backgrounds - Start
+int /*TerrainTypes*/ CyCity::getCenterPlotTerrainType() const
+{
+	return m_pCity ? m_pCity->getCenterPlotTerrainType() : -1;
+}
+// WTP, ray, Center Plot specific Backgrounds - END
+
+void CvCity::updateLocationMask()
+{
+	UnitTypes eShipUnit = NO_UNIT;
+
+	for (int iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
+	{
+		const UnitTypes eLoopUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iI)));
+		if (eLoopUnit != NO_UNIT)
+		{
+			// Only consider units that default to this unit ai
+			const CvUnitInfo& kUnitInfo = GC.getUnitInfo(eLoopUnit);
+			if (kUnitInfo.getDomainType() == DOMAIN_SEA && !kUnitInfo.getTerrainImpassable(TERRAIN_OCEAN))
+			{
+				eShipUnit = eLoopUnit;
+				break;
+			}
+		}
+	}
+
+	const TerrainTypes terrainsToCheck[] = {
+		TERRAIN_SHALLOW_COAST,
+		TERRAIN_COAST,
+	};
+
+	const size_t arraySize = sizeof(terrainsToCheck) / sizeof(terrainsToCheck[0]);
+
+	FAssert(eShipUnit != NO_UNIT);
+	const CvGame& kGame = GC.getGameINLINE();
+	CvPlot* const pEuropePlot = kGame.getAnyEuropePlot();
+	LocationFlags flags;
+
+	// We need to check all adjacent passable water plots if they can connect to Europe
+	for (DirectionTypes eDirection = FIRST_DIRECTION; eDirection < NUM_DIRECTION_TYPES; ++eDirection)
+	{
+		CvPlot* const pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), eDirection);
+		if (pAdjacentPlot->isWater() && !pAdjacentPlot->isImpassable())
+		{
+			for (int i = 0; i < arraySize; i++)
+			{
+				CvUnit* const pTempUnit = GET_PLAYER(getOwner()).getOrCreateTempUnit(eShipUnit, pAdjacentPlot->getX(), pAdjacentPlot->getY());
+				pTempUnit->finishMoves();
+
+				const TerrainTypes eTerrain = terrainsToCheck[i];
+				// Demeter be damned!
+				pTempUnit->getUnitInfo().setTerrainImpassable(eTerrain, true);
+
+				const bool bPathFound = pTempUnit->generatePath(pEuropePlot, 0, false);
+				if (bPathFound)
+				{
+					switch (eTerrain)
+					{
+						case TERRAIN_COAST: 
+							flags.coastal = true; 
+						break;
+						
+						case TERRAIN_SHALLOW_COAST: 
+							flags.shallowCoastal = true; 
+						break;
+
+						default:
+							FAssertMsg(false, "Unhandled case!");
+					}
+				
+				}
+				pTempUnit->getUnitInfo().setTerrainImpassable(eTerrain, false);
+			}
+		}
+	}
+
+	GET_PLAYER(getOwner()).releaseTempUnit();
+	m_locationMask = flags;
+}
+
+// Returns true if the ship can potentially enter the city given the terrain constrains
+bool CvCity::isAccessibleByShip(const CvUnit* pUnit) const
+{
+	LocationFlags flags;
+	const CvUnitInfo& kUnitInfo = pUnit->getUnitInfo();
+
+	if (!kUnitInfo.getTerrainImpassable(TERRAIN_COAST))
+		flags.coastal = true;
+
+	if (!kUnitInfo.getTerrainImpassable(TERRAIN_SHALLOW_COAST))
+		flags.shallowCoastal = true;
+
+	return (flags.coastal && m_locationMask.coastal || flags.shallowCoastal && m_locationMask.shallowCoastal);
+}
 

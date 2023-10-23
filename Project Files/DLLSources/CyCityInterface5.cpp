@@ -133,5 +133,7 @@ void CyCityPythonInterface5(python::class_<CyCity>& x)
 
 		.def("isOrderWaitingForYield", &CyCity::isOrderWaitingForYield, "python::tuple isOrderWaitingForYield(int /*YieldTypes*/ eYield)")
 		.def("getCenterPlotTerrainType", &CyCity::getCenterPlotTerrainType, "int /*TerrainTypes*/ getCenterPlotTerrainType()")// WTP, ray, Center Plot specific Backgrounds - Start
+		
+		.def("isAccessibleByShip", &CyCity::isAccessibleByShip, "bool isAccessibleByShip(CyUnit* pUnit)")
 		;
 }

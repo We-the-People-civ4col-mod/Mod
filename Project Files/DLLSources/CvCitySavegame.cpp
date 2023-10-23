@@ -63,6 +63,8 @@
 	const int defaultOppressometer = 0;
 	const int defaultOppressometerGrowthModifier = 100;
 
+	const LocationFlags defaultLocationMask;
+
 //
 enum SavegameVariableTypes
 {
@@ -185,6 +187,8 @@ enum SavegameVariableTypes
 
 	CitySave_Oppressometer,
 	CitySave_OppressometerGrowthModifier,
+
+	CitySaveAi_LocationMask,
 
 	NUM_CITYSAVE_ENUM_VALUES,
 };
@@ -309,6 +313,9 @@ const char* getSavedEnumNameCity(SavegameVariableTypes eType)
 
 		case CitySave_Oppressometer: return "CitySave_Oppressometer";
 		case CitySave_OppressometerGrowthModifier: return "CitySave_OppressometerGrowthModifier";
+
+		case CitySaveAi_LocationMask: return "CitySaveAi_LocationMask";
+
 	}
 	FAssertMsg(0, "Missing case");
 	return "";
@@ -455,6 +462,8 @@ void CvCity::resetSavedData(int iID, PlayerTypes eOwner, Coordinates resetCoord,
 
 	m_iOppressometer = defaultOppressometer;
 	m_iOppressometerGrowthModifier = defaultOppressometerGrowthModifier;
+
+	m_locationMask = defaultLocationMask;
 }
 
 void CvCity::read(CvSavegameReader reader)
@@ -595,6 +604,14 @@ void CvCity::read(CvSavegameReader reader)
 
 		case CitySave_Oppressometer                              : reader.Read(m_iOppressometer)                            ; break;
 		case CitySave_OppressometerGrowthModifier                : reader.Read(m_iOppressometerGrowthModifier)              ; break;
+		
+		case CitySaveAi_LocationMask:
+		{
+			int locationFlags;
+			reader.Read(locationFlags);
+			m_locationMask = LocationFlags(locationFlags);
+		}
+		break;
 		}
 
 	}
@@ -756,6 +773,8 @@ void CvCity::write(CvSavegameWriter writer)
 
 	writer.Write(CitySave_Oppressometer, m_iOppressometer, defaultOppressometer);
 	writer.Write(CitySave_OppressometerGrowthModifier, m_iOppressometerGrowthModifier, defaultOppressometerGrowthModifier);
+
+	writer.Write(CitySaveAi_LocationMask, m_locationMask.serialize());
 
 	writer.Write(CitySave_END);
 }

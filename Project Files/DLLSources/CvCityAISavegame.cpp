@@ -21,6 +21,7 @@ const int defaultNeededFloatingDefenders = -1;
 const int defaultNeededFloatingDefendersCacheTurn = -1;
 const int defaultWorkersNeeded = 0;
 const int defaultWorkersHave = 0;
+const LocationFlags defaultLocationMask;
 
 enum SavegameVariableTypes
 {
@@ -54,6 +55,7 @@ enum SavegameVariableTypes
 	CitySaveAi_routeToCity,
 	CitySaveAi_BestBuildValue,
 	CitySaveAi_BestBuild,
+	CitySaveAi_LocationMask,
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -91,6 +93,8 @@ const char* getSavedEnumNameCityAi(SavegameVariableTypes eType)
 
 	case CitySaveAi_BestBuildValue: return "CitySaveAi_BestBuildValue";
 	case CitySaveAi_BestBuild: return "CitySaveAi_BestBuild";
+
+	case CitySaveAi_LocationMask: return "CitySaveAi_LocationMask";
 	}
 	FAssertMsg(0, "Missing case");
 	return "";
@@ -134,7 +138,6 @@ m_routeToCity.reset();
 
 m_em_iBestBuildValue.reset();
 m_em_eBestBuild.reset();
-
 }
 
 void CvCityAI::read(CvSavegameReader reader)
@@ -192,12 +195,19 @@ void CvCityAI::read(CvSavegameReader reader)
 			case CitySaveAi_BestBuildValue                      : reader.Read(m_em_iBestBuildValue)                              ; break;
 			case CitySaveAi_BestBuild                           : reader.Read(m_em_eBestBuild)                                   ; break; 
 
+			case CitySaveAi_LocationMask:
+			{
+				int locationFlags;
+				reader.Read(locationFlags);
+				m_locationMask = LocationFlags(locationFlags);
+			}
+			break;
+
 			default: FAssert(false);
 		}
 	}
 	
 	// Loading done. Set up the cache (if any).
-
 }
 
 void CvCityAI::write(CvSavegameWriter writer)
@@ -244,6 +254,8 @@ void CvCityAI::write(CvSavegameWriter writer)
 
 	writer.Write(CitySaveAi_BestBuildValue, m_em_iBestBuildValue);
 	writer.Write(CitySaveAi_BestBuild, m_em_eBestBuild);
+
+	writer.Write(CitySaveAi_LocationMask, m_locationMask.serialize());
 
 	writer.Write(Save_END);
 }

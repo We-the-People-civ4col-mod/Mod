@@ -378,6 +378,8 @@ public:
 	int /*TerrainTypes*/ getCenterPlotTerrainType() const;
 	// WTP, ray, Center Plot specific Backgrounds - END
 
+	bool isAccessibleByShip(CyUnit* pUnit) const;
+
 private:
 	CvCity* m_pCity;
 };

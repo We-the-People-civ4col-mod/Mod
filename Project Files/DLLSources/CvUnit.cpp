@@ -10683,17 +10683,6 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 	ActivityTypes eOldActivityType;
 	int iI;
 
-	// OOS!! Temporary for Out-of-Sync madness debugging...
-	if (GC.getLogging())
-	{
-		if (gDLL->getChtLvl() > 0)
-		{
-			char szOut[1024];
-			sprintf(szOut, "Player %d Unit %d (%S's %S) moving from %d:%d to %d:%d\n", getOwnerINLINE(), getID(), GET_PLAYER(getOwnerINLINE()).getNameKey(), getName().GetCString(), getX_INLINE(), getY_INLINE(), toCoord.x(), toCoord.y());
-			gDLL->messageControlLog(szOut);
-		}
-	}
-
 	// Temp units do not really exist, and are just used to provide a data anchor for virtual pathing calculations.
 	// As such they do not need to process their position into the wider game state and indeed should not without additional concurrency protection.
 	if (isTempUnit())
@@ -10704,6 +10693,17 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 			joinGroup(NULL);
 		}
 		return;
+	}
+
+	// OOS!! Temporary for Out-of-Sync madness debugging...
+	if (GC.getLogging())
+	{
+		if (gDLL->getChtLvl() > 0)
+		{
+			char szOut[1024];
+			sprintf(szOut, "Player %d Unit %d (%S's %S) moving from %d:%d to %d:%d\n", getOwnerINLINE(), getID(), GET_PLAYER(getOwnerINLINE()).getNameKey(), getName().GetCString(), getX_INLINE(), getY_INLINE(), toCoord.x(), toCoord.y());
+			gDLL->messageControlLog(szOut);
+		}
 	}
 
 	FAssert(!at(toCoord) || coord().isInvalidPlotCoord());
@@ -12819,7 +12819,6 @@ CvUnitInfo &CvUnit::getUnitInfo() const
 {
 	return *m_pUnitInfo;
 }
-
 
 UnitClassTypes CvUnit::getUnitClassType() const
 {
@@ -16801,6 +16800,7 @@ int CvUnit::getDiscriminationFactor() const
 
 void CvUnit::changeIdentity(UnitTypes eUnit)
 {
+	// TODO: Skip this if the unit remains the same
 	reset(getID(), eUnit, getOwner(), false, true);
 }
 
@@ -16808,4 +16808,3 @@ bool CvUnit::isTempUnit() const
 {
 	return GET_PLAYER(getOwner()).isTempUnit(this);
 }
-

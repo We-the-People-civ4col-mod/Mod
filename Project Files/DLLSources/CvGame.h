@@ -407,6 +407,7 @@ public:
 	void writeDesyncLog();
 
 	int getRemainingForcedPeaceTurns() const;
+	CvPlot* getAnyEuropePlot() const;
 
 protected:
 
@@ -525,7 +526,6 @@ protected:
 	void updateOceanDistances();
 
 	void doUpdateCacheOnTurn();
-	CvPlot* getAnyEuropePlot() const;
 };
 
 #endif

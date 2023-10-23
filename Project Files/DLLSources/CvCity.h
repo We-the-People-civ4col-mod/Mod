@@ -6,6 +6,7 @@
 #include "LinkedList.h"
 #include "CvPlotFunctions.h"
 #include "CvCityYields.h"
+#include "PlayerHelperFunctions.h"
 
 class CvPlot;
 class CvArea;
@@ -797,6 +798,8 @@ public:
 
 	void writeDesyncLog(FILE *f) const;
 
+	bool isAccessibleByShip(const CvUnit* pUnit) const;
+
 protected:
 	CvCityYields m_yields;
 	int m_iID;
@@ -1016,6 +1019,8 @@ protected:
 	void setImportsMaintain(YieldTypes eYield, bool bSetting);
 	// transport feeder - end - Nightinggale
 
+	LocationFlags m_locationMask;
+
 	// auto traderoute - start - Nightinggale
 public:
 	bool isAutoExport(YieldTypes eYield) const {return m_em_bTradeAutoExport.get(eYield);};
@@ -1074,6 +1079,8 @@ protected:
 	void changeOppressometerGrowthModifier(int iChange);
 	void doOppressometerDecay();
 	void doOppressometerGrowth();
+
+	void updateLocationMask();
 
 public:
 	int getOppressometer() const

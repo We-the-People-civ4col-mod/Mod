@@ -3467,6 +3467,13 @@ bool CvUnitInfo::getFeatureImpassable(int i) const
 	return m_abFeatureImpassable ? m_abFeatureImpassable[i] : false;
 }
 
+void CvUnitInfo::setTerrainImpassable(TerrainTypes eTerrain, bool bValue)
+{
+	FAssertMsg(eTerrain < GC.getNumTerrainInfos(), "Index out of bounds");
+	FAssertMsg(eTerrain > -1, "Index out of bounds");
+	m_abTerrainImpassable[eTerrain] = bValue;
+}
+
 // < JAnimals Mod Start >
 bool CvUnitInfo::getTerrainNative(int iIndex) const
 {

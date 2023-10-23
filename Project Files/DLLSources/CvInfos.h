@@ -877,6 +877,8 @@ public:
 
 	int PYgetYieldCost(int i) const;
 
+	void setTerrainImpassable(TerrainTypes eTerrain, bool bValue);
+
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
 

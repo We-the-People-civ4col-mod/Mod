@@ -1272,7 +1272,7 @@ public:
 	{
 		return m_lPlayerOppressometer;
 	}
-	CvUnit* getTempUnit(UnitTypes eUnit, int iX, int iY);
+	CvUnit* getOrCreateTempUnit(UnitTypes eUnit, int iX, int iY);
 	void releaseTempUnit();
 
 	inline bool isTempUnit(const CvUnit* pUnit) const

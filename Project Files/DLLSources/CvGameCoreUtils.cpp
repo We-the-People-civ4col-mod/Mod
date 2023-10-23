@@ -2513,7 +2513,7 @@ CvWString getStrategyString(StrategyTypes eStrategy)
 bool generatePathForHypotheticalUnit(const CvPlot* pFrom, const CvPlot* pTo, PlayerTypes ePlayer, UnitTypes eUnit, int iFlags, int iMaxTurns)
 {
 	PROFILE_FUNC();
-	CvUnit* const pTempUnit = GET_PLAYER(ePlayer).getTempUnit(eUnit, pFrom->getX(), pFrom->getY());
+	CvUnit* const pTempUnit = GET_PLAYER(ePlayer).getOrCreateTempUnit(eUnit, pFrom->getX(), pFrom->getY());
 	pTempUnit->finishMoves();
 	int pathTurns;
 	const bool bResult = pTempUnit->generatePath(pTo, iFlags, false, &pathTurns, iMaxTurns, /*bUseTempFinder*/true);

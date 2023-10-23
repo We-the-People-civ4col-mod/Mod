@@ -1006,6 +1006,7 @@ public:
 	int getDiscriminationFactor() const;
 
 	bool isForcedLaborer() const;
+	void setImpassableTerrain(TerrainTypes eTerrain);
 };
 
 inline bool CvUnit::isHasPromotion(PromotionTypes eIndex) const
