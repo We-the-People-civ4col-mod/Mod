@@ -11283,6 +11283,7 @@
         <German>(Rebellische Stimmung : %D1%%)</German>
         <Italian>(Sentimento di ribellione : %D1%%)</Italian>
         <Spanish>(sentimiento de rebelión : %D1%%)</Spanish>
+        <Russian>(Протестные настроения : %D1%%)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_REBEL_MOD</Tag>
@@ -11291,6 +11292,7 @@
         <German>[ICON_BULLET]%D1_Bonus%% durch Rebellische Stimmung</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% dal sentimento di ribellione</Italian>
         <Spanish>[ICON_BULLET]%D1_Bonus%% por sentimiento de rebelión</Spanish>
+        <Russian>[ICON_BULLET]%D1_Bonus%% от протестных настроений</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_PLOT_CITY_MOD</Tag>
@@ -11299,6 +11301,7 @@
         <German>[ICON_BULLET]%D1_Bonus%% durch Siedlung (Einheitenfähigkeit)</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% dall'insediamento (abilità dell'unità)</Italian>
         <Spanish>[ICON_BULLET]%D1_Bonus%% por asentamiento (capacidad de unidad)</Spanish>
+        <Russian>[ICON_BULLET]%D1_Bonus%% к атаке поселений (способность)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_PLOT_EXTRA_STRENGTH</Tag>
