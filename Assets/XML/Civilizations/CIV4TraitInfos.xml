@@ -1039,7 +1039,7 @@
             <iLearnTimeModifier>0</iLearnTimeModifier>
             <iNativeCombatModifier>0</iNativeCombatModifier>
             <iMissionaryModifier>0</iMissionaryModifier>
-            <iNativeTradeModifier>100</iNativeTradeModifier>
+            <iNativeTradeModifier>30</iNativeTradeModifier>
             <iRebelCombatModifier>0</iRebelCombatModifier>
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
@@ -1625,7 +1625,7 @@
             <iLearnTimeModifier>0</iLearnTimeModifier>
             <iNativeCombatModifier>0</iNativeCombatModifier>
             <iMissionaryModifier>0</iMissionaryModifier>
-            <iNativeTradeModifier>25</iNativeTradeModifier>
+            <iNativeTradeModifier>20</iNativeTradeModifier>
             <iRebelCombatModifier>0</iRebelCombatModifier>
             <iTaxRateThresholdModifier>25</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
@@ -2356,7 +2356,7 @@
             <iLearnTimeModifier>0</iLearnTimeModifier>
             <iNativeCombatModifier>0</iNativeCombatModifier>
             <iMissionaryModifier>0</iMissionaryModifier>
-            <iNativeTradeModifier>50</iNativeTradeModifier>
+            <iNativeTradeModifier>30</iNativeTradeModifier>
             <iRebelCombatModifier>0</iRebelCombatModifier>
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
