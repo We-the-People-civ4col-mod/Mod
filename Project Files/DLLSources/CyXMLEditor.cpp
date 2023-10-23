@@ -1427,7 +1427,7 @@ void CyXMLEditor::writeActiveFile() const
 	szPath.append("EditorCache.xml");
 
 	XMLDocument doc;
-	XMLDeclaration* Header = m_Document->NewDeclaration();
+	XMLDeclaration* Header = doc.NewDeclaration();
 	doc.InsertFirstChild(Header);
 	XMLElement *element = doc.NewElement("ActiveFile");
 	element->SetText(m_szFiles[m_iActiveFile]->getTag());

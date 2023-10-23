@@ -45,6 +45,10 @@ PORT_ROYAL_SCREEN = 33
 
 MAIN_INTERFACE = 99
 
+### XML editor - start - Nightinggale
+XML_EDITOR = 150
+### XML editor - end - Nightinggale
+
 # Civilopedia Pages start at 200
 PEDIA_START = 200
 PEDIA_MAIN = 199#CivilopediaPageTypes.CIVILOPEDIA_PAGE_MAIN + PEDIA_START

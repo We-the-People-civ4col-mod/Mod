@@ -499,6 +499,9 @@
     <ClCompile Include="DLLSources\CyXMLEditorInterface1.cpp">
       <Filter>XML Editor</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\CvPythonCaller.cpp">
+      <Filter>Python\CvPythonCaller</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
@@ -954,6 +957,9 @@
     <ClInclude Include="DLLSources\CyXMLEditor.h">
       <Filter>XML Editor</Filter>
     </ClInclude>
+    <ClInclude Include="DLLSources\CvPythonCaller.h">
+      <Filter>Python\CvPythonCaller</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="DLLSources\FVariableSystem.inl">
@@ -1074,6 +1080,9 @@
     </Filter>
     <Filter Include="XML Editor">
       <UniqueIdentifier>{18ea1776-7fbf-485a-959e-6fb9226eff6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\CvPythonCaller">
+      <UniqueIdentifier>{a69da161-513e-408d-bb4e-10649825d5ca}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

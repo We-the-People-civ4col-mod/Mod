@@ -504,6 +504,23 @@ enum WidgetTypes
 	WIDGET_HELP_HARBOUR_SYSTEM, // WTP, ray, Widgets for Harbour System and Barracks System - START
 	WIDGET_HELP_BARRACKS_SYSTEM, // WTP, ray, Widgets for Harbour System and Barracks System - START
 	WIDGET_HELP_SHOW_OR_HIDE_YIELDS,
+
+	/// xml editor - start - Nightinggale
+	WIDGET_XML_EDITOR,
+	WIDGET_XML_EDITOR_BOX,
+
+	WIDGET_XML_OK,
+	WIDGET_XML_CANCEL,
+	WIDGET_XML_DELETE,
+	WIDGET_XML_CLONE,
+	WIDGET_XML_MENU_ITEM,
+
+	// needs to be in order down, zero, up because it makes widget - zero = +1 (up) or -1 (down)
+	WIDGET_XML_DOWN,
+	WIDGET_XML_ZERO,
+	WIDGET_XML_UP,
+	/// xml editor - end - Nightinggale
+
 #ifdef _USRDLL
 	NUM_WIDGET_TYPES
 #endif

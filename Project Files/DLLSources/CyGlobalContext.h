@@ -17,6 +17,11 @@ class CyArtFileMgr;
 class CyUserProfile;
 class CyVariableSystem;
 class CyUserSettings;
+
+/// xml Editor - start - Nightinggale
+class CyXMLEditor;
+/// xml Editor - end - Nightinggale
+
 class CyGlobalContext
 {
 public:
@@ -290,5 +295,9 @@ public:
 
 	void openNetworkOOSMenu();
 	void openReadme(std::string section);
+
+	/// xml Editor - start - Nightinggale
+	CyXMLEditor* getxmlEditor() const;
+	/// xml Editor - end - Nightinggale
 };
 #endif	// CyGlobalContext_h

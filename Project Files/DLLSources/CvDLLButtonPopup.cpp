@@ -22,6 +22,7 @@
 #include "CvGameCoreUtils.h"
 #include "CvDLLEngineIFaceBase.h"
 #include "CvDLLEventReporterIFaceBase.h"
+#include "CvPythonCaller.h"
 
 // Public Functions...
 
@@ -70,6 +71,7 @@ class PopupButtonContainer<BUTTONPOPUP_MAIN_MENU> : public PopupButtonContainerC
 		PopupButtonsMainMenu_Save,
 		PopupButtonsMainMenu_Options,
 		PopupButtonsMainMenu_WorldBuilder,
+		PopupButtonsMainMenu_XmlEditor,
 		PopupButtonsMainMenu_GameDetails,
 		PopupButtonsMainMenu_DetailsTitle,
 		PopupButtonsMainMenu_Cancel,
@@ -154,6 +156,8 @@ public:
 			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_ENTER_WB").c_str(), NULL, PopupButtonsMainMenu_WorldBuilder, WIDGET_GENERAL, PopupButtonsMainMenu_WorldBuilder, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
 		}
 
+		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_ENTER_XML_EDITOR").c_str(), NULL, PopupButtonsMainMenu_XmlEditor, WIDGET_GENERAL, PopupButtonsMainMenu_XmlEditor, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+
 		if (GC.getGameINLINE().canDoControl(CONTROL_ADMIN_DETAILS))
 		{
 			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_GAME_DETAILS").c_str(), NULL, PopupButtonsMainMenu_GameDetails, WIDGET_GENERAL, PopupButtonsMainMenu_GameDetails, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
@@ -236,6 +240,10 @@ public:
 				pInfo->setData1(4);
 				gDLL->getInterfaceIFace()->addPopup(pInfo, GC.getGameINLINE().getActivePlayer(), true);
 			}
+		}
+		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_XmlEditor)
+		{
+			Python::call().openXMLEditor();
 		}
 		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_GameDetails)
 		{	// Game details

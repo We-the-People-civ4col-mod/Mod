@@ -349,6 +349,18 @@ void CyEnumsPythonInterface()
 		.value("WIDGET_HELP_HARBOUR_SYSTEM", WIDGET_HELP_HARBOUR_SYSTEM) // WTP, ray, Widgets for Harbour System and Barracks System - START
 		.value("WIDGET_HELP_BARRACKS_SYSTEM", WIDGET_HELP_BARRACKS_SYSTEM) // WTP, ray, Widgets for Harbour System and Barracks System - START
 		.value("WIDGET_HELP_SHOW_OR_HIDE_YIELDS", WIDGET_HELP_SHOW_OR_HIDE_YIELDS)
+		/// xml editor - start - Nightinggale
+		.value("WIDGET_XML_EDITOR", WIDGET_XML_EDITOR)
+		.value("WIDGET_XML_EDITOR_BOX", WIDGET_XML_EDITOR_BOX)
+		.value("WIDGET_XML_OK", WIDGET_XML_OK)
+		.value("WIDGET_XML_CANCEL", WIDGET_XML_CANCEL)
+		.value("WIDGET_XML_DELETE", WIDGET_XML_DELETE)
+		.value("WIDGET_XML_CLONE", WIDGET_XML_CLONE)
+		.value("WIDGET_XML_MENU_ITEM", WIDGET_XML_MENU_ITEM)
+		.value("WIDGET_XML_DOWN", WIDGET_XML_DOWN)
+		.value("WIDGET_XML_ZERO", WIDGET_XML_ZERO)
+		.value("WIDGET_XML_UP", WIDGET_XML_UP)
+		/// xml editor - end - Nightinggale
 		.value("NUM_WIDGET_TYPES", NUM_WIDGET_TYPES)
 		;
 	python::enum_<ButtonPopupTypes>("ButtonPopupTypes")
