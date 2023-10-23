@@ -3596,10 +3596,17 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 				}
 				int newPrice = oldPrice * (1000 + randomPriceChange) / 1000;
 
-				// R&R, ray, change for Trait Trader
-				newPrice = newPrice * (100 + GET_PLAYER(getID()).getNativeTradeModifier()) / 100;
+				// R&R, ray, change for Trait Trader - START
 				// WTP, ray, also consider European Trait
-				newPrice = newPrice * (100 + GET_PLAYER(ePlayer).getNativeTradeModifier()) / 100;
+				int i TotalNativeTradeModifier = GET_PLAYER(getID()).getNativeTradeModifier() + GET_PLAYER(ePlayer).getNativeTradeModifier();
+				// safety check to ensure that no numbers do not get too extreme
+				if (TotalNativeTradeModifier) > 75)
+				{
+					TotalNativeTradeModifier = 75;
+				}
+				// here we calculate the price
+				newPrice = newPrice * (100 + TotalNativeTradeModifier) / 100;
+				// R&R, ray, change for Trait Trader - END
 
 				// R&R, ray, small correction to stop at max gold of player
 				int iGoldAvailable = GET_PLAYER(getID()).AI_maxGoldTrade(ePlayer);
@@ -3630,11 +3637,18 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 				}
 				int newPrice = oldPrice * (1000 - randomPriceChange) / 1000;
 
-				// R&R, ray, change for Trait Trader
-				newPrice = newPrice * (100 - GET_PLAYER(getID()).getNativeTradeModifier()) / 100;
+				// R&R, ray, change for Trait Trader - START
 				// WTP, ray, also consider European Trait
-				newPrice = newPrice * (100 - GET_PLAYER(ePlayer).getNativeTradeModifier()) / 100;
-
+				int i TotalNativeTradeModifier = GET_PLAYER(getID()).getNativeTradeModifier() + GET_PLAYER(ePlayer).getNativeTradeModifier();
+				// safety check to ensure that no negative numbers occurs
+				if (TotalNativeTradeModifier) > 75)
+				{
+					TotalNativeTradeModifier = 75;
+				}
+				// here we calculate the price
+				newPrice = newPrice * (100 - TotalNativeTradeModifier) / 100;
+				// R&R, ray, change for Trait Trader - END
+				
 				//setting value to new price
 				pTheirCounter->clear();
 				CLLNode<TradeData>* newNode = pNode;
