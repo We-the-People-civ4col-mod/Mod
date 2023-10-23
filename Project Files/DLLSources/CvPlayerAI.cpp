@@ -3600,9 +3600,9 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 				// WTP, ray, also consider European Trait
 				int iTotalNativeTradeModifier = GET_PLAYER(getID()).getNativeTradeModifier() + GET_PLAYER(ePlayer).getNativeTradeModifier();
 				// safety check to ensure that no numbers do not get too extreme
-				if (iTotalNativeTradeModifier > 75)
+				if (iTotalNativeTradeModifier > GLOBAL_DEFINE_MAX_NATIVE_BARGAIN_MODIFIER)
 				{
-					iTotalNativeTradeModifier = 75;
+					iTotalNativeTradeModifier = GLOBAL_DEFINE_MAX_NATIVE_BARGAIN_MODIFIER;
 				}
 				// here we calculate the price
 				newPrice = newPrice * (100 + iTotalNativeTradeModifier) / 100;
@@ -3641,9 +3641,9 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 				// WTP, ray, also consider European Trait
 				int iTotalNativeTradeModifier = GET_PLAYER(getID()).getNativeTradeModifier() + GET_PLAYER(ePlayer).getNativeTradeModifier();
 				// safety check to ensure that no negative numbers occurs
-				if (iTotalNativeTradeModifier > 75)
+				if (iTotalNativeTradeModifier > GLOBAL_DEFINE_MAX_NATIVE_BARGAIN_MODIFIER)
 				{
-					iTotalNativeTradeModifier = 75;
+					iTotalNativeTradeModifier = GLOBAL_DEFINE_MAX_NATIVE_BARGAIN_MODIFIER;
 				}
 				// here we calculate the price
 				newPrice = newPrice * (100 - iTotalNativeTradeModifier) / 100;

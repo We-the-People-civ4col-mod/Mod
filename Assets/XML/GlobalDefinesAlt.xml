@@ -502,6 +502,10 @@
 		<iDefineIntVal>300</iDefineIntVal>
 	</Define>
 	<Define>
+		<DefineName>MAX_NATIVE_BARGAIN_MODIFIER</DefineName>
+		<iDefineIntVal>75</iDefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>ROUNDS_NO_TALK_BECAUSE_BAD_BARGAINING</DefineName>
 		<iDefineIntVal>7</iDefineIntVal>
 	</Define>
