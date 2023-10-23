@@ -3600,7 +3600,7 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 				// WTP, ray, also consider European Trait
 				int iTotalNativeTradeModifier = GET_PLAYER(getID()).getNativeTradeModifier() + GET_PLAYER(ePlayer).getNativeTradeModifier();
 				// safety check to ensure that no numbers do not get too extreme
-				if (iTotalNativeTradeModifier) > 75)
+				if (iTotalNativeTradeModifier > 75)
 				{
 					iTotalNativeTradeModifier = 75;
 				}
@@ -3641,7 +3641,7 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 				// WTP, ray, also consider European Trait
 				int iTotalNativeTradeModifier = GET_PLAYER(getID()).getNativeTradeModifier() + GET_PLAYER(ePlayer).getNativeTradeModifier();
 				// safety check to ensure that no negative numbers occurs
-				if (iTotalNativeTradeModifier) > 75)
+				if (iTotalNativeTradeModifier > 75)
 				{
 					iTotalNativeTradeModifier = 75;
 				}
