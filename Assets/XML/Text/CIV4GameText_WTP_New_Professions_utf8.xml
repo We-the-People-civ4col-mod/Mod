@@ -30,6 +30,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Красильщик ткани (кампеш):Красильщики ткани (кампеш)</Russian>
+		<Hungarian>Ruhafestő (Kékfa):Ruhafestő (Kékfa)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_DYER_COCHINEAL</Tag>
@@ -55,6 +56,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Красильщик ткани (кошениль):Красильщики ткани (кошениль)</Russian>
+		<Hungarian>Ruhafestő (Bíbortetű):Ruhafestő (Bíbortetű)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_WOOL_DYER_LOGWOOD</Tag>
@@ -80,6 +82,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Красильщик шерсти (кампеш):Красильщики шерсти (кампеш)</Russian>
+		<Hungarian>Gyapjúfestő (Kékfa):Gyapjúfestő (Kékfa)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_WOOL_DYER_COCHINEAL</Tag>
@@ -105,6 +108,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Красильщик шерсти (кошениль):Красильщики шерсти (кошениль)</Russian>
+		<Hungarian>Gyapjúfestő (Bíbortetű):Gyapjúfestő (Bíbortetű)</Hungarian>
     </TEXT>
     <!-- Outdoor Professions -->
     <TEXT>
@@ -135,6 +139,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Охотник на птиц:Охотники на птиц</Russian>
+		<Hungarian>Vadász (Madár)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BIRD_HUNTER_HELP</Tag>
@@ -184,6 +189,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Охотник на морских птиц:Охотники на морских птиц</Russian>
+		<Hungarian>Vadász (Tengerimadár)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SEA_BIRD_HUNTER_HELP</Tag>
@@ -233,6 +239,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Сборщик кампеша:Сборщики кампеша</Russian>
+		<Hungarian>Kékfa Favágó</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BLOODWOOD_CUTTER_HELP</Tag>
@@ -282,6 +289,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Лесоруб (твердая древесина):Лесорубы (твердая древесина)</Russian>
+		<Hungarian>Favágó (Keményfa):Favágó (Keményfa)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HARDWOOD_LUMBERJACK_HELP</Tag>
@@ -335,6 +343,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Russian>
+		<Hungarian>Kecskepásztor</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_GOATHERD_HELP</Tag>
@@ -384,6 +393,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Скотовод (свиньи):Скотоводы (свиньи)</Russian>
+		<Hungarian>Tenyésztő (Disznó)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PIG_BREEDER_HELP</Tag>
@@ -433,6 +443,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Заводчик кур:Заводчики кур</Russian>
+		<Hungarian>Tenyésztő (Csirke)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CHICKEN_BREEDER_HELP</Tag>
@@ -482,6 +493,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Заводчик гусей:Заводчики гусей</Russian>
+		<Hungarian>Tenyésztő (Liba)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_GEESE_BREEDER_HELP</Tag>
@@ -535,6 +547,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Russian>
+		<Hungarian>Gyümölcsszedő</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FRUITS_PICKER_HELP</Tag>
@@ -584,6 +597,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Сборщик риса:Сборщики риса</Russian>
+		<Hungarian>Farmer (Rizs)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_RICE_FARMER_HELP</Tag>
@@ -633,6 +647,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Плантатор маниоки:Плантаторы маниоки</Russian>
+		<Hungarian>Növénytermesztő (Tápióka)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CASSAVA_PLANTER_HELP</Tag>
@@ -682,6 +697,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Сборщик льна:Сборщики льна</Russian>
+		<Hungarian>Növénytermesztő (Len)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FLAX_PLANTER_HELP</Tag>
@@ -731,6 +747,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Сборщик рапса:Сборщики рапса</Russian>
+		<Hungarian>Növénytermesztő (Repce)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_RAPE_PLANTER_HELP</Tag>
@@ -780,6 +797,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Сборщик оливок:Сборщики оливок</Russian>
+		<Hungarian>Olajbogyó Szedő</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_OLIVES_PLANTER_HELP</Tag>
@@ -829,6 +847,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Сборщик чайных листьев:Сборщики чайных листьев</Russian>
+		<Hungarian>Tealevél Gyűjtő</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_YERBA_COLLECTOR_HELP</Tag>
@@ -878,6 +897,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Сборщик стручков ванили:Сборщики стручков ванили</Russian>
+		<Hungarian>Vaníliabab Gyűjtő</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_VANILLA_COLLECTOR_HELP</Tag>
@@ -927,6 +947,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Сборщик кошенили:Сборщики кошенили</Russian>
+		<Hungarian>Bíbortetű Gyűjtő</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COCHINEAL_COLLECTOR_HELP</Tag>
@@ -976,6 +997,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Плантатор арахиса:Плантаторы арахиса</Russian>
+		<Hungarian>Növénytermesztő (Mogyoró)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PEANUT_PLANTER_HELP</Tag>
@@ -1025,6 +1047,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Сборщик каучука:Сборщики каучука</Russian>
+		<Hungarian>Kaucsuk Gyűjtő</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_KAUTSCHUK_COLLECTOR_HELP</Tag>
@@ -1074,6 +1097,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Сборщик кленового сиропа:Сборщики кленового сиропа</Russian>
+		<Hungarian>Juharszirup Gyűjtő</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_MAPLE_SIRUP_COLLECTOR_HELP</Tag>
@@ -1123,6 +1147,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Торфодобытчик:Торфодобытчики</Russian>
+		<Hungarian>Tőzegbányász</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PEAT_CUTTER_HELP</Tag>
@@ -1172,6 +1197,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Добытчик глины:Добытчики глины</Russian>
+		<Hungarian>Agyagbányász</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CLAY_MINER_HELP</Tag>
@@ -1221,6 +1247,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Добытчик угля:Добытчик угля</Russian>
+		<Hungarian>Szénbányász</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COAL_MINER_HELP</Tag>
@@ -1270,6 +1297,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Чайных дел мастер:Чайных дел мастера</Russian>
+		<Hungarian>Teakészítő</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_YERBA_TRADER_HELP</Tag>
@@ -1319,6 +1347,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Винокур (бренди):Винокуры (бренди)</Russian>
+		<Hungarian>Szeszfőző (Gyümölcspárlat)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HOOCH_DISTILLER_HELP</Tag>
@@ -1368,6 +1397,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Производитель мягкой мебели:Производители мягкой мебели</Russian>
+		<Hungarian>Kárpitos</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PADDED_FURNITURE_MAKER_HELP</Tag>
@@ -1413,6 +1443,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Дубильщик свиной кожи:Дубильщики свиной кожи</Russian>
+		<Hungarian>Tímár (Disznóbőr)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_TANNER_PIG_HELP</Tag>
@@ -1458,6 +1489,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Гончар:Гончары</Russian>
+		<Hungarian>Fazekas</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_POTTER_HELP</Tag>
@@ -1503,6 +1535,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Изготовитель полевых инструментов:Изготовители полевых инструментов</Russian>
+		<Hungarian>Mezőgazdasági Szerszámkészítő</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FIELD_WORKER_TOOLS_TRADER_HELP</Tag>
@@ -1548,6 +1581,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Изготовитель домашних инструментов:Изготовители домашних инструментов</Russian>
+		<Hungarian>Háztartási Árugyártó</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HOUSEHOLD_GOODS_TRADER_HELP</Tag>
@@ -1597,6 +1631,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Обжарщик арахиса:Обжарщики арахиса</Russian>
+		<Hungarian>Pörkölő (Mogyoró)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PEANUT_ROASTER_HELP</Tag>
@@ -1646,6 +1681,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Мясник (козы):Мясники (козы)</Russian>
+		<Hungarian>Hentes (Kecske)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_GOATS_HELP</Tag>
@@ -1695,6 +1731,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Мясник (свиньи):Мясники (свиньи)</Russian>
+		<Hungarian>Hentes (Disznó)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_PIGS_HELP</Tag>
@@ -1744,6 +1781,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Мясник (курица):Мясники (курица)</Russian>
+		<Hungarian>Hentes (Csirke)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_CHICKEN_HELP</Tag>
@@ -1793,6 +1831,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Мясник (гуси):Мясники (гуси)</Russian>
+		<Hungarian>Hentes (Liba)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_GEESE_HELP</Tag>
@@ -1846,6 +1885,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Russian>
+		<Hungarian>Fejőnő (Tehén)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_MILKMAID_CATTLE_HELP</Tag>
@@ -1899,6 +1939,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Russian>
+		<Hungarian>Fejőnő (Birka)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_MILKMAID_SHEEP_HELP</Tag>
@@ -1952,6 +1993,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Russian>
+		<Hungarian>Fejőnő (Kecske)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_MILKMAID_GOATS_HELP</Tag>
@@ -2005,6 +2047,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Russian>
+		<Hungarian>Sajtkészítő</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CHEESE_MAKER_HELP</Tag>
@@ -2054,6 +2097,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Маслодел (рапс):Маслоделы (рапс)</Russian>
+		<Hungarian>Olajkészítő (Repce)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_RAPE_OIL_TRADER_HELP</Tag>
@@ -2103,6 +2147,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Маслодел (оливки):Маслоделы (оливки)</Russian>
+		<Hungarian>Olajkészítő (Oliva)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_OLIVE_OIL_TRADER_HELP</Tag>
@@ -2152,6 +2197,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Портной праздничной одежды:Портные праздничной одежды</Russian>
+		<Hungarian>Szabó (Ünnepi Ruha)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FESTIVE_CLOTHES_TAILOR_HELP</Tag>
@@ -2201,6 +2247,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Портной повседневной одежды:Портные повседневной одежды</Russian>
+		<Hungarian>Szabó (Hétköznapi Ruha)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_EVERYDAY_CLOTHES_TAILOR_HELP</Tag>
@@ -2250,6 +2297,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Кондитер (шоколад):Кондитеры (шоколад)</Russian>
+		<Hungarian>Cukrász (Csokoládé)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CONFECTIONER_CHOCOLATE_HELP</Tag>
@@ -2299,6 +2347,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Кондитер (ваниль):Кондитеры (ваниль)</Russian>
+		<Hungarian>Cukrász (Vanília)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CONFECTIONER_VANILLA_HELP</Tag>
@@ -2348,6 +2397,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Портной-кожевник (утепленные куртки):Портные-кожевники (утепленные куртки)</Russian>
+		<Hungarian>Kabátkészítő (Bélelt Bőrkabát)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_LEATHER_PADDER_COATS_HELP</Tag>
@@ -2397,6 +2447,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Портной-кожевник (кожаные сапоги):Портные-кожевники (кожаные сапоги)</Russian>
+		<Hungarian>Csizmadia (Bélelt)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_LEATHER_PADDER_BOOTS_HELP</Tag>
@@ -2450,6 +2501,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Russian>
+		<Hungarian>Szénégető</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CHARCOAL_BURNER_HELP</Tag>
@@ -2503,6 +2555,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Russian>
+		<Hungarian>Puskapor Készítő</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FIREWORKER_HELP</Tag>
@@ -2556,6 +2609,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Russian>
+		<Hungarian>Előadóművész</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_ENTERTAINER_HELP</Tag>
@@ -2609,6 +2663,7 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Russian>
+		<Hungarian>Prostituált</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PROSTITUTE_HELP</Tag>
@@ -2662,6 +2717,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Russian>
+		<Hungarian>Pék (Árpa)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BAKER_RICE</Tag>
@@ -2691,6 +2747,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Пекарь (рис):Пекари (рис)</Russian>
+		<Hungarian>Pék (Rizs)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BAKER_CASSAVA</Tag>
@@ -2720,6 +2777,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Пекарь (маниока):Пекари (маниока)</Russian>
+		<Hungarian>Pék (Tápióka)</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BAKER_HELP</Tag>
@@ -2769,6 +2827,7 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Судья:Судьи</Russian>
+		<Hungarian>Bíró</Hungarian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_JUDGE_HELP</Tag>
