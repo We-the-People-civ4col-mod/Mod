@@ -3598,6 +3598,8 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 
 				// R&R, ray, change for Trait Trader
 				newPrice = newPrice * (100 + GET_PLAYER(getID()).getNativeTradeModifier()) / 100;
+				// WTP, ray, also consider European Trait
+				newPrice = newPrice * (100 + GET_PLAYER(ePlayer).getNativeTradeModifier()) / 100;
 
 				// R&R, ray, small correction to stop at max gold of player
 				int iGoldAvailable = GET_PLAYER(getID()).AI_maxGoldTrade(ePlayer);
@@ -3630,6 +3632,8 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 
 				// R&R, ray, change for Trait Trader
 				newPrice = newPrice * (100 - GET_PLAYER(getID()).getNativeTradeModifier()) / 100;
+				// WTP, ray, also consider European Trait
+				newPrice = newPrice * (100 - GET_PLAYER(ePlayer).getNativeTradeModifier()) / 100;
 
 				//setting value to new price
 				pTheirCounter->clear();
