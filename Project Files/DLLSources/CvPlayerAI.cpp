@@ -3598,14 +3598,14 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 
 				// R&R, ray, change for Trait Trader - START
 				// WTP, ray, also consider European Trait
-				int i TotalNativeTradeModifier = GET_PLAYER(getID()).getNativeTradeModifier() + GET_PLAYER(ePlayer).getNativeTradeModifier();
+				int iTotalNativeTradeModifier = GET_PLAYER(getID()).getNativeTradeModifier() + GET_PLAYER(ePlayer).getNativeTradeModifier();
 				// safety check to ensure that no numbers do not get too extreme
-				if (TotalNativeTradeModifier) > 75)
+				if (iTotalNativeTradeModifier) > 75)
 				{
-					TotalNativeTradeModifier = 75;
+					iTotalNativeTradeModifier = 75;
 				}
 				// here we calculate the price
-				newPrice = newPrice * (100 + TotalNativeTradeModifier) / 100;
+				newPrice = newPrice * (100 + iTotalNativeTradeModifier) / 100;
 				// R&R, ray, change for Trait Trader - END
 
 				// R&R, ray, small correction to stop at max gold of player
@@ -3639,14 +3639,14 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 
 				// R&R, ray, change for Trait Trader - START
 				// WTP, ray, also consider European Trait
-				int i TotalNativeTradeModifier = GET_PLAYER(getID()).getNativeTradeModifier() + GET_PLAYER(ePlayer).getNativeTradeModifier();
+				int iTotalNativeTradeModifier = GET_PLAYER(getID()).getNativeTradeModifier() + GET_PLAYER(ePlayer).getNativeTradeModifier();
 				// safety check to ensure that no negative numbers occurs
-				if (TotalNativeTradeModifier) > 75)
+				if (iTotalNativeTradeModifier) > 75)
 				{
-					TotalNativeTradeModifier = 75;
+					iTotalNativeTradeModifier = 75;
 				}
 				// here we calculate the price
-				newPrice = newPrice * (100 - TotalNativeTradeModifier) / 100;
+				newPrice = newPrice * (100 - iTotalNativeTradeModifier) / 100;
 				// R&R, ray, change for Trait Trader - END
 				
 				//setting value to new price
