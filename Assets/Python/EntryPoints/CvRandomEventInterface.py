@@ -8218,6 +8218,29 @@ def getHelpHighwaymanAttack(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_HIGHWAYMAN_ATTACK_HELP", ())
 	return szHelp
 
+######## Land Transport Attack ###########
+
+def spawnNativeUnitAdjacentToUnitAndFriendlyOnSamePlot(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
+	# This part spawns the Barbarian
+	iHostileUnitClassTypeToSpawn = event.getGenericParameter(1)
+	iNumHostilesToSpawn = event.getGenericParameter(2)
+	for iX in range(iNumHostilesToSpawn):
+		unitThatTriggered.spawnBarbarianUnitOnAdjacentPlotOfUnit(iHostileUnitClassTypeToSpawn)
+	# This Part spawns the Friendly
+	iOwnUnitClassTypeToSpawn = event.getGenericParameter(4)
+	iNumOwnToSpawn = event.getGenericParameter(3)
+	for iX in range(iNumOwnToSpawn):
+		unitThatTriggered.spawnOwnPlayerUnitOnPlotOfUnit(iOwnUnitClassTypeToSpawn)
+
+def getHelpLandTransportAttack(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_HELP", ())
+	return szHelp
+
 ######## Milkmaid in Need ###########
 
 def hasCattleBonus(argsList):

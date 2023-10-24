@@ -1033,6 +1033,31 @@
         <Russian>На дилижанс нападают разбойники. Храбрые пассажиры защищаются.</Russian>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_LANDTRANSPORT_ATTACK</Tag>
+        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] wagon train was attacked by native hostile warrior but brave coachmen and guards defended it.</English>
+        <German>Ein Gerücht macht die Runde: Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Wagenzug wurde von einem feindlichen Indianer-Trupp angegriffen, aber die mutigen Wachen und Kutscher haben ihn verteidigt.</German>
+     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_LANDTRANSPORT_ATTACK_1</Tag>
+        <English>Lured by the prospects of rich booty, a hostile Indian troop has attacked one a [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]. They are shooting incendiary arrows! Now we have to take cover and save what can be saved.</English>
+        <German>Angelockt von den Aussichten auf reiche Beute hat ein feindlicher Indianer-Trupp einen [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] angegriffen. Sie schießen mit Brandpfeilen! Jetzt heißt es in Deckung gehen und retten was zu retten ist.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_1</Tag>
+        <English>We will never go down without a fight!</English>
+        <German>Wir werden niemals kampflos untergehen!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_2</Tag>
+        <English>Give them the goods, then maybe let go the wagons!</English>
+        <German>Gebt ihnen die Waren, dann lassen Sie vielleicht die Wagen ziehen!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_HELP</Tag>
+        <English>A hostile Indian troop attacks the wagon train. A few brave coachmen and guards defend it.</English>
+        <German>Ein feindlicher Indianer-Trupp greift den Wagenzug an. Ein paar mutige Kutscher und Wachen verteidigen ihn.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MILKMAID_IN_NEED</Tag>
         <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] milkmaid is being forced to marry her uncle. She asks the governor for help.</English>
         <French>Selon une rumeur, une laitière [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] est obligée d'épouser son oncle. Elle appelle le gouverneur à la rescousse.</French>
