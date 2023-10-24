@@ -664,7 +664,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_26</Tag>
-		<English>[BOLD]Don't put troops on your first frigate![\BOLD]When you get your first frigate, whether you buy it, build it, or get it from a quest or a Founding Father, the King is going to commandeer it for the Royal Navy. Don't worry. You'll get it back in ten turns. However if you put any of your soldiers aboard they'll be shanghaied into the Royal Marines. You'll never see those troops again.</English>
+		<English>[BOLD]Don't put troops on your first frigate![\BOLD][NEWLINE]When you get your first frigate, whether you buy it, build it, or get it from a quest or a Founding Father, the King is going to commandeer it for the Royal Navy. Don't worry. You'll get it back in ten turns. However if you put any of your soldiers aboard they'll be shanghaied into the Royal Marines. You'll never see those troops again.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_27</Tag>
