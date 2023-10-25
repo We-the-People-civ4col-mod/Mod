@@ -1036,26 +1036,31 @@
         <Tag>TXT_KEY_EVENTTRIGGER_LANDTRANSPORT_ATTACK</Tag>
         <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] wagon train was attacked by native hostile warrior. If the settler can defend it?</English>
         <German>Ein Gerücht macht die Runde: Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Wagenzug wurde von einem feindlichen Indianer-Trupp angegriffen. Ob die Siedler ihn verteidigen können?</German>
+        <Russian>Ходят слухи, что индейцы напали на обоз [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]. Смогут ли ли колонисты защитить его?</Russian>
      </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_LANDTRANSPORT_ATTACK_1</Tag>
         <English>Lured by the prospects of rich booty, a hostile Indian troop has attacked one a [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]. They are shooting incendiary arrows! Now we have to take cover and save what can be saved.</English>
         <German>Angelockt von den Aussichten auf reiche Beute hat ein feindlicher Indianer-Trupp einen [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] angegriffen. Sie schießen mit Brandpfeilen! Jetzt heißt es in Deckung gehen und retten was zu retten ist.</German>
+        <Russian>Соблазнившись перспективой богатой добычи, отряд злобных индейцев напал на [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]. Они стреляют зажигательными стрелами! Все в укрытие! Спасайтесь!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_1</Tag>
         <English>We will never go down without a fight!</English>
         <German>Wir werden niemals kampflos untergehen!</German>
+        <Russian>Мы никогда не сдадимся без боя!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_2</Tag>
         <English>Give them the goods, then maybe let go the wagons!</English>
         <German>Gebt ihnen die Waren, dann lassen Sie vielleicht die Wagen ziehen!</German>
+        <Russian>Отдадим им товары и, может, они нас отпустят...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_HELP</Tag>
         <English>A hostile Indian troop attacks the wagon train. A few brave coachmen and guards defend it.</English>
         <German>Ein feindlicher Indianer-Trupp greift den Wagenzug an. Ein paar mutige Kutscher und Wachen verteidigen ihn.</German>
+        <Russian>Отряд индейцев нападает на торговый обоз. Храбрые колонисты пытаюстя обороняться.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MILKMAID_IN_NEED</Tag>
@@ -9692,14 +9697,14 @@
         <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] an offier intends to duel with another gentleman.</English>
         <French>Un officier a l'intention de provoquer en duel un autre gentilhomme à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] will sich ein Offizier mit einen anderen Ehrenmann duellieren.</German>
-        <Russian>В городе [COLOR_SELECTED_TEXT]%s2[COLOR REVERT] офицер вызвал на дуэль горожанина.</Russian>
+        <Russian>В городе [COLOR_SELECTED_TEXT]%s2[COLOR_REVERT] офицер вызвал на дуэль горожанина.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_OFFICERS_WIFE</Tag>
         <English>The wife of an officer has apparently once too much cheated on her husband. The husband - an officer of our garrison - thinks that this can be solved only in one way. He has challenged the other man of honor to a duel.</English>
         <French>La femme d'un officier a décidé de batifoler avec un autre une fois de trop. Le mari - un officier de notre garnison - pense qu'il n'y a plus qu'une solution. Il a provoqué l'autre homme d'honneur en duel</French>
         <German>Milord, die Ehefrau eines Offiziers hat offenbar einmal zu viel mit einem anderen angebandelt. Der Ehemann - ein Offizier unserer Garnison - meint, dass kann nur auf eine Weise aus der Welt geschafft werden. Er hat den anderen Ehrenmann zum Duell gefordert.</German>
-        <Russian>Кажется, женщина изменила своему супругу. Муж, молодой офицер нашего гарнизона, считает, что решить эту проблему можно только одним способом - дуэль чести</Russian>
+        <Russian>В одной из наших колоний молодой офицер уличил свою жену в неверности и считает, что решить эту проблему можно только одним способом - дуэль чести!</Russian>
     </TEXT>
    <TEXT>
         <Tag>TXT_KEY_EVENT_OFFICERS_WIFE_1</Tag>
