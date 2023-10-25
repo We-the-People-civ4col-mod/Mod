@@ -69,7 +69,7 @@ class DomesticAdvisorTable:
 		self.__enableSort()
 
 	def setRowHeight(self, iHeight = 0):
-		self.__setRowHeight(iRows)
+		self.__setRowHeight(iHeight)
 
 	# note 0 means default height
 	def setNumRows(self, iRows, iHeight = 0):
