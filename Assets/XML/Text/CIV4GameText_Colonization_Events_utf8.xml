@@ -1555,7 +1555,7 @@
         <German>Überglückliche [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Soldaten feiern, dass sie den Krieg überlebt haben.</German>
         <Italian>I soldati [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] e le loro mogli celebrano la fine della guerra, creando un boom di nascite.</Italian>
         <Spanish>Los soldados [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] y sus mujeres están celebrando el final de la guerra con un "baby boom".</Spanish>
-        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] солдаты и их жены отмечают окончание войны, повышая демографию страны.</Russian>
+        <Russian>Солдаты [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] и их жены отмечают окончание войны, повышая демографию страны.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BABY_BOOM_1</Tag>
