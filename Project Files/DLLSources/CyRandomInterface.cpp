@@ -4,6 +4,7 @@
 using namespace boost::python;
 
 #include <boost/python/class.hpp>
+#include <boost/python/detail/defaults_gen.hpp>
 namespace python = boost::python;
 
 BOOST_PYTHON_MEMBER_FUNCTION_OVERLOADS(CvRandom_get_overloads, CvRandom::get, 2, 2)
