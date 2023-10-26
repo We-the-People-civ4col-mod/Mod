@@ -7,6 +7,8 @@
 #include "CyGlobalContext.h"
 #include "CyCity.h"
 
+#include <boost/python/class.hpp>
+
 void CyCityPythonInterface1(python::class_<CyCity>& x);
 void CyCityPythonInterface2(python::class_<CyCity>& x);
 void CyCityPythonInterface3(python::class_<CyCity>& x);

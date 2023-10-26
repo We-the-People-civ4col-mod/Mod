@@ -14,6 +14,9 @@
 #include "CyTeam.h"
 #include "CyUserSettings.h"
 
+#include <boost/python/class.hpp>
+#include <boost/python/manage_new_object.hpp>
+
 
 void CyGlobalContextPythonInterface7(python::class_<CyGlobalContext>& x)
 {

@@ -5004,7 +5004,7 @@ public:
 	inline const InfoArray<UnitClassTypes    , int>& getAllowedUnitClasses          () const { return m_info_AllowUnits        ; }
 	inline const InfoArray<YieldTypes        , int>& getAllowedYields               () const { return m_info_AllowYields       ; }
 
-	inline const bool getAllowFoundCity                    () const { return m_iAllowFoundCity        ; }
+	inline const int getAllowFoundCity                     () const { return m_iAllowFoundCity        ; }
 
 	// city
 	inline int getCanUseDomesticMarket                     () const { return m_iCanUseDomesticMarket  ; }

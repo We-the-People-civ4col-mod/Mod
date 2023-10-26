@@ -5,6 +5,8 @@
 #include "CyDeal.h"
 #include "CyReplayInfo.h"
 
+#include <boost/python/class.hpp>
+
 //
 // published python interface for CyDeal
 //

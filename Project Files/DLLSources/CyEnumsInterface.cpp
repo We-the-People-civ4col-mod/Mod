@@ -3,6 +3,8 @@
 #include "CvGameCoreDLLUnDefNew.h"
 # include <boost/python/enum.hpp>
 #include "CvGameCoreDLLDefNew.h"
+
+namespace python = boost::python;
 //
 // Python interface for free enums
 //

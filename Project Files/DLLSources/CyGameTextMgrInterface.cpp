@@ -1,5 +1,9 @@
 #include "CvGameCoreDLL.h"
 #include "CyGameTextMgr.h"
+
+#include <boost/python/class.hpp>
+namespace python = boost::python;
+
 //
 // published python interface for CyGameTextMgr
 //

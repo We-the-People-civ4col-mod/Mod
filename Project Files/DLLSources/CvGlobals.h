@@ -1528,9 +1528,9 @@ protected:
 
 		// Erik: These are from K-Mod
 		// more reliable versions of the 'gDLL->xxxKey' functions:
-		inline bool altKey() { return (GetKeyState(VK_MENU) & 0x8000); }
-		inline bool ctrlKey() { return (GetKeyState(VK_CONTROL) & 0x8000); }
-		inline bool shiftKey() { return (GetKeyState(VK_SHIFT) & 0x8000); }
+		inline bool altKey()   { return (GetKeyState(VK_MENU   ) & 0x8000) != 0; }
+		inline bool ctrlKey()  { return (GetKeyState(VK_CONTROL) & 0x8000) != 0; }
+		inline bool shiftKey() { return (GetKeyState(VK_SHIFT  ) & 0x8000) != 0; }
 		// NOTE: I've replaced all calls to the gDLL key functions with calls to these functions.
 
 		inline bool getUSE_AI_UNIT_UPDATE_CALLBACK() { return m_bUSE_AI_UNIT_UPDATE_CALLBACK; }

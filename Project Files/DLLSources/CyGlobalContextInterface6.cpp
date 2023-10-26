@@ -13,6 +13,7 @@
 #include "CvInfos.h"
 #include "CyTeam.h"
 
+#include <boost/python/class.hpp>
 
 void CyGlobalContextPythonInterface6(python::class_<CyGlobalContext>& x)
 {

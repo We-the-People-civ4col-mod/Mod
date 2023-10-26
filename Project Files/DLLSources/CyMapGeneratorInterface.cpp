@@ -1,8 +1,8 @@
 #include "CvGameCoreDLL.h"
 #include "CyMapGenerator.h"
-//#include "CvStructs.h"
-//# include <boost/python/manage_new_object.hpp>
-//# include <boost/python/return_value_policy.hpp>
+
+#include <boost/python/class.hpp>
+namespace python = boost::python;
 
 //
 // published python interface for CyMapGenerator

@@ -235,16 +235,9 @@ static inline T SetBits(T &x, const int iIndex, const int iNumBits, const T iVal
 // Boost Python
 //
 #ifdef MakefileCompilation
-# include <boost/python/list.hpp>
-# include <boost/python/tuple.hpp>
-# include <boost/python/class.hpp>
-# include <boost/python/manage_new_object.hpp>
-# include <boost/python/return_value_policy.hpp>
-# include <boost/python/object.hpp>
-# include <boost/python/def.hpp>
-
-namespace python = boost::python;
-
+#include <boost/graph/detail/is_same.hpp>
+#include <boost/noncopyable.hpp>
+#include <boost/static_assert.hpp>
 #else
 
 // write some garbage code to kill IntelliSense errors
@@ -319,7 +312,6 @@ std::string GetDLLPath(bool bLoadDLLPath = true);
 #include "CvUnit.h"
 #include "CvCity.h"
 #include "FProfiler.h"
-#include "CyCity.h"
 #include "CvInfos.h"
 #include "CvTeamAI.h"
 #include "CvDLLPythonIFaceBase.h"
