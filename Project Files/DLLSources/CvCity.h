@@ -901,8 +901,9 @@ protected:
 	std::vector< std::pair < float, float> > m_kWallOverridePoints;
 	std::vector<EventTypes> m_aEventsOccured;
 	std::vector<BuildingYieldChange> m_aBuildingYieldChange;
+	public:
 	std::vector<CvUnit*> m_aPopulationUnits;
-
+	protected:
 	// CACHE: cache frequently used values
 	mutable int	m_iPopulationRank;
 	mutable bool m_bPopulationRankValid;

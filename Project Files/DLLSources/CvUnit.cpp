@@ -690,6 +690,8 @@ void CvUnit::removeFromMap()
 
 void CvUnit::addToMap(Coordinates targetCoord)
 {
+	FAssert(!isOnMap());
+
 	if(!targetCoord.isInvalidPlotCoord())
 	{
 		//--------------------------------

@@ -711,13 +711,16 @@ void CvPlayerAI::AI_unitUpdate()
 						}
 						if (bRemove)
 						{
-							// make sure the unit can have the default profession
-							// this fails even if it can if leaving is blocked by disorder
-							//    Nightinggale
-							ProfessionTypes eDefaultProfession = GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession();
-							if (pRemoveUnit->canHaveProfession(eDefaultProfession, false))
+							//if (getUnit(pRemoveUnit->getID()) == NULL)
 							{
-								pLoopCity->removePopulationUnit(pRemoveUnit, false, eDefaultProfession);
+								// make sure the unit can have the default profession
+								// this fails even if it can if leaving is blocked by disorder
+								//    Nightinggale
+								ProfessionTypes eDefaultProfession = GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession();
+								if (pRemoveUnit->canHaveProfession(eDefaultProfession, false, NULL, true))
+								{
+									pLoopCity->removePopulationUnit(pRemoveUnit, false, eDefaultProfession);
+								}
 							}
 						}
 					}

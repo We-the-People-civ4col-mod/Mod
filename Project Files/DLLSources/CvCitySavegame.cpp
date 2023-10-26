@@ -627,6 +627,11 @@ void CvCity::read(CvSavegameReader reader)
 	this->setAutoThresholdCache(); // transport feeder - Nightinggale
 	cache_storageLossTradeValues_usingRawData(); //caching storage loss trade values
 
+	for (uint i = 0; i < m_aPopulationUnits.size(); i++)
+	{
+		FAssert(m_aPopulationUnits[i]->getProfession() != PROFESSION_COLONIST);
+		m_aPopulationUnits[i]->setProfession(m_aPopulationUnits[i]->getProfession());
+	}
 }
 
 void CvCity::write(CvSavegameWriter writer)

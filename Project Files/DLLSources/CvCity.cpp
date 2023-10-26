@@ -8980,9 +8980,11 @@ bool CvCity::removePopulationUnit(CvUnit* pUnit, bool bDelete, ProfessionTypes e
 	{
 		pUnit->updateOwnerCache(-1);
 		SAFE_DELETE(pUnit);
+		//area()->changeUnitsPerPlayer(getOwnerINLINE(), -1);
 	}
 	else
 	{
+		FAssertMsg(GET_PLAYER(getOwnerINLINE()).getUnit(pUnit->getID()) == NULL, "unit cannot already exist on map");
 		//transfer back to player
 		GET_PLAYER(getOwnerINLINE()).addExistingUnit(pUnit);
 		pUnit->addToMap(coord());
@@ -9079,7 +9081,8 @@ int CvCity::getPopulationUnitIndex(const CvUnit& kUnit) const
 {
 	for(uint i=0;i<m_aPopulationUnits.size();i++)
 	{
-		if(m_aPopulationUnits[i] == &kUnit)
+		CvUnit* popUnit = m_aPopulationUnits[i];
+		if(popUnit == &kUnit)
 		{
 			return i;
 		}

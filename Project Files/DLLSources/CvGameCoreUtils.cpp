@@ -2461,6 +2461,14 @@ CvWString getUnitAIStateString(UnitAIStates eUnitAIState)
 	return szString;
 }
 
+struct UnitIdComparator {
+	int id;
+	UnitIdComparator(int i) : id(i) {}
+	bool operator()(const std::pair<int, CvCity*>& pCity) const {
+		return pCity.first == id;
+	}
+};
+
 
 /// post load function - start - Nightinggale
 //
@@ -2493,6 +2501,8 @@ void postLoadGameFixes()
 
 	// deal with players
 
+	std::vector<std::pair<int, CvCity*> > cityUnits;
+
 	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
 	{
 		// deal with each players' cities
@@ -2501,9 +2511,53 @@ void postLoadGameFixes()
 		for (CvCity* pLoopCity = GET_PLAYER(ePlayer).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(ePlayer).nextCity(&iLoop))
 		{
 			pLoopCity->updateSlaveWorkerProductionBonus();
-		}
+			
+			for (uint i = 0; i < pLoopCity->m_aPopulationUnits.size(); i++)
+			{
+				CvUnit* pUnit = pLoopCity->m_aPopulationUnits[i];
+				FAssert(!pUnit->isOnMap());
 
-		CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+
+				cityUnits.push_back(std::make_pair(pLoopCity->m_aPopulationUnits[i]->getID(), pLoopCity));
+				FAssert(pUnit->getProfession() != PROFESSION_COLONIST);
+			}
+		}
+		
+		CvPlayerAI& kPlayer = GET_PLAYER(ePlayer);
+
+		
+
+		// Check if any citizen is also on the map
+		int jLoop;
+		for (CvUnit* pLoopUnit = kPlayer.firstUnit(&jLoop); pLoopUnit != NULL; pLoopUnit = kPlayer.nextUnit(&jLoop))
+		{
+			std::vector<std::pair<int, CvCity*> >::iterator it = std::find_if(cityUnits.begin(), cityUnits.end(), UnitIdComparator(pLoopUnit->getID()));
+
+			if (it != cityUnits.end())
+			{
+				CvUnit* pUnit = kPlayer.getUnit(it->first);
+				FAssertMsg(false, "Unit is both on the map and inside a city!");
+				CvCity* pCity = it->second;
+				// Can't use CvCity::removePopulationUnit since it checks for the unit being on the map
+
+				// Need to get the pointer of the duplicated unit inside the city since they share id but not address
+				//pCity->removePopulationUnit(pUnit, false, pUnit->getProfession());
+				CvUnit* pEquivalentUnitInsideCity = pCity->getPopulationUnitById(it->first);
+				pCity->removePopulationUnit(pEquivalentUnitInsideCity, true, pUnit->getProfession());
+				// TODO: update units per area!
+				
+				//pCity->m_aPopulationUnits.erase(std::remove(pCity->m_aPopulationUnits.begin(), pCity->m_aPopulationUnits.end(), pEquivalentUnitInsideCity));
+			}
+		}
+		cityUnits.clear();
+
+		/*
+		for (uint i = 0; i < cityUnits.size(); i++)
+		{
+
+			
+		}
+		*/
 
 		kPlayer.postLoadFixes();
 	}
