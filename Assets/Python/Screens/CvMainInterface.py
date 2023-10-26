@@ -279,8 +279,24 @@ iGlobeLayerOptionHeight = 24
 
 g_pSelectedUnit = 0
 
-class CvMainInterface:
+class CvMainInterface(object):
 	"Main Interface Screen"
+	def __init__(self):
+		self.screen_name = "MainInterface"
+		self.screen_num = CvScreenEnums.MAIN_INTERFACE
+
+
+	def __getattr__(self, item):
+		""" This method allows to initialize the self.screen at when it is first used, and not before"""
+		if item == "screen":
+			self.screen = self.get_new_screen()
+			return self.screen
+		return super(CvMainInterface, self).__getattr__(item)
+
+	def get_new_screen(self):
+		"""The role if this function is to return a new  instance of screen if the API does require a new object
+		If it id well done, creating *one* should be enough"""
+		return CyGInterfaceScreen(self.screen_name, self.screen_num )
 
 	def numPlotListButtons( self ):
 		return NUM_PLOT_LIST_BUTTONS
@@ -564,7 +580,7 @@ class CvMainInterface:
 		g_NumActionInfos = gc.getNumActionInfos()
 
 	# INIT MAIN INTERFACE SCREEN
-		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
+		screen = self.screen
 		self.SetGlobals (screen)
 		screen.setForcedRedraw(True)
 		screen.setMainInterface(True)
@@ -1188,7 +1204,7 @@ class CvMainInterface:
 	# Will update the screen (every 250 MS)
 	def updateScreen( self ):
 
-		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
+		screen =  self.screen
 
 		messageControl = CyMessageControl()
 
@@ -1259,7 +1275,7 @@ class CvMainInterface:
 	# Will redraw the interface
 	def redraw( self ):
 
-		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
+		screen =  self.screen
 
 		if not INITIALIZED:
 			self.SetGlobals(screen)
@@ -1318,7 +1334,7 @@ class CvMainInterface:
 	def updateEndTurnButton( self ):
 
 		global g_eEndTurnButtonState
-		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
+		screen = self.screen
 
 		pHeadSelectedCity = CyInterface().getHeadSelectedCity()
 
@@ -1356,7 +1372,7 @@ class CvMainInterface:
 
 	# Update the miscellaneous buttons
 	def updateMiscButtons( self ):
-		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
+		screen = self.screen
 		
 		if (CyInterface().shouldDisplayFlag() and CyInterface().getShowInterface() == InterfaceVisibility.INTERFACE_SHOW):
 			screen.show("CivilizationFlag")
@@ -1387,7 +1403,7 @@ class CvMainInterface:
 
 	# Update plot List Buttons
 	def updatePlotListButtons( self ):
-		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
+		screen = self.screen
 		xResolution = screen.getXResolution()
 		yResolution = screen.getYResolution()
 		pHeadSelectedCity = CyInterface().getHeadSelectedCity()
@@ -1721,7 +1737,7 @@ class CvMainInterface:
 	# Will hide and show the selection buttons and their associated buttons
 	def updateSelectionButtons( self ):
 		global g_pSelectedUnit
-		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
+		screen = self.screen
 
 		# Find out our resolution
 		pHeadSelectedCity = CyInterface().getHeadSelectedCity()
@@ -2073,7 +2089,7 @@ class CvMainInterface:
 		return 0
 	# Will update the citizen buttons
 	def updateCitizenButtons( self ):
-		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
+		screen = self.screen
 		xResolution = screen.getXResolution()
 		yResolution = screen.getYResolution()
 
@@ -2299,7 +2315,7 @@ class CvMainInterface:
 	# Will update the Garrison and Transport Panels
 	def updateGarrisonAndTransports( self ):
 	
-		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
+		screen = self.screen
 		pHeadSelectedCity = CyInterface().getHeadSelectedCity()
 
 #TAC --->
@@ -2418,7 +2434,7 @@ class CvMainInterface:
 	# Will update the game data strings
 	def updateGameDataStrings( self ):
 
-		screen = CyGInterfaceScreen( "MainInterface", CvScreenEnums.MAIN_INTERFACE )
+		screen = self.screen
 		screen.hide("ClockText")
 		bShift = CyInterface().shiftKey()
 
@@ -2434,7 +2450,9 @@ class CvMainInterface:
 		if ( ePlayer < 0 or ePlayer >= gc.getMAX_PLAYERS() ):
 			return 0
 
-		if ( CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_HIDE_ALL and CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_MINIMAP_ONLY  and CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_ADVANCED_START):
+		if ( CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_HIDE_ALL
+			 and CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_MINIMAP_ONLY
+			 and CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_ADVANCED_START):
 			szTimeText = unicode(CyGameTextMgr().getInterfaceTimeStr(gc.getGame().getActivePlayer()))
 			screen.setLabel("TimeText", "Background", self.setFontSize(szTimeText, 1), CvUtil.FONT_RIGHT_JUSTIFY, xResolution - 17, 17, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, TIMETEXT_ID, -1 )
 			if (CyUserProfile().isClockOn()):
@@ -2450,7 +2468,7 @@ class CvMainInterface:
 
 	# Will update the selection Data Strings
 	def updateCityScreen( self ):
-		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
+		screen = self.screen
 		pHeadSelectedCity = CyInterface().getHeadSelectedCity()
 
 		# Find out our resolution
@@ -2909,7 +2927,7 @@ class CvMainInterface:
 	# Will set the table to display the out put of a city or the players whole empire
 	def updateResourceTable( self ):
 
-		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
+		screen = self.screen
 		ResourceHideList = []
 
 		if not CyInterface().isCityScreenUp():
@@ -3027,7 +3045,7 @@ class CvMainInterface:
 	def updateInfoPaneStrings( self ):
 		
 		iRow = 0
-		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
+		screen = self.screen
 
 		pHeadSelectedCity = CyInterface().getHeadSelectedCity()
 		pHeadSelectedUnit = CyInterface().getHeadSelectedUnit()
@@ -3277,7 +3295,7 @@ class CvMainInterface:
 
 	# Will update the scores
 	def updateScoreStrings( self ):
-		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
+		screen =  self.screen
 
 		xResolution = screen.getXResolution()
 		yResolution = screen.getYResolution()
@@ -3422,7 +3440,7 @@ class CvMainInterface:
 
 	# Will update the help Strings
 	def updateHelpStrings( self ):
-		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
+		screen = self.screen
 
 		if ( CyInterface().getShowInterface() == InterfaceVisibility.INTERFACE_HIDE_ALL ):
 			screen.setHelpTextString("")
@@ -3433,7 +3451,7 @@ class CvMainInterface:
 
 	# Will set the promotion button position
 	def setPromotionButtonPosition( self, szName, iPromotionCount ):
-		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
+		screen = self.screen
 		yResolution = screen.getYResolution()
 
 		if ( CyInterface().getShowInterface() == InterfaceVisibility.INTERFACE_SHOW ):
@@ -3442,7 +3460,7 @@ class CvMainInterface:
 	# Will set the selection button position
 	def setScoreTextPosition( self, szButtonID, iWhichLine ):
 
-		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
+		screen = self.screen
 		yResolution = screen.getYResolution()
 		if ( CyInterface().getShowInterface() == InterfaceVisibility.INTERFACE_SHOW ):
 			yCoord = yResolution - 180
@@ -3453,7 +3471,7 @@ class CvMainInterface:
 	# Will build the globeview UI
 	def updateGlobeviewButtons( self ):
 		kInterface = CyInterface()
-		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
+		screen = self.screen
 		xResolution = screen.getXResolution()
 		yResolution = screen.getYResolution()
 
@@ -3464,7 +3482,7 @@ class CvMainInterface:
 		# Positioning things based on the visibility of the globe
 		#screen.setHelpTextArea( HELPTEXT_AREA_MAX_WIDTH, FontTypes.SMALL_FONT, HELTTEXT_AREA_X_MARGIN, yResolution - (MINI_MAP_RADIUS - 80), -0.1, False, "", True, False, CvUtil.FONT_LEFT_JUSTIFY, HELPTEXT_AREA_MIN_WIDTH)
 		# Set base Y position for the LayerOptions, if we find them
-		if CyInterface().getShowInterface() == InterfaceVisibility.INTERFACE_HIDE:
+		if kInterface.getShowInterface() == InterfaceVisibility.INTERFACE_HIDE:
 			iY = yResolution - iGlobeLayerOptionsY_Minimal
 		else:
 			iY = yResolution - LOWER_RIGHT_CORNER_BACKGROUND_HEIGHT
@@ -3475,7 +3493,8 @@ class CvMainInterface:
 			screen.hide(szName)
 
 		# Setup the GlobeLayer panel
-		if kEngine.isGlobeviewUp() and CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_HIDE_ALL:
+		if kEngine.isGlobeviewUp() \
+		  and kInterface.getShowInterface() != InterfaceVisibility.INTERFACE_HIDE_ALL:
 			# set up panel
 			if iCurrentLayerID != -1 and kGLM.getLayer(iCurrentLayerID).getNumOptions() != 0:
 				bHasOptions = True
@@ -3567,13 +3586,13 @@ class CvMainInterface:
 
 	# Update minimap buttons
 	def setMinimapButtonVisibility( self, bVisible ):
-		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
+		screen = self.screen
 		kInterface = CyInterface()
 		kGLM = CyGlobeLayerManager()
 		xResolution = screen.getXResolution()
 		yResolution = screen.getYResolution()
 
-		if (CyInterface().isCityScreenUp() or (CyInterface().getHeadSelectedCity() != None and not CyEngine().isGlobeviewUp())):
+		if (kInterface.isCityScreenUp() or (kInterface.getHeadSelectedCity() != None and not CyEngine().isGlobeviewUp())):
 			bVisible = False
 
 		kMainButtons = ["UnitIcons", "Grid", "BareMap", "Yields", "ScoresVisible", "ResourceIcons"]
@@ -3610,7 +3629,7 @@ class CvMainInterface:
 		global AUTOMATION_MANAGMENT_PANEL_UP
 		global MAP_MANAGMENT_PANEL_UP
 		global SHOW_ALL_YIELDS
-		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
+		screen = self.screen
 
 		if (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED):
 
