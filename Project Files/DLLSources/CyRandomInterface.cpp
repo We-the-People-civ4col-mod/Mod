@@ -4,6 +4,7 @@
 using namespace boost::python;
 
 #include <boost/python/class.hpp>
+#include <boost/python/args_fwd.hpp>
 #include <boost/python/detail/defaults_gen.hpp>
 namespace python = boost::python;
 
