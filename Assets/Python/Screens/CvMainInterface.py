@@ -284,14 +284,22 @@ class CvMainInterface(object):
 	def __init__(self):
 		self.screen_name = "MainInterface"
 		self.screen_num = CvScreenEnums.MAIN_INTERFACE
-
+		self.fully_initialized = False
+		self.BOTTOM_BUTTON_ROWS = 3
 
 	def __getattr__(self, item):
 		""" This method allows to initialize the self.screen at when it is first used, and not before"""
 		if item == "screen":
 			self.screen = self.get_new_screen()
 			return self.screen
-		return super(CvMainInterface, self).__getattr__(item)
+		elif item == "TableYields":
+			self.init_table_yields()
+			return self.TableYields
+		try:
+			return super(CvMainInterface, self).__getattribute__(item)
+		except AttributeError:
+			print "could not resolve self.%s in CvMainInterface Context"%(item)
+
 
 	def get_new_screen(self):
 		"""The role if this function is to return a new  instance of screen if the API does require a new object
@@ -561,15 +569,21 @@ class CvMainInterface(object):
 			size = 4
 		return "<font=" + str(size) + ">" + Text + "</font>"
 
-	# Will Initialize the majority of Background panels and Widgets
-	def interfaceScreen ( self ):
-		if (CyGame().isPitbossHost()):
-			return
-
+	def init_table_yields(self):
+		"""This function reinstantiates properly the TableYields member"""
 		self.TableYields = []
 		for iYield in range(YieldTypes.NUM_YIELD_TYPES):
 			if gc.getYieldInfo(iYield).isCargo():
 				self.TableYields.append(iYield)
+
+	# Will Initialize the majority of Background panels and Widgets
+	def interfaceScreen ( self ):
+		print "I will now calculate everything on CvMainInterface"
+		if (CyGame().isPitbossHost()):
+			return
+
+		self.init_table_yields()
+
 	# GLOBAL NUM VARIABLES SET
 		global g_NumEmphasizeInfos
 		global g_NumHurryInfos
@@ -669,7 +683,7 @@ class CvMainInterface(object):
 		iCumulativeY += CITY_MULTI_TAB_SIZE
 
 	# CITY BUILDING MULTILIST
-		self.BOTTOM_BUTTON_ROWS = 3
+
 
 		screen.addMultiListControlGFC("CityBuildingSelectionMultiList", u"", CITIZEN_BAR_WIDTH + CITY_VIEW_BOX_HEIGHT_AND_WIDTH + (STACK_BAR_HEIGHT / 2) - MAP_EDGE_MARGIN_WIDTH, CITY_TITLE_BAR_HEIGHT + (STACK_BAR_HEIGHT / 2), BUILD_AREA_WIDTH, BUILD_AREA_HEIGHT - STACK_BAR_HEIGHT, self.BOTTOM_BUTTON_ROWS, BOTTOM_BUTTON_SIZE, BOTTOM_BUTTON_SIZE, TableStyles.TABLE_STYLE_STANDARD )
 		self.appendtoHideState(screen, "CityBuildingSelectionMultiList", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
@@ -1583,7 +1597,15 @@ class CvMainInterface(object):
 					elif pHeadSelectedCity.AI_getEmphasizeYieldCount(i) < 0:
 						screen.show("MapYieldDe-Emphasize" + str(i))
 
-				screen.addMultiListControlGFC("MapBuildingSelectionMultiList", u"", 0, DOMESTIC_ADVISOR_HEIGHT + 3, MINIMAP_WIDTH - 3, DOMESTIC_ADVISOR_SPACE - LOWER_SADDLE_HEIGHT - 6, self.BOTTOM_BUTTON_ROWS, BOTTOM_BUTTON_SIZE, BOTTOM_BUTTON_SIZE, TableStyles.TABLE_STYLE_STANDARD )
+				screen.addMultiListControlGFC("MapBuildingSelectionMultiList",
+											  u"",
+											  0,
+											  DOMESTIC_ADVISOR_HEIGHT + 3,
+											  MINIMAP_WIDTH - 3,
+											  DOMESTIC_ADVISOR_SPACE - LOWER_SADDLE_HEIGHT - 6,
+											  self.BOTTOM_BUTTON_ROWS,
+											  BOTTOM_BUTTON_SIZE,
+											  BOTTOM_BUTTON_SIZE, TableStyles.TABLE_STYLE_STANDARD )
 				screen.clearMultiList("MapBuildingSelectionMultiList")
 				
 				iCount = 0
