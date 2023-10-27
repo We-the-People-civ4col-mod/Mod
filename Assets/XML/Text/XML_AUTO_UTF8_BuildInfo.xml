@@ -478,6 +478,7 @@
         <English>Allows [LINK=TERRAIN_LARGE_RIVERS]large rivers[\LINK] to be crossed </English>
         <German>Erlaubt die Überquerung eines [LINK=TERRAIN_LARGE_RIVERS]Großen Flusses[\LINK]</German>
         <French>Permet de traverser une [LINK=TERRAIN_LARGE_RIVERS]grande rivière[\LINK]</French>
+        <Russian>Позволяет пересекать большие реки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_FISHING_NETS</Tag>
