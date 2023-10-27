@@ -99,12 +99,6 @@ const char* getTypeStr(AreaAITypes eIndex)
 }
 
 template<>
-const char* getTypeStr(ButtonPopupTypes eIndex)
-{
-	return getTypeStr((int)eIndex);
-}
-
-template<>
 const char* getTypeStr(ChatTargetTypes eIndex)
 {
 	switch (eIndex)
