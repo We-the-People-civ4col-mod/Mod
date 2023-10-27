@@ -73,6 +73,14 @@
 		<element type="FootstepAudioTags"/>
 		<element type="InterfaceVisibilityTypes"/>
 	</ElementType>
+	<ElementType name="ButtonPopupType" content="textOnly"/>
+	<ElementType name="ButtonPopupTypes" content="eltOnly">
+		<element type="ButtonPopupType" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="WidgetType" content="textOnly"/>
+	<ElementType name="WidgetTypes" content="eltOnly">
+		<element type="WidgetType" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="FontSymbol" content="textOnly"/>
 	<ElementType name="FontSymbols" content="eltOnly">
 		<element type="FontSymbol" maxOccurs="*"/>
