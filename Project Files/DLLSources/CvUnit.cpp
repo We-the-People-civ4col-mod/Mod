@@ -9076,12 +9076,12 @@ int CvUnit::currHitPoints()	const
 	return (maxHitPoints() - getDamage());
 }
 
-
-bool CvUnit::isHurt() const
+bool CvUnit::isHurt(int iThresholdPercent) const
 {
-	return (getDamage() > 0);
+	// Convert the threshold percentage to a damage value
+	const int iThresholdDamage = (iThresholdPercent * maxHitPoints()) / 100;
+	return (getDamage() > iThresholdDamage);
 }
-
 
 bool CvUnit::isDead() const
 {
