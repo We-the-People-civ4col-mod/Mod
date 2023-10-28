@@ -172,6 +172,10 @@ public:
 	{
 		return m_units.next(pNode);
 	} // </advc.003s>
+
+	// Returns the unit the node is pointing to and then the node will point to the next unit node
+	CvUnit* getUnitNodeLoop(CLLNode<IDInfo>*& pUnitNode);
+
 	DllExport int getNumUnits() const;
 	DllExport int getUnitIndex(CvUnit* pUnit, int maxIndex = -1) const;
 	DllExport CLLNode<IDInfo>* headUnitNode() const;

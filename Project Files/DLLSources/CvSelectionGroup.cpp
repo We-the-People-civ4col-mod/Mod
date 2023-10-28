@@ -652,7 +652,7 @@ bool CvSelectionGroup::canStartMission(int iMission, int iData1, int iData2, CvP
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pLoopUnit = getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit == NULL)
 		{
@@ -814,7 +814,6 @@ bool CvSelectionGroup::canStartMission(int iMission, int iData1, int iData2, CvP
 			FAssert(false);
 			break;
 		}
-		pUnitNode = nextUnitNode(pUnitNode);
 	}
 
 	return false;
@@ -3913,6 +3912,13 @@ CLLNode<IDInfo>* CvSelectionGroup::deleteUnitNode(CLLNode<IDInfo>* pNode)
 	pNextUnitNode = m_units.deleteNode(pNode);
 
 	return pNextUnitNode;
+}
+
+CvUnit* CvSelectionGroup::getUnitNodeLoop(CLLNode<IDInfo>*& pUnitNode)
+{
+	CvUnit *pLoopUnit = ::getUnit(pUnitNode->m_data);
+	pUnitNode = nextUnitNode(pUnitNode);
+	return pLoopUnit;
 }
 
 int CvSelectionGroup::getNumUnits() const
