@@ -1822,8 +1822,7 @@ CvUnit* CvGame::getPlotUnit(const CvPlot* pPlot, int iIndex)
 
 			while (pUnitNode1 != NULL)
 			{
-				pLoopUnit1 = ::getUnit(pUnitNode1->m_data);
-				pUnitNode1 = pPlot->nextUnitNode(pUnitNode1);
+				pLoopUnit1 = pPlot->getUnitNodeLoop(pUnitNode1);
 
 				if (pLoopUnit1 != NULL && !(pLoopUnit1->isInvisible(activeTeam, true)))
 				{
@@ -1846,8 +1845,7 @@ CvUnit* CvGame::getPlotUnit(const CvPlot* pPlot, int iIndex)
 
 									while (pUnitNode2 != NULL)
 									{
-										pLoopUnit2 = ::getUnit(pUnitNode2->m_data);
-										pUnitNode2 = pPlot->nextUnitNode(pUnitNode2);
+										pLoopUnit2 = pPlot->getUnitNodeLoop(pUnitNode2);
 
 										if (pLoopUnit2 != NULL && !(pLoopUnit2->isInvisible(activeTeam, true)))
 										{
@@ -1895,8 +1893,7 @@ void CvGame::getPlotUnits(const CvPlot *pPlot, std::vector<CvUnit *> &plotUnits)
 
 			while (pUnitNode1 != NULL)
 			{
-				pLoopUnit1 = ::getUnit(pUnitNode1->m_data);
-				pUnitNode1 = pPlot->nextUnitNode(pUnitNode1);
+				pLoopUnit1 = pPlot->getUnitNodeLoop(pUnitNode1);
 
 				if (pLoopUnit1 != NULL && !(pLoopUnit1->isInvisible(activeTeam, true)))
 				{
@@ -1914,8 +1911,7 @@ void CvGame::getPlotUnits(const CvPlot *pPlot, std::vector<CvUnit *> &plotUnits)
 
 									while (pUnitNode2 != NULL)
 									{
-										pLoopUnit2 = ::getUnit(pUnitNode2->m_data);
-										pUnitNode2 = pPlot->nextUnitNode(pUnitNode2);
+										pLoopUnit2 = pPlot->getUnitNodeLoop(pUnitNode2);
 
 										if (pLoopUnit2 != NULL && !(pLoopUnit2->isInvisible(activeTeam, true)))
 										{
@@ -2438,13 +2434,11 @@ void CvGame::selectUnit(CvUnit* pUnit, bool bClear, bool bToggle, bool bSound)
 		while (pEntityNode != NULL)
 		{
 			FAssertMsg(::getUnit(pEntityNode->m_data), "null entity in selection group");
-			CvUnit *pUnit = ::getUnit(pEntityNode->m_data);
+			CvUnit *pUnit = pSelectionGroup->getUnitNodeLoop(pEntityNode);
 			if (pUnit != NULL)
 			{
 				gDLL->getInterfaceIFace()->insertIntoSelectionList(pUnit, false, bToggle, bGroup, bSound, true);
 			}
-
-			pEntityNode = pSelectionGroup->nextUnitNode(pEntityNode);
 		}
 
 		gDLL->getInterfaceIFace()->selectionListPostChange();
@@ -2491,8 +2485,7 @@ void CvGame::selectGroup(CvUnit* pUnit, bool bShift, bool bCtrl, bool bAlt)
 
 		while (pUnitNode != NULL)
 		{
-			pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = pUnitPlot->nextUnitNode(pUnitNode);
+			pLoopUnit = pUnitPlot->getUnitNodeLoop(pUnitNode);
 
 			if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getActivePlayer())
 			{

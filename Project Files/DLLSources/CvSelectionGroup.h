@@ -174,7 +174,10 @@ public:
 	} // </advc.003s>
 
 	// Returns the unit the node is pointing to and then the node will point to the next unit node
-	CvUnit* getUnitNodeLoop(CLLNode<IDInfo>*& pUnitNode);
+	CvUnit* getUnitNodeLoop(CLLNode<IDInfo>*& pUnitNode) const;
+
+	// Returns the unit the node is pointing to and then the node will point to the next unit node
+	CvUnit* getUnitNodeLoop(const CLLNode<IDInfo>*& pUnitNode) const;
 
 	DllExport int getNumUnits() const;
 	DllExport int getUnitIndex(CvUnit* pUnit, int maxIndex = -1) const;

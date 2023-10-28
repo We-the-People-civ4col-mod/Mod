@@ -437,8 +437,7 @@ void CvUnit::convert(CvUnit* pUnit, bool bKill)
 
 			while (pUnitNode != NULL)
 			{
-				pLoopUnit = ::getUnit(pUnitNode->m_data);
-				pUnitNode = pPlot->nextUnitNode(pUnitNode);
+				pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 				if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == pUnit)
 				{
@@ -4110,8 +4109,7 @@ bool CvUnit::canGift(bool bTestVisible, bool bTestTransport)
 		CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 		while (pUnitNode != NULL)
 		{
-			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = pPlot->nextUnitNode(pUnitNode);
+			CvUnit* pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 			if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 			{
@@ -4197,8 +4195,7 @@ void CvUnit::gift(bool bTestTransport)
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+		pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 		{
@@ -5188,8 +5185,7 @@ bool CvUnit::canLoad(const CvPlot* pPlot, bool bCheckCity) const
 	CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 	while (pUnitNode != NULL)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && canLoadUnit(pLoopUnit, pPlot, bCheckCity))
 		{
@@ -5221,8 +5217,7 @@ bool CvUnit::load(bool bCheckCity)
 
 		while (pUnitNode != NULL)
 		{
-			pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = pPlot->nextUnitNode(pUnitNode);
+			pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 			if (pLoopUnit != NULL && canLoadUnit(pLoopUnit, pPlot, bCheckCity))
 			{
@@ -5461,8 +5456,7 @@ bool CvUnit::canUnloadAll() const
 
 	while (pUnitNode != NULL)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 		{
@@ -5494,8 +5488,7 @@ void CvUnit::unloadAll()
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+		pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 		{
@@ -5579,8 +5572,7 @@ void CvUnit::learn()
 		CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
 		while (pUnitNode)
 		{
-			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = plot()->nextUnitNode(pUnitNode);
+			CvUnit* pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 			// this checks if there is already another Native Living in this village
 			// if yes, we send a message and exit the method by return
 			if (pLoopUnit != NULL && pLoopUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_LIVE_AMONG_NATIVES)
@@ -6805,8 +6797,7 @@ int CvUnit::healRate(const CvPlot* pPlot) const
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+		pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getTeam() == getTeam()) // XXX what about alliances?
 		{
@@ -6831,8 +6822,7 @@ int CvUnit::healRate(const CvPlot* pPlot) const
 
 				while (pUnitNode != NULL)
 				{
-					pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+					pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 					if (pLoopUnit != NULL && pLoopUnit->getTeam() == getTeam()) // XXX what about alliances?
 					{
@@ -8085,8 +8075,7 @@ int CvUnit::canLead(const CvPlot* pPlot, int iUnitId) const
 		CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 		while(pUnitNode != NULL)
 		{
-			CvUnit* pUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = pPlot->nextUnitNode(pUnitNode);
+			CvUnit* pUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 			// WTP, fixing Generals and Admirals to lead civilists or small tiny fishing boats - START
 			if (pUnit != NULL && pUnit != this &&
@@ -8131,24 +8120,23 @@ int CvUnit::canGiveExperience(const CvPlot* pPlot) const
 		while(pUnitNode != NULL)
 		{
 			// Ramstormp, WtP, Generals and admirals only share experience with units in the army or the navy respectively - START
-			CvUnit* pUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = pPlot->nextUnitNode(pUnitNode);
+			CvUnit* pUnit = pPlot->getUnitNodeLoop(pUnitNode);
 			// WTP, adjustment ray, small improvement, let us read the UnitClassTypes only once
-			UnitClassTypes eLeaderUnitClassType = getUnitClassType();
+			const UnitClassTypes eLeaderUnitClassType = getUnitClassType();
 			// Navy Case with Great Admiral
-			if (eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL") || eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN"))
+			if (eLeaderUnitClassType == UNITCLASS_GREAT_ADMIRAL || eLeaderUnitClassType == UNITCLASS_CAPABLE_CAPTAIN)
 			{
 				// not really happy about the >= 20 being hardcoded but for now it prevents e.g. Fishing Boat, which is good
-				if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20)
+				if (pUnit != NULL && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20)
 				{
 					++iNumUnits;
 				}
 			}
 			// Army Case with Great General
-			else if (eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_GREAT_GENERAL") || eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT"))
+			else if (eLeaderUnitClassType == UNITCLASS_GREAT_GENERAL || eLeaderUnitClassType == UNITCLASS_BRAVE_LIEUTENANT)
 			{
 				// here we could easily switch to canAttack
-				if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_LAND && pUnit->canAttack())
+				if (pUnit != NULL && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_LAND && pUnit->canAttack())
 				{
 					++iNumUnits;
 				}
@@ -8158,7 +8146,7 @@ int CvUnit::canGiveExperience(const CvPlot* pPlot) const
 			// old default case if we ever have something else than a Great General Unitclass / Great Admiral Unitclass
 			else
 			{
-				if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny())
+				if (pUnit != NULL && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny())
 				{
 					++iNumUnits;
 				}
@@ -8188,27 +8176,26 @@ bool CvUnit::giveExperience()
 			int i = 0;
 			while(pUnitNode != NULL)
 			{
-				CvUnit* pUnit = ::getUnit(pUnitNode->m_data);
-				pUnitNode = pPlot->nextUnitNode(pUnitNode);
+				CvUnit* pUnit = pPlot->getUnitNodeLoop(pUnitNode);
 				// Ramstormp, WtP, Generals and admirals only share experience with units in the army or the navy respectively - START
 				// Navy Case with Great Admiral
 
 				// WTP, adjustment ray, small improvement, let us read the UnitClassTypes only once
-				UnitClassTypes eLeaderUnitClassType = getUnitClassType();
+				const UnitClassTypes eLeaderUnitClassType = getUnitClassType();
 				if (eLeaderUnitClassType == UNITCLASS_GREAT_ADMIRAL || eLeaderUnitClassType == UNITCLASS_CAPABLE_CAPTAIN)
 				{
 					// not really happy about the >= 20 being hardcoded but for now it prevents e.g. Fishing Boat, which is good
-					if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20)
+					if (pUnit != NULL && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20)
 					{
 						pUnit->changeExperience(i < iRemainder ? iMinExperiencePerUnit + 1 : iMinExperiencePerUnit);
 						pUnit->testPromotionReady();
 					}
 				}
 				// Army Case with Great General
-				else if (eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_GREAT_GENERAL") || eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT"))
+				else if (eLeaderUnitClassType == UNITCLASS_GREAT_GENERAL || eLeaderUnitClassType == UNITCLASS_BRAVE_LIEUTENANT)
 				{
 					// not really happy about the > 2 being hardcoded but for now it prevents normal settlers which is good
-					if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_LAND && pUnit->canAttack())
+					if (pUnit != NULL && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_LAND && pUnit->canAttack())
 					{
 						pUnit->changeExperience(i < iRemainder ? iMinExperiencePerUnit + 1 : iMinExperiencePerUnit);
 						pUnit->testPromotionReady();
@@ -8219,7 +8206,7 @@ bool CvUnit::giveExperience()
 				// old default case if we ever have something else than a Great General Unitclass / Great Admiral Unitclass
 				else
 				{
-					if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny())
+					if (pUnit != NULL && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny())
 					{
 						pUnit->changeExperience(i < iRemainder ? iMinExperiencePerUnit+1 : iMinExperiencePerUnit);
 						pUnit->testPromotionReady();
@@ -8452,8 +8439,7 @@ CvCity* CvUnit::getUpgradeCity(UnitTypes eUnit, bool bSearch, int* iSearchValue)
 	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
 	while (pUnitNode != NULL)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = plot()->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 		{
@@ -10139,7 +10125,7 @@ bool CvUnit::hasAnyUnitInCargo() const
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 		{
@@ -10148,8 +10134,6 @@ bool CvUnit::hasAnyUnitInCargo() const
 				return true;
 			}
 		}
-
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
 	}
 
 	return false;
@@ -10172,8 +10156,7 @@ bool CvUnit::canCargoAllMove() const
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+		pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 		{
@@ -10198,8 +10181,7 @@ bool CvUnit::canCargoEnterArea(PlayerTypes ePlayer, const CvArea* pArea, bool bI
 
 	while (pUnitNode != NULL)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 		{
@@ -10228,8 +10210,7 @@ int CvUnit::getUnitAICargo(UnitAITypes eUnitAI) const
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+		pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 		{
@@ -11000,8 +10981,7 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 
 			while (pUnitNode != NULL)
 			{
-				pLoopUnit = ::getUnit(pUnitNode->m_data);
-				pUnitNode = pOldPlot->nextUnitNode(pUnitNode);
+				pLoopUnit = pOldPlot->getUnitNodeLoop(pUnitNode);
 
 				if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 				{
@@ -15585,8 +15565,7 @@ bool CvUnit::raidHarbor(CvCity* pCity)
 	CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 	while (pUnitNode != NULL)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getDomainType() == DOMAIN_SEA)
 		{
@@ -16224,8 +16203,7 @@ int CvUnit::getCargoValue(Port port) const
 
 	while (pUnitNode != NULL)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = plot()->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 		{
@@ -16281,8 +16259,7 @@ bool CvUnit::canMergeTreasures() const
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = plot()->nextUnitNode(pUnitNode);
+		pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 		// we only count our own treasuers and only the ones that are smaller than max gold amount
 		if (pLoopUnit != NULL && pLoopUnit->getUnitInfo().isTreasure() && pLoopUnit->getOwner() == getOwner() && pLoopUnit->getYieldStored() < maxTreasureGold)
@@ -16314,8 +16291,7 @@ void CvUnit::mergeTreasures()
 	// first we count the gold of these treasures
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = plot()->nextUnitNode(pUnitNode);
+		pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 		// WTP, ray, small improvements
 		// we only count gold of our own treasuers and those that are not yet at max
@@ -16549,8 +16525,7 @@ bool CvUnit::isOwnPlayerUnitOnAdjacentPlotOfUnit(int /*UnitClassTypes*/ iIndex) 
 				CLLNode<IDInfo>* pUnitNode = pAdjacentPlot->headUnitNode();
 				while (pUnitNode)
 				{
-					CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pAdjacentPlot->nextUnitNode(pUnitNode);
+					CvUnit* pLoopUnit = pAdjacentPlot->getUnitNodeLoop(pUnitNode);
 
 					// check for owner and UnitType
 					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == eOwnPlayerType && pLoopUnit->getUnitType() == eUnit)
@@ -16588,8 +16563,7 @@ bool CvUnit::isBarbarianUnitOnAdjacentPlotOfUnit(int /*UnitClassTypes*/ iIndex) 
 				CLLNode<IDInfo>* pUnitNode = pAdjacentPlot->headUnitNode();
 				while (pUnitNode)
 				{
-					CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pAdjacentPlot->nextUnitNode(pUnitNode);
+					CvUnit* pLoopUnit = pAdjacentPlot->getUnitNodeLoop(pUnitNode);
 
 					// check for owner and UnitType
 					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == eBarbarianPlayerType && pLoopUnit->getUnitType() == eUnit)

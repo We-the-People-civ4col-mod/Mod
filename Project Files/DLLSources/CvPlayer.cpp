@@ -9801,8 +9801,7 @@ void CvPlayer::updateGroupCycle(CvUnit* pUnit)
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+		pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->isGroupHead())
 		{
@@ -11798,8 +11797,7 @@ void CvPlayer::doAdvancedStartAction(AdvancedStartActionTypes eAction, Coordinat
 					CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 					while (pUnitNode != NULL)
 					{
-						CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-						pUnitNode = pPlot->nextUnitNode(pUnitNode);
+						CvUnit* pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 						if (pLoopUnit != NULL && pLoopUnit->getUnitType() == eUnit)
 						{
@@ -12318,8 +12316,7 @@ int CvPlayer::getAdvancedStartUnitCost(UnitTypes eUnit, bool bAdd, CvPlot* pPlot
 			CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 			while (pUnitNode != NULL)
 			{
-				CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-				pUnitNode = pPlot->nextUnitNode(pUnitNode);
+				CvUnit* pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 				if (pLoopUnit != NULL && pLoopUnit->getUnitType() == eUnit)
 				{

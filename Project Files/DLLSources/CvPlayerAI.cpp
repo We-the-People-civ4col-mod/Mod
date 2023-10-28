@@ -2534,8 +2534,7 @@ int CvPlayerAI::AI_getPlotDanger(CvPlot* pPlot, int iRange, bool bTestMoves, boo
 
 					while (pUnitNode != NULL)
 					{
-						pLoopUnit = ::getUnit(pUnitNode->m_data);
-						pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+						pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 						if (pLoopUnit == NULL)
 						{
@@ -2645,8 +2644,7 @@ int CvPlayerAI::AI_getUnitDanger(CvUnit* pUnit, int iRange, bool bTestMoves, boo
 
 					while (pUnitNode != NULL)
 					{
-						pLoopUnit = ::getUnit(pUnitNode->m_data);
-						pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+						pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 						if (pLoopUnit != NULL && atWar(pLoopUnit->getTeam(), getTeam()))
 						{
@@ -2733,8 +2731,7 @@ int CvPlayerAI::AI_getWaterDanger(CvPlot* pPlot, int iRange, bool bTestMoves, bo
 							pUnitNode = pLoopPlot->headUnitNode();
 							while (pUnitNode != NULL)
 							{
-								pLoopUnit = ::getUnit(pUnitNode->m_data);
-								pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+								pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 								if (pLoopUnit == NULL)
 								{
@@ -5401,8 +5398,7 @@ int CvPlayerAI::AI_adjacentPotentialAttackers(CvPlot* pPlot, bool bTestCanMove)
 
 				while (pUnitNode != NULL)
 				{
-					pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+					pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getID())
 					{
@@ -11977,8 +11973,7 @@ int CvPlayerAI::AI_sumAttackerStrength(CvPlot* pPlot, CvPlot* pAttackedPlot, int
 
 				while (pUnitNode != NULL)
 				{
-					pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+					pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getID())
 					{
@@ -12020,8 +12015,7 @@ int CvPlayerAI::AI_sumEnemyStrength(CvPlot* pPlot, int iRange, bool bAttack, Dom
 
 				while (pUnitNode != NULL)
 				{
-					pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+					pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 					if (pLoopUnit != NULL && pLoopUnit->isEnemy(getTeam(), pLoopPlot))
 					{
@@ -12058,8 +12052,7 @@ int CvPlayerAI::AI_setUnitAIStatesRange(CvPlot* pPlot, int iRange, UnitAIStates 
 
 				while (pUnitNode != NULL)
 				{
-					pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+					pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 					if (pLoopUnit != NULL && (eValidUnitAIState == NO_UNITAI_STATE || pLoopUnit->AI_getUnitAIState() == eValidUnitAIState))
 					{
@@ -13176,8 +13169,7 @@ void CvPlayerAI::AI_doEmotions()
 
 				while (pUnitNode != NULL)
 				{
-					pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+					pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 					if (pLoopUnit == NULL)
 					{
@@ -13554,8 +13546,7 @@ int CvPlayerAI::AI_getOurPlotStrength(CvPlot* pPlot, int iRange, bool bDefensive
 
 					while (pUnitNode != NULL)
 					{
-						pLoopUnit = ::getUnit(pUnitNode->m_data);
-						pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+						pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 						if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getID())
 						{
@@ -13618,8 +13609,7 @@ int CvPlayerAI::AI_getEnemyPlotStrength(CvPlot* pPlot, int iRange, bool bDefensi
 
 					while (pUnitNode != NULL)
 					{
-						pLoopUnit = ::getUnit(pUnitNode->m_data);
-						pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+						pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 						if (pLoopUnit != NULL && atWar(pLoopUnit->getTeam(), getTeam()))
 						{
@@ -15036,8 +15026,7 @@ void CvPlayerAI::AI_doEnemyUnitData()
 
 			while (pUnitNode != NULL)
 			{
-				pLoopUnit = ::getUnit(pUnitNode->m_data);
-				pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+				pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 				if (pLoopUnit != NULL && pLoopUnit->canFight())
 				{
@@ -16247,8 +16236,7 @@ int CvPlayerAI::AI_countPromotions(PromotionTypes ePromotion, CvPlot* pPlot, int
 
 				while (pUnitNode != NULL)
 				{
-					pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+					pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getID())
 					{
