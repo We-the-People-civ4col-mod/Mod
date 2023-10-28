@@ -156,7 +156,7 @@
         <German>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective Stoßtrupp ausgelöscht! Keine ernstzunehmenden Schäden verursacht.</German>
         <Italian>%s1_civ_adjective gruppo di incursori spazzato via in %s2_city! Niente distrutto o rubato.</Italian>
         <Spanish>%s1_civ_adjective partido de ataque acabó en %s2_city! Nada destruye o se lo roban.</Spanish>
-        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]набег индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] отражен! Все в целости и сохранности.</Russian>
+        <Russian>[COLOR_POSITIVE_TEXT]%s2_city : [COLOR_REVERT][COLOR_WARNING_TEXT]набег индейцев[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] отражен! Все в целости и сохранности.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_RAIDING_NATIVE_CAPTURED</Tag>
@@ -165,7 +165,7 @@
         <German>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective Stoßtrupp gefangen genommen! Sie werden mit Zwangsarbeit für ihre Verbrechen büßen.</German>
         <Italian>%s1_civ_adjective gruppo di incursori catturato in %s2_city! Pagheranno con il lavoro per i loro crimini.</Italian>
         <Spanish>%s1_civ_adjective grupo asaltante capturado en %s2_city! Pagarán con el trabajo de sus crímenes.</Spanish>
-        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]группа индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT], пытавшихся утроить набег, схвачена! Отправьте их на плантации, Милорд! Пусть расплачиваются за свои преступления.</Russian>
+        <Russian>[COLOR_POSITIVE_TEXT]%s2_city : [COLOR_REVERT]группа индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT], пытавшихся утроить [COLOR_WARNING_TEXT]набег[COLOR_REVERT], схвачена! Отправьте их на плантации, Милорд! Пусть расплачиваются за свои преступления.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_SUNK_GOOD</Tag>

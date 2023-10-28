@@ -9344,6 +9344,7 @@
         <German>Titel eingeben</German>
         <Italian>Inserisci didascalia</Italian>
         <Spanish>Escribir un encabezamiento</Spanish>
+        <Russian>Введите нужный текст</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SUBMIT_VOTE</Tag>
@@ -11099,6 +11100,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1_CivNames[COLOR_REVERT] Einheit %s2_UnitName erleidet [COLOR_WARNING_TEXT]%d3[COLOR_REVERT] Schaden (%d4/%d5 TP)</German>
         <Italian>L'unità %s2_UnitName dell'[COLOR_HIGHLIGHT_TEXT]%s1_CivName[COLOR_REVERT] viene colpita subendo [COLOR_WARNING_TEXT]%d3[COLOR_REVERT] punti di danno (%d4/%d5 PV)</Italian>
         <Spanish>[NUM2:Un:Una:Unos:Unas] %s2_UnitName del [COLOR_HIGHLIGHT_TEXT]%s1_CivName[COLOR_REVERT] (con %d3/%d4 PG) [NUM2:ha alcanzado:ha alcanzado:han alcanzado:han alcanzado] a [NUM6:un:una:unos:unas] %s6_UnitName del [COLOR_HIGHLIGHT_TEXT]%s5_CivName[COLOR_REVERT] (con %d7/%d8 PG) y [NUM6:le han infligido:le han infligido:les han infligido:les han infligido] %d9 de daño.</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_CivName's[COLOR_REVERT] %s2_UnitName получил [COLOR_WARNING_TEXT]%d3[COLOR_REVERT] урона (%d4/%d5 HP)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_MESSAGE_DEFEATED</Tag>
@@ -11107,6 +11109,7 @@
         <German>---------------------------[NEWLINE][COLOR_HIGHLIGHT_TEXT]%s1_CivNames[COLOR_REVERT] Einheit %s2_UnitName hat [COLOR_HIGHLIGHT_TEXT]%s3_CivNames[COLOR_REVERT] Einheit %s4_UnitName besiegt!</German>
         <Italian>L'unità %s2_UnitName dell'[COLOR_HIGHLIGHT_TEXT]%s1_CivName[COLOR_REVERT] ha sconfitto l'unità %s4_UnitName dell'[COLOR_HIGHLIGHT_TEXT]%s3_CivName[COLOR_REVERT]!</Italian>
         <Spanish>[NUM2:Un:Una:Unos:Unas] %s2_UnitName del [COLOR_HIGHLIGHT_TEXT]%s1_CivName[COLOR_REVERT] [NUM2:ha:ha:han:han] derrotado a [NUM3:un:una:unos:unas] %s3_UnitName del [COLOR_HIGHLIGHT_TEXT]%s4_CivName[COLOR_REVERT].</Spanish>
+        <Russian>---------------------------[NEWLINE][COLOR_HIGHLIGHT_TEXT]%s1_CivName's[COLOR_REVERT] %s2_UnitName победил [COLOR_HIGHLIGHT_TEXT]%s3_CivName[COLOR_REVERT]'s %s4_UnitName!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_MESSAGE_VS</Tag>
@@ -11131,6 +11134,7 @@
         <German>(Geländefeldverteidigung : %D1%%)</German>
         <Italian>(Difesa territorio : %D1%%)</Italian>
         <Spanish>(Defensa de la casilla : %D1%%)</Spanish>
+        <Russian>(В обороне : %D1%%)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_MESSAGE_FORTIFY</Tag>
