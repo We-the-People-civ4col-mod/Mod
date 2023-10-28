@@ -486,6 +486,9 @@ public:
 	DllExport CLLNode<IDInfo>* headUnitNode() const;
 	CLLNode<IDInfo>* tailUnitNode() const;
 
+	// Returns the unit the node is pointing to and then the node will point to the next unit node
+	CvUnit* getUnitNodeLoop(CLLNode<IDInfo>*& pUnitNode) const;
+
 	// Script data needs to be a narrow string for pickling in Python
 	CvString getScriptData() const;
 	void setScriptData(const char* szNewValue);

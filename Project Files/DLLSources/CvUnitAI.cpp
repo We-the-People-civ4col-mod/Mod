@@ -4876,8 +4876,7 @@ void CvUnitAI::AI_transportSeaMove()
 
 		while (pUnitNode != NULL)
 		{
-			pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = pPlot->nextUnitNode(pUnitNode);
+			pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 			if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 			{
@@ -7124,8 +7123,7 @@ bool CvUnitAI::AI_deliverUnits(UnitAITypes eUnitAI)
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+		pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 		{
@@ -7233,8 +7231,7 @@ CvPlot* CvUnitAI::AI_bestDestinationPlot(bool bIgnoreDanger)
 
 				while (pUnitNode != NULL)
 				{
-					CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pPlot->nextUnitNode(pUnitNode);
+					CvUnit* pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 					if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 					{
@@ -7299,8 +7296,7 @@ bool CvUnitAI::AI_loadUnits(UnitAITypes eUnitAI, MissionAITypes eMissionAI)
 	int iCount = 0;
 	while (pUnitNode != NULL)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && !pLoopUnit->isCargo())
 		{
@@ -7333,8 +7329,7 @@ bool CvUnitAI::AI_wakeCargo(UnitAITypes eUnitAI, int iPriority)
 	CLLNode<IDInfo>*  pUnitNode = plot()->headUnitNode();
 	while (pUnitNode != NULL)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = plot()->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->isCargo() && (pLoopUnit->getTransportUnit()->getGroup() == getGroup()))
 		{
@@ -8210,8 +8205,7 @@ bool CvUnitAI::AI_unloadWhereNeeded(int iMaxPath)
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = plot()->nextUnitNode(pUnitNode);
+		pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
 		{
@@ -8348,8 +8342,7 @@ bool CvUnitAI::AI_betterJob()
 	CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 	while (pUnitNode != NULL)
 	{
-		CvUnit* const pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+		CvUnit* const pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit != this && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
 		{
@@ -9602,8 +9595,7 @@ bool CvUnitAI::AI_pickupAdjacantUnits()
 				int iCount = 0;
 				while (pUnitNode != NULL)
 				{
-					CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+					CvUnit* pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 					if (pLoopUnit != NULL && pLoopUnit->getGroup()->AI_getMissionAIType() == MISSIONAI_AWAIT_PICKUP && pLoopUnit->canLoadUnit(this, plot(), false))
 					{
@@ -9690,8 +9682,7 @@ bool CvUnitAI::AI_breakAutomation()
 		CvUnit* pLoopUnit;
 		while (pUnitNode != NULL)
 		{
-			pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = plot()->nextUnitNode(pUnitNode);
+			pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 			if (pLoopUnit != NULL && pLoopUnit->isCargo())
 			{
 				if (pLoopUnit->getTransportUnit()->getGroup() == getGroup())
@@ -10055,8 +10046,7 @@ bool CvUnitAI::AI_groupMergeRange(UnitAITypes eUnitAI, int iMaxRange, bool bBigg
 				CLLNode<IDInfo>* pUnitNode = pLoopPlot->headUnitNode();
 				while (pUnitNode != NULL)
 				{
-					CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+					CvUnit* pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 					if (pLoopUnit != NULL)
 					{
@@ -11537,8 +11527,7 @@ bool CvUnitAI::AI_safety()
 
 									while (pUnitNode != NULL)
 									{
-										pLoopUnit = ::getUnit(pUnitNode->m_data);
-										pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+										pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 										if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
 										{
@@ -11673,8 +11662,7 @@ bool CvUnitAI::AI_hide()
 
 									while (pUnitNode != NULL)
 									{
-										pLoopUnit = ::getUnit(pUnitNode->m_data);
-										pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+										pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 										if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
 										{
@@ -15664,8 +15652,7 @@ bool CvUnitAI::AI_tradeWithCity()
 				std::vector<CvUnit*> apUnits;
 				while (pUnitNode != NULL)
 				{
-					CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = plot()->nextUnitNode(pUnitNode);
+					CvUnit* pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 					if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 					{
@@ -15724,8 +15711,7 @@ bool CvUnitAI::AI_assaultSeaTransport(bool bNative)
 	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
 	while (pUnitNode != NULL)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = plot()->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 		if (pLoopUnit != NULL)
 		{
 			CvUnit* pTransport = pLoopUnit->getTransportUnit();
@@ -16004,8 +15990,7 @@ bool CvUnitAI::AI_assaultSeaReinforce(bool bNative)
 	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
 	while (pUnitNode != NULL)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = plot()->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 		if (pLoopUnit != NULL)
 		{
 			CvUnit* pTransport = pLoopUnit->getTransportUnit();
@@ -16417,8 +16402,7 @@ bool CvUnitAI::AI_specialSeaTransportMissionary()
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+		pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 		{
@@ -17731,8 +17715,7 @@ bool CvUnitAI::AI_pickup(UnitAITypes eUnitAI, int iMaxPathTurns)
 
 			while (pUnitNode != NULL)
 			{
-				CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-				pUnitNode = pPlot->nextUnitNode(pUnitNode);
+				CvUnit* pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 				if (pLoopUnit != NULL && pLoopUnit->AI_getUnitAIType() == eUnitAI)
 				{
@@ -17779,8 +17762,7 @@ bool CvUnitAI::AI_pickup(UnitAITypes eUnitAI, int iMaxPathTurns)
 
 				while (pUnitNode != NULL)
 				{
-					CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pPlot->nextUnitNode(pUnitNode);
+					CvUnit* pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 					if (pLoopUnit != NULL && pLoopUnit->AI_getUnitAIType() == eUnitAI)
 					{
@@ -18119,8 +18101,7 @@ bool CvUnitAI::AI_followBombard()
 
 								while (pUnitNode != NULL)
 								{
-									pLoopUnit = ::getUnit(pUnitNode->m_data);
-									pUnitNode = pAdjacentPlot2->nextUnitNode(pUnitNode);
+									pLoopUnit = pAdjacentPlot2->getUnitNodeLoop(pUnitNode);
 
 									if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
 									{
@@ -18571,8 +18552,7 @@ bool CvUnitAI::AI_nativeRaidTreasureUnit()
 
 					while (pUnitNode != NULL)
 					{
-						CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-						pUnitNode = pAdjacentPlot->nextUnitNode(pUnitNode);
+						CvUnit* pLoopUnit = pAdjacentPlot->getUnitNodeLoop(pUnitNode);
 
 						if (pLoopUnit != NULL && pLoopUnit->getTeam() != getTeam())
 						{
@@ -18752,8 +18732,7 @@ bool CvUnitAI::AI_poach()
 					CLLNode<IDInfo>* pUnitNode = pLoopPlot->headUnitNode();
 					while (pUnitNode != NULL)
 					{
-						CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-						pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+						CvUnit* pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 						if (pLoopUnit != NULL
 							&& pLoopUnit->getTeam() != getTeam()
 							&& GET_TEAM(getTeam()).canDeclareWar(pLoopUnit->getTeam()))
@@ -19355,8 +19334,7 @@ void CvUnitAI::AI_sellYieldUnits(Port port)
 
 	while (pUnitNode != NULL)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 		{
@@ -19394,8 +19372,7 @@ void CvUnitAI::AI_unloadUnits(Port port)
 
 	while (pUnitNode != NULL)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 		{

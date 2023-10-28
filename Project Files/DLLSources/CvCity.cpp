@@ -423,8 +423,7 @@ void CvCity::kill()
 		CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 		while (pUnitNode)
 		{
-			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = plot()->nextUnitNode(pUnitNode);
+			CvUnit* pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 			if (pLoopUnit != NULL && pLoopUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_LIVE_AMONG_NATIVES)
 			{
@@ -8172,8 +8171,7 @@ bool CvCity::getCityBillboardBottomBarValues(float& fStored, float& fRate, float
 		CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 		while (pUnitNode != NULL)
 		{
-			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = plot()->nextUnitNode(pUnitNode);
+			CvUnit* pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 			if (pLoopUnit != NULL && pLoopUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_LIVE_AMONG_NATIVES)
 			{
@@ -9210,8 +9208,7 @@ void CvCity::ejectTeachUnits()
 	CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 	while (pUnitNode)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_LIVE_AMONG_NATIVES)
 		{
@@ -11529,8 +11526,7 @@ UnitClassTypes CvCity::bestGrowthUnitClass()
 	CLLNode<IDInfo>* pUnitNode = pCityCenterPlot->headUnitNode();
 	while (pUnitNode)
 	{
-		CvUnit* pLoopUnit2 = ::getUnit(pUnitNode->m_data);
-		pUnitNode = plot()->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit2 = plot()->getUnitNodeLoop(pUnitNode);
 
 		// however, we only consider Units that belong to the same Player as the City
 		if (pLoopUnit2 != NULL && pLoopUnit2->getOwnerINLINE() == getOwnerINLINE())
@@ -13294,8 +13290,7 @@ void CvCity::doExtraCityDefenseAttacks()
 
 		while (pUnitNode && !alreadyBombarded)
 		{
-			pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = plot()->nextUnitNode(pUnitNode);
+			pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 			if (pLoopUnit != NULL)
 			{
@@ -13319,8 +13314,7 @@ void CvCity::doExtraCityDefenseAttacks()
 								pUnitNode2 = pAdjacentPlot->headUnitNode();
 								while (pUnitNode2)
 								{
-									pLoopUnit2 = ::getUnit(pUnitNode2->m_data);
-									pUnitNode2 = pAdjacentPlot->nextUnitNode(pUnitNode2);
+									pLoopUnit2 = pAdjacentPlot->getUnitNodeLoop(pUnitNode2);
 
 									if (pLoopUnit != NULL && (getTeam() != pLoopUnit2->getTeam() && (GET_TEAM(getTeam()).isAtWar(pLoopUnit2->getTeam()) || pLoopUnit2->getUnitInfo().isHiddenNationality()) && !pLoopUnit2->isCargo()))
 									{
@@ -13508,8 +13502,7 @@ void CvCity::doExtraCityDefenseAttacks()
 
 		while (pUnitNode && !alreadyFired)
 		{
-			pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = plot()->nextUnitNode(pUnitNode);
+			pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 			if (pLoopUnit != NULL)
 			{
@@ -13538,8 +13531,7 @@ void CvCity::doExtraCityDefenseAttacks()
 								pUnitNode2 = pAdjacentPlot->headUnitNode();
 								while (pUnitNode2)
 								{
-									pLoopUnit2 = ::getUnit(pUnitNode2->m_data);
-									pUnitNode2 = pAdjacentPlot->nextUnitNode(pUnitNode2);
+									pLoopUnit2 = pAdjacentPlot->getUnitNodeLoop(pUnitNode2);
 
 									if (pLoopUnit2 != NULL && getTeam() != pLoopUnit2->getTeam() && (GET_TEAM(getTeam()).isAtWar(pLoopUnit2->getTeam()) || pLoopUnit2->getUnitInfo().isHiddenNationality()) && !pLoopUnit2->isCargo())
 									{
@@ -13722,8 +13714,7 @@ void CvCity::getYieldDemands(YieldCargoArray<int> &aYields) const
 	CLLNode<IDInfo>* pUnitNode = pCityCenterPlot->headUnitNode();
 	while (pUnitNode)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = plot()->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 		// however, we only consider Units that belong to the same Player as the City
 		if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
@@ -13998,8 +13989,7 @@ int CvCity::getSlaveRevoltReductionBonus() const
 	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
 	while (pUnitNode)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = plot()->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
 		{
@@ -14038,8 +14028,7 @@ void CvCity::updateSlaveWorkerProductionBonus(int iBonus)
 	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
 	while (pUnitNode)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = plot()->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
 		{
@@ -14172,8 +14161,7 @@ bool CvCity::isOwnPlayerUnitOnAdjacentPlotOfCity(int /*UnitClassTypes*/ iIndex) 
 				CLLNode<IDInfo>* pUnitNode = pAdjacentPlot->headUnitNode();
 				while (pUnitNode)
 				{
-					CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pAdjacentPlot->nextUnitNode(pUnitNode);
+					CvUnit* pLoopUnit = pAdjacentPlot->getUnitNodeLoop(pUnitNode);
 
 					// check for owner and UnitType
 					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == eOwnPlayerType && pLoopUnit->getUnitType() == eUnit)
@@ -14211,8 +14199,7 @@ bool CvCity::isBarbarianUnitOnAdjacentPlotOfCity(int /*UnitClassTypes*/ iIndex) 
 				CLLNode<IDInfo>* pUnitNode = pAdjacentPlot->headUnitNode();
 				while (pUnitNode)
 				{
-					CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pAdjacentPlot->nextUnitNode(pUnitNode);
+					CvUnit* pLoopUnit = pAdjacentPlot->getUnitNodeLoop(pUnitNode);
 
 					// check for owner and UnitType
 					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == eBarbarianPlayerType && pLoopUnit->getUnitType() == eUnit)

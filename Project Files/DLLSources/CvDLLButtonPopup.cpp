@@ -416,8 +416,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 
 				while (pUnitNode != NULL)
 				{
-					pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pPlot->nextUnitNode(pUnitNode);
+					pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 					if (pLoopUnit != NULL && pSelectionGroup->canDoCommand(COMMAND_LOAD_UNIT, pLoopUnit->getOwnerINLINE(), pLoopUnit->getID()))
 					{
@@ -476,8 +475,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 					CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 					while (pUnitNode != NULL)
 					{
-						CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-						pUnitNode = pPlot->nextUnitNode(pUnitNode);
+						CvUnit* pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 						// WTP, fixing Generals and Admirals to lead civilists or small tiny fishing boats - START
 						if (pLoopUnit != NULL && ((pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->canAttack()) || (pLoopUnit->getDomainType() == DOMAIN_SEA && pLoopUnit->baseCombatStr() >= 20)))
@@ -1153,8 +1151,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 					CLLNode<IDInfo>* pUnitNode = pSelectionGroup->headUnitNode();
 					while (pUnitNode != NULL)
 					{
-						CvUnit* ploopUnit = ::getUnit(pUnitNode->m_data);
-						pUnitNode = pSelectionGroup->nextUnitNode(pUnitNode);
+						CvUnit* ploopUnit = pSelectionGroup->getUnitNodeLoop(pUnitNode);
 						if (NULL != ploopUnit)
 						{
 							gDLL->sendDoCommand(ploopUnit->getID(), COMMAND_PROMOTION, iPromotion, -1, false);
@@ -2202,8 +2199,7 @@ bool CvDLLButtonPopup::launchLoadUnitPopup(CvPopup* pPopup, CvPopupInfo &info)
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+		pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pSelectionGroup->canDoCommand(COMMAND_LOAD_UNIT, pLoopUnit->getOwnerINLINE(), pLoopUnit->getID()))
 		{
@@ -2342,8 +2338,7 @@ bool CvDLLButtonPopup::launchLeadUnitPopup(CvPopup* pPopup, CvPopupInfo &info)
 	CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 	while (pUnitNode != NULL)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 		// WTP, fixing Generals and Admirals to lead civilists or small tiny fishing boats - START
 		if (pLoopUnit != NULL && ((pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->canAttack()) || (pLoopUnit->getDomainType() == DOMAIN_SEA && pLoopUnit->baseCombatStr() >= 20)))
