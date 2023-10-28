@@ -1409,14 +1409,12 @@ void CvUnitAI::AI_colonistMove()
 {
 	if (isCargo())
 	{
-		if (AI_joinOptimalCity())
-		{
-			return;
-		}
-		if (AI_joinCity())
-		{
-			return;
-		}
+		if (AI_joinOptimalCity()) return;
+		if (AI_joinAnyCity()) return;
+		// If we get here we have failed to find any joinable city so
+		// just go hang out in a city plot somewhere so that the cargo
+		// slots an be freed up
+		if (AI_joinAnyCity(-1, /*bRequireJoinable*/false)) return;
 		getGroup()->pushMission(MISSION_SKIP);
 		return;
 	}
@@ -1446,7 +1444,7 @@ void CvUnitAI::AI_colonistMove()
 		return;
 	}
 
-	if (AI_joinCity())
+	if (AI_joinAnyCity())
 	{
 		return;
 	}
@@ -1645,7 +1643,7 @@ void CvUnitAI::AI_workerMove()
 
 	if (isCargo())
 	{
-		if (AI_unloadWhereNeeded())
+		if (AI_unloadWhereNeeded(INT_MAX, MISSIONAI_BUILD))
 		{
 			return;
 		}
@@ -1764,7 +1762,7 @@ void CvUnitAI::AI_missionaryMove()
 
 	if (isCargo())
 	{
-		if (AI_unloadWhereNeeded())
+		if (AI_unloadWhereNeeded(INT_MAX, MISSIONAI_SPREAD))
 		{
 			return;
 		}
@@ -1962,7 +1960,7 @@ void CvUnitAI::AI_scoutMove()
 			return;
 		}
 
-		if (AI_unloadWhereNeeded())
+		if (AI_unloadWhereNeeded(INT_MAX, MISSIONAI_EXPLORE))
 		{
 			return;
 		}
@@ -2001,7 +1999,7 @@ void CvUnitAI::AI_scoutMove()
 
 	if (isCargo())
 	{
-		if (AI_unloadWhereNeeded())
+		if (AI_unloadWhereNeeded(INT_MAX, MISSIONAI_EXPLORE))
 		{
 			return;
 		}
@@ -2428,7 +2426,7 @@ void CvUnitAI::AI_defensiveMove()
 			return;
 		}
 
-		if (AI_unloadWhereNeeded())
+		if (AI_unloadWhereNeeded(INT_MAX, MISSIONAI_GUARD_CITY))
 		{
 			return;
 		}
@@ -2592,7 +2590,8 @@ void CvUnitAI::AI_offensiveMove()
 			return;
 		}
 
-		if (AI_unloadWhereNeeded())
+		// TODO: Find more suitable mission ai
+		if (AI_unloadWhereNeeded(INT_MAX, MISSIONAI_GUARD_CITY))
 		{
 			return;
 		}
@@ -2692,7 +2691,8 @@ void CvUnitAI::AI_attackCityMove()
 		}
 		*/
 
-		if (AI_unloadWhereNeeded())
+		// TODO: Find more suitable mission ai
+		if (AI_unloadWhereNeeded(INT_MAX, MISSIONAI_GUARD_CITY))
 		{
 			return;
 		}
@@ -3270,7 +3270,8 @@ void CvUnitAI::AI_counterMove()
 		*/
 		// TAC - AI Counter units - koma13 - END
 
-		if (AI_unloadWhereNeeded())
+		// TODO: Find more suitable mission ai
+		if (AI_unloadWhereNeeded(INT_MAX, MISSIONAI_GUARD_CITY))
 		{
 			return;
 		}
@@ -4655,6 +4656,11 @@ void CvUnitAI::AI_transportSeaMove()
 {
 	PROFILE_FUNC();
 
+	if (plot()->getPlotCity() && isHurt())
+	{
+		AI_heal();
+	}
+
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	bool bEmpty = !getGroup()->hasCargo();
 
@@ -4715,7 +4721,7 @@ void CvUnitAI::AI_transportSeaMove()
 	}
 
 	CvCity* pCity = NULL;
-	if (plot()->getPlotCity() != NULL)
+	if (pCity != NULL)
 	{
 		if (AI_tradeWithCity())
 		{
@@ -5792,7 +5798,8 @@ void CvUnitAI::AI_combatSeaMove()
 
 	// TAC - AI Improved Naval AI - koma13 - START
 	//if (AI_anyAttack(2, 49))
-	if (AI_anyAttack(1, 49))
+	// TODO: Use remaining moves
+	if (AI_anyAttack(baseMoves(), 49))
 	// TAC - AI Improved Naval AI - koma13 - END
 	{
 		return;
@@ -5809,6 +5816,11 @@ void CvUnitAI::AI_combatSeaMove()
 		{
 			return;
 		}
+	}
+
+	if (AI_shadow(UNITAI_TRANSPORT_SEA, 2, -1, /*bWithCargoOnly*/false))
+	{
+		return;
 	}
 
 	// TAC - AI Improved Naval AI - koma13 - START
@@ -7202,9 +7214,8 @@ bool CvUnitAI::AI_deliverUnits(UnitAITypes eUnitAI)
 		}
 	}
 	return false;
-
-
 }
+
 // TAC - AI Improved Naval AI - koma13 - START
 CvPlot* CvUnitAI::AI_bestDestinationPlot(bool bIgnoreDanger)
 {
@@ -7683,9 +7694,13 @@ void CvUnitAI::AI_doInitialMovePriority()
 			}
 			else if (canMove())
 			{
-				if (getDomainType() == DOMAIN_SEA)
+				if (getDomainType() == DOMAIN_SEA && AI_getUnitAIType() == UNITAI_TRANSPORT_SEA)
 				{
 					iMovePriority = MOVE_PRIORITY_HIGH;
+				}
+				else if (getDomainType() == DOMAIN_SEA && AI_getUnitAIType() == UNITAI_COMBAT_SEA)
+				{
+					iMovePriority = MOVE_PRIORITY_MEDIUM;
 				}
 				else
 				{
@@ -8169,7 +8184,7 @@ bool CvUnitAI::AI_shadow(UnitAITypes eUnitAI, int iMax, int iMaxRatio, bool bWit
 }
 
 
-bool CvUnitAI::AI_unloadWhereNeeded(int iMaxPath)
+bool CvUnitAI::AI_unloadWhereNeeded(int iMaxPath, MissionAITypes eMissionAI)
 {
 	CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
 
@@ -8293,7 +8308,7 @@ bool CvUnitAI::AI_unloadWhereNeeded(int iMaxPath)
 			return true;
 		}
 
-		getGroup()->pushMission(MISSION_SKIP, -1, -1, 0, false, false, MISSIONAI_FOUND, pBestJoinPlot);
+		getGroup()->pushMission(MISSION_SKIP, -1, -1, 0, false, false, eMissionAI, pBestJoinPlot);
 		AI_setMovePriority(1);
 		return true;
 
@@ -15182,7 +15197,7 @@ bool CvUnitAI::AI_joinCityBrave()
 }
 
 // Determine if we should join any city in this area where we can be employed
-bool CvUnitAI::AI_joinCity(int iMaxPath)
+bool CvUnitAI::AI_joinAnyCity(int iMaxPath, bool bRequireJoinable)
 {
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 
@@ -15207,7 +15222,7 @@ bool CvUnitAI::AI_joinCity(int iMaxPath)
 	{
 		CvPlot* pLoopPlot = pCity->plot();
 
-		if (canJoinCity(pLoopPlot, true))
+		if (!bRequireJoinable || canJoinCity(pLoopPlot, true))
 		{
 			int iPathTurns = 0;
 			bool bTransport = pTransportUnit != NULL;
@@ -15269,7 +15284,7 @@ bool CvUnitAI::AI_joinCity(int iMaxPath)
 					iValue /= 100;
 				}
 
-				if (iValue > iBestValue)
+				if (iValue > iBestValue || !bRequireJoinable)
 				{
 					iBestValue = iValue;
 					pBestPlot = atPlot(pLoopPlot) ? pLoopPlot : pLoopPlot;
@@ -17520,7 +17535,9 @@ bool CvUnitAI::AI_retreatFromDanger()
 		return false;
 	}
 
-	if (!isHurt())
+	// Transport ships may suffer occasional storm damage but that should not
+	// generally mean that we'll have to abandon our current mission and retreat 
+	if (!isHurt(25))
 	{
 		int iWaterDanger = kOwner.AI_getWaterDanger(plot(), GC.getAI_TRANSPORT_DANGER_RANGE(), true, true, true);
 		if (iWaterDanger == 0)

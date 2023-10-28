@@ -191,7 +191,7 @@ protected:
 	bool AI_collectGoods();
 
 	bool AI_deliverUnits(UnitAITypes eUnitAI = NO_UNITAI);
-	
+	bool AI_deliverUnitsNearCity();
 	CvPlot* AI_bestDestinationPlot(bool bIgnoreDanger = false);	// TAC - AI Improved Naval AI - koma13
 
 	bool AI_loadUnits(UnitAITypes eUnitAI, MissionAITypes eMissionAI);
@@ -223,7 +223,7 @@ protected:
 	bool AI_continueMission(int iAbortDistance, MissionAITypes eValidMissionAI, int iFlags = 0, bool bStepwise = true);
 	bool AI_breakAutomation();
 
-	bool AI_unloadWhereNeeded(int iMaxPath = MAX_INT);
+	bool AI_unloadWhereNeeded(int iMaxPath = MAX_INT, MissionAITypes eMissionAI = MISSIONAI_TRANSPORT_SEA);
 
 	bool AI_betterJob();
 	bool AI_upgradeProfession();
@@ -317,7 +317,7 @@ protected:
 	bool AI_found(int iMinValue = 1);
 	bool AI_foundRange(int iRange, bool bFollow = false);
 	bool AI_joinCityBrave();
-	bool AI_joinCity(int iMaxPath = MAX_INT);
+	bool AI_joinAnyCity(int iMaxPath = MAX_INT, bool bRequireJoinable = true);
 	bool AI_joinOptimalCity();
 	bool AI_joinCityDefender();
 	bool AI_yieldDestination(int iMaxPath = MAX_INT);
