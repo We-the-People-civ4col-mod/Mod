@@ -325,7 +325,7 @@ public:
 
 	DllExport int maxHitPoints() const;
 	int currHitPoints() const;
-	bool isHurt() const;
+	bool isHurt(int iThresholdPercent = 0) const;
 	DllExport bool isDead() const;
 
 	void setBaseCombatStr(int iCombat);
