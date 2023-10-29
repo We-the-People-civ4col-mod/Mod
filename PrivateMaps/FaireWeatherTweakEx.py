@@ -5044,7 +5044,7 @@ def generateRockSteppes():
                     if not isAnyAdjacentPlotType(x, y, PlotTypes.PLOT_OCEAN):
                         if plot.getTerrainType() == terrainPrairie or plot.getTerrainType() == terrainPlains:
                             if isAllAdjacentPlotTerrainType(x, y, terrainPrairie) or isAllAdjacentPlotTerrainType(x, y, terrainPlains):
-                                if PRand.random() <= rockSteppesChance or (sm.rainFallMap[GetIndex(x, y)] < 0.002):
+                                if PRand.random() <= rockSteppesChance * 0.2 or (sm.rainFallMap[GetIndex(x, y)] < 0.002):
                                     plot.setTerrainType(terrainRockSteppes, True, True)
                                     # Generate some Hills
                                     iRandPlotType = PRand.random()
