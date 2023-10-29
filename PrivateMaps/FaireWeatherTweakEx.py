@@ -115,7 +115,7 @@ class MapConstants :
         #How many map squares will be below desert rainfall threshold. In this case,
         #rain levels close to zero are very likely to be desert, while rain levels close
         #to the desert threshold will more likely be plains.
-        self.DesertPercent = 0.05
+        self.DesertPercent = 0.065
 
         #How many map squares will be below plains rainfall threshold. Rain levels close
         #to the desert threshold are likely to be plains, while those close to the plains
