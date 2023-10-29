@@ -24021,7 +24021,7 @@ void CvPlayer::doAILogicforForeignImmigrants()
 
 	// we acquire if we have at least double the gold
 	// Timers and such ensure that this otherwise does not happen to often anyways
-	if (getGold() > AI().AI_isAvailableGold(PurchaseType::IMMIGRANT, iForeignImmigrantPrice, 1))
+	if (AI().AI_isAvailableGold(PurchaseType::IMMIGRANT, iForeignImmigrantPrice, 1))
 	{
 		acquireForeignImmigrant(iForeignImmigrantTypeID, iForeignImmigrantPrice);
 		resetCounterForForeignImmigrantsDeals(); // here we reset our own timer

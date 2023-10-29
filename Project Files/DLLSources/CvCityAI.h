@@ -98,11 +98,11 @@ public:
 
 	ProfessionTypes AI_bestPlotProfession(const CvUnit* pUnit, const CvPlot* pPlot) const;
 	int AI_bestProfessionPlot(ProfessionTypes eProfession, const CvUnit* pUnit) const;
-	int AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUnit, const CvPlot* pPlot, const CvUnit* pDisplaceUnit) const;
+	int AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUnit, const CvPlot* pPlot, const CvUnit* pDisplaceUnit, bool bAllowNotOnMap = false) const;
 	int AI_professionBasicOutput(ProfessionTypes eProfession, UnitTypes eUnit, const CvPlot* pPlot) const;
 	CvUnit* AI_getWorstProfessionUnit(ProfessionTypes eProfession) const;
 
-	int AI_unitJoinCityValue(CvUnit* pUnit, ProfessionTypes* peNewProfession) const;
+	int AI_unitJoinCityValue(const CvUnit& kUnit, ProfessionTypes* peNewProfession) const;
 	int AI_unitJoinReplaceValue(CvUnit* pUnit, CvUnit** pReplaceUnit = NULL) const;
 
 	bool AI_canMakeGift() const;
