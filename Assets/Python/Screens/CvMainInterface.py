@@ -2472,9 +2472,8 @@ class CvMainInterface(object):
 		if ( ePlayer < 0 or ePlayer >= gc.getMAX_PLAYERS() ):
 			return 0
 
-		if ( CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_HIDE_ALL
-			 and CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_MINIMAP_ONLY
-			 and CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_ADVANCED_START):
+		showInterface = CyInterface().getShowInterface()
+		if not showInterface  in [InterfaceVisibility.INTERFACE_HIDE_ALL, InterfaceVisibility.INTERFACE_MINIMAP_ONLY, InterfaceVisibility.INTERFACE_ADVANCED_START ]:
 			szTimeText = unicode(CyGameTextMgr().getInterfaceTimeStr(gc.getGame().getActivePlayer()))
 			screen.setLabel("TimeText", "Background", self.setFontSize(szTimeText, 1), CvUtil.FONT_RIGHT_JUSTIFY, xResolution - 17, 17, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, TIMETEXT_ID, -1 )
 			if (CyUserProfile().isClockOn()):
@@ -2849,11 +2848,12 @@ class CvMainInterface(object):
 						screen.setLabel("BarracksText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 83 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_BARRACKS_SYSTEM, NEW_BARRACKS_SYSTEM, -1 )
 
 			# REBEL BAR FILL PERCENTAGE
-				fPercentage = float(pHeadSelectedCity.getRebelPercent() / 100.0)
+				iRebel = pHeadSelectedCity.getRebelPercent()
+				fPercentage = float(iRebel / 100.0)
 				screen.setBarPercentage("RebelBar", InfoBarTypes.INFOBAR_STORED, fPercentage)
 
 			# REBEL BAR TEXT
-				iRebel = pHeadSelectedCity.getRebelPercent()
+
 				szBuffer = localText.getText("TXT_KEY_MISC_REBEL", (iRebel, ))
 				screen.setLabelAt("RebelText", "RebelBar", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, (CITIZEN_BAR_WIDTH - (STACK_BAR_HEIGHT * 3 / 2)) / 2, STACK_BAR_HEIGHT / 2, -1.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 				screen.setHitTest("RebelText", HitTestTypes.HITTEST_NOHIT)
