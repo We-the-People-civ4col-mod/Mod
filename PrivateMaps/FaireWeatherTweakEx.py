@@ -1526,9 +1526,11 @@ class ClimateMap :
                 #average summer and winter
                 avgTemp = (self.summerTempsMap[i] + self.winterTempsMap[i])/2.0
                 #cool map for altitude
+		# attenuation so temperature per altitude increase drops less closer to equator to avoid glacier spam
+		latCorrectionFactor = (0.1 * (1.0 - math.sin(abs(math.radians(self.getLattitude(y)))))) ** 0.5
                 # TAC - Map scripts - koma13 - START
                 #self.averageTempMap.append(avgTemp * (1.0 - hm.getAltitudeAboveSeaLevel(x,y)))
-                self.averageTempMap.append(avgTemp * (1.0 - hm.getAltitudeAboveSeaLevel(x,y) ** 1.25))
+		self.averageTempMap.append(avgTemp * (1.0 - abs((hm.getAltitudeAboveSeaLevel(x,y) - latCorrectionFactor)) ** 1.25))
                 # TAC - Map scripts - koma13 - END
         
         #init moisture and rain maps
