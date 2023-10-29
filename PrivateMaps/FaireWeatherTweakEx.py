@@ -2037,6 +2037,7 @@ class SmallMaps :
         
         return
     def createTerrainMap(self):
+	mcDup = ClimateMap()
         self.terrainMap = array('i')
         #initialize terrainMap with OCEAN
         for i in range(0,mc.height*mc.width):
@@ -2053,6 +2054,7 @@ class SmallMaps :
         self.plainsThreshold = FindValueFromPercent(self.rainFallMap,mc.width,mc.height,mc.PlainsPercent,.0001,False)
         self.grassThreshold = FindValueFromPercent(self.rainFallMap,mc.width,mc.height,mc.GrassPercent,.0001,False)
         for y in range(mc.height):
+	    lat = abs(mcDup.getLattitude(y))
             for x in range(mc.width):
                 i = GetIndex(x,y)
                 if self.plotMap[i] == mc.OCEAN:
@@ -2070,7 +2072,7 @@ class SmallMaps :
                     elif self.averageTempMap[i] < mc.TundraTemp:
                         self.terrainMap[i] = mc.TUNDRA
                     else:
-                        if self.rainFallMap[i] < (PRand.random() * (self.desertThreshold - minRain) + self.desertThreshold - minRain)/2.0 + minRain:
+                        if self.rainFallMap[i] < (PRand.random() * (self.desertThreshold - minRain) + self.desertThreshold - minRain)/2.0 + minRain and lat < (mc.horseLattitude + 4 +  int(PRand.random() * 3)) and lat > (mc.horseLattitude - 12 + int(PRand.random() * 4)):
                             self.terrainMap[i] = mc.DESERT
                         else:
                             if PRand.random() <= 0.5:
@@ -5022,6 +5024,7 @@ def generateTaiga():
 def generateRockSteppes():
 
     gc = CyGlobalContext()
+    mcDup = ClimateMap()
     mmap = gc.getMap()
     terrainPrairie = gc.getInfoTypeForString("TERRAIN_PLAINS")
     terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
@@ -5031,6 +5034,7 @@ def generateRockSteppes():
     
     # Convert 3x3 of flat fertile river-less land to rock steppes to reflect arid land  
     for y in range(mc.height):
+	lat = abs(mcDup.getLattitude(y))
         for x in range(mc.width):
             plot = mmap.plot(x,y)
             if not plot.getPlotType() == PlotTypes.PLOT_PEAK:
@@ -5038,7 +5042,7 @@ def generateRockSteppes():
                     if not isAnyAdjacentPlotType(x, y, PlotTypes.PLOT_OCEAN):
                         if plot.getTerrainType() == terrainPrairie or plot.getTerrainType() == terrainPlains:
                             if isAllAdjacentPlotTerrainType(x, y, terrainPrairie) or isAllAdjacentPlotTerrainType(x, y, terrainPlains):
-                                if PRand.random() <= rockSteppesChance * 0.2:
+                                if PRand.random() <= rockSteppesChance or (sm.rainFallMap[GetIndex(x, y)] < 0.002):
                                     plot.setTerrainType(terrainRockSteppes, True, True)
                                     # Generate some Hills
                                     iRandPlotType = PRand.random()
