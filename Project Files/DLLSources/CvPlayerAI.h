@@ -145,8 +145,8 @@ public:
 	int AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea) const;
 	int AI_unitValuePercent(UnitTypes eUnit, UnitAITypes* peUnitAI, CvArea* pArea);
 	int AI_totalUnitAIs(UnitAITypes eUnitAI);
-	int AI_totalAreaUnitAIs(CvArea* pArea, UnitAITypes eUnitAI);
-	int AI_totalWaterAreaUnitAIs(CvArea* pArea, UnitAITypes eUnitAI);
+	int AI_totalAreaUnitAIs(CvArea* pArea, UnitAITypes eUnitAI) const;
+	int AI_totalWaterAreaUnitAIs(CvArea* pArea, UnitAITypes eUnitAI) const;
 	bool AI_hasSeaTransport(const CvUnit* pCargo) const;
 
 	int AI_neededExplorers(CvArea* pArea);
@@ -161,14 +161,14 @@ public:
 
 	int AI_areaMissionAIs(CvArea* pArea, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
 	int AI_adjacantToAreaMissionAIs(CvArea* pArea, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
-	int AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0);
-	int AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, int& iClosestTargetRange, CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0);
-	int AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes* aeMissionAI, int iMissionAICount, int& iClosestTargetRange, CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0);
-	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
+	int AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0) const;
+	int AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, int& iClosestTargetRange, CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0) const;
+	int AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes* aeMissionAI, int iMissionAICount, int& iClosestTargetRange, CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0) const;
+	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL) const;
+	
+	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup, UnitAITypes eUnitAI) const;	// TAC - AI Attack City - koma13
 
-	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup, UnitAITypes eUnitAI);	// TAC - AI Attack City - koma13
-
-	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup = NULL);
+	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup = NULL) const;
 	int AI_enemyTargetMissionAIs(MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
 	int AI_enemyTargetMissionAIs(MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup = NULL);
 	int AI_wakePlotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
@@ -308,8 +308,8 @@ public:
 
 	void AI_updateYieldValues();
 	int AI_transferYieldValue(const IDInfo target, YieldTypes eYield, int iAmount);
-
-	int AI_countYieldWaiting();
+	
+	int AI_countYieldWaiting() const;
 	int AI_highestYieldAdvantage(YieldTypes eYield);
 
 	void AI_manageEconomy();
@@ -374,14 +374,14 @@ public:
 
 	EmotionTypes AI_strongestEmotion();
 	int AI_emotionWeight(EmotionTypes eEmotion);
-	int AI_getEmotion(EmotionTypes eEmotion);
+	int AI_getEmotion(EmotionTypes eEmotion) const;
 	void AI_setEmotion(EmotionTypes eEmotion, int iNewValue);
 	void AI_changeEmotion(EmotionTypes eEmotion, int iChange);
 
 	bool AI_isAnyStrategy() const;
 	bool AI_isStrategy(StrategyTypes eStrategy) const;
 	int AI_getStrategyDuration(StrategyTypes eStrategy) const;
-	int AI_getStrategyData(StrategyTypes eStrategy);
+	int AI_getStrategyData(StrategyTypes eStrategy) const;
 	void AI_setStrategy(StrategyTypes eStrategy, int iData = -1);
 	void AI_clearStrategy(StrategyTypes eStrategy);
 

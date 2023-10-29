@@ -16735,3 +16735,14 @@ int CvUnit::getDiscriminationFactor() const
 	}
 	return 0;
 }
+
+bool CvUnit::isShipTravelState(UnitTravelStates state) const
+{
+	if (state == UNIT_TRAVEL_STATE_LIVE_AMONG_NATIVES || state == NO_UNIT_TRAVEL_STATE) {
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}

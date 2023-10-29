@@ -3763,15 +3763,15 @@ struct ProfessionValue
 	int iNetValue;
 };
 
-int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUnit, const CvPlot* pPlot, const CvUnit* pDisplaceUnit) const
+// Returns the estimated value of placing pUnit in either a plot or slot. Set bAllowNotOnMap to return a non-zero value for units not on the map (e.g. in Europe)
+int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUnit, const CvPlot* pPlot, const CvUnit* pDisplaceUnit, bool bAllowNotOnMap) const
 {
 	if (eProfession == NO_PROFESSION)
 	{
 		return 0;
 	}
 
-	CvProfessionInfo& kProfessionInfo = GC.getProfessionInfo(eProfession);
-
+	const CvProfessionInfo& kProfessionInfo = GC.getProfessionInfo(eProfession);
 
 	int iIncome = 0;
 	int iTarget = 0;
@@ -3786,7 +3786,7 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 
 	FAssert(pUnit != NULL);
 
-	if (!pUnit->isOnMap())
+	if (!bAllowNotOnMap && !pUnit->isOnMap())
 	{
 		if (!pUnit->canHaveProfession(eProfession, pDisplaceUnit != NULL, pPlot))
 		{
@@ -3808,7 +3808,7 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 		return 0;
 	}
 
-	CvUnitInfo& kUnit = GC.getUnitInfo(pUnit->getUnitType());
+	const CvUnitInfo& kUnit = GC.getUnitInfo(pUnit->getUnitType());
 
 	if (GC.getProfessionInfo(eProfession).isWorkPlot())
 	{
@@ -4454,7 +4454,7 @@ CvUnit* CvCityAI::AI_getWorstProfessionUnit(ProfessionTypes eProfession) const
 	return pWorstUnit;
 }
 
-int CvCityAI::AI_unitJoinCityValue(CvUnit* pUnit, ProfessionTypes* peNewProfession) const
+int CvCityAI::AI_unitJoinCityValue(const CvUnit& kUnit, ProfessionTypes* peNewProfession) const
 {
 	int iBestValue = 0;
 	CityPlotTypes eBestPlot = NO_CITY_PLOT;
@@ -4467,7 +4467,7 @@ int CvCityAI::AI_unitJoinCityValue(CvUnit* pUnit, ProfessionTypes* peNewProfessi
 		{
 			if (GC.getProfessionInfo(eLoopProfession).isCitizen())
 			{
-				if (pUnit->canHaveProfession(eLoopProfession, false, plot()))
+				if (kUnit.canHaveProfession(eLoopProfession, false, plot()))
 				{
 					if (GC.getProfessionInfo(eLoopProfession).isWorkPlot())
 					{
@@ -4483,7 +4483,7 @@ int CvCityAI::AI_unitJoinCityValue(CvUnit* pUnit, ProfessionTypes* peNewProfessi
 									{
 										if (canWork(pLoopPlot))
 										{
-											int iValue = AI_professionValue(eLoopProfession, pUnit, pLoopPlot, NULL);
+											int iValue = AI_professionValue(eLoopProfession, &kUnit, pLoopPlot, NULL, /*bAllowNotOnMap*/true);
 
 											if (iValue > iBestValue)
 											{
@@ -4499,7 +4499,7 @@ int CvCityAI::AI_unitJoinCityValue(CvUnit* pUnit, ProfessionTypes* peNewProfessi
 					}
 					else
 					{
-						int iValue = AI_professionValue(eLoopProfession, pUnit, NULL, NULL);
+						int iValue = AI_professionValue(eLoopProfession, &kUnit, NULL, NULL, /*bAllowNotOnMap*/true);
 						if (iValue > iBestValue)
 						{
 							eBestProfession = eLoopProfession;
@@ -5212,18 +5212,20 @@ bool CvCityAI::AI_shouldImportYield(YieldTypes eYield) const
 
 bool CvCityAI::AI_shouldExportYield(YieldTypes eYield) const
 {
+	// TODO: Add check for maintain limit
+
+	// TAC - AI Economy - koma13 - START
+	if (!GET_PLAYER(getOwnerINLINE()).AI_isYieldForSale(eYield))
+	{
+		return false;
+	}
+	// TAC - AI Economy - koma13 - END
+
 	if (GET_PLAYER(getOwnerINLINE()).AI_isYieldFinalProduct(eYield))
 	{
 		return true;
 	}
-
-	// TAC - AI Economy - koma13 - START
-	if (GET_PLAYER(getOwnerINLINE()).AI_isYieldForSale(eYield))
-	{
-		return true;
-	}
-	// TAC - AI Economy - koma13 - END
-
+	
 	// WTP, ray small correction to not hardcode Lumber, Stone and Hardwood
 	if ((GET_PLAYER(getOwnerINLINE()).AI_shouldBuyFromEurope(eYield)) || GC.getYieldInfo(eYield).isIgnoredForStorageCapacity())
 	{
