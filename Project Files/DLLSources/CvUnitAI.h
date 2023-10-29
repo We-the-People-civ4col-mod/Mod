@@ -35,7 +35,7 @@ public:
 	void AI_reset();
 
 	bool AI_update();
-	bool AI_europeUpdate();
+	bool AI_portUpdate();
 	bool AI_follow();
 
 	void AI_upgrade();
@@ -395,7 +395,7 @@ protected:
 	
 	bool AI_isOnMission();
 	
-	bool AI_isObsoleteTradeShip();
+	bool AI_isObsoleteTradeShip() const;
 
 	bool AI_sailTo(const SailToHelper& sth, bool bMove, bool bIgnoreDanger = true);
 

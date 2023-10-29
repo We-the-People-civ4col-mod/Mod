@@ -99,9 +99,9 @@ bool CvUnitAI::AI_update()
 		}
 	}
 
-	if (getUnitTravelState() != NO_UNIT_TRAVEL_STATE)
+	if (isShipTravelState(getUnitTravelState()))
 	{
-		AI_europeUpdate();
+		AI_portUpdate();
 		return false;
 	}
 
@@ -380,7 +380,7 @@ bool CvUnitAI::AI_update()
 }
 
 // AI_update returns true when we should abort the loop and wait until next slice
-bool CvUnitAI::AI_europeUpdate()
+bool CvUnitAI::AI_portUpdate()
 {
 	PROFILE_FUNC();
 
@@ -6579,10 +6579,10 @@ bool CvUnitAI::AI_europe()
 		kOwner.AI_doEurope();
 	}
 
-	if (!kOwner.getNumCities() == 0)
+	if (kOwner.getNumCities() > 0)
 	{	// only do this if we have not lost all our cities!
 		// Otherwise we'll get our transport units stuck in a loop to Europe and back
-	// TAC - AI purchases military units - koma13 - START
+		// TAC - AI purchases military units - koma13 - START
 		for (int i = 0; i < kOwner.getNumEuropeUnits(); ++i)
 		{
 			CvUnit* pLoopUnit = kOwner.getEuropeUnit(i);
@@ -6621,7 +6621,21 @@ bool CvUnitAI::AI_europe()
 	}
 	// TAC - AI purchases military units - koma13 - END
 
-	if (kOwner.AI_shouldHurryUnit() && kOwner.m_estimatedUnemploymentCount < kOwner.getNumCities() * 2)
+	int iCitizenPotentialValue = 0;
+	ProfessionTypes eBestProfession = NO_PROFESSION;
+	for (int i = 0; i < kOwner.getNumEuropeUnits(); ++i)
+	{
+		FOREACH_CITY_OF_OWNER(pLoopCity, kOwner)
+		{
+			iCitizenPotentialValue = std::max(iCitizenPotentialValue, pLoopCity->AI_unitJoinCityValue(*kOwner.getEuropeUnit(i), &eBestProfession));
+		}
+	}
+
+	// Don't bother hurrying if the colonist won't add sufficient value
+	const int iCitizenValueThreshold = 15;
+
+	// TODO: Only attempt to hurry if we have at least 1 colonist waiting on the docks
+	if (iCitizenPotentialValue > iCitizenValueThreshold && kOwner.AI_shouldHurryUnit() && kOwner.m_estimatedUnemploymentCount < kOwner.getNumCities())
 	{
 		const int iPotentialColonistsToHurry = std::max(0, cargoSpace() - getCargo() - kOwner.getNumEuropeUnits());
 
@@ -6640,7 +6654,7 @@ bool CvUnitAI::AI_europe()
 	{
 		aUnits.push_back(kOwner.getEuropeUnit(i));
 	}
-
+	
 	// Pick up settlers first
 	// TODO: Refactor this into a list of priorities
 	while (!aUnits.empty() && !isFull())
@@ -6969,35 +6983,37 @@ bool CvUnitAI::AI_travelToPort(int iMinPercent, int iMaxPath)
 
 	const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	const CvPlayerAI& kEuropePlayer = GET_PLAYER(kOwner.getParent());
-	int iLoop;
-	for (CvCity* pLoopCity = GET_PLAYER(getOwnerINLINE()).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(getOwnerINLINE()).nextCity(&iLoop))
+	
+	FOREACH_CITY_OF_OWNER(pLoopCity, kOwner)
 	{
 		if (!atPlot(pLoopCity->plot()) && AI_plotValid(pLoopCity->plot()))
 		{
+			// Cities with a customs house need not be considered
+			if (pLoopCity->getHasUnlockedStorageLossTradeSettings())
+				continue;
+
 			if (!(pLoopCity->plot()->isVisibleEnemyUnit(this)))
 			{
 				// TAC - AI Improved Naval AI - koma13 - START
 				//if (GET_PLAYER(getOwnerINLINE()).AI_plotTargetMissionAIs(pLoopCity->plot(), MISSIONAI_TRANSPORT_SEA, getGroup(), 1) == 0)
-				if (pLoopCity->isBestPortCity() || (GET_PLAYER(getOwnerINLINE()).AI_plotTargetMissionAIs(pLoopCity->plot(), MISSIONAI_TRANSPORT_SEA, getGroup(), 1) == 0))
+				if (pLoopCity->isBestPortCity() || (GET_PLAYER(getOwnerINLINE()).AI_plotTargetMissionAIs(pLoopCity->plot(), MISSIONAI_TRANSPORT_SEA, getGroup(), baseMoves()) == 0))
 				// TAC - AI Improved Naval AI - koma13 - END
 				{
-
 					int iPathTurns;
 					if (generatePath(pLoopCity->plot(), MOVE_NO_ENEMY_TERRITORY | MOVE_AVOID_ENEMY_WEIGHT_3, true, &iPathTurns, iMaxPath))
 					{
 						int iBestYieldValue = 0;
 						//Nothing too fancy, just find the best yield and best quantity.
-						for (int i = 0; i < NUM_YIELD_TYPES; i++)
+						FOREACH_CARGO_YIELD(Yield)
 						{
-							const YieldTypes eYield = (YieldTypes)i;
-							if (kOwner.isYieldEuropeTradable(eYield))
+							if (kOwner.isYieldEuropeTradable(eLoopYield))
 							{
-								if (kOwner.AI_isYieldForSale(eYield))
+								if (kOwner.AI_isYieldForSale(eLoopYield))
 								{
-									const int iAvailable = std::max(0, pLoopCity->getYieldStored(eYield) - pLoopCity->getMaintainLevel(eYield));
+									const int iAvailable = std::max(0, pLoopCity->getYieldStored(eLoopYield) - pLoopCity->getMaintainLevel(eLoopYield));
 									if (iAvailable >= ((GC.getGameINLINE().getCargoYieldCapacity() * iMinPercent) / 100))
 									{
-										const int iYieldValue = iAvailable * kEuropePlayer.getYieldBuyPrice(eYield);
+										const int iYieldValue = iAvailable * kEuropePlayer.getYieldBuyPrice(eLoopYield);
 										iBestYieldValue = std::max(iYieldValue, iBestYieldValue);
 									}
 								}
@@ -7039,33 +7055,25 @@ bool CvUnitAI::AI_travelToPort(int iMinPercent, int iMaxPath)
 bool CvUnitAI::AI_collectGoods()
 {
 	bool bLoaded = false;
-	CvCity* pCity = plot()->getPlotCity();
+	CvCity* const pCity = plot()->getPlotCity();
 
 	FAssert(pCity != NULL);
 	FAssert(pCity->getOwner() == getOwner()); // team?
 
-	CvPlayerAI& kOwner = GET_PLAYER(getOwner());
-	CvPlayerAI& kEuropePlayer = GET_PLAYER(kOwner.getParent());
+	const CvCityAI& pCityAI = static_cast<CvCityAI&>(*(plot()->getPlotCity()));
+	const CvPlayerAI& kOwner = GET_PLAYER(getOwner());
+	const CvPlayerAI& kEuropePlayer = GET_PLAYER(kOwner.getParent());
 
 	//First try and load any additional cargo.
-	for (int i = 0; i < NUM_YIELD_TYPES; i++)
+	FOREACH_CARGO_YIELD(Yield)
 	{
-		YieldTypes eYield = (YieldTypes)i;
-		if (kOwner.isYieldEuropeTradable(eYield))
+		if (kOwner.isYieldEuropeTradable(eLoopYield) && pCityAI.AI_shouldExportYield(eLoopYield))
 		{
-			if (kOwner.AI_isYieldForSale(eYield))
+			const int iYieldStored = getLoadedYieldAmount(eLoopYield) % GC.getGameINLINE().getCargoYieldCapacity();
+			if (iYieldStored > 0 && pCity->getYieldStored(eLoopYield) > 0)
 			{
-				YieldTypes eYield = (YieldTypes)i;
-				int iYieldStored = getLoadedYieldAmount(eYield) % GC.getGameINLINE().getCargoYieldCapacity();
-
-				if (iYieldStored > 0)
-				{
-					if (pCity->getYieldStored(eYield) > 0)
-					{
-						loadYield(eYield, false);
-						bLoaded = true;
-					}
-				}
+				loadYield(eLoopYield, false);
+				bLoaded = true;
 			}
 		}
 	}
@@ -7076,25 +7084,21 @@ bool CvUnitAI::AI_collectGoods()
 		YieldTypes eBestYield = NO_YIELD;
 		int iBestYieldValue = 0;
 
-		for (int i = 0; i < NUM_YIELD_TYPES; i++)
+		FOREACH_CARGO_YIELD(Yield)
 		{
-			YieldTypes eYield = (YieldTypes)i;
-			if (kOwner.isYieldEuropeTradable(eYield))
+			if (kOwner.isYieldEuropeTradable(eLoopYield) && pCityAI.AI_shouldExportYield(eLoopYield))
 			{
-				if (kOwner.AI_isYieldForSale(eYield))
+				int iStored = getMaxLoadYieldAmount(eLoopYield);
+				if (iStored > (GC.getGameINLINE().getCargoYieldCapacity() / 10))
 				{
-					int iStored = getMaxLoadYieldAmount(eYield);
-					if (iStored > (GC.getGameINLINE().getCargoYieldCapacity() / 10))
+					int iYieldValue = iStored * kEuropePlayer.getYieldBuyPrice(eLoopYield);
+					if (iYieldValue > iBestYieldValue)
 					{
-						int iYieldValue = iStored * kEuropePlayer.getYieldBuyPrice(eYield);
-						if (iYieldValue > iBestYieldValue)
-						{
-							iBestYieldValue =iYieldValue;
-						eBestYield = eYield;
+						iBestYieldValue =iYieldValue;
+						eBestYield = eLoopYield;
 					}
 				}
 			}
-		}
 		}
 
 		if (eBestYield == NO_YIELD)
@@ -15253,7 +15257,7 @@ bool CvUnitAI::AI_joinAnyCity(int iMaxPath, bool bRequireJoinable)
 			if (bValid)
 			{
 				ProfessionTypes eProfession;
-				int iValue = pCity->AI_unitJoinCityValue(this, &eProfession);
+				int iValue = pCity->AI_unitJoinCityValue(*this, &eProfession);
 
 				const int iIncoming = kOwner.AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_FOUND, getGroup());
 				// TAC - AI Economy- koma13 - START
@@ -19126,14 +19130,16 @@ bool CvUnitAI::AI_isOnMission()
 	return false;
 }
 
-bool CvUnitAI::AI_isObsoleteTradeShip()
+bool CvUnitAI::AI_isObsoleteTradeShip() const
 {
-	CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+	const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
 
 	int iLoop;
-	CvUnit* pLoopUnit;
-	for (pLoopUnit = kOwner.firstUnit(&iLoop); pLoopUnit; pLoopUnit = kOwner.nextUnit(&iLoop))
+	for (CvUnit* pLoopUnit = kOwner.firstUnit(&iLoop); pLoopUnit; pLoopUnit = kOwner.nextUnit(&iLoop))
 	{
+		const CvUnitInfo& kUnitInfo = GC.getUnitInfo(pLoopUnit->getUnitType());
+		// Don't consider it obsolete unless our other ship is unrestricted!
+
 		if (pLoopUnit->AI_getUnitAIType() == AI_getUnitAIType())
 		{
 			if (cargoSpace() < pLoopUnit->cargoSpace())
@@ -19147,7 +19153,6 @@ bool CvUnitAI::AI_isObsoleteTradeShip()
 					return true;
 				}
 			}
-
 		}
 	}
 	return false;

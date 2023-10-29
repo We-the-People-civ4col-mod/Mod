@@ -5238,13 +5238,13 @@ int CvPlayerAI::AI_totalUnitAIs(UnitAITypes eUnitAI)
 }
 
 
-int CvPlayerAI::AI_totalAreaUnitAIs(CvArea* pArea, UnitAITypes eUnitAI)
+int CvPlayerAI::AI_totalAreaUnitAIs(CvArea* pArea, UnitAITypes eUnitAI) const
 {
 	return (pArea->getNumTrainAIUnits(getID(), eUnitAI) + pArea->getNumAIUnits(getID(), eUnitAI));
 }
 
 
-int CvPlayerAI::AI_totalWaterAreaUnitAIs(CvArea* pArea, UnitAITypes eUnitAI)
+int CvPlayerAI::AI_totalWaterAreaUnitAIs(CvArea* pArea, UnitAITypes eUnitAI) const
 {
 	CvCity* pLoopCity;
 	int iCount;
@@ -5530,18 +5530,18 @@ int CvPlayerAI::AI_adjacantToAreaMissionAIs(CvArea* pArea, MissionAITypes eMissi
 }
 
 
-int CvPlayerAI::AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup, int iRange)
+int CvPlayerAI::AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup, int iRange) const
 {
 	int iClosestTargetRange;
 	return AI_plotTargetMissionAIs(pPlot, &eMissionAI, 1, iClosestTargetRange, pSkipSelectionGroup, iRange);
 }
 
-int CvPlayerAI::AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, int& iClosestTargetRange, CvSelectionGroup* pSkipSelectionGroup, int iRange)
+int CvPlayerAI::AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, int& iClosestTargetRange, CvSelectionGroup* pSkipSelectionGroup, int iRange) const
 {
 	return AI_plotTargetMissionAIs(pPlot, &eMissionAI, 1, iClosestTargetRange, pSkipSelectionGroup, iRange);
 }
 
-int CvPlayerAI::AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes* aeMissionAI, int iMissionAICount, int& iClosestTargetRange, CvSelectionGroup* pSkipSelectionGroup, int iRange)
+int CvPlayerAI::AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes* aeMissionAI, int iMissionAICount, int& iClosestTargetRange, CvSelectionGroup* pSkipSelectionGroup, int iRange) const
 {
 	PROFILE_FUNC();
 
@@ -5712,18 +5712,18 @@ int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMission
 */
 
 // TAC - AI Attack City - koma13 - START
-int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup)
+int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup) const
 {
 	//return AI_unitTargetMissionAIs(pUnit, &eMissionAI, 1, pSkipSelectionGroup, -1);
 	return AI_unitTargetMissionAIs(pUnit, &eMissionAI, 1, pSkipSelectionGroup, -1, NO_UNITAI);
 }
 
-int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup, UnitAITypes eUnitAI)
+int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup, UnitAITypes eUnitAI) const
 {
 	return AI_unitTargetMissionAIs(pUnit, &eMissionAI, 1, pSkipSelectionGroup, -1, eUnitAI);
 }
 
-int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup)
+int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup) const
 {
 	//return AI_unitTargetMissionAIs(pUnit, aeMissionAI, iMissionAICount, pSkipSelectionGroup, -1);
 	return AI_unitTargetMissionAIs(pUnit, aeMissionAI, iMissionAICount, pSkipSelectionGroup, -1, NO_UNITAI);
@@ -8674,6 +8674,7 @@ bool CvPlayerAI::isYieldValidForNativeTrade(YieldTypes yield, const CvCity& city
 
 // R&R, ray, Natives Trading - END
 
+// Master "veto" for exporting a given yield. Should not be overridden!
 bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 {
 	if (!GC.getYieldInfo(eYield).isCargo())
@@ -8696,7 +8697,7 @@ bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 		case YIELD_COAL:
 		case YIELD_CHAR_COAL:
 		case YIELD_PEAT:
-			return true;
+			return true; // TODO: Add a suitable threshold for these so that the surplus can be exported
 			break;
 		case YIELD_SHEEP:
 		case YIELD_GOATS:
@@ -9904,35 +9905,24 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 	return iValue;
 }
 
-int CvPlayerAI::AI_countYieldWaiting()
+// Returns the number of full cargo units ("loads") waiting to be exported
+int CvPlayerAI::AI_countYieldWaiting() const
 {
-	int iCount = 0;
-	int iLoop;
-	CvCity* pLoopCity;
-
-	int iUnitSize = GC.getGameINLINE().getCargoYieldCapacity();
-	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+	int iCargoUnitCount = 0;
+	const int iCargoSize = GC.getGameINLINE().getCargoYieldCapacity();
+	
+	FOREACH_CITY(pLoopCity)
 	{
-		// Custom_House_Mod Start
-		if (pLoopCity->isBestPortCity())
-		// Custom_House_Mod End
+		FOREACH_CARGO_YIELD(Yield)
 		{
-			for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
-			{
-				YieldTypes eLoopYield = (YieldTypes)iYield;
-				int iTotal = pLoopCity->getYieldStored(eLoopYield);
-				if (iTotal > 0)
-				{
-					if (pLoopCity->AI_shouldExportYield(eLoopYield))
-					{
-						iCount += (iTotal + iUnitSize / 2) / iUnitSize;
-					}
-				}
-			}
+			if (!pLoopCity->AI_shouldExportYield(eLoopYield))
+				continue;
+
+			const int iAvailableCargoUnits = std::max(0, pLoopCity->getYieldStored(eLoopYield) - pLoopCity->getMaintainLevel(eLoopYield)) / iCargoSize;
+			iCargoUnitCount += iAvailableCargoUnits;
 		}
 	}
-
-	return iCount;
+	return iCargoUnitCount;
 }
 
 int CvPlayerAI::AI_highestYieldAdvantage(YieldTypes eYield)
@@ -15719,7 +15709,7 @@ int CvPlayerAI::AI_emotionWeight(EmotionTypes eEmotion)
 	return (100 * m_em_iEmotions.get(eEmotion)) / (m_em_iEmotions.get(eBestEmotion));
 }
 
-int CvPlayerAI::AI_getEmotion(EmotionTypes eEmotion)
+int CvPlayerAI::AI_getEmotion(EmotionTypes eEmotion) const
 {
 	FAssert(eEmotion > NO_EMOTION);
 	FAssert(eEmotion < NUM_EMOTION_TYPES);
@@ -15772,7 +15762,7 @@ int CvPlayerAI::AI_getStrategyDuration(StrategyTypes eStrategy) const
 	return (GC.getGameINLINE().getGameTurn() - m_em_iStrategyStartedTurn.get(eStrategy));
 }
 
-int CvPlayerAI::AI_getStrategyData(StrategyTypes eStrategy)
+int CvPlayerAI::AI_getStrategyData(StrategyTypes eStrategy) const
 {
 	FAssert(eStrategy > NO_STRATEGY);
 	FAssert(eStrategy < NUM_STRATEGY_TYPES);
@@ -16572,9 +16562,8 @@ int CvPlayerAI::AI_getColonialMilitaryModifier() const
 int CvPlayerAI::AI_estimateUnemploymentCount() const
 {
 	int cnt = 0;
-	int iLoop;
-
-	for (CvUnit* pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
+	
+	FOREACH_UNIT(pLoopUnit)
 	{
 		// Only count colonists that are
 		// 1) On the map (so not inside a city or on the docs)

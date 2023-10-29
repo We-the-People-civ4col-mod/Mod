@@ -263,7 +263,7 @@ bool CvSelectionGroupAI::AI_update()
 
 					if (pLoopUnit != NULL)
 					{
-						pLoopUnit->AI_europeUpdate();
+						pLoopUnit->AI_portUpdate();
 					}
 				}
 			}

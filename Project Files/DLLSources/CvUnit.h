@@ -785,7 +785,7 @@ public:
 	virtual void AI_uninit() = 0;
 	virtual void AI_reset() = 0;
 	virtual bool AI_update() = 0;
-	virtual bool AI_europeUpdate() = 0;
+	virtual bool AI_portUpdate() = 0;
 	virtual bool AI_follow() = 0;
 	virtual void AI_upgrade() = 0;
 	virtual void AI_promote() = 0;
@@ -834,6 +834,7 @@ public:
 	bool isBarbarianUnitOnAdjacentPlotOfUnit(int /*UnitClassTypes*/ iIndex) const;
 	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
 
+	bool isShipTravelState(UnitTravelStates state) const;
 protected:
 
 	void updateVisibilityCache(int iNewRange);
