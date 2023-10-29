@@ -847,6 +847,7 @@ public:
 	bool hasContentsYieldEquipmentAmountSecure(ProfessionTypes eProfession) const;
 	// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
 	bool isProfessionValid(ProfessionTypes eProfession, UnitTypes eUnit) const;
+	void taxIncreaseDiploCall(int iOldTaxRate, int iNewTaxRate, int iChange);
 	void changeProfessionEurope(int iUnitId, ProfessionTypes eProfession);
 
 	int getNumRevolutionEuropeUnits() const;
@@ -1188,6 +1189,7 @@ protected:
 	void doWarnings();
 	void doEvents();
 	void doPrices();
+	void doTaxRaises(CvPlayer& pColony);
 	void doAfricaPrices(); // R&R, ray, Africa
 	void doPortRoyalPrices(); // R&R, ray, Port Royal
 

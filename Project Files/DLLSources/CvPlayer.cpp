@@ -19105,6 +19105,8 @@ bool CvPlayer::isProfessionValid(ProfessionTypes eProfession, UnitTypes eUnit) c
 	return true;
 }
 
+
+
 void CvPlayer::doPrices()
 {
 	OOS_LOG("CvPlayer::doPrices start", getID());
@@ -19135,127 +19137,98 @@ void CvPlayer::doPrices()
 		}
 	}
 
-	//do tax rate change
-	if (!GC.getEraInfo(getCurrentEra()).isRevolution())
+	PlayerTypes eParent = getParent();
+	if (eParent != NO_PLAYER)
 	{
-		PlayerTypes eParent = getParent();
-		if (eParent != NO_PLAYER)
+		GET_PLAYER(eParent).doTaxRaises(*this);
+	}
+
+}
+
+
+void CvPlayer::doTaxRaises(CvPlayer  &pColony)
+{
+	const int MAX_ATTITUDE_ADJUST = 50;
+
+	FAssertMsg(isEurope(),"Only the European Homeland player - i.e the King - should calculate that")
+	if (GC.getEraInfo(getCurrentEra()).isRevolution()) return;
+	if (pColony.getHighestTradedYield() == NO_YIELD) return;
+
+	int iTotalScore = 0;
+	for (int i = 0; i < NUM_YIELD_TYPES; i++)
+	{
+		//Note : the Yield scores must be increased in sync for both the King and the colony when a trade takes place
+		if (pColony.isYieldEuropeTradable((YieldTypes)i))
 		{
-			if (getHighestTradedYield() != NO_YIELD)
-			{
-				// R&R, vetiarvind, Price dependent tax rate change - START
-				/*
-				int iTotalTraded = 0;
-				for (int i = 0; i < NUM_YIELD_TYPES; i++)
-				{
-					if (isYieldEuropeTradable((YieldTypes)i))
-					{
-						iTotalTraded += getYieldTradedTotal((YieldTypes) i);
-					}
-				}*/
-				int iTotalScore = 0;
-				for (int i = 0; i < NUM_YIELD_TYPES; i++)
-				{
-					if (isYieldEuropeTradable((YieldTypes)i))
-					{
-						iTotalScore += getYieldScoreTotal((YieldTypes) i);
-					}
-				}
-				// R&R, vetiarvind, Price dependent tax rate change - END
-
-				//modify the traded threshold
-				int iMultiplier = 100;
-				for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
-				{
-					TraitTypes eTrait = (TraitTypes) iTrait;
-					CvTraitInfo& kTrait = GC.getTraitInfo(eTrait);
-					if (hasTrait(eTrait))
-					{
-						iMultiplier += kTrait.getTaxRateThresholdModifier();
-					}
-				}
-				iMultiplier += getTaxRate() * GC.getTAX_TRADE_THRESHOLD_TAX_RATE_PERCENT() / 100;
-				// R&R, ray, Improvements to Tax Mechanism
-				//iMultiplier += GET_PLAYER(eParent).AI_getAttitudeVal(getID()) * GC.getDefineINT("TAX_TRADE_THRESHOLD_ATTITUDE_PERCENT");
-
-				// R&R, vetiarvind, Price dependent tax rate change - START
-				//if (iTotalTraded * 10000 > GC.getTAX_TRADE_THRESHOLD() * std::max(100, iMultiplier) * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent())
-
-				//compare total traded with trade threshold
-				if (iTotalScore * 10000 > GC.getTAX_TRADE_THRESHOLD() * std::max(100, iMultiplier) * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent())
-				{
-					// R&R, vetiarvind, Price dependent tax rate change - END
-					//random chance to raise tax rate
-					// R&R, ray, Improvements to Tax Mechanism - START
-					int iTaxIncreaseChanceModifierFromKingAttitude = GET_PLAYER(eParent).AI_getAttitudeVal(getID()) * GC.getTAX_TRADE_INCREASE_CHANCE_KING_ATTITUDE_BASE();
-					if (iTaxIncreaseChanceModifierFromKingAttitude > 50)
-					{
-						iTaxIncreaseChanceModifierFromKingAttitude = 50;
-					}
-					if (iTaxIncreaseChanceModifierFromKingAttitude < -50)
-					{
-						iTaxIncreaseChanceModifierFromKingAttitude = -50;
-					}
-					//if(GC.getGameINLINE().getSorenRandNum(100, "Tax rate increase") < GC.getDefineINT("TAX_INCREASE_CHANCE"))
-					if(GC.getGameINLINE().getSorenRandNum(100 + iTaxIncreaseChanceModifierFromKingAttitude, "Tax rate increase") < GC.getTAX_INCREASE_CHANCE())
-					// R&R, ray, Improvements to Tax Mechanism - END
-					{
-						int iOldTaxRate = getTaxRate();
-
-						/** NBMOD TAX **/
-						/** Original
-						int iNewTaxRate = std::min(99, iOldTaxRate + 1 + GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("TAX_RATE_MAX_INCREASE"), "Tax Rate Increase"));
-						int iChange = iNewTaxRate - iOldTaxRate;
-
-						if (isHuman())
-						{
-							CvDiploParameters* pDiplo = new CvDiploParameters(eParent);
-							pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_KISS_PINKY"));
-							pDiplo->addDiploCommentVariable(iOldTaxRate);
-							pDiplo->addDiploCommentVariable(iNewTaxRate);
-							pDiplo->setData(iChange);
-							pDiplo->setAIContact(true);
-							gDLL->beginDiplomacy(pDiplo, getID());
-						}
-						else
-						{
-							changeTaxRate(iChange);
-						}
-						**/
-
-						int iNewTaxRate = NBMOD_GetNewTaxRate(std::min(99, iOldTaxRate + 1 + GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("TAX_RATE_MAX_INCREASE"), "Tax Rate Increase")));
-						int iChange = iNewTaxRate - iOldTaxRate;
-
-						if (iChange > 0 )
-						{
-							if (isHuman())
-							{
-								CvDiploParameters* pDiplo = new CvDiploParameters(eParent);
-								pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_KISS_PINKY"));
-								pDiplo->addDiploCommentVariable(iOldTaxRate);
-								pDiplo->addDiploCommentVariable(iNewTaxRate);
-								pDiplo->setData(iChange);
-								pDiplo->setAIContact(true);
-								gDLL->beginDiplomacy(pDiplo, getID());
-							}
-							else
-							{
-								// TAC - AI TaxRate - koma13 - START
-								//changeTaxRate(iChange);
-								if (iOldTaxRate < GC.getHandicapInfo(getHandicapType()).getAIMaxTaxrate())
-								{
-									changeTaxRate(iChange);
-								}
-								// TAC - AI TaxRate - koma13 - END
-							}
-						}
-
-						/** NBMOD TAX **/
-					}
-				}
-			}
+			iTotalScore += getYieldScoreTotal((YieldTypes)i);
 		}
 	}
+
+	int iMultiplier = 100;
+	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
+	{
+		TraitTypes eTrait = (TraitTypes)iTrait;
+		CvTraitInfo& kTrait = GC.getTraitInfo(eTrait);
+		if (pColony.hasTrait(eTrait))
+		{
+			iMultiplier += kTrait.getTaxRateThresholdModifier();
+		}
+	}
+	iMultiplier += pColony.getTaxRate() * GC.getTAX_TRADE_THRESHOLD_TAX_RATE_PERCENT() / 100;
+
+	if (iTotalScore * 10000 <= GC.getTAX_TRADE_THRESHOLD() * std::max(100, iMultiplier)
+		* GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent())
+		return; // we have not traded enough yet;
+
+	
+	int iAttitudeModifier = GET_PLAYER(getID()).AI_getAttitudeVal(pColony.getID()) * GC.getTAX_TRADE_INCREASE_CHANCE_KING_ATTITUDE_BASE();
+	
+	if (iAttitudeModifier > MAX_ATTITUDE_ADJUST)
+	{
+		iAttitudeModifier = MAX_ATTITUDE_ADJUST;
+	}
+	if (iAttitudeModifier < -MAX_ATTITUDE_ADJUST)
+	{
+		iAttitudeModifier = -MAX_ATTITUDE_ADJUST;
+	}
+
+	if (GC.getGameINLINE().getSorenRandNum(100 + iAttitudeModifier, "Tax rate increase") >= GC.getTAX_INCREASE_CHANCE())
+		return; //Nah, we don't feel like increasing the tax right away
+
+	int iOldTaxRate = pColony.getTaxRate();
+	int iAttemptedNewTaxRate = iOldTaxRate + 1 + GC.getGameINLINE().getSorenRandNum(GLOBAL_DEFINE_TAX_RATE_MAX_INCREASE, "Tax Rate Increase");
+	int iNewTaxRate = pColony.NBMOD_GetNewTaxRate(iAttemptedNewTaxRate);
+
+	if(!pColony.isHuman())
+	{
+		int iAIMaxTaxRate = GC.getHandicapInfo(getHandicapType()).getAIMaxTaxrate();
+		if (iNewTaxRate > iAIMaxTaxRate)
+			iNewTaxRate = iAIMaxTaxRate;
+	}
+	int iChange = iNewTaxRate - iOldTaxRate;
+	if(iChange > 0)
+	{
+		if(pColony.isHuman())
+		{
+			pColony.taxIncreaseDiploCall(iOldTaxRate, iNewTaxRate, iChange);
+		}
+		else
+		{
+			pColony.changeTaxRate(iChange);
+		}
+	}
+
+}
+
+void CvPlayer::taxIncreaseDiploCall(int iOldTaxRate, int iNewTaxRate, int iChange)
+{
+	CvDiploParameters* pDiplo = new CvDiploParameters(getParent());
+	pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_KISS_PINKY"));
+	pDiplo->addDiploCommentVariable(iOldTaxRate);
+	pDiplo->addDiploCommentVariable(iNewTaxRate);
+	pDiplo->setData(iChange);
+	pDiplo->setAIContact(true);
+	gDLL->beginDiplomacy(pDiplo, getID());
 }
 
 // R&R, ray, Africa
