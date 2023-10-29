@@ -3324,14 +3324,15 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			YieldTypes eYield = (YieldTypes) iData1;
 			kPlayer.setYieldEuropeTradable(eYield, false);
 			// R&R, ray, Improvements to Tax Mechanism - START
-			kPlayer.setYieldTradedTotal(eYield, 0);
-			kPlayer.setYieldScoreTotal(eYield, 0);// R&R, vetiarvind, price dependent tax rate change
+			setYieldTradedTotal(eYield, 0);
+			setYieldScoreTotal(eYield, 0);// R&R, vetiarvind, price dependent tax rate change
 			for (int i = 0; i < NUM_YIELD_TYPES; i++)
 			{
 				if (kPlayer.isYieldEuropeTradable((YieldTypes)i))
 				{
-					kPlayer.setYieldTradedTotal((YieldTypes)i, 0);
-					kPlayer.setYieldScoreTotal((YieldTypes)i, 0);// R&R, vetiarvind, price dependent tax rate change
+					//We change these total on the King side
+					setYieldTradedTotal((YieldTypes)i, 0);
+					setYieldScoreTotal((YieldTypes)i, 0); // R&R, vetiarvind, price dependent tax rate change
 				}
 			}
 			// R&R, ray, Improvements to Tax Mechanism - END
@@ -18297,14 +18298,20 @@ void CvPlayer::changeTaxRate(int iChange)
 		int iOldRate = getTaxRate();
 		setTaxRate(iOldRate + iChange);
 
+		PlayerTypes eParent = getParent();
+		FAssert(eParent != NO_PLAYER);
+		
 		//reset yields traded
 		for(int i=0;i<NUM_YIELD_TYPES;i++)
 		{
-			setYieldTradedTotal((YieldTypes) i, 0);
-			setYieldScoreTotal((YieldTypes) i, 0);// R&R, vetiarvind, price dependent tax rate change
+			if (isYieldEuropeTradable((YieldTypes)i))
+			{
+				//We change these total on the King side
+				GET_PLAYER(eParent).setYieldTradedTotal((YieldTypes)i, 0);
+				GET_PLAYER(eParent).setYieldScoreTotal((YieldTypes)i, 0); // R&R, vetiarvind, price dependent tax rate change
+			}
 		}
 
-		PlayerTypes eParent = getParent();
 		if (eParent != NO_PLAYER)
 		{
 			CvString szTextKey = (iOldRate < getTaxRate() ? "TXT_KEY_TAX_RATE_CHANGED" : "TXT_KEY_TAX_RATE_LOWERED");
