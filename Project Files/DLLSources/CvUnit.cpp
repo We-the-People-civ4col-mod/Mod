@@ -3536,7 +3536,12 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 			//if (kPlot.getRouteType() != 2)
 			if (kPlot.getRouteType() < 2)
 			{
-				return false;
+				bool bLandUnitMayPassLargeRiverDueToImprovement = kPlot.getTerrainType() == TERRAIN_LARGE_RIVERS && (kPlot.getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(kPlot.getImprovementType()).getTerrainMakesValid(TERRAIN_LARGE_RIVERS) && GC.getImprovementInfo(kPlot.getImprovementType()).isOutsideBorders());
+
+				if (!bLandUnitMayPassLargeRiverDueToImprovement)
+				{
+					return false;
+				}
 			}
 		}
 		// R&R, ray, End Logic for Trains
