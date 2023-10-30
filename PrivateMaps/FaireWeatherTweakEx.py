@@ -4956,8 +4956,6 @@ def generateShallowCoast():
                     elif PRand.random() <= shallowCoastChance:
                         plot.setTerrainType(terrainShallowCoast, True, True)
 
-def generateShrubland():
-    
     gc = CyGlobalContext()
     mmap = gc.getMap()
     terrainShrubland = gc.getInfoTypeForString("TERRAIN_SHRUBLAND")
@@ -4966,23 +4964,24 @@ def generateShrubland():
     terrainGrassland = gc.getInfoTypeForString("TERRAIN_GRASS")
     terrainDesert = gc.getInfoTypeForString("TERRAIN_DESERT")
 
-    shrublandChance = 0.5 # Baseline chance for converting terrains around desert to shrubland
-    shrublandNextToShrublandChance = 0.5 # Chance to create Shrubland next to other Shrubland
+    shrublandChance = 0.7 # Baseline chance for converting terrains around desert to shrubland
+    shrublandNextToShrublandChance = 0.85 # Chance to create Shrubland next to other Shrubland # slightly increased due to more strict desert criteria
     
     # Convert some prairie that's adjaceant to desert to shrubland 
     for y in range(mc.height):
+        lat = abs(cm.getLattitude(y))
         for x in range(mc.width):
             plot = mmap.plot(x,y)
-            if not plot.getPlotType() == PlotTypes.PLOT_PEAK:
+            if not plot.getPlotType() == PlotTypes.PLOT_PEAK: #and (plot.isRiver() and not isAnyAdjacentPlotTerrainType(x, y, terrainDesert)):
                 if plot.getTerrainType() == terrainPrairie or plot.getTerrainType() == terrainPlains or plot.getTerrainType() == terrainGrassland:
-                    if isAnyAdjacentPlotTerrainType(x, y, terrainDesert):
+                    if (isAnyAdjacentPlotTerrainType(x, y, terrainDesert) or isAnyAdjacentPlotTerrainType(x, y, terrainPlains) or isAnyAdjacentPlotTerrainType(x, y, terrainPrairie)) and (sm.rainFallMap[GetIndex(x, y)] < 0.0035 and sm.rainFallMap[GetIndex(x, y)] > 0.002 and sm.averageTempMap[GetIndex(x, y)] > 0.55):
                         if PRand.random() <= shrublandChance:
                             plot.setTerrainType(terrainShrubland, True, True)
                             iRandPlotType = PRand.random()
                             if iRandPlotType <= 0.3: 
                                 plot.setPlotType(PlotTypes.PLOT_HILLS,True,True)
                     elif isAnyAdjacentPlotTerrainType(x, y, terrainShrubland):
-                        if PRand.random() <= shrublandNextToShrublandChance:
+                        if PRand.random() <= shrublandNextToShrublandChance and sm.rainFallMap[GetIndex(x, y)] < 0.0035 and sm.rainFallMap[GetIndex(x, y)] > 0.002 and sm.averageTempMap[GetIndex(x, y)] > 0.5:
                             plot.setTerrainType(terrainShrubland, True, True)
                             iRandPlotType = PRand.random()
                             if iRandPlotType <= 0.3: 
