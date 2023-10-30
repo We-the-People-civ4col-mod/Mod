@@ -484,8 +484,8 @@ public:
 	PlayerTypes getColony() const;
 	void setColony(PlayerTypes eColony);
 
-	CvPlayerAI* GetColonyPlayer() const;
-	CvPlayerAI* GetParentPlayer() const;
+	CvPlayerAI* getColonyPlayer() const;
+	CvPlayerAI* getParentPlayer() const;
 
 	DllExport TeamTypes getTeam() const;
 	void setTeam(TeamTypes eTeam);
@@ -1200,9 +1200,10 @@ protected:
 	void doWarnings();
 	void doEvents();
 	void doPrices();
-	void doTaxRaises();
+	void doTaxRaises(); //WTP, jburet, Tax Reform
 	void doAfricaPrices(); // R&R, ray, Africa
 	void doPortRoyalPrices(); // R&R, ray, Port Royal
+	void wipeRoyalYieldScore(); //WTP, jburet, Tax Reform
 
 	bool checkExpireEvent(EventTypes eEvent, const EventTriggeredData& kTriggeredData) const;
 	void expireEvent(EventTypes eEvent, const EventTriggeredData& kTriggeredData, bool bFail);
