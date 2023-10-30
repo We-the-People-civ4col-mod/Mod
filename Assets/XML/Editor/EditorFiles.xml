@@ -203,12 +203,6 @@
     </File>
     <File>
         <Dir>Buildings</Dir>
-        <Name>CIV4BuildingInfos</Name>
-        <Tag>BuildingInfo</Tag>
-        <Root>Civ4BuildingInfos</Root>
-    </File>
-    <File>
-        <Dir>Buildings</Dir>
         <Name>CIV4SpecialBuildingInfos</Name>
         <Tag>SpecialBuildingInfo</Tag>
         <Root>Civ4SpecialBuildingInfos</Root>
@@ -329,18 +323,6 @@
     </File>
     <File>
         <Dir>GameInfo</Dir>
-        <Name>CIV4FatherInfos</Name>
-        <Tag>FatherInfo</Tag>
-        <Root>Civ4FatherInfos</Root>
-    </File>
-    <File>
-        <Dir>GameInfo</Dir>
-        <Name>CIV4FatherPointInfos</Name>
-        <Tag>FatherPointInfo</Tag>
-        <Root>Civ4FatherPointInfos</Root>
-    </File>
-    <File>
-        <Dir>GameInfo</Dir>
         <Name>CIV4FatherPointInfos</Name>
         <Tag>FatherPointInfo</Tag>
         <Root>Civ4FatherPointInfos</Root>
@@ -371,21 +353,9 @@
     </File>
     <File>
         <Dir>GameInfo</Dir>
-        <Name>CIV4GoodyInfo</Name>
-        <Tag>GoodyInfo</Tag>
-        <Root>Civ4GoodyInfo</Root>
-    </File>
-    <File>
-        <Dir>GameInfo</Dir>
         <Name>CIV4GraphicOptionInfos</Name>
         <Tag>GraphicOptionInfo</Tag>
         <Root>Civ4GraphicOptionInfos</Root>
-    </File>
-    <File>
-        <Dir>GameInfo</Dir>
-        <Name>CIV4HandicapInfo</Name>
-        <Tag>HandicapInfo</Tag>
-        <Root>Civ4HandicapInfo</Root>
     </File>
     <File>
         <Dir>GameInfo</Dir>
@@ -586,12 +556,6 @@
         <Root>Civ4YieldInfos</Root>
     </File>
     <File>
-        <Dir>Terrain</Dir>
-        <Name>CIV4YieldInfos</Name>
-        <Tag>YieldInfo</Tag>
-        <Root>Civ4YieldInfos</Root>
-    </File>
-    <File>
         <Dir>Units</Dir>
         <Name>CIV4AutomateInfos</Name>
         <Tag>AutomateInfo</Tag>
@@ -650,12 +614,6 @@
         <Name>CIV4UnitClassInfos</Name>
         <Tag>UnitClassInfo</Tag>
         <Root>Civ4UnitClassInfos</Root>
-    </File>
-    <File>
-        <Dir>Units</Dir>
-        <Name>CIV4UnitInfos</Name>
-        <Tag>UnitInfo</Tag>
-        <Root>Civ4UnitInfos</Root>
     </File>
     <File>
         <Dir>Units</Dir>
