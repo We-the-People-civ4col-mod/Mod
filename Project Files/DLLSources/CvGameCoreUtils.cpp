@@ -2516,7 +2516,7 @@ void postLoadGameFixes()
 
 		if (kPlayer.getParent() != NO_PLAYER)
 		{
-			CvPlayer* kKing = kPlayer.getParentPlayer();
+			CvPlayer* kKing = kPlayer.GetParentPlayer();
 			CvPlayer* kColony = &kPlayer;
 			FAssertMsg(kKing != NULL, "Pointer to Parent Player not initialized");
 			FAssertMsg(kKing->getID() == kColony->getParent(), "Pointer to Parent Player doesn't point on the right player");
@@ -2526,7 +2526,7 @@ void postLoadGameFixes()
 		if (kPlayer.getColony() != NO_PLAYER)
 		{
 			CvPlayer* kKing = &kPlayer;
-			CvPlayer* kColony = kPlayer.getColonyPlayer();
+			CvPlayer* kColony = kPlayer.GetColonyPlayer();
 			FAssertMsg(kColony != NULL, "Pointer to Colony Player not initialized");
 			FAssertMsg(kKing->getID() == kColony->getParent(), "Pointer to Colony Player doesn't point on the right player");
 			FAssertMsg(kKing->getColony() == kColony->getID(), "Pointer to Colony Player doesn't point on the right player");
