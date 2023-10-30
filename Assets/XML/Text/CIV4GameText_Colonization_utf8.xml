@@ -3075,7 +3075,7 @@
         <German>Ein historischer Augenblick : Die [COLOR_HIGHLIGHT_TEXT]%s1:3_CivAdj[COLOR_REVERT] Nation wurde vernichtet!</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1:2_CivAdj[COLOR_REVERT] sconfitti!</Italian>
         <Spanish>¡Los [COLOR_HIGHLIGHT_TEXT]%s1:3_CivAdj[COLOR_REVERT] han sido derrotados!</Spanish>
-        <Russian>Исторический момент : [COLOR_HIGHLIGHT_TEXT]%s1:2_CivAdj[COLOR_REVERT] побежден!</Russian>
+        <Russian>[COLOR_CYAN]Исторический момент[COLOR_REVERT] : [COLOR_HIGHLIGHT_TEXT]%s1:2_CivAdj[COLOR_REVERT] побеждены!!!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BONUS_YIELD_CHANGE</Tag>

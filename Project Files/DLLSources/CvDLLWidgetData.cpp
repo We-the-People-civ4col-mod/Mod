@@ -19,6 +19,116 @@
 #include "CvPopupInfo.h"
 #include "FProfiler.h"
 
+
+class WidgetData
+{
+public:
+	virtual void parseHelp(CvWStringBuffer &szBuffer) const;
+
+	virtual bool executeAction() const;
+	virtual bool executeAltAction() const;
+	virtual bool executeDropOn(const CvWidgetDataStruct destinationWidgetData) const;
+	virtual bool executeDoubleClick();
+
+	virtual bool isLink() const;
+
+	static WidgetData* getNew(const CvWidgetDataStruct& widgetData);
+};
+
+void WidgetData::parseHelp(CvWStringBuffer &szBuffer) const
+{}
+
+// return value for the next 4 tells if the function did something
+// false as the default is to do nothing, but any child override should obviously return true
+bool WidgetData::executeAction() const
+{
+	return false;
+}
+bool WidgetData::executeAltAction() const
+{
+	return false;
+}
+bool WidgetData::executeDropOn(const CvWidgetDataStruct sourceWidgetData) const
+{
+	return false;
+}
+bool WidgetData::executeDoubleClick()
+{
+	return false;
+}
+
+// tells if the widget can jump to a pedia entry
+bool WidgetData::isLink() const
+{
+	return false;
+}
+
+template<int T>
+class WidgetContainer;
+
+template<>
+class WidgetContainer<WIDGET_PEDIA_JUMP_TO_UNIT> : public WidgetData
+{
+public:
+	WidgetContainer(const CvWidgetDataStruct widgetDataStruct)
+		: eUnit((UnitTypes)widgetDataStruct.m_iData1)
+		, iJumpHelpControl(widgetDataStruct.m_iData2) // 0 = no help; 1 = no jump
+	{}
+
+	const UnitTypes eUnit;
+	const int iJumpHelpControl;
+
+	void parseHelp(CvWStringBuffer &szBuffer) const
+	{
+		if (iJumpHelpControl != 0)
+		{
+			GAMETEXT.setUnitHelp(szBuffer, eUnit, false, false, gDLL->getInterfaceIFace()->getHeadSelectedCity());
+		}
+	}
+
+	bool executeAction() const
+	{
+		if (iJumpHelpControl != 1)
+		{
+			executeAltAction();
+		}
+		return true;
+	}
+
+	bool executeAltAction() const
+	{
+		bool ff = isInRange(eUnit);
+		CyArgsList argsList;
+
+		argsList.add(eUnit);
+		gDLL->getPythonIFace()->callFunction(PYScreensModule, "pediaJumpToUnit", argsList.makeFunctionArgs());
+		return true;
+	}
+
+	bool isLink() const
+	{
+		return isInRange(eUnit);
+	}
+};
+
+
+
+// has to be after the specialized cases of WidgetContainer
+
+WidgetData* WidgetData::getNew(const CvWidgetDataStruct& widgetData)
+{
+	switch (widgetData.m_eWidgetType)
+	{
+	case WIDGET_PEDIA_JUMP_TO_UNIT: return new WidgetContainer<WIDGET_PEDIA_JUMP_TO_UNIT>(widgetData);
+	}
+
+	return NULL;
+}
+
+
+
+
+
 CvDLLWidgetData* CvDLLWidgetData::m_pInst = NULL;
 
 CvDLLWidgetData& CvDLLWidgetData::getInstance()
@@ -38,6 +148,14 @@ void CvDLLWidgetData::freeInstance()
 
 void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, CvWidgetDataStruct &widgetDataStruct)
 {
+	WidgetData* data = WidgetData::getNew(widgetDataStruct);
+	if (data != NULL)
+	{
+		data->parseHelp(szBuffer);
+		SAFE_DELETE(data);
+		return;
+	}
+
 	switch (widgetDataStruct.m_eWidgetType)
 	{
 	case WIDGET_PLOT_LIST:
@@ -262,10 +380,6 @@ void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, CvWidgetDataStruct &w
 		parseSelectedHelp(widgetDataStruct, szBuffer);
 		break;
 
-	case WIDGET_PEDIA_JUMP_TO_UNIT:
-		parseUnitHelp(widgetDataStruct, szBuffer);
-		break;
-
 	case WIDGET_PEDIA_JUMP_TO_PROFESSION:
 		parseProfessionHelp(widgetDataStruct, szBuffer);
 		break;
@@ -433,6 +547,14 @@ void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, CvWidgetDataStruct &w
 // Protected Functions...
 bool CvDLLWidgetData::executeAction( CvWidgetDataStruct &widgetDataStruct )
 {
+	WidgetData* data = WidgetData::getNew(widgetDataStruct);
+	if (data != NULL)
+	{
+		bool result = data->executeAction();
+		SAFE_DELETE(data);
+		return result;
+	}
+
 	bool bHandled = false;			//	Right now general bHandled = false;  We can specific case this to true later.  Game will run with this = false;
 
 	switch (widgetDataStruct.m_eWidgetType)
@@ -554,13 +676,6 @@ bool CvDLLWidgetData::executeAction( CvWidgetDataStruct &widgetDataStruct )
 
 	case WIDGET_HELP_SELECTED:
 		doSelected(widgetDataStruct);
-		break;
-
-	case WIDGET_PEDIA_JUMP_TO_UNIT:
-		if (widgetDataStruct.m_iData2 != 1)
-		{
-			doPediaUnitJump(widgetDataStruct);
-		}
 		break;
 
 	case WIDGET_PEDIA_JUMP_TO_PROFESSION:
@@ -709,6 +824,14 @@ bool CvDLLWidgetData::executeAction( CvWidgetDataStruct &widgetDataStruct )
 //	right clicking action
 bool CvDLLWidgetData::executeAltAction( CvWidgetDataStruct &widgetDataStruct )
 {
+	WidgetData* data = WidgetData::getNew(widgetDataStruct);
+	if (data != NULL)
+	{
+		bool result = data->executeAltAction();
+		SAFE_DELETE(data);
+		return result;
+	}
+
 	CvWidgetDataStruct widgetData = widgetDataStruct;
 
 	bool bHandled = true;
@@ -719,9 +842,6 @@ bool CvDLLWidgetData::executeAltAction( CvWidgetDataStruct &widgetDataStruct )
 		break;
 	case WIDGET_CONSTRUCT:
 		doPediaConstructJump(widgetDataStruct);
-		break;
-	case WIDGET_PEDIA_JUMP_TO_UNIT:
-		doPediaUnitJump(widgetDataStruct);
 		break;
 	case WIDGET_PEDIA_JUMP_TO_PROFESSION:
 		doPediaProfessionJump(widgetDataStruct);
@@ -749,6 +869,14 @@ bool CvDLLWidgetData::executeAltAction( CvWidgetDataStruct &widgetDataStruct )
 
 bool CvDLLWidgetData::executeDropOn(const CvWidgetDataStruct& destinationWidgetData, const CvWidgetDataStruct& sourceWidgetData)
 {
+	WidgetData* data = WidgetData::getNew(sourceWidgetData);
+	if (data != NULL)
+	{
+		bool result = data->executeDropOn(destinationWidgetData);
+		SAFE_DELETE(data);
+		return result;
+	}
+
 	bool bHandled = true;
 	switch (sourceWidgetData.m_eWidgetType)
 	{
@@ -811,6 +939,14 @@ bool CvDLLWidgetData::executeDropOn(const CvWidgetDataStruct& destinationWidgetD
 //	right clicking action
 bool CvDLLWidgetData::executeDoubleClick(const CvWidgetDataStruct& widgetDataStruct)
 {
+	WidgetData* data = WidgetData::getNew(widgetDataStruct);
+	if (data != NULL)
+	{
+		bool result = data->executeDoubleClick();
+		SAFE_DELETE(data);
+		return result;
+	}
+
 	bool bHandled = true;
 	switch (widgetDataStruct.m_eWidgetType)
 	{
@@ -863,11 +999,18 @@ bool CvDLLWidgetData::executeDoubleClick(const CvWidgetDataStruct& widgetDataStr
 
 bool CvDLLWidgetData::isLink(const CvWidgetDataStruct &widgetDataStruct) const
 {
+	WidgetData* data = WidgetData::getNew(widgetDataStruct);
+	if (data != NULL)
+	{
+		bool result = data->isLink();
+		SAFE_DELETE(data);
+		return result;
+	}
+
 	bool bLink = false;
 	switch (widgetDataStruct.m_eWidgetType)
 	{
 	case WIDGET_PEDIA_JUMP_TO_BUILDING:
-	case WIDGET_PEDIA_JUMP_TO_UNIT:
 	case WIDGET_PEDIA_JUMP_TO_PROFESSION:
 	case WIDGET_PEDIA_JUMP_TO_PROMOTION:
 	case WIDGET_PEDIA_JUMP_TO_BONUS:
@@ -3172,14 +3315,6 @@ void CvDLLWidgetData::parseFatherHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 	if (widgetDataStruct.m_iData2 != 0)
 	{
 		GAMETEXT.setFatherHelp(szBuffer, (FatherTypes)widgetDataStruct.m_iData1, false);
-	}
-}
-
-void CvDLLWidgetData::parseUnitHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer)
-{
-	if (widgetDataStruct.m_iData2 != 0)
-	{
-		GAMETEXT.setUnitHelp(szBuffer, (UnitTypes)widgetDataStruct.m_iData1, false, false, gDLL->getInterfaceIFace()->getHeadSelectedCity());
 	}
 }
 
