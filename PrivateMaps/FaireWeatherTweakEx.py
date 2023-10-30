@@ -115,7 +115,7 @@ class MapConstants :
         #How many map squares will be below desert rainfall threshold. In this case,
         #rain levels close to zero are very likely to be desert, while rain levels close
         #to the desert threshold will more likely be plains.
-        self.DesertPercent = 0.065
+        self.DesertPercent = 0.1
 
         #How many map squares will be below plains rainfall threshold. Rain levels close
         #to the desert threshold are likely to be plains, while those close to the plains
@@ -2073,8 +2073,8 @@ class SmallMaps :
                         self.terrainMap[i] = mc.SNOW
                     elif self.averageTempMap[i] < mc.TundraTemp:
                         self.terrainMap[i] = mc.TUNDRA
-                    else:
-                        if self.rainFallMap[i] < (PRand.random() * (self.desertThreshold - minRain) + self.desertThreshold - minRain)/2.0 + minRain and lat < (mc.horseLattitude + 4 +  int(PRand.random() * 3)) and lat > (mc.horseLattitude - 12 - int(PRand.random() * 4)):
+                      else:
+                        if (self.rainFallMap[i] < (PRand.random() * (self.desertThreshold - minRain) + self.desertThreshold - minRain)/2.0 + minRain) and (lat < (mc.horseLattitude + 5 +  int(PRand.random() * 4)) and lat > (mc.horseLattitude - 15 + int(PRand.random() * 4))):
                             self.terrainMap[i] = mc.DESERT
                         else:
                             if PRand.random() <= 0.5:
