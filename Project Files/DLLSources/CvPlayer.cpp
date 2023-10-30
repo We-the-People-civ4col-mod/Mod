@@ -3323,29 +3323,23 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 	case DIPLOEVENT_REFUSE_TAX_RATE:
 		{
 			AI_changeMemoryCount(ePlayer, MEMORY_REFUSED_TAX, 1);
-			CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+			CvPlayer& kPlayer = *getColonyPlayer();
 			YieldTypes eYield = (YieldTypes) iData1;
 			kPlayer.setYieldEuropeTradable(eYield, false);
 			// R&R, ray, Improvements to Tax Mechanism - START
 			setYieldTradedTotal(eYield, 0);
 			setYieldScoreTotal(eYield, 0);// R&R, vetiarvind, price dependent tax rate change
-			for (int i = 0; i < NUM_YIELD_TYPES; i++)
-			{
-				if (kPlayer.isYieldEuropeTradable((YieldTypes)i))
-				{
-					//We change these total on the King side
-					setYieldTradedTotal((YieldTypes)i, 0);
-					setYieldScoreTotal((YieldTypes)i, 0); // R&R, vetiarvind, price dependent tax rate change
-				}
-			}
+
+			wipeRoyalYieldScore();
+
 			// R&R, ray, Improvements to Tax Mechanism - END
 			CvCity* pCity = kPlayer.getCity(iData2);
-			if (pCity != NULL)
-			{
-				pCity->setYieldStored(eYield, 0);
-				CvWString szMessage = gDLL->getText("TXT_KEY_BOSTON_TEA_PARTY", kPlayer.getCivilizationAdjectiveKey(), pCity->getNameKey(), GC.getYieldInfo(eYield).getTextKeyWide());
-				gDLL->UI().addPlayerMessage(ePlayer, true, GC.getEVENT_MESSAGE_TIME(), szMessage, pCity, "AS2D_CITY_REVOLT", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
-			}
+			if (pCity == NULL) break;
+			
+			pCity->setYieldStored(eYield, 0);
+			CvWString szMessage = gDLL->getText("TXT_KEY_BOSTON_TEA_PARTY", kPlayer.getCivilizationAdjectiveKey(), pCity->getNameKey(), GC.getYieldInfo(eYield).getTextKeyWide());
+			gDLL->UI().addPlayerMessage(ePlayer, true, GC.getEVENT_MESSAGE_TIME(), szMessage, pCity, "AS2D_CITY_REVOLT", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
+			
 		}
 		break;
 
@@ -8774,6 +8768,7 @@ PlayerTypes CvPlayer::getParent() const
 	return m_eParent;
 }
 
+//This sets both the PlayerTypes and the CvPlayerAI pointer to the parent player i-e the King
 void CvPlayer::setParent(PlayerTypes eParent)
 {
 	m_eParent = eParent;
@@ -8782,7 +8777,7 @@ void CvPlayer::setParent(PlayerTypes eParent)
 
 // return a pointer to the affiliated homeland
 // Up only after the savegame is fully loaded.
-CvPlayerAI* CvPlayer::GetParentPlayer() const
+CvPlayerAI* CvPlayer::getParentPlayer() const
 {
 	return m_pParent;
 }
@@ -8792,6 +8787,7 @@ PlayerTypes CvPlayer::getColony() const
 	return m_eColony;
 }
 
+//This sets both the PlayerTypes and the CvPlayerAI pointer to the colony
 void CvPlayer::setColony(PlayerTypes eColony)
 {
 	m_eColony = eColony;
@@ -8800,7 +8796,7 @@ void CvPlayer::setColony(PlayerTypes eColony)
 
 // return a pointer to the affiliated colony
 // Up only after the savegame is fully loaded
-CvPlayerAI* CvPlayer::GetColonyPlayer() const
+CvPlayerAI* CvPlayer::getColonyPlayer() const
 {
 	return m_pColony;
 }
@@ -18185,6 +18181,22 @@ void CvPlayer::changeYieldTradedTotalPortRoyal(YieldTypes eYield, int iChange, i
 	setYieldScoreTotal(eYield, getYieldScoreTotal(eYield) + iChange*iUnitPrice);
 	setYieldTradedTotalPortRoyal(eYield, getYieldTradedTotalPortRoyal(eYield) + iChange);
 }
+
+// This method is called by the King to reset his trade counters after a tax increase "proposal"
+void CvPlayer::wipeRoyalYieldScore()
+{
+	FAssert(isEurope());
+	FAssert(getColonyPlayer() != NULL);
+	for (YieldTypes eYieldCargo = FIRST_YIELD; eYieldCargo < NUM_CARGO_YIELD_TYPES; eYieldCargo++)
+	{
+		if (!getColonyPlayer()->isYieldEuropeTradable(eYieldCargo)) continue; //skip whatever is on embargo
+
+		setYieldTradedTotal(eYieldCargo, 0);
+		setYieldScoreTotal(eYieldCargo, 0); 
+		
+	}
+}
+
 // WTP, ray, Yields Traded Total for Africa and Port Royal - END
 
 /*
@@ -18323,33 +18335,25 @@ void CvPlayer::setTaxRate(int iValue)
 
 void CvPlayer::changeTaxRate(int iChange)
 {
-	if (iChange != 0)
-	{
-		int iOldRate = getTaxRate();
-		setTaxRate(iOldRate + iChange);
+	FAssert(isColonialNation())
+	if (iChange == 0) return;
 
-		PlayerTypes eParent = getParent();
-		FAssert(eParent != NO_PLAYER);
-		
-		//reset yields traded
-		for(int i=0;i<NUM_YIELD_TYPES;i++)
-		{
-			if (isYieldEuropeTradable((YieldTypes)i))
-			{
-				//We change these total on the King side
-				GET_PLAYER(eParent).setYieldTradedTotal((YieldTypes)i, 0);
-				GET_PLAYER(eParent).setYieldScoreTotal((YieldTypes)i, 0); // R&R, vetiarvind, price dependent tax rate change
-			}
-		}
+	int iOldRate = getTaxRate();
+	setTaxRate(iOldRate + iChange);
 
-		if (eParent != NO_PLAYER)
-		{
-			CvString szTextKey = (iOldRate < getTaxRate() ? "TXT_KEY_TAX_RATE_CHANGED" : "TXT_KEY_TAX_RATE_LOWERED");
-			CvWString szBuffer = gDLL->getText(szTextKey.GetCString(), GET_PLAYER(eParent).getNameKey(), iOldRate, getTaxRate());
-			gDLL->UI().addPlayerMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_REVOLTSTART", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"));
-		}
-	}
+	CvPlayerAI* kKing = getParentPlayer();
+	FAssert(kKing != NULL);
+
+	if (kKing == NULL) return;
+	//reset yields traded
+	kKing->wipeRoyalYieldScore();
+
+	CvString szTextKey = (iOldRate < getTaxRate() ? "TXT_KEY_TAX_RATE_CHANGED" : "TXT_KEY_TAX_RATE_LOWERED");
+	CvWString szBuffer = gDLL->getText(szTextKey.GetCString(), kKing->getNameKey(), iOldRate, getTaxRate());
+	gDLL->UI().addPlayerMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_REVOLTSTART", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"));
+
 }
+
 
 int CvPlayer::getNativeCombatModifier() const
 {
@@ -19177,9 +19181,9 @@ void CvPlayer::doTaxRaises()
 	const int MAX_ATTITUDE_ADJUST = GLOBAL_DEFINE_TAX_RATE_ATTITUDE_BOUND;
 
 	FAssertMsg(isEurope(), "Only the European Homeland player - i.e the King - should calculate tax raises on his colony");
-	FAssertMsg(GetColonyPlayer() != NULL, "GetColonyPlayer() is not initialized");
+	FAssertMsg(getColonyPlayer() != NULL, "getColonyPlayer() is not initialized");
 
-	CvPlayer& pColony = *GetColonyPlayer();
+	CvPlayer& pColony = *getColonyPlayer();
 	FAssertMsg(getColony() == pColony.getID(), "The Europe player shall rise taxes on his own colonies only");
 
 	if (GC.getEraInfo(getCurrentEra()).isRevolution()) return;
@@ -24732,7 +24736,7 @@ void CvPlayer::postLoadFixes()
 		if (getParent() != NO_PLAYER)
 		{
 			setParent(getParent()); // looks silly but properly initializes the pointer below;
-			CvPlayer& kEurope = *GetParentPlayer();
+			CvPlayer& kEurope = *getParentPlayer();
 			kEurope.setColony(getID());
 
 		}
