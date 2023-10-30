@@ -2074,7 +2074,7 @@ class SmallMaps :
                     elif self.averageTempMap[i] < mc.TundraTemp:
                         self.terrainMap[i] = mc.TUNDRA
                       else:
-                        if (self.rainFallMap[i] < (PRand.random() * (self.desertThreshold - minRain) + self.desertThreshold - minRain)/2.0 + minRain) and (lat < (mc.horseLattitude + 5 +  int(PRand.random() * 4)) and lat > (mc.horseLattitude - 15 + int(PRand.random() * 4))):
+                        if (self.rainFallMap[i] < (PRand.random() * (self.desertThreshold - minRain) + self.desertThreshold - minRain)/2.0 + minRain) and (lat < (mc.horseLattitude + 5 +  int(PRand.random() * 4)) and lat > (mc.horseLattitude - 15 - int(PRand.random() * 4))):
                             self.terrainMap[i] = mc.DESERT
                         else:
                             if PRand.random() <= 0.5:
