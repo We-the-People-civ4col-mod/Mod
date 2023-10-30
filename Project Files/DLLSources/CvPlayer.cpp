@@ -84,6 +84,8 @@ CvPlayer::CvPlayer()
 
 	m_iChurchFavoursReceived = 0; // R&R, ray, Church Favours
 
+	m_pColony = NULL;
+	m_pParent = NULL;
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
 	m_cache_YieldEquipmentAmount = new YieldArray<unsigned short>[GC.getNumProfessionInfos()];
 	// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
@@ -2313,7 +2315,7 @@ void CvPlayer::doTurn()
 		doPrices();
 		doAfricaPrices(); // R&R, ray, Africa
 		doPortRoyalPrices(); // R&R, ray, Port Royal
-		doTaxRaises(GET_PLAYER(getColony()));
+		doTaxRaises();
 	}
 	EXTRA_POWER_CHECK
 
@@ -8775,6 +8777,14 @@ PlayerTypes CvPlayer::getParent() const
 void CvPlayer::setParent(PlayerTypes eParent)
 {
 	m_eParent = eParent;
+	m_pParent = &GET_PLAYER(eParent);
+}
+
+// return a pointer to the affiliated homeland
+// Up only after the savegame is fully loaded.
+CvPlayerAI* CvPlayer::GetParentPlayer() const
+{
+	return m_pParent;
 }
 
 PlayerTypes CvPlayer::getColony() const
@@ -8785,8 +8795,15 @@ PlayerTypes CvPlayer::getColony() const
 void CvPlayer::setColony(PlayerTypes eColony)
 {
 	m_eColony = eColony;
+	m_pColony = &GET_PLAYER(eColony);
 }
 
+// return a pointer to the affiliated colony
+// Up only after the savegame is fully loaded
+CvPlayerAI* CvPlayer::GetColonyPlayer() const
+{
+	return m_pColony;
+}
 
 
 TeamTypes CvPlayer::getTeam() const
@@ -19155,12 +19172,16 @@ void CvPlayer::doPrices()
 }
 
 
-void CvPlayer::doTaxRaises(CvPlayer  &pColony)
+void CvPlayer::doTaxRaises()
 {
 	const int MAX_ATTITUDE_ADJUST = GLOBAL_DEFINE_TAX_RATE_ATTITUDE_BOUND;
 
 	FAssertMsg(isEurope(), "Only the European Homeland player - i.e the King - should calculate tax raises on his colony");
+	FAssertMsg(GetColonyPlayer() != NULL, "GetColonyPlayer() is not initialized");
+
+	CvPlayer& pColony = *GetColonyPlayer();
 	FAssertMsg(getColony() == pColony.getID(), "The Europe player shall rise taxes on his own colonies only");
+
 	if (GC.getEraInfo(getCurrentEra()).isRevolution()) return;
 	if (pColony.getHighestTradedYield() == NO_YIELD) return;
 
@@ -24710,8 +24731,10 @@ void CvPlayer::postLoadFixes()
 	{
 		if (getParent() != NO_PLAYER)
 		{
-			CvPlayer& kEurope = GET_PLAYER(getParent());
+			setParent(getParent()); // looks silly but properly initializes the pointer below;
+			CvPlayer& kEurope = *GetParentPlayer();
 			kEurope.setColony(getID());
+
 		}
 
 		m_validCityJobProfessions.clear();

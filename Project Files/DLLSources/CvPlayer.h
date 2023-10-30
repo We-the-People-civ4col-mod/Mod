@@ -478,10 +478,15 @@ public:
 	void setPersonalityType(LeaderHeadTypes eNewValue);
 	DllExport EraTypes getCurrentEra() const;
 	void setCurrentEra(EraTypes eNewValue);
+
 	PlayerTypes getParent() const;
 	void setParent(PlayerTypes eParent);
 	PlayerTypes getColony() const;
 	void setColony(PlayerTypes eColony);
+
+	CvPlayerAI* GetColonyPlayer() const;
+	CvPlayerAI* GetParentPlayer() const;
+
 	DllExport TeamTypes getTeam() const;
 	void setTeam(TeamTypes eTeam);
 	void updateTeamType();
@@ -1100,6 +1105,9 @@ protected:
 	TeamTypes m_eTeamType;
 	YieldTypes m_eImmigrationConversion;
 
+	CvPlayerAI* m_pParent;
+	CvPlayerAI* m_pColony;
+
 	EnumMap<YieldTypes, int> m_em_iLandPlotYield; // R&R, ray, Landplot Yields - START
 	EnumMap<YieldTypes, int> m_em_iSeaPlotYield;
 	EnumMap<YieldTypes, int> m_em_iYieldRateModifier;
@@ -1192,7 +1200,7 @@ protected:
 	void doWarnings();
 	void doEvents();
 	void doPrices();
-	void doTaxRaises(CvPlayer& pColony);
+	void doTaxRaises();
 	void doAfricaPrices(); // R&R, ray, Africa
 	void doPortRoyalPrices(); // R&R, ray, Port Royal
 
