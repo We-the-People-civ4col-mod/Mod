@@ -178,6 +178,14 @@
 		<iDefineIntVal>4</iDefineIntVal>
 	</Define>
 	<Define>
+		<DefineName>TAX_RATE_RETAINED_FRACTION</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>TAX_RATE_ATTITUDE_BOUND</DefineName>
+		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>AI_HURRY_IMMIGRANTS</DefineName>
 		<iDefineIntVal>1</iDefineIntVal>
 	</Define>

@@ -18083,7 +18083,8 @@ void CvPlayer::setYieldTradedTotalPortRoyal(YieldTypes eYield, int iValue)
 // WTP, ray, Yields Traded Total for Africa and Port Royal - END
 
 
-// R&R, vetiarvind, Price dependent tax rate change - Start
+// This methode returns the revenue brought by a specific Yield
+// It is used by the King for taxation purpose.
 int CvPlayer::getYieldScoreTotal(YieldTypes eYield) const
 {
 	FAssert(eYield >= 0);
@@ -18114,8 +18115,8 @@ void CvPlayer::changeYieldTradedTotal(YieldTypes eYield, int iChange, int iUnitP
 			}
 	}
 
-	double iMultiplier = iUnitPrice*0.1;
-	setYieldScoreTotal(eYield, getYieldScoreTotal(eYield) + (int)(iChange*iMultiplier));
+	
+	setYieldScoreTotal(eYield, getYieldScoreTotal(eYield) + iChange*iUnitPrice);
 	setYieldTradedTotal(eYield, getYieldTradedTotal(eYield) + iChange);
 }
 
@@ -18133,8 +18134,7 @@ void CvPlayer::changeYieldTradedTotalAfrica(YieldTypes eYield, int iChange, int 
 			}
 	}
 
-	double iMultiplier = iUnitPrice*0.1;
-	setYieldScoreTotal(eYield, getYieldScoreTotal(eYield) + (int)(iChange*iMultiplier));
+	setYieldScoreTotal(eYield, getYieldScoreTotal(eYield) + iChange*iUnitPrice);
 	setYieldTradedTotalAfrica(eYield, getYieldTradedTotalAfrica(eYield) + iChange);
 }
 
@@ -18151,8 +18151,8 @@ void CvPlayer::changeYieldTradedTotalPortRoyal(YieldTypes eYield, int iChange, i
 			}
 	}
 
-	double iMultiplier = iUnitPrice*0.1;
-	setYieldScoreTotal(eYield, getYieldScoreTotal(eYield) + (int)(iChange*iMultiplier));
+	// Port Royal and Tax influence, really ? 
+	// setYieldScoreTotal(eYield, getYieldScoreTotal(eYield) + iChange*iUnitPrice);
 	setYieldTradedTotalPortRoyal(eYield, getYieldTradedTotalPortRoyal(eYield) + iChange);
 }
 // WTP, ray, Yields Traded Total for Africa and Port Royal - END
@@ -19155,7 +19155,7 @@ void CvPlayer::doPrices()
 
 void CvPlayer::doTaxRaises(CvPlayer  &pColony)
 {
-	const int MAX_ATTITUDE_ADJUST = 50;
+	const int MAX_ATTITUDE_ADJUST = GLOBAL_DEFINE_TAX_RATE_ATTITUDE_BOUND;
 
 	FAssertMsg(isEurope(),"Only the European Homeland player - i.e the King - should calculate that")
 	if (GC.getEraInfo(getCurrentEra()).isRevolution()) return;
@@ -19181,9 +19181,12 @@ void CvPlayer::doTaxRaises(CvPlayer  &pColony)
 			iMultiplier += kTrait.getTaxRateThresholdModifier();
 		}
 	}
+
+	// TAX_TRADE_THRESHOLD_TAX_RATE_PERCENT is a vanilla global, defined at 1000
 	iMultiplier += pColony.getTaxRate() * GC.getTAX_TRADE_THRESHOLD_TAX_RATE_PERCENT() / 100;
 
-	if (iTotalScore * 10000 <= GC.getTAX_TRADE_THRESHOLD() * std::max(100, iMultiplier)
+	// the revenue fraction  for tax purpose is now calculated here
+	if (iTotalScore * 100 * GLOBAL_DEFINE_TAX_RATE_RETAINED_FRACTION <= GC.getTAX_TRADE_THRESHOLD() * std::max(100, iMultiplier)
 		* GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent())
 		return; // we have not traded enough yet;
 
