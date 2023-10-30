@@ -89,6 +89,11 @@ template <> struct VARINFO<ENUM_NAME> \
 	}; \
 };
 
+template<typename T>
+static bool isInRange(T var)
+{
+	return VARINFO<T>::isInRange(var);
+}
 
 // overloaded ++ for enum types
 
