@@ -480,6 +480,8 @@ public:
 	void setCurrentEra(EraTypes eNewValue);
 	PlayerTypes getParent() const;
 	void setParent(PlayerTypes eParent);
+	PlayerTypes getColony() const;
+	void setColony(PlayerTypes eColony);
 	DllExport TeamTypes getTeam() const;
 	void setTeam(TeamTypes eTeam);
 	void updateTeamType();
@@ -1094,6 +1096,7 @@ protected:
 	LeaderHeadTypes m_ePersonalityType;
 	EraTypes m_eCurrentEra;
 	PlayerTypes m_eParent;
+	PlayerTypes m_eColony;
 	TeamTypes m_eTeamType;
 	YieldTypes m_eImmigrationConversion;
 

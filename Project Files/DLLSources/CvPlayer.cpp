@@ -2309,11 +2309,12 @@ void CvPlayer::doTurn()
 	EXTRA_POWER_CHECK
 
 	verifyCivics();
-
-	doPrices();
-	doAfricaPrices(); // R&R, ray, Africa
-	doPortRoyalPrices(); // R&R, ray, Port Royal
-
+	if (isEurope()) {
+		doPrices();
+		doAfricaPrices(); // R&R, ray, Africa
+		doPortRoyalPrices(); // R&R, ray, Port Royal
+		doTaxRaises(GET_PLAYER(getColony()));
+	}
 	EXTRA_POWER_CHECK
 
 	doEvents();
@@ -8775,6 +8776,18 @@ void CvPlayer::setParent(PlayerTypes eParent)
 {
 	m_eParent = eParent;
 }
+
+PlayerTypes CvPlayer::getColony() const
+{
+	return m_eColony;
+}
+
+void CvPlayer::setColony(PlayerTypes eColony)
+{
+	m_eColony = eColony;
+}
+
+
 
 TeamTypes CvPlayer::getTeam() const
 {
@@ -18152,7 +18165,7 @@ void CvPlayer::changeYieldTradedTotalPortRoyal(YieldTypes eYield, int iChange, i
 	}
 
 	// Port Royal and Tax influence, really ? 
-	// setYieldScoreTotal(eYield, getYieldScoreTotal(eYield) + iChange*iUnitPrice);
+	setYieldScoreTotal(eYield, getYieldScoreTotal(eYield) + iChange*iUnitPrice);
 	setYieldTradedTotalPortRoyal(eYield, getYieldTradedTotalPortRoyal(eYield) + iChange);
 }
 // WTP, ray, Yields Traded Total for Africa and Port Royal - END
@@ -19117,39 +19130,28 @@ bool CvPlayer::isProfessionValid(ProfessionTypes eProfession, UnitTypes eUnit) c
 void CvPlayer::doPrices()
 {
 	OOS_LOG("CvPlayer::doPrices start", getID());
-	if (isEurope())
+	FAssertMsg(isEurope(), "Only the European Homeland player - i.e the King - should calculate price changes in Europe");
+
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_CARGO_YIELD_TYPES; ++eYield)
 	{
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+
+
+		// R&R, Androrc Price Recovery
+		GC.getGameINLINE().changeYieldBoughtTotal(getID(), eYield, kYield.getEuropeVolumeAttrition());
+		//Androrc End
+
+		int iBaseThreshold = kYield.getPriceChangeThreshold() * GC.getHandicapInfo(getHandicapType()).getEuropePriceThresholdMultiplier() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() / 10000;
+		int iNewPrice = kYield.getBuyPriceLow() + GC.getGameINLINE().getSorenRandNum(kYield.getBuyPriceHigh() - kYield.getBuyPriceLow() + 1, "Price selection");
+		iNewPrice += getYieldBoughtTotal(eYield) / std::max(1, iBaseThreshold);
+
+		if (GC.getGameINLINE().getSorenRandNum(100, "Price correction") < kYield.getPriceCorrectionPercent() * std::abs(iNewPrice - getYieldBuyPrice(eYield)))
 		{
-			YieldTypes eYield = (YieldTypes) iYield;
-			CvYieldInfo& kYield = GC.getYieldInfo(eYield);
-
-			if (kYield.isCargo())
-			{
-				// R&R, Androrc Price Recovery
-				GC.getGameINLINE().changeYieldBoughtTotal(getID(), eYield, kYield.getEuropeVolumeAttrition());
-				//Androrc End
-
-				int iBaseThreshold = kYield.getPriceChangeThreshold() * GC.getHandicapInfo(getHandicapType()).getEuropePriceThresholdMultiplier() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() / 10000;
-				int iNewPrice = kYield.getBuyPriceLow() + GC.getGameINLINE().getSorenRandNum(kYield.getBuyPriceHigh() - kYield.getBuyPriceLow() + 1, "Price selection");
-				iNewPrice += getYieldBoughtTotal(eYield) / std::max(1, iBaseThreshold);
-
-				if (GC.getGameINLINE().getSorenRandNum(100, "Price correction") < kYield.getPriceCorrectionPercent() * std::abs(iNewPrice - getYieldBuyPrice(eYield)))
-				{
-					iNewPrice = std::min(iNewPrice, getYieldBuyPrice(eYield) + 1);
-					iNewPrice = std::max(iNewPrice, getYieldBuyPrice(eYield) - 1);
-					setYieldBuyPrice(eYield, iNewPrice, true);
-				}
-			}
+			iNewPrice = std::min(iNewPrice, getYieldBuyPrice(eYield) + 1);
+			iNewPrice = std::max(iNewPrice, getYieldBuyPrice(eYield) - 1);
+			setYieldBuyPrice(eYield, iNewPrice, true);
 		}
 	}
-
-	PlayerTypes eParent = getParent();
-	if (eParent != NO_PLAYER)
-	{
-		GET_PLAYER(eParent).doTaxRaises(*this);
-	}
-
 }
 
 
@@ -19157,24 +19159,24 @@ void CvPlayer::doTaxRaises(CvPlayer  &pColony)
 {
 	const int MAX_ATTITUDE_ADJUST = GLOBAL_DEFINE_TAX_RATE_ATTITUDE_BOUND;
 
-	FAssertMsg(isEurope(),"Only the European Homeland player - i.e the King - should calculate that")
+	FAssertMsg(isEurope(), "Only the European Homeland player - i.e the King - should calculate tax raises on his colony");
+	FAssertMsg(getColony() == pColony.getID(), "The Europe player shall rise taxes on his own colonies only");
 	if (GC.getEraInfo(getCurrentEra()).isRevolution()) return;
 	if (pColony.getHighestTradedYield() == NO_YIELD) return;
 
 	int iTotalScore = 0;
-	for (int i = 0; i < NUM_YIELD_TYPES; i++)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_CARGO_YIELD_TYPES; ++eYield)
 	{
 		//Note : the Yield scores must be increased in sync for both the King and the colony when a trade takes place
-		if (pColony.isYieldEuropeTradable((YieldTypes)i))
+		if (pColony.isYieldEuropeTradable(eYield))
 		{
-			iTotalScore += getYieldScoreTotal((YieldTypes)i);
+			iTotalScore += getYieldScoreTotal(eYield);
 		}
 	}
 
 	int iMultiplier = 100;
-	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
+	for (TraitTypes eTrait = FIRST_TRAIT; eTrait < NUM_TRAIT_TYPES; ++eTrait)
 	{
-		TraitTypes eTrait = (TraitTypes)iTrait;
 		CvTraitInfo& kTrait = GC.getTraitInfo(eTrait);
 		if (pColony.hasTrait(eTrait))
 		{
@@ -19183,15 +19185,15 @@ void CvPlayer::doTaxRaises(CvPlayer  &pColony)
 	}
 
 	// TAX_TRADE_THRESHOLD_TAX_RATE_PERCENT is a vanilla global, defined at 1000
-	iMultiplier += pColony.getTaxRate() * GC.getTAX_TRADE_THRESHOLD_TAX_RATE_PERCENT() / 100;
+	iMultiplier += pColony.getTaxRate() * GLOBAL_DEFINE_TAX_TRADE_THRESHOLD_TAX_RATE_PERCENT / 100;
 
 	// the revenue fraction  for tax purpose is now calculated here
-	if (iTotalScore * 100 * GLOBAL_DEFINE_TAX_RATE_RETAINED_FRACTION <= GC.getTAX_TRADE_THRESHOLD() * std::max(100, iMultiplier)
+	if (iTotalScore * 100 * GLOBAL_DEFINE_TAX_RATE_RETAINED_FRACTION <= GLOBAL_DEFINE_TAX_TRADE_THRESHOLD * std::max(100, iMultiplier)
 		* GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent())
 		return; // we have not traded enough yet;
 
 	
-	int iAttitudeModifier = GET_PLAYER(getID()).AI_getAttitudeVal(pColony.getID()) * GC.getTAX_TRADE_INCREASE_CHANCE_KING_ATTITUDE_BASE();
+	int iAttitudeModifier = AI().AI_getAttitudeVal(pColony.getID()) * GLOBAL_DEFINE_TAX_TRADE_INCREASE_CHANCE_KING_ATTITUDE_BASE;
 	
 	if (iAttitudeModifier > MAX_ATTITUDE_ADJUST)
 	{
@@ -19205,16 +19207,23 @@ void CvPlayer::doTaxRaises(CvPlayer  &pColony)
 	if (GC.getGameINLINE().getSorenRandNum(100 + iAttitudeModifier, "Tax rate increase") >= GC.getTAX_INCREASE_CHANCE())
 		return; //Nah, we don't feel like increasing the tax right away
 
-	int iOldTaxRate = pColony.getTaxRate();
+	const int iOldTaxRate = pColony.getTaxRate();
 	int iAttemptedNewTaxRate = iOldTaxRate + 1 + GC.getGameINLINE().getSorenRandNum(GLOBAL_DEFINE_TAX_RATE_MAX_INCREASE, "Tax Rate Increase");
 	int iNewTaxRate = pColony.NBMOD_GetNewTaxRate(iAttemptedNewTaxRate);
 
-	if(!pColony.isHuman())
+	if (!pColony.isHuman())
 	{
 		int iAIMaxTaxRate = GC.getHandicapInfo(getHandicapType()).getAIMaxTaxrate();
 		if (iNewTaxRate > iAIMaxTaxRate)
 			iNewTaxRate = iAIMaxTaxRate;
 	}
+
+	if( iNewTaxRate > 99 )
+	{
+		FAssertMsg(false, "Tax Rate is over 99% - should never happen.");
+		iNewTaxRate = 99;
+	}
+
 	int iChange = iNewTaxRate - iOldTaxRate;
 	if(iChange > 0)
 	{
@@ -24699,6 +24708,12 @@ void CvPlayer::postLoadFixes()
 	// prepare list of city professions (aka citizens)
 	if (getCivilizationType() != NO_CIVILIZATION)
 	{
+		if (getParent() != NO_PLAYER)
+		{
+			CvPlayer& kEurope = GET_PLAYER(getParent());
+			kEurope.setColony(getID());
+		}
+
 		m_validCityJobProfessions.clear();
 		// Notes from Nightinggale
 		// The xml data (all files) is ready at the end of CvXMLLoadUtility::readXMLfiles when bFirst is False

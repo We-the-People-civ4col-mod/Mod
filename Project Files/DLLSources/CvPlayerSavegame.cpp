@@ -91,6 +91,7 @@ const PlayerTypes defaultID = NO_PLAYER;
 const LeaderHeadTypes defaultPersonalityType = NO_LEADER;
 const EraTypes defaultCurrentEra = ((EraTypes)0);
 const PlayerTypes defaultParent = NO_PLAYER;
+const PlayerTypes defaultColony = NO_PLAYER;
 const YieldTypes defaultImmigrationConversion = YIELD_CROSSES;
 
 const int defaultPopRushHurryCount = 0;
@@ -611,6 +612,7 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	}
 	m_eCurrentEra= defaultCurrentEra;
 	m_eParent= defaultParent;
+	m_eColony = defaultColony; 
 	m_eImmigrationConversion= defaultImmigrationConversion;
 
 	m_iOppressometerDiscriminationModifier = defaultOppressometerDiscriminationModifier;
