@@ -632,7 +632,7 @@ CyXMLEditor::CyXMLEditor()
 		}
 	}
 	XMLElement * pRoot = getRoot("Files");
-	FAssertMsg(pRoot != NULL, "Failed to read files in xml/Editor/EditorFiles.xml");
+	FAssertMsg(pRoot != NULL, "Failed to read files in XML/Editor/EditorFiles.xml");
 	XMLElement * pElement = pRoot != NULL ? pRoot->FirstChildElement("File") : NULL;
 	while (pElement != NULL)
 	{
@@ -679,7 +679,7 @@ CyXMLEditor::CyXMLEditor()
 
 	pRoot = getRoot("MaxGameFontID");
 	m_iMaxGameFontID = pRoot != NULL ? pRoot->IntText() : 0;
-	FAssertMsg(m_iMaxGameFontID != 0, "Failed to read MaxGameFontID from xml/Editor/EditorFiles.xml");
+	FAssertMsg(m_iMaxGameFontID != 0, "Failed to read MaxGameFontID from XML/Editor/EditorFiles.xml");
 
 	readActiveFile();
 
@@ -1261,7 +1261,7 @@ void CyXMLEditor::setModPath()
 #else
 	XMLElement *pEditor = getModSettings()->FirstChildElement("Editor");
 
-	const char* pathBuffer = pEditor->FirstChildElement("ModPath")->GetText();
+	const char* pathBuffer = pEditor ? pEditor->FirstChildElement("ModPath")->GetText() : ".";
 	
 	std::string XMLpath = "";
 	if (pathBuffer[0] == '.')
@@ -1276,6 +1276,11 @@ void CyXMLEditor::setModPath()
 	m_modPath[XMLpath.size()] = 0;
 
 	CONST_VANILLA_PATH[0] = m_modPath;
+
+	if (pEditor == NULL)
+	{
+		return;
+	}
 
 	// assign BTS paths
 	std::vector<const char*> vanillaPaths;
@@ -1329,7 +1334,7 @@ tinyxml2::XMLDocument* CyXMLEditor::getModSettings()
 	szPath.append("EditorSettings.xml");
 
 	XMLError eResult = m_ModSettingsDoc->LoadFile(szPath.c_str());
-	FAssertMsg(eResult == XML_SUCCESS, CvString::format("EditorSettings.xml read error: %s", XMLDocument::ErrorIDToName(eResult)).c_str());
+	//FAssertMsg(eResult == XML_SUCCESS, CvString::format("EditorSettings.xml read error: %s", XMLDocument::ErrorIDToName(eResult)).c_str());
 	return m_ModSettingsDoc;
 }
 
