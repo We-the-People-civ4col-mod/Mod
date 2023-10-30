@@ -4976,7 +4976,7 @@ def generateShrubland():
             plot = mmap.plot(x,y)
             if not plot.getPlotType() == PlotTypes.PLOT_PEAK: #and (plot.isRiver() and not isAnyAdjacentPlotTerrainType(x, y, terrainDesert)):
                 if plot.getTerrainType() == terrainPrairie or plot.getTerrainType() == terrainPlains or plot.getTerrainType() == terrainGrassland:
-                    if (isAnyAdjacentPlotTerrainType(x, y, terrainDesert) or isAnyAdjacentPlotTerrainType(x, y, terrainPlains) or isAnyAdjacentPlotTerrainType(x, y, terrainPrairie)) and (sm.rainFallMap[GetIndex(x, y)] < 0.0035 and sm.rainFallMap[GetIndex(x, y)] > 0.002 and sm.averageTempMap[GetIndex(x, y)] > 0.55):
+                    if isAnyAdjacentPlotTerrainType(x, y, terrainDesert) or (isAnyAdjacentPlotTerrainType(x, y, terrainPlains) or isAnyAdjacentPlotTerrainType(x, y, terrainPrairie)) and (sm.rainFallMap[GetIndex(x, y)] < 0.0035 and sm.rainFallMap[GetIndex(x, y)] > 0.002 and sm.averageTempMap[GetIndex(x, y)] > 0.55):
                         if PRand.random() <= shrublandChance:
                             plot.setTerrainType(terrainShrubland, True, True)
                             iRandPlotType = PRand.random()
