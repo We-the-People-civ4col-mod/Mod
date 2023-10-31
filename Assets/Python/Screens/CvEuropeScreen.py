@@ -91,8 +91,9 @@ class CvEuropeScreen:
 
 		self.player_id = gc.getGame().getActivePlayer()
 		self.player = gc.getPlayer(self.player_id)
-		if gc.getPlayer(gc.getGame().getActivePlayer()).getParent() == PlayerTypes.NO_PLAYER:
+		if self.player.getParent() == PlayerTypes.NO_PLAYER:
 			return
+
 
 		screen = self.getScreen()
 		if screen.isActive():
@@ -340,7 +341,7 @@ class CvEuropeScreen:
 
 	
 	def drawContents(self):
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		screen = self.getScreen()
 
 		self.deleteAllWidgets()
@@ -888,7 +889,7 @@ class CvEuropeScreen:
 	
 	def toggleTradeLog(self):
 		screen = self.getScreen()
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		self.bBookOutro = sdToolKit.sdGetVal('komaScreens', player.getID(), 'TradeBox')
 		if self.bBookOutro:
 			screen.hide(self.szTradeTable)
@@ -898,7 +899,7 @@ class CvEuropeScreen:
 	
 	def getWidgetHelp(self, argsList):
 		iScreen, eWidgetType, iData1, iData2, bOption = argsList
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 	
 		if eWidgetType == WidgetTypes.WIDGET_GENERAL:
 			if iData1 == self.SAIL_TO_NEW_WORLD:
@@ -936,7 +937,6 @@ class CvEuropeScreen:
 					return u""
 				else:
 					return localText.getText("TXT_KEY_EU_BOYCOTT_MESSAGE", (self.getBoycottPrice(iData2), gc.getYieldInfo(iData2).getDescription()))
-			# R&R, Robert Surcouf, No More Variables Hidden game option START
 		return u""
 	
 	
@@ -987,7 +987,7 @@ class CvEuropeScreen:
 				screen.setImageButtonAt("DialogMap" + "West" + self.SectorNames[i] + str(i+6+2+1), "DialogMap", "", 0, i * self.MAP_SIZE / 6, sectorWidthAbsolute, self.MAP_SIZE / 6, WidgetTypes.WIDGET_GENERAL, self.SAIL_WEST_NFrigid + i, iUnit)							
 		
 		# R&R, vetiarvind, Navigation Sectors - END
-		szPreviewMode = sdToolKit.sdGetVal('komaScreens', player.getID(), 'PreviewMode')
+		szPreviewMode = sdToolKit.sdGetVal('komaScreens', self.player_id, 'PreviewMode')
 		screen.setImageButtonAt("PreviewMode", "DialogMap", ArtFileMgr.getInterfaceArtInfo(szPreviewMode).getPath(), self.MAP_SIZE - 40, self.MAP_SIZE - 40, 40, 40, WidgetTypes.WIDGET_GENERAL, self.PREVIEW_MODE, -1)
 		
 		screen.addTableControlGFC("DialogTable", 3, self.DIALOG_TABLE_X, self.DIALOG_TABLE_Y, self.DIALOG_TABLE_W, self.DIALOG_TABLE_H, true, true, 32, 32, TableStyles.TABLE_STYLE_STANDARD)
@@ -1018,7 +1018,7 @@ class CvEuropeScreen:
 	
 	def sellShip(self, iUnit):
 		screen = self.getScreen()
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		pTransport = player.getUnit(iUnit)
 		
 		if player.getNumShips() > 1:
@@ -1036,7 +1036,7 @@ class CvEuropeScreen:
 
 	def liftBoycott(self, iYield):
 		screen = self.getScreen()
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		iKingAttitude = self.playerEurope.AI_getAttitude(player.getID())
 		
 		self.createBox(self.SELL_SHIP_X, self.SELL_SHIP_Y, self.SELL_SHIP_W, self.SELL_SHIP_H, true) 
@@ -1051,7 +1051,7 @@ class CvEuropeScreen:
 		
 		
 	def getTradeRouteIcon(self, pCity, pTransport):
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		szIcon = u""
 		for iTradeRoute in range(player.getNumTradeRoutes()):
 			pTradeRoute = player.getTradeRouteByIndex(iTradeRoute)
@@ -1117,7 +1117,7 @@ class CvEuropeScreen:
 	
 	def getCityInfo(self, iRow, pTransport) :
 		screen = self.getScreen()
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		index = self.getCityByTableRow(iRow)
 		pCity = self.CityPlotList[index][0]
 		iX = self.BOX_X
@@ -1159,7 +1159,7 @@ class CvEuropeScreen:
 		
 	
 	def getPlotLists (self, unit) :
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		
 		#Europe plot list
 		self.EuropePlotListEast = []
@@ -1253,7 +1253,7 @@ class CvEuropeScreen:
 	
 	
 	def getCenterPlot (self):
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 	
 		pCenterPlot = player.getStartingPlot()
 		iCenterX, iCenterY, iCityCount = 0, 0, 0
@@ -1326,7 +1326,7 @@ class CvEuropeScreen:
 	
 	def cargoMessage(self, iUnit):
 		#cargo info
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		transport = player.getUnit(iUnit)
 
 		if (transport.getUnitTravelState() == UnitTravelStates.UNIT_TRAVEL_STATE_FROM_EUROPE):

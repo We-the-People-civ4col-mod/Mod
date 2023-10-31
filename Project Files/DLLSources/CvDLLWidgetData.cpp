@@ -111,17 +111,18 @@ public:
 	}
 };
 
-enum HoverHelpDisplayOptions
-{
-	HONOR_GAME_SETTING = -1,
-	NEVER_DISPLAY_DETAILS = 0,
-	ALWAYS_DISPLAY_DETAILS = 1
-};
 
 template<> // This lines tells the compiler we use a fully defined template
 class WidgetContainer<WIDGET_HELP_TAX_CALCULATION> : public WidgetData
 {
 public:
+	enum HoverHelpDisplayOptions
+	{
+		HONOR_GAME_SETTING = -1,
+		NEVER_DISPLAY_DETAILS = 0,
+		ALWAYS_DISPLAY_DETAILS = 1
+	};
+
 	WidgetContainer(const CvWidgetDataStruct widgetDataStruct)
 		: eColonyPlayer((PlayerTypes)widgetDataStruct.m_iData1)
 		, iDetailedInfoDisplayBehavior((HoverHelpDisplayOptions)widgetDataStruct.m_iData2) 

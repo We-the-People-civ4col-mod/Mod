@@ -113,7 +113,7 @@ class CvAfricaScreen:
 		
 		## Africa Screen Configuration END
 	
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		self.playerEurope = gc.getPlayer(player.getParent())
 		self.iThisWinter = 0
 		self.iSoundID = 0
@@ -335,7 +335,7 @@ class CvAfricaScreen:
 		screen.setImageButtonAt(self.szTradeTable + "Close", self.szTradeTable, "", 0, 0, self.TRADE_W, self.XResolution, WidgetTypes.WIDGET_GENERAL, self.TRADE_LOG, -1)
 		
 		# Purchase
-		if (gc.getPlayer(gc.getGame().getActivePlayer()).canTradeWithAfrica()):
+		if self.player.canTradeWithAfrica():
 			# screen.addUnitGraphicGFC("PurchaseButton", gc.getInfoTypeForString("UNIT_GREAT_GENERAL"), -1, self.XResolution - self.RECRUIT_W - self.STANDARD_MARGIN, self.RECRUIT_Y, self.RECRUIT_W, self.RECRUIT_H, WidgetTypes.WIDGET_GENERAL, self.BUY_UNIT_BUTTON_ID, -1, 0, 0, 1.0, false)
 			screen.setImageButton("PurchaseButton",  "Art/Interface/Screens/Africa/Great_General_Dollar.dds",  self.XResolution - self.RECRUIT_W - self.STANDARD_MARGIN,  self.RECRUIT_Y, self.RECRUIT_W,self.RECRUIT_H,  WidgetTypes.WIDGET_GENERAL, self.BUY_UNIT_BUTTON_ID, -1)
 		
@@ -344,7 +344,7 @@ class CvAfricaScreen:
 
 	
 	def drawContents(self):
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		screen = self.getScreen()
 
 		self.deleteAllWidgets()
@@ -680,7 +680,7 @@ class CvAfricaScreen:
 	def handleInput(self, inputClass):
 		screen = self.getScreen()
 		## R&R, vetiarvind, Navigation sectors - START
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		inputFnName = inputClass.getFunctionName()				
 				
 		constStrEast = "DialogMap" + "East"
@@ -698,7 +698,7 @@ class CvAfricaScreen:
 				elif (inputClass.getData1() == self.BUY_UNIT_BUTTON_ID) :
 					popupInfo = CyPopupInfo()
 					popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PURCHASE_AFRICA_UNIT)
-					CyInterface().addPopup(popupInfo, gc.getGame().getActivePlayer(), true, false)
+					CyInterface().addPopup(popupInfo, self.player_id, true, false)
 
 				elif (inputClass.getData1() == self.SAIL_TO_NEW_WORLD) :
 					self.sailToNewWorld(inputClass.getData2())
@@ -875,7 +875,7 @@ class CvAfricaScreen:
 	
 	def toggleTradeLog(self):
 		screen = self.getScreen()
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		self.bBookOutro = sdToolKit.sdGetVal('komaScreens', player.getID(), 'TradeBox')
 		if self.bBookOutro:
 			screen.hide(self.szTradeTable)
@@ -885,7 +885,7 @@ class CvAfricaScreen:
 	
 	def getWidgetHelp(self, argsList):
 		iScreen, eWidgetType, iData1, iData2, bOption = argsList
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 	
 		if eWidgetType == WidgetTypes.WIDGET_GENERAL:
 			if iData1 == self.SAIL_TO_NEW_WORLD:
@@ -926,7 +926,7 @@ class CvAfricaScreen:
 			return 0
 		
 		screen = self.getScreen()
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		pTransport = player.getUnit(iUnit)
 				
 		# WTP, ray, this is a problem now if we have different rules for Ships sailing to the new world
@@ -999,7 +999,7 @@ class CvAfricaScreen:
 	
 	def sellShip(self, iUnit):
 		screen = self.getScreen()
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		pTransport = player.getUnit(iUnit)
 		
 		if player.getNumShips() > 1:
@@ -1017,7 +1017,7 @@ class CvAfricaScreen:
 
 	def liftBoycott(self, iYield):
 		screen = self.getScreen()
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		iKingAttitude = self.playerEurope.AI_getAttitude(player.getID())
 		
 		self.createBox(self.SELL_SHIP_X, self.SELL_SHIP_Y, self.SELL_SHIP_W, self.SELL_SHIP_H, true) 
@@ -1032,7 +1032,7 @@ class CvAfricaScreen:
 		
 		
 	def getTradeRouteIcon(self, pCity, pTransport):
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		szIcon = u""
 		for iTradeRoute in range(player.getNumTradeRoutes()):
 			pTradeRoute = player.getTradeRouteByIndex(iTradeRoute)
@@ -1044,7 +1044,7 @@ class CvAfricaScreen:
 
 	
 	def getMirrorShipIcon(self, pUnit):
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		UnitInfo = gc.getUnitInfo(pUnit.getUnitType())
 		iProfession = pUnit.getProfession()
 		iUnitArtStyle = gc.getCivilizationInfo(player.getCivilizationType()).getUnitArtStyleType()
@@ -1099,7 +1099,7 @@ class CvAfricaScreen:
 	
 	def getCityInfo(self, iRow, pTransport) :
 		screen = self.getScreen()
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		index = self.getCityByTableRow(iRow)
 		pCity = self.CityPlotList[index][0]
 		iX = self.BOX_X
@@ -1141,8 +1141,8 @@ class CvAfricaScreen:
 		
 	
 	def getPlotLists (self, unit) :
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
-	
+		player = self.player
+
 		#Europe plot list
 		self.EuropePlotListEast = []
 		self.EuropePlotListWest = []
@@ -1238,7 +1238,7 @@ class CvAfricaScreen:
 	
 	
 	def getCenterPlot (self):
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 	
 		pCenterPlot = player.getStartingPlot()
 		iCenterX, iCenterY, iCityCount = 0, 0, 0
@@ -1311,7 +1311,7 @@ class CvAfricaScreen:
 	
 	def cargoMessage(self, iUnit):
 		#cargo info
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		transport = player.getUnit(iUnit)
 
 		if (transport.getUnitTravelState() == UnitTravelStates.UNIT_TRAVEL_STATE_FROM_AFRICA):
@@ -1340,7 +1340,7 @@ class CvAfricaScreen:
 	
 	def travelMessage(self, iUnit):
 		#destination info
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		plot = player.getUnit(iUnit).plot()
 		nextCityName = localText.getText("%s1", (CyMap().findCity (plot.getX(), plot.getY(), player.getID(), -1, true, true, -1, -1, plot.getPlotCity()).getName(), ()))
 	
@@ -1369,7 +1369,7 @@ class CvAfricaScreen:
 	
 	def setSound(self, SoundType):
 		screen = self.getScreen()
-		iCivilization = gc.getPlayer(gc.getGame().getActivePlayer()).getCivilizationType()
+		iCivilization = self.player.getCivilizationType()
 		
 		if SoundType == INIT_SOUND:
 			if (self.iSoundID != 0):
@@ -1395,7 +1395,7 @@ class CvAfricaScreen:
 	
 	def getShipSellPrice(self, iUnit):
 		if iUnit != -1:
-			player = gc.getPlayer(gc.getGame().getActivePlayer())
+			player = self.player
 			iTrainPercent = gc.getGameSpeedInfo(CyGame().getGameSpeedType()).getTrainPercent()
 			if player.getUnit(iUnit).getUnitType() > -1:
 				iSellPrice = self.iSellShip * gc.getUnitInfo(player.getUnit(iUnit).getUnitType()).getEuropeCost() * iTrainPercent / 1200
@@ -1407,7 +1407,7 @@ class CvAfricaScreen:
 	
 	
 	def getMaxTravelTimer(self, transportPlot):
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		iMaxTravelTimer = (gc.getEuropeInfo(transportPlot.getEurope()).getTripLength() * gc.getGameSpeedInfo(CyGame().getGameSpeedType()).getGrowthPercent()) / 100
 	
 		for i in range(gc.getNumTraitInfos()):
@@ -1420,7 +1420,7 @@ class CvAfricaScreen:
 
 	
 	def getBoycottPrice(self, iYield):
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		iStorage = gc.getGameSpeedInfo(CyGame().getGameSpeedType()).getStoragePercent()
 		iBoycottPrice = self.iBoycott * iStorage * player.getYieldSellPrice(iYield)
 		iBoycottPrice += iBoycottPrice * player.getTaxRate() / 100
