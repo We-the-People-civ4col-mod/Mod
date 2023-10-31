@@ -38319,8 +38319,8 @@
 			<bSinglePlayer>0</bSinglePlayer>
 			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
 			<iPercentGamesActive>100</iPercentGamesActive>
-			<iWeight>-1</iWeight>
-			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<iWeight>500</iWeight>
+			<bProbabilityUnitMultiply>1</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
 			<iMinTreasury>1000</iMinTreasury>
@@ -38336,14 +38336,18 @@
 			<iNumUnits>1</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
-			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitDistanceWeight>-1</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired/>
-			<iNumBuildings>0</iNumBuildings>
+			<BuildingsRequired>
+				<BuildingClass>BUILDINGCLASS_MARKET</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_TOWN_MARKET</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_CENTRAL_CITY_MARKET</BuildingClass>
+			</BuildingsRequired>
+			<iNumBuildings>1</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
-			<iNumPlotsRequired>0</iNumPlotsRequired>
-			<bOwnPlot>0</bOwnPlot>
+			<iNumPlotsRequired>1</iNumPlotsRequired>
+			<bOwnPlot>1</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
 			<FeaturesRequired/>
 			<TerrainsRequired/>
@@ -38370,7 +38374,7 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo>canTriggerIsPlayableWithTriggerChance</PythonCanDo>
+			<PythonCanDo>canTriggerPirates</PythonCanDo>
 			<PythonCanDoCity/>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
@@ -38390,8 +38394,8 @@
 			<bSinglePlayer>0</bSinglePlayer>
 			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
 			<iPercentGamesActive>100</iPercentGamesActive>
-			<iWeight>-1</iWeight>
-			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<iWeight>500</iWeight>
+			<bProbabilityUnitMultiply>1</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
 			<iMinTreasury>2000</iMinTreasury>
@@ -38407,14 +38411,22 @@
 			<iNumUnits>1</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
-			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitDistanceWeight>-1</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired/>
-			<iNumBuildings>0</iNumBuildings>
+			<BuildingsRequired>
+				<BuildingClass>BUILDINGCLASS_ARMORY</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_MAGAZINE</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_ARSENAL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_GREAT_ARSENAL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClass>
+			</BuildingsRequired>
+			<iNumBuildings>1</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
-			<iNumPlotsRequired>0</iNumPlotsRequired>
-			<bOwnPlot>0</bOwnPlot>
+			<iNumPlotsRequired>1</iNumPlotsRequired>
+			<bOwnPlot>1</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
 			<FeaturesRequired/>
 			<TerrainsRequired/>
@@ -38441,7 +38453,7 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo>canTriggerIsPlayableWithTriggerChance</PythonCanDo>
+			<PythonCanDo>canTriggerPirates</PythonCanDo>
 			<PythonCanDoCity/>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
