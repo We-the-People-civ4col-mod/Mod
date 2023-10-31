@@ -111,24 +111,41 @@ public:
 	}
 };
 
+enum HoverHelpDisplayOptions
+{
+	HONOR_GAME_SETTING = -1,
+	NEVER_DISPLAY_DETAILS = 0,
+	ALWAYS_DISPLAY_DETAILS = 1
+};
+
 template<> // This lines tells the compiler we use a fully defined template
 class WidgetContainer<WIDGET_HELP_TAX_CALCULATION> : public WidgetData
 {
 public:
 	WidgetContainer(const CvWidgetDataStruct widgetDataStruct)
 		: eColonyPlayer((PlayerTypes)widgetDataStruct.m_iData1)
-		, bForceDetailedInfo(widgetDataStruct.m_iData2 == 1) //If set to 1, will display the detailed info, regardless of hidden variable display option
-	{}
+		, iDetailedInfoDisplayBehavior((HoverHelpDisplayOptions)widgetDataStruct.m_iData2) 
+	{
+		const bool bNoHidden = GC.getGameINLINE().isOption(GAMEOPTION_NO_MORE_VARIABLES_HIDDEN);
+		switch(iDetailedInfoDisplayBehavior)
+		{
+		case NEVER_DISPLAY_DETAILS: bDisplayDetailed = false; break;
+		case ALWAYS_DISPLAY_DETAILS: bDisplayDetailed = true; break;
+		default: bDisplayDetailed = bNoHidden; break;
+		}
+	}
 
 	const PlayerTypes eColonyPlayer;
-	const bool bForceDetailedInfo;
+	const HoverHelpDisplayOptions  iDetailedInfoDisplayBehavior;
+	bool bDisplayDetailed;
 
 	void parseHelp(CvWStringBuffer& szBuffer) const
 	{
 		CvPlayerAI& kColony = GET_PLAYER(eColonyPlayer);
 		CvPlayerAI& kKing = *kColony.getParentPlayer();
-		const bool bNoHidden = GC.getGameINLINE().isOption(GAMEOPTION_NO_MORE_VARIABLES_HIDDEN);
-		if (bNoHidden || bForceDetailedInfo)
+		
+		
+		if (bDisplayDetailed)
 		{
 			const int chancePerThousand = kKing.getTaxRaiseChance();
 			szBuffer.append(gDLL->getText("TXT_KEY_TAX_BAR",
