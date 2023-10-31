@@ -117,17 +117,18 @@ class WidgetContainer<WIDGET_HELP_TAX_CALCULATION> : public WidgetData
 public:
 	WidgetContainer(const CvWidgetDataStruct widgetDataStruct)
 		: eColonyPlayer((PlayerTypes)widgetDataStruct.m_iData1)
-		, iWhatever(widgetDataStruct.m_iData2) //Not used
+		, bForceDetailedInfo(widgetDataStruct.m_iData2 == 1) //If set to 1, will display the detailed info, regardless of hidden variable display option
 	{}
 
 	const PlayerTypes eColonyPlayer;
-	const int iWhatever;
+	const bool bForceDetailedInfo;
 
 	void parseHelp(CvWStringBuffer& szBuffer) const
 	{
 		CvPlayerAI& kColony = GET_PLAYER(eColonyPlayer);
 		CvPlayerAI& kKing = *kColony.getParentPlayer();
-		if (GC.getGameINLINE().isOption(GAMEOPTION_NO_MORE_VARIABLES_HIDDEN))
+		const bool bNoHidden = GC.getGameINLINE().isOption(GAMEOPTION_NO_MORE_VARIABLES_HIDDEN);
+		if (bNoHidden || bForceDetailedInfo)
 		{
 			const int chancePerThousand = kKing.getTaxRaiseChance();
 			szBuffer.append(gDLL->getText("TXT_KEY_TAX_BAR",
