@@ -7800,6 +7800,7 @@
         <German>Fokus zurücksetzen auf %s1_unitname</German>
         <Italian>Torna su %s1_unitname</Italian>
         <Spanish>Volver a centrarse en %s1_unitname</Spanish>
+        <Russian>Вернуться к %s1_unitname</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_ARE_YOU_SURE</Tag>
@@ -7833,6 +7834,7 @@
         <German>Datei laden</German>
         <Italian>Carica file</Italian>
         <Spanish>Cargar archivo</Spanish>
+        <Russian>Загрузить файл</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SAVE_FILE</Tag>
@@ -7841,6 +7843,7 @@
         <German>Datei speichern</German>
         <Italian>Salva file</Italian>
         <Spanish>Guardar archivo</Spanish>
+        <Russian>Сохранить файл</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_KEYBOARD_ESCAPE</Tag>
@@ -8259,6 +8262,7 @@
         <German>OOS-Werte: Sync=%d1_Num; Optionen=%d2_Num</German>
         <Italian>Valori OOS: Sync=%d1_Num; Opzioni=%d2_Num</Italian>
         <Spanish>Valores OOS: Sincronización=%d1_Num; Opciones=%d2_Num</Spanish>
+        <Russian>Значения рассинхронизации: Sync=%d1_Num; Options=%d2_Num</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OOS_TITLE</Tag>
@@ -8267,6 +8271,7 @@
         <German>Das Spiel läuft nicht mehr synchron.[NEWLINE]Bitte überprüfen Sie die OOS-Werte (neben den Ergebnissen).[NEWLINE]Der Spieler mit anderen Werten sollte sich neu verbinden, um die Synchronität wiederherzustellen.</German>
         <Italian>Il gioco non è in sincronia.[NEWLINE]Controlla i valori OOS (Out Of Synch) vicini ai punteggi.[NEWLINE]Il giocatore con i valori diversi dovrà riconnettersi per risincronizzarsi.</Italian>
         <Spanish>El juego se ha desincronizado.[NEWLINE]Consulta los valores OOS de falta de sincronización (junto a la puntuación).[NEWLINE]El jugador que tenga unos valores diferentes tendrá que volver a conectar para poder sincronizarse.</Spanish>
+        <Russian>Игра рассинхронизировалась.[NEWLINE]Проверьте значения рассинхронизации (рядом со счетом).[NEWLINE]Игрок с другими значениями должен повторно подключиться, чтобы выполнить повторную синхронизацию.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INVALID_LOGIN_TITLE</Tag>
