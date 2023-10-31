@@ -18197,7 +18197,69 @@ void CvPlayer::wipeRoyalYieldScore()
 	}
 }
 
-// WTP, ray, Yields Traded Total for Africa and Port Royal - END
+//This method gives yield score across all cargos, with the renetion percentage applied
+const int CvPlayer::getFullYieldScore()
+{
+	return getFullYieldScore(false);
+}
+
+const int CvPlayer::getFullYieldScore(bool fullCalculation)
+{
+	FAssert(isEurope());
+	FAssert(getColonyPlayer() != NULL);
+	int iGrandTotal = 0;
+	for (YieldTypes eYieldCargo = FIRST_YIELD; eYieldCargo < NUM_CARGO_YIELD_TYPES; eYieldCargo++)
+	{
+		if (!getColonyPlayer()->isYieldEuropeTradable(eYieldCargo)) continue; //skip whatever is on embargo
+		iGrandTotal += getYieldScoreTotal(eYieldCargo);
+	}
+
+	if (fullCalculation)
+	{
+		return  iGrandTotal * GLOBAL_DEFINE_TAX_RATE_RETAINED_FRACTION * 100;
+	}
+	else
+	{
+		return  iGrandTotal * GLOBAL_DEFINE_TAX_RATE_RETAINED_FRACTION / 100;
+	}
+}		
+
+const int CvPlayer::getTaxThresold()
+{
+	return getTaxThresold(false);
+}
+
+
+const int CvPlayer::getTaxThresold(bool fullCalculation)
+{
+	CvPlayerAI& pColony = *getColonyPlayer();
+	int iMultiplier = 100;
+	for (TraitTypes eTrait = FIRST_TRAIT; eTrait < NUM_TRAIT_TYPES; ++eTrait)
+	{
+		CvTraitInfo& kTrait = GC.getTraitInfo(eTrait);
+		if (pColony.hasTrait(eTrait))
+		{
+			iMultiplier += kTrait.getTaxRateThresholdModifier();
+		}
+	}
+
+	// TAX_TRADE_THRESHOLD_TAX_RATE_PERCENT is a vanilla global, defined at 1000
+	iMultiplier += pColony.getTaxRate() * GLOBAL_DEFINE_TAX_TRADE_THRESHOLD_TAX_RATE_PERCENT / 100;
+
+	int threshold = GLOBAL_DEFINE_TAX_TRADE_THRESHOLD * std::max(100, iMultiplier)
+		* GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
+
+	if (fullCalculation)
+	{
+		return threshold;
+	}
+	else
+	{
+		return threshold / 10000;
+	}
+		
+}
+
 
 /*
 void CvPlayer::changeYieldTradedTotal(YieldTypes eYield, int iChange)
@@ -19175,9 +19237,42 @@ void CvPlayer::doPrices()
 	}
 }
 
+//returns a tax hike chnace out of 1000
+const int CvPlayer::getTaxRaiseChance()
+{
+	const int MAX_ATTITUDE_ADJUST = GLOBAL_DEFINE_TAX_RATE_ATTITUDE_BOUND;
+	FAssertMsg(isEurope(), "Only the European Homeland player - i.e the King - should calculate tax raises on his colony");
+	FAssertMsg(getColonyPlayer() != NULL, "getColonyPlayer() is not initialized");
+	CvPlayer& pColony = *getColonyPlayer();
+
+	FAssertMsg(getColony() == pColony.getID(), "The Europe player shall rise taxes on his own colonies only");
+
+	if (GC.getEraInfo(getCurrentEra()).isRevolution()) return 0;
+	if (pColony.getHighestTradedYield() == NO_YIELD) return 0;
+	// the revenue fraction  for tax purpose is now calculated here
+	if (getFullYieldScore(true) <= getTaxThresold(true)) return 0;
+
+	int iAttitudeModifier = AI().AI_getAttitudeVal(pColony.getID()) * GLOBAL_DEFINE_TAX_TRADE_INCREASE_CHANCE_KING_ATTITUDE_BASE;
+
+	if (iAttitudeModifier > MAX_ATTITUDE_ADJUST)
+	{
+		iAttitudeModifier = MAX_ATTITUDE_ADJUST;
+	}
+	if (iAttitudeModifier < -MAX_ATTITUDE_ADJUST)
+	{
+		iAttitudeModifier = -MAX_ATTITUDE_ADJUST;
+	}
+
+
+	return  1000 * GLOBAL_DEFINE_TAX_INCREASE_CHANCE / (100 + iAttitudeModifier);
+
+}
+
+
 
 void CvPlayer::doTaxRaises()
 {
+	//Note : the calculation of Tax Raises chance in const int getTaxRaiseChance() just above must match the algorithm down here
 	const int MAX_ATTITUDE_ADJUST = GLOBAL_DEFINE_TAX_RATE_ATTITUDE_BOUND;
 
 	FAssertMsg(isEurope(), "Only the European Homeland player - i.e the King - should calculate tax raises on his colony");
@@ -19189,33 +19284,8 @@ void CvPlayer::doTaxRaises()
 	if (GC.getEraInfo(getCurrentEra()).isRevolution()) return;
 	if (pColony.getHighestTradedYield() == NO_YIELD) return;
 
-	int iTotalScore = 0;
-	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_CARGO_YIELD_TYPES; ++eYield)
-	{
-		//Note : the Yield scores must be increased in sync for both the King and the colony when a trade takes place
-		if (pColony.isYieldEuropeTradable(eYield))
-		{
-			iTotalScore += getYieldScoreTotal(eYield);
-		}
-	}
-
-	int iMultiplier = 100;
-	for (TraitTypes eTrait = FIRST_TRAIT; eTrait < NUM_TRAIT_TYPES; ++eTrait)
-	{
-		CvTraitInfo& kTrait = GC.getTraitInfo(eTrait);
-		if (pColony.hasTrait(eTrait))
-		{
-			iMultiplier += kTrait.getTaxRateThresholdModifier();
-		}
-	}
-
-	// TAX_TRADE_THRESHOLD_TAX_RATE_PERCENT is a vanilla global, defined at 1000
-	iMultiplier += pColony.getTaxRate() * GLOBAL_DEFINE_TAX_TRADE_THRESHOLD_TAX_RATE_PERCENT / 100;
-
 	// the revenue fraction  for tax purpose is now calculated here
-	if (iTotalScore * 100 * GLOBAL_DEFINE_TAX_RATE_RETAINED_FRACTION <= GLOBAL_DEFINE_TAX_TRADE_THRESHOLD * std::max(100, iMultiplier)
-		* GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent())
-		return; // we have not traded enough yet;
+	if (getFullYieldScore(true) <= getTaxThresold(true) ) return; // we have not traded enough yet;
 
 	
 	int iAttitudeModifier = AI().AI_getAttitudeVal(pColony.getID()) * GLOBAL_DEFINE_TAX_TRADE_INCREASE_CHANCE_KING_ATTITUDE_BASE;
@@ -19229,7 +19299,7 @@ void CvPlayer::doTaxRaises()
 		iAttitudeModifier = -MAX_ATTITUDE_ADJUST;
 	}
 
-	if (GC.getGameINLINE().getSorenRandNum(100 + iAttitudeModifier, "Tax rate increase") >= GC.getTAX_INCREASE_CHANCE())
+	if (GC.getGameINLINE().getSorenRandNum(100 + iAttitudeModifier, "Tax rate increase") >= GLOBAL_DEFINE_TAX_INCREASE_CHANCE)
 		return; //Nah, we don't feel like increasing the tax right away
 
 	const int iOldTaxRate = pColony.getTaxRate();

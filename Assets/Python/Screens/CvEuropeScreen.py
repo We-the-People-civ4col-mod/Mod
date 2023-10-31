@@ -1456,7 +1456,7 @@ class CvEuropeScreen:
 		player = gc.getPlayer(gc.getGame().getActivePlayer())
 		# WTP, ray fixing that the value is read from wrong player
 		playerEurope = gc.getPlayer(player.getParent())
-		iScore = playerEurope.getYieldScoreTotalINT(iYield)
+		iScore = playerEurope.getYieldScoreTotalINT(iYield) #ratio already applied here
 		return iScore
 	
 	def getTotalYieldsScore(self):
