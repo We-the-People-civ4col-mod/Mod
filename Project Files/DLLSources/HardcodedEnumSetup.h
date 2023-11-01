@@ -38,9 +38,21 @@ enum CivEffectTypes
 	CIV_EFFECT_DEFAULT_AI,
 };
 
+enum CivilizationTypes
+{
+	BARBARIAN_CIVILIZATION,
+	CHURCH_CIVILIZATION,
+};
+
 enum EffectTypes
 {
 	EFFECT_SETTLERSMOKE,
+};
+
+enum LeaderHeadTypes
+{
+	BARBARIAN_LEADER,
+	CHURCH_LEADER,
 };
 
 enum ProfessionTypes
