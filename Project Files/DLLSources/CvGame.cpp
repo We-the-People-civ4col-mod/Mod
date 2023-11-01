@@ -5454,30 +5454,30 @@ void CvGame::createBarbarianPlayer()
 	//LEADER_BARBARIAN  and CIVILIZATION_BARBARIAN are always assumed to exist,see HardcodedEnumSetup.h
 	addPlayer(eNewPlayer, GLOBAL_DEFINE_BARBARIAN_LEADER, GLOBAL_DEFINE_BARBARIAN_CIVILIZATION);
 	setBarbarianPlayer(eNewPlayer);
+
 	TeamTypes eTeam = GET_PLAYER(getBarbarianPlayer()).getTeam();
-	for (int iI = 0; iI < MAX_TEAMS; iI++)
+	CvTeamAI& kBarbarianTeam = GET_TEAM(eTeam);
+
+	for (TeamTypes eOtherTeam = FIRST_TEAM; eOtherTeam < NUM_TEAM_TYPES; ++eOtherTeam)
 	{
-		if (iI != eTeam)
+		if (eOtherTeam == eTeam) continue;
+
+		CvTeamAI& kOtherTeam = GET_TEAM(eOtherTeam);
+
+		if (!kOtherTeam.isAlive()) continue;
+		
+		// R&R, ray, changes to Wild Animals
+		// Natives and Kings will not Fight Animals
+		if (!kOtherTeam.hasNativePlayer() && !kOtherTeam.hasEuropePlayer() && !kBarbarianTeam.isAtWar(eOtherTeam))
 		{
-			if (GET_TEAM((TeamTypes)iI).isAlive())
-			{
-				// R&R, ray, changes to Wild Animals
-				// if (!GET_TEAM(eTeam).isAtWar((TeamTypes)iI))
-				// Natives and Kings will not Fight Animals
-				if (!GET_TEAM((TeamTypes)iI).hasNativePlayer() && !GET_TEAM((TeamTypes)iI).hasEuropePlayer() && !GET_TEAM(eTeam).isAtWar((TeamTypes)iI))
-				{
-					GET_TEAM(eTeam).declareWar(((TeamTypes)iI), false, GET_TEAM(eTeam).AI_getWarPlan((TeamTypes)iI));
-				}
-				if (!GET_TEAM(eTeam).isPermanentWarPeace((TeamTypes)iI))
-				{
-					GET_TEAM(eTeam).setPermanentWarPeace(((TeamTypes)iI), true);
-				}
-			}
+			kBarbarianTeam.declareWar(eOtherTeam, false, kBarbarianTeam.AI_getWarPlan(eOtherTeam));
+		}
+
+		if (!kBarbarianTeam.isPermanentWarPeace(eOtherTeam))
+		{
+			kBarbarianTeam.setPermanentWarPeace(eOtherTeam, true);
 		}
 	}
-	
-	
-
 }
 
 void CvGame::createAnimalsLand()
@@ -5730,18 +5730,23 @@ void CvGame::createChurchPlayer()
 	// LEADER_CHURCH and CIVILIZATION_CHURCH are assumed to exist, see HardcodedEnumSetup.h
 	addPlayer(eNewPlayer, GLOBAL_DEFINE_CHURCH_LEADER, GLOBAL_DEFINE_CHURCH_CIVILIZATION);
 	setChurchPlayer(eNewPlayer);
+
 	TeamTypes eTeam = GET_PLAYER(getChurchPlayer()).getTeam();
-	for (int iI = 0; iI < MAX_TEAMS; iI++)
+	CvTeamAI& kChurchTeam = GET_TEAM(eTeam);
+
+	for (TeamTypes eOtherTeam = FIRST_TEAM; eOtherTeam < NUM_TEAM_TYPES; ++eOtherTeam)
 	{
-		if (iI != eTeam)
+		if (eOtherTeam == eTeam) continue;
+
+		CvTeamAI& kOtherTeam = GET_TEAM(eOtherTeam);
+
+		// set permanent peace with all Europeans and make contact
+		if (kOtherTeam.isAlive() && !kOtherTeam.hasNativePlayer())
 		{
-			// set permanent peace with all Europeans and make contact
-			if (GET_TEAM((TeamTypes)iI).isAlive() && !GET_TEAM((TeamTypes)iI).hasNativePlayer())
-			{
-				GET_TEAM(eTeam).setPermanentWarPeace(((TeamTypes)iI), true);
-				GET_TEAM(eTeam).meet(((TeamTypes)iI), false);
-			}
+			kChurchTeam.setPermanentWarPeace(eOtherTeam, true);
+			kChurchTeam.meet(eOtherTeam, false);
 		}
+		
 	}
 
 }
