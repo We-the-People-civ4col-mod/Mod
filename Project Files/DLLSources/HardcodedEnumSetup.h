@@ -40,8 +40,8 @@ enum CivEffectTypes
 
 enum CivilizationTypes
 {
-	BARBARIAN_CIVILIZATION,
-	CHURCH_CIVILIZATION,
+	CIVILIZATION_BARBARIAN,
+	CIVILIZATION_CHURCH,
 };
 
 enum EffectTypes
@@ -51,8 +51,8 @@ enum EffectTypes
 
 enum LeaderHeadTypes
 {
-	BARBARIAN_LEADER,
-	CHURCH_LEADER,
+	LEADER_BARBARIAN,
+	LEADER_CHURCH,
 };
 
 enum ProfessionTypes
