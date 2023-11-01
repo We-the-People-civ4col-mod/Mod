@@ -2508,6 +2508,35 @@ void postLoadGameFixes()
 		kPlayer.postLoadFixes();
 	}
 	
+#ifdef _DEBUG
+	//jburet, pointer sanity check
+	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
+	{
+		CvPlayerAI& kPlayer = GET_PLAYER(ePlayer);
+
+		if (!kPlayer.isEverAlive()) continue; //Inactive from day one players do not count
+
+		if (kPlayer.getParent() != NO_PLAYER)
+		{
+			CvPlayer* kKing = kPlayer.getParentPlayer();
+			CvPlayer* kColony = &kPlayer;
+			FAssertMsg(kKing != NULL, "Pointer to Parent Player not initialized");
+			FAssertMsg(kKing->getID() == kColony->getParent(), "Pointer to Parent Player doesn't point on the right player");
+			FAssertMsg(kKing->getColony() == kColony->getID(), "Pointer to Parent Player doesn't point on the right player");
+		}
+
+		if (kPlayer.getColony() != NO_PLAYER)
+		{
+			CvPlayer* kKing = &kPlayer;
+			CvPlayer* kColony = kPlayer.getColonyPlayer();
+			FAssertMsg(kColony != NULL, "Pointer to Colony Player not initialized");
+			FAssertMsg(kKing->getID() == kColony->getParent(), "Pointer to Colony Player doesn't point on the right player");
+			FAssertMsg(kKing->getColony() == kColony->getID(), "Pointer to Colony Player doesn't point on the right player");
+		}
+
+	}
+
+#endif
 	GC.getGameINLINE().postLoadFixes();
 }
 /// post load function - end - Nightinggale

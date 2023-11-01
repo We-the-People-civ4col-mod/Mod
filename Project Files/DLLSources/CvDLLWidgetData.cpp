@@ -112,6 +112,61 @@ public:
 };
 
 
+template<> // This lines tells the compiler we use a fully defined template
+class WidgetContainer<WIDGET_HELP_TAX_CALCULATION> : public WidgetData
+{
+public:
+	enum HoverHelpDisplayOptions
+	{
+		HONOR_GAME_SETTING = -1,
+		NEVER_DISPLAY_DETAILS = 0,
+		ALWAYS_DISPLAY_DETAILS = 1
+	};
+
+	WidgetContainer(const CvWidgetDataStruct widgetDataStruct)
+		: eColonyPlayer((PlayerTypes)widgetDataStruct.m_iData1)
+		, iDetailedInfoDisplayBehavior((HoverHelpDisplayOptions)widgetDataStruct.m_iData2) 
+	{
+		const bool bNoHidden = GC.getGameINLINE().isOption(GAMEOPTION_NO_MORE_VARIABLES_HIDDEN);
+		switch(iDetailedInfoDisplayBehavior)
+		{
+		case NEVER_DISPLAY_DETAILS: bDisplayDetailed = false; break;
+		case ALWAYS_DISPLAY_DETAILS: bDisplayDetailed = true; break;
+		default: bDisplayDetailed = bNoHidden; break;
+		}
+	}
+
+	const PlayerTypes eColonyPlayer;
+	const HoverHelpDisplayOptions  iDetailedInfoDisplayBehavior;
+	bool bDisplayDetailed;
+
+	void parseHelp(CvWStringBuffer& szBuffer) const
+	{
+		CvPlayerAI& kColony = GET_PLAYER(eColonyPlayer);
+		CvPlayerAI& kKing = *kColony.getParentPlayer();
+		
+		
+		if (bDisplayDetailed)
+		{
+			const int chancePerThousand = kKing.getTaxRaiseChance();
+			szBuffer.append(gDLL->getText("TXT_KEY_TAX_BAR",
+				kKing.getFullYieldScore(), //apply the Global Ratio
+				kKing.getTaxThresold(), // get a comparable quantity
+				GC.getYieldInfo(YIELD_TRADE_GOODS).getChar(),
+				chancePerThousand / 10,	chancePerThousand % 10,
+				GLOBAL_DEFINE_TAX_RATE_RETAINED_FRACTION
+				));
+		}
+		else
+		{
+			const CvWString st = gDLL->getText("TXT_KEY_MISC_TAX_RATE", 
+				kColony.getTaxRate(), 
+				kColony.NBMOD_GetMaxTaxRate());
+			// st.ToUpper?
+			szBuffer.append(st);
+		}
+	}
+};
 
 // has to be after the specialized cases of WidgetContainer
 
@@ -120,6 +175,7 @@ WidgetData* WidgetData::getNew(const CvWidgetDataStruct& widgetData)
 	switch (widgetData.m_eWidgetType)
 	{
 	case WIDGET_PEDIA_JUMP_TO_UNIT: return new WidgetContainer<WIDGET_PEDIA_JUMP_TO_UNIT>(widgetData);
+	case WIDGET_HELP_TAX_CALCULATION: return new WidgetContainer<WIDGET_HELP_TAX_CALCULATION >(widgetData);
 	}
 
 	return NULL;
