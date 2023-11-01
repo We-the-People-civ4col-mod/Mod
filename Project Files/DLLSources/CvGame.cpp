@@ -5451,8 +5451,8 @@ void CvGame::createBarbarianPlayer()
 		return; //no more room;
 	}
 
-	// BARBARIAN_LEADER and BARBARIAN_CIVILIZATION are always assumed to exist,see HardcodedEnumSetup.h
-	addPlayer(eNewPlayer, BARBARIAN_LEADER, BARBARIAN_CIVILIZATION);
+	//LEADER_BARBARIAN  and CIVILIZATION_BARBARIAN are always assumed to exist,see HardcodedEnumSetup.h
+	addPlayer(eNewPlayer, GLOBAL_DEFINE_BARBARIAN_LEADER, GLOBAL_DEFINE_BARBARIAN_CIVILIZATION);
 	setBarbarianPlayer(eNewPlayer);
 	TeamTypes eTeam = GET_PLAYER(getBarbarianPlayer()).getTeam();
 	for (int iI = 0; iI < MAX_TEAMS; iI++)
@@ -5727,8 +5727,8 @@ void CvGame::createChurchPlayer()
 	}
 	
 
-	// CHURCH_LEADER and CHURCH_CIVILIZATION are assumed to exist, see HardcodedEnumSetup.h
-	addPlayer(eNewPlayer, CHURCH_LEADER, CHURCH_CIVILIZATION);
+	// LEADER_CHURCH and CIVILIZATION_CHURCH are assumed to exist, see HardcodedEnumSetup.h
+	addPlayer(eNewPlayer, GLOBAL_DEFINE_CHURCH_LEADER, GLOBAL_DEFINE_CHURCH_CIVILIZATION);
 	setChurchPlayer(eNewPlayer);
 	TeamTypes eTeam = GET_PLAYER(getChurchPlayer()).getTeam();
 	for (int iI = 0; iI < MAX_TEAMS; iI++)
