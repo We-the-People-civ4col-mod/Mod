@@ -3176,14 +3176,14 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SECOND_CONQUISTADOR_HEAD</Tag>
-        <English>Conquistadors conquer the New World</English>
+        <English>Conquistadors seek gold</English>
         <French>Comme un vol de gerfauts ...</French>
         <German>Konquistadoren erobern die Neue [NEWLINE]Welt</German>
         <Russian>Конкистадоры покоряют Новый Свет</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SECOND_CONQUISTADOR_TEXT</Tag>
-        <English>"[COLOR_SELECTED_TEXT]Men, the New World is ours. Look at this! One of the Seven Cities of Cibola, I know it, I'm sure. Follow me![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Lord, this looks more like the burial place of a high king of the savages. We're more likely to find dusty bones or death or both. If any savages see us, that's the death of us all.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]What are you, conquerors or cowards? Follow me...I can smell the gold already![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <English>"[COLOR_SELECTED_TEXT]Men, the Seven Cities of Cibola, made entirely of gold, are just over the horizon on the other side of this desert. Follow me![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Lord, our guide says he's leaving us but we'll find water along the way. If he's lying, we're all dead men.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Are you saying these ignorant savages are smart enough to trick us? Follow me...let's go get that gold![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Männer, die Neue Welt gehört uns. Seht Euch das an! Eine der sieben Städte von Cibola, ich weiß es, ich bin sicher. Folgt mir![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Herr, das sieht mir eher wie die Begräbnisstätte eines hohen Königs der Wilden aus. Ich glaube hier werden wir eher nur verstaubte Knochen oder den Tod finden oder beides. Wenn die Wilden uns sehen, sind wir geliefert.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Was seid ihr, Eroberer oder Feiglinge? Mir nach...ich kann das Gold schon riechen![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Russian>"[COLOR_SELECTED_TEXT]Парни, Новый Свет наш. Посмотрите туда! Это один из семи городов Сиболы, я уверен. Следуйте за мной![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Господи, это больше похоже на место захоронения верховного вождя туземцев. Скорее всего, мы найдем лишь обглоданные кости. А если кто-то из дикарей увидит нас, мы все погибнем...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Вы завоеватели или трусы? За мной! Я уже чувствую запах золота!!![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
     </TEXT>
