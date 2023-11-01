@@ -23,42 +23,42 @@
 class WidgetData
 {
 public:
-	virtual void parseHelp(CvWStringBuffer &szBuffer) const;
+	virtual void generateMouseOverText(CvWStringBuffer &szBuffer);
 
-	virtual bool executeAction() const;
-	virtual bool executeAltAction() const;
-	virtual bool executeDropOn(const CvWidgetDataStruct destinationWidgetData) const;
-	virtual bool executeDoubleClick();
+	virtual bool onLeftCLick();
+	virtual bool onRightClick();
+	virtual bool onDoubleLeftClick();
+	virtual bool onDragAndDropOn(const CvWidgetDataStruct destinationWidgetData);
 
-	virtual bool isLink() const;
+	virtual bool isPediaLink();
 
 	static WidgetData* getNew(const CvWidgetDataStruct& widgetData);
 };
 
-void WidgetData::parseHelp(CvWStringBuffer &szBuffer) const
+void WidgetData::generateMouseOverText(CvWStringBuffer &szBuffer)
 {}
 
 // return value for the next 4 tells if the function did something
 // false as the default is to do nothing, but any child override should obviously return true
-bool WidgetData::executeAction() const
+bool WidgetData::onLeftCLick()
 {
 	return false;
 }
-bool WidgetData::executeAltAction() const
+bool WidgetData::onRightClick()
 {
 	return false;
 }
-bool WidgetData::executeDropOn(const CvWidgetDataStruct sourceWidgetData) const
+bool WidgetData::onDoubleLeftClick()
 {
 	return false;
 }
-bool WidgetData::executeDoubleClick()
+bool WidgetData::onDragAndDropOn(const CvWidgetDataStruct sourceWidgetData)
 {
 	return false;
 }
 
 // tells if the widget can jump to a pedia entry
-bool WidgetData::isLink() const
+bool WidgetData::isPediaLink()
 {
 	return false;
 }
@@ -78,7 +78,7 @@ public:
 	const UnitTypes eUnit;
 	const int iJumpHelpControl;
 
-	void parseHelp(CvWStringBuffer &szBuffer) const
+	void generateMouseOverText(CvWStringBuffer &szBuffer)
 	{
 		if (iJumpHelpControl != 0)
 		{
@@ -86,16 +86,16 @@ public:
 		}
 	}
 
-	bool executeAction() const
+	bool onLeftCLick()
 	{
 		if (iJumpHelpControl != 1)
 		{
-			executeAltAction();
+			onRightClick();
 		}
 		return true;
 	}
 
-	bool executeAltAction() const
+	bool onRightClick()
 	{
 		bool ff = isInRange(eUnit);
 		CyArgsList argsList;
@@ -105,7 +105,7 @@ public:
 		return true;
 	}
 
-	bool isLink() const
+	bool isPediaLink()
 	{
 		return isInRange(eUnit);
 	}
@@ -140,7 +140,7 @@ public:
 	const HoverHelpDisplayOptions  iDetailedInfoDisplayBehavior;
 	bool bDisplayDetailed;
 
-	void parseHelp(CvWStringBuffer& szBuffer) const
+	void generateMouseOverText(CvWStringBuffer& szBuffer)
 	{
 		CvPlayerAI& kColony = GET_PLAYER(eColonyPlayer);
 		CvPlayerAI& kKing = *kColony.getParentPlayer();
@@ -207,7 +207,7 @@ void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, CvWidgetDataStruct &w
 	WidgetData* data = WidgetData::getNew(widgetDataStruct);
 	if (data != NULL)
 	{
-		data->parseHelp(szBuffer);
+		data->generateMouseOverText(szBuffer);
 		SAFE_DELETE(data);
 		return;
 	}
@@ -606,7 +606,7 @@ bool CvDLLWidgetData::executeAction( CvWidgetDataStruct &widgetDataStruct )
 	WidgetData* data = WidgetData::getNew(widgetDataStruct);
 	if (data != NULL)
 	{
-		bool result = data->executeAction();
+		bool result = data->onLeftCLick();
 		SAFE_DELETE(data);
 		return result;
 	}
@@ -883,7 +883,7 @@ bool CvDLLWidgetData::executeAltAction( CvWidgetDataStruct &widgetDataStruct )
 	WidgetData* data = WidgetData::getNew(widgetDataStruct);
 	if (data != NULL)
 	{
-		bool result = data->executeAltAction();
+		bool result = data->onRightClick();
 		SAFE_DELETE(data);
 		return result;
 	}
@@ -928,7 +928,7 @@ bool CvDLLWidgetData::executeDropOn(const CvWidgetDataStruct& destinationWidgetD
 	WidgetData* data = WidgetData::getNew(sourceWidgetData);
 	if (data != NULL)
 	{
-		bool result = data->executeDropOn(destinationWidgetData);
+		bool result = data->onDragAndDropOn(destinationWidgetData);
 		SAFE_DELETE(data);
 		return result;
 	}
@@ -998,7 +998,7 @@ bool CvDLLWidgetData::executeDoubleClick(const CvWidgetDataStruct& widgetDataStr
 	WidgetData* data = WidgetData::getNew(widgetDataStruct);
 	if (data != NULL)
 	{
-		bool result = data->executeDoubleClick();
+		bool result = data->onDoubleLeftClick();
 		SAFE_DELETE(data);
 		return result;
 	}
@@ -1058,7 +1058,7 @@ bool CvDLLWidgetData::isLink(const CvWidgetDataStruct &widgetDataStruct) const
 	WidgetData* data = WidgetData::getNew(widgetDataStruct);
 	if (data != NULL)
 	{
-		bool result = data->isLink();
+		bool result = data->isPediaLink();
 		SAFE_DELETE(data);
 		return result;
 	}
