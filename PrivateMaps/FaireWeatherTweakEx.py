@@ -366,6 +366,8 @@ class MapConstants :
         self.iceCapMaxHeightNorth = 4
         self.iceCapMaxHeightSouth = 4
 
+        # complementary Hill generation coefficient, 0.3 was a bit too much
+        self.complementaryHillsCoeff = 0.25
         return
     
     def initInGameOptions(self):
@@ -2126,7 +2128,7 @@ class SmallMaps :
                                 self.terrainMap[i] = mc.SAVANNAH
                             # Generate some Hills
                             iRandPlotType = PRand.random()
-                            if iRandPlotType <= 0.3: 
+                            if iRandPlotType <= mc.complementaryHillsCoeff:
                                 self.plotMap[i] = mc.HILLS
                             #ray Savannah End
                         else:
@@ -2139,7 +2141,7 @@ class SmallMaps :
                                 self.terrainMap[i] = mc.SAVANNAH
                             # Generate some Hills
                             iRandPlotType = PRand.random()
-                            if iRandPlotType <= 0.3: 
+                            if iRandPlotType <= mc.complementaryHillsCoeff:
                                 self.plotMap[i] = mc.HILLS
 
         #Make sure ice is always higher than tundra, and tundra is always higher than
@@ -4979,13 +4981,13 @@ def generateShrubland():
                         if PRand.random() <= shrublandChance:
                             plot.setTerrainType(terrainShrubland, True, True)
                             iRandPlotType = PRand.random()
-                            if iRandPlotType <= 0.3: 
+                            if iRandPlotType <= mc.complementaryHillsCoeff:
                                 plot.setPlotType(PlotTypes.PLOT_HILLS,True,True)
                     elif isAnyAdjacentPlotTerrainType(x, y, terrainShrubland):
                         if PRand.random() <= shrublandNextToShrublandChance:
                             plot.setTerrainType(terrainShrubland, True, True)
                             iRandPlotType = PRand.random()
-                            if iRandPlotType <= 0.3: 
+                            if iRandPlotType <= mc.complementaryHillsCoeff:
                                 plot.setPlotType(PlotTypes.PLOT_HILLS,True,True)
 
 def generateTaiga():
@@ -5012,7 +5014,7 @@ def generateTaiga():
                             plot.setTerrainType(terrainTaiga, True, True)
                             # Generate some Hills
                             iRandPlotType = PRand.random()
-                            if iRandPlotType <= 0.3: 
+                            if iRandPlotType <= mc.complementaryHillsCoeff:
                                 plot.setPlotType(PlotTypes.PLOT_HILLS,True,True)
                 if plot.getTerrainType() == terrainTundra:
                     if isAnyAdjacentPlotTerrainType(x, y, terrainTundra):
@@ -5046,7 +5048,7 @@ def generateRockSteppes():
                                     plot.setTerrainType(terrainRockSteppes, True, True)
                                     # Generate some Hills
                                     iRandPlotType = PRand.random()
-                                    if iRandPlotType <= 0.3: 
+                                    if iRandPlotType <= mc.complementaryHillsCoeff:
                                         plot.setPlotType(PlotTypes.PLOT_HILLS,True,True)
 
     
@@ -5060,7 +5062,7 @@ def generateRockSteppes():
                             if PRand.random() <= rockSteppesChance:
                                 plot.setTerrainType(terrainRockSteppes, True, True)
                                 iRandPlotType = PRand.random()
-                                if iRandPlotType <= 0.3: 
+                                if iRandPlotType <= mc.complementaryHillsCoeff:
                                     plot.setPlotType(PlotTypes.PLOT_HILLS,True,True)
 
 def generateWetland():

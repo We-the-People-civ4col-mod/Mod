@@ -9834,7 +9834,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CHEESE_MAKER_1</Tag>
-        <English>He shall get his maid.</English>
+        <English>He shall get his maid. But the first child will be named after me.</English>
         <French>Il aura une laitière comme compagne. Mais le premier enfant devra porter mon nom.</French>
         <German>Er soll seine Magd haben. Aber das erste Kind wird nach mir benannt.</German>
         <Russian>Хорошо, у него будет своя прислуга. Но первого ребенка назовут в мою честь.</Russian>
@@ -10045,5 +10045,65 @@
         <English>Milord, our wagon train has reached the Indian village. What deal should we make?</English>
         <German>Milord, unser Wagenzug hat das Indianer-Dorf erreicht. Welchen Handel sollen wir abschließen?</German>
         <Russian>Милорд, наш торговый обоз достиг индейской деревни. Какую сделку нам следует заключить?</Russian>
+    </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_FAILED_TRADER_DAUGHTER</Tag>
+        <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] trapper have returned to a failed native trader his daughter kidnapped by redskins.</English>
+        <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben Waldläufer einem gescheiterten Ureinwohnerhändler seine von Rothäuten entführte Tochter wieder zurückgebracht.</German>
+        <Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] зверолов вернул неудачливому торговцу его дочь, похищенную краснокожими.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_FAILED_TRADER_DAUGHTER</Tag>
+        <English>Milord, some trapper have returned a trader his daughter. She had been kidnapped by redskins while traveling through the wilderness and he returned to the colony alone and in despair. Now, of course, he has recovered and has also recovered mentally.</English>
+         <German>Milord, einige Waldläufer haben einem Händler seine Tochter wiedergebracht. Sie war auf der Reise durch die Wildnis von Rothäuten entführt worden und er kehrte allein und verzweifelt in die Kolonie zurück. Jetzt hat er sich natürlich erholt ist auch geistig wieder genesen.</German>
+        <Russian>Милорд, какой-то зверолов вернул торговцу его дочь, похищенную краснокожими во время путешествия по дикой местности. Тогда он вернулся в колонию один, убитый горем и отрешился от всего. Сейчас же лицо светится от счастья.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAILED_TRADER_DAUGHTER_1</Tag>
+        <English>He should spend his last years in peace. We will buy him rum for evening gatherings at the inn. Perhaps his tales of the wilderness can be useful to other traders.</English>
+         <German>Er soll seine letzten Jahre in Frieden verbringen. Wir spendieren ihm den Rum für abendliche Zusammenkünfte im Wirtshaus. Vielleicht können seine Erzählungen über die Wildnis anderen Händlern nützlich sein.</German>
+        <Russian>Нужно отпразновать это чудесное событие. Купим ему рома для вечерних посиделок в таверне. Возможно, его рассказы о дикой природе окажутся полезными для других торговцев.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAILED_TRADER_DAUGHTER_2</Tag>
+        <English>It's nice that he can put his manpower back into the service for the colony. But we shouldn't send him out there into the wilderness. Let him open a business here instead.</English>
+        <German>Schön, dass er seine Arbeitskraft wieder in den Dienst der Kolonie stellen kann. Aber wir sollten ihn nicht da raus in die Wildnis schicken. Soll er lieber hier ein Geschäft eröffnen.</German>
+        <Russian>Отлино, теперь он снова сможет приносить пользу колонии. Но больше не следует посылать его в пустошь. Вместо этого пусть займётся чем-то в поселении.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAILED_TRADER_DAUGHTER_3</Tag>
+        <English>As one hears, the daughter should have learned quite a bit about plants and medicinal herbs out there. We should take advantage of that. Hire her. She can work on one of the plantations.</English>
+        <German>Wie man hört, soll die Tochter ja da draußen einiges über Pflanzen und Heilkräuter gelernt haben. Das sollsten wir uns zu nutze machen. Stellt sie ein. Sie kann auf einer der Plantagen arbeiten.</German>
+        <Russian>Судя по слухам, его дочь многое узнала о местных растениях. Мы должны этим воспользоваться - найдите ей работу на подходящей плантации.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_FAILED_TRADER_REVENGE</Tag>
+        <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a failed native trader spreads rumors about the horrors of the wilderness.</English>
+        <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] verbreitet ein gescheiterter Ureinwohnerhändler Gerüchte über die Schrecken der Wildnis.</German>
+        <Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] неудачливый торговец распространяет слухи об ужасах дикой природы.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_FAILED_TRADER_REVENGE</Tag>
+        <English>Milord, a trader who seems to have been mentally disturbed by the horrors he experienced in the wilderness, has remembered them and is now willing to go into battle against the Redskins. His time as a trader is apparently finally over.</English>
+         <German>Milord, ein Händler, der, aufgrund der Schrecken, die er in der Wildnis erlebt zu haben scheint, geistig verwirrt war, hat sich dieser wieder erinnert und ist nun gewillt, gegen die Rothäute ins Feld zu ziehen. Seine Zeit als Händler ist offenbar endgültig vorbei.</German>
+        <Russian>Милорд, неудачливый торговец, на себе испытавший весь ужас нападения индейцев, воспрял духом и желает посвятить себя борьбе с ними. Кажется, мы потеряли торговца...</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAILED_TRADER_REVENGE_1</Tag>
+        <English>Nevertheless, he should spend his last years in peace. We will buy him rum for evening gatherings at the inn. Perhaps his tales of the wilderness can be useful to our inexperienced militia.</English>
+         <German>Er sollte dennoch seine letzten Jahre in Frieden verbringen. Wir spendieren ihm den Rum für abendliche Zusammenkünfte im Wirtshaus. Vielleicht können seine Erzählungen über die Wildnis unserer unerfahrenen Miliz nützlich sein.</German>
+        <Russian>Этот старик уже не боец. Но вот его рассказы о дикой местности могут быть полезны нашему неопытному ополчению. Купите ему рома, чтобы не пересохло в горле.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAILED_TRADER_REVENGE_2</Tag>
+        <English>Excellent, we need settlers who want to get involved - even if their motives seem dubious. But I don't trust him, we shouldn't put weapons in his hands. He can work as a fireworker.</English>
+        <German>Hervorragend, wir brauchen Siedler, die anpacken wollen - mögen ihre Motive auch zweifelhaft erscheinen. Aber ich traue ihm nicht, wir sollten ihm keine Waffen in die Hand geben. Er kann als Feuerwerker arbeiten.</German>
+        <Russian>Отлично, нам нужны мотивированные поселенцы. Однако, не стоит доверять ему оружие. Но он может работать на производстве пороха.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAILED_TRADER_REVENGE_3</Tag>
+        <English>Well, if you can trade weapons, you can learn to make them. Let's send him to the magazine. There, at least, he can make the weapons he so desires.</English>
+        <German>Nun gut, wer mit Waffen handeln kann, kann auch lernen sie herzustellen. Schicken wir ihn ins Magazin. Da kann er jedenfalls die Waffen herstellen, die er so sehr begehrt.</German>
+        <Russian>Что ж, если раньше он торговал оружием, мы можем обучить и создавать его. Давайте отправим его на военный склад. Там он сможет изготовить то оружие, которое ему хочется.</Russian>
     </TEXT>
 </Civ4GameText>
