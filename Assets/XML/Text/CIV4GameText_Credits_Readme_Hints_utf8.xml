@@ -665,6 +665,7 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_26</Tag>
 		<English>[BOLD]Don't put troops on your first frigate![\BOLD][NEWLINE]When you get your first frigate, whether you buy it, build it, or get it from a quest or a Founding Father, the King is going to commandeer it for the Royal Navy. Don't worry. You'll get it back in ten turns. However if you put any of your soldiers aboard they'll be shanghaied into the Royal Marines. You'll never see those troops again.</English>
+		<Russian>[BOLD][COLOR_NEGATIVE_TEXT]Никогда не загружайте войска в свой первый фрегат![COLOR_REVERT][\BOLD][NEWLINE]Когда вы получаете свой первый фрегат, независимо от того, покупаете ли вы его, строите или получаете по заданию или от отца-основателя, Король собирается реквизировать его для Королевского флота. Но не волнуйтесь. Вы получите его обратно через десять ходов. Однако, если вы поместите на борт кого-нибудь из своих солдат, они будут переведены в Королевскую морскую пехоту и вы никогда больше не увидите эти войска.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_27</Tag>
@@ -849,7 +850,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; STRG + S &gt;[COLOR_REVERT], um das Spiel zu speichern. Mit [COLOR:140:255:40:255]&lt; STRG + L &gt;[COLOR_REVERT] können Sie ein gespeichertes Spiel laden.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; CTRL + S &gt;[COLOR_REVERT] per salvare la partita e [COLOR:140:255:40:255]&lt; CTRL + L &gt;[COLOR_REVERT] per caricare una partita salvata.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; CTRL + S &gt;[COLOR_REVERT] para guardar la partida y [COLOR:140:255:40:255]&lt; CTRL + L &gt;[COLOR_REVERT] para cargar una guardada.</Spanish>
-		<Russian>Нажмите [ЦВЕТ:140:255:40:255]&lt; CTRL + S &gt;[COLOR_REVERT], чтобы сохранить игру и [COLOR:140:255:40:255]&lt; CTRL + L &gt;[COLOR_REVERT] для загрузки сохраненной игры.</Russian>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; CTRL + S &gt;[COLOR_REVERT], чтобы сохранить игру и [COLOR:140:255:40:255]&lt; CTRL + L &gt;[COLOR_REVERT] для загрузки сохраненной игры.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_5</Tag>
@@ -903,7 +904,7 @@ Viel Spass![NEWLINE]
 		<German>Nach einem [COLOR:140:255:40:255]&lt; RECHTSKLICK &gt;[COLOR_REVERT] auf ein Transportschiff gehen die Einheiten automatisch an Bord.</German>
 		<Italian>Clicca con il [COLOR:140:255:40:255]&lt; PULSANTE DESTRO &gt;[COLOR_REVERT] su un mezzo di trasporto per caricare automaticamente le unità a bordo.</Italian>
 		<Spanish>Hacer [COLOR:140:255:40:255]&lt; CLIC DERECHO &gt;[COLOR_REVERT] en un transporte embarcará directamente las unidades en él.</Spanish>
-		<Russian>[ЦВЕТ:140:255:40:255]&lt; КЛИК ПКМ &gt;[COLOR_REVERT] на транспорте автоматически загрузит в него юниты. (НЕ РАБОТАЕТ)</Russian>
+		<Russian>[COLOR:140:255:40:255]&lt; КЛИК ПКМ &gt;[COLOR_REVERT] на транспорте автоматически загрузит в него юниты. (НЕ РАБОТАЕТ)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_11</Tag>
@@ -993,7 +994,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; STRG + Zahl &gt;[COLOR_REVERT], um der gewählten Einheit die Zahl zuzuweisen. Beispiel: Drücken Sie [COLOR:140:255:40:255]&lt; STRG + 3 &gt;[COLOR_REVERT] wird die entsprechende Einheit ausgewählt, sobald Sie die [COLOR:140:255:40:255]&lt; 3 &gt;[COLOR_REVERT] drücken.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; CTRL + # &gt;[COLOR_REVERT] per assegnare l'unità selezionata al tasto #. Per esempio, premendo [COLOR:140:255:40:255]&lt; CTRL + 3 &gt;[COLOR_REVERT], ogni volta che si premerà il tasto [COLOR:140:255:40:255]&lt; 3 &gt;[COLOR_REVERT] quell'unità verrà automaticamente selezionata.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; CTRL + número &gt;[COLOR_REVERT] para vincular la unidad seleccionada a ese número. Por ejemplo: [COLOR:140:255:40:255]&lt; CTRL + 3 &gt;[COLOR_REVERT] hará que la unidad quede seleccionada automáticamente cada vez que se pulse el [COLOR:140:255:40:255]&lt; 3 &gt;[COLOR_REVERT].</Spanish>
-		<Russian>Нажмите [COLOR:140:255:40:255]&lt; CTRL + цифровая клавиша &gt;[COLOR_REVERT], чтобы привязать выбранный объект к этой клавише. Например: [COLOR:140:255:40:255]&lt; CTRL + 3 &gt;[COLOR_REVERT] сделает привяжет цифру [COLOR:140:255:40:255]&lt; 3 &gt;[COLOR_REVERT] к выбранному юниту.</Russian>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; CTRL + цифровая клавиша &gt;[COLOR_REVERT], чтобы привязать выбранный объект к этой клавише. Например: [COLOR:140:255:40:255]&lt; CTRL + 3 &gt;[COLOR_REVERT] привяжет цифру [COLOR:140:255:40:255]&lt; 3 &gt;[COLOR_REVERT] к выбранному юниту.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_21</Tag>
