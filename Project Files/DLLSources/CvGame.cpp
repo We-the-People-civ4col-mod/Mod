@@ -5431,7 +5431,18 @@ void CvGame::createBarbarianPlayer()
 {
 	if (getBarbarianPlayer() != NO_PLAYER) 
 		return; // we know him, it's done
-	
+
+	for (PlayerTypes eCandidate = FIRST_PLAYER; eCandidate < NUM_PLAYER_TYPES; ++eCandidate )
+	{
+		CvPlayerAI& kPlayer = GET_PLAYER(eCandidate);
+		if (!kPlayer.isEverAlive())  continue; //Civs dead all along don't count
+		if (kPlayer.getCivilizationInfo().getCivCategoryTypes() == CIV_CATEGORY_BARBARIAN )
+		{
+			setBarbarianPlayer(eCandidate);
+			return;
+		}
+	}
+
 	PlayerTypes eNewPlayer = getNextPlayerType();
 
 	if (eNewPlayer == NO_PLAYER)
@@ -5439,18 +5450,9 @@ void CvGame::createBarbarianPlayer()
 		FAssertMsg(false, "No more room to add the Barbarian player");
 		return; //no more room;
 	}
-	
-	LeaderHeadTypes eBarbLeader = (LeaderHeadTypes) GC.getDefineINT("BARBARIAN_LEADER");
-	CivilizationTypes eBarbCiv = (CivilizationTypes) GC.getDefineINT("BARBARIAN_CIVILIZATION");
 
-	
-	if (eBarbLeader == NO_LEADER || eBarbCiv == NO_CIVILIZATION)
-	{
-		FAssertMsg(false, "Check XML defintions of BARBARIAN_LEADER and BARBARIAN_CIVILIZATION ");
-		return; // No def
-	}
-	//all good, we can create him
-	addPlayer(eNewPlayer, eBarbLeader, eBarbCiv);
+	// BARBARIAN_LEADER and BARBARIAN_CIVILIZATION are always assumed to exist,see HardcodedEnumSetup.h
+	addPlayer(eNewPlayer, BARBARIAN_LEADER, BARBARIAN_CIVILIZATION);
 	setBarbarianPlayer(eNewPlayer);
 	TeamTypes eTeam = GET_PLAYER(getBarbarianPlayer()).getTeam();
 	for (int iI = 0; iI < MAX_TEAMS; iI++)
@@ -5705,6 +5707,17 @@ void CvGame::createChurchPlayer()
 	if (getChurchPlayer() != NO_PLAYER)
 		return; // we have the Church
 
+	for (PlayerTypes eCandidate = FIRST_PLAYER; eCandidate < NUM_PLAYER_TYPES; ++eCandidate)
+	{
+		CvPlayerAI& kPlayer = GET_PLAYER(eCandidate);
+		if (!kPlayer.isEverAlive())  continue; //Civs dead all along don't count
+		if (kPlayer.getCivilizationInfo().getCivCategoryTypes() == CIV_CATEGORY_CHURCH)
+		{
+			setChurchPlayer(eCandidate);
+			return;
+		}
+	}
+
 	
 	PlayerTypes eNewPlayer = getNextPlayerType();
 	if (eNewPlayer == NO_PLAYER)
@@ -5713,16 +5726,9 @@ void CvGame::createChurchPlayer()
 		return;
 	}
 	
-	LeaderHeadTypes eChurchLeader = (LeaderHeadTypes) GC.getDefineINT("CHURCH_LEADER");
-	CivilizationTypes eChurchCiv = (CivilizationTypes) GC.getDefineINT("CHURCH_CIVILIZATION");
-	if (eChurchLeader == NO_LEADER || eChurchCiv == NO_CIVILIZATION)
-	{
-		FAssertMsg(false, "Check XML defintions of CHURCH_LEADER and CHURCH_CIVILIZATION ");
-		return; // No def
-	}
 
-
-	addPlayer(eNewPlayer, eChurchLeader, eChurchCiv);
+	// CHURCH_LEADER and CHURCH_CIVILIZATION are assumed to exist, see HardcodedEnumSetup.h
+	addPlayer(eNewPlayer, CHURCH_LEADER, CHURCH_CIVILIZATION);
 	setChurchPlayer(eNewPlayer);
 	TeamTypes eTeam = GET_PLAYER(getChurchPlayer()).getTeam();
 	for (int iI = 0; iI < MAX_TEAMS; iI++)
