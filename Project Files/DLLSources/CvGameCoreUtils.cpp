@@ -2514,6 +2514,8 @@ void postLoadGameFixes()
 	{
 		CvPlayerAI& kPlayer = GET_PLAYER(ePlayer);
 
+		if (!kPlayer.isEverAlive()) continue; //Inactive from day one players do not count
+
 		if (kPlayer.getParent() != NO_PLAYER)
 		{
 			CvPlayer* kKing = kPlayer.getParentPlayer();
