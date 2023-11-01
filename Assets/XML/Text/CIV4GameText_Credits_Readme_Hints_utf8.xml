@@ -665,7 +665,7 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_26</Tag>
 		<English>[BOLD]Don't put troops on your first frigate![\BOLD][NEWLINE]When you get your first frigate, whether you buy it, build it, or get it from a quest or a Founding Father, the King is going to commandeer it for the Royal Navy. Don't worry. You'll get it back in ten turns. However if you put any of your soldiers aboard they'll be shanghaied into the Royal Marines. You'll never see those troops again.</English>
-		<Russian>[BOLD][COLOR_NEGATIVE_TEXT]Никогда не загружайте войска в свой первый фрегат![COLOR_REVERT][\BOLD][NEWLINE]Когда вы получаете свой первый фрегат, независимо от того, покупаете ли вы его, строите или получаете по заданию или от отца-основателя, Король собирается реквизировать его для Королевского флота. Но не волнуйтесь. Вы получите его обратно через десять ходов. Однако, если вы поместите на борт кого-нибудь из своих солдат, они будут переведены в Королевскую морскую пехоту и вы никогда больше не увидите эти войска.</Russian>
+		<Russian>[BOLD][COLOR_NEGATIVE_TEXT]Никогда не загружайте войска в свой первый фрегат![COLOR_REVERT][\BOLD] Когда вы получаете свой первый фрегат, независимо от того, покупаете ли вы его, строите или получаете по заданию или от отца-основателя, Король собирается реквизировать его для Королевского флота. Но не волнуйтесь. Вы получите его обратно через десять ходов. Однако, если вы поместите на борт кого-нибудь из своих солдат, они будут переведены в Королевскую морскую пехоту и вы никогда больше не увидите эти войска.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_27</Tag>
@@ -823,7 +823,7 @@ Viel Spass![NEWLINE]
 		<German>Halten Sie [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT], damit die Kolonie den ausgewählten Gegenstand auf unbestimmte Zeit baut.</German>
 		<Italian>Tieni premuto [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] per fare in modo che un insediamento costruisca un oggetto all'infinito...</Italian>
 		<Spanish>Mantener Pulsara la tecla [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] para hacer que el asentamiento construya un elemento indefinidamente.</Spanish>
-		<Russian>Удерживайте [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT], чтобы колония строила выбранный предмет бесконечно. (ПОКА НЕ РАБОТАЕТ)</Russian>
+		<Russian>Удерживайте [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT], чтобы колония строила выбранный предмет бесконечно. [COLOR_NEGATIVE_TEXT](ПОКА НЕ РАБОТАЕТ)[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_2</Tag>
@@ -904,7 +904,7 @@ Viel Spass![NEWLINE]
 		<German>Nach einem [COLOR:140:255:40:255]&lt; RECHTSKLICK &gt;[COLOR_REVERT] auf ein Transportschiff gehen die Einheiten automatisch an Bord.</German>
 		<Italian>Clicca con il [COLOR:140:255:40:255]&lt; PULSANTE DESTRO &gt;[COLOR_REVERT] su un mezzo di trasporto per caricare automaticamente le unità a bordo.</Italian>
 		<Spanish>Hacer [COLOR:140:255:40:255]&lt; CLIC DERECHO &gt;[COLOR_REVERT] en un transporte embarcará directamente las unidades en él.</Spanish>
-		<Russian>[COLOR:140:255:40:255]&lt; КЛИК ПКМ &gt;[COLOR_REVERT] на транспорте автоматически загрузит в него юниты. (НЕ РАБОТАЕТ)</Russian>
+		<Russian>[COLOR:140:255:40:255]&lt; КЛИК ПКМ &gt;[COLOR_REVERT] на транспорте автоматически загрузит в него юниты. [COLOR_NEGATIVE_TEXT](ПОКА НЕ РАБОТАЕТ)[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_11</Tag>
@@ -1030,7 +1030,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; STRG + B &gt;[COLOR_REVERT], um die Kartenansicht zu aktivieren.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; CTRL + B &gt;[COLOR_REVERT] per attivare/disattivare la visuale mappa semplificata.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; CTRL + B &gt;[COLOR_REVERT] para activar la vista del mapa limpio.</Spanish>
-		<Russian>Нажмите [COLOR:140:255:40:255]&lt; CTRL + B &gt;[COLOR_REVERT] для переключения режима пустой карты. (НЕ РАБОТАЕТ)</Russian>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; CTRL + B &gt;[COLOR_REVERT] для переключения режима пустой карты. [COLOR_NEGATIVE_TEXT](ПОКА НЕ РАБОТАЕТ)[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_25</Tag>
@@ -1039,7 +1039,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; STRG + R &gt;[COLOR_REVERT], um in die Ressourcen-Ansicht zu wechseln.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; CTRL + R &gt;[COLOR_REVERT] per visualizzare/nascondere la segnalazione risorse.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; CTRL + R &gt;[COLOR_REVERT] para activar las marcas de recursos.</Spanish>
-		<Russian>Нажмите [COLOR:140:255:40:255]&lt; CTRL + R &gt;[COLOR_REVERT] для вкл/выкл флага ресурсов. (НЕ РАБОТАЕТ)</Russian>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; CTRL + R &gt;[COLOR_REVERT] для вкл/выкл флага ресурсов. [COLOR_NEGATIVE_TEXT](ПОКА НЕ РАБОТАЕТ)[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_26</Tag>
@@ -1075,7 +1075,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; ALT + Q &gt;[COLOR_REVERT], um das Spiel zu verlassen. Im Multiplayer-Modus übernimmt nun die KI die Kontrolle über Ihre Kolonien.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; ALT + Q &gt;[COLOR_REVERT] per ritirarti dalla partita. Nel multigiocatore, il controllo della tua colonia viene automaticamente assegnato alla IA.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; ALT + Q &gt;[COLOR_REVERT] para retirarse de la partida. En el modo para varios jugadores esto le dará el control de las colonias a la IA.</Spanish>
-		<Russian>Нажмите [COLOR:140:255:40:255]&lt; ALT + Q &gt;[COLOR_REVERT] для выхода из игры. В многопользовательском режиме это автоматически передает контроль над вашими колониями ИИ. (НЕ РАБОТАЕТ)</Russian>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; ALT + Q &gt;[COLOR_REVERT] для выхода из игры. В многопользовательском режиме это автоматически передает контроль над вашими колониями ИИ. [COLOR_NEGATIVE_TEXT](ПОКА НЕ РАБОТАЕТ)[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_30</Tag>
@@ -1300,7 +1300,7 @@ Viel Spass![NEWLINE]
 		<German>Halten Sie die [COLOR:140:255:40:255]&lt; UMSCHALT-Taste &gt;[COLOR_REVERT] gedrückt und klicken Sie auf ein Geländefeld, um ein Kontextmenü zu öffnen.</German>
 		<Italian>Tieni premuto il tasto [COLOR:140:255:40:255]&lt; MAIUSC &gt;[COLOR_REVERT] e clicca su una casella per aprire un menu contestuale.</Italian>
 		<Spanish>Mantener Pulsara la tecla [COLOR:140:255:40:255]&lt; MAYÚS &gt;[COLOR_REVERT] y hacer clic en una casilla para abrir un menú contextual.</Spanish>
-		<Russian>Удерживайте [COLOR:140:255:40:255]&lt; SHIFT &gt;[COLOR_REVERT] и щелкните на клетке, чтобы открыть контекстное меню. (НЕ РАБОТАЕТ)</Russian>
+		<Russian>Удерживайте [COLOR:140:255:40:255]&lt; SHIFT &gt;[COLOR_REVERT] и щелкните на клетке, чтобы открыть контекстное меню. [COLOR_NEGATIVE_TEXT](ПОКА НЕ РАБОТАЕТ)[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_64</Tag>

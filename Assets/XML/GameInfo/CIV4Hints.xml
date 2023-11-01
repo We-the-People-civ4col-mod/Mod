@@ -108,9 +108,9 @@
         <HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_34</Description>
         </HintInfo>
-        <HintInfo>
+        <!--<HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_35</Description>
-        </HintInfo>
+        </HintInfo>-->
         <HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_36</Description>
         </HintInfo>
@@ -135,9 +135,9 @@
         <HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_43</Description>
         </HintInfo>
-        <HintInfo>
+        <!--<HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_44</Description>
-        </HintInfo>
+        </HintInfo>-->
         <HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_45</Description>
         </HintInfo>
@@ -168,13 +168,13 @@
         <HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_54</Description>
         </HintInfo>
-        <HintInfo>
+        <!--<HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_55</Description>
-        </HintInfo>
+        </HintInfo>-->
         <HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_56</Description>
         </HintInfo>
-        <HintInfo>
+        <!--<HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_57</Description>
         </HintInfo>
         <HintInfo>
@@ -188,13 +188,13 @@
         </HintInfo>
         <HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_61</Description>
-        </HintInfo>
+        </HintInfo>-->
         <HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_62</Description>
         </HintInfo>
-        <HintInfo>
+        <!--<HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_63</Description>
-        </HintInfo>
+        </HintInfo>-->
         <HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_64</Description>
         </HintInfo>
