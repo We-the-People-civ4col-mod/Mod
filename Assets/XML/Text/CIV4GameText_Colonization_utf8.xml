@@ -666,6 +666,11 @@
         <Russian>Ставка налога : %d1%%</Russian>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_MISC_BRIBE_RATE_FLAT</Tag>
+        <English>Our tax rate is like our ships, firmly docked!</English>
+        <French>Notre taxe est arrimée solide à quai, comme nos navires ! Elle ne prendra pas le large !</French>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TAX_RATE_LOWERED</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] has lowered your tax rate from %d2_old_rate%% to %d3_new_rate%%</English>
         <French>[COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] a diminué votre taux d?imposition. Il passe de %d2_old_rate%% à %d3_new_rate%%</French>

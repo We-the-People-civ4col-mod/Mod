@@ -92,7 +92,10 @@ class CvPortRoyalScreen:
 		if ( CyGame().isPitbossHost() ):
 			return
 
-		if gc.getPlayer(gc.getGame().getActivePlayer()).getParent() == PlayerTypes.NO_PLAYER:
+		self.player_id = gc.getGame().getActivePlayer()
+		self.player = gc.getPlayer(self.player_id)
+
+		if self.player.getParent() == PlayerTypes.NO_PLAYER:
 			return
 
 		screen = self.getScreen()
@@ -919,16 +922,7 @@ class CvPortRoyalScreen:
 				return localText.getText("TXT_KEY_EU_BOYCOTT_MESSAGE", (self.getBoycottPrice(iData2), gc.getYieldInfo(iData2).getDescription()))
 			# R&R, Robert Surcouf, No More Variables Hidden game option START
 			elif iData1 == self.HELP_TAX_RATE:
-				if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_MORE_VARIABLES_HIDDEN):
-					# R&R, vetiarvind, Price dependent tax increase - START
-					return localText.getText("TXT_KEY_TAX_BAR", (self.getTotalYieldsScore(), self.getTaxTreshold(), gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar(),self.getChanceProb()/10,self.getChanceProb()%10))				
-					#return localText.getText("TXT_KEY_TAX_BAR", (self.getTotalYieldsTraded(), self.getTaxTreshold(), gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar(),self.getChanceProb()/10,self.getChanceProb()%10))				
-					# R&R, vetiarvind, Price dependent tax increase - END
-				else:
-					return localText.getText("TXT_KEY_MISC_TAX_RATE", (player.getTaxRate(), player.NBMOD_GetMaxTaxRate())).upper() + u"</font>"
-					#return localText.getText("TXT_KEY_TAX_BAR", (self.getTotalYieldsTraded(), self.getTaxTreshold(), gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar()))
-					#return localText.getText("TXT_KEY_TAX_BAR", (0, self.getTaxTreshold(), gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar()))
-			# R&R, Robert Surcouf, No More Variables Hidden game option END	
+				return localText.getText("TXT_KEY_MISC_BRIBE_RATE_FLAT", ())
 		return u""
 	
 	
@@ -1436,70 +1430,3 @@ class CvPortRoyalScreen:
 		iBoycottPrice += iBoycottPrice * player.getTaxRate() / 100
 	
 		return iBoycottPrice
-	
-	## R&R, vetiarvind, Price dependent tax increase - START	
-	def getYieldScore(self, iYield):
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
-		# WTP, ray fixing that the value is read from wrong player
-		playerEurope = gc.getPlayer(player.getParent())
-		iScore = playerEurope.getYieldScoreTotalINT(iYield)
-		return iScore
-	
-	def getTotalYieldsScore(self):
-		iTotalScore = 0
-		for iYield in range(YieldTypes.NUM_YIELD_TYPES):
-			iTotalScore += self.getYieldScore(iYield)
-		return iTotalScore
-	## R&R, vetiarvind, Price dependent tax increase - END
-	
-	# R&R, Robert Surcouf, No More Variables Hidden game option START
-	def getYieldTraded(self, iYield):
-		iTraded = 0
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
-		#iTraded += player.getYieldTradedTotal(iYield)
-		iTraded += player.getYieldTradedTotalINT(iYield)
-		return iTraded
-		
-	def getTotalYieldsTraded(self):
-		iTotalTraded = 0
-		for iYield in range(YieldTypes.NUM_YIELD_TYPES):
-			iTotalTraded += self.getYieldTraded(iYield)
-		return iTotalTraded
-	
-	def getAIattitudeVal(self):	
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
-		playerEurope = gc.getPlayer(player.getParent())
-		iKingAttitude = player.AI_getAttitudeVal(playerEurope.getID())
-		return iKingAttitude
-		
-	def getTaxMultiplier(self):
-		iMultiplier = 100
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
-		playerEurope = gc.getPlayer(player.getParent())
-		for i in range(gc.getNumTraitInfos()):
-			if player.hasTrait(i):
-				iMultiplier += + gc.getTraitInfo(i).getTaxRateThresholdModifier();
-		iMultiplier += player.getTaxRate()* gc.getDefineINT("TAX_TRADE_THRESHOLD_TAX_RATE_PERCENT") / 100
-		#iMultiplier += self.getAIattitudeVal()  * gc.getDefineINT("TAX_TRADE_THRESHOLD_ATTITUDE_PERCENT")
-		return iMultiplier
-	
-	def getTaxTreshold(self):
-		iThreshold = (max(self.getTaxMultiplier(),gc.getDefineINT("MAX_TAX_TRADE_MULTIPLIER") )* gc.getDefineINT("TAX_TRADE_THRESHOLD")) * gc.getGameSpeedInfo(gc.getGame().getGameSpeedType()).getGrowthPercent() / 10000
-		#iThreshold /= 100
-		return iThreshold
-	
-	def getChanceModifierFromKingAttitude(self):
-		iChanceModifier= self.getAIattitudeVal()  * gc.getDefineINT("TAX_TRADE_INCREASE_CHANCE_KING_ATTITUDE_BASE")
-		if iChanceModifier > 50:
-			iChanceModifier= 50
-		elif iChanceModifier <- 50:
-			iChanceModifier= -50
-		return iChanceModifier
-	
-	def getChanceProb(self):
-		iChance =(1000* gc.getDefineINT("TAX_INCREASE_CHANCE")) / (100+self.getChanceModifierFromKingAttitude())
-		if iChance > 1000:
-			iChance = 1000
-		return iChance
-	# R&R, Robert Surcouf, No More Variables Hidden game option END
-
