@@ -5429,41 +5429,53 @@ void CvGame::doTurn()
 // < JAnimals Mod Start >
 void CvGame::createBarbarianPlayer()
 {
-	if (getBarbarianPlayer() == NO_PLAYER)
+	if (getBarbarianPlayer() != NO_PLAYER) 
+		return; // we know him, it's done
+	
+	PlayerTypes eNewPlayer = getNextPlayerType();
+
+	if (eNewPlayer == NO_PLAYER)
 	{
-		PlayerTypes eNewPlayer = getNextPlayerType();
-		if (eNewPlayer != NO_PLAYER)
+		FAssertMsg(false, "No more room to add the Barbarian player");
+		return; //no more room;
+	}
+	
+	LeaderHeadTypes eBarbLeader = (LeaderHeadTypes) GC.getDefineINT("BARBARIAN_LEADER");
+	CivilizationTypes eBarbCiv = (CivilizationTypes) GC.getDefineINT("BARBARIAN_CIVILIZATION");
+
+	
+	if (eBarbLeader == NO_LEADER || eBarbCiv == NO_CIVILIZATION)
+	{
+		FAssertMsg(false, "Check XML defintions of BARBARIAN_LEADER and BARBARIAN_CIVILIZATION ");
+		return; // No def
+	}
+	//all good, we can create him
+	addPlayer(eNewPlayer, eBarbLeader, eBarbCiv);
+	setBarbarianPlayer(eNewPlayer);
+	TeamTypes eTeam = GET_PLAYER(getBarbarianPlayer()).getTeam();
+	for (int iI = 0; iI < MAX_TEAMS; iI++)
+	{
+		if (iI != eTeam)
 		{
-			LeaderHeadTypes eBarbLeader = (LeaderHeadTypes) GC.getDefineINT("BARBARIAN_LEADER");
-			CivilizationTypes eBarbCiv = (CivilizationTypes) GC.getDefineINT("BARBARIAN_CIVILIZATION");
-			if (eBarbLeader != NO_LEADER && eBarbCiv != NO_CIVILIZATION)
+			if (GET_TEAM((TeamTypes)iI).isAlive())
 			{
-				addPlayer(eNewPlayer, eBarbLeader, eBarbCiv);
-				setBarbarianPlayer(eNewPlayer);
-				TeamTypes eTeam = GET_PLAYER(getBarbarianPlayer()).getTeam();
-				for (int iI = 0; iI < MAX_TEAMS; iI++)
+				// R&R, ray, changes to Wild Animals
+				// if (!GET_TEAM(eTeam).isAtWar((TeamTypes)iI))
+				// Natives and Kings will not Fight Animals
+				if (!GET_TEAM((TeamTypes)iI).hasNativePlayer() && !GET_TEAM((TeamTypes)iI).hasEuropePlayer() && !GET_TEAM(eTeam).isAtWar((TeamTypes)iI))
 				{
-					if (iI != eTeam)
-					{
-						if (GET_TEAM((TeamTypes)iI).isAlive())
-						{
-							// R&R, ray, changes to Wild Animals
-							// if (!GET_TEAM(eTeam).isAtWar((TeamTypes)iI))
-							// Natives and Kings will not Fight Animals
-							if (!GET_TEAM((TeamTypes)iI).hasNativePlayer() && !GET_TEAM((TeamTypes)iI).hasEuropePlayer() && !GET_TEAM(eTeam).isAtWar((TeamTypes)iI))
-							{
-								GET_TEAM(eTeam).declareWar(((TeamTypes)iI), false, GET_TEAM(eTeam).AI_getWarPlan((TeamTypes)iI));
-							}
-							if (!GET_TEAM(eTeam).isPermanentWarPeace((TeamTypes)iI))
-							{
-								GET_TEAM(eTeam).setPermanentWarPeace(((TeamTypes)iI), true);
-							}
-						}
-					}
+					GET_TEAM(eTeam).declareWar(((TeamTypes)iI), false, GET_TEAM(eTeam).AI_getWarPlan((TeamTypes)iI));
+				}
+				if (!GET_TEAM(eTeam).isPermanentWarPeace((TeamTypes)iI))
+				{
+					GET_TEAM(eTeam).setPermanentWarPeace(((TeamTypes)iI), true);
 				}
 			}
 		}
 	}
+	
+	
+
 }
 
 void CvGame::createAnimalsLand()
@@ -5690,33 +5702,42 @@ void CvGame::createAnimalsSea()
 // R&R, ray, the Church - START
 void CvGame::createChurchPlayer()
 {
-	if (getChurchPlayer() == NO_PLAYER)
+	if (getChurchPlayer() != NO_PLAYER)
+		return; // we have the Church
+
+	
+	PlayerTypes eNewPlayer = getNextPlayerType();
+	if (eNewPlayer == NO_PLAYER)
 	{
-		PlayerTypes eNewPlayer = getNextPlayerType();
-		if (eNewPlayer != NO_PLAYER)
+		FAssertMsg(false, "No more room to add the Church player");
+		return;
+	}
+	
+	LeaderHeadTypes eChurchLeader = (LeaderHeadTypes) GC.getDefineINT("CHURCH_LEADER");
+	CivilizationTypes eChurchCiv = (CivilizationTypes) GC.getDefineINT("CHURCH_CIVILIZATION");
+	if (eChurchLeader == NO_LEADER || eChurchCiv == NO_CIVILIZATION)
+	{
+		FAssertMsg(false, "Check XML defintions of CHURCH_LEADER and CHURCH_CIVILIZATION ");
+		return; // No def
+	}
+
+
+	addPlayer(eNewPlayer, eChurchLeader, eChurchCiv);
+	setChurchPlayer(eNewPlayer);
+	TeamTypes eTeam = GET_PLAYER(getChurchPlayer()).getTeam();
+	for (int iI = 0; iI < MAX_TEAMS; iI++)
+	{
+		if (iI != eTeam)
 		{
-			LeaderHeadTypes eChurchLeader = (LeaderHeadTypes) GC.getDefineINT("CHURCH_LEADER");
-			CivilizationTypes eChurchCiv = (CivilizationTypes) GC.getDefineINT("CHURCH_CIVILIZATION");
-			if (eChurchLeader != NO_LEADER && eChurchCiv != NO_CIVILIZATION)
+			// set permanent peace with all Europeans and make contact
+			if (GET_TEAM((TeamTypes)iI).isAlive() && !GET_TEAM((TeamTypes)iI).hasNativePlayer())
 			{
-				addPlayer(eNewPlayer, eChurchLeader, eChurchCiv);
-				setChurchPlayer(eNewPlayer);
-				TeamTypes eTeam = GET_PLAYER(getChurchPlayer()).getTeam();
-				for (int iI = 0; iI < MAX_TEAMS; iI++)
-				{
-					if (iI != eTeam)
-					{
-						// set permanent peace with all Europeans and make contact
-						if (GET_TEAM((TeamTypes)iI).isAlive() && !GET_TEAM((TeamTypes)iI).hasNativePlayer())
-						{
-							GET_TEAM(eTeam).setPermanentWarPeace(((TeamTypes)iI), true);
-							GET_TEAM(eTeam).meet(((TeamTypes)iI), false);
-						}
-					}
-				}
+				GET_TEAM(eTeam).setPermanentWarPeace(((TeamTypes)iI), true);
+				GET_TEAM(eTeam).meet(((TeamTypes)iI), false);
 			}
 		}
 	}
+
 }
 // R&R, ray, the Church - END
 
