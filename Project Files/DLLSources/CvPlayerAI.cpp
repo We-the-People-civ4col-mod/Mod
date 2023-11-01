@@ -16633,6 +16633,10 @@ bool CvPlayerAI::AI_isStrategicYield(YieldTypes eYield) const
 
 int CvPlayerAI::AI_getAvailableGold(PurchaseType::Category ePurchaseType, int iPrice, int iAmount) const
 {
+	// Port Royal is unsupported by the AI atm
+	if (ePurchaseType == PurchaseType::SMUGGLING)
+		return 0;
+
 	// TODO: check against strategy
 				// TAC - AI Military Buildup - koma13
 	//if (!AI().AI_isStrategy(STRATEGY_MILITARY_BUILDUP))

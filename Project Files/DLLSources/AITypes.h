@@ -10,8 +10,10 @@ namespace PurchaseType
 		CROSS_PRODUCER,
 		CHURCH,
 		MILITARY,
-		SHIP,
+		MERCHANT_MARINE,
+		NAVY,
 		IMMIGRANT,
-		SMUGGLING
+		SMUGGLING,
+		PIRACY
 	};
 }

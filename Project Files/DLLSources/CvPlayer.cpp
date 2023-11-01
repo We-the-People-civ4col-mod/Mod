@@ -22492,7 +22492,7 @@ void CvPlayer::checkForPirates()
 	if (!isHuman())
 	{
 		// TAC - AI Military Buildup - koma13
-		if (!AI().AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
+		if (AI().AI_isAvailableGold(PurchaseType::PIRACY, pricetopay, 1))
 		{
 			//create the pirate ship
 			UnitTypes PirateShipType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_PIRATE_FRIGATE"));
@@ -23677,8 +23677,9 @@ void CvPlayer::doAILogicforUsedShipDeals()
 	int iShipPrice = getUsedShipPrice(iShipClassTypeID);
 
 	// now let us check if the need to decide if it should be acquired
-	bool bShipShouldBeAcquired = false;
-
+	bool bMerchantShipShouldBeAcquired = false;
+	bool bNavyShipShouldBeAcquired = false;
+	
 	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iShipClassTypeID);
 	if(eUnit != NO_UNIT)
 	{
@@ -23690,7 +23691,7 @@ void CvPlayer::doAILogicforUsedShipDeals()
 		{
 		    if (iNumTransportShips < iNumCities)
 			{
-				bShipShouldBeAcquired = true;
+				bMerchantShipShouldBeAcquired = true;
 			}
 		}
 		// for Combat Ships, we check number of Transport Ships
@@ -23700,14 +23701,17 @@ void CvPlayer::doAILogicforUsedShipDeals()
 			// but only buy Combat Ships if enough Transport Ships are available
 			if (iNumCombatShips < iNumTransportShips && iNumTransportShips >= iNumCities)
 			{
-				bShipShouldBeAcquired = true;
+				bNavyShipShouldBeAcquired = true;
 			}
 		}
 	}
 
+	if (bMerchantShipShouldBeAcquired && !AI().AI_isAvailableGold(PurchaseType::MERCHANT_MARINE, iShipPrice, 1)) return;
+	if (bNavyShipShouldBeAcquired && !AI().AI_isAvailableGold(PurchaseType::NAVY, iShipPrice, 1)) return;
+
 	// ok, let us finally buy it
 	// also reset the counter so AI will also have to wait for next bargain
-	if (bShipShouldBeAcquired)
+	if (bMerchantShipShouldBeAcquired || bNavyShipShouldBeAcquired)
 	{
 		acquireUsedShip(iShipClassTypeID, iShipPrice);
 		resetCounterForUsedShipDeals();
@@ -24017,7 +24021,7 @@ void CvPlayer::doAILogicforForeignImmigrants()
 
 	// we acquire if we have at least double the gold
 	// Timers and such ensure that this otherwise does not happen to often anyways
-	if (getGold() > iForeignImmigrantPrice * 2)
+	if (getGold() > AI().AI_isAvailableGold(PurchaseType::IMMIGRANT, iForeignImmigrantPrice, 1))
 	{
 		acquireForeignImmigrant(iForeignImmigrantTypeID, iForeignImmigrantPrice);
 		resetCounterForForeignImmigrantsDeals(); // here we reset our own timer
