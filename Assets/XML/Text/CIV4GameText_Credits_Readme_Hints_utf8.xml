@@ -665,6 +665,7 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_26</Tag>
 		<English>[BOLD]Don't put troops on your first frigate![\BOLD][NEWLINE]When you get your first frigate, whether you buy it, build it, or get it from a quest or a Founding Father, the King is going to commandeer it for the Royal Navy. Don't worry. You'll get it back in ten turns. However if you put any of your soldiers aboard they'll be shanghaied into the Royal Marines. You'll never see those troops again.</English>
+		<Russian>[BOLD][COLOR_NEGATIVE_TEXT]Никогда не загружайте войска в свой первый фрегат![COLOR_REVERT][\BOLD] Когда вы получаете свой первый фрегат, независимо от того, покупаете ли вы его, строите или получаете по заданию или от отца-основателя, Король собирается реквизировать его для Королевского флота. Но не волнуйтесь. Вы получите его обратно через десять ходов. Однако, если вы поместите на борт кого-нибудь из своих солдат, они будут переведены в Королевскую морскую пехоту и вы никогда больше не увидите эти войска.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_27</Tag>
@@ -737,6 +738,7 @@ Viel Spass![NEWLINE]
 		<German>Wenn Sie versuchen, eine Kolonie zu nahe an einer Ureinwohner-Siedlung zu errichten, bietet Ihnen der einheimische Häuptling vielleicht das Land, das Sie beanspruchen, zum Kauf an. Wenn Sie sich weigern zu zahlen, so hat das eindeutig negative Auswirkungen auf Ihre Beziehung zu den Ureinwohnern.</German>
 		<Italian>Se provi a costruire una colonia troppo vicino a un insediamento di nativi, il capo potrebbe chiederti di acquistare la terra che rivendichi. Puoi naturalmente rifiutarti di pagare, ma ciò peggiorerà le relazioni con i nativi.</Italian>
 		<Spanish>Si intentáis construir una colonia demasiado cerca de un asentamiento indígena, el jefe del lugar puede que os exija comprar la tierra de las que os estáis apoderando. Obviamente, os podéis negar a pagar, pero seguro que ello empeorará vuestra relación con los Nativos.</Spanish>
+		<Russian>Если вы попытаетесь построить колонию слишком близко к поселению индейцев, местный вождь может потребовать от вас выкупить землю, на которую вы претендуете. Вы, конечно, можете отказаться платить, но это гарантированно ухудшит их отношение к вам.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_39</Tag>
@@ -745,6 +747,7 @@ Viel Spass![NEWLINE]
 		<German>Waren benötigen Lagerräume. Schiffe brauchen Liegeplätze. Soldaten brauchen Kasernen. Lagerhäuser, Docks und Festungen sind notwendig, um die Menschen zu beschäftigen und zu schützen.[NEWLINE]Die Kapazitäten müssen mit dem Wachstum der Kolonie mithalten und daher Gebäude regelmäßig modernisiert werden.[NEWLINE]Die Infrastruktur ist vielleicht nicht die aufregendste Seite der Politik, aber wenn sie vernachlässigt wird, kommen die privaten und öffentlichen Geschäfte zum Stillstand.</German>
 		<Italian>Senza un magazzino, il tuo insediamento può mettere da parte solo 100 unità di qualsiasi bene, a parte il cibo. Un magazzino aumenta la capacità a 200. L'espansione del magazzino porta la capacità del tuo insediamento a 300.</Italian>
 		<Spanish>Sin un Almacén, vuestro asentamiento solo puede guardar 100 de cualquier tipo de mercancías, excepto Alimentos. Un Almacén aumenta la capacidad a 200. El Almacén ampliado sube la capacidad de almacenamiento del asentamiento a 300.</Spanish>
+		<Russian>Товар нуждается в местах для хранения. Кораблям нужны причалы. Солдатам нужны казармы. Склады, доки и форты необходимы для обеспечения занятости и безопасности ваших людей. По мере роста колонии ёмкость должна увеличиваться. Здания нуждаются в регулярном обновлении. Инфраструктура, возможно, не самая захватывающая сторона политики, но если ею пренебрегать, бизнес, частный и государственный, застопорится.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_40</Tag>
@@ -753,6 +756,7 @@ Viel Spass![NEWLINE]
 		<German>Wenn Sie in Europa Einheiten rekrutieren, die Güter benötigen, um ihrem Beruf nachzugehen (etwa einen Offizier oder einen Routinierten Späher), werden diese Einheiten voll ausgerüstet - mit den notwendigen Pferden und Schusswaffen - geliefert.</German>
 		<Italian>Quando recluti in Europa unità che solitamente hanno bisogno di beni per intraprendere la professione, come per soldati veterani o scout esperti, arriveranno completamente equipaggiati con le armi e i cavalli di cui hanno bisogno.</Italian>
 		<Spanish>Cuando reclutéis unidades de Europa que suelan exigir mercancías con las que llevar a cabo su profesión, como el Soldado veterano o el Batidor curtido, éstas aparecerán completamente equipadas con todos los Caballos y Mosquetes que necesiten.</Spanish>
+		<Russian>В Европе, когда вы набираете отряды с профессией, требующей товаров, например, солдат-ветеран или опытный разведчик, они полностью оснащены всем необходимым: лошадьми и оружием, провизией и порохом.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_41</Tag>
@@ -761,10 +765,11 @@ Viel Spass![NEWLINE]
 		<German>Wenn Sie Ihre erste Siedlung errichten, ist es immer sinnvoll, diese so nah wie möglich an Ihrer Route nach Europa anzulegen. Das bedeutet, daß Ihre Schiffe benötigen weniger lange für die Reise zwischen Kolonie und Mutterland brauchen. Zudem sinkt auch die Wahrscheinlichkeit, dass sie von gegnerischen Schiffen angegriffen werden.</German>
 		<Italian>Quando costruisci il tuo primo insediamento è sempre una buona idea costruirlo il più vicino possibile alla tua rotta per l'Europa. In questo modo le tue navi spenderanno meno tempo in viaggio tra la colonia e la madrepatria, riducendo le probabilità di venire attaccate dalle navi nemiche.</Italian>
 		<Spanish>A la hora de construir el primer asentamiento, siempre es una buena idea hacerlo lo más cerca posible de la ruta con Europa. Esto supone que vuestros barcos pasarán menos tiempo en los tránsitos entre la colonia y la madre patria, y reducir la posibilidad de ser atacados por naves enemigas.</Spanish>
+		<Russian>При строительстве вашего первого поселения всегда полезно держаться как можно ближе к Европе. Ваши корабли будут тратить меньше времени в пути между колонией и метрополией, что уменьшит вероятность нападения вражеских кораблей. Располагайтесь возле обычных береговых плиток, а не у мелководного побережья. В противном случае, когда у вас появятся более крупные корабли, они не смогут зайти в порт. Возможно, потребуется некоторое временя, чтобы найти безопасную гавань для вашего поселения.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_42</Tag>
-		<English>When building your first settlement, it's always a good idea to keep as close to Europe as possible. Your ships will spend less time in transit between colony and mother country, lessening the chance of being attacked by enemy ships. Settle beside coast tiles rather than shallow coast. Otherwise when you get larger ships they won't be able to enter your port. It may take some searching to find a safe harbour for your settlement.</English>
+		<English>When you have enough gold for a new ship or soldier, ask the King first. You'll get a better deal. The King is often generous with a small colony. [NEWLINE]It's only when your population grows and your cities spread out that the King and your Native neighbours start to worry.</English>
 		<French>Lorsque vous fondez votre première colonie, il est toujours judicieux de le faire le plus près possible de votre voie d'accès à l'Europe. Ainsi, vos navires passeront moins de temps en mer entre votre colonie et votre patrie, réduisant le risque qu'ils soient assaillis par un navire ennemi.</French>
 		<German>Wenn Sie Ihre erste Siedlung errichten, ist es immer sinnvoll, diese so nah wie möglich an Ihrer Route nach Europa anzulegen. Das bedeutet, daß Ihre Schiffe benötigen weniger lange für die Reise zwischen Kolonie und Mutterland brauchen. Zudem sinkt auch die Wahrscheinlichkeit, dass sie von gegnerischen Schiffen angegriffen werden.</German>
 		<Italian>Quando costruisci il tuo primo insediamento è sempre una buona idea costruirlo il più vicino possibile alla tua rotta per l'Europa. In questo modo le tue navi spenderanno meno tempo in viaggio tra la colonia e la madrepatria, riducendo le probabilità di venire attaccate dalle navi nemiche.</Italian>
@@ -777,10 +782,11 @@ Viel Spass![NEWLINE]
 		<German>Galeonen sind die besten verfügbaren Transportschiffe und die einzigen, die Schatzeinheiten nach Europa bringen können. Allerdings können sie keine anderen Einheiten transportieren.</German>
 		<Italian>I galeoni sono le migliori navi da trasporto disponibili e sono le uniche in grado di trasportare i tesori in Europa.</Italian>
 		<Spanish>Los Galeones son los mejores barcos de transporte y los únicos capaces de llevar unidades de Tesoro a Europa. Por otro lado, no pueden transportar otros tipos de unidades.</Spanish>
+		<Russian>Галеоны — одни из лучших транспортных кораблей и единственные корабли, способные доставлять сокровища в Европу. Однако они не могут перевозить другие юниты. Как только у вас будет достаточно сокровищ, король может предложить вам специальную цену за галеон для их перевозки, но он подождет, пока у вас не будет достаточно золота.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_45</Tag>
-		<English>To load goods onto a transport, you must move the transport unit into the same tile as the goods and press the "Load Goods" icon. You can also do it from the "Transport" section of the Settlement Screen. You can unload goods one of two ways - by selecting the good you would like to unload from the unit stack and pressing "Unload" from the orders display or by activating the transport unit and clicking "Unload All." You can only unload goods in settlements (or in Europe).Soldiers need guns and gunpowder. </English>
+		<English>To load goods onto a transport, you must move the transport unit into the same tile as the goods and press the "Load Goods" icon. You can also do it from the "Transport" section of the Settlement Screen. You can unload goods one of two ways - by selecting the good you would like to unload from the unit stack and pressing "Unload" from the orders display or by activating the transport unit and clicking "Unload All." You can only unload goods in settlements (or in Europe).</English>
 		<French>Pour charger des marchandises dans une unité de transport, vous devez déplacer cette dernière sur la même case que les marchandises puis cliquer sur l'icône Charger des marchandises. Vous pouvez également le faire depuis l'espace Transport de l'écran de colonie.</French>
 		<German>Um Güter auf ein Transportmittel zu laden, müssen Sie die Transporteinheit auf dasselbe Geländefeld wie die Güter bewegen und auf "Beladen" klicken. Dies ist ebenfalls im Menü "Transport" im Siedlungsbildschirm möglich.</German>
 		<Italian>Per caricare dei beni su un trasporto devi prima spostare l'unità da trasporto nella stessa casella in cui si trovano i beni, per poi cliccare sull'icona "Carica beni". Puoi anche farlo dalla sezione "Trasporti" nella schermata dell'insediamento.</Italian>
@@ -793,6 +799,7 @@ Viel Spass![NEWLINE]
 		<German>Sie können Güter auf zwei verschiedene Arten entladen : indem Sie das gewünschte Gut aus den Einheiten auswählen und in der Befehlsanzeige "Entladen" anklicken oder indem Sie die Transporteinheit aktivieren und "Alle entladen" anklicken. Sie können Güter nur in Siedlungen (oder in Europa) entladen.</German>
 		<Italian>Puoi scaricare i beni in due modi: selezionando il bene che vuoi scaricare dal gruppo e scegliendo "Scarica" nella finestra degli ordini, oppure attivando l'unità di trasporto e cliccando su "Scarica tutto". Puoi scaricare i beni solo negli insediamenti (o in Europa).</Italian>
 		<Spanish>Hay dos maneras de descargar mercancías: seleccionando la mercancía que os gustaría descargar y pulsando "Desembarcar" en el visor de órdenes; o activando la unidad de transporte y haciendo clic en "Desembarcar todas". Solo podéis descargar mercancías en los asentamientos (o en Europa).</Spanish>
+		<Russian>Первопроходцам и разведчикам нужны провизия, а также инструменты и лошади. Чтобы снизить затраты, дом пекаря и кузница должны быть среди ваших первых зданий.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_48</Tag>
@@ -801,14 +808,22 @@ Viel Spass![NEWLINE]
 		<German>Sie können nicht direkt neben einer anderen europäischen Siedlung eine Siedlung errichten. Direkt neben einer Ureinwohner-Siedlung ist dies zwar möglich, Sie müssen jedoch entweder für das Land, das Sie beanspruchen, bezahlen oder das Risiko eingehen, sich den Zorn der Ureinwohner zuzuziehen.</German>
 		<Italian>Non puoi costruire un insediamento adiacente a un altro insediamento europeo. Però puoi costruirlo direttamente adiacente a un insediamento nativo. Dovrai pagare per la terra che occupi, oppure rischiare di scatenare le loro ire.</Italian>
 		<Spanish>No podéis construir un asentamiento justo al lado de otro asentamiento europeo. No obstante, podéis construirlo al lado de un asentamiento indígena. Tendréis que pagar por cada tierra que les quitéis u os arriesgáis a despertar su ira.</Spanish>
+		<Russian>Вы не можете построить поселение рядом с другим европейским поселением, но вы можете это сделать рядом с любой деревней индейцев. Однако вам придется заплатить за каждую часть их земли, на которую вы претендуете. Иначе вы рискуете навлечь на себя их гнев.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HINT_49</Tag>
+		<English>They brought us sticks of the cotton candy thread and parrots and other little things which it would be tedious to list, and exchanged everything for whatever we offered them.[NEWLINE]--- Christopher Columbus, about Arawak Indians (October 13, 1492)</English>
+		<German>Sie sind naiv und großzügig mit ihrem Eigentum. Wenn man um etwas bittet, das sie besitzen, sagen sie nie nein.[NEWLINE]--- Christoph Kolumbus, über die Arawak-Indianer auf den Bahamas</German>
+		<Russian>Они приносили нам палочки сахарной ваты, попугаев и другие мелочи, перечислять которые было бы утомительно, и обменивали их на все, что мы им предлагали.[NEWLINE] --- Христофор Колумб об индейцах араваках на Багамах (13 октября 1492 г.)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_1</Tag>
-		<English>They brought us sticks of the cotton candy thread and parrots and other little things which it would be tedious to list, and exchanged everything for whatever we offered them.[NEWLINE]--- Christopher Columbus, about Arawak Indians (October 13, 1492)</English>
+		<English>Hold [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] to make the colony build the chosen item indefinitely.</English>
 		<French>Maintenez la touche [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] enfoncée pour que la colonie construise indéfiniment l'élément choisi.</French>
-		<German>Sie sind naiv und großzügig mit ihrem Eigentum. Wenn man um etwas bittet, das sie besitzen, sagen sie nie nein.[NEWLINE]--- Christoph Kolumbus, über die Arawak-Indianer auf den Bahamas</German>
+		<German>Halten Sie [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT], damit die Kolonie den ausgewählten Gegenstand auf unbestimmte Zeit baut.</German>
 		<Italian>Tieni premuto [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] per fare in modo che un insediamento costruisca un oggetto all'infinito...</Italian>
 		<Spanish>Mantener Pulsara la tecla [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] para hacer que el asentamiento construya un elemento indefinidamente.</Spanish>
+		<Russian>Удерживайте [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT], чтобы колония строила выбранный предмет бесконечно. [COLOR_NEGATIVE_TEXT](ПОКА НЕ РАБОТАЕТ)[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_2</Tag>
@@ -817,6 +832,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; STRG + I &gt;[COLOR_REVERT], wenn Sie mit minimiertem Menü spielen möchten. Mit [COLOR:140:255:40:255]&lt; ALT + I &gt;[COLOR_REVERT] können Sie das Menü ausblenden.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; CTRL + I &gt;[COLOR_REVERT] per giocare con l'interfaccia minimizzata. Premi [COLOR:140:255:40:255]&lt; ALT + I &gt;[COLOR_REVERT] per giocare senza interfaccia.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; CTRL + I &gt;[COLOR_REVERT] para jugar con una interfaz minimizada. Pulsar [COLOR:140:255:40:255]&lt; ALT + I &gt;[COLOR_REVERT] para jugar sin interfaz.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; CTRL + I &gt;[COLOR_REVERT] для игры со свернутым нижним интерфейсом. Нажмите [COLOR:140:255:40:255]&lt; ALT + I &gt;[COLOR_REVERT] чтобы скрыть весь интерфейс.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_3</Tag>
@@ -825,6 +841,7 @@ Viel Spass![NEWLINE]
 		<German>Drehen Sie das Mausrad oder drücken Sie [COLOR:140:255:40:255]&lt; BILD AUF &gt;[COLOR_REVERT] oder [COLOR:140:255:40:255]&lt; BILD AB &gt;[COLOR_REVERT], um den Zoomfaktor der Kamera zu ändern.</German>
 		<Italian>Puoi usare i tasti [COLOR:140:255:40:255]&lt; PAG SU &gt;[COLOR_REVERT] e [COLOR:140:255:40:255]&lt; PAG GIÙ &gt;[COLOR_REVERT] per zoomare la visuale avanti e indietro.</Italian>
 		<Spanish>Se puede usar la rueda del ratón o [COLOR:140:255:40:255]&lt; RE PÁG &gt;[COLOR_REVERT] y [COLOR:140:255:40:255]&lt; AV PÁG &gt;[COLOR_REVERT] para acercar y alejar la cámara.</Spanish>
+		<Russian>Вы можете использовать колесо мыши или [COLOR:140:255:40:255]&lt; PAGE UP &gt;[COLOR_REVERT] и [COLOR:140:255:40:255]&lt; PAGE DOWN &gt;[COLOR_REVERT] для увеличения и уменьшения масштаба камеры.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_4</Tag>
@@ -833,6 +850,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; STRG + S &gt;[COLOR_REVERT], um das Spiel zu speichern. Mit [COLOR:140:255:40:255]&lt; STRG + L &gt;[COLOR_REVERT] können Sie ein gespeichertes Spiel laden.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; CTRL + S &gt;[COLOR_REVERT] per salvare la partita e [COLOR:140:255:40:255]&lt; CTRL + L &gt;[COLOR_REVERT] per caricare una partita salvata.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; CTRL + S &gt;[COLOR_REVERT] para guardar la partida y [COLOR:140:255:40:255]&lt; CTRL + L &gt;[COLOR_REVERT] para cargar una guardada.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; CTRL + S &gt;[COLOR_REVERT], чтобы сохранить игру и [COLOR:140:255:40:255]&lt; CTRL + L &gt;[COLOR_REVERT] для загрузки сохраненной игры.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_5</Tag>
@@ -841,6 +859,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; STRG + PFEIL LINKS &gt;[COLOR_REVERT] oder [COLOR:140:255:40:255]&lt; STRG + PFEIL RECHTS &gt;[COLOR_REVERT], um die Kamera in 45-Grad-Schritten zu drehen.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; CTRL + (FRECCIA SINISTRA) &gt;[COLOR_REVERT] o [COLOR:140:255:40:255]&lt; CTRL + (FRECCIA DESTRA) &gt;[COLOR_REVERT] per ruotare la visuale e impostarla a 45 gradi.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; CTRL + (FLECHA IZQ.) &gt;[COLOR_REVERT] o [COLOR:140:255:40:255]&lt; CTRL + (FLECHA DER.) &gt;[COLOR_REVERT] para girar la cámara 45 grados.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; CTRL + (СТРЕЛКА ВЛЕВО) &gt;[COLOR_REVERT] или [COLOR:140:255:40:255]&lt; CTRL + (СТРЕЛКА ВПРАВО) &gt; [COLOR_REVERT], чтобы повернуть камеру на 45 градусов.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_6</Tag>
@@ -849,6 +868,7 @@ Viel Spass![NEWLINE]
 		<German>Doppelklicken Sie auf mehrere Einheiten, um diese zu gruppieren.</German>
 		<Italian>Doppio clic su un gruppo di unità per unirle.</Italian>
 		<Spanish>Hacer doble clic en un apilamiento de unidades las agrupará.</Spanish>
+		<Russian>Двойной клик по стеку юнитов сгруппирует их.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_7</Tag>
@@ -857,6 +877,7 @@ Viel Spass![NEWLINE]
 		<German>Halten Sie [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] gedrückt und klicken Sie auf einen Stapel, um alle Einheiten auszuwählen.</German>
 		<Italian>Tieni premuto [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] e clicca su una pila per selezionare tutte le unità.</Italian>
 		<Spanish>Mantener Pulsaro [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] y hacer clic en un apilamiento selecciona a todas las unidades.</Spanish>
+		<Russian>Удерживайте [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] и кликните стек, чтобы выбрать все юниты.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_8</Tag>
@@ -865,6 +886,7 @@ Viel Spass![NEWLINE]
 		<German>Halten Sie [COLOR:140:255:40:255]&lt; STRG &gt;[COLOR_REVERT] gedrückt und klicken Sie auf einen Stapel, um alle Einheiten eines Typs auszuwählen.</German>
 		<Italian>Tieni premuto [COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] e clicca su una pila per selezionare tutte le unità dello stesso tipo.</Italian>
 		<Spanish>Mantener Pulsaro [COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] y hacer clic en un apilamiento selecciona a todas las unidades del mismo tipo.</Spanish>
+		<Russian>Удерживайте [COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] и кликните стек, чтобы выбрать все юниты одного типа.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_9</Tag>
@@ -873,6 +895,7 @@ Viel Spass![NEWLINE]
 		<German>Haben Sie mehrere Einheiten ausgewählt, können Sie der gesamten Gruppe Befehle erteilen.</German>
 		<Italian>Quando più unità sono selezionate, puoi impartire ordini a tutto il gruppo.</Italian>
 		<Spanish>Con varias unidades seleccionadas, se pueden dar órdenes de grupo que éstas llevarán a cabo a la vez.</Spanish>
+		<Russian>Выбрав несколько отрядов, вы можете отдать группе приказы, которые они будут выполнять вместе.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_10</Tag>
@@ -881,6 +904,7 @@ Viel Spass![NEWLINE]
 		<German>Nach einem [COLOR:140:255:40:255]&lt; RECHTSKLICK &gt;[COLOR_REVERT] auf ein Transportschiff gehen die Einheiten automatisch an Bord.</German>
 		<Italian>Clicca con il [COLOR:140:255:40:255]&lt; PULSANTE DESTRO &gt;[COLOR_REVERT] su un mezzo di trasporto per caricare automaticamente le unità a bordo.</Italian>
 		<Spanish>Hacer [COLOR:140:255:40:255]&lt; CLIC DERECHO &gt;[COLOR_REVERT] en un transporte embarcará directamente las unidades en él.</Spanish>
+		<Russian>[COLOR:140:255:40:255]&lt; КЛИК ПКМ &gt;[COLOR_REVERT] на транспорте автоматически загрузит в него юниты. [COLOR_NEGATIVE_TEXT](ПОКА НЕ РАБОТАЕТ)[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_11</Tag>
@@ -889,6 +913,7 @@ Viel Spass![NEWLINE]
 		<German>Haben Sie ein Transportschiff ausgewählt, gehen alle Einheiten nach einem [COLOR:140:255:40:255]&lt; RECHTSKLICK &gt;[COLOR_REVERT] auf ein angrenzendes Geländefeld automatisch von Bord.</German>
 		<Italian>Quando hai selezionato un mezzo di trasporto, clicca con il [COLOR:140:255:40:255]&lt; PULSANTE DESTRO &gt;[COLOR_REVERT] del mouse su una casella adiacente per sbarcare automaticamente le unità a bordo.</Italian>
 		<Spanish>Con un transporte seleccionado, hacer [COLOR:140:255:40:255]&lt; CLIC DERECHO &gt;[COLOR_REVERT] en una casilla de tierra adyacente desembarcará automáticamente a las unidades.</Spanish>
+		<Russian>При выборе транспорта [COLOR:140:255:40:255]&lt; КЛИК ПКМ &gt;[COLOR_REVERT] на соседнем квадрате земли автоматически разгрузит туда юниты.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_12</Tag>
@@ -897,6 +922,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; F12 &gt;[COLOR_REVERT], wenn Sie die Colopedia öffnen möchten.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; F12 &gt;[COLOR_REVERT] per accedere alla Colopedia.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; F12 &gt;[COLOR_REVERT] para acceder a la Colopedia.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; F12 &gt;[COLOR_REVERT] для доступа к Колопедии.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_13</Tag>
@@ -905,6 +931,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; DRUCK &gt;[COLOR_REVERT], um einen Screenshot zu machen und unter "Colonization\Screenshots" zu speichern.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; STAMP &gt;[COLOR_REVERT] per scattare una foto che verrà salvata in Colonization\Screenshots...</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; PRINT SCREEN &gt;[COLOR_REVERT] para hacer una captura de pantalla (se guardará en la carpeta Colonization\Screenshots).</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; PRINT SCREEN &gt;[COLOR_REVERT], чтобы сделать снимок экрана (он будет сохранен в папке *\Documents\My Games\Civilization IV Colonization\ScreenShots).</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_14</Tag>
@@ -913,6 +940,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; ESC &gt;[COLOR_REVERT], um das Pausemenü zu öffnen.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; ESC &gt;[COLOR_REVERT] per richiamare il menu di opzioni mentre stai giocando.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; ESC &gt;[COLOR_REVERT] para que aparezca el menú Opciones durante la partida.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; ESC &gt;[COLOR_REVERT], чтобы открыть меню параметров игры.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_15</Tag>
@@ -921,6 +949,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken sie [COLOR:140:255:40:255]&lt; STRG + O &gt;[COLOR_REVERT], um das Optionen-Menü zu öffnen.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; CTRL + O &gt;[COLOR_REVERT] per richiamare il menu di opzioni.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; CTRL + O &gt;[COLOR_REVERT] para que aparezca el menú Opciones.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; CTRL + O &gt;[COLOR_REVERT], чтобы открыть меню параметров.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_16</Tag>
@@ -929,6 +958,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie die mittlere Maustaste, um die Kamera über der aktiven Einheit zu zentrieren.</German>
 		<Italian>Premi il pulsante centrale del mouse per centrare la visuale sull'unità attiva.</Italian>
 		<Spanish>Pulsar el botón central del ratón para centrar la cámara en la unidad activa.</Spanish>
+		<Russian>Нажмите среднюю кнопку мыши, чтобы центрировать камеру на активном объекте.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_17</Tag>
@@ -937,6 +967,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie (nur im Einzelspieler-Modus) [COLOR:140:255:40:255]&lt; UMSCHALTEN + F5 &gt;[COLOR_REVERT], um das Spiel schnell zu speichern.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; MAIUSC + F5 &gt;[COLOR_REVERT] (solo Giocatore Singolo) per effettuare un salvataggio rapido.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; MAYÚS + F5 &gt;[COLOR_REVERT] (solo en partidas de un jugador) para hacer un guardado rápido.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; SHIFT + F5 &gt;[COLOR_REVERT] для быстрого сохранения (только для одиночной игры).</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_18</Tag>
@@ -945,6 +976,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie (nur im Einzelspieler-Modus) [COLOR:140:255:40:255]&lt; UMSCHALTEN + F8 &gt;[COLOR_REVERT], um ein Spiel schnell zu laden.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; MAIUSC + F8 &gt;[COLOR_REVERT] (solo Giocatore Singolo) per effettuare un caricamento rapido.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; MAYÚS + F8 &gt;[COLOR_REVERT] (solo en partidas de un jugador) para hacer una carga rápida.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; SHIFT + F8 &gt;[COLOR_REVERT] для быстрой загрузки (только для одиночной игры).</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_19</Tag>
@@ -953,6 +985,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; STRG + P &gt;[COLOR_REVERT], um die Karte anzupingen und Ihren Teammitgliedern Informationen zu senden.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; CTRL + P &gt;[COLOR_REVERT] per segnare un punto sulla mappa e fornire informazioni ai tuoi compagni di squadra.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; CTRL + P &gt;[COLOR_REVERT] para hacer una señal en el mapa y dar información a los compañeros de equipo.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; CTRL + P &gt;[COLOR_REVERT], чтобы проверить карту и предоставить информацию товарищам по команде (кажется, это для мультиплеера).</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_20</Tag>
@@ -961,6 +994,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; STRG + Zahl &gt;[COLOR_REVERT], um der gewählten Einheit die Zahl zuzuweisen. Beispiel: Drücken Sie [COLOR:140:255:40:255]&lt; STRG + 3 &gt;[COLOR_REVERT] wird die entsprechende Einheit ausgewählt, sobald Sie die [COLOR:140:255:40:255]&lt; 3 &gt;[COLOR_REVERT] drücken.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; CTRL + # &gt;[COLOR_REVERT] per assegnare l'unità selezionata al tasto #. Per esempio, premendo [COLOR:140:255:40:255]&lt; CTRL + 3 &gt;[COLOR_REVERT], ogni volta che si premerà il tasto [COLOR:140:255:40:255]&lt; 3 &gt;[COLOR_REVERT] quell'unità verrà automaticamente selezionata.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; CTRL + número &gt;[COLOR_REVERT] para vincular la unidad seleccionada a ese número. Por ejemplo: [COLOR:140:255:40:255]&lt; CTRL + 3 &gt;[COLOR_REVERT] hará que la unidad quede seleccionada automáticamente cada vez que se pulse el [COLOR:140:255:40:255]&lt; 3 &gt;[COLOR_REVERT].</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; CTRL + цифровая клавиша &gt;[COLOR_REVERT], чтобы привязать выбранный объект к этой клавише. Например: [COLOR:140:255:40:255]&lt; CTRL + 3 &gt;[COLOR_REVERT] привяжет цифру [COLOR:140:255:40:255]&lt; 3 &gt;[COLOR_REVERT] к выбранному юниту.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_21</Tag>
@@ -969,6 +1003,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie im Siedlungsbildschirm [COLOR:140:255:40:255]&lt; STRG + Zifferntaste &gt;[COLOR_REVERT], um die Produktionsliste zu speichern. Drücken Sie in einer beliebigen anderen Siedlung die gewünschte Zifferntaste, wenn Sie die Produktionsliste laden möchten.</German>
 		<Italian>Mentre ti trovi nella schermata dell'insediamento, [COLOR:140:255:40:255]&lt; CTRL + # &gt;[COLOR_REVERT] per salvare la coda di produzione. Questa coda può essere caricata in qualsiasi altro insediamento premendo il tasto [COLOR:140:255:40:255]&lt; # &gt;[COLOR_REVERT].</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; CTRL + número &gt;[COLOR_REVERT] en la pantalla del asentamiento para guardar la cola de producción. Se podrá cargar esa cola en cualquier otro asentamiento pulsando dicho número.</Spanish>
+		<Russian>На экране колонии нажмите [COLOR:140:255:40:255]&lt; CTRL + цифровая клавиша &gt;[COLOR_REVERT], чтобы сохранить производственную очередь. Эту очередь можно загрузить в любом другом населенном пункте, нажав выбранную [COLOR:140:255:40:255]&lt; цифру &gt;[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_22</Tag>
@@ -977,6 +1012,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; F11 &gt;[COLOR_REVERT], um zur Welt-Ansicht zu wechseln.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; F11 &gt;[COLOR_REVERT] per attivare/disattivare la visuale globale.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; F11 &gt;[COLOR_REVERT] para entrar y salir de la Vista global.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; F11 &gt;[COLOR_REVERT] для быстрого переключения в режим глобуса и выхода из него.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_23</Tag>
@@ -985,6 +1021,7 @@ Viel Spass![NEWLINE]
 		<German>Im Siedlungsbildschirm können Sie mit [COLOR:140:255:40:255]&lt; PFEIL LINKS &gt;[COLOR_REVERT] und [COLOR:140:255:40:255]&lt; PFEIL RECHTS &gt;[COLOR_REVERT] durch Ihre Siedlungen schalten.</German>
 		<Italian>Quando sei nella schermata dell'insediamento, puoi usare la [COLOR:140:255:40:255]&lt; FRECCIA SINISTRA &gt;[COLOR_REVERT] e la [COLOR:140:255:40:255]&lt; FRECCIA DESTRA &gt;[COLOR_REVERT] per scorrere gli insediamenti...</Italian>
 		<Spanish>En la pantalla del asentamiento se puede usar la [COLOR:140:255:40:255]&lt; FLECHA IZQUIERDA &gt;[COLOR_REVERT] y la [COLOR:140:255:40:255]&lt; FLECHA DERECHA &gt;[COLOR_REVERT] para pasar de un asentamiento a otro.</Spanish>
+		<Russian>На экране колонии вы можете использовать [COLOR:140:255:40:255]&lt; СТРЕЛКА ВЛЕВО &gt;[COLOR_REVERT] и [COLOR:140:255:40:255]&lt; СТРЕЛКА ВПРАВО &gt;[COLOR_REVERT] для переключения между поселениями.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_24</Tag>
@@ -993,6 +1030,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; STRG + B &gt;[COLOR_REVERT], um die Kartenansicht zu aktivieren.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; CTRL + B &gt;[COLOR_REVERT] per attivare/disattivare la visuale mappa semplificata.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; CTRL + B &gt;[COLOR_REVERT] para activar la vista del mapa limpio.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; CTRL + B &gt;[COLOR_REVERT] для переключения режима пустой карты. [COLOR_NEGATIVE_TEXT](ПОКА НЕ РАБОТАЕТ)[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_25</Tag>
@@ -1001,6 +1039,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; STRG + R &gt;[COLOR_REVERT], um in die Ressourcen-Ansicht zu wechseln.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; CTRL + R &gt;[COLOR_REVERT] per visualizzare/nascondere la segnalazione risorse.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; CTRL + R &gt;[COLOR_REVERT] para activar las marcas de recursos.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; CTRL + R &gt;[COLOR_REVERT] для вкл/выкл флага ресурсов. [COLOR_NEGATIVE_TEXT](ПОКА НЕ РАБОТАЕТ)[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_26</Tag>
@@ -1009,6 +1048,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; STRG + Y &gt;[COLOR_REVERT], um in die Einkünfte-Ansicht zu wechseln.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; CTRL + Y &gt;[COLOR_REVERT] per visualizzare/nascondere la produzione.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; CTRL + Y &gt;[COLOR_REVERT] para activar la vista Mostrar rendimientos.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; CTRL + Y &gt;[COLOR_REVERT], чтобы вкл/выкл доходность клеток.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_27</Tag>
@@ -1017,6 +1057,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; STRG + A &gt;[COLOR_REVERT], um alle Einheiten mit einer Befehlsliste zu bewegen.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; CTRL + A &gt;[COLOR_REVERT] per forzare il movimento di tutte le unità con ordini in coda.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; CTRL + A &gt;[COLOR_REVERT] para obligar a moverse a todas las unidades con órdenes en cola.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; CTRL + A &gt;[COLOR_REVERT], чтобы заставить все юниты с очередью приказов двигаться.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_28</Tag>
@@ -1025,6 +1066,7 @@ Viel Spass![NEWLINE]
 		<German>Blenden Sie das Geländeraster mit [COLOR:140:255:40:255]&lt; STRG + T &gt;[COLOR_REVERT] ein/aus.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; CTRL + T &gt;[COLOR_REVERT] per attivare la griglia delle caselle.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; CTRL + T &gt;[COLOR_REVERT] para activar la cuadrícula.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; CTRL + T &gt;[COLOR_REVERT] для вкл/выкл сетки клеток.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_29</Tag>
@@ -1033,6 +1075,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; ALT + Q &gt;[COLOR_REVERT], um das Spiel zu verlassen. Im Multiplayer-Modus übernimmt nun die KI die Kontrolle über Ihre Kolonien.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; ALT + Q &gt;[COLOR_REVERT] per ritirarti dalla partita. Nel multigiocatore, il controllo della tua colonia viene automaticamente assegnato alla IA.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; ALT + Q &gt;[COLOR_REVERT] para retirarse de la partida. En el modo para varios jugadores esto le dará el control de las colonias a la IA.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; ALT + Q &gt;[COLOR_REVERT] для выхода из игры. В многопользовательском режиме это автоматически передает контроль над вашими колониями ИИ. [COLOR_NEGATIVE_TEXT](ПОКА НЕ РАБОТАЕТ)[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_30</Tag>
@@ -1041,6 +1084,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; PAUSE &gt;[COLOR_REVERT], um den Runden-Timer anzuhalten.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; PAUSA &gt;[COLOR_REVERT] per interrompere il timer del turno.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; PAUSA &gt;[COLOR_REVERT] para interrumpir el contador del turno.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; PAUSE &gt;[COLOR_REVERT], чтобы прервать таймер хода (для мультиплеера).</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_31</Tag>
@@ -1049,6 +1093,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie im Multiplayer-Modus [COLOR:140:255:40:255]&lt; UMSCHALTEN + TAB &gt;[COLOR_REVERT], um mit allen Anwesenden zu chatten.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; MAIUSC + TAB &gt;[COLOR_REVERT] per comunicare via chat con tutti in Multigiocatore.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; MAYÚS + TAB &gt;[COLOR_REVERT] para charlar con todos en el modo multijugador.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; SHIFT + TAB &gt;[COLOR_REVERT] для общения со всеми игроками в многопользовательском режиме.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_32</Tag>
@@ -1057,6 +1102,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie im Multiplayer-Modus [COLOR:140:255:40:255]&lt; TAB &gt;[COLOR_REVERT], um mit den Mitgliedern Ihres Teams zu chatten.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; TAB &gt;[COLOR_REVERT] per comunicare via chat con gli alleati in Multigiocatore.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; TAB &gt;[COLOR_REVERT] para charlar con los compañeros de equipo en el modo multijugador.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; TAB &gt;[COLOR_REVERT] для общения с товарищами по команде в сетевой игре.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_33</Tag>
@@ -1065,6 +1111,7 @@ Viel Spass![NEWLINE]
 		<German>Rufen Sie mit [COLOR:140:255:40:255]&lt; CTRL + W &gt;[COLOR_REVERT] den Weltenbauer auf.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; CTRL + W &gt;[COLOR_REVERT] per accedere all'editor.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; CTRL + W &gt;[COLOR_REVERT] para acceder al creador de mundos.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; CTRL + W &gt;[COLOR_REVERT] для доступа к Строителю мира.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_34</Tag>
@@ -1073,6 +1120,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; W &gt;[COLOR_REVERT] oder [COLOR:140:255:40:255]&lt; EINGABETASTE &gt;[COLOR_REVERT], um durch Ihre aktiven Einheiten zu schalten.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; W &gt;[COLOR_REVERT] o [COLOR:140:255:40:255]&lt; INVIO &gt;[COLOR_REVERT] per scorrere le unità attive.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; W &gt;[COLOR_REVERT] o [COLOR:140:255:40:255]&lt; INTRO &gt;[COLOR_REVERT] para pasar de una unidad activa a otra.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; W &gt;[COLOR_REVERT] или [COLOR:140:255:40:255]&lt; ENTER &gt;[COLOR_REVERT] для переключения между активными юнитами.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_36</Tag>
@@ -1081,6 +1129,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; KOMMA &gt;[COLOR_REVERT] und [COLOR:140:255:40:255]&lt; PUNKT &gt;[COLOR_REVERT], um durch die Einheiten auf einem Geländefeld zu schalten.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; , &gt;[COLOR_REVERT] e [COLOR:140:255:40:255]&lt; . &gt;[COLOR_REVERT] per scorrere tra le unità che si trovano nella stessa casella.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; , (coma) &gt;[COLOR_REVERT] y [COLOR:140:255:40:255]&lt; . (punto) &gt;[COLOR_REVERT] para desplazarse por las unidades que estén en la misma casilla.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; , (запятая) &gt;[COLOR_REVERT] или [COLOR:140:255:40:255]&lt; . (точка) &gt;[COLOR_REVERT] для прокрутки юнитов на одной клетке.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_37</Tag>
@@ -1089,6 +1138,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; UMSCHALTEN + EINGABETASTE &gt;[COLOR_REVERT], um die aktuelle Runde zu beenden.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; MAIUSC + INVIO &gt;[COLOR_REVERT] per forzare la fine del turno.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; MAYÚS + INTRO &gt;[COLOR_REVERT] para forzar el final del turno.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; SHIFT + ENTER &gt;[COLOR_REVERT] для принудительного завершения хода.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_38</Tag>
@@ -1097,6 +1147,7 @@ Viel Spass![NEWLINE]
 		<German>Halten Sie [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] gedrückt und bewegen Sie die Maus über eine Position, um Ihre Chancen im Falle eines Angriffs zu betrachten.</German>
 		<Italian>Tieni premuto [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] e punta con il mouse una casella per visualizzare le probabilità di vittoria in caso di attacco.</Italian>
 		<Spanish>Mantener Pulsara la tecla [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] mientras se señala una casilla con el cursor para ver las probabilidades de un ataque.</Spanish>
+		<Russian>Удерживайте кнопку [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] при наведении курсора мыши на клетку с врагом, чтобы просмотреть примерный расчет итогов сражения.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_39</Tag>
@@ -1105,6 +1156,7 @@ Viel Spass![NEWLINE]
 		<German>Möchten Sie Ihre Kampfchancen betrachten, halten Sie die rechte Maustaste über dem gewünschten Geländefeld gedrückt.</German>
 		<Italian>Per visualizzare le probabilità di vittoria di uno scontro, tieni premuto il pulsante destro del mouse su una casella bersaglio.</Italian>
 		<Spanish>Mantener el cursor encima de la casilla objetivo para ver las probabilidades del combate.</Spanish>
+		<Russian>Чтобы просмотреть примерный расчет итогов сражения, удерживайте правую кнопку мыши на целевой клетке.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_40</Tag>
@@ -1113,6 +1165,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; POS1 &gt;[COLOR_REVERT] und [COLOR:140:255:40:255]&lt; ENDE &gt;[COLOR_REVERT], um durch Ihre Siedlungen zu schalten.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; HOME &gt;[COLOR_REVERT] e [COLOR:140:255:40:255]&lt; FINE &gt;[COLOR_REVERT] per scorrere i tuoi insediamenti...</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; INICIO &gt;[COLOR_REVERT] y [COLOR:140:255:40:255]&lt; FIN &gt;[COLOR_REVERT] para pasar de un asentamiento a otro.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; HOME &gt;[COLOR_REVERT] или [COLOR:140:255:40:255]&lt; END &gt;[COLOR_REVERT] для просмотра поселений на карте.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_41</Tag>
@@ -1121,6 +1174,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; EINFG &gt;[COLOR_REVERT], um einen Blick auf die nächstgelegene verbündete Siedlung zu werfen.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; INS &gt;[COLOR_REVERT] per aprire la schermata dell'insediamento alleato più vicino.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; INSERT &gt;[COLOR_REVERT] para abrir el asentamiento amistoso más cercano.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; INSERT &gt;[COLOR_REVERT], чтобы открыть ближайшее дружественное поселение.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_42</Tag>
@@ -1129,6 +1183,7 @@ Viel Spass![NEWLINE]
 		<German>Halten Sie [COLOR:140:255:40:255]&lt; UMSCHALTEN &gt;[COLOR_REVERT] gedrückt, um Objekte dem Ende der Bauliste Ihrer Siedlung hinzuzufügen.</German>
 		<Italian>Tieni premuto [COLOR:140:255:40:255]&lt; MAIUSC &gt;[COLOR_REVERT] per aggiungere degli oggetti in fondo alla coda di costruzione del tuo insediamento.</Italian>
 		<Spanish>Mantener Pulsara la tecla [COLOR:140:255:40:255]&lt; MAYÚS &gt;[COLOR_REVERT] para añadir elementos al final de la cola de construcción del asentamiento.</Spanish>
+		<Russian>Удерживайте клавишу [COLOR:140:255:40:255]&lt; SHIFT &gt;[COLOR_REVERT] для добавления предметов в конец очереди строительства вашего поселения.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_43</Tag>
@@ -1137,6 +1192,7 @@ Viel Spass![NEWLINE]
 		<German>Halten Sie [COLOR:140:255:40:255]&lt; STRG &gt;[COLOR_REVERT] gedrückt, um Objekte dem Anfang der Bauliste Ihrer Siedlung hinzuzufügen.</German>
 		<Italian>Tieni premuto [COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] per aggiungere degli oggetti all'inizio della coda di costruzione del tuo insediamento.</Italian>
 		<Spanish>Mantener Pulsara la tecla [COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] para insertar elementos al principio de la cola de construcción del asentamiento.</Spanish>
+		<Russian>Удерживайте клавишу [COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] для вставки предметов в начало очереди строительства вашего поселения.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_45</Tag>
@@ -1145,6 +1201,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie die Vorwärts-/Rückwärts-Tasten Ihrer Maus, um durch alle Einheiten auf einem Geländefeld zu schalten.</German>
 		<Italian>Premi i pulsanti su e giù sul mouse per scorrere le unità sulla stessa casella.</Italian>
 		<Spanish>Pulsar los botones de adelante y atrás del ratón para pasar de una unidad a otra en la misma casilla.</Spanish>
+		<Russian>Нажимайте кнопки "Вперед" и "Назад" на мыши, чтобы переключаться между юнитами на одной клетке.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_46</Tag>
@@ -1153,6 +1210,7 @@ Viel Spass![NEWLINE]
 		<German>Halten Sie [COLOR:140:255:40:255]&lt; STRG &gt;[COLOR_REVERT] gedrückt und schalten Sie mit dem Mausrad durch alle Einheiten auf dem gewünschten Geländefeld.</German>
 		<Italian>Tieni premuto il tasto [COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] e usa la rotellina del mouse per scorrere tra le unità sulla stessa casella.</Italian>
 		<Spanish>Mantener Pulsara la tecla [COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] y girar la rueda del ratón para pasar de una unidad a otra en la misma casilla.</Spanish>
+		<Russian>Удерживайте клавишу [COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] и вращайте колесо мыши, чтобы переключаться между юнитами на одной клетке.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_47</Tag>
@@ -1161,6 +1219,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; STRG + M &gt;[COLOR_REVERT], um die Musik ein- oder auszublenden.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; CTRL + M &gt;[COLOR_REVERT] per attivare e disattivare la musica.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; CTRL + M &gt;[COLOR_REVERT] para encender o apagar la música.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; CTRL + M &gt;[COLOR_REVERT] для включения и выключения музыки.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_48</Tag>
@@ -1169,6 +1228,7 @@ Viel Spass![NEWLINE]
 		<German>Per [COLOR:140:255:40:255]&lt; RECHTSKLICK &gt;[COLOR_REVERT] schicken Sie Ihre Einheiten auf das gewünschte Geländefeld.</German>
 		<Italian>Muovi le unità su una casella lontana cliccandoci sopra con il [COLOR:140:255:40:255]&lt; PULSANTE DESTRO &gt;[COLOR_REVERT].</Italian>
 		<Spanish>Se pueden mover unidades a una casilla lejana haciendo [COLOR:140:255:40:255]&lt; CLIC DERECHO &gt;[COLOR_REVERT] en ella.</Spanish>
+		<Russian>Переместите юниты на отдалённую клетку с помощью [COLOR:140:255:40:255]&lt; КЛИК ПКМ &gt;[COLOR_REVERT] на месте назначения.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_49</Tag>
@@ -1177,6 +1237,7 @@ Viel Spass![NEWLINE]
 		<German>Mit [COLOR:140:255:40:255]&lt; STRG + RECHTSKLICK &gt;[COLOR_REVERT] schicken Sie alle Einheiten eines Typs zum gewünschten Geländefeld.</German>
 		<Italian>Puoi muovere un gruppo di unità dello stesso tipo con [COLOR:140:255:40:255]&lt; CTRL + PULSANTE DESTRO &gt;[COLOR_REVERT] sulla destinazione.</Italian>
 		<Spanish>Se pueden mover en grupo todas las unidades del mismo tipo pulsando [COLOR:140:255:40:255]&lt; CTRL + CLIC DERECHO &gt;[COLOR_REVERT] en el lugar de destino.</Spanish>
+		<Russian>Вы можете сгруппировать перемещение всех юнитов одного типа с помощью [COLOR:140:255:40:255]&lt; CTRL + КЛИК ПКМ &gt;[COLOR_REVERT] в месте назначения.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_50</Tag>
@@ -1185,6 +1246,7 @@ Viel Spass![NEWLINE]
 		<German>Sie können alle Einheiten eines Feldes mit [COLOR:140:255:40:255]&lt; ALT + RECHTSKLICK &gt;[COLOR_REVERT] auf die gewünschte Position bewegen.</German>
 		<Italian>Puoi muovere un gruppo di unità sulla stessa casella con [COLOR:140:255:40:255]&lt; ALT + PULSANTE DESTRO &gt;[COLOR_REVERT] sulla destinazione.</Italian>
 		<Spanish>Se pueden mover en grupo todas las unidades de la misma casilla pulsando [COLOR:140:255:40:255]&lt; ALT + CLIC DERECHO &gt;[COLOR_REVERT] en el lugar de destino.</Spanish>
+		<Russian>Вы можете сгруппировать перемещение всех юнитов на одной клетке с помощью [COLOR:140:255:40:255]&lt; ALT + КЛИК ПКМ &gt;[COLOR_REVERT] в пункте назначения.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_51</Tag>
@@ -1193,6 +1255,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; G &gt;[COLOR_REVERT], um den "Gehe zu"-Modus zu aktivieren.</German>
 		<Italian>Passa alla modalità "Vai a" premendo [COLOR:140:255:40:255]&lt; G &gt;[COLOR_REVERT].</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; G &gt;[COLOR_REVERT] para entrar en el modo "Ir a".</Spanish>
+		<Russian>Войдите в режим "Идти к", нажав [COLOR:140:255:40:255]&lt; G &gt;[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_52</Tag>
@@ -1201,6 +1264,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; STRG + G &gt;[COLOR_REVERT], um den "Gehe zu"-Modus für alle Einheiten eines Typs zu aktivieren.</German>
 		<Italian>Passa alla modalità "Vai a (unità dello stesso tipo)" premendo [COLOR:140:255:40:255]&lt; CTRL + G &gt;[COLOR_REVERT].</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; CTRL + G &gt;[COLOR_REVERT] para entrar en el modo "Ir a (mismo tipo de unidad)".</Spanish>
+		<Russian>Войдите в режим "Идти к (для юнитов одного типа)", нажав [COLOR:140:255:40:255]&lt; CTRL + G &gt;[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_53</Tag>
@@ -1209,6 +1273,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; ALT + G &gt;[COLOR_REVERT], um den "Gehe zu"-Modus für alle Einheiten zu aktivieren.</German>
 		<Italian>Passa alla modalità "Vai a (tutte le unità)" premendo [COLOR:140:255:40:255]&lt; ALT + G &gt;[COLOR_REVERT].</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; ALT + G &gt;[COLOR_REVERT] para entrar en el modo "Ir a (todas las unidades)".</Spanish>
+		<Russian>Войдите в режим "Идти к (для всех юнитов)", нажав [COLOR:140:255:40:255]&lt; ALT + G &gt;[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_54</Tag>
@@ -1217,6 +1282,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; C &gt;[COLOR_REVERT], um die Kamera auf die aktive Einheit zu zentrieren.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; C &gt;[COLOR_REVERT] per centrare la visuale sull'unità attiva.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; C &gt;[COLOR_REVERT] para centrar la cámara en la unidad activa.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; C &gt;[COLOR_REVERT] для центрирования камеры на активном юните.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_56</Tag>
@@ -1225,6 +1291,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; ALT + C &gt;[COLOR_REVERT], um die aktive Einheit und alle Einheiten auf demselben Feld auszuwählen.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; ALT + C &gt;[COLOR_REVERT] per selezionare tutte le unità sulla stessa casella di quella attiva.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; ALT + C &gt;[COLOR_REVERT] para seleccionar todas las unidades de la misma casilla que la unidad activa.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; ALT + C &gt;[COLOR_REVERT], чтобы выбрать все юниты на той же клетке, что и активный юнит.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_62</Tag>
@@ -1233,6 +1300,7 @@ Viel Spass![NEWLINE]
 		<German>Halten Sie die [COLOR:140:255:40:255]&lt; UMSCHALT-Taste &gt;[COLOR_REVERT] gedrückt und klicken Sie auf ein Geländefeld, um ein Kontextmenü zu öffnen.</German>
 		<Italian>Tieni premuto il tasto [COLOR:140:255:40:255]&lt; MAIUSC &gt;[COLOR_REVERT] e clicca su una casella per aprire un menu contestuale.</Italian>
 		<Spanish>Mantener Pulsara la tecla [COLOR:140:255:40:255]&lt; MAYÚS &gt;[COLOR_REVERT] y hacer clic en una casilla para abrir un menú contextual.</Spanish>
+		<Russian>Удерживайте [COLOR:140:255:40:255]&lt; SHIFT &gt;[COLOR_REVERT] и щелкните на клетке, чтобы открыть контекстное меню. [COLOR_NEGATIVE_TEXT](ПОКА НЕ РАБОТАЕТ)[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_64</Tag>
@@ -1241,6 +1309,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; # &gt;[COLOR_REVERT], um zur letzten gewählten Einheit zu springen.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; \ &gt;[COLOR_REVERT] per tornare all'ultima unità selezionata.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; \ &gt;[COLOR_REVERT] para volver a la anterior unidad seleccionada.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; \ &gt;[COLOR_REVERT] для возврата к последнему выбранному юниту.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_65</Tag>
@@ -1249,6 +1318,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; STRG + TAB &gt;[COLOR_REVERT], um das Rundenereignis-Log aufzurufen.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; CTRL + TAB &gt;[COLOR_REVERT] per vedere il registro degli eventi.</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; CTRL + TAB &gt;[COLOR_REVERT] para ver el historial de sucesos del turno.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; CTRL + TAB &gt;[COLOR_REVERT] для просмотра журнала событий.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_66</Tag>
@@ -1257,6 +1327,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; ALT + S &gt;[COLOR_REVERT], um ein Zeichen auf der Karte zu platzieren, das nur Sie und Ihre Teammitglieder sehen können.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; ALT + S &gt;[COLOR_REVERT] per aggiungere sulla mappa un segnale visibile soltanto a te e ai tuoi alleati.</Italian>
 		<Spanish>Pulsa [COLOR:140:255:40:255]&lt; ALT + S &gt;[COLOR_REVERT] para añadir al mapa un letrero que podáis ver tus compañeros y tú.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; ALT + S &gt;[COLOR_REVERT], чтобы добавить на карту заметку, которую сможете видеть вы и ваши товарищи по команде.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_67</Tag>
@@ -1265,5 +1336,6 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; STRG + H &gt;[COLOR_REVERT], um alle verwundeten Einheiten auf einem Geländefeld zu markieren.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; CTRL + H &gt;[COLOR_REVERT] per selezionare tutte le unità ferite sulla casella.</Italian>
 		<Spanish>Pulsa [COLOR:140:255:40:255]&lt; CTRL + H &gt;[COLOR_REVERT] para seleccionar todas las unidades heridas en una casilla.</Spanish>
+		<Russian>Нажмите [COLOR:140:255:40:255]&lt; CTRL + H &gt;[COLOR_REVERT], чтобы выбрать все раненые отряды на клетке.</Russian>
 	</TEXT>
 </Civ4GameText>
