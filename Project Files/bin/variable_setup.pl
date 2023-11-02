@@ -409,7 +409,7 @@ sub structEnum
 	$output .= "\ttemplate <int T> struct STATIC {\n";
 	$output .= "\t\tstatic const VariableStaticTypes VAL = T * ((int)TYPE == (int)VARIABLE_TYPE_CHAR ? 1 : 2) <= 4 ? VARIABLE_TYPE_STATIC : VARIABLE_TYPE_DYNAMIC;\n";
 	$output .= "\t};\n";
-	$output .= "\ttemplate <int T> struct COMPATIBLE {\n";
+	$output .= "\ttemplate <typename T> struct COMPATIBLE {\n";
 	$output .= "\t\tstatic const bool VAL = boost::is_same<" . $type . ", T>::VAL;\n";
 	$output .= "\t};\n";
 	if ($var{$name}{getTypeStr})
@@ -444,7 +444,7 @@ sub handleStructVarGroup
 {
 	my $type = shift;
 	
-	$output .= "\ttemplate <int T> struct COMPATIBLE {\n";
+	$output .= "\ttemplate <typename T> struct COMPATIBLE {\n";
 	
 	my $length = scalar @compatible_variables;
 	
@@ -489,7 +489,7 @@ sub handleInfoArray
 	my $get = $var{$name}{get};
 	my $index = $id - 1;
 	
-	$output .= "template<" . addtemplates("typename T", $id, 0) . ">\nclass InfoArray$id<" . addtemplates("typename T", $id, 1) . $type . ">\n\t: ";
+	$output .= "template<" . addtemplates("typename T", $id, 0) . ">\nclass InfoArray$id<" . addtemplates("T", $id, 1) . $type . ">\n\t: ";
 	$output .= "public InfoArray$index<" . addtemplates("T", $id, 0) . ">\n" unless $id == 1;
 	$output .= "protected InfoArrayBase\n\t, public boost::noncopyable\n" if $id == 1;
 	$output .= "{\n";
