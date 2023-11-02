@@ -1285,6 +1285,8 @@ static void loadTextFiles(std::vector<CvString>& aszFiles, const std::string szL
 //------------------------------------------------------------------------------------------------------
 bool CvXMLLoadUtility::LoadGlobalText()
 {
+	const bool DISABLE_VANILLA_TXT = true;
+
 	CvCacheObject* cache = gDLL->createGlobalTextCacheObject("GlobalText.dat");	// cache file name
 	if (!gDLL->cacheRead(cache))
 	{
@@ -1314,7 +1316,10 @@ bool CvXMLLoadUtility::LoadGlobalText()
 
 		// read vanilla, then mod
 		// gDLL->enumerateFiles mixes those two together. Removed because it unlocked vanilla overwriting mod strings.
-		loadTextFiles(aszFiles, "."                   , "xml\\text\\");
+		if (!DISABLE_VANILLA_TXT)
+		{
+			loadTextFiles(aszFiles, ".", "xml\\text\\");
+		}
 		loadTextFiles(aszFiles, gDLL->getModName(true), "xml\\text\\");
 
 		if (gDLL->isModularXMLLoading())
@@ -1349,7 +1354,7 @@ bool CvXMLLoadUtility::LoadGlobalText()
 					// First check if utf8 is in the filename.
 					// Vanilla has converted the path to lowercase at this point meaning it's not a case sensitive search.
 					bool bUTF8 = strstr(it->c_str(), "utf8") != NULL || strstr(it->c_str(), "UTF8") != NULL;
-
+					bUTF8 |= DISABLE_VANILLA_TXT;
 					// Now call the vanilla read code.
 					SetGameText("Civ4GameText", "Civ4GameText/TEXT", bUTF8, it->c_str(), FStringListEnglish, FStringListCurrentLang, StringList);
 				}
