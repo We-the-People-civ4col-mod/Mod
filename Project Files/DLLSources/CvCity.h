@@ -255,8 +255,8 @@ public:
 	int getHealRate() const;
 	void changeHealRate(int iChange);
 	int getFood() const;
-	void setFood(int iNewValue);
-	void changeFood(int iChange);
+	void setFood(int iNewValue, bool bAllowNegative = false);
+	void changeFood(int iChange, bool bAllowNegative = false);
 
 	int getFoodKept() const;
 	void setFoodKept(int iNewValue);

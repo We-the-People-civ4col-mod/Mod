@@ -3580,16 +3580,16 @@ int CvCity::getFood() const
 }
 
 
-void CvCity::setFood(int iNewValue)
+void CvCity::setFood(int iNewValue, bool bAllowNegative)
 {
 	setYieldStored(YIELD_FOOD, iNewValue);
-	FAssert(getYieldStored(YIELD_FOOD) >= 0);
+	FAssert(bAllowNegative || getYieldStored(YIELD_FOOD) >= 0);
 }
 
 
-void CvCity::changeFood(int iChange)
+void CvCity::changeFood(int iChange, bool bAllowNegative)
 {
-	setFood(getFood() + iChange);
+	setFood(getFood() + iChange, bAllowNegative);
 }
 
 
@@ -7112,7 +7112,7 @@ void CvCity::doGrowth()
 
 	iDiff = foodDifference();
 
-	changeFood(iDiff);
+	changeFood(iDiff, true);
 	changeFoodKept(iDiff);
 
 	setFoodKept(range(getFoodKept(), 0, ((growthThreshold() * getMaxFoodKeptPercent()) / 100)));
@@ -7164,7 +7164,7 @@ void CvCity::doGrowth()
 	else if (getFood() < 0)
 	{
 		// Food is reset to 0
-		changeFood(-(getFood()));
+		setFood(0);
 
 		// Population is larger 1, we can eject citizens
 		if (getPopulation() > 1)
