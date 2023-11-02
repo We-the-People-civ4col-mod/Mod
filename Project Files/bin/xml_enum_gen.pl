@@ -15,7 +15,6 @@ my $FILE_TEST    = getAutoDir() . "/AutoXmlTest.h";
 my $FILE_DECLARE = getAutoDir() . "/AutoXmlDeclare.h";
 my $FILE_INIT    = getAutoDir() . "/AutoXmlInit.h";
 my $FILE_PRELOAD = getAutoDir() . "/AutoXmlPreload.h";
-my $FILE_INFO    = getAutoDir() . "/AutoInfoArray.h";
 
 my $files = [];
 my %varToEnum;
@@ -100,7 +99,6 @@ writeFile($FILE_TEST   , \$output_test   );
 writeFile($FILE_DECLARE, \$output_declare);
 writeFile($FILE_INIT   , \$output_init   );
 writeFile($FILE_PRELOAD, \$output_preload);
-writeFile($FILE_INFO   , \$output_info   );
 
 sub getChild
 {
@@ -398,12 +396,6 @@ sub handleHardcodedEnumVariables
 		$lineno += 1;
 		chomp($line);
 		
-		if (substr($line, 0, 9) eq "InfoArray")
-		{
-			handleInfoArray(substr($line, 9));
-			next;
-		}
-		
 		if (substr($line, 0, 5) eq "enum ")
 		{
 			die("$filename($lineno) found new enum without ending the previous one\n") unless $enum eq "";
@@ -432,62 +424,6 @@ sub handleHardcodedEnumVariables
 	
 	$output .= "#endif // hardcoded xml\n";
 	close($fh);
-}
-
-sub handleInfoArray
-{
-	my $input = shift;
-	my $id = substr($input, 0, 1);
-	my $name = substr($input, 2);
-	$name = substr($name, 0, index($name, ">"));
-	handleInfoArraySingle($name, $id);
-}
-
-sub handleInfoArraySingle
-{
-	my $type = shift;
-	my $id = shift;
-	my $get = "get" . removeType($type);
-	my $index = $id - 1;
-	
-	$get = "getFontSymbol" if $get eq "getFontSymbols";
-	
-	$output_info .= "template<" . addtemplates("typename T", $id, 0) . ">\nclass InfoArray$id<" . addtemplates("typename T", $id, 1) . $type . ">\n\t: ";
-	$output_info .= "public InfoArray$index<" . addtemplates("T", $id, 0) . ">\n" unless $id == 1;
-	$output_info .= "protected InfoArrayBase\n\t, public boost::noncopyable\n" if $id == 1;
-	$output_info .= "{\n";
-	$output_info .= "\tfriend class CyInfoArray;\n";
-	$output_info .= "public:\n";
-	if ($id == 1)
-	{
-		$output_info .= "\tint getLength() const\n\t{\n\t\treturn InfoArrayBase::getLength();\n\t}\n";
-		$output_info .= "\t$type get(int iIndex) const\n";
-		$output_info .= "\t{\n";
-		$output_info .= "\t\treturn static_cast<$type>(getInternal(iIndex, $index));\n";
-		$output_info .= "\t}\n";
-	}
-	$output_info .= "\t$type get$index(int iIndex) const\n";
-	$output_info .= "\t{\n";
-	$output_info .= "\t\treturn static_cast<$type>(getInternal(iIndex, $index));\n";
-	$output_info .= "\t}\n";
-	$output_info .= "\t$type $get(int iIndex) const\n";
-	$output_info .= "\t{\n";
-	$output_info .= "\t\treturn static_cast<$type>(getInternal(iIndex, $index));\n";
-	$output_info .= "\t}\n";
-	$output_info .= "\tint getIndexOf($type eValue) const\n";
-	$output_info .= "\t{\n";
-	$output_info .= "\t\treturn _getIndexOf(eValue, $index);\n";
-	$output_info .= "\t}\n";
-	$output_info .= "protected:\n";
-	$output_info .= "friend class CvCity;\n" if $id == 1;
-	$output_info .= "friend class CvGlobals;\n" if $id == 1;
-	$output_info .= "friend class CivEffectInfo;\n" if $id == 1;
-	$output_info .= "friend class CvPlayerCivEffect;\n" if $id == 1;
-	$output_info .= "friend class CvInfoBase;\n" if $id == 1;
-	$output_info .= "\tInfoArray$id(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)\n";
-	$output_info .= "\t\t: InfoArray" . ($id - 1) . "<" . addtemplates("T", $id, 0) . ">(eType0, eType1, eType2, eType3) {}\n" unless $id == 1;
-	$output_info .= "\t\t: InfoArrayBase(eType0, eType1, eType2, eType3) {}\n" if $id == 1;
-	$output_info .= "};\n";
 }
 
 sub addVanillaSingleValue
@@ -699,41 +635,4 @@ sub addVanillaValues
 	addVanillaSingleValue(\%valueContainer, "END_GAME_DISPLAY_WARNING", 100);
 	
 	addVanillaSingleValueEnum(\%valueContainer, "DEFAULT_POPULATION_UNIT", "UNITCLASS_COLONIST", 0);
-}
-
-sub removeType
-{
-	my $type = shift;
-	
-	return "Int" if $type eq "int";
-	
-	if (substr($type, -5) eq "Types")
-	{
-		$type = substr($type, 0, -5);
-	}
-	return $type;
-}
-
-sub addtemplates
-{
-	my $str = shift;
-	my $id = shift;
-	my $append_comma = shift;
-	
-	my $return = "";
-	
-	my $i = 1;
-	
-	return $return if $i == $id;
-	$return .=  $str . "0";
-	$i = 2;
-	
-	while ($i < $id)
-	{
-		$return .=  ", " . $str . ($i - 1);
-		$i += 1;
-	}
-	
-	$return .= ", " if $append_comma;
-	return $return;
 }
