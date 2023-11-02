@@ -2,7 +2,7 @@
 #include "OpenURL.h"
 #include <algorithm>
 
-#include <shellapi.h>
+#include <ShellAPI.h>
 
 static std::string FixURL(std::string URL)
 {

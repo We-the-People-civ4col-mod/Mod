@@ -1,4 +1,4 @@
-#include "CvGameCoreDll.h"
+#include "CvGameCoreDLL.h"
 #include "AlertWindow.h"
 #include "tinyxml2.h"
 

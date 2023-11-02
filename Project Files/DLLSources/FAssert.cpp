@@ -1,4 +1,4 @@
-#include "CvGameCoreDll.h"
+#include "CvGameCoreDLL.h"
 
 #if defined(FASSERT_ENABLE) && defined(WIN32)
 

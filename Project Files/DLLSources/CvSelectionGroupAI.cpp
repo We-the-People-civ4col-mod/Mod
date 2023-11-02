@@ -9,7 +9,7 @@
 #include "CvDLLEntityIFaceBase.h"
 #include "CvGameCoreUtils.h"
 #include "FProfiler.h"
-#include "CVInfos.h"
+#include "CvInfos.h"
 #include "CvTradeRoute.h"
 //TAC Whaling, ray
 #include "CvDLLInterfaceIFaceBase.h"

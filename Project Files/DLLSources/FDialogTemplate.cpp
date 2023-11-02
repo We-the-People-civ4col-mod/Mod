@@ -1,4 +1,4 @@
-#include "CvGameCoreDll.h"
+#include "CvGameCoreDLL.h"
 #include "FDialogTemplate.h"
 #include "CvGameCoreDLLUndefNew.h"
 

@@ -30,7 +30,7 @@
 #define __TBB_mutex_H
 
 #if _WIN32||_WIN64
-#include <windows.h>
+#include <Windows.h>
 #if !defined(_WIN32_WINNT)
 // The following Windows API function is declared explicitly;
 // otherwise any user would have to specify /D_WIN32_WINNT=0x0400

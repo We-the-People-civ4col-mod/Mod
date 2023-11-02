@@ -17,7 +17,7 @@
 #pragma warning( 3: 4701 ) // local variable used without being initialized
 
 #define WIN32_LEAN_AND_MEAN
-#include <windows.h>
+#include <Windows.h>
 #include <MMSystem.h>
 #if defined _DEBUG && !defined USE_MEMMANAGER
 //#define USE_MEMMANAGER
@@ -316,7 +316,7 @@ std::string GetDLLPath(bool bLoadDLLPath = true);
 #include "CvDLLPythonIFaceBase.h"
 #include "CvRandom.h"
 #include "CvArea.h"
-#include "CvDllEntity.h"
+#include "CvDLLEntity.h"
 #include "CvDeal.h"
 #include "CvDLLEntityIFaceBase.h"
 #include "CvGame.h"

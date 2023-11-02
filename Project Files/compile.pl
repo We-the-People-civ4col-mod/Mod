@@ -53,27 +53,27 @@ sub menu
 	
 	if ($input eq "1")
 	{
-		system("bin\\compile.bat", "Assert");
+		system("bin\\Compile.bat", "Assert");
 	}
 	elsif ($input eq "2")
 	{
-		system("bin\\compile.bat", "Release");
+		system("bin\\Compile.bat", "Release");
 	}
 	elsif ($input eq "3")
 	{
-		system("bin\\compile.bat", "FinalRelease");
+		system("bin\\Compile.bat", "FinalRelease");
 	}
 	elsif ($input eq "4")
 	{
-		system("bin\\compile.bat", "Assert", "_HARDCODED", "-DHARDCODE_XML_VALUES");
+		system("bin\\Compile.bat", "Assert", "_HARDCODED", "-DHARDCODE_XML_VALUES");
 	}
 	elsif ($input eq "5")
 	{
-		system("bin\\compile.bat", "Release", "_HARDCODED", "-DHARDCODE_XML_VALUES");
+		system("bin\\Compile.bat", "Release", "_HARDCODED", "-DHARDCODE_XML_VALUES");
 	}
 	elsif ($input eq "6")
 	{
-		system("bin\\compile.bat", "FinalRelease", "_HARDCODED", "-DHARDCODE_XML_VALUES");
+		system("bin\\Compile.bat", "FinalRelease", "_HARDCODED", "-DHARDCODE_XML_VALUES");
 	}
 	elsif ($input eq "bat")
 	{
@@ -103,27 +103,27 @@ sub createBatMenu
 	
 	if ($input eq "1")
 	{
-		createBat("bin\\compile.bat", "Assert");
+		createBat("bin\\Compile.bat", "Assert");
 	}
 	elsif ($input eq "2")
 	{
-		createBat("bin\\compile.bat", "Release");
+		createBat("bin\\Compile.bat", "Release");
 	}
 	elsif ($input eq "3")
 	{
-		createBat("bin\\compile.bat", "FinalRelease");
+		createBat("bin\\Compile.bat", "FinalRelease");
 	}
 	elsif ($input eq "4")
 	{
-		createBat("bin\\compile.bat", "Assert", "_HARDCODED", "-DHARDCODE_XML_VALUES");
+		createBat("bin\\Compile.bat", "Assert", "_HARDCODED", "-DHARDCODE_XML_VALUES");
 	}
 	elsif ($input eq "5")
 	{
-		createBat("bin\\compile.bat", "Release", "_HARDCODED", "-DHARDCODE_XML_VALUES");
+		createBat("bin\\Compile.bat", "Release", "_HARDCODED", "-DHARDCODE_XML_VALUES");
 	}
 	elsif ($input eq "6")
 	{
-		createBat("bin\\compile.bat", "FinalRelease", "_HARDCODED", "-DHARDCODE_XML_VALUES");
+		createBat("bin\\Compile.bat", "FinalRelease", "_HARDCODED", "-DHARDCODE_XML_VALUES");
 	}
 	else
 	{
