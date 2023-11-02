@@ -3038,7 +3038,7 @@ public:
 */
 
 	#pragma comment(linker, "/EXPORT:?getUnitButton@CvPlayer@@QBEPBDW4UnitTypes@@@Z=?getUnitButton@EXE_CvPlayer@@QBEPBDW4UnitTypes@@@Z")
-	DllExport const TCHAR* getUnitButton(UnitTypes eUnit) const
+	DllExport char const* getUnitButton(UnitTypes eUnit) const
 	{
 		if (eUnit <= UNIT_PLACEHOLDER)
 		{

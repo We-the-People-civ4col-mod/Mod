@@ -256,7 +256,7 @@ public:
 	DllExport bool isInvertFlag() const;
 	DllExport const CvWString getWorstEnemyName() const;
 	DllExport ArtStyleTypes getArtStyleType() const;
-	const TCHAR* getUnitButton(UnitTypes eUnit) const;
+	char const* getUnitButton(UnitTypes eUnit) const;
 	void doTurn();
 	void doTurnUnits();
 	void doEra();

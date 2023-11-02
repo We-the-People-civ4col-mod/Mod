@@ -4164,10 +4164,10 @@ public:
 	const wchar* getPlural() const { return m_szPlural; }
 	DllExport int getNumLanguages() const; // not static for Python access
 	DllExport void setNumLanguages(int iNum); // not static for Python access
-	bool read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName, const TCHAR* szLanguage);
+	bool read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName, char const* szLanguage);
 
 	static int getNumLanguagesStatic();
-	static const TCHAR* getLanguageName(int iLanguageID);
+	static char const* getLanguageName(int iLanguageID);
 	static int getLanguageAtIndex(int iIndex);
 	static bool readLanguages(CvXMLLoadUtility* pXML);
 	static void setChangeLanguage();
@@ -4464,7 +4464,7 @@ public:
 	int getNumWorldNews() const;
 
 	// Start EmperorFool: Events with Images
-	const TCHAR* getEventArt() const;				// Exposed to Python
+	char const* getEventArt() const;				// Exposed to Python
 	// End EmperorFool: Events with Images
 	bool isTutorial() const;
 	bool isSinglePlayer() const;

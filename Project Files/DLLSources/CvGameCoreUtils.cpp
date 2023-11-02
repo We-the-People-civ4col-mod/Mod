@@ -2166,13 +2166,13 @@ int joinArea(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 	return 1;
 }
 
-bool isPickableName(const TCHAR* szName)
+bool isPickableName(char const* szName)
 {
 	if (szName)
 	{
-		int iLen = _tcslen(szName);
+		int iLen = strlen(szName);
 
-		if (!_tcsicmp(&szName[iLen-6], "NOPICK"))
+		if (!_stricmp(&szName[iLen-6], "NOPICK"))
 		{
 			return false;
 		}
@@ -2507,7 +2507,7 @@ void postLoadGameFixes()
 
 		kPlayer.postLoadFixes();
 	}
-	
+
 #ifdef _DEBUG
 	//jburet, pointer sanity check
 	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)

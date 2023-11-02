@@ -739,8 +739,8 @@ public:
 
 	DllExport bool isOnMap() const;
 	const CvArtInfoUnit* getArtInfo(int i) const;
-	DllExport const TCHAR* getButton() const;
-	const TCHAR* getFullLengthIcon() const;
+	DllExport char const* getButton() const;
+	char const* getFullLengthIcon() const;
 
 	bool isColonistLocked();
 	void setColonistLocked(bool bNewValue);

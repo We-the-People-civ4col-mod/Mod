@@ -52,27 +52,27 @@ float CvWaterPlaneInfo::getMaterialAlpha() const		// The water plane's material 
 	return m_fMaterialAlpha;
 }
 //------------------------------------------------------------------------------------------------------
-const TCHAR * CvWaterPlaneInfo::getBaseTexture() const
+char const* CvWaterPlaneInfo::getBaseTexture() const
 {
 	return m_szBaseTexture;
 }
 //------------------------------------------------------------------------------------------------------
-const TCHAR * CvWaterPlaneInfo::getNormalTexture() const
+char const* CvWaterPlaneInfo::getNormalTexture() const
 {
 	return m_szNormalTexture;
 }
 //------------------------------------------------------------------------------------------------------
-const TCHAR * CvWaterPlaneInfo::getTransitionTexture() const
+char const* CvWaterPlaneInfo::getTransitionTexture() const
 {
 	return m_szTransitionTexture;
 }
 //------------------------------------------------------------------------------------------------------
-const TCHAR * CvWaterPlaneInfo::getEnvironmentTexture() const
+char const* CvWaterPlaneInfo::getEnvironmentTexture() const
 {
 	return m_szEnvironmentTexture;
 }
 //------------------------------------------------------------------------------------------------------
-const TCHAR * CvWaterPlaneInfo::getGridTexture() const
+char const* CvWaterPlaneInfo::getGridTexture() const
 {
 	return m_szGridTexture;
 }
@@ -135,7 +135,7 @@ CvTerrainPlaneInfo::CvTerrainPlaneInfo() :
 	m_fZHeight(0.0f),
 	m_eFogType(FOG_TYPE_NONE),
 	m_bCitySelection(false)
-{	
+{
 }
 
 //------------------------------------------------------------------------------------------------------
@@ -174,12 +174,12 @@ float CvTerrainPlaneInfo::getCloseAlpha() const		// The water plane's material a
 	return m_fCloseAlpha;
 }
 //------------------------------------------------------------------------------------------------------
-const TCHAR * CvTerrainPlaneInfo::getBaseTexture() const
+char const* CvTerrainPlaneInfo::getBaseTexture() const
 {
 	return m_szBaseTexture;
 }
 //------------------------------------------------------------------------------------------------------
-void CvTerrainPlaneInfo::setBaseTexture(const TCHAR* szVal)			// The filename of the base texture
+void CvTerrainPlaneInfo::setBaseTexture(char const* szVal)			// The filename of the base texture
 {
 	m_szBaseTexture=szVal;
 }
@@ -285,12 +285,12 @@ bool CvCameraOverlayInfo::isVisible() const
 	return m_bVisible;
 }
 //------------------------------------------------------------------------------------------------------
-const TCHAR * CvCameraOverlayInfo::getBaseTexture() const
+char const* CvCameraOverlayInfo::getBaseTexture() const
 {
 	return m_szBaseTexture;
 }
 //------------------------------------------------------------------------------------------------------
-void CvCameraOverlayInfo::setBaseTexture(const TCHAR* szVal)			// The filename of the base texture
+void CvCameraOverlayInfo::setBaseTexture(char const* szVal)			// The filename of the base texture
 {
 	m_szBaseTexture = szVal;
 }

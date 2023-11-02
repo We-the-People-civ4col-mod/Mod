@@ -2130,7 +2130,7 @@ ArtStyleTypes CvPlayer::getArtStyleType() const
 	}
 }
 
-const TCHAR* CvPlayer::getUnitButton(UnitTypes eUnit) const
+char const* CvPlayer::getUnitButton(UnitTypes eUnit) const
 {
 	//Androrc UnitArtStyles
 //	return GC.getUnitInfo(eUnit).getArtInfo(0, NO_PROFESSION)->getButton();
@@ -8402,7 +8402,7 @@ void CvPlayer::setTurnActive(bool bNewValue, bool bDoTurn)
 			{
 				if (gDLL->getChtLvl() > 0)
 				{
-					TCHAR szOut[1024];
+					char szOut[1024];
 					sprintf(szOut, "Player %d Turn ON\n", getID());
 					gDLL->messageControlLog(szOut);
 				}
@@ -8484,7 +8484,7 @@ void CvPlayer::setTurnActive(bool bNewValue, bool bDoTurn)
 			{
 				if (gDLL->getChtLvl() > 0)
 				{
-					TCHAR szOut[1024];
+					char szOut[1024];
 					sprintf(szOut, "Player %d Turn OFF\n", getID());
 					gDLL->messageControlLog(szOut);
 				}

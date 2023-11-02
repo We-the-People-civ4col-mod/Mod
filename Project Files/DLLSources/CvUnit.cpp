@@ -14347,7 +14347,7 @@ const CvArtInfoUnit* CvUnit::getArtInfo(int i) const
 	//Androrc End
 }
 
-const TCHAR* CvUnit::getButton() const
+char const* CvUnit::getButton() const
 {
 	const CvArtInfoUnit* pArtInfo = getArtInfo(0);
 
@@ -14359,7 +14359,7 @@ const TCHAR* CvUnit::getButton() const
 	return m_pUnitInfo->getButton();
 }
 
-const TCHAR* CvUnit::getFullLengthIcon() const
+char const* CvUnit::getFullLengthIcon() const
 {
 	const CvArtInfoUnit* pArtInfo = getArtInfo(0);
 

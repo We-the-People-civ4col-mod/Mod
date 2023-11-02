@@ -48,7 +48,7 @@ static int getNumEntries(const std::string& path, const char* file)
 static std::string GetCurrentDirectory(bool bLoadDLLPath)
 {
 	char buffer[MAX_PATH];
-	GetModuleFileNameA(bLoadDLLPath ? GetModuleHandle(_T("CvGameCoreDLL.dll")) : NULL, buffer, MAX_PATH);
+	GetModuleFileNameA(bLoadDLLPath ? GetModuleHandle("CvGameCoreDLL.dll") : NULL, buffer, MAX_PATH);
 	std::string::size_type pos = std::string(buffer).find_last_of("\\/");
 
 	return std::string(buffer).substr(0, pos);
@@ -77,7 +77,7 @@ void setupVARINFO();
 loadXML::loadXML()
 {
 	const std::string basePath = GetCurrentDirectory(true);
-	
+
 	setXmlLengthsAuto(basePath);
 	setupVARINFO();
 }

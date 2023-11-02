@@ -1214,7 +1214,7 @@ void CvPromotionInfo::calculateAvailableForDefensiveUnit()
 			m_bAvailableForDefensiveUnit = false;   return;
 		}
 	}
-	m_bAvailableForDefensiveUnit = true; 
+	m_bAvailableForDefensiveUnit = true;
 }
 
 const char* CvPromotionInfo::getSound() const
@@ -5538,7 +5538,7 @@ const CvArtInfoBuilding* CvBuildingInfo::getArtInfo() const
 const CvArtInfoMovie* CvBuildingInfo::getMovieInfo() const
 {
 	const char* pcTag = getMovieDefineTag();
-	if (NULL != pcTag && 0 != _tcscmp(pcTag, "NONE"))
+	if (NULL != pcTag && 0 != strcmp(pcTag, "NONE"))
 	{
 		return ARTFILEMGR.getMovieArtInfo(pcTag);
 	}
@@ -6536,7 +6536,7 @@ CvWString CvCivilizationInfo::getGeneralNames(int i) const
 {
 	FAssertMsg(i < getNumGeneralNames(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	
+
 	CvWString tag;
 	tag.Format(L"%s_GENERAL_%d", m_szTextKey.GetCString(), i);
 	return gDLL->getText(tag);
@@ -6548,7 +6548,7 @@ CvWString CvCivilizationInfo::getAdmiralNames(int i) const
 {
 	FAssertMsg(i < getNumAdmiralNames(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	
+
 	CvWString tag;
 	tag.Format(L"%s_ADMIRAL_%d", m_szTextKey.GetCString(), i);
 	return gDLL->getText(tag);
@@ -6560,7 +6560,7 @@ CvWString CvCivilizationInfo::getShipNames(int i) const
 {
 	FAssertMsg(i < getNumShipNames(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	
+
 	CvWString tag;
 	tag.Format(L"%s_SHIP_%d", m_szTextKey.GetCString(), i);
 	return gDLL->getText(tag);
@@ -12407,14 +12407,14 @@ bool CvAnimationPathInfo::read(CvXMLLoadUtility* pXML)
 	gDLL->getXMLIFace()->NextSibling(pXML->GetXML());
 	do
 	{
-		if ( pXML->GetChildXmlValByName( szTempString, _T("Category") ))
+		if ( pXML->GetChildXmlValByName( szTempString, "Category" ))
 		{
 			iCurrentCategory = pXML->FindInInfoClass( szTempString);
 			fParameter = 0.0f;
 		}
 		else
 		{
-			pXML->GetChildXmlValByName( szTempString, _T("Operator"));
+			pXML->GetChildXmlValByName( szTempString, "Operator" );
 			iCurrentCategory = GC.getInfoTypeForString(szTempString);
 			iCurrentCategory = ((int)ANIMOP_FIRST) + iCurrentCategory;
 			if ( !pXML->GetChildXmlValByName( &fParameter, "Parameter" ) )
@@ -13777,7 +13777,7 @@ int CvGameText::getLanguageAtIndex(int iIndex)
 	return 0;
 }
 
-const TCHAR* CvGameText::getLanguageName(int iLanguageID)
+char const* CvGameText::getLanguageName(int iLanguageID)
 {
 	// The game will store the chosen language as an int, not a string.
 	// This has a history of messing up switching between mods.
@@ -13928,7 +13928,7 @@ void CvGameText::setText(const wchar* szText)
 {
 	m_szText = szText;
 }
-bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName, const TCHAR* szLanguage)
+bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName, char const* szLanguage)
 {
 	CvString szTextVal;
 	CvWString wszTextVal;
@@ -14868,7 +14868,7 @@ bool CvEventTriggerInfo::isTeam() const
 }
 
 // Begin EmperorFool: Events with Images
-const TCHAR* CvEventTriggerInfo::getEventArt() const
+char const* CvEventTriggerInfo::getEventArt() const
 {
 	if (m_szEventArt.empty())
 	{

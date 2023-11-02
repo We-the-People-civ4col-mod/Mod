@@ -612,7 +612,7 @@ public:
 	DllExport CvString& getFootstepAudioTags(int i);
 
 	CvString& getCurrentXMLFile();
-	void setCurrentXMLFile(const TCHAR* szFileName);
+	void setCurrentXMLFile(char const* szFileName);
 
 	//
 	///////////////// BEGIN global defines

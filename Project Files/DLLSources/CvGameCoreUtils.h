@@ -343,7 +343,7 @@ int borderValid(FAStarNode* parent, FAStarNode* node, int data, const void* poin
 int areaValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
 int joinArea(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
 
-bool isPickableName(const TCHAR* szName);
+bool isPickableName(char const* szName);
 
 int getTurnMonthForGame(int iGameTurn, int iStartYear, CalendarTypes eCalendar, GameSpeedTypes eSpeed);
 int getTurnYearForGame(int iGameTurn, int iStartYear, CalendarTypes eCalendar, GameSpeedTypes eSpeed);

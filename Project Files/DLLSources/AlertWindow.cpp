@@ -91,7 +91,7 @@ void AlertWindow::setIcon(iconTypes eIcon)
 	m_Icon = eIcon;
 }
 
-void testStringCompare(tinyxml2::XMLElement* tagElement, CvString& str, const TCHAR* languageName)
+void testStringCompare(tinyxml2::XMLElement* tagElement, CvString& str, char const* languageName)
 {
 	if (str == tagElement->GetText())
 	{
@@ -156,7 +156,7 @@ void AlertWindow::setMessageArguments(int i1, int i2, int i3, int i4, int i5)
 	}
 	FAssert(gDLL != NULL);
 	// use English if somebody adds an alert window prior to gDLL being set (hence no current language available)
-	const TCHAR* languageName = gDLL != NULL ? CvGameText::getLanguageName(gDLL->getCurrentLanguage()) : "English";
+	char const* languageName = gDLL != NULL ? CvGameText::getLanguageName(gDLL->getCurrentLanguage()) : "English";
 
 	tinyxml2::XMLElement* loopElement = doc.FirstChildElement("Civ4GameText");
 

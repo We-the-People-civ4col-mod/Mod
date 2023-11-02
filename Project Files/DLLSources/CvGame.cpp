@@ -5108,7 +5108,7 @@ const CvWString & CvGame::getName()
 }
 
 
-void CvGame::setName(const TCHAR* szName)
+void CvGame::setName(char const* szName)
 {
 	GC.getInitCore().setGameName(szName);
 }

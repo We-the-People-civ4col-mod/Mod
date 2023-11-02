@@ -25,7 +25,6 @@
 #endif
 #include <vector>
 #include <list>
-#include <tchar.h>
 #include <math.h>
 #include <assert.h>
 #include <map>
@@ -36,7 +35,7 @@
 #define DllExport   __declspec( dllexport )
 
 // The makefile use version 1310 to compile
-// VC use never versions for IntelliSense 
+// VC use never versions for IntelliSense
 // Used to avoid IntelliSense spamming bogus errors
 #if _MSC_VER == 1310
 # define MakefileCompilation
