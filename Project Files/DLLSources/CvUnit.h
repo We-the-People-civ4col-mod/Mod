@@ -427,19 +427,15 @@ public:
 	int getAmountForNativeTrade() const;
 	// R&R, ray, Natives Trading - END
 	DllExport int getX() const;
-#ifdef _USRDLL
 	inline int getX_INLINE() const
 	{
 		return m_coord.x();
 	}
-#endif
 	DllExport int getY() const;
-#ifdef _USRDLL
 	inline int getY_INLINE() const
 	{
 		return m_coord.y();
 	}
-#endif
 	inline const Coordinates& coord() const
 	{
 		return m_coord;
@@ -616,12 +612,10 @@ public:
 	DllExport void setInfoBarDirty(bool bNewValue);
 
 	DllExport PlayerTypes getOwner() const;
-#ifdef _USRDLL
 	inline PlayerTypes getOwnerINLINE() const
 	{
 		return m_eOwner;
 	}
-#endif
 	CvPlayer &getOwnerR() const;
 	DllExport PlayerTypes getVisualOwner(TeamTypes eForTeam = NO_TEAM) const;
 	PlayerTypes getCombatOwner(TeamTypes eForTeam, const CvPlot* pPlot) const;

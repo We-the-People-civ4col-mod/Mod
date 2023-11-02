@@ -76,8 +76,8 @@ BLACKLIST=CvTextScreens
 ## Assert adds /DFASSERT_ENABLE, which should be added to additional options too, if you care.
 ## However you will only be able to tell a difference if you do something with asserts other than FAssert() or FAssertMsg()
 
-Debug_DEFINES=/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /D_DEBUG
-Release_DEFINES=/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE
+Debug_DEFINES=/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /D_DEBUG
+Release_DEFINES=/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE
 
 #### You shouldn't need to modify anything beyond this point ####
 #################################################################

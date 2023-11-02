@@ -218,21 +218,19 @@ public:
 	bool isImpassable() const;
 
 	DllExport int getX() const;
-#ifdef _USRDLL
 	inline int getX_INLINE() const
 	{
 		// return m_iX;
 		return m_coord.x();
 	}
-#endif
+
 	DllExport int getY() const;
-#ifdef _USRDLL
 	inline int getY_INLINE() const
 	{
 		// return m_iY;
 		return m_coord.y();
 	}
-#endif
+
 	inline const Coordinates& coord() const
 	{
 		return m_coord;
@@ -327,12 +325,10 @@ public:
 	void setFlagDirty(bool bNewValue);
 
 	DllExport PlayerTypes getOwner() const;
-#ifdef _USRDLL
 	inline PlayerTypes getOwnerINLINE() const
 	{
 		return m_eOwner;
 	}
-#endif
 	void setOwner(PlayerTypes eNewValue, bool bCheckUnits);
 	PlotTypes getPlotType() const;
 	DllExport bool isWater() const;

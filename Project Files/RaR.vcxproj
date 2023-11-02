@@ -548,7 +548,7 @@ nmake fastdep /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Debug
 nmake clean  /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath>
     </NMakeIncludeSearchPath>
   </PropertyGroup>
@@ -565,7 +565,7 @@ nmake fastdep /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Profile
 nmake clean  /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath>
     </NMakeIncludeSearchPath>
   </PropertyGroup>
@@ -582,7 +582,7 @@ nmake fastdep /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Release
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath>
     </NMakeIncludeSearchPath>
   </PropertyGroup>
@@ -599,7 +599,7 @@ nmake fastdep /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=FinalRelease
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Assert|Win32'">
@@ -615,7 +615,7 @@ nmake fastdep /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Assert
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DFASSERT_ENABLE /DUSE_DATA_DIR</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DFASSERT_ENABLE /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath>
     </NMakeIncludeSearchPath>
   </PropertyGroup>
@@ -634,7 +634,7 @@ nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Release
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath>
     </NMakeIncludeSearchPath>
   </PropertyGroup>
@@ -659,7 +659,7 @@ bin\jom build /NOLOGO</NMakeReBuildCommandLine>
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Release
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Final Release|Win32'">
@@ -683,7 +683,7 @@ bin\jom build /NOLOGO</NMakeReBuildCommandLine>
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=FinalRelease
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Final Release|Win32'">
@@ -701,7 +701,7 @@ nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=FinalRelease
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Build Release|Win32'">
@@ -723,7 +723,7 @@ bin\jom build /NOLOGO &amp;&amp; ^
 nmake BuildRelease /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=FinalRelease
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Debug|Win32'">
@@ -741,7 +741,7 @@ nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Debug
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test-Debug|Win32'">
@@ -765,7 +765,7 @@ bin\jom test /NOLOGO</NMakeReBuildCommandLine>
 set TEMP_DIR_POSTFIX=_TEST
 set TARGET=Debug
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR /DCHECK_GLOBAL_CONSTANTS</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR /DCHECK_GLOBAL_CONSTANTS</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Debug|Win32'">
@@ -789,7 +789,7 @@ bin\jom build /NOLOGO</NMakeReBuildCommandLine>
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Debug
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Profile|Win32'">
@@ -807,7 +807,7 @@ nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Profile
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DPROFILING_ENABLED</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DPROFILING_ENABLED</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Profile|Win32'">
@@ -831,7 +831,7 @@ bin\jom build /NOLOGO</NMakeReBuildCommandLine>
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Profile
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES /DPROFILING_ENABLED</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES /DPROFILING_ENABLED</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Assert|Win32'">
@@ -849,7 +849,7 @@ nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Assert
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DFASSERT_ENABLE /DUSE_DATA_DIR</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DFASSERT_ENABLE /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath>
     </NMakeIncludeSearchPath>
   </PropertyGroup>
@@ -874,7 +874,7 @@ bin\jom build /NOLOGO</NMakeReBuildCommandLine>
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Assert
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DFASSERT_ENABLE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DFASSERT_ENABLE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <ItemDefinitionGroup>

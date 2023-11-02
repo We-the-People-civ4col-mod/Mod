@@ -154,36 +154,31 @@ public:
 	bool findWater(CvPlot* pPlot, int iRange, bool bFreshWater);
 
 	DllExport bool isPlot(int iX, int iY) const;
-#ifdef _USRDLL
 	inline int isPlotINLINE(int iX, int iY) const
 	{
 		return ((iX >= 0) && (iX < getGridWidthINLINE()) && (iY >= 0) && (iY < getGridHeightINLINE()));
 	}
-
 	inline int isPlotINLINE(Coordinates coord) const
 	{
 		return coord.isOnMap();
 	}
-#endif
+
 	DllExport int numPlots() const;
-#ifdef _USRDLL
 	inline int numPlotsINLINE() const
 	{
 		return getGridWidthINLINE() * getGridHeightINLINE();
 	}
-#endif
+
 	DllExport int plotNum(int iX, int iY) const;
-#ifdef _USRDLL
 	inline int plotNumINLINE(int iX, int iY) const
 	{
 		return ((iY * getGridWidthINLINE()) + iX);
 	}
-
 	inline int plotNumINLINE(Coordinates coord) const
 	{
 		return ((coord.y() * getGridWidthINLINE()) + coord.x());
 	}
-#endif
+
 	int plotX(int iIndex) const;
 	int plotY(int iIndex) const;
 
@@ -199,19 +194,17 @@ public:
 	int maxStepDistance();
 
 	DllExport int getGridWidth() const;
-#ifdef _USRDLL
 	inline int getGridWidthINLINE() const
 	{
 		return m_iGridWidth;
 	}
-#endif
+
 	DllExport int getGridHeight() const;
-#ifdef _USRDLL
 	inline int getGridHeightINLINE() const
 	{
 		return m_iGridHeight;
 	}
-#endif
+
 	int getLandPlots();
 	void changeLandPlots(int iChange);
 	int getOwnedPlots();
@@ -223,26 +216,23 @@ public:
 	void incrementNextRiverID();
 
 	DllExport bool isWrapX();
-#ifdef _USRDLL
 	inline bool isWrapXINLINE() const
 	{
 		return m_bWrapX;
 	}
-#endif
+
 	DllExport bool isWrapY();
-#ifdef _USRDLL
 	inline bool isWrapYINLINE() const
 	{
 		return m_bWrapY;
 	}
-#endif
+
 	DllExport bool isWrap();
-#ifdef _USRDLL
 	inline bool isWrapINLINE() const
 	{
 		return m_bWrapX || m_bWrapY;
 	}
-#endif
+
 	DllExport WorldSizeTypes getWorldSize();
 	ClimateTypes getClimate();
 	SeaLevelTypes getSeaLevel();
@@ -254,15 +244,14 @@ public:
 	void changeNumBonuses(BonusTypes eIndex, int iChange);
 	int getNumBonusesOnLand(BonusTypes eIndex);
 	void changeNumBonusesOnLand(BonusTypes eIndex, int iChange);
+
 	DllExport CvPlot* plotByIndex(int iIndex) const;
-#ifdef _USRDLL
 	inline CvPlot* plotByIndexINLINE(int iIndex) const
 	{
 		return (((iIndex >= 0) && (iIndex < (getGridWidthINLINE() * getGridHeightINLINE()))) ? &(m_pMapPlots[iIndex]) : NULL);
 	}
-#endif
+
 	DllExport CvPlot* plot(int iX, int iY) const;
-#ifdef _USRDLL
 	__forceinline CvPlot* plotINLINE(int iX, int iY) const
 	{
 		if ((iX == INVALID_PLOT_COORD) || (iY == INVALID_PLOT_COORD))
@@ -310,7 +299,7 @@ public:
 		FAssert(isPlotINLINE(coord));
 		return m_pMapPlots[plotNumINLINE(coord)];
 	} // </advc.inl>
-#endif
+
 	DllExport CvPlot* pointToPlot(float fX, float fY);
 	int getIndexAfterLastArea();
 	int getNumAreas();

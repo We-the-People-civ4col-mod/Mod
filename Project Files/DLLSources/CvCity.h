@@ -206,19 +206,15 @@ public:
 	DllExport IDInfo getIDInfo() const;
 	void setID(int iID);
 	DllExport int getX() const;
-#ifdef _USRDLL
 	inline int getX_INLINE() const
 	{
 		return m_coord.x();
 	}
-#endif
 	DllExport int getY() const;
-#ifdef _USRDLL
 	inline int getY_INLINE() const
 	{
 		return m_coord.y();
 	}
-#endif
 	inline const Coordinates& coord() const
 	{
 		return m_coord;
@@ -322,12 +318,10 @@ public:
 	DllExport void setLayoutDirty(bool bNewValue);
 
 	DllExport PlayerTypes getOwner() const;
-#ifdef _USRDLL
 	inline PlayerTypes getOwnerINLINE() const
 	{
 		return m_eOwner;
 	}
-#endif
 	DllExport TeamTypes getTeam() const;
 
 	PlayerTypes getPreviousOwner() const;

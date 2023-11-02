@@ -10,18 +10,6 @@
 #include "CvGlobals.h"
 #include "CvMap.h"
 
-#ifndef _USRDLL
-// use non inline functions when not in the dll
-#define getMapINLINE	getMap
-#define getGridHeightINLINE	getGridHeight
-#define getGridWidthINLINE	getGridWidth
-#define isWrapYINLINE	isWrapY
-#define isWrapXINLINE	isWrapX
-#define plotINLINE	plot
-#define getX_INLINE	getX
-#define getY_INLINE	getY
-
-#endif
 
 class CvPlot;
 class CvCity;
