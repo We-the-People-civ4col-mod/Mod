@@ -3015,31 +3015,6 @@
         <Spanish>La unidad del [COLOR_UNIT_TEXT]Cañón[COLOR_REVERT] es la clave para conseguir la victoria en cualquier asedio. Cuando ataca un asentamiento enemigo, su potencia de ataque se dobla, lo cual lo convierte en la unidad más potente que hay disponible. Estas unidades además reciben una bonificación cuando defienden desde dentro de un asentamiento y se pueden emplear para bajar las bonificaciones defensivas de los asentamientos a los que estén atacando.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_HEMP</Tag>
-        <English>Hemp</English>
-        <French>
-            <Text>Chanvre</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Hanf</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Canapa</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Cáñamo</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Конопля</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNIT_HEMP_PEDIA</Tag>
         <English>Since the Middle Ages, hemp has been one of the most important natural fibres for cloth, ropes and other woven or braided goods.[NEWLINE]During colonization it was brought to the New World where large plantations evolved.[NEWLINE]George Washington grew hemp.[NEWLINE]Textile hemp is a cultivated variety of the Cannabaceae family.[NEWLINE]It is an annual plant, selected for the size of its stem and its low content of THC or other cannabinoids from the species that botanists call cultivated hemp (Cannabis sativa L.).[NEWLINE]Although referring to the same botanical species, 'hemp' is now the preferred term for the industrial plant and its fibre, while 'cannabis' is the scientific name for the recreational or medical form.</English>
         <French>[TAB]Le chanvre, chanvre textile, chanvre industriel ou chanvre agricole est une variété de plante cultivée de la famille des Cannabaceae. C'est une plante annuelle, sélectionnée pour la taille de sa tige et sa faible teneur en THC ou autres cannabinoïdes à partir de l'espèce que les botanistes nomment le Chanvre cultivé (Cannabis sativa L.). Il est parfois appelé localement « chènevis », comme le nom de la graine de chanvre. Bien que désignant la même espèce botanique, le terme chanvre est désormais utilisé de préférence pour désigner la plante industrielle et sa fibre végétale, tandis que Cannabis est le nom scientifique utilisé aussi pour désigner la forme récréative ou médicale.</French>
@@ -4231,27 +4206,6 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_ORCA_STRATEGY</Tag>
         <English>TXT_KEY_UNIT_ANIMAL_STRATEGY</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_ORE</Tag>
-        <English>Ore</English>
-        <French>
-            <Text>Minerai de fer:Minerais de fer</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Eisenerz</German>
-        <Italian>
-            <Text>Minerale</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Mineral</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Руда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ORE_PEDIA</Tag>
@@ -6016,35 +5970,6 @@
         <German>Wird ein [COLOR_UNIT_TEXT]Weiser Staatsmann[COLOR_REVERT] dem Beruf des [COLOR_HIGHLIGHT_TEXT]Staatsmannes[COLOR_REVERT] zugewiesen, verdoppelt sich die Anzahl der produzierten [LINK=YIELD_BELLS]Freiheitsglocken[\LINK].[PARAGRAPH:2]In [COLOR_BUILDING_TEXT]Gemeindehaus[COLOR_REVERT], [COLOR_BUILDING_TEXT]Stadthalle[COLOR_REVERT], [COLOR_BUILDING_TEXT]Rathaus[COLOR_REVERT] und [COLOR_BUILDING_TEXT]Regierungspalast[COLOR_REVERT] können Bürger im Beruf des Staatsmannes arbeiten und [LINK=YIELD_BELLS]Freiheitsglocken[\LINK] herstellen. [COLOR_BUILDING_TEXT]Druckerpresse[COLOR_REVERT] und [COLOR_BUILDING_TEXT]Zeitung[COLOR_REVERT] geben Aufschläge auf die Produktion. Freiheitsglocken sind eine virtuelle Ware, die die [COLOR_HIGHLIGHT_TEXT]Rebellische Stimmung[COLOR_REVERT] steigen lässt und zudem Politikpunkte für Gründerväter erzeugt.</German>
         <Italian>Gli [COLOR_UNIT_TEXT]statisti anziani[COLOR_REVERT] sono esperti produttori di [COLOR_HIGHLIGHT_TEXT]campane della libertà[COLOR_REVERT]. Assegnandone uno alla professione di statista raddoppierai il numero di [COLOR_HIGHLIGHT_TEXT]campane della libertà[COLOR_REVERT] prodotte.</Italian>
         <Spanish>Los [COLOR_UNIT_TEXT]Estadistas mayores[COLOR_REVERT] son expertos productores de [COLOR_HIGHLIGHT_TEXT]Campanas de la libertad[COLOR_REVERT]. Asignar a uno de ellos a la profesión de Estadista doblará el número de [COLOR_HIGHLIGHT_TEXT]Campanas de la libertad[COLOR_REVERT] producidas.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_STONE</Tag>
-        <English>
-            <Text>Stone:Stones</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </English>
-        <French>
-            <Text>Pierre:Pierres</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Stein:Steine</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </German>
-        <Italian>
-            <Text>Pietra:Pietre</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Piedra:Piedras</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Камень:Камни</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_STONE_PEDIA</Tag>

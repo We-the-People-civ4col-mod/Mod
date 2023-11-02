@@ -681,32 +681,6 @@
         <Russian>Лен</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_FLAX</Tag>
-        <English>Flax</English>
-        <French>Lin</French>
-        <German>
-            <Text>Flachs</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Lino</Italian>
-        <Spanish>Lino</Spanish>
-        <Russian>Лен</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_FLAX</Tag>
-        <English>Flax</English>
-        <French>Lin</French>
-        <German>
-            <Text>Flachs</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Lino</Italian>
-        <Spanish>Lino</Spanish>
-        <Russian>Лен</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_YIELD_FLAX_PEDIA</Tag>
         <English>[H1]FLAX[\H1][NEWLINE][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Flax[COLOR_REVERT], like hemp, is the raw material for[LINK=YIELD_SAILCLOTH]sailcloth[\LINK] and [LINK=YIELD_ROPE]ropes[\LINK], which are made by the [LINK=PROFESSION_SAILCLOTH_MAKER]sailmaker[\LINK] and [LINK=PROFESSION_ROPES_MAKER]roper[\LINK] in the [LINK=BUILDING_DOCK]dock[\LINK] or one of its upgrades. Flax grows on many different terrains. To harvest it, a colonist needs to have the [LINK=PROFESSION_FLAX_PLANTER]flax planter[\LINK] profession. The flax harvest can be doubled by employing [LINK=UNIT_LINEN_PLANTER]expert flax planters[\LINK] who can be hired in Europe or trained in Native villages.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]Linen fabrics woven from wild flax date back over 30,000 years. Devout colonists all know that linen is frequently mentioned in the Bible.[NEWLINE][NEWLINE]Linen is comfortable to wear in hot weather. The fabric is strong and absorbent, though it does wrinkle.</English>
         <French>[H1]LIN[\H1][NEWLINE][BOLD]Stratégie :[\BOLD][NEWLINE]Le [COLOR_HIGHLIGHT_TEXT]lin[COLOR_REVERT] pousse dans les plaines sur un terrain de [LINK=TERRAIN_TAIGA]taiga[\LINK]. Pour le récolter, un colon doit avoir la profession de [LINK=PROFESSION_FLAX_PLANTER]planteur de lin[\LINK]. La récolte de lin peut être doublée en employant des [LINK=UNIT_LINEN_PLANTER]planteurs de lin experts[\LINK] qui peuvent être embauchés en Europe ou formés dans les villages autochtones.[NEWLINE][NEWLINE][BOLD]Contexte :[\BOLD][NEWLINE]Les tissus de lin tissés à partir de lin sauvage remontent à plus de 30 000 ans. Les colons dévots savent tous que le lin est fréquemment mentionné dans la Bible.[NEWLINE][NEWLINE]Le lin est agréable à porter par temps chaud. Le tissu est solide et absorbant, mais il se froisse.</French>
@@ -1129,32 +1103,6 @@
         <Russian>Глина</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_CLAY</Tag>
-        <English>Clay</English>
-        <French>Argile</French>
-        <German>
-            <Text>Lehm</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Argilla</Italian>
-        <Spanish>Arcilla</Spanish>
-        <Russian>Глина</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_CLAY</Tag>
-        <English>Clay</English>
-        <French>Argile</French>
-        <German>
-            <Text>Lehm</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Argilla</Italian>
-        <Spanish>Arcilla</Spanish>
-        <Russian>Глина</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_YIELD_CLAY_PEDIA</Tag>
         <English>[H1]CLAY[\H1][NEWLINE][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Clay[COLOR_REVERT] - a lot of clay - is used for the construction of larger buildings. Along with [LINK=YIELD_STONE]stone[\LINK] and [LINK=YIELD_TOOLS]tools[\LINK], towns in the mid-game need shiploads of clay. Clay is also used to make [LINK=YIELD_POTTERY]pottery[\LINK]. To collect it, a colonist needs to have the [LINK=PROFESSION_CLAY_MINER]clay cutter[\LINK] profession. The supply of clay can be doubled by commissioning [LINK=UNIT_PEAT_CUTTER]expert peat and clay cutters[\LINK] who can be hired in Europe or trained in Native villages.[NEWLINE] Clay is found on hills on [LINK=TERRAIN_MARSH]marsh[\LINK], [LINK=TERRAIN_WETLAND]wetlands[\LINK] or [LINK=TERRAIN_TUNDRA]tundra[\LINK] terrain.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]Clay develops plasticity when wet, due to a molecular film of water surrounding the clay particles, but becomes hard, brittle and non-plastic upon drying or firing. Shale, formed largely from clay, is the most common sedimentary rock.[NEWLINE][NEWLINE]Clay is the oldest known ceramic material. Prehistoric humans used it for making pottery. Early pottery shards have been dated to 14,000 BC, and clay tablets are the first known writing medium.</English>
         <French>[H1]ARGILE[\H1][NEWLINE][BOLD]Stratégie :[\BOLD][NEWLINE]L'[COLOR_HIGHLIGHT_TEXT]argile[COLOR_REVERT] se trouve sur les collines des terrains de [LINK=TERRAIN_MARSH]marais[\LINK], de [LINK=TERRAIN_WETLAND]zones humides[\LINK] ou de [LINK=TERRAIN_TUNDRA]tundra[\LINK]. Pour la collecter, un colon doit avoir la profession de [LINK=PROFESSION_CLAY_MINER]coupeur d'argile[\LINK]. L'approvisionnement en argile peut être doublé en faisant appel à des [LINK=UNIT_PEAT_CUTTER]coupeurs de tourbe et d'argile experts[\LINK] qui peuvent être engagés en Europe ou formés dans les villages autochtones.[NEWLINE][NEWLINE][BOLD]Contexte :[\BOLD][NEWLINE]L'argile développe une plasticité lorsqu'elle est humide, en raison d'un film moléculaire d'eau entourant les particules d'argile, mais elle devient dure, cassante et non plastique lorsqu'elle est séchée ou cuite. Le schiste, formé en grande partie d'argile, est la roche sédimentaire la plus courante. L'argile est le plus ancien matériau céramique connu. Les hommes préhistoriques l'utilisaient pour fabriquer des poteries. Les premiers tessons de poterie ont été datés de 14 000 ans avant J.-C., et les tablettes d'argile sont le premier support d'écriture connu.</French>
@@ -1173,32 +1121,6 @@
     <!-- COAL -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_COAL</Tag>
-        <English>Coal</English>
-        <French>Charbon</French>
-        <German>
-            <Text>Kohle</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Carbone</Italian>
-        <Spanish>Carbón</Spanish>
-        <Russian>Уголь</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_COAL</Tag>
-        <English>Coal</English>
-        <French>Charbon</French>
-        <German>
-            <Text>Kohle</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Carbone</Italian>
-        <Spanish>Carbón</Spanish>
-        <Russian>Уголь</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_COAL</Tag>
         <English>Coal</English>
         <French>Charbon</French>
         <German>

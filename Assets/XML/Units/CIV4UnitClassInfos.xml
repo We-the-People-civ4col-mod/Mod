@@ -853,22 +853,22 @@
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_STONE</Type>
-            <Description>TXT_KEY_UNITCLASS_STONE</Description>
+            <Description>TXT_KEY_YIELD_STONE</Description>
             <DefaultUnit>UNIT_STONE</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_CLAY</Type>
-            <Description>TXT_KEY_UNITCLASS_CLAY</Description>
+            <Description>TXT_KEY_YIELD_CLAY</Description>
             <DefaultUnit>UNIT_CLAY</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_ORE</Type>
-            <Description>TXT_KEY_UNITCLASS_ORE</Description>
+            <Description>TXT_KEY_YIELD_ORE</Description>
             <DefaultUnit>UNIT_ORE</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_COAL</Type>
-            <Description>TXT_KEY_UNITCLASS_COAL</Description>
+            <Description>TXT_KEY_YIELD_COAL</Description>
             <DefaultUnit>UNIT_COAL</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
@@ -1058,12 +1058,12 @@
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_HEMP</Type>
-            <Description>TXT_KEY_UNITCLASS_HEMP</Description>
+            <Description>TXT_KEY_YIELD_HEMP</Description>
             <DefaultUnit>UNIT_HEMP</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_FLAX</Type>
-            <Description>TXT_KEY_UNITCLASS_FLAX</Description>
+            <Description>TXT_KEY_YIELD_FLAX</Description>
             <DefaultUnit>UNIT_FLAX</DefaultUnit>
         </UnitClassInfo>        
         <UnitClassInfo>

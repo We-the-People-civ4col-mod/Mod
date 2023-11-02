@@ -1613,31 +1613,6 @@
         <Russian>Тяжелая артиллерия</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_HEMP</Tag>
-        <English>Hemp</English>
-        <French>
-            <Text>Chanvre</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Hanf</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Canapa</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Cáñamo</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Конопля</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_HEMP_PLANTER</Tag>
         <English>Expert Hemp Planter:Expert Hemp Planters</English>
         <French>
@@ -2206,27 +2181,6 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Косатка</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_ORE</Tag>
-        <English>Ore</English>
-        <French>
-            <Text>Mineral:Mineraux</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Eisenerz</German>
-        <Italian>
-            <Text>Minerale</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Mineral</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Руда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_OXCART</Tag>
@@ -3199,35 +3153,6 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Маститый политик:Маститые политики</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_STONE</Tag>
-        <English>
-            <Text>Stone:Stone</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </English>
-        <French>
-            <Text>Pierre:Pierres</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Stein:Steine</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </German>
-        <Italian>
-            <Text>Pietra:Pietre</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Piedra:Piedras</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Камень:Камни</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_STONECUTTER</Tag>
