@@ -14,6 +14,8 @@
 //-----------------------------------------------------------------------------
 //
 
+#include <boost/python/list.hpp>
+
 class CvMapGenerator;
 class CyPlot;
 class CyMapGenerator

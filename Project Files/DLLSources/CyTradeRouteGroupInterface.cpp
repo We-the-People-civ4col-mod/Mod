@@ -1,6 +1,11 @@
 //R&R mod,vetiarvind, trade groups - start
 #include "CvGameCoreDLL.h"
 #include "CyTradeRouteGroup.h"
+
+#include <boost/python/class.hpp>
+#include <boost/python/manage_new_object.hpp>
+namespace python = boost::python;
+
 //
 // published python interface for CyTradeRouteGroup
 //

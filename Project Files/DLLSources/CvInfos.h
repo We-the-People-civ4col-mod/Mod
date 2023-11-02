@@ -65,6 +65,7 @@ public:
 	virtual bool readPass3() { FAssertMsg(false, "Override this"); return false; }
 
 	void cleanStrings();
+	bool postLoadSetup();
 
 protected:
 	void checkStringContents(CvWString& szStr, const wchar* szExtension);
@@ -267,6 +268,8 @@ public:
 	bool isEnemyRoute() const;
 	bool isAlwaysHeal() const;
 	bool isHillsDoubleMove() const;
+	bool isAvailableForDefensiveUnit() const; //WTP, jbu - calculated from attack characteristics or rather lack thereof
+	bool isNotAvailableForDefensiveUnit() const; //WTP, jbu
 
 	const char* getSound() const;
 	void setSound(const char* szVal);
@@ -288,6 +291,7 @@ public:
 	void write(FDataStreamBase* stream);
 	bool read(CvXMLLoadUtility* pXML);
 	bool readPass2(CvXMLLoadUtility* pXML);
+	bool postLoadSetup();
 
 protected:
 
@@ -330,7 +334,8 @@ protected:
 	bool m_bEnemyRoute;
 	bool m_bAlwaysHeal;
 	bool m_bHillsDoubleMove;
-
+	bool m_bAvailableForDefensiveUnit;
+	void calculateAvailableForDefensiveUnit();
 	CvString m_szSound;
 	// Arrays
 	int* m_aiTerrainAttackPercent;
@@ -1725,6 +1730,8 @@ public:
 	bool readPass2(CvXMLLoadUtility* pXML);
 	void read(FDataStreamBase* stream);
 	void write(FDataStreamBase* stream);
+
+	bool postLoadSetup();
 
 	// EXE/python access functions
 	int PY_getDefaultProfession() const;
@@ -4997,7 +5004,7 @@ public:
 	inline const InfoArray<UnitClassTypes    , int>& getAllowedUnitClasses          () const { return m_info_AllowUnits        ; }
 	inline const InfoArray<YieldTypes        , int>& getAllowedYields               () const { return m_info_AllowYields       ; }
 
-	inline const bool getAllowFoundCity                    () const { return m_iAllowFoundCity        ; }
+	inline const int getAllowFoundCity                     () const { return m_iAllowFoundCity        ; }
 
 	// city
 	inline int getCanUseDomesticMarket                     () const { return m_iCanUseDomesticMarket  ; }

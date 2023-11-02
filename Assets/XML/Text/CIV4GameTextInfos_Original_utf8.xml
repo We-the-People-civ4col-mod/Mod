@@ -7800,6 +7800,7 @@
         <German>Fokus zurücksetzen auf %s1_unitname</German>
         <Italian>Torna su %s1_unitname</Italian>
         <Spanish>Volver a centrarse en %s1_unitname</Spanish>
+        <Russian>Вернуться к %s1_unitname</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_ARE_YOU_SURE</Tag>
@@ -7833,6 +7834,7 @@
         <German>Datei laden</German>
         <Italian>Carica file</Italian>
         <Spanish>Cargar archivo</Spanish>
+        <Russian>Загрузить файл</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SAVE_FILE</Tag>
@@ -7841,6 +7843,7 @@
         <German>Datei speichern</German>
         <Italian>Salva file</Italian>
         <Spanish>Guardar archivo</Spanish>
+        <Russian>Сохранить файл</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_KEYBOARD_ESCAPE</Tag>
@@ -8259,6 +8262,7 @@
         <German>OOS-Werte: Sync=%d1_Num; Optionen=%d2_Num</German>
         <Italian>Valori OOS: Sync=%d1_Num; Opzioni=%d2_Num</Italian>
         <Spanish>Valores OOS: Sincronización=%d1_Num; Opciones=%d2_Num</Spanish>
+        <Russian>Значения рассинхронизации: Sync=%d1_Num; Options=%d2_Num</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OOS_TITLE</Tag>
@@ -8267,6 +8271,7 @@
         <German>Das Spiel läuft nicht mehr synchron.[NEWLINE]Bitte überprüfen Sie die OOS-Werte (neben den Ergebnissen).[NEWLINE]Der Spieler mit anderen Werten sollte sich neu verbinden, um die Synchronität wiederherzustellen.</German>
         <Italian>Il gioco non è in sincronia.[NEWLINE]Controlla i valori OOS (Out Of Synch) vicini ai punteggi.[NEWLINE]Il giocatore con i valori diversi dovrà riconnettersi per risincronizzarsi.</Italian>
         <Spanish>El juego se ha desincronizado.[NEWLINE]Consulta los valores OOS de falta de sincronización (junto a la puntuación).[NEWLINE]El jugador que tenga unos valores diferentes tendrá que volver a conectar para poder sincronizarse.</Spanish>
+        <Russian>Игра рассинхронизировалась.[NEWLINE]Проверьте значения рассинхронизации (рядом со счетом).[NEWLINE]Игрок с другими значениями должен повторно подключиться, чтобы выполнить повторную синхронизацию.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INVALID_LOGIN_TITLE</Tag>
@@ -9344,6 +9349,7 @@
         <German>Titel eingeben</German>
         <Italian>Inserisci didascalia</Italian>
         <Spanish>Escribir un encabezamiento</Spanish>
+        <Russian>Введите нужный текст</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SUBMIT_VOTE</Tag>
@@ -11099,6 +11105,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1_CivNames[COLOR_REVERT] Einheit %s2_UnitName erleidet [COLOR_WARNING_TEXT]%d3[COLOR_REVERT] Schaden (%d4/%d5 TP)</German>
         <Italian>L'unità %s2_UnitName dell'[COLOR_HIGHLIGHT_TEXT]%s1_CivName[COLOR_REVERT] viene colpita subendo [COLOR_WARNING_TEXT]%d3[COLOR_REVERT] punti di danno (%d4/%d5 PV)</Italian>
         <Spanish>[NUM2:Un:Una:Unos:Unas] %s2_UnitName del [COLOR_HIGHLIGHT_TEXT]%s1_CivName[COLOR_REVERT] (con %d3/%d4 PG) [NUM2:ha alcanzado:ha alcanzado:han alcanzado:han alcanzado] a [NUM6:un:una:unos:unas] %s6_UnitName del [COLOR_HIGHLIGHT_TEXT]%s5_CivName[COLOR_REVERT] (con %d7/%d8 PG) y [NUM6:le han infligido:le han infligido:les han infligido:les han infligido] %d9 de daño.</Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_CivName's[COLOR_REVERT] %s2_UnitName получил [COLOR_WARNING_TEXT]%d3[COLOR_REVERT] урона (%d4/%d5 HP)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_MESSAGE_DEFEATED</Tag>
@@ -11107,6 +11114,7 @@
         <German>---------------------------[NEWLINE][COLOR_HIGHLIGHT_TEXT]%s1_CivNames[COLOR_REVERT] Einheit %s2_UnitName hat [COLOR_HIGHLIGHT_TEXT]%s3_CivNames[COLOR_REVERT] Einheit %s4_UnitName besiegt!</German>
         <Italian>L'unità %s2_UnitName dell'[COLOR_HIGHLIGHT_TEXT]%s1_CivName[COLOR_REVERT] ha sconfitto l'unità %s4_UnitName dell'[COLOR_HIGHLIGHT_TEXT]%s3_CivName[COLOR_REVERT]!</Italian>
         <Spanish>[NUM2:Un:Una:Unos:Unas] %s2_UnitName del [COLOR_HIGHLIGHT_TEXT]%s1_CivName[COLOR_REVERT] [NUM2:ha:ha:han:han] derrotado a [NUM3:un:una:unos:unas] %s3_UnitName del [COLOR_HIGHLIGHT_TEXT]%s4_CivName[COLOR_REVERT].</Spanish>
+        <Russian>---------------------------[NEWLINE][COLOR_HIGHLIGHT_TEXT]%s1_CivName's[COLOR_REVERT] %s2_UnitName победил [COLOR_HIGHLIGHT_TEXT]%s3_CivName[COLOR_REVERT]'s %s4_UnitName!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_MESSAGE_VS</Tag>
@@ -11131,6 +11139,7 @@
         <German>(Geländefeldverteidigung : %D1%%)</German>
         <Italian>(Difesa territorio : %D1%%)</Italian>
         <Spanish>(Defensa de la casilla : %D1%%)</Spanish>
+        <Russian>(В обороне : %D1%%)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_MESSAGE_FORTIFY</Tag>
@@ -11283,6 +11292,7 @@
         <German>(Rebellische Stimmung : %D1%%)</German>
         <Italian>(Sentimento di ribellione : %D1%%)</Italian>
         <Spanish>(sentimiento de rebelión : %D1%%)</Spanish>
+        <Russian>(Протестные настроения : %D1%%)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_REBEL_MOD</Tag>
@@ -11291,6 +11301,7 @@
         <German>[ICON_BULLET]%D1_Bonus%% durch Rebellische Stimmung</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% dal sentimento di ribellione</Italian>
         <Spanish>[ICON_BULLET]%D1_Bonus%% por sentimiento de rebelión</Spanish>
+        <Russian>[ICON_BULLET]%D1_Bonus%% от протестных настроений</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_PLOT_CITY_MOD</Tag>
@@ -11299,6 +11310,7 @@
         <German>[ICON_BULLET]%D1_Bonus%% durch Siedlung (Einheitenfähigkeit)</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% dall'insediamento (abilità dell'unità)</Italian>
         <Spanish>[ICON_BULLET]%D1_Bonus%% por asentamiento (capacidad de unidad)</Spanish>
+        <Russian>[ICON_BULLET]%D1_Bonus%% к атаке поселений (способность)</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_PLOT_EXTRA_STRENGTH</Tag>

@@ -1033,6 +1033,36 @@
         <Russian>На дилижанс нападают разбойники. Храбрые пассажиры защищаются.</Russian>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_LANDTRANSPORT_ATTACK</Tag>
+        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] wagon train was attacked by native hostile warrior. If the settler can defend it?</English>
+        <German>Ein Gerücht macht die Runde: Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Wagenzug wurde von einem feindlichen Indianer-Trupp angegriffen. Ob die Siedler ihn verteidigen können?</German>
+        <Russian>Ходят слухи, что индейцы напали на обоз [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]. Смогут ли ли колонисты защитить его?</Russian>
+     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_LANDTRANSPORT_ATTACK_1</Tag>
+        <English>Lured by the prospects of rich booty, a hostile Indian troop has attacked one a [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]. They are shooting incendiary arrows! Now we have to take cover and save what can be saved.</English>
+        <German>Angelockt von den Aussichten auf reiche Beute hat ein feindlicher Indianer-Trupp einen [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] angegriffen. Sie schießen mit Brandpfeilen! Jetzt heißt es in Deckung gehen und retten was zu retten ist.</German>
+        <Russian>Соблазнившись перспективой богатой добычи, отряд злобных индейцев напал на [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]. Они стреляют зажигательными стрелами! Все в укрытие! Спасайтесь!</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_1</Tag>
+        <English>We will never go down without a fight!</English>
+        <German>Wir werden niemals kampflos untergehen!</German>
+        <Russian>Мы никогда не сдадимся без боя!</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_2</Tag>
+        <English>Give them the goods, then maybe let go the wagons!</English>
+        <German>Gebt ihnen die Waren, dann lassen Sie vielleicht die Wagen ziehen!</German>
+        <Russian>Отдадим им товары и, может, они нас отпустят...</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_HELP</Tag>
+        <English>A hostile Indian troop attacks the wagon train. A few brave coachmen and guards defend it.</English>
+        <German>Ein feindlicher Indianer-Trupp greift den Wagenzug an. Ein paar mutige Kutscher und Wachen verteidigen ihn.</German>
+        <Russian>Отряд индейцев нападает на торговый обоз. Храбрые колонисты пытаюстя обороняться.</Russian>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MILKMAID_IN_NEED</Tag>
         <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] milkmaid is being forced to marry her uncle. She asks the governor for help.</English>
         <French>Selon une rumeur, une laitière [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] est obligée d'épouser son oncle. Elle appelle le gouverneur à la rescousse.</French>
@@ -1525,7 +1555,7 @@
         <German>Überglückliche [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Soldaten feiern, dass sie den Krieg überlebt haben.</German>
         <Italian>I soldati [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] e le loro mogli celebrano la fine della guerra, creando un boom di nascite.</Italian>
         <Spanish>Los soldados [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] y sus mujeres están celebrando el final de la guerra con un "baby boom".</Spanish>
-        <Russian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] солдаты и их жены отмечают окончание войны, повышая демографию страны.</Russian>
+        <Russian>Солдаты [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] и их жены отмечают окончание войны, повышая демографию страны.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BABY_BOOM_1</Tag>
@@ -5616,180 +5646,210 @@
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_MUSKETS_START</Tag>
         <English>The race is on to be the market leader for [COLOR_FONT_GOLD]guns[COLOR_REVERT].</English>
+        <French>La course pour dominer le marché européen des [COLOR_FONT_GOLD]armes à feu[COLOR_REVERT] a été lancée.</French>
         <German>Das Rennen zur Beherrschung des europäischen Marktes für [COLOR_FONT_GOLD]Schusswaffen[COLOR_REVERT] hat begonnen.</German>
         <Russian>Началось состязание за доминирование на рынке [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_MUSKETS_START</Tag>
         <English>His Majesty and citizens back home are excited to get [COLOR_FONT_GOLD]guns[COLOR_REVERT] made in the colonies. His Majesty commands you to dominate the market for guns.</English>
+        <French>Sa Majesté et ses sujets en Europe sont ravis avec les premières livraisons d'[COLOR_FONT_GOLD]armes à feu[COLOR_REVERT] des colonies. Sa majesté vous ordonne de devenir maitre de ce marché.</French>
         <German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Schusswaffen[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
         <Russian>Его Величество и граждане метрополии в восторге от первых поставок колониальных [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_MUSKETS_FAILED</Tag>
         <English>Milord, another colonial nation now dominates the European market for [COLOR_FONT_GOLD]guns[COLOR_REVERT].</English>
+        <French>Sire, une autre colonie est devenue maitre du marché des [COLOR_FONT_GOLD]armes à feu[COLOR_REVERT] en Europe.</French>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Schusswaffen[COLOR_REVERT] zu beherrschen.</German>
         <Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_MUSKETS_DONE</Tag>
         <English>Milord, we're now the top dealer in [COLOR_FONT_GOLD]guns[COLOR_REVERT].</English>
+        <French>Sire, nous sommes devenus les maitres du marché des [COLOR_FONT_GOLD]armes à feu[COLOR_REVERT] en Europe.</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schusswaffen[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_MUSKETS_DONE</Tag>
         <English>Milord, in obedience to the orders of His Majesty we're now the market leader for [COLOR_FONT_GOLD]guns[COLOR_REVERT]. His Majesty is in a generous mood and wants to reward us.</English>
+        <French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant d' [COLOR_FONT_GOLD]armes à feu[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
         <German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Schusswaffen[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
         <Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CANNONS_START</Tag>
         <English>The race is on to be the market leader for [COLOR_FONT_GOLD]cannons[COLOR_REVERT].</English>
+        <French>La course pour dominer le marché européen des [COLOR_FONT_GOLD]canons[COLOR_REVERT] a été lancée.</French>
         <German>Das Rennen zur Beherrschung des europäischen Marktes für [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] hat begonnen.</German>
         <Russian>Началось состязание за доминирование на рынке [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CANNONS_START</Tag>
         <English>His Majesty and citizens back home are impressed with shipments of [COLOR_FONT_GOLD]cannons[COLOR_REVERT] from the colonies. His Majesty orders you to dominate the cannon market.</English>
+        <French>Sa Majesté et ses sujets en Europe sont ravis avec les premières livraisons de [COLOR_FONT_GOLD]canons[COLOR_REVERT] des colonies. Sa majesté vous ordonne de devenir maitre de ce marché.</French>
         <German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
         <Russian>Его Величество и граждане метрополии в восторге от первых поставок колониальных [COLOR_FONT_GOLD]пушек[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_CANNONS_FAILED</Tag>
         <English>Milord, another colonial nation now dominates the European market for [COLOR_FONT_GOLD]cannons[COLOR_REVERT].</English>
+        <French>Sire, une autre colonie est devenue maitre du marché des [COLOR_FONT_GOLD]canons[COLOR_REVERT] en Europe.</French>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] zu beherrschen.</German>
         <Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CANNONS_DONE</Tag>
         <English>Milord, we're the leading trader in [COLOR_FONT_GOLD]cannons[COLOR_REVERT].</English>
+        <French>Sire, nous sommes devenus les maitres du marché des [COLOR_FONT_GOLD]canons[COLOR_REVERT] en Europe.</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]пушек[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CANNONS_DONE</Tag>
         <English>Milord, in obedience to the orders of His Majesty we're now the market leader for [COLOR_FONT_GOLD]cannons[COLOR_REVERT]. His Majesty is in a generous mood and wants to reward us.</English>
+        <French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant de [COLOR_FONT_GOLD]canons[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
         <German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
         <Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_ROPE_START</Tag>
         <English>The race is on to be the market leader for [COLOR_FONT_GOLD]ropes[COLOR_REVERT].</English>
+        <French>La course pour dominer le marché européen des [COLOR_FONT_GOLD]cordes[COLOR_REVERT] a été lancée.</French>
         <German>Das Rennen zur Beherrschung des europäischen Marktes für [COLOR_FONT_GOLD]Seile[COLOR_REVERT] hat begonnen.</German>
         <Russian>Началось состязание за доминирование на рынке [COLOR_FONT_GOLD]канатов[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_ROPE_START</Tag>
         <English>His Majesty and citizens back home are delighted to get [COLOR_FONT_GOLD]ropes[COLOR_REVERT] from the colonies. His Majesty orders you to become the market leader for ropes.</English>
+        <French>Sa Majesté et ses sujets en Europe sont ravis avec les premières livraisons de [COLOR_FONT_GOLD]cordes[COLOR_REVERT] des colonies. Sa majesté vous ordonne de devenir maitre de ce marché.</French>
         <German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Seilen[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
         <Russian>Его Величество и граждане метрополии в восторге от первых поставок колониальных [COLOR_FONT_GOLD]канатов[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_ROPE_FAILED</Tag>
         <English>Milord, another colonial nation now dominates the European market for [COLOR_FONT_GOLD]ropes[COLOR_REVERT].</English>
+        <French>Sire, une autre colonie est devenue maitre du marché des [COLOR_FONT_GOLD]cordes[COLOR_REVERT] en Europe.</French>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Seile[COLOR_REVERT] zu beherrschen.</German>
         <Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]канатов[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_ROPE_DONE</Tag>
         <English>Milord, we now dominate trade in [COLOR_FONT_GOLD]ropes[COLOR_REVERT].</English>
+        <French>Sire, nous sommes devenus les maitres du marché des [COLOR_FONT_GOLD]cordes[COLOR_REVERT] en Europe.</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Seilen[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]канатов[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_ROPE_DONE</Tag>
         <English>Milord, in obedience to the orders of His Majesty we're now the market leader for [COLOR_FONT_GOLD]ropes[COLOR_REVERT]. His Majesty is in a generous mood and wants to reward us.</English>
+        <French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant de [COLOR_FONT_GOLD]cordes[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
         <German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Seilen[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
         <Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]канатов[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_SILVER_START</Tag>
         <English>The race is on to be the market leader for [COLOR_FONT_GOLD]silver[COLOR_REVERT].</English>
+        <French>La course pour dominer le marché européen de l'[COLOR_FONT_GOLD]argent[COLOR_REVERT] a été lancée.</French>
         <German>Das Rennen zur Beherrschung des Marktes in Europa für [COLOR_FONT_GOLD]Silber[COLOR_REVERT] hat begonnen.</German>
         <Russian>Началось состязание за доминирование на рынке [COLOR_FONT_GOLD]серебра[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_SILVER_START</Tag>
         <English>His Majesty and citizens back home are thrilled to get [COLOR_FONT_GOLD]silver[COLOR_REVERT] from the colonies. His Majesty orders you to become the top silver supplier.</English>
+        <French>Sa Majesté et ses sujets en Europe sont ravis avec les premières livraisons d' [COLOR_FONT_GOLD]argent[COLOR_REVERT] des colonies. Sa majesté vous ordonne de devenir maitre de ce marché.</French>
         <German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Silber[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
         <Russian>Его Величество и граждане метрополии в восторге от первых поставок колониального [COLOR_FONT_GOLD]серебра[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_SILVER_FAILED</Tag>
         <English>Milord, another colonial nation now is the European market leader for [COLOR_FONT_GOLD]silver[COLOR_REVERT].</English>
+        <French>Sire, une autre colonie est devenue maitre du marché de l'[COLOR_FONT_GOLD]argent[COLOR_REVERT] en Europe.</French>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Silber[COLOR_REVERT] zu beherrschen.</German>
         <Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]серебра[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_SILVER_DONE</Tag>
         <English>Milord, we now dominate trade in [COLOR_FONT_GOLD]silver[COLOR_REVERT].</English>
+        <French>Sire, nous sommes devenus les maitres du marché de l'[COLOR_FONT_GOLD]argent[COLOR_REVERT] en Europe.</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Silber[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]серебра[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_SILVER_DONE</Tag>
         <English>Milord, fulfilling His Majesty's orders we're now the market leader for [COLOR_FONT_GOLD]silver[COLOR_REVERT]. His Majesty is in a generous mood and wants to reward us.</English>
+        <French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant d'[COLOR_FONT_GOLD]argent[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
         <German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Silber[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
         <Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]серебра[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GOLD_START</Tag>
         <English>The race is on to become the market leader for [COLOR_FONT_GOLD]gold[COLOR_REVERT].</English>
+        <French>La course pour dominer le marché européen de l'[COLOR_FONT_GOLD]or[COLOR_REVERT] a été lancée.</French>
         <German>Das Rennen zur Beherrschung des Marktes in Europa für [COLOR_FONT_GOLD]Gold[COLOR_REVERT] hat begonnen.</German>
         <Russian>Началось состязание за доминирование на рынке [COLOR_FONT_GOLD]золота[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GOLD_START</Tag>
         <English>His Majesty and citizens back home are overwhelmed to get [COLOR_FONT_GOLD]gold[COLOR_REVERT] from the colonies. His Majesty wants you to become preeminent in gold.</English>
+        <French>Sa Majesté et ses sujets en Europe sont ravis avec les premières livraisons d'[COLOR_FONT_GOLD]or[COLOR_REVERT] des colonies. Sa majesté vous ordonne de devenir maitre de ce marché.</French>
         <German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Gold[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
         <Russian>Его Величество и граждане метрополии в восторге от первых поставок колониального [COLOR_FONT_GOLD]золота[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_GOLD_FAILED</Tag>
         <English>Milord, another colonial nation now dominates the European market for [COLOR_FONT_GOLD]gold[COLOR_REVERT].</English>
+        <French>Sire, une autre colonie est devenue maitre du marché de l'[COLOR_FONT_GOLD]or[COLOR_REVERT]en Europe.</French>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Gold[COLOR_REVERT] zu beherrschen.</German>
         <Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]золота[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GOLD_DONE</Tag>
         <English>Milord, we're now the number one [COLOR_FONT_GOLD]gold[COLOR_REVERT] trader.</English>
+        <French>Sire, nous sommes devenus les maitres du marché de l'[COLOR_FONT_GOLD]or[COLOR_REVERT] en Europe.</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gold[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]золота[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GOLD_DONE</Tag>
         <English>Milord, fulfilling His Majesty's orders we're now the market leader for [COLOR_FONT_GOLD]gold[COLOR_REVERT]. His Majesty is in a generous mood and wants to reward us.</English>
+        <French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant d'[COLOR_FONT_GOLD]or[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
         <German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Gold[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
         <Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]золота[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GEMS_START</Tag>
         <English>The race is on to be the market leader for [COLOR_FONT_GOLD]gems[COLOR_REVERT].</English>
+        <French>La course pour dominer le marché européen des [COLOR_FONT_GOLD]pierres précieuses[COLOR_REVERT] a été lancée.</French>
         <German>Das Rennen zur Beherrschung des Marktes in Europa für [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] hat begonnen.</German>
         <Russian>Началось состязание за доминирование на рынке [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GEMS_START</Tag>
         <English>His Majesty and His wealthier subjects are fascinated with [COLOR_FONT_GOLD]gems[COLOR_REVERT] from the colonies. His Majesty wishes you to become the market leader for gems.</English>
+        <French>Sa Majesté et ses plus riches sujets en Europe sont subjugués par les [COLOR_FONT_GOLD]pierres précieuses[COLOR_REVERT] des colonies. Sa majesté vous ordonne de devenir maitre de ce marché.</French>
         <German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Edelsteinen[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
         <Russian>Его Величество и граждане метрополии в восторге от первых поставок колониальных [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_GEMS_FAILED</Tag>
         <English>Milord, another colonial nation now dominates the European market for [COLOR_FONT_GOLD]gems[COLOR_REVERT].</English>
+        <French>Sire, une autre colonie est devenue maitre du marché des [COLOR_FONT_GOLD]pierres précieuses[COLOR_REVERT] en Europe.</French>
         <German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] zu beherrschen.</German>
         <Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT] в Европе.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GEMS_DONE</Tag>
         <English>Milord, we're the leading traders in [COLOR_FONT_GOLD]gems[COLOR_REVERT].</English>
+        <French>Sire, nous sommes devenus les maitres du marché des [COLOR_FONT_GOLD]pierres précieuses[COLOR_REVERT] en Europe.</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GEMS_DONE</Tag>
         <English>Milord, fulfilling His Majesty's orders we're now the market leader for [COLOR_FONT_GOLD]gems[COLOR_REVERT]. His Majesty is in a generous mood and wants to reward us.</English>
+        <French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant de [COLOR_FONT_GOLD]pierres précieuses[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
         <German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Edelsteinen[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
         <Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
     </TEXT>
@@ -9637,14 +9697,14 @@
         <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] an offier intends to duel with another gentleman.</English>
         <French>Un officier a l'intention de provoquer en duel un autre gentilhomme à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] will sich ein Offizier mit einen anderen Ehrenmann duellieren.</German>
-        <Russian>В городе [COLOR_SELECTED_TEXT]%s2[COLOR REVERT] офицер вызвал на дуэль горожанина.</Russian>
+        <Russian>В городе [COLOR_SELECTED_TEXT]%s2[COLOR_REVERT] офицер вызвал на дуэль горожанина.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_OFFICERS_WIFE</Tag>
         <English>The wife of an officer has apparently once too much cheated on her husband. The husband - an officer of our garrison - thinks that this can be solved only in one way. He has challenged the other man of honor to a duel.</English>
         <French>La femme d'un officier a décidé de batifoler avec un autre une fois de trop. Le mari - un officier de notre garnison - pense qu'il n'y a plus qu'une solution. Il a provoqué l'autre homme d'honneur en duel</French>
         <German>Milord, die Ehefrau eines Offiziers hat offenbar einmal zu viel mit einem anderen angebandelt. Der Ehemann - ein Offizier unserer Garnison - meint, dass kann nur auf eine Weise aus der Welt geschafft werden. Er hat den anderen Ehrenmann zum Duell gefordert.</German>
-        <Russian>Кажется, женщина изменила своему супругу. Муж, молодой офицер нашего гарнизона, считает, что решить эту проблему можно только одним способом - дуэль чести</Russian>
+        <Russian>В одной из наших колоний молодой офицер уличил свою жену в неверности и считает, что решить эту проблему можно только одним способом - дуэль чести!</Russian>
     </TEXT>
    <TEXT>
         <Tag>TXT_KEY_EVENT_OFFICERS_WIFE_1</Tag>
@@ -9774,7 +9834,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CHEESE_MAKER_1</Tag>
-        <English>He shall get his maid.</English>
+        <English>He shall get his maid. But the first child will be named after me.</English>
         <French>Il aura une laitière comme compagne. Mais le premier enfant devra porter mon nom.</French>
         <German>Er soll seine Magd haben. Aber das erste Kind wird nach mir benannt.</German>
         <Russian>Хорошо, у него будет своя прислуга. Но первого ребенка назовут в мою честь.</Russian>
@@ -9841,5 +9901,245 @@
         <French>[ICON_BULLET]Les indigènes furieux décident de scalper quelques marchands.</French>
         <German>[ICON_BULLET]Die Ureinwohner sind wütend und skalpieren einige Händler.</German>
         <Russian>[ICON_BULLET]Разъяренные индейцы решают снять скальпы с некоторых торговцев.</Russian>
+    </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_SCOUT_NATIVE_CITY_1</Tag>
+        <English>Your scout has entered a previously unnoticed native village. The natives look at you expectantly. What do you want to do?</English>
+        <German>Euer Scout hat ein bisher unbeachtet gebliebenes Dorf der Ureinwohner betreten. Die Ureinwohner blicken Euch erwartungsvoll an. Was wollt Ihr tun?</German>
+        <Russian>Наш разведчик обнаружил деревню индейцев, о которой раньше никто не сообщал. Туземцы не предпринимают никаких действий, заняв выжидательную позицию. Что будем делать?</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_SCOUT_NATIVE_CITY_2</Tag>
+        <English>Your scout has stumbled unawares into a native indian camp. Here you are apparently the intruder. They look at you skeptically, but not hostilely. The village is preparing for a feast, do you want to stay?</English>
+        <German>Euer Scout ist unversehens in ein Lager der Ureinwohner gestolpert. Hier seid Ihr offenbar der Eindringling. Man blickt Euch skeptisch, aber nicht feindlich an. Das Dorf bereitet sich auf ein Fest vor, wollt ihr bleiben?</German>
+        <Russian>Наш разведчик забрел в индейский лагерь, в котором ведётся поготовка к какому-то празднеству. Не смотря на то, что его никто не приглашал, туземцы не выглядят враждебными. Останемся посмотреть на церемонию?</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_SCOUT_NATIVE_CITY_3</Tag>
+        <English>Your scout has discovered a native indian village. However, the natives have been watching you for quite a while and could easily take you down. How do you behave?</English>
+        <German>Euer Scout hat ein Dorf der Ureinwohner entdeckt. Die Ureinwohner beobachten Euch allerdings schon eine ganze Weile und könnten Euch mühelos überwältigen. Wie verhaltet Ihr Euch?</German>
+        <Russian>Наш разведчик набрёл на одну деревню индейцев. Однако те уже давно наблюдают за ним и готовы атаковать. Как нам поступить?</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_1</Tag>
+        <English>We stay here for a while to make friends with the natives and warm ourselves at their campfires.</English>
+        <German>Wir bleiben eine Weile hier, um mit den Ureinwohnern Freundschaft zu schließen und uns an deren Lagerfeuern zu wärmen.</German>
+        <Russian>Остаемся здесь на некоторое время, чтобы погреться у костра и попробовать подружиться с туземцами.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_2</Tag>
+        <English>We are not here to make friends. Let us ask for treasures from which we can redeem them.</English>
+        <German>Wir sind nicht hier um Freundschaft zu schließen. Fragen wir nach Schätzen, von denen wir sie erlösen können.</German>
+        <Russian>Мы здесь не для того, чтобы заводить друзей. Попросим их показать свои сокровища. Может быть, удастся выменять их на какую-нибудь безделушку.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_3</Tag>
+        <English>Unfortunately, we are in a hurry. The natives don't look like they could be of any use to us either.</English>
+        <German>Wir haben es leider sehr eilig. Die Ureinwohner sehen auch nicht so aus, als könnten Sie uns von Nutzen sein.</German>
+        <Russian>Нам некогда разглядывать еще одно стойбище этих дикарей. Поторопимся, впереди еще много более важных дел.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_HELP</Tag>
+        <English>[ICON_BULLET]Some natives are angry and do not approve of their chief giving you such a rich gift.</English>
+        <German>[ICON_BULLET]Einige Ureinwohner sind wütend und nicht damit einverstanden, dass ihr Häuptling Euch so reich beschenkt.</German>
+        <Russian>[ICON_BULLET]Некоторые индейцы разгневаны и не одобряют того, что их вождь преподносит вам богатый подарок.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_NATIVE_CITY_1</Tag>
+        <English>Your seasoned trader has entered a previously unnoticed native village. The natives look at you expectantly. What do you want to do?</English>
+        <German>Euer couragierter Händler hat ein bisher unbeachtet gebliebenes Dorf der Ureinwohner betreten. Die Ureinwohner blicken Euch erwartungsvoll an. Was wollt Ihr tun?</German>
+        <Russian>Наш отважный торговец нашёл ранее незамеченную индейскую деревню. Её жители с интересом наблюдают за тем, что мы будем делать.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_NATIVE_CITY_2</Tag>
+        <English>Your seasoned trader has stumbled unawares into a native indian camp. Here you are apparently the intruder. They look at you skeptically, but not hostilely. The natives are obviously interested in your goods. Do you want to stay and to trade?</English>
+        <German>Euer couragierter Ureinwohnerhändler ist unversehens in ein Lager der Ureinwohner gestolpert. Hier seid Ihr offenbar der Eindringling. Man blickt Euch skeptisch, aber nicht feindlich an. Die Einwohner sind offenbar an Euren Waren interessiert. Wollt ihr bleiben und handeln?</German>
+        <Russian>Наш отважный торговец неожиданно наткнулся на лагерь индейцев. Они смотрят не враждебно и, кажется, даже готовы вести торговлю. Задержимся здесь ненадолго?</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_NATIVE_CITY_3</Tag>
+        <English>Your seasoned trader has discovered a native indian village. However, the natives have been watching you for quite a while and could easily take you down. How do you behave?</English>
+        <German>Euer couragierter Ureinwohnerhändler hat ein Dorf der Ureinwohner entdeckt. Die Ureinwohner beobachten Euch allerdings schon eine ganze Weile und könnten Euch mühelos überwältigen. Wie verhaltet Ihr Euch?</German>
+        <Russian>Наш отважный торговец набрёл на одну деревню индейцев. Однако те уже давно наблюдают за ним и готовы атаковать. Как нам поступить?</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_1_News</Tag>
+        <English>Our scouts and the natives have a lively party - relations improve.</English>
+        <German>Unsere Kundschafter und die Wilden feiern ein rauschendes Fest - die Beziehungen verbessern sich.</German>
+        <Russian>Наш разведчик улучшил отношения с племенем, приняв участие в одном из их празднеств.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_2_News</Tag>
+        <English>Our scouts receive rich gifts. But not all Indians like it.</English>
+        <German>Unsere Kundschafter werden reich beschenkt. Aber nicht allen Indianern gfällt das.</German>
+        <Russian>Наш разведчик получил богатые дары от вождей племени. Но не всем индийцам это понравилось.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_3News</Tag>
+        <English>Our Scouts do not enter a certain native village.</English>
+        <German>Unsere Kundschafter lassen ein Indianer-Dorf links liegen.</German>
+        <Russian>Наш разведчик не стал заходить в лагерь туземцев.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_1</Tag>
+        <English>We stay here for a while to make friends with the natives and warm ourselves at their campfires.</English>
+        <German>Wir bleiben eine Weile hier, um mit den Ureinwohnern Freundschaft zu schließen und uns an deren Lagerfeuern zu wärmen. Eine gute Grundlage für zukünftigen Handel.</German>
+        <Russian>Мы остаемся здесь на некоторое время, чтобы подружиться с туземцами и погреться у их костров.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_2</Tag>
+        <English>We are not here to make friends. Let us ask for treasures from which we can redeem them.</English>
+         <German>Wir sind nicht hier um Freundschaft zu schließen. Fragen wir nach Schätzen, von denen wir sie erlösen können. Wir versprechen Ihnen Waren dafür.</German>
+        <Russian>Мы здесь не для того, чтобы заводить друзей. Попросим их показать свои товары. Может быть, удастся наладить выгодный обмен.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_3</Tag>
+        <English>We should move on.The natives don't look like they could be of any use to us.</English>
+        <German>Wir sollten weiterziehen. Die Ureinwohner sehen nicht so aus, als könnten Sie uns von Nutzen sein. </German>
+        <Russian>Идём дальше, вид этой деревни не внушает доверия.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_1_News</Tag>
+        <English>Our traders and the natives have a lively party - relations improve.</English>
+        <German>Unsere Händler und die Wilden feiern ein rauschendes Fest - die Beziehungen verbessern sich.</German>
+        <Russian>Наш отважный торговец улучшил отношения с племенем, приняв участие в одном из их празднеств.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_2_News</Tag>
+        <English>Our traders receive rich gifts. But not all Indians like it.</English>
+        <German>Unsere Händler werden reich beschenkt. Aber nicht allen Indianern gfällt das.</German>
+        <Russian>Наш торговец получил богатые подарки от вождей племени. Но не всем индейцам это понравилось.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_3_News</Tag>
+        <English>Our traders prefer to give this native village a wide berth.</English>
+        <German>Um dieses Indianer-Dorf machen unsere Händler lieber einen Bogen.</German>
+        <Russian>Наши торговцы предпочитают обходить эту деревню индейцев стороной.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_TRADE_WAGON_1</Tag>
+        <English>Milord, our neighbors are waiting for us to start trading with us. We should definitely send a wagon train and start trade relations.</English>
+        <German>Milord, unsere Nachbarn warten darauf, dass wir den Handel mit Ihnen aufnehmen. Wir sollten unbedingt einen Wagenzug entsenden und Handelsbeziehungen beginnen.</German>
+        <Russian>Милорд, наши соседи ждут, когда мы начнем с нами торговать. Нам обязательно надо отправить к ним обоз и завязать торговые отношения.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_NATIVE_TRADE_WAGON_DONE</Tag>
+        <English>A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] wagon train sets out into the wilderness to trade.</English>
+        <German>Ein [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Wagenzug bricht zum Handel in die Wildnis auf.</German>
+        <Russian>Караван [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] отправляется в торговое путешествие.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_HELP</Tag>
+        <English>Send a unit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] to the indian village within %d3 rounds where the trader who initiated the trade is located.</English>
+        <German>Schickt innerhalb von %d3 Runden eine Einheit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] zu dem Indianer-Dorf, wo sich der Händler befindet, der den Handel eingefädelt hat.</German>
+        <Russian>В течение %d3 ходов отправьте [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] в индейскую деревню, где находится торговец, организовавший торговлю.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAIL_NATIVE_TRADE_WAGON</Tag>
+        <English>Unfortunately, the trade can no longer take place. You have waited too long. The conditions have changed. You can now use the wagon train in another way.</English>
+        <German>Leider kann der Handel nicht mehr stattfinden. Ihr habt zulange gewartet. Die Bedingungen haben sich geändert. Ihr könnt den Wagenzug nun wieder anderweitig verwenden.</German>
+        <Russian>К сожалению, торговля больше невозможна. Вы слишком долго ждали. Теперь вы можете использовать ваш транспорт по своему усмотрению.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_TRADE_WAGON_DONE</Tag>
+        <English>Milord, our wagon train has reached the Indian village. What deal should we make?</English>
+        <German>Milord, unser Wagenzug hat das Indianer-Dorf erreicht. Welchen Handel sollen wir abschließen?</German>
+        <Russian>Милорд, наш торговый обоз достиг индейской деревни. Какую сделку нам следует заключить?</Russian>
+    </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_FAILED_TRADER_DAUGHTER</Tag>
+        <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] trapper have returned to a failed native trader his daughter kidnapped by redskins.</English>
+        <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben Waldläufer einem gescheiterten Ureinwohnerhändler seine von Rothäuten entführte Tochter wieder zurückgebracht.</German>
+        <Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] зверолов вернул неудачливому торговцу его дочь, похищенную краснокожими.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_FAILED_TRADER_DAUGHTER</Tag>
+        <English>Milord, some trapper have returned a trader his daughter. She had been kidnapped by redskins while traveling through the wilderness and he returned to the colony alone and in despair. Now, of course, he has recovered and has also recovered mentally.</English>
+         <German>Milord, einige Waldläufer haben einem Händler seine Tochter wiedergebracht. Sie war auf der Reise durch die Wildnis von Rothäuten entführt worden und er kehrte allein und verzweifelt in die Kolonie zurück. Jetzt hat er sich natürlich erholt ist auch geistig wieder genesen.</German>
+        <Russian>Милорд, какой-то зверолов вернул торговцу его дочь, похищенную краснокожими во время путешествия по дикой местности. Тогда он вернулся в колонию один, убитый горем и отрешился от всего. Сейчас же лицо светится от счастья.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAILED_TRADER_DAUGHTER_1</Tag>
+        <English>He should spend his last years in peace. We will buy him rum for evening gatherings at the inn. Perhaps his tales of the wilderness can be useful to other traders.</English>
+         <German>Er soll seine letzten Jahre in Frieden verbringen. Wir spendieren ihm den Rum für abendliche Zusammenkünfte im Wirtshaus. Vielleicht können seine Erzählungen über die Wildnis anderen Händlern nützlich sein.</German>
+        <Russian>Нужно отпразновать это чудесное событие. Купим ему рома для вечерних посиделок в таверне. Возможно, его рассказы о дикой природе окажутся полезными для других торговцев.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAILED_TRADER_DAUGHTER_2</Tag>
+        <English>It's nice that he can put his manpower back into the service for the colony. But we shouldn't send him out there into the wilderness. Let him open a business here instead.</English>
+        <German>Schön, dass er seine Arbeitskraft wieder in den Dienst der Kolonie stellen kann. Aber wir sollten ihn nicht da raus in die Wildnis schicken. Soll er lieber hier ein Geschäft eröffnen.</German>
+        <Russian>Отлино, теперь он снова сможет приносить пользу колонии. Но больше не следует посылать его в пустошь. Вместо этого пусть займётся чем-то в поселении.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAILED_TRADER_DAUGHTER_3</Tag>
+        <English>As one hears, the daughter should have learned quite a bit about plants and medicinal herbs out there. We should take advantage of that. Hire her. She can work on one of the plantations.</English>
+        <German>Wie man hört, soll die Tochter ja da draußen einiges über Pflanzen und Heilkräuter gelernt haben. Das sollsten wir uns zu nutze machen. Stellt sie ein. Sie kann auf einer der Plantagen arbeiten.</German>
+        <Russian>Судя по слухам, его дочь многое узнала о местных растениях. Мы должны этим воспользоваться - найдите ей работу на подходящей плантации.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_FAILED_TRADER_REVENGE</Tag>
+        <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a failed native trader spreads rumors about the horrors of the wilderness.</English>
+        <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] verbreitet ein gescheiterter Ureinwohnerhändler Gerüchte über die Schrecken der Wildnis.</German>
+        <Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] неудачливый торговец распространяет слухи об ужасах дикой природы.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_FAILED_TRADER_REVENGE</Tag>
+        <English>Milord, a trader who seems to have been mentally disturbed by the horrors he experienced in the wilderness, has remembered them and is now willing to go into battle against the Redskins. His time as a trader is apparently finally over.</English>
+         <German>Milord, ein Händler, der, aufgrund der Schrecken, die er in der Wildnis erlebt zu haben scheint, geistig verwirrt war, hat sich dieser wieder erinnert und ist nun gewillt, gegen die Rothäute ins Feld zu ziehen. Seine Zeit als Händler ist offenbar endgültig vorbei.</German>
+        <Russian>Милорд, неудачливый торговец, на себе испытавший весь ужас нападения индейцев, воспрял духом и желает посвятить себя борьбе с ними. Кажется, мы потеряли торговца...</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAILED_TRADER_REVENGE_1</Tag>
+        <English>Nevertheless, he should spend his last years in peace. We will buy him rum for evening gatherings at the inn. Perhaps his tales of the wilderness can be useful to our inexperienced militia.</English>
+         <German>Er sollte dennoch seine letzten Jahre in Frieden verbringen. Wir spendieren ihm den Rum für abendliche Zusammenkünfte im Wirtshaus. Vielleicht können seine Erzählungen über die Wildnis unserer unerfahrenen Miliz nützlich sein.</German>
+        <Russian>Этот старик уже не боец. Но вот его рассказы о дикой местности могут быть полезны нашему неопытному ополчению. Купите ему рома, чтобы не пересохло в горле.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAILED_TRADER_REVENGE_2</Tag>
+        <English>Excellent, we need settlers who want to get involved - even if their motives seem dubious. But I don't trust him, we shouldn't put weapons in his hands. He can work as a fireworker.</English>
+        <German>Hervorragend, wir brauchen Siedler, die anpacken wollen - mögen ihre Motive auch zweifelhaft erscheinen. Aber ich traue ihm nicht, wir sollten ihm keine Waffen in die Hand geben. Er kann als Feuerwerker arbeiten.</German>
+        <Russian>Отлично, нам нужны мотивированные поселенцы. Однако, не стоит доверять ему оружие. Но он может работать на производстве пороха.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAILED_TRADER_REVENGE_3</Tag>
+        <English>Well, if you can trade weapons, you can learn to make them. Let's send him to the magazine. There, at least, he can make the weapons he so desires.</English>
+        <German>Nun gut, wer mit Waffen handeln kann, kann auch lernen sie herzustellen. Schicken wir ihn ins Magazin. Da kann er jedenfalls die Waffen herstellen, die er so sehr begehrt.</German>
+        <Russian>Что ж, если раньше он торговал оружием, мы можем обучить и создавать его. Давайте отправим его на военный склад. Там он сможет изготовить то оружие, которое ему хочется.</Russian>
+    </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_FAILED_MISSIONARY_1</Tag>
+        <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a missionary has arrived who is looking for new tasks.</English>
+        <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ist ein Missionar angekommen, der nach neuen Aufgaben sucht.</German>
+        <Russian>В [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] прибыл миссионер, который ищет новые задания.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_FAILED_MISSIONARY_1</Tag>
+        <English>Milord, a missionary we sent to the indians a long time ago has returned without having achieved anything. He is no longer good as a missionary, but perhaps we can do something else with him?</English>
+         <German>Milord, ein Missionar, den wir vor längerer Zeit zu den Wilden geschickt haben, ist unverrichteter Dinge wieder zurückgekehrt. Als Missionar taugt er nicht mehr, aber vielleicht können wir etwas anderes mit ihm anfangen?</German>
+        <Russian>Милорд, миссионер, которого мы давным-давно отправили к индейцам, вернулся, ничего не добившись. Миссионером ему уже не быть, но, может, мы сможем найти ему какое-нибудь занятие?</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAILED_MISSIONARY_1</Tag>
+        <English>The church also needs clergymen to take care of the administration. There he can still be useful to us.</English>
+         <German>Auch die Kirche braucht Geistliche, die sich um die Verwaltung kümmern. Da kann er uns noch nützlich sein.</German>
+        <Russian>Церкви нужны священнослужители, которые будут заниматься управлением. Он может пригодиться там.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAILED_MISSIONARY_2</Tag>
+        <English>Even if he could not convert the Indians, for the faithful in the colonies his preaching should still be enough. He can work as a church pastor.</English>
+        <German>Auch wenn er die Indianer nicht bekehren konnte, für die Gläubigen in den Kolonien sollten seine Predigten noch reichen. Er kann als Gemeindepfarrer arbeiten.</German>
+        <Russian>Настоятель нашей церкви как-то говорил, что не отказался бы от помощника. Отправим миссионера к нему.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAILED_MISSIONARY_3</Tag>
+        <English>A pilgrimage to Rome could bring him back on track and renew his faith. We will advance him the money for a trip to Rome.</English>
+        <German>Eine Pilgereise nach Rom könnte ihn wieder auf den rechten Weg bringen und seinen Glauben erneuern. Wir werden ihm das Geld für eine Reise nach Rom vorstrecken.</German>
+        <Russian>Паломничество в Рим могло бы помочь ему укрепить свою веру и наполнить духовными силами. Мы оплатим эту поездку.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAILED_MISSIONARY_4</Tag>
+        <English>The priest is just back from his pilgrimage and ready to move back into the wilderness.</English>
+        <German>Der Priester ist gerade von seiner Pilgerreise zurück und bereit wieder in die Wildnis zu ziehen.</German>
+        <Russian>[COLOR_SELECTED_TEXT]Священник вернулся из паломничества[COLOR_REVERT] и готов нести Слово Божье дикарям.</Russian>
     </TEXT>
 </Civ4GameText>

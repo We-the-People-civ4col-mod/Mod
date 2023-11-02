@@ -3,6 +3,11 @@
 #include "CyPlot.h"
 #include "CyCity.h"
 #include "CyUnit.h"
+
+#include <boost/python/class.hpp>
+#include <boost/python/def.hpp>
+#include <boost/python/manage_new_object.hpp>
+
 //
 // Python interface for CvgameCoreUtils.h.
 //

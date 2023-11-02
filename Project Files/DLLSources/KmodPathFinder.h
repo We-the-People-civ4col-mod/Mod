@@ -34,7 +34,7 @@ public:
 	bool GeneratePath(int x1, int y1, int x2, int y2);
 	bool GeneratePath(const CvPlot* pToPlot); // just a wrapper for convenience
 	FAStarNode* GetEndNode() const { FAssert(end_node); return end_node; } // Note: the returned pointer becomes invalid if the pathfinder is destroyed.
-	bool IsPathComplete() const { return end_node; }
+	bool IsPathComplete() const { return end_node != NULL; }
 	int GetPathTurns() const;
 	int GetFinalMoves() const;
 	CvPlot* GetPathFirstPlot() const;

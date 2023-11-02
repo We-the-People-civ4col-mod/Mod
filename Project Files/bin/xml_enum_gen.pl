@@ -23,6 +23,7 @@ my $output         = "";
 my $output_test    = "";
 my $output_declare = "";
 my $output_init    = "";
+my $output_info    = "";
 
 my $output_preload_dynamic     = "";
 my $output_preload_declaration = "";

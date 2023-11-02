@@ -1633,14 +1633,14 @@
         <English>I suppose we have no choice. The loss of a dozen merchant ships would come to far less than this!</English>
         <French>Je suppose que nous n'avons pas le choix ... la perte d'une douzaine de navires marchands reviendrait bien plus cher que ceci !</French>
         <German>Wir haben vermutlich keine andere Wahl. Der Verlust eines Dutzend Handelsschiffe würde uns noch viel teurer kommen.</German>
-        <Russian>Я полагаю, у нас нет выбора. Потеря дюжины торговых кораблей обойдется гораздо меньше!</Russian>
+        <Russian>Я полагаю, у нас нет выбора. Потеря дюжины торговых кораблей обойдется гораздо дороже!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PIRATEATTACK1_2</Tag>
         <English>I will never knuckle under to these blackguards! Let them taste our steel and feel our cannons!</English>
         <French>Je ne plierais jamais le genoux devant ces bandits! Faisons leur goûter notre acier et nos canons !</French>
         <German>Wir beugen uns nicht vor Banditen! Lasst sie unseren Stahl und unsere Kanonen schmecken!</German>
-        <Russian>Я никогда не сдамся этим мерзавцам! Пусть они вкусят нашу сталь и пощупают наши пушки!</Russian>
+        <Russian>Каковы наглецы?! Давно у нас на реях не болтались пираты! Готовьте флот!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PIRATEATTACK2_1</Tag>
@@ -1960,7 +1960,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THIRDCOLONY_2</Tag>
-        <English>While we appreciate the initiative of these young men, their skills are first needed to help us build our colony and its infrastruture. They shall work as pioneers instead.</English>
+        <English>While we appreciate the initiative of these young men, their skills are needed to help us build our colony and its infrastructure. We want them to work as pioneers instead.</English>
         <French>Si nous apprécions l'intiative de ces jeunes gens, leurs talents seront plus utile à construire la colonie et ses aménagements. Ils travailleront comme pionniersà la place.</French>
         <German>Auch wenn wir die Innitiative dieser jungen Männer begrüßen, werden ihre Fähigkeiten zuerst zum Aufbau unsere Kolonie und ihrer Infrastruktur benötigt. Rüstet sie als Pioniere aus.</German>
         <Russian>Хотя мы ценим инициативу этих молодых людей, их навыки необходимы в первую очередь для того, чтобы помочь нам построить нашу колонию и ее инфраструктуру. Приобретите все необходимое для работы первопроходцев.</Russian>
@@ -2801,5 +2801,43 @@
         <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a friendly meeting between settlers and native people took place.</English>
         <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] fand ein freundschaftliches Treffen zwischen Siedlern und Ureinwohnern statt.</German>
         <Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] состоялась дружеская встреча индейцев и европейских поселенцев.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_1</Tag>
+        <English>Send experienced traders! This trade must necessarily be a success. The welfare of the colony also depends on it!</English>
+        <German>Schickt erfahrene Händler! Dieser Handel muss unbedingt ein Erfolg werden. Das Wohl der Kolonie hängt auch davon ab!</German>
+        <Russian>Отправьте к ним опытных торговцев! Эта сделка обязательно должна быть успешной. Я уже чувствую запах денег!</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_1</Tag>
+        <English>We expect a lot from this trade. However, we should be careful. Send out good cars, but don't overdo it either.</English>
+        <German>Wir erwarten uns viel von diesem Handel. Allerdings sollten wir vorsichtig sein. Schickt gute Wagen aus, aber übertreibt es auch nicht.</German>
+        <Russian>Мы ожидаем многого от этой сделки. Однако нам следует быть осторожными. Рассылайте хорошие машины (что это за бред?), но и не переусердствуйте.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_2</Tag>
+        <English>Send out the wagons and see what the savages have to offer us. Fill the wagons up to the tarp and best of all have additional wagons follow.</English>
+        <German>Schickt die Wagen aus und seht, was die Wilden uns zu bieten haben. Macht die Wagen voll bis unter die Plane und am besten lasst Ihr noch zusätzliche Wagen nachkommen.</German>
+        <Russian>Отправьте повозки и посмотрите, что эти дикари могут нам предложить. Если дело стоящее, грузите до верха и отправьте дополнительные повозки.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_3</Tag>
+        <English>Send our most experienced traders! Treasures await the men if they handle the trade with the Indians properly. And believe me, they better not come back without full wagons!</English>
+        <German>Schickt unsere erfahrensten Händler! Reichtum erwartet die Männer, wenn sie den Handel mit den Indianern richtig angehen. Und glaubt mir, sie sollten besser nicht ohne volle Wagen zurückkommen!</German>
+        <Russian>Отправьте наших самых опытных торговцев! Нас ждут несметные богатства, если мы будем "правильно" вести торговлю с индейцами. Обоз должен вернуться битком забитым товарами!</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_4</Tag>
+        <English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] wagon train successfully returns from the Indian village in the wilderness!</English>
+        <German>Der [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Wagenzug kehrt erfolgreich aus dem Indianer-Dorf in der Wildnis zurück!</German>
+        <Russian>Торговый обоз [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] возвращается из индейской деревни после успешной торговли!</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_5</Tag>
+        <English>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_4</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_6</Tag>
+        <English>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_4</English>
     </TEXT>
 </Civ4GameText>

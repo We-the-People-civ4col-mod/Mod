@@ -178,6 +178,14 @@
 		<iDefineIntVal>4</iDefineIntVal>
 	</Define>
 	<Define>
+		<DefineName>TAX_RATE_RETAINED_FRACTION</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>TAX_RATE_ATTITUDE_BOUND</DefineName>
+		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>AI_HURRY_IMMIGRANTS</DefineName>
 		<iDefineIntVal>1</iDefineIntVal>
 	</Define>
@@ -500,6 +508,10 @@
 	<Define>
 		<DefineName>PRICE_INCREASE_BARGAIN_SELL</DefineName>
 		<iDefineIntVal>300</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MAX_NATIVE_BARGAIN_MODIFIER</DefineName>
+		<iDefineIntVal>75</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>ROUNDS_NO_TALK_BECAUSE_BAD_BARGAINING</DefineName>
@@ -1545,7 +1557,6 @@
 	<Define>
 		<DefineName>USE_CLASSIC_MOVEMENT_SYSTEM</DefineName>
 		<iDefineIntVal>1</iDefineIntVal>
-		<bAlwaysHardcoded>1</bAlwaysHardcoded>
 	</Define>
 	<Define>
 		<DefineName>TIMER_PRIVATEERS_DIPLO_EVENT</DefineName>

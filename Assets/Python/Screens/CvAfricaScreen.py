@@ -82,7 +82,7 @@ class CvAfricaScreen:
 		# R&R, vetiarvind, Navigation Sectors - END
 
 		self.bBookIntro, self.bBookOutro = false, false
-		
+
 	
 	def getScreen(self):
 		return CyGInterfaceScreen("AfricaScreen", CvScreenEnums.AFRICA_SCREEN)
@@ -92,7 +92,10 @@ class CvAfricaScreen:
 		if ( CyGame().isPitbossHost() ):
 			return
 
-		if gc.getPlayer(gc.getGame().getActivePlayer()).getParent() == PlayerTypes.NO_PLAYER:
+		self.player_id = gc.getGame().getActivePlayer()
+		self.player = gc.getPlayer(self.player_id)
+
+		if self.player.getParent() == PlayerTypes.NO_PLAYER:
 			return
 
 		screen = self.getScreen()
@@ -110,7 +113,7 @@ class CvAfricaScreen:
 		
 		## Africa Screen Configuration END
 	
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		self.playerEurope = gc.getPlayer(player.getParent())
 		self.iThisWinter = 0
 		self.iSoundID = 0
@@ -332,7 +335,7 @@ class CvAfricaScreen:
 		screen.setImageButtonAt(self.szTradeTable + "Close", self.szTradeTable, "", 0, 0, self.TRADE_W, self.XResolution, WidgetTypes.WIDGET_GENERAL, self.TRADE_LOG, -1)
 		
 		# Purchase
-		if (gc.getPlayer(gc.getGame().getActivePlayer()).canTradeWithAfrica()):
+		if self.player.canTradeWithAfrica():
 			# screen.addUnitGraphicGFC("PurchaseButton", gc.getInfoTypeForString("UNIT_GREAT_GENERAL"), -1, self.XResolution - self.RECRUIT_W - self.STANDARD_MARGIN, self.RECRUIT_Y, self.RECRUIT_W, self.RECRUIT_H, WidgetTypes.WIDGET_GENERAL, self.BUY_UNIT_BUTTON_ID, -1, 0, 0, 1.0, false)
 			screen.setImageButton("PurchaseButton",  "Art/Interface/Screens/Africa/Great_General_Dollar.dds",  self.XResolution - self.RECRUIT_W - self.STANDARD_MARGIN,  self.RECRUIT_Y, self.RECRUIT_W,self.RECRUIT_H,  WidgetTypes.WIDGET_GENERAL, self.BUY_UNIT_BUTTON_ID, -1)
 		
@@ -341,7 +344,7 @@ class CvAfricaScreen:
 
 	
 	def drawContents(self):
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		screen = self.getScreen()
 
 		self.deleteAllWidgets()
@@ -356,11 +359,10 @@ class CvAfricaScreen:
 		screen.setText(self.getNextWidgetName(), "Background", szTreasury, CvUtil.FONT_LEFT_JUSTIFY, self.STANDARD_MARGIN, self.STANDARD_MARGIN, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, self.TREASURY_ID, -1 )
 		szExit = u"<font=4>" + localText.getText(hudColor, ()) + localText.getText("TXT_KEY_PEDIA_SCREEN_EXIT", ()).upper() + "</font>"
 		screen.setText(self.getNextWidgetName(), "Background", szExit, CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - self.STANDARD_MARGIN, self.STANDARD_MARGIN, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_CLOSE_SCREEN, -1, -1 )
+
 		szTaxRate = u"<font=4>" + localText.getText(hudColor, ()) + localText.getText("TXT_KEY_MISC_TAX_RATE", (player.getTaxRate(), player.NBMOD_GetMaxTaxRate())).upper() + u"</font>"
-		# R&R, Robert Surcouf, No More Variables Hidden game option START
-		#screen.setText(self.getNextWidgetName(), "Background", szTaxRate, CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - CyInterface().determineWidth(szExit) - self.STANDARD_MARGIN * 2, self.STANDARD_MARGIN, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-		screen.setText(self.getNextWidgetName(), "Background", szTaxRate, CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - CyInterface().determineWidth(szExit) - self.STANDARD_MARGIN * 2, self.STANDARD_MARGIN, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, self.HELP_TAX_RATE, -1 )
-		# R&R, Robert Surcouf, No More Variables Hidden game option END
+		screen.setText(self.getNextWidgetName(), "Background", szTaxRate, CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - CyInterface().determineWidth(szExit) - self.STANDARD_MARGIN * 2, self.STANDARD_MARGIN, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_HELP_TAX_CALCULATION, self.player_id, -1 )
+
 		
 		if (sdToolKit.sdGetVal('komaScreens', player.getID(), 'TradeBox') == false):
 			screen.hide(self.szTradeTable)
@@ -678,7 +680,7 @@ class CvAfricaScreen:
 	def handleInput(self, inputClass):
 		screen = self.getScreen()
 		## R&R, vetiarvind, Navigation sectors - START
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		inputFnName = inputClass.getFunctionName()				
 				
 		constStrEast = "DialogMap" + "East"
@@ -696,7 +698,7 @@ class CvAfricaScreen:
 				elif (inputClass.getData1() == self.BUY_UNIT_BUTTON_ID) :
 					popupInfo = CyPopupInfo()
 					popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PURCHASE_AFRICA_UNIT)
-					CyInterface().addPopup(popupInfo, gc.getGame().getActivePlayer(), true, false)
+					CyInterface().addPopup(popupInfo, self.player_id, true, false)
 
 				elif (inputClass.getData1() == self.SAIL_TO_NEW_WORLD) :
 					self.sailToNewWorld(inputClass.getData2())
@@ -873,7 +875,7 @@ class CvAfricaScreen:
 	
 	def toggleTradeLog(self):
 		screen = self.getScreen()
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		self.bBookOutro = sdToolKit.sdGetVal('komaScreens', player.getID(), 'TradeBox')
 		if self.bBookOutro:
 			screen.hide(self.szTradeTable)
@@ -883,7 +885,7 @@ class CvAfricaScreen:
 	
 	def getWidgetHelp(self, argsList):
 		iScreen, eWidgetType, iData1, iData2, bOption = argsList
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 	
 		if eWidgetType == WidgetTypes.WIDGET_GENERAL:
 			if iData1 == self.SAIL_TO_NEW_WORLD:
@@ -915,18 +917,7 @@ class CvAfricaScreen:
 					return u""
 				else:
 					return localText.getText("TXT_KEY_EU_BOYCOTT_MESSAGE", (self.getBoycottPrice(iData2), gc.getYieldInfo(iData2).getDescription()))
-			# R&R, Robert Surcouf, No More Variables Hidden game option START
-			elif iData1 == self.HELP_TAX_RATE:
-				if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_MORE_VARIABLES_HIDDEN):
-					# R&R, vetiarvind, Price dependent tax increase - START
-					return localText.getText("TXT_KEY_TAX_BAR", (self.getTotalYieldsScore(), self.getTaxTreshold(), gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar(),self.getChanceProb()/10,self.getChanceProb()%10))				
-					#return localText.getText("TXT_KEY_TAX_BAR", (self.getTotalYieldsTraded(), self.getTaxTreshold(), gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar(),self.getChanceProb()/10,self.getChanceProb()%10))				
-					# R&R, vetiarvind, Price dependent tax increase - END
-				else:
-					return localText.getText("TXT_KEY_MISC_TAX_RATE", (player.getTaxRate(), player.NBMOD_GetMaxTaxRate())).upper() + u"</font>"
-					#return localText.getText("TXT_KEY_TAX_BAR", (self.getTotalYieldsTraded(), self.getTaxTreshold(), gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar()))
-					#return localText.getText("TXT_KEY_TAX_BAR", (0, self.getTaxTreshold(), gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar()))
-			# R&R, Robert Surcouf, No More Variables Hidden game option END	
+
 		return u""
 	
 	
@@ -935,7 +926,7 @@ class CvAfricaScreen:
 			return 0
 		
 		screen = self.getScreen()
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		pTransport = player.getUnit(iUnit)
 				
 		# WTP, ray, this is a problem now if we have different rules for Ships sailing to the new world
@@ -1008,7 +999,7 @@ class CvAfricaScreen:
 	
 	def sellShip(self, iUnit):
 		screen = self.getScreen()
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		pTransport = player.getUnit(iUnit)
 		
 		if player.getNumShips() > 1:
@@ -1026,7 +1017,7 @@ class CvAfricaScreen:
 
 	def liftBoycott(self, iYield):
 		screen = self.getScreen()
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		iKingAttitude = self.playerEurope.AI_getAttitude(player.getID())
 		
 		self.createBox(self.SELL_SHIP_X, self.SELL_SHIP_Y, self.SELL_SHIP_W, self.SELL_SHIP_H, true) 
@@ -1041,7 +1032,7 @@ class CvAfricaScreen:
 		
 		
 	def getTradeRouteIcon(self, pCity, pTransport):
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		szIcon = u""
 		for iTradeRoute in range(player.getNumTradeRoutes()):
 			pTradeRoute = player.getTradeRouteByIndex(iTradeRoute)
@@ -1053,7 +1044,7 @@ class CvAfricaScreen:
 
 	
 	def getMirrorShipIcon(self, pUnit):
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		UnitInfo = gc.getUnitInfo(pUnit.getUnitType())
 		iProfession = pUnit.getProfession()
 		iUnitArtStyle = gc.getCivilizationInfo(player.getCivilizationType()).getUnitArtStyleType()
@@ -1108,7 +1099,7 @@ class CvAfricaScreen:
 	
 	def getCityInfo(self, iRow, pTransport) :
 		screen = self.getScreen()
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		index = self.getCityByTableRow(iRow)
 		pCity = self.CityPlotList[index][0]
 		iX = self.BOX_X
@@ -1150,8 +1141,8 @@ class CvAfricaScreen:
 		
 	
 	def getPlotLists (self, unit) :
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
-	
+		player = self.player
+
 		#Europe plot list
 		self.EuropePlotListEast = []
 		self.EuropePlotListWest = []
@@ -1247,7 +1238,7 @@ class CvAfricaScreen:
 	
 	
 	def getCenterPlot (self):
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 	
 		pCenterPlot = player.getStartingPlot()
 		iCenterX, iCenterY, iCityCount = 0, 0, 0
@@ -1320,7 +1311,7 @@ class CvAfricaScreen:
 	
 	def cargoMessage(self, iUnit):
 		#cargo info
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		transport = player.getUnit(iUnit)
 
 		if (transport.getUnitTravelState() == UnitTravelStates.UNIT_TRAVEL_STATE_FROM_AFRICA):
@@ -1349,7 +1340,7 @@ class CvAfricaScreen:
 	
 	def travelMessage(self, iUnit):
 		#destination info
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		plot = player.getUnit(iUnit).plot()
 		nextCityName = localText.getText("%s1", (CyMap().findCity (plot.getX(), plot.getY(), player.getID(), -1, true, true, -1, -1, plot.getPlotCity()).getName(), ()))
 	
@@ -1378,7 +1369,7 @@ class CvAfricaScreen:
 	
 	def setSound(self, SoundType):
 		screen = self.getScreen()
-		iCivilization = gc.getPlayer(gc.getGame().getActivePlayer()).getCivilizationType()
+		iCivilization = self.player.getCivilizationType()
 		
 		if SoundType == INIT_SOUND:
 			if (self.iSoundID != 0):
@@ -1404,7 +1395,7 @@ class CvAfricaScreen:
 	
 	def getShipSellPrice(self, iUnit):
 		if iUnit != -1:
-			player = gc.getPlayer(gc.getGame().getActivePlayer())
+			player = self.player
 			iTrainPercent = gc.getGameSpeedInfo(CyGame().getGameSpeedType()).getTrainPercent()
 			if player.getUnit(iUnit).getUnitType() > -1:
 				iSellPrice = self.iSellShip * gc.getUnitInfo(player.getUnit(iUnit).getUnitType()).getEuropeCost() * iTrainPercent / 1200
@@ -1416,7 +1407,7 @@ class CvAfricaScreen:
 	
 	
 	def getMaxTravelTimer(self, transportPlot):
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		iMaxTravelTimer = (gc.getEuropeInfo(transportPlot.getEurope()).getTripLength() * gc.getGameSpeedInfo(CyGame().getGameSpeedType()).getGrowthPercent()) / 100
 	
 		for i in range(gc.getNumTraitInfos()):
@@ -1429,76 +1420,9 @@ class CvAfricaScreen:
 
 	
 	def getBoycottPrice(self, iYield):
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		player = self.player
 		iStorage = gc.getGameSpeedInfo(CyGame().getGameSpeedType()).getStoragePercent()
 		iBoycottPrice = self.iBoycott * iStorage * player.getYieldSellPrice(iYield)
 		iBoycottPrice += iBoycottPrice * player.getTaxRate() / 100
 	
 		return iBoycottPrice
-	
-	## R&R, vetiarvind, Price dependent tax increase - START
-	def getYieldScore(self, iYield):
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
-		# WTP, ray fixing that the value is read from wrong player
-		playerEurope = gc.getPlayer(player.getParent())
-		iScore = playerEurope.getYieldScoreTotalINT(iYield)
-		return iScore
-	
-	def getTotalYieldsScore(self):
-		iTotalScore = 0
-		for iYield in range(YieldTypes.NUM_YIELD_TYPES):
-			iTotalScore += self.getYieldScore(iYield)
-		return iTotalScore
-	## R&R, vetiarvind, Price dependent tax increase - END
-	
-	# R&R, Robert Surcouf, No More Variables Hidden game option START
-	def getYieldTraded(self, iYield):
-		iTraded = 0
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
-		#iTraded += player.getYieldTradedTotal(iYield)
-		iTraded += player.getYieldTradedTotalINT(iYield)
-		return iTraded
-		
-	def getTotalYieldsTraded(self):
-		iTotalTraded = 0
-		for iYield in range(YieldTypes.NUM_YIELD_TYPES):
-			iTotalTraded += self.getYieldTraded(iYield)
-		return iTotalTraded
-	
-	def getAIattitudeVal(self):	
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
-		playerEurope = gc.getPlayer(player.getParent())
-		iKingAttitude = player.AI_getAttitudeVal(playerEurope.getID())
-		return iKingAttitude
-		
-	def getTaxMultiplier(self):
-		iMultiplier = 100
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
-		playerEurope = gc.getPlayer(player.getParent())
-		for i in range(gc.getNumTraitInfos()):
-			if player.hasTrait(i):
-				iMultiplier += + gc.getTraitInfo(i).getTaxRateThresholdModifier();
-		iMultiplier += player.getTaxRate()* gc.getDefineINT("TAX_TRADE_THRESHOLD_TAX_RATE_PERCENT") / 100
-		#iMultiplier += self.getAIattitudeVal()  * gc.getDefineINT("TAX_TRADE_THRESHOLD_ATTITUDE_PERCENT")
-		return iMultiplier
-	
-	def getTaxTreshold(self):
-		iThreshold = (max(self.getTaxMultiplier(),gc.getDefineINT("MAX_TAX_TRADE_MULTIPLIER") )* gc.getDefineINT("TAX_TRADE_THRESHOLD")) * gc.getGameSpeedInfo(gc.getGame().getGameSpeedType()).getGrowthPercent() / 10000
-		#iThreshold /= 100
-		return iThreshold
-	
-	def getChanceModifierFromKingAttitude(self):
-		iChanceModifier= self.getAIattitudeVal()  * gc.getDefineINT("TAX_TRADE_INCREASE_CHANCE_KING_ATTITUDE_BASE")
-		if iChanceModifier > 50:
-			iChanceModifier= 50
-		elif iChanceModifier <- 50:
-			iChanceModifier= -50
-		return iChanceModifier
-	
-	def getChanceProb(self):
-		iChance =(1000* gc.getDefineINT("TAX_INCREASE_CHANCE")) / (100+self.getChanceModifierFromKingAttitude())
-		if iChance > 1000:
-			iChance = 1000
-		return iChance
-	# R&R, Robert Surcouf, No More Variables Hidden game option END
-

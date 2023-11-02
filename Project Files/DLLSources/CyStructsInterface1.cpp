@@ -3,6 +3,9 @@
 //#include "CvStructs.h"
 #include "CvInfos.h"
 
+#include <boost/python/class.hpp>
+namespace python = boost::python;
+
 //
 // Python interface for structs
 // Exposed directly - no wrapper

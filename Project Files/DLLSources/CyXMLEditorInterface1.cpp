@@ -1,6 +1,10 @@
 #include "CvGameCoreDLL.h"
-
 #include "CyXMLEditor.h"
+
+#include <boost/python/class.hpp>
+#include <boost/python/manage_new_object.hpp>
+namespace python = boost::python;
+
 
 void CyXMLEditorPythonInterface1(python::class_<CyXMLEditor>& x)
 {

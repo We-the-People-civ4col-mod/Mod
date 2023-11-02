@@ -18,6 +18,9 @@
 #include "CyXMLEditor.h"
 /// xml Editor - end - Nightinggale
 
+#include <boost/python/class.hpp>
+#include <boost/python/manage_new_object.hpp>
+
 
 void CyGlobalContextPythonInterface7(python::class_<CyGlobalContext>& x)
 {

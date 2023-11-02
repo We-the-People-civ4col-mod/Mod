@@ -1518,6 +1518,43 @@ def getHelpRuins5(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_BONUS_UNIT", (1, UnitClass.getTextKey(), ))
 	return szHelp
 
+######## Native Trade with Wagons Quest ###########
+
+def isExpiredNativeWagonTrade(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	if gc.getGame().getGameTurn() >= kTriggeredData.iTurn + event.getGenericParameter(1):
+		return true
+	if not player.isPlayable():
+		return true
+	return false
+
+def getHelpNativeWagonTrade(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	UnitClass = gc.getUnitClassInfo(CvUtil.findInfoTypeNum('UNITCLASS_WAGON_TRAIN'))
+	szHelp = localText.getText("TXT_KEY_EVENT_NATIVE_TRADE_WAGON_HELP", (UnitClass.getTextKey(), city.getNameKey(), event.getGenericParameter(1)))
+	return szHelp
+
+def applyNativeWagonTrade5(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	iUnitClassType = CvUtil.findInfoTypeNum('UNITCLASS_WAGON_TRAIN')
+	iUnitType = gc.getCivilizationInfo(player.getCivilizationType()).getCivilizationUnits(iUnitClassType)
+	if iUnitType != -1:
+		player.initUnit(iUnitType, 0, kTriggeredData.iPlotX, kTriggeredData.iPlotY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH, 0)
+
+def getHelpNativeWagonTrade5(argsList):
+	UnitClass = gc.getUnitClassInfo(CvUtil.findInfoTypeNum('UNITCLASS_WAGON_TRAIN'))
+	szHelp = localText.getText("TXT_KEY_EVENT_BONUS_UNIT", (1, UnitClass.getTextKey(), ))
+	return szHelp
 	
 ####### The Royals Event ########
 	
@@ -2993,11 +3030,13 @@ def getHelpHorseGift1(argsList):
 		szHelp = localText.getText("TXT_KEY_EVENT_YIELD_LOOSE", (quantity,  gc.getYieldInfo(iYield).getChar(), city.getNameKey()))
 	return szHelp
 
-
 def getHelpSeasonedTraderNo(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_SEASONED_TRADER_MEETING_HELP", ())
 	return szHelp
 
+def getHelpSeasonedScoutNativeCity(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_HELP", ())
+	return szHelp                                           
 
 ######## Wild Animal ###########
 
@@ -8177,6 +8216,29 @@ def spawnBarbarianUnitAdjacentToUnitAndFriendlyOnSamePlot(argsList):
 
 def getHelpHighwaymanAttack(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_HIGHWAYMAN_ATTACK_HELP", ())
+	return szHelp
+
+######## Land Transport Attack ###########
+
+def spawnNativeUnitAdjacentToUnitAndFriendlyOnSamePlot(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
+	# This part spawns the Barbarian
+	iHostileUnitClassTypeToSpawn = event.getGenericParameter(1)
+	iNumHostilesToSpawn = event.getGenericParameter(2)
+	for iX in range(iNumHostilesToSpawn):
+		unitThatTriggered.spawnBarbarianUnitOnAdjacentPlotOfUnit(iHostileUnitClassTypeToSpawn)
+	# This Part spawns the Friendly
+	iOwnUnitClassTypeToSpawn = event.getGenericParameter(4)
+	iNumOwnToSpawn = event.getGenericParameter(3)
+	for iX in range(iNumOwnToSpawn):
+		unitThatTriggered.spawnOwnPlayerUnitOnPlotOfUnit(iOwnUnitClassTypeToSpawn)
+
+def getHelpLandTransportAttack(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_HELP", ())
 	return szHelp
 
 ######## Milkmaid in Need ###########

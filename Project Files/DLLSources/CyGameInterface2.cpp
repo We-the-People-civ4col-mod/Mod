@@ -4,6 +4,10 @@
 #include "CvRandom.h"
 #include "CyCity.h"
 #include "CyReplayInfo.h"
+
+#include <boost/python/class.hpp>
+#include <boost/python/manage_new_object.hpp>
+
 //
 // published python interface for CyGame
 //

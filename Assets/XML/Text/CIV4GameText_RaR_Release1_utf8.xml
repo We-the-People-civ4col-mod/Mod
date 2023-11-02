@@ -156,7 +156,7 @@
         <German>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective Stoßtrupp ausgelöscht! Keine ernstzunehmenden Schäden verursacht.</German>
         <Italian>%s1_civ_adjective gruppo di incursori spazzato via in %s2_city! Niente distrutto o rubato.</Italian>
         <Spanish>%s1_civ_adjective partido de ataque acabó en %s2_city! Nada destruye o se lo roban.</Spanish>
-        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]набег индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] отражен! Все в целости и сохранности.</Russian>
+        <Russian>[COLOR_POSITIVE_TEXT]%s2_city : [COLOR_REVERT][COLOR_WARNING_TEXT]набег индейцев[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] отражен! Все в целости и сохранности.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_RAIDING_NATIVE_CAPTURED</Tag>
@@ -165,7 +165,7 @@
         <German>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective Stoßtrupp gefangen genommen! Sie werden mit Zwangsarbeit für ihre Verbrechen büßen.</German>
         <Italian>%s1_civ_adjective gruppo di incursori catturato in %s2_city! Pagheranno con il lavoro per i loro crimini.</Italian>
         <Spanish>%s1_civ_adjective grupo asaltante capturado en %s2_city! Pagarán con el trabajo de sus crímenes.</Spanish>
-        <Russian>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]группа индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT], пытавшихся утроить набег, схвачена! Отправьте их на плантации, Милорд! Пусть расплачиваются за свои преступления.</Russian>
+        <Russian>[COLOR_POSITIVE_TEXT]%s2_city : [COLOR_REVERT]группа индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT], пытавшихся утроить [COLOR_WARNING_TEXT]набег[COLOR_REVERT], схвачена! Отправьте их на плантации, Милорд! Пусть расплачиваются за свои преступления.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_SUNK_GOOD</Tag>
@@ -976,10 +976,10 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TAX_BAR</Tag>
-        <English>Yields of goods sold in Europe and Africa (only 10% of the price is taken into account) : %d1/%d2%F3[NEWLINE][NEWLINE]There is a [COLOR_WARNING_TEXT]%d4.%d5%[COLOR_REVERT] chance that His Majesty will raise your taxes on the next turn.</English>
-        <French>Marchandises vendues en Europe et en Afrique (seul 10% du prix est pris en compte) (%d1/%d2%F3)[NEWLINE][NEWLINE]Il y a [COLOR_WARNING_TEXT]%d4.%d5[COLOR_REVERT] % de chance que le roi augmente les impôts au tour suivant.</French>
-        <German>Erträge aus dem Verkauf von Gütern in Europe and Africa (nur 10% des Preises werden berücksichtigt) : (%d1/%d2%F3)[NEWLINE][NEWLINE]Es besteht eine [COLOR_WARNING_TEXT]%d4.%d5%[COLOR_REVERT] Chance darauf, daß Seine Majestät Eure Steuern im nächsten Zug erhöht.</German>
-        <Russian>Товары, проданные в Европе и Африке (учитывается только 10% от цены) : %d1/%d2%F3[NEWLINE][NEWLINE]Есть [COLOR_WARNING_TEXT]%d4.%d5%[COLOR_REVERT] шанс, что Его Величество увеличит ставку налога в следующем ходу.</Russian>
+        <English>Yields of goods sold in Europe and Africa (only %d6%% of the price is taken into account) : %d1/%d2%F3[NEWLINE][NEWLINE]There is a [COLOR_WARNING_TEXT]%d4.%d5%[COLOR_REVERT] chance that His Majesty will raise your taxes on the next turn.</English>
+        <French>Marchandises vendues en Europe et en Afrique (seul %d6%% du prix est pris en compte) (%d1/%d2%F3)[NEWLINE][NEWLINE]Il y a [COLOR_WARNING_TEXT]%d4,%d5[COLOR_REVERT] % de chance que le roi augmente les impôts au tour suivant.</French>
+        <German>Erträge aus dem Verkauf von Gütern in Europe and Africa (nur %d6%% des Preises werden berücksichtigt) : (%d1/%d2%F3)[NEWLINE][NEWLINE]Es besteht eine [COLOR_WARNING_TEXT]%d4.%d5%[COLOR_REVERT] Chance darauf, daß Seine Majestät Eure Steuern im nächsten Zug erhöht.</German>
+        <Russian>Товары, проданные в Европе и Африке (учитывается только %d6%% от цены) : %d1/%d2%F3[NEWLINE][NEWLINE]Есть [COLOR_WARNING_TEXT]%d4.%d5%[COLOR_REVERT] шанс, что Его Величество увеличит ставку налога в следующем ходу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CURRENT_ERA</Tag>

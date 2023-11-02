@@ -3,6 +3,10 @@
 #include "CyHallOfFameInfo.h"
 #include "CyMap.h"
 
+#include <boost/python/class.hpp>
+#include <boost/python/manage_new_object.hpp>
+namespace python = boost::python;
+
 //
 // published python interface for CyReplayInfo
 //

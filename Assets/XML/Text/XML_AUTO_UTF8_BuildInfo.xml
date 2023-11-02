@@ -7,7 +7,7 @@
         <German>[LINK=IMPROVEMENT_FRUIT_PLANTATION]Obstplantage[\LINK] bauen</German>
         <Italian>Costruire una [LINK=IMPROVEMENT_FRUIT_PLANTATION]piantagione di frutos[\LINK]</Italian>
         <Spanish>Construir una [LINK=IMPROVEMENT_FRUIT_PLANTATION]plantación de frutos[\LINK]</Spanish>
-        <Russian>Построить [LINK=IMPROVEMENT_FRUIT_PLANTATION]фруктовую плантацию[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]фруктовую плантацию[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_FRUIT_PLANTATION_HELP</Tag>
@@ -18,7 +18,7 @@
         <English>Build a [LINK=IMPROVEMENT_COLLECTORS_POST]collectors post[\LINK]</English>
         <French>Construire un [LINK=IMPROVEMENT_COLLECTORS_POST]poste de collection[\LINK]</French>
         <German>[LINK=IMPROVEMENT_COLLECTORS_POST]Sammelstelle[\LINK] bauen</German>
-        <Russian>Построить [LINK=IMPROVEMENT_COLLECTORS_POST]лагерь сборщиков[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]лагерь сборщиков[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_COLLECTORS_POST_HELP</Tag>
@@ -29,7 +29,7 @@
         <English>Build a [LINK=IMPROVEMENT_COLLECTORS_POST]planter post[\LINK]</English>
         <French>Construire un [LINK=IMPROVEMENT_COLLECTORS_POST]poste de plantation[\LINK]</French>
         <German>[LINK=IMPROVEMENT_COLLECTORS_POST]Pflanzerlager[\LINK] bauen</German>
-        <Russian>Построить [LINK=IMPROVEMENT_COLLECTORS_POST]лагерь плантаторов[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]лагерь плантаторов[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_COLLECTORS_POST2_HELP</Tag>
@@ -64,7 +64,7 @@
         <German>[LINK=IMPROVEMENT_FARM]Bauernhof[\LINK] bauen</German>
         <Italian>Costruire una [LINK=IMPROVEMENT_FARM]fattoria[\LINK]</Italian>
         <Spanish>Construir una [LINK=IMPROVEMENT_FARM]granja[\LINK]</Spanish>
-        <Russian>Построить [LINK=IMPROVEMENT_FARM]ферму[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]ферму[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_FARM_HELP</Tag>
@@ -75,7 +75,7 @@
         <English>Build a [LINK=IMPROVEMENT_WIND_MILL]windmill[\LINK]</English>
         <French>Construire un [LINK=IMPROVEMENT_WIND_MILL]moulin à vent[\LINK]</French>
         <German>[LINK=IMPROVEMENT_WIND_MILL]Windmühle[\LINK] bauen</German>
-        <Russian>Построить [LINK=IMPROVEMENT_WIND_MILL]ветряк[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]ветряк[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_WINDMILL_HELP</Tag>
@@ -86,7 +86,7 @@
         <English>Build an [LINK=IMPROVEMENT_IRON_MILL]ironmill[\LINK]</English>
         <French>Construire un [LINK=IMPROVEMENT_IRON_MILL]bas-fourneau[\LINK]</French>
         <German>[LINK=IMPROVEMENT_IRON_MILL]Eisenmühle[\LINK] bauen</German>
-        <Russian>Построить [LINK=IMPROVEMENT_IRON_MILL]железную мельницу[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]железную мельницу[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_IRONMILL_HELP</Tag>
@@ -97,7 +97,7 @@
         <English>Build a [LINK=IMPROVEMENT_LUMBERMILL]sawmill[\LINK]</English>
         <French>Construire une [LINK=IMPROVEMENT_IRON_MILL]scierie en forêt[\LINK]</French>
         <German>[LINK=IMPROVEMENT_LUMBERMILL]Sägewerk[\LINK] bauen</German>
-        <Russian>Построить [LINK=IMPROVEMENT_LUMBERMILL]лесопилку[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]лесопилку[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_SAWMILL_HELP</Tag>
@@ -112,7 +112,7 @@
         <English>Build a [LINK=IMPROVEMENT_SUPPLY_DEPOT]supply depot[\LINK]</English>
         <French>Construire un [LINK=IMPROVEMENT_SUPPLY_DEPOT]dépôt de ravitaillement[\LINK] </French>
         <German>[LINK=IMPROVEMENT_SUPPLY_DEPOT]Versorgungslager[\LINK] bauen</German>
-        <Russian>Построить [LINK=IMPROVEMENT_SUPPLY_DEPOT]склад припасов[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]склад припасов[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_SUPPLY_DEPOT_HELP</Tag>
@@ -123,7 +123,7 @@
         <English>Build a [LINK=IMPROVEMENT_CANAL]canal[\LINK]</English>
         <French>Construire un canal</French>
         <German>[LINK=IMPROVEMENT_CANAL]Kanal[\LINK] bauen</German>
-        <Russian>Построить [LINK=IMPROVEMENT_CANAL]канал[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]канал[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_CANAL_HELP</Tag>
@@ -136,7 +136,7 @@
         <German>[LINK=IMPROVEMENT_FORT]Fort[\LINK] bauen</German>
         <Italian>Costruire un [LINK=IMPROVEMENT_FORT]forte[\LINK]</Italian>
         <Spanish>Construir un [LINK=IMPROVEMENT_FORT]fuerte[\LINK]</Spanish>
-        <Russian>Построить [LINK=IMPROVEMENT_FORT]форт[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]форт[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_FORT_HELP</Tag>
@@ -149,7 +149,7 @@
         <German>[LINK=IMPROVEMENT_LODGE]Holzfällerhütte[\LINK] bauen</German>
         <Italian>Costruisci un [LINK=IMPROVEMENT_LODGE]capanno[\LINK]</Italian>
         <Spanish>Construir un [LINK=IMPROVEMENT_LODGE]pabellón[\LINK]</Spanish>
-        <Russian>Построить [LINK=IMPROVEMENT_LODGE]домик лесорубов[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]домик лесорубов[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_LODGE_HELP</Tag>
@@ -162,7 +162,7 @@
         <German>[LINK=IMPROVEMENT_MINE]Mine[\LINK] anlegen</German>
         <Italian>Costruire una [LINK=IMPROVEMENT_MINE]miniera[\LINK]</Italian>
         <Spanish>Construir una [LINK=IMPROVEMENT_MINE]mina[\LINK]</Spanish>
-        <Russian>Построить [LINK=IMPROVEMENT_MINE]шахту[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]шахту[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_MINE_HELP</Tag>
@@ -173,7 +173,7 @@
         <English>Build a [LINK=IMPROVEMENT_MONASTERY]monastery[\LINK]</English>
         <French>Construire un [LINK=IMPROVEMENT_MONASTERY]monastère[\LINK]</French>
         <German>[LINK=IMPROVEMENT_MONASTERY]Kloster[\LINK] errichten</German>
-        <Russian>Построить [LINK=IMPROVEMENT_MONASTERY]монастырь[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]монастырь[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_MONASTERY_HELP</Tag>
@@ -186,7 +186,7 @@
         <German>[LINK=IMPROVEMENT_PASTURE]Ranch[\LINK] bauen</German>
         <Italian>Build a [LINK=IMPROVEMENT_PASTURE]Pasture[\LINK]</Italian>
         <Spanish>Build a [LINK=IMPROVEMENT_PASTURE]Pasture[\LINK]</Spanish>
-        <Russian>Построить [LINK=IMPROVEMENT_PASTURE]пастбище[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]пастбище[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_PASTURE_HELP</Tag>
@@ -197,7 +197,7 @@
         <English>Build a [LINK=IMPROVEMENT_PEN]breeding pen[\LINK]</English>
         <French>Construire une basse-cour</French>
         <German>[LINK=IMPROVEMENT_PEN]Zuchtgehege[\LINK] bauen</German>
-        <Russian>Построить [LINK=IMPROVEMENT_PEN]загон для скота[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]загон для скота[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_PEN_HELP</Tag>
@@ -210,7 +210,7 @@
         <German>[LINK=IMPROVEMENT_PLANTATION]Plantage[\LINK] bauen</German>
         <Italian>Costruire una [LINK=IMPROVEMENT_PLANTATION]piantagione[\LINK]</Italian>
         <Spanish>Construir una [LINK=IMPROVEMENT_PLANTATION]plantación[\LINK]</Spanish>
-        <Russian>Построить [LINK=IMPROVEMENT_PLANTATION]плантацию[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]плантацию[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_PLANTATION_HELP</Tag>
@@ -221,7 +221,7 @@
         <English>Build a country road</English>
         <French>Construire une route de gravier</French>
         <German>Landstraße bauen</German>
-        <Russian>Построить гравийную дорогу</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]гравийную дорогу[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_COUNTRY_ROAD_HELP</Tag>
@@ -234,7 +234,7 @@
         <German>[LINK=IMPROVEMENT_QUARRY]Steinbruch[\LINK] anlegen</German>
         <Italian>Costruire una [LINK=IMPROVEMENT_QUARRY]pietraia[\LINK]</Italian>
         <Spanish>Construir una [LINK=IMPROVEMENT_QUARRY]cantera[\LINK]</Spanish>
-        <Russian>Построить [LINK=IMPROVEMENT_QUARRY]каменоломню[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]каменоломню[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_QUARRY_HELP</Tag>
@@ -245,7 +245,7 @@
         <English>Build a [LINK=IMPROVEMENT_QUARRY]peat pit[\LINK]</English>
         <French>Creuser une [LINK=IMPROVEMENT_QUARRY]fosse à tourbe[\LINK] </French>
         <German>[LINK=IMPROVEMENT_QUARRY]Torfgrube[\LINK] anlegen</German>
-        <Russian>Построить [LINK=IMPROVEMENT_PEAT_PIT]торфяной карьер[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]торфяной карьер[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_PEAT_PIT_HELP</Tag>
@@ -256,7 +256,7 @@
         <English>Build a [LINK=IMPROVEMENT_QUARRY]clay pit[\LINK]</English>
         <French>Creuser une [LINK=IMPROVEMENT_QUARRY]fosse à argile[\LINK] </French>
         <German>[LINK=IMPROVEMENT_QUARRY]Lehmgrube[\LINK] anlegen</German>
-        <Russian>Построить [LINK=IMPROVEMENT_CLAY_PIT]глиняный карьер[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]глиняный карьер[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_CLAY_PIT_HELP</Tag>
@@ -267,7 +267,7 @@
         <English>Build plastered country roads</English>
         <French>Construire une route pavée</French>
         <German>gepflasterte Landstraße bauen</German>
-        <Russian>Построить вымощенную камнем дорогу</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]вымощенную камнем дорогу[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_PLASTERED_ROAD_HELP</Tag>
@@ -278,7 +278,7 @@
         <English>Plant a forest</English>
         <French>Planter une forêt</French>
         <German>Wald aufforsten</German>
-        <Russian>Высадить лес</Russian>
+        <Russian>Высадить [COLOR_HIGHLIGHT_TEXT]лес[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_REFORESTATION_GRASS_HELP</Tag>
@@ -289,7 +289,7 @@
         <English>Plant a jungle</English>
         <French>Planter une jungle</French>
         <German>Dschungel aufforsten</German>
-        <Russian>Высадить джунгли</Russian>
+        <Russian>Высадить [COLOR_HIGHLIGHT_TEXT]джунгли[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_REFORESTATION_MARSH_HELP</Tag>
@@ -332,7 +332,7 @@
         <English>Plant tundra</English>
         <French>Planter une taïga</French>
         <German>Taiga aufforsten</German>
-        <Russian>Высадить тундру</Russian>
+        <Russian>Высадить [COLOR_HIGHLIGHT_TEXT]тундру[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_REFORESTATION_TUNDRA_HELP</Tag>
@@ -343,7 +343,7 @@
         <English>Plant northern forrest</English>
         <French>Planter une foret boréale</French>
         <German>Nordwald aufforsten</German>
-        <Russian>Высадить тайгу</Russian>
+        <Russian>Высадить [COLOR_HIGHLIGHT_TEXT]тайгу[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_REFORESTATION_TAIGA_HELP</Tag>
@@ -354,13 +354,14 @@
         <English>Irrigate Desert</English>
         <French>Irriguer le désert</French>
         <German>Wüste bewässern</German>
-        <Russian>Создать ирригацию пустыни</Russian>
+        <Russian>Создать [COLOR_HIGHLIGHT_TEXT]ирригацию пустыни[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_DESERT_IRRIGATION_HELP</Tag>
         <English>Needs River to create Flood Plains.</English>
         <French>Une rivière est nécessaire pour créer des plaines d'inondations</French>
         <German>Benötigt einen Fluss um fruchtbares Schwemmland zu erzeugen.</German>
+        <Russian>Для создания пойм нужна река</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_REMOVE_FOREST</Tag>
@@ -369,7 +370,7 @@
         <German>[LINK=FEATURE_FOREST]Wald[\LINK] niederbrennen</German>
         <Italian>Disboscare una [LINK=FEATURE_FOREST]foresta[\LINK]</Italian>
         <Spanish>Talar un [LINK=FEATURE_FOREST]bosque[\LINK]</Spanish>
-        <Russian>Вырубить [LINK=FEATURE_FOREST]лес[\LINK]</Russian>
+        <Russian>Вырубить [COLOR_HIGHLIGHT_TEXT]лес[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_REMOVE_FOREST_HELP</Tag>
@@ -382,7 +383,7 @@
         <German>[LINK=FEATURE_JUNGLE]Dschungel[\LINK] niederbrennen</German>
         <Italian>Rimuovere la [LINK=FEATURE_JUNGLE]giungla[\LINK]</Italian>
         <Spanish>Quitar [LINK=FEATURE_JUNGLE]selva[\LINK]</Spanish>
-        <Russian>Вырубить [LINK=FEATURE_JUNGLE]джунгли[\LINK]</Russian>
+        <Russian>Вырубить [COLOR_HIGHLIGHT_TEXT]джунгли[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_REMOVE_JUNGLE_HELP</Tag>
@@ -401,7 +402,7 @@
         <English>Cut down the [LINK=FEATURE_LUSHGRASS]grass[\LINK]</English>
         <French>Faucher les  [LINK=FEATURE_LUSHGRASS]herbes hautes[\LINK]</French>
         <German>[LINK=FEATURE_LUSHGRASS]Gras[\LINK] entfernen</German>
-        <Russian>Скосить [LINK=FEATURE_LUSHGRASS]траву[\LINK]</Russian>
+        <Russian>Скосить [COLOR_HIGHLIGHT_TEXT]траву[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_REMOVE_LUSHGRASS_HELP</Tag>
@@ -412,7 +413,7 @@
         <English>Chop down the [LINK=FEATURE_BARREL_CACTUS]cactus field[\LINK]</English>
         <French>Mettre à bas les [LINK=FEATURE_BARREL_CACTUS]champs de cactus[\LINK]</French>
         <German>[LINK=FEATURE_BARREL_CACTUS]Kaktusfeld[\LINK] entfernen</German>
-        <Russian>Вырубить [LINK=FEATURE_BARREL_CACTUS]кактусовое поле[\LINK]</Russian>
+        <Russian>Вырубить [COLOR_HIGHLIGHT_TEXT]кактусовое поле[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_REMOVE_CACTUS_HELP</Tag>
@@ -423,7 +424,7 @@
         <English>Destroy the [LINK=FEATURE_BARREL_CACTUS]rock formation[\LINK]</English>
         <French>Briser la  [LINK=FEATURE_BARREL_CACTUS]formation rocheuse[\LINK]</French>
         <German>[LINK=FEATURE_BARREL_CACTUS]Felsformation[\LINK] zerstören</German>
-        <Russian>Уничтожить [LINK=FEATURE_ROCK_FORMATION]скальные образования[\LINK]</Russian>
+        <Russian>Уничтожить [COLOR_HIGHLIGHT_TEXT]скальные образования[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_REMOVE_ROCK_FORMATION_HELP</Tag>
@@ -436,7 +437,7 @@
         <German>Straße bauen</German>
         <Italian>Costruire una strada</Italian>
         <Spanish>Construir una carretera</Spanish>
-        <Russian>Построить дорогу</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]дорогу[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_ROAD_HELP</Tag>
@@ -449,7 +450,7 @@
         <German>[LINK=IMPROVEMENT_TRAPPER_HUT]Jagdhütte[\LINK] bauen</German>
         <Italian>Costruire una [LINK=IMPROVEMENT_TRAPPER_HUT]capanna da caccia[\LINK]</Italian>
         <Spanish>Construir un [LINK=IMPROVEMENT_TRAPPER_HUT]pabellón de caza[\LINK]</Spanish>
-        <Russian>Построить [LINK=IMPROVEMENT_TRAPPER_HUT]домик охотников[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]домик охотников[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_TRAPPER_HUT_HELP</Tag>
@@ -460,7 +461,7 @@
         <English>Build a [LINK=IMPROVEMENT_VINEYARD]vineyard[\LINK]</English>
         <French>Construire une [LINK=IMPROVEMENT_VINEYARD]vigne[\LINK]</French>
         <German>[LINK=IMPROVEMENT_VINEYARD]Weinberg[\LINK] anlegen</German>
-        <Russian>Построить [LINK=IMPROVEMENT_VINEYARD]виноградник[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]виноградник[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_VINEYARD_HELP</Tag>
@@ -471,62 +472,67 @@
         <English>Build a [LINK=IMPROVEMENT_RAFT_STATION]river ferry station[\LINK]</English>
         <French>Construire un [LINK=IMPROVEMENT_RAFT_STATION]bac sur la rivière[\LINK]</French>
         <German>[LINK=IMPROVEMENT_RAFT_STATION]Flussfährenstation[\LINK] bauen</German>
-        <Russian>Построить [LINK=IMPROVEMENT_RAFT_STATION]речную паромную переправу[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]речную паромную переправу[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_RAFT_STATION_HELP</Tag>
         <English>Allows [LINK=TERRAIN_LARGE_RIVERS]large rivers[\LINK] to be crossed </English>
         <German>Erlaubt die Überquerung eines [LINK=TERRAIN_LARGE_RIVERS]Großen Flusses[\LINK]</German>
         <French>Permet de traverser une [LINK=TERRAIN_LARGE_RIVERS]grande rivière[\LINK]</French>
+        <Russian>Позволяет пересекать большие реки</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_FISHING_NETS</Tag>
         <English>Build [LINK=IMPROVEMENT_FISHING_NETS]fishing nets[\LINK]</English>
         <German>[LINK=IMPROVEMENT_FISHING_NETS]Fischernetze[\LINK] auslegen</German>
         <French>Placer des  [LINK=IMPROVEMENT_FISHING_NETS]filets de nets[\LINK]</French>
-        <Russian>Построить [LINK=IMPROVEMENT_FISHING_NETS]рыбацкие сети[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]рыбацкие сети[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_FISHING_NETS_HELP</Tag>
         <English>Increases fishing yields</English>
         <German>Erhöht Erträge aus Fischfang</German>
         <French>Augmente le produit de la pêche</French>
+        <Russian>Увеличивает продуктивность рыбной ловли</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_HUNTERS_STAGE</Tag>
         <English>Build [LINK=IMPROVEMENT_HUNTERS_STAGE]hunters' blind[\LINK]</English>
         <French>Construire des postes de chasses</French>
         <German>[LINK=IMPROVEMENT_HUNTERS_STAGE]Jagdpier[\LINK] bauen</German>
-        <Russian>Построить [LINK=IMPROVEMENT_HUNTERS_STAGE]охотничье укрытие[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]охотничье укрытие[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_HUNTERS_STAGE_HELP</Tag>
         <English>Increases hunting yields on water</English>
         <French>Augmente les fruits de la chasse sur les eaux.</French>
         <German>Erhöht Erträge der Jagd auf dem Wasser</German>
+        <Russian>Увеличивает продуктивность охоты на воде</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_SALINA</Tag>
         <English>Build [LINK=IMPROVEMENT_HUNTERS_STAGE]Salina[\LINK]</English>
         <French>Construit des [LINK=IMPROVEMENT_HUNTERS_STAGE]marais salant[\LINK]</French>
         <German>[LINK=IMPROVEMENT_HUNTERS_STAGE]Saline[\LINK] bauen</German>
-        <Russian>Построить [LINK=IMPROVEMENT_HUNTERS_STAGE]соляной рудник[\LINK]</Russian>
+        <Russian>Построить [COLOR_HIGHLIGHT_TEXT]соляной рудник[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_SALINA_HELP</Tag>
         <English>Yields raw salt from coastal terrain.</English>
         <French>Permet de recueillir du sel sur un terrain côtier</French>
         <German>Erbringt Salzerträge auf Küstengebiet</German>
+        <Russian>Для добычи каменной соли в прибрежных районах</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_REMOVE_ROAD</Tag>
         <English>Destroy road</English>
         <French>Destruire la route</French>
         <German>Straße zerstören</German>
-        <Russian>Уничтожить дорогу</Russian>
+        <Russian>Разрушить дорогу</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_REMOVE_HELP</Tag>
         <English>????</English>
+        <Russian>Уничтожает дорогу на данной клетке</Russian>
     </TEXT>
 </Civ4GameText>

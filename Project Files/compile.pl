@@ -41,7 +41,9 @@ sub menu
 	
 	print "\n";
 	print "If you are unsure of which DLL to use, type help.\n";
-	print "If you are still unsure after reading help, then pick Dynamic Release (2).\n";
+	print "If you are still unsure after reading help:\n";
+	print " - if you modify the game files in any way, e.g add events, pick Dynamic Assert (1).\n";
+	print " - in all other cases, pick Dynamic Release (2).\n";
 	
 	print "\n";
 	print "Pick an option and press enter\n";

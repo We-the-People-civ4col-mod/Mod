@@ -10,6 +10,9 @@
 //#include "CvStructs.h"
 #include "CvInfos.h"
 #include "CyTeam.h"
+
+#include <boost/python/class.hpp>
+
 void CyGlobalContextPythonInterface3(python::class_<CyGlobalContext>& x)
 {
 	OutputDebugString("Python Extension Module - CyGlobalContextPythonInterface3\n");

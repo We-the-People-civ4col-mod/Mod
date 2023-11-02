@@ -281,6 +281,13 @@ void CvInfoBase::checkStringContents(CvWString& szStr, const wchar* szExtension)
 	}
 }
 
+bool CvInfoBase::postLoadSetup()
+{
+	// returns if all instances will need to be run postLoadSetup
+	// obvoiusly if this is overwritten somewhere, then it must return true to make it work
+	return false;
+}
+
 //
 // XML reading code
 //
@@ -928,6 +935,7 @@ m_bRiver(false),
 m_bEnemyRoute(false),
 m_bAlwaysHeal(false),
 m_bHillsDoubleMove(false),
+m_bAvailableForDefensiveUnit(true),       // WTP, johanb - cache for defensive unit availabilty - by default everything is allowed
 m_aiTerrainAttackPercent(NULL),
 m_aiTerrainDefensePercent(NULL),
 m_aiFeatureAttackPercent(NULL),
@@ -1147,6 +1155,68 @@ bool CvPromotionInfo::isHillsDoubleMove() const
 {
 	return m_bHillsDoubleMove;
 }
+
+bool CvPromotionInfo::isAvailableForDefensiveUnit() const
+{
+	return m_bAvailableForDefensiveUnit;
+}
+
+bool CvPromotionInfo::isNotAvailableForDefensiveUnit() const
+{
+	return !m_bAvailableForDefensiveUnit;
+}
+
+void CvPromotionInfo::calculateAvailableForDefensiveUnit()
+{
+	if (getCityAttackPercent() != 0)
+	{
+		m_bAvailableForDefensiveUnit = false;   return;
+	}
+	if (getWithdrawalChange() != 0)
+	{
+		m_bAvailableForDefensiveUnit = false;   return;
+	}
+	if (isBlitz())
+	{
+		m_bAvailableForDefensiveUnit = false;   return;
+	}
+	if (isAmphib())
+	{
+		m_bAvailableForDefensiveUnit = false;   return;
+	}
+	if (isRiver())
+	{
+		m_bAvailableForDefensiveUnit = false;   return;
+	}
+	if (getHillsAttackPercent() != 0)
+	{
+		m_bAvailableForDefensiveUnit = false;   return;
+	}
+
+	for (TerrainTypes eTerrain = FIRST_TERRAIN; eTerrain < NUM_TERRAIN_TYPES; ++eTerrain)
+	{
+		if (getTerrainAttackPercent(eTerrain) != 0)
+		{
+			m_bAvailableForDefensiveUnit = false;   return;
+		}
+	}
+	for (FeatureTypes eFeature = FIRST_FEATURE; eFeature < NUM_FEATURE_TYPES; ++eFeature)
+	{
+		if (getFeatureAttackPercent(eFeature) != 0)
+		{
+			m_bAvailableForDefensiveUnit = false;   return;
+		}
+	}
+	for (UnitClassTypes eUnitClass = FIRST_UNITCLASS; eUnitClass < NUM_UNITCLASS_TYPES; ++eUnitClass)
+	{
+		if (getUnitClassAttackModifier(eUnitClass) != 0)
+		{
+			m_bAvailableForDefensiveUnit = false;   return;
+		}
+	}
+	m_bAvailableForDefensiveUnit = true; 
+}
+
 const char* CvPromotionInfo::getSound() const
 {
 	return m_szSound;
@@ -1422,6 +1492,13 @@ bool CvPromotionInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_abUnitCombat, "UnitCombats", GC.getNumUnitCombatInfos(), false);
 	return true;
 }
+
+bool CvPromotionInfo::postLoadSetup()
+{
+	calculateAvailableForDefensiveUnit();
+	return true;
+}
+
 bool CvPromotionInfo::readPass2(CvXMLLoadUtility* pXML)
 {
 	CvString szTextVal;
@@ -1433,6 +1510,8 @@ bool CvPromotionInfo::readPass2(CvXMLLoadUtility* pXML)
 	m_iPrereqOrPromotion2 = GC.getInfoTypeForString(szTextVal);
 	return true;
 }
+
+
 
 //======================================================================================================
 //					CvProfessionInfo
@@ -6853,39 +6932,42 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_abLeaders, "Leaders", GC.getNumLeaderHeadInfos(), false);
 	pXML->GetChildXmlValByName(szTextVal, "CivilizationSelectionSound");
 
-	{
-		// setlength of lists of names based on available TXT_KEYs
-		CvWString tag;
-		CvWString text;
-
-		for (;; ++m_iNumAdmiralNames)
-		{
-			tag.Format(L"%s_ADMIRAL_%d", m_szTextKey.GetCString(), m_iNumAdmiralNames);
-			text = gDLL->getText(tag);
-			if (tag == text) break;
-		}
-		for (;; ++m_iNumCityNames)
-		{
-			tag.Format(L"%s_CITY_%d", m_szTextKey.GetCString(), m_iNumCityNames);
-			text = gDLL->getText(tag);
-			if (tag == text) break;
-		}
-		for (;; ++m_iNumGeneralNames)
-		{
-			tag.Format(L"%s_GENERAL_%d", m_szTextKey.GetCString(), m_iNumGeneralNames);
-			text = gDLL->getText(tag);
-			if (tag == text) break;
-		}
-		for (;; ++m_iNumShipNames)
-		{
-			tag.Format(L"%s_SHIP_%d", m_szTextKey.GetCString(), m_iNumShipNames);
-			text = gDLL->getText(tag);
-			if (tag == text) break;
-		}
-	}
-
 	return true;
 }
+
+bool CvCivilizationInfo::postLoadSetup()
+{
+	// setlength of lists of names based on available TXT_KEYs
+	CvWString tag;
+	CvWString text;
+
+	for (;; ++m_iNumAdmiralNames)
+	{
+		tag.Format(L"%s_ADMIRAL_%d", m_szTextKey.GetCString(), m_iNumAdmiralNames);
+		text = gDLL->getText(tag);
+		if (tag == text) break;
+	}
+	for (;; ++m_iNumCityNames)
+	{
+		tag.Format(L"%s_CITY_%d", m_szTextKey.GetCString(), m_iNumCityNames);
+		text = gDLL->getText(tag);
+		if (tag == text) break;
+	}
+	for (;; ++m_iNumGeneralNames)
+	{
+		tag.Format(L"%s_GENERAL_%d", m_szTextKey.GetCString(), m_iNumGeneralNames);
+		text = gDLL->getText(tag);
+		if (tag == text) break;
+	}
+	for (;; ++m_iNumShipNames)
+	{
+		tag.Format(L"%s_SHIP_%d", m_szTextKey.GetCString(), m_iNumShipNames);
+		text = gDLL->getText(tag);
+		if (tag == text) break;
+	}
+	return true;
+}
+
 bool CvCivilizationInfo::readPass2(CvXMLLoadUtility* pXML)
 {
 	CvString szTextVal;

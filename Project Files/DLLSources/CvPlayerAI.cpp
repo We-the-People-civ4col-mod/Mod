@@ -1750,12 +1750,12 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 		{
 			if (pPlot->hasDeepWaterCoast())
 			{
-				iValue *= 125; // found value increased
+				iValue *= 200; // found value of starting city on deep water coast dramatically increased
 				iValue /= 100;
 			}
 			else
 			{
-				iValue *= 80; // found value decreased
+				iValue *= 80; // found value decreased for stuff like shallow coast or lakes decreased, so it prefers above 
 				iValue /= 100;
 			}
 		}
@@ -1763,7 +1763,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 		// old normal logic - not considering special cases for Large Rivers without direct Ocean Plots - for all Cities after first city
 		else
 		{
-			iValue *= 125;
+			iValue *= 150; // increased preference for coastal cities generally
 			iValue /= 100;
 		}
 		//WTP, ray, Large Rivers - END
@@ -2534,8 +2534,7 @@ int CvPlayerAI::AI_getPlotDanger(CvPlot* pPlot, int iRange, bool bTestMoves, boo
 
 					while (pUnitNode != NULL)
 					{
-						pLoopUnit = ::getUnit(pUnitNode->m_data);
-						pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+						pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 						if (pLoopUnit == NULL)
 						{
@@ -2645,8 +2644,7 @@ int CvPlayerAI::AI_getUnitDanger(CvUnit* pUnit, int iRange, bool bTestMoves, boo
 
 					while (pUnitNode != NULL)
 					{
-						pLoopUnit = ::getUnit(pUnitNode->m_data);
-						pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+						pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 						if (pLoopUnit != NULL && atWar(pLoopUnit->getTeam(), getTeam()))
 						{
@@ -2733,8 +2731,7 @@ int CvPlayerAI::AI_getWaterDanger(CvPlot* pPlot, int iRange, bool bTestMoves, bo
 							pUnitNode = pLoopPlot->headUnitNode();
 							while (pUnitNode != NULL)
 							{
-								pLoopUnit = ::getUnit(pUnitNode->m_data);
-								pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+								pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 								if (pLoopUnit == NULL)
 								{
@@ -3596,8 +3593,17 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 				}
 				int newPrice = oldPrice * (1000 + randomPriceChange) / 1000;
 
-				// R&R, ray, change for Trait Trader
-				newPrice = newPrice * (100 + GET_PLAYER(getID()).getNativeTradeModifier()) / 100;
+				// R&R, ray, change for Trait Trader - START
+				// WTP, ray, also consider European Trait
+				int iTotalNativeTradeModifier = GET_PLAYER(getID()).getNativeTradeModifier() + GET_PLAYER(ePlayer).getNativeTradeModifier();
+				// safety check to ensure that no numbers do not get too extreme
+				if (iTotalNativeTradeModifier > GLOBAL_DEFINE_MAX_NATIVE_BARGAIN_MODIFIER)
+				{
+					iTotalNativeTradeModifier = GLOBAL_DEFINE_MAX_NATIVE_BARGAIN_MODIFIER;
+				}
+				// here we calculate the price
+				newPrice = newPrice * (100 + iTotalNativeTradeModifier) / 100;
+				// R&R, ray, change for Trait Trader - END
 
 				// R&R, ray, small correction to stop at max gold of player
 				int iGoldAvailable = GET_PLAYER(getID()).AI_maxGoldTrade(ePlayer);
@@ -3628,9 +3634,18 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 				}
 				int newPrice = oldPrice * (1000 - randomPriceChange) / 1000;
 
-				// R&R, ray, change for Trait Trader
-				newPrice = newPrice * (100 - GET_PLAYER(getID()).getNativeTradeModifier()) / 100;
-
+				// R&R, ray, change for Trait Trader - START
+				// WTP, ray, also consider European Trait
+				int iTotalNativeTradeModifier = GET_PLAYER(getID()).getNativeTradeModifier() + GET_PLAYER(ePlayer).getNativeTradeModifier();
+				// safety check to ensure that no negative numbers occurs
+				if (iTotalNativeTradeModifier > GLOBAL_DEFINE_MAX_NATIVE_BARGAIN_MODIFIER)
+				{
+					iTotalNativeTradeModifier = GLOBAL_DEFINE_MAX_NATIVE_BARGAIN_MODIFIER;
+				}
+				// here we calculate the price
+				newPrice = newPrice * (100 - iTotalNativeTradeModifier) / 100;
+				// R&R, ray, change for Trait Trader - END
+				
 				//setting value to new price
 				pTheirCounter->clear();
 				CLLNode<TradeData>* newNode = pNode;
@@ -5383,8 +5398,7 @@ int CvPlayerAI::AI_adjacentPotentialAttackers(CvPlot* pPlot, bool bTestCanMove)
 
 				while (pUnitNode != NULL)
 				{
-					pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+					pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getID())
 					{
@@ -11959,8 +11973,7 @@ int CvPlayerAI::AI_sumAttackerStrength(CvPlot* pPlot, CvPlot* pAttackedPlot, int
 
 				while (pUnitNode != NULL)
 				{
-					pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+					pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getID())
 					{
@@ -12002,8 +12015,7 @@ int CvPlayerAI::AI_sumEnemyStrength(CvPlot* pPlot, int iRange, bool bAttack, Dom
 
 				while (pUnitNode != NULL)
 				{
-					pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+					pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 					if (pLoopUnit != NULL && pLoopUnit->isEnemy(getTeam(), pLoopPlot))
 					{
@@ -12040,8 +12052,7 @@ int CvPlayerAI::AI_setUnitAIStatesRange(CvPlot* pPlot, int iRange, UnitAIStates 
 
 				while (pUnitNode != NULL)
 				{
-					pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+					pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 					if (pLoopUnit != NULL && (eValidUnitAIState == NO_UNITAI_STATE || pLoopUnit->AI_getUnitAIState() == eValidUnitAIState))
 					{
@@ -13158,8 +13169,7 @@ void CvPlayerAI::AI_doEmotions()
 
 				while (pUnitNode != NULL)
 				{
-					pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+					pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 					if (pLoopUnit == NULL)
 					{
@@ -13536,8 +13546,7 @@ int CvPlayerAI::AI_getOurPlotStrength(CvPlot* pPlot, int iRange, bool bDefensive
 
 					while (pUnitNode != NULL)
 					{
-						pLoopUnit = ::getUnit(pUnitNode->m_data);
-						pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+						pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 						if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getID())
 						{
@@ -13600,8 +13609,7 @@ int CvPlayerAI::AI_getEnemyPlotStrength(CvPlot* pPlot, int iRange, bool bDefensi
 
 					while (pUnitNode != NULL)
 					{
-						pLoopUnit = ::getUnit(pUnitNode->m_data);
-						pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+						pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 						if (pLoopUnit != NULL && atWar(pLoopUnit->getTeam(), getTeam()))
 						{
@@ -15018,8 +15026,7 @@ void CvPlayerAI::AI_doEnemyUnitData()
 
 			while (pUnitNode != NULL)
 			{
-				pLoopUnit = ::getUnit(pUnitNode->m_data);
-				pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+				pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 				if (pLoopUnit != NULL && pLoopUnit->canFight())
 				{
@@ -16229,8 +16236,7 @@ int CvPlayerAI::AI_countPromotions(PromotionTypes ePromotion, CvPlot* pPlot, int
 
 				while (pUnitNode != NULL)
 				{
-					pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+					pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
 					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getID())
 					{

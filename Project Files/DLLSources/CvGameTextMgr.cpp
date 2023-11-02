@@ -1489,11 +1489,10 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, const CvPlot* pPl
 			CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 			while(pUnitNode != NULL)
 			{
-				CvUnit* pHeadUnit = ::getUnit(pUnitNode->m_data);
-				pUnitNode = pPlot->nextUnitNode(pUnitNode);
+				CvUnit* pHeadUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 				// is this unit the head of a group, not cargo, and visible?
-				if (pHeadUnit && pHeadUnit->isGroupHead() && !pHeadUnit->isCargo() && !pHeadUnit->isInvisible(GC.getGameINLINE().getActiveTeam(), GC.getGameINLINE().isDebugMode()))
+				if (pHeadUnit != NULL && pHeadUnit->isGroupHead() && !pHeadUnit->isCargo() && !pHeadUnit->isInvisible(GC.getGameINLINE().getActiveTeam(), GC.getGameINLINE().isDebugMode()))
 				{
 					// head unit name and unitai
 					szString.append(CvWString::format(SETCOLR L"%s" ENDCOLR, 255,190,0,255, pHeadUnit->getName().GetCString()));
@@ -1523,8 +1522,7 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, const CvPlot* pPl
 						CLLNode<IDInfo>* pUnitNode = pHeadGroup->headUnitNode();
 						while (pUnitNode != NULL)
 						{
-							CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-							pUnitNode = pHeadGroup->nextUnitNode(pUnitNode);
+							CvUnit* pLoopUnit = pHeadGroup->getUnitNodeLoop(pUnitNode);
 
 							if (pLoopUnit != NULL)
 							{
@@ -1635,11 +1633,10 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, const CvPlot* pPl
 					CLLNode<IDInfo>* pUnitNode2 = pPlot->headUnitNode();
 					while(pUnitNode2 != NULL)
 					{
-						CvUnit* pCargoUnit = ::getUnit(pUnitNode2->m_data);
-						pUnitNode2 = pPlot->nextUnitNode(pUnitNode2);
+						CvUnit* pCargoUnit = pPlot->getUnitNodeLoop(pUnitNode2);
 
 						// is this unit visible?
-						if (pCargoUnit && (pCargoUnit != pHeadUnit) && !pCargoUnit->isInvisible(GC.getGameINLINE().getActiveTeam(), GC.getGameINLINE().isDebugMode()))
+						if (pCargoUnit != NULL && (pCargoUnit != pHeadUnit) && !pCargoUnit->isInvisible(GC.getGameINLINE().getActiveTeam(), GC.getGameINLINE().isDebugMode()))
 						{
 							// is this unit in cargo of the headunit?
 							if (pCargoUnit->getTransportUnit() == pHeadUnit)
@@ -1667,11 +1664,10 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, const CvPlot* pPl
 					CLLNode<IDInfo>* pUnitNode3 = pPlot->headUnitNode();
 					while(pUnitNode3 != NULL)
 					{
-						CvUnit* pUnit = ::getUnit(pUnitNode3->m_data);
-						pUnitNode3 = pPlot->nextUnitNode(pUnitNode3);
+						CvUnit* pUnit = pPlot->getUnitNodeLoop(pUnitNode3);
 
 						// is this unit not head, in head's group and visible?
-						if (pUnit && (pUnit != pHeadUnit) && (pUnit->getGroupID() == pHeadUnit->getGroupID()) && !pUnit->isInvisible(GC.getGameINLINE().getActiveTeam(), GC.getGameINLINE().isDebugMode()))
+						if (pUnit != NULL && (pUnit != pHeadUnit) && (pUnit->getGroupID() == pHeadUnit->getGroupID()) && !pUnit->isInvisible(GC.getGameINLINE().getActiveTeam(), GC.getGameINLINE().isDebugMode()))
 						{
 							FAssertMsg(!pUnit->isCargo(), "unit is cargo but head unit is not cargo");
 							// name and unitai
@@ -1694,11 +1690,10 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, const CvPlot* pPl
 							CLLNode<IDInfo>* pUnitNode4 = pPlot->headUnitNode();
 							while(pUnitNode4 != NULL)
 							{
-								CvUnit* pCargoUnit = ::getUnit(pUnitNode4->m_data);
-								pUnitNode4 = pPlot->nextUnitNode(pUnitNode4);
+								CvUnit* pCargoUnit = pPlot->getUnitNodeLoop(pUnitNode4);
 
 								// is this unit visible?
-								if (pCargoUnit && (pCargoUnit != pUnit) && !pCargoUnit->isInvisible(GC.getGameINLINE().getActiveTeam(), GC.getGameINLINE().isDebugMode()))
+								if (pCargoUnit != NULL && (pCargoUnit != pUnit) && !pCargoUnit->isInvisible(GC.getGameINLINE().getActiveTeam(), GC.getGameINLINE().isDebugMode()))
 								{
 									// is this unit in cargo of unit?
 									if (pCargoUnit->getTransportUnit() == pUnit)
@@ -1776,10 +1771,9 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, const CvPlot* pPl
 		CLLNode<IDInfo>* pUnitNode5 = pPlot->headUnitNode();
 		while(pUnitNode5 != NULL)
 		{
-			CvUnit* pUnit = ::getUnit(pUnitNode5->m_data);
-			pUnitNode5 = pPlot->nextUnitNode(pUnitNode5);
+			CvUnit* pUnit =  pPlot->getUnitNodeLoop(pUnitNode5);
 
-			if (pUnit && !pUnit->isInvisible(GC.getGameINLINE().getActiveTeam(), GC.getGameINLINE().isDebugMode()))
+			if (pUnit != NULL && !pUnit->isInvisible(GC.getGameINLINE().getActiveTeam(), GC.getGameINLINE().isDebugMode()))
 			{
 				++iNumVisibleUnits;
 			}

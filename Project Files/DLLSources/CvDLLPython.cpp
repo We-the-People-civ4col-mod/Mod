@@ -7,6 +7,8 @@
 #include "CyGlobalContext.h"
 #include "CyCity.h"
 
+#include <boost/python/class.hpp>
+
 /// xml Editor - start - Nightinggale
 #include "CyXMLEditor.h"
 //void CyXMLEditorPythonInterfaceTextString(python::class_<CyXMLTextString>& x);

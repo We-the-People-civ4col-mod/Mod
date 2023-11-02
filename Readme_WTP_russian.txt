@@ -53,24 +53,32 @@ WTP продолжает гордую традицию RaR с новой ком�
 
 ------------------
 
-Текущие члены команды WTP
+Текущие члены команды WTP:
+
 	raystuttgart
 	Devolution
 	Nightinggale
 	Schmiddie
-	Mr.ZorG (ваш покорный слуга)
-	Fürstbischof
+	Mr.Zorg (ваш покорный слуга)
 	Kendon
 	Raubwürger
-	Flavius Belisarius
 	Liet
+	Barthoze
+	sneed
 	jooe
+	FlaviusBelisarius
+	Fürstbischof
+	Tucker8
+	victorxucp
+	Aemon
 
 Особая благодарность:
+
 	f1rpo (постоянная поддержка, связанная с кодированием)
 	karadoc (за его код поиска пути)
 
 Бывшие (сейчас неактивные) члены RaR:
+
 	Robert Surcouf
 	colonialfan
 	KJ Jansson

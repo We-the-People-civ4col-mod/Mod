@@ -760,8 +760,7 @@ bool CvSelectionGroupAI::AI_launchAssault(CvPlot* pTargetCityPlot)
 
     while (pUnitNode != NULL)
     {
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = plot()->nextUnitNode(pUnitNode);
+		pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
         if (pLoopUnit != NULL && pLoopUnit->isCargo())
         {
@@ -1043,8 +1042,7 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 		CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
 		while (pUnitNode != NULL)
 		{
-			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = plot()->nextUnitNode(pUnitNode);
+			CvUnit* pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 			if (pLoopUnit != NULL)
 			{
@@ -1418,8 +1416,7 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 				CvUnit* pLoopUnit;
 				while (pUnitNode != NULL)
 				{
-					pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = plot()->nextUnitNode(pUnitNode);
+					pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 					if (pLoopUnit != NULL)
 					{

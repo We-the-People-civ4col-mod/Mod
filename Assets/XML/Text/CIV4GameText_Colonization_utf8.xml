@@ -666,6 +666,12 @@
         <Russian>Ставка налога : %d1%%</Russian>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_MISC_BRIBE_RATE_FLAT</Tag>
+        <English>Our tax rate is like our ships, firmly docked!</English>
+        <French>Notre taxe est arrimée solide à quai, comme nos navires ! Elle ne prendra pas le large !</French>
+        <Russian>Наш процент с торговых сделок надежно закреплен, как и наши корабли у причалов! В отличии от настроения Короля, он всегда постоянный!</Russian>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TAX_RATE_LOWERED</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] has lowered your tax rate from %d2_old_rate%% to %d3_new_rate%%</English>
         <French>[COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] a diminué votre taux d?imposition. Il passe de %d2_old_rate%% à %d3_new_rate%%</French>
@@ -3075,7 +3081,7 @@
         <German>Ein historischer Augenblick : Die [COLOR_HIGHLIGHT_TEXT]%s1:3_CivAdj[COLOR_REVERT] Nation wurde vernichtet!</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1:2_CivAdj[COLOR_REVERT] sconfitti!</Italian>
         <Spanish>¡Los [COLOR_HIGHLIGHT_TEXT]%s1:3_CivAdj[COLOR_REVERT] han sido derrotados!</Spanish>
-        <Russian>Исторический момент : [COLOR_HIGHLIGHT_TEXT]%s1:2_CivAdj[COLOR_REVERT] побежден!</Russian>
+        <Russian>[COLOR_CYAN]Исторический момент[COLOR_REVERT] : [COLOR_HIGHLIGHT_TEXT]%s1:2_CivAdj[COLOR_REVERT] побеждены!!!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BONUS_YIELD_CHANGE</Tag>

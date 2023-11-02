@@ -1314,31 +1314,34 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 			int iMoveCost = kToPlot.movementCost(pLoopUnit, &kFromPlot,
 				false); // advc.001i
 			//FAssert(pLoopUnit->getDomainType() != DOMAIN_AIR);
-#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
-			int iMaxMoves = parent->m_iData1 > 0 ? parent->m_iData1 : pLoopUnit->maxMoves();
-			int iMovesLeft = std::max(0, (iMaxMoves - iMoveCost));
-
-			iWorstMovesLeft = std::min(iWorstMovesLeft, iMovesLeft);
-			iWorstMaxMoves = std::min(iWorstMaxMoves, iMaxMoves);
-
-			int iCost = PATH_MOVEMENT_WEIGHT * (iMovesLeft == 0 ? iMaxMoves : iMoveCost);
-			iCost = (iCost * iExploreModifier) / 3;
-			//iCost = (iCost * iFlipModifier) / iFlipModifierDiv; // advc.035
-			if (iCost > iWorstCost)
+			if (GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1)
 			{
-				iWorstCost = iCost;
-				iWorstMovesLeft = iMovesLeft;
-				iWorstMaxMoves = iMaxMoves;
+				int iMaxMoves = parent->m_iData1 > 0 ? parent->m_iData1 : pLoopUnit->maxMoves();
+				int iMovesLeft = std::max(0, (iMaxMoves - iMoveCost));
+
+				iWorstMovesLeft = std::min(iWorstMovesLeft, iMovesLeft);
+				iWorstMaxMoves = std::min(iWorstMaxMoves, iMaxMoves);
+
+				int iCost = PATH_MOVEMENT_WEIGHT * (iMovesLeft == 0 ? iMaxMoves : iMoveCost);
+				iCost = (iCost * iExploreModifier) / 3;
+				//iCost = (iCost * iFlipModifier) / iFlipModifierDiv; // advc.035
+				if (iCost > iWorstCost)
+				{
+					iWorstCost = iCost;
+					iWorstMovesLeft = iMovesLeft;
+					iWorstMaxMoves = iMaxMoves;
+				}
 			}
-#else
-			int iCost = PATH_MOVEMENT_WEIGHT * iMoveCost;
-			iCost = (iCost * iExploreModifier) / 3;
-			//iCost = (iCost * iFlipModifier) / iFlipModifierDiv; // advc.035
-			if (iCost > iWorstCost)
+			else
 			{
-				iWorstCost = iCost;
+				int iCost = PATH_MOVEMENT_WEIGHT * iMoveCost;
+				iCost = (iCost * iExploreModifier) / 3;
+				//iCost = (iCost * iFlipModifier) / iFlipModifierDiv; // advc.035
+				if (iCost > iWorstCost)
+				{
+					iWorstCost = iCost;
+				}
 			}
-#endif
 		}
 	}
 
@@ -1790,13 +1793,14 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 		// K-Mod. I've moved the code from here into separate functions.
 		iMoves = bMoveMaxMoves ? pSelectionGroup->maxMoves() : pSelectionGroup->movesLeft();
 
-		#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 0
+		if (GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 0)
+		{
 			while (iMoves <= 0)
 			{
 				++iTurns;
 				iMoves += pSelectionGroup->maxMoves();
 			}
-		#endif
+		}
 
 		// K-Mod end
 	}
@@ -1819,7 +1823,8 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 		// K-Mod. The original code would give incorrect results for groups where one unit had more moves but also had higher move cost.
 		// (eg. the most obvious example is when a group with 1-move units and 2-move units is moving on a railroad. - In this situation,
 		//  the original code would consistently underestimate the remaining moves at every step.)
-		#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
+		if (GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1)
+		{
 			const bool bNewTurn = iMoves == 0;
 
 			if (bNewTurn)
@@ -1827,14 +1832,16 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 				++iTurns;
 				iMoves = pSelectionGroup->maxMoves();
 			}
-		#else // GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 0
-		// add how many turns it takes before the unit can move again
+		}
+		else // GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 0
+		{
+			// add how many turns it takes before the unit can move again
 			while (iMoves <= 0)
 			{
 				++iTurns;
 				iMoves += pSelectionGroup->maxMoves();
 			}
-		#endif
+		}
 
 		CLLNode<IDInfo> const* pUnitNode = pSelectionGroup->headUnitNode();
 		// TODO: getUnit can return NULL in rare cases
@@ -1858,11 +1865,14 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 		if (bUniformCost)
 		{
 			// the simple, normal case
-			#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
+			if (GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1)
+			{
 				iMoves = std::max(0, iMoves - iMoveCost);
-			#else
+			}
+			else
+			{
 				iMoves -= iMoveCost;
-			#endif
+			}
 		}
 		else
 		{
@@ -1897,18 +1907,20 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 						false*/); // advc.001i
 					FAssert(iUnitMoves > 0 || i == 1);
 				}
-				#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
+				if (GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1)
+				{
 					iUnitMoves = std::max(iUnitMoves, 0);
-				#endif
+				}
 				iMoves = std::min(iMoves, iUnitMoves);
 			}
 		}
 		// K-Mod end
 	}
 
-	#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
+	if (GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1)
+	{
 		FAssertMsg(iMoves >= 0, "iMoves is expected to be non-negative (invalid Index)");
-	#endif
+	}
 
 	node->m_iData1 = iMoves;
 	node->m_iData2 = iTurns > 0 ? iTurns : 1; // this avoids saving 0 turns, which might (?) lead to a div by 0 crash
@@ -2496,6 +2508,35 @@ void postLoadGameFixes()
 		kPlayer.postLoadFixes();
 	}
 	
+#ifdef _DEBUG
+	//jburet, pointer sanity check
+	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
+	{
+		CvPlayerAI& kPlayer = GET_PLAYER(ePlayer);
+
+		if (!kPlayer.isEverAlive()) continue; //Inactive from day one players do not count
+
+		if (kPlayer.getParent() != NO_PLAYER)
+		{
+			CvPlayer* kKing = kPlayer.getParentPlayer();
+			CvPlayer* kColony = &kPlayer;
+			FAssertMsg(kKing != NULL, "Pointer to Parent Player not initialized");
+			FAssertMsg(kKing->getID() == kColony->getParent(), "Pointer to Parent Player doesn't point on the right player");
+			FAssertMsg(kKing->getColony() == kColony->getID(), "Pointer to Parent Player doesn't point on the right player");
+		}
+
+		if (kPlayer.getColony() != NO_PLAYER)
+		{
+			CvPlayer* kKing = &kPlayer;
+			CvPlayer* kColony = kPlayer.getColonyPlayer();
+			FAssertMsg(kColony != NULL, "Pointer to Colony Player not initialized");
+			FAssertMsg(kKing->getID() == kColony->getParent(), "Pointer to Colony Player doesn't point on the right player");
+			FAssertMsg(kKing->getColony() == kColony->getID(), "Pointer to Colony Player doesn't point on the right player");
+		}
+
+	}
+
+#endif
 	GC.getGameINLINE().postLoadFixes();
 }
 /// post load function - end - Nightinggale
