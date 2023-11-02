@@ -1145,32 +1145,6 @@
         <Russian>Хлебобулочные изделия</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_BAKERY_GOODS</Tag>
-        <English>Provisions</English>
-        <French>Provisions</French>
-        <German>
-            <Text>Proviant</Text>
-            <Gender>male</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Prodotti da forno</Italian>
-        <Spanish>Productos de panadería</Spanish>
-        <Russian>Хлебобулочные изделия</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_BAKERY_GOODS</Tag>
-        <English>Provisions</English>
-        <French>Provisions</French>
-        <German>
-            <Text>Proviant</Text>
-            <Gender>male</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Prodotti da forno</Italian>
-        <Spanish>Productos de panadería</Spanish>
-        <Russian>Хлебобулочные изделия</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_YIELD_BAKERY_GOODS_PEDIA</Tag>
         <English>[H1]PROVISIONS[\H1][NEWLINE][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Provisions[COLOR_REVERT] are made from [LINK=YIELD_RICE]rice[\LINK], [LINK=YIELD_BARLEY]barley[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK] in the [LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] or one of its upgrades. To supply the citizens with provisions, a colonist has to work in the baker profession. [LINK=UNIT_BAKER]Master bakers[\LINK] excel at this craft, and can greatly boost your production of fresh provisions.[NEWLINE][NEWLINE]On normal game speed, 50 provisions are needed to equip pioneers and missionaries. Scouts, town guards and Royal Halberdiers need 20 provisions.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]At first every household bakes its own bread but soon the baker's house centralizes food production. The baker starts work well before dawn so that households can have their daily bread. The bakery also stocks other dried foods for travellers. Settlers who remember the early starvation days continue to grow squash, beans and corn but new arrivals prefer familiar food from the old country.[NEWLINE][NEWLINE]Having a bakery means each household doesn't need to bake its own bread. That allows other colonists to spend time on what they do best. Specialization helps the economy to grow, a concept soon popularized in books by economists Adam Smith and David Ricardo.</English>
         <French>[H1]provisions[\H1][NEWLINE][BOLD]Stratégie :[\BOLD][NEWLINE]Les [COLOR_HIGHLIGHT_TEXT]provisions[COLOR_REVERT] sont disponibles dans la [LINK=BUILDING_BAKER_HOUSE]maison du boulanger[\LINK] ou dans l'une de ses améliorations. Pour approvisionner les citoyens en provisions, un colon doit exercer la profession de boulanger. Les [LINK=UNIT_BAKER]maîtres boulangers[\LINK] excellent dans ce métier et peuvent considérablement augmenter votre production de pâtisserie fraîche.[NEWLINE][NEWLINE]50 provisions sont nécessaires pour équiper les pionniers et les missionnaires. Les scouts, les gardes de la ville et les hallebardiers royaux ont besoin de 20 provisions.[NEWLINE][NEWLINE][BOLD]Contexte :[\BOLD][NEWLINE]Au début, chaque foyer cuit son propre pain, mais bientôt la maison du boulanger centralise la production alimentaire. Le boulanger commence à travailler bien avant l'aube pour que les ménages puissent avoir leur pain quotidien. Les colons qui se souviennent des premiers jours de famine continuent de cultiver des courges, des haricots et du maïs, mais les nouveaux arrivants préfèrent les aliments familiers du vieux pays.[NEWLINE][NEWLINE]Le fait d'avoir une boulangerie signifie que chaque foyer n'a pas besoin de cuire son propre pain. Cela permet aux autres colons de consacrer du temps à ce qu'ils font le mieux. La spécialisation favorise la croissance de l'économie, un concept bientôt popularisé dans les livres des économistes Adam Smith et David Ricardo.</French>

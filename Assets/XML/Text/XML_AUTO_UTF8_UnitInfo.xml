@@ -343,31 +343,6 @@
         <Russian>[COLOR_UNIT_TEXT]Искусный кузнец[COLOR_REVERT] – уникальная национальная единица Швеции, которая заменяет [LINK=UNIT_BLACKSMITH]мастера кузнеца[\LINK].[NEWLINE]При работе в качестве [LINK=PROFESSION_BLACKSMITH]кузнеца инструментов[\LINK] или [LINK=PROFESSION_BLADESMITH]кузнеца клинков[\LINK] для создания [LINK=YIELD_TOOLS]инструментов[\LINK] или [LINK=YIELD_BLADES]клинков[\LINK] из [LINK=YIELD_ORE]руды[\LINK], искусный кузнец создаст инструменты или клинки еще быстрее, чем мастер кузнец.[PARAGRAPH:1]Искусного кузнеца можно нанять в [LINK=CONCEPT_EUROPE]Европе[\LINK], а также [LINK=CONCEPT_TRAINING]обучить[\LINK] в колонии с [LINK=BUILDING_COLLEGE] колледжом[\LINK] или одном из его улучшении.</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_BLADES</Tag>
-        <English>Blades</English>
-        <French>
-            <Text>Sabres</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>
-            <Text>Klingenwaffen</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>
-            <Text>Spade</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Cuchillas</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Клинки</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNIT_BLADES_PEDIA</Tag>
         <English>Blades Background</English>
     </TEXT>
@@ -3905,35 +3880,6 @@
         <German>[COLOR_UNIT_TEXT]Berittene Konquistadoren[COLOR_REVERT] sind, wie auch [COLOR_UNIT_TEXT]Konquistadoren[COLOR_REVERT], sehr erfahren in Nahkampf-Situationen und eignen sich deshalb hervorragend für den Kampf gegen Ureinwohner oder berittene Einheiten. Allerdings eignen sie sich auf Grund der Pferde nur für den Kampf in offenem Gelände.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_MUSKETS</Tag>
-        <English>
-            <Text>Guns</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </English>
-        <French>
-            <Text>Arme à feu:Armes à feu</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Schusswaffen</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>
-            <Text>Armi</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Arma:Armas</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Мушкеты</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNIT_MUSKETS_PEDIA</Tag>
         <English>Muskets background</English>
     </TEXT>
@@ -4856,31 +4802,6 @@
         <German>[COLOR_UNIT_TEXT]Erfahrene Pfefferpflanzer[COLOR_REVERT] verdoppeln den [COLOR_HIGHLIGHT_TEXT]Pfeffer[COLOR_REVERT]ertrag jedes Geländefelds, auf dem sie arbeiten.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_ROPE</Tag>
-        <English>Ropes</English>
-        <French>
-            <Text>Cordage</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>
-            <Text>Seile</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>
-            <Text>Corde</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Cuerdas</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Канаты</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNIT_ROPE_PEDIA</Tag>
         <English>A rope is a linear combination of strands twisted or braided together to combine them into a larger and stronger form.[NEWLINE]Ropes have tensile strength and so can be used for dragging and lifting.[NEWLINE]Rope may be made from any long, stringy, fibrous material, but generally uses natural fibres.[NEWLINE]Common natural fibres for rope are hemp, linen, cotton, coir, jute, straw and sisal.[NEWLINE]Rope is of paramount importance in many fields like construction, seafaring or exploration, and has been used since prehistoric times.[NEWLINE]In order to connect ropes a large number of knots have been invented.</English>
         <French>Un cordages est un ensemble linéaire de plis, de fils ou de torons qui sont tordus ou tressés ensemble afin de les combiner en une forme plus grande et plus solide. Les cordages ont une résistance à la traction et peuvent donc être utilisées pour traîner et soulever. Le cordage peut être fabriquée à partir de n'importe quel matériau long, filandreux et fibreux, mais elle utilise généralement des fibres naturelles. Les fibres naturelles les plus courantes sont le chanvre, le lin, le coton, le coco, le jute, la paille et le sisal. Le cordages est d'une importance capitale dans de nombreux domaines tels que la construction, la navigation maritime ou l'exploration, et est utilisée depuis la préhistoire. Pour fixer les cordages, un grand nombre de nœuds ont été inventés.</French>
@@ -5216,35 +5137,6 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_RUM_STRATEGY</Tag>
         <English>Rum strategy</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_SAILCLOTH</Tag>
-        <English>
-            <Text>Sailcloth</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </English>
-        <French>
-            <Text>Voile</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Segeltuch</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Tela da vele</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Lona</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Парусина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_SAILCLOTH_PEDIA</Tag>
@@ -6127,35 +6019,6 @@
         <German>Ein [COLOR_UNIT_TEXT]Erfahrener Tabakpflanzer[COLOR_REVERT] verdoppelt die [COLOR_HIGHLIGHT_TEXT]Tabak[COLOR_REVERT]produktion des Geländefeldes, auf dem er arbeitet.[PARAGRAPH:2]Erfahrene Tabakpflanzer stehen nicht im [LINK=CONCEPT_EUROPE]Europahafen[\LINK] zur Verfügung. Aber es gibt andere Wege, sie zu gewinnen: Manche Ureinwohnerdörfer bilden diese Experten aus, oder man kauft sie in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT] . Außerdem gibt es einen Handels-Gründervater, der eine Einheit zur Verfügung stellt. Oder man löst das Problem durch Kidnapping - und erobert eine europäische Siedlung, in der einer dieser begehrten Experten Stadtbürger ist.</German>
         <Italian>I [COLOR_UNIT_TEXT]coltivatori esperti di tabacco[COLOR_REVERT] sono i migliori amici del tabaccaio. Raddoppiano infatti la quantità di [COLOR_HIGHLIGHT_TEXT]tabacco[COLOR_REVERT] prodotta dalla casella in cui lavorano.</Italian>
         <Spanish>Los [COLOR_UNIT_TEXT]Plantadores de tabaco expertos[COLOR_REVERT] son los mejores amigos del Tabaquero. Un Plantador de tabaco experto produce el doble de cantidad de [COLOR_HIGHLIGHT_TEXT]Tabaco[COLOR_REVERT] en cualquier casilla en la que trabaje.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_TOOLS</Tag>
-        <English>
-            <Text>Tools</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </English>
-        <French>
-            <Text>Outil:Outils</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Eisenwaren</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>
-            <Text>Attrezzi</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Herramientas</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Инструменты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_TOOLS_PEDIA</Tag>

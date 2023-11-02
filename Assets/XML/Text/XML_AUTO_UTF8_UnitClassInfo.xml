@@ -233,31 +233,6 @@
         <Russian>Мастер кузнец:Мастера кузнецы</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_BLADES</Tag>
-        <English>Blades</English>
-        <French>
-            <Text>Sabres</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>
-            <Text>Klingenwaffen</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>
-            <Text>Spade</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Cuchillas</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Клинки</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BREWER</Tag>
         <English>
             <Text>Master Brewer:Master Brewers</Text>
@@ -2004,35 +1979,6 @@
         <English>TXT_KEY_UNIT_MOUNTED_CONQUISTADOR</English>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_MUSKETS</Tag>
-        <English>
-            <Text>Guns</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </English>
-        <French>
-            <Text>Arme à feu:Armes à feu</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Schusswaffen</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>
-            <Text>Armi</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Arma:Armas</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Мушкеты</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_NATIVE_MERC</Tag>
         <English>TXT_KEY_UNIT_NATIVE_MERC</English>
     </TEXT>
@@ -2438,31 +2384,6 @@
         <Russian>Опытный сборщик красного перца:Опытные сборщики красного перца</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_ROPE</Tag>
-        <English>Rope</English>
-        <French>
-            <Text>Cordage</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>
-            <Text>Seile</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>
-            <Text>Corde</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Cuerdas</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Канаты</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROPES_MAKER</Tag>
         <English>Master Roper:Master Ropers</English>
         <French>
@@ -2627,35 +2548,6 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Ром</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_SAILCLOTH</Tag>
-        <English>
-            <Text>Sailcloth</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </English>
-        <French>
-            <Text>Voile</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Segeltuch</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Tela da vele</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Lona</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Парусина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SAILCLOTH_MAKER</Tag>
@@ -3210,35 +3102,6 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Опытный плантатор табака:Опытные плантаторы табака</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_TOOLS</Tag>
-        <English>
-            <Text>Tools</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </English>
-        <French>
-            <Text>Outil:Outils</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Eisenwaren</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>
-            <Text>Attrezzi</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Herramientas</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Инструменты</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_TRADE_GOODS</Tag>
