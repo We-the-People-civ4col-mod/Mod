@@ -19248,6 +19248,10 @@ const int CvPlayer::getTaxRaiseChance()
 
 	if (GC.getEraInfo(getCurrentEra()).isRevolution()) return 0;
 	if (pColony.getHighestTradedYield() == NO_YIELD) return 0;
+
+	// If the colony is already above the max tax rate, then there is no chance
+	if (pColony.getTaxRate() >= pColony.NBMOD_GetMaxTaxRate()) return 0;
+
 	// the revenue fraction  for tax purpose is now calculated here
 	if (getFullYieldScore(true) <= getTaxThresold(true)) return 0;
 
