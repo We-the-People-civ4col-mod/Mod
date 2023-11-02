@@ -18135,7 +18135,7 @@ void CvPlayer::changeYieldTradedTotal(YieldTypes eYield, int iChange, int iUnitP
 			iUnitPrice = 10;//default score functionality
 			if (getParent() != NO_PLAYER)
 			{
-				CvPlayer& kEurope = GET_PLAYER(getParent());
+				CvPlayer& kEurope = *getParentPlayer();
 				if (kEurope.isEurope())
 					iUnitPrice = kEurope.getYieldBuyPrice(eYield);
 			}
@@ -18154,7 +18154,7 @@ void CvPlayer::changeYieldTradedTotalAfrica(YieldTypes eYield, int iChange, int 
 			iUnitPrice = 10;//default score functionality
 			if (getParent() != NO_PLAYER)
 			{
-				CvPlayer& kEurope = GET_PLAYER(getParent());
+				CvPlayer& kEurope = *getParentPlayer();
 				if (kEurope.isEurope())
 					iUnitPrice = kEurope.getYieldAfricaBuyPrice(eYield);
 			}
@@ -18171,14 +18171,13 @@ void CvPlayer::changeYieldTradedTotalPortRoyal(YieldTypes eYield, int iChange, i
 			iUnitPrice = 10;//default score functionality
 			if (getParent() != NO_PLAYER)
 			{
-				CvPlayer& kEurope = GET_PLAYER(getParent());
+				CvPlayer& kEurope = *getParentPlayer();
 				if (kEurope.isEurope())
 					iUnitPrice = kEurope.getYieldPortRoyalBuyPrice(eYield);
 			}
 	}
 
-	// Port Royal and Tax influence, really ? 
-	setYieldScoreTotal(eYield, getYieldScoreTotal(eYield) + iChange*iUnitPrice);
+	// Port Royal has no influence on Royal taxes
 	setYieldTradedTotalPortRoyal(eYield, getYieldTradedTotalPortRoyal(eYield) + iChange);
 }
 

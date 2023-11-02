@@ -1197,8 +1197,8 @@ Viel Spass![NEWLINE]
 	<!--<TEXT>  duplicate HINT_INTERFACE_1
 		<Tag>TXT_KEY_HINT_INTERFACE_44</Tag>
 		<English>Hold down the [ALT] key to have a Settlement build an item indefinitely.</English>
-		<French>Maintenez la touche [ALT] enfonc&#233;e pour que la colonie construise ind&#233;finiment l'&#233;l&#233;ment choisi.</French>
-		<German>Halten Sie [ALT] gedr&#252;ckt, um das gew&#252;nschte Objekt unbegrenzt zu bauen.</German>
+		<French>Maintenez la touche [ALT] enfoncée pour que la colonie construise indéfiniment l'élément choisi.</French>
+		<German>Halten Sie [ALT] gedrückt, um das gewünschte Objekt unbegrenzt zu bauen.</German>
 		<Italian>Tieni premuto [ALT] per fare in modo che un insediamento costruisca un oggetto all'infinito...</Italian>
 		<Spanish>Mantener pulsada la tecla [ALT] para hacer que el asentamiento construya un elemento indefinidamente.</Spanish>
 		<Russian>Удерживайте нажатой клавишу [COLOR:140:255:40:255]&lt; [ALT] &gt;[COLOR_REVERT], чтобы поселение строило предмет бесконечно.</Russian>
@@ -1296,9 +1296,9 @@ Viel Spass![NEWLINE]
 	<!--<TEXT> duplicate HINT_INTERFACE_56
 		<Tag>TXT_KEY_HINT_INTERFACE_55</Tag>
 		<English>Press [CTRL + C] to select all units of the same type on the same tile as the active unit.</English>
-		<French>Appuyez sur [CTRL + C] pour s&#233;lectionner toutes les unit&#233;s du m&#234;me type sur une case en tant qu'unit&#233; active.</French>
-		<German>[STRG + C] w&#228;hlt alle Einheiten desselben Typs auf dem Gel&#228;ndefeld der aktiven Einheit.</German>
-		<Italian>Premi [CTRL + C] per selezionare tutte le unit&#224; dello stesso tipo sulla stessa casella di quella attiva.</Italian>
+		<French>Appuyez sur [CTRL + C] pour sélectionner toutes les unités du même type sur une case en tant qu'unité active.</French>
+		<German>[STRG + C] wählt alle Einheiten desselben Typs auf dem Geländefeld der aktiven Einheit.</German>
+		<Italian>Premi [CTRL + C] per selezionare tutte le unità dello stesso tipo sulla stessa casella di quella attiva.</Italian>
 		<Spanish>Pulsar [CTRL + C] para seleccionar todas las unidades del mismo tipo que haya en la misma casilla que la unidad activa...</Spanish>
 		<Russian>йцукен</Russian>
 	</TEXT>-->
@@ -1314,17 +1314,17 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_57</Tag>
 		<English>If you hold down the [SHIFT] key while clicking on the Settlement Bar, you can "select" multiple settlements. You can also [SHIFT + RIGHT-CLICK] to set a rally point.</English>
-		<French>Maintenez la touche [MAJ] enfonc&#233;e et cliquez sur la barre des colonies pour "s&#233;lectionner" plusieurs colonies. Vous pouvez aussi d&#233;finir un point de ralliement sur la carte en utilisant [MAJ] + [CLIC DROIT].</French>
-		<German>Halten Sie [UMSCHALTEN] gedr&#252;ckt und klicken Sie auf die Siedlungsleiste, wenn Sie mehrere Siedlungen ausw&#228;hlen m&#246;chten. Mit [UMSCHALTEN + RECHTSKLICK] k&#246;nnen Sie Sammelpunkte bestimmen.</German>
-		<Italian>Se tieni premuto il tasto [MAIUSC] mentre clicchi sulla barra degli insediamenti, puoi "selezionare" pi&#249; insediamenti. Puoi anche usare [MAIUSC + PULSANTE DESTRO] per impostare un punto di raduno...</Italian>
-		<Spanish>Si se mantiene pulsada la tecla [MAY&#218;S] mientras se hace clic en la barra del asentamiento, se pueden "seleccionar" varios asentamientos. Tambi&#233;n se puede usar [MAY&#218;S] + [CLIC DERECHO] para establecer un punto de concentraci&#243;n.</Spanish>
+		<French>Maintenez la touche [MAJ] enfoncée et cliquez sur la barre des colonies pour "sélectionner" plusieurs colonies. Vous pouvez aussi définir un point de ralliement sur la carte en utilisant [MAJ] + [CLIC DROIT].</French>
+		<German>Halten Sie [UMSCHALTEN] gedrückt und klicken Sie auf die Siedlungsleiste, wenn Sie mehrere Siedlungen auswählen möchten. Mit [UMSCHALTEN + RECHTSKLICK] können Sie Sammelpunkte bestimmen.</German>
+		<Italian>Se tieni premuto il tasto [MAIUSC] mentre clicchi sulla barra degli insediamenti, puoi "selezionare" più insediamenti. Puoi anche usare [MAIUSC + PULSANTE DESTRO] per impostare un punto di raduno...</Italian>
+		<Spanish>Si se mantiene pulsada la tecla [MAYÚS] mientras se hace clic en la barra del asentamiento, se pueden "seleccionar" varios asentamientos. También se puede usar [MAYÚS] + [CLIC DERECHO] para establecer un punto de concentración.</Spanish>
 		<Russian>Если удерживать клавишу [COLOR:140:255:40:255]&lt; SHIFT &gt;[COLOR_REVERT] и нажимать на панель поселения в круге строительства, можно не заходя в поселение изменять строительство. Также вы можете "выбрать" несколько поселений (хотя, зачем?). А выделив колонию и применив комбинацию [COLOR:140:255:40:255]&lt; SHIFT + ПКМ &gt;[COLOR_REVERT] на какой-либо клетке, можно установить точку сбора для юнитов.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_58</Tag>
 		<English>If you hold down the [CTRL] key while clicking on the Settlement Bar, you will "select" all of your Settlements on that continent.</English>
-		<French>Maintenez la touche [CTRL] enfonc&#233;e et cliquez sur la barre des villes pour s&#233;lectionner toutes vos colonies sur le m&#234;me continent.</French>
-		<German>Halten Sie [STRG] gedr&#252;ckt und klicken Sie auf die Siedlungsleiste, um alle Ihre Siedlungen auf diesem Kontinent auszuw&#228;hlen.</German>
+		<French>Maintenez la touche [CTRL] enfoncée et cliquez sur la barre des villes pour sélectionner toutes vos colonies sur le même continent.</French>
+		<German>Halten Sie [STRG] gedrückt und klicken Sie auf die Siedlungsleiste, um alle Ihre Siedlungen auf diesem Kontinent auszuwählen.</German>
 		<Italian>Se tieni premuto il tasto [CTRL] mentre clicchi sulla barra dell'insediamento, puoi "selezionare" tutti gli insediamenti di quel continente...</Italian>
 		<Spanish>Si se mantiene pulsada la tecla [CTRL] mientras se hace clic en la barra del asentamiento, se "seleccionan" todos los asentamientos propios en ese continente.</Spanish>
 		<Russian>Если удерживать клавишу [COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] и нажать на панель поселения, можно "выбрать" все свои поселения на текущем континенте.</Russian>
@@ -1332,8 +1332,8 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_59</Tag>
 		<English>If you hold down the [ALT] key while clicking on the Settlement Bar, you will "select" all of your Settlements.</English>
-		<French>Maintenez la touche [ALT] enfonc&#233;e et cliquez sur la barre des colonies pour s&#233;lectionner toutes vos colonies.</French>
-		<German>Halten Sie [ALT] gedr&#252;ckt und klicken Sie auf die Siedlungsleiste, um alle Ihre Siedlungen auszuw&#228;hlen.</German>
+		<French>Maintenez la touche [ALT] enfoncée et cliquez sur la barre des colonies pour sélectionner toutes vos colonies.</French>
+		<German>Halten Sie [ALT] gedrückt und klicken Sie auf die Siedlungsleiste, um alle Ihre Siedlungen auszuwählen.</German>
 		<Italian>Se tieni premuto il tasto [ALT] mentre clicchi sulla barra dell'insediamento, puoi "selezionare" tutti i tuoi insediamenti...</Italian>
 		<Spanish>Si se mantiene pulsada la tecla [ALT] mientras se hace clic en la barra del asentamiento, se "seleccionan" todos los asentamientos propios en el mundo.</Spanish>
 		<Russian>Если удерживать клавишу [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] и нажать на панель поселения, можно "выбрать" все свои поселения.</Russian>
@@ -1341,10 +1341,10 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_61</Tag>
 		<English>You can give a unit consecutive orders by pressing the [SHIFT] key. For example, you could tell a Pioneer to build a road and then a mine by clicking on both buttons while holding down [SHIFT].</English>
-		<French>Vous pouvez donner des ordres cons&#233;cutifs &#224; une unit&#233; en appuyant sur la touche MAJ. Ainsi, vous pouvez ordonner &#224; un pionnier de construire une route suivie d'une mine en cliquant sur les deux boutons correspondants tout en maintenant la touche MAJ enfonc&#233;e.</French>
-		<German>Dr&#252;cken Sie die UMSCHALT-Taste, um einer Einheit aufeinander folgende Befehle zu erteilen. So k&#246;nnen Sie beispielsweise einem Pionier befehlen, zun&#228;chst eine Stra&#223;e und anschlie&#223;end eine Mine zu bauen, indem Sie bei gedr&#252;ckter UMSCHALT-Taste beide Buttons anklicken.</German>
-		<Italian>Puoi dare a un'unit&#224; ordini consecutivi premendo il tasto [MAIUSC]. Per esempio puoi ordinare a un pioniere di costruire prima una strada e poi una miniera cliccando sui rispettivi pulsanti mentre tieni premuto [MAIUSC].</Italian>
-		<Spanish>Es posible darle &#243;rdenes consecutivas a una unidad si se pulsa la tecla [MAY&#218;S]. Por ejemplo, se le puede decir a un Pionero que construya primero una carretera y luego una mina haciendo clic en esos dos botones mientras se mantiene pulsada la tecla [MAY&#218;S].</Spanish>
+		<French>Vous pouvez donner des ordres consécutifs à une unité en appuyant sur la touche MAJ. Ainsi, vous pouvez ordonner à un pionnier de construire une route suivie d'une mine en cliquant sur les deux boutons correspondants tout en maintenant la touche MAJ enfoncée.</French>
+		<German>Drücken Sie die UMSCHALT-Taste, um einer Einheit aufeinander folgende Befehle zu erteilen. So können Sie beispielsweise einem Pionier befehlen, zunächst eine Straße und anschließend eine Mine zu bauen, indem Sie bei gedrückter UMSCHALT-Taste beide Buttons anklicken.</German>
+		<Italian>Puoi dare a un'unità ordini consecutivi premendo il tasto [MAIUSC]. Per esempio puoi ordinare a un pioniere di costruire prima una strada e poi una miniera cliccando sui rispettivi pulsanti mentre tieni premuto [MAIUSC].</Italian>
+		<Spanish>Es posible darle órdenes consecutivas a una unidad si se pulsa la tecla [MAYÚS]. Por ejemplo, se le puede decir a un Pionero que construya primero una carretera y luego una mina haciendo clic en esos dos botones mientras se mantiene pulsada la tecla [MAYÚS].</Spanish>
 		<Russian>Вы можете отдавать отряду последовательные приказы, зажимая клавишу [COLOR:140:255:40:255]&lt; SHIFT &gt;[COLOR_REVERT]. Например, вы можете приказать первопроходцу построить сначала ферму, а затем шахту, нажав на обе кнопки приказов и удерживая при этом нажатой клавишу [COLOR:140:255:40:255]&lt; SHIFT &gt;[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
@@ -1359,10 +1359,10 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_63</Tag>
 		<English>The NUMPAD arrow keys can be used to jump between Settlements when the Settlement Screen is up.</English>
-		<French>Utilisez les fl&#232;ches du PAVE NUMERIQUE pour passer d'une colonie &#224; l'autre lorsque l'&#233;cran de colonie est affich&#233;.</French>
-		<German>Nutzen Sie die Pfeiltasten im ZIFFERNBLOCK, um bei ge&#246;ffnetem Siedlungsbildschirm zwischen den einzelnen Siedlungen zu wechseln</German>
+		<French>Utilisez les flèches du PAVE NUMERIQUE pour passer d'une colonie à l'autre lorsque l'écran de colonie est affiché.</French>
+		<German>Nutzen Sie die Pfeiltasten im ZIFFERNBLOCK, um bei geöffnetem Siedlungsbildschirm zwischen den einzelnen Siedlungen zu wechseln</German>
 		<Italian>Quando sei nella schermata dell'insediamento puoi usare i tasti freccia del tastierino numerico per passare da un insediamento all'altro.</Italian>
-		<Spanish>Las flechas del TECLADO NUM&#201;RICO se pueden usar para pasar de un asentamiento a otro en la pantalla del asentamiento.</Spanish>
+		<Spanish>Las flechas del TECLADO NUMÉRICO se pueden usar para pasar de un asentamiento a otro en la pantalla del asentamiento.</Spanish>
 		<Russian>Клавиши со стрелками [COLOR:140:255:40:255]&lt; NUMPAD &gt;[COLOR_REVERT] можно использовать для перехода между поселениями, когда открыт экран поселений.</Russian>
 	</TEXT>
 	<TEXT>
