@@ -389,7 +389,6 @@
     <ClInclude Include="DLLSources\PlayerHelperFunctions.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DLLSources\CvGameCoreDLL.def" />
     <None Include="DLLSources\FVariableSystem.inl" />
     <None Include="DLLSources\interfaceDirtyBits.inl" />
   </ItemGroup>
