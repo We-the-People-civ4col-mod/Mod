@@ -1,15 +1,10 @@
 #pragma once
 
-class Python
+struct Python
 {
-	friend class CvGlobals;
-public:
-	Python();
-	static Python& call();
-
-	void openXMLEditor();
-
-private:
-	CvDLLPythonIFaceBase& IF();
-	CvDLLPythonIFaceBase* m_Python;
+	struct XML
+	{
+		static void editorScreenDragOn(int source1, int source2, int dest1, int dest2);
+		static void openXMLEditor();
+	};
 };

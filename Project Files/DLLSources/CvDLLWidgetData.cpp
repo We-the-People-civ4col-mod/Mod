@@ -19,6 +19,8 @@
 #include "CvPopupInfo.h"
 #include "FProfiler.h"
 
+#include "CvPythonCaller.h"
+
 
 class WidgetData
 {
@@ -168,6 +170,25 @@ public:
 	}
 };
 
+template<>
+class WidgetContainer<WIDGET_XML_EDITOR_BOX> : public WidgetData
+{
+public:
+	WidgetContainer(const CvWidgetDataStruct widgetDataStruct)
+		: source1((UnitTypes)widgetDataStruct.m_iData1)
+		, source2(widgetDataStruct.m_iData2)
+	{}
+
+	const int source1;
+	const int source2;
+
+	bool onDragAndDropOn(const CvWidgetDataStruct destinationWidgetData)
+	{
+		Python::XML::editorScreenDragOn(source1, source2, destinationWidgetData.m_iData1, destinationWidgetData.m_iData2);
+		return true;
+	}
+};
+
 // has to be after the specialized cases of WidgetContainer
 
 WidgetData* WidgetData::getNew(const CvWidgetDataStruct& widgetData)
@@ -175,7 +196,8 @@ WidgetData* WidgetData::getNew(const CvWidgetDataStruct& widgetData)
 	switch (widgetData.m_eWidgetType)
 	{
 	case WIDGET_PEDIA_JUMP_TO_UNIT: return new WidgetContainer<WIDGET_PEDIA_JUMP_TO_UNIT>(widgetData);
-	case WIDGET_HELP_TAX_CALCULATION: return new WidgetContainer<WIDGET_HELP_TAX_CALCULATION >(widgetData);
+	case WIDGET_HELP_TAX_CALCULATION: return new WidgetContainer<WIDGET_HELP_TAX_CALCULATION>(widgetData);
+	case WIDGET_XML_EDITOR_BOX: return new WidgetContainer<WIDGET_XML_EDITOR_BOX>(widgetData);
 	}
 
 	return NULL;

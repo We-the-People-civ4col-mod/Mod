@@ -243,7 +243,7 @@ public:
 		}
 		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_XmlEditor)
 		{
-			Python::call().openXMLEditor();
+			Python::XML::openXMLEditor();
 		}
 		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_GameDetails)
 		{	// Game details

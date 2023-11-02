@@ -2,28 +2,26 @@
 #include "CvPythonCaller.h"
 #include "CyArgsList.h"
 
-Python gPython;
 
-Python::Python()
- : m_Python(NULL)
+
+static CvDLLPythonIFaceBase& IF()
 {
+	CvDLLPythonIFaceBase& ref = *gDLL->getPythonIFace();
+	return ref;
 }
 
-CvDLLPythonIFaceBase& Python::IF()
+
+void Python::XML::editorScreenDragOn(int source1, int source2, int dest1, int dest2)
 {
-	if (m_Python == NULL)
-	{
-		m_Python = gDLL->getPythonIFace();
-	}
-	return *m_Python;
+	CyArgsList argsList;
+	argsList.add(source1);
+	argsList.add(source2);
+	argsList.add(dest1);
+	argsList.add(dest2);
+	IF().callFunction(PYScreensModule, "editorScreenDragOn", argsList.makeFunctionArgs());
 }
 
-Python& Python::call()
-{
-	return gPython;
-}
-
-void Python::openXMLEditor()
+void Python::XML::openXMLEditor()
 {
 	IF().callFunction(PYScreensModule, "showXmlEditor");
 }

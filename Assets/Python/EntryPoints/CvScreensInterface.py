@@ -178,10 +178,15 @@ victoryScreen = CvVictoryScreen.CvVictoryScreen()
 def showVictoryScreen(argsList):
 	if (-1 != CyGame().getActivePlayer()):
 		victoryScreen.interfaceScreen()
-		
+
+### XML editor - start - Nightinggale
 xmlEditor = xmlEditorScreen.xmlEditorScreen()
 def showXmlEditor():
 	xmlEditor.interfaceScreen()
+
+def editorScreenDragOn(argsList):
+	xmlEditor.handleDrag(argsList[0], argsList[1], argsList[2], argsList[3])
+### XML editor - end - Nightinggale
 
 #################################################
 ## Civilopedia
