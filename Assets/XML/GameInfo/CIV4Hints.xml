@@ -109,7 +109,7 @@
             <Description>TXT_KEY_HINT_INTERFACE_34</Description>
         </HintInfo>
         <!--<HintInfo>
-            <Description>TXT_KEY_HINT_INTERFACE_35</Description>
+            <Description>TXT_KEY_HINT_INTERFACE_35</Description> absent as such even in Vanilla. Apparently they missed the number.
         </HintInfo>-->
         <HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_36</Description>
@@ -136,7 +136,7 @@
             <Description>TXT_KEY_HINT_INTERFACE_43</Description>
         </HintInfo>
         <!--<HintInfo>
-            <Description>TXT_KEY_HINT_INTERFACE_44</Description>
+            <Description>TXT_KEY_HINT_INTERFACE_44</Description> duplicate HINT_INTERFACE_1
         </HintInfo>-->
         <HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_45</Description>
@@ -169,12 +169,12 @@
             <Description>TXT_KEY_HINT_INTERFACE_54</Description>
         </HintInfo>
         <!--<HintInfo>
-            <Description>TXT_KEY_HINT_INTERFACE_55</Description>
+            <Description>TXT_KEY_HINT_INTERFACE_55</Description> duplicate HINT_INTERFACE_56
         </HintInfo>-->
         <HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_56</Description>
         </HintInfo>
-        <!--<HintInfo>
+        <HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_57</Description>
         </HintInfo>
         <HintInfo>
@@ -183,18 +183,18 @@
         <HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_59</Description>
         </HintInfo>
-        <HintInfo>
-            <Description>TXT_KEY_HINT_INTERFACE_60</Description>
-        </HintInfo>
+        <!--<HintInfo>
+            <Description>TXT_KEY_HINT_INTERFACE_60</Description> absent as such even in Vanilla. Apparently they missed the number.
+        </HintInfo>-->
         <HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_61</Description>
-        </HintInfo>-->
+        </HintInfo>
         <HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_62</Description>
         </HintInfo>
-        <!--<HintInfo>
+        <HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_63</Description>
-        </HintInfo>-->
+        </HintInfo>
         <HintInfo>
             <Description>TXT_KEY_HINT_INTERFACE_64</Description>
         </HintInfo>
