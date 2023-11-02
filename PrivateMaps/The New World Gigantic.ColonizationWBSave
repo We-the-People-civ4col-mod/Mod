@@ -44727,7 +44727,6 @@ EndPlot
 BeginPlot
 	x=34,y=26
 	EuropeType=EUROPE_WEST
-	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
