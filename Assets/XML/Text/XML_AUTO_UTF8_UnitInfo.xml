@@ -2206,27 +2206,6 @@
         <Spanish>Las [COLOR_UNIT_TEXT]Carabelas[COLOR_REVERT] son los veleros más primitivos que hay disponibles. Se mueven lentamente, pueden llevar poco cargamento y tripulación y los barcos enemigos pueden hundirlos con facilidad. Sin embargo, a veces pueden escaparse a los asentamientos cercanos que cuenten con Diques secos y Astilleros si son derrotadas.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_FOOD</Tag>
-        <English>Food</English>
-        <French>
-            <Text>Nourriture</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>Nahrung</German>
-        <Italian>
-            <Text>Cibo</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Alimentos</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Еда</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNIT_FOOD_PEDIA</Tag>
         <English>Food background</English>
     </TEXT>
@@ -6557,19 +6536,6 @@
         <German>Wagen können Güter quer durch das Land von einer Siedlung zu einer anderen befördern und damit Ortschaften an das Handelsnetz anschließen, die nicht an der Küste liegen.[PARAGRAPH:2][COLOR_UNIT_TEXT]Planwagen[COLOR_REVERT] können in 2 Transportplätzen jeweils bis zu 100 Güter transportieren. Die gleich teuren [COLOR_UNIT_TEXT]Trecks[COLOR_REVERT] können sogar bis zu 5 Transportplätze nutzen, haben aber im Gegensatz zu den Planwagen nicht zwei, sondern nur einen einzigen Bewegungspunkt. Sie können erst dann gebaut werden, wenn eine Stadt über ein [COLOR_BUILDING_TEXT]Sägewerk[COLOR_REVERT] verfügt.[PARAGRAPH:2]Tipp: Trecks sind insbesondere für Massentransporte zwischen zwei nahegelegenen Städten in der mittleren und späten Spielphase geeignet.[PARAGRAPH:2]Tipp: Bei gedrückter Shift-Taste können die Wagen auch mit Teilmengen beladen werden.[PARAGRAPH:2]Hinweise: Wagen können nicht auf Schiffe geladen werden. Greift man einen Planwagen oder einen Treck an, erobert man ihn mitsamt aller Waren.</German>
         <Italian>Le [COLOR_UNIT_TEXT]colonne di carovane[COLOR_REVERT] sono preziosi strumenti per il commercio terrestre. Le [COLOR_UNIT_TEXT]colonne di carovane[COLOR_REVERT] possono trasportare i beni tra gli insediamenti via terra, il che significa che possono raggiungere gli insediamenti che non si trovano sulla costa. Sono la chiave per l'espansione verso l'interno del continente.</Italian>
         <Spanish>Las [COLOR_UNIT_TEXT]Caravanas de carromatos[COLOR_REVERT] son unas herramientas para el comercio terrestre que no tienen precio. Las [COLOR_UNIT_TEXT]Caravanas de carromatos[COLOR_REVERT] pueden transportar mercancías de un asentamiento a otro por tierra, lo cual comporta que no pueden llegar a los que se encuentren en la costa. Son la clave para la expansión hacia el interior del continente.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_VALUABLE_WOOD</Tag>
-        <English>Exotic Wood</English>
-        <French>Bois précieux</French>
-        <German>
-            <Text>Edelholz</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Legno pregiato</Italian>
-        <Spanish>Madera fina</Spanish>
-        <Russian>Ценная древесина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_VALUABLE_WOOD_PEDIA</Tag>

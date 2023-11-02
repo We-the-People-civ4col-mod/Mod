@@ -838,17 +838,17 @@
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_FOOD</Type>
-            <Description>TXT_KEY_UNITCLASS_FOOD</Description>
+            <Description>TXT_KEY_YIELD_FOOD</Description>
             <DefaultUnit>UNIT_FOOD</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_LUMBER</Type>
-            <Description>TXT_KEY_UNITCLASS_LUMBER</Description>
+            <Description>TXT_KEY_YIELD_LUMBER</Description>
             <DefaultUnit>UNIT_LUMBER</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_HARDWOOD</Type>
-            <Description>TXT_KEY_UNITCLASS_HARDWOOD</Description>
+            <Description>TXT_KEY_YIELD_HARDWOOD</Description>
             <DefaultUnit>UNIT_HARDWOOD</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
@@ -898,12 +898,12 @@
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_RICE</Type>
-            <Description>TXT_KEY_UNITCLASS_RICE</Description>
+            <Description>TXT_KEY_YIELD_RICE</Description>
             <DefaultUnit>UNIT_RICE</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_CASSAVA</Type>
-            <Description>TXT_KEY_UNITCLASS_CASSAVA</Description>
+            <Description>TXT_KEY_YIELD_CASSAVA</Description>
             <DefaultUnit>UNIT_CASSAVA</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
@@ -1073,7 +1073,7 @@
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_VALUABLE_WOOD</Type>
-            <Description>TXT_KEY_UNITCLASS_VALUABLE_WOOD</Description>
+            <Description>TXT_KEY_YIELD_VALUABLE_WOOD</Description>
             <DefaultUnit>UNIT_VALUABLE_WOOD</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>

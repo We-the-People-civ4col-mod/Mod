@@ -2025,32 +2025,6 @@
         <Russian>Рис</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_RICE</Tag>
-        <English>Rice</English>
-        <French>Riz</French>
-        <German>
-            <Text>Reis</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Riso</Italian>
-        <Spanish>Arroz</Spanish>
-        <Russian>Рис</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_RICE</Tag>
-        <English>Rice</English>
-        <French>Riz</French>
-        <German>
-            <Text>Reis</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Riso</Italian>
-        <Spanish>Arroz</Spanish>
-        <Russian>Рис</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_YIELD_RICE_PEDIA</Tag>
         <English>[H1]RICE[\H1][NEWLINE][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT] is grown by a colonist assigned to the [LINK=PROFESSION_RICE_FARMER]rice farmer[\LINK] profession. The supply of rice can be doubled by employing [LINK=UNIT_RICE_FARMER]expert rice farmers[\LINK] who can be hired in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT] or trained in Native villages.[NEWLINE]Rice grows on flat [LINK=TERRAIN_MARSH]marsh[\LINK] terrain.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]In tropical areas rice can survive as a perennial. It grows in water. Rice seeds are milled with a huller to remove the chaff , creating brown rice. Removing the bran creates white rice.[NEWLINE][NEWLINE]Rice is nutritious and light to carry. Scouts may have a loaf of bread for their first day on the trail but it's the bag of dried rice that feeds them for the rest of the trip.</English>
         <French>[H1]RIZ[\H1][NEWLINE][BOLD]Stratégie :[\BOLD][NEWLINE]Le [COLOR_HIGHLIGHT_TEXT]riz[COLOR_REVERT] est cultivé sur les terrains [LINK=TERRAIN_MARSH]humides[\LINK]. Pour cultiver du riz, un colon doit avoir la profession de [LINK=PROFESSION_RICE_FARMER]riziculteur[\LINK]. L'approvisionnement en riz peut être doublé en employant des [LINK=UNIT_RICE_FARMER]riziculteurs experts[\LINK] qui peuvent être embauchés en Europe ou formés dans les villages autochtones.[NEWLINE][NEWLINE][BOLD]Contexte :[\BOLD][NEWLINE]Dans les régions tropicales, le riz peut survivre en tant que plante pérenne. Il pousse dans l'eau. Les graines de riz sont moulues à l'aide d'un décortiqueur pour enlever la balle, ce qui donne du riz brun. En retirant le son, on obtient du riz blanc.[NEWLINE][NEWLINE]Le riz est nutritif et léger à transporter. Les scouts peuvent avoir une miche de pain pour leur premier jour sur le sentier, mais c'est le sac de riz sec qui les nourrit pour le reste du voyage.</French>
@@ -2069,32 +2043,6 @@
     <!-- CASSAVA -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_CASSAVA</Tag>
-        <English>Cassava</English>
-        <French>Manioc</French>
-        <German>
-            <Text>Maniok</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Cassava</Italian>
-        <Spanish>Yuca</Spanish>
-        <Russian>Маниока</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_CASSAVA</Tag>
-        <English>Cassava</English>
-        <French>Manioc</French>
-        <German>
-            <Text>Maniok</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Cassava</Italian>
-        <Spanish>Yuca</Spanish>
-        <Russian>Маниока</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_CASSAVA</Tag>
         <English>Cassava</English>
         <French>Manioc</French>
         <German>

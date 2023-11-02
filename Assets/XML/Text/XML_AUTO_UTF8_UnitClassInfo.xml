@@ -1144,27 +1144,6 @@
         <Russian>Флейт:Флейты</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_FOOD</Tag>
-        <English>Food</English>
-        <French>
-            <Text>Nourriture</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>Nahrung</German>
-        <Italian>
-            <Text>Cibo</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Alimentos</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Еда</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FRIGATE</Tag>
         <English>Frigate:Frigates</English>
         <French>
@@ -3545,19 +3524,6 @@
         <Italian>Trek:Treks</Italian>
         <Spanish>Trek:Treks</Spanish>
         <Russian>Фургон:Фургоны</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_VALUABLE_WOOD</Tag>
-        <English>Exotic Wood</English>
-        <French>Bois exotique</French>
-        <German>
-            <Text>Edelholz</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Legno pregiato</Italian>
-        <Spanish>Madera fina</Spanish>
-        <Russian>Ценная древесина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_VETERAN</Tag>
