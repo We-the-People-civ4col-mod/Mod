@@ -2522,31 +2522,6 @@
         <German>[COLOR_UNIT_TEXT]Königliche Truppengaleonen[COLOR_REVERT] sind das primäre Transportschiff der [COLOR_HIGHLIGHT_TEXT]Europäischen Könige[COLOR_REVERT] um ihre Truppen zu transportieren, können aber auch Güter befördern.[NEWLINE]Sie haben 6 Frachträume und somit mehr als jedes andere Schiff, außer anderen Galeonen.[NEWLINE]Sie sind stärker als normale [LINK=UNIT_GALLEON]Galleonen[\LINK] und können andere Schiffe auch angreifen.[NEWLINE]Während des [LINK=CONCEPT_INDEPENDENCE_WAR]Unabhängigkeitskrieges[\LINK] können sie den Schiffen der Kolonien einen guten Kampf liefern.[NEWLINE][COLOR_HIGHLIGHT_TEXT]Königliche Truppengaleonen[COLOR_REVERT] stehen nur den Königen Europas zur Verfügung.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_GEMS</Tag>
-        <English>Gems</English>
-        <French>
-            <Text>Pierres précieuses</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>
-            <Text>Edelsteine</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>
-            <Text>Pietre preziose</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Piedras preciosas</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Драгоценные камни</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNIT_GEMS_PEDIA</Tag>
         <English>Gemstones, treasured throughout history for their beauty and value, have always been a treasured commodity.[NEWLINE]Most gemstones, such as diamonds, are mined at scattered locations throughout the world, most notably in Africa.[NEWLINE]Some of the most famous gem deposits, however, were found in archeological digs.[NEWLINE]The ruins of ancient civilizations in the jungles of Central and South America sometimes hid large quantities of precious and semi-precious gems, along with gold and other items of value.[NEWLINE]The discovery of such a site can lead to an increase in trade in the areas surrounding the dig, as both professional and amateur treasure hunters swarm to the region to seek their fortune.</English>
         <French>Les pierres précieuses, extrêmement prisées pour leur beauté et leur valeur, ont toujours été très recherchées. On trouve des pierres précieuses dans différents endroits du monde, mais le plus fréquemment en Afrique. Cependant, certains des gisements les plus importants ont été découverts sur des sites archéologiques. Les vestiges d'anciennes civilisations originaires d'Amérique centrale ou d'Amérique du Sud cachent parfois d'énormes quantités de pierres précieuses ou semi-précieuses, ainsi que de l'or et autres objets de valeur. La découverte d'un tel site conduit parfois à un net accroissement des échanges autour des fouilles, les chasseurs de trésors amateurs et professionnels désireux de tenter leur chance fourmillant alors dans la région.</French>
@@ -2557,31 +2532,6 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_GEMS_STRATEGY</Tag>
         <English>Gems strategy</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_GOLD</Tag>
-        <English>Gold</English>
-        <French>
-            <Text>Or</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Gold</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Oro</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Oro</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Золото</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GOLD_PEDIA</Tag>
@@ -5639,27 +5589,6 @@
         <German>[COLOR_UNIT_TEXT]Karavellen[COLOR_REVERT] und [COLOR_UNIT_TEXT]Fluyten[COLOR_REVERT] sind die einfachsten Handelsschiffe: Die Karavelle ist etwas schneller, die Fluyt kann etwas mehr Fracht transportieren. [COLOR_UNIT_TEXT]Westindienfahrer[COLOR_REVERT] sind bessere Handelsschiffe: Sie sind so schnell wie die Karavelle und können noch mehr Fracht befördern als die Fluyt.[PARAGRAPH:2]Während sich diese Handelsschiffe im Kampf nur verteidigen können, sind [COLOR_UNIT_TEXT]Karacken[COLOR_REVERT] und die [COLOR_UNIT_TEXT]Galeonen[COLOR_REVERT] Allzweckschiffe: Sie können sowohl zum Transport von Waren, als auch zum Angriff eingesetzt werden. Während die Karacke langsam und wenig kampfstark, dafür aber recht billig ist, können sich die Galeonen in vielen Kämpfen behaupten und darüberhinaus mehr Fracht transportieren als jedes andere Schiff (sogar Schätze).[PARAGRAPH:2][COLOR_UNIT_TEXT]Fregatten[COLOR_REVERT] und [COLOR_UNIT_TEXT]Linienschiffe[COLOR_REVERT] sind reine Kriegsschiffe: Während die Fregatte besonders schnell ist, ist das Linienschiff das kampfstärkste Schiff der Kolonialflotte. Über das [COLOR_UNIT_TEXT]Königliche Linienschiff[COLOR_REVERT], die Herrscherin der Meere, verfügt nur der Monarch in seiner Expeditionsflotte.[PARAGRAPH:2]Die Handelsschiffe können in Siedlungen gebaut werden, sobald dort ein Trockendock steht. Für die Allzweck- und die Kriegsschiffe braucht man dagegen eine Schiffswerft. Je größer der Frachtraum eines Schiffes ist, desto mehr Eisenwaren braucht man, es zu bauen. Je schneller es ist, desto mehr Tuch muss man für die Segel beschaffen. Je kampfstärker es ist, desto mehr Schusswaffen werden benötigt.</German>
         <Italian>La [COLOR_UNIT_TEXT]nave da prima linea[COLOR_REVERT] è la migliore nave da guerra disponibile per le colonie. Pur essendo più lenta di una [COLOR_UNIT_TEXT]fregata[COLOR_REVERT], ottiene un bonus di combattimento nei confronti della più rapida rivale, il che la rende la nave ideale per difendere i porti.</Italian>
         <Spanish>El [COLOR_UNIT_TEXT]Navío de línea[COLOR_REVERT] es el mejor barco de guerra que puede tener una colonia. Aunque es más lenta que la [COLOR_UNIT_TEXT]Fragata[COLOR_REVERT], recibe una bonificación al combate en comparación a su veloz hermana, lo cual la convierte en el barco ideal para defender puertos.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_SILVER</Tag>
-        <English>Silver</English>
-        <French>
-            <Text>Argent</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>Silber</German>
-        <Italian>
-            <Text>Argento</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Plata</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Серебро</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_SILVER_PEDIA</Tag>

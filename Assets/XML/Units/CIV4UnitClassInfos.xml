@@ -873,27 +873,27 @@
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_CHAR_COAL</Type>
-            <Description>TXT_KEY_UNITCLASS_CHAR_COAL</Description>
+            <Description>TXT_KEY_YIELD_CHAR_COAL</Description>
             <DefaultUnit>UNIT_CHAR_COAL</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_PEAT</Type>
-            <Description>TXT_KEY_UNITCLASS_PEAT</Description>
+            <Description>TXT_KEY_YIELD_PEAT</Description>
             <DefaultUnit>UNIT_PEAT</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_SILVER</Type>
-            <Description>TXT_KEY_UNITCLASS_SILVER</Description>
+            <Description>TXT_KEY_YIELD_SILVER</Description>
             <DefaultUnit>UNIT_SILVER</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_GOLD</Type>
-            <Description>TXT_KEY_UNITCLASS_GOLD</Description>
+           <Description>TXT_KEY_YIELD_GOLD</Description>
             <DefaultUnit>UNIT_GOLD</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_GEMS</Type>
-            <Description>TXT_KEY_UNITCLASS_GEMS</Description>
+            <Description>TXT_KEY_YIELD_GEMS</Description>
             <DefaultUnit>UNIT_GEMS</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
@@ -1293,7 +1293,7 @@
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_CHICKEN</Type>
-            <Description>TXT_KEY_UNITCLASS_CHICKEN</Description>
+            <Description>TXT_KEY_YIELD_CHICKEN</Description>
             <DefaultUnit>UNIT_CHICKEN</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>

@@ -132,32 +132,6 @@
         <Russian>Куры</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_CHICKEN</Tag>
-        <English>Chickens</English>
-        <French>Poules</French>
-        <German>
-            <Text>Hühner</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Galline</Italian>
-        <Spanish>Gallinas</Spanish>
-        <Russian>Куры</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_CHICKEN</Tag>
-        <English>Chickens</English>
-        <French>Poules</French>
-        <German>
-            <Text>Hühner</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Galline</Italian>
-        <Spanish>Gallinas</Spanish>
-        <Russian>Куры</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_YIELD_CHICKEN_PEDIA</Tag>
         <English>[H1]CHICKENS[\H1][NEWLINE][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Chickens[COLOR_REVERT] can be raised on [LINK=TERRAIN_MARSH]marshes[\LINK] or [LINK=TERRAIN_SHRUBLAND]shrublands[\LINK] terrain. To make a colonist raise chickens, assign him to the [LINK=PROFESSION_CHICKEN_BREEDER]chicken breeder[\LINK] profession.[NEWLINE][NEWLINE]Chicken production is highest on plots bearing the [LINK=BONUS_CHICKEN]chicken[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_PASTURE]pastures[\LINK] on chicken-producing plots and employing [LINK=UNIT_BREEDER]expert poultry breeders[\LINK]. These experts can be trained in Native villages or hired in Europe.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]Free-range poultry farming allows chickens to roam during the day, although they are usually confined in coops at night to protect them from predators. They're also kept indoors when the weather is bad.</English>
         <French>[H1]POULES[\H1][NEWLINE][BOLD]Stratégie :[\BOLD][NEWLINE]Les [COLOR_HIGHLIGHT_TEXT]poulets[COLOR_REVERT] peuvent être élevés sur des terrains plats sur [LINK=TERRAIN_MARSH]marais[\LINK] ou [LINK=TERRAIN_SHRUBLAND]zones arbustives[\LINK]. Pour qu'un colon élève des poulets, affectez-lui la profession de [LINK=PROFESSION_CHICKEN_BREEDER]éleveur de poulets[\LINK].[NEWLINE][NEWLINE]La production de poulets est la plus élevée sur les parcelles portant le bonus [LINK=BONUS_CHICKEN]poulet[\LINK], et peut être augmentée en construisant des [LINK=IMPROVEMENT_PASTURE]pâturages[\LINK] sur les parcelles produisant des poulets et en employant des [LINK=UNIT_BREEDER]experts en élevage de volailles[\LINK]. Ces experts peuvent être formés dans les villages autochtones ou embauchés en Europe.[NEWLINE][NEWLINE][BOLD]Contexte :[\BOLD][NEWLINE]L'élevage de volailles en liberté permet aux poulets de se déplacer pendant la journée, bien qu'ils soient généralement confinés dans des cages la nuit pour les protéger des prédateurs.</French>
@@ -1163,32 +1137,6 @@
         <Russian>Древесный уголь</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_CHAR_COAL</Tag>
-        <English>Charcoal</English>
-        <French>Charbon de bois</French>
-        <German>
-            <Text>Holzkohle</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Carbone di legna</Italian>
-        <Spanish>Carbón vegetal</Spanish>
-        <Russian>Древесный уголь</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_CHAR_COAL</Tag>
-        <English>Charcoal</English>
-        <French>Charbon de bois</French>
-        <German>
-            <Text>Holzkohle</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Carbone di legna</Italian>
-        <Spanish>Carbón vegetal</Spanish>
-        <Russian>Древесный уголь</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_YIELD_CHAR_COAL_PEDIA</Tag>
         <English>[H1]CHARCOAL[\H1][NEWLINE][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Charcoal[COLOR_REVERT] is slow fired out of [LINK=YIELD_LUMBER]lumber[\LINK] by colonists working in the [LINK=BUILDING_FIREWORKERS_HOUSE]powder maker's house[\LINK] or one of its upgrades. Charcoal is the basic ingedient for [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK]. To create charcoal, a colonist needs to have the [LINK=PROFESSION_CHARCOAL_BURNER]charcoal burner[\LINK] profession. The supply of charcoal can be doubled by employing [LINK=UNIT_CHARCOAL_BURNER]master charcoal burners[\LINK] who can be hired in Europe or trained in Native villages.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]Charcoal comes from wood cooked in a kiln over six to eight days, sometimes longer. Charcoal burns at 1,100 degrees Celsius. The melting point of iron is 1,200 degrees. By using a bellows on charcoal a blacksmith can soften the iron enough to work it.</English>
         <French>[H1]CHARBON DE BOIS[\H1][NEWLINE][BOLD]Stratégie :[\BOLD][NEWLINE]Le [COLOR_HIGHLIGHT_TEXT]charbon de bois[COLOR_REVERT] est fabriqué à partir de [LINK=YIELD_LUMBER]bois[\LINK] par les colons travaillant dans la [LINK=BUILDING_FIREWORKERS_HOUSE]maison du poudrier[\LINK] ou l'une de ses améliorations. Pour le créer, un colon doit avoir la profession de [LINK=PROFESSION_CHARCOAL_BURNER]brûleur de charbon de bois[\LINK]. L'approvisionnement en charbon de bois peut être doublé en employant des [LINK=UNIT_CHARCOAL_BURNER]maîtres charbonniers[\LINK] qui peuvent être embauchés en Europe ou formés dans les villages autochtones.[NEWLINE][NEWLINE][BOLD]Contexte :[\BOLD][NEWLINE]Le charbon de bois provient du bois cuit dans un four pendant six à huit jours, parfois plus. Le charbon de bois brûle à 1 100 degrés Celsius. Le point de fusion du fer est de 1 200 degrés. En utilisant un soufflet sur le charbon de bois, un forgeron peut se mettre au travail.</French>
@@ -1431,32 +1379,6 @@
     <!-- PEAT -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_PEAT</Tag>
-        <English>Peat</English>
-        <French>Tourbe</French>
-        <German>
-            <Text>Torf</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Torba</Italian>
-        <Spanish>Turba</Spanish>
-        <Russian>Торф</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_PEAT</Tag>
-        <English>Peat</English>
-        <French>Tourbe</French>
-        <German>
-            <Text>Torf</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Torba</Italian>
-        <Spanish>Turba</Spanish>
-        <Russian>Торф</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_PEAT</Tag>
         <English>Peat</English>
         <French>Tourbe</French>
         <German>

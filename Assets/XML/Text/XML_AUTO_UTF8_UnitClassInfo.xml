@@ -1322,56 +1322,6 @@
         <Russian>Галеон Королевских войск:Галеоны Королевских войск</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_GEMS</Tag>
-        <English>Gems</English>
-        <French>
-            <Text>Pierres précieuses</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>
-            <Text>Edelsteine</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>
-            <Text>Pietre preziose</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Piedras preciosas</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Драгоценные камни</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_GOLD</Tag>
-        <English>Gold</English>
-        <French>
-            <Text>Or</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Gold</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Oro</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Oro</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Золото</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_GOVERNOR</Tag>
         <English>Governor:Governors</English>
         <French>
@@ -2931,27 +2881,6 @@
             <Plural>0:1</Plural>
         </German>
         <Russian>Военный корабль:Военные корабли</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_SILVER</Tag>
-        <English>Silver</English>
-        <French>
-            <Text>Argent</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>Silber</German>
-        <Italian>
-            <Text>Argento</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Plata</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Серебро</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SLOOP</Tag>
