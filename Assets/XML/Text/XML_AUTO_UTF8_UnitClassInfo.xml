@@ -473,19 +473,6 @@
         <Russian>Конестогская повозка:Конестогские повозки</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_CATTLE</Tag>
-        <English>Cattle</English>
-        <French>Bétail</French>
-        <German>
-            <Text>Rinder</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Bovini</Italian>
-        <Spanish>Bovinos</Spanish>
-        <Russian>Коровы</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CHRISTIAN_MISSIONARY</Tag>
         <English>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY</English>
     </TEXT>
@@ -1620,31 +1607,6 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Коровьи шкуры</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_HORSES</Tag>
-        <English>Horses</English>
-        <French>
-            <Text>Cheval:Chevaux</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Pferd:Pferde</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0:1</Plural>
-        </German>
-        <Italian>
-            <Text>Cavalli</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Caballos</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Лошади</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_HUMPBACK_WHALE</Tag>
@@ -2788,19 +2750,6 @@
             <Plural>0:1</Plural>
         </Spanish>
         <Russian>Опытный охотник на тюленей:Опытные охотники на тюленей</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_SHEEP</Tag>
-        <English>Sheep</English>
-        <French>Moutons</French>
-        <German>
-            <Text>Schafe</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Pecore</Italian>
-        <Spanish>Ovejas</Spanish>
-        <Russian>Овцы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SHIP_OF_THE_LINE</Tag>

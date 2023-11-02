@@ -20,32 +20,6 @@
         <Russian>Козы</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_GOATS</Tag>
-        <English>Goats</English>
-        <French>Chèvres</French>
-        <German>
-            <Text>Ziegen</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Capre</Italian>
-        <Spanish>Cabras</Spanish>
-        <Russian>Козы</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_GOATS</Tag>
-        <English>Goats</English>
-        <French>Chèvres</French>
-        <German>
-            <Text>Ziegen</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Capre</Italian>
-        <Spanish>Cabras</Spanish>
-        <Russian>Козы</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_YIELD_GOATS_PEDIA</Tag>
         <English>[H1]GOATS[\H1][NEWLINE][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Goats[COLOR_REVERT] can be raised on hills on [LINK=TERRAIN_WETLAND]wetlands[\LINK], [LINK=TERRAIN_MARSH]marshes[\LINK], [LINK=TERRAIN_SHRUBLAND]shrublands[\LINK] or [LINK=TERRAIN_TAIGA]taiga[\LINK] terrain. To make a colonist herd goats, assign him to the [LINK=PROFESSION_GOATHERD]goatherd[\LINK] profession.[NEWLINE][NEWLINE]Goat production is highest on plots bearing the [LINK=BONUS_GOAT]goat[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_PASTURE]pastures[\LINK] on goat-producing plots and employing [LINK=UNIT_HERDER]expert herders[\LINK]. These experts can be trained in Native villages or hired in Europe.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]Goats will eat vegetation that most other domesticated livestock decline, so they can subsist on very poor land. The number of animals that a goat farmer can sustain depends on the quality of the pasture. A poor man with poor land can still raise goats.[NEWLINE][NEWLINE]Perhaps because of their adaptability, goats have become a symbol of evil. Witches are said to cavort with goats. Satan has goat horns.</English>
         <French>[H1]CHÈVRES[\H1][NEWLINE][BOLD]Stratégie :[\BOLD][NEWLINE]Les [COLOR_HIGHLIGHT_TEXT]chèvres[COLOR_REVERT] peuvent être élevées sur des collines sur des terrains de [LINK=TERRAIN_WETLAND]zones humides[\LINK], [LINK=TERRAIN_MARSH]marais[\LINK], [LINK=TERRAIN_SHRUBLAND]zones arbustives[\LINK] ou [LINK=TERRAIN_TAIGA]taiga[\LINK]. Pour qu'un colon élève des chèvres, il faut lui attribuer la profession de [LINK=PROFESSION_GOATHERD]chevrier[\LINK][NEWLINE][NEWLINE]La production de chèvres est la plus élevée sur les parcelles portant le bonus [LINK=BONUS_GOAT]chèvres[\LINK], et peut être augmentée en construisant des [LINK=IMPROVEMENT_PASTURE]pâturages[\LINK] sur les parcelles produisant des chèvres et en employant des [LINK=UNIT_HERDER]bergers expérimentés[\LINK]. Ces experts peuvent être formés dans les villages autochtones ou embauchés en Europe.[NEWLINE][NEWLINE][BOLD]Contexte :[\BOLD][NEWLINE]Les chèvres mangent des végétaux que la plupart des autres animaux domestiques refusent, ce qui leur permet de subsister sur des terres très pauvres. Le nombre d'animaux qu'un éleveur de chèvres peut faire vivre dépend de la qualité du pâturage. Un homme pauvre disposant d'une terre pauvre peut tout de même élever des chèvres.[NEWLINE][NEWLINE]Peut-être en raison de leur adaptabilité, les chèvres sont devenues un symbole du mal. On dit que les sorcières se promènent avec des chèvres. Satan a des cornes de chèvre.</French>
@@ -64,32 +38,6 @@
     <!-- PIGS -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIGS</Tag>
-        <English>Pigs</English>
-        <French>Porcs</French>
-        <German>
-            <Text>Schweine</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Maiali</Italian>
-        <Spanish>Cerdos</Spanish>
-        <Russian>Свиньи</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_PIGS</Tag>
-        <English>Pigs</English>
-        <French>Porcs</French>
-        <German>
-            <Text>Schweine</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Maiali</Italian>
-        <Spanish>Cerdos</Spanish>
-        <Russian>Свиньи</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_PIGS</Tag>
         <English>Pigs</English>
         <French>Porcs</French>
         <German>
@@ -150,32 +98,6 @@
     <!-- GEESE -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_GEESE</Tag>
-        <English>Domestic Geese</English>
-        <French>Oies</French>
-        <German>
-            <Text>Hausgänse</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Oche</Italian>
-        <Spanish>Gansos</Spanish>
-        <Russian>Гуси</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_GEESE</Tag>
-        <English>Domestic Geese</English>
-        <French>Oies</French>
-        <German>
-            <Text>Hausgänse</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Oche</Italian>
-        <Spanish>Gansos</Spanish>
-        <Russian>Гуси</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_GEESE</Tag>
         <English>Domestic Geese</English>
         <French>Oies</French>
         <German>

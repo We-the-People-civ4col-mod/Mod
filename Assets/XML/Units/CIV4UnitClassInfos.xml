@@ -1273,22 +1273,22 @@
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_SHEEP</Type>
-            <Description>TXT_KEY_UNITCLASS_SHEEP</Description>
+            <Description>TXT_KEY_YIELD_SHEEP</Description>
             <DefaultUnit>UNIT_SHEEP</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_GOATS</Type>
-            <Description>TXT_KEY_UNITCLASS_GOATS</Description>
+            <Description>TXT_KEY_YIELD_GOATS</Description>
             <DefaultUnit>UNIT_GOATS</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_PIGS</Type>
-            <Description>TXT_KEY_UNITCLASS_PIGS</Description>
+            <Description>TXT_KEY_YIELD_PIGS</Description>
             <DefaultUnit>UNIT_PIGS</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_CATTLE</Type>
-            <Description>TXT_KEY_UNITCLASS_CATTLE</Description>
+            <Description>TXT_KEY_YIELD_CATTLE</Description>
             <DefaultUnit>UNIT_CATTLE</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
@@ -1298,12 +1298,12 @@
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_GEESE</Type>
-            <Description>TXT_KEY_UNITCLASS_GEESE</Description>
+            <Description>TXT_KEY_YIELD_GEESE</Description>
             <DefaultUnit>UNIT_GEESE</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_HORSES</Type>
-            <Description>TXT_KEY_UNITCLASS_HORSES</Description>
+            <Description>TXT_KEY_YIELD_HORSES</Description>
             <DefaultUnit>UNIT_HORSES</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>

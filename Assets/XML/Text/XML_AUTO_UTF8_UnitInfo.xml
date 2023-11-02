@@ -788,19 +788,6 @@
         <Spanish>The small [COLOR_UNIT_TEXT]Stagecoaches[COLOR_REVERT] and the more spacious [COLOR_UNIT_TEXT]Carriers[COLOR_REVERT] can also transport land units: civilists, troops, even artillery - just no treasures. Units can enter these vehicles in cities only, while unloading is possible everywhere.[PARAGRAPH:2]Stagecoaches can only be built in cities with a [COLOR_BUILDING_TEXT]Wheelwrights Workshop[COLOR_REVERT]. For carriers you even need a [COLOR_BUILDING_TEXT]Great Wheelwrights Workshop[COLOR_REVERT].[PARAGRAPH:2]These vehicles are especially suited for fast troop movements. During the Independence War they can bring reinforcements from the hinterland - for example heavy cavalry or artillery - fast to the beachheads of the Royal Army. These transport vehicles may be produced in any desired number without provoking the King to increase his army strength. Of course they can be used in peacetimes as well - e.g. to bring expert units fast to where they are needed. Please notice that vehicles in general cannot be loaded on ships.[PARAGRAPH:2]If you attack a wagon or trek, you capture it with all transported goods. However, if you attack a stagecoach or carrier a fight emerges - and those combat-weak vehicles will very likely get destroyed including their freight.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_CATTLE</Tag>
-        <English>Cattle</English>
-        <French>Bétail</French>
-        <German>
-            <Text>Rinder</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Bovini</Italian>
-        <Spanish>Bovinos</Spanish>
-        <Russian>Коровы</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNIT_CATTLE_PEDIA</Tag>
         <English>Early in the colonization of the New World cattle were brought to the plains. Some areas were unsuited for cattle herding, being too arid or disease-ridden, but there was enough good range so that making leather from hides soon became an important industry.[NEWLINE]Professional cattle herders, the cowboys, were soon employed in this industry.[NEWLINE]Good land where cattle could be raised was great demand, leading to conflicts with the Indigenous people.[NEWLINE]Huge cattle ranches spread across good grassland.</English>
         <French>L'élevage bovin est l'ensemble des opérations visant à reproduire des animaux de l'espèce Bos taurus au profit de l'activité humaine. Il permet de fournir de la viande, du lait, des peaux des animaux reproducteurs, un travail de traction, du fumier et l'entretien des espaces ouverts.</French>
@@ -3070,31 +3057,6 @@
         <English>[COLOR_UNIT_TEXT]Hides[COLOR_REVERT] are produced when a butcher slaughters [COLOR_UNIT_TEXT]cattle[COLOR_REVERT] for meat.</English>
         <French>Les [COLOR_UNIT_TEXT]peaux[COLOR_REVERT] sont produites à partir d'une boucherie travaillant le [COLOR_UNIT_TEXT]bétail[COLOR_REVERT].</French>
         <German>[COLOR_UNIT_TEXT]Hides[COLOR_REVERT] are produced when a Butcher is slaughtering [COLOR_UNIT_TEXT]Cattle[COLOR_REVERT], to further process them to meat.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_HORSES</Tag>
-        <English>Horses</English>
-        <French>
-            <Text>Cheval:Chevaux</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Pferd:Pferde</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0:1</Plural>
-        </German>
-        <Italian>
-            <Text>Cavalli</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Caballos</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Лошади</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HORSES_PEDIA</Tag>
@@ -5500,19 +5462,6 @@
         <English>[COLOR_UNIT_TEXT]Expert seal hunters[COLOR_REVERT] are masters of the coast and the sea.[NEWLINE]Any tile with the [LINK=BONUS_SEALS]seals[\LINK] or [LINK=BONUS_WALRUSS]walruses[\LINK] bonus that they work as [LINK=PROFESSION_SEAL_HUNTER]seal hunters[\LINK] will yield significantly more than its normal bounty of [LINK=YIELD_FUR]fur[\LINK] and [LINK=YIELD_FOOD]food[\LINK].[PARAGRAPH:1]Expert seal hunters can be trained by [LINK=CONCEPT_NATIVES]Natives[\LINK], and they can also [LINK=CONCEPT_TRAINING]learn[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its upgrades.</English>
         <French>Les [COLOR_UNIT_TEXT]chasseurs de phoques aguerris[COLOR_REVERT] sont les maîtres des côtes. Ils peuvent exploiter les bonus [LINK=BONUS_SEALS]phoques[\LINK] et [LINK=BONUS_WALRUSS]morses[\LINK] avec beaucoup plus d'efficacité pour produire de la [LINK=YIELD_FUR]fourrure[\LINK].</French>
         <German>[COLOR_UNIT_TEXT]Erfahrene Robbenjäger[COLOR_REVERT] sind Meister der Küste und des Ozeans. Sie können auf den Bonusressourcen [LINK=BONUS_SEALS]Robben[\LINK] oder [LINK=BONUS_WALRUSS]Walrösser[\LINK] beträchtliche Mengen an [LINK=YIELD_FUR]Fellen[\LINK] und [LINK=YIELD_FOOD]Nahrung[\LINK] gewinnen.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_SHEEP</Tag>
-        <English>Sheep</English>
-        <French>Mouton</French>
-        <German>
-            <Text>Schafe</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Pecore</Italian>
-        <Spanish>Ovejas</Spanish>
-        <Russian>Овцы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_SHEEP_PEDIA</Tag>
