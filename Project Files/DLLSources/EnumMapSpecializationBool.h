@@ -63,7 +63,8 @@ BOOST_STATIC_ASSERT(sizeof(BoolToken) == 4);
 template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 class EnumMapBoolVariable
 {
-	BOOST_STATIC_ASSERT(0);
+	// BOOST_STATIC_ASSERT(0);
+	// TODO(zig): Replace with modern C++ equivalent
 };
 
 template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
@@ -71,7 +72,7 @@ class EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATI
 	: public EnumMapCore<IndexType, LengthType, LENGTH_KNOWN_WHILE_COMPILING>
 {
 public:
-	static const int iNumBlocks = (COMPILE_NUM_ELEMENTS + 31) / 32;
+	static const int iNumBlocks = (EnumMapCore<IndexType, LengthType, LENGTH_KNOWN_WHILE_COMPILING>::COMPILE_NUM_ELEMENTS + 31) / 32;
 	static const byte DefaultByte = DEFAULT ? 0xFF : 0;
 	static const unsigned int DefaultInt = DEFAULT == 0 ? 0 : MAX_UNSIGNED_INT;
 
@@ -129,7 +130,7 @@ class EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAM
 	: public EnumMapCore<IndexType, LengthType, VARIABLE_LENGTH_ALL_KNOWN>
 {
 public:
-	static const int iNumBlocks = (NUM_ELEMENTS + 31) / 32;
+	static const int iNumBlocks = (EnumMapCore<IndexType, LengthType, VARIABLE_LENGTH_ALL_KNOWN>::NUM_ELEMENTS + 31) / 32;
 	static const byte DefaultByte = DEFAULT ? 0xFF : 0;
 	static const unsigned int DefaultInt = DEFAULT == 0 ? 0 : MAX_UNSIGNED_INT;
 
@@ -209,16 +210,16 @@ void EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC
 template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 bool EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, LENGTH_KNOWN_WHILE_COMPILING>::get(IndexType eIndex) const
 {
-	FAssert(isInRange(eIndex));
-	eIndex = eIndex - FIRST;
+	FAssert(this->isInRange(eIndex));
+	eIndex = eIndex - this->FIRST;
 	return m_pArray[eIndex / 32].get(eIndex);
 }
 
 template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 void EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, LENGTH_KNOWN_WHILE_COMPILING>::set(IndexType eIndex, bool bValue)
 {
-	FAssert(isInRange(eIndex));
-	eIndex = eIndex - FIRST;
+	FAssert(this->isInRange(eIndex));
+	eIndex = eIndex - this->FIRST;
 	m_pArray[eIndex / 32].set(eIndex, bValue);
 }
 
@@ -258,7 +259,7 @@ void EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMI
 template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 void EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, LENGTH_KNOWN_WHILE_COMPILING>::allocate()
 {
-	if (!isAllocated())
+	if (!this->isAllocated())
 	{
 		FAssert(NUM_ELEMENTS > 32);
 		m_pArray = new  BoolToken[getNumBlocks()];
@@ -279,7 +280,7 @@ bool EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMI
 	{
 		return m_eArray.iData != DefaultInt;
 	}
-	if (isAllocated())
+	if (this->isAllocated())
 	{
 		const int iNumBlocks = getNumBlocks();
 		for (int i = 0; i < iNumBlocks; ++i)
@@ -301,7 +302,7 @@ bool EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMI
 	{
 		return m_eArray.iData != DefaultInt;
 	}
-	if (isAllocated())
+	if (this->isAllocated())
 	{
 		const int iNumBlocks = getNumBlocks();
 		for (int i = 0; i < iNumBlocks; ++i)
@@ -324,26 +325,26 @@ void EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMI
 template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 bool EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, LENGTH_KNOWN_WHILE_COMPILING>::get(IndexType eIndex) const
 {
-	FAssert(isInRange(eIndex));
-	eIndex = eIndex - FIRST;
+	FAssert(this->isInRange(eIndex));
+	eIndex = eIndex - this->FIRST;
 	if (NUM_ELEMENTS <= 32)
 	{
 		return m_eArray.get(eIndex);
 	}
 	else
 	{
-		return isAllocated() ? m_pArray[eIndex / 32].get(eIndex) : DEFAULT;
+		return this->isAllocated() ? m_pArray[eIndex / 32].get(eIndex) : DEFAULT;
 	}
 }
 
 template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 void EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, LENGTH_KNOWN_WHILE_COMPILING>::set(IndexType eIndex, bool bValue)
 {
-	FAssert(isInRange(eIndex));
-	if (isAllocated() || bValue != DEFAULT)
+	FAssert(this->isInRange(eIndex));
+	if (this->isAllocated() || bValue != DEFAULT)
 	{
 		allocate();
-		eIndex = eIndex - FIRST;
+		eIndex = eIndex - this->FIRST;
 		if (NUM_ELEMENTS <= 32)
 		{
 			m_eArray.set(eIndex, bValue);
@@ -408,7 +409,7 @@ void EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMI
 template<class IndexType, class T, int DEFAULT, class LengthType>
 void EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_LENGTH_ALL_KNOWN>::allocate()
 {
-	if (!isAllocated())
+	if (!this->isAllocated())
 	{
 		m_pArray = new  BoolToken[iNumBlocks];
 		memset(m_pArray, DefaultByte, iNumBlocks * 4);
@@ -424,7 +425,7 @@ bool EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMI
 template<class IndexType, class T, int DEFAULT, class LengthType>
 bool EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_LENGTH_ALL_KNOWN>::hasContent()
 {
-	if (isAllocated())
+	if (this->isAllocated())
 	{
 		for (int i = 0; i < iNumBlocks; ++i)
 		{
@@ -441,7 +442,7 @@ bool EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMI
 template<class IndexType, class T, int DEFAULT, class LengthType>
 bool EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_LENGTH_ALL_KNOWN>::hasContent() const
 {
-	if (isAllocated())
+	if (this->isAllocated())
 	{
 		for (int i = 0; i < iNumBlocks; ++i)
 		{
@@ -463,19 +464,19 @@ void EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMI
 template<class IndexType, class T, int DEFAULT, class LengthType>
 bool EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_LENGTH_ALL_KNOWN>::get(IndexType eIndex) const
 {
-	FAssert(isInRange(eIndex));
-	eIndex = eIndex - FIRST;
-	return isAllocated() ? m_pArray[eIndex / 32].get(eIndex) : DEFAULT;
+	FAssert(this->isInRange(eIndex));
+	eIndex = eIndex - this->FIRST;
+	return this->isAllocated() ? m_pArray[eIndex / 32].get(eIndex) : DEFAULT;
 }
 
 template<class IndexType, class T, int DEFAULT, class LengthType>
 void EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_LENGTH_ALL_KNOWN>::set(IndexType eIndex, bool bValue)
 {
-	FAssert(isInRange(eIndex));
-	if (isAllocated() || bValue != DEFAULT)
+	FAssert(this->isInRange(eIndex));
+	if (this->isAllocated() || bValue != DEFAULT)
 	{
 		allocate();
-		eIndex = eIndex - FIRST;
+		eIndex = eIndex - this->FIRST;
 		m_pArray[eIndex / 32].set(eIndex, bValue);
 	}
 }

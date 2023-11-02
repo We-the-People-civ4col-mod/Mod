@@ -26,7 +26,7 @@ void OpenURL::openURL(const char* URL)
 	}
 	std::string URL_buffer = FixURL(URL);
 
-	::ShellExecute(0, NULL, app.c_str(), _T(URL_buffer.c_str()), NULL, SW_SHOWNORMAL);
+	::ShellExecute(0, NULL, app.c_str(), URL_buffer.c_str(), NULL, SW_SHOWNORMAL);
 }
 
 void OpenURL::openReadme(const std::string section)

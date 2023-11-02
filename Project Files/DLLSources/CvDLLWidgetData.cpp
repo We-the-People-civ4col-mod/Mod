@@ -3636,7 +3636,7 @@ void CvDLLWidgetData::parseDescriptionHelp(CvWidgetDataStruct &widgetDataStruct,
 			UnitTypes eUnit = (UnitTypes)widgetDataStruct.m_iData2;
 			if (NO_UNIT != eUnit)
 			{
-				szBuffer.assign(bMinimal ? GC.getUnitInfo(eUnit).getDescription() : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getUnitInfo(eUnit).getTextKeyWide()));
+				szBuffer.assign(bMinimal ? static_cast<CvWString>(GC.getUnitInfo(eUnit).getDescription()) : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getUnitInfo(eUnit).getTextKeyWide()));
 			}
 		}
 		break;
@@ -3645,7 +3645,7 @@ void CvDLLWidgetData::parseDescriptionHelp(CvWidgetDataStruct &widgetDataStruct,
 			ProfessionTypes eProfession = (ProfessionTypes)widgetDataStruct.m_iData2;
 			if (NO_PROFESSION != eProfession)
 			{
-				szBuffer.assign(bMinimal ? GC.getProfessionInfo(eProfession).getDescription() : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getProfessionInfo(eProfession).getTextKeyWide()));
+				szBuffer.assign(bMinimal ? static_cast<CvWString>(GC.getProfessionInfo(eProfession).getDescription()) : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getProfessionInfo(eProfession).getTextKeyWide()));
 			}
 		}
 		break;
@@ -3654,7 +3654,7 @@ void CvDLLWidgetData::parseDescriptionHelp(CvWidgetDataStruct &widgetDataStruct,
 			BuildingTypes eBuilding = (BuildingTypes)widgetDataStruct.m_iData2;
 			if (NO_BUILDING != eBuilding)
 			{
-				szBuffer.assign(bMinimal ? GC.getBuildingInfo(eBuilding).getDescription() : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getBuildingInfo(eBuilding).getTextKeyWide()));
+				szBuffer.assign(bMinimal ? static_cast<CvWString>(GC.getBuildingInfo(eBuilding).getDescription()) : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getBuildingInfo(eBuilding).getTextKeyWide()));
 			}
 		}
 		break;
@@ -3663,7 +3663,7 @@ void CvDLLWidgetData::parseDescriptionHelp(CvWidgetDataStruct &widgetDataStruct,
 			BonusTypes eBonus = (BonusTypes)widgetDataStruct.m_iData2;
 			if (NO_BONUS != eBonus)
 			{
-				szBuffer.assign(bMinimal ? GC.getBonusInfo(eBonus).getDescription() : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getBonusInfo(eBonus).getTextKeyWide()));
+				szBuffer.assign(bMinimal ? static_cast<CvWString>(GC.getBonusInfo(eBonus).getDescription()) : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getBonusInfo(eBonus).getTextKeyWide()));
 			}
 		}
 		break;
@@ -3672,7 +3672,7 @@ void CvDLLWidgetData::parseDescriptionHelp(CvWidgetDataStruct &widgetDataStruct,
 			ImprovementTypes eImprovement = (ImprovementTypes)widgetDataStruct.m_iData2;
 			if (NO_IMPROVEMENT != eImprovement)
 			{
-				szBuffer.assign(bMinimal ? GC.getImprovementInfo(eImprovement).getDescription() : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getImprovementInfo(eImprovement).getTextKeyWide()));
+				szBuffer.assign(bMinimal ? static_cast<CvWString>(GC.getImprovementInfo(eImprovement).getDescription()) : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getImprovementInfo(eImprovement).getTextKeyWide()));
 			}
 		}
 		break;
@@ -3681,7 +3681,7 @@ void CvDLLWidgetData::parseDescriptionHelp(CvWidgetDataStruct &widgetDataStruct,
 			PromotionTypes ePromo = (PromotionTypes)widgetDataStruct.m_iData2;
 			if (NO_PROMOTION != ePromo)
 			{
-				szBuffer.assign(bMinimal ? GC.getPromotionInfo(ePromo).getDescription() : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getPromotionInfo(ePromo).getTextKeyWide()));
+				szBuffer.assign(bMinimal ? static_cast<CvWString>(GC.getPromotionInfo(ePromo).getDescription()) : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getPromotionInfo(ePromo).getTextKeyWide()));
 			}
 		}
 		break;
@@ -3690,7 +3690,7 @@ void CvDLLWidgetData::parseDescriptionHelp(CvWidgetDataStruct &widgetDataStruct,
 			CivilizationTypes eCiv = (CivilizationTypes)widgetDataStruct.m_iData2;
 			if (NO_CIVILIZATION != eCiv)
 			{
-				szBuffer.assign(bMinimal ? GC.getCivilizationInfo(eCiv).getDescription() : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getCivilizationInfo(eCiv).getTextKeyWide()));
+				szBuffer.assign(bMinimal ? static_cast<CvWString>(GC.getCivilizationInfo(eCiv).getDescription()) : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getCivilizationInfo(eCiv).getTextKeyWide()));
 			}
 		}
 		break;
@@ -3699,7 +3699,7 @@ void CvDLLWidgetData::parseDescriptionHelp(CvWidgetDataStruct &widgetDataStruct,
 			LeaderHeadTypes eLeader = (LeaderHeadTypes)widgetDataStruct.m_iData2;
 			if (NO_LEADER != eLeader)
 			{
-				szBuffer.assign(bMinimal ? GC.getLeaderHeadInfo(eLeader).getDescription() : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getLeaderHeadInfo(eLeader).getTextKeyWide()));
+				szBuffer.assign(bMinimal ? static_cast<CvWString>(GC.getLeaderHeadInfo(eLeader).getDescription()) : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getLeaderHeadInfo(eLeader).getTextKeyWide()));
 			}
 		}
 		break;
@@ -3708,7 +3708,7 @@ void CvDLLWidgetData::parseDescriptionHelp(CvWidgetDataStruct &widgetDataStruct,
 			CivicTypes eCivic = (CivicTypes)widgetDataStruct.m_iData2;
 			if (NO_CIVIC != eCivic)
 			{
-				szBuffer.assign(bMinimal ? GC.getCivicInfo(eCivic).getDescription() : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getCivicInfo(eCivic).getTextKeyWide()));
+				szBuffer.assign(bMinimal ? static_cast<CvWString>(GC.getCivicInfo(eCivic).getDescription()) : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getCivicInfo(eCivic).getTextKeyWide()));
 			}
 		}
 		break;

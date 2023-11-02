@@ -3335,11 +3335,11 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			// R&R, ray, Improvements to Tax Mechanism - END
 			CvCity* pCity = kPlayer.getCity(iData2);
 			if (pCity == NULL) break;
-			
+
 			pCity->setYieldStored(eYield, 0);
 			CvWString szMessage = gDLL->getText("TXT_KEY_BOSTON_TEA_PARTY", kPlayer.getCivilizationAdjectiveKey(), pCity->getNameKey(), GC.getYieldInfo(eYield).getTextKeyWide());
 			gDLL->UI().addPlayerMessage(ePlayer, true, GC.getEVENT_MESSAGE_TIME(), szMessage, pCity, "AS2D_CITY_REVOLT", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
-			
+
 		}
 		break;
 
@@ -4412,7 +4412,9 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 				location.deepCoastal = true;
 				location.europe = true;
 				CvCity *locationToAppear = kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_ROYAL_INTERVENTIONS_SHIP", 1, "", 0, location, false, false);
-				CvWString locationName = locationToAppear != NULL ? locationToAppear->getNameKey() : gDLL->getText("TXT_KEY_CONCEPT_EUROPE");
+				CvWString locationName = locationToAppear != NULL
+					? static_cast<CvWString>(locationToAppear->getNameKey())
+					: gDLL->getText("TXT_KEY_CONCEPT_EUROPE");
 				CvWString szBuffer = gDLL->getText("TXT_KEY_ROYAL_INTERVENTION_ACCEPTED", GC.getLeaderHeadInfo(GET_PLAYER(enemyID).getLeaderType()).getDescription(), locationName.c_str());
 
 				kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_1", 1, szBuffer, 0, location, false, false);
@@ -18141,7 +18143,7 @@ void CvPlayer::changeYieldTradedTotal(YieldTypes eYield, int iChange, int iUnitP
 			}
 	}
 
-	
+
 	setYieldScoreTotal(eYield, getYieldScoreTotal(eYield) + iChange*iUnitPrice);
 	setYieldTradedTotal(eYield, getYieldTradedTotal(eYield) + iChange);
 }
@@ -18191,8 +18193,8 @@ void CvPlayer::wipeRoyalYieldScore()
 		if (!getColonyPlayer()->isYieldEuropeTradable(eYieldCargo)) continue; //skip whatever is on embargo
 
 		setYieldTradedTotal(eYieldCargo, 0);
-		setYieldScoreTotal(eYieldCargo, 0); 
-		
+		setYieldScoreTotal(eYieldCargo, 0);
+
 	}
 }
 
@@ -18221,7 +18223,7 @@ const int CvPlayer::getFullYieldScore(bool fullCalculation)
 	{
 		return  iGrandTotal * GLOBAL_DEFINE_TAX_RATE_RETAINED_FRACTION / 100;
 	}
-}		
+}
 
 const int CvPlayer::getTaxThresold()
 {
@@ -18256,7 +18258,7 @@ const int CvPlayer::getTaxThresold(bool fullCalculation)
 	{
 		return threshold / 10000;
 	}
-		
+
 }
 
 
@@ -19290,9 +19292,9 @@ void CvPlayer::doTaxRaises()
 	// the revenue fraction  for tax purpose is now calculated here
 	if (getFullYieldScore(true) <= getTaxThresold(true) ) return; // we have not traded enough yet;
 
-	
+
 	int iAttitudeModifier = AI().AI_getAttitudeVal(pColony.getID()) * GLOBAL_DEFINE_TAX_TRADE_INCREASE_CHANCE_KING_ATTITUDE_BASE;
-	
+
 	if (iAttitudeModifier > MAX_ATTITUDE_ADJUST)
 	{
 		iAttitudeModifier = MAX_ATTITUDE_ADJUST;
