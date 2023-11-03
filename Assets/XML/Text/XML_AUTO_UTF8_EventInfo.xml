@@ -2297,7 +2297,7 @@
         <English>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA</English>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_EVENT_TUTORIAL_END_TUTORIAL</Tag>
+        <Tag>TXT_KEY_EVENT_TUTORIAL_END_TUTORIAL_2</Tag>
         <English>Please disable tutorial quests.</English>
         <French>Veuillez désactiver les quêtes du didacticiel.</French>
         <German>Bitte die Tutorial-Quests deaktivieren.</German>
