@@ -5,118 +5,118 @@ import CvScreenEnums
 import CvEventManager
 
 def getKeyToken(keyID):
-	keys = []
-	keys.append(["KB_NONE", False])
-	keys.append(["KB_ESCAPE", False])
-	keys.append(["KB_0", True])
-	keys.append(["KB_1", True])
-	keys.append(["KB_2", True])
-	keys.append(["KB_3", True])
-	keys.append(["KB_4", True])
-	keys.append(["KB_5", True])
-	keys.append(["KB_6", True])
-	keys.append(["KB_7", True])
-	keys.append(["KB_8", True])
-	keys.append(["KB_9", True])
-	keys.append(["KB_MINUS", True])
-	keys.append(["KB_A", True])
-	keys.append(["KB_B", True])
-	keys.append(["KB_C", True])
-	keys.append(["KB_D", True])
-	keys.append(["KB_E", True])
-	keys.append(["KB_F", True])
-	keys.append(["KB_G", True])
-	keys.append(["KB_H", True])
-	keys.append(["KB_I", True])
-	keys.append(["KB_J", True])
-	keys.append(["KB_K", True])
-	keys.append(["KB_L", True])
-	keys.append(["KB_M", True])
-	keys.append(["KB_N", True])
-	keys.append(["KB_O", True])
-	keys.append(["KB_P", True])
-	keys.append(["KB_Q", True])
-	keys.append(["KB_R", True])
-	keys.append(["KB_S", True])
-	keys.append(["KB_T", True])
-	keys.append(["KB_U", True])
-	keys.append(["KB_V", True])
-	keys.append(["KB_W", True])
-	keys.append(["KB_X", True])
-	keys.append(["KB_Y", True])
-	keys.append(["KB_Z", True])
-	keys.append(["KB_EQUALS", True])
-	keys.append(["KB_BACKSPACE", True])
-	keys.append(["KB_TAB", True])
-	keys.append(["KB_LBRACKET", True])
-	keys.append(["KB_RBRACKET", True])
-	keys.append(["KB_RETURN", False])
-	keys.append(["KB_LCONTROL", False])
-	keys.append(["KB_SEMICOLON", True])
-	keys.append(["KB_APOSTROPHE", True])
-	keys.append(["KB_GRAVE", True])
-	keys.append(["KB_LSHIFT", False])
-	keys.append(["KB_BACKSLASH", True])
-	keys.append(["KB_COMMA", True])
-	keys.append(["KB_PERIOD", True])
-	keys.append(["KB_SLASH", True])
-	keys.append(["KB_RSHIFT", False])
-	keys.append(["KB_NUMPADSTAR", True])
-	keys.append(["KB_LALT", False])
-	keys.append(["KB_SPACE", True])
-	keys.append(["KB_CAPSLOCK", False])
-	keys.append(["KB_F1", True])
-	keys.append(["KB_F2", True])
-	keys.append(["KB_F3", True])
-	keys.append(["KB_F4", True])
-	keys.append(["KB_F5", True])
-	keys.append(["KB_F6", True])
-	keys.append(["KB_F7", True])
-	keys.append(["KB_F8", True])
-	keys.append(["KB_F9", True])
-	keys.append(["KB_F10", True])
-	keys.append(["KB_F11", True])
-	keys.append(["KB_F12", True])
-	keys.append(["KB_NUMLOCK", False])
-	keys.append(["KB_SCROLL", False])
-	keys.append(["KB_NUMPAD0", True])
-	keys.append(["KB_NUMPAD1", True])
-	keys.append(["KB_NUMPAD2", True])
-	keys.append(["KB_NUMPAD3", True])
-	keys.append(["KB_NUMPAD4", True])
-	keys.append(["KB_NUMPAD5", True])
-	keys.append(["KB_NUMPAD6", True])
-	keys.append(["KB_NUMPAD7", True])
-	keys.append(["KB_NUMPAD8", True])
-	keys.append(["KB_NUMPAD9", True])
-	keys.append(["KB_NUMPADMINUS", True])
-	keys.append(["KB_NUMPADPLUS", True])
-	keys.append(["KB_NUMPADPERIOD", True])
-	keys.append(["KB_NUMPADEQUALS", True])
-	keys.append(["KB_AT", True])
-	keys.append(["KB_UNDERLINE", True])
-	keys.append(["KB_COLON", True])
-	keys.append(["KB_NUMPADENTER", False])
-	keys.append(["KB_RCONTROL", False])
-	keys.append(["KB_VOLUMEDOWN", False])
-	keys.append(["KB_VOLUMEUP", False])
-	keys.append(["KB_NUMPADCOMMA", True])
-	keys.append(["KB_NUMPADSLASH", True])
-	keys.append(["KB_SYSRQ", False])
-	keys.append(["KB_RALT", False])
-	keys.append(["KB_PAUSE", False])
-	keys.append(["KB_HOME", False])
-	keys.append(["KB_UP", False])
-	keys.append(["KB_PGUP", False])
-	keys.append(["KB_LEFT", False])
-	keys.append(["KB_RIGHT", False])
-	keys.append(["KB_END", False])
-	keys.append(["KB_DOWN", False])
-	keys.append(["KB_PGDN", False])
-	keys.append(["KB_INSERT", False])
-	keys.append(["KB_DELETE", False])
+	keys = [
+		["KB_NONE", False],
+		["KB_ESCAPE", False],
+		["KB_0", True],
+		["KB_1", True],
+		["KB_2", True],
+		["KB_3", True],
+		["KB_4", True],
+		["KB_5", True],
+		["KB_6", True],
+		["KB_7", True],
+		["KB_8", True],
+		["KB_9", True],
+		["KB_MINUS", True],
+		["KB_A", True],
+		["KB_B", True],
+		["KB_C", True],
+		["KB_D", True],
+		["KB_E", True],
+		["KB_F", True],
+		["KB_G", True],
+		["KB_H", True],
+		["KB_I", True],
+		["KB_J", True],
+		["KB_K", True],
+		["KB_L", True],
+		["KB_M", True],
+		["KB_N", True],
+		["KB_O", True],
+		["KB_P", True],
+		["KB_Q", True],
+		["KB_R", True],
+		["KB_S", True],
+		["KB_T", True],
+		["KB_U", True],
+		["KB_V", True],
+		["KB_W", True],
+		["KB_X", True],
+		["KB_Y", True],
+		["KB_Z", True],
+		["KB_EQUALS", True],
+		["KB_BACKSPACE", True],
+		["KB_TAB", True],
+		["KB_LBRACKET", True],
+		["KB_RBRACKET", True],
+		["KB_RETURN", False],
+		["KB_LCONTROL", False],
+		["KB_SEMICOLON", True],
+		["KB_APOSTROPHE", True],
+		["KB_GRAVE", True],
+		["KB_LSHIFT", False],
+		["KB_BACKSLASH", True],
+		["KB_COMMA", True],
+		["KB_PERIOD", True],
+		["KB_SLASH", True],
+		["KB_RSHIFT", False],
+		["KB_NUMPADSTAR", True],
+		["KB_LALT", False],
+		["KB_SPACE", True],
+		["KB_CAPSLOCK", False],
+		["KB_F1", True],
+		["KB_F2", True],
+		["KB_F3", True],
+		["KB_F4", True],
+		["KB_F5", True],
+		["KB_F6", True],
+		["KB_F7", True],
+		["KB_F8", True],
+		["KB_F9", True],
+		["KB_F10", True],
+		["KB_F11", True],
+		["KB_F12", True],
+		["KB_NUMLOCK", False],
+		["KB_SCROLL", False],
+		["KB_NUMPAD0", True],
+		["KB_NUMPAD1", True],
+		["KB_NUMPAD2", True],
+		["KB_NUMPAD3", True],
+		["KB_NUMPAD4", True],
+		["KB_NUMPAD5", True],
+		["KB_NUMPAD6", True],
+		["KB_NUMPAD7", True],
+		["KB_NUMPAD8", True],
+		["KB_NUMPAD9", True],
+		["KB_NUMPADMINUS", True],
+		["KB_NUMPADPLUS", True],
+		["KB_NUMPADPERIOD", True],
+		["KB_NUMPADEQUALS", True],
+		["KB_AT", True],
+		["KB_UNDERLINE", True],
+		["KB_COLON", True],
+		["KB_NUMPADENTER", False],
+		["KB_RCONTROL", False],
+		["KB_VOLUMEDOWN", False],
+		["KB_VOLUMEUP", False],
+		["KB_NUMPADCOMMA", True],
+		["KB_NUMPADSLASH", True],
+		["KB_SYSRQ", False],
+		["KB_RALT", False],
+		["KB_PAUSE", False],
+		["KB_HOME", False],
+		["KB_UP", False],
+		["KB_PGUP", False],
+		["KB_LEFT", False],
+		["KB_RIGHT", False],
+		["KB_END", False],
+		["KB_DOWN", False],
+		["KB_PGDN", False],
+		["KB_INSERT", False],
+		["KB_DELETE", False]]
 
-	if (keyID >= 0 and keyID < len(keys)):
+	if  0 <= keyID < len(keys):
 		return keys[keyID]
 	return None
 
@@ -144,6 +144,7 @@ class xmlInput:
 	def __init__(self, inputClass, editor):
 		self.inputClass = inputClass
 		self.editor = editor
+
 
 	def isLeftCLick(self):
 		if (self.inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED):
@@ -205,13 +206,11 @@ class xmlInput:
 
 	def isKeyNoneModifier(self):
 		if self.inputClass.getNotifyCode() == NotifyCode.NOTIFY_CHARACTER:
-			if self.inputClass.getData() != InputTypes.KB_LCONTROL:
-				if self.inputClass.getData() != InputTypes.KB_RCONTROL:
-					if self.inputClass.getData() != InputTypes.KB_LALT:
-						if self.inputClass.getData() != InputTypes.KB_RALT:
-							if self.inputClass.getData() != InputTypes.KB_LSHIFT:
-								if self.inputClass.getData() != InputTypes.KB_RSHIFT:
-									return True
+			return not self.inputClass.getData() in \
+				[InputTypes.KB_LCONTROL, InputTypes.KB_RCONTROL,
+				 InputTypes.KB_LALT,     InputTypes.KB_RALT,
+				 InputTypes.KB_LSHIFT,   InputTypes.KB_RSHIFT]
+
 		return False
 
 	# directs keyboard input to a specific EditBox
@@ -233,70 +232,62 @@ class xmlInput:
 		# read the string associated with the key in question 
 		key = self.editor.XML.getWKey(self.inputClass.getData(), self.inputClass.isShiftKeyDown(), self.inputClass.isCtrlKeyDown(), self.inputClass.isAltKeyDown())
 
-		if (key != None):
-			# some keywords have special meaning. Apply the meaning rather than the keywords
-			if (key == "delete"):
-				return string[:-1]
-			if (key == "delete front"):
-				return string[1:]
-			if (key == "space"):
-				return string + " "
+		if key == None:
+			return string
 
-			return string + key
-		return string
+		# some keywords have special meaning. Apply the meaning rather than the keywords
+		# by default, we want the key at end of the string
+		return {
+			"delete" : string[:-1],
+			"delete front" : string [1:],
+			"space" : string + " "
+		}.get(key, string + key)
+
 
 	def getNotificationText(self):
-		notifications = []
-		notifications.append("NOTIFY_CLICKED")
-		notifications.append("NOTIFY_DBL_CLICKED")
-		notifications.append("NOTIFY_FOCUS")
-		notifications.append("NOTIFY_UNFOCUS")
-		notifications.append("NOTIFY_CURSOR_MOVE_ON")
-		notifications.append("NOTIFY_CURSOR_MOVE_OFF")
-		notifications.append("NOTIFY_CHARACTER")
-		notifications.append("NOTIFY_SCROLL_UP")
-		notifications.append("NOTIFY_SCROLL_DOWN")
-		notifications.append("NOTIFY_NEW_HORIZONTAL_STOP")
-		notifications.append("NOTIFY_NEW_VERTICAL_STOP")
-		notifications.append("NOTIFY_LISTBOX_ITEM_SELECTED")
-		notifications.append("NOTIFY_MOUSEMOVE") # 12 is also NOTIFY_FLYOUT_ITEM_SELECTED
-		notifications.append("13")
-		notifications.append("NOTIFY_MOUSEWHEELUP")
-		notifications.append("NOTIFY_MOUSEWHEELDOWN")
-		notifications.append("16")
-		notifications.append("17")
-		notifications.append("NOTIFY_LINKEXECUTE")
-		notifications.append("NOTIFY_MOVIE_DONE")
-		notifications.append("NOTIFY_SLIDER_NEWSTOP")
-		notifications.append("NOTIFY_TABLE_HEADER_SELECTED")
+
+		notifications = [
+			"NOTIFY_CLICKED",
+			"NOTIFY_DBL_CLICKED",
+			"NOTIFY_FOCUS",
+			"NOTIFY_UNFOCUS",
+			"NOTIFY_CURSOR_MOVE_ON",
+			"NOTIFY_CURSOR_MOVE_OFF",
+			"NOTIFY_CHARACTER",
+			"NOTIFY_SCROLL_UP",
+			"NOTIFY_SCROLL_DOWN",
+			"NOTIFY_NEW_HORIZONTAL_STOP",
+			"NOTIFY_NEW_VERTICAL_STOP",
+			"NOTIFY_LISTBOX_ITEM_SELECTED",
+			"NOTIFY_MOUSEMOVE", # 12 is also NOTIFY_FLYOUT_ITEM_SELECTED
+			"13",
+			"NOTIFY_MOUSEWHEELUP",
+			"NOTIFY_MOUSEWHEELDOWN",
+			"16",
+			"17",
+			"NOTIFY_LINKEXECUTE",
+			"NOTIFY_MOVIE_DONE",
+			"NOTIFY_SLIDER_NEWSTOP",
+			"NOTIFY_TABLE_HEADER_SELECTED"]
 
 		return notifications[self.inputClass.getNotifyCode()]
 
 	def getWidgetString(self):
 		eWidget = self.getWidget()
-		if eWidget == WidgetTypes.WIDGET_GENERAL:
-			return "WIDGET_GENERAL"
-		if eWidget == WidgetTypes.WIDGET_XML_EDITOR:
-			return "WIDGET_XML_EDITOR"
-		if eWidget == WidgetTypes.WIDGET_XML_EDITOR_BOX:
-			return "WIDGET_XML_EDITOR_BOX"
-		if eWidget == WidgetTypes.WIDGET_XML_OK:
-			return "WIDGET_XML_OK"
-		if eWidget == WidgetTypes.WIDGET_XML_CANCEL:
-			return "WIDGET_XML_CANCEL"
-		if eWidget == WidgetTypes.WIDGET_XML_DELETE:
-			return "WIDGET_XML_DELETE"
-		if eWidget == WidgetTypes.WIDGET_XML_CLONE:
-			return "WIDGET_XML_CLONE"
-		if eWidget == WidgetTypes.WIDGET_XML_DOWN:
-			return "WIDGET_XML_DOWN"
-		if eWidget == WidgetTypes.WIDGET_XML_ZERO:
-			return "WIDGET_XML_ZERO"
-		if eWidget == WidgetTypes.WIDGET_XML_UP:
-			return "WIDGET_XML_UP"
+		types_to_string = {\
+			WidgetTypes.WIDGET_GENERAL: "WIDGET_GENERAL",
+			WidgetTypes.WIDGET_XML_EDITOR: "WIDGET_XML_EDITOR",
+			WidgetTypes.WIDGET_XML_EDITOR_BOX: "WIDGET_XML_EDITOR_BOX",
+			WidgetTypes.WIDGET_XML_OK: "WIDGET_XML_OK",
+			WidgetTypes.WIDGET_XML_CANCEL: "WIDGET_XML_CANCEL",
+			WidgetTypes.WIDGET_XML_DELETE: "WIDGET_XML_DELETE",
+			WidgetTypes.WIDGET_XML_CLONE: "WIDGET_XML_CLONE",
+			WidgetTypes.WIDGET_XML_DOWN: "WIDGET_XML_DOWN",
+			WidgetTypes.WIDGET_XML_ZERO: "WIDGET_XML_ZERO",
+			WidgetTypes.WIDGET_XML_UP: "WIDGET_XML_UP"
+		}
+		return types_to_string.get(eWidget, str(eWidget))
 
-		# fallback because it's impossible to always support everything in the expanding widget enum
-		return str(eWidget)
 
 	def printInput(self):
 		print "-----------new input-----------"
