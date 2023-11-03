@@ -9386,7 +9386,7 @@
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
-            <iKingAttitudeChange>0</iKingAttitudeChange>
+            <iKingAttitudeChange>5</iKingAttitudeChange>
             <iCityDefense>0</iCityDefense>
             <iLandPriceDiscount>0</iLandPriceDiscount>
             <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
@@ -9404,7 +9404,12 @@
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
-            <CityExtraYields/>
+            <CityExtraYields>
+                <CityExtraYield>
+                    <YieldType>YIELD_CULTURE</YieldType>
+                    <iYield>2</iYield>
+                </CityExtraYield>
+            </CityExtraYields>
             <ExtraYieldThresholds/>
             <ProfessionEquipmentModifiers/>
             <FreePromotions>
