@@ -33,7 +33,7 @@ bool CvRandom::isSorenRand() const
 {
 	// avoid crashing during init
 	// also don't log random stuff, which won't cause desyncs
-	if (!m_bSynced || !GC.IsGraphicsInitialized() || gDLL->isGameInitializing())
+	if (!GC.IsGraphicsInitialized() || gDLL->isGameInitializing() || !m_bSynced)
 	{
 		return false;
 	}
@@ -177,6 +177,7 @@ void CvRandom::reset(unsigned long ulSeed)
 	uninit();
 
 	m_ulRandomSeed = ulSeed;
+	m_bSynced = false;
 
 	/// random network fix - start - Nightinggale
 	std::srand(m_ulRandomSeed);
@@ -327,6 +328,7 @@ void CvRandom::shuffleSequence(std::vector<int>& aNumbers, char const* pszLog)
 void CvRandom::reseed(unsigned long ulNewValue)
 {
 	m_ulRandomSeed = ulNewValue;
+	m_bSynced = false;
 	/// random network fix - start - Nightinggale
 	std::srand(m_ulRandomSeed);
 	/// random network fix - end - Nightinggale
