@@ -64,7 +64,7 @@
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_TUTORIAL_END_TUTORIAL</Type>
-			<Description>TXT_KEY_EVENT_TUTORIAL_END_TUTORIAL</Description>
+			<Description>TXT_KEY_EVENT_TUTORIAL_END_TUTORIAL_2</Description>
 			<LocalInfoText/>
 			<WorldNewsTexts/>
 			<OtherPlayerPopup/>
