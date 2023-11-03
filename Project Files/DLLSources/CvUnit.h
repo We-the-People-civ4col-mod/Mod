@@ -679,7 +679,7 @@ public:
 	bool canAcquireNegativePromotion(PromotionTypes ePromotion) const; //WTP, ray Negative Promotions - START
 	void acquireAnyNegativePromotion(); //WTP, ray Negative Promotions - START
 	void cleanseAllNegativePromotions(); //WTP, ray Negative Promotions - START
-	bool isHasNegativePromotion() const; //WTP, ray Negative Promotions - START
+	bool hasNegativePromotion() const; //WTP, ray Negative Promotions - START
 	bool testWillGetNegativePromotion() const;
 	bool canAcquirePromotionAny() const;
 	bool isPromotionValid(PromotionTypes ePromotion) const;

@@ -6706,7 +6706,7 @@ bool CvUnit::canHeal(const CvPlot* pPlot) const
 	//WTP, ray Negative Promotions - START
 	//we allow to heal also if Health is perfect if a negative Promotion exists
 	//if (!isHurt())
-	if (!isHurt() && !isHasNegativePromotion())
+	if (!isHurt() && !hasNegativePromotion())
 	//WTP, ray Negative Promotions - END
 	{
 		return false;
@@ -11602,7 +11602,7 @@ int CvUnit::getExtraMoves() const
 void CvUnit::changeExtraMoves(int iChange)
 {
 	m_iExtraMoves += iChange;
-	FAssert(getExtraMoves() >= 0);
+	FAssert(getExtraMoves() >= 0 || hasNegativePromotion());
 }
 
 
@@ -13461,7 +13461,7 @@ void CvUnit::cleanseAllNegativePromotions()
 	return;
 }
 
-bool CvUnit::isHasNegativePromotion() const
+bool CvUnit::hasNegativePromotion() const
 {
 	bool bHasNegativePromotion = false;
 	for (int iI = 0; iI < GC.getNumPromotionInfos(); ++iI)
