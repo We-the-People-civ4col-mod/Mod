@@ -1390,6 +1390,52 @@ void CyXMLEditor::setActiveFile(int iIndex)
 			m_pFileSpecificInfo = m_pFileSpecificInfo->FirstChildElement(m_szFiles[iIndex]->getTag());	
 		}
 
+		m_pFileInfoRoot = m_Info->FirstChildElement(m_szFiles[iIndex]->getTag());
+		if (m_pFileInfoRoot == NULL)
+		{
+			// file not already mentioned in xml
+			// add a new root for the file and insert it to keep files alphabetically
+			// having files stored alphabetically reduces the risk of git conflicts
+
+			const TCHAR* name = m_szFiles[iIndex]->getTag();
+			m_pFileInfoRoot = m_Info->NewElement(name);
+
+			tinyxml2::XMLElement* loopElement = m_Info->FirstChildElement("Tags");
+			if (loopElement != NULL)
+			{
+				loopElement = loopElement->NextSiblingElement();
+			}
+			else
+			{
+				loopElement = m_Info->FirstChildElement();
+			}
+
+			while (true)
+			{
+				if (loopElement == NULL)
+				{
+					m_Info->InsertEndChild(m_pFileInfoRoot);
+					break;
+				}
+				if (strcmp(name, loopElement->Name()) < 0)
+				{
+					tinyxml2::XMLElement* prevElement = loopElement->PreviousSiblingElement();
+					if (prevElement != NULL)
+					{
+						m_Info->InsertAfterChild(prevElement, m_pFileInfoRoot);
+					}
+					else
+					{
+						m_Info->InsertFirstChild(m_pFileInfoRoot);
+					}
+					break;
+				}
+				loopElement = loopElement->NextSiblingElement();
+			}
+
+			writeFile(true);
+		}
+
 		// update the cache file to tell which file to start loading on next startup
 		writeActiveFile();
 	}
@@ -2267,6 +2313,7 @@ CyXMLObject::CyXMLObject()
 	: m_pXML(NULL)
 	, m_pSchema(NULL)
 	, m_pSchemaParent(NULL)
+	, m_pInfo(NULL)
 	, m_pXMLparent(NULL)
 {
 }
@@ -2277,8 +2324,34 @@ CyXMLObject::CyXMLObject(XMLElement *pXML, CyXMLObject *pXMLparent, XMLElement *
 	, m_pSchema(pSchema)
 	, m_pSchemaParent(pSchemaParent)
 	, m_pXMLparent(pXMLparent)
+	, m_pInfo(NULL)
 	, m_pEditor(pEditor)
 {
+	if (pXMLparent == NULL) // || pXMLparent->m_pXMLparent == NULL)
+	{
+		m_pInfo = pEditor->getInfoRoot();
+		return;
+	}
+	if (pXMLparent->m_pXMLparent == NULL && strcmp(getName(), pEditor->getInfoRoot()->Name()) == 0)
+	{
+		m_pInfo = pEditor->getInfoRoot();
+		return;
+	}
+
+	tinyxml2::XMLElement* parentElement = pXMLparent != NULL ?
+		parentElement = pXMLparent->getInfoElement()
+		: pEditor->getInfoRoot();
+
+	m_pInfo = parentElement->FirstChildElement(getName());
+
+	if (m_pInfo != NULL)
+	{
+		return;
+	}
+	m_pInfo = pEditor->getInfoRoot()->GetDocument()->NewElement(getName());
+
+	parentElement->InsertEndChild(m_pInfo);
+	pEditor->writeFile(true);
 }
 
 XMLElement* CyXMLObject::FirstChildElement(const TCHAR *szName) const
@@ -2610,11 +2683,6 @@ const TCHAR* CyXMLObject::getHelp() const
 
 const TCHAR* CyXMLObject::getInfoClass() const
 {
-	if (isText())
-	{
-		return "TxtKey";
-	}
-
 	return m_pEditor->getInfo(getName(), "Class");
 }
 
@@ -2986,6 +3054,11 @@ XMLDocument* CyXMLObject::getDocument() const
 		return m_pXML->GetDocument();
 	}
 	return m_pXMLparent->getDocument();
+}
+
+tinyxml2::XMLElement* CyXMLObject::getInfoElement() const
+{
+	return m_pInfo;
 }
 
 CyXMLCommandItem::CyXMLCommandItem()

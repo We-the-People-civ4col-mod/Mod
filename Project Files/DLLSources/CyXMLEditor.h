@@ -138,6 +138,8 @@ public:
 
 	tinyxml2::XMLDocument* getDocument() const {return m_Document;}
 
+	tinyxml2::XMLElement* getInfoRoot() { return m_pFileInfoRoot; }
+
 	xmlFileContainer* getFileContainer(const TCHAR* szTag) const;
 	xmlFileContainer* getCurrentFileContainer() const;
 
@@ -264,6 +266,7 @@ private:
 	int m_iActiveFile;
 	int m_iActiveModFile;
 	tinyxml2::XMLElement  *m_pFileSpecificInfo;
+	tinyxml2::XMLElement  *m_pFileInfoRoot;
 	tinyxml2::XMLDocument *m_Document;
 	tinyxml2::XMLDocument *m_GlobalTypes;
 	tinyxml2::XMLDocument *m_Schema;
@@ -321,6 +324,8 @@ public:
 
 	// get the document to add elements to
 	tinyxml2::XMLDocument* getDocument() const;
+
+	tinyxml2::XMLElement* getInfoElement() const;
 
 	//
 	// python exposed
@@ -473,6 +478,7 @@ private:
 	CyXMLObject          *m_pXMLparent;
 	tinyxml2::XMLElement *m_pSchema;
 	tinyxml2::XMLElement *m_pSchemaParent;
+	tinyxml2::XMLElement *m_pInfo;
 	CyXMLEditor          *m_pEditor;
 };
 
