@@ -65,6 +65,7 @@ public:
 	void write(CvSavegameWriter writer);
 
 	void AI_resetSavedData();
+	bool canPotentiallyTransport(const CvUnitInfo& kUnitInfo) const;
 
 	enum UnloadMode
 	{
