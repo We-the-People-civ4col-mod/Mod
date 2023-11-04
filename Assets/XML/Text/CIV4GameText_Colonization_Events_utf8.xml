@@ -10142,4 +10142,29 @@
         <German>Der Priester ist gerade von seiner Pilgerreise zurück und bereit wieder in die Wildnis zu ziehen.</German>
         <Russian>[COLOR_SELECTED_TEXT]Священник вернулся из паломничества[COLOR_REVERT] и готов нести Слово Божье дикарям.</Russian>
     </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_SUPERSTITIOUS_PIRATES</Tag>
+        <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a pirate crew has heard the ghost of their dead captain.</English>
+        <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hat eine Piratencrew den Geist ihres toten Kapitäns gehört.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SUPERSTITIOUS_PIRATES</Tag>
+        <English>Milord, in the port of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] one of our privateers is anchored. The captain recently broke his neck while drunk in the aft cabin. Now the crew hears his ghost shouting incessantly at night "Fetch aft the rum, Darby!" The crew now refuses to enter the cabin as well as to leave the port. What are you going to do?</English>
+         <German>Milord, im Hafen von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] liegt eines unserer Kaperschiffe vor Anker. Der Kapitän hat sich jüngst in der Achterkajüte im Suff das Genick gebrochen. Nun hört die Crew bei Nacht dessen Geist unablässig rufen "Bring den Rum, Darby!" Die Crew weigert sich, die Kajüte zu betreten oder auszulaufen. Was wollt Ihr unternehmen?</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SUPERSTITIOUS_PIRATES_1</Tag>
+        <English>Superstitious pirates, where is there such a thing! With all the dead surrounding them, you'd think they'd be more hardened. Let the ship rot on the pier. Nobody has any respect or fear for a crew like that anyway.</English>
+         <German>Abergläubische Piraten, wo gibt es denn sowas! Bei all den Toten, die sie umgeben, sollte man doch meinen, dass sie hartgesottener sind. Soll das Schiff doch an der Pier vermodern. Vor so einer Crew hat sowieso keiner mehr Respekt oder gar Angst.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SUPERSTITIOUS_PIRATES_2</Tag>
+        <English>Oh yes, that really is a problem. Let's give the crew the rum the captain demands. After everyone's had some refreshments, the ship should be ready for action again, don't you think?</English>
+        <German>Oh ja, das ist wirklich ein Problem. Geben wir der Crew den Rum, nach dem der Kapitän verlangt. Nachdem sich alle gestärkt haben, sollte das Schiff wieder einsatzbereit sein, meint Ihr nicht auch?</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SUPERSTITIOUS_PIRATES_3</Tag>
+        <English>Get a priest immediately so that he can perform an exorcism and prevent the captain's ghost from haunting the harbor district! To be on the safe side, we should also burn the ship. The crew can stay ashore for the time being until we have found or built a new ship for them.</English>
+        <German>Holt sofort einen Priester, damit er einen Exorzismus vornehmen kann und der Geist des Kapitäns nicht im Hafenviertel weiterspukt! Sicherheitshalber sollten wir das Schiff aber auch noch verbrennen. Die Crew kann erst einmal an Land bleiben, bis wir ein neues Schiff für sie gefunden oder gebaut haben.</German>
+    </TEXT>
 </Civ4GameText>

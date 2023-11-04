@@ -1679,7 +1679,65 @@ def getHelpPirates4(argsList):
 	if event.getGenericParameter(1) <> 0 :
 		szHelp = localText.getText("TXT_KEY_EVENT_YIELD_LOOSE", (quantity,  gc.getYieldInfo(iYield).getChar(), city.getNameKey()))
 	return szHelp
+
+######## Superstitious Pirates Event ###########
+
+def canTriggerSupersitiousPirates(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	if player.isNone() :
+		return false
+	if not player.isPlayable():
+		return false
+	if city.isNone():
+		return false
+	city = player.getCity(kTriggeredData.iCityId)
+	unit = player.getUnit(kTriggeredData.iUnitId)
+	if city.getX() == unit.getX() and city.getY() == unit.getY():
+		return true
+	return false
+	# Read Parameter 1 from the first event and check if enough yield is stored in city
+	eEvent1 = gc.getInfoTypeForString("EVENT_SUPERSTITIOUS_PIRATES_2")
+	event1 = gc.getEventInfo(eEvent1)
+	iYield = gc.getInfoTypeForString("YIELD_RUM")
+	quantity = event1.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity*2 :
+		return false
+	return true
+
+def applySupersitiousPirates2(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	iYield = gc.getInfoTypeForString("YIELD_RUM")
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity:
+		return
+	city.changeYieldStored(iYield, quantity)
+
+def getHelpSupersitiousPirates2(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	iYield = gc.getInfoTypeForString("YIELD_RUM")
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
 	
+	szHelp = ""
+	if event.getGenericParameter(1) <> 0 :
+		szHelp = localText.getText("TXT_KEY_EVENT_YIELD_LOOSE", (quantity,  gc.getYieldInfo(iYield).getChar(), city.getNameKey()))
+	return szHelp
+
 ####### TAC Events - General Functions########
 
 ######## Units Funktionen ###########
@@ -2989,6 +3047,11 @@ def canTriggerHorseGift(argsList):
 		return false
 	if city.isNone():
 		return false
+	city = player.getCity(kTriggeredData.iCityId)
+	unit = player.getUnit(kTriggeredData.iUnitId)
+	if city.getX() == unit.getX() and city.getY() == unit.getY():
+		return true
+	return false
 	# Read Parameter 1 from the first event and check if enough yield is stored in city
 	eEvent1 = gc.getInfoTypeForString("EVENT_SEASONED_TRADER_MEETING_1")
 	event1 = gc.getEventInfo(eEvent1)
