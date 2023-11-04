@@ -98,17 +98,17 @@ class LineCopier:
             content = self.current_vanilla_file.readline()
             self.current_vanilla_line += 1
 
-        #print content
-        #if u"<TEXT>" in content:
-        #    print "yes!"
 
-        #assert u"<TEXT>" in content, "we should get a <TEXT> start" #rthis one fails and yet the condition abive doesn't
+        assert u"<TEXT>" in content, "we should get a <TEXT> start"
+
         while self.current_vanilla_line < end :
             self.dest_file.write(content)
             content = self.current_vanilla_file.readline()
             self.current_vanilla_line += 1
 
-        # assert u"</TEXT>" in content, "we should get a </TEXT> end" #this one fails too. WHY?
+
+        assert  u"</TEXT>" in content, "we should get a </TEXT> end"
+
         self.dest_file.write(content)
         self.dest_file.flush()
 
