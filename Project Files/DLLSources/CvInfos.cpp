@@ -2887,7 +2887,7 @@ m_bGatherBoat(false),
 // < JAnimals Mod Start >
 m_bAnimal(false),
 // < JAnimals Mod End >
-m_iLeaderPromotion(NO_PROMOTION),
+m_eLeaderPromotion(NO_PROMOTION),
 /// Move Into Peak - start - Nightinggale
 m_bMoveIntoPeak(false),
 /// Move Into Peak - end - Nightinggale
@@ -3599,9 +3599,9 @@ bool CvUnitInfo::isPrereqOrBuilding(int i) const
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_abPrereqOrBuilding ? m_abPrereqOrBuilding[i] : false;
 }
-int CvUnitInfo::getLeaderPromotion() const
+PromotionTypes CvUnitInfo::getLeaderPromotion() const
 {
-	return m_iLeaderPromotion;
+	return m_eLeaderPromotion;
 }
 int CvUnitInfo::getLeaderExperience() const
 {
@@ -3919,7 +3919,7 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	SAFE_DELETE_ARRAY(m_abPrereqOrBuilding);
 	m_abPrereqOrBuilding = new bool[GC.getNumBuildingClassInfos()];
 	stream->Read(GC.getNumBuildingClassInfos(), m_abPrereqOrBuilding);
-	stream->Read(&m_iLeaderPromotion);
+	//stream->Read(&m_iLeaderPromotion);
 	stream->Read(&m_iLeaderExperience);
 	SAFE_DELETE_ARRAY(m_paszUnitNames);
 	m_paszUnitNames = new CvString[m_iNumUnitNames];
@@ -4090,7 +4090,7 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(GC.getNumProfessionInfos(), m_abProfessionsNotAllowed);
 	///TK end
 	stream->Write(GC.getNumBuildingClassInfos(), m_abPrereqOrBuilding);
-	stream->Write(m_iLeaderPromotion);
+	//stream->Write(m_iLeaderPromotion);
 	stream->Write(m_iLeaderExperience);
 	stream->WriteString(m_iNumUnitNames, m_paszUnitNames);
 	stream->WriteString(m_szFormationType);
@@ -4324,8 +4324,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	///TK Viscos Mod
 	pXML->SetVariableListTagPair(&m_abProfessionsNotAllowed, "ProfessionsNotAllowed", GC.getNumProfessionInfos(), false);
 	///TK end
-	pXML->GetChildXmlValByName(szTextVal, "LeaderPromotion");
-	m_iLeaderPromotion = pXML->FindInInfoClass(szTextVal);
+	pXML->GetEnum(getType(), m_eLeaderPromotion, "LeaderPromotion", false);
 	pXML->GetChildXmlValByName(&m_iLeaderExperience, "iLeaderExperience");
 	updateArtDefineButton();
 

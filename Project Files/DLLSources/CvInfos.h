@@ -860,7 +860,7 @@ public:
 	bool getFreePromotions(int i) const;
 	bool getProfessionsNotAllowed(int i) const;  	///TK Viscos Mod
 	bool isPrereqOrBuilding(int i) const;
-	int getLeaderPromotion() const;
+	PromotionTypes getLeaderPromotion() const;
 	int getLeaderExperience() const;
 
 	//Androrc UnitArtStyles
@@ -1002,7 +1002,7 @@ protected:
 	// < JAnimals Mod Start >
 	bool m_bAnimal;
 	// < JAnimals Mod End >
-	int m_iLeaderPromotion;
+	PromotionTypes m_eLeaderPromotion;
 
 	/// Move Into Peak - start - Nightinggale
 	bool m_bMoveIntoPeak;

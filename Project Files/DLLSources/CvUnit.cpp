@@ -7918,12 +7918,11 @@ bool CvUnit::canPromote(PromotionTypes ePromotion, int iLeaderUnitId) const
 		const UnitTypes eLieutenantUnit = kPlayer.getUnitType(UNITCLASS_BRAVE_LIEUTENANT);
 		const UnitTypes eCaptainUnit = kPlayer.getUnitType(UNITCLASS_CAPABLE_CAPTAIN);
 
-		const PromotionTypes eGeneralPromotion    = (PromotionTypes)GC.getUnitInfo(eGeneralUnit).getLeaderPromotion();
-		const PromotionTypes eAdmiralPromotion    = (PromotionTypes)GC.getUnitInfo(eAdmiralUnit).getLeaderPromotion();
-		const PromotionTypes eLieutenantPromotion = (PromotionTypes)GC.getUnitInfo(eLieutenantUnit).getLeaderPromotion();
-		const PromotionTypes eCaptainPromotion    = (PromotionTypes)GC.getUnitInfo(eCaptainUnit).getLeaderPromotion();
-
-		if (isHasPromotion(eGeneralPromotion) || isHasPromotion(eAdmiralPromotion) || isHasPromotion(eLieutenantPromotion) || isHasPromotion(eCaptainPromotion))
+		if (   isHasPromotion(GC.getUnitInfo(eGeneralUnit)   .getLeaderPromotion()) 
+			|| isHasPromotion(GC.getUnitInfo(eAdmiralUnit)   .getLeaderPromotion())
+			|| isHasPromotion(GC.getUnitInfo(eLieutenantUnit).getLeaderPromotion())
+			|| isHasPromotion(GC.getUnitInfo(eCaptainUnit)   .getLeaderPromotion())
+			)
 		{
 			bAlradyHasLeader = true;
 		}
@@ -8039,7 +8038,7 @@ bool CvUnit::lead(int iUnitId)
 		return false;
 	}
 
-	PromotionTypes eLeaderPromotion = (PromotionTypes)m_pUnitInfo->getLeaderPromotion();
+	PromotionTypes eLeaderPromotion = m_pUnitInfo->getLeaderPromotion();
 
 	if (-1 == iUnitId)
 	{
@@ -8101,7 +8100,7 @@ int CvUnit::canLead(const CvPlot* pPlot, int iUnitId) const
 			if (pUnit != NULL && pUnit != this &&
 				((kUnitInfo.getDomainType() == DOMAIN_LAND && pUnit->canAttack()) || (kUnitInfo.getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20)))
 			{
-				if (pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canPromote((PromotionTypes)kUnitInfo.getLeaderPromotion(), getID()))
+				if (pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canPromote(kUnitInfo.getLeaderPromotion(), getID()))
 				{
 					++iNumUnits;
 				}
@@ -8118,7 +8117,7 @@ int CvUnit::canLead(const CvPlot* pPlot, int iUnitId) const
 		if (pUnit != NULL && pUnit != this &&
 			((kUnitInfo.getDomainType() == DOMAIN_LAND && pUnit->canAttack()) || (kUnitInfo.getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20)))
 		{
-			if (pUnit->canPromote((PromotionTypes)kUnitInfo.getLeaderPromotion(), getID()))
+			if (pUnit->canPromote(kUnitInfo.getLeaderPromotion(), getID()))
 			{
 				iNumUnits = 1;
 			}

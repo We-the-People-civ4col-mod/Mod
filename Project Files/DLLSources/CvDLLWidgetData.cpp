@@ -1999,7 +1999,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 				{
 					szBuffer.append(NEWLINE);
 					szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_WHEN_LEADING"));
-					GAMETEXT.parsePromotionHelp(szBuffer, (PromotionTypes)pHeadSelectedUnit->getUnitInfo().getLeaderPromotion(), L"\n   ");
+					GAMETEXT.parsePromotionHelp(szBuffer, pHeadSelectedUnit->getUnitInfo().getLeaderPromotion(), L"\n   ");
 				}
 			}
 			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getMissionType() == MISSION_BUILD)
