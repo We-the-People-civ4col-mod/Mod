@@ -502,6 +502,9 @@
     <ClCompile Include="DLLSources\CvPythonCaller.cpp">
       <Filter>Python\CvPythonCaller</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\CyXMLObject.cpp">
+      <Filter>XML Editor</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
@@ -959,6 +962,9 @@
     </ClInclude>
     <ClInclude Include="DLLSources\CvPythonCaller.h">
       <Filter>Python\CvPythonCaller</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyXMLObject.h">
+      <Filter>XML Editor</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -11,6 +11,7 @@
 
 /// xml Editor - start - Nightinggale
 #include "CyXMLEditor.h"
+#include "CyXMLObject.h"
 //void CyXMLEditorPythonInterfaceTextString(python::class_<CyXMLTextString>& x);
 void CyXMLEditorPythonInterface1(python::class_<CyXMLEditor>& x);
 void CyXMLEditorPythonObjectInterface1(python::class_<CyXMLObject>& x);

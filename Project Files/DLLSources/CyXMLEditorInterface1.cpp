@@ -1,5 +1,6 @@
 #include "CvGameCoreDLL.h"
 #include "CyXMLEditor.h"
+#include "CyXMLObject.h"
 
 #include <boost/python/class.hpp>
 #include <boost/python/manage_new_object.hpp>
