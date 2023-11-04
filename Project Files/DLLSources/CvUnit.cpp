@@ -16321,13 +16321,13 @@ void CvUnit::createTreasures(int overallAmount, int maxTreasureGold)
 
 	int restAmount = overallAmount - (treasureCount_MaxAmount * maxTreasureGold);
 
-	UnitClassTypes eUnitClass = (UnitClassTypes)GC.getDefineINT("TREASURE_UNITCLASS");
+	const UnitClassTypes eUnitClass = UNITCLASS_TREASURE;
 	if (eUnitClass == NO_UNITCLASS)
 	{
 		FAssertMsg(eUnitClass != NO_UNITCLASS, "Failed to find treasure unitclass while merging");
 		return; //Something went wrong
 	}
-	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass);
+	const UnitTypes eUnit = GET_PLAYER(getOwnerINLINE()).getUnitType(eUnitClass);
 
 	if (eUnit == NO_UNIT)
 	{
@@ -16390,7 +16390,7 @@ void CvUnit::useProductionSupplies()
 		return;
 	}
 
-	iProductionSuppliesToBeUsed *= GC.getDefineINT("UNIT_PRODUCTION_PERCENT");
+	iProductionSuppliesToBeUsed *= GLOBAL_DEFINE_UNIT_PRODUCTION_PERCENT;
 	iProductionSuppliesToBeUsed /= 100;
 
 	iProductionSuppliesToBeUsed *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
@@ -16590,8 +16590,7 @@ bool CvUnit::isPrisonerOrSlave() const
 {
 	const UnitClassTypes unitClassIntToBeChecked = m_pUnitInfo->getUnitClassType();
 
-	// TODO: optimize this one to avoid using getDefineINT
-	if (unitClassIntToBeChecked == GC.getDefineINT("UNITCLASS_PRISONER") || unitClassIntToBeChecked == GC.getDefineINT("UNITCLASS_NATIVE_SLAVE") || unitClassIntToBeChecked == GC.getDefineINT("UNITCLASS_AFRICAN_SLAVE"))
+	if (unitClassIntToBeChecked == UNITCLASS_PRISONER_OF_WAR || unitClassIntToBeChecked == UNITCLASS_NATIVE_SLAVE || unitClassIntToBeChecked == UNITCLASS_AFRICAN_SLAVE)
 	{
 		return true;
 	}

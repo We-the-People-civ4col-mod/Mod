@@ -650,7 +650,7 @@ int CvPlayer::startingPlotRange() const
 //	iRange = (GC.getMapINLINE().maxStepDistance() + 40);
 	// PatchMod: Spread out start locs END
 
-	iRange *= GC.getDefineINT("STARTING_DISTANCE_PERCENT");
+	iRange *= GLOBAL_DEFINE_STARTING_DISTANCE_PERCENT;
 	iRange /= 100;
 
 	iRange *= (GC.getMap().getLandPlots() / (GC.getWorldInfo(GC.getMap().getWorldSize()).getTargetNumCities() * GC.getGameINLINE().countCivPlayersAlive()));
@@ -665,7 +665,7 @@ int CvPlayer::startingPlotRange() const
 		iRange /= 100;
 	}
 
-	return std::max(iRange, GC.getDefineINT("MIN_CIV_STARTING_DISTANCE"));
+	return std::max(iRange, GLOBAL_DEFINE_MIN_CIV_STARTING_DISTANCE);
 }
 
 
@@ -687,12 +687,12 @@ int CvPlayer::startingPlotDistanceFactor(CvPlot* pPlot, PlayerTypes ePlayer, int
 		{
 			if (GET_PLAYER(ePlayer).getTeam() == getTeam())
 			{
-				iRange *= GC.getDefineINT("OWN_TEAM_STARTING_MODIFIER");
+				iRange *= GLOBAL_DEFINE_OWN_TEAM_STARTING_MODIFIER;
 				iRange /= 100;
 			}
 			else
 			{
-				iRange *= GC.getDefineINT("RIVAL_TEAM_STARTING_MODIFIER");
+				iRange *= GLOBAL_DEFINE_RIVAL_TEAM_STARTING_MODIFIER;
 				iRange /= 100;
 			}
 		}
@@ -2591,7 +2591,7 @@ void CvPlayer::doTurnUnits()
 
 					/** NBMOD TAX**/
 
-					int iNewTaxRate = NBMOD_GetNewTaxRate(std::min(99, iOldTaxRate + 1 + GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("TAX_RATE_MAX_INCREASE"), "Tax Rate Increase for ship")));
+					int iNewTaxRate = NBMOD_GetNewTaxRate(std::min(99, iOldTaxRate + 1 + GC.getGameINLINE().getSorenRandNum(GLOBAL_DEFINE_TAX_RATE_MAX_INCREASE, "Tax Rate Increase for ship")));
 					int iChange = iNewTaxRate - iOldTaxRate;
 
 					if (iChange > 0)

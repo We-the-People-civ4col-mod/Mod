@@ -833,8 +833,8 @@ int CvUnitAI::AI_attackOdds(const CvPlot* pPlot, bool bPotentialEnemy) const
 
 	iStrengthFactor = ((iOurFirepower + iTheirFirepower + 1) / 2);
 
-	iDamageToUs = std::max(1,((GC.getDefineINT("COMBAT_DAMAGE") * (iTheirFirepower + iStrengthFactor)) / (iOurFirepower + iStrengthFactor)));
-	iDamageToThem = std::max(1,((GC.getDefineINT("COMBAT_DAMAGE") * (iOurFirepower + iStrengthFactor)) / (iTheirFirepower + iStrengthFactor)));
+	iDamageToUs = std::max(1,((GLOBAL_DEFINE_COMBAT_DAMAGE * (iTheirFirepower + iStrengthFactor)) / (iOurFirepower + iStrengthFactor)));
+	iDamageToThem = std::max(1,((GLOBAL_DEFINE_COMBAT_DAMAGE * (iOurFirepower + iStrengthFactor)) / (iTheirFirepower + iStrengthFactor)));
 
 	iNeededRoundsUs = (std::max(0, pDefender->currHitPoints()) + iDamageToThem - 1 ) / iDamageToThem;
 	iNeededRoundsThem = (std::max(0, currHitPoints()) + iDamageToUs - 1 ) / iDamageToUs;
@@ -874,6 +874,7 @@ bool CvUnitAI::AI_bestCityBuild(CvCity* pCity, CvPlot** ppBestPlot, BuildTypes* 
 	BuildTypes eBestBuild = NO_BUILD;
 	CvPlot* pBestPlot = NULL;
 
+	const CvPlayerAI& kPlayer = GET_PLAYER(getOwnerINLINE());
 
 	for (int iPass = 0; iPass < 2; iPass++)
 	{
@@ -887,7 +888,7 @@ bool CvUnitAI::AI_bestCityBuild(CvCity* pCity, CvPlot** ppBestPlot, BuildTypes* 
 				{
 					if (pLoopPlot != pIgnorePlot)
 					{
-						if ((pLoopPlot->getImprovementType() == NO_IMPROVEMENT) || !(GET_PLAYER(getOwnerINLINE()).isOption(PLAYEROPTION_SAFE_AUTOMATION) && !(pLoopPlot->getImprovementType() == (GC.getDefineINT("RUINS_IMPROVEMENT")))))
+						if (pLoopPlot->getImprovementType() == NO_IMPROVEMENT || !kPlayer.isOption(PLAYEROPTION_SAFE_AUTOMATION) && !GC.getImprovementInfo(pLoopPlot->getImprovementType()).isAINoRemove())
 						{
 							iValue = pCity->AI_getBestBuildValue(iI);
 
@@ -3155,19 +3156,18 @@ void CvUnitAI::AI_attackCityMove()
 		}
 
 		//koma13
-		int iStackOfDoomLimit = GC.getDefineINT("AI_STACK_OF_DOOM_LIMIT");
 		if ((bombardRate() > 0) && noDefensiveBonus())
 		{
 			// BBAI Notes: Add this stack lead by bombard unit to stack probably not lead by a bombard unit
 			// BBAI TODO: Some sense of minimum stack size?  Can have big stack moving 10 turns to merge with tiny stacks
-			if (AI_group(UNITAI_OFFENSIVE, -1, iStackOfDoomLimit, -1, bIgnoreFaster, true, true, /*iMaxPath*/ 10, /*bAllowRegrouping*/ true))
+			if (AI_group(UNITAI_OFFENSIVE, -1, GLOBAL_DEFINE_AI_STACK_OF_DOOM_LIMIT, -1, bIgnoreFaster, true, true, /*iMaxPath*/ 10, /*bAllowRegrouping*/ true))
 			{
 				return;
 			}
 		}
 		else
 		{
-			if (AI_group(UNITAI_OFFENSIVE, -1, iStackOfDoomLimit, -1, bIgnoreFaster, true, true, /*iMaxPath*/ 10, /*bAllowRegrouping*/ false))
+			if (AI_group(UNITAI_OFFENSIVE, -1, GLOBAL_DEFINE_AI_STACK_OF_DOOM_LIMIT, -1, bIgnoreFaster, true, true, /*iMaxPath*/ 10, /*bAllowRegrouping*/ false))
 			{
 				return;
 			}
@@ -5058,9 +5058,11 @@ bool CvUnitAI::AI_joinGreatAdmiral()
 	CvPlot* plot;
 	int iLoop;
 
-	for (pLoopUnit = GET_PLAYER(getOwnerINLINE()).firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = GET_PLAYER(getOwnerINLINE()).nextUnit(&iLoop))
+	CvPlayerAI& kPlayer = GET_PLAYER(getOwnerINLINE());
+
+	for (pLoopUnit = kPlayer.firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = kPlayer.nextUnit(&iLoop))
 	{
-		if (pLoopUnit->getUnitType() == (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL")) || pLoopUnit->getUnitType() == (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN")))
+		if (pLoopUnit->getUnitType() == kPlayer.getUnitType(UNITCLASS_GREAT_ADMIRAL) || pLoopUnit->getUnitType() == kPlayer.getUnitType(UNITCLASS_CAPABLE_CAPTAIN))
 		{
 			plot = pLoopUnit->plot();
 			if (plot != NULL && plot->isCity(true))
@@ -6614,7 +6616,7 @@ bool CvUnitAI::AI_europe()
 
 		if (iPotentialColonistsToHurry > 0)
 		{
-			kOwner.AI_hurryBestDockUnits(std::min(GC.getDefineINT("DOCKS_NEXT_UNITS"), iPotentialColonistsToHurry));
+			kOwner.AI_hurryBestDockUnits(std::min(GLOBAL_DEFINE_DOCKS_NEXT_UNITS, iPotentialColonistsToHurry));
 		}
 	}
 	// Erik: Pick up the most valuable units first (e.g. statesmen)
@@ -12784,13 +12786,14 @@ bool CvUnitAI::AI_exploreRessource()
 				if (pLoopPlot->isRevealed(getTeam(), false) && !pLoopPlot->isVisibleEnemyDefender(this))
 				{
 					BonusTypes eBonus = pLoopPlot->getBonusType();
+					// TODO: change this to ask XML for a list of bonuses the unit can harvest
 					if (isWhalingBoat())
 					{
-						if ((pLoopPlot->waterArea()->getNumBonuses((BonusTypes)GC.getDefineINT("BONUS_WHALE")) + pLoopPlot->waterArea()->getNumBonuses((BonusTypes)GC.getDefineINT("BONUS_WHALE2"))) == 0)
+						if ((pLoopPlot->waterArea()->getNumBonuses(BONUS_WHALE) + pLoopPlot->waterArea()->getNumBonuses(BONUS_HUMPBACK_WHALE)) == 0)
 						{
 							iPlotValue = 100;
 						}
-						else if (eBonus == (BonusTypes)GC.getDefineINT("BONUS_WHALE") || eBonus == (BonusTypes)GC.getDefineINT("BONUS_WHALE2"))
+						else if (eBonus == BONUS_WHALE || eBonus == BONUS_HUMPBACK_WHALE)
 						{
 							iPlotValue += 300;
 						}
@@ -12798,11 +12801,11 @@ bool CvUnitAI::AI_exploreRessource()
 					// R&R, ray, High Sea Fishing - START
 					else if (isFishingBoat())
 					{
-						if ((pLoopPlot->waterArea()->getNumBonuses((BonusTypes)GC.getDefineINT("BONUS_HIGH_SEA_FISH")) + pLoopPlot->waterArea()->getNumBonuses((BonusTypes)GC.getDefineINT("BONUS_HIGH_SEA_FISH2")) + pLoopPlot->waterArea()->getNumBonuses((BonusTypes)GC.getDefineINT("BONUS_HIGH_SEA_FISH3")) + pLoopPlot->waterArea()->getNumBonuses((BonusTypes)GC.getDefineINT("BONUS_HIGH_SEA_FISH4"))) == 0)
+						if ((pLoopPlot->waterArea()->getNumBonuses(BONUS_HIGH_SEA_FISH) + pLoopPlot->waterArea()->getNumBonuses(BONUS_HIGH_SEA_FISH2) + pLoopPlot->waterArea()->getNumBonuses(BONUS_HIGH_SEA_FISH3) + pLoopPlot->waterArea()->getNumBonuses(BONUS_HIGH_SEA_FISH4)) == 0)
 						{
 							iPlotValue = 100;
 						}
-						else if (eBonus == (BonusTypes)GC.getDefineINT("BONUS_HIGH_SEA_FISH") || eBonus == (BonusTypes)GC.getDefineINT("BONUS_HIGH_SEA_FISH2") || eBonus == (BonusTypes)GC.getDefineINT("BONUS_HIGH_SEA_FISH3") || eBonus == (BonusTypes)GC.getDefineINT("BONUS_HIGH_SEA_FISH4"))
+						else if (eBonus == BONUS_HIGH_SEA_FISH || eBonus == BONUS_HIGH_SEA_FISH2 || eBonus == BONUS_HIGH_SEA_FISH3 || eBonus == BONUS_HIGH_SEA_FISH4)
 						{
 							iPlotValue += 300;
 						}
@@ -16652,7 +16655,7 @@ bool CvUnitAI::AI_improveLocalPlot(int iRange, CvCity* pIgnoreCity)
 										if (GET_PLAYER(getOwnerINLINE()).isOption(PLAYEROPTION_SAFE_AUTOMATION))
 										{
 											// TODO: figure out if forts should be protected here too
-											if (pLoopPlot->getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(pLoopPlot->getImprovementType()).isGoody())
+											if (pLoopPlot->getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(pLoopPlot->getImprovementType()).isAINoRemove())
 											{
 												bAllowed = false;
 											}
@@ -16969,8 +16972,8 @@ bool CvUnitAI::AI_fortTerritory(bool bCanal)
 											{
 												CvCity* pNearestCity = GC.getMap().findCity(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), getOwnerINLINE(), NO_TEAM, false);
 												if((pNearestCity == NULL) ||
-													(plotDistance(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), pNearestCity->getX_INLINE(), pNearestCity->getY_INLINE()) > GC.getDefineINT("AI_WORKER_MAX_DISTANCE_FROM_CITY_OUT_BORDERS")) ||
-													(iPathTurns > (GC.getDefineINT("AI_WORKER_MAX_DISTANCE_FROM_CITY_OUT_BORDERS") / 2)))
+													(plotDistance(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), pNearestCity->getX_INLINE(), pNearestCity->getY_INLINE()) > GLOBAL_DEFINE_AI_WORKER_MAX_DISTANCE_FROM_CITY_OUT_BORDERS) ||
+													(iPathTurns > (GLOBAL_DEFINE_AI_WORKER_MAX_DISTANCE_FROM_CITY_OUT_BORDERS / 2)))
 												{
 													iValue = 0;
 												}
@@ -18340,7 +18343,7 @@ int CvUnitAI::AI_finalOddsThreshold(CvPlot* pPlot, int iOddsThreshold)
 	{
 		if (pCity->getDefenseDamage() < ((GC.getMAX_CITY_DEFENSE_DAMAGE() * 3) / 4))
 		{
-			iFinalOddsThreshold += std::max(0, (pCity->getDefenseDamage() - pCity->getLastDefenseDamage() - (GC.getDefineINT("CITY_DEFENSE_DAMAGE_HEAL_RATE") * 2)));
+			iFinalOddsThreshold += std::max(0, (pCity->getDefenseDamage() - pCity->getLastDefenseDamage() - (GLOBAL_DEFINE_CITY_DEFENSE_DAMAGE_HEAL_RATE * 2)));
 		}
 	}
 

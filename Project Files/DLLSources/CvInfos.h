@@ -2432,6 +2432,7 @@ public:
 	bool isGoodyForSpawningHostileAnimals() const; //WTP, Unit only Goodies
 	bool isGoodyForSpawningHostileNatives() const; //WTP, Unit only Goodies
 	bool isGoodyForSpawningHostileCriminals() const; //WTP, Unit only Goodies
+	bool isAINoRemove() const;
 	bool isPermanent() const;
 	DllExport bool useLSystem() const;
 	bool isOutsideBorders() const;

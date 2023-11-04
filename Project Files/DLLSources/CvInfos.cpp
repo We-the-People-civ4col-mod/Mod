@@ -8671,6 +8671,11 @@ bool CvImprovementInfo::isGoodyForSpawningHostileCriminals() const
 {
 	return m_bGoodyForSpawningHostileCriminals;
 }
+bool CvImprovementInfo::isAINoRemove() const
+{
+	// todo: figure out if forts or other improvements should be added here, possibly by xml bool setting
+	return isGoody();
+}
 //WTP, Protected Hostile Goodies - END
 bool CvImprovementInfo::isPermanent() const
 {
