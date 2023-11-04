@@ -15250,7 +15250,7 @@ bool CvUnitAI::AI_joinAnyCity(int iMaxPath, bool bRequireJoinable)
 				ProfessionTypes eProfession;
 				int iValue = pCity->AI_unitJoinCityValue(*this, &eProfession);
 
-				const int iIncoming = kOwner.AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_FOUND, getGroup());
+				const int iIncoming = kOwner.AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_JOIN_CITY, getGroup());
 				// TAC - AI Economy- koma13 - START
 				//int iSizeGap = pCity->AI_getTargetSize() - (pCity->getPopulation() + iIncoming, 0);
 				const int iSizeGap = pCity->AI_getTargetSize() - (pCity->getPopulation() + iIncoming);
@@ -15324,13 +15324,13 @@ bool CvUnitAI::AI_joinAnyCity(int iMaxPath, bool bRequireJoinable)
 		}
 		else if ((pTransportUnit != NULL) && !(!bForceTransport && canUnload() && (pBestJoinPlot->area() == area())))
 		{
-			getGroup()->pushMission(MISSION_SKIP, -1, -1, 0, false, false, MISSIONAI_FOUND, pBestJoinPlot);
+			getGroup()->pushMission(MISSION_SKIP, -1, -1, 0, false, false, MISSIONAI_JOIN_CITY, pBestJoinPlot);
 			return true;
 		}
 		else
 		{
 			FAssert(!atPlot(pBestPlot));
-			getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), MOVE_NO_ENEMY_TERRITORY, false, false, MISSIONAI_FOUND, pBestJoinPlot);
+			getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), MOVE_NO_ENEMY_TERRITORY, false, false, MISSIONAI_JOIN_CITY, pBestJoinPlot);
 			return true;
 		}
 	}
@@ -15485,13 +15485,13 @@ bool CvUnitAI::AI_joinOptimalCity()
 		}
 		else if ((pTransportUnit != NULL) && !(!bForceTransport && canUnload() && (pBestJoinPlot->area() == area())))
 		{
-			getGroup()->pushMission(MISSION_SKIP, -1, -1, 0, false, false, MISSIONAI_FOUND, pBestJoinPlot);
+			getGroup()->pushMission(MISSION_SKIP, -1, -1, 0, false, false, MISSIONAI_JOIN_CITY, pBestJoinPlot);
 			return true;
 		}
 		else
 		{
 			FAssert(!atPlot(pBestPlot));
-			getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), MOVE_NO_ENEMY_TERRITORY, false, false, MISSIONAI_FOUND, pBestJoinPlot);
+			getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), MOVE_NO_ENEMY_TERRITORY, false, false, MISSIONAI_JOIN_CITY, pBestJoinPlot);
 			return true;
 		}
 	}
