@@ -4710,7 +4710,6 @@ void CvUnitAI::AI_transportSeaMove()
 		return;
 	}
 
-
 	if (kOwner.AI_totalUnitAIs(UNITAI_TREASURE) > 0)
 	{
 		if (AI_respondToPickup(20, UNITAI_TREASURE))
@@ -4776,7 +4775,6 @@ void CvUnitAI::AI_transportSeaMove()
 				return;
 			}
 		}
-
 
 		if (kOwner.AI_totalUnitAIs(UNITAI_TREASURE) > 0)
 		{
@@ -8948,7 +8946,7 @@ bool CvUnitAI::AI_moveTowardsDanger(int iMaxPath)
 			if (generatePath(pLoopPlot, MOVE_THROUGH_ENEMY, true, &iPathTurns, iMaxPath))
 			{
 				iDanger = kOwner.AI_getWaterDanger(pLoopPlot, iRange, true, false, true);
-				iIncoming = kOwner.AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_PIRACY, getGroup());
+				iIncoming = kOwner.AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_PIRACY_COUNTER, getGroup());
 
 				if ((iDanger > iIncoming) || ((iPathTurns < pLoopPlot->getDangerMap(getOwnerINLINE())) && (iIncoming == 0)))
 				{
@@ -8972,7 +8970,7 @@ bool CvUnitAI::AI_moveTowardsDanger(int iMaxPath)
 			pBestMissionPlot->setDangerMap(getOwnerINLINE(), 0);
 		}
 
-		getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), 0, false, false, MISSIONAI_PIRACY, pBestMissionPlot);
+		getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), 0, false, false, MISSIONAI_PIRACY_COUNTER, pBestMissionPlot);
 		return true;
 	}
 
@@ -9468,6 +9466,9 @@ bool CvUnitAI::AI_respondToPickup(int iMaxPath, UnitAITypes eUnitAI)
 			{
 				if ((eUnitAI == NO_UNITAI) || (pLoopSelectionGroup->getHeadUnit()->AI_getUnitAIType() == eUnitAI))
 				{
+					if (!pLoopSelectionGroup->getHeadUnit()->AI().canPotentiallyTransport(pLoopSelectionGroup->getHeadUnit()->getUnitInfo()))
+						continue;
+
 					int iMaxPathTurns = iMaxPath;
 					CvUnit* pHeadUnit = pLoopSelectionGroup->getHeadUnit();
 					FAssert(pHeadUnit != NULL);
@@ -9475,39 +9476,36 @@ bool CvUnitAI::AI_respondToPickup(int iMaxPath, UnitAITypes eUnitAI)
 					CvPlot* pMissionPlot = pLoopSelectionGroup->AI_getMissionAIPlot();
 					if (pMissionPlot != NULL)
 					{
+						// TODO: Need to replace the below with pathfinding 
 						if ((stepDistance(pMissionPlot->getX_INLINE(), pMissionPlot->getY_INLINE(), getX_INLINE(), getY_INLINE()) / std::max(1, baseMoves())) <= iMaxPathTurns)
 						{
+							int iPickupCandidates = 0;
 
-							bool bValid = true;
+							CvPlot* pPlot = plot();
+							CLLNode<IDInfo>* pUnitNode = pLoopSelectionGroup->headUnitNode();
 
+							int iCount = 0;
+							while (pUnitNode != NULL)
 							{
-								CvPlot* pPlot = plot();
-								CLLNode<IDInfo>* pUnitNode = pLoopSelectionGroup->headUnitNode();
+								CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+								pUnitNode = pLoopSelectionGroup->nextUnitNode(pUnitNode);
 
-								int iCount = 0;
-								while (pUnitNode != NULL)
+								if (pLoopUnit != NULL && pLoopUnit->canLoadUnit(this, plot(), false))
 								{
-									CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-									pUnitNode = pLoopSelectionGroup->nextUnitNode(pUnitNode);
-
-									if (pLoopUnit != NULL && !pLoopUnit->canLoadUnit(this, plot(), false))
-									{
-										bValid = false;
-										break;
-									}
+									iPickupCandidates++;
 								}
 							}
-
+							
 							// TAC - AI Improved Naval AI - koma13 - START
 							if ((pLoopSelectionGroup->getNumUnits() >= 3) && (cargoSpaceAvailable() < 3))
 							{
-								bValid = false;
+								iPickupCandidates = 0;
 							}
 							// TAC - AI Improved Naval AI - koma13 - END
 
 							int iBestDirectionValue = MAX_INT;
 
-							if (bValid)
+							if (iPickupCandidates > 0)
 							{
 								CvPlot* pLoopPlot = NULL;
 								int iPathTurns = 0;
@@ -9614,7 +9612,7 @@ bool CvUnitAI::AI_pickupAdjacantUnits()
 	{
 		for (int iY = -1; iY <= 1; ++iY)
 		{
-			CvPlot* pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iX, iY);
+			CvPlot* const pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iX, iY);
 			if (pLoopPlot != NULL)
 			{
 				CLLNode<IDInfo>* pUnitNode = pLoopPlot->headUnitNode();
@@ -9640,7 +9638,7 @@ bool CvUnitAI::AI_pickupAdjacantUnits()
 
 	while (!units.empty() && !isFull())
 	{
-		CvUnit* pLoopUnit = units.back();
+		CvUnit* const pLoopUnit = units.back();
 		units.pop_back();
 
 		pLoopUnit->joinGroup(NULL);
@@ -9651,7 +9649,8 @@ bool CvUnitAI::AI_pickupAdjacantUnits()
 		}
 		else
 		{
-			pLoopUnit->getGroup()->pushMission(MISSION_MOVE_TO, getX_INLINE(), getY_INLINE());
+			// TODO: Flags should probably depend on unit type that is being picked up. Using MOVE_IGNORE_DANGER to lessen danger of getting stuck
+			pLoopUnit->getGroup()->pushMission(MISSION_MOVE_TO, getX_INLINE(), getY_INLINE(), MOVE_IGNORE_DANGER, false, false, MISSIONAI_PICKUP);
 		}
 	}
 	return false;
@@ -19420,4 +19419,48 @@ void CvUnitAI::AI_unloadUnits(Port port)
 			kOwner.unloadUnitToAfrica(apUnits[i]);
 		}
 	}
+}
+
+// TODO: Replace similar logic CvUnit::canLoadUnit when the cheating is removed
+// Returns true if this unit can potentially pick up a unit with the provided unit info
+bool CvUnitAI::canPotentiallyTransport(const CvUnitInfo& kUnitInfo) const
+{
+	// WTP, ray Slave Ship - START
+	// a Slave Ship can only carry Slaves or Goods
+	if (getUnitInfo().isSlaveShip())
+	{
+		// it is neither Goods nor a Slave
+		if (getSpecialUnitType() == NO_SPECIALUNIT && !getUnitInfo().LbD_canRevolt() && getUnitInfo().getProductionWhenUsed() <= 0)
+		{
+			return false;
+		}
+	}
+	// WTP, ray Slave Ship - END
+
+	// WTP, ray Treasure Ship - START
+	// a Treasure Ship can only carry Treasures or Goods
+	if (getUnitInfo().isTreasureShip())
+	{
+		// it is neither Goods nor a Slave
+		// WTP, ray, Construction Supplies - START
+		if (getSpecialUnitType() == NO_SPECIALUNIT && !getUnitInfo().isTreasure() && getUnitInfo().getProductionWhenUsed() <= 0)
+		{
+			return false;
+		}
+	}
+	// WTP, ray Treasure Ship - END
+
+	// WTP, ray Troop Ship - START
+	// a Troop Ship can only carry Troops or Goods
+	if (getUnitInfo().isTroopShip())
+	{
+		// it is neither Goods nor a Slave
+		if (getSpecialUnitType() == NO_SPECIALUNIT && !canAttack() && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_GENERAL") && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL") && getUnitClassType() != GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT") && getUnitClassType() != GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN") && getUnitInfo().getProductionWhenUsed() <= 0)
+		{
+			return false;
+		}
+	}
+	// WTP, ray Treasure Ship - END
+
+	return true;
 }

@@ -1564,3 +1564,22 @@ void CvSelectionGroupAI::unloadToCity(CvCity* pCity, CvUnit* unit, UnloadMode um
 }
 
 // R&R mod, vetiarvind, max yield import limit - end
+
+bool CvSelectionGroupAI::canPotentiallyTransport(const CvUnitInfo& kUnitInfo) const
+{
+	CLLNode<IDInfo>* pUnitNode = headUnitNode();
+	while (pUnitNode != NULL)
+	{
+		CvUnit* const pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = nextUnitNode(pUnitNode);
+
+		if (pLoopUnit != NULL)
+		{
+			if (pLoopUnit->AI().canPotentiallyTransport(kUnitInfo))
+			{
+				return true;
+			}
+		}
+	}
+	return false;
+}

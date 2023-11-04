@@ -13,6 +13,7 @@
 
 class CvPlot;
 class CvArea;
+class CvUnitAI;
 class CvUnitInfo;
 class CvSelectionGroup;
 class FAStarNode;
@@ -82,6 +83,8 @@ class CvUnit : public CvDLLEntity
 {
 
 public:
+	__forceinline CvUnitAI& AI() { return (CvUnitAI&)*this; }
+	__forceinline const CvUnitAI& AI() const { return (CvUnitAI&)*this; }
 
     /** NBMOD REF **/
 

@@ -94,6 +94,8 @@ public:
 	//End TAC Whaling, ray
 	bool AI_africa();
 
+	bool canPotentiallyTransport(const CvUnitInfo& kUnitInfo) const;
+
 protected:
 
 	void AI_resetSavedData();
