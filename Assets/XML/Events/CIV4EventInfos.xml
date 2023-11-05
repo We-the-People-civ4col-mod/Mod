@@ -6353,7 +6353,8 @@
 			<PythonCallback>spawnBarbarianUnitAdjacentToCity</PythonCallback>
 			<PythonExpireCheck/>
 			<PythonCanDo/>
-			<PythonHelp>getHelpPreacherAndHarlot1</PythonHelp>
+            <PythonHelp/>
+            <HelpText>TXT_KEY_EVENT_PREACHER_AND_HARLOT_1_HELP</HelpText>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>600</iAIValue>
 			<iGenericParameter1>UNITCLASS_MILITIA</iGenericParameter1>
@@ -6414,7 +6415,8 @@
 			<PythonCallback>spawnBarbarianUnitAdjacentToCity</PythonCallback>
 			<PythonExpireCheck/>
 			<PythonCanDo/>
-			<PythonHelp>getHelpPreacherAndHarlot2</PythonHelp>
+			<PythonHelp/>
+            <HelpText>TXT_KEY_EVENT_PREACHER_AND_HARLOT_2_HELP</HelpText>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>600</iAIValue>
 			<iGenericParameter1>UNITCLASS_REVOLTING_CRIMINAL</iGenericParameter1>

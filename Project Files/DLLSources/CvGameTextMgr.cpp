@@ -10402,10 +10402,10 @@ void CvGameTextMgr::setEventHelp(CvWStringBuffer& szBuffer, EventTypes eEvent, i
 		szBuffer.append(szHelp);
 	}
 
-	if (!isEmpty(kEvent.getPythonHelpTxt()))
+	if (!isEmpty(kEvent.getHelpText()))
 	{
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText(kEvent.getPythonHelpTxt()));
+		szBuffer.append(gDLL->getText(kEvent.getHelpText()));
 	}
 
 	CvWStringBuffer szTemp;

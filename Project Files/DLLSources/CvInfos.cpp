@@ -15883,9 +15883,9 @@ const char* CvEventInfo::getPythonHelp() const
 {
 	return m_szPythonHelp;
 }
-const char* CvEventInfo::getPythonHelpTxt() const
+const char* CvEventInfo::getHelpText() const
 {
-	return m_szPythonHelpTxt;
+	return m_szHelpText;
 }
 const wchar* CvEventInfo::getUnitNameKey() const
 {
@@ -16168,7 +16168,7 @@ bool CvEventInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(m_szPythonExpireCheck, "PythonExpireCheck");
 	pXML->GetChildXmlValByName(m_szPythonCanDo, "PythonCanDo");
 	pXML->GetChildXmlValByName(m_szPythonHelp, "PythonHelp");
-	pXML->GetChildXmlValByName(m_szPythonHelpTxt, "PythonHelpTxt");
+	pXML->GetChildXmlValByName(m_szHelpText, "HelpText");
 	m_aszWorldNews.clear();
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"WorldNewsTexts"))
 	{
