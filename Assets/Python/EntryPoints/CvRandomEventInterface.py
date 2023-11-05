@@ -16,6 +16,15 @@ from CvPythonExtensions import *
 gc = CyGlobalContext()
 localText = CyTranslator()
 
+def get_simple_help(text_key):
+	""" This function constructs another function that returns the fixed localized text  """
+	def get_help(argsList):
+		szHelp = localText.getText(text_key, ())
+		return szHelp
+
+	return get_help
+
+
 def doEventEndTutorial(argsList):
 	eEvent = argsList[0]
 	pTriggeredData = argsList[1]
@@ -971,16 +980,12 @@ def canTriggerPacificDone(argsList):
 		return True
 	return False
 
-def getHelpPacific(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_PACIFIC_HELP", ())
-	return szHelp
-
+getHelpPacific = get_simple_help("TXT_KEY_EVENT_PACIFIC_HELP")
 
 ######## VOLCANO ###########
 
-def getHelpVolcano1(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_VOLCANO_1_HELP", ())
-	return szHelp
+getHelpVolcano1 = get_simple_help("TXT_KEY_EVENT_VOLCANO_1_HELP")
+
 
 def canApplyVolcano1(argsList):
 	iEvent = argsList[0]
@@ -1558,25 +1563,13 @@ def getHelpNativeWagonTrade5(argsList):
 	
 ####### The Royals Event ########
 	
-def getHelpTheRoyals1(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_THE_ROYALS_1PYTHON", ())
-	return szHelp
-	
-def getHelpTheRoyals2(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_THE_ROYALS_2PYTHON", ())
-	return szHelp
-	
-def getHelpTheRoyals3(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_THE_ROYALS_3PYTHON", ())
-	return szHelp
-	
-def getHelpTheRoyals4(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_THE_ROYALS_4PYTHON", ())
-	return szHelp
+getHelpTheRoyals1  = get_simple_help("TXT_KEY_EVENT_THE_ROYALS_1PYTHON")
+getHelpTheRoyals2  = get_simple_help("TXT_KEY_EVENT_THE_ROYALS_2PYTHON")
+getHelpTheRoyals3  = get_simple_help("TXT_KEY_EVENT_THE_ROYALS_3PYTHON")
+getHelpTheRoyals4  = get_simple_help("TXT_KEY_EVENT_THE_ROYALS_4PYTHON")
+getHelpTheRoyals2a = get_simple_help("TXT_KEY_EVENT_THE_ROYALS_2aPYTHON")
 
-def getHelpTheRoyals2a(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_THE_ROYALS_2aPYTHON", ())
-	return szHelp
+
 	
 ####### Pirates Event ########
 
@@ -1964,57 +1957,28 @@ def hasAllBuildings(argsList):
 			bHasAllBuildings = False
 	return bHasAllBuildings
 
-def hasSilverBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_SILVER")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
+def has_plot_this_bonus(bonus_string):
 
-def hasGoldBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
+	def bonus_check(argsList):
+		pTriggeredData = argsList[0]
+		player = gc.getPlayer(pTriggeredData.ePlayer)
+		if not player.isPlayable():
+			return False
+		plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
+		bonustype = gc.getInfoTypeForString(bonus_string)
+		if (plot.getOwner() != pTriggeredData.ePlayer):
+			return False
+		if (plot.getBonusType() == bonustype):
+			return True
 		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_GOLD")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
 
-def hasFurBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_FUR")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
+	return bonus_check
 
-def hasCottonBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_COTTON")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
+hasSilverBonus = has_plot_this_bonus("BONUS_SILVER")
+hasGoldBonus = has_plot_this_bonus("BONUS_GOLD")
+hasFurBonus = has_plot_this_bonus("BONUS_FUR")
+hasCottonBonus = has_plot_this_bonus("BONUS_COTTON")
+
 
 def hasSugarBonus(argsList):
 	pTriggeredData = argsList[0]
@@ -3093,13 +3057,9 @@ def getHelpHorseGift1(argsList):
 		szHelp = localText.getText("TXT_KEY_EVENT_YIELD_LOOSE", (quantity,  gc.getYieldInfo(iYield).getChar(), city.getNameKey()))
 	return szHelp
 
-def getHelpSeasonedTraderNo(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_SEASONED_TRADER_MEETING_HELP", ())
-	return szHelp
+getHelpSeasonedTraderNo = get_simple_help("TXT_KEY_EVENT_SEASONED_TRADER_MEETING_HELP")
 
-def getHelpSeasonedScoutNativeCity(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_HELP", ())
-	return szHelp                                           
+getHelpSeasonedScoutNativeCity = get_simple_help("TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_HELP")
 
 ######## Wild Animal ###########
 
@@ -8110,9 +8070,7 @@ def canTriggerNativeTraderAttack(argsList):
 		return True
 	return False
 
-def getHelpNativeTraderAttack(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_NATIVE_TRADER_ATTACK_HELP", ())
-	return szHelp
+getHelpNativeTraderAttack = get_simple_help("TXT_KEY_EVENT_NATIVE_TRADER_ATTACK_HELP")
 
 ######## Criminal Attacks City ###########
 
@@ -8179,41 +8137,27 @@ def getHelpGiveFood(argsList):
 		szHelp = localText.getText("TXT_KEY_EVENT_YIELD_LOOSE", (-quantity, gc.getYieldInfo(iYield).getChar(), city.getNameKey()))
 	return szHelp
 
-def getHelpCriminalsAttackCity(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_CRIMINALS_REVOLT_HELP", ())
-	return szHelp
+getHelpCriminalsAttackCity = get_simple_help("TXT_KEY_EVENT_CRIMINALS_REVOLT_HELP")
 
 ######## Officer duel ###########
 
-def getHelpOfficerDuel(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_OFFICER_DUEL_HELP", ())
-	return szHelp
+getHelpOfficerDuel = get_simple_help("TXT_KEY_EVENT_OFFICER_DUEL_HELP")
 
-def getHelpOfficerNoDuel(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_OFFICER_NODUEL_HELP", ())
-	return szHelp
+getHelpOfficerNoDuel = get_simple_help("TXT_KEY_EVENT_OFFICER_NODUEL_HELP")
 	
 ######## Bailiffs search for Architect and attack city ###########
 
-def getHelpBailiffsAttackCity(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_ARCHITECT_BAILIFF_HELP", ())
-	return szHelp
+getHelpBailiffsAttackCity = get_simple_help("TXT_KEY_EVENT_ARCHITECT_BAILIFF_HELP")
 
 ######## Buccanners attack Silver Mine ###########
 
-def getHelpBuccanneersAttackMine(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_BUCCANNERS_ATTACK_MINE_HELP", ())
-	return szHelp
+getHelpBuccanneersAttackMine = get_simple_help("TXT_KEY_EVENT_BUCCANNERS_ATTACK_MINE_HELP")
 
-def getHelpMilitiaDefend(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_MILITIA_DEFENDS_MINE_HELP", ())
-	return szHelp
+getHelpMilitiaDefend = get_simple_help("TXT_KEY_EVENT_MILITIA_DEFENDS_MINE_HELP")
 
 ######## Officer arrives at fort ###########
 
-def getHelpOfficerAtFort(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_OFFICER_ARRIVAL_AT_FORT_HELP", ())
-	return szHelp
+getHelpOfficerAtFort = get_simple_help("TXT_KEY_EVENT_OFFICER_ARRIVAL_AT_FORT_HELP")
 
 ######## Slave Hunter Offers Service ###########
 
@@ -8253,9 +8197,7 @@ def canTriggerIsPlayableWithTriggerChance(argsList):
 		return True
 	return False
 
-def getHelpRangerBearAttack(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_RANGER_BEAR_ATTACK_HELP", ())
-	return szHelp
+getHelpRangerBearAttack = get_simple_help("TXT_KEY_EVENT_RANGER_BEAR_ATTACK_HELP")
 
 # adjacent Plot for Barbarian, same Plot for own Unit
 def spawnBarbarianUnitAdjacentToUnitAndFriendlyOnSamePlot(argsList):
@@ -8277,9 +8219,7 @@ def spawnBarbarianUnitAdjacentToUnitAndFriendlyOnSamePlot(argsList):
 
 ######## Highwayman Attack ###########
 
-def getHelpHighwaymanAttack(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_HIGHWAYMAN_ATTACK_HELP", ())
-	return szHelp
+getHelpHighwaymanAttack = get_simple_help("TXT_KEY_EVENT_HIGHWAYMAN_ATTACK_HELP")
 
 ######## Land Transport Attack ###########
 
@@ -8300,9 +8240,7 @@ def spawnNativeUnitAdjacentToUnitAndFriendlyOnSamePlot(argsList):
 	for iX in range(iNumOwnToSpawn):
 		unitThatTriggered.spawnOwnPlayerUnitOnPlotOfUnit(iOwnUnitClassTypeToSpawn)
 
-def getHelpLandTransportAttack(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_HELP", ())
-	return szHelp
+getHelpLandTransportAttack = get_simple_help("TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_HELP")
 
 ######## Milkmaid in Need ###########
 
@@ -8319,15 +8257,11 @@ def hasCattleBonus(argsList):
 		return True
 	return False
 	
-def getHelpMilkmaidInNeed(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_MILKMAID_IN_NEED_HELP", ())
-	return szHelp
+getHelpMilkmaidInNeed = get_simple_help("TXT_KEY_EVENT_MILKMAID_IN_NEED_HELP")
 
 ######## Whale Attack ###########
 
-def getHelpWhaleAttack(argsList):
-	szHelp = localText.getText("TXT_KEY_WHALE_ATTACK_HELP", ())
-	return szHelp
+getHelpWhaleAttack = get_simple_help("TXT_KEY_WHALE_ATTACK_HELP")
 
 ######## Pig Herder in Need ###########
 
@@ -8344,9 +8278,7 @@ def hasPigBonus(argsList):
 		return True
 	return False
 
-def getHelpHerderInNeed(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_HERDER_IN_NEED_HELP", ())
-	return szHelp
+getHelpHerderInNeed = get_simple_help("TXT_KEY_EVENT_HERDER_IN_NEED_HELP")
 
 # adjacent Plot
 def spawnBarbarianUnitAdjacentToPlotAndFriendlyOnSamePlot(argsList):
@@ -8367,61 +8299,42 @@ def spawnBarbarianUnitAdjacentToPlotAndFriendlyOnSamePlot(argsList):
 		plotThatTriggered.spawnPlayerUnitOnPlot(ePlayer, iOwnUnitClassTypeToSpawn)
 
 ######## Pig Herder in Need ###########
-def getHelpFerryStationRobbers(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_FERRY_STATION_ROBBERS_HELP", ())
-	return szHelp
+getHelpFerryStationRobbers = get_simple_help("TXT_KEY_EVENT_FERRY_STATION_ROBBERS_HELP")
 
 ######## Slave and Planation Owner Daughter ###########
-def getHelpSlaveAndPlanationOwnerDaughter1(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_SLAVE_AND_PLANATION_OWNER_DAUGHTER_1_HELP", ())
-	return szHelp
+getHelpSlaveAndPlanationOwnerDaughter1 = get_simple_help("TXT_KEY_EVENT_SLAVE_AND_PLANATION_OWNER_DAUGHTER_1_HELP")
 
 ######## Indentured Servant Steals from Employer ###########
-def getHelpIndenturedServantStealsFromEmployer(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_1_HELP", ())
-	return szHelp
+getHelpIndenturedServantStealsFromEmployer = get_simple_help("TXT_KEY_EVENT_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_1_HELP")
 
 ######## Preacher and Harlot ###########
-def getHelpPreacherAndHarlot1(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_PREACHER_AND_HARLOT_1_HELP", ())
-	return szHelp
+getHelpPreacherAndHarlot1 = get_simple_help("TXT_KEY_EVENT_PREACHER_AND_HARLOT_1_HELP")
 
-def getHelpPreacherAndHarlot2(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_PREACHER_AND_HARLOT_2_HELP", ())
-	return szHelp
+getHelpPreacherAndHarlot2 = get_simple_help("TXT_KEY_EVENT_PREACHER_AND_HARLOT_2_HELP")
 
 ######## Conquistador Ambush ###########
-def getHelpConquistadorAmbusch(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_CONQUISTADOR_AMBUSH_HELP", ())
-	return szHelp
+getHelpConquistadorAmbusch = get_simple_help("TXT_KEY_EVENT_CONQUISTADOR_AMBUSH_HELP")
+
 
 ######## Liet Event Training ###########
 
-def canTriggerAtCityPopluationOf10(argsList):
-	ePlayer = argsList[1]
-	iCity = argsList[2]
-	player = gc.getPlayer(ePlayer)
-	city = player.getCity(iCity)
+def checkCityAbovePopulation(numPop):
 
-	if not player.isPlayable():
-		return False
-	if city.isNone():
-		return False
-	if city.getPopulation() < 10:
-		return False
-	return True
+	def canTrigger(argsList):
+		ePlayer = argsList[1]
+		iCity = argsList[2]
+		player = gc.getPlayer(ePlayer)
+		city = player.getCity(iCity)
 
-def canTriggerAtCityPopluationOf20(argsList):
-	ePlayer = argsList[1]
-	iCity = argsList[2]
-	player = gc.getPlayer(ePlayer)
-	city = player.getCity(iCity)
+		if not player.isPlayable():
+			return False
+		if city.isNone():
+			return False
+		if city.getPopulation() < numPop:
+			return False
+		return True
 
-	if not player.isPlayable():
-		return False
-	if city.isNone():
-		return False
-	if city.getPopulation() < 20:
-		return False
-	return True
-    
+	return canTrigger
+
+canTriggerAtCityPopluationOf10 = checkCityAbovePopulation(10)
+canTriggerAtCityPopluationOf20 = checkCityAbovePopulation(20)
