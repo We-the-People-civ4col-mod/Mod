@@ -1750,12 +1750,12 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 		{
 			if (pPlot->hasDeepWaterCoast())
 			{
-				iValue *= 125; // found value increased
+				iValue *= 200; // found value of starting city on deep water coast dramatically increased
 				iValue /= 100;
 			}
 			else
 			{
-				iValue *= 80; // found value decreased
+				iValue *= 80; // found value decreased for stuff like shallow coast or lakes decreased, so it prefers above 
 				iValue /= 100;
 			}
 		}
@@ -1763,7 +1763,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 		// old normal logic - not considering special cases for Large Rivers without direct Ocean Plots - for all Cities after first city
 		else
 		{
-			iValue *= 125;
+			iValue *= 150; // increased preference for coastal cities generally
 			iValue /= 100;
 		}
 		//WTP, ray, Large Rivers - END
@@ -1831,7 +1831,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 
 		int iWaterCount = 0;
 
-		for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 		{
 		    CvPlot* pLoopPlot = plotCity(iX, iY, iI);
 
@@ -2038,7 +2038,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 	{
 		int iBonusCount = 0;
 		int iLandCount = 0;
-		for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 		{
 			CvPlot* pLoopPlot = plotCity(iX, iY, iI);
 

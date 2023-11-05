@@ -860,7 +860,7 @@ public:
 	bool getFreePromotions(int i) const;
 	bool getProfessionsNotAllowed(int i) const;  	///TK Viscos Mod
 	bool isPrereqOrBuilding(int i) const;
-	int getLeaderPromotion() const;
+	PromotionTypes getLeaderPromotion() const;
 	int getLeaderExperience() const;
 
 	//Androrc UnitArtStyles
@@ -1002,7 +1002,7 @@ protected:
 	// < JAnimals Mod Start >
 	bool m_bAnimal;
 	// < JAnimals Mod End >
-	int m_iLeaderPromotion;
+	PromotionTypes m_eLeaderPromotion;
 
 	/// Move Into Peak - start - Nightinggale
 	bool m_bMoveIntoPeak;
@@ -2432,6 +2432,7 @@ public:
 	bool isGoodyForSpawningHostileAnimals() const; //WTP, Unit only Goodies
 	bool isGoodyForSpawningHostileNatives() const; //WTP, Unit only Goodies
 	bool isGoodyForSpawningHostileCriminals() const; //WTP, Unit only Goodies
+	bool isAINoRemove() const;
 	bool isPermanent() const;
 	DllExport bool useLSystem() const;
 	bool isOutsideBorders() const;
@@ -4164,10 +4165,10 @@ public:
 	const wchar* getPlural() const { return m_szPlural; }
 	DllExport int getNumLanguages() const; // not static for Python access
 	DllExport void setNumLanguages(int iNum); // not static for Python access
-	bool read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName, const TCHAR* szLanguage);
+	bool read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName, char const* szLanguage);
 
 	static int getNumLanguagesStatic();
-	static const TCHAR* getLanguageName(int iLanguageID);
+	static char const* getLanguageName(int iLanguageID);
 	static int getLanguageAtIndex(int iIndex);
 	static bool readLanguages(CvXMLLoadUtility* pXML);
 	static void setChangeLanguage();
@@ -4464,7 +4465,7 @@ public:
 	int getNumWorldNews() const;
 
 	// Start EmperorFool: Events with Images
-	const TCHAR* getEventArt() const;				// Exposed to Python
+	char const* getEventArt() const;				// Exposed to Python
 	// End EmperorFool: Events with Images
 	bool isTutorial() const;
 	bool isSinglePlayer() const;

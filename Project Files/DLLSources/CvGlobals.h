@@ -162,11 +162,9 @@ public:
 	DllExport CvInterface& getInterface();
 	DllExport CvInterface* getInterfacePtr();
 	DllExport int getMaxCivPlayers() const;
-#ifdef _USRDLL
 	CvMap& getMap() { return *m_map; }
 	CvGameAI& getGameINLINE() { return *m_game; }			// inlined for perf reasons, do not use outside of dll
 	const CvGameAI& getGameConst() const { return *m_game; }
-#endif
 	DllExport CvGameAI& getGame();
 	DllExport CvGameAI *getGamePointer();
 	DllExport CvRandom& getASyncRand();
@@ -614,7 +612,7 @@ public:
 	DllExport CvString& getFootstepAudioTags(int i);
 
 	CvString& getCurrentXMLFile();
-	void setCurrentXMLFile(const TCHAR* szFileName);
+	void setCurrentXMLFile(char const* szFileName);
 
 	//
 	///////////////// BEGIN global defines
@@ -939,9 +937,7 @@ public:
 	////////////// END DEFINES //////////////////
 
 	DllExport void setDLLIFace(CvDLLUtilityIFaceBase* pDll);
-#ifdef _USRDLL
 	CvDLLUtilityIFaceBase* getDLLIFace() { return m_pDLL; }		// inlined for perf reasons, do not use outside of dll
-#endif
 	DllExport CvDLLUtilityIFaceBase* getDLLIFaceNonInl();
 
 	DllExport bool IsGraphicsInitialized() const;
@@ -1570,30 +1566,7 @@ inline CvGlobals& CvGlobals::getInstance()
 // helpers
 //
 #define GC CvGlobals::getInstance()
-#ifndef _USRDLL
-#define gDLL GC.getDLLIFaceNonInl()
-#else
 #define gDLL GC.getDLLIFace()
-#endif
-
-#ifndef _USRDLL
-#define NUM_DIRECTION_TYPES (GC.getNumDirections())
-#define NUM_RESOURCE_LAYERS (GC.getNumResourceLayers())
-#define NUM_UNIT_LAYER_OPTION_TYPES (GC.getNumUnitLayerOptionTypes())
-#define NUM_GAMEOPTION_TYPES (GC.getNumGameOptions())
-#define NUM_MPOPTION_TYPES (GC.getNumMPOptions())
-#define NUM_SPECIALOPTION_TYPES (GC.getNumSpecialOptions())
-#define NUM_GRAPHICOPTION_TYPES (GC.getNumGraphicOptions())
-#define NUM_TRADEABLE_ITEMS (GC.getNumTradeableItems())
-#define NUM_BASIC_ITEMS (GC.getNumBasicItems())
-#define NUM_TRADEABLE_HEADINGS (GC.getNumTradeableHeadings())
-#define NUM_COMMAND_TYPES (GC.getNumCommandInfos())
-#define NUM_CONTROL_TYPES (GC.getNumControlInfos())
-#define NUM_MISSION_TYPES (GC.getNumMissionInfos())
-#define NUM_PLAYEROPTION_TYPES (GC.getNumPlayerOptionInfos())
-#define MAX_NUM_SYMBOLS (GC.getMaxNumSymbols())
-#define NUM_GRAPHICLEVELS (GC.getNumGraphicLevels())
-#endif
 
 //helper functions
 template <class T>

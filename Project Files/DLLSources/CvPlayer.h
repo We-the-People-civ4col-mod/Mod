@@ -256,7 +256,7 @@ public:
 	DllExport bool isInvertFlag() const;
 	DllExport const CvWString getWorstEnemyName() const;
 	DllExport ArtStyleTypes getArtStyleType() const;
-	const TCHAR* getUnitButton(UnitTypes eUnit) const;
+	char const* getUnitButton(UnitTypes eUnit) const;
 	void doTurn();
 	void doTurnUnits();
 	void doEra();
@@ -478,8 +478,15 @@ public:
 	void setPersonalityType(LeaderHeadTypes eNewValue);
 	DllExport EraTypes getCurrentEra() const;
 	void setCurrentEra(EraTypes eNewValue);
+
 	PlayerTypes getParent() const;
 	void setParent(PlayerTypes eParent);
+	PlayerTypes getColony() const;
+	void setColony(PlayerTypes eColony);
+
+	CvPlayerAI* getColonyPlayer() const;
+	CvPlayerAI* getParentPlayer() const;
+
 	DllExport TeamTypes getTeam() const;
 	void setTeam(TeamTypes eTeam);
 	void updateTeamType();
@@ -783,6 +790,10 @@ public:
 	// R&R, vetiarvind, Price dependent tax rate change - Start
 	int CvPlayer::getYieldScoreTotal(YieldTypes eYield) const;
 	void CvPlayer::setYieldScoreTotal(YieldTypes eYield, int iValue);
+	const int getFullYieldScore();
+	const int getTaxRaiseChance();
+	const int getTaxThresold();
+
 	void CvPlayer::changeYieldTradedTotal(YieldTypes eYield, int iChange, int iUnitPrice = -1);
 	void CvPlayer::changeYieldTradedTotalAfrica(YieldTypes eYield, int iChange, int iUnitPrice = -1); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 	void CvPlayer::changeYieldTradedTotalPortRoyal(YieldTypes eYield, int iChange, int iUnitPrice = -1); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
@@ -847,6 +858,7 @@ public:
 	bool hasContentsYieldEquipmentAmountSecure(ProfessionTypes eProfession) const;
 	// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
 	bool isProfessionValid(ProfessionTypes eProfession, UnitTypes eUnit) const;
+	void taxIncreaseDiploCall(int iOldTaxRate, int iNewTaxRate, int iChange);
 	void changeProfessionEurope(int iUnitId, ProfessionTypes eProfession);
 
 	int getNumRevolutionEuropeUnits() const;
@@ -1093,8 +1105,12 @@ protected:
 	LeaderHeadTypes m_ePersonalityType;
 	EraTypes m_eCurrentEra;
 	PlayerTypes m_eParent;
+	PlayerTypes m_eColony;
 	TeamTypes m_eTeamType;
 	YieldTypes m_eImmigrationConversion;
+
+	CvPlayerAI* m_pParent;
+	CvPlayerAI* m_pColony;
 
 	EnumMap<YieldTypes, int> m_em_iLandPlotYield; // R&R, ray, Landplot Yields - START
 	EnumMap<YieldTypes, int> m_em_iSeaPlotYield;
@@ -1188,8 +1204,13 @@ protected:
 	void doWarnings();
 	void doEvents();
 	void doPrices();
+	void doTaxRaises(); //WTP, jburet, Tax Reform
 	void doAfricaPrices(); // R&R, ray, Africa
 	void doPortRoyalPrices(); // R&R, ray, Port Royal
+	void wipeRoyalYieldScore(); //WTP, jburet, Tax Reform
+
+	const int getFullYieldScore(bool fullCalculation);//WTP, jburet, Tax Reform
+	const int getTaxThresold(bool fullCalculation);//WTP, jburet, Tax Reform
 
 	bool checkExpireEvent(EventTypes eEvent, const EventTriggeredData& kTriggeredData) const;
 	void expireEvent(EventTypes eEvent, const EventTriggeredData& kTriggeredData, bool bFail);

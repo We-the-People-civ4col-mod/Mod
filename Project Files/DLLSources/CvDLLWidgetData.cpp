@@ -23,42 +23,42 @@
 class WidgetData
 {
 public:
-	virtual void parseHelp(CvWStringBuffer &szBuffer) const;
+	virtual void generateMouseOverText(CvWStringBuffer &szBuffer);
 
-	virtual bool executeAction() const;
-	virtual bool executeAltAction() const;
-	virtual bool executeDropOn(const CvWidgetDataStruct destinationWidgetData) const;
-	virtual bool executeDoubleClick();
+	virtual bool onLeftCLick();
+	virtual bool onRightClick();
+	virtual bool onDoubleLeftClick();
+	virtual bool onDragAndDropOn(const CvWidgetDataStruct destinationWidgetData);
 
-	virtual bool isLink() const;
+	virtual bool isPediaLink();
 
 	static WidgetData* getNew(const CvWidgetDataStruct& widgetData);
 };
 
-void WidgetData::parseHelp(CvWStringBuffer &szBuffer) const
+void WidgetData::generateMouseOverText(CvWStringBuffer &szBuffer)
 {}
 
 // return value for the next 4 tells if the function did something
 // false as the default is to do nothing, but any child override should obviously return true
-bool WidgetData::executeAction() const
+bool WidgetData::onLeftCLick()
 {
 	return false;
 }
-bool WidgetData::executeAltAction() const
+bool WidgetData::onRightClick()
 {
 	return false;
 }
-bool WidgetData::executeDropOn(const CvWidgetDataStruct sourceWidgetData) const
+bool WidgetData::onDoubleLeftClick()
 {
 	return false;
 }
-bool WidgetData::executeDoubleClick()
+bool WidgetData::onDragAndDropOn(const CvWidgetDataStruct sourceWidgetData)
 {
 	return false;
 }
 
 // tells if the widget can jump to a pedia entry
-bool WidgetData::isLink() const
+bool WidgetData::isPediaLink()
 {
 	return false;
 }
@@ -78,7 +78,7 @@ public:
 	const UnitTypes eUnit;
 	const int iJumpHelpControl;
 
-	void parseHelp(CvWStringBuffer &szBuffer) const
+	void generateMouseOverText(CvWStringBuffer &szBuffer)
 	{
 		if (iJumpHelpControl != 0)
 		{
@@ -86,16 +86,16 @@ public:
 		}
 	}
 
-	bool executeAction() const
+	bool onLeftCLick()
 	{
 		if (iJumpHelpControl != 1)
 		{
-			executeAltAction();
+			onRightClick();
 		}
 		return true;
 	}
 
-	bool executeAltAction() const
+	bool onRightClick()
 	{
 		bool ff = isInRange(eUnit);
 		CyArgsList argsList;
@@ -105,13 +105,68 @@ public:
 		return true;
 	}
 
-	bool isLink() const
+	bool isPediaLink()
 	{
 		return isInRange(eUnit);
 	}
 };
 
 
+template<> // This lines tells the compiler we use a fully defined template
+class WidgetContainer<WIDGET_HELP_TAX_CALCULATION> : public WidgetData
+{
+public:
+	enum HoverHelpDisplayOptions
+	{
+		HONOR_GAME_SETTING = -1,
+		NEVER_DISPLAY_DETAILS = 0,
+		ALWAYS_DISPLAY_DETAILS = 1
+	};
+
+	WidgetContainer(const CvWidgetDataStruct widgetDataStruct)
+		: eColonyPlayer((PlayerTypes)widgetDataStruct.m_iData1)
+		, iDetailedInfoDisplayBehavior((HoverHelpDisplayOptions)widgetDataStruct.m_iData2) 
+	{
+		const bool bNoHidden = GC.getGameINLINE().isOption(GAMEOPTION_NO_MORE_VARIABLES_HIDDEN);
+		switch(iDetailedInfoDisplayBehavior)
+		{
+		case NEVER_DISPLAY_DETAILS: bDisplayDetailed = false; break;
+		case ALWAYS_DISPLAY_DETAILS: bDisplayDetailed = true; break;
+		default: bDisplayDetailed = bNoHidden; break;
+		}
+	}
+
+	const PlayerTypes eColonyPlayer;
+	const HoverHelpDisplayOptions  iDetailedInfoDisplayBehavior;
+	bool bDisplayDetailed;
+
+	void generateMouseOverText(CvWStringBuffer& szBuffer)
+	{
+		CvPlayerAI& kColony = GET_PLAYER(eColonyPlayer);
+		CvPlayerAI& kKing = *kColony.getParentPlayer();
+		
+		
+		if (bDisplayDetailed)
+		{
+			const int chancePerThousand = kKing.getTaxRaiseChance();
+			szBuffer.append(gDLL->getText("TXT_KEY_TAX_BAR",
+				kKing.getFullYieldScore(), //apply the Global Ratio
+				kKing.getTaxThresold(), // get a comparable quantity
+				GC.getYieldInfo(YIELD_TRADE_GOODS).getChar(),
+				chancePerThousand / 10,	chancePerThousand % 10,
+				GLOBAL_DEFINE_TAX_RATE_RETAINED_FRACTION
+				));
+		}
+		else
+		{
+			const CvWString st = gDLL->getText("TXT_KEY_MISC_TAX_RATE", 
+				kColony.getTaxRate(), 
+				kColony.NBMOD_GetMaxTaxRate());
+			// st.ToUpper?
+			szBuffer.append(st);
+		}
+	}
+};
 
 // has to be after the specialized cases of WidgetContainer
 
@@ -120,6 +175,7 @@ WidgetData* WidgetData::getNew(const CvWidgetDataStruct& widgetData)
 	switch (widgetData.m_eWidgetType)
 	{
 	case WIDGET_PEDIA_JUMP_TO_UNIT: return new WidgetContainer<WIDGET_PEDIA_JUMP_TO_UNIT>(widgetData);
+	case WIDGET_HELP_TAX_CALCULATION: return new WidgetContainer<WIDGET_HELP_TAX_CALCULATION >(widgetData);
 	}
 
 	return NULL;
@@ -151,7 +207,7 @@ void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, CvWidgetDataStruct &w
 	WidgetData* data = WidgetData::getNew(widgetDataStruct);
 	if (data != NULL)
 	{
-		data->parseHelp(szBuffer);
+		data->generateMouseOverText(szBuffer);
 		SAFE_DELETE(data);
 		return;
 	}
@@ -550,7 +606,7 @@ bool CvDLLWidgetData::executeAction( CvWidgetDataStruct &widgetDataStruct )
 	WidgetData* data = WidgetData::getNew(widgetDataStruct);
 	if (data != NULL)
 	{
-		bool result = data->executeAction();
+		bool result = data->onLeftCLick();
 		SAFE_DELETE(data);
 		return result;
 	}
@@ -827,7 +883,7 @@ bool CvDLLWidgetData::executeAltAction( CvWidgetDataStruct &widgetDataStruct )
 	WidgetData* data = WidgetData::getNew(widgetDataStruct);
 	if (data != NULL)
 	{
-		bool result = data->executeAltAction();
+		bool result = data->onRightClick();
 		SAFE_DELETE(data);
 		return result;
 	}
@@ -872,7 +928,7 @@ bool CvDLLWidgetData::executeDropOn(const CvWidgetDataStruct& destinationWidgetD
 	WidgetData* data = WidgetData::getNew(sourceWidgetData);
 	if (data != NULL)
 	{
-		bool result = data->executeDropOn(destinationWidgetData);
+		bool result = data->onDragAndDropOn(destinationWidgetData);
 		SAFE_DELETE(data);
 		return result;
 	}
@@ -942,7 +998,7 @@ bool CvDLLWidgetData::executeDoubleClick(const CvWidgetDataStruct& widgetDataStr
 	WidgetData* data = WidgetData::getNew(widgetDataStruct);
 	if (data != NULL)
 	{
-		bool result = data->executeDoubleClick();
+		bool result = data->onDoubleLeftClick();
 		SAFE_DELETE(data);
 		return result;
 	}
@@ -1002,7 +1058,7 @@ bool CvDLLWidgetData::isLink(const CvWidgetDataStruct &widgetDataStruct) const
 	WidgetData* data = WidgetData::getNew(widgetDataStruct);
 	if (data != NULL)
 	{
-		bool result = data->isLink();
+		bool result = data->isPediaLink();
 		SAFE_DELETE(data);
 		return result;
 	}
@@ -1943,7 +1999,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 				{
 					szBuffer.append(NEWLINE);
 					szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_WHEN_LEADING"));
-					GAMETEXT.parsePromotionHelp(szBuffer, (PromotionTypes)pHeadSelectedUnit->getUnitInfo().getLeaderPromotion(), L"\n   ");
+					GAMETEXT.parsePromotionHelp(szBuffer, pHeadSelectedUnit->getUnitInfo().getLeaderPromotion(), L"\n   ");
 				}
 			}
 			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getMissionType() == MISSION_BUILD)
@@ -3580,7 +3636,7 @@ void CvDLLWidgetData::parseDescriptionHelp(CvWidgetDataStruct &widgetDataStruct,
 			UnitTypes eUnit = (UnitTypes)widgetDataStruct.m_iData2;
 			if (NO_UNIT != eUnit)
 			{
-				szBuffer.assign(bMinimal ? GC.getUnitInfo(eUnit).getDescription() : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getUnitInfo(eUnit).getTextKeyWide()));
+				szBuffer.assign(bMinimal ? static_cast<CvWString>(GC.getUnitInfo(eUnit).getDescription()) : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getUnitInfo(eUnit).getTextKeyWide()));
 			}
 		}
 		break;
@@ -3589,7 +3645,7 @@ void CvDLLWidgetData::parseDescriptionHelp(CvWidgetDataStruct &widgetDataStruct,
 			ProfessionTypes eProfession = (ProfessionTypes)widgetDataStruct.m_iData2;
 			if (NO_PROFESSION != eProfession)
 			{
-				szBuffer.assign(bMinimal ? GC.getProfessionInfo(eProfession).getDescription() : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getProfessionInfo(eProfession).getTextKeyWide()));
+				szBuffer.assign(bMinimal ? static_cast<CvWString>(GC.getProfessionInfo(eProfession).getDescription()) : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getProfessionInfo(eProfession).getTextKeyWide()));
 			}
 		}
 		break;
@@ -3598,7 +3654,7 @@ void CvDLLWidgetData::parseDescriptionHelp(CvWidgetDataStruct &widgetDataStruct,
 			BuildingTypes eBuilding = (BuildingTypes)widgetDataStruct.m_iData2;
 			if (NO_BUILDING != eBuilding)
 			{
-				szBuffer.assign(bMinimal ? GC.getBuildingInfo(eBuilding).getDescription() : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getBuildingInfo(eBuilding).getTextKeyWide()));
+				szBuffer.assign(bMinimal ? static_cast<CvWString>(GC.getBuildingInfo(eBuilding).getDescription()) : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getBuildingInfo(eBuilding).getTextKeyWide()));
 			}
 		}
 		break;
@@ -3607,7 +3663,7 @@ void CvDLLWidgetData::parseDescriptionHelp(CvWidgetDataStruct &widgetDataStruct,
 			BonusTypes eBonus = (BonusTypes)widgetDataStruct.m_iData2;
 			if (NO_BONUS != eBonus)
 			{
-				szBuffer.assign(bMinimal ? GC.getBonusInfo(eBonus).getDescription() : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getBonusInfo(eBonus).getTextKeyWide()));
+				szBuffer.assign(bMinimal ? static_cast<CvWString>(GC.getBonusInfo(eBonus).getDescription()) : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getBonusInfo(eBonus).getTextKeyWide()));
 			}
 		}
 		break;
@@ -3616,7 +3672,7 @@ void CvDLLWidgetData::parseDescriptionHelp(CvWidgetDataStruct &widgetDataStruct,
 			ImprovementTypes eImprovement = (ImprovementTypes)widgetDataStruct.m_iData2;
 			if (NO_IMPROVEMENT != eImprovement)
 			{
-				szBuffer.assign(bMinimal ? GC.getImprovementInfo(eImprovement).getDescription() : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getImprovementInfo(eImprovement).getTextKeyWide()));
+				szBuffer.assign(bMinimal ? static_cast<CvWString>(GC.getImprovementInfo(eImprovement).getDescription()) : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getImprovementInfo(eImprovement).getTextKeyWide()));
 			}
 		}
 		break;
@@ -3625,7 +3681,7 @@ void CvDLLWidgetData::parseDescriptionHelp(CvWidgetDataStruct &widgetDataStruct,
 			PromotionTypes ePromo = (PromotionTypes)widgetDataStruct.m_iData2;
 			if (NO_PROMOTION != ePromo)
 			{
-				szBuffer.assign(bMinimal ? GC.getPromotionInfo(ePromo).getDescription() : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getPromotionInfo(ePromo).getTextKeyWide()));
+				szBuffer.assign(bMinimal ? static_cast<CvWString>(GC.getPromotionInfo(ePromo).getDescription()) : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getPromotionInfo(ePromo).getTextKeyWide()));
 			}
 		}
 		break;
@@ -3634,7 +3690,7 @@ void CvDLLWidgetData::parseDescriptionHelp(CvWidgetDataStruct &widgetDataStruct,
 			CivilizationTypes eCiv = (CivilizationTypes)widgetDataStruct.m_iData2;
 			if (NO_CIVILIZATION != eCiv)
 			{
-				szBuffer.assign(bMinimal ? GC.getCivilizationInfo(eCiv).getDescription() : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getCivilizationInfo(eCiv).getTextKeyWide()));
+				szBuffer.assign(bMinimal ? static_cast<CvWString>(GC.getCivilizationInfo(eCiv).getDescription()) : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getCivilizationInfo(eCiv).getTextKeyWide()));
 			}
 		}
 		break;
@@ -3643,7 +3699,7 @@ void CvDLLWidgetData::parseDescriptionHelp(CvWidgetDataStruct &widgetDataStruct,
 			LeaderHeadTypes eLeader = (LeaderHeadTypes)widgetDataStruct.m_iData2;
 			if (NO_LEADER != eLeader)
 			{
-				szBuffer.assign(bMinimal ? GC.getLeaderHeadInfo(eLeader).getDescription() : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getLeaderHeadInfo(eLeader).getTextKeyWide()));
+				szBuffer.assign(bMinimal ? static_cast<CvWString>(GC.getLeaderHeadInfo(eLeader).getDescription()) : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getLeaderHeadInfo(eLeader).getTextKeyWide()));
 			}
 		}
 		break;
@@ -3652,7 +3708,7 @@ void CvDLLWidgetData::parseDescriptionHelp(CvWidgetDataStruct &widgetDataStruct,
 			CivicTypes eCivic = (CivicTypes)widgetDataStruct.m_iData2;
 			if (NO_CIVIC != eCivic)
 			{
-				szBuffer.assign(bMinimal ? GC.getCivicInfo(eCivic).getDescription() : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getCivicInfo(eCivic).getTextKeyWide()));
+				szBuffer.assign(bMinimal ? static_cast<CvWString>(GC.getCivicInfo(eCivic).getDescription()) : gDLL->getText("TXT_KEY_MISC_HISTORICAL_INFO", GC.getCivicInfo(eCivic).getTextKeyWide()));
 			}
 		}
 		break;

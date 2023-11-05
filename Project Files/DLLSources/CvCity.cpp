@@ -91,7 +91,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, Coordinates initCoord, bool bBump
 	{
 		if (gDLL->getChtLvl() > 0)
 		{
-			TCHAR szOut[1024];
+			char szOut[1024];
 			sprintf(szOut, "Player %d City %d built at %d:%d\n", eOwner, iID, initCoord.x(), initCoord.y());
 			gDLL->messageControlLog(szOut);
 		}
@@ -3580,16 +3580,16 @@ int CvCity::getFood() const
 }
 
 
-void CvCity::setFood(int iNewValue)
+void CvCity::setFood(int iNewValue, bool bAllowNegative)
 {
 	setYieldStored(YIELD_FOOD, iNewValue);
-	FAssert(getYieldStored(YIELD_FOOD) >= 0);
+	FAssert(bAllowNegative || getYieldStored(YIELD_FOOD) >= 0);
 }
 
 
-void CvCity::changeFood(int iChange)
+void CvCity::changeFood(int iChange, bool bAllowNegative)
 {
-	setFood(getFood() + iChange);
+	setFood(getFood() + iChange, bAllowNegative);
 }
 
 
@@ -7112,7 +7112,7 @@ void CvCity::doGrowth()
 
 	iDiff = foodDifference();
 
-	changeFood(iDiff);
+	changeFood(iDiff, true);
 	changeFoodKept(iDiff);
 
 	setFoodKept(range(getFoodKept(), 0, ((growthThreshold() * getMaxFoodKeptPercent()) / 100)));
@@ -7164,7 +7164,7 @@ void CvCity::doGrowth()
 	else if (getFood() < 0)
 	{
 		// Food is reset to 0
-		changeFood(-(getFood()));
+		setFood(0);
 
 		// Population is larger 1, we can eject citizens
 		if (getPopulation() > 1)
@@ -8033,7 +8033,7 @@ static int natGetDeterministicRandom(int iMin, int iMax, int iSeedX, int iSeedY)
 	return (rand() % (iMax - iMin)) + iMin;
 }
 
-void CvCity::getVisibleEffects(ZoomLevelTypes eCurZoom, std::vector<const TCHAR*>& kEffectNames) const
+void CvCity::getVisibleEffects(ZoomLevelTypes eCurZoom, std::vector<char const*>& kEffectNames) const
 {
 	if (isOccupation() && isVisible(getTeam(), false))
 	{
@@ -8093,7 +8093,7 @@ void CvCity::getCityBillboardSizeIconColors(NiColorA& kDotColor, NiColorA& kText
 	}
 }
 
-const TCHAR* CvCity::getCityBillboardProductionIcon() const
+char const* CvCity::getCityBillboardProductionIcon() const
 {
 	if (isNative() && getOwnerINLINE() != GC.getGameINLINE().getActivePlayer() && AI_getDesiredYield() != NO_YIELD)
 	{
@@ -13025,7 +13025,7 @@ bool CvCity::LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_se
 		return false;
 	}
 
-	const TCHAR* buttonStringForMessage = convUnit->getButton();
+	char const* buttonStringForMessage = convUnit->getButton();
 
 	// with true, we greate Unit with Default AI, otherwise it is AI_Flee
 	createFleeingUnit(convUnit->getUnitType(), false);
@@ -13124,8 +13124,8 @@ bool CvCity::LbD_try_revolt(CvUnit* convUnit, int base, int mod_crim, int mod_sl
 	// get Button of the Unit from UnitType for message
 	// Test um Bug zu finden
 	// CvUnit* GeneratedUnit = GET_PLAYER(getOwnerINLINE()).getUnit(GeneratedUnitType);
-	// const TCHAR* buttonStringForMessage = GeneratedUnit->getButton();
-	const TCHAR* buttonStringForMessage = convUnit->getButton();
+	// char const* buttonStringForMessage = GeneratedUnit->getButton();
+	char const* buttonStringForMessage = convUnit->getButton();
 
 	// with true, we greate Unit with Default AI, otherwise it is AI_Flee
 	// Test um Bug zu finden

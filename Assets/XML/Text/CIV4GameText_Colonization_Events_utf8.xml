@@ -10106,4 +10106,65 @@
         <German>Nun gut, wer mit Waffen handeln kann, kann auch lernen sie herzustellen. Schicken wir ihn ins Magazin. Da kann er jedenfalls die Waffen herstellen, die er so sehr begehrt.</German>
         <Russian>Что ж, если раньше он торговал оружием, мы можем обучить и создавать его. Давайте отправим его на военный склад. Там он сможет изготовить то оружие, которое ему хочется.</Russian>
     </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_FAILED_MISSIONARY_1</Tag>
+        <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a missionary has arrived who is looking for new tasks.</English>
+        <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ist ein Missionar angekommen, der nach neuen Aufgaben sucht.</German>
+        <Russian>В [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] прибыл миссионер, который ищет новые задания.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_FAILED_MISSIONARY_1</Tag>
+        <English>Milord, a missionary we sent to the indians a long time ago has returned without having achieved anything. He is no longer good as a missionary, but perhaps we can do something else with him?</English>
+         <German>Milord, ein Missionar, den wir vor längerer Zeit zu den Wilden geschickt haben, ist unverrichteter Dinge wieder zurückgekehrt. Als Missionar taugt er nicht mehr, aber vielleicht können wir etwas anderes mit ihm anfangen?</German>
+        <Russian>Милорд, миссионер, которого мы давным-давно отправили к индейцам, вернулся, ничего не добившись. Миссионером ему уже не быть, но, может, мы сможем найти ему какое-нибудь занятие?</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAILED_MISSIONARY_1</Tag>
+        <English>The church also needs clergymen to take care of the administration. There he can still be useful to us.</English>
+         <German>Auch die Kirche braucht Geistliche, die sich um die Verwaltung kümmern. Da kann er uns noch nützlich sein.</German>
+        <Russian>Церкви нужны священнослужители, которые будут заниматься управлением. Он может пригодиться там.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAILED_MISSIONARY_2</Tag>
+        <English>Even if he could not convert the Indians, for the faithful in the colonies his preaching should still be enough. He can work as a church pastor.</English>
+        <German>Auch wenn er die Indianer nicht bekehren konnte, für die Gläubigen in den Kolonien sollten seine Predigten noch reichen. Er kann als Gemeindepfarrer arbeiten.</German>
+        <Russian>Настоятель нашей церкви как-то говорил, что не отказался бы от помощника. Отправим миссионера к нему.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAILED_MISSIONARY_3</Tag>
+        <English>A pilgrimage to Rome could bring him back on track and renew his faith. We will advance him the money for a trip to Rome.</English>
+        <German>Eine Pilgereise nach Rom könnte ihn wieder auf den rechten Weg bringen und seinen Glauben erneuern. Wir werden ihm das Geld für eine Reise nach Rom vorstrecken.</German>
+        <Russian>Паломничество в Рим могло бы помочь ему укрепить свою веру и наполнить духовными силами. Мы оплатим эту поездку.</Russian>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAILED_MISSIONARY_4</Tag>
+        <English>The priest is just back from his pilgrimage and ready to move back into the wilderness.</English>
+        <German>Der Priester ist gerade von seiner Pilgerreise zurück und bereit wieder in die Wildnis zu ziehen.</German>
+        <Russian>[COLOR_SELECTED_TEXT]Священник вернулся из паломничества[COLOR_REVERT] и готов нести Слово Божье дикарям.</Russian>
+    </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_SUPERSTITIOUS_PIRATES</Tag>
+        <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a pirate crew has heard the ghost of their dead captain.</English>
+        <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hat eine Piratencrew den Geist ihres toten Kapitäns gehört.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SUPERSTITIOUS_PIRATES</Tag>
+        <English>Milord, in the port of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] one of our privateers is anchored. The captain recently broke his neck while drunk in the aft cabin. Now the crew hears his ghost shouting incessantly at night "Fetch aft the rum, Darby!" The crew now refuses to enter the cabin as well as to leave the port. What are you going to do?</English>
+         <German>Milord, im Hafen von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] liegt eines unserer Kaperschiffe vor Anker. Der Kapitän hat sich jüngst in der Achterkajüte im Suff das Genick gebrochen. Nun hört die Crew bei Nacht dessen Geist unablässig rufen "Bring den Rum, Darby!" Die Crew weigert sich, die Kajüte zu betreten oder auszulaufen. Was wollt Ihr unternehmen?</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SUPERSTITIOUS_PIRATES_1</Tag>
+        <English>Superstitious pirates, where is there such a thing! With all the dead surrounding them, you'd think they'd be more hardened. Let the ship rot on the pier. Nobody has any respect or fear for a crew like that anyway.</English>
+         <German>Abergläubische Piraten, wo gibt es denn sowas! Bei all den Toten, die sie umgeben, sollte man doch meinen, dass sie hartgesottener sind. Soll das Schiff doch an der Pier vermodern. Vor so einer Crew hat sowieso keiner mehr Respekt oder gar Angst.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SUPERSTITIOUS_PIRATES_2</Tag>
+        <English>Oh yes, that really is a problem. Let's give the crew the rum the captain demands. After everyone's had some refreshments, the ship should be ready for action again, don't you think?</English>
+        <German>Oh ja, das ist wirklich ein Problem. Geben wir der Crew den Rum, nach dem der Kapitän verlangt. Nachdem sich alle gestärkt haben, sollte das Schiff wieder einsatzbereit sein, meint Ihr nicht auch?</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SUPERSTITIOUS_PIRATES_3</Tag>
+        <English>Get a priest immediately so that he can perform an exorcism and prevent the captain's ghost from haunting the harbor district! To be on the safe side, we should also burn the ship. The crew can stay ashore for the time being until we have found or built a new ship for them.</English>
+        <German>Holt sofort einen Priester, damit er einen Exorzismus vornehmen kann und der Geist des Kapitäns nicht im Hafenviertel weiterspukt! Sicherheitshalber sollten wir das Schiff aber auch noch verbrennen. Die Crew kann erst einmal an Land bleiben, bis wir ein neues Schiff für sie gefunden oder gebaut haben.</German>
+    </TEXT>
 </Civ4GameText>

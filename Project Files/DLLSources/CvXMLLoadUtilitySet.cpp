@@ -38,13 +38,13 @@ static void verifyXMLsettings()
 		EventTriggerTypes eTrigger = (EventTriggerTypes)i;
 
 		CvEventTriggerInfo& kInfo = GC.getEventTriggerInfo(eTrigger);
-	
+
 		if (kInfo.getPercentGamesActive() > 0 && kInfo.isUnitsOnPlot())
 		{
 			FAssertMsg(isPlotEventTrigger(eTrigger), CvString::format("XML error: %s has bUnitsOnPlot set, but failed isPlotEventTrigger()", kInfo.getType()));
 		}
 	}
-	
+
 }
 #endif
 /// xml verification
@@ -53,7 +53,7 @@ void CvXMLLoadUtility::GameTextContainer::Read(CvXMLLoadUtility* pXML, const cha
 {
 	if (gDLL->getXMLIFace()->LocateFirstSiblingNodeByTagName(pXML->GetXML(), szLanguage))
 	{
-		
+
 		if (CvGameText::readString(pXML, m_Text, "Text", bUTF8, szFileName, bTranslated, szTag))
 		{
 			// There are child tags. Read all 3 of them.
@@ -77,7 +77,7 @@ void CvXMLLoadUtility::GameTextContainer::Read(CvXMLLoadUtility* pXML, const cha
 			m_Gender = L"N";
 			m_Plural = L"false";
 		}
-		
+
 	}
 };
 
@@ -111,7 +111,7 @@ CvXMLLoadUtility::GameTextStringKey& CvXMLLoadUtility::GameTextList::init(std::s
 	return iIterator->second;
 }
 
-bool CvXMLLoadUtility::GameTextList::readString(const TCHAR* szTag, GameTextList& FStringListCurrentLanguage, GameTextContainer& resultContainer)
+bool CvXMLLoadUtility::GameTextList::readString(char const* szTag, GameTextList& FStringListCurrentLanguage, GameTextContainer& resultContainer)
 {
 	FGameTextMap::iterator iIterator;
 
@@ -166,7 +166,6 @@ void CvXMLLoadUtility::GameTextList::setAllStrings(GameTextList& FStringListCurr
 
 		bool bTranslated = readString(iIterator->first.c_str(), FStringListCurrentLanguage, resultContainer);
 
-		
 		if (resultContainer.m_Text.size() == 0)
 		{
 			CvString szBuffer(iIterator->first.c_str());
@@ -221,7 +220,7 @@ bool bFirstRead = false;
 
 // same as LoadGlobalClassInfo, except that it clears vectors without types
 template <class T>
-void CvXMLLoadUtility::PreLoadGlobalClassInfo(XMLReadStage eStage, std::vector<T*>& aInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, bool bTwoPass, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (const TCHAR*))
+void CvXMLLoadUtility::PreLoadGlobalClassInfo(XMLReadStage eStage, std::vector<T*>& aInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, bool bTwoPass, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (char const*))
 {
 	if (eStage == XML_STAGE_FULL && aInfos.size() > 0 && aInfos[0]->getType() == NULL)
 	{
@@ -431,7 +430,7 @@ void CvXMLLoadUtility::readXMLfiles(XMLReadStage eStage)
 }
 /// XML type preloading - end - Nightinggale
 
-bool CvXMLLoadUtility::ReadGlobalDefines(const TCHAR* szXMLFileName, CvCacheObject* cache)
+bool CvXMLLoadUtility::ReadGlobalDefines(char const* szXMLFileName, CvCacheObject* cache)
 {
 	bool bLoaded = false;	// used to make sure that the xml file was loaded correctly
 
@@ -947,7 +946,7 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_2", idx);
 		// WTP, ray, Royal Intervention, END
-		
+
 		//TAC Whaling, ray
 		SetGlobalDefine("UNITCLASS_WHALING_BOAT", szVal);
 		idx = FindInInfoClass(szVal);
@@ -1224,7 +1223,7 @@ void CvXMLLoadUtility::SetGameFont()
 	{
 		return;
 	}
-	
+
 	iGameFontCodePage = CvGameText::getCodePage();
 
 	switch (iGameFontCodePage)
@@ -1285,6 +1284,8 @@ static void loadTextFiles(std::vector<CvString>& aszFiles, const std::string szL
 //------------------------------------------------------------------------------------------------------
 bool CvXMLLoadUtility::LoadGlobalText()
 {
+	const bool DISABLE_VANILLA_TXT = true;
+
 	CvCacheObject* cache = gDLL->createGlobalTextCacheObject("GlobalText.dat");	// cache file name
 	if (!gDLL->cacheRead(cache))
 	{
@@ -1314,7 +1315,10 @@ bool CvXMLLoadUtility::LoadGlobalText()
 
 		// read vanilla, then mod
 		// gDLL->enumerateFiles mixes those two together. Removed because it unlocked vanilla overwriting mod strings.
-		loadTextFiles(aszFiles, "."                   , "xml\\text\\");
+		if (!DISABLE_VANILLA_TXT)
+		{
+			loadTextFiles(aszFiles, ".", "xml\\text\\");
+		}
 		loadTextFiles(aszFiles, gDLL->getModName(true), "xml\\text\\");
 
 		if (gDLL->isModularXMLLoading())
@@ -1349,7 +1353,7 @@ bool CvXMLLoadUtility::LoadGlobalText()
 					// First check if utf8 is in the filename.
 					// Vanilla has converted the path to lowercase at this point meaning it's not a case sensitive search.
 					bool bUTF8 = strstr(it->c_str(), "utf8") != NULL || strstr(it->c_str(), "UTF8") != NULL;
-
+					bUTF8 |= DISABLE_VANILLA_TXT;
 					// Now call the vanilla read code.
 					SetGameText("Civ4GameText", "Civ4GameText/TEXT", bUTF8, it->c_str(), FStringListEnglish, FStringListCurrentLang, StringList);
 				}
@@ -1608,7 +1612,7 @@ bool CvXMLLoadUtility::LoadPostMenuGlobals()
 
 //------------------------------------------------------------------------------------------------------
 //
-//  FUNCTION:   SetGlobalStringArray(TCHAR (**ppszString)[256], char* szTagName, int* iNumVals)
+//  FUNCTION:   SetGlobalStringArray(CvString **ppszString, char* szTagName, int* iNumVals, bool bUseEnum)
 //
 //  PURPOSE :   takes the szTagName parameter and if it finds it in the m_pFXml member variable
 //				then it loads the ppszString parameter with the string values under it and the
@@ -1958,7 +1962,7 @@ void CvXMLLoadUtility::SetGlobalUnitScales(float* pfLargeScale, float* pfSmallSc
 		if (GetChildXmlVal(pfLargeScale))
 		{
 			// set the current xml node to it's next sibling and then
-			// get the sibling's TCHAR value
+			// get the sibling's char value
 			GetNextXmlVal(pfSmallScale);
 
 			// set the current xml node to it's parent node
@@ -1991,7 +1995,7 @@ void CvXMLLoadUtility::SetGameText(const char* szTextGroup, const char* szTagNam
 
 	int iCurrentLanguage = GAMETEXT.getCurrentLanguage();
 
-	const TCHAR* szLanguageName = CvGameText::getLanguageName(iCurrentLanguage);
+	char const* szLanguageName = CvGameText::getLanguageName(iCurrentLanguage);
 
 	if (gDLL->getXMLIFace()->LocateNode(m_pFXml, szTextGroup)) // Get the Text Group 1st
 	{
@@ -2225,7 +2229,7 @@ void CvXMLLoadUtility::SetDiplomacyInfo(std::vector<CvDiplomacyInfo*>& DiploInfo
 }
 
 template <class T>
-void CvXMLLoadUtility::LoadGlobalClassInfo(std::vector<T*>& aInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (const TCHAR*))
+void CvXMLLoadUtility::LoadGlobalClassInfo(std::vector<T*>& aInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (char const*))
 {
 	bool bLoaded = false;
 	bool bWriteCache = true;
@@ -2351,7 +2355,7 @@ void CvXMLLoadUtility::LoadGlobalClassInfo(bool bFirst, EnumMap<IndexType, T, DE
 	}
 }
 
-void CvXMLLoadUtility::LoadDiplomacyInfo(std::vector<CvDiplomacyInfo*>& DiploInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (const TCHAR*))
+void CvXMLLoadUtility::LoadDiplomacyInfo(std::vector<CvDiplomacyInfo*>& DiploInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (char const*))
 {
 	bool bLoaded = false;
 	bool bWriteCache = true;
@@ -2504,7 +2508,7 @@ void CvXMLLoadUtility::SetFeatureStruct(int** ppiFeatureTime, std::vector<std::v
 {
 	int iNumSibs;					// the number of siblings the current xml node has
 	int iFeatureIndex;
-	TCHAR szTextVal[256];	// temporarily hold the text value of the current xml node
+	char szTextVal[256];	// temporarily hold the text value of the current xml node
 	int* paiFeatureTime = NULL;
 	bool* pabFeatureRemove = NULL;
 
@@ -2584,7 +2588,7 @@ void CvXMLLoadUtility::SetImprovementBonuses(CvImprovementBonusInfo** ppImprovem
 {
 	int i=0;				//loop counter
 	int iNumSibs;			// the number of siblings the current xml node has
-	TCHAR szNodeVal[256];	// temporarily holds the string value of the current xml node
+	char szNodeVal[256];	// temporarily holds the string value of the current xml node
 	CvImprovementBonusInfo* paImprovementBonus;	// local pointer to the bonus type struct in memory
 
 	// Skip any comments and stop at the next value we might want
@@ -2707,18 +2711,18 @@ bool CvXMLLoadUtility::SetAndLoadVar(int** ppiVar, int iDefault)
 
 //------------------------------------------------------------------------------------------------------
 //
-//  FUNCTION:   SetVariableListTagPairForAudioScripts(int **ppiList, const TCHAR* szRootTagName,
+//  FUNCTION:   SetVariableListTagPairForAudioScripts(int **ppiList, char const* szRootTagName,
 //										int iInfoBaseLength, int iDefaultListVal)
 //
 //  PURPOSE :   allocate and initialize a list from a tag pair in the xml for audio scripts
 //
 //------------------------------------------------------------------------------------------------------
-void CvXMLLoadUtility::SetVariableListTagPairForAudioScripts(int **ppiList, const TCHAR* szRootTagName, int iInfoBaseLength, int iDefaultListVal)
+void CvXMLLoadUtility::SetVariableListTagPairForAudioScripts(int **ppiList, char const* szRootTagName, int iInfoBaseLength, int iDefaultListVal)
 {
 	int i;
 	int iIndexVal;
 	int iNumSibs;
-	TCHAR szTextVal[256];
+	char szTextVal[256];
 	int* piList;
 	CvString szTemp;
 

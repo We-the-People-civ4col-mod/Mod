@@ -127,12 +127,10 @@ public:
 	bool isForceUpdate();
 	void setForceUpdate(bool bNewValue);
 	DllExport PlayerTypes getOwner() const;
-#ifdef _USRDLL
 	inline PlayerTypes getOwnerINLINE() const
 	{
 		return m_eOwner;
 	}
-#endif
 	TeamTypes getTeam() const;
 
 	ActivityTypes getActivityType() const;

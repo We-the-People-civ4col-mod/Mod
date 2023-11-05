@@ -1633,14 +1633,14 @@
         <English>I suppose we have no choice. The loss of a dozen merchant ships would come to far less than this!</English>
         <French>Je suppose que nous n'avons pas le choix ... la perte d'une douzaine de navires marchands reviendrait bien plus cher que ceci !</French>
         <German>Wir haben vermutlich keine andere Wahl. Der Verlust eines Dutzend Handelsschiffe würde uns noch viel teurer kommen.</German>
-        <Russian>Я полагаю, у нас нет выбора. Потеря дюжины торговых кораблей обойдется гораздо меньше!</Russian>
+        <Russian>Я полагаю, у нас нет выбора. Потеря дюжины торговых кораблей обойдется гораздо дороже!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PIRATEATTACK1_2</Tag>
         <English>I will never knuckle under to these blackguards! Let them taste our steel and feel our cannons!</English>
         <French>Je ne plierais jamais le genoux devant ces bandits! Faisons leur goûter notre acier et nos canons !</French>
         <German>Wir beugen uns nicht vor Banditen! Lasst sie unseren Stahl und unsere Kanonen schmecken!</German>
-        <Russian>Я никогда не сдамся этим мерзавцам! Пусть они вкусят нашу сталь и пощупают наши пушки!</Russian>
+        <Russian>Каковы наглецы?! Давно у нас на реях не болтались пираты! Готовьте флот!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PIRATEATTACK2_1</Tag>
@@ -2297,7 +2297,7 @@
         <English>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA</English>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_EVENT_TUTORIAL_END_TUTORIAL</Tag>
+        <Tag>TXT_KEY_EVENT_TUTORIAL_END_TUTORIAL_2</Tag>
         <English>Please disable tutorial quests.</English>
         <French>Veuillez désactiver les quêtes du didacticiel.</French>
         <German>Bitte die Tutorial-Quests deaktivieren.</German>

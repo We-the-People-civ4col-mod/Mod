@@ -918,13 +918,13 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 	for (int iI = 0; iI < 7; iI++)
 	// R&R, ray, adapted change from C.B., with minor modifications - END
 	{
-		if (GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("COMBAT_DIE_SIDES"), "Combat") < iDefenderOdds)
+		if (GC.getGameINLINE().getSorenRandNum(GLOBAL_DEFINE_COMBAT_DIE_SIDES, "Combat") < iDefenderOdds)
 		{
 			if (getDamage() + iAttackerDamage >= maxHitPoints())
 			{
 				if (GC.getGameINLINE().getSorenRandNum(100, "Withdrawal") < withdrawalProbability())
 				{
-					changeExperience(GC.getDefineINT("EXPERIENCE_FROM_WITHDRAWL"), pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), true);
+					changeExperience(GLOBAL_DEFINE_EXPERIENCE_FROM_WITHDRAWL, pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), true);
 					// R&R, ray, adapted change from C.B., with minor modifications
 
 					//WTP, ray Negative Promotions - START
@@ -1006,38 +1006,41 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				// attacker died, defender survives
 				int iExperience = defenseXPValue();
 				iExperience = ((iExperience * iAttackerStrength) / iDefenderStrength);
-				iExperience = range(iExperience, GC.getDefineINT("MIN_EXPERIENCE_PER_COMBAT"), GC.getDefineINT("MAX_EXPERIENCE_PER_COMBAT"));
+				iExperience = range(iExperience, GLOBAL_DEFINE_MIN_EXPERIENCE_PER_COMBAT, GLOBAL_DEFINE_MAX_EXPERIENCE_PER_COMBAT);
 				pDefender->changeExperience(iExperience, maxXPValue(), true, pPlot->getOwnerINLINE() == pDefender->getOwnerINLINE(), true);
 
 				// WTP, ray, Lieutenants and Captains - START
-				if (GET_PLAYER(pDefender->getOwnerINLINE()).isPlayable() || GET_PLAYER(pDefender->getOwnerINLINE()).isEurope())
+
+				CvPlayer& kDefendingPlayer = GET_PLAYER(pDefender->getOwnerINLINE());
+
+				if (kDefendingPlayer.isPlayable() || kDefendingPlayer.isEurope())
 				{
 					if (pDefender->getDomainType() == DOMAIN_LAND)
 					{
 						// WTP, ray, prevent unimmersive cases of Brave Lieutenants being spawned by Combat with e.g. Missioniaries
 						if(!pDefender->isCapturableLandUnit())
 						{
-							int iBraveLieutenantChance = GC.getDefineINT("LIEUTENANT_CHANCE_PER_LAND_COMBAT_IN_PERCENT");
+							int iBraveLieutenantChance = GLOBAL_DEFINE_LIEUTENANT_CHANCE_PER_LAND_COMBAT_IN_PERCENT;
 							int randomValue = GC.getGameINLINE().getSorenRandNum(100, "Check for Lieutenant");
 							if (iBraveLieutenantChance > randomValue)
 							{
-								UnitTypes eBraveLieutentantUnitTypes = (UnitTypes)GC.getCivilizationInfo(pDefender->getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT"));
-								GET_PLAYER(pDefender->getOwnerINLINE()).createBraveLieutenant(eBraveLieutentantUnitTypes, pDefender->coord());
+								UnitTypes eBraveLieutentantUnitTypes = kDefendingPlayer.getUnitType(UNITCLASS_BRAVE_LIEUTENANT);
+								kDefendingPlayer.createBraveLieutenant(eBraveLieutentantUnitTypes, pDefender->coord());
 							}
 						}
 					}
 					else
 					{
-						int iCapableCaptainChance = GC.getDefineINT("CAPTAIN_CHANCE_PER_SHIP_COMBAT_IN_PERCENT");
+						int iCapableCaptainChance = GLOBAL_DEFINE_CAPTAIN_CHANCE_PER_SHIP_COMBAT_IN_PERCENT;
 						int randomValue = GC.getGameINLINE().getSorenRandNum(100, "Check for Captain");
 						if (iCapableCaptainChance > randomValue)
 						{
-							UnitTypes eCapableCaptainUnitTypes = (UnitTypes)GC.getCivilizationInfo(pDefender->getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN"));
+							UnitTypes eCapableCaptainUnitTypes = kDefendingPlayer.getUnitType(UNITCLASS_CAPABLE_CAPTAIN);
 							int iLoop;
-							CvCity* capitalCity = GET_PLAYER(pDefender->getOwnerINLINE()).firstCity(&iLoop);
+							CvCity* capitalCity = kDefendingPlayer.firstCity(&iLoop);
 							if (capitalCity != NULL)
 							{
-								GET_PLAYER(pDefender->getOwnerINLINE()).createCapableCaptain(eCapableCaptainUnitTypes, capitalCity->coord());
+								kDefendingPlayer.createCapableCaptain(eCapableCaptainUnitTypes, capitalCity->coord());
 							}
 						}
 					}
@@ -1059,11 +1062,13 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				// defender died, attacker survives
 				int iExperience = pDefender->attackXPValue();
 				iExperience = ((iExperience * iDefenderStrength) / iAttackerStrength);
-				iExperience = range(iExperience, GC.getDefineINT("MIN_EXPERIENCE_PER_COMBAT"), GC.getDefineINT("MAX_EXPERIENCE_PER_COMBAT"));
+				iExperience = range(iExperience, GLOBAL_DEFINE_MIN_EXPERIENCE_PER_COMBAT, GLOBAL_DEFINE_MAX_EXPERIENCE_PER_COMBAT);
 				changeExperience(iExperience, pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), true);
 
+				CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+
 				// WTP, ray, Lieutenants and Captains - START
-				if (GET_PLAYER(getOwnerINLINE()).isPlayable() || GET_PLAYER(getOwnerINLINE()).isEurope())
+				if (kOwner.isPlayable() || kOwner.isEurope())
 				{
 					// WTP, ray, prevent unimmersive cases of Brave Lieutenants being spawned by Combat with e.g. Missioniaries
 					if (getDomainType() == DOMAIN_LAND)
@@ -1071,28 +1076,28 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 						// WTP, ray, prevent unimmersive cases of Brave Lieutenants being spawned by Combat with e.g. Missioniaries
 						if(!pDefender->isCapturableLandUnit())
 						{
-							const int iBraveLieutenantChance = GC.getDefineINT("LIEUTENANT_CHANCE_PER_LAND_COMBAT_IN_PERCENT");
+							const int iBraveLieutenantChance = GLOBAL_DEFINE_LIEUTENANT_CHANCE_PER_LAND_COMBAT_IN_PERCENT;
 							const int randomValue = GC.getGameINLINE().getSorenRandNum(100, "Check for Lieutenant");
 							if (iBraveLieutenantChance > randomValue)
 							{
-								const UnitTypes eBraveLieutentantUnitTypes = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT"));
-								GET_PLAYER(getOwnerINLINE()).createBraveLieutenant(eBraveLieutentantUnitTypes, coord());
+								const UnitTypes eBraveLieutentantUnitTypes = kOwner.getUnitType(UNITCLASS_BRAVE_LIEUTENANT);
+								kOwner.createBraveLieutenant(eBraveLieutentantUnitTypes, coord());
 							}
 						}
 					}
 					else
 					{
-						const int iCapableCaptainChance = GC.getDefineINT("CAPTAIN_CHANCE_PER_SHIP_COMBAT_IN_PERCENT");
+						const int iCapableCaptainChance = GLOBAL_DEFINE_CAPTAIN_CHANCE_PER_SHIP_COMBAT_IN_PERCENT;
 						const int randomValue = GC.getGameINLINE().getSorenRandNum(100, "Check for Captain");
 						if (iCapableCaptainChance > randomValue)
 						{
-							const UnitTypes eCapableCaptainUnitTypes = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN"));
+							const UnitTypes eCapableCaptainUnitTypes = kOwner.getUnitType(UNITCLASS_CAPABLE_CAPTAIN);
 							//in this case we need to get the Capitol City
 							int iLoop;
-							const CvCity* capitalCity = GET_PLAYER(getOwnerINLINE()).firstCity(&iLoop);
+							const CvCity* capitalCity = kOwner.firstCity(&iLoop);
 							if (capitalCity != 0)
 							{
-								GET_PLAYER(getOwnerINLINE()).createCapableCaptain(eCapableCaptainUnitTypes, capitalCity->coord());
+								kOwner.createCapableCaptain(eCapableCaptainUnitTypes, capitalCity->coord());
 							}
 						}
 					}
@@ -1119,11 +1124,11 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 	if (bCombatEndedUnresolved)
 	{
 		int iExperienceAttacker = std::max(1,(pDefender->attackXPValue()/2));
-		iExperienceAttacker = range(iExperienceAttacker, GC.getDefineINT("MIN_EXPERIENCE_PER_COMBAT"), GC.getDefineINT("MAX_EXPERIENCE_PER_COMBAT"));
+		iExperienceAttacker = range(iExperienceAttacker, GLOBAL_DEFINE_MIN_EXPERIENCE_PER_COMBAT, GLOBAL_DEFINE_MAX_EXPERIENCE_PER_COMBAT);
 		changeExperience(iExperienceAttacker, pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), true);
 
 		int iExperienceDefender = std::max(1,(defenseXPValue()/2));
-		iExperienceDefender = range(iExperienceDefender, GC.getDefineINT("MIN_EXPERIENCE_PER_COMBAT"), GC.getDefineINT("MAX_EXPERIENCE_PER_COMBAT"));
+		iExperienceDefender = range(iExperienceDefender, GLOBAL_DEFINE_MIN_EXPERIENCE_PER_COMBAT, GLOBAL_DEFINE_MAX_EXPERIENCE_PER_COMBAT);
 		pDefender->changeExperience(iExperienceDefender, maxXPValue(), true, pPlot->getOwnerINLINE() == pDefender->getOwnerINLINE(), true);
 
 		//WTP, ray Negative Promotions - START
@@ -1450,7 +1455,7 @@ void CvUnit::updateCombat(bool bQuick)
 
 			if (!m_pUnitInfo->isHiddenNationality() && !pDefender->getUnitInfo().isHiddenNationality())
 			{
-				GET_TEAM(pDefender->getTeam()).AI_changeWarSuccess(getTeam(), GC.getDefineINT("WAR_SUCCESS_DEFENDING"));
+				GET_TEAM(pDefender->getTeam()).AI_changeWarSuccess(getTeam(), GLOBAL_DEFINE_WAR_SUCCESS_DEFENDING);
 			}
 
 			// R&R, ray, Natives raiding party - START
@@ -1503,6 +1508,8 @@ void CvUnit::updateCombat(bool bQuick)
 		// case: Attacker won, defender died
 		else if (pDefender->isDead())
 		{
+			CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+
 			// TAC Capturing Ships - ray
 			bool displayCapturedShipMessage = false;
 
@@ -1518,8 +1525,8 @@ void CvUnit::updateCombat(bool bQuick)
 
 				if (capturingShipChance > randomShipCaptureValue)
 				{
-					bool bHasParents = (GET_PLAYER(getOwnerINLINE()).getParent() != NO_PLAYER);
-					bool bIsEurope = GET_PLAYER(getOwnerINLINE()).isEurope();
+					bool bHasParents = kOwner.getParent() != NO_PLAYER;
+					bool bIsEurope = kOwner.isEurope();
 
 					if ((bHasParents && pDefender->getUnitInfo().getDomainType() == DOMAIN_SEA) || (bIsEurope && pDefender->getUnitInfo().isCapturesShips()))
 					{
@@ -1528,7 +1535,7 @@ void CvUnit::updateCombat(bool bQuick)
 						if ((getUnitInfo().isCapturesCargo() && bAtWar) || !getUnitInfo().isCapturesCargo())
 						{
 							// duplicate defeated unit
-							CvUnit* pkCapturedUnitAfterSeaFight = GET_PLAYER(getOwnerINLINE()).initUnit(pDefender->getUnitType(), NO_PROFESSION, pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_UNITAI, NO_DIRECTION, pDefender->getYieldStored());
+							CvUnit* pkCapturedUnitAfterSeaFight = kOwner.initUnit(pDefender->getUnitType(), NO_PROFESSION, pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_UNITAI, NO_DIRECTION, pDefender->getYieldStored());
 							displayCapturedShipMessage = true;
 
 							pkCapturedUnitAfterSeaFight->setGameTurnCreated(pDefender->getGameTurnCreated());
@@ -1562,7 +1569,7 @@ void CvUnit::updateCombat(bool bQuick)
 			bool displayCapturedPrisoneOfWarMessage = false;
 
 			// We only want to have this for Military Combat between Europeans and Kings, and only during War
-			bool bAttackingPlayerInvalid = !GET_PLAYER(getOwner()).isPlayable(); // only playable Civs will capture Prisoners of War, to prevent future issues
+			bool bAttackingPlayerInvalid = !kOwner.isPlayable(); // only playable Civs will capture Prisoners of War, to prevent future issues
 			bool bDefendingPlayerInvalid = GET_PLAYER(pDefender->getOwner()).isNative() || GC.getGameINLINE().isBarbarianPlayer(pDefender->getOwner());
 			bool bAttackingUnitInvalid = getDomainType() == DOMAIN_SEA || getUnitInfo().isAnimal() || getUnitInfo().isHiddenNationality();
 			bool bDefendingUnitInvalid = pDefender->getDomainType() == DOMAIN_SEA || pDefender->getUnitInfo().isAnimal() || pDefender->isCapturableLandUnit() || pDefender->getUnitInfo().isHiddenNationality();
@@ -1579,8 +1586,8 @@ void CvUnit::updateCombat(bool bQuick)
 
 				if (capturingPrisonerOfWarChance > randomCapturePrisonerOfWarValue)
 				{	
-					UnitTypes eCapturedPrisonerOfWar = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(getOwner()).getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_PRISONER_OF_WAR"));
-					CvUnit* PrisonerOfWarUnit = GET_PLAYER(getOwner()).initUnit(eCapturedPrisonerOfWar, GC.getUnitInfo(eCapturedPrisonerOfWar).getDefaultProfession(), pDefender->plot()->coord(), NO_UNITAI);
+					UnitTypes eCapturedPrisonerOfWar = kOwner.getUnitType(UNITCLASS_PRISONER_OF_WAR);
+					CvUnit* PrisonerOfWarUnit = kOwner.initUnit(eCapturedPrisonerOfWar, GC.getUnitInfo(eCapturedPrisonerOfWar).getDefaultProfession(), pDefender->plot()->coord(), NO_UNITAI);
 					// WTP, ray, Prisoners of War should also get some damage and a Negative Promotion
 					if (PrisonerOfWarUnit != NULL)
 					{
@@ -1632,7 +1639,7 @@ void CvUnit::updateCombat(bool bQuick)
 
 				if (!bIsNativeRaid)
 				{
-					GET_TEAM(getTeam()).AI_changeWarSuccess(pDefender->getTeam(), GC.getDefineINT("WAR_SUCCESS_ATTACKING"));
+					GET_TEAM(getTeam()).AI_changeWarSuccess(pDefender->getTeam(), GLOBAL_DEFINE_WAR_SUCCESS_ATTACKING);
 					if (GET_PLAYER(getOwnerINLINE()).isNative())
 					{
 						GET_TEAM(getTeam()).AI_changeDamages(pDefender->getTeam(), -2 * pDefender->getUnitInfo().getAssetValue());
@@ -4316,7 +4323,7 @@ bool CvUnit::canLoadUnit(const CvUnit* pTransport, const CvPlot* pPlot, bool bCh
 	if (pTransport->getUnitInfo().isTroopShip() && isHuman())
 	{
 		// it is neither Goods nor a Slave
-		if (getSpecialUnitType() == NO_SPECIALUNIT && !canAttack() && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_GENERAL") && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL") && getUnitClassType() != GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT") && getUnitClassType() != GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN") && getUnitInfo().getProductionWhenUsed() <= 0)
+		if (getSpecialUnitType() == NO_SPECIALUNIT && !canAttack() && getUnitClassType() != UNITCLASS_GREAT_GENERAL && getUnitClassType() != UNITCLASS_GREAT_ADMIRAL && getUnitClassType() != UNITCLASS_BRAVE_LIEUTENANT && getUnitClassType() != UNITCLASS_CAPABLE_CAPTAIN && getUnitInfo().getProductionWhenUsed() <= 0)
 		{
 			return false;
 		}
@@ -4778,14 +4785,16 @@ bool CvUnit::canClearSpecialty() const
 		return false;
 	}
 
-	UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
+	const CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
+
+	const UnitTypes eUnit = kPlayer.getUnitType(GLOBAL_DEFINE_DEFAULT_POPULATION_UNIT);
 	if (eUnit == NO_UNIT)
 	{
 		return false;
 	}
 
 	//WTP, fix crash for clearing Unit Specialization in revolting City - START
-	CvCity* pCity = GET_PLAYER(getOwnerINLINE()).getPopulationUnitCity(getID());
+	CvCity* pCity = kPlayer.getPopulationUnitCity(getID());
 	if (pCity != NULL)
 	{
 		if (pCity->isOccupation())
@@ -4805,12 +4814,14 @@ void CvUnit::clearSpecialty()
 		return;
 	}
 
-	bool bLocked = isColonistLocked();
-	UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
-	CvUnit* pNewUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, NO_PROFESSION, getX_INLINE(), getY_INLINE(), AI_getUnitAIType());
+	const bool bLocked = isColonistLocked();
+	CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
+
+	UnitTypes eUnit = kPlayer.getUnitType(GLOBAL_DEFINE_DEFAULT_POPULATION_UNIT);
+	CvUnit* pNewUnit = kPlayer.initUnit(eUnit, NO_PROFESSION, getX_INLINE(), getY_INLINE(), AI_getUnitAIType());
 	FAssert(pNewUnit != NULL);
 
-	CvCity *pCity = GET_PLAYER(getOwnerINLINE()).getPopulationUnitCity(getID());
+	CvCity *pCity = kPlayer.getPopulationUnitCity(getID());
 	if (pCity != NULL)
 	{
 		pNewUnit->convert(this, false);
@@ -4818,7 +4829,7 @@ void CvUnit::clearSpecialty()
 		pNewUnit->setColonistLocked(bLocked);
 		// TAC - Clear specialty fix - koma13 - START
 		//pCity->removePopulationUnit(this, true, NO_PROFESSION);
-		if (GET_PLAYER(getOwnerINLINE()).getPopulationUnitCity(getID()) != NULL)
+		if (kPlayer.getPopulationUnitCity(getID()) != NULL)
 		{
 			pCity->removePopulationUnit(this, true, NO_PROFESSION);
 		}
@@ -5621,7 +5632,7 @@ void CvUnit::doLiveAmongNatives()
 
 	CvCity* pCity = plot()->getPlotCity();
 
-	pCity->setTeachUnitMultiplier(pCity->getTeachUnitMultiplier() * (100 + GC.getDefineINT("NATIVE_TEACH_THRESHOLD_INCREASE")) / 100);
+	pCity->setTeachUnitMultiplier(pCity->getTeachUnitMultiplier() * (100 + GLOBAL_DEFINE_NATIVE_TEACH_THRESHOLD_INCREASE) / 100);
 	int iLearnTime = getLearnTime();
 	if (iLearnTime > 0)
 	{
@@ -5824,7 +5835,7 @@ void CvUnit::kingTransport(bool bSkipPopup)
 		CvDiploParameters* pDiplo = new CvDiploParameters(GET_PLAYER(getOwnerINLINE()).getParent());
 		pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_TREASURE_TRANSPORT"));
 		pDiplo->setData(getID());
-		int iCommission = GC.getDefineINT("KING_TRANSPORT_TREASURE_COMISSION");
+		int iCommission = GLOBAL_DEFINE_KING_TRANSPORT_TREASURE_COMISSION;
 		pDiplo->addDiploCommentVariable(iCommission);
 		int iAmount = getYieldStored();
 		iAmount -= (iAmount * iCommission) / 100;
@@ -5841,7 +5852,7 @@ void CvUnit::kingTransport(bool bSkipPopup)
 
 void CvUnit::doKingTransport()
 {
-	GET_PLAYER(getOwnerINLINE()).sellYieldUnitToEurope(this, getYieldStored(), GC.getDefineINT("KING_TRANSPORT_TREASURE_COMISSION"));
+	GET_PLAYER(getOwnerINLINE()).sellYieldUnitToEurope(this, getYieldStored(), GLOBAL_DEFINE_KING_TRANSPORT_TREASURE_COMISSION);
 }
 
 
@@ -5966,6 +5977,7 @@ void CvUnit::establishMission()
 
 	CvCity* pCity = plot()->getPlotCity();
 	CvPlayer& kCityOwner = GET_PLAYER(pCity->getOwnerINLINE());
+	CvPlayer& kUnitOwner = GET_PLAYER(getOwnerINLINE());
 
 	// R&R, ray, Natives do not talk when furious - START
 	int currentPlayerAttitude = kCityOwner.AI_getAttitude(getOwnerINLINE(), false);
@@ -5981,12 +5993,12 @@ void CvUnit::establishMission()
 	{
 		CvWString szBuffer = gDLL->getText("TXT_KEY_MISSION_FAILED", plot()->getPlotCity()->getNameKey());
 		gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_MISSION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
-		GET_PLAYER(pCity->getOwnerINLINE()).AI_changeMemoryCount((getOwnerINLINE()), MEMORY_MISSIONARY_FAIL, 1);
+		kCityOwner.AI_changeMemoryCount((getOwnerINLINE()), MEMORY_MISSIONARY_FAIL, 1);
 
 		//Ramstormp, Disillusioned missionary - START
 		if (GC.getGameINLINE().getSorenRandNum(100, "Dis mission roll") < getFailedMissionarySurvivalPercent())
 		{
-			UnitTypes FailedMissionaryType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_FAILED_MISSIONARY"));
+			UnitTypes FailedMissionaryType = kUnitOwner.getUnitType(UNITCLASS_FAILED_MISSIONARY);
 			// WTP, ray, just for safety
 			if (FailedMissionaryType != NO_UNIT)
 			{
@@ -6001,7 +6013,7 @@ void CvUnit::establishMission()
 
 	else
 	{
-		GET_PLAYER(getOwnerINLINE()).setMissionarySuccessPercent(GET_PLAYER(getOwnerINLINE()).getMissionarySuccessPercent() * GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getMissionFailureThresholdPercent() / 100);
+		kUnitOwner.setMissionarySuccessPercent(kUnitOwner.getMissionarySuccessPercent() * GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getMissionFailureThresholdPercent() / 100);
 
 		int iMissionaryRate = GC.getProfessionInfo(getProfession()).getMissionaryRate() * (100 + getUnitInfo().getMissionaryRateModifier()) / 100;
 		if (!isHuman())
@@ -6010,18 +6022,18 @@ void CvUnit::establishMission()
 		}
 
 		// R&R, ray, Rebuild Missioning Start
-		int attitudeIncreaseForMission = GC.getDefineINT("GAIN_ATTITUDE_FOR_MISSION");
+		int attitudeIncreaseForMission = GLOBAL_DEFINE_GAIN_ATTITUDE_FOR_MISSION;
 		kCityOwner.AI_changeAttitudeExtra(getOwnerINLINE(), attitudeIncreaseForMission);
 		if (pCity->getMissionaryPlayer() != NO_PLAYER)
 		{
 			CvPlayer& oldMissionaryPlayer = GET_PLAYER(pCity->getMissionaryPlayer());
-			int attitudeDecreaseForDestroyingMission = GC.getDefineINT("OTHER_EUROPEAN_ANGRY_FOR_DESTROYING_MISSION");
+			const int attitudeDecreaseForDestroyingMission = GLOBAL_DEFINE_OTHER_EUROPEAN_ANGRY_FOR_DESTROYING_MISSION;
 			oldMissionaryPlayer.AI_changeAttitudeExtra(getOwnerINLINE(), -attitudeDecreaseForDestroyingMission);
 
 			//Ramstormp, Disillusioned Missionary - START
-			if (GC.getGameINLINE().getSorenRandNum(100, "Dis missal roll") < GC.getDefineINT("EXPELLED_MISSIONARY_SURVIVAL_CHANCE"))
+			if (GC.getGameINLINE().getSorenRandNum(100, "Dis missal roll") < GLOBAL_DEFINE_EXPELLED_MISSIONARY_SURVIVAL_CHANCE)
 			{
-				UnitTypes FailedMissionaryType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_FAILED_MISSIONARY"));
+				const UnitTypes FailedMissionaryType = kUnitOwner.getUnitType(UNITCLASS_FAILED_MISSIONARY);
 				if (FailedMissionaryType != NO_UNIT)
 				{
 					CvUnit* FailedMissionaryUnit = oldMissionaryPlayer.initUnit(FailedMissionaryType, GC.getUnitInfo(FailedMissionaryType).getDefaultProfession(), pCity->getX_INLINE(), pCity->getY_INLINE());
@@ -6095,7 +6107,9 @@ void CvUnit::establishTradePost()
 	}
 	else
 	{
-		GET_PLAYER(getOwnerINLINE()).setNativeTradePostSuccessPercent(GET_PLAYER(getOwnerINLINE()).getNativeTradePostSuccessPercent() * GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getMissionFailureThresholdPercent() / 100);
+		CvPlayer& kUnitOwner = GET_PLAYER(getOwnerINLINE());
+
+		kUnitOwner.setNativeTradePostSuccessPercent(kUnitOwner.getNativeTradePostSuccessPercent() * GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getMissionFailureThresholdPercent() / 100);
 
 		int iNativeTradeRate = GC.getProfessionInfo(getProfession()).getNativeTradeRate() * (100 + getUnitInfo().getNativeTradeRateModifier()) / 100;
 		if (!isHuman())
@@ -6104,19 +6118,19 @@ void CvUnit::establishTradePost()
 		}
 
 		// change Attitudes
-		int attitudeIncreaseForTradePost = GC.getDefineINT("GAIN_ATTITUDE_FOR_TRADE_POST");
+		int attitudeIncreaseForTradePost = GLOBAL_DEFINE_GAIN_ATTITUDE_FOR_TRADE_POST;
 		kCityOwner.AI_changeAttitudeExtra(getOwnerINLINE(), attitudeIncreaseForTradePost);
 		if (pCity->getTradePostPlayer() != NO_PLAYER)
 		{
 			CvPlayer& oldTradePostPlayer = GET_PLAYER(pCity->getTradePostPlayer());
-			int attitudeDecreaseForDestroyingTradePost = GC.getDefineINT("OTHER_EUROPEAN_ANGRY_FOR_DESTROYING_TRADE_POST");
+			int attitudeDecreaseForDestroyingTradePost = GLOBAL_DEFINE_OTHER_EUROPEAN_ANGRY_FOR_DESTROYING_TRADE_POST;
 			oldTradePostPlayer.AI_changeAttitudeExtra(getOwnerINLINE(), -attitudeDecreaseForDestroyingTradePost);
 
 			// WTP, ray, Failed Trader - START
 			// we use the same configurations for expelling existing Trader as for Missionary
-			if (GC.getGameINLINE().getSorenRandNum(100, "Dis missal roll") < GC.getDefineINT("EXPELLED_MISSIONARY_SURVIVAL_CHANCE"))
+			if (GC.getGameINLINE().getSorenRandNum(100, "Dis missal roll") < GLOBAL_DEFINE_EXPELLED_MISSIONARY_SURVIVAL_CHANCE)
 			{
-				UnitTypes FailedTraderType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_FAILED_TRADER"));
+				const UnitTypes FailedTraderType = kUnitOwner.getUnitType(UNITCLASS_FAILED_TRADER);
 				if (FailedTraderType != NO_UNIT)
 				{
 					//  WTP, ray, we still need to display a message - your trader was thrown out because new Trader and became a Failed Trader
@@ -6131,11 +6145,10 @@ void CvUnit::establishTradePost()
 		pCity->setTradePostPlayer(getOwnerINLINE());
 		pCity->setNativeTradeRate(iNativeTradeRate);
 
-		for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
+		const int gameSpeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
+		for (FatherPointTypes ePointType = FIRST_FATHER_POINT; ePointType <NUM_FATHER_POINT_TYPES; ++ePointType)
 		{
-			FatherPointTypes ePointType = (FatherPointTypes) i;
-			int gameSpeedMod =  GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
-			GET_PLAYER(getOwnerINLINE()).changeFatherPoints(ePointType, GC.getFatherPointInfo(ePointType).getMissionaryPoints() * gameSpeedMod/100);
+			kUnitOwner.changeFatherPoints(ePointType, GC.getFatherPointInfo(ePointType).getMissionaryPoints() * gameSpeedMod/100);
 		}
 	}
 
@@ -6158,7 +6171,7 @@ int CvUnit::getMissionarySuccessPercent() const
 	if (pCity == NULL || !pCity->isNative())
 	{
 		//Old Code
-		return GET_PLAYER(getOwnerINLINE()).getMissionarySuccessPercent() * (100 + (getUnitInfo().getMissionaryRateModifier() * GC.getDefineINT("MISSIONARY_RATE_EFFECT_ON_SUCCESS") / 100)) / 100;
+		return GET_PLAYER(getOwnerINLINE()).getMissionarySuccessPercent() * (100 + (getUnitInfo().getMissionaryRateModifier() * GLOBAL_DEFINE_MISSIONARY_RATE_EFFECT_ON_SUCCESS / 100)) / 100;
 	}
 
 	// 1. Find out how many missions already exist at this Native-Nation -> Missioning Rate
@@ -6183,22 +6196,22 @@ int CvUnit::getMissionarySuccessPercent() const
 	int attitudeNativeToMissioningPlayer = kCityOwner.AI_getAttitude(getOwnerINLINE(), false);
 
 	// 3. Check Attitudes of old missioninh player and existing Mission
-	int attitudeChanceImprovement = GC.getDefineINT("CHANCE_IMPROVEMENT_EACH_ATTITIUDE_LEVEL");
+	int attitudeChanceImprovement = GLOBAL_DEFINE_CHANCE_IMPROVEMENT_EACH_ATTITIUDE_LEVEL;
 	int penaltyExisingMission = 0;
 	int attitudeNativeToOldMissioningPlayer = 0;
 
 	if (pCity->getMissionaryPlayer() != NO_PLAYER)
 	{
 		attitudeNativeToOldMissioningPlayer = kCityOwner.AI_getAttitude(pCity->getMissionaryPlayer(), false);
-		penaltyExisingMission = GC.getDefineINT("CHANCE_PENALTY_OTHER_MISSION_ALREADY_EXISTS");
+		penaltyExisingMission = GLOBAL_DEFINE_CHANCE_PENALTY_OTHER_MISSION_ALREADY_EXISTS;
 	}
 
 	// 4. Getting the expertmodifier of this unit
 	int expertModifier = getUnitInfo().getMissionaryRateModifier();
 
 	// 5. Getting Min and Max
-	int minChance = GC.getDefineINT("MIN_CHANCE_MISSIONING");
-	int maxChance = GC.getDefineINT("MAX_CHANCE_MISSIONING");
+	int minChance = GLOBAL_DEFINE_MIN_CHANCE_MISSIONING;
+	int maxChance = GLOBAL_DEFINE_MAX_CHANCE_MISSIONING;
 
 	// 6. Putting it all together
 
@@ -6234,13 +6247,13 @@ int CvUnit::getFailedMissionarySurvivalPercent() const
 	// this is checking for an Expert
 	if (getUnitInfo().getMissionaryRateModifier() > 0)
 	{
-		survivalChance = GC.getDefineINT("FAILED_EXPERT_MISSIONARY_SURVIVAL_CHANCE");
+		survivalChance = GLOBAL_DEFINE_FAILED_EXPERT_MISSIONARY_SURVIVAL_CHANCE;
 	}
 
 	// otherwise it is not an Expert
 	else
 	{
-		survivalChance = GC.getDefineINT("FAILED_REGULAR_MISSIONARY_SURVIVAL_CHANCE");
+		survivalChance = GLOBAL_DEFINE_FAILED_REGULAR_MISSIONARY_SURVIVAL_CHANCE;
 	}
 
 	// just for safety if XML config was messed up, checking for smaller 0 is enough
@@ -6261,13 +6274,13 @@ int CvUnit::getFailedTraderSurvivalPercent() const
 	// this is checking for an Expert
 	if (getUnitInfo().getNativeTradeRateModifier() > 0)
 	{
-		survivalChance = GC.getDefineINT("FAILED_EXPERT_MISSIONARY_SURVIVAL_CHANCE");
+		survivalChance = GLOBAL_DEFINE_FAILED_EXPERT_MISSIONARY_SURVIVAL_CHANCE;
 	}
 
 	// otherwise it is not an Expert
 	else
 	{
-		survivalChance = GC.getDefineINT("FAILED_REGULAR_MISSIONARY_SURVIVAL_CHANCE");
+		survivalChance = GLOBAL_DEFINE_FAILED_REGULAR_MISSIONARY_SURVIVAL_CHANCE;
 	}
 
 	// just for safety if XML config was messed up, checking for smaller 0 is enough
@@ -6294,7 +6307,7 @@ int CvUnit::getNativeTradePostSuccessPercent() const
 	if (pCity == NULL || !pCity->isNative())
 	{
 		//Old Code
-		return GET_PLAYER(getOwnerINLINE()).getNativeTradePostSuccessPercent() * (100 + (getUnitInfo().getNativeTradeRateModifier() * GC.getDefineINT("TRADER_RATE_EFFECT_ON_SUCCESS") / 100)) / 100;
+		return GET_PLAYER(getOwnerINLINE()).getNativeTradePostSuccessPercent() * (100 + (getUnitInfo().getNativeTradeRateModifier() * GLOBAL_DEFINE_TRADER_RATE_EFFECT_ON_SUCCESS / 100)) / 100;
 	}
 
 	// 1. Find out how many missions already exist at this Native-Nation -> Missioning Rate
@@ -6319,22 +6332,22 @@ int CvUnit::getNativeTradePostSuccessPercent() const
 	int attitudeNativeToTradePostPlayer = kCityOwner.AI_getAttitude(getOwnerINLINE(), false);
 
 	// 3. Check Attitudes of old missioninh player and existing Mission
-	int attitudeChanceImprovement = GC.getDefineINT("CHANCE_IMPROVEMENT_EACH_ATTITIUDE_LEVEL");
+	int attitudeChanceImprovement = GLOBAL_DEFINE_CHANCE_IMPROVEMENT_EACH_ATTITIUDE_LEVEL;
 	int penaltyExisingTradePost = 0;
 	int attitudeNativeToOldTradePostPlayer = 0;
 
 	if (pCity->getTradePostPlayer() != NO_PLAYER)
 	{
 		attitudeNativeToOldTradePostPlayer = kCityOwner.AI_getAttitude(pCity->getTradePostPlayer(), false);
-		penaltyExisingTradePost = GC.getDefineINT("CHANCE_PENALTY_OTHER_TRADE_POST_ALREADY_EXISTS");
+		penaltyExisingTradePost = GLOBAL_DEFINE_CHANCE_PENALTY_OTHER_TRADE_POST_ALREADY_EXISTS;
 	}
 
 	// 4. Getting the expertmodifier of this unit
 	int expertModifier = getUnitInfo().getNativeTradeRateModifier();
 
 	// 5. Getting Min and Max
-	int minChance = GC.getDefineINT("MIN_CHANCE_TRADE_POST");
-	int maxChance = GC.getDefineINT("MAX_CHANCE_TRADE_POST");
+	const int minChance = GLOBAL_DEFINE_MIN_CHANCE_TRADE_POST;
+	const int maxChance = GLOBAL_DEFINE_MAX_CHANCE_TRADE_POST;
 
 	// 6. Putting it all together
 
@@ -6456,7 +6469,7 @@ void CvUnit::stirUpNatives()
 		CvWString szBuffer = gDLL->getText("TXT_KEY_STIR_UP_SUCCESSFULL", plot()->getPlotCity()->getNameKey());
 		gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_STIR_UP_NATIVES).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
 
-		UnitTypes DefaultUnitType = (UnitTypes)GC.getCivilizationInfo(kCityOwner.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
+		const UnitTypes DefaultUnitType = kCityOwner.getUnitType(GLOBAL_DEFINE_DEFAULT_POPULATION_UNIT);
 		if (NO_UNIT != DefaultUnitType)
 		{
 			CvUnit* pUnit = kCityOwner.initUnit(DefaultUnitType, GC.getCivilizationInfo(kCityOwner.getCivilizationType()).getDefaultProfession(), getX_INLINE(), getY_INLINE());
@@ -6494,8 +6507,8 @@ int CvUnit::getStirUpSuccessPercent() const
 
 	int attitudeNativeToMissionaryPlayer = kCityOwner.AI_getAttitude(getOwnerINLINE(), false);
 
-	int stirUpBaseChance = GC.getDefineINT("STIR_UP_BASE_CHANCE");
-	int stirUpAttitudeChange = GC.getDefineINT("STIR_UP_CHANCE_INCREASE_PER_ATTITUDE_LEVEL");
+	const int stirUpBaseChance = GLOBAL_DEFINE_STIR_UP_BASE_CHANCE;
+	const int stirUpAttitudeChange = GLOBAL_DEFINE_STIR_UP_CHANCE_INCREASE_PER_ATTITUDE_LEVEL;
 
 	int stirUpChances = stirUpBaseChance  + attitudeNativeToMissionaryPlayer * stirUpAttitudeChange;
 
@@ -6511,8 +6524,8 @@ int CvUnit::getStirUpSuccessPercent() const
 		stirUpChances = stirUpChances - 50;
 	}
 
-	int max = GC.getDefineINT("STIR_UP_CHANCE_MAX");
-	int min = GC.getDefineINT("STIR_UP_CHANCE_MIN");
+	const int max = GLOBAL_DEFINE_STIR_UP_CHANCE_MAX;
+	const int min = GLOBAL_DEFINE_STIR_UP_CHANCE_MIN;
 
 	if (stirUpChances > max)
 	{
@@ -6706,7 +6719,7 @@ bool CvUnit::canHeal(const CvPlot* pPlot) const
 	//WTP, ray Negative Promotions - START
 	//we allow to heal also if Health is perfect if a negative Promotion exists
 	//if (!isHurt())
-	if (!isHurt() && !isHasNegativePromotion())
+	if (!isHurt() && !hasNegativePromotion())
 	//WTP, ray Negative Promotions - END
 	{
 		return false;
@@ -6769,7 +6782,7 @@ int CvUnit::healRate(const CvPlot* pPlot) const
 
 	if (pPlot->isCity(true, getTeam()))
 	{
-		iTotalHeal += (GC.getDefineINT("CITY_HEAL_RATE") * (100 + (GET_TEAM(getTeam()).isFriendlyTerritory(pPlot->getTeam()) ? getExtraFriendlyHeal() : getExtraNeutralHeal()))) / 100;
+		iTotalHeal += (GLOBAL_DEFINE_CITY_HEAL_RATE * (100 + (GET_TEAM(getTeam()).isFriendlyTerritory(pPlot->getTeam()) ? getExtraFriendlyHeal() : getExtraNeutralHeal()))) / 100;
 		CvCity* pCity = pPlot->getPlotCity();
 		if (pCity && !pCity->isOccupation())
 		{
@@ -6782,16 +6795,16 @@ int CvUnit::healRate(const CvPlot* pPlot) const
 		{
 			if (isEnemy(pPlot->getTeam(), pPlot))
 			{
-				iTotalHeal += (GC.getDefineINT("ENEMY_HEAL_RATE") * (100 + getExtraEnemyHeal())) / 100;
+				iTotalHeal += (GLOBAL_DEFINE_ENEMY_HEAL_RATE * (100 + getExtraEnemyHeal())) / 100;
 			}
 			else
 			{
-				iTotalHeal += (GC.getDefineINT("NEUTRAL_HEAL_RATE") * (100 + getExtraNeutralHeal())) / 100;;
+				iTotalHeal += (GLOBAL_DEFINE_NEUTRAL_HEAL_RATE * (100 + getExtraNeutralHeal())) / 100;;
 			}
 		}
 		else
 		{
-			iTotalHeal += (GC.getDefineINT("FRIENDLY_HEAL_RATE") * (100 + getExtraFriendlyHeal())) / 100;;
+			iTotalHeal += (GLOBAL_DEFINE_FRIENDLY_HEAL_RATE * (100 + getExtraFriendlyHeal())) / 100;;
 		}
 	}
 
@@ -7316,7 +7329,7 @@ bool CvUnit::found()
 	if (eParent != NO_PLAYER && !GC.getEraInfo(kPlayer.getCurrentEra()).isRevolution() && !isAutomated())
 	{
 		int iFoodDifference = plot()->calculateNatureYield(YIELD_FOOD, getTeam(), true) - GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION;
-		bool bInland = !plot()->isCoastalLand(GC.getDefineINT("MIN_WATER_SIZE_FOR_OCEAN"));
+		bool bInland = !plot()->isCoastalLand(GLOBAL_DEFINE_MIN_WATER_SIZE_FOR_OCEAN);
 
 		DiploCommentTypes eDiploComment = NO_DIPLOCOMMENT;
 		if (iFoodDifference < 0 && kPlayer.shouldDisplayFeatPopup(FEAT_CITY_NO_FOOD))
@@ -7479,7 +7492,7 @@ void CvUnit::buyLandAfterAcquire()
 		}
 
 		OOS_LOG("CvUnit::buyLandAfterAcquire", m_iMoneyToBuyLand);
-		GET_PLAYER(m_ePlayerToBuyLand).changeGold((m_iMoneyToBuyLand * GC.getDefineINT("BUY_PLOT_SELLER_INCOME_PERCENT")) / 100);
+		GET_PLAYER(m_ePlayerToBuyLand).changeGold((m_iMoneyToBuyLand * GLOBAL_DEFINE_BUY_PLOT_SELLER_INCOME_PERCENT) / 100);
 		GET_PLAYER(getOwnerINLINE()).AI_changeGoldTradedTo(m_ePlayerToBuyLand, m_iMoneyToBuyLand);
 		GET_PLAYER(getOwnerINLINE()).changeGold(m_iMoneyToBuyLand * -1);
 	}
@@ -7566,13 +7579,13 @@ bool CvUnit::doFound(bool bBuyLand)
 		// Militia
 		if (iFreeUnitRand <= 3)
 		{
-			eFreeDefender = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_MILITIA"));
+			eFreeDefender = kPlayer.getUnitType(UNITCLASS_MILITIA);
 		}
 
 		// Veteran
 		else if (iFreeUnitRand <= 7)
 		{
-			eFreeDefender = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_VETERAN"));
+			eFreeDefender = kPlayer.getUnitType(UNITCLASS_VETERAN);
 		}
 
 		// currently usually a cannon
@@ -7896,19 +7909,20 @@ bool CvUnit::canPromote(PromotionTypes ePromotion, int iLeaderUnitId) const
 			return false;
 		}
 
+		const CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
+
 		// WTP, ray, Lieutenants and Captains - START
 		bool bAlradyHasLeader = false;
-		UnitTypes eGeneralUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_GREAT_GENERAL"));
-		UnitTypes eAdmiralUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL"));
-		UnitTypes eLieutenantUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT"));
-		UnitTypes eCaptainUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN"));
+		const UnitTypes eGeneralUnit = kPlayer.getUnitType(UNITCLASS_GREAT_GENERAL);
+		const UnitTypes eAdmiralUnit = kPlayer.getUnitType(UNITCLASS_GREAT_ADMIRAL);
+		const UnitTypes eLieutenantUnit = kPlayer.getUnitType(UNITCLASS_BRAVE_LIEUTENANT);
+		const UnitTypes eCaptainUnit = kPlayer.getUnitType(UNITCLASS_CAPABLE_CAPTAIN);
 
-		int iGeneralPromotion = GC.getUnitInfo(eGeneralUnit).getLeaderPromotion();
-		int iAdmiralPromotion = GC.getUnitInfo(eAdmiralUnit).getLeaderPromotion();
-		int LieutenantPromotion = GC.getUnitInfo(eLieutenantUnit).getLeaderPromotion();
-		int iCaptainPromotion = GC.getUnitInfo(eCaptainUnit).getLeaderPromotion();
-
-		if (isHasPromotion((PromotionTypes) iGeneralPromotion) || isHasPromotion((PromotionTypes) iAdmiralPromotion) || isHasPromotion((PromotionTypes) LieutenantPromotion) || isHasPromotion((PromotionTypes) iCaptainPromotion))
+		if (   isHasPromotion(GC.getUnitInfo(eGeneralUnit)   .getLeaderPromotion()) 
+			|| isHasPromotion(GC.getUnitInfo(eAdmiralUnit)   .getLeaderPromotion())
+			|| isHasPromotion(GC.getUnitInfo(eLieutenantUnit).getLeaderPromotion())
+			|| isHasPromotion(GC.getUnitInfo(eCaptainUnit)   .getLeaderPromotion())
+			)
 		{
 			bAlradyHasLeader = true;
 		}
@@ -7924,7 +7938,7 @@ bool CvUnit::canPromote(PromotionTypes ePromotion, int iLeaderUnitId) const
 			return false;
 		}
 
-		CvUnit* pWarlord = GET_PLAYER(getOwnerINLINE()).getUnit(iLeaderUnitId);
+		CvUnit* pWarlord = kPlayer.getUnit(iLeaderUnitId);
 		if (pWarlord == NULL)
 		{
 			return false;
@@ -8024,7 +8038,7 @@ bool CvUnit::lead(int iUnitId)
 		return false;
 	}
 
-	PromotionTypes eLeaderPromotion = (PromotionTypes)m_pUnitInfo->getLeaderPromotion();
+	PromotionTypes eLeaderPromotion = m_pUnitInfo->getLeaderPromotion();
 
 	if (-1 == iUnitId)
 	{
@@ -8086,7 +8100,7 @@ int CvUnit::canLead(const CvPlot* pPlot, int iUnitId) const
 			if (pUnit != NULL && pUnit != this &&
 				((kUnitInfo.getDomainType() == DOMAIN_LAND && pUnit->canAttack()) || (kUnitInfo.getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20)))
 			{
-				if (pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canPromote((PromotionTypes)kUnitInfo.getLeaderPromotion(), getID()))
+				if (pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canPromote(kUnitInfo.getLeaderPromotion(), getID()))
 				{
 					++iNumUnits;
 				}
@@ -8103,7 +8117,7 @@ int CvUnit::canLead(const CvPlot* pPlot, int iUnitId) const
 		if (pUnit != NULL && pUnit != this &&
 			((kUnitInfo.getDomainType() == DOMAIN_LAND && pUnit->canAttack()) || (kUnitInfo.getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20)))
 		{
-			if (pUnit->canPromote((PromotionTypes)kUnitInfo.getLeaderPromotion(), getID()))
+			if (pUnit->canPromote(kUnitInfo.getLeaderPromotion(), getID()))
 			{
 				iNumUnits = 1;
 			}
@@ -8231,7 +8245,7 @@ bool CvUnit::giveExperience()
 
 int CvUnit::getStackExperienceToGive(int iNumUnits) const
 {
-	return (m_pUnitInfo->getLeaderExperience() * (100 + std::min(50, (iNumUnits - 1) * GC.getDefineINT("WARLORD_EXTRA_EXPERIENCE_PER_UNIT_PERCENT")))) / 100;
+	return (m_pUnitInfo->getLeaderExperience() * (100 + std::min(50, (iNumUnits - 1) * GLOBAL_DEFINE_WARLORD_EXTRA_EXPERIENCE_PER_UNIT_PERCENT))) / 100;
 }
 
 int CvUnit::upgradePrice(UnitTypes eUnit) const
@@ -8249,9 +8263,9 @@ int CvUnit::upgradePrice(UnitTypes eUnit) const
 		return lResult;
 	}
 
-	iPrice = GC.getDefineINT("BASE_UNIT_UPGRADE_COST");
+	iPrice = GLOBAL_DEFINE_BASE_UNIT_UPGRADE_COST;
 
-	iPrice += (std::max(0, (GET_PLAYER(getOwnerINLINE()).getYieldProductionNeeded(eUnit, YIELD_HAMMERS) - GET_PLAYER(getOwnerINLINE()).getYieldProductionNeeded(getUnitType(), YIELD_HAMMERS))) * GC.getDefineINT("UNIT_UPGRADE_COST_PER_PRODUCTION"));
+	iPrice += (std::max(0, (GET_PLAYER(getOwnerINLINE()).getYieldProductionNeeded(eUnit, YIELD_HAMMERS) - GET_PLAYER(getOwnerINLINE()).getYieldProductionNeeded(getUnitType(), YIELD_HAMMERS))) * GLOBAL_DEFINE_UNIT_UPGRADE_COST_PER_PRODUCTION);
 
 	if (!isHuman())
 	{
@@ -8572,9 +8586,9 @@ void CvUnit::upgrade(UnitTypes eUnit)
 
 	if (pUpgradeUnit->getLeaderUnitType() == NO_UNIT)
 	{
-		if (pUpgradeUnit->getExperience() > GC.getDefineINT("MAX_EXPERIENCE_AFTER_UPGRADE"))
+		if (pUpgradeUnit->getExperience() > GLOBAL_DEFINE_MAX_EXPERIENCE_AFTER_UPGRADE)
 		{
-			pUpgradeUnit->setExperience(GC.getDefineINT("MAX_EXPERIENCE_AFTER_UPGRADE"));
+			pUpgradeUnit->setExperience(GLOBAL_DEFINE_MAX_EXPERIENCE_AFTER_UPGRADE);
 		}
 	}
 }
@@ -9742,7 +9756,7 @@ int CvUnit::maxXPValue() const
 	// WTP, XP cap to prevent farming XP from Animals
 	if (getUnitInfo().isAnimal())
 	{
-		iMaxValue = std::min(iMaxValue, GC.getDefineINT("ANIMAL_MAX_XP_VALUE"));
+		iMaxValue = std::min(iMaxValue, GLOBAL_DEFINE_ANIMAL_MAX_XP_VALUE);
 	}
 
 	// WTP, XP cap to prevent farming XP from Runaways
@@ -9753,7 +9767,7 @@ int CvUnit::maxXPValue() const
 		ProfessionTypes eUnitProfession = getProfession();
 		if (eUnitProfession != NO_PROFESSION && GC.getProfessionInfo(eUnitProfession).getCombatChange() <= 1)
 		{
-			iMaxValue = std::min(iMaxValue, GC.getDefineINT("ESCAPE_MAX_XP_VALUE"));
+			iMaxValue = std::min(iMaxValue, GLOBAL_DEFINE_ESCAPE_MAX_XP_VALUE);
 		}
 	}
 
@@ -10027,7 +10041,7 @@ int CvUnit::rebelModifier(PlayerTypes eOtherPlayer) const
 		return 0;
 	}
 
-	int iModifier = std::max(0, GET_TEAM(getTeam()).getRebelPercent() - GC.getDefineINT("REBEL_PERCENT_FOR_REVOLUTION"));
+	int iModifier = std::max(0, GET_TEAM(getTeam()).getRebelPercent() - GLOBAL_DEFINE_REBEL_PERCENT_FOR_REVOLUTION);
 
 	iModifier *= GET_PLAYER(getOwnerINLINE()).getRebelCombatPercent();
 	iModifier /= 100;
@@ -10790,7 +10804,7 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 		{
 			if (isEnemy(pNewCity->getTeam()) && !canCoexistWithEnemyUnit(pNewCity->getTeam()) && canFight())
 			{
-				GET_TEAM(getTeam()).AI_changeWarSuccess(pNewCity->getTeam(), GC.getDefineINT("WAR_SUCCESS_CITY_CAPTURING"));
+				GET_TEAM(getTeam()).AI_changeWarSuccess(pNewCity->getTeam(), GLOBAL_DEFINE_WAR_SUCCESS_CITY_CAPTURING);
 				PlayerTypes eNewOwner = GET_PLAYER(getOwnerINLINE()).pickConqueredCityOwner(*pNewCity);
 
 				if (NO_PLAYER != eNewOwner)
@@ -11449,7 +11463,7 @@ int CvUnit::getFortifyTurns() const
 
 void CvUnit::setFortifyTurns(int iNewValue)
 {
-	iNewValue = range(iNewValue, 0, GC.getDefineINT("MAX_FORTIFY_TURNS"));
+	iNewValue = range(iNewValue, 0, GLOBAL_DEFINE_MAX_FORTIFY_TURNS);
 
 	if (iNewValue != getFortifyTurns())
 	{
@@ -11602,7 +11616,7 @@ int CvUnit::getExtraMoves() const
 void CvUnit::changeExtraMoves(int iChange)
 {
 	m_iExtraMoves += iChange;
-	FAssert(getExtraMoves() >= 0);
+	FAssert(getExtraMoves() >= 0 || hasNegativePromotion());
 }
 
 
@@ -12730,7 +12744,7 @@ CivilizationTypes CvUnit::getVisualCiv(TeamTypes eForTeam) const
 	PlayerTypes eOwner = getVisualOwner(eForTeam);
 	if (eOwner == UNKNOWN_PLAYER)
 	{
-		return (CivilizationTypes) GC.getDefineINT("BARBARIAN_CIVILIZATION");
+		return CIVILIZATION_BARBARIAN;
 	}
 
 	return GET_PLAYER(eOwner).getCivilizationType();
@@ -13461,7 +13475,7 @@ void CvUnit::cleanseAllNegativePromotions()
 	return;
 }
 
-bool CvUnit::isHasNegativePromotion() const
+bool CvUnit::hasNegativePromotion() const
 {
 	bool bHasNegativePromotion = false;
 	for (int iI = 0; iI < GC.getNumPromotionInfos(); ++iI)
@@ -13536,7 +13550,7 @@ bool CvUnit::isPromotionValid(PromotionTypes ePromotion) const
 		return false;
 	}
 
-	if (kPromotion.getWithdrawalChange() + withdrawalProbability() > GC.getDefineINT("MAX_WITHDRAWAL_PROBABILITY"))
+	if (kPromotion.getWithdrawalChange() + withdrawalProbability() > GLOBAL_DEFINE_MAX_WITHDRAWAL_PROBABILITY)
 	{
 		return false;
 	}
@@ -14167,11 +14181,11 @@ void CvUnit::getDefenderCombatValues(CvUnit& kDefender, const CvPlot* pPlot, int
 	FAssert((iOurStrength + iTheirStrength) > 0);
 	FAssert((iOurFirepower + iTheirFirepower) > 0);
 
-	iTheirOdds = ((GC.getDefineINT("COMBAT_DIE_SIDES") * iTheirStrength) / (iOurStrength + iTheirStrength));
+	iTheirOdds = ((GLOBAL_DEFINE_COMBAT_DIE_SIDES * iTheirStrength) / (iOurStrength + iTheirStrength));
 	int iStrengthFactor = ((iOurFirepower + iTheirFirepower + 1) / 2);
 
-	iOurDamage = std::max(1, ((GC.getDefineINT("COMBAT_DAMAGE") * (iTheirFirepower + iStrengthFactor)) / (iOurFirepower + iStrengthFactor)));
-	iTheirDamage = std::max(1, ((GC.getDefineINT("COMBAT_DAMAGE") * (iOurFirepower + iStrengthFactor)) / (iTheirFirepower + iStrengthFactor)));
+	iOurDamage = std::max(1, ((GLOBAL_DEFINE_COMBAT_DAMAGE * (iTheirFirepower + iStrengthFactor)) / (iOurFirepower + iStrengthFactor)));
+	iTheirDamage = std::max(1, ((GLOBAL_DEFINE_COMBAT_DAMAGE * (iOurFirepower + iStrengthFactor)) / (iTheirFirepower + iStrengthFactor)));
 }
 
 int CvUnit::getTriggerValue(EventTriggerTypes eTrigger, const CvPlot* pPlot, bool bCheckPlot) const
@@ -14347,7 +14361,7 @@ const CvArtInfoUnit* CvUnit::getArtInfo(int i) const
 	//Androrc End
 }
 
-const TCHAR* CvUnit::getButton() const
+char const* CvUnit::getButton() const
 {
 	const CvArtInfoUnit* pArtInfo = getArtInfo(0);
 
@@ -14359,7 +14373,7 @@ const TCHAR* CvUnit::getButton() const
 	return m_pUnitInfo->getButton();
 }
 
-const TCHAR* CvUnit::getFullLengthIcon() const
+char const* CvUnit::getFullLengthIcon() const
 {
 	const CvArtInfoUnit* pArtInfo = getArtInfo(0);
 
@@ -15655,7 +15669,7 @@ bool CvUnit::raidCity(CvCity* pCity)
 			{
 				CvPlayer& kPlayer = GET_PLAYER(pCity->getOwnerINLINE());
 
-				UnitTypes SlaveType = (UnitTypes)GC.getCivilizationInfo(kPlayer.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_NATIVE_SLAVE"));
+				UnitTypes SlaveType = kPlayer.getUnitType(UNITCLASS_NATIVE_SLAVE);
 				CvUnit* SlaveUnit = kPlayer.initUnit(SlaveType, GC.getUnitInfo(SlaveType).getDefaultProfession(), pCity->getX_INLINE(), pCity->getY_INLINE(), NO_UNITAI);
 
 				CvWString szString = gDLL->getText("TXT_KEY_RAIDING_NATIVE_CAPTURED", GC.getCivilizationInfo(getCivilizationType()).getAdjectiveKey(), pCity->getNameKey());
@@ -16321,13 +16335,13 @@ void CvUnit::createTreasures(int overallAmount, int maxTreasureGold)
 
 	int restAmount = overallAmount - (treasureCount_MaxAmount * maxTreasureGold);
 
-	UnitClassTypes eUnitClass = (UnitClassTypes)GC.getDefineINT("TREASURE_UNITCLASS");
+	const UnitClassTypes eUnitClass = UNITCLASS_TREASURE;
 	if (eUnitClass == NO_UNITCLASS)
 	{
 		FAssertMsg(eUnitClass != NO_UNITCLASS, "Failed to find treasure unitclass while merging");
 		return; //Something went wrong
 	}
-	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass);
+	const UnitTypes eUnit = GET_PLAYER(getOwnerINLINE()).getUnitType(eUnitClass);
 
 	if (eUnit == NO_UNIT)
 	{
@@ -16390,7 +16404,7 @@ void CvUnit::useProductionSupplies()
 		return;
 	}
 
-	iProductionSuppliesToBeUsed *= GC.getDefineINT("UNIT_PRODUCTION_PERCENT");
+	iProductionSuppliesToBeUsed *= GLOBAL_DEFINE_UNIT_PRODUCTION_PERCENT;
 	iProductionSuppliesToBeUsed /= 100;
 
 	iProductionSuppliesToBeUsed *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
@@ -16590,8 +16604,7 @@ bool CvUnit::isPrisonerOrSlave() const
 {
 	const UnitClassTypes unitClassIntToBeChecked = m_pUnitInfo->getUnitClassType();
 
-	// TODO: optimize this one to avoid using getDefineINT
-	if (unitClassIntToBeChecked == GC.getDefineINT("UNITCLASS_PRISONER") || unitClassIntToBeChecked == GC.getDefineINT("UNITCLASS_NATIVE_SLAVE") || unitClassIntToBeChecked == GC.getDefineINT("UNITCLASS_AFRICAN_SLAVE"))
+	if (unitClassIntToBeChecked == UNITCLASS_PRISONER_OF_WAR || unitClassIntToBeChecked == UNITCLASS_NATIVE_SLAVE || unitClassIntToBeChecked == UNITCLASS_AFRICAN_SLAVE)
 	{
 		return true;
 	}

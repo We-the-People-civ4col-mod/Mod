@@ -2,7 +2,7 @@
 #include "OpenURL.h"
 #include <algorithm>
 
-#include <shellapi.h>
+#include <ShellAPI.h>
 
 static std::string FixURL(std::string URL)
 {
@@ -26,7 +26,7 @@ void OpenURL::openURL(const char* URL)
 	}
 	std::string URL_buffer = FixURL(URL);
 
-	::ShellExecute(0, NULL, app.c_str(), _T(URL_buffer.c_str()), NULL, SW_SHOWNORMAL);
+	::ShellExecute(0, NULL, app.c_str(), URL_buffer.c_str(), NULL, SW_SHOWNORMAL);
 }
 
 void OpenURL::openReadme(const std::string section)
@@ -60,9 +60,9 @@ std::string OpenURL::getBrowser()
 {
 	std::string readme = GetDLLPath(true);
 	readme.append("\\..\\readme.html");
-	TCHAR app[MAX_PATH] = { 0 };
+	char app[MAX_PATH] = { 0 };
 
-	int result = (int)::FindExecutable(_T(readme.c_str()), NULL, app);
+	int result = (int)::FindExecutable(readme.c_str(), NULL, app);
 	if (result > 32)
 	{
 		return app;

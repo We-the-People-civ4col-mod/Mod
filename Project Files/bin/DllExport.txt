@@ -46,9 +46,9 @@ CvCity.h
 	DllExport CLLNode<OrderData>* nextOrderQueueNode(CLLNode<OrderData>* pNode) const;
 	DllExport CLLNode<OrderData>* headOrderQueueNode() const;
 	DllExport void getVisibleBuildings(std::list<BuildingTypes>& kVisible, int& iNumGenerics) const;
-	DllExport void getVisibleEffects(ZoomLevelTypes eCurrentZoom, std::vector<const TCHAR*>& kEffectNames) const;
+	DllExport void getVisibleEffects(ZoomLevelTypes eCurrentZoom, std::vector<char const*>& kEffectNames) const;
 	DllExport void getCityBillboardSizeIconColors(NiColorA& kDotColor, NiColorA& kTextColor) const;
-	DllExport const TCHAR* getCityBillboardProductionIcon() const;
+	DllExport char const* getCityBillboardProductionIcon() const;
 	DllExport bool getCityBillboardTopBarValues(float& fStored, float& fRate, float& fRateExtra) const;
 	DllExport bool getCityBillboardBottomBarValues(float& fStored, float& fRate, float& fRateExtra) const;
 	DllExport const std::vector< std::pair<float, float> >& getWallOverridePoints() const;
@@ -777,11 +777,11 @@ CvInfoWater.h
 	DllExport float getTextureScaling() const;				// The water plane's texture scale
 	DllExport float getTextureScrollRateU() const;			// The water plane's texture scroll rate in U
 	DllExport float getTextureScrollRateV() const;			// The water plane's texture scroll rate in V
-	DllExport const TCHAR *getBaseTexture() const;
-	DllExport const TCHAR *getNormalTexture() const;
-	DllExport const TCHAR *getTransitionTexture() const;
-	DllExport const TCHAR *getEnvironmentTexture() const;
-	DllExport const TCHAR *getGridTexture() const;
+	DllExport char const* getBaseTexture() const;
+	DllExport char const* getNormalTexture() const;
+	DllExport char const* getTransitionTexture() const;
+	DllExport char const* getEnvironmentTexture() const;
+	DllExport char const* getGridTexture() const;
 	DllExport bool read(CvXMLLoadUtility*);
 	DllExport CvTerrainPlaneInfo();
 	DllExport virtual ~CvTerrainPlaneInfo();
@@ -796,15 +796,15 @@ CvInfoWater.h
 	DllExport float getTextureScrollRateV() const;			// The terrain plane's texture scroll rate in V
 	DllExport float getZHeight() const;						// The terrain plane's z height in world units
 	DllExport FogTypes getFogType() const;
-	DllExport const TCHAR * getBaseTexture() const;
-	DllExport void setBaseTexture(const TCHAR* szVal);		// The filename of the base texture
+	DllExport char const* getBaseTexture() const;
+	DllExport void setBaseTexture(char const* szVal);		// The filename of the base texture
 	DllExport bool read(CvXMLLoadUtility*);
 	DllExport CvCameraOverlayInfo();
 	DllExport virtual ~CvCameraOverlayInfo();
 	DllExport bool isVisible() const;				// The terrain plane's material alpha
 	DllExport CameraOverlayTypes getCameraOverlayType() const;
-	DllExport const TCHAR * getBaseTexture() const;
-	DllExport void setBaseTexture(const TCHAR* szVal);		// The filename of the base texture
+	DllExport char const* getBaseTexture() const;
+	DllExport void setBaseTexture(char const* szVal);		// The filename of the base texture
 	DllExport bool read(CvXMLLoadUtility*);
 CvInitCore.h
 	DllExport void init(GameMode eMode);
@@ -973,7 +973,7 @@ CvPlayer.h
 	DllExport bool isInvertFlag() const;
 	DllExport const CvWString getWorstEnemyName() const;
 	DllExport ArtStyleTypes getArtStyleType() const;
-	DllExport const TCHAR* getUnitButton(UnitTypes eUnit) const;
+	DllExport char const* getUnitButton(UnitTypes eUnit) const;
 	DllExport bool hasBusyUnit() const;
 	DllExport bool canContact(PlayerTypes ePlayer) const;
 	DllExport void handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer, int iData1, int iData2);
@@ -1161,10 +1161,10 @@ CvRandom.h
 	DllExport CvRandom();
 	DllExport virtual ~CvRandom();
 	DllExport void init(unsigned long ulSeed);
-	DllExport unsigned short get(unsigned short usNum, const TCHAR* pszLog = NULL);  //  Returns value from 0 to num-1 inclusive.
+	DllExport unsigned short get(unsigned short usNum, char const* pszLog = NULL);  //  Returns value from 0 to num-1 inclusive.
 	DllExport float getFloat();
 	DllExport float getGaussian(float fMean, float fStandardDeviation);
-	DllExport void shuffleSequence(std::vector<int>& aNumbers, const TCHAR* pszLog);
+	DllExport void shuffleSequence(std::vector<int>& aNumbers, char const* pszLog);
 CvReplayInfo.h
 	DllExport CvReplayInfo();
 	DllExport int getMapHeight() const;
@@ -1308,7 +1308,7 @@ CvUnit.h
 	DllExport bool isEnemy(TeamTypes eTeam, const CvPlot* pPlot = NULL) const;
 	DllExport bool isOnMap() const;
 	DllExport const CvArtInfoUnit* getArtInfo(int i) const;
-	DllExport const TCHAR* getButton() const;
+	DllExport char const* getButton() const;
 CvXMLLoadUtility.h
 	DllExport CvXMLLoadUtility();
 	DllExport ~CvXMLLoadUtility(void);

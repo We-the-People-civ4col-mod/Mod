@@ -2534,7 +2534,7 @@ CvString& CvGlobals::getFootstepAudioTags(int i)
 	return m_paszFootstepAudioTags[i];
 }
 
-void CvGlobals::setCurrentXMLFile(const TCHAR* szFileName)
+void CvGlobals::setCurrentXMLFile(char const* szFileName)
 {
 	m_szCurrentXMLFile = szFileName;
 }

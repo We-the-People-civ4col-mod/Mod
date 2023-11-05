@@ -838,72 +838,72 @@
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_FOOD</Type>
-            <Description>TXT_KEY_UNITCLASS_FOOD</Description>
+            <Description>TXT_KEY_YIELD_FOOD</Description>
             <DefaultUnit>UNIT_FOOD</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_LUMBER</Type>
-            <Description>TXT_KEY_UNITCLASS_LUMBER</Description>
+            <Description>TXT_KEY_YIELD_LUMBER</Description>
             <DefaultUnit>UNIT_LUMBER</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_HARDWOOD</Type>
-            <Description>TXT_KEY_UNITCLASS_HARDWOOD</Description>
+            <Description>TXT_KEY_YIELD_HARDWOOD</Description>
             <DefaultUnit>UNIT_HARDWOOD</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_STONE</Type>
-            <Description>TXT_KEY_UNITCLASS_STONE</Description>
+            <Description>TXT_KEY_YIELD_STONE</Description>
             <DefaultUnit>UNIT_STONE</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_CLAY</Type>
-            <Description>TXT_KEY_UNITCLASS_CLAY</Description>
+            <Description>TXT_KEY_YIELD_CLAY</Description>
             <DefaultUnit>UNIT_CLAY</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_ORE</Type>
-            <Description>TXT_KEY_UNITCLASS_ORE</Description>
+            <Description>TXT_KEY_YIELD_ORE</Description>
             <DefaultUnit>UNIT_ORE</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_COAL</Type>
-            <Description>TXT_KEY_UNITCLASS_COAL</Description>
+            <Description>TXT_KEY_YIELD_COAL</Description>
             <DefaultUnit>UNIT_COAL</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_CHAR_COAL</Type>
-            <Description>TXT_KEY_UNITCLASS_CHAR_COAL</Description>
+            <Description>TXT_KEY_YIELD_CHAR_COAL</Description>
             <DefaultUnit>UNIT_CHAR_COAL</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_PEAT</Type>
-            <Description>TXT_KEY_UNITCLASS_PEAT</Description>
+            <Description>TXT_KEY_YIELD_PEAT</Description>
             <DefaultUnit>UNIT_PEAT</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_SILVER</Type>
-            <Description>TXT_KEY_UNITCLASS_SILVER</Description>
+            <Description>TXT_KEY_YIELD_SILVER</Description>
             <DefaultUnit>UNIT_SILVER</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_GOLD</Type>
-            <Description>TXT_KEY_UNITCLASS_GOLD</Description>
+           <Description>TXT_KEY_YIELD_GOLD</Description>
             <DefaultUnit>UNIT_GOLD</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_GEMS</Type>
-            <Description>TXT_KEY_UNITCLASS_GEMS</Description>
+            <Description>TXT_KEY_YIELD_GEMS</Description>
             <DefaultUnit>UNIT_GEMS</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_RICE</Type>
-            <Description>TXT_KEY_UNITCLASS_RICE</Description>
+            <Description>TXT_KEY_YIELD_RICE</Description>
             <DefaultUnit>UNIT_RICE</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_CASSAVA</Type>
-            <Description>TXT_KEY_UNITCLASS_CASSAVA</Description>
+            <Description>TXT_KEY_YIELD_CASSAVA</Description>
             <DefaultUnit>UNIT_CASSAVA</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
@@ -1058,12 +1058,12 @@
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_HEMP</Type>
-            <Description>TXT_KEY_UNITCLASS_HEMP</Description>
+            <Description>TXT_KEY_YIELD_HEMP</Description>
             <DefaultUnit>UNIT_HEMP</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_FLAX</Type>
-            <Description>TXT_KEY_UNITCLASS_FLAX</Description>
+            <Description>TXT_KEY_YIELD_FLAX</Description>
             <DefaultUnit>UNIT_FLAX</DefaultUnit>
         </UnitClassInfo>        
         <UnitClassInfo>
@@ -1073,7 +1073,7 @@
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_VALUABLE_WOOD</Type>
-            <Description>TXT_KEY_UNITCLASS_VALUABLE_WOOD</Description>
+            <Description>TXT_KEY_YIELD_VALUABLE_WOOD</Description>
             <DefaultUnit>UNIT_VALUABLE_WOOD</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
@@ -1218,12 +1218,12 @@
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_ROPE</Type>
-            <Description>TXT_KEY_UNITCLASS_ROPE</Description>
+            <Description>TXT_KEY_YIELD_ROPE</Description>
             <DefaultUnit>UNIT_ROPE</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_SAILCLOTH</Type>
-            <Description>TXT_KEY_UNITCLASS_SAILCLOTH</Description>
+            <Description>TXT_KEY_YIELD_SAILCLOTH</Description>
             <DefaultUnit>UNIT_SAILCLOTH</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
@@ -1248,17 +1248,17 @@
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_TOOLS</Type>
-            <Description>TXT_KEY_UNITCLASS_TOOLS</Description>
+            <Description>TXT_KEY_YIELD_TOOLS</Description>
             <DefaultUnit>UNIT_TOOLS</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_BLADES</Type>
-            <Description>TXT_KEY_UNITCLASS_BLADES</Description>
+            <Description>TXT_KEY_YIELD_BLADES</Description>
             <DefaultUnit>UNIT_BLADES</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_MUSKETS</Type>
-            <Description>TXT_KEY_UNITCLASS_MUSKETS</Description>
+            <Description>TXT_KEY_YIELD_MUSKETS</Description>
             <DefaultUnit>UNIT_MUSKETS</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
@@ -1273,42 +1273,42 @@
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_SHEEP</Type>
-            <Description>TXT_KEY_UNITCLASS_SHEEP</Description>
+            <Description>TXT_KEY_YIELD_SHEEP</Description>
             <DefaultUnit>UNIT_SHEEP</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_GOATS</Type>
-            <Description>TXT_KEY_UNITCLASS_GOATS</Description>
+            <Description>TXT_KEY_YIELD_GOATS</Description>
             <DefaultUnit>UNIT_GOATS</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_PIGS</Type>
-            <Description>TXT_KEY_UNITCLASS_PIGS</Description>
+            <Description>TXT_KEY_YIELD_PIGS</Description>
             <DefaultUnit>UNIT_PIGS</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_CATTLE</Type>
-            <Description>TXT_KEY_UNITCLASS_CATTLE</Description>
+            <Description>TXT_KEY_YIELD_CATTLE</Description>
             <DefaultUnit>UNIT_CATTLE</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_CHICKEN</Type>
-            <Description>TXT_KEY_UNITCLASS_CHICKEN</Description>
+            <Description>TXT_KEY_YIELD_CHICKEN</Description>
             <DefaultUnit>UNIT_CHICKEN</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_GEESE</Type>
-            <Description>TXT_KEY_UNITCLASS_GEESE</Description>
+            <Description>TXT_KEY_YIELD_GEESE</Description>
             <DefaultUnit>UNIT_GEESE</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_HORSES</Type>
-            <Description>TXT_KEY_UNITCLASS_HORSES</Description>
+            <Description>TXT_KEY_YIELD_HORSES</Description>
             <DefaultUnit>UNIT_HORSES</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_BAKERY_GOODS</Type>
-            <Description>TXT_KEY_UNITCLASS_BAKERY_GOODS</Description>
+            <Description>TXT_KEY_YIELD_BAKERY_GOODS</Description>
             <DefaultUnit>UNIT_BAKERY_GOODS</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>

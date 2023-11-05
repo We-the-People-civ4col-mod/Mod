@@ -976,10 +976,10 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TAX_BAR</Tag>
-        <English>Yields of goods sold in Europe and Africa (only 10% of the price is taken into account) : %d1/%d2%F3[NEWLINE][NEWLINE]There is a [COLOR_WARNING_TEXT]%d4.%d5%[COLOR_REVERT] chance that His Majesty will raise your taxes on the next turn.</English>
-        <French>Marchandises vendues en Europe et en Afrique (seul 10% du prix est pris en compte) (%d1/%d2%F3)[NEWLINE][NEWLINE]Il y a [COLOR_WARNING_TEXT]%d4.%d5[COLOR_REVERT] % de chance que le roi augmente les impôts au tour suivant.</French>
-        <German>Erträge aus dem Verkauf von Gütern in Europe and Africa (nur 10% des Preises werden berücksichtigt) : (%d1/%d2%F3)[NEWLINE][NEWLINE]Es besteht eine [COLOR_WARNING_TEXT]%d4.%d5%[COLOR_REVERT] Chance darauf, daß Seine Majestät Eure Steuern im nächsten Zug erhöht.</German>
-        <Russian>Товары, проданные в Европе и Африке (учитывается только 10% от цены) : %d1/%d2%F3[NEWLINE][NEWLINE]Есть [COLOR_WARNING_TEXT]%d4.%d5%[COLOR_REVERT] шанс, что Его Величество увеличит ставку налога в следующем ходу.</Russian>
+        <English>Yields of goods sold in Europe and Africa (only %d6%% of the price is taken into account) : %d1/%d2%F3[NEWLINE][NEWLINE]There is a [COLOR_WARNING_TEXT]%d4.%d5%[COLOR_REVERT] chance that His Majesty will raise your taxes on the next turn.</English>
+        <French>Marchandises vendues en Europe et en Afrique (seul %d6%% du prix est pris en compte) (%d1/%d2%F3)[NEWLINE][NEWLINE]Il y a [COLOR_WARNING_TEXT]%d4,%d5[COLOR_REVERT] % de chance que le roi augmente les impôts au tour suivant.</French>
+        <German>Erträge aus dem Verkauf von Gütern in Europe and Africa (nur %d6%% des Preises werden berücksichtigt) : (%d1/%d2%F3)[NEWLINE][NEWLINE]Es besteht eine [COLOR_WARNING_TEXT]%d4.%d5%[COLOR_REVERT] Chance darauf, daß Seine Majestät Eure Steuern im nächsten Zug erhöht.</German>
+        <Russian>Товары, проданные в Европе и Африке (учитывается только %d6%% от цены) : %d1/%d2%F3[NEWLINE][NEWLINE]Есть [COLOR_WARNING_TEXT]%d4.%d5%[COLOR_REVERT] шанс, что Его Величество увеличит ставку налога в следующем ходу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CURRENT_ERA</Tag>

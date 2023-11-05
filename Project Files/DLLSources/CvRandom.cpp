@@ -33,7 +33,7 @@ bool CvRandom::isSorenRand() const
 {
 	// avoid crashing during init
 	// also don't log random stuff, which won't cause desyncs
-	if (!m_bSynced || !GC.IsGraphicsInitialized() || gDLL->isGameInitializing())
+	if (!GC.IsGraphicsInitialized() || gDLL->isGameInitializing() || !m_bSynced)
 	{
 		return false;
 	}
@@ -177,6 +177,7 @@ void CvRandom::reset(unsigned long ulSeed)
 	uninit();
 
 	m_ulRandomSeed = ulSeed;
+	m_bSynced = false;
 
 	/// random network fix - start - Nightinggale
 	std::srand(m_ulRandomSeed);
@@ -191,7 +192,7 @@ void CvRandom::reset(unsigned long ulSeed)
 }
 
 
-unsigned short CvRandom::get(unsigned short usNum, const TCHAR* pszLog)
+unsigned short CvRandom::get(unsigned short usNum, char const* pszLog)
 {
 	FAssertMsg(!m_bSynced || GC.isMainThread(), "Random called outside main thread");
 
@@ -201,7 +202,7 @@ unsigned short CvRandom::get(unsigned short usNum, const TCHAR* pszLog)
 		{
 			if (GC.getGameINLINE().getTurnSlice() > 0)
 			{
-				TCHAR szOut[1024];
+				char szOut[1024];
 				sprintf(szOut, "Rand = %d on %d (%s)\n", getSeed(), GC.getGameINLINE().getTurnSlice(), pszLog);
 				gDLL->messageControlLog(szOut);
 			}
@@ -278,7 +279,7 @@ float CvRandom::getGaussian(float fMean, float fStandardDeviation)
 	return( fMean + y1 * fStandardDeviation );
 }
 
-int CvRandom::pickValue(std::vector<int>& aWeights, const TCHAR* pszLog)
+int CvRandom::pickValue(std::vector<int>& aWeights, char const* pszLog)
 {
 	int iTotalWeights = std::accumulate(aWeights.begin(), aWeights.end(), 0);
 	FAssert(iTotalWeights >= 0);
@@ -299,7 +300,7 @@ int CvRandom::pickValue(std::vector<int>& aWeights, const TCHAR* pszLog)
 	return 0;
 }
 
-void CvRandom::shuffleArray(std::vector<int>& aNumbers, const TCHAR* pszLog)
+void CvRandom::shuffleArray(std::vector<int>& aNumbers, char const* pszLog)
 {
 	for (uint iI = 0; iI < aNumbers.size(); iI++)
 	{
@@ -314,7 +315,7 @@ void CvRandom::shuffleArray(std::vector<int>& aNumbers, const TCHAR* pszLog)
 	}
 }
 
-void CvRandom::shuffleSequence(std::vector<int>& aNumbers, const TCHAR* pszLog)
+void CvRandom::shuffleSequence(std::vector<int>& aNumbers, char const* pszLog)
 {
 	for (uint i = 0; i < aNumbers.size(); ++i)
 	{
@@ -327,6 +328,7 @@ void CvRandom::shuffleSequence(std::vector<int>& aNumbers, const TCHAR* pszLog)
 void CvRandom::reseed(unsigned long ulNewValue)
 {
 	m_ulRandomSeed = ulNewValue;
+	m_bSynced = false;
 	/// random network fix - start - Nightinggale
 	std::srand(m_ulRandomSeed);
 	/// random network fix - end - Nightinggale

@@ -404,7 +404,7 @@ sub handleInfoArray
 	
 	$get = "getFontSymbol" if $get eq "getFontSymbols";
 	
-	$output .= "template<" . addtemplates("typename T", $id, 0) . ">\nclass InfoArray$id<" . addtemplates("typename T", $id, 1) . $type . ">\n\t: ";
+	$output .= "template<" . addtemplates("typename T", $id, 0) . ">\nclass InfoArray$id<" . addtemplates("T", $id, 1) . $type . ">\n\t: ";
 	$output .= "public InfoArray$index<" . addtemplates("T", $id, 0) . ">\n" unless $id == 1;
 	$output .= "protected InfoArrayBase\n\t, public boost::noncopyable\n" if $id == 1;
 	$output .= "{\n";

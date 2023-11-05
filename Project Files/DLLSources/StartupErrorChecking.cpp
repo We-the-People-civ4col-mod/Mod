@@ -1,4 +1,4 @@
-#include "CvGameCoreDll.h"
+#include "CvGameCoreDLL.h"
 #include "AlertWindow.h"
 #include "StartupErrorChecking.h"
 #include "OpenURL.h"

@@ -179,7 +179,7 @@ class CvInfoScreen:
 		self.Y_ROW_9 = self.Y_ROW_8 + self.H_TEXT + self.Y_TEXT_BUFFER
 		self.Y_ROW_10 = self.Y_ROW_9 + self.H_TEXT + self.Y_TEXT_BUFFER
 
-		self.bAbleToShowAllPlayers = false
+		self.bAbleToShowAllPlayers = False
 		self.iShowingPlayer = -1
 		self.aiDropdownPlayerIDs = []
 
@@ -367,7 +367,7 @@ class CvInfoScreen:
 					0,
 					0]
 
-#		self.bShowAllPlayers = false
+#		self.bShowAllPlayers = False
 		self.graphEnd = CyGame().getGameTurn() - 1
 		self.graphZoom = self.graphEnd - CyGame().getStartTurn()
 		self.iShowingPlayer = -1
@@ -580,7 +580,7 @@ class CvInfoScreen:
 		#self.W_LEGEND += 30
 
 		self.LEGEND_PANEL_ID = self.getNextWidgetName()
-		screen.addPanel(self.LEGEND_PANEL_ID, "", "", true, true, self.X_LEGEND, self.Y_LEGEND, self.W_LEGEND, self.H_LEGEND, PanelStyles.PANEL_STYLE_IN, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.addPanel(self.LEGEND_PANEL_ID, "", "", True, True, self.X_LEGEND, self.Y_LEGEND, self.W_LEGEND, self.H_LEGEND, PanelStyles.PANEL_STYLE_IN, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		#screen.addDrawControl("LegendBackGroundCanvas", None, self.X_LEGEND, self.Y_LEGEND, self.W_LEGEND, self.H_LEGEND, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		self.LEGEND_CANVAS_ID = self.getNextWidgetName()
 
@@ -909,48 +909,48 @@ class CvInfoScreen:
 
 		# Lists of player values are ordered from highest first to lowest, so determine Rank, Strength and World Average
 
-		bEconomyFound = false
-		bIndustryFound = false
-		bAgricultureFound = false
-		bMilitaryFound = false
-		bLandAreaFound = false
-		bPopulationFound = false
+		bEconomyFound = False
+		bIndustryFound = False
+		bAgricultureFound = False
+		bMilitaryFound = False
+		bLandAreaFound = False
+		bPopulationFound = False
 
 		for i in range(len(aiGroupEconomy)):
 
 			if (iEconomy == aiGroupEconomy[i] and not bEconomyFound):
 				iEconomyRank = i + 1
-				bEconomyFound = true
+				bEconomyFound = True
 			else:
 				fEconomyGameAverage += aiGroupEconomy[i]
 
 			if (iIndustry == aiGroupIndustry[i] and not bIndustryFound):
 				iIndustryRank = i + 1
-				bIndustryFound = true
+				bIndustryFound = True
 			else:
 				fIndustryGameAverage += aiGroupIndustry[i]
 
 			if (iAgriculture == aiGroupAgriculture[i] and not bAgricultureFound):
 				iAgricultureRank = i + 1
-				bAgricultureFound = true
+				bAgricultureFound = True
 			else:
 				fAgricultureGameAverage += aiGroupAgriculture[i]
 
 			if (fMilitary == aiGroupMilitary[i] and not bMilitaryFound):
 				iMilitaryRank = i + 1
-				bMilitaryFound = true
+				bMilitaryFound = True
 			else:
 				fMilitaryGameAverage += aiGroupMilitary[i]
 
 			if (iLandArea == aiGroupLandArea[i] and not bLandAreaFound):
 				iLandAreaRank = i + 1
-				bLandAreaFound = true
+				bLandAreaFound = True
 			else:
 				fLandAreaGameAverage += aiGroupLandArea[i]
 
 			if (iPopulation == aiGroupPopulation[i] and not bPopulationFound):
 				iPopulationRank = i + 1
-				bPopulationFound = true
+				bPopulationFound = True
 			else:
 				fPopulationGameAverage += aiGroupPopulation[i]
 
@@ -1002,7 +1002,7 @@ class CvInfoScreen:
 
 		# Create Table
 		szTable = self.getNextWidgetName()
-		screen.addTableControlGFC(szTable, 6, (self.W_SCREEN / 2) - (self.W_CHART / 2), self.Y_CHART, self.W_CHART, self.H_CHART, true, true, 32,32, TableStyles.TABLE_STYLE_STANDARD)
+		screen.addTableControlGFC(szTable, 6, (self.W_SCREEN / 2) - (self.W_CHART / 2), self.Y_CHART, self.W_CHART, self.H_CHART, True, True, 32,32, TableStyles.TABLE_STYLE_STANDARD)
 		screen.setTableColumnHeader(szTable, 0, self.TEXT_DEMOGRAPHICS_SMALL, 224) # Total graph width is 430
 		screen.setTableColumnHeader(szTable, 1, self.TEXT_VALUE, 155)
 		screen.setTableColumnHeader(szTable, 2, self.TEXT_BEST, 155)
@@ -1076,10 +1076,10 @@ class CvInfoScreen:
 
 		# Background Panes
 		self.szLeftPaneWidget = self.getNextWidgetName()
-		screen.addPanel( self.szLeftPaneWidget, "", "", true, true, self.X_LEFT_PANE, self.Y_LEFT_PANE, self.W_LEFT_PANE, self.H_LEFT_PANE, PanelStyles.PANEL_STYLE_MAIN, WidgetTypes.WIDGET_GENERAL, -1, -1 )#PanelStyles.PANEL_STYLE_DAWNTOP )
+		screen.addPanel( self.szLeftPaneWidget, "", "", True, True, self.X_LEFT_PANE, self.Y_LEFT_PANE, self.W_LEFT_PANE, self.H_LEFT_PANE, PanelStyles.PANEL_STYLE_MAIN, WidgetTypes.WIDGET_GENERAL, -1, -1 )#PanelStyles.PANEL_STYLE_DAWNTOP )
 
 		self.szFatherPaneWidget = self.getNextWidgetName()
-		screen.addPanel( self.szFatherPaneWidget, "", "", true, true, self.W_SCREEN - self.W_LEFT_PANE - self.X_LEFT_PANE, self.Y_LEFT_PANE, self.W_LEFT_PANE, self.H_LEFT_PANE, PanelStyles.PANEL_STYLE_MAIN, WidgetTypes.WIDGET_GENERAL, -1, -1 )#PanelStyles.PANEL_STYLE_DAWNTOP )
+		screen.addPanel( self.szFatherPaneWidget, "", "", True, True, self.W_SCREEN - self.W_LEFT_PANE - self.X_LEFT_PANE, self.Y_LEFT_PANE, self.W_LEFT_PANE, self.H_LEFT_PANE, PanelStyles.PANEL_STYLE_MAIN, WidgetTypes.WIDGET_GENERAL, -1, -1 )#PanelStyles.PANEL_STYLE_DAWNTOP )
 
 		self.drawTopCities()
 
@@ -1097,7 +1097,7 @@ class CvInfoScreen:
 		for iWidgetLoop in range(self.iNumCities):
 			
 			szTextPanel = self.getNextWidgetName()
-			screen.addPanel( szTextPanel, "", "", false, true, self.X_COL_1_CITIES_DESC, self.Y_ROWS_CITIES[iWidgetLoop] + self.Y_CITIES_DESC_BUFFER, self.W_CITIES_DESC, self.H_CITIES_DESC, PanelStyles.PANEL_STYLE_DAWNTOP, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+			screen.addPanel( szTextPanel, "", "", False, True, self.X_COL_1_CITIES_DESC, self.Y_ROWS_CITIES[iWidgetLoop] + self.Y_CITIES_DESC_BUFFER, self.W_CITIES_DESC, self.H_CITIES_DESC, PanelStyles.PANEL_STYLE_DAWNTOP, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 			self.szCityNameWidgets.append(self.getNextWidgetName())
 			szCityDesc = u"<font=4b>" + str(self.iCitySizes[iWidgetLoop]) + u"</font>" + " - " + u"<font=3b>" + self.szCityNames[iWidgetLoop] + u"</font>" + "\n"
 			szCityDesc += self.szCityDescs[iWidgetLoop]
@@ -1116,12 +1116,12 @@ class CvInfoScreen:
 			#print "City # " + str(iWidgetLoop) + "  " + pCity.getName()
 
 			self.szCityAnimWidgets.append(self.getNextWidgetName())
-			if (pCity.isRevealed(gc.getGame().getActiveTeam(), false)):
-				screen.addPlotGraphicGFC(self.szCityAnimWidgets[iWidgetLoop], self.X_CITY_ANIMATION, self.Y_ROWS_CITIES[iWidgetLoop], self.W_CITY_ANIMATION, self.H_CITY_ANIMATION, pPlot, iDistance, false, WidgetTypes.WIDGET_GENERAL, -1, -1)
+			if (pCity.isRevealed(gc.getGame().getActiveTeam(), False)):
+				screen.addPlotGraphicGFC(self.szCityAnimWidgets[iWidgetLoop], self.X_CITY_ANIMATION, self.Y_ROWS_CITIES[iWidgetLoop], self.W_CITY_ANIMATION, self.H_CITY_ANIMATION, pPlot, iDistance, False, WidgetTypes.WIDGET_GENERAL, -1, -1)
 				
 		
 		szFatherTable = self.getNextWidgetName()
-		screen.addScrollPanel(szFatherTable, u"", self.W_SCREEN - self.W_LEFT_PANE - self.X_LEFT_PANE + 20, self.Y_LEFT_PANE + 30, self.W_LEFT_PANE - 40, self.H_LEFT_PANE- 60, PanelStyles.PANEL_STYLE_EMPTY, true, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.addScrollPanel(szFatherTable, u"", self.W_SCREEN - self.W_LEFT_PANE - self.X_LEFT_PANE + 20, self.Y_LEFT_PANE + 30, self.W_LEFT_PANE - 40, self.H_LEFT_PANE- 60, PanelStyles.PANEL_STYLE_EMPTY, True, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		
 		screen.setTextAt("FatherHeader", szFatherTable, "<font=4>" + localText.getText("TXT_KEY_FATHER_SCREEN_TITLE", ()).upper() + "</font>", CvUtil.FONT_LEFT_JUSTIFY, 50, 10, -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		iYPosition = 60
@@ -1153,7 +1153,7 @@ class CvInfoScreen:
 
 			player = gc.getPlayer(iPlayerLoop)
 
-			(pCity, iter) = player.firstCity(false)
+			(pCity, iter) = player.firstCity(False)
 
 			while(pCity):
 
@@ -1164,7 +1164,7 @@ class CvInfoScreen:
 						self.addCityToList(iRankLoop, pCity, iTotalCityValue)
 						break
 
-				(pCity, iter) = player.nextCity(iter, false)
+				(pCity, iter) = player.nextCity(iter, False)
 
 	# Recursive
 	def addCityToList(self, iRank, pCity, iTotalCityValue):
@@ -1205,7 +1205,7 @@ class CvInfoScreen:
 				else:
 					szTurnFounded = localText.getText("TXT_KEY_TIME_AD", (iTurnYear,))#"%d %s" %(iTurnYear, self.TEXT_AD)
 
-				if (pCity.isRevealed(gc.getGame().getActiveTeam(), false) or gc.getTeam(pPlayer.getTeam()).isHasMet(gc.getGame().getActiveTeam())):
+				if (pCity.isRevealed(gc.getGame().getActiveTeam(), False) or gc.getTeam(pPlayer.getTeam()).isHasMet(gc.getGame().getActiveTeam())):
 					self.szCityNames[iRankLoop] = pCity.getName().upper()
 					if (not pPlayer.isNative()):
 						self.szCityDescs[iRankLoop] = ("%s, %s" %(pPlayer.getCivilizationAdjective(0), localText.getText("TXT_KEY_MISC_FOUNDED_IN", (szTurnFounded,))))
@@ -1299,13 +1299,13 @@ class CvInfoScreen:
 			iType = loopUnit.getUnitType()
 			aiUnitsCurrent[iType] += 1
 			
-		(city, iter) = player.firstCity(true)
+		(city, iter) = player.firstCity(True)
 		while(city):
 			for iCitizen in range(city.getPopulation()):
 				Unit = city.getPopulationUnitByIndex(iCitizen)
 				iType = Unit.getUnitType()
 				aiUnitsCurrent[iType] += 1
-			(city, iter) = player.nextCity(iter, true)
+			(city, iter) = player.nextCity(iter, True)
 
 ################################################### TOP PANEL ###################################################
 

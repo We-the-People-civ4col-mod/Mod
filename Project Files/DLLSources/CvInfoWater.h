@@ -44,11 +44,11 @@ public:
 	DllExport float getTextureScrollRateU() const;			// The water plane's texture scroll rate in U
 	DllExport float getTextureScrollRateV() const;			// The water plane's texture scroll rate in V
 
-	DllExport const TCHAR *getBaseTexture() const;
-	DllExport const TCHAR *getNormalTexture() const;
-	DllExport const TCHAR *getTransitionTexture() const;
-	DllExport const TCHAR *getEnvironmentTexture() const;
-	DllExport const TCHAR *getGridTexture() const;
+	DllExport char const* getBaseTexture() const;
+	DllExport char const* getNormalTexture() const;
+	DllExport char const* getTransitionTexture() const;
+	DllExport char const* getEnvironmentTexture() const;
+	DllExport char const* getGridTexture() const;
 
 	DllExport bool read(CvXMLLoadUtility*);
 
@@ -95,8 +95,8 @@ public:
 	DllExport float getZHeight() const;						// The terrain plane's z height in world units
 	DllExport FogTypes getFogType() const;
 
-	DllExport const TCHAR * getBaseTexture() const;
-	DllExport void setBaseTexture(const TCHAR* szVal);		// The filename of the base texture
+	DllExport char const* getBaseTexture() const;
+	DllExport void setBaseTexture(char const* szVal);		// The filename of the base texture
 
 	DllExport bool read(CvXMLLoadUtility*);
 
@@ -136,8 +136,8 @@ public:
 	DllExport bool isVisible() const;				// The terrain plane's material alpha
 	DllExport CameraOverlayTypes getCameraOverlayType() const;
 
-	DllExport const TCHAR * getBaseTexture() const;
-	DllExport void setBaseTexture(const TCHAR* szVal);		// The filename of the base texture
+	DllExport char const* getBaseTexture() const;
+	DllExport void setBaseTexture(char const* szVal);		// The filename of the base texture
 
 	DllExport bool read(CvXMLLoadUtility*);
 

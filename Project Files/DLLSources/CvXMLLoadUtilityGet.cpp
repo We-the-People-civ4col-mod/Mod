@@ -818,14 +818,14 @@ bool CvXMLLoadUtility::GetChildXmlVal(bool* pbVal, bool bDefault)
 
 //------------------------------------------------------------------------------------------------------
 //
-//  FUNCTION:   GetChildXmlValByName(wchar* pszVal, const TCHAR* szName, TCHAR* pszDefault = NULL)
+//  FUNCTION:   GetChildXmlValByName(wchar* pszVal, char const* szName, wchar* pszDefault = NULL)
 //
 //  PURPOSE :   Overloaded function that gets the child value of the tag with szName if there is only one child
 // 				value of that name
 
 //
 //------------------------------------------------------------------------------------------------------
-bool CvXMLLoadUtility::GetChildXmlValByName(wchar* pszVal, const TCHAR* szName, wchar* pszDefault)
+bool CvXMLLoadUtility::GetChildXmlValByName(wchar* pszVal, char const* szName, wchar* pszDefault)
 {
 	int iNumChildrenByTagName=1;
 
@@ -879,14 +879,14 @@ bool CvXMLLoadUtility::GetChildXmlValByName(wchar* pszVal, const TCHAR* szName, 
 
 //------------------------------------------------------------------------------------------------------
 //
-//  FUNCTION:   GetChildXmlValByName(char* pszVal, const TCHAR* szName, TCHAR* pszDefault = NULL)
+//  FUNCTION:   GetChildXmlValByName(char* pszVal, char const* szName, char* pszDefault = NULL)
 //
 //  PURPOSE :   Overloaded function that gets the child value of the tag with szName if there is only one child
 // 				value of that name
 
 //
 //------------------------------------------------------------------------------------------------------
-bool CvXMLLoadUtility::GetChildXmlValByName(char* pszVal, const TCHAR* szName, char* pszDefault)
+bool CvXMLLoadUtility::GetChildXmlValByName(char* pszVal, char const* szName, char* pszDefault)
 {
 	int iNumChildrenByTagName=1;
 
@@ -941,14 +941,14 @@ bool CvXMLLoadUtility::GetChildXmlValByName(char* pszVal, const TCHAR* szName, c
 
 //------------------------------------------------------------------------------------------------------
 //
-//  FUNCTION:   GetChildXmlValByName(std::string& pszVal, const TCHAR* szName, TCHAR* pszDefault = NULL)
+//  FUNCTION:   GetChildXmlValByName(std::string& pszVal, char const* szName, char* pszDefault = NULL)
 //
 //  PURPOSE :   Overloaded function that gets the child value of the tag with szName if there is only one child
 // 				value of that name
 
 //
 //------------------------------------------------------------------------------------------------------
-bool CvXMLLoadUtility::GetChildXmlValByName(std::string& pszVal, const TCHAR* szName, char* pszDefault)
+bool CvXMLLoadUtility::GetChildXmlValByName(std::string& pszVal, char const* szName, char* pszDefault)
 {
 	int iNumChildrenByTagName=1;
 
@@ -1002,7 +1002,7 @@ bool CvXMLLoadUtility::GetChildXmlValByName(std::string& pszVal, const TCHAR* sz
 
 //
 //------------------------------------------------------------------------------------------------------
-bool CvXMLLoadUtility::GetChildXmlValByName(std::wstring& pszVal, const TCHAR* szName, wchar* pszDefault)
+bool CvXMLLoadUtility::GetChildXmlValByName(std::wstring& pszVal, char const* szName, wchar* pszDefault)
 {
 	int iNumChildrenByTagName=1;
 
@@ -1056,13 +1056,13 @@ bool CvXMLLoadUtility::GetChildXmlValByName(std::wstring& pszVal, const TCHAR* s
 
 //------------------------------------------------------------------------------------------------------
 //
-//  FUNCTION:   GetChildXmlValByName(int* piVal, const TCHAR* szName, int iDefault = 0)
+//  FUNCTION:   GetChildXmlValByName(int* piVal, char const* szName, int iDefault = 0)
 //
 //  PURPOSE :   Overloaded function that gets the child value of the tag with szName if there is only one child
 // 				value of that name
 //
 //------------------------------------------------------------------------------------------------------
-bool CvXMLLoadUtility::GetChildXmlValByName(int* piVal, const TCHAR* szName, int iDefault)
+bool CvXMLLoadUtility::GetChildXmlValByName(int* piVal, char const* szName, int iDefault)
 {
 	int iNumChildrenByTagName=1;
 
@@ -1110,14 +1110,14 @@ bool CvXMLLoadUtility::GetChildXmlValByName(int* piVal, const TCHAR* szName, int
 
 //------------------------------------------------------------------------------------------------------
 //
-//  FUNCTION:   GetChildXmlValByName(float* pfVal, const TCHAR* szName, float fDefault = 0.0f)
+//  FUNCTION:   GetChildXmlValByName(float* pfVal, char const* szName, float fDefault = 0.0f)
 //
 //  PURPOSE :   Overloaded function that gets the child value of the tag with szName if there is only one child
 // 				value of that name
 
 //
 //------------------------------------------------------------------------------------------------------
-bool CvXMLLoadUtility::GetChildXmlValByName(float* pfVal, const TCHAR* szName, float fDefault)
+bool CvXMLLoadUtility::GetChildXmlValByName(float* pfVal, char const* szName, float fDefault)
 {
 	int iNumChildrenByTagName=1;
 
@@ -1164,14 +1164,14 @@ bool CvXMLLoadUtility::GetChildXmlValByName(float* pfVal, const TCHAR* szName, f
 
 //------------------------------------------------------------------------------------------------------
 //
-//  FUNCTION:   GetChildXmlValByName(bool* pbVal, const TCHAR* szName, bool bDefault = false)
+//  FUNCTION:   GetChildXmlValByName(bool* pbVal, char const* szName, bool bDefault = false)
 //
 //  PURPOSE :   Overloaded function that gets the child value of the tag with szName if there is only one child
 // 				value of that name
 
 //
 //------------------------------------------------------------------------------------------------------
-bool CvXMLLoadUtility::GetChildXmlValByName(bool* pbVal, const TCHAR* szName, bool bDefault)
+bool CvXMLLoadUtility::GetChildXmlValByName(bool* pbVal, char const* szName, bool bDefault)
 {
 	int iNumChildrenByTagName=1;
 
@@ -1219,13 +1219,13 @@ bool CvXMLLoadUtility::GetChildXmlValByName(bool* pbVal, const TCHAR* szName, bo
 
 //------------------------------------------------------------------------------------------------------
 //
-//  FUNCTION:   GetHotKeyInt(TCHAR* pszHotKeyVal)
+//  FUNCTION:   GetHotKeyInt(char const* pszHotKeyVal)
 //
 //  PURPOSE :   returns either the integer value of the keyboard mapping for the hot key or -1 if it
 //				doesn't exist.
 //
 //------------------------------------------------------------------------------------------------------
-int CvXMLLoadUtility::GetHotKeyInt(const TCHAR* pszHotKeyVal)
+int CvXMLLoadUtility::GetHotKeyInt(char const* pszHotKeyVal)
 {
 	// SPEEDUP
 	PROFILE_FUNC();
@@ -1233,7 +1233,7 @@ int CvXMLLoadUtility::GetHotKeyInt(const TCHAR* pszHotKeyVal)
 
 	struct CvKeyBoardMapping
 	{
-		TCHAR szDefineString[25];
+		char szDefineString[25];
 		int iIntVal;
 	};
 

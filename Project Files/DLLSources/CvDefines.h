@@ -45,13 +45,8 @@
 #define RANDPLOT_NOT_VISIBLE_TO_CIV							(0x00000020)
 #define RANDPLOT_NOT_CITY									(0x00000040)
 
-#ifdef _USRDLL
 #define MAX_PLAYERS												(49) // R&R, ray - Europeans, Natives, Kings, Animals and Church
-#else
-#define MAX_PLAYERS												(CvGlobals::getInstance().getMaxCivPlayers())
-#endif
-
-#define MAX_TEAMS													(MAX_PLAYERS)
+#define MAX_TEAMS												(MAX_PLAYERS)
 
 // Char Count limit for edit boxes
 #define PREFERRED_EDIT_CHAR_COUNT							(15)

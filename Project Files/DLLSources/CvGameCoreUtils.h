@@ -10,18 +10,6 @@
 #include "CvGlobals.h"
 #include "CvMap.h"
 
-#ifndef _USRDLL
-// use non inline functions when not in the dll
-#define getMapINLINE	getMap
-#define getGridHeightINLINE	getGridHeight
-#define getGridWidthINLINE	getGridWidth
-#define isWrapYINLINE	isWrapY
-#define isWrapXINLINE	isWrapX
-#define plotINLINE	plot
-#define getX_INLINE	getX
-#define getY_INLINE	getY
-
-#endif
 
 class CvPlot;
 class CvCity;
@@ -355,7 +343,7 @@ int borderValid(FAStarNode* parent, FAStarNode* node, int data, const void* poin
 int areaValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
 int joinArea(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
 
-bool isPickableName(const TCHAR* szName);
+bool isPickableName(char const* szName);
 
 int getTurnMonthForGame(int iGameTurn, int iStartYear, CalendarTypes eCalendar, GameSpeedTypes eSpeed);
 int getTurnYearForGame(int iGameTurn, int iStartYear, CalendarTypes eCalendar, GameSpeedTypes eSpeed);

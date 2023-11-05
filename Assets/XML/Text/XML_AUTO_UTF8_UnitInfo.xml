@@ -343,31 +343,6 @@
         <Russian>[COLOR_UNIT_TEXT]Искусный кузнец[COLOR_REVERT] – уникальная национальная единица Швеции, которая заменяет [LINK=UNIT_BLACKSMITH]мастера кузнеца[\LINK].[NEWLINE]При работе в качестве [LINK=PROFESSION_BLACKSMITH]кузнеца инструментов[\LINK] или [LINK=PROFESSION_BLADESMITH]кузнеца клинков[\LINK] для создания [LINK=YIELD_TOOLS]инструментов[\LINK] или [LINK=YIELD_BLADES]клинков[\LINK] из [LINK=YIELD_ORE]руды[\LINK], искусный кузнец создаст инструменты или клинки еще быстрее, чем мастер кузнец.[PARAGRAPH:1]Искусного кузнеца можно нанять в [LINK=CONCEPT_EUROPE]Европе[\LINK], а также [LINK=CONCEPT_TRAINING]обучить[\LINK] в колонии с [LINK=BUILDING_COLLEGE] колледжом[\LINK] или одном из его улучшении.</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_BLADES</Tag>
-        <English>Blades</English>
-        <French>
-            <Text>Sabres</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>
-            <Text>Klingenwaffen</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>
-            <Text>Spade</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Cuchillas</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Клинки</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNIT_BLADES_PEDIA</Tag>
         <English>Blades Background</English>
     </TEXT>
@@ -786,19 +761,6 @@
         <German>Die kleinen [COLOR_UNIT_TEXT]Postkutschen[COLOR_REVERT] und die geräumerigeren [COLOR_UNIT_TEXT]Truppentransporter[COLOR_REVERT] können auch Landeinheiten befördern: Zivileinheiten, Truppen, sogar Artillerie - nur keine Schätze. Einheiten können nur in Städten einsteigen, aussteigen können sie dagegen überall. Postkutschen können nur in Städten mit einer [COLOR_BUILDING_TEXT]Wagnerei[COLOR_REVERT] gebaut werden, Truppentransporter benötigen sogar eine [COLOR_BUILDING_TEXT]Holzmanufaktur[COLOR_REVERT].[PARAGRAPH:2]Diese Wagen sind insbesondere für schnelle Truppenbewegungen geeignet. Während des Unabhängigkeitskrieges können sie Truppenreserven aus dem Hinterland, zum Beispiel schwere Kavallerie oder Artillerie, rasch zu den Orten bringen, bei denen die königliche Armee anlandet. Diese Transporteinheiten können in beliebiger Stückzahl gebaut werden, ohne dass dies den König provoziert, seine Truppenstärke zu erhöhen. Sie können natürlich auch in Friedenszeiten genutzt werden - z.B. um Experteneinheiten schnell dorthin zu bringen, wo sie gerade am dringendsten benötigt werden.[PARAGRAPH:2]Greift man einen Planwagen oder Treck an, erobert man ihn mitsamt aller Waren. Greift man dagegen eine Postkutsche oder einen Truppentransporter an, kommt es zu einem Kampf - die kampfschwachen Wagen werden dabei in der Regel verlieren und mitsamt ihrer Transportgüter zerstört werden.[PARAGRAPH:2]Hinweis: Wagen können prinzipiell nicht auf Schiffe geladen werden.</German>
         <Italian>The small [COLOR_UNIT_TEXT]Stagecoaches[COLOR_REVERT] and the more spacious [COLOR_UNIT_TEXT]Carriers[COLOR_REVERT] can also transport land units: civilists, troops, even artillery - just no treasures. Units can enter these vehicles in cities only, while unloading is possible everywhere.[PARAGRAPH:2]Stagecoaches can only be built in cities with a [COLOR_BUILDING_TEXT]Wheelwrights Workshop[COLOR_REVERT]. For carriers you even need a [COLOR_BUILDING_TEXT]Great Wheelwrights Workshop[COLOR_REVERT].[PARAGRAPH:2]These vehicles are especially suited for fast troop movements. During the Independence War they can bring reinforcements from the hinterland - for example heavy cavalry or artillery - fast to the beachheads of the Royal Army. These transport vehicles may be produced in any desired number without provoking the King to increase his army strength. Of course they can be used in peacetimes as well - e.g. to bring expert units fast to where they are needed. Please notice that vehicles in general cannot be loaded on ships.[PARAGRAPH:2]If you attack a wagon or trek, you capture it with all transported goods. However, if you attack a stagecoach or carrier a fight emerges - and those combat-weak vehicles will very likely get destroyed including their freight.</Italian>
         <Spanish>The small [COLOR_UNIT_TEXT]Stagecoaches[COLOR_REVERT] and the more spacious [COLOR_UNIT_TEXT]Carriers[COLOR_REVERT] can also transport land units: civilists, troops, even artillery - just no treasures. Units can enter these vehicles in cities only, while unloading is possible everywhere.[PARAGRAPH:2]Stagecoaches can only be built in cities with a [COLOR_BUILDING_TEXT]Wheelwrights Workshop[COLOR_REVERT]. For carriers you even need a [COLOR_BUILDING_TEXT]Great Wheelwrights Workshop[COLOR_REVERT].[PARAGRAPH:2]These vehicles are especially suited for fast troop movements. During the Independence War they can bring reinforcements from the hinterland - for example heavy cavalry or artillery - fast to the beachheads of the Royal Army. These transport vehicles may be produced in any desired number without provoking the King to increase his army strength. Of course they can be used in peacetimes as well - e.g. to bring expert units fast to where they are needed. Please notice that vehicles in general cannot be loaded on ships.[PARAGRAPH:2]If you attack a wagon or trek, you capture it with all transported goods. However, if you attack a stagecoach or carrier a fight emerges - and those combat-weak vehicles will very likely get destroyed including their freight.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_CATTLE</Tag>
-        <English>Cattle</English>
-        <French>Bétail</French>
-        <German>
-            <Text>Rinder</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Bovini</Italian>
-        <Spanish>Bovinos</Spanish>
-        <Russian>Коровы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CATTLE_PEDIA</Tag>
@@ -2206,27 +2168,6 @@
         <Spanish>Las [COLOR_UNIT_TEXT]Carabelas[COLOR_REVERT] son los veleros más primitivos que hay disponibles. Se mueven lentamente, pueden llevar poco cargamento y tripulación y los barcos enemigos pueden hundirlos con facilidad. Sin embargo, a veces pueden escaparse a los asentamientos cercanos que cuenten con Diques secos y Astilleros si son derrotadas.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_FOOD</Tag>
-        <English>Food</English>
-        <French>
-            <Text>Nourriture</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>Nahrung</German>
-        <Italian>
-            <Text>Cibo</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Alimentos</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Еда</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNIT_FOOD_PEDIA</Tag>
         <English>Food background</English>
     </TEXT>
@@ -2543,31 +2484,6 @@
         <German>[COLOR_UNIT_TEXT]Königliche Truppengaleonen[COLOR_REVERT] sind das primäre Transportschiff der [COLOR_HIGHLIGHT_TEXT]Europäischen Könige[COLOR_REVERT] um ihre Truppen zu transportieren, können aber auch Güter befördern.[NEWLINE]Sie haben 6 Frachträume und somit mehr als jedes andere Schiff, außer anderen Galeonen.[NEWLINE]Sie sind stärker als normale [LINK=UNIT_GALLEON]Galleonen[\LINK] und können andere Schiffe auch angreifen.[NEWLINE]Während des [LINK=CONCEPT_INDEPENDENCE_WAR]Unabhängigkeitskrieges[\LINK] können sie den Schiffen der Kolonien einen guten Kampf liefern.[NEWLINE][COLOR_HIGHLIGHT_TEXT]Königliche Truppengaleonen[COLOR_REVERT] stehen nur den Königen Europas zur Verfügung.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_GEMS</Tag>
-        <English>Gems</English>
-        <French>
-            <Text>Pierres précieuses</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>
-            <Text>Edelsteine</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>
-            <Text>Pietre preziose</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Piedras preciosas</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Драгоценные камни</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNIT_GEMS_PEDIA</Tag>
         <English>Gemstones, treasured throughout history for their beauty and value, have always been a treasured commodity.[NEWLINE]Most gemstones, such as diamonds, are mined at scattered locations throughout the world, most notably in Africa.[NEWLINE]Some of the most famous gem deposits, however, were found in archeological digs.[NEWLINE]The ruins of ancient civilizations in the jungles of Central and South America sometimes hid large quantities of precious and semi-precious gems, along with gold and other items of value.[NEWLINE]The discovery of such a site can lead to an increase in trade in the areas surrounding the dig, as both professional and amateur treasure hunters swarm to the region to seek their fortune.</English>
         <French>Les pierres précieuses, extrêmement prisées pour leur beauté et leur valeur, ont toujours été très recherchées. On trouve des pierres précieuses dans différents endroits du monde, mais le plus fréquemment en Afrique. Cependant, certains des gisements les plus importants ont été découverts sur des sites archéologiques. Les vestiges d'anciennes civilisations originaires d'Amérique centrale ou d'Amérique du Sud cachent parfois d'énormes quantités de pierres précieuses ou semi-précieuses, ainsi que de l'or et autres objets de valeur. La découverte d'un tel site conduit parfois à un net accroissement des échanges autour des fouilles, les chasseurs de trésors amateurs et professionnels désireux de tenter leur chance fourmillant alors dans la région.</French>
@@ -2578,31 +2494,6 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_GEMS_STRATEGY</Tag>
         <English>Gems strategy</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_GOLD</Tag>
-        <English>Gold</English>
-        <French>
-            <Text>Or</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Gold</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Oro</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Oro</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Золото</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GOLD_PEDIA</Tag>
@@ -3036,31 +2927,6 @@
         <Spanish>La unidad del [COLOR_UNIT_TEXT]Cañón[COLOR_REVERT] es la clave para conseguir la victoria en cualquier asedio. Cuando ataca un asentamiento enemigo, su potencia de ataque se dobla, lo cual lo convierte en la unidad más potente que hay disponible. Estas unidades además reciben una bonificación cuando defienden desde dentro de un asentamiento y se pueden emplear para bajar las bonificaciones defensivas de los asentamientos a los que estén atacando.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_HEMP</Tag>
-        <English>Hemp</English>
-        <French>
-            <Text>Chanvre</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Hanf</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Canapa</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Cáñamo</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Конопля</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNIT_HEMP_PEDIA</Tag>
         <English>Since the Middle Ages, hemp has been one of the most important natural fibres for cloth, ropes and other woven or braided goods.[NEWLINE]During colonization it was brought to the New World where large plantations evolved.[NEWLINE]George Washington grew hemp.[NEWLINE]Textile hemp is a cultivated variety of the Cannabaceae family.[NEWLINE]It is an annual plant, selected for the size of its stem and its low content of THC or other cannabinoids from the species that botanists call cultivated hemp (Cannabis sativa L.).[NEWLINE]Although referring to the same botanical species, 'hemp' is now the preferred term for the industrial plant and its fibre, while 'cannabis' is the scientific name for the recreational or medical form.</English>
         <French>[TAB]Le chanvre, chanvre textile, chanvre industriel ou chanvre agricole est une variété de plante cultivée de la famille des Cannabaceae. C'est une plante annuelle, sélectionnée pour la taille de sa tige et sa faible teneur en THC ou autres cannabinoïdes à partir de l'espèce que les botanistes nomment le Chanvre cultivé (Cannabis sativa L.). Il est parfois appelé localement « chènevis », comme le nom de la graine de chanvre. Bien que désignant la même espèce botanique, le terme chanvre est désormais utilisé de préférence pour désigner la plante industrielle et sa fibre végétale, tandis que Cannabis est le nom scientifique utilisé aussi pour désigner la forme récréative ou médicale.</French>
@@ -3166,31 +3032,6 @@
         <English>[COLOR_UNIT_TEXT]Hides[COLOR_REVERT] are produced when a butcher slaughters [COLOR_UNIT_TEXT]cattle[COLOR_REVERT] for meat.</English>
         <French>Les [COLOR_UNIT_TEXT]peaux[COLOR_REVERT] sont produites à partir d'une boucherie travaillant le [COLOR_UNIT_TEXT]bétail[COLOR_REVERT].</French>
         <German>[COLOR_UNIT_TEXT]Hides[COLOR_REVERT] are produced when a Butcher is slaughtering [COLOR_UNIT_TEXT]Cattle[COLOR_REVERT], to further process them to meat.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_HORSES</Tag>
-        <English>Horses</English>
-        <French>
-            <Text>Cheval:Chevaux</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Pferd:Pferde</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0:1</Plural>
-        </German>
-        <Italian>
-            <Text>Cavalli</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Caballos</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Лошади</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HORSES_PEDIA</Tag>
@@ -4039,35 +3880,6 @@
         <German>[COLOR_UNIT_TEXT]Berittene Konquistadoren[COLOR_REVERT] sind, wie auch [COLOR_UNIT_TEXT]Konquistadoren[COLOR_REVERT], sehr erfahren in Nahkampf-Situationen und eignen sich deshalb hervorragend für den Kampf gegen Ureinwohner oder berittene Einheiten. Allerdings eignen sie sich auf Grund der Pferde nur für den Kampf in offenem Gelände.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_MUSKETS</Tag>
-        <English>
-            <Text>Guns</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </English>
-        <French>
-            <Text>Arme à feu:Armes à feu</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Schusswaffen</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>
-            <Text>Armi</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Arma:Armas</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Мушкеты</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNIT_MUSKETS_PEDIA</Tag>
         <English>Muskets background</English>
     </TEXT>
@@ -4252,27 +4064,6 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_ORCA_STRATEGY</Tag>
         <English>TXT_KEY_UNIT_ANIMAL_STRATEGY</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_ORE</Tag>
-        <English>Ore</English>
-        <French>
-            <Text>Minerai de fer:Minerais de fer</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Eisenerz</German>
-        <Italian>
-            <Text>Minerale</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Mineral</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Руда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ORE_PEDIA</Tag>
@@ -5011,31 +4802,6 @@
         <German>[COLOR_UNIT_TEXT]Erfahrene Pfefferpflanzer[COLOR_REVERT] verdoppeln den [COLOR_HIGHLIGHT_TEXT]Pfeffer[COLOR_REVERT]ertrag jedes Geländefelds, auf dem sie arbeiten.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_ROPE</Tag>
-        <English>Ropes</English>
-        <French>
-            <Text>Cordage</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>
-            <Text>Seile</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>
-            <Text>Corde</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Cuerdas</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Канаты</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNIT_ROPE_PEDIA</Tag>
         <English>A rope is a linear combination of strands twisted or braided together to combine them into a larger and stronger form.[NEWLINE]Ropes have tensile strength and so can be used for dragging and lifting.[NEWLINE]Rope may be made from any long, stringy, fibrous material, but generally uses natural fibres.[NEWLINE]Common natural fibres for rope are hemp, linen, cotton, coir, jute, straw and sisal.[NEWLINE]Rope is of paramount importance in many fields like construction, seafaring or exploration, and has been used since prehistoric times.[NEWLINE]In order to connect ropes a large number of knots have been invented.</English>
         <French>Un cordages est un ensemble linéaire de plis, de fils ou de torons qui sont tordus ou tressés ensemble afin de les combiner en une forme plus grande et plus solide. Les cordages ont une résistance à la traction et peuvent donc être utilisées pour traîner et soulever. Le cordage peut être fabriquée à partir de n'importe quel matériau long, filandreux et fibreux, mais elle utilise généralement des fibres naturelles. Les fibres naturelles les plus courantes sont le chanvre, le lin, le coton, le coco, le jute, la paille et le sisal. Le cordages est d'une importance capitale dans de nombreux domaines tels que la construction, la navigation maritime ou l'exploration, et est utilisée depuis la préhistoire. Pour fixer les cordages, un grand nombre de nœuds ont été inventés.</French>
@@ -5373,35 +5139,6 @@
         <English>Rum strategy</English>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_SAILCLOTH</Tag>
-        <English>
-            <Text>Sailcloth</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </English>
-        <French>
-            <Text>Voile</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Segeltuch</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Tela da vele</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Lona</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Парусина</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNIT_SAILCLOTH_PEDIA</Tag>
         <English>Sails have been made for all of recorded history.[NEWLINE]Typically sailcloth is made from flax (linen), hemp or cotton in various forms including canvas.[NEWLINE]At the time of the colonization of the New World hemp was the most common raw material.</English>
         <French>Les voiles ont été fabriquées tout au long de l'histoire.[NEWLINE]Le tissu à voile est généralement fabriqué à partir de lin, de chanvre ou de coton, sous différentes formes, y compris la toile.[NEWLINE]À l'époque de la colonisation du Nouveau Monde, le chanvre était la matière première la plus courante.</French>
@@ -5619,19 +5356,6 @@
         <German>[COLOR_UNIT_TEXT]Erfahrene Robbenjäger[COLOR_REVERT] sind Meister der Küste und des Ozeans. Sie können auf den Bonusressourcen [LINK=BONUS_SEALS]Robben[\LINK] oder [LINK=BONUS_WALRUSS]Walrösser[\LINK] beträchtliche Mengen an [LINK=YIELD_FUR]Fellen[\LINK] und [LINK=YIELD_FOOD]Nahrung[\LINK] gewinnen.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_SHEEP</Tag>
-        <English>Sheep</English>
-        <French>Mouton</French>
-        <German>
-            <Text>Schafe</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Pecore</Italian>
-        <Spanish>Ovejas</Spanish>
-        <Russian>Овцы</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNIT_SHEEP_PEDIA</Tag>
         <English>Early in the colonization of the New World sheep arrived.[NEWLINE]Even though because of disease or lack of water not all areas were fit for sheep herding, wool soon was an important industry.[NEWLINE]Although never as important as cattle, sheep still had a big impact on commerce in the New World, giving work to many shepherds.[NEWLINE]Good sheep farming areas were soon in great demand, leading to range wars between cattle ranchers and sheep herders, as well as with the Indigenous people.[NEWLINE]Huge sheep stations stretched across the hills.</English>
         <French>Au début de la colonisation du Nouveau Monde, les moutons sont arrivés.[NEWLINE]Même si toutes les régions ne se prêtaient pas à l'élevage de moutons en raison de maladies ou du manque d'eau, la laine est rapidement devenue une industrie importante.[NEWLINE]Bien qu'ils n'aient jamais été aussi importants que les bovins, les moutons ont tout de même eu une grande incidence sur l'industrie du Nouveau Monde, employant de nombreux bergers.[NEWLINE]Les bonnes régions d'élevage de moutons ont rapidement été très recherchées, ce qui a entraîné des guerres de territoire entre les éleveurs de bovins et les éleveurs de moutons, ainsi qu'avec les populations autochtones.[NEWLINE]D'énormes élevages de moutons ont été créées.</French>
@@ -5706,27 +5430,6 @@
         <German>[COLOR_UNIT_TEXT]Karavellen[COLOR_REVERT] und [COLOR_UNIT_TEXT]Fluyten[COLOR_REVERT] sind die einfachsten Handelsschiffe: Die Karavelle ist etwas schneller, die Fluyt kann etwas mehr Fracht transportieren. [COLOR_UNIT_TEXT]Westindienfahrer[COLOR_REVERT] sind bessere Handelsschiffe: Sie sind so schnell wie die Karavelle und können noch mehr Fracht befördern als die Fluyt.[PARAGRAPH:2]Während sich diese Handelsschiffe im Kampf nur verteidigen können, sind [COLOR_UNIT_TEXT]Karacken[COLOR_REVERT] und die [COLOR_UNIT_TEXT]Galeonen[COLOR_REVERT] Allzweckschiffe: Sie können sowohl zum Transport von Waren, als auch zum Angriff eingesetzt werden. Während die Karacke langsam und wenig kampfstark, dafür aber recht billig ist, können sich die Galeonen in vielen Kämpfen behaupten und darüberhinaus mehr Fracht transportieren als jedes andere Schiff (sogar Schätze).[PARAGRAPH:2][COLOR_UNIT_TEXT]Fregatten[COLOR_REVERT] und [COLOR_UNIT_TEXT]Linienschiffe[COLOR_REVERT] sind reine Kriegsschiffe: Während die Fregatte besonders schnell ist, ist das Linienschiff das kampfstärkste Schiff der Kolonialflotte. Über das [COLOR_UNIT_TEXT]Königliche Linienschiff[COLOR_REVERT], die Herrscherin der Meere, verfügt nur der Monarch in seiner Expeditionsflotte.[PARAGRAPH:2]Die Handelsschiffe können in Siedlungen gebaut werden, sobald dort ein Trockendock steht. Für die Allzweck- und die Kriegsschiffe braucht man dagegen eine Schiffswerft. Je größer der Frachtraum eines Schiffes ist, desto mehr Eisenwaren braucht man, es zu bauen. Je schneller es ist, desto mehr Tuch muss man für die Segel beschaffen. Je kampfstärker es ist, desto mehr Schusswaffen werden benötigt.</German>
         <Italian>La [COLOR_UNIT_TEXT]nave da prima linea[COLOR_REVERT] è la migliore nave da guerra disponibile per le colonie. Pur essendo più lenta di una [COLOR_UNIT_TEXT]fregata[COLOR_REVERT], ottiene un bonus di combattimento nei confronti della più rapida rivale, il che la rende la nave ideale per difendere i porti.</Italian>
         <Spanish>El [COLOR_UNIT_TEXT]Navío de línea[COLOR_REVERT] es el mejor barco de guerra que puede tener una colonia. Aunque es más lenta que la [COLOR_UNIT_TEXT]Fragata[COLOR_REVERT], recibe una bonificación al combate en comparación a su veloz hermana, lo cual la convierte en el barco ideal para defender puertos.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_SILVER</Tag>
-        <English>Silver</English>
-        <French>
-            <Text>Argent</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>Silber</German>
-        <Italian>
-            <Text>Argento</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Plata</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Серебро</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_SILVER_PEDIA</Tag>
@@ -6039,35 +5742,6 @@
         <Spanish>Los [COLOR_UNIT_TEXT]Estadistas mayores[COLOR_REVERT] son expertos productores de [COLOR_HIGHLIGHT_TEXT]Campanas de la libertad[COLOR_REVERT]. Asignar a uno de ellos a la profesión de Estadista doblará el número de [COLOR_HIGHLIGHT_TEXT]Campanas de la libertad[COLOR_REVERT] producidas.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_STONE</Tag>
-        <English>
-            <Text>Stone:Stones</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </English>
-        <French>
-            <Text>Pierre:Pierres</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Stein:Steine</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </German>
-        <Italian>
-            <Text>Pietra:Pietre</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Piedra:Piedras</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Камень:Камни</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNIT_STONE_PEDIA</Tag>
         <English>Stone has always been one of the most important human building materials.[NEWLINE]In fact, stone tools predate human history.[NEWLINE]It appears as if stone tools were used by Paranthropus, an ancestor of man who lived about two million years ago.[PARAGRAPH:1]Most stone tools are created by chipping or grinding.[NEWLINE]Chipping is used when working with crystalline materials such as flint, chert and obsidian.[NEWLINE]The worker taps the stone with a harder stone, carefully chipping off flakes until the stone has been properly shaped.[NEWLINE]Mesoamerican tribes used this method to make their sharp and deadly obsidian swords.[PARAGRAPH:1]Grinding is used when working with harder and coarser materials like basalt and granite.[NEWLINE]This is a long and tedious process where the toolmaker repeatedly grinds away stone with a harder material or with sand, sometimes using water as a lubricant.[NEWLINE]Many of the earliest European stone axes were made using this process.</English>
         <French>La pierre est depuis toujours le matériau de construction le plus répandu. L'apparition des outils en pierre marque même l'avènement de l'homme. C'est semble-t-il le Paranthropus, un ancêtre de l'homme qui vivait il y a deux millions d'années, qui fut le premier à utiliser des outils en pierre.[PARAGRAPH:1]La plupart des outils en pierre sont fabriqués en taillant ou en polissant la pierre. La première technique est utilisée avec les matériaux cristallins tels que le silex, le chert ou l'obsidienne. Elle consiste à frapper la pierre avec une pierre plus dure pour la tailler progressivement en enlevant des éclats. Les tribus d'Amérique centrale utilisaient cette méthode pour fabriquer leurs épées d'obsidienne.[PARAGRAPH:1]La méthode du polissage est utilisée avec les pierres plus dures, comme le basalte ou le granit. C'est un processus long et laborieux qui consiste à frotter de manière répétée la pierre avec un matériau plus dur ou avec du sable, en l'arrosant parfois pour la lubrifier. Les premières haches de pierre fabriquées en Europe sont nées de ce procédé.</French>
@@ -6347,35 +6021,6 @@
         <Spanish>Los [COLOR_UNIT_TEXT]Plantadores de tabaco expertos[COLOR_REVERT] son los mejores amigos del Tabaquero. Un Plantador de tabaco experto produce el doble de cantidad de [COLOR_HIGHLIGHT_TEXT]Tabaco[COLOR_REVERT] en cualquier casilla en la que trabaje.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_TOOLS</Tag>
-        <English>
-            <Text>Tools</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </English>
-        <French>
-            <Text>Outil:Outils</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Eisenwaren</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>
-            <Text>Attrezzi</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Herramientas</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Инструменты</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNIT_TOOLS_PEDIA</Tag>
         <English>Tools background</English>
     </TEXT>
@@ -6557,19 +6202,6 @@
         <German>Wagen können Güter quer durch das Land von einer Siedlung zu einer anderen befördern und damit Ortschaften an das Handelsnetz anschließen, die nicht an der Küste liegen.[PARAGRAPH:2][COLOR_UNIT_TEXT]Planwagen[COLOR_REVERT] können in 2 Transportplätzen jeweils bis zu 100 Güter transportieren. Die gleich teuren [COLOR_UNIT_TEXT]Trecks[COLOR_REVERT] können sogar bis zu 5 Transportplätze nutzen, haben aber im Gegensatz zu den Planwagen nicht zwei, sondern nur einen einzigen Bewegungspunkt. Sie können erst dann gebaut werden, wenn eine Stadt über ein [COLOR_BUILDING_TEXT]Sägewerk[COLOR_REVERT] verfügt.[PARAGRAPH:2]Tipp: Trecks sind insbesondere für Massentransporte zwischen zwei nahegelegenen Städten in der mittleren und späten Spielphase geeignet.[PARAGRAPH:2]Tipp: Bei gedrückter Shift-Taste können die Wagen auch mit Teilmengen beladen werden.[PARAGRAPH:2]Hinweise: Wagen können nicht auf Schiffe geladen werden. Greift man einen Planwagen oder einen Treck an, erobert man ihn mitsamt aller Waren.</German>
         <Italian>Le [COLOR_UNIT_TEXT]colonne di carovane[COLOR_REVERT] sono preziosi strumenti per il commercio terrestre. Le [COLOR_UNIT_TEXT]colonne di carovane[COLOR_REVERT] possono trasportare i beni tra gli insediamenti via terra, il che significa che possono raggiungere gli insediamenti che non si trovano sulla costa. Sono la chiave per l'espansione verso l'interno del continente.</Italian>
         <Spanish>Las [COLOR_UNIT_TEXT]Caravanas de carromatos[COLOR_REVERT] son unas herramientas para el comercio terrestre que no tienen precio. Las [COLOR_UNIT_TEXT]Caravanas de carromatos[COLOR_REVERT] pueden transportar mercancías de un asentamiento a otro por tierra, lo cual comporta que no pueden llegar a los que se encuentren en la costa. Son la clave para la expansión hacia el interior del continente.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_VALUABLE_WOOD</Tag>
-        <English>Valuable Wood</English>
-        <French>Bois précieux</French>
-        <German>
-            <Text>Edelholz</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Legno pregiato</Italian>
-        <Spanish>Madera fina</Spanish>
-        <Russian>Ценная древесина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_VALUABLE_WOOD_PEDIA</Tag>

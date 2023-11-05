@@ -427,19 +427,15 @@ public:
 	int getAmountForNativeTrade() const;
 	// R&R, ray, Natives Trading - END
 	DllExport int getX() const;
-#ifdef _USRDLL
 	inline int getX_INLINE() const
 	{
 		return m_coord.x();
 	}
-#endif
 	DllExport int getY() const;
-#ifdef _USRDLL
 	inline int getY_INLINE() const
 	{
 		return m_coord.y();
 	}
-#endif
 	inline const Coordinates& coord() const
 	{
 		return m_coord;
@@ -616,12 +612,10 @@ public:
 	DllExport void setInfoBarDirty(bool bNewValue);
 
 	DllExport PlayerTypes getOwner() const;
-#ifdef _USRDLL
 	inline PlayerTypes getOwnerINLINE() const
 	{
 		return m_eOwner;
 	}
-#endif
 	CvPlayer &getOwnerR() const;
 	DllExport PlayerTypes getVisualOwner(TeamTypes eForTeam = NO_TEAM) const;
 	PlayerTypes getCombatOwner(TeamTypes eForTeam, const CvPlot* pPlot) const;
@@ -685,7 +679,7 @@ public:
 	bool canAcquireNegativePromotion(PromotionTypes ePromotion) const; //WTP, ray Negative Promotions - START
 	void acquireAnyNegativePromotion(); //WTP, ray Negative Promotions - START
 	void cleanseAllNegativePromotions(); //WTP, ray Negative Promotions - START
-	bool isHasNegativePromotion() const; //WTP, ray Negative Promotions - START
+	bool hasNegativePromotion() const; //WTP, ray Negative Promotions - START
 	bool testWillGetNegativePromotion() const;
 	bool canAcquirePromotionAny() const;
 	bool isPromotionValid(PromotionTypes ePromotion) const;
@@ -745,8 +739,8 @@ public:
 
 	DllExport bool isOnMap() const;
 	const CvArtInfoUnit* getArtInfo(int i) const;
-	DllExport const TCHAR* getButton() const;
-	const TCHAR* getFullLengthIcon() const;
+	DllExport char const* getButton() const;
+	char const* getFullLengthIcon() const;
 
 	bool isColonistLocked();
 	void setColonistLocked(bool bNewValue);

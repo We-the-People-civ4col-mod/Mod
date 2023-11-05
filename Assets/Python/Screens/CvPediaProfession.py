@@ -108,14 +108,14 @@ class CvPediaProfession:
 		screen.setText(self.top.getNextWidgetName(), "Background", self.top.MENU_TEXT, CvUtil.FONT_LEFT_JUSTIFY, self.top.X_MENU, self.top.Y_MENU, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_PEDIA_MAIN, CivilopediaPageTypes.CIVILOPEDIA_PAGE_PROFESSION, -1)
 
 		if self.top.iLastScreen	!= CvScreenEnums.PEDIA_PROFESSION or bNotActive:
-			self.placeLinks(true)
+			self.placeLinks(True)
 			self.top.iLastScreen = CvScreenEnums.PEDIA_PROFESSION
 		else:
-			self.placeLinks(true)
+			self.placeLinks(True)
 
 		# Icon
 		screen.addPanel( self.top.getNextWidgetName(), "", "", False, False, self.X_PROFESSION_PANE, self.Y_PROFESSION_PANE, self.W_PROFESSION_PANE, self.H_PROFESSION_PANE, PanelStyles.PANEL_STYLE_BLUE50, WidgetTypes.WIDGET_GENERAL, -1, -1)
-		screen.addPanel(self.top.getNextWidgetName(), "", "", false, false, self.X_ICON, self.Y_ICON, self.W_ICON, self.H_ICON, PanelStyles.PANEL_STYLE_MAIN, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.addPanel(self.top.getNextWidgetName(), "", "", False, False, self.X_ICON, self.Y_ICON, self.W_ICON, self.H_ICON, PanelStyles.PANEL_STYLE_MAIN, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		screen.addDDSGFC(self.top.getNextWidgetName(), gc.getProfessionInfo(self.iProfession).getButton(), self.X_ICON + self.W_ICON / 2 - self.ICON_SIZE / 2, self.Y_ICON + self.H_ICON / 2 - self.ICON_SIZE / 2, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
 		#Find the Best Unit fit for this Profession
@@ -228,7 +228,7 @@ class CvPediaProfession:
 		screen = self.top.getScreen()
 
 		panelName = self.top.getNextWidgetName()
-		screen.addPanel( panelName, localText.getText("TXT_KEY_PEDIA_WORKS_IN_BUILDING", ()), "", false, true, self.X_BUILDINGS, self.Y_BUILDINGS, self.W_BUILDINGS, self.H_BUILDINGS, PanelStyles.PANEL_STYLE_BLUE50, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.addPanel( panelName, localText.getText("TXT_KEY_PEDIA_WORKS_IN_BUILDING", ()), "", False, True, self.X_BUILDINGS, self.Y_BUILDINGS, self.W_BUILDINGS, self.H_BUILDINGS, PanelStyles.PANEL_STYLE_BLUE50, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
 		screen.attachLabel(panelName, "", "  ")
 		iSpecialBuilding = gc.getProfessionInfo(self.iProfession).getSpecialBuilding()
@@ -243,7 +243,7 @@ class CvPediaProfession:
 		screen = self.top.getScreen()
 
 		panelName = self.top.getNextWidgetName()
-		screen.addPanel( panelName, localText.getText("TXT_KEY_PEDIA_SPECIAL_ABILITIES", ()), "", false, true, self.X_REQUIRES, self.Y_REQUIRES, self.W_REQUIRES, self.H_REQUIRES, PanelStyles.PANEL_STYLE_BLUE50, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.addPanel( panelName, localText.getText("TXT_KEY_PEDIA_SPECIAL_ABILITIES", ()), "", False, True, self.X_REQUIRES, self.Y_REQUIRES, self.W_REQUIRES, self.H_REQUIRES, PanelStyles.PANEL_STYLE_BLUE50, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
 		listName = self.top.getNextWidgetName()
 		szSpecialText = CyGameTextMgr().getProfessionHelp(self.iProfession, True)[1:]

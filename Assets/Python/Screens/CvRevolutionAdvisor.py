@@ -138,14 +138,14 @@ class CvRevolutionAdvisor:
 		## R&R, Robert Surcouf,  Revolution Advisor Screen, Cannons, Start
 		#CityCount, iHorses, iMuskets = 0, 0, 0
 		CityCount, iHorses, iBlades, iMuskets, iCannons, iBlackpowder = 0, 0, 0, 0, 0, 0
-		(city, iter) = self.player.firstCity(true)
+		(city, iter) = self.player.firstCity(True)
 		while(city):
 			iHorses += city.getYieldStored(gc.getInfoTypeForString("YIELD_HORSES"))
 			iBlades += city.getYieldStored(gc.getInfoTypeForString("YIELD_BLADES")) # R&R, ray, Blades
 			iMuskets += city.getYieldStored(gc.getInfoTypeForString("YIELD_MUSKETS"))
 			iCannons += city.getYieldStored(gc.getInfoTypeForString("YIELD_CANNONS")) ## R&R, Robert Surcouf
 			iBlackpowder += city.getYieldStored(gc.getInfoTypeForString("YIELD_BLACK_POWDER"))
-			(city, iter) = self.player.nextCity(iter, true)
+			(city, iter) = self.player.nextCity(iter, True)
 
 		screen.addDDSGFC( "HorseIcon", gc.getYieldInfo(gc.getInfoTypeForString("YIELD_HORSES")).getIcon(), (self.XResolution * 40 / 100) - self.ICON_BUTTON_SIZE / 2, (self.YResolution * 5 / 12), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		HorseText = str(iHorses)
@@ -279,7 +279,7 @@ class CvRevolutionAdvisor:
 
 		if (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED):
 			if (inputClass.getData1() == self.REVOLUTION_BUTTON):
-				CyMessageControl().sendChangeWar(gc.getPlayer(self.player.getParent()).getTeam(), true)
+				CyMessageControl().sendChangeWar(gc.getPlayer(self.player.getParent()).getTeam(), True)
 				self.getScreen().hideScreen()
 			
 		return 0
@@ -365,39 +365,39 @@ class CvRevolutionAdvisor:
 # <-- TAC
 def isSoldier(eProfession):
 	if eProfession == ProfessionTypes.NO_PROFESSION:
-		return false
+		return False
 	if (gc.getProfessionInfo(eProfession).getCombatChange() == 0):
-		return false
+		return False
 	if (gc.getProfessionInfo(eProfession).isUnarmed()):
-		return false
+		return False
 	return (getProfessionYieldsRequired(eProfession) == 1)
 	
 def isDragoon(eProfession):
 	if eProfession == ProfessionTypes.NO_PROFESSION:
-		return false
+		return False
 	if (gc.getProfessionInfo(eProfession).getCombatChange() == 0):
-		return false
+		return False
 	if (gc.getProfessionInfo(eProfession).isUnarmed()):
-		return false
+		return False
 	return (getProfessionYieldsRequired(eProfession) > 1)
 
 def isCannon(eUnit):
 	unit = gc.getUnitInfo(eUnit)
 	if unit.getDomainType() != DomainTypes.DOMAIN_LAND:
-		return false
+		return False
 	if (unit.getCombat() == 0):
-		return false
-	return true
+		return False
+	return True
 
 def isWarship(eUnit):
 	unit = gc.getUnitInfo(eUnit)
 	if unit.getDomainType() != DomainTypes.DOMAIN_SEA:
-		return false
+		return False
 	if (unit.getCombat() == 0):
-		return false
+		return False
 	if (unit.isOnlyDefensive()):
-		return false
-	return true
+		return False
+	return True
 
 def getProfessionYieldsRequired(eProfession):
 	iNumYieldsRequired = 0
@@ -410,6 +410,6 @@ def isVeteran(eUnit):
 	unit = gc.getUnitInfo(eUnit)
 	for iPromotion in range(gc.getNumPromotionInfos()):
 		if unit.getFreePromotions(iPromotion):
-			return true
-	return false
+			return True
+	return False
 

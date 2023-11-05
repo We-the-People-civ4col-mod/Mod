@@ -233,31 +233,6 @@
         <Russian>Мастер кузнец:Мастера кузнецы</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_BLADES</Tag>
-        <English>Blades</English>
-        <French>
-            <Text>Sabres</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>
-            <Text>Klingenwaffen</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>
-            <Text>Spade</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Cuchillas</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Клинки</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BREWER</Tag>
         <English>
             <Text>Master Brewer:Master Brewers</Text>
@@ -471,19 +446,6 @@
         <Italian>Conestoga:Conestogas</Italian>
         <Spanish>Conestoga:Conestogas</Spanish>
         <Russian>Конестогская повозка:Конестогские повозки</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_CATTLE</Tag>
-        <English>Cattle</English>
-        <French>Bétail</French>
-        <German>
-            <Text>Rinder</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Bovini</Italian>
-        <Spanish>Bovinos</Spanish>
-        <Russian>Коровы</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CHRISTIAN_MISSIONARY</Tag>
@@ -1144,27 +1106,6 @@
         <Russian>Флейт:Флейты</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_FOOD</Tag>
-        <English>Food</English>
-        <French>
-            <Text>Nourriture</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>Nahrung</German>
-        <Italian>
-            <Text>Cibo</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Alimentos</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Еда</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FRIGATE</Tag>
         <English>Frigate:Frigates</English>
         <French>
@@ -1341,56 +1282,6 @@
             <Plural>0:1</Plural>
         </German>
         <Russian>Галеон Королевских войск:Галеоны Королевских войск</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_GEMS</Tag>
-        <English>Gems</English>
-        <French>
-            <Text>Pierres précieuses</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>
-            <Text>Edelsteine</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>
-            <Text>Pietre preziose</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Piedras preciosas</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Драгоценные камни</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_GOLD</Tag>
-        <English>Gold</English>
-        <French>
-            <Text>Or</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Gold</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Oro</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Oro</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Золото</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_GOVERNOR</Tag>
@@ -1634,31 +1525,6 @@
         <Russian>Тяжелая артиллерия</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_HEMP</Tag>
-        <English>Hemp</English>
-        <French>
-            <Text>Chanvre</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Hanf</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Canapa</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Cáñamo</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Конопля</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_HEMP_PLANTER</Tag>
         <English>Expert Hemp Planter:Expert Hemp Planters</English>
         <French>
@@ -1716,31 +1582,6 @@
             <Plural>1</Plural>
         </Spanish>
         <Russian>Коровьи шкуры</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_HORSES</Tag>
-        <English>Horses</English>
-        <French>
-            <Text>Cheval:Chevaux</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Pferd:Pferde</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0:1</Plural>
-        </German>
-        <Italian>
-            <Text>Cavalli</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Caballos</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Лошади</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_HUMPBACK_WHALE</Tag>
@@ -2138,35 +1979,6 @@
         <English>TXT_KEY_UNIT_MOUNTED_CONQUISTADOR</English>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_MUSKETS</Tag>
-        <English>
-            <Text>Guns</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </English>
-        <French>
-            <Text>Arme à feu:Armes à feu</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Schusswaffen</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>
-            <Text>Armi</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Arma:Armas</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Мушкеты</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_NATIVE_MERC</Tag>
         <English>TXT_KEY_UNIT_NATIVE_MERC</English>
     </TEXT>
@@ -2227,27 +2039,6 @@
             <Plural>0</Plural>
         </Spanish>
         <Russian>Косатка</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_ORE</Tag>
-        <English>Ore</English>
-        <French>
-            <Text>Mineral:Mineraux</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Eisenerz</German>
-        <Italian>
-            <Text>Minerale</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Mineral</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Руда</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_OXCART</Tag>
@@ -2593,31 +2384,6 @@
         <Russian>Опытный сборщик красного перца:Опытные сборщики красного перца</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_ROPE</Tag>
-        <English>Rope</English>
-        <French>
-            <Text>Cordage</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>
-            <Text>Seile</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>
-            <Text>Corde</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Cuerdas</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Канаты</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROPES_MAKER</Tag>
         <English>Master Roper:Master Ropers</English>
         <French>
@@ -2784,35 +2550,6 @@
         <Russian>Ром</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_SAILCLOTH</Tag>
-        <English>
-            <Text>Sailcloth</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </English>
-        <French>
-            <Text>Voile</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Segeltuch</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Tela da vele</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Lona</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Парусина</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SAILCLOTH_MAKER</Tag>
         <English>Master Sailmaker:Master Sailmakers</English>
         <French>
@@ -2907,19 +2644,6 @@
         <Russian>Опытный охотник на тюленей:Опытные охотники на тюленей</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_SHEEP</Tag>
-        <English>Sheep</English>
-        <French>Moutons</French>
-        <German>
-            <Text>Schafe</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Pecore</Italian>
-        <Spanish>Ovejas</Spanish>
-        <Russian>Овцы</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SHIP_OF_THE_LINE</Tag>
         <English>Ship of the Line:Ships of the Line</English>
         <French>
@@ -2998,27 +2722,6 @@
             <Plural>0:1</Plural>
         </German>
         <Russian>Военный корабль:Военные корабли</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_SILVER</Tag>
-        <English>Silver</English>
-        <French>
-            <Text>Argent</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>Silber</German>
-        <Italian>
-            <Text>Argento</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Plata</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Серебро</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SLOOP</Tag>
@@ -3222,35 +2925,6 @@
         <Russian>Маститый политик:Маститые политики</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_STONE</Tag>
-        <English>
-            <Text>Stone:Stone</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </English>
-        <French>
-            <Text>Pierre:Pierres</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Stein:Steine</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </German>
-        <Italian>
-            <Text>Pietra:Pietre</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Piedra:Piedras</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Камень:Камни</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_STONECUTTER</Tag>
         <English>Expert Stonecutter:Expert Stonecutters</English>
         <French>
@@ -3430,35 +3104,6 @@
         <Russian>Опытный плантатор табака:Опытные плантаторы табака</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_TOOLS</Tag>
-        <English>
-            <Text>Tools</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </English>
-        <French>
-            <Text>Outil:Outils</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Eisenwaren</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>
-            <Text>Attrezzi</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Herramientas</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-        <Russian>Инструменты</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_TRADE_GOODS</Tag>
         <English>
             <Text>Trade Goods</Text>
@@ -3545,19 +3190,6 @@
         <Italian>Trek:Treks</Italian>
         <Spanish>Trek:Treks</Spanish>
         <Russian>Фургон:Фургоны</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_VALUABLE_WOOD</Tag>
-        <English>Exotic Wood</English>
-        <French>Bois exotique</French>
-        <German>
-            <Text>Edelholz</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Legno pregiato</Italian>
-        <Spanish>Madera fina</Spanish>
-        <Russian>Ценная древесина</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_VETERAN</Tag>

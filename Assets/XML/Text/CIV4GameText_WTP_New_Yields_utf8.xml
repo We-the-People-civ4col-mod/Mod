@@ -20,32 +20,6 @@
         <Russian>Козы</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_GOATS</Tag>
-        <English>Goats</English>
-        <French>Chèvres</French>
-        <German>
-            <Text>Ziegen</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Capre</Italian>
-        <Spanish>Cabras</Spanish>
-        <Russian>Козы</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_GOATS</Tag>
-        <English>Goats</English>
-        <French>Chèvres</French>
-        <German>
-            <Text>Ziegen</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Capre</Italian>
-        <Spanish>Cabras</Spanish>
-        <Russian>Козы</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_YIELD_GOATS_PEDIA</Tag>
         <English>[H1]GOATS[\H1][NEWLINE][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Goats[COLOR_REVERT] can be raised on hills on [LINK=TERRAIN_WETLAND]wetlands[\LINK], [LINK=TERRAIN_MARSH]marshes[\LINK], [LINK=TERRAIN_SHRUBLAND]shrublands[\LINK] or [LINK=TERRAIN_TAIGA]taiga[\LINK] terrain. To make a colonist herd goats, assign him to the [LINK=PROFESSION_GOATHERD]goatherd[\LINK] profession.[NEWLINE][NEWLINE]Goat production is highest on plots bearing the [LINK=BONUS_GOAT]goat[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_PASTURE]pastures[\LINK] on goat-producing plots and employing [LINK=UNIT_HERDER]expert herders[\LINK]. These experts can be trained in Native villages or hired in Europe.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]Goats will eat vegetation that most other domesticated livestock decline, so they can subsist on very poor land. The number of animals that a goat farmer can sustain depends on the quality of the pasture. A poor man with poor land can still raise goats.[NEWLINE][NEWLINE]Perhaps because of their adaptability, goats have become a symbol of evil. Witches are said to cavort with goats. Satan has goat horns.</English>
         <French>[H1]CHÈVRES[\H1][NEWLINE][BOLD]Stratégie :[\BOLD][NEWLINE]Les [COLOR_HIGHLIGHT_TEXT]chèvres[COLOR_REVERT] peuvent être élevées sur des collines sur des terrains de [LINK=TERRAIN_WETLAND]zones humides[\LINK], [LINK=TERRAIN_MARSH]marais[\LINK], [LINK=TERRAIN_SHRUBLAND]zones arbustives[\LINK] ou [LINK=TERRAIN_TAIGA]taiga[\LINK]. Pour qu'un colon élève des chèvres, il faut lui attribuer la profession de [LINK=PROFESSION_GOATHERD]chevrier[\LINK][NEWLINE][NEWLINE]La production de chèvres est la plus élevée sur les parcelles portant le bonus [LINK=BONUS_GOAT]chèvres[\LINK], et peut être augmentée en construisant des [LINK=IMPROVEMENT_PASTURE]pâturages[\LINK] sur les parcelles produisant des chèvres et en employant des [LINK=UNIT_HERDER]bergers expérimentés[\LINK]. Ces experts peuvent être formés dans les villages autochtones ou embauchés en Europe.[NEWLINE][NEWLINE][BOLD]Contexte :[\BOLD][NEWLINE]Les chèvres mangent des végétaux que la plupart des autres animaux domestiques refusent, ce qui leur permet de subsister sur des terres très pauvres. Le nombre d'animaux qu'un éleveur de chèvres peut faire vivre dépend de la qualité du pâturage. Un homme pauvre disposant d'une terre pauvre peut tout de même élever des chèvres.[NEWLINE][NEWLINE]Peut-être en raison de leur adaptabilité, les chèvres sont devenues un symbole du mal. On dit que les sorcières se promènent avec des chèvres. Satan a des cornes de chèvre.</French>
@@ -64,32 +38,6 @@
     <!-- PIGS -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIGS</Tag>
-        <English>Pigs</English>
-        <French>Porcs</French>
-        <German>
-            <Text>Schweine</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Maiali</Italian>
-        <Spanish>Cerdos</Spanish>
-        <Russian>Свиньи</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_PIGS</Tag>
-        <English>Pigs</English>
-        <French>Porcs</French>
-        <German>
-            <Text>Schweine</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Maiali</Italian>
-        <Spanish>Cerdos</Spanish>
-        <Russian>Свиньи</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_PIGS</Tag>
         <English>Pigs</English>
         <French>Porcs</French>
         <German>
@@ -132,32 +80,6 @@
         <Russian>Куры</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_CHICKEN</Tag>
-        <English>Chickens</English>
-        <French>Poules</French>
-        <German>
-            <Text>Hühner</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Galline</Italian>
-        <Spanish>Gallinas</Spanish>
-        <Russian>Куры</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_CHICKEN</Tag>
-        <English>Chickens</English>
-        <French>Poules</French>
-        <German>
-            <Text>Hühner</Text>
-            <Gender>Neuter</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Galline</Italian>
-        <Spanish>Gallinas</Spanish>
-        <Russian>Куры</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_YIELD_CHICKEN_PEDIA</Tag>
         <English>[H1]CHICKENS[\H1][NEWLINE][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Chickens[COLOR_REVERT] can be raised on [LINK=TERRAIN_MARSH]marshes[\LINK] or [LINK=TERRAIN_SHRUBLAND]shrublands[\LINK] terrain. To make a colonist raise chickens, assign him to the [LINK=PROFESSION_CHICKEN_BREEDER]chicken breeder[\LINK] profession.[NEWLINE][NEWLINE]Chicken production is highest on plots bearing the [LINK=BONUS_CHICKEN]chicken[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_PASTURE]pastures[\LINK] on chicken-producing plots and employing [LINK=UNIT_BREEDER]expert poultry breeders[\LINK]. These experts can be trained in Native villages or hired in Europe.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]Free-range poultry farming allows chickens to roam during the day, although they are usually confined in coops at night to protect them from predators. They're also kept indoors when the weather is bad.</English>
         <French>[H1]POULES[\H1][NEWLINE][BOLD]Stratégie :[\BOLD][NEWLINE]Les [COLOR_HIGHLIGHT_TEXT]poulets[COLOR_REVERT] peuvent être élevés sur des terrains plats sur [LINK=TERRAIN_MARSH]marais[\LINK] ou [LINK=TERRAIN_SHRUBLAND]zones arbustives[\LINK]. Pour qu'un colon élève des poulets, affectez-lui la profession de [LINK=PROFESSION_CHICKEN_BREEDER]éleveur de poulets[\LINK].[NEWLINE][NEWLINE]La production de poulets est la plus élevée sur les parcelles portant le bonus [LINK=BONUS_CHICKEN]poulet[\LINK], et peut être augmentée en construisant des [LINK=IMPROVEMENT_PASTURE]pâturages[\LINK] sur les parcelles produisant des poulets et en employant des [LINK=UNIT_BREEDER]experts en élevage de volailles[\LINK]. Ces experts peuvent être formés dans les villages autochtones ou embauchés en Europe.[NEWLINE][NEWLINE][BOLD]Contexte :[\BOLD][NEWLINE]L'élevage de volailles en liberté permet aux poulets de se déplacer pendant la journée, bien qu'ils soient généralement confinés dans des cages la nuit pour les protéger des prédateurs.</French>
@@ -176,32 +98,6 @@
     <!-- GEESE -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_GEESE</Tag>
-        <English>Domestic Geese</English>
-        <French>Oies</French>
-        <German>
-            <Text>Hausgänse</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Oche</Italian>
-        <Spanish>Gansos</Spanish>
-        <Russian>Гуси</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_GEESE</Tag>
-        <English>Domestic Geese</English>
-        <French>Oies</French>
-        <German>
-            <Text>Hausgänse</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Oche</Italian>
-        <Spanish>Gansos</Spanish>
-        <Russian>Гуси</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_GEESE</Tag>
         <English>Domestic Geese</English>
         <French>Oies</French>
         <German>
@@ -681,32 +577,6 @@
         <Russian>Лен</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_FLAX</Tag>
-        <English>Flax</English>
-        <French>Lin</French>
-        <German>
-            <Text>Flachs</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Lino</Italian>
-        <Spanish>Lino</Spanish>
-        <Russian>Лен</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_FLAX</Tag>
-        <English>Flax</English>
-        <French>Lin</French>
-        <German>
-            <Text>Flachs</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Lino</Italian>
-        <Spanish>Lino</Spanish>
-        <Russian>Лен</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_YIELD_FLAX_PEDIA</Tag>
         <English>[H1]FLAX[\H1][NEWLINE][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Flax[COLOR_REVERT], like hemp, is the raw material for[LINK=YIELD_SAILCLOTH]sailcloth[\LINK] and [LINK=YIELD_ROPE]ropes[\LINK], which are made by the [LINK=PROFESSION_SAILCLOTH_MAKER]sailmaker[\LINK] and [LINK=PROFESSION_ROPES_MAKER]roper[\LINK] in the [LINK=BUILDING_DOCK]dock[\LINK] or one of its upgrades. Flax grows on many different terrains. To harvest it, a colonist needs to have the [LINK=PROFESSION_FLAX_PLANTER]flax planter[\LINK] profession. The flax harvest can be doubled by employing [LINK=UNIT_LINEN_PLANTER]expert flax planters[\LINK] who can be hired in Europe or trained in Native villages.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]Linen fabrics woven from wild flax date back over 30,000 years. Devout colonists all know that linen is frequently mentioned in the Bible.[NEWLINE][NEWLINE]Linen is comfortable to wear in hot weather. The fabric is strong and absorbent, though it does wrinkle.</English>
         <French>[H1]LIN[\H1][NEWLINE][BOLD]Stratégie :[\BOLD][NEWLINE]Le [COLOR_HIGHLIGHT_TEXT]lin[COLOR_REVERT] pousse dans les plaines sur un terrain de [LINK=TERRAIN_TAIGA]taiga[\LINK]. Pour le récolter, un colon doit avoir la profession de [LINK=PROFESSION_FLAX_PLANTER]planteur de lin[\LINK]. La récolte de lin peut être doublée en employant des [LINK=UNIT_LINEN_PLANTER]planteurs de lin experts[\LINK] qui peuvent être embauchés en Europe ou formés dans les villages autochtones.[NEWLINE][NEWLINE][BOLD]Contexte :[\BOLD][NEWLINE]Les tissus de lin tissés à partir de lin sauvage remontent à plus de 30 000 ans. Les colons dévots savent tous que le lin est fréquemment mentionné dans la Bible.[NEWLINE][NEWLINE]Le lin est agréable à porter par temps chaud. Le tissu est solide et absorbant, mais il se froisse.</French>
@@ -1129,32 +999,6 @@
         <Russian>Глина</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_CLAY</Tag>
-        <English>Clay</English>
-        <French>Argile</French>
-        <German>
-            <Text>Lehm</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Argilla</Italian>
-        <Spanish>Arcilla</Spanish>
-        <Russian>Глина</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_CLAY</Tag>
-        <English>Clay</English>
-        <French>Argile</French>
-        <German>
-            <Text>Lehm</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Argilla</Italian>
-        <Spanish>Arcilla</Spanish>
-        <Russian>Глина</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_YIELD_CLAY_PEDIA</Tag>
         <English>[H1]CLAY[\H1][NEWLINE][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Clay[COLOR_REVERT] - a lot of clay - is used for the construction of larger buildings. Along with [LINK=YIELD_STONE]stone[\LINK] and [LINK=YIELD_TOOLS]tools[\LINK], towns in the mid-game need shiploads of clay. Clay is also used to make [LINK=YIELD_POTTERY]pottery[\LINK]. To collect it, a colonist needs to have the [LINK=PROFESSION_CLAY_MINER]clay cutter[\LINK] profession. The supply of clay can be doubled by commissioning [LINK=UNIT_PEAT_CUTTER]expert peat and clay cutters[\LINK] who can be hired in Europe or trained in Native villages.[NEWLINE] Clay is found on hills on [LINK=TERRAIN_MARSH]marsh[\LINK], [LINK=TERRAIN_WETLAND]wetlands[\LINK] or [LINK=TERRAIN_TUNDRA]tundra[\LINK] terrain.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]Clay develops plasticity when wet, due to a molecular film of water surrounding the clay particles, but becomes hard, brittle and non-plastic upon drying or firing. Shale, formed largely from clay, is the most common sedimentary rock.[NEWLINE][NEWLINE]Clay is the oldest known ceramic material. Prehistoric humans used it for making pottery. Early pottery shards have been dated to 14,000 BC, and clay tablets are the first known writing medium.</English>
         <French>[H1]ARGILE[\H1][NEWLINE][BOLD]Stratégie :[\BOLD][NEWLINE]L'[COLOR_HIGHLIGHT_TEXT]argile[COLOR_REVERT] se trouve sur les collines des terrains de [LINK=TERRAIN_MARSH]marais[\LINK], de [LINK=TERRAIN_WETLAND]zones humides[\LINK] ou de [LINK=TERRAIN_TUNDRA]tundra[\LINK]. Pour la collecter, un colon doit avoir la profession de [LINK=PROFESSION_CLAY_MINER]coupeur d'argile[\LINK]. L'approvisionnement en argile peut être doublé en faisant appel à des [LINK=UNIT_PEAT_CUTTER]coupeurs de tourbe et d'argile experts[\LINK] qui peuvent être engagés en Europe ou formés dans les villages autochtones.[NEWLINE][NEWLINE][BOLD]Contexte :[\BOLD][NEWLINE]L'argile développe une plasticité lorsqu'elle est humide, en raison d'un film moléculaire d'eau entourant les particules d'argile, mais elle devient dure, cassante et non plastique lorsqu'elle est séchée ou cuite. Le schiste, formé en grande partie d'argile, est la roche sédimentaire la plus courante. L'argile est le plus ancien matériau céramique connu. Les hommes préhistoriques l'utilisaient pour fabriquer des poteries. Les premiers tessons de poterie ont été datés de 14 000 ans avant J.-C., et les tablettes d'argile sont le premier support d'écriture connu.</French>
@@ -1185,32 +1029,6 @@
         <Russian>Уголь</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_COAL</Tag>
-        <English>Coal</English>
-        <French>Charbon</French>
-        <German>
-            <Text>Kohle</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Carbone</Italian>
-        <Spanish>Carbón</Spanish>
-        <Russian>Уголь</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_COAL</Tag>
-        <English>Coal</English>
-        <French>Charbon</French>
-        <German>
-            <Text>Kohle</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Carbone</Italian>
-        <Spanish>Carbón</Spanish>
-        <Russian>Уголь</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_YIELD_COAL_PEDIA</Tag>
         <English>[H1]COAL[\H1][NEWLINE][BOLD]Strategy :[\BOLD][NEWLINE]The gunsmith needs to burn [COLOR_HIGHLIGHT_TEXT]coal[COLOR_REVERT] to shape [LINK=YIELD_TOOLS]tools[\LINK] into guns and cannons. Coal is found on [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]mountains[COLOR_REVERT]. To collect it, a colonist needs to have the [LINK=PROFESSION_COAL_MINER]coal miner[\LINK] profession. In an [LINK=BUILDING_ARMORY]armoury[\LINK] or one of its extensions, [COLOR_HIGHLIGHT_TEXT]coal[COLOR_REVERT] can be used to heat [LINK=YIELD_TOOLS]tools[\LINK] to forge [LINK=YIELD_MUSKETS]guns[\LINK] and [LINK=YIELD_CANNONS]cannons[\LINK]. The supply of coal can be increased by commissioning [LINK=UNIT_COAL_MINER]expert coal miners[\LINK] who can be hired in Europe or trained in Native villages.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]Coal mining causes premature death and illness, but it's a soft rock that doesn't need as many explosives as hard rock mining. Even though mining coal is a basic job, picks and shovels and low pay, coal miners' daughters are proud of them.</English>
         <French>[H1]CHARBON[\H1][NEWLINE][BOLD]Stratégie :[\BOLD][NEWLINE]Le [COLOR_HIGHLIGHT_TEXT]Charbon[COLOR_REVERT] se trouve sur les [COLOR_HIGHLIGHT_TEXT]collines[COLOR_REVERT]. Pour le collecter, un colon doit avoir la profession de [LINK=PROFESSION_COAL_MINER]mineur de charbon[\LINK]. L'approvisionnement en charbon peut être doublé en faisant appel à des [LINK=UNIT_COAL_MINER]mineurs experts[\LINK] qui peuvent être engagés en Europe ou formés dans les villages autochtones.[NEWLINE][NEWLINE][BOLD]Contexte :[\BOLD][NEWLINE]L'exploitation du charbon provoque des décès prématurés et des maladies, mais il s'agit d'une roche tendre qui ne nécessite pas autant d'explosifs que les mines de roche dure. C'est un travail où les ouvriers utilisent des pioches et des pelles, et ils ne sont pas très bien payés.</French>
@@ -1229,32 +1047,6 @@
     <!-- CHAR_COAL -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHAR_COAL</Tag>
-        <English>Charcoal</English>
-        <French>Charbon de bois</French>
-        <German>
-            <Text>Holzkohle</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Carbone di legna</Italian>
-        <Spanish>Carbón vegetal</Spanish>
-        <Russian>Древесный уголь</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_CHAR_COAL</Tag>
-        <English>Charcoal</English>
-        <French>Charbon de bois</French>
-        <German>
-            <Text>Holzkohle</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Carbone di legna</Italian>
-        <Spanish>Carbón vegetal</Spanish>
-        <Russian>Древесный уголь</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_CHAR_COAL</Tag>
         <English>Charcoal</English>
         <French>Charbon de bois</French>
         <German>
@@ -1341,32 +1133,6 @@
     <!-- BAKERY_GOODS -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_BAKERY_GOODS</Tag>
-        <English>Provisions</English>
-        <French>Provisions</French>
-        <German>
-            <Text>Proviant</Text>
-            <Gender>male</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Prodotti da forno</Italian>
-        <Spanish>Productos de panadería</Spanish>
-        <Russian>Хлебобулочные изделия</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_BAKERY_GOODS</Tag>
-        <English>Provisions</English>
-        <French>Provisions</French>
-        <German>
-            <Text>Proviant</Text>
-            <Gender>male</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>Prodotti da forno</Italian>
-        <Spanish>Productos de panadería</Spanish>
-        <Russian>Хлебобулочные изделия</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_BAKERY_GOODS</Tag>
         <English>Provisions</English>
         <French>Provisions</French>
         <German>
@@ -1509,32 +1275,6 @@
     <!-- PEAT -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_PEAT</Tag>
-        <English>Peat</English>
-        <French>Tourbe</French>
-        <German>
-            <Text>Torf</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Torba</Italian>
-        <Spanish>Turba</Spanish>
-        <Russian>Торф</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_PEAT</Tag>
-        <English>Peat</English>
-        <French>Tourbe</French>
-        <German>
-            <Text>Torf</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Torba</Italian>
-        <Spanish>Turba</Spanish>
-        <Russian>Торф</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_PEAT</Tag>
         <English>Peat</English>
         <French>Tourbe</French>
         <German>
@@ -2025,32 +1765,6 @@
         <Russian>Рис</Russian>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_RICE</Tag>
-        <English>Rice</English>
-        <French>Riz</French>
-        <German>
-            <Text>Reis</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Riso</Italian>
-        <Spanish>Arroz</Spanish>
-        <Russian>Рис</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_RICE</Tag>
-        <English>Rice</English>
-        <French>Riz</French>
-        <German>
-            <Text>Reis</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Riso</Italian>
-        <Spanish>Arroz</Spanish>
-        <Russian>Рис</Russian>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_YIELD_RICE_PEDIA</Tag>
         <English>[H1]RICE[\H1][NEWLINE][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT] is grown by a colonist assigned to the [LINK=PROFESSION_RICE_FARMER]rice farmer[\LINK] profession. The supply of rice can be doubled by employing [LINK=UNIT_RICE_FARMER]expert rice farmers[\LINK] who can be hired in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT] or trained in Native villages.[NEWLINE]Rice grows on flat [LINK=TERRAIN_MARSH]marsh[\LINK] terrain.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]In tropical areas rice can survive as a perennial. It grows in water. Rice seeds are milled with a huller to remove the chaff , creating brown rice. Removing the bran creates white rice.[NEWLINE][NEWLINE]Rice is nutritious and light to carry. Scouts may have a loaf of bread for their first day on the trail but it's the bag of dried rice that feeds them for the rest of the trip.</English>
         <French>[H1]RIZ[\H1][NEWLINE][BOLD]Stratégie :[\BOLD][NEWLINE]Le [COLOR_HIGHLIGHT_TEXT]riz[COLOR_REVERT] est cultivé sur les terrains [LINK=TERRAIN_MARSH]humides[\LINK]. Pour cultiver du riz, un colon doit avoir la profession de [LINK=PROFESSION_RICE_FARMER]riziculteur[\LINK]. L'approvisionnement en riz peut être doublé en employant des [LINK=UNIT_RICE_FARMER]riziculteurs experts[\LINK] qui peuvent être embauchés en Europe ou formés dans les villages autochtones.[NEWLINE][NEWLINE][BOLD]Contexte :[\BOLD][NEWLINE]Dans les régions tropicales, le riz peut survivre en tant que plante pérenne. Il pousse dans l'eau. Les graines de riz sont moulues à l'aide d'un décortiqueur pour enlever la balle, ce qui donne du riz brun. En retirant le son, on obtient du riz blanc.[NEWLINE][NEWLINE]Le riz est nutritif et léger à transporter. Les scouts peuvent avoir une miche de pain pour leur premier jour sur le sentier, mais c'est le sac de riz sec qui les nourrit pour le reste du voyage.</French>
@@ -2069,32 +1783,6 @@
     <!-- CASSAVA -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_CASSAVA</Tag>
-        <English>Cassava</English>
-        <French>Manioc</French>
-        <German>
-            <Text>Maniok</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Cassava</Italian>
-        <Spanish>Yuca</Spanish>
-        <Russian>Маниока</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_CASSAVA</Tag>
-        <English>Cassava</English>
-        <French>Manioc</French>
-        <German>
-            <Text>Maniok</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Cassava</Italian>
-        <Spanish>Yuca</Spanish>
-        <Russian>Маниока</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_CASSAVA</Tag>
         <English>Cassava</English>
         <French>Manioc</French>
         <German>

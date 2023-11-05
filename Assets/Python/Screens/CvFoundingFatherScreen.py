@@ -114,7 +114,7 @@ class CvFoundingFatherScreen:
 			self.FatherBars.append((iTopBarPoints, iBottomBarPoints))
 
 		for iCategory in range(gc.getNumFatherCategoryInfos()):
-			screen.addScrollPanel("FoundingFatherList" + str(iCategory), u"", 0, 0, self.XResolution, self.FATHERLIST_HEIGHT, PanelStyles.PANEL_STYLE_EXTERNAL, true, WidgetTypes.WIDGET_GENERAL, -1, -1)
+			screen.addScrollPanel("FoundingFatherList" + str(iCategory), u"", 0, 0, self.XResolution, self.FATHERLIST_HEIGHT, PanelStyles.PANEL_STYLE_EXTERNAL, True, WidgetTypes.WIDGET_GENERAL, -1, -1)
 			screen.setActivation("FoundingFatherList" + str(iCategory), ActivationTypes.ACTIVATE_NORMAL)
 			screen.hide("FoundingFatherList" + str(iCategory))
 
@@ -473,7 +473,7 @@ class CvFoundingFatherScreen:
 			screen = self.getScreen()
 			iIndex = screen.getSelectedPullDownID("CivDropDown")
 			self.iCivSelected = screen.getPullDownData("CivDropDown", iIndex)
-			self.updateFatherRecords(false)
+			self.updateFatherRecords(False)
 
 	# Will handle the input for this screen...
 	def handleInput (self, inputClass):
@@ -488,7 +488,7 @@ class CvFoundingFatherScreen:
 		if (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED):
 			if (inputClass.getButtonType() == WidgetTypes.WIDGET_GENERAL and inputClass.getData1() == 1111):
 				self.TypeSelection = inputClass.getData2()
-				self.updateFatherRecords(false)
+				self.updateFatherRecords(False)
 				for x in range(gc.getNumFatherCategoryInfos()):
 					if (x == self.TypeSelection):
 						self.setTab(x, True)

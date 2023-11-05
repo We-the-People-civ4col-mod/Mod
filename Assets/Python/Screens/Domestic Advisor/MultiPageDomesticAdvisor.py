@@ -70,10 +70,10 @@ class MultiPageDomesticAdvisor:
 	def isFirstPage(self):
 		if self.currentPage == 0:
 			return self.pages[0].isFirstPage()
-		return false
+		return False
 		
 	def isLastPage(self):
 		if self.currentPage == self.lastPage:
 			return self.pages[self.currentPage].isLastPage()
-		return false
+		return False
 

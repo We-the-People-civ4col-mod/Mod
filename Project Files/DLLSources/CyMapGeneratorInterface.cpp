@@ -1,5 +1,6 @@
 #include "CvGameCoreDLL.h"
 #include "CyMapGenerator.h"
+#include "CyPlot.h"
 
 #include <boost/python/class.hpp>
 namespace python = boost::python;

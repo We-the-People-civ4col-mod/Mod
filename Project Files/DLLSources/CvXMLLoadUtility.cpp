@@ -132,7 +132,7 @@ void CvXMLLoadUtility::MakeMaskFromString(unsigned int *puiMask, char* szMask)
 	const int iLength = (int)strlen(szMask);
 
 	// loop through each character in the szMask parameter
-	for (int i = 0; i<iLength; i++) 
+	for (int i = 0; i<iLength; i++)
 	{
 		// if the current character in the string is a zero
 		if (szMask[i] == '0')
@@ -304,17 +304,17 @@ bool CvXMLLoadUtility::SkipToNextVal()
 
 //------------------------------------------------------------------------------------------------------
 //
-//  FUNCTION:   FindInInfoClass(TCHAR* pszVal, CvInfoBase* pInfos, int iClassSize, int iListLen)
+//  FUNCTION:   FindInInfoClass(char const* pszVal, CvInfoBase* pInfos, int iClassSize, int iListLen)
 //
 //  PURPOSE :   check through the pszList parameter for the pszVal and returns the location a match
 //				is found if one is found.
 //				returns -1 if no match is found
 //
 //------------------------------------------------------------------------------------------------------
-int CvXMLLoadUtility::FindInInfoClass(const TCHAR* pszVal, bool hideAssert)
+int CvXMLLoadUtility::FindInInfoClass(char const* pszVal, bool hideAssert)
 {
 	// R&R, ray, save performance without unnecessaray logging - START
-	if (_tcscmp(pszVal,"NONE")==0 || _tcscmp(pszVal,"")==0)
+	if (strcmp(pszVal,"NONE")==0 || strcmp(pszVal,"")==0)
 	{
 		return -1;
 	}
@@ -332,7 +332,7 @@ int CvXMLLoadUtility::FindInInfoClass(const TCHAR* pszVal, bool hideAssert)
 	if(!hideAssert)
 	{
 		// R&R, ray, save performance without unnecessaray logging - START
-		//if (_tcscmp(pszVal,"NONE")!=0 && _tcscmp(pszVal,"")!=0)
+		//if (strcmp(pszVal,"NONE")!=0 && strcmp(pszVal,"")!=0)
 		//{
 			char errorMsg[1024];
 			sprintf(errorMsg, "Tag: %s in Info class was incorrect \n Current XML file is: %s", pszVal, GC.getCurrentXMLFile().GetCString());
@@ -347,14 +347,14 @@ int CvXMLLoadUtility::FindInInfoClass(const TCHAR* pszVal, bool hideAssert)
 
 //------------------------------------------------------------------------------------------------------
 //
-//  FUNCTION:   LoadCivXml(FXml* pFXml, TCHAR* szFilename)
+//  FUNCTION:   LoadCivXml(FXml* pFXml, char const* szFilename)
 //
 //  PURPOSE :   Gets the full pathname for the xml file from the FileManager .
 //				If it is succesful we return true
 //				from the function and a valid FXml pointer to the pFXml parameter.
 //
 //------------------------------------------------------------------------------------------------------
-bool CvXMLLoadUtility::LoadCivXml(FXml* pFXml, const TCHAR* szFilename)
+bool CvXMLLoadUtility::LoadCivXml(FXml* pFXml, char const* szFilename)
 {
 	char szLog[256];
 	sprintf(szLog, "LoadCivXml (%s)", szFilename);
@@ -390,7 +390,7 @@ bool CvXMLLoadUtility::LoadCivXml(FXml* pFXml, const TCHAR* szFilename)
 //  PURPOSE :   create a hot key from a description and return it
 //
 //------------------------------------------------------------------------------------------------------
-CvWString CvXMLLoadUtility::CreateHotKeyFromDescription(const TCHAR* pszHotKey, bool bShift, bool bAlt, bool bCtrl)
+CvWString CvXMLLoadUtility::CreateHotKeyFromDescription(char const* pszHotKey, bool bShift, bool bAlt, bool bCtrl)
 {
 	// Delete <COLOR:140,255,40,255>Shift+Delete</COLOR>
 	CvWString szHotKey;
@@ -454,12 +454,12 @@ bool CvXMLLoadUtility::SetStringList(CvString** ppszStringArray, int* piSize)
 
 //------------------------------------------------------------------------------------------------------
 //
-//  FUNCTION:   CreateKeyStringFromKBCode(const TCHAR* pszHotKey)
+//  FUNCTION:   CreateKeyStringFromKBCode(char const* pszHotKey)
 //
 //  PURPOSE :   Create a keyboard string from a KB code, Delete would be returned for KB_DELETE
 //
 //------------------------------------------------------------------------------------------------------
-CvWString CvXMLLoadUtility::CreateKeyStringFromKBCode(const TCHAR* pszHotKey)
+CvWString CvXMLLoadUtility::CreateKeyStringFromKBCode(char const* pszHotKey)
 {
 	// SPEEDUP
 	PROFILE_FUNC();
@@ -468,7 +468,7 @@ CvWString CvXMLLoadUtility::CreateKeyStringFromKBCode(const TCHAR* pszHotKey)
 
 	struct CvKeyBoardMapping
 	{
-		TCHAR szDefineString[25];
+		char szDefineString[25];
 		CvWString szKeyString;
 	};
 
