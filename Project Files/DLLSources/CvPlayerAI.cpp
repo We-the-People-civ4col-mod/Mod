@@ -15815,8 +15815,8 @@ void CvPlayerAI::AI_setStrategy(StrategyTypes eStrategy, int iData)
 	FAssert(eStrategy < NUM_STRATEGY_TYPES);
 	m_em_iStrategyStartedTurn.set(eStrategy, GC.getGameINLINE().getGameTurn());
 	m_em_iStrategyData.set(eStrategy, iData);
-	logBBAI(" Player(%S) AI_setStrategy (%S) ",
-		getCivilizationDescription(), getStrategyString(eStrategy));
+	//logBBAI(" Player(%S) AI_setStrategy (%S) ",
+	//	getCivilizationDescription(), getStrategyString(eStrategy));
 }
 
 void CvPlayerAI::AI_clearStrategy(StrategyTypes eStrategy)
@@ -15825,8 +15825,8 @@ void CvPlayerAI::AI_clearStrategy(StrategyTypes eStrategy)
 	FAssert(eStrategy < NUM_STRATEGY_TYPES);
 	m_em_iStrategyStartedTurn.set(eStrategy, -1);
 	m_em_iStrategyData.set(eStrategy, -1);
-	logBBAI(" Player(%S) AI_clearStrategy (%S) ",
-		getCivilizationDescription(), getStrategyString(eStrategy));
+	//logBBAI(" Player(%S) AI_clearStrategy (%S) ",
+	//	getCivilizationDescription(), getStrategyString(eStrategy));
 }
 // TAC - AI Military Buildup - koma13 - START
 UnitAITypes CvPlayerAI::AI_bestBuildupUnitAI()
