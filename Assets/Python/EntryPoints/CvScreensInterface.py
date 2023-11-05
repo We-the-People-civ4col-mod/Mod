@@ -707,7 +707,7 @@ def featAccomplishedOnClickedCallback(argsList):
 			CyMessageControl().sendPlayerAction(CyGlobalContext().getGame().getActivePlayer(), PlayerActionTypes.PLAYER_ACTION_FEAT, iData1, 1, -1);
 	elif iData1 == FeatTypes.FEAT_GOTO_EUROPE:
 		if (iButtonId == 0):
-			CyMessageControl().sendDoCommand(iData2, CommandTypes.COMMAND_SAIL_TO_EUROPE, UnitTravelStates.UNIT_TRAVEL_STATE_TO_EUROPE, -1, false);
+			CyMessageControl().sendDoCommand(iData2, CommandTypes.COMMAND_SAIL_TO_EUROPE, UnitTravelStates.UNIT_TRAVEL_STATE_TO_EUROPE, -1, False);
 		elif (iButtonId == 2):
 			CyMessageControl().sendPlayerAction(CyGlobalContext().getGame().getActivePlayer(), PlayerActionTypes.PLAYER_ACTION_FEAT, iData1, 1, -1);
 	elif iData1 == FeatTypes.FEAT_EUROPE_SHIPS:
@@ -717,7 +717,7 @@ def featAccomplishedOnClickedCallback(argsList):
 			CyMessageControl().sendPlayerAction(CyGlobalContext().getGame().getActivePlayer(), PlayerActionTypes.PLAYER_ACTION_FEAT, iData1, 1, -1);
 	elif iData1 == FeatTypes.FEAT_CITY_SCREEN:
 		if (iButtonId == 1):
-			CyMessageControl().sendPlayerOption(PlayerOptionTypes.PLAYEROPTION_TUTORIAL, false)
+			CyMessageControl().sendPlayerOption(PlayerOptionTypes.PLAYEROPTION_TUTORIAL, False)
 
 def featAccomplishedOnFocusCallback(argsList):
 	iData1 = argsList[0]

@@ -365,38 +365,38 @@ class CvRevolutionAdvisor:
 # <-- TAC
 def isSoldier(eProfession):
 	if eProfession == ProfessionTypes.NO_PROFESSION:
-		return false
+		return False
 	if (gc.getProfessionInfo(eProfession).getCombatChange() == 0):
-		return false
+		return False
 	if (gc.getProfessionInfo(eProfession).isUnarmed()):
-		return false
+		return False
 	return (getProfessionYieldsRequired(eProfession) == 1)
 	
 def isDragoon(eProfession):
 	if eProfession == ProfessionTypes.NO_PROFESSION:
-		return false
+		return False
 	if (gc.getProfessionInfo(eProfession).getCombatChange() == 0):
-		return false
+		return False
 	if (gc.getProfessionInfo(eProfession).isUnarmed()):
-		return false
+		return False
 	return (getProfessionYieldsRequired(eProfession) > 1)
 
 def isCannon(eUnit):
 	unit = gc.getUnitInfo(eUnit)
 	if unit.getDomainType() != DomainTypes.DOMAIN_LAND:
-		return false
+		return False
 	if (unit.getCombat() == 0):
-		return false
+		return False
 	return True
 
 def isWarship(eUnit):
 	unit = gc.getUnitInfo(eUnit)
 	if unit.getDomainType() != DomainTypes.DOMAIN_SEA:
-		return false
+		return False
 	if (unit.getCombat() == 0):
-		return false
+		return False
 	if (unit.isOnlyDefensive()):
-		return false
+		return False
 	return True
 
 def getProfessionYieldsRequired(eProfession):
@@ -411,5 +411,5 @@ def isVeteran(eUnit):
 	for iPromotion in range(gc.getNumPromotionInfos()):
 		if unit.getFreePromotions(iPromotion):
 			return True
-	return false
+	return False
 

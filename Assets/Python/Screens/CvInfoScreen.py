@@ -179,7 +179,7 @@ class CvInfoScreen:
 		self.Y_ROW_9 = self.Y_ROW_8 + self.H_TEXT + self.Y_TEXT_BUFFER
 		self.Y_ROW_10 = self.Y_ROW_9 + self.H_TEXT + self.Y_TEXT_BUFFER
 
-		self.bAbleToShowAllPlayers = false
+		self.bAbleToShowAllPlayers = False
 		self.iShowingPlayer = -1
 		self.aiDropdownPlayerIDs = []
 
@@ -367,7 +367,7 @@ class CvInfoScreen:
 					0,
 					0]
 
-#		self.bShowAllPlayers = false
+#		self.bShowAllPlayers = False
 		self.graphEnd = CyGame().getGameTurn() - 1
 		self.graphZoom = self.graphEnd - CyGame().getStartTurn()
 		self.iShowingPlayer = -1
@@ -909,12 +909,12 @@ class CvInfoScreen:
 
 		# Lists of player values are ordered from highest first to lowest, so determine Rank, Strength and World Average
 
-		bEconomyFound = false
-		bIndustryFound = false
-		bAgricultureFound = false
-		bMilitaryFound = false
-		bLandAreaFound = false
-		bPopulationFound = false
+		bEconomyFound = False
+		bIndustryFound = False
+		bAgricultureFound = False
+		bMilitaryFound = False
+		bLandAreaFound = False
+		bPopulationFound = False
 
 		for i in range(len(aiGroupEconomy)):
 
@@ -1097,7 +1097,7 @@ class CvInfoScreen:
 		for iWidgetLoop in range(self.iNumCities):
 			
 			szTextPanel = self.getNextWidgetName()
-			screen.addPanel( szTextPanel, "", "", false, True, self.X_COL_1_CITIES_DESC, self.Y_ROWS_CITIES[iWidgetLoop] + self.Y_CITIES_DESC_BUFFER, self.W_CITIES_DESC, self.H_CITIES_DESC, PanelStyles.PANEL_STYLE_DAWNTOP, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+			screen.addPanel( szTextPanel, "", "", False, True, self.X_COL_1_CITIES_DESC, self.Y_ROWS_CITIES[iWidgetLoop] + self.Y_CITIES_DESC_BUFFER, self.W_CITIES_DESC, self.H_CITIES_DESC, PanelStyles.PANEL_STYLE_DAWNTOP, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 			self.szCityNameWidgets.append(self.getNextWidgetName())
 			szCityDesc = u"<font=4b>" + str(self.iCitySizes[iWidgetLoop]) + u"</font>" + " - " + u"<font=3b>" + self.szCityNames[iWidgetLoop] + u"</font>" + "\n"
 			szCityDesc += self.szCityDescs[iWidgetLoop]
@@ -1116,8 +1116,8 @@ class CvInfoScreen:
 			#print "City # " + str(iWidgetLoop) + "  " + pCity.getName()
 
 			self.szCityAnimWidgets.append(self.getNextWidgetName())
-			if (pCity.isRevealed(gc.getGame().getActiveTeam(), false)):
-				screen.addPlotGraphicGFC(self.szCityAnimWidgets[iWidgetLoop], self.X_CITY_ANIMATION, self.Y_ROWS_CITIES[iWidgetLoop], self.W_CITY_ANIMATION, self.H_CITY_ANIMATION, pPlot, iDistance, false, WidgetTypes.WIDGET_GENERAL, -1, -1)
+			if (pCity.isRevealed(gc.getGame().getActiveTeam(), False)):
+				screen.addPlotGraphicGFC(self.szCityAnimWidgets[iWidgetLoop], self.X_CITY_ANIMATION, self.Y_ROWS_CITIES[iWidgetLoop], self.W_CITY_ANIMATION, self.H_CITY_ANIMATION, pPlot, iDistance, False, WidgetTypes.WIDGET_GENERAL, -1, -1)
 				
 		
 		szFatherTable = self.getNextWidgetName()
@@ -1153,7 +1153,7 @@ class CvInfoScreen:
 
 			player = gc.getPlayer(iPlayerLoop)
 
-			(pCity, iter) = player.firstCity(false)
+			(pCity, iter) = player.firstCity(False)
 
 			while(pCity):
 
@@ -1164,7 +1164,7 @@ class CvInfoScreen:
 						self.addCityToList(iRankLoop, pCity, iTotalCityValue)
 						break
 
-				(pCity, iter) = player.nextCity(iter, false)
+				(pCity, iter) = player.nextCity(iter, False)
 
 	# Recursive
 	def addCityToList(self, iRank, pCity, iTotalCityValue):
@@ -1205,7 +1205,7 @@ class CvInfoScreen:
 				else:
 					szTurnFounded = localText.getText("TXT_KEY_TIME_AD", (iTurnYear,))#"%d %s" %(iTurnYear, self.TEXT_AD)
 
-				if (pCity.isRevealed(gc.getGame().getActiveTeam(), false) or gc.getTeam(pPlayer.getTeam()).isHasMet(gc.getGame().getActiveTeam())):
+				if (pCity.isRevealed(gc.getGame().getActiveTeam(), False) or gc.getTeam(pPlayer.getTeam()).isHasMet(gc.getGame().getActiveTeam())):
 					self.szCityNames[iRankLoop] = pCity.getName().upper()
 					if (not pPlayer.isNative()):
 						self.szCityDescs[iRankLoop] = ("%s, %s" %(pPlayer.getCivilizationAdjective(0), localText.getText("TXT_KEY_MISC_FOUNDED_IN", (szTurnFounded,))))

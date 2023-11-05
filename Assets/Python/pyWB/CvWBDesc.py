@@ -41,7 +41,7 @@ class CvWBParser:
 		for tok in toks:
 			if (tok==item):
 				return True
-		return false
+		return False
 
 	def findTokenValue(self, toks, item):
 		"Search for a token of the form item=value in the list of toks, and return value, or -1 if not found"
@@ -58,15 +58,15 @@ class CvWBParser:
 		return f.readline()
 
 	def findNextToken(self, f, item):
-		"Find the next line that contains the token item, return false if not found"
+		"Find the next line that contains the token item, return False if not found"
 		while True:
 			line = self.getNextLine(f)
 			if (not line):
-				return false	# EOF
+				return False	# EOF
 			toks=self.getTokens(line)
 			if (self.findToken(toks, item)):
 				return True
-		return false
+		return False
 
 	def findNextTokenValue(self, f, item):
 		"Find the next line that contains item=value, return value or -1 if not found"
@@ -361,7 +361,7 @@ class CvTeamDesc:
 				if parser.findTokenValue(toks, "EndTeam") != -1:
 					return True		# completed successfully
 
-		return false	# failed
+		return False	# failed
 
 #############
 class CvPlayerDesc:
@@ -383,7 +383,7 @@ class CvPlayerDesc:
 		self.iStartingX = -1
 		self.iStartingY = -1
 		self.szStartingEra = ""
-		self.bRandomStartLocation = "false"
+		self.bRandomStartLocation = "False"
 
 		self.aaiCivics = []
 		self.aaiAttitudeExtras = []
@@ -426,7 +426,7 @@ class CvPlayerDesc:
 
 			f.write("\tStartingEra=%s\n" %(gc.getEraInfo(gc.getPlayer(idx).getCurrentEra()).getType()))
 
-			f.write("\tRandomStartLocation=false\n")
+			f.write("\tRandomStartLocation=False\n")
 
 			# write Civics
 			for iCivicOptionLoop in range(gc.getNumCivicOptionInfos()):
@@ -1026,9 +1026,9 @@ class CvPlotDesc:
 					# Plot is revealed for this Team so write out the fact that it is; if not revealed don't write anything
 					if (bFirstReveal):
 						f.write("\tTeamReveal=")
-						bFirstReveal=false
+						bFirstReveal=False
 					f.write("%d," %(iTeamLoop))
-		if (bFirstReveal==false):
+		if (bFirstReveal==False):
 			f.write("\n")	# terminate reveal line
 
 		f.write("EndPlot\n")
@@ -1037,8 +1037,8 @@ class CvPlotDesc:
 		"read in a plot desc"
 		self.__init__()
 		parser = CvWBParser()
-		if parser.findNextToken(f, "BeginPlot")==false:
-			return false	# no more plots
+		if parser.findNextToken(f, "BeginPlot")==False:
+			return False	# no more plots
 		while (True):
 			nextLine = parser.getNextLine(f)
 			toks = parser.getTokens(nextLine)
@@ -1166,9 +1166,9 @@ class CvMapDesc:
 		self.seaLevel = None
 		self.numPlotsWritten = 0
 		self.numSignsWritten = 0
-		self.bRandomizeFeatures = "false" #WTP, ray, Randomize Features Map Option
-		self.bRandomizeResources = "false"
-		self.bRandomizeGoodies = "false"
+		self.bRandomizeFeatures = "False" #WTP, ray, Randomize Features Map Option
+		self.bRandomizeResources = "False"
+		self.bRandomizeGoodies = "False"
 		self.iCityRadius = 0 # 0 means value from UserSettings.txt
 
 	def write(self, f):
@@ -1191,8 +1191,8 @@ class CvMapDesc:
 		f.write("\tsealevel=%s\n" %(gc.getSeaLevelInfo(map.getSeaLevel()).getType(),))
 		f.write("\tnum plots written=%d\n" %(iNumPlots,))
 		f.write("\tnum signs written=%d\n" %(iNumSigns,))
-		f.write("\tRandomize Features=false\n") #WTP, ray, Randomize Features Map Option
-		f.write("\tRandomize Resources=false\n")
+		f.write("\tRandomize Features=False\n") #WTP, ray, Randomize Features Map Option
+		f.write("\tRandomize Resources=False\n")
 		f.write("\tCity Catchment Radius=%d\n" %(map.getCityCatchmentRadius(),))
 		f.write("EndMap\n")
 
@@ -1200,7 +1200,7 @@ class CvMapDesc:
 		"read map data"
 		self.__init__()
 		parser = CvWBParser()
-		if parser.findNextToken(f, "BeginMap")==false:
+		if parser.findNextToken(f, "BeginMap")==False:
 			print "can't find map"
 			return
 		while (True):
@@ -1314,7 +1314,7 @@ class CvSignDesc:
 		"read sign data"
 		self.__init__()
 		parser = CvWBParser()
-		if parser.findNextToken(f, "BeginSign")==false:
+		if parser.findNextToken(f, "BeginSign")==False:
 			print "can't find sign"
 			return
 		while (True):
@@ -1429,17 +1429,17 @@ class CvWBDesc:
 		for pDesc in self.signDesc:
 			pDesc.apply()
 
-		if (self.mapDesc.bRandomizeFeatures != "false"): #WTP, ray, Randomize Features Map Option
+		if (self.mapDesc.bRandomizeFeatures != "False"): #WTP, ray, Randomize Features Map Option
 			CyMapGenerator().eraseFeaturesOnLand()
 			CyMapGenerator().addFeaturesOnLand()
 			
-		if (self.mapDesc.bRandomizeResources != "false"):
+		if (self.mapDesc.bRandomizeResources != "False"):
 			for iPlotLoop in range(CyMap().numPlots()):
 				pPlot = CyMap().plotByIndex(iPlotLoop)
 				pPlot.setBonusType(BonusTypes.NO_BONUS)
 			CyMapGenerator().addBonuses()
 			
-		if (self.mapDesc.bRandomizeGoodies != "false"):
+		if (self.mapDesc.bRandomizeGoodies != "False"):
 			CyMapGenerator().eraseGoodies()
 			CyMapGenerator().addGoodies()
 
@@ -1455,7 +1455,7 @@ class CvWBDesc:
 			pWBPlayer = self.playersDesc[iPlayerLoop]
 
 			# Random Start Location
-			if (pPlayer.getLeaderType() != -1 and pWBPlayer.bRandomStartLocation != "false"):
+			if (pPlayer.getLeaderType() != -1 and pWBPlayer.bRandomStartLocation != "False"):
 				pPlayer.setStartingPlot(pPlayer.findStartingPlot(True), True)
 			else:
 
@@ -1499,12 +1499,12 @@ class CvWBDesc:
 					# Contact with Other Teams
 					for meetTeam in self.teamsDesc[iTeamLoop].bContactWithTeamList:
 						if (self.validTeams[meetTeam]):
-							gc.getTeam(iTeamLoop).meet(meetTeam, false)
+							gc.getTeam(iTeamLoop).meet(meetTeam, False)
 
 					# Wars
 					for warTeam in self.teamsDesc[iTeamLoop].bWarWithTeamList:
 						if (self.validTeams[warTeam]):
-							gc.getTeam(iTeamLoop).declareWar(warTeam, false, WarPlanTypes.NO_WARPLAN)
+							gc.getTeam(iTeamLoop).declareWar(warTeam, False, WarPlanTypes.NO_WARPLAN)
 
 					# Permanent War/Peace
 					for permanentWarPeaceTeam in self.teamsDesc[iTeamLoop].bPermanentWarPeaceList:
@@ -1544,7 +1544,7 @@ class CvWBDesc:
 						pPlayer.setCurrentEra(iStartingEra)
 
 					# Random Start Location
-					if (pWBPlayer.bRandomStartLocation != "false"):
+					if (pWBPlayer.bRandomStartLocation != "False"):
 						pPlayer.setStartingPlot(pPlayer.findStartingPlot(True), True)
 						print("Setting player %d starting location to (%d,%d)", pPlayer.getID(), pPlayer.getStartingPlot().getX(), pPlayer.getStartingPlot().getY())
 
@@ -1631,7 +1631,7 @@ class CvWBDesc:
 		for i in range(gc.getMAX_CIV_TEAMS()):
 			print ("reading team %d" %(i))
 			teamsDesc = CvTeamDesc()
-			if (teamsDesc.read(f)==false):					# read team info
+			if (teamsDesc.read(f)==False):					# read team info
 				f.seek(filePos)								# abort and backup
 				break
 			self.teamsDesc.append(teamsDesc)

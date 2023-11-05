@@ -771,27 +771,27 @@ class CvDomesticAdvisor:
 		#Get a list of the Players Cities
 		player = gc.getPlayer(gc.getGame().getActivePlayer())
 		self.Cities = []
-		(pLoopCity, iter) = player.firstCity(false)
+		(pLoopCity, iter) = player.firstCity(False)
 		while(pLoopCity):
 			self.Cities.append(pLoopCity)
-			(pLoopCity, iter) = player.nextCity(iter, false)
+			(pLoopCity, iter) = player.nextCity(iter, False)
 
 		self.Routes = []
 		for iRoute in range(player.getNumTradeRoutes()):
 			self.Routes.append(player.getTradeRouteByIndex(iRoute))
 
 		self.Transports = []
-		SelectionGroup, Iterator = player.firstSelectionGroup(false)
+		SelectionGroup, Iterator = player.firstSelectionGroup(False)
 		while (SelectionGroup != None):
-			if (SelectionGroup.canAssignTradeRoute(-1, false)):
+			if (SelectionGroup.canAssignTradeRoute(-1, False)):
 				self.Transports.append(SelectionGroup)
-			SelectionGroup, Iterator = player.nextSelectionGroup(Iterator, false)
+			SelectionGroup, Iterator = player.nextSelectionGroup(Iterator, False)
 
 		self.RouteValidity = []
 		for iTransport in range(len(self.Transports)):
 			Transport = self.Transports[iTransport]
 			RouteValidArray = []
-			bReusePath = false
+			bReusePath = False
 			for Route in self.Routes:
 				RouteValidArray.append(Transport.canAssignTradeRoute(Route.getID(), bReusePath))
 				bReusePath = True
@@ -806,10 +806,10 @@ class CvDomesticAdvisor:
 			ePlayer = gc.getPlayer(iLoopPlayer)
 			#if (player.isAlive() and player.isNative() and (gc.getTeam(player.getTeam()).isHasMet(activePlayer.getTeam()))):
 			if (ePlayer.isAlive() and ePlayer.isNative()):
-				(pLoopCity, iter) = ePlayer.firstCity(false)
+				(pLoopCity, iter) = ePlayer.firstCity(False)
 				while(pLoopCity):
 					self.NativeCities.append(pLoopCity)
-					(pLoopCity, iter) = ePlayer.nextCity(iter, false)
+					(pLoopCity, iter) = ePlayer.nextCity(iter, False)
 		## R&R, Robert Surcouf,  Domestic Advisor Screen - End
 		return self.NativeCities
 		
@@ -996,7 +996,7 @@ class CvDomesticAdvisor:
 			elif iData1 == 10001:
 				unit = gc.getActivePlayer().getUnit(iData2)
 				if not unit.isNone():
-					return CyGameTextMgr().getSpecificUnitHelp(unit, True, false)
+					return CyGameTextMgr().getSpecificUnitHelp(unit, True, False)
 			elif iData1 == self.GAME_FONT_STATE and iData1 != -1:
 				return "DEBUG: GameFont"
 			elif iData1 == self.TERRAIN_STATE and iData1 != -1:

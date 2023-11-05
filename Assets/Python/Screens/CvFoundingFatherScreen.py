@@ -473,7 +473,7 @@ class CvFoundingFatherScreen:
 			screen = self.getScreen()
 			iIndex = screen.getSelectedPullDownID("CivDropDown")
 			self.iCivSelected = screen.getPullDownData("CivDropDown", iIndex)
-			self.updateFatherRecords(false)
+			self.updateFatherRecords(False)
 
 	# Will handle the input for this screen...
 	def handleInput (self, inputClass):
@@ -488,7 +488,7 @@ class CvFoundingFatherScreen:
 		if (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED):
 			if (inputClass.getButtonType() == WidgetTypes.WIDGET_GENERAL and inputClass.getData1() == 1111):
 				self.TypeSelection = inputClass.getData2()
-				self.updateFatherRecords(false)
+				self.updateFatherRecords(False)
 				for x in range(gc.getNumFatherCategoryInfos()):
 					if (x == self.TypeSelection):
 						self.setTab(x, True)

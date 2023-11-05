@@ -102,7 +102,7 @@ class CvPediaFather( CvScreen.CvScreen ):
 
 		screen = self.top.getScreen()
 		panelName = self.top.getNextWidgetName()
-		screen.addPanel(panelName, CyTranslator().getText("TXT_KEY_PEDIA_REQUIRES", ()), "", True, false, self.X_PRE_REQS, self.Y_PRE_REQS, self.W_PRE_REQS, self.H_PRE_REQS, PanelStyles.PANEL_STYLE_BLUE50, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.addPanel(panelName, CyTranslator().getText("TXT_KEY_PEDIA_REQUIRES", ()), "", True, False, self.X_PRE_REQS, self.Y_PRE_REQS, self.W_PRE_REQS, self.H_PRE_REQS, PanelStyles.PANEL_STYLE_BLUE50, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
 		panelName = self.top.getNextWidgetName()
 		screen.addListBoxGFC(panelName, "", self.X_PRE_REQS + 15, self.Y_PRE_REQS + 40, self.W_PRE_REQS - 30, self.H_PRE_REQS - 60, TableStyles.TABLE_STYLE_EMPTY)
@@ -150,7 +150,7 @@ class CvPediaFather( CvScreen.CvScreen ):
 		screen = self.top.getScreen()
 
 		panelName = self.top.getNextWidgetName()
-		screen.addPanel(panelName, CyTranslator().getText("TXT_KEY_PEDIA_SPECIAL_ABILITIES", ()), "", True, false, self.X_INFOS, self.Y_INFOS, self.W_INFOS, self.H_INFOS, PanelStyles.PANEL_STYLE_BLUE50, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.addPanel(panelName, CyTranslator().getText("TXT_KEY_PEDIA_SPECIAL_ABILITIES", ()), "", True, False, self.X_INFOS, self.Y_INFOS, self.W_INFOS, self.H_INFOS, PanelStyles.PANEL_STYLE_BLUE50, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		listName = self.top.getNextWidgetName()
 
 		szSpecialText = CyGameTextMgr().getFatherHelp(self.iFather, True)

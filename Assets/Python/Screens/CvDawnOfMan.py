@@ -28,7 +28,7 @@ class CvDawnOfMan:
 		screen.showScreen(PopupStates.POPUPSTATE_QUEUED, False)
 		screen.showWindowBackground( False )
 		screen.setDimensions(self.X_SCREEN, screen.centerY(self.Y_SCREEN), self.W_SCREEN, self.H_SCREEN)
-		screen.enableWorldSounds( false )
+		screen.enableWorldSounds( False )
 
 		# Create panels
 
@@ -43,7 +43,7 @@ class CvDawnOfMan:
 
 		# Top
 		szHeaderPanel = "DawnOfManHeaderPanel"
-		screen.addPanel( szHeaderPanel, "", "", True, false, self.X_HEADER_PANEL, self.Y_HEADER_PANEL, self.W_HEADER_PANEL, self.H_HEADER_PANEL, PanelStyles.PANEL_STYLE_EMPTY, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.addPanel( szHeaderPanel, "", "", True, False, self.X_HEADER_PANEL, self.Y_HEADER_PANEL, self.W_HEADER_PANEL, self.H_HEADER_PANEL, PanelStyles.PANEL_STYLE_EMPTY, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
 		# Bottom
 		szTextPanel = "DawnOfManTextPanel"
@@ -53,7 +53,7 @@ class CvDawnOfMan:
 
 		# Leaderhead graphic
 		szLeaderPanel = "DawnOfManLeaderPanel"
-		screen.addPanel( szLeaderPanel, "", "", True, false, self.X_LEADER_ICON - 3, self.Y_LEADER_ICON - 5, self.W_LEADER_ICON + 6, self.H_LEADER_ICON + 8, PanelStyles.PANEL_STYLE_DAWNTOP, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.addPanel( szLeaderPanel, "", "", True, False, self.X_LEADER_ICON - 3, self.Y_LEADER_ICON - 5, self.W_LEADER_ICON + 6, self.H_LEADER_ICON + 8, PanelStyles.PANEL_STYLE_DAWNTOP, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		screen.addLeaderheadGFC("LeaderHead", self.player.getLeaderType(), AttitudeTypes.ATTITUDE_PLEASED, self.X_LEADER_ICON + 5, self.Y_LEADER_ICON + 5, self.W_LEADER_ICON - 10, self.H_LEADER_ICON - 10, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 		szNameText = u"<font=4b>"
@@ -89,7 +89,7 @@ class CvDawnOfMan:
 		szDawnTitle = u"<font=4>" + localText.getText("TXT_KEY_ROYAL_CHARTER_TITLE", ()).upper() + u"</font>"
 		screen.setLabel("DawnTitle", "Background", szDawnTitle, CvUtil.FONT_CENTER_JUSTIFY, self.X_TEXT_PANEL + (self.W_TEXT_PANEL / 2), self.Y_TEXT_PANEL + 15, -2.0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
-		bodyString = localText.getText("TXT_KEY_ROYAL_CHARTER_BODY_2", (CyGameTextMgr().getTimeStr(gc.getGame().getGameTurn(), false), kingPlayer.getCivilizationShortDescriptionKey(), self.player.getNameKey()))
+		bodyString = localText.getText("TXT_KEY_ROYAL_CHARTER_BODY_2", (CyGameTextMgr().getTimeStr(gc.getGame().getGameTurn(), False), kingPlayer.getCivilizationShortDescriptionKey(), self.player.getNameKey()))
 		screen.addMultilineText( "BodyText", bodyString, self.X_TEXT_PANEL + self.iMarginSpace, self.Y_TEXT_PANEL + self.iMarginSpace + self.iTEXT_PANEL_MARGIN, self.W_TEXT_PANEL - (self.iMarginSpace * 2), self.H_TEXT_PANEL - (self.iMarginSpace * 2) - 75, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
 		pActivePlayer = gc.getPlayer(CyGame().getActivePlayer())

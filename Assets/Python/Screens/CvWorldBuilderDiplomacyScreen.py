@@ -302,7 +302,7 @@ class CvWorldBuilderDiplomacyScreen:
 			self.pTabControl = getWBToolDiplomacyTabCtrl()
 			self.getTabControl().setSize(self.m_iScreenWidth,self.m_iScreenHeight)
 
-		self.getTabControl().setControlsExpanding(false)
+		self.getTabControl().setControlsExpanding(False)
 		self.getTabControl().setColumnLength(self.iScreenColumnHeight)
 
 		# Set Tabs

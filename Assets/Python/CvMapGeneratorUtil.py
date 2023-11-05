@@ -593,7 +593,7 @@ sizes!) I will try to figure this out and update these notes again before releas
 rift_grain has to do with forced strips of water running in a mostly vertical
 direction. They simulate the Atlantic and Pacific Oceans separating Earth's
 two primary land regions. You can turn off the Atlantic rift by setting
-has_center_rift to false. You can turn off all rifts by setting rift_grain
+has_center_rift to False. You can turn off all rifts by setting rift_grain
 to -1. For most regional fractals, you will probably want to disable rifts.
 
 invert_heights is not a function I have needed, but it seems clear enough. It
