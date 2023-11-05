@@ -2072,10 +2072,11 @@ void CvUnitAI::AI_scoutMove()
 		}
 	}
 
+	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+
 	if (!isHuman())
 	{
 		bool bRequestPickup = false;
-		CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 		CvArea* pLoopArea;
 		int iLoop;
 		for(pLoopArea = GC.getMap().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMap().nextArea(&iLoop))
@@ -2120,7 +2121,6 @@ void CvUnitAI::AI_scoutMove()
 	{
 		return;
 	}
-
 	
 	if (isHuman()) 
 	{
@@ -2130,9 +2130,25 @@ void CvUnitAI::AI_scoutMove()
 	}
 	else
 	{
-		getGroup()->pushMission(MISSION_SKIP);
+		// Check if there are more stuff to explore
+		// TODO: Consider returning to a nearby city
+		if (kOwner.AI_totalAreaUnitAIs(area(), UNITAI_SCOUT) >
+			kOwner.AI_neededExplorers(area()))
+		{
+			// Note: should check CvPlayerAI::AI_unitValue but that's not useful atm
+			// Let's become a combat scout
+			AI_setUnitAIType(UNITAI_OFFENSIVE);
+			AI_update();
+		}
+		else
+		{
+			// TODO: Ensure that we won't just be delivered back where we were
+			// after being picked up!
+			if (AI_requestPickup()) return;
+		}
 	}
 
+	getGroup()->pushMission(MISSION_SKIP);
 	return;
 }
 

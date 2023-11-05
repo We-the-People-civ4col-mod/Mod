@@ -559,7 +559,7 @@ void CvCity::doTurn()
 	{
 		// Hurry needs to happen just before the production processing to avoid
 		// the hurried yields from being used for other purposes
-		static_cast<CvCityAI*>(this)->AI_doHurry();
+		AI().AI_doHurry();
 	}
 
 	if (!isDisorder())
