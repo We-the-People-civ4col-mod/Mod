@@ -3,6 +3,8 @@
 #ifndef CyxmlObject_h
 #define CyxmlObject_h
 
+#include "CyXMLAttributes.h"
+
 class CyXMLObject
 {
 public:
@@ -29,6 +31,8 @@ public:
 	tinyxml2::XMLDocument* getDocument() const;
 
 	tinyxml2::XMLElement* getInfoElement() const;
+
+	const CyXMLObject* getParent() { return m_pXMLparent; }
 
 	//
 	// python exposed
@@ -181,8 +185,8 @@ private:
 	CyXMLObject          *m_pXMLparent;
 	tinyxml2::XMLElement *m_pSchema;
 	tinyxml2::XMLElement *m_pSchemaParent;
-	tinyxml2::XMLElement *m_pInfo;
 	CyXMLEditor          *m_pEditor;
+	CyXMLAttributes       m_token;
 };
 
 #endif

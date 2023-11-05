@@ -14,8 +14,8 @@ CyXMLObject::CyXMLObject()
 	: m_pXML(NULL)
 	, m_pSchema(NULL)
 	, m_pSchemaParent(NULL)
-	, m_pInfo(NULL)
 	, m_pXMLparent(NULL)
+	, m_token(NULL, NULL)
 {
 }
 
@@ -25,34 +25,9 @@ CyXMLObject::CyXMLObject(XMLElement *pXML, CyXMLObject *pXMLparent, XMLElement *
 	, m_pSchema(pSchema)
 	, m_pSchemaParent(pSchemaParent)
 	, m_pXMLparent(pXMLparent)
-	, m_pInfo(NULL)
 	, m_pEditor(pEditor)
+	, m_token(pXML, pXMLparent, pSchema, pSchemaParent, pEditor, getName())
 {
-	if (pXMLparent == NULL) // || pXMLparent->m_pXMLparent == NULL)
-	{
-		m_pInfo = pEditor->getInfoRoot();
-		return;
-	}
-	if (pXMLparent->m_pXMLparent == NULL && strcmp(getName(), pEditor->getInfoRoot()->Name()) == 0)
-	{
-		m_pInfo = pEditor->getInfoRoot();
-		return;
-	}
-
-	tinyxml2::XMLElement* parentElement = pXMLparent != NULL ?
-		parentElement = pXMLparent->getInfoElement()
-		: pEditor->getInfoRoot();
-
-	m_pInfo = parentElement->FirstChildElement(getName());
-
-	if (m_pInfo != NULL)
-	{
-		return;
-	}
-	m_pInfo = pEditor->getInfoRoot()->GetDocument()->NewElement(getName());
-
-	parentElement->InsertEndChild(m_pInfo);
-	pEditor->writeFile(true);
 }
 
 XMLElement* CyXMLObject::FirstChildElement(const TCHAR *szName) const
@@ -432,6 +407,16 @@ void CyXMLObject::setInfo(bool bFileSpecific, int iNewFileForType, const TCHAR* 
 		szType = m_pEditor->getFileTag(iNewFileForType);
 	}
 	m_pEditor->setInfo(bFileSpecific, getName(), szType, szHelp, szClass, bAllowTypeNone, bRemoteCreate, bRemoteCreatePrefix, szButtonChild);
+
+	if (szClass == NULL)
+	{
+		szClass = isDir() ? "Dir" :
+			isBool() ? "Bool" :
+			isInt() ? "Int" :
+			NULL;
+	}
+
+	m_token.setInfo(szType, szHelp, szClass, bAllowTypeNone, szButtonChild);
 }
 
 // XML info
@@ -761,5 +746,5 @@ XMLDocument* CyXMLObject::getDocument() const
 
 tinyxml2::XMLElement* CyXMLObject::getInfoElement() const
 {
-	return m_pInfo;
+	return m_token.getInfo();
 }

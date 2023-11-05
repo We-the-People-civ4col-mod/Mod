@@ -97,6 +97,7 @@
     <ClCompile Include="DLLSources\CyInfos.cpp" />
     <ClCompile Include="DLLSources\CyUserSettings.cpp" />
     <ClCompile Include="DLLSources\CyUserSettingsInterface.cpp" />
+    <ClCompile Include="DLLSources\CyXMLAttributes.cpp" />
     <ClCompile Include="DLLSources\CyXMLEditor.cpp" />
     <ClCompile Include="DLLSources\CyXMLEditorInterface1.cpp" />
     <ClCompile Include="DLLSources\CyXMLObject.cpp" />
@@ -259,6 +260,7 @@
     <ClInclude Include="DLLSources\CyData.h" />
     <ClInclude Include="DLLSources\CyInfos.h" />
     <ClInclude Include="DLLSources\CyUserSettings.h" />
+    <ClInclude Include="DLLSources\CyXMLAttributes.h" />
     <ClInclude Include="DLLSources\CyXMLEditor.h" />
     <ClInclude Include="DLLSources\CyXMLObject.h" />
     <ClInclude Include="DLLSources\EnumMapSpecializationBool.h" />
