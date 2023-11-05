@@ -1123,15 +1123,15 @@ bool CvCityAI::AI_isProductionBuilding(BuildingTypes eBuilding, bool bMajorCity)
 
 int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 {
-	//
-	bool bIsStarted = getBuildingProduction(eBuilding) > 0;
+	if (AI_vetoBuilding(eBuilding))
+		return 0;
 
-	CvBuildingInfo& kBuildingInfo = GC.getBuildingInfo(eBuilding);
-	BuildingClassTypes eBuildingClass = (BuildingClassTypes)kBuildingInfo.getBuildingClassType();
-	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+	const bool bIsStarted = getBuildingProduction(eBuilding) > 0;
+	const CvBuildingInfo& kBuildingInfo = GC.getBuildingInfo(eBuilding);
+	const BuildingClassTypes eBuildingClass = (BuildingClassTypes)kBuildingInfo.getBuildingClassType();
+	const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 
 	bool bIsMilitary = false;
-
 	int iValue = 0;
 
 	// Custom_House_Mod Start
@@ -5343,12 +5343,16 @@ int CvCityAI::AI_getFoodGatherable(int iPop, int iPlotFoodThreshold) const
 
 bool CvCityAI::AI_isPort() const
 {
-	return m_bPort;
+	return m_bPort || AI_hasCityRole(AI_CITY_EXPORT_PORT);
 }
 
 void CvCityAI::AI_setPort(bool iNewValue)
 {
 	m_bPort = iNewValue;
+	if (iNewValue)
+		AI_setCityRole(AI_CITY_EXPORT_PORT);
+	else
+		AI_clearCityRole(AI_CITY_EXPORT_PORT);
 }
 
 bool CvCityAI::AI_potentialPlot(const EnumMap<YieldTypes, short>& em_iYields) const
@@ -6999,4 +7003,43 @@ int CvCityAI::AI_getIdleColonistCount() const
 	}
 
 	return cnt;
+}
+
+// Returns true if eBuilding should not be considered as a viable build based on the city role or 
+// current priorities
+bool CvCityAI::AI_vetoBuilding(BuildingTypes eBuilding) const
+{
+	if (AI_isSignificantNavalBuilding(eBuilding) && !AI_hasCityRole(AI_CITY_NAVAL_PROD)) 
+		return false;
+
+	return true;
+}
+
+// Identifies expensive naval buildings (currently dry dock and beyond)
+bool CvCityAI::AI_isSignificantNavalBuilding(BuildingTypes eBuilding) const
+{
+	const CvBuildingInfo& kBuildingInfo = GC.getBuildingInfo(eBuilding);
+
+	if (!kBuildingInfo.isWater())
+		return false;
+
+	int iNavalUnitsTrained = 0;
+
+	for (int i = 0; i < GC.getNumUnitInfos(); ++i)
+	{
+		const CvUnitInfo& kUnitInfo = GC.getUnitInfo((UnitTypes)i);
+
+		if (kUnitInfo.getPrereqBuilding() == kBuildingInfo.getBuildingClassType() && kUnitInfo.getDomainType() == DOMAIN_SEA)
+		{	
+			iNavalUnitsTrained++;
+
+			// TODO: Make this far more sophisticated!
+			if (iNavalUnitsTrained > 2)
+			{
+				return true;
+			}
+		}
+	}
+
+	return false;
 }

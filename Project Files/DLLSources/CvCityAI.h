@@ -182,6 +182,17 @@ public:
 	void AI_doHurry(bool bForce = false);
 	bool canHaveCitizenProfession(const CvUnit& kUnit, ProfessionTypes eProfession, bool bBumpOther) const;
 	int AI_getIdleColonistCount() const;
+	
+	AICityRole AI_getCityRole() const { return m_cityRole; };
+	void AI_setCityRole(AICityRole role) {
+		m_cityRole = static_cast<AICityRole>(m_cityRole | role);
+	}
+	void AI_clearCityRole(AICityRole role) {
+		m_cityRole = static_cast<AICityRole>(m_cityRole & ~role);
+	}
+	bool AI_hasCityRole(AICityRole role) const {
+		return (m_cityRole & role) == role;
+	}
 
 protected:
 
@@ -227,6 +238,7 @@ protected:
 
 	int m_iWorkersNeeded;
 	int m_iWorkersHave;
+	AICityRole m_cityRole;
 
 	void AI_doEmphasize();
 	void AI_doNativeTrade();
@@ -286,7 +298,9 @@ protected:
 	bool AI_hasCoastalRoute() const;
 
 	void AI_assignCityPlot();
-
+	bool AI_vetoBuilding(BuildingTypes eBuilding) const;
+	bool AI_isSignificantNavalBuilding(BuildingTypes eBuilding) const;
+	
 	// added so under cheat mode we can call protected functions for testing
 	friend class CvGameTextMgr;
 };

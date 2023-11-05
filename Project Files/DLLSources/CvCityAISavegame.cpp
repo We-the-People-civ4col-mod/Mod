@@ -21,6 +21,7 @@ const int defaultNeededFloatingDefenders = -1;
 const int defaultNeededFloatingDefendersCacheTurn = -1;
 const int defaultWorkersNeeded = 0;
 const int defaultWorkersHave = 0;
+const AICityRole defaultCityRole = NO_AI_CITY_ROLE;
 
 enum SavegameVariableTypes
 {
@@ -54,6 +55,7 @@ enum SavegameVariableTypes
 	CitySaveAi_routeToCity,
 	CitySaveAi_BestBuildValue,
 	CitySaveAi_BestBuild,
+	CitySaveAi_CityRole,
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -91,6 +93,7 @@ const char* getSavedEnumNameCityAi(SavegameVariableTypes eType)
 
 	case CitySaveAi_BestBuildValue: return "CitySaveAi_BestBuildValue";
 	case CitySaveAi_BestBuild: return "CitySaveAi_BestBuild";
+	case CitySaveAi_CityRole: return "CitySaveAi_CityRole";
 	}
 	FAssertMsg(0, "Missing case");
 	return "";
@@ -128,6 +131,7 @@ m_iNeededFloatingDefenders = defaultNeededFloatingDefenders;
 m_iNeededFloatingDefendersCacheTurn = defaultNeededFloatingDefendersCacheTurn;
 m_iWorkersNeeded = defaultWorkersNeeded;
 m_iWorkersHave = defaultWorkersHave;
+m_cityRole = defaultCityRole;
 m_em_bEmphasize.reset();
 m_em_iPlayerCloseness.reset();
 m_routeToCity.reset();
@@ -152,6 +156,10 @@ void CvCityAI::read(CvSavegameReader reader)
 	// As long as each variable has a CitySavegameVariables "header", order doesn't matter.
 	// Variables can be read in any order and any number of variables can be skipped.
 	bool bContinue = true;
+	
+	// Workaround due to language rules. A cast to int& won't work ( temporary cannot be bound to a non-const lvalue reference )
+	int iCityRole = static_cast<int>(m_cityRole);
+	
 	while (bContinue)
 	{
 		SavegameVariableTypes eType;
@@ -191,6 +199,7 @@ void CvCityAI::read(CvSavegameReader reader)
 			case CitySaveAi_routeToCity                         : reader.Read(m_routeToCity)                                     ; break;
 			case CitySaveAi_BestBuildValue                      : reader.Read(m_em_iBestBuildValue)                              ; break;
 			case CitySaveAi_BestBuild                           : reader.Read(m_em_eBestBuild)                                   ; break; 
+			case CitySaveAi_CityRole							: reader.Read(iCityRole)										 ; break;
 
 			default: FAssert(false);
 		}
@@ -198,6 +207,8 @@ void CvCityAI::read(CvSavegameReader reader)
 	
 	// Loading done. Set up the cache (if any).
 
+	// Assign non-enum temp variables to the enum value
+	m_cityRole = static_cast<AICityRole>(iCityRole);
 }
 
 void CvCityAI::write(CvSavegameWriter writer)
@@ -244,6 +255,7 @@ void CvCityAI::write(CvSavegameWriter writer)
 
 	writer.Write(CitySaveAi_BestBuildValue, m_em_iBestBuildValue);
 	writer.Write(CitySaveAi_BestBuild, m_em_eBestBuild);
+	writer.Write(CitySaveAi_CityRole, static_cast<int>(m_cityRole), static_cast<int>(defaultCityRole));
 
 	writer.Write(Save_END);
 }

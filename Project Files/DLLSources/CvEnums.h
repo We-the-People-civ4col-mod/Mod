@@ -1140,6 +1140,14 @@ enum AIVictoryStage // advc: replacing preprocessor defines
 	AI_VICTORY_MILITARY4 = AI_VICTORY_DOMINATION4 | AI_VICTORY_CONQUEST4,
 };
 
+enum AICityRole
+{
+	NO_AI_CITY_ROLE = 0,
+	AI_CITY_EXPORT_PORT	 = (1 << 1), // Replacement for "best port city"
+	AI_CITY_NAVAL_PROD   = (1 << 2), // Allow dry-dock and beyond, prepare for ship building (inc. coastal tr.)
+	AI_CITY_WAGON_PROD   = (1 << 3), // Prepare and execute wagon prodction when needed
+};
+
 enum EndTurnButtonStates
 {
 	END_TURN_GO,
