@@ -118,7 +118,7 @@ class CvTradeRoutesAdvisor:
 		self.ExistingRoutes, self.AssignedRoutes = [], {}
 		for iRoute in range(self.player.getNumTradeRoutes()):
 			pRoute = self.player.getTradeRouteByIndex(iRoute)
-			if self.pTransport.canAssignTradeRoute(pRoute.getID(), true):
+			if self.pTransport.canAssignTradeRoute(pRoute.getID(), True):
 				self.ExistingRoutes.append(pRoute)
 				self.AssignedRoutes[pRoute.getID()] = self.pTransport.getGroup().isAssignedTradeRoute(pRoute.getID())
 		
@@ -273,7 +273,7 @@ class CvTradeRoutesAdvisor:
 
 	
 	def drawContents(self):
-		self.routesTable(true)
+		self.routesTable(True)
 				
 	
 	def routesTable(self, bRebuild):
@@ -319,7 +319,7 @@ class CvTradeRoutesAdvisor:
 		szTable = self.TableNames[self.CURRENT_TABLE]
 		
 		screen.modifyLabel(self.szTitle, u"<font=3b>" + self.TableLabel[self.CURRENT_TABLE] + u"</font>", CvUtil.FONT_LEFT_JUSTIFY)
-		screen.addTableControlGFC(szTable, 5, self.TABLE_X, self.TABLE_Y, self.TABLE_WIDTH, self.TABLE_HEIGHT, true, false, 32, 32, TableStyles.TABLE_STYLE_STANDARD)
+		screen.addTableControlGFC(szTable, 5, self.TABLE_X, self.TABLE_Y, self.TABLE_WIDTH, self.TABLE_HEIGHT, True, false, 32, 32, TableStyles.TABLE_STYLE_STANDARD)
 		screen.setStyle(szTable, "Table_StandardCiv_Style")
 		screen.enableSort(szTable)
 		screen.enableSelect(szTable, false)
@@ -360,7 +360,7 @@ class CvTradeRoutesAdvisor:
 		self.ExistingRoutes = []
 		for iRoute in range(self.player.getNumTradeRoutes()):
 			pRoute = self.player.getTradeRouteByIndex(iRoute)
-			if self.pTransport.canAssignTradeRoute(pRoute.getID(), true):
+			if self.pTransport.canAssignTradeRoute(pRoute.getID(), True):
 				self.ExistingRoutes.append(pRoute)
 				if not pRoute.getID() in self.AssignedRoutes:
 					self.AssignedRoutes[pRoute.getID()] = false
@@ -422,14 +422,14 @@ class CvTradeRoutesAdvisor:
 				self.bAssigned = false
 				szLabel = u"%c" % CyGame().getSymbolID(FontSymbols.CHECKBOX_CHAR)
 			else:
-				self.bAssigned = true
+				self.bAssigned = True
 				szLabel = u"%c" % CyGame().getSymbolID(FontSymbols.CHECKBOX_SELECTED_CHAR)
 				
 		elif self.AssignedRoutes[iRoute]:
 			self.AssignedRoutes[iRoute] = false
 			szLabel = u"%c" % CyGame().getSymbolID(FontSymbols.CHECKBOX_CHAR)
 		else:
-			self.AssignedRoutes[iRoute] = true
+			self.AssignedRoutes[iRoute] = True
 			szLabel = u"%c" % CyGame().getSymbolID(FontSymbols.CHECKBOX_SELECTED_CHAR)
 		
 		self.getScreen().setTableText(self.TableNames[self.CURRENT_TABLE], 1, iRow, szLabel, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_CENTER_JUSTIFY)
@@ -483,7 +483,7 @@ class CvTradeRoutesAdvisor:
 			szYieldHeader = u"<font=3>%c</font>" % gc.getYieldInfo(self.iYields).getChar()
 			
 		screen.modifyLabel(self.szTitle, u"<font=3b>" + self.TableLabel[self.CURRENT_TABLE] + u"</font>", CvUtil.FONT_LEFT_JUSTIFY)
-		screen.addTableControlGFC(szTable, 5, self.TABLE_X, self.TABLE_Y, self.TABLE_WIDTH, self.TABLE_HEIGHT, true, false, 32, 32, TableStyles.TABLE_STYLE_STANDARD)
+		screen.addTableControlGFC(szTable, 5, self.TABLE_X, self.TABLE_Y, self.TABLE_WIDTH, self.TABLE_HEIGHT, True, false, 32, 32, TableStyles.TABLE_STYLE_STANDARD)
 		screen.setStyle(szTable, "Table_StandardCiv_Style")
 		screen.enableSort(szTable)
 		screen.enableSelect(szTable, false)
@@ -532,7 +532,7 @@ class CvTradeRoutesAdvisor:
 		
 		
 		szTable = self.TableNames[self.CURRENT_TABLE]		
-		screen.addTableControlGFC(szTable, 4, self.TABLE_X, self.TABLE_Y, self.TABLE_WIDTH, self.TABLE_HEIGHT, true, false, 32, 32, TableStyles.TABLE_STYLE_STANDARD)
+		screen.addTableControlGFC(szTable, 4, self.TABLE_X, self.TABLE_Y, self.TABLE_WIDTH, self.TABLE_HEIGHT, True, false, 32, 32, TableStyles.TABLE_STYLE_STANDARD)
 		screen.setStyle(szTable, "Table_StandardCiv_Style")
 		screen.enableSort(szTable)
 		screen.enableSelect(szTable, false)
@@ -594,7 +594,7 @@ class CvTradeRoutesAdvisor:
 		popupInfo.setText(idstr) 
 		
 		popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_SAVE_TRADEGROUP)
-		CyInterface().addPopup(popupInfo, gc.getGame().getActivePlayer(), true, false)			
+		CyInterface().addPopup(popupInfo, gc.getGame().getActivePlayer(), True, false)
 		return	
 		
 	def deleteGroupTable(self):		
@@ -614,7 +614,7 @@ class CvTradeRoutesAdvisor:
 			spl = token.split(" ")			
 			for pRoute in self.CurrentList:				
 				if str(pRoute.getSourceCity().iID) == spl[0] and str(pRoute.getDestinationCity().iID) == spl[1] and str(pRoute.getYield()) == spl[2]:								
-					self.AssignedRoutes[pRoute.getID()] = true		
+					self.AssignedRoutes[pRoute.getID()] = True
 		
 		self.routesTable(false)		
 		self.updateRoutes()
@@ -724,7 +724,7 @@ class CvTradeRoutesAdvisor:
 					screen.setLabelAt(self.szPreviewExport + "Label", self.szPreviewExport + "Banner", szLabel, CvUtil.FONT_LEFT_JUSTIFY, 3, 10, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 				else:
 					screen.setLabelAt(self.szPreviewExport + "Label", self.szPreviewExport + "Banner", szLabel, CvUtil.FONT_CENTER_JUSTIFY, (self.PREVIEW_WIDTH - 20) / 2, 10, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-				screen.addPlotGraphicGFC(self.szPreviewExport, CURRENT_X + 6, self.PREVIEW_Y + 6, self.PREVIEW_WIDTH - 12, self.PREVIEW_HEIGHT - 12, self.player.getCity(self.iExport).plot(), 350, true, WidgetTypes.WIDGET_GENERAL, -1, -1)
+				screen.addPlotGraphicGFC(self.szPreviewExport, CURRENT_X + 6, self.PREVIEW_Y + 6, self.PREVIEW_WIDTH - 12, self.PREVIEW_HEIGHT - 12, self.player.getCity(self.iExport).plot(), 350, True, WidgetTypes.WIDGET_GENERAL, -1, -1)
 				screen.moveToFront(self.szPreviewExport + "Border" + str(0))
 		else:
 			screen.hide(self.szPreviewExport)
@@ -743,7 +743,7 @@ class CvTradeRoutesAdvisor:
 					screen.setLabelAt(self.szPreviewImport + "Label", self.szPreviewImport + "Banner", u"<font=2>" + u"%s" % self.player.getCity(self.iImport).getName() + u"</font>", CvUtil.FONT_LEFT_JUSTIFY, 3, 10, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 				else:
 					screen.setLabelAt(self.szPreviewImport + "Label", self.szPreviewImport + "Banner", u"<font=2>" + u"%s" % self.player.getCity(self.iImport).getName() + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, (self.PREVIEW_WIDTH - 20) / 2, 10, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-				screen.addPlotGraphicGFC(self.szPreviewImport, CURRENT_X + 6, self.PREVIEW_Y + 6, self.PREVIEW_WIDTH - 12, self.PREVIEW_HEIGHT - 12, self.player.getCity(self.iImport).plot(), 350, true, WidgetTypes.WIDGET_GENERAL, -1, -1)
+				screen.addPlotGraphicGFC(self.szPreviewImport, CURRENT_X + 6, self.PREVIEW_Y + 6, self.PREVIEW_WIDTH - 12, self.PREVIEW_HEIGHT - 12, self.player.getCity(self.iImport).plot(), 350, True, WidgetTypes.WIDGET_GENERAL, -1, -1)
 				screen.moveToFront(self.szPreviewImport + "Border" + str(0))
 		elif self.iImport == self.EUROPE_CITY:
 			screen.show(self.szPreviewImport + "Banner")
@@ -778,7 +778,7 @@ class CvTradeRoutesAdvisor:
 		elif self.CURRENT_TABLE == self.BUILDER_TABLE:
 			screen.appendMultiListButton(self.szButtonPanel, szRoutesButton, 0, WidgetTypes.WIDGET_GENERAL, self.ROUTES_ID, -1, False)
 			if self.isSelectionReady():
-				screen.enableMultiListPulse(self.szButtonPanel, true, 0, 0)
+				screen.enableMultiListPulse(self.szButtonPanel, True, 0, 0)
 			else:
 				screen.disableMultiListButton(self.szButtonPanel, 0, 0, szRoutesButton)
 		else:
@@ -806,9 +806,9 @@ class CvTradeRoutesAdvisor:
 		if not self.isSelectionReady():
 			return
 			
-		CyMessageControl().sendDoTask(self.iExport, TaskTypes.TASK_YIELD_EXPORT, self.iYields, true, false, false, false, false)
+		CyMessageControl().sendDoTask(self.iExport, TaskTypes.TASK_YIELD_EXPORT, self.iYields, True, false, false, false, false)
 		if self.iImport > self.EUROPE_CITY:
-			CyMessageControl().sendDoTask(self.iImport, TaskTypes.TASK_YIELD_IMPORT, self.iYields, true, false, false, false, false)
+			CyMessageControl().sendDoTask(self.iImport, TaskTypes.TASK_YIELD_IMPORT, self.iYields, True, false, false, false, false)
 				
 	
 	def isSelectionEmpty(self):
@@ -870,7 +870,7 @@ class CvTradeRoutesAdvisor:
 				elif inputClass.getData1() == self.EXPORT_TABLE_ID:
 					self.cityTable(false)
 				elif inputClass.getData1() == self.IMPORT_TABLE_ID:
-					self.cityTable(true)
+					self.cityTable(True)
 					
 				elif inputClass.getData1() == self.YIELD_LIST_ID:
 					self.iYields = inputClass.getData2()

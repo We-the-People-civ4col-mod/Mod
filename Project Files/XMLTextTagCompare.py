@@ -113,6 +113,8 @@ class LineCopier:
         self.dest_file.flush()
 
     def process_extract_list(self,entries):
+        if len(entries) == 0:
+            return
         self.init_dest_file()
 
         for entry in entries:

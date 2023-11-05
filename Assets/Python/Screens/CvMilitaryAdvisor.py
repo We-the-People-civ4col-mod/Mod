@@ -89,7 +89,7 @@ class CvMilitaryAdvisor:
 		self.screen = CyGInterfaceScreen(self.MILITARY_SCREEN_NAME, self.screenId)
 
 		global INITED
-		INITED = true
+		INITED = True
 
 	def getScreen(self):
 		if self.INITED:
@@ -199,11 +199,11 @@ class CvMilitaryAdvisor:
 
 	def ListActivePlayerUnits(self):
 		AllUnits = []
-		(city, iter) = self.pActivePlayer.firstCity(true)
+		(city, iter) = self.pActivePlayer.firstCity(True)
 		while(city):
 			for iCitizen in range(city.getPopulation()):
 				AllUnits.append(city.getPopulationUnitByIndex(iCitizen))
-			(city, iter) = self.pActivePlayer.nextCity(iter, true)
+			(city, iter) = self.pActivePlayer.nextCity(iter, True)
 
 	 	(unit, iter) = self.pActivePlayer.firstUnit()
 		while(unit):
@@ -272,7 +272,7 @@ class CvMilitaryAdvisor:
 	def addUnitToList(self, unit, idx, verticalIndex):
 		screen = self.getScreen()
 		screen.addCheckBoxGFCAt(self.unitBackgroundName, self.unitCheckBox + str(idx), gc.getUnitInfo(unit.getUnitType()).getButton(), ArtFileMgr.getInterfaceArtInfo("BUTTON_HILITE_SQUARE").getPath(), 1, 2 + verticalIndex * 50, 46, 46, WidgetTypes.WIDGET_GENERAL, self.UNIT_TOGGLE, idx, ButtonStyles.BUTTON_STYLE_LABEL)
-		szDescription = CyGameTextMgr().getSpecificUnitHelp(unit, true, false)
+		szDescription = CyGameTextMgr().getSpecificUnitHelp(unit, True, false)
 		screen.attachMultilineTextAt(self.unitBackgroundName, "description" + str(idx), u"<font=3>" + szDescription + u"</font>", 50, (verticalIndex * 50) - 4, 360, 50, WidgetTypes.WIDGET_GENERAL, self.UNIT_TOGGLE, idx, CvUtil.FONT_LEFT_JUSTIFY)
 
 	def addUnitsToList(self, units):
@@ -286,7 +286,7 @@ class CvMilitaryAdvisor:
 		for idx in range(len(self.unitList)):
 			screen.setState(self.unitCheckBox + str(idx), false)
 		for idx in self.selectedUnitList:
-			screen.setState(self.unitCheckBox + str(idx), true)
+			screen.setState(self.unitCheckBox + str(idx), True)
 
 	def handleInput (self, inputClass):
 		screen = self.getScreen()
@@ -316,7 +316,7 @@ class CvMilitaryAdvisor:
 			screen.setState(self.unitCheckBox + str(unitIndex), false)
 		else:
 			self.selectedUnitList.append(unitIndex)
-			screen.setState(self.unitCheckBox + str(unitIndex), true)
+			screen.setState(self.unitCheckBox + str(unitIndex), True)
 		self.refreshMinimap()
 
 	def toggleAllCheckBoxes(self, groupIndex):
@@ -328,10 +328,10 @@ class CvMilitaryAdvisor:
 			for unitIndex in range(len(self.unitList)):
 				screen.setState(self.unitCheckBox + str(unitIndex), false)
 		else:
-			self.allState = true
+			self.allState = True
 			self.selectedUnitList = []
 			for unitIndex in range(len(self.unitList)):
-				screen.setState(self.unitCheckBox + str(unitIndex), true)
+				screen.setState(self.unitCheckBox + str(unitIndex), True)
 				self.selectedUnitList.append(unitIndex)
 
 		self.refreshMinimap()
@@ -348,11 +348,11 @@ class CvMilitaryAdvisor:
 					self.selectedUnitList.remove(unitIndex)
 					screen.setState(self.unitCheckBox + str(unitIndex), false)
 		else:
-			self.groupState[groupIndex] = true
+			self.groupState[groupIndex] = True
 			for unitIndex in units:
 				if unitIndex not in self.selectedUnitList:
 					self.selectedUnitList.append(unitIndex)
-					screen.setState(self.unitCheckBox + str(unitIndex), true)
+					screen.setState(self.unitCheckBox + str(unitIndex), True)
 
 		self.refreshMinimap()
 
@@ -485,14 +485,14 @@ class CvMilitaryAdvisor:
 		if (iPlayer in self.selectedPlayerList):
 			self.selectedPlayerList.remove(iPlayer)
 			if len(Units) > 0:
-				bDirty = true
+				bDirty = True
 			for iUnit in self.selectedUnitList:
 				if self.unitList[iUnit].getOwner() == iPlayer:
 					self.selectedUnitList.remove(iUnit)
 		else:
 			self.selectedPlayerList.append(iPlayer)
 			if len(Units) > 0:
-				bDirty = true
+				bDirty = True
 
 		if bDirty:
 			NewSelectedUnitList = []

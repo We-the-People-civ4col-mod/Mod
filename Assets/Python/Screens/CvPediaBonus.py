@@ -73,10 +73,10 @@ class CvPediaBonus:
 		# Top
 		screen.setText(self.top.getNextWidgetName(), "Background", self.top.MENU_TEXT, CvUtil.FONT_LEFT_JUSTIFY, self.top.X_MENU, self.top.Y_MENU, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_PEDIA_MAIN, CivilopediaPageTypes.CIVILOPEDIA_PAGE_BONUS, -1)
 		if self.top.iLastScreen	!= CvScreenEnums.PEDIA_BONUS or bNotActive:
-			self.placeLinks(true)
+			self.placeLinks(True)
 			self.top.iLastScreen = CvScreenEnums.PEDIA_BONUS
 		else:
-			self.placeLinks(true)
+			self.placeLinks(True)
 
 		# Icon
 		screen.addPanel( self.top.getNextWidgetName(), "", "", False, False, self.X_ICON_PANE, self.Y_ICON_PANE, self.W_ICON_PANE, self.H_ICON_PANE, PanelStyles.PANEL_STYLE_BLUE50, WidgetTypes.WIDGET_GENERAL, -1, -1)
@@ -135,7 +135,7 @@ class CvPediaBonus:
 		## we need to do a more complicated check for water
 		for iTerrain in range(TerrainTypes.NUM_TERRAIN_TYPES):
 			if (gc.getBonusInfo(self.iBonus).isTerrain(iTerrain) and gc.getTerrainInfo(iTerrain).isWater()):
-				bValidWater = true
+				bValidWater = True
 
 		if (bValidWater):
 			sWaterText = localText.getText("TXT_BONUS_RESOURCE_IS_WATER", ())

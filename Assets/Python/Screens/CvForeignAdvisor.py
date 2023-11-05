@@ -139,7 +139,7 @@ class CvForeignAdvisor:
 		# Put everything inside a main panel, so we get vertical scrolling
 		mainPanelName = self.getNextWidgetName()
 		#screen.addPanel(mainPanelName, "", "", True, True, 50, 100, self.XResolution - 100, self.YResolution - 200, PanelStyles.PANEL_STYLE_EMPTY, WidgetTypes.WIDGET_GENERAL, -1, -1)
-		screen.addScrollPanel(mainPanelName, u"", 50, 100, self.XResolution - 100, self.YResolution - 200, PanelStyles.PANEL_STYLE_EMPTY, true, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.addScrollPanel(mainPanelName, u"", 50, 100, self.XResolution - 100, self.YResolution - 200, PanelStyles.PANEL_STYLE_EMPTY, True, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 		# loop through all players and sort them by number of active deals
 		listPlayers = [(0,0)] * gc.getMAX_PLAYERS()

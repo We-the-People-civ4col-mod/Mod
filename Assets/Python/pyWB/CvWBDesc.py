@@ -40,7 +40,7 @@ class CvWBParser:
 		"return true if item exists in list of tokens"
 		for tok in toks:
 			if (tok==item):
-				return true
+				return True
 		return false
 
 	def findTokenValue(self, toks, item):
@@ -65,7 +65,7 @@ class CvWBParser:
 				return false	# EOF
 			toks=self.getTokens(line)
 			if (self.findToken(toks, item)):
-				return true
+				return True
 		return false
 
 	def findNextTokenValue(self, f, item):
@@ -165,7 +165,7 @@ class CvGameDesc:
 
 		parser = CvWBParser()
 		if (parser.findNextTokenValue(f, "BeginGame")!=-1):
-			while (true):
+			while (True):
 				nextLine = parser.getNextLine(f)
 				toks = parser.getTokens(nextLine)
 				if (len(toks)==0):
@@ -323,7 +323,7 @@ class CvTeamDesc:
 
 		parser = CvWBParser()
 		if (parser.findNextTokenValue(f, "BeginTeam")!=-1):
-			while (true):
+			while (True):
 				nextLine = parser.getNextLine(f)
 				toks = parser.getTokens(nextLine)
 				if (len(toks)==0):
@@ -359,7 +359,7 @@ class CvTeamDesc:
 					continue
 
 				if parser.findTokenValue(toks, "EndTeam") != -1:
-					return true		# completed successfully
+					return True		# completed successfully
 
 		return false	# failed
 
@@ -457,7 +457,7 @@ class CvPlayerDesc:
 		self.__init__()
 		parser = CvWBParser()
 		if (parser.findNextTokenValue(f, "BeginPlayer")!=-1):
-			while (true):
+			while (True):
 				nextLine = parser.getNextLine(f)
 				toks = parser.getTokens(nextLine)
 				if (len(toks)==0):
@@ -622,7 +622,7 @@ class CvUnitDesc:
 					unit.setExperience(self.experience, -1)
 				for promo in self.promotionType:
 					promotionTypeNum = CvUtil.findInfoTypeNum(promo)
-					unit.setHasRealPromotion(promotionTypeNum, true)
+					unit.setHasRealPromotion(promotionTypeNum, True)
 				if self.isSleep:
 					unit.getGroup().setActivityType(ActivityTypes.ACTIVITY_SLEEP)
 				if self.szScriptData != "NONE":
@@ -636,7 +636,7 @@ class CvUnitDesc:
 		CvUtil.pyAssert(self.plotX>=0 and self.plotY>=0, "invalid plot coords")
 
 		parser = CvWBParser()
-		while (true):
+		while (True):
 			nextLine = parser.getNextLine(f)
 			toks = parser.getTokens(nextLine)
 			if (len(toks)==0):
@@ -764,7 +764,7 @@ class CvCityDesc:
 
 		for bldg in (self.bldgType):
 			bldgTypeNum = CvUtil.findInfoTypeNum(bldg)
-			self.city.setHasRealBuilding(bldgTypeNum, true)
+			self.city.setHasRealBuilding(bldgTypeNum, True)
 
 		for unit in (self.citizenList):
 			unitTypeNum = CvUtil.findInfoTypeNum(unit)
@@ -777,7 +777,7 @@ class CvCityDesc:
 		for iPlayerLoop in range(gc.getMAX_CIV_PLAYERS()):
 			iPlayerCulture = self.aiPlayerCulture[iPlayerLoop]
 			if (iPlayerCulture > 0):
-				self.city.setCulture(iPlayerLoop, iPlayerCulture, true)
+				self.city.setCulture(iPlayerLoop, iPlayerCulture, True)
 
 		unitTypeNum = CvUtil.findInfoTypeNum(self.productionUnit)
 		buildingTypeNum = CvUtil.findInfoTypeNum(self.productionBuilding)
@@ -828,7 +828,7 @@ class CvCityDesc:
 		self.plotX=iX
 		self.plotY=iY
 		parser = CvWBParser()
-		while (true):
+		while (True):
 			nextLine = parser.getNextLine(f)
 			toks = parser.getTokens(nextLine)
 			if (len(toks)==0):
@@ -1019,7 +1019,7 @@ class CvPlotDesc:
 			CvCityDesc().write(f, plot)
 
 		# Fog of War
-		bFirstReveal=true
+		bFirstReveal=True
 		for iTeamLoop in range(gc.getMAX_CIV_TEAMS()):
 			if (gc.getTeam(iTeamLoop).isAlive()):
 				if (plot.isRevealed(iTeamLoop,0)):
@@ -1039,7 +1039,7 @@ class CvPlotDesc:
 		parser = CvWBParser()
 		if parser.findNextToken(f, "BeginPlot")==false:
 			return false	# no more plots
-		while (true):
+		while (True):
 			nextLine = parser.getNextLine(f)
 			toks = parser.getTokens(nextLine)
 			if (len(toks)==0):
@@ -1068,7 +1068,7 @@ class CvPlotDesc:
 				continue
 
 			if (parser.findTokenValue(toks, "isNOfRiver"))!=-1:
-				self.isNOfRiver = (true)
+				self.isNOfRiver = (True)
 				continue
 
 			v = parser.findTokenValue(toks, "RiverWEDirection")
@@ -1077,11 +1077,11 @@ class CvPlotDesc:
 				continue
 
 			if (parser.findTokenValue(toks, "isWOfRiver"))!=-1:
-				self.isWOfRiver = (true)
+				self.isWOfRiver = (True)
 				continue
 
 			if (parser.findTokenValue(toks, "StartingPlot"))!=-1:
-				self.isStartingPlot = (true)
+				self.isStartingPlot = (True)
 				continue
 
 			v = parser.findTokenValue(toks, "EuropeType")
@@ -1144,7 +1144,7 @@ class CvPlotDesc:
 				for iTeamLoop in toks:
 					iTeamLoop = iTeamLoop.lstrip('TeamReveal=')
 					if len(iTeamLoop):
-						self.abTeamPlotRevealed[int(iTeamLoop)] = true
+						self.abTeamPlotRevealed[int(iTeamLoop)] = True
 				continue
 
 			if parser.findTokenValue(toks, "EndPlot")!=-1:
@@ -1203,7 +1203,7 @@ class CvMapDesc:
 		if parser.findNextToken(f, "BeginMap")==false:
 			print "can't find map"
 			return
-		while (true):
+		while (True):
 			nextLine = parser.getNextLine(f)
 			toks = parser.getTokens(nextLine)
 			if (len(toks)==0):
@@ -1317,7 +1317,7 @@ class CvSignDesc:
 		if parser.findNextToken(f, "BeginSign")==false:
 			print "can't find sign"
 			return
-		while (true):
+		while (True):
 			nextLine = parser.getNextLine(f)
 			toks = parser.getTokens(nextLine)
 			if (len(toks)==0):
@@ -1456,7 +1456,7 @@ class CvWBDesc:
 
 			# Random Start Location
 			if (pPlayer.getLeaderType() != -1 and pWBPlayer.bRandomStartLocation != "false"):
-				pPlayer.setStartingPlot(pPlayer.findStartingPlot(true), True)
+				pPlayer.setStartingPlot(pPlayer.findStartingPlot(True), True)
 			else:
 
 				# Player's starting plot
@@ -1509,7 +1509,7 @@ class CvWBDesc:
 					# Permanent War/Peace
 					for permanentWarPeaceTeam in self.teamsDesc[iTeamLoop].bPermanentWarPeaceList:
 						if (self.validTeams[permanentWarPeaceTeam]):
-							gc.getTeam(iTeamLoop).setPermanentWarPeace(permanentWarPeaceTeam, true)
+							gc.getTeam(iTeamLoop).setPermanentWarPeace(permanentWarPeaceTeam, True)
 
 					# Open Borders
 					for openBordersTeam in self.teamsDesc[iTeamLoop].bOpenBordersWithTeamList:
@@ -1545,7 +1545,7 @@ class CvWBDesc:
 
 					# Random Start Location
 					if (pWBPlayer.bRandomStartLocation != "false"):
-						pPlayer.setStartingPlot(pPlayer.findStartingPlot(true), True)
+						pPlayer.setStartingPlot(pPlayer.findStartingPlot(True), True)
 						print("Setting player %d starting location to (%d,%d)", pPlayer.getID(), pPlayer.getStartingPlot().getX(), pPlayer.getStartingPlot().getY())
 
 					# Civics

@@ -15,8 +15,9 @@ from CvPythonExtensions import *
 # For exception handling
 SHOWEXCEPTIONS = 1
 
-# for C++ compatibility
+#left for legacy Python vanilla code compatibiliy. Use False instead
 false=False
+#left for legacy  Python vanilla code compatibility, use True instead
 true=True
 
 # globals

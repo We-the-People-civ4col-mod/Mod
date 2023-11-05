@@ -114,7 +114,7 @@ class CvFoundingFatherScreen:
 			self.FatherBars.append((iTopBarPoints, iBottomBarPoints))
 
 		for iCategory in range(gc.getNumFatherCategoryInfos()):
-			screen.addScrollPanel("FoundingFatherList" + str(iCategory), u"", 0, 0, self.XResolution, self.FATHERLIST_HEIGHT, PanelStyles.PANEL_STYLE_EXTERNAL, true, WidgetTypes.WIDGET_GENERAL, -1, -1)
+			screen.addScrollPanel("FoundingFatherList" + str(iCategory), u"", 0, 0, self.XResolution, self.FATHERLIST_HEIGHT, PanelStyles.PANEL_STYLE_EXTERNAL, True, WidgetTypes.WIDGET_GENERAL, -1, -1)
 			screen.setActivation("FoundingFatherList" + str(iCategory), ActivationTypes.ACTIVATE_NORMAL)
 			screen.hide("FoundingFatherList" + str(iCategory))
 

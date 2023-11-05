@@ -77,10 +77,10 @@ class CvPediaFather( CvScreen.CvScreen ):
 		screen.setText(self.top.getNextWidgetName(), "Background", self.top.MENU_TEXT, CvUtil.FONT_LEFT_JUSTIFY, self.top.X_MENU, self.top.Y_MENU, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_PEDIA_MAIN, CivilopediaPageTypes.CIVILOPEDIA_PAGE_FATHER, -1)
 
 		if self.top.iLastScreen	!= CvScreenEnums.PEDIA_FATHER or bNotActive:
-			self.placeLinks(true)
+			self.placeLinks(True)
 			self.top.iLastScreen = CvScreenEnums.PEDIA_FATHER
 		else:
-			self.placeLinks(true)
+			self.placeLinks(True)
 
 		self.placeHistory()
 		self.placeInfo()
@@ -102,7 +102,7 @@ class CvPediaFather( CvScreen.CvScreen ):
 
 		screen = self.top.getScreen()
 		panelName = self.top.getNextWidgetName()
-		screen.addPanel(panelName, CyTranslator().getText("TXT_KEY_PEDIA_REQUIRES", ()), "", true, false, self.X_PRE_REQS, self.Y_PRE_REQS, self.W_PRE_REQS, self.H_PRE_REQS, PanelStyles.PANEL_STYLE_BLUE50, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.addPanel(panelName, CyTranslator().getText("TXT_KEY_PEDIA_REQUIRES", ()), "", True, false, self.X_PRE_REQS, self.Y_PRE_REQS, self.W_PRE_REQS, self.H_PRE_REQS, PanelStyles.PANEL_STYLE_BLUE50, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
 		panelName = self.top.getNextWidgetName()
 		screen.addListBoxGFC(panelName, "", self.X_PRE_REQS + 15, self.Y_PRE_REQS + 40, self.W_PRE_REQS - 30, self.H_PRE_REQS - 60, TableStyles.TABLE_STYLE_EMPTY)
@@ -150,7 +150,7 @@ class CvPediaFather( CvScreen.CvScreen ):
 		screen = self.top.getScreen()
 
 		panelName = self.top.getNextWidgetName()
-		screen.addPanel(panelName, CyTranslator().getText("TXT_KEY_PEDIA_SPECIAL_ABILITIES", ()), "", true, false, self.X_INFOS, self.Y_INFOS, self.W_INFOS, self.H_INFOS, PanelStyles.PANEL_STYLE_BLUE50, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.addPanel(panelName, CyTranslator().getText("TXT_KEY_PEDIA_SPECIAL_ABILITIES", ()), "", True, false, self.X_INFOS, self.Y_INFOS, self.W_INFOS, self.H_INFOS, PanelStyles.PANEL_STYLE_BLUE50, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		listName = self.top.getNextWidgetName()
 
 		szSpecialText = CyGameTextMgr().getFatherHelp(self.iFather, True)
@@ -161,7 +161,7 @@ class CvPediaFather( CvScreen.CvScreen ):
 		screen = self.top.getScreen()
 
 		panelName = self.top.getNextWidgetName()
-		screen.addPanel(panelName, CyTranslator().getText("TXT_KEY_PEDIA_FATHER_CATEGORY", ()), "", true, true, self.X_CATAGORY, self.Y_CATAGORY, self.W_CATAGORY, self.H_CATAGORY, PanelStyles.PANEL_STYLE_BLUE50, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.addPanel(panelName, CyTranslator().getText("TXT_KEY_PEDIA_FATHER_CATEGORY", ()), "", True, True, self.X_CATAGORY, self.Y_CATAGORY, self.W_CATAGORY, self.H_CATAGORY, PanelStyles.PANEL_STYLE_BLUE50, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
 		iCategory = gc.getFatherInfo(self.iFather).getFatherCategory()
 
@@ -174,7 +174,7 @@ class CvPediaFather( CvScreen.CvScreen ):
 		screen = self.top.getScreen()
 
 		panelName = self.top.getNextWidgetName()
-		screen.addPanel(panelName, localText.getText("TXT_KEY_CIVILOPEDIA_HISTORY", ()), "", true, true, self.X_HISTORY, self.Y_HISTORY, self.W_HISTORY, self.H_HISTORY, PanelStyles.PANEL_STYLE_BLUE50, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.addPanel(panelName, localText.getText("TXT_KEY_CIVILOPEDIA_HISTORY", ()), "", True, True, self.X_HISTORY, self.Y_HISTORY, self.W_HISTORY, self.H_HISTORY, PanelStyles.PANEL_STYLE_BLUE50, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 		historyTextName = self.top.getNextWidgetName()
 		CivilopediaText = gc.getFatherInfo(self.iFather).getCivilopedia()

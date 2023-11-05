@@ -365,7 +365,7 @@ def WorldBuilderOnAdvancedStartBrushSelected(argsList):
 	iList,iIndex,iTab = argsList;
 	print("WB Advanced Start brush selected, iList=%d, iIndex=%d, type=%d" %(iList,iIndex,iTab))
 	if (iTab == worldBuilderScreen.m_iASCityTabID and iList == worldBuilderScreen.m_iASAutomateListID):
-		CyMessageControl().sendAdvancedStartAction(AdvancedStartActionTypes.ADVANCEDSTARTACTION_AUTOMATE, worldBuilderScreen.m_iCurrentPlayer, -1, -1, -1, true)
+		CyMessageControl().sendAdvancedStartAction(AdvancedStartActionTypes.ADVANCEDSTARTACTION_AUTOMATE, worldBuilderScreen.m_iCurrentPlayer, -1, -1, -1, True)
 	if (worldBuilderScreen.setCurrentAdvancedStartIndex(iIndex)):
 		if (worldBuilderScreen.setCurrentAdvancedStartList(iList)):
 			return 1

@@ -66,7 +66,7 @@ class CvDomesticAdvisor:
 #VET NewCapacity - begin 1/4
 		# WTP ray, careful this does not exist anymore, we set it to true
 		# self.bNewCapacity = (gc.getDefineINT("NEW_CAPACITY") > 0)
-		self.bNewCapacity = true
+		self.bNewCapacity = True
 #VET NewCapacity - end 1/4
 		## R&R, Robert Surcouf,  Domestic Advisor Screen - Start
 		#self.nTableWidth = self.nScreenWidth * 19 / 20
@@ -794,7 +794,7 @@ class CvDomesticAdvisor:
 			bReusePath = false
 			for Route in self.Routes:
 				RouteValidArray.append(Transport.canAssignTradeRoute(Route.getID(), bReusePath))
-				bReusePath = true
+				bReusePath = True
 			self.RouteValidity.append(RouteValidArray)
 		
 		
@@ -881,7 +881,7 @@ class CvDomesticAdvisor:
 					screen = CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )
 					screen.hideScreen()
 
-					CyInterface().selectCity(gc.getPlayer(inputClass.getData1()).getCity(inputClass.getData2()), true);
+					CyInterface().selectCity(gc.getPlayer(inputClass.getData1()).getCity(inputClass.getData2()), True);
 
 					popupInfo = CyPopupInfo()
 					popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON_SCREEN)
@@ -996,7 +996,7 @@ class CvDomesticAdvisor:
 			elif iData1 == 10001:
 				unit = gc.getActivePlayer().getUnit(iData2)
 				if not unit.isNone():
-					return CyGameTextMgr().getSpecificUnitHelp(unit, true, false)
+					return CyGameTextMgr().getSpecificUnitHelp(unit, True, false)
 			elif iData1 == self.GAME_FONT_STATE and iData1 != -1:
 				return "DEBUG: GameFont"
 			elif iData1 == self.TERRAIN_STATE and iData1 != -1:

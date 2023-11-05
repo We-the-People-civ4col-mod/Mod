@@ -146,7 +146,7 @@ class CvAfricaScreen:
 			February = localText.getText("TXT_KEY_MONTH_FEBRUARY", ())
 			December = localText.getText("TXT_KEY_MONTH_DECEMBER", ())
 			
-			szDate = CyGameTextMgr().getTimeStr(iCurrentTurn, true)
+			szDate = CyGameTextMgr().getTimeStr(iCurrentTurn, True)
 
 			January = localText.getText("TXT_KEY_MONTH_JANUARY", ())
 			February = localText.getText("TXT_KEY_MONTH_FEBRUARY", ())
@@ -287,7 +287,7 @@ class CvAfricaScreen:
 		screen.showWindowBackground(False)
 	
 		# Water Animation
-		screen.addUnitGraphicGFC("WaterAnim_Widget", gc.getInfoTypeForString("UNIT_CARAVEL"), -1, 0, 0, self.XResolution, self.XResolution, WidgetTypes.WIDGET_GENERAL, -1, -1, 0, 0, 0, true)
+		screen.addUnitGraphicGFC("WaterAnim_Widget", gc.getInfoTypeForString("UNIT_CARAVEL"), -1, 0, 0, self.XResolution, self.XResolution, WidgetTypes.WIDGET_GENERAL, -1, -1, 0, 0, 0, True)
 	
 		# show background
 		if not self.iThisWinter:
@@ -698,7 +698,7 @@ class CvAfricaScreen:
 				elif (inputClass.getData1() == self.BUY_UNIT_BUTTON_ID) :
 					popupInfo = CyPopupInfo()
 					popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PURCHASE_AFRICA_UNIT)
-					CyInterface().addPopup(popupInfo, self.player_id, true, false)
+					CyInterface().addPopup(popupInfo, self.player_id, True, false)
 
 				elif (inputClass.getData1() == self.SAIL_TO_NEW_WORLD) :
 					self.sailToNewWorld(inputClass.getData2())
@@ -934,14 +934,14 @@ class CvAfricaScreen:
 		#if self.EuropePlotList == []:
 		self.getPlotLists(pTransport)
 				
-		self.createBox(self.DIALOG_X, self.DIALOG_Y, self.DIALOG_W, self.DIALOG_H, true)
+		self.createBox(self.DIALOG_X, self.DIALOG_Y, self.DIALOG_W, self.DIALOG_H, True)
 		
 		screen.hide("DealFailedText")
 		
-		screen.addUnitGraphicGFC("DialogMap" + "Water", gc.getInfoTypeForString("UNIT_CARAVEL"), -1, self.DIALOG_X + self.MAP_X, self.DIALOG_Y + self.MAP_Y, self.MAP_SIZE, self.MAP_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1, 0, 0, 0, true)			
+		screen.addUnitGraphicGFC("DialogMap" + "Water", gc.getInfoTypeForString("UNIT_CARAVEL"), -1, self.DIALOG_X + self.MAP_X, self.DIALOG_Y + self.MAP_Y, self.MAP_SIZE, self.MAP_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1, 0, 0, 0, True)
 		screen.addDDSGFC("DialogMap", "Art/Interface/Screens/Europe/DialogMapAmerica.dds", self.DIALOG_X + self.MAP_X, self.DIALOG_Y + self.MAP_Y, self.MAP_SIZE, self.MAP_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		screen.setLabelAt(self.getNextWidgetName(), "DialogMap", u"<font=4>" + localText.getText("TXT_KEY_EU_SAIL", ()) + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, self.MAP_SIZE / 2, self.STANDARD_MARGIN * 3 / 2, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-		self.createBorder(0, 0, self.MAP_SIZE, self.MAP_SIZE, self.BORDER_SIZE, "DialogMap", true)
+		self.createBorder(0, 0, self.MAP_SIZE, self.MAP_SIZE, self.BORDER_SIZE, "DialogMap", True)
 		# R&R, vetiarvind, Navigation Sectors - START
 		#The first param in setImageButtonAt's chars needs to have a name followed by a unique digit to be processed by handleInput(which removes the digit in it's method)
 		#if len(self.EuropePlotListEast) > 0:		#east button
@@ -971,7 +971,7 @@ class CvAfricaScreen:
 		szPreviewMode = sdToolKit.sdGetVal('komaScreens', player.getID(), 'PreviewMode')
 		screen.setImageButtonAt("PreviewMode", "DialogMap", ArtFileMgr.getInterfaceArtInfo(szPreviewMode).getPath(), self.MAP_SIZE - 40, self.MAP_SIZE - 40, 40, 40, WidgetTypes.WIDGET_GENERAL, self.PREVIEW_MODE, -1)
 		
-		screen.addTableControlGFC("DialogTable", 3, self.DIALOG_TABLE_X, self.DIALOG_TABLE_Y, self.DIALOG_TABLE_W, self.DIALOG_TABLE_H, true, true, 32, 32, TableStyles.TABLE_STYLE_STANDARD)
+		screen.addTableControlGFC("DialogTable", 3, self.DIALOG_TABLE_X, self.DIALOG_TABLE_Y, self.DIALOG_TABLE_W, self.DIALOG_TABLE_H, True, True, 32, 32, TableStyles.TABLE_STYLE_STANDARD)
 		screen.enableSort("DialogTable")
 		screen.setTableColumnHeader("DialogTable", 0, u"id", 0)
 		screen.setTableColumnHeader("DialogTable", 1, localText.getText("TXT_KEY_TRADE_ROUTES_EXPORT_TABLE_2", ()), self.DIALOG_TABLE_W - 64)
@@ -1003,10 +1003,10 @@ class CvAfricaScreen:
 		pTransport = player.getUnit(iUnit)
 		
 		if player.getNumShips() > 1:
-			self.createBox(self.SELL_SHIP_X, self.SELL_SHIP_Y, self.SELL_SHIP_W, self.SELL_SHIP_H, true) 
+			self.createBox(self.SELL_SHIP_X, self.SELL_SHIP_Y, self.SELL_SHIP_W, self.SELL_SHIP_H, True)
 			screen.addDDSGFCAt("SellShipEurope", "DialogPanel", "Art/Interface/Screens/Europe/Background.dds", self.SELL_SHIP_IMAGE_X, self.SELL_SHIP_IMAGE_Y, self.SELL_SHIP_IMAGE_W, self.SELL_SHIP_IMAGE_H, WidgetTypes.WIDGET_GENERAL, -1, -1, false)
 			screen.setLabelAt(self.getNextWidgetName(), "SellShipEurope", u"<font=4>" + localText.getText("TXT_KEY_EU_SELL_LABEL", ()) + u"</font>", CvUtil.FONT_LEFT_JUSTIFY, self.STANDARD_MARGIN, self.STANDARD_MARGIN * 3 / 2, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-			self.createBorder(0, 0, self.SELL_SHIP_IMAGE_W, self.SELL_SHIP_IMAGE_H, self.BORDER_SIZE, "SellShipEurope", true)
+			self.createBorder(0, 0, self.SELL_SHIP_IMAGE_W, self.SELL_SHIP_IMAGE_H, self.BORDER_SIZE, "SellShipEurope", True)
 			screen.addDDSGFCAt(self.getNextWidgetName(), "SellShipEurope", self.getMirrorShipIcon(pTransport), self.SELL_SHIP_IMAGE_W / 4, self.SELL_SHIP_IMAGE_W / 16, self.SELL_SHIP_IMAGE_W / 2, self.SELL_SHIP_IMAGE_W * 7 / 8, WidgetTypes.WIDGET_SHIP_CARGO_AFRICA, pTransport.getID(), -1, false)
 				
 			szMessage = localText.getText("TXT_KEY_EU_SELL_MESSAGE", (pTransport.getName(), self.getShipSellPrice(iUnit)))
@@ -1020,10 +1020,10 @@ class CvAfricaScreen:
 		player = self.player
 		iKingAttitude = self.playerEurope.AI_getAttitude(player.getID())
 		
-		self.createBox(self.SELL_SHIP_X, self.SELL_SHIP_Y, self.SELL_SHIP_W, self.SELL_SHIP_H, true) 
+		self.createBox(self.SELL_SHIP_X, self.SELL_SHIP_Y, self.SELL_SHIP_W, self.SELL_SHIP_H, True)
 		screen.addLeaderheadGFC ("DialogKing", self.playerEurope.getLeaderType(), iKingAttitude, self.SELL_SHIP_X + self.SELL_SHIP_IMAGE_X, self.SELL_SHIP_Y + self.SELL_SHIP_IMAGE_Y, self.SELL_SHIP_IMAGE_W, self.SELL_SHIP_IMAGE_H, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		screen.setLabelAt(self.getNextWidgetName(), "DialogKing", u"<font=4>" + localText.getText("TXT_KEY_EU_BOYCOTT_LABEL", ()) + u"</font>", CvUtil.FONT_LEFT_JUSTIFY, self.STANDARD_MARGIN, self.STANDARD_MARGIN * 3 / 2, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-		self.createBorder(0, 0, self.SELL_SHIP_IMAGE_W, self.SELL_SHIP_IMAGE_H, self.BORDER_SIZE, "DialogKing", true)
+		self.createBorder(0, 0, self.SELL_SHIP_IMAGE_W, self.SELL_SHIP_IMAGE_H, self.BORDER_SIZE, "DialogKing", True)
 			
 		szMessage = localText.getText("TXT_KEY_EU_BOYCOTT_MESSAGE", (self.getBoycottPrice(iYield), gc.getYieldInfo(iYield).getDescription()))
 		screen.addMultilineText("DialogMessage", szMessage, self.SELL_SHIP_X + self.SELL_SHIP_IMAGE_X, self.SELL_SHIP_MESSAGE_Y, self.SELL_SHIP_IMAGE_W, self.SELL_SHIP_MESSAGE_H, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
@@ -1131,9 +1131,9 @@ class CvAfricaScreen:
 		if sdToolKit.sdGetVal('komaScreens', player.getID(), 'PreviewMode') == "INTERFACE_DOMESTIC_ADVISOR":
 			szName = "DialogImage" + str(index)
 			if not szName in self.PreviewPlotList:
-				screen.addPlotGraphicGFC(szName, self.DIALOG_X + self.MAP_X, self.DIALOG_Y + self.MAP_Y, self.MAP_SIZE, self.MAP_SIZE, pCity.plot(), 350, true, WidgetTypes.WIDGET_GENERAL, -1, -1)
+				screen.addPlotGraphicGFC(szName, self.DIALOG_X + self.MAP_X, self.DIALOG_Y + self.MAP_Y, self.MAP_SIZE, self.MAP_SIZE, pCity.plot(), 350, True, WidgetTypes.WIDGET_GENERAL, -1, -1)
 				screen.setLabelAt(szName + "Label", szName, u"<font=4>" + localText.getText("TXT_KEY_EU_SAIL", ()) + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, self.MAP_SIZE / 2, self.STANDARD_MARGIN * 3 / 2, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-				self.createBorder(0, 0, self.MAP_SIZE, self.MAP_SIZE, self.BORDER_SIZE, szName, true)
+				self.createBorder(0, 0, self.MAP_SIZE, self.MAP_SIZE, self.BORDER_SIZE, szName, True)
 				self.PreviewPlotList.append(szName)
 			else:
 				screen.show(szName)
@@ -1342,7 +1342,7 @@ class CvAfricaScreen:
 		#destination info
 		player = self.player
 		plot = player.getUnit(iUnit).plot()
-		nextCityName = localText.getText("%s1", (CyMap().findCity (plot.getX(), plot.getY(), player.getID(), -1, true, true, -1, -1, plot.getPlotCity()).getName(), ()))
+		nextCityName = localText.getText("%s1", (CyMap().findCity (plot.getX(), plot.getY(), player.getID(), -1, True, True, -1, -1, plot.getPlotCity()).getName(), ()))
 	
 		if (plot.getX() >= CyMap().getGridWidth() / 2):
 			direction = localText.getText("TXT_KEY_EU_SAIL_EAST", ())

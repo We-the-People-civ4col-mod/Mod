@@ -31,7 +31,7 @@ g_eEndTurnButtonState = -1
 
 # GLOBAL INITIALIZATION BOOLEAN
 INITIALIZED = false
-abandon_city_ZeroRedraw = true # TAC abandon city - Do we redraw if a pop 0 city is viewed?
+abandon_city_ZeroRedraw = True # TAC abandon city - Do we redraw if a pop 0 city is viewed?
 
 # GLOBAL RESOLUTION VALUES
 xResolution = -1
@@ -794,7 +794,7 @@ class CvMainInterface:
 		self.appendtoHideState(screen, "MiniMapRing", HIDE_TYPE_GLOBAL, HIDE_LEVEL_HIDE)
 
 	# MINIMAP INITIALIZATION
-		screen.initMinimap(self.MINIMAP_SIDE_MARGIN, MINIMAP_HEIGHT - self.MINIMAP_SIDE_MARGIN, yResolution - MINIMAP_HEIGHT + self.MINIMAP_SIDE_MARGIN, yResolution - self.MINIMAP_SIDE_MARGIN, -0.1, true )
+		screen.initMinimap(self.MINIMAP_SIDE_MARGIN, MINIMAP_HEIGHT - self.MINIMAP_SIDE_MARGIN, yResolution - MINIMAP_HEIGHT + self.MINIMAP_SIDE_MARGIN, yResolution - self.MINIMAP_SIDE_MARGIN, -0.1, True )
 		self.appendtoHideState(screen, "_FXS_Screen_Bogus_Minimap_Name", HIDE_TYPE_MAP, HIDE_LEVEL_ALL)
 		self.appendtoHideState(screen, "_FXS_Screen_Bogus_Minimap_Name", HIDE_TYPE_CITY, HIDE_LEVEL_ALL)
 		self.appendtoHideState(screen, "_FXS_Screen_Bogus_Minimap_Name", HIDE_TYPE_GLOBAL, HIDE_LEVEL_ALL)
@@ -1646,10 +1646,10 @@ class CvMainInterface:
 								for i in range(CyInterface().getNumOrdersQueued()):
 									if (CyInterface().getOrderNodeType(i)  == OrderTypes.ORDER_TRAIN):
 										if CyInterface().getOrderNodeData1(i) == eLoopUnit:
-											bUnitTypeInQueue = true
+											bUnitTypeInQueue = True
 											break
 								if not bUnitTypeInQueue:
-									screen.enableMultiListPulse("MapBuildingSelectionMultiList", true, iRow, iCount)
+									screen.enableMultiListPulse("MapBuildingSelectionMultiList", True, iRow, iCount)
 								
 							iCount += 1
 							bFound = True
@@ -1665,7 +1665,7 @@ class CvMainInterface:
 							if (not pHeadSelectedCity.canConstruct(eLoopBuilding, False, False, False)):
 								screen.disableMultiListButton("MapBuildingSelectionMultiList", iRow, iCount, gc.getBuildingInfo(eLoopBuilding).getButton())
 							elif pHeadSelectedCity.getBuildingProduction(eLoopBuilding) > 0:
-								screen.enableMultiListPulse("MapBuildingSelectionMultiList", true, iRow, iCount)
+								screen.enableMultiListPulse("MapBuildingSelectionMultiList", True, iRow, iCount)
 							
 							iCount += 1
 							bFound = True
@@ -1761,7 +1761,7 @@ class CvMainInterface:
 							
 						if (YieldRequired > 0):
 							if (YieldRequired >  pHeadSelectedCity.getYieldStored(iYield) + pHeadSelectedCity.getYieldRushed(iYield)):
-								RedText = true
+								RedText = True
 								break
 				if (RedText):
 					screen.setStackedBarColors("MapCityProductionBar", InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_RED") )
@@ -1856,10 +1856,10 @@ class CvMainInterface:
 							for i in range(CyInterface().getNumOrdersQueued()):
 								if (CyInterface().getOrderNodeType(i)  == OrderTypes.ORDER_TRAIN):
 									if CyInterface().getOrderNodeData1(i) == eLoopUnit:
-										bUnitTypeInQueue = true
+										bUnitTypeInQueue = True
 										break
 							if not bUnitTypeInQueue:
-								screen.enableMultiListPulse("CityBuildingSelectionMultiList", true, iRow, iCount)
+								screen.enableMultiListPulse("CityBuildingSelectionMultiList", True, iRow, iCount)
 												
 						iCount += 1
 						bFound = True
@@ -1875,7 +1875,7 @@ class CvMainInterface:
 						if (not pHeadSelectedCity.canConstruct(eLoopBuilding, False, False, False)):
 							screen.disableMultiListButton("CityBuildingSelectionMultiList", iRow, iCount, gc.getBuildingInfo(eLoopBuilding).getButton())
 						elif pHeadSelectedCity.getBuildingProduction(eLoopBuilding) > 0:
-							screen.enableMultiListPulse("CityBuildingSelectionMultiList", true, iRow, iCount)
+							screen.enableMultiListPulse("CityBuildingSelectionMultiList", True, iRow, iCount)
 							
 						iCount += 1
 						bFound = True
@@ -1922,7 +1922,7 @@ class CvMainInterface:
 				screen.show("EmphasizeTable")
 				
 				# R&R, Robert Surcouf, Custom House Popup-Screen START
-				screen.setButtonGFC("ImportButton", self.setFontSize(localText.getText("TXT_KEY_DEMO_SCREEN_IMPORTS_TEXT", ()), 1), "", CITIZEN_BAR_WIDTH + (MAP_EDGE_MARGIN_WIDTH * 2), CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH, BUILD_AREA_WIDTH - MEDIUM_BUTTON_SIZE+20, 3 * STACK_BAR_HEIGHT / 2, WidgetTypes.WIDGET_YIELD_IMPORT_EXPORT, true, -1, ButtonStyles.BUTTON_STYLE_STANDARD)
+				screen.setButtonGFC("ImportButton", self.setFontSize(localText.getText("TXT_KEY_DEMO_SCREEN_IMPORTS_TEXT", ()), 1), "", CITIZEN_BAR_WIDTH + (MAP_EDGE_MARGIN_WIDTH * 2), CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH, BUILD_AREA_WIDTH - MEDIUM_BUTTON_SIZE+20, 3 * STACK_BAR_HEIGHT / 2, WidgetTypes.WIDGET_YIELD_IMPORT_EXPORT, True, -1, ButtonStyles.BUTTON_STYLE_STANDARD)
 				
 				#screen.setButtonGFC("ImportButton", self.setFontSize(localText.getText("TXT_KEY_DEMO_SCREEN_IMPORTS_TEXT", ()), 1), "", CITIZEN_BAR_WIDTH + (MAP_EDGE_MARGIN_WIDTH * 2), CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH, BUILD_AREA_WIDTH - MEDIUM_BUTTON_SIZE, 3 * STACK_BAR_HEIGHT / 2, WidgetTypes.WIDGET_YIELD_IMPORT_EXPORT, true, -1, ButtonStyles.BUTTON_STYLE_STANDARD)
 				# R&R, Robert Surcouf, Custom House Popup-Screen END
@@ -1977,7 +1977,7 @@ class CvMainInterface:
 							szImportText += szThreshold
 							szImportText += localText.getText("TXT_KEY_COLOR_REVERT", ())
 						# transport feeder - end - Nightinggale
-						screen.setTableText("ImportTradeRouteText", 0, iImportRow, szImportText, "", WidgetTypes.WIDGET_YIELD_IMPORT_EXPORT, true, -1, CvUtil.FONT_LEFT_JUSTIFY )
+						screen.setTableText("ImportTradeRouteText", 0, iImportRow, szImportText, "", WidgetTypes.WIDGET_YIELD_IMPORT_EXPORT, True, -1, CvUtil.FONT_LEFT_JUSTIFY )
 				
 				# teacher list - start - Nightinggale
 				screen.setImageButton("TeacherListButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_TEACHER_LIST").getPath(), xResolution - (MAP_EDGE_MARGIN_WIDTH * 2) - 2 * CITY_MULTI_TAB_SIZE, CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH - (MAP_EDGE_MARGIN_WIDTH * 2) + (STACK_BAR_HEIGHT * 3 / 2) + (MAP_EDGE_MARGIN_WIDTH / 2)-(CITY_MULTI_TAB_SIZE / 2), CITY_MULTI_TAB_SIZE, CITY_MULTI_TAB_SIZE, WidgetTypes.WIDGET_TEACHER_LIST, -1, -1)
@@ -2313,13 +2313,13 @@ class CvMainInterface:
 						
 						iProfession = -1
 						iSecondYield = -1
-						bFirstYield = true
+						bFirstYield = True
 						if (gc.getBuildingInfo(CityBuilding).getMaxWorkers() >= 0):
 							for iArrayProfession in range(gc.getNumProfessionInfos()):
 								if (gc.getProfessionInfo(iArrayProfession).getSpecialBuilding() == iSpecialBuildingType):
 									if (not gc.getProfessionInfo(iArrayProfession).isWorkPlot() and gc.getProfessionInfo(iArrayProfession).isCitizen()):
 										if gc.getCivilizationInfo(pHeadSelectedCity.getCivilizationType()).isValidProfession(iArrayProfession):
-											if (bFirstYield == true):
+											if (bFirstYield == True):
 												iYield = gc.getProfessionInfo(iArrayProfession).getYieldsProduced(0) #MultipleYieldsProduced Start
 												iProfession = iArrayProfession
 												bFirstYield = false
@@ -2383,7 +2383,7 @@ class CvMainInterface:
 												UnproducedYield = ProducedYield - pHeadSelectedCity.calculateActualYieldProduced(iAmountYield)
 												if (bTwoYields == false):
 													if (ProducedYield > 0):
-														bTwoYields = true
+														bTwoYields = True
 														SzText += u"<color=0,255,0> +" + str(ProducedYield) + "</color>"
 													if (UnproducedYield > 0):
 														SzText += u"<color=255,0,0> -" + str(UnproducedYield) + "</color>"
@@ -3163,7 +3163,7 @@ class CvMainInterface:
 			if pHeadSelectedUnit.getProfession() != ProfessionTypes.NO_PROFESSION:
 				for i in range(gc.getNumPromotionInfos()):
 					if (pHeadSelectedUnit.isHasPromotion(i) and not gc.getPromotionInfo(i).isGraphicalOnly()):
-						bUnitHasPromotions = true
+						bUnitHasPromotions = True
 						break
 							
 		if bUnitHasPromotions:

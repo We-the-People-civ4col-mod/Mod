@@ -27,7 +27,7 @@ def isExpiredFoundColony(argsList):
 	pTriggeredData = argsList[1]
 	player = gc.getPlayer(pTriggeredData.ePlayer)
 	if player.getNumCities() > 0:
-		return true
+		return True
 	return false
 
 def doEventCivilopediaSettlement(argsList):
@@ -40,14 +40,14 @@ def canDoTriggerImmigrant(argsList):
 	player = gc.getPlayer(pTriggeredData.ePlayer)
 	if player.getNumEuropeUnits() == 0:
 		return false
-	return true
+	return True
 
 def canDoTriggerImmigrantDone(argsList):
 	pTriggeredData = argsList[0]
 	player = gc.getPlayer(pTriggeredData.ePlayer)
 	if player.getNumEuropeUnits() > 0:
 		return false
-	return true
+	return True
 
 def doEventCivilopediaEurope(argsList):
 	eEvent = argsList[0]
@@ -66,7 +66,7 @@ def canDoTriggerMotherland(argsList):
 	(unit, iter) = player.firstUnit()
 	while (unit):
 		if unit.getDomainType() == DomainTypes.DOMAIN_SEA and unit.getUnitTravelState() == UnitTravelStates.UNIT_TRAVEL_STATE_TO_EUROPE and unit.getUnitTravelTimer() == 1:
-			return true
+			return True
 		(unit, iter) = player.nextUnit(iter)
 	return false
 
@@ -91,7 +91,7 @@ def canDoTriggerPioneer(argsList):
 			return false
 		(unit, iter) = player.nextUnit(iter)
 
-	return true
+	return True
 
 def canDoTriggerImproveLand(argsList):
 	pTriggeredData = argsList[0]
@@ -106,7 +106,7 @@ def canDoTriggerImproveLand(argsList):
 	(unit, iter) = player.firstUnit()
 	while (unit):
 		if unit.getProfession() == ePioneer:
-			return true
+			return True
 		(unit, iter) = player.nextUnit(iter)
 
 	return false
@@ -123,7 +123,7 @@ def canDoTriggerFoundingFather(argsList):
 
 	for iFather in range(gc.getNumFatherInfos()):
 		if (team.canConvinceFather(iFather)):
-			return true
+			return True
 	return false
 
 def doEventCivilopediaFoundingFather(argsList):
@@ -141,7 +141,7 @@ def canDoTriggerRevolution( argsList ):
 	player = gc.getPlayer( pTriggeredData.ePlayer )
 
 	if gc.getTeam(player.getTeam()).canDoRevolution():
-		return true
+		return True
 
 	return false
 
@@ -158,7 +158,7 @@ def canDoCityTriggerTools(argsList):
 	city = player.getCity(iCityId)
 
 	if (not city.isNone() and city.getYieldRate(gc.getInfoTypeForString("YIELD_TOOLS")) > 0):
-		return true
+		return True
 
 	return false
 
@@ -177,7 +177,7 @@ def canDoCityTriggerBuildingRequiresTools(argsList):
 
 	if building != BuildingTypes.NO_BUILDING:
 		if (gc.getBuildingInfo(building).getYieldCost(gc.getInfoTypeForString("YIELD_TOOLS")) > 0):
-			return true
+			return True
 
 	return false
 
@@ -194,12 +194,12 @@ def canDoSpeakToChief(argsList):
 	for iPlayer in range(gc.getMAX_PLAYERS()):
 		loopPlayer = gc.getPlayer(iPlayer)
 		if loopPlayer.isAlive() and loopPlayer.isNative():
-			bFoundNative = true
-			(city, iter) = loopPlayer.firstCity(true)
+			bFoundNative = True
+			(city, iter) = loopPlayer.firstCity(True)
 			while(city):
 				if city.isScoutVisited(player.getTeam()):
 					return false
-				(city, iter) = loopPlayer.nextCity(iter, true)
+				(city, iter) = loopPlayer.nextCity(iter, True)
 	
 	return bFoundNative
 	
@@ -210,11 +210,11 @@ def canDoSpeakToChiefCompleted(argsList):
 	for iPlayer in range(gc.getMAX_PLAYERS()):
 		loopPlayer = gc.getPlayer(iPlayer)
 		if loopPlayer.isAlive() and loopPlayer.isNative():
-			(city, iter) = loopPlayer.firstCity(true)
+			(city, iter) = loopPlayer.firstCity(True)
 			while(city):
 				if city.isScoutVisited(player.getTeam()):
-					return true
-				(city, iter) = loopPlayer.nextCity(iter, true)
+					return True
+				(city, iter) = loopPlayer.nextCity(iter, True)
 	
 	return false
 	
@@ -232,7 +232,7 @@ def canCityTriggerDoOverstock(argsList):
 
 	for i in range(YieldTypes.NUM_YIELD_TYPES):
 		if (not city.isNone() and city.getYieldStored(i) > city.getMaxYieldCapacity() and i != gc.getInfoTypeForString("YIELD_FOOD")):
-			return true
+			return True
 
 	return false
 	
@@ -241,7 +241,7 @@ def canDoTaxes(argsList):
 	player = gc.getPlayer(pTriggeredData.ePlayer)
 
 	if player.getTaxRate() > 0:
-		return true
+		return True
 		
 	return false
 
@@ -263,7 +263,7 @@ def canTriggerSecondCity(argsList):
 		return false
 	
 	if player.getNumCities() >= 2:
-		return true
+		return True
 
 	return false
 	
@@ -274,7 +274,7 @@ def applySecondCity1(argsList):
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	city = player.getCity(kTriggeredData.iCityId)
 	if not player.isHuman():
-		city = player.firstCity(true)[0]
+		city = player.firstCity(True)[0]
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	iYield1 = gc.getInfoTypeForString("YIELD_SAILCLOTH")
 	city.changeYieldStored(iYield1, event.getGenericParameter(1)*Speed.getTrainPercent()/100)
@@ -323,7 +323,7 @@ def applySecondCity2(argsList):
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	city = player.getCity(kTriggeredData.iCityId)
 	if not player.isHuman():
-		city = player.firstCity(true)[0]
+		city = player.firstCity(True)[0]
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	iYield1 = gc.getInfoTypeForString("YIELD_BLADES")
 	city.changeYieldStored(iYield1, event.getGenericParameter(1)*Speed.getTrainPercent()/100)
@@ -363,7 +363,7 @@ def canTriggerThirdCity(argsList):
 		return false
 	
 	if player.getNumCities() >= 3:
-		return true
+		return True
 
 	return false
 
@@ -406,7 +406,7 @@ def canTriggerFestivity(argsList):
 	# If player has reached the maximum for max tax rate, do not start event
 	if player.NBMOD_GetMaxTaxRate() == gc.getDefineINT("MAX_TAX_RATE"):
 		return false
-	return true
+	return True
 
 def applyFestivity1(argsList):
 	eEvent = argsList[0]
@@ -452,7 +452,7 @@ def CanDoFestivity2(argsList):
 		return false
 	if city.getYieldStored(iYield) < -quantity :
 		return false
-	return true
+	return True
 
 def applyFestivity2(argsList):
 	eEvent = argsList[0]
@@ -513,7 +513,7 @@ def CanDoFestivity3(argsList):
 	quantity = quantity * Speed.getStoragePercent()/100
 	if city.getYieldStored(iYield) < -quantity :
 		return false
-	return true
+	return True
 
 def applyFestivity3(argsList):
 	eEvent = argsList[0]
@@ -575,7 +575,7 @@ def CanDoFestivity4(argsList):
 	quantity = quantity * Speed.getStoragePercent()/100
 	if (city.getYieldStored(iYield1) < -quantity) or (city.getYieldStored(iYield2) < -quantity) :
 		return false
-	return true
+	return True
 
 def applyFestivity4(argsList):
 	eEvent = argsList[0]
@@ -699,7 +699,7 @@ def CanDoWhaling1(argsList):
 		return false
 	if city.getYieldStored(iYield) < -quantity :
 		return false
-	return true
+	return True
 
 def applyWhaling1(argsList):
 	eEvent = argsList[0]
@@ -767,7 +767,7 @@ def canTriggerWinter(argsList):
 	#	if (January in szDate or February in szDate or December in szDate or November in szDate or October in szDate):
 	#		return true
 	#return false
-	return true
+	return True
 
 def applyWinter(argsList):
 	eEvent = argsList[0]
@@ -820,7 +820,7 @@ def canEndWinter(argsList):
 		#if not (January in szDate or February in szDate or December in szDate or November in szDate or October in szDate):
 	#		return true
 	#return false
-	return true
+	return True
 
 def applyEndWinter(argsList):
 	eEvent = argsList[0]
@@ -874,7 +874,7 @@ def canTriggerPeasantWarPrep(argsList):
 	#if iChance > 100 :
 	#	return true
 	#return false
-	return true
+	return True
 
 def applyPeasantWarPrep(argsList):
 	kTriggeredData = argsList[1]
@@ -913,7 +913,7 @@ def canTriggerLostTribe(argsList):
 		return false
 	# Read parameter 3 from the event as random chance
 	if TriggerChance(argsList):
-		return true
+		return True
 	return false
  
 def canDoLostTribe4(argsList):
@@ -926,7 +926,7 @@ def canDoLostTribe4(argsList):
 		if unit.getUnitClassType() == CvUtil.findInfoTypeNum('UNITCLASS_SCOUT'):
 			return false
 		(unit, iter) = player.nextUnit(iter)
-	return true
+	return True
 
 def getHelpLostTribe4(argsList):
 	kTriggeredData = argsList[1]
@@ -968,7 +968,7 @@ def canTriggerPacificDone(argsList):
 	iAchieve = gc.getInfoTypeForString("ACHIEVE_PACIFIC")
 	#CyInterface().addImmediateMessage("iAchieve "+str(iAchieve), "")
 	if player.isAchieveGained(iAchieve):
-		return true
+		return True
 	return false
 
 def getHelpPacific(argsList):
@@ -1026,7 +1026,7 @@ def applyVolcano1(argsList):
 			plot = listPlots[gc.getGame().getSorenRandNum(len(listPlots), "Volcano event improvement destroyed")]
 			iImprovement = plot.getImprovementType()
 			szBuffer = localText.getText("TXT_KEY_EVENT_CITY_IMPROVEMENT_DESTROYED", (gc.getImprovementInfo(iImprovement).getTextKey(), ))
-			CyInterface().addMessage(kTriggeredData.ePlayer, false, gc.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_BOMBARDED", InterfaceMessageTypes.MESSAGE_TYPE_INFO, gc.getImprovementInfo(iImprovement).getButton(), gc.getInfoTypeForString("COLOR_RED"), plot.getX(), plot.getY(), true, true)
+			CyInterface().addMessage(kTriggeredData.ePlayer, false, gc.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_BOMBARDED", InterfaceMessageTypes.MESSAGE_TYPE_INFO, gc.getImprovementInfo(iImprovement).getButton(), gc.getInfoTypeForString("COLOR_RED"), plot.getX(), plot.getY(), True, True)
 			if iImprovement in listRuins:
 				plot.setImprovementType(iRuins)
 			else:
@@ -1041,7 +1041,7 @@ def applyVolcano1(argsList):
 
 def canTriggerVolcanoDormant1(argsList):
 	if gc.getGame().getSorenRandNum(100, "Volcano event dormant") < 25:
-		return true
+		return True
 	return false
 
 def applyVolcanoDormant1(argsList):
@@ -1078,7 +1078,7 @@ def canTriggerBabyBoom(argsList):
 	#			CyInterface().addImmediateMessage("True!", "")
 	#			return true
 	#CyInterface().addImmediateMessage("anderes", "")
-	return true
+	return True
 
 def ApplyBabyBoom(argsList):
 	eEvent = argsList[0]
@@ -1120,7 +1120,7 @@ def canApplyCalm(argsList):
 		return false
 	if (unit.getUnitTravelState() == UnitTravelStates.UNIT_TRAVEL_STATE_IN_EUROPE):
 		return false
-	return true
+	return True
 
 def applyCalm(argsList):
 	eEvent = argsList[0]
@@ -1182,7 +1182,7 @@ def canApplyTailwind(argsList):
 	if (unit.getUnitTravelState() == UnitTravelStates.UNIT_TRAVEL_STATE_FROM_EUROPE) or (unit.getUnitTravelState() == UnitTravelStates.UNIT_TRAVEL_STATE_TO_EUROPE):
 		if unit.getUnitTravelTimer() <= 1 :
 			return false
-	return true
+	return True
 
 def getHelpTailwind(argsList):
 	eEvent = argsList[0]
@@ -1224,7 +1224,7 @@ def canTriggerRunAway(argsList):
 
 	if city.getYieldStored(iYield) < -quantity*2 :
 		return false
-	return true
+	return True
 
 def applyRunAway1(argsList):
 	eEvent = argsList[0]
@@ -1274,11 +1274,11 @@ def canTriggerTerraX(argsList):
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	if not player.isPlayable():
 		return false
-	(city, iter) = player.firstCity(true)
+	(city, iter) = player.firstCity(True)
 	while(city):
 		if not city.isCoastal(gc.getMIN_WATER_SIZE_FOR_OCEAN()):
-			return true
-		(city, iter) = player.nextCity(iter, true)
+			return True
+		(city, iter) = player.nextCity(iter, True)
 	return false
 
 def getHelpTerraX(argsList):
@@ -1292,14 +1292,14 @@ def canTriggerTerraXDone(argsList):
 	if not player.isPlayable():
 		return false
 	inlandcity = 0
-	(city, iter) = player.firstCity(true)
+	(city, iter) = player.firstCity(True)
 	while(city):
 		if not city.isCoastal(gc.getMIN_WATER_SIZE_FOR_OCEAN()):
 			inlandcity += 1
-		(city, iter) = player.nextCity(iter, true)
+		(city, iter) = player.nextCity(iter, True)
 	worldsize = gc.getWorldInfo(CyMap().getWorldSize())
 	if inlandcity >= 3+(3*worldsize.getBuildingClassPrereqModifier()/100):
-		return true
+		return True
 	return false
 
 def isExpiredTerraX(argsList):
@@ -1312,13 +1312,13 @@ def isExpiredTerraX(argsList):
 			otherplayer = gc.getPlayer(j)
 			if (otherplayer.isAlive() and otherplayer.isPlayable()):
 				inlandcity = 0
-				(city, iter) = otherplayer.firstCity(true)
+				(city, iter) = otherplayer.firstCity(True)
 				while(city):
 					if not city.isCoastal(gc.getMIN_WATER_SIZE_FOR_OCEAN()):
 						inlandcity += 1
-					(city, iter) = otherplayer.nextCity(iter, true)
+					(city, iter) = otherplayer.nextCity(iter, True)
 				if inlandcity >= 3+(3*worldsize.getBuildingClassPrereqModifier()/100):
-					return true
+					return True
 	return false
 
 ######## Forrest Fire ###########
@@ -1337,7 +1337,7 @@ def canTriggerCargoSpace(argsList):
 	city = player.getCity(kTriggeredData.iCityId)
 	unit = player.getUnit(kTriggeredData.iUnitId)
 	if city.getX() == unit.getX() and city.getY() == unit.getY():
-		return true
+		return True
 	return false
 
 def applyCargoSpace(argsList):
@@ -1394,7 +1394,7 @@ def canTriggerAntiPirate(argsList):
 			(loopUnit, iter) = player.nextUnit(iter)
 		if iWarships > 0:
 			return false
-		return true
+		return True
 	return false
 
 ######## RUM BLOSSOM ###########
@@ -1419,7 +1419,7 @@ def canTriggerRumBlossom(argsList):
 	quantity = quantity * Speed.getStoragePercent()/100
 	if city.getYieldStored(iYield) < -quantity :
 		return false
-	return true
+	return True
 
 def applyRumBlossom1(argsList):
 	eEvent = argsList[0]
@@ -1474,7 +1474,7 @@ def canApplyRumBlossom3(argsList):
 	quantity = quantity * Speed.getStoragePercent()/100
 	if city.getYieldStored(iYield) < -quantity :
 		return false
-	return true
+	return True
 
 ######## Ruins Quest ###########
 
@@ -1486,11 +1486,11 @@ def isExpiredRuins(argsList):
 	plot = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
 	improvementtype = gc.getInfoTypeForString("IMPROVEMENT_CITY_RUINS")
 	if (plot.getOwner() != kTriggeredData.ePlayer):
-		return true
+		return True
 	if plot.getImprovementType() != improvementtype:
-		return true
+		return True
 	if gc.getGame().getGameTurn() >= kTriggeredData.iTurn + event.getGenericParameter(1):
-		return true
+		return True
 	return false
 
 def getHelpRuins(argsList):
@@ -1526,9 +1526,9 @@ def isExpiredNativeWagonTrade(argsList):
 	kTriggeredData = argsList[1]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	if gc.getGame().getGameTurn() >= kTriggeredData.iTurn + event.getGenericParameter(1):
-		return true
+		return True
 	if not player.isPlayable():
-		return true
+		return True
 	return false
 
 def getHelpNativeWagonTrade(argsList):
@@ -1588,7 +1588,7 @@ def canTriggerPirates(argsList):
 	city = player.getCity(kTriggeredData.iCityId)
 	unit = player.getUnit(kTriggeredData.iUnitId)
 	if city.getX() == unit.getX() and city.getY() == unit.getY():
-		return true
+		return True
 	return false
 
 def CanDoPirates3(argsList):
@@ -1604,7 +1604,7 @@ def CanDoPirates3(argsList):
 	quantity = quantity * Speed.getStoragePercent()/100
 	if city.getYieldStored(iYield) < -quantity :
 		return false
-	return true
+	return True
 
 def CanDoPirates4(argsList):
 	eEvent = argsList[0]
@@ -1618,7 +1618,7 @@ def CanDoPirates4(argsList):
 	quantity = quantity * Speed.getStoragePercent()/100
 	if city.getYieldStored(iYield) < -quantity :
 		return false
-	return true
+	return True
 	
 def applyPirates3(argsList):
 	eEvent = argsList[0]
@@ -1695,7 +1695,7 @@ def canTriggerSupersitiousPirates(argsList):
 	city = player.getCity(kTriggeredData.iCityId)
 	unit = player.getUnit(kTriggeredData.iUnitId)
 	if city.getX() == unit.getX() and city.getY() == unit.getY():
-		return true
+		return True
 	return false
 	# Read Parameter 1 from the first event and check if enough yield is stored in city
 	eEvent1 = gc.getInfoTypeForString("EVENT_SUPERSTITIOUS_PIRATES_2")
@@ -1706,7 +1706,7 @@ def canTriggerSupersitiousPirates(argsList):
 	quantity = quantity * Speed.getStoragePercent()/100
 	if city.getYieldStored(iYield) < -quantity*2 :
 		return false
-	return true
+	return True
 
 def applySupersitiousPirates2(argsList):
 	eEvent = argsList[0]
@@ -1773,13 +1773,13 @@ def countUnits(argsList, iUnitType):
 		if iUnitType == loopUnit.getUnitType():
 			iUnitsCurrent += 1
 
-	(city, iter) = player.firstCity(true)
+	(city, iter) = player.firstCity(True)
 	while(city):
 		for iCitizen in range(city.getPopulation()):
 			Unit = city.getPopulationUnitByIndex(iCitizen)
 			if iUnitType == Unit.getUnitType():
 				iUnitsCurrent += 1
-		(city, iter) = player.nextCity(iter, true)
+		(city, iter) = player.nextCity(iter, True)
 	return iUnitsCurrent
 
 def CheckCarpenter(argsList):
@@ -1792,7 +1792,7 @@ def CheckCarpenter(argsList):
 	iUnitType = CvUtil.findInfoTypeNum('UNIT_CARPENTER')
 	iUnitsCurrent = countUnits(argsList, iUnitType)
 	if iUnitsCurrent > 0:
-		return true
+		return True
 	return false
 
 
@@ -1803,13 +1803,13 @@ def countUnitsColonies(argsList, iUnitType):
 	kTriggeredData = argsList[0]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	iUnitsCurrent = 0	
-	(city, iter) = player.firstCity(true)
+	(city, iter) = player.firstCity(True)
 	while(city):
 		for iCitizen in range(city.getPopulation()):
 			Unit = city.getPopulationUnitByIndex(iCitizen)
 			if iUnitType == Unit.getUnitType():
 				iUnitsCurrent += 1
-		(city, iter) = player.nextCity(iter, true)
+		(city, iter) = player.nextCity(iter, True)
 	return iUnitsCurrent
 
 ######## Helper Method to count Units in specific City ###########
@@ -1842,7 +1842,7 @@ def CheckCheesemakerInCity(argsList):
 	if iUnitsCurrent == 0:
 		return false
 
-	return true
+	return True
 
 
 ######## Bonus Funktionen ###########
@@ -1860,7 +1860,7 @@ def CanApplyBonus(argsList):
 		return false
 	#if not plot.isBeingWorked():
 	#	return false
-	return true
+	return True
 
 def CanApplyBonusOcean(argsList):
 	eEvent = argsList[0]
@@ -1873,7 +1873,7 @@ def CanApplyBonusOcean(argsList):
 		return false
 	if not plot.canHaveBonus(bonustype, false):
 		return false
-	return true
+	return True
 
 def SetBonus(argsList):
 	eEvent = argsList[0]
@@ -1904,7 +1904,7 @@ def CheckLandmark(argsList):
 		Sign = CyEngine().getSignByIndex(i)
 		if (Sign.getPlot().getX() == kTriggeredData.iPlotX and Sign.getPlot().getY() == kTriggeredData.iPlotY):
 			return false
-	return true
+	return True
 
 def SetLandmark(argsList):
 	eEvent = argsList[0]
@@ -1954,7 +1954,7 @@ def hasAllBuildings(argsList):
 	iNumTriggerBuildings = trigger.getNumBuildingsRequired()
 	if city.isNone() or iNumTriggerBuildings<=0:
 		return false
-	bHasAllBuildings = true
+	bHasAllBuildings = True
 	i = 0
 	for i in range(iNumTriggerBuildings): 
 		iBuilding = trigger.getBuildingRequired(i)
@@ -1974,7 +1974,7 @@ def hasSilverBonus(argsList):
 	if (plot.getOwner() != pTriggeredData.ePlayer):
 		return false
 	if (plot.getBonusType() == bonustype):
-		return true
+		return True
 	return false
 
 def hasGoldBonus(argsList):
@@ -1987,7 +1987,7 @@ def hasGoldBonus(argsList):
 	if (plot.getOwner() != pTriggeredData.ePlayer):
 		return false
 	if (plot.getBonusType() == bonustype):
-		return true
+		return True
 	return false
 
 def hasFurBonus(argsList):
@@ -2000,7 +2000,7 @@ def hasFurBonus(argsList):
 	if (plot.getOwner() != pTriggeredData.ePlayer):
 		return false
 	if (plot.getBonusType() == bonustype):
-		return true
+		return True
 	return false
 
 def hasCottonBonus(argsList):
@@ -2013,7 +2013,7 @@ def hasCottonBonus(argsList):
 	if (plot.getOwner() != pTriggeredData.ePlayer):
 		return false
 	if (plot.getBonusType() == bonustype):
-		return true
+		return True
 	return false
 
 def hasSugarBonus(argsList):
@@ -2026,7 +2026,7 @@ def hasSugarBonus(argsList):
 	if (plot.getOwner() != pTriggeredData.ePlayer):
 		return false
 	if (plot.getBonusType() == bonustype):
-		return true
+		return True
 	return false
 
 def hasTobaccoBonus(argsList):
@@ -2039,7 +2039,7 @@ def hasTobaccoBonus(argsList):
 	if (plot.getOwner() != pTriggeredData.ePlayer):
 		return false
 	if (plot.getBonusType() == bonustype):
-		return true
+		return True
 	return false
 
 def hasIronBonus(argsList):
@@ -2052,7 +2052,7 @@ def hasIronBonus(argsList):
 	if (plot.getOwner() != pTriggeredData.ePlayer):
 		return false
 	if (plot.getBonusType() == bonustype):
-		return true
+		return True
 	return false
 
 def hasCocoaBonus(argsList):
@@ -2065,7 +2065,7 @@ def hasCocoaBonus(argsList):
 	if (plot.getOwner() != pTriggeredData.ePlayer):
 		return false
 	if (plot.getBonusType() == bonustype):
-		return true
+		return True
 	return false
 
 def hasMineralsBonus(argsList):
@@ -2078,7 +2078,7 @@ def hasMineralsBonus(argsList):
 	if (plot.getOwner() != pTriggeredData.ePlayer):
 		return false
 	if (plot.getBonusType() == bonustype):
-		return true
+		return True
 	return false
 
 def hasTimberBonus(argsList):
@@ -2091,7 +2091,7 @@ def hasTimberBonus(argsList):
 	if (plot.getOwner() != pTriggeredData.ePlayer):
 		return false
 	if (plot.getBonusType() == bonustype):
-		return true
+		return True
 	return false
 
 def hasFoodBonus(argsList):
@@ -2106,7 +2106,7 @@ def hasFoodBonus(argsList):
 	if (plot.getOwner() != pTriggeredData.ePlayer):
 		return false
 	if plot.getBonusType() in (bonustype1, bonustype2, bonustype3):
-		return true
+		return True
 	return false
 
 def hasSeaFoodBonus(argsList):
@@ -2121,7 +2121,7 @@ def hasSeaFoodBonus(argsList):
 	if (plot.getOwner() != pTriggeredData.ePlayer):
 		return false
 	if plot.getBonusType() in (bonustype1, bonustype2, bonustype3):
-		return true
+		return True
 	return false
 
 def hasBisonBonus(argsList):
@@ -2134,7 +2134,7 @@ def hasBisonBonus(argsList):
 	if (plot.getOwner() != pTriggeredData.ePlayer):
 		return false
 	if (plot.getBonusType() == bonustype):
-		return true
+		return True
 	return false
 
 def hasPumpkinBonus(argsList):
@@ -2147,7 +2147,7 @@ def hasPumpkinBonus(argsList):
 	if (plot.getOwner() != pTriggeredData.ePlayer):
 		return false
 	if (plot.getBonusType() == bonustype):
-		return true
+		return True
 	return false
 
 def hasTurkeyBonus(argsList):
@@ -2160,7 +2160,7 @@ def hasTurkeyBonus(argsList):
 	if (plot.getOwner() != pTriggeredData.ePlayer):
 		return false
 	if (plot.getBonusType() == bonustype):
-		return true
+		return True
 	return false
 
 def hasGiantTreesBonus(argsList):
@@ -2173,7 +2173,7 @@ def hasGiantTreesBonus(argsList):
 	if (plot.getOwner() != pTriggeredData.ePlayer):
 		return false
 	if (plot.getBonusType() == bonustype):
-		return true
+		return True
 	return false
 
 def hasNoBonus(argsList):
@@ -2185,7 +2185,7 @@ def hasNoBonus(argsList):
 	#if (plot.getOwner() != pTriggeredData.ePlayer):
 	#	return false
 	if (plot.getBonusType() == -1):
-		return true
+		return True
 	return false
 	
 def hasNoBonusAndIsPlayable(argsList):
@@ -2197,14 +2197,14 @@ def hasNoBonusAndIsPlayable(argsList):
 	if (plot.getOwner() != pTriggeredData.ePlayer):
 		return false
 	if (plot.getBonusType() == -1):
-		return true
+		return True
 	return false
 
 def isPlayable(argsList):
 	pTriggeredData = argsList[0]
 	player = gc.getPlayer(pTriggeredData.ePlayer)
 	if player.isPlayable():
-		return true
+		return True
 	else:
 		return false
 
@@ -2212,7 +2212,7 @@ def isHuman(argsList):
 	pTriggeredData = argsList[0]
 	player = gc.getPlayer(pTriggeredData.ePlayer)
 	if player.isHuman():
-		return true
+		return True
 	else:
 		return false
 
@@ -2226,7 +2226,7 @@ def TriggerChance(argsList):
 	eEvent = eventtrigger.getEvent(0)
 	event = gc.getEventInfo(eEvent)
 	if gc.getGame().getSorenRandNum(1000, "(c) TAC 2010 Events") < event.getGenericParameter(3):
-		return true
+		return True
 	return false
 	
 ######## ORLANTH EVENTS ########
@@ -2246,7 +2246,7 @@ def canTriggerKingFurious(argsList):
 		return false
 	if player.isInRevolution():
 		return false
-	return true
+	return True
 	
 def canTriggerKingHappy(argsList):
 	return false
@@ -2263,7 +2263,7 @@ def canTriggerKingHappy(argsList):
 		return false
 	if player.isInRevolution():
 		return false
-	return true
+	return True
 
 def canDoNotInRevolution(argsList):
 	ePlayer = argsList[1]
@@ -2277,7 +2277,7 @@ def canDoNotInRevolution(argsList):
 		return false
 	if player.isInRevolution():
 		return false
-	return true
+	return True
 
 def canDoInRevolution(argsList):
 	ePlayer = argsList[1]
@@ -2285,7 +2285,7 @@ def canDoInRevolution(argsList):
 	if player.isNative():
 		return false
 	if player.isInRevolution():
-		return true
+		return True
 	return false
 
 def canTriggerDeliverLumber(argsList):
@@ -2311,7 +2311,7 @@ def canTriggerDeliverLumber(argsList):
 	
 	if city.getYieldStored(iYield) < -quantity:
 		return false
-	return true
+	return True
 	
 def canTriggerDeliverCoats(argsList):
 	pTriggeredData = argsList[0]
@@ -2336,7 +2336,7 @@ def canTriggerDeliverCoats(argsList):
 	
 	if city.getYieldStored(iYield) < -quantity:
 		return false
-	return true
+	return True
 
 def CanDoRequisitionDeliver(argsList):
 	eEvent = argsList[0]
@@ -2359,7 +2359,7 @@ def CanDoRequisitionDeliver(argsList):
 
 	if city.getYieldStored(iYield) < -quantity:
 		return false
-	return true
+	return True
 
 def applyRequisitionDeliver(argsList):
 	eEvent = argsList[0]
@@ -2498,7 +2498,7 @@ def canTriggerHorsethief(argsList):
 	quantity = quantity * Speed.getStoragePercent()/100
 	if city.getYieldStored(iYield) < -quantity:
 		return false
-	return true
+	return True
 	
 def canTriggerCattlethief(argsList):
 	eEvent = gc.getInfoTypeForString("EVENT_CATTLETHIEF_1")
@@ -2517,7 +2517,7 @@ def canTriggerCattlethief(argsList):
 	quantity = quantity * Speed.getStoragePercent()/100
 	if city.getYieldStored(iYield) < -quantity:
 		return false
-	return true
+	return True
 
 def applyHorsethief_2(argsList):
 	eEvent = argsList[0]
@@ -2532,7 +2532,7 @@ def applyHorsethief_2(argsList):
 	if city.getYieldStored(iYield) < -quantity:
 		return
 	city.changeYieldStored(iYield, quantity)
-	return true
+	return True
 	
 def applyCattlethief_1(argsList):
 	eEvent = argsList[0]
@@ -2547,7 +2547,7 @@ def applyCattlethief_1(argsList):
 	if city.getYieldStored(iYield) < -quantity:
 		return
 	city.changeYieldStored(iYield, quantity)
-	return true
+	return True
 	
 def getHelpHorsethief_2(argsList):
 	eEvent = argsList[0]
@@ -2587,7 +2587,7 @@ def canTriggerArchbishopric(argsList):
 	if player.isAchieveGained(iAchieve):
 		iAchieve = gc.getInfoTypeForString("ACHIEVE_TEN_CROSSES")
 		if player.isAchieveGained(iAchieve):
-			return true
+			return True
 	return false
 	
 def canTriggerNativeTrade(argsList):
@@ -2597,7 +2597,7 @@ def canTriggerNativeTrade(argsList):
 		return false
 	iAchieve = gc.getInfoTypeForString("ACHIEVE_FIVE_NATIVE_CONTACT")
 	if player.isAchieveGained(iAchieve):
-		return true
+		return True
 	return false
 
 def canTriggerEuroTrade(argsList):
@@ -2607,7 +2607,7 @@ def canTriggerEuroTrade(argsList):
 		return false
 	iAchieve = gc.getInfoTypeForString("ACHIEVE_FOUR_EURO_CONTACT")
 	if player.isAchieveGained(iAchieve):
-		return true
+		return True
 	return false
 
 def canTriggerPirateAttack1(argsList):
@@ -2619,7 +2619,7 @@ def canTriggerPirateAttack1(argsList):
 	if not player.isPlayable():
 		return false
 	if player.isAchieveGained(iAchieve):
-		return true
+		return True
 	return false
 
 def canTriggerPirateAttack2(argsList):
@@ -2631,7 +2631,7 @@ def canTriggerPirateAttack2(argsList):
 	if not player.isPlayable():
 		return false
 	if player.isAchieveGained(iAchieve):
-		return true
+		return True
 	return false
 
 def canTriggerTavernVsChapel(argsList):
@@ -2652,7 +2652,7 @@ def canTriggerTavernVsChapel(argsList):
 		if gc.getBuildingInfo(iBuilding).getSpecialBuildingType() == iSpecialBuildingChapel:
 			if city.isHasBuilding(iBuilding):
 				return false
-	return true
+	return True
 
 #def doPirateAttack1(argsList):
 #	iEvent = argsList[0]
@@ -2711,7 +2711,7 @@ def canTriggerBeerRobbery(argsList):
 	
 	if city.getYieldStored(iYield) < -quantity :
 		return false
-	return true
+	return True
 
 def applyBeerRobbery1(argsList):
 	eEvent = argsList[0]
@@ -2767,7 +2767,7 @@ def canApplyBeerRobbery3(argsList):
 	iYield = gc.getInfoTypeForString("YIELD_BEER")
 	if city.getYieldStored(iYield) < -quantity :
 		return false
-	return true
+	return True
 
 ######## WINE THEFT ###########
 
@@ -2790,7 +2790,7 @@ def canTriggerWineTheft(argsList):
 	quantity = quantity * Speed.getStoragePercent()/100
 	if city.getYieldStored(iYield) < -quantity :
 		return false
-	return true
+	return True
 
 def applyWineTheft1(argsList):
 	eEvent = argsList[0]
@@ -2844,7 +2844,7 @@ def canTriggerLuxuryGoods(argsList):
 	quantity = quantity * Speed.getStoragePercent()/100
 	if city.getYieldStored(iYield) < -quantity :
 		return false
-	return true
+	return True
 
 def applyLuxuryGoods1(argsList):
 	eEvent = argsList[0]
@@ -2907,7 +2907,7 @@ def canTriggerCattleAndSheep(argsList):
 	quantity2 = quantity2 * Speed.getStoragePercent()/100
 	if city.getYieldStored(iYield) < -quantity2*2 :
 		return false
-	return true
+	return True
 
 def applyCattleAndSheep1(argsList):
 	eEvent = argsList[0]
@@ -3003,7 +3003,7 @@ def canTriggerHorseDeal(argsList):
 	quantity = quantity * Speed.getStoragePercent()/100
 	if city.getYieldStored(iYield) < -quantity*2 :
 		return false
-	return true
+	return True
 
 def applyHorseDeal1(argsList):
 	eEvent = argsList[0]
@@ -3050,7 +3050,7 @@ def canTriggerHorseGift(argsList):
 	city = player.getCity(kTriggeredData.iCityId)
 	unit = player.getUnit(kTriggeredData.iUnitId)
 	if city.getX() == unit.getX() and city.getY() == unit.getY():
-		return true
+		return True
 	return false
 	# Read Parameter 1 from the first event and check if enough yield is stored in city
 	eEvent1 = gc.getInfoTypeForString("EVENT_SEASONED_TRADER_MEETING_1")
@@ -3061,7 +3061,7 @@ def canTriggerHorseGift(argsList):
 	quantity = quantity * Speed.getStoragePercent()/100
 	if city.getYieldStored(iYield) < -quantity*2 :
 		return false
-	return true
+	return True
 
 def applyHorseGift1(argsList):
 	eEvent = argsList[0]
@@ -3122,7 +3122,7 @@ def canApplyWildAnimal1(argsList):
 	quantity = quantity * Speed.getStoragePercent()/100
 	if city.getYieldStored(iYield) < -quantity :
 		return false
-	return true
+	return True
 
 def applyWildAnimal1(argsList):
 	eEvent = argsList[0]
@@ -3166,7 +3166,7 @@ def isNativeVillage(argsList):
 		return false
 	if not gc.getPlayer(plot.getOwner()).isNative():
 		return false
-	return true
+	return True
 
 def isNativeVillageAndHuman(argsList):
 	pTriggeredData = argsList[0]
@@ -3178,7 +3178,7 @@ def isNativeVillageAndHuman(argsList):
 		return false
 	if not gc.getPlayer(plot.getOwner()).isNative():
 		return false
-	return true
+	return True
 
 ######## Coca Events ###########
 def canTriggerCocaEvent(argsList):
@@ -3201,7 +3201,7 @@ def canTriggerCocaEvent(argsList):
 	quantity = quantity * Speed.getStoragePercent()/100
 	if city.getYieldStored(iYield) < -quantity :
 		return false
-	return true
+	return True
 
 def applyCocaEvent1(argsList):
 	eEvent = argsList[0]
@@ -3293,7 +3293,7 @@ def CanDoEuropeTrade(argsList, iYieldID, iQuantity):
 	# now we check if enough of the Yield has been traded with Europe using function argument iYieldID
 	if player.getYieldTradedTotalINT(iYieldID) < quantity:
 		return false
-	return true
+	return True
 
 # This is the Function for the Event Target Yield and Target Amount
 # This Function is only used for the "Quest Start"
@@ -6053,7 +6053,7 @@ def CanDoAfricaTrade(argsList, iYieldID, iQuantity):
 	# now we check if enough of the Yield has been traded with Africa using function argument iYieldID
 	if player.getYieldTradedTotalINTAfrica(iYieldID) < quantity:
 		return false
-	return true
+	return True
 
 # This is the Function for the Event Target Yield and Target Amount
 # This Function is only used for the "Quest Start"
@@ -6204,7 +6204,7 @@ def CanDoPortRoyalTrade(argsList, iYieldID, iQuantity):
 	# now we check if enough of the Yield has been traded with Port Royal using function argument iYieldID
 	if player.getYieldTradedTotalINTPortRoyal(iYieldID) < quantity:
 		return false
-	return true
+	return True
 
 # This is the Function for the Event Target Yield and Target Amount
 # This Function is only used for the "Quest Start"
@@ -7823,7 +7823,7 @@ def checkOwnPlayerUnitOnAdjacentPlotOfUnit(argsList): ### When you copy rename s
 	iOwnUnitClassTypeToCheck = event.getGenericParameter(1)
 	found = unitThatTriggered.isOwnPlayerUnitOnAdjacentPlotOfUnit(iOwnUnitClassTypeToCheck)
 	if (found):
-		return true
+		return True
 	return false
 
 # check for Barbarian Units
@@ -7836,7 +7836,7 @@ def checkBarbarianUnitOnAdjacentPlotOfUnit(argsList): ### When you copy rename s
 	iBarbarianUnitClassTypeToCheck = event.getGenericParameter(1)
 	found = unitThatTriggered.isBarbarianUnitOnAdjacentPlotOfUnit(iBarbarianUnitClassTypeToCheck)
 	if (found):
-		return true
+		return True
 	return false
 
 
@@ -7919,7 +7919,7 @@ def checkOwnPlayerUnitOnAdjacentPlotOfCity(argsList): ### When you copy rename s
 	iOwnUnitClassTypeToCheck = event.getGenericParameter(1)
 	found = city.isOwnPlayerUnitOnAdjacentPlotOfCity(iOwnUnitClassTypeToCheck)
 	if (found):
-		return true
+		return True
 	return false
 
 
@@ -7935,7 +7935,7 @@ def checkBarbarianUnitOnAdjacentPlotOfCity(argsList): ### When you copy rename s
 	iBarbarianUnitClassTypeToCheck = event.getGenericParameter(1)
 	found = city.isBarbarianUnitOnAdjacentPlotOfCity(iBarbarianUnitClassTypeToCheck)
 	if (found):
-		return true
+		return True
 	return false
 
 
@@ -8020,7 +8020,7 @@ def checkOwnPlayerUnitOnAdjacentPlotOfPlot(argsList): ### When you copy rename s
 	iOwnUnitClassTypeToCheck = event.getGenericParameter(1)
 	found = plotThatTriggered.isPlayerUnitOnAdjacentPlot(ePlayer, iOwnUnitClassTypeToCheck)
 	if (found):
-		return true
+		return True
 	return false
 
 # check for Barbarian Units
@@ -8032,7 +8032,7 @@ def checkBarbarianUnitOnAdjacentPlotOfPlot(argsList): ### When you copy rename s
 	iBarbarianUnitClassTypeToCheck = event.getGenericParameter(1)
 	found = plotThatTriggered.isBarbarianUnitOnAdjacentPlot(iBarbarianUnitClassTypeToCheck)
 	if (found):
-		return true
+		return True
 	return false
 
 ### PART C2) PLOT Trigger Spawn Methods
@@ -8107,7 +8107,7 @@ def canTriggerNativeTraderAttack(argsList):
 		return false
 	# Read parameter 3 from the event as random chance
 	if TriggerChance(argsList):
-		return true
+		return True
 	return false
 
 def getHelpNativeTraderAttack(argsList):
@@ -8146,7 +8146,7 @@ def canTriggerCriminalsAttackCity(argsList):
 	if city.getYieldStored(iYield) < quantity :
 		return false
 
-	return true
+	return True
 
 def applyGiveFood(argsList):
 	eEvent = argsList[0]
@@ -8155,7 +8155,7 @@ def applyGiveFood(argsList):
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	city = player.getCity(kTriggeredData.iCityId)
 	if not player.isHuman():
-		city = player.firstCity(true)[0]
+		city = player.firstCity(True)[0]
 	iYield = gc.getInfoTypeForString("YIELD_FOOD")
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
@@ -8228,17 +8228,17 @@ def checkRunawaySlavesOnAdjacentPlotOfCity(argsList): ### When you copy rename s
 	iBarbarianUnitClassTypeToCheck = event.getGenericParameter(1)
 	found = city.isBarbarianUnitOnAdjacentPlotOfCity(iBarbarianUnitClassTypeToCheck)
 	if (found):
-		return true
+		return True
 
 	iBarbarianUnitClassTypeToCheck2 = event.getGenericParameter(2)
 	found = city.isBarbarianUnitOnAdjacentPlotOfCity(iBarbarianUnitClassTypeToCheck2)
 	if (found):
-		return true
+		return True
 
 	iBarbarianUnitClassTypeToCheck3 = event.getGenericParameter(2)
 	found = city.isBarbarianUnitOnAdjacentPlotOfCity(iBarbarianUnitClassTypeToCheck3)
 	if (found):
-		return true
+		return True
 	return false
 
 ######## Ranger Bear Attack ###########
@@ -8250,7 +8250,7 @@ def canTriggerIsPlayableWithTriggerChance(argsList):
 		return false
 	# Read parameter 3 from the event as random chance
 	if TriggerChance(argsList):
-		return true
+		return True
 	return false
 
 def getHelpRangerBearAttack(argsList):
@@ -8316,7 +8316,7 @@ def hasCattleBonus(argsList):
 	if (plot.getOwner() != pTriggeredData.ePlayer):
 		return false
 	if (plot.getBonusType() == bonustype):
-		return true
+		return True
 	return false
 	
 def getHelpMilkmaidInNeed(argsList):
@@ -8341,7 +8341,7 @@ def hasPigBonus(argsList):
 	if (plot.getOwner() != pTriggeredData.ePlayer):
 		return false
 	if (plot.getBonusType() == bonustype):
-		return true
+		return True
 	return false
 
 def getHelpHerderInNeed(argsList):
@@ -8409,7 +8409,7 @@ def canTriggerAtCityPopluationOf10(argsList):
 		return false
 	if city.getPopulation() < 10:
 		return false
-	return true
+	return True
 
 def canTriggerAtCityPopluationOf20(argsList):
 	ePlayer = argsList[1]
@@ -8423,5 +8423,5 @@ def canTriggerAtCityPopluationOf20(argsList):
 		return false
 	if city.getPopulation() < 20:
 		return false
-	return true
+	return True
     

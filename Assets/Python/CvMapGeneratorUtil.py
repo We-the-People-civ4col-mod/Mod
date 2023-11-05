@@ -1301,7 +1301,7 @@ def findStartingPlot(playerID, validFn = None):
 	iRange = player.startingPlotRange()
 	iPass = 0
 
-	while (true):
+	while (True):
 		iBestValue = 0
 		pBestPlot = None
 

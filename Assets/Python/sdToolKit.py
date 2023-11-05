@@ -31,7 +31,7 @@ def sdEcho( echoString ):
 	return 0
 
 def sdGetTimeInt( turn ):
-	TurnTable = CyGameTextMgr().getTimeStr(turn, false).split(' ')
+	TurnTable = CyGameTextMgr().getTimeStr(turn, False).split(' ')
 	TurnInt   = int(TurnTable[0])
 	if (TurnTable[1] == 'BC'):
 		TurnInt = 0 - TurnInt
