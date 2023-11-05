@@ -329,7 +329,7 @@ public:
 	void AI_verifyMoveQueue();
 	CvUnit* AI_getNextMoveUnit();
 
-	int AI_highestProfessionOutput(ProfessionTypes eProfession, const CvCity* pIgnoreCity = NULL);
+	int AI_highestProfessionOutput(ProfessionTypes eProfession, const CvCity* pIgnoreCity = NULL) const;
 
 	CvCity* AI_bestCityForBuilding(BuildingTypes eBuilding);
 
@@ -395,9 +395,9 @@ public:
 
 	void AI_updateBestYieldPlots();
 
-	CvPlot* AI_getBestWorkedYieldPlot(YieldTypes eYield);
-	CvPlot* AI_getBestUnworkedYieldPlot(YieldTypes eYield);
-	int AI_getBestPlotYield(YieldTypes eYield);
+	CvPlot* AI_getBestWorkedYieldPlot(YieldTypes eYield) const;
+	CvPlot* AI_getBestUnworkedYieldPlot(YieldTypes eYield) const;
+	int AI_getBestPlotYield(YieldTypes eYield) const;
 
 	void AI_changeTotalIncome(int iChange);
 	int AI_getTotalIncome();
