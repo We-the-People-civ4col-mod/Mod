@@ -4059,7 +4059,8 @@
 			<PythonCallback>applyVolcano1</PythonCallback>
 			<PythonExpireCheck/>
 			<PythonCanDo>canApplyVolcano1</PythonCanDo>
-			<PythonHelp>getHelpVolcano1</PythonHelp>
+			<PythonHelp/>
+			<HelpText>TXT_KEY_EVENT_VOLCANO_1_HELP</HelpText>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>1000</iAIValue>
 			<iGenericParameter1>0</iGenericParameter1>
@@ -5804,7 +5805,8 @@
 			<PythonCallback>spawnBarbarianUnitAdjacentToUnit</PythonCallback>
 			<PythonExpireCheck/>
 			<PythonCanDo/>
-			<PythonHelp>getHelpConquistadorAmbusch</PythonHelp>
+			<PythonHelp/>
+            <HelpText>TXT_KEY_EVENT_CONQUISTADOR_AMBUSH_HELP</HelpText>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>1000</iAIValue>
 			<iGenericParameter1>UNITCLASS_HOSTILE_NATIVE</iGenericParameter1>
@@ -7270,7 +7272,8 @@
 			<PythonCallback/>
 			<PythonExpireCheck/>
 			<PythonCanDo/>
-			<PythonHelp>getHelpPacific</PythonHelp>
+			<PythonHelp/>
+            <HelpText>TXT_KEY_EVENT_PACIFIC_HELP</HelpText>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>1000</iAIValue>
 			<iGenericParameter1>0</iGenericParameter1>

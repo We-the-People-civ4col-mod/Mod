@@ -980,11 +980,9 @@ def canTriggerPacificDone(argsList):
 		return True
 	return False
 
-getHelpPacific = get_simple_help("TXT_KEY_EVENT_PACIFIC_HELP")
 
 ######## VOLCANO ###########
 
-getHelpVolcano1 = get_simple_help("TXT_KEY_EVENT_VOLCANO_1_HELP")
 
 
 def canApplyVolcano1(argsList):
@@ -8307,9 +8305,6 @@ getHelpSlaveAndPlanationOwnerDaughter1 = get_simple_help("TXT_KEY_EVENT_SLAVE_AN
 ######## Indentured Servant Steals from Employer ###########
 getHelpIndenturedServantStealsFromEmployer = get_simple_help("TXT_KEY_EVENT_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_1_HELP")
 
-
-######## Conquistador Ambush ###########
-getHelpConquistadorAmbusch = get_simple_help("TXT_KEY_EVENT_CONQUISTADOR_AMBUSH_HELP")
 
 
 ######## Liet Event Training ###########
