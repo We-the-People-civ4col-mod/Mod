@@ -6906,7 +6906,8 @@
 			<PythonCallback>spawnBarbarianUnitAdjacentToPlotAndFriendlyOnSamePlot</PythonCallback>
 			<PythonExpireCheck/>
 			<PythonCanDo/>
-			<PythonHelp>getHelpHerderInNeed</PythonHelp>
+			<PythonHelp/>
+            <HelpText>TXT_KEY_EVENT_HERDER_IN_NEED_HELP</HelpText>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>300</iAIValue>
 			<iGenericParameter1>UNITCLASS_WOLF</iGenericParameter1>

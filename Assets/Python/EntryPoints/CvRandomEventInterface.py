@@ -1955,7 +1955,7 @@ def hasAllBuildings(argsList):
 			bHasAllBuildings = False
 	return bHasAllBuildings
 
-def has_plot_this_bonus(bonus_string):
+def has_plot_this_bonus(*bonus_strings):
 
 	def bonus_check(argsList):
 		pTriggeredData = argsList[0]
@@ -1963,10 +1963,10 @@ def has_plot_this_bonus(bonus_string):
 		if not player.isPlayable():
 			return False
 		plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-		bonustype = gc.getInfoTypeForString(bonus_string)
-		if (plot.getOwner() != pTriggeredData.ePlayer):
+		bonustypes =[ gc.getInfoTypeForString(bonus_string) for bonus_string in bonus_strings ]
+		if plot.getOwner() != pTriggeredData.ePlayer:
 			return False
-		if (plot.getBonusType() == bonustype):
+		if plot.getBonusType() in bonustypes:
 			return True
 		return False
 
@@ -1976,167 +1976,20 @@ hasSilverBonus = has_plot_this_bonus("BONUS_SILVER")
 hasGoldBonus = has_plot_this_bonus("BONUS_GOLD")
 hasFurBonus = has_plot_this_bonus("BONUS_FUR")
 hasCottonBonus = has_plot_this_bonus("BONUS_COTTON")
+hasSugarBonus = has_plot_this_bonus("BONUS_SUGAR")
+hasTobaccoBonus = has_plot_this_bonus("BONUS_TOBACCO")
+hasIronBonus = has_plot_this_bonus("BONUS_IRON")
+hasCocoaBonus = has_plot_this_bonus("BONUS_COCOA")
+hasMineralBonus = has_plot_this_bonus("BONUS_MINERALS")
+hasTimberBonus = has_plot_this_bonus("BONUS_TIMBER")
+# 2023-11-xx : please put all relevant bonus
+hasFoodBonus = has_plot_this_bonus("BONUS_POTATO","BONUS_BANANA","BONUS_CORN")
+hasSeaFoodBonus = has_plot_this_bonus("BONUS_PEARLS","BONUS_CRAB","BONUS_FISH")
+hasBisonBonus = has_plot_this_bonus("BONUS_BISON")
+hasPumpkinBonus = has_plot_this_bonus("BONUS_PUMPKIN")
+hasTurkeyBonus = has_plot_this_bonus("BONUS_TURKEYS")
+hasGiantTreeBonus = has_plot_this_bonus("BONUS_GIANT_TREE")
 
-
-def hasSugarBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_SUGAR")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
-
-def hasTobaccoBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_TOBACCO")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
-
-def hasIronBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_IRON")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
-
-def hasCocoaBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_COCOA")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
-
-def hasMineralsBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_MINERALS")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
-
-def hasTimberBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_TIMBER")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
-
-def hasFoodBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype1 = gc.getInfoTypeForString("BONUS_POTATO")
-	bonustype2 = gc.getInfoTypeForString("BONUS_BANANA")
-	bonustype3 = gc.getInfoTypeForString("BONUS_CORN")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if plot.getBonusType() in (bonustype1, bonustype2, bonustype3):
-		return True
-	return False
-
-def hasSeaFoodBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype1 = gc.getInfoTypeForString("BONUS_PEARLS")
-	bonustype2 = gc.getInfoTypeForString("BONUS_CRAB")
-	bonustype3 = gc.getInfoTypeForString("BONUS_FISH")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if plot.getBonusType() in (bonustype1, bonustype2, bonustype3):
-		return True
-	return False
-
-def hasBisonBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_BISON")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
-
-def hasPumpkinBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_PUMPKIN")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
-
-def hasTurkeyBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_TURKEYS")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
-
-def hasGiantTreesBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_GIANT_TREE")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
 
 def hasNoBonus(argsList):
 	pTriggeredData = argsList[0]
@@ -8242,19 +8095,8 @@ getHelpLandTransportAttack = get_simple_help("TXT_KEY_EVENT_LANDTRANSPORT_ATTACK
 
 ######## Milkmaid in Need ###########
 
-def hasCattleBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_CATTLE")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
-	
+hasCattleBonus = has_plot_this_bonus("BONUS_CATTLE")
+
 getHelpMilkmaidInNeed = get_simple_help("TXT_KEY_EVENT_MILKMAID_IN_NEED_HELP")
 
 ######## Whale Attack ###########
@@ -8263,20 +8105,7 @@ getHelpWhaleAttack = get_simple_help("TXT_KEY_WHALE_ATTACK_HELP")
 
 ######## Pig Herder in Need ###########
 
-def hasPigBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_PIG")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
-
-getHelpHerderInNeed = get_simple_help("TXT_KEY_EVENT_HERDER_IN_NEED_HELP")
+hasPigBonus = has_plot_this_bonus("BONUS_PIG")
 
 # adjacent Plot
 def spawnBarbarianUnitAdjacentToPlotAndFriendlyOnSamePlot(argsList):
