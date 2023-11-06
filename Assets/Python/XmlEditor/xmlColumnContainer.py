@@ -134,10 +134,10 @@ class columnContainer:
 					title = "<font=3>" + child.getName() + "</font>"
 					screen.setTextAt(panel + "name", panel, title, CvUtil.FONT_LEFT_JUSTIFY, 50 + iBackGroundOffset, 10, -0.1, FontTypes.SMALL_FONT, self.editor.widgetDrag, self.ID, counter)
 
-					ArtPath = ""
+					ArtPath = child.getButtonArt()
 
-					if (child.isAllocated() and child.getValue() != None):
-						ArtPath = child.getValue()
+					#if (child.isAllocated() and child.getValue() != None):
+					if ArtPath != None:
 						title = "<font=3>" + ArtPath + "</font>"
 						screen.setTextAt(panel + "value", panel, title, CvUtil.FONT_LEFT_JUSTIFY, 50 + iBackGroundOffset, 30, -0.1, FontTypes.SMALL_FONT, self.editor.widgetDrag, self.ID, counter)
 

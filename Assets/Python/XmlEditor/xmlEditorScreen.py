@@ -740,7 +740,8 @@ class xmlEditorScreen:
 				screen.setState("xmlEditorTypeCheckBoxSub1", True)
 			screen.setTextAt("allow_type_none_text", "xmlEditorSmallBG", u"<font=3>" + "Allow Type NONE" + u"</font>", CvUtil.FONT_LEFT_JUSTIFY, 100, top_offset + 45, -0.1, FontTypes.MENU_FONT, WidgetTypes.WIDGET_GENERAL, self.specialColumn, -1)
 			
-			if element.getParentType() != None:
+			#if element.getParentType() != None:
+			if False:
 				screen.addCheckBoxGFC("xmlEditorTypeCheckBoxSub11", "", "Art/Interface/Buttons/Button_SELECT.dds", left + 240, top + top_offset + 35, 30, 30, WidgetTypes.WIDGET_GENERAL, self.specialColumn, self.string_type_remote_button, ButtonStyles.BUTTON_STYLE_SQUARE)
 				screen.setTextAt("remote_create", "xmlEditorSmallBG", u"<font=3>" + "Allow remove create" + u"</font>", CvUtil.FONT_LEFT_JUSTIFY, 270, top_offset + 45, -0.1, FontTypes.MENU_FONT, WidgetTypes.WIDGET_GENERAL, self.specialColumn, -1)
 				if element.isRemoteCreate():
@@ -799,8 +800,8 @@ class xmlEditorScreen:
 		
 		self.popupEditorSetHelpText(helpText)
 		
-		screen.addCheckBoxGFC("xmlEditorFileSpecificCheckBox", "", "Art/Interface/Buttons/Button_SELECT.dds", left + 25, nScreenHeight + top - 160, 30, 30, WidgetTypes.WIDGET_GENERAL, self.specialColumn, self.file_specific_button, ButtonStyles.BUTTON_STYLE_SQUARE)
-		screen.setTextAt("FileSpecificCheckBoxText", "xmlEditorSmallBG", u"<font=4u>" + "File Specific" + u"</font>", CvUtil.FONT_LEFT_JUSTIFY, 58,  nScreenHeight - 150, -0.1, FontTypes.MENU_HIGHLIGHT_FONT, WidgetTypes.WIDGET_GENERAL, self.specialColumn, self.file_specific_button)
+		#screen.addCheckBoxGFC("xmlEditorFileSpecificCheckBox", "", "Art/Interface/Buttons/Button_SELECT.dds", left + 25, nScreenHeight + top - 160, 30, 30, WidgetTypes.WIDGET_GENERAL, self.specialColumn, self.file_specific_button, ButtonStyles.BUTTON_STYLE_SQUARE)
+		#screen.setTextAt("FileSpecificCheckBoxText", "xmlEditorSmallBG", u"<font=4u>" + "File Specific" + u"</font>", CvUtil.FONT_LEFT_JUSTIFY, 58,  nScreenHeight - 150, -0.1, FontTypes.MENU_HIGHLIGHT_FONT, WidgetTypes.WIDGET_GENERAL, self.specialColumn, self.file_specific_button)
 		
 		screen.setTextAt("cancel_button", "xmlEditorSmallBG", u"<font=4u>" + "CANCEL" + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, 3*(nScreenWidth / 4),  nScreenHeight - 60, -0.1, FontTypes.MENU_HIGHLIGHT_FONT, WidgetTypes.WIDGET_GENERAL, self.specialColumn, self.cancel_button)
 		screen.setTextAt("ok_button", "xmlEditorSmallBG", u"<font=4u>" + "OK" + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, nScreenWidth / 4,  nScreenHeight - 60, -0.1, FontTypes.MENU_HIGHLIGHT_FONT, WidgetTypes.WIDGET_GENERAL, self.specialColumn, self.OK_button)
@@ -866,9 +867,9 @@ class xmlEditorScreen:
 				if (state):
 					iSelected = screen.getPullDownData("xmlEditorTypeDirSelector", screen.getSelectedPullDownID("xmlEditorTypeDirSelector"))
 					ButtonChild = element.getSchemaChild(iSelected)
-					if ButtonChild == "Button":
+				#	if ButtonChild == "Button":
 						# default value. Avoid setting this
-						ButtonChild = None
+				#		ButtonChild = None
 					
 			# write the new data to file
 			element.setInfo(bFileSpecific, newID, helpText, newClass, bAllowTypeNone, bRemoteCreate, bRemoteCreatePrefix, ButtonChild)

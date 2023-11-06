@@ -11,6 +11,18 @@ public:
 	CyXMLAttributes(tinyxml2::XMLElement *pXML, CyXMLObject *pXMLparent, tinyxml2::XMLElement *pSchema, tinyxml2::XMLElement *pSchemaParent, CyXMLEditor *pEditor, const TCHAR* szName);
 
 	tinyxml2::XMLElement* getInfo() const;
+	const TCHAR* getButtonArt() const;
+	const TCHAR* getButtonArtChild() const;
+
+
+	bool isButton() const;
+	bool isDir() const;
+	bool isType() const;
+
+	bool allowsTypeNone() const;
+	const TCHAR* getHelp() const;
+	const TCHAR* getInfoClass() const;
+	const TCHAR* getType() const;
 
 	void setInfo(const char* szType, const TCHAR* szHelp, const TCHAR* szClass, bool bAllowTypeNone, const TCHAR* szButtonChild);
 

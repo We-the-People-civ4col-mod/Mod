@@ -15,7 +15,7 @@ CyXMLObject::CyXMLObject()
 	, m_pSchema(NULL)
 	, m_pSchemaParent(NULL)
 	, m_pXMLparent(NULL)
-	, m_token(NULL, NULL)
+	, m_Attributes(NULL, NULL)
 {
 }
 
@@ -26,7 +26,7 @@ CyXMLObject::CyXMLObject(XMLElement *pXML, CyXMLObject *pXMLparent, XMLElement *
 	, m_pSchemaParent(pSchemaParent)
 	, m_pXMLparent(pXMLparent)
 	, m_pEditor(pEditor)
-	, m_token(pXML, pXMLparent, pSchema, pSchemaParent, pEditor, getName())
+	, m_Attributes(pXML, pXMLparent, pSchema, pSchemaParent, pEditor, getName())
 {
 }
 
@@ -323,8 +323,7 @@ const TCHAR* CyXMLObject::getInfoTypeString() const
 		return NULL;
 	}
 
-	const TCHAR* pString = m_pEditor->getInfo(getName(), "Type");
-	return pString;
+	return m_Attributes.getType();
 }
 
 int CyXMLObject::getInfoType() const
@@ -341,7 +340,7 @@ int CyXMLObject::getInfoType() const
 
 bool CyXMLObject::allowsTypeNone() const
 {
-	return m_pEditor->getInfo(getName(), "bAllowTypeNone") != NULL;
+	return m_Attributes.allowsTypeNone();
 }
 
 bool CyXMLObject::isRemoteCreate() const
@@ -356,12 +355,12 @@ bool CyXMLObject::isRemoteCreatePrefix() const
 
 const TCHAR* CyXMLObject::getHelp() const
 {
-	return m_pEditor->getInfo(getName(), "Help");
+	return m_Attributes.getHelp();
 }
 
 const TCHAR* CyXMLObject::getInfoClass() const
 {
-	return m_pEditor->getInfo(getName(), "Class");
+	return m_Attributes.getInfoClass();
 }
 
 const TCHAR* CyXMLObject::getSchemaChild(int iIndex) const
@@ -416,7 +415,7 @@ void CyXMLObject::setInfo(bool bFileSpecific, int iNewFileForType, const TCHAR* 
 			NULL;
 	}
 
-	m_token.setInfo(szType, szHelp, szClass, bAllowTypeNone, szButtonChild);
+	m_Attributes.setInfo(szType, szHelp, szClass, bAllowTypeNone, szButtonChild);
 }
 
 // XML info
@@ -491,12 +490,14 @@ const TCHAR* CyXMLObject::getChildString(const TCHAR* szChildName) const
 
 const TCHAR* CyXMLObject::getButtonArt() const
 {
-	return m_pEditor->getButtonArt(m_pXML);
+	return m_Attributes.getButtonArt();
+	//return m_pEditor->getButtonArt(m_pXML);
 }
 
 const TCHAR* CyXMLObject::getButtonArtChild() const
 {
-	return m_pEditor->getInfo(getName(), "ButtonChild");
+	return m_Attributes.getButtonArtChild();
+	//return m_pEditor->getInfo(getName(), "ButtonChild");
 }
 
 int CyXMLObject::getActiveComboFile() const
@@ -746,5 +747,5 @@ XMLDocument* CyXMLObject::getDocument() const
 
 tinyxml2::XMLElement* CyXMLObject::getInfoElement() const
 {
-	return m_token.getInfo();
+	return m_Attributes.getInfo();
 }

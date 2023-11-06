@@ -515,27 +515,9 @@
     </File>
     <File>
         <Dir>Terrain</Dir>
-        <Name>CIV4FeatureInfos</Name>
-        <Tag>FeatureInfo</Tag>
-        <Root>Civ4FeatureInfos</Root>
-    </File>
-    <File>
-        <Dir>Terrain</Dir>
         <Name>CIV4ImprovementInfos</Name>
         <Tag>ImprovementInfo</Tag>
         <Root>Civ4ImprovementInfos</Root>
-    </File>
-    <File>
-        <Dir>Terrain</Dir>
-        <Name>CIV4ImprovementInfos</Name>
-        <Tag>ImprovementInfo</Tag>
-        <Root>Civ4ImprovementInfos</Root>
-    </File>
-    <File>
-        <Dir>Terrain</Dir>
-        <Name>CIV4TerrainInfos</Name>
-        <Tag>TerrainInfo</Tag>
-        <Root>Civ4TerrainInfos</Root>
     </File>
     <File>
         <Dir>Terrain</Dir>

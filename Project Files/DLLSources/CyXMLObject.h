@@ -186,7 +186,7 @@ private:
 	tinyxml2::XMLElement *m_pSchema;
 	tinyxml2::XMLElement *m_pSchemaParent;
 	CyXMLEditor          *m_pEditor;
-	CyXMLAttributes       m_token;
+	CyXMLAttributes       m_Attributes;
 };
 
 #endif
