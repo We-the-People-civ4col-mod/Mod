@@ -263,6 +263,8 @@ private:
 
 	static CyXMLEditor* m_pInstance;
 
+	bool m_EditorInMod;
+
 	int m_iActiveFile;
 	int m_iActiveModFile;
 	tinyxml2::XMLElement  *m_pFileSpecificInfo;
@@ -304,16 +306,16 @@ class CyXMLCommandItem
 {
 public:
 	CyXMLCommandItem();
-	CyXMLCommandItem(const char *szName, const char *szPopupHelp, const char *szFullText);
+	CyXMLCommandItem(CvWString szName, CvWString szPopupHelp, CvWString szFullText);
 
 	const char* getName() const;
 	const char* getHelp() const;
 	const char* getText() const;
 
 private:
-	const char *m_szName;
-	const char *m_szHelp;
-	const char *m_szText;
+	CvString m_szName;
+	CvString m_szHelp;
+	CvString m_szText;
 };
 
 #endif

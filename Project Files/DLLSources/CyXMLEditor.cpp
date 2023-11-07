@@ -590,6 +590,7 @@ CyXMLEditor::CyXMLEditor()
 	, m_szKeyboard(NULL)
 	, m_pFileSpecificInfo(NULL)
 	, m_DocCommandFile(new XMLDocument)
+	, m_EditorInMod(false)
 {
 	m_Document = new XMLDocument;
 	m_GlobalTypes = new XMLDocument;
@@ -1078,34 +1079,38 @@ void CyXMLEditor::quit() const
 
 const CyXMLCommandItem* CyXMLEditor::getCommandItem(const char* name) const
 {
-	const char* pName = NULL;
-	const char* pHelp = NULL;
-	const char* pText = NULL;
+	CvWString szName;
+	CvWString szHelp;
+	CvWString szText;
 
-	XMLElement *pRoot = m_DocCommandFile->FirstChildElement(name);
-	if (pRoot != NULL)
+	CvWString tagPrefix = L"TXT_KEY_XML_EDITOR_";
+	tagPrefix.append(CvWString(name));
+
+	CvWString tag(tagPrefix);
+	tag.append(L"_Name");
+	szName = gDLL->getText(tag);
+	if (tag == szName)
 	{
-		XMLElement *pElement = pRoot->FirstChildElement("Name");
-		if (pElement != NULL)
-		{
-			pName = pElement->GetText();
-		}
-		pElement = pRoot->FirstChildElement("Help");
-		if (pElement != NULL)
-		{
-			pHelp = pElement->GetText();
-		}
-		pElement = pRoot->FirstChildElement("Text");
-		if (pElement != NULL)
-		{
-			pText = pElement->GetText();
-		}
+		szName.clear();
 	}
 
-	if (pName == NULL) pName = "";
-	if (pHelp == NULL) pHelp = "";
+	tag = tagPrefix;
+	tag.append(L"_Help");
+	szHelp = gDLL->getText(tag);
+	if (tag == szHelp || szHelp == L"-")
+	{
+		szHelp.clear();
+	}
 
-	return new CyXMLCommandItem(pName, pHelp, pText);
+	tag = tagPrefix;
+	tag.append(L"_Text");
+	szText = gDLL->getText(tag);
+	if (tag == szText || szText == L"-")
+	{
+		szText.clear();
+	}
+
+	return new CyXMLCommandItem(gDLL->getText(szName), gDLL->getText(szHelp), gDLL->getText(szText));
 }
 
 bool CyXMLEditor::openFile(const TCHAR* szFileName)
@@ -1265,8 +1270,9 @@ void CyXMLEditor::setModPath()
 	const char* pathBuffer = pEditor ? pEditor->FirstChildElement("ModPath")->GetText() : ".";
 	
 	std::string XMLpath = "";
-	if (pathBuffer[0] == '.')
+	if (pathBuffer[0] == '.' && pathBuffer[1] == 0)
 	{
+		m_EditorInMod = true;
 		XMLpath = getDLLPath();
 	}
 	XMLpath.append(pathBuffer);
@@ -1993,11 +1999,7 @@ bool CyXMLEditor::isColonizationExe() const
 
 bool CyXMLEditor::isEditorInMod() const
 {
-#ifdef USING_EDITOR_IN_MOD
-	return true;
-#else
-	return false;
-#endif
+	return m_EditorInMod;
 }
 
 const TCHAR* CyXMLEditor::getKeyboard() const
@@ -2310,28 +2312,27 @@ XMLElement* CyXMLEditor::gotoList(int iFile, XMLDocument *pDoc)
 }
 
 CyXMLCommandItem::CyXMLCommandItem()
-	: m_szName(NULL)
-	, m_szHelp(NULL)
-	, m_szText(NULL)
 {
 }
 
-CyXMLCommandItem::CyXMLCommandItem(const char *szName, const char *szPopupHelp, const char *szFullText)
-	: m_szName(szName)
-	, m_szHelp(szPopupHelp)
-	, m_szText(szFullText)
+CyXMLCommandItem::CyXMLCommandItem(CvWString szName, CvWString szPopupHelp, CvWString szFullText)
+	: m_szName(CvString(szName))
+	, m_szHelp(CvString(szPopupHelp))
+	, m_szText(CvString(szFullText))
 {
 }
 
 const char* CyXMLCommandItem::getName() const
 {
-	return m_szName;
+	return m_szName.c_str();
 }
 const char* CyXMLCommandItem::getHelp() const
 {
-	return m_szHelp;
+	return m_szHelp.c_str();
 }
 const char* CyXMLCommandItem::getText() const
 {
-	return m_szText;
+	// returning NULL skips some text drawing code entirely
+	if (m_szText.IsEmpty()) return NULL;
+	return m_szText.c_str();
 }

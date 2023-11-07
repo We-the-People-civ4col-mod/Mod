@@ -117,8 +117,8 @@ void CyXMLEditorPythonCommandItemInterface1(python::class_<CyXMLCommandItem>& x)
 {
 	OutputDebugString("Python Extension Module - CyXMLEditorPythonMenuItemInterface1\n");
 	x
-		.def("getName", &CyXMLCommandItem::getName, "bool ()")
-		.def("getHelp", &CyXMLCommandItem::getHelp, "bool ()")
-		.def("getText", &CyXMLCommandItem::getText, "bool ()")
+		.def("getName", &CyXMLCommandItem::getName, "str ()")
+		.def("getHelp", &CyXMLCommandItem::getHelp, "str ()")
+		.def("getText", &CyXMLCommandItem::getText, "str ()")
 		;
 }

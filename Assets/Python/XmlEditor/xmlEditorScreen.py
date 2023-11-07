@@ -1148,7 +1148,7 @@ class xmlEditorScreen:
 		self.commandList.append("WriteAllFiles")
 		self.commandList.append("GameFont")
 		self.commandList.append("Keyboard")
-		self.commandList.append("GenerateTextXML")
+		#self.commandList.append("GenerateTextXML")
 		self.commandList.append("CleanCurrentFile")
 		if (not self.XML.isEditorInMod()):
 			self.commandList.append("LoadArtAndGameFont")
