@@ -39,18 +39,29 @@ class columnContainer:
 
 		self.drawContents(bDraw)
 
-	def drawContents(self, bDraw = True):
+	def drawContents(self, bDraw = True, pUpdatingElement = None):
 		screen = CyGInterfaceScreen( "xmlEditor", CvScreenEnums.XML_EDITOR )
 
-		self.clear()
+		if pUpdatingElement != None:
+			updatingID = pUpdatingElement.getID()
+			child = None
+			for x in self.elements:
+				if x.getID() == updatingID:
+					child = x
+					break
 
-		child = self.parent.getFirstSchemaChild()
-		y_offset = self.offset
-		counter = 0
+			counter = child.counter
+			y_offset = child.y_offset
+		else:
+			updatingID = None
+			self.clear()
+			self.bContainsBroken = False
 
-		self.bContainsBroken = False
+			self.elements = []
 
-		self.elements = []
+			child = self.parent.getFirstSchemaChild()
+			y_offset = self.offset
+			counter = 0
 
 		while (child != None):
 			panel = "column_" + str(self.ID) + "_" + str(counter) + "_"
@@ -217,6 +228,12 @@ class columnContainer:
 			if (child.isAllocated() and child.isListElement()):
 				screen.setImageButtonAt(panel + "clone", panel, self.editor.iconClone, self.width - 40 - size - 20 + iBackGroundOffset, (self.height/2) - 25, 40, 40,  self.editor.widgetClone, self.ID, counter )
 				size += 45	
+
+			if updatingID != None:
+				return
+
+			child.counter = counter
+			child.y_offset = y_offset
 
 			self.elements.append(child)
 

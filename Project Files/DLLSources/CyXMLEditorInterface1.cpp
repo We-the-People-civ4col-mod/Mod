@@ -67,6 +67,7 @@ void CyXMLEditorPythonObjectInterface1(python::class_<CyXMLObject>& x)
 		.def("getFirstSchemaChild", &CyXMLObject::getFirstSchemaChild, python::return_value_policy<python::manage_new_object>(), "object ()")
 		.def("next", &CyXMLObject::next, python::return_value_policy<python::manage_new_object>(), "object ()")
 		
+		.def("getID", &CyXMLObject::getID, "int ()")
 		.def("isAllocated", &CyXMLObject::isAllocated, "bool ()")
 		.def("isBool", &CyXMLObject::isBool, "bool ()")
 		.def("isInt", &CyXMLObject::isInt, "bool ()")

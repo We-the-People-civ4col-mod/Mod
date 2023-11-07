@@ -358,7 +358,7 @@ class xmlEditorScreen:
 				element.setValue("0")
 			else:
 				element.setValue("1")
-			self.redrawColumns()
+			self.columnContainers[iColumn].drawContents(True, element)
 		else:
 			strClass = element.getInfoClass()
 			if strClass == "GameFont":
@@ -373,7 +373,7 @@ class xmlEditorScreen:
 						else:
 							self.changeFile(fileID)
 						return
-				self.openPopupWindow("ElementType", element)
+				self.openPopupWindow("ElementType", element, iColumn)
 			elif strClass == "TxtKey":
 				self.popupTxtKeyCreate(element)
 			else:
@@ -388,7 +388,7 @@ class xmlEditorScreen:
 		if (element.isAllocated()):
 			iValue += int(element.getValue())
 		element.setValue(str(iValue))
-		self.redrawColumns()
+		self.columnContainers[iColumn].drawContents(True, element)
 		
 	def closeAnyPopup(self):
 		screen = CyGInterfaceScreen( "xmlEditor", CvScreenEnums.XML_EDITOR )
@@ -1127,7 +1127,7 @@ class xmlEditorScreen:
 		elif window == "ElementString":
 			self.currentPopup = xmlPopupElementString.xmlPopupElementString(self, arg1)
 		elif window == "ElementType":
-			self.currentPopup = xmlPopupElementType.xmlPopupElementType(self, arg1)
+			self.currentPopup = xmlPopupElementType.xmlPopupElementType(self, arg1, arg2)
 		elif window == "Keyboard":
 			self.currentPopup = xmlPopupKeyboard.xmlPopupKeyboard(self)
 		elif window == "Menu":

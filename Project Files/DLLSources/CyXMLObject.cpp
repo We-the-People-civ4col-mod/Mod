@@ -148,6 +148,12 @@ CyXMLObject* CyXMLObject::next()
 
 // schema info
 
+int CyXMLObject::getID() const
+{
+	// use the memory address to identify if two instances points to the same element
+	return (int)m_pXML;
+}
+
 bool CyXMLObject::isAllocated() const
 {
 	return m_pXML != NULL;
@@ -345,11 +351,13 @@ bool CyXMLObject::allowsTypeNone() const
 
 bool CyXMLObject::isRemoteCreate() const
 {
+	return false;
 	return m_pEditor->getInfo(getName(), "bRemoteCreate") != NULL;
 }
 
 bool CyXMLObject::isRemoteCreatePrefix() const
 {
+	return false;
 	return m_pEditor->getInfo(getName(), "bRemoteCreatePrefix") != NULL;
 }
 

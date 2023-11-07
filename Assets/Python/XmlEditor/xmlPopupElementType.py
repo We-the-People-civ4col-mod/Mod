@@ -6,9 +6,10 @@ import CvEventManager
 
 class xmlPopupElementType:
 
-	def __init__(self, editor, element):
+	def __init__(self, editor, element, iColumn):
 		self.editor = editor
 		self.element = element
+		self.iColumn = iColumn
 		
 		self.nScreenWidth  = 400
 		self.nScreenHeight = 300
@@ -75,7 +76,7 @@ class xmlPopupElementType:
 			
 				newString = self.editor.XML.getType(typeID, iIndex)
 				self.element.setValue(newString)
-			self.editor.redrawColumns()
+			self.editor.columnContainers[self.iColumn].drawContents(True, self.element)
 			self.editor.closePopupWindow()
 		else:
 			return False

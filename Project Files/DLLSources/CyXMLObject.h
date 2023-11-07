@@ -47,6 +47,9 @@ public:
 	/// (always available)
 	///
 
+	//
+	int getID() const;
+
 	// tells if the tag is present in the XML file
 	bool isAllocated() const;
 
