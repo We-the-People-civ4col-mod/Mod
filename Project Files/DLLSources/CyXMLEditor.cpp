@@ -732,7 +732,11 @@ CyXMLEditor::~CyXMLEditor()
 	SAFE_DELETE(m_szKeyboard);
 	SAFE_DELETE(m_DocCommandFile);
 
-	m_pInstance = NULL;
+	if (m_pInstance == this)
+	{
+		// if python makes a new editor instance without clearing the old one, then the instance pointer will already point to the new one
+		m_pInstance = NULL;
+	}
 }
 
 void CyXMLEditor::createEditorFiles() const

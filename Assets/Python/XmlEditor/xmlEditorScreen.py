@@ -97,7 +97,9 @@ class xmlEditorScreen:
 		self.nScreenHeight = screen.getYResolution()
 		
 		# set up the editor early since the data from it can be used to set layout
-		self.XML = gc.getxmlEditor()
+		if not hasattr(self, "XML"):
+			# only read the xml files if they haven't already been read
+			self.XML = gc.getxmlEditor()
 		
 		self.generateCommandList()
 		
@@ -125,8 +127,8 @@ class xmlEditorScreen:
 		screen.addScrollPanel(self.scrollPanel, u"", 0, self.TITLE_HEIGHT, self.scrollWidth, self.scrollHeight, PanelStyles.PANEL_STYLE_EXTERNAL, true, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		
 		screen.setTextAt("top_help_button", "TopPanel", u"<font=4u>" + "HELP" + u"</font>", CvUtil.FONT_RIGHT_JUSTIFY, self.nScreenWidth - 20,  20, 0, FontTypes.MENU_HIGHLIGHT_FONT, WidgetTypes.WIDGET_GENERAL, self.specialColumn, self.help_button)
-		if self.XML.isEditorInMod():
-			screen.setTextAt("top_reload_button", "TopPanel", u"<font=4u>" + "Reload XML" + u"</font>", CvUtil.FONT_RIGHT_JUSTIFY, self.nScreenWidth - 120,  20, 0, FontTypes.MENU_HIGHLIGHT_FONT, WidgetTypes.WIDGET_GENERAL, self.specialColumn, self.reload_button)
+		#if self.XML.isEditorInMod():
+		#	screen.setTextAt("top_reload_button", "TopPanel", u"<font=4u>" + "Reload XML" + u"</font>", CvUtil.FONT_RIGHT_JUSTIFY, self.nScreenWidth - 120,  20, 0, FontTypes.MENU_HIGHLIGHT_FONT, WidgetTypes.WIDGET_GENERAL, self.specialColumn, self.reload_button)
 		screen.setTextAt("top_menu_button", "TopPanel", u"<font=4u>" + "MENU" + u"</font>", CvUtil.FONT_RIGHT_JUSTIFY, self.nScreenWidth - 260,  20, 0, FontTypes.MENU_HIGHLIGHT_FONT, WidgetTypes.WIDGET_GENERAL, self.specialColumn, self.menu_button)
 		screen.setTextAt("top_error_button", "TopPanel", u"<font=4u>" + "Find Error" + u"</font>", CvUtil.FONT_RIGHT_JUSTIFY, self.nScreenWidth - 340,  20, 0, FontTypes.MENU_HIGHLIGHT_FONT, WidgetTypes.WIDGET_GENERAL, self.specialColumn, self.error_button)
 		
@@ -337,22 +339,15 @@ class xmlEditorScreen:
 		return 1
 
 	def handleKeyPressed(self, inputClass):
-		
-		#escape
-		if (inputClass.getData() == InputTypes.KB_ESCAPE):
-			self.doCommand("Quit")
-		#left arrow
-		elif (inputClass.getData() == InputTypes.KB_LEFT):
-			self.doCommand("FilePrev")
-		#right arrow
-		elif (inputClass.getData() == InputTypes.KB_RIGHT):
-			self.doCommand("FileNext")
-		#F1
-		elif (inputClass.getData() == InputTypes.KB_F1):
-			self.doCommand("HideUnallocated")
-		#F5
-		elif (inputClass.getData() == InputTypes.KB_F5):
-			self.doCommand("FindError")
+
+		commands_inputkey = { \
+			InputTypes.KB_ESCAPE: "Quit",             # escape
+			InputTypes.KB_LEFT:   "FilePrev",         # left arrow
+			InputTypes.KB_RIGHT:  "FileNext",         # right arrow
+			InputTypes.KB_F1:     "HideUnallocated",  # F1
+			InputTypes.KB_F5:     "FindError"}        # F5
+		command = commands_inputkey.get(inputClass.getData(), "default")
+		self.doCommand(command)
 		
 	def handleTagClicked(self, element, inputClass):
 		iColumn = inputClass.getData1()
