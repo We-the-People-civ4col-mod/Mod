@@ -2416,7 +2416,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SALT_RESOURCE</Tag>
-        <English>European Settlers have discovered a huge salt deposit near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
+        <English>European settlers have discovered a huge salt deposit near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
         <French>Des colons européens ont décovert un immense dépôt de sel près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>Europäische Siedler haben grosse Salzvorkommen in der Gegend um [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</German>
         <Russian>Огромное месторождение соли было обнаружено колонистами недалеко от [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
@@ -4270,7 +4270,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SOLDIERS_SON_IN_FORT_1</Tag>
-        <English>The young man must surely have learned something during his time in the Fort. Take care that he finishes basic training in the militia, arm him and put him into service.</English>
+        <English>The young man must surely have learned something during his time in the fort. Take care that he finishes basic training in the militia, arm him and put him into service.</English>
         <French>Ce jeune homme a du surement apprendre deux-t^rois choses dans sa jeunesee au fort. Faites en sorte qu'il finisse ses classes dans la milice, équipez le et mettez le au service.</French>
         <German>Der junge Mann wird sicher etwas während seiner Zeit im Fort gelernt haben. Stellt sicher, dass er zumindest eine grundlegende Ausbildung in der Miliz bekommt, gebt ihm Waffen und lasst ihn in unsere Dienste treten.</German>
         <Russian>Молодой человек наверняка чему-то научился за время своего пребывания в форте. Позаботьтесь о том, чтобы он закончил базовую подготовку в ополчении, вооружите и назначьте на службу.</Russian>
