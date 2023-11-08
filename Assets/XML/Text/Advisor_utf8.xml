@@ -16,5 +16,6 @@
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_ADVISOR_HELP_POPUP</Tag>
         <English>%s1 %s2[NEWLINE]Stored: %d3[NEWLINE]Demand: %d4[NEWLINE]Price: %d5</English>
+        <Russian>%s1 %s2[NEWLINE]Хранится: %d3[NEWLINE]Требуется: %d4[NEWLINE]Цена: %d5</Russian>
     </TEXT>
 </Civ4GameText>
