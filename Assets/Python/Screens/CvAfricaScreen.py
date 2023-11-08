@@ -82,7 +82,7 @@ class CvAfricaScreen:
 		# R&R, vetiarvind, Navigation Sectors - END
 
 		self.bBookIntro, self.bBookOutro = False, False
-
+		self.show_tax_details = -1  # 0 - always hide details, 1 - always show details , -1 show iff No Hidden Variable is set
 	
 	def getScreen(self):
 		return CyGInterfaceScreen("AfricaScreen", CvScreenEnums.AFRICA_SCREEN)
@@ -361,7 +361,7 @@ class CvAfricaScreen:
 		screen.setText(self.getNextWidgetName(), "Background", szExit, CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - self.STANDARD_MARGIN, self.STANDARD_MARGIN, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_CLOSE_SCREEN, -1, -1 )
 
 		szTaxRate = u"<font=4>" + localText.getText(hudColor, ()) + localText.getText("TXT_KEY_MISC_TAX_RATE", (player.getTaxRate(), player.NBMOD_GetMaxTaxRate())).upper() + u"</font>"
-		screen.setText(self.getNextWidgetName(), "Background", szTaxRate, CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - CyInterface().determineWidth(szExit) - self.STANDARD_MARGIN * 2, self.STANDARD_MARGIN, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_HELP_TAX_CALCULATION, self.player_id, -1 )
+		screen.setText(self.getNextWidgetName(), "Background", szTaxRate, CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - CyInterface().determineWidth(szExit) - self.STANDARD_MARGIN * 2, self.STANDARD_MARGIN, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_HELP_TAX_CALCULATION, self.player_id, self.show_tax_details)
 
 		
 		if (sdToolKit.sdGetVal('komaScreens', player.getID(), 'TradeBox') == False):
