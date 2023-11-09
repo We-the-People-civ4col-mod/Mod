@@ -129,6 +129,8 @@ public:
 	/// only present when tag is present in the XML file
 	///
 
+	const char* getDefaultClassForType() const;
+
 	// Type is the value of the first child or sibling named Type
 	const TCHAR* getType() const;
 

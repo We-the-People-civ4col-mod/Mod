@@ -14,7 +14,55 @@
     <bRefractionCastor/>
 </BonusArtInfo>
 
-<BonusInfo/>
+<BonusInfo class="Dir" child="ArtDefineTag">
+    <Type/>
+    <Description/>
+    <Civilopedia/>
+    <Help/>
+    <ArtDefineTag class="Type" type="BonusArtInfo" none="false"/>
+    <BuildingType class="Type" type="BuildingInfo" none="true"/>
+    <YieldChanges class="Dir" child="YieldIntegerPair">
+        <YieldIntegerPair class="Dir" child="YieldType">
+            <YieldType class="Type" type="YieldInfo" none="false"/>
+            <iValue/>
+        </YieldIntegerPair>
+    </YieldChanges>
+    <iHealthEffectFromRessource/>
+    <iAIObjective/>
+    <iPlacementOrder/>
+    <iConstAppearance/>
+    <iMinAreaSize/>
+    <iMinLatitude/>
+    <iMaxLatitude/>
+    <Rands>
+        <iRandApp1/>
+        <iRandApp2/>
+        <iRandApp3/>
+        <iRandApp4/>
+    </Rands>
+    <iPlayer/>
+    <iTilesPer/>
+    <iMinLandPercent/>
+    <iUnique/>
+    <iGroupRange/>
+    <iGroupRand/>
+    <bArea/>
+    <bPeaks/>
+    <bHills/>
+    <bOcean/>
+    <bFlatlands/>
+    <bNoRiverSide/>
+    <bRiverSideOnly/>
+    <bCoastalLandOnly/>
+    <bOnlySouthernHemisphere/>
+    <bOnlyNorthernHemisphere/>
+    <TerrainBooleans/>
+    <FeatureBooleans/>
+    <FeatureTerrainBooleans/>
+    <bUseLSystem/>
+    <bWhalingboatWorkable/>
+    <bFishingboatWorkable/>
+</BonusInfo>
 
 <BuildInfo>
     <Type/>
@@ -322,6 +370,61 @@
     </FeatureVariety>
 </FeatureArtInfo>
 
+<FeatureInfo class="Dir" child="ArtDefineTag">
+    <Type/>
+    <Description/>
+    <Civilopedia/>
+    <Help/>
+    <ArtDefineTag class="Type" type="FeatureArtInfo" none="false"/>
+    <YieldChanges class="Dir" child="YieldIntegerPair">
+        <YieldIntegerPair class="Dir" child="YieldType">
+            <YieldType class="Type" type="YieldInfo" none="false"/>
+            <iValue/>
+        </YieldIntegerPair>
+    </YieldChanges>
+    <RiverYieldIncreases class="Dir" child="YieldIntegerPair">
+        <YieldIntegerPair class="Dir" child="YieldType">
+            <YieldType class="Type" type="YieldInfo" none="false"/>
+            <iValue/>
+        </YieldIntegerPair>
+    </RiverYieldIncreases>
+    <iMovement/>
+    <iSeeThrough/>
+    <iDefense/>
+    <iAppearance/>
+    <iDisappearance/>
+    <iTurnDamage/>
+    <bGeneratedEveryRound/>
+    <iGrowth/>
+    <bNoCoast/>
+    <bOnlyCoastalLand/>
+    <bNoRiver/>
+    <bNoAdjacent/>
+    <bRequiresFlatlands/>
+    <bRequiresHills/>
+    <bRequiresPeaks/>
+    <bRequiresRiver/>
+    <bImpassable/>
+    <bNorthMovementBonus/>
+    <bSouthMovementBonus/>
+    <bEastMovementBonus/>
+    <bWestMovementBonus/>
+    <bNorthEastMovementBonus/>
+    <bNorthWestMovementBonus/>
+    <bSouthEastMovementBonus/>
+    <bSouthWestMovementBonus/>
+    <bNoCity/>
+    <bNoImprovement/>
+    <bVisibleAlways/>
+    <OnUnitChangeTo/>
+    <TerrainBooleans/>
+    <FootstepSounds/>
+    <WorldSoundscapeAudioScript/>
+    <EffectType class="Type" type="EffectInfo" none="true"/>
+    <iEffectProbability/>
+    <iAdvancedStartRemoveCost/>
+</FeatureInfo>
+
 <ImprovementArtInfo>
     <Type/>
     <bExtraAnimations/>
@@ -331,6 +434,108 @@
     <KFM/>
     <Button class="Button"/>
 </ImprovementArtInfo>
+
+<ImprovementInfo class="Dir" child="ArtDefineTag">
+    <Type/>
+    <Description/>
+    <Civilopedia/>
+    <Help/>
+    <ArtDefineTag class="Type" type="ImprovementArtInfo" none="false"/>
+    <PrereqNatureYields class="Dir" child="YieldIntegerPair">
+        <YieldIntegerPair class="Dir" child="YieldType">
+            <YieldType class="Type" type="YieldInfo" none="false"/>
+            <iValue/>
+        </YieldIntegerPair>
+    </PrereqNatureYields>
+    <YieldIncreases class="Dir" child="YieldIntegerPair">
+        <YieldIntegerPair class="Dir" child="YieldType">
+            <YieldType class="Type" type="YieldInfo" none="false"/>
+            <iValue/>
+        </YieldIntegerPair>
+    </YieldIncreases>
+    <RiverSideYieldChanges class="Dir" child="YieldIntegerPair">
+        <YieldIntegerPair class="Dir" child="YieldType">
+            <YieldType class="Type" type="YieldInfo" none="false"/>
+            <iValue/>
+        </YieldIntegerPair>
+    </RiverSideYieldChanges>
+    <HillsYieldChanges class="Dir" child="YieldIntegerPair">
+        <YieldIntegerPair class="Dir" child="YieldType">
+            <YieldType class="Type" type="YieldInfo" none="false"/>
+            <iValue/>
+        </YieldIntegerPair>
+    </HillsYieldChanges>
+    <bActsAsCity/>
+    <bFort/>
+    <bMonastery/>
+    <bCanal/>
+    <bNotAllowedNextToSameAsItself/>
+    <bHillsMakesValid/>
+    <bRiverSideMakesValid/>
+    <bRequiresFlatlands/>
+    <bRequiresRiverSide/>
+    <bRequiresFeature/>
+    <bWater/>
+    <bGoody/>
+    <bGoodyForSpawningUnits/>
+    <bGoodyForSpawningHostileAnimals/>
+    <bGoodyForSpawningHostileNatives/>
+    <bGoodyForSpawningHostileCriminals/>
+    <bPermanent/>
+    <bUseLSystem/>
+    <iAdvancedStartCost/>
+    <iAdvancedStartCostIncrease/>
+    <iTilesPerGoody/>
+    <iGoodyRange/>
+    <iFeatureGrowth/>
+    <iUpgradeTime/>
+    <iDefenseModifier/>
+    <iFoodModifierForCity/>
+    <iHammersModifierForCity/>
+    <iToolsModifierForCity/>
+    <iStorageModifierForCity/>
+    <iPillageGold/>
+    <iHealModifier/>
+    <bOutsideBorders/>
+    <TerrainMakesValids>
+        <TerrainMakesValid>
+            <TerrainType class="Type" type="TerrainInfo" none="false"/>
+            <bMakesValid/>
+        </TerrainMakesValid>
+    </TerrainMakesValids>
+    <FeatureMakesValids>
+        <FeatureMakesValid>
+            <FeatureType class="Type" type="FeatureInfo" none="false"/>
+            <bMakesValid/>
+        </FeatureMakesValid>
+    </FeatureMakesValids>
+    <BonusTypeStructs>
+        <BonusTypeStruct/>
+    </BonusTypeStructs>
+    <ImprovementPillage class="Type" type="ImprovementInfo" help="Set which improvement this improvement turns into if it is pillaged.[NEWLINE]Defaults to NONE, which means the improvement is destroyed.[NEWLINE]Can be used to downgrade improvements and require multiple pillages to completely remove." none="true"/>
+    <ImprovementUpgrade class="Type" type="ImprovementInfo" none="true"/>
+    <RouteYieldChanges>
+        <RouteYieldChange>
+            <RouteType class="Type" type="RouteInfo" none="true"/>
+            <RouteYields>
+                <YieldIntegerPair>
+                    <YieldType class="Type" type="YieldInfo" none="false"/>
+                    <iValue/>
+                </YieldIntegerPair>
+            </RouteYields>
+        </RouteYieldChange>
+    </RouteYieldChanges>
+    <WorldSoundscapeAudioScript/>
+    <bGraphicalOnly/>
+    <iCulture/>
+    <iCultureRange/>
+    <iPlotVisibilityChange/>
+    <iUnitVisibilityChange/>
+    <iSeeFrom/>
+    <iUnique/>
+    <bBombardable/>
+    <bUpgradeRequiresFortify/>
+</ImprovementInfo>
 
 <MainMenu>
     <Type/>
@@ -382,6 +587,30 @@
     <TextureBlend15/>
 </TerrainArtInfo>
 
+<TerrainInfo class="Dir" child="Button">
+    <Type/>
+    <Description/>
+    <Civilopedia/>
+    <Help/>
+    <ArtDefineTag class="Type" type="TerrainArtInfo" none="false"/>
+    <Yields/>
+    <RiverYieldIncreases/>
+    <bWater/>
+    <bImpassable/>
+    <bFound/>
+    <bFoundCoast/>
+    <bBadCityLocation/>
+    <iMovement/>
+    <iSeeFrom/>
+    <iSeeThrough/>
+    <iBuildModifier/>
+    <iDefense/>
+    <Button class="Button"/>
+    <FootstepSounds/>
+    <WorldSoundscapeAudioScript/>
+    <bGraphicalOnly/>
+</TerrainInfo>
+
 <UnitArtInfo class="Dir" child="Button">
     <Type/>
     <Button class="Button"/>
@@ -406,24 +635,28 @@
     <ActionSound/>
 </UnitArtInfo>
 
-<UnitClassInfo/>
+<UnitClassInfo class="Dir" child="DefaultUnit">
+    <Type/>
+    <Description/>
+    <DefaultUnit class="Type" type="UnitInfo" none="false"/>
+</UnitClassInfo>
 
 <UnitInfo class="Dir" child="ProfessionMeshGroups">
     <Type/>
-    <Class/>
+    <Class class="Type" type="UnitClassInfo" none="false"/>
     <UniqueNames>
         <UniqueName/>
     </UniqueNames>
-    <Special/>
-    <Capture/>
-    <Combat/>
+    <Special class="Type" type="SpecialUnitInfo" none="true"/>
+    <Capture class="Type" type="UnitClassInfo" none="true"/>
+    <Combat class="Type" type="UnitCombatInfo" none="false"/>
     <Domain class="Type" type="DomainInfo" none="false"/>
-    <DefaultUnitAI/>
-    <DefaultProfession/>
+    <DefaultUnitAI class="Type" type="UnitAIInfo" none="false"/>
+    <DefaultProfession class="Type" type="ProfessionInfo" none="true"/>
     <eEthnicity class="Type" type="EthnicityType" none="false"/>
-    <eCitizenStatus/>
-    <Invisible/>
-    <SeeInvisible/>
+    <eCitizenStatus class="Type" type="CitizenStatusType" none="true"/>
+    <Invisible class="Type" type="InvisibleInfo" none="true"/>
+    <SeeInvisible class="Type" type="InvisibleInfo" none="true"/>
     <Description/>
     <Civilopedia/>
     <Strategy/>
@@ -566,8 +799,8 @@
     <bLandYieldChanges/>
     <bWaterYieldChanges/>
     <iBombardRate/>
-    <SpecialCargo/>
-    <DomainCargo/>
+    <SpecialCargo class="Type" type="SpecialUnitInfo" none="true"/>
+    <DomainCargo class="Type" type="DomainInfo" none="true"/>
     <iCargo/>
     <iRequiredTransportSize/>
     <iBerthSize/>
@@ -603,7 +836,7 @@
             <bFreePromotion/>
         </FreePromotion>
     </FreePromotions>
-    <LeaderPromotion/>
+    <LeaderPromotion class="Type" type="PromotionInfo" none="true"/>
     <iLeaderExperience/>
     <ProfessionsNotAllowed/>
     <iOrderPriority/>

@@ -368,7 +368,10 @@ const TCHAR* CyXMLObject::getHelp() const
 
 const TCHAR* CyXMLObject::getInfoClass() const
 {
-	return m_Attributes.getInfoClass();
+	const char* szClass = m_Attributes.getInfoClass();
+
+	if (szClass  == NULL) return getDefaultClassForType();
+	return szClass;
 }
 
 const TCHAR* CyXMLObject::getSchemaChild(int iIndex) const
@@ -413,20 +416,22 @@ void CyXMLObject::setInfo(bool bFileSpecific, int iNewFileForType, const TCHAR* 
 	{
 		szType = m_pEditor->getFileTag(iNewFileForType);
 	}
-	m_pEditor->setInfo(bFileSpecific, getName(), szType, szHelp, szClass, bAllowTypeNone, bRemoteCreate, bRemoteCreatePrefix, szButtonChild);
-
 	if (szClass == NULL)
 	{
-		szClass = isDir() ? "Dir" :
-			isBool() ? "Bool" :
-			isInt() ? "Int" :
-			NULL;
+		szClass = getDefaultClassForType();
 	}
-
 	m_Attributes.setInfo(szType, szHelp, szClass, bAllowTypeNone, szButtonChild);
 }
 
 // XML info
+
+const char* CyXMLObject::getDefaultClassForType() const
+{
+	return isDir() ? "Dir" :
+		isBool() ? "Bool" :
+		isInt() ? "Int" :
+		NULL;
+}
 
 const TCHAR* CyXMLObject::getType() const
 {
@@ -499,13 +504,11 @@ const TCHAR* CyXMLObject::getChildString(const TCHAR* szChildName) const
 const TCHAR* CyXMLObject::getButtonArt() const
 {
 	return m_Attributes.getButtonArt();
-	//return m_pEditor->getButtonArt(m_pXML);
 }
 
 const TCHAR* CyXMLObject::getButtonArtChild() const
 {
 	return m_Attributes.getButtonArtChild();
-	//return m_pEditor->getInfo(getName(), "ButtonChild");
 }
 
 int CyXMLObject::getActiveComboFile() const

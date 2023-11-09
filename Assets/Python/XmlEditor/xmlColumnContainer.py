@@ -88,11 +88,14 @@ class columnContainer:
 				child = child.next()
 				continue
 				
+			strClass = child.getInfoClass()
+
+			if strClass == None:
+				panelBG = PanelStyles.PANEL_STYLE_STONE
+
 			screen.attachPanelAt(self.panel, panel, "", "", False, False, panelBG, self.left, y_offset, self.width, self.height, WidgetTypes.WIDGET_GENERAL, self.ID, counter)
 
 			size = 20
-
-			strClass = child.getInfoClass()
 
 			if (child.isDir()):
 				title = None
@@ -139,6 +142,33 @@ class columnContainer:
 				size = 30
 				screen.setImageButtonAt(panel + "icon", panel, iconString, self.width - 35 + iBackGroundOffset - (size/2), (self.height/2) - 5 - (size/2), size, size, self.editor.widgetDrag, self.ID, counter)
 
+			elif (child.isInt()):
+				title = "<font=3>" + child.getName() + "</font>"
+				screen.setTextAt(panel + "name", panel, title, CvUtil.FONT_LEFT_JUSTIFY, 7 + iBackGroundOffset,
+								 (self.height / 2) - 5, -0.1, FontTypes.SMALL_FONT, self.editor.widgetDrag, self.ID,
+								 counter)
+
+				strValue = "0"
+				if (child.isAllocated() and child.getValue() != None):
+					strValue = child.getValue()
+
+				size = 40
+
+				screen.setImageButtonAt(panel + "UpArrow", panel, self.editor.iconIntUpArrow,
+										self.width - 15 + iBackGroundOffset - (size / 2),
+										(self.height / 2) - 5 - (size / 2), size / 2, size / 2, self.editor.widgetUp,
+										self.ID, counter)
+				screen.setImageButtonAt(panel + "DownArrow", panel, self.editor.iconIntDownArrow,
+										self.width - 15 + iBackGroundOffset - (size / 2), (self.height / 2) - 5,
+										size / 2, size / 2, self.editor.widgetDown, self.ID, counter)
+
+				screen.setTextAt(panel + "value", panel, strValue, CvUtil.FONT_RIGHT_JUSTIFY,
+								 self.width - 18 + iBackGroundOffset - (size / 2), (self.height / 2) - 5, -0.1,
+								 FontTypes.SMALL_FONT, self.editor.widgetDrag, self.ID, counter)
+
+				# set a high number to reserve room for the int in case more icons are added
+				size = 80
+
 			elif (strClass != None and strClass != "TxtKey"):
 				if (strClass == "Button"):
 					size = 40
@@ -184,24 +214,6 @@ class columnContainer:
 						title = "<font=3>" + child.getValue() + "</font>"
 						screen.setTextAt(panel + "value", panel, title, CvUtil.FONT_LEFT_JUSTIFY, iXOffset, 30, -0.1, FontTypes.SMALL_FONT, self.editor.widgetDrag, self.ID, counter)
 					size = 0
-
-			elif (child.isInt()):
-				title = "<font=3>" + child.getName() + "</font>"
-				screen.setTextAt(panel + "name", panel, title, CvUtil.FONT_LEFT_JUSTIFY, 7 + iBackGroundOffset, (self.height/2) - 5, -0.1, FontTypes.SMALL_FONT, self.editor.widgetDrag, self.ID, counter)
-
-				strValue = "0"
-				if (child.isAllocated() and child.getValue() != None):
-					strValue = child.getValue()
-
-				size = 40
-
-				screen.setImageButtonAt(panel + "UpArrow"  , panel, self.editor.iconIntUpArrow  , self.width - 15 + iBackGroundOffset - (size/2), (self.height/2) - 5 - (size/2), size/2, size/2, self.editor.widgetUp  , self.ID, counter)
-				screen.setImageButtonAt(panel + "DownArrow", panel, self.editor.iconIntDownArrow, self.width - 15 + iBackGroundOffset - (size/2), (self.height/2) - 5           , size/2, size/2, self.editor.widgetDown, self.ID, counter)
-
-				screen.setTextAt(panel + "value", panel, strValue, CvUtil.FONT_RIGHT_JUSTIFY, self.width - 18 + iBackGroundOffset - (size/2), (self.height/2) - 5, -0.1, FontTypes.SMALL_FONT, self.editor.widgetDrag, self.ID, counter)
-				
-				# set a high number to reserve room for the int in case more icons are added
-				size = 80
 
 			elif child.isText():
 				title = "<font=3>" + child.getName() + "</font>"
