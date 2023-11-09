@@ -26,7 +26,10 @@ class DomesticDemandAdvisor(BaseAdvisorWindow.BaseAdvisorWindow):
 		colorA = "255,0,0"
 		colorB = "255,0,0"
 		
-		if (iStored < iDemand):
+		if iStored == 0 and iDemand == 0:
+			colorA = "0,150,200"
+			colorB = "0,150,200"
+		elif (iStored < iDemand):
 			if (iStored == 0):
 				colorA = "255,0,0"
 			else:
@@ -52,12 +55,12 @@ class DomesticDemandAdvisor(BaseAdvisorWindow.BaseAdvisorWindow):
 		self.tableManager.addHeaderArray(player.getDomesticDemandYieldTypes())
 
 	def getWidgetHelp(self, argsList):
-		iScreen, eWidgetType, iData1, iYield, bOption = argsList
+		iScreen, eWidgetType, iCity, iYield, bOption = argsList
 
 		if eWidgetType != WidgetTypes.WIDGET_HELP_DOMESTIC_DEMAND_ADVISOR:
 			return None
 
-		pCity = self.parent.Cities[iData1]
+		pCity = self.parent.Cities[iCity]
 		iStored = pCity.getYieldStored(iYield)
 		iDemand = pCity.getYieldDemand(iYield)
 		iPrice = pCity.getYieldBuyPrice(iYield)
