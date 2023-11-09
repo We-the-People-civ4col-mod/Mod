@@ -12690,6 +12690,11 @@ PlayerTypes CvUnit::getVisualOwner(TeamTypes eForTeam) const
 	{
 		if (m_pUnitInfo->isHiddenNationality())
 		{
+			if (getOwnerINLINE() != plot()->getOwnerINLINE())
+			{
+				return UNKNOWN_PLAYER;
+			}
+
 			if (!plot()->isCity(true, getTeam()))
 			{
 				return UNKNOWN_PLAYER;
