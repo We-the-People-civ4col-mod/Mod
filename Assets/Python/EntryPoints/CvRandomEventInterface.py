@@ -8156,5 +8156,5 @@ def checkCityAbovePopulation(numPop):
 
 	return canTrigger
 
-canTriggerAtCityPopluationOf10 = checkCityAbovePopulation(10)
-canTriggerAtCityPopluationOf20 = checkCityAbovePopulation(20)
+canTriggerAtCityPopulationOf10 = checkCityAbovePopulation(10)
+canTriggerAtCityPopulationOf20 = checkCityAbovePopulation(20)
