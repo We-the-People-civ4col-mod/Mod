@@ -2952,6 +2952,7 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:Runde:Runden][COLOR_REVERT]</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turno:turni][COLOR_REVERT]</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turno:turnos][COLOR_REVERT] </Spanish>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:хода:ходов][COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CONTACT_LEADER</Tag>
@@ -8589,6 +8590,7 @@
         <German>%d1_Num [NUM1:Runde:Runden]</German>
         <Italian>%d1_Num [NUM1:turno:turni]</Italian>
         <Spanish>%d1_Num [NUM1:turno:turnos]</Spanish>
+        <Russian>%d1_Num [NUM1:хода:ходов]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_CITY_DEFENSE</Tag>
