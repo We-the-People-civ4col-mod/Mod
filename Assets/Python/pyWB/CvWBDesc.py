@@ -1166,9 +1166,9 @@ class CvMapDesc:
 		self.seaLevel = None
 		self.numPlotsWritten = 0
 		self.numSignsWritten = 0
-		self.bRandomizeFeatures = "False" #WTP, ray, Randomize Features Map Option
-		self.bRandomizeResources = "False"
-		self.bRandomizeGoodies = "False"
+		self.bRandomizeFeatures = "false" #WTP, ray, Randomize Features Map Option
+		self.bRandomizeResources = "false"
+		self.bRandomizeGoodies = "false"
 		self.iCityRadius = 0 # 0 means value from UserSettings.txt
 
 	def write(self, f):
@@ -1429,17 +1429,17 @@ class CvWBDesc:
 		for pDesc in self.signDesc:
 			pDesc.apply()
 
-		if (self.mapDesc.bRandomizeFeatures != "False"): #WTP, ray, Randomize Features Map Option
+		if (self.mapDesc.bRandomizeFeatures != "false"): #WTP, ray, Randomize Features Map Option
 			CyMapGenerator().eraseFeaturesOnLand()
 			CyMapGenerator().addFeaturesOnLand()
 			
-		if (self.mapDesc.bRandomizeResources != "False"):
+		if (self.mapDesc.bRandomizeResources != "false"):
 			for iPlotLoop in range(CyMap().numPlots()):
 				pPlot = CyMap().plotByIndex(iPlotLoop)
 				pPlot.setBonusType(BonusTypes.NO_BONUS)
 			CyMapGenerator().addBonuses()
 			
-		if (self.mapDesc.bRandomizeGoodies != "False"):
+		if (self.mapDesc.bRandomizeGoodies != "false"):
 			CyMapGenerator().eraseGoodies()
 			CyMapGenerator().addGoodies()
 
@@ -1455,7 +1455,7 @@ class CvWBDesc:
 			pWBPlayer = self.playersDesc[iPlayerLoop]
 
 			# Random Start Location
-			if (pPlayer.getLeaderType() != -1 and pWBPlayer.bRandomStartLocation != "False"):
+			if (pPlayer.getLeaderType() != -1 and pWBPlayer.bRandomStartLocation != "false"):
 				pPlayer.setStartingPlot(pPlayer.findStartingPlot(True), True)
 			else:
 
@@ -1544,7 +1544,7 @@ class CvWBDesc:
 						pPlayer.setCurrentEra(iStartingEra)
 
 					# Random Start Location
-					if (pWBPlayer.bRandomStartLocation != "False"):
+					if (pWBPlayer.bRandomStartLocation != "false"):
 						pPlayer.setStartingPlot(pPlayer.findStartingPlot(True), True)
 						print("Setting player %d starting location to (%d,%d)", pPlayer.getID(), pPlayer.getStartingPlot().getX(), pPlayer.getStartingPlot().getY())
 
