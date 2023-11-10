@@ -1647,14 +1647,14 @@
         <English>Have you heard what he does to his prisoners? We must hand over the gold at once and count ourselves lucky.</English>
         <French>Avez vous déjà entendu ce qu'il fait à ces prisonniers? Nous devons payer l'or maintenant et nous considérez comme chanceux.</French>
         <German>Habt ihr die Gerüchte gehört, was er seinen Gefangen antuen soll? Wir sollten sofort die Summe übergeben und uns glücklich schätzen.</German>
-        <Russian>Вы слышали, что он делает со своими заключенными? Мы должны немедленно сдать золото и считать, что нам повезло.</Russian>
+        <Russian>Вы слышали, что он делает со своими пленниками? Мы должны немедленно собрать золото и считать, что нам крупно повезло.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PIRATEATTACK2_2</Tag>
         <English>A pox on you, sir! You shall learn what this colony is made of!</English>
         <French>Soyez maudit monsieur! Vous allez apprendre de quel bois nous sommes faits dans cette colonie!</French>
         <German>Alle Flüche der See sollen ihn treffen! Wir greifen zu den Waffen!</German>
-        <Russian>Будьте прокляты! Вы узнаете, из чего мы сделаны в этой колонии!</Russian>
+        <Russian>Пусть катится к чёрту! Или у него появится шанс познакомиться с пушками наших кораблей!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PIRATES_1</Tag>
