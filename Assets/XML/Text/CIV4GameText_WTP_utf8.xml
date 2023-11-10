@@ -237,6 +237,6 @@
         <Tag>TXT_KEY_SCOUT_FINISHED_EXPLORING</Tag>
         <English>Your scout has finished exploring and is awaiting new orders!</English>
         <French>Votre éclaireur a fini d'explorer et attend vos ordres!</French>
-        <Russian>Милорд, наш разведчик закончил исследовать местность и ждёт дальнейших приказов!</Russian>
+        <Russian>[COLOR_HIGHLIGHT_TEXT]Милорд, наш разведчик закончил исследовать местность и ждёт дальнейших приказов![COLOR_REVERT]</Russian>
     </TEXT>
 </Civ4GameText>

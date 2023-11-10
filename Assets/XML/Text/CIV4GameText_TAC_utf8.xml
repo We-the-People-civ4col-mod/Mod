@@ -1529,7 +1529,7 @@
         <English>[COLOR_POSITIVE_TEXT]Victory, Milord! [COLOR_REVERT]We were able to capture an enemy [COLOR_WARNING_TEXT]ship[COLOR_REVERT]!</English>
         <French>[COLOR_POSITIVE_TEXT]Victoire, Sire ! [COLOR_REVERT]Nous avons été capable de capturer le [COLOR_WARNING_TEXT]navire [COLOR_REVERT]ennemi !</French>
         <German>[COLOR_POSITIVE_TEXT]Sieg, Milord! [COLOR_REVERT]Wir konnten ein feindliches [COLOR_WARNING_TEXT]Schiff[COLOR_REVERT] kapern !</German>
-        <Russian>[COLOR_POSITIVE_TEXT]Победа, Милорд! [COLOR_REVERT]К тому же, нам удалось захватить вражеский [COLOR_WARNING_TEXT]корабль[COLOR_REVERT]!</Russian>
+        <Russian>[COLOR_POSITIVE_TEXT]Победа, Милорд! [COLOR_REVERT]К тому же, нам удалось [COLOR_HIGHLIGHT_TEXT]захватить[COLOR_REVERT] вражеский [COLOR_HIGHLIGHT_TEXT]корабль[COLOR_REVERT]!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_YOU_UNIT_CAPTURED_PRISONER_OF_WAR</Tag>
