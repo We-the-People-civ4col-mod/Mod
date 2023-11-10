@@ -3262,7 +3262,7 @@
                 </YieldIntegerPair>
             </RiverYieldIncreases>
             <iMovement>1</iMovement>
-            <iSeeThrough>1</iSeeThrough>
+            <iSeeThrough>0</iSeeThrough>
             <iDefense>10</iDefense>
             <iAppearance>200</iAppearance>
             <iDisappearance>0</iDisappearance>
