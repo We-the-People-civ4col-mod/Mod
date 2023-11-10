@@ -365,7 +365,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_REMOVE_FOREST</Tag>
-        <English>Burn down the [LINK=FEATURE_FOREST]forest[\LINK]</English>
+        <English>Chop down the [LINK=FEATURE_FOREST]forest[\LINK]</English>
         <French>Défricher la [LINK=FEATURE_FOREST]forêt[\LINK]</French>
         <German>[LINK=FEATURE_FOREST]Wald[\LINK] niederbrennen</German>
         <Italian>Disboscare una [LINK=FEATURE_FOREST]foresta[\LINK]</Italian>
@@ -378,7 +378,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_REMOVE_JUNGLE</Tag>
-        <English>Burn down the [LINK=FEATURE_JUNGLE]jungle[\LINK]</English>
+        <English>Chop down the [LINK=FEATURE_JUNGLE]jungle[\LINK]</English>
         <French>Défricher la [LINK=FEATURE_JUNGLE]jungle[\LINK]</French>
         <German>[LINK=FEATURE_JUNGLE]Dschungel[\LINK] niederbrennen</German>
         <Italian>Rimuovere la [LINK=FEATURE_JUNGLE]giungla[\LINK]</Italian>
