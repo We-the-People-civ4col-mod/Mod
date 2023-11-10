@@ -151,16 +151,16 @@ bool CvUnitAI::AI_update()
 				break;
 
 			case AUTOMATE_SAIL_TO_EUROPE:
-				AI_sailToEurope();
+				AI_automateSailTo(kSailToEurope);
 				break;
 			/*** TRIANGLETRADE 10/28/08 by DPII ***/
 			case AUTOMATE_SAIL_TO_AFRICA:
-				AI_sailToAfrica();
+				AI_automateSailTo(kSailToAfrica);
 				break;
 			/**************************************/
 			// R&R, ray, Port Royal
 			case AUTOMATE_SAIL_TO_PORT_ROYAL:
-				AI_sailToPortRoyal();
+				AI_automateSailTo(kSailToPortRoyal);
 				break;
 			// R&R, ray, Port Royal - END
 			case AUTOMATE_TRANSPORT_ROUTES:
@@ -6773,11 +6773,14 @@ bool CvUnitAI::AI_europeAssaultSea()
 	return true;
 }
 
-namespace
+void CvUnitAI::AI_automateSailTo(const SailToHelper& sth)
 {
-	const SailToHelper kSailToEurope(UNIT_TRAVEL_STATE_TO_EUROPE, AUTOMATE_SAIL_TO_EUROPE, MISSIONAI_SAIL_TO_EUROPE);
-	const SailToHelper kSailToAfrica(UNIT_TRAVEL_STATE_TO_AFRICA, AUTOMATE_SAIL_TO_AFRICA, MISSIONAI_SAIL_TO_AFRICA);
-	const SailToHelper kSailToPortRoyal(UNIT_TRAVEL_STATE_TO_PORT_ROYAL, AUTOMATE_SAIL_TO_PORT_ROYAL, MISSIONAI_SAIL_TO_PORT_ROYAL);
+	if (AI_breakAutomation())
+	{
+		return;
+	}
+
+	AI_sailTo(sth, true);
 }
 
 bool CvUnitAI::AI_sailToEurope(bool bMove)
