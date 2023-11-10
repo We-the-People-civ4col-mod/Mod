@@ -130,7 +130,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_LUMBER_DONE</Tag>
-        <English>A European Nation succeeded to become the market leader for [COLOR_FONT_GOLD]lumber[COLOR_REVERT].</English>
+        <English>Another European nation has already become the market leader for [COLOR_FONT_GOLD]lumber[COLOR_REVERT].</English>
         <French>Une nation Européenne est devenue maître du marché du [COLOR_FONT_GOLD]bois de construction[COLOR_REVERT]</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Holz[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT]!</Russian>
@@ -165,7 +165,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_ORE_DONE</Tag>
-        <English>A European Nation succeeded to become the market leader for[COLOR_FONT_GOLD]ore[COLOR_REVERT].</English>
+        <English>Another European nation has already become the market leader for[COLOR_FONT_GOLD]ore[COLOR_REVERT].</English>
         <French>Une nation Européenne est devenue maître du marché du [COLOR_FONT_GOLD]minerai de fer[COLOR_REVERT]</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Eisenerz[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]руды[COLOR_REVERT]!</Russian>
@@ -200,7 +200,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_STONE_DONE</Tag>
-        <English>A European Nation succeeded to become the market leader for[COLOR_FONT_GOLD]stone[COLOR_REVERT].</English>
+        <English>Another European nation has already become the market leader for[COLOR_FONT_GOLD]stone[COLOR_REVERT].</English>
         <French>Une nation Européenne est devenue maître du marché de la [COLOR_FONT_GOLD]pierre[COLOR_REVERT]</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]камня[COLOR_REVERT]!</Russian>
@@ -235,7 +235,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_HEMP_DONE</Tag>
-        <English>A European Nation succeeded to become the market leader for trade in [COLOR_FONT_GOLD]hemp[COLOR_REVERT].</English>
+        <English>Another European nation has already become the market leader for [COLOR_FONT_GOLD]hemp[COLOR_REVERT] trading.</English>
         <French>Une nation Européenne est devenue maître du marché du [COLOR_FONT_GOLD]chanvre[COLOR_REVERT]</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hanf[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]конопли[COLOR_REVERT]!</Russian>
@@ -446,7 +446,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_FUR_DONE</Tag>
-        <English>A European Nation succeeded to become the market leader for trade in [COLOR_FONT_GOLD]furs[COLOR_REVERT].</English>
+        <English>Another European nation has already become the market leader for trade in [COLOR_FONT_GOLD]furs[COLOR_REVERT].</English>
         <French>Une nation Européenne est devenue maître du marché de la [COLOR_FONT_GOLD]fourrure[COLOR_REVERT].</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Fellen[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]меха[COLOR_REVERT]!</Russian>
