@@ -1611,7 +1611,7 @@
             </YieldChanges>
             <RiverYieldIncreases/>
             <iMovement>1</iMovement>
-            <iSeeThrough>1</iSeeThrough>
+            <iSeeThrough>0</iSeeThrough>
             <iDefense>-20</iDefense>
             <iAppearance>20</iAppearance>
             <iDisappearance>0</iDisappearance>
@@ -1817,7 +1817,7 @@
             </YieldChanges>
             <RiverYieldIncreases/>
             <iMovement>1</iMovement>
-            <iSeeThrough>1</iSeeThrough>
+            <iSeeThrough>0</iSeeThrough>
             <iDefense>-20</iDefense>
             <iAppearance>20</iAppearance>
             <iDisappearance>0</iDisappearance>
@@ -3473,7 +3473,7 @@
                 </YieldIntegerPair>
             </RiverYieldIncreases>
             <iMovement>1</iMovement>
-            <iSeeThrough>1</iSeeThrough>
+            <iSeeThrough>0</iSeeThrough>
             <iDefense>10</iDefense>
             <iAppearance>200</iAppearance>
             <iDisappearance>0</iDisappearance>
@@ -3688,7 +3688,7 @@
                 </YieldIntegerPair>
             </RiverYieldIncreases>
             <iMovement>1</iMovement>
-            <iSeeThrough>1</iSeeThrough>
+            <iSeeThrough>0</iSeeThrough>
             <iDefense>10</iDefense>
             <iAppearance>200</iAppearance>
             <iDisappearance>0</iDisappearance>
@@ -3895,7 +3895,7 @@
                 </YieldIntegerPair>
             </RiverYieldIncreases>
             <iMovement>1</iMovement>
-            <iSeeThrough>1</iSeeThrough>
+            <iSeeThrough>0</iSeeThrough>
             <iDefense>10</iDefense>
             <iAppearance>200</iAppearance>
             <iDisappearance>0</iDisappearance>
@@ -4224,7 +4224,7 @@
                 </YieldIntegerPair>
             </RiverYieldIncreases>
             <iMovement>2</iMovement>
-            <iSeeThrough>1</iSeeThrough>
+            <iSeeThrough>0</iSeeThrough>
             <iDefense>25</iDefense>
             <iAppearance>200</iAppearance>
             <iDisappearance>0</iDisappearance>
@@ -4426,7 +4426,7 @@
                 </YieldIntegerPair>
             </RiverYieldIncreases>
             <iMovement>2</iMovement>
-            <iSeeThrough>1</iSeeThrough>
+            <iSeeThrough>0</iSeeThrough>
             <iDefense>25</iDefense>
             <iAppearance>200</iAppearance>
             <iDisappearance>0</iDisappearance>
@@ -4529,7 +4529,7 @@
                 </YieldIntegerPair>
             </RiverYieldIncreases>
             <iMovement>2</iMovement>
-            <iSeeThrough>1</iSeeThrough>
+            <iSeeThrough>0</iSeeThrough>
             <iDefense>25</iDefense>
             <iAppearance>200</iAppearance>
             <iDisappearance>0</iDisappearance>
@@ -4853,7 +4853,7 @@
             <YieldChanges/>
             <RiverYieldIncreases/>
             <iMovement>1</iMovement>
-            <iSeeThrough>0</iSeeThrough>
+            <iSeeThrough>1</iSeeThrough>
             <iDefense>0</iDefense>
             <iAppearance>0</iAppearance>
             <iDisappearance>0</iDisappearance>
@@ -4925,7 +4925,7 @@
             <YieldChanges/>
             <RiverYieldIncreases/>
             <iMovement>1</iMovement>
-            <iSeeThrough>0</iSeeThrough>
+            <iSeeThrough>1</iSeeThrough>
             <iDefense>0</iDefense>
             <iAppearance>50</iAppearance>
             <iDisappearance>7500</iDisappearance>
@@ -5005,7 +5005,7 @@
             <YieldChanges/>
             <RiverYieldIncreases/>
             <iMovement>2</iMovement>
-            <iSeeThrough>1</iSeeThrough>
+            <iSeeThrough>0</iSeeThrough>
             <iDefense>15</iDefense>
             <iAppearance>500</iAppearance>
             <iDisappearance>2000</iDisappearance>
@@ -5106,7 +5106,7 @@
             <YieldChanges/>
             <RiverYieldIncreases/>
             <iMovement>1</iMovement>
-            <iSeeThrough>1</iSeeThrough>
+            <iSeeThrough>0</iSeeThrough>
             <iDefense>-15</iDefense>
             <iAppearance>500</iAppearance>
             <iDisappearance>2000</iDisappearance>
@@ -6314,7 +6314,7 @@
                 </YieldIntegerPair>
             </RiverYieldIncreases>
             <iMovement>1</iMovement>
-            <iSeeThrough>1</iSeeThrough>
+            <iSeeThrough>0</iSeeThrough>
             <iDefense>10</iDefense>
             <iAppearance>200</iAppearance>
             <iDisappearance>0</iDisappearance>
