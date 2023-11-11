@@ -728,11 +728,13 @@ sub handleEnumValuesFile
 			$line = substr($line, $index+11);
 			my $key = $line;
 			$index = index($key, " ");
-			$key = substr($key, $index) if ($index != -1);
-			$index = index($key, "}");
-			$key = substr($key, $index) if ($index != -1);
+			$key = substr($key, 0, $index) if ($index != -1);
+			$index = index($key, ")");
+			$key = substr($key, 0, $index) if ($index != -1);
 			$index = index($key, ",");
-			$key = substr($key, $index) if ($index != -1);
+			$key = substr($key, 0, $index) if ($index != -1);
+			$index = index($key, ":");
+			$key = substr($key, 0, $index) if ($index != -1);
 			die "$file($.) EnumValues.$key doesn't exist\n" unless exists $EnumValues{$key};
 		}
 	}
