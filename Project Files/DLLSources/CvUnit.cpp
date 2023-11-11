@@ -10323,10 +10323,13 @@ bool CvUnit::canAssignTradeRoute(int iRouteID, bool bReusePath) const
 		}
 	}
 
+	// Note: Adding MOVE_MAX_MOVES to prevent the assert for non-ai usage of the group pathfinder since
+	// that shoud be safe here and is easier than adding another pf flag
+
 	CvCity* pSource = ::getCity(pTradeRoute->getSourceCity());
 	// TAC - Trade Routes Advisor - koma13 - START
 	//if (pSource == NULL || !generatePath(pSource->plot(), 0, bReusePath))
-	if (pSource == NULL || !generatePath(pSource->plot(), (isIgnoreDanger() ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), bReusePath))
+	if (pSource == NULL || !generatePath(pSource->plot(), (isIgnoreDanger() ? MOVE_IGNORE_DANGER | MOVE_MAX_MOVES : MOVE_NO_ENEMY_TERRITORY | MOVE_MAX_MOVES), bReusePath))
 	// TAC - Trade Routes Advisor - koma13 - END
 	{
 		return false;
@@ -10335,7 +10338,7 @@ bool CvUnit::canAssignTradeRoute(int iRouteID, bool bReusePath) const
 	CvCity* pDestination = ::getCity(pTradeRoute->getDestinationCity());
 	// TAC - Trade Routes Advisor - koma13 - START
 	//if (pDestination != NULL && !generatePath(pDestination->plot(), 0, bReusePath))
-	if (pDestination != NULL && !generatePath(pDestination->plot(), (isIgnoreDanger() ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), bReusePath))
+	if (pDestination != NULL && !generatePath(pDestination->plot(), (isIgnoreDanger() ? MOVE_IGNORE_DANGER | MOVE_MAX_MOVES : MOVE_NO_ENEMY_TERRITORY | MOVE_MAX_MOVES), bReusePath))
 	// TAC - Trade Routes Advisor - koma13 - END
 	{
 		return false;
