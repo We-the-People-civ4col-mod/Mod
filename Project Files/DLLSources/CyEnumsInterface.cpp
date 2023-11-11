@@ -10,6 +10,34 @@ namespace python = boost::python;
 //
 
 template<typename T>
+static void addEnumValues(python::enum_<int>& enumTable, T value)
+{
+	for (T eLoopVar = VARINFO<T>::FIRST; eLoopVar < VARINFO<T>::END; ++eLoopVar)
+	{
+		enumTable.value(getTypeStr(eLoopVar), eLoopVar);
+	}
+}
+
+static void generateEnumValues()
+{
+	// build EnumValues for python, which allows easy and fast access to xml values
+	// intended to completely replace gcgetDefineINT and gc.getInfoTypeForString (both much slower than EnumValues)
+	// code in this function has to follow a strict standard because it's used by a script at compile time
+	// this script will then cause a compile error if a python file use EnumValues with a value not exposed in this function
+	python::enum_<int> enumTable = python::enum_<int>("EnumValues");
+
+	// Please sort each of the two following sections alphabetically. That makes it easier to get an overview once they have grown to a significant size.
+
+	// add type from entire xml files. Template must be the NO keyword from the enum in question
+	addEnumValues(enumTable, NO_BUILDING);
+	addEnumValues(enumTable, NO_UNIT);
+
+	// getDefineINT replacement
+	enumTable.value("DEFAULT_POPULATION_UNIT", GLOBAL_DEFINE_DEFAULT_POPULATION_UNIT);
+}
+
+
+template<typename T>
 static void addEnumValues(T value, const char* szName, const char* szNoType, const char* szNumTypes)
 {
 	boost::python::enum_<T> enumTable = python::enum_<T>(szName)
@@ -42,6 +70,7 @@ void CyEnumsPythonInterface()
 	addEnumValues(NO_WIDGET            , "WidgetTypes"        , "NO_WIDGET"        , "NUM_WIDGET_TYPES"         );
 	addEnumValues(NO_YIELD             , "YieldTypes"         , "NO_YIELD"         , "NUM_YIELD_TYPES"          );
 
+	generateEnumValues();
 
 	python::enum_<GameStateTypes>("GameStateTypes")
 		.value("GAMESTATE_ON", GAMESTATE_ON)
