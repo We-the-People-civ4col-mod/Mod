@@ -1007,6 +1007,24 @@ void CvSelectionGroup::continueMission(int iSteps)
 	bDone = false;
 	bAction = false;
 
+	// Abort current mission if danger is detected within our visbility range. Note that this
+	// check is only for human players since it would likely break the AI completely if enabled for it
+	// Note that we have to allow at least one step of the mission (iStep == 0) to not get aborted otherwise
+	// the group would not be allowed to move at all in case the previous mission was aborted due to this condition
+	if (isHuman() && iSteps > 0)
+	{
+		if (getDomainType() == DOMAIN_SEA)
+		{
+			if (GET_PLAYER(getOwnerINLINE()).AI_getWaterDanger(plot(), visibilityRange() > 0))
+				bDone = true;
+		}
+		else if (getDomainType() == DOMAIN_LAND)
+		{
+			if (GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot(), visibilityRange() > 0))
+				bDone = true;
+		}
+	}
+
 	if (headMissionQueueNode()->m_data.iPushTurn == GC.getGameINLINE().getGameTurn() || (headMissionQueueNode()->m_data.iFlags & MOVE_THROUGH_ENEMY))
 	{
 		if (headMissionQueueNode()->m_data.eMissionType == MISSION_MOVE_TO)
@@ -2161,6 +2179,7 @@ bool CvSelectionGroup::canBombard(const CvPlot* pPlot)
 	return false;
 }
 
+// TODO: Consider caching this when the group is initially formed
 bool CvSelectionGroup::visibilityRange()
 {
 	int iMaxRange = 0;

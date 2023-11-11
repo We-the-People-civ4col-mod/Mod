@@ -9701,7 +9701,7 @@ bool CvUnitAI::AI_breakAutomation()
 		}
 	}
 
-	if (!bBreak && GET_PLAYER(getOwnerINLINE()).AI_getUnitDanger(this, 2, false, false))
+	if (!bBreak && GET_PLAYER(getOwnerINLINE()).AI_getUnitDanger(this, visibilityRange(), false, false))
 	{
 		// TAC - Trade Routes Advisor - koma13 - START
 		//bBreak = true;
